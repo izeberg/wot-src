@@ -279,6 +279,28 @@ msgstr ""
 msgid "artefact_remove/wot_plus_success"
 msgstr "Оборудование %(name)s снято с машины бесплатно по подписке."
 
+msgid "artefact_restore/credits"
+msgstr "серебра: "
+
+msgid "artefact_restore/crystal"
+msgstr "бон: "
+
+msgid "artefact_restore/demountKit"
+msgstr "демонтажных наборов: "
+
+msgid "artefact_restore/equipCoin"
+msgstr "компонентов: "
+
+msgid "artefact_restore/gold"
+msgstr "золота: "
+
+msgid "artefact_restore/server_error"
+msgstr "Ошибка восстановления оборудования. Попробуйте позже."
+
+msgid "artefact_restore/success"
+msgstr ""
+"Оборудование «%(name)s» (%(count)s шт.) восстановлено. Потрачено %(money)s."
+
 msgid "artefact_sell/invalid_module"
 msgstr "Продажа %(kind)s «%(name)s» не удалась. Неправильный модуль."
 
@@ -1248,6 +1270,11 @@ msgid "customization/personal_number_prohibited"
 msgstr ""
 "Номер %(value)s недоступен.\n"
 "%(itemType)s «%(itemName)s» был снят для %(seasonName)s карты."
+
+msgid "customization/personal_number_prohibited_all_seasons"
+msgstr ""
+"Номер %(value)s недоступен.\n"
+"%(itemType)s «%(itemName)s» был снят для всех карт."
 
 msgid "customization/progression/down/style"
 msgstr "Уровень стиля «%s» понижен до %s"
@@ -2569,6 +2596,18 @@ msgstr "Потерян доступ к Предложениям: %(count)s шт.
 
 msgid "offers/unavailable_one"
 msgstr "Потерян доступ к предложению."
+
+msgid "optDevicesRestore/switch_off/body"
+msgstr "Восстановление оборудования временно невозможно."
+
+msgid "optDevicesRestore/switch_off/title"
+msgstr "Ошибка восстановления"
+
+msgid "optDevicesRestore/switch_on/body"
+msgstr "Восстановление оборудования снова доступно."
+
+msgid "optDevicesRestore/switch_on/title"
+msgstr "Неполадки устранены"
 
 msgid "optionalDevices_apply/error"
 msgstr "Ошибка при настройке оборудования. Повторите попытку позже."
@@ -4056,6 +4095,9 @@ msgstr "Невозможно установить машину в слот."
 
 msgid "unit/errors/HAS_IN_ARENA_MEMBERS"
 msgstr "Действие недоступно. Часть отряда ещё в бою."
+
+msgid "unit/errors/HB_BANNED"
+msgstr "Вы временно отстранены от боёв в данном режиме."
 
 msgid "unit/errors/INSUFFICIENT_ROLE"
 msgstr "У вас нет прав на выполнение операции."

@@ -271,10 +271,6 @@
 						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_Kaliningrad_01_AM.dds</Texture>
 					</property>
 					<property>
-						g_ditherCoeff
-						<Float>89.000000</Float>
-					</property>
-					<property>
 						g_enableAO
 						<Bool>true</Bool>
 					</property>

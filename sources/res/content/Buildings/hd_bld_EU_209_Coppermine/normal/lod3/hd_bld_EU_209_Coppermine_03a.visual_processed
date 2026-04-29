@@ -250,10 +250,6 @@
 						<Bool>true</Bool>
 					</property>
 					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
 						blendMask
 						<Texture>content/Buildings/hd_bld_EU_209_Coppermine/EU_217_Coppermine_02_blend.png</Texture>
 					</property>

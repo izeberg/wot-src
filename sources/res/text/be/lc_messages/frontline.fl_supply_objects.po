@@ -22,10 +22,6 @@ msgstr "• У абалонку праходзіць: %(value)s пашкодж�
 msgid "page/object/damageZones/percents"
 msgstr "%(number)s%"
 
-msgid "page/object/damageZones/shortTitle"
-msgstr ""
-"Розныя элементы канструкцыі аб'екта па-рознаму ўспрымаюць пашкоджанні..."
-
 msgid "page/object/damageZones/title"
 msgstr ""
 "Розныя элементы канструкцыі аб'екта па-рознаму ўспрымаюць пашкоджанні:"
@@ -134,6 +130,9 @@ msgstr "Час рамонту"
 msgid "page/object/vehParams/text/resurrectTime"
 msgstr "Час аднаўлення"
 
+msgid "page/object/vehParams/text/shotDispersionAngle"
+msgstr "Роскід на 100 м"
+
 msgid "page/object/vehParams/text/turretArmor"
 msgstr "Браніраванне"
 
@@ -154,6 +153,9 @@ msgstr "Час рамонту аб'екта (с)"
 
 msgid "page/object/vehParams/title/resurrectTime"
 msgstr "Час аднаўлення (с)"
+
+msgid "page/object/vehParams/title/shotDispersionAngle"
+msgstr "Разброс на 100 м (м)"
 
 msgid "page/object/vehParams/title/turretArmor"
 msgstr "Браніраванне (лоб/барты/карма ў мм)"

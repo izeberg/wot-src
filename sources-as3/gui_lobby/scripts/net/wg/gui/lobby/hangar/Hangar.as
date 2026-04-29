@@ -18,6 +18,7 @@ package net.wg.gui.lobby.hangar
    import net.wg.data.constants.generated.BATTLEROYALE_ALIASES;
    import net.wg.data.constants.generated.DAILY_QUESTS_WIDGET_CONSTANTS;
    import net.wg.data.constants.generated.HANGAR_ALIASES;
+   import net.wg.data.constants.generated.HISTORICALBATTLES_ALIASES;
    import net.wg.gui.components.containers.inject.GFInjectComponent;
    import net.wg.gui.components.miniclient.HangarMiniClientComponent;
    import net.wg.gui.events.LobbyEvent;
@@ -30,6 +31,7 @@ package net.wg.gui.lobby.hangar
    import net.wg.gui.lobby.hangar.eventEntryPoint.HangarEventEntriesContainer;
    import net.wg.gui.lobby.hangar.interfaces.IHangar;
    import net.wg.gui.lobby.hangar.tcarousel.TankCarousel;
+   import net.wg.gui.lobby.historicalBattles.HBHangarComponentsContainer;
    import net.wg.gui.lobby.post.Teaser;
    import net.wg.gui.lobby.post.TeaserEvent;
    import net.wg.gui.lobby.post.data.TeaserVO;
@@ -255,6 +257,8 @@ package net.wg.gui.lobby.hangar
       
       private var _battleRoyaleComponents:HangarComponentsContainer = null;
       
+      private var _historicalBattlesComponents:HBHangarComponentsContainer = null;
+      
       private var _eventsEntryContainer:HangarEventEntriesContainer = null;
       
       private var _carouselEventEntryContainer:Sprite = null;
@@ -323,6 +327,7 @@ package net.wg.gui.lobby.hangar
             this.vehResearchBG.x = param1 - _loc3_.x - _loc3_.width - RIGHT_MARGIN >> 0;
          }
          this._helpLayout.hide();
+         this.updateHBComponentsPos();
          invalidate(ENTRY_CONT_POSITION_INVALID);
       }
       
@@ -380,6 +385,7 @@ package net.wg.gui.lobby.hangar
       override protected function onDispose() : void
       {
          this.tryRemoveBattleRoyaleContainer();
+         this.tryRemoveHistoricalBattlesContainer();
          this.removeBattleRoyaleContainer();
          this.removeComp7ModifiersPanel();
          this.removeBattleModifiersPanel();
@@ -858,6 +864,28 @@ package net.wg.gui.lobby.hangar
          this.updateBRComponentsPos();
       }
       
+      public function createHistoricalBattlesComponents() : void
+      {
+         var _loc1_:int = 0;
+         if(this._historicalBattlesComponents == null)
+         {
+            this._historicalBattlesComponents = new HBHangarComponentsContainer();
+            _loc1_ = getChildIndex(this.carouselContainer as DisplayObject) + 1;
+            addChildAt(this._historicalBattlesComponents,_loc1_);
+         }
+         if(!isFlashComponentRegisteredS(HISTORICALBATTLES_ALIASES.HISTORICAL_BATTLES_QUESTS_WIDGET) && !isFlashComponentRegisteredS(HISTORICALBATTLES_ALIASES.HISTORICAL_BATTLES_ORDER_WIDGET) && !isFlashComponentRegisteredS(HISTORICALBATTLES_ALIASES.HISTORICAL_BATTLES_SHOP_WIDGET) && !isFlashComponentRegisteredS(HISTORICALBATTLES_ALIASES.HISTORICAL_BATTLES_DIVISION_PANEL) && !isFlashComponentRegisteredS(HISTORICALBATTLES_ALIASES.HISTORICAL_BATTLES_PROGRESSION_WIDGET) && !isFlashComponentRegisteredS(HISTORICALBATTLES_ALIASES.HISTORICAL_BATTLES_FRONT_PANEL) && !isFlashComponentRegisteredS(HISTORICALBATTLES_ALIASES.HISTORICAL_BATTLES_HANGAR_VIGNETTE))
+         {
+            registerFlashComponentS(this._historicalBattlesComponents.questsWidget,HISTORICALBATTLES_ALIASES.HISTORICAL_BATTLES_QUESTS_WIDGET);
+            registerFlashComponentS(this._historicalBattlesComponents.orderWidget,HISTORICALBATTLES_ALIASES.HISTORICAL_BATTLES_ORDER_WIDGET);
+            registerFlashComponentS(this._historicalBattlesComponents.shopWidget,HISTORICALBATTLES_ALIASES.HISTORICAL_BATTLES_SHOP_WIDGET);
+            registerFlashComponentS(this._historicalBattlesComponents.divisionPanel,HISTORICALBATTLES_ALIASES.HISTORICAL_BATTLES_DIVISION_PANEL);
+            registerFlashComponentS(this._historicalBattlesComponents.progressionWidget,HISTORICALBATTLES_ALIASES.HISTORICAL_BATTLES_PROGRESSION_WIDGET);
+            registerFlashComponentS(this._historicalBattlesComponents.frontPanel,HISTORICALBATTLES_ALIASES.HISTORICAL_BATTLES_FRONT_PANEL);
+            registerFlashComponentS(this._historicalBattlesComponents.hangarVignette,HISTORICALBATTLES_ALIASES.HISTORICAL_BATTLES_HANGAR_VIGNETTE);
+         }
+         this.updateHBComponentsPos();
+      }
+      
       public function generatedUnstoppableEvents() : Boolean
       {
          return true;
@@ -911,6 +939,28 @@ package net.wg.gui.lobby.hangar
          }
       }
       
+      public function removeHistoricalBattlesComponent(param1:String) : void
+      {
+         if(isFlashComponentRegisteredS(param1))
+         {
+            unregisterFlashComponentS(param1);
+         }
+      }
+      
+      public function removeHistoricalBattlesComponents() : void
+      {
+         if(!_baseDisposed && this._historicalBattlesComponents != null)
+         {
+            this.removeHistoricalBattlesComponent(HISTORICALBATTLES_ALIASES.HISTORICAL_BATTLES_QUESTS_WIDGET);
+            this.removeHistoricalBattlesComponent(HISTORICALBATTLES_ALIASES.HISTORICAL_BATTLES_ORDER_WIDGET);
+            this.removeHistoricalBattlesComponent(HISTORICALBATTLES_ALIASES.HISTORICAL_BATTLES_SHOP_WIDGET);
+            this.removeHistoricalBattlesComponent(HISTORICALBATTLES_ALIASES.HISTORICAL_BATTLES_DIVISION_PANEL);
+            this.removeHistoricalBattlesComponent(HISTORICALBATTLES_ALIASES.HISTORICAL_BATTLES_PROGRESSION_WIDGET);
+            this.removeHistoricalBattlesComponent(HISTORICALBATTLES_ALIASES.HISTORICAL_BATTLES_FRONT_PANEL);
+            this.removeHistoricalBattlesComponent(HISTORICALBATTLES_ALIASES.HISTORICAL_BATTLES_HANGAR_VIGNETTE);
+         }
+      }
+      
       public function removeComp7Modifiers() : void
       {
          this.removeComp7ModifiersPanel();
@@ -943,6 +993,17 @@ package net.wg.gui.lobby.hangar
             removeChild(this._battleRoyaleComponents);
             this._battleRoyaleComponents.dispose();
             this._battleRoyaleComponents = null;
+         }
+      }
+      
+      public function tryRemoveHistoricalBattlesContainer() : void
+      {
+         this.removeHistoricalBattlesComponents();
+         if(!_baseDisposed && this._historicalBattlesComponents != null && !isFlashComponentRegisteredS(HISTORICALBATTLES_ALIASES.HISTORICAL_BATTLES_QUESTS_WIDGET) && !isFlashComponentRegisteredS(HISTORICALBATTLES_ALIASES.HISTORICAL_BATTLES_ORDER_WIDGET) && !isFlashComponentRegisteredS(HISTORICALBATTLES_ALIASES.HISTORICAL_BATTLES_SHOP_WIDGET) && !isFlashComponentRegisteredS(HISTORICALBATTLES_ALIASES.HISTORICAL_BATTLES_DIVISION_PANEL) && !isFlashComponentRegisteredS(HISTORICALBATTLES_ALIASES.HISTORICAL_BATTLES_PROGRESSION_WIDGET) && !isFlashComponentRegisteredS(HISTORICALBATTLES_ALIASES.HISTORICAL_BATTLES_FRONT_PANEL) && !isFlashComponentRegisteredS(HISTORICALBATTLES_ALIASES.HISTORICAL_BATTLES_HANGAR_VIGNETTE))
+         {
+            removeChild(this._historicalBattlesComponents);
+            this._historicalBattlesComponents.dispose();
+            this._historicalBattlesComponents = null;
          }
       }
       
@@ -1133,6 +1194,14 @@ package net.wg.gui.lobby.hangar
          {
             this._battleRoyaleComponents.y = BR_UNBOUND_HEADER_TOP_MARGIN;
             this._battleRoyaleComponents.updateStage(_width,this.carousel.y - BR_UNBOUND_HEADER_TOP_MARGIN);
+         }
+      }
+      
+      private function updateHBComponentsPos() : void
+      {
+         if(this._historicalBattlesComponents != null)
+         {
+            this._historicalBattlesComponents.updateStage(_width,_height);
          }
       }
       

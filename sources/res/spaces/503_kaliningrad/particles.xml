@@ -2,54 +2,46 @@
 <root>
 	<forward>
 		<name>default</name>
-		<preload>
-			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_forward/PFX_textures/503_kaliningrad_effTex.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_long.fx</shader>
-			<texture>particles/content_forward/PFX_textures/503_kaliningrad_effTex.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_tex.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_long.fx</shader>
-			<texture>particles/content_forward/PFX_textures/tracers.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_water.fx</shader>
-			<texture>particles/content_forward/PFX_textures/tracers.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_long.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_tex_long.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_solid.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_tex.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_long.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_tex.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_water.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_tex.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_forward/PFX_textures/LM_textures/Smoke_ground_6x6_EA.dds</texture>
-			<textureLM>particles/content_forward/PFX_textures/LM_textures/Smoke_ground_6x6_LM.dds</textureLM>
-			<textureRamp>particles/content_forward/PFX_textures/ramp/ramp_explosion.dds</textureRamp>
-		</preload>
 		<fn_effect_bin>particles/environment/interior/503_kaliningrad_chimney_smoke.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/503_kaliningrad_dust_devil_big.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/503_kaliningrad_dust_blow_ground.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/503_kaliningrad_dust_middistance.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/503_kaliningrad_chimney_smoke.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/503_kaliningrad_dust_blow_ground.vfx</fn_effect_bin>
+		<preloadTextures>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_long.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/lm_textures/smoke_ground_6x6_ea.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/tracers.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_leaves.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/lm_textures/smoke_ground_6x6_lm.dds
+				<type>lightmaps</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/ramp/ramp_explosion.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/503_kaliningrad_efftex.dds
+				<type>primary</type>
+			</path>
+		</preloadTextures>
 		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/hd_bld_su_0115_thouse_40_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/hd_bld_su_101_canopy.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/hd_bld_su_206_cellar.vfx</fn_effect_bin>
@@ -258,72 +250,6 @@
 	</forward>
 	<deferred>
 		<name>default</name>
-		<preload>
-			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/503_kaliningrad_effTex.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_long.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/503_kaliningrad_effTex.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_water.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/503_kaliningrad_effTex.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_shimmer.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_tex_distortion.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_force_fields.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_tex_force_field.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_tex.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_long.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_tex.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_long.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_tex_long.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_leaves.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_long.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/tracers.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_water.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/tracers.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_water_displacement.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_tex_water.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_foam.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_tex_water.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_under_water.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_tex.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_water.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_tex.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/LM_textures/Smoke_ground_6x6_EA.dds</texture>
-			<textureLM>particles/content_deferred/PFX_textures/LM_textures/Smoke_ground_6x6_LM.dds</textureLM>
-			<textureRamp>particles/content_deferred/PFX_textures/ramp/ramp_explosion.dds</textureRamp>
-		</preload>
 		<fn_effect_bin>particles/environment/interior/503_kaliningrad_chimney_smoke.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/503_kaliningrad_dust_devil_big.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/503_kaliningrad_dust_blow_ground.eff</fn_effect_bin>
@@ -334,6 +260,56 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/503_kaliningrad_dust_blow_ground.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/503_kaliningrad_dust_devil_big_P.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/503_kaliningrad_dust_MidDistance_P.vfx</fn_effect_bin>
+		<preloadTextures>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_long.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_wt_spaces.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_leaves.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/503_kaliningrad_efftex.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/lm_textures/smoke_ground_6x6_ea.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/lm_textures/smoke_ground_6x6_lm.dds
+				<type>lightmaps</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/ramp/ramp_explosion.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_distortion.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_force_field.dds
+				<type>forcefields</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/tracers.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_water.dds
+				<type>water</type>
+			</path>
+		</preloadTextures>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/hd_bld_su_0115_thouse_40_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/hd_bld_su_101_canopy.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/hd_bld_su_206_cellar.vfx</fn_effect_bin>
@@ -540,9 +516,5 @@
 		<preloadVisual>particles/mesh_particles/wood_plank_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_stick_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_stick_03.visual</preloadVisual>
-		<preload>
-			<shader>data/shaders/ps_long.fx</shader>
-			<texture>particles/content_deferred/pfx_textures/eff_tex_wt_spaces.dds</texture>
-		</preload>
 	</deferred>
 </root>

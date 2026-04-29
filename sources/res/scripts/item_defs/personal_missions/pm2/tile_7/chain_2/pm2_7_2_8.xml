@@ -114,7 +114,7 @@ def onFinishBattle(eventType, eventData, quest, processor):
     questProgress = quest_progress.BaseQuestProgress(quest.config, processor.getQuestProgress(quest.progressID))
 
     brfilter = filter.BattleResultsFilter(eventData)
-    result = sum([len(shots) for shots in (brfilter.filterDamageTo(result=[&apos;pierced&apos;]).itervalues())])
+    result = brfilter.sumShots(brfilter.filterDamageTo(result=[&apos;pierced&apos;]))
     resultInBattle = questProgress.increaseUntilComplete(PROGRESS_ID_MAIN, result)
     resultInBattleAdv = questProgress.increaseUntilComplete(PROGRESS_ID_ADD, result)
     questProgress.increaseEveryProgress(PROGRESS_ID_MAIN_SERIES, resultInBattle)

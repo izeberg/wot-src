@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-1.094127 -0.420048 -2.525037</min>
+		<max>1.094127 0.908695 7.240000</max>
+	</visibilityBox>
+	<parent>vehicles/american/A182_ALRS_M6/crash/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodelessVisual>vehicles/american/A182_ALRS_M6/crash/lod0/Gun_01</nodelessVisual>
+</root>

@@ -25,12 +25,14 @@ from gui.Scaleform.daapi.view.lobby.storage.inventory.inventory_view import Inve
 from gui.Scaleform.daapi.view.lobby.storage.inventory.modules_tab import ModulesTabView
 from gui.Scaleform.daapi.view.lobby.storage.inventory.opt_devices_tab import OptDevicesTabView
 from gui.Scaleform.daapi.view.lobby.storage.inventory.regular_items_tab import RegularItemsTabView
+from gui.Scaleform.daapi.view.lobby.storage.inventory.restore_devices_view import RestoreDevicesContentView
 from gui.Scaleform.daapi.view.lobby.storage.inventory.select_vehicle_popover import VehicleSelectPopover
 from gui.Scaleform.daapi.view.lobby.storage.inventory.shells_tab import ShellsTabView
 from gui.Scaleform.daapi.view.lobby.storage.inventory.crew_books_tab import CrewBooksTabView
 from gui.Scaleform.daapi.view.lobby.storage.offers.offers_view import StorageCategoryOffersView
 from gui.Scaleform.daapi.view.lobby.storage.personalreserves.boosters_cm_handlers import PersonalReservesCMHandler
 from gui.Scaleform.daapi.view.lobby.storage.personalreserves.boosters_view import StorageCategoryPersonalReservesView
+from gui.Scaleform.daapi.view.lobby.storage.restore_devices import StorageRestoreDevicesView
 from gui.Scaleform.framework import ViewSettings, ScopeTemplates, GroupedViewSettings, ComponentSettings
 from gui.Scaleform.framework.package_layout import PackageBusinessHandler
 from gui.Scaleform.genConsts.CONTEXT_MENU_HANDLER_TYPE import CONTEXT_MENU_HANDLER_TYPE
@@ -88,6 +90,8 @@ def getViewSettings():
      ComponentSettings(STORAGE_CONSTANTS.STORAGE_DEVICES_TAB, OptDevicesTabView, ScopeTemplates.DEFAULT_SCOPE),
      ComponentSettings(STORAGE_CONSTANTS.STORAGE_CREW_BOOKS_TAB, CrewBooksTabView, ScopeTemplates.DEFAULT_SCOPE),
      ComponentSettings(STORAGE_CONSTANTS.PERSONAL_RESERVES_VIEW, StorageCategoryPersonalReservesView, ScopeTemplates.DEFAULT_SCOPE),
+     ViewSettings(VIEW_ALIAS.STORAGE_RESTORE_DEVICES_VIEW, StorageRestoreDevicesView, 'storageRestoreDevicesView.swf', WindowLayer.SUB_VIEW, VIEW_ALIAS.STORAGE_RESTORE_DEVICES_VIEW, ScopeTemplates.LOBBY_SUB_SCOPE),
+     ComponentSettings(STORAGE_CONSTANTS.STORAGE_RESTORE_DEVICES_CONTENT, RestoreDevicesContentView, ScopeTemplates.DEFAULT_SCOPE),
      GroupedViewSettings(VIEW_ALIAS.STORAGE_VEHICLES_FILTER_POPOVER, StorageVehicleFilterPopover, 'vehiclesFiltersPopoverView.swf', WindowLayer.WINDOW, VIEW_ALIAS.STORAGE_VEHICLES_FILTER_POPOVER, VIEW_ALIAS.STORAGE_VEHICLES_FILTER_POPOVER, ScopeTemplates.DEFAULT_SCOPE),
      ComponentSettings(STORAGE_CONSTANTS.BLUEPRINTS_VIEW, StorageCategoryBlueprintsView, ScopeTemplates.DEFAULT_SCOPE),
      GroupedViewSettings(VIEW_ALIAS.STORAGE_BLUEPRINTS_FILTER_POPOVER, StorageBlueprintsFilterPopover, 'vehiclesFiltersPopoverView.swf', WindowLayer.WINDOW, VIEW_ALIAS.STORAGE_VEHICLES_FILTER_POPOVER, VIEW_ALIAS.STORAGE_BLUEPRINTS_FILTER_POPOVER, ScopeTemplates.DEFAULT_SCOPE),
@@ -132,6 +136,8 @@ class StoragePackageBusinessHandler(PackageBusinessHandler):
         listeners = (
          (
           VIEW_ALIAS.LOBBY_STORAGE, self.loadViewByCtxEvent),
+         (
+          VIEW_ALIAS.STORAGE_RESTORE_DEVICES_VIEW, self.loadViewByCtxEvent),
          (
           VIEW_ALIAS.STORAGE_VEHICLES_FILTER_POPOVER, self.loadViewByCtxEvent),
          (

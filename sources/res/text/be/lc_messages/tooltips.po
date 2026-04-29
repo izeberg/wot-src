@@ -6140,6 +6140,11 @@ msgstr ""
 "Кампаненты неабходны для наладкі і дэмантажу эксперыментальнага "
 "абсталявання."
 
+msgid "header/buttons/equipCoin/description2"
+msgstr ""
+"Кампаненты неабходны для наладкі і дэмантажу эксперыментальнага "
+"абсталявання."
+
 msgid "header/buttons/equipCoin/descriptionEquipCoin"
 msgstr "Кампаненты"
 
@@ -6243,6 +6248,12 @@ msgstr ""
 
 msgid "header/buttons/missions/header"
 msgstr "Задачы"
+
+msgid "header/buttons/museum/body"
+msgstr "Посетить виртуальную экспозицию советских танков и САУ."
+
+msgid "header/buttons/museum/header"
+msgstr "Музей"
 
 msgid "header/buttons/personalMissions/body"
 msgstr "Націсніце, каб перайсці да асабістых баявых задач."
@@ -6620,6 +6631,22 @@ msgstr "Інфармацыйныя лісткі даступныя ў поўна
 
 msgid "lobbyMenu/versionInfoButton/miniclient/header"
 msgstr "Увага!"
+
+msgid "loby_messenger/btnReferralDisabled/body"
+msgstr ""
+"Недоступно в выбранном режиме. Для получения доступа к функциональности "
+"перейдите в режим «Случайный бой»."
+
+msgid "loby_messenger/btnReferralDisabled/header"
+msgstr "Рэферальная праграма"
+
+msgid "loby_messenger/btnVehicleCartDisabled/body"
+msgstr ""
+"Недоступно в выбранном режиме. Для получения доступа к функциональности "
+"перейдите в режим «Случайный бой»."
+
+msgid "loby_messenger/btnVehicleCartDisabled/header"
+msgstr "Параўнанне тэхнікі"
 
 msgid "loby_messenger/channel_button/inRoaming"
 msgstr "Каналы недаступныя з прычыны змены рэгіёна"
@@ -7107,6 +7134,27 @@ msgid "moduleFits/replace"
 msgstr ""
 "Зараз усталявана: %(moduleName)s Замена абсталявання зменіць наступныя "
 "характарыстыкі:"
+
+msgid "moduleFits/restore/modernized/reason/0"
+msgstr "Оборудование было разобрано при продаже машины:"
+
+msgid "moduleFits/restore/modernized/reason/1"
+msgstr "Оборудование было разобрано со Cклада:"
+
+msgid "moduleFits/restore/modernized/reason/2"
+msgstr "Оборудование было разобрано на машине:"
+
+msgid "moduleFits/restore/noModernized/reason/0"
+msgstr "Оборудование было продано вместе с машиной:"
+
+msgid "moduleFits/restore/noModernized/reason/1"
+msgstr "Оборудование было продано со Cклада:"
+
+msgid "moduleFits/restore/noModernized/reason/2"
+msgstr "Оборудование было уничтожено на машине:"
+
+msgid "moduleFits/restore/price"
+msgstr "Аднаўленне"
 
 msgid "moduleFits/similar_device_already_installed/header"
 msgstr "Немагчыма ўсталяваць"
@@ -9309,6 +9357,28 @@ msgstr ""
 msgid "notrecruitedtankman/tankmen_Portal25_4/label"
 msgstr "Падзея «Разлом»"
 
+msgid "notrecruitedtankman/tankmen_PvEMay26_1/desc"
+msgstr ""
+"Советский танковый ас, Герой Советского Союза, гвардии старший лейтенант. "
+"Признан наиболее результативным советским танкистом — за два с половиной "
+"месяца уничтожил 52 танка в 28 боях. Был убит осколком миномётного снаряда "
+"18 декабря 1941 года в боях на Волоколамском направлении. Посмертно "
+"награждён Орденом Ленина 22 декабря 1941 года."
+
+msgid "notrecruitedtankman/tankmen_PvEMay26_1/label"
+msgstr "Падзея «Час герояў»"
+
+msgid "notrecruitedtankman/tankmen_PvEMay26_2/desc"
+msgstr ""
+"Сержант, командир танка БТ-7, Герой Советского Союза. 25 июня 1941 года "
+"у местечка Рудишкяй (Литва) разгромил колонну бронетехники противника, "
+"уничтожив в общей сложности 15 танков и 10 орудий передового отряда "
+"19-й танковой дивизии немцев, задержав тем самым наступление немцев на двое "
+"суток, что позволило тщательно организовать оборону Вильно."
+
+msgid "notrecruitedtankman/tankmen_PvEMay26_2/label"
+msgstr "Падзея «Час герояў»"
+
 msgid "notrecruitedtankman/tankmen_Razvedchik_3/desc"
 msgstr ""
 "Камандзір разведвальнага звязу. Дасведчаны і абпалены вайной афіцэр, які "
@@ -11214,9 +11284,9 @@ msgstr "Адмычка ад кантэйнера «Дзень нараджэнн
 
 msgid "quests/bonuses/token/resource/clan_promoresource/body"
 msgstr ""
-"Рэсурс для развіцця Умацаванага раёна і падрыхтоўкі кланавых рэзерваў. "
-"Здабыць прамысловы рэсурс можна ў Вылазках, Наступленнях, Выпадковых баях "
-"(на тэхніцы X узроўню) або ў Рангавых баях."
+"Ресурс для развития Укрепрайона и подготовки клановых резервов. Заработать "
+"его можно в Вылазках, Наступлениях или Случайных боях на технике Х "
+"и XI уровней."
 
 msgid "quests/bonuses/token/resource/clan_promoresource/header"
 msgstr "Прамысловы рэсурс"
@@ -12968,6 +13038,12 @@ msgstr ""
 "Паказвае, на колькі метраў снарад можа адхіліцца ад пункта прыцэльвання за "
 "кожныя 100 метраў адлегласці да цэлі."
 
+msgid "tank_params/desc/shotDispersionAngle/withAutoShoot"
+msgstr ""
+"Показывает, на сколько метров снаряды разнесённых орудий могут отклониться "
+"от обобщённой центральной точки прицеливания за каждые 100 метров дистанции "
+"до цели."
+
 msgid "tank_params/desc/shotDispersionAngle/withDualAccuracy"
 msgstr ""
 "Паказвае, на колькі метраў снарад можа адхіліцца ад пункту прыцэльвання за "
@@ -14329,11 +14405,19 @@ msgstr ""
 msgid "vehicleSellDialog/crew/alertIcon/recovery/header"
 msgstr "Буфер дэмабілізаваных запоўнены"
 
-msgid "vehicleSellDialog/renderer/alertIconDeconstruct/body"
+msgid "vehicleSellDialog/renderer/alertIconDeconstructDisabled/body"
 msgstr ""
 "Разабраўшы абсталяванне, вы не зможаце яго аднавіць або купіць нанова."
 
-msgid "vehicleSellDialog/renderer/alertIconDeconstruct/header"
+msgid "vehicleSellDialog/renderer/alertIconDeconstructDisabled/header"
+msgstr "Разбор абсталявання"
+
+msgid "vehicleSellDialog/renderer/alertIconDeconstructEnabled/body"
+msgstr ""
+"Разобрав оборудование, вы сможете его восстановить во вкладке "
+"«Восстановление» на Складе в разделе запасов."
+
+msgid "vehicleSellDialog/renderer/alertIconDeconstructEnabled/header"
 msgstr "Разбор абсталявання"
 
 msgid "vehicleSellDialog/renderer/alertIconGoldWotPlus/body"
@@ -14350,10 +14434,18 @@ msgstr ""
 msgid "vehicleSellDialog/renderer/alertIconRemove/header"
 msgstr "Дэмантаваць на Склад"
 
-msgid "vehicleSellDialog/renderer/alertIconSell/body"
+msgid "vehicleSellDialog/renderer/alertIconSellDisabled/body"
 msgstr "Прадаўшы абсталяванне, вы не зможаце яго аднавіць."
 
-msgid "vehicleSellDialog/renderer/alertIconSell/header"
+msgid "vehicleSellDialog/renderer/alertIconSellDisabled/header"
+msgstr "Продаж абсталявання"
+
+msgid "vehicleSellDialog/renderer/alertIconSellEnabled/body"
+msgstr ""
+"Продав оборудование, вы сможете его восстановить во вкладке «Восстановление»"
+" на Складе в разделе запасов."
+
+msgid "vehicleSellDialog/renderer/alertIconSellEnabled/header"
 msgstr "Продаж абсталявання"
 
 msgid "vehicleSellDialog/renderer/sbscr/Deluxe/nonsub/demountEnabled/body"

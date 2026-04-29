@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<version>3</version>
+	<GameObjects>
+		<GameObject>
+			<name>TankEngine_Cran</name>
+			<UUID>7707c7ef-4f8b-4c1f-8ca8-9f55cda1e188</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>hd_h00_AY24_0014_TankEngine_Cran</name>
+			<UUID>e2e5ff99-70ba-421a-88f5-ed3681e5ac07</UUID>
+			<flags>0</flags>
+		</GameObject>
+	</GameObjects>
+	<components>
+		<ComponentPool>
+			<type>Hierarchy</type>
+			<version>2</version>
+			<component>
+				<objectIndex>1</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>7707c7ef-4f8b-4c1f-8ca8-9f55cda1e188</link>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>Transform</type>
+			<version>1</version>
+			<component>
+				<objectIndex>0</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>1</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>
+							0.65 0.65 0.65
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							-0 -0.0196489 0
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>ModelDitheringComponent</type>
+			<version>1</version>
+			<component>
+				<objectIndex>1</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Force full dithering distance</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Start dithering distance</name>
+						<value>
+							1.2
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Dithering animation speed</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>DynamicModel</type>
+			<version>1</version>
+			<component>
+				<objectIndex>1</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Model name</name>
+						<isAsset>true</isAsset>
+						<value>content/Hangars/h00_armory_yard/environment/normal/lod0/hd_h00_AY24_0014_TankEngine_Cran.model</value>
+					</property>
+					<property>
+						<name>Cast Shadows</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Parts</name>
+						<collection/>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+	</components>
+</root>

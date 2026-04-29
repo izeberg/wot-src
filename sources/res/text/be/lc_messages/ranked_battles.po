@@ -429,11 +429,19 @@ msgstr "Дывізіён яшчэ не дасягнуты"
 msgid "division/tooltip/status/locked/desc"
 msgstr "Спярша прайдзіце папярэдні дывізіён."
 
-msgid "entryPoint/frozen/thin"
-msgstr "Часова адключаны"
-
-msgid "entryPoint/frozen/wide"
+msgid "entryPoint/disabled"
 msgstr "Рэжым часова адключаны"
+
+msgid "entryPoint/finalDivision"
+msgstr "Последний рывок! Вы в финальном дивизионе"
+
+msgid "entryPoint/rankBeforeNextDivision"
+msgstr "1 ранг до нового дивизиона!"
+
+msgid "entryPoint/rewardDescription"
+msgstr ""
+"Усовершенствованное\n"
+"оборудование ждёт вас!"
 
 msgid "entryPoint/season/end"
 msgstr "Баі завершаны"
@@ -455,9 +463,9 @@ msgstr "Рэжым часова недаступны. Зайдзіце пазн�
 
 msgid "introPage/blocks/block1/description"
 msgstr ""
-"Баі праходзяць толькі на тэхніцы VI узроўню і паводле правіл Звычайнага бою."
-" Вам давядзецца прайсці 3 дывізіёны па 5 рангаў. Кожны новы ранг прынясе вас"
-" годную ўзнагароду."
+"Бои проходят на технике IX уровня и по правилам Стандартного боя. Вам "
+"предстоит пройти 3 дивизиона по 5 рангов. Каждый новый ранг принесёт вам "
+"достойное вознаграждение."
 
 msgid "introPage/blocks/block1/title"
 msgstr "Асноўныя правілы"
@@ -1064,7 +1072,7 @@ msgid "rankedBattleMainView/seasonGap/waitingLeague/title"
 msgstr "Ідзе падлік вынікаў"
 
 msgid "rankedBattleMainView/specialSeason"
-msgstr "VI"
+msgstr "IX"
 
 msgid "rankedBattleMainView/stats/battlesInLeague"
 msgstr "Баёў у лігах"

@@ -213,10 +213,6 @@
 						<Bool>true</Bool>
 					</property>
 					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
 						blendMask
 						<Texture>content/Buildings/hd_bld_EU_016_Tohouse/EU_OldCity_01_04_blend.png</Texture>
 					</property>
@@ -274,10 +270,6 @@
 					<collisionFlags>0</collisionFlags>
 					<materialKind>111</materialKind>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
 					<property>
 						blendMask
 						<Texture>content/Buildings/hd_bld_EU_016_Tohouse/EU_OldCity_01_04_blend.png</Texture>

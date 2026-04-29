@@ -2,16 +2,10 @@
 <root>
 	<tank>true</tank>
 	<visibilityBox>
-		<min>
-			-1.18918 -0.0021257 -2.07859
-			<!--BW_String-->
-		</min>
-		<max>
-			1.38371 1.458 1.54907
-			<!--BW_String-->
-		</max>
+		<min>-1.189180 0.009637 -2.078595</min>
+		<max>1.792292 2.047833 1.549071</max>
 	</visibilityBox>
 	<parent>vehicles/russian/R147_Object_701/normal/lod1/Turret_01</parent>
-	<extent>32</extent>
+	<extent>32.000000</extent>
 	<nodefullVisual>vehicles/russian/R147_Object_701/normal/lod0/Turret_01</nodefullVisual>
 </root>

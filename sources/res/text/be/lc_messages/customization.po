@@ -1,0 +1,428 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "arrowHint/text"
+msgstr "НАЖИМАЙТЕ КЛАВИШИ, ЧТОБЫ ИЗМЕНИТЬ ЭЛЕМЕНТ"
+
+msgid "cart/bonus"
+msgstr "+%(bonus)s да маскіроўкі"
+
+msgid "cart/emptyDescription"
+msgstr "На машину не нанесены элементы внешнего вида."
+
+msgid "cart/emptyTitle"
+msgstr "Сняты все элементы"
+
+msgid "cart/quantity"
+msgstr "%(quantity)sx"
+
+msgid "cart/seasonsName/all_seasons"
+msgstr "Все карты"
+
+msgid "cart/seasonsName/desert"
+msgstr "Пустынная мапа"
+
+msgid "cart/seasonsName/summer"
+msgstr "Летняя мапа"
+
+msgid "cart/seasonsName/winter"
+msgstr "Зімовая мапа"
+
+msgid "cartPanel/applyButton"
+msgstr "Применить"
+
+msgid "cartPanel/rentAmountLabel"
+msgstr "боёв за"
+
+msgid "cartPanel/setupButton"
+msgstr "К нанесению"
+
+msgid "changeButton/tooltip"
+msgstr "?empty?"
+
+msgid "customization/allSeasonsHint/shortText"
+msgstr "Наносить для всех типов карт"
+
+msgid "customization/allSeasonsHint/text"
+msgstr "Наносить %(item)s для всех типов карт"
+
+msgid "customization/allSeasonsHint/tooltip/body"
+msgstr ""
+"Элементы будут нанесены сразу для всех типов карт. При нанесении нового "
+"элемента в занятый слот установленные элементы будут заменены на новые "
+"для всех типов карт."
+
+msgid "customization/allSeasonsHint/tooltip/header"
+msgstr "Наносить элемент для всех типов карт"
+
+msgid "customization/backButton"
+msgstr "НАЗАД"
+
+msgid "customization/carousel/change_button"
+msgstr "Змяніць"
+
+msgid "customization/carousel/is_already_used"
+msgstr "На іншай тэхніцы"
+
+msgid "customization/changeButton/tooltip"
+msgstr "Націсніце, каб змяніць стыль."
+
+msgid "customization/changeButtonDisabled/tooltip"
+msgstr ""
+"Рэдагаванне стылю стане даступным, калі будзе атрымана этапная дэколь для "
+"гэтай машыны."
+
+msgid "customization/closeButton"
+msgstr "ЗАКРЫЦЬ"
+
+msgid "customization/decalsBanner"
+msgstr "Этапные декали"
+
+msgid "customization/message/description"
+msgstr ""
+"Измените параметры фильтра или закройте меню настройки декали, чтобы "
+"отобразить элементы внешнего вида."
+
+msgid "customization/message/header"
+msgstr "По вашему запросу ничего не найдено"
+
+msgid "customization/resetFilter/tooltip/text"
+msgstr "Нажмите, чтобы сбросить настройки фильтра на состояние по умолчанию."
+
+msgid "customization/resetFiltersBtn/label"
+msgstr "Скінуць фільтр"
+
+msgid "customization/seasonsTabs/desert"
+msgstr "ПУСТЫННАЯ"
+
+msgid "customization/seasonsTabs/map"
+msgstr "КАРТА"
+
+msgid "customization/seasonsTabs/summer"
+msgstr "ЛЕТНЯЯ"
+
+msgid "customization/seasonsTabs/winter"
+msgstr "ЗІМОВАЯ"
+
+msgid "filters/labelAll"
+msgstr "Усе"
+
+msgid "filters/labelSale"
+msgstr "В продаже"
+
+msgid "filters/labelStock"
+msgstr "На Складзе"
+
+msgid "filters/openPanelButton"
+msgstr "Раскрыть панель"
+
+msgid "filters/selectedTitle"
+msgstr "Выбрана:"
+
+msgid "filtersPopover/counterText"
+msgstr "Отображаемые элементы:"
+
+msgid "filtersPopover/filters/availabilityTitle"
+msgstr "Наличие"
+
+msgid "filtersPopover/filters/editableTitle"
+msgstr "Змяняльнасць"
+
+msgid "filtersPopover/filters/formfactorTitle"
+msgstr "Прапорцыі экрана"
+
+msgid "filtersPopover/filters/groupsDefaultTitle"
+msgstr "Усе групы"
+
+msgid "filtersPopover/filters/groupsTitle"
+msgstr "Групы"
+
+msgid "filtersPopover/filters/hiddenFiltersCaption"
+msgstr "Новыя элементы схаваны фільтрам"
+
+msgid "filtersPopover/filters/historicTitle"
+msgstr "Гістарычнасць"
+
+msgid "filtersPopover/filters/onAnotherVehTitle"
+msgstr "Нанесено на другую технику"
+
+msgid "filtersPopover/filters/sortingDefaultTitle"
+msgstr "Перадвызначана"
+
+msgid "filtersPopover/filters/sortingTitle"
+msgstr "Сортировка"
+
+msgid "filtersPopover/filters/specificTitle"
+msgstr "Асаблівыя"
+
+msgid "filtersPopover/title"
+msgstr "Фільтр"
+
+msgid "itemTypes/camouflage"
+msgstr "КАМУФЛЯЖ"
+
+msgid "itemTypes/decal"
+msgstr "Дэколі"
+
+msgid "itemTypes/emblem"
+msgstr "Эмблемы"
+
+msgid "itemTypes/inscription"
+msgstr "Надпісы"
+
+msgid "itemTypes/modification"
+msgstr "Эфекты"
+
+msgid "itemTypes/outfit"
+msgstr "?empty?"
+
+msgid "itemTypes/paint"
+msgstr "Фарбы"
+
+msgid "itemTypes/personalNumber"
+msgstr "Трохзначныя нумары"
+
+msgid "itemTypes/projectionDecal"
+msgstr "Дэколі"
+
+msgid "itemTypes/style"
+msgstr "Стылі"
+
+msgid "itemTypes/style_2d"
+msgstr "2D-СТИЛИ"
+
+msgid "itemTypes/style_3d"
+msgstr "3D-СТИЛИ"
+
+msgid "progression/info"
+msgstr "ПРА ПРАГРЭСІЙНЫ СТЫЛЬ"
+
+msgid "tooltips/carousel/arrow"
+msgstr "Нажмите, чтобы переместиться к нанесённому элементу."
+
+msgid "tooltips/cart/BuyButtonDisabledNotEnoughMoney"
+msgstr "Недостаточно средств для покупки выбранных элементов внешнего вида."
+
+msgid "tooltips/cart/buyButtonDisabledDefault"
+msgstr "На машину не нанесены элементы внешнего вида."
+
+msgid "tooltips/cart/cancelButtonDisabled"
+msgstr "После открытия экрана внешнего вида изменения отсутствуют."
+
+msgid "tooltips/cart/cancelButtonEnabled"
+msgstr ""
+"Нажмите, чтобы отменить все изменения. Внешний вид машины будет возвращён к "
+"состоянию, которое было на момент открытия экрана внешнего вида."
+
+msgid "tooltips/cart/clearButtonDisabled"
+msgstr "На машину не нанесены элементы внешнего вида."
+
+msgid "tooltips/cart/clearButtonEnabled"
+msgstr "Нажмите, чтобы снять с техники все элементы внешнего вида."
+
+msgid "tooltips/filters/allRadioBody"
+msgstr "Включить отображение всех доступных элементов внешнего вида."
+
+msgid "tooltips/filters/allRadioHeader"
+msgstr "Все элементы"
+
+msgid "tooltips/filters/appliedToggleBody"
+msgstr "Паказваць/схаваць элементы выгляду машыны."
+
+msgid "tooltips/filters/appliedToggleHeader"
+msgstr "На тэхніцы"
+
+msgid "tooltips/filters/editableToggleBody"
+msgstr ""
+"Включить/отключить отображение изменяемых стилей. Система сохраняет "
+"до 5 полученных изменённых стилей. При превышении лимита сохранённые "
+"изменения одного из стилей будут сброшены до состояния по умолчанию."
+
+msgid "tooltips/filters/editableToggleHeader"
+msgstr "Зменныя стылі"
+
+msgid "tooltips/filters/fantasticalToggleBody"
+msgstr ""
+"Включить/отключить отображение стилей и элементов, которые являются "
+"художественным вымыслом и с большей вероятностью не могут быть реализованы "
+"в реальной жизни."
+
+msgid "tooltips/filters/fantasticalToggleHeader"
+msgstr "Выдуманыя элементы"
+
+msgid "tooltips/filters/favoritesToggleBody"
+msgstr "Паказваць/схаваць толькі выбраныя элементы выгляду."
+
+msgid "tooltips/filters/favoritesToggleHeader"
+msgstr "Выбраныя элементы выгляду"
+
+msgid "tooltips/filters/formfactor11ToggleBody"
+msgstr "Включить/отключить отображение декали с соотношением сторон 1:1."
+
+msgid "tooltips/filters/formfactor11ToggleHeader"
+msgstr "Соотношение сторон 1:1"
+
+msgid "tooltips/filters/formfactor12ToggleBody"
+msgstr "Включить/отключить отображение декали с соотношением сторон 1:2."
+
+msgid "tooltips/filters/formfactor12ToggleHeader"
+msgstr "Соотношение сторон 1:2"
+
+msgid "tooltips/filters/formfactor13ToggleBody"
+msgstr "Включить/отключить отображение декали с соотношением сторон 1:3."
+
+msgid "tooltips/filters/formfactor13ToggleHeader"
+msgstr "Соотношение сторон 1:3"
+
+msgid "tooltips/filters/formfactor14ToggleBody"
+msgstr "Включить/отключить отображение декали с соотношением сторон 1:4."
+
+msgid "tooltips/filters/formfactor14ToggleHeader"
+msgstr "Соотношение сторон 1:4"
+
+msgid "tooltips/filters/formfactor16ToggleBody"
+msgstr "Включить/отключить отображение декали с соотношением сторон 1:6."
+
+msgid "tooltips/filters/formfactor16ToggleHeader"
+msgstr "Соотношение сторон 1:6"
+
+msgid "tooltips/filters/historicToggleBody"
+msgstr "Паказваць/схаваць гістарычныя элементы выгляду машыны."
+
+msgid "tooltips/filters/historicToggleHeader"
+msgstr "Гістарычныя"
+
+msgid "tooltips/filters/noneditableToggleBody"
+msgstr "Паказаць/схаваць нязменныя стылі."
+
+msgid "tooltips/filters/noneditableToggleHeader"
+msgstr "Нязменныя стылі"
+
+msgid "tooltips/filters/nonhistoricToggleBody"
+msgstr "Паказваць/схаваць негістарычныя элементы выгляду машыны."
+
+msgid "tooltips/filters/nonhistoricToggleHeader"
+msgstr "Негістарычныя"
+
+msgid "tooltips/filters/onAnotherVehDisabledBody"
+msgstr ""
+"Чтобы включить отображение элементов внешнего вида на другой технике, "
+"включите отображение всех элементов на панели выше."
+
+msgid "tooltips/filters/onAnotherVehDisabledTitle"
+msgstr "Отображение недоступно"
+
+msgid "tooltips/filters/onAnotherVehEnabledBody"
+msgstr ""
+"Паказаць/схаваць наяўныя элементы выгляду, нанесеныя на іншую тэхніку."
+
+msgid "tooltips/filters/onAnotherVehEnabledTitle"
+msgstr "Элементы на іншай тэхніцы"
+
+msgid "tooltips/filters/openPanelButton"
+msgstr ""
+"Нажмите, чтобы развернуть панель с элементами внешнего вида на весь экран."
+
+msgid "tooltips/filters/openPanelDisabledButton"
+msgstr "Раскрытие панели недоступно в режиме редактирования элемента."
+
+msgid "tooltips/filters/popoverButtonBody"
+msgstr ""
+"Настройте отображение элементов внешнего вида по наличию, историчности "
+"и другим параметрам."
+
+msgid "tooltips/filters/popoverButtonTitle"
+msgstr "Фільтр паводле параметраў"
+
+msgid "tooltips/filters/progressionDecalsToggleBody"
+msgstr "Паказваць/схаваць этапныя элементы выгляду машыны."
+
+msgid "tooltips/filters/progressionDecalsToggleHeader"
+msgstr "Этапныя элементы"
+
+msgid "tooltips/filters/progressionstylesToggleBody"
+msgstr "Паказваць/схаваць толькі прагрэсійныя стылі."
+
+msgid "tooltips/filters/progressionstylesToggleHeader"
+msgstr "Прагрэсійныя стылі"
+
+msgid "tooltips/filters/saleRadioBody"
+msgstr "Включить отображение элементов внешнего вида, доступных для покупки."
+
+msgid "tooltips/filters/saleRadioHeader"
+msgstr "В продаже"
+
+msgid "tooltips/filters/stockRadioBody"
+msgstr "Включить отображение элементов внешнего вида в наличии на Складе."
+
+msgid "tooltips/filters/stockRadioHeader"
+msgstr "На Складзе"
+
+msgid "tooltips/tabs/camouflage_description"
+msgstr ""
+"Трёхкомпонентные цветовые схемы (башня/орудие/корпус), подходят "
+"для нанесения на большинство машин. Для бонуса к маскировке нужно нанести "
+"камуфляж на корпус."
+
+msgid "tooltips/tabs/camouflage_title"
+msgstr "Камуфляж"
+
+msgid "tooltips/tabs/emblem_description"
+msgstr ""
+"Эмблемы наносятся на определённые места машины и подчёркивают её "
+"индивидуальность."
+
+msgid "tooltips/tabs/emblem_title"
+msgstr "Эмблемы"
+
+msgid "tooltips/tabs/inscription_description"
+msgstr ""
+"Надписи наносятся на определённые места машины и подчёркивают её "
+"индивидуальность."
+
+msgid "tooltips/tabs/inscription_title"
+msgstr "Надпісы"
+
+msgid "tooltips/tabs/modification_description"
+msgstr ""
+"Эфекты змяняюць выгляд фарбавага пакрыцця машыны, старачы яго або наадварот "
+"робячы навейшым."
+
+msgid "tooltips/tabs/modification_title"
+msgstr "Эфекты"
+
+msgid "tooltips/tabs/paint_description"
+msgstr "Изменяют базовый цвет машины, не влияют на показатель маскировки."
+
+msgid "tooltips/tabs/paint_title"
+msgstr "Фарбы"
+
+msgid "tooltips/tabs/projectionDecal_description"
+msgstr ""
+"Декали — крупные наклейки — наносятся на определённые места машины "
+"и подчёркивают её индивидуальность."
+
+msgid "tooltips/tabs/projectionDecal_title"
+msgstr "Дэколі"
+
+msgid "tooltips/tabs/style_2d_description"
+msgstr ""
+"Добавляют бонус к маскировке, подходят для нанесения на большинство машин."
+
+msgid "tooltips/tabs/style_2d_title"
+msgstr "2D-стылі"
+
+msgid "tooltips/tabs/style_3d_description"
+msgstr ""
+"Придают уникальный внешний вид определённой машине, добавляют бонус "
+"к маскировке, содержат тематические компоненты и элементы наружного обвеса."
+
+msgid "tooltips/tabs/style_3d_title"
+msgstr "3D-стылі"

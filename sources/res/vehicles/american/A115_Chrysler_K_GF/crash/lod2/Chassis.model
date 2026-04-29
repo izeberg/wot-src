@@ -3,16 +3,10 @@
 	<nodefullVisual>vehicles/american/A115_Chrysler_K_GF/crash/lod2/Chassis</nodefullVisual>
 	<tank>true</tank>
 	<parent>vehicles/american/A115_Chrysler_K_GF/crash/lod3/Chassis</parent>
-	<extent>96</extent>
+	<extent>96.000000</extent>
 	<materialNames/>
 	<visibilityBox>
-		<min>
-			-1.95934 -0.000147548 -3.68419
-			<!--BW_String-->
-		</min>
-		<max>
-			1.95346 1.23205 4.585
-			<!--BW_String-->
-		</max>
+		<min>-1.959340 -0.000148 -3.684190</min>
+		<max>1.953460 1.232050 4.585000</max>
 	</visibilityBox>
 </root>

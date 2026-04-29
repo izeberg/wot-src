@@ -200,10 +200,6 @@
 						<Texture>content/Buildings/hd_bld_EU_225_Cathedral/hd_bld_EU_225_Cathedral_05_blend.png</Texture>
 					</property>
 					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
 						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>

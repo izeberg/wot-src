@@ -5,6 +5,7 @@ package net.wg.gui.lobby
    import flash.display.DisplayObject;
    import flash.display.InteractiveObject;
    import flash.display.Sprite;
+   import flash.events.Event;
    import flash.events.MouseEvent;
    import flash.geom.Point;
    import net.wg.data.Aliases;
@@ -45,6 +46,8 @@ package net.wg.gui.lobby
       private static const TOP_SUB_VIEW_POSITION:Number = 53;
       
       private static const WARNING_EMPTY_HIT_AREA:String = "vehicleHitArea is null!";
+      
+      private static const HEADER_INVISIBLE_Y:int = -2000;
        
       
       public var vehicleHitArea:VehicleHitAreaComponent = null;
@@ -73,6 +76,8 @@ package net.wg.gui.lobby
       
       private var _teaser:Bitmap;
       
+      private var _ignoreTopOffset:Boolean = false;
+      
       public function LobbyPage()
       {
          super();
@@ -85,7 +90,7 @@ package net.wg.gui.lobby
       
       override public function updateStage(param1:Number, param2:Number) : void
       {
-         var _loc5_:IManagedContainer = null;
+         var _loc8_:IManagedContainer = null;
          _originalWidth = param1;
          _originalHeight = param2;
          setSize(param1,param2);
@@ -93,17 +98,17 @@ package net.wg.gui.lobby
          this.vehicleHitArea.height = param2 - this.vehicleHitArea.y;
          this.messengerBar.updateStage(param1,param2);
          var _loc3_:Array = this.getSubContainers();
-         var _loc4_:Number = param2 - TOP_SUB_VIEW_POSITION;
-         if(this.messengerBar.visible)
+         var _loc4_:int = !!this.messengerBar.visible ? int(MessengerBar.BAR_VISIBLE_HEIGHT) : int(0);
+         var _loc5_:int = !!this.header.visible ? int(TOP_SUB_VIEW_POSITION) : int(0);
+         var _loc6_:int = param2 - _loc5_ - _loc4_;
+         var _loc7_:Boolean = false;
+         for each(_loc8_ in _loc3_)
          {
-            _loc4_ -= MessengerBar.BAR_VISIBLE_HEIGHT;
-         }
-         for each(_loc5_ in _loc3_)
-         {
-            if(_loc5_)
+            if(_loc8_)
             {
-               _loc5_.y = TOP_SUB_VIEW_POSITION;
-               _loc5_.updateStage(param1,_loc4_);
+               _loc7_ = this._ignoreTopOffset && _loc8_ == this.subViewContainer && this.header.visible;
+               _loc8_.y = !!_loc7_ ? Number(0) : Number(_loc5_);
+               _loc8_.updateStage(param1,!!_loc7_ ? Number(_loc6_ + _loc5_) : Number(_loc6_));
             }
          }
          this.header.width = param1;
@@ -227,6 +232,19 @@ package net.wg.gui.lobby
          this.waiting.show();
       }
       
+      public function as_setInterfaceVisible(param1:Boolean, param2:Boolean) : void
+      {
+         if(this.header.visible == param1 && this.messengerBar.visible == param2)
+         {
+            return;
+         }
+         this.header.visible = param1;
+         this.header.y = !!param1 ? Number(0) : Number(HEADER_INVISIBLE_Y);
+         this.messengerBar.visible = param2;
+         this.updateStage(App.appWidth,App.appHeight);
+         dispatchEvent(new Event(Event.RESIZE));
+      }
+      
       public function as_setSubContainerItemsVisibility(param1:Boolean) : void
       {
          var _loc3_:IManagedContainer = null;
@@ -249,6 +267,17 @@ package net.wg.gui.lobby
          if(param1 && _loc2_)
          {
             setFocus(_loc2_);
+         }
+      }
+      
+      public function as_setHeaderVisible(param1:Boolean, param2:Boolean) : void
+      {
+         if(this.header.visible != param1 || this._ignoreTopOffset != param2)
+         {
+            this.header.visible = param1;
+            this._ignoreTopOffset = param2;
+            this.updateStage(App.appWidth,App.appHeight);
+            dispatchEvent(new Event(Event.RESIZE));
          }
       }
       
@@ -339,10 +368,9 @@ package net.wg.gui.lobby
       
       private function onTeaserHideHandler(param1:TeaserEvent) : void
       {
-         var _loc2_:Point = null;
          addChildAt(this._teaserOverlay = new Sprite(),getChildIndex(this.header) + 1);
          this._teaser = param1.teaser.drawToBitmap();
-         _loc2_ = new Point(this._teaser.x,this._teaser.y);
+         var _loc2_:Point = new Point(this._teaser.x,this._teaser.y);
          _loc2_ = this._teaserOverlay.globalToLocal(_loc2_);
          this._teaser.x = _loc2_.x;
          this._teaser.y = _loc2_.y;

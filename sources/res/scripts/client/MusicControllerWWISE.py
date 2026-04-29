@@ -12,6 +12,7 @@ MUSIC_EVENT_COMBAT_LOADING = 4
 MUSIC_EVENT_COMBAT_VICTORY = 5
 MUSIC_EVENT_COMBAT_LOSE = 6
 MUSIC_EVENT_COMBAT_DRAW = 7
+MUSIC_EVENT_SOUND_EXIT = 8
 _BATTLE_RESULT_MUSIC_EVENTS = (
  MUSIC_EVENT_COMBAT_VICTORY, MUSIC_EVENT_COMBAT_LOSE, MUSIC_EVENT_COMBAT_DRAW)
 AMBIENT_EVENT_NONE = 1000
@@ -489,6 +490,7 @@ class MusicController(object):
             combatVictory = settings.readString('wwcombatVictory')
             combatLose = settings.readString('wwcombatLose')
             combatDraw = settings.readString('wwcombatDraw')
+            exitName = settings.readString('wwexitSound')
             if musicName:
                 self.__updateOverridden(MUSIC_EVENT_LOBBY, _CLIENT_OVERRIDDEN, (musicName, musicName))
             if combatVictory:
@@ -501,6 +503,8 @@ class MusicController(object):
                 self.__updateOverridden(AMBIENT_EVENT_LOBBY, _CLIENT_OVERRIDDEN, (ambientName, ambientName))
                 self.__updateOverridden(AMBIENT_EVENT_SHOP, _CLIENT_OVERRIDDEN, (ambientName, ambientName))
                 self.__updateOverridden(AMBIENT_EVENT_STATISTICS, _CLIENT_OVERRIDDEN, (ambientName, ambientName))
+            if exitName:
+                self.__updateOverridden(MUSIC_EVENT_SOUND_EXIT, _CLIENT_OVERRIDDEN, (exitName, exitName))
             return
 
     def __updateOverridden(self, eventID, typeId, value):

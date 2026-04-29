@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>3.000000</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>CamoStargestell</name>
+		<type>model</type>
+		<resource>vehicles/german/G00_Startgestell/camo_startgestell/normal/lod0/hd_env_EVT_BF_0001_Cam_Start_03.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.062092 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.000000</startTime>
+				<value>0.000000 0.062092 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>g_AnimationTime</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.088889</value>
+				<inTangent>0.303704</inTangent>
+				<outTangent>0.303704</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.000000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.303704</inTangent>
+				<outTangent>0.303704</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>g_ditherCoeff</property>
+			<frame>
+				<startTime>1.500000</startTime>
+				<value>100.000000</value>
+				<inTangent>-142.857101</inTangent>
+				<outTangent>-150.000015</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.166667</startTime>
+				<value>0.000000</value>
+				<inTangent>-150.000015</inTangent>
+				<outTangent>-142.857101</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Camo_Stargestell</name>
+		<type>sound</type>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>2.533334</duration>
+				<value>CamoStargestell|root</value>
+			</frame>
+		</track>
+		<track>
+			<name>Sound</name>
+			<type>sound</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>2.528776</duration>
+				<sequenceSound>eb_obj_camo_open</sequenceSound>
+				<type>one_shot</type>
+				<fade>0.000000</fade>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

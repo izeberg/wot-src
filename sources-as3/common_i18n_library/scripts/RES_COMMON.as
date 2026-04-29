@@ -33,7 +33,11 @@ package
       
       public static const MAPS_ICONS_CRYSTALSINFO_BG:String = "../maps/icons/crystalsInfo/bg.png";
       
+      public static const MAPS_ICONS_CUSTOMIZATION_CART_BG:String = "../maps/icons/customization/cart/bg.png";
+      
       public static const MAPS_ICONS_CUSTOMIZATION_PROGRESSION_STYLES_STAGE_SWITCHER_BG:String = "../maps/icons/customization/progression_styles/stage_switcher/bg.png";
+      
+      public static const MAPS_ICONS_CUSTOMIZATION_TOOLBAR_EXTENDED_BG:String = "../maps/icons/customization/toolbar/extended/bg.png";
       
       public static const MAPS_ICONS_DEDICATION_BG:String = "../maps/icons/dedication/bg.png";
       

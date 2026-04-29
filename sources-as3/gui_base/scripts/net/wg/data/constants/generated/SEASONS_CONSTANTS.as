@@ -15,6 +15,8 @@ package net.wg.data.constants.generated
       
       public static const DESERT:String = "desert";
       
+      public static const ALL:String = "all_seasons";
+      
       public static const SEASONS:Array = [SUMMER,WINTER,DESERT];
       
       public static const INDICES:Array = [SUMMER_INDEX,WINTER_INDEX,DESERT_INDEX];

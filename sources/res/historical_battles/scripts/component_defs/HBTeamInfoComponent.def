@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<Properties>
+		<alliesInfo>
+			<Type>
+				ARRAY
+				<of>
+					FIXED_DICT
+					<Properties>
+						<vehicleID>
+							<Type>UINT32</Type>
+						</vehicleID>
+						<divisionLevel>
+							<Type>UINT8</Type>
+						</divisionLevel>
+						<vehicleCount>
+							<Type>UINT8</Type>
+						</vehicleCount>
+						<respawnTime>
+							<Type>FLOAT64</Type>
+						</respawnTime>
+						<state>
+							<Type>UINT8</Type>
+						</state>
+					</Properties>
+				</of>
+			</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</alliesInfo>
+	</Properties>
+	<ofEntity>
+		<TeamInfo/>
+	</ofEntity>
+	<DefaultKeyName>hbTeamInfoComponent</DefaultKeyName>
+</root>

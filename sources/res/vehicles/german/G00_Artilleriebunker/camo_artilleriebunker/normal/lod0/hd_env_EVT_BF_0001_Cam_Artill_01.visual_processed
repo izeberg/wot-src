@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s_nd0.vertices</vertices>
+			<stream>s_nd0.uv2</stream>
+			<primitive>s_nd0.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>0</materialKind>
+					<fx>shaders/custom/VAT.fx</fx>
+					<property>
+						alphaReference
+						<Int>150</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/german/G00_Artilleriebunker/camo_artilleriebunker/Camouflage_Tile_Summer_AM.dds</Texture>
+					</property>
+					<property>
+						ditherTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_AnimationDuration
+						<Float>3.000000</Float>
+					</property>
+					<property>
+						g_AnimationTime
+						<Float>0.000000</Float>
+					</property>
+					<property>
+						g_enableTransmission
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_posTexture
+						<Texture>vehicles/german/G00_Artilleriebunker/camo_artilleriebunker/Camouflage_01_pos_VAT.dds</Texture>
+					</property>
+					<property>
+						g_rotTexture
+						<Texture>vehicles/german/G00_Artilleriebunker/camo_artilleriebunker/Camouflage_01_rot_VAT.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/german/G00_Artilleriebunker/camo_artilleriebunker/Camouflage_Tile_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/german/G00_Artilleriebunker/camo_artilleriebunker/Camouflage_Tile_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.056125 0.937790 -0.853721</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-3.462313 -0.343603 -4.619883</min>
+		<max>3.350062 2.219182 2.912440</max>
+	</boundingBox>
+	<geometrySize>108192</geometrySize>
+	<minUVDensity>0.051256</minUVDensity>
+</root>

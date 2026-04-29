@@ -105,7 +105,6 @@ package net.wg.gui.lobby.profile.pages.statistics
       
       override protected function applyResizing() : void
       {
-         var _loc4_:Number = NaN;
          super.applyResizing();
          var _loc1_:Boolean = App.appWidth < StageSizeBoundaries.WIDTH_1280;
          var _loc2_:MovieClip = this.headerContainer.image.separator;
@@ -114,7 +113,7 @@ package net.wg.gui.lobby.profile.pages.statistics
          this.bodyContainer.setAvailableSize(_loc3_,currentDimension.y);
          this.headerLabel.x = _loc3_ - this.headerLabel.width >> 1;
          this.headerLabel.y = !!isWindowed ? Number(HEADER_Y) : Number(HEADER_Y_WINDOW);
-         _loc4_ = isWindowed || !_loc1_ ? Number(1) : Number(SCALE_SMALL);
+         var _loc4_:Number = isWindowed || !_loc1_ ? Number(1) : Number(SCALE_SMALL);
          var _loc5_:int = isWindowed || !_loc1_ ? int(0) : int(WINDOW_OFFSET_X);
          this.headerContainer.scaleX = this.headerContainer.scaleY = _loc4_;
          this.bodyContainer.scaleX = this.bodyContainer.scaleY = _loc4_;

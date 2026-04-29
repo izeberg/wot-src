@@ -2,6 +2,7 @@ from functools import wraps
 import typing
 from frameworks.state_machine import StateMachine, StringEvent
 from gui.game_loading import loggers
+from gui.game_loading.loading_sounds import GameLoadingSoundsListener
 from gui.game_loading.resources.cdn.images import CdnImagesResources
 from gui.game_loading.resources.consts import LoadingTypes
 from gui.game_loading.resources.local.base import LocalResources
@@ -37,13 +38,14 @@ def _ifNotRunning(result=None):
 
 
 class GameLoadingStateMachine(StateMachine):
-    __slots__ = ('_cdnImages', '_logos', '_statusTexts')
+    __slots__ = ('_cdnImages', '_logos', '_statusTexts', '_soundsListener')
 
     def __init__(self):
         super(GameLoadingStateMachine, self).__init__()
         self._cdnImages = None
         self._logos = None
         self._statusTexts = None
+        self._soundsListener = GameLoadingSoundsListener()
         return
 
     def stop(self):
@@ -55,6 +57,8 @@ class GameLoadingStateMachine(StateMachine):
             self._logos.destroy()
         if self._statusTexts:
             self._statusTexts.destroy()
+        if self._soundsListener:
+            self._soundsListener.destroy()
 
     @_ifNotRunning()
     def post(self, event):

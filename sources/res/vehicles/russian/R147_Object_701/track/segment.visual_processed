@@ -13,18 +13,15 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<primitive>indices</primitive>
+			<vertices>track1Shape.vertices</vertices>
+			<primitive>track1Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
 					<identifier>track_mat</identifier>
 					<property>
 						g_detailUVTiling
-						<Vector4>
-							2.10411 2.10411 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>1.753500 1.753500 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_detailPower
@@ -100,5 +97,5 @@
 		<max>0.360621 0.074535 0.103156</max>
 	</boundingBox>
 	<geometrySize>5920</geometrySize>
-	<minUVDensity>1.294125</minUVDensity>
+	<minUVDensity>1.294124</minUVDensity>
 </root>

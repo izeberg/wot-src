@@ -412,14 +412,6 @@
 					<collisionFlags>0</collisionFlags>
 					<materialKind>90</materialKind>
 					<property>
-						alphaReference
-						<Int>64</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
 						doubleSided
 						<Bool>false</Bool>
 					</property>
@@ -517,14 +509,6 @@
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>90</materialKind>
-					<property>
-						alphaReference
-						<Int>64</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
 					<property>
 						doubleSided
 						<Bool>false</Bool>
@@ -670,14 +654,6 @@
 					<collisionFlags>0</collisionFlags>
 					<materialKind>89</materialKind>
 					<property>
-						alphaReference
-						<Int>64</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
 						doubleSided
 						<Bool>false</Bool>
 					</property>
@@ -775,14 +751,6 @@
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>89</materialKind>
-					<property>
-						alphaReference
-						<Int>64</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
 					<property>
 						doubleSided
 						<Bool>false</Bool>
@@ -928,14 +896,6 @@
 					<collisionFlags>0</collisionFlags>
 					<materialKind>88</materialKind>
 					<property>
-						alphaReference
-						<Int>64</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
 						doubleSided
 						<Bool>false</Bool>
 					</property>
@@ -1033,14 +993,6 @@
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>88</materialKind>
-					<property>
-						alphaReference
-						<Int>64</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
 					<property>
 						doubleSided
 						<Bool>false</Bool>
@@ -1186,14 +1138,6 @@
 					<collisionFlags>0</collisionFlags>
 					<materialKind>87</materialKind>
 					<property>
-						alphaReference
-						<Int>64</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
 						doubleSided
 						<Bool>false</Bool>
 					</property>
@@ -1291,14 +1235,6 @@
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>87</materialKind>
-					<property>
-						alphaReference
-						<Int>64</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
 					<property>
 						doubleSided
 						<Bool>false</Bool>
@@ -1444,14 +1380,6 @@
 					<collisionFlags>0</collisionFlags>
 					<materialKind>76</materialKind>
 					<property>
-						alphaReference
-						<Int>64</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
 						doubleSided
 						<Bool>false</Bool>
 					</property>
@@ -1542,14 +1470,6 @@
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>76</materialKind>
-					<property>
-						alphaReference
-						<Int>64</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
 					<property>
 						doubleSided
 						<Bool>false</Bool>
@@ -1648,14 +1568,6 @@
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>76</materialKind>
-					<property>
-						alphaReference
-						<Int>64</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
 					<property>
 						doubleSided
 						<Bool>false</Bool>
@@ -1801,14 +1713,6 @@
 					<collisionFlags>0</collisionFlags>
 					<materialKind>75</materialKind>
 					<property>
-						alphaReference
-						<Int>64</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
 						doubleSided
 						<Bool>false</Bool>
 					</property>
@@ -1899,14 +1803,6 @@
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>75</materialKind>
-					<property>
-						alphaReference
-						<Int>64</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
 					<property>
 						doubleSided
 						<Bool>false</Bool>
@@ -2005,14 +1901,6 @@
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>75</materialKind>
-					<property>
-						alphaReference
-						<Int>64</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
 					<property>
 						doubleSided
 						<Bool>false</Bool>
@@ -2158,14 +2046,6 @@
 					<collisionFlags>0</collisionFlags>
 					<materialKind>74</materialKind>
 					<property>
-						alphaReference
-						<Int>64</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
 						doubleSided
 						<Bool>false</Bool>
 					</property>
@@ -2257,14 +2137,6 @@
 					<collisionFlags>0</collisionFlags>
 					<materialKind>74</materialKind>
 					<property>
-						alphaReference
-						<Int>64</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
 						doubleSided
 						<Bool>false</Bool>
 					</property>
@@ -2355,14 +2227,6 @@
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>74</materialKind>
-					<property>
-						alphaReference
-						<Int>64</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
 					<property>
 						doubleSided
 						<Bool>false</Bool>
@@ -2461,14 +2325,6 @@
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>74</materialKind>
-					<property>
-						alphaReference
-						<Int>64</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
 					<property>
 						doubleSided
 						<Bool>false</Bool>
@@ -2614,14 +2470,6 @@
 					<collisionFlags>0</collisionFlags>
 					<materialKind>73</materialKind>
 					<property>
-						alphaReference
-						<Int>64</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
 						doubleSided
 						<Bool>false</Bool>
 					</property>
@@ -2712,14 +2560,6 @@
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>73</materialKind>
-					<property>
-						alphaReference
-						<Int>64</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
 					<property>
 						doubleSided
 						<Bool>false</Bool>
@@ -2818,14 +2658,6 @@
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>73</materialKind>
-					<property>
-						alphaReference
-						<Int>64</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
 					<property>
 						doubleSided
 						<Bool>false</Bool>

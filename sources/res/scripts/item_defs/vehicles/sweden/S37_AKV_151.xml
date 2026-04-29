@@ -4449,6 +4449,36 @@
 					<edgeByVisualModel>false</edgeByVisualModel>
 					<effects>shot_huge</effects>
 					<reloadEffect>autoloader_reload115_152</reloadEffect>
+					<drivenJoints>
+						<master>
+							<node>Gun</node>
+							<table>
+								<row>
+									-35.0
+									<!--BW_String-->
+								</row>
+								<row>
+									3.0
+									<!--BW_String-->
+								</row>
+							</table>
+							<slaves>
+								<slave>
+									<node>joint_01</node>
+									<table>
+										<row>
+											35.0
+											<!--BW_String-->
+										</row>
+										<row>
+											3.0
+											<!--BW_String-->
+										</row>
+									</table>
+								</slave>
+							</slaves>
+						</master>
+					</drivenJoints>
 					<camouflage>
 						<density>
 							111.272675 111.01088
@@ -5005,6 +5035,36 @@
 					<effects>shot_huge</effects>
 					<edgeByVisualModel>false</edgeByVisualModel>
 					<reloadEffect>autoloader_reload155_170</reloadEffect>
+					<drivenJoints>
+						<master>
+							<node>Gun</node>
+							<table>
+								<row>
+									-35.0
+									<!--BW_String-->
+								</row>
+								<row>
+									3.0
+									<!--BW_String-->
+								</row>
+							</table>
+							<slaves>
+								<slave>
+									<node>joint_01</node>
+									<table>
+										<row>
+											35.0
+											<!--BW_String-->
+										</row>
+										<row>
+											3.0
+											<!--BW_String-->
+										</row>
+									</table>
+								</slave>
+							</slaves>
+						</master>
+					</drivenJoints>
 					<camouflage>
 						<density>111.207817 111.107445</density>
 						<aoTextureSize>1024 1024</aoTextureSize>

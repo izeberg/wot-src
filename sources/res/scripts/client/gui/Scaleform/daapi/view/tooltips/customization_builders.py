@@ -1,11 +1,11 @@
 from gui.Scaleform.genConsts.TOOLTIPS_CONSTANTS import TOOLTIPS_CONSTANTS
-from gui.Scaleform.daapi.view.lobby.customization.tooltips import ElementTooltip
-from gui.Scaleform.daapi.view.lobby.customization.tooltips import ElementIconTooltip
-from gui.Scaleform.daapi.view.lobby.customization.tooltips import ElementAwardTooltip
-from gui.Scaleform.daapi.view.lobby.customization.tooltips import ElementPurchaseTooltip
+from gui.impl.lobby.customization.tooltips import ElementTooltip
+from gui.impl.lobby.customization.tooltips import ElementIconTooltip
+from gui.impl.lobby.customization.tooltips import ElementAwardTooltip
+from gui.impl.lobby.customization.tooltips import ElementPurchaseTooltip
 from gui.shared.tooltips import contexts
 from gui.shared.tooltips.builders import DataBuilder
-from gui.Scaleform.daapi.view.lobby.customization.tooltips.element import NonHistoricTooltip, FantasticalTooltip, PopoverTooltip, ChainedTooltip
+from gui.impl.lobby.customization.tooltips.element import NonHistoricTooltip, FantasticalTooltip, PopoverTooltip, ChainedTooltip
 __all__ = ('getTooltipBuilders', )
 
 def getTooltipBuilders():

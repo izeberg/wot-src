@@ -1,7 +1,7 @@
 from __future__ import unicode_literals
 import logging, operator, time, types
 from Queue import Queue
-from collections import OrderedDict, deque
+from collections import OrderedDict, deque, defaultdict
 from copy import copy, deepcopy
 from itertools import islice, chain
 import typing, ArenaType, BigWorld, constants, nations, personal_missions
@@ -67,6 +67,7 @@ from gui.shared.utils.transport import z_loads
 from gui.limited_ui.lui_rules_storage import LuiRules
 from gui.battle_pass.battle_pass_constants import ChapterState
 from helpers import dependency, getLocalizedData, html, i18n, int2roman, time_utils
+from historical_battles_common.hb_constants import FRONT_COUPON_TOKEN_PREFIX
 from items import ITEM_TYPES as I_T, getTypeInfoByIndex, getTypeInfoByName, tankmen, vehicles as vehicles_core, ITEM_TYPE_NAMES
 from items.components.c11n_constants import CustomizationType, CustomizationTypeNames, UNBOUND_VEH_KEY
 from items.components.crew_books_constants import CREW_BOOK_RARITY
@@ -92,7 +93,6 @@ from skeletons.gui.server_events import IEventsCache
 from skeletons.gui.shared import IItemsCache
 from gui.impl.lobby.comp7.comp7_quest_helpers import isComp7Quest, getComp7QuestType
 from comp7_common import Comp7QuestType, COMP7_TOKEN_WEEKLY_REWARD_ID
-from collections import defaultdict
 if typing.TYPE_CHECKING:
     from typing import Any, Dict, List, Tuple, Callable, Optional
     from account_helpers.offers.events_data import OfferEventData, OfferGift
@@ -1698,6 +1698,12 @@ class InvoiceReceivedFormatter(WaitItemsSyncFormatter):
         platformCurrenciesStr = self.__getPlatformCurrenciesString(dataEx.get(b'currencies', {}))
         if platformCurrenciesStr:
             operations.append(platformCurrenciesStr)
+        paragonsUnlocksIDs = dataEx.get(b'paragonsUnlocks', {}).get(b'ids', [])
+        for unlockID in paragonsUnlocksIDs:
+            paragonsUnlockString = self.__getParagonsUnlockString(unlockID)
+            if paragonsUnlockString:
+                operations.append(paragonsUnlockString)
+
         for formatter in self.dataSubformatters:
             formatter.format(dataEx, operations)
 
@@ -2135,6 +2141,10 @@ class InvoiceReceivedFormatter(WaitItemsSyncFormatter):
                b'count': backport.getIntegralFormat(abs(count))}))
 
         return (b'<br/>').join(msgs)
+
+    def __getParagonsUnlockString(self, unlockID):
+        if unlockID > 0:
+            return backport.text(R.strings.messenger.serviceChannelMessages.paragons.body())
 
     def __getDiscardPairModificationsMsg(self, data):
         dataEx = data.get(b'data', {})
@@ -3001,6 +3011,9 @@ class QuestAchievesFormatter(object):
                         itemsNames.append(makeHtmlString(b'html_templates:lobby/quests/bonuses', b'rawLootBox', {b'name': lootBox.getUserName(), b'count': intCount}))
                 elif tokenID.startswith(EARLY_ACCESS_PREFIX):
                     itemsNames.append(EarlyAccessQuestsTokensFormatter.format(data))
+                elif tokenID.startswith(FRONT_COUPON_TOKEN_PREFIX):
+                    name = backport.text(R.strings.hb_tooltips.quest.award(), bonusName=tokenID.split(b'_')[(-1)], count=int(count))
+                    itemsNames.append(name)
                 elif tokenID.startswith(constants.LOOTBOX_KEY_PREFIX) and intCount > 0:
                     key = cls.__guiLootbox.getKeyByTokenID(tokenID)
                     text = backport.text(R.strings.lootboxes.userName.dyn(key.userName)())
@@ -4697,6 +4710,11 @@ class EpicQuestAchievesFormatter(QuestAchievesFormatter):
     __rEpicReward = R.strings.messenger.serviceChannelMessages.epicReward
     __rewardTemplate = b'epicLevelUpReward'
     __REGISTERED_HANDLERS = []
+    _ORDER_TOKEN_NAMES = {b'armory_yard': 1, 
+       b'brochure_gift': 2, 
+       b'battleBooster_gift': 3, 
+       b'expequipments_gift': 4, 
+       b'recertificationForm_gift': 5}
 
     @classmethod
     def registerHandler(cls, processor):
@@ -4708,15 +4726,15 @@ class EpicQuestAchievesFormatter(QuestAchievesFormatter):
         battlePassPointsResult = cls.__processBattlePassPoints(data)
         if battlePassPointsResult:
             result.append(battlePassPointsResult)
+        tokenResult = cls._processTokens(data)
+        if tokenResult and processTokens:
+            result.append(tokenResult)
         abilityPointsResult = cls.__processAbilityPoints(data)
         if abilityPointsResult:
             result.append(abilityPointsResult)
         crystalResult = cls.__processCrystal(data)
         if crystalResult:
             result.append(crystalResult)
-        tokenResult = cls._processTokens(data)
-        if tokenResult and processTokens:
-            result.append(tokenResult)
         recertificationFormResult = cls.__processRecertificationForm(data)
         if recertificationFormResult:
             result.append(recertificationFormResult)
@@ -4776,9 +4794,9 @@ class EpicQuestAchievesFormatter(QuestAchievesFormatter):
     def _processTokens(cls, data):
         from gui.battle_pass.battle_pass_helpers import getOfferTokenByGift
         result = []
-        rewardChoiceTokens = {}
+        rewardChoiceTokens = defaultdict(int)
         for token, tokenData in data.get(b'tokens', {}).iteritems():
-            from epic_constants import EPIC_OFFER_TOKEN_PREFIX
+            from epic_constants import EPIC_OFFER_TOKEN_PREFIX, EPIC_ARMORY_YARD_TOKEN_NAME
             if token.startswith(EPIC_OFFER_TOKEN_PREFIX):
                 offer = cls.__offersProvider.getOfferByToken(getOfferTokenByGift(token))
                 if offer is None:
@@ -4786,8 +4804,10 @@ class EpicQuestAchievesFormatter(QuestAchievesFormatter):
                 else:
                     gift = first(offer.getAllGifts())
                     giftType = token.split(b':')[2]
-                    rewardChoiceTokens.setdefault(giftType, 0)
                     rewardChoiceTokens[giftType] += gift.giftCount * tokenData.get(b'count', 1)
+            elif token.startswith(EPIC_ARMORY_YARD_TOKEN_NAME) and tokenData.get(b'count', 0) > 0:
+                tokenName = token.split(b':')[0]
+                rewardChoiceTokens[tokenName] += tokenData[b'count']
 
         result.extend(cls.__processRewardChoiceTokens(rewardChoiceTokens))
         return cls._SEPARATOR.join(result)
@@ -4796,10 +4816,15 @@ class EpicQuestAchievesFormatter(QuestAchievesFormatter):
     def __processRewardChoiceTokens(cls, tokens):
         result = []
         rBonuses = R.strings.messenger.serviceChannelMessages.epicReward
-        for rewardType, count in tokens.iteritems():
+        for rewardType, count in cls.__getOrderedTokens(tokens):
             result.append(g_settings.htmlTemplates.format(cls.__rewardTemplate, {b'text': backport.text(rBonuses.dyn(rewardType)()), b'count': count}))
 
         return result
+
+    @classmethod
+    def __getOrderedTokens(cls, tokens):
+        orderedNames = sorted(tokens.iterkeys(), key=lambda name: cls._ORDER_TOKEN_NAMES[name])
+        return ((tokenName, tokens.get(tokenName)) for tokenName in orderedNames)
 
     @classmethod
     def __makeQuestsAchieve(cls, key, **kwargs):
@@ -6173,3 +6198,11 @@ class LimitedUIContentUnlockedFormatter(ClientSysMessageFormatter):
             return fmt
         else:
             return
+
+
+class TradingCaravanMessageFormatter(ServiceChannelFormatter):
+
+    def format(self, message, *args):
+        formatted = g_settings.msgTemplates.format(b'TradingCaravanCoinAdded', ctx={b'count': message.data.get(b'count')})
+        return [
+         MessageData(formatted, self._getGuiSettings(message, b'TradingCaravanCoinAdded'))]

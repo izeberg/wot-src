@@ -69,6 +69,7 @@ class PriceModelBuilder(object):
 
     @classmethod
     def fillPriceItemModel(cls, array, price, checkBalanceAvailability=False):
+        array.clear()
         array.reserve(len(price))
         for name, value in price.iteritems():
             priceItemModel = cls._createPriceItemModel(name, value)
@@ -100,6 +101,7 @@ class BuyPriceModelBuilder(PriceModelBuilder):
 
     @classmethod
     def fillPriceItemModel(cls, array, price, balance=None, checkBalanceAvailability=False):
+        array.clear()
         array.reserve(len(price))
         for name, value in price.iteritems():
             priceItemModel = cls._createPriceItemModel(name, value, balance, checkBalanceAvailability=checkBalanceAvailability)

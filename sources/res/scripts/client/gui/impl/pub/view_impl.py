@@ -1,4 +1,4 @@
-import typing
+from typing import Generic, TYPE_CHECKING, TypeVar
 from frameworks.wulf import View, ViewEvent, ViewModel, Window, WindowLayer
 from gui.impl.gen.resources import R
 from gui.impl.pub.context_menu_window import ContextMenuContent, ContextMenuWindow
@@ -6,11 +6,14 @@ from gui.impl.pub.pop_over_window import PopOverWindow
 from gui.impl.pub.tooltip_window import AdvancedToolTipWindow, SimpleToolTipWindow, ToolTipWindow
 from helpers import dependency
 from helpers.events_handler import EventsHandler
+from skeletons.account_helpers.settings_repository import SettingsSerializable
 from skeletons.gui.impl import IGuiLoader
 from soft_exception import SoftException
-TViewModel = typing.TypeVar('TViewModel', bound=ViewModel)
+if TYPE_CHECKING:
+    from typing import Optional
+TViewModel = TypeVar('TViewModel', bound=ViewModel)
 
-class ViewImpl(View, EventsHandler, typing.Generic[TViewModel]):
+class ViewImpl(View, EventsHandler, Generic[TViewModel]):
     __slots__ = ()
     gui = dependency.descriptor(IGuiLoader)
 
@@ -82,3 +85,27 @@ class PopOverViewImpl(ViewImpl):
     @property
     def isCloseBtnVisible(self):
         return True
+
+
+class PersistentViewImpl(ViewImpl, SettingsSerializable):
+    __slots__ = ()
+
+    def _onLoading(self, *args, **kwargs):
+        super(PersistentViewImpl, self)._onLoading(*args, **kwargs)
+        self._loadSettings()
+
+    def _finalize(self):
+        self._dumpSettings()
+        super(PersistentViewImpl, self)._finalize()
+
+
+class PersistentPopOverViewImpl(PopOverViewImpl, SettingsSerializable):
+    __slots__ = ()
+
+    def _onLoading(self, *args, **kwargs):
+        super(PersistentPopOverViewImpl, self)._onLoading(*args, **kwargs)
+        self._loadSettings()
+
+    def _finalize(self):
+        self._dumpSettings()
+        super(PersistentPopOverViewImpl, self)._finalize()

@@ -2,16 +2,10 @@
 <root>
 	<tank>true</tank>
 	<visibilityBox>
-		<min>
-			-0.326846 -0.274723 -0.0873231
-			<!--BW_String-->
-		</min>
-		<max>
-			0.265066 0.350618 4.51567
-			<!--BW_String-->
-		</max>
+		<min>-0.326846 -0.274724 -0.087323</min>
+		<max>0.265066 0.350618 4.515667</max>
 	</visibilityBox>
-	<nodefullVisual>vehicles/russian/R147_Object_701/normal/lod0/Gun_03</nodefullVisual>
 	<parent>vehicles/russian/R147_Object_701/normal/lod1/Gun_03</parent>
-	<extent>32</extent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/russian/R147_Object_701/normal/lod0/Gun_03</nodefullVisual>
 </root>

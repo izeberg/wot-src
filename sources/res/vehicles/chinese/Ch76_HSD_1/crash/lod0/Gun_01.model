@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-0.202944 -0.235052 -1.066521</min>
+		<max>0.367384 0.217787 6.254878</max>
+	</visibilityBox>
+	<parent>vehicles/chinese/Ch76_HSD_1/crash/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/chinese/Ch76_HSD_1/crash/lod0/Gun_01</nodefullVisual>
+</root>

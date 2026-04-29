@@ -354,7 +354,7 @@ msgid "battleRoyale/confirmRent/rent/Title"
 msgstr "Арендовать %(vehicle)s на %(days)s дней?"
 
 msgid "battleRoyale/confirmRent/rentPrice"
-msgstr "К оплате:"
+msgstr "К оплате:"
 
 msgid "battleRoyale/confirmRent/testDrive/Button"
 msgstr "Принять"
@@ -1041,7 +1041,7 @@ msgid "confirmExchangeDialog/exchangeXp/title"
 msgstr "Подтверждение обмена для исследования"
 
 msgid "confirmExchangeDialog/goldItemsStepperTitle"
-msgstr "К оплате:"
+msgstr "К оплате:"
 
 msgid "confirmExchangeDialog/restoreExchangeCredits/cancel"
 msgstr "Отменить"
@@ -1216,25 +1216,65 @@ msgstr "Пересадить члена экипажа на %(tankName)s?"
 msgid "crewMemberTankChange/transfer"
 msgstr "Пересадить"
 
-msgid "customization/applyProjectionDecalToOtherSeasons/cancel"
+msgid "customization/applyToOtherSeason/desert"
+msgstr "на пустынной"
+
+msgid "customization/applyToOtherSeason/message"
+msgstr ""
+"Все установленные декали %(season)s карте будут %(removed)s с машины,\n"
+"т. к. данная ячейка недоступна для %(this)s."
+
+msgid "customization/applyToOtherSeason/summer"
+msgstr "на летней"
+
+msgid "customization/applyToOtherSeason/winter"
+msgstr "на зимней"
+
+msgid "customization/applyToOtherSeasons/alert_message"
+msgstr ""
+"При нанесении данной декали в эту ячейку для всех карт установленные декали %(season)s картах будут %(removed)s с машины,\n"
+"т. к. данная ячейка недоступна для %(this)s."
+
+msgid "customization/applyToOtherSeasons/cancel"
 msgstr "Отменить"
 
-msgid "customization/applyProjectionDecalToOtherSeasons/message"
-msgstr ""
-"Все установленные декали {season} картах будут {removed} с машины,\n"
-"т. к. данная ячейка недоступна для {this}"
+msgid "customization/applyToOtherSeasons/desert"
+msgstr "на пустынных"
 
-msgid "customization/applyProjectionDecalToOtherSeasons/submit"
+msgid "customization/applyToOtherSeasons/message"
+msgstr ""
+"Все установленные декали %(season)s картах будут %(removed)s с машины,\n"
+"т. к. данная ячейка недоступна для %(this)s."
+
+msgid "customization/applyToOtherSeasons/removed"
+msgstr "сняты"
+
+msgid "customization/applyToOtherSeasons/submit"
 msgstr "Подтвердить"
 
-msgid "customization/applyProjectionDecalToOtherSeasons/these"
-msgstr "этих карт."
+msgid "customization/applyToOtherSeasons/summer"
+msgstr "на летних"
 
-msgid "customization/applyProjectionDecalToOtherSeasons/this"
-msgstr "этой карты."
+msgid "customization/applyToOtherSeasons/summer_desert"
+msgstr "на летних и пустынных"
 
-msgid "customization/applyProjectionDecalToOtherSeasons/title"
+msgid "customization/applyToOtherSeasons/summer_winter"
+msgstr "на летних и зимних"
+
+msgid "customization/applyToOtherSeasons/these"
+msgstr "этих карт"
+
+msgid "customization/applyToOtherSeasons/this"
+msgstr "этой карты"
+
+msgid "customization/applyToOtherSeasons/title"
 msgstr "Установить данную декаль в эту ячейку для всех карт?"
+
+msgid "customization/applyToOtherSeasons/winter"
+msgstr "на зимних"
+
+msgid "customization/applyToOtherSeasons/winter_desert"
+msgstr "на зимних и пустынных"
 
 msgid "customization/buy_install_bound/message"
 msgstr ""
@@ -1653,6 +1693,12 @@ msgstr ""
 msgid "equipmentDestroy/conformation"
 msgstr "Уничтожить оборудование «%(equipment)s»?"
 
+msgid "equipmentDestroy/warningMsg"
+msgstr ""
+"Обратите внимание: уничтожив оборудование, вы сможете восстановить его "
+"в меню «Восстановление». Оно находится на Складе в запасах, во вкладке "
+"«Оборудование»."
+
 msgid "equipmentPurcase/conformation/all"
 msgstr "Установить оборудование «%(equipment)s»?"
 
@@ -1898,7 +1944,7 @@ msgid "gatheringXPForm/sortBy/selection/header"
 msgstr "?empty?"
 
 msgid "gatheringXPForm/sortBy/vehicle/body"
-msgstr "Сортировать по названию техники."
+msgstr "Сортировать по названию техники."
 
 msgid "gatheringXPForm/sortBy/vehicle/header"
 msgstr "Техника"
@@ -1922,7 +1968,7 @@ msgid "gatheringXPForm/tooltips/checkboxCrewUnselected"
 msgstr "Ускоренное обучение экипажа не включено."
 
 msgid "gatheringXPForm/totalLabel"
-msgstr "К оплате:"
+msgstr "К оплате:"
 
 msgid "gatheringXPForm/totalXP"
 msgstr "Всего:"
@@ -2543,6 +2589,12 @@ msgstr "Выход из боя до его окончания или до уни
 msgid "punishmentWindow/reason/epic_deserter"
 msgstr "Выход из боя до его окончания или до уничтожения собственной машины"
 
+msgid "punishmentWindow/reason/hb_afk"
+msgstr "?empty?"
+
+msgid "punishmentWindow/reason/hb_deserter"
+msgstr "?empty?"
+
 msgid "punishmentWindow/reason/suicide"
 msgstr "Умышленное уничтожение собственной машины"
 
@@ -2657,7 +2709,7 @@ msgid "quitBattle/IGR/leaver/submit"
 msgstr "Бежать"
 
 msgid "quitBattle/IGR/leaver/title"
-msgstr "Бежать с поля боя?"
+msgstr "Бежать с поля боя?"
 
 msgid "quitBattle/cancel"
 msgstr "Отменить"
@@ -2675,7 +2727,7 @@ msgid "quitBattle/leaver/submit"
 msgstr "Бежать"
 
 msgid "quitBattle/leaver/title"
-msgstr "Бежать с поля боя?"
+msgstr "Бежать с поля боя?"
 
 msgid "quitBattle/replay/cancel"
 msgstr "Отменить"
@@ -3006,6 +3058,20 @@ msgstr "Настройки"
 
 msgid "resetGraphics/title"
 msgstr "Изменение графических настроек"
+
+msgid "restoreEquipment/button/cancel"
+msgstr "Отменить"
+
+msgid "restoreEquipment/button/restore"
+msgstr "Восстановить"
+
+msgid "restoreEquipment/header"
+msgstr ""
+"Восстановить оборудование\n"
+" «%(equipmentName)s»?"
+
+msgid "restoreEquipment/text"
+msgstr "Стоимость восстановления 1 ед.:"
 
 msgid "restoreTankman/buttons/recover"
 msgstr "Восстановить"

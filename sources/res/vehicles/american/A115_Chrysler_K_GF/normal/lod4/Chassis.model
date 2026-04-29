@@ -3,14 +3,8 @@
 	<tank>true</tank>
 	<materialNames/>
 	<visibilityBox>
-		<min>
-			-1.96546 0.0568121 -3.5525
-			<!--BW_String-->
-		</min>
-		<max>
-			1.9275 1.22205 3.75883
-			<!--BW_String-->
-		</max>
+		<min>-1.965460 0.056812 -3.552500</min>
+		<max>1.927500 1.222050 3.758830</max>
 	</visibilityBox>
 	<nodefullVisual>vehicles/american/A115_Chrysler_K_GF/normal/lod4/Chassis</nodefullVisual>
 </root>

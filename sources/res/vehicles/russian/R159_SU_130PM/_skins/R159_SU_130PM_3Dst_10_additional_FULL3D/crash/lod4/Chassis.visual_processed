@@ -101,6 +101,10 @@
 						alphaTestEnable
 						<Bool>true</Bool>
 					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
 				</material>
 				<groupOrigin>-1.332613 0.507590 -0.016597</groupOrigin>
 			</primitiveGroup>
@@ -143,6 +147,10 @@
 					<property>
 						alphaTestEnable
 						<Bool>true</Bool>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>1.325609 0.518659 -0.021347</groupOrigin>

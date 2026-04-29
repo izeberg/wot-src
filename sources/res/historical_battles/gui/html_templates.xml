@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<battleHints>
+		<defenseArtillery>&lt;font size=&apos;28&apos; color=&quot;#FFFFFF&quot;&gt;_(#historical_battles.hb_battle:notification/defenseArtillery)&lt;/font&gt;</defenseArtillery>
+		<SPGDefended>&lt;font size=&apos;28&apos; color=&quot;#FFFFFF&quot;&gt;_(#historical_battles.hb_battle:notification/SPGDefended)&lt;/font&gt;</SPGDefended>
+		<SPGKilled>&lt;font size=&apos;28&apos; color=&quot;#FFFFFF&quot;&gt;_(#historical_battles.hb_battle:notification/SPGKilled)&lt;/font&gt;</SPGKilled>
+		<operationFailed>&lt;font size=&apos;28&apos; color=&quot;#FFFFFF&quot;&gt;_(#historical_battles.hb_battle:notification/operationFailed)&lt;/font&gt;</operationFailed>
+		<SPGUnderAttack>&lt;font size=&apos;28&apos; color=&quot;#FFFFFF&quot;&gt;_(#historical_battles.hb_battle:notification/SPGUnderAttack)&lt;/font&gt;&lt;br/&gt;&lt;font size=&apos;20&apos; color=&quot;#FFFFFF&quot;&gt;_(#historical_battles.hb_battle:notification/SPGUnderAttack/description)&lt;/font&gt;</SPGUnderAttack>
+		<oneSPGKilled>&lt;font size=&apos;28&apos; color=&quot;#FFFFFF&quot;&gt;_(#historical_battles.hb_battle:notification/oneSPGKilled)&lt;/font&gt;&lt;br/&gt;&lt;font size=&apos;20&apos; color=&quot;#FFFFFF&quot;&gt;_(#historical_battles.hb_battle:notification/oneSPGKilled/description)&lt;/font&gt;</oneSPGKilled>
+		<aimerSpawned>&lt;font size=&apos;28&apos; color=&quot;#FFFFFF&quot;&gt;_(#historical_battles.hb_battle:notification/aimerSpawned)&lt;/font&gt;&lt;br/&gt;&lt;font size=&apos;20&apos; color=&quot;#FFFFFF&quot;&gt;_(#historical_battles.hb_battle:notification/aimerSpawned/description)&lt;/font&gt;</aimerSpawned>
+		<runnerSpawned>&lt;font size=&apos;28&apos; color=&quot;#FFFFFF&quot;&gt;_(#historical_battles.hb_battle:notification/runnerSpawned)&lt;/font&gt;</runnerSpawned>
+	</battleHints>
+	<hbEventGoals>
+		<title>&lt;font color=&quot;#FFFFFF&quot;&gt;%(message)s&lt;/font&gt;</title>
+		<description>&lt;font color=&quot;#FFFFFF&quot;&gt;%(message)s&lt;/font&gt;</description>
+		<progress>&lt;font color=&quot;#FFFFFF&quot;&gt;%(message)s&lt;/font&gt;</progress>
+		<win>&lt;font color=&quot;#FFFFFF&quot;&gt;%(message)s&lt;/font&gt;</win>
+		<lose>&lt;font color=&quot;#FFFFFF&quot;&gt;%(message)s&lt;/font&gt;</lose>
+		<draw>&lt;font color=&quot;#FFFFFF&quot;&gt;%(message)s&lt;/font&gt;</draw>
+	</hbEventGoals>
+	<hbTextStyles>
+		<mainBold>&lt;font face=&apos;$FieldFont&apos; size=&apos;14&apos; color=&apos;#8C8C7E&apos;&gt;&lt;b&gt;%(message)s&lt;/b&gt;&lt;/font&gt;</mainBold>
+	</hbTextStyles>
+	<lobby>
+		<prebattle>
+			<inviteTitle>
+				<HISTORICAL_BATTLES>_(#historical_battles.invites.extend:invites/text/HISTORICAL_BATTLES) %(sender)s</HISTORICAL_BATTLES>
+			</inviteTitle>
+		</prebattle>
+	</lobby>
+</root>

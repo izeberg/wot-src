@@ -2,10 +2,10 @@
 <root>
 	<tank>true</tank>
 	<visibilityBox>
-		<min>-1.606760 0.012673 -3.284660</min>
-		<max>1.606760 1.077030 3.284010</max>
+		<min>-1.606756 0.012673 -3.283849</min>
+		<max>1.606756 1.076107 3.284011</max>
 	</visibilityBox>
-	<nodefullVisual>vehicles/russian/R147_Object_701/normal/lod2/Chassis</nodefullVisual>
 	<parent>vehicles/russian/R147_Object_701/normal/lod3/Chassis</parent>
 	<extent>96.000000</extent>
+	<nodefullVisual>vehicles/russian/R147_Object_701/normal/lod2/Chassis</nodefullVisual>
 </root>

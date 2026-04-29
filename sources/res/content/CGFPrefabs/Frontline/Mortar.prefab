@@ -455,6 +455,10 @@
 						<name>Cast Shadows</name>
 						<value>1</value>
 					</property>
+					<property>
+						<name>Parts</name>
+						<collection/>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -470,6 +474,10 @@
 						<name>Cast Shadows</name>
 						<value>1</value>
 					</property>
+					<property>
+						<name>Parts</name>
+						<collection/>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -484,6 +492,10 @@
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>Parts</name>
+						<collection/>
 					</property>
 				</config>
 			</component>
@@ -504,8 +516,8 @@
 				<flags>3</flags>
 				<config>
 					<property>
-						<name>prefabPath</name>
-						<value>content/CGFPrefabs/Frontline/SupplySpawnEffect.prefab</value>
+						<name>camouflagePrefabPath</name>
+						<value>content/CGFPrefabs/Frontline/MortarCamouflage.prefab</value>
 					</property>
 				</config>
 			</component>

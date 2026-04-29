@@ -133,7 +133,6 @@ package net.wg.gui.lobby.profile.pages.technique
       
       override protected function applyResizing() : void
       {
-         var _loc7_:int = 0;
          if(layoutManager != null)
          {
             layoutManager.setDimension(currentDimension.x,currentDimension.y);
@@ -151,7 +150,7 @@ package net.wg.gui.lobby.profile.pages.technique
          this.stackComponent.setViewSize(_loc1_ - this.stackComponent.x,_loc4_);
          var _loc5_:Number = isWindowed || !_loc2_ ? Number(1) : Number(0.85);
          var _loc6_:int = isWindowed || !_loc2_ ? int(0) : int(LIST_OFFSET_X);
-         _loc7_ = isWindowed || !_loc2_ ? int(STACK_OFFSET_X) : int(STACK_OFFSET_OFFSET_X_SMALL);
+         var _loc7_:int = isWindowed || !_loc2_ ? int(STACK_OFFSET_X) : int(STACK_OFFSET_OFFSET_X_SMALL);
          this.listComponent.scaleX = this.listComponent.scaleY = _loc5_;
          this.stackComponent.scaleX = this.stackComponent.scaleY = _loc5_;
          this.listComponent.x = _loc6_;

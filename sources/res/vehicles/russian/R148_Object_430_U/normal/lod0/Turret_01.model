@@ -3,16 +3,10 @@
 	<tank>true</tank>
 	<materialNames/>
 	<visibilityBox>
-		<min>
-			-1.47536 0.00426573 -1.30901
-			<!--BW_String-->
-		</min>
-		<max>
-			1.37939 2.38896 2.10061
-			<!--BW_String-->
-		</max>
+		<min>-1.475360 0.004266 -1.309010</min>
+		<max>1.379390 2.388960 2.100610</max>
 	</visibilityBox>
 	<parent>vehicles/russian/R148_Object_430_U/normal/lod1/Turret_01</parent>
-	<extent>32</extent>
+	<extent>32.000000</extent>
 	<nodefullVisual>vehicles/russian/R148_Object_430_U/normal/lod0/Turret_01</nodefullVisual>
 </root>

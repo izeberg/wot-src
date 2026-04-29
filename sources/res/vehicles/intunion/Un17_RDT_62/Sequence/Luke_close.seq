@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<duration>0.666667</duration>
+	<duration>1.600000</duration>
 	<sequenceObject>
 		<name>Root</name>
 		<type>model</type>
@@ -21,6 +21,30 @@
 				<blendOutTime>0.000000</blendOutTime>
 				<clipStartTime>0.000000</clipStartTime>
 				<clipEndTime>0.666667</clipEndTime>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Sound 0</name>
+		<type>sound</type>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>1.600000</duration>
+				<value>Root|</value>
+			</frame>
+		</track>
+		<track>
+			<name>Sound</name>
+			<type>sound</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>1.563288</duration>
+				<sequenceSound>Un17_RDT_62_hatch_closing</sequenceSound>
+				<type>play_till_end</type>
+				<fade>0.000000</fade>
 			</frame>
 		</track>
 	</sequenceObject>

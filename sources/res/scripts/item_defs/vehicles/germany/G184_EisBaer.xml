@@ -2676,7 +2676,7 @@
 						<collisionModelClient>vehicles/german/G184_EisBaer/collision_client/Gun_01.model</collisionModelClient>
 					</hitTester>
 					<edgeByVisualModel>false</edgeByVisualModel>
-					<effects>shot_large_mb</effects>
+					<effects>shot_large_APFSDS_mb</effects>
 					<camouflage>
 						<density>
 							122.20343 124.735703

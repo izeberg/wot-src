@@ -392,10 +392,6 @@
 						<Bool>true</Bool>
 					</property>
 					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
 						blendMask
 						<Texture>content/Buildings/hd_bld_EU_056_Church/hd_bld_EU_056_Church_05_blend.png</Texture>
 					</property>

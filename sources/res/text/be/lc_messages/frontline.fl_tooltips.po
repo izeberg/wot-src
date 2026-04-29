@@ -8,6 +8,15 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "armoryYard/currency/featureName"
+msgstr "«Зборачны цэх»"
+
+msgid "armoryYard/currency/progression_token/description"
+msgstr "Используется для прохождения этапов события %(featureName)s."
+
+msgid "armoryYard/currency/progression_token/title"
+msgstr "Жэтон будаўніцтва"
+
 msgid "notEnoughPoints/body"
 msgstr ""
 "Павышайце ўзроўні фронту ў рэжыме «Лінія фронту», каб здабываць ачкі "

@@ -2,52 +2,43 @@
 <root>
 	<forward>
 		<name>default</name>
-		<preload>
-			<shader>\data\shaders\ps_solid.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_tex.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_water.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_tex.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_leaves.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_long.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_tex_95_lost_city_Dust.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_long.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_tex.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_long.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_tex_long.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_tex_long.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_tex.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_long.fx</shader>
-			<texture>particles/content_forward/PFX_textures/tracers.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_water.fx</shader>
-			<texture>particles/content_forward/PFX_textures/tracers.dds</texture>
-		</preload>
 		<fn_effect_bin>particles/Environment/scenarios/208_LRG_explosion.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/208_smokescreen_lev4.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/208_smokescreen_lev5.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Scenarios/208_LRG_explosion.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/208_smokescreen_lev4.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/208_smokescreen_lev5.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/environment/scenarios/front_line_welding.eff</fn_effect_bin>
+		<preloadTextures>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_long.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/tracers.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_leaves.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_fireworks.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_smoke.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_95_lost_city_dust.dds
+				<type>primary</type>
+			</path>
+		</preloadTextures>
 		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/hd_bld_su_129_townshed_03.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/hd_bld_uni_006_kitcrashfactory_roof_03.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/hd_bld_uni_008_workshopnew_doors_big_01_1.vfx</fn_effect_bin>
@@ -252,6 +243,7 @@
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_streetlamp_fracture.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_streetlamp_touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_town_bench_des.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/scenarios/front_line_welding.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/trees/broadleaves/inf_tree_bush_dry_fall.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/trees/broadleaves/inf_tree_bush_dry_touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/trees/broadleaves/tree_birch_bold_10m_fall.vfx</fn_effect_bin>
@@ -523,76 +515,59 @@
 	</forward>
 	<deferred>
 		<name>default</name>
-		<preload>
-			<shader>\data\shaders\ps_solid.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_tex.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_water.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_tex.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_water_displacement.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_tex_water.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_foam.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_tex_water.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_under_water.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_tex.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/209_epic_suburbia_steam.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_leaves.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_long.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_tex_95_lost_city_Dust.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_long.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_tex.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_long.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_tex_long.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_tex_long.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_tex.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_long.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/tracers.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_water.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/tracers.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_force_fields.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_tex_force_field.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_shimmer.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_tex_distortion.dds</texture>
-		</preload>
 		<fn_effect_bin>particles/Environment/scenarios/208_LRG_explosion.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/208_smokescreen_lev4.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/208_smokescreen_lev5.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Scenarios/208_LRG_explosion.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/208_smokescreen_lev4.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/208_smokescreen_lev5.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/environment/scenarios/front_line_welding.eff</fn_effect_bin>
+		<preloadTextures>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_long.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_leaves.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/209_epic_suburbia_steam.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_95_lost_city_dust.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_distortion.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_fireworks.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_smoke.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_water.dds
+				<type>water</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/tracers.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_force_field.dds
+				<type>forcefields</type>
+			</path>
+		</preloadTextures>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/hd_bld_su_129_townshed_03.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/hd_bld_uni_006_kitcrashfactory_roof_03.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/hd_bld_uni_008_workshopnew_doors_big_01_1.vfx</fn_effect_bin>
@@ -814,6 +789,7 @@
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_streetlamp_fracture.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_streetlamp_touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_town_bench_des.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/scenarios/front_line_welding.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/trees/broadleaves/inf_tree_bush_dry_fall.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/trees/broadleaves/inf_tree_bush_dry_touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/trees/broadleaves/tree_birch_bold_10m_fall.vfx</fn_effect_bin>

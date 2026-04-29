@@ -276,10 +276,6 @@
 						<Texture>content/Buildings/hd_bld_EU_016_Tohouse/EU_OldCity_01_04_blend.png</Texture>
 					</property>
 					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
 						g_dirtColor
 						<Vector4>0.470000 0.430000 0.380000 0.200000</Vector4>
 					</property>
@@ -341,10 +337,6 @@
 					<collisionFlags>0</collisionFlags>
 					<materialKind>111</materialKind>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
 					<property>
 						g_atlasSizes
 						<Vector4>4.000000 4.000000 6.000000 4.000000</Vector4>
@@ -660,10 +652,6 @@
 					<property>
 						g_tile1Tint
 						<Vector4>0.786560 0.800000 0.776000 1.000000</Vector4>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
 					</property>
 					<property>
 						g_dirtColorParams

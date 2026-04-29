@@ -631,10 +631,6 @@
 			</scrollSmoothingTime>
 			<angleRange>10 110</angleRange>
 			<distRange>2 25</distRange>
-			<minStartDist>
-				0.0
-				<!--BW_String-->
-			</minStartDist>
 			<optimalStartDist>20</optimalStartDist>
 			<fovMultMinDist>
 				1.0

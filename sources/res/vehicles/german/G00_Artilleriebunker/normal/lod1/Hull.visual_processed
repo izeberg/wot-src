@@ -103,8 +103,8 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<primitive>indices</primitive>
+			<vertices>hullShape.vertices</vertices>
+			<primitive>hullShape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -162,14 +162,14 @@
 						<Texture>vehicles/german/G00_Artilleriebunker/Artilleriebunker_hull_AO.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.000082 -0.595872 -1.335978</groupOrigin>
+				<groupOrigin>0.000000 -0.237795 0.000000</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-4.031863 -1.632999 -6.703819</min>
-		<max>4.032026 0.441255 4.031863</max>
+		<min>-4.042732 -0.842588 -4.031863</min>
+		<max>4.042732 0.366999 4.031863</max>
 	</boundingBox>
-	<geometrySize>61122</geometrySize>
+	<geometrySize>33934</geometrySize>
 	<minUVDensity>0.003332</minUVDensity>
 </root>

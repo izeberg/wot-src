@@ -1,5 +1,5 @@
-import collections, time, itertools, logging, types, weakref
-from functools import partial, wraps
+import collections, itertools, logging, time, types, weakref
+from functools import partial
 import typing, BigWorld
 from adisp import adisp_async
 if typing.TYPE_CHECKING:
@@ -57,6 +57,12 @@ def safeCancelCallback(callbackID):
         _logger.error('Cannot cancel BigWorld callback: incorrect callback ID.')
 
 
+def safeCall(func, *args, **kwargs):
+    if callable(func):
+        return func(*args, **kwargs)
+    return (lambda : None)()
+
+
 def prettyPrint(dictValue, sort_keys=True, indent=4):
     import json
     return json.dumps(dictValue, sort_keys=sort_keys, indent=indent)
@@ -74,6 +80,10 @@ def safeIndexOf(item, collection, default=None):
     if item in collection:
         return collection.index(item)
     return default
+
+
+def getFullClassName(o):
+    return ('.').join((o.__module__, o.__name__ if o.__class__.__name__ == 'type' else o.__class__.__name__))
 
 
 def collapseIntervals(sequence):

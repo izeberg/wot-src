@@ -1051,9 +1051,13 @@ package
       
       public static const ENTRYPOINT_SEASON_END:String = "#ranked_battles:entryPoint/season/end";
       
-      public static const ENTRYPOINT_FROZEN_WIDE:String = "#ranked_battles:entryPoint/frozen/wide";
+      public static const ENTRYPOINT_DISABLED:String = "#ranked_battles:entryPoint/disabled";
       
-      public static const ENTRYPOINT_FROZEN_THIN:String = "#ranked_battles:entryPoint/frozen/thin";
+      public static const ENTRYPOINT_RANKBEFORENEXTDIVISION:String = "#ranked_battles:entryPoint/rankBeforeNextDivision";
+      
+      public static const ENTRYPOINT_FINALDIVISION:String = "#ranked_battles:entryPoint/finalDivision";
+      
+      public static const ENTRYPOINT_REWARDDESCRIPTION:String = "#ranked_battles:entryPoint/rewardDescription";
       
       public static const QUALIFICATIONREWARDS_BATTLESPLAYED:String = "#ranked_battles:qualificationRewards/battlesPlayed";
       

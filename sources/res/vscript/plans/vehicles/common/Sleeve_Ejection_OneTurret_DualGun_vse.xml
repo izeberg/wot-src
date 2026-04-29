@@ -84,6 +84,43 @@
 			</block>
 			<block>
 				<class>Variable</class>
+				<id>Variable_11</id>
+				<params>
+					<param>
+						isHavokEnabled
+						<name>Variable Name</name>
+						<type>StringT</type>
+					</param>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+					<param>
+						false
+						<name>External Init</name>
+						<type>BoolT</type>
+					</param>
+					<param>
+						false
+						<name>Is Const</name>
+						<type>BoolT</type>
+					</param>
+					<param>
+						false
+						<name>Initial Value</name>
+						<type>BoolT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>default</name>
+						<const>\false\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>Variable</class>
 				<id>Variable_1</id>
 				<params>
 					<param>
@@ -496,6 +533,31 @@
 				<slots/>
 			</block>
 			<block>
+				<class>And</class>
+				<id>And_1</id>
+				<params>
+					<param>
+						2
+						<name>Input Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_5</id>
+				<buddy>Variable_11</buddy>
+				<params>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
 				<class>GetVariable</class>
 				<id>GetVariable_23</id>
 				<buddy>Variable_2</buddy>
@@ -625,6 +687,24 @@
 			</block>
 			<block>
 				<class>SetVariable</class>
+				<id>SetVariable_14</id>
+				<buddy>Variable_11</buddy>
+				<params>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>value</name>
+						<const>\true\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>SetVariable</class>
 				<id>SetVariable_9</id>
 				<buddy>Variable_10</buddy>
 				<params>
@@ -675,12 +755,6 @@
 				<slots/>
 			</block>
 			<block>
-				<class>StopPlan</class>
-				<id>StopPlan_1</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
 				<class>SetVariable</class>
 				<id>SetVariable_10</id>
 				<buddy>Variable_9</buddy>
@@ -713,6 +787,12 @@
 				<slots/>
 			</block>
 			<block>
+				<class>StopPlan</class>
+				<id>StopPlan_1</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
 				<class>GetComponentProperties</class>
 				<id>GetComponentProperties_3</id>
 				<params>
@@ -722,12 +802,6 @@
 						<type>StringT</type>
 					</param>
 				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>GetVehicleAppearanceGameObject</class>
-				<id>GetVehicleAppearanceGameObject_2</id>
-				<params/>
 				<slots/>
 			</block>
 			<block>
@@ -744,15 +818,10 @@
 				<slots/>
 			</block>
 			<block>
-				<class>CompareIntegers</class>
-				<id>CompareIntegers_1</id>
+				<class>GetVehicleAppearanceGameObject</class>
+				<id>GetVehicleAppearanceGameObject_2</id>
 				<params/>
-				<slots>
-					<slot>
-						<name>b</name>
-						<const>\1\</const>
-					</slot>
-				</slots>
+				<slots/>
 			</block>
 			<block>
 				<class>GetVariable</class>
@@ -817,23 +886,6 @@
 				</slots>
 			</block>
 			<block>
-				<class>GetGameSetting</class>
-				<id>GetGameSetting_1</id>
-				<params>
-					<param>
-						int
-						<name>Game Setting Type</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>settingName</name>
-						<const>\HAVOK_ENABLED\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
 				<class>SetVariable</class>
 				<id>SetVariable_4</id>
 				<buddy>Variable_6</buddy>
@@ -845,6 +897,17 @@
 					</param>
 				</params>
 				<slots/>
+			</block>
+			<block>
+				<class>CompareIntegers</class>
+				<id>CompareIntegers_1</id>
+				<params/>
+				<slots>
+					<slot>
+						<name>a</name>
+						<const>\1\</const>
+					</slot>
+				</slots>
 			</block>
 			<block>
 				<class>FindFirstNode</class>
@@ -901,6 +964,23 @@
 					<slot>
 						<name>includingInactive</name>
 						<const>\true\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>GetGameSetting</class>
+				<id>GetGameSetting_1</id>
+				<params>
+					<param>
+						int
+						<name>Game Setting Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>settingName</name>
+						<const>\HAVOK_ENABLED\</const>
 					</slot>
 				</slots>
 			</block>
@@ -1029,6 +1109,125 @@
 				</params>
 				<slots/>
 			</block>
+			<block>
+				<class>SetVariable</class>
+				<id>SetVariable_11</id>
+				<buddy>Variable_11</buddy>
+				<params>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>value</name>
+						<const>\true\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_2</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_5</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>OnGameSettingsChanged</class>
+				<id>OnGameSettingsChanged_1</id>
+				<params/>
+				<slots>
+					<slot>
+						<name>active</name>
+						<const>\true\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>FindInArray</class>
+				<id>FindInArray_1</id>
+				<params>
+					<param>
+						StringArrayT
+						<name>Array Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>start</name>
+						<const>\0\</const>
+					</slot>
+					<slot>
+						<name>value</name>
+						<const>\HAVOK_ENABLED\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>SetVariable</class>
+				<id>SetVariable_12</id>
+				<buddy>Variable_11</buddy>
+				<params>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>value</name>
+						<const>\false\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>CompareIntegers</class>
+				<id>CompareIntegers_2</id>
+				<params/>
+				<slots>
+					<slot>
+						<name>b</name>
+						<const>\-1\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>CompareIntegers</class>
+				<id>CompareIntegers_3</id>
+				<params/>
+				<slots>
+					<slot>
+						<name>a</name>
+						<const>\1\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>GetGameSetting</class>
+				<id>GetGameSetting_2</id>
+				<params>
+					<param>
+						int
+						<name>Game Setting Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>settingName</name>
+						<const>\HAVOK_ENABLED\</const>
+					</slot>
+				</slots>
+			</block>
 		</blocks>
 		<connections>
 			<connection>
@@ -1122,7 +1321,7 @@
 				<output>out</output>
 			</connection>
 			<connection>
-				<from>CompareVehicles_1</from>
+				<from>And_1</from>
 				<input>value</input>
 				<to>If_3</to>
 				<output>res</output>
@@ -1149,6 +1348,18 @@
 				<from>GetVariable_10</from>
 				<input>b</input>
 				<to>CompareVehicles_1</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>CompareVehicles_1</from>
+				<input>i1</input>
+				<to>And_1</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>GetVariable_5</from>
+				<input>i2</input>
+				<to>And_1</to>
 				<output>value</output>
 			</connection>
 			<connection>
@@ -1226,8 +1437,14 @@
 			<connection>
 				<from>If_1</from>
 				<input>input</input>
-				<to>SetVariable_9</to>
+				<to>SetVariable_14</to>
 				<output>true</output>
+			</connection>
+			<connection>
+				<from>SetVariable_14</from>
+				<input>input</input>
+				<to>SetVariable_9</to>
+				<output>out</output>
 			</connection>
 			<connection>
 				<from>GameObjectToVehicle_3</from>
@@ -1272,12 +1489,6 @@
 				<output>node</output>
 			</connection>
 			<connection>
-				<from>If_1</from>
-				<input>input</input>
-				<to>StopPlan_1</to>
-				<output>false</output>
-			</connection>
-			<connection>
 				<from>SetVariable_8</from>
 				<input>input</input>
 				<to>SetVariable_10</to>
@@ -1308,6 +1519,12 @@
 				<output>vehicleObject</output>
 			</connection>
 			<connection>
+				<from>If_1</from>
+				<input>input</input>
+				<to>StopPlan_1</to>
+				<output>false</output>
+			</connection>
+			<connection>
 				<from>SetVariable_13</from>
 				<input>in</input>
 				<to>GetComponentProperties_3</to>
@@ -1318,12 +1535,6 @@
 				<input>gameObject</input>
 				<to>GetComponentProperties_3</to>
 				<output>node</output>
-			</connection>
-			<connection>
-				<from>ContextGetSelf_1</from>
-				<input>gameObject</input>
-				<to>GetVehicleAppearanceGameObject_2</to>
-				<output>value</output>
 			</connection>
 			<connection>
 				<from>SetVariable_1</from>
@@ -1338,9 +1549,9 @@
 				<output>getSpawnSound</output>
 			</connection>
 			<connection>
-				<from>GetGameSetting_1</from>
-				<input>a</input>
-				<to>CompareIntegers_1</to>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>GetVehicleAppearanceGameObject_2</to>
 				<output>value</output>
 			</connection>
 			<connection>
@@ -1384,6 +1595,12 @@
 				<input>value</input>
 				<to>SetVariable_4</to>
 				<output>getDebrisSpawner</output>
+			</connection>
+			<connection>
+				<from>GetGameSetting_1</from>
+				<input>b</input>
+				<to>CompareIntegers_1</to>
+				<output>value</output>
 			</connection>
 			<connection>
 				<from>FindFirstNode_5</from>
@@ -1485,6 +1702,60 @@
 				<from>GetVariable_4</from>
 				<input>gameObject</input>
 				<to>IsValid_1</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>If_5</from>
+				<input>input</input>
+				<to>SetVariable_11</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>OnGameSettingsChanged_1</from>
+				<input>input</input>
+				<to>If_2</to>
+				<output>onChanged</output>
+			</connection>
+			<connection>
+				<from>CompareIntegers_2</from>
+				<input>value</input>
+				<to>If_2</to>
+				<output>greater</output>
+			</connection>
+			<connection>
+				<from>If_2</from>
+				<input>input</input>
+				<to>If_5</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>CompareIntegers_3</from>
+				<input>value</input>
+				<to>If_5</to>
+				<output>equal</output>
+			</connection>
+			<connection>
+				<from>OnGameSettingsChanged_1</from>
+				<input>array</input>
+				<to>FindInArray_1</to>
+				<output>settings</output>
+			</connection>
+			<connection>
+				<from>If_5</from>
+				<input>input</input>
+				<to>SetVariable_12</to>
+				<output>false</output>
+			</connection>
+			<connection>
+				<from>FindInArray_1</from>
+				<input>a</input>
+				<to>CompareIntegers_2</to>
+				<output>index</output>
+			</connection>
+			<connection>
+				<from>GetGameSetting_2</from>
+				<input>b</input>
+				<to>CompareIntegers_3</to>
 				<output>value</output>
 			</connection>
 		</connections>
@@ -1936,6 +2207,18 @@
 						<slots/>
 					</block>
 					<block>
+						<class>Macro</class>
+						<id>Macro_4</id>
+						<params>
+							<param>
+								getVehicleVelocity
+								<name>Macro Name</name>
+								<type>StringT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
 						<class>MacroInput</class>
 						<id>MacroInput_8</id>
 						<params>
@@ -1961,18 +2244,6 @@
 								<const>\true\</const>
 							</slot>
 						</slots>
-					</block>
-					<block>
-						<class>Macro</class>
-						<id>Macro_4</id>
-						<params>
-							<param>
-								getVehicleVelocity
-								<name>Macro Name</name>
-								<type>StringT</type>
-							</param>
-						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>Delay</class>

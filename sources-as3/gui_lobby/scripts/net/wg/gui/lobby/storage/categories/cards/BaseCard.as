@@ -746,12 +746,15 @@ package net.wg.gui.lobby.storage.categories.cards
       protected function disposeTweens() : void
       {
          var _loc1_:Tween = null;
-         for each(_loc1_ in this._tweens)
+         if(this._tweens)
          {
-            _loc1_.paused = true;
-            _loc1_.dispose();
+            for each(_loc1_ in this._tweens)
+            {
+               _loc1_.paused = true;
+               _loc1_.dispose();
+            }
+            this._tweens.length = 0;
          }
-         this._tweens.length = 0;
       }
       
       protected function setData(param1:BaseCardVO) : void

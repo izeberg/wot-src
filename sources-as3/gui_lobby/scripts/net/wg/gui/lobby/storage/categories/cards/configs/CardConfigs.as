@@ -15,6 +15,8 @@ package net.wg.gui.lobby.storage.categories.cards.configs
       
       private var _cardImage:CardImageConfig = null;
       
+      private var _restoreDeviceCardImage:RestoreDeviceCardImageConfig = null;
+      
       private var _customizationCardImage:CustomizationCardImageConfig = null;
       
       private var _progressionLevelPosition:ProgressionLevelPositionConfig = null;
@@ -48,6 +50,8 @@ package net.wg.gui.lobby.storage.categories.cards.configs
          this._cardSize.initialize();
          this._cardImage = new CardImageConfig();
          this._cardImage.initialize();
+         this._restoreDeviceCardImage = new RestoreDeviceCardImageConfig();
+         this._restoreDeviceCardImage.initialize();
          this._customizationCardImage = new CustomizationCardImageConfig();
          this._customizationCardImage.initialize();
          this._progressionLevelPosition = new ProgressionLevelPositionConfig();
@@ -61,6 +65,8 @@ package net.wg.gui.lobby.storage.categories.cards.configs
          this._cardSize = null;
          this._cardImage.dispose();
          this._cardImage = null;
+         this._restoreDeviceCardImage.dispose();
+         this._restoreDeviceCardImage = null;
          this._customizationCardImage.dispose();
          this._customizationCardImage = null;
          this._progressionLevelPosition.dispose();
@@ -83,6 +89,11 @@ package net.wg.gui.lobby.storage.categories.cards.configs
       public function get cardImage() : CardImageConfig
       {
          return this._cardImage;
+      }
+      
+      public function get restoreDeviceCardImage() : RestoreDeviceCardImageConfig
+      {
+         return this._restoreDeviceCardImage;
       }
       
       public function get customizationCardImage() : CustomizationCardImageConfig

@@ -51,7 +51,7 @@ msgid "Contact/status/inBattle/training"
 msgstr "В Тренировочном бою"
 
 msgid "Contact/status/inBattle/unknown"
-msgstr "В бою"
+msgstr "В бою"
 
 msgid "Contact/status/inBattle/versus_ai"
 msgstr "В бою на Полигоне"
@@ -1383,8 +1383,8 @@ msgstr "Больше наград в ежедневных задачах"
 
 msgid "awardItem/equipCoin/body"
 msgstr ""
-"Компоненты необходимы для наладки и демонтажа экспериментального "
-"оборудования."
+"Компоненты необходимы для наладки, демонтажа и восстановления "
+"экспериментального оборудования."
 
 msgid "awardItem/equipCoin/header"
 msgstr "Компоненты"
@@ -2025,7 +2025,7 @@ msgid "battleTypes/battleRoyale/tillStart"
 msgstr "До начала события осталось"
 
 msgid "battleTypes/battleRoyale/tillStartCycle"
-msgstr "До начала:"
+msgstr "До начала:"
 
 msgid "battleTypes/battleRoyale/widget/body2"
 msgstr ""
@@ -2377,8 +2377,8 @@ msgstr "Модули и уязвимости"
 
 msgid "battle_royale/hangar/perf/high_risk/description"
 msgstr ""
-"Производительности вашего компьютера недостаточно для данного режима. Будут "
-"наблюдаться проблемы с графикой и перемещением техники, возможно также "
+"Производительности вашего компьютера недостаточно для данного режима. Будут "
+"наблюдаться проблемы с графикой и перемещением техники, возможно также "
 "аварийное закрытие клиента игры."
 
 msgid "battle_royale/hangar/perf/high_risk/header"
@@ -4956,7 +4956,7 @@ msgid "event/squad/disable/header"
 msgstr "Внимание!"
 
 msgid "falloutBattleSelectorWindow/btnDisabled/body"
-msgstr "Вы находитесь в очереди на вход в бой."
+msgstr "Вы находитесь в очереди на вход в бой."
 
 msgid "falloutBattleSelectorWindow/btnDisabled/header"
 msgstr "Переход недоступен"
@@ -5254,7 +5254,7 @@ msgid "frontlinePackPreview/discount"
 msgstr "Скидка по купону: %(value)s"
 
 msgid "frontlinePackPreview/gift"
-msgstr "В подарок"
+msgstr "В подарок"
 
 msgid "frontlinePackPreview/header"
 msgstr "Стоимость со скидкой"
@@ -5434,7 +5434,7 @@ msgid "hangar/elen/header/name"
 msgstr "%(name)s"
 
 msgid "hangar/elen/header/toend"
-msgstr "До завершения:"
+msgstr "До завершения:"
 
 msgid "hangar/elen/header/toendofregistration"
 msgstr "До завершения регистрации:"
@@ -6052,7 +6052,7 @@ msgid "header/battleType/header"
 msgstr "Выбор режима боя"
 
 msgid "header/buttons/available"
-msgstr "В наличии"
+msgstr "В наличии"
 
 msgid "header/buttons/barracks/body"
 msgstr "Рекрутировать и демобилизовать членов экипажа."
@@ -6142,6 +6142,11 @@ msgstr ""
 "%(equipCoin)s можно получить при разборе экспериментального оборудования."
 
 msgid "header/buttons/equipCoin/description1"
+msgstr ""
+"Компоненты необходимы для наладки, демонтажа и восстановления "
+"экспериментального оборудования."
+
+msgid "header/buttons/equipCoin/description2"
 msgstr ""
 "Компоненты необходимы для наладки и демонтажа экспериментального "
 "оборудования."
@@ -6250,6 +6255,12 @@ msgstr ""
 
 msgid "header/buttons/missions/header"
 msgstr "Задачи"
+
+msgid "header/buttons/museum/body"
+msgstr "Посетить виртуальную экспозицию советских танков и САУ."
+
+msgid "header/buttons/museum/header"
+msgstr "Музей"
 
 msgid "header/buttons/personalMissions/body"
 msgstr "Нажмите, чтобы перейти к личным боевым задачам."
@@ -6626,6 +6637,22 @@ msgstr "Информационные листки доступны в полно
 msgid "lobbyMenu/versionInfoButton/miniclient/header"
 msgstr "Внимание!"
 
+msgid "loby_messenger/btnReferralDisabled/body"
+msgstr ""
+"Недоступно в выбранном режиме. Для получения доступа к функциональности "
+"перейдите в режим «Случайный бой»."
+
+msgid "loby_messenger/btnReferralDisabled/header"
+msgstr "Реферальная программа"
+
+msgid "loby_messenger/btnVehicleCartDisabled/body"
+msgstr ""
+"Недоступно в выбранном режиме. Для получения доступа к функциональности "
+"перейдите в режим «Случайный бой»."
+
+msgid "loby_messenger/btnVehicleCartDisabled/header"
+msgstr "Сравнение техники"
+
 msgid "loby_messenger/channel_button/inRoaming"
 msgstr "Каналы недоступны из-за смены региона"
 
@@ -6979,7 +7006,7 @@ msgstr ""
 "клавишей Alt."
 
 msgid "mode_selector/ranked/bonus/available"
-msgstr "В наличии"
+msgstr "В наличии"
 
 msgid "mode_selector/ranked/bonus/description"
 msgstr ""
@@ -7119,6 +7146,27 @@ msgid "moduleFits/replace"
 msgstr ""
 "Сейчас установлено: %(moduleName)s. Замена оборудования вызовет следующие "
 "изменения:"
+
+msgid "moduleFits/restore/modernized/reason/0"
+msgstr "Оборудование было разобрано при продаже машины:"
+
+msgid "moduleFits/restore/modernized/reason/1"
+msgstr "Оборудование было разобрано со Cклада:"
+
+msgid "moduleFits/restore/modernized/reason/2"
+msgstr "Оборудование было разобрано на машине:"
+
+msgid "moduleFits/restore/noModernized/reason/0"
+msgstr "Оборудование было продано вместе с машиной:"
+
+msgid "moduleFits/restore/noModernized/reason/1"
+msgstr "Оборудование было продано со Cклада:"
+
+msgid "moduleFits/restore/noModernized/reason/2"
+msgstr "Оборудование было уничтожено на машине:"
+
+msgid "moduleFits/restore/price"
+msgstr "Восстановление"
 
 msgid "moduleFits/similar_device_already_installed/header"
 msgstr "Установка невозможна"
@@ -9338,6 +9386,28 @@ msgstr ""
 msgid "notrecruitedtankman/tankmen_Portal25_4/label"
 msgstr "Событие «Разлом»"
 
+msgid "notrecruitedtankman/tankmen_PvEMay26_1/desc"
+msgstr ""
+"Советский танковый ас, Герой Советского Союза, гвардии старший лейтенант. "
+"Признан наиболее результативным советским танкистом — за два с половиной "
+"месяца уничтожил 52 танка в 28 боях. Был убит осколком миномётного снаряда "
+"18 декабря 1941 года в боях на Волоколамском направлении. Посмертно "
+"награждён Орденом Ленина 22 декабря 1941 года."
+
+msgid "notrecruitedtankman/tankmen_PvEMay26_1/label"
+msgstr "Событие «Время героев»"
+
+msgid "notrecruitedtankman/tankmen_PvEMay26_2/desc"
+msgstr ""
+"Сержант, командир танка БТ-7, Герой Советского Союза. 25 июня 1941 года "
+"у местечка Рудишкяй (Литва) разгромил колонну бронетехники противника, "
+"уничтожив в общей сложности 15 танков и 10 орудий передового отряда "
+"19-й танковой дивизии немцев, задержав тем самым наступление немцев на двое "
+"суток, что позволило тщательно организовать оборону Вильно."
+
+msgid "notrecruitedtankman/tankmen_PvEMay26_2/label"
+msgstr "Событие «Время героев»"
+
 msgid "notrecruitedtankman/tankmen_Razvedchik_3/desc"
 msgstr ""
 "Командир разведвзвода. Опытный и опалённый войной офицер, ушедший на фронт "
@@ -11245,16 +11315,16 @@ msgid "quests/bonuses/token/header"
 msgstr "Марка %(userName)s"
 
 msgid "quests/bonuses/token/lockpick/body"
-msgstr "Отмычка открывает контейнер День рождения 2024 с вероятностью 10%."
+msgstr "Отмычка открывает контейнер «День рождения 2024» с вероятностью 10%."
 
 msgid "quests/bonuses/token/lockpick/header"
 msgstr "Отмычка для контейнера «День рождения 2024»"
 
 msgid "quests/bonuses/token/resource/clan_promoresource/body"
 msgstr ""
-"Ресурс для развития Укрепрайона и подготовки клановых резервов. Заработать "
-"промресурс можно в Вылазках, Наступлениях, Случайных боях (на технике X "
-"уровня) или в Ранговых боях."
+"Ресурс для развития Укрепрайона и подготовки клановых резервов. Заработать "
+"его можно в Вылазках, Наступлениях или Случайных боях на технике Х "
+"и XI уровней."
 
 msgid "quests/bonuses/token/resource/clan_promoresource/header"
 msgstr "Промресурс"
@@ -11810,7 +11880,7 @@ msgid "redButton/disabled/vehicle/inBattle/body"
 msgstr "После окончания боя машина появится в Ангаре."
 
 msgid "redButton/disabled/vehicle/inBattle/header"
-msgstr "В бою"
+msgstr "В бою"
 
 msgid "redButton/disabled/vehicle/not_supported/body"
 msgstr "В данном режиме боя данная техника не участвует."
@@ -13003,6 +13073,12 @@ msgstr ""
 "Показывает, на сколько метров снаряд может отклониться от точки прицеливания"
 " за каждые 100 метров расстояния до цели."
 
+msgid "tank_params/desc/shotDispersionAngle/withAutoShoot"
+msgstr ""
+"Показывает, на сколько метров снаряды разнесённых орудий могут отклониться "
+"от обобщённой центральной точки прицеливания за каждые 100 метров дистанции "
+"до цели."
+
 msgid "tank_params/desc/shotDispersionAngle/withDualAccuracy"
 msgstr ""
 "Показывает, на сколько метров снаряд может отклониться от точки прицеливания"
@@ -13211,7 +13287,7 @@ msgid "tanks_carousel/restore_vehicle/header"
 msgstr "Восстановить машину"
 
 msgid "tanks_carousel/vehicleStates/battle"
-msgstr "В бою"
+msgstr "В бою"
 
 msgid "tanks_carousel/vehicleStates/crewNotFull"
 msgstr "Неполный экипаж"
@@ -14367,11 +14443,19 @@ msgstr ""
 msgid "vehicleSellDialog/crew/alertIcon/recovery/header"
 msgstr "Буфер демобилизованных заполнен"
 
-msgid "vehicleSellDialog/renderer/alertIconDeconstruct/body"
+msgid "vehicleSellDialog/renderer/alertIconDeconstructDisabled/body"
 msgstr ""
 "Разобрав оборудование, вы не сможете его восстановить или купить заново."
 
-msgid "vehicleSellDialog/renderer/alertIconDeconstruct/header"
+msgid "vehicleSellDialog/renderer/alertIconDeconstructDisabled/header"
+msgstr "Разбор оборудования"
+
+msgid "vehicleSellDialog/renderer/alertIconDeconstructEnabled/body"
+msgstr ""
+"Разобрав оборудование, вы сможете его восстановить во вкладке "
+"«Восстановление» на Складе в разделе запасов."
+
+msgid "vehicleSellDialog/renderer/alertIconDeconstructEnabled/header"
 msgstr "Разбор оборудования"
 
 msgid "vehicleSellDialog/renderer/alertIconGoldWotPlus/body"
@@ -14388,10 +14472,18 @@ msgstr ""
 msgid "vehicleSellDialog/renderer/alertIconRemove/header"
 msgstr "Демонтировать на Склад"
 
-msgid "vehicleSellDialog/renderer/alertIconSell/body"
+msgid "vehicleSellDialog/renderer/alertIconSellDisabled/body"
 msgstr "Продав оборудование, вы не сможете его восстановить."
 
-msgid "vehicleSellDialog/renderer/alertIconSell/header"
+msgid "vehicleSellDialog/renderer/alertIconSellDisabled/header"
+msgstr "Продажа оборудования"
+
+msgid "vehicleSellDialog/renderer/alertIconSellEnabled/body"
+msgstr ""
+"Продав оборудование, вы сможете его восстановить во вкладке «Восстановление»"
+" на Складе в разделе запасов."
+
+msgid "vehicleSellDialog/renderer/alertIconSellEnabled/header"
 msgstr "Продажа оборудования"
 
 msgid "vehicleSellDialog/renderer/sbscr/Deluxe/nonsub/demountEnabled/body"
@@ -14413,10 +14505,10 @@ msgstr "Выгрузка на Склад"
 
 msgid "vehicleStatus/StrongholdEventFrozen/body"
 msgstr ""
-"Машина заморожена: за бой на ней владелец не получит личные очки славы, "
-"клану не будет засчитан прогресс этапа, а также будет начислено меньше "
-"клановых очков славы (пропорционально количеству не замороженных машин в "
-"отряде)."
+"Машина заморожена: за бой на ней владелец не получит личные очки славы, "
+"клану не будет засчитан прогресс этапа, а также будет начислено меньше "
+"клановых очков славы (пропорционально количеству незамороженных машин "
+"в отряде)."
 
 msgid "vehicleStatus/ammoNotFull/header"
 msgstr "Неполный боекомплект"
@@ -14425,7 +14517,7 @@ msgid "vehicleStatus/ammoNotFullEvents/header"
 msgstr "Неполный боекомплект"
 
 msgid "vehicleStatus/battle/header"
-msgstr "В бою"
+msgstr "В бою"
 
 msgid "vehicleStatus/body"
 msgstr "Данная машина временно не готова выйти в бой."
@@ -14524,7 +14616,7 @@ msgid "vehicleStatus/igrRentalIsOver/header"
 msgstr "Акция завершена"
 
 msgid "vehicleStatus/inHangar/header"
-msgstr "В Ангаре"
+msgstr "В Ангаре"
 
 msgid "vehicleStatus/inPrebattle/header"
 msgstr "В составе формирования"

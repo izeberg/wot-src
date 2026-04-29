@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/PBS_ext_emissive.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>111</materialKind>
+					<property>
+						alphaReference
+						<Int>121</Int>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h01_victory_day_2026/Buildings/h01_VD26_NikolTower/h01_VD26_NikolTower_AM.dds</Texture>
+					</property>
+					<property>
+						g_emissionStrength
+						<Vector4>6.850000 2.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_simpleEmissionColor
+						<Vector4>1.000000 0.580392 0.298039 0.000000</Vector4>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h01_victory_day_2026/Buildings/h01_VD26_NikolTower/h01_VD26_NikolTower_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h01_victory_day_2026/Buildings/h01_VD26_NikolTower/h01_VD26_NikolTower_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.000000 0.135172 0.000000</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-0.500000 0.000000 -0.500000</min>
+		<max>0.500000 0.270343 0.500000</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>408</geometrySize>
+	<minUVDensity>0.041073</minUVDensity>
+</root>

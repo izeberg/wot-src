@@ -67,6 +67,7 @@ from gui.shop import showIngameShop, Origin
 from gui.techtree.go_back_helper import WulfPreviewAlias
 from gui.tournament.tournament_helpers import showTournaments, isTournamentEnabled
 from helpers import dependency, i18n, isPlayerAccount, time_utils
+from museum_of_glory.skeletons.game_control import IMuseumOfGloryController
 from predefined_hosts import PING_STATUSES, g_preDefinedHosts
 from renewable_subscription_common.settings_constants import WotPlusState
 from shared_utils import CONST_CONTAINER, BitmaskHelper
@@ -246,6 +247,7 @@ class LobbyHeader(LobbyHeaderMeta, ClanEmblemsHelper, IGlobalListener):
         STRONGHOLD = VIEW_ALIAS.LOBBY_STRONGHOLD
         PERSONAL_MISSIONS_PAGE = VIEW_ALIAS.PERSONAL_MISSIONS_PAGE
         TOURNAMENTS = VIEW_ALIAS.LOBBY_TOURNAMENTS
+        MUSEUM = VIEW_ALIAS.MUSEUM_VIEW
 
     ACCOUNT_SETTINGS_COUNTERS = (
      TABS.STORE,)
@@ -301,6 +303,7 @@ class LobbyHeader(LobbyHeaderMeta, ClanEmblemsHelper, IGlobalListener):
     __limitedUIController = dependency.descriptor(ILimitedUIController)
     __earlyAccessController = dependency.descriptor(IEarlyAccessController)
     __unseenEventsManager = dependency.descriptor(IUnseenEventsCounter)
+    __museumOfGloryCtrl = dependency.descriptor(IMuseumOfGloryController)
     __SELECTOR_TOOLTIP_TYPE = TOOLTIPS.HEADER_BATTLETYPE
 
     def __init__(self):
@@ -531,6 +534,7 @@ class LobbyHeader(LobbyHeaderMeta, ClanEmblemsHelper, IGlobalListener):
             self.as_disableFightButtonS(self.__isFightBtnDisabled)
         self.__updateUiEffectsState()
         g_eventBus.addListener(LobbySimpleEvent.HANGAR_STATUS_CHANGED, self.__onHangarStatusChanged, scope=EVENT_BUS_SCOPE.LOBBY)
+        g_eventBus.addListener(LobbySimpleEvent.ON_GET_VISIBILITY_MENU_STATE, self.__onGetVisibilityMenuState, scope=EVENT_BUS_SCOPE.LOBBY)
         self._onPopulateEnd()
 
     def _invalidate(self, *args, **kwargs):
@@ -544,6 +548,7 @@ class LobbyHeader(LobbyHeaderMeta, ClanEmblemsHelper, IGlobalListener):
         self._removeListeners()
         self.__clearMenuVisibiliby()
         g_eventBus.removeListener(LobbySimpleEvent.HANGAR_STATUS_CHANGED, self.__onHangarStatusChanged, scope=EVENT_BUS_SCOPE.LOBBY)
+        g_eventBus.removeListener(LobbySimpleEvent.ON_GET_VISIBILITY_MENU_STATE, self.__onGetVisibilityMenuState, scope=EVENT_BUS_SCOPE.LOBBY)
         super(LobbyHeader, self)._dispose()
 
     def _canShowWotPlus(self):
@@ -607,6 +612,7 @@ class LobbyHeader(LobbyHeaderMeta, ClanEmblemsHelper, IGlobalListener):
         self.__comp7Controller.onQualificationStateUpdated += self.__updateComp7
         self.__achievements20Controller.onUpdate += self.__onProfileVisited
         self.__earlyAccessController.onUpdated += self.__updateEarlyAccess
+        self.__museumOfGloryCtrl.onConfigUpdate += self._updateHangarMenuData
         g_playerEvents.onEnqueued += self._updatePrebattleControls
         g_playerEvents.onDequeued += self._updatePrebattleControls
         g_playerEvents.onArenaCreated += self._updatePrebattleControls
@@ -716,6 +722,7 @@ class LobbyHeader(LobbyHeaderMeta, ClanEmblemsHelper, IGlobalListener):
         self.__comp7Controller.onQualificationStateUpdated -= self.__updateComp7
         self.__achievements20Controller.onUpdate -= self.__onProfileVisited
         self.__earlyAccessController.onUpdated -= self.__updateEarlyAccess
+        self.__museumOfGloryCtrl.onConfigUpdate -= self._updateHangarMenuData
         self.clanNotificationCtrl.onClanNotificationUpdated -= self.__updateStrongholdCounter
         self.__funRandomCtrl.subscription.removeSubModesWatcher(self._updatePrebattleControls, True)
         g_playerEvents.onEnqueued -= self._updatePrebattleControls
@@ -890,7 +897,7 @@ class LobbyHeader(LobbyHeaderMeta, ClanEmblemsHelper, IGlobalListener):
         self.as_updateAnonymizedStateS(self.anonymizerController.isAnonymized)
 
     def __updateUiEffectsState(self, forceUIEffectDisable=False):
-        if self.__uiEffectsIsActive != self.hasUiEffects or forceUIEffectDisable and not self.__uiEffectsIsActive:
+        if self.__uiEffectsIsActive != self.hasUiEffects or forceUIEffectDisable and self.__uiEffectsIsActive:
             self.__uiEffectsIsActive = self.hasUiEffects and not forceUIEffectDisable
             self.as_updateUiEffectsStateS(self.__uiEffectsIsActive)
 
@@ -1071,6 +1078,9 @@ class LobbyHeader(LobbyHeaderMeta, ClanEmblemsHelper, IGlobalListener):
             showBarracks()
         elif alias == self.TABS.TECHTREE:
             showVehicleTechTreeView()
+        elif alias == self.TABS.MUSEUM:
+            from museum_of_glory.gui.window_events import showMuseumVehicleView
+            showMuseumVehicleView()
         else:
             event = g_entitiesFactories.makeLoadEvent(SFViewLoadParams(alias))
             if event is not None:
@@ -1474,6 +1484,13 @@ class LobbyHeader(LobbyHeaderMeta, ClanEmblemsHelper, IGlobalListener):
             highlightImage = backport.image(R.images.gui.maps.icons.lobby.header.highlight_early_access())
         self.as_setButtonHighlightS(self.TABS.TECHTREE, highlightImage)
 
+    def __updateMuseum(self, *_):
+        return {'label': MENU.HEADERBUTTON_MUSEUM, 
+           'value': self.TABS.MUSEUM, 
+           'textColor': 16764006, 
+           'textColorOver': 16768409, 
+           'tooltip': TOOLTIPS.HEADER_BUTTONS_MUSEUM}
+
     def _updateStrongholdsSelector(self):
         strongholdEnabled = isStrongholdsEnabled()
         clansTabReplaceStrongholds = isClansTabReplaceStrongholds()
@@ -1586,6 +1603,8 @@ class LobbyHeader(LobbyHeaderMeta, ClanEmblemsHelper, IGlobalListener):
         override = self._tutorialLoader.gui.lastHangarMenuButtonsOverride
         if override is not None:
             tabDataProvider[:] = filter(lambda item: item['value'] in override, tabDataProvider)
+        if self.__museumOfGloryCtrl.isEnabled:
+            tabDataProvider.append(self.__updateMuseum())
         return tabDataProvider
 
     def _updateHangarMenuData(self, *_):
@@ -1865,6 +1884,9 @@ class LobbyHeader(LobbyHeaderMeta, ClanEmblemsHelper, IGlobalListener):
         if cosmicCtrl:
             return cosmicCtrl.isEnabled
         return False
+
+    def __onGetVisibilityMenuState(self, event):
+        event.ctx['visibilityMenuState'] = self.__menuVisibilityHelper.getActiveState()
 
 
 class _BoosterInfoPresenter(object):

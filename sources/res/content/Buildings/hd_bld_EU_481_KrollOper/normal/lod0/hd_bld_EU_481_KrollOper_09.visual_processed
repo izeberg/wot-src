@@ -351,10 +351,6 @@
 						<Texture>content/Buildings/00_Tiles/Dirt_Soot_01_DM.dds</Texture>
 					</property>
 					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
 						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>

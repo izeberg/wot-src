@@ -90,8 +90,11 @@ package net.wg.gui.battle.views.epicDeploymentMap
          this.mapContainer.removeEventListener(EpicDeploymentMapEvent.MAP_CLICKED,this.onDeploymentMapClickedHandler);
          this._entryContainer.splice(0,this._entryContainer.length);
          this._entryContainer = null;
-         this.bigBackground.dispose();
-         this.bigBackground = null;
+         if(this.bigBackground)
+         {
+            this.bigBackground.dispose();
+            this.bigBackground = null;
+         }
          this.mapContainer.dispose();
          this.mapContainer = null;
          this.currentLaneContainer.dispose();
@@ -136,10 +139,10 @@ package net.wg.gui.battle.views.epicDeploymentMap
          this._mapHeight = param2;
       }
       
-      public function as_setDirection(param1:String, param2:String) : void
+      public function as_setDirection(param1:String, param2:String, param3:String) : void
       {
          this.currentLaneContainer.updateLane(param1,param2);
-         dispatchEvent(new EpicDeploymentLaneEvent(EpicDeploymentLaneEvent.CHANGED,param1,param2));
+         dispatchEvent(new EpicDeploymentLaneEvent(EpicDeploymentLaneEvent.CHANGED,param3));
       }
       
       public function updateStagePosition(param1:int, param2:int) : void
@@ -154,7 +157,7 @@ package net.wg.gui.battle.views.epicDeploymentMap
          mouseEnabled = mouseChildren = !this._inRespawnScreen;
       }
       
-      private function updateLayout() : void
+      protected function updateLayout() : void
       {
          var _loc2_:Number = NaN;
          var _loc3_:Number = NaN;
@@ -216,6 +219,26 @@ package net.wg.gui.battle.views.epicDeploymentMap
       private function onDeploymentMapClickedHandler(param1:EpicDeploymentMapEvent) : void
       {
          onMinimapClickedS(param1.mouseX,param1.mouseY,param1.buttonIdx,0);
+      }
+      
+      protected function get originalWidth() : int
+      {
+         return this._originalWidth;
+      }
+      
+      protected function get originalHeight() : int
+      {
+         return this._originalHeight;
+      }
+      
+      protected function get mapWidth() : int
+      {
+         return this._mapWidth;
+      }
+      
+      protected function get mapHeight() : int
+      {
+         return this._mapHeight;
       }
    }
 }

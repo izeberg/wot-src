@@ -527,7 +527,7 @@ class ItemsRequester(IItemsRequester):
     _AccountItem = namedtuple('_AccountItem', ['dossier', 'clanInfo', 'seasons', 'ranked',
      'dogTag', 'battleRoyaleStats', 'wtr', 'layout', 'layoutState'])
 
-    def __init__(self, inventory, stats, dossiers, goodies, shop, recycleBin, vehicleRotation, ranked, battleRoyale, badges, epicMetaGame, tokens, festivityRequester, armoryYard, blueprints=None, sessionStatsRequester=None, anonymizerRequester=None, battlePassRequester=None, giftSystemRequester=None, gameRestrictionsRequester=None, resourceWellRequester=None, achievements20Requester=None, refProgramRequester=None, playStreakRequester=None):
+    def __init__(self, inventory, stats, dossiers, goodies, shop, recycleBin, vehicleRotation, ranked, battleRoyale, badges, epicMetaGame, tokens, festivityRequester, armoryYard, blueprints=None, sessionStatsRequester=None, anonymizerRequester=None, battlePassRequester=None, giftSystemRequester=None, gameRestrictionsRequester=None, resourceWellRequester=None, achievements20Requester=None, refProgramRequester=None, playStreakRequester=None, historicalBattles=None):
         self.__inventory = inventory
         self.__stats = stats
         self.__dossiers = dossiers
@@ -542,6 +542,7 @@ class ItemsRequester(IItemsRequester):
         self.__blueprints = blueprints
         self.__festivity = festivityRequester
         self.__armoryYard = armoryYard
+        self.__historicalBattles = historicalBattles
         self.__tokens = tokens
         self.__sessionStats = sessionStatsRequester
         self.__anonymizer = anonymizerRequester
@@ -613,6 +614,10 @@ class ItemsRequester(IItemsRequester):
     @property
     def armoryYard(self):
         return self.__armoryYard
+
+    @property
+    def historicalBattles(self):
+        return self.__historicalBattles
 
     @property
     def tokens(self):
@@ -706,6 +711,7 @@ class ItemsRequester(IItemsRequester):
          callerWrapper(self.__battlePass.request(), onCompleted=partial(self.__onCompletedCallback, 'download/battlePass', None)),
          self.__festivity.request(),
          callerWrapper(self.__armoryYard.request(), onCompleted=partial(self.__onCompletedCallback, 'download/festivity', None)),
+         callerWrapper(self.__historicalBattles.request(), onCompleted=partial(self.__onCompletedCallback, 'download/historicalBattles', None)),
          callerWrapper(self.__giftSystem.request(), onCompleted=partial(self.__onCompletedCallback, 'download/giftSystem', None)),
          callerWrapper(self.__gameRestrictions.request(), onCompleted=partial(self.__onCompletedCallback, 'download/gameRestrictions', None)),
          callerWrapper(self.__resourceWell.request(), onCompleted=partial(self.__onCompletedCallback, 'download/resourceWell', None)),
@@ -718,7 +724,7 @@ class ItemsRequester(IItemsRequester):
 
     def isSynced--- This code section failed: ---
 
- L.1186         0  LOAD_FAST             0  'self'
+ L.1196         0  LOAD_FAST             0  'self'
                 3  LOAD_ATTR             0  '__blueprints'
                 6  LOAD_CONST               None
                 9  COMPARE_OP            9  is-not
@@ -996,15 +1002,14 @@ Parse error at or near `None' instruction at offset -1
                     invalidate[itemTypeID].update(itemsDiff.keys())
 
             for itemType, itemsDiff in diff.get('recycleBin', {}).iteritems():
-                deletedItems = itemsDiff.get('buffer', {})
-                for itemID in deletedItems.iterkeys():
-                    if itemType == 'tankmen':
-                        invalidate[GUI_ITEM_TYPE.TANKMAN].add(itemID * -1)
-                    else:
-                        invalidate[GUI_ITEM_TYPE.VEHICLE].add(itemID)
+                if itemType == 'tankmen':
+                    invalidate[GUI_ITEM_TYPE.TANKMAN].update({itemID * -1 for itemID in itemsDiff.get('buffer', {}).iterkeys()})
+                elif itemType == 'vehicles':
+                    invalidate[GUI_ITEM_TYPE.VEHICLE].update(set(itemsDiff.get('buffer', {}).keys()))
+                elif itemType == 'optional_devices':
+                    invalidate[GUI_ITEM_TYPE.OPTIONALDEVICE].update(set(itemsDiff.keys()))
 
-            if (
-             BATTLE_PASS_PDATA_KEY, '_r') in diff or BATTLE_PASS_PDATA_KEY in diff:
+            if (BATTLE_PASS_PDATA_KEY, '_r') in diff or BATTLE_PASS_PDATA_KEY in diff:
                 if (
                  BATTLE_PASS_PDATA_KEY, '_r') in diff:
                     invalidate[BATTLE_PASS_PDATA_KEY] = diff[(BATTLE_PASS_PDATA_KEY, '_r')]

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/chinese/Ch76_HSD_1/normal/lod4/Chassis</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.704999 -0.000004 -3.344038</min>
+		<max>1.705000 1.080256 3.275002</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/chinese/Ch76_HSD_1/normal/lod3/Chassis</nodefullVisual>
+</root>

@@ -41,9 +41,6 @@ msgstr "WS No. 19 Special"
 msgid "C13B42"
 msgstr "C.13/B.42"
 
-msgid "C13B42_ISP"
-msgstr "C.13/B.42"
-
 msgid "C13B47"
 msgstr "C.13/B.47"
 
@@ -78,9 +75,6 @@ msgid "C45A_Gonsalo"
 msgstr "C45AG"
 
 msgid "C45A_SH"
-msgstr "SR C45"
-
-msgid "C45_ISP"
 msgstr "SR C45"
 
 msgid "Cadillac_75_x_3"
@@ -234,9 +228,6 @@ msgstr "FV221A"
 msgid "Chassis_GB120_Concept_No_5"
 msgstr "Concept No. 5"
 
-msgid "Chassis_GB120_Concept_No_5_ISP"
-msgstr "Concept No. 5"
-
 msgid "Chassis_GB121_GSOR_1010_FB"
 msgstr "GSOR 1010 FB"
 
@@ -326,6 +317,9 @@ msgstr "Champion"
 
 msgid "Chassis_GB141_Celestial_2_51"
 msgstr "Celestial 2-51"
+
+msgid "Chassis_GB142_FV249_Castle"
+msgstr "FV249 Castle"
 
 msgid "Chassis_GB143_Captain"
 msgstr "Captain"
@@ -588,9 +582,6 @@ msgstr "FV4004 Conway"
 msgid "Chassis_GB83_FV4005"
 msgstr "FV4005 Stage II"
 
-msgid "Chassis_GB83_FV4005_ISP"
-msgstr "FV4005 Stage II"
-
 msgid "Chassis_GB84_Chieftain_Mk6"
 msgstr "Chieftain Mk. 6"
 
@@ -603,9 +594,6 @@ msgstr "Cromwell"
 msgid "Chassis_GB86_Centurion_Action_X"
 msgstr "Centurion Action X"
 
-msgid "Chassis_GB86_Centurion_Action_X_ISP"
-msgstr "Centurion Action X"
-
 msgid "Chassis_GB87_Chieftain_T95_turret"
 msgstr "Chieftain/T95"
 
@@ -613,9 +601,6 @@ msgid "Chassis_GB88_T95_Chieftain_turret"
 msgstr "Vandal"
 
 msgid "Chassis_GB91_Super_Conqueror"
-msgstr "Super Conqueror"
-
-msgid "Chassis_GB91_Super_Conqueror_ISP"
 msgstr "Super Conqueror"
 
 msgid "Chassis_GB92_FV217"
@@ -1278,29 +1263,6 @@ msgstr "Caernarvon"
 msgid "GB120_Concept_No_5"
 msgstr "Concept No. 5"
 
-msgid "GB120_Concept_No_5_ISP"
-msgstr "Concept 5 Выпрабавальны"
-
-msgid "GB120_Concept_No_5_ISP_descr"
-msgstr ""
-"У паваенныя гады ў Брытаніі працягвалася праца над цяжкімі "
-"бронеаўтамабілямі. Адзін з амбіцыйных праектаў называўся Concept 5 Future "
-"Tank Design. Па сутнасці, гэта быў танк на колах. Такія машыны прызначаліся "
-"для спецыфічных тэатраў ваенных дзеянняў, дзе ў колавай тэхнікі была "
-"перавага. Напрыклад, для камяністых пустынь. Узбраенне ў выглядзе 105-мм "
-"гарматы дазваляла змагацца з сярэднімі танкамі таго перыяду. Праект так "
-"і застаўся на стадыі канцэпцыі, бо было вырашана развіваць асноўныя танкі "
-"і гусенічныя баявыя машыны."
-
-msgid "GB120_Concept_No_5_ISP_long_special"
-msgstr "?empty?"
-
-msgid "GB120_Concept_No_5_ISP_short"
-msgstr "Concept 5 (В)"
-
-msgid "GB120_Concept_No_5_ISP_short_special"
-msgstr "?empty?"
-
 msgid "GB120_Concept_No_5_bob"
 msgstr "Concept No. 5 BB"
 
@@ -1754,6 +1716,29 @@ msgstr "Celestial"
 msgid "GB141_Celestial_2_51_short_special"
 msgstr ""
 "Добрае лабавое браніраванне, барабан на 3 снарады, асноўны HESH-снарад."
+
+msgid "GB142_FV249_Castle"
+msgstr "FV249 Castle"
+
+msgid "GB142_FV249_Castle_descr"
+msgstr ""
+"В послевоенное время в Великобритании разрабатывались универсальные (массой между тяжёлыми и средними) танки 200-й серии. Одним из таких проектов стал FV249, создававшийся во второй половине 1950-х годов. В основе его концепции лежало использование двуствольной орудийной установки в целях увеличения огневой мощи. Для обеспечения высокой скорострельности в течение начальной фазы боя стволы охлаждались водой, которая циркулировала в кожухах, аналогичных морским артустановкам. На полу подбашенной корзины устанавливался автомат заряжания, который по мере необходимости оперативно пополнялся двумя заряжающими. FV249 не был воплощён в металле: помимо сложности механизмов заряжания, причиной прекращения работ стала потеря интереса к тяжёлым танкам — вместо них начались работы по основным танкам, и прежде всего над Chieftain.\n"
+"\n"
+"Характеристики машины могут быть изменены без компенсации."
+
+msgid "GB142_FV249_Castle_long_special"
+msgstr ""
+"Танк с двухорудийной установкой с неплохим фронтальным бронированием. "
+"Отличается высоким бронепробитием и механикой охлаждения орудий для более "
+"точной стрельбы. Эта машина раскрывается в позициях, где нужно удерживать "
+"ключевые точки, оказывая поддержку союзникам и ведя уверенный огонь "
+"на подавление как в классическом темпе, так и по необходимости залпом."
+
+msgid "GB142_FV249_Castle_short"
+msgstr "Castle"
+
+msgid "GB142_FV249_Castle_short_special"
+msgstr "Двухорудийная установка, охлаждение орудий "
 
 msgid "GB143_Captain"
 msgstr "Captain"
@@ -2534,26 +2519,6 @@ msgstr "Conway"
 msgid "GB83_FV4005"
 msgstr "FV4005 Stage II"
 
-msgid "GB83_FV4005_ISP"
-msgstr "FV4005 II Выпрабавальны"
-
-msgid "GB83_FV4005_ISP_descr"
-msgstr ""
-"Праект цяжкай супрацьтанкавай САУ, якую распрацоўвалі ў першай палове "
-"1950-х гг., выкарыстоўваючы вузлы і агрэгаты Centurion Mk3. Першапачаткова "
-"САУ выпрабоўвалася з механізаванай боеўкладкай. Але з таго, што боеўкладка "
-"не адпавядала габарытам вежы, ад яе вырашылі адмовіцца. Быў выраблены адзін "
-"узор, які праходзіў выпрабаванні, аднак серыйна машына не выпускалася."
-
-msgid "GB83_FV4005_ISP_long_special"
-msgstr "?empty?"
-
-msgid "GB83_FV4005_ISP_short"
-msgstr "FV4005 (В)"
-
-msgid "GB83_FV4005_ISP_short_special"
-msgstr "?empty?"
-
 msgid "GB83_FV4005_descr"
 msgstr ""
 "Праект цяжкай супрацьтанкавай САУ, якую распрацоўвалі ў першай палове "
@@ -2625,25 +2590,6 @@ msgstr "Cent. AX 7x7"
 msgid "GB86_Centurion_Action_X_7x7_short_special"
 msgstr "?empty?"
 
-msgid "GB86_Centurion_Action_X_ISP"
-msgstr "Cent. AX Выпрабавальны"
-
-msgid "GB86_Centurion_Action_X_ISP_descr"
-msgstr ""
-"Вежу Action X меркавалася выкарыстаць на танках Centurion пазнейшых "
-"мадыфікацый. Адзін прататып вежы быў усталяваны на шасі танка Centurion Mark"
-" 7, яшчэ адзін выкарыстоўваўся для балістычных выпрабаванняў. Танкі з вежай "
-"Action X серыйна не выпускаліся, на ўзбраенні не былі."
-
-msgid "GB86_Centurion_Action_X_ISP_long_special"
-msgstr "?empty?"
-
-msgid "GB86_Centurion_Action_X_ISP_short"
-msgstr "Cent. AX (В)"
-
-msgid "GB86_Centurion_Action_X_ISP_short_special"
-msgstr "?empty?"
-
 msgid "GB86_Centurion_Action_X_descr"
 msgstr ""
 "Вежу Action X меркавалася выкарыстаць на танках Centurion пазнейшых "
@@ -2702,25 +2648,6 @@ msgstr "Добрыя пашкоджанні за хвіліну, моцная �
 
 msgid "GB91_Super_Conqueror"
 msgstr "Super Conqueror"
-
-msgid "GB91_Super_Conqueror_ISP"
-msgstr "S. Conq. Выпрабавальны"
-
-msgid "GB91_Super_Conqueror_ISP_descr"
-msgstr ""
-"Варыянт танка Conqueror з дадатковым браніраваннем быў выраблены ў першай "
-"палове 50-х гг. для выпрабаванняў баявых частак супрацьтанкавых кіраваных "
-"ракет «Dart» і «Malkara». На іх выпрабаваннях гэтая машына выконвала ролю "
-"цяжкага танка, які мог бы з'явіцца ў будучыні. Серыйна не вырабляўся."
-
-msgid "GB91_Super_Conqueror_ISP_long_special"
-msgstr "?empty?"
-
-msgid "GB91_Super_Conqueror_ISP_short"
-msgstr "S. Conq. (В)"
-
-msgid "GB91_Super_Conqueror_ISP_short_special"
-msgstr "?empty?"
 
 msgid "GB91_Super_Conqueror_descr"
 msgstr ""
@@ -2974,14 +2901,6 @@ msgstr "L50"
 msgid "LandRover_Meteorite_V8"
 msgstr "Land-Rover Meteorite V8"
 
-msgid "LandRover_Meteorite_V8_ISP"
-msgstr "Land-Rover Meteorite V8"
-
-msgid "LandRover_Meteorite_V8_ISP_short"
-msgstr ""
-"Land-Rover\n"
-"Meteorite V8"
-
 msgid "LandRover_Meteorite_V8_short"
 msgstr ""
 "Land-Rover\n"
@@ -3061,6 +2980,9 @@ msgstr "WS No. 19 Mk. III"
 
 msgid "N19Mk3_C"
 msgstr "WS No. 19 Mk. III"
+
+msgid "N19Mk3_GB142"
+msgstr "№ 19 Mk.3/31"
 
 msgid "N19_1"
 msgstr "N19"
@@ -3227,8 +3149,8 @@ msgstr "Rolls-Royce Griffon 180"
 msgid "Rolls_Royce_Griffon_A"
 msgstr "Rolls-Royce Griffon A"
 
-msgid "Rolls_Royce_Griffon_ISP"
-msgstr "Rolls-Royce Griffon"
+msgid "Rolls_Royce_Griffon_IIT_GB142"
+msgstr "Rolls-Royce Griffon IIT"
 
 msgid "Rolls_Royce_K60"
 msgstr "Rolls Royce K60"
@@ -3252,9 +3174,6 @@ msgid "Rolls_Royce_Meteor_P"
 msgstr "Rolls-Royce Meteor P"
 
 msgid "Rolls_Royce_Meteor_with_twin_turbo_supercharges"
-msgstr "Rolls-Royce Meteor TTSC"
-
-msgid "Rolls_Royce_Meteor_with_twin_turbo_supercharges_ISP"
 msgstr "Rolls-Royce Meteor TTSC"
 
 msgid "Rolls_Royce_Meteorite_202"
@@ -3443,9 +3362,6 @@ msgstr "Centurion Mk. II"
 msgid "Turret_1_GB120_Concept_No_5"
 msgstr "Concept No. 5"
 
-msgid "Turret_1_GB120_Concept_No_5_ISP"
-msgstr "Concept No. 5"
-
 msgid "Turret_1_GB121_GSOR_1010_FB"
 msgstr "GSOR 1010 FB"
 
@@ -3502,6 +3418,9 @@ msgstr "Champion"
 
 msgid "Turret_1_GB141_Celestial_2_51"
 msgstr "Celestial 2-51"
+
+msgid "Turret_1_GB142_FV249_Castle"
+msgstr "FV249 Castle"
 
 msgid "Turret_1_GB143_Captain"
 msgstr "Captain"
@@ -3650,9 +3569,6 @@ msgstr "FV4004 Conway"
 msgid "Turret_1_GB83_FV4005"
 msgstr "FV4005 Stage II"
 
-msgid "Turret_1_GB83_FV4005_ISP"
-msgstr "FV4005 Stage II"
-
 msgid "Turret_1_GB84_Chieftain_Mk6"
 msgstr "Chieftain Mk. 6"
 
@@ -3662,9 +3578,6 @@ msgstr "Cromwell Mk. IV"
 msgid "Turret_1_GB86_Centurion_Action_X"
 msgstr "Centurion Action X"
 
-msgid "Turret_1_GB86_Centurion_Action_X_ISP"
-msgstr "Centurion Action X"
-
 msgid "Turret_1_GB87_Chieftain_T95_turret"
 msgstr "Chieftain/T95"
 
@@ -3672,9 +3585,6 @@ msgid "Turret_1_GB88_T95_Chieftain_turret"
 msgstr "Vandal"
 
 msgid "Turret_1_GB91_Super_Conqueror"
-msgstr "Conqueror «Unorthodox» ABP"
-
-msgid "Turret_1_GB91_Super_Conqueror_ISP"
 msgstr "Conqueror «Unorthodox» ABP"
 
 msgid "Turret_1_GB92_FV217"
@@ -3894,9 +3804,6 @@ msgstr "APDS L28S"
 msgid "_105mm_APCR_L7_C"
 msgstr "APDS L28 C"
 
-msgid "_105mm_APCR_L7_ISP"
-msgstr "APDS L-28"
-
 msgid "_105mm_APCR_L7_proto"
 msgstr "APDS L-28P"
 
@@ -3919,9 +3826,6 @@ msgid "_105mm_Gun_L7"
 msgstr "105 mm Royal Ordnance L7A1"
 
 msgid "_105mm_Gun_L7_HEAT"
-msgstr "105 mm Gun L7A2"
-
-msgid "_105mm_Gun_L7_HEAT_ISP"
 msgstr "105 mm Gun L7A2"
 
 msgid "_105mm_Gun_L7_HEAT_SH"
@@ -3950,9 +3854,6 @@ msgstr "HEAT-T L-37"
 
 msgid "_105mm_HEAT_L7_C"
 msgstr "HEAT L51 C"
-
-msgid "_105mm_HEAT_L7_ISP"
-msgstr "US HEAT M456"
 
 msgid "_105mm_HEAT_L7_SH"
 msgstr "US AP M456"
@@ -3986,9 +3887,6 @@ msgstr "HESH L35S"
 
 msgid "_105mm_HE_L7_C"
 msgstr "HESH L35 C"
-
-msgid "_105mm_HE_L7_ISP"
-msgstr "HESH-T L-35"
 
 msgid "_105mm_HE_L7_Mk13"
 msgstr "HE L7 Mk. 13"
@@ -4053,22 +3951,10 @@ msgstr "110 mm MV AP"
 msgid "_110mm_MV_APDS"
 msgstr "110 mm MV APCR"
 
-msgid "_110mm_MV_APDS_ISP"
-msgstr "110 mm MV APCR"
-
-msgid "_110mm_MV_AP_ISP"
-msgstr "110 mm MV AP"
-
 msgid "_110mm_MV_Gun"
 msgstr "110 mm Medium Velocity Gun"
 
-msgid "_110mm_MV_Gun_ISP"
-msgstr "110 mm Medium Velocity Gun"
-
 msgid "_110mm_MV_HE"
-msgstr "110 mm MV HE"
-
-msgid "_110mm_MV_HE_ISP"
 msgstr "110 mm MV HE"
 
 msgid "_110mm_MV_N_AP"
@@ -4095,9 +3981,6 @@ msgstr "AP-T L1"
 msgid "_120mm_AP-T_L1A1V"
 msgstr "AP-T L1V"
 
-msgid "_120mm_AP-T_L1A1_ISP"
-msgstr "AP-T L1"
-
 msgid "_120mm_APDS_L15"
 msgstr "APDS L15"
 
@@ -4121,9 +4004,6 @@ msgstr "APDS L1"
 
 msgid "_120mm_APDS_L1A1V"
 msgstr "APDS L1V"
-
-msgid "_120mm_APDS_L1A1_ISP"
-msgstr "APDS L1"
 
 msgid "_120mm_AP_L15A11"
 msgstr "AP L15A11"
@@ -4152,9 +4032,6 @@ msgstr "120 mm Gun L1A1"
 msgid "_120mm_Gun_L1A1_A"
 msgstr "120 mm Gun L1A1 A"
 
-msgid "_120mm_Gun_L1A1_ISP"
-msgstr "120 mm Gun L1A1"
-
 msgid "_120mm_Gun_LV"
 msgstr "120 mm Low Velocity Gun"
 
@@ -4181,9 +4058,6 @@ msgstr "HESH-T L1"
 
 msgid "_120mm_HE_L1A1V"
 msgstr "HESH-T L1V"
-
-msgid "_120mm_HE_L1A1_ISP"
-msgstr "HESH-T L1"
 
 msgid "_120mm_QF_1_gun"
 msgstr "QF 120 mm Gonsalo"
@@ -4299,25 +4173,13 @@ msgstr "17-pdr Dual Gun"
 msgid "_183mm_AP_Mk1"
 msgstr "AP Mk. 1"
 
-msgid "_183mm_AP_Mk1_ISP"
-msgstr "AP Mk. 1"
-
 msgid "_183mm_AT_Gun"
-msgstr "183 mm L4"
-
-msgid "_183mm_AT_Gun_ISP"
 msgstr "183 mm L4"
 
 msgid "_183mm_HESH"
 msgstr "HESH Mk. 1"
 
-msgid "_183mm_HESH_ISP"
-msgstr "AP Mk. 2"
-
 msgid "_183mm_HE_Mk1"
-msgstr "HE Mk. 1"
-
-msgid "_183mm_HE_Mk1_ISP"
 msgstr "HE Mk. 1"
 
 msgid "_183mm_L4"
@@ -5008,6 +4870,18 @@ msgstr "HE T342K"
 
 msgid "_90mm_Kenerga_Mk8"
 msgstr "90 mm Kenerga Mk. 8"
+
+msgid "_94mm_APCBC_Mk1_GB142"
+msgstr "APCBC Mk. 1"
+
+msgid "_94mm_APDS_Mk3B_GB142"
+msgstr "APDS Mk. 3B"
+
+msgid "_94mm_HE_Mk1_GB142"
+msgstr "HE Mk. 1"
+
+msgid "_94mm_QF_Heavy_Mk2_GB142"
+msgstr "94 mm QF 3,7 inch Heavy Mk.2"
 
 msgid "_L40_APC_Mk2"
 msgstr "L40 APC Mk.II"

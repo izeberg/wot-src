@@ -2,16 +2,10 @@
 <root>
 	<tank>true</tank>
 	<visibilityBox>
-		<min>
-			-1.66213 -0.830838 -3.54668
-			<!--BW_String-->
-		</min>
-		<max>
-			1.80602 0.871237 3.25554
-			<!--BW_String-->
-		</max>
+		<min>-1.666678 -0.830838 -3.563424</min>
+		<max>1.806023 0.871237 3.255538</max>
 	</visibilityBox>
-	<nodefullVisual>vehicles/russian/R147_Object_701/crash/lod0/Hull</nodefullVisual>
 	<parent>vehicles/russian/R147_Object_701/crash/lod1/Hull</parent>
-	<extent>32</extent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/russian/R147_Object_701/crash/lod0/Hull</nodefullVisual>
 </root>

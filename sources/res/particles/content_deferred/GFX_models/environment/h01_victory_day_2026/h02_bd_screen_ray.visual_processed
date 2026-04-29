@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>screen_rays:screen_rays2Shape.vertices</vertices>
+			<stream>screen_rays:screen_rays2Shape.colour</stream>
+			<primitive>screen_rays:screen_rays2Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>screen_rays1:screen_rays1</identifier>
+					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						alphaFadeAmountFresnel
+						<Vector4>1.000000 0.000000 2.000000 0.010000</Vector4>
+					</property>
+					<property>
+						alphaFreshnelEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						destBlend
+						<Int>2</Int>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/Noise03.dds</Texture>
+					</property>
+					<property>
+						diffuseUVSpeedAlphaOffset
+						<Vector4>0.002000 -0.010000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						enableLighting
+						<Bool>true</Bool>
+					</property>
+					<property>
+						FreshnelColor
+						<Vector4>1.000000 0.501961 0.250980 1.000000</Vector4>
+					</property>
+					<property>
+						lightMultipliers
+						<Vector4>10.000000 0.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						lightMultipliersEnvDependent
+						<Vector4>1.100000 7.170000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						selfIllumLight
+						<Vector3>1.000000 1.000000 1.000000</Vector3>
+					</property>
+					<property>
+						TintlColor
+						<Vector4>0.152941 0.298039 0.564706 1.000000</Vector4>
+					</property>
+				</material>
+				<groupOrigin>-0.000000 0.000000 -0.230578</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-2.590016 -1.766322 -0.325332</min>
+		<max>2.590015 1.766322 -0.135824</max>
+	</boundingBox>
+	<geometrySize>5112</geometrySize>
+	<minUVDensity>0.089554</minUVDensity>
+</root>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>lod0</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>stg_21_wheels</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>stg_21_wheels_1_outside</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>stg_21_wheels_1_outside</node>
+		<geometry>
+			<vertices>stg_21_wheels_1_outside_Shape.vertices</vertices>
+			<primitive>stg_21_wheels_1_outside_Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/experimental/PBS_spawn_effect.fx</fx>
+					<materialKind>112</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						repaintContourThickness
+						<Float>0.090000</Float>
+					</property>
+					<property>
+						spawnContourColor
+						<Vector3>1.000000 0.254902 0.000000</Vector3>
+					</property>
+					<property>
+						spawnContourThickness
+						<Float>0.000000</Float>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h00_armory_yard/environment/Constructor/A176_OTAC_LK_7605/OTAC_LK_7605_interior_outside_AM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h00_armory_yard/environment/Constructor/A176_OTAC_LK_7605/OTAC_LK_7605_interior_outside_ANM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h00_armory_yard/environment/Constructor/A176_OTAC_LK_7605/OTAC_LK_7605_interior_outside_GMM.dds</Texture>
+					</property>
+					<property>
+						preSpawnTextureMap
+						<Texture>content/Hangars/h00_armory_yard/environment/Constructor/A176_OTAC_LK_7605/noise_alpha_mask.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-1.323741 0.514993 -1.867586</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-1.492878 0.104617 -2.277961</min>
+		<max>-1.154604 0.925368 -1.457211</max>
+	</boundingBox>
+	<geometrySize>36810</geometrySize>
+	<minUVDensity>0.005440</minUVDensity>
+</root>

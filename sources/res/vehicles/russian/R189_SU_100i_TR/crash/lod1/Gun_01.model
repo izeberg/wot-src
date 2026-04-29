@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/russian/R189_SU_100i_TR/crash/lod2/Gun_01</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.407174 -0.348522 -1.940755</min>
+		<max>0.700552 0.348110 4.495105</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/russian/R189_SU_100i_TR/crash/lod1/Gun_01</nodefullVisual>
+</root>

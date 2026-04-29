@@ -205,10 +205,6 @@
 					<materialKind>111</materialKind>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
 						g_tile0Tint
 						<Vector4>0.705000 0.653535 0.634500 1.000000</Vector4>
 					</property>
@@ -231,10 +227,6 @@
 					<property>
 						doubleSided
 						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
 					</property>
 					<property>
 						blendMask
@@ -316,10 +308,6 @@
 					</property>
 					<property>
 						g_enableTerrainBlending
-						<Bool>true</Bool>
-					</property>
-					<property>
-						alphaTestEnable
 						<Bool>true</Bool>
 					</property>
 					<property>

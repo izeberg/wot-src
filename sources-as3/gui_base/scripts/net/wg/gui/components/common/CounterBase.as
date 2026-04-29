@@ -27,6 +27,8 @@ package net.wg.gui.components.common
       
       private var _target:DisplayObject = null;
       
+      private var _targetParent:DisplayObjectContainer = null;
+      
       private var _offset:Point = null;
       
       private var _tfPadding:Number = 0;
@@ -52,19 +54,18 @@ package net.wg.gui.components.common
       
       override protected function onDispose() : void
       {
-         var _loc1_:DisplayObjectContainer = null;
          this._offset = null;
          if(this._target != null)
          {
             this._target.removeEventListener(Event.ADDED,this.onTargetAddedHandler);
             this._target.removeEventListener(Event.RESIZE,this.onTargetResizeHandler);
-            _loc1_ = this._target.parent;
-            if(_loc1_ != null && _loc1_.contains(this))
-            {
-               _loc1_.removeEventListener(Event.RESIZE,this.onTargetResizeHandler);
-               _loc1_.removeChild(this);
-            }
             this._target = null;
+            if(this._targetParent.contains(this))
+            {
+               this._targetParent.removeChild(this);
+            }
+            this._targetParent.removeEventListener(Event.RESIZE,this.onTargetResizeHandler);
+            this._targetParent = null;
          }
          super.onDispose();
       }
@@ -219,23 +220,23 @@ package net.wg.gui.components.common
       
       private function onTargetAddedHandler(param1:Event = null) : void
       {
-         var _loc3_:int = 0;
-         var _loc2_:DisplayObjectContainer = this._target.parent;
-         _loc2_.addEventListener(Event.RESIZE,this.onTargetResizeHandler,false,0,true);
+         var _loc2_:int = 0;
+         this._targetParent = this._target.parent;
+         this._targetParent.addEventListener(Event.RESIZE,this.onTargetResizeHandler,false,0,true);
          this._target.removeEventListener(Event.ADDED,this.onTargetAddedHandler);
          this._target.addEventListener(Event.RESIZE,this.onTargetResizeHandler);
          if(this._addToTop)
          {
-            _loc2_.addChild(this);
+            this._targetParent.addChild(this);
          }
          else
          {
-            _loc3_ = _loc2_.getChildIndex(this._target);
-            if(_loc3_ > 0)
+            _loc2_ = this._targetParent.getChildIndex(this._target);
+            if(_loc2_ > 0)
             {
-               _loc3_--;
+               _loc2_--;
             }
-            _loc2_.addChildAt(this,_loc3_);
+            this._targetParent.addChildAt(this,_loc2_);
          }
          invalidate(INVALIDATE_STATE,INVALIDATE_COUNT,INVALIDATE_VISIBILITY);
       }

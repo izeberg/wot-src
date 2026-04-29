@@ -1,36 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<duration>2.612500</duration>
+	<duration>0.000000</duration>
 	<sequenceObject>
 		<name>Root</name>
 		<type>model</type>
 		<resource/>
 	</sequenceObject>
 	<sequenceObject>
-		<name>Model 0</name>
+		<name>stg_26_PostProg</name>
 		<type>model</type>
-		<resource>content/Hangars/h00_armory_yard/environment/normal/lod0/hd_h00_AY25_0004_Decoration_02.model</resource>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/A176_OTAC_LK_7605/normal/lod0/stg_26_PostProg.model</resource>
 		<track>
 			<name>visibility</name>
 			<type>bool</type>
 			<frame>
 				<startTime>0.000000</startTime>
 				<value>true</value>
-			</frame>
-		</track>
-	</sequenceObject>
-	<sequenceObject>
-		<name>ay_ui_lights_on</name>
-		<type>sound</type>
-		<track>
-			<name>ay_ui_lights_on</name>
-			<type>sound</type>
-			<frame>
-				<startTime>0.000000</startTime>
-				<duration>2.612500</duration>
-				<sequenceSound>ay_ui_lights_on</sequenceSound>
-				<type>one_shot</type>
-				<fade>0.000000</fade>
 			</frame>
 		</track>
 	</sequenceObject>

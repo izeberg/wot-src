@@ -1,4 +1,4 @@
-import json, hashlib, logging
+import copy, json, hashlib, logging
 from helpers import dependency
 from account_helpers.settings_core import ISettingsCore, settings_constants
 from account_helpers import AccountSettings
@@ -98,7 +98,8 @@ def _addDeferredLogPlayerSettingsAction(action):
 
 
 def _resetDeferredLogPlayerSettingsActions():
-    defaultActions = AccountSettings.getSettingsDefault(DEFERRED_LOG_PLAYER_SETTINGS_ACTIONS)
+    defaultActions = copy.deepcopy(AccountSettings.getSettingsDefault(DEFERRED_LOG_PLAYER_SETTINGS_ACTIONS))
+    defaultActions.clear()
     AccountSettings.setSettings(DEFERRED_LOG_PLAYER_SETTINGS_ACTIONS, defaultActions)
 
 
@@ -111,7 +112,7 @@ def _logPlayerSettings(action):
 
 @noexcept
 @_ifSettingsLoggingEnabled()
-def logPlayerSettingsOnDisconnect():
+def logDeferredPlayerSettings():
     actions = AccountSettings.getSettings(DEFERRED_LOG_PLAYER_SETTINGS_ACTIONS)
     if not actions:
         return

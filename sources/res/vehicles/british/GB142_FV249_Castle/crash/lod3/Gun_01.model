@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB142_FV249_Castle/crash/lod3/Gun_01</nodefullVisual>
+	<parent>vehicles/british/GB142_FV249_Castle/crash/lod4/Gun_01</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-0.853987 -0.294326 -1.564229</min>
+		<max>0.848748 0.433051 4.316118</max>
+	</visibilityBox>
+</root>

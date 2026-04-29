@@ -32,6 +32,8 @@ package net.wg.data.constants.generated
       public static const BR_PANELS:String = "battleRoyalePanels";
       
       public static const BATTLE_MODIFIERS:String = "battleModifiers";
+      
+      public static const HB_PANELS:String = "historicalBattlesPanels";
        
       
       public function HANGAR_CONSTS()

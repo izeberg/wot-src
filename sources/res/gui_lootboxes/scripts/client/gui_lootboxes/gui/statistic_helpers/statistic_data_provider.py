@@ -1,14 +1,24 @@
 import weakref
 from collections import defaultdict
 import typing, Event
+from constants import VERY_BIG_TIME
 from debug_utils import LOG_WARNING
 from helpers import dependency
+from helpers.dependency import replace_none_kwargs
 from helpers.time_utils import getServerUTCTime
 from lootboxes_common import mergeDiffStat
 from skeletons.gui.lobby_context import ILobbyContext
+from skeletons.gui.shared import IItemsCache
 from th_async import th_async, th_await, await_callback
 if typing.TYPE_CHECKING:
     from typing import Dict
+
+@replace_none_kwargs(itemsCache=IItemsCache)
+def makeDefaultData(lbId, itemsCache=None):
+    lootBox = itemsCache.items.tokens.getLootBoxByID(int(lbId))
+    expires = lootBox.getAutoOpenTime() or VERY_BIG_TIME
+    return {'expires': expires, 'ver': 0, 'stat': {}}
+
 
 class LootBoxStatFetcher(object):
 
@@ -36,7 +46,7 @@ class StatisticDataCache(object):
     __lobbyContext = dependency.descriptor(ILobbyContext)
 
     def __init__(self):
-        self.__cacheStat = defaultdict(lambda : {'expires': 0, 'ver': -1, 'stat': {}})
+        self.__cacheStat = defaultdict(lambda : {'expires': 0, 'ver': 0, 'stat': {}})
         self.__isFirstSync = True
         self.__em = Event.EventManager()
         self.onBaseStatCollect = Event.Event(self.__em)
@@ -77,6 +87,8 @@ class StatisticDataCache(object):
             return self.__cacheStat[boxID]['ver'] == startVer
 
     def applyOpenResult(self, lootboxID, result, count):
+        if lootboxID not in self.__cacheStat:
+            self.__cacheStat[lootboxID] = makeDefaultData(lootboxID)
         lootboxStat = self.__cacheStat[lootboxID]
         for diff in result:
             mergeDiffStat(lootboxStat['stat'], diff)
@@ -117,7 +129,7 @@ class StatisticDataCache(object):
 
     def registerProvider(self, key, provider):
         if key not in self._providers:
-            self._providers['key'] = provider(weakref.proxy(self))
+            self._providers[key] = provider(weakref.proxy(self))
         else:
             LOG_WARNING(('Provider: {} is already registered').format(key))
 

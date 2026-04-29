@@ -219,10 +219,6 @@
 						<Texture>content/Environment/hd_env_UNI_414_Pole/hd_env_UNI_414_Pole_ANM.dds</Texture>
 					</property>
 					<property>
-						ditherTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
 						g_enableTerrainBlending
 						<Bool>false</Bool>
 					</property>

@@ -219,9 +219,13 @@ package
       
       public static const CHAT_SHORTCUTS_RELOADING_CASSETTE:String = "#ingame_gui:chat_shortcuts/reloading_cassette";
       
+      public static const CHAT_SHORTCUTS_RELOADING_CASSETTE_AUTO_SHOOT:String = "#ingame_gui:chat_shortcuts/reloading_cassette_auto_shoot";
+      
       public static const CHAT_SHORTCUTS_RELOADING_READY:String = "#ingame_gui:chat_shortcuts/reloading_ready";
       
       public static const CHAT_SHORTCUTS_RELOADING_READY_CASSETTE:String = "#ingame_gui:chat_shortcuts/reloading_ready_cassette";
+      
+      public static const CHAT_SHORTCUTS_RELOADING_READY_CASSETTE_AUTO_SHOOT:String = "#ingame_gui:chat_shortcuts/reloading_ready_cassette_auto_shoot";
       
       public static const CHAT_SHORTCUTS_RELOADING_UNAVAILABLE:String = "#ingame_gui:chat_shortcuts/reloading_unavailable";
       
@@ -236,6 +240,10 @@ package
       public static const CHAT_SHORTCUTS_SPG_AIM_AREA_RELOADING:String = "#ingame_gui:chat_shortcuts/spg_aim_area_reloading";
       
       public static const CHAT_SHORTCUTS_SPG_AIM_AREA_EMPTY_GRIDINFO:String = "#ingame_gui:chat_shortcuts/spg_aim_area_empty_gridInfo";
+      
+      public static const CHAT_SHORTCUTS_HB_ABILITY_ARTILLERY_ON_YOURSELF:String = "#ingame_gui:chat_shortcuts/hb_ability/artillery_on_yourself";
+      
+      public static const CHAT_SHORTCUTS_HB_ABILITY_LAST_STAND:String = "#ingame_gui:chat_shortcuts/hb_ability/last_stand";
       
       public static const CHAT_SHORTCUTS_ATTACK_ENEMY:String = "#ingame_gui:chat_shortcuts/attack_enemy";
       
@@ -347,11 +355,15 @@ package
       
       public static const CHAT_EXAMPLE_RELOADING_CASSETTE:String = "#ingame_gui:chat_example/reloading_cassette";
       
+      public static const CHAT_EXAMPLE_RELOADING_CASSETTE_AUTO_SHOOT:String = "#ingame_gui:chat_example/reloading_cassette_auto_shoot";
+      
       public static const CHAT_EXAMPLE_RELOADING_READY:String = "#ingame_gui:chat_example/reloading_ready";
       
       public static const CHAT_EXAMPLE_TURN_BACK:String = "#ingame_gui:chat_example/turn_back";
       
       public static const CHAT_EXAMPLE_RELOADING_READY_CASSETTE:String = "#ingame_gui:chat_example/reloading_ready_cassette";
+      
+      public static const CHAT_EXAMPLE_RELOADING_READY_CASSETTE_AUTO_SHOOT:String = "#ingame_gui:chat_example/reloading_ready_cassette_auto_shoot";
       
       public static const CHAT_EXAMPLE_RELOADING_UNAVAILABLE:String = "#ingame_gui:chat_example/reloading_unavailable";
       
@@ -662,6 +674,8 @@ package
       public static const POSTMORTEM_TIPS_EXITHANGAR_LABEL:String = "#ingame_gui:postmortem/tips/exitHangar/label";
       
       public static const POSTMORTEM_TIPS_EXITHANGAR_TEXT:String = "#ingame_gui:postmortem/tips/exitHangar/text";
+      
+      public static const POSTMORTEM_TIPS_EXITHANGAR_TEXT_HB:String = "#ingame_gui:postmortem/tips/exitHangar/text_hb";
       
       public static const PLAYERS_PANEL_STATE_NONE_HEADER:String = "#ingame_gui:players_panel/state/none/header";
       
@@ -1340,6 +1354,8 @@ package
       public static const EFFICIENCYRIBBONS_DEATHZONE:String = "#ingame_gui:efficiencyRibbons/deathZone";
       
       public static const EFFICIENCYRIBBONS_STATICDEATHZONE:String = "#ingame_gui:efficiencyRibbons/staticDeathZone";
+      
+      public static const EFFICIENCYRIBBONS_HBDEATHZONE:String = "#ingame_gui:efficiencyRibbons/HBDeathZone";
       
       public static const EFFICIENCYRIBBONS_CANNONDMG:String = "#ingame_gui:efficiencyRibbons/CannonDmg";
       

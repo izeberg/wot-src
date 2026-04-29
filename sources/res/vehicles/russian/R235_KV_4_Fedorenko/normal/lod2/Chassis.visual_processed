@@ -1179,10 +1179,6 @@
 						</Float>
 					</property>
 					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
 						g_maskBias
 						<Float>
 							0.18
@@ -1264,10 +1260,6 @@
 							0.35
 							<!--BW_String-->
 						</Float>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
 					</property>
 					<property>
 						g_maskBias

@@ -993,17 +993,30 @@
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
 		<node>V_BlendBone</node>
+		<node>Track_VT_L0_BlendBone</node>
+		<node>Track_VD_L0_BlendBone</node>
+		<node>Track_L0_BlendBone</node>
+		<node>Track_VT_L3_BlendBone</node>
+		<node>Track_L6_BlendBone</node>
+		<node>Track_L5_BlendBone</node>
 		<geometry>
-			<vertices>track_L_Shape.vertices</vertices>
-			<stream>track_L_Shape.uv2</stream>
-			<primitive>track_L_Shape.indices</primitive>
+			<vertices>chassis_L_Shape.vertices</vertices>
+			<primitive>chassis_L_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_chassis_01_skinned</identifier>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>0</materialKind>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<materialKind>0</materialKind>
+					<identifier>tank_proxy_skinned</identifier>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>vehicles/russian/R147_Object_701/Object_701_proxy_AM.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
 					<property>
 						metallicGlossMap
 						<Texture>vehicles/russian/R147_Object_701/Object_701_proxy_GMM.dds</Texture>
@@ -1013,16 +1026,8 @@
 						<Texture>vehicles/russian/R147_Object_701/Object_701_proxy_ANM.dds</Texture>
 					</property>
 					<property>
-						diffuseMap
-						<Texture>vehicles/russian/R147_Object_701/Object_701_proxy_AM.dds</Texture>
-					</property>
-					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/russian/R147_Object_701/Object_701_proxy_AO.dds</Texture>
-					</property>
-					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>-1.245517 0.523710 0.013994</groupOrigin>
@@ -1032,17 +1037,32 @@
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
 		<node>V_BlendBone</node>
+		<node>Track_VT_R0_BlendBone</node>
+		<node>Track_VD_R0_BlendBone</node>
+		<node>Track_R0_BlendBone</node>
+		<node>Track_R1_BlendBone</node>
+		<node>Track_VT_R3_BlendBone</node>
+		<node>Track_R6_BlendBone</node>
+		<node>Track_R5_BlendBone</node>
+		<node>Track_VD_R1_BlendBone</node>
 		<geometry>
-			<vertices>track_R_Shape.vertices</vertices>
-			<stream>track_R_Shape.uv2</stream>
-			<primitive>track_R_Shape.indices</primitive>
+			<vertices>chassis_R_Shape.vertices</vertices>
+			<primitive>chassis_R_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_chassis_01_skinned</identifier>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>0</materialKind>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<materialKind>0</materialKind>
+					<identifier>tank_proxy_skinned</identifier>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>vehicles/russian/R147_Object_701/Object_701_proxy_AM.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
 					<property>
 						metallicGlossMap
 						<Texture>vehicles/russian/R147_Object_701/Object_701_proxy_GMM.dds</Texture>
@@ -1052,16 +1072,8 @@
 						<Texture>vehicles/russian/R147_Object_701/Object_701_proxy_ANM.dds</Texture>
 					</property>
 					<property>
-						diffuseMap
-						<Texture>vehicles/russian/R147_Object_701/Object_701_proxy_AM.dds</Texture>
-					</property>
-					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/russian/R147_Object_701/Object_701_proxy_AO.dds</Texture>
-					</property>
-					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>1.245517 0.523710 0.013994</groupOrigin>
@@ -1073,6 +1085,6 @@
 		<min>-1.621030 0.007847 -3.300072</min>
 		<max>1.621030 1.039573 3.272085</max>
 	</boundingBox>
-	<geometrySize>8628</geometrySize>
-	<minUVDensity>0.001761</minUVDensity>
+	<geometrySize>7268</geometrySize>
+	<minUVDensity>0.001782</minUVDensity>
 </root>

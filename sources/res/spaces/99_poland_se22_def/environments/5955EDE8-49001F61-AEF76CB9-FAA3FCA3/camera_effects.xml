@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<effectMap>spaces/99_poland_SE22_def/environments/5955EDE8-49001F61-AEF76CB9-FAA3FCA3/camera_effects_map.dds</effectMap>
+	<effect>
+		<id>1</id>
+		<name>particles/content_deferred/PFX/Environment/CameraEffects/se22_99_poland_blizzard.vfx</name>
+		<alignToTerrain>false</alignToTerrain>
+		<useCameraTarget>true</useCameraTarget>
+	</effect>
+	<effect>
+		<id>2</id>
+		<name>particles/content_deferred/PFX/Environment/CameraEffects/winter_drift_floor_Easy.vfx</name>
+		<alignToTerrain>true</alignToTerrain>
+		<useCameraTarget>true</useCameraTarget>
+	</effect>
+</root>

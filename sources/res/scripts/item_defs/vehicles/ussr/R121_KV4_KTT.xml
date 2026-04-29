@@ -88,7 +88,7 @@
 			<battle/>
 		</fakeTurrets>
 		<armor>
-			<armor_1>200</armor_1>
+			<armor_1>250</armor_1>
 			<armor_2>175</armor_2>
 			<armor_3>125</armor_3>
 			<armor_4>125</armor_4>
@@ -104,6 +104,7 @@
 			<armor_14>125</armor_14>
 			<armor_15>230</armor_15>
 			<armor_16>145</armor_16>
+			<armor_17>200</armor_17>
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>68535</weight>
@@ -4012,10 +4013,10 @@
 			<price>100</price>
 			<notInShop>true</notInShop>
 			<armor>
-				<armor_1>250</armor_1>
-				<armor_2>125</armor_2>
-				<armor_3>125</armor_3>
-				<armor_4>125</armor_4>
+				<armor_1>280</armor_1>
+				<armor_2>150</armor_2>
+				<armor_3>150</armor_3>
+				<armor_4>150</armor_4>
 				<armor_5>40</armor_5>
 				<armor_6>40</armor_6>
 				<armor_7>125</armor_7>
@@ -4049,7 +4050,7 @@
 					<maxAmmo>90</maxAmmo>
 					<armor>
 						<armor_1>
-							250
+							280
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_1>
 						<armor_3>
@@ -4080,7 +4081,7 @@
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						8.4
+						7.9
 						<!--BW_String-->
 					</reloadTime>
 					<shotDispersionFactors>

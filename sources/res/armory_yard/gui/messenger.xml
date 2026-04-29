@@ -50,17 +50,17 @@
 		<ArmoryYardRerollTransactionForGoldSysMessage>
 			<type>yellow</type>
 			<icon>GoldIcon</icon>
-			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(header)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(paymentText)s&lt;/font&gt;</message>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(header)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(paymentText)s&lt;/font&gt;&lt;font color=&apos;#FFC363&apos;&gt;%(price)s&lt;/font&gt;</message>
 		</ArmoryYardRerollTransactionForGoldSysMessage>
 		<ArmoryYardRerollTransactionForCrystalSysMessage>
 			<type>yellow</type>
 			<icon>CrystalIcon</icon>
-			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(header)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(paymentText)s&lt;/font&gt;</message>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(header)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(paymentText)s&lt;/font&gt;&lt;font color=&apos;#C9C9B6&apos;&gt;%(price)s&lt;/font&gt;</message>
 		</ArmoryYardRerollTransactionForCrystalSysMessage>
 		<ArmoryYardRerollTransactionForFreeRerollSysMessage>
 			<type>yellow</type>
 			<icon>ArmoryCoinIcon</icon>
-			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(header)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(paymentText)s&lt;/font&gt;</message>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(header)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(paymentText)s&lt;/font&gt;&lt;font color=&apos;#C9C9B6&apos;&gt;%(price)s&lt;/font&gt;</message>
 		</ArmoryYardRerollTransactionForFreeRerollSysMessage>
 		<ArmoryYardRerollNotCompletedSysMessage>
 			<type>grey</type>

@@ -92,10 +92,6 @@
 						<Texture>content/Environment/00_Tiles/dds/Rock_Pumice_01_GBMT.dds</Texture>
 					</property>
 					<property>
-						g_ditherCoeff
-						<Float>0.000000</Float>
-					</property>
-					<property>
 						g_tileUVScale
 						<Vector4>20.000000 20.000000 1.000000 1.000000</Vector4>
 					</property>

@@ -78,6 +78,8 @@ package net.wg.data.constants.generated
       public static const RANKED_POINTS:String = "rankedPoints";
       
       public static const BONUS_BATTLE:String = "bonusBattle";
+      
+      public static const DEMOUNT_KIT:String = "demountKit";
        
       
       public function ICON_TEXT_FRAMES()

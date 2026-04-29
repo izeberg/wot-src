@@ -12,7 +12,7 @@ class BaseResourceModel(object):
 
 class LocalImageModel(BaseResourceModel):
     __slots__ = ('imageRelativePath', 'vfx', 'localizationText', 'descriptionText',
-                 'transition')
+                 'transition', 'additionalImage', 'sound')
 
     def __init__(self, imageRelativePath, vfx=None, localizationText=None, descriptionText=None, minShowTimeSec=0, transition=0):
         super(LocalImageModel, self).__init__(minShowTimeSec=minShowTimeSec)
@@ -21,6 +21,9 @@ class LocalImageModel(BaseResourceModel):
         self.localizationText = localizationText
         self.descriptionText = descriptionText
         self.transition = transition
+        self.additionalImage = None
+        self.sound = None
+        return
 
     def __repr__(self):
         string = '<{}(image={}, vfx={}, localizationExist={}, descriptionExist={}, minShowTimeSec={}, transition={})>'

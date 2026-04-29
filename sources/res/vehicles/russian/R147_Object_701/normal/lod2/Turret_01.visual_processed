@@ -31,102 +31,56 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<primitive>indices</primitive>
+			<vertices>turret_01_Shape.vertices</vertices>
+			<primitive>turret_01_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_turret_01</identifier>
+					<identifier>tank_mat</identifier>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>0</collisionFlags>
 					<property>
 						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						selfIllumination
-						<Float>0.000000</Float>
-					</property>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>0</materialKind>
-					<fx>shaders/std_effects/PBS_tank.fx</fx>
-					<property>
-						metallicGlossMap
-						<Texture>vehicles/russian/R147_Object_701/Object_701_turret_01_GMM.dds</Texture>
-					</property>
-					<property>
-						normalMap
-						<Texture>vehicles/russian/R147_Object_701/Object_701_turret_01_ANM.dds</Texture>
-					</property>
-					<property>
-						diffuseMap
-						<Texture>vehicles/russian/R147_Object_701/Object_701_turret_01_AM.dds</Texture>
-					</property>
-					<property>
-						excludeMaskAndAOMap
-						<Texture>vehicles/russian/R147_Object_701/Object_701_turret_01_AO.dds</Texture>
+						<Int>64</Int>
 					</property>
 					<property>
 						colorIdMap
 						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
-					</property>
-				</material>
-				<groupOrigin>-0.002332 0.727844 -0.155729</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
-				1
-				<material>
-					<identifier>tank_hull_01_2</identifier>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
 						diffuseMap
-						<Texture>vehicles/russian/R147_Object_701/Object_701_hull_01_2_AM.dds</Texture>
-					</property>
-					<property>
-						normalMap
-						<Texture>vehicles/russian/R147_Object_701/Object_701_hull_01_2_ANM.dds</Texture>
-					</property>
-					<property>
-						metallicGlossMap
-						<Texture>vehicles/russian/R147_Object_701/Object_701_hull_01_2_GMM.dds</Texture>
+						<Texture>vehicles/russian/R147_Object_701/Object_701_tank_AM.dds</Texture>
 					</property>
 					<property>
 						excludeMaskAndAOMap
-						<Texture>vehicles/russian/R147_Object_701/Object_701_hull_01_2_AO.dds</Texture>
+						<Texture>vehicles/russian/R147_Object_701/Object_701_tank_AO.dds</Texture>
 					</property>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>0</materialKind>
-					<fx>shaders/std_effects/PBS_tank.fx</fx>
 					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+						g_detailUVTiling
+						<Vector4>14.028000 7.014000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/russian/R147_Object_701/Object_701_tank_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/russian/R147_Object_701/Object_701_tank_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.113337 0.759868 -0.616258</groupOrigin>
+				<groupOrigin>0.296097 0.747444 -0.263342</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
 		<min>-1.197353 0.009351 -2.081260</min>
-		<max>1.384324 1.446337 1.554577</max>
+		<max>1.789547 1.485536 1.554577</max>
 	</boundingBox>
-	<geometrySize>106566</geometrySize>
-	<minUVDensity>0.000964</minUVDensity>
+	<geometrySize>117554</geometrySize>
+	<minUVDensity>0.001121</minUVDensity>
 </root>

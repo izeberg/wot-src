@@ -33,6 +33,8 @@ package net.wg.data.constants.generated
       
       public static const STORAGE_CREW_BOOKS_TAB:String = "CrewBooksTabViewUI";
       
+      public static const STORAGE_RESTORE_DEVICES_CONTENT:String = "StorageRestoreDevicesContentUI";
+      
       public static const IN_HANGAR_VIEW:String = "StorageCategoryInHangarViewUI";
       
       public static const IN_HANGAR_ALL_VEHICLES_TAB:String = "AllVehiclesTabViewUI";

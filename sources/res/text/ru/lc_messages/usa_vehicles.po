@@ -1592,18 +1592,23 @@ msgstr "OTAC LK-7605"
 
 msgid "A176_OTAC_LK_7605_descr"
 msgstr ""
-".\n"
+"Проект «LK-7605 Future Medium Tank with 6-inch Pentomic Gun» разрабатывался в OTAC (Ordnance Tank Automotive Command) в США в конце 1950-х годов в качестве подвижного средства поддержки частей в условиях атомной войны и прокладки дороги механизированной пехоте на бронетранспортёрах. Проект отличался от T95 в своей базе по силовой установке, вооружению и ряду других параметров. Главным калибром должна была стать 6-дюймовая пушка. В некоторых вариантах проекта пушку рассматривали и как пусковую установку, но управляемые ракеты для неё ещё предстояло разработать. Одной из причин выбора крупного калибра было желание военных использовать снаряды с ядерной боевой частью, однако их также предстояло создать в дальнейшем. В итоге в начале 1960-х стратегия применения сухопутных войск Армии США и требования военных к новой бронетехнике вновь изменились, а LK-7605, датированный 1958 годом, оказался не востребован и затерялся в массе других эскизных наработок OTAC.\n"
 "\n"
 "Характеристики машины могут быть изменены без компенсации."
 
 msgid "A176_OTAC_LK_7605_long_special"
-msgstr "?empty?"
+msgstr ""
+"Динамичный средний танк с хорошим бронированием башни, отличными УВН "
+"и мощным 152-мм орудием с высоким разовым уроном. Дополнительное "
+"достоинство — высокая максимальная скорость. За огневую мощь приходится "
+"расплачиваться скромным бронированием и наличием уязвимых зон, но железный "
+"152-мм аргумент, как правило, перекрывает все минусы."
 
 msgid "A176_OTAC_LK_7605_short"
 msgstr "LK-7605"
 
 msgid "A176_OTAC_LK_7605_short_special"
-msgstr "?empty?"
+msgstr "Комфортные УВН, мощное орудие"
 
 msgid "A179_MBT_59"
 msgstr "MBT-59"
@@ -1627,6 +1632,28 @@ msgstr "MBT-59"
 
 msgid "A179_MBT_59_short_special"
 msgstr "Механика охлаждения орудия, высокий разовый урон"
+
+msgid "A182_ALRS_M6"
+msgstr "ALRS M6"
+
+msgid "A182_ALRS_M6_descr"
+msgstr ""
+"В марте 1952 года на конференции Question Mark 1 был представлен эскизный проект среднего танка инновационной конструкции с низкопрофильной необитаемой качающейся башней. Танк был компактным и относительно лёгким. Приводил его в движение малогабаритный оппозитный мотор с воздушным охлаждением AX-1100 и автоматическая трансмиссия XT-500 в носовой части корпуса. Заряжание было автоматизировано с использованием кольцевой боеукладки. Для прицеливания и наблюдения использовались два телевизионных и один оптический прицел на крыше башни. В качестве основного вооружения предлагались варианты вооружения в башне М6 со 105-мм пушкой Т140, а также 90-мм пушкой Т139. Посадка экипажа в танк происходила через двери в корме корпуса. В остальном конструкция использовала уже проверенные узлы и агрегаты. Из-за технической сложности реализации проект остался на бумаге.\n"
+"\n"
+"Характеристики машины могут быть изменены без компенсации."
+
+msgid "A182_ALRS_M6_long_special"
+msgstr ""
+"Танк выделяется исключительным углом склонения орудия -15 градусов, что "
+"в совокупности с магазином на 4 снаряда и хорошей мобильностью позволит "
+"занять выгодную позицию и нанести ощутимый урон противнику, особо "
+"не подставляясь под ответный огонь."
+
+msgid "A182_ALRS_M6_short"
+msgstr "ALRS M6"
+
+msgid "A182_ALRS_M6_short_special"
+msgstr "Отличные УВН, магазин на 4 снаряда"
 
 msgid "A21_T14_long_special"
 msgstr ""
@@ -1841,6 +1868,9 @@ msgstr "AN/VRC-7A"
 msgid "AN_GRC_3"
 msgstr "AN/GRC-3"
 
+msgid "AN_GRC_3_A182"
+msgstr "AN/GRC-3"
+
 msgid "AN_GRC_3_T"
 msgstr "AN/GRC-3"
 
@@ -1892,9 +1922,6 @@ msgstr "AN/VRC-24"
 msgid "AN_VRC-3"
 msgstr "AN/VRC-3"
 
-msgid "AN_VRC-3_ISP"
-msgstr "AN/VRC-3"
-
 msgid "AN_VRC-3_MBT_T"
 msgstr "AN/VRC-3"
 
@@ -1913,14 +1940,6 @@ msgstr "AN/VRC-3"
 msgid "AOI-1490"
 msgstr "Continental AOI-1490"
 
-msgid "AOI-1490_ISP"
-msgstr "Continental AOI-1490"
-
-msgid "AOI-1490_ISP_short"
-msgstr ""
-"Continental\n"
-"AOI-1490"
-
 msgid "AOI-1490_short"
 msgstr ""
 "Continental\n"
@@ -1936,6 +1955,9 @@ msgid "AVI_1790_8_short"
 msgstr ""
 "Continental\n"
 "AVI-1790-8"
+
+msgid "AX_1100"
+msgstr "AX-1100"
 
 msgid "AX_1170"
 msgstr "AX-1170"
@@ -2215,6 +2237,9 @@ msgstr "LK-7605"
 msgid "Chassis_A179_MBT_59"
 msgstr "MBT-59"
 
+msgid "Chassis_A182_ALRS_M6"
+msgstr "ALRS"
+
 msgid "Chassis_A27_T82"
 msgstr "T82 Pilot No. 1"
 
@@ -2332,13 +2357,7 @@ msgstr "T110E27"
 msgid "Chassis_T110E3"
 msgstr "T110E3"
 
-msgid "Chassis_T110E3_ISP"
-msgstr "T110E3"
-
 msgid "Chassis_T110E4"
-msgstr "T110E4"
-
-msgid "Chassis_T110E4_ISP"
 msgstr "T110E4"
 
 msgid "Chassis_T18"
@@ -2414,9 +2433,6 @@ msgid "Chassis_T54E1_2"
 msgstr "T54E1M2"
 
 msgid "Chassis_T57_58"
-msgstr "T97"
-
-msgid "Chassis_T57_58_ISP"
 msgstr "T97"
 
 msgid "Chassis_T57_58_T"
@@ -2880,14 +2896,6 @@ msgstr ""
 
 msgid "Continental_AV_1790_5C"
 msgstr "Continental AV-1790-5C"
-
-msgid "Continental_AV_1790_5C_ISP"
-msgstr "Continental AV-1790-5C"
-
-msgid "Continental_AV_1790_5C_ISP_short"
-msgstr ""
-"Continental\n"
-"AV-1790-5C"
 
 msgid "Continental_AV_1790_5C_T"
 msgstr "Continental AV-1790-5C"
@@ -3775,28 +3783,6 @@ msgstr "T110E5"
 msgid "T110E3"
 msgstr "T110E3"
 
-msgid "T110E3_ISP"
-msgstr "T110E3 Испытательный"
-
-msgid "T110E3_ISP_descr"
-msgstr ""
-"В 1954 году в Детройте была проведена конференция по вопросу будущих тяжёлых"
-" танков. На ней было представлено несколько аванпроектов новых машин. На "
-"базе одного из проектов (TS-31) компания Chrysler Corporation предложила "
-"разработать новый тяжёлый танк. Основным условием проекта было создать "
-"машину, которая могла бы свободно пройти по Бернскому национальному туннелю."
-" После проработки нескольких вариантов конструкции работы над танком были "
-"прекращены."
-
-msgid "T110E3_ISP_long_special"
-msgstr "?empty?"
-
-msgid "T110E3_ISP_short"
-msgstr "T110E3 (И)"
-
-msgid "T110E3_ISP_short_special"
-msgstr "?empty?"
-
 msgid "T110E3_descr"
 msgstr ""
 "В 1954 году в Детройте была проведена конференция по вопросу будущих тяжёлых"
@@ -3833,28 +3819,6 @@ msgid "T110E4_7x7_short"
 msgstr "T110E4 7x7"
 
 msgid "T110E4_7x7_short_special"
-msgstr "?empty?"
-
-msgid "T110E4_ISP"
-msgstr "T110E4 Испытательный"
-
-msgid "T110E4_ISP_descr"
-msgstr ""
-"В 1954 году в Детройте была проведена конференция по вопросу будущих тяжёлых"
-" танков. На ней было представлено несколько аванпроектов новых машин. На "
-"базе одного из проектов (TS-31) компания Chrysler Corporation предложила "
-"разработать новый тяжёлый танк. Основным условием проекта было создать "
-"машину, которая могла бы свободно пройти по Бернскому национальному туннелю."
-" После проработки нескольких вариантов конструкции работы над танком были "
-"прекращены."
-
-msgid "T110E4_ISP_long_special"
-msgstr "?empty?"
-
-msgid "T110E4_ISP_short"
-msgstr "T110E4 (И)"
-
-msgid "T110E4_ISP_short_special"
 msgstr "?empty?"
 
 msgid "T110E4_descr"
@@ -4391,25 +4355,6 @@ msgstr "T57"
 msgid "T57_58"
 msgstr "T57 Heavy Tank"
 
-msgid "T57_58_ISP"
-msgstr "T57 H Испытательный"
-
-msgid "T57_58_ISP_descr"
-msgstr ""
-"Проект тяжёлого танка с качающейся башней и автоматом заряжания. "
-"Разрабатывался с 1951 года. К 1957 году были изготовлены опытные башни под "
-"120-мм и 155-мм орудия, однако программа создания таких машин была признана "
-"бесперспективной, и все работы были свёрнуты."
-
-msgid "T57_58_ISP_long_special"
-msgstr "?empty?"
-
-msgid "T57_58_ISP_short"
-msgstr "T57 H (И)"
-
-msgid "T57_58_ISP_short_special"
-msgstr "?empty?"
-
 msgid "T57_58_descr"
 msgstr ""
 "Проект тяжёлого танка с качающейся башней и автоматом заряжания. "
@@ -4783,6 +4728,9 @@ msgstr "LK-7605"
 msgid "Turret_1_A179_MBT_59"
 msgstr "MBT-59"
 
+msgid "Turret_1_A182_ALRS_M6"
+msgstr "ALRS"
+
 msgid "Turret_1_A27_T82"
 msgstr "T82 HMC"
 
@@ -4855,13 +4803,7 @@ msgstr "M4A2E2T110"
 msgid "Turret_1_T110E3"
 msgstr "T110E3"
 
-msgid "Turret_1_T110E3_ISP"
-msgstr "T110E3"
-
 msgid "Turret_1_T110E4"
-msgstr "T110E4"
-
-msgid "Turret_1_T110E4_ISP"
 msgstr "T110E4"
 
 msgid "Turret_1_T1_E6"
@@ -4898,9 +4840,6 @@ msgid "Turret_1_T54E1"
 msgstr "T157"
 
 msgid "Turret_1_T57_58"
-msgstr "T169"
-
-msgid "Turret_1_T57_58_ISP"
 msgstr "T169"
 
 msgid "Turret_1_T57_58_T"
@@ -5355,6 +5294,9 @@ msgstr "HEAT M67"
 msgid "_105mm_HEAT_M67_SH"
 msgstr "AP M67E2"
 
+msgid "_105mm_HEAT_T_M431"
+msgstr "HEAT-T M431"
+
 msgid "_105mm_HEAT_T_T298E2"
 msgstr "HEAT-T T298E2"
 
@@ -5391,11 +5333,17 @@ msgstr "HE M393A1"
 msgid "_105mm_HE_M68M2"
 msgstr "HEP-T M393"
 
+msgid "_105mm_HE_M71A1_A182"
+msgstr "HE-T M71A1"
+
 msgid "_105mm_HVAPDS_T_T279E2"
 msgstr "HVAPDS-T T279E2"
 
 msgid "_105mm_HVAP_M277_SH"
 msgstr "HVAP M277"
+
+msgid "_105mm_HVAP_M332_A182"
+msgstr "HVAP M332"
 
 msgid "_105mm_Howitzer_M2A1"
 msgstr "105 mm Howitzer M2A1"
@@ -5423,6 +5371,9 @@ msgstr "105 mm M4"
 
 msgid "_105mm_SPH_M4_L23_SH"
 msgstr "105 mm M4"
+
+msgid "_105mm_T140_A182"
+msgstr "105 mm T140"
 
 msgid "_105mm_T140_Y_IV"
 msgstr "105 mm T140 Y IV"
@@ -5458,9 +5409,6 @@ msgid "_120mm_2B_British_gun"
 msgstr "120 mm 2B British Gun"
 
 msgid "_120mm_AP-T_M358"
-msgstr "AP-T M358"
-
-msgid "_120mm_AP-T_M358_ISP"
 msgstr "AP-T M358"
 
 msgid "_120mm_AP-T_XM66F"
@@ -5532,9 +5480,6 @@ msgstr "120 mm Gun T124"
 msgid "_120mm_Gun_T179"
 msgstr "120 mm Gun T179"
 
-msgid "_120mm_Gun_T179_ISP"
-msgstr "120 mm Gun T179"
-
 msgid "_120mm_Gun_T179_M169"
 msgstr "120 mm Gun T179 in Mount 169"
 
@@ -5551,9 +5496,6 @@ msgid "_120mm_HE-T67"
 msgstr "HE T67"
 
 msgid "_120mm_HEAT-T_M469"
-msgstr "HEAT-T M469"
-
-msgid "_120mm_HEAT-T_M469_ISP"
 msgstr "HEAT-T M469"
 
 msgid "_120mm_HEAT-T_M469_SH"
@@ -5581,9 +5523,6 @@ msgid "_120mm_HE_M358"
 msgstr "HE M358"
 
 msgid "_120mm_HE_Shot"
-msgstr "HE Shell"
-
-msgid "_120mm_HE_Shot_ISP"
 msgstr "HE Shell"
 
 msgid "_120mm_HE_T_M356"
@@ -5691,9 +5630,6 @@ msgstr "AP M111E1"
 msgid "_155mm_AP_M111E1_57"
 msgstr "M111/57"
 
-msgid "_155mm_AP_M111E1_ISP"
-msgstr "AP M111E1"
-
 msgid "_155mm_AP_M111_H3"
 msgstr "M111/H3"
 
@@ -5706,9 +5642,6 @@ msgstr "AP M112"
 msgid "_155mm_AP_M112E1"
 msgstr "APCR M112E1"
 
-msgid "_155mm_AP_M112E1_ISP"
-msgstr "APCR M112E1"
-
 msgid "_155mm_AP_M112_SPG"
 msgstr "AP M112"
 
@@ -5719,9 +5652,6 @@ msgid "_155mm_AT_Gun_T7E1_57"
 msgstr "155 mm AT Gun T7E1/57"
 
 msgid "_155mm_AT_Gun_T7E2"
-msgstr "155 mm AT Gun T7E2"
-
-msgid "_155mm_AT_Gun_T7E2_ISP"
 msgstr "155 mm AT Gun T7E2"
 
 msgid "_155mm_Gun_M1918M1"
@@ -5753,9 +5683,6 @@ msgstr "HE M101E1"
 
 msgid "_155mm_HE_M101E1_57"
 msgstr "M357/57"
-
-msgid "_155mm_HE_M101E1_ISP"
-msgstr "HE M101E1"
 
 msgid "_155mm_HE_M101M2"
 msgstr "HE M101M2"

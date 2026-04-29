@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>vehicles/russian/R147_Object_701/normal/lod4/Turret_01</nodefullVisual>
 	<tank>true</tank>
 	<visibilityBox>
-		<min>
-			-1.19694 0.020515 -2.06957
-			<!--BW_String-->
-		</min>
-		<max>
-			1.38032 1.51379 1.55308
-			<!--BW_String-->
-		</max>
+		<min>-1.196944 0.020515 -2.069572</min>
+		<max>1.380319 1.513792 1.553084</max>
 	</visibilityBox>
+	<nodefullVisual>vehicles/russian/R147_Object_701/normal/lod4/Turret_01</nodefullVisual>
 </root>

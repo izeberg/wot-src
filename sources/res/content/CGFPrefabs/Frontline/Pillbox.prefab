@@ -85,10 +85,7 @@
 				<config>
 					<property>
 						<name>Position</name>
-						<value>
-							0 0.112 0
-							<!--BW_String-->
-						</value>
+						<value>0 0 0</value>
 					</property>
 					<property>
 						<name>Scale</name>
@@ -110,7 +107,7 @@
 					<property>
 						<name>Position</name>
 						<value>
-							0.000244141 0.633 0.00012207
+							0.000244141 0.7 0.00012207
 							<!--BW_String-->
 						</value>
 					</property>
@@ -131,7 +128,7 @@
 					<property>
 						<name>Position</name>
 						<value>
-							0 0.685 1.505
+							0 0.7 1.505
 							<!--BW_String-->
 						</value>
 					</property>
@@ -187,100 +184,6 @@
 					<property>
 						<name>detailed</name>
 						<value>0</value>
-					</property>
-				</config>
-			</component>
-		</ComponentPool>
-		<ComponentPool>
-			<type>Animator</type>
-			<version>2</version>
-			<component>
-				<objectIndex>0</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>Auto Start</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>Layers</name>
-						<collection>
-							<item>
-								<object>
-									<property>
-										<name>Path</name>
-										<isAsset>true</isAsset>
-										<value>particles/Environment/Battle_Royal/Lighting/Strike_Lighting_01.seq</value>
-									</property>
-									<property>
-										<name>Properties</name>
-										<object>
-											<property>
-												<name>delay</name>
-												<value>0</value>
-											</property>
-											<property>
-												<name>speed</name>
-												<value>1</value>
-											</property>
-											<property>
-												<name>loop</name>
-												<value>0</value>
-											</property>
-											<property>
-												<name>loopCount</name>
-												<value>-1</value>
-											</property>
-										</object>
-									</property>
-									<property>
-										<name>Clip</name>
-										<value>&lt;Default Clip&gt;</value>
-									</property>
-									<property>
-										<name>LayerName</name>
-										<value>0</value>
-									</property>
-									<property>
-										<name>Weight</name>
-										<value>1</value>
-									</property>
-									<property>
-										<name>LOD Scale</name>
-										<value>1</value>
-									</property>
-									<property>
-										<name>Auto Start</name>
-										<value>0</value>
-									</property>
-									<property>
-										<name>Graphics preset</name>
-										<value>2</value>
-									</property>
-								</object>
-							</item>
-						</collection>
-					</property>
-					<property>
-						<name>Path</name>
-						<isAsset>true</isAsset>
-						<value>particles/Environment/Battle_Royal/Lighting/Strike_Lighting_01.seq</value>
-					</property>
-					<property>
-						<name>Delay</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>Speed</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Loop</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>Loop Count</name>
-						<value>-1</value>
 					</property>
 				</config>
 			</component>
@@ -635,106 +538,6 @@
 									</property>
 								</object>
 							</item>
-							<item>
-								<object>
-									<property>
-										<name>Type</name>
-										<value>0</value>
-									</property>
-									<property>
-										<name>Parameters</name>
-										<object>
-											<property>
-												<name>Offset</name>
-												<value>((0.556695,0.739158,-0.379195,       0), (-1.22176, 1.34711,0.832229,       0), (  2.2414,-2.39611e-05, 3.29055,       0), ( 2.26453,-0.0292974,-3.63672,       1))</value>
-											</property>
-											<property>
-												<name>Rotation</name>
-												<value>((0.556695,0.739158,-0.379195,       0), (-1.22176, 1.34711,0.832229,       0), (  2.2414,-2.39611e-05, 3.29055,       0), ( 2.26453,-0.0292974,-3.63672,       1))</value>
-											</property>
-											<property>
-												<name>Size</name>
-												<value>((0.556695,0.739158,-0.379195,       0), (-1.22176, 1.34711,0.832229,       0), (  2.2414,-2.39611e-05, 3.29055,       0), ( 2.26453,-0.0292974,-3.63672,       1))</value>
-											</property>
-										</object>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>Type</name>
-										<value>0</value>
-									</property>
-									<property>
-										<name>Parameters</name>
-										<object>
-											<property>
-												<name>Offset</name>
-												<value>(( 1.17771,       0,       0,       0), (       0,  2.3528,       0,       0), (       0,       0, 2.95429,       0), ( 0.51123,-0.0519385,-3.47717,       1))</value>
-											</property>
-											<property>
-												<name>Rotation</name>
-												<value>(( 1.17771,       0,       0,       0), (       0,  2.3528,       0,       0), (       0,       0, 2.95429,       0), ( 0.51123,-0.0519385,-3.47717,       1))</value>
-											</property>
-											<property>
-												<name>Size</name>
-												<value>(( 1.17771,       0,       0,       0), (       0,  2.3528,       0,       0), (       0,       0, 2.95429,       0), ( 0.51123,-0.0519385,-3.47717,       1))</value>
-											</property>
-										</object>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>Type</name>
-										<value>0</value>
-									</property>
-									<property>
-										<name>Parameters</name>
-										<object>
-											<property>
-												<name>Offset</name>
-												<value>(( 1.03034,-0.888656,       0,       0), ( 1.07488, 1.24626,       0,       0), (       0,       0, 2.31842,       0), (-1.97351,0.197097,-3.68469,       1))</value>
-											</property>
-											<property>
-												<name>Rotation</name>
-												<value>(( 1.03034,-0.888656,       0,       0), ( 1.07488, 1.24626,       0,       0), (       0,       0, 2.31842,       0), (-1.97351,0.197097,-3.68469,       1))</value>
-											</property>
-											<property>
-												<name>Size</name>
-												<value>(( 1.03034,-0.888656,       0,       0), ( 1.07488, 1.24626,       0,       0), (       0,       0, 2.31842,       0), (-1.97351,0.197097,-3.68469,       1))</value>
-											</property>
-										</object>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>Type</name>
-										<value>0</value>
-									</property>
-									<property>
-										<name>Parameters</name>
-										<object>
-											<property>
-												<name>Offset</name>
-												<value>(( 4.43616,       0,       0,       0), (       0, 1.16249, 1.67635,       0), (       0,-0.821752,0.569854,       0), (-0.294556,0.185238,-5.42737,       1))</value>
-											</property>
-											<property>
-												<name>Rotation</name>
-												<value>(( 4.43616,       0,       0,       0), (       0, 1.16249, 1.67635,       0), (       0,-0.821752,0.569854,       0), (-0.294556,0.185238,-5.42737,       1))</value>
-											</property>
-											<property>
-												<name>Size</name>
-												<value>(( 4.43616,       0,       0,       0), (       0, 1.16249, 1.67635,       0), (       0,-0.821752,0.569854,       0), (-0.294556,0.185238,-5.42737,       1))</value>
-											</property>
-										</object>
-									</property>
-								</object>
-							</item>
 						</collection>
 					</property>
 				</config>
@@ -843,6 +646,10 @@
 						<name>Cast Shadows</name>
 						<value>1</value>
 					</property>
+					<property>
+						<name>Parts</name>
+						<collection/>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -858,6 +665,10 @@
 						<name>Cast Shadows</name>
 						<value>1</value>
 					</property>
+					<property>
+						<name>Parts</name>
+						<collection/>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -872,6 +683,10 @@
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>Parts</name>
+						<collection/>
 					</property>
 				</config>
 			</component>
@@ -892,8 +707,8 @@
 				<flags>3</flags>
 				<config>
 					<property>
-						<name>prefabPath</name>
-						<value>content/CGFPrefabs/Frontline/SupplySpawnEffect.prefab</value>
+						<name>camouflagePrefabPath</name>
+						<value>content/CGFPrefabs/Frontline/PillboxCamouflage.prefab</value>
 					</property>
 				</config>
 			</component>

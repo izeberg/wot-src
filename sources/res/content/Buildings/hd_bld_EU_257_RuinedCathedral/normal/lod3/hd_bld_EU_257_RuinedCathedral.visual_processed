@@ -250,14 +250,6 @@
 					<collisionFlags>0</collisionFlags>
 					<materialKind>111</materialKind>
 					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
 						doubleSided
 						<Bool>true</Bool>
 					</property>

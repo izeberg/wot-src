@@ -22,7 +22,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 1.000000 0.000000</row1>
 					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.010000 0.807900 2.138900</row3>
+					<row3>0.010000 0.824400 2.093552</row3>
 				</transform>
 			</node>
 		</node>
@@ -31,8 +31,8 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<primitive>indices</primitive>
+			<vertices>turret_01_Shape.vertices</vertices>
+			<primitive>turret_01_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -69,13 +69,13 @@
 						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.046478 0.930461 0.185406</groupOrigin>
+				<groupOrigin>-0.046478 0.946960 0.139791</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-1.930474 -0.050615 -2.232741</min>
-		<max>1.837517 1.911536 2.603553</max>
+		<min>-1.930474 -0.034115 -2.278356</min>
+		<max>1.837517 1.928035 2.557938</max>
 	</boundingBox>
 	<geometrySize>84936</geometrySize>
 	<minUVDensity>0.000495</minUVDensity>

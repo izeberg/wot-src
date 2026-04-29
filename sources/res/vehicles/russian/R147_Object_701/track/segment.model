@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodelessVisual>vehicles/russian/R147_Object_701/track/segment</nodelessVisual>
 	<visibilityBox>
 		<min>
 			-0.360621 -0.129107 -0.11594
@@ -8,4 +7,5 @@
 		</min>
 		<max>0.360621 0.074535 0.103156</max>
 	</visibilityBox>
+	<nodelessVisual>vehicles/russian/R147_Object_701/track/segment</nodelessVisual>
 </root>

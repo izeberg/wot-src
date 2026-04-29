@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/russian/R233_ASU_85/normal/lod3/Chassis</nodefullVisual>
+	<parent>vehicles/russian/R233_ASU_85/normal/lod4/Chassis</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.459422 -0.002669 -2.788645</min>
+		<max>1.459187 0.929944 2.808214</max>
+	</visibilityBox>
+</root>

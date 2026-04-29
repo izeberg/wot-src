@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<CellMethods/>
+	<ClientMethods/>
+	<Properties>
+		<role>
+			<Type>INT32</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</role>
+	</Properties>
+	<ofEntity>
+		<Vehicle/>
+	</ofEntity>
+	<DefaultKeyName>roleComponent</DefaultKeyName>
+</root>

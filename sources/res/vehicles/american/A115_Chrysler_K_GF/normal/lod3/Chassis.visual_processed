@@ -1139,10 +1139,6 @@
 						<Texture>vehicles/american/tracks/Chrysler_K_track_GMM.dds</Texture>
 					</property>
 					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
-					</property>
-					<property>
 						doubleSided
 						<Bool>true</Bool>
 					</property>
@@ -1156,7 +1152,7 @@
 					</property>
 					<property>
 						alphaReference
-						<Int>64</Int>
+						<Int>128</Int>
 					</property>
 				</material>
 				<groupOrigin>-1.579054 0.619105 -0.097284</groupOrigin>
@@ -1204,10 +1200,6 @@
 						<Texture>vehicles/american/tracks/Chrysler_K_track_GMM.dds</Texture>
 					</property>
 					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
-					</property>
-					<property>
 						doubleSided
 						<Bool>true</Bool>
 					</property>
@@ -1221,7 +1213,7 @@
 					</property>
 					<property>
 						alphaReference
-						<Int>64</Int>
+						<Int>128</Int>
 					</property>
 				</material>
 				<groupOrigin>1.570637 0.619104 -0.097284</groupOrigin>
@@ -1268,20 +1260,12 @@
 						<Texture>vehicles/american/A115_Chrysler_K_GF/Chrysler_K_GF_chassis_01_GMM.dds</Texture>
 					</property>
 					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
-					</property>
-					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/american/A115_Chrysler_K_GF/Chrysler_K_GF_chassis_01_AO.dds</Texture>
 					</property>
 					<property>
 						diffuseMap
 						<Texture>vehicles/american/A115_Chrysler_K_GF/Chrysler_K_GF_chassis_01_AM.dds</Texture>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
 					</property>
 				</material>
 				<groupOrigin>-1.556262 0.650512 -0.113364</groupOrigin>
@@ -1328,20 +1312,12 @@
 						<Texture>vehicles/american/A115_Chrysler_K_GF/Chrysler_K_GF_chassis_01_GMM.dds</Texture>
 					</property>
 					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
-					</property>
-					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/american/A115_Chrysler_K_GF/Chrysler_K_GF_chassis_01_AO.dds</Texture>
 					</property>
 					<property>
 						diffuseMap
 						<Texture>vehicles/american/A115_Chrysler_K_GF/Chrysler_K_GF_chassis_01_AM.dds</Texture>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
 					</property>
 				</material>
 				<groupOrigin>1.545118 0.639757 -0.128740</groupOrigin>

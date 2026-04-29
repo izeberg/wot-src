@@ -86,9 +86,6 @@ msgstr "4TP"
 msgid "Chassis_Pl15_60TP_Lewandowskiego"
 msgstr "60TP Lewandowskiego"
 
-msgid "Chassis_Pl15_60TP_Lewandowskiego_ISP"
-msgstr "60TP Lewandowskiego"
-
 msgid "Chassis_Pl16_T34_85_Rudy"
 msgstr "T-34-85-60"
 
@@ -117,9 +114,6 @@ msgid "Chassis_Pl20_CS_44_2"
 msgstr "CS-49"
 
 msgid "Chassis_Pl21_CS_63"
-msgstr "CS 63"
-
-msgid "Chassis_Pl21_CS_63_ISP"
 msgstr "CS 63"
 
 msgid "Chassis_Pl22_CS_59"
@@ -225,9 +219,6 @@ msgid "MT_50_T"
 msgstr "MT-50T"
 
 msgid "MT_50_TM"
-msgstr "MT-50TM"
-
-msgid "MT_50_TM_ISP"
 msgstr "MT-50TM"
 
 msgid "Maybach_HL_108"
@@ -501,25 +492,6 @@ msgstr "4TP"
 msgid "Pl15_60TP_Lewandowskiego"
 msgstr "60TP Lewandowskiego"
 
-msgid "Pl15_60TP_Lewandowskiego_ISP"
-msgstr "60TP Испытательный"
-
-msgid "Pl15_60TP_Lewandowskiego_ISP_descr"
-msgstr ""
-"Проект тяжёлого танка, разработанный курсантом Военно-Технической академии в"
-" Варшаве Ричердом Левандовским в 1956 г. Проект предусматривал создание "
-"танка массой до 60 тонн и толщиной бронирования до 200 мм. Работы были "
-"остановлены на стадии компоновочного чертежа."
-
-msgid "Pl15_60TP_Lewandowskiego_ISP_long_special"
-msgstr "?empty?"
-
-msgid "Pl15_60TP_Lewandowskiego_ISP_short"
-msgstr "60TP (И)"
-
-msgid "Pl15_60TP_Lewandowskiego_ISP_short_special"
-msgstr "?empty?"
-
 msgid "Pl15_60TP_Lewandowskiego_descr"
 msgstr ""
 "Проект тяжёлого танка, разработанный курсантом Военно-Технической академии в"
@@ -671,26 +643,6 @@ msgid "Pl21_CS_63_7x7_short"
 msgstr "CS-63 7x7"
 
 msgid "Pl21_CS_63_7x7_short_special"
-msgstr "?empty?"
-
-msgid "Pl21_CS_63_ISP"
-msgstr "CS-63 Испытательный"
-
-msgid "Pl21_CS_63_ISP_descr"
-msgstr ""
-"С целью замены танков Т-34-85 в Польше велись разработки нового среднего "
-"танка с использованием доступных достижений советской школы танкостроения и "
-"оригинальных разработок. Однако в 1968 году в стране развернули производство"
-" танков Т-55, и работы по собственному образцу были свёрнуты. Не было "
-"изготовлено ни одного экземпляра."
-
-msgid "Pl21_CS_63_ISP_long_special"
-msgstr "?empty?"
-
-msgid "Pl21_CS_63_ISP_short"
-msgstr "CS-63 (И)"
-
-msgid "Pl21_CS_63_ISP_short_special"
 msgstr "?empty?"
 
 msgid "Pl21_CS_63_descr"
@@ -1125,9 +1077,6 @@ msgstr "10RT-C46"
 msgid "R_113"
 msgstr "R-113"
 
-msgid "R_113_ISP"
-msgstr "R-113"
-
 msgid "R_113_P"
 msgstr "R-113P"
 
@@ -1155,9 +1104,6 @@ msgstr "R-123P MH"
 msgid "R_123P_T"
 msgstr "R-123P"
 
-msgid "R_123_ISP"
-msgstr "R-123"
-
 msgid "Rytla_Wernera"
 msgstr "Rytla Wernera"
 
@@ -1177,9 +1123,6 @@ msgid "SGT_3CzP"
 msgstr "SGT-3CzP"
 
 msgid "SGT_3Cz_M"
-msgstr "SGT-3CzM"
-
-msgid "SGT_3Cz_M_ISP"
 msgstr "SGT-3CzM"
 
 msgid "SGT_3Cz_SH"
@@ -1227,9 +1170,6 @@ msgstr "4TP"
 msgid "Turret_1_Pl15_60TP_Lewandowskiego"
 msgstr "60TP Lewandowskiego"
 
-msgid "Turret_1_Pl15_60TP_Lewandowskiego_ISP"
-msgstr "60TP Lewandowskiego"
-
 msgid "Turret_1_Pl16_T34_85_Rudy"
 msgstr "T-34-85"
 
@@ -1252,9 +1192,6 @@ msgid "Turret_1_Pl20_CS_44"
 msgstr "CS-44"
 
 msgid "Turret_1_Pl21_CS_63"
-msgstr "CS 63"
-
-msgid "Turret_1_Pl21_CS_63_ISP"
 msgstr "CS 63"
 
 msgid "Turret_1_Pl22_CS_59"
@@ -1491,22 +1428,13 @@ msgstr "slpgr m/53"
 msgid "_105mm_3PPod_21"
 msgstr "3PPod-21"
 
-msgid "_105mm_3PPod_21_ISP"
-msgstr "3PPod-21"
-
 msgid "_105mm_Bofors_wz_34"
 msgstr "105 mm Bofors wz. 34"
 
 msgid "_105mm_POB_6M"
 msgstr "3PK-6M"
 
-msgid "_105mm_POB_6M_ISP"
-msgstr "3PK-6M"
-
 msgid "_105mm_PP_15"
-msgstr "PP-15"
-
-msgid "_105mm_PP_15_ISP"
 msgstr "PP-15"
 
 msgid "_105mm_armata_wz_59"
@@ -1517,9 +1445,6 @@ msgstr "105 mm armata wz. 64"
 
 msgid "_105mm_armata_wz_64_02"
 msgstr "105 mm armata wz. 64M2"
-
-msgid "_105mm_armata_wz_64_ISP"
-msgstr "105 mm armata wz. 64"
 
 msgid "_105mm_sgr_m_50_B"
 msgstr "sgr m/50 B"
@@ -1665,25 +1590,13 @@ msgstr "130 mm wz.62"
 msgid "_152mm_J_2"
 msgstr "152 mm J 2"
 
-msgid "_152mm_J_2_ISP"
-msgstr "152 mm J 2"
-
 msgid "_152mm_pocisk_kumulacyjny"
-msgstr "Pocisk kumulacyjny"
-
-msgid "_152mm_pocisk_kumulacyjny_ISP"
 msgstr "Pocisk kumulacyjny"
 
 msgid "_152mm_pocisk_przeciwpancerny"
 msgstr "Pocisk przeciwpancerny"
 
-msgid "_152mm_pocisk_przeciwpancerny_ISP"
-msgstr "Pocisk przeciwpancerny"
-
 msgid "_152mm_pocisk_wybuchowy"
-msgstr "Pocisk wybuchowy"
-
-msgid "_152mm_pocisk_wybuchowy_ISP"
 msgstr "Pocisk wybuchowy"
 
 msgid "_175mm_AP"

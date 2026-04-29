@@ -19,6 +19,7 @@ from gui.impl.lobby.common.view_wrappers import createBackportTooltipDecorator
 from gui.impl.pub.tooltip_window import SimpleTooltipContent
 from gui.impl.wrappers.user_compound_price_model import BuyPriceModelBuilder
 from gui.shared.money import Currency
+from armory_yard.uilogging.armory_yard.loggers import ArmoryYardLogger
 from armory_yard.gui.shared.models_helpers import updateArmoryConditionQuestsModel
 from armory_yard.gui.impl.gen.view_models.views.lobby.feature.armory_yard_reroll_view_model import ArmoryYardRerollViewModel
 from armory_yard.gui.impl.gen.view_models.views.lobby.feature.armory_yard_quest_sub_model import ArmoryYardQuestSubModel, QuestStatus
@@ -66,7 +67,7 @@ def wgmNotAvailableTooltipFactory(currency):
 
 class ArmoryYardRerollView(ViewImpl):
     __slots__ = ('__currentQuests', '__tooltipData', '__questsToSelect', '__onLoadedCallback',
-                 '__moneyBalanceTooltips')
+                 '__moneyBalanceTooltips', '__uiLogger')
     __armoryYardCtrl = dependency.descriptor(IArmoryYardController)
     __eventsCache = dependency.descriptor(IEventsCache)
     __itemsCache = dependency.descriptor(IItemsCache)
@@ -80,6 +81,7 @@ class ArmoryYardRerollView(ViewImpl):
         self.__tooltipData = {}
         self.__questsToSelect = questsToSelect or []
         self.__onLoadedCallback = onLoadedCallback
+        self.__uiLogger = ArmoryYardLogger()
         self.__moneyBalanceTooltips = self._initTooltips()
 
     @property
@@ -220,11 +222,17 @@ class ArmoryYardRerollView(ViewImpl):
     def createToolTipContent(self, event, contentID):
         if contentID == R.views.armory_yard.lobby.feature.tooltips.ArmoryYardCurrencyTooltipView():
             return ArmoryYardCurrencyTooltipView(event.getArgument('currency'))
-        if contentID == R.views.armory_yard.lobby.feature.tooltips.RerollDescriptionTooltipView():
-            return ViewImpl(ViewSettings(contentID, model=ViewModel()))
-        if contentID == R.views.armory_yard.lobby.feature.tooltips.TaskConditionTooltipView():
-            return TaskConditionTooltipView(event.getArgument('vehicleLevels'), event.getArgument('vehicleTypes'), event.getArgument('battleTypes'), event.getArgument('vehicleNations'))
-        return super(ArmoryYardRerollView, self).createToolTipContent(event, contentID)
+        else:
+            if contentID == R.views.dialogs.common.DialogTemplateGenericTooltip():
+                currency = event.getArgument('currency')
+                factory = self.__moneyBalanceTooltips.get(CurrencyType(currency))
+                if factory and factory.tooltipFactory is not None:
+                    return factory.tooltipFactory()
+            if contentID == R.views.armory_yard.lobby.feature.tooltips.RerollDescriptionTooltipView():
+                return ViewImpl(ViewSettings(contentID, model=ViewModel()))
+            if contentID == R.views.armory_yard.lobby.feature.tooltips.TaskConditionTooltipView():
+                return TaskConditionTooltipView(event.getArgument('vehicleLevels'), event.getArgument('vehicleTypes'), event.getArgument('battleTypes'), event.getArgument('vehicleNations'))
+            return super(ArmoryYardRerollView, self).createToolTipContent(event, contentID)
 
     def getTooltipData(self, event):
         tooltipId = event.getArgument('tooltipId')
@@ -275,6 +283,7 @@ class ArmoryYardRerollView(ViewImpl):
         if not result.success:
             self.viewModel.setIsPaymentError(True)
         else:
+            self.__uiLogger.logRerollQuest(self.viewModel.currentQuest, currency)
             self.__fillSuggestedQuests(result.auxData)
 
     def __fillSuggestedQuests(self, suggestedConditions):

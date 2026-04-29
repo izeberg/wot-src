@@ -3084,6 +3084,10 @@
 							4.66
 							<!--BW_String-->
 						</rate>
+						<rebuildShotDispersionDelay>
+							1.0
+							<!--BW_String-->
+						</rebuildShotDispersionDelay>
 					</autoShoot>
 					<customizationSlots>
 						<slot>
@@ -3176,7 +3180,7 @@
 						<collisionModelServer>vehicles/intunion/Un15_SBM_44/collision/Gun_01.model</collisionModelServer>
 						<collisionModelClient>vehicles/intunion/Un15_SBM_44/collision_client/Gun_01.model</collisionModelClient>
 					</hitTester>
-					<effects>shot_autoshoot_small</effects>
+					<effects>shot_autoshoot_small_shell_inside</effects>
 					<edgeByVisualModel>false</edgeByVisualModel>
 					<shotOffset>
 						0 0 0.205848
@@ -3994,7 +3998,7 @@
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
-							0 8 0.38 8 0.42 4 0.58 4 0.62 8 1 8
+							0 8 0.38 8 0.42 2 0.58 2 0.62 8 1 8
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
@@ -4058,6 +4062,10 @@
 							4.66
 							<!--BW_String-->
 						</rate>
+						<rebuildShotDispersionDelay>
+							1.0
+							<!--BW_String-->
+						</rebuildShotDispersionDelay>
 					</autoShoot>
 					<customizationSlots>
 						<slot>
@@ -4147,7 +4155,7 @@
 						<collisionModelServer>vehicles/intunion/Un15_SBM_44/collision/Gun_03.model</collisionModelServer>
 						<collisionModelClient>vehicles/intunion/Un15_SBM_44/collision_client/Gun_03.model</collisionModelClient>
 					</hitTester>
-					<effects>shot_autoshoot_small</effects>
+					<effects>shot_autoshoot_small_shell_inside</effects>
 					<edgeByVisualModel>false</edgeByVisualModel>
 					<shotOffset>
 						-0 0 0.25
@@ -4231,6 +4239,10 @@
 							4.33
 							<!--BW_String-->
 						</rate>
+						<rebuildShotDispersionDelay>
+							1.0
+							<!--BW_String-->
+						</rebuildShotDispersionDelay>
 					</autoShoot>
 					<customizationSlots>
 						<slot>
@@ -4320,7 +4332,7 @@
 						<collisionModelServer>vehicles/intunion/Un15_SBM_44/collision/Gun_04.model</collisionModelServer>
 						<collisionModelClient>vehicles/intunion/Un15_SBM_44/collision_client/Gun_04.model</collisionModelClient>
 					</hitTester>
-					<effects>shot_autoshoot_small</effects>
+					<effects>shot_autoshoot_small_shell_inside</effects>
 					<edgeByVisualModel>false</edgeByVisualModel>
 					<shotOffset>
 						-0 0 0.250392

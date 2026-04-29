@@ -139,10 +139,6 @@
 					<collisionFlags>0</collisionFlags>
 					<materialKind>112</materialKind>
 					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
 						g_tile1Tint
 						<Vector4>0.910000 0.881033 0.864500 1.000000</Vector4>
 					</property>

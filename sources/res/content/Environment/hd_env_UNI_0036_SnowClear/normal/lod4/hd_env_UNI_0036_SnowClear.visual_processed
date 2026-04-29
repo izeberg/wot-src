@@ -28,10 +28,6 @@
 						<Texture>content/Environment/hd_env_UNI_0036_SnowClear/hd_env_UNI_0036_SnowClear_AM.dds</Texture>
 					</property>
 					<property>
-						g_ditherCoeff
-						<Float>11.000000</Float>
-					</property>
-					<property>
 						g_enableAO
 						<Bool>true</Bool>
 					</property>

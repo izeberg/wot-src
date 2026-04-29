@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/russian/R242_BM_13_Katyusha/normal/lod3/Gun_01</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<nodefullVisual>vehicles/russian/R242_BM_13_Katyusha/normal/lod2/Gun_01</nodefullVisual>
+	<visibilityBox>
+		<min>-1.099682 -0.306542 -1.342051</min>
+		<max>1.099728 1.558091 3.671257</max>
+	</visibilityBox>
+</root>

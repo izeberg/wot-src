@@ -26,7 +26,6 @@ package net.wg.gui.lobby.vehicleCompare.configurator
       override public function invokeLayout() : Object
       {
          var _loc2_:VehConfCrewSkillSlot = null;
-         var _loc5_:int = 0;
          var _loc1_:int = _target.numChildren;
          if(_loc1_ <= 0)
          {
@@ -34,7 +33,7 @@ package net.wg.gui.lobby.vehicleCompare.configurator
          }
          var _loc3_:int = rendererWidth + gap;
          var _loc4_:int = rendererHeight + gap;
-         _loc5_ = 0;
+         var _loc5_:int = 0;
          var _loc6_:int = -1;
          var _loc7_:String = COMMON_ROLE;
          var _loc8_:int = 0;

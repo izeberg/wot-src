@@ -3,6 +3,20 @@
 	<forward>
 		<preloadVisual>particles/mesh_particles/environment/vfx_m_newspapers_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/environment/vfx_m_newspapers_02.visual</preloadVisual>
+		<preloadTextures>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_leaves.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_long.dds
+				<type>primary</type>
+			</path>
+		</preloadTextures>
 		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/hd_bld_su_206_cellar.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/hd_bld_uni_006_kitcrashfactory_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/hd_bld_uni_006_kitcrashfactory_roof_03.vfx</fn_effect_bin>
@@ -448,6 +462,24 @@
 	<deferred>
 		<preloadVisual>particles/mesh_particles/environment/vfx_m_newspapers_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/environment/vfx_m_newspapers_02.visual</preloadVisual>
+		<preloadTextures>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_long.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_leaves.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_force_field.dds
+				<type>forcefields</type>
+			</path>
+		</preloadTextures>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/hd_bld_su_206_cellar.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/hd_bld_uni_006_kitcrashfactory_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/hd_bld_uni_006_kitcrashfactory_roof_03.vfx</fn_effect_bin>

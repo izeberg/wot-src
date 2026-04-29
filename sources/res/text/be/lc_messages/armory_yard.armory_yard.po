@@ -234,13 +234,13 @@ msgid "entryPoint/tooltips/active/header"
 msgstr "Задачы Зборачнага цэха"
 
 msgid "entryPoint/tooltips/active/justBeforeStart/hours"
-msgstr "Будзе даступная праз %(hour)s гадз. %(min)s хв."
+msgstr "Станет доступна через %(hour)s ч. %(min)s мин."
 
 msgid "entryPoint/tooltips/active/justBeforeStart/min"
-msgstr "Будзе даступная праз %(min)s хв."
+msgstr "Станет доступна через %(min)s мин."
 
 msgid "entryPoint/tooltips/active/justBeforeStart/sec"
-msgstr "Будзе даступная праз < 1 хв."
+msgstr "Станет доступна через < 1 мин."
 
 msgid "entryPoint/tooltips/active/locked"
 msgid_plural "plural/entryPoint/tooltips/active/locked"
@@ -372,7 +372,7 @@ msgid "mainView/chapter/index/2"
 msgstr "Асноўныя сістэмы"
 
 msgid "mainView/chapter/index/3"
-msgstr "Вузлы і агрэгаты"
+msgstr "Вспомогательные системы"
 
 msgid "mainView/chapter/index/4"
 msgstr "Выніковае аснашчэнне"
@@ -545,63 +545,62 @@ msgid "mainView/takeRewards/tooltip/header"
 msgstr "Забраць узнагароды"
 
 msgid "mainView/title/step/0"
-msgstr "Складанне ТЗ"
+msgstr "Начало работ"
 
 msgid "mainView/title/step/1"
 msgstr "Знаёмства з ТЗ"
 
 msgid "mainView/title/step/10"
-msgstr "Усталяванне сістэмы ахаладжэння і сістэмы эжэкцыі выхлапных газаў"
+msgstr "Установка топливной системы"
 
 msgid "mainView/title/step/11"
-msgstr "Усталяванне сістэмы змазкі"
+msgstr "Установка системы эжекции и вентиляции"
 
 msgid "mainView/title/step/12"
 msgstr "Усталяванне гарматы"
 
 msgid "mainView/title/step/13"
-msgstr "Усталяванне паліўнай сістэмы"
+msgstr "Установка аккумуляторов и вспомогательной силовой установки"
 
 msgid "mainView/title/step/14"
-msgstr ""
-"Усталяванне органаў кіравання, сістэмы сціснутага паветра і сістэмы "
-"пажаратушэння"
+msgstr "Установка органов управления"
 
 msgid "mainView/title/step/15"
-msgstr "Мантаж унутранага абсталявання"
+msgstr ""
+"Установка оборудования отделения управления и размещение ММГ боекомплекта"
 
 msgid "mainView/title/step/16"
-msgstr "Усталяванне акумулятараў і паветранага фільтра"
+msgstr "Установка корзины башни и системы управления огнём"
 
 msgid "mainView/title/step/17"
-msgstr "Усталяванне кошыка вежы з механізмам набівання"
+msgstr "Установка внутреннего оборудования башни"
 
 msgid "mainView/title/step/18"
-msgstr "Усталяванне ўнутранага абсталявання вежы"
+msgstr "Размещение ММГ боекомплекта в башне"
 
 msgid "mainView/title/step/19"
-msgstr "Усталяванне вежы і гарматы"
+msgstr "Установка башни"
 
 msgid "mainView/title/step/2"
 msgstr "Вызначэнне габарытаў машыны"
 
 msgid "mainView/title/step/20"
-msgstr "Размяшчэнне боекамплекта"
+msgstr "Установка ведущих колёс и подвески"
 
 msgid "mainView/title/step/21"
-msgstr "Усталяванне вядучых колаў і падвескі"
+msgstr "Установка опорных катков и ленивцев"
 
 msgid "mainView/title/step/22"
-msgstr "Усталяванне падтрымных каткоў і ляніўцаў"
+msgstr "Протяжка гусеничных лент"
 
 msgid "mainView/title/step/23"
-msgstr "Працяжка тракавых пасаў"
+msgstr "Покраска"
 
 msgid "mainView/title/step/24"
-msgstr "Пафарбоўка"
+msgstr "Установка надгусеничных полок"
 
 msgid "mainView/title/step/25"
-msgstr "Усталяванне надгусенічных паліц і навяснога абсталявання"
+msgstr "Установка навесного оборудования"
 
 msgid "mainView/title/step/26"
 msgstr "Выкатка машыны"
@@ -691,12 +690,12 @@ msgid "notifications/announcement/SPG"
 msgstr "САУ"
 
 msgid "notifications/announcement/chapter"
-msgstr "Раздзел %(count)d: %(chapter_name)s будзе даступны %(startDate)s."
+msgstr "Глава %(count)d: «%(chapter_name)s» станет доступна: %(startDate)s."
 
 msgid "notifications/announcement/event"
 msgstr ""
-"Ваяры! У вас ёсць магчымасць пабудаваць унікальную машыну — %(tankName)s з "
-"пускавой устаноўкай, якая страляе НКРСамі. Падзея пачынаецца %(startDate)s."
+"Бойцы! У вас есть возможность построить уникальную машину — %(tankName)s "
+"с крупнокалиберной 152-мм пушкой. Событие начинается %(startDate)s."
 
 msgid "notifications/announcement/heavyTank"
 msgstr "цяжкі танк"
@@ -730,16 +729,16 @@ msgid "notifications/payed/error"
 msgstr "Адбылася памылка пры куплі этапаў. Паспрабуйце яшчэ раз."
 
 msgid "notifications/payed/freeReroll"
-msgstr "Патрачана бясплатных замен: %(price)s"
+msgstr "Потрачено бесплатных замен: "
 
 msgid "notifications/payed/multiple"
 msgstr "Жэтоны будаўніцтва (%(count)d шт.) набыты."
 
 msgid "notifications/payed/priceCrystal"
-msgstr "Патрачана бонаў: %(price)s"
+msgstr "Потрачено бон: "
 
 msgid "notifications/payed/priceGold"
-msgstr "Патрачана золата: %(price)s"
+msgstr "Потрачено золота: "
 
 msgid "notifications/payed/single"
 msgstr "Жэтон будаўніцтва (%(count)d шт.) набыты."
@@ -756,13 +755,13 @@ msgstr ""
 "дакуплі."
 
 msgid "notifications/refund/freeReroll"
-msgstr "Вернута бясплатных замен: %(price)s"
+msgstr "Возвращено бесплатных замен: "
 
 msgid "notifications/refund/priceCrystal"
-msgstr "Вернута бонаў: %(price)s"
+msgstr "Возвращено бон: "
 
 msgid "notifications/refund/priceGold"
-msgstr "Вернута золата: %(price)s"
+msgstr "Возвращено золота: "
 
 msgid "notifications/rewardOutTime"
 msgstr ""
@@ -774,8 +773,7 @@ msgstr "Этапы пройдзены"
 
 msgid "notifications/started/chapter"
 msgstr ""
-"Даступны раздзел %(count)d: %(chapter_name)s з новымі задачамі і "
-"ўзнагародамі."
+"Доступна глава %(count)d: «%(chapter_name)s» с новыми задачами и наградами."
 
 msgid "notifications/started/chapter/untitled"
 msgstr "Даступны раздзел!"
@@ -952,10 +950,7 @@ msgid "rewardsView/subTitle/final"
 msgstr "Атрымана ўзнагарода за фінальны этап палігонных выпрабаванняў"
 
 msgid "rewardsView/subTitle/stage"
-msgid_plural "plural/rewardsView/subTitle/stage"
-msgstr[0] "Атрымана ўзнагарода за %(stages)s этап Зборачнага цэха."
-msgstr[1] "Атрымана ўзнагарода за %(stages)s этапы Зборачнага цэха."
-msgstr[2] "Атрымана ўзнагарода за %(stages)s этапаў Зборачнага цэха."
+msgstr "Получены награды за пройденные этапы"
 
 msgid "rewardsView/title/stage/many"
 msgstr "ЭТАПЫ ПРОЙДЗЕНЫ!"
@@ -1002,11 +997,34 @@ msgstr "Задачы"
 msgid "tabs/label/2"
 msgstr "Крама"
 
+msgid "tooltip/after/weekday/1"
+msgstr "понедельника"
+
+msgid "tooltip/after/weekday/2"
+msgstr "вторника"
+
+msgid "tooltip/after/weekday/3"
+msgstr "среды"
+
+msgid "tooltip/after/weekday/4"
+msgstr "четверга"
+
+msgid "tooltip/after/weekday/5"
+msgstr "пятницы"
+
+msgid "tooltip/after/weekday/6"
+msgstr "субботы"
+
+msgid "tooltip/after/weekday/7"
+msgstr "воскресенья"
+
 msgid "tooltip/chapter/disabled/doFuture/note"
 msgstr "Стане даступная: %(startText)s"
 
 msgid "tooltip/chapter/disabled/doFuture/noteDate"
-msgstr "%(color_open)sс %(startDate)s%(color_close)s"
+msgstr ""
+"%(color_open)s %(weekday)s %(day)s %(month)s %(year)s "
+"%(startTime)s%(color_close)s"
 
 msgid "tooltip/chapter/disabled/doPrevious/body"
 msgid_plural "plural/body"
@@ -1211,10 +1229,11 @@ msgid "tooltip/tab/quests/header"
 msgstr "Задачы"
 
 msgid "tooltip/tab/quests/note"
-msgstr "Даступныя: %(periodText)s"
+msgstr ""
+"Даступныя: %(color_open)sc %(startDate)s до %(endDate)s%(color_close)s"
 
 msgid "tooltip/tab/quests/noteDate"
-msgstr "%(color_open)sс %(startDate)s да %(endDate)s%(color_close)s"
+msgstr "%(weekday)s %(day)s %(month)s %(year)s %(startTime)s"
 
 msgid "tooltip/tab/shop/body"
 msgstr "Выкарыстоўвайце вольныя жэтоны для куплі ўнікальных тавараў."
@@ -1230,6 +1249,27 @@ msgstr ", каб павялічыць/паменшыць колькасць"
 
 msgid "tooltip/tokenStepper/press"
 msgstr "Націсніце"
+
+msgid "tooltip/weekday/1"
+msgstr "в понедельник"
+
+msgid "tooltip/weekday/2"
+msgstr "во вторник"
+
+msgid "tooltip/weekday/3"
+msgstr "в среду"
+
+msgid "tooltip/weekday/4"
+msgstr "в четверг"
+
+msgid "tooltip/weekday/5"
+msgstr "в пятницу"
+
+msgid "tooltip/weekday/6"
+msgstr "в субботу"
+
+msgid "tooltip/weekday/7"
+msgstr "в воскресенье"
 
 msgid "videoRewardView/back"
 msgstr "Працягнуць"

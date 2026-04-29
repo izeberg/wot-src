@@ -106,7 +106,9 @@ _LOBBY_TOOLTIPS_BUILDERS_PATHS = [
  (
   'gui.Scaleform.daapi.view.tooltips.wot_plus_builders', _TOOLTIPS.WOT_PLUS_SET),
  (
-  'gui.Scaleform.daapi.view.tooltips.early_access_builders', _TOOLTIPS.EARLY_ACCESS_LOBBY_SET)]
+  'gui.Scaleform.daapi.view.tooltips.early_access_builders', _TOOLTIPS.EARLY_ACCESS_LOBBY_SET),
+ (
+  'gui.Scaleform.daapi.view.tooltips.storage_builders', _TOOLTIPS.STORAGE_SET)]
 _LOBBY_DEBUG_TOOLTIPS_BUILDERS_PATHS = (
  (
   'gui.development.ui.tooltips.development_builders', _TOOLTIPS.DEVELOPMENT_SET),)

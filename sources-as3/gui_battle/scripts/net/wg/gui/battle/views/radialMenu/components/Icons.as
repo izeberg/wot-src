@@ -2,6 +2,7 @@ package net.wg.gui.battle.views.radialMenu.components
 {
    import flash.display.MovieClip;
    import flash.utils.Dictionary;
+   import flash.utils.getQualifiedClassName;
    import net.wg.data.constants.Values;
    import net.wg.data.constants.generated.RADIAL_MENU_CONSTS;
    import net.wg.infrastructure.interfaces.entity.IDisposable;
@@ -114,7 +115,16 @@ package net.wg.gui.battle.views.radialMenu.components
       
       public final function dispose() : void
       {
+         if(this._disposed && App.instance)
+         {
+            App.utils.asserter.assert(false,"(" + getQualifiedClassName(this) + ") already disposed!");
+         }
+         this.onDispose();
          this._disposed = true;
+      }
+      
+      protected function onDispose() : void
+      {
          App.utils.data.cleanupDynamicObject(this._iconsDictionary);
          this._iconsDictionary = null;
          this.supportingAllyIcon = null;
@@ -143,7 +153,7 @@ package net.wg.gui.battle.views.radialMenu.components
          this.selfRepairSupplyIcon = null;
       }
       
-      private function hideAll() : void
+      protected function hideAll() : void
       {
          this.supportingAllyIcon.visible = false;
          this.turnbackIcon.visible = false;
@@ -174,6 +184,11 @@ package net.wg.gui.battle.views.radialMenu.components
       public function isDisposed() : Boolean
       {
          return this._disposed;
+      }
+      
+      protected function addIcon(param1:String, param2:MovieClip) : void
+      {
+         this._iconsDictionary[param1] = param2;
       }
    }
 }

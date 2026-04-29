@@ -372,7 +372,7 @@ msgid "mainView/chapter/index/2"
 msgstr "Основные системы"
 
 msgid "mainView/chapter/index/3"
-msgstr "Узлы и агрегаты"
+msgstr "Вспомогательные системы"
 
 msgid "mainView/chapter/index/4"
 msgstr "Итоговое оснащение"
@@ -406,10 +406,10 @@ msgid "mainView/dateFormat"
 msgstr "%(fromDate)s — %(toDate)s %(toTime)s"
 
 msgid "mainView/exit"
-msgstr "В АНГАР"
+msgstr "В АНГАР"
 
 msgid "mainView/infoLink/info"
-msgstr "О СОБЫТИИ"
+msgstr "О СОБЫТИИ"
 
 msgid "mainView/mainReward/completed"
 msgstr "Награда получена"
@@ -544,63 +544,62 @@ msgid "mainView/takeRewards/tooltip/header"
 msgstr "Забрать награды"
 
 msgid "mainView/title/step/0"
-msgstr "Составление ТЗ"
+msgstr "Начало работ"
 
 msgid "mainView/title/step/1"
 msgstr "Знакомство с ТЗ"
 
 msgid "mainView/title/step/10"
-msgstr "Установка системы охлаждения и системы эжекции выхлопных газов"
+msgstr "Установка топливной системы"
 
 msgid "mainView/title/step/11"
-msgstr "Установка системы смазки"
+msgstr "Установка системы эжекции и вентиляции"
 
 msgid "mainView/title/step/12"
 msgstr "Установка орудия"
 
 msgid "mainView/title/step/13"
-msgstr "Установка топливной системы"
+msgstr "Установка аккумуляторов и вспомогательной силовой установки"
 
 msgid "mainView/title/step/14"
-msgstr ""
-"Установка органов управления, системы сжатого воздуха и системы "
-"пожаротушения"
+msgstr "Установка органов управления"
 
 msgid "mainView/title/step/15"
-msgstr "Установка внутреннего оборудования"
+msgstr ""
+"Установка оборудования отделения управления и размещение ММГ боекомплекта"
 
 msgid "mainView/title/step/16"
-msgstr "Установка аккумуляторов и воздушного фильтра"
+msgstr "Установка корзины башни и системы управления огнём"
 
 msgid "mainView/title/step/17"
-msgstr "Установка корзины башни с механизмом заряжания"
-
-msgid "mainView/title/step/18"
 msgstr "Установка внутреннего оборудования башни"
 
+msgid "mainView/title/step/18"
+msgstr "Размещение ММГ боекомплекта в башне"
+
 msgid "mainView/title/step/19"
-msgstr "Установка башни и орудия"
+msgstr "Установка башни"
 
 msgid "mainView/title/step/2"
 msgstr "Определение габаритов машины"
 
 msgid "mainView/title/step/20"
-msgstr "Размещение боекомплекта"
+msgstr "Установка ведущих колёс и подвески"
 
 msgid "mainView/title/step/21"
-msgstr "Установка ведущих колёс и подвески"
+msgstr "Установка опорных катков и ленивцев"
 
 msgid "mainView/title/step/22"
-msgstr "Установка опорных катков и ленивцев"
-
-msgid "mainView/title/step/23"
 msgstr "Протяжка гусеничных лент"
 
-msgid "mainView/title/step/24"
+msgid "mainView/title/step/23"
 msgstr "Покраска"
 
+msgid "mainView/title/step/24"
+msgstr "Установка надгусеничных полок"
+
 msgid "mainView/title/step/25"
-msgstr "Установка надгусеничных полок и навесного оборудования"
+msgstr "Установка навесного оборудования"
 
 msgid "mainView/title/step/26"
 msgstr "Выкатка машины"
@@ -690,12 +689,12 @@ msgid "notifications/announcement/SPG"
 msgstr "САУ"
 
 msgid "notifications/announcement/chapter"
-msgstr "Глава %(count)d: %(chapter_name)s станет доступна %(startDate)s."
+msgstr "Глава %(count)d: «%(chapter_name)s» станет доступна: %(startDate)s."
 
 msgid "notifications/announcement/event"
 msgstr ""
-"Бойцы! У вас есть возможность построить уникальную машину — %(tankName)s с "
-"пусковой установкой, стреляющей НУРСами. Событие начинается %(startDate)s."
+"Бойцы! У вас есть возможность построить уникальную машину — %(tankName)s "
+"с крупнокалиберной 152-мм пушкой. Событие начинается %(startDate)s."
 
 msgid "notifications/announcement/heavyTank"
 msgstr "тяжёлый танк"
@@ -717,8 +716,8 @@ msgstr "наградная"
 
 msgid "notifications/bundleOutTime"
 msgstr ""
-"Произошла ошибка при начислении жетонов строительства. Не волнуйтесь, они в "
-"ближайшее время поступят на ваш аккаунт."
+"Произошла ошибка при начислении жетонов строительства. Не волнуйтесь, они "
+"поступят на ваш аккаунт в ближайшее время."
 
 msgid "notifications/collectRewards"
 msgstr ""
@@ -728,16 +727,16 @@ msgid "notifications/payed/error"
 msgstr "Произошла ошибка при покупке этапов. Пожалуйста, попробуйте ещё раз."
 
 msgid "notifications/payed/freeReroll"
-msgstr "Потрачено бесплатных замен: %(price)s"
+msgstr "Потрачено бесплатных замен: "
 
 msgid "notifications/payed/multiple"
 msgstr "Жетоны строительства (%(count)d шт.) успешно приобретены."
 
 msgid "notifications/payed/priceCrystal"
-msgstr "Потрачено бон: %(price)s"
+msgstr "Потрачено бон: "
 
 msgid "notifications/payed/priceGold"
-msgstr "Потрачено золота: %(price)s"
+msgstr "Потрачено золота: "
 
 msgid "notifications/payed/single"
 msgstr "Жетон строительства (%(count)d шт.) успешно приобретён."
@@ -754,13 +753,13 @@ msgstr ""
 "докупки."
 
 msgid "notifications/refund/freeReroll"
-msgstr "Возвращено бесплатных замен: %(price)s"
+msgstr "Возвращено бесплатных замен: "
 
 msgid "notifications/refund/priceCrystal"
-msgstr "Возвращено бон: %(price)s"
+msgstr "Возвращено бон: "
 
 msgid "notifications/refund/priceGold"
-msgstr "Возвращено золота: %(price)s"
+msgstr "Возвращено золота: "
 
 msgid "notifications/rewardOutTime"
 msgstr ""
@@ -772,7 +771,7 @@ msgstr "Этапы пройдены"
 
 msgid "notifications/started/chapter"
 msgstr ""
-"Доступна глава %(count)d: %(chapter_name)s с новыми задачами и наградами."
+"Доступна глава %(count)d: «%(chapter_name)s» с новыми задачами и наградами."
 
 msgid "notifications/started/chapter/untitled"
 msgstr "Доступна глава!"
@@ -832,7 +831,7 @@ msgid "purchaseStage/buyTokens/footer/buy"
 msgstr "Купить"
 
 msgid "purchaseStage/buyTokens/header/available"
-msgstr "В наличии:"
+msgstr "В наличии:"
 
 msgid "purchaseStage/buyTokens/header/title"
 msgstr "Свободный жетон"
@@ -949,10 +948,7 @@ msgid "rewardsView/subTitle/final"
 msgstr "Получена награда за финальный этап полигонных испытаний"
 
 msgid "rewardsView/subTitle/stage"
-msgid_plural "plural/rewardsView/subTitle/stage"
-msgstr[0] "Получена награда за %(stages)s этап Сборочного цеха."
-msgstr[1] "Получена награда за %(stages)s этапа Сборочного цеха."
-msgstr[2] "Получена награда за %(stages)s этапов Сборочного цеха."
+msgstr "Получены награды за пройденные этапы"
 
 msgid "rewardsView/title/stage/many"
 msgstr "ЭТАПЫ ПРОЙДЕНЫ!"
@@ -999,11 +995,34 @@ msgstr "Задачи"
 msgid "tabs/label/2"
 msgstr "Магазин"
 
+msgid "tooltip/after/weekday/1"
+msgstr "понедельника"
+
+msgid "tooltip/after/weekday/2"
+msgstr "вторника"
+
+msgid "tooltip/after/weekday/3"
+msgstr "среды"
+
+msgid "tooltip/after/weekday/4"
+msgstr "четверга"
+
+msgid "tooltip/after/weekday/5"
+msgstr "пятницы"
+
+msgid "tooltip/after/weekday/6"
+msgstr "субботы"
+
+msgid "tooltip/after/weekday/7"
+msgstr "воскресенья"
+
 msgid "tooltip/chapter/disabled/doFuture/note"
-msgstr "Станет доступна %(startText)s"
+msgstr "Станет доступна%(startText)s"
 
 msgid "tooltip/chapter/disabled/doFuture/noteDate"
-msgstr "%(color_open)sс %(startDate)s%(color_close)s"
+msgstr ""
+"%(color_open)s %(weekday)s %(day)s %(month)s %(year)s "
+"%(startTime)s%(color_close)s"
 
 msgid "tooltip/chapter/disabled/doPrevious/body"
 msgid_plural "plural/body"
@@ -1067,7 +1086,7 @@ msgid "tooltip/currency/gain/title"
 msgstr "Как получить"
 
 msgid "tooltip/currency/progressLabel"
-msgstr "В наличии:"
+msgstr "В наличии:"
 
 msgid "tooltip/currency/progression_token/description"
 msgstr ""
@@ -1199,16 +1218,16 @@ msgid "tooltip/tab/progression/header"
 msgstr "Ангар строительства"
 
 msgid "tooltip/tab/quests/body"
-msgstr "Задачи события «Сборочной цех»."
+msgstr "Задачи события «Сборочный цех»."
 
 msgid "tooltip/tab/quests/header"
 msgstr "Задачи"
 
 msgid "tooltip/tab/quests/note"
-msgstr "Доступны: %(periodText)s"
+msgstr "Доступны: %(color_open)sc %(startDate)s до %(endDate)s%(color_close)s"
 
 msgid "tooltip/tab/quests/noteDate"
-msgstr "%(color_open)sс %(startDate)s до %(endDate)s%(color_close)s"
+msgstr "%(weekday)s %(day)s %(month)s %(year)s %(startTime)s"
 
 msgid "tooltip/tab/shop/body"
 msgstr "Используйте свободные жетоны для покупки уникальных товаров."
@@ -1224,6 +1243,27 @@ msgstr ", чтобы увеличить/уменьшить количество"
 
 msgid "tooltip/tokenStepper/press"
 msgstr "Нажмите"
+
+msgid "tooltip/weekday/1"
+msgstr "в понедельник"
+
+msgid "tooltip/weekday/2"
+msgstr "во вторник"
+
+msgid "tooltip/weekday/3"
+msgstr "в среду"
+
+msgid "tooltip/weekday/4"
+msgstr "в четверг"
+
+msgid "tooltip/weekday/5"
+msgstr "в пятницу"
+
+msgid "tooltip/weekday/6"
+msgstr "в субботу"
+
+msgid "tooltip/weekday/7"
+msgstr "в воскресенье"
 
 msgid "videoRewardView/back"
 msgstr "Продолжить"

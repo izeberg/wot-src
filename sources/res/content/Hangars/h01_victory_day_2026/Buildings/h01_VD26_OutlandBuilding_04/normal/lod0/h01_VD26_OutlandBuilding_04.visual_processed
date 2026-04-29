@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<stream>uv2</stream>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd4</identifier>
+					<fx>shaders/std_effects/PBS_tiled.fx</fx>
+					<materialKind>111</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						albedoHeightTile0
+						<Texture>content/Hangars/h01_victory_day_2025/Environment/Buildings/Tiles/Wood_Planks_10_painted_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Hangars/h01_victory_day_2025/Environment/Buildings/Tiles/Borders_28_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/Hangars/h01_victory_day_2025/Environment/Buildings/Tiles/Borders_26_512_AM.dds</Texture>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/Hangars/h01_victory_day_2026/Buildings/h01_VD26_OutlandBuilding_04/h01_VD25_OutlandBuilding_04_blend.png</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/Hangars/h01_victory_day_2026/Buildings/h01_VD26_OutlandBuilding_04/h01_VD25_OutlandBuilding_04_GCM.dds</Texture>
+					</property>
+					<property>
+						dirtMap
+						<Texture>content/Hangars/h01_victory_day_2025/Environment/Buildings/Tiles/Dirt_Leaks_07_512_DM.dds</Texture>
+					</property>
+					<property>
+						g_dirtColor
+						<Vector4>0.000000 0.430000 0.380000 0.050000</Vector4>
+					</property>
+					<property>
+						g_dirtColorParams
+						<Vector4>0.100000 1.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_fakeShadowsAndDetailParams
+						<Vector4>0.500000 0.500000 1.000000 0.005000</Vector4>
+					</property>
+					<property>
+						g_tile0Tint
+						<Vector4>0.901961 0.874510 0.874510 1.000000</Vector4>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Hangars/h01_victory_day_2025/Environment/Buildings/Tiles/Wood_Planks_10_painted_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Hangars/h01_victory_day_2025/Environment/Buildings/Tiles/Borders_28_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Hangars/h01_victory_day_2025/Environment/Buildings/Tiles/Borders_26_512_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Hangars/h01_victory_day_2025/Environment/Buildings/Tiles/Wood_Planks_10_painted_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Hangars/h01_victory_day_2025/Environment/Buildings/Tiles/Borders_28_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Hangars/h01_victory_day_2025/Environment/Buildings/Tiles/Borders_26_512_GBMT.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.313389 26.993618 -10.967522</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>s_nd3</identifier>
+					<fx>shaders/std_effects/PBS_ext_emissive.fx</fx>
+					<materialKind>108</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						alphaReference
+						<Int>125</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h01_victory_day_2026/Buildings/h01_VD26_SenatPalace/h01_VD26_SenatPalace_AM.dds</Texture>
+					</property>
+					<property>
+						g_emissionStrength
+						<Vector4>10.000000 5.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_simpleEmissionColor
+						<Vector4>0.964706 0.560784 0.149020 0.000000</Vector4>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h01_victory_day_2026/Buildings/h01_VD26_SenatPalace/h01_VD26_SenatPalace_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h01_victory_day_2026/Buildings/h01_VD26_SenatPalace/h01_VD26_SenatPalace_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.239832 16.064974 -1.554601</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				2
+				<material>
+					<identifier>s_nd2</identifier>
+					<fx>shaders/std_effects/PBS_tiled.fx</fx>
+					<materialKind>111</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						albedoHeightTile0
+						<Texture>content/Hangars/h01_victory_day_2025/Environment/Buildings/Tiles/Roof_04_Metal_Painted_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Hangars/h01_victory_day_2025/Environment/Buildings/Tiles/Metal_Roof_10_rusted_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/Hangars/h01_victory_day_2025/Environment/Buildings/Tiles/Roof_04_Metal_Painted_512_AM.dds</Texture>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/Hangars/h01_victory_day_2026/Buildings/h01_VD26_OutlandBuilding_04/h01_VD25_OutlandBuilding_04_blend.png</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/Hangars/h01_victory_day_2026/Buildings/h01_VD26_OutlandBuilding_04/h01_VD25_OutlandBuilding_04_GCM.dds</Texture>
+					</property>
+					<property>
+						dirtMap
+						<Texture>content/Hangars/h01_victory_day_2025/Environment/Buildings/Tiles/Dirt_Leaks_04_512_DM.dds</Texture>
+					</property>
+					<property>
+						g_dirtColor
+						<Vector4>0.000000 0.430000 0.380000 0.050000</Vector4>
+					</property>
+					<property>
+						g_dirtColorParams
+						<Vector4>0.100000 0.900000 0.740000 1.000000</Vector4>
+					</property>
+					<property>
+						g_fakeShadowsAndDetailParams
+						<Vector4>0.500000 0.500000 1.000000 0.005000</Vector4>
+					</property>
+					<property>
+						g_tile0Tint
+						<Vector4>1.000000 0.972549 0.749020 1.000000</Vector4>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Hangars/h01_victory_day_2025/Environment/Buildings/Tiles/Roof_04_Metal_Painted_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Hangars/h01_victory_day_2025/Environment/Buildings/Tiles/Metal_Roof_10_rusted_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Hangars/h01_victory_day_2025/Environment/Buildings/Tiles/Roof_04_Metal_Painted_512_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Hangars/h01_victory_day_2025/Environment/Buildings/Tiles/Roof_04_Metal_Painted_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Hangars/h01_victory_day_2025/Environment/Buildings/Tiles/Metal_Roof_10_rusted_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Hangars/h01_victory_day_2025/Environment/Buildings/Tiles/Roof_04_Metal_Painted_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						g_tile1Tint
+						<Vector4>0.839216 1.000000 0.741176 1.000000</Vector4>
+					</property>
+				</material>
+				<groupOrigin>0.232658 23.569101 2.664682</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				3
+				<material>
+					<identifier>s_nd1</identifier>
+					<fx>shaders/std_effects/PBS_tiled.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>111</materialKind>
+					<property>
+						albedoHeightTile0
+						<Texture>content/Hangars/h01_victory_day_2025/Environment/Buildings/Tiles/Concrete_09_Painted_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Hangars/h01_victory_day_2025/Environment/Buildings/Tiles/Borders_28_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/Hangars/h01_victory_day_2025/Environment/Buildings/Tiles/Borders_26_512_AM.dds</Texture>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/Hangars/h01_victory_day_2026/Buildings/h01_VD26_OutlandBuilding_04/h01_VD25_OutlandBuilding_04_blend.png</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/Hangars/h01_victory_day_2026/Buildings/h01_VD26_OutlandBuilding_04/h01_VD25_OutlandBuilding_04_GCM.dds</Texture>
+					</property>
+					<property>
+						dirtMap
+						<Texture>content/Hangars/h01_victory_day_2025/Environment/Buildings/Tiles/Dirt_Leaks_07_512_DM.dds</Texture>
+					</property>
+					<property>
+						g_dirtColor
+						<Vector4>0.000000 0.430000 0.380000 0.050000</Vector4>
+					</property>
+					<property>
+						g_dirtColorParams
+						<Vector4>0.100000 1.000000 1.000000 1.000000</Vector4>
+					</property>
+					<property>
+						g_fakeShadowsAndDetailParams
+						<Vector4>0.500000 0.500000 1.000000 0.005000</Vector4>
+					</property>
+					<property>
+						g_tile0Tint
+						<Vector4>0.741176 0.741176 0.741176 1.000000</Vector4>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Hangars/h01_victory_day_2025/Environment/Buildings/Tiles/Concrete_09_Painted_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Hangars/h01_victory_day_2025/Environment/Buildings/Tiles/Borders_28_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Hangars/h01_victory_day_2025/Environment/Buildings/Tiles/Borders_26_512_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Hangars/h01_victory_day_2025/Environment/Buildings/Tiles/Concrete_09_Painted_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Hangars/h01_victory_day_2025/Environment/Buildings/Tiles/Borders_28_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Hangars/h01_victory_day_2025/Environment/Buildings/Tiles/Borders_26_512_GBMT.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.223097 2.973050 0.237668</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				4
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/PBS_tiled.fx</fx>
+					<materialKind>111</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						albedoHeightTile0
+						<Texture>content/Hangars/h01_victory_day_2025/Environment/Buildings/Tiles/Concrete_09_Painted_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Hangars/h01_victory_day_2025/Environment/Buildings/Tiles/Concrete_09_Painted_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/Hangars/h01_victory_day_2025/Environment/Buildings/Tiles/Concrete_09_Painted_512_AM.dds</Texture>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/Hangars/h01_victory_day_2026/Buildings/h01_VD26_OutlandBuilding_04/h01_VD25_OutlandBuilding_04_blend.png</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/Hangars/h01_victory_day_2026/Buildings/h01_VD26_OutlandBuilding_04/h01_VD25_OutlandBuilding_04_GCM.dds</Texture>
+					</property>
+					<property>
+						dirtMap
+						<Texture>content/Hangars/h01_victory_day_2025/Environment/Buildings/Tiles/Dirt_Leaks_07_512_DM.dds</Texture>
+					</property>
+					<property>
+						g_dirtColor
+						<Vector4>0.000000 0.430000 0.380000 0.050000</Vector4>
+					</property>
+					<property>
+						g_dirtColorParams
+						<Vector4>0.100000 0.800000 1.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_fakeShadowsAndDetailParams
+						<Vector4>0.500000 0.500000 1.000000 0.005000</Vector4>
+					</property>
+					<property>
+						g_tile0Tint
+						<Vector4>0.850980 0.823529 0.784314 1.000000</Vector4>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Hangars/h01_victory_day_2025/Environment/Buildings/Tiles/Concrete_09_Painted_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Hangars/h01_victory_day_2025/Environment/Buildings/Tiles/Concrete_09_Painted_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Hangars/h01_victory_day_2025/Environment/Buildings/Tiles/Concrete_09_Painted_512_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Hangars/h01_victory_day_2025/Environment/Buildings/Tiles/Concrete_09_Painted_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Hangars/h01_victory_day_2025/Environment/Buildings/Tiles/Concrete_09_Painted_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Hangars/h01_victory_day_2025/Environment/Buildings/Tiles/Concrete_09_Painted_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						g_tile2Tint
+						<Vector4>0.847059 0.847059 0.847059 1.000000</Vector4>
+					</property>
+				</material>
+				<groupOrigin>0.225206 15.423057 0.838671</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-49.903728 -1.273108 -19.586222</min>
+		<max>50.369045 32.872070 21.466459</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>435200</geometrySize>
+	<minUVDensity>0.007039</minUVDensity>
+</root>

@@ -284,7 +284,7 @@ class EliteVehiclesValidator(SyncValidator):
                 return makeError('invalid_vehicle')
             if item.itemTypeID is not GUI_ITEM_TYPE.VEHICLE:
                 return makeError('invalid_module_type')
-            if not item.isElite:
+            if not item.isElite and not item.isOnlyForEventBattles:
                 return makeError('vehicle_not_elite')
 
         return makeSuccess()
@@ -740,6 +740,19 @@ class PMFreeTokensValidator(_EventsCacheValidator):
     def _validate(self):
         if self.eventsCache.getPersonalMissions().getFreeTokensCount(self._branch) < self.quest.getPawnCost():
             return makeError('NOT_ENOUGH_FREE_TOKENS')
+        return makeSuccess()
+
+
+class TokenValidator(_EventsCacheValidator):
+
+    def __init__(self, tokenID, amount, isEnabled=True):
+        super(TokenValidator, self).__init__(isEnabled)
+        self._tokenID = tokenID
+        self._amount = amount
+
+    def _validate(self):
+        if self.eventsCache.questsProgress.getTokenCount(self._tokenID) < self._amount:
+            return makeError('NOT_ENOUGH_TOKENS')
         return makeSuccess()
 
 

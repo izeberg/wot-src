@@ -165,12 +165,10 @@ package net.wg.gui.lobby.manualChapter.controls
       
       private function updateScaleLayout() : void
       {
-         var _loc1_:Number = NaN;
-         var _loc3_:uint = 0;
          var _loc4_:HintRenderer = null;
-         _loc1_ = getContentScale();
+         var _loc1_:Number = getContentScale();
          var _loc2_:int = this._renderers.length;
-         _loc3_ = 0;
+         var _loc3_:uint = 0;
          while(_loc3_ < _loc2_)
          {
             _loc4_ = this._renderers[_loc3_];

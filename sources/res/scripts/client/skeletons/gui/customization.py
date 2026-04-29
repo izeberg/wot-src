@@ -1,4 +1,14 @@
+from typing import TYPE_CHECKING
 from Event import Event
+if TYPE_CHECKING:
+    from typing import Callable, Optional, Tuple, Union
+    from BigWorld import PyCustomizationHelper
+    from Math import Vector3
+    from gui.impl.lobby.customization.context.context import CustomizationContext
+    from gui.impl.lobby.customization.vehicle_anchor_states import Anchor
+    from gui.shared.gui_items.customization.c11n_items import Customization
+    from gui.shared.gui_items import Vehicle
+    from vehicle_outfit.outfit import Outfit
 
 class ICustomizationService(object):
     onRegionHighlighted = None
@@ -16,7 +26,7 @@ class ICustomizationService(object):
     def fini(self):
         raise NotImplementedError
 
-    def showCustomization(self, vehInvId=None, callback=None):
+    def showCustomization(self, vehInvID=None, progressiveItemCD=None, callback=None, season=None, modeId=None, tabId=None, isOld=False):
         raise NotImplementedError
 
     def closeCustomization(self):
@@ -29,6 +39,9 @@ class ICustomizationService(object):
         raise NotImplementedError
 
     def stopHighlighter(self):
+        raise NotImplementedError
+
+    def restartHighlighter(self):
         raise NotImplementedError
 
     def suspendHighlighter(self):
@@ -70,7 +83,7 @@ class ICustomizationService(object):
     def getEmptyOutfit(self, vehicleCD=''):
         raise NotImplementedError
 
-    def getEmptyOutfitWithNationalEmblems(self, vehicleCD):
+    def getEmptyOutfitWithNationalEmblems(self, vehicleCD, isClanHidden=False, isMarksOnGunHidden=False):
         raise NotImplementedError
 
     def getOutfitByStyleId(self, vehicleCD, styleId):

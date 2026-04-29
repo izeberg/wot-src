@@ -876,7 +876,7 @@ class IQuestsController(IGameController):
     def getQuestGroups(self):
         raise NotImplementedError
 
-    def getCurrentModeQuestsForVehicle(self, vehicle):
+    def getCurrentModeQuestsForVehicle(self, vehicle, notCompleted=False):
         raise NotImplementedError
 
 
@@ -3125,9 +3125,6 @@ class IFunRandomController(IGameController):
     def setDesiredSubModeID(self, subModeID, trustedSource=False):
         raise NotImplementedError
 
-    def getCurrentFunType(self, eventID=None):
-        raise NotImplementedError
-
     def selectFunRandomBattle(self, desiredSubModeID, callback=None):
         raise NotImplementedError
 
@@ -3532,6 +3529,9 @@ class IHangarSpaceSwitchController(IGameController):
     onSpaceUpdated = None
 
     def hangarSpaceUpdate(self, sceneName):
+        raise NotImplementedError
+
+    def getSpacePath(self, spaceName):
         raise NotImplementedError
 
     def lockHangarOverride(self, sceneName):
@@ -4604,7 +4604,3 @@ class INewbieEntryPointController(IGameController):
 
     def goToHangar(self, guiCtx):
         raise NotImplementedError
-
-
-class ISpaceDayController(IGameController):
-    pass

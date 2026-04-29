@@ -93,6 +93,10 @@
 						excludeMaskAndAOMap
 						<Texture>vehicles/italy/It08_Progetto_M40_mod_65/_skin/It08_Progetto_M40_mod_65_B9BS_3DSt/Progetto_M40_mod_65_B9BS_3DSt_proxy_AO.dds</Texture>
 					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
 				</material>
 				<groupOrigin>-1.051337 0.560044 -0.048807</groupOrigin>
 			</primitiveGroup>
@@ -127,6 +131,10 @@
 					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/italy/It08_Progetto_M40_mod_65/_skin/It08_Progetto_M40_mod_65_B9BS_3DSt/Progetto_M40_mod_65_B9BS_3DSt_proxy_AO.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>1.046237 0.585343 -0.027492</groupOrigin>

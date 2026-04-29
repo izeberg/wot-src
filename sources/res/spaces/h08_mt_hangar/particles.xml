@@ -1,12 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<forward>
+		<preloadTextures/>
 		<fn_effect_bin>particles/content_forward/pfx/null.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/environment/hangar/h08_mt_car_splash.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/hangar/h08_mt_sweep_dust.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/hangar/h08_spring_wind.eff</fn_effect_bin>
 	</forward>
 	<deferred>
+		<preloadTextures>
+			<path>
+				particles/content_deferred/pfx_textures/eff_leaves.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_splash.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/blizzard.dds
+				<type>primary</type>
+			</path>
+		</preloadTextures>
+		<preloadVisual>content/environment/env_null_model/null_model.visual</preloadVisual>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/hangar/h08_mt_sweep_dust.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/hangar/h08_spring_wind.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/hangar/h08_spring_wind_s.vfx</fn_effect_bin>
@@ -14,18 +30,5 @@
 		<fn_effect_bin>particles/environment/hangar/h08_mt_car_splash.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/hangar/h08_mt_sweep_dust.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/hangar/h08_spring_wind.eff</fn_effect_bin>
-		<preloadVisual>particles/mesh_particles/stone_tile_01.visual</preloadVisual>
-		<preload>
-			<shader>data/shaders/ps.fx</shader>
-			<texture>particles/content_deferred/pfx_textures/eff_leaves.dds</texture>
-		</preload>
-		<preload>
-			<shader>data/shaders/ps.fx</shader>
-			<texture>particles/content_deferred/pfx_textures/eff_tex_splash.dds</texture>
-		</preload>
-		<preload>
-			<shader>data/shaders/ps.fx</shader>
-			<texture>particles/content_deferred/pfx_textures/blizzard.dds</texture>
-		</preload>
 	</deferred>
 </root>

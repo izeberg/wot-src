@@ -163,7 +163,7 @@
 				</amplitude>
 				<recoilEffect>small</recoilEffect>
 			</recoil>
-			<effects>shot_autoshoot_medium</effects>
+			<effects>shot_autoshoot_small_shell_inside</effects>
 			<reloadEffect>reload_autoshoot_reloading_20_49</reloadEffect>
 			<pitchLimits>
 				<minPitch>
@@ -261,7 +261,7 @@
 				</amplitude>
 				<recoilEffect>small</recoilEffect>
 			</recoil>
-			<effects>shot_autoshoot_medium</effects>
+			<effects>shot_autoshoot_small_shell_inside</effects>
 			<reloadEffect>reload_autoshoot_reloading_20_49</reloadEffect>
 			<pitchLimits>
 				<minPitch>
@@ -360,7 +360,7 @@
 				</amplitude>
 				<recoilEffect>small</recoilEffect>
 			</recoil>
-			<effects>shot_autoshoot_medium</effects>
+			<effects>shot_autoshoot_small_shell_inside</effects>
 			<reloadEffect>reload_autoshoot_reloading_20_49</reloadEffect>
 			<pitchLimits>
 				<minPitch>
@@ -1008,7 +1008,7 @@
 				</amplitude>
 				<recoilEffect>small</recoilEffect>
 			</recoil>
-			<effects>shot_autoshoot_medium</effects>
+			<effects>shot_autoshoot_medium_shell_inside</effects>
 			<reloadEffect>reload_autoshoot_reloading_50_84</reloadEffect>
 			<pitchLimits>
 				<minPitch>
@@ -1218,7 +1218,7 @@
 				</amplitude>
 				<recoilEffect>medium</recoilEffect>
 			</recoil>
-			<effects>shot_autoshoot_medium</effects>
+			<effects>shot_autoshoot_medium_shell_ground</effects>
 			<reloadEffect>reload_autoshoot_reloading_50_84</reloadEffect>
 			<pitchLimits>
 				<minPitch>
@@ -1317,7 +1317,7 @@
 				</amplitude>
 				<recoilEffect>medium</recoilEffect>
 			</recoil>
-			<effects>shot_autoshoot_medium</effects>
+			<effects>shot_autoshoot_medium_shell_ground</effects>
 			<reloadEffect>reload_autoshoot_reloading_50_84</reloadEffect>
 			<pitchLimits>
 				<minPitch>

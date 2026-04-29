@@ -675,7 +675,7 @@ package net.wg.gui.battle.epicBattle.views
       
       private function onDeploymentLaneChangedHandler(param1:EpicDeploymentLaneEvent) : void
       {
-         this.epicDeploymentWarning.updateLane(param1.currentLane,param1.selectedLane);
+         this.epicDeploymentWarning.update(param1.warningValue);
          this.updateBattleQuestAndWarningPosition();
       }
       

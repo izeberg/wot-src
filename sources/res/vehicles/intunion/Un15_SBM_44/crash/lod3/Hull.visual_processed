@@ -149,12 +149,54 @@
 				</material>
 				<groupOrigin>0.000000 -0.398205 0.012478</groupOrigin>
 			</primitiveGroup>
+			<primitiveGroup>
+				2
+				<material>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<materialKind>0</materialKind>
+					<identifier>tank_mat_inside</identifier>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>vehicles/russian/Crash_inside/crash_inside_AM.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/russian/Crash_inside/crash_inside_GMM.dds</Texture>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_useNormalPackDXT1
+						<Bool>true</Bool>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/russian/Crash_inside/crash_inside_NM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/russian/Crash_inside/crash_inside_AO.dds</Texture>
+					</property>
+					<property>
+						alphaReference
+						<Int>0</Int>
+					</property>
+				</material>
+				<groupOrigin>0.005048 0.081807 0.204363</groupOrigin>
+			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
 		<min>-1.644702 -0.899083 -3.454899</min>
 		<max>1.675009 0.606068 3.061244</max>
 	</boundingBox>
-	<geometrySize>180508</geometrySize>
-	<minUVDensity>0.001075</minUVDensity>
+	<geometrySize>183006</geometrySize>
+	<minUVDensity>0.000728</minUVDensity>
 </root>

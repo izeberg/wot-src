@@ -7,10 +7,56 @@
 		<resource/>
 	</sequenceObject>
 	<sequenceObject>
-		<name>stg_09_cooling_system</name>
+		<name>Stage_09</name>
+		<type>sound</type>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>6.333333</duration>
+				<value>Root|</value>
+			</frame>
+		</track>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.059603 1.056752 -2.722101</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>ay_ep_08_seq_stage_09</name>
+			<type>sound</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>6.266667</duration>
+				<sequenceSound>ay_ep_08_seq_stage_09</sequenceSound>
+				<type>play_till_end</type>
+				<fade>0.000000</fade>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_9_transmission</name>
 		<type>model</type>
-		<resource>content/Hangars/h00_armory_yard/environment/Constructor/R226_Object_757A/normal/lod0/stg_9_transmission_xray.model</resource>
-		<castsShadow>false</castsShadow>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/A176_OTAC_LK_7605/normal/lod0/stg_9_transmission_xray.model</resource>
+		<track>
+			<name>visibility</name>
+			<type>bool</type>
+			<frame>
+				<startTime>1.000000</startTime>
+				<value>false</value>
+			</frame>
+			<frame>
+				<startTime>2.033334</startTime>
+				<value>true</value>
+			</frame>
+		</track>
 		<track>
 			<name>material property float</name>
 			<type>float</type>
@@ -63,41 +109,6 @@
 				<inTangent>-0.111111 0.120261 0.189542 -0.000000</inTangent>
 				<outTangent>-0.111111 0.120261 0.189542 -0.000000</outTangent>
 				<tangentMode>0</tangentMode>
-			</frame>
-		</track>
-	</sequenceObject>
-	<sequenceObject>
-		<name>Stage_09</name>
-		<type>sound</type>
-		<track>
-			<name>attach</name>
-			<type>attach</type>
-			<frame>
-				<startTime>1.000000</startTime>
-				<duration>6.333333</duration>
-				<value>Root|</value>
-			</frame>
-		</track>
-		<track>
-			<name>position</name>
-			<type>vector3</type>
-			<frame>
-				<startTime>1.000000</startTime>
-				<value>-0.603979 1.119582 -2.901360</value>
-				<inTangent>0.000000 0.000000 0.000000</inTangent>
-				<outTangent>0.000000 0.000000 0.000000</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-		</track>
-		<track>
-			<name>ay_ep_07_seq_stage_09</name>
-			<type>sound</type>
-			<frame>
-				<startTime>1.000000</startTime>
-				<duration>6.000000</duration>
-				<sequenceSound>ay_ep_07_seq_stage_09</sequenceSound>
-				<type>play_till_end</type>
-				<fade>0.000000</fade>
 			</frame>
 		</track>
 	</sequenceObject>

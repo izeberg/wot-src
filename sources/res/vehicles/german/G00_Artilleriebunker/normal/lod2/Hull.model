@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>vehicles/german/G00_Artilleriebunker/normal/lod2/Hull</nodefullVisual>
 	<parent>vehicles/german/G00_Artilleriebunker/normal/lod3/Hull</parent>
 	<extent>96.000000</extent>
 	<visibilityBox>
@@ -8,4 +7,5 @@
 		<max>4.031862 1.074255 4.031863</max>
 	</visibilityBox>
 	<tank>true</tank>
+	<nodefullVisual>vehicles/german/G00_Artilleriebunker/normal/lod2/Hull</nodefullVisual>
 </root>

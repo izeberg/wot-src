@@ -73,11 +73,9 @@ package net.wg.gui.lobby.clans.invites.renderers
       
       override protected function onDataUpdated() : void
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = false;
          super.onDataUpdated();
-         _loc1_ = this._rendererVO != null;
-         _loc2_ = _loc1_ && this._rendererVO.hasShowMoreButton;
+         var _loc1_:Boolean = this._rendererVO != null;
+         var _loc2_:Boolean = _loc1_ && this._rendererVO.hasShowMoreButton;
          var _loc3_:Boolean = _loc1_ && this._rendererVO.enabled && !_loc2_;
          if(_loc1_)
          {

@@ -2842,7 +2842,7 @@
 						<collisionModelServer>vehicles/british/GB140_Champion/collision/Gun_01.model</collisionModelServer>
 						<collisionModelClient>vehicles/british/GB140_Champion/collision_client/Gun_01.model</collisionModelClient>
 					</hitTester>
-					<effects>shot_huge</effects>
+					<effects>shot_huge_APFSDS</effects>
 					<edgeByVisualModel>false</edgeByVisualModel>
 					<camouflage>
 						<density>101.982803 103.644943</density>

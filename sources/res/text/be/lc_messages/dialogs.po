@@ -1216,25 +1216,65 @@ msgstr "Ці перавесці члена экіпажа на %(tankName)s?"
 msgid "crewMemberTankChange/transfer"
 msgstr "Перавесці"
 
-msgid "customization/applyProjectionDecalToOtherSeasons/cancel"
+msgid "customization/applyToOtherSeason/desert"
+msgstr "на пустынной"
+
+msgid "customization/applyToOtherSeason/message"
+msgstr ""
+"Все установленные декали %(season)s карте будут %(removed)s с машины,\n"
+"т. к. данная ячейка недоступна для %(this)s."
+
+msgid "customization/applyToOtherSeason/summer"
+msgstr "на летней"
+
+msgid "customization/applyToOtherSeason/winter"
+msgstr "на зимней"
+
+msgid "customization/applyToOtherSeasons/alert_message"
+msgstr ""
+"При нанесении данной декали в эту ячейку для всех карт установленные декали %(season)s картах будут %(removed)s с машины,\n"
+"т. к. данная ячейка недоступна для %(this)s."
+
+msgid "customization/applyToOtherSeasons/cancel"
 msgstr "Скасаваць"
 
-msgid "customization/applyProjectionDecalToOtherSeasons/message"
-msgstr ""
-"Усе ўсталяваныя дэколі {season} мапах будуць {removed} з машыны,\n"
-"бо гэтая ячэйка недаступная для {this}"
+msgid "customization/applyToOtherSeasons/desert"
+msgstr "на пустынных"
 
-msgid "customization/applyProjectionDecalToOtherSeasons/submit"
+msgid "customization/applyToOtherSeasons/message"
+msgstr ""
+"Все установленные декали %(season)s картах будут %(removed)s с машины,\n"
+"т. к. данная ячейка недоступна для %(this)s."
+
+msgid "customization/applyToOtherSeasons/removed"
+msgstr "прыбраны"
+
+msgid "customization/applyToOtherSeasons/submit"
 msgstr "Пацвердзіць"
 
-msgid "customization/applyProjectionDecalToOtherSeasons/these"
-msgstr "гэтых мапаў."
+msgid "customization/applyToOtherSeasons/summer"
+msgstr "на летніх"
 
-msgid "customization/applyProjectionDecalToOtherSeasons/this"
-msgstr "гэтай мапы."
+msgid "customization/applyToOtherSeasons/summer_desert"
+msgstr "на летніх і пустынных"
 
-msgid "customization/applyProjectionDecalToOtherSeasons/title"
+msgid "customization/applyToOtherSeasons/summer_winter"
+msgstr "на летніх і зімовых"
+
+msgid "customization/applyToOtherSeasons/these"
+msgstr "этих карт"
+
+msgid "customization/applyToOtherSeasons/this"
+msgstr "этой карты"
+
+msgid "customization/applyToOtherSeasons/title"
 msgstr "Усталяваць дадзеную дэколь у гэтую ячэйку для ўсіх мапаў?"
+
+msgid "customization/applyToOtherSeasons/winter"
+msgstr "на зімовых"
+
+msgid "customization/applyToOtherSeasons/winter_desert"
+msgstr "на зімовых і пустынных"
 
 msgid "customization/buy_install_bound/message"
 msgstr ""
@@ -1652,6 +1692,12 @@ msgstr ""
 
 msgid "equipmentDestroy/conformation"
 msgstr "Знішчыць абсталяванне «%(equipment)s»?"
+
+msgid "equipmentDestroy/warningMsg"
+msgstr ""
+"Обратите внимание: уничтожив оборудование, вы сможете восстановить его "
+"в меню «Восстановление». Оно находится на Складе в запасах, во вкладке "
+"«Оборудование»."
 
 msgid "equipmentPurcase/conformation/all"
 msgstr "Усталяваць абсталяванне «%(equipment)s»?"
@@ -2539,6 +2585,12 @@ msgstr "Выйсце з бою да яго заканчэння або да зн
 msgid "punishmentWindow/reason/epic_deserter"
 msgstr "Выйсце з бою да яго заканчэння або да знішчэння ўласнай машыны"
 
+msgid "punishmentWindow/reason/hb_afk"
+msgstr "?empty?"
+
+msgid "punishmentWindow/reason/hb_deserter"
+msgstr "?empty?"
+
 msgid "punishmentWindow/reason/suicide"
 msgstr "Наўмыснае знішчэнне сваёй машыны"
 
@@ -2998,6 +3050,20 @@ msgstr "Налады"
 
 msgid "resetGraphics/title"
 msgstr "Змена графічных налад"
+
+msgid "restoreEquipment/button/cancel"
+msgstr "Скасаваць"
+
+msgid "restoreEquipment/button/restore"
+msgstr "Аднавіць"
+
+msgid "restoreEquipment/header"
+msgstr ""
+"Восстановить оборудование\n"
+" «%(equipmentName)s»?"
+
+msgid "restoreEquipment/text"
+msgstr "Стоимость восстановления 1 ед.:"
 
 msgid "restoreTankman/buttons/recover"
 msgstr "Аднавіць"

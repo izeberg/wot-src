@@ -158,6 +158,11 @@ msgstr ""
 "Буду гатовы да стрэлу праз: <Час перанабівання> с, снарадаў у магазіне: "
 "<Колькасць снарадаў> шт."
 
+msgid "chat_example/reloading_cassette_auto_shoot"
+msgstr ""
+"К выстрелу готов через: <Время перезарядки> с, снарядов в ленте: <Количество"
+" снарядов> шт."
+
 msgid "chat_example/reloading_gun"
 msgstr "Перанабіваю яшчэ <Час перанабівання> c!"
 
@@ -166,6 +171,11 @@ msgstr "Гатовы да стрэлу!"
 
 msgid "chat_example/reloading_ready_cassette"
 msgstr "Гатовы да стрэлу! Снарадаў у магазіне: <Колькасць снарадаў> шт."
+
+msgid "chat_example/reloading_ready_cassette_auto_shoot"
+msgstr ""
+"К выстрелу готов! До разрядки ленты осталось снарядов: <Количество "
+"снарядов> шт."
 
 msgid "chat_example/reloading_unavailable"
 msgstr "Боезапас пусты."
@@ -290,6 +300,12 @@ msgstr "Рухаюся на пазіцыю!"
 msgid "chat_shortcuts/going_there_gridInfo"
 msgstr "Рухаюся ў %(gridId)s"
 
+msgid "chat_shortcuts/hb_ability/artillery_on_yourself"
+msgstr "Вызываю огонь на себя!"
+
+msgid "chat_shortcuts/hb_ability/last_stand"
+msgstr "Бьёмся до конца!"
+
 msgid "chat_shortcuts/help_me"
 msgstr "Патрэбна дапамога!"
 
@@ -310,6 +326,10 @@ msgstr ""
 "Да стрэлу гатовы праз: %(floatArg1)d с, снарадаў у магазіне: %(int32Arg1)s "
 "шт."
 
+msgid "chat_shortcuts/reloading_cassette_auto_shoot"
+msgstr ""
+"К выстрелу готов через: %(floatArg1)d с, снарядов в ленте: %(int32Arg1)s шт."
+
 msgid "chat_shortcuts/reloading_gun"
 msgstr "Перанабіваю яшчэ %(floatArg1)d c!"
 
@@ -318,6 +338,9 @@ msgstr "Гатовы да стрэлу!"
 
 msgid "chat_shortcuts/reloading_ready_cassette"
 msgstr "Да стрэлу гатовы! Снарадаў у магазіне: %(int32Arg1)s шт."
+
+msgid "chat_shortcuts/reloading_ready_cassette_auto_shoot"
+msgstr "К выстрелу готов! Снарядов в ленте: %(int32Arg1)s шт."
 
 msgid "chat_shortcuts/reloading_unavailable"
 msgstr "Боезапас пусты."
@@ -702,6 +725,9 @@ msgstr "Пашкоджанні артылерыйскім абстрэлам"
 
 msgid "efficiencyRibbons/CannonDmg"
 msgstr "Пашкоджанні гарматай"
+
+msgid "efficiencyRibbons/HBDeathZone"
+msgstr "Урон от запретной зоны"
 
 msgid "efficiencyRibbons/armor"
 msgstr "Блакіраванне пашкоджанняў"
@@ -1752,6 +1778,11 @@ msgid "postmortem/tips/exitHangar/text"
 msgstr ""
 "Esc > Вярнуцца ў Гараж.\n"
 "Уступіце ў новы бой на іншай машыне."
+
+msgid "postmortem/tips/exitHangar/text_hb"
+msgstr ""
+"Esc > Выйти в Ангар.\n"
+"Попробуйте свои силы в новом бою!"
 
 msgid "postmortem/tips/observerMode/label"
 msgstr "Рэжым назіральніка"

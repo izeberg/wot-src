@@ -161,10 +161,6 @@
 						normalMap
 						<Texture>content/Environment/hd_env_UNI_0046_BarrelSnow/hd_env_UNI_0046_BarrelSnow_BANM.dds</Texture>
 					</property>
-					<property>
-						ditherTestEnable
-						<Bool>true</Bool>
-					</property>
 				</material>
 				<groupOrigin>0.988166 0.894851 -0.381778</groupOrigin>
 			</primitiveGroup>

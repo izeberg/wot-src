@@ -213,8 +213,7 @@ package net.wg.gui.messenger.controls
       
       private function showHighlight(param1:Boolean, param2:int, param3:int) : void
       {
-         var _loc4_:int = 0;
-         _loc4_ = rowHeight;
+         var _loc4_:int = rowHeight;
          this.highlight.x = 0;
          this.highlight.y = param2 * _loc4_;
          this.highlight.width = _width;

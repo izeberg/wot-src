@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/chinese/Ch76_HSD_1/normal/lod2/Luke_anim</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.122896 1.920345 -2.328696</min>
+		<max>0.122896 2.157145 -2.272509</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/chinese/Ch76_HSD_1/normal/lod1/luke_anim</nodefullVisual>
+	<tank>true</tank>
+</root>

@@ -2,50 +2,28 @@
 <root>
 	<forward>
 		<name>default</name>
-		<preload>
-			<shader>\data\shaders\ps_solid.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_tex.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_water.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_tex.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_water.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_dirt.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_leaves.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_long.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_tex.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_long.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_tex_long.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_dirt.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_long.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_dirt.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_tex.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_long.fx</shader>
-			<texture>particles/content_forward/PFX_textures/tracers.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_water.fx</shader>
-			<texture>particles/content_forward/PFX_textures/tracers.dds</texture>
-		</preload>
+		<preloadTextures>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_long.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/tracers.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_leaves.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_dirt.dds
+				<type>primary</type>
+			</path>
+		</preloadTextures>
 		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/hd_bld_eu_236_vhouse.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/hd_bld_uni_712_littlewoodshed.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/inf_bld_uni_000_base_02.vfx</fn_effect_bin>
@@ -288,6 +266,24 @@
 		<preloadVisual>particles/mesh_particles/wood_stick_03.visual</preloadVisual>
 	</forward>
 	<deferred>
+		<preloadTextures>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_long.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_leaves.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_water.dds
+				<type>water</type>
+			</path>
+		</preloadTextures>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/hd_bld_eu_236_vhouse.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/hd_bld_uni_712_littlewoodshed.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/inf_bld_uni_000_base_02.vfx</fn_effect_bin>

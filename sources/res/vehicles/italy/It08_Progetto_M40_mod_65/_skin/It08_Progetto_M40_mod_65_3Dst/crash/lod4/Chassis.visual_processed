@@ -93,6 +93,10 @@
 						normalMap
 						<Texture>vehicles/italy/It08_Progetto_M40_mod_65/_skin/It08_Progetto_M40_mod_65_3Dst/Progetto_M40_mod_65_3Dst_10_proxy_ANM.dds</Texture>
 					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
 				</material>
 				<groupOrigin>1.038221 0.571086 -0.091375</groupOrigin>
 			</primitiveGroup>
@@ -127,6 +131,10 @@
 					<property>
 						normalMap
 						<Texture>vehicles/italy/It08_Progetto_M40_mod_65/_skin/It08_Progetto_M40_mod_65_3Dst/Progetto_M40_mod_65_3Dst_10_proxy_ANM.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>-1.052520 0.569951 -0.062106</groupOrigin>

@@ -2,7 +2,7 @@ package net.wg.gui.lobby.storage.categories.cards
 {
    import net.wg.gui.components.controls.VO.ItemPriceVO;
    
-   public class VehicleCardVO extends BaseCardVO
+   public class VehicleCardVO extends RestoreBaseCardVO
    {
       
       private static const TRADE_OFF_PRICE_FIELD:String = "tradeOffPrice";
@@ -11,10 +11,6 @@ package net.wg.gui.lobby.storage.categories.cards
       public var infoImgSrc:String = "";
       
       public var infoText:String = "";
-      
-      public var timerText:String = "";
-      
-      public var timerIcon:String = "";
       
       public var rentText:String = "";
       
@@ -34,7 +30,7 @@ package net.wg.gui.lobby.storage.categories.cards
          {
             return false;
          }
-         return super.isEqual(_loc2_) && this.infoImgSrc == _loc2_.infoImgSrc && this.infoText == _loc2_.infoText && this.timerText == _loc2_.timerText && this.timerIcon == _loc2_.timerIcon && this.rentText == _loc2_.rentText && this.rentIcon == _loc2_.rentIcon && (this.tradeOffPrice == _loc2_.tradeOffPrice || this.tradeOffPrice && this.tradeOffPrice.isEqual(_loc2_.tradeOffPrice));
+         return super.isEqual(_loc2_) && this.infoImgSrc == _loc2_.infoImgSrc && this.infoText == _loc2_.infoText && this.rentText == _loc2_.rentText && this.rentIcon == _loc2_.rentIcon && (this.tradeOffPrice == _loc2_.tradeOffPrice || this.tradeOffPrice && this.tradeOffPrice.isEqual(_loc2_.tradeOffPrice));
       }
       
       override protected function onDataWrite(param1:String, param2:Object) : Boolean

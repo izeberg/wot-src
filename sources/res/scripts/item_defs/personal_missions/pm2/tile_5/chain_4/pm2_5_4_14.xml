@@ -90,8 +90,7 @@ def onFinishBattle(eventType, eventData, quest, processor):
     countdown = questProgress.getProgress(PROGRESS_ID_MAIN).getParam(&apos;countdown&apos;)
     method = questProgress.getProgress(PROGRESS_ID_MAIN).getParam(&apos;attackReasons&apos;)
     goal = questProgress.getProgress(PROGRESS_ID_MAIN).getGoal()
-    mainCondition = sum([len(shots) for shots in brfilter.filterDamageTo(time=countdown, method=method,
-                                                                         result=[&apos;damaged&apos;]).itervalues()]) &gt;= goal
+    mainCondition = brfilter.sumShots(brfilter.filterDamageTo(time=countdown, method=method, result=[&apos;damaged&apos;])) &gt;= goal
     if mainCondition:
         questProgress.setCompleted(PROGRESS_ID_MAIN)
         questProgress.increaseUntilComplete(PROGRESS_ID_MAIN_SERIES, 1)

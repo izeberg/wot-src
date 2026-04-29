@@ -575,10 +575,6 @@
 						<Texture>content/Buildings/hd_bld_EU_016_Tohouse/EU_OldCity_01_05_blend.png</Texture>
 					</property>
 					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
 						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>
@@ -709,10 +705,6 @@
 					<property>
 						blendMask
 						<Texture>content/Buildings/hd_bld_EU_016_Tohouse/EU_OldCity_01_05_blend.png</Texture>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
 					</property>
 					<property>
 						doubleSided

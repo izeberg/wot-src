@@ -31,14 +31,14 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<primitive>indices</primitive>
+			<vertices>turret_01_Shape.vertices</vertices>
+			<primitive>turret_01_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_proxy</identifier>
-					<materialKind>0</materialKind>
+					<identifier>tank_turret_01</identifier>
 					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
 				</material>
 				<groupOrigin>0.000000 -0.000000 0.000000</groupOrigin>
 			</primitiveGroup>

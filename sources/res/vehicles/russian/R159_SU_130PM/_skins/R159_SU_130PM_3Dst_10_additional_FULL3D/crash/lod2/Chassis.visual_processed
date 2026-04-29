@@ -104,10 +104,7 @@
 					</property>
 					<property>
 						crash_coefficient
-						<Float>
-							0.3
-							<!--BW_String-->
-						</Float>
+						<Float>0.300000</Float>
 					</property>
 				</material>
 				<groupOrigin>1.303294 0.507030 0.270341</groupOrigin>
@@ -155,10 +152,7 @@
 					</property>
 					<property>
 						crash_coefficient
-						<Float>
-							0.3
-							<!--BW_String-->
-						</Float>
+						<Float>0.300000</Float>
 					</property>
 				</material>
 				<groupOrigin>-1.322516 0.505279 -0.011225</groupOrigin>

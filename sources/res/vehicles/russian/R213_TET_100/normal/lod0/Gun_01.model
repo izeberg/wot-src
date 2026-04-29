@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>vehicles/russian/R213_TET_100/normal/lod0/Gun_01</nodefullVisual>
 	<tank>true</tank>
 	<parent>vehicles/russian/R213_TET_100/normal/lod1/Gun_01</parent>
 	<extent>32.000000</extent>
@@ -8,4 +7,5 @@
 		<min>-0.470876 -0.649240 0.054631</min>
 		<max>0.628762 0.598942 5.837786</max>
 	</visibilityBox>
+	<nodefullVisual>vehicles/russian/R213_TET_100/normal/lod0/Gun_01</nodefullVisual>
 </root>

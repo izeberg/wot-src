@@ -55,6 +55,8 @@ package
       
       public static const SELLITEM:String = "#waiting:sellItem";
       
+      public static const RESTOREITEM:String = "#waiting:restoreItem";
+      
       public static const BUYITEM:String = "#waiting:buyItem";
       
       public static const BUYANDINSTALL:String = "#waiting:buyAndInstall";
@@ -344,6 +346,8 @@ package
       public static const PARAGONS_LOADSELECTOR:String = "#waiting:paragons/loadSelector";
       
       public static const PARAGONS_SELECTREWARD:String = "#waiting:paragons/selectReward";
+      
+      public static const DOWNLOAD_HISTORICALBATTLES:String = "#waiting:download/historicalBattles";
        
       
       public function WAITING()

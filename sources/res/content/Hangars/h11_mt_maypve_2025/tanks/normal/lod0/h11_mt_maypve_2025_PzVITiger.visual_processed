@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd1</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<materialKind>112</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h11_mt_maypve_2025/tanks/h11_mt_maypve_2025_PzVITiger_track_AM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h11_mt_maypve_2025/tanks/h11_mt_maypve_2025_PzVITiger_track_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h11_mt_maypve_2025/tanks/h11_mt_maypve_2025_PzVITiger_track_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.000068 0.621265 0.091195</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<materialKind>112</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h11_mt_maypve_2025/tanks/h11_mt_maypve_2025_PzVITiger_AM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h11_mt_maypve_2025/tanks/h11_mt_maypve_2025_PzVITiger_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h11_mt_maypve_2025/tanks/h11_mt_maypve_2025_PzVITiger_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-1.311572 1.578807 0.911322</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-4.333533 -0.002791 -3.651258</min>
+		<max>3.651259 3.109791 5.002358</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>177896</geometrySize>
+	<minUVDensity>0.001003</minUVDensity>
+</root>
