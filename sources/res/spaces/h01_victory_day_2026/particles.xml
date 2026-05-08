@@ -26,10 +26,6 @@
 				particles/content_forward/pfx_textures/flag_h01_hangar.dds
 				<type>primary</type>
 			</path>
-			<path>
-				particles/content_forward/pfx_textures/sparks_3.dds
-				<type>primary</type>
-			</path>
 		</preloadTextures>
 		<preloadVisual>content/environment/env_null_model/null_model.visual</preloadVisual>
 		<fn_effect_bin>particles/content_forward/pfx/environment/hangar/h01_flag_sparks.vfx</fn_effect_bin>

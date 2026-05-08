@@ -235608,58 +235608,6 @@
 		</contours>
 		<contours>
 			<trimmingParams>
-				<textureName>particles/content_forward/PFX_textures/sparks_3.dds</textureName>
-				<columns>1</columns>
-				<rows>3</rows>
-				<uvLeft>0.000000</uvLeft>
-				<uvRight>1.000000</uvRight>
-				<uvBottom>0.000000</uvBottom>
-				<uvTop>0.750000</uvTop>
-				<alphaThreshold>1.000000</alphaThreshold>
-			</trimmingParams>
-			<contour>
-				<vertex>0.047059 0.533333</vertex>
-				<vertex>0.066667 0.301961</vertex>
-				<vertex>0.090196 0.725490</vertex>
-				<vertex>0.125490 0.133333</vertex>
-				<vertex>0.254902 0.803922</vertex>
-				<vertex>0.439216 0.133333</vertex>
-				<vertex>0.415686 0.733333</vertex>
-				<vertex>0.470588 0.498039</vertex>
-			</contour>
-			<contour>
-				<vertex>0.047059 0.533333</vertex>
-				<vertex>0.066667 0.301961</vertex>
-				<vertex>0.090196 0.725490</vertex>
-				<vertex>0.125490 0.133333</vertex>
-				<vertex>0.254902 0.803922</vertex>
-				<vertex>0.439216 0.133333</vertex>
-				<vertex>0.415686 0.733333</vertex>
-				<vertex>0.470588 0.498039</vertex>
-			</contour>
-			<contour>
-				<vertex>0.047059 0.533333</vertex>
-				<vertex>0.062745 0.400000</vertex>
-				<vertex>0.090196 0.725490</vertex>
-				<vertex>0.109804 0.200000</vertex>
-				<vertex>0.254902 0.803922</vertex>
-				<vertex>0.270588 0.200000</vertex>
-				<vertex>0.325490 0.607843</vertex>
-				<vertex>0.301961 0.333333</vertex>
-			</contour>
-			<contour>
-				<vertex>0.462745 0.400000</vertex>
-				<vertex>0.462745 0.533333</vertex>
-				<vertex>0.439216 0.133333</vertex>
-				<vertex>0.415686 0.733333</vertex>
-				<vertex>0.125490 0.133333</vertex>
-				<vertex>0.109804 0.733333</vertex>
-				<vertex>0.062745 0.309804</vertex>
-				<vertex>0.062745 0.533333</vertex>
-			</contour>
-		</contours>
-		<contours>
-			<trimmingParams>
 				<textureName>particles/content_forward/PFX_textures/tex_energy.dds</textureName>
 				<columns>7</columns>
 				<rows>7</rows>

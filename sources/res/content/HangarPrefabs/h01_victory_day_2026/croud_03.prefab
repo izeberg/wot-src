@@ -18,11 +18,6 @@
 			<flags>0</flags>
 		</GameObject>
 		<GameObject>
-			<name>hd_char_h_VD26_0038_Civil_Man_02</name>
-			<UUID>6e8d6d21-5784-4f12-a46e-141c91921a24</UUID>
-			<flags>0</flags>
-		</GameObject>
-		<GameObject>
 			<name>h01_vd_23_Crowd_03</name>
 			<UUID>cc53d086-292b-4a25-91e8-8d9fa9b8c675</UUID>
 			<flags>0</flags>
@@ -30,11 +25,6 @@
 		<GameObject>
 			<name>h01_vd_23_Crowd_03</name>
 			<UUID>30b86fc2-b2cf-4691-bfc5-e4e63ab6e0a2</UUID>
-			<flags>0</flags>
-		</GameObject>
-		<GameObject>
-			<name>h01_vd_23_Crowd_03</name>
-			<UUID>0d2316d9-81ae-4d4b-8b17-c35ef3a9e333</UUID>
 			<flags>0</flags>
 		</GameObject>
 		<GameObject>
@@ -203,11 +193,6 @@
 			<flags>0</flags>
 		</GameObject>
 		<GameObject>
-			<name>Veteran_Man_Empty_02_VD</name>
-			<UUID>6162a9f8-2f49-4d8f-8099-1d3160cecef2</UUID>
-			<flags>0</flags>
-		</GameObject>
-		<GameObject>
 			<name>Veteran_Man_Empty_VD</name>
 			<UUID>9390121b-677e-4341-8873-ef1e52b9fc5b</UUID>
 			<flags>0</flags>
@@ -243,18 +228,8 @@
 			<flags>0</flags>
 		</GameObject>
 		<GameObject>
-			<name>h01_VD25_Crowd_02</name>
-			<UUID>73d6f0bc-a765-4bc9-82a6-6d749dbdab45</UUID>
-			<flags>0</flags>
-		</GameObject>
-		<GameObject>
 			<name>h01_VD25_Crowd_03</name>
 			<UUID>bb145e02-0a94-4b79-b718-774494d60cf3</UUID>
-			<flags>0</flags>
-		</GameObject>
-		<GameObject>
-			<name>h01_VD25_Crowd_06</name>
-			<UUID>894de018-d69e-4983-91f3-4c481138dcfd</UUID>
 			<flags>0</flags>
 		</GameObject>
 		<GameObject>
@@ -390,6 +365,21 @@
 		<GameObject>
 			<name>h01_VD26_Projector_01</name>
 			<UUID>3442de85-62a1-3e25-ab7e-884aed2fcfe1</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>Veteran_Man_Empty_02_VD</name>
+			<UUID>746a88d5-8e80-3659-bef6-e0c6355b995e</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>hd_char_h_VD26_0038_Civil_Man_02</name>
+			<UUID>64feb526-fdf1-3171-80d6-126fa722758b</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>hd_char_h_VD26_0037_Civil_Woman_02</name>
+			<UUID>d964b385-745a-3eaa-998e-59bb62c91e4b</UUID>
 			<flags>0</flags>
 		</GameObject>
 	</GameObjects>
@@ -1147,26 +1137,6 @@
 					</property>
 				</config>
 			</component>
-			<component>
-				<objectIndex>76</objectIndex>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Parent</name>
-						<link>62552a08-bcb7-431f-98a4-9fb8868c3670</link>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>77</objectIndex>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Parent</name>
-						<link>62552a08-bcb7-431f-98a4-9fb8868c3670</link>
-					</property>
-				</config>
-			</component>
 		</ComponentPool>
 		<ComponentPool>
 			<type>Transform</type>
@@ -1247,30 +1217,6 @@
 					<property>
 						<name>Position</name>
 						<value>
-							-11.8595 -0.0095066 -14.1312
-							<!--BW_String-->
-						</value>
-					</property>
-					<property>
-						<name>Scale</name>
-						<value>1 1 1</value>
-					</property>
-					<property>
-						<name>Rotation</name>
-						<value>
-							-0 2.84435 0
-							<!--BW_String-->
-						</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>4</objectIndex>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Position</name>
-						<value>
 							-7.83652 -0.118351 -19.5507
 							<!--BW_String-->
 						</value>
@@ -1289,7 +1235,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>5</objectIndex>
+				<objectIndex>4</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -1316,34 +1262,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>6</objectIndex>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Position</name>
-						<value>
-							37.7975 -0.00181744 13.6431
-							<!--BW_String-->
-						</value>
-					</property>
-					<property>
-						<name>Scale</name>
-						<value>
-							0.999996 1 0.999996
-							<!--BW_String-->
-						</value>
-					</property>
-					<property>
-						<name>Rotation</name>
-						<value>
-							-9.8212e-08 -1.50046 -6.07311e-08
-							<!--BW_String-->
-						</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>7</objectIndex>
+				<objectIndex>5</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -1367,7 +1286,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>8</objectIndex>
+				<objectIndex>6</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -1394,7 +1313,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>9</objectIndex>
+				<objectIndex>7</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -1418,7 +1337,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>10</objectIndex>
+				<objectIndex>8</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -1442,7 +1361,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>11</objectIndex>
+				<objectIndex>9</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -1466,7 +1385,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>12</objectIndex>
+				<objectIndex>10</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -1493,7 +1412,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>13</objectIndex>
+				<objectIndex>11</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -1517,7 +1436,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>14</objectIndex>
+				<objectIndex>12</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -1541,7 +1460,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>15</objectIndex>
+				<objectIndex>13</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -1565,7 +1484,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>16</objectIndex>
+				<objectIndex>14</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -1589,7 +1508,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>17</objectIndex>
+				<objectIndex>15</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -1613,7 +1532,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>18</objectIndex>
+				<objectIndex>16</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -1637,7 +1556,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>19</objectIndex>
+				<objectIndex>17</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -1664,7 +1583,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>20</objectIndex>
+				<objectIndex>18</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -1691,7 +1610,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>21</objectIndex>
+				<objectIndex>19</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -1718,7 +1637,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>22</objectIndex>
+				<objectIndex>20</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -1745,7 +1664,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>23</objectIndex>
+				<objectIndex>21</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -1772,7 +1691,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>24</objectIndex>
+				<objectIndex>22</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -1799,7 +1718,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>25</objectIndex>
+				<objectIndex>23</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -1826,7 +1745,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>26</objectIndex>
+				<objectIndex>24</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -1853,7 +1772,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>27</objectIndex>
+				<objectIndex>25</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -1877,7 +1796,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>28</objectIndex>
+				<objectIndex>26</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -1904,7 +1823,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>29</objectIndex>
+				<objectIndex>27</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -1931,7 +1850,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>30</objectIndex>
+				<objectIndex>28</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -1958,7 +1877,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>31</objectIndex>
+				<objectIndex>29</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -1985,7 +1904,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>32</objectIndex>
+				<objectIndex>30</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -2009,7 +1928,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>33</objectIndex>
+				<objectIndex>31</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -2033,7 +1952,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>34</objectIndex>
+				<objectIndex>32</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -2060,7 +1979,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>35</objectIndex>
+				<objectIndex>33</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -2084,7 +2003,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>36</objectIndex>
+				<objectIndex>34</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -2108,13 +2027,13 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>37</objectIndex>
+				<objectIndex>35</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
 						<name>Position</name>
 						<value>
-							-13.7989 -0.0352566 46.1076
+							32.7255 0.0062925 14.9224
 							<!--BW_String-->
 						</value>
 					</property>
@@ -2125,14 +2044,14 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							-0 2.94068 0
+							-0 0.322686 0
 							<!--BW_String-->
 						</value>
 					</property>
 				</config>
 			</component>
 			<component>
-				<objectIndex>38</objectIndex>
+				<objectIndex>36</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -2156,7 +2075,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>39</objectIndex>
+				<objectIndex>37</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -2183,31 +2102,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>40</objectIndex>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Position</name>
-						<value>
-							-11.8529 0.0098164 48.9099
-							<!--BW_String-->
-						</value>
-					</property>
-					<property>
-						<name>Scale</name>
-						<value>1 1 1</value>
-					</property>
-					<property>
-						<name>Rotation</name>
-						<value>
-							-0 1.99772 0
-							<!--BW_String-->
-						</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>41</objectIndex>
+				<objectIndex>38</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -2231,7 +2126,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>42</objectIndex>
+				<objectIndex>39</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -2255,7 +2150,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>43</objectIndex>
+				<objectIndex>40</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -2279,7 +2174,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>44</objectIndex>
+				<objectIndex>41</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -2303,7 +2198,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>45</objectIndex>
+				<objectIndex>42</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -2330,7 +2225,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>46</objectIndex>
+				<objectIndex>43</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -2354,7 +2249,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>47</objectIndex>
+				<objectIndex>44</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -2381,40 +2276,13 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>48</objectIndex>
+				<objectIndex>45</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
 						<name>Position</name>
 						<value>
-							27.4214 -0.0013286 12.2517
-							<!--BW_String-->
-						</value>
-					</property>
-					<property>
-						<name>Scale</name>
-						<value>
-							1.00001 1 1.00001
-							<!--BW_String-->
-						</value>
-					</property>
-					<property>
-						<name>Rotation</name>
-						<value>
-							-0 -0.60636 -9.99992e-07
-							<!--BW_String-->
-						</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>49</objectIndex>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Position</name>
-						<value>
-							30.6761 0.0228611 14.462
+							37.2034 0.0228611 17.9016
 							<!--BW_String-->
 						</value>
 					</property>
@@ -2435,40 +2303,13 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>50</objectIndex>
+				<objectIndex>46</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
 						<name>Position</name>
 						<value>
-							32.0169 -0.0269296 15.8901
-							<!--BW_String-->
-						</value>
-					</property>
-					<property>
-						<name>Scale</name>
-						<value>
-							1.00001 1 1.00001
-							<!--BW_String-->
-						</value>
-					</property>
-					<property>
-						<name>Rotation</name>
-						<value>
-							-0 1.50858 0
-							<!--BW_String-->
-						</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>51</objectIndex>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Position</name>
-						<value>
-							33.4401 -0.0018156 13.6377
+							37.8006 -0.00181555 14.1226
 							<!--BW_String-->
 						</value>
 					</property>
@@ -2489,7 +2330,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>52</objectIndex>
+				<objectIndex>47</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -2516,7 +2357,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>53</objectIndex>
+				<objectIndex>48</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -2543,7 +2384,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>54</objectIndex>
+				<objectIndex>49</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -2567,7 +2408,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>55</objectIndex>
+				<objectIndex>50</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -2594,7 +2435,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>56</objectIndex>
+				<objectIndex>51</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -2621,7 +2462,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>57</objectIndex>
+				<objectIndex>52</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -2648,7 +2489,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>58</objectIndex>
+				<objectIndex>53</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -2672,7 +2513,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>59</objectIndex>
+				<objectIndex>54</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -2699,7 +2540,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>60</objectIndex>
+				<objectIndex>55</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -2723,7 +2564,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>61</objectIndex>
+				<objectIndex>56</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -2750,7 +2591,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>62</objectIndex>
+				<objectIndex>57</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -2777,7 +2618,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>63</objectIndex>
+				<objectIndex>58</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -2804,7 +2645,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>64</objectIndex>
+				<objectIndex>59</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -2831,7 +2672,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>65</objectIndex>
+				<objectIndex>60</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -2858,7 +2699,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>66</objectIndex>
+				<objectIndex>61</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -2885,7 +2726,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>67</objectIndex>
+				<objectIndex>62</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -2912,7 +2753,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>68</objectIndex>
+				<objectIndex>63</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -2939,7 +2780,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>69</objectIndex>
+				<objectIndex>64</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -2966,7 +2807,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>70</objectIndex>
+				<objectIndex>65</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -2993,7 +2834,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>71</objectIndex>
+				<objectIndex>66</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -3020,7 +2861,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>72</objectIndex>
+				<objectIndex>67</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -3047,7 +2888,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>73</objectIndex>
+				<objectIndex>68</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -3074,7 +2915,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>74</objectIndex>
+				<objectIndex>69</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -3101,7 +2942,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>75</objectIndex>
+				<objectIndex>70</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -3125,7 +2966,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>76</objectIndex>
+				<objectIndex>71</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -3152,7 +2993,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>77</objectIndex>
+				<objectIndex>72</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -3173,6 +3014,78 @@
 						<name>Rotation</name>
 						<value>
 							-7.45058e-09 -2.20051 0.234572
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>73</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							-11.8529 0.0098164 48.9099
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							-0 1.99772 0
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>74</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							-11.8595 -0.0095066 -14.1312
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							-0 2.84435 0
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>75</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							-13.7989 -0.0352566 46.1076
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							-0 2.94068 0
 							<!--BW_String-->
 						</value>
 					</property>
@@ -3273,97 +3186,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>3</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>Auto Start</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>Layers</name>
-						<collection>
-							<item>
-								<object>
-									<property>
-										<name>Path</name>
-										<isAsset>true</isAsset>
-										<value>content/Hangars/CharacterAnimations/hd_char_h_VD26_0038_Civil_Man/Animations/ManIdle01_VD.fbx</value>
-									</property>
-									<property>
-										<name>Properties</name>
-										<object>
-											<property>
-												<name>delay</name>
-												<value>0</value>
-											</property>
-											<property>
-												<name>speed</name>
-												<value>1</value>
-											</property>
-											<property>
-												<name>loop</name>
-												<value>1</value>
-											</property>
-											<property>
-												<name>loopCount</name>
-												<value>-1</value>
-											</property>
-										</object>
-									</property>
-									<property>
-										<name>Clip</name>
-										<value>&lt;Default Clip&gt;</value>
-									</property>
-									<property>
-										<name>LayerName</name>
-										<value>0</value>
-									</property>
-									<property>
-										<name>Weight</name>
-										<value>1</value>
-									</property>
-									<property>
-										<name>LOD Scale</name>
-										<value>1</value>
-									</property>
-									<property>
-										<name>Auto Start</name>
-										<value>1</value>
-									</property>
-									<property>
-										<name>Graphics preset</name>
-										<value>2</value>
-									</property>
-								</object>
-							</item>
-						</collection>
-					</property>
-					<property>
-						<name>Path</name>
-						<isAsset>true</isAsset>
-						<value>content/Hangars/CharacterAnimations/hd_char_h_VD26_0038_Civil_Man/Animations/ManIdle01_VD.fbx</value>
-					</property>
-					<property>
-						<name>Delay</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>Speed</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Loop</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Loop Count</name>
-						<value>-1</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>7</objectIndex>
+				<objectIndex>5</objectIndex>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -3453,7 +3276,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>9</objectIndex>
+				<objectIndex>7</objectIndex>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -3543,7 +3366,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>10</objectIndex>
+				<objectIndex>8</objectIndex>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -3633,7 +3456,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>11</objectIndex>
+				<objectIndex>9</objectIndex>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -3703,6 +3526,96 @@
 						<name>Path</name>
 						<isAsset>true</isAsset>
 						<value>content/Hangars/h01_victory_day_2026/Characters/Veteran_Woman/Animations/Idle_breath.fbx</value>
+					</property>
+					<property>
+						<name>Delay</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Speed</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Loop</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Loop Count</name>
+						<value>-1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>21</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Auto Start</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Layers</name>
+						<collection>
+							<item>
+								<object>
+									<property>
+										<name>Path</name>
+										<isAsset>true</isAsset>
+										<value>content/Hangars/h01_victory_day_2026/Characters/Veteran_Woman/Animations/Woman_with_stick_hand_face.fbx</value>
+									</property>
+									<property>
+										<name>Properties</name>
+										<object>
+											<property>
+												<name>delay</name>
+												<value>0</value>
+											</property>
+											<property>
+												<name>speed</name>
+												<value>1</value>
+											</property>
+											<property>
+												<name>loop</name>
+												<value>1</value>
+											</property>
+											<property>
+												<name>loopCount</name>
+												<value>-1</value>
+											</property>
+										</object>
+									</property>
+									<property>
+										<name>Clip</name>
+										<value>&lt;Default Clip&gt;</value>
+									</property>
+									<property>
+										<name>LayerName</name>
+										<value>0</value>
+									</property>
+									<property>
+										<name>Weight</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>LOD Scale</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>Auto Start</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>Graphics preset</name>
+										<value>2</value>
+									</property>
+								</object>
+							</item>
+						</collection>
+					</property>
+					<property>
+						<name>Path</name>
+						<isAsset>true</isAsset>
+						<value>content/Hangars/h01_victory_day_2026/Characters/Veteran_Woman/Animations/Woman_with_stick_hand_face.fbx</value>
 					</property>
 					<property>
 						<name>Delay</name>
@@ -3813,97 +3726,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>25</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>Auto Start</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>Layers</name>
-						<collection>
-							<item>
-								<object>
-									<property>
-										<name>Path</name>
-										<isAsset>true</isAsset>
-										<value>content/Hangars/h01_victory_day_2026/Characters/Veteran_Woman/Animations/Woman_with_stick_hand_face.fbx</value>
-									</property>
-									<property>
-										<name>Properties</name>
-										<object>
-											<property>
-												<name>delay</name>
-												<value>0</value>
-											</property>
-											<property>
-												<name>speed</name>
-												<value>1</value>
-											</property>
-											<property>
-												<name>loop</name>
-												<value>1</value>
-											</property>
-											<property>
-												<name>loopCount</name>
-												<value>-1</value>
-											</property>
-										</object>
-									</property>
-									<property>
-										<name>Clip</name>
-										<value>&lt;Default Clip&gt;</value>
-									</property>
-									<property>
-										<name>LayerName</name>
-										<value>0</value>
-									</property>
-									<property>
-										<name>Weight</name>
-										<value>1</value>
-									</property>
-									<property>
-										<name>LOD Scale</name>
-										<value>1</value>
-									</property>
-									<property>
-										<name>Auto Start</name>
-										<value>1</value>
-									</property>
-									<property>
-										<name>Graphics preset</name>
-										<value>2</value>
-									</property>
-								</object>
-							</item>
-						</collection>
-					</property>
-					<property>
-						<name>Path</name>
-						<isAsset>true</isAsset>
-						<value>content/Hangars/h01_victory_day_2026/Characters/Veteran_Woman/Animations/Woman_with_stick_hand_face.fbx</value>
-					</property>
-					<property>
-						<name>Delay</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>Speed</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Loop</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Loop Count</name>
-						<value>-1</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>26</objectIndex>
+				<objectIndex>24</objectIndex>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -3993,7 +3816,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>32</objectIndex>
+				<objectIndex>30</objectIndex>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -4083,7 +3906,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>35</objectIndex>
+				<objectIndex>33</objectIndex>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -4173,6 +3996,186 @@
 				</config>
 			</component>
 			<component>
+				<objectIndex>35</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Auto Start</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Layers</name>
+						<collection>
+							<item>
+								<object>
+									<property>
+										<name>Path</name>
+										<isAsset>true</isAsset>
+										<value>content/Hangars/CharacterAnimations/hd_char_h_VD26_0037_Civil_Woman/Animation/CivilWoman_Standing_01.fbx</value>
+									</property>
+									<property>
+										<name>Properties</name>
+										<object>
+											<property>
+												<name>delay</name>
+												<value>0</value>
+											</property>
+											<property>
+												<name>speed</name>
+												<value>1</value>
+											</property>
+											<property>
+												<name>loop</name>
+												<value>1</value>
+											</property>
+											<property>
+												<name>loopCount</name>
+												<value>-1</value>
+											</property>
+										</object>
+									</property>
+									<property>
+										<name>Clip</name>
+										<value>&lt;Default Clip&gt;</value>
+									</property>
+									<property>
+										<name>LayerName</name>
+										<value>0</value>
+									</property>
+									<property>
+										<name>Weight</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>LOD Scale</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>Auto Start</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>Graphics preset</name>
+										<value>2</value>
+									</property>
+								</object>
+							</item>
+						</collection>
+					</property>
+					<property>
+						<name>Path</name>
+						<isAsset>true</isAsset>
+						<value>content/Hangars/CharacterAnimations/hd_char_h_VD26_0037_Civil_Woman/Animation/CivilWoman_Standing_01.fbx</value>
+					</property>
+					<property>
+						<name>Delay</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Speed</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Loop</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Loop Count</name>
+						<value>-1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>36</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Auto Start</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Layers</name>
+						<collection>
+							<item>
+								<object>
+									<property>
+										<name>Path</name>
+										<isAsset>true</isAsset>
+										<value>content/Hangars/h01_victory_day_2026/Characters/Veteran_Man/Animations/Idle_talk.fbx</value>
+									</property>
+									<property>
+										<name>Properties</name>
+										<object>
+											<property>
+												<name>delay</name>
+												<value>0</value>
+											</property>
+											<property>
+												<name>speed</name>
+												<value>1</value>
+											</property>
+											<property>
+												<name>loop</name>
+												<value>1</value>
+											</property>
+											<property>
+												<name>loopCount</name>
+												<value>-1</value>
+											</property>
+										</object>
+									</property>
+									<property>
+										<name>Clip</name>
+										<value>&lt;Default Clip&gt;</value>
+									</property>
+									<property>
+										<name>LayerName</name>
+										<value>0</value>
+									</property>
+									<property>
+										<name>Weight</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>LOD Scale</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>Auto Start</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>Graphics preset</name>
+										<value>2</value>
+									</property>
+								</object>
+							</item>
+						</collection>
+					</property>
+					<property>
+						<name>Path</name>
+						<isAsset>true</isAsset>
+						<value>content/Hangars/h01_victory_day_2026/Characters/Veteran_Man/Animations/Idle_talk.fbx</value>
+					</property>
+					<property>
+						<name>Delay</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Speed</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Loop</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Loop Count</name>
+						<value>-1</value>
+					</property>
+				</config>
+			</component>
+			<component>
 				<objectIndex>37</objectIndex>
 				<flags>3</flags>
 				<config>
@@ -4354,276 +4357,6 @@
 			</component>
 			<component>
 				<objectIndex>39</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>Auto Start</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>Layers</name>
-						<collection>
-							<item>
-								<object>
-									<property>
-										<name>Path</name>
-										<isAsset>true</isAsset>
-										<value>content/Hangars/CharacterAnimations/hd_char_h_VD26_0037_Civil_Woman/Animation/CivilWoman_Standing_01.fbx</value>
-									</property>
-									<property>
-										<name>Properties</name>
-										<object>
-											<property>
-												<name>delay</name>
-												<value>0</value>
-											</property>
-											<property>
-												<name>speed</name>
-												<value>1</value>
-											</property>
-											<property>
-												<name>loop</name>
-												<value>1</value>
-											</property>
-											<property>
-												<name>loopCount</name>
-												<value>-1</value>
-											</property>
-										</object>
-									</property>
-									<property>
-										<name>Clip</name>
-										<value>&lt;Default Clip&gt;</value>
-									</property>
-									<property>
-										<name>LayerName</name>
-										<value>0</value>
-									</property>
-									<property>
-										<name>Weight</name>
-										<value>1</value>
-									</property>
-									<property>
-										<name>LOD Scale</name>
-										<value>1</value>
-									</property>
-									<property>
-										<name>Auto Start</name>
-										<value>1</value>
-									</property>
-									<property>
-										<name>Graphics preset</name>
-										<value>2</value>
-									</property>
-								</object>
-							</item>
-						</collection>
-					</property>
-					<property>
-						<name>Path</name>
-						<isAsset>true</isAsset>
-						<value>content/Hangars/CharacterAnimations/hd_char_h_VD26_0037_Civil_Woman/Animation/CivilWoman_Standing_01.fbx</value>
-					</property>
-					<property>
-						<name>Delay</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>Speed</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Loop</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Loop Count</name>
-						<value>-1</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>40</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>Auto Start</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>Layers</name>
-						<collection>
-							<item>
-								<object>
-									<property>
-										<name>Path</name>
-										<isAsset>true</isAsset>
-										<value>content/Hangars/h01_victory_day_2026/Characters/Veteran_Man/Animations/Idle_breath.fbx</value>
-									</property>
-									<property>
-										<name>Properties</name>
-										<object>
-											<property>
-												<name>delay</name>
-												<value>0</value>
-											</property>
-											<property>
-												<name>speed</name>
-												<value>1</value>
-											</property>
-											<property>
-												<name>loop</name>
-												<value>1</value>
-											</property>
-											<property>
-												<name>loopCount</name>
-												<value>-1</value>
-											</property>
-										</object>
-									</property>
-									<property>
-										<name>Clip</name>
-										<value>&lt;Default Clip&gt;</value>
-									</property>
-									<property>
-										<name>LayerName</name>
-										<value>0</value>
-									</property>
-									<property>
-										<name>Weight</name>
-										<value>1</value>
-									</property>
-									<property>
-										<name>LOD Scale</name>
-										<value>1</value>
-									</property>
-									<property>
-										<name>Auto Start</name>
-										<value>1</value>
-									</property>
-									<property>
-										<name>Graphics preset</name>
-										<value>2</value>
-									</property>
-								</object>
-							</item>
-						</collection>
-					</property>
-					<property>
-						<name>Path</name>
-						<isAsset>true</isAsset>
-						<value>content/Hangars/h01_victory_day_2026/Characters/Veteran_Man/Animations/Idle_breath.fbx</value>
-					</property>
-					<property>
-						<name>Delay</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>Speed</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Loop</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Loop Count</name>
-						<value>-1</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>41</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>Auto Start</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>Layers</name>
-						<collection>
-							<item>
-								<object>
-									<property>
-										<name>Path</name>
-										<isAsset>true</isAsset>
-										<value>content/Hangars/h01_victory_day_2026/Characters/Veteran_Man/Animations/Idle_talk.fbx</value>
-									</property>
-									<property>
-										<name>Properties</name>
-										<object>
-											<property>
-												<name>delay</name>
-												<value>0</value>
-											</property>
-											<property>
-												<name>speed</name>
-												<value>1</value>
-											</property>
-											<property>
-												<name>loop</name>
-												<value>1</value>
-											</property>
-											<property>
-												<name>loopCount</name>
-												<value>-1</value>
-											</property>
-										</object>
-									</property>
-									<property>
-										<name>Clip</name>
-										<value>&lt;Default Clip&gt;</value>
-									</property>
-									<property>
-										<name>LayerName</name>
-										<value>0</value>
-									</property>
-									<property>
-										<name>Weight</name>
-										<value>1</value>
-									</property>
-									<property>
-										<name>LOD Scale</name>
-										<value>1</value>
-									</property>
-									<property>
-										<name>Auto Start</name>
-										<value>1</value>
-									</property>
-									<property>
-										<name>Graphics preset</name>
-										<value>2</value>
-									</property>
-								</object>
-							</item>
-						</collection>
-					</property>
-					<property>
-						<name>Path</name>
-						<isAsset>true</isAsset>
-						<value>content/Hangars/h01_victory_day_2026/Characters/Veteran_Man/Animations/Idle_talk.fbx</value>
-					</property>
-					<property>
-						<name>Delay</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>Speed</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Loop</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Loop Count</name>
-						<value>-1</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>42</objectIndex>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -4713,7 +4446,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>43</objectIndex>
+				<objectIndex>40</objectIndex>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -4803,7 +4536,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>44</objectIndex>
+				<objectIndex>41</objectIndex>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -4893,7 +4626,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>46</objectIndex>
+				<objectIndex>43</objectIndex>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -4983,7 +4716,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>53</objectIndex>
+				<objectIndex>48</objectIndex>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -5073,7 +4806,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>54</objectIndex>
+				<objectIndex>49</objectIndex>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -5162,6 +4895,276 @@
 					</property>
 				</config>
 			</component>
+			<component>
+				<objectIndex>73</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Auto Start</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Layers</name>
+						<collection>
+							<item>
+								<object>
+									<property>
+										<name>Path</name>
+										<isAsset>true</isAsset>
+										<value>content/Hangars/h01_victory_day_2026/Characters/Veteran_Man/Animations/Idle_breath.fbx</value>
+									</property>
+									<property>
+										<name>Properties</name>
+										<object>
+											<property>
+												<name>delay</name>
+												<value>0</value>
+											</property>
+											<property>
+												<name>speed</name>
+												<value>1</value>
+											</property>
+											<property>
+												<name>loop</name>
+												<value>1</value>
+											</property>
+											<property>
+												<name>loopCount</name>
+												<value>-1</value>
+											</property>
+										</object>
+									</property>
+									<property>
+										<name>Clip</name>
+										<value>&lt;Default Clip&gt;</value>
+									</property>
+									<property>
+										<name>LayerName</name>
+										<value>0</value>
+									</property>
+									<property>
+										<name>Weight</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>LOD Scale</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>Auto Start</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>Graphics preset</name>
+										<value>2</value>
+									</property>
+								</object>
+							</item>
+						</collection>
+					</property>
+					<property>
+						<name>Path</name>
+						<isAsset>true</isAsset>
+						<value>content/Hangars/h01_victory_day_2026/Characters/Veteran_Man/Animations/Idle_breath.fbx</value>
+					</property>
+					<property>
+						<name>Delay</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Speed</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Loop</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Loop Count</name>
+						<value>-1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>74</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Auto Start</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Layers</name>
+						<collection>
+							<item>
+								<object>
+									<property>
+										<name>Path</name>
+										<isAsset>true</isAsset>
+										<value>content/Hangars/CharacterAnimations/hd_char_h_VD26_0038_Civil_Man/Animations/ManIdle01_VD.fbx</value>
+									</property>
+									<property>
+										<name>Properties</name>
+										<object>
+											<property>
+												<name>delay</name>
+												<value>0</value>
+											</property>
+											<property>
+												<name>speed</name>
+												<value>1</value>
+											</property>
+											<property>
+												<name>loop</name>
+												<value>1</value>
+											</property>
+											<property>
+												<name>loopCount</name>
+												<value>-1</value>
+											</property>
+										</object>
+									</property>
+									<property>
+										<name>Clip</name>
+										<value>&lt;Default Clip&gt;</value>
+									</property>
+									<property>
+										<name>LayerName</name>
+										<value>0</value>
+									</property>
+									<property>
+										<name>Weight</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>LOD Scale</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>Auto Start</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>Graphics preset</name>
+										<value>2</value>
+									</property>
+								</object>
+							</item>
+						</collection>
+					</property>
+					<property>
+						<name>Path</name>
+						<isAsset>true</isAsset>
+						<value>content/Hangars/CharacterAnimations/hd_char_h_VD26_0038_Civil_Man/Animations/ManIdle01_VD.fbx</value>
+					</property>
+					<property>
+						<name>Delay</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Speed</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Loop</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Loop Count</name>
+						<value>-1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>75</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Auto Start</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Layers</name>
+						<collection>
+							<item>
+								<object>
+									<property>
+										<name>Path</name>
+										<isAsset>true</isAsset>
+										<value>content/Hangars/CharacterAnimations/hd_char_h_VD26_0037_Civil_Woman/Animation/CivilWoman_Standing_01.fbx</value>
+									</property>
+									<property>
+										<name>Properties</name>
+										<object>
+											<property>
+												<name>delay</name>
+												<value>0</value>
+											</property>
+											<property>
+												<name>speed</name>
+												<value>1</value>
+											</property>
+											<property>
+												<name>loop</name>
+												<value>1</value>
+											</property>
+											<property>
+												<name>loopCount</name>
+												<value>-1</value>
+											</property>
+										</object>
+									</property>
+									<property>
+										<name>Clip</name>
+										<value>&lt;Default Clip&gt;</value>
+									</property>
+									<property>
+										<name>LayerName</name>
+										<value>0</value>
+									</property>
+									<property>
+										<name>Weight</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>LOD Scale</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>Auto Start</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>Graphics preset</name>
+										<value>2</value>
+									</property>
+								</object>
+							</item>
+						</collection>
+					</property>
+					<property>
+						<name>Path</name>
+						<isAsset>true</isAsset>
+						<value>content/Hangars/CharacterAnimations/hd_char_h_VD26_0037_Civil_Woman/Animation/CivilWoman_Standing_01.fbx</value>
+					</property>
+					<property>
+						<name>Delay</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Speed</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Loop</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Loop Count</name>
+						<value>-1</value>
+					</property>
+				</config>
+			</component>
 		</ComponentPool>
 		<ComponentPool>
 			<type>DynamicModel</type>
@@ -5211,7 +5214,7 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Hangars/CharacterAnimations/hd_char_h_VD26_0038_Civil_Man/normal/lod0/hd_char_h_VD26_0038_Civil_Man_02.model</value>
+						<value>content/Hangars/h01_victory_day_2026/Environment/normal/lod0/h01_vd_23_Crowd_03.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
@@ -5249,7 +5252,7 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Hangars/h01_victory_day_2026/Environment/normal/lod0/h01_vd_23_Crowd_03.model</value>
+						<value>content/Hangars/h01_victory_day_2026/Characters/Veteran_Woman/normal/lod0/Veteran_Woman_empty_VD.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
@@ -5287,7 +5290,7 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Hangars/h01_victory_day_2026/Characters/Veteran_Woman/normal/lod0/Veteran_Woman_empty_VD.model</value>
+						<value>content/Hangars/h01_victory_day_2026/Characters/Veteran_Woman/normal/lod0/Veteran_Woman_carnation_03_VD.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
@@ -5306,7 +5309,7 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Hangars/h01_victory_day_2026/Environment/normal/lod0/h01_vd_23_Crowd_03.model</value>
+						<value>content/Hangars/CharacterAnimations/hd_char_h_VD26_0037_Civil_Woman/normal/lod0/hd_char_h_VD26_0037_Civil_Woman_01.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
@@ -5325,7 +5328,7 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Hangars/h01_victory_day_2026/Characters/Veteran_Woman/normal/lod0/Veteran_Woman_carnation_03_VD.model</value>
+						<value>content/Hangars/h01_victory_day_2026/Characters/Veteran_Woman/normal/lod0/Veteran_Woman_empty_VD.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
@@ -5344,7 +5347,7 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Hangars/CharacterAnimations/hd_char_h_VD26_0037_Civil_Woman/normal/lod0/hd_char_h_VD26_0037_Civil_Woman_01.model</value>
+						<value>content/Hangars/h01_victory_day_2026/Environment/normal/lod0/h01_vd_23_Crowd_05.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
@@ -5363,7 +5366,7 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Hangars/h01_victory_day_2026/Characters/Veteran_Woman/normal/lod0/Veteran_Woman_empty_VD.model</value>
+						<value>content/Hangars/h01_victory_day_2026/Environment/normal/lod0/h01_vd_23_Crowd_03.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
@@ -5382,7 +5385,7 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Hangars/h01_victory_day_2026/Environment/normal/lod0/h01_vd_23_Crowd_05.model</value>
+						<value>content/Hangars/h01_victory_day_2025/Environment/normal/lod0/h01_vd_23_Crowd_11.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
@@ -5401,7 +5404,7 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Hangars/h01_victory_day_2026/Environment/normal/lod0/h01_vd_23_Crowd_03.model</value>
+						<value>content/Hangars/h01_victory_day_2025/Environment/normal/lod0/h01_VD25_Crowd_06.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
@@ -5420,7 +5423,7 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Hangars/h01_victory_day_2025/Environment/normal/lod0/h01_vd_23_Crowd_11.model</value>
+						<value>content/Hangars/h01_victory_day_2026/Environment/normal/lod0/h01_vd_23_Crowd_03.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
@@ -5439,7 +5442,7 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Hangars/h01_victory_day_2025/Environment/normal/lod0/h01_VD25_Crowd_06.model</value>
+						<value>content/Hangars/h01_victory_day_2026/Environment/normal/lod0/h01_vd_23_Crowd_05.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
@@ -5458,7 +5461,7 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Hangars/h01_victory_day_2026/Environment/normal/lod0/h01_vd_23_Crowd_03.model</value>
+						<value>content/Hangars/h01_victory_day_2025/Environment/normal/lod0/h01_VD25_Crowd_06.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
@@ -5477,7 +5480,7 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Hangars/h01_victory_day_2026/Environment/normal/lod0/h01_vd_23_Crowd_05.model</value>
+						<value>content/Hangars/h01_victory_day_2025/Environment/normal/lod0/h01_VD25_Crowd_06.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
@@ -5496,7 +5499,7 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Hangars/h01_victory_day_2025/Environment/normal/lod0/h01_VD25_Crowd_06.model</value>
+						<value>content/Hangars/h01_victory_day_2026/Environment/normal/lod0/h01_vd_23_Crowd_03.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
@@ -5515,7 +5518,7 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Hangars/h01_victory_day_2025/Environment/normal/lod0/h01_VD25_Crowd_06.model</value>
+						<value>content/Hangars/h01_victory_day_2026/Environment/normal/lod0/h01_vd_23_Crowd_03.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
@@ -5534,7 +5537,7 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Hangars/h01_victory_day_2026/Environment/normal/lod0/h01_vd_23_Crowd_03.model</value>
+						<value>content/Hangars/h01_victory_day_2025/Environment/normal/lod0/h01_VD25_Crowd_08.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
@@ -5553,7 +5556,7 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Hangars/h01_victory_day_2026/Environment/normal/lod0/h01_vd_23_Crowd_03.model</value>
+						<value>content/Hangars/h01_victory_day_2026/Characters/Veteran_Woman/normal/lod0/Veteran_Woman_stik_02_VD.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
@@ -5572,7 +5575,7 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Hangars/h01_victory_day_2025/Environment/normal/lod0/h01_VD25_Crowd_08.model</value>
+						<value>content/Hangars/h01_victory_day_2025/Environment/normal/lod0/h01_VD25_Crowd_07.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
@@ -5610,7 +5613,7 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Hangars/h01_victory_day_2025/Environment/normal/lod0/h01_VD25_Crowd_07.model</value>
+						<value>content/Hangars/h01_victory_day_2026/Characters/Veteran_Man/normal/lod0/Veteran_Man_Empty_03_VD.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
@@ -5629,7 +5632,7 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Hangars/h01_victory_day_2026/Characters/Veteran_Woman/normal/lod0/Veteran_Woman_stik_02_VD.model</value>
+						<value>content/Hangars/h01_victory_day_2025/Environment/normal/lod0/h01_vd_23_Crowd_11.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
@@ -5648,7 +5651,7 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Hangars/h01_victory_day_2026/Characters/Veteran_Man/normal/lod0/Veteran_Man_Empty_03_VD.model</value>
+						<value>content/Hangars/h01_victory_day_2025/Environment/normal/lod0/h01_VD25_Crowd_06.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
@@ -5667,7 +5670,7 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Hangars/h01_victory_day_2025/Environment/normal/lod0/h01_vd_23_Crowd_11.model</value>
+						<value>content/Hangars/h01_victory_day_2025/Environment/normal/lod0/h01_VD25_Crowd_02.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
@@ -5705,7 +5708,7 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Hangars/h01_victory_day_2025/Environment/normal/lod0/h01_VD25_Crowd_02.model</value>
+						<value>content/Hangars/h01_victory_day_2025/Environment/normal/lod0/h01_VD25_Crowd_03.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
@@ -5724,7 +5727,7 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Hangars/h01_victory_day_2025/Environment/normal/lod0/h01_VD25_Crowd_06.model</value>
+						<value>content/Hangars/h01_victory_day_2026/Characters/Veteran_Man/normal/lod0/Veteran_Man_Empty_02_VD.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
@@ -5743,7 +5746,7 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Hangars/h01_victory_day_2025/Environment/normal/lod0/h01_VD25_Crowd_03.model</value>
+						<value>content/Hangars/h01_victory_day_2025/Environment/normal/lod0/h01_VD25_Crowd_02.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
@@ -5762,7 +5765,7 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Hangars/h01_victory_day_2026/Characters/Veteran_Man/normal/lod0/Veteran_Man_Empty_02_VD.model</value>
+						<value>content/Hangars/h01_victory_day_2025/Environment/normal/lod0/h01_VD25_Crowd_02.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
@@ -5781,7 +5784,7 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Hangars/h01_victory_day_2025/Environment/normal/lod0/h01_VD25_Crowd_02.model</value>
+						<value>content/Hangars/CharacterAnimations/hd_char_h_VD26_0036_Civil_Girl/normal/lod0/hd_char_h_VD26_0036_Civil_Girl_01.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
@@ -5819,7 +5822,7 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Hangars/CharacterAnimations/hd_char_h_VD26_0036_Civil_Girl/normal/lod0/hd_char_h_VD26_0036_Civil_Girl_01.model</value>
+						<value>content/Hangars/CharacterAnimations/hd_char_h_VD26_0037_Civil_Woman/normal/lod0/hd_char_h_VD26_0037_Civil_Woman_02.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
@@ -5838,7 +5841,7 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Hangars/h01_victory_day_2025/Environment/normal/lod0/h01_VD25_Crowd_02.model</value>
+						<value>content/Hangars/h01_victory_day_2026/Characters/Veteran_Man/normal/lod0/Veteran_Man_Empty_VD.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
@@ -5914,63 +5917,6 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Hangars/h01_victory_day_2026/Characters/Veteran_Man/normal/lod0/Veteran_Man_Empty_02_VD.model</value>
-					</property>
-					<property>
-						<name>Cast Shadows</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Parts</name>
-						<collection/>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>41</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>Model name</name>
-						<isAsset>true</isAsset>
-						<value>content/Hangars/h01_victory_day_2026/Characters/Veteran_Man/normal/lod0/Veteran_Man_Empty_VD.model</value>
-					</property>
-					<property>
-						<name>Cast Shadows</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Parts</name>
-						<collection/>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>42</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>Model name</name>
-						<isAsset>true</isAsset>
-						<value>content/Hangars/CharacterAnimations/hd_char_h_VD26_0037_Civil_Woman/normal/lod0/hd_char_h_VD26_0037_Civil_Woman_02.model</value>
-					</property>
-					<property>
-						<name>Cast Shadows</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Parts</name>
-						<collection/>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>43</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>Model name</name>
-						<isAsset>true</isAsset>
 						<value>content/Hangars/h01_victory_day_2026/Characters/Veteran_Woman/normal/lod0/Veteran_Woman_empty_02_VD.model</value>
 					</property>
 					<property>
@@ -6014,7 +5960,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>44</objectIndex>
+				<objectIndex>41</objectIndex>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -6033,7 +5979,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>45</objectIndex>
+				<objectIndex>42</objectIndex>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -6052,7 +5998,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>46</objectIndex>
+				<objectIndex>43</objectIndex>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -6071,7 +6017,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>47</objectIndex>
+				<objectIndex>44</objectIndex>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -6090,26 +6036,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>48</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>Model name</name>
-						<isAsset>true</isAsset>
-						<value>content/Hangars/h01_victory_day_2025/Environment/normal/lod0/h01_VD25_Crowd_02.model</value>
-					</property>
-					<property>
-						<name>Cast Shadows</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Parts</name>
-						<collection/>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>49</objectIndex>
+				<objectIndex>45</objectIndex>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -6128,13 +6055,89 @@
 				</config>
 			</component>
 			<component>
+				<objectIndex>46</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Model name</name>
+						<isAsset>true</isAsset>
+						<value>content/Hangars/h01_victory_day_2026/Environment/normal/lod0/h01_vd_23_Crowd_05.model</value>
+					</property>
+					<property>
+						<name>Cast Shadows</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Parts</name>
+						<collection/>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>47</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Model name</name>
+						<isAsset>true</isAsset>
+						<value>content/Hangars/h01_victory_day_2025/Environment/normal/lod0/h01_VD25_Crowd_08.model</value>
+					</property>
+					<property>
+						<name>Cast Shadows</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Parts</name>
+						<collection/>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>48</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Model name</name>
+						<isAsset>true</isAsset>
+						<value>content/Hangars/CharacterAnimations/hd_char_h_VD26_0037_Civil_Woman/normal/lod0/hd_char_h_VD26_0037_Civil_Woman_01.model</value>
+					</property>
+					<property>
+						<name>Cast Shadows</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Parts</name>
+						<collection/>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>49</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Model name</name>
+						<isAsset>true</isAsset>
+						<value>content/Hangars/h01_victory_day_2026/Characters/Veteran_Woman/normal/lod0/Veteran_Woman_stik_02_VD.model</value>
+					</property>
+					<property>
+						<name>Cast Shadows</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Parts</name>
+						<collection/>
+					</property>
+				</config>
+			</component>
+			<component>
 				<objectIndex>50</objectIndex>
 				<flags>3</flags>
 				<config>
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Hangars/h01_victory_day_2025/Environment/normal/lod0/h01_VD25_Crowd_06.model</value>
+						<value>content/Hangars/h01_victory_day_2025/Environment/normal/lod0/h01_VD25_Crowd_02.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
@@ -6172,7 +6175,7 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Hangars/h01_victory_day_2025/Environment/normal/lod0/h01_VD25_Crowd_08.model</value>
+						<value>content/Hangars/h01_victory_day_2026/Environment/normal/lod0/h01_vd_23_Crowd_03.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
@@ -6191,7 +6194,7 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Hangars/CharacterAnimations/hd_char_h_VD26_0037_Civil_Woman/normal/lod0/hd_char_h_VD26_0037_Civil_Woman_01.model</value>
+						<value>content/Hangars/h01_victory_day_2025/Environment/normal/lod0/h01_VD25_Crowd_01.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
@@ -6210,7 +6213,7 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Hangars/h01_victory_day_2026/Characters/Veteran_Woman/normal/lod0/Veteran_Woman_stik_02_VD.model</value>
+						<value>content/Hangars/h01_victory_day_2026/Environment/normal/lod0/h01_vd_23_Crowd_05.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
@@ -6229,7 +6232,7 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Hangars/h01_victory_day_2025/Environment/normal/lod0/h01_VD25_Crowd_02.model</value>
+						<value>content/Hangars/h01_victory_day_2026/Environment/normal/lod0/h01_vd_23_Crowd_03.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
@@ -6248,7 +6251,7 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Hangars/h01_victory_day_2026/Environment/normal/lod0/h01_vd_23_Crowd_05.model</value>
+						<value>content/Hangars/h01_victory_day_2025/Environment/normal/lod0/h01_VD25_Crowd_06.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
@@ -6267,7 +6270,7 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Hangars/h01_victory_day_2026/Environment/normal/lod0/h01_vd_23_Crowd_03.model</value>
+						<value>content/Hangars/h01_victory_day_2025/Environment/normal/lod0/h01_VD25_Crowd_06.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
@@ -6286,7 +6289,7 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Hangars/h01_victory_day_2025/Environment/normal/lod0/h01_VD25_Crowd_01.model</value>
+						<value>content/Hangars/h01_victory_day_2026/Environment/normal/lod0/h01_vd_23_Crowd_03.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
@@ -6305,7 +6308,7 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Hangars/h01_victory_day_2026/Environment/normal/lod0/h01_vd_23_Crowd_05.model</value>
+						<value>content/Hangars/h01_victory_day_2025/Environment/normal/lod0/h01_VD25_Crowd_07.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
@@ -6324,7 +6327,7 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Hangars/h01_victory_day_2026/Environment/normal/lod0/h01_vd_23_Crowd_03.model</value>
+						<value>content/Hangars/h01_victory_day_2026/Environment/normal/lod0/hd_h10_MTV1_0028_Baloons_02.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
@@ -6343,7 +6346,7 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Hangars/h01_victory_day_2025/Environment/normal/lod0/h01_VD25_Crowd_06.model</value>
+						<value>content/Hangars/h01_victory_day_2026/Environment/normal/lod0/h01_vd_23_Crowd_03.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
@@ -6381,7 +6384,7 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Hangars/h01_victory_day_2026/Environment/normal/lod0/h01_vd_23_Crowd_03.model</value>
+						<value>content/Hangars/h01_victory_day_2025/Environment/normal/lod0/h01_VD25_Crowd_08.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
@@ -6400,7 +6403,7 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Hangars/h01_victory_day_2025/Environment/normal/lod0/h01_VD25_Crowd_07.model</value>
+						<value>content/Hangars/h01_victory_day_2025/Environment/normal/lod0/h01_VD25_Crowd_02.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
@@ -6419,7 +6422,7 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Hangars/h01_victory_day_2026/Environment/normal/lod0/hd_h10_MTV1_0028_Baloons_02.model</value>
+						<value>content/Hangars/h01_victory_day_2025/Environment/normal/lod0/h01_VD25_Crowd_08.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
@@ -6457,7 +6460,7 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Hangars/h01_victory_day_2025/Environment/normal/lod0/h01_VD25_Crowd_06.model</value>
+						<value>content/Hangars/h01_victory_day_2025/Environment/normal/lod0/h01_VD25_Crowd_04.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
@@ -6495,7 +6498,7 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Hangars/h01_victory_day_2025/Environment/normal/lod0/h01_VD25_Crowd_02.model</value>
+						<value>content/Hangars/h01_victory_day_2025/Environment/normal/lod0/h01_VD25_Crowd_06.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
@@ -6514,7 +6517,7 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Hangars/h01_victory_day_2025/Environment/normal/lod0/h01_VD25_Crowd_08.model</value>
+						<value>content/Hangars/h01_victory_day_2025/Environment/normal/lod0/h01_VD25_Crowd_04.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
@@ -6533,11 +6536,11 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Hangars/h01_victory_day_2026/Environment/normal/lod0/h01_vd_23_Crowd_03.model</value>
+						<value>content/Hangars/h01_victory_day_2026/Environment/h01_VD26_Projector/normal/lod0/h01_VD26_Projector_01.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
-						<value>1</value>
+						<value>0</value>
 					</property>
 					<property>
 						<name>Parts</name>
@@ -6552,11 +6555,11 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Hangars/h01_victory_day_2025/Environment/normal/lod0/h01_VD25_Crowd_04.model</value>
+						<value>content/Hangars/h01_victory_day_2026/Environment/h01_VD26_Projector/normal/lod0/h01_VD26_Projector_01.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
-						<value>1</value>
+						<value>0</value>
 					</property>
 					<property>
 						<name>Parts</name>
@@ -6571,7 +6574,7 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Hangars/h01_victory_day_2025/Environment/normal/lod0/h01_VD25_Crowd_08.model</value>
+						<value>content/Hangars/h01_victory_day_2026/Characters/Veteran_Man/normal/lod0/Veteran_Man_Empty_02_VD.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
@@ -6590,7 +6593,7 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Hangars/h01_victory_day_2025/Environment/normal/lod0/h01_VD25_Crowd_06.model</value>
+						<value>content/Hangars/CharacterAnimations/hd_char_h_VD26_0038_Civil_Man/normal/lod0/hd_char_h_VD26_0038_Civil_Man_02.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
@@ -6609,49 +6612,11 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Hangars/h01_victory_day_2025/Environment/normal/lod0/h01_VD25_Crowd_04.model</value>
+						<value>content/Hangars/CharacterAnimations/hd_char_h_VD26_0037_Civil_Woman/normal/lod0/hd_char_h_VD26_0037_Civil_Woman_02.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
-					</property>
-					<property>
-						<name>Parts</name>
-						<collection/>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>76</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>Model name</name>
-						<isAsset>true</isAsset>
-						<value>content/Hangars/h01_victory_day_2026/Environment/h01_VD26_Projector/normal/lod0/h01_VD26_Projector_01.model</value>
-					</property>
-					<property>
-						<name>Cast Shadows</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>Parts</name>
-						<collection/>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>77</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>Model name</name>
-						<isAsset>true</isAsset>
-						<value>content/Hangars/h01_victory_day_2026/Environment/h01_VD26_Projector/normal/lod0/h01_VD26_Projector_01.model</value>
-					</property>
-					<property>
-						<name>Cast Shadows</name>
-						<value>0</value>
 					</property>
 					<property>
 						<name>Parts</name>
