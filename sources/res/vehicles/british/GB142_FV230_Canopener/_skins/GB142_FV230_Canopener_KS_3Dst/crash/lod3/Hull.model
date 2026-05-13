@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB142_FV230_Canopener/_skins/GB142_FV230_Canopener_KS_3Dst/crash/lod3/Hull</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/british/GB142_FV230_Canopener/_skins/GB142_FV230_Canopener_KS_3Dst/crash/lod4/Hull</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-2.021198 -1.024071 -4.594581</min>
+		<max>2.020625 0.907643 3.870850</max>
+	</visibilityBox>
+</root>
