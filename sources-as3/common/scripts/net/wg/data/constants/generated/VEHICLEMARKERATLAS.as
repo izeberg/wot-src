@@ -1913,6 +1913,8 @@ package net.wg.data.constants.generated
       
       public static const UK_GB142_FV230_CANOPENER:String = "uk-GB142_FV230_Canopener";
       
+      public static const UK_GB142_FV230_CANOPENER_CFE_G:String = "uk-GB142_FV230_Canopener_CFE_G";
+      
       public static const UK_GB143_FV229_CONTENDER:String = "uk-GB143_FV229_Contender";
       
       public static const UK_GB145_CRUSHER_ASE_4:String = "uk-GB145_Crusher_ASE_4";

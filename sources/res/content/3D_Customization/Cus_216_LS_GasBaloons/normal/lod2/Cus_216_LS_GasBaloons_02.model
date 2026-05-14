@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_216_LS_GasBaloons/normal/lod3/Cus_216_LS_GasBaloons_02</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.159700 -0.147600 0.070689</min>
+		<max>0.165299 0.148781 0.195607</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_216_LS_GasBaloons/normal/lod2/Cus_216_LS_GasBaloons_02</nodefullVisual>
+</root>

@@ -31009,11 +31009,69 @@ package
       
       public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_DEFAULT_TOOLTIPS_VEHICLES:String = "../maps/icons/lootBoxSystem/customizable/default/tooltips/vehicles.png";
       
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_LS_INVASION_AUTOOPENVIEW_BACKGROUND:String = "../maps/icons/lootBoxSystem/customizable/ls_invasion/autoOpenView/background.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_LS_INVASION_AWARDVIEWS_OPENINGBOX_LS_INVASION_COMMON_COMMON:String = "../maps/icons/lootBoxSystem/customizable/ls_invasion/awardViews/openingBox/ls_invasion_common_common.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_LS_INVASION_AWARDVIEWS_OPENINGBOX_LS_INVASION_COMMON_RARE:String = "../maps/icons/lootBoxSystem/customizable/ls_invasion/awardViews/openingBox/ls_invasion_common_rare.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_LS_INVASION_AWARDVIEWS_OPENINGBOX_LS_INVASION_EPIC_COMMON:String = "../maps/icons/lootBoxSystem/customizable/ls_invasion/awardViews/openingBox/ls_invasion_epic_common.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_LS_INVASION_AWARDVIEWS_OPENINGBOX_LS_INVASION_EPIC_RARE:String = "../maps/icons/lootBoxSystem/customizable/ls_invasion/awardViews/openingBox/ls_invasion_epic_rare.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_LS_INVASION_AWARDVIEWS_OPENINGBOX_LS_INVASION_RARE_COMMON:String = "../maps/icons/lootBoxSystem/customizable/ls_invasion/awardViews/openingBox/ls_invasion_rare_common.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_LS_INVASION_AWARDVIEWS_OPENINGBOX_LS_INVASION_RARE_RARE:String = "../maps/icons/lootBoxSystem/customizable/ls_invasion/awardViews/openingBox/ls_invasion_rare_rare.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_LS_INVASION_ENTRY_POINT_LOOTBOXEMPTY:String = "../maps/icons/lootBoxSystem/customizable/ls_invasion/entry_point/lootboxEmpty.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_LS_INVASION_ENTRY_POINT_LOOTBOXGOLD:String = "../maps/icons/lootBoxSystem/customizable/ls_invasion/entry_point/lootboxGold.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_LS_INVASION_ENTRY_POINT_LOOTBOXTOOLTIP:String = "../maps/icons/lootBoxSystem/customizable/ls_invasion/entry_point/lootboxTooltip.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_LS_INVASION_HASBOXESVIEW_GUARANTEED_GUARANTEEDICO:String = "../maps/icons/lootBoxSystem/customizable/ls_invasion/hasBoxesView/guaranteed/guaranteedIco.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_LS_INVASION_HASBOXESVIEW_LAYERS_BACKGROUND_DEFAULT:String = "../maps/icons/lootBoxSystem/customizable/ls_invasion/hasBoxesView/layers/background/default.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_LS_INVASION_HASBOXESVIEW_LAYERS_BOX_LS_INVASION_COMMON:String = "../maps/icons/lootBoxSystem/customizable/ls_invasion/hasBoxesView/layers/box/ls_invasion_common.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_LS_INVASION_HASBOXESVIEW_LAYERS_BOX_LS_INVASION_EPIC:String = "../maps/icons/lootBoxSystem/customizable/ls_invasion/hasBoxesView/layers/box/ls_invasion_epic.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_LS_INVASION_HASBOXESVIEW_LAYERS_BOX_LS_INVASION_RARE:String = "../maps/icons/lootBoxSystem/customizable/ls_invasion/hasBoxesView/layers/box/ls_invasion_rare.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_LS_INVASION_HASBOXESVIEW_LAYERS_HOVER_LS_INVASION_COMMON:String = "../maps/icons/lootBoxSystem/customizable/ls_invasion/hasBoxesView/layers/hover/ls_invasion_common.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_LS_INVASION_HASBOXESVIEW_LAYERS_HOVER_LS_INVASION_EPIC:String = "../maps/icons/lootBoxSystem/customizable/ls_invasion/hasBoxesView/layers/hover/ls_invasion_epic.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_LS_INVASION_HASBOXESVIEW_LAYERS_HOVER_LS_INVASION_RARE:String = "../maps/icons/lootBoxSystem/customizable/ls_invasion/hasBoxesView/layers/hover/ls_invasion_rare.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_LS_INVASION_HASBOXESVIEW_LAYERS_IDLE_LS_INVASION_COMMON:String = "../maps/icons/lootBoxSystem/customizable/ls_invasion/hasBoxesView/layers/idle/ls_invasion_common.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_LS_INVASION_HASBOXESVIEW_LAYERS_IDLE_LS_INVASION_EPIC:String = "../maps/icons/lootBoxSystem/customizable/ls_invasion/hasBoxesView/layers/idle/ls_invasion_epic.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_LS_INVASION_HASBOXESVIEW_LAYERS_IDLE_LS_INVASION_RARE:String = "../maps/icons/lootBoxSystem/customizable/ls_invasion/hasBoxesView/layers/idle/ls_invasion_rare.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_LS_INVASION_INFOPAGE_BACKGROUND:String = "../maps/icons/lootBoxSystem/customizable/ls_invasion/infopage/background.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_LS_INVASION_NOBOXESVIEW_BACKGROUND:String = "../maps/icons/lootBoxSystem/customizable/ls_invasion/noBoxesView/background.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_LS_INVASION_NOBOXESVIEW_NOBOXESART:String = "../maps/icons/lootBoxSystem/customizable/ls_invasion/noBoxesView/noBoxesArt.png";
+      
       public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_NEWYEAR_PREMIUM_AUTOOPENVIEW_BACKGROUND:String = "../maps/icons/lootBoxSystem/customizable/newYear_premium/autoOpenView/background.png";
       
       public static const MAPS_ICONS_LOOTBOXSYSTEM_EVENTS_ANNIVERSARYCN_RARITYOVERLAY_LOOTBOX_24040101:String = "../maps/icons/lootBoxSystem/events/anniversaryCN/rarityOverlay/lootBox_24040101.png";
       
       public static const MAPS_ICONS_LOOTBOXSYSTEM_EVENTS_ANNIVERSARYCN_RARITYOVERLAY_VEHICLES_29969:String = "../maps/icons/lootBoxSystem/events/anniversaryCN/rarityOverlay/vehicles_29969.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_EVENTS_LS_INVASION_RARITYOVERLAY_LOOTBOX_26051401:String = "../maps/icons/lootBoxSystem/events/ls_invasion/rarityOverlay/lootBox_26051401.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_EVENTS_LS_INVASION_RARITYOVERLAY_VEHICLES_53649:String = "../maps/icons/lootBoxSystem/events/ls_invasion/rarityOverlay/vehicles_53649.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_EVENTS_LS_INVASION_RARITYOVERLAY_VEHICLES_67137:String = "../maps/icons/lootBoxSystem/events/ls_invasion/rarityOverlay/vehicles_67137.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_EVENTS_LS_INVASION_RARITYOVERLAY_VEHICLES_68641:String = "../maps/icons/lootBoxSystem/events/ls_invasion/rarityOverlay/vehicles_68641.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_EVENTS_LS_INVASION_RARITYOVERLAY_VEHICLES_8305:String = "../maps/icons/lootBoxSystem/events/ls_invasion/rarityOverlay/vehicles_8305.png";
       
       public static const MAPS_ICONS_MANUAL_BACKGROUNDS_ACHIEVES:String = "../maps/icons/manual/backgrounds/achieves.png";
       
@@ -39223,6 +39281,12 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_LOOTBOX_GOLD:String = "../maps/icons/quests/bonuses/big/lootBox_gold.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_LOOTBOX_LS_INVASION_COMMON:String = "../maps/icons/quests/bonuses/big/lootBox_ls_invasion_common.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_LOOTBOX_LS_INVASION_EPIC:String = "../maps/icons/quests/bonuses/big/lootBox_ls_invasion_epic.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_LOOTBOX_LS_INVASION_RARE:String = "../maps/icons/quests/bonuses/big/lootBox_ls_invasion_rare.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_LOOTBOX_SILVER:String = "../maps/icons/quests/bonuses/big/lootBox_silver.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_MENTORINGLICENSE:String = "../maps/icons/quests/bonuses/big/mentoringLicense.png";
@@ -39693,6 +39757,12 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_LOOTBOX_GOLD:String = "../maps/icons/quests/bonuses/s180x135/lootBox_gold.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_LOOTBOX_LS_INVASION_COMMON:String = "../maps/icons/quests/bonuses/s180x135/lootBox_ls_invasion_common.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_LOOTBOX_LS_INVASION_EPIC:String = "../maps/icons/quests/bonuses/s180x135/lootBox_ls_invasion_epic.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_LOOTBOX_LS_INVASION_RARE:String = "../maps/icons/quests/bonuses/s180x135/lootBox_ls_invasion_rare.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_LOOTBOX_SILVER:String = "../maps/icons/quests/bonuses/s180x135/lootBox_silver.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_MENTORINGLICENSE:String = "../maps/icons/quests/bonuses/s180x135/mentoringLicense.png";
@@ -40054,6 +40124,12 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_LOOTBOX_DEFAULT:String = "../maps/icons/quests/bonuses/s232x174/lootBox_default.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_LOOTBOX_GOLD:String = "../maps/icons/quests/bonuses/s232x174/lootBox_gold.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_LOOTBOX_LS_INVASION_COMMON:String = "../maps/icons/quests/bonuses/s232x174/lootBox_ls_invasion_common.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_LOOTBOX_LS_INVASION_EPIC:String = "../maps/icons/quests/bonuses/s232x174/lootBox_ls_invasion_epic.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_LOOTBOX_LS_INVASION_RARE:String = "../maps/icons/quests/bonuses/s232x174/lootBox_ls_invasion_rare.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_LOOTBOX_SILVER:String = "../maps/icons/quests/bonuses/s232x174/lootBox_silver.png";
       
@@ -40532,6 +40608,12 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_LOOTBOX_DEFAULT:String = "../maps/icons/quests/bonuses/s296x222/lootBox_default.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_LOOTBOX_GOLD:String = "../maps/icons/quests/bonuses/s296x222/lootBox_gold.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_LOOTBOX_LS_INVASION_COMMON:String = "../maps/icons/quests/bonuses/s296x222/lootBox_ls_invasion_common.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_LOOTBOX_LS_INVASION_EPIC:String = "../maps/icons/quests/bonuses/s296x222/lootBox_ls_invasion_epic.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_LOOTBOX_LS_INVASION_RARE:String = "../maps/icons/quests/bonuses/s296x222/lootBox_ls_invasion_rare.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_LOOTBOX_SILVER:String = "../maps/icons/quests/bonuses/s296x222/lootBox_silver.png";
       
@@ -41213,6 +41295,12 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_LOOTBOX_GOLD:String = "../maps/icons/quests/bonuses/s400x300/lootBox_gold.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_LOOTBOX_LS_INVASION_COMMON:String = "../maps/icons/quests/bonuses/s400x300/lootBox_ls_invasion_common.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_LOOTBOX_LS_INVASION_EPIC:String = "../maps/icons/quests/bonuses/s400x300/lootBox_ls_invasion_epic.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_LOOTBOX_LS_INVASION_RARE:String = "../maps/icons/quests/bonuses/s400x300/lootBox_ls_invasion_rare.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_LOOTBOX_SILVER:String = "../maps/icons/quests/bonuses/s400x300/lootBox_silver.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_MENTORINGLICENSE:String = "../maps/icons/quests/bonuses/s400x300/mentoringLicense.png";
@@ -41728,6 +41816,12 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_LOOTBOX_DEFAULT:String = "../maps/icons/quests/bonuses/s600x450/lootBox_default.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_LOOTBOX_GOLD:String = "../maps/icons/quests/bonuses/s600x450/lootBox_gold.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_LOOTBOX_LS_INVASION_COMMON:String = "../maps/icons/quests/bonuses/s600x450/lootBox_ls_invasion_common.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_LOOTBOX_LS_INVASION_EPIC:String = "../maps/icons/quests/bonuses/s600x450/lootBox_ls_invasion_epic.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_LOOTBOX_LS_INVASION_RARE:String = "../maps/icons/quests/bonuses/s600x450/lootBox_ls_invasion_rare.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_LOOTBOX_SILVER:String = "../maps/icons/quests/bonuses/s600x450/lootBox_silver.png";
       
@@ -42442,6 +42536,12 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_LOOTBOX_FUN_RANDOM:String = "../maps/icons/quests/bonuses/small/lootBox_fun_random.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_LOOTBOX_GOLD:String = "../maps/icons/quests/bonuses/small/lootBox_gold.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_LOOTBOX_LS_INVASION_COMMON:String = "../maps/icons/quests/bonuses/small/lootBox_ls_invasion_common.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_LOOTBOX_LS_INVASION_EPIC:String = "../maps/icons/quests/bonuses/small/lootBox_ls_invasion_epic.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_LOOTBOX_LS_INVASION_RARE:String = "../maps/icons/quests/bonuses/small/lootBox_ls_invasion_rare.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_LOOTBOX_SILVER:String = "../maps/icons/quests/bonuses/small/lootBox_silver.png";
       

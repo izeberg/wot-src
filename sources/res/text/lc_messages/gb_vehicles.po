@@ -365,6 +365,9 @@ msgstr "GSOR the TANK"
 msgid "Chassis_GB142_FV230_Canopener"
 msgstr "FV230 Canopener"
 
+msgid "Chassis_GB142_FV230_Canopener_CFE_G"
+msgstr "Twin Guardians"
+
 msgid "Chassis_GB143_FV229_Contender"
 msgstr "FV229 Contender"
 
@@ -1814,6 +1817,28 @@ msgstr "High penetration power, HESH shells"
 
 msgid "GB142_FV230_Canopener"
 msgstr "FV230 Canopener"
+
+msgid "GB142_FV230_Canopener_CFE_G"
+msgstr "Twin Guardians"
+
+msgid "GB142_FV230_Canopener_CFE_G_descr"
+msgstr ""
+"The peerless generals Shubao and Jingde rode amid the fires of war, their hoofbeats echoing across the Yellow River at the dawn of the Tang Dynasty.\n"
+"\n"
+"A thousand years later, they remain immortalized, for the Emperor commissioned their likenesses to stand vigil over the palace gates. Where once they upheld a flourishing empire, they now serve as eternal sentinels to ward off malign spirits. Shubao guards with principled grace, while Jingde commands with iron discipline. Empowered by their storied might, may you, too, prevail against the shadows."
+
+msgid "GB142_FV230_Canopener_CFE_G_long_special"
+msgstr ""
+"This versatile heavy tank is notorious for its impressive armor. Decent "
+"mobility lets it arrive promptly, while good gun depression turns any slope "
+"into a fortified position. A reliable gun that delivers devastating salvos "
+"ensures no target goes unpunished."
+
+msgid "GB142_FV230_Canopener_CFE_G_short"
+msgstr "Twin Guardians"
+
+msgid "GB142_FV230_Canopener_CFE_G_short_special"
+msgstr "Salvo Fire mode, formidable armor"
 
 msgid "GB142_FV230_Canopener_descr"
 msgstr ""
@@ -3757,6 +3782,9 @@ msgstr "Rolls-Royce Griffon 180"
 msgid "Rolls_Royce_Griffon_180_B"
 msgstr "Rolls-Royce Griffon 180B"
 
+msgid "Rolls_Royce_Griffon_180_CFE_G"
+msgstr "Rolls-Royce Griffon 180"
+
 msgid "Rolls_Royce_Griffon_214"
 msgstr "Rolls-Royce Griffon (214)"
 
@@ -3964,6 +3992,9 @@ msgstr "SR C42F"
 msgid "SR_C42H"
 msgstr "SR C42H"
 
+msgid "SR_C42H_CFE_G"
+msgstr "SR C42H"
+
 msgid "SR_C42I"
 msgstr "SR C42I"
 
@@ -4134,6 +4165,9 @@ msgstr "GSOR the TANK"
 
 msgid "Turret_1_GB142_FV230_Canopener"
 msgstr "FV230 Canopener"
+
+msgid "Turret_1_GB142_FV230_Canopener_CFE_G"
+msgstr "Twin Guardians"
 
 msgid "Turret_1_GB143_FV229_Contender"
 msgstr "FV229 Contender"
@@ -4515,6 +4549,9 @@ msgid "Twin_110_mm_Gun_MBC"
 msgstr "Twin 110 mm Gun MBC"
 
 msgid "Twin_120_mm_Gun_L1_MBC"
+msgstr "Twin 120 mm Gun L1 MBC"
+
+msgid "Twin_120_mm_Gun_L1_MBC_CFE_G"
 msgstr "Twin 120 mm Gun L1 MBC"
 
 msgid "Twin_20pdr_Gun_MBC"
@@ -4902,6 +4939,9 @@ msgstr "APDS L1 (A39)"
 msgid "_120mm_APDS_L1_MBC"
 msgstr "APDS L1 MBC"
 
+msgid "_120mm_APDS_L1_MBC_CFE_G"
+msgstr "APDS L1 MBC"
+
 msgid "_120mm_APDS_L1_SC"
 msgstr "APDS L1 (SC)"
 
@@ -4924,6 +4964,9 @@ msgid "_120mm_AP_L1_A39"
 msgstr "AP L1 (A39)"
 
 msgid "_120mm_AP_L1_MBC"
+msgstr "AP L1 MBC"
+
+msgid "_120mm_AP_L1_MBC_CFE_G"
 msgstr "AP L1 MBC"
 
 msgid "_120mm_AP_L1_SC"
@@ -5005,6 +5048,9 @@ msgid "_120mm_HE_L1A1"
 msgstr "HESH-T L1"
 
 msgid "_120mm_HE_L1_MBC"
+msgstr "HE L1 MBC"
+
+msgid "_120mm_HE_L1_MBC_CFE_G"
 msgstr "HE L1 MBC"
 
 msgid "_120mm_HE_L31A2"
