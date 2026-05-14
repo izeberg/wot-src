@@ -15797,6 +15797,10 @@ package
       
       public static const SPECIAL_STYLE_PUB_WEST_TANKFEST_2026_DESC_LONG:String = "#vehicle_customization:special_style/pub_west_tankfest_2026_desc/long";
       
+      public static const SPECIAL_STYLE_GB142_FV230_CANOPENER_KS_3DST:String = "#vehicle_customization:special_style/GB142_FV230_Canopener_KS_3Dst";
+      
+      public static const SPECIAL_STYLE_GB142_FV230_CANOPENER_KS_3DST_DESC_LONG:String = "#vehicle_customization:special_style/GB142_FV230_Canopener_KS_3Dst_desc/long";
+      
       public static const SPECIAL_STYLE_BP2026_MARCH_1:String = "#vehicle_customization:special_style/bp2026_march_1";
       
       public static const SPECIAL_STYLE_BP2026_MARCH_1_DESC:String = "#vehicle_customization:special_style/bp2026_march_1_desc";
@@ -21128,6 +21132,20 @@ package
       public static const ATTACHMENT_HEAVY_ORDNANCE_CUS_114_HISTORICAL_MK18:String = "#vehicle_customization:attachment/heavy_ordnance/Cus_114_Historical_MK18";
       
       public static const ATTACHMENT_HEAVY_ORDNANCE_CUS_115_HISTORICAL_AIRCRAFTCANNON:String = "#vehicle_customization:attachment/heavy_ordnance/Cus_115_Historical_AircraftCannon";
+      
+      public static const ATTACHMENT_ALTERED_ATTACHMENTS:String = "#vehicle_customization:attachment/altered_attachments";
+      
+      public static const ATTACHMENT_ALTERED_ATTACHMENTS_CUS_214_LS_OPTICALDEVICE:String = "#vehicle_customization:attachment/altered_attachments/Cus_214_LS_OpticalDevice";
+      
+      public static const ATTACHMENT_ALTERED_ATTACHMENTS_CUS_215_LS_MACHINEGUNN:String = "#vehicle_customization:attachment/altered_attachments/Cus_215_LS_Machinegunn";
+      
+      public static const ATTACHMENT_ALTERED_ATTACHMENTS_CUS_216_LS_GASBALOONS:String = "#vehicle_customization:attachment/altered_attachments/Cus_216_LS_GasBaloons";
+      
+      public static const ATTACHMENT_ALTERED_ATTACHMENTS_CUS_216_LS_GASBALOONS_DESCRIPTION:String = "#vehicle_customization:attachment/altered_attachments/Cus_216_LS_GasBaloons/description";
+      
+      public static const ATTACHMENT_ALTERED_ATTACHMENTS_CUS_217_LS_BARRELS:String = "#vehicle_customization:attachment/altered_attachments/Cus_217_LS_Barrels";
+      
+      public static const ATTACHMENT_ALTERED_ATTACHMENTS_CUS_218_LS_WINCH:String = "#vehicle_customization:attachment/altered_attachments/Cus_218_LS_Winch";
        
       
       public function VEHICLE_CUSTOMIZATION()
