@@ -362,6 +362,9 @@ msgstr "GSOR坦克"
 msgid "Chassis_GB142_FV230_Canopener"
 msgstr "FV230 爆裂者"
 
+msgid "Chassis_GB142_FV230_Canopener_CFE_G"
+msgstr "双神镇厄"
+
 msgid "Chassis_GB143_FV229_Contender"
 msgstr "FV229 角逐者"
 
@@ -1480,6 +1483,25 @@ msgstr "高额的平均穿透力，HESH炮弹"
 
 msgid "GB142_FV230_Canopener"
 msgstr "FV230 爆裂者"
+
+msgid "GB142_FV230_Canopener_CFE_G"
+msgstr "双神镇厄"
+
+msgid "GB142_FV230_Canopener_CFE_G_descr"
+msgstr ""
+"秦琼，字叔宝；尉迟恭，字敬德。二将者，皆入凌烟阁，为大唐开国功臣也。贞观肇基之时，随太宗驰驱沙场，马踏黄河，助成\"天可汗\"之赫赫威名。传说太宗尝命画工绘其像，悬于宫门，以御邪祟。后世百姓慕其英武，争相效仿，遂成门神之俗，流传千古。谚云: \"双锏打成唐世界，单鞭撑住李乾坤\"，盖赞其旷世奇功也。\n"
+"\n"
+"猛将定盛唐，门神纳吉庆。叔宝披坚秉正，敬德玄甲持严；昔时并驱疆场，今朝共守门扉。不使邪祟窥夜户，唯留清气满庭轩。千载之下，二公之名，妇孺皆知。今此传世门神，携盛唐威灵相助，愿尔百战百捷，凯歌而还。"
+
+msgid "GB142_FV230_Canopener_CFE_G_long_special"
+msgstr ""
+"这辆全能型重型坦克以其坚固的装甲而闻名。不俗的机动性使其能够及时抵达点位，并利用优秀的火炮俯角来驾驭任何斜坡点位。其可靠的火炮可以进行威力惊人的齐射，让敌人吃不了兜着走。"
+
+msgid "GB142_FV230_Canopener_CFE_G_short"
+msgstr "双神镇厄"
+
+msgid "GB142_FV230_Canopener_CFE_G_short_special"
+msgstr "齐射射击模式，坚固的装甲"
 
 msgid "GB142_FV230_Canopener_descr"
 msgstr ""
@@ -2975,6 +2997,9 @@ msgstr "罗·罗 格里芬 180"
 msgid "Rolls_Royce_Griffon_180_B"
 msgstr "罗·罗 格里芬 180B"
 
+msgid "Rolls_Royce_Griffon_180_CFE_G"
+msgstr "罗·罗 格里芬 180"
+
 msgid "Rolls_Royce_Griffon_214"
 msgstr "罗·罗 格里芬 (214)"
 
@@ -3190,6 +3215,9 @@ msgstr "SR C42F"
 msgid "SR_C42H"
 msgstr "SR C42H"
 
+msgid "SR_C42H_CFE_G"
+msgstr "SR C42H"
+
 msgid "SR_C42I"
 msgstr "SR C42I"
 
@@ -3360,6 +3388,9 @@ msgstr "GSOR坦克"
 
 msgid "Turret_1_GB142_FV230_Canopener"
 msgstr "FV230 爆裂者"
+
+msgid "Turret_1_GB142_FV230_Canopener_CFE_G"
+msgstr "双神镇厄"
 
 msgid "Turret_1_GB143_FV229_Contender"
 msgstr "FV229 角逐者"
@@ -3741,6 +3772,9 @@ msgid "Twin_110_mm_Gun_MBC"
 msgstr "110mm MBC双管炮"
 
 msgid "Twin_120_mm_Gun_L1_MBC"
+msgstr "120mm L1 MBC双管炮"
+
+msgid "Twin_120_mm_Gun_L1_MBC_CFE_G"
 msgstr "120mm L1 MBC双管炮"
 
 msgid "Twin_20pdr_Gun_MBC"
@@ -4128,6 +4162,9 @@ msgstr "APDS L1 (A39)"
 msgid "_120mm_APDS_L1_MBC"
 msgstr "APDS L1 MBC"
 
+msgid "_120mm_APDS_L1_MBC_CFE_G"
+msgstr "APDS L1 MBC"
+
 msgid "_120mm_APDS_L1_SC"
 msgstr "APDS L1 (SC)"
 
@@ -4150,6 +4187,9 @@ msgid "_120mm_AP_L1_A39"
 msgstr "AP L1 (A39)"
 
 msgid "_120mm_AP_L1_MBC"
+msgstr "AP L1 MBC"
+
+msgid "_120mm_AP_L1_MBC_CFE_G"
 msgstr "AP L1 MBC"
 
 msgid "_120mm_AP_L1_SC"
@@ -4231,6 +4271,9 @@ msgid "_120mm_HE_L1A1"
 msgstr "HESH-T L1"
 
 msgid "_120mm_HE_L1_MBC"
+msgstr "HE L1 MBC"
+
+msgid "_120mm_HE_L1_MBC_CFE_G"
 msgstr "HE L1 MBC"
 
 msgid "_120mm_HE_L31A2"

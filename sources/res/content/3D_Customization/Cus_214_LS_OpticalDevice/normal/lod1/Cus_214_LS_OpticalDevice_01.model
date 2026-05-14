@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_214_LS_OpticalDevice/normal/lod2/Cus_214_LS_OpticalDevice_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.254729 -0.199998 -0.248531</min>
+		<max>0.227812 0.621063 0.261613</max>
+	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/Cus_214_LS_OpticalDevice/normal/lod1/Cus_214_LS_OpticalDevice_01</nodefullVisual>
+	<tank>true</tank>
+</root>

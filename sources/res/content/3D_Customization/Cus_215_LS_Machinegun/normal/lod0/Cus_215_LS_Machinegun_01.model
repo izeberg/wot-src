@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-0.440954 -0.200000 -0.361148</min>
+		<max>0.293346 0.898996 0.905872</max>
+	</visibilityBox>
+	<parent>content/3D_Customization/Cus_215_LS_Machinegun/normal/lod1/Cus_215_LS_Machinegun_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_215_LS_Machinegun/normal/lod0/Cus_215_LS_Machinegun_01</nodefullVisual>
+</root>
