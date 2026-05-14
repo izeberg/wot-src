@@ -47,10 +47,7 @@ _FINANCIAL_BLOCK_VO_META = base.PropertyMeta((
 _FINANCIAL_BLOCK_VO_META.bind(components.BattleRoyaleFinancialBlock)
 _FINANCIAL_PREM_BLOCK_VO_META = base.PropertyMeta((
  ('credits', 0, 'credits'),
- ('xp', 0, 'xp'),
- ('crystal', 0, 'crystal'),
- ('brcoin', 0, 'brcoin'),
- ('stpcoin', 0, 'stpcoin')))
+ ('xp', 0, 'xp')))
 _FINANCIAL_PREM_BLOCK_VO_META.bind(components.BattleRoyaleFinancialPremBlock)
 _STAT_ITEM_VO_META = base.PropertyMeta((
  ('type', '', 'type'),

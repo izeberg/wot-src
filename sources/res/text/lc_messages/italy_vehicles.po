@@ -262,6 +262,9 @@ msgstr "Coccodrillo"
 msgid "Chassis_It40_Predatore"
 msgstr "Predatore"
 
+msgid "Chassis_It41_Cerbero"
+msgstr "Cerbero"
+
 msgid "Continental_AOI_1490_italy"
 msgstr "Continental AOI-1490-I"
 
@@ -1026,6 +1029,32 @@ msgstr "Predatore"
 msgid "It40_Predatore_short_special"
 msgstr "Система дозарядки, хорошая мобильность"
 
+msgid "It41_Cerbero"
+msgstr "Cerbero"
+
+msgid "It41_Cerbero_descr"
+msgstr ""
+"В первые десятилетия после Второй мировой войны пострадавшая Италия не могла"
+" выделять значительные средства на танкостроение, поэтому инженеры создавали"
+" новые образцы бронетехники на основе уже имеющихся разработок. Одним из "
+"таких решений стало размещение увеличенной башни прототипа Felice на шасси "
+"от СС56. В результате массу машины удалось снизить, а установка нового "
+"орудия значительно повысила её огневую мощь."
+
+msgid "It41_Cerbero_long_special"
+msgstr ""
+"Cerbero — итальянская ПТ-САУ IX уровня. Обладает механизмом обратной "
+"дозарядки на три снаряда, обеспечивающим стабильную огневую мощь вне "
+"зависимости от обстоятельств. Cerbero также хорошо бронирован, что позволяет"
+" ему оставаться активным и сражаться на передовой, не давая противнику "
+"передохнуть."
+
+msgid "It41_Cerbero_short"
+msgstr "Cerbero"
+
+msgid "It41_Cerbero_short_special"
+msgstr "Хорошее бронирование корпуса и башни, механизм обратной дозарядки"
+
 msgid "MB_822_Ka_500"
 msgstr "MB 822 Ka-500"
 
@@ -1049,6 +1078,9 @@ msgstr "MB 838 CaM-500A"
 
 msgid "MTU_870"
 msgstr "MTU 870"
+
+msgid "MTU_870_B"
+msgstr "MTU 870 (B)"
 
 msgid "MTU_870_P"
 msgstr "MTU 870 (p)"
@@ -1097,6 +1129,9 @@ msgstr "RV 4"
 
 msgid "RV_4B"
 msgstr "RV 4B"
+
+msgid "RV_4C"
+msgstr "RV 4C"
 
 msgid "RV_4F"
 msgstr "RV 4F"
@@ -1313,6 +1348,9 @@ msgstr "Coccodrillo"
 
 msgid "Turret_1_It40_Predatore"
 msgstr "Predatore"
+
+msgid "Turret_1_It41_Cerbero"
+msgstr "Cerbero"
 
 msgid "Turret_2_It03_M15_42"
 msgstr "M15/42 modificata"
@@ -1593,6 +1631,9 @@ msgstr "c.p. 120/67 HVAP T17E"
 msgid "_127mm_APDS_127_54"
 msgstr "c.p. 127/54 Mk. 316"
 
+msgid "_127mm_APDS_127_54B"
+msgstr "c.p. 127/54 Mk. 316B"
+
 msgid "_127mm_AP_127_54"
 msgstr "c.p. 127/54 Mk. 216"
 
@@ -1605,8 +1646,14 @@ msgstr "Cannone da 127/58"
 msgid "_127mm_HEAT_127_54"
 msgstr "c.c. 127/54 Mk. 411"
 
+msgid "_127mm_HEAT_127_54B"
+msgstr "c.c. 127/54 Mk. 411B"
+
 msgid "_127mm_Mark_116"
 msgstr "a.e. 127/54 Mk. 116"
+
+msgid "_127mm_Mark_116B"
+msgstr "a.e. 127/54 Mk. 116B"
 
 msgid "_127mm_OTO_Melara"
 msgstr "127 mm OTO Melara"

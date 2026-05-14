@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F142_M47_Chevalier/normal/lod2/Hull</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/french/F142_M47_Chevalier/normal/lod3/Hull</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.875756 -0.714642 -3.917350</min>
+		<max>1.860054 0.675966 3.807059</max>
+	</visibilityBox>
+</root>

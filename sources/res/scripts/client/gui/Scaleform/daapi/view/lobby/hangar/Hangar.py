@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging
 from functools import partial
 import BigWorld, typing
@@ -36,7 +37,6 @@ from gui.impl import backport
 from gui.impl.gen import R
 from gui.impl.lobby.hangar.base.sound_constants import HangarSoundStates
 from gui.limited_ui.lui_rules_storage import LUI_RULES
-from gui.marathon.marathon_event import MarathonEvent
 from gui.prb_control import prb_getters
 from gui.prb_control.ctrl_events import g_prbCtrlEvents
 from gui.prb_control.entities.listener import IGlobalListener
@@ -71,6 +71,7 @@ from sound_gui_manager import CommonSoundSpaceSettings
 from tutorial.control.context import GLOBAL_FLAG
 if typing.TYPE_CHECKING:
     from frameworks.wulf import Window, View
+    from gui.marathon.marathon_event import MarathonEvent
 _logger = logging.getLogger(__name__)
 _HELP_LAYOUT_RESTRICTED_LAYERS = (
  WindowLayer.TOP_SUB_VIEW,

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.150442 -0.004284 -1.152994</min>
+		<max>1.150442 3.681011 1.152994</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/american/A197_Jezevec/normal/lod0/Turret_01</nodefullVisual>
+	<parent>vehicles/american/A197_Jezevec/normal/lod1/Turret_01</parent>
+	<extent>32.000000</extent>
+</root>

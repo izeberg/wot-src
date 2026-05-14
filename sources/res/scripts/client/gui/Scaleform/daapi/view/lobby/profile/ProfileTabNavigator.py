@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from future.utils import viewvalues
 from gui.Scaleform.daapi.view.lobby.profile.ProfileSection import ProfileSection
 from gui.Scaleform.daapi.view.meta.ProfileTabNavigatorMeta import ProfileTabNavigatorMeta
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
@@ -21,7 +23,7 @@ class ProfileTabNavigator(ProfileTabNavigatorMeta):
         return
 
     def invokeUpdate(self):
-        for component in self.components.itervalues():
+        for component in viewvalues(self.components):
             if isinstance(component, ProfileSection):
                 component.invokeUpdate()
 

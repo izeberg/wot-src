@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from constants import DOSSIER_TYPE
 from dossiers2.custom.clan_layout import CLAN_DOSSIER_LIST_BLOCKS
 from dossiers2.custom.account_layout import ACCOUNT_DOSSIER_STATIC_BLOCKS, ACCOUNT_DOSSIER_BINARY_SET_BLOCKS, ACCOUNT_DOSSIER_BLOCKS, ACCOUNT_DOSSIER_DICT_BLOCKS, ACCOUNT_DOSSIER_LIST_BLOCKS

@@ -2116,6 +2116,35 @@ msgstr ""
 msgid "A195_Gorilla_short"
 msgstr "Gorilla"
 
+msgid "A197_Jezevec"
+msgstr "Jezevec"
+
+msgid "A197_Jezevec_descr"
+msgstr ""
+"В начале 1960-х годов в Чехословакии началась разработка среднего танка с "
+"мощным вооружением, низким силуэтом и хорошей подвижностью. Проект отличался"
+" от классической схемы: боевое отделение располагалось в корме, экипаж почти"
+" полностью находился в корпусе, а орудие в качающейся башне управлялось "
+"дистанционно. Из-за сложности и высокой стоимости от проекта отказались. "
+"Построенный опытный образец продали Египту для испытаний, однако он не "
+"оправдал ожиданий и в середине 1970-х годов был передан США для изучения "
+"технологий."
+
+msgid "A197_Jezevec_long_special"
+msgstr ""
+"Jezevec — американский средний танк поддержки IX уровня, вооружёный "
+"уникальным орудием с системой дозарядки. Разовый урон низкий, но это "
+"компенсируется большим магазином и быстрой перезарядкой между выстрелами, "
+"позволяющими быстро наносить много урона. Время заряжания каждого снаряда "
+"одинаковое, что обеспечивает высокую гибкость. Кроме того, у танка отличная "
+"мобильность."
+
+msgid "A197_Jezevec_short"
+msgstr "Jezevec"
+
+msgid "A197_Jezevec_short_special"
+msgstr "Отличная мобильность, система дозарядки с высокой скорострельностью"
+
 msgid "A21_T14_long_special"
 msgstr ""
 "Американский тяжёлый танк V уровня. Обладает наклонной лобовой бронёй, "
@@ -2822,6 +2851,9 @@ msgstr ""
 "American LaFrance\n"
 "312A V-12"
 
+msgid "B_58A"
+msgstr "B-58A"
+
 msgid "British_Wireless_set_N19"
 msgstr "Wireless Set No. 19"
 
@@ -3197,6 +3229,9 @@ msgstr "AHT-7"
 
 msgid "Chassis_A195_Gorilla"
 msgstr "Gorilla"
+
+msgid "Chassis_A197_Jezevec"
+msgstr "Jezevec"
 
 msgid "Chassis_A22_M5_Stuart"
 msgstr "M5 Stuart"
@@ -4598,6 +4633,9 @@ msgstr "QF 6-pdr Mk. III"
 msgid "QF_6_pounder_Mk_IIIA"
 msgstr "QF 6-pdr Mk. IIIA"
 
+msgid "Radiostanice_R_113A"
+msgstr "Radiostanice R-123A"
+
 msgid "Ram-II"
 msgstr "Ram II"
 
@@ -5351,6 +5389,9 @@ msgstr "AHT-7"
 
 msgid "Turret_1_A195_Gorilla"
 msgstr "Gorilla"
+
+msgid "Turret_1_A197_Jezevec"
+msgstr "Jezevec"
 
 msgid "Turret_1_A22_M5_Stuart"
 msgstr "M5 Stuart"
@@ -7643,6 +7684,18 @@ msgstr "M64"
 
 msgid "_76mm_M79"
 msgstr "HVAP M93(M7)"
+
+msgid "_85_mm_D_58A"
+msgstr "85 mm D-58A"
+
+msgid "_85_mm_UBR_372A"
+msgstr "85 mm UBR 372A"
+
+msgid "_85_mm_UBR_372B"
+msgstr "85 mm UBR 372B"
+
+msgid "_85_mm_UOF_372A"
+msgstr "85 mm UOF 372A"
 
 msgid "_85mm_AAAC_I"
 msgstr "AAAC-I"

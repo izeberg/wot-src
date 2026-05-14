@@ -99,6 +99,8 @@ package net.wg.gui.lobby.settings.vo.config
       
       public var SNIPER_MODE_TERRAIN_TESSELLATION_ENABLED:SettingsControlProp = null;
       
+      public var VISIBILITY_TUNNEL_ENABLED:SettingsControlProp = null;
+      
       public var tessellationSupported:SettingsControlProp = null;
       
       public var isSDQuality:SettingsControlProp = null;
@@ -159,6 +161,7 @@ package net.wg.gui.lobby.settings.vo.config
             "SEMITRANSPARENT_LEAVES_ENABLED":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
             "TERRAIN_TESSELLATION_ENABLED":createControl(ControlsFactory.TYPE_CHECKBOX).isDependOn(SettingsConfigHelper.SNIPER_MODE_TERRAIN_TESSELLATION_ENABLED).build(),
             "SNIPER_MODE_TERRAIN_TESSELLATION_ENABLED":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
+            "VISIBILITY_TUNNEL_ENABLED":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
             "qualityOrder":new Vector.<String>(),
             "presets":null,
             "tessellationSupported":createControl(ControlsFactory.TYPE_CHECKBOX).readOnly(true).build(),
@@ -216,6 +219,7 @@ package net.wg.gui.lobby.settings.vo.config
          this.SEMITRANSPARENT_LEAVES_ENABLED = null;
          this.TERRAIN_TESSELLATION_ENABLED = null;
          this.SNIPER_MODE_TERRAIN_TESSELLATION_ENABLED = null;
+         this.VISIBILITY_TUNNEL_ENABLED = null;
          this.qualityOrder = null;
          this.presets = null;
          this.tessellationSupported = null;

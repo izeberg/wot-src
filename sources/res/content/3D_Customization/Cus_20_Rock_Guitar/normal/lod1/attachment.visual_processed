@@ -8,24 +8,6 @@
 			<row2>0.000000 0.000000 1.000000</row2>
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
-		<node>
-			<identifier>nodes_01</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-			<node>
-				<identifier>HP_attachment</identifier>
-				<transform>
-					<row0>1.000000 0.000000 0.000000</row0>
-					<row1>0.000000 1.000000 0.000000</row1>
-					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 0.000000 0.000000</row3>
-				</transform>
-			</node>
-		</node>
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
@@ -38,8 +20,8 @@
 				<material>
 					<identifier>equipment</identifier>
 					<fx>shaders/std_effects/PBS_tank.fx</fx>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>0</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>112</materialKind>
 					<property>
 						diffuseMap
 						<Texture>content/3D_Customization/Cus_20_Rock_Guitar/Rock_Guitar_AM.dds</Texture>
@@ -69,13 +51,14 @@
 						<Texture>content/3D_Customization/Cus_20_Rock_Guitar/Rock_Guitar_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.036190 0.337055 0.294447</groupOrigin>
+				<groupOrigin>-0.033663 0.254850 0.273885</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.031516 -0.200095 -0.408712</min>
-		<max>0.103896 0.874204 0.997606</max>
+		<min>-0.096641 -0.100125 -0.380171</min>
+		<max>0.029315 0.610062 0.929098</max>
 	</boundingBox>
+	<customBsp>true</customBsp>
 	<geometrySize>55308</geometrySize>
 </root>

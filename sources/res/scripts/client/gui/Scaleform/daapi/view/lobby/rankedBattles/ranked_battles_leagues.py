@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.ClientUpdateManager import g_clientUpdateManager
 from gui.ranked_battles.ranked_builders import leagues_vos
 from gui.ranked_battles.ranked_helpers.web_season_provider import UNDEFINED_LEAGUE_ID

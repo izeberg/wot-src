@@ -203,6 +203,8 @@ package net.wg.gui.lobby.settings
       
       public var DRR_AUTOSCALER_ENABLEDCheckbox:CheckBox = null;
       
+      public var VISIBILITY_TUNNEL_ENABLEDCheckbox:CheckBox = null;
+      
       protected var currentScreenModeId:String = "";
       
       public function GraphicSettingsBase()
@@ -311,6 +313,7 @@ package net.wg.gui.lobby.settings
          this.SEMITRANSPARENT_LEAVES_ENABLEDCheckbox = null;
          this.TERRAIN_TESSELLATION_ENABLEDCheckbox = null;
          this.SNIPER_MODE_TERRAIN_TESSELLATION_ENABLEDCheckbox = null;
+         this.VISIBILITY_TUNNEL_ENABLEDCheckbox = null;
          this.tabs.dispose();
          this.tabs = null;
          this.screenForm.dispose();
@@ -397,6 +400,7 @@ package net.wg.gui.lobby.settings
          registerToolTip(this.SEMITRANSPARENT_LEAVES_ENABLEDCheckbox,SettingsConfigHelper.SEMITRANSPARENT_LEAVES_ENABLED);
          registerToolTip(this.TERRAIN_TESSELLATION_ENABLEDCheckbox,SettingsConfigHelper.TERRAIN_TESSELLATION_ENABLED);
          registerToolTip(this.SNIPER_MODE_TERRAIN_TESSELLATION_ENABLEDCheckbox,SettingsConfigHelper.SNIPER_MODE_TERRAIN_TESSELLATION_ENABLED);
+         registerToolTip(this.VISIBILITY_TUNNEL_ENABLEDCheckbox,SettingsConfigHelper.VISIBILITY_TUNNEL_ENABLED);
          registerToolTip(this.graphicsQualityHDSD,SettingsConfigHelper.GRAPHIC_QUALITY_HDSD);
          registerToolTip(this.graphicsQualityHDSDHigh,SettingsConfigHelper.GRAPHIC_QUALITY_HDSD_HIGH);
          registerToolTip(this.CUSTOM_AA_MODELabel,SettingsConfigHelper.CUSTOM_AA_MODE);
@@ -488,6 +492,7 @@ package net.wg.gui.lobby.settings
          this.SEMITRANSPARENT_LEAVES_ENABLEDCheckbox = _loc1_.SEMITRANSPARENT_LEAVES_ENABLEDCheckbox;
          this.TERRAIN_TESSELLATION_ENABLEDCheckbox = _loc1_.TERRAIN_TESSELLATION_ENABLEDCheckbox;
          this.SNIPER_MODE_TERRAIN_TESSELLATION_ENABLEDCheckbox = _loc1_.SNIPER_MODE_TERRAIN_TESSELLATION_ENABLEDCheckbox;
+         this.VISIBILITY_TUNNEL_ENABLEDCheckbox = _loc1_.VISIBILITY_TUNNEL_ENABLEDCheckbox;
       }
    }
 }

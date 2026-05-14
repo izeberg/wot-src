@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from future.utils import lzip
 try:
     from defusedexpat import pyexpat as expat
 except ImportError:
@@ -70,7 +72,7 @@ class _DictSAXHandler(object):
     def _attrs_to_dict(self, attrs):
         if isinstance(attrs, dict):
             return attrs
-        return self.dict_constructor(zip(attrs[0::2], attrs[1::2]))
+        return self.dict_constructor(lzip(attrs[0::2], attrs[1::2]))
 
     def startNamespaceDecl(self, prefix, uri):
         self.namespace_declarations[prefix or ''] = uri

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<xmlns:xmlref>http://bwt/xmlref</xmlns:xmlref>
 	<icons>
 		<ap>ARMOR_PIERCING.png 0 0</ap>
 		<ap_premium>ARMOR_PIERCING_PREMIUM.png 0 0</ap_premium>
@@ -3296,7 +3295,7 @@
 		<isTracer>true</isTracer>
 		<effects>hugeArmorPiercing</effects>
 		<damage>
-			<armor>100</armor>
+			<armor>800</armor>
 			<devices>210</devices>
 		</damage>
 		<normalizationAngle>5</normalizationAngle>
@@ -3313,7 +3312,7 @@
 		<isTracer>true</isTracer>
 		<effects>hugeAPCR</effects>
 		<damage>
-			<armor>100</armor>
+			<armor>800</armor>
 			<devices>210</devices>
 		</damage>
 		<normalizationAngle>2</normalizationAngle>
@@ -3334,7 +3333,7 @@
 		<isTracer>true</isTracer>
 		<effects>hugeHighExplosive</effects>
 		<damage>
-			<armor>100</armor>
+			<armor>1100</armor>
 			<devices>210</devices>
 		</damage>
 		<armorSpalls>
@@ -3344,7 +3343,7 @@
 			</impactRadius>
 			<coneAngle>90</coneAngle>
 			<damage>
-				<armor>50</armor>
+				<armor>550</armor>
 				<devices>105</devices>
 			</damage>
 		</armorSpalls>
@@ -3863,8 +3862,8 @@
 		<isTracer>true</isTracer>
 		<effects>mainArmorPiercing1</effects>
 		<damage>
-			<armor>80</armor>
-			<devices>32</devices>
+			<armor>75</armor>
+			<devices>3</devices>
 		</damage>
 		<normalizationAngle>5</normalizationAngle>
 		<ricochetAngle>70</ricochetAngle>
@@ -3884,8 +3883,8 @@
 		<isTracer>true</isTracer>
 		<effects>mainAPCR1</effects>
 		<damage>
-			<armor>80</armor>
-			<devices>32</devices>
+			<armor>75</armor>
+			<devices>3</devices>
 		</damage>
 		<normalizationAngle>2</normalizationAngle>
 		<ricochetAngle>70</ricochetAngle>
@@ -3906,15 +3905,15 @@
 		<isTracer>true</isTracer>
 		<effects>mainHighExplosive1</effects>
 		<damage>
-			<armor>160</armor>
-			<devices>32</devices>
+			<armor>140</armor>
+			<devices>3</devices>
 		</damage>
 		<armorSpalls>
 			<impactRadius>0</impactRadius>
 			<coneAngle>90</coneAngle>
 			<damage>
-				<armor>160</armor>
-				<devices>32</devices>
+				<armor>140</armor>
+				<devices>3</devices>
 			</damage>
 		</armorSpalls>
 		<deviceDamagePossibility>
@@ -10641,6 +10640,69 @@
 		<normalizationAngle>5</normalizationAngle>
 		<ricochetAngle>70</ricochetAngle>
 	</_240mm_AP_M114_M78>
+	<_85_mm_UBR_372A>
+		<id>362</id>
+		<userString>#usa_vehicles:_85_mm_UBR_372A</userString>
+		<icon>ap</icon>
+		<price>388</price>
+		<kind>ARMOR_PIERCING</kind>
+		<caliber>85</caliber>
+		<isTracer>true</isTracer>
+		<effects>mainArmorPiercing</effects>
+		<damage>
+			<armor>180</armor>
+			<devices>115</devices>
+		</damage>
+		<normalizationAngle>5</normalizationAngle>
+		<ricochetAngle>70</ricochetAngle>
+	</_85_mm_UBR_372A>
+	<_85_mm_UBR_372B>
+		<id>363</id>
+		<userString>#usa_vehicles:_85_mm_UBR_372B</userString>
+		<icon>ap_cr_premium</icon>
+		<price>3600</price>
+		<improved>true</improved>
+		<kind>ARMOR_PIERCING_CR</kind>
+		<caliber>85</caliber>
+		<isTracer>true</isTracer>
+		<effects>mainAPCR</effects>
+		<damage>
+			<armor>180</armor>
+			<devices>115</devices>
+		</damage>
+		<normalizationAngle>2</normalizationAngle>
+		<ricochetAngle>70</ricochetAngle>
+	</_85_mm_UBR_372B>
+	<_85_mm_UOF_372A>
+		<id>364</id>
+		<userString>#usa_vehicles:_85_mm_UOF_372A</userString>
+		<icon>he_modern</icon>
+		<price>232</price>
+		<kind>HIGH_EXPLOSIVE</kind>
+		<mechanics>MODERN</mechanics>
+		<caliber>85</caliber>
+		<explosionRadius>
+			1.32
+			<!--BW_String-->
+		</explosionRadius>
+		<isTracer>true</isTracer>
+		<effects>mainHighExplosive</effects>
+		<damage>
+			<armor>300</armor>
+			<devices>115</devices>
+		</damage>
+		<armorSpalls>
+			<impactRadius>
+				1.32
+				<!--BW_String-->
+			</impactRadius>
+			<coneAngle>90</coneAngle>
+			<damage>
+				<armor>150</armor>
+				<devices>70</devices>
+			</damage>
+		</armorSpalls>
+	</_85_mm_UOF_372A>
 	<Development_Shell>
 		<id>65000</id>
 		<userString>Development_Shell</userString>

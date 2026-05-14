@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>content/3D_Customization/Cus_114_Historical_MK18/normal/lod1/Cus_114_Historical_MK18_01_anim</nodefullVisual>
 	<parent>content/3D_Customization/Cus_114_Historical_MK18/normal/lod2/Cus_114_Historical_MK18_01_anim</parent>
 	<extent>40.000000</extent>
 	<visibilityBox>
-		<min>-0.156059 -0.200000 -0.319241</min>
+		<min>-0.156059 -0.099999 -0.319241</min>
 		<max>0.142045 0.562330 0.251235</max>
 	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/Cus_114_Historical_MK18/normal/lod1/Cus_114_Historical_MK18_01_anim</nodefullVisual>
+	<tank>true</tank>
 </root>

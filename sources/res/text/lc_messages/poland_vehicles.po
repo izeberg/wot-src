@@ -190,6 +190,9 @@ msgstr "Wz. 64GC Bzyg"
 msgid "Chassis_Pl37_CS_67_Szakal"
 msgstr "CS-67 Szakal"
 
+msgid "Chassis_Pl39_Husarz"
+msgstr "Husarz"
+
 msgid "Chassis_Pl40_Krazownik"
 msgstr "Krazownik"
 
@@ -201,6 +204,9 @@ msgstr "GG-100/162 mm"
 
 msgid "GG_100_162_mm_58"
 msgstr "GG-100/162 mm (58)"
+
+msgid "GG_100_162_mm_Husarz"
+msgstr "100/162 mm Wz.64-1 (Husarz)"
 
 msgid "GG_100_162_mm_K"
 msgstr "GG-100/162 mm K"
@@ -334,6 +340,9 @@ msgstr "PP-GG m100/162"
 msgid "PP_GG_m100_162_58"
 msgstr "PP-GG m100/162 (58)"
 
+msgid "PP_GG_m100_162_Husarz"
+msgstr "PP-GG m100/162 (Husarz)"
+
 msgid "PP_GG_m100_162_K"
 msgstr "PP-GG m100/162 K"
 
@@ -358,6 +367,9 @@ msgstr "PPrz-GG m100/162"
 msgid "PPrz_GG_m100_162_58"
 msgstr "PPrz-GG m100/162 (58)"
 
+msgid "PPrz_GG_m100_162_Husarz"
+msgstr "PPrz-GG m100/162 (Husarz)"
+
 msgid "PPrz_GG_m100_162_K"
 msgstr "PPrz-GG m100/162 K"
 
@@ -381,6 +393,9 @@ msgstr "PW-GG m100/162"
 
 msgid "PW_GG_m100_162_58"
 msgstr "PW-GG m100/162 (58)"
+
+msgid "PW_GG_m100_162_Husarz"
+msgstr "PW-GG m100/162 (Husarz)"
 
 msgid "PW_GG_m100_162_K"
 msgstr "PW-GG m100/162 K"
@@ -1138,6 +1153,32 @@ msgstr ""
 msgid "Pl37_CS_67_Szakal_short"
 msgstr "Szakal"
 
+msgid "Pl39_Husarz"
+msgstr "Husarz"
+
+msgid "Pl39_Husarz_descr"
+msgstr ""
+"Проект ПТ-САУ Husarz («Гусар»). Разрабатывался в 1957 году на механическом "
+"заводе Labędy в Гливице совместно с Министерством народной обороны ПНР. "
+"Вооружение и силовая установка машины предполагали использование новейших "
+"технологий, предоставленных Советским Союзом. Разработка не вышла за пределы"
+" чертежей, поскольку, как и в СССР, в Польше был сделан упор на развитие "
+"ракетной техники."
+
+msgid "Pl39_Husarz_long_special"
+msgstr ""
+"Husarz — польская штурмовая ПТ-САУ VIII уровня. Отличительная черта этой "
+"машины — орудие с глубокой нарезкой ствола, что связывает её с остальными "
+"самоходками Польши. Ещё одна важная особенность — полноценная башня, "
+"позволяющая с большим комфортом наносить огромный урон за выстрел. Кроме "
+"того, машина обладает неплохим бронированием."
+
+msgid "Pl39_Husarz_short"
+msgstr "Husarz"
+
+msgid "Pl39_Husarz_short_special"
+msgstr "Орудие с глубокой нарезкой ствола, башня полного вращения"
+
 msgid "Pl40_Krazownik"
 msgstr "Krazownik"
 
@@ -1210,6 +1251,9 @@ msgstr "R-113"
 
 msgid "R_113_GC"
 msgstr "R-113 GC"
+
+msgid "R_113_Husarz"
+msgstr "R-113 (Husarz)"
 
 msgid "R_113_P"
 msgstr "R-113P"
@@ -1388,6 +1432,9 @@ msgstr "Wz. 64GC Bzyg"
 msgid "Turret_1_Pl37_CS_67_Szakal"
 msgstr "CS-67 Szakal"
 
+msgid "Turret_1_Pl39_Husarz"
+msgstr "Husarz"
+
 msgid "Turret_1_Pl40_Krazownik"
 msgstr "Krazownik"
 
@@ -1435,6 +1482,9 @@ msgstr "CS-53 MH"
 
 msgid "V-2-34_B"
 msgstr "V-2-34"
+
+msgid "V_12_6_Husarz"
+msgstr "V-12-6 (Husarz)"
 
 msgid "V_16_x2"
 msgstr "V-16 x2"

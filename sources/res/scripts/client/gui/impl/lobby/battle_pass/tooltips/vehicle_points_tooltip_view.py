@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from frameworks.wulf import ViewSettings
 from gui.battle_pass.battle_pass_helpers import getSupportedCurrentArenaBonusType
 from gui.impl.gen import R

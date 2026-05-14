@@ -39,13 +39,13 @@
 						<Texture>content/3D_Customization/Cus_145_PE25_Vectoris/Vectoris_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.030203 0.115459 -0.004908</groupOrigin>
+				<groupOrigin>0.030203 0.240349 -0.004908</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.117682 -0.350767 -0.354484</min>
-		<max>0.178088 0.581684 0.344669</max>
+		<min>-0.120897 -0.099144 -0.354014</min>
+		<max>0.177965 0.583440 0.344121</max>
 	</boundingBox>
 	<geometrySize>82222</geometrySize>
 </root>

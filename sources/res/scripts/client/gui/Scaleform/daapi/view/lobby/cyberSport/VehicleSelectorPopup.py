@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from account_helpers.AccountSettings import AccountSettings
 from constants import VEHICLE_CLASSES, BATTLE_MODE_VEHICLE_TAGS
 from gui.Scaleform.daapi.view.lobby.vehicle_selector_base import VehicleSelectorBase

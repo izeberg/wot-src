@@ -1,8 +1,9 @@
+from __future__ import absolute_import
 import importlib, inspect
 from contextlib import contextmanager
-import ResMgr
 from collections import namedtuple
-import types
+from past.builtins import basestring
+import ResMgr
 from debug_utils import LOG_CURRENT_EXCEPTION
 from soft_exception import SoftException
 
@@ -26,10 +27,10 @@ class ResourceError(SoftException):
     def __init__(self, ctx, message):
         super(ResourceError, self).__init__()
         self.ctx = ctx
-        self.message = message
+        self.errorMessage = message
 
     def __str__(self):
-        return ('Error in {0:>s}. {1:>s}').format(self.ctx, self.message)
+        return ('Error in {0:>s}. {1:>s}').format(self.ctx, self.errorMessage)
 
 
 class ResourceCtx(object):
@@ -39,7 +40,7 @@ class ResourceCtx(object):
         self.__filePath = filePath
         if xpath is None:
             self.__xpath = []
-        elif type(xpath) is types.ListType:
+        elif isinstance(xpath, list):
             self.__xpath = xpath
         else:
             raise ValueError('xpath must be list.')
@@ -47,7 +48,7 @@ class ResourceCtx(object):
 
     def next(self, section):
         xpath = self.__xpath[:]
-        if type(section) in types.StringTypes:
+        if isinstance(section, basestring):
             xpath.append(section)
         else:
             xpath.append(section.name)

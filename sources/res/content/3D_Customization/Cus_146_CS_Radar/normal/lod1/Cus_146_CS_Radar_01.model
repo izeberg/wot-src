@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodelessVisual>content/3D_Customization/Cus_146_CS_Radar/normal/lod1/Cus_146_CS_Radar_01</nodelessVisual>
 	<parent>content/3D_Customization/Cus_146_CS_Radar/normal/lod2/Cus_146_CS_Radar_01</parent>
 	<extent>64.000000</extent>
 	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.282611 -0.100000 -0.178204</min>
+		<max>0.282611 0.694954 0.820149</max>
+	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/Cus_146_CS_Radar/normal/lod1/Cus_146_CS_Radar_01</nodefullVisual>
 </root>

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, time
 from constants import EVENT_TYPE, IS_CLIENT
 from debug_utils import LOG_WARNING

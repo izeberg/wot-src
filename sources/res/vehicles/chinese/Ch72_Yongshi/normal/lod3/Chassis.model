@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/chinese/Ch72_Yongshi/normal/lod3/Chassis</nodefullVisual>
+	<parent>vehicles/chinese/Ch72_Yongshi/normal/lod4/Chassis</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.660875 0.005844 -3.729535</min>
+		<max>1.660875 1.123884 3.426196</max>
+	</visibilityBox>
+</root>

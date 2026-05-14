@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodelessVisual>content/3D_Customization/Cus_218_LS_Winch/normal/lod0/Cus_218_LS_Winch_01</nodelessVisual>
+	<visibilityBox>
+		<min>-0.505370 0.000178 -0.710853</min>
+		<max>0.095736 0.498352 0.712847</max>
+	</visibilityBox>
+	<extent>32.000000</extent>
+	<parent>content/3D_Customization/Cus_218_LS_Winch/normal/lod1/Cus_218_LS_Winch_01</parent>
+	<tank>true</tank>
+</root>

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from account_helpers import AccountSettings
 from account_helpers.AccountSettings import OPEN_BUNDLE_REMINDER_SHOWN, OPEN_BUNDLE_NOTIFICATIONS, OPEN_BUNDLE_START_SHOWN, OPEN_BUNDLE_INTRO_SHOWN
 

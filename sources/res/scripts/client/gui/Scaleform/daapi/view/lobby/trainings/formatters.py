@@ -1,9 +1,10 @@
+from __future__ import absolute_import
 from gui.impl import backport
 from gui.impl.gen import R
 from gui.shared.utils.functions import getArenaSubTypeName
 
 def getRoundLenString(roundLength):
-    return backport.text(R.strings.menu.training.info.timeout.value(), roundLength=roundLength / 60)
+    return backport.text(R.strings.menu.training.info.timeout.value(), roundLength=roundLength // 60)
 
 
 def getTrainingRoomTitle(arenaType):

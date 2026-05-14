@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>content/3D_Customization/Cus_99_WT_Machinegun/normal/lod3/Cus_99_WT_Machinegun_01_anim</nodefullVisual>
 	<visibilityBox>
-		<min>-0.138387 -0.200000 -0.537703</min>
-		<max>0.138387 0.518345 1.219375</max>
+		<min>-0.138387 -0.100000 -0.537703</min>
+		<max>0.138387 0.518345 1.219373</max>
 	</visibilityBox>
 	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_99_WT_Machinegun/normal/lod3/Cus_99_WT_Machinegun_01_anim</nodefullVisual>
 </root>

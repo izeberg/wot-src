@@ -121,7 +121,7 @@
 		</armor>
 		<primaryArmor>armor_22 armor_23 armor_28</primaryArmor>
 		<weight>16660</weight>
-		<maxHealth>1360</maxHealth>
+		<maxHealth>1400</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>230</maxHealth>
 			<maxRegenHealth>173</maxRegenHealth>
@@ -3626,7 +3626,7 @@
 			</armor>
 			<primaryArmor>armor_4 armor_23 armor_28</primaryArmor>
 			<weight>7600</weight>
-			<maxHealth>340</maxHealth>
+			<maxHealth>350</maxHealth>
 			<rotationSpeed>46</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>170</maxHealth>
@@ -4713,23 +4713,24 @@
 				<slot>
 					<slotType>attachment</slotType>
 					<slotId>38000</slotId>
-					<position>0.000009 0.943745 -0.162711</position>
-					<rotation>-0 0 0</rotation>
+					<position>0.000006 0.645239 1.031287</position>
+					<rotation>-0 -0 0</rotation>
 					<scale>1 1 1</scale>
 					<applyType>gunMantlet</applyType>
 					<size>medium</size>
+					<enableVisTunnel>true</enableVisTunnel>
+					<hangerId>2</hangerId>
 				</slot>
 				<slot>
 					<slotType>attachment</slotType>
 					<slotId>38001</slotId>
-					<position>
-						0.203785 0.90466 -1.68628
-						<!--BW_String-->
-					</position>
-					<rotation>-0 0 0</rotation>
+					<position>0.548548 0.952373 0.045356</position>
+					<rotation>-0 -0 0</rotation>
 					<scale>1 1 1</scale>
 					<applyType>turret</applyType>
 					<size>small</size>
+					<enableVisTunnel>true</enableVisTunnel>
+					<hangerId>2</hangerId>
 				</slot>
 			</customizationSlots>
 			<physicsShape>

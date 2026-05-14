@@ -52,6 +52,9 @@ msgstr "A-220A-DZT"
 msgid "A_220A-DZT_CFE_A"
 msgstr "A-220A-DZT"
 
+msgid "A_220A_2"
+msgstr "A-220A-2"
+
 msgid "A_220B_1_QL"
 msgstr "A-220B QL"
 
@@ -1542,6 +1545,32 @@ msgstr ""
 msgid "Ch70_PTZ_78_short"
 msgstr "PTZ-78"
 
+msgid "Ch72_Yongshi"
+msgstr "Yongshi"
+
+msgid "Ch72_Yongshi_desc"
+msgstr ""
+"Эскизный проект тяжёлого танка, созданный в рамках работ над моделью 113. "
+"Машина должна была сочетать ходовую часть и корпус на основе отработанных "
+"узлов и агрегатов средних танков с мощным вооружением, способным эффективно "
+"бороться с тяжёлой техникой противника. Для ускорения проектирования было "
+"принято решение использовать наработки по проекту 114, однако в связи с "
+"появлением класса основных боевых танков все работы над моделью 113 были "
+"прекращены."
+
+msgid "Ch72_Yongshi_long_special"
+msgstr ""
+"Yongshi — китайский универсальный тяжёлый танк X уровня. Главная черта "
+"машины — её орудие. И оно необычайно комфортное для того разового урона, "
+"которое наносит. Танк может похвастаться хорошим бронированием корпуса и "
+"башни, а также неплохой мобильностью."
+
+msgid "Ch72_Yongshi_short"
+msgstr "Yongshi"
+
+msgid "Ch72_Yongshi_short_special"
+msgstr "Комфортное орудие, высокий разовый урон"
+
 msgid "Chassis_01_Ch24_Type64_SH"
 msgstr "Type 64BL"
 
@@ -1854,6 +1883,9 @@ msgstr "BZ-79"
 msgid "Chassis_Ch68_PGZ_70"
 msgstr "PGZ-70"
 
+msgid "Chassis_Ch72_Yongshi"
+msgstr "Yongshi"
+
 msgid "Continental_AOSI_895_5_Prem"
 msgstr "Continental AOSI-895-5"
 
@@ -2155,6 +2187,9 @@ msgstr "PGZ-70"
 msgid "Turret_1_Ch70_PTZ_78"
 msgstr "PTZ-78"
 
+msgid "Turret_1_Ch72_Yongshi"
+msgstr "Yongshi"
+
 msgid "Turret_2_Ch04_T34_1"
 msgstr "T-34-1 model 2"
 
@@ -2244,6 +2279,9 @@ msgstr "V-2-34 (58)"
 
 msgid "V_2_54SC"
 msgstr "V-2-54SC"
+
+msgid "V_2_54SCC"
+msgstr "V-2-54SCC"
 
 msgid "V_2_54SCG"
 msgstr "V-2-54SCG"
@@ -3049,11 +3087,23 @@ msgstr "152 mm GM-45"
 msgid "_152mm_GM_45AP"
 msgstr "GM 45AP"
 
+msgid "_152mm_GM_45AP_B"
+msgstr "GM 45AP B"
+
+msgid "_152mm_GM_45B"
+msgstr "152 mm GM-45B"
+
 msgid "_152mm_GM_45CR"
 msgstr "GM 45CR"
 
+msgid "_152mm_GM_45CR_B"
+msgstr "GM 45CR B"
+
 msgid "_152mm_GM_45HE"
 msgstr "GM 45HE"
+
+msgid "_152mm_GM_45HE_B"
+msgstr "GM 45HE B"
 
 msgid "_152mm_HEAT_T"
 msgstr "Po-152T"

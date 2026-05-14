@@ -15893,7 +15893,7 @@
 			<mul>
 				<name>miscAttrs/propellantGun/chargingPerSec</name>
 				<value>
-					1.25
+					1.125
 					<!--BW_String-->
 				</value>
 			</mul>
@@ -15902,7 +15902,7 @@
 			<add>
 				<name>value</name>
 				<value>
-					0.55
+					0.5
 					<!--BW_String-->
 				</value>
 			</add>

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from adisp import adisp_process
 from client_request_lib.exceptions import ResponseCodes
 from gui import SystemMessages

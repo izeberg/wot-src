@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld
 from shared_utils import nextTick
 from frameworks.wulf import ViewFlags

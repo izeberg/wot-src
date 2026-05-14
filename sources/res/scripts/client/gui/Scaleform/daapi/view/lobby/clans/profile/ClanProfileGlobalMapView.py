@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from adisp import adisp_process
 from gui.Scaleform.daapi.view.lobby.clans.profile.ClanProfileBaseView import ClanProfileBaseView
 from gui.Scaleform.genConsts.CLANS_ALIASES import CLANS_ALIASES

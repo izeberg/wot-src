@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import personal_missions
 from adisp import adisp_async
 from debug_utils import LOG_ERROR, LOG_CURRENT_EXCEPTION

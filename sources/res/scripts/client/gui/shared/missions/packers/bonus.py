@@ -240,7 +240,7 @@ class TokenBonusUIPacker(BaseBonusUIPacker):
                 continue
             name = tokenID.split(':')[0]
             if name.endswith(GOLD_MISSION):
-                result.append(R.views.lobby.battle_pass.tooltips.BattlePassGoldMissionTooltipView())
+                result.append(R.views.mono.battle_pass.tooltips.gold_mission())
             else:
                 result.append(BACKPORT_TOOLTIP_CONTENT_ID)
 

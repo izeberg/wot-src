@@ -3,9 +3,9 @@
 	<parent>content/3D_Customization/Cus_108_Celestial_Banner/normal/lod1/Cus_108_Celestial_Banner_01</parent>
 	<extent>32.000000</extent>
 	<visibilityBox>
-		<min>-0.163797 -0.152044 -0.030000</min>
+		<min>-0.163797 -0.100048 -0.030000</min>
 		<max>0.156918 0.601765 0.030000</max>
 	</visibilityBox>
-	<nodefullVisual>content/3D_Customization/Cus_108_Celestial_Banner/normal/lod0/Cus_108_Celestial_Banner_01</nodefullVisual>
 	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_108_Celestial_Banner/normal/lod0/Cus_108_Celestial_Banner_01</nodefullVisual>
 </root>

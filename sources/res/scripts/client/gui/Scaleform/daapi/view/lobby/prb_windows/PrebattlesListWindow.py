@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.framework.entities.abstract.AbstractWindowView import AbstractWindowView
 from gui.prb_control.entities.listener import IGlobalListener
 from messenger.gui import events_dispatcher

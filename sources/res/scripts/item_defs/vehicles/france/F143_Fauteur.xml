@@ -12,24 +12,24 @@
 	<postProgressionTree>F143_Fauteur</postProgressionTree>
 	<customRoleSlotOptions>2 4</customRoleSlotOptions>
 	<speedLimits>
-		<forward>10</forward>
-		<backward>10</backward>
+		<forward>36</forward>
+		<backward>15</backward>
 	</speedLimits>
 	<invisibility>
 		<moving>
-			0.01
+			0.038
 			<!--BW_String-->
 		</moving>
 		<still>
-			0.01
+			0.076
 			<!--BW_String-->
 		</still>
 		<camouflageBonus>
-			0.0
+			0.02
 			<!--BW_String-->
 		</camouflageBonus>
 		<firePenalty>
-			0.1
+			0.115
 			<!--BW_String-->
 		</firePenalty>
 	</invisibility>
@@ -85,39 +85,39 @@
 	</camouflage>
 	<hull>
 		<armor>
-			<armor_1>10</armor_1>
-			<armor_3>10</armor_3>
-			<armor_4>10</armor_4>
-			<armor_2>10</armor_2>
-			<armor_5>10</armor_5>
-			<armor_6>10</armor_6>
-			<armor_7>10</armor_7>
+			<armor_1>220</armor_1>
+			<armor_3>80</armor_3>
+			<armor_4>50</armor_4>
+			<armor_2>130</armor_2>
+			<armor_5>30</armor_5>
+			<armor_6>40</armor_6>
+			<armor_7>260</armor_7>
 			<armor_8>0</armor_8>
-			<armor_9>10</armor_9>
-			<armor_10>10</armor_10>
-			<armor_11>10</armor_11>
-			<armor_12>10</armor_12>
-			<armor_15>10</armor_15>
-			<armor_16>10</armor_16>
-			<armor_17>10</armor_17>
-			<armor_18>10</armor_18>
-			<armor_19>10</armor_19>
-			<armor_20>10</armor_20>
-			<armor_21>10</armor_21>
-			<armor_22>10</armor_22>
-			<armor_23>10</armor_23>
+			<armor_9>200</armor_9>
+			<armor_10>210</armor_10>
+			<armor_11>180</armor_11>
+			<armor_12>50</armor_12>
+			<armor_15>230</armor_15>
+			<armor_16>70</armor_16>
+			<armor_17>70</armor_17>
+			<armor_18>130</armor_18>
+			<armor_19>65</armor_19>
+			<armor_20>30</armor_20>
+			<armor_21>40</armor_21>
+			<armor_22>40</armor_22>
+			<armor_23>40</armor_23>
 			<armor_24>
-				10
+				40
 				<vehicleDamageFactor>0</vehicleDamageFactor>
 			</armor_24>
 			<armor_25>
-				10
+				5
 				<vehicleDamageFactor>0</vehicleDamageFactor>
 			</armor_25>
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
-		<weight>9200</weight>
-		<maxHealth>10</maxHealth>
+		<weight>34300</weight>
+		<maxHealth>1820</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>270</maxHealth>
 			<maxRegenHealth>203</maxRegenHealth>
@@ -1273,17 +1273,17 @@
 			<notInShop>true</notInShop>
 			<price>100000</price>
 			<armor>
-				<leftTrack>10</leftTrack>
-				<rightTrack>10</rightTrack>
+				<leftTrack>20</leftTrack>
+				<rightTrack>20</rightTrack>
 			</armor>
-			<weight>100</weight>
+			<weight>17000</weight>
 			<terrainResistance>
 				1.3 1.4 2.3
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>68000</brakeForce>
 			<rotationIsAroundCenter>false</rotationIsAroundCenter>
-			<rotationSpeed>10</rotationSpeed>
+			<rotationSpeed>32</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.176
@@ -3239,7 +3239,7 @@
 				</right>
 			</physicalTracks>
 			<repairTime>
-				0.649999976
+				6.66666651
 				<!--BW_String-->
 			</repairTime>
 		</Chassis_F143_Fauteur>
@@ -3252,79 +3252,76 @@
 			<notInShop>true</notInShop>
 			<price>100000</price>
 			<armor>
-				<armor_1>10</armor_1>
-				<armor_3>10</armor_3>
-				<armor_4>10</armor_4>
-				<armor_2>10</armor_2>
-				<armor_5>10</armor_5>
-				<armor_6>10</armor_6>
+				<armor_1>250</armor_1>
+				<armor_3>150</armor_3>
+				<armor_4>60</armor_4>
+				<armor_2>230</armor_2>
+				<armor_5>40</armor_5>
+				<armor_6>30</armor_6>
 				<armor_7>
-					10
+					150
 					<tags>gunMask</tags>
 				</armor_7>
 				<armor_8>0</armor_8>
-				<armor_9>10</armor_9>
-				<armor_10>10</armor_10>
-				<armor_11>10</armor_11>
+				<armor_9>210</armor_9>
+				<armor_10>240</armor_10>
+				<armor_11>110</armor_11>
 				<armor_12>
-					10
+					130
 					<tags>gunMask</tags>
 				</armor_12>
-				<armor_13>10</armor_13>
-				<armor_14>10</armor_14>
-				<armor_15>10</armor_15>
-				<armor_16>10</armor_16>
+				<armor_13>140</armor_13>
+				<armor_14>130</armor_14>
+				<armor_15>120</armor_15>
+				<armor_16>100</armor_16>
 				<armor_17>
-					10
+					340
 					<tags>gunMask</tags>
 				</armor_17>
 				<armor_18>
-					10
+					90
 					<tags>gunMask</tags>
 				</armor_18>
 				<armor_19>
-					10
+					170
 					<tags>gunMask</tags>
 				</armor_19>
-				<armor_20>10</armor_20>
-				<armor_21>10</armor_21>
-				<armor_22>10</armor_22>
+				<armor_20>70</armor_20>
+				<armor_21>80</armor_21>
+				<armor_22>130</armor_22>
 				<armor_23>
-					10
+					65
 					<tags>gunMask</tags>
 				</armor_23>
-				<armor_24>10</armor_24>
+				<armor_24>70</armor_24>
 				<armor_25>
-					10
+					250
 					<tags>gunMask</tags>
 				</armor_25>
 				<armor_26>
-					10
+					310
 					<tags>gunMask</tags>
 				</armor_26>
-				<armor_27>10</armor_27>
-				<armor_28>10</armor_28>
-				<armor_29>10</armor_29>
+				<armor_27>50</armor_27>
+				<armor_28>40</armor_28>
+				<armor_29>100</armor_29>
 				<armor_30>
-					10
+					210
 					<tags>gunMask</tags>
 				</armor_30>
 				<armor_31>
-					10
+					360
 					<tags>gunMask</tags>
 				</armor_31>
 				<armor_32>
-					10
+					280
 					<tags>gunMask</tags>
 				</armor_32>
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
-			<weight>100</weight>
-			<maxHealth>10</maxHealth>
-			<rotationSpeed>
-				0.96
-				<!--BW_String-->
-			</rotationSpeed>
+			<weight>13600</weight>
+			<maxHealth>480</maxHealth>
+			<rotationSpeed>38</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>200</maxHealth>
 				<maxRegenHealth>100</maxRegenHealth>
@@ -3333,7 +3330,7 @@
 					<!--BW_String-->
 				</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>100</circularVisionRadius>
+			<circularVisionRadius>400</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>130</maxHealth>
 				<maxRegenHealth>65</maxRegenHealth>
@@ -3347,25 +3344,25 @@
 					shared
 					<maxAmmo>40</maxAmmo>
 					<armor>
-						<gun>10</gun>
+						<gun>50</gun>
 					</armor>
 					<pitchLimits>
-						<minPitch>0 -1 1 -1</minPitch>
+						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
-							0 1 0.386111 1 0.402778 1 0.597222 1 0.613889 1 1 1
+							0 7 0.386111 7 0.402778 1 0.597222 1 0.613889 7 1 7
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
 					<invisibilityFactorAtShot>
-						0.1
+						0.14
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<reloadTime>
-						62.58
+						10.5
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
-						10.43
+						1.9
 						<!--BW_String-->
 					</aimingTime>
 					<shotDispersionFactors>
@@ -3383,39 +3380,54 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<shotDispersionRadius>
-						1.04
+						0.33
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<mechanics>
 						<propellantAfterburnerGun>
-							<chargingPerSec>1</chargingPerSec>
-							<dischargingPerSec>1</dischargingPerSec>
-							<chargeSpendingAfterShot>1</chargeSpendingAfterShot>
+							<chargingPerSec>4</chargingPerSec>
+							<dischargingPerSec>10</dischargingPerSec>
+							<chargeSpendingAfterShot>61</chargeSpendingAfterShot>
 							<forbiddenShells>france:_120mm_OE_IPC_1</forbiddenShells>
-							<shouldPauseOnReload>true</shouldPauseOnReload>
-							<chargeDelay>100</chargeDelay>
-							<overchargeSwitchCooldown>1</overchargeSwitchCooldown>
+							<shouldPauseOnReload>false</shouldPauseOnReload>
+							<chargeDelay>
+								0.1
+								<!--BW_String-->
+							</chargeDelay>
+							<overchargeSwitchCooldown>
+								2.0
+								<!--BW_String-->
+							</overchargeSwitchCooldown>
 							<chargeStages>
 								<stage>
-									<maxCharge>1</maxCharge>
+									<maxCharge>70</maxCharge>
 									<modifiers/>
 									<isOvercharge>false</isOvercharge>
-									<damageFactorLimits>1 1</damageFactorLimits>
+									<damageFactorLimits>
+										1 1.25
+										<!--BW_String-->
+									</damageFactorLimits>
 								</stage>
 								<stage>
-									<maxCharge>10</maxCharge>
+									<maxCharge>100</maxCharge>
 									<modifiers>
 										<mul>
 											<name>dynAttrs/multShotDispersionFactor</name>
-											<value>1</value>
+											<value>
+												1.95
+												<!--BW_String-->
+											</value>
 										</mul>
 										<mul>
 											<name>dynAttrs/gun/aimingTime</name>
-											<value>1</value>
+											<value>2</value>
 										</mul>
 									</modifiers>
 									<isOvercharge>true</isOvercharge>
-									<damageFactorLimits>1 1</damageFactorLimits>
+									<damageFactorLimits>
+										1.45 1.575
+										<!--BW_String-->
+									</damageFactorLimits>
 								</stage>
 							</chargeStages>
 						</propellantAfterburnerGun>
@@ -4150,20 +4162,24 @@
 				<slot>
 					<slotType>attachment</slotType>
 					<slotId>38000</slotId>
-					<position>-0.779428 1.191815 -1.307684</position>
+					<position>-1.054395 1.191818 0.269701</position>
 					<rotation>-0 0 0</rotation>
 					<scale>1 1 1</scale>
 					<applyType>turret</applyType>
 					<size>medium</size>
+					<enableVisTunnel>true</enableVisTunnel>
+					<hangerId>16</hangerId>
 				</slot>
 				<slot>
 					<slotType>attachment</slotType>
 					<slotId>38001</slotId>
-					<position>0.964241 1.188514 -1.128594</position>
-					<rotation>-0 -0 0</rotation>
+					<position>-0.000003 0.943771 1.049276</position>
+					<rotation>-0 0 0</rotation>
 					<scale>1 1 1</scale>
 					<applyType>gunMantlet</applyType>
 					<size>medium</size>
+					<enableVisTunnel>true</enableVisTunnel>
+					<hangerId>2</hangerId>
 				</slot>
 			</customizationSlots>
 			<wwturretRotatorSoundManual>tur_mech_trav</wwturretRotatorSoundManual>
@@ -4196,8 +4212,8 @@
 		<detailed>
 			<engines>
 				<AMX_APX_E_P_C_Moteur_F>
-					<smplEnginePower>10</smplEnginePower>
-					<smplFwMaxSpeed>10</smplFwMaxSpeed>
+					<smplEnginePower>1390</smplEnginePower>
+					<smplFwMaxSpeed>36</smplFwMaxSpeed>
 				</AMX_APX_E_P_C_Moteur_F>
 			</engines>
 			<chassis>

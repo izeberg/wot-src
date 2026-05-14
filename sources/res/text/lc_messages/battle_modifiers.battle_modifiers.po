@@ -56,6 +56,14 @@ msgstr "Комплекс параметров, влияющих на спосо�
 msgid "domain/damageDealing/name"
 msgstr "Нанесение урона"
 
+msgid "domain/equalize/description"
+msgstr ""
+"Чем ниже уровень техники, тем сильнее прирост. Это делает машины низких "
+"уровней намного опаснее! В боях нельзя тратить или зарабатывать ресурсы."
+
+msgid "domain/equalize/name"
+msgstr "Бои на технике I–X уровней"
+
 msgid "domain/mobility/description"
 msgstr ""
 "Комплекс параметров, влияющих на динамические и скоростные характеристики."
@@ -156,6 +164,11 @@ msgstr "Урон прочим модулям от падения"
 
 msgid "modifier/name/envTankmanDamageChance"
 msgstr "Урон экипажу от падения"
+
+msgid "modifier/name/equalize"
+msgstr ""
+"Техника всех уровней имеет разные модификаторы к показателям прочности, "
+"урона и бронепробития."
 
 msgid "modifier/name/equipmentCooldown"
 msgstr "Время подготовки снаряжения"

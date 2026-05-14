@@ -1,4 +1,7 @@
-import logging, SoundGroups
+from __future__ import absolute_import
+import logging
+from future.utils import viewitems
+import SoundGroups
 from gui.Scaleform.daapi.view.meta.RankedBattlesSeasonCompleteViewMeta import RankedBattlesSeasonCompleteViewMeta
 from gui.impl import backport
 from gui.ranked_battles import ranked_helpers
@@ -60,7 +63,7 @@ class RankedBattlesSeasonCompleteView(RankedBattlesSeasonCompleteViewMeta):
     def __packAwards(self):
         result = []
         formatter = getRankedAwardsFormatter()
-        for name, value in self._awards.iteritems():
+        for name, value in viewitems(self._awards):
             result.extend(formatter.getFormattedBonuses(getBonuses(self._quest, name, value), size=AWARDS_SIZES.BIG))
 
         return result

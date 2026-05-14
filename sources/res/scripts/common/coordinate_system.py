@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from Math import Vector2, Vector3
 ASSERT_EPS = 0.001
 

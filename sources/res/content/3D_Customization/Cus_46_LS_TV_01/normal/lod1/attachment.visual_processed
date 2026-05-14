@@ -9,7 +9,7 @@
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
 		<node>
-			<identifier>nodes_01</identifier>
+			<identifier>attachment</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -17,13 +17,22 @@
 				<row3>0.000000 0.000000 0.000000</row3>
 			</transform>
 			<node>
-				<identifier>HP_attachment</identifier>
+				<identifier>lod0</identifier>
 				<transform>
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 1.000000 0.000000</row1>
 					<row2>0.000000 0.000000 1.000000</row2>
 					<row3>0.000000 0.000000 0.000000</row3>
 				</transform>
+				<node>
+					<identifier>HP_module0</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
 			</node>
 		</node>
 	</node>
@@ -39,7 +48,7 @@
 					<identifier>LS_TV_01_mat</identifier>
 					<fx>shaders/std_effects/PBS_tank.fx</fx>
 					<collisionFlags>0</collisionFlags>
-					<materialKind>0</materialKind>
+					<materialKind>112</materialKind>
 					<property>
 						alphaReference
 						<Int>64</Int>
@@ -65,14 +74,14 @@
 						<Texture>content/3D_Customization/Cus_46_LS_TV_01/LS_TV_01_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.044128 0.178941 0.285134</groupOrigin>
+				<groupOrigin>-0.044128 0.250085 0.027988</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.341137 -0.204005 -0.184214</min>
-		<max>0.252881 0.561886 0.754482</max>
+		<min>-0.343918 -0.100000 -0.444559</min>
+		<max>0.252881 0.600169 0.499751</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>51898</geometrySize>
+	<geometrySize>52270</geometrySize>
 </root>

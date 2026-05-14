@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>content/3D_Customization/Cus_12_Asia_Dragon_Head/normal/lod2/attachment</nodefullVisual>
 	<parent>content/3D_Customization/Cus_12_Asia_Dragon_Head/normal/lod3/attachment</parent>
 	<extent>96.000000</extent>
 	<visibilityBox>
-		<min>-0.322057 -0.200000 -0.244162</min>
-		<max>0.319789 0.773838 0.682126</max>
+		<min>-0.322057 -0.100000 -0.447645</min>
+		<max>0.319789 0.756783 0.478643</max>
 	</visibilityBox>
 	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_12_Asia_Dragon_Head/normal/lod2/attachment</nodefullVisual>
 </root>

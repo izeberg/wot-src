@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import constants
 from constants import RentType, GameSeasonType
 from rent_common import parseRentID, isWithinMaxRentTime, SeasonRentDuration

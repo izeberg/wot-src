@@ -546,7 +546,6 @@ class BattlePassStorageKeys(CONST_CONTAINER):
     INTRO_VIDEO_SHOWN = 'introVideoShown'
     FLAGS_VERSION = 'flagsVersion'
     DAILY_QUESTS_INTRO_SHOWN = 'dailyQuestsIntroShown'
-    EXTRA_CHAPTER_INTRO_SHOWN = 'extraChapterIntroShown'
     FLAGS_VERSION_HOLIDAY = 'flagsVersionHoliday'
 
 

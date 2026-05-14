@@ -83,6 +83,10 @@
 						TintlColor
 						<Vector4>0.521569 0.427451 1.000000 1.000000</Vector4>
 					</property>
+					<property>
+						g_visibilityTunnelCompensation
+						<Float>2.000000</Float>
+					</property>
 				</material>
 				<groupOrigin>-0.004313 0.410747 0.280658</groupOrigin>
 			</primitiveGroup>
@@ -164,6 +168,10 @@
 					<property>
 						TintlColor
 						<Vector4>0.623529 0.662745 1.000000 1.000000</Vector4>
+					</property>
+					<property>
+						g_visibilityTunnelCompensation
+						<Float>35.000000</Float>
 					</property>
 				</material>
 				<groupOrigin>0.015726 0.356729 0.298557</groupOrigin>

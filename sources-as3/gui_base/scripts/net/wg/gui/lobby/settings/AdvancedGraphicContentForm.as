@@ -139,6 +139,8 @@ package net.wg.gui.lobby.settings
       
       public var SNIPER_MODE_TERRAIN_TESSELLATION_ENABLEDCheckbox:CheckBox = null;
       
+      public var VISIBILITY_TUNNEL_ENABLEDCheckbox:CheckBox = null;
+      
       public function AdvancedGraphicContentForm()
       {
          super();
@@ -214,6 +216,7 @@ package net.wg.gui.lobby.settings
          this.SEMITRANSPARENT_LEAVES_ENABLEDCheckbox.dispose();
          this.TERRAIN_TESSELLATION_ENABLEDCheckbox.dispose();
          this.SNIPER_MODE_TERRAIN_TESSELLATION_ENABLEDCheckbox.dispose();
+         this.VISIBILITY_TUNNEL_ENABLEDCheckbox.dispose();
          this.CUSTOM_AA_MODELabel.dispose();
          this.CUSTOM_AA_MODEValue.dispose();
          this.CUSTOM_AA_MODEStepSlider.dispose();
@@ -271,6 +274,7 @@ package net.wg.gui.lobby.settings
          this.SEMITRANSPARENT_LEAVES_ENABLEDCheckbox = null;
          this.TERRAIN_TESSELLATION_ENABLEDCheckbox = null;
          this.SNIPER_MODE_TERRAIN_TESSELLATION_ENABLEDCheckbox = null;
+         this.VISIBILITY_TUNNEL_ENABLEDCheckbox = null;
          this.CUSTOM_AA_MODELabel = null;
          this.CUSTOM_AA_MODEValue = null;
          this.CUSTOM_AA_MODEStepSlider = null;
@@ -316,6 +320,7 @@ package net.wg.gui.lobby.settings
          this.SEMITRANSPARENT_LEAVES_ENABLEDCheckbox.label = Values.EMPTY_STR;
          this.TERRAIN_TESSELLATION_ENABLEDCheckbox.label = Values.EMPTY_STR;
          this.SNIPER_MODE_TERRAIN_TESSELLATION_ENABLEDCheckbox.label = Values.EMPTY_STR;
+         this.VISIBILITY_TUNNEL_ENABLEDCheckbox.label = Values.EMPTY_STR;
       }
    }
 }

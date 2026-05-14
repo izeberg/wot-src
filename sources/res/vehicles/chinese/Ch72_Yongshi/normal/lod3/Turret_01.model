@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/chinese/Ch72_Yongshi/normal/lod3/Turret_01</nodefullVisual>
+	<parent>vehicles/chinese/Ch72_Yongshi/normal/lod4/Turret_01</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.396572 -0.035581 -2.905722</min>
+		<max>1.396580 4.238285 1.359285</max>
+	</visibilityBox>
+</root>

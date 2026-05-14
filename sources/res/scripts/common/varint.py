@@ -1,4 +1,5 @@
-from cStringIO import StringIO as BytesIO
+from __future__ import absolute_import
+from py2to3.moves.io import FastBytesIO
 from struct_helpers import unpackByte, packByte
 
 def encode_zigzag64(n):
@@ -10,7 +11,7 @@ def decode_zigzag(n):
 
 
 def encode(number):
-    buf = BytesIO()
+    buf = FastBytesIO()
     while True:
         towrite = number & 127
         number >>= 7
@@ -35,7 +36,7 @@ def decode_stream(stream):
 
 
 def decode_bytes(buf):
-    return decode_stream(BytesIO(buf))
+    return decode_stream(FastBytesIO(buf))
 
 
 def _read_one(stream):

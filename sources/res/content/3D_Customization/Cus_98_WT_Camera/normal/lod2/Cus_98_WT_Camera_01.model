@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodelessVisual>content/3D_Customization/Cus_98_WT_Camera/normal/lod2/Cus_98_WT_Camera_01</nodelessVisual>
 	<parent>content/3D_Customization/Cus_98_WT_Camera/normal/lod3/Cus_98_WT_Camera_01</parent>
 	<extent>96.000000</extent>
 	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_98_WT_Camera/normal/lod2/Cus_98_WT_Camera_01</nodefullVisual>
+	<visibilityBox>
+		<min>-0.289055 -0.100130 -0.433961</min>
+		<max>0.126603 0.480427 0.336712</max>
+	</visibilityBox>
 </root>

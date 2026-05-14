@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from PlayerEvents import g_playerEvents
 from account_helpers.settings_core import settings_constants
 from BonusCaps import BonusCapsConst

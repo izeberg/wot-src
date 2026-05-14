@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from collections import namedtuple
 from gui.Scaleform.daapi.view.common.filter_popover import VehiclesFilterPopover
 from gui.Scaleform.daapi.view.meta.StorageCategoryInHangarViewMeta import StorageCategoryInHangarViewMeta

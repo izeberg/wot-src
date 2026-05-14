@@ -139,49 +139,51 @@
 				<rank>gold</rank>
 				<params>
 					<param>
-						1
+						25
 						<name>propellantPreLimitDamageBonus</name>
 					</param>
 					<param>
-						1
+						100
 						<name>propellantPostLimitDamageSpike</name>
 						<template>vehicle_hub.characteristics.templates.upTo</template>
 					</param>
 					<param>
-						1
+						62.5
+						<!--BW_String-->
 						<name>propellantPostLimitDamageBonus</name>
 						<template>vehicle_hub.characteristics.templates.upTo</template>
 					</param>
 					<param>
-						1
+						4.5
+						<!--BW_String-->
 						<name>propellantChargingPerSec</name>
 						<template>vehicle_hub.characteristics.templates.upTo</template>
 					</param>
 					<param>
-						1
+						55
 						<name>propellantChargeSpendingAfterShot</name>
 						<template>vehicle_hub.characteristics.templates.upTo</template>
 					</param>
 					<param>
-						1
+						70
 						<name>propellantChargeLimit</name>
 					</param>
 					<param>
-						1
+						10
 						<name>propellantDischargingPerSec</name>
 					</param>
 					<param>
-						+1%
+						+56%
 						<name>propellantPostLimitDispersion</name>
 						<template>vehicle_hub.characteristics.templates.upTo</template>
 					</param>
 					<param>
-						+1%
+						+60%
 						<name>propellantPostLimitAimingTime</name>
 						<template>vehicle_hub.characteristics.templates.upTo</template>
 					</param>
 					<param>
-						1
+						2
 						<name>propellantOverchargeSwitchCooldown</name>
 					</param>
 				</params>
@@ -337,7 +339,7 @@
 				<rank>gold</rank>
 				<params>
 					<param>
-						33.3
+						31.9
 						<!--BW_String-->
 						<name>coolingTime</name>
 						<template>vehicle_hub.characteristics.templates.upTo</template>
@@ -349,7 +351,7 @@
 						<template>vehicle_hub.characteristics.templates.upTo</template>
 					</param>
 					<param>
-						50%
+						46%
 						<name>heatingPerShot</name>
 						<template>vehicle_hub.characteristics.templates.upTo</template>
 					</param>
@@ -710,7 +712,7 @@
 						<template>vehicle_hub.characteristics.templates.upTo</template>
 					</param>
 					<param>
-						1
+						2
 						<name>coolingDelay</name>
 					</param>
 					<param>
@@ -893,32 +895,32 @@
 				<rank>gold</rank>
 				<params>
 					<param>
-						1
+						400
 						<name>lowChargeShotAvgDamage</name>
 						<template>vehicle_hub.characteristics.templates.upTo</template>
 					</param>
 					<param>
-						1
+						260
 						<name>lowChargeShotPenetration</name>
 						<template>vehicle_hub.characteristics.templates.upTo</template>
 					</param>
 					<param>
-						1%
+						222%
 						<name>lowChargeShotRateOfFire</name>
 						<template>vehicle_hub.characteristics.templates.upTo</template>
 					</param>
 					<param>
-						1%
+						125%
 						<name>lowChargeShotDispertion</name>
 						<template>vehicle_hub.characteristics.templates.upTo</template>
 					</param>
 					<param>
-						1
+						750
 						<name>lowChargeShotVelocity</name>
 						<template>vehicle_hub.characteristics.templates.upTo</template>
 					</param>
 					<param>
-						1
+						2
 						<name>lowChargeShotBlockDuration</name>
 					</param>
 				</params>
@@ -976,35 +978,35 @@
 				<rank>gold</rank>
 				<params>
 					<param>
-						1%
+						150%
 						<name>wheeledDashEnginePower</name>
 						<template>vehicle_hub.characteristics.templates.upTo</template>
 					</param>
 					<param>
-						1%
+						104%
 						<name>wheeledDashTopSpeed</name>
 					</param>
 					<param>
-						1%
+						114%
 						<name>wheeledDashReverseSpeed</name>
 						<template>vehicle_hub.characteristics.templates.upTo</template>
 					</param>
 					<param>
-						1
+						5
 						<name>wheeledDashAbilityDuration</name>
 						<template>vehicle_hub.characteristics.templates.upTo</template>
 					</param>
 					<param>
-						1
+						15
 						<name>wheeledDashAbilityReloadTime</name>
 						<template>vehicle_hub.characteristics.templates.upTo</template>
 					</param>
 					<param>
-						-1%
+						-50%
 						<name>wheeledDashAbilityReloadTimeBonus</name>
 					</param>
 					<param>
-						1
+						50
 						<name>wheeledDashSpeedLimits</name>
 					</param>
 				</params>

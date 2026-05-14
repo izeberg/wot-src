@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>content/3D_Customization/Cus_113_Historical_M129/normal/lod3/Cus_113_Historical_M129_01_anim</nodefullVisual>
 	<visibilityBox>
-		<min>-0.121117 -0.198820 -0.462256</min>
+		<min>-0.121117 -0.099999 -0.462256</min>
 		<max>0.291678 0.751766 0.458747</max>
 	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/Cus_113_Historical_M129/normal/lod3/Cus_113_Historical_M129_01_anim</nodefullVisual>
+	<tank>true</tank>
 </root>

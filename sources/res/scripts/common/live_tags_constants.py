@@ -1,4 +1,4 @@
-
+from __future__ import absolute_import
 
 class LIVE_TAG_TYPES:
     TOP_DAMAGE = 0

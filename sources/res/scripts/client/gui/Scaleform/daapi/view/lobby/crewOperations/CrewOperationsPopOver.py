@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld
 from CurrentVehicle import g_currentVehicle
 from gui import SystemMessages
@@ -186,7 +187,7 @@ class CrewOperationsPopOver(CrewOperationsPopOverMeta):
         else:
             btnLabelText = i18n.makeString(cOpId + '/button/label')
         warningInfo = None
-        if warningId != '' and warningId != 'lockCrew':
+        if warningId not in ('', 'lockCrew'):
             warningInfo = {'operationAvailable': operationAvailable, 'tooltipId': warningId}
         hasToggleBlock = operationId == OPERATION_RETURN
         toggleBlockErrorText = ''

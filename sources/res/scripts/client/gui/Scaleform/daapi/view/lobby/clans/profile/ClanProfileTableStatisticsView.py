@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from adisp import adisp_process
 from debug_utils import LOG_ERROR
 from gui.Scaleform.daapi.view.lobby.clans.profile import getI18ArenaById
@@ -228,7 +229,7 @@ class _ClanProfileProvinceDataProvider(SortableDAAPIDataProvider):
         return primeTime.hour * time_utils.ONE_MINUTE + primeTime.minute
 
     def __getDays(self, province):
-        return int(province.getTurnsOwned() / time_utils.HOURS_IN_DAY)
+        return int(province.getTurnsOwned() // time_utils.HOURS_IN_DAY)
 
     def __getIncome(self, province):
         return province.getRevenue()

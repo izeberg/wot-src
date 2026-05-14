@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from game_params_common.schema import GameParamsSchema
 from constants import Configs
 from dict2model import fields, models

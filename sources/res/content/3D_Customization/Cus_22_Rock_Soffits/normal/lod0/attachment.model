@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>content/3D_Customization/Cus_22_Rock_Soffits/normal/lod0/attachment</nodefullVisual>
 	<visibilityBox>
 		<min>-0.943913 -0.300536 -0.195694</min>
 		<max>1.083195 1.037555 2.170017</max>
@@ -8,4 +7,5 @@
 	<extent>32.000000</extent>
 	<tank>true</tank>
 	<parent>content/3D_Customization/Cus_22_Rock_Soffits/normal/lod1/attachment</parent>
+	<nodefullVisual>content/3D_Customization/Cus_22_Rock_Soffits/normal/lod0/attachment</nodefullVisual>
 </root>

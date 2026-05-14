@@ -1,6 +1,6 @@
+from __future__ import absolute_import
 import ResMgr
 from constants import FLAG_TYPES
-from items import vehicles
 from soft_exception import SoftException
 _CONFIG_FILE = 'scripts/item_defs/win_points.xml'
 

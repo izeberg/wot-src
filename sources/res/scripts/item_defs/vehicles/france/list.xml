@@ -648,11 +648,11 @@
 		<shortDescriptionSpecial>#france_vehicles:F134_Lorraine_120_Alby_short_special</shortDescriptionSpecial>
 		<longDescriptionSpecial>#france_vehicles:F134_Lorraine_120_Alby_long_special</longDescriptionSpecial>
 		<price>
-			100
+			8150
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
-		<tags>AT-SPG role_ATSPG_support HD mediumAT-SPG improvedVentilation_class2_user extraHealthReserve_class2_user antifragmentationLining_medium_user secret testTank</tags>
+		<tags>AT-SPG role_ATSPG_support HD mediumAT-SPG improvedVentilation_class2_user extraHealthReserve_class2_user antifragmentationLining_medium_user</tags>
 		<level>8</level>
 	</F134_Lorraine_120_Alby>
 	<F135_AS_XX_40_t>
@@ -1368,11 +1368,11 @@
 		<shortDescriptionSpecial>#france_vehicles:F139_Terrifiant_short_special</shortDescriptionSpecial>
 		<longDescriptionSpecial>#france_vehicles:F139_Terrifiant_long_special</longDescriptionSpecial>
 		<price>
-			100
+			11050
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
-		<tags>heavyTank role_HT_universal HD heavyTank1 improvedVentilation_class1_user tankRammer_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user earn_crystals secret testTank</tags>
+		<tags>heavyTank role_HT_universal HD heavyTank1 improvedVentilation_class1_user tankRammer_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user earn_crystals</tags>
 		<level>9</level>
 	</F139_Terrifiant>
 	<F137_LEOX>
@@ -1383,7 +1383,7 @@
 		<shortDescriptionSpecial>#france_vehicles:F137_LEOX_short_special</shortDescriptionSpecial>
 		<longDescriptionSpecial>#france_vehicles:F137_LEOX_long_special</longDescriptionSpecial>
 		<price>
-			100
+			10450
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
@@ -1415,4 +1415,19 @@
 		<tags>heavyTank role_HT_universal HD improvedVentilation_class1_user tankRammer_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user earn_crystals</tags>
 		<level>11</level>
 	</F143_Fauteur>
+	<F142_M47_Chevalier>
+		<id>271</id>
+		<userString>#france_vehicles:F142_M47_Chevalier</userString>
+		<shortUserString>#france_vehicles:F142_M47_Chevalier_short</shortUserString>
+		<description>#france_vehicles:F142_M47_Chevalier_descr</description>
+		<shortDescriptionSpecial>#france_vehicles:F142_M47_Chevalier_short_special</shortDescriptionSpecial>
+		<longDescriptionSpecial>#france_vehicles:F142_M47_Chevalier_long_special</longDescriptionSpecial>
+		<price>
+			100
+			<gold/>
+		</price>
+		<notInShop>true</notInShop>
+		<tags>mediumTank role_MT_universal HD improvedVentilation_class2_user tankRammer_class2_user aimingStabilizer_class1_user extraHealthReserve_class2_user antifragmentationLining_medium_user earn_crystals patton secret testTank</tags>
+		<level>9</level>
+	</F142_M47_Chevalier>
 </root>

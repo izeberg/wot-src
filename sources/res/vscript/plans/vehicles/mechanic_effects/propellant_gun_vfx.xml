@@ -1831,8 +1831,15 @@
 				</params>
 			</block>
 			<block>
-				<class>If</class>
-				<id>If_21</id>
+				<class>Sequence</class>
+				<id>Sequence_1</id>
+				<params>
+					<param>
+						3
+						<name>Output Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
 			</block>
 			<block>
 				<class>SetVariable</class>
@@ -1859,39 +1866,24 @@
 				</params>
 			</block>
 			<block>
-				<class>Sequence</class>
-				<id>Sequence_1</id>
-				<params>
-					<param>
-						3
-						<name>Output Count</name>
-						<type>IntT</type>
-					</param>
-				</params>
+				<class>If</class>
+				<id>If_24</id>
+			</block>
+			<block>
+				<class>PlayGlobalSound</class>
+				<id>PlayGlobalSound_22</id>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_37</id>
 			</block>
 			<block>
 				<class>OnVehiclePassengerInfo</class>
 				<id>OnVehiclePassengerInfo_2</id>
 			</block>
 			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_60</id>
-				<buddy>Variable_41</buddy>
-				<params>
-					<param>
-						BoolT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-			</block>
-			<block>
 				<class>StartScript</class>
 				<id>StartScript_1</id>
-			</block>
-			<block>
-				<class>PlayGlobalSound</class>
-				<id>PlayGlobalSound_21</id>
 			</block>
 			<block>
 				<class>SetVariable</class>
@@ -1912,6 +1904,18 @@
 				<params>
 					<param>
 						GameObjectT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_61</id>
+				<buddy>Variable_38</buddy>
+				<params>
+					<param>
+						StringT
 						<name>Variable Type</name>
 						<type>TypeT</type>
 					</param>
@@ -2014,6 +2018,18 @@
 				</params>
 			</block>
 			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_67</id>
+				<buddy>Variable_41</buddy>
+				<params>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+			</block>
+			<block>
 				<class>ContextGetSelf</class>
 				<id>ContextGetSelf_1</id>
 				<params>
@@ -2046,30 +2062,6 @@
 				<id>OnPropellantGunState_2</id>
 			</block>
 			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_61</id>
-				<buddy>Variable_38</buddy>
-				<params>
-					<param>
-						StringT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-			</block>
-			<block>
-				<class>SetVariable</class>
-				<id>SetVariable_53</id>
-				<buddy>Variable_41</buddy>
-				<params>
-					<param>
-						BoolT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-			</block>
-			<block>
 				<class>GetComponentProperties</class>
 				<id>GetComponentProperties_2</id>
 				<params>
@@ -2079,10 +2071,6 @@
 						<type>StringT</type>
 					</param>
 				</params>
-			</block>
-			<block>
-				<class>If</class>
-				<id>If_24</id>
 			</block>
 			<block>
 				<class>SetVariable</class>
@@ -2135,28 +2123,24 @@
 				</params>
 			</block>
 			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_59</id>
-				<buddy>Variable_23</buddy>
+				<class>SetVariable</class>
+				<id>SetVariable_53</id>
+				<buddy>Variable_41</buddy>
 				<params>
 					<param>
-						GameObjectT
+						BoolT
 						<name>Variable Type</name>
 						<type>TypeT</type>
 					</param>
 				</params>
 			</block>
 			<block>
-				<class>PlayGlobalSound</class>
-				<id>PlayGlobalSound_22</id>
-			</block>
-			<block>
 				<class>GetVariable</class>
-				<id>GetVariable_67</id>
-				<buddy>Variable_41</buddy>
+				<id>GetVariable_59</id>
+				<buddy>Variable_23</buddy>
 				<params>
 					<param>
-						BoolT
+						GameObjectT
 						<name>Variable Type</name>
 						<type>TypeT</type>
 					</param>
@@ -2478,8 +2462,24 @@
 				</params>
 			</block>
 			<block>
+				<class>If</class>
+				<id>If_36</id>
+			</block>
+			<block>
 				<class>PlayGlobalSound</class>
 				<id>PlayGlobalSound_4</id>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_106</id>
+				<buddy>Variable_41</buddy>
+				<params>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
 			</block>
 			<block>
 				<class>GetVariable</class>
@@ -2919,7 +2919,7 @@
 				<from>Sequence_2</from>
 				<input>unsubscribe</input>
 				<to>OnVehicleMechanicCommand_1</to>
-				<output>o0</output>
+				<output>o1</output>
 			</connection>
 			<connection>
 				<from>GetVariable_1</from>
@@ -3008,14 +3008,8 @@
 			<connection>
 				<from>OnVehiclePassengerInfo_2</from>
 				<input>input</input>
-				<to>If_21</to>
+				<to>Sequence_1</to>
 				<output>subscribeOut</output>
-			</connection>
-			<connection>
-				<from>GetVariable_60</from>
-				<input>value</input>
-				<to>If_21</to>
-				<output>value</output>
 			</connection>
 			<connection>
 				<from>SetVariable_38</from>
@@ -3042,16 +3036,40 @@
 				<output>soundChargeMax</output>
 			</connection>
 			<connection>
-				<from>If_21</from>
+				<from>If_37</from>
 				<input>input</input>
-				<to>Sequence_1</to>
+				<to>If_24</to>
+				<output>false</output>
+			</connection>
+			<connection>
+				<from>GetVariable_67</from>
+				<input>value</input>
+				<to>If_24</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>If_24</from>
+				<input>in</input>
+				<to>PlayGlobalSound_22</to>
 				<output>true</output>
 			</connection>
 			<connection>
-				<from>PlayGlobalSound_21</from>
+				<from>GetVariable_61</from>
+				<input>soundToPlay</input>
+				<to>PlayGlobalSound_22</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>OnVehiclePassengerInfo_2</from>
 				<input>input</input>
-				<to>Sequence_1</to>
-				<output>out</output>
+				<to>If_37</to>
+				<output>onVehicleInfoUpdating</output>
+			</connection>
+			<connection>
+				<from>OnVehiclePassengerInfo_2</from>
+				<input>value</input>
+				<to>If_37</to>
+				<output>isCurrentVehicle</output>
 			</connection>
 			<connection>
 				<from>SetVariable_42</from>
@@ -3063,24 +3081,12 @@
 				<from>Sequence_2</from>
 				<input>unsubscribe</input>
 				<to>OnVehiclePassengerInfo_2</to>
-				<output>o4</output>
+				<output>o0</output>
 			</connection>
 			<connection>
 				<from>GetVariable_59</from>
 				<input>vehicleObject</input>
 				<to>OnVehiclePassengerInfo_2</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>If_21</from>
-				<input>in</input>
-				<to>PlayGlobalSound_21</to>
-				<output>false</output>
-			</connection>
-			<connection>
-				<from>GetVariable_61</from>
-				<input>soundToPlay</input>
-				<to>PlayGlobalSound_21</to>
 				<output>value</output>
 			</connection>
 			<connection>
@@ -3201,25 +3207,13 @@
 				<from>Sequence_2</from>
 				<input>unsubscribe</input>
 				<to>OnPropellantGunState_2</to>
-				<output>o1</output>
+				<output>o2</output>
 			</connection>
 			<connection>
 				<from>GetVariable_2</from>
 				<input>vehicleObject</input>
 				<to>OnPropellantGunState_2</to>
 				<output>value</output>
-			</connection>
-			<connection>
-				<from>OnVehiclePassengerInfo_2</from>
-				<input>input</input>
-				<to>SetVariable_53</to>
-				<output>onVehicleInfoUpdate</output>
-			</connection>
-			<connection>
-				<from>OnVehiclePassengerInfo_2</from>
-				<input>value</input>
-				<to>SetVariable_53</to>
-				<output>isCurrentVehicle</output>
 			</connection>
 			<connection>
 				<from>SetVariable_26</from>
@@ -3231,18 +3225,6 @@
 				<from>ContextGetSelf_1</from>
 				<input>gameObject</input>
 				<to>GetComponentProperties_2</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>SetVariable_53</from>
-				<input>input</input>
-				<to>If_24</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>GetVariable_67</from>
-				<input>value</input>
-				<to>If_24</to>
 				<output>value</output>
 			</connection>
 			<connection>
@@ -3342,16 +3324,16 @@
 				<output>soundPreOvercharge</output>
 			</connection>
 			<connection>
-				<from>If_24</from>
-				<input>in</input>
-				<to>PlayGlobalSound_22</to>
-				<output>false</output>
+				<from>OnVehiclePassengerInfo_2</from>
+				<input>input</input>
+				<to>SetVariable_53</to>
+				<output>onVehicleInfoUpdate</output>
 			</connection>
 			<connection>
-				<from>GetVariable_61</from>
-				<input>soundToPlay</input>
-				<to>PlayGlobalSound_22</to>
-				<output>value</output>
+				<from>OnVehiclePassengerInfo_2</from>
+				<input>value</input>
+				<to>SetVariable_53</to>
+				<output>isCurrentVehicle</output>
 			</connection>
 			<connection>
 				<from>SetVariable_37</from>
@@ -3471,7 +3453,7 @@
 				<from>Sequence_2</from>
 				<input>unsubscribe</input>
 				<to>OnDiscreteShotDone_1</to>
-				<output>o2</output>
+				<output>o3</output>
 			</connection>
 			<connection>
 				<from>GameObjectToVehicle_1</from>
@@ -3607,9 +3589,21 @@
 			</connection>
 			<connection>
 				<from>Sequence_2</from>
+				<input>input</input>
+				<to>If_36</to>
+				<output>o4</output>
+			</connection>
+			<connection>
+				<from>GetVariable_106</from>
+				<input>value</input>
+				<to>If_36</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>If_36</from>
 				<input>in</input>
 				<to>PlayGlobalSound_4</to>
-				<output>o3</output>
+				<output>true</output>
 			</connection>
 			<connection>
 				<from>GetVariable_11</from>

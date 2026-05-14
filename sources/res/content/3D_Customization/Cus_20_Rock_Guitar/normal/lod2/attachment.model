@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>content/3D_Customization/Cus_20_Rock_Guitar/normal/lod2/attachment</nodefullVisual>
 	<parent>content/3D_Customization/Cus_20_Rock_Guitar/normal/lod3/attachment</parent>
 	<extent>96.000000</extent>
 	<visibilityBox>
-		<min>-0.100485 -0.200095 -0.408712</min>
-		<max>0.031516 0.874204 0.997606</max>
+		<min>-0.093468 -0.100088 -0.380171</min>
+		<max>0.029315 0.609789 0.927941</max>
 	</visibilityBox>
 	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_20_Rock_Guitar/normal/lod2/attachment</nodefullVisual>
 </root>

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld
 from CurrentVehicle import g_currentPreviewVehicle
 from gui.Scaleform.daapi.view.lobby.vehicle_preview.vehicle_preview import VehiclePreview

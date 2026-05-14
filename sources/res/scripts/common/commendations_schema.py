@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from game_params_common.base_manager import GameParamsSchema
 from constants import Configs
 from dict2model import models, fields as d2mfields

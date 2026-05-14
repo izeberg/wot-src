@@ -2798,7 +2798,7 @@
 								<!--BW_String-->
 							</rayStart>
 							<rayEnd>
-								0 0 6.17
+								0 0 6.1
 								<!--BW_String-->
 							</rayEnd>
 							<rayUp>
@@ -3617,20 +3617,24 @@
 				<slot>
 					<slotType>attachment</slotType>
 					<slotId>38000</slotId>
-					<position>-0.512744 1.470644 0.547804</position>
+					<position>-0.000003 1.251499 1.903506</position>
 					<rotation>-0 0 0</rotation>
 					<scale>1 1 1</scale>
 					<applyType>gunMantlet</applyType>
 					<size>medium</size>
+					<enableVisTunnel>true</enableVisTunnel>
+					<hangerId>2</hangerId>
 				</slot>
 				<slot>
 					<slotType>attachment</slotType>
 					<slotId>38001</slotId>
-					<position>0.440123 1.467737 -1.629177</position>
+					<position>0.442849 1.558786 0.464176</position>
 					<rotation>-0 0 0</rotation>
 					<scale>1 1 1</scale>
 					<applyType>turret</applyType>
 					<size>medium</size>
+					<enableVisTunnel>true</enableVisTunnel>
+					<hangerId>6</hangerId>
 				</slot>
 			</customizationSlots>
 			<customization>

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.ranked_battles.ranked_helpers.sound_manager import RANKED_SUBVIEW_SOUND_SPACE
 from gui.ranked_battles.ranked_builders.unreachable_vos import getUnreachableVO
 from gui.Scaleform.daapi import LobbySubView

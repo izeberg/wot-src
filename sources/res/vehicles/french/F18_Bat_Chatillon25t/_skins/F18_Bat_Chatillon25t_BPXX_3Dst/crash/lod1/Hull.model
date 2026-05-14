@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F18_Bat_Chatillon25t/_skins/F18_Bat_Chatillon25t_BPXX_3Dst/crash/lod1/Hull</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/french/F18_Bat_Chatillon25t/_skins/F18_Bat_Chatillon25t_BPXX_3Dst/crash/lod2/Hull</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-2.031217 -0.844884 -3.194553</min>
+		<max>1.713585 0.694377 3.206745</max>
+	</visibilityBox>
+</root>

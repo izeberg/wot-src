@@ -2,10 +2,10 @@
 <root>
 	<parent>content/3D_Customization/Cus_129_Revelry_Gnome/normal/lod3/Cus_129_Revelry_Gnome_01</parent>
 	<extent>96.000000</extent>
-	<nodefullVisual>content/3D_Customization/Cus_129_Revelry_Gnome/normal/lod2/Cus_129_Revelry_Gnome_01</nodefullVisual>
 	<tank>true</tank>
 	<visibilityBox>
-		<min>-0.168516 -0.200000 -0.281565</min>
+		<min>-0.168516 -0.100197 -0.281565</min>
 		<max>0.218905 0.647298 0.191220</max>
 	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/Cus_129_Revelry_Gnome/normal/lod2/Cus_129_Revelry_Gnome_01</nodefullVisual>
 </root>

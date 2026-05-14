@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from frameworks.wulf import WindowLayer
 from gui.Scaleform.daapi.view.lobby.session_stats.session_stats_popover import SessionStatsPopover
 from gui.Scaleform.daapi.view.lobby.session_stats.session_stats_settings import SessionStatsSettings

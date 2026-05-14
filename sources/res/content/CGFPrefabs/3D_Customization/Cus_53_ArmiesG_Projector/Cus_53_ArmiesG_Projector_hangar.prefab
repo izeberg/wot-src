@@ -104,14 +104,14 @@
 					<property>
 						<name>Position</name>
 						<value>
-							-0.000183105 0.571665 0.1091
+							-0.000183105 0.500566 0.107883
 							<!--BW_String-->
 						</value>
 					</property>
 					<property>
 						<name>Scale</name>
 						<value>
-							2.55 2.55 1
+							2.55 2.55 0.999999
 							<!--BW_String-->
 						</value>
 					</property>
@@ -138,7 +138,7 @@
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>0 0 0</value>
+						<value>-0 0 0</value>
 					</property>
 				</config>
 			</component>
@@ -337,6 +337,14 @@
 						<name>Cast Shadows</name>
 						<value>1</value>
 					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
+					</property>
 				</config>
 			</component>
 		</ComponentPool>
@@ -349,6 +357,10 @@
 				<config>
 					<property>
 						<name>Auto Start</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>DynamicModelLinkType</name>
 						<value>0</value>
 					</property>
 					<property>

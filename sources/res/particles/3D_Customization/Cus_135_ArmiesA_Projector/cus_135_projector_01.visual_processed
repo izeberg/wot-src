@@ -63,6 +63,10 @@
 						selfIllumLight
 						<Vector3>1.000000 1.000000 1.000000</Vector3>
 					</property>
+					<property>
+						g_visibilityTunnelCompensation
+						<Float>5.000000</Float>
+					</property>
 				</material>
 				<groupOrigin>-0.000000 -0.000000 -0.001276</groupOrigin>
 			</primitiveGroup>

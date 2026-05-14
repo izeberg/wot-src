@@ -67,6 +67,10 @@
 						alphaFreshnelEnable
 						<Bool>true</Bool>
 					</property>
+					<property>
+						g_visibilityTunnelCompensation
+						<Float>1.500000</Float>
+					</property>
 				</material>
 				<groupOrigin>0.003422 0.084303 -0.018277</groupOrigin>
 			</primitiveGroup>

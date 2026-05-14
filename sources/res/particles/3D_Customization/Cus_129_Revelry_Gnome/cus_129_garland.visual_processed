@@ -51,6 +51,14 @@
 						g_offsetBlack
 						<Float>0.210000</Float>
 					</property>
+					<property>
+						g_enableVisTunnel
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_visibilityTunnelCompensation
+						<Float>15.000000</Float>
+					</property>
 				</material>
 				<groupOrigin>-0.021168 0.372552 -0.052467</groupOrigin>
 			</primitiveGroup>

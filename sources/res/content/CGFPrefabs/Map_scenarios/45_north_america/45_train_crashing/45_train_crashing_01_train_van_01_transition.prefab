@@ -11548,6 +11548,27 @@
 									</property>
 								</object>
 							</item>
+							<item>
+								<object>
+									<property>
+										<name>Type</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>Parameters</name>
+										<object>
+											<property>
+												<name>Offset</name>
+												<value>((       4,-1.86265e-09,-2.62901e-12,       0), (       0,       4,-1.81899e-12,       0), (-2.62901e-12,5.45697e-12,       4,       0), (9.15527e-05,0.341983,  2.9043,       1))</value>
+											</property>
+											<property>
+												<name>Radius</name>
+												<value>2</value>
+											</property>
+										</object>
+									</property>
+								</object>
+							</item>
 						</collection>
 					</property>
 				</config>
@@ -11683,6 +11704,10 @@
 						<value>1</value>
 					</property>
 					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>decorType</name>
 						<value>0</value>
 					</property>
@@ -11700,6 +11725,10 @@
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
 					</property>
 					<property>
 						<name>decorType</name>
@@ -12414,6 +12443,10 @@
 				<config>
 					<property>
 						<name>Auto Start</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>DynamicModelLinkType</name>
 						<value>0</value>
 					</property>
 					<property>

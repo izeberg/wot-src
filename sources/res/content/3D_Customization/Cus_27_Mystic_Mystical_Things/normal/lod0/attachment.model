@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>content/3D_Customization/Cus_27_Mystic_Mystical_Things/normal/lod0/attachment</nodefullVisual>
 	<visibilityBox>
-		<min>-0.685032 -0.000002 -1.207091</min>
-		<max>0.116048 0.523009 1.150814</max>
+		<min>-0.618019 -0.000002 -1.089007</min>
+		<max>0.104696 0.471845 1.038235</max>
 	</visibilityBox>
 	<extent>32.000000</extent>
 	<tank>true</tank>
 	<parent>content/3D_Customization/Cus_27_Mystic_Mystical_Things/normal/lod1/attachment</parent>
+	<nodefullVisual>content/3D_Customization/Cus_27_Mystic_Mystical_Things/normal/lod0/attachment</nodefullVisual>
 </root>

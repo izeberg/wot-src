@@ -4,8 +4,9 @@ from fun_random.gui.feature.fun_constants import PROGRESSION_COUNTER_TEMPLATE, P
 from gui.impl import backport
 from gui.impl.gen import R
 from gui.shared.utils.decorators import ReprInjector
-from helpers import time_utils
+from helpers import dependency, time_utils
 from shared_utils import findFirst
+from skeletons.gui.game_control import IFunRandomController
 if typing.TYPE_CHECKING:
     from fun_random.helpers.server_settings import FunProgressionConfig
     from gui.server_events.bonuses import SimpleBonus
@@ -17,7 +18,7 @@ class FunProgressionConditions(object):
 
     def __init__(self, pConfig, counter, triggers):
         self.__counter = counter
-        self.__finishTimestamp = triggers[0].getFinishTimeRaw()
+        self.__finishTimestamp = max(t.getFinishTimeRaw() for t in triggers)
         self.__pConfig = pConfig
         self.__triggers = triggers
 
@@ -156,6 +157,7 @@ class FunProgressionState(object):
 
 @ReprInjector.simple('conditions', 'state', 'stages')
 class FunProgression(object):
+    __funRandomController = dependency.descriptor(IFunRandomController)
 
     def __init__(self, pConfig, isFirst, isLast, counter, triggers, executors, unlimitedProgress):
         self.__conditions = FunProgressionConditions(pConfig, counter, triggers)
@@ -221,7 +223,9 @@ class FunProgression(object):
     def statusTimer(self):
         if self.state.isCompleted and not self.hasUnlimitedProgression and not self.state.isLastProgression:
             return self.resetTimer
-        return time_utils.getTimeDeltaFromNowInLocal(self.conditions.finishTimestamp)
+        cyclesFinish = self.__funRandomController.subModesInfo.getTimeLeftUntilCycleSequenceFinish()
+        missionsFinish = time_utils.getTimeDeltaFromNowInLocal(self.conditions.finishTimestamp)
+        return min(cyclesFinish, missionsFinish)
 
     @property
     def resetTimer(self):

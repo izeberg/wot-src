@@ -51,14 +51,14 @@
 						<Texture>content/3D_Customization/Cus_209_OB_Lantern/Cus_209_OB_Lantern_01_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.000000 0.175308 0.142522</groupOrigin>
+				<groupOrigin>0.000000 0.225308 0.142522</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.099210 -0.200000 -0.090612</min>
-		<max>0.099210 0.550616 0.375656</max>
+		<min>-0.099210 -0.100001 -0.090612</min>
+		<max>0.099210 0.554573 0.375656</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>19456</geometrySize>
+	<geometrySize>19392</geometrySize>
 </root>

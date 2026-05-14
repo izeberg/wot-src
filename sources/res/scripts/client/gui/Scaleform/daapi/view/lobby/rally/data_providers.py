@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from abc import abstractmethod
 from debug_utils import LOG_ERROR
 from gui.Scaleform.framework.entities.DAAPIDataProvider import SortableDAAPIDataProvider

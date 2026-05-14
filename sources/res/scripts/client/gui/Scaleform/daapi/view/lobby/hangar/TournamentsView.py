@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from typing import TYPE_CHECKING
 from gui.Scaleform.daapi.view.lobby import BrowserView
 from gui.tournament.sound_constants import TOURNAMENTS_SOUND_SPACE

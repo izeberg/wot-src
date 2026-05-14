@@ -17,15 +17,6 @@
 				<row3>0.000000 0.000000 0.000000</row3>
 			</transform>
 			<node>
-				<identifier>HP_attachment</identifier>
-				<transform>
-					<row0>1.000000 0.000000 0.000000</row0>
-					<row1>0.000000 1.000000 0.000000</row1>
-					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 0.000000 0.000000</row3>
-				</transform>
-			</node>
-			<node>
 				<identifier>static_joint</identifier>
 				<transform>
 					<row0>0.000000 0.998486 0.055001</row0>
@@ -87,14 +78,14 @@
 		<node>joint2_BlendBone</node>
 		<node>joint3_BlendBone</node>
 		<geometry>
-			<vertices>attachment_Shape.vertices</vertices>
-			<primitive>attachment_Shape.indices</primitive>
+			<vertices>s0_Shape.vertices</vertices>
+			<primitive>s0_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
 					<identifier>equipment_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>0</materialKind>
 					<property>
 						diffuseMap
@@ -125,13 +116,13 @@
 						<Texture>content/3D_Customization/Cus_04_Brutal_Machine_Gun/Brutal_Machine_Gun_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.035251 0.617284 -0.071287</groupOrigin>
+				<groupOrigin>0.035251 0.667284 -0.071287</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-0.361436 -0.200000 -0.373923</min>
+		<min>-0.361436 -0.100000 -0.373923</min>
 		<max>0.431937 1.434565 0.516494</max>
 	</boundingBox>
 	<geometrySize>338450</geometrySize>

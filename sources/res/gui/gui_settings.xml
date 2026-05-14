@@ -2681,47 +2681,86 @@
 			</item>
 		</value>
 	</premiumInfo>
-	<battlePassUrls>
+	<battlePass>
 		<type>dict</type>
 		<value>
 			<item>
-				/$LANGUAGE_CODE/promocontent/19BPContentPage/
-				<name>infoPage</name>
-				<type>url</type>
-			</item>
-			<item>
-				/$LANGUAGE_CODE/promocontent/specialchapter
-				<name>extraInfoPage</name>
-				<type>url</type>
-			</item>
-			<item>
-				/$LANGUAGE_CODE/promocontent/19BPIntroVideo/
-				<name>introVideo</name>
-				<type>url</type>
-			</item>
-			<item>
-				/$LANGUAGE_CODE/promocontent/specialchapterVideo/
-				<name>extraVideo</name>
-				<type>url</type>
-			</item>
-		</value>
-	</battlePassUrls>
-	<battlePassIntroSlides>
-		<type>macros</type>
-		<macros>AUTH_REALM</macros>
-		<value>
-			<item>
-				<name>default</name>
-				<type>list</type>
+				<name>intro</name>
+				<type>dict</type>
 				<value>
 					<item>
-						<type>string</type>
-						<value>seasonDescription</value>
+						<name>isEnabled</name>
+						<type>bool</type>
+						<value>False</value>
+					</item>
+					<item>
+						<name>slides</name>
+						<type>list</type>
+						<value>
+							<item>
+								<type>string</type>
+								<value>seasonDescription</value>
+							</item>
+						</value>
+					</item>
+				</value>
+			</item>
+			<item>
+				<name>introVideo</name>
+				<type>dict</type>
+				<value>
+					<item>
+						<name>isEnabled</name>
+						<type>bool</type>
+						<value>True</value>
+					</item>
+					<item>
+						/$LANGUAGE_CODE/promocontent/20BPIntroVideo/
+						<name>url</name>
+						<type>url</type>
+					</item>
+				</value>
+			</item>
+			<item>
+				<name>extraIntroVideo</name>
+				<type>dict</type>
+				<value>
+					<item>
+						<name>isEnabled</name>
+						<type>bool</type>
+						<value>True</value>
+					</item>
+					<item>
+						/$LANGUAGE_CODE/promocontent/specialchapterVideo/
+						<name>url</name>
+						<type>url</type>
+					</item>
+				</value>
+			</item>
+			<item>
+				<name>infoPage</name>
+				<type>dict</type>
+				<value>
+					<item>
+						/$LANGUAGE_CODE/promocontent/20BPContentPage/
+						<name>url</name>
+						<type>url</type>
+					</item>
+				</value>
+			</item>
+			<item>
+				<name>extraInfoPage</name>
+				<type>dict</type>
+				<value>
+					<item>
+						/$LANGUAGE_CODE/promocontent/specialchapter
+						<name>url</name>
+						<type>url</type>
 					</item>
 				</value>
 			</item>
 		</value>
-	</battlePassIntroSlides>
+	</battlePass>
 	<lootboxSystem>
 		<type>dict</type>
 		<value>

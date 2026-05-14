@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.daapi.view.meta.WGNCDialogMeta import WGNCDialogMeta
 from gui.wgnc import g_wgncProvider
 
@@ -11,8 +12,8 @@ class WGNCDialog(WGNCDialogMeta):
     def onWindowClose(self):
         self.destroy()
 
-    def doAction(self, actionID, isButtonClicked):
-        g_wgncProvider.doAction(self.__notID, actionID, self.__target)
+    def doAction(self, actionId, isButtonClicked):
+        g_wgncProvider.doAction(self.__notID, actionId, self.__target)
         if isButtonClicked:
             self.destroy()
 

@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodelessVisual>content/3D_Customization/Cus_170_Lunar_Horse/normal/lod3/Cus_170_Lunar_Horse_01</nodelessVisual>
 	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_170_Lunar_Horse/normal/lod3/Cus_170_Lunar_Horse_01</nodefullVisual>
+	<visibilityBox>
+		<min>-0.116366 -0.100000 -0.191876</min>
+		<max>0.116366 0.583926 0.193771</max>
+	</visibilityBox>
 </root>

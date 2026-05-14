@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>content/3D_Customization/Cus_113_Historical_M129/normal/lod2/Cus_113_Historical_M129_01_anim</nodefullVisual>
 	<parent>content/3D_Customization/Cus_113_Historical_M129/normal/lod3/Cus_113_Historical_M129_01_anim</parent>
 	<extent>60.000000</extent>
 	<visibilityBox>
-		<min>-0.124153 -0.199573 -0.462285</min>
+		<min>-0.124153 -0.099998 -0.462285</min>
 		<max>0.290479 0.759058 0.458747</max>
 	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/Cus_113_Historical_M129/normal/lod2/Cus_113_Historical_M129_01_anim</nodefullVisual>
+	<tank>true</tank>
 </root>

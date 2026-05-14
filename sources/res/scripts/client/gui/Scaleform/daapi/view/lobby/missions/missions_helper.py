@@ -1,7 +1,9 @@
+from __future__ import absolute_import
 import operator, time
 from collections import namedtuple
-from future.utils import viewitems
-import typing, constants
+import typing
+from future.utils import lrange, viewitems
+import constants
 from debug_utils import LOG_WARNING
 from gui import SystemMessages
 from gui.impl.lobby.personal_missions_30.personal_mission_constants import MAX_DETAIL_ID
@@ -157,7 +159,7 @@ def getScheduleLabel():
 def getOperations(branch, currOperationID):
     _eventsCache = dependency.instance(IEventsCache)
     operations = []
-    for oID, o in sorted(_eventsCache.getPersonalMissions().getOperationsForBranch(branch).iteritems(), key=operator.itemgetter(0)):
+    for oID, o in sorted(viewitems(_eventsCache.getPersonalMissions().getOperationsForBranch(branch)), key=operator.itemgetter(0)):
         state = PERSONAL_MISSIONS_ALIASES.OPERATION_UNLOCKED_STATE
         descr = text_styles.stats(PERSONAL_MISSIONS.OPERATIONS_UNLOCKED_DESC)
         title = text_styles.highTitle(o.getShortUserName())
@@ -226,7 +228,7 @@ def getPostponedOperationState(operationID):
             if timeLeft <= time_utils.ONE_DAY:
                 postponeTime = PERSONAL_MISSIONS.OPERATIONINFO_OPERATIONBTN_POSTPONED_LESSTHANDAY
             else:
-                days = int(timeLeft / time_utils.ONE_DAY)
+                days = int(timeLeft // time_utils.ONE_DAY)
                 postponeTime = i18n.makeString(PERSONAL_MISSIONS.OPERATIONINFO_OPERATIONBTN_POSTPONED_DAYS, days=days)
     return PostponedOperationState(state, postponeTime)
 
@@ -584,7 +586,7 @@ class _PrivateMissionInfo(_MissionInfo):
         tokens = self.event.accountReqs.getTokens()
         for token in tokens:
             if token.getID() == self.event.getRequiredToken() and token.isConsumable():
-                maxCompleteCount = int(token.getReceivedCount() / token.getNeededCount())
+                maxCompleteCount = int(token.getReceivedCount() // token.getNeededCount())
                 statusLabel = text_styles.standard(_ms(QUESTS.MISSIONDETAILS_PERSONALQUEST_COMPLETE_LEFT, count=text_styles.stats(maxCompleteCount)))
                 if self.event.bonusCond.isDaily():
                     statusTooltipData = getPersonalBonusLimitDailyTooltip(bonusCount, bonusLimit, maxCompleteCount)
@@ -1038,7 +1040,7 @@ class _DetailedPersonalMissionInfo(_MissionInfo):
     def getVehicleRequirementsCriteria(self):
         extraConditions = []
         criteria = REQ_CRITERIA.INVENTORY
-        criteria |= REQ_CRITERIA.VEHICLE.LEVELS(range(self.event.getVehMinLevel(), constants.MAX_VEHICLE_LEVEL + 1))
+        criteria |= REQ_CRITERIA.VEHICLE.LEVELS(lrange(self.event.getVehMinLevel(), constants.MAX_VEHICLE_LEVEL + 1))
         criteria |= REQ_CRITERIA.VEHICLE.CLASSES(self.event.getQuestClassifier().classificationAttr)
         return (criteria, extraConditions, False)
 
@@ -1152,7 +1154,7 @@ class _DetailedPersonalMissionInfo(_MissionInfo):
         operationID = quest.getOperationID()
         operation = operations.get(operationID)
         if not operation.isUnlocked():
-            initialQuest = quests[first(operation.getInitialQuests().iterkeys())]
+            initialQuest = quests[first(operation.getInitialQuests())]
             pmType = initialQuest.getPMType()
             prevOperationID = max(quests[qId].getOperationID() for qId in pmType.requiredUnlocks)
             prevOperation = operations.get(prevOperationID)

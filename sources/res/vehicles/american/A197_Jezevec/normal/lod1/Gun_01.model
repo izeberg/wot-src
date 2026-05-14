@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A197_Jezevec/normal/lod1/Gun_01</nodefullVisual>
+	<parent>vehicles/american/A197_Jezevec/normal/lod2/Gun_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.580615 -0.598614 -1.888193</min>
+		<max>0.580559 0.592014 5.848330</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

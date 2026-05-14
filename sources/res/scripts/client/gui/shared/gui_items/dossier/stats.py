@@ -1,6 +1,7 @@
 import collections, itertools, logging
 from collections import namedtuple, defaultdict, OrderedDict
 import typing, constants, nations
+from constants import ARENA_BONUS_TYPE
 from dossiers2.ui import layouts
 from dossiers2.ui.achievements import ACHIEVEMENT_MODE, ACHIEVEMENT_SECTION, ACHIEVEMENT_SECTIONS_INDICES, makeAchievesStorageName, ACHIEVEMENT_SECTIONS_ORDER, getSection as getAchieveSection
 from gui.shared.gui_items.dossier.achievements import mark_of_mastery
@@ -14,7 +15,6 @@ from skeletons.gui.game_control import IRankedBattlesController
 from gui.Scaleform.daapi.view.common.battle_royale.br_helpers import getAvailableNationsNames, getAvailableVehicleTypes
 from skeletons.gui.shared import IItemsCache
 from battle_royale_common import BattleRoyaleVehicleStats
-from arena_bonus_type_caps import ARENA_BONUS_TYPE
 _logger = logging.getLogger(__name__)
 UNAVAILABLE_MARKS_OF_MASTERY = (-1, -1, -1, -1)
 _BATTLE_SECTION = ACHIEVEMENT_SECTIONS_INDICES[ACHIEVEMENT_SECTION.BATTLE]
@@ -959,8 +959,8 @@ class BattleRoyaleAccountStatsBase(object):
 
 
 class BattleRoyaleSoloBlock(BattleRoyaleAccountStatsBase):
-    _RANK_RANGES = ((1, 1), (2, 5), (6, 10), (11, 20))
-    _PLACES_COUNT = 20
+    _RANK_RANGES = ((1, 1), (2, 5), (6, 10), (11, 15))
+    _PLACES_COUNT = 15
     _IS_SOLO = True
 
 

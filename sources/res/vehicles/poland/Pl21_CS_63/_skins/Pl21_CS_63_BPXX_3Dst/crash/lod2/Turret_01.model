@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/poland/Pl21_CS_63/_skins/Pl21_CS_63_BPXX_3Dst/crash/lod2/Turret_01</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/poland/Pl21_CS_63/_skins/Pl21_CS_63_BPXX_3Dst/crash/lod3/Turret_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.381383 -0.043045 -1.664482</min>
+		<max>1.435281 1.742922 1.442098</max>
+	</visibilityBox>
+</root>

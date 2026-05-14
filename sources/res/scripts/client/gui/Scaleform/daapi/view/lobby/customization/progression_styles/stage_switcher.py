@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging
 from CurrentVehicle import g_currentVehicle
 from frameworks.wulf import ViewFlags, ViewSettings

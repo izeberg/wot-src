@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.daapi.view.lobby.rankedBattles.ranked_battles_page import IResetablePage
 from gui.Scaleform.daapi.view.meta.RankedBattlesDivisionsViewMeta import RankedBattlesDivisionsViewMeta
 from gui.Scaleform.genConsts.RANKEDBATTLES_ALIASES import RANKEDBATTLES_ALIASES

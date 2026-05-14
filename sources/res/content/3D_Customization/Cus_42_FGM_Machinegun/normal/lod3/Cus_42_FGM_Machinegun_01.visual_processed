@@ -59,12 +59,12 @@
 						<Texture>content/3D_Customization/Cus_42_FGM_Machinegun/Cus_42_FGM_Machinegun_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.068928 0.364278 0.209336</groupOrigin>
+				<groupOrigin>-0.068928 0.427999 0.209336</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.560894 -0.227443 -0.787756</min>
+		<min>-0.560894 -0.100000 -0.787756</min>
 		<max>0.495815 0.969279 1.088736</max>
 	</boundingBox>
 	<customBsp>true</customBsp>

@@ -1,6 +1,6 @@
 from __future__ import absolute_import
 import typing
-from future.builtins import range
+from builtins import range
 from future.utils import iteritems
 from Event import Event, EventManager
 from frameworks.wulf import ViewFlags, ViewSettings

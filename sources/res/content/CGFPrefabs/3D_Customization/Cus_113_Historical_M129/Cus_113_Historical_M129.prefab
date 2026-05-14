@@ -122,7 +122,7 @@
 					<property>
 						<name>Position</name>
 						<value>
-							0 0.420481 0.14861
+							0 0.570588 0.450699
 							<!--BW_String-->
 						</value>
 					</property>
@@ -133,7 +133,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							-0.436332 0 0
+							-0.436332 0 -0
 							<!--BW_String-->
 						</value>
 					</property>
@@ -554,6 +554,14 @@
 						<value>-1</value>
 					</property>
 				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>BW::VisibilityTunnelComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>14acfe7b-8637-4092-bdba-7f68ac3ddf9f</UUID>
+				<flags>3</flags>
 			</component>
 		</ComponentPool>
 		<ComponentPool>

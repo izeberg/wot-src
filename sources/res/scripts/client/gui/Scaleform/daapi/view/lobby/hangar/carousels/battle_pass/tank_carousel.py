@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.filters.battle_pass_carousel_filter import BattlePassCarouselFilter
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
 from gui.Scaleform.daapi.view.lobby.hangar.carousels.basic.tank_carousel import TankCarousel

@@ -47,12 +47,12 @@
 						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.000000 0.201721 -0.010138</groupOrigin>
+				<groupOrigin>0.000000 0.251721 -0.010138</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.104777 -0.200000 -0.213429</min>
+		<min>-0.104777 -0.100000 -0.213429</min>
 		<max>0.104777 0.603443 0.193153</max>
 	</boundingBox>
 	<customBsp>true</customBsp>

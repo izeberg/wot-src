@@ -1,4 +1,6 @@
+from __future__ import absolute_import
 import itertools, typing
+from future.utils import viewitems
 from gui.Scaleform.daapi.view.meta.CarouselEventEntryMeta import CarouselEventEntryMeta
 from gui.impl.gen import R
 from gui.prb_control.dispatcher import g_prbLoader
@@ -39,7 +41,7 @@ def _getActiveCarouselEventEntryID():
     dispatcher = g_prbLoader.getDispatcher()
     if dispatcher is not None:
         state = dispatcher.getFunctionalState()
-        for viewID, view in itertools.chain(_VIEWS.iteritems(), entries.iteritems()):
+        for viewID, view in itertools.chain(viewitems(_VIEWS), viewitems(entries)):
             if view.getIsActive(state):
                 return viewID
 

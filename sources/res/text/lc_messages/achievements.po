@@ -154,15 +154,6 @@ msgstr "Вы в игре с %(regDate)s"
 msgid "BPReserveAchievement_1"
 msgstr "Резервное достижение БП 1"
 
-msgid "BPReserveAchievement_10"
-msgstr "Резервное достижение БП 10"
-
-msgid "BPReserveAchievement_10_condition"
-msgstr "• Выдавалась за прохождение прогрессии."
-
-msgid "BPReserveAchievement_10_descr"
-msgstr "За определённые успехи в игре."
-
 msgid "BPReserveAchievement_1_condition"
 msgstr "• Выдавалась за прохождение прогрессии."
 
@@ -458,6 +449,15 @@ msgstr ""
 
 msgid "BattlePassCommonPr_2"
 msgstr "Долгий путь к славе"
+
+msgid "BattlePassCommonPr_20"
+msgstr "Пустынный бур"
+
+msgid "BattlePassCommonPr_20_condition"
+msgstr "• Выдаётся после прохождения всех трёх глав."
+
+msgid "BattlePassCommonPr_20_descr"
+msgstr "За определённые успехи в рамках двадцатого сезона Боевого пропуска."
 
 msgid "BattlePassCommonPr_2_condition"
 msgstr "• Основная часть прогрессии состоит из 45 этапов."
@@ -3680,8 +3680,7 @@ msgstr ""
 "• Выдаётся только в Случайных боях."
 
 msgid "medalAntiSpgFire_descr"
-msgstr ""
-"Управляя САУ, уничтожить все САУ противника в одном бою, но не менее 2."
+msgstr "Управляя САУ, уничтожить 2 САУ противника в одном бою."
 
 msgid "medalBillotte"
 msgstr "Медаль Бийота"
@@ -3826,7 +3825,7 @@ msgstr ""
 "• Выдаётся только в Случайных боях."
 
 msgid "medalBurda_descr"
-msgstr "Уничтожить 3 САУ противника в одном бою."
+msgstr "Уничтожить 2 САУ противника в одном бою."
 
 msgid "medalBurda_heroInfo"
 msgstr ""
@@ -3899,7 +3898,8 @@ msgstr "Медаль Думитру"
 msgid "medalDumitru_condition"
 msgstr ""
 "• Управлять танком или ПТ-САУ.\n"
-"• Выдаётся только в Случайных боях."
+"• Выдавалась только в Случайных боях.\n"
+"• Выдавалась до обновления 2.3."
 
 msgid "medalDumitru_descr"
 msgstr "Уничтожить 3 САУ противника в одном бою."
@@ -4275,8 +4275,7 @@ msgstr ""
 "• Выдаётся только в Случайных боях."
 
 msgid "medalTamadaYoshio_descr"
-msgstr ""
-"Уничтожить не менее 2 САУ противника в одном бою, управляя лёгким танком."
+msgstr "Уничтожить 2 САУ противника в одном бою, управляя лёгким танком."
 
 msgid "medalTamadaYoshio_heroInfo"
 msgstr ""

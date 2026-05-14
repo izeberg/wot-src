@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from CurrentVehicle import g_currentPreviewVehicle
 from account_helpers.settings_core.ServerSettingsManager import SETTINGS_SECTIONS
 from gui.Scaleform.daapi.view.lobby.shared.fitting_slot_vo import FittingSlotVO
@@ -97,9 +98,9 @@ class ModulesPanel(ModulesPanelMeta):
     def update(self, *args):
         self._update()
 
-    def showModuleInfo(self, itemCD):
-        if itemCD is not None and int(itemCD) > 0:
-            shared_events.showModuleInfo(itemCD, g_currentPreviewVehicle.item.descriptor)
+    def showModuleInfo(self, moduleId):
+        if moduleId is not None and int(moduleId) > 0:
+            shared_events.showModuleInfo(moduleId, g_currentPreviewVehicle.item.descriptor)
         return
 
     def _update(self):

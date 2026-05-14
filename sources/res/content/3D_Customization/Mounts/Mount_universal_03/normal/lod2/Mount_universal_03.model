@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-0.394059 -0.895439 -0.274774</min>
+		<max>0.053168 -0.000125 0.274774</max>
+	</visibilityBox>
+	<parent>content/3D_Customization/Mounts/Mount_universal_03/normal/lod3/Mount_universal_03</parent>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Mounts/Mount_universal_03/normal/lod2/Mount_universal_03</nodefullVisual>
+</root>

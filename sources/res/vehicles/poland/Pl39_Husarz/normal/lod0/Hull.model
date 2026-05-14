@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.886942 -0.688271 -4.472373</min>
+		<max>1.874691 0.788180 4.548492</max>
+	</visibilityBox>
+	<parent>vehicles/poland/Pl39_Husarz/normal/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/poland/Pl39_Husarz/normal/lod0/Hull</nodefullVisual>
+</root>

@@ -331,6 +331,14 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
+			<type>BW::VisibilityTunnelComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>14acfe7b-8637-4092-bdba-7f68ac3ddf9f</UUID>
+				<flags>3</flags>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
 			<type>VSEComponent</type>
 			<version>1</version>
 			<component>

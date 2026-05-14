@@ -6615,6 +6615,7 @@ def collide(*args, **kwargs): pass
 def commandLineLoginInfo(*args, **kwargs): pass
 def commitPendingGraphicsSettings(*args, **kwargs): pass
 component = u'client'
+def configureOitPresets(*args, **kwargs): pass
 def connect(*args, **kwargs): pass
 def connectedEntity(*args, **kwargs): pass
 def consumerBuild(*args, **kwargs): pass
@@ -6753,6 +6754,7 @@ def isFixedDictDataInstance(*args, **kwargs): pass
 def isForwardPipeline(*args, **kwargs): pass
 def isKeyDown(*args, **kwargs): pass
 def isNextTickPending(*args, **kwargs): pass
+def isOitEnabledForPreset(*args, **kwargs): pass
 def isSSAOEnabled(*args, **kwargs): pass
 def isShadowsEnabled(*args, **kwargs): pass
 def isSimplifiedPipeline(*args, **kwargs): pass
@@ -6943,7 +6945,6 @@ def wg_changeStringCasing(*args, **kwargs): pass
 def wg_checkAnyParticlesExist(*args, **kwargs): pass
 def wg_checkDestructibleIsBush(*args, **kwargs): pass
 def wg_clearAllScaleformTextures(*args, **kwargs): pass
-def wg_clearCrashedState(*args, **kwargs): pass
 def wg_clearDamageStickers(*args, **kwargs): pass
 def wg_clearDecals(*args, **kwargs): pass
 def wg_clearTextureReuseList(*args, **kwargs): pass

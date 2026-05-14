@@ -1,6 +1,9 @@
+from __future__ import absolute_import, division
 import logging, random
 from itertools import chain
-import typing, nations
+import typing
+from future.utils import viewitems, viewvalues
+import nations
 from account_helpers import AccountSettings
 from account_helpers.AccountSettings import LAST_STORAGE_VISITED_TIMESTAMP
 from gui import g_htmlTemplates
@@ -216,14 +219,10 @@ def getStorageShellsCriteria(itemsCache, invVehicles, compatible):
 
 
 @dependency.replace_none_kwargs(itemsCache=IItemsCache)
-def getStorageShellsData(invVehicles, isCompatible, comparator=None, itemsCache=None):
+def getStorageShellsData(invVehicles, isCompatible, sortKey=None, itemsCache=None):
     requestCriteria = getStorageShellsCriteria(itemsCache, invVehicles, isCompatible)
     items = itemsCache.items.getItems(GUI_ITEM_TYPE.SHELL, requestCriteria)
-    result = []
-    for item in sorted(items.itervalues(), cmp=comparator):
-        result.append(item)
-
-    return result
+    return sorted(viewvalues(items), key=sortKey)
 
 
 def _generateDescr(item, label, moreLabel, paramsNames, maxItemsCount):
@@ -389,13 +388,13 @@ def getVehicleCDForStyle(item, itemsCache=None):
 
     if not suitableVehicles:
         req = _CUSTOMIZATION_VEHICLE_CRITERIA | ~REQ_CRITERIA.SECRET
-        for vehCD, vehicle in itemsCache.items.getVehicles(req).iteritems():
+        for vehCD, vehicle in viewitems(itemsCache.items.getVehicles(req)):
             if not vehicle.isOutfitLocked and item.mayInstall(vehicle):
                 suitableVehicles.append(vehCD)
 
     if not suitableVehicles:
         secretReq = _CUSTOMIZATION_VEHICLE_CRITERIA | REQ_CRITERIA.SECRET
-        for vehCD, vehicle in itemsCache.items.getVehicles(secretReq).iteritems():
+        for vehCD, vehicle in viewitems(itemsCache.items.getVehicles(secretReq)):
             if not vehicle.isOutfitLocked and item.mayInstall(vehicle):
                 suitableVehicles.append(vehCD)
 

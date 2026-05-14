@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from past.builtins import cmp
 from helpers import dependency
 from gui.impl import backport
 from gui.impl.gen import R
@@ -12,7 +14,7 @@ class RankedServerPresenter(ServerListItemPresenter):
     _RES_ROOT = R.strings.ranked_battles.primeTimes.serverTooltip
     _connectionMgr = dependency.descriptor(IConnectionManager)
 
-    def __cmp__(self, other):
+    def _compare(self, other):
         peripheryID = self._connectionMgr.peripheryID
         result = cmp(self.getPeripheryID() == peripheryID, other.getPeripheryID() == peripheryID)
         if result:

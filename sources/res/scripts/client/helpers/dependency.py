@@ -1,6 +1,6 @@
 import functools, inspect, logging, typing
 from ids_generators import SequenceIDGenerator
-from py2to3.utils import getargspec
+from py2to3.backport.inspect import getargspec
 from soft_exception import SoftException
 InterfaceType = typing.TypeVar('InterfaceType')
 _logger = logging.getLogger(__name__)

@@ -12,6 +12,11 @@
 			<UUID>a020e3c0-d97b-49cb-82df-bdbba450a9c2</UUID>
 			<flags>0</flags>
 		</GameObject>
+		<GameObject>
+			<name>normal</name>
+			<UUID>0943bb7c-d8a4-4267-87b7-7246a443eebc</UUID>
+			<flags>0</flags>
+		</GameObject>
 	</GameObjects>
 	<components>
 		<ComponentPool>
@@ -19,6 +24,16 @@
 			<version>2</version>
 			<component>
 				<UUID>a020e3c0-d97b-49cb-82df-bdbba450a9c2</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>0943bb7c-d8a4-4267-87b7-7246a443eebc</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>0943bb7c-d8a4-4267-87b7-7246a443eebc</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -64,6 +79,50 @@
 					<property>
 						<name>Rotation</name>
 						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>0943bb7c-d8a4-4267-87b7-7246a443eebc</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>0 0 0</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>BW::StateSwitcherComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>8f204c34-bc31-4a60-8edc-658eefe2aa46</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>normal</name>
+						<link>0943bb7c-d8a4-4267-87b7-7246a443eebc</link>
+					</property>
+					<property>
+						<name>damaged</name>
+						<link>00000000-0000-0000-0000-000000000000</link>
+					</property>
+					<property>
+						<name>critical</name>
+						<link>00000000-0000-0000-0000-000000000000</link>
+					</property>
+					<property>
+						<name>previewState</name>
+						<value>1</value>
 					</property>
 				</config>
 			</component>
@@ -267,6 +326,28 @@
 					<property>
 						<name>Loop Count</name>
 						<value>-1</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>BW::VisibilityTunnelComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>a020e3c0-d97b-49cb-82df-bdbba450a9c2</UUID>
+				<flags>3</flags>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>VehicleHealthObserverComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>8f204c34-bc31-4a60-8edc-658eefe2aa46</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>state</name>
+						<value>1</value>
 					</property>
 				</config>
 			</component>

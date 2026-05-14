@@ -1,4 +1,7 @@
+from __future__ import absolute_import, division
+from builtins import round
 from enum import Enum
+from future.utils import viewvalues
 from adisp import adisp_process
 from functools import partial
 from frameworks.wulf import ViewFlags, ViewSettings
@@ -141,7 +144,7 @@ class MainView(ViewImpl):
     def __fillCells(self, model=None):
         cells = model.getCells()
         cells.clear()
-        for cell in self.__bundle.cells.itervalues():
+        for cell in viewvalues(self.__bundle.cells):
             cellModel = CellModel()
             cellName = cell.name
             cellModel.setName(cellName)

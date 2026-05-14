@@ -1,4 +1,8 @@
-import struct, nations
+from __future__ import absolute_import
+import struct
+from future.utils import viewitems
+from past.builtins import xrange
+import nations
 from items import vehicles
 from constants import VEHICLE_CLASSES, VEHICLE_CLASS_INDICES, MAX_VEHICLE_LEVEL
 _BAD_CLASS_INDEX = 16
@@ -23,14 +27,14 @@ class BaseUnitRoster:
         if packedRoster:
             self.unpack(packedRoster)
             return
-        self.limits = self.LIMITS_TYPE(**limitsDefs)
-        if slotCount is None:
-            slotCount = self.limits.get('maxSlotCount', self.MAX_SLOTS)
-        if slotDefs and isinstance(slotDefs, dict) and len(slotDefs) <= slotCount * 2 and min(slotDefs.iterkeys()) >= 0 and max(slotDefs.iterkeys()) < slotCount * 2:
-            self.slots = dict((i, self.SLOT_TYPE(**slotDef)) for i, slotDef in slotDefs.iteritems())
-            self.pack()
-            return
         else:
+            self.limits = self.LIMITS_TYPE(**limitsDefs)
+            if slotCount is None:
+                slotCount = self.limits.get('maxSlotCount', self.MAX_SLOTS)
+            if slotDefs and isinstance(slotDefs, dict) and len(slotDefs) <= slotCount * 2 and min(slotDefs) >= 0 and max(slotDefs) < slotCount * 2:
+                self.slots = dict((i, self.SLOT_TYPE(**slotDef)) for i, slotDef in viewitems(slotDefs))
+                self.pack()
+                return
             if slotCount:
                 self.slots = dict((i * 2, self.SLOT_TYPE()) for i in xrange(0, slotCount))
             else:
@@ -40,7 +44,7 @@ class BaseUnitRoster:
 
     def __repr__(self):
         repr = '%s( slots len=%s' % (self.__class__.__name__, len(self.slots))
-        for n, slot in self.slots.iteritems():
+        for n, slot in viewitems(self.slots):
             repr += '\n    [%d] %s' % (n, slot)
 
         repr += '\n)'
@@ -50,7 +54,7 @@ class BaseUnitRoster:
     def pack(self):
         slots = self.slots
         packed = struct.pack('<B', len(slots))
-        for idx, slot in slots.iteritems():
+        for idx, slot in viewitems(slots):
             packed += struct.pack('<B', idx)
             packed += slot.pack()
 
@@ -62,7 +66,7 @@ class BaseUnitRoster:
         self.slots = {}
         slotsLen = struct.unpack_from('<B', packed)[0]
         unpacking = packed[1:]
-        for i in range(0, slotsLen):
+        for _ in range(0, slotsLen):
             slot = self.SLOT_TYPE()
             idx = struct.unpack_from('<B', unpacking)[0]
             unpacking = slot.unpack(unpacking[1:])
@@ -82,7 +86,7 @@ class BaseUnitRoster:
 
     def checkVehicleList(self, vehTypeCompDescrList, unitSlotIdx=None):
         for vehTypeCompDescr in vehTypeCompDescrList:
-            res, chosenSlotIdx = self.checkVehicle(vehTypeCompDescr, unitSlotIdx)
+            res, _ = self.checkVehicle(vehTypeCompDescr, unitSlotIdx)
             if res:
                 return True
 
@@ -91,7 +95,7 @@ class BaseUnitRoster:
     def matchVehicleList(self, vehTypeCompDescrList, unitSlotIdx=None):
         matchList = []
         for vehTypeCompDescr in vehTypeCompDescrList:
-            res, chosenSlotIdx = self.checkVehicle(vehTypeCompDescr, unitSlotIdx)
+            res, _ = self.checkVehicle(vehTypeCompDescr, unitSlotIdx)
             if res:
                 matchList.append(vehTypeCompDescr)
 
@@ -126,9 +130,9 @@ class BaseUnitRoster:
             return (False, unitSlotIdx)
         else:
             if unitSlotIdx is None:
-                for i, slot in self.slots.iteritems():
+                for i, slot in viewitems(self.slots):
                     if slot.checkVehicle(vehTypeCompDescr):
-                        return (True, i / 2)
+                        return (True, i // 2)
 
             else:
                 if isinstance(unitSlotIdx, int):
@@ -190,7 +194,7 @@ def _reprBitMask(bitMask, nameList):
 def reprBitMaskFromDict(bitMask, nameDict):
     repr = ''
     if bitMask:
-        for nameMask, name in nameDict.iteritems():
+        for nameMask, name in viewitems(nameDict):
             if nameMask & bitMask == nameMask and nameMask:
                 repr += name + ','
 
@@ -201,7 +205,7 @@ def reprBitMaskFromDict(bitMask, nameDict):
 
 def buildNamesDict(constDefClass):
     ret = {}
-    for k, v in constDefClass.__dict__.iteritems():
+    for k, v in viewitems(constDefClass.__dict__):
         if k[0] != '_':
             ret[v] = k
 
@@ -307,7 +311,7 @@ class BaseUnitRosterSlot(object):
             if not self.nationMask & 1 << vehType.id[0]:
                 return False
             level = vehType.level
-            if not (self.levels[0] <= level and level <= self.levels[1]):
+            if not self.levels[0] <= level <= self.levels[1]:
                 return False
             classTag = vehicles.getVehicleClass(vehTypeCompDescr)
             classIndex = VEHICLE_CLASS_INDICES.get(classTag, _BAD_CLASS_INDEX)
@@ -341,7 +345,7 @@ class BaseUnitRosterLimits(object):
                       ('<H', 2), ('<H2B', 4))}
 
     def __init__(self, **limitsDefs):
-        limits = self.limits = {key:value for key, value in limitsDefs.iteritems() if value is not None if value is not None}
+        limits = self.limits = {key:value for key, value in viewitems(limitsDefs) if value is not None if value is not None}
         if not limits:
             self.mask = 0
             return
@@ -349,7 +353,7 @@ class BaseUnitRosterLimits(object):
             self.mask = _makeBitMask(limits.keys(), self._ROSTER_LIMIT_INDICES)
             vehicleLevelLimitsByClass = limits.pop('vehicleLevelLimitsByClass', None)
             if vehicleLevelLimitsByClass is not None:
-                limits['vehicleLevelLimitsByClass'] = {VEHICLE_CLASS_INDICES[key]:value for key, value in vehicleLevelLimitsByClass.iteritems()}
+                limits['vehicleLevelLimitsByClass'] = {VEHICLE_CLASS_INDICES[key]:value for key, value in viewitems(vehicleLevelLimitsByClass)}
             vehicleClasses = limits.pop('vehicleClasses', None)
             if vehicleClasses is not None:
                 limits['vehicleClasses'] = _makeBitMask(vehicleClasses, VEHICLE_CLASS_INDICES)
@@ -372,7 +376,7 @@ class BaseUnitRosterLimits(object):
             if limitName in ('vehicleLevelLimitsByClass', 'vehicleTypes'):
                 (lenFormat, _), (limitFormat, _) = packFormat
                 packed = struct.pack(lenFormat, len(limitValue))
-                for key, (lowerBound, upperBound) in limitValue.iteritems():
+                for key, (lowerBound, upperBound) in viewitems(limitValue):
                     packed += struct.pack(limitFormat, key, lowerBound, upperBound)
 
                 return packed
@@ -397,7 +401,7 @@ class BaseUnitRosterLimits(object):
             length = struct.unpack_from(lenFormat, packed)[0]
             packed = packed[lenSize:]
             subLimits = limits[limitName] = {}
-            for idx in xrange(length):
+            for _ in xrange(length):
                 key, lowerBound, upperBound = struct.unpack_from(limitFormat, packed)
                 subLimits[key] = (lowerBound, upperBound)
                 packed = packed[limitSize:]
@@ -426,17 +430,17 @@ class BaseUnitRosterLimits(object):
 
     def checkVehicleLevel--- This code section failed: ---
 
- L. 536         0  LOAD_FAST             0  'self'
+ L. 544         0  LOAD_FAST             0  'self'
                 3  LOAD_ATTR             0  'mask'
                 6  LOAD_CONST               0
                 9  COMPARE_OP            2  ==
                12  POP_JUMP_IF_FALSE    19  'to 19'
 
- L. 537        15  LOAD_GLOBAL           1  'True'
+ L. 545        15  LOAD_GLOBAL           1  'True'
                18  RETURN_END_IF    
              19_0  COME_FROM            12  '12'
 
- L. 538        19  LOAD_FAST             0  'self'
+ L. 546        19  LOAD_FAST             0  'self'
                22  LOAD_ATTR             2  'limits'
                25  LOAD_ATTR             3  'get'
                28  LOAD_CONST               'vehicleLevelLimitsByClass'
@@ -444,24 +448,24 @@ class BaseUnitRosterLimits(object):
                34  CALL_FUNCTION_2       2  None
                37  STORE_FAST            3  'vehicleLevelLimitsByClass'
 
- L. 539        40  LOAD_FAST             3  'vehicleLevelLimitsByClass'
+ L. 547        40  LOAD_FAST             3  'vehicleLevelLimitsByClass'
                43  LOAD_CONST               None
                46  COMPARE_OP            9  is-not
                49  POP_JUMP_IF_FALSE   117  'to 117'
 
- L. 540        52  LOAD_FAST             3  'vehicleLevelLimitsByClass'
+ L. 548        52  LOAD_FAST             3  'vehicleLevelLimitsByClass'
                55  LOAD_ATTR             3  'get'
                58  LOAD_FAST             1  'vehicleClassIdx'
                61  LOAD_CONST               None
                64  CALL_FUNCTION_2       2  None
                67  STORE_FAST            4  'vehicleLevelClassLimits'
 
- L. 541        70  LOAD_FAST             4  'vehicleLevelClassLimits'
+ L. 549        70  LOAD_FAST             4  'vehicleLevelClassLimits'
                73  LOAD_CONST               None
                76  COMPARE_OP            9  is-not
                79  POP_JUMP_IF_FALSE   117  'to 117'
 
- L. 542        82  LOAD_FAST             4  'vehicleLevelClassLimits'
+ L. 550        82  LOAD_FAST             4  'vehicleLevelClassLimits'
                85  LOAD_CONST               0
                88  BINARY_SUBSCR    
                89  LOAD_FAST             2  'vehicleLevel'
@@ -482,7 +486,7 @@ class BaseUnitRosterLimits(object):
               114  JUMP_FORWARD          0  'to 117'
             117_0  COME_FROM           114  '114'
 
- L. 543       117  LOAD_FAST             0  'self'
+ L. 551       117  LOAD_FAST             0  'self'
               120  LOAD_ATTR             2  'limits'
               123  LOAD_ATTR             3  'get'
               126  LOAD_CONST               'vehicleLevelLimits'
@@ -490,7 +494,7 @@ class BaseUnitRosterLimits(object):
               132  CALL_FUNCTION_2       2  None
               135  STORE_FAST            5  'vehicleLevelLimits'
 
- L. 545       138  LOAD_FAST             5  'vehicleLevelLimits'
+ L. 553       138  LOAD_FAST             5  'vehicleLevelLimits'
               141  LOAD_CONST               None
               144  COMPARE_OP            9  is-not
               147  POP_JUMP_IF_FALSE   184  'to 184'

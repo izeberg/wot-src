@@ -1,5 +1,7 @@
+from __future__ import absolute_import
+import tokenize, token
+from py2to3.moves.io import FastStringIO
 from soft_exception import SoftException
-import cStringIO, tokenize, token
 
 class ParserException(SoftException):
 
@@ -10,14 +12,14 @@ class ParserException(SoftException):
 class _Tokenizer:
 
     def __init__(self, s):
-        self.tokenizer = tokenize.generate_tokens(cStringIO.StringIO(s).readline)
+        self.tokenizer = tokenize.generate_tokens(FastStringIO(s).readline)
         self.__currentToken = None
         return
 
     def __next(self):
         try:
             while True:
-                toknum, tokval, _, _, _ = self.tokenizer.next()
+                toknum, tokval, _, _, _ = next(self.tokenizer)
                 self.__currentToken = (toknum, tokval)
                 if toknum not in (tokenize.NL, token.NEWLINE, token.INDENT, token.DEDENT):
                     break

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, BigWorld
 from gui.Scaleform.daapi import LobbySubView
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS

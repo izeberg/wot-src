@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from frameworks.state_machine import StateFlags
 from frameworks.state_machine.transitions import TransitionType

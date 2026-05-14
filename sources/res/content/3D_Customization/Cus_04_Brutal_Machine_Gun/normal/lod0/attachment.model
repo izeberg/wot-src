@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<tank>true</tank>
-	<nodefullVisual>content/3D_Customization/Cus_04_Brutal_Machine_Gun/normal/lod0/attachment</nodefullVisual>
 	<visibilityBox>
-		<min>-0.361436 -0.200000 -0.373923</min>
+		<min>-0.361436 -0.100000 -0.373923</min>
 		<max>0.431937 1.434565 0.516494</max>
 	</visibilityBox>
 	<parent>content/3D_Customization/Cus_04_Brutal_Machine_Gun/normal/lod1/attachment</parent>
 	<extent>32.000000</extent>
+	<nodefullVisual>content/3D_Customization/Cus_04_Brutal_Machine_Gun/normal/lod0/attachment</nodefullVisual>
 </root>

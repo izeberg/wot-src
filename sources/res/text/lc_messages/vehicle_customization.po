@@ -97,6 +97,30 @@ msgstr "Небесный сундук"
 msgid "attachment/Celestial/Cus_112_Celestial_XunLeiChong"
 msgstr "Небесное снаряжение"
 
+msgid "attachment/Football_Fever"
+msgstr "Футбольная лихорадка"
+
+msgid "attachment/Football_Fever/Cus_219_FB26_Ball"
+msgstr "Серебряный мяч"
+
+msgid "attachment/Football_Fever/Cus_219_FB26_Ball/description"
+msgstr ""
+"Отлитая из сияющего серебра и установленная на сверкающем золотом основании,"
+" эта полноразмерная скульптура мяча олицетворяет объединяющую силу "
+"прекрасной игры."
+
+msgid "attachment/Football_Fever/Cus_220_FB26_Referee"
+msgstr "Свисток арбитра"
+
+msgid "attachment/Football_Fever/Cus_221_FB26_Footballer"
+msgstr "Сумка с формой"
+
+msgid "attachment/Football_Fever/Cus_222_FB26_Fan"
+msgstr "Набор болельщика"
+
+msgid "attachment/Football_Fever/Cus_223_FB26_Team"
+msgstr "Атрибутика команды"
+
 msgid "attachment/Justice_and_Virtue"
 msgstr "Справедливость и доблесть"
 
@@ -145,6 +169,29 @@ msgstr "Семейные запасы"
 msgid "attachment/Mafia_Tommys_story/Cus_184_BP19_RacingKit"
 msgstr "Сложная «Честная игра»"
 
+msgid "attachment/River_Race_Revelry"
+msgstr "Праздник речных гонок"
+
+msgid "attachment/River_Race_Revelry/Cus_224_DB_Basket"
+msgstr "Благовонная корзинка"
+
+msgid "attachment/River_Race_Revelry/Cus_225_DB_Boat"
+msgstr "Цзунцзы"
+
+msgid "attachment/River_Race_Revelry/Cus_225_DB_Boat/description"
+msgstr ""
+"Толпа ревёт, вода сверкает, а гвоздь программы — эти весёлые цзунцзы! С "
+"берега кажется, будто они тоже отмечают фестиваль."
+
+msgid "attachment/River_Race_Revelry/Cus_226_DB_Vase"
+msgstr "Бесценный фарфор"
+
+msgid "attachment/River_Race_Revelry/Cus_227_DB_Anchor"
+msgstr "Фестивальный якорь"
+
+msgid "attachment/River_Race_Revelry/Cus_228_DB_Boat"
+msgstr "Лодка с подношениями"
+
 msgid "attachment/Zero_Legacy"
 msgstr "Наследие Зеро"
 
@@ -187,6 +234,30 @@ msgstr ""
 "немедленно начал готовиться к моменту его неминуемого возвращения. Учёные "
 "разработали плазменный ускоритель, который значительно увеличивает "
 "бронепробитие любого снаряда в любом орудии."
+
+msgid "attachment/altered_attachments"
+msgstr "Видоизменённые объекты"
+
+msgid "attachment/altered_attachments/Cus_214_LS_OpticalDevice"
+msgstr "Мириумная оптика"
+
+msgid "attachment/altered_attachments/Cus_215_LS_Machinegunn"
+msgstr "Улучшенный пулемёт"
+
+msgid "attachment/altered_attachments/Cus_216_LS_GasBaloons"
+msgstr "Эхо-баллоны"
+
+msgid "attachment/altered_attachments/Cus_216_LS_GasBaloons/description"
+msgstr ""
+"Ничто не может избежать отравляющего влияния мириума, даже воздух. Что бы ни"
+" было в этих баллонах раньше, оно превратилось в субстанцию из другой "
+"реальности."
+
+msgid "attachment/altered_attachments/Cus_217_LS_Barrels"
+msgstr "Заражённые бочки"
+
+msgid "attachment/altered_attachments/Cus_218_LS_Winch"
+msgstr "Усиленная катушка"
 
 msgid "attachment/anomaly_armory"
 msgstr "Аномальный арсенал"
@@ -1159,7 +1230,7 @@ msgid "camouflage/11_11_2024_1/description"
 msgstr "?empty?"
 
 msgid "camouflage/11_11_2024_1/label"
-msgstr "Танчики"
+msgstr "Tank Titan"
 
 msgid "camouflage/11_11_2024_2/description"
 msgstr "?empty?"
@@ -3452,6 +3523,18 @@ msgstr "Азимут"
 msgid "camouflage/bp2025_s19_usa/label"
 msgstr "Дух любительского радио"
 
+msgid "camouflage/bp2026_june_1/label"
+msgstr "Эрг-Шебби"
+
+msgid "camouflage/bp2026_june_2/label"
+msgstr "Сирокко"
+
+msgid "camouflage/bp2026_june_3/label"
+msgstr "Сахара"
+
+msgid "camouflage/bp2026_june_4/label"
+msgstr "Хамада"
+
 msgid "camouflage/bp2026_march_1/label"
 msgstr "Маленькая Италия"
 
@@ -4579,6 +4662,12 @@ msgstr "?empty?"
 msgid "camouflage/dragon/label"
 msgstr "Элемент огня"
 
+msgid "camouflage/dragon_boat_2026_1/label"
+msgstr "Укротитель демонов"
+
+msgid "camouflage/dragon_boat_2026_2/label"
+msgstr "Оживший пейзаж"
+
 msgid "camouflage/dragon_boat_festival/description"
 msgstr "?empty?"
 
@@ -4596,6 +4685,12 @@ msgstr "?empty?"
 
 msgid "camouflage/dragonboat_2024/label"
 msgstr "Царь драконов"
+
+msgid "camouflage/dragonboat_festival_2026_1/label"
+msgstr "Карп-дракон"
+
+msgid "camouflage/dragonboat_festival_2026_2/label"
+msgstr "Морская чешуя"
 
 msgid "camouflage/dwelling_dragons/description"
 msgstr "?empty?"
@@ -6081,6 +6176,9 @@ msgstr "?empty?"
 msgid "camouflage/master_of_orion/label"
 msgstr "Покоряя звёзды"
 
+msgid "camouflage/match_day/label"
+msgstr "Игровой день"
+
 msgid "camouflage/matchday_2024/description"
 msgstr "?empty?"
 
@@ -7381,6 +7479,9 @@ msgstr "?empty?"
 
 msgid "camouflage/three_tone_threads/label"
 msgstr "\"Нити\" трёхцветный"
+
+msgid "camouflage/tiger_stripes/label"
+msgstr "Тигровые полосы"
 
 msgid "camouflage/touchdown_camo/description"
 msgstr "?empty?"
@@ -8687,6 +8788,9 @@ msgstr ""
 
 msgid "camouflage/wot_fest_2019/label"
 msgstr "Фестивальный"
+
+msgid "camouflage/wot_heat_mission_reward/label"
+msgstr "HEAT сезона"
 
 msgid "camouflage/yandex/description"
 msgstr "?empty?"
@@ -14197,6 +14301,12 @@ msgstr "Заснеженный подъём"
 
 msgid "emblem/special/sticker_881"
 msgstr "Под соснами"
+
+msgid "emblem/special/sticker_882"
+msgstr "Тигровые полосы"
+
+msgid "emblem/special/sticker_883"
+msgstr "День игры"
 
 msgid "filter/popover/bonusType/title"
 msgstr "Типы бонусов"
@@ -21073,6 +21183,21 @@ msgstr "Таинственный лис"
 msgid "projection_decals/special/projection_decal_1051"
 msgstr "Родные края"
 
+msgid "projection_decals/special/projection_decal_1052"
+msgstr "Брелок-кисточка"
+
+msgid "projection_decals/special/projection_decal_1053"
+msgstr "Плетёный браслет"
+
+msgid "projection_decals/special/projection_decal_1057"
+msgstr "Эхо древности"
+
+msgid "projection_decals/special/projection_decal_1058"
+msgstr "Сверло"
+
+msgid "projection_decals/special/projection_decal_1059"
+msgstr "Пустынная кобра"
+
 msgid "projection_decals/special/projection_decal_106"
 msgstr "Это Карл, Карл!"
 
@@ -21103,6 +21228,15 @@ msgid "projection_decals/special/projection_decal_108/description"
 msgstr ""
 "Смотрит в бинокль как-то недовольно, свирепо и в то же время грустно и с "
 "недоумением."
+
+msgid "projection_decals/special/projection_decal_1081"
+msgstr "Зубастик"
+
+msgid "projection_decals/special/projection_decal_1082"
+msgstr "Зона тушканчиков"
+
+msgid "projection_decals/special/projection_decal_1086"
+msgstr "Тигровые полосы"
 
 msgid "projection_decals/special/projection_decal_109"
 msgstr "Глобальная карта"
@@ -25866,6 +26000,9 @@ msgstr "Уважаемая компания"
 msgid "repaint/maslenitsa"
 msgstr "Масленица"
 
+msgid "repaint/match_day"
+msgstr "День игры"
+
 msgid "repaint/may_marathon_2021"
 msgstr "Горный хрусталь"
 
@@ -26149,6 +26286,9 @@ msgstr "Предвестник"
 
 msgid "repaint/theboys"
 msgstr "Команда The Boys"
+
+msgid "repaint/tiger_stripes"
+msgstr "Тигровые полосы"
 
 msgid "repaint/toys_world"
 msgstr "Мир игрушек"
@@ -26639,7 +26779,7 @@ msgid "special_style/11_11"
 msgstr "Чёрный мрамор"
 
 msgid "special_style/11_11_2024_1"
-msgstr "Танчики"
+msgstr "Tank Titan"
 
 msgid "special_style/11_11_2024_1_desc"
 msgstr "Всесезонный ретро-стиль в честь настоящей аркадной классики."
@@ -26653,7 +26793,7 @@ msgstr ""
 "до неузнаваемости, основы всего, что мы видим сегодня, заложила в 1980 году "
 "одна классическая аркада. Захватывающий геймплей, механика, которую было "
 "легко усвоить, но сложно освоить, и игровые бонусы — для своей индустрии "
-"Tank-Man стал подлинным первопроходцем."
+"Tank Titan стал подлинным первопроходцем."
 
 msgid "special_style/11_11_2024_2"
 msgstr "Высокие парни"
@@ -27598,6 +27738,15 @@ msgstr ""
 "\n"
 "Лежишь такой на броне, смотришь в ночь. Как же не хватает карты звёздного неба...»"
 
+msgid "special_style/Ch38_WZ113G_FT_BPXX_3Dst"
+msgstr "Аддакс"
+
+msgid "special_style/Ch38_WZ113G_FT_BPXX_3Dst_desc/long"
+msgstr ""
+"Запись №39, 22:15.\n"
+"\n"
+"«Капитан разведки Ли Вэй Чжан. На данный момент все системы в норме. Сегодня мы на три часа потеряли связь с командным пунктом, пока пережидали дневную жару в дюнах. Скорее всего, фильтры забило пылью, и она вывела электронику из строя. Хорошо, что маскировочная сетка выдержала порывы ветра — сохранить укрытие важнее всего. Хотя я не уверен, что хуже: нарваться на засаду или ничего не обнаружить»."
+
 msgid "special_style/Ch41_WZ_111_5A_TXVII_3Dst"
 msgstr "Перфекционист"
 
@@ -28160,6 +28309,15 @@ msgstr ""
 "толстым слоем пепла. Только пепел есть единственная форма существования тех,"
 " кто был осквернён. Сёстры, наша гордость и добродетель — милосердие. Но "
 "сегодня пусть не оно в нас говорит. Сегодня мы уступаем слово огню»."
+
+msgid "special_style/F18_Bat_Chatillon25t_BPXX_3Dst"
+msgstr "Фенек"
+
+msgid "special_style/F18_Bat_Chatillon25t_BPXX_3Dst_desc/long"
+msgstr ""
+"Запись №58, 02:45.\n"
+"\n"
+"«Лейтенант Пьер Леклер снова к вашим услугам! Ах, бескрайняя Сахара... Magnifique, не правда ли? Я мог бы любоваться пустыней часами и ни капли не устать. Клянусь, я уже научился читать дюны, словно древние манускрипты… Цель уже близко, я это чувствую. Да и мой радар дарит столь необходимое душевное спокойствие. Буду следить за горизонтом и прислушиваться к ветру, и всё станет ясно. Ничто не спрячется от тебя надолго, если умеешь смотреть»."
 
 msgid "special_style/F64_AMX_50Fosh_B_BXI_3DSt"
 msgstr "Églantier"
@@ -28796,6 +28954,15 @@ msgstr ""
 "страна, долг, честь — так меня воспитали, меня учили их защищать. Любой "
 "ценой»."
 
+msgid "special_style/GB142_FV230_Canopener_KS_3Dst"
+msgstr "Стражи-близнецы"
+
+msgid "special_style/GB142_FV230_Canopener_KS_3Dst_desc/long"
+msgstr ""
+"Несравненные генералы Шубао и Цзиндэ прошли сквозь пламя войны, и гром сражений ещё долго отдавался эхом над Хуанхэ на заре династии Тан.\n"
+"\n"
+"Спустя тысячу лет они остаются увековеченными в статуях, что стерегут ворота императорского дворца. Когда‑то они возглавляли процветающую империю, а теперь защищают её от злых духов. Шубао олицетворяет благородную выдержку, а Цзиндэ — железную дисциплину. Воодушевившись их легендой, и вы одолеете тьму."
+
 msgid "special_style/GB142_FV230_Canopener_TXVII_3Dst"
 msgstr "Два ствола"
 
@@ -29306,6 +29473,15 @@ msgstr ""
 " бы горд мной, ведь я освоила те технологии будущего, о которых ты всегда "
 "мечтал, но... А ещё я назвала танк в честь нашей любимой кобылки, что когда-"
 "то кормила всю семью. Папа, ты видишь? Папа, ты видишь...»"
+
+msgid "special_style/Pl21_CS_63_BPXX_3Dst"
+msgstr "Дромадер"
+
+msgid "special_style/Pl21_CS_63_BPXX_3Dst_desc/long"
+msgstr ""
+"Запись №03, 00:20.\n"
+"\n"
+"«Лейтенант Войцеховский. Знаю, мне нужно чаще записывать отчёты. Чжан уже напоминал об этом. Дважды. По правде говоря, докладывать особо нечего. Дюны тянутся до горизонта, а установка, которую мы ищем, может скрываться за любым барханом. Явных следов противника пока нет, но Леклер всё время говорит, что пески нашёптывают ему путь или что-то в этом духе. По крайней мере этот чудак не даёт нам скучать. Ах да, на борту полно оружия, да и мой пистолет-пулемёт всегда под рукой. Так что я бы сказал, что дела идут хорошо»."
 
 msgid "special_style/Pl21_CS_63_HO26_3Dst"
 msgstr "Василиск"
@@ -31528,6 +31704,94 @@ msgstr ""
 "ни был, он с кем-то разговаривает — и мы не вернёмся домой, пока не выясним,"
 " с кем»."
 
+msgid "special_style/bp2026_june_1"
+msgstr "Эрг-Шебби"
+
+msgid "special_style/bp2026_june_1_desc"
+msgstr ""
+"Песчаный всесезонный стиль для тех, кому хочется раствориться в море дюн."
+
+msgid "special_style/bp2026_june_1_desc/long"
+msgstr ""
+"Златые волны посреди пустыни…\n"
+"\n"
+"Ни днём, ни ночью жар их не остынет.\n"
+"\n"
+"Какой великий зодчий сотворил их?\n"
+"\n"
+"Какой безумный маг вдохнул в них силу?\n"
+"\n"
+"Молчат валы извечного прибоя,\n"
+"\n"
+"Пытаясь тщетно спрятаться от зноя."
+
+msgid "special_style/bp2026_june_2"
+msgstr "Сирокко"
+
+msgid "special_style/bp2026_june_2_desc"
+msgstr "Тактический всесезонный стиль для защиты от пустынного ветра."
+
+msgid "special_style/bp2026_june_2_desc/long"
+msgstr ""
+"Проносится горячее дыхание,\n"
+"\n"
+"Пустыню обнажая догола.\n"
+"\n"
+"Сверкают золотистые барханы,\n"
+"\n"
+"С себя сметая зёрнышки пшена.\n"
+"\n"
+"Сирокко выл, пуская пыль в глаза,\n"
+"\n"
+"А мир вокруг неслышно исчезал."
+
+msgid "special_style/bp2026_june_3"
+msgstr "Сахара"
+
+msgid "special_style/bp2026_june_3_desc"
+msgstr ""
+"Всесезонный стиль, вдохновлённый бескрайними просторами Северной Африки."
+
+msgid "special_style/bp2026_june_3_desc/long"
+msgstr ""
+"Солнце властвует над песками\n"
+"\n"
+"И диктует им свой закон.\n"
+"\n"
+"В полдень светило в зените славы\n"
+"\n"
+"— Знамя белое высоко.\n"
+"\n"
+"Но природу не превозмочь,\n"
+"\n"
+"И король должен стать изгоем.\n"
+"\n"
+"Он уходит в свои покои,\n"
+"\n"
+"А престол занимает ночь."
+
+msgid "special_style/bp2026_june_4"
+msgstr "Хамада"
+
+msgid "special_style/bp2026_june_4_desc"
+msgstr ""
+"Геологический всесезонный стиль, напоминающий карту скалистых пустынных "
+"плато."
+
+msgid "special_style/bp2026_june_4_desc/long"
+msgstr ""
+"Нещадно солнце обжигает камень\n"
+"\n"
+"Там, где когда-то были реки и моря.\n"
+"\n"
+"То боги терпеливыми руками\n"
+"\n"
+"Возводят крепость цвета янтаря.\n"
+"\n"
+"Любой изгиб, любая форма здесь\n"
+"\n"
+"Таят в себе часть замысла небес."
+
 msgid "special_style/bp2026_march_1"
 msgstr "Маленькая Италия"
 
@@ -32661,6 +32925,11 @@ msgstr ""
 msgid "special_style/conqueror"
 msgstr "Завоеватель"
 
+msgid "special_style/conqueror_desc"
+msgstr ""
+"Уникальный стиль, выдаваемый за личные и клановые достижения на Глобальной "
+"карте."
+
 msgid "special_style/cosm_1"
 msgstr "Невесомость"
 
@@ -32889,6 +33158,39 @@ msgstr "Единая планета"
 msgid "special_style/dragon"
 msgstr "Элемент огня"
 
+msgid "special_style/dragon_boat_2026_1"
+msgstr "Укротитель демонов"
+
+msgid "special_style/dragon_boat_2026_1_desc"
+msgstr ""
+"Этот неистовый всесезонный стиль заключает в себе мощь легендарного "
+"заступника."
+
+msgid "special_style/dragon_boat_2026_1_desc/long"
+msgstr ""
+"«Хоть непригляден я на вид,\n"
+"Мне это вовсе не претит.\n"
+"Быть страшным — тоже ремесло:\n"
+"Мой лик отпугивает зло».\n"
+"\n"
+"Учёный Чжун Куй обладал выдающимся интеллектом и безобразной внешностью. Отвергнутый при жизни, после своей безвременной кончины он стал бороться с несправедливостью, от которой однажды пострадал сам. Теперь Чжун Куй избавляет мир от зла с помощью сверхъестественных сил."
+
+msgid "special_style/dragon_boat_2026_2"
+msgstr "Оживший пейзаж"
+
+msgid "special_style/dragon_boat_2026_2_desc"
+msgstr ""
+"Разверните этот умиротворяющий всесезонный стиль, словно расписной свиток."
+
+msgid "special_style/dragon_boat_2026_2_desc/long"
+msgstr ""
+"«Суда неспешно проплывают по реке,\n"
+"Вдоль гор, окутанных клубами облаков,\n"
+"Что позже где-то изольются вдалеке.\n"
+"И так — по кругу до скончания веков.\n"
+"\n"
+"Прошу заметить, командир: мои картины движутся. Смотрите, как чернила протекают от спокойных озёр к великим вершинам, к небесам и обратно. Здесь есть чему поучиться: каждая битва — лишь мазок на холсте, который вы ещё не закончили. Кисть не покинет вашей руки, пока вы сами её не выпустите»."
+
 msgid "special_style/dragon_boat_festival"
 msgstr "Журавль"
 
@@ -32945,6 +33247,43 @@ msgstr ""
 "водная стихия повинуется Лу-вану, пред которым даже самые большие корабли "
 "лишь песчинки. Мы молим нашего защитника провести нас опасными водами и "
 "благодарим за его милость. Так было и будет всегда»."
+
+msgid "special_style/dragonboat_festival_2026_1"
+msgstr "Карп-дракон"
+
+msgid "special_style/dragonboat_festival_2026_1_desc"
+msgstr ""
+"Преодолевайте любые трудности с этим всесезонным стилем подобно карпу кои, "
+"который превратился в дракона."
+
+msgid "special_style/dragonboat_festival_2026_1_desc/long"
+msgstr ""
+"Жёлтая река сверкала золотом от огромной стаи карпов. Они боролись с течением, плыли всё выше по реке, пока не достигли бурного водопада — слишком высокого, чтобы его можно было преодолеть. Многие повернули назад, другие пытались перепрыгнуть, но терпели неудачу: течение уносило их вниз под взглядами небесных духов.\n"
+"\n"
+"И всё же одной рыбе удалось победить стихию: она нырнула вглубь, собрала все силы и взмыла вверх, преодолев водопад. В награду за упорство небеса превратили её в дракона."
+
+msgid "special_style/dragonboat_festival_2026_2"
+msgstr "Морская чешуя"
+
+msgid "special_style/dragonboat_festival_2026_2_desc"
+msgstr "В этом бурном всесезонном стиле сходятся все стихии."
+
+msgid "special_style/dragonboat_festival_2026_2_desc/long"
+msgstr ""
+"Морская бездна свирепеет\n"
+"И спорит с пеною у рта.\n"
+"Ломает хрупкие борта,\n"
+"Захлёстывает берег.\n"
+"\n"
+"Волна к погибели несётся,\n"
+"Шипит на камни, как змея.\n"
+"Её литая чешуя\n"
+"Искрится в свете солнца.\n"
+"\n"
+"А ночью блеск неугасимый\n"
+"Достигнет волн от дальних звёзд.\n"
+"Змея покажет длинный хвост\n"
+"И скроется в пучине."
 
 msgid "special_style/dwelling_dragons"
 msgstr "Здесь обитают драконы"
@@ -34822,6 +35161,22 @@ msgstr "Покоряя звёзды"
 
 msgid "special_style/master_of_orion_desc"
 msgstr "Всесезонный стиль, наполненный атмосферой серии игр Master of Orion."
+
+msgid "special_style/match_day"
+msgstr "День игры"
+
+msgid "special_style/match_day_desc"
+msgstr "Всесезонный футбольный стиль для тех, кто играет по-крупному."
+
+msgid "special_style/match_day_desc/long"
+msgstr ""
+"Мощные, здоровенные защитники. Ловкие нападающие, не боящиеся рисковать. "
+"Универсалы, делающие разницу в центре поля. В футболе, как и в World of "
+"Tanks, у каждого своя роль. Когда все работают слаженно, рождаются великие "
+"моменты: кинжальные атаки и сокрушительные контрудары. Но попытаетесь "
+"победить в одиночку, и неприятный сюрприз не заставит себя ждать. Когда в "
+"следующий раз будете зашнуровывать бутсы или выезжать на любимую позицию, "
+"напомните себе: самые ценные победы добываются сообща."
 
 msgid "special_style/matchday_2024"
 msgstr "Победитель"
@@ -37342,6 +37697,24 @@ msgstr "Крупнопятнистый трёхцветный западный (
 msgid "special_style/three_tone_threads"
 msgstr "\"Нити\" трёхцветный (День Д)"
 
+msgid "special_style/tiger_stripes"
+msgstr "Тигровые полосы"
+
+msgid "special_style/tiger_stripes_desc"
+msgstr "Эффектный всесезонный стиль для тех, кто никогда не сдаётся."
+
+msgid "special_style/tiger_stripes_desc/long"
+msgstr ""
+"История «Тигров» столь же пёстрая, как и их знаменитая чёрно-оранжевая "
+"форма. Клуб основали в начале XX века рабочие одного из крупнейших заводов "
+"по производству танков в регионе. С тех пор команда пережила "
+"головокружительные взлёты и сокрушительные падения: от успехов послевоенных "
+"лет, добытых благодаря виртуозному вингеру, до возрождения в наши дни во "
+"главе с неудержимым лидером полузащиты. Они не падают духом, что бы ни "
+"случилось. Быть «тигром» — значит не сдаваться. Отдавать на поле всего себя."
+" Не признавать слова «поражение». И преданные болельщики каждый матч "
+"напоминают: носить клубные полосы — не право, а привилегия."
+
 msgid "special_style/touchdown"
 msgstr "Тачдаун"
 
@@ -38223,6 +38596,13 @@ msgid "special_style/wot_fest_2019_desc"
 msgstr ""
 "И пусть все увидят, какой у вас безупречный вкус! Этот всесезонный стиль "
 "можно получить в рамках проведения события «Танковый фестиваль»."
+
+msgid "special_style/wot_heat_mission_reward"
+msgstr "HEAT сезона"
+
+msgid "special_style/wot_heat_mission_reward_desc"
+msgstr ""
+"Эксклюзивный всесезонный стиль, посвящённый выходу World of Tanks: HEAT."
 
 msgid "special_style/yandex"
 msgstr "Снегопад"

@@ -1,4 +1,6 @@
+from __future__ import absolute_import
 from operator import attrgetter
+from future.utils import viewvalues
 from gui.Scaleform.daapi import LobbySubView
 from gui.Scaleform.daapi.view.meta.PersonalMissionFirstEntryAwardViewMeta import PersonalMissionFirstEntryAwardViewMeta
 from gui.Scaleform.genConsts.PERSONAL_MISSIONS_ALIASES import PERSONAL_MISSIONS_ALIASES
@@ -58,7 +60,7 @@ class PersonalMissionFirstEntryAwardView(LobbySubView, PersonalMissionsNavigatio
     def __getAwards(self, operations):
         badgesToShow = {}
         badgeQuests = getQuestsByTokenAndBonus(self._eventsCache.getHiddenQuests(), tokenFinder=pmTokenDetector(operations), bonusFinder=badgeBonusFinder())
-        for quest in badgeQuests.itervalues():
+        for quest in viewvalues(badgeQuests):
             for bonus in quest.getBonuses('dossier'):
                 for badge in bonus.getBadges():
                     if badge.isAchieved:

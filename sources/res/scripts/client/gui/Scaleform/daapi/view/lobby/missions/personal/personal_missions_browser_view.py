@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.daapi.view.lobby.hangar.BrowserView import BrowserView
 from gui.server_events.pm_constants import PERSONAL_MISSIONS_SOUND_SPACE, SOUNDS
 

@@ -4001,7 +4001,7 @@
 		<priceGroup>inscriptions 50g notInShop</priceGroup>
 		<vehicleFilter>
 			<include>
-				<levels>10</levels>
+				<levels>10 11</levels>
 			</include>
 			<exclude>
 				<tags>excluded_from_customization</tags>
