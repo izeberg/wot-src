@@ -16,11 +16,11 @@
 	</speedLimits>
 	<invisibility>
 		<moving>
-			0.97
+			0.105
 			<!--BW_String-->
 		</moving>
 		<still>
-			0.162
+			0.174
 			<!--BW_String-->
 		</still>
 		<camouflageBonus>
@@ -28,7 +28,7 @@
 			<!--BW_String-->
 		</camouflageBonus>
 		<firePenalty>
-			0.243
+			0.261
 			<!--BW_String-->
 		</firePenalty>
 	</invisibility>
@@ -2352,7 +2352,10 @@
 				<armor_28>90</armor_28>
 				<armor_29>50</armor_29>
 				<armor_30>100</armor_30>
-				<armor_31>50</armor_31>
+				<armor_31>
+					150
+					<vehicleDamageFactor>0</vehicleDamageFactor>
+				</armor_31>
 				<armor_32>40</armor_32>
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>

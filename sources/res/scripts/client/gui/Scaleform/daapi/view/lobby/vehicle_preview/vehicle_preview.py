@@ -286,13 +286,8 @@ class VehiclePreview(LobbySelectableView, VehiclePreviewMeta):
     def handleSelectedEntityUpdated(self, event):
         ctx = event.ctx
         entity = BigWorld.entities.get(ctx['entityId'], None)
-        if ctx['state'] == CameraMovementStates.MOVING_TO_OBJECT:
-            if isinstance(entity, HeroTank):
-                descriptor = entity.typeDescriptor
-                if descriptor:
-                    vehicleCD = descriptor.type.compactDescr
-                    event_dispatcher.showHeroTankPreview(vehicleCD, previewAlias=VIEW_ALIAS.VEHICLE_PREVIEW, previousBackAlias=self._backAlias, backOutfit=self.__outfit)
-            elif entity.id == self._hangarSpace.space.vehicleEntityId:
+        if ctx['state'] == CameraMovementStates.MOVING_TO_OBJECT and not isinstance(entity, HeroTank):
+            if entity.id == self._hangarSpace.space.vehicleEntityId:
                 self._processBackClick({'entity': entity})
         return
 

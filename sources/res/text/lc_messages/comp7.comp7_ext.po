@@ -177,13 +177,13 @@ msgid "banView/factory/candidate"
 msgstr "Машина для исключения: %(vehicleName)s"
 
 msgid "banView/factory/candidates"
-msgstr "Техника для исключения, предложенная командой"
+msgstr "Исключения вашей команды"
 
 msgid "banView/factory/noCandidates"
 msgstr "Нет техники для исключения"
 
 msgid "banView/factory/pick"
-msgstr "Ваше предложение: %(vehicleName)s"
+msgstr "Ваш голос: %(vehicleName)s"
 
 msgid "banView/noBan"
 msgstr "Не исключать"

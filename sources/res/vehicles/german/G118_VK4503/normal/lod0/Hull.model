@@ -3,19 +3,16 @@
 	<materialNames/>
 	<visibilityBox>
 		<min>
-			-1.63631 -0.705084 -3.8697
+			-1.63615 -0.705084 -3.90079
 			<!--BW_String-->
 		</min>
 		<max>
-			1.63475 0.79335 3.33393
+			1.63491 0.79335 3.30284
 			<!--BW_String-->
 		</max>
 	</visibilityBox>
 	<tank>true</tank>
 	<nodefullVisual>vehicles/german/G118_VK4503/normal/lod0/Hull</nodefullVisual>
 	<parent>vehicles/german/G118_VK4503/normal/lod1/Hull</parent>
-	<extent>
-		32.0
-		<!--BW_String-->
-	</extent>
+	<extent>32</extent>
 </root>

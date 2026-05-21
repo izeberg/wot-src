@@ -75,7 +75,7 @@ class BuyPassPresenter(ViewComponent[BattlePassBuyViewModel]):
         with self.viewModel.transaction() as (model):
             self.__setGeneralFields(model=model)
             self.__setSelectedPackage(model=model)
-            self.__setRegularChapters(model=model)
+            self.__setMainChapters(model=model)
 
     def _finalize(self):
         self.__selectedPackage = None
@@ -226,13 +226,14 @@ class BuyPassPresenter(ViewComponent[BattlePassBuyViewModel]):
         showBattlePass(R.aliases.battle_pass.Progression(), self.__packageID)
 
     @replaceNoneKwargsModel
-    def __setRegularChapters(self, model=None):
-        chapters = model.getRegularChapters()
+    def __setMainChapters(self, model=None):
+        chapters = model.getChapters()
         chapters.clear()
-        for chapterID in self.__battlePass.getRegularChapterIDs():
+        for chapterID in self.__battlePass.getMainChapterIDs():
             chapterModel = BuyChapterModel()
             chapterModel.setChapterID(chapterID)
             chapterModel.setHasStarterPack(bool(self.__battlePass.getChapterStarterPack(chapterID)))
+            chapterModel.setIsExtra(self.__battlePass.isExtraChapter(chapterID))
             chapters.addViewModel(chapterModel)
 
         chapters.invalidate()
