@@ -1,4 +1,3 @@
-from constants import CURRENT_GAME_ID
 from gui import makeHtmlString
 from gui.Scaleform.genConsts.CONTACTS_ALIASES import CONTACTS_ALIASES
 from gui.Scaleform.locale.MESSENGER import MESSENGER as I18N_MESSENGER
@@ -152,9 +151,8 @@ class ContactConverter(object):
         baseUserProps['rgb'] = cls.getColor(tags, isOnline)
         baseUserProps['icons'] = cls.getIcons(tags, note)
         baseUserProps['tags'] = list(tags)
-        resourceIconId = cls.getGuiResourceID(contact)
         isColorBlind = cls.settingsCore.getSetting('isColorBlind')
-        if resourceIconId == CURRENT_GAME_ID:
+        if cls.isCurrentGameContact(contact):
             if contact.isOnline():
                 if USER_TAG.PRESENCE_DND in tags:
                     resourceIconId = _WOT_GAME_RESOURCE.BUSY_BLIND if isColorBlind else _WOT_GAME_RESOURCE.BUSY
@@ -185,11 +183,8 @@ class ContactConverter(object):
         return makeHtmlString('html_templates:contacts/contact', key, ctx=ctx)
 
     @classmethod
-    def getGuiResourceID(cls, contact):
-        resourceId = contact.getResourceID()
-        if not resourceId:
-            resourceId = CURRENT_GAME_ID
-        return resourceId
+    def isCurrentGameContact(cls, contact):
+        return contact.isCurrentGameContact()
 
     @classmethod
     def _getColors(cls, name):

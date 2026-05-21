@@ -3,6 +3,7 @@ package net.wg.gui.lobby.missions.components.headerComponents
    import flash.display.MovieClip;
    import flash.events.MouseEvent;
    import flash.text.TextField;
+   import net.wg.data.constants.generated.QUESTS_ALIASES;
    import net.wg.gui.components.controls.SoundButtonEx;
    import net.wg.gui.lobby.missions.event.MissionHeaderEvent;
    import scaleform.clik.constants.InvalidationType;
@@ -99,7 +100,9 @@ package net.wg.gui.lobby.missions.components.headerComponents
       
       private function onInfoMouseButtonClick(param1:MouseEvent) : void
       {
-         dispatchEvent(new MissionHeaderEvent(MissionHeaderEvent.OPEN_INFO_PAGE,true));
+         var _loc2_:MissionHeaderEvent = new MissionHeaderEvent(MissionHeaderEvent.OPEN_INFO_PAGE,true);
+         _loc2_.actionId = QUESTS_ALIASES.DEBUT_BOXES_EVENT;
+         dispatchEvent(_loc2_);
       }
    }
 }

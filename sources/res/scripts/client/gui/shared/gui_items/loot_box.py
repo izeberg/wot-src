@@ -116,7 +116,8 @@ class LootBox(GUIItem):
                  '__userNameKey', '__iconName', '__description', '__videoKey', '__weight',
                  '__bonusGroups', '__autoOpenTime', '__rotationLists', '__config',
                  '__rotationStage', '__tags', '__unlockKeys', '__manualMaxOpenCount',
-                 '__lootBoxInfoPageURL', '__lootBoxShopURL', '__isStatCollected')
+                 '__lootBoxInfoPageURL', '__lootBoxShopURL', '__isStatCollected',
+                 '__immediatelyOpen')
 
     def __init__(self, lootBoxID, lootBoxConfig, invCount):
         super(LootBox, self).__init__()
@@ -224,6 +225,9 @@ class LootBox(GUIItem):
     def isStatCollected(self):
         return self.__isStatCollected
 
+    def isImmediatelyOpen(self):
+        return self.__immediatelyOpen
+
     def getManualMaxOpenCount(self):
         if self.__manualMaxOpenCount:
             return self.__manualMaxOpenCount
@@ -307,6 +311,8 @@ class LootBox(GUIItem):
         return bonusesGroups
 
     def getBonusesByGroup(self, group):
+        if self.__bonusGroups is None:
+            self.__bonusGroups = self.__formBonusGroups()
         return self.__bonusGroups[group]
 
     def getBonusSlots(self):
@@ -366,6 +372,7 @@ class LootBox(GUIItem):
         self.__lootBoxShopURL = assetsConfig.get('lootBoxShopURL', '')
         self.__unlockKeys = lootBoxConfig.get('unlockKeys', set())
         self.__manualMaxOpenCount = lootBoxConfig.get('manualMaxOpenCount')
+        self.__immediatelyOpen = lootBoxConfig.get('immediatelyOpen')
         return
 
     def __iterateAllSlots(self):

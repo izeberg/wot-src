@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodelessVisual>vehicles/french/F137_Tornade/_skins/F137_Tornade_3Dst_02/normal/lod0/Lamp_03</nodelessVisual>
+	<parent>vehicles/french/F137_Tornade/_skins/F137_Tornade_3Dst_02/normal/lod1/Lamp_03</parent>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.112366 0.608767 -1.647726</min>
+		<max>-0.545900 0.804915 -1.524463</max>
+	</visibilityBox>
+</root>

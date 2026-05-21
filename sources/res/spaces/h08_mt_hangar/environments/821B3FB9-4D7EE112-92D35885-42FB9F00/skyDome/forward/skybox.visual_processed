@@ -24,7 +24,7 @@
 					<materialKind>0</materialKind>
 					<property>
 						diffuseMap
-						<Texture>maps/skyboxes/h08_mt_hangar_sky/skydome/h08_mt_hangar_sky_spring_forward.dds</Texture>
+						<Texture>maps/skyboxes/h08_mt_hangar_sky/skydome/h08_mt_hangar_sky_summer_forward.dds</Texture>
 					</property>
 					<property>
 						g_maskMap
@@ -32,7 +32,7 @@
 					</property>
 					<property>
 						g_enableAnimatedSkybox
-						<Bool>false</Bool>
+						<Bool>true</Bool>
 					</property>
 					<property>
 						g_flip
@@ -48,11 +48,11 @@
 					</property>
 					<property>
 						g_frequency
-						<Float>0.090000</Float>
+						<Float>0.025000</Float>
 					</property>
 					<property>
 						g_speed
-						<Float>0.500000</Float>
+						<Float>2.000000</Float>
 					</property>
 					<property>
 						g_horizon
@@ -60,7 +60,7 @@
 					</property>
 					<property>
 						g_direction
-						<Float>0.000000</Float>
+						<Float>136.000000</Float>
 					</property>
 					<property>
 						g_secondLDir

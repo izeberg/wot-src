@@ -105,6 +105,24 @@
 						particleSizeMultiplier
 						<Float>1.800000</Float>
 					</property>
+					<property>
+						forwardSpawnContourColor
+						<Vector3>
+							1 0.964689 0
+							<!--BW_String-->
+						</Vector3>
+					</property>
+					<property>
+						forwardInitialParticlesColor
+						<Vector3>1 1 0</Vector3>
+					</property>
+					<property>
+						forwardFinalParticlesColor
+						<Vector3>
+							1 0.964689 0
+							<!--BW_String-->
+						</Vector3>
+					</property>
 				</material>
 				<groupOrigin>0.000040 1.246947 0.008003</groupOrigin>
 			</primitiveGroup>

@@ -60,6 +60,10 @@
 						</Vector4>
 					</property>
 					<property>
+						alphaTestEnable
+						<Bool>false</Bool>
+					</property>
+					<property>
 						crashTileMap
 						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
 					</property>
@@ -71,6 +75,10 @@
 						excludeMaskAndAOMap
 						<Texture>vehicles/german/G194_E_50_GT_Alkett_Prod/E_50_GT_Alkett_Prod_turret_01_AO.dds</Texture>
 					</property>
+					<property>
+						alphaReference
+						<Int>0</Int>
+					</property>
 				</material>
 				<groupOrigin>0.000000 0.522851 -0.294687</groupOrigin>
 			</primitiveGroup>
@@ -80,6 +88,6 @@
 		<min>-1.335811 -0.018691 -2.199530</min>
 		<max>1.335811 1.064394 1.610157</max>
 	</boundingBox>
-	<geometrySize>43652</geometrySize>
+	<geometrySize>44084</geometrySize>
 	<minUVDensity>0.004114</minUVDensity>
 </root>

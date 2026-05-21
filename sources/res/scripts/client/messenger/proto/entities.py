@@ -449,6 +449,10 @@ class UserEntity(ChatEntity):
     def isFriend(self):
         return USER_TAG.FRIEND in self.getTags()
 
+    def isConfirmedFriend(self):
+        tags = self.getTags()
+        return {USER_TAG.FRIEND, USER_TAG.SUB_TO}.issubset(tags)
+
     def isIgnored(self):
         return USER_TAG.IGNORED in self.getTags() or self.isTemporaryIgnored()
 
@@ -522,6 +526,9 @@ class LobbyUserEntity(UserEntity):
 
     def getResourceID(self):
         return
+
+    def isCurrentGameContact(self):
+        return True
 
     def getClientInfo(self):
         return

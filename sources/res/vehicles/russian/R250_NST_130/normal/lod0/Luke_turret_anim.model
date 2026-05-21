@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/russian/R250_NST_130/normal/lod0/Luke_turret_anim</nodefullVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.140000 0.672753 1.517234</min>
+		<max>0.140000 0.924476 1.958527</max>
+	</visibilityBox>
+	<parent>vehicles/russian/R250_NST_130/normal/lod1/Luke_turret_anim</parent>
+	<extent>32.000000</extent>
+</root>

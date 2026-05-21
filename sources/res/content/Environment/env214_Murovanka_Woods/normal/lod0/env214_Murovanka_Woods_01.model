@@ -2,19 +2,10 @@
 <root>
 	<materialNames/>
 	<visibilityBox>
-		<min>
-			-2.34708 -0.118402 -1.97506
-			<!--BW_String-->
-		</min>
-		<max>
-			2.34708 0.740717 1.97506
-			<!--BW_String-->
-		</max>
+		<min>-2.347075 -0.118402 -1.975061</min>
+		<max>2.347075 0.740717 1.975061</max>
 	</visibilityBox>
 	<parent>content/Environment/env214_Murovanka_Woods/normal/lod1/env214_Murovanka_Woods_01</parent>
-	<extent>
-		35.0
-		<!--BW_String-->
-	</extent>
+	<extent>35.000000</extent>
 	<nodelessVisual>content/Environment/env214_Murovanka_Woods/normal/lod0/env214_Murovanka_Woods_01</nodelessVisual>
 </root>

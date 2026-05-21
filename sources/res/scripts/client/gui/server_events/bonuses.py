@@ -7,7 +7,7 @@ from adisp import adisp_process
 from battle_pass_common import BATTLE_PASS_OFFER_TOKEN_PREFIX, BATTLE_PASS_Q_CHAIN_BONUS_NAME, BATTLE_PASS_Q_CHAIN_TOKEN_PREFIX, BATTLE_PASS_RANDOM_QUEST_BONUS_NAME, BATTLE_PASS_RANDOM_QUEST_TOKEN_PREFIX, BATTLE_PASS_SELECT_BONUS_NAME, BATTLE_PASS_STYLE_PROGRESS_BONUS_NAME, BATTLE_PASS_TOKEN_3D_STYLE, BATTLE_PASS_TOKEN_PREFIX
 from blueprints.BlueprintTypes import BlueprintTypes
 from blueprints.FragmentTypes import getFragmentType
-from comp7_common import COMP7_TOKEN_WEEKLY_REWARD_NAME, COMP7_TOKEN_WEEKLY_REWARD_ID, COMP7_TOKEN_COUPON_REWARD_NAME, COMP7_TOKEN_COUPON_REWARD_ID
+from comp7_common import COMP7_TOKEN_WEEKLY_REWARD_NAME, COMP7_TOKEN_WEEKLY_REWARD_ID, COMP7_TOKEN_COUPON_REWARD_NAME, COMP7_TOKEN_COUPON_REWARD_ID, COMP7_CUSTOMIZATION_PROGRESS_PREFIX, replaceComp7tokenID
 from constants import CURRENCY_TOKEN_PREFIX, DOSSIER_TYPE, EVENT_TYPE as _ET, LOOTBOX_TOKEN_PREFIX, PREMIUM_ENTITLEMENTS, LOOTBOX_KEY_PREFIX, RESOURCE_TOKEN_PREFIX, RentType, CUSTOMIZATION_PROGRESS_PREFIX, WoTPlusBonusType, VERSUS_AI_PROGRESSION_TOKEN_PREFIX, OFFER_TOKEN_PREFIX
 from debug_utils import LOG_CURRENT_EXCEPTION, LOG_ERROR
 from dossiers2.custom.records import RECORD_DB_IDS
@@ -56,7 +56,6 @@ from gui.shared.utils.functions import makeTooltip, stripColorTagDescrTags
 from gui.shared.utils.requesters.blueprints_requester import getFragmentNationID, getVehicleCDForIntelligence, getVehicleCDForNational, makeIntelligenceCD, makeNationalCD
 from helpers import dependency, getLocalizedData, i18n, time_utils
 from helpers.i18n import makeString as _ms
-from historical_battles_common.hb_constants import FRONT_COUPON_TOKEN_PREFIX
 from items import tankmen, vehicles
 from items.components import c11n_components as cc
 from items.components.crew_skins_constants import NO_CREW_SKIN_ID
@@ -77,6 +76,7 @@ from skeletons.gui.offers import IOffersDataProvider
 from skeletons.gui.server_events import IEventsCache
 from skeletons.gui.shared import IItemsCache
 from web.web_client_api.common import ItemPackEntry, ItemPackType, ItemPackTypeGroup, getItemPackByGroupAndName
+from gui.Scaleform.genConsts.CURRENCIES_CONSTANTS import CURRENCIES_CONSTANTS
 if typing.TYPE_CHECKING:
     from typing import List, Tuple, Dict, Callable, Optional, Any
     from account_helpers.offers.events_data import OfferEventData
@@ -430,6 +430,7 @@ class EquipCoinBonus(IntegralBonus):
 
 
 class CurrenciesBonus(IntegralBonus):
+    __TEMPLATE_NAME = 'platformCurrency'
 
     def __init__(self, *args, **kwargs):
         super(CurrenciesBonus, self).__init__(*args, **kwargs)
@@ -470,6 +471,20 @@ class CurrenciesBonus(IntegralBonus):
             'icon': {AWARDS_SIZES.SMALL: self.getIconBySize(AWARDS_SIZES.SMALL), AWARDS_SIZES.BIG: self.getIconBySize(AWARDS_SIZES.BIG)}, 
             'name': backport.text(awardItem.header()) if awardItem else '', 
             'description': backport.text(awardItem.body()) if awardItem else ''}]
+
+    def _format(self, styleSubset):
+        if self.__ifPlatformCurrency(self._code):
+            formattedValue = self.formatValue()
+            if self._name is not None and formattedValue is not None:
+                text = makeHtmlString(('html_templates:lobby/quests/{}').format(styleSubset), self.__TEMPLATE_NAME, {'value': formattedValue, 'iconName': self._code})
+                if text != self.__TEMPLATE_NAME:
+                    return text
+            return formattedValue
+        super(CurrenciesBonus, self)._format(styleSubset)
+        return
+
+    def __ifPlatformCurrency(self, currencyCode):
+        return currencyCode not in Currency.ALL + (CURRENCIES_CONSTANTS.FREE_XP,)
 
 
 class FreeXpBonus(IntegralBonus):
@@ -702,25 +717,6 @@ class BattleTokensBonus(TokensBonus):
     def _getUserName(self, styleID):
         webCache = self.eventsCache.prefetcher
         return i18n.makeString(webCache.getTokenInfo(styleID))
-
-
-class HBCouponTokenBonus(BattleTokensBonus):
-
-    def __init__(self, name, value, isCompensation=False, ctx=None):
-        super(HBCouponTokenBonus, self).__init__(name, value, isCompensation, ctx)
-        self._name = 'HBCoupon'
-
-    def formatValue(self):
-        result = []
-        awardTemplate = R.strings.hb_tooltips.quest.award
-        for tokenID, tokenData in self._value.iteritems():
-            userName = backport.text(awardTemplate(), bonusName=tokenID.split('_')[(-1)], count=tokenData['count'])
-            result.append(userName)
-
-        if result:
-            return (', ').join(result)
-        else:
-            return
 
 
 class BattlePassTokensBonus(TokensBonus):
@@ -1494,6 +1490,8 @@ def tokensFactory(name, value, isCompensation=False, ctx=None):
             result.append(ResourceBonus(name, {tID: tValue}, RESOURCE_TOKEN_PREFIX, isCompensation, ctx))
         elif tID.startswith(CUSTOMIZATION_PROGRESS_PREFIX):
             result.append(C11nProgressTokenBonus({tID: tValue}, isCompensation, ctx))
+        elif tID.startswith(COMP7_CUSTOMIZATION_PROGRESS_PREFIX):
+            result.append(C11nProgressTokenBonus({replaceComp7tokenID(tID, CUSTOMIZATION_PROGRESS_PREFIX): tValue}, isCompensation, ctx))
         elif tID.startswith(COMP7_TOKEN_WEEKLY_REWARD_ID):
             result.append(Comp7TokenWeeklyRewardBonus(name, {tID: tValue}, isCompensation, ctx))
         elif tID.startswith(COMP7_TOKEN_COUPON_REWARD_ID):
@@ -1502,10 +1500,16 @@ def tokensFactory(name, value, isCompensation=False, ctx=None):
             result.append(CollectionTokenBonus(COLLECTION_ITEM_BONUS_NAME, {tID: tValue}, isCompensation, ctx))
         elif tID.startswith(VERSUS_AI_PROGRESSION_TOKEN_PREFIX):
             result.append(VersusAIProgressionsTokenBonus(name, {tID: tValue}, isCompensation, ctx))
-        elif tID.startswith(FRONT_COUPON_TOKEN_PREFIX):
-            result.append(HBCouponTokenBonus(name, {tID: tValue}, isCompensation, ctx))
         else:
             result.append(BattleTokensBonus(name, {tID: tValue}, isCompensation, ctx))
+
+    return result
+
+
+def currenciesFactory(name, value, isCompensation=False, ctx=None):
+    result = []
+    for tID, tValue in value.iteritems():
+        result.append(CurrenciesBonus(name, {tID: tValue}))
 
     return result
 
@@ -3301,7 +3305,7 @@ _BONUSES = {Currency.CREDITS: CreditsBonus,
    'dogTagComponents': DogTagComponentBonus, 
    'selectableCrewbook': UniversalCrewbook, 
    'randomCrewbook': UniversalCrewbook, 
-   'currencies': CurrenciesBonus, 
+   'currencies': {'default': currenciesFactory}, 
    'subscriptionBonus': subscriptionBonusFactory, 
    'paragonsUnlocks': ParagonsUnlocksBonus, 
    'vehicleSelector': SimpleBonus}
@@ -3454,6 +3458,8 @@ def getMergeBonusFunction(lhv, rhv):
     if hasOneBaseClass(lhv, rhv, ItemsBonus):
         return mergeItemsBonuses
     else:
+        if hasOneBaseClass(lhv, rhv, CurrenciesBonus):
+            return mergeCurrenciesBonus
         if hasOneBaseClass(lhv, rhv, IntegralBonus) or hasOneBaseClass(lhv, rhv, GoldBonus):
             return mergeIntegralBonuses
         if hasOneBaseClass(lhv, rhv, CustomizationsBonus):
@@ -3501,6 +3507,16 @@ def mergeCustomizationBonuses(lhv, rhv):
         merged.setValue(mergedValue)
 
     return (merged, True)
+
+
+def mergeCurrenciesBonus(lhv, rhv):
+    merged = copy.deepcopy(lhv)
+    mergedValue = merged.getValue()
+    needPop = False
+    if merged.getCode() == rhv.getCode():
+        merged.setValue(mergedValue + rhv.getValue())
+        needPop = True
+    return (merged, needPop)
 
 
 def mergeSimpleBonuses(lhv, rhv):

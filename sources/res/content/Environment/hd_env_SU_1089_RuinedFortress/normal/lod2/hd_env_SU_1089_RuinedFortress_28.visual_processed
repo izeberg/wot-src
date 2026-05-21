@@ -8,55 +8,28 @@
 			<row2>0.000000 0.000000 1.000000</row2>
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
-		<node>
-			<identifier>hd_env_SU_1089_RuinedFortress_28</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-			<node>
-				<identifier>lod2</identifier>
-				<transform>
-					<row0>1.000000 0.000000 0.000000</row0>
-					<row1>0.000000 1.000000 0.000000</row1>
-					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 0.000000 0.000000</row3>
-				</transform>
-				<node>
-					<identifier>s1</identifier>
-					<transform>
-						<row0>1.000000 0.000000 0.000000</row0>
-						<row1>0.000000 1.000000 0.000000</row1>
-						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>0.000000 0.000000 0.000000</row3>
-					</transform>
-				</node>
-			</node>
-		</node>
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<stream>uv2</stream>
-			<primitive>indices</primitive>
+			<vertices>s0Shape.vertices</vertices>
+			<stream>s0Shape.uv2</stream>
+			<primitive>s0Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
 					<identifier>s_nd1</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
-					<materialKind>111</materialKind>
 					<collisionFlags>255</collisionFlags>
+					<materialKind>111</materialKind>
 					<property>
 						albedoHeightTile0
 						<Texture>content/Buildings/00_Tiles/dds/Soil_01_Damaged_512_AM.dds</Texture>
 					</property>
 					<property>
 						albedoHeightTile1
-						<Texture>content/Buildings/00_Tiles/dds/Stone_Wall_AM.dds</Texture>
+						<Texture>content/Buildings/00_Tiles/dds/Stone_Wall_05_AM.dds</Texture>
 					</property>
 					<property>
 						albedoHeightTile2
@@ -68,7 +41,7 @@
 					</property>
 					<property>
 						colorTex
-						<Texture>content/Environment/hd_env_SU_1089_RuinedFortress/hd_env_SU_1089_RuinedFortress_04_GCM.dds</Texture>
+						<Texture>content/Environment/hd_env_SU_1089_RuinedFortress/hd_env_SU_1089_RuinedFortress_03_GCM.dds</Texture>
 					</property>
 					<property>
 						dirtMap
@@ -80,7 +53,7 @@
 					</property>
 					<property>
 						g_dirtColorParams
-						<Vector4>0.100000 0.500000 1.000000 1.000000</Vector4>
+						<Vector4>0.100000 0.500000 0.420000 1.000000</Vector4>
 					</property>
 					<property>
 						g_enableTerrainBlending
@@ -88,7 +61,7 @@
 					</property>
 					<property>
 						g_fakeShadowsAndDetailParams
-						<Vector4>0.500000 0.500000 1.000000 0.003700</Vector4>
+						<Vector4>0.500000 0.500000 1.000000 0.005800</Vector4>
 					</property>
 					<property>
 						g_tile0Tint
@@ -96,7 +69,7 @@
 					</property>
 					<property>
 						g_tile1Tint
-						<Vector4>0.901961 0.858824 0.811765 1.000000</Vector4>
+						<Vector4>0.800000 0.768627 0.717647 1.000000</Vector4>
 					</property>
 					<property>
 						g_tile2Tint
@@ -108,7 +81,7 @@
 					</property>
 					<property>
 						metallicAOTile1
-						<Texture>content/Buildings/00_Tiles/dds/Stone_Wall_MAO.dds</Texture>
+						<Texture>content/Buildings/00_Tiles/dds/Stone_Wall_05_MAO.dds</Texture>
 					</property>
 					<property>
 						metallicAOTile2
@@ -120,29 +93,29 @@
 					</property>
 					<property>
 						normalGlossSpecTile1
-						<Texture>content/Buildings/00_Tiles/dds/Stone_Wall_GBMT.dds</Texture>
+						<Texture>content/Buildings/00_Tiles/dds/Stone_Wall_05_GBMT.dds</Texture>
 					</property>
 					<property>
 						normalGlossSpecTile2
 						<Texture>content/Buildings/00_Tiles/dds/Crash_03_512_GBMT.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.005863 3.819321 -0.017832</groupOrigin>
+				<groupOrigin>0.007409 3.818908 -0.016366</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				1
 				<material>
 					<identifier>s_nd0</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
-					<materialKind>111</materialKind>
 					<collisionFlags>0</collisionFlags>
+					<materialKind>111</materialKind>
 					<property>
 						albedoHeightTile0
 						<Texture>content/Buildings/00_Tiles/dds/Stone_Wall_AM.dds</Texture>
 					</property>
 					<property>
 						albedoHeightTile1
-						<Texture>content/Buildings/00_Tiles/dds/Stone_Wall_05_01_AM.dds</Texture>
+						<Texture>content/Buildings/00_Tiles/dds/Stone_Wall_05_AM.dds</Texture>
 					</property>
 					<property>
 						albedoHeightTile2
@@ -154,7 +127,7 @@
 					</property>
 					<property>
 						colorTex
-						<Texture>content/Environment/hd_env_SU_1089_RuinedFortress/hd_env_SU_1089_RuinedFortress_04_GCM.dds</Texture>
+						<Texture>content/Environment/hd_env_SU_1089_RuinedFortress/hd_env_SU_1089_RuinedFortress_03_GCM.dds</Texture>
 					</property>
 					<property>
 						dirtMap
@@ -166,7 +139,7 @@
 					</property>
 					<property>
 						g_dirtColorParams
-						<Vector4>0.350000 1.000000 1.000000 1.000000</Vector4>
+						<Vector4>0.350000 1.000000 0.420000 1.000000</Vector4>
 					</property>
 					<property>
 						g_enableTerrainBlending
@@ -175,6 +148,10 @@
 					<property>
 						g_fakeShadowsAndDetailParams
 						<Vector4>0.500000 0.500000 1.000000 0.005800</Vector4>
+					</property>
+					<property>
+						g_tile0Tint
+						<Vector4>1.000000 0.956863 0.901961 1.000000</Vector4>
 					</property>
 					<property>
 						g_tile1Tint
@@ -186,7 +163,7 @@
 					</property>
 					<property>
 						metallicAOTile1
-						<Texture>content/Buildings/00_Tiles/dds/Stone_Wall_03_MAO.dds</Texture>
+						<Texture>content/Buildings/00_Tiles/dds/Stone_Wall_05_MAO.dds</Texture>
 					</property>
 					<property>
 						metallicAOTile2
@@ -198,26 +175,22 @@
 					</property>
 					<property>
 						normalGlossSpecTile1
-						<Texture>content/Buildings/00_Tiles/dds/Stone_Wall_03_GBMT.dds</Texture>
+						<Texture>content/Buildings/00_Tiles/dds/Stone_Wall_05_GBMT.dds</Texture>
 					</property>
 					<property>
 						normalGlossSpecTile2
 						<Texture>content/Buildings/00_Tiles/dds/Stone_Wall_04_GBMT.dds</Texture>
 					</property>
-					<property>
-						g_tile0Tint
-						<Vector4>1.000000 0.956863 0.901961 1.000000</Vector4>
-					</property>
 				</material>
-				<groupOrigin>-0.035255 3.799200 -0.010057</groupOrigin>
+				<groupOrigin>0.058152 3.783792 -0.012467</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-6.373730 -1.245335 -0.571665</min>
-		<max>6.392878 8.883978 0.551551</max>
+		<min>-6.474403 -1.245335 -0.760656</min>
+		<max>6.392878 8.911320 0.732466</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>54910</geometrySize>
-	<minUVDensity>0.020968</minUVDensity>
+	<geometrySize>47100</geometrySize>
+	<minUVDensity>0.023508</minUVDensity>
 </root>

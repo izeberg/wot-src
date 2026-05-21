@@ -1,4 +1,8 @@
-REWARD_VIDEO_CONFIG = {'tanks_birthday_2025': {'vehicles': {'hasFooter': True, 
+REWARD_VIDEO_CONFIG = {'common': {'vehicles': {'hasFooter': True, 
+                           'videos': [
+                                    {'videoResName': None, 
+                                       'duration': 20}]}}, 
+   'tanks_birthday_2025': {'vehicles': {'hasFooter': True, 
                                         'videos': [
                                                  {'videoResName': 'intro', 
                                                     'duration': 16},

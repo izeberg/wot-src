@@ -382,6 +382,13 @@
 		</rule>
 		<rule>
 			<allowSplit>true</allowSplit>
+			<mipShifts>
+				<max>0</max>
+				<high>0</high>
+				<medium>-1</medium>
+				<low>0</low>
+				<min>-1</min>
+			</mipShifts>
 			<category>tanks</category>
 			<pattern>.*</pattern>
 		</rule>
@@ -406,7 +413,7 @@
 			<directory>
 				<path>Camouflage</path>
 				<rule>
-					<lodMode>0</lodMode>
+					<lodMode>3</lodMode>
 					<allowSplit>false</allowSplit>
 					<pattern>.*</pattern>
 				</rule>
@@ -417,7 +424,7 @@
 			<directory>
 				<path>Camouflage</path>
 				<rule>
-					<lodMode>0</lodMode>
+					<lodMode>3</lodMode>
 					<allowSplit>false</allowSplit>
 					<pattern>.*</pattern>
 				</rule>
@@ -428,7 +435,7 @@
 			<directory>
 				<path>Camouflage</path>
 				<rule>
-					<lodMode>0</lodMode>
+					<lodMode>3</lodMode>
 					<allowSplit>false</allowSplit>
 					<pattern>.*</pattern>
 				</rule>
@@ -439,7 +446,7 @@
 			<directory>
 				<path>Camouflage</path>
 				<rule>
-					<lodMode>0</lodMode>
+					<lodMode>3</lodMode>
 					<allowSplit>false</allowSplit>
 					<pattern>.*</pattern>
 				</rule>
@@ -450,7 +457,7 @@
 			<directory>
 				<path>Camouflage</path>
 				<rule>
-					<lodMode>0</lodMode>
+					<lodMode>3</lodMode>
 					<allowSplit>false</allowSplit>
 					<pattern>.*</pattern>
 				</rule>
@@ -461,7 +468,29 @@
 			<directory>
 				<path>Camouflage</path>
 				<rule>
-					<lodMode>0</lodMode>
+					<lodMode>3</lodMode>
+					<allowSplit>false</allowSplit>
+					<pattern>.*</pattern>
+				</rule>
+			</directory>
+		</directory>
+		<directory>
+			<path>intunion</path>
+			<directory>
+				<path>Camouflage</path>
+				<rule>
+					<lodMode>3</lodMode>
+					<allowSplit>false</allowSplit>
+					<pattern>.*</pattern>
+				</rule>
+			</directory>
+		</directory>
+		<directory>
+			<path>italy</path>
+			<directory>
+				<path>Camouflage</path>
+				<rule>
+					<lodMode>3</lodMode>
 					<allowSplit>false</allowSplit>
 					<pattern>.*</pattern>
 				</rule>
@@ -472,7 +501,7 @@
 			<directory>
 				<path>Camouflage</path>
 				<rule>
-					<lodMode>0</lodMode>
+					<lodMode>3</lodMode>
 					<allowSplit>false</allowSplit>
 					<pattern>.*</pattern>
 				</rule>
@@ -483,7 +512,8 @@
 			<directory>
 				<path>Camouflage</path>
 				<rule>
-					<lodMode>0</lodMode>
+					<lodMode>3</lodMode>
+					<allowSplit>false</allowSplit>
 					<pattern>.*</pattern>
 				</rule>
 			</directory>
@@ -493,7 +523,7 @@
 			<directory>
 				<path>Camouflage</path>
 				<rule>
-					<lodMode>0</lodMode>
+					<lodMode>3</lodMode>
 					<allowSplit>false</allowSplit>
 					<pattern>.*</pattern>
 				</rule>
@@ -501,7 +531,7 @@
 			<directory>
 				<path>Tank_detail</path>
 				<rule>
-					<lodMode>0</lodMode>
+					<lodMode>3</lodMode>
 					<allowSplit>false</allowSplit>
 					<pattern>.*</pattern>
 				</rule>
@@ -512,7 +542,7 @@
 			<directory>
 				<path>Camouflage</path>
 				<rule>
-					<lodMode>0</lodMode>
+					<lodMode>3</lodMode>
 					<allowSplit>false</allowSplit>
 					<pattern>.*</pattern>
 				</rule>

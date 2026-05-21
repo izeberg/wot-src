@@ -1572,7 +1572,7 @@ class EquipmentsController(MethodsRules, IBattleController):
             result, error = False, None
             item = self.getEquipment(intCD)
             if item:
-                result, error = self._doChangeSetting(item, entityName, avatar)
+                result, error = self.__doChangeSetting(item, entityName, avatar)
             return (result, error)
 
     def changeSettingByTag(self, tag, entityName=None, avatar=None):
@@ -1582,7 +1582,7 @@ class EquipmentsController(MethodsRules, IBattleController):
             result, error = False, None
             filteredItems = [ item for item in self._equipments.itervalues() if tag in item.getTags() ]
             for item in filteredItems:
-                result, error = self._doChangeSetting(item, entityName, avatar)
+                result, error = self.__doChangeSetting(item, entityName, avatar)
                 if result:
                     return (True, error)
 
@@ -1601,7 +1601,7 @@ class EquipmentsController(MethodsRules, IBattleController):
         self.__preferredPosition = None
         return value
 
-    def _doChangeSetting(self, item, entityName=None, avatar=None):
+    def __doChangeSetting(self, item, entityName=None, avatar=None):
         result, error = item.canActivate(entityName, avatar)
         if result and avatar_getter.isPlayerOnArena(avatar):
             if item.getStage() == EQUIPMENT_STAGES.PREPARING:

@@ -9,12 +9,12 @@
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
 	</node>
+	<customBsp>true</customBsp>
 	<renderSet>
-		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<primitive>indices</primitive>
+			<vertices>s_nd0.vertices</vertices>
+			<primitive>s_nd0.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -40,10 +40,9 @@
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-2.344059 -0.118402 -1.973010</min>
-		<max>2.342977 0.716335 1.970852</max>
+		<min>-2.327392 -0.118402 -1.963235</min>
+		<max>2.328820 0.716335 1.951890</max>
 	</boundingBox>
-	<customBsp>true</customBsp>
-	<geometrySize>25940</geometrySize>
+	<geometrySize>26612</geometrySize>
 	<minUVDensity>0.007534</minUVDensity>
 </root>

@@ -1,5 +1,6 @@
 from gui.marathon.marathon_event_controller import getMarathons
 from gui.server_events import events_dispatcher as server_events
+from gui.server_events.events_dispatcher import showMissionsTemporary
 from gui.shared.event_dispatcher import showBattlePassBuyLevelWindow, showBattlePassBuyWindow, showShop
 from helpers import dependency
 from personal_missions import PM_BRANCH
@@ -77,6 +78,10 @@ class MissionsWebApiMixin(object):
         currentChapterID = battlePass.getCurrentChapterID()
         if battlePass.hasActiveChapter() and battlePass.isBought(chapterID=currentChapterID):
             showBattlePassBuyLevelWindow(ctx={'chapterID': currentChapterID, 'backCallback': showShop})
+
+    @w2c(W2CSchema, 'temporarymissions:')
+    def openTemporaryMissionsView(self, _):
+        showMissionsTemporary()
 
 
 class PersonalMissionsWebApiMixin(object):

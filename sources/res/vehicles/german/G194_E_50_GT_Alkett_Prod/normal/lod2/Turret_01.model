@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>vehicles/german/G194_E_50_GT_Alkett_Prod/normal/lod2/Turret_01</nodefullVisual>
 	<parent>vehicles/german/G194_E_50_GT_Alkett_Prod/normal/lod3/Turret_01</parent>
 	<tank>true</tank>
 	<extent>
@@ -11,4 +10,5 @@
 		<min>-1.335811 -0.026523 -1.939715</min>
 		<max>1.335811 1.157092 1.613964</max>
 	</visibilityBox>
+	<nodefullVisual>vehicles/german/G194_E_50_GT_Alkett_Prod/normal/lod2/Turret_01</nodefullVisual>
 </root>

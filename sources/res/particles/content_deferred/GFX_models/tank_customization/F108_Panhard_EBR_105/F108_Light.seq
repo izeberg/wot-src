@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>499.333374</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Light</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/tank_customization/F108_Panhard_EBR_105/F108_Light.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd0</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.658824 0.223529 0.101961 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 6.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 6.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.166667</startTime>
+				<value>0.658824 0.223529 0.101961 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 3.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 3.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>499.333374</startTime>
+				<value>0.658824 0.223529 0.101961 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd1</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 0.341176 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 13.508798</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 13.508798</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.166667</startTime>
+				<value>1.000000 0.341176 0.000000 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 0.014202</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 0.014202</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd2</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 0.341176 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 15.926221</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 15.926221</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.166667</startTime>
+				<value>1.000000 0.341176 0.000000 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 0.014691</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 0.014691</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

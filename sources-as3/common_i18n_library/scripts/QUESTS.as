@@ -2177,6 +2177,8 @@ package
       
       public static const MISSIONS_TAB_CATEGORY_HEADER_PERFORMEDTASKS:String = "#quests:missions/tab/category/header/performedTasks";
       
+      public static const MISSIONS_TAB_LABEL_TEMP:String = "#quests:missions/tab/label/temp";
+      
       public static const MISSIONS_FILTER_POPOVER_TITLE:String = "#quests:missions/filter/popover/title";
       
       public static const MISSIONS_FILTER_POPOVER_HIDEUNAVAILABLE:String = "#quests:missions/filter/popover/hideUnavailable";
@@ -2590,6 +2592,10 @@ package
       public static const BONUSNAME_DAILY_QUESTS_REWARDS:String = "#quests:bonusName/daily_quests_rewards";
       
       public static const BONUSNAME_CLAN_SEASON_PROGRESS:String = "#quests:bonusName/clan_season_progress";
+      
+      public static const BONUSNAME_BUMBLEBEE_COIN:String = "#quests:bonusName/bumblebee_coin";
+      
+      public static const BONUSNAME_HONEY_COIN:String = "#quests:bonusName/honey_coin";
       
       public static const ACTION_AUTO_CALENDAR:String = "#quests:action/auto/calendar";
       
@@ -3554,6 +3560,20 @@ package
       public static const DEBUTBOXES_MISSIONS_HEADER_DISABLED:String = "#quests:debutBoxes/missions/header/disabled";
       
       public static const DEBUTBOXES_MISSIONS_HEADER_INFO:String = "#quests:debutBoxes/missions/header/info";
+      
+      public static const SUMMERSALE_MISSIONS_HEADER_CAPTION1:String = "#quests:summerSale/missions/header/caption1";
+      
+      public static const SUMMERSALE_MISSIONS_HEADER_CAPTION2:String = "#quests:summerSale/missions/header/caption2";
+      
+      public static const SUMMERSALE_MISSIONS_HEADER_CAPTION3:String = "#quests:summerSale/missions/header/caption3";
+      
+      public static const SUMMERSALE_MISSIONS_HEADER_DISABLED:String = "#quests:summerSale/missions/header/disabled";
+      
+      public static const SUMMERSALE_MISSIONS_HEADER_INFO:String = "#quests:summerSale/missions/header/info";
+      
+      public static const SUMMERSALE_MISSIONS_HEADER_BUTTON_GOTOSHOP:String = "#quests:summerSale/missions/header/button/gotoShop";
+      
+      public static const SUMMERSALE_MISSIONS_HEADER_BUTTON_GOTOEVENT:String = "#quests:summerSale/missions/header/button/gotoEvent";
       
       public static const WEEKLYQUEST_REWARDSCREEN_HEADER:String = "#quests:weeklyQuest/rewardScreen/header";
       

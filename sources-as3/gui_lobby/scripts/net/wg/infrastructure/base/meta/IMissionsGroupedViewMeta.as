@@ -12,6 +12,10 @@ package net.wg.infrastructure.base.meta
       
       function onClickButtonDetailsS() : void;
       
-      function onClickInfoBtnS() : void;
+      function onClickInfoBtnS(param1:String) : void;
+      
+      function onClickOpenShopBtnS(param1:String) : void;
+      
+      function onClickOpenEventBtnS(param1:String) : void;
    }
 }

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>vehicles/german/G194_E_50_GT_Alkett_Prod/normal/lod3/Gun_01</nodefullVisual>
 	<parent>vehicles/german/G194_E_50_GT_Alkett_Prod/normal/lod4/Gun_01</parent>
 	<tank>true</tank>
 	<extent>192.000000</extent>
@@ -8,4 +7,5 @@
 		<min>-0.429107 -0.283159 0.070492</min>
 		<max>0.419356 0.344368 4.878604</max>
 	</visibilityBox>
+	<nodefullVisual>vehicles/german/G194_E_50_GT_Alkett_Prod/normal/lod3/Gun_01</nodefullVisual>
 </root>

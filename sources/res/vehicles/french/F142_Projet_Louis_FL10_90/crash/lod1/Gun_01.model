@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/french/F142_Projet_Louis_FL10_90/crash/lod2/Gun_01</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<nodelessVisual>vehicles/french/F142_Projet_Louis_FL10_90/crash/lod1/Gun_01</nodelessVisual>
+	<visibilityBox>
+		<min>-0.839755 -0.558774 -1.832685</min>
+		<max>0.808413 1.257646 4.227573</max>
+	</visibilityBox>
+</root>

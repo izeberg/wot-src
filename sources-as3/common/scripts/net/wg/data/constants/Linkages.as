@@ -305,16 +305,6 @@ package net.wg.data.constants
       
       public static const EVENT_EQUIPMENT_BUTTON:String = "EventEquipmentButtonUI";
       
-      public static const HB_EQUIPMENT_BUTTON:String = "HBEquipmentButtonUI";
-      
-      public static const HB_ABILITY_BUTTON:String = "HBAbilityButtonUI";
-      
-      public static const HB_ROLE_ABILITY_BUTTON:String = "HBRoleAbilityButtonUI";
-      
-      public static const HB_PASSIVE_ABILITY:String = "HBPassiveAbilityUI";
-      
-      public static const HB_SHELL_BUTTON_BATTLE:String = "HBShellButtonBattleUI";
-      
       public static const OPTIONAL_DEVICE_BUTTON:String = "OptionalDeviceButtonUI";
       
       public static const VEHICLE_SEASON_AWARD:String = "VehicleSeasonAwardUI";
@@ -398,8 +388,6 @@ package net.wg.data.constants
       public static const HANGAR_MINI_CLIENT_COMPONENT:String = "HangarMiniClientComponentUI";
       
       public static const TECH_TREE_MINI_CLIENT_COMPONENT:String = "TechTreeMiniClientComponentUI";
-      
-      public static const PAGINATION_INDICATOR_BUTTON:String = "PaginationIndicatorButtonUI";
       
       public static const BATTLE_LOADING_BG_SHADOW:String = "BackgroundShadow";
       
@@ -544,8 +532,6 @@ package net.wg.data.constants
       public static const YOH_CHASSIS_MODE_ANIMATION_UI:String = "YohChassisModeAnimationUI";
       
       public static const POSTMORTEN_PANEL:String = "PostmortemPanelUI";
-      
-      public static const HBPOSTMORTEN_PANEL:String = "HBPostmortemPanelUI";
       
       public static const ROLE_DESCRIPTION:String = "RoleDescriptionUI";
       
@@ -737,8 +723,6 @@ package net.wg.data.constants
       
       public static const HBC_SQUAD_UI:String = "HBC_Squad_UI";
       
-      public static const HBC_HBSQUAD_UI:String = "HBC_HBSquad_UI";
-      
       public static const HBC_PERSONAL_RESERVES_UI:String = "HBC_Personal_Reserves_UI";
       
       public static const HBC_BATTLE_SELECTOR_UI:String = "HBC_BattleSelector_UI";
@@ -780,6 +764,8 @@ package net.wg.data.constants
       public static const OVERHEAT_WIDGET:String = "OverheatWidgetUI";
       
       public static const COOLANT_ABILITY_INDICATOR:String = "CoolantAbilityIndicatorUI";
+      
+      public static const GUN_COOLING_INDICATOR:String = "GunCoolingIndicatorUI";
       
       public static const EQUIPMENT_OVERLAY:String = "ListOverlayUI";
       
@@ -864,8 +850,6 @@ package net.wg.data.constants
       public static const FOUR_FREE_SHEETS_OBTAINED_POPUP_UI:String = "FourFreeSheetsObtainedPopupUI";
       
       public static const LOBBY_VEH_MARKER:String = "VehicleMarkersUI";
-      
-      public static const LOBBY_HB_VEH_MARKER:String = "HBVehicleMarkersUI";
       
       public static const PLATOON_VEH_MARKER:String = "PlatoonMarkerUI";
       

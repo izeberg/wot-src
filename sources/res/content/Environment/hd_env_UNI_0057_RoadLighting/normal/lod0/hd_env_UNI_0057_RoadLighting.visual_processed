@@ -192,6 +192,10 @@
 						srcBlend
 						<Int>2</Int>
 					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_Kaliningrad_01_AM.dds</Texture>
+					</property>
 				</material>
 				<groupOrigin>0.000000 9.372185 -3.524781</groupOrigin>
 			</primitiveGroup>

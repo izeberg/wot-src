@@ -1,6 +1,8 @@
 import logging
 from collections import namedtuple
-import BigWorld, CGF, resource_helper, typing
+import BigWorld
+from PrefabsLoading import PrefabDataLoader, PrefabDataListLoader
+import resource_helper, typing
 from constants import ARENA_GUI_TYPE
 from items.components.component_constants import ZERO_FLOAT
 from gui.shared.system_factory import registerDynObjCache, collectDynObjCache
@@ -8,6 +10,8 @@ from gui.shared.utils.graphics import isRendererPipelineDeferred
 from shared_utils import first
 from skeletons.dynamic_objects_cache import IBattleDynamicObjectsCache
 from vehicle_systems.stricted_loading import makeCallbackWeak
+if typing.TYPE_CHECKING:
+    from PrefabsLoading import PrefabData
 _CONFIG_PATH = 'scripts/dynamic_objects.xml'
 _logger = logging.getLogger(__name__)
 _ScenariosEffect = namedtuple('_ScenariosEffect', ('path', 'rate', 'offset', 'scaleRatio'))
@@ -262,7 +266,7 @@ class _EpicBattleDynObjects(_CommonForBattleRoyaleAndEpicBattleDynObjects):
     def __init__(self):
         super(_EpicBattleDynObjects, self).__init__()
         self.__minesEffects = None
-        self.__supplyPrefabs = set()
+        self.__supplyPrefabs = {}
         return
 
     def init(self, dataSection):
@@ -272,9 +276,7 @@ class _EpicBattleDynObjects(_CommonForBattleRoyaleAndEpicBattleDynObjects):
             super(_EpicBattleDynObjects, self).init(dataSection)
 
     def clear(self):
-        if self.__supplyPrefabs:
-            CGF.clearGameObjectsCache(list(self.__supplyPrefabs))
-            self.__supplyPrefabs.clear()
+        self.__supplyPrefabs = {}
         self._initialized = False
         super(_EpicBattleDynObjects, self).clear()
 
@@ -285,11 +287,16 @@ class _EpicBattleDynObjects(_CommonForBattleRoyaleAndEpicBattleDynObjects):
     def getMinesEffect(self):
         return self.__minesEffects
 
-    def __cachePrefabs(self, dataSection):
-        for prefab in dataSection['epicPrefabs'].values():
-            self.__supplyPrefabs.add(prefab.asString)
+    def __onSupplyPrefabsLoaded(self, resourceRefs):
+        self.__supplyPrefabs = resourceRefs['SupplyPrefabs']
 
-        CGF.cacheGameObjects(list(self.__supplyPrefabs), False)
+    def __cachePrefabs(self, dataSection):
+        prefabsPaths = set()
+        for prefab in dataSection['epicPrefabs'].values():
+            prefabsPaths.add(prefab.asString)
+
+        prefabsLoader = PrefabDataListLoader('SupplyPrefabs', list(prefabsPaths))
+        BigWorld.loadResourceListBG((prefabsLoader,), makeCallbackWeak(self.__onSupplyPrefabsLoaded))
 
 
 class _BattleRoyaleDynObjects(_CommonForBattleRoyaleAndEpicBattleDynObjects):
@@ -324,11 +331,11 @@ class _BattleRoyaleDynObjects(_CommonForBattleRoyaleAndEpicBattleDynObjects):
             self.__minesEffects = _MinesEffects(plantEffect=_MinesPlantEffect(dataSection), idleEffect=_MinesIdleEffect(dataSection), destroyEffect=_MinesDestroyEffect(dataSection), placeMinesEffect='minesDecalEffect', blowUpEffectName='minesBlowUpEffect', activationEffect=None)
             self.__berserkerEffects = _BerserkerEffects(turretEffect=_BerserkerTurretEffect(dataSection), hullEffect=_BerserkerHullEffect(dataSection), transformPath=dataSection.readString('berserkerTransformPath'))
             self.__vehicleRespawnEffect = _VehicleRespawnEffect(dataSection)
-            CGF.cacheGameObjects([self.__vehicleRespawnEffect.effectPrefabPath], False)
             prerequisites = set()
             self.__dropPlane = _createDropPlane(dataSection['dropPlane'], prerequisites)
             self.__airDrop = _createAirDrop(dataSection['airDrop'], prerequisites)
             self.__loots = _createLoots(dataSection, dataSection['lootTypes'], prerequisites)
+            prerequisites.add(PrefabDataLoader(self.__vehicleRespawnEffect.effectPrefabPath))
             BigWorld.loadResourceListBG(list(prerequisites), makeCallbackWeak(self.__onResourcesLoaded))
             super(_BattleRoyaleDynObjects, self).init(dataSection)
         return
@@ -373,14 +380,16 @@ class _BattleRoyaleDynObjects(_CommonForBattleRoyaleAndEpicBattleDynObjects):
         return self.__vehicleRespawnEffect
 
     def clear(self):
-        pass
+        self.__resourcesCache = None
+        self._initialized = False
+        return
 
     def destroy(self):
+        self.clear()
         self.__vehicleUpgradeEffect = None
         self.__kamikazeActivatedEffect = None
         self.__trapPoint = None
         self.__repairPoint = None
-        self.__resourcesCache = None
         self.__minesEffects = None
         return
 
@@ -400,7 +409,7 @@ class _Comp7DynObjects(DynObjectsBase):
     def __init__(self):
         super(_Comp7DynObjects, self).__init__()
         self.__prefabPaths = {}
-        self.__cachedPrefabs = set()
+        self.__cachedPrefabs = {}
         self.__spawnPointConfig = None
         self.__pointsOfInterestConfig = None
         self.__minesEffects = None
@@ -415,17 +424,17 @@ class _Comp7DynObjects(DynObjectsBase):
 
             self.__spawnPointConfig = _SpawnPointsConfig.createFromXML(dataSection['spawnPointsConfig'])
             self.__pointsOfInterestConfig = _PointsOfInterestConfig.createFromXML(dataSection['pointOfInterest'])
-            self.__cachedPrefabs.update(set(self.__prefabPaths.values()))
-            self.__cachedPrefabs.update(set(self.__pointsOfInterestConfig.getPrefabs()))
-            CGF.cacheGameObjects(list(self.__cachedPrefabs), False)
+            allPrefabs = list()
+            allPrefabs.extend(self.__prefabPaths.values())
+            allPrefabs.extend(self.__pointsOfInterestConfig.getPrefabs())
+            prefabsLoader = PrefabDataListLoader('Comp7Prefabs', allPrefabs)
+            BigWorld.loadResourceListBG((prefabsLoader,), makeCallbackWeak(self.__onPrefabsLoaded))
             self.__minesEffects = _MinesEffects(plantEffect=_MinesPlantEffect(dataSection), idleEffect=_EpicMinesIdleEffect(dataSection), destroyEffect=_MinesDestroyEffect(dataSection), placeMinesEffect='minesDecalEffect', blowUpEffectName='minesBlowUpEffect', activationEffect=None)
             super(_Comp7DynObjects, self).init(dataSection)
             return
 
     def clear(self):
-        if self.__cachedPrefabs:
-            CGF.clearGameObjectsCache(list(self.__cachedPrefabs))
-            self.__cachedPrefabs.clear()
+        self.__cachedPrefabs = {}
         self.__spawnPointConfig = None
         self.__pointsOfInterestConfig = None
         self.__minesEffects = None
@@ -447,6 +456,9 @@ class _Comp7DynObjects(DynObjectsBase):
 
     def getMinesEffect(self):
         return self.__minesEffects
+
+    def __onPrefabsLoaded(self, resourceRefs):
+        self.__cachedPrefabs = resourceRefs['Comp7Prefabs']
 
     @staticmethod
     def __readPrefab(dataSection, key):

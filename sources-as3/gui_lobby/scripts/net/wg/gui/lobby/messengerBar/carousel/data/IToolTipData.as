@@ -11,5 +11,13 @@ package net.wg.gui.lobby.messengerBar.carousel.data
       function get label() : String;
       
       function set label(param1:String) : void;
+      
+      function get isWulfTooltip() : Boolean;
+      
+      function set isWulfTooltip(param1:Boolean) : void;
+      
+      function get tooltipArgs() : Array;
+      
+      function set tooltipArgs(param1:Array) : void;
    }
 }

@@ -23,8 +23,18 @@
 			<flags>0</flags>
 		</GameObject>
 		<GameObject>
-			<name>hd_h08_MTV1_Tank_Shadow</name>
-			<UUID>010353fd-0286-4074-8f70-adbb95176d72</UUID>
+			<name>hd_h08_MTV1_Tank_Shadow1</name>
+			<UUID>83bd3ed9-983f-4a88-981e-396b18622fe9</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>hd_h08_MTV1_Tank_Shadow2</name>
+			<UUID>d9ae77bd-73ae-4366-a2ca-daaab24989ba</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>hd_h08_MTV1_Tank_Shadow3</name>
+			<UUID>3a6271b3-71cd-4dea-a464-562275588cfa</UUID>
 			<flags>0</flags>
 		</GameObject>
 	</GameObjects>
@@ -64,6 +74,26 @@
 			</component>
 			<component>
 				<objectIndex>4</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>ff337bf0-494a-44d9-9da7-5721323ce3c1</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>5</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>ff337bf0-494a-44d9-9da7-5721323ce3c1</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>6</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -182,18 +212,69 @@
 					<property>
 						<name>Position</name>
 						<value>
-							31.7273 -3.53907 24.9147
+							41.0533 -3.56309 33.0408
 							<!--BW_String-->
 						</value>
 					</property>
 					<property>
 						<name>Scale</name>
-						<value>0.419481 0.708612 0.441748</value>
+						<value>0.363103 0.708612 0.401676</value>
 					</property>
 					<property>
 						<name>Rotation</name>
 						<value>
-							-0 -1.15768 0
+							-0 -1.5708 0
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>5</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							42.2143 -3.56307 31.3563
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>0.453508 0.708612 0.442823</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							-0 -1.5708 0
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>6</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							36.0313 -3.56549 60.8877
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>
+							1.04818 1.04818 1.04818
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							0 -2.26195 0
 							<!--BW_String-->
 						</value>
 					</property>
@@ -271,7 +352,45 @@
 					</property>
 					<property>
 						<name>Cast Shadows</name>
-						<value>1</value>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Parts</name>
+						<collection/>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>5</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Model name</name>
+						<isAsset>true</isAsset>
+						<value>content/Hangars/h08_mt_hangar/enviroment/normal/lod0/hd_h08_MTV1_Tank_Shadow.model</value>
+					</property>
+					<property>
+						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Parts</name>
+						<collection/>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>6</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Model name</name>
+						<isAsset>true</isAsset>
+						<value>content/Hangars/h08_mt_hangar/enviroment/normal/lod0/hd_h08_MTV1_Tank_Shadow.model</value>
+					</property>
+					<property>
+						<name>Cast Shadows</name>
+						<value>0</value>
 					</property>
 					<property>
 						<name>Parts</name>

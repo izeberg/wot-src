@@ -17055,21 +17055,21 @@
 						<!--BW_String-->
 					</gravity>
 					<maxDistance>720</maxDistance>
-					<piercingPower>232 220</piercingPower>
+					<piercingPower>258 238</piercingPower>
 				</_120mm_AP-T_XM66F>
-				<_120mm_APCR_XM66F>
+				<_120mm_HEAT-T_XM66F>
 					<defaultPortion>
 						0.0
 						<!--BW_String-->
 					</defaultPortion>
-					<speed>1240</speed>
+					<speed>980</speed>
 					<gravity>
 						9.81
 						<!--BW_String-->
 					</gravity>
 					<maxDistance>720</maxDistance>
-					<piercingPower>276 245</piercingPower>
-				</_120mm_APCR_XM66F>
+					<piercingPower>340 340</piercingPower>
+				</_120mm_HEAT-T_XM66F>
 				<_120mm_HE_XM66F>
 					<defaultPortion>
 						0.1

@@ -193,10 +193,15 @@ package net.wg.gui.battle.comp7.stats.fullStats.tableItem
          invalidate(FullStatsValidationType.RANK);
       }
       
-      public function setRole(param1:String) : void
+      public function setEquipmentName(param1:String) : void
       {
-         this._roleSkillLevel.setRole(param1);
+         this._roleSkillLevel.setEquipmentName(param1);
          this._roleSkillLevel.visible = StringUtils.isNotEmpty(param1);
+      }
+      
+      public function setEquipmentID(param1:uint) : void
+      {
+         this._roleSkillLevel.setEquipmentID(param1);
       }
       
       public function setSkillLevel(param1:uint) : void
@@ -246,7 +251,7 @@ package net.wg.gui.battle.comp7.stats.fullStats.tableItem
       
       private function onRoleSkillLevelRollOverHandler(param1:MouseEvent) : void
       {
-         this._tooltipMgr.showSpecial(TOOLTIPS_CONSTANTS.COMP7_ROLE_SKILL_BATTLE_TOOLTIP,null,this._roleSkillLevel.getRole());
+         this._tooltipMgr.showSpecial(TOOLTIPS_CONSTANTS.COMP7_ROLE_SKILL_BATTLE_TOOLTIP,null,this._roleSkillLevel.getEquipmentID());
       }
       
       private function onRoleSkillLevelRollOutHandler(param1:MouseEvent) : void

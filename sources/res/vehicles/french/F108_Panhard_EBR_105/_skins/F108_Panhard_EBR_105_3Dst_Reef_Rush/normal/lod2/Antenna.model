@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F108_Panhard_EBR_105/_skins/F108_Panhard_EBR_105_3Dst_Reef_Rush/normal/lod2/Antenna</nodefullVisual>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<parent>vehicles/french/F108_Panhard_EBR_105/_skins/F108_Panhard_EBR_105_3Dst_Reef_Rush/normal/lod3/Antenna</parent>
+	<visibilityBox>
+		<min>-0.535714 0.463733 -0.575480</min>
+		<max>0.535714 1.710312 -0.550364</max>
+	</visibilityBox>
+</root>

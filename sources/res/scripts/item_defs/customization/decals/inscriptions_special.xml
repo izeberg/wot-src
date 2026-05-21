@@ -4728,7 +4728,6 @@
 		<decal>
 			<id>31153</id>
 			<priceGroup>MT inscriptions 25g notInShop</priceGroup>
-			<type>inscription</type>
 			<texture>gui/maps/vehicles/decals/inscriptions/ussr/Pve_May_inscription_MK_2024_MT.dds</texture>
 			<userString>#vehicle_customization:Pve_May_inscription_MK_2024_MT/name</userString>
 			<description>#vehicle_customization:Pve_May_inscription_MK_2024_MT/description</description>
@@ -4736,7 +4735,6 @@
 		<decal>
 			<id>31154</id>
 			<priceGroup>MT inscriptions 25g notInShop</priceGroup>
-			<type>inscription</type>
 			<texture>gui/maps/vehicles/decals/inscriptions/ussr/Pve_May_inscription_DK_2024_MT.dds</texture>
 			<userString>#vehicle_customization:Pve_May_inscription_DK_2024_MT/name</userString>
 			<description>#vehicle_customization:Pve_May_inscription_DK_2024_MT/description</description>
@@ -5926,5 +5924,26 @@
 				<nations>ussr</nations>
 			</include>
 		</vehicleFilter>
+	</itemGroup>
+	<itemGroup>
+		<name>BP20_Inscription_143</name>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>MT inscriptions 25g notInShop</priceGroup>
+		<type>inscription</type>
+		<userString>#vehicle_customization:inscription/special</userString>
+		<decal>
+			<id>31469</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/BP20_03_Inscription_01_143.dds</texture>
+			<userString>#vehicle_customization:BP20_03_Inscription_01_143/name</userString>
+			<description>#vehicle_customization:BP20_03_Inscription_01_143/description</description>
+		</decal>
+		<decal>
+			<id>31470</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/BP20_03_Inscription_02_143.dds</texture>
+			<userString>#vehicle_customization:BP20_03_Inscription_02_143/name</userString>
+			<description>#vehicle_customization:BP20_03_Inscription_02_143/description</description>
+		</decal>
+		<tags>hiddenInUI</tags>
 	</itemGroup>
 </root>

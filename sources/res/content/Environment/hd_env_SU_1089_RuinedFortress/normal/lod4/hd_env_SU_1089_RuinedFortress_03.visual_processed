@@ -13,9 +13,9 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<stream>uv2</stream>
-			<primitive>indices</primitive>
+			<vertices>s0Shape.vertices</vertices>
+			<stream>s0Shape.uv2</stream>
+			<primitive>s0Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -41,7 +41,7 @@
 					</property>
 					<property>
 						colorTex
-						<Texture>content/Environment/hd_env_SU_1089_RuinedFortress/hd_env_SU_1089_RuinedFortress_03_GCM.dds</Texture>
+						<Texture>content/Environment/hd_env_SU_1089_RuinedFortress/hd_env_SU_1089_RuinedFortress_04_GCM.dds</Texture>
 					</property>
 					<property>
 						dirtMap
@@ -97,10 +97,10 @@
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-3.257690 -0.170448 -3.944396</min>
-		<max>2.544044 2.042448 3.569563</max>
+		<min>-3.257690 -0.197077 -3.902703</min>
+		<max>2.544044 2.045302 3.569563</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>5180</geometrySize>
+	<geometrySize>6448</geometrySize>
 	<minUVDensity>0.020870</minUVDensity>
 </root>

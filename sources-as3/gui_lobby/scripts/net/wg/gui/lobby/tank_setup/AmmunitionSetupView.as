@@ -227,6 +227,7 @@ package net.wg.gui.lobby.tank_setup
       {
          this.clearTween();
          this._appStage.dispatchEvent(new Event(HangarAmunitionSwitchAnimator.PLAY_ANIM_SHOW_HANGAR));
+         App.utils.focusHandler.setModalFocus(this);
          onCloseS();
       }
       

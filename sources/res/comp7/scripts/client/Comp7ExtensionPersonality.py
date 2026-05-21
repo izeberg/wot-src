@@ -1,8 +1,7 @@
-from comp7.gui.Scaleform import registerComp7Scaleform, registerComp7TooltipsBuilders
+from comp7.gui.Scaleform import registerComp7Scaleform
 
 def preInit():
     registerComp7Scaleform()
-    registerComp7TooltipsBuilders()
 
 
 def init():

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F108_Panhard_EBR_105/_skins/F108_Panhard_EBR_105_3Dst_Reef_Rush/normal/lod0/Hatch_Sleeve</nodefullVisual>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<parent>vehicles/french/F108_Panhard_EBR_105/_skins/F108_Panhard_EBR_105_3Dst_Reef_Rush/normal/lod1/Hatch_Sleeve</parent>
+	<visibilityBox>
+		<min>-0.945361 0.109889 0.227654</min>
+		<max>-0.747247 0.414719 0.439362</max>
+	</visibilityBox>
+</root>

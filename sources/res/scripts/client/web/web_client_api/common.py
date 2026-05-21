@@ -152,6 +152,8 @@ class ItemPackType(CONST_CONTAINER):
     OFFER_BATTLE_BOOSTER = 'offer/item/equipment'
     TMAN_TOKEN = 'tmanToken'
     ENTITLEMENTS = 'custom/entitlements'
+    CUSTOM_BUMBLEE_COIN = 'custom/bumblebee_coin'
+    CUSTOM_HONEY_COIN = 'custom/honey_coin'
 
 
 class ItemPackTypeGroup(CONST_CONTAINER):
@@ -206,7 +208,9 @@ class ItemPackTypeGroup(CONST_CONTAINER):
      ItemPackType.CUSTOM_EVENT_COIN_EXTERNAL,
      ItemPackType.CUSTOM_REFERRAL_CREW,
      ItemPackType.CUSTOM_SLOT,
-     ItemPackType.CUSTOM_SUPPLY_POINT)
+     ItemPackType.CUSTOM_SUPPLY_POINT,
+     ItemPackType.CUSTOM_BUMBLEE_COIN,
+     ItemPackType.CUSTOM_HONEY_COIN)
     CREW = (
      ItemPackType.CREW_50,
      ItemPackType.CREW_75,

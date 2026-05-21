@@ -823,7 +823,7 @@ package net.wg.gui.battle.views.battleMessenger
          }
       }
       
-      protected function setPanelElementsVisibility(param1:Boolean) : void
+      private function setPanelElementsVisibility(param1:Boolean) : void
       {
          this.hintBackground.visible = param1;
          this.tooltipSymbol.visible = param1;
@@ -1335,16 +1335,6 @@ package net.wg.gui.battle.views.battleMessenger
       private function get isEnableReceiver() : Boolean
       {
          return this._receivers.length > 0 ? Boolean(this._receivers[this._receiverIdx].isEnabled) : Boolean(false);
-      }
-      
-      public function get messages() : Vector.<BattleMessage>
-      {
-         return this._messages;
-      }
-      
-      public function get isCtrlButtonPressed() : Boolean
-      {
-         return this._isCtrlButtonPressed;
       }
       
       private function onBattleMessengerRollOverHandler(param1:MouseEvent) : void

@@ -832,7 +832,7 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>3.507000 0.876750 0.000000 0.000000</Vector4>
+						<Vector4>3.507000 0.860000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_detailPower
@@ -924,7 +924,7 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>3.507000 0.876750 0.000000 0.000000</Vector4>
+						<Vector4>3.507000 0.860000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_detailPower
@@ -960,6 +960,7 @@
 	</renderSet>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>V_BlendBone</node>
 		<node>Track_L0_BlendBone</node>
 		<node>Track_L1_BlendBone</node>
 		<node>Track_L2_BlendBone</node>
@@ -1046,6 +1047,7 @@
 	</renderSet>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>V_BlendBone</node>
 		<node>Track_R0_BlendBone</node>
 		<node>Track_R1_BlendBone</node>
 		<node>Track_R3_BlendBone</node>

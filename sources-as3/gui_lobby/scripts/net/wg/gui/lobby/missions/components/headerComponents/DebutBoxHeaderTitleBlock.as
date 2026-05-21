@@ -7,9 +7,9 @@ package net.wg.gui.lobby.missions.components.headerComponents
    {
        
       
-      private var _isEnabled:Boolean;
-      
       public var toggleDivider:Sprite;
+      
+      private var _isEnabled:Boolean;
       
       public function DebutBoxHeaderTitleBlock()
       {

@@ -73,21 +73,17 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_proxy_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
-					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
-					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
-					</property>
+					<identifier>tank_proxy_skinned</identifier>
+					<collisionFlags>0</collisionFlags>
 					<property>
 						diffuseMap
 						<Texture>vehicles/german/G159_KPZ_3_Project_07_HK/KPZ_3_Project_07_HK_proxy_AM.dds</Texture>
 					</property>
 					<property>
-						excludeMaskAndAOMap
-						<Texture>vehicles/german/G159_KPZ_3_Project_07_HK/KPZ_3_Project_07_HK_proxy_AO.dds</Texture>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<property>
 						metallicGlossMap
@@ -96,6 +92,10 @@
 					<property>
 						normalMap
 						<Texture>vehicles/german/G159_KPZ_3_Project_07_HK/KPZ_3_Project_07_HK_proxy_ANM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/german/G159_KPZ_3_Project_07_HK/KPZ_3_Project_07_HK_proxy_AO.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>-1.414442 0.602753 -0.029103</groupOrigin>
@@ -112,21 +112,17 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_proxy_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
-					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
-					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
-					</property>
+					<identifier>tank_proxy_skinned</identifier>
+					<collisionFlags>0</collisionFlags>
 					<property>
 						diffuseMap
 						<Texture>vehicles/german/G159_KPZ_3_Project_07_HK/KPZ_3_Project_07_HK_proxy_AM.dds</Texture>
 					</property>
 					<property>
-						excludeMaskAndAOMap
-						<Texture>vehicles/german/G159_KPZ_3_Project_07_HK/KPZ_3_Project_07_HK_proxy_AO.dds</Texture>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<property>
 						metallicGlossMap
@@ -135,6 +131,10 @@
 					<property>
 						normalMap
 						<Texture>vehicles/german/G159_KPZ_3_Project_07_HK/KPZ_3_Project_07_HK_proxy_ANM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/german/G159_KPZ_3_Project_07_HK/KPZ_3_Project_07_HK_proxy_AO.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>1.420084 0.608818 -0.020298</groupOrigin>

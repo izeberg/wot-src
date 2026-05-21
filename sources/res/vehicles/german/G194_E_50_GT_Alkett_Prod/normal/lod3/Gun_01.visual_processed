@@ -38,7 +38,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>-0.141972 0.000000 1.612986</row3>
+							<row3>-0.141972 0.000000 1.601882</row3>
 						</transform>
 					</node>
 					<node>
@@ -85,6 +85,7 @@
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
 		<node>Gun_BlendBone</node>
 		<node>G_BlendBone</node>
+		<node>static_joint_01_BlendBone</node>
 		<geometry>
 			<vertices>gun_01_Shape.vertices</vertices>
 			<primitive>gun_01_Shape.indices</primitive>
@@ -148,20 +149,16 @@
 							<!--BW_String-->
 						</Float>
 					</property>
-					<property>
-						alphaReference
-						<Int>128</Int>
-					</property>
 				</material>
-				<groupOrigin>-0.004875 0.030604 -2.474548</groupOrigin>
+				<groupOrigin>-0.004875 0.030604 -2.347792</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-0.429107 -0.283159 0.070492</min>
+		<min>-0.429107 -0.283159 -0.183020</min>
 		<max>0.419356 0.344368 4.878604</max>
 	</boundingBox>
-	<geometrySize>34432</geometrySize>
+	<geometrySize>35132</geometrySize>
 	<minUVDensity>0.025093</minUVDensity>
 </root>

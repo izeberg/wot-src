@@ -853,10 +853,6 @@
 							<!--BW_String-->
 						</Float>
 					</property>
-					<property>
-						doubleSided
-						<Bool>true</Bool>
-					</property>
 				</material>
 				<groupOrigin>1.315309 0.520489 -0.025283</groupOrigin>
 			</primitiveGroup>
@@ -941,10 +937,6 @@
 							<!--BW_String-->
 						</Float>
 					</property>
-					<property>
-						doubleSided
-						<Bool>true</Bool>
-					</property>
 				</material>
 				<groupOrigin>-1.315309 0.531270 -0.019600</groupOrigin>
 			</primitiveGroup>
@@ -952,6 +944,7 @@
 	</renderSet>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>V_BlendBone</node>
 		<node>Track_L0_BlendBone</node>
 		<node>Track_L1_BlendBone</node>
 		<node>Track_L2_BlendBone</node>
@@ -1034,6 +1027,7 @@
 	</renderSet>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>V_BlendBone</node>
 		<node>Track_R0_BlendBone</node>
 		<node>Track_R1_BlendBone</node>
 		<node>Track_R3_BlendBone</node>

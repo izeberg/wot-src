@@ -913,6 +913,20 @@ package
       
       public static const SUFFIX_BADGE_31072:String = "#badge:suffix/badge_31072";
       
+      public static const BADGE_31073:String = "#badge:badge_31073";
+      
+      public static const BADGE_31073_DESCR:String = "#badge:badge_31073_descr";
+      
+      public static const BADGE_31074:String = "#badge:badge_31074";
+      
+      public static const BADGE_31074_DESCR:String = "#badge:badge_31074_descr";
+      
+      public static const BADGE_31075:String = "#badge:badge_31075";
+      
+      public static const BADGE_31075_DESCR:String = "#badge:badge_31075_descr";
+      
+      public static const SUFFIX_BADGE_31075:String = "#badge:suffix/badge_31075";
+      
       public static const BADGE_31041:String = "#badge:badge_31041";
       
       public static const BADGE_31041_DESCR:String = "#badge:badge_31041_descr";

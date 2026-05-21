@@ -140,7 +140,7 @@ class OwnVehicleBase(BigWorld.DynamicScriptComponent):
                 else:
                     cooldowns.append(Cooldowns(cd.id, cd.leftTime, cd.baseTime))
 
-            avatar.updateDualGunState(self.entity.id, dualGunState.activeGun, dualGunState.gunStates, cooldowns)
+            avatar.updateDualGunState(self.entity.id, dualGunState.activeGun, dualGunState.gunStates, cooldowns, dualGunState.shotCount)
             return
 
     @noexcept

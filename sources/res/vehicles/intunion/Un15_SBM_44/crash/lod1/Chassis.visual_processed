@@ -39,7 +39,7 @@
 						<row0>1.000000 0.000000 0.000000</row0>
 						<row1>0.000000 1.000000 0.000000</row1>
 						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>0.000000 0.409000 0.000000</row3>
+						<row3>0.000000 0.408568 0.000000</row3>
 					</transform>
 					<node>
 						<identifier>V_BlendBone</identifier>
@@ -47,7 +47,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 -1.000000</row2>
-							<row3>0.000000 -0.909000 0.000000</row3>
+							<row3>0.000000 -0.908568 0.000000</row3>
 						</transform>
 					</node>
 				</node>
@@ -110,7 +110,7 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>3.507000 0.877000 0.000000 0.000000</Vector4>
+						<Vector4>3.507000 0.860000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						normalMap
@@ -136,7 +136,7 @@
 						</Float>
 					</property>
 				</material>
-				<groupOrigin>-1.315309 0.534499 -0.196121</groupOrigin>
+				<groupOrigin>-1.315309 0.533538 -0.196121</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -187,7 +187,7 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>3.507000 0.877000 0.000000 0.000000</Vector4>
+						<Vector4>3.507000 0.860000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						normalMap
@@ -220,8 +220,8 @@
 	<constraints/>
 	<boundingBox>
 		<min>-1.606836 -0.000076 -2.906644</min>
-		<max>1.606836 1.069073 2.979839</max>
+		<max>1.606836 1.067151 2.979839</max>
 	</boundingBox>
 	<geometrySize>67698</geometrySize>
-	<minUVDensity>0.497138</minUVDensity>
+	<minUVDensity>0.497476</minUVDensity>
 </root>

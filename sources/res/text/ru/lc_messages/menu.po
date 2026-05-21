@@ -918,9 +918,6 @@ msgstr "Купить"
 msgid "boostersWindow/boostersTableRenderer/goToQuestBtnLabel"
 msgstr "Перейти к задаче"
 
-msgid "boostersWindow/boostersTableRenderer/header"
-msgstr "%(boosterName)s %(quality)s"
-
 msgid "boostersWindow/boostersTableRenderer/questForOpen"
 msgstr "Для доступа выполните «%(questName)s»"
 
@@ -1115,9 +1112,6 @@ msgstr "Создать взвод для Линии фронта"
 
 msgid "contextMenu/createEventSquad"
 msgstr "Создать взвод события"
-
-msgid "contextMenu/createHistoricalBattleSquad"
-msgstr "Взвод события «Время героев»"
 
 msgid "contextMenu/createMapboxSquad"
 msgstr "Разведка боем: создать взвод"
@@ -2698,9 +2692,6 @@ msgstr "Ремонт"
 msgid "hangar/ammunitionPanel/technicalMaitenance/title"
 msgstr "Обслуживание"
 
-msgid "hangar/ammunitionPanel/trophyVehicle"
-msgstr "(трофей)"
-
 msgid "hangar/ammunitionPanel/tuningBtn"
 msgstr "Внешний вид"
 
@@ -2994,9 +2985,6 @@ msgstr "Лёгкий танк"
 
 msgid "header/wotPlusExclusiveVehicleType/mediumTank"
 msgstr "Средний танк"
-
-msgid "headerButton/museum"
-msgstr "Музей"
 
 msgid "headerButtons/account/accountRefill"
 msgstr "Купить золото"

@@ -3131,7 +3131,7 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						2.8
+						2.5
 						<!--BW_String-->
 					</aimingTime>
 					<pitchLimits>
@@ -3888,7 +3888,7 @@
 		<impulse>
 			<magnitude>60</magnitude>
 			<applyPoint>
-				-0.062 -1.743 -2.12
+				0.0 0.0 -1.5
 				<!--BW_String-->
 			</applyPoint>
 			<duration>

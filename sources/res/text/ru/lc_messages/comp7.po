@@ -15,19 +15,19 @@ msgstr ""
 "(n%100<10 || n%100>=20) ? 1 : 2);"
 
 msgid "alertMessage/afterSeason"
-msgstr "Событие «Грозовой тигр» завершено."
+msgstr "Специальный выпуск завершён."
 
 msgid "alertMessage/allNotAvailable"
 msgstr "Бои на серверах начнутся через %(primeDelta)s"
 
 msgid "alertMessage/allNotAvailableEnd"
-msgstr "Событие «Грозовой тигр» завершено."
+msgstr "Специальный выпуск завершён."
 
 msgid "alertMessage/allNotSet"
 msgstr "Режим недоступен на всех серверах"
 
 msgid "alertMessage/betweenSeasons"
-msgstr "Событие «Грозовой тигр» завершено."
+msgstr "Специальный выпуск завершён."
 
 msgid "alertMessage/button/changeServer"
 msgstr "Сменить сервер"
@@ -51,7 +51,7 @@ msgid "alertMessage/standaloneNotAvailable"
 msgstr "Бои на сервере начнутся через %(primeDelta)s"
 
 msgid "alertMessage/standaloneNotAvailableEnd"
-msgstr "Событие «Грозовой тигр» завершено."
+msgstr "Специальный выпуск завершён."
 
 msgid "alertMessage/standaloneNotSet"
 msgstr "Режим недоступен на сервере %(serverName)s"
@@ -93,7 +93,7 @@ msgid "banner/infoSmall/disabled"
 msgstr "Ожидайте прайм-тайма"
 
 msgid "banner/season"
-msgstr "Событие «Грозовой тигр»"
+msgstr "Специальный выпуск"
 
 msgid "banner/seasonDate/seasonLasts"
 msgstr "До %(day)s %(month)s"
@@ -308,9 +308,9 @@ msgstr "%(start)s – %(end)s"
 
 msgid "calendarDay/timeLeft"
 msgid_plural "plural/calendarDay/timeLeft"
-msgstr[0] "Событие «Грозовой тигр» продлится %(days)d день."
-msgstr[1] "Событие «Грозовой тигр» продлится %(days)d дня."
-msgstr[2] "Событие «Грозовой тигр» продлится %(days)d дней."
+msgstr[0] "Специальный выпуск продлится %(days)d день."
+msgstr[1] "Специальный выпуск продлится %(days)d дня."
+msgstr[2] "Специальный выпуск продлится %(days)d дней."
 
 msgid "calendarDay/title"
 msgstr "Расписание"
@@ -338,32 +338,31 @@ msgstr "Ключевые позиции"
 
 msgid "detailsHelp/rework"
 msgstr ""
-"Перед началом боя вы можете заменить выбранную машину или её комплектацию. К"
-" участию в боях допускаются лёгкие, средние и тяжёлые танки, а также ПТ-САУ "
-"X уровня. САУ (включая штурм-САУ) к участию не допускаются."
+"Кроме ролевого навыка, перед началом боя вы можете также заменить выбранную "
+"машину или её комплектацию. К участию в боях допускаются лёгкие, средние "
+"и тяжёлые танки, а также ПТ-САУ X уровня."
 
 msgid "detailsHelp/rework/title"
 msgstr "Предбоевая подготовка и типы техники"
 
 msgid "detailsHelp/roleSkills"
 msgstr ""
-"Каждая машина в зависимости от роли обладает особым навыком с тремя уровнями"
-" заряда: чем выше уровень при активации навыка, тем сильнее его эффект. "
-"Заряд повышается за счёт очков престижа, которые выдаются за боевые "
-"действия, захват ключевых позиций и применение тактических навыков."
+"Для каждой роли техники доступно несколько навыков на выбор. При этом "
+"некоторые машины имеют свой уникальный набор навыков, отличный от такого "
+"набора для их роли. Каждые две недели один из навыков для каждой роли "
+"меняется."
 
 msgid "detailsHelp/roleSkills/title"
-msgstr "Ролевые навыки"
+msgstr "Выбор ролевых навыков"
 
 msgid "detailsHelp/rules"
 msgstr ""
-"Сражайтесь в особом режиме боя «Атака/Оборона». Правила просты: есть две "
-"базы. Одна команда их атакует, другая — защищает. При этом ряд параметров "
-"всей участвующей техники изменён за счёт действующего в событии "
-"модификатора."
+"Встречайте специальный запуск Натиска с ролевыми навыками на выбор! Бои "
+"проходят в режиме «Атака/Оборона», а к характеристикам всей техники применён"
+" модификатор события."
 
 msgid "detailsHelp/rules/title"
-msgstr "Натиск: Грозовой тигр"
+msgstr "Натиск: Специальный выпуск"
 
 msgid "detailsHelp/seasonModifiers"
 msgstr ""
@@ -547,6 +546,25 @@ msgstr "Количество очков рейтинга игрока, полу�
 
 msgid "leaderboard/table/tooltip/score/header"
 msgstr "Очки рейтинга"
+
+msgid "leaderboardRewardTooltip/badge"
+msgstr "Нашивка «Пантеон Натиска»"
+
+msgid "leaderboardRewardTooltip/description"
+msgstr ""
+"Этот игрок входит в топ-%(topPlaces) лучших игроков события. Сохранив эту "
+"позицию до конца события, он получит эксклюзивные награды:"
+
+msgid "leaderboardRewardTooltip/info"
+msgstr ""
+"Право обладания этими наградами нужно подтверждать в каждом новом запуске "
+"Натиска."
+
+msgid "leaderboardRewardTooltip/stripe"
+msgstr "Отметка «Элита Натиска»"
+
+msgid "leaderboardRewardTooltip/title"
+msgstr "Элита Натиска"
 
 msgid "listSeparator"
 msgstr ", "
@@ -754,7 +772,7 @@ msgid "primeTimeView/status/primeWillBeAvailable"
 msgstr "Начало боёв на сервере %(server)s через %(time)s"
 
 msgid "primeTimeView/status/seasonDisabled"
-msgstr "Событие «Грозовой тигр» на сервере %(server)s завершилось."
+msgstr "Специальный выпуск на сервере %(server)s завершился."
 
 msgid "primeTimeView/status/untill"
 msgstr "Бои недоступны до %(startTime)s на сервере %(server)s"
@@ -995,7 +1013,7 @@ msgstr ""
 "{whiteSpanish_Open}Для %(vehicleLevel)s уровня техники{whiteSpanish_Close}"
 
 msgid "rewards/subtitle/styleProgress"
-msgstr "{whiteSpanish_Open}Для стиля «Грозовой тигр»{whiteSpanish_Close}"
+msgstr "{whiteSpanish_Open}Для стиля «Небесный зверь»{whiteSpanish_Close}"
 
 msgid "rewards/subtitle/vehicles_rent"
 msgstr "%(vehicleLevel)s уровень"
@@ -1013,7 +1031,7 @@ msgid "rewardsScreen/description/qualificationEnded"
 msgstr "НАТИСК. КВАЛИФИКАЦИЯ ЗАВЕРШЕНА"
 
 msgid "rewardsScreen/description/season"
-msgstr "НАТИСК. СОБЫТИЕ «ГРОЗОВОЙ ТИГР»."
+msgstr "НАТИСК. СПЕЦИАЛЬНЫЙ ВЫПУСК."
 
 msgid "rewardsScreen/notice/subTitle"
 msgstr ""
@@ -1087,10 +1105,10 @@ msgid "season/minutesLeft"
 msgstr "До завершения: %(minutes)s мин."
 
 msgid "season/name"
-msgstr "Натиск: Грозовой тигр"
+msgstr "Натиск: Специальный выпуск"
 
 msgid "season/over"
-msgstr "Событие «Грозовой тигр» завершено."
+msgstr "Специальный выпуск завершён."
 
 msgid "season/range"
 msgstr "%(startDate)s – %(endDate)s"
@@ -1099,7 +1117,7 @@ msgid "season/secondsLeft"
 msgstr "До завершения: %(seconds)s с"
 
 msgid "season/shortName"
-msgstr "Грозовой тигр"
+msgstr "Специальный выпуск"
 
 msgid "seasonModifier/title"
 msgstr "Модификатор Натиска"
@@ -1213,6 +1231,44 @@ msgstr ""
 "Ранг {whiteSpanish_Open}«Легенда»{whiteSpanish_Close} присваивается "
 "{whiteSpanish_Open}топ-%(topPercentage)%{whiteSpanish_Close} игроков таблицы"
 " лидеров по количеству очков рейтинга."
+
+msgid "skillCharge/condition/activation"
+msgstr "После использования навыка заряд обнуляется."
+
+msgid "skillCharge/condition/charge"
+msgstr "Некоторые навыки могут быть заряжены на старте боя."
+
+msgid "skillCharge/condition/level"
+msgstr "Применить можно только навык, заряженный хотя бы до первого уровня."
+
+msgid "skillCharge/description"
+msgstr ""
+"Сила ролевого навыка зависит от уровня заряда (максимальный уровень — 3), "
+"а он, в свою очередь, зависит от заработанных вами очков престижа."
+
+msgid "skillCharge/title"
+msgstr "Уровень заряда ролевого навыка"
+
+msgid "skillSelect/confirm/cancel"
+msgstr "Не устанавливать"
+
+msgid "skillSelect/confirm/submit"
+msgstr "Установить"
+
+msgid "skillSelect/confirm/title"
+msgstr "Установить ролевой навык «%(skillName)s»?"
+
+msgid "skillSelectPopover/title"
+msgstr "Выберите ролевой навык"
+
+msgid "skillSelectView/footer/button/apply"
+msgstr "Применить"
+
+msgid "skillSelectView/footer/button/cancel"
+msgstr "Отменить"
+
+msgid "skillSelectView/header/title"
+msgstr "РОЛЕВЫЕ НАВЫКИ"
 
 msgid "system_messages/periodicReward/body"
 msgstr ""
@@ -1341,7 +1397,7 @@ msgid "weeklyQuests/tokenProgress/description/normal"
 msgstr "Зарабатывайте монеты Натиска для получения наград"
 
 msgid "whatsNewView/banner/title/large"
-msgstr "Событие «Грозовой тигр»"
+msgstr "Специальный выпуск"
 
 msgid "whatsNewView/button/ok"
 msgstr "Я в деле!"
@@ -1397,10 +1453,9 @@ msgstr ""
 
 msgid "whatsNewView/slides/description/newSeason"
 msgstr ""
-"Сражайтесь в особом режиме боя «Атака/Оборона». Правила просты: есть две "
-"базы. Одна команда их атакует, другая — защищает. При этом ряд параметров "
-"всей участвующей техники изменён за счёт действующего в событии "
-"модификатора."
+"Встречайте специальный запуск Натиска с ролевыми навыками на выбор! Бои "
+"проходят в режиме «Атака/Оборона», а к характеристикам всей техники применён"
+" модификатор события."
 
 msgid "whatsNewView/slides/description/newTypes"
 msgstr ""
@@ -1416,22 +1471,28 @@ msgstr ""
 
 msgid "whatsNewView/slides/description/ranks"
 msgstr ""
-"В зависимости от результатов боёв ваше мастерство оценивается рангами от "
-"Железа до Легенды. В начале события каждый игрок проходит 7 квалификационных"
-" боёв для определения начального ранга. Важно: бегство с поля боя или ничья "
-"в квалификации засчитываются как поражение."
+"В зависимости от результатов боёв ваше мастерство оценивается рангом "
+"от Железа до Легенды. В начале события каждый игрок проходит "
+"7 квалификационных боёв для определения начального ранга. Бегство с поля боя"
+" или ничья в квалификации засчитываются как поражение."
 
 msgid "whatsNewView/slides/description/rework"
 msgstr ""
-"В этом запуске изменился список доступных карт, а также были пересмотрены "
-"некоторые ролевые навыки и тактический навык «Минное поле»."
+"Значительно переработаны объекты и положение ключевых позиций на четырёх "
+"игровых картах, а также многие ролевые навыки."
 
 msgid "whatsNewView/slides/description/roleSkills"
 msgstr ""
-"Каждая машина в зависимости от роли обладает особым навыком с тремя уровнями"
-" заряда: чем выше уровень при активации навыка, тем сильнее его эффект. "
-"Заряд повышается за счёт очков престижа, которые выдаются за боевые "
-"действия, захват ключевых позиций и применение тактических навыков."
+"Теперь для каждой роли техники доступно несколько навыков на выбор. При этом"
+" некоторые машины имеют свой уникальный набор навыков, отличный от такового "
+"для их роли. Каждые две недели один из навыков для каждой роли меняется."
+
+msgid "whatsNewView/slides/description/roleSkillsNewbie"
+msgstr ""
+"Для каждой роли техники доступно несколько навыков на выбор. При этом "
+"некоторые машины имеют свой уникальный набор навыков, отличный от такого "
+"набора для их роли. Каждые две недели один из навыков для каждой роли "
+"меняется."
 
 msgid "whatsNewView/slides/description/seasonVehicles"
 msgstr ""
@@ -1441,8 +1502,9 @@ msgstr ""
 
 msgid "whatsNewView/slides/description/shop"
 msgstr ""
-"В магазине Натиска вас ожидают эксклюзивная техника и стили, а также "
-"выгодная система скидок."
+"Достигайте рангов для получения доступа к группам товаров в магазине Натиска"
+" и применяйте заработанные в режиме купоны, чтобы значительно снизить их "
+"стоимость в бонах."
 
 msgid "whatsNewView/slides/description/shopIntro"
 msgstr ""
@@ -1452,9 +1514,9 @@ msgstr ""
 
 msgid "whatsNewView/slides/description/vehiclesOnMap"
 msgstr ""
-"Перед началом боя вы можете заменить выбранную машину или её комплектацию. К"
-" участию в боях допускаются лёгкие, средние и тяжёлые танки, а также ПТ-САУ "
-"X уровня. САУ (включая штурм-САУ) к участию не допускаются."
+"Кроме ролевого навыка, перед началом боя вы можете также заменить выбранную "
+"машину или её комплектацию. К участию в боях допускаются лёгкие, средние "
+"и тяжёлые танки, а также ПТ-САУ X уровня."
 
 msgid "whatsNewView/slides/title/introQualification"
 msgstr "Квалификация"
@@ -1469,7 +1531,7 @@ msgid "whatsNewView/slides/title/modifiers"
 msgstr "Изменения модификатора"
 
 msgid "whatsNewView/slides/title/newSeason"
-msgstr "Натиск: Грозовой тигр"
+msgstr "Натиск: Специальный выпуск"
 
 msgid "whatsNewView/slides/title/newTypes"
 msgstr "Теперь без САУ"
@@ -1481,10 +1543,13 @@ msgid "whatsNewView/slides/title/ranks"
 msgstr "Система рангов"
 
 msgid "whatsNewView/slides/title/rework"
-msgstr "Натиск: Грозовой тигр"
+msgstr "Прочие изменения"
 
 msgid "whatsNewView/slides/title/roleSkills"
-msgstr "Ролевые навыки"
+msgstr "Выбор ролевых навыков"
+
+msgid "whatsNewView/slides/title/roleSkillsNewbie"
+msgstr "Выбор ролевых навыков"
 
 msgid "whatsNewView/slides/title/seasonVehicles"
 msgstr "Арендная техника"
@@ -1503,8 +1568,8 @@ msgstr "НАТИСК"
 
 msgid "whatsNewView/vehicleLimitations/description"
 msgstr ""
-"К участию в событии «Грозовой тигр» больше не допускаются машины роли САУ "
-"и тяжёлые огнемётные танки."
+"К участию в специальном выпуске не допускаются машины роли САУ (включая "
+"штурм-САУ)."
 
 msgid "whatsNewView/vehicleLimitations/heading"
 msgstr "Ограничения по технике"

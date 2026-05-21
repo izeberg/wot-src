@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/french/F137_Tornade/_skins/F137_Tornade_3Dst_02/crash/lod2/Hull</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.707193 -0.941768 -3.829538</min>
+		<max>1.682131 0.990701 4.076424</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/french/F137_Tornade/_skins/F137_Tornade_3Dst_02/crash/lod1/Hull</nodefullVisual>
+</root>

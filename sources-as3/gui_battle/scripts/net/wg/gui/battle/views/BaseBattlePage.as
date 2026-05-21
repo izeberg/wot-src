@@ -109,7 +109,7 @@ package net.wg.gui.battle.views
       
       protected var excludedComponentAliases:Vector.<String>;
       
-      protected var _messagesContainer:Sprite = null;
+      private var _messagesContainer:Sprite = null;
       
       private var _componentsStorage:Object;
       

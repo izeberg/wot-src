@@ -30,7 +30,8 @@ package net.wg.gui.battle.comp7.stats.fullStats.tableItem
          if(_loc1_)
          {
             this._statsItem.setIsEnemy(isEnemy);
-            this._statsItem.setRole(_loc1_.role);
+            this._statsItem.setEquipmentName(_loc1_.equipmentName);
+            this._statsItem.setEquipmentID(_loc1_.equipmentID);
             this._statsItem.setSkillLevel(_loc1_.skillLevel);
             this._statsItem.setRank(_loc1_.rank,_loc1_.rankDivision,_loc1_.isQualification);
             this._statsItem.setVoiceChatConnected(_loc1_.voiceChatConnected);

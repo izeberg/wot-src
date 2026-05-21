@@ -22,6 +22,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.components.crosshairPanel.components.CrosshairClipAutogunBar;
    import net.wg.gui.components.crosshairPanel.components.CrosshairClipQuantityBar;
    import net.wg.gui.components.crosshairPanel.components.CrosshairClipQuantityBarContainer;
+   import net.wg.gui.components.crosshairPanel.components.GunCoolingIndicator;
    import net.wg.gui.components.crosshairPanel.components.ShotDamageInd;
    import net.wg.gui.components.crosshairPanel.components.ShotFlyTimeInd;
    import net.wg.gui.components.crosshairPanel.components.artyScale.ArtyIndicationScale;
@@ -104,6 +105,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_CROSSHAIRCLIPQUANTITYBAR:Class = CrosshairClipQuantityBar;
       
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_CROSSHAIRCLIPQUANTITYBARCONTAINER:Class = CrosshairClipQuantityBarContainer;
+      
+      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_GUNCOOLINGINDICATOR:Class = GunCoolingIndicator;
       
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_SHOTDAMAGEIND:Class = ShotDamageInd;
       

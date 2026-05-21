@@ -3,6 +3,7 @@ package net.wg.gui.lobby.messengerBar.carousel
    import flash.display.MovieClip;
    import flash.events.MouseEvent;
    import flash.geom.ColorTransform;
+   import net.wg.data.constants.generated.TEXT_ALIGN;
    import net.wg.gui.components.advanced.BlinkingButton;
    import net.wg.gui.lobby.messengerBar.carousel.data.IToolTipData;
    import net.wg.infrastructure.interfaces.IDynamicContent;
@@ -33,7 +34,13 @@ package net.wg.gui.lobby.messengerBar.carousel
       private static const OUT:String = "out";
       
       private static const UP:String = "up";
+      
+      private static const DISABLE_FILL_ALPHA:Number = 0.7;
        
+      
+      protected var _iconAlign:String = "left";
+      
+      protected var _iconOffsetRight:Number = 0;
       
       public var mcColorBg:MovieClip;
       
@@ -61,6 +68,8 @@ package net.wg.gui.lobby.messengerBar.carousel
       {
          super.configUI();
          this.mcColorBg.visible = false;
+         mouseEnabledOnDisabled = true;
+         disableMc.alpha = DISABLE_FILL_ALPHA;
       }
       
       override protected function draw() : void
@@ -86,7 +95,7 @@ package net.wg.gui.lobby.messengerBar.carousel
             textField.htmlText = _label;
             App.utils.commons.truncateTextFieldText(textField,textField.text);
          }
-         if(isInvalid(TOOLTIP_INVALID) && canShowTooltipByHover() && this.hitTestPoint(stage.mouseX,stage.mouseY,true))
+         if(isInvalid(TOOLTIP_INVALID) && this.canShowTooltipByHover() && this.hitTestPoint(stage.mouseX,stage.mouseY,true))
          {
             this.showTooltip();
          }
@@ -120,13 +129,25 @@ package net.wg.gui.lobby.messengerBar.carousel
          {
             if(this._tooltipData.tooltipId)
             {
-               this._toolTipMgr.showComplex(this._tooltipData.tooltipId);
+               if(this._tooltipData.isWulfTooltip)
+               {
+                  this._toolTipMgr.showWulfTooltip.apply(this._toolTipMgr,[this._tooltipData.tooltipId].concat(this._tooltipData.tooltipArgs));
+               }
+               else
+               {
+                  this._toolTipMgr.showComplex(this._tooltipData.tooltipId);
+               }
             }
             else
             {
                this._toolTipMgr.show(this._tooltipData.label);
             }
          }
+      }
+      
+      override protected function canShowTooltipByHover() : Boolean
+      {
+         return true;
       }
       
       override protected function updateText() : void
@@ -145,6 +166,54 @@ package net.wg.gui.lobby.messengerBar.carousel
          this.mcColorBg = null;
          this._toolTipMgr = null;
          super.onDispose();
+      }
+      
+      override protected function updateDisable() : void
+      {
+         if(disableMc != null)
+         {
+            disableMc.x = disabledFillPadding.left;
+            disableMc.y = disabledFillPadding.top;
+            disableMc.scaleX = 1 / this.scaleX;
+            disableMc.scaleY = 1 / this.scaleY;
+            disableMc.widthFill = Math.round(this.mcColorBg.width * this.scaleX) - disabledFillPadding.horizontal;
+            disableMc.heightFill = Math.round(this.mcColorBg.height * this.scaleY) - disabledFillPadding.vertical;
+            disableMc.visible = !enabled;
+         }
+      }
+      
+      override protected function configIcon() : void
+      {
+         var _loc1_:Number = NaN;
+         var _loc2_:Number = NaN;
+         if(loader && loader.content)
+         {
+            _loc1_ = 1 / this.scaleX;
+            _loc2_ = 1 / this.scaleY;
+            loader.y = _iconOffsetTop * _loc2_;
+            loader.tabEnabled = loader.mouseEnabled = false;
+            loader.visible = true;
+            loader.scaleX = 1 / this.scaleX;
+            loader.scaleY = 1 / this.scaleY;
+            if(this._iconAlign == TEXT_ALIGN.LEFT)
+            {
+               loader.x = _iconOffsetLeft * _loc1_;
+            }
+            else
+            {
+               if(this._iconAlign != TEXT_ALIGN.RIGHT)
+               {
+                  throw new Error("invalid icon align value: ",this._iconAlign);
+               }
+               loader.x = width * _loc1_ - loader.content.width - this._iconOffsetRight;
+            }
+         }
+      }
+      
+      override protected function handleMouseRollOut(param1:MouseEvent) : void
+      {
+         super.handleMouseRollOut(param1);
+         this._toolTipMgr.hide();
       }
       
       public function setTextFieldColorTransform(param1:ColorTransform) : void
@@ -167,7 +236,7 @@ package net.wg.gui.lobby.messengerBar.carousel
       
       override public function set label(param1:String) : void
       {
-         var _loc2_:String = (_iconSource && _iconSource != "" ? "     " : "") + param1;
+         var _loc2_:String = (this._iconAlign == TEXT_ALIGN.LEFT && _iconSource && _iconSource != "" ? "     " : "") + param1;
          if(_loc2_ != label)
          {
             super.label = _loc2_;
@@ -216,10 +285,33 @@ package net.wg.gui.lobby.messengerBar.carousel
          invalidateState();
       }
       
-      override protected function handleMouseRollOut(param1:MouseEvent) : void
+      [Inspectable(defaultValue="0",name="iconOffsetRight",type="Number")]
+      public function get iconOffsetRight() : Number
       {
-         super.handleMouseRollOut(param1);
-         this._toolTipMgr.hide();
+         return this._iconOffsetRight;
+      }
+      
+      public function set iconOffsetRight(param1:Number) : void
+      {
+         if(this._iconOffsetRight != param1)
+         {
+            this._iconOffsetRight = param1;
+            invalidateSize();
+         }
+      }
+      
+      public function get iconAlign() : String
+      {
+         return this._iconAlign;
+      }
+      
+      public function set iconAlign(param1:String) : void
+      {
+         if(this._iconAlign != param1)
+         {
+            this._iconAlign = param1;
+            invalidateSize();
+         }
       }
    }
 }

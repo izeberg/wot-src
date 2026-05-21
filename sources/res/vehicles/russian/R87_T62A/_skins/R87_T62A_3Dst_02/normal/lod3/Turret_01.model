@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/russian/R87_T62A/_skins/R87_T62A_3Dst_02/normal/lod4/Turret_01</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<nodefullVisual>vehicles/russian/R87_T62A/_skins/R87_T62A_3Dst_02/normal/lod3/Turret_01</nodefullVisual>
+	<visibilityBox>
+		<min>-1.603006 -0.014634 -1.761754</min>
+		<max>1.546338 1.359724 1.334629</max>
+	</visibilityBox>
+</root>

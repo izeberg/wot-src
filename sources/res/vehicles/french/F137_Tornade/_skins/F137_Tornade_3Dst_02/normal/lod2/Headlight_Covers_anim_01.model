@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/french/F137_Tornade/_skins/F137_Tornade_3Dst_02/normal/lod3/Headlight_Covers_anim_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.590850 0.275865 2.939278</min>
+		<max>1.591150 0.515867 3.023568</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/french/F137_Tornade/_skins/F137_Tornade_3Dst_02/normal/lod2/Headlight_Covers_anim_01</nodefullVisual>
+</root>

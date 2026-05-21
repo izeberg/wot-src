@@ -1,6 +1,6 @@
 import math, logging, sys, BigWorld, GUI, Keys, Math, ResMgr, game_mode_emulator
 _logger = logging.getLogger(__name__)
-g_offlineModeEnabled = False
+g_offlineModeEnabled = 'offline' in sys.argv
 g_offlineModeSpaceLoaded = False
 g_currentMoveRate = 0.5
 g_gui = None
@@ -77,7 +77,6 @@ def _setCameraTransform(idx):
 INSTRUCTIONS = '\nWSAD: move camera\nNumpad +/-: adjust FOV\nMouse Wheel: adjust speed\nEscape: toggle mouse mode\nF: toggle camera freeze mode\nR: add new camera view point\n0-7: change camera view point\nN: move to previous camera view point\nM: move to next camera view point\nP: toggle post-precessing\nC: toggle cinematic post-processing mode\nT: toggle temporal AA\n'
 
 def enabled():
-    global g_offlineModeEnabled
     return g_offlineModeEnabled
 
 
@@ -92,7 +91,8 @@ def onStartup():
         offlineSpace = sys.argv[(idx + 1)]
         launch(offlineSpace)
         return True
-    except (ValueError, IndexError):
+    except (ValueError, IndexError) as e:
+        BigWorld.criticalExit(('Failed to launch offline mode: {}').format(e.message))
         return False
 
 
@@ -125,7 +125,6 @@ def _offlineLoadCheck():
 
 
 def launch(spaceName):
-    global g_offlineModeEnabled
     print 'Entering offline space', spaceName
     BigWorld.clearAllSpaces()
     BigWorld.worldDrawEnabled(False)
@@ -145,7 +144,6 @@ def launch(spaceName):
     BigWorld.setCursor(GUI.mcursor())
     GUI.mcursor().visible = True
     GUI.mcursor().clipped = False
-    g_offlineModeEnabled = True
     BigWorld.callback(1.0, _offlineLoadCheck)
     game_mode_emulator.createFakeAvatar()
     return
@@ -167,7 +165,7 @@ def adjustFOV(diff):
 
 def handleKeyEvent(event):
     global g_curCameraTransform
-    if not g_offlineModeEnabled or not BigWorld.camera():
+    if not enabled() or not BigWorld.camera():
         return False
     BigWorld.camera().handleKeyEvent(event)
     if not event.isKeyDown():
@@ -211,7 +209,7 @@ def handleKeyEvent(event):
 
 
 def handleMouseEvent(event):
-    if not g_offlineModeEnabled or not BigWorld.camera():
+    if not enabled() or not BigWorld.camera():
         return False
     if GUI.mcursor().visible:
         return False

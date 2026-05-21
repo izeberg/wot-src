@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-0.531684 -0.332375 -0.892099</min>
+		<max>0.538898 0.243775 7.574553</max>
+	</visibilityBox>
+	<parent>vehicles/italy/It35_Gladiatore/crash/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodelessVisual>vehicles/italy/It35_Gladiatore/crash/lod0/Gun_01</nodelessVisual>
+</root>

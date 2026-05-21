@@ -38,7 +38,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>-0.141972 0.000000 1.612986</row3>
+							<row3>-0.141972 0.000000 1.601882</row3>
 						</transform>
 					</node>
 					<node>
@@ -85,6 +85,7 @@
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
 		<node>Gun_BlendBone</node>
 		<node>G_BlendBone</node>
+		<node>static_joint_01_BlendBone</node>
 		<geometry>
 			<vertices>gun_01_Shape.vertices</vertices>
 			<primitive>gun_01_Shape.indices</primitive>
@@ -146,10 +147,6 @@
 						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
 					<property>
-						alphaReference
-						<Int>128</Int>
-					</property>
-					<property>
 						g_detailPowerAlbedo
 						<Float>
 							0.11
@@ -157,15 +154,15 @@
 						</Float>
 					</property>
 				</material>
-				<groupOrigin>-0.008680 0.028549 -2.470109</groupOrigin>
+				<groupOrigin>-0.008680 0.028549 -2.359192</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-0.431787 -0.291582 0.069187</min>
+		<min>-0.431787 -0.291582 -0.152648</min>
 		<max>0.414427 0.348680 4.871032</max>
 	</boundingBox>
-	<geometrySize>77746</geometrySize>
+	<geometrySize>78634</geometrySize>
 	<minUVDensity>0.053335</minUVDensity>
 </root>

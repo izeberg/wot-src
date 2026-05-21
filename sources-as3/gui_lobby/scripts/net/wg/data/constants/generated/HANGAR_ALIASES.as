@@ -67,8 +67,6 @@ package net.wg.data.constants.generated
       
       public static const ARMORY_YARD_VEH_POST_PROGRESSION:String = "armoryYardVehPostProgression";
       
-      public static const MUSEUM_VIEW:String = "museumView";
-      
       public static const EARLY_ACCESS_SECONDARY_ENTRY_POINT:String = "EarlyAccessSecondaryEntryPoint";
       
       public static const VEH_PARAM_RENDERER_STATE_SIMPLE_TOP:String = "simpleTop";
@@ -118,8 +116,6 @@ package net.wg.data.constants.generated
       public static const COMP7_WIDGET:String = "comp7Widget";
       
       public static const COMP7_MODIFIERS_PANEL:String = "comp7ModifiersPanel";
-      
-      public static const COMP7_VEHICLE_PARAMETERS:String = "comp7VehicleParameters";
       
       public static const MODIFIED_VEHICLE_PARAMETERS:String = "modifiedVehicleParameters";
       
@@ -175,6 +171,8 @@ package net.wg.data.constants.generated
       
       public static const EVENT_COINS_COMPONENT:String = "eventCoinsComponent";
       
+      public static const HE20_EVENT_ENTRY_POINT:String = "he20EventEntryPoint";
+      
       public static const CAROUSEL_EVENT_ENTRY_HOLDER:String = "carouselEventEntryHolder";
       
       public static const COLLECTION_ENTRY_POINT:String = "CollectionEntryPoint";
@@ -187,7 +185,7 @@ package net.wg.data.constants.generated
       
       public static const PARAGONS_BANNER_ENTRY_POINT:String = "ParagonsBannerEntryPoint";
       
-      public static const SE22_EVENT_ENTRY_POINT:String = "SE22EntryPoint";
+      public static const SUMMER_SALE_ENTRY_POINT:String = "SummerSaleEntryPoint";
        
       
       public function HANGAR_ALIASES()

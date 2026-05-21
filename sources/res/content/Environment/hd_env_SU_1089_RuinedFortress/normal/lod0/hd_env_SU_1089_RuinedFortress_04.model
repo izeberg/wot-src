@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<parent>content/Environment/hd_env_SU_1089_RuinedFortress/normal/lod1/hd_env_SU_1089_RuinedFortress_04</parent>
 	<extent>48.000000</extent>
 	<visibilityBox>
-		<min>-3.493998 -0.000509 -2.485484</min>
-		<max>3.802479 2.124545 3.145688</max>
+		<min>-3.423190 -0.003244 -2.485484</min>
+		<max>3.802479 2.120237 3.091612</max>
 	</visibilityBox>
 	<nodefullVisual>content/Environment/hd_env_SU_1089_RuinedFortress/normal/lod0/hd_env_SU_1089_RuinedFortress_04</nodefullVisual>
+	<parent>content/Environment/hd_env_SU_1089_RuinedFortress/normal/lod1/hd_env_SU_1089_RuinedFortress_04</parent>
 </root>

@@ -1390,11 +1390,6 @@
 				<type>url</type>
 			</item>
 			<item>
-				$PARAMS(/HB_category)
-				<name>HB24Category</name>
-				<type>url</type>
-			</item>
-			<item>
 				$PARAMS(/comp7_category)
 				<name>comp7Products</name>
 				<type>url</type>
@@ -1886,12 +1881,12 @@
 							<item>
 								<name>page</name>
 								<type>string</type>
-								<value>rework</value>
+								<value>roleSkills</value>
 							</item>
 							<item>
 								<name>page</name>
 								<type>string</type>
-								<value>roleSkills</value>
+								<value>rework</value>
 							</item>
 							<item>
 								<name>page</name>
@@ -1917,6 +1912,42 @@
 		</value>
 	</setting>
 	<setting>
+		<name>comp7SkillParamsOrder</name>
+		<type>list</type>
+		<value>
+			<item>cooldownSeconds</item>
+			<item>duration</item>
+			<item>delay</item>
+			<item>radius</item>
+			<item>damage</item>
+			<item>stunDuration</item>
+			<item>heal</item>
+			<item>gunReloadBuff</item>
+			<item>gunReloadTimeBuff</item>
+			<item>debuf</item>
+			<item>crewBuff</item>
+			<item>shotDispersionFactorsBuff</item>
+			<item>aimingTimeBuff</item>
+			<item>clipReloadTimeBoost</item>
+			<item>damageDistance</item>
+			<item>enginePowerBuff</item>
+			<item>repairBuff</item>
+			<item>stunDurationResist</item>
+			<item>gunReloadBoost</item>
+			<item>killGunReloadBuff</item>
+			<item>dispersionFactor</item>
+			<item>damageFactors</item>
+			<item>healDuration</item>
+			<item>enginePowerBuff</item>
+			<item>fwdSpeedBoost</item>
+			<item>bkwSpeedBoost</item>
+			<item>baseHeal</item>
+			<item>extraHealFactor</item>
+			<item>visionBuff</item>
+			<item>invisibilityFactor</item>
+		</value>
+	</setting>
+	<setting>
 		<name>whatsNewPageComp7Slides</name>
 		<type>macros</type>
 		<macros>AUTH_REALM</macros>
@@ -1929,6 +1960,22 @@
 						<name>pages</name>
 						<type>list</type>
 						<value>
+							<item>
+								<name>roleSkills</name>
+								<type>list</type>
+								<value>
+									<item>
+										<name>name</name>
+										<type>string</type>
+										<value>roleSkills</value>
+									</item>
+									<item>
+										<name>type</name>
+										<type>string</type>
+										<value>page</value>
+									</item>
+								</value>
+							</item>
 							<item>
 								<name>rework</name>
 								<type>list</type>
@@ -1972,6 +2019,22 @@
 										<name>name</name>
 										<type>string</type>
 										<value>newSeason</value>
+									</item>
+									<item>
+										<name>type</name>
+										<type>string</type>
+										<value>page</value>
+									</item>
+								</value>
+							</item>
+							<item>
+								<name>roleSkillsNewbie</name>
+								<type>list</type>
+								<value>
+									<item>
+										<name>name</name>
+										<type>string</type>
+										<value>roleSkillsNewbie</value>
 									</item>
 									<item>
 										<name>type</name>
@@ -2125,23 +2188,6 @@
 		</value>
 	</setting>
 	<setting>
-		<name>infoPageHistoricalBattles</name>
-		<type>macros</type>
-		<macros>AUTH_REALM</macros>
-		<value>
-			<item>
-				https://webbrg.tanki.su/$LANGUAGE_CODE/promocontent/PVEventMay26/
-				<name>default</name>
-				<type>url</type>
-			</item>
-			<item>
-				https://webbrg-rpt.tanki.su/$LANGUAGE_CODE/promocontent/PVEventMay26/
-				<name>CT</name>
-				<type>url</type>
-			</item>
-		</value>
-	</setting>
-	<setting>
 		<name>accountCompletionSupportURL</name>
 		<type>macros</type>
 		<macros>AUTH_REALM</macros>
@@ -2264,6 +2310,18 @@
 		<value>
 			<item>
 				https://webbrg.tanki.su/$LANGUAGE_CODE/promocontent/birthday-2025/
+				<name>default</name>
+				<type>url</type>
+			</item>
+		</value>
+	</setting>
+	<setting>
+		<name>summerSaleInfoPage</name>
+		<type>macros</type>
+		<macros>AUTH_REALM</macros>
+		<value>
+			<item>
+				https://webbrg.tanki.su/$LANGUAGE_CODE/promocontent/summer_sale/
 				<name>default</name>
 				<type>url</type>
 			</item>

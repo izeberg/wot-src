@@ -52,13 +52,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.data.constants.generated.DAMAGE_INFO_PANEL_CONSTS;
    import net.wg.data.constants.generated.EPIC_CONSTS;
    import net.wg.data.constants.generated.GAME_MESSAGES_CONSTS;
-   import net.wg.data.constants.generated.HBBATTLEDAMAGELOG_IMAGES;
-   import net.wg.data.constants.generated.HBBATTLE_CONSUMABLES_PANEL_PASSIVE_STATES;
-   import net.wg.data.constants.generated.HBBATTLE_NOTIFICATIONS_TIMER_LINKAGES;
-   import net.wg.data.constants.generated.HBTYPE;
-   import net.wg.data.constants.generated.HB_DAMAGE_SOURCE_TYPES;
-   import net.wg.data.constants.generated.HB_GAME_MESSAGES_CONSTS;
-   import net.wg.data.constants.generated.HB_RADIAL_MENU_CONST;
    import net.wg.data.constants.generated.INTERFACE_STATES;
    import net.wg.data.constants.generated.KEYBOARD_KEYS;
    import net.wg.data.constants.generated.PLAYERS_PANEL_STATE;
@@ -750,19 +743,10 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.battle.views.minimap.components.entries.epic.SectorMinimapEntry;
    import net.wg.gui.battle.views.minimap.components.entries.epic.SectorOverlayMinimapEntry;
    import net.wg.gui.battle.views.minimap.components.entries.equipments.ReconEquipmentMinimapEntry;
-   import net.wg.gui.battle.views.minimap.components.entries.fallout.absorptionFlag.AllyAbsorptionFlagMinimapEntry;
-   import net.wg.gui.battle.views.minimap.components.entries.fallout.absorptionFlag.EnemyAbsorptionFlagMinimapEntry;
-   import net.wg.gui.battle.views.minimap.components.entries.fallout.absorptionFlag.containers.AbsorptionFlagAnimContainer;
-   import net.wg.gui.battle.views.minimap.components.entries.fallout.flag.FlagMinimapEntry;
-   import net.wg.gui.battle.views.minimap.components.entries.fallout.repair.AllyRepairMinimapEntry;
-   import net.wg.gui.battle.views.minimap.components.entries.fallout.repair.EnemyRepairMinimapEntry;
    import net.wg.gui.battle.views.minimap.components.entries.fortconsumables.AOEArtilleryMinimapEntry;
-   import net.wg.gui.battle.views.minimap.components.entries.fortconsumables.ArtilleryGreenMinimapEntry;
    import net.wg.gui.battle.views.minimap.components.entries.fortconsumables.ArtilleryMinimapEntry;
    import net.wg.gui.battle.views.minimap.components.entries.fortconsumables.ArtilleryYellowMinimapEntry;
-   import net.wg.gui.battle.views.minimap.components.entries.fortconsumables.BomberCasMinimapEntry;
    import net.wg.gui.battle.views.minimap.components.entries.fortconsumables.BomberMinimapEntry;
-   import net.wg.gui.battle.views.minimap.components.entries.fortconsumables.MineMinimapEntry;
    import net.wg.gui.battle.views.minimap.components.entries.fortconsumables.SmokeMinimapEntry;
    import net.wg.gui.battle.views.minimap.components.entries.interfaces.IHighlightableMinimapEntry;
    import net.wg.gui.battle.views.minimap.components.entries.interfaces.IMinimapEntryWithNonScaleContent;
@@ -1109,20 +1093,6 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_DATA_CONSTANTS_GENERATED_EPIC_CONSTS:Class = EPIC_CONSTS;
       
       public static const NET_WG_DATA_CONSTANTS_GENERATED_GAME_MESSAGES_CONSTS:Class = GAME_MESSAGES_CONSTS;
-      
-      public static const NET_WG_DATA_CONSTANTS_GENERATED_HBBATTLEDAMAGELOG_IMAGES:Class = HBBATTLEDAMAGELOG_IMAGES;
-      
-      public static const NET_WG_DATA_CONSTANTS_GENERATED_HBBATTLE_CONSUMABLES_PANEL_PASSIVE_STATES:Class = HBBATTLE_CONSUMABLES_PANEL_PASSIVE_STATES;
-      
-      public static const NET_WG_DATA_CONSTANTS_GENERATED_HBBATTLE_NOTIFICATIONS_TIMER_LINKAGES:Class = HBBATTLE_NOTIFICATIONS_TIMER_LINKAGES;
-      
-      public static const NET_WG_DATA_CONSTANTS_GENERATED_HBTYPE:Class = HBTYPE;
-      
-      public static const NET_WG_DATA_CONSTANTS_GENERATED_HB_DAMAGE_SOURCE_TYPES:Class = HB_DAMAGE_SOURCE_TYPES;
-      
-      public static const NET_WG_DATA_CONSTANTS_GENERATED_HB_GAME_MESSAGES_CONSTS:Class = HB_GAME_MESSAGES_CONSTS;
-      
-      public static const NET_WG_DATA_CONSTANTS_GENERATED_HB_RADIAL_MENU_CONST:Class = HB_RADIAL_MENU_CONST;
       
       public static const NET_WG_DATA_CONSTANTS_GENERATED_INTERFACE_STATES:Class = INTERFACE_STATES;
       
@@ -2540,31 +2510,13 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_BATTLE_VIEWS_MINIMAP_COMPONENTS_ENTRIES_EQUIPMENTS_RECONEQUIPMENTMINIMAPENTRY:Class = ReconEquipmentMinimapEntry;
       
-      public static const NET_WG_GUI_BATTLE_VIEWS_MINIMAP_COMPONENTS_ENTRIES_FALLOUT_ABSORPTIONFLAG_ALLYABSORPTIONFLAGMINIMAPENTRY:Class = AllyAbsorptionFlagMinimapEntry;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_MINIMAP_COMPONENTS_ENTRIES_FALLOUT_ABSORPTIONFLAG_ENEMYABSORPTIONFLAGMINIMAPENTRY:Class = EnemyAbsorptionFlagMinimapEntry;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_MINIMAP_COMPONENTS_ENTRIES_FALLOUT_ABSORPTIONFLAG_CONTAINERS_ABSORPTIONFLAGANIMCONTAINER:Class = AbsorptionFlagAnimContainer;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_MINIMAP_COMPONENTS_ENTRIES_FALLOUT_FLAG_FLAGMINIMAPENTRY:Class = FlagMinimapEntry;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_MINIMAP_COMPONENTS_ENTRIES_FALLOUT_REPAIR_ALLYREPAIRMINIMAPENTRY:Class = AllyRepairMinimapEntry;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_MINIMAP_COMPONENTS_ENTRIES_FALLOUT_REPAIR_ENEMYREPAIRMINIMAPENTRY:Class = EnemyRepairMinimapEntry;
-      
       public static const NET_WG_GUI_BATTLE_VIEWS_MINIMAP_COMPONENTS_ENTRIES_FORTCONSUMABLES_AOEARTILLERYMINIMAPENTRY:Class = AOEArtilleryMinimapEntry;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_MINIMAP_COMPONENTS_ENTRIES_FORTCONSUMABLES_ARTILLERYGREENMINIMAPENTRY:Class = ArtilleryGreenMinimapEntry;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_MINIMAP_COMPONENTS_ENTRIES_FORTCONSUMABLES_ARTILLERYMINIMAPENTRY:Class = ArtilleryMinimapEntry;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_MINIMAP_COMPONENTS_ENTRIES_FORTCONSUMABLES_ARTILLERYYELLOWMINIMAPENTRY:Class = ArtilleryYellowMinimapEntry;
       
-      public static const NET_WG_GUI_BATTLE_VIEWS_MINIMAP_COMPONENTS_ENTRIES_FORTCONSUMABLES_BOMBERCASMINIMAPENTRY:Class = BomberCasMinimapEntry;
-      
       public static const NET_WG_GUI_BATTLE_VIEWS_MINIMAP_COMPONENTS_ENTRIES_FORTCONSUMABLES_BOMBERMINIMAPENTRY:Class = BomberMinimapEntry;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_MINIMAP_COMPONENTS_ENTRIES_FORTCONSUMABLES_MINEMINIMAPENTRY:Class = MineMinimapEntry;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_MINIMAP_COMPONENTS_ENTRIES_FORTCONSUMABLES_SMOKEMINIMAPENTRY:Class = SmokeMinimapEntry;
       

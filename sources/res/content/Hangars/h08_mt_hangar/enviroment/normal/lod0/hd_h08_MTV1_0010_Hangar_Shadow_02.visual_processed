@@ -13,9 +13,9 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>s0Shape1.vertices</vertices>
-			<stream>s0Shape1.colour</stream>
-			<primitive>s0Shape1.indices</primitive>
+			<vertices>s0Shape.vertices</vertices>
+			<stream>s0Shape.colour</stream>
+			<primitive>s0Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -40,14 +40,14 @@
 						<Texture>content/Hangars/h08_mt_hangar/enviroment/hd_h08_snow_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-2.190979 16.380398 10.366272</groupOrigin>
+				<groupOrigin>-2.190979 17.712700 10.366272</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
 		<min>-51.383865 -1.463812 -208.345795</min>
-		<max>47.001907 34.224609 229.078339</max>
+		<max>47.001907 36.889214 229.078339</max>
 	</boundingBox>
-	<geometrySize>86172</geometrySize>
-	<minUVDensity>0.000006</minUVDensity>
+	<geometrySize>80484</geometrySize>
+	<minUVDensity>0.000003</minUVDensity>
 </root>

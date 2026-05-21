@@ -4,7 +4,7 @@
 		<min>-3.654594 -1.311278 -0.656354</min>
 		<max>6.425389 9.003984 0.646151</max>
 	</visibilityBox>
-	<parent>content/Environment/hd_env_SU_1089_RuinedFortress/normal/lod1/hd_env_SU_1089_RuinedFortress_31</parent>
 	<extent>48.000000</extent>
-	<nodefullVisual>content/Environment/hd_env_SU_1089_RuinedFortress/normal/lod0/hd_env_SU_1089_RuinedFortress_31</nodefullVisual>
+	<nodelessVisual>content/Environment/hd_env_SU_1089_RuinedFortress/normal/lod0/hd_env_SU_1089_RuinedFortress_31</nodelessVisual>
+	<parent>content/Environment/hd_env_SU_1089_RuinedFortress/normal/lod1/hd_env_SU_1089_RuinedFortress_31</parent>
 </root>

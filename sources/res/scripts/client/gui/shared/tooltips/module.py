@@ -24,7 +24,7 @@ from helpers.i18n import makeString as _ms
 from items.components.supply_slot_categories import SlotCategories
 from shared_utils import first, CONST_CONTAINER, findFirst
 from skeletons.account_helpers.settings_core import ISettingsCore
-from skeletons.gui.game_control import IBootcampController, IWotPlusController, IComp7Controller
+from skeletons.gui.game_control import IBootcampController, IWotPlusController, IBattleModifiersController
 from skeletons.gui.lobby_context import ILobbyContext
 from skeletons.gui.shared import IItemsCache
 from skeletons.gui.shared.gui_items import IGuiItemsFactory
@@ -257,6 +257,7 @@ class ModuleTooltipBlockConstructor(object):
     AUTOSHOOT_GUN_MODULE_PARAM = 'autoShootGun'
     AUTO_RELOAD_DUAL_GUN_MODULE_PARAM = 'autoReloadDualGun'
     CLIP_DUAL_GUN_MODULE_PARAM = 'clipDualGun'
+    DUAL_GUN_DUAL_ACCURACY_PARAM = 'dualGunDualAccuracy'
     MODULE_PARAMS = {GUI_ITEM_TYPE.CHASSIS: ('rotationSpeed', 'maxSteeringLockAngle', 'vehicleChassisRepairSpeed', 'chassisRepairTime',
  'vehicleGunShotStabilizationChassisMovement', 'vehicleGunShotStabilizationChassisRotation'), 
        GUI_ITEM_TYPE.TURRET: ('armor', 'rotationSpeed', 'circularVisionRadius'), 
@@ -321,7 +322,11 @@ class ModuleTooltipBlockConstructor(object):
                                   DUAL_GUN_CHARGE_TIME,
                                   BURST_TIME_INTERVAL, BURST_COUNT, BURST_SIZE,
                                   'avgDamagePerMinute', 'stunMaxDurationList',
-                                  DISPERSION_RADIUS, DUAL_ACCURACY_COOLING_DELAY, 'maxShotDistance', AIMING_TIME_PROP_NAME)}
+                                  DISPERSION_RADIUS, DUAL_ACCURACY_COOLING_DELAY, 'maxShotDistance', AIMING_TIME_PROP_NAME), 
+       DUAL_GUN_DUAL_ACCURACY_PARAM: (
+                                    'avgDamageList', 'avgPiercingPower', RELOAD_TIME_SECS_PROP_NAME,
+                                    DUAL_GUN_RATE_TIME, DUAL_GUN_CHARGE_TIME,
+                                    DISPERSION_RADIUS, DUAL_ACCURACY_COOLING_DELAY, AIMING_TIME_PROP_NAME)}
     HIGHLIGHT_MODULE_PARAMS = {DEFAULT_PARAM: (
                      AUTO_RELOAD_PROP_NAME, RELOAD_TIME_SECS_PROP_NAME, DUAL_GUN_CHARGE_TIME, DUAL_GUN_RATE_TIME,
                      TURBOSHAFT_ENGINE_POWER, ROCKET_ACCELERATION_ENGINE_POWER), 
@@ -332,7 +337,10 @@ class ModuleTooltipBlockConstructor(object):
                                         AUOTSHOOT_FLAME_OVERHEAT_COOLING_TIME), 
        THERMAL_VISION_TURRET_MODULE_PARAM: (
                                           THERMAL_VISION_DISTANCE, THERMAL_VISION_REUSE_AND_DURATION,
-                                          THERMAL_VISION_RELOAD_TIME, THERMAL_VISION_OBSERVE_TIME)}
+                                          THERMAL_VISION_RELOAD_TIME, THERMAL_VISION_OBSERVE_TIME), 
+       DUAL_GUN_DUAL_ACCURACY_PARAM: (
+                                    DISPERSION_RADIUS, DUAL_ACCURACY_COOLING_DELAY, DUAL_GUN_CHARGE_TIME, RELOAD_TIME_SECS_PROP_NAME,
+                                    DUAL_GUN_RATE_TIME)}
     itemsCache = dependency.descriptor(IItemsCache)
 
     def __init__(self, module, configuration, leftPadding=_DEFAULT_PADDING, rightPadding=_DEFAULT_PADDING):
@@ -346,7 +354,7 @@ class ModuleTooltipBlockConstructor(object):
 
 
 class HeaderBlockConstructor(ModuleTooltipBlockConstructor):
-    __comp7Controller = dependency.descriptor(IComp7Controller)
+    __battleModifiersController = dependency.descriptor(IBattleModifiersController)
 
     def construct(self):
         module = self.module
@@ -373,8 +381,8 @@ class HeaderBlockConstructor(ModuleTooltipBlockConstructor):
                     descParts.append(params_formatters.formatParamNameColonValueUnits(paramName=paramName, paramValue=paramValue))
                 cooldownSeconds = module.descriptor.cooldownSeconds
                 if cooldownSeconds:
-                    if self.__comp7Controller.isBattleModifiersAvailable():
-                        modifiers = self.__comp7Controller.getBattleModifiersObject()
+                    if self.__battleModifiersController.isBattleModifiersAvailable():
+                        modifiers = self.__battleModifiersController.getBattleModifiersObject()
                         if modifiers is not None:
                             cooldownSeconds = modifiers(BattleParams.EQUIPMENT_COOLDOWN, cooldownSeconds)
                     paramName = ModuleTooltipBlockConstructor.COOLDOWN_SECONDS
@@ -688,6 +696,9 @@ class CommonStatsBlockConstructor(ModuleTooltipBlockConstructor):
                 elif reloadingType == GUN_CAN_BE_AUTO_RELOAD or reloadingType == GUN_AUTO_RELOAD:
                     highlightPossible = serverSettings.checkAutoReloadHighlights(increase=True)
                     paramsKeyName = self.AUTO_RELOAD_GUN_MODULE_PARAM
+                elif self.__isDualGunDualAccuracy(reloadingType, vehicle):
+                    highlightPossible = serverSettings.checkDualGunDualAccuracyHighlights(increase=True)
+                    paramsKeyName = self.DUAL_GUN_DUAL_ACCURACY_PARAM
                 elif reloadingType == GUN_CAN_BE_DUAL_GUN or reloadingType == GUN_DUAL_GUN:
                     highlightPossible = serverSettings.checkDualGunHighlights(increase=True)
                     paramsKeyName = self.DUAL_GUN_MODULE_PARAM
@@ -808,9 +819,9 @@ class CommonStatsBlockConstructor(ModuleTooltipBlockConstructor):
                     hasBoost = gun.autoreloadHasBoost
 
             result.append(_ModuleExtraStatuses.AUTOLOADER_WITH_BOOST_GUN if hasBoost else _ModuleExtraStatuses.AUTOLOADER_GUN)
-        elif module.isDualGun(vDescr):
+        elif module.isDualGun(vDescr) or module.hasDualGunDualAccuracy(vDescr):
             result.append(_ModuleExtraStatuses.DUAL_GUN)
-        if module.hasDualAccuracy(vDescr):
+        if module.hasDualAccuracy(vDescr) or module.hasDualGunDualAccuracy(vDescr):
             result.append(_ModuleExtraStatuses.DUAL_ACCURACY_GUN)
         return result
 
@@ -845,6 +856,10 @@ class CommonStatsBlockConstructor(ModuleTooltipBlockConstructor):
         elif module.isMultiTrack():
             result.append(_ModuleExtraStatuses.MULTI_TRACK_CHASSIS)
         return result
+
+    @staticmethod
+    def __isDualGunDualAccuracy(reloadingType, vehicle):
+        return (reloadingType == GUN_CAN_BE_DUAL_GUN or reloadingType == GUN_DUAL_GUN) and vehicle is not None and vehicle.descriptor.hasDualAccuracy
 
 
 class ModuleReplaceBlockConstructor(ModuleTooltipBlockConstructor):

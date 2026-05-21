@@ -1035,6 +1035,9 @@ msgstr "Жэтоны"
 msgid "bonusName/brcoin"
 msgstr "Сталёвыя пячаткі"
 
+msgid "bonusName/bumblebee_coin"
+msgstr "Крышечки Летней ярмарки"
+
 msgid "bonusName/camouflage"
 msgstr "Камуфляж"
 
@@ -1211,6 +1214,9 @@ msgstr "Золата"
 
 msgid "bonusName/gold_bank"
 msgstr "Сховішча золата"
+
+msgid "bonusName/honey_coin"
+msgstr "Мёд"
 
 msgid "bonusName/idle_crew_xp"
 msgstr "Курс падрыхтоўкі экіпажа"
@@ -5360,6 +5366,9 @@ msgstr "Крыштальнае паляванне"
 msgid "missions/tab/label/missions"
 msgstr "Вучэбныя задачы"
 
+msgid "missions/tab/label/temp"
+msgstr "Падзеі"
+
 msgid "missions/tab/mapbox/body"
 msgstr ""
 "Тэстуйце новыя механікі на мапах, выбірайце найлепшую і атрымлівайце прызы."
@@ -5894,6 +5903,27 @@ msgstr ""
 
 msgid "reward/tooltip/title"
 msgstr "Бонус падпіскі"
+
+msgid "summerSale/missions/header/button/gotoEvent"
+msgstr "Да падзеі"
+
+msgid "summerSale/missions/header/button/gotoShop"
+msgstr "У Краму"
+
+msgid "summerSale/missions/header/caption1"
+msgstr "Покупайте боевые задачи с наградами-крышечками."
+
+msgid "summerSale/missions/header/caption2"
+msgstr "Зарабатывайте крышечки, выполняя боевые задачи."
+
+msgid "summerSale/missions/header/caption3"
+msgstr "Обменивайте крышечки на наборы Летней ярмарки с редкой техникой."
+
+msgid "summerSale/missions/header/disabled"
+msgstr "Задачи временно недоступны."
+
+msgid "summerSale/missions/header/info"
+msgstr "ПРА ПАДЗЕЮ"
 
 msgid "switch/isDailyPremEnabled"
 msgstr ""

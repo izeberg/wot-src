@@ -3,8 +3,11 @@
 	<parent>content/Environment/hd_env_SU_1089_RuinedFortress/normal/lod3/hd_env_SU_1089_RuinedFortress_19</parent>
 	<extent>150.000000</extent>
 	<visibilityBox>
-		<min>-3.030017 -0.002431 -0.820241</min>
-		<max>3.017765 6.077046 0.836632</max>
+		<min>-3.030017 -0.002431 -0.815300</min>
+		<max>3.017765 6.089880 0.856044</max>
 	</visibilityBox>
+	<havok>
+		<damagedState>false</damagedState>
+	</havok>
 	<nodefullVisual>content/Environment/hd_env_SU_1089_RuinedFortress/normal/lod2/hd_env_SU_1089_RuinedFortress_19</nodefullVisual>
 </root>

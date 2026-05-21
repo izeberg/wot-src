@@ -1247,5 +1247,23 @@ package net.wg.gui.components.crosshairPanel
             this._currentCrosshair.setShotHitMarkerVisibility(this._shotHitMarkerVisibility);
          }
       }
+      
+      public function as_setGunCoolingTime(param1:Boolean, param2:Number) : void
+      {
+         var _loc3_:ICrosshair = null;
+         for each(_loc3_ in this._crosshairs)
+         {
+            _loc3_.setGunCoolingTime(param1,param2);
+         }
+      }
+      
+      public function as_setGunCoolingVisibility(param1:Boolean) : void
+      {
+         var _loc2_:ICrosshair = null;
+         for each(_loc2_ in this._crosshairs)
+         {
+            _loc2_.setGunCoolingVisibility(param1);
+         }
+      }
    }
 }

@@ -15,6 +15,10 @@ package net.wg.infrastructure.base.meta.impl
       
       public var onClickInfoBtn:Function;
       
+      public var onClickOpenShopBtn:Function;
+      
+      public var onClickOpenEventBtn:Function;
+      
       public function MissionsGroupedViewMeta()
       {
          super();
@@ -38,10 +42,22 @@ package net.wg.infrastructure.base.meta.impl
          this.onClickButtonDetails();
       }
       
-      public function onClickInfoBtnS() : void
+      public function onClickInfoBtnS(param1:String) : void
       {
          App.utils.asserter.assertNotNull(this.onClickInfoBtn,"onClickInfoBtn" + Errors.CANT_NULL);
-         this.onClickInfoBtn();
+         this.onClickInfoBtn(param1);
+      }
+      
+      public function onClickOpenShopBtnS(param1:String) : void
+      {
+         App.utils.asserter.assertNotNull(this.onClickOpenShopBtn,"onClickOpenShopBtn" + Errors.CANT_NULL);
+         this.onClickOpenShopBtn(param1);
+      }
+      
+      public function onClickOpenEventBtnS(param1:String) : void
+      {
+         App.utils.asserter.assertNotNull(this.onClickOpenEventBtn,"onClickOpenEventBtn" + Errors.CANT_NULL);
+         this.onClickOpenEventBtn(param1);
       }
    }
 }

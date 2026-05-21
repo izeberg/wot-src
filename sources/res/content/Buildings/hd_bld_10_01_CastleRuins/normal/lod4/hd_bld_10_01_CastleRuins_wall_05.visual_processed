@@ -13,8 +13,8 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<primitive>indices</primitive>
+			<vertices>sShape0.vertices</vertices>
+			<primitive>sShape0.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>

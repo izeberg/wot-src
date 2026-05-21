@@ -13,9 +13,9 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<stream>uv2</stream>
-			<primitive>indices</primitive>
+			<vertices>s0Shape.vertices</vertices>
+			<stream>s0Shape.uv2</stream>
+			<primitive>s0Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -41,7 +41,7 @@
 					</property>
 					<property>
 						colorTex
-						<Texture>content/Environment/hd_env_SU_1089_RuinedFortress/hd_env_SU_1089_RuinedFortress_03_GCM.dds</Texture>
+						<Texture>content/Environment/hd_env_SU_1089_RuinedFortress/hd_env_SU_1089_RuinedFortress_04_GCM.dds</Texture>
 					</property>
 					<property>
 						dirtMap
@@ -92,15 +92,15 @@
 						<Texture>content/Buildings/00_Tiles/dds/Crash_03_512_GBMT.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.356823 0.979182 -0.166570</groupOrigin>
+				<groupOrigin>-0.358737 0.971233 -0.161922</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-3.257690 -0.170448 -3.944396</min>
-		<max>2.544044 2.042448 3.569563</max>
+		<min>-3.250430 -0.197077 -3.897838</min>
+		<max>2.532955 2.045302 3.569563</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>9712</geometrySize>
-	<minUVDensity>0.027460</minUVDensity>
+	<geometrySize>12444</geometrySize>
+	<minUVDensity>0.021890</minUVDensity>
 </root>

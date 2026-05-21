@@ -2,6 +2,8 @@ package net.wg.gui.components.crosshairPanel
 {
    public class CrosshairArcade extends CrosshairWithCassette
    {
+      
+      private static const GUN_COOLING_INDICATOR_OFFSET:int = -100;
        
       
       private var _reloadTimeBlinkYPositions:Array;
@@ -32,6 +34,11 @@ package net.wg.gui.components.crosshairPanel
       override protected function getAbilityModifierXPos() : Array
       {
          return this._abilityModifierXPositions;
+      }
+      
+      override protected function getGunCoolingIndicatorYOffset() : int
+      {
+         return GUN_COOLING_INDICATOR_OFFSET;
       }
    }
 }

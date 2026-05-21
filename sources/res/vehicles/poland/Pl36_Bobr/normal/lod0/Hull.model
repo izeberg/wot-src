@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/poland/Pl36_Bobr/normal/lod1/Hull</parent>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/poland/Pl36_Bobr/normal/lod0/Hull</nodefullVisual>
+	<visibilityBox>
+		<min>-1.668810 -1.061249 -3.041228</min>
+		<max>1.668809 1.645263 2.810190</max>
+	</visibilityBox>
+</root>

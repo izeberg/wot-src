@@ -300,12 +300,6 @@ msgstr "Рухаюся на пазіцыю!"
 msgid "chat_shortcuts/going_there_gridInfo"
 msgstr "Рухаюся ў %(gridId)s"
 
-msgid "chat_shortcuts/hb_ability/artillery_on_yourself"
-msgstr "Вызываю огонь на себя!"
-
-msgid "chat_shortcuts/hb_ability/last_stand"
-msgstr "Бьёмся до конца!"
-
 msgid "chat_shortcuts/help_me"
 msgstr "Патрэбна дапамога!"
 
@@ -726,9 +720,6 @@ msgstr "Пашкоджанні артылерыйскім абстрэлам"
 msgid "efficiencyRibbons/CannonDmg"
 msgstr "Пашкоджанні гарматай"
 
-msgid "efficiencyRibbons/HBDeathZone"
-msgstr "Урон от запретной зоны"
-
 msgid "efficiencyRibbons/armor"
 msgstr "Блакіраванне пашкоджанняў"
 
@@ -1105,7 +1096,7 @@ msgid "player_messages/COMBAT_EQUIPMENT_READY_INSPIRE"
 msgstr "Ваш экіпаж гатовы падняць баявы дух хаўруснікаў."
 
 msgid "player_messages/COMBAT_EQUIPMENT_READY_MINEFIELD_EPIC"
-msgstr "Міннае поле гатовае да разгортвання."
+msgstr "Минное поле готово к развёртыванию."
 
 msgid "player_messages/COMBAT_EQUIPMENT_READY_RECON"
 msgstr "Самалёт прыбыў і гатовы да правядзення выведкі."
@@ -1778,11 +1769,6 @@ msgid "postmortem/tips/exitHangar/text"
 msgstr ""
 "Esc > Вярнуцца ў Гараж.\n"
 "Уступіце ў новы бой на іншай машыне."
-
-msgid "postmortem/tips/exitHangar/text_hb"
-msgstr ""
-"Esc > Выйти в Ангар.\n"
-"Попробуйте свои силы в новом бою!"
 
 msgid "postmortem/tips/observerMode/label"
 msgstr "Рэжым назіральніка"
@@ -3180,7 +3166,7 @@ msgid "vehicle_messages/DEATH_FROM_DEATH_ZONE_ENEMY_SELF"
 msgstr "Машына знішчана %(entity)s у забароненай зоне."
 
 msgid "vehicle_messages/DEATH_FROM_DEATH_ZONE_SELF_SUICIDE"
-msgstr "Машына знішчана забароненай зонай."
+msgstr "Машина уничтожена действием запретной зоны."
 
 msgid "vehicle_messages/DEATH_FROM_DROWNING_ALLY_SELF"
 msgstr "Машына патоплена хаўруснікам %(entity)s."

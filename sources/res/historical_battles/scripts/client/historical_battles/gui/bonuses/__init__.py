@@ -1,3 +1,0 @@
-from historical_battles.gui.impl.gen.view_models.views.lobby.missions.bonuses import vehicle_discount_bonus_model, vehicle_discount_compensation_bonus_model
-VehicleDiscountBonusModel = vehicle_discount_bonus_model.VehicleDiscountBonusModel
-VehicleDiscountCompensationBonusModel = vehicle_discount_compensation_bonus_model.VehicleDiscountCompensationBonusModel

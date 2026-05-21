@@ -52,10 +52,6 @@
 					<name>battleRoyalePanels</name>
 					<visible>False</visible>
 				</component>
-				<component>
-					<name>historicalBattlesPanels</name>
-					<visible>False</visible>
-				</component>
 			</components>
 		</preset>
 		<preset>
@@ -81,7 +77,7 @@
 				<component>
 					<name>vehicleParameters</name>
 					<visible>True</visible>
-					<type>comp7VehicleParameters</type>
+					<type>modifiedVehicleParameters</type>
 					<layout>VehicleParametersUI</layout>
 				</component>
 			</components>

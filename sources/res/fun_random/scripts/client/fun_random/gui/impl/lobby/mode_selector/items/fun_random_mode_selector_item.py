@@ -1,6 +1,7 @@
 import typing, math_utils
 from fun_random.gui.feature.fun_constants import FunSubModesState
-from fun_random.gui.feature.util.fun_mixins import FunAssetPacksMixin, FunProgressionWatcher, FunSubModesWatcher
+from account_helpers.AccountSettings import FunRandomMaps
+from fun_random.gui.feature.util.fun_mixins import FunAccountSettingsHelper, FunAssetPacksMixin, FunProgressionWatcher, FunSubModesWatcher
 from fun_random.gui.feature.util.fun_wrappers import hasActiveProgression, hasAnySubMode, hasMultipleSubModes, avoidSubModesStates
 from fun_random.gui.impl.gen.view_models.views.lobby.common.fun_random_progression_state import FunRandomProgressionStatus
 from fun_random.gui.impl.lobby.common.fun_view_helpers import defineProgressionStatus
@@ -15,7 +16,9 @@ from gui.impl.gen.view_models.views.lobby.mode_selector.mode_selector_fun_random
 from gui.impl.gen.view_models.views.lobby.mode_selector.tooltips.mode_selector_tooltips_constants import ModeSelectorTooltipsConstants
 from gui.impl.lobby.mode_selector.items.base_item import ModeSelectorLegacyItem
 from gui.impl.lobby.mode_selector.items.items_constants import ModeSelectorRewardID
-from helpers import time_utils
+from gui.limited_ui.lui_rules_storage import LuiRules
+from helpers import time_utils, dependency
+from skeletons.gui.game_control import IFunRandomController
 if typing.TYPE_CHECKING:
     from frameworks.wulf import Array
     from fun_random.gui.feature.models.common import FunSubModesStatus
@@ -31,6 +34,7 @@ class FunRandomSelectorItem(ModeSelectorLegacyItem, FunAssetPacksMixin, FunSubMo
     __slots__ = ('__subModesHelper', )
     _CARD_VISUAL_TYPE = ModeSelectorCardTypes.FUN_RANDOM
     _VIEW_MODEL = ModeSelectorFunRandomModel
+    __funRandomController = dependency.descriptor(IFunRandomController)
 
     def __init__(self, oldSelectorItem):
         super(FunRandomSelectorItem, self).__init__(oldSelectorItem)
@@ -58,8 +62,23 @@ class FunRandomSelectorItem(ModeSelectorLegacyItem, FunAssetPacksMixin, FunSubMo
         return bool(self._funRandomCtrl.getSettings().infoPageUrl)
 
     def _isNewLabelVisible(self):
-        isEntryPointAvailable = self._funRandomCtrl.subModesInfo.isEntryPointAvailable()
-        return super(FunRandomSelectorItem, self)._isNewLabelVisible() and isEntryPointAvailable
+        if not super(FunRandomSelectorItem, self)._isNewLabelVisible():
+            return False
+        else:
+            return self._funRandomCtrl.subModesInfo.isEntryPointAvailable() or self.getLimitedUIRule() is not None and self._getIsNew()
+
+    def _getIsNew(self):
+        baseNew = super(FunRandomSelectorItem, self)._getIsNew()
+        luiRule = self.getLimitedUIRule()
+        if luiRule is None or self._isLocked():
+            return baseNew
+        fepType = self._funRandomCtrl.getCurrentFunType()
+        seen = FunAccountSettingsHelper.getAccSetting(FunRandomMaps.FUN_RANDOM_MODE_SELECTOR_CARD_SEEN_FEP_TYPES)
+        seen = set(seen)
+        if fepType not in seen:
+            return True
+        else:
+            return baseNew
 
     def _getModeStringsRoot(self):
         return self.getModeLocalsResRoot().mode_selector
@@ -107,6 +126,7 @@ class FunRandomSelectorItem(ModeSelectorLegacyItem, FunAssetPacksMixin, FunSubMo
                 self.__fillProgression(model.widget)
             else:
                 self.setDisabledProgression()
+        self.__invalidateNewLabel()
 
     @hasActiveProgression(abortAction='setDisabledProgression')
     def __invalidateProgression(self, *_):
@@ -162,3 +182,11 @@ class FunRandomSelectorItem(ModeSelectorLegacyItem, FunAssetPacksMixin, FunSubMo
             self.__subModesHelper.clear()
         self.__subModesHelper = createSelectorHelper(self.getSubModes())
         return
+
+    def getLimitedUIRule(self):
+        if self.__funRandomController.isArcade():
+            return LuiRules.ARCADE_CONTENT
+        else:
+            if self.__funRandomController.isFieldTrials():
+                return LuiRules.FIELD_TRIALS_CONTENT
+            return

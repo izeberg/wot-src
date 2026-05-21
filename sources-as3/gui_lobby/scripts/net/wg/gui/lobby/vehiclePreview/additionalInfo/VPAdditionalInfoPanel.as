@@ -127,7 +127,6 @@ package net.wg.gui.lobby.vehiclePreview.additionalInfo
             this.descriptionText.y = this.descriptionTitle.y + this.descriptionTitle.height + DESC_TITLE_TEXT_OFFSET | 0;
             this._container.removeChild(this._containerBg);
             this.resetContainerSize();
-            this.updateScrollBar();
             this._containerBg.width = this._container.width;
             this._containerBg.height = this._container.height;
             this._container.addChildAt(this._containerBg,0);
@@ -136,6 +135,7 @@ package net.wg.gui.lobby.vehiclePreview.additionalInfo
                this.vehicleInfoDesc.y = this.objectTitle.y + this.objectTitle.height;
                this._container.y = this.vehicleInfoDesc.y + VEH_INFO_DESC_OFFSET;
             }
+            this.updateScrollBar();
          }
       }
       

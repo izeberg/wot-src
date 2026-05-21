@@ -1,7 +1,14 @@
 from typing import Optional
 import CGF
-from Vehicle import Vehicle
-from constants import IS_CELLAPP
+from constants import IS_CELLAPP, IS_EDITOR
+if IS_EDITOR:
+
+    class Vehicle(object):
+        pass
+
+
+else:
+    from Vehicle import Vehicle
 
 def getVehicleFromGO(vehicleGO, spaceID):
     hierarchyManager = CGF.HierarchyManager(spaceID)

@@ -75,6 +75,8 @@ package net.wg.data.constants.generated
       
       public static const MISSION_PACK_DEBUT_BOXES_HEADER_LINKAGE:String = "MissionPackDebutBoxesHeaderUI";
       
+      public static const MISSION_PACK_SUMMER_SALE_HEADER_LINKAGE:String = "MissionPackSummerSaleHeaderUI";
+      
       public static const MISSIONS_EVENT_BOARDS_CARD_RENDERER_LINKAGE:String = "MissionsEventBoardsCardRendererUI";
       
       public static const MISSIONS_EVENT_BOARDS_HEADER_LINKAGE:String = "MissionsEventBoardsHeaderUI";
@@ -95,7 +97,15 @@ package net.wg.data.constants.generated
       
       public static const BATTLE_MATTERS_VIEW_LINKAGE:String = "BattleMattersMissionsViewUI";
       
+      public static const TEMP_VIEW_PY_ALIAS:String = "TemporaryMissionsView";
+      
+      public static const TEMP_VIEW_LINKAGE:String = "TemporaryMissionsViewUI";
+      
       public static const MISSIONS_VIEW_PY_ALIASES:Array = [MISSIONS_MARATHON_VIEW_PY_ALIAS,MISSIONS_GROUPED_VIEW_PY_ALIAS,MISSIONS_EVENT_BOARDS_VIEW_PY_ALIAS,MISSIONS_CATEGORIES_VIEW_PY_ALIAS,CURRENT_VEHICLE_MISSIONS_VIEW_PY_ALIAS];
+      
+      public static const DEBUT_BOXES_EVENT:String = "debutBoxesEvent";
+      
+      public static const SUMMER_SALE_EVENT:String = "summerSaleEvent";
        
       
       public function QUESTS_ALIASES()

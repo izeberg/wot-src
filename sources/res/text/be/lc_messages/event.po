@@ -41,6 +41,258 @@ msgstr "Да пачатку %(timerText)"
 msgid "shopSales/title"
 msgstr "ГАНДЛЁВЫ КАРАВАН"
 
+msgid "summerSales/confirm/content/placeHolder"
+msgstr ""
+"%(warning)s {orange_open}Выбор впоследствии отменить нельзя!{orange_close}"
+
+msgid "summerSales/confirm/footer/placeHolder"
+msgstr ""
+"Цена, г. .................................................. %(price)s "
+"%(honeyCoin)s"
+
+msgid "summerSales/confirm/title/placeHolder"
+msgstr "Забрать %(tankLevel)s %(icon)s %(tankName)s?"
+
+msgid "summerSales/endDateText"
+msgstr "Да %(day) %(month)"
+
+msgid "summerSales/eventFinishFormat"
+msgstr "Да завяршэння: "
+
+msgid "summerSales/introView/closeButton"
+msgstr "ЗАКРЫЦЬ"
+
+msgid "summerSales/introView/closeButtonText"
+msgstr "Замёдано!"
+
+msgid "summerSales/introView/description/first"
+msgstr ""
+"Получайте крышечки за выполнение боевых задач, которые, как и сами крышечки,"
+" можно купить в Магазине."
+
+msgid "summerSales/introView/description/second"
+msgstr ""
+"За крышачкі купляйце наборы Летняга кірмашу, у якіх з пэўнай верагоднасцю "
+"змяшчаецца рэдкая тэхніка, а мёд, срэбра і кэшбэк у выглядзе крышачак "
+"змяшчаюцца гарантавана."
+
+msgid "summerSales/introView/description/third"
+msgstr ""
+"Обменивайте собранный мёд на конкретную технику из набора Летней ярмарки "
+"и на набор «Случайная машина VI–VIII уровня»."
+
+msgid "summerSales/introView/goToFeatureButton"
+msgstr "Падрабязней"
+
+msgid "summerSales/introView/header/title"
+msgstr "ЛЕТНЯЯ ЯРМАРКА"
+
+msgid "summerSales/introView/title/first"
+msgstr "Крышечки Летней ярмарки"
+
+msgid "summerSales/introView/title/second"
+msgstr "Набор Летней ярмарки"
+
+msgid "summerSales/introView/title/third"
+msgstr "Обменивайте собранный мёд"
+
+msgid "summerSales/lessThanMinute"
+msgstr "Даступна яшчэ: < 1 хв."
+
+msgid "summerSales/mainView/backBtn"
+msgstr "НАЗАД"
+
+msgid "summerSales/mainView/backBtnLabel"
+msgstr "К НАБОРУ ЯРМАРКИ"
+
+msgid "summerSales/mainView/catalog/alert"
+msgstr "Недостаточно крышечек"
+
+msgid "summerSales/mainView/catalog/button/addMore"
+msgstr "Дакупіць"
+
+msgid "summerSales/mainView/catalog/button/buy"
+msgstr "Купіць"
+
+msgid "summerSales/mainView/catalog/button/change"
+msgstr "Абмяняць"
+
+msgid "summerSales/mainView/catalog/button/tooltip/body/bumblebee"
+msgstr ""
+"Крышечки можно купить в Магазине и получить в награду за выполнение боевых "
+"задач события."
+
+msgid "summerSales/mainView/catalog/button/tooltip/body/disabled"
+msgstr "Соберите больше мёда, открывая наборы Летней ярмарки."
+
+msgid "summerSales/mainView/catalog/button/tooltip/header/bumblebee"
+msgstr "Недостаточно крышечек"
+
+msgid "summerSales/mainView/catalog/button/tooltip/header/disabled"
+msgstr "Недостаточно мёда для этой покупки"
+
+msgid "summerSales/mainView/catalog/firstSubTitle"
+msgstr "Вероятность выпадения %(probability)s%"
+
+msgid "summerSales/mainView/catalog/firstTitle"
+msgstr "1. Из каждой покупки"
+
+msgid "summerSales/mainView/catalog/mainTitle"
+msgstr "Набор летней ярмарки"
+
+msgid "summerSales/mainView/catalog/priceBumblebee"
+msgstr "Цена, шт."
+
+msgid "summerSales/mainView/catalog/priceHoney"
+msgstr "Цена, г."
+
+msgid "summerSales/mainView/catalog/randomVehicle/label"
+msgstr "Случайная техника VI–VIII"
+
+msgid "summerSales/mainView/catalog/rewardTitle"
+msgstr "До %(count)s"
+
+msgid "summerSales/mainView/catalog/secondSubTitle"
+msgstr "Вероятность выпадения %(probability)s%"
+
+msgid "summerSales/mainView/catalog/secontTitle"
+msgstr "2. Другие возможные награды"
+
+msgid "summerSales/mainView/catalog/toHangar"
+msgstr "Паказаць у Гаражы"
+
+msgid "summerSales/mainView/catalog/toPreview"
+msgstr "Перадпрагляд"
+
+msgid "summerSales/mainView/catalog/tooltip/body/bumblebee"
+msgstr ""
+"За эти крышечки можно приобрести случайный набор Летней ярмарки с возможностью получить из него редкую технику.\n"
+"\n"
+"Крышечки можно приобрести в Магазине и получить за выполнение боевых задач события."
+
+msgid "summerSales/mainView/catalog/tooltip/body/honey"
+msgstr ""
+"Соберите достаточное количество мёда и обменяйте его на технику, которую не удалось получить из набора Летней ярмарки.\n"
+"\n"
+"Мёд выпадает только из наборов Летней ярмарки."
+
+msgid "summerSales/mainView/catalog/tooltip/header/bumblebee"
+msgstr "Крышечки Летней ярмарки"
+
+msgid "summerSales/mainView/catalog/tooltip/header/honey"
+msgstr "Мёд"
+
+msgid "summerSales/mainView/catalog/vehicleStatus/inInventory"
+msgstr "У Гаражы"
+
+msgid "summerSales/mainView/catalog/vehicleStatus/wasSold"
+msgstr "На восстановлении"
+
+msgid "summerSales/mainView/range"
+msgstr "%(startDate)s – %(endDate)s"
+
+msgid "summerSales/mainView/title"
+msgstr "ЛЕТНЯЯ ЯРМАРКА"
+
+msgid "summerSales/mainView/widget/button/quests"
+msgstr "Да задач"
+
+msgid "summerSales/mainView/widget/button/shop"
+msgstr "У Краму"
+
+msgid "summerSales/mainView/widget/text/quests"
+msgstr "Крышечки за боевые задачи"
+
+msgid "summerSales/mainView/widget/text/shop"
+msgstr "Крышечки в Магазине"
+
+msgid "summerSales/mainView/widget/tooltip/description/quests"
+msgstr ""
+"За выполнение боевых задач в награду вы получите крышечки от медовых банок "
+"Летней ярмарки."
+
+msgid "summerSales/mainView/widget/tooltip/description/shop"
+msgstr ""
+"Крышечки для набора Летней ярмарки можно приобрести в игровом Магазине "
+"и сразу испытать удачу в получении желанной техники."
+
+msgid "summerSales/mainView/widget/tooltip/title/quests"
+msgstr "Боевые задачи Летней ярмарки"
+
+msgid "summerSales/mainView/widget/tooltip/title/shop"
+msgstr "Покупка крышечек"
+
+msgid "summerSales/marketScales/button/back"
+msgstr "Вярнуцца"
+
+msgid "summerSales/marketScales/button/default"
+msgstr "Выбраць тэхніку"
+
+msgid "summerSales/marketScales/button/justShowMe"
+msgstr "Показать технику"
+
+msgid "summerSales/marketScales/tooltip/body/honey"
+msgstr ""
+"Соберите достаточное количество мёда и обменяйте его на технику, которую не удалось получить из набора Летней ярмарки.\n"
+"\n"
+"Мёд выпадает только из наборов Летней ярмарки."
+
+msgid "summerSales/marketScales/tooltip/header/honey"
+msgstr "Техника за мёд"
+
+msgid "summerSales/reward/footer/buttonText"
+msgstr "Замёдано!"
+
+msgid "summerSales/reward/footer/previewButtonText"
+msgstr "Паглядзець у Гаражы"
+
+msgid "summerSales/reward/header/closeButtonText"
+msgstr "ЗАКРЫЦЬ"
+
+msgid "summerSales/reward/titleGeneral"
+msgstr "Набор летней ярмарки"
+
+msgid "summerSales/reward/titleHoney"
+msgstr "Техника за мёд"
+
+msgid "summerSales/subTitle"
+msgstr "Доступен случайный набор"
+
+msgid "summerSales/title"
+msgstr "ЛЕТНЯЯ ЯРМАРКА"
+
+msgid "summerSales/tooltip/possibleRewards/description/bumblebeeCoin"
+msgstr ""
+"За эти крышечки можно приобрести случайный набор Летней ярмарки с возможностью получить из него редкую технику.\n"
+"Крышечки можно приобрести в Магазине и получить за выполнение боевых задач события.\n"
+"Вы можете получить одну из этих наград:"
+
+msgid "summerSales/tooltip/possibleRewards/description/credits"
+msgstr "Вы можете получить одну из этих наград:"
+
+msgid "summerSales/tooltip/possibleRewards/description/honeyCoin"
+msgstr ""
+"Соберите достаточное количество мёда и обменяйте его на технику, которую не удалось получить из набора Летней ярмарки.\n"
+"Мёд выпадает только из наборов Летней ярмарки.\n"
+"Вы можете получить одну из этих наград:"
+
+msgid "summerSales/tooltip/possibleRewards/title/bumblebeeCoin"
+msgstr "Крышечки Летней ярмарки"
+
+msgid "summerSales/tooltip/possibleRewards/title/credits"
+msgstr "Срэбра"
+
+msgid "summerSales/tooltip/possibleRewards/title/honeyCoin"
+msgstr "Мёд"
+
+msgid "summerSales/tooltip/randomVehicle/description"
+msgstr ""
+"Вы получите случайную машину из списка ниже. Если у вас уже есть вся "
+"техника, то вы будете получать компенсацию в золоте."
+
+msgid "summerSales/tooltip/randomVehicle/title"
+msgstr "Случайная машина VI–VIII уровня"
+
 msgid "universalFlag/timerFormat"
 msgstr "{prefix} %(timerText)"
 

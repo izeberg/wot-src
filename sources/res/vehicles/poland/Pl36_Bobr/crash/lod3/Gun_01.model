@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/poland/Pl36_Bobr/crash/lod3/Gun_01</nodefullVisual>
+	<parent>vehicles/poland/Pl36_Bobr/crash/lod4/Gun_01</parent>
+	<tank>true</tank>
+	<extent>
+		192.0
+		<!--BW_String-->
+	</extent>
+	<visibilityBox>
+		<min>-0.370252 -0.375554 -1.199901</min>
+		<max>0.370252 0.363938 4.465001</max>
+	</visibilityBox>
+</root>

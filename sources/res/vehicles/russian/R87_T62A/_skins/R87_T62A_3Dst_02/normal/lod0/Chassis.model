@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.618664 0.001972 -3.083842</min>
+		<max>1.618603 1.169729 3.143158</max>
+	</visibilityBox>
+	<parent>vehicles/russian/R87_T62A/_skins/R87_T62A_3Dst_02/normal/lod1/Chassis</parent>
+	<nodefullVisual>vehicles/russian/R87_T62A/_skins/R87_T62A_3Dst_02/normal/lod0/Chassis</nodefullVisual>
+</root>

@@ -2,9 +2,5 @@
 <root>
 	<parent>content/Environment/hd_env_SU_1089_RuinedFortress/normal/lod4/hd_env_SU_1089_RuinedFortress_07</parent>
 	<extent>250.000000</extent>
-	<visibilityBox>
-		<min>-1.370563 -0.001574 -6.435077</min>
-		<max>1.257365 10.923406 6.474610</max>
-	</visibilityBox>
-	<nodefullVisual>content/Environment/hd_env_SU_1089_RuinedFortress/normal/lod3/hd_env_SU_1089_RuinedFortress_07</nodefullVisual>
+	<nodelessVisual>content/Environment/hd_env_SU_1089_RuinedFortress/normal/lod3/hd_env_SU_1089_RuinedFortress_07</nodelessVisual>
 </root>

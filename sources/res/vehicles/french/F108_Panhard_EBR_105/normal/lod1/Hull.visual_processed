@@ -44,6 +44,15 @@
 				</transform>
 			</node>
 			<node>
+				<identifier>HP_Track_Exhaus_2</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 -0.903534 0.428517</row1>
+					<row2>0.000000 -0.428517 -0.903534</row2>
+					<row3>0.978866 0.139173 -0.300540</row3>
+				</transform>
+			</node>
+			<node>
 				<identifier>HP_turretJoint</identifier>
 				<transform>
 					<row0>1.000000 0.000000 0.000000</row0>

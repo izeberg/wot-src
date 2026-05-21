@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/italy/It35_Gladiatore/normal/lod4/Hull</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<nodefullVisual>vehicles/italy/It35_Gladiatore/normal/lod3/Hull</nodefullVisual>
+	<visibilityBox>
+		<min>-1.827075 -0.606138 -3.895927</min>
+		<max>1.818039 0.647790 3.843758</max>
+	</visibilityBox>
+</root>

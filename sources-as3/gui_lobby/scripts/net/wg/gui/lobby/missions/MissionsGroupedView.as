@@ -21,6 +21,8 @@ package net.wg.gui.lobby.missions
          addEventListener(MissionHeaderEvent.MOVE_TO_ACTION,this.onMoveToActionHandler);
          addEventListener(MissionPremiumEvent.BUTTON_DETAILS_CLICK,this.onButtonDetailsClickHandler);
          addEventListener(MissionHeaderEvent.OPEN_INFO_PAGE,this.onOpenInfoPageEventHandler);
+         addEventListener(MissionHeaderEvent.OPEN_SHOP_PAGE,this.onOpenShopPageEventHandler);
+         addEventListener(MissionHeaderEvent.OPEN_EVENT_PAGE,this.onOpenEventPageEventHandler);
       }
       
       override protected function onDispose() : void
@@ -29,6 +31,8 @@ package net.wg.gui.lobby.missions
          removeEventListener(MissionHeaderEvent.COLLAPSE,this.onCollapseHandler);
          removeEventListener(MissionPremiumEvent.BUTTON_DETAILS_CLICK,this.onButtonDetailsClickHandler);
          removeEventListener(MissionHeaderEvent.OPEN_INFO_PAGE,this.onOpenInfoPageEventHandler);
+         removeEventListener(MissionHeaderEvent.OPEN_SHOP_PAGE,this.onOpenShopPageEventHandler);
+         removeEventListener(MissionHeaderEvent.OPEN_EVENT_PAGE,this.onOpenEventPageEventHandler);
          super.onDispose();
       }
       
@@ -49,7 +53,17 @@ package net.wg.gui.lobby.missions
       
       private function onOpenInfoPageEventHandler(param1:MissionHeaderEvent) : void
       {
-         onClickInfoBtnS();
+         onClickInfoBtnS(param1.actionId);
+      }
+      
+      private function onOpenShopPageEventHandler(param1:MissionHeaderEvent) : void
+      {
+         onClickOpenShopBtnS(param1.actionId);
+      }
+      
+      private function onOpenEventPageEventHandler(param1:MissionHeaderEvent) : void
+      {
+         onClickOpenEventBtnS(param1.actionId);
       }
    }
 }

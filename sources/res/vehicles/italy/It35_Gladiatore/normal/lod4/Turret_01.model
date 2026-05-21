@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/italy/It35_Gladiatore/normal/lod4/Turret_01</nodefullVisual>
+	<visibilityBox>
+		<min>-1.400081 0.000332 -2.310996</min>
+		<max>1.404051 1.636398 1.596370</max>
+	</visibilityBox>
+</root>

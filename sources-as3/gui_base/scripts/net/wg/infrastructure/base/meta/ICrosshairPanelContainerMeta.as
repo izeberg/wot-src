@@ -137,5 +137,9 @@ package net.wg.infrastructure.base.meta
       function as_animShotHitMarker(param1:String) : void;
       
       function as_setShotHitMarkerVisibility(param1:Boolean) : void;
+      
+      function as_setGunCoolingTime(param1:Boolean, param2:Number) : void;
+      
+      function as_setGunCoolingVisibility(param1:Boolean) : void;
    }
 }

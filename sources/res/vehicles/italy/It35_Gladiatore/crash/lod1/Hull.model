@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/italy/It35_Gladiatore/crash/lod2/Hull</parent>
+	<tank>true</tank>
+	<extent>
+		64.0
+		<!--BW_String-->
+	</extent>
+	<nodefullVisual>vehicles/italy/It35_Gladiatore/crash/lod1/Hull</nodefullVisual>
+	<visibilityBox>
+		<min>-1.889120 -0.912528 -3.843744</min>
+		<max>1.869189 0.665265 3.888963</max>
+	</visibilityBox>
+</root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/poland/Pl36_Bobr/normal/lod1/Chassis</parent>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.583323 -0.000087 -3.077480</min>
+		<max>1.583323 1.620244 2.998768</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/poland/Pl36_Bobr/normal/lod0/Chassis</nodefullVisual>
+</root>

@@ -1,4 +1,5 @@
 import math, random, logging, BigWorld, CGF, GenericComponents, Triggers, Math, DataLinks, Vehicular, NetworkFilters, material_kinds
+from typing import TYPE_CHECKING, Dict
 from constants import IS_EDITOR, VEHICLE_SIEGE_STATE
 from CustomEffectManager import CustomEffectManager, EffectSettings
 from helpers import dependency
@@ -10,6 +11,7 @@ from cgf_obsolete_script.auto_properties import AutoProperty
 from cgf_components.customizable_model_component import CustomizableModelManager
 from items.components.component_constants import MAIN_TRACK_PAIR_IDX
 from items.vehicle_items import CHASSIS_ITEM_TYPE
+from prefab_attachment_utils import addPrefabAttachments, getPrefabAttachmentsPrereqs
 from vehicle_systems import model_assembler
 from vehicle_systems import camouflages
 from vehicle_systems.vehicle_damage_state import VehicleDamageState
@@ -24,6 +26,8 @@ from items.battle_royale import isSpawnedBot
 from helpers import isPlayerAvatar
 from ModelHitTester import ModelStatus
 from vehicle_systems.components.debris_crashed_tracks import TrackCrashWithDebrisComponent
+if TYPE_CHECKING:
+    from PrefabsLoading import PrefabData
 _logger = logging.getLogger(__name__)
 DEFAULT_STICKERS_ALPHA = 1.0
 MATKIND_COUNT = 3
@@ -165,6 +169,7 @@ class CommonTankAppearance(ScriptGameObject):
         self.__isObserver = False
         self.__attachments = []
         self.__modelAnimators = []
+        self.prefabsResourceRefs = {}
         self.turretMatrix = None
         self.gunMatrix = None
         self.__allLodCalculators = []
@@ -202,6 +207,7 @@ class CommonTankAppearance(ScriptGameObject):
         prereqs.extend(camouflages.getCamoPrereqs(self.outfit, self.typeDescriptor))
         prereqs.extend(camouflages.getModelAnimatorsPrereqs(self.outfit, self.spaceID))
         prereqs.extend(camouflages.getAttachmentsAnimatorsPrereqs(self.__attachments, self.spaceID))
+        prereqs.append(camouflages.getPrefabAttachmentsPrereqs(self.__attachments))
         splineDesc = self.typeDescriptor.chassis.splineDesc
         modelsSet = self.outfit.modelsSet
         if IS_EDITOR:
@@ -225,6 +231,7 @@ class CommonTankAppearance(ScriptGameObject):
             for index, builder in enumerate(builders):
                 prereqs.append(builder.createLoader(self.spaceID, ('{0}{1}PhysicalTrack').format(name, index), skin))
 
+        prereqs.append(getPrefabAttachmentsPrereqs(self, self.typeDescriptor))
         return prereqs
 
     def construct(self, isPlayer, resourceRefs):
@@ -320,15 +327,20 @@ class CommonTankAppearance(ScriptGameObject):
             self.engineAudition.setIsInWaterInfo(DataLinks.createBoolLink(self.waterSensor, 'isInWater'))
         self.__postSetupFilter()
         compoundModel.setPartBoundingBoxAttachNode(TankPartIndexes.GUN, TankNodeNames.GUN_INCLINATION)
+        self.prefabsResourceRefs = {}
+        self.prefabsResourceRefs.update(resourceRefs['DefaultPrefabAttachments'])
+        self.prefabsResourceRefs.update(resourceRefs['StylePrefabAttachments'])
         camouflages.updateFashions(self)
         model_assembler.assembleCustomLogicComponents(self, self.typeDescriptor, self.__attachments, self.__modelAnimators)
         self._createStickers()
         if not self.damageState.isCurrentModelDamaged:
-            from prefab_attachment_utils import addPrefabAttachments
             addPrefabAttachments(self, self.typeDescriptor)
         while self._loadingQueue:
             prefab, go, vector, callback = self._loadingQueue.pop()
-            CGF.loadGameObjectIntoHierarchy(prefab, go, vector, callback)
+            if prefab in self.prefabsResourceRefs:
+                CGF.loadGameObjectIntoHierarchyFromData(self.prefabsResourceRefs[prefab], go, vector, callback)
+            else:
+                CGF.loadGameObjectIntoHierarchy(prefab, go, vector, callback)
 
         return
 
@@ -343,6 +355,7 @@ class CommonTankAppearance(ScriptGameObject):
             go.destroy()
 
         self.wheelsGameObject.destroy()
+        self.prefabsResourceRefs = {}
         super(CommonTankAppearance, self).destroy()
         self.__typeDesc = None
         if self.boundEffects is not None:

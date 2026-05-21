@@ -10,6 +10,10 @@ package net.wg.gui.lobby.missions.event
       public static const MOVE_TO_ACTION:String = "MissionMoveToActionEvent";
       
       public static const OPEN_INFO_PAGE:String = "MissionOpenInfoPageEvent";
+      
+      public static const OPEN_SHOP_PAGE:String = "MissionOpenShopPageEvent";
+      
+      public static const OPEN_EVENT_PAGE:String = "MissionOpenEventPageEvent";
        
       
       public var actionId:String;

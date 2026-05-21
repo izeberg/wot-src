@@ -3,10 +3,7 @@
 	<nodefullVisual>vehicles/german/G194_E_50_GT_Alkett_Prod/crash/lod1/Gun_01</nodefullVisual>
 	<parent>vehicles/german/G194_E_50_GT_Alkett_Prod/crash/lod2/Gun_01</parent>
 	<tank>true</tank>
-	<extent>
-		64.0
-		<!--BW_String-->
-	</extent>
+	<extent>64.000000</extent>
 	<visibilityBox>
 		<min>-0.558646 -0.519230 -1.350952</min>
 		<max>0.294883 0.350100 4.871326</max>

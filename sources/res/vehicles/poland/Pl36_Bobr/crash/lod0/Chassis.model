@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-1.574589 -0.000293 -3.079375</min>
+		<max>1.574589 1.619970 3.167890</max>
+	</visibilityBox>
+	<parent>vehicles/poland/Pl36_Bobr/crash/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/poland/Pl36_Bobr/crash/lod0/Chassis</nodefullVisual>
+</root>

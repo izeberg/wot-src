@@ -511,6 +511,16 @@ package
       
       public static const SCORETOOLTIP_BODY:String = "#comp7:scoreTooltip/body";
       
+      public static const LEADERBOARDREWARDTOOLTIP_TITLE:String = "#comp7:leaderboardRewardTooltip/title";
+      
+      public static const LEADERBOARDREWARDTOOLTIP_DESCRIPTION:String = "#comp7:leaderboardRewardTooltip/description";
+      
+      public static const LEADERBOARDREWARDTOOLTIP_BADGE:String = "#comp7:leaderboardRewardTooltip/badge";
+      
+      public static const LEADERBOARDREWARDTOOLTIP_STRIPE:String = "#comp7:leaderboardRewardTooltip/stripe";
+      
+      public static const LEADERBOARDREWARDTOOLTIP_INFO:String = "#comp7:leaderboardRewardTooltip/info";
+      
       public static const LASTUPDATENOTE_INFO:String = "#comp7:lastUpdateNote/info";
       
       public static const LASTUPDATENOTE_TOOLTIP_INFO:String = "#comp7:lastUpdateNote/tooltip/info";
@@ -963,6 +973,10 @@ package
       
       public static const WHATSNEWVIEW_DEPRECATEDMAPS:String = "#comp7:whatsNewView/deprecatedMaps";
       
+      public static const WHATSNEWVIEW_SLIDES_TITLE_ROLESKILLS:String = "#comp7:whatsNewView/slides/title/roleSkills";
+      
+      public static const WHATSNEWVIEW_SLIDES_DESCRIPTION_ROLESKILLS:String = "#comp7:whatsNewView/slides/description/roleSkills";
+      
       public static const WHATSNEWVIEW_SLIDES_TITLE_NEWSEASON:String = "#comp7:whatsNewView/slides/title/newSeason";
       
       public static const WHATSNEWVIEW_SLIDES_DESCRIPTION_NEWSEASON:String = "#comp7:whatsNewView/slides/description/newSeason";
@@ -975,9 +989,9 @@ package
       
       public static const WHATSNEWVIEW_SLIDES_DESCRIPTION_POINTSOFINTEREST:String = "#comp7:whatsNewView/slides/description/pointsOfInterest";
       
-      public static const WHATSNEWVIEW_SLIDES_TITLE_ROLESKILLS:String = "#comp7:whatsNewView/slides/title/roleSkills";
+      public static const WHATSNEWVIEW_SLIDES_TITLE_ROLESKILLSNEWBIE:String = "#comp7:whatsNewView/slides/title/roleSkillsNewbie";
       
-      public static const WHATSNEWVIEW_SLIDES_DESCRIPTION_ROLESKILLS:String = "#comp7:whatsNewView/slides/description/roleSkills";
+      public static const WHATSNEWVIEW_SLIDES_DESCRIPTION_ROLESKILLSNEWBIE:String = "#comp7:whatsNewView/slides/description/roleSkillsNewbie";
       
       public static const WHATSNEWVIEW_SLIDES_TITLE_INTROQUALIFICATION:String = "#comp7:whatsNewView/slides/title/introQualification";
       
@@ -986,6 +1000,30 @@ package
       public static const WHATSNEWVIEW_SLIDES_TITLE_RANKS:String = "#comp7:whatsNewView/slides/title/ranks";
       
       public static const WHATSNEWVIEW_SLIDES_DESCRIPTION_RANKS:String = "#comp7:whatsNewView/slides/description/ranks";
+      
+      public static const SKILLSELECTVIEW_HEADER_TITLE:String = "#comp7:skillSelectView/header/title";
+      
+      public static const SKILLSELECTVIEW_FOOTER_BUTTON_APPLY:String = "#comp7:skillSelectView/footer/button/apply";
+      
+      public static const SKILLSELECTVIEW_FOOTER_BUTTON_CANCEL:String = "#comp7:skillSelectView/footer/button/cancel";
+      
+      public static const SKILLSELECTPOPOVER_TITLE:String = "#comp7:skillSelectPopover/title";
+      
+      public static const SKILLCHARGE_TITLE:String = "#comp7:skillCharge/title";
+      
+      public static const SKILLCHARGE_DESCRIPTION:String = "#comp7:skillCharge/description";
+      
+      public static const SKILLCHARGE_CONDITION_LEVEL:String = "#comp7:skillCharge/condition/level";
+      
+      public static const SKILLCHARGE_CONDITION_ACTIVATION:String = "#comp7:skillCharge/condition/activation";
+      
+      public static const SKILLCHARGE_CONDITION_CHARGE:String = "#comp7:skillCharge/condition/charge";
+      
+      public static const SKILLSELECT_CONFIRM_TITLE:String = "#comp7:skillSelect/confirm/title";
+      
+      public static const SKILLSELECT_CONFIRM_SUBMIT:String = "#comp7:skillSelect/confirm/submit";
+      
+      public static const SKILLSELECT_CONFIRM_CANCEL:String = "#comp7:skillSelect/confirm/cancel";
        
       
       public function COMP7()
