@@ -172,19 +172,6 @@
 			</frame>
 		</track>
 		<track>
-			<name>material property color</name>
-			<type>vector4</type>
-			<identifier>s_nd0</identifier>
-			<property>TintlColor</property>
-			<frame>
-				<startTime>0.000000</startTime>
-				<value>1.000000 1.000000 1.000000 1.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
-				<tangentMode>257</tangentMode>
-			</frame>
-		</track>
-		<track>
 			<name>material property vector4</name>
 			<type>vector4</type>
 			<identifier>s_nd0</identifier>
@@ -194,15 +181,9 @@
 				<value>0.000000 0.000000 0.000000 0.000000</value>
 				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
 				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
-				<tangentMode>256</tangentMode>
+				<tangentMode>0</tangentMode>
 			</frame>
 		</track>
-	</sequenceObject>
-	<sequenceObject>
-		<name>turret_tv_all</name>
-		<type>model</type>
-		<resource>particles/content_deferred/GFX_models/tank_customization/R87_T62A_3dst_02/R87_TV_Screen_turret_all.model</resource>
-		<castsShadow>false</castsShadow>
 	</sequenceObject>
 	<sequenceObject>
 		<name>R87_T62A_3dst_02_turret_tv_glitch</name>

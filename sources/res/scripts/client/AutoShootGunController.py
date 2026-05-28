@@ -17,7 +17,7 @@ if typing.TYPE_CHECKING:
     from GenericComponents import ParticleComponent
     from Vehicular import GunRecoilAnimator
 _logger = logging.getLogger(__name__)
-_RTPC_SHELLS_REMAIN = 'RTPC_ext_autoguns_medium_counter'
+_RTPC_SHELLS_REMAIN = 'RTPC_ext_autoguns_counter'
 _RTPC_RATE = 'RTPC_ext_autoguns_medium_rate'
 
 def getPlayerVehicleAutoShootGunController():

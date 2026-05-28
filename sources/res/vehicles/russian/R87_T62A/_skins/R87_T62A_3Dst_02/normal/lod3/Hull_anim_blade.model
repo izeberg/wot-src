@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<nodefullVisual>vehicles/russian/R87_T62A/_skins/R87_T62A_3Dst_02/normal/lod3/Hull_anim_blade</nodefullVisual>
+	<tank>true</tank>
 	<visibilityBox>
-		<min>-0.867016 0.402419 -2.995408</min>
+		<min>-0.867016 0.422750 -2.995408</min>
 		<max>0.870266 0.510579 -2.123358</max>
 	</visibilityBox>
-	<tank>true</tank>
 </root>

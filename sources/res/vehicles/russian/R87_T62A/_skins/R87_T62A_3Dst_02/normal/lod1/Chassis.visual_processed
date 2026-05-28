@@ -1099,7 +1099,7 @@
 					<collisionFlags>255</collisionFlags>
 					<property>
 						diffuseMap
-						<Texture>vehicles/russian/R87_T62A/_skins/R87_T62A_3Dst_02/T62A_3Dst_02_turret_01_AM.dds</Texture>
+						<Texture>vehicles/russian/R87_T62A/_skins/R87_T62A_3Dst_02/T62A_3dst_02_hull_01_AM.dds</Texture>
 					</property>
 					<property>
 						colorIdMap
@@ -1107,7 +1107,7 @@
 					</property>
 					<property>
 						metallicGlossMap
-						<Texture>vehicles/russian/R87_T62A/_skins/R87_T62A_3Dst_02/T62A_3Dst_02_turret_01_GMM.dds</Texture>
+						<Texture>vehicles/russian/R87_T62A/_skins/R87_T62A_3Dst_02/T62A_3dst_02_hull_01_GMM.dds</Texture>
 					</property>
 					<property>
 						g_detailPowerGloss
@@ -1133,7 +1133,7 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>7.013999 7.013999 0.000000 0.000000</Vector4>
+						<Vector4>8.028000 7.014000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_detailPower
@@ -1141,7 +1141,7 @@
 					</property>
 					<property>
 						normalMap
-						<Texture>vehicles/russian/R87_T62A/_skins/R87_T62A_3Dst_02/T62A_3Dst_02_turret_01_ANM.dds</Texture>
+						<Texture>vehicles/russian/R87_T62A/_skins/R87_T62A_3Dst_02/T62A_3dst_02_hull_01_ANM.dds</Texture>
 					</property>
 					<property>
 						doubleSided
@@ -1149,7 +1149,7 @@
 					</property>
 					<property>
 						excludeMaskAndAOMap
-						<Texture>vehicles/russian/R87_T62A/_skins/R87_T62A_3Dst_02/T62A_3Dst_02_turret_01_AO.dds</Texture>
+						<Texture>vehicles/russian/R87_T62A/_skins/R87_T62A_3Dst_02/T62A_3dst_02_hull_01_AO.dds</Texture>
 					</property>
 					<property>
 						metallicDetailMap
@@ -1198,7 +1198,7 @@
 					<collisionFlags>255</collisionFlags>
 					<property>
 						diffuseMap
-						<Texture>vehicles/russian/R87_T62A/_skins/R87_T62A_3Dst_02/T62A_3Dst_02_turret_01_AM.dds</Texture>
+						<Texture>vehicles/russian/R87_T62A/_skins/R87_T62A_3Dst_02/T62A_3dst_02_hull_01_AM.dds</Texture>
 					</property>
 					<property>
 						colorIdMap
@@ -1206,7 +1206,7 @@
 					</property>
 					<property>
 						metallicGlossMap
-						<Texture>vehicles/russian/R87_T62A/_skins/R87_T62A_3Dst_02/T62A_3Dst_02_turret_01_GMM.dds</Texture>
+						<Texture>vehicles/russian/R87_T62A/_skins/R87_T62A_3Dst_02/T62A_3dst_02_hull_01_GMM.dds</Texture>
 					</property>
 					<property>
 						g_detailPowerGloss
@@ -1232,7 +1232,7 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>7.013999 7.013999 0.000000 0.000000</Vector4>
+						<Vector4>8.028000 7.014000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_detailPower
@@ -1240,7 +1240,7 @@
 					</property>
 					<property>
 						normalMap
-						<Texture>vehicles/russian/R87_T62A/_skins/R87_T62A_3Dst_02/T62A_3Dst_02_turret_01_ANM.dds</Texture>
+						<Texture>vehicles/russian/R87_T62A/_skins/R87_T62A_3Dst_02/T62A_3dst_02_hull_01_ANM.dds</Texture>
 					</property>
 					<property>
 						doubleSided
@@ -1248,7 +1248,7 @@
 					</property>
 					<property>
 						excludeMaskAndAOMap
-						<Texture>vehicles/russian/R87_T62A/_skins/R87_T62A_3Dst_02/T62A_3Dst_02_turret_01_AO.dds</Texture>
+						<Texture>vehicles/russian/R87_T62A/_skins/R87_T62A_3Dst_02/T62A_3dst_02_hull_01_AO.dds</Texture>
 					</property>
 					<property>
 						metallicDetailMap
@@ -1276,5 +1276,5 @@
 		<max>1.609273 1.169729 3.143158</max>
 	</boundingBox>
 	<geometrySize>303670</geometrySize>
-	<minUVDensity>0.005635</minUVDensity>
+	<minUVDensity>0.002983</minUVDensity>
 </root>

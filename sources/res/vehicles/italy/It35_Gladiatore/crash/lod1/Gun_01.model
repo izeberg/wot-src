@@ -3,9 +3,9 @@
 	<parent>vehicles/italy/It35_Gladiatore/crash/lod2/Gun_01</parent>
 	<tank>true</tank>
 	<extent>64.000000</extent>
-	<nodelessVisual>vehicles/italy/It35_Gladiatore/crash/lod0/Gun_01</nodelessVisual>
 	<visibilityBox>
 		<min>-0.531684 -0.332375 -0.892099</min>
 		<max>0.538898 0.241148 7.574553</max>
 	</visibilityBox>
+	<nodelessVisual>vehicles/italy/It35_Gladiatore/crash/lod1/Gun_01</nodelessVisual>
 </root>

@@ -252,6 +252,10 @@
 				<type>primary</type>
 			</path>
 			<path>
+				particles/content_forward/pfx_textures/electric_engine.dds
+				<type>primary</type>
+			</path>
+			<path>
 				particles/content_forward/pfx_textures/ramp/ramp_missile_nurs.dds
 				<type>primary</type>
 			</path>
@@ -3259,6 +3263,10 @@
 			</path>
 			<path>
 				particles/content_deferred/pfx_textures/ramp/ramp_missle.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/electric_engine.dds
 				<type>primary</type>
 			</path>
 		</preloadTextures>

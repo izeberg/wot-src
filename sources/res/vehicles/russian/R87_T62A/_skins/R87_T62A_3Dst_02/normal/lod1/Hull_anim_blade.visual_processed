@@ -143,7 +143,7 @@
 					<identifier>tank_hull_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
 					<materialKind>0</materialKind>
-					<collisionFlags>255</collisionFlags>
+					<collisionFlags>0</collisionFlags>
 					<property>
 						alphaReference
 						<Int>128</Int>

@@ -284,8 +284,14 @@ class Videos(DynAccessor):
 
     platoon = _platoon()
 
+    class _startup(DynAccessor):
+        __slots__ = ()
+        c_1_43_showreel = DynAccessor(109439)
+
+    startup = _startup()
+
     class _vehicle(DynAccessor):
         __slots__ = ()
-        A122_TS_5 = DynAccessor(109439)
+        A122_TS_5 = DynAccessor(109440)
 
     vehicle = _vehicle()

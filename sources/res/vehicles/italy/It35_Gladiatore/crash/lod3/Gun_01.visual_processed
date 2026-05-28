@@ -55,14 +55,14 @@
 						<Texture>vehicles/italy/It35_Gladiatore/Gladiatore_turret_01_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.003607 -0.044300 3.341227</groupOrigin>
+				<groupOrigin>0.003273 -0.049485 3.352316</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.531684 -0.332375 -0.892099</min>
-		<max>0.538898 0.243775 7.574553</max>
+		<min>-0.531813 -0.331914 -0.893920</min>
+		<max>0.538359 0.232944 7.598552</max>
 	</boundingBox>
-	<geometrySize>126688</geometrySize>
-	<minUVDensity>0.006960</minUVDensity>
+	<geometrySize>12614</geometrySize>
+	<minUVDensity>0.003911</minUVDensity>
 </root>

@@ -191,10 +191,6 @@ package net.wg.gui.lobby.messengerBar.carousel
             _loc1_ = 1 / this.scaleX;
             _loc2_ = 1 / this.scaleY;
             loader.y = _iconOffsetTop * _loc2_;
-            loader.tabEnabled = loader.mouseEnabled = false;
-            loader.visible = true;
-            loader.scaleX = 1 / this.scaleX;
-            loader.scaleY = 1 / this.scaleY;
             if(this._iconAlign == TEXT_ALIGN.LEFT)
             {
                loader.x = _iconOffsetLeft * _loc1_;
@@ -205,8 +201,10 @@ package net.wg.gui.lobby.messengerBar.carousel
                {
                   throw new Error("invalid icon align value: ",this._iconAlign);
                }
-               loader.x = width * _loc1_ - loader.content.width - this._iconOffsetRight;
+               loader.x = width * _loc1_ - loader.content.width - this.scaleX * this._iconOffsetRight;
             }
+            loader.tabEnabled = loader.mouseEnabled = false;
+            loader.visible = true;
          }
       }
       

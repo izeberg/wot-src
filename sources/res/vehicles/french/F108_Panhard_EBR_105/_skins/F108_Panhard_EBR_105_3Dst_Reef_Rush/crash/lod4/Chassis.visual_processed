@@ -291,14 +291,14 @@
 						<row0>1.000000 0.000000 0.000000</row0>
 						<row1>0.000000 1.000000 0.000000</row1>
 						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>1.025544 -0.496070 2.139198</row3>
+						<row3>1.025544 -0.491427 2.139198</row3>
 					</transform>
 					<node>
 						<identifier>WD_R0</identifier>
 						<transform>
-							<row0>1.000000 0.000000 0.000000</row0>
+							<row0>1.000000 -0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
-							<row2>-0.000000 -0.000000 1.000000</row2>
+							<row2>-0.000000 0.000000 1.000000</row2>
 							<row3>0.000000 0.610064 -0.000000</row3>
 						</transform>
 						<node>
@@ -315,7 +315,7 @@
 									<row0>1.000000 0.000000 0.000000</row0>
 									<row1>0.000000 1.000000 0.000000</row1>
 									<row2>0.000000 0.000000 -1.000000</row2>
-									<row3>-1.075544 -0.613993 -2.139198</row3>
+									<row3>-1.075544 -0.618637 -2.139198</row3>
 								</transform>
 							</node>
 						</node>
@@ -325,7 +325,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 1.000000 0.000000</row1>
 								<row2>0.000000 0.000000 -1.000000</row2>
-								<row3>-1.025544 -0.613993 -2.139198</row3>
+								<row3>-1.025544 -0.618637 -2.139198</row3>
 							</transform>
 						</node>
 					</node>
@@ -335,7 +335,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 -1.000000</row2>
-							<row3>-1.025544 -0.003930 -2.139198</row3>
+							<row3>-1.025544 -0.008573 -2.139198</row3>
 						</transform>
 					</node>
 				</node>
@@ -548,7 +548,7 @@
 					<node>
 						<identifier>Lever_Start_R1</identifier>
 						<transform>
-							<row0>1.000000 -0.000000 0.000000</row0>
+							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
 							<row3>1.025544 -0.619758 0.405329</row3>
@@ -556,10 +556,10 @@
 						<node>
 							<identifier>Lever_Joint_R1</identifier>
 							<transform>
-								<row0>1.000000 0.000000 -0.000000</row0>
-								<row1>-0.000000 1.000000 -0.000000</row1>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>-0.000000 1.000000 0.000000</row1>
 								<row2>0.000000 0.000000 1.000000</row2>
-								<row3>-0.000000 0.000328 0.299414</row3>
+								<row3>0.000000 0.000328 0.299414</row3>
 							</transform>
 							<node>
 								<identifier>Track_R1</identifier>
@@ -611,7 +611,7 @@
 							<identifier>Lever_Start_R1_BlendBone</identifier>
 							<transform>
 								<row0>1.000000 0.000000 0.000000</row0>
-								<row1>-0.000000 1.000000 0.000000</row1>
+								<row1>0.000000 1.000000 0.000000</row1>
 								<row2>0.000000 0.000000 -1.000000</row2>
 								<row3>-1.025544 -0.582242 -0.405329</row3>
 							</transform>
@@ -623,7 +623,7 @@
 							<row0>1.000000 -0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>1.025544 -0.621850 -0.405000</row3>
+							<row3>1.025544 -0.619288 -0.405000</row3>
 						</transform>
 						<node>
 							<identifier>Lever_Joint_R2</identifier>
@@ -647,7 +647,7 @@
 										<row0>1.000000 -0.000000 0.000000</row0>
 										<row1>0.000000 1.000000 0.000000</row1>
 										<row2>0.000000 0.000000 -1.000000</row2>
-										<row3>-1.025544 0.000150 0.704744</row3>
+										<row3>-1.025544 -0.002412 0.704744</row3>
 									</transform>
 								</node>
 							</node>
@@ -665,7 +665,7 @@
 										<row0>1.000000 -0.000000 0.000000</row0>
 										<row1>0.000000 1.000000 0.000000</row1>
 										<row2>0.000000 0.000000 -1.000000</row2>
-										<row3>-1.125544 -0.580478 0.704744</row3>
+										<row3>-1.125544 -0.583040 0.704744</row3>
 									</transform>
 								</node>
 							</node>
@@ -675,7 +675,7 @@
 									<row0>1.000000 -0.000000 0.000000</row0>
 									<row1>0.000000 1.000000 0.000000</row1>
 									<row2>0.000000 0.000000 -1.000000</row2>
-									<row3>-1.025544 -0.580478 0.704744</row3>
+									<row3>-1.025544 -0.583040 0.704744</row3>
 								</transform>
 							</node>
 						</node>
@@ -685,7 +685,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>-0.000000 1.000000 0.000000</row1>
 								<row2>0.000000 0.000000 -1.000000</row2>
-								<row3>-1.025544 -0.580150 0.405000</row3>
+								<row3>-1.025544 -0.582712 0.405000</row3>
 							</transform>
 						</node>
 					</node>
@@ -715,11 +715,14 @@
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
 		<node>WD_R0_BlendBone</node>
 		<node>V_BlendBone</node>
-		<node>Track_R0_BlendBone</node>
-		<node>Lever_Start_R1_BlendBone</node>
+		<node>W_R0_BlendBone</node>
+		<node>Track_R1_BlendBone</node>
+		<node>Lever_Joint_R1_BlendBone</node>
 		<node>WD_R1_BlendBone</node>
 		<node>Track_R3_BlendBone</node>
-		<node>Lever_Start_R2_BlendBone</node>
+		<node>W_R1_BlendBone</node>
+		<node>Track_R2_BlendBone</node>
+		<node>Lever_Joint_R2_BlendBone</node>
 		<geometry>
 			<vertices>chassis_R_Shape.vertices</vertices>
 			<stream>chassis_R_Shape.colour</stream>
@@ -763,7 +766,7 @@
 						<Texture>vehicles/french/F108_Panhard_EBR_105/_skins/F108_Panhard_EBR_105_3Dst_Reef_Rush/Panhard_EBR_105_3Dst_Reef_Rush_proxy_AO.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.901232 0.607034 0.002941</groupOrigin>
+				<groupOrigin>0.901232 0.609356 0.000000</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -772,10 +775,14 @@
 		<node>WD_L0_BlendBone</node>
 		<node>V_BlendBone</node>
 		<node>Track_L0_BlendBone</node>
-		<node>Lever_Start_L1_BlendBone</node>
+		<node>W_L0_BlendBone</node>
+		<node>Track_L1_BlendBone</node>
+		<node>Lever_Joint_L1_BlendBone</node>
 		<node>WD_L1_BlendBone</node>
 		<node>Track_L3_BlendBone</node>
-		<node>Lever_Start_L2_BlendBone</node>
+		<node>W_L1_BlendBone</node>
+		<node>Track_L2_BlendBone</node>
+		<node>Lever_Joint_L2_BlendBone</node>
 		<geometry>
 			<vertices>chassis_L_Shape.vertices</vertices>
 			<stream>chassis_L_Shape.colour</stream>
@@ -819,15 +826,15 @@
 						<Texture>vehicles/french/F108_Panhard_EBR_105/_skins/F108_Panhard_EBR_105_3Dst_Reef_Rush/Panhard_EBR_105_3Dst_Reef_Rush_proxy_AO.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.901232 0.607013 0.000000</groupOrigin>
+				<groupOrigin>-0.901232 0.605479 0.000000</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-1.214208 -0.059809 -2.719961</min>
-		<max>1.214208 1.273878 2.714079</max>
+		<min>-1.214208 -0.059809 -2.714079</min>
+		<max>1.214208 1.278521 2.714079</max>
 	</boundingBox>
 	<geometrySize>12168</geometrySize>
-	<minUVDensity>0.006976</minUVDensity>
+	<minUVDensity>0.006994</minUVDensity>
 </root>

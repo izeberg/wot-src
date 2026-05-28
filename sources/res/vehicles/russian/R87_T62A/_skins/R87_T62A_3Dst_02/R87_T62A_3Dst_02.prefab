@@ -19,11 +19,6 @@
 		</GameObject>
 		<GameObject>
 			<name>Gun_GO</name>
-			<UUID>7c5dd56a-c0e7-4d30-940a-9ec402d3570c</UUID>
-			<flags>0</flags>
-		</GameObject>
-		<GameObject>
-			<name>Gun2_GO</name>
 			<UUID>a3a58397-73c0-320b-b776-290091548e6e</UUID>
 			<flags>0</flags>
 		</GameObject>
@@ -59,16 +54,6 @@
 					<property>
 						<name>Parent</name>
 						<link>401cefd3-30d4-4a9f-922d-57e531d52c5c</link>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>4</objectIndex>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Parent</name>
-						<link>7c5dd56a-c0e7-4d30-940a-9ec402d3570c</link>
 					</property>
 				</config>
 			</component>
@@ -148,30 +133,6 @@
 					</property>
 				</config>
 			</component>
-			<component>
-				<objectIndex>4</objectIndex>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Position</name>
-						<value>
-							0.294876 0.34 -0.0153809
-							<!--BW_String-->
-						</value>
-					</property>
-					<property>
-						<name>Scale</name>
-						<value>1 1 1</value>
-					</property>
-					<property>
-						<name>Rotation</name>
-						<value>
-							-0.0479966 0 0
-							<!--BW_String-->
-						</value>
-					</property>
-				</config>
-			</component>
 		</ComponentPool>
 		<ComponentPool>
 			<type>Animator</type>
@@ -187,171 +148,6 @@
 					<property>
 						<name>Layers</name>
 						<collection>
-							<item>
-								<object>
-									<property>
-										<name>Path</name>
-										<isAsset>true</isAsset>
-										<value>vehicles/russian/R87_T62A/_skins/R87_T62A_3Dst_02/Sequence/Hull_anim_blade_Start.seq</value>
-									</property>
-									<property>
-										<name>Properties</name>
-										<object>
-											<property>
-												<name>delay</name>
-												<value>0</value>
-											</property>
-											<property>
-												<name>speed</name>
-												<value>1</value>
-											</property>
-											<property>
-												<name>loop</name>
-												<value>0</value>
-											</property>
-											<property>
-												<name>loopCount</name>
-												<value>-1</value>
-											</property>
-										</object>
-									</property>
-									<property>
-										<name>Clip</name>
-										<value>&lt;Default Clip&gt;</value>
-									</property>
-									<property>
-										<name>LayerName</name>
-										<value>start</value>
-									</property>
-									<property>
-										<name>Weight</name>
-										<value>1</value>
-									</property>
-									<property>
-										<name>LOD Scale</name>
-										<value>1</value>
-									</property>
-									<property>
-										<name>Auto Start</name>
-										<value>0</value>
-									</property>
-									<property>
-										<name>Graphics preset</name>
-										<value>2</value>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>Path</name>
-										<isAsset>true</isAsset>
-										<value>vehicles/russian/R87_T62A/_skins/R87_T62A_3Dst_02/Sequence/Hull_anim_blade_Work.seq</value>
-									</property>
-									<property>
-										<name>Properties</name>
-										<object>
-											<property>
-												<name>delay</name>
-												<value>0</value>
-											</property>
-											<property>
-												<name>speed</name>
-												<value>
-													0.5
-													<!--BW_String-->
-												</value>
-											</property>
-											<property>
-												<name>loop</name>
-												<value>1</value>
-											</property>
-											<property>
-												<name>loopCount</name>
-												<value>-1</value>
-											</property>
-										</object>
-									</property>
-									<property>
-										<name>Clip</name>
-										<value>&lt;Default Clip&gt;</value>
-									</property>
-									<property>
-										<name>LayerName</name>
-										<value>work</value>
-									</property>
-									<property>
-										<name>Weight</name>
-										<value>1</value>
-									</property>
-									<property>
-										<name>LOD Scale</name>
-										<value>1</value>
-									</property>
-									<property>
-										<name>Auto Start</name>
-										<value>0</value>
-									</property>
-									<property>
-										<name>Graphics preset</name>
-										<value>2</value>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>Path</name>
-										<isAsset>true</isAsset>
-										<value>particles/Tank/customization/R87_T62A_3dst_02/R87_hull.seq</value>
-									</property>
-									<property>
-										<name>Properties</name>
-										<object>
-											<property>
-												<name>delay</name>
-												<value>0</value>
-											</property>
-											<property>
-												<name>speed</name>
-												<value>1</value>
-											</property>
-											<property>
-												<name>loop</name>
-												<value>1</value>
-											</property>
-											<property>
-												<name>loopCount</name>
-												<value>-1</value>
-											</property>
-										</object>
-									</property>
-									<property>
-										<name>Clip</name>
-										<value>&lt;Default Clip&gt;</value>
-									</property>
-									<property>
-										<name>LayerName</name>
-										<value>hull_noise</value>
-									</property>
-									<property>
-										<name>Weight</name>
-										<value>1</value>
-									</property>
-									<property>
-										<name>LOD Scale</name>
-										<value>1</value>
-									</property>
-									<property>
-										<name>Auto Start</name>
-										<value>1</value>
-									</property>
-									<property>
-										<name>Graphics preset</name>
-										<value>2</value>
-									</property>
-								</object>
-							</item>
 							<item>
 								<object>
 									<property>
@@ -394,7 +190,7 @@
 									</property>
 									<property>
 										<name>LOD Scale</name>
-										<value>1</value>
+										<value>3</value>
 									</property>
 									<property>
 										<name>Auto Start</name>
@@ -448,7 +244,7 @@
 									</property>
 									<property>
 										<name>LOD Scale</name>
-										<value>1</value>
+										<value>3</value>
 									</property>
 									<property>
 										<name>Auto Start</name>
@@ -460,12 +256,66 @@
 									</property>
 								</object>
 							</item>
+							<item>
+								<object>
+									<property>
+										<name>Path</name>
+										<isAsset>true</isAsset>
+										<value>vehicles/russian/R87_T62A/_skins/R87_T62A_3Dst_02/Sequence/Hull_anim_blade_Work.seq</value>
+									</property>
+									<property>
+										<name>Properties</name>
+										<object>
+											<property>
+												<name>delay</name>
+												<value>0</value>
+											</property>
+											<property>
+												<name>speed</name>
+												<value>1</value>
+											</property>
+											<property>
+												<name>loop</name>
+												<value>1</value>
+											</property>
+											<property>
+												<name>loopCount</name>
+												<value>-1</value>
+											</property>
+										</object>
+									</property>
+									<property>
+										<name>Clip</name>
+										<value>&lt;Default Clip&gt;</value>
+									</property>
+									<property>
+										<name>LayerName</name>
+										<value>work</value>
+									</property>
+									<property>
+										<name>Weight</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>LOD Scale</name>
+										<value>3</value>
+									</property>
+									<property>
+										<name>Auto Start</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>Graphics preset</name>
+										<value>2</value>
+									</property>
+								</object>
+							</item>
 						</collection>
 					</property>
 					<property>
 						<name>Path</name>
 						<isAsset>true</isAsset>
-						<value>vehicles/russian/R87_T62A/_skins/R87_T62A_3Dst_02/Sequence/Hull_anim_blade_Start.seq</value>
+						<value>particles/Tank/customization/R87_T62A_3dst_02/R87_hull_exhaust_pre-battle.seq</value>
 					</property>
 					<property>
 						<name>Delay</name>
@@ -538,7 +388,7 @@
 									</property>
 									<property>
 										<name>LOD Scale</name>
-										<value>1</value>
+										<value>3</value>
 									</property>
 									<property>
 										<name>Auto Start</name>
@@ -592,7 +442,7 @@
 									</property>
 									<property>
 										<name>LOD Scale</name>
-										<value>1</value>
+										<value>3</value>
 									</property>
 									<property>
 										<name>Auto Start</name>
@@ -630,7 +480,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>4</objectIndex>
+				<objectIndex>3</objectIndex>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -682,7 +532,7 @@
 									</property>
 									<property>
 										<name>LOD Scale</name>
-										<value>1</value>
+										<value>3</value>
 									</property>
 									<property>
 										<name>Auto Start</name>
@@ -736,7 +586,7 @@
 									</property>
 									<property>
 										<name>LOD Scale</name>
-										<value>1</value>
+										<value>3</value>
 									</property>
 									<property>
 										<name>Auto Start</name>
@@ -878,7 +728,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>4</objectIndex>
+				<objectIndex>3</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -960,7 +810,7 @@
 					</property>
 					<property>
 						<name>Cast Shadows</name>
-						<value>1</value>
+						<value>0</value>
 					</property>
 					<property>
 						<name>Parts</name>

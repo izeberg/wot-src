@@ -54,54 +54,54 @@
 				<node>
 					<identifier>joint3</identifier>
 					<transform>
-						<row0>0.999995 -0.001919 0.002330</row0>
-						<row1>0.000678 0.895005 0.446055</row1>
-						<row2>-0.002942 -0.446051 0.895003</row2>
+						<row0>0.999995 -0.001378 0.002720</row0>
+						<row1>0.000020 0.895015 0.446036</row1>
+						<row2>-0.003049 -0.446034 0.895011</row2>
 						<row3>0.286404 -0.041328 0.547069</row3>
 					</transform>
 					<node>
 						<identifier>joint4</identifier>
 						<transform>
-							<row0>0.999997 -0.000736 -0.002029</row0>
-							<row1>-0.000061 0.929963 -0.367652</row1>
-							<row2>0.002157 0.367651 0.929961</row2>
+							<row0>0.999998 -0.000737 -0.002029</row0>
+							<row1>-0.000061 0.929969 -0.367638</row1>
+							<row2>0.002158 0.367638 0.929967</row2>
 							<row3>0.001429 0.315243 0.138292</row3>
 						</transform>
 						<node>
 							<identifier>joint5</identifier>
 							<transform>
 								<row0>1.000000 -0.000000 0.000000</row0>
-								<row1>-0.000000 1.000000 -0.000000</row1>
-								<row2>-0.000000 -0.000000 1.000000</row2>
+								<row1>-0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 1.000000</row2>
 								<row3>0.000290 0.002104 -0.654942</row3>
 							</transform>
 							<node>
 								<identifier>joint5_BlendBone</identifier>
 								<transform>
-									<row0>0.999999 0.001651 -0.000329</row0>
-									<row1>-0.001673 0.996314 -0.085765</row1>
-									<row2>-0.000186 -0.085765 -0.996315</row2>
-									<row3>-0.287781 -0.250641 -0.138070</row3>
+									<row0>0.999999 0.001080 -0.000670</row0>
+									<row1>-0.001133 0.996315 -0.085758</row1>
+									<row2>-0.000575 -0.085759 -0.996316</row2>
+									<row3>-0.287972 -0.250477 -0.137968</row3>
 								</transform>
 							</node>
 						</node>
 						<node>
 							<identifier>joint4_BlendBone</identifier>
 							<transform>
-								<row0>0.999999 0.001651 -0.000329</row0>
-								<row1>-0.001673 0.996314 -0.085765</row1>
-								<row2>-0.000186 -0.085765 -0.996315</row2>
-								<row3>-0.287491 -0.248537 -0.793012</row3>
+								<row0>0.999999 0.001080 -0.000670</row0>
+								<row1>-0.001133 0.996315 -0.085758</row1>
+								<row2>-0.000575 -0.085759 -0.996316</row2>
+								<row3>-0.287681 -0.248373 -0.792911</row3>
 							</transform>
 						</node>
 					</node>
 					<node>
 						<identifier>joint3_BlendBone</identifier>
 						<transform>
-							<row0>0.999995 0.000678 -0.002942</row0>
-							<row1>-0.001919 0.895005 -0.446051</row1>
-							<row2>-0.002330 -0.446055 -0.895003</row2>
-							<row3>-0.287757 -0.207228 -0.507220</row3>
+							<row0>0.999995 0.000020 -0.003049</row0>
+							<row1>-0.001378 0.895015 -0.446034</row1>
+							<row2>-0.002720 -0.446036 -0.895011</row2>
+							<row3>-0.287948 -0.207029 -0.507193</row3>
 						</transform>
 					</node>
 				</node>
@@ -155,15 +155,15 @@
 					<collisionFlags>255</collisionFlags>
 					<property>
 						diffuseMap
-						<Texture>vehicles/russian/R87_T62A/_skins/R87_T62A_3Dst_02/T62A_3Dst_02_turret_01_AM.dds</Texture>
+						<Texture>vehicles/russian/R87_T62A/_skins/R87_T62A_3Dst_02/T62A_3dst_02_hull_01_AM.dds</Texture>
 					</property>
 					<property>
 						colorIdMap
-						<Texture>vehicles/russian/R87_T62A/T62A_guns_ID.dds</Texture>
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<property>
 						metallicGlossMap
-						<Texture>vehicles/russian/R87_T62A/_skins/R87_T62A_3Dst_02/T62A_3Dst_02_turret_01_GMM.dds</Texture>
+						<Texture>vehicles/russian/R87_T62A/_skins/R87_T62A_3Dst_02/T62A_3dst_02_hull_01_GMM.dds</Texture>
 					</property>
 					<property>
 						g_detailPowerGloss
@@ -189,7 +189,7 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>7.013999 7.013999 0.000000 0.000000</Vector4>
+						<Vector4>8.028000 7.014000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_detailPower
@@ -197,11 +197,11 @@
 					</property>
 					<property>
 						normalMap
-						<Texture>vehicles/russian/R87_T62A/_skins/R87_T62A_3Dst_02/T62A_3Dst_02_turret_01_ANM.dds</Texture>
+						<Texture>vehicles/russian/R87_T62A/_skins/R87_T62A_3Dst_02/T62A_3dst_02_hull_01_ANM.dds</Texture>
 					</property>
 					<property>
 						excludeMaskAndAOMap
-						<Texture>vehicles/russian/R87_T62A/_skins/R87_T62A_3Dst_02/T62A_3Dst_02_turret_01_AO.dds</Texture>
+						<Texture>vehicles/russian/R87_T62A/_skins/R87_T62A_3Dst_02/T62A_3dst_02_hull_01_AO.dds</Texture>
 					</property>
 					<property>
 						metallicDetailMap
@@ -219,15 +219,15 @@
 						</Float>
 					</property>
 				</material>
-				<groupOrigin>0.224556 0.277679 -2.115308</groupOrigin>
+				<groupOrigin>0.224418 0.277676 -2.115308</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-0.427532 -0.207097 -0.382513</min>
-		<max>0.875812 0.802647 4.613091</max>
+		<min>-0.427532 -0.207097 -0.382476</min>
+		<max>0.876368 0.762449 4.613091</max>
 	</boundingBox>
 	<geometrySize>139252</geometrySize>
-	<minUVDensity>0.004907</minUVDensity>
+	<minUVDensity>0.002454</minUVDensity>
 </root>

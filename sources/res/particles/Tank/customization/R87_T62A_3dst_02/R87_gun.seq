@@ -16,7 +16,7 @@
 			<type>vector3</type>
 			<frame>
 				<startTime>0.000000</startTime>
-				<value>-0.002502 -0.033000 0.116000</value>
+				<value>0.295000 0.310000 0.100000</value>
 				<inTangent>0.000000 0.000000 0.000000</inTangent>
 				<outTangent>0.000000 0.000000 0.000000</outTangent>
 				<tangentMode>0</tangentMode>
@@ -27,7 +27,7 @@
 			<type>vector3</type>
 			<frame>
 				<startTime>0.000000</startTime>
-				<value>4.000000 0.000000 0.000000</value>
+				<value>-2.750000 0.000000 0.000000</value>
 				<inTangent>0.000000 0.000000 0.000000</inTangent>
 				<outTangent>0.000000 0.000000 0.000000</outTangent>
 				<tangentMode>0</tangentMode>
@@ -55,50 +55,29 @@
 			<frame>
 				<startTime>3.966667</startTime>
 				<value>1.000000 1.000000 1.000000 1.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 2.999999</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 2.999999</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>4.066667</startTime>
-				<value>1.000000 1.000000 1.000000 1.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 -9.750009</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 -9.750009</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>4.100000</startTime>
-				<value>1.000000 1.000000 1.000000 0.350000</value>
-				<inTangent>0.000000 0.000000 0.000000 -4.875004</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 -4.875004</outTangent>
+				<inTangent>0.000000 0.000000 0.000000 2.999994</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 2.999994</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 			<frame>
 				<startTime>4.166667</startTime>
 				<value>1.000000 1.000000 1.000000 1.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 4.875004</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 4.875004</outTangent>
+				<inTangent>0.000000 0.000000 0.000000 -3.750004</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -3.750004</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 			<frame>
-				<startTime>4.266667</startTime>
-				<value>1.000000 1.000000 1.000000 1.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 -7.500007</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 -7.500007</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>4.333333</startTime>
+				<startTime>4.300000</startTime>
 				<value>1.000000 1.000000 1.000000 0.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 7.500007</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 7.500007</outTangent>
+				<inTangent>0.000000 0.000000 0.000000 3.750004</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 3.750004</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 			<frame>
 				<startTime>4.366667</startTime>
 				<value>1.000000 1.000000 1.000000 1.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 15.000014</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 15.000014</outTangent>
+				<inTangent>0.000000 0.000000 0.000000 7.500007</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 7.500007</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 			<frame>
@@ -126,70 +105,35 @@
 				<startTime>5.766667</startTime>
 				<value>1.000000 1.000000 1.000000 1.000000</value>
 				<inTangent>-0.000000 -0.000000 -0.000000 2.142857</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 -30.000029</outTangent>
-				<tangentMode>257</tangentMode>
-			</frame>
-			<frame>
-				<startTime>5.800000</startTime>
-				<value>1.000000 1.000000 1.000000 0.000000</value>
-				<inTangent>-0.000000 -0.000000 -0.000000 -30.000029</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 15.000014</outTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
 				<tangentMode>257</tangentMode>
 			</frame>
 			<frame>
 				<startTime>5.866667</startTime>
 				<value>1.000000 1.000000 1.000000 1.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 7.500007</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 7.500007</outTangent>
+				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 			<frame>
 				<startTime>6.433334</startTime>
 				<value>1.000000 1.000000 1.000000 1.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 -7.500007</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 -7.500007</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>6.500000</startTime>
-				<value>1.000000 1.000000 1.000000 0.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 7.500007</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 7.500007</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>6.533334</startTime>
-				<value>1.000000 1.000000 1.000000 1.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 15.000014</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 15.000014</outTangent>
+				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 			<frame>
 				<startTime>6.933334</startTime>
 				<value>1.000000 1.000000 1.000000 1.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 -9.750009</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 -9.750009</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>6.966667</startTime>
-				<value>1.000000 1.000000 1.000000 0.350000</value>
-				<inTangent>0.000000 0.000000 0.000000 -4.875004</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 -4.875004</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>7.033334</startTime>
-				<value>1.000000 1.000000 1.000000 1.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 -2.625003</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 -2.625003</outTangent>
+				<inTangent>0.000000 0.000000 0.000000 -3.000011</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -3.000011</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 			<frame>
 				<startTime>7.100000</startTime>
 				<value>1.000000 1.000000 1.000000 0.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 -7.764713</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 -7.764713</outTangent>
+				<inTangent>0.000000 0.000000 0.000000 -3.264717</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -3.264717</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 			<frame>
@@ -202,57 +146,127 @@
 			<frame>
 				<startTime>8.766667</startTime>
 				<value>1.000000 1.000000 1.000000 1.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 -9.159240</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 -9.159240</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>8.800000</startTime>
-				<value>1.000000 1.000000 1.000000 0.350000</value>
-				<inTangent>0.000000 0.000000 0.000000 -0.000279</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 -0.000279</outTangent>
+				<inTangent>0.000000 0.000000 0.000000 0.590909</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.590909</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 			<frame>
 				<startTime>8.833334</startTime>
 				<value>1.000000 1.000000 1.000000 1.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 9.749869</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 9.749869</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>8.933333</startTime>
-				<value>1.000000 1.000000 1.000000 1.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 -4.875004</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 -4.875004</outTangent>
+				<inTangent>0.000000 0.000000 0.000000 -1.950007</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -1.950007</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 			<frame>
 				<startTime>9.000000</startTime>
 				<value>1.000000 1.000000 1.000000 0.350000</value>
-				<inTangent>0.000000 0.000000 0.000000 4.874865</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 4.874865</outTangent>
+				<inTangent>0.000000 0.000000 0.000000 7.799862</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 7.799862</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 			<frame>
 				<startTime>9.033334</startTime>
 				<value>1.000000 1.000000 1.000000 1.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 9.749869</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 9.749869</outTangent>
+				<inTangent>0.000000 0.000000 0.000000 8.083204</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 8.083204</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 			<frame>
-				<startTime>9.133334</startTime>
-				<value>1.000000 1.000000 1.000000 1.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 -7.500007</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 -7.500007</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>9.200001</startTime>
+				<startTime>9.333334</startTime>
 				<value>1.000000 1.000000 1.000000 0.000000</value>
-				<inTangent>-0.000000 -0.000000 -0.000000 -15.000014</inTangent>
-				<outTangent>-0.000000 -0.000000 -0.000000 -15.000014</outTangent>
+				<inTangent>0.000000 0.000000 0.000000 0.021995</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.021995</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>15.266667</startTime>
+				<value>1.000000 1.000000 1.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 5.999989</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>15.433334</startTime>
+				<value>1.000000 1.000000 1.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 2.999994</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 2.999994</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>15.533335</startTime>
+				<value>1.000000 1.000000 1.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>15.633334</startTime>
+				<value>1.000000 1.000000 1.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>15.833334</startTime>
+				<value>1.000000 1.000000 1.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 -1.153843</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -1.153843</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>16.266668</startTime>
+				<value>1.000000 1.000000 1.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.049621</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.049621</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>20.833334</startTime>
+				<value>1.000000 1.000000 1.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 -0.015641</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -0.015641</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>21.000002</startTime>
+				<value>1.000000 1.000000 1.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 2.999977</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 2.999977</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>21.100002</startTime>
+				<value>1.000000 1.000000 1.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>21.500002</startTime>
+				<value>1.000000 1.000000 1.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>21.600002</startTime>
+				<value>1.000000 1.000000 1.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 -7.500114</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -7.500114</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>21.666668</startTime>
+				<value>1.000000 1.000000 1.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 -7.500114</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -7.500114</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>22.000002</startTime>
+				<value>1.000000 1.000000 1.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -0.000000</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 		</track>
@@ -286,13 +300,13 @@
 				<startTime>15.233335</startTime>
 				<value>1.000000 1.000000 1.000000 1.000000</value>
 				<inTangent>-0.000000 -0.000000 -0.000000 -0.000000</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 -10.000057</outTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
 				<tangentMode>257</tangentMode>
 			</frame>
 			<frame>
-				<startTime>15.333334</startTime>
-				<value>1.000000 1.000000 1.000000 0.000000</value>
-				<inTangent>-0.000000 -0.000000 -0.000000 -10.000057</inTangent>
+				<startTime>25.000002</startTime>
+				<value>1.000000 1.000000 1.000000 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.000000</inTangent>
 				<outTangent>-0.000000 -0.000000 -0.000000 -10.000057</outTangent>
 				<tangentMode>257</tangentMode>
 			</frame>
@@ -347,36 +361,22 @@
 			<frame>
 				<startTime>5.133334</startTime>
 				<value>0.000000 0.000000 0.000000 0.000000</value>
-				<inTangent>0.000000 -0.250000 -1.000001 0.000000</inTangent>
-				<outTangent>0.000000 -0.250000 -1.000001 0.000000</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>5.233334</startTime>
-				<value>0.000000 -0.050000 -0.200000 0.000000</value>
-				<inTangent>0.000000 -0.250000 -1.000001 0.000000</inTangent>
-				<outTangent>0.000000 -0.250000 -1.000001 0.000000</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>5.333333</startTime>
-				<value>0.000000 -0.050000 -0.200000 0.000000</value>
-				<inTangent>0.000000 0.187500 0.749998 0.000000</inTangent>
-				<outTangent>0.000000 0.187500 0.749998 0.000000</outTangent>
+				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 			<frame>
 				<startTime>5.466667</startTime>
 				<value>0.000000 0.000000 0.000000 0.000000</value>
-				<inTangent>0.000000 0.187500 0.749998 0.000000</inTangent>
-				<outTangent>0.000000 0.187500 0.749998 0.000000</outTangent>
+				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 			<frame>
 				<startTime>6.100000</startTime>
 				<value>0.000000 0.000000 0.000000 0.000000</value>
-				<inTangent>0.000000 -0.750001 -1.500001 0.000000</inTangent>
-				<outTangent>0.000000 -0.750001 -1.500001 0.000000</outTangent>
+				<inTangent>0.000000 -0.749995 -1.499991 0.000000</inTangent>
+				<outTangent>0.000000 -0.749995 -1.499991 0.000000</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 			<frame>
@@ -410,50 +410,29 @@
 			<frame>
 				<startTime>7.633334</startTime>
 				<value>0.000000 0.000000 0.000000 0.000000</value>
-				<inTangent>0.000000 -0.300000 -0.300000 0.000000</inTangent>
-				<outTangent>0.000000 -0.300000 -0.300000 0.000000</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>7.800000</startTime>
-				<value>0.000000 -0.100000 -0.100000 0.000000</value>
-				<inTangent>0.000000 -0.799998 -0.799998 0.000000</inTangent>
-				<outTangent>0.000000 -0.799998 -0.799998 0.000000</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>7.900001</startTime>
-				<value>0.000000 -0.200000 -0.200000 0.000000</value>
-				<inTangent>0.000000 0.100001 0.100001 0.000000</inTangent>
-				<outTangent>0.000000 0.100001 0.100001 0.000000</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>8.066668</startTime>
-				<value>0.000000 0.000000 0.000000 0.000000</value>
-				<inTangent>0.000000 0.599999 0.599999 0.000000</inTangent>
-				<outTangent>0.000000 0.599999 0.599999 0.000000</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>8.400001</startTime>
-				<value>0.000000 0.000000 0.000000 0.000000</value>
-				<inTangent>0.000000 -0.750001 -0.750001 0.000000</inTangent>
-				<outTangent>0.000000 -0.750001 -0.750001 0.000000</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>8.533334</startTime>
-				<value>0.000000 -0.200000 -0.200000 0.000000</value>
 				<inTangent>0.000000 -0.375000 -0.375000 0.000000</inTangent>
 				<outTangent>0.000000 -0.375000 -0.375000 0.000000</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 			<frame>
+				<startTime>7.900001</startTime>
+				<value>0.000000 -0.200000 -0.200000 0.000000</value>
+				<inTangent>0.000000 -0.175000 -0.175000 0.000000</inTangent>
+				<outTangent>0.000000 -0.175000 -0.175000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>8.400001</startTime>
+				<value>0.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.012500 0.012500 0.000000</inTangent>
+				<outTangent>0.000000 0.012500 0.012500 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
 				<startTime>8.666667</startTime>
 				<value>0.000000 -0.100000 -0.100000 0.000000</value>
-				<inTangent>0.000000 0.874998 0.874998 0.000000</inTangent>
-				<outTangent>0.000000 0.874998 0.874998 0.000000</outTangent>
+				<inTangent>0.000000 0.312498 0.312498 0.000000</inTangent>
+				<outTangent>0.000000 0.312498 0.312498 0.000000</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 			<frame>
@@ -464,585 +443,77 @@
 				<tangentMode>0</tangentMode>
 			</frame>
 			<frame>
-				<startTime>9.133334</startTime>
+				<startTime>9.433333</startTime>
 				<value>0.000000 0.000000 0.000000 0.000000</value>
 				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
 				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 			<frame>
-				<startTime>9.200001</startTime>
+				<startTime>15.266667</startTime>
 				<value>0.000000 0.000000 0.000000 0.000000</value>
 				<inTangent>-0.000000 -0.000000 -0.000000 -0.000000</inTangent>
-				<outTangent>-0.000000 -0.000000 -0.000000 -0.000000</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-		</track>
-	</sequenceObject>
-	<sequenceObject>
-		<name>gun_tv_02</name>
-		<type>model</type>
-		<resource>particles/content_deferred/GFX_models/tank_customization/R87_T62A_3dst_02/R87_TV_Screen_gun_02.model</resource>
-		<castsShadow>false</castsShadow>
-		<track>
-			<name>position</name>
-			<type>vector3</type>
-			<frame>
-				<startTime>0.000000</startTime>
-				<value>-0.002502 -0.033000 0.116000</value>
-				<inTangent>0.000000 0.000000 0.000000</inTangent>
-				<outTangent>0.000000 0.000000 0.000000</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-		</track>
-		<track>
-			<name>rotationEuler</name>
-			<type>vector3</type>
-			<frame>
-				<startTime>0.000000</startTime>
-				<value>4.000000 0.000000 0.000000</value>
-				<inTangent>0.000000 0.000000 0.000000</inTangent>
-				<outTangent>0.000000 0.000000 0.000000</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-		</track>
-		<track>
-			<name>material property color</name>
-			<type>vector4</type>
-			<identifier>s_nd1</identifier>
-			<property>TintlColor</property>
-			<frame>
-				<startTime>0.000000</startTime>
-				<value>1.000000 1.000000 1.000000 0.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<outTangent>0.000000 -0.749995 -0.749995 0.000000</outTangent>
 				<tangentMode>257</tangentMode>
 			</frame>
 			<frame>
-				<startTime>15.300001</startTime>
-				<value>1.000000 1.000000 1.000000 0.000000</value>
-				<inTangent>-0.000000 -0.000000 -0.000000 -0.000000</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 15.000014</outTangent>
-				<tangentMode>257</tangentMode>
-			</frame>
-			<frame>
-				<startTime>15.366668</startTime>
-				<value>1.000000 1.000000 1.000000 1.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 -0.802019</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 -0.802019</outTangent>
-				<tangentMode>771</tangentMode>
-			</frame>
-			<frame>
-				<startTime>15.400001</startTime>
-				<value>1.000000 1.000000 1.000000 0.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 -7.500222</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 -7.500222</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>15.466667</startTime>
-				<value>1.000000 1.000000 1.000000 1.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 45.252449</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 45.252449</outTangent>
-				<tangentMode>771</tangentMode>
-			</frame>
-			<frame>
-				<startTime>15.933334</startTime>
-				<value>1.000000 1.000000 1.000000 1.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 -44.401806</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 -44.401806</outTangent>
-				<tangentMode>771</tangentMode>
-			</frame>
-			<frame>
-				<startTime>15.966667</startTime>
-				<value>1.000000 1.000000 1.000000 0.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>16.000000</startTime>
-				<value>1.000000 1.000000 1.000000 1.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 15.000229</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 15.000229</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>16.066668</startTime>
-				<value>1.000000 1.000000 1.000000 1.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 -15.000229</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 -15.000229</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>16.100000</startTime>
-				<value>1.000000 1.000000 1.000000 0.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 -0.000858</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 -0.000858</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>16.133335</startTime>
-				<value>1.000000 1.000000 1.000000 1.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 161.750824</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 161.750824</outTangent>
-				<tangentMode>771</tangentMode>
-			</frame>
-			<frame>
-				<startTime>16.500000</startTime>
-				<value>1.000000 1.000000 1.000000 1.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 -189.376816</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 -189.376816</outTangent>
-				<tangentMode>771</tangentMode>
-			</frame>
-			<frame>
-				<startTime>16.566668</startTime>
-				<value>1.000000 1.000000 1.000000 0.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 7.500329</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 7.500329</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>16.600000</startTime>
-				<value>1.000000 1.000000 1.000000 1.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 15.000229</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 15.000229</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>16.633335</startTime>
-				<value>1.000000 1.000000 1.000000 1.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 -15.000229</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 -15.000229</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>16.666668</startTime>
-				<value>1.000000 1.000000 1.000000 0.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>16.700001</startTime>
-				<value>1.000000 1.000000 1.000000 1.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 164.046173</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 164.046173</outTangent>
-				<tangentMode>771</tangentMode>
-			</frame>
-			<frame>
-				<startTime>16.933334</startTime>
-				<value>1.000000 1.000000 1.000000 1.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 -26.959890</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 -26.959890</outTangent>
-				<tangentMode>771</tangentMode>
-			</frame>
-			<frame>
-				<startTime>17.000000</startTime>
-				<value>1.000000 1.000000 1.000000 0.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 7.499256</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 7.499256</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>17.033335</startTime>
-				<value>1.000000 1.000000 1.000000 1.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 14.999371</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 14.999371</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>17.100000</startTime>
-				<value>1.000000 1.000000 1.000000 1.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 -14.509104</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 -14.509104</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>17.133335</startTime>
-				<value>1.000000 1.000000 1.000000 0.032686</value>
-				<inTangent>0.000000 0.000000 0.000000 -70.055977</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 -70.055977</outTangent>
-				<tangentMode>771</tangentMode>
-			</frame>
-			<frame>
-				<startTime>17.233334</startTime>
-				<value>1.000000 1.000000 1.000000 1.002506</value>
-				<inTangent>0.000000 0.000000 0.000000 305.308044</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 305.308044</outTangent>
-				<tangentMode>771</tangentMode>
-			</frame>
-			<frame>
-				<startTime>17.766668</startTime>
-				<value>1.000000 1.000000 1.000000 1.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 -18.121855</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 -18.121855</outTangent>
-				<tangentMode>771</tangentMode>
-			</frame>
-			<frame>
-				<startTime>17.833334</startTime>
-				<value>1.000000 1.000000 1.000000 0.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 7.500114</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 7.500114</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>17.866667</startTime>
-				<value>1.000000 1.000000 1.000000 1.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 15.000229</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 15.000229</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>17.900002</startTime>
-				<value>1.000000 1.000000 1.000000 1.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 -7.500114</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 -7.500114</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>17.966667</startTime>
-				<value>1.000000 1.000000 1.000000 0.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 7.500114</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 7.500114</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>18.000000</startTime>
-				<value>1.000000 1.000000 1.000000 1.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 87.288086</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 87.288086</outTangent>
-				<tangentMode>771</tangentMode>
-			</frame>
-			<frame>
-				<startTime>19.733334</startTime>
-				<value>1.000000 1.000000 1.000000 1.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 -7.499900</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 -7.499900</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>19.800001</startTime>
-				<value>1.000000 1.000000 1.000000 0.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 0.000215</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 0.000215</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>19.866667</startTime>
-				<value>1.000000 1.000000 1.000000 1.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 7.500114</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 7.500114</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>19.933334</startTime>
-				<value>1.000000 1.000000 1.000000 1.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 -15.000229</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 -15.000229</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>19.966667</startTime>
-				<value>1.000000 1.000000 1.000000 0.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 -26.812132</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 -26.812132</outTangent>
-				<tangentMode>771</tangentMode>
-			</frame>
-			<frame>
-				<startTime>20.066668</startTime>
-				<value>1.000000 1.000000 1.000000 1.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 197.509644</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 197.509644</outTangent>
-				<tangentMode>771</tangentMode>
-			</frame>
-			<frame>
-				<startTime>20.633335</startTime>
-				<value>1.000000 1.000000 1.000000 1.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 -24.454445</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 -24.454445</outTangent>
-				<tangentMode>771</tangentMode>
-			</frame>
-			<frame>
-				<startTime>20.700001</startTime>
-				<value>1.000000 1.000000 1.000000 0.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 -2.500134</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 -2.500134</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>20.800001</startTime>
-				<value>1.000000 1.000000 1.000000 1.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 19.098547</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 19.098547</outTangent>
-				<tangentMode>771</tangentMode>
-			</frame>
-			<frame>
-				<startTime>21.033335</startTime>
-				<value>1.000000 1.000000 1.000000 1.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 -15.000229</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 -15.000229</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>21.066668</startTime>
-				<value>1.000000 1.000000 1.000000 0.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 -10.000248</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 -10.000248</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>21.166668</startTime>
-				<value>1.000000 1.000000 1.000000 1.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 11.080181</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 11.080181</outTangent>
-				<tangentMode>771</tangentMode>
-			</frame>
-			<frame>
-				<startTime>21.300001</startTime>
-				<value>1.000000 1.000000 1.000000 1.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 -15.000229</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 -15.000229</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>21.333334</startTime>
-				<value>1.000000 1.000000 1.000000 0.000000</value>
-				<inTangent>-0.000000 -0.000000 -0.000000 -30.000458</inTangent>
-				<outTangent>-0.000000 -0.000000 -0.000000 -30.000458</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-		</track>
-		<track>
-			<name>material property color</name>
-			<type>vector4</type>
-			<identifier>s_nd0</identifier>
-			<property>TintlColor</property>
-			<frame>
-				<startTime>0.000000</startTime>
-				<value>1.000000 1.000000 1.000000 0.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
-				<tangentMode>257</tangentMode>
-			</frame>
-			<frame>
-				<startTime>15.300001</startTime>
-				<value>1.000000 1.000000 1.000000 0.000000</value>
-				<inTangent>-0.000000 -0.000000 -0.000000 -0.000000</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 15.000014</outTangent>
-				<tangentMode>257</tangentMode>
-			</frame>
-			<frame>
-				<startTime>15.366668</startTime>
-				<value>1.000000 1.000000 1.000000 1.000000</value>
-				<inTangent>-0.000000 -0.000000 -0.000000 15.000014</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
-				<tangentMode>257</tangentMode>
-			</frame>
-			<frame>
-				<startTime>25.000002</startTime>
-				<value>1.000000 1.000000 1.000000 1.000000</value>
-				<inTangent>-0.000000 -0.000000 -0.000000 -0.000000</inTangent>
-				<outTangent>-0.000000 -0.000000 -0.000000 -0.000000</outTangent>
-				<tangentMode>257</tangentMode>
-			</frame>
-		</track>
-		<track>
-			<name>material property vector4</name>
-			<type>vector4</type>
-			<identifier>s_nd0</identifier>
-			<property>distortion_UV_Speed_Amount</property>
-			<frame>
-				<startTime>0.000000</startTime>
-				<value>0.000000 0.000000 0.000000 0.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>15.300001</startTime>
-				<value>0.000000 0.000000 0.000000 0.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>15.366668</startTime>
-				<value>0.000000 0.000000 0.000000 0.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>15.733335</startTime>
-				<value>0.000000 0.000000 0.000000 0.000000</value>
-				<inTangent>0.000000 -0.375000 -0.375000 0.000000</inTangent>
-				<outTangent>0.000000 -0.375000 -0.375000 0.000000</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>15.866668</startTime>
+				<startTime>15.400002</startTime>
 				<value>0.000000 -0.100000 -0.100000 0.000000</value>
-				<inTangent>-0.000000 -0.750001 -0.750001 -0.000000</inTangent>
+				<inTangent>-0.000000 -0.749995 -0.749995 -0.000000</inTangent>
 				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
 				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>15.800000</startTime>
+				<value>0.000000 -0.100000 -0.100000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>0.000000 1.500001 1.500001 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>15.866667</startTime>
+				<value>0.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.750001 0.750001 0.000000</inTangent>
+				<outTangent>0.000000 0.750001 0.750001 0.000000</outTangent>
+				<tangentMode>1</tangentMode>
 			</frame>
 			<frame>
 				<startTime>16.266668</startTime>
-				<value>0.000000 -0.100000 -0.100000 0.000000</value>
-				<inTangent>-0.000000 -0.000000 -0.000000 -0.000000</inTangent>
-				<outTangent>0.000000 1.500023 1.500023 0.000000</outTangent>
-				<tangentMode>257</tangentMode>
-			</frame>
-			<frame>
-				<startTime>16.333334</startTime>
-				<value>0.000000 0.000000 0.000000 0.000000</value>
-				<inTangent>0.000000 0.750011 0.750011 0.000000</inTangent>
-				<outTangent>0.000000 0.750011 0.750011 0.000000</outTangent>
-				<tangentMode>1</tangentMode>
-			</frame>
-			<frame>
-				<startTime>17.000000</startTime>
 				<value>0.000000 0.000000 0.000000 0.000000</value>
 				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
 				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 			<frame>
-				<startTime>17.066668</startTime>
+				<startTime>20.900002</startTime>
 				<value>0.000000 0.000000 0.000000 0.000000</value>
-				<inTangent>0.000000 -0.249999 -0.999996 0.000000</inTangent>
-				<outTangent>0.000000 -0.249999 -0.999996 0.000000</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>17.166668</startTime>
-				<value>0.000000 -0.050000 -0.200000 0.000000</value>
-				<inTangent>0.000000 -0.249999 -0.999996 0.000000</inTangent>
-				<outTangent>0.000000 -0.249999 -0.999996 0.000000</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>17.266668</startTime>
-				<value>0.000000 -0.050000 -0.200000 0.000000</value>
-				<inTangent>0.000000 0.187500 0.750001 0.000000</inTangent>
-				<outTangent>0.000000 0.187500 0.750001 0.000000</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>17.400002</startTime>
-				<value>0.000000 0.000000 0.000000 0.000000</value>
-				<inTangent>0.000000 0.187500 0.750001 0.000000</inTangent>
-				<outTangent>0.000000 0.187500 0.750001 0.000000</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>17.866667</startTime>
-				<value>0.000000 0.000000 0.000000 0.000000</value>
-				<inTangent>0.000000 -0.749990 -1.499980 0.000000</inTangent>
-				<outTangent>0.000000 -0.749990 -1.499980 0.000000</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>17.933334</startTime>
-				<value>0.000000 -0.100000 -0.200000 0.000000</value>
-				<inTangent>-0.000000 -1.499980 -2.999960 -0.000000</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
-				<tangentMode>257</tangentMode>
-			</frame>
-			<frame>
-				<startTime>18.333334</startTime>
-				<value>0.000000 -0.100000 -0.200000 0.000000</value>
-				<inTangent>-0.000000 -0.000000 -0.000000 -0.000000</inTangent>
-				<outTangent>0.000000 0.750001 1.500001 0.000000</outTangent>
-				<tangentMode>257</tangentMode>
-			</frame>
-			<frame>
-				<startTime>18.466667</startTime>
-				<value>0.000000 0.000000 0.000000 0.000000</value>
-				<inTangent>0.000000 0.375000 0.750001 0.000000</inTangent>
-				<outTangent>0.000000 0.375000 0.750001 0.000000</outTangent>
-				<tangentMode>1</tangentMode>
-			</frame>
-			<frame>
-				<startTime>18.866667</startTime>
-				<value>0.000000 0.000000 0.000000 0.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>19.300001</startTime>
-				<value>0.000000 0.000000 0.000000 0.000000</value>
-				<inTangent>0.000000 -0.300001 -0.300001 0.000000</inTangent>
-				<outTangent>0.000000 -0.300001 -0.300001 0.000000</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>19.466667</startTime>
-				<value>0.000000 -0.100000 -0.100000 0.000000</value>
-				<inTangent>0.000000 -0.799999 -0.799999 0.000000</inTangent>
-				<outTangent>0.000000 -0.799999 -0.799999 0.000000</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>19.566668</startTime>
-				<value>0.000000 -0.200000 -0.200000 0.000000</value>
-				<inTangent>0.000000 0.100004 0.100004 0.000000</inTangent>
-				<outTangent>0.000000 0.100004 0.100004 0.000000</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>19.733334</startTime>
-				<value>0.000000 0.000000 0.000000 0.000000</value>
-				<inTangent>0.000000 0.600002 0.600002 0.000000</inTangent>
-				<outTangent>0.000000 0.600002 0.600002 0.000000</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>20.333334</startTime>
-				<value>0.000000 0.000000 0.000000 0.000000</value>
-				<inTangent>0.000000 -0.750001 -0.750001 0.000000</inTangent>
-				<outTangent>0.000000 -0.750001 -0.750001 0.000000</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>20.466667</startTime>
-				<value>0.000000 -0.200000 -0.200000 0.000000</value>
-				<inTangent>0.000000 -0.375000 -0.375000 0.000000</inTangent>
-				<outTangent>0.000000 -0.375000 -0.375000 0.000000</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>20.600000</startTime>
-				<value>0.000000 -0.100000 -0.100000 0.000000</value>
-				<inTangent>0.000000 0.874998 0.874998 0.000000</inTangent>
-				<outTangent>0.000000 0.874998 0.874998 0.000000</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>20.700001</startTime>
-				<value>0.000000 0.000000 0.000000 0.000000</value>
-				<inTangent>0.000000 0.499998 0.499998 0.000000</inTangent>
-				<outTangent>0.000000 0.499998 0.499998 0.000000</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>21.066668</startTime>
-				<value>0.000000 0.000000 0.000000 0.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
-				<tangentMode>0</tangentMode>
+				<inTangent>0.000000 -0.000762 -0.000794 0.000000</inTangent>
+				<outTangent>0.000000 -0.000762 -0.000794 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
 			</frame>
 			<frame>
 				<startTime>21.133335</startTime>
+				<value>0.000000 -0.100000 -0.200000 0.000000</value>
+				<inTangent>-0.000000 -0.428571 -0.857142 -0.000000</inTangent>
+				<outTangent>0.000000 0.750011 1.500023 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>21.266666</startTime>
+				<value>0.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.375006 0.750011 0.000000</inTangent>
+				<outTangent>0.000000 0.375006 0.750011 0.000000</outTangent>
+				<tangentMode>1</tangentMode>
+			</frame>
+			<frame>
+				<startTime>21.666668</startTime>
 				<value>0.000000 0.000000 0.000000 0.000000</value>
 				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
 				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 			<frame>
-				<startTime>21.333334</startTime>
+				<startTime>22.000002</startTime>
 				<value>0.000000 0.000000 0.000000 0.000000</value>
 				<inTangent>-0.000000 -0.000000 -0.000000 -0.000000</inTangent>
 				<outTangent>-0.000000 -0.000000 -0.000000 -0.000000</outTangent>

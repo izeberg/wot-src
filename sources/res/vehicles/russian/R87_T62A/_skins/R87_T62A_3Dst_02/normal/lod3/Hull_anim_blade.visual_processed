@@ -143,7 +143,7 @@
 					<identifier>tank_hull_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
 					<materialKind>0</materialKind>
-					<collisionFlags>255</collisionFlags>
+					<collisionFlags>0</collisionFlags>
 					<property>
 						alphaReference
 						<Int>128</Int>
@@ -189,15 +189,15 @@
 						<Texture>vehicles/russian/R87_T62A/_skins/R87_T62A_3Dst_02/T62A_3Dst_02_hull_01_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.001625 0.456499 2.559383</groupOrigin>
+				<groupOrigin>0.001625 0.466665 2.559383</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-0.867016 0.402419 -2.995408</min>
+		<min>-0.867016 0.422750 -2.995408</min>
 		<max>0.870266 0.510579 -2.123358</max>
 	</boundingBox>
-	<geometrySize>17352</geometrySize>
+	<geometrySize>12456</geometrySize>
 	<minUVDensity>10000.000000</minUVDensity>
 </root>

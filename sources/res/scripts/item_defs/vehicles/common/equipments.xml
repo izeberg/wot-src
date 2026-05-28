@@ -11677,7 +11677,7 @@
 				<exports>vse tooltip</exports>
 			</cooldownSeconds>
 			<duration>
-				20
+				15
 				<exports>vse tooltip</exports>
 			</duration>
 			<shotDispersionFactors>
@@ -11686,7 +11686,7 @@
 				<exports>vse</exports>
 			</shotDispersionFactors>
 			<slvl>
-				1 1.2 1.5
+				0.4 0.6 0.8
 				<!--BW_String-->
 				<exports>vse</exports>
 			</slvl>
@@ -11879,7 +11879,7 @@
 				<exports>vse tooltip</exports>
 			</duration>
 			<enginePowerBuff>
-				1.2
+				1.05
 				<!--BW_String-->
 				<exports>vse tooltip</exports>
 			</enginePowerBuff>

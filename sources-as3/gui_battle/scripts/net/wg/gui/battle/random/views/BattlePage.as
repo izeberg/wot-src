@@ -106,17 +106,17 @@ package net.wg.gui.battle.random.views
       
       public var mapInfoTip:MapInfoTip = null;
       
+      public var infoBattleContextHint:InfoBattleContextHint = null;
+      
+      public var sixthSenseContextHint:SixthSenseContextHint = null;
+      
       private var _playersPanelState:int = -1;
       
       private var _playersPanelHasInvite:Boolean = false;
       
       private var _isPlayersPanelIsEmpty:Boolean = true;
       
-      private var _infoBattleContextHint:InfoBattleContextHint = null;
-      
       private var _contextHintTweens:Vector.<Tween> = null;
-      
-      private var _sixthSenseContextHint:SixthSenseContextHint = null;
       
       public function BattlePage()
       {
@@ -156,7 +156,10 @@ package net.wg.gui.battle.random.views
          this.updateBattleMessengerSwapArea();
          this.updateHintPanelPosition();
          this.updateMapInfoHintLayout();
-         this._infoBattleContextHint.updateStage(param1,param2);
+         if(this.infoBattleContextHint)
+         {
+            this.infoBattleContextHint.updateStage(param1,param2);
+         }
       }
       
       override protected function initialize() : void
@@ -166,14 +169,6 @@ package net.wg.gui.battle.random.views
          this.playersPanel.addEventListener(Event.CHANGE,this.onPlayersPanelChangeHandler);
          this.teamBasesPanelUI.addEventListener(Event.CHANGE,this.onTeamBasesPanelUIChangeHandler);
          this.endWarningPanel.addEventListener(EndWarningPanelEvent.VISIBILITY_CHANGED,this.onEndWarningPanelVisibilityChangedHandler);
-         this._infoBattleContextHint = new InfoBattleContextHint();
-         this._infoBattleContextHint.name = BATTLE_VIEW_ALIASES.INFO_BATTLE_CONTEXT_HINT;
-         this._infoBattleContextHint.visible = false;
-         addChild(this._infoBattleContextHint);
-         this._sixthSenseContextHint = new SixthSenseContextHint();
-         this._sixthSenseContextHint.name = BATTLE_VIEW_ALIASES.SIXTH_SENSE_CONTEXT_HINT;
-         this._sixthSenseContextHint.visible = false;
-         addChildAt(this._sixthSenseContextHint,getChildIndex(this.sixthSense));
       }
       
       override protected function createStatisticsController() : BattleStatisticDataController
@@ -205,7 +200,10 @@ package net.wg.gui.battle.random.views
          this.hintPanel.addEventListener(Event.RESIZE,this.onHintPanelResizeHandler);
          this.sixthSense.addEventListener(SixthSense.EVENT_CHANGE_VISIBILITY,this.onSixthSenseChangeVisibility);
          this.sixthSense.addEventListener(SixthSense.EVENT_POSITION_CHANGED,this.onSixthSensePositionChanged);
-         this._infoBattleContextHint.addEventListener(ContextHintEvent.VISIBILITY_CHANGE,this.onContextHintVisibilityChangeHandler);
+         if(this.infoBattleContextHint)
+         {
+            this.infoBattleContextHint.addEventListener(ContextHintEvent.VISIBILITY_CHANGE,this.onContextHintVisibilityChangeHandler);
+         }
          super.configUI();
       }
       
@@ -256,8 +254,14 @@ package net.wg.gui.battle.random.views
                registerComponent(_loc2_,BATTLE_VIEW_ALIASES.PERSONAL_RESERVES_TAB);
             }
          }
-         registerComponent(this._infoBattleContextHint,BATTLE_VIEW_ALIASES.INFO_BATTLE_CONTEXT_HINT);
-         registerComponent(this._sixthSenseContextHint,BATTLE_VIEW_ALIASES.SIXTH_SENSE_CONTEXT_HINT);
+         if(this.infoBattleContextHint)
+         {
+            registerComponent(this.infoBattleContextHint,BATTLE_VIEW_ALIASES.INFO_BATTLE_CONTEXT_HINT);
+         }
+         if(this.sixthSenseContextHint)
+         {
+            registerComponent(this.sixthSenseContextHint,BATTLE_VIEW_ALIASES.SIXTH_SENSE_CONTEXT_HINT);
+         }
          super.onPopulate();
       }
       
@@ -284,7 +288,10 @@ package net.wg.gui.battle.random.views
          this.playersPanel.removeEventListener(PlayersPanelEvent.ON_ITEMS_COUNT_CHANGE,this.onPlayersPanelOnItemsCountChangeHandler);
          this.sixthSense.removeEventListener(SixthSense.EVENT_CHANGE_VISIBILITY,this.onSixthSenseChangeVisibility);
          this.sixthSense.removeEventListener(SixthSense.EVENT_POSITION_CHANGED,this.onSixthSensePositionChanged);
-         this._infoBattleContextHint.removeEventListener(ContextHintEvent.VISIBILITY_CHANGE,this.onContextHintVisibilityChangeHandler);
+         if(this.infoBattleContextHint)
+         {
+            this.infoBattleContextHint.removeEventListener(ContextHintEvent.VISIBILITY_CHANGE,this.onContextHintVisibilityChangeHandler);
+         }
          super.onBeforeDispose();
       }
       
@@ -306,10 +313,10 @@ package net.wg.gui.battle.random.views
          this.siegeModePanel = null;
          this.battleNotifier = null;
          this.mapInfoTip = null;
-         this._infoBattleContextHint = null;
+         this.infoBattleContextHint = null;
+         this.sixthSenseContextHint = null;
          this.clearContextHintTweens();
          this._contextHintTweens = null;
-         this._sixthSenseContextHint = null;
          super.onDispose();
       }
       
@@ -506,7 +513,10 @@ package net.wg.gui.battle.random.views
       private function onSixthSensePositionChanged(param1:Event) : void
       {
          updateQuestTopViewAlpha();
-         this._sixthSenseContextHint.updatePosition(this.sixthSense.x,this.sixthSense.y);
+         if(this.sixthSenseContextHint)
+         {
+            this.sixthSenseContextHint.updatePosition(this.sixthSense.x,this.sixthSense.y);
+         }
       }
       
       private function onSixthSenseChangeVisibility(param1:Event) : void

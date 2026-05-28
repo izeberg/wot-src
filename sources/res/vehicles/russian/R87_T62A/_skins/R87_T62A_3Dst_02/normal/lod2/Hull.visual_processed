@@ -111,7 +111,7 @@
 					<fx>shaders/std_effects/PBS_tank.fx</fx>
 					<materialKind>0</materialKind>
 					<identifier>tank_hull_01</identifier>
-					<collisionFlags>255</collisionFlags>
+					<collisionFlags>0</collisionFlags>
 					<property>
 						diffuseMap
 						<Texture>vehicles/russian/R87_T62A/_skins/R87_T62A_3Dst_02/T62A_3Dst_02_hull_01_AM.dds</Texture>
@@ -132,6 +132,10 @@
 						</Float>
 					</property>
 					<property>
+						alphaTestEnable
+						<Bool>false</Bool>
+					</property>
+					<property>
 						g_maskBias
 						<Float>
 							0.18
@@ -140,7 +144,10 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>7.014000 7.014000 0.000000 0.000000</Vector4>
+						<Vector4>
+							8.028 7.014 0.0 0.0
+							<!--BW_String-->
+						</Vector4>
 					</property>
 					<property>
 						g_detailPower
@@ -156,7 +163,11 @@
 					</property>
 					<property>
 						metallicDetailMap
-						<Texture>vehicles/russian/Tank_detail/BP12_details_map.dds</Texture>
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						alphaReference
+						<Int>0</Int>
 					</property>
 					<property>
 						g_detailPowerAlbedo
@@ -168,77 +179,6 @@
 				</material>
 				<groupOrigin>-0.001715 -0.002790 -0.097717</groupOrigin>
 			</primitiveGroup>
-			<primitiveGroup>
-				1
-				<material>
-					<fx>shaders/std_effects/PBS_tank.fx</fx>
-					<materialKind>0</materialKind>
-					<identifier>tank_equipment</identifier>
-					<collisionFlags>255</collisionFlags>
-					<property>
-						diffuseMap
-						<Texture>vehicles/russian/R87_T62A/_skins/R87_T62A_3Dst_02/T62A_3Dst_02_turret_01_AM.dds</Texture>
-					</property>
-					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
-					</property>
-					<property>
-						metallicGlossMap
-						<Texture>vehicles/russian/R87_T62A/_skins/R87_T62A_3Dst_02/T62A_3Dst_02_turret_01_GMM.dds</Texture>
-					</property>
-					<property>
-						g_detailPowerGloss
-						<Float>
-							0.35
-							<!--BW_String-->
-						</Float>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
-						g_maskBias
-						<Float>
-							0.18
-							<!--BW_String-->
-						</Float>
-					</property>
-					<property>
-						g_detailUVTiling
-						<Vector4>3.507000 3.507000 0.000000 0.000000</Vector4>
-					</property>
-					<property>
-						g_detailPower
-						<Float>5</Float>
-					</property>
-					<property>
-						normalMap
-						<Texture>vehicles/russian/R87_T62A/_skins/R87_T62A_3Dst_02/T62A_3Dst_02_turret_01_ANM.dds</Texture>
-					</property>
-					<property>
-						excludeMaskAndAOMap
-						<Texture>vehicles/russian/R87_T62A/_skins/R87_T62A_3Dst_02/T62A_3Dst_02_turret_01_AO.dds</Texture>
-					</property>
-					<property>
-						metallicDetailMap
-						<Texture>vehicles/russian/Tank_detail/BP12_details_map.dds</Texture>
-					</property>
-					<property>
-						alphaReference
-						<Int>128</Int>
-					</property>
-					<property>
-						g_detailPowerAlbedo
-						<Float>
-							0.11
-							<!--BW_String-->
-						</Float>
-					</property>
-				</material>
-				<groupOrigin>-0.009807 0.318023 -1.768046</groupOrigin>
-			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
@@ -246,5 +186,5 @@
 		<max>1.717687 0.578387 3.383282</max>
 	</boundingBox>
 	<geometrySize>157320</geometrySize>
-	<minUVDensity>0.002384</minUVDensity>
+	<minUVDensity>0.001251</minUVDensity>
 </root>

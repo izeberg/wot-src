@@ -101,7 +101,7 @@
 					<property>
 						<name>Position</name>
 						<value>
-							0.0011673 0.510795 -0.766414
+							0.00116718 0.521135 -0.803968
 							<!--BW_String-->
 						</value>
 					</property>
@@ -124,7 +124,10 @@
 				<config>
 					<property>
 						<name>Position</name>
-						<value>0 0 0</value>
+						<value>
+							0.0979731 5.96046e-08 1.19209e-07
+							<!--BW_String-->
+						</value>
 					</property>
 					<property>
 						<name>Scale</name>
@@ -456,7 +459,7 @@
 					</property>
 					<property>
 						<name>Cast Shadows</name>
-						<value>1</value>
+						<value>0</value>
 					</property>
 					<property>
 						<name>Parts</name>

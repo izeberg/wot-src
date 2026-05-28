@@ -82,64 +82,10 @@
 			<node>
 				<identifier>HP_Track_Exhaus_2</identifier>
 				<transform>
-					<row0>-0.048228 -0.000000 -0.998836</row0>
-					<row1>-0.579732 0.814326 0.027992</row1>
-					<row2>0.813379 0.580408 -0.039273</row2>
-					<row3>1.686844 0.456891 -3.470645</row3>
-				</transform>
-			</node>
-			<node>
-				<identifier>HP_Track_Exhaus_3</identifier>
-				<transform>
-					<row0>-0.048228 -0.000000 -0.998836</row0>
-					<row1>-0.579732 0.814326 0.027992</row1>
-					<row2>0.813379 0.580408 -0.039273</row2>
-					<row3>1.702912 0.433582 -2.459752</row3>
-				</transform>
-			</node>
-			<node>
-				<identifier>HP_Track_Exhaus_4</identifier>
-				<transform>
-					<row0>-0.048228 0.000000 -0.998836</row0>
-					<row1>-0.445830 -0.894859 0.021527</row1>
-					<row2>-0.893817 0.446350 0.043157</row2>
-					<row3>-1.686013 0.462715 -3.474072</row3>
-				</transform>
-			</node>
-			<node>
-				<identifier>HP_Track_Exhaus_5</identifier>
-				<transform>
 					<row0>-0.048228 0.000000 -0.998836</row0>
 					<row1>-0.445830 -0.894859 0.021527</row1>
 					<row2>-0.893817 0.446350 0.043157</row2>
 					<row3>-1.688140 0.453440 -2.984060</row3>
-				</transform>
-			</node>
-			<node>
-				<identifier>HP_Track_Exhaus_6</identifier>
-				<transform>
-					<row0>-0.048228 0.000000 -0.998836</row0>
-					<row1>-0.445830 -0.894859 0.021527</row1>
-					<row2>-0.893817 0.446350 0.043157</row2>
-					<row3>-1.692343 0.450590 -2.462097</row3>
-				</transform>
-			</node>
-			<node>
-				<identifier>HP_Track_Exhaus_7</identifier>
-				<transform>
-					<row0>1.000000 0.000000 0.000000</row0>
-					<row1>0.000000 -0.029245 -0.999572</row1>
-					<row2>0.000000 0.999572 -0.029245</row2>
-					<row3>0.314037 0.637485 -2.949401</row3>
-				</transform>
-			</node>
-			<node>
-				<identifier>HP_Track_Exhaus_8</identifier>
-				<transform>
-					<row0>1.000000 0.000000 0.000000</row0>
-					<row1>0.000000 -0.029245 -0.999572</row1>
-					<row2>0.000000 0.999572 -0.029245</row2>
-					<row3>-0.255659 0.637485 -2.949401</row3>
 				</transform>
 			</node>
 			<node>
