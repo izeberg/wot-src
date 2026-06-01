@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.framework import WindowLayer, ScopeTemplates, ViewSettings
 from gui.Scaleform.framework.package_layout import PackageBusinessHandler
 from gui.Scaleform.genConsts.MAPBOX_ALIASES import MAPBOX_ALIASES

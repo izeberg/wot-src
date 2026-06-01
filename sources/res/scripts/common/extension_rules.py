@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import re, ResMgr
 from soft_exception import SoftException
 EXTENSION_RULES_FILE = 'scripts/extension_rules.xml'

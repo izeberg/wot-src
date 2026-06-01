@@ -3264,20 +3264,27 @@
 				<slot>
 					<slotType>attachment</slotType>
 					<slotId>38000</slotId>
-					<position>0.002733 1.158855 -0.919484</position>
-					<rotation>-0 0 0</rotation>
+					<position>
+						0.77859 1.088498 0.071019
+						<!--BW_String-->
+					</position>
+					<rotation>-0 -0 0</rotation>
 					<scale>1 1 1</scale>
 					<applyType>turret</applyType>
 					<size>medium</size>
+					<enableVisTunnel>true</enableVisTunnel>
+					<hangerId>6</hangerId>
 				</slot>
 				<slot>
 					<slotType>attachment</slotType>
 					<slotId>38001</slotId>
-					<position>-0.756816 1.040408 0.514126</position>
-					<rotation>-0 0 0</rotation>
+					<position>0.002517 0.979544 1.303065</position>
+					<rotation>-0 -0 0</rotation>
 					<scale>1 1 1</scale>
 					<applyType>gunMantlet</applyType>
 					<size>medium</size>
+					<enableVisTunnel>true</enableVisTunnel>
+					<hangerId>2</hangerId>
 				</slot>
 			</customizationSlots>
 			<physicsShape>

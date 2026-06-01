@@ -979,7 +979,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.battle.views.widgetsPanel.temperatureGun.TemperatureGunScaleSector;
    import net.wg.gui.battle.views.widgetsPanel.vo.DeviceStateInfo;
    import net.wg.gui.battle.views.widgetsPanel.vo.HotKeyVo;
-   import net.wg.gui.battle.views.widgetsPanel.vo.StateVO;
    import net.wg.gui.battle.views.widgetsPanel.wheeledDash.HighlightTimer;
    import net.wg.gui.battle.windows.IngameDetailsHelpWindow;
    import net.wg.gui.battle.windows.IngameHelpWindow;
@@ -2966,8 +2965,6 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_VO_DEVICESTATEINFO:Class = DeviceStateInfo;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_VO_HOTKEYVO:Class = HotKeyVo;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_VO_STATEVO:Class = StateVO;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_WHEELEDDASH_HIGHLIGHTTIMER:Class = HighlightTimer;
       

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/chinese/Ch38_WZ113G_FT/_skins/Ch38_WZ113G_FT_BPXX_3Dst/normal/lod0/Gun_05</nodefullVisual>
+	<parent>vehicles/chinese/Ch38_WZ113G_FT/_skins/Ch38_WZ113G_FT_BPXX_3Dst/normal/lod1/Gun_05</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-0.493398 -0.466420 0.061097</min>
+		<max>0.493398 0.436453 3.969271</max>
+	</visibilityBox>
+</root>

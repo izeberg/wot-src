@@ -1,5 +1,8 @@
+from __future__ import absolute_import
 import bisect, struct, time
 from collections import namedtuple
+from future.utils import viewitems, viewvalues
+from past.builtins import xrange
 import typing
 from enum import Enum, unique
 from battle_pass_integration import getBattlePassByGameMode
@@ -62,19 +65,13 @@ STARTER_PACK_LOGGING_PARTNER_ID = 19
 BATTLE_PASS_COST_CURRENCIES = {
  'gold'}
 BP_TANKMEN_ENTITLEMENT_TAG_PREFIX = 'tankmen_bp'
-BP_HOLIDAY_TANKMEN_ENTITLEMENT_TAG_PREFIX = 'tankmen_bph'
-BP_TANKMAN_QUEST_CHAIN_TOKEN_POSTFIX = '_bp_chain'
-TANKMAN_QUEST_CHAIN_ENTITLEMENT_POSTFIX = '_qch'
 BATTLE_PASS_TICKETS_EVENT = 'battlePass'
+BATTLE_PASS_CATEGORY_PATH = '/battlepass/battlepass/'
 
 class BattlePassTankmenSource(object):
-    FREE = 'free_progression'
-    PAID = 'paid_progression'
+    PROGRESSION = 'progression'
     SHOP = 'shop'
-    QUEST_CHAIN = 'quest_chain'
-    ALL = (FREE, PAID, SHOP, QUEST_CHAIN)
-    PROGRESSION = (FREE, PAID)
-    PURCHASABLE = (SHOP, QUEST_CHAIN)
+    ALL = (PROGRESSION, SHOP)
 
 
 @unique
@@ -154,11 +151,11 @@ class BattlePassStatsCommon(object):
     def makeSeasonStats(seasonID, vehiclePoints, seasonStats):
         vehCDs = []
         vehPoints = []
-        for vehCD, vehCDPoints in vehiclePoints.iteritems():
+        for vehCD, vehCDPoints in viewitems(vehiclePoints):
             vehCDs.append(vehCD)
             vehPoints.append(vehCDPoints)
 
-        return BattlePassStatsCommon.SeasonStats(seasonID, tuple(vehCDs), tuple(vehPoints), tuple(seasonStats['reachedCaps']), BattlePassStatsCommon.OtherStats(seasonStats['battles'], sum(chapterStats.points for chapterStats in seasonStats.get('chaptersStats', {}).itervalues()), seasonStats.get('maxPost', 0)))
+        return BattlePassStatsCommon.SeasonStats(seasonID, tuple(vehCDs), tuple(vehPoints), tuple(seasonStats['reachedCaps']), BattlePassStatsCommon.OtherStats(seasonStats['battles'], sum(chapterStats.points for chapterStats in viewvalues(seasonStats.get('chaptersStats', {}))), seasonStats.get('maxPost', 0)))
 
     @staticmethod
     def packSeasonStats(seasonStats):
@@ -193,7 +190,7 @@ class BattlePassStatsCommon(object):
         result = []
         cntSeasons, = struct.unpack_from(BattlePassStatsCommon._CNT_SEASONS_FORMAT, packedStats, curOffset)
         curOffset += struct.calcsize(BattlePassStatsCommon._CNT_SEASONS_FORMAT)
-        for curSeason in xrange(cntSeasons):
+        for _ in xrange(cntSeasons):
             curSeasonStats, curOffset = BattlePassStatsCommon.unpackSeasonStats(packedStats, curOffset)
             result.append(curSeasonStats)
 
@@ -249,7 +246,7 @@ def getLevel(curPoints, levelPoints, prevLevel=0):
         return prevLevel
     if curPoints >= levelPoints[(-1)]:
         return len(levelPoints)
-    if curPoints >= levelPoints[prevLevel] and curPoints < levelPoints[(prevLevel + 1)]:
+    if levelPoints[prevLevel] <= curPoints < levelPoints[(prevLevel + 1)]:
         return prevLevel + 1
     return bisect.bisect_right(levelPoints, curPoints, prevLevel)
 
@@ -259,7 +256,7 @@ def getPostProgressionLevel(curPoints, cyclePoints, prevLevel=0):
     if not levelsInCycle:
         return prevLevel
     pointsPerCycle = cyclePoints[(-1)]
-    cyclesDone, pointsInCurrentCycle = curPoints / pointsPerCycle, curPoints % pointsPerCycle
+    cyclesDone, pointsInCurrentCycle = curPoints // pointsPerCycle, curPoints % pointsPerCycle
     levelInCurrentCycle = bisect.bisect_right(cyclePoints, pointsInCurrentCycle)
     currentLevelByPoints = cyclesDone * levelsInCycle + levelInCurrentCycle
     return max(prevLevel, currentLevelByPoints)
@@ -300,7 +297,7 @@ def getPostProgressionLevelInCycleForRewards(cycleLength, level):
 
 
 def mergeRewards(storage, rewardsToMerge):
-    for key, value in rewardsToMerge.iteritems():
+    for key, value in viewitems(rewardsToMerge):
         if key in BONUS_MERGERS:
             BONUS_MERGERS[key](storage, key, value, False, 1, None)
         else:
@@ -322,7 +319,7 @@ class BattlePassConfig(object):
         self._mainChapterIds = set()
         if not self.chapters:
             return
-        for chapterID, chapterData in self.chapters.iteritems():
+        for chapterID, chapterData in viewitems(self.chapters):
             if chapterData['extra']:
                 self._extraChapterIds.add(chapterID)
             elif not isPostProgressionChapter(chapterID):
@@ -479,13 +476,13 @@ class BattlePassConfig(object):
         return self.getChapter(chapterID).get('expires', 0)
 
     def getSpecialVehicles(self):
-        return self._season.get('specialVehicles', [])
+        return self._season.get('specialVehicles') or {}
 
-    def isSpecialVehicle(self, vehTypeCompDescr):
-        return vehTypeCompDescr in self.getSpecialVehicles()
+    def getSpecialVehiclesByGameMode(self, gameMode=ARENA_BONUS_TYPE.REGULAR):
+        return self.getSpecialVehicles().get(gameMode) or []
 
-    def isSpecialVoiceChapter(self, chapterID):
-        return chapterID in self.specialVoiceChapters
+    def isSpecialVehicle(self, vehTypeCompDescr, gameMode=ARENA_BONUS_TYPE.REGULAR):
+        return vehTypeCompDescr in self.getSpecialVehiclesByGameMode(gameMode)
 
     def capBonusList(self):
         return self._season.get('capBonuses', (0, ) * MAX_VEHICLE_LEVEL)
@@ -539,10 +536,10 @@ class BattlePassConfig(object):
         return (fromLevel, toLevel)
 
     def getChapterIDs(self):
-        return list(self.chapters.iterkeys())
+        return list(self.chapters)
 
     def getAvailableStyles(self):
-        return tuple(chapter['styleId'] for chapter in self.chapters.itervalues())
+        return tuple(chapter['styleId'] for chapter in viewvalues(self.chapters))
 
     def getChapterStyleID(self, chapterID):
         return self.chapters.get(chapterID, {}).get('styleId')

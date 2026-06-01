@@ -1,6 +1,6 @@
 from __future__ import absolute_import
 import json
-from future.builtins import round
+from builtins import round
 from past.types import basestring
 from gui.impl import backport
 from gui.impl.gen.view_models.views.lobby.hangar.sub_views.vehicle_param_base_view_model import HighlightType

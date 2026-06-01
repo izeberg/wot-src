@@ -8,40 +8,13 @@
 			<row2>0.000000 0.000000 1.000000</row2>
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
-		<node>
-			<identifier>Cus_53_ArmiesG_Projector_01</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-			<node>
-				<identifier>lod0</identifier>
-				<transform>
-					<row0>1.000000 0.000000 0.000000</row0>
-					<row1>0.000000 1.000000 0.000000</row1>
-					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 0.000000 0.000000</row3>
-				</transform>
-				<node>
-					<identifier>s0</identifier>
-					<transform>
-						<row0>1.000000 0.000000 0.000000</row0>
-						<row1>0.000000 1.000000 0.000000</row1>
-						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>0.000000 0.000000 0.000000</row3>
-					</transform>
-				</node>
-			</node>
-		</node>
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
-		<node>s0</node>
+		<node>Scene Root</node>
 		<geometry>
-			<vertices>s0Shape.vertices</vertices>
-			<primitive>s0Shape.indices</primitive>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -78,14 +51,14 @@
 						<Texture>content/3D_Customization/Cus_53_ArmiesG_Projector/Cus_53_ArmiesG_Projector_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.000000 0.303265 -0.048737</groupOrigin>
+				<groupOrigin>0.000000 0.319782 -0.048737</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
-	<constraints/>
 	<boundingBox>
-		<min>-0.243162 -0.200887 -0.196675</min>
-		<max>0.243162 0.817734 0.100769</max>
+		<min>-0.235743 -0.100201 -0.196675</min>
+		<max>0.235743 0.739766 0.099202</max>
 	</boundingBox>
+	<customBsp>true</customBsp>
 	<geometrySize>20616</geometrySize>
 </root>

@@ -107,6 +107,7 @@
 		<_88mm_Kw_K_43>131</_88mm_Kw_K_43>
 		<_120mm_Gun_M58A>132</_120mm_Gun_M58A>
 		<_90mm_AT_Gun_M3T>133</_90mm_AT_Gun_M3T>
+		<_85_mm_D_58A>134</_85_mm_D_58A>
 		<_12.7mm_T23>255</_12.7mm_T23>
 		<_90mm_Gun_M3_ID>256</_90mm_Gun_M3_ID>
 		<_90mm_Gun_M41E1_L>257</_90mm_Gun_M41E1_L>
@@ -9862,10 +9863,7 @@
 			<mechanics>
 				<temperatureGun>
 					<heatingPerShot>9</heatingPerShot>
-					<coolingDelay>
-						1.0
-						<!--BW_String-->
-					</coolingDelay>
+					<coolingDelay>2</coolingDelay>
 					<coolingPerSec>10</coolingPerSec>
 					<thermalStateHysteresis>1</thermalStateHysteresis>
 					<thermalStates>
@@ -27911,5 +27909,111 @@
 				</Development_Shell>
 			</shots>
 		</Gun_1_A195_Gorilla_id64036>
+		<_85_mm_D_58A>
+			<userString>#usa_vehicles:_85_mm_D_58A</userString>
+			<tags/>
+			<level>9</level>
+			<price>200000</price>
+			<notInShop>true</notInShop>
+			<impulse>
+				0.44
+				<!--BW_String-->
+			</impulse>
+			<recoil>
+				<lodDist>MEDIUM</lodDist>
+				<amplitude>
+					0.3
+					<!--BW_String-->
+				</amplitude>
+				<recoilEffect>main</recoilEffect>
+			</recoil>
+			<effects>shot_main_mb</effects>
+			<reloadEffect>autoloader_reload85_107</reloadEffect>
+			<pitchLimits>
+				<minPitch>
+					0.0 -20.0 1.0 -20.0
+					<!--BW_String-->
+				</minPitch>
+				<maxPitch>
+					0.0 8.0 1.0 8.0
+					<!--BW_String-->
+				</maxPitch>
+			</pitchLimits>
+			<turretYawLimits>-180 180</turretYawLimits>
+			<rotationSpeed>35</rotationSpeed>
+			<reloadTime>
+				4.8
+				<!--BW_String-->
+			</reloadTime>
+			<maxAmmo>60</maxAmmo>
+			<aimingTime>2</aimingTime>
+			<weight>1500</weight>
+			<maxHealth>200</maxHealth>
+			<maxRegenHealth>100</maxRegenHealth>
+			<repairCost>9</repairCost>
+			<invisibilityFactorAtShot>
+				0.1
+				<!--BW_String-->
+			</invisibilityFactorAtShot>
+			<shotDispersionRadius>
+				0.36
+				<!--BW_String-->
+			</shotDispersionRadius>
+			<shotDispersionFactors>
+				<turretRotation>
+					0.12
+					<!--BW_String-->
+				</turretRotation>
+				<afterShot>
+					2.0
+					<!--BW_String-->
+				</afterShot>
+				<whileGunDamaged>
+					2.0
+					<!--BW_String-->
+				</whileGunDamaged>
+			</shotDispersionFactors>
+			<shots>
+				<_85_mm_UBR_372A>
+					<defaultPortion>
+						0.95
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>1090</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>234 224</piercingPower>
+				</_85_mm_UBR_372A>
+				<_85_mm_UBR_372B>
+					<defaultPortion>
+						0.0
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>1250</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>263 250</piercingPower>
+				</_85_mm_UBR_372B>
+				<_85_mm_UOF_372A>
+					<defaultPortion>
+						0.05
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>1090</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>42 42</piercingPower>
+				</_85_mm_UOF_372A>
+			</shots>
+		</_85_mm_D_58A>
 	</shared>
 </root>

@@ -1,6 +1,8 @@
-from future.utils import raise_
+from __future__ import absolute_import, division
 import sys, time, weakref
 from collections import deque
+from future.utils import raise_
+from past.builtins import xrange
 from soft_exception import SoftException
 import BigWorld
 from BWUtil import AsyncReturn

@@ -1,4 +1,8 @@
-import time
+from __future__ import absolute_import, division
+import base64, time
+from future.utils import lmap, viewitems
+from past.builtins import xrange
+from past.utils import old_div
 from typing import Union, TYPE_CHECKING
 import dossiers2
 from dynamic_currencies import g_dynamicCurrenciesData
@@ -8,13 +12,12 @@ from battle_pass_common import NON_VEH_CD
 from blueprints.BlueprintTypes import BlueprintTypes
 from blueprints.FragmentTypes import isUniversalFragment
 from dossiers2.custom.account_layout import ACCOUNT_DOSSIER_DICT_BLOCKS
-from dossiers2.custom.cache import getCache
 from invoices_helpers import checkAccountDossierOperation
 from items import vehicles, tankmen, utils
 from items.components.c11n_constants import SeasonType
 from items.components.crew_skins_constants import NO_CREW_SKIN_ID
 from items.components.skills_constants import ROLES_BY_SKILLS
-from constants import DOSSIER_TYPE, IS_DEVELOPMENT, SEASON_TYPE_BY_NAME, EVENT_TYPE, INVOICE_LIMITS, ENTITLEMENT_OPS, DailyQuestsLevels, MAX_LOG_EXT_INFO_LEN
+from constants import DOSSIER_TYPE, SEASON_TYPE_BY_NAME, EVENT_TYPE, INVOICE_LIMITS, ENTITLEMENT_OPS, DailyQuestsLevels, MAX_LOG_EXT_INFO_LEN
 from soft_exception import SoftException
 from customization_quests_common import validateCustomizationQuestToken
 if TYPE_CHECKING:
@@ -80,7 +83,7 @@ class IntHolder(int):
     rate = 1
 
     def __new__(cls, value, **kwargs):
-        return super(IntHolder, cls).__new__(cls, value, **{k:v for k, v in kwargs.iteritems() if k in ('base', ) if k in ('base', )})
+        return super(IntHolder, cls).__new__(cls, value, **{k:v for k, v in viewitems(kwargs) if k in ('base', ) if k in ('base', )})
 
     def __init__(self, value, **kwargs):
         super(IntHolder, self).__init__()
@@ -122,7 +125,7 @@ class IntHolder(int):
         return int(self).__floordiv__(x)
 
     def __div__(self, x):
-        return int(self).__div__(x)
+        return old_div(int(self), x)
 
     def __truediv__(self, x):
         return int(self).__truediv__(x)
@@ -146,7 +149,7 @@ class IntHolder(int):
         return int(self).__rfloordiv__(x)
 
     def __rdiv__(self, x):
-        return int(self).__rdiv__(x)
+        return old_div(x, int(self))
 
     def __rtruediv__(self, x):
         return int(self).__rtruediv__(x)
@@ -232,8 +235,10 @@ class IntHolder(int):
     def __hash__(self):
         return object.__hash__(self)
 
-    def __nonzero__(self):
-        return int(self).__nonzero__()
+    def __bool__(self):
+        return bool(int(self))
+
+    __nonzero__ = __bool__
 
 
 class FloatHolder(float):
@@ -293,7 +298,7 @@ class FloatHolder(float):
         return float(self).__floordiv__(x)
 
     def __div__(self, x):
-        return float(self).__div__(x)
+        return float(self) / x
 
     def __truediv__(self, x):
         return float(self).__truediv__(x)
@@ -320,7 +325,7 @@ class FloatHolder(float):
         return float(self).__rfloordiv__(x)
 
     def __rdiv__(self, x):
-        return float(self).__rdiv__(x)
+        return x / float(self)
 
     def __rtruediv__(self, x):
         return float(self).__rtruediv__(x)
@@ -370,8 +375,10 @@ class FloatHolder(float):
     def __hash__(self):
         return object.__hash__(self)
 
-    def __nonzero__(self):
-        return float(self).__nonzero__()
+    def __bool__(self):
+        return bool(float(self))
+
+    __nonzero__ = __bool__
 
 
 def __readIntWithTokenExpansion(section):
@@ -448,7 +455,7 @@ def __readBonus_item(bonus, _name, section, eventType, checkLimit):
 def __readBonus_vehicle(bonus, _name, section, eventType, checkLimit):
     vehCompDescr = None
     if section.has_key('vehCompDescr'):
-        vehCompDescr = section['vehCompDescr'].asString.decode('base64')
+        vehCompDescr = base64.b64decode(section['vehCompDescr'].asString)
         vehTypeCompDescr = vehicles.VehicleDescr(vehCompDescr).type.compactDescr
     elif section.has_key('vehTypeCompDescr'):
         vehTypeCompDescr = section['vehTypeCompDescr'].asInt
@@ -532,7 +539,7 @@ def __readBonus_tankmen(bonus, vehTypeCompDescr, section, eventType, checkLimit)
         if tmanDescr:
             try:
                 tman = tankmen.TankmanDescr(tmanDescr)
-                if type(vehTypeCompDescr) == int:
+                if isinstance(vehTypeCompDescr, int):
                     _, vehNationID, vehicleTypeID = vehicles.parseIntCompactDescr(vehTypeCompDescr)
                     if vehNationID != tman.nationID or vehicleTypeID != tman.vehicleTypeID:
                         raise SoftException('Vehicle and tankman mismatch.')
@@ -572,7 +579,7 @@ def __readBonus_tankmen(bonus, vehTypeCompDescr, section, eventType, checkLimit)
                 tmanData[record] = None
 
         try:
-            if type(vehTypeCompDescr) == int:
+            if isinstance(vehTypeCompDescr, int):
                 _, vehNationID, vehicleTypeID = vehicles.parseIntCompactDescr(vehTypeCompDescr)
                 if vehNationID != tmanData['nationID'] or vehicleTypeID != tmanData['vehicleTypeID']:
                     raise SoftException('Vehicle and tankman mismatch.')
@@ -629,12 +636,12 @@ def __readBonus_rent(bonus, _name, section):
 
 def __readBonus_outfits(bonus, _name, section):
     outfits = {}
-    for seasonTypeName, seasonTypeID in {'winter': SeasonType.WINTER, 
+    for seasonTypeName, seasonTypeID in viewitems({'winter': SeasonType.WINTER, 
        'summer': SeasonType.SUMMER, 
        'desert': SeasonType.DESERT, 
-       'event': SeasonType.EVENT}.iteritems():
+       'event': SeasonType.EVENT}):
         if section.has_key(seasonTypeName):
-            outfits[seasonTypeID] = section[seasonTypeName].asString.decode('base64')
+            outfits[seasonTypeID] = base64.b64decode(section[seasonTypeName].asString)
 
     bonus['outfits'] = outfits
 
@@ -830,7 +837,7 @@ def __readBonus_blueprint(bonus, _name, section, eventType, checkLimit):
     if compDescr == 0:
         raise SoftException('Invalid vehicle type name or description %s' % section)
     if not isUniversalFragment(compDescr):
-        vehicle = vehicles.getVehicleType(compDescr)
+        _ = vehicles.getVehicleType(compDescr)
         if compDescr not in cache['vehiclesInTrees']:
             raise SoftException('Invalid vehicle type %s. Vehicle is not in research tree.' % section)
     count = section.readInt('count', 0)
@@ -889,7 +896,7 @@ def __readBonus_optionalData(config, bonusReaders, section, eventType):
     probabilityStageCount = config.get('probabilityStageCount', 1)
     probabilitiesList = None
     if section.has_key('probability'):
-        probabilities = map(float, section.readString('probability', '').split())
+        probabilities = lmap(float, section.readString('probability', '').split())
         probabilitiesLen = len(probabilities)
         if probabilitiesLen > probabilityStageCount or probabilitiesLen == 0:
             raise SoftException(('Expected {} probabilities, received {}').format(probabilityStageCount, probabilitiesLen))
@@ -897,7 +904,7 @@ def __readBonus_optionalData(config, bonusReaders, section, eventType):
             if not 0 <= probability <= 100:
                 raise SoftException(('Probability is out of range: {}').format(probability))
 
-        probabilitiesList = map(lambda probability: probability / 100.0, probabilities)
+        probabilitiesList = lmap(lambda probability: probability / 100.0, probabilities)
         probabilitiesList.extend([probabilitiesList[(-1)]] * (probabilityStageCount - probabilitiesLen))
     bonusProbability = None
     if section.has_key('bonusProbability'):
@@ -1035,13 +1042,13 @@ def __readBonus_dogTag(bonus, _name, section, eventType, checkLimit):
     grade = section.readInt('grade', 0)
     unlock = section.readBool('unlock', False)
     needRecalculate = section.readBool('needRecalculate', False)
-    if value is not 0.0:
+    if value:
         data['value'] = value
-    if grade is not 0:
+    if grade:
         data['grade'] = grade
-    if unlock is not False:
+    if unlock:
         data['unlock'] = unlock
-    if needRecalculate is not False:
+    if needRecalculate:
         data['needRecalculate'] = needRecalculate
     bonus.setdefault('dogTagComponents', []).append(data)
 
@@ -1078,7 +1085,7 @@ def __readBonus_freePremiumCrew(bonus, _name, section, eventType, checkLimit):
 
 
 def __readBonus_pets(bonus, name, section, eventType, checkLimit):
-    pets = map(int, section.asString.strip().split())
+    pets = lmap(int, section.asString.strip().split())
     if any(pID <= 0 for pID in pets):
         raise SoftException('pet id in pets bonus section less or equal zero')
     bonus[name] = set(pets)
@@ -1155,10 +1162,10 @@ __PROBABILITY_READERS = {'optional': __readBonus_optional,
 _RESERVED_NAMES = frozenset(['config', 'properties', 'limitID', 'probability', 'compensation', 'name',
  'shouldCompensated', 'probabilityStageDependence', 'bonusProbability', 'depthLevel',
  'dropInGroup', 'trackedByNameLimit'])
-SUPPORTED_BONUSES = frozenset(__BONUS_READERS.iterkeys())
+SUPPORTED_BONUSES = frozenset(__BONUS_READERS)
 __SORTED_BONUSES = sorted(SUPPORTED_BONUSES)
 SUPPORTED_BONUSES_IDS = dict((n, i) for i, n in enumerate(__SORTED_BONUSES))
-SUPPORTED_BONUSES_NAMES = {i:n for i, n in enumerate(__SORTED_BONUSES)}
+SUPPORTED_BONUSES_NAMES = dict(enumerate(__SORTED_BONUSES))
 
 def __readBonusLimit(section):
     properties = {}
@@ -1225,7 +1232,7 @@ def readBonusSection(bonusRange, section, eventType=None, checkLimit=True):
     else:
         bonusReaders = getBonusReaders(bonusRange)
         config = __readBonusConfig(section['config']) if section.has_key('config') else {}
-        limitIDs, bonus = __readBonusSubSection(config, bonusReaders, section, eventType, checkLimit)
+        _, bonus = __readBonusSubSection(config, bonusReaders, section, eventType, checkLimit)
         if config:
             bonus['config'] = config
         return bonus

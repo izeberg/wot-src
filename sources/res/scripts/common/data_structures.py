@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from collections import defaultdict
 from constants import PICKLER_PROTOCOL_METHODS
 from soft_exception import SoftException

@@ -30,7 +30,7 @@
 						<row0>1.000000 0.000000 0.000000</row0>
 						<row1>0.000000 1.000000 0.000000</row1>
 						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>0.000000 0.093287 -0.000000</row3>
+						<row3>0.000000 0.076792 0.000000</row3>
 					</transform>
 					<node>
 						<identifier>l_mic_1</identifier>
@@ -70,7 +70,7 @@
 											<row0>-0.833528 -0.447697 -0.323725</row0>
 											<row1>-0.086994 0.685000 -0.723331</row1>
 											<row2>-0.545585 0.574754 0.609913</row2>
-											<row3>-0.152362 -0.194130 0.159145</row3>
+											<row3>-0.153797 -0.182831 0.147214</row3>
 										</transform>
 									</node>
 								</node>
@@ -80,7 +80,7 @@
 										<row0>-0.005695 0.004715 -0.999973</row0>
 										<row1>0.637718 0.770270 0.000000</row1>
 										<row2>-0.770249 0.637701 0.007393</row2>
-										<row3>-0.128390 -0.136369 -0.161878</row3>
+										<row3>-0.117870 -0.123663 -0.161878</row3>
 									</transform>
 								</node>
 							</node>
@@ -90,7 +90,7 @@
 									<row0>-0.031354 0.027016 -0.999143</row0>
 									<row1>0.652759 0.757566 0.000000</row1>
 									<row2>-0.756917 0.652199 0.041388</row2>
-									<row3>-0.104295 -0.130227 -0.161379</row3>
+									<row3>-0.093528 -0.117731 -0.161379</row3>
 								</transform>
 							</node>
 						</node>
@@ -100,7 +100,7 @@
 								<row0>-0.999929 0.002135 -0.011703</row0>
 								<row1>0.002135 0.999998 0.000000</row1>
 								<row2>-0.011703 0.000025 0.999932</row2>
-								<row3>-0.119029 -0.166391 -0.014554</row3>
+								<row3>-0.118994 -0.149896 -0.014554</row3>
 							</transform>
 						</node>
 					</node>
@@ -118,7 +118,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 1.000000 0.000000</row1>
 								<row2>0.000000 0.000000 -1.000000</row2>
-								<row3>-0.053465 -0.307121 -0.369545</row3>
+								<row3>-0.053465 -0.290626 -0.369545</row3>
 							</transform>
 						</node>
 					</node>
@@ -160,7 +160,7 @@
 											<row0>-0.833528 -0.447697 -0.323725</row0>
 											<row1>0.086994 -0.685000 0.723331</row1>
 											<row2>0.545585 -0.574754 -0.609913</row2>
-											<row3>0.152362 0.194130 -0.159145</row3>
+											<row3>0.153797 0.182831 -0.147214</row3>
 										</transform>
 									</node>
 								</node>
@@ -170,7 +170,7 @@
 										<row0>-0.005695 0.004715 -0.999973</row0>
 										<row1>-0.637718 -0.770270 0.000000</row1>
 										<row2>0.770249 -0.637701 -0.007393</row2>
-										<row3>0.128390 0.136369 0.161879</row3>
+										<row3>0.117871 0.123663 0.161879</row3>
 									</transform>
 								</node>
 							</node>
@@ -180,7 +180,7 @@
 									<row0>-0.031354 0.027016 -0.999143</row0>
 									<row1>-0.652759 -0.757566 0.000000</row1>
 									<row2>0.756917 -0.652199 -0.041388</row2>
-									<row3>0.104295 0.130227 0.161380</row3>
+									<row3>0.093527 0.117730 0.161380</row3>
 								</transform>
 							</node>
 						</node>
@@ -190,7 +190,7 @@
 								<row0>-0.999929 0.002135 -0.011703</row0>
 								<row1>-0.002135 -0.999998 0.000000</row1>
 								<row2>0.011703 -0.000025 -0.999932</row2>
-								<row3>0.119030 0.166391 0.014554</row3>
+								<row3>0.118994 0.149896 0.014554</row3>
 							</transform>
 						</node>
 					</node>
@@ -208,7 +208,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 1.000000 0.000000</row1>
 								<row2>0.000000 0.000000 -1.000000</row2>
-								<row3>-0.000000 -0.385308 -0.082038</row3>
+								<row3>-0.000000 -0.368812 -0.082038</row3>
 							</transform>
 						</node>
 					</node>
@@ -218,7 +218,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 -1.000000</row2>
-							<row3>0.000000 -0.093287 0.000000</row3>
+							<row3>0.000000 -0.076792 0.000000</row3>
 						</transform>
 					</node>
 				</node>
@@ -249,8 +249,8 @@
 		<node>static_BlendBone</node>
 		<node>lense_BlendBone</node>
 		<geometry>
-			<vertices>attachmentShapeDeformed.vertices</vertices>
-			<primitive>attachmentShapeDeformed.indices</primitive>
+			<vertices>attachmentShape.vertices</vertices>
+			<primitive>attachmentShape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -307,7 +307,7 @@
 						<Float>0.310000</Float>
 					</property>
 				</material>
-				<groupOrigin>0.000000 0.241298 -0.091471</groupOrigin>
+				<groupOrigin>0.000000 0.283203 -0.091471</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				1
@@ -349,14 +349,14 @@
 						<Texture>content/3D_Customization/Cus_70_PM3_Camera/pbm_decal_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.097546 0.156690 0.101535</groupOrigin>
+				<groupOrigin>0.097546 0.140195 0.101535</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-0.427477 -0.200000 -0.216314</min>
-		<max>0.427477 0.689513 0.375290</max>
+		<min>-0.427478 -0.099696 -0.216314</min>
+		<max>0.427478 0.673018 0.375290</max>
 	</boundingBox>
 	<geometrySize>37412</geometrySize>
 </root>

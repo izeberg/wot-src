@@ -2,7 +2,7 @@ from __future__ import absolute_import
 import functools, inspect, logging
 from frameworks.wulf import View, ViewStatus
 from helpers.uniprof import regions
-from py2to3.utils import getargspec
+from py2to3.backport.inspect import getargspec
 _REGION_FORMAT = 'view.{}.{}'
 _logger = logging.getLogger(__name__)
 _logger.addHandler(logging.NullHandler())

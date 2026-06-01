@@ -55,13 +55,13 @@
 						<Texture>content/3D_Customization/Cus_124_Aviation_Camera/Cus_124_Aviation_Camera_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.005682 0.279947 0.205255</groupOrigin>
+				<groupOrigin>0.005682 0.326335 0.205255</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.229383 -0.192895 -0.153262</min>
-		<max>0.238690 0.753194 0.562782</max>
+		<min>-0.223192 -0.100118 -0.152272</min>
+		<max>0.234557 0.752788 0.562782</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
 	<geometrySize>10980</geometrySize>

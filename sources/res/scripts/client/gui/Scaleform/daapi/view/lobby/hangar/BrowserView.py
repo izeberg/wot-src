@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld
 from adisp import adisp_process
 from debug_utils import LOG_ERROR

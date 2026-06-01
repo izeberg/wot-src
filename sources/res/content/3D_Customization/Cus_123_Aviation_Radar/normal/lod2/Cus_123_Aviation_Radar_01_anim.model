@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>content/3D_Customization/Cus_123_Aviation_Radar/normal/lod2/Cus_123_Aviation_Radar_01_anim</nodefullVisual>
 	<parent>content/3D_Customization/Cus_123_Aviation_Radar/normal/lod3/Cus_123_Aviation_Radar_01_anim</parent>
 	<extent>96.000000</extent>
 	<visibilityBox>
-		<min>-0.288349 -0.200000 -0.197961</min>
-		<max>0.275533 0.599213 0.282393</max>
+		<min>-0.288349 -0.100056 -0.220949</min>
+		<max>0.275533 0.600356 0.287102</max>
 	</visibilityBox>
 	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_123_Aviation_Radar/normal/lod2/Cus_123_Aviation_Radar_01_anim</nodefullVisual>
 </root>

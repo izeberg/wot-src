@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import Math
 from enum import Enum, unique
 

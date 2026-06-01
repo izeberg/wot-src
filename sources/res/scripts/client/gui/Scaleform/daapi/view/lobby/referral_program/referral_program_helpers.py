@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui import GUI_SETTINGS
 from helpers import dependency
 from skeletons.gui.shared import IItemsCache

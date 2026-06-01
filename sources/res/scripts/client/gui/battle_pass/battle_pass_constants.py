@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from enum import Enum, unique
 MIN_LEVEL = 1
 
@@ -8,6 +9,7 @@ class BonusesLayoutConsts(object):
     ID_KEY = 'id'
     LEVEL_KEY = 'level'
     BIG_ICON_KEY = 'bigIcon'
+    RARITY = 'rarity'
     MAIN_KEYS = (
      PRIORITY_KEY, VISIBILITY_KEY, BIG_ICON_KEY)
     INT_VALUES = (PRIORITY_KEY,)

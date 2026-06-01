@@ -3362,7 +3362,7 @@
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
-						2.3
+						1.9
 						<!--BW_String-->
 					</aimingTime>
 					<shotDispersionFactors>
@@ -3380,17 +3380,14 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<shotDispersionRadius>
-						0.35
+						0.33
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<mechanics>
 						<propellantAfterburnerGun>
-							<chargingPerSec>
-								2.2
-								<!--BW_String-->
-							</chargingPerSec>
+							<chargingPerSec>4</chargingPerSec>
 							<dischargingPerSec>10</dischargingPerSec>
-							<chargeSpendingAfterShot>50</chargeSpendingAfterShot>
+							<chargeSpendingAfterShot>61</chargeSpendingAfterShot>
 							<forbiddenShells>france:_120mm_OE_IPC_1</forbiddenShells>
 							<shouldPauseOnReload>false</shouldPauseOnReload>
 							<chargeDelay>
@@ -3417,16 +3414,13 @@
 										<mul>
 											<name>dynAttrs/multShotDispersionFactor</name>
 											<value>
-												2.5
+												1.95
 												<!--BW_String-->
 											</value>
 										</mul>
 										<mul>
 											<name>dynAttrs/gun/aimingTime</name>
-											<value>
-												2.5
-												<!--BW_String-->
-											</value>
+											<value>2</value>
 										</mul>
 									</modifiers>
 									<isOvercharge>true</isOvercharge>
@@ -4168,20 +4162,24 @@
 				<slot>
 					<slotType>attachment</slotType>
 					<slotId>38000</slotId>
-					<position>-0.779428 1.191815 -1.307684</position>
+					<position>-1.054395 1.191818 0.269701</position>
 					<rotation>-0 0 0</rotation>
 					<scale>1 1 1</scale>
 					<applyType>turret</applyType>
 					<size>medium</size>
+					<enableVisTunnel>true</enableVisTunnel>
+					<hangerId>16</hangerId>
 				</slot>
 				<slot>
 					<slotType>attachment</slotType>
 					<slotId>38001</slotId>
-					<position>0.964241 1.188514 -1.128594</position>
-					<rotation>-0 -0 0</rotation>
+					<position>-0.000003 0.943771 1.049276</position>
+					<rotation>-0 0 0</rotation>
 					<scale>1 1 1</scale>
 					<applyType>gunMantlet</applyType>
 					<size>medium</size>
+					<enableVisTunnel>true</enableVisTunnel>
+					<hangerId>2</hangerId>
 				</slot>
 			</customizationSlots>
 			<wwturretRotatorSoundManual>tur_mech_trav</wwturretRotatorSoundManual>

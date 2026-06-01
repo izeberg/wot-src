@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>content/3D_Customization/Cus_06_Scout_Radar/normal/lod2/attachment</nodefullVisual>
 	<parent>content/3D_Customization/Cus_06_Scout_Radar/normal/lod3/attachment</parent>
 	<extent>96.000000</extent>
 	<tank>true</tank>
 	<visibilityBox>
-		<min>-0.479633 -0.198987 -0.236646</min>
-		<max>0.486159 0.538646 0.210964</max>
+		<min>-0.449657 -0.100000 -0.236646</min>
+		<max>0.455776 0.557929 0.210964</max>
 	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/Cus_06_Scout_Radar/normal/lod2/attachment</nodefullVisual>
 </root>

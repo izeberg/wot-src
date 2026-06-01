@@ -139,7 +139,7 @@
 				<!--BW_String-->
 			</armor_16>
 			<armor_17>
-				44.5
+				31.8
 				<!--BW_String-->
 			</armor_17>
 			<armor_18>
@@ -4409,7 +4409,7 @@
 					<!--BW_String-->
 				</armor_1>
 				<armor_2>
-					82.6
+					63.5
 					<!--BW_String-->
 				</armor_2>
 				<armor_3>
@@ -4434,15 +4434,12 @@
 				</armor_7>
 				<armor_8>0</armor_8>
 				<armor_9>
-					88.9
+					76.2
 					<!--BW_String-->
 				</armor_9>
-				<armor_10>
-					215.9
-					<!--BW_String-->
-				</armor_10>
+				<armor_10>181</armor_10>
 				<armor_11>
-					203.2
+					171.5
 					<!--BW_String-->
 				</armor_11>
 				<armor_12>
@@ -4454,7 +4451,7 @@
 					<!--BW_String-->
 				</armor_13>
 				<armor_14>
-					63.5
+					44.5
 					<!--BW_String-->
 				</armor_14>
 				<armor_15>
@@ -4470,7 +4467,7 @@
 					<!--BW_String-->
 				</armor_17>
 				<armor_18>
-					50.8
+					44.5
 					<!--BW_String-->
 				</armor_18>
 				<armor_19>
@@ -4478,7 +4475,7 @@
 					<!--BW_String-->
 				</armor_19>
 				<armor_20>
-					114.3
+					101.6
 					<!--BW_String-->
 				</armor_20>
 				<armor_21>
@@ -4486,19 +4483,19 @@
 					<!--BW_String-->
 				</armor_21>
 				<armor_22>
-					69.9
+					44.5
 					<!--BW_String-->
 				</armor_22>
 				<armor_23>
-					190.5
+					146.1
 					<!--BW_String-->
 				</armor_23>
 				<armor_24>
-					146.1
+					114.9
 					<!--BW_String-->
 				</armor_24>
 				<armor_25>
-					120.7
+					114.3
 					<!--BW_String-->
 				</armor_25>
 				<armor_26>
@@ -4506,14 +4503,11 @@
 					<!--BW_String-->
 				</armor_26>
 				<armor_27>
-					152.4
+					144.8
 					<!--BW_String-->
 				</armor_27>
 				<armor_28>181</armor_28>
-				<armor_29>
-					171.5
-					<!--BW_String-->
-				</armor_29>
+				<armor_29>127</armor_29>
 				<armor_30>
 					114.3
 					<!--BW_String-->
@@ -4569,12 +4563,15 @@
 						</armor_7>
 						<armor_8>0</armor_8>
 						<armor_9>
-							222.3
+							215.9
 							<!--BW_String-->
 						</armor_9>
-						<armor_10>210</armor_10>
-						<armor_11>
+						<armor_10>
 							196.9
+							<!--BW_String-->
+						</armor_10>
+						<armor_11>
+							171.5
 							<!--BW_String-->
 						</armor_11>
 						<armor_12>
@@ -5174,20 +5171,32 @@
 				<slot>
 					<slotType>attachment</slotType>
 					<slotId>38000</slotId>
-					<position>-0.638984 0.801386 0.349125</position>
-					<rotation>-0 -0 0</rotation>
+					<position>-1.201756 0.487274 0.088412</position>
+					<rotation>-0 0 0</rotation>
 					<scale>1 1 1</scale>
 					<applyType>turret</applyType>
 					<size>small</size>
+					<enableVisTunnel>true</enableVisTunnel>
+					<hangerId>5</hangerId>
+					<hangerRotation>0.000001 -1.083417 -0.000004</hangerRotation>
 				</slot>
 				<slot>
 					<slotType>attachment</slotType>
 					<slotId>38001</slotId>
 					<size>small</size>
-					<position>0.619999 0.825966 0.152532</position>
+					<position>
+						1.157216 0.47931 0.49408
+						<!--BW_String-->
+					</position>
 					<rotation>-0 -0 0</rotation>
 					<scale>1 1 1</scale>
 					<applyType>gunMantlet</applyType>
+					<enableVisTunnel>true</enableVisTunnel>
+					<hangerId>2</hangerId>
+					<hangerRotation>
+						-0 0.977384 0
+						<!--BW_String-->
+					</hangerRotation>
 				</slot>
 			</customizationSlots>
 			<customization>

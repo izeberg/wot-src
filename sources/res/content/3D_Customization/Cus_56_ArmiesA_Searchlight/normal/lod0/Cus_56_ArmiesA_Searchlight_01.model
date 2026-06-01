@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodelessVisual>content/3D_Customization/Cus_56_ArmiesA_Searchlight/normal/lod0/Cus_56_ArmiesA_Searchlight_01</nodelessVisual>
 	<parent>content/3D_Customization/Cus_56_ArmiesA_Searchlight/normal/lod1/Cus_56_ArmiesA_Searchlight_01</parent>
 	<extent>32.000000</extent>
 	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_56_ArmiesA_Searchlight/normal/lod0/Cus_56_ArmiesA_Searchlight_01</nodefullVisual>
+	<visibilityBox>
+		<min>-0.271342 -0.100000 -0.292934</min>
+		<max>0.271531 0.593431 0.265022</max>
+	</visibilityBox>
 </root>

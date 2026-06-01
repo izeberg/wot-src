@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from enum import IntEnum
 RENT_TOKEN_NAME = 'telecom_rent_token'
 PARTNERSHIP_TOKEN_NAME = 'telecom_partnership_token'

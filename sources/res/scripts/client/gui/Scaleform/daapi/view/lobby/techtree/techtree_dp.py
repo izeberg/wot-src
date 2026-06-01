@@ -1,5 +1,8 @@
+from __future__ import absolute_import
 import operator, typing
 from collections import defaultdict, namedtuple
+from future.utils import listvalues, viewitems, viewvalues
+from past.builtins import xrange
 import ResMgr, nations
 from constants import IS_DEVELOPMENT
 from debug_utils import LOG_ERROR, LOG_DEBUG
@@ -128,7 +131,7 @@ class _TechTreeDataProvider(object):
             if displayInfo is None:
                 LOG_ERROR('Display info is not found', nationID)
                 return
-            for node in sorted(nodes.itervalues(), key=lambda item: item.order):
+            for node in sorted(viewvalues(nodes), key=lambda item: item.order):
                 yield (
                  node, displayInfo[node.nodeCD].copy())
 
@@ -178,13 +181,13 @@ class _TechTreeDataProvider(object):
                 continue
             nextLevel = self.__nextLevels[parentCD]
             topIDs = set()
-            for childCD, (idx, xpCost, required) in nextLevel.iteritems():
+            for childCD, (idx, xpCost, required) in viewitems(nextLevel):
                 if required.issubset(unlocked):
                     topIDs.add(parentCD)
                     available[childCD].append(UnlockProps(parentCD, idx, xpCost, topIDs, 0, xpCost))
 
         result = {}
-        for childCD, compare in available.iteritems():
+        for childCD, compare in viewitems(available):
             result[childCD] = self._findNext2Unlock(compare, xps=xps, freeXP=freeXP)
 
         return result
@@ -367,7 +370,7 @@ class _TechTreeDataProvider(object):
                 value = getattr(_xml, reader)(xmlCtx, settingSec, 'value')
                 settings[name] = value
 
-            for n in DISPLAY_SETTINGS.iterkeys():
+            for n in DISPLAY_SETTINGS:
                 if n not in settings:
                     raise _ConfigError(xmlCtx, 'Setting not found')
 
@@ -481,8 +484,7 @@ class _TechTreeDataProvider(object):
                 continue
             names.append(name)
 
-        names = sorted(names, cmp=lambda item, other: cmp(GUI_NATIONS_ORDER_INDEX.get(item), GUI_NATIONS_ORDER_INDEX.get(other)))
-        return names
+        return sorted(names, key=GUI_NATIONS_ORDER_INDEX.get)
 
     def __readAnnouncements(self, xmlCtx, root):
         for name, section in _xml.getChildren(xmlCtx, root, 'announcements'):
@@ -591,7 +593,7 @@ class _TechTreeDataProvider(object):
                 uName = vehicles.g_list.getList(nationID)[vTypeID].name
                 LOG_ERROR(('Relation between {0:>s} and {1:>s} are not defined').format(pName, uName))
 
-        return result.values()
+        return listvalues(result)
 
     def __readNation(self, shared, nation, clearCache=False):
         xmlPath = NATION_TREE_REL_FILE_PATH.format(nation)
@@ -664,9 +666,9 @@ class _TechTreeDataProvider(object):
                         for itemCD in required:
                             self.__topItems[itemCD].add(node.nodeCD)
 
-                if hasRoot and row > 1 and column is 1:
+                if hasRoot and row > 1 and column == 1:
                     raise _ConfigError(xmlCtx, ('In first column must be one node - root node, {0:>s} ').format(node.nodeName))
-                elif row > rows or column > columns:
+                if row > rows or column > columns:
                     raise _ConfigError(xmlCtx, ('Invalid row or column index: {0:>s}, {1:d}, {2:d}').format(node.nodeName, row, column))
                 lines = self.__readNodeLines(node.nodeCD, nation, xmlCtx, nodeSection, shared)
                 displayInfo[node.nodeCD] = {'row': row, 
@@ -681,7 +683,7 @@ class _TechTreeDataProvider(object):
         for displayInfo in self.__displayInfo:
             if displayInfo is None:
                 continue
-            for info in displayInfo.itervalues():
+            for info in viewvalues(displayInfo):
                 lines = info['lines']
                 nodePos = info['position']
                 for lineInfo in lines:

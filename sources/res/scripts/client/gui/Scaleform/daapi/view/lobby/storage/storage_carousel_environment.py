@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.daapi.view.common.vehicle_carousel.carousel_environment import ICarouselEnvironment
 from gui.Scaleform.daapi.view.common.vehicle_carousel.carousel_environment import formatCountString
 from gui.Scaleform.daapi.view.meta.StorageCarouselEnvironmentMeta import StorageCarouselEnvironmentMeta

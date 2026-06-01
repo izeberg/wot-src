@@ -51,14 +51,14 @@
 						<Texture>content/3D_Customization/Cus_98_WT_Camera/Cus_98_WT_Camera_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.068705 0.152531 -0.076560</groupOrigin>
+				<groupOrigin>-0.068705 0.202249 -0.076560</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.289055 -0.199518 -0.561069</min>
+		<min>-0.289055 -0.100164 -0.561069</min>
 		<max>0.151646 0.504580 0.336712</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>36632</geometrySize>
+	<geometrySize>36848</geometrySize>
 </root>

@@ -1,3 +1,4 @@
+from __future__ import absolute_import, division
 import typing
 from gui.Scaleform.daapi.view.lobby.techtree.settings import DEFAULT_UNLOCK_PROPS
 from gui.shared.formatters import text_styles

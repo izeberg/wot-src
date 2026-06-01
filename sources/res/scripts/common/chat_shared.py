@@ -1,5 +1,8 @@
-import cPickle, time, zlib
+from __future__ import absolute_import
+import time, zlib
 from functools import wraps
+from future.moves import pickle
+from past.builtins import long, basestring
 import constants
 from Event import Event
 from chat_commands_consts import BATTLE_CHAT_COMMAND_NAMES
@@ -893,10 +896,10 @@ class BanCommandProcessor(BaseChatCommandProcessor):
         errorMessage = '#chat:errors/timeincorrect'
         timeArg = int16arg
         if isinstance(timeArg, basestring) and timeArg.isdigit() or isinstance(timeArg, (int, long)):
-            time = int(timeArg)
-            if time == -1:
+            timeVal = int(timeArg)
+            if timeVal == -1:
                 pass
-            elif time < 1 or time > 1440:
+            elif timeVal < 1 or timeVal > 1440:
                 raise ChatCommandError(error=errorMessage)
         else:
             raise ChatCommandError(error=errorMessage)
@@ -934,17 +937,17 @@ class UserBanCommandProcessor(UserCommandProcessor):
                 sign, amount, timeSpec = res.groups()
                 if not amount:
                     raise IncorrectCommandArgumentError(rawData[2])
-                if 'h' == timeSpec:
+                if timeSpec == 'h':
                     multiplier = 60
-                elif 'd' == timeSpec:
+                elif timeSpec == 'd':
                     multiplier = 1440
-                elif 'w' == timeSpec:
+                elif timeSpec == 'w':
                     multiplier = 10080
-                elif 'm' == timeSpec:
+                elif timeSpec == 'm':
                     multiplier = 43200
-                elif 'y' == timeSpec:
+                elif timeSpec == 'y':
                     multiplier = 43200
-                if '-' == sign:
+                if sign == '-':
                     multiplier *= -1
                 banPeriod = long(amount) * multiplier
         elif isinstance(rawData[2], long):
@@ -952,12 +955,13 @@ class UserBanCommandProcessor(UserCommandProcessor):
         else:
             raise IncorrectCommandArgumentError(rawData[2])
         words = rawData[3].split()
-        if words and 'kick' == words[0].lower():
+        if words and words[0].lower() == 'kick':
             banTypeIdx *= -1
             rawData[3] = (' ').join(words[1:])
         return (self._command, banPeriod, banTypeIdx, rawData[1], rawData[3])
 
-    def verifyParsedData(self, banPeriod=0, banTypeIdx=0, username='', reason=''):
+    def verifyParsedData(self, int64Arg=0, int16arg=0, stringArg1='', stringArg2=''):
+        banPeriod, banTypeIdx = int64Arg, int16arg
         if not (isinstance(banPeriod, basestring) and banPeriod.isdigit() or isinstance(banPeriod, (int, long))):
             raise IncorrectCommandArgumentError(banPeriod)
         try:
@@ -984,11 +988,11 @@ class UserUnbanCommandProcessor(UserCommandProcessor):
         return (
          self._command, 0, banTypeIdx, rawData[1], '')
 
-    def verifyParsedData(self, banPeriod=0, banTypeIdx=0, username='', reason=''):
+    def verifyParsedData(self, int64Arg=0, int16arg=0, stringArg1='', stringArg2=''):
         try:
-            _ = UserCommandProcessor._USER_BAN_TYPES[banTypeIdx]
+            _ = UserCommandProcessor._USER_BAN_TYPES[int16arg]
         except:
-            raise IncorrectCommandArgumentError(banTypeIdx)
+            raise IncorrectCommandArgumentError(int16arg)
 
         return True
 
@@ -1138,7 +1142,7 @@ def verifyCommandData(command, int64Arg=0, int16arg=0, stringArg1='', stringArg2
 
 
 def isPermanentBan(banTime):
-    return 'permanent' == banTime
+    return banTime == 'permanent'
 
 
 class ChatActionHandlers(object):
@@ -1438,7 +1442,7 @@ class IncorrectCommandArgumentError(ChatCommandError):
         self._messageArgs = {'arg': arg}
 
 
-class ChatException(ChatError, Exception):
+class ChatException(ChatError):
 
     def __init__(self, response=None):
         ChatError.__init__(self, response)
@@ -1694,13 +1698,13 @@ class MESSAGE_FILTER_TYPE(object):
 
 def compressSysMessage(message):
     if isinstance(message, dict):
-        message = zlib.compress(cPickle.dumps(message, -1), 1)
+        message = zlib.compress(pickle.dumps(message, -1), 1)
     return message
 
 
 def decompressSysMessage(message):
     try:
-        message = cPickle.loads(zlib.decompress(message))
+        message = pickle.loads(zlib.decompress(message))
     except:
         pass
 

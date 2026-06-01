@@ -208,6 +208,9 @@ msgstr "Stridsyxa"
 msgid "Chassis_S36_Strv_107_12"
 msgstr "Strv 107-12"
 
+msgid "Chassis_S37_Ambassador"
+msgstr "Ambassador"
+
 msgid "Chassis_S39_Strv_m31"
 msgstr "Strv m/31"
 
@@ -273,6 +276,9 @@ msgstr "Ra 105"
 
 msgid "Ra_121"
 msgstr "Ra 121"
+
+msgid "Ra_122_Ambassador"
+msgstr "Ra 122 (Ambassador)"
 
 msgid "Ra_146"
 msgstr "Ra 146"
@@ -802,10 +808,10 @@ msgid "S28_UDES_15_16"
 msgstr "UDES 15/16"
 
 msgid "S28_UDES_15_16_7x7"
-msgstr "UDES 15/16 7v7"
+msgstr "UDES 15/16 7x7"
 
 msgid "S28_UDES_15_16_7x7_short"
-msgstr "U.15/16 7v7"
+msgstr "U.15/16 7x7"
 
 msgid "S28_UDES_15_16_descr"
 msgstr ""
@@ -1014,6 +1020,35 @@ msgstr ""
 msgid "S36_Strv_107_12_short"
 msgstr "Strv 107-12"
 
+msgid "S37_Ambassador"
+msgstr "Ambassador"
+
+msgid "S37_Ambassador_descr"
+msgstr ""
+"In the early 1960s, Sweden began developing a new tank meant to be an "
+"alternative to the Strv 103 and to have a high degree of technical "
+"innovation. The vehicle had a conventional configuration with a rotating "
+"turret, torsion-bar suspension, and an air-cooled diesel engine. However, "
+"many drawbacks were discovered during development: The engine cooling system"
+" was ineffective, the oil consumption exceeded the norm, and the turret "
+"turned out to be cramped. Given that—despite the originality—the Strv 103 "
+"proved to be an entirely realistic vehicle, the Ambassador project was "
+"terminated."
+
+msgid "S37_Ambassador_long_special"
+msgstr ""
+"The Ambassador is a Swedish Tier IX support heavy tank. It possesses a "
+"mighty 4-shell autoloader with a very quick in-clip reload time. In "
+"addition, decent mobility allows it to reposition swiftly, and its quick "
+"full-clip reload provides a steady rate of fire without prolonged "
+"interruptions."
+
+msgid "S37_Ambassador_short"
+msgstr "Ambassador"
+
+msgid "S37_Ambassador_short_special"
+msgstr "Good dynamics, autoloader with short in-clip reload time"
+
 msgid "S39_Strv_m31"
 msgstr "Strv m/31"
 
@@ -1201,6 +1236,9 @@ msgstr "Stridsyxa"
 msgid "Turret_1_S36_Strv_107_12"
 msgstr "Strv 107-12"
 
+msgid "Turret_1_S37_Ambassador"
+msgstr "Ambassador"
+
 msgid "Turret_1_S39_Strv_m31"
 msgstr "Strv m/31"
 
@@ -1243,6 +1281,9 @@ msgstr "Volvo DC"
 msgid "Volvo_FE"
 msgstr "Volvo FE"
 
+msgid "Volvo_SFA_12_Ambassador"
+msgstr "Volvo SFA 12 (Ambassador)"
+
 msgid "Volvo_TD_100_A"
 msgstr "Volvo TD 100 A"
 
@@ -1266,6 +1307,9 @@ msgstr "slpprj D/5"
 
 msgid "_105mm_Bofors_D_G5_SH"
 msgstr "10.5 cm Bofors D/5"
+
+msgid "_105mm_L_7_Gun_Ambassador"
+msgstr "105 mm L7 Gun (Ambassador)"
 
 msgid "_105mm_TK_105_9"
 msgstr "10,5 cm TK 105-9"
@@ -1365,6 +1409,9 @@ msgstr "sgr m/52"
 
 msgid "_105mm_sgr_m_52_52E2"
 msgstr "sgr m/52 (52E2)"
+
+msgid "_105mm_sgr_m_F_Ambassador"
+msgstr "sgr m/F (Ambassador)"
 
 msgid "_105mm_slpgr_LS_50_S"
 msgstr "slpgr L/50 S"
@@ -1477,6 +1524,9 @@ msgstr "slpprj m/73"
 msgid "_105mm_slpprj_m_78"
 msgstr "slpprj m/78"
 
+msgid "_105mm_slpprj_m_F_Ambassador"
+msgstr "slpprj m/F (Ambassador)"
+
 msgid "_105mm_slpprj_m_ny"
 msgstr "slpprj m/ny"
 
@@ -1488,6 +1538,9 @@ msgstr "slpsgr m/60"
 
 msgid "_105mm_slpsgr_m_65"
 msgstr "slpsgr m/65"
+
+msgid "_105mm_slpsgr_m_F_Ambassador"
+msgstr "slpsgr m/F (Ambassador)"
 
 msgid "_105mm_slsgr_m_61A"
 msgstr "slsgr m/61A"

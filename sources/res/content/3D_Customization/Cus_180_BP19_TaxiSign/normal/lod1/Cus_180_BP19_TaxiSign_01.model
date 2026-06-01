@@ -3,9 +3,9 @@
 	<parent>content/3D_Customization/Cus_180_BP19_TaxiSign/normal/lod2/Cus_180_BP19_TaxiSign_01</parent>
 	<extent>96.000000</extent>
 	<visibilityBox>
-		<min>-0.224548 -0.200000 -0.058714</min>
+		<min>-0.224548 -0.100000 -0.058714</min>
 		<max>0.224548 0.381259 0.058714</max>
 	</visibilityBox>
-	<nodefullVisual>content/3D_Customization/Cus_180_BP19_TaxiSign/normal/lod1/Cus_180_BP19_TaxiSign_01</nodefullVisual>
 	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_180_BP19_TaxiSign/normal/lod1/Cus_180_BP19_TaxiSign_01</nodefullVisual>
 </root>

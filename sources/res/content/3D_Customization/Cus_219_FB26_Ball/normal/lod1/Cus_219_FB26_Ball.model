@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>content/3D_Customization/Cus_219_FB26_Ball/normal/lod2/Cus_219_FB26_Ball</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.253627 -0.100000 -0.268315</min>
+		<max>0.247218 0.601705 0.469597</max>
+	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/Cus_219_FB26_Ball/normal/lod1/Cus_219_FB26_Ball</nodefullVisual>
+</root>

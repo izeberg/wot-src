@@ -32,6 +32,17 @@
 			</frame>
 		</track>
 		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.900000 0.900000 0.900000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
 			<name>material property color</name>
 			<type>vector4</type>
 			<identifier>lambert5</identifier>

@@ -1097,7 +1097,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.hangar.data.HeaderQuestGroupVO;
    import net.wg.gui.lobby.hangar.data.HeaderQuestsVO;
    import net.wg.gui.lobby.hangar.data.ResearchPanelVO;
-   import net.wg.gui.lobby.hangar.data.SecondaryEntryPointVO;
    import net.wg.gui.lobby.hangar.data.SwitchModePanelVO;
    import net.wg.gui.lobby.hangar.interfaces.IHangar;
    import net.wg.gui.lobby.hangar.interfaces.IHangarHeader;
@@ -1108,7 +1107,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.hangar.mapBox.MapBoxItemRenderer;
    import net.wg.gui.lobby.hangar.mapBox.data.MapBoxItemVO;
    import net.wg.gui.lobby.hangar.quests.BattleMattersEntryPoint;
-   import net.wg.gui.lobby.hangar.quests.BattlePassEntryPoint;
    import net.wg.gui.lobby.hangar.quests.FlagContainer;
    import net.wg.gui.lobby.hangar.quests.HEADER_QUESTS_CONSTANTS;
    import net.wg.gui.lobby.hangar.quests.HangarWidgetDAAPI;
@@ -1123,8 +1121,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.hangar.quests.QuestFlagIconContainer;
    import net.wg.gui.lobby.hangar.quests.QuestInformerButton;
    import net.wg.gui.lobby.hangar.quests.QuestInformerContent;
-   import net.wg.gui.lobby.hangar.quests.SecondaryEntryPoint;
-   import net.wg.gui.lobby.hangar.quests.SecondaryEntryPointContent;
    import net.wg.gui.lobby.hangar.tcarousel.BaseTankIcon;
    import net.wg.gui.lobby.hangar.tcarousel.CarouselProgressionPoints;
    import net.wg.gui.lobby.hangar.tcarousel.ClanLockUI;
@@ -4964,8 +4960,6 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_LOBBY_HANGAR_DATA_RESEARCHPANELVO:Class = ResearchPanelVO;
       
-      public static const NET_WG_GUI_LOBBY_HANGAR_DATA_SECONDARYENTRYPOINTVO:Class = SecondaryEntryPointVO;
-      
       public static const NET_WG_GUI_LOBBY_HANGAR_DATA_SWITCHMODEPANELVO:Class = SwitchModePanelVO;
       
       public static const NET_WG_GUI_LOBBY_HANGAR_INTERFACES_IHANGAR:Class = IHangar;
@@ -4985,8 +4979,6 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_HANGAR_MAPBOX_DATA_MAPBOXITEMVO:Class = MapBoxItemVO;
       
       public static const NET_WG_GUI_LOBBY_HANGAR_QUESTS_BATTLEMATTERSENTRYPOINT:Class = BattleMattersEntryPoint;
-      
-      public static const NET_WG_GUI_LOBBY_HANGAR_QUESTS_BATTLEPASSENTRYPOINT:Class = BattlePassEntryPoint;
       
       public static const NET_WG_GUI_LOBBY_HANGAR_QUESTS_FLAGCONTAINER:Class = FlagContainer;
       
@@ -5015,10 +5007,6 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_HANGAR_QUESTS_QUESTINFORMERBUTTON:Class = QuestInformerButton;
       
       public static const NET_WG_GUI_LOBBY_HANGAR_QUESTS_QUESTINFORMERCONTENT:Class = QuestInformerContent;
-      
-      public static const NET_WG_GUI_LOBBY_HANGAR_QUESTS_SECONDARYENTRYPOINT:Class = SecondaryEntryPoint;
-      
-      public static const NET_WG_GUI_LOBBY_HANGAR_QUESTS_SECONDARYENTRYPOINTCONTENT:Class = SecondaryEntryPointContent;
       
       public static const NET_WG_GUI_LOBBY_HANGAR_TCAROUSEL_BASETANKICON:Class = BaseTankIcon;
       

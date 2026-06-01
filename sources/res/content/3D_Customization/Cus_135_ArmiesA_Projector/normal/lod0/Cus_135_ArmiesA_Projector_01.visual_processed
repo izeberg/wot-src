@@ -51,13 +51,13 @@
 						<Texture>content/3D_Customization/Cus_135_ArmiesA_Projector/Cus_135_ArmiesA_Projector_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.000000 0.301652 0.002681</groupOrigin>
+				<groupOrigin>0.000000 0.325000 -0.001044</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.275307 -0.200000 -0.164957</min>
-		<max>0.275307 0.803304 0.170319</max>
+		<min>-0.275307 -0.100000 -0.164957</min>
+		<max>0.275307 0.750000 0.162869</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
 	<geometrySize>171196</geometrySize>

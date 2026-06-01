@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging
 from gui.Scaleform.daapi.view.lobby.rally import vo_converters
 from gui.Scaleform.daapi.view.meta.FittingSelectPopoverMeta import FittingSelectPopoverMeta

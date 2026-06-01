@@ -9,85 +9,94 @@
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
 		<node>
-			<identifier>HP_Fire_1</identifier>
+			<identifier>nodes_01</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
 				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.044133 -1.500000</row3>
+				<row3>0.000000 0.000000 0.000000</row3>
 			</transform>
-		</node>
-		<node>
-			<identifier>HP_Fire_2</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.044133 1.500000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>HP_TrackUp_LFront</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 0.978148 0.207912</row1>
-				<row2>0.000000 -0.207912 0.978148</row2>
-				<row3>-1.366900 0.129531 3.033230</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>HP_TrackUp_LRear</identifier>
-			<transform>
-				<row0>-1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 0.990268 -0.139173</row1>
-				<row2>-0.000000 -0.139173 -0.990268</row2>
-				<row3>-1.366900 -0.153543 -2.886150</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>HP_TrackUp_RFront</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 0.978148 0.207912</row1>
-				<row2>0.000000 -0.207912 0.978148</row2>
-				<row3>1.366020 0.129531 3.033230</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>HP_TrackUp_RRear</identifier>
-			<transform>
-				<row0>-1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 0.990268 -0.139173</row1>
-				<row2>-0.000000 -0.139173 -0.990268</row2>
-				<row3>1.366020 -0.153543 -2.886150</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>HP_Track_Exhaus_1</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 -0.496216 -0.868199</row1>
-				<row2>0.000000 0.868199 -0.496216</row2>
-				<row3>-0.370906 0.439520 -3.684370</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>HP_Track_Exhaus_2</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 -0.496216 -0.868199</row1>
-				<row2>0.000000 0.868199 -0.496216</row2>
-				<row3>0.369332 0.439558 -3.684410</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>HP_turretJoint</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>-0.000000 0.671004 -0.146280</row3>
-			</transform>
+			<node>
+				<identifier>HP_Fire_1</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.044133 -2.806363</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Fire_2</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.044133 1.500000</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_LFront</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.820904 0.571066</row1>
+					<row2>0.000000 -0.571066 0.820904</row2>
+					<row3>-1.394753 0.063958 3.131160</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_LRear</identifier>
+				<transform>
+					<row0>-1.000000 0.000000 -0.000000</row0>
+					<row1>0.000000 0.877084 -0.480336</row1>
+					<row2>-0.000000 -0.480336 -0.877084</row2>
+					<row3>-1.394753 -0.189626 -2.942266</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_RFront</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.822836 0.568279</row1>
+					<row2>0.000000 -0.568279 0.822836</row2>
+					<row3>1.394760 0.084551 3.062543</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_RRear</identifier>
+				<transform>
+					<row0>-1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.870400 -0.492345</row1>
+					<row2>-0.000000 -0.492345 -0.870400</row2>
+					<row3>1.394760 -0.207946 -3.014082</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Track_Exhaus_1</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 -0.500000 -0.866025</row1>
+					<row2>0.000000 0.866025 -0.500000</row2>
+					<row3>-0.370746 0.439500 -3.715454</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Track_Exhaus_2</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 -0.500000 -0.866025</row1>
+					<row2>0.000000 0.866025 -0.500000</row2>
+					<row3>0.369492 0.439558 -3.715499</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_turretJoint</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000160 0.671004 -0.177370</row3>
+				</transform>
+			</node>
 		</node>
 	</node>
 	<renderSet>
@@ -100,9 +109,6 @@
 				0
 				<material>
 					<identifier>tank_hull_01</identifier>
-					<fx>shaders/std_effects/PBS_tank.fx</fx>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>0</materialKind>
 					<property>
 						g_detailUVTiling
 						<Vector4>
@@ -143,18 +149,9 @@
 						g_useDetailMetallic
 						<Bool>true</Bool>
 					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
-					</property>
-					<property>
-						excludeMaskAndAOMap
-						<Texture>vehicles/german/G118_VK4503/VK4503_hull_01_AO.dds</Texture>
-					</property>
-					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
-					</property>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
 					<property>
 						metallicGlossMap
 						<Texture>vehicles/german/G118_VK4503/VK4503_hull_01_GMM.dds</Texture>
@@ -168,21 +165,33 @@
 						<Texture>vehicles/german/G118_VK4503/VK4503_hull_01_AM.dds</Texture>
 					</property>
 					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/german/G118_VK4503/VK4503_hull_01_AO.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
 						alphaReference
-						<Int>128</Int>
+						<Int>64</Int>
 					</property>
 					<property>
 						alphaTestEnable
 						<Bool>true</Bool>
 					</property>
+					<property>
+						g_useNormalPackDXT1
+						<Bool>false</Bool>
+					</property>
 				</material>
-				<groupOrigin>-0.000784 0.044133 -0.267888</groupOrigin>
+				<groupOrigin>-0.000624 0.044133 -0.298978</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-1.636314 -0.705084 -3.869704</min>
-		<max>1.634746 0.793350 3.333928</max>
+		<min>-1.636154 -0.705084 -3.900795</min>
+		<max>1.634906 0.793350 3.302838</max>
 	</boundingBox>
 	<geometrySize>714662</geometrySize>
 </root>

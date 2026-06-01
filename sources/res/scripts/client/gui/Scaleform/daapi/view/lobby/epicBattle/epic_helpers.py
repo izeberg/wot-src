@@ -1,4 +1,6 @@
+from __future__ import absolute_import
 import logging
+from future.utils import viewitems, viewvalues
 from gui.impl import backport
 from gui.impl.gen import R
 from gui.Scaleform.genConsts.ALERTMESSAGE_CONSTANTS import ALERTMESSAGE_CONSTANTS
@@ -8,6 +10,7 @@ from gui.periodic_battles.models import AlertData, PrimeTimeStatus
 from helpers import dependency, i18n, time_utils
 from items import vehicles
 from items.components.supply_slot_categories import SlotCategories
+from math_common import round_py2_style, decimal_round
 from shared_utils import first
 from skeletons.connection_mgr import IConnectionManager
 from skeletons.gui.game_control import IEpicBattleMetaGameController
@@ -70,10 +73,10 @@ def _getAttrName(param):
 
 def _cutDigits(value):
     if abs(value) > 99:
-        return round(value)
+        return round_py2_style(value)
     if abs(value) > 9:
-        return round(value, 1)
-    return round(value, 3)
+        return decimal_round(value, 1)
+    return decimal_round(value, 3)
 
 
 def _getFormattedNum(value):
@@ -185,7 +188,7 @@ class ReciprocalValuesMixin(DisplayValuesMixin):
     def _getParamValue(cls, curEq, param):
         param = _getAttrName(param)
         curValue = getattr(curEq, param)
-        curValue = 1 / curValue if curValue != 0 else float('inf')
+        curValue = 1.0 / curValue if curValue != 0 else float('inf')
         curValue = curValue * 100 - 100
         return _getFormattedNum(curValue)
 
@@ -366,9 +369,9 @@ def getFrontLineSkills():
     epicMetaGameCtrl = dependency.instance(IEpicBattleMetaGameController)
     equipments = vehicles.g_cache.equipments()
     result = []
-    for skillID, skillData in epicMetaGameCtrl.getAllSkillsInformation().iteritems():
-        skillInfo = dict()
-        firstSkill = first(skillData.levels.itervalues())
+    for skillID, skillData in viewitems(epicMetaGameCtrl.getAllSkillsInformation()):
+        skillInfo = {}
+        firstSkill = first(viewvalues(skillData.levels))
         skillInfo['icon'] = firstSkill.icon
         skillInfo['longDescr'] = firstSkill.longDescr
         skillInfo['name'] = firstSkill.name
@@ -377,8 +380,8 @@ def getFrontLineSkills():
         skillInfo['longFilterAlert'] = firstSkill.longFilterAlert
         skillInfo['price'] = skillData.price
         skillInfo['category'] = first(SlotCategories.ALL.intersection(skillData.tags))
-        skillInfo['params'] = dict()
-        for _, skillLevelData in skillData.levels.iteritems():
+        skillInfo['params'] = {}
+        for skillLevelData in viewvalues(skillData.levels):
             skillInfo.setdefault('levels', []).append(skillLevelData.eqID)
             curLvlEq = equipments[skillLevelData.eqID]
             for tooltipIdentifier in curLvlEq.tooltipIdentifiers:

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import os
 from pprint import pformat
 from quest_cache_helpers import readQuestsFromFile, makeI18nString

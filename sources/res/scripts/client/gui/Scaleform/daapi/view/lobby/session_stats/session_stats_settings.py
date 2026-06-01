@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import Event
 from account_helpers.settings_core.settings_constants import SESSION_STATS
 from gui.Scaleform.daapi.view.lobby.session_stats.session_stats_settings_controller import SessionStatsSettingsController, MAX_STATS

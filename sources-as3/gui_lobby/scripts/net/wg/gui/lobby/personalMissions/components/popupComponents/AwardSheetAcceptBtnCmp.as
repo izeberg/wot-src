@@ -40,7 +40,10 @@ package net.wg.gui.lobby.personalMissions.components.popupComponents
       private function onAcceptBtnClickHandler(param1:ButtonEvent) : void
       {
          dispatchEvent(new ButtonEvent(ButtonEvent.CLICK));
-         this.acceptBtn.enabled = false;
+         if(this.acceptBtn)
+         {
+            this.acceptBtn.enabled = false;
+         }
       }
       
       public function isDisposed() : Boolean

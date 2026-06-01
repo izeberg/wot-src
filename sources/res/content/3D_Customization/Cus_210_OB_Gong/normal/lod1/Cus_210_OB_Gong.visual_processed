@@ -51,14 +51,14 @@
 						<Texture>content/3D_Customization/Cus_210_OB_Gong/Cus_210_OB_Gong_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.000000 0.244378 0.000005</groupOrigin>
+				<groupOrigin>0.000000 0.294377 0.000005</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.260380 -0.200000 -0.063849</min>
-		<max>0.260380 0.688756 0.063858</max>
+		<min>-0.258973 -0.100001 -0.063849</min>
+		<max>0.258973 0.690562 0.063858</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>23776</geometrySize>
+	<geometrySize>23648</geometrySize>
 </root>

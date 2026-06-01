@@ -13,13 +13,11 @@ package net.wg.gui.lobby.hangar
    import net.wg.gui.lobby.hangar.interfaces.IHangarHeader;
    import net.wg.gui.lobby.hangar.interfaces.IHeaderQuestsContainer;
    import net.wg.gui.lobby.hangar.quests.BattleMattersEntryPoint;
-   import net.wg.gui.lobby.hangar.quests.BattlePassEntryPoint;
    import net.wg.gui.lobby.hangar.quests.HeaderQuestsEvent;
    import net.wg.gui.lobby.hangar.quests.HeaderQuestsFlags;
    import net.wg.gui.lobby.hangar.quests.IHeaderEntryPoint;
    import net.wg.gui.lobby.hangar.quests.IHeaderSecondaryWidget;
    import net.wg.gui.lobby.hangar.quests.LiveOpsWebEventsEntryPoint;
-   import net.wg.gui.lobby.hangar.quests.SecondaryEntryPoint;
    import net.wg.gui.lobby.rankedBattles19.components.widget.RankedBattlesHangarWidget;
    import net.wg.infrastructure.base.meta.IHangarHeaderMeta;
    import net.wg.infrastructure.base.meta.impl.HangarHeaderMeta;
@@ -38,8 +36,6 @@ package net.wg.gui.lobby.hangar
       
       private static const HELP_OFFSET_HEIGHT:int = -3;
       
-      private static const SECONDARY_ENTRY_POINT_OFFSET:int = 7;
-      
       private static const SECONDARY_ENTRY_POINT_X:int = 29;
       
       private static const SECONDARY_ENTRY_POINT_X_COMPACT:int = 24;
@@ -50,8 +46,6 @@ package net.wg.gui.lobby.hangar
       public var mcBackground:Sprite;
       
       public var questsFlags:HeaderQuestsFlags;
-      
-      public var secondaryEntryPoint:SecondaryEntryPoint;
       
       private var _widget:IHeaderEntryPoint = null;
       
@@ -65,13 +59,6 @@ package net.wg.gui.lobby.hangar
       {
          this._scheduler = App.utils.scheduler;
          super();
-         this.secondaryEntryPoint.visible = false;
-      }
-      
-      override protected function onPopulate() : void
-      {
-         super.onPopulate();
-         registerFlashComponentS(this.secondaryEntryPoint,HANGAR_ALIASES.SECONDARY_ENTRY_POINT);
       }
       
       override protected function configUI() : void
@@ -90,10 +77,6 @@ package net.wg.gui.lobby.hangar
          this.questsFlags.removeEventListener(HeaderQuestsEvent.HEADER_QUEST_CLICK,this.onBtnHeaderQuestClickHandler);
          this.questsFlags.removeEventListener(HeaderQuestsFlags.ENTRY_POINT_RESIZE,this.onEntryPointResizeHandler);
          App.stageSizeMgr.unregister(this);
-         if(isFlashComponentRegisteredS(HANGAR_ALIASES.SECONDARY_ENTRY_POINT))
-         {
-            unregisterFlashComponentS(HANGAR_ALIASES.SECONDARY_ENTRY_POINT);
-         }
          this._scheduler.cancelTask(this.registerWidget);
          this._scheduler.cancelTask(this.regWidget);
          this._scheduler = null;
@@ -102,7 +85,6 @@ package net.wg.gui.lobby.hangar
       
       override protected function onDispose() : void
       {
-         this.secondaryEntryPoint = null;
          this.questsFlags.dispose();
          this.questsFlags = null;
          this._widget = null;
@@ -113,7 +95,6 @@ package net.wg.gui.lobby.hangar
       
       override protected function draw() : void
       {
-         var _loc1_:int = 0;
          super.draw();
          if(this._data && isInvalid(InvalidationType.DATA))
          {
@@ -125,28 +106,13 @@ package net.wg.gui.lobby.hangar
          }
          if(isInvalid(InvalidationType.LAYOUT))
          {
-            _loc1_ = 0;
-            if(this.secondaryEntryPoint.visible)
+            if(this._widget)
             {
-               if(this._widget)
-               {
-                  _loc1_ = (this._widget.width >> 1) + this._widget.marginRight + this._secondaryPointX;
-                  this.secondaryEntryPoint.y = this._widget.marginTop;
-               }
-               this.secondaryEntryPoint.x = _loc1_;
-               this.questsFlags.offsetRightSideX = _loc1_ + this.secondaryEntryPoint.width + SECONDARY_ENTRY_POINT_OFFSET >> 0;
+               this.questsFlags.offsetRightSideX = (this._widget.width >> 1) + this._widget.marginRight;
             }
             else
             {
-               this.secondaryEntryPoint.x = 0;
-               if(this._widget)
-               {
-                  this.questsFlags.offsetRightSideX = (this._widget.width >> 1) + this._widget.marginRight;
-               }
-               else
-               {
-                  this.questsFlags.offsetRightSideX = 0;
-               }
+               this.questsFlags.offsetRightSideX = 0;
             }
             this.questsFlags.flagsOffsetY = HeaderQuestsFlags.DEFAULT_FLAGS_OFFSET_Y;
          }
@@ -189,16 +155,6 @@ package net.wg.gui.lobby.hangar
             this.unregisterSecondaryWidget(param2,true);
             this.registerSecondaryWidget(param1,param2);
          }
-      }
-      
-      public function as_setSecondaryEntryPointVisible(param1:Boolean) : void
-      {
-         if(this.secondaryEntryPoint.visible == param1)
-         {
-            return;
-         }
-         this.secondaryEntryPoint.visible = param1;
-         invalidateLayout();
       }
       
       public function getLayoutProperties() : Vector.<HelpLayoutVO>
@@ -323,8 +279,6 @@ package net.wg.gui.lobby.hangar
       {
          switch(param1)
          {
-            case HANGAR_ALIASES.BATTLE_PASSS_ENTRY_POINT:
-               return new BattlePassEntryPoint();
             case HANGAR_ALIASES.BATTLE_ROYALE_TOURNAMENT:
                return App.instance.utils.classFactory.getComponent(Linkages.BATTLE_ROYALE_TOURNAMENT_WIDGET_UI,BattleRoyaleTournamentWidget);
             case HANGAR_ALIASES.EPIC_WIDGET:

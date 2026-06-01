@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from notification.actions_handlers import NavigationDisabledActionHandler
 from notification.settings import NOTIFICATION_TYPE
 from open_bundle.gui.shared.event_dispatcher import showOpenBundleMainView

@@ -154,13 +154,13 @@
 						<template>vehicle_hub.characteristics.templates.upTo</template>
 					</param>
 					<param>
-						2.75
+						4.5
 						<!--BW_String-->
 						<name>propellantChargingPerSec</name>
 						<template>vehicle_hub.characteristics.templates.upTo</template>
 					</param>
 					<param>
-						45
+						55
 						<name>propellantChargeSpendingAfterShot</name>
 						<template>vehicle_hub.characteristics.templates.upTo</template>
 					</param>
@@ -173,12 +173,12 @@
 						<name>propellantDischargingPerSec</name>
 					</param>
 					<param>
-						+100%
+						+56%
 						<name>propellantPostLimitDispersion</name>
 						<template>vehicle_hub.characteristics.templates.upTo</template>
 					</param>
 					<param>
-						+100%
+						+60%
 						<name>propellantPostLimitAimingTime</name>
 						<template>vehicle_hub.characteristics.templates.upTo</template>
 					</param>
@@ -712,7 +712,7 @@
 						<template>vehicle_hub.characteristics.templates.upTo</template>
 					</param>
 					<param>
-						1
+						2
 						<name>coolingDelay</name>
 					</param>
 					<param>

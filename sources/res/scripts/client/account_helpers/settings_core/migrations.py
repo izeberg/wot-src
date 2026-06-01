@@ -763,7 +763,7 @@ def _migrateTo87(core, data, initialized):
 
 
 def _migrateTo88(core, data, initialized):
-    data['battlePassStorage'][BattlePassStorageKeys.EXTRA_CHAPTER_INTRO_SHOWN] = False
+    pass
 
 
 def _migrateTo89(core, data, initialized):
@@ -1503,6 +1503,15 @@ def _migrateTo155(core, data, initialized):
     data[GAME_EXTENDED_2][GAME.W2GT_ENABLE] = False
 
 
+def _migrateTo156(core, data, initialized):
+    from account_helpers.settings_core.ServerSettingsManager import SETTINGS_SECTIONS
+    battlePassUpdateKey = 'battlePassStorage'
+    battlePassStorage = _getSettingsCache().getSectionSettings(SETTINGS_SECTIONS.BATTLE_PASS_STORAGE, 0)
+    offset = 524288
+    if battlePassStorage & offset:
+        data['clear'][battlePassUpdateKey] = data['clear'].get(battlePassUpdateKey, 0) | offset
+
+
 _versions = (
  (
   1, _initializeDefaultSettings, True, False),
@@ -1811,7 +1820,9 @@ _versions = (
  (
   154, _migrateTo154, False, False),
  (
-  155, _migrateTo155, False, False))
+  155, _migrateTo155, False, False),
+ (
+  156, _migrateTo156, False, False))
 
 @adisp_async
 @adisp_process

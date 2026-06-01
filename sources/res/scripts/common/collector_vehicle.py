@@ -1,4 +1,4 @@
-
+from __future__ import absolute_import
 
 class CollectorVehicleConsts(object):
     CONFIG_NAME = 'collector_vehicle_config'

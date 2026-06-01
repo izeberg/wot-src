@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from CurrentVehicle import g_currentVehicle
 from adisp import adisp_process
 from frameworks.wulf import WindowLayer
@@ -123,7 +124,8 @@ class BasePrebattleRoomView(BasePrebattleRoomViewMeta, ILegacyListener):
         if chat:
             chat.as_addMessageS(messages.getPlayerAssignFlagChanged(actorInfo, playerInfo))
 
-    def onPlayerStateChanged(self, entity, roster, playerInfo):
+    def onPlayerStateChanged(self, entity, roster, accountInfo):
+        playerInfo = accountInfo
         team, assigned = decodeRoster(roster)
         data = {'dbID': playerInfo.dbID, 
            'state': playerInfo.state, 
@@ -172,7 +174,7 @@ class BasePrebattleRoomView(BasePrebattleRoomViewMeta, ILegacyListener):
         isPlayerSpeaking = self.bwProto.voipController.isPlayerSpeaking
         getUser = self.usersStorage.getUser
         getColors = g_settings.getColorScheme('rosters').getColors
-        accounts = sorted(accounts, cmp=prb_items.getPlayersComparator())
+        accounts = sorted(accounts, key=prb_items.getPlayersSortKey())
         for account in accounts:
             vContourIcon = ''
             vShortName = ''

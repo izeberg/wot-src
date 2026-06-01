@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from CurrentVehicle import g_currentVehicle
 from gui.Scaleform.daapi.view.lobby.event_boards.event_boards_vos import makeVehiclePopoverVO, vehicleValueGetter
 from gui.Scaleform.daapi.view.lobby.vehicle_compare.formatters import packHeaderColumnData

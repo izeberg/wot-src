@@ -59,12 +59,12 @@
 						<Texture>content/3D_Customization/Cus_214_LS_OpticalDevice/Cus_214_LS_OpticalDevice_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.024257 0.210533 0.030538</groupOrigin>
+				<groupOrigin>0.024257 0.260531 0.030538</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.261240 -0.199998 -0.252568</min>
+		<min>-0.261240 -0.100000 -0.252568</min>
 		<max>0.231746 0.622561 0.261613</max>
 	</boundingBox>
 	<customBsp>true</customBsp>

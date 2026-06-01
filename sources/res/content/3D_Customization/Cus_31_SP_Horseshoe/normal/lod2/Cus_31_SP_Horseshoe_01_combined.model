@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>content/3D_Customization/Cus_31_SP_Horseshoe/normal/lod2/Cus_31_SP_Horseshoe_01_combined</nodefullVisual>
 	<parent>content/3D_Customization/Cus_31_SP_Horseshoe/normal/lod3/Cus_31_SP_Horseshoe_01_combined</parent>
 	<extent>96.000000</extent>
 	<visibilityBox>
-		<min>-0.240874 -0.200000 -0.079734</min>
-		<max>0.236659 0.803453 0.063000</max>
+		<min>-0.225222 -0.100000 -0.074553</min>
+		<max>0.221281 0.751246 0.058907</max>
 	</visibilityBox>
 	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_31_SP_Horseshoe/normal/lod2/Cus_31_SP_Horseshoe_01_combined</nodefullVisual>
 </root>

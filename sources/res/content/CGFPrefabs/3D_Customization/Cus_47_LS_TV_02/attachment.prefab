@@ -118,16 +118,19 @@
 				<config>
 					<property>
 						<name>Position</name>
-						<value>0.182867 0.451699 0.646527</value>
+						<value>0.198372 0.413749 0.418304</value>
 					</property>
 					<property>
 						<name>Scale</name>
-						<value>1 1 1</value>
+						<value>
+							1.08889 1.08889 0.999998
+							<!--BW_String-->
+						</value>
 					</property>
 					<property>
 						<name>Rotation</name>
 						<value>
-							0.162839 -0.00139626 -0.101229
+							0.170373 -0.00626271 -0.130935
 							<!--BW_String-->
 						</value>
 					</property>
@@ -140,18 +143,21 @@
 					<property>
 						<name>Position</name>
 						<value>
-							-0.158922 0.8074 -0.454333
+							-0.142044 0.585928 -0.29715
 							<!--BW_String-->
 						</value>
 					</property>
 					<property>
 						<name>Scale</name>
-						<value>1 1 1</value>
+						<value>
+							1.15 1.15 0.999998
+							<!--BW_String-->
+						</value>
 					</property>
 					<property>
 						<name>Rotation</name>
 						<value>
-							0.117112 0.0891863 0.145561
+							0.119657 0.0891724 0.163468
 							<!--BW_String-->
 						</value>
 					</property>
@@ -167,11 +173,14 @@
 					</property>
 					<property>
 						<name>Scale</name>
-						<value>1 1 1</value>
+						<value>
+							0.9 0.9 0.9
+							<!--BW_String-->
+						</value>
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>0 0 0</value>
+						<value>-0 0 0</value>
 					</property>
 				</config>
 			</component>
@@ -281,7 +290,7 @@
 			</component>
 			<component>
 				<UUID>d67b89fe-d118-4217-90aa-8d3bb3f970d3</UUID>
-				<flags>35</flags>
+				<flags>3</flags>
 				<config>
 					<property>
 						<name>castShadows</name>
@@ -325,7 +334,7 @@
 					</property>
 					<property>
 						<name>Visible in DUAL_GUN MODE</name>
-						<value>1</value>
+						<value>0</value>
 					</property>
 					<property>
 						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
@@ -355,7 +364,7 @@
 			</component>
 			<component>
 				<UUID>0ce68542-2274-4d09-81a1-59d39e416833</UUID>
-				<flags>35</flags>
+				<flags>3</flags>
 				<config>
 					<property>
 						<name>castShadows</name>
@@ -399,7 +408,7 @@
 					</property>
 					<property>
 						<name>Visible in DUAL_GUN MODE</name>
-						<value>1</value>
+						<value>0</value>
 					</property>
 					<property>
 						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
@@ -443,6 +452,14 @@
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -488,6 +505,10 @@
 				<config>
 					<property>
 						<name>Auto Start</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>DynamicModelLinkType</name>
 						<value>0</value>
 					</property>
 					<property>
@@ -641,6 +662,10 @@
 						<value>0</value>
 					</property>
 					<property>
+						<name>DynamicModelLinkType</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>Layers</name>
 						<collection>
 							<item>
@@ -781,6 +806,22 @@
 						<value>-1</value>
 					</property>
 				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>BW::VisibilityTunnelComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>46d186ff-3dbe-48fc-a49d-d13d59862358</UUID>
+				<flags>3</flags>
+			</component>
+			<component>
+				<UUID>d67b89fe-d118-4217-90aa-8d3bb3f970d3</UUID>
+				<flags>3</flags>
+			</component>
+			<component>
+				<UUID>0ce68542-2274-4d09-81a1-59d39e416833</UUID>
+				<flags>3</flags>
 			</component>
 		</ComponentPool>
 		<ComponentPool>

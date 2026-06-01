@@ -1,10 +1,11 @@
+from __future__ import absolute_import
 import typing
+from future.utils import viewvalues
 from battle_pass_common import BattlePassConsts
 from gui.battle_pass.battle_pass_award import BattlePassAwardsManager
 from gui.battle_pass.battle_pass_constants import MIN_LEVEL
 from gui.shared.money import Money
 from helpers import dependency
-from helpers.dependency import replace_none_kwargs
 from skeletons.gui.game_control import IBattlePassController
 from skeletons.gui.server_events import IEventsCache
 from skeletons.gui.shared import IItemsCache
@@ -118,7 +119,7 @@ class BattlePassPackage(object):
 
     def __getPriceBP(self, battlePassCost):
         if self.hasBattlePass():
-            return next(battlePassCost.itervalues())
+            return next(iter(viewvalues(battlePassCost)))
         return 0
 
     def __getUnreachedLevelsPrice(self):
@@ -164,7 +165,8 @@ class PackageAnyLevels(BattlePassPackage):
 
     def getPrice(self):
         levelCost = self.__itemsCache.items.shop.getBattlePassLevelCost()
-        return self.__getLevelsPrice(levelCost)
+        currency = levelCost.getCurrency()
+        return levelCost.get(currency, 0)
 
     def getNowAwards(self):
         curLevel = self.getCurrentLevel()
@@ -188,12 +190,6 @@ class PackageAnyLevels(BattlePassPackage):
     def resetWithLevels(self):
         pass
 
-    def __getLevelsPrice(self, levelCost):
-        currency = levelCost.getCurrency()
-        levelsCount = self.getLevelsCount()
-        return levelCost.get(currency, 0) * levelsCount
 
-
-@replace_none_kwargs(battlePass=IBattlePassController)
-def generatePackage(chapterID, battlePass=None):
+def generatePackage(chapterID):
     return BattlePassPackage(chapterID)

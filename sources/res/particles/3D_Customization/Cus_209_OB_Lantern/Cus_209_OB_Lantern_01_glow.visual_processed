@@ -64,6 +64,10 @@
 						fogAdjustBlend
 						<Float>1.000000</Float>
 					</property>
+					<property>
+						g_visibilityTunnelCompensation
+						<Float>4.000000</Float>
+					</property>
 				</material>
 				<groupOrigin>0.000088 0.309313 -0.276195</groupOrigin>
 			</primitiveGroup>

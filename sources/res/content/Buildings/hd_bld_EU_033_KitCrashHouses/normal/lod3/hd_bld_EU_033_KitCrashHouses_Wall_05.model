@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodelessVisual>content/Buildings/hd_bld_EU_033_KitCrashHouses/normal/lod3/hd_bld_EU_033_KitCrashHouses_Wall_05</nodelessVisual>
+	<nodefullVisual>content/Buildings/hd_bld_EU_033_KitCrashHouses/normal/lod3/hd_bld_EU_033_KitCrashHouses_Wall_05</nodefullVisual>
+	<visibilityBox>
+		<min>-5.402792 -2.027318 -3.292890</min>
+		<max>5.343703 15.412794 0.000000</max>
+	</visibilityBox>
 </root>

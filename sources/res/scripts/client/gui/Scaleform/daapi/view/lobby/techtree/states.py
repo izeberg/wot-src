@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from WeakMethod import WeakMethodProxy
 from frameworks.state_machine import StateFlags

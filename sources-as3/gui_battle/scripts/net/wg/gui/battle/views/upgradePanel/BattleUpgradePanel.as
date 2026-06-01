@@ -8,6 +8,7 @@ package net.wg.gui.battle.views.upgradePanel
    import flash.events.Event;
    import flash.filters.DropShadowFilter;
    import flash.text.TextField;
+   import net.wg.data.constants.Values;
    import net.wg.gui.battle.battleRoyale.views.configurator.ChoiceInfoPanel;
    import net.wg.gui.battle.views.upgradePanel.data.UpgradePanelVO;
    import net.wg.gui.components.battleRoyale.ModuleConfiguratorEvent;
@@ -106,6 +107,10 @@ package net.wg.gui.battle.views.upgradePanel
       
       private var _notificationTweens:Vector.<Tween> = null;
       
+      private var _selectedTweenRight:Tween = null;
+      
+      private var _selectedTweenLeft:Tween = null;
+      
       private var _bgWidth:int = 0;
       
       private var _bgHeight:int = 0;
@@ -190,6 +195,10 @@ package net.wg.gui.battle.views.upgradePanel
          this._messageTweens = null;
          this.clearTweens(this._notificationTweens);
          this._notificationTweens = null;
+         this.clearTween(this._selectedTweenLeft);
+         this._selectedTweenLeft = null;
+         this.clearTween(this._selectedTweenRight);
+         this._selectedTweenRight = null;
          this.notificationBorderAnimation.dispose();
          this.notificationBorderAnimation = null;
          this.choicePanel.removeEventListener(ChoiceInfoPanel.SELECT_ANIM_COMPLETE,this.onChoiceInfoPanelAnimCompleteHandler);
@@ -465,6 +474,15 @@ package net.wg.gui.battle.views.upgradePanel
          }
       }
       
+      private function clearTween(param1:Tween) : void
+      {
+         if(param1)
+         {
+            param1.dispose();
+            param1.paused = true;
+         }
+      }
+      
       private function updateLayout() : void
       {
          this.bg.scaleX = this.bg.scaleY = 1;
@@ -484,6 +502,27 @@ package net.wg.gui.battle.views.upgradePanel
             this.notificationBorderAnimation.y += this.choicePanel.y;
          }
          this.descriptionTF.y = this.choicePanel.y + this.bg.height;
+      }
+      
+      private function updateBackgroundAlpha(param1:Boolean, param2:Number) : void
+      {
+         var _loc3_:DisplayObject = null;
+         var _loc4_:Tween = null;
+         if(this.state == STATE_ACTIVE && this.choicePanel.visible)
+         {
+            _loc3_ = !!param1 ? this.leftHoverBG : this.rightHoverBG;
+            _loc4_ = !!param1 ? this._selectedTweenLeft : this._selectedTweenRight;
+            this.clearTween(_loc4_);
+            _loc4_ = new Tween(HOVER_BG_ANIM_DURATION,_loc3_,{"alpha":param2});
+            if(param1)
+            {
+               this._selectedTweenLeft = _loc4_;
+            }
+            else
+            {
+               this._selectedTweenRight = _loc4_;
+            }
+         }
       }
       
       override public function set visible(param1:Boolean) : void
@@ -566,22 +605,12 @@ package net.wg.gui.battle.views.upgradePanel
       
       private function onChoicePanelModuleOverHandler(param1:ModuleConfiguratorEvent) : void
       {
-         var _loc2_:DisplayObject = null;
-         if(this.state == STATE_ACTIVE && this.choicePanel.visible)
-         {
-            _loc2_ = param1.moduleIdx == 0 ? this.leftHoverBG : this.rightHoverBG;
-            this._tweens.push(new Tween(HOVER_BG_ANIM_DURATION,_loc2_,{"alpha":1}));
-         }
+         this.updateBackgroundAlpha(param1.moduleIdx == 0,Values.DEFAULT_ALPHA);
       }
       
       private function onChoicePanelModuleOutHandler(param1:ModuleConfiguratorEvent) : void
       {
-         var _loc2_:DisplayObject = null;
-         if(this.state == STATE_ACTIVE && this.choicePanel.visible)
-         {
-            _loc2_ = param1.moduleIdx == 0 ? this.leftHoverBG : this.rightHoverBG;
-            this._tweens.push(new Tween(HOVER_BG_ANIM_DURATION,_loc2_,{"alpha":0}));
-         }
+         this.updateBackgroundAlpha(param1.moduleIdx == 0,Values.ZERO);
       }
       
       private function onChoicePanelModuleClickHandler(param1:ModuleConfiguratorEvent) : void

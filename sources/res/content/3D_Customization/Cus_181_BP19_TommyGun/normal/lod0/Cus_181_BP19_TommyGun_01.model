@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<visibilityBox>
-		<min>-0.171205 -0.200000 -0.395439</min>
+		<min>-0.171205 -0.100000 -0.395439</min>
 		<max>0.167980 0.441980 0.476687</max>
 	</visibilityBox>
-	<nodefullVisual>content/3D_Customization/Cus_181_BP19_TommyGun/normal/lod0/Cus_181_BP19_TommyGun_01</nodefullVisual>
 	<parent>content/3D_Customization/Cus_181_BP19_TommyGun/normal/lod1/Cus_181_BP19_TommyGun_01</parent>
 	<extent>20.000000</extent>
 	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_181_BP19_TommyGun/normal/lod0/Cus_181_BP19_TommyGun_01</nodefullVisual>
 </root>

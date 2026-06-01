@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<common>
+		<regularDevices>True</regularDevices>
+		<regularBoosters>True</regularBoosters>
+		<regularShells>True</regularShells>
+		<regularConsumables>True</regularConsumables>
+	</common>
+	<subMode>
+		<hasBattleQueueWarning>True</hasBattleQueueWarning>
+		<showInfoPageOnFirstVisit>True</showInfoPageOnFirstVisit>
+	</subMode>
+</root>

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from items.vehicles import makeVehicleTypeCompDescrByName
 from realm_utils import ResMgr
 CONFIG_FILE = 'scripts/item_defs/vehicles/common/forbidden_vehicles_to_battle_config.xml'

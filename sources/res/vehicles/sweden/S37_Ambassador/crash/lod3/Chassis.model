@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/sweden/S37_Ambassador/crash/lod3/Chassis</nodefullVisual>
+	<parent>vehicles/sweden/S37_Ambassador/crash/lod4/Chassis</parent>
+	<extent>192.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.496191 0.004487 -2.965697</min>
+		<max>1.496191 1.049938 3.020972</max>
+	</visibilityBox>
+</root>

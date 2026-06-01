@@ -51,13 +51,13 @@
 						<Vector4>7.012000 3.506000 0.000000 0.000000</Vector4>
 					</property>
 				</material>
-				<groupOrigin>-0.030158 0.198740 0.077641</groupOrigin>
+				<groupOrigin>-0.020452 0.256861 0.073845</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.206192 -0.200000 -0.049893</min>
-		<max>0.145877 0.597481 0.205176</max>
+		<min>-0.200306 -0.100000 -0.056659</min>
+		<max>0.159681 0.614402 0.204349</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
 	<geometrySize>30370</geometrySize>

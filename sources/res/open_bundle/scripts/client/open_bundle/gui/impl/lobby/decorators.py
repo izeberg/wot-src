@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from gui.impl.gen import R
 from gui.impl.lobby.battle_pass.tooltips.battle_pass_coin_tooltip_view import BattlePassCoinTooltipView
@@ -12,10 +13,10 @@ def createTooltipContentDecorator():
 
         def wrapper(self, event, contentID):
             tooltipData = self.getTooltipData(event)
-            if contentID == R.views.lobby.battle_pass.tooltips.BattlePassCoinTooltipView():
+            if contentID == R.views.mono.battle_pass.tooltips.bpcoin():
                 return BattlePassCoinTooltipView()
             else:
-                if contentID == R.views.lobby.battle_pass.tooltips.BattlePassTalerTooltip():
+                if contentID == R.views.mono.battle_pass.tooltips.bptaler():
                     return BattlePassTalerTooltip()
                 if contentID == R.views.mono.lootbox.tooltips.box_tooltip():
                     if tooltipData is None:

@@ -4,7 +4,6 @@ EXCLUDED_VEHICLE_TAGS = ('observer', DISABLE_ACHIEVEMENTS_VEHICLE_TAG)
 ENABLED_ACHIEVEMENTS = {('achievements', 'kamikaze'): True, 
    ('achievements', 'huntsman'): True, 
    ('achievements', 'medalPascucci'): True, 
-   ('achievements', 'medalDumitru'): True, 
    ('achievements', 'medalBurda'): True, 
    ('achievements', 'steelwall'): True, 
    ('achievements', 'medalKolobanov'): True, 

@@ -51,14 +51,14 @@
 						<Texture>content/3D_Customization/Cus_109_Celestial_Bell/Cus_109_Celestial_Bell_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.000000 0.297454 0.009447</groupOrigin>
+				<groupOrigin>0.000000 0.347325 0.009447</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.220000 -0.200000 -0.138094</min>
+		<min>-0.220000 -0.100259 -0.138094</min>
 		<max>0.220000 0.794909 0.156989</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>234042</geometrySize>
+	<geometrySize>234314</geometrySize>
 </root>

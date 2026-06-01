@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import nations
 from constants import MIN_VEHICLE_LEVEL, MAX_VEHICLE_LEVEL
 from blueprints.BlueprintTypes import BlueprintTypes

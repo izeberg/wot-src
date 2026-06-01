@@ -52,6 +52,9 @@ msgstr "A-220A-DZT"
 msgid "A_220A-DZT_CFE_A"
 msgstr "A-220A-DZT"
 
+msgid "A_220A_2"
+msgstr "A-220A-2"
+
 msgid "A_220B_1_QL"
 msgstr "A-220B QL"
 
@@ -802,7 +805,7 @@ msgid "Ch41_WZ_111_5A"
 msgstr "WZ-111 model 5A"
 
 msgid "Ch41_WZ_111_5A_7x7"
-msgstr "WZ-111 model 5A 7v7"
+msgstr "WZ-111 model 5A 7x7"
 
 msgid "Ch41_WZ_111_5A_7x7_short"
 msgstr "WZ-111 5A 7"
@@ -997,10 +1000,10 @@ msgid "Ch48_BZ_75"
 msgstr "BZ-75"
 
 msgid "Ch48_BZ_75_7x7"
-msgstr "BZ-75 7v7"
+msgstr "BZ-75 7x7"
 
 msgid "Ch48_BZ_75_7x7_short"
-msgstr "BZ-75 7v7"
+msgstr "BZ-75 7x7"
 
 msgid "Ch48_BZ_75_descr"
 msgstr ""
@@ -1524,6 +1527,32 @@ msgstr ""
 msgid "Ch70_PTZ_78_short"
 msgstr "PTZ-78"
 
+msgid "Ch72_Yongshi"
+msgstr "Yongshi"
+
+msgid "Ch72_Yongshi_desc"
+msgstr ""
+"A blueprint project for a heavy tank, designed as part of work on the 113. "
+"The vehicle was supposed to combine a chassis and hull based on tried and "
+"tested parts and components of medium tanks with powerful armament capable "
+"of fighting enemy heavy vehicles effectively. To speed up the design "
+"process, the decision was made to use elements from the 114 project; "
+"however, due to the appearance of the main battle tank class, all work on "
+"the 113 was terminated."
+
+msgid "Ch72_Yongshi_long_special"
+msgstr ""
+"The Yongshi is a Chinese Tier X versatile heavy tank. The main distinctive "
+"feature of this vehicle is its gun. It delivers high single-shot damage and,"
+" unusually for such damage, offers excellent ease of firing. The vehicle "
+"also has solid hull and turret armor as well as decent mobility."
+
+msgid "Ch72_Yongshi_short"
+msgstr "Yongshi"
+
+msgid "Ch72_Yongshi_short_special"
+msgstr "Easy to handle gun, high single shot damage"
+
 msgid "Chassis_01_Ch24_Type64_SH"
 msgstr "Type 64BL"
 
@@ -1836,6 +1865,9 @@ msgstr "BZ-79"
 msgid "Chassis_Ch68_PGZ_70"
 msgstr "PGZ-70"
 
+msgid "Chassis_Ch72_Yongshi"
+msgstr "Yongshi"
+
 msgid "Continental_AOSI_895_5_Prem"
 msgstr "Continental AOSI-895-5"
 
@@ -2137,6 +2169,9 @@ msgstr "PGZ-70"
 msgid "Turret_1_Ch70_PTZ_78"
 msgstr "PTZ-78"
 
+msgid "Turret_1_Ch72_Yongshi"
+msgstr "Yongshi"
+
 msgid "Turret_2_Ch04_T34_1"
 msgstr "T-34-1 model 2"
 
@@ -2226,6 +2261,9 @@ msgstr "V-2-34 (58)"
 
 msgid "V_2_54SC"
 msgstr "V-2-54SC"
+
+msgid "V_2_54SCC"
+msgstr "V-2-54SCC"
 
 msgid "V_2_54SCG"
 msgstr "V-2-54SCG"
@@ -3031,11 +3069,23 @@ msgstr "152 mm GM-45"
 msgid "_152mm_GM_45AP"
 msgstr "GM 45AP"
 
+msgid "_152mm_GM_45AP_B"
+msgstr "GM 45AP B"
+
+msgid "_152mm_GM_45B"
+msgstr "152 mm GM-45B"
+
 msgid "_152mm_GM_45CR"
 msgstr "GM 45CR"
 
+msgid "_152mm_GM_45CR_B"
+msgstr "GM 45CR B"
+
 msgid "_152mm_GM_45HE"
 msgstr "GM 45HE"
+
+msgid "_152mm_GM_45HE_B"
+msgstr "GM 45HE B"
 
 msgid "_152mm_HEAT_T"
 msgstr "Po-152T"

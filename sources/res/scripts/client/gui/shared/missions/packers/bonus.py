@@ -13,6 +13,8 @@ from gui.impl.gen.view_models.common.missions.bonuses.icon_bonus_model import Ic
 from gui.impl.gen.view_models.common.missions.bonuses.item_bonus_model import ItemBonusModel
 from gui.impl.gen.view_models.common.missions.bonuses.token_bonus_model import TokenBonusModel
 from gui.ranked_battles.constants import YEAR_POINTS_TOKEN
+from gui.server_events.bonuses import TmanTemplateTokensBonus
+from gui.server_events.recruit_helper import getRecruitInfo
 from gui.server_events.finders import isPM3Points
 from gui.server_events.awards_formatters import AWARDS_SIZES, BATTLE_BONUS_X5_TOKEN, GOLD_MISSION, ItemsBonusFormatter, TOKEN_SIZES, TokenBonusFormatter, formatCountLabel, CREW_BONUS_X3_TOKEN, PM_POINTS_TOKEN
 from gui.server_events.formatters import COMPLEX_TOKEN, TokenComplex, parseComplexToken
@@ -22,6 +24,7 @@ from gui.shared.gui_items.customization.c11n_items import Style
 from gui.shared.money import Currency
 from gui.shared.utils.functions import makeTooltip
 from helpers import dependency, i18n, time_utils
+from items.tankmen import RECRUIT_TMAN_TOKEN_PREFIX
 from shared_utils import first
 from skeletons.gui.game_control import ICollectionsSystemController
 from skeletons.gui.server_events import IEventsCache
@@ -81,6 +84,7 @@ def getDefaultBonusPackersMap():
        'meta': simpleBonusPacker, 
        'slots': simpleBonusPacker, 
        'strBonus': simpleBonusPacker, 
+       'tmanToken': TmanTemplateBonusPacker(), 
        'tankmen': TankmenBonusUIPacker(), 
        'tankmenXP': simpleBonusPacker, 
        'tankmenXPFactor': simpleBonusPacker, 
@@ -240,7 +244,7 @@ class TokenBonusUIPacker(BaseBonusUIPacker):
                 continue
             name = tokenID.split(':')[0]
             if name.endswith(GOLD_MISSION):
-                result.append(R.views.lobby.battle_pass.tooltips.BattlePassGoldMissionTooltipView())
+                result.append(R.views.mono.battle_pass.tooltips.gold_mission())
             else:
                 result.append(BACKPORT_TOOLTIP_CONTENT_ID)
 
@@ -806,6 +810,57 @@ class TankmenBonusUIPacker(BaseBonusUIPacker):
     @classmethod
     def _getContentId(cls, bonus):
         return [ BACKPORT_TOOLTIP_CONTENT_ID for _ in bonus.getTankmenGroups().itervalues() ]
+
+
+class TmanTemplateBonusPacker(BaseBonusUIPacker):
+
+    @classmethod
+    def _pack(cls, bonus):
+        result = []
+        for tokenID in bonus.getTokens().iterkeys():
+            if tokenID.startswith(RECRUIT_TMAN_TOKEN_PREFIX):
+                packed = cls._packTmanTemplateToken(tokenID, bonus)
+                if packed is not None:
+                    result.append(packed)
+
+        return result
+
+    @classmethod
+    def _packTmanTemplateToken(cls, tokenID, bonus):
+        recruitInfo = getRecruitInfo(tokenID)
+        if recruitInfo is None:
+            _logger.error('Received wrong tman_template token from server: %s', tokenID)
+            return
+        else:
+            model = IconBonusModel()
+            cls._packCommon(bonus, model)
+            model.setIcon(cls.__getBonusImageName(recruitInfo))
+            model.setLabel(recruitInfo.getFullUserName())
+            return model
+
+    @classmethod
+    def _getToolTip(cls, bonus):
+        tooltipData = []
+        for tokenID in bonus.getTokens():
+            if tokenID.startswith(RECRUIT_TMAN_TOKEN_PREFIX):
+                tooltipData.append(TooltipData(tooltip=None, isSpecial=True, specialAlias=TOOLTIPS_CONSTANTS.TANKMAN_NOT_RECRUITED, specialArgs=[
+                 tokenID]))
+
+        return tooltipData
+
+    @classmethod
+    def _getContentId(cls, bonus):
+        result = []
+        for tokenID in bonus.getTokens():
+            if tokenID.startswith(RECRUIT_TMAN_TOKEN_PREFIX):
+                result.append(BACKPORT_TOOLTIP_CONTENT_ID)
+
+        return result
+
+    @classmethod
+    def __getBonusImageName(cls, recruitInfo):
+        baseName = ('tank{}man').format('wo' if recruitInfo.isFemale() else '')
+        return baseName
 
 
 class VehiclesBonusUIPacker(BaseBonusUIPacker):

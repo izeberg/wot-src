@@ -8,24 +8,6 @@
 			<row2>0.000000 0.000000 1.000000</row2>
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
-		<node>
-			<identifier>nodes_01</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-			<node>
-				<identifier>HP_attachment</identifier>
-				<transform>
-					<row0>1.000000 0.000000 0.000000</row0>
-					<row1>0.000000 1.000000 0.000000</row1>
-					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 0.000000 0.000000</row3>
-				</transform>
-			</node>
-		</node>
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
@@ -38,8 +20,8 @@
 				<material>
 					<identifier>equipment</identifier>
 					<fx>shaders/std_effects/PBS_tank.fx</fx>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>0</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>112</materialKind>
 					<property>
 						diffuseMap
 						<Texture>content/3D_Customization/Cus_08_Scout_Manual_Rocket/Scout_Manual_Rocket_AM.dds</Texture>
@@ -57,13 +39,14 @@
 						<Texture>content/3D_Customization/Cus_08_Scout_Manual_Rocket/Scout_Manual_Rocket_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.024800 0.164195 0.032833</groupOrigin>
+				<groupOrigin>-0.140185 0.164195 0.032833</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.240928 0.010712 -0.939863</min>
-		<max>0.191328 0.317678 1.005530</max>
+		<min>-0.357206 -0.010714 -0.941872</min>
+		<max>0.077464 0.337707 1.008027</max>
 	</boundingBox>
-	<geometrySize>11536</geometrySize>
+	<customBsp>true</customBsp>
+	<geometrySize>11632</geometrySize>
 </root>

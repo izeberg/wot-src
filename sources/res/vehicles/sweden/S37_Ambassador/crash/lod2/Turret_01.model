@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/sweden/S37_Ambassador/crash/lod2/Turret_01</nodefullVisual>
+	<parent>vehicles/sweden/S37_Ambassador/crash/lod3/Turret_01</parent>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.354165 -0.095829 -2.292850</min>
+		<max>1.349213 1.241403 1.441998</max>
+	</visibilityBox>
+</root>

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import weakref
 from gui.Scaleform.daapi.view.meta.ClanInvitesWindowAbstractTabViewMeta import ClanInvitesWindowAbstractTabViewMeta
 from gui.Scaleform.locale.CLANS import CLANS
@@ -159,7 +160,7 @@ class ClanInvitesWindowAbstractTabView(ClanInvitesWindowAbstractTabViewMeta, Cla
         for item in items:
             status = item.getStatus()
             msgArgs = None
-            if status == CLAN_INVITE_STATES.EXPIRED_RESENT or status == CLAN_INVITE_STATES.DECLINED_RESENT:
+            if status in (CLAN_INVITE_STATES.EXPIRED_RESENT, CLAN_INVITE_STATES.DECLINED_RESENT):
                 msgArgs = (
                  True, None)
             elif status == CLAN_INVITE_STATES.ERROR:

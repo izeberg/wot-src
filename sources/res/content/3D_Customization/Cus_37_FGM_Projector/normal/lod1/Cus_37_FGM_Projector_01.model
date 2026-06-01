@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>content/3D_Customization/Cus_37_FGM_Projector/normal/lod1/Cus_37_FGM_Projector_01</nodefullVisual>
 	<parent>content/3D_Customization/Cus_37_FGM_Projector/normal/lod2/Cus_37_FGM_Projector_01</parent>
 	<extent>64.000000</extent>
+	<nodefullVisual>content/3D_Customization/Cus_37_FGM_Projector/normal/lod1/Cus_37_FGM_Projector_01</nodefullVisual>
+	<visibilityBox>
+		<min>-0.449287 -0.100000 -0.457853</min>
+		<max>0.444250 1.162838 0.350324</max>
+	</visibilityBox>
+	<tank>true</tank>
 </root>

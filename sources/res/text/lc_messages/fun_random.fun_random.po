@@ -369,6 +369,61 @@ msgstr "?empty?"
 msgid "modes/development/progression/title"
 msgstr "?empty?"
 
+msgid "modes/development/progressionQuests/quest/completed"
+msgstr "Completed:"
+
+msgid "modes/development/progressionQuests/quest/infinityProgress"
+msgstr "Repeatable"
+
+msgid ""
+"modes/development/progressionQuests/quest/progressChangeLabel/forCompletion"
+msgstr "For completion:"
+
+msgid "modes/development/progressionQuests/quest/progressChangeLabel/forLoss"
+msgstr "For defeat:"
+
+msgid "modes/development/progressionQuests/quest/progressChangeLabel/forWin"
+msgstr "For victory:"
+
+msgid "modes/development/progressionQuests/quest/progressChangeLabel/points"
+msgstr "Points:"
+
+msgid ""
+"modes/development/progressionQuests/quest/progressChangeLabel/pointsEarned"
+msgstr "Received:"
+
+msgid "modes/development/progressionQuests/quest/progressChangeLabel/template"
+msgstr "{{reason}} {{value}}"
+
+msgid "modes/development/progressionQuests/quest/progressTitle"
+msgstr "{{completed}} {{currentPoints}} {{delimeter}} {{totalPoints}}"
+
+msgid "modes/development/progressionQuests/questSlot/allCompleted"
+msgstr "All currently available missions have been completed"
+
+msgid "modes/development/progressionQuests/questSlot/resettable"
+msgstr "Missions will appear when the Progression begins"
+
+msgid "modes/development/progressionQuests/tooltip/allCompleted"
+msgstr ""
+"You have completed all available missions for now. More will appear in the "
+"next rotation."
+
+msgid "modes/development/progressionQuests/tooltip/expiresCurrent"
+msgstr "Available for {{timeLeft}}"
+
+msgid "modes/development/progressionQuests/tooltip/expiresInfinite"
+msgstr "Available for {{timeLeft}}"
+
+msgid "modes/development/progressionQuests/tooltip/newMissions"
+msgstr "New missions available in {{timeLeft}}"
+
+msgid "modes/development/progressionQuests/tooltip/noQuestsTitle"
+msgstr "{{eventName}} Status"
+
+msgid "modes/development/progressionQuests/tooltip/questTitle"
+msgstr "{{eventName}} Mission"
+
 msgid "modes/development/rewardsView/header"
 msgstr "?empty?"
 
@@ -404,6 +459,257 @@ msgstr "?empty?"
 
 msgid "modes/development/userName"
 msgstr "?empty?"
+
+msgid "modes/equalized/banner/progression/finish"
+msgstr "All Stages completed"
+
+msgid "modes/equalized/banner/progression/resettable"
+msgstr "Progression update"
+
+msgid "modes/equalized/capsUserName"
+msgstr "EQUALIZE!"
+
+msgid "modes/equalized/detailedUserName"
+msgstr "%(subModeName)s"
+
+msgid "modes/equalized/entryPoint/inProgress/description"
+msgstr "Topple the titans!"
+
+msgid "modes/equalized/entryPoint/intro/description"
+msgstr "Bring down the giants!"
+
+msgid "modes/equalized/entryPoint/tooltip/description"
+msgstr ""
+"Each tier has different modifiers to HP, internal and external modules, damage, and penetration. The lower a vehicle's tier, the more its parameters are enhanced—making low-tier vehicles much more dangerous!\n"
+"Spending and earning resources in battles is disabled."
+
+msgid "modes/equalized/entryPoint/tooltip/performance/highRisk/description"
+msgstr ""
+"Your computer's performance is insufficient for this mode. You will "
+"experience issues with graphics and vehicle movement. Game client crashes "
+"are also probable."
+
+msgid "modes/equalized/entryPoint/tooltip/performance/highRisk/header"
+msgstr "Low Performance"
+
+msgid "modes/equalized/entryPoint/tooltip/performance/mediumRisk/description"
+msgstr ""
+"This mode demands high computer performance. You may experience issues with "
+"map loading, graphics, and vehicle movement. In case of insufficient "
+"performance, try a lower graphics quality in Settings."
+
+msgid "modes/equalized/entryPoint/tooltip/performance/mediumRisk/header"
+msgstr "Possible Reduced Performance"
+
+msgid "modes/equalized/lootbox/fep_epic"
+msgstr "Epic random reward"
+
+msgid "modes/equalized/lootbox/fep_legendary"
+msgstr "Legendary random reward"
+
+msgid "modes/equalized/lootbox/fep_ordinary"
+msgstr "Common random reward"
+
+msgid "modes/equalized/lootbox/fep_rare"
+msgstr "Rare random reward"
+
+msgid "modes/equalized/lootbox/fep_unusual"
+msgstr "Uncommon random reward"
+
+msgid "modes/equalized/metaProgressionTooltip/header/active"
+msgstr "Equalize! Mission – Stage: %(done)s{par_Open}/%(total)s{par_Close}"
+
+msgid "modes/equalized/metaProgressionTooltip/reward/tip"
+msgstr "Your progress is counted in any Arcade Cabinet submode."
+
+msgid "modes/equalized/metaProgressionTooltip/subheader"
+msgstr "Equalize! Mission"
+
+msgid "modes/equalized/modeSubSelector/progression/info"
+msgstr "Your progress is counted in any Arcade Cabinet submode."
+
+msgid "modes/equalized/modeSubSelector/progression/timer"
+msgstr "until a new Equalize! mission is available"
+
+msgid "modes/equalized/mode_selector/battleCondition"
+msgstr "15v15"
+
+msgid "modes/equalized/mode_selector/description"
+msgstr "Experimental battles with non-standard rules."
+
+msgid "modes/equalized/mode_selector/levelCondition"
+msgstr "{parSecondary_open}I{parSecondary_close} Tiers&nbsp;%(levels)s"
+
+msgid "modes/equalized/mode_selector/performance/highRisk/description"
+msgstr ""
+"Your computer's performance is insufficient for this mode. You will "
+"experience issues with graphics and vehicle movement. Game client crashes "
+"are also probable."
+
+msgid "modes/equalized/mode_selector/performance/highRisk/header"
+msgstr "Low Performance"
+
+msgid "modes/equalized/mode_selector/performance/highRisk/headerIcon"
+msgstr "%(icon) Low Performance"
+
+msgid "modes/equalized/mode_selector/performance/mediumRisk/description"
+msgstr ""
+"This mode demands high computer performance. You may experience issues with "
+"map loading, graphics, and vehicle movement. In case of insufficient "
+"performance, try a lower graphics quality in Settings."
+
+msgid "modes/equalized/mode_selector/performance/mediumRisk/header"
+msgstr "Possible Reduced Performance"
+
+msgid "modes/equalized/mode_selector/performance/mediumRisk/headerIcon"
+msgstr "%(icon)Possible Reduced Performance"
+
+msgid "modes/equalized/mode_selector/progression/resettable"
+msgstr "A new Equalize! mission is available in:"
+
+msgid "modes/equalized/notification/finishSubModes/withProgression"
+msgstr "The %(subModeName)s submode has ended. Progression reset."
+
+msgid "modes/equalized/notification/finishSubModes/withoutProgression"
+msgstr "The %(subModeName)s submode has ended."
+
+msgid "modes/equalized/notification/newSubModes/withProgression"
+msgstr "New rewards and the %(subModeName)s submode are available."
+
+msgid "modes/equalized/notification/newSubModes/withoutProgression"
+msgstr "A new submode is available: %(subModeName)s."
+
+msgid "modes/equalized/notification/switchOffSubModes"
+msgstr "The %(subModeName)s submode is unavailable due to maintenance."
+
+msgid "modes/equalized/notification/switchOnSubModes"
+msgstr "The %(subModeName)s submode is available again."
+
+msgid "modes/equalized/progression/cardsFan/listOfRandomRewards"
+msgstr "Reward List"
+
+msgid "modes/equalized/progression/complete/congratulations"
+msgstr "Congratulations!"
+
+msgid "modes/equalized/progression/complete/title"
+msgstr "You completed the Progression"
+
+msgid "modes/equalized/progression/infinite/congratulations"
+msgstr "Congratulations!"
+
+msgid "modes/equalized/progression/infinite/infinityStep"
+msgstr "Repeatable Stage"
+
+msgid "modes/equalized/progression/infinite/mainProgressionFinished"
+msgstr "You completed the Main Progression"
+
+msgid "modes/equalized/progression/questsList/quest/infinityStageProgress"
+msgstr "Get as many rewards as you can:"
+
+msgid "modes/equalized/progression/questsList/totalPointsEarned"
+msgstr "Points earned: {{progressionSteps}}"
+
+msgid ""
+"modes/equalized/progression/questsList/totalPointsEarnedStandAloneTitle"
+msgstr "Points earned:"
+
+msgid "modes/equalized/progression/title"
+msgstr "EQUALIZE! MISSIONS"
+
+msgid "modes/equalized/progressionQuests/quest/completed"
+msgstr "Completed:"
+
+msgid "modes/equalized/progressionQuests/quest/infinityProgress"
+msgstr "Repeatable"
+
+msgid ""
+"modes/equalized/progressionQuests/quest/progressChangeLabel/forCompletion"
+msgstr "For completion:"
+
+msgid "modes/equalized/progressionQuests/quest/progressChangeLabel/forLoss"
+msgstr "For defeat:"
+
+msgid "modes/equalized/progressionQuests/quest/progressChangeLabel/forWin"
+msgstr "For victory:"
+
+msgid "modes/equalized/progressionQuests/quest/progressChangeLabel/points"
+msgstr "Points:"
+
+msgid ""
+"modes/equalized/progressionQuests/quest/progressChangeLabel/pointsEarned"
+msgstr "Received:"
+
+msgid "modes/equalized/progressionQuests/quest/progressChangeLabel/template"
+msgstr "{{reason}} {{value}}"
+
+msgid "modes/equalized/progressionQuests/quest/progressTitle"
+msgstr "{{completed}} {{currentPoints}} {{delimeter}} {{totalPoints}}"
+
+msgid "modes/equalized/progressionQuests/questSlot/allCompleted"
+msgstr "All currently available missions have been completed"
+
+msgid "modes/equalized/progressionQuests/questSlot/resettable"
+msgstr "Missions will appear when the Progression begins"
+
+msgid "modes/equalized/progressionQuests/tooltip/allCompleted"
+msgstr ""
+"You have completed all available missions for now. More will appear in the "
+"next rotation."
+
+msgid "modes/equalized/progressionQuests/tooltip/expiresCurrent"
+msgstr "Avaliable for {{timeLeft}}"
+
+msgid "modes/equalized/progressionQuests/tooltip/expiresInfinite"
+msgstr "Avaliable for {{timeLeft}}"
+
+msgid "modes/equalized/progressionQuests/tooltip/newMissions"
+msgstr "New missions available in {{timeLeft}}"
+
+msgid "modes/equalized/progressionQuests/tooltip/noQuestsTitle"
+msgstr "{{eventName}} Status"
+
+msgid "modes/equalized/progressionQuests/tooltip/questTitle"
+msgstr "{{eventName}} Mission"
+
+msgid "modes/equalized/rewardsView/header"
+msgstr "LEGENDARY REWARD RECEIVED"
+
+msgid "modes/equalized/scheduler/notification/available"
+msgstr "The %(subModeName)s battles are available again."
+
+msgid "modes/equalized/scheduler/notification/available/title"
+msgstr "Ceasefire"
+
+msgid "modes/equalized/scheduler/notification/modeEnded"
+msgstr "The %(subModeName)s battles have ended."
+
+msgid "modes/equalized/scheduler/notification/modeEnded/title"
+msgstr "Ceasefire"
+
+msgid "modes/equalized/scheduler/notification/primeTime"
+msgstr ""
+"Ceasefire is in effect. The %(subModeName)s battles are temporarily "
+"unavailable."
+
+msgid "modes/equalized/scheduler/notification/primeTime/title"
+msgstr "Ceasefire"
+
+msgid "modes/equalized/tierList/description"
+msgstr ""
+"Each random reward is an item from the list below that you can receive with "
+"a certain probability."
+
+msgid "modes/equalized/tierList/title"
+msgstr "What's Inside?"
+
+msgid "modes/equalized/tooltip/filter/body"
+msgstr "Show/hide suitable vehicles for Equalize! mode."
+
+msgid "modes/equalized/tooltip/filter/header"
+msgstr "Equalize! Vehicles"
+
+msgid "modes/equalized/userName"
+msgstr "Equalize!"
 
 msgid "modes/fall_tanks/banner/progression/finish"
 msgstr "All stages have been completed"
@@ -565,6 +871,61 @@ msgstr "Points earned:"
 
 msgid "modes/fall_tanks/progression/title"
 msgstr "NEON DASH MISSIONS"
+
+msgid "modes/fall_tanks/progressionQuests/quest/completed"
+msgstr "Completed:"
+
+msgid "modes/fall_tanks/progressionQuests/quest/infinityProgress"
+msgstr "Repeatable"
+
+msgid ""
+"modes/fall_tanks/progressionQuests/quest/progressChangeLabel/forCompletion"
+msgstr "For completion:"
+
+msgid "modes/fall_tanks/progressionQuests/quest/progressChangeLabel/forLoss"
+msgstr "For defeat:"
+
+msgid "modes/fall_tanks/progressionQuests/quest/progressChangeLabel/forWin"
+msgstr "For victory:"
+
+msgid "modes/fall_tanks/progressionQuests/quest/progressChangeLabel/points"
+msgstr "Points:"
+
+msgid ""
+"modes/fall_tanks/progressionQuests/quest/progressChangeLabel/pointsEarned"
+msgstr "Received:"
+
+msgid "modes/fall_tanks/progressionQuests/quest/progressChangeLabel/template"
+msgstr "{{reason}} {{value}}"
+
+msgid "modes/fall_tanks/progressionQuests/quest/progressTitle"
+msgstr "{{completed}} {{currentPoints}} {{delimeter}} {{totalPoints}}"
+
+msgid "modes/fall_tanks/progressionQuests/questSlot/allCompleted"
+msgstr "All currently available missions have been completed"
+
+msgid "modes/fall_tanks/progressionQuests/questSlot/resettable"
+msgstr "Missions will appear when the Progression begins"
+
+msgid "modes/fall_tanks/progressionQuests/tooltip/allCompleted"
+msgstr ""
+"You have completed all available missions for now. More will appear in the "
+"next rotation."
+
+msgid "modes/fall_tanks/progressionQuests/tooltip/expiresCurrent"
+msgstr "Avaliable for {{timeLeft}}"
+
+msgid "modes/fall_tanks/progressionQuests/tooltip/expiresInfinite"
+msgstr "Avaliable for {{timeLeft}}"
+
+msgid "modes/fall_tanks/progressionQuests/tooltip/newMissions"
+msgstr "New missions available in {{timeLeft}}"
+
+msgid "modes/fall_tanks/progressionQuests/tooltip/noQuestsTitle"
+msgstr "{{eventName}} Status"
+
+msgid "modes/fall_tanks/progressionQuests/tooltip/questTitle"
+msgstr "{{eventName}} Mission"
 
 msgid "modes/fall_tanks/rewardsView/header"
 msgstr "LEGENDARY REWARD RECEIVED"
@@ -766,6 +1127,61 @@ msgstr "Points earned:"
 
 msgid "modes/undefined/progression/title"
 msgstr "ARCADE CABINET MISSIONS"
+
+msgid "modes/undefined/progressionQuests/quest/completed"
+msgstr "Completed:"
+
+msgid "modes/undefined/progressionQuests/quest/infinityProgress"
+msgstr "Repeatable"
+
+msgid ""
+"modes/undefined/progressionQuests/quest/progressChangeLabel/forCompletion"
+msgstr "For completion:"
+
+msgid "modes/undefined/progressionQuests/quest/progressChangeLabel/forLoss"
+msgstr "For defeat:"
+
+msgid "modes/undefined/progressionQuests/quest/progressChangeLabel/forWin"
+msgstr "For victory:"
+
+msgid "modes/undefined/progressionQuests/quest/progressChangeLabel/points"
+msgstr "Points:"
+
+msgid ""
+"modes/undefined/progressionQuests/quest/progressChangeLabel/pointsEarned"
+msgstr "Received:"
+
+msgid "modes/undefined/progressionQuests/quest/progressChangeLabel/template"
+msgstr "{{reason}} {{value}}"
+
+msgid "modes/undefined/progressionQuests/quest/progressTitle"
+msgstr "{{completed}} {{currentPoints}} {{delimeter}} {{totalPoints}}"
+
+msgid "modes/undefined/progressionQuests/questSlot/allCompleted"
+msgstr "All currently available missions have been completed"
+
+msgid "modes/undefined/progressionQuests/questSlot/resettable"
+msgstr "Missions will appear when the Progression begins"
+
+msgid "modes/undefined/progressionQuests/tooltip/allCompleted"
+msgstr ""
+"You have completed all available missions for now. More will appear in the "
+"next rotation."
+
+msgid "modes/undefined/progressionQuests/tooltip/expiresCurrent"
+msgstr "Avaliable for {{timeLeft}}"
+
+msgid "modes/undefined/progressionQuests/tooltip/expiresInfinite"
+msgstr "Avaliable for {{timeLeft}}"
+
+msgid "modes/undefined/progressionQuests/tooltip/newMissions"
+msgstr "New missions available in {{timeLeft}}"
+
+msgid "modes/undefined/progressionQuests/tooltip/noQuestsTitle"
+msgstr "{{eventName}} Status"
+
+msgid "modes/undefined/progressionQuests/tooltip/questTitle"
+msgstr "{{eventName}} Mission"
 
 msgid "modes/undefined/rewardsView/header"
 msgstr "LEGENDARY REWARD RECEIVED"
@@ -1003,6 +1419,9 @@ msgstr "Earn Points and advance through the Progression."
 msgid "progression/infinite/pointsEarned"
 msgstr "Points earned:"
 
+msgid "progression/questsList/battlesFinishedTitle"
+msgstr "Active phase ended. Battles are over"
+
 msgid "progression/questsList/quest/completed"
 msgstr "Completed:"
 
@@ -1131,6 +1550,77 @@ msgstr "?empty?"
 
 msgid "sub_modes/development/userName/quoted"
 msgstr "?empty?"
+
+msgid "sub_modes/equalized/capsUserName"
+msgstr "EQUALIZE!"
+
+msgid "sub_modes/equalized/detailsHelp/page1/description"
+msgstr ""
+"Each tier has different modifiers to HP, internal and external modules, "
+"damage, and penetration. The lower a vehicle's tier, the more its parameters"
+" are enhanced—making low-tier vehicles much more dangerous!"
+
+msgid "sub_modes/equalized/detailsHelp/page1/title"
+msgstr "EQUALIZE!"
+
+msgid "sub_modes/equalized/detailsHelpHint/description"
+msgstr "to learn about this mode! "
+
+msgid "sub_modes/equalized/detailsHelpHint/press"
+msgstr "Press"
+
+msgid "sub_modes/equalized/detailsHelpTitle"
+msgstr "EQUALIZE!"
+
+msgid "sub_modes/equalized/subModeCard/battleCondition"
+msgstr "15x15"
+
+msgid "sub_modes/equalized/subModeCard/description"
+msgstr "Experimental battles with non-standard rules"
+
+msgid "sub_modes/equalized/subModeCard/levelCondition"
+msgstr "{parSecondary_open}I{parSecondary_close} Tiers&nbsp;%(levels)s"
+
+msgid "sub_modes/equalized/subModeCard/performance/highRisk/description"
+msgstr ""
+"Your computer's performance is insufficient for this mode. You will "
+"experience issues with graphics and vehicle movement. Game client crashes "
+"are also probable."
+
+msgid "sub_modes/equalized/subModeCard/performance/highRisk/header"
+msgstr "Low Performance"
+
+msgid "sub_modes/equalized/subModeCard/performance/highRisk/headerIcon"
+msgstr "%(icon) Low Performance"
+
+msgid "sub_modes/equalized/subModeCard/performance/mediumRisk/description"
+msgstr ""
+"This mode demands high computer performance. You may experience issues with "
+"map loading, graphics, and vehicle movement. In case of insufficient "
+"performance, try a lower graphics quality in Settings."
+
+msgid "sub_modes/equalized/subModeCard/performance/mediumRisk/header"
+msgstr "Possible Reduced Performance"
+
+msgid "sub_modes/equalized/subModeCard/performance/mediumRisk/headerIcon"
+msgstr "%(icon) Possible Reduced Performance"
+
+msgid "sub_modes/equalized/subModeCard/title"
+msgstr "Equalize!"
+
+msgid "sub_modes/equalized/tips/tip1/description"
+msgstr ""
+"Each tier has different modifiers to HP, internal and external modules, damage, and penetration. The lower a vehicle's tier, the more its parameters are enhanced—making low-tier vehicles much more dangerous!\n"
+"Spending and earning resources in battles is disabled."
+
+msgid "sub_modes/equalized/tips/tip1/title"
+msgstr "Tier I–X Battles"
+
+msgid "sub_modes/equalized/userName"
+msgstr "Equalize!"
+
+msgid "sub_modes/equalized/userName/quoted"
+msgstr "\"Equalize!\""
 
 msgid "sub_modes/fall_tanks/capsUserName"
 msgstr "NEON DASH"

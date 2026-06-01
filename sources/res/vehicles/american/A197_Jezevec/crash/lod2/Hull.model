@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A197_Jezevec/crash/lod2/Hull</nodefullVisual>
+	<parent>vehicles/american/A197_Jezevec/crash/lod3/Hull</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.717400 -0.983513 -3.287993</min>
+		<max>1.721238 0.562796 3.310439</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

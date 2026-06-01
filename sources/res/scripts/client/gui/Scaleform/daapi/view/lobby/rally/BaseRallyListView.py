@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from abc import abstractmethod
 from gui import makeHtmlString
 from gui.Scaleform.daapi.view.meta.BaseRallyListViewMeta import BaseRallyListViewMeta

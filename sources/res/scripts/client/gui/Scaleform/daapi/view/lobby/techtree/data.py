@@ -1,7 +1,8 @@
-import logging
+from __future__ import absolute_import
+import logging, typing
 from itertools import chain
+from future.utils import lmap, lfilter, viewitems, viewvalues
 from random import choice
-import typing
 from CurrentVehicle import g_currentVehicle
 from gui.Scaleform.daapi.view.lobby.techtree import nodes
 from gui.Scaleform.daapi.view.lobby.techtree.dumpers import _BaseDumper
@@ -100,7 +101,7 @@ class _ItemsData(object):
         nodeCDs = [ node.getNodeCD() for node in self._getNodesToInvalidate() ]
         _logger.debug('getInventoryVehicles: %r', nodeCDs)
         inventoryVehicles = self._items.getVehicles(REQ_CRITERIA.INVENTORY | REQ_CRITERIA.IN_CD_LIST(nodeCDs))
-        return {item.invID:item for item in inventoryVehicles.itervalues()}
+        return {item.invID:item for item in viewvalues(inventoryVehicles)}
 
     def getVehicleCDs(self):
         return [ i.getNodeCD() for i in self._getNodesToInvalidate() if getTypeOfCD(i.getNodeCD()) == GUI_ITEM_TYPE.VEHICLE ]
@@ -164,7 +165,7 @@ class _ItemsData(object):
     def invalidateLocks(self, locks):
         result = False
         inventory = self.getInventoryVehicles()
-        for invID, _ in locks.iteritems():
+        for invID in locks:
             if invID in inventory.keys():
                 result = True
                 break
@@ -524,7 +525,7 @@ class ResearchItemsData(_ItemsData):
 
         next2Unlock = self._findNext2UnlockItems(mapping.values())
         prevUnlocks = []
-        for nodeCD, node in mapping.iteritems():
+        for nodeCD, node in viewitems(mapping):
             if getTypeOfCD(nodeCD) == GUI_ITEM_TYPE.VEHICLE:
                 continue
             state = node.getState()
@@ -619,7 +620,7 @@ class ResearchItemsData(_ItemsData):
 
     def _findNext2UnlockItems(self, nodes_):
         result = []
-        topLevelCDs = self._topLevelCDs.keys()
+        topLevelCDs = list(self._topLevelCDs)
         unlockStats = self.getUnlockStats()
         unlockKwargs = unlockStats._asdict()
         for node in nodes_:
@@ -880,12 +881,12 @@ class NationTreeData(_ItemsData):
         unlockStats = self.getUnlockStats()
         items = g_techTreeDP.getNext2UnlockByItems(unlocks, **unlockStats._asdict())
         if items:
-            next2Unlock = [ (item[0], self._changeNext2Unlock(item[0], item[1], unlockStats), item[1].makeTuple()) for item in items.iteritems()
+            next2Unlock = [ (item[0], self._changeNext2Unlock(item[0], item[1], unlockStats), item[1].makeTuple()) for item in viewitems(items)
                           ]
         filtered = [ unlock for unlock in unlocks if getTypeOfCD(unlock) == GUI_ITEM_TYPE.VEHICLE ]
         if filtered:
             unlocked = [ (item, self._change2UnlockedByCD(item)) for item in filtered ]
-            parents = map(g_techTreeDP.getTopLevel, filtered)
+            parents = lmap(g_techTreeDP.getTopLevel, filtered)
             prevUnlocked = [ (item, self._changePreviouslyUnlockedByCD(item)) for item in chain(*parents) if not self.__isInInventory(item)
                            ]
         return (
@@ -1042,7 +1043,7 @@ class NationTreeData(_ItemsData):
             return False
 
         vehicleCDs = g_techTreeDP.techTreeEventsListener.getVehicles(nationID)
-        startNodes = filter(_filterFunc, vehicleCDs)
+        startNodes = lfilter(_filterFunc, vehicleCDs)
         if startNodes:
             self._scrollIndex = self._nodesIdx[choice(startNodes)]
             self._nodes[self._scrollIndex].addStateFlag(NODE_STATE_FLAGS.SELECTED)

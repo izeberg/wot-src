@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from future.utils import viewitems
 from gui.impl import backport
 from gui.impl.gen import R
 from gui.server_events.recruit_helper import getRecruitInfo
@@ -33,9 +35,9 @@ class OpenBundleAchievesFormatter(QuestAchievesFormatter):
             return
 
     @classmethod
-    def _processTokens(cls, data):
+    def _processTokens(cls, tokens):
         result = []
-        for token, tokenData in data.get('tokens', {}).items():
+        for token, tokenData in viewitems(tokens.get('tokens', {})):
             tankmanTokenResult = cls._processTankmanToken(token, tokenData)
             if tankmanTokenResult:
                 result.append(tankmanTokenResult)

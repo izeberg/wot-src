@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from future.utils import viewvalues
 from adisp import adisp_process
 from debug_utils import LOG_ERROR
 from gui.Scaleform.daapi.view.meta.AbstractRallyWindowMeta import AbstractRallyWindowMeta
@@ -21,7 +23,7 @@ class AbstractRallyWindow(AbstractRallyWindowMeta, IPrbListener):
         return []
 
     def minimizing(self):
-        for component in self.components.itervalues():
+        for component in viewvalues(self.components):
             component.isMinimising = True
 
     def onWindowClose(self):

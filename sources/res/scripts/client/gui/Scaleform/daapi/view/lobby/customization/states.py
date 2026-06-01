@@ -1,4 +1,7 @@
-import logging, math, typing, BigWorld, adisp
+from __future__ import absolute_import
+import logging, math, typing
+from functools import partial
+import BigWorld, adisp
 from BWUtil import AsyncReturn
 from ClientSelectableCameraObject import ClientSelectableCameraObject
 from CurrentVehicle import g_currentVehicle, g_currentPreviewVehicle
@@ -180,7 +183,7 @@ class _LoadingState(LobbyState, EventsHandler):
             self.__goToMain()
 
     def __goToMain(self):
-        BigWorld.callback(0.0, lambda : _MainState.goTo(**self.__params))
+        BigWorld.callback(0.0, partial(_MainState.goTo, **self.__params))
 
 
 @CustomizationState.parentOf

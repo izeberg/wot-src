@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>content/3D_Customization/Cus_28_Mystic_Monkey/normal/lod1/attachment</nodefullVisual>
 	<parent>content/3D_Customization/Cus_28_Mystic_Monkey/normal/lod2/attachment</parent>
 	<extent>64.000000</extent>
 	<visibilityBox>
-		<min>-0.155002 -0.200000 -0.163904</min>
+		<min>-0.155002 -0.100000 -0.163904</min>
 		<max>0.157668 0.639881 0.243968</max>
 	</visibilityBox>
 	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_28_Mystic_Monkey/normal/lod1/attachment</nodefullVisual>
 </root>

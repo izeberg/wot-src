@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.daapi.view.lobby.rally.action_button_state_vo import ActionButtonStateVO
 from gui.prb_control.settings import UNIT_RESTRICTION
 from gui.Scaleform.locale.CYBERSPORT import CYBERSPORT

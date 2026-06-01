@@ -52,6 +52,7 @@ package net.wg.gui.prebattle.battleSession
       override protected function configUI() : void
       {
          super.configUI();
+         geometry.positionStrategy = DefaultWindowGeometry.POSITION_ALWAYS;
          this.groupsList.addEventListener(ListEventEx.ITEM_CLICK,this.handleTeamItemClick);
          this.setConstraints();
       }

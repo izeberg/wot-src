@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging
 from account_helpers import AccountSettings
 from gui.Scaleform.daapi.view.meta.ManualMainViewMeta import ManualMainViewMeta

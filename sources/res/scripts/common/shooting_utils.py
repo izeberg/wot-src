@@ -1,3 +1,4 @@
+from __future__ import absolute_import, division
 import WGAI, math
 from constants import SERVER_TICK_LENGTH, SHELL_TRAJECTORY_EPSILON_SERVER
 __DIST_LIMIT_TAGS = [

@@ -1,4 +1,6 @@
+from __future__ import absolute_import
 import logging, typing
+from future.utils import viewvalues
 if typing.TYPE_CHECKING:
     from typing import Any, Iterable
 _logger = logging.getLogger(__name__)
@@ -18,7 +20,7 @@ class DisjointSet(object):
 
     @property
     def subsets(self):
-        return self._set.itervalues()
+        return iter(viewvalues(self._set))
 
     @property
     def nsubsets(self):

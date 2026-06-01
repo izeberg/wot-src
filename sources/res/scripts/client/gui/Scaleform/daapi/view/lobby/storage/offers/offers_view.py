@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import ResMgr
 from adisp import adisp_process, adisp_async
 from gui.Scaleform.daapi.view.lobby.storage.storage_helpers import createStorageDefVO

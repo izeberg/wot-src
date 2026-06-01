@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from gui.Scaleform.daapi.view.lobby.shared.cm_handlers import ContextMenu, CMLabel
 from gui.Scaleform.framework.managers.context_menu import CM_BUY_COLOR

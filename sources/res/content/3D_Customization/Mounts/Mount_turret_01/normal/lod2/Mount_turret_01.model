@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Mounts/Mount_turret_01/normal/lod3/Mount_turret_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.105373 -0.500238 -0.412186</min>
+		<max>0.143518 0.020000 0.098798</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Mounts/Mount_turret_01/normal/lod2/Mount_turret_01</nodefullVisual>
+</root>

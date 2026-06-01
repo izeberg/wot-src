@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/sweden/S37_Ambassador/crash/lod3/Gun_02</nodefullVisual>
+	<parent>vehicles/sweden/S37_Ambassador/crash/lod4/Gun_02</parent>
+	<extent>192.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.483460 -0.467226 -0.921206</min>
+		<max>0.475860 0.251908 5.305451</max>
+	</visibilityBox>
+</root>

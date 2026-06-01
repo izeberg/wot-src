@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.framework.entities.inject_component_adaptor import InjectComponentAdaptor
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
 from gui.impl.lobby.achievements.achievements_main_view import AchievementMainView, AchievementsViewCtx

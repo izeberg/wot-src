@@ -9,7 +9,7 @@
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
 		<node>
-			<identifier>nodes_01</identifier>
+			<identifier>Cus_199_LS_EMP_TurretLamp</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -17,13 +17,22 @@
 				<row3>0.000000 0.000000 0.000000</row3>
 			</transform>
 			<node>
-				<identifier>HP_attachment</identifier>
+				<identifier>lod0</identifier>
 				<transform>
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 1.000000 0.000000</row1>
 					<row2>0.000000 0.000000 1.000000</row2>
 					<row3>0.000000 0.000000 0.000000</row3>
 				</transform>
+				<node>
+					<identifier>HP_module0</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
 			</node>
 		</node>
 	</node>
@@ -77,14 +86,14 @@
 						<Texture>content/3D_Customization/Cus_199_LS_EMP_TurretLamp/Cus_199_LS_EMP_TurretLamp_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.000000 0.273937 -0.004449</groupOrigin>
+				<groupOrigin>-0.000000 0.323937 -0.004449</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.300164 -0.200000 -0.144037</min>
-		<max>0.300164 0.747874 0.135139</max>
+		<min>-0.302637 -0.100000 -0.145834</min>
+		<max>0.302637 0.747874 0.135139</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>65694</geometrySize>
+	<geometrySize>65986</geometrySize>
 </root>

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging
 from frameworks.wulf import ViewFlags
 from gui.Scaleform.framework.entities.inject_component_adaptor import InjectComponentAdaptor

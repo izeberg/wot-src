@@ -3,9 +3,9 @@
 	<parent>content/3D_Customization/Cus_46_LS_TV_01/normal/lod2/attachment</parent>
 	<extent>64.000000</extent>
 	<visibilityBox>
-		<min>-0.341137 -0.204005 -0.184214</min>
-		<max>0.252881 0.561886 0.754482</max>
+		<min>-0.341137 -0.100000 -0.443775</min>
+		<max>0.252881 0.600169 0.499751</max>
 	</visibilityBox>
-	<tank>true</tank>
 	<nodefullVisual>content/3D_Customization/Cus_46_LS_TV_01/normal/lod1/attachment</nodefullVisual>
+	<tank>true</tank>
 </root>
