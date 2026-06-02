@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from future.utils import viewitems
 from account_helpers.AccountSettings import MISSION_SELECTOR_FILTER, AccountSettings
 from gui.filters.carousel_filter import CarouselFilter, EventCriteriesGroup
 from gui.Scaleform import getButtonsAssetPath
@@ -64,5 +66,5 @@ class _RegularCarouselFilter(CarouselFilter):
 
     def save(self):
         filters = AccountSettings.getFilterDefault(MISSION_SELECTOR_FILTER)
-        filters = {key:value for key, value in self._filters.iteritems() if key in filters}
+        filters = {key:value for key, value in viewitems(self._filters) if key in filters}
         caches.getNavInfo().setVehicleSelectorFilters(filters)

@@ -73,9 +73,9 @@ def createTooltipContentDecorator():
                     return BoxTooltip(event.getArgument('boxCategory'), event.getArgument('eventName'))
                 if contentID == R.views.mono.lootbox.tooltips.statistics_category():
                     return StatisticsCategoryTooltipView(statisticBonusesCategory, event.getArgument('eventName'))
-                if contentID == R.views.lobby.battle_pass.tooltips.BattlePassCoinTooltipView():
+                if contentID == R.views.mono.battle_pass.tooltips.bpcoin():
                     return BattlePassCoinTooltipView()
-                if contentID == R.views.lobby.battle_pass.tooltips.BattlePassTalerTooltip():
+                if contentID == R.views.mono.battle_pass.tooltips.bptaler():
                     return BattlePassTalerTooltip()
                 tooltipData = getattr(self, 'getTooltipData', lambda _: None)(event)
                 if tooltipData is not None:

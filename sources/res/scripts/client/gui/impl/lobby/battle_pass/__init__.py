@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from frameworks.wulf import WindowLayer
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
 from gui.Scaleform.framework import ScopeTemplates, ViewSettings
@@ -22,7 +23,7 @@ def getViewSettings():
     return (
      ViewSettings(VIEW_ALIAS.BATTLE_PASS, BattlePassWindow, '', WindowLayer.SUB_VIEW, VIEW_ALIAS.BATTLE_PASS, ScopeTemplates.LOBBY_SUB_SCOPE),
      ViewSettings(VIEW_ALIAS.BATTLE_PASS_BROWSER, BattlePassBrowserView, 'browserScreen.swf', WindowLayer.FULLSCREEN_WINDOW, VIEW_ALIAS.BATTLE_PASS_BROWSER, ScopeTemplates.LOBBY_TOP_SUB_SCOPE),
-     ViewSettings(VIEW_ALIAS.BATTLE_PASS_VIDEO_BROWSER, BattlePassVideoBrowserView, 'browserScreen.swf', WindowLayer.FULLSCREEN_WINDOW, VIEW_ALIAS.BATTLE_PASS_VIDEO_BROWSER, ScopeTemplates.LOBBY_TOP_SUB_SCOPE))
+     ViewSettings(VIEW_ALIAS.BATTLE_PASS_VIDEO_BROWSER, BattlePassVideoBrowserView, 'browserScreen.swf', WindowLayer.TOP_WINDOW, VIEW_ALIAS.BATTLE_PASS_VIDEO_BROWSER, ScopeTemplates.LOBBY_TOP_SUB_SCOPE))
 
 
 def getBusinessHandlers():

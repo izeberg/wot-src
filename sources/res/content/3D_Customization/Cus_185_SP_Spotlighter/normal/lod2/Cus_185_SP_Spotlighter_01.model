@@ -2,6 +2,10 @@
 <root>
 	<parent>content/3D_Customization/Cus_185_SP_Spotlighter/normal/lod3/Cus_185_SP_Spotlighter_01</parent>
 	<extent>96.000000</extent>
-	<nodelessVisual>content/3D_Customization/Cus_185_SP_Spotlighter/normal/lod2/Cus_185_SP_Spotlighter_01</nodelessVisual>
 	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.185410 -0.100000 -0.469375</min>
+		<max>0.176221 0.673710 0.149560</max>
+	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/Cus_185_SP_Spotlighter/normal/lod2/Cus_185_SP_Spotlighter_01</nodefullVisual>
 </root>

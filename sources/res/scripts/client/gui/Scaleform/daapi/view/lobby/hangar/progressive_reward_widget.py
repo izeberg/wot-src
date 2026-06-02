@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging
 from constants import IS_LOOT_BOXES_ENABLED
 from account_helpers import AccountSettings

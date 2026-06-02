@@ -1,4 +1,6 @@
+from __future__ import absolute_import
 import typing
+from future.utils import viewitems
 from helpers import dependency
 from items.components.c11n_constants import SeasonType
 from skeletons.gui.customization import ICustomizationService
@@ -16,7 +18,7 @@ class StyleDiffsCache(object):
 
     def saveDiffs(self, style, diffs):
         storage = self.__diffs.setdefault(style.intCD, {})
-        for season, diff in diffs.iteritems():
+        for season, diff in viewitems(diffs):
             storage[season] = diff
 
         storage['is3D'] = style.is3D

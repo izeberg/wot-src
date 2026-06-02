@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, Keys
 from helpers import dependency
 from gui import GUI_SETTINGS, DialogsInterface

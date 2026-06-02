@@ -1,10 +1,14 @@
+from __future__ import absolute_import
 import copy
 from debug_utils import LOG_ERROR
 from binascii import crc32
 from functools import partial
+from future.utils import viewitems
+from past.builtins import basestring, xrange
+from math_common import round_py2_style_int
 
 def roundToInt(val):
-    return int(round(val))
+    return round_py2_style_int(val)
 
 
 class DeltaPacker(object):
@@ -44,7 +48,7 @@ class DeltaPacker(object):
 class ValueReplayPacker:
 
     def pack(self, value):
-        if isinstance(value, (str, unicode)):
+        if isinstance(value, basestring):
             return value
         return value.pack()
 
@@ -64,7 +68,7 @@ class DictPacker(object):
         l[0] = self._checksum
         for index, metaEntry in enumerate(metaData):
             try:
-                name, transportType, default, packer, aggFunc = metaEntry
+                name, transportType, default, packer, _ = metaEntry
                 v = dataDict.get(name, default)
                 if v is None:
                     pass
@@ -170,7 +174,7 @@ class MergeDictPacker(object):
         return ret
 
     def merge(self, pack):
-        checkSums = set([ v.getChecksum() for v in self._dictList ])
+        checkSums = {v.getChecksum() for v in self._dictList}
         for dictPacker in pack._dictList:
             if dictPacker.getChecksum() not in checkSums:
                 self._dictList.append(dictPacker)
@@ -192,7 +196,7 @@ class Meta(DictPacker):
 
     def defaults(self):
         result = self.__defaultsImmutable.copy()
-        for key, value in self.__defaultsMutable.iteritems():
+        for key, value in viewitems(self.__defaultsMutable):
             result[key] = value()
 
         return result

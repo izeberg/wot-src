@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<extent>150</extent>
+	<extent>150.000000</extent>
 	<parent>content/Buildings/hd_bld_EU_033_KitCrashHouses/normal/lod2/hd_bld_EU_033_KitCrashHouses_Wall_05</parent>
-	<nodelessVisual>content/Buildings/hd_bld_EU_033_KitCrashHouses/normal/lod1/hd_bld_EU_033_KitCrashHouses_Wall_05</nodelessVisual>
+	<nodefullVisual>content/Buildings/hd_bld_EU_033_KitCrashHouses/normal/lod1/hd_bld_EU_033_KitCrashHouses_Wall_05</nodefullVisual>
+	<visibilityBox>
+		<min>-5.291781 -2.027318 -3.128470</min>
+		<max>5.248705 15.299708 1.234639</max>
+	</visibilityBox>
 </root>

@@ -1,4 +1,7 @@
-import logging, SoundGroups
+from __future__ import absolute_import
+import logging
+from future.utils import lrange
+import SoundGroups
 from PlayerEvents import g_playerEvents
 from account_helpers import AccountSettings
 from account_helpers.AccountSettings import ENABLE_RANKED_ANIMATIONS
@@ -86,7 +89,7 @@ class RankedBattleResultsWidget(RankedBattlesHangarWidgetMeta):
             _logger.error('Last rank can not be more then max rank')
         if currentRank.isNewForPlayer():
             if lastRank.isAcquired():
-                for rankID, nextRankID in zip(range(lastRankID, currentRankID), range(lastRankID + 1, currentRankID + 1)):
+                for rankID, nextRankID in zip(lrange(lastRankID, currentRankID), lrange(lastRankID + 1, currentRankID + 1)):
                     rank = ranks[rankID]
                     nextRank = ranks[nextRankID]
                     if rank.isInitialForNextDivision() or nextRank.isInitialForNextDivision():
@@ -107,7 +110,7 @@ class RankedBattleResultsWidget(RankedBattlesHangarWidgetMeta):
                 if currentRank.isFinal():
                     states[-1] = StateBlock(RANKEDBATTLES_ALIASES.LEAGUE_RECEIVE_STATE, currentRankID - 1, currentRankID, None)
             if lastRank.isLost():
-                for rankID, prevRankID in zip(reversed(range(currentRankID + 1, lastRankID + 1)), reversed(range(currentRankID, lastRankID))):
+                for rankID, prevRankID in zip(reversed(lrange(currentRankID + 1, lastRankID + 1)), reversed(lrange(currentRankID, lastRankID))):
                     if ranks[prevRankID].isInitialForNextDivision():
                         states.append(StateBlock(RANKEDBATTLES_ALIASES.FIRST_RANK_LOST_STATE, rankID, prevRankID, None))
                     else:
@@ -229,12 +232,12 @@ class RankedBattlesHangarWidget(RankedBattleResultsWidget):
         self.rankedController.getWebSeasonProvider().onInfoUpdated += self._update
         self._update()
 
-    def _update(self, lastRank=None, clientMaxRank=None, currentRank=None, ranksChain=None):
+    def _update(self, lastRankID=None, clientMaxRankID=None, currentRankID=None, ranksChain=None):
         if self.rankedController.getClientBonusBattlesCount() > 0:
             self.as_setBonusBattlesLabelS(str(self.rankedController.getClientBonusBattlesCount()))
         else:
             self.as_setBonusBattlesLabelS('')
-        super(RankedBattlesHangarWidget, self)._update(lastRank, currentRank, ranksChain)
+        super(RankedBattlesHangarWidget, self)._update(lastRankID, currentRankID, ranksChain)
 
     def _dispose(self):
         self.rankedController.getWebSeasonProvider().onInfoUpdated -= self._update

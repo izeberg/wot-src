@@ -208,86 +208,25 @@ msgstr "Go to Select"
 msgid "battlePassAwardsView/mainReward/trophyGiftToken/buttonTitle"
 msgstr "In the Homefront Supplies section in the Depot"
 
-msgid "battlePassBuyLevelsView/backBtnText/progression"
-msgstr "TO BATTLE PASS"
+msgid "battlePassBuyLevels/chapter"
+msgstr "%(name)s Chapter"
 
-msgid "battlePassBuyLevelsView/backBtnText/shop"
-msgstr "TO STORE"
-
-msgid "battlePassBuyView/backBtnText/progression"
-msgstr "TO BATTLE PASS"
-
-msgid "battlePassBuyView/backBtnText/shop"
-msgstr "TO STORE"
-
-msgid "battlePassBuyView/btnBuy"
-msgstr "Purchase"
+msgid "battlePassBuyLevels/levelsSelected"
+msgid_plural "plural/battlePassBuyLevels/levelsSelected"
+msgstr[0] "%(count)s stage for"
+msgstr[1] "%(count)s stages for"
+msgstr[2] "%(count)s stages for"
 
 msgid "battlePassBuyView/btnCancel"
-msgstr "Back"
+msgstr "Cancel"
 
 msgid "battlePassBuyView/btnRewards"
 msgstr ""
 "View All\n"
 "%(count)s Rewards"
 
-msgid "battlePassBuyView/card/activeChapter/text"
-msgstr "Active Chapter"
-
-msgid "battlePassBuyView/card/competePreviousChapter"
-msgstr "Complete Chapter %(chapter)"
-
-msgid "battlePassBuyView/card/currentLevel/text"
-msgstr "Current Stage"
-
-msgid "battlePassBuyView/card/currentLevelHovered/text"
-msgstr "Current Stage: "
-
-msgid "battlePassBuyView/card/descr/bought"
-msgstr ""
-"Improved Pass purchased. All Improved Rewards for completing Stages are "
-"available to you."
-
-msgid "battlePassBuyView/card/descr/chapter"
-msgstr ""
-"Purchase the Improved Pass to unlock the Improved Rewards Track of the "
-"Chapter."
-
-msgid "battlePassBuyView/card/descr/shopOffer"
-msgstr "Purchase all three Chapters to unlock all Improved Rewards."
-
-msgid "battlePassBuyView/card/divider"
-msgstr "or"
-
-msgid "battlePassBuyView/card/priceDivider"
-msgstr "or"
-
-msgid "battlePassBuyView/card/purchased"
-msgstr "Already purchased"
-
-msgid "battlePassBuyView/card/shopOfferWaning"
-msgstr "This bundle will become unavailable once you purchase a Chapter."
-
-msgid "battlePassBuyView/card/timer/lessMinute"
-msgstr "Left: less than a minute"
-
-msgid "battlePassBuyView/card/timer/time"
-msgstr "Left: %(time)s"
-
-msgid "battlePassBuyView/card/title/chapter"
-msgstr "CHAPTER %(chapter)"
-
-msgid "battlePassBuyView/card/title/shopOffer"
-msgstr "THREE-IN-ONE"
-
-msgid "battlePassBuyView/confirm/backBtnText"
-msgstr "TO SELECT YOUR OFFER"
-
 msgid "battlePassBuyView/confirm/btnBuy"
 msgstr "Purchase"
-
-msgid "battlePassBuyView/confirm/chapter"
-msgstr "CHAPTER: \"%(name)s\""
 
 msgid "battlePassBuyView/confirm/checkbox/stage"
 msgid_plural "plural/battlePassBuyView/confirm/checkbox/stage"
@@ -300,12 +239,6 @@ msgstr "The Improved Pass unlocks:"
 
 msgid "battlePassBuyView/confirm/descriptionCheckboxChecked"
 msgstr "You will receive all Chapter rewards immediately:"
-
-msgid "battlePassBuyView/confirm/price"
-msgstr "Improved Pass purchase price:"
-
-msgid "battlePassBuyView/confirm/priceWithLevels"
-msgstr "Improved Pass and Stages purchase price:"
 
 msgid "battlePassBuyView/confirm/shopOfferBlock/buy"
 msgstr "View Offers"
@@ -326,63 +259,16 @@ msgstr ""
 "Improved Passes for\n"
 "all Season Chapters"
 
-msgid "battlePassBuyView/confirm/shopOfferLinkText"
-msgstr "offer"
-
-msgid "battlePassBuyView/confirm/shopOfferWarning"
-msgstr ""
-"If you purchase the Improved Pass for a specific Chapter, the %(link)s will "
-"become unavailable."
-
 msgid "battlePassBuyView/confirm/starterPack/description"
 msgstr "Bonus %(purchaseText)s"
 
 msgid "battlePassBuyView/confirm/starterPack/purchaseText"
 msgstr "on purchase:"
 
-msgid "battlePassBuyView/confirm/subTitle/finished"
-msgstr ""
-"Allows you to receive Improved Rewards for already completed Battle Pass "
-"Stages in Chapter %(chapter)."
-
-msgid "battlePassBuyView/confirm/subTitle/inProgress"
-msgstr ""
-"Allows you to receive Improved Rewards for each completed and upcoming "
-"Battle Pass Stage in Chapter %(chapter)."
-
-msgid "battlePassBuyView/confirm/subTitle/notStarted"
-msgstr ""
-"Allows you to receive Improved Rewards for each completed Battle Pass Stage "
-"in Chapter %(chapter)."
-
-msgid "battlePassBuyView/confirm/title"
-msgstr "PURCHASE THE IMPROVED PASS"
-
-msgid "battlePassBuyView/confirmAnyNumber/descr"
-msgstr ""
-"By purchasing Progression Stages, you will instantly receive all rewards for"
-" each purchased Stage."
-
-msgid "battlePassBuyView/confirmAnyNumber/moreRewards"
-msgstr "Next rewards: %(count)s"
-
-msgid "battlePassBuyView/confirmAnyNumber/title"
-msgstr "STAGE PURCHASE"
-
 msgid "battlePassBuyView/descr"
-msgstr "Unlock Improved Rewards for completed Stages."
-
-msgid "battlePassBuyView/levelsSelected"
-msgstr "Selected Stages:"
-
-msgid "battlePassBuyView/price"
-msgstr "Purchase price:"
-
-msgid "battlePassBuyView/priceDivider"
-msgstr "or"
-
-msgid "battlePassBuyView/reward/chapter"
-msgstr "CHAPTER %(chapterName)s"
+msgstr ""
+"Purchasing a Progression Stage instantly unlocks and grants you all rewards "
+"included in that Stage."
 
 msgid "battlePassBuyView/reward/descriptionFutureRewards"
 msgstr ""
@@ -397,31 +283,11 @@ msgstr "You will receive the following rewards immediately"
 msgid "battlePassBuyView/reward/descriptionNowRewardsSingle"
 msgstr "The following rewards will be granted to you for Stage %(steps)s"
 
-msgid "battlePassBuyView/reward/subtitle"
-msgid_plural "plural/battlePassBuyView/reward/subtitle"
-msgstr[0] "and {cream_Open}%(levels)s{cream_Close} Stage"
-msgstr[1] "and {cream_Open}%(levels)s{cream_Close} Stages"
-msgstr[2] "and {cream_Open}%(levels)s{cream_Close} Stages"
-
-msgid "battlePassBuyView/reward/titleBattlePass"
-msgstr "IMPROVED PASS REWARDS"
-
 msgid "battlePassBuyView/reward/titleFutureRewards"
 msgstr "WILL BE UNLOCKED"
 
-msgid "battlePassBuyView/reward/titleLevels"
-msgstr "REWARDS FOR %(levels)s STAGE(S)"
-
 msgid "battlePassBuyView/reward/titleNowRewards"
 msgstr "WILL BE RECEIVED IMMEDIATELY"
-
-msgid "battlePassBuyView/subTitle"
-msgstr ""
-"The Improved Pass allows you to receive rewards from the second Reward "
-"Track."
-
-msgid "battlePassBuyView/title"
-msgstr "IMPROVED PASS PURCHASING"
 
 msgid "battlePassStatus/activateChapter"
 msgstr "Activate the Battle Pass Chapter"
@@ -453,17 +319,17 @@ msgstr "Carmen de Bisonte"
 msgid "chapter/fullName/1114"
 msgstr "Carmen de Bisonte"
 
-msgid "chapter/fullName/190"
+msgid "chapter/fullName/200"
 msgstr "Elite Circuit"
 
-msgid "chapter/fullName/191"
-msgstr "The Inheritor"
+msgid "chapter/fullName/201"
+msgstr "Buried Time"
 
-msgid "chapter/fullName/192"
-msgstr "The Specialist"
+msgid "chapter/fullName/202"
+msgstr "C'est Notre Destin"
 
-msgid "chapter/fullName/193"
-msgstr "The Scout"
+msgid "chapter/fullName/203"
+msgstr "Desert Command"
 
 msgid "chapter/fullNameUppercased/10021"
 msgstr "CARMEN DE BISONTE"
@@ -471,14 +337,14 @@ msgstr "CARMEN DE BISONTE"
 msgid "chapter/fullNameUppercased/1114"
 msgstr "CARMEN DE BISONTE"
 
-msgid "chapter/fullNameUppercased/191"
-msgstr "THE INHERITOR"
+msgid "chapter/fullNameUppercased/201"
+msgstr "BURIED TIME"
 
-msgid "chapter/fullNameUppercased/192"
-msgstr "THE SPECIALIST"
+msgid "chapter/fullNameUppercased/202"
+msgstr "C'EST NOTRE DESTIN"
 
-msgid "chapter/fullNameUppercased/193"
-msgstr "THE SCOUT"
+msgid "chapter/fullNameUppercased/203"
+msgstr "DESERT COMMAND"
 
 msgid "chapter/title"
 msgstr "CHAPTER %(chapter)s"
@@ -577,9 +443,6 @@ msgstr "Elite Circuit"
 msgid "chapterChoice/postprogression/unlocked/cycle"
 msgstr "Cycle %(cycle)s"
 
-msgid "chapterChoice/premiumVehicle/reward"
-msgstr "Premium Vehicle"
-
 msgid "chapterChoice/stages/additional"
 msgstr " / %(level)s Stages"
 
@@ -652,38 +515,6 @@ msgstr "Mission for ×3 Crew XP"
 msgid "equipCoinBonus"
 msgstr "Components: %(count)s"
 
-msgid "extraIntroView/confirmLabel"
-msgstr "Affirmative!"
-
-msgid "extraIntroView/freeProgression"
-msgstr "BASE REWARDS"
-
-msgid "extraIntroView/freeProgressionDescription"
-msgstr ""
-"Participate in battles, earn Battle Pass Points, and complete Stages of this"
-" Chapter after activating it at any time. You will receive rewards for each "
-"Stage."
-
-msgid "extraIntroView/premium3dStyleVechicle"
-msgstr "3D STYLE"
-
-msgid "extraIntroView/premiumProgression"
-msgstr "IMPROVED REWARDS"
-
-msgid "extraIntroView/premiumProgressionDescription"
-msgstr ""
-"This Reward Track is available only after purchasing the Improved Pass. You "
-"will also be able to receive the %(vehicleName)s and the %(styleName)s 3D "
-"style by completing some of the Stages and then purchasing the missing ones."
-
-msgid "extraIntroView/title"
-msgstr "QUEEN OF THE NIGHT"
-
-msgid "extraIntroView/titleDescription"
-msgstr ""
-"A game event, the main reward for which is the %(vehicleName)s and its "
-"unique 3D style."
-
 msgid "finalReward/tankman/roles/commander"
 msgstr "Commander"
 
@@ -745,11 +576,14 @@ msgstr "Listen to Voiceovers"
 msgid "holidayFinalScreen/tankmenState/title"
 msgstr "Collect All Crew Members!"
 
+msgid "howToEarnPoints/battleRoyal/platoon"
+msgstr "In Platoon"
+
+msgid "howToEarnPoints/battleRoyal/solo"
+msgstr "Solo"
+
 msgid "howToEarnPoints/battleTypeTitle/1"
 msgstr "Random Battle"
-
-msgid "howToEarnPoints/battleTypeTitle/22"
-msgstr "Ranked Battle"
 
 msgid "howToEarnPoints/battleTypeTitle/27"
 msgstr "Frontline"
@@ -788,10 +622,10 @@ msgid "howToEarnPoints/card/comp7Light/title"
 msgstr "Daily Missions"
 
 msgid "howToEarnPoints/card/daily/linkText"
-msgstr "Go to Missions"
+msgstr "View Missions"
 
 msgid "howToEarnPoints/card/daily/text"
-msgstr "Daily missions can be completed in vehicles of any tier."
+msgstr "Earn even more points by completing daily missions."
 
 msgid "howToEarnPoints/card/daily/title"
 msgstr "Daily Missions"
@@ -805,10 +639,10 @@ msgstr "Reward for Frontline Tiers"
 
 msgid "howToEarnPoints/card/limitPoints/text"
 msgstr ""
-"Upon reaching the vehicle Point Limit, you will receive additional Points."
+"Each vehicle has a point limit. Reach this limit to earn extra points."
 
 msgid "howToEarnPoints/card/limitPoints/title"
-msgstr "Reward for Point Limit"
+msgstr "Point Limit Reward"
 
 msgid "howToEarnPoints/card/specialVehicle/text"
 msgstr ""
@@ -818,51 +652,60 @@ msgstr ""
 msgid "howToEarnPoints/card/specialVehicle/title"
 msgstr "Season Core Vehicles"
 
+msgid "howToEarnPoints/condition/43"
+msgstr "By Prestige Points"
+
+msgid "howToEarnPoints/condition/49"
+msgstr "By Prestige Points"
+
+msgid "howToEarnPoints/condition/default"
+msgstr "Result by XP"
+
 msgid "howToEarnPoints/conditions"
-msgstr "{{icon}}Earning Conditions"
+msgstr "Earning Conditions"
 
 msgid "howToEarnPoints/description"
 msgstr ""
-"Battle Pass Points allow you to sequentially complete Stages. They can be "
-"earned in Random Battles and other modes that are active during Battle Pass,"
-" for completing missions and daily missions, as well as for reaching a "
-"vehicle's Point Limit."
+"Progress through Chapters and collect rewards by earning Battle Pass Points "
+"from different modes:"
 
 msgid "howToEarnPoints/earned"
 msgstr "{{icon}}"
 
-msgid "howToEarnPoints/lose/1"
-msgstr "Defeat and Draw"
+msgid "howToEarnPoints/extraPoints"
+msgstr "Extra Points"
 
-msgid "howToEarnPoints/lose/22"
-msgstr "Defeat and Draw"
+msgid "howToEarnPoints/lose/1"
+msgstr "Defeat / Draw"
 
 msgid "howToEarnPoints/lose/27"
 msgstr "Defeat"
 
 msgid "howToEarnPoints/lose/43"
-msgstr "Defeat and Draw"
+msgstr "Defeat / Draw"
 
 msgid "howToEarnPoints/lose/49"
-msgstr "Defeat and Draw"
+msgstr "Defeat / Draw"
 
 msgid "howToEarnPoints/plusBanner/line1"
-msgstr ""
-"{{@ style (color $color)}}Battle Pass Plus:{{/}} Available with {{link}}"
+msgstr "With %(link)s, earn more points"
 
 msgid "howToEarnPoints/plusBanner/line2"
-msgstr "Earn more Battle Pass Points (excluding Special Chapters)."
+msgstr "for all regular Chapters."
 
 msgid "howToEarnPoints/plusBanner/link"
 msgstr "WoT Plus Pro"
 
+msgid "howToEarnPoints/points"
+msgstr "Points"
+
 msgid "howToEarnPoints/rangeLevels/29"
 msgstr "Positions %(startLevel)d–%(endLevel)d"
 
-msgid "howToEarnPoints/rating/1"
-msgstr "Top %(level)d by XP"
+msgid "howToEarnPoints/rating"
+msgstr "Top %(place)d"
 
-msgid "howToEarnPoints/rating/22"
+msgid "howToEarnPoints/rating/1"
 msgstr "Top %(level)d by XP"
 
 msgid "howToEarnPoints/rating/27"
@@ -887,30 +730,30 @@ msgid "howToEarnPoints/squad/29"
 msgstr "Platoon Playing"
 
 msgid "howToEarnPoints/text/1"
-msgstr "Fight in Tier %(startLevel)s–%(endLevel)s vehicles"
-
-msgid "howToEarnPoints/text/22"
-msgstr "Fight in Tier %(level)s vehicles"
+msgstr "Tiers %(startLevel)s–%(endLevel)s"
 
 msgid "howToEarnPoints/text/27"
-msgstr "Fight in Tier %(level)s vehicles"
+msgstr "Tier %(level)s"
 
 msgid "howToEarnPoints/text/29"
-msgstr "Fight in special vehicles for this mode"
+msgstr "Special vehicles"
 
 msgid "howToEarnPoints/text/43"
-msgstr "Fight in Tier %(level)s vehicles"
+msgstr "Tier %(level)s"
 
 msgid "howToEarnPoints/text/49"
-msgstr "Fight in Tier %(level)s vehicles"
+msgstr "Tier %(level)s"
 
 msgid "howToEarnPoints/title"
-msgstr "HOW TO EARN POINTS"
+msgstr "How to Earn Points"
+
+msgid "howToEarnPoints/vehicle"
+msgstr "Vehicle"
+
+msgid "howToEarnPoints/vehicles"
+msgstr "Special Vehicles"
 
 msgid "howToEarnPoints/win/1"
-msgstr "Victory"
-
-msgid "howToEarnPoints/win/22"
 msgstr "Victory"
 
 msgid "howToEarnPoints/win/27"
@@ -922,11 +765,11 @@ msgstr "Victory"
 msgid "howToEarnPoints/win/49"
 msgstr "Victory"
 
-msgid "intro/aboutButton"
-msgstr "ABOUT BATTLE PASS"
-
-msgid "intro/button"
+msgid "intro/affirmative/button"
 msgstr "Affirmative!"
+
+msgid "intro/next/button"
+msgstr "Next"
 
 msgid "intro/seasonDescription/text"
 msgstr ""
@@ -935,7 +778,7 @@ msgstr ""
 "AMX&nbsp;50&nbsp;B."
 
 msgid "intro/seasonDescription/title"
-msgstr "NEW THEMED 3D STYLES"
+msgstr "New Themed 3D Styles"
 
 msgid "intro/title"
 msgstr "SEASON XVIII: PATH TO PERFECTION"
@@ -972,6 +815,9 @@ msgstr "BATTLE PASS ELITE CIRCUIT"
 
 msgid "navigation/progression"
 msgstr "BATTLE PASS CHAPTER"
+
+msgid "navigation/tankmenScreen"
+msgstr "UNIQUE CREW MEMBERS"
 
 msgid "points/top"
 msgstr "%(vehicle): %(bonus) for %(top) by XP."
@@ -1234,6 +1080,9 @@ msgstr "inactive"
 msgid "progression/header/paused"
 msgstr "paused"
 
+msgid "progression/howToEarnPoints/title"
+msgstr "HOW TO EARN POINTS"
+
 msgid "progression/pausedStep"
 msgstr "Stage"
 
@@ -1373,14 +1222,14 @@ msgstr "BATTLE PASS: %(chapter)s CHAPTER, STAGE %(level)s"
 msgid "season/fullName/1002"
 msgstr "Carmen de Bisonte"
 
-msgid "season/fullName/19"
-msgstr "Operation Borealis"
+msgid "season/fullName/20"
+msgstr "Searching the Sands"
 
 msgid "season/fullNameUppercased/1002"
 msgstr "CARMEN DE BISONTE"
 
-msgid "season/fullNameUppercased/19"
-msgstr "OPERATION BOREALIS"
+msgid "season/fullNameUppercased/20"
+msgstr "SEARCHING THE SANDS"
 
 msgid "selectBonus/battle_booster_gift"
 msgstr "Directives to Select From"
@@ -1430,48 +1279,26 @@ msgstr "New Level of the %(styleName)s style"
 msgid "styleProgression/newStyle"
 msgstr "First Level of the %(styleName)s style"
 
-msgid "tankmenVoiceover/availableInQuestChain"
-msgstr "Will be received for completing tasks"
-
-msgid "tankmenVoiceover/button"
-msgstr "Affirmative!"
-
-msgid "tankmenVoiceover/close"
-msgstr "CLOSE"
-
-msgid "tankmenVoiceover/description"
-msgstr "All crew members have enough Crew XP to train three perks to 100%."
-
-msgid "tankmenVoiceover/free"
-msgstr ""
-"In basic rewards\n"
-" at stage %(progressNumber)s"
+msgid "tankmenVoiceover/chapterButton"
+msgstr "To the Chapter"
 
 msgid "tankmenVoiceover/inShop"
-msgstr "Part of the bundle"
+msgstr "In a special bundle"
+
+msgid "tankmenVoiceover/listen"
+msgstr "Listen"
 
 msgid "tankmenVoiceover/notFull"
-msgstr "%(availableCount)s of %(count)s still available"
+msgstr "Available %(availableCount)s of %(count)s"
 
-msgid "tankmenVoiceover/paid"
-msgstr ""
-"In improved rewards\n"
-" at stage %(progressNumber)s"
-
-msgid "tankmenVoiceover/questChain"
-msgstr "In a chain of combat missions"
+msgid "tankmenVoiceover/progression"
+msgstr "At Progression Stage %(progressionLevel)s"
 
 msgid "tankmenVoiceover/received"
 msgstr "Received"
 
 msgid "tankmenVoiceover/shopButton"
-msgstr "View in the Store"
-
-msgid "tankmenVoiceover/soundOn"
-msgstr "Play"
-
-msgid "tankmenVoiceover/subtitle"
-msgstr "BATTLE PASS"
+msgstr "To the Shop"
 
 msgid "tankmenVoiceover/title"
 msgstr "UNIQUE CREW MEMBERS"
@@ -1898,10 +1725,18 @@ msgstr ""
 msgid "tooltips/progression/freePoints/header"
 msgstr "Unspent Battle Pass Points"
 
-msgid "tooltips/secondaryEntryPoint/disabled/22"
+msgid "tooltips/rewardCompensation/description/credits"
 msgstr ""
-"Battle Pass is temporarily unavailable in Ranked Battles for technical reasons.\n"
-"All progress will be saved. We apologize for the inconvenience."
+"The main in-game currency.\n"
+"Earned in battles or purchased with gold."
+
+msgid "tooltips/rewardCompensation/description/gold"
+msgstr ""
+"A valuable in-game currency. You can use it to purchase WoT Premium Account,"
+" vehicles, or convert experience, etc."
+
+msgid "tooltips/rewardCompensation/footer"
+msgstr "Compensation for an item you already have."
 
 msgid "tooltips/styleUpgrade/chosen/levelWord"
 msgstr "Level"

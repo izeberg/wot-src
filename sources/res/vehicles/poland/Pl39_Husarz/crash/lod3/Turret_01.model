@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/poland/Pl39_Husarz/crash/lod3/Turret_01</nodefullVisual>
+	<parent>vehicles/poland/Pl39_Husarz/crash/lod4/Turret_01</parent>
+	<extent>192.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.463455 -0.000061 -2.631463</min>
+		<max>1.469760 5.175243 1.707978</max>
+	</visibilityBox>
+</root>

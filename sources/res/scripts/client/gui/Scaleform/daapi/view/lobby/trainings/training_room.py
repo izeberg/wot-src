@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from constants import PREBATTLE_TYPE
 from gui.Scaleform.daapi.view.lobby.trainings.TrainingRoomBase import TrainingRoomBase
 from gui.Scaleform.framework.managers.loaders import SFViewLoadParams

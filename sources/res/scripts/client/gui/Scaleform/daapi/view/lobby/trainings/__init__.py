@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from frameworks.wulf import WindowLayer
 from gui.Scaleform.framework import ViewSettings
 from gui.Scaleform.framework import GroupedViewSettings, ScopeTemplates

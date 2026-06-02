@@ -1,5 +1,8 @@
-from types import *
-import zlib, cPickle
+from __future__ import absolute_import
+import zlib
+from copy import copy
+from future.moves import pickle
+from struct import pack, unpack
 
 def _iterDict__skip(x, skip=set()):
     a = list(x.items())
@@ -134,7 +137,7 @@ def convert(x):
     iterator = t2sort.get(type(x), True)
     if iterator is True:
         return x
-    ret = tuple([ convert(i) for i in iterator(x) ])
+    ret = tuple(convert(i) for i in iterator(x))
     return ret
 
 
@@ -142,16 +145,16 @@ def convert__skip(x, skip=set()):
     iterator = t2sort__skip.get(type(x), True)
     if iterator is True:
         return x
-    ret = tuple([ convert(i) for i in iterator(x, skip) ])
+    ret = tuple(convert(i) for i in iterator(x, skip))
     return ret
 
 
 def livehashA(x):
-    return hash(tuple([ i for i in iterAny(x) ]))
+    return hash(tuple(iterAny(x)))
 
 
 def livehashA__skip(x, skip=set()):
-    return hash(tuple([ i for i in iterAny__skip(x, skip) ]))
+    return hash(tuple(iterAny__skip(x, skip)))
 
 
 def livehashC(x):
@@ -166,14 +169,14 @@ def livehash1(x):
     iterator = t2sort.get(type(x), True)
     if iterator is True:
         return hash(x)
-    return hash(tuple([ livehash1(i) for i in iterator(x) ]))
+    return hash(tuple(livehash1(i) for i in iterator(x)))
 
 
 def livehash1__skip(x, skip=set()):
     iterator = t2sort__skip.get(type(x), True)
     if iterator is True:
         return hash(x)
-    return hash(tuple([ livehash1(i) for i in iterator(x, skip) ]))
+    return hash(tuple(livehash1(i) for i in iterator(x, skip)))
 
 
 def livehash1_combine(*args):
@@ -181,14 +184,12 @@ def livehash1_combine(*args):
 
 
 def livehashZ(x):
-    return zlib.adler32(cPickle.dumps(convert(x), -1))
+    return zlib.adler32(pickle.dumps(convert(x), -1))
 
 
 def livehashZ__skip(x, skip=set()):
-    return zlib.adler32(cPickle.dumps(convert__skip(x, skip), -1))
+    return zlib.adler32(pickle.dumps(convert__skip(x, skip), -1))
 
-
-from struct import pack, unpack
 
 def adler32_combine(*sums):
     a, b = (0, 1)
@@ -217,7 +218,7 @@ def convert2(x):
     iterator = t2hashable.get(type(x), True)
     if iterator is True:
         return x
-    return tuple([ livehash2(i) for i in iterator(x) ])
+    return tuple(livehash2(i) for i in iterator(x))
 
 
 def livehash2(x):
@@ -228,7 +229,7 @@ def livehash2i(x):
     iterator = t2hashable.get(type(x), True)
     if iterator is True:
         return x
-    return hash(tuple([ livehash2i(i) for i in iterator(x) ]))
+    return hash(tuple(livehash2i(i) for i in iterator(x)))
 
 
 livehash = livehashZ
@@ -245,7 +246,7 @@ def livehash__skipDeep_fn1(skip={}):
     skipNextLevel = []
     for x in skip.items():
         skipThisLevel.add(x[0])
-        if isinstance(x[1], dict) or isinstance(x[1], set):
+        if isinstance(x[1], (dict, set)):
             skipNextLevel.append((x[0], livehash__skipDeep_fn(x[1])))
 
     return lambda data: livehash_combine(livehash__skip(data, skipThisLevel), *[ fn(data[k]) if k in data else livehash_emptyVal for k, fn in skipNextLevel
@@ -278,7 +279,7 @@ def __split_use(use):
             continue
         excludeThisLevel.add(x[0])
         includeThisLevel.discard(x[0])
-        if isinstance(x[1], dict) or isinstance(x[1], set):
+        if isinstance(x[1], (dict, set)):
             useNextLevel.append(x)
 
     return (
@@ -392,8 +393,6 @@ Parse error at or near `None' instruction at offset -1
         return livehash
 
 
-from copy import copy
-
 def gen_delSubkeys_fn(use={}):
     if not use:
         return lambda data: data
@@ -473,7 +472,7 @@ def gen_mergeCache_fn(overwrite=False):
     if overwrite:
 
         def _mergeAll_overwrite(data, cache):
-            if isinstance(data, set) and (isinstance(cache, set) or isinstance(cache, frozenset)):
+            if isinstance(data, set) and isinstance(cache, (frozenset, set)):
                 data.update(cache)
                 return data
             if not isinstance(data, dict) or not isinstance(cache, dict):

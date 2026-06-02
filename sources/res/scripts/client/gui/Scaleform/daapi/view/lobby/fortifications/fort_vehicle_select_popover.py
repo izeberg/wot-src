@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from constants import QUEUE_TYPE
 from gui import makeHtmlString
 from gui.Scaleform import MENU

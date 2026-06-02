@@ -12,11 +12,6 @@
 			<UUID>91f22749-9254-4b93-9719-aa43781c10e8</UUID>
 			<flags>0</flags>
 		</GameObject>
-		<GameObject>
-			<name>normal</name>
-			<UUID>ba647570-0a5a-4dbb-8ac8-610a58dcb7d8</UUID>
-			<flags>8</flags>
-		</GameObject>
 	</GameObjects>
 	<components>
 		<ComponentPool>
@@ -24,16 +19,6 @@
 			<version>2</version>
 			<component>
 				<UUID>91f22749-9254-4b93-9719-aa43781c10e8</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Parent</name>
-						<link>ba647570-0a5a-4dbb-8ac8-610a58dcb7d8</link>
-					</property>
-				</config>
-			</component>
-			<component>
-				<UUID>ba647570-0a5a-4dbb-8ac8-610a58dcb7d8</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -79,50 +64,6 @@
 					<property>
 						<name>Rotation</name>
 						<value>-0 0 0</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<UUID>ba647570-0a5a-4dbb-8ac8-610a58dcb7d8</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Position</name>
-						<value>0 0 0</value>
-					</property>
-					<property>
-						<name>Scale</name>
-						<value>1 1 1</value>
-					</property>
-					<property>
-						<name>Rotation</name>
-						<value>0 0 0</value>
-					</property>
-				</config>
-			</component>
-		</ComponentPool>
-		<ComponentPool>
-			<type>BW::StateSwitcherComponent</type>
-			<version>1</version>
-			<component>
-				<UUID>39e470dd-a61d-4270-a15e-616ca022c5a4</UUID>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>normal</name>
-						<link>ba647570-0a5a-4dbb-8ac8-610a58dcb7d8</link>
-					</property>
-					<property>
-						<name>damaged</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
-					</property>
-					<property>
-						<name>critical</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
-					</property>
-					<property>
-						<name>previewState</name>
-						<value>1</value>
 					</property>
 				</config>
 			</component>
@@ -221,21 +162,23 @@
 						<name>Cast Shadows</name>
 						<value>1</value>
 					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
+					</property>
 				</config>
 			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>VehicleHealthObserverComponent</type>
+			<type>BW::VisibilityTunnelComponent</type>
 			<version>1</version>
 			<component>
-				<UUID>39e470dd-a61d-4270-a15e-616ca022c5a4</UUID>
+				<UUID>91f22749-9254-4b93-9719-aa43781c10e8</UUID>
 				<flags>3</flags>
-				<config>
-					<property>
-						<name>state</name>
-						<value>1</value>
-					</property>
-				</config>
 			</component>
 		</ComponentPool>
 	</components>

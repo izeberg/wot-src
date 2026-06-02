@@ -11,10 +11,10 @@
 		<node>
 			<identifier>joint_root</identifier>
 			<transform>
-				<row0>0.000000 0.409056 0.912509</row0>
+				<row0>-0.000000 0.409056 0.912509</row0>
 				<row1>-0.000000 0.912509 -0.409056</row1>
 				<row2>-1.000000 -0.000000 0.000000</row2>
-				<row3>0.000000 0.149701 0.000000</row3>
+				<row3>0.000000 0.131737 0.000000</row3>
 			</transform>
 			<node>
 				<identifier>joint_mid</identifier>
@@ -22,7 +22,7 @@
 					<row0>-0.042216 0.999108 0.000000</row0>
 					<row1>0.999108 0.042216 -0.000000</row1>
 					<row2>-0.000000 -0.000000 -1.000000</row2>
-					<row3>0.126631 -0.005986 0.000000</row3>
+					<row3>0.111435 -0.005267 0.000000</row3>
 				</transform>
 				<node>
 					<identifier>joint_body</identifier>
@@ -30,7 +30,7 @@
 						<row0>0.000000 0.000000 1.000000</row0>
 						<row1>0.894427 0.447214 -0.000000</row1>
 						<row2>-0.447214 0.894427 0.000000</row2>
-						<row3>0.264346 0.011184 0.000000</row3>
+						<row3>0.232625 0.009842 0.000000</row3>
 					</transform>
 					<node>
 						<identifier>joint_body_BlendBone</identifier>
@@ -38,7 +38,7 @@
 							<row0>1.000000 -0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 -0.000000</row1>
 							<row2>0.000000 -0.000000 -1.000000</row2>
-							<row3>-0.000000 -0.437478 -0.009784</row3>
+							<row3>0.000000 -0.384981 -0.008610</row3>
 						</transform>
 					</node>
 				</node>
@@ -48,17 +48,17 @@
 						<row0>-0.000000 0.000000 1.000000</row0>
 						<row1>0.894427 0.447214 0.000000</row1>
 						<row2>0.447214 -0.894427 0.000000</row2>
-						<row3>-0.122570 -0.193214 0.000000</row3>
+						<row3>-0.107862 -0.170028 0.000000</row3>
 					</transform>
 				</node>
 			</node>
 			<node>
 				<identifier>joint_root_BlendBone</identifier>
 				<transform>
-					<row0>0.000000 -0.000000 -1.000000</row0>
+					<row0>-0.000000 -0.000000 -1.000000</row0>
 					<row1>0.409056 0.912509 -0.000000</row1>
 					<row2>-0.912509 0.409056 -0.000000</row2>
-					<row3>-0.061236 -0.136604 0.000000</row3>
+					<row3>-0.053888 -0.120211 0.000000</row3>
 				</transform>
 			</node>
 		</node>
@@ -95,14 +95,14 @@
 						<Texture>content/3D_Customization/Cus_94_WT_Electricgun/Cus_94_WT_Electricgun_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.019267 0.235749 -0.299387</groupOrigin>
+				<groupOrigin>-0.016955 0.245459 -0.263460</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-0.162533 -0.200000 -0.382862</min>
-		<max>0.129727 0.671499 0.981635</max>
+		<min>-0.143029 -0.100000 -0.336918</min>
+		<max>0.114160 0.590919 0.863838</max>
 	</boundingBox>
-	<geometrySize>68696</geometrySize>
+	<geometrySize>68296</geometrySize>
 </root>

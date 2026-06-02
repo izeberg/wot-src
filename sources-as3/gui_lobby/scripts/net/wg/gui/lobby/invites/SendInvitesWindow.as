@@ -62,6 +62,10 @@ package net.wg.gui.lobby.invites
       
       private static const TREE_HEIGHT:uint = 458;
       
+      private static const BTNS_SMALL_GAP:uint = 10;
+      
+      private static const BTNS_BIG_GAP:uint = 32;
+      
       private static const DB_ID:String = "dbID";
       
       private static const USER_PROPS:String = "userProps";
@@ -311,20 +315,18 @@ package net.wg.gui.lobby.invites
          this.removeUserButton.iconSource = RES_ICONS.MAPS_ICONS_BUTTONS_ICON_ARROW_FORMATION_LEFT;
          this.removeAllUsersButton.iconSource = RES_ICONS.MAPS_ICONS_BUTTONS_ICON_ARROW_FORMATION_LEFT_DOUBLE;
          var _loc2_:uint = this.addUserButton.height;
-         var _loc3_:uint = 10;
-         var _loc4_:uint = 32;
-         this.addAllUsersButton.y = this.vSeparatorRight.height - ((_loc2_ >> 2) + (_loc3_ >> 1) + _loc4_) >> 1;
-         this.addUserButton.y = this.addAllUsersButton.y + _loc2_ + _loc3_;
-         this.removeUserButton.y = this.addUserButton.y + _loc2_ + _loc4_;
-         this.removeAllUsersButton.y = this.removeUserButton.y + _loc2_ + _loc3_;
-         var _loc5_:uint = TREE_HEIGHT - ContactsShared.BOTTOM_CTRLS_PADDING - this.externalSearchButton.height;
+         this.addAllUsersButton.y = this.vSeparatorRight.height - ((_loc2_ >> 2) + (BTNS_SMALL_GAP >> 1) + BTNS_BIG_GAP) >> 1;
+         this.addUserButton.y = this.addAllUsersButton.y + _loc2_ + BTNS_SMALL_GAP;
+         this.removeUserButton.y = this.addUserButton.y + _loc2_ + BTNS_BIG_GAP;
+         this.removeAllUsersButton.y = this.removeUserButton.y + _loc2_ + BTNS_SMALL_GAP;
+         var _loc3_:uint = TREE_HEIGHT - ContactsShared.BOTTOM_CTRLS_PADDING - this.externalSearchButton.height;
          this.externalSearchButton.addEventListener(ButtonEvent.CLICK,this.onExternalSearchButtonClickHandler,false,0,true);
-         this.externalSearchButton.y = _loc5_;
+         this.externalSearchButton.y = _loc3_;
          this.externalSearchButton.x = this.treeComponent.x + this.treeComponent.width - this.externalSearchButton.width >> 1;
          this.externalSearchButton.label = MESSENGER.MESSENGER_CONTACTS_BUTTONS_EXTERNALSEARCH;
          this.externalSearchButton.tooltip = MESSENGER.CONTACTS_TOOLTIPS_BTNS_EXTERNALSEARCH;
          this.bottomTreeLip.mouseEnabled = this.bottomTreeLip.mouseChildren = false;
-         this.bottomTreeLip.y = _loc5_ + (this.bottomTreeLip.height >> 1) - ContactsShared.CONTROLS_PADDING;
+         this.bottomTreeLip.y = _loc3_ + (this.bottomTreeLip.height >> 1) - ContactsShared.CONTROLS_PADDING;
          this.checkExternalSearchControlsEnabling();
          invalidate(UPDATE_DEFAULT_POSITION);
       }
@@ -335,11 +337,10 @@ package net.wg.gui.lobby.invites
          this.updateFocus();
       }
       
-      override protected function onDispose() : void
+      override protected function onBeforeDispose() : void
       {
+         super.onBeforeDispose();
          App.utils.scheduler.cancelTask(this.onEndSendInvitesCooldown);
-         this._invalidUserTags = null;
-         this.disposeDragController();
          this.externalSearchButton.removeEventListener(ButtonEvent.CLICK,this.onExternalSearchButtonClickHandler);
          this.treeComponent.removeEventListener(FocusRequestEvent.REQUEST_FOCUS,this.onTreeComponentRequestFocusHandler);
          this.treeComponent.removeEventListener(ContactsTreeEvent.MODE_CHANGED,this.onTreeComponentModeChangedHandler);
@@ -351,11 +352,6 @@ package net.wg.gui.lobby.invites
          this.treeComponent = null;
          this._receiverData.removeEventListener(Event.CHANGE,this.onReceiverDataChangeHandler);
          this.onlineCheckBox.removeEventListener(ButtonEvent.CLICK,this.onOnlineCheckBoxClickHandler);
-         if(!this.onlineCheckBox.isDisposed())
-         {
-            this.onlineCheckBox.dispose();
-         }
-         this.onlineCheckBox = null;
          this.cancelButton.removeEventListener(ButtonEvent.CLICK,this.onCancelButtonClickHandler);
          App.utils.scheduler.cancelTask(this.updateFocus);
          this.sendButton.removeEventListener(ButtonEvent.CLICK,this.onSendButtonClickHandler);
@@ -369,6 +365,17 @@ package net.wg.gui.lobby.invites
          this.addUserButton.removeEventListener(ButtonEvent.CLICK,this.onAddUserButtonClickHandler);
          this.removeUserButton.removeEventListener(ButtonEvent.CLICK,this.onRemoveUserButtonClickHandler);
          this.removeAllUsersButton.removeEventListener(ButtonEvent.CLICK,this.onRemoveAllUsersButtonClickHandler);
+      }
+      
+      override protected function onDispose() : void
+      {
+         this._invalidUserTags = null;
+         this.disposeDragController();
+         if(!this.onlineCheckBox.isDisposed())
+         {
+            this.onlineCheckBox.dispose();
+         }
+         this.onlineCheckBox = null;
          this.receiverList.dispose();
          this.receiverList = null;
          this.scrollBar.dispose();
@@ -702,6 +709,10 @@ package net.wg.gui.lobby.invites
       private function checkAddButtonEnabling(param1:Event = null) : void
       {
          var _loc3_:Object = null;
+         if(_baseDisposed)
+         {
+            return;
+         }
          var _loc2_:Boolean = !this._isUnderCoolDown && this.treeComponent.isTopLevelListHasContacts();
          if(_loc2_)
          {
@@ -867,14 +878,11 @@ package net.wg.gui.lobby.invites
                   _loc4_ = DB_ID;
                   break;
                }
-               if(this.isUserValid(_loc6_.userProps.tags))
+               if(this.isUserValid(_loc6_.userProps.tags) && !this.hasUserInReceiverList(_loc6_.dbID))
                {
-                  if(!this.hasUserInReceiverList(_loc6_.dbID))
-                  {
-                     _loc7_ = new ContactItemVO(_loc6_);
-                     this._createdContactItems.push(_loc7_);
-                     this._receiverData.push(_loc7_);
-                  }
+                  _loc7_ = new ContactItemVO(_loc6_);
+                  this._createdContactItems.push(_loc7_);
+                  this._receiverData.push(_loc7_);
                }
                _loc5_++;
             }

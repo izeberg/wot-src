@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from debug_utils import LOG_DEBUG
 from gui.Scaleform.daapi.view.meta.BaseRallyViewMeta import BaseRallyViewMeta
 from gui.prb_control.entities.base.cooldown import getPrbRequestCoolDown

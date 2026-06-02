@@ -1,5 +1,8 @@
+from __future__ import absolute_import
 import typing
+from future.utils import viewitems
 from battle_pass_common import BATTLE_PASS_SELECT_BONUS_NAME
+from gui.battle_pass.battle_pass_helpers import extractCompensationMoney
 from gui.server_events.bonuses import getNonQuestBonuses, mergeBonuses, splitBonuses
 from gui.battle_pass.bonuses_layout_controller import BonusesLayoutController
 from shared_utils import findFirst
@@ -8,7 +11,8 @@ if typing.TYPE_CHECKING:
 
 def awardsFactory(items, ctx=None):
     bonuses = []
-    for key, value in items.iteritems():
+    items = extractCompensationMoney(items)
+    for key, value in viewitems(items):
         bonuses.extend(getNonQuestBonuses(key, value, ctx))
 
     return bonuses
@@ -55,9 +59,9 @@ class BattlePassAwardsManager(object):
         for bonus in bonuses:
             if bonus.getName() == BATTLE_PASS_SELECT_BONUS_NAME:
                 result = {}
-                for key, value in bonus.getValue().iteritems():
+                for key, value in viewitems(bonus.getValue()):
                     splitKey = key.rsplit(':', 3)[0]
-                    newKey = findFirst(lambda x: x.startswith(splitKey), keys, key)
+                    newKey = findFirst(lambda x, sk=splitKey: x.startswith(sk), keys, key)
                     result[newKey] = value
                     if newKey not in keys:
                         keys.append(newKey)

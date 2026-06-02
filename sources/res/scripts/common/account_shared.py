@@ -1,9 +1,11 @@
-import collections, re
+from __future__ import absolute_import
+import collections, re, time
+from functools import total_ordering
 from constants import FairplayViolationType
 from items import vehicles, ITEM_TYPES
 from fairplay_violation_types import getViolationsByMask, FairplayViolations
 from items.components.c11n_constants import CustomizationType
-from debug_utils import *
+from debug_utils import LOG_CURRENT_EXCEPTION, LOG_ERROR
 from typing import Union, Tuple
 from soft_exception import SoftException
 
@@ -16,12 +18,14 @@ class AmmoIterator(object):
     def __iter__(self):
         return self
 
-    def next(self):
+    def __next__(self):
         if self.__idx >= len(self.__ammo):
             raise StopIteration
         idx = self.__idx
         self.__idx += 2
         return (abs(self.__ammo[idx]), self.__ammo[(idx + 1)])
+
+    next = __next__
 
 
 class LayoutIterator(object):
@@ -33,13 +37,15 @@ class LayoutIterator(object):
     def __iter__(self):
         return self
 
-    def next(self):
+    def __next__(self):
         if self.__idx >= len(self.__layout):
             raise StopIteration
         idx = self.__idx
         self.__idx += 2
         compDescr = self.__layout[idx]
         return (abs(compDescr), self.__layout[(idx + 1)], compDescr < 0)
+
+    next = __next__
 
 
 def getAmmoDiff(ammo1, ammo2):
@@ -150,6 +156,7 @@ def validateCustomizationItem(custData):
          True, c11nItem)
 
 
+@total_ordering
 class NotificationItem(object):
 
     def __init__(self, item):
@@ -167,7 +174,16 @@ class NotificationItem(object):
 
         self.asString = ('').join(cont)
 
-    def __cmp__(self, other):
+    def __hash__(self):
+        return hash(self.asString)
+
+    def __eq__(self, other):
+        return self.__compare(other) == 0
+
+    def __lt__(self, other):
+        return self.__compare(other) < 0
+
+    def __compare(self, other):
         if other is None:
             return 1
         else:
@@ -178,9 +194,6 @@ class NotificationItem(object):
             if left < right:
                 return -1
             return 1
-
-    def __hash__(self):
-        return hash(self.asString)
 
 
 _VERSION_REGEXP = re.compile('^([a-z]{2,4}_)?(([0-9]+\\.){2,4}[0-9]+)(_[0-9]+)?$')

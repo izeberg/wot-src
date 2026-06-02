@@ -59,12 +59,12 @@
 						<Float>0.550000</Float>
 					</property>
 				</material>
-				<groupOrigin>0.000000 0.081642 0.009359</groupOrigin>
+				<groupOrigin>0.000000 0.132228 0.009359</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.214317 -0.201307 -0.117391</min>
+		<min>-0.214317 -0.100136 -0.117391</min>
 		<max>0.214317 0.364592 0.136108</max>
 	</boundingBox>
 	<customBsp>true</customBsp>

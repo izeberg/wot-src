@@ -1,4 +1,7 @@
-import typing, BigWorld
+from __future__ import absolute_import
+import typing
+from future.utils import viewitems
+import BigWorld
 from account_helpers.telecom_rentals import TelecomRentals
 from arena_bonus_type_caps import ARENA_BONUS_TYPE_CAPS as _CAPS
 from gui.ClientUpdateManager import g_clientUpdateManager
@@ -59,7 +62,7 @@ class HangarCarouselDataProvider(CarouselDataProvider):
         return len(self._filteredIndices) - backItems - frontItems
 
     def getHiddenDynamicFilters(self):
-        return sorted(key for key, state in self._dynamicFiltersState.iteritems() if not state)
+        return sorted(key for key, state in viewitems(self._dynamicFiltersState) if not state)
 
     def clear(self):
         super(HangarCarouselDataProvider, self).clear()

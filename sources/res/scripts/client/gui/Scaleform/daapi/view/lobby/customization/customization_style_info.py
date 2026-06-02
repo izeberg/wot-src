@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from collections import namedtuple
 from CurrentVehicle import g_currentVehicle
 from gui import makeHtmlString
@@ -15,6 +16,7 @@ from gui.shared.gui_items import GUI_ITEM_TYPE
 from helpers import dependency
 from helpers.CallbackDelayer import CallbackDelayer
 from items.components.c11n_constants import SeasonType
+from math_common import round_py2_style
 from skeletons.gui.customization import ICustomizationService
 from skeletons.gui.shared import IItemsCache
 from vehicle_outfit.outfit import Area
@@ -241,10 +243,10 @@ class CustomizationStyleInfo(CustomizationStyleInfoMeta, CallbackDelayer):
         if not self.visible:
             return
         blurRect = (
-         round(x),
+         round_py2_style(x),
          0,
-         round(x + width),
-         round(height))
+         round_py2_style(x + width),
+         round_py2_style(height))
         if self.__blurRectId:
             self.__blur.changeRect(self.__blurRectId, blurRect)
         else:

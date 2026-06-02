@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from account_helpers.settings_core.ServerSettingsManager import UI_STORAGE_KEYS, ServerSettingsManager
 from gui.shared.gui_items import GUI_ITEM_TYPE

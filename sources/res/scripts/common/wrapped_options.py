@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from constants import IS_EDITOR
 if IS_EDITOR:
     from Options import setOptionString

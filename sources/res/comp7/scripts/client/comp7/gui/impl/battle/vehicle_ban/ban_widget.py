@@ -1,12 +1,13 @@
-import BigWorld
+import BigWorld, BattleReplay
 from PlayerEvents import g_playerEvents
-from comp7_core_constants import ArenaPrebattlePhase
-from comp7_core.gui.comp7_core_constants import BATTLE_CTRL_ID
-from comp7.gui.shared.event_dispatcher import showComp7VehicleBanWindow
+from ReplayEvents import g_replayEvents
 from comp7.gui.impl.battle.vehicle_ban.ban_helpers import fillComp7VehicleModel, getOwnDatabaseID
 from comp7.gui.impl.gen.view_models.views.battle.ban_widget_model import BanWidgetModel
 from comp7.gui.impl.gen.view_models.views.battle.banned_vehicle_model import BannedVehicleModel
 from comp7.gui.impl.gen.view_models.views.battle.enums import BanState, CandidateState
+from comp7.gui.shared.event_dispatcher import showComp7VehicleBanWindow
+from comp7_core.gui.comp7_core_constants import BATTLE_CTRL_ID
+from comp7_core_constants import ArenaPrebattlePhase
 from frameworks.wulf import ViewSettings
 from gui.impl.gen import R
 from gui.impl.pub import ViewImpl
@@ -53,6 +54,8 @@ class BanWidgetView(ViewImpl):
             vehicleBanCtrl.onCandidatesForBanUpdated += self.__updateData
             vehicleBanCtrl.onBanPhaseUpdated += self.__onBanPhaseUpdated
         g_playerEvents.onAvatarObserverVehicleChanged += self.__onAvatarObserverVehicleChanged
+        if BattleReplay.g_replayCtrl.isPlaying:
+            g_replayEvents.onTimeWarpFinish += self.__onReplayTimeWarpFinish
         return
 
     def __removeListeners(self):
@@ -64,6 +67,8 @@ class BanWidgetView(ViewImpl):
             vehicleBanCtrl.onCandidatesForBanUpdated -= self.__updateData
             vehicleBanCtrl.onBanPhaseUpdated -= self.__onBanPhaseUpdated
         g_playerEvents.onAvatarObserverVehicleChanged -= self.__onAvatarObserverVehicleChanged
+        if BattleReplay.g_replayCtrl.isPlaying:
+            g_replayEvents.onTimeWarpFinish -= self.__onReplayTimeWarpFinish
         return
 
     @replaceNoneKwargsModel
@@ -161,3 +166,6 @@ class BanWidgetView(ViewImpl):
     def __isVehicleBanEnabled(self):
         vehicleBanCtrl = self.__getVehicleBanCtrl()
         return vehicleBanCtrl is not None and vehicleBanCtrl.isVehicleBanEnabled
+
+    def __onReplayTimeWarpFinish(self):
+        self.__onBanPhaseUpdated()

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>nodes_01</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>static</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>red_card</identifier>
+					<transform>
+						<row0>0.823812 -0.566863 -0.000001</row0>
+						<row1>0.543750 0.790222 -0.282640</row1>
+						<row2>0.160219 0.232842 0.959226</row2>
+						<row3>0.078551 0.432310 -0.306935</row3>
+					</transform>
+					<node>
+						<identifier>red_card_BlendBone</identifier>
+						<transform>
+							<row0>0.823812 0.543750 0.160219</row0>
+							<row1>-0.566863 0.790222 0.232842</row1>
+							<row2>0.000001 0.282640 -0.959226</row2>
+							<row3>0.180349 -0.471085 0.181175</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>whistle</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.397217 -0.123992</row3>
+					</transform>
+					<node>
+						<identifier>whistle_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>0.000000 -0.397217 0.123992</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>yellow_card</identifier>
+					<transform>
+						<row0>0.955353 0.294617 0.022385</row0>
+						<row1>-0.266791 0.892715 -0.363157</row1>
+						<row2>-0.126976 0.340971 0.931459</row2>
+						<row3>-0.073202 0.447354 -0.342237</row3>
+					</transform>
+					<node>
+						<identifier>yellow_card_BlendBone</identifier>
+						<transform>
+							<row0>0.955353 -0.266791 -0.126976</row0>
+							<row1>0.294617 0.892715 0.340971</row1>
+							<row2>-0.022385 0.363157 -0.931459</row2>
+							<row3>-0.054204 -0.543175 0.156950</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>static_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>whistle_BlendBone</node>
+		<node>static_BlendBone</node>
+		<node>yellow_card_BlendBone</node>
+		<node>red_card_BlendBone</node>
+		<geometry>
+			<vertices>pasted__lod2_s0_polySurfaceShape1.vertices</vertices>
+			<primitive>pasted__lod2_s0_polySurfaceShape1.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>112</materialKind>
+					<property>
+						alphaReference
+						<Int>220</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/3D_Customization/Cus_220_FB26_Referee/Cus_220_FB26_Referee_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>content/3D_Customization/Cus_220_FB26_Referee/Cus_220_FB26_Referee_AO.dds</Texture>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>3.506000 3.506000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/3D_Customization/Cus_220_FB26_Referee/Cus_220_FB26_Referee_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/3D_Customization/Cus_220_FB26_Referee/Cus_220_FB26_Referee_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.016323 0.246922 0.062111</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-0.187346 -0.100116 -0.395254</min>
+		<max>0.219993 0.593960 0.271032</max>
+	</boundingBox>
+	<geometrySize>20006</geometrySize>
+</root>

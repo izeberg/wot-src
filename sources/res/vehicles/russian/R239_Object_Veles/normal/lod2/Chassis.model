@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/russian/R239_Object_Veles/normal/lod2/Chassis</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/russian/R239_Object_Veles/normal/lod3/Chassis</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.692128 -0.000947 -3.736885</min>
+		<max>1.696145 1.166298 3.674558</max>
+	</visibilityBox>
+</root>

@@ -8,24 +8,6 @@
 			<row2>0.000000 0.000000 1.000000</row2>
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
-		<node>
-			<identifier>nodes_01</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-			<node>
-				<identifier>HP_attachment</identifier>
-				<transform>
-					<row0>1.000000 0.000000 0.000000</row0>
-					<row1>0.000000 1.000000 0.000000</row1>
-					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 0.000000 0.000000</row3>
-				</transform>
-			</node>
-		</node>
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
@@ -38,8 +20,8 @@
 				<material>
 					<identifier>equipment</identifier>
 					<fx>shaders/std_effects/PBS_tank.fx</fx>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>0</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>112</materialKind>
 					<property>
 						diffuseMap
 						<Texture>content/3D_Customization/Cus_30_Mystic_Telescope/Mystic_Telescope_AM.dds</Texture>
@@ -57,13 +39,14 @@
 						<Texture>content/3D_Customization/Cus_30_Mystic_Telescope/Mystic_Telescope_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.041140 0.254834 -0.128960</groupOrigin>
+				<groupOrigin>-0.034141 0.241767 -0.107023</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.189778 -0.193549 -0.928483</min>
-		<max>0.107499 0.703216 0.670563</max>
+		<min>-0.200822 -0.100059 -0.799108</min>
+		<max>0.114050 0.599013 0.566718</max>
 	</boundingBox>
+	<customBsp>true</customBsp>
 	<geometrySize>10538</geometrySize>
 </root>

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.daapi.view.lobby.shared.cm_handlers import option, CMLabel, ContextMenu
 from gui.Scaleform.framework.entities.EventSystemEntity import EventSystemEntity
 from gui.shared import EVENT_BUS_SCOPE, events
@@ -8,15 +9,15 @@ from gui.shared.event_dispatcher import showSellDialog
 class ForSellCMHandler(ContextMenu, EventSystemEntity):
     __sqGen = SequenceIDGenerator()
 
-    @option(__sqGen.next(), CMLabel.INFORMATION)
+    @option(__sqGen.nextSequenceID, CMLabel.INFORMATION)
     def showInfo(self):
         shared_events.showStorageModuleInfo(self._id)
 
-    @option(__sqGen.next(), CMLabel.SELL)
+    @option(__sqGen.nextSequenceID, CMLabel.SELL)
     def sell(self):
         showSellDialog(self._id)
 
-    @option(__sqGen.next(), CMLabel.SALE_OPTION)
+    @option(__sqGen.nextSequenceID, CMLabel.SALE_OPTION)
     def switchSaleOption(self):
         self.fireEvent(events.StorageEvent(events.StorageEvent.SELECT_MODULE_FOR_SELL, ctx={'intCD': self._id}), scope=EVENT_BUS_SCOPE.LOBBY)
 

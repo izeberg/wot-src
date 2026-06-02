@@ -21,7 +21,7 @@
 				<material>
 					<identifier>s_nd1</identifier>
 					<fx>shaders/custom/vector_animation_2.fx</fx>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>112</materialKind>
 					<property>
 						destBlend
@@ -67,8 +67,12 @@
 						TintlColor
 						<Vector4>0.172549 1.000000 0.000000 1.000000</Vector4>
 					</property>
+					<property>
+						g_visibilityTunnelCompensation
+						<Float>2.500000</Float>
+					</property>
 				</material>
-				<groupOrigin>0.000000 0.000000 0.000050</groupOrigin>
+				<groupOrigin>0.000000 0.000000 0.000046</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				1
@@ -98,14 +102,14 @@
 						<Texture>content/3D_Customization/Cus_31_SP_Horseshoe/Cus_31_SP_Horseshoe_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.000174 0.000251 -0.000971</groupOrigin>
+				<groupOrigin>-0.000162 0.000235 -0.000908</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.077764 -0.077829 -0.009153</min>
-		<max>0.077764 0.077829 0.009252</max>
+		<min>-0.072709 -0.072770 -0.008558</min>
+		<max>0.072709 0.072770 0.008651</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>22632</geometrySize>
+	<geometrySize>23028</geometrySize>
 </root>

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import time
 
 class Int32IDGenerator(object):
@@ -6,7 +7,7 @@ class Int32IDGenerator(object):
         self.__nextID = 0
         self.__currID = 0
 
-    def next(self):
+    def __next__(self):
         self.__nextID += 1
         if self.__nextID > 65535:
             self.__nextID = 0
@@ -14,9 +15,7 @@ class Int32IDGenerator(object):
         self.__currID = ((currTime & 32767) << 16) + self.__nextID
         return self.__currID
 
-    def __next__(self):
-        return self.next()
-
+    next = __next__
     currSequenceID = property(lambda self: self.__currID)
 
 
@@ -27,11 +26,13 @@ class SequenceIDGenerator(object):
         self.__highBound = highBound
         self.__sequenceID = lowBound
 
-    def next(self):
+    def __next__(self):
         self.__sequenceID += 1
         if self.__sequenceID >= self.__highBound:
             self.__sequenceID = self.__lowBound
         return self.__sequenceID
+
+    next = __next__
 
     def max(self):
         return self.__highBound
@@ -40,4 +41,4 @@ class SequenceIDGenerator(object):
         self.__sequenceID = self.__lowBound
 
     currSequenceID = property(lambda self: self.__sequenceID)
-    nextSequenceID = property(lambda self: self.next())
+    nextSequenceID = property(next)

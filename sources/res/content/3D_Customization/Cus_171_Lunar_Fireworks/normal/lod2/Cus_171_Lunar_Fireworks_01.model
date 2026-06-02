@@ -3,9 +3,9 @@
 	<parent>content/3D_Customization/Cus_171_Lunar_Fireworks/normal/lod3/Cus_171_Lunar_Fireworks_01</parent>
 	<extent>96.000000</extent>
 	<visibilityBox>
-		<min>-0.206094 -0.200023 -0.287500</min>
-		<max>0.206094 0.765391 0.282020</max>
+		<min>-0.206094 -0.100023 -0.287500</min>
+		<max>0.206094 0.746171 0.282020</max>
 	</visibilityBox>
-	<nodefullVisual>content/3D_Customization/Cus_171_Lunar_Fireworks/normal/lod2/Cus_171_Lunar_Fireworks_01</nodefullVisual>
 	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_171_Lunar_Fireworks/normal/lod2/Cus_171_Lunar_Fireworks_01</nodefullVisual>
 </root>

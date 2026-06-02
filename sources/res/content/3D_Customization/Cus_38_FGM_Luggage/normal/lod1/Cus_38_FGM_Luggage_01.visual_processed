@@ -8,40 +8,13 @@
 			<row2>0.000000 0.000000 1.000000</row2>
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
-		<node>
-			<identifier>Cus_38_FGM_Luggage_01</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-			<node>
-				<identifier>lod0</identifier>
-				<transform>
-					<row0>1.000000 0.000000 0.000000</row0>
-					<row1>0.000000 1.000000 0.000000</row1>
-					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 0.000000 0.000000</row3>
-				</transform>
-				<node>
-					<identifier>s0</identifier>
-					<transform>
-						<row0>1.000000 0.000000 0.000000</row0>
-						<row1>0.000000 1.000000 0.000000</row1>
-						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>0.000000 0.000000 0.000000</row3>
-					</transform>
-				</node>
-			</node>
-		</node>
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
-		<node>s0</node>
+		<node>Scene Root</node>
 		<geometry>
-			<vertices>s0Shape.vertices</vertices>
-			<primitive>s0Shape.indices</primitive>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -78,14 +51,14 @@
 						<Texture>content/3D_Customization/Cus_38_FGM_Luggage/Cus_38_FGM_Luggage_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.268758 0.227528 -0.106419</groupOrigin>
+				<groupOrigin>-0.241879 0.204772 -0.095775</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
-	<constraints/>
 	<boundingBox>
-		<min>-0.718524 -0.000002 -0.930378</min>
-		<max>0.181008 0.510646 0.717541</max>
+		<min>-0.646662 -0.000000 -0.835543</min>
+		<max>0.163816 0.410274 0.646273</max>
 	</boundingBox>
-	<geometrySize>65064</geometrySize>
+	<customBsp>true</customBsp>
+	<geometrySize>63816</geometrySize>
 </root>

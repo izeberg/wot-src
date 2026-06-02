@@ -1689,6 +1689,26 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
+			<type>BW::VisibilityTunnelComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>cfcd7cd2-a9bd-433d-8df5-8236e4cb18b2</UUID>
+				<flags>3</flags>
+			</component>
+			<component>
+				<UUID>c864cd63-12aa-4b34-b234-4a6a0e0a7f6c</UUID>
+				<flags>3</flags>
+			</component>
+			<component>
+				<UUID>18f3ab2b-e157-3e42-9931-bd18ed8c1aa9</UUID>
+				<flags>3</flags>
+			</component>
+			<component>
+				<UUID>71edcd4d-c341-40b6-afec-14409636a3b8</UUID>
+				<flags>3</flags>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
 			<type>VSEComponent</type>
 			<version>1</version>
 			<component>

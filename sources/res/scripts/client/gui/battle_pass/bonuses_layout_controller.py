@@ -1,4 +1,7 @@
-import typing, ResMgr
+from __future__ import absolute_import
+import typing
+from future.utils import viewitems
+import ResMgr
 from items import _xml
 from gui.battle_pass.battle_pass_bonuses_helper import BonusesHelper
 from gui.battle_pass.battle_pass_constants import BonusesLayoutConsts
@@ -98,11 +101,11 @@ class BonusesLayoutController(object):
                     values[name] = item.asBool
                 elif name == BonusesLayoutConsts.BIG_ICON_KEY:
                     values[name] = item.asString
-            elif name in (BonusesLayoutConsts.ID_KEY, BonusesLayoutConsts.LEVEL_KEY):
+            elif name in (BonusesLayoutConsts.ID_KEY, BonusesLayoutConsts.LEVEL_KEY, BonusesLayoutConsts.RARITY):
                 ids = item.asString
 
         names = ids.split(' ')
         for name in names:
             storage[name] = {}
-            for key, value in values.iteritems():
+            for key, value in viewitems(values):
                 storage[name][key] = value

@@ -2,10 +2,10 @@
 <root>
 	<parent>content/3D_Customization/Cus_72_OTG_Projector/normal/lod2/Cus_72_OTG_Projector_01</parent>
 	<extent>64.000000</extent>
-	<nodefullVisual>content/3D_Customization/Cus_72_OTG_Projector/normal/lod1/Cus_72_OTG_Projector_01</nodefullVisual>
 	<tank>true</tank>
 	<visibilityBox>
-		<min>-0.275307 -0.200000 -0.164957</min>
-		<max>0.275307 0.923185 0.162869</max>
+		<min>-0.275307 -0.100000 -0.156474</min>
+		<max>0.275307 0.750000 0.159038</max>
 	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/Cus_72_OTG_Projector/normal/lod1/Cus_72_OTG_Projector_01</nodefullVisual>
 </root>

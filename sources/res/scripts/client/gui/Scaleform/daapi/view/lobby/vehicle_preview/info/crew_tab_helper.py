@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from collections import namedtuple
 import typing
 from gui.Scaleform.locale.TOOLTIPS import TOOLTIPS

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/italy/It41_Cerbero/crash/lod0/Gun_01</nodefullVisual>
+	<parent>vehicles/italy/It41_Cerbero/crash/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-0.418436 -0.294060 -1.594369</min>
+		<max>0.418436 0.285635 5.052180</max>
+	</visibilityBox>
+</root>

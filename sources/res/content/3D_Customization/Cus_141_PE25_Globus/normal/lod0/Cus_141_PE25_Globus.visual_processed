@@ -105,14 +105,14 @@
 						<Texture>content/3D_Customization/Cus_141_PE25_Globus/Cus_141_PE25_Globus_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.018724 0.158244 -0.019748</groupOrigin>
+				<groupOrigin>-0.018724 0.283244 -0.019748</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-0.339269 -0.350000 -0.327728</min>
+		<min>-0.339269 -0.100000 -0.327728</min>
 		<max>0.301820 0.666488 0.367223</max>
 	</boundingBox>
-	<geometrySize>339174</geometrySize>
+	<geometrySize>330442</geometrySize>
 </root>

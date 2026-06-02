@@ -1,6 +1,6 @@
 from __future__ import absolute_import
 import typing
-from future.builtins import round
+from builtins import round
 from adisp import adisp_process
 from frameworks.wulf import ViewFlags, ViewSettings, WindowFlags
 from gui.Scaleform.daapi.view.lobby.vehicle_preview.info.top_panel_tabs import PERSONAL_NUMBER_STYLE_TABS

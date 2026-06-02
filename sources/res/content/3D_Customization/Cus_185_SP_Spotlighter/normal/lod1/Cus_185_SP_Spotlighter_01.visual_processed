@@ -51,14 +51,14 @@
 						<Texture>content/3D_Customization/Cus_185_SP_Spotlighter/Cus_185_SP_Spotlighter_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.000651 0.236855 -0.161285</groupOrigin>
+				<groupOrigin>0.000651 0.286855 -0.161651</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.195370 -0.200000 -0.474380</min>
-		<max>0.196620 0.673710 0.149560</max>
+		<min>-0.190030 -0.100000 -0.472496</min>
+		<max>0.191332 0.673710 0.149194</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>57524</geometrySize>
+	<geometrySize>57784</geometrySize>
 </root>

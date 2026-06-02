@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from wg_async import wg_async, forwardAsFuture, wg_await
 from debug_utils import LOG_CURRENT_EXCEPTION
 from Event import Event

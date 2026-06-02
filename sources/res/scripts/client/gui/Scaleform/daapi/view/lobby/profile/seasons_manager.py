@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from gui.Scaleform.daapi.view.lobby.profile.ProfileSection import BattleTypesDropDownItems
 from gui.Scaleform.genConsts.PROFILE_DROPDOWN_KEYS import PROFILE_DROPDOWN_KEYS
@@ -17,7 +18,7 @@ class ISeasonsManager(object):
     def getSeason(self):
         raise NotImplementedError
 
-    def addSeasonsDropdown(self, vo):
+    def addSeasonsDropdown(self, targetVO):
         raise NotImplementedError
 
     def getStats(self, dossierStats):
@@ -175,11 +176,11 @@ class _ManagersCollection(ISeasonsManager):
         else:
             self.__activeManager = self.__managersMap[self.DEFAULT_MANAGER_KEY]
 
-    def getStats(self, accountDossier):
-        return self.__activeManager.getStats(accountDossier)
+    def getStats(self, dossierStats):
+        return self.__activeManager.getStats(dossierStats)
 
-    def addSeasonsDropdown(self, vo):
-        self.__activeManager.addSeasonsDropdown(vo)
+    def addSeasonsDropdown(self, targetVO):
+        self.__activeManager.addSeasonsDropdown(targetVO)
 
     def setSeason(self, seasonId):
         return self.__activeManager.setSeason(seasonId)

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.shared.event_dispatcher import showShop
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
 from web.web_client_api import webApiCollection

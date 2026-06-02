@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import itertools, logging
 from collections import namedtuple
 import typing, persistent_data_cache_common as pdc

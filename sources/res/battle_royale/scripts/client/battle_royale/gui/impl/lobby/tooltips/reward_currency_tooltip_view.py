@@ -9,7 +9,7 @@ from helpers import dependency
 from skeletons.gui.battle_results import IBattleResultsService
 from battle_royale.gui.impl.gen.view_models.views.lobby.enums import CoinType
 _PREMIUM_BONUS_CURRENCIES = (
- Currency.BRCOIN, Currency.CREDITS, 'xp')
+ Currency.CREDITS, 'xp')
 _DAILY_BONUS_CURRENCIES = (Currency.STPCOIN,)
 
 class RewardCurrencyTooltipView(ViewImpl):

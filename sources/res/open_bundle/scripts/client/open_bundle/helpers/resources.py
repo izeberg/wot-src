@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from gui.impl.gen import R
 from helpers import dependency

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from constants import ARENA_BONUS_TYPE_NAMES
 from debug_utils import LOG_ERROR
 

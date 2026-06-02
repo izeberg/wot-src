@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import enum
 ENEMY_VEHICLE_ID = -1
 INVALID_TIMESTAMP = -1
@@ -16,7 +17,7 @@ class PoiStatus(enum.IntEnum):
     COOLDOWN = 3
 
 
-INT_2_POI_STATUS = dict([ (int(v), v) for k, v in PoiStatus.__members__.items() ])
+INT_2_POI_STATUS = {int(v):v for k, v in PoiStatus.__members__.items()}
 
 @enum.unique
 class PoiBlockReasons(enum.IntEnum):
@@ -27,4 +28,4 @@ class PoiBlockReasons(enum.IntEnum):
 
 PoiEquipmentNamesByPoiType = {PoiType.ARTILLERY: 'poi_artillery_aoe', 
    PoiType.RECON: 'poi_radar'}
-PoiTypesByPoiEquipmentName = {name:poiType for poiType, name in PoiEquipmentNamesByPoiType.iteritems()}
+PoiTypesByPoiEquipmentName = {name:poiType for poiType, name in PoiEquipmentNamesByPoiType.items()}

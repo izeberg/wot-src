@@ -1,4 +1,7 @@
-import logging, typing, Event
+from __future__ import absolute_import
+import logging, typing
+from future.utils import viewvalues
+import Event
 from CurrentVehicle import g_currentVehicle, g_currentPreviewVehicle
 import adisp
 from gui import g_tankActiveCamouflage
@@ -241,7 +244,7 @@ class CustomizationContext(object):
         g_currentVehicle.onChangeStarted -= self.__onVehicleChangeStarted
         g_currentVehicle.onChanged -= self.__onVehicleChanged
         g_currentPreviewVehicle.onChanged -= self.__onPreviewVehicleChanged
-        for mode in self.__modes.itervalues():
+        for mode in viewvalues(self.__modes):
             mode.fini()
 
         self.__modes.clear()
@@ -376,7 +379,7 @@ class CustomizationContext(object):
 
     def updateOutfits(self):
         self.updateCommonOutfits()
-        for mode in self.__modes.itervalues():
+        for mode in viewvalues(self.__modes):
             if mode.isInited:
                 mode.updateOutfits()
 
@@ -476,7 +479,7 @@ class CustomizationContext(object):
         else:
             if self._vehicle.intCD == g_currentVehicle.item.intCD:
                 return
-            for mode in self.__modes.itervalues():
+            for mode in viewvalues(self.__modes):
                 if mode.isInited:
                     mode.onVehicleChangeStarted()
 
@@ -502,7 +505,7 @@ class CustomizationContext(object):
         if tabId is not None:
             modeId = self.__getDefaultStartMode()
             if tabId not in CustomizationTabs.MODES[modeId]:
-                modeId = CustomizationTabs.TAB_TO_MODE[tabId]
+                modeId = CustomizationTabs.TAB_TO_MODE[tabId][0]
             if modeId in CustomizationModes.BASE_STYLES and not vehicleHasSlot(GUI_ITEM_TYPE.STYLE):
                 return CustomizationModes.CUSTOM
             return modeId

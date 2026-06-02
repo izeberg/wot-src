@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from account_helpers import AccountSettings
 from account_helpers.AccountSettings import UNLOCK_VEHICLES_IN_BATTLE_HINTS
 from constants import MAX_VEHICLE_LEVEL, MIN_VEHICLE_LEVEL

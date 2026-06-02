@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodelessVisual>content/3D_Customization/Cus_32_SP_GoldPot/normal/lod1/Cus_32_SP_GoldPot_01</nodelessVisual>
 	<parent>content/3D_Customization/Cus_32_SP_GoldPot/normal/lod2/Cus_32_SP_GoldPot_01</parent>
 	<extent>64.000000</extent>
 	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_32_SP_GoldPot/normal/lod1/Cus_32_SP_GoldPot_01</nodefullVisual>
+	<visibilityBox>
+		<min>-0.483762 -0.099390 -0.351442</min>
+		<max>0.515400 0.891913 0.351443</max>
+	</visibilityBox>
 </root>

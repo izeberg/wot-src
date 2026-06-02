@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>content/3D_Customization/Cus_19_Marine_Anchor/normal/lod1/attachment</nodefullVisual>
 	<parent>content/3D_Customization/Cus_19_Marine_Anchor/normal/lod2/attachment</parent>
 	<extent>64.000000</extent>
 	<visibilityBox>
-		<min>-0.540686 0.001991 -0.379178</min>
-		<max>0.197047 0.397504 0.940211</max>
+		<min>-0.627076 0.001991 -0.379178</min>
+		<max>0.110657 0.397504 0.940211</max>
 	</visibilityBox>
 	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_19_Marine_Anchor/normal/lod1/attachment</nodefullVisual>
 </root>

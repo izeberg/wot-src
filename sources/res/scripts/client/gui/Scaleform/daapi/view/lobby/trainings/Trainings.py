@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from adisp import adisp_process
 from constants import PREBATTLE_TYPE
 from frameworks.wulf import WindowLayer

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from helpers.i18n import makeString as _ms
 from gui.Scaleform.locale.CLANS import CLANS
 from gui.Scaleform.locale.RES_ICONS import RES_ICONS

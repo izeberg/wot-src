@@ -1,7 +1,7 @@
 from __future__ import absolute_import
 import logging, typing, itertools
 from collections import namedtuple
-from future.builtins import range
+from builtins import range
 from future.utils import iteritems, itervalues
 from blueprints.BlueprintTypes import BlueprintTypes
 from frameworks.wulf import ViewFlags

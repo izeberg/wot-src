@@ -470,10 +470,10 @@ msgid "A120_M48A5"
 msgstr "M48A5 Patton"
 
 msgid "A120_M48A5_7x7"
-msgstr "M48A5 Patton 7v7"
+msgstr "M48A5 Patton 7x7"
 
 msgid "A120_M48A5_7x7_short"
-msgstr "M48A5 7v7"
+msgstr "M48A5 7x7"
 
 msgid "A120_M48A5_descr"
 msgstr ""
@@ -2098,6 +2098,34 @@ msgstr ""
 msgid "A195_Gorilla_short"
 msgstr "Gorilla"
 
+msgid "A197_Jezevec"
+msgstr "Jezevec"
+
+msgid "A197_Jezevec_descr"
+msgstr ""
+"In the early 1960s, Czechoslovakia began developing a medium tank with "
+"powerful armament, a low profile, and good mobility. The design stood out "
+"from the classic arrangement: the fighting compartment was in the rear and "
+"the crew was almost fully located in the hull, with the gun and oscillating "
+"turret controlled remotely. The project was abandoned due to its complexity "
+"and high costs. A prototype was sold to Egypt for trials; however, it proved"
+" different from initial expectations and was sent to the U.S.A. in the "
+"mid-1970s for its technology to be studied."
+
+msgid "A197_Jezevec_long_special"
+msgstr ""
+"The Jezevec is an American Tier IX support medium tank. Equipped with a "
+"unique autoreloading gun, this vehicle has low per-shot damage but "
+"compensates with a large magazine and short delay between shots, allowing "
+"high burst damage. Each shell reloads equally, offering flexibility without "
+"penalty. It also features excellent mobility."
+
+msgid "A197_Jezevec_short"
+msgstr "Jezevec"
+
+msgid "A197_Jezevec_short_special"
+msgstr "Excellent mobility, autoreloader with short in-clip reload time"
+
 msgid "A21_T14_long_special"
 msgstr ""
 "A Tier V American heavy tank with sloped frontal armor, decent damage per "
@@ -2797,6 +2825,9 @@ msgstr ""
 "American LaFrance\n"
 "312A V-12"
 
+msgid "B_58A"
+msgstr "B-58A"
+
 msgid "British_Wireless_set_N19"
 msgstr "Wireless Set No. 19"
 
@@ -3172,6 +3203,9 @@ msgstr "AHT-7"
 
 msgid "Chassis_A195_Gorilla"
 msgstr "Gorilla"
+
+msgid "Chassis_A197_Jezevec"
+msgstr "Jezevec"
 
 msgid "Chassis_A22_M5_Stuart"
 msgstr "M5 Stuart"
@@ -4574,6 +4608,9 @@ msgstr "QF 6-pdr Mk. III"
 msgid "QF_6_pounder_Mk_IIIA"
 msgstr "QF 6-pdr Mk. IIIA"
 
+msgid "Radiostanice_R_113A"
+msgstr "Radiostanice R-123A"
+
 msgid "Ram-II"
 msgstr "Ram II"
 
@@ -4678,7 +4715,7 @@ msgid "T-14_MapsTraining_Player_HT_1"
 msgstr "T14"
 
 msgid "T110E4_7x7"
-msgstr "T110E4 7v7"
+msgstr "T110E4 7x7"
 
 msgid "T110E4_7x7_descr"
 msgstr ""
@@ -4689,7 +4726,7 @@ msgstr ""
 "considered, but the project was canceled."
 
 msgid "T110E4_7x7_short"
-msgstr "T110E4 7v7"
+msgstr "T110E4 7x7"
 
 msgid "T110_cl"
 msgstr "T110E5 CL"
@@ -5318,6 +5355,9 @@ msgstr "AHT-7"
 
 msgid "Turret_1_A195_Gorilla"
 msgstr "Gorilla"
+
+msgid "Turret_1_A197_Jezevec"
+msgstr "Jezevec"
 
 msgid "Turret_1_A22_M5_Stuart"
 msgstr "M5 Stuart"
@@ -7610,6 +7650,18 @@ msgstr "M64"
 
 msgid "_76mm_M79"
 msgstr "HVAP M93(M7)"
+
+msgid "_85_mm_D_58A"
+msgstr "85 mm D-58A"
+
+msgid "_85_mm_UBR_372A"
+msgstr "85 mm UBR 372A"
+
+msgid "_85_mm_UBR_372B"
+msgstr "85 mm UBR 372B"
+
+msgid "_85_mm_UOF_372A"
+msgstr "85 mm UOF 372A"
 
 msgid "_85mm_AAAC_I"
 msgstr "AAAC-I"

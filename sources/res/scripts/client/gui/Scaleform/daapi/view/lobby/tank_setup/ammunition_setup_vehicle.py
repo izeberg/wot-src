@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from CurrentVehicle import g_currentVehicle
 from helpers import dependency
 from skeletons.gui.shared import IItemsCache

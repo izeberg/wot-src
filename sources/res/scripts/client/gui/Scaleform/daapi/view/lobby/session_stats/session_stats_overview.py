@@ -1,5 +1,7 @@
+from __future__ import absolute_import
 import time
 from collections import namedtuple
+from future.utils import viewitems
 import Event, SoundGroups
 from account_helpers.AccountSettings import AccountSettings, SESSION_STATS_SECTION, SESSION_STATS_PREV_BATTLE_COUNT, BATTLE_EFFICIENCY_SECTION_EXPANDED_FIELD
 from account_helpers.settings_core.settings_constants import SESSION_STATS
@@ -68,15 +70,15 @@ class SessionStatsOverview(SessionStatsOverviewMeta):
     def onClickSettingsBtn(self):
         self.onShowSettings()
 
-    def onExpanded(self, expanded):
+    def onExpanded(self, value):
         sessStatSett = AccountSettings.getSettings(SESSION_STATS_SECTION)
-        sessStatSett[BATTLE_EFFICIENCY_SECTION_EXPANDED_FIELD] = expanded
+        sessStatSett[BATTLE_EFFICIENCY_SECTION_EXPANDED_FIELD] = value
         AccountSettings.setSettings(SESSION_STATS_SECTION, sessStatSett)
 
-    def onTabSelected(self, tabAlias):
-        self._currentTabAlias = tabAlias
+    def onTabSelected(self, alias):
+        self._currentTabAlias = alias
         self.as_setButtonsStateS(self.__getButtonStates())
-        self.__saveCurrentTab(tabAlias)
+        self.__saveCurrentTab(alias)
 
     def updateData(self):
         self._currentTabAlias = self.__getSavedTab()
@@ -262,7 +264,7 @@ class SessionStatsOverview(SessionStatsOverviewMeta):
         settings = self.__settingsController.getSettings()
         if settings[SESSION_STATS.IS_NEEDED_SAVE_CURRENT_TAB]:
             savedTabs = settings[SESSION_STATS.CURRENT_TAB]
-            for alias, idTab in _TABS_ID.iteritems():
+            for alias, idTab in viewitems(_TABS_ID):
                 if idTab == savedTabs:
                     return alias
 

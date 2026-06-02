@@ -1,10 +1,11 @@
+from __future__ import absolute_import
 import typing
 if typing.TYPE_CHECKING:
     from ResMgr import DataSection
     TReaders = typing.Dict[(str, typing.Callable[([DataSection], dict)])]
 
 def _parseDataSection(dataSection, readers=None, normalizeValues=False):
-    if not len(dataSection):
+    if not dataSection:
         if normalizeValues:
             return _normalizeValue(dataSection.asString)
         else:
@@ -44,6 +45,6 @@ def _normalizeValue(value):
 
 
 def parse(data, readers=None, normalizeValues=False):
-    if not len(data):
+    if not data:
         return {}
     return _parseDataSection(data, readers, normalizeValues)

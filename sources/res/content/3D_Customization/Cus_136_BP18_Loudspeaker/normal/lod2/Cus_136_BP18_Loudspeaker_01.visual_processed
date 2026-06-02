@@ -55,12 +55,12 @@
 						<Texture>content/3D_Customization/Cus_136_BP18_Loudspeaker/Cus_136_BP18_Loudspeaker_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.009340 0.198261 0.126436</groupOrigin>
+				<groupOrigin>-0.009340 0.248207 0.126436</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.222704 -0.200000 -0.097059</min>
+		<min>-0.222704 -0.100194 -0.097059</min>
 		<max>0.204025 0.600773 0.347299</max>
 	</boundingBox>
 	<customBsp>true</customBsp>

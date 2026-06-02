@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.daapi.view.lobby.event_boards.event_boards_vos import makeFiltersVO, makeVehicleVO
 from gui.Scaleform.daapi.view.lobby.event_boards.event_helpers import LEVELS_RANGE
 from gui.Scaleform.daapi.view.meta.EventBoardsVehiclesOverlayMeta import EventBoardsVehiclesOverlayMeta

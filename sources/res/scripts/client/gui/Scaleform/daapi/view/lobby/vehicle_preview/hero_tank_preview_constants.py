@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from collections import namedtuple
 from gui.impl.gen import R
 from helpers import dependency

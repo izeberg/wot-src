@@ -1,6 +1,8 @@
+from __future__ import absolute_import, division
 import itertools, random
 from bisect import bisect
 from copy import deepcopy
+from past.builtins import xrange
 import typing
 
 class wchoices(object):
@@ -30,7 +32,7 @@ class wchoices(object):
                         yield e
                         break
                 else:
-                    raise LookupError('At least one option must be selected from %s', welist)
+                    raise LookupError('At least one option must be selected from %s' % welist)
 
         return wrapper()
 

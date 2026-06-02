@@ -35,7 +35,7 @@
 				</transform>
 			</node>
 			<node>
-				<identifier>lod3</identifier>
+				<identifier>lod0</identifier>
 				<transform>
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 1.000000 0.000000</row1>
@@ -43,7 +43,16 @@
 					<row3>0.000000 0.000000 0.000000</row3>
 				</transform>
 				<node>
-					<identifier>n2_7</identifier>
+					<identifier>n4_1_7</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>n4_7</identifier>
 					<transform>
 						<row0>1.000000 0.000000 0.000000</row0>
 						<row1>0.000000 1.000000 0.000000</row1>
@@ -53,6 +62,42 @@
 				</node>
 				<node>
 					<identifier>s0</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>s1</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>s2</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>s3</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>s4</identifier>
 					<transform>
 						<row0>1.000000 0.000000 0.000000</row0>
 						<row1>0.000000 1.000000 0.000000</row1>
@@ -71,28 +116,6 @@
 			<primitive>indices</primitive>
 			<primitiveGroup>
 				0
-				<material>
-					<identifier>s_nd0</identifier>
-					<fx>shaders/std_effects/PBS_ext.fx</fx>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>111</materialKind>
-					<property>
-						diffuseMap
-						<Texture>content/Environment/hd_env_SU_023_MillPipe/hd_env_SU_023_MillPipe_02_BAM.dds</Texture>
-					</property>
-					<property>
-						normalMap
-						<Texture>content/Environment/hd_env_SU_023_MillPipe/hd_env_SU_023_MillPipe_02_BANM.dds</Texture>
-					</property>
-					<property>
-						metallicGlossMap
-						<Texture>content/Environment/hd_env_SU_023_MillPipe/hd_env_SU_023_MillPipe_02_BGMM.dds</Texture>
-					</property>
-				</material>
-				<groupOrigin>-0.000530 5.082827 0.047596</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
-				1
 				<material>
 					<identifier>n_stone2_1_2</identifier>
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
@@ -114,7 +137,7 @@
 				<groupOrigin>0.014696 17.634600 -0.023694</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				2
+				1
 				<material>
 					<identifier>n_stone2_2</identifier>
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
@@ -134,6 +157,28 @@
 					</property>
 				</material>
 				<groupOrigin>0.001046 30.127411 -0.017767</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				2
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>111</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/hd_env_SU_023_MillPipe/hd_env_SU_023_MillPipe_02_BAM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Environment/hd_env_SU_023_MillPipe/hd_env_SU_023_MillPipe_02_BANM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Environment/hd_env_SU_023_MillPipe/hd_env_SU_023_MillPipe_02_BGMM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.000530 5.082827 0.047596</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>

@@ -51,12 +51,12 @@
 						<Texture>content/3D_Customization/Cus_56_ArmiesA_Searchlight/Cus_56_ArmiesA_Searchlight_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.000456 0.196716 -0.014403</groupOrigin>
+				<groupOrigin>0.000456 0.246716 -0.014403</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.271342 -0.200000 -0.292934</min>
+		<min>-0.271342 -0.100000 -0.292934</min>
 		<max>0.271531 0.593431 0.265022</max>
 	</boundingBox>
 	<customBsp>true</customBsp>

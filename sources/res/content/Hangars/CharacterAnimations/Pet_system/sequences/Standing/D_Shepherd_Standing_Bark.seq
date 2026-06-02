@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<duration>9.433333</duration>
+	<duration>9.166667</duration>
 	<sequenceObject>
 		<name>Root</name>
 		<type>model</type>
@@ -220,7 +220,7 @@
 			</frame>
 			<frame>
 				<startTime>8.433333</startTime>
-				<duration>1.000000</duration>
+				<duration>0.266667</duration>
 				<sequenceSound>pet_system_dog_claws</sequenceSound>
 				<type>one_shot</type>
 				<fade>0.000000</fade>

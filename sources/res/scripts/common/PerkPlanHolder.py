@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from collections import defaultdict
 from constants import IS_CELLAPP, IS_BASEAPP
 from typing import TYPE_CHECKING, List, Optional, Union

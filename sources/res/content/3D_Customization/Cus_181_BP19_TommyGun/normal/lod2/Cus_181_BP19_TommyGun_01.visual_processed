@@ -67,12 +67,12 @@
 						<Texture>content/3D_Customization/Cus_181_BP19_TommyGun/Cus_181_BP19_TommyGun_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.001627 0.113961 0.041554</groupOrigin>
+				<groupOrigin>-0.001627 0.163961 0.041554</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.171205 -0.200000 -0.395439</min>
+		<min>-0.171205 -0.100000 -0.395439</min>
 		<max>0.167980 0.441980 0.476687</max>
 	</boundingBox>
 	<customBsp>true</customBsp>

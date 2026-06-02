@@ -63,6 +63,10 @@
 						diffuseUVSpeedAlphaOffset
 						<Vector4>0.000000 0.000000 20.000000 0.000000</Vector4>
 					</property>
+					<property>
+						g_visibilityTunnelCompensation
+						<Float>7.000000</Float>
+					</property>
 				</material>
 				<groupOrigin>0.006851 0.556763 0.111763</groupOrigin>
 			</primitiveGroup>

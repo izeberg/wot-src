@@ -1,5 +1,5 @@
 from __future__ import absolute_import
-from future.builtins import range
+from builtins import range
 from gui import SystemMessages
 from gui.Scaleform.daapi import LobbySubView
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS

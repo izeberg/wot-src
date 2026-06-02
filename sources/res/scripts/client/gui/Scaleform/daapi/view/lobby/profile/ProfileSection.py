@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from collections import namedtuple
 from helpers import dependency, i18n
 from gui.Scaleform.daapi.view.meta.ProfileSectionMeta import ProfileSectionMeta

@@ -2,6 +2,10 @@
 <root>
 	<parent>content/3D_Customization/Cus_170_Lunar_Horse/normal/lod3/Cus_170_Lunar_Horse_01</parent>
 	<extent>96.000000</extent>
-	<nodelessVisual>content/3D_Customization/Cus_170_Lunar_Horse/normal/lod2/Cus_170_Lunar_Horse_01</nodelessVisual>
 	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_170_Lunar_Horse/normal/lod2/Cus_170_Lunar_Horse_01</nodefullVisual>
+	<visibilityBox>
+		<min>-0.090142 -0.100000 -0.208156</min>
+		<max>0.090142 0.596634 0.192447</max>
+	</visibilityBox>
 </root>

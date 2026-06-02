@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing, potapov_quests, persistent_data_cache_common as pdc
 from quest_xml_source import QuestValidationSerializer
 g_cache = None

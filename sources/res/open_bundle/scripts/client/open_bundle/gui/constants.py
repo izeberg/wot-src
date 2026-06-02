@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from shared_utils import CONST_CONTAINER
 RARE_TAG = 'rare'
 UNIC_NOTIFICATION_TAG = 'uniqueNotification'

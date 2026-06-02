@@ -1,6 +1,7 @@
-import BigWorld, Math
+from __future__ import absolute_import, division
 from math import pi, fabs
-from debug_utils import *
+import BigWorld, Math
+from math_common import round_py2_style_int
 
 def calcPitchLimitsFromDesc(turretYaw, pitchLimitsDesc, turretPitch=0.0, gunJointPitch=0.0):
     minPitch = pitchLimitsDesc['minPitch']
@@ -14,7 +15,7 @@ def calcGunPitchCorrection(turretYaw, turretPitch, gunJointPitch):
 
 def encodeAngleToUint(angle, bits):
     mask = (1 << bits) - 1
-    return int(round((mask + 1) * (angle + pi) / (pi * 2.0))) & mask
+    return round_py2_style_int((mask + 1) * (angle + pi) / (pi * 2.0)) & mask
 
 
 def decodeAngleFromUint(code, bits):
@@ -25,7 +26,7 @@ def encodeRestrictedValueToUint(angle, bits, minBound, maxBound):
     t = 0 if maxBound == minBound else (angle - minBound) / (maxBound - minBound)
     t = _clamp(0.0, t, 1.0)
     mask = (1 << bits) - 1
-    return int(round(mask * t)) & mask
+    return round_py2_style_int(mask * t) & mask
 
 
 def decodeRestrictedValueFromUint(code, bits, minBound, maxBound):

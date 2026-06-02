@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from operator import methodcaller
 from gui.Scaleform.daapi.view.lobby.store.action_composer import ActionComposer
 from gui.Scaleform.daapi.view.lobby.store.actions_helpers import getActionInfoData, getAnnouncedActionInfo

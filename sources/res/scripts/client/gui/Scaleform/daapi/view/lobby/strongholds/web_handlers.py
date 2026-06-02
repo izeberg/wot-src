@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from web.web_client_api import webApiCollection
 from web.web_client_api.clans import ClansWebApi
 from web.web_client_api.exchange import PersonalExchangeRatesDiscountsWebApi

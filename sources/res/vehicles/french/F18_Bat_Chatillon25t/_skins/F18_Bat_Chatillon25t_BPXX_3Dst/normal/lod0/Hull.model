@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-2.140305 -0.658742 -3.554403</min>
+		<max>2.008211 0.774438 3.705156</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/french/F18_Bat_Chatillon25t/_skins/F18_Bat_Chatillon25t_BPXX_3Dst/normal/lod0/Hull</nodefullVisual>
+	<parent>vehicles/french/F18_Bat_Chatillon25t/_skins/F18_Bat_Chatillon25t_BPXX_3Dst/normal/lod1/Hull</parent>
+	<extent>32.000000</extent>
+</root>

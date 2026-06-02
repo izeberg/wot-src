@@ -581,6 +581,12 @@ msgstr "T-13"
 msgid "Chassis_R235_KB_52"
 msgstr "KB-52"
 
+msgid "Chassis_R236_Object_265_II"
+msgstr "Object 265-II"
+
+msgid "Chassis_R239_Object_Veles"
+msgstr "Veles"
+
 msgid "Chassis_R23_T-43"
 msgstr "T-43"
 
@@ -866,6 +872,9 @@ msgstr "DM-45"
 msgid "DM_45_7x7"
 msgstr "DM-45"
 
+msgid "DTH_10"
+msgstr "DTH-10"
+
 msgid "GAZ-202"
 msgstr "GAZ 202"
 
@@ -929,7 +938,7 @@ msgid "IS-3M_SH"
 msgstr "IS-3 TB"
 
 msgid "IS-4_7x7"
-msgstr "IS-4 7v7"
+msgstr "IS-4 7x7"
 
 msgid "IS-6"
 msgstr "IS-6"
@@ -2566,7 +2575,7 @@ msgid "R149_Object_268_4"
 msgstr "Object 268 Version 4"
 
 msgid "R149_Object_268_4_7x7"
-msgstr "Obj.268 Version 4 7v7"
+msgstr "Obj. 268 Version 4 7x7"
 
 msgid "R149_Object_268_4_7x7_descr"
 msgstr ""
@@ -2578,7 +2587,7 @@ msgstr ""
 "Object 730 hull was required."
 
 msgid "R149_Object_268_4_7x7_short"
-msgstr "Obj. 268/4 7v7"
+msgstr "Obj.268/4 7x7"
 
 msgid "R149_Object_268_4_descr"
 msgstr ""
@@ -4034,6 +4043,56 @@ msgstr "KB-52"
 msgid "R235_KB_52_short_special"
 msgstr "Reliable hull and turret armor, autoloader"
 
+msgid "R236_Object_265_II"
+msgstr "Object 265-II"
+
+msgid "R236_Object_265_II_descr"
+msgstr ""
+"A double-barreled version of the Object 265 project, developed in the late "
+"1950s. Its unconventional solutions (use of new control systems and locating"
+" the driver in the turret) made it difficult to find a customer. As a "
+"result, the project was closed to focus efforts on modifying the T-10 "
+"(Object 730)."
+
+msgid "R236_Object_265_II_long_special"
+msgstr ""
+"The Object 265-II is a Soviet Tier IX heavy tank. The vehicle combines "
+"excellent hull and turret armor with two 122 mm guns. Its strong armor "
+"allows it to hold positions, further supported by the rear-mounted turret, "
+"which makes side-scraping more convenient. The double guns cause massive "
+"damage, especially when using the salvo mechanic."
+
+msgid "R236_Object_265_II_short"
+msgstr "Obj. 265-II"
+
+msgid "R236_Object_265_II_short_special"
+msgstr "Double gun system, reliable hull and turret armor"
+
+msgid "R239_Object_Veles"
+msgstr "Object Veles"
+
+msgid "R239_Object_Veles_desc"
+msgstr ""
+"A project for a heavy tank developed in the 1960s based on the classic "
+"formula: enhanced protection by extra armor and increased firepower from "
+"high-caliber armament. The vehicle turned out excessively conservative, and "
+"the project was closed in favor of more versatile and maneuverable "
+"vehicles—future main battle tanks."
+
+msgid "R239_Object_Veles_long_special"
+msgstr ""
+"The Object Veles is a Soviet Tier X heavy tank. It has everything needed to "
+"hold and push positions: excellent hull and turret armor, as well as a gun "
+"with high single-shot damage. However, this comes at the cost of very poor "
+"mobility, but this drawback becomes far less significant when the tank is in"
+" the right place at the right time."
+
+msgid "R239_Object_Veles_short"
+msgstr "Veles"
+
+msgid "R239_Object_Veles_short_special"
+msgstr "Solid hull and turret armor, high single-shot damage"
+
 msgid "R23_T-43"
 msgstr "T-43"
 
@@ -4563,6 +4622,9 @@ msgstr "R-123C"
 
 msgid "R_123KR"
 msgstr "R-123KR"
+
+msgid "R_123V"
+msgstr "R-123V"
 
 msgid "R_123_1476"
 msgstr "R-123 (1476)"
@@ -5385,6 +5447,12 @@ msgstr "T-13"
 msgid "Turret_1_R235_KB_52"
 msgstr "KB-52"
 
+msgid "Turret_1_R236_Object_265_II"
+msgstr "Object 265-II"
+
+msgid "Turret_1_R239_Object_Veles"
+msgstr "Veles"
+
 msgid "Turret_1_R23_T-43"
 msgstr "T-43 mod. 1942"
 
@@ -5861,6 +5929,9 @@ msgstr "V-12-5"
 
 msgid "V_12_5B"
 msgstr "V-12-5B"
+
+msgid "V_12_5C"
+msgstr "V-12-5C"
 
 msgid "V_12_5F"
 msgstr "V-12-5F"
@@ -6898,6 +6969,9 @@ msgstr "122 mm BL-9OM"
 msgid "_122mm_BL_13"
 msgstr "122 mm BL-13"
 
+msgid "_122mm_BL_13D_dualgun"
+msgstr "122 mm BL-13D-SD"
+
 msgid "_122mm_BL_13_1_257"
 msgstr "122 mm BL-13-1 (257)"
 
@@ -6946,6 +7020,9 @@ msgstr "BP-460A (KV-1)"
 msgid "_122mm_BP_460A_KV_1S"
 msgstr "BP-460A (KV-1S)"
 
+msgid "_122mm_BP_471BMM"
+msgstr "BP 471BMM"
+
 msgid "_122mm_BP_471D"
 msgstr "BP-471D"
 
@@ -6954,6 +7031,9 @@ msgstr "BR-472"
 
 msgid "_122mm_BR-471D_P"
 msgstr "BR-471DP"
+
+msgid "_122mm_BR_471BMM"
+msgstr "BR 471BMM"
 
 msgid "_122mm_BR_471DS_SU"
 msgstr "BR-471DS (SU)"
@@ -7131,6 +7211,9 @@ msgstr "OF-420S (KV-1S)"
 
 msgid "_122mm_OF_462"
 msgstr "OF-462"
+
+msgid "_122mm_OF_471BMM"
+msgstr "OF 471BMM"
 
 msgid "_122mm_S34_II"
 msgstr "122 mm S-34-II"
@@ -7404,6 +7487,9 @@ msgstr "12LL"
 
 msgid "_12RT"
 msgstr "12RT"
+
+msgid "_12RT_B"
+msgstr "12RT-B"
 
 msgid "_12RT_Roz"
 msgstr "12RT TITT"
@@ -7747,6 +7833,9 @@ msgstr "152 mm D-4S"
 msgid "_152mm_D_4S_704"
 msgstr "152 mm D-4S (704)"
 
+msgid "_152mm_D_73"
+msgstr "152 mm D-73"
+
 msgid "_152mm_Howitzer_D_1"
 msgstr "152 mm Howitzer D-1"
 
@@ -7816,6 +7905,9 @@ msgstr "UBK-551M (268)"
 msgid "_152mm_UBK_551O"
 msgstr "UBK-551O"
 
+msgid "_152mm_UBK_551OD"
+msgstr "UBK-551OD"
+
 msgid "_152mm_UBR551"
 msgstr "UBR-551"
 
@@ -7843,6 +7935,9 @@ msgstr "UBR-551M (268)"
 msgid "_152mm_UBR_551O"
 msgstr "UBR-551O"
 
+msgid "_152mm_UBR_551OD"
+msgstr "UBR-551OD"
+
 msgid "_152mm_UBR_551PD_704"
 msgstr "UBR-551PD (704)"
 
@@ -7863,6 +7958,9 @@ msgstr "UOF-551MOF"
 
 msgid "_152mm_UOF_551O"
 msgstr "UOF-551O"
+
+msgid "_152mm_UOF_551OD"
+msgstr "UOF-551OD"
 
 msgid "_152mm_howitzer_ML-20_mod_1931"
 msgstr "152 mm Howitzer ML-20 mod. 1931"

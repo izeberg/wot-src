@@ -59,13 +59,13 @@
 						<Texture>content/3D_Customization/Cus_215_LS_Machinegun/Cus_215_LS_Machinegun_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.075933 0.325138 0.275207</groupOrigin>
+				<groupOrigin>-0.071395 0.294543 0.258763</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.440954 -0.200000 -0.361148</min>
-		<max>0.293346 0.898996 0.905872</max>
+		<min>-0.414605 -0.100000 -0.339569</min>
+		<max>0.275818 0.734894 0.851744</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
 	<geometrySize>9872</geometrySize>

@@ -58,6 +58,15 @@ msgstr ""
 msgid "domain/damageDealing/name"
 msgstr "Causing Damage"
 
+msgid "domain/equalize/description"
+msgstr ""
+"The lower a vehicle's tier, the more its parameters are enhanced—making low-"
+"tier vehicles much more dangerous! Spending and earning resources in battles"
+" is disabled."
+
+msgid "domain/equalize/name"
+msgstr "Tier I–X Battles"
+
 msgid "domain/mobility/description"
 msgstr ""
 "A set of parameters that show the dynamic and speed characteristics of your "
@@ -160,6 +169,11 @@ msgstr "Damage to other modules during impact"
 
 msgid "modifier/name/envTankmanDamageChance"
 msgstr "Crew injuries during impact"
+
+msgid "modifier/name/equalize"
+msgstr ""
+"Each tier has different modifiers to HP, internal and external modules, "
+"damage, and penetration"
 
 msgid "modifier/name/equipmentCooldown"
 msgstr "Consumable cooldown time"

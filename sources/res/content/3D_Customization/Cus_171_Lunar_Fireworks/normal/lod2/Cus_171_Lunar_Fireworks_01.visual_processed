@@ -39,13 +39,13 @@
 						<Texture>content/3D_Customization/Cus_171_Lunar_Fireworks/Cus_171_Lunar_Fireworks_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.000000 0.282684 -0.002740</groupOrigin>
+				<groupOrigin>0.000000 0.323086 -0.002740</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.217031 -0.200023 -0.289999</min>
-		<max>0.217031 0.767500 0.283751</max>
+		<min>-0.217031 -0.100000 -0.289999</min>
+		<max>0.217031 0.748281 0.283751</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
 	<geometrySize>23948</geometrySize>

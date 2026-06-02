@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from helpers import dependency
 from skeletons.gui.impl import INotificationWindowController
 _LOCK_SOURCE_NAME = 'BATTLE_PASS_REWARD_LOGIC'

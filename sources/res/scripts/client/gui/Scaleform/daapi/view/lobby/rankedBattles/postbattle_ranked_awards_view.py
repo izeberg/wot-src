@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import SoundGroups
 from gui.Scaleform.genConsts.RANKEDBATTLES_ALIASES import RANKEDBATTLES_ALIASES
 from gui.impl import backport

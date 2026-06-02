@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.server_events.events_dispatcher import showTankwomanAward
 from gui.shared.formatters import text_styles
 from gui.Scaleform.daapi.view.meta.TankgirlsPopoverMeta import TankgirlsPopoverMeta
@@ -10,8 +11,8 @@ from skeletons.gui.server_events import IEventsCache
 class TankgirlsPopover(TankgirlsPopoverMeta):
     __eventsCache = dependency.descriptor(IEventsCache)
 
-    def onRecruitClick(self, eventID):
-        self.__getMissionAward(eventID)
+    def onRecruitClick(self, idx):
+        self.__getMissionAward(idx)
         self.destroy()
 
     def _populate(self):

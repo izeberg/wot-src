@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from account_helpers import AccountSyncData
 from open_bundle_common.constants import OPEN_BUNDLE_PDATA_KEY

@@ -1,10 +1,11 @@
+from __future__ import absolute_import
 import logging, typing
 from CurrentVehicle import g_currentVehicle
 from adisp import adisp_async, adisp_process
 from constants import CLIENT_COMMAND_SOURCES
 from gui.Scaleform.daapi.view.lobby.customization.context.customization_mode import CustomizationMode
 from gui.Scaleform.daapi.view.lobby.customization.shared import OutfitInfo, customizationSlotIdToUid, CustomizationSlotUpdateVO, getStylePurchaseItems, removeItemFromEditableStyle, fitOutfit, getCurrentVehicleAvailableRegionsMap, getEditableStyleOutfitDiff, getStyledModeRequestData
-from gui.customization.shared import C11nId, PurchaseItem
+from gui.customization.shared import C11nId
 from gui.shared.gui_items import GUI_ITEM_TYPE
 from gui.shared.gui_items.processors.common import CustomizationsSeller, OutfitApplier
 from gui.shared.gui_items.processors.vehicle import VehicleAutoStyleEquipProcessor
@@ -20,6 +21,7 @@ from vehicle_systems.camouflages import getStyleProgressionOutfit
 from items.customizations import parseCompDescr
 if typing.TYPE_CHECKING:
     from items.customizations import SerializableComponent
+    from gui.customization.shared import PurchaseItem
     from gui.shared.gui_items.customization.c11n_items import Style, Customization
     from gui.Scaleform.daapi.view.lobby.customization.context.context import CustomizationContext
 _logger = logging.getLogger(__name__)

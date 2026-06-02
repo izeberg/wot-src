@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<visibilityBox>
-		<min>-0.220000 -0.200000 -0.138094</min>
+		<min>-0.220000 -0.100259 -0.138094</min>
 		<max>0.220000 0.794909 0.156989</max>
 	</visibilityBox>
 	<parent>content/3D_Customization/Cus_109_Celestial_Bell/normal/lod1/Cus_109_Celestial_Bell_01</parent>
 	<extent>32.000000</extent>
-	<nodefullVisual>content/3D_Customization/Cus_109_Celestial_Bell/normal/lod0/Cus_109_Celestial_Bell_01</nodefullVisual>
 	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_109_Celestial_Bell/normal/lod0/Cus_109_Celestial_Bell_01</nodefullVisual>
 </root>

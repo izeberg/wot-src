@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, typing
 from functools import partial
 from CurrentVehicle import g_currentVehicle
@@ -7,7 +8,7 @@ from gui.Scaleform.daapi.view.lobby.customization.context.custom_mode import Cus
 from gui.Scaleform.daapi.view.lobby.customization.context.styled_mode import StyledMode
 from gui.Scaleform.daapi.view.lobby.customization import shared
 from gui.Scaleform.daapi.view.lobby.customization.shared import customizationSlotIdToUid, CustomizationSlotUpdateVO, getStylePurchaseItems, correctSlot, getCurrentVehicleAvailableRegionsMap, fitOutfit, removeItemFromEditableStyle, getEditableStyleOutfitDiff, getItemInventoryCount, getOutfitWithoutItemsNoDiff, getOutfitWithoutItems, ITEM_TYPE_TO_SLOT_TYPE, getUnsuitableDependentData, changePartsOutfit
-from gui.customization.shared import PurchaseItem, getAvailableRegions, EDITABLE_STYLE_IRREMOVABLE_TYPES, EDITABLE_STYLE_APPLY_TO_ALL_AREAS_TYPES, C11nId
+from gui.customization.shared import getAvailableRegions, EDITABLE_STYLE_IRREMOVABLE_TYPES, EDITABLE_STYLE_APPLY_TO_ALL_AREAS_TYPES, C11nId
 from gui.shared.gui_items import GUI_ITEM_TYPE
 from gui.shared.utils.decorators import adisp_process as wrapperdProcess
 from items import makeIntCompactDescrByID
@@ -20,6 +21,7 @@ from skeletons.account_helpers.settings_core import ISettingsCore
 from tutorial.hints_manager import HINT_SHOWN_STATUS
 if typing.TYPE_CHECKING:
     from items.customizations import SerializableComponent
+    from gui.customization.shared import PurchaseItem
     from gui.hangar_vehicle_appearance import AnchorParams
     from gui.shared.gui_items.customization.c11n_items import Customization
     from gui.Scaleform.daapi.view.lobby.customization.context.context import CustomizationContext
@@ -281,7 +283,7 @@ class EditableStyleMode(CustomMode):
         if isMountedStyleSelected:
             iterOutfitsWithoutItem = partial(getOutfitWithoutItems, self.getOutfitsInfo(), item.intCD, count)
         else:
-            outfits = {season:outfit for season, outfit in g_currentVehicle.item.outfits.iteritems()}
+            outfits = dict(g_currentVehicle.item.outfits)
             iterOutfitsWithoutItem = partial(getOutfitWithoutItemsNoDiff, outfits, item.intCD, count)
         vehicleCD = g_currentVehicle.item.descriptor.makeCompactDescr()
         for season, outfit in iterOutfitsWithoutItem():

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import copy, logging, Event
 from account_helpers.settings_core.settings_constants import SESSION_STATS
 from gui.shared.items_cache import CACHE_SYNC_REASON

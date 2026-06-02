@@ -51,14 +51,14 @@
 						<Texture>content/3D_Customization/Cus_104_A15_Deer_mascot/Cus_104_A15_Deer_mascot_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.000001 0.266349 0.202673</groupOrigin>
+				<groupOrigin>-0.000001 0.316349 0.202673</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.208475 -0.200555 -0.280809</min>
+		<min>-0.208475 -0.100555 -0.280809</min>
 		<max>0.208472 0.733253 0.686154</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>136604</geometrySize>
+	<geometrySize>86908</geometrySize>
 </root>

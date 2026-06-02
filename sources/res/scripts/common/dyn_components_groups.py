@@ -1,8 +1,9 @@
-from inspect import getargspec
+from __future__ import absolute_import
 from functools import partial
 from cache import cached_property
 from constants import IS_CELLAPP, IS_DEVELOPMENT
 from extension_utils import importClass, ResMgr
+from py2to3.backport.inspect import getargspec
 from soft_exception import SoftException
 from xml_config_specs import ObjParam
 from typing import TYPE_CHECKING

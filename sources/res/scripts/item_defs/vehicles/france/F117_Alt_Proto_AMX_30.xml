@@ -3406,17 +3406,16 @@
 						<slot>
 							<slotType>attachment</slotType>
 							<slotId>48000</slotId>
-							<position>
-								-0.000001 0.423006 0.16152
-								<!--BW_String-->
-							</position>
+							<position>-0.000001 0.424186 0.359094</position>
 							<rotation>
-								-0.000029 -0 0
+								-0.00003 0 0
 								<!--BW_String-->
 							</rotation>
 							<scale>1 1 1</scale>
 							<applyType>gunMantlet</applyType>
 							<size>medium</size>
+							<enableVisTunnel>true</enableVisTunnel>
+							<hangerId>2</hangerId>
 						</slot>
 						<slot>
 							<slotType>insigniaOnGun</slotType>
@@ -4445,11 +4444,20 @@
 				<slot>
 					<slotType>attachment</slotType>
 					<slotId>38000</slotId>
-					<position>-0.905927 1.024873 -0.280659</position>
+					<position>
+						-0.603255 1.05209 -0.17296
+						<!--BW_String-->
+					</position>
 					<rotation>-0 0 0</rotation>
 					<scale>1 1 1</scale>
 					<applyType>turret</applyType>
 					<size>small</size>
+					<enableVisTunnel>true</enableVisTunnel>
+					<hangerId>2</hangerId>
+					<hangerRotation>
+						-0 3.141593 0
+						<!--BW_String-->
+					</hangerRotation>
 				</slot>
 				<slot>
 					<slotType>attachment</slotType>

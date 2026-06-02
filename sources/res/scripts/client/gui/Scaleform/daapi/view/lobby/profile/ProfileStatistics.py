@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from debug_utils import LOG_ERROR
 from gui.Scaleform.daapi.view.lobby.profile.ProfileSection import BattleTypesDropDownItems
 from gui.Scaleform.daapi.view.lobby.profile.profile_statistics_vos import getStatisticsVO

@@ -51,13 +51,13 @@
 						<Texture>content/3D_Customization/Cus_54_ArmiesG_Opticalgun/Cus_54_ArmiesG_Opticalgun_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.055990 0.350952 0.137474</groupOrigin>
+				<groupOrigin>0.055990 0.324756 0.137474</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.203676 -0.200000 -0.466875</min>
-		<max>0.315656 0.901904 0.741823</max>
+		<min>-0.203676 -0.100488 -0.466875</min>
+		<max>0.315656 0.750000 0.741823</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
 	<geometrySize>266192</geometrySize>

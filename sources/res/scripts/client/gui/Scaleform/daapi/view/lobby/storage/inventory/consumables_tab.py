@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from future.utils import viewitems
 from gui.Scaleform.daapi.view.lobby.store.browser.shop_helpers import getBuyEquipmentUrl
 from gui.Scaleform.daapi.view.lobby.storage.inventory.filters.filter_by_type import FiltrableRegularCategoryByTypeTabView
 from gui.impl.gen import R
@@ -57,10 +59,10 @@ class ConsumablesTabView(FiltrableRegularCategoryByTypeTabView):
 
     def _getFilteredCriteria(self):
         criteria = super(ConsumablesTabView, self)._getFilteredCriteria()
-        typeIds = list()
-        for bit in _TYPE_ID_BIT_TO_TYPE_ID_MAP.iterkeys():
+        typeIds = []
+        for bit, guiTypes in viewitems(_TYPE_ID_BIT_TO_TYPE_ID_MAP):
             if self._filterMask & bit:
-                typeIds.extend(_TYPE_ID_BIT_TO_TYPE_ID_MAP[bit])
+                typeIds.extend(guiTypes)
 
         if typeIds:
             criteria |= REQ_CRITERIA.ITEM_TYPES(*set(typeIds))

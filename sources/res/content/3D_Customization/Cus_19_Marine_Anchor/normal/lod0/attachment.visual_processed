@@ -8,24 +8,6 @@
 			<row2>0.000000 0.000000 1.000000</row2>
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
-		<node>
-			<identifier>nodes_01</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-			<node>
-				<identifier>HP_attachment</identifier>
-				<transform>
-					<row0>1.000000 0.000000 0.000000</row0>
-					<row1>0.000000 1.000000 0.000000</row1>
-					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 0.000000 0.000000</row3>
-				</transform>
-			</node>
-		</node>
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
@@ -38,8 +20,8 @@
 				<material>
 					<identifier>equipment</identifier>
 					<fx>shaders/std_effects/PBS_tank.fx</fx>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>0</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>112</materialKind>
 					<property>
 						diffuseMap
 						<Texture>content/3D_Customization/Cus_19_Marine_Anchor/Marine_Anchor_AM.dds</Texture>
@@ -77,14 +59,14 @@
 						<Bool>true</Bool>
 					</property>
 				</material>
-				<groupOrigin>-0.171200 0.200678 0.278292</groupOrigin>
+				<groupOrigin>-0.257590 0.200678 0.278292</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.540331 -0.000000 -0.379249</min>
-		<max>0.197931 0.401355 0.935832</max>
+		<min>-0.626721 -0.000000 -0.379249</min>
+		<max>0.111541 0.401355 0.935832</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>209660</geometrySize>
+	<geometrySize>213996</geometrySize>
 </root>

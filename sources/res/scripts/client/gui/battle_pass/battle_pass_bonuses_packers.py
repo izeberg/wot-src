@@ -1,5 +1,7 @@
-import logging
+from __future__ import absolute_import
+import copy, logging
 from contextlib import contextmanager
+from future.utils import viewitems
 from typing import TYPE_CHECKING
 from battle_pass_common import BATTLE_PASS_Q_CHAIN_BONUS_NAME, BATTLE_PASS_RANDOM_QUEST_BONUS_NAME, BATTLE_PASS_SELECT_BONUS_NAME, BATTLE_PASS_STYLE_PROGRESS_BONUS_NAME, CurrencyBP
 from gui.Scaleform.genConsts.TOOLTIPS_CONSTANTS import TOOLTIPS_CONSTANTS
@@ -14,23 +16,22 @@ from gui.impl.gen.view_models.constants.item_highlight_types import ItemHighligh
 from gui.impl.gen.view_models.views.lobby.battle_pass.reward_item_model import RewardItemModel
 from gui.impl.gen.view_models.views.lobby.battle_pass.vehicle_bonus_model import VehicleBonusModel
 from gui.server_events.awards_formatters import BATTLE_BONUS_X5_TOKEN, CREW_BONUS_X3_TOKEN
-from gui.server_events.bonuses import BlueprintsBonusSubtypes
+from gui.server_events.bonuses import BlueprintsBonusSubtypes, GoldBonus, CreditsBonus, CustomizationsBonus, VehiclesBonus
 from gui.server_events.recruit_helper import getRecruitInfo
 from gui.shared.gui_items import GUI_ITEM_TYPE, GUI_ITEM_TYPE_NAMES
 from gui.shared.gui_items.customization import CustomizationTooltipContext
 from gui.shared.missions.packers.bonus import BACKPORT_TOOLTIP_CONTENT_ID, BaseBonusUIPacker, BlueprintBonusUIPacker, BonusUIPacker, CrewBookBonusUIPacker, DossierBonusUIPacker, GoodiesBonusUIPacker, ItemBonusUIPacker, SimpleBonusUIPacker, TokenBonusUIPacker, VehiclesBonusUIPacker, getDefaultBonusPackersMap
-from gui.shared.money import Currency
+from gui.shared.money import Currency, Money
 from helpers import dependency
 from items.tankmen import RECRUIT_TMAN_TOKEN_PREFIX
 from shared_utils import first
 from skeletons.gui.offers import IOffersDataProvider
 if TYPE_CHECKING:
-    from typing import List
-    from gui.server_events.bonuses import BattlePassQuestChainTokensBonus, BattlePassRandomQuestTokensBonus, SimpleBonus, TmanTemplateTokensBonus, CustomizationsBonus, PlusPremiumDaysBonus, DossierBonus, BattlePassSelectTokensBonus, BattlePassStyleProgressTokenBonus, VehicleBlueprintBonus, GoodiesBonus, CurrenciesBonus
+    from typing import List, Dict
+    from gui.server_events.bonuses import BattlePassQuestChainTokensBonus, BattlePassRandomQuestTokensBonus, SimpleBonus, TmanTemplateTokensBonus, PlusPremiumDaysBonus, DossierBonus, BattlePassSelectTokensBonus, BattlePassStyleProgressTokenBonus, VehicleBlueprintBonus, GoodiesBonus, CurrenciesBonus, TokensBonus
     from account_helpers.offers.events_data import OfferEventData, OfferGift
     from gui.shared.gui_items.Vehicle import Vehicle
     from gui.goodies.goodie_items import Booster
-    from gui.server_events.bonuses import TokensBonus
 _logger = logging.getLogger(__name__)
 
 def getBattlePassBonusPacker():
@@ -104,6 +105,20 @@ def changeBonusTooltipData(bonusData, tooltipData):
         tooltipData[tooltipId] = tooltip
 
 
+def _getCompensation(bonus, item):
+    compensationBonuses = []
+    compensatedNumber = item.get('compensatedNumber', 0)
+    compensation = item.get('customCompensation')
+    if compensatedNumber and compensation is not None:
+        money = Money(*compensation)
+        for currency, value in viewitems(money):
+            if value:
+                bonusClass = CreditsBonus if currency == Currency.CREDITS else GoldBonus
+                compensationBonuses.append(bonusClass(currency, value, isCompensation=True, compensationReason=bonus))
+
+    return compensationBonuses
+
+
 class _BattlePassFinalBonusPacker(BaseBonusUIPacker):
     __isBigImageUsed = False
 
@@ -122,7 +137,7 @@ class TmanTemplateBonusPacker(_BattlePassFinalBonusPacker):
     @classmethod
     def _pack(cls, bonus):
         result = []
-        for tokenID in bonus.getTokens().iterkeys():
+        for tokenID in bonus.getTokens():
             if tokenID.startswith(RECRUIT_TMAN_TOKEN_PREFIX):
                 packed = cls._packTmanTemplateToken(tokenID, bonus)
                 if packed is None:
@@ -154,7 +169,7 @@ class TmanTemplateBonusPacker(_BattlePassFinalBonusPacker):
     @classmethod
     def _getToolTip(cls, bonus):
         tooltipData = []
-        for tokenID in bonus.getTokens().iterkeys():
+        for tokenID in bonus.getTokens():
             if tokenID.startswith(RECRUIT_TMAN_TOKEN_PREFIX):
                 tooltipData.append(TooltipData(tooltip=None, isSpecial=True, specialAlias=TOOLTIPS_CONSTANTS.TANKMAN_NOT_RECRUITED, specialArgs=[
                  tokenID]))
@@ -164,7 +179,7 @@ class TmanTemplateBonusPacker(_BattlePassFinalBonusPacker):
     @classmethod
     def _getContentId(cls, bonus):
         result = []
-        for tokenID in bonus.getTokens().iterkeys():
+        for tokenID in bonus.getTokens():
             if tokenID.startswith(RECRUIT_TMAN_TOKEN_PREFIX):
                 result.append(BACKPORT_TOOLTIP_CONTENT_ID)
 
@@ -184,7 +199,14 @@ class BattlePassCustomizationsBonusPacker(_BattlePassFinalBonusPacker):
         for item, data in zip(bonus.getCustomizations(), bonus.getList()):
             if item is None:
                 continue
-            result.append(cls._packSingleBonus(bonus, item, data))
+            compensation = _getCompensation(bonus, item)
+            if compensation:
+                for compensationBonus in compensation:
+                    packer = ExtendedCurrencyBonusUIPacker()
+                    result.extend(packer.pack(compensationBonus))
+
+            else:
+                result.append(cls._packSingleBonus(bonus, item, data))
 
         return result
 
@@ -227,15 +249,21 @@ class BattlePassCustomizationsBonusPacker(_BattlePassFinalBonusPacker):
         for item, _ in zip(bonus.getCustomizations(), bonus.getList()):
             if item is None:
                 continue
-            itemCustomization = bonus.getC11nItem(item)
-            specialAlias = TOOLTIPS_CONSTANTS.TECH_CUSTOMIZATION_ITEM_AWARD
-            specialArgs = CustomizationTooltipContext(itemCD=itemCustomization.intCD)
-            if itemCustomization.itemTypeName in ('camouflage', 'style'):
-                vehicle = getSingleVehicleForCustomization(itemCustomization)
-                if vehicle is not None:
-                    specialAlias = TOOLTIPS_CONSTANTS.TECH_CUSTOMIZATION_ITEM
-                    specialArgs = CustomizationTooltipContext(itemCD=itemCustomization.intCD, vehicleIntCD=vehicle)
-            tooltipData.append(TooltipData(tooltip=None, isSpecial=True, specialAlias=specialAlias, specialArgs=specialArgs))
+            compensation = _getCompensation(bonus, item)
+            if not compensation:
+                itemCustomization = bonus.getC11nItem(item)
+                specialAlias = TOOLTIPS_CONSTANTS.TECH_CUSTOMIZATION_ITEM_AWARD
+                specialArgs = CustomizationTooltipContext(itemCD=itemCustomization.intCD)
+                if itemCustomization.itemTypeName in ('camouflage', 'style'):
+                    vehicle = getSingleVehicleForCustomization(itemCustomization)
+                    if vehicle is not None:
+                        specialAlias = TOOLTIPS_CONSTANTS.TECH_CUSTOMIZATION_ITEM
+                        specialArgs = CustomizationTooltipContext(itemCD=itemCustomization.intCD, vehicleIntCD=vehicle)
+                tooltipData.append(TooltipData(tooltip=None, isSpecial=True, specialAlias=specialAlias, specialArgs=specialArgs))
+            else:
+                itemCopy = copy.deepcopy(item)
+                itemCopy.pop('compensatedNumber', None)
+                tooltipData.extend(TooltipData(tooltip=None, isSpecial=True, specialAlias=None, specialArgs=[CustomizationsBonus('customizations', [itemCopy]), compensationBonus]) for compensationBonus in compensation)
 
         return tooltipData
 
@@ -243,8 +271,13 @@ class BattlePassCustomizationsBonusPacker(_BattlePassFinalBonusPacker):
     def _getContentId(cls, bonus):
         result = []
         for item, _ in zip(bonus.getCustomizations(), bonus.getList()):
-            if item is not None:
+            if item is None:
+                continue
+            compensation = _getCompensation(bonus, item)
+            if not compensation:
                 result.append(BACKPORT_TOOLTIP_CONTENT_ID)
+            else:
+                result.append(R.views.mono.battle_pass.tooltips.reward_compensation())
 
         return result
 
@@ -272,11 +305,12 @@ class BattlePassPremiumDaysPacker(BaseBonusUIPacker):
         if days in cls._ICONS_AVAILABLE:
             model.setName(bonus.getName())
             model.setBigIcon(('_').join([bonus.getName(), str(days)]))
+            model.setValue(str(bonus.getValue()))
         else:
-            model.setName('premium_universal')
+            model.setName('premium_plus_universal')
             model.setBigIcon('premium_universal')
+            model.setValue(('_').join(['universal', str(bonus.getValue())]))
         model.setIsCompensation(bonus.isCompensation())
-        model.setValue(str(bonus.getValue()))
         model.setUserName(backport.text(R.strings.tooltips.awardItem.premium_plus.header()))
         return model
 
@@ -304,13 +338,13 @@ class BattlePassDossierBonusPacker(DossierBonusUIPacker):
         return result
 
     @classmethod
-    def _packSingleBonus(cls, bonus, dossierIconName, dossierNamePostfix, dossierValue, userName, recordName=None):
+    def _packSingleBonus(cls, bonus, dossierIconName, dossierNamePostfix, dossierValue, dossierLabel, recordName=None):
         model = RewardItemModel()
         model.setName(bonus.getName() + dossierNamePostfix)
         model.setIsCompensation(bonus.isCompensation())
         model.setValue(str(dossierValue))
         model.setIcon(dossierIconName)
-        model.setUserName(userName)
+        model.setUserName(dossierLabel)
         model.setBigIcon(dossierIconName)
         model.setIsCollectionEntity(cls._isCollectionItem(recordName))
         return model
@@ -350,7 +384,7 @@ class SelectBonusPacker(BaseBonusUIPacker):
     @classmethod
     def _getToolTip(cls, bonus):
         tooltipData = []
-        for tokenID in bonus.getTokens().iterkeys():
+        for tokenID in bonus.getTokens():
             tooltipData.append(TooltipData(tooltip=None, isSpecial=True, specialAlias=TOOLTIPS_CONSTANTS.BATTLE_PASS_GIFT_TOKEN, specialArgs=[
              tokenID] + [bonus.getContext().get('isReceived', True)]))
 
@@ -359,7 +393,7 @@ class SelectBonusPacker(BaseBonusUIPacker):
     @classmethod
     def _getContentId(cls, bonus):
         result = []
-        for _ in bonus.getTokens().iterkeys():
+        for _ in bonus.getTokens():
             result.append(BACKPORT_TOOLTIP_CONTENT_ID)
 
         return result
@@ -402,9 +436,9 @@ class BattlePassStyleProgressTokenBonusPacker(_BattlePassFinalBonusPacker):
         return model
 
     @classmethod
-    def _isCollectionItem(cls, validationData):
-        collectionItemID, level = validationData
-        return super(BattlePassStyleProgressTokenBonusPacker, cls)._isCollectionItem(collectionItemID) and level == cls._STYLE_MAX_LEVEL
+    def _isCollectionItem(cls, collectionItemID):
+        itemID, level = collectionItemID
+        return super(BattlePassStyleProgressTokenBonusPacker, cls)._isCollectionItem(itemID) and level == cls._STYLE_MAX_LEVEL
 
     @classmethod
     def _getToolTip(cls, bonus):
@@ -444,10 +478,10 @@ class ExtendedCrewBookBonusUIPacker(CrewBookBonusUIPacker):
         return RewardItemModel()
 
     @classmethod
-    def _packSingleBonus(cls, bonus, item, count):
-        model = super(ExtendedCrewBookBonusUIPacker, cls)._packSingleBonus(bonus, item, count)
-        model.setUserName(item.userName)
-        model.setBigIcon(item.getBonusIconName())
+    def _packSingleBonus(cls, bonus, book, count):
+        model = super(ExtendedCrewBookBonusUIPacker, cls)._packSingleBonus(bonus, book, count)
+        model.setUserName(book.userName)
+        model.setBigIcon(book.getBonusIconName())
         return model
 
 
@@ -585,6 +619,21 @@ class BattlePassSlotsBonusPacker(SimpleBonusUIPacker):
 class BattlePassVehiclesBonusUIPacker(VehiclesBonusUIPacker):
 
     @classmethod
+    def _packVehicles(cls, bonus, vehicles):
+        result = []
+        for vehicle, vehInfo in vehicles:
+            compensation = cls._getCompensation(vehicle, bonus)
+            if compensation:
+                packer = ExtendedCurrencyBonusUIPacker()
+                for bonusComp in compensation:
+                    result.extend(packer.pack(bonusComp))
+
+            else:
+                result.append(cls._packVehicle(bonus, vehInfo, vehicle))
+
+        return result
+
+    @classmethod
     def _packVehicleBonusModel(cls, bonus, vehInfo, isRent, vehicle):
         model = VehicleBonusModel()
         cls.__fillVehicle(model, vehicle)
@@ -598,6 +647,47 @@ class BattlePassVehiclesBonusUIPacker(VehiclesBonusUIPacker):
         model.setVehicleLvl(vehicle.level)
         model.setVehicleName(vehicle.userName)
         model.setVehicleType(vehicle.type)
+
+    @classmethod
+    def _packTooltip(cls, bonus, vehicle, vehInfo):
+        compensation = _getCompensation(bonus, vehInfo)
+        if compensation:
+            return first(cls.__packCompensationTooltip(first(compensation), vehicle, vehInfo))
+        return super(BattlePassVehiclesBonusUIPacker, cls)._packTooltip(bonus, vehicle, vehInfo)
+
+    @classmethod
+    def _packTooltips(cls, bonus, vehicles):
+        packedTooltips = []
+        for vehicle, vehicleInfo in vehicles:
+            compensation = _getCompensation(bonus, vehicleInfo)
+            if compensation:
+                for compensationBonus in compensation:
+                    packedTooltips.extend(cls.__packCompensationTooltip(compensationBonus, vehicle, vehicleInfo))
+
+            else:
+                packedTooltips.append(cls._packTooltip(bonus, vehicle, vehicleInfo))
+
+        return packedTooltips
+
+    @classmethod
+    def _getContentId(cls, bonus):
+        result = []
+        for _, vehicleInfo in bonus.getVehicles():
+            compensation = _getCompensation(bonus, vehicleInfo)
+            if compensation:
+                result.append(R.views.mono.battle_pass.tooltips.reward_compensation())
+            else:
+                result.append(BACKPORT_TOOLTIP_CONTENT_ID)
+
+        return result
+
+    @classmethod
+    def __packCompensationTooltip(cls, compensationBonus, vehicle, vehicleInfo):
+        vehicleInfoCopy = copy.deepcopy(vehicleInfo)
+        vehicleInfoCopy.pop('compensatedNumber', None)
+        return [
+         TooltipData(tooltip=None, isSpecial=True, specialAlias=None, specialArgs=[
+          VehiclesBonus('vehicles', {vehicle.intCD: vehicleInfoCopy}), compensationBonus])]
 
 
 class BattlePassFreeXPPacker(SimpleBonusUIPacker):

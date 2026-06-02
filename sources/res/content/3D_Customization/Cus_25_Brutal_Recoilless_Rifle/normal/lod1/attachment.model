@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>content/3D_Customization/Cus_25_Brutal_Recoilless_Rifle/normal/lod1/attachment</nodefullVisual>
 	<parent>content/3D_Customization/Cus_25_Brutal_Recoilless_Rifle/normal/lod2/attachment</parent>
 	<extent>64.000000</extent>
 	<visibilityBox>
-		<min>-0.339391 -0.007341 -1.143175</min>
-		<max>0.227748 0.409294 0.761220</max>
+		<min>-0.423393 -0.007341 -1.069559</min>
+		<max>0.143746 0.409294 0.834836</max>
 	</visibilityBox>
 	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_25_Brutal_Recoilless_Rifle/normal/lod1/attachment</nodefullVisual>
 </root>

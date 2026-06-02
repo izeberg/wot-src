@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from weakref import ref
 
 class WeakMethod(ref):
@@ -61,8 +62,10 @@ class WeakMethodProxy(object):
         method = self._methodRef()
         return method(*args, **kwargs)
 
-    def __nonzero__(self):
+    def __bool__(self):
         return self._methodRef() is not None
+
+    __nonzero__ = __bool__
 
     def __eq__(self, other):
         if isinstance(other, WeakMethodProxy):

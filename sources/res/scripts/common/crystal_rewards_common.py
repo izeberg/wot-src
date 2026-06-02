@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from constants import ARENA_BONUS_TYPE_NAMES
 from soft_exception import SoftException
 

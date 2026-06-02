@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.shared.utils.functions import getArenaGeometryName
 from gui.impl import backport
 from gui.impl.gen import R

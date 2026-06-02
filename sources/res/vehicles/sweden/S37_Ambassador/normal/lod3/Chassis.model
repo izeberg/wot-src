@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/sweden/S37_Ambassador/normal/lod4/Chassis</parent>
+	<extent>192.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.496189 -0.005425 -2.978554</min>
+		<max>1.496194 1.059849 3.025033</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/sweden/S37_Ambassador/normal/lod3/Chassis</nodefullVisual>
+</root>
