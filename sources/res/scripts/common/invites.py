@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from enumerations import Enumeration
 INVITE_TYPES = Enumeration('InviteTypes', [
  'BARTER',

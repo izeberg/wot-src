@@ -152,15 +152,6 @@ msgstr "从%(regDate)s开始一直在体验游戏"
 msgid "BPReserveAchievement_1"
 msgstr "战斗通行证储备成就1"
 
-msgid "BPReserveAchievement_10"
-msgstr "战斗通行证储备成就10"
-
-msgid "BPReserveAchievement_10_condition"
-msgstr "• 授予完成进度的玩家。"
-
-msgid "BPReserveAchievement_10_descr"
-msgstr "授予在活动期间达成成就的玩家"
-
 msgid "BPReserveAchievement_1_condition"
 msgstr "• 授予完成进度的玩家。"
 
@@ -439,6 +430,15 @@ msgstr "完成战斗通行证第一赛季的主线进度。"
 
 msgid "BattlePassCommonPr_2"
 msgstr "漫漫荣耀长路"
+
+msgid "BattlePassCommonPr_20"
+msgstr "沙漠勘探"
+
+msgid "BattlePassCommonPr_20_condition"
+msgstr "• 授予完成全部3个章节的玩家。"
+
+msgid "BattlePassCommonPr_20_descr"
+msgstr "授予在战斗通行证赛季XX期间达成成就的玩家。"
 
 msgid "BattlePassCommonPr_2_condition"
 msgstr "• 主线进度包含45个阶段。"
@@ -3307,7 +3307,7 @@ msgstr ""
 "• 只能在标准模式中获得。"
 
 msgid "medalAntiSpgFire_descr"
-msgstr "在一场战斗中，使用自行火炮击毁敌方所有自行火炮(至少2辆)。"
+msgstr "在1场战斗中，使用自行火炮击毁2辆敌方自行火炮。"
 
 msgid "medalBillotte"
 msgstr "比洛特勋章"
@@ -3425,7 +3425,7 @@ msgstr ""
 "• 只能在标准模式中获得。"
 
 msgid "medalBurda_descr"
-msgstr "在单场战斗中击毁3辆敌方自行火炮。"
+msgstr "在1场战斗中，击毁2辆敌方自行火炮。"
 
 msgid "medalBurda_heroInfo"
 msgstr ""
@@ -3488,7 +3488,8 @@ msgstr "杜米特鲁勋章"
 msgid "medalDumitru_condition"
 msgstr ""
 "• 驾驶坦克或自行反坦克炮。\n"
-"• 只能在标准模式中获得。"
+"• 只能在标准模式中获得。\n"
+"• 2.3版本更新后将无法获得。"
 
 msgid "medalDumitru_descr"
 msgstr "在单场战斗中击毁3辆敌方自行火炮。"
@@ -3795,7 +3796,7 @@ msgstr ""
 "• 只能在标准模式中获得。"
 
 msgid "medalTamadaYoshio_descr"
-msgstr "在一场战斗中使用轻型坦克至少击毁敌方2辆自行火炮。"
+msgstr "在1场战斗中，使用轻型坦克击毁2辆敌方自行火炮。"
 
 msgid "medalTamadaYoshio_heroInfo"
 msgstr "高克，装甲兵早期创始人之一，1946年6月指挥装甲兵第一次参战，并取得胜利，战斗中，击毁敌人火炮和碉堡若干。"

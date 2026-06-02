@@ -1,6 +1,6 @@
 from __future__ import absolute_import, division
-from future.builtins import str
 import logging
+from builtins import str
 from future.utils import iteritems
 from adisp import adisp_process
 from frameworks.wulf import ViewSettings, WindowFlags, ViewStatus

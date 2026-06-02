@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import nations
 from gui import GUI_NATIONS
 from gui.Scaleform.daapi.view.meta.ItemsWithTypeAndNationFilterTabViewMeta import ItemsWithTypeAndNationFilterTabViewMeta

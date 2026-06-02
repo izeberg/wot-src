@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing, WWISE
 from gui.Scaleform.daapi.view.AchievementsUtils import AchievementsUtils
 from gui.Scaleform.daapi.view.lobby.profile.ProfileUtils import ProfileUtils, getProfileCommonInfo

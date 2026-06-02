@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from gui import GUI_SETTINGS
 from gui.Scaleform.daapi.view.lobby.hangar.BrowserView import makeBrowserParams

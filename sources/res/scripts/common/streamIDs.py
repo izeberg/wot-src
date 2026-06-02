@@ -1,3 +1,5 @@
+from __future__ import absolute_import, print_function
+from past.builtins import xrange
 STREAM_ID_CHAT_MIN = 1
 STREAM_ID_CHAT_MAX = 99
 CHAT_INITIALIZATION_ID = 50
@@ -8,7 +10,7 @@ STREAM_ID_ACCOUNT_CMDS_MAX = 30000
 class RangeStreamIDCallbacks(object):
 
     def __init__(self, rangeFactor=100):
-        self.__callbacks = dict()
+        self.__callbacks = {}
         self.__rangeFactor = int(rangeFactor)
 
     def addRangeCallback(self, range, callback):
@@ -24,15 +26,15 @@ class RangeStreamIDCallbacks(object):
         self.__callbacks.clear()
 
     def getCallbackForStreamID(self, streamID):
-        key = streamID / self.__rangeFactor
+        key = streamID // self.__rangeFactor
         return self.__callbacks.get(key, None)
 
     def __getKeySequence(self, range):
         lowBound, highBound = int(range[0]), range[1]
         if highBound < lowBound:
             highBound, lowBound = lowBound, highBound
-        lowKeyCandidate = lowBound / self.__rangeFactor
-        highKeyCandidate = highBound / self.__rangeFactor
+        lowKeyCandidate = lowBound // self.__rangeFactor
+        highKeyCandidate = highBound // self.__rangeFactor
         return xrange(lowKeyCandidate, highKeyCandidate + 1)
 
 
@@ -46,7 +48,7 @@ if __name__ == '__main__':
 
     def outStreamIdCB(streamID):
         cb = rangeCBs.getCallbackForStreamID(streamID)
-        print 'Callback for streamID:%s is :%s' % (streamID, str(cb(streamID)) if cb else 'None')
+        print('Callback for streamID:%s is :%s' % (streamID, str(cb(streamID)) if cb else 'None'))
 
 
     outStreamIdCB(50)

@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from future.utils import viewvalues
 from gui.Scaleform.daapi.view.meta.PersonalMissionsOperationAwardsScreenMeta import PersonalMissionsOperationAwardsScreenMeta
 from gui.Scaleform.daapi.view.lobby.missions.awards_formatters import AWARDS_SIZES, LABEL_ALIGN
 from gui.Scaleform.locale.PERSONAL_MISSIONS import PERSONAL_MISSIONS
@@ -105,7 +107,7 @@ class PersonalMissionsOperationAwardsScreen(PersonalMissionsOperationAwardsScree
         achievements = []
         hasTankCamo = False
         hasNationCamo = False
-        for quest in resultQuests.itervalues():
+        for quest in viewvalues(resultQuests):
             if quest.getBonuses('customizations', []):
                 hasTankCamo = True
                 continue

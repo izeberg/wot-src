@@ -112,7 +112,8 @@ class PreBattleQueueView(BaseView):
         playSound(PRE_QUEUE_ENTER)
 
     def _finalize(self):
-        playSound(PRE_QUEUE_EXIT)
+        if g_currentVehicle.isPresent() and not g_currentVehicle.item.isInBattle:
+            playSound(PRE_QUEUE_EXIT)
         super(PreBattleQueueView, self)._finalize()
 
     def __onExitBattleButtonClick(self):

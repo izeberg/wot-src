@@ -14,7 +14,7 @@
 		</GameObject>
 		<GameObject>
 			<name>normal</name>
-			<UUID>e1a3ce51-1d3b-4ac9-ae18-d1b41605c82e</UUID>
+			<UUID>a41e7428-0483-46e3-aa2c-10a8df368c20</UUID>
 			<flags>8</flags>
 		</GameObject>
 	</GameObjects>
@@ -28,12 +28,12 @@
 				<config>
 					<property>
 						<name>Parent</name>
-						<link>e1a3ce51-1d3b-4ac9-ae18-d1b41605c82e</link>
+						<link>a41e7428-0483-46e3-aa2c-10a8df368c20</link>
 					</property>
 				</config>
 			</component>
 			<component>
-				<UUID>e1a3ce51-1d3b-4ac9-ae18-d1b41605c82e</UUID>
+				<UUID>a41e7428-0483-46e3-aa2c-10a8df368c20</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -83,7 +83,7 @@
 				</config>
 			</component>
 			<component>
-				<UUID>e1a3ce51-1d3b-4ac9-ae18-d1b41605c82e</UUID>
+				<UUID>a41e7428-0483-46e3-aa2c-10a8df368c20</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -96,7 +96,7 @@
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>0 0 0</value>
+						<value>-0 0 0</value>
 					</property>
 				</config>
 			</component>
@@ -110,7 +110,7 @@
 				<config>
 					<property>
 						<name>normal</name>
-						<link>e1a3ce51-1d3b-4ac9-ae18-d1b41605c82e</link>
+						<link>a41e7428-0483-46e3-aa2c-10a8df368c20</link>
 					</property>
 					<property>
 						<name>damaged</name>
@@ -132,7 +132,7 @@
 			<version>1</version>
 			<component>
 				<UUID>77b81b0a-f870-4820-8315-818f371bb8c4</UUID>
-				<flags>35</flags>
+				<flags>3</flags>
 				<config>
 					<property>
 						<name>castShadows</name>
@@ -221,7 +221,23 @@
 						<name>Cast Shadows</name>
 						<value>1</value>
 					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
+					</property>
 				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>BW::VisibilityTunnelComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>77b81b0a-f870-4820-8315-818f371bb8c4</UUID>
+				<flags>3</flags>
 			</component>
 		</ComponentPool>
 		<ComponentPool>

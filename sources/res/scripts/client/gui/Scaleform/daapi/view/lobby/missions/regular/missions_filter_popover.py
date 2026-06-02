@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from account_helpers.AccountSettings import AccountSettings, MISSIONS_PAGE
 from gui.Scaleform.daapi.view.lobby.missions.missions_helper import HIDE_DONE, HIDE_UNAVAILABLE
 from gui.Scaleform.daapi.view.meta.MissionsFilterPopoverViewMeta import MissionsFilterPopoverViewMeta

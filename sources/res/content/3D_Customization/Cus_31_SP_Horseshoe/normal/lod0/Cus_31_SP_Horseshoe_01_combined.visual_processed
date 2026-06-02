@@ -19,6 +19,52 @@
 			<primitiveGroup>
 				0
 				<material>
+					<identifier>s_nd1</identifier>
+					<fx>shaders/custom/emissive.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>112</materialKind>
+					<property>
+						emissiveTexture
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/Masks/udes_mask_01.dds</Texture>
+					</property>
+					<property>
+						g_coldColor
+						<Vector4>1.000000 0.980392 0.760784 1.000000</Vector4>
+					</property>
+					<property>
+						g_emissiveParams
+						<Vector4>1.000000 3.000000 0.250000 1.000000</Vector4>
+					</property>
+					<property>
+						g_hotColor
+						<Vector4>1.000000 0.450980 0.000000 1.000000</Vector4>
+					</property>
+					<property>
+						g_maskFromTex
+						<Bool>true</Bool>
+					</property>
+					<property>
+						phaseTexture
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/Masks/udes_mask_01.dds</Texture>
+					</property>
+					<property>
+						srcBlend
+						<Int>9</Int>
+					</property>
+					<property>
+						g_enableVisTunnel
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_visibilityTunnelCompensation
+						<Float>1.500000</Float>
+					</property>
+				</material>
+				<groupOrigin>0.000000 0.491875 -0.017655</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
 					<identifier>s_nd0</identifier>
 					<fx>shaders/std_effects/PBS_tank.fx</fx>
 					<collisionFlags>0</collisionFlags>
@@ -51,52 +97,18 @@
 						normalMap
 						<Texture>content/3D_Customization/Cus_31_SP_Horseshoe/Cus_31_SP_Horseshoe_ANM.dds</Texture>
 					</property>
-				</material>
-				<groupOrigin>0.000000 0.300644 -0.010308</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
-				1
-				<material>
-					<identifier>s_nd1</identifier>
-					<fx>shaders/custom/emissive.fx</fx>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>112</materialKind>
 					<property>
-						emissiveTexture
-						<Texture>particles/content_deferred/GFX_models/GFX_textures/Masks/udes_mask_01.dds</Texture>
-					</property>
-					<property>
-						g_coldColor
-						<Vector4>1.000000 0.980392 0.760784 1.000000</Vector4>
-					</property>
-					<property>
-						g_emissiveParams
-						<Vector4>1.000000 3.000000 0.250000 1.000000</Vector4>
-					</property>
-					<property>
-						g_hotColor
-						<Vector4>1.000000 0.450980 0.000000 1.000000</Vector4>
-					</property>
-					<property>
-						g_maskFromTex
+						g_enableVisTunnel
 						<Bool>true</Bool>
 					</property>
-					<property>
-						phaseTexture
-						<Texture>particles/content_deferred/GFX_models/GFX_textures/Masks/udes_mask_01.dds</Texture>
-					</property>
-					<property>
-						srcBlend
-						<Int>9</Int>
-					</property>
 				</material>
-				<groupOrigin>0.000000 0.526058 -0.018882</groupOrigin>
+				<groupOrigin>0.000000 0.324611 -0.009638</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.236246 -0.200000 -0.079734</min>
-		<max>0.236246 0.803453 0.057175</max>
+		<min>-0.220895 -0.100000 -0.074553</min>
+		<max>0.220895 0.751246 0.053460</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
 	<geometrySize>79824</geometrySize>

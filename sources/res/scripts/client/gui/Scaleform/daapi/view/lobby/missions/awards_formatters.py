@@ -1,4 +1,6 @@
+from __future__ import absolute_import
 import typing
+from future.utils import viewvalues, viewitems
 from gui.impl import backport
 from gui.impl.gen import R
 from gui.Scaleform.genConsts.TOOLTIPS_CONSTANTS import TOOLTIPS_CONSTANTS
@@ -123,7 +125,7 @@ class TwitchAwardsComposer(CurtailingAwardsComposer):
     def _packMergedBonuses(self, mergedBonuses, size=AWARDS_SIZES.SMALL):
         mergedBonusCount = len(mergedBonuses)
         imgPath = RES_ICONS.getBonusIcon(size, 'default')
-        imgSource = imgPath.split('/')[(-1)]
+        imgSource = imgPath.rsplit('/', maxsplit=1)[(-1)]
         return {'name': 'groups', 
            'imgSource': imgSource, 
            'label': i18n.makeString(QUESTS.MISSIONS_AWARDS_MERGED, count=mergedBonusCount), 
@@ -242,9 +244,7 @@ class LootBoxBonusComposer(BonusNameQuestsBonusComposer):
         if alwaysVisibleCount:
             totalCount = alwaysVisibleCount + len(preformattedBonuses)
             if self._isMergeAllow() and totalCount > self._displayedRewardsCount:
-                insertPos = self._displayedRewardsCount - alwaysVisibleCount - 1
-                if insertPos < 0:
-                    insertPos = 0
+                insertPos = max(self._displayedRewardsCount - alwaysVisibleCount - 1, 0)
                 preformattedBonuses[insertPos:insertPos] = alwaysPreformatedBonuses
             else:
                 preformattedBonuses.extend(alwaysPreformatedBonuses)
@@ -319,7 +319,7 @@ class PersonalMissionsAwardComposer(CurtailingAwardsComposer):
 def _getTankwomansCountInOperation(operation):
     total = 0
     current = 0
-    for quest in operation.getFinalQuests().itervalues():
+    for quest in viewvalues(operation.getFinalQuests()):
         tankmen = quest.getBonuses('tankmen')
         if tankmen:
             total += 1
@@ -393,17 +393,14 @@ class TooltipOperationAwardComposer(MainOperationAwardComposer):
     def __init__(self, packer=None):
         super(TooltipOperationAwardComposer, self).__init__(packer=packer)
 
-    def _getKeySortOrder(self, key):
-        if key in self._BONUSES_ORDER:
-            return self._BONUSES_ORDER.index(key)
+    def _bonusSortKey(self, bonus):
+        if bonus.bonusName in self._BONUSES_ORDER:
+            return self._BONUSES_ORDER.index(bonus.bonusName)
         return -1
-
-    def _sortFunc(self, b1, b2):
-        return cmp(self._getKeySortOrder(b1.bonusName), self._getKeySortOrder(b2.bonusName))
 
     def _packBonuses(self, preformattedBonuses, size, gap=0, isObtained=False, obtainedImage='', obtainedImageOffset=0):
         result = []
-        for b in sorted(preformattedBonuses, cmp=self._sortFunc):
+        for b in sorted(preformattedBonuses, key=self._bonusSortKey):
             result.append(self._packBonus(b, size, gap, isObtained, obtainedImage, obtainedImageOffset))
 
         return result
@@ -415,7 +412,7 @@ class TooltipOperationAwardComposer(MainOperationAwardComposer):
             if rewardQuest is not None:
                 bonusList.extend(rewardQuest.getBonuses())
             else:
-                for _, bonuses in operation.getBonuses().iteritems():
+                for bonuses in viewvalues(operation.getBonuses()):
                     bonusList.extend(bonuses)
 
         elif not operation.isFullCompleted():
@@ -442,7 +439,7 @@ class TooltipPostponedOperationAwardComposer(TooltipOperationAwardComposer):
     def _getBonuses(self, operation):
         hiddenQuests = self._eventsCache.getHiddenQuests()
         awardQuestName = self.POSTPONE_PERSONAL_MISSION_TOKEN % operation.getID()
-        for questID, quest in hiddenQuests.iteritems():
+        for questID, quest in viewitems(hiddenQuests):
             if questID == awardQuestName:
                 return quest.getBonuses()
 

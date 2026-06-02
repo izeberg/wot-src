@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from battle_pass_common import BattlePassRewardReason as BPReason
 from frameworks.state_machine import StringEvent, StateEvent

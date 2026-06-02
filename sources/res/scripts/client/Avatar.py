@@ -2043,8 +2043,8 @@ class PlayerAvatar(BigWorld.Entity, ClientChat, CombatEquipmentManager, AvatarOb
             avatarParams = self.makeDefaultAvatarShotParams()
             vehicle = BigWorld.entity(self.playerVehicleID)
             if vehicle is not None and vehicle.isStarted:
-                shotParamsList = [
-                 avatarParams]
+                avatarParams.gunIndexDelayed = vehicle.dualGunIndex or 0
+                shotParamsList = [avatarParams]
                 vehicle.events.onCollectShotParams(shotParamsList)
                 avatarParams.predictShooting = all(param.predictShooting for param in shotParamsList)
             if error != CANT_SHOOT_ERROR.EMPTY_CLIP:

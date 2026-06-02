@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from CurrentVehicle import g_currentVehicle
 from gui import makeHtmlString
 from gui.Scaleform.daapi.view.lobby.customization.customization_carousel import DisjunctionCarouselFilter, FilterAliases
@@ -198,8 +199,7 @@ class ProgressiveStylePopover(CustomizationProgressiveKitPopoverMeta):
                 continue
             if item.isHiddenInUI():
                 continue
-            else:
-                showStyle = False
+            showStyle = False
             if not nationalEmblemDetected and intCD == nationalEmblemItem.intCD:
                 nationalEmblemDetected = True
             elif not otherDetected and intCD != nationalEmblemItem.intCD:

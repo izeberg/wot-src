@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/poland/Pl39_Husarz/normal/lod2/Gun_02</nodefullVisual>
+	<parent>vehicles/poland/Pl39_Husarz/normal/lod3/Gun_02</parent>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.781732 -0.377116 0.013733</min>
+		<max>0.501949 0.444560 5.577153</max>
+	</visibilityBox>
+</root>

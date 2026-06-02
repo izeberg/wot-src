@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from frameworks.wulf import WindowLayer
 from gui.Scaleform.daapi.view.lobby.shop.rental_term_selection_popover import RentalTermSelectionPopover
 from gui.Scaleform.daapi.view.lobby.shop.vehicle_sell_confirmation_popover import VehicleSellConfirmationPopover

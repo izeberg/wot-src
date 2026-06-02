@@ -568,6 +568,12 @@ msgstr "T-13"
 msgid "Chassis_R235_KB_52"
 msgstr "KB-52"
 
+msgid "Chassis_R236_Object_265_II"
+msgstr "265工程II型"
+
+msgid "Chassis_R239_Object_Veles"
+msgstr "维莱斯"
+
 msgid "Chassis_R23_T-43"
 msgstr "T-43"
 
@@ -847,6 +853,9 @@ msgstr "DM-45"
 msgid "DM_45_7x7"
 msgstr "DM-45"
 
+msgid "DTH_10"
+msgstr "DTH-10"
+
 msgid "GAZ-202"
 msgstr "GAZ 202"
 
@@ -905,7 +914,7 @@ msgid "IS-3M_SH"
 msgstr "IS-3 TB"
 
 msgid "IS-4_7x7"
-msgstr "IS-4 7v7"
+msgstr "IS-4 7x7"
 
 msgid "IS-6"
 msgstr "IS-6"
@@ -1989,13 +1998,13 @@ msgid "R144_K_91"
 msgstr "K-91"
 
 msgid "R144_K_91_7x7"
-msgstr "K-91 7v7"
+msgstr "K-91 7x7"
 
 msgid "R144_K_91_7x7_descr"
 msgstr "?empty?"
 
 msgid "R144_K_91_7x7_short"
-msgstr "K-91 7v7"
+msgstr "K-91 7x7"
 
 msgid "R144_K_91_descr"
 msgstr "?empty?"
@@ -2007,13 +2016,13 @@ msgid "R145_Object_705_A"
 msgstr "705工程A"
 
 msgid "R145_Object_705_A_7x7"
-msgstr "705工程A 7v7"
+msgstr "705工程A 7x7"
 
 msgid "R145_Object_705_A_7x7_descr"
 msgstr "?empty?"
 
 msgid "R145_Object_705_A_7x7_short"
-msgstr "705工程A 7v7"
+msgstr "705工程A 7x7"
 
 msgid "R145_Object_705_A_descr"
 msgstr "?empty?"
@@ -2085,14 +2094,14 @@ msgid "R149_Object_268_4"
 msgstr "268工程IV型"
 
 msgid "R149_Object_268_4_7x7"
-msgstr "268工程IV型 7v7"
+msgstr "268工程IV型 7x7"
 
 msgid "R149_Object_268_4_7x7_descr"
 msgstr ""
 "730工程IV型是以T-10(730工程)坦克为基础开发的另一个自行火炮方案，研发工作一直持续到1952年12月18日。在同一时间，该概念设计获得了268工程的编号。该项目计划在车体后部的封闭式战斗室中安装火炮，但由于需要对730工程的车体进行大量改装而取消。"
 
 msgid "R149_Object_268_4_7x7_short"
-msgstr "268工程IV型 7v7"
+msgstr "268工程IV型 7x7"
 
 msgid "R149_Object_268_4_descr"
 msgstr "?empty?"
@@ -2138,13 +2147,13 @@ msgid "R155_Object_277"
 msgstr "277工程"
 
 msgid "R155_Object_277_7x7"
-msgstr "277工程 7v7"
+msgstr "277工程 7x7"
 
 msgid "R155_Object_277_7x7_descr"
 msgstr "?empty?"
 
 msgid "R155_Object_277_7x7_short"
-msgstr "277工程 7v7"
+msgstr "277工程 7x7"
 
 msgid "R155_Object_277_descr"
 msgstr "?empty?"
@@ -3038,6 +3047,42 @@ msgstr "KB-52"
 msgid "R235_KB_52_short_special"
 msgstr "可靠的车体和炮塔装甲，弹夹炮"
 
+msgid "R236_Object_265_II"
+msgstr "265工程II型"
+
+msgid "R236_Object_265_II_descr"
+msgstr ""
+"265工程计划的双管火炮版本，研发于20世纪50年代末。非常规的设计方案(使用新型控制系统，并将驾驶员置于炮塔内)使其难以吸引到客户。最终，为了集中精力改进T-10(730工程)，该计划被叫停。"
+
+msgid "R236_Object_265_II_long_special"
+msgstr ""
+"265工程II型是一辆S系IX级重型坦克。该坦克将出色的车体和炮塔装甲与两门122毫米火炮相结合。坚固的装甲使其能够坚守阵地，而后置式炮塔则更便于使用\"卖侧面\"玩法。其双管火炮能造成巨额损伤，尤其是在使用齐射机制时。"
+
+msgid "R236_Object_265_II_short"
+msgstr "265工程II型"
+
+msgid "R236_Object_265_II_short_special"
+msgstr "双管火炮系统，可靠的车体和炮塔装甲"
+
+msgid "R239_Object_Veles"
+msgstr "维莱斯工程"
+
+msgid "R239_Object_Veles_desc"
+msgstr ""
+"一个研发于20世纪60年代的重型坦克计划，遵循传统设计思路: "
+"通过附加装甲来增强防护，并通过大口径武器来提高火力。该坦克的设计被认为过于保守，计划因此被叫停，转而支持更具泛用性和机动性的项目——即后来的主战坦克。"
+
+msgid "R239_Object_Veles_long_special"
+msgstr ""
+"维莱斯工程是一辆S系X级重型坦克。它拥有坚守阵地和突破防线所需的一切: "
+"出色的车体和炮塔装甲、一门具有高额平均单发损伤的火炮。不过，这一切以非常差的机动性为代价。但只要这辆坦克能在正确的时间出现在正确的点位，这一缺点的影响就会大幅减弱。"
+
+msgid "R239_Object_Veles_short"
+msgstr "维莱斯"
+
+msgid "R239_Object_Veles_short_special"
+msgstr "坚固的车体和炮塔装甲，高额的平均单发损伤"
+
 msgid "R23_T-43"
 msgstr "T-43"
 
@@ -3267,13 +3312,13 @@ msgid "R88_Object268"
 msgstr "268工程"
 
 msgid "R88_Object268_7x7"
-msgstr "268工程 7v7"
+msgstr "268工程 7x7"
 
 msgid "R88_Object268_7x7_descr"
 msgstr "?empty?"
 
 msgid "R88_Object268_7x7_short"
-msgstr "268工程 7v7"
+msgstr "268工程 7x7"
 
 msgid "R88_Object268_descr"
 msgstr "?empty?"
@@ -3316,13 +3361,13 @@ msgid "R97_Object_140"
 msgstr "140工程"
 
 msgid "R97_Object_140_7x7"
-msgstr "140工程 7v7"
+msgstr "140工程 7x7"
 
 msgid "R97_Object_140_7x7_descr"
 msgstr "?empty?"
 
 msgid "R97_Object_140_7x7_short"
-msgstr "140工程 7v7"
+msgstr "140工程 7x7"
 
 msgid "R97_Object_140_cl"
 msgstr "140工程 CL"
@@ -3384,6 +3429,9 @@ msgstr "R-123C"
 
 msgid "R_123KR"
 msgstr "R-123KR"
+
+msgid "R_123V"
+msgstr "R-123V"
 
 msgid "R_123_1476"
 msgstr "R-123 (1476)"
@@ -4093,6 +4141,12 @@ msgstr "T-13"
 msgid "Turret_1_R235_KB_52"
 msgstr "KB-52"
 
+msgid "Turret_1_R236_Object_265_II"
+msgstr "265工程II型"
+
+msgid "Turret_1_R239_Object_Veles"
+msgstr "维莱斯"
+
 msgid "Turret_1_R23_T-43"
 msgstr "T-43(42型)"
 
@@ -4569,6 +4623,9 @@ msgstr "V-12-5"
 
 msgid "V_12_5B"
 msgstr "V-12-5B"
+
+msgid "V_12_5C"
+msgstr "V-12-5C"
 
 msgid "V_12_5F"
 msgstr "V-12-5F"
@@ -5599,6 +5656,9 @@ msgstr "122mm BL-9OM炮"
 msgid "_122mm_BL_13"
 msgstr "122mm BL-13炮"
 
+msgid "_122mm_BL_13D_dualgun"
+msgstr "122mm BL-13D-SD炮"
+
 msgid "_122mm_BL_13_1_257"
 msgstr "122mm BL-13-1炮 (257)"
 
@@ -5647,6 +5707,9 @@ msgstr "BP-460A (KV-1)"
 msgid "_122mm_BP_460A_KV_1S"
 msgstr "BP-460A (KV-1S)"
 
+msgid "_122mm_BP_471BMM"
+msgstr "BP 471BMM"
+
 msgid "_122mm_BP_471D"
 msgstr "BP-471D"
 
@@ -5655,6 +5718,9 @@ msgstr "BR-472"
 
 msgid "_122mm_BR-471D_P"
 msgstr "BR-471DP"
+
+msgid "_122mm_BR_471BMM"
+msgstr "BR 471BMM"
 
 msgid "_122mm_BR_471DS_SU"
 msgstr "BR-471DS (SU)"
@@ -5832,6 +5898,9 @@ msgstr "OF-420S (KV-1S)"
 
 msgid "_122mm_OF_462"
 msgstr "OF-462"
+
+msgid "_122mm_OF_471BMM"
+msgstr "OF 471BMM"
 
 msgid "_122mm_S34_II"
 msgstr "122mm S-34-II炮"
@@ -6105,6 +6174,9 @@ msgstr "12LL"
 
 msgid "_12RT"
 msgstr "12RT"
+
+msgid "_12RT_B"
+msgstr "12RT-B"
 
 msgid "_12RT_Roz"
 msgstr "12RT TITT"
@@ -6448,6 +6520,9 @@ msgstr "152mm D-4S炮"
 msgid "_152mm_D_4S_704"
 msgstr "152mm D-4S (704)炮"
 
+msgid "_152mm_D_73"
+msgstr "152mm D-73炮"
+
 msgid "_152mm_Howitzer_D_1"
 msgstr "152mm D-1榴弹炮"
 
@@ -6517,6 +6592,9 @@ msgstr "UBK-551M (268)"
 msgid "_152mm_UBK_551O"
 msgstr "UBK-551O"
 
+msgid "_152mm_UBK_551OD"
+msgstr "UBK-551OD"
+
 msgid "_152mm_UBR551"
 msgstr "UBR-551"
 
@@ -6544,6 +6622,9 @@ msgstr "UBR-551M (268)"
 msgid "_152mm_UBR_551O"
 msgstr "UBR-551O"
 
+msgid "_152mm_UBR_551OD"
+msgstr "UBR-551OD"
+
 msgid "_152mm_UBR_551PD_704"
 msgstr "UBR-551PD (704)"
 
@@ -6564,6 +6645,9 @@ msgstr "UOF-551MOF"
 
 msgid "_152mm_UOF_551O"
 msgstr "UOF-551O"
+
+msgid "_152mm_UOF_551OD"
+msgstr "UOF-551OD"
 
 msgid "_152mm_howitzer_ML-20_mod_1931"
 msgstr "152mm ML-20炮(31型)"

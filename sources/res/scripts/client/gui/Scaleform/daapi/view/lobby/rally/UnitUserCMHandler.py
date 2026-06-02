@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from account_helpers import getAccountDatabaseID
 from adisp import adisp_process
 from constants import PREBATTLE_TYPE
@@ -99,12 +100,12 @@ class UnitUserCMHandler(BaseUserCMHandler, IGlobalListener):
     def giveEquipmentCommander(self, databaseID, role):
         yield self.prbDispatcher.sendPrbRequest(GiveEquipmentCommanderCtx(databaseID, role, 'prebattle/giveEquipmentCommander'))
 
-    def _addMutedInfo(self, option, userCMInfo):
+    def _addMutedInfo(self, options, userCMInfo):
         muted = USER.UNSET_MUTED if userCMInfo.isMuted else USER.SET_MUTED
         if not userCMInfo.isIgnored:
             if self.bwProto.voipController.isVOIPEnabled():
-                option.append(self._makeItem(muted, MENU.contextmenu(muted)))
-        return option
+                options.append(self._makeItem(muted, MENU.contextmenu(muted)))
+        return options
 
     def _addSquadInfo(self, options, userCMInfo):
         if self.prbEntity.getEntityType() not in PREBATTLE_TYPE.SQUAD_PREBATTLES:

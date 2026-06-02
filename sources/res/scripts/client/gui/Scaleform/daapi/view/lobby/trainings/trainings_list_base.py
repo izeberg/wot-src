@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import ArenaType
 from adisp import adisp_process
 from constants import PREBATTLE_MAX_OBSERVERS_IN_TEAM, OBSERVERS_BONUS_TYPES

@@ -466,6 +466,9 @@ msgstr "幻影"
 msgid "Chassis_F141_Durendal"
 msgstr "杜兰达尔"
 
+msgid "Chassis_F142_M47_Chevalier"
+msgstr "M47 \"谢瓦利埃\""
+
 msgid "Chassis_F143_Fauteur"
 msgstr "庇护者"
 
@@ -717,6 +720,14 @@ msgstr "SARL 42"
 
 msgid "Citroen_105"
 msgstr "雪铁龙 105"
+
+msgid "Continental_AV_1790_5B_Chevalier"
+msgstr "大陆 AV-1790-5B (\"谢瓦利埃\")"
+
+msgid "Continental_AV_1790_5B_Chevalier_short"
+msgstr ""
+"大陆\n"
+"AV-1790-5B (\"谢瓦利埃\")"
 
 msgid "Continental_AV_1790_8_Terrifiant"
 msgstr "大陆 AV-1790-8(可怖)"
@@ -1473,6 +1484,27 @@ msgstr "杜兰达尔"
 msgid "F141_Durendal_short_special"
 msgstr "带有短弹夹的弹夹炮，良好的机动性"
 
+msgid "F142_M47_Chevalier"
+msgstr "M47 \"谢瓦利埃\""
+
+msgid "F142_M47_Chevalier_descr"
+msgstr ""
+"M47是F系陆军装备的坦克，该计划旨在对其进行大规模现代化改造。主要目标是在生产出足够数量的AMX "
+"30坦克之前，使该坦克保持先进水平。设计方案要求安装一门全新火炮、增强火控系统、强化装甲、安装推土铲和外挂油箱，并减少乘员——驾驶员助手的位置被弹药架取代。然而，AMX"
+" "
+"30的列装速度快于预期，M47的现代化改造对于F系陆军而言已经过时。该坦克也曾计划用于出口，但并未吸引到客户。为展示换装武器的可能性，建造了一辆装备全新火炮的原型车；然而，其后续历史不得而知。"
+
+msgid "F142_M47_Chevalier_long_special"
+msgstr ""
+"M47 "
+"\"谢瓦利埃\"是一辆F系IX级中型坦克。虽然没有任何突出的优点，但凭借手感良好且俯角出色的火炮、良好的机动性和不俗的炮塔装甲，它成为颇具竞争力的多面手。大面积的间隙装甲覆盖也提供了额外的防护，进一步增强了其生存能力。"
+
+msgid "F142_M47_Chevalier_short"
+msgstr "M47 \"谢瓦利埃\""
+
+msgid "F142_M47_Chevalier_short_special"
+msgstr "坚固的炮塔装甲，良好的火炮俯角"
+
 msgid "F143_Fauteur"
 msgstr "庇护者"
 
@@ -1527,13 +1559,13 @@ msgid "F18_Bat_Chatillon25t"
 msgstr "查狄伦 25t"
 
 msgid "F18_Bat_Chatillon25t_7x7"
-msgstr "查狄伦 25t 7v7"
+msgstr "查狄伦 25t 7x7"
 
 msgid "F18_Bat_Chatillon25t_7x7_descr"
 msgstr "?empty?"
 
 msgid "F18_Bat_Chatillon25t_7x7_short"
-msgstr "查狄伦 25t 7v7"
+msgstr "查狄伦 25t 7x7"
 
 msgid "F18_Bat_Chatillon25t_descr"
 msgstr "?empty?"
@@ -1737,10 +1769,10 @@ msgid "F64_AMX_50Fosh_B"
 msgstr "AMX 50 福熙 B"
 
 msgid "F64_AMX_50Fosh_B_7x7"
-msgstr "AMX 50 福熙 B 7v7"
+msgstr "AMX 50 福熙 B 7x7"
 
 msgid "F64_AMX_50Fosh_B_7x7_short"
-msgstr "AMX 50 福熙 B 7v7"
+msgstr "AMX 50 福熙 B 7x7"
 
 msgid "F64_AMX_50Fosh_B_descr"
 msgstr "?empty?"
@@ -1922,13 +1954,13 @@ msgid "F82_AMX_M4_Mle1949_Ter"
 msgstr "AMX M4(1954)"
 
 msgid "F82_AMX_M4_Mle1949_Ter_7x7"
-msgstr "AMX M4(1954) 7v7"
+msgstr "AMX M4(1954) 7x7"
 
 msgid "F82_AMX_M4_Mle1949_Ter_7x7_descr"
 msgstr "?empty?"
 
 msgid "F82_AMX_M4_Mle1949_Ter_7x7_short"
-msgstr "AMX M4(1954) 7v7"
+msgstr "AMX M4(1954) 7x7"
 
 msgid "F82_AMX_M4_Mle1949_Ter_descr"
 msgstr "?empty?"
@@ -2001,7 +2033,7 @@ msgid "F88_AMX_13_105"
 msgstr "AMX 13 105"
 
 msgid "F88_AMX_13_105_7x7"
-msgstr "AMX 13 105 7v7"
+msgstr "AMX 13 105 7x7"
 
 msgid "F88_AMX_13_105_7x7_short"
 msgstr "AMX 13 105 7"
@@ -2581,6 +2613,9 @@ msgstr "SCR 528F"
 msgid "SCR_528_BPXIV"
 msgstr "SCR 528F"
 
+msgid "SCR_528_Chevalier"
+msgstr "SCR 528 (\"谢瓦利埃\")"
+
 msgid "SCR_528_F"
 msgstr "SCR-528 F"
 
@@ -2903,6 +2938,9 @@ msgstr "幻影"
 
 msgid "Turret_1_F141_Durendal"
 msgstr "杜兰达尔"
+
+msgid "Turret_1_F142_M47_Chevalier"
+msgstr "M47 \"谢瓦利埃\""
 
 msgid "Turret_1_F143_Fauteur"
 msgstr "庇护者"
@@ -3299,6 +3337,9 @@ msgstr "105mm CN 105/57炮"
 msgid "_105mm_CN_105_57_SH"
 msgstr "105mm CN 105/57炮"
 
+msgid "_105mm_CN_105_F1_Chevalier"
+msgstr "105mm CN-105-F1炮 (\"谢瓦利埃\")"
+
 msgid "_105mm_Canon_13TR"
 msgstr "105mm 13TR炮"
 
@@ -3356,6 +3397,9 @@ msgstr "OCC-105-F1"
 msgid "_105mm_OCC_105_F1M"
 msgstr "OCC 105 F1M"
 
+msgid "_105mm_OCC_105_F1_Chevalier"
+msgstr "OCC-105-F1 (\"谢瓦利埃\")"
+
 msgid "_105mm_OCC_105_F1_ERAC"
 msgstr "OCC-105-F1 ERAC"
 
@@ -3376,6 +3420,9 @@ msgstr "OE-105-mle.60"
 
 msgid "_105mm_OE_105_Mle_60M"
 msgstr "OE 105 F1M Mle.60"
+
+msgid "_105mm_OE_105_Mle_60_Chevalier"
+msgstr "OE-105 Mle.60 (\"谢瓦利埃\")"
 
 msgid "_105mm_OE_105_Mle_60_D1504"
 msgstr "OE-105-mle.60 D.1504"
@@ -3439,6 +3486,9 @@ msgstr "OFL-105-F1"
 
 msgid "_105mm_OFL_105_F1M"
 msgstr "OFL 105 F1M"
+
+msgid "_105mm_OFL_105_F1_Chevalier"
+msgstr "OFL-105-F1 (\"谢瓦利埃\")"
 
 msgid "_105mm_OFL_105_F1_ERAC"
 msgstr "OFL-105-F1 ERAC"

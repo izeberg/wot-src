@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from constants import IS_CLIENT, OFFER_TOKEN_PREFIX, IS_WEB
 from items.components.supply_slot_categories import SlotCategories
 EPIC_TOKEN_PREFIX = 'epic:'

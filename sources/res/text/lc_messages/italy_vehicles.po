@@ -262,6 +262,9 @@ msgstr "\"战鳄\""
 msgid "Chassis_It40_Predatore"
 msgstr "掠夺者"
 
+msgid "Chassis_It41_Cerbero"
+msgstr "冥犬"
+
 msgid "Continental_AOI_1490_italy"
 msgstr "大陆 AOI-1490-I"
 
@@ -544,14 +547,14 @@ msgid "It23_CC_3"
 msgstr "CC 3 “弥诺陶洛斯”"
 
 msgid "It23_CC_3_7x7"
-msgstr "CC 3 “弥诺陶洛斯” 7v7"
+msgstr "CC 3 “弥诺陶洛斯” 7x7"
 
 msgid "It23_CC_3_7x7_descr"
 msgstr ""
 "20世纪60年代，奥托·梅莱拉公司在结合M系与D系设计元素的基础上设计了这辆坦克。它计划采用D系的动力包，自产的舰炮及配套的自动装填系统。该坦克显著的特征是射界有限的炮塔，驾驶员位于炮塔中的布局，以及机械式装弹机。"
 
 msgid "It23_CC_3_7x7_short"
-msgstr "CC 3 “弥诺陶洛斯” 7v7"
+msgstr "CC 3 “弥诺陶洛斯” 7x7"
 
 msgid "It23_CC_3_descr"
 msgstr ""
@@ -770,6 +773,23 @@ msgstr "掠夺者"
 msgid "It40_Predatore_short_special"
 msgstr "自动装填炮，良好的机动性"
 
+msgid "It41_Cerbero"
+msgstr "冥犬"
+
+msgid "It41_Cerbero_descr"
+msgstr ""
+"战后数十年间，百废待兴的I系无力为坦克建造投入大量资金。因此，工程师们基于现有研发成果设计了全新的坦克原型车。其中一个解决方案是将\"菲利斯\"原型车的加大炮塔安装在CC-56底盘上。如此一来，坦克重量得以降低，而安装全新火炮则显著提高了其火力。"
+
+msgid "It41_Cerbero_long_special"
+msgstr ""
+"冥犬是一辆I系IX级自行反坦克炮。它配备一门3连发逆向自动装填炮。该系统可确保坦克在各种情况下都能持续输出火力。冥犬还拥有坚固的装甲，使其能够活跃在前线持续作战，不给对手任何喘息之机。"
+
+msgid "It41_Cerbero_short"
+msgstr "冥犬"
+
+msgid "It41_Cerbero_short_special"
+msgstr "坚固的车体和炮塔装甲，逆向自动装填炮"
+
 msgid "MB_822_Ka_500"
 msgstr "MB 822 Ka-500"
 
@@ -793,6 +813,9 @@ msgstr "MB 838 CaM-500A"
 
 msgid "MTU_870"
 msgstr "MTU 870"
+
+msgid "MTU_870_B"
+msgstr "MTU 870 (B)"
 
 msgid "MTU_870_P"
 msgstr "MTU 870 (p)"
@@ -841,6 +864,9 @@ msgstr "RV 4"
 
 msgid "RV_4B"
 msgstr "RV 4B"
+
+msgid "RV_4C"
+msgstr "RV 4C"
 
 msgid "RV_4F"
 msgstr "RV 4F"
@@ -1057,6 +1083,9 @@ msgstr "\"战鳄\""
 
 msgid "Turret_1_It40_Predatore"
 msgstr "掠夺者"
+
+msgid "Turret_1_It41_Cerbero"
+msgstr "冥犬"
 
 msgid "Turret_2_It03_M15_42"
 msgstr "M15/42改进型"
@@ -1337,6 +1366,9 @@ msgstr "c.p. 120/67 HVAP T17E"
 msgid "_127mm_APDS_127_54"
 msgstr "c.p. 127/54 Mk. 316"
 
+msgid "_127mm_APDS_127_54B"
+msgstr "c.p. 127/54 Mk.316B"
+
 msgid "_127mm_AP_127_54"
 msgstr "c.p. 127/54 Mk.216"
 
@@ -1349,8 +1381,14 @@ msgstr "127mm L/58炮"
 msgid "_127mm_HEAT_127_54"
 msgstr "c.c. 127/54 Mk. 411"
 
+msgid "_127mm_HEAT_127_54B"
+msgstr "c.c. 127/54 Mk.411B"
+
 msgid "_127mm_Mark_116"
 msgstr "a.e. 127/54 Mk. 116"
+
+msgid "_127mm_Mark_116B"
+msgstr "a.e. 127/54 Mk.116B"
 
 msgid "_127mm_OTO_Melara"
 msgstr "奥托·梅莱拉 127mm炮"

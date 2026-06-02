@@ -17,21 +17,12 @@
 				<row3>0.000000 0.000000 0.000000</row3>
 			</transform>
 			<node>
-				<identifier>HP_attachment</identifier>
-				<transform>
-					<row0>1.000000 0.000000 0.000000</row0>
-					<row1>0.000000 1.000000 0.000000</row1>
-					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 0.000000 0.000000</row3>
-				</transform>
-			</node>
-			<node>
 				<identifier>static</identifier>
 				<transform>
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 1.000000 0.000000</row1>
 					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 0.000000 0.000000</row3>
+					<row3>-0.146672 0.000000 0.000000</row3>
 				</transform>
 				<node>
 					<identifier>Joint_01</identifier>
@@ -39,7 +30,7 @@
 						<row0>1.000000 0.000000 0.000000</row0>
 						<row1>0.000000 1.000000 0.000000</row1>
 						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>-0.070805 0.039162 0.000000</row3>
+						<row3>-0.070804 0.039162 0.000000</row3>
 					</transform>
 					<node>
 						<identifier>Joint_01_BlendBone</identifier>
@@ -47,7 +38,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 -1.000000</row2>
-							<row3>0.070805 -0.039162 0.000000</row3>
+							<row3>0.217476 -0.039162 0.000000</row3>
 						</transform>
 					</node>
 				</node>
@@ -57,7 +48,7 @@
 						<row0>1.000000 0.000000 0.000000</row0>
 						<row1>0.000000 1.000000 0.000000</row1>
 						<row2>0.000000 0.000000 -1.000000</row2>
-						<row3>0.000000 0.000000 0.000000</row3>
+						<row3>0.146672 0.000000 0.000000</row3>
 					</transform>
 				</node>
 			</node>
@@ -68,14 +59,14 @@
 		<node>static_BlendBone</node>
 		<node>Joint_01_BlendBone</node>
 		<geometry>
-			<vertices>attachment_Shape.vertices</vertices>
-			<primitive>attachment_Shape.indices</primitive>
+			<vertices>s0Shape.vertices</vertices>
+			<primitive>s0Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>equipment_skinned</identifier>
+					<identifier>equipment1_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>0</materialKind>
 					<property>
 						diffuseMap
@@ -94,14 +85,14 @@
 						<Texture>content/3D_Customization/Cus_07_Scout_Motobike/Cus_07_Scout_Motobike_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.076711 0.198161 0.026878</groupOrigin>
+				<groupOrigin>-0.222792 0.197508 0.026878</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-0.353872 0.012032 -0.733582</min>
-		<max>0.200450 0.384291 0.679825</max>
+		<min>-0.499953 0.000209 -0.733582</min>
+		<max>0.054369 0.394806 0.679825</max>
 	</boundingBox>
-	<geometrySize>11584</geometrySize>
+	<geometrySize>13120</geometrySize>
 </root>

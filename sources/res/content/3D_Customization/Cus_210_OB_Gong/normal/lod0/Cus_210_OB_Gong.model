@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<visibilityBox>
-		<min>-0.300000 -0.200000 -0.650356</min>
-		<max>0.300000 0.750000 1.349644</max>
+		<min>-0.258973 -0.100001 -0.063849</min>
+		<max>0.258973 0.690562 0.063858</max>
 	</visibilityBox>
 	<parent>content/3D_Customization/Cus_210_OB_Gong/normal/lod1/Cus_210_OB_Gong</parent>
 	<extent>32.000000</extent>
-	<nodelessVisual>content/3D_Customization/Cus_210_OB_Gong/normal/lod0/Cus_210_OB_Gong</nodelessVisual>
 	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_210_OB_Gong/normal/lod0/Cus_210_OB_Gong</nodefullVisual>
 </root>

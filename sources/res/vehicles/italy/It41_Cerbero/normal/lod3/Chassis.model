@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/italy/It41_Cerbero/normal/lod3/Chassis</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/italy/It41_Cerbero/normal/lod4/Chassis</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.537877 0.014475 -3.247584</min>
+		<max>1.538587 1.200108 3.676629</max>
+	</visibilityBox>
+</root>

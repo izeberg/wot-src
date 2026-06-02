@@ -928,14 +928,14 @@
 						<Texture>content/3D_Customization/Cus_113_Historical_M129/Cus_113_Historical_M129_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.081127 0.280583 0.004837</groupOrigin>
+				<groupOrigin>0.081127 0.329970 0.004837</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-0.127081 -0.198720 -0.468421</min>
-		<max>0.289334 0.759886 0.458747</max>
+		<min>-0.130400 -0.099998 -0.471211</min>
+		<max>0.290000 0.757940 0.458747</max>
 	</boundingBox>
 	<geometrySize>111020</geometrySize>
 </root>

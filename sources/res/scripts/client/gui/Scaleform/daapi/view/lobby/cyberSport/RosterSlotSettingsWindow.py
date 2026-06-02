@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from account_helpers.AccountSettings import AccountSettings
 from gui.Scaleform.daapi.view.lobby.vehicle_selector_base import VehicleSelectorBase
 from gui.Scaleform.daapi.view.lobby.rally.vo_converters import makeVehicleVO, makeFiltersVO, makeVehicleBasicVO
@@ -159,7 +160,7 @@ class RosterSlotSettingsWindow(RosterSlotSettingsWindowMeta, VehicleSelectorBase
         vehicleCD = self.__currentSlot['intCD']
         vehicle = self.itemsCache.items.getItemByCD(int(vehicleCD))
         if vehicle.hasNationGroup and vehicle.activeInNationGroup:
-            addVehCD = iterVehTypeCDsInNationGroup(vehicleCD).next()
+            addVehCD = next(iterVehTypeCDsInNationGroup(vehicleCD))
             vehicle = self.itemsCache.items.getItemByCD(addVehCD)
             addSlot = makeVehicleVO(vehicle, self.__convertLevelsRange(self._levelsRange), self.__vehicleTypes)
             slotSettings = [row, 1 - column, addSlot]

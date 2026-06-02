@@ -2,6 +2,10 @@
 <root>
 	<parent>content/3D_Customization/Cus_73_OTG_Machinegun/normal/lod2/Cus_73_OTG_Machinegun</parent>
 	<extent>64.000000</extent>
-	<nodefullVisual>content/3D_Customization/Cus_73_OTG_Machinegun/normal/lod1/Cus_73_OTG_Machinegun</nodefullVisual>
 	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.462475 -0.100000 -0.635014</min>
+		<max>0.290086 0.731705 0.972121</max>
+	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/Cus_73_OTG_Machinegun/normal/lod1/Cus_73_OTG_Machinegun</nodefullVisual>
 </root>

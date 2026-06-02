@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from datetime import timedelta
 OPEN_BUNDLE_GAME_PARAMS_KEY = 'open_bundle_config'
 OPEN_BUNDLE_PDATA_KEY = 'openBundle'

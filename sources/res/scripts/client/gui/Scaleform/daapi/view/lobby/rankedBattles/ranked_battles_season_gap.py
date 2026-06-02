@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import time
 from helpers import dependency, time_utils
 from gui.ClientUpdateManager import g_clientUpdateManager

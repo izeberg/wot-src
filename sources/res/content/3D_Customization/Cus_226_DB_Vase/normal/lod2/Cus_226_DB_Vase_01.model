@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_226_DB_Vase/normal/lod3/Cus_226_DB_Vase_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.451815 -0.000000 -0.594886</min>
+		<max>0.130432 0.414855 0.591303</max>
+	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/Cus_226_DB_Vase/normal/lod2/Cus_226_DB_Vase_01</nodefullVisual>
+	<tank>true</tank>
+</root>

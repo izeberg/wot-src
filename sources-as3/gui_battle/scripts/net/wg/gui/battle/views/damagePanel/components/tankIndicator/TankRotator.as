@@ -44,13 +44,13 @@ package net.wg.gui.battle.views.damagePanel.components.tankIndicator
       
       private var _hasYoh:Boolean = false;
       
-      private var _mainLeftTrackState:String = "normal";
+      private var _mainleftTrackState:String = "normal";
       
-      private var _secondLeftTrackState:String = "normal";
+      private var _secondleftTrackState:String = "normal";
       
-      private var _mainRightTrackState:String = "normal";
+      private var _mainrightTrackState:String = "normal";
       
-      private var _secondRightTrackState:String = "normal";
+      private var _secondrightTrackState:String = "normal";
       
       public function TankRotator()
       {
@@ -157,19 +157,6 @@ package net.wg.gui.battle.views.damagePanel.components.tankIndicator
          this.yawChangeColor(this.rightGunConstraint,YAW_ORANGE_COLOR);
       }
       
-      public function set hasYoh(param1:Boolean) : void
-      {
-         this._hasYoh = param1;
-         if(this.leftTrack)
-         {
-            this.leftTrack.alwaysVisible = this._hasYoh;
-         }
-         if(this.rightTrack)
-         {
-            this.rightTrack.alwaysVisible = this._hasYoh;
-         }
-      }
-      
       private function calculateYohModuleState(param1:String, param2:String) : String
       {
          var _loc3_:String = Values.EMPTY_STR;
@@ -193,11 +180,11 @@ package net.wg.gui.battle.views.damagePanel.components.tankIndicator
          var _loc6_:String = param2;
          if(_loc3_ == VehicleModules.LEFT_TRACK)
          {
-            param2 = this._mainLeftTrackState + MAIN_SUBFIX + this._secondLeftTrackState + SECOND_POSTFIX;
+            param2 = this._mainleftTrackState + MAIN_SUBFIX + this._secondleftTrackState + SECOND_POSTFIX;
          }
          else
          {
-            param2 = this._mainRightTrackState + MAIN_SUBFIX + this._secondRightTrackState + SECOND_POSTFIX;
+            param2 = this._mainrightTrackState + MAIN_SUBFIX + this._secondrightTrackState + SECOND_POSTFIX;
          }
          if(_loc6_ == BATTLE_ITEM_STATES.REPAIRED)
          {
@@ -211,6 +198,19 @@ package net.wg.gui.battle.views.damagePanel.components.tankIndicator
          var _loc3_:ColorTransform = param1.transform.colorTransform;
          _loc3_.color = param2;
          param1.transform.colorTransform = _loc3_;
+      }
+      
+      public function set hasYoh(param1:Boolean) : void
+      {
+         this._hasYoh = param1;
+         if(this.leftTrack)
+         {
+            this.leftTrack.alwaysVisible = this._hasYoh;
+         }
+         if(this.rightTrack)
+         {
+            this.rightTrack.alwaysVisible = this._hasYoh;
+         }
       }
    }
 }

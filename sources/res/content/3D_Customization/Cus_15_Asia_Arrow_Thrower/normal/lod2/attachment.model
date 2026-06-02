@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>content/3D_Customization/Cus_15_Asia_Arrow_Thrower/normal/lod2/attachment</nodefullVisual>
 	<parent>content/3D_Customization/Cus_15_Asia_Arrow_Thrower/normal/lod3/attachment</parent>
 	<extent>96.000000</extent>
 	<visibilityBox>
-		<min>-0.486675 -0.200001 -0.547344</min>
+		<min>-0.486675 -0.099661 -0.547344</min>
 		<max>0.486675 1.150889 0.614327</max>
 	</visibilityBox>
 	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_15_Asia_Arrow_Thrower/normal/lod2/attachment</nodefullVisual>
 </root>

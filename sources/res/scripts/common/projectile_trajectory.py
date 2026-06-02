@@ -1,3 +1,4 @@
+from __future__ import absolute_import, division
 import BigWorld, Math
 
 def computeProjectileTrajectory(beginPoint, velocity, gravity, time, epsilon):

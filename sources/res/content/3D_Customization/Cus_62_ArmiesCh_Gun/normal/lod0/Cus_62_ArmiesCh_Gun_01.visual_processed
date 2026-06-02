@@ -51,14 +51,14 @@
 						<Texture>content/3D_Customization/Cus_62_ArmiesCh_Gun/Cus_62_ArmiesCh_Gun_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.064175 0.273071 0.369214</groupOrigin>
+				<groupOrigin>-0.064175 0.323071 0.369761</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.238738 -0.200000 -0.534062</min>
-		<max>0.110388 0.746142 1.272491</max>
+		<min>-0.238738 -0.100000 -0.533515</min>
+		<max>0.110388 0.746142 1.273037</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>229454</geometrySize>
+	<geometrySize>229898</geometrySize>
 </root>

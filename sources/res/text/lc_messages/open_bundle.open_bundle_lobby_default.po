@@ -47,7 +47,7 @@ msgid "entryPoint/button"
 msgstr "前往活动"
 
 msgid "entryPoint/title"
-msgstr "{{eventName}}现已开启！"
+msgstr "{{eventName}}现已开启。即刻查看！"
 
 msgid "intro/cards/description/c_1"
 msgstr ""
@@ -117,6 +117,9 @@ msgstr "x{{count}}"
 msgid "notifications/specialReward/multiplier"
 msgstr "x{{count}}"
 
+msgid "notifications/specialReward/showAttachments"
+msgstr "前往个性化"
+
 msgid "notifications/specialReward/showStyle"
 msgstr "前往风格"
 
@@ -124,7 +127,7 @@ msgid "notifications/specialReward/showVehicle"
 msgstr "前往坦克"
 
 msgid "notifications/specialReward/title"
-msgstr "您已获得{{eventName}}主要奖励！"
+msgstr "已获得 {{eventName}}主要奖励！"
 
 msgid "serviceChannelMessages/cellRewards"
 msgstr "额外奖励:"

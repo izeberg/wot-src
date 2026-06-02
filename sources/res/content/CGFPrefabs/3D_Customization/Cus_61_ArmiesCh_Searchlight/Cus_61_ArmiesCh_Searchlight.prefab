@@ -19,7 +19,7 @@
 		</GameObject>
 		<GameObject>
 			<name>normal</name>
-			<UUID>7ae1a56f-5490-4b58-9370-e4856ff3628d</UUID>
+			<UUID>e429899c-55df-4383-a09b-476acfc53753</UUID>
 			<flags>8</flags>
 		</GameObject>
 	</GameObjects>
@@ -33,7 +33,7 @@
 				<config>
 					<property>
 						<name>Parent</name>
-						<link>7ae1a56f-5490-4b58-9370-e4856ff3628d</link>
+						<link>e429899c-55df-4383-a09b-476acfc53753</link>
 					</property>
 				</config>
 			</component>
@@ -48,7 +48,7 @@
 				</config>
 			</component>
 			<component>
-				<UUID>7ae1a56f-5490-4b58-9370-e4856ff3628d</UUID>
+				<UUID>e429899c-55df-4383-a09b-476acfc53753</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -119,7 +119,7 @@
 				</config>
 			</component>
 			<component>
-				<UUID>7ae1a56f-5490-4b58-9370-e4856ff3628d</UUID>
+				<UUID>e429899c-55df-4383-a09b-476acfc53753</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -132,7 +132,7 @@
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>0 0 0</value>
+						<value>-0 0 0</value>
 					</property>
 				</config>
 			</component>
@@ -146,7 +146,7 @@
 				<config>
 					<property>
 						<name>normal</name>
-						<link>7ae1a56f-5490-4b58-9370-e4856ff3628d</link>
+						<link>e429899c-55df-4383-a09b-476acfc53753</link>
 					</property>
 					<property>
 						<name>damaged</name>
@@ -168,7 +168,7 @@
 			<version>1</version>
 			<component>
 				<UUID>a57034a6-5bb2-4a5e-a93a-7f3979b760fc</UUID>
-				<flags>35</flags>
+				<flags>3</flags>
 				<config>
 					<property>
 						<name>castShadows</name>
@@ -331,6 +331,14 @@
 						<name>Cast Shadows</name>
 						<value>1</value>
 					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -346,7 +354,27 @@
 						<name>Cast Shadows</name>
 						<value>0</value>
 					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
+					</property>
 				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>BW::VisibilityTunnelComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>a57034a6-5bb2-4a5e-a93a-7f3979b760fc</UUID>
+				<flags>3</flags>
+			</component>
+			<component>
+				<UUID>c5fcab4d-80ad-44d3-baf7-fef2ef0c9672</UUID>
+				<flags>3</flags>
 			</component>
 		</ComponentPool>
 		<ComponentPool>

@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from future.utils import lmap, viewvalues
 from debug_utils import LOG_WARNING
 from shared_utils import findFirst, first
 
@@ -25,7 +27,7 @@ class SimpleMixCollection(ComposedActionsCollection):
         actionsGroups = self._separateActions()
         if len(self._actions) == 1 or len(actionsGroups) == 1:
             return [self._findBetter(self._actions)]
-        return self._composeActions(map(self._findBetter, actionsGroups.values()))
+        return self._composeActions(lmap(self._findBetter, viewvalues(actionsGroups)))
 
     def _composeActions(self, actions, compositionKey='mixed'):
         result = []
@@ -59,7 +61,7 @@ class SimpleMixCollection(ComposedActionsCollection):
 
     @classmethod
     def _findBetter(cls, actionsGroup):
-        return first(sorted(actionsGroup, cmp=cls._cmpActions, reverse=True))
+        return first(sorted(actionsGroup, key=lambda action: action.getMaxDiscountValue(), reverse=True))
 
     @staticmethod
     def _cmpActions(action1, action2):
@@ -90,7 +92,7 @@ class PremiumActionsCollection(SimpleMixCollection):
         actionsGroups = self._separateActions()
         if len(self._actions) == 1 or len(actionsGroups) == 1:
             return [self._findBetter(self._actions)]
-        return map(self._findBetter, actionsGroups.values())
+        return lmap(self._findBetter, viewvalues(actionsGroups))
 
 
 class CompositionRule(object):

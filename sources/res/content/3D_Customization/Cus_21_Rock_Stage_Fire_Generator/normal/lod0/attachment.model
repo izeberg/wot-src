@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>content/3D_Customization/Cus_21_Rock_Stage_Fire_Generator/normal/lod0/attachment</nodefullVisual>
 	<visibilityBox>
-		<min>-0.691930 -0.002592 -1.206736</min>
-		<max>0.198570 0.185789 1.245000</max>
+		<min>-0.622609 -0.002332 -1.085841</min>
+		<max>0.178676 0.167176 1.120271</max>
 	</visibilityBox>
 	<parent>content/3D_Customization/Cus_21_Rock_Stage_Fire_Generator/normal/lod1/attachment</parent>
 	<extent>32.000000</extent>
 	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_21_Rock_Stage_Fire_Generator/normal/lod0/attachment</nodefullVisual>
 </root>

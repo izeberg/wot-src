@@ -359,6 +359,59 @@ msgstr "?empty?"
 msgid "modes/development/progression/title"
 msgstr "?empty?"
 
+msgid "modes/development/progressionQuests/quest/completed"
+msgstr "已完成:"
+
+msgid "modes/development/progressionQuests/quest/infinityProgress"
+msgstr "可重复完成"
+
+msgid ""
+"modes/development/progressionQuests/quest/progressChangeLabel/forCompletion"
+msgstr "完成:"
+
+msgid "modes/development/progressionQuests/quest/progressChangeLabel/forLoss"
+msgstr "失败:"
+
+msgid "modes/development/progressionQuests/quest/progressChangeLabel/forWin"
+msgstr "胜利:"
+
+msgid "modes/development/progressionQuests/quest/progressChangeLabel/points"
+msgstr "进度点数:"
+
+msgid ""
+"modes/development/progressionQuests/quest/progressChangeLabel/pointsEarned"
+msgstr "已获得:"
+
+msgid "modes/development/progressionQuests/quest/progressChangeLabel/template"
+msgstr "{{reason}}{{value}}"
+
+msgid "modes/development/progressionQuests/quest/progressTitle"
+msgstr "{{completed}}{{currentPoints}}{{delimeter}}{{totalPoints}}"
+
+msgid "modes/development/progressionQuests/questSlot/allCompleted"
+msgstr "已完成当前开放的所有任务"
+
+msgid "modes/development/progressionQuests/questSlot/resettable"
+msgstr "任务将在进度开始后显示"
+
+msgid "modes/development/progressionQuests/tooltip/allCompleted"
+msgstr "您已完成当前开放的所有任务。更多任务将在下一轮刷新时显示。"
+
+msgid "modes/development/progressionQuests/tooltip/expiresCurrent"
+msgstr "开放{{timeLeft}}"
+
+msgid "modes/development/progressionQuests/tooltip/expiresInfinite"
+msgstr "开放{{timeLeft}}"
+
+msgid "modes/development/progressionQuests/tooltip/newMissions"
+msgstr "距新任务开放还有{{timeLeft}}"
+
+msgid "modes/development/progressionQuests/tooltip/noQuestsTitle"
+msgstr "{{eventName}}状态"
+
+msgid "modes/development/progressionQuests/tooltip/questTitle"
+msgstr "{{eventName}}任务"
+
 msgid "modes/development/rewardsView/header"
 msgstr "?empty?"
 
@@ -394,6 +447,239 @@ msgstr "?empty?"
 
 msgid "modes/development/userName"
 msgstr "?empty?"
+
+msgid "modes/equalized/banner/progression/finish"
+msgstr "已完成全部阶段"
+
+msgid "modes/equalized/banner/progression/resettable"
+msgstr "进度更新"
+
+msgid "modes/equalized/capsUserName"
+msgstr "并驾齐驱！"
+
+msgid "modes/equalized/detailedUserName"
+msgstr "%(subModeName)s"
+
+msgid "modes/equalized/entryPoint/inProgress/description"
+msgstr "扭转乾坤！"
+
+msgid "modes/equalized/entryPoint/intro/description"
+msgstr "四两拨千斤！"
+
+msgid "modes/equalized/entryPoint/tooltip/description"
+msgstr ""
+"每个等级都具有不同的生命值、内部与外部模块耐久度、损伤和穿透力修改器。坦克等级越低，参数增强得越多——赋予低等级坦克不容小觑的实力！\n"
+"在战斗中无需花费资源，也无法获取资源。"
+
+msgid "modes/equalized/entryPoint/tooltip/performance/highRisk/description"
+msgstr "您的计算机性能不足以运行此模式。您可能会遇到图形和坦克移动方面的问题。游戏客户端也有可能崩溃。"
+
+msgid "modes/equalized/entryPoint/tooltip/performance/highRisk/header"
+msgstr "低性能"
+
+msgid "modes/equalized/entryPoint/tooltip/performance/mediumRisk/description"
+msgstr "该模式需要较高的计算机性能。您可能会遇到地图加载、图形和坦克移动方面的问题。如果性能不足，请在设置中尝试较低的图形质量。"
+
+msgid "modes/equalized/entryPoint/tooltip/performance/mediumRisk/header"
+msgstr "可能会降低性能"
+
+msgid "modes/equalized/lootbox/fep_epic"
+msgstr "随机史诗奖励"
+
+msgid "modes/equalized/lootbox/fep_legendary"
+msgstr "随机传说奖励"
+
+msgid "modes/equalized/lootbox/fep_ordinary"
+msgstr "随机普通奖励"
+
+msgid "modes/equalized/lootbox/fep_rare"
+msgstr "随机稀有奖励"
+
+msgid "modes/equalized/lootbox/fep_unusual"
+msgstr "随机罕见奖励"
+
+msgid "modes/equalized/metaProgressionTooltip/header/active"
+msgstr "\"并驾齐驱！\"任务 – 阶段: %(done)s{par_Open}/%(total)s{par_Close}"
+
+msgid "modes/equalized/metaProgressionTooltip/reward/tip"
+msgstr "您在所有街机模式子模式中的进度都会计入。"
+
+msgid "modes/equalized/metaProgressionTooltip/subheader"
+msgstr "\"并驾齐驱！\"任务"
+
+msgid "modes/equalized/modeSubSelector/progression/info"
+msgstr "您在所有街机模式子模式中的进度都会计入。"
+
+msgid "modes/equalized/modeSubSelector/progression/timer"
+msgstr "后新的\"并驾齐驱！\"任务开放"
+
+msgid "modes/equalized/mode_selector/battleCondition"
+msgstr "15对15"
+
+msgid "modes/equalized/mode_selector/description"
+msgstr "具有非常规规则的试验性战斗。"
+
+msgid "modes/equalized/mode_selector/levelCondition"
+msgstr "{parSecondary_open}I{parSecondary_close}&nbsp;%(levels)s级"
+
+msgid "modes/equalized/mode_selector/performance/highRisk/description"
+msgstr "您的计算机性能不足以运行此模式。您可能会遇到图形和坦克移动方面的问题。游戏客户端也有可能崩溃。"
+
+msgid "modes/equalized/mode_selector/performance/highRisk/header"
+msgstr "低性能"
+
+msgid "modes/equalized/mode_selector/performance/highRisk/headerIcon"
+msgstr "%(icon)低性能"
+
+msgid "modes/equalized/mode_selector/performance/mediumRisk/description"
+msgstr "该模式需要较高的计算机性能。您可能会遇到地图加载、图形和坦克移动方面的问题。如果性能不足，请在设置中尝试较低的图形质量。"
+
+msgid "modes/equalized/mode_selector/performance/mediumRisk/header"
+msgstr "可能会降低性能"
+
+msgid "modes/equalized/mode_selector/performance/mediumRisk/headerIcon"
+msgstr "%(icon)可能会降低性能"
+
+msgid "modes/equalized/mode_selector/progression/resettable"
+msgstr "距新的\"并驾齐驱！\"任务开放还有:"
+
+msgid "modes/equalized/notification/finishSubModes/withProgression"
+msgstr "\"%(subModeName)s\"子模式已结束。进度已重置。"
+
+msgid "modes/equalized/notification/finishSubModes/withoutProgression"
+msgstr "\"%(subModeName)s\"子模式已结束。"
+
+msgid "modes/equalized/notification/newSubModes/withProgression"
+msgstr "新的奖励和\"%(subModeName)s\"子模式已开放。"
+
+msgid "modes/equalized/notification/newSubModes/withoutProgression"
+msgstr "新的子模式已开放: %(subModeName)s。"
+
+msgid "modes/equalized/notification/switchOffSubModes"
+msgstr "由于系统维护，\"%(subModeName)s\"子模式暂不开放。"
+
+msgid "modes/equalized/notification/switchOnSubModes"
+msgstr "\"%(subModeName)s\"子模式已再次开放。"
+
+msgid "modes/equalized/progression/cardsFan/listOfRandomRewards"
+msgstr "奖励列表"
+
+msgid "modes/equalized/progression/complete/congratulations"
+msgstr "恭喜!"
+
+msgid "modes/equalized/progression/complete/title"
+msgstr "您已完成进度"
+
+msgid "modes/equalized/progression/infinite/congratulations"
+msgstr "恭喜!"
+
+msgid "modes/equalized/progression/infinite/infinityStep"
+msgstr "可重复完成的阶段"
+
+msgid "modes/equalized/progression/infinite/mainProgressionFinished"
+msgstr "您已完成主要进度"
+
+msgid "modes/equalized/progression/questsList/quest/infinityStageProgress"
+msgstr "尽可能获取更多奖励:"
+
+msgid "modes/equalized/progression/questsList/totalPointsEarned"
+msgstr "已获得点数: {{progressionSteps}}"
+
+msgid ""
+"modes/equalized/progression/questsList/totalPointsEarnedStandAloneTitle"
+msgstr "已获得点数:"
+
+msgid "modes/equalized/progression/title"
+msgstr "\"并驾齐驱！\"任务"
+
+msgid "modes/equalized/progressionQuests/quest/completed"
+msgstr "已完成:"
+
+msgid "modes/equalized/progressionQuests/quest/infinityProgress"
+msgstr "可重复完成"
+
+msgid ""
+"modes/equalized/progressionQuests/quest/progressChangeLabel/forCompletion"
+msgstr "完成:"
+
+msgid "modes/equalized/progressionQuests/quest/progressChangeLabel/forLoss"
+msgstr "失败:"
+
+msgid "modes/equalized/progressionQuests/quest/progressChangeLabel/forWin"
+msgstr "胜利:"
+
+msgid "modes/equalized/progressionQuests/quest/progressChangeLabel/points"
+msgstr "进度点数:"
+
+msgid ""
+"modes/equalized/progressionQuests/quest/progressChangeLabel/pointsEarned"
+msgstr "已获得:"
+
+msgid "modes/equalized/progressionQuests/quest/progressChangeLabel/template"
+msgstr "{{reason}}{{value}}"
+
+msgid "modes/equalized/progressionQuests/quest/progressTitle"
+msgstr "{{completed}}{{currentPoints}}{{delimeter}}{{totalPoints}}"
+
+msgid "modes/equalized/progressionQuests/questSlot/allCompleted"
+msgstr "已完成当前开放的所有任务"
+
+msgid "modes/equalized/progressionQuests/questSlot/resettable"
+msgstr "任务将在进度开始后显示"
+
+msgid "modes/equalized/progressionQuests/tooltip/allCompleted"
+msgstr "您已完成当前开放的所有任务。更多任务将在下一轮刷新时显示。"
+
+msgid "modes/equalized/progressionQuests/tooltip/expiresCurrent"
+msgstr "开放{{timeLeft}}"
+
+msgid "modes/equalized/progressionQuests/tooltip/expiresInfinite"
+msgstr "开放{{timeLeft}}"
+
+msgid "modes/equalized/progressionQuests/tooltip/newMissions"
+msgstr "距新任务开放还有{{timeLeft}}"
+
+msgid "modes/equalized/progressionQuests/tooltip/noQuestsTitle"
+msgstr "\"{{eventName}}\"状态"
+
+msgid "modes/equalized/progressionQuests/tooltip/questTitle"
+msgstr "\"{{eventName}}\"任务"
+
+msgid "modes/equalized/rewardsView/header"
+msgstr "已获得传说奖励"
+
+msgid "modes/equalized/scheduler/notification/available"
+msgstr "\"%(subModeName)s\"战斗已再次开放。"
+
+msgid "modes/equalized/scheduler/notification/available/title"
+msgstr "休战期"
+
+msgid "modes/equalized/scheduler/notification/modeEnded"
+msgstr "\"%(subModeName)s\"战斗已结束。"
+
+msgid "modes/equalized/scheduler/notification/modeEnded/title"
+msgstr "休战期"
+
+msgid "modes/equalized/scheduler/notification/primeTime"
+msgstr "目前处于休战期。\"%(subModeName)s\"战斗暂不开放。"
+
+msgid "modes/equalized/scheduler/notification/primeTime/title"
+msgstr "休战期"
+
+msgid "modes/equalized/tierList/description"
+msgstr "下方列表展示了您有机会获得的随机奖励，每个物品都具有特定的掉落率。"
+
+msgid "modes/equalized/tierList/title"
+msgstr "奖励列表"
+
+msgid "modes/equalized/tooltip/filter/body"
+msgstr "显示/隐藏符合\"并驾齐驱！\"模式条件的坦克。"
+
+msgid "modes/equalized/tooltip/filter/header"
+msgstr "\"并驾齐驱！\"坦克"
+
+msgid "modes/equalized/userName"
+msgstr "并驾齐驱！"
 
 msgid "modes/fall_tanks/banner/progression/finish"
 msgstr "已完成所有阶段"
@@ -538,6 +824,59 @@ msgstr "获得点数:"
 
 msgid "modes/fall_tanks/progression/title"
 msgstr "霓虹竞速任务"
+
+msgid "modes/fall_tanks/progressionQuests/quest/completed"
+msgstr "已完成:"
+
+msgid "modes/fall_tanks/progressionQuests/quest/infinityProgress"
+msgstr "可重复完成"
+
+msgid ""
+"modes/fall_tanks/progressionQuests/quest/progressChangeLabel/forCompletion"
+msgstr "完成:"
+
+msgid "modes/fall_tanks/progressionQuests/quest/progressChangeLabel/forLoss"
+msgstr "失败:"
+
+msgid "modes/fall_tanks/progressionQuests/quest/progressChangeLabel/forWin"
+msgstr "胜利:"
+
+msgid "modes/fall_tanks/progressionQuests/quest/progressChangeLabel/points"
+msgstr "进度点数:"
+
+msgid ""
+"modes/fall_tanks/progressionQuests/quest/progressChangeLabel/pointsEarned"
+msgstr "已获得:"
+
+msgid "modes/fall_tanks/progressionQuests/quest/progressChangeLabel/template"
+msgstr "{{reason}}{{value}}"
+
+msgid "modes/fall_tanks/progressionQuests/quest/progressTitle"
+msgstr "{{completed}}{{currentPoints}}{{delimeter}}{{totalPoints}}"
+
+msgid "modes/fall_tanks/progressionQuests/questSlot/allCompleted"
+msgstr "已完成当前开放的所有任务"
+
+msgid "modes/fall_tanks/progressionQuests/questSlot/resettable"
+msgstr "任务将在进度开始后显示"
+
+msgid "modes/fall_tanks/progressionQuests/tooltip/allCompleted"
+msgstr "您已完成当前开放的所有任务。更多任务将在下一轮刷新时显示。"
+
+msgid "modes/fall_tanks/progressionQuests/tooltip/expiresCurrent"
+msgstr "开放{{timeLeft}}"
+
+msgid "modes/fall_tanks/progressionQuests/tooltip/expiresInfinite"
+msgstr "开放{{timeLeft}}"
+
+msgid "modes/fall_tanks/progressionQuests/tooltip/newMissions"
+msgstr "距新任务开放还有{{timeLeft}}"
+
+msgid "modes/fall_tanks/progressionQuests/tooltip/noQuestsTitle"
+msgstr "{{eventName}}状态"
+
+msgid "modes/fall_tanks/progressionQuests/tooltip/questTitle"
+msgstr "{{eventName}}任务"
 
 msgid "modes/fall_tanks/rewardsView/header"
 msgstr "已获得传说奖励"
@@ -718,6 +1057,59 @@ msgstr "获得点数:"
 
 msgid "modes/undefined/progression/title"
 msgstr "街机模式任务"
+
+msgid "modes/undefined/progressionQuests/quest/completed"
+msgstr "已完成:"
+
+msgid "modes/undefined/progressionQuests/quest/infinityProgress"
+msgstr "可重复完成"
+
+msgid ""
+"modes/undefined/progressionQuests/quest/progressChangeLabel/forCompletion"
+msgstr "完成:"
+
+msgid "modes/undefined/progressionQuests/quest/progressChangeLabel/forLoss"
+msgstr "失败:"
+
+msgid "modes/undefined/progressionQuests/quest/progressChangeLabel/forWin"
+msgstr "胜利:"
+
+msgid "modes/undefined/progressionQuests/quest/progressChangeLabel/points"
+msgstr "进度点数:"
+
+msgid ""
+"modes/undefined/progressionQuests/quest/progressChangeLabel/pointsEarned"
+msgstr "已获得:"
+
+msgid "modes/undefined/progressionQuests/quest/progressChangeLabel/template"
+msgstr "{{reason}}{{value}}"
+
+msgid "modes/undefined/progressionQuests/quest/progressTitle"
+msgstr "{{completed}}{{currentPoints}}{{delimeter}}{{totalPoints}}"
+
+msgid "modes/undefined/progressionQuests/questSlot/allCompleted"
+msgstr "已完成当前开放的所有任务"
+
+msgid "modes/undefined/progressionQuests/questSlot/resettable"
+msgstr "任务将在进度开始后显示"
+
+msgid "modes/undefined/progressionQuests/tooltip/allCompleted"
+msgstr "您已完成当前开放的所有任务。更多任务将在下一轮刷新时显示。"
+
+msgid "modes/undefined/progressionQuests/tooltip/expiresCurrent"
+msgstr "开放{{timeLeft}}"
+
+msgid "modes/undefined/progressionQuests/tooltip/expiresInfinite"
+msgstr "开放{{timeLeft}}"
+
+msgid "modes/undefined/progressionQuests/tooltip/newMissions"
+msgstr "距新任务开放还有{{timeLeft}}"
+
+msgid "modes/undefined/progressionQuests/tooltip/noQuestsTitle"
+msgstr "{{eventName}}状态"
+
+msgid "modes/undefined/progressionQuests/tooltip/questTitle"
+msgstr "{{eventName}}任务"
 
 msgid "modes/undefined/rewardsView/header"
 msgstr "已获得传说奖励"
@@ -932,6 +1324,9 @@ msgstr "获取点数即可推进活动进度。"
 msgid "progression/infinite/pointsEarned"
 msgstr "获得点数:"
 
+msgid "progression/questsList/battlesFinishedTitle"
+msgstr "激活的阶段已结束。战斗已结束"
+
 msgid "progression/questsList/quest/completed"
 msgstr "已完成:"
 
@@ -1060,6 +1455,68 @@ msgstr "?empty?"
 
 msgid "sub_modes/development/userName/quoted"
 msgstr "?empty?"
+
+msgid "sub_modes/equalized/capsUserName"
+msgstr "并驾齐驱！"
+
+msgid "sub_modes/equalized/detailsHelp/page1/description"
+msgstr "每个等级都具有不同的生命值、内部和外部模块耐久度、损伤和穿透力修改器。坦克等级越低，参数增强得越多——赋予低等级坦克不容小觑的实力！"
+
+msgid "sub_modes/equalized/detailsHelp/page1/title"
+msgstr "并驾齐驱！"
+
+msgid "sub_modes/equalized/detailsHelpHint/description"
+msgstr "了解关于该模式的详情！"
+
+msgid "sub_modes/equalized/detailsHelpHint/press"
+msgstr "按下"
+
+msgid "sub_modes/equalized/detailsHelpTitle"
+msgstr "并驾齐驱！"
+
+msgid "sub_modes/equalized/subModeCard/battleCondition"
+msgstr "15对15"
+
+msgid "sub_modes/equalized/subModeCard/description"
+msgstr "具有非常规规则的试验性战斗"
+
+msgid "sub_modes/equalized/subModeCard/levelCondition"
+msgstr "{parSecondary_open}I{parSecondary_close}&nbsp;%(levels)s级"
+
+msgid "sub_modes/equalized/subModeCard/performance/highRisk/description"
+msgstr "您的计算机性能不足以运行此模式。您可能会遇到图形和坦克移动方面的问题。游戏客户端也有可能崩溃。"
+
+msgid "sub_modes/equalized/subModeCard/performance/highRisk/header"
+msgstr "低性能"
+
+msgid "sub_modes/equalized/subModeCard/performance/highRisk/headerIcon"
+msgstr "%(icon)低性能"
+
+msgid "sub_modes/equalized/subModeCard/performance/mediumRisk/description"
+msgstr "该模式需要较高的计算机性能。您可能会遇到地图加载、图形和坦克移动方面的问题。如果性能不足，请在设置中尝试较低的图形质量。"
+
+msgid "sub_modes/equalized/subModeCard/performance/mediumRisk/header"
+msgstr "可能会降低性能"
+
+msgid "sub_modes/equalized/subModeCard/performance/mediumRisk/headerIcon"
+msgstr "%(icon)可能会降低性能"
+
+msgid "sub_modes/equalized/subModeCard/title"
+msgstr "并驾齐驱！"
+
+msgid "sub_modes/equalized/tips/tip1/description"
+msgstr ""
+"每个等级都具有不同的生命值、内部与外部模块耐久度、损伤和穿透力修改器。坦克等级越低，参数增强得越多——赋予低等级坦克不容小觑的实力！\n"
+"在战斗中无需花费资源，也无法获取资源。"
+
+msgid "sub_modes/equalized/tips/tip1/title"
+msgstr "I-X级坦克战斗"
+
+msgid "sub_modes/equalized/userName"
+msgstr "并驾齐驱！"
+
+msgid "sub_modes/equalized/userName/quoted"
+msgstr "\"并驾齐驱！\""
 
 msgid "sub_modes/fall_tanks/capsUserName"
 msgstr "霓虹竞速"

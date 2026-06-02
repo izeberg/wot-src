@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.752990 -0.070245 -2.942772</min>
+		<max>1.397150 1.596591 1.354610</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/chinese/Ch72_Yongshi/crash/lod0/Turret_01</nodefullVisual>
+	<parent>vehicles/chinese/Ch72_Yongshi/crash/lod1/Turret_01</parent>
+	<extent>32.000000</extent>
+</root>

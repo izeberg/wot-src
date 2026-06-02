@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from gui.Scaleform.daapi.view.lobby.vehicle_preview.preview_bottom_panel_constants import ObtainingMethodInfo, ObtainingMethods, getShowcaseStyleObtainingInfo
 from gui.impl import backport

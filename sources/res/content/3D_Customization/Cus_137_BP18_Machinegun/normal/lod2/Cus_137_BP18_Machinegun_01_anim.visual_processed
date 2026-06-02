@@ -9,7 +9,7 @@
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
 		<node>
-			<identifier>group1</identifier>
+			<identifier>Cus_137_BP18_Machinegun_01</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -22,7 +22,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 1.000000 0.000000</row1>
 					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 0.191000 -0.410000</row3>
+					<row3>0.000000 0.191000 -0.421515</row3>
 				</transform>
 				<node>
 					<identifier>gun_body</identifier>
@@ -46,7 +46,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 1.000000 0.000000</row1>
 								<row2>0.000000 0.000000 -1.000000</row2>
-								<row3>-0.000289 -0.541713 -0.321989</row3>
+								<row3>-0.000289 -0.541713 -0.310474</row3>
 							</transform>
 						</node>
 					</node>
@@ -56,7 +56,7 @@
 							<row0>0.953026 0.302890 0.000000</row0>
 							<row1>-0.302890 0.953026 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>-0.058296 0.162988 0.140386</row3>
+							<row3>-0.058296 0.163000 0.140386</row3>
 						</transform>
 						<node>
 							<identifier>cartridges_BlendBone</identifier>
@@ -64,7 +64,7 @@
 								<row0>0.953026 -0.302890 0.000000</row0>
 								<row1>0.302890 0.953026 0.000000</row1>
 								<row2>0.000000 0.000000 -1.000000</row2>
-								<row3>-0.101099 -0.509617 0.034059</row3>
+								<row3>-0.101103 -0.509628 0.045574</row3>
 							</transform>
 						</node>
 					</node>
@@ -74,7 +74,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 -1.000000</row2>
-							<row3>-0.000289 -0.353312 0.174445</row3>
+							<row3>-0.000289 -0.353312 0.185960</row3>
 						</transform>
 					</node>
 				</node>
@@ -84,7 +84,7 @@
 						<row0>1.000000 0.000000 0.000000</row0>
 						<row1>0.000000 1.000000 0.000000</row1>
 						<row2>0.000000 0.000000 -1.000000</row2>
-						<row3>0.000000 -0.191000 0.410000</row3>
+						<row3>0.000000 -0.191000 0.421515</row3>
 					</transform>
 				</node>
 			</node>
@@ -104,7 +104,7 @@
 				<material>
 					<identifier>s_nd0_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>112</materialKind>
 					<property>
 						alphaReference
@@ -143,14 +143,14 @@
 						<Texture>content/3D_Customization/Cus_137_BP18_Machinegun/Cus_137_BP18_Machinegun_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.149643 0.217729 -0.203698</groupOrigin>
+				<groupOrigin>-0.149643 0.268693 -0.174584</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-0.479179 -0.202013 -0.636118</min>
-		<max>0.126509 0.635606 1.041469</max>
+		<min>-0.475329 -0.100000 -0.652365</min>
+		<max>0.130359 0.637386 1.002595</max>
 	</boundingBox>
-	<geometrySize>32972</geometrySize>
+	<geometrySize>33012</geometrySize>
 </root>

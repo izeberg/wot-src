@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui import DialogsInterface
 from gui.Scaleform.daapi.view.dialogs.ExchangeDialogMeta import RestoreExchangeCreditsMeta
 from gui.Scaleform.daapi.view.lobby.storage.inhangar import StorageCarouselDataProvider, StorageCarouselFilter
@@ -39,12 +40,12 @@ class _RestoreVehiclesDataProvider(StorageCarouselDataProvider):
     def applyFilter(self, forceApply=False):
         pass
 
-    def _buildVehicle(self, item):
-        vo = super(_RestoreVehiclesDataProvider, self)._buildVehicle(item)
-        restoreCreditsPrice = item.restorePrice.credits
-        restorePrice = ItemPrice(item.restorePrice, item.restorePrice)
+    def _buildVehicle(self, vehicle):
+        vo = super(_RestoreVehiclesDataProvider, self)._buildVehicle(vehicle)
+        restoreCreditsPrice = vehicle.restorePrice.credits
+        restorePrice = ItemPrice(vehicle.restorePrice, vehicle.restorePrice)
         enoughCredits, _ = enoughCreditsForRestore(restoreCreditsPrice, self._itemsCache)
-        restoreAvailable, timerText, description, timerIcon = getVehicleRestoreInfo(item)
+        restoreAvailable, timerText, description, timerIcon = getVehicleRestoreInfo(vehicle)
         vo.update({'price': getItemPricesVO(restorePrice)[0], 
            'isMoneyEnough': enoughCredits, 
            'enabled': enoughCredits and restoreAvailable, 

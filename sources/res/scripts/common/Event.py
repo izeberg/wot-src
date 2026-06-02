@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from future.utils import viewvalues
 from WeakMethod import WeakMethodProxy
 from debug_utils import LOG_CURRENT_EXCEPTION
 
@@ -223,7 +225,7 @@ class ContextEvent(object):
             self.__contextSubscribers[self.__allContexts].add(delegate)
 
     def unsubscribe(self, delegate):
-        for contextSubscribers in self.__contextSubscribers.itervalues():
+        for contextSubscribers in viewvalues(self.__contextSubscribers):
             contextSubscribers.discard(delegate)
 
     def clear(self):

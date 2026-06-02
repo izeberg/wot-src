@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import weakref
 from gui.Scaleform.daapi.view.lobby.clans.clan_profile_event import ClanProfileEvent
 from gui.clans.clan_helpers import ClanListener

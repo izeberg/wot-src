@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import ResMgr
 from items import vehicles
 _CONFIG_FILE = 'scripts/item_defs/rage.xml'

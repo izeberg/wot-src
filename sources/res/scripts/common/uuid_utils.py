@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import os, random
 from uuid import uuid1
 _node = None

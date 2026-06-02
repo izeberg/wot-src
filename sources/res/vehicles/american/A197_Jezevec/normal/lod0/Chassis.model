@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.665219 -0.000010 -3.183557</min>
+		<max>1.665220 1.192497 3.216486</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/american/A197_Jezevec/normal/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/american/A197_Jezevec/normal/lod0/Chassis</nodefullVisual>
+</root>

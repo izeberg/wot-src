@@ -71,6 +71,14 @@
 						g_useTime
 						<Bool>false</Bool>
 					</property>
+					<property>
+						g_enableVisTunnel
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_visibilityTunnelCompensation
+						<Float>22.000000</Float>
+					</property>
 				</material>
 				<groupOrigin>0.000092 0.391455 0.175425</groupOrigin>
 			</primitiveGroup>
@@ -136,6 +144,14 @@
 					<property>
 						opacityMap
 						<Texture>particles/content_deferred/GFX_models/GFX_textures/null.dds</Texture>
+					</property>
+					<property>
+						g_enableVisTunnel
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_visibilityTunnelCompensation
+						<Float>22.000000</Float>
 					</property>
 				</material>
 				<groupOrigin>0.000092 0.391455 0.120623</groupOrigin>

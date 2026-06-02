@@ -47,12 +47,12 @@
 						<Texture>content/3D_Customization/Cus_170_Lunar_Horse/Cus_170_Lunar_Horse_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.000000 0.201345 -0.009249</groupOrigin>
+				<groupOrigin>0.000000 0.251345 -0.009249</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.104777 -0.200000 -0.213429</min>
+		<min>-0.104777 -0.100000 -0.213429</min>
 		<max>0.104777 0.603443 0.193153</max>
 	</boundingBox>
 	<customBsp>true</customBsp>

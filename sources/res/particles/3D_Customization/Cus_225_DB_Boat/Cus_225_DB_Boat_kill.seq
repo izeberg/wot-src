@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>6.666667</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+		<track>
+			<name>animation</name>
+			<type>animation</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>6.666667</duration>
+				<resourceID>content/3D_Customization/Cus_225_DB_Boat/animation/Cus_225_DB_Boat_kill.fbx</resourceID>
+				<clipName/>
+				<speed>1.000000</speed>
+				<layer>0</layer>
+				<blendIn>constant</blendIn>
+				<blendOut>constant</blendOut>
+				<blendInTime>0.000000</blendInTime>
+				<blendOutTime>0.000000</blendOutTime>
+				<clipStartTime>0.000000</clipStartTime>
+				<clipEndTime>6.666667</clipEndTime>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Model 0</name>
+		<type>model</type>
+		<resource>particles/3D_Customization/Cus_225_DB_Boat/Cus_225_DB_Boat_Glow.model</resource>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>6.666667</duration>
+				<value>Root|boat_jnt_BlendBone</value>
+			</frame>
+		</track>
+		<track>
+			<name>material property vector4</name>
+			<type>vector4</type>
+			<identifier>glow_kill</identifier>
+			<property>lightMultipliers</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>1.714286 1.714286 1.714286 0.000000</inTangent>
+				<outTangent>1.714286 1.714286 1.714286 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.166667</startTime>
+				<value>2.000000 2.000000 2.000000 0.000000</value>
+				<inTangent>0.504202 0.504202 0.504202 0.000000</inTangent>
+				<outTangent>0.504202 0.504202 0.504202 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.000000</startTime>
+				<value>0.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>-0.705882 -0.705882 -0.705882 -0.000000</inTangent>
+				<outTangent>-0.705882 -0.705882 -0.705882 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property vector4</name>
+			<type>vector4</type>
+			<identifier>glow_idle</identifier>
+			<property>lightMultipliers</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.200000 0.200000 0.500000 0.000000</value>
+				<inTangent>0.942857 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.942857 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.166667</startTime>
+				<value>1.300000 0.200000 0.500000 0.000000</value>
+				<inTangent>0.306429 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.306429 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.500000</startTime>
+				<value>0.200000 0.200000 0.500000 0.000000</value>
+				<inTangent>-0.330000 -0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.330000 -0.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

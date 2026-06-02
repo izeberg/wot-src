@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import SoundGroups
 from frameworks.wulf import ViewSettings
 from gui.battle_pass.sounds import BattlePassSounds

@@ -1,6 +1,9 @@
+from __future__ import absolute_import
 from copy import deepcopy
+from future.utils import viewkeys, viewvalues
 from typing import TYPE_CHECKING, NamedTuple
 from optional_bonuses import TrackVisitor
+from math_common import round_py2_style_int
 if TYPE_CHECKING:
     from typing import Dict
     from gui.server_events.event_items import Quest
@@ -24,7 +27,7 @@ def convertTokens(token, bonusTokens, convertionData):
         bonusTokens.pop(token)
     else:
         tokenBonusData['count'] -= convertCount
-    newCount = bonusTokens.get(convertion.tokenTo, {}).get('count', 0) + int(round(convertCount * convertion.rate))
+    newCount = bonusTokens.get(convertion.tokenTo, {}).get('count', 0) + round_py2_style_int(convertCount * convertion.rate)
     bonusTokens.setdefault(convertion.tokenTo, deepcopy(tokenBonusData))['count'] = newCount
     return wasUsed
 
@@ -60,7 +63,7 @@ def getBonusDataFromOneOfBonuses(event, pCur=None):
     bonusData = event.getRawBonuses()
     trackResult = {}
     if pCur:
-        pCurInnerDict = pCur.itervalues().next()
+        pCurInnerDict = next(iter(viewvalues(pCur)))
         bonusTracks = pCurInnerDict.get('bonusTracks', [])
         if bonusTracks:
             trackReplay = TrackVisitor(bonusTracks[(-1)], 1, None)
@@ -78,5 +81,5 @@ class TokenConvertionData(NamedTuple('TokenConvertionData', [
 
     def __new__(cls, **kwargs):
         defaults = dict(tokenTo='', limit=0, rate=1.0)
-        defaults.update({k:kwargs[k] for k in defaults.viewkeys() & kwargs.viewkeys()})
+        defaults.update({k:kwargs[k] for k in viewkeys(defaults) & viewkeys(kwargs)})
         return super(TokenConvertionData, cls).__new__(cls, **defaults)

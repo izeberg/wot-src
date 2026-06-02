@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging
 from adisp import adisp_process
 from Event import Event

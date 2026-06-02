@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, time
 from collections import namedtuple
 import BigWorld
@@ -12,6 +13,7 @@ from gui.Scaleform.daapi.view.dialogs import DIALOG_BUTTON_ID, I18nConfirmDialog
 from gui.Scaleform.daapi.view.dialogs.ExchangeDialogMeta import ExchangeCreditsWebProductMeta
 from gui.Scaleform.daapi.view.lobby.techtree.techtree_dp import g_techTreeDP
 from gui.Scaleform.daapi.view.lobby.vehicle_preview.hero_tank_preview_constants import getHeroTankPreviewParams
+from gui.Scaleform.daapi.view.lobby.vehicle_preview.items_kit_helper import BOX_TYPE, OFFER_CHANGED_EVENT, getActiveOffer, lookupItem, mayObtainForMoney, mayObtainWithMoneyExchange, showItemTooltip
 from gui.Scaleform.daapi.view.lobby.vehicle_preview.preview_bottom_panel_constants import ObtainingMethodInfo, ObtainingMethods, getItemPackObtainingInfo
 from gui.Scaleform.daapi.view.lobby.vehicle_preview.vehicle_preview_dp import DefaultVehPreviewDataProvider
 from gui.Scaleform.daapi.view.meta.VehiclePreviewBottomPanelMeta import VehiclePreviewBottomPanelMeta
@@ -39,7 +41,6 @@ from gui.shared.utils.functions import makeTooltip
 from gui.shop import canBuyGoldForVehicleThroughWeb, showBuyGoldForBundle, showBuyProductOverlay
 from helpers import dependency, int2roman, time_utils
 from helpers.i18n import makeString as _ms
-from items_kit_helper import BOX_TYPE, OFFER_CHANGED_EVENT, getActiveOffer, lookupItem, mayObtainForMoney, mayObtainWithMoneyExchange, showItemTooltip
 from shared_utils import findFirst
 from skeletons.gui.app_loader import IAppLoader
 from skeletons.gui.game_control import IExternalLinksController, IHeroTankController, IMarathonEventsController, IRestoreController, ITradeInController, IVehicleComparisonBasket

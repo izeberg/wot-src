@@ -1,6 +1,8 @@
+from __future__ import absolute_import
 import logging, typing
 from functools import partial
 from operator import itemgetter
+from future.utils import viewitems
 from PlayerEvents import g_playerEvents
 from account_helpers.AccountSettings import AccountSettings, IS_BATTLE_PASS_COLLECTION_SEEN, LAST_BATTLE_PASS_POINTS_SEEN
 from account_helpers.settings_core.settings_constants import BattlePassStorageKeys
@@ -242,8 +244,8 @@ class ProgressionPresenter(ViewComponent[BattlePassProgressionsViewModel]):
         self.__setFinalRewardsWidget(model)
         model.levels.clearItems()
         minLevel, maxLevel = bpController.getChapterLevelInterval(self.__chapterID)
-        freeBonuses = sorted(bpController.getAwardsInterval(self.__chapterID, minLevel, maxLevel, BattlePassConsts.REWARD_FREE).iteritems(), key=itemgetter(0))
-        paidBonuses = sorted(bpController.getAwardsInterval(self.__chapterID, minLevel, maxLevel, BattlePassConsts.REWARD_PAID).iteritems(), key=itemgetter(0))
+        freeBonuses = sorted(viewitems(bpController.getAwardsInterval(self.__chapterID, minLevel, maxLevel, BattlePassConsts.REWARD_FREE)), key=itemgetter(0))
+        paidBonuses = sorted(viewitems(bpController.getAwardsInterval(self.__chapterID, minLevel, maxLevel, BattlePassConsts.REWARD_PAID)), key=itemgetter(0))
         for (level, freeBonus), (_, paidBonus) in zip(freeBonuses, paidBonuses):
             isNeedToTakeFree, isChooseFreeRewardEnabled = self.__getRewardLevelState(BattlePassConsts.REWARD_FREE, level)
             isNeedToTakePaid, isChoosePaidRewardEnabled = self.__getRewardLevelState(BattlePassConsts.REWARD_PAID, level)
@@ -351,8 +353,7 @@ class ProgressionPresenter(ViewComponent[BattlePassProgressionsViewModel]):
         startLevel, finalLevel = self.__battlePass.getChapterLevelInterval(self.__chapterID)
         if fromLevel == toLevel:
             return
-        if toLevel > finalLevel:
-            toLevel = finalLevel
+        toLevel = min(toLevel, finalLevel)
         for level in range(fromLevel, toLevel + 1):
             levelData = model.levels.getItem(level - startLevel)
             isNeedToTakeFree, isChooseFreeRewardEnabled = self.__getRewardLevelState(BattlePassConsts.REWARD_FREE, level)

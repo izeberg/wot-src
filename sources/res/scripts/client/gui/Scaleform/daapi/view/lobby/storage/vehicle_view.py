@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.daapi.view.lobby.storage.category_view import InventoryCategoryView
 from gui.shared.gui_items import GUI_ITEM_TYPE
 

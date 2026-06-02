@@ -8,24 +8,6 @@
 			<row2>0.000000 0.000000 1.000000</row2>
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
-		<node>
-			<identifier>nodes_01</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-			<node>
-				<identifier>HP_attachment</identifier>
-				<transform>
-					<row0>1.000000 0.000000 0.000000</row0>
-					<row1>0.000000 1.000000 0.000000</row1>
-					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 0.000000 0.000000</row3>
-				</transform>
-			</node>
-		</node>
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
@@ -38,8 +20,8 @@
 				<material>
 					<identifier>equipment</identifier>
 					<fx>shaders/std_effects/PBS_tank.fx</fx>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>0</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>112</materialKind>
 					<property>
 						diffuseMap
 						<Texture>content/3D_Customization/Cus_03_Brutal_Night_vision_device/Brutal_Night_Vision_device_AM.dds</Texture>
@@ -69,13 +51,13 @@
 						<Texture>content/3D_Customization/Cus_03_Brutal_Night_vision_device/Brutal_Night_Vision_device_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.055339 0.278648 0.131842</groupOrigin>
+				<groupOrigin>0.055339 0.328648 0.012227</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.231604 -0.200000 -0.200000</min>
-		<max>0.342283 0.757295 0.463684</max>
+		<min>-0.231604 -0.100000 -0.319615</min>
+		<max>0.342283 0.757295 0.344069</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
 	<geometrySize>235710</geometrySize>

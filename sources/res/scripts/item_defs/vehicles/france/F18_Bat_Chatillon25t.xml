@@ -129,6 +129,11 @@
 					<destroyed>vehicles/french/F18_Bat_Chatillon25t/_skins/F18_Bat_Chatillon25t_BP8_3DSt/crash/lod0/Hull.model</destroyed>
 					<exploded>vehicles/french/F18_Bat_Chatillon25t/_skins/F18_Bat_Chatillon25t_BP8_3DSt/crash/lod0/Hull.model</exploded>
 				</F18_Bat_Chatillon25t_BP8_3DSt>
+				<F18_Bat_Chatillon25t_BPXX_3Dst>
+					<undamaged>vehicles/french/F18_Bat_Chatillon25t/_skins/F18_Bat_Chatillon25t_BPXX_3Dst/normal/lod0/Hull.model</undamaged>
+					<destroyed>vehicles/french/F18_Bat_Chatillon25t/_skins/F18_Bat_Chatillon25t_BPXX_3Dst/crash/lod0/Hull.model</destroyed>
+					<exploded>vehicles/french/F18_Bat_Chatillon25t/_skins/F18_Bat_Chatillon25t_BPXX_3Dst/crash/lod0/Hull.model</exploded>
+				</F18_Bat_Chatillon25t_BPXX_3Dst>
 			</sets>
 		</models>
 		<swinging>
@@ -176,6 +181,22 @@
 					<!--BW_String-->
 				</size>
 				<hideIfDamaged>true</hideIfDamaged>
+			</slot>
+			<slot>
+				<slotType>clan</slotType>
+				<slotId>10001</slotId>
+				<rayStart>-0.299408 0.573861 1.755863</rayStart>
+				<rayEnd>-0.299408 0.388519 1.680721</rayEnd>
+				<rayUp>
+					-0 0.375717 -0.926735
+					<!--BW_String-->
+				</rayUp>
+				<size>
+					0.32
+					<!--BW_String-->
+				</size>
+				<hideIfDamaged>true</hideIfDamaged>
+				<compatibleModels>F18_Bat_Chatillon25t_BPXX_3Dst</compatibleModels>
 			</slot>
 			<slot>
 				<slotType>paint</slotType>
@@ -1385,6 +1406,24 @@
 				<anchorShift>0.024179</anchorShift>
 			</slot>
 			<slot>
+				<slotType>projectionDecal</slotType>
+				<slotId>15055</slotId>
+				<tags>formfactor_square</tags>
+				<compatibleModels>F18_Bat_Chatillon25t_BPXX_3Dst</compatibleModels>
+				<position>0.390471 1.461087 1.134564</position>
+				<rotation>
+					0.000001 0.000002 3.14158
+					<!--BW_String-->
+				</rotation>
+				<scale>0.702102 0.403972 0.702107</scale>
+				<showOn>16</showOn>
+				<clipAngle>1.259451</clipAngle>
+				<anchorShift>
+					-0.00545
+					<!--BW_String-->
+				</anchorShift>
+			</slot>
+			<slot>
 				<slotType>attachment</slotType>
 				<slotId>18000</slotId>
 				<position>0 0 0</position>
@@ -1517,6 +1556,11 @@
 						<destroyed>vehicles/french/F18_Bat_Chatillon25t/_skins/F18_Bat_Chatillon25t_BP8_3DSt/crash/lod0/Chassis.model</destroyed>
 						<exploded>vehicles/french/F18_Bat_Chatillon25t/_skins/F18_Bat_Chatillon25t_BP8_3DSt/crash/lod0/Chassis.model</exploded>
 					</F18_Bat_Chatillon25t_BP8_3DSt>
+					<F18_Bat_Chatillon25t_BPXX_3Dst>
+						<undamaged>vehicles/french/F18_Bat_Chatillon25t/_skins/F18_Bat_Chatillon25t_BPXX_3Dst/normal/lod0/Chassis.model</undamaged>
+						<destroyed>vehicles/french/F18_Bat_Chatillon25t/_skins/F18_Bat_Chatillon25t_BPXX_3Dst/crash/lod0/Chassis.model</destroyed>
+						<exploded>vehicles/french/F18_Bat_Chatillon25t/_skins/F18_Bat_Chatillon25t_BPXX_3Dst/crash/lod0/Chassis.model</exploded>
+					</F18_Bat_Chatillon25t_BPXX_3Dst>
 				</sets>
 			</models>
 			<traces>
@@ -1610,6 +1654,39 @@
 									<row3>-1.259010 1.164883 2.759726</row3>
 								</boxCollider>
 							</hullCollider>
+							<hullCollider>
+								<modelsSet>F18_Bat_Chatillon25t_BPXX_3Dst</modelsSet>
+								<boxCollider>
+									<row0>1.848996 0.000000 0.000000</row0>
+									<row1>0.000000 1.127993 0.000000</row1>
+									<row2>0.000000 0.000000 5.200039</row2>
+									<row3>0.000000 0.964554 0.070547</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.197760 0.000000 0.000000</row0>
+									<row1>0.000000 0.300000 0.000000</row1>
+									<row2>0.000000 0.000000 5.806738</row2>
+									<row3>0.000000 1.233748 -0.003239</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>0.678974 -0.000000 -0.000000</row0>
+									<row1>-0.000000 0.287054 -0.087177</row1>
+									<row2>0.000000 0.118765 0.391066</row2>
+									<row3>-1.259012 1.169872 -2.701184</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>0.678974 -0.000000 -0.000000</row0>
+									<row1>0.000000 0.271535 0.127548</row1>
+									<row2>0.000000 -0.173765 0.369924</row2>
+									<row3>-1.259010 1.164883 2.759726</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>0.300000 0.000000 0.000000</row0>
+									<row1>0.000000 0.492867 -0.000000</row1>
+									<row2>0.000000 0.000000 3.617588</row2>
+									<row3>-1.738811 0.880678 -0.102127</row3>
+								</boxCollider>
+							</hullCollider>
 						</physicalParams>
 					</trackDebris>
 					<trackDebris>
@@ -1682,6 +1759,39 @@
 									<row1>-0.000000 0.271535 0.127548</row1>
 									<row2>-0.000000 -0.173765 0.369924</row2>
 									<row3>1.259010 1.164883 2.759726</row3>
+								</boxCollider>
+							</hullCollider>
+							<hullCollider>
+								<modelsSet>F18_Bat_Chatillon25t_BPXX_3Dst</modelsSet>
+								<boxCollider>
+									<row0>1.848996 0.000000 0.000000</row0>
+									<row1>0.000000 1.127993 0.000000</row1>
+									<row2>0.000000 0.000000 5.200039</row2>
+									<row3>-0.000000 0.964554 0.070547</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.197760 0.000000 0.000000</row0>
+									<row1>0.000000 0.300000 0.000000</row1>
+									<row2>0.000000 0.000000 5.806738</row2>
+									<row3>-0.000000 1.233748 -0.003239</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>0.678974 0.000000 0.000000</row0>
+									<row1>0.000000 0.287054 -0.087177</row1>
+									<row2>-0.000000 0.118765 0.391066</row2>
+									<row3>1.259012 1.169872 -2.701184</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>0.678974 0.000000 0.000000</row0>
+									<row1>-0.000000 0.271535 0.127548</row1>
+									<row2>-0.000000 -0.173765 0.369924</row2>
+									<row3>1.259010 1.164883 2.759726</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>0.300000 0.000000 -0.000000</row0>
+									<row1>-0.000000 0.492867 -0.000000</row1>
+									<row2>0.000000 0.000000 3.617590</row2>
+									<row3>1.739000 0.880678 -0.102127</row3>
 								</boxCollider>
 							</hullCollider>
 						</physicalParams>
@@ -1839,11 +1949,19 @@
 					<isLeft>true</isLeft>
 					<name>Track_VD_L0</name>
 					<backwardElastK>2</backwardElastK>
+					<forwardElastK>
+						0.8
+						<!--BW_String-->
+					</forwardElastK>
 				</node>
 				<node>
 					<isLeft>false</isLeft>
 					<name>Track_VD_R0</name>
 					<backwardElastK>2</backwardElastK>
+					<forwardElastK>
+						0.8
+						<!--BW_String-->
+					</forwardElastK>
 				</node>
 				<node>
 					<isLeft>true</isLeft>
@@ -1853,7 +1971,7 @@
 						<!--BW_String-->
 					</forwardElastK>
 					<backwardElastK>
-						1.5
+						0.8
 						<!--BW_String-->
 					</backwardElastK>
 				</node>
@@ -1865,7 +1983,7 @@
 						<!--BW_String-->
 					</forwardElastK>
 					<backwardElastK>
-						1.5
+						0.8
 						<!--BW_String-->
 					</backwardElastK>
 				</node>
@@ -1873,7 +1991,7 @@
 					<isLeft>true</isLeft>
 					<name>Track_VT_L0</name>
 					<forwardElastK>
-						2.5
+						1.8
 						<!--BW_String-->
 					</forwardElastK>
 					<backwardElastK>
@@ -1889,7 +2007,7 @@
 					<isLeft>true</isLeft>
 					<name>Track_VT_L1</name>
 					<forwardElastK>
-						2.2
+						1.8
 						<!--BW_String-->
 					</forwardElastK>
 					<backwardElastK>
@@ -1905,7 +2023,7 @@
 					<isLeft>true</isLeft>
 					<name>Track_VT_L2</name>
 					<forwardElastK>
-						1.9
+						1.7
 						<!--BW_String-->
 					</forwardElastK>
 					<backwardElastK>
@@ -1937,7 +2055,7 @@
 					<isLeft>false</isLeft>
 					<name>Track_VT_R0</name>
 					<forwardElastK>
-						2.5
+						1.8
 						<!--BW_String-->
 					</forwardElastK>
 					<backwardElastK>
@@ -1953,7 +2071,7 @@
 					<isLeft>false</isLeft>
 					<name>Track_VT_R1</name>
 					<forwardElastK>
-						2.2
+						1.8
 						<!--BW_String-->
 					</forwardElastK>
 					<backwardElastK>
@@ -1969,7 +2087,7 @@
 					<isLeft>false</isLeft>
 					<name>Track_VT_R2</name>
 					<forwardElastK>
-						1.9
+						1.7
 						<!--BW_String-->
 					</forwardElastK>
 					<backwardElastK>
@@ -2216,7 +2334,7 @@
 						</sync>
 						<sync>
 							<name>WD_L0</name>
-							<startAngle>-184.671005</startAngle>
+							<startAngle>-0.165806</startAngle>
 							<teethCount>15</teethCount>
 						</sync>
 					</teethSyncs>
@@ -2811,7 +2929,7 @@
 						</sync>
 						<sync>
 							<name>WD_R0</name>
-							<startAngle>-184.671005</startAngle>
+							<startAngle>-0.165806</startAngle>
 							<teethCount>15</teethCount>
 						</sync>
 					</teethSyncs>
@@ -3362,6 +3480,11 @@
 								<destroyed>vehicles/french/F18_Bat_Chatillon25t/_skins/F18_Bat_Chatillon25t_BP8_3DSt/crash/lod0/Gun_03.model</destroyed>
 								<exploded>vehicles/french/F18_Bat_Chatillon25t/_skins/F18_Bat_Chatillon25t_BP8_3DSt/crash/lod0/Gun_03.model</exploded>
 							</F18_Bat_Chatillon25t_BP8_3DSt>
+							<F18_Bat_Chatillon25t_BPXX_3Dst>
+								<undamaged>vehicles/french/F18_Bat_Chatillon25t/_skins/F18_Bat_Chatillon25t_BPXX_3Dst/normal/lod0/Gun_03.model</undamaged>
+								<destroyed>vehicles/french/F18_Bat_Chatillon25t/_skins/F18_Bat_Chatillon25t_BPXX_3Dst/crash/lod0/Gun_03.model</destroyed>
+								<exploded>vehicles/french/F18_Bat_Chatillon25t/_skins/F18_Bat_Chatillon25t_BPXX_3Dst/crash/lod0/Gun_03.model</exploded>
+							</F18_Bat_Chatillon25t_BPXX_3Dst>
 						</sets>
 					</models>
 					<hitTester>
@@ -3899,6 +4022,30 @@
 							<anchorShift>0.110005</anchorShift>
 						</slot>
 						<slot>
+							<slotType>projectionDecal</slotType>
+							<slotId>45022</slotId>
+							<position>
+								0.417125 2.007675 -0.13869
+								<!--BW_String-->
+							</position>
+							<rotation>
+								0.574811 -0.013404 -3.02713
+								<!--BW_String-->
+							</rotation>
+							<tags>formfactor_square</tags>
+							<compatibleModels>F18_Bat_Chatillon25t_BPXX_3Dst</compatibleModels>
+							<scale>
+								0.333106 0.11862 0.333107
+								<!--BW_String-->
+							</scale>
+							<showOn>4096</showOn>
+							<clipAngle>0.840725</clipAngle>
+							<anchorShift>
+								0.05
+								<!--BW_String-->
+							</anchorShift>
+						</slot>
+						<slot>
 							<slotType>sequence</slotType>
 							<slotId>48000</slotId>
 							<position>0 0 0</position>
@@ -3909,25 +4056,33 @@
 							<slotType>attachment</slotType>
 							<slotId>48001</slotId>
 							<position>
-								0.394245 0.392 -1.017
+								-0.81 0.686 -0.232
 								<!--BW_String-->
 							</position>
-							<rotation>-0 -0 0</rotation>
+							<rotation>-0 0 0</rotation>
 							<scale>1 1 1</scale>
 							<applyType>turret</applyType>
 							<size>medium</size>
+							<enableVisTunnel>true</enableVisTunnel>
+							<hangerId>2</hangerId>
+							<hangerRotation>
+								-0 -0.610865 0
+								<!--BW_String-->
+							</hangerRotation>
 						</slot>
 						<slot>
 							<slotType>attachment</slotType>
 							<slotId>48002</slotId>
 							<position>
-								0 0.3 0.915718
+								0 0.32572 0.723862
 								<!--BW_String-->
 							</position>
-							<rotation>-0 -0 0</rotation>
+							<rotation>-0 0 0</rotation>
 							<scale>1 1 1</scale>
 							<applyType>gunMantlet</applyType>
 							<size>medium</size>
+							<enableVisTunnel>true</enableVisTunnel>
+							<hangerId>2</hangerId>
 						</slot>
 						<slot>
 							<slotType>insigniaOnGun</slotType>
@@ -3965,6 +4120,27 @@
 								<!--BW_String-->
 							</rayUp>
 							<compatibleModels>F18_Bat_Chatillon25t_3DSt_TLXXL</compatibleModels>
+							<size>
+								0.438
+								<!--BW_String-->
+							</size>
+						</slot>
+						<slot>
+							<slotType>insigniaOnGun</slotType>
+							<slotId>49002</slotId>
+							<rayStart>
+								-0.004211 0.016504 2.93
+								<!--BW_String-->
+							</rayStart>
+							<rayEnd>
+								-0.004211 0.016504 3.368
+								<!--BW_String-->
+							</rayEnd>
+							<rayUp>
+								0.102 0 0
+								<!--BW_String-->
+							</rayUp>
+							<compatibleModels>F18_Bat_Chatillon25t_BPXX_3Dst</compatibleModels>
 							<size>
 								0.438
 								<!--BW_String-->
@@ -4011,6 +4187,11 @@
 						<destroyed>vehicles/french/F18_Bat_Chatillon25t/_skins/F18_Bat_Chatillon25t_BP8_3DSt/crash/lod0/Turret_01.model</destroyed>
 						<exploded>vehicles/french/F18_Bat_Chatillon25t/_skins/F18_Bat_Chatillon25t_BP8_3DSt/crash/lod0/Turret_01.model</exploded>
 					</F18_Bat_Chatillon25t_BP8_3DSt>
+					<F18_Bat_Chatillon25t_BPXX_3Dst>
+						<undamaged>vehicles/french/F18_Bat_Chatillon25t/_skins/F18_Bat_Chatillon25t_BPXX_3Dst/normal/lod0/Turret_01.model</undamaged>
+						<destroyed>vehicles/french/F18_Bat_Chatillon25t/_skins/F18_Bat_Chatillon25t_BPXX_3Dst/crash/lod0/Turret_01.model</destroyed>
+						<exploded>vehicles/french/F18_Bat_Chatillon25t/_skins/F18_Bat_Chatillon25t_BPXX_3Dst/crash/lod0/Turret_01.model</exploded>
+					</F18_Bat_Chatillon25t_BPXX_3Dst>
 				</sets>
 			</models>
 			<hitTester>
@@ -4493,6 +4674,45 @@
 						0.06177
 						<!--BW_String-->
 					</anchorShift>
+				</slot>
+				<slot>
+					<slotType>projectionDecal</slotType>
+					<slotId>35020</slotId>
+					<tags>formfactor_square</tags>
+					<compatibleModels>F18_Bat_Chatillon25t_BPXX_3Dst</compatibleModels>
+					<position>-1.249225 1.650655 -0.550981</position>
+					<rotation>
+						1.314831 -1.52326 3.13684
+						<!--BW_String-->
+					</rotation>
+					<scale>0.433452 0.218514 0.433459</scale>
+					<showOn>4352</showOn>
+					<clipAngle>
+						1.25189
+						<!--BW_String-->
+					</clipAngle>
+					<anchorShift>0.051772</anchorShift>
+				</slot>
+				<slot>
+					<slotType>projectionDecal</slotType>
+					<slotId>35021</slotId>
+					<tags>formfactor_square</tags>
+					<compatibleModels>F18_Bat_Chatillon25t_BPXX_3Dst</compatibleModels>
+					<position>
+						1.249 1.65066 -0.550981
+						<!--BW_String-->
+					</position>
+					<rotation>
+						1.314757 1.523323 3.13688
+						<!--BW_String-->
+					</rotation>
+					<scale>0.433452 0.218515 0.433459</scale>
+					<showOn>4352</showOn>
+					<clipAngle>
+						1.25189
+						<!--BW_String-->
+					</clipAngle>
+					<anchorShift>0.051772</anchorShift>
 				</slot>
 			</customizationSlots>
 			<customization>

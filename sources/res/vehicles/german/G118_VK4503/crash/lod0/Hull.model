@@ -3,19 +3,16 @@
 	<materialNames/>
 	<visibilityBox>
 		<min>
-			-1.63632 -1.07991 -3.86969
+			-1.73582 -1.07996 -3.90069
 			<!--BW_String-->
 		</min>
 		<max>
-			1.63474 0.793356 3.33393
+			1.73582 0.793356 3.30293
 			<!--BW_String-->
 		</max>
 	</visibilityBox>
 	<tank>true</tank>
-	<parent>vehicles/german/G118_VK4503/crash/lod1/Hull</parent>
-	<extent>
-		32.0
-		<!--BW_String-->
-	</extent>
 	<nodefullVisual>vehicles/german/G118_VK4503/crash/lod0/Hull</nodefullVisual>
+	<parent>vehicles/german/G118_VK4503/crash/lod1/Hull</parent>
+	<extent>32</extent>
 </root>

@@ -9,13 +9,22 @@
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
 		<node>
-			<identifier>HP_gunJoint</identifier>
+			<identifier>nodes_01</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
 				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.043723 0.432764 1.191980</row3>
+				<row3>0.000000 0.000000 0.000000</row3>
 			</transform>
+			<node>
+				<identifier>HP_gunJoint</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.043723 0.432764 1.191980</row3>
+				</transform>
+			</node>
 		</node>
 	</node>
 	<renderSet>
@@ -27,50 +36,50 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_turret_01</identifier>
-					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<identifier>tank_proxy</identifier>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
 					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
+						metallicGlossMap
+						<Texture>vehicles/german/G118_VK4503/VK4503_proxy_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/german/G118_VK4503/VK4503_proxy_ANM.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/german/G118_VK4503/VK4503_proxy_AM.dds</Texture>
 					</property>
 					<property>
 						excludeMaskAndAOMap
-						<Texture>vehicles/german/G118_VK4503/VK4503_turret_01_AO.dds</Texture>
+						<Texture>vehicles/german/G118_VK4503/VK4503_proxy_AO.dds</Texture>
 					</property>
 					<property>
 						colorIdMap
 						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<property>
-						metallicGlossMap
-						<Texture>vehicles/german/G118_VK4503/VK4503_turret_01_GMM.dds</Texture>
-					</property>
-					<property>
-						normalMap
-						<Texture>vehicles/german/G118_VK4503/VK4503_turret_01_ANM.dds</Texture>
-					</property>
-					<property>
-						diffuseMap
-						<Texture>vehicles/german/G118_VK4503/VK4503_turret_01_AM.dds</Texture>
-					</property>
-					<property>
-						alphaReference
-						<Int>64</Int>
+						crashTileMap
+						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
 					</property>
 					<property>
 						alphaTestEnable
 						<Bool>false</Bool>
 					</property>
+					<property>
+						g_useNormalPackDXT1
+						<Bool>false</Bool>
+					</property>
 				</material>
-				<groupOrigin>-0.002056 0.616527 -0.333285</groupOrigin>
+				<groupOrigin>0.000426 0.622180 -0.319470</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-1.232029 -0.000000 -2.159991</min>
-		<max>1.227917 1.233055 1.493420</max>
+		<min>-1.235677 0.000598 -2.168495</min>
+		<max>1.236529 1.243761 1.529555</max>
 	</boundingBox>
-	<geometrySize>5450</geometrySize>
+	<geometrySize>2872</geometrySize>
 </root>

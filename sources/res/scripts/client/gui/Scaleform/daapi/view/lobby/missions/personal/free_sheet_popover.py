@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from future.utils import viewitems, viewvalues
 import operator
 from gui.Scaleform.daapi.view.meta.FreeSheetPopoverMeta import FreeSheetPopoverMeta
 from gui.Scaleform.locale.PERSONAL_MISSIONS import PERSONAL_MISSIONS
@@ -25,8 +27,8 @@ class FreeSheetPopover(FreeSheetPopoverMeta):
                     self.__branch = ctxData.passedData.children.get('branch', PM_BRANCH.REGULAR)
         return
 
-    def onTaskClick(self, questID):
-        events_dispatcher.showPersonalMission(int(questID))
+    def onTaskClick(self, idx):
+        events_dispatcher.showPersonalMission(int(idx))
         self.destroy()
 
     def _populate(self):
@@ -41,13 +43,13 @@ class FreeSheetPopover(FreeSheetPopoverMeta):
     def __update(self, *_):
         freeSheetsQuests = []
         pawnedSheets = 0
-        for _, o in sorted(self.__eventsCache.getPersonalMissions().getOperationsForBranch(self.__branch).iteritems(), key=operator.itemgetter(0)):
+        for _, o in sorted(viewitems(self.__eventsCache.getPersonalMissions().getOperationsForBranch(self.__branch)), key=operator.itemgetter(0)):
             if o.isUnlocked():
                 operationName = _ms(PERSONAL_MISSIONS.OPERATIONTITLE_TITLE, title=o.getShortUserName())
                 idx = 1
                 for classifier in o.getIterationChain():
                     _, quests = o.getChainByClassifierAttr(classifier)
-                    for quest in sorted(quests.itervalues(), key=lambda q: q.getID()):
+                    for quest in sorted(viewvalues(quests), key=lambda q: q.getID()):
                         if quest.areTokensPawned():
                             freeSheetsQuests.append({'taskId': str(quest.getID()), 
                                'taskText': text_styles.standard(operationName), 

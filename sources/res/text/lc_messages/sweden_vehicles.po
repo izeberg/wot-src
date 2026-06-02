@@ -208,6 +208,9 @@ msgstr "\"利斧\""
 msgid "Chassis_S36_Strv_107_12"
 msgstr "Strv 107-12"
 
+msgid "Chassis_S37_Ambassador"
+msgstr "持信者"
+
 msgid "Chassis_S39_Strv_m31"
 msgstr "Strv m/31"
 
@@ -273,6 +276,9 @@ msgstr "Ra 105"
 
 msgid "Ra_121"
 msgstr "Ra 121"
+
+msgid "Ra_122_Ambassador"
+msgstr "Ra 122 (持信者)"
 
 msgid "Ra_146"
 msgstr "Ra 146"
@@ -638,10 +644,10 @@ msgid "S28_UDES_15_16"
 msgstr "UDES 15/16"
 
 msgid "S28_UDES_15_16_7x7"
-msgstr "UDES 15/16 7v7"
+msgstr "UDES 15/16 7x7"
 
 msgid "S28_UDES_15_16_7x7_short"
-msgstr "UDES 15/16 7v7"
+msgstr "UDES 15/16 7x7"
 
 msgid "S28_UDES_15_16_descr"
 msgstr "?empty?"
@@ -779,6 +785,26 @@ msgstr ""
 
 msgid "S36_Strv_107_12_short"
 msgstr "Strv 107-12"
+
+msgid "S37_Ambassador"
+msgstr "持信者"
+
+msgid "S37_Ambassador_descr"
+msgstr ""
+"20世纪60年代初，V系开始研发一辆新型坦克，旨在作为Strv "
+"103的替代方案，并在技术上实现高度创新。该坦克采用传统布局，配备可旋转炮塔、扭杆悬挂，以及风冷柴油发动机。然而，在研发过程中暴露出诸多问题: "
+"发动机冷却系统效率较低，机油消耗量超标，炮塔内部空间也过于局促。考虑到Strv "
+"103尽管设计独特，但仍被证明是一辆切实可行的坦克，因此，持信者计划被叫停。"
+
+msgid "S37_Ambassador_long_special"
+msgstr ""
+"持信者是一辆V系IX级支援型重型坦克。它配备一门强劲的4连发弹夹炮，短装填时间非常短。此外，不俗的机动性使其能够快速转场，而快速的完整弹夹装填则保证了稳定的射速，不会出现长时间的火力中断。"
+
+msgid "S37_Ambassador_short"
+msgstr "持信者"
+
+msgid "S37_Ambassador_short_special"
+msgstr "良好的机动性，短装填时间较短的弹夹炮"
 
 msgid "S39_Strv_m31"
 msgstr "Strv m/31"
@@ -961,6 +987,9 @@ msgstr "\"利斧\""
 msgid "Turret_1_S36_Strv_107_12"
 msgstr "Strv 107-12"
 
+msgid "Turret_1_S37_Ambassador"
+msgstr "持信者"
+
 msgid "Turret_1_S39_Strv_m31"
 msgstr "Strv m/31"
 
@@ -1003,6 +1032,9 @@ msgstr "沃尔沃 DC"
 msgid "Volvo_FE"
 msgstr "沃尔沃 FE"
 
+msgid "Volvo_SFA_12_Ambassador"
+msgstr "沃尔沃 SFA 12 (持信者)"
+
 msgid "Volvo_TD_100_A"
 msgstr "沃尔沃 TD 100A"
 
@@ -1026,6 +1058,9 @@ msgstr "slpprj D/5"
 
 msgid "_105mm_Bofors_D_G5_SH"
 msgstr "博福斯 10.5cm D/5炮"
+
+msgid "_105mm_L_7_Gun_Ambassador"
+msgstr "105mm L7炮 (持信者)"
 
 msgid "_105mm_TK_105_9"
 msgstr "10.5cm TK 105-9炮"
@@ -1125,6 +1160,9 @@ msgstr "sgr m/52"
 
 msgid "_105mm_sgr_m_52_52E2"
 msgstr "sgr m/52 (52E2)"
+
+msgid "_105mm_sgr_m_F_Ambassador"
+msgstr "sgr m/F (持信者)"
 
 msgid "_105mm_slpgr_LS_50_S"
 msgstr "slpgr L/50 S"
@@ -1237,6 +1275,9 @@ msgstr "slpprj m/73"
 msgid "_105mm_slpprj_m_78"
 msgstr "slpprj m/78"
 
+msgid "_105mm_slpprj_m_F_Ambassador"
+msgstr "slpprj m/F (持信者)"
+
 msgid "_105mm_slpprj_m_ny"
 msgstr "slpprj m/ny"
 
@@ -1248,6 +1289,9 @@ msgstr "slpsgr m/60"
 
 msgid "_105mm_slpsgr_m_65"
 msgstr "slpsgr m/65"
+
+msgid "_105mm_slpsgr_m_F_Ambassador"
+msgstr "slpsgr m/F (持信者)"
 
 msgid "_105mm_slsgr_m_61A"
 msgstr "slsgr m/61A"

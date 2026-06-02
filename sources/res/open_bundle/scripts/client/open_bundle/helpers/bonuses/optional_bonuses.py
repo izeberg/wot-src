@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from future.utils import viewitems
 from gui.server_events.bonuses import getNonQuestBonuses
 
 def parseBonusData(data):
@@ -19,7 +21,7 @@ def parseBonusData(data):
                         cell = result.setdefault(name, {})
                         cell['probability'] = probability[0]
                         cell['bonuses'] = []
-                        for k, v in rawData.iteritems():
+                        for k, v in viewitems(rawData):
                             cell['bonuses'].extend(getNonQuestBonuses(k, v))
 
     return result

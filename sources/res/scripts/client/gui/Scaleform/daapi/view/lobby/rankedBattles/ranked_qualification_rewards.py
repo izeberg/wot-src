@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from collections import OrderedDict
 from frameworks.wulf import ViewFlags, ViewSettings
 from helpers import dependency

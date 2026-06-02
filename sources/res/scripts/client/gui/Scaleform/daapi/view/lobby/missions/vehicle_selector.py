@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from CurrentVehicle import g_currentVehicle
 from gui.filters.carousel_filter import BasicCriteriesGroup
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS

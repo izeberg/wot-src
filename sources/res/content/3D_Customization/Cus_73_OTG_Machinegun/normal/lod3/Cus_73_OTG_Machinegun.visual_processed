@@ -51,12 +51,12 @@
 						<Texture>content/3D_Customization/Cus_73_OTG_Machinegun/Cus_73_OTG_Machinegun_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.077170 0.263751 0.168386</groupOrigin>
+				<groupOrigin>-0.077170 0.313622 0.168386</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.464626 -0.200000 -0.640458</min>
+		<min>-0.464626 -0.100000 -0.640458</min>
 		<max>0.300262 0.748611 0.972121</max>
 	</boundingBox>
 	<customBsp>true</customBsp>

@@ -1,6 +1,8 @@
-from collections import namedtuple
-from itertools import islice
+from __future__ import absolute_import
 import logging
+from collections import namedtuple
+from functools import reduce
+from itertools import islice
 from CurrentVehicle import g_currentVehicle
 from wg_async import wg_await, wg_async
 from constants import CLIENT_COMMAND_SOURCES

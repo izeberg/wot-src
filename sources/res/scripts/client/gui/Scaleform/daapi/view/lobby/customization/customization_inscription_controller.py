@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import SoundGroups
 from account_helpers.AccountSettings import AccountSettings, CUSTOMIZATION_SECTION
 from gui import SystemMessages

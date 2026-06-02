@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.app_loader import sf_lobby
 from gui.shared.SoundEffectsId import SoundEffectsId
 

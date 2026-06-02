@@ -1,9 +1,9 @@
 from __future__ import absolute_import, division
-import math
+import math, typing
 from collections import OrderedDict
-from future.builtins import round
+from builtins import round
 from future.utils import listvalues
-import typing, BigWorld, GUI, armor_inspector, math_utils
+import BigWorld, GUI, armor_inspector, math_utils
 from constants import VehicleArmorTags, VehicleTurretTags
 from AvatarInputHandler import cameras
 from Vehicle import SegmentCollisionResultExt

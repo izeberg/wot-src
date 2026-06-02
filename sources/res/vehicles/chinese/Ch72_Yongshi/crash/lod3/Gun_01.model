@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/chinese/Ch72_Yongshi/crash/lod3/Gun_01</nodefullVisual>
+	<parent>vehicles/chinese/Ch72_Yongshi/crash/lod4/Gun_01</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-0.485274 -0.340566 -1.281472</min>
+		<max>0.318833 0.318204 6.360057</max>
+	</visibilityBox>
+</root>

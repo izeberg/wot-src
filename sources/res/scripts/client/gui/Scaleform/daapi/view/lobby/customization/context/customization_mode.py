@@ -1,7 +1,9 @@
-import logging
+from __future__ import absolute_import
+import logging, typing
 from copy import copy
 from functools import partial
-import typing, math_utils, Math, AnimationSequence
+from future.utils import viewitems
+import Math, AnimationSequence, math_utils
 from CurrentVehicle import g_currentVehicle
 from adisp import adisp_process, adisp_async
 from gui import SystemMessages
@@ -407,7 +409,7 @@ class CustomizationMode(object):
 
     @adisp_async
     @adisp_process
-    def _applyItems(self, modifiedOutfits, callback):
+    def _applyItems(self, purchaseItems, callback):
         raise NotImplementedError
 
     @adisp_async
@@ -527,7 +529,7 @@ class CustomizationMode(object):
 
     def _removeHiddenFromOutfit(self, outfit, vehicleIntCD):
         toRemove = []
-        for itemCD, count in outfit.itemsCounter.iteritems():
+        for itemCD, count in viewitems(outfit.itemsCounter):
             item = self._service.getItemByCD(itemCD)
             if not item.isHidden or item.isStyleOnly or item.isHiddenInUI():
                 continue

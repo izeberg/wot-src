@@ -13,7 +13,7 @@ from vehicle_systems import model_assembler
 from vehicle_systems import camouflages
 from vehicle_systems.vehicle_composition import getExtraSlotMap, getObjectSlots, VehicleSlots, createVehicleComposition, removeComposition
 from vehicle_systems.vehicle_damage_state import VehicleDamageState
-from vehicle_systems.tankStructure import VehiclePartsTuple, ModelsSetParams, TankPartNames, ColliderTypes, TankPartIndexes, TankNodeNames, CgfTankNodes, TankSoundObjectsIndexes
+from vehicle_systems.tankStructure import VehiclePartsTuple, ModelsSetParams, TankPartNames, ColliderTypes, TankPartIndexes, TankNodeNames, CgfTankNodes, TankSoundObjectsIndexes, TankRenderMode
 from vehicle_systems.components.CrashedTracks import CrashedTrackController
 from vehicle_systems.components.vehicleDecal import VehicleDecal
 from vehicle_systems.components.siegeEffectsController import SiegeEffectsController
@@ -730,6 +730,13 @@ class CommonTankAppearance(ScriptGameObject):
                     ]
         if IS_EDITOR or self.__forceDynAttachmentLoading:
             prefabMap += self.slotPrefabs
+        collisionState = self.renderMode in (
+         TankRenderMode.CLIENT_COLLISION,
+         TankRenderMode.SERVER_COLLISION,
+         TankRenderMode.CRASH_COLLISION,
+         TankRenderMode.ARMOR_WIDTH_COLLISION)
+        if IS_EDITOR and collisionState:
+            prefabMap = []
         extraSlots = getExtraSlotMap(self.typeDescriptor, self) + getObjectSlots(self.typeDescriptor)
         shotEffectPrefabs, shotEffectExtraSlots = self._getShotEffectCompositionItems()
         prefabMap += shotEffectPrefabs

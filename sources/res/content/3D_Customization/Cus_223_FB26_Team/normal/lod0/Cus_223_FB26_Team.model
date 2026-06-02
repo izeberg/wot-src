@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>content/3D_Customization/Cus_223_FB26_Team/normal/lod0/Cus_223_FB26_Team</nodefullVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.630058 0.000000 -0.898986</min>
+		<max>0.035309 0.443526 0.814086</max>
+	</visibilityBox>
+	<parent>content/3D_Customization/Cus_223_FB26_Team/normal/lod1/Cus_223_FB26_Team</parent>
+	<extent>32.000000</extent>
+</root>

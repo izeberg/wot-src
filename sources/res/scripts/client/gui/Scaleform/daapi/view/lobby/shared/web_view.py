@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing, BigWorld, logging
 from adisp import adisp_process
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS

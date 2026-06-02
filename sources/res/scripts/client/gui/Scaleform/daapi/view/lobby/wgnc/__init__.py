@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from debug_utils import LOG_WARNING
 from frameworks.wulf import WindowLayer
 from gui.Scaleform.framework import ScopeTemplates, ViewSettings, GroupedViewSettings

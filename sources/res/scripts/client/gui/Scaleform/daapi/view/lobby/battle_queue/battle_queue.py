@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import weakref, BigWorld
 from adisp import adisp_process, adisp_async
 from client_request_lib.exceptions import ResponseCodes
@@ -389,7 +390,7 @@ class BattleStrongholdsQueue(BattleStrongholdsQueueMeta, LobbySubView, ClanEmble
     def onStartBattle(self):
         self.__stopUpdateScreen()
 
-    def onStrongholdMaintenance(self, showWindow):
+    def onStrongholdMaintenance(self, state):
         self.__showBattleRoom()
 
     def onUnitFlagsChanged(self, flags, timeLeft):

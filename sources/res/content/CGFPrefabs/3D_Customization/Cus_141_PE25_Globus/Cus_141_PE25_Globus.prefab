@@ -96,7 +96,7 @@
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>0 0 0</value>
+						<value>-0 0 0</value>
 					</property>
 				</config>
 			</component>
@@ -222,6 +222,10 @@
 						<value>1</value>
 					</property>
 					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>decorType</name>
 						<value>0</value>
 					</property>
@@ -237,6 +241,10 @@
 				<config>
 					<property>
 						<name>Auto Start</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>DynamicModelLinkType</name>
 						<value>0</value>
 					</property>
 					<property>
@@ -320,6 +328,14 @@
 						<value>-1</value>
 					</property>
 				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>BW::VisibilityTunnelComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>08cfd470-92fe-4067-897c-c17442e35d6f</UUID>
+				<flags>3</flags>
 			</component>
 		</ComponentPool>
 		<ComponentPool>

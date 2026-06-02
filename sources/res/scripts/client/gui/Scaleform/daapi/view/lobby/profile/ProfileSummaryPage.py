@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.daapi.view.lobby.profile.ProfileSummary import ProfileSummary
 from gui.Scaleform.locale.PROFILE import PROFILE
 

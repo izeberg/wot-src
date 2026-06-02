@@ -244,6 +244,10 @@
 						<value>1</value>
 					</property>
 					<property>
+						<name>DynamicModelLinkType</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>Layers</name>
 						<collection>
 							<item>
@@ -324,6 +328,14 @@
 						<value>-1</value>
 					</property>
 				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>BW::VisibilityTunnelComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>06b078f0-8a33-431d-947f-dfb0958d810c</UUID>
+				<flags>3</flags>
 			</component>
 		</ComponentPool>
 		<ComponentPool>

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from functools import partial
 from gui.prb_control.entities.base.external_battle_unit.base_external_battle_ctx import SendInvitesExternalBattleUnitCtx
 from gui.Scaleform.daapi.view.lobby.SendInvitesWindow import SendInvitesWindow

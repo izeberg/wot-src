@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from helpers import dependency
 from gui.ClientUpdateManager import g_clientUpdateManager
 from gui.Scaleform.daapi.view.lobby.components.browser_view_page import BrowserPageComponent

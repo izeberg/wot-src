@@ -1,6 +1,8 @@
+from __future__ import absolute_import
 import logging, typing, nations
 from gui.Scaleform import MENU
 from gui import GUI_NATIONS_ORDER_INDEX_REVERSED
+from gui.Scaleform.daapi.view.lobby.vehicle_preview.items_kit_helper import collapseItemsPack, getCompensateItemsCount, getDataOneVehicle, getDataMultiVehicles, getCouponDiscountForItemPack, getCouponBonusesForItemPack
 from gui.Scaleform.genConsts.STORE_CONSTANTS import STORE_CONSTANTS
 from gui.Scaleform.genConsts.TOOLTIPS_CONSTANTS import TOOLTIPS_CONSTANTS
 from gui.Scaleform.locale.RES_ICONS import RES_ICONS
@@ -16,9 +18,6 @@ from gui.shared.utils import vehicle_collector_helper
 from helpers import dependency, int2roman
 from helpers.i18n import makeString as _ms
 from helpers.time_utils import getTillTimeString
-from items_kit_helper import collapseItemsPack
-from items_kit_helper import getCompensateItemsCount, getDataOneVehicle, getDataMultiVehicles
-from items_kit_helper import getCouponDiscountForItemPack, getCouponBonusesForItemPack
 from skeletons.gui.shared import IItemsCache
 from web.web_client_api.common import CompensationType, ItemPackTypeGroup
 if typing.TYPE_CHECKING:

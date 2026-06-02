@@ -51,14 +51,14 @@
 						<Texture>content/3D_Customization/Cus_43_FGM_Canisters/Cus_43_FGM_Canisters_s_nd0_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.140741 0.211375 0.082448</groupOrigin>
+				<groupOrigin>-0.131808 0.197959 0.077215</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.510814 -0.017806 -0.553457</min>
-		<max>0.196829 0.547389 0.786371</max>
+		<min>-0.478391 -0.016676 -0.518327</min>
+		<max>0.184336 0.512645 0.736458</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>23404</geometrySize>
+	<geometrySize>23532</geometrySize>
 </root>

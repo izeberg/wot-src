@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.shared.system_factory import registerScaleformLobbyPackages
 from open_bundle.gui.impl.lobby import registerEventBanners
 from open_bundle.skeletons import registerOpenBundleController

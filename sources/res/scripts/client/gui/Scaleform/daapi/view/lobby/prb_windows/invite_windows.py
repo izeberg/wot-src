@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from PlayerEvents import g_playerEvents
 from adisp import adisp_process
 from gui import DialogsInterface

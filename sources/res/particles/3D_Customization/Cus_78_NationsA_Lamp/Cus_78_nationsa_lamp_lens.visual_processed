@@ -99,6 +99,10 @@
 						softFactor
 						<Float>0.100000</Float>
 					</property>
+					<property>
+						g_visibilityTunnelCompensation
+						<Float>3.000000</Float>
+					</property>
 				</material>
 				<groupOrigin>0.000000 0.000000 0.000000</groupOrigin>
 			</primitiveGroup>
@@ -176,6 +180,10 @@
 					<property>
 						softFactor
 						<Float>0.000000</Float>
+					</property>
+					<property>
+						g_visibilityTunnelCompensation
+						<Float>3.000000</Float>
 					</property>
 				</material>
 				<groupOrigin>0.000000 0.000000 -0.000313</groupOrigin>

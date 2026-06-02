@@ -8,6 +8,33 @@
 			<row2>0.000000 0.000000 1.000000</row2>
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
+		<node>
+			<identifier>hd_bld_EU_033_KitCrashHouses_Wall_05</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>lod0</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>s9</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
@@ -19,223 +46,51 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>s_nd7</identifier>
-					<fx>shaders/std_effects/PBS_tiled.fx</fx>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/PBS_ext_dual.fx</fx>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>111</materialKind>
 					<property>
-						g_fakeShadowsAndDetailParams
-						<Vector4>
-							0.5 0.5 1 0.000000
-							<!--BW_String-->
-						</Vector4>
+						normalMap
+						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_NewCity_01_ANM.dds</Texture>
 					</property>
 					<property>
-						g_dirtColorParams
-						<Vector4>0.100000 0.000000 0.000000 0.000000</Vector4>
+						metallicGlossMap
+						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_NewCity_01_GMM.dds</Texture>
 					</property>
 					<property>
-						g_dirtColor
-						<Vector4>
-							0.47 0.43 0.38 0.05
-							<!--BW_String-->
-						</Vector4>
+						g_vertexColorMode
+						<Int>3</Int>
 					</property>
 					<property>
-						g_atlasSizes
-						<Vector4>5 4 5 4</Vector4>
+						g_enableAO
+						<Bool>true</Bool>
 					</property>
 					<property>
-						blendMask
-						<Texture>content/Buildings/hd_bld_EU_033_KitCrashHouses/EU_NewCity_01_19_blend.png</Texture>
+						diffuseMap2
+						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_NewCity_01_AM2.dds</Texture>
 					</property>
 					<property>
-						g_tile1Tint
-						<Vector4>
-							0.905882 0.913726 0.913726 1
-							<!--BW_String-->
-						</Vector4>
-					</property>
-					<property>
-						g_tile0Tint
-						<Vector4>
-							0.87451 0.819608 0.796079 1
-							<!--BW_String-->
-						</Vector4>
-					</property>
-					<property>
-						dirtMap
-						<Texture>content/Buildings/00_Tiles/Dirt_railroad_01.dds</Texture>
+						diffuseMap
+						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_NewCity_01_AM.dds</Texture>
 					</property>
 					<property>
 						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>
-					<property>
-						albedoHeightTile0
-						<Texture>content/Buildings/00_Tiles/dds/Blocks_02_512_AM.dds</Texture>
-					</property>
-					<property>
-						normalGlossSpecTile0
-						<Texture>content/Buildings/00_Tiles/dds/Blocks_02_512_GBMT.dds</Texture>
-					</property>
-					<property>
-						metallicAOTile0
-						<Texture>content/Buildings/00_Tiles/dds/Blocks_02_512_MAO.dds</Texture>
-					</property>
-					<property>
-						albedoHeightTile1
-						<Texture>content/Buildings/00_Tiles/dds/Blocks_02_crash_512_AM.dds</Texture>
-					</property>
-					<property>
-						normalGlossSpecTile1
-						<Texture>content/Buildings/00_Tiles/dds/Blocks_02_crash_512_GBMT.dds</Texture>
-					</property>
-					<property>
-						metallicAOTile1
-						<Texture>content/Buildings/00_Tiles/dds/Blocks_02_crash_512_MAO.dds</Texture>
-					</property>
-					<property>
-						albedoHeightTile2
-						<Texture>content/Buildings/00_Tiles/dds/Plaster_01_crash_512_AM.dds</Texture>
-					</property>
-					<property>
-						normalGlossSpecTile2
-						<Texture>content/Buildings/00_Tiles/dds/Plaster_01_crash_512_GBMT.dds</Texture>
-					</property>
-					<property>
-						metallicAOTile2
-						<Texture>content/Buildings/00_Tiles/dds/Plaster_01_crash_512_MAO.dds</Texture>
-					</property>
-					<property>
-						colorTex
-						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
-					</property>
 				</material>
-				<groupOrigin>0.000001 6.636195 -0.241645</groupOrigin>
+				<groupOrigin>0.447949 9.260532 -0.180641</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				1
-				<material>
-					<identifier>s_nd5</identifier>
-					<fx>shaders/std_effects/PBS_tiled.fx</fx>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>111</materialKind>
-					<property>
-						g_fakeShadowsAndDetailParams
-						<Vector4>
-							0.5 0.5 1 0.000000
-							<!--BW_String-->
-						</Vector4>
-					</property>
-					<property>
-						g_dirtColorParams
-						<Vector4>0.100000 0.000000 0.000000 0.000000</Vector4>
-					</property>
-					<property>
-						g_dirtColor
-						<Vector4>
-							0.47 0.43 0.38 0.000000
-							<!--BW_String-->
-						</Vector4>
-					</property>
-					<property>
-						g_atlasSizes
-						<Vector4>5 4 5 4</Vector4>
-					</property>
-					<property>
-						blendMask
-						<Texture>content/Buildings/hd_bld_EU_033_KitCrashHouses/EU_NewCity_01_19_blend.png</Texture>
-					</property>
-					<property>
-						g_tile1Tint
-						<Vector4>
-							0.913726 0.901961 0.886275 1
-							<!--BW_String-->
-						</Vector4>
-					</property>
-					<property>
-						g_tile0Tint
-						<Vector4>
-							0.85098 0.815686 0.780392 1
-							<!--BW_String-->
-						</Vector4>
-					</property>
-					<property>
-						dirtMap
-						<Texture>content/Buildings/00_Tiles/Dirt_Plaster_01.dds</Texture>
-					</property>
-					<property>
-						g_enableTerrainBlending
-						<Bool>true</Bool>
-					</property>
-					<property>
-						albedoHeightTile0
-						<Texture>content/Buildings/00_Tiles/dds/Wall_04_Internal_512_AM.dds</Texture>
-					</property>
-					<property>
-						normalGlossSpecTile0
-						<Texture>content/Buildings/00_Tiles/dds/Wall_04_Internal_512_GBMT.dds</Texture>
-					</property>
-					<property>
-						metallicAOTile0
-						<Texture>content/Buildings/00_Tiles/dds/Wall_04_Internal_512_MAO.dds</Texture>
-					</property>
-					<property>
-						albedoHeightTile1
-						<Texture>content/Buildings/00_Tiles/dds/Redbrick_06_crashed_512_AM.dds</Texture>
-					</property>
-					<property>
-						normalGlossSpecTile1
-						<Texture>content/Buildings/00_Tiles/dds/Redbrick_06_crashed_512_GBMT.dds</Texture>
-					</property>
-					<property>
-						metallicAOTile1
-						<Texture>content/Buildings/00_Tiles/dds/Redbrick_06_crashed_512_MAO.dds</Texture>
-					</property>
-					<property>
-						albedoHeightTile2
-						<Texture>content/Buildings/00_Tiles/dds/Plaster_01_crash_512_AM.dds</Texture>
-					</property>
-					<property>
-						normalGlossSpecTile2
-						<Texture>content/Buildings/00_Tiles/dds/Plaster_01_crash_512_GBMT.dds</Texture>
-					</property>
-					<property>
-						metallicAOTile2
-						<Texture>content/Buildings/00_Tiles/dds/Plaster_01_crash_512_MAO.dds</Texture>
-					</property>
-					<property>
-						colorTex
-						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
-					</property>
-				</material>
-				<groupOrigin>0.000001 6.636195 -1.769065</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
-				2
 				<material>
 					<identifier>s_nd2</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>111</materialKind>
 					<property>
-						g_fakeShadowsAndDetailParams
-						<Vector4>
-							0.5 0.5 1 0.000000
-							<!--BW_String-->
-						</Vector4>
-					</property>
-					<property>
-						g_dirtColorParams
-						<Vector4>0.100000 0.000000 0.000000 0.000000</Vector4>
-					</property>
-					<property>
 						g_dirtColor
-						<Vector4>
-							0.47 0.43 0.38 0.13
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.470000 0.430000 0.380000 0.130000</Vector4>
 					</property>
 					<property>
 						g_atlasSizes
@@ -297,67 +152,15 @@
 				<groupOrigin>0.082194 5.143233 -1.345141</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				3
-				<material>
-					<identifier>s_nd0</identifier>
-					<fx>shaders/std_effects/PBS_ext_dual.fx</fx>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>111</materialKind>
-					<property>
-						normalMap
-						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_NewCity_01_ANM.dds</Texture>
-					</property>
-					<property>
-						metallicGlossMap
-						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_NewCity_01_GMM.dds</Texture>
-					</property>
-					<property>
-						g_vertexColorMode
-						<Int>3</Int>
-					</property>
-					<property>
-						g_enableAO
-						<Bool>true</Bool>
-					</property>
-					<property>
-						diffuseMap2
-						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_NewCity_01_AM2.dds</Texture>
-					</property>
-					<property>
-						diffuseMap
-						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_NewCity_01_AM.dds</Texture>
-					</property>
-					<property>
-						g_enableTerrainBlending
-						<Bool>true</Bool>
-					</property>
-				</material>
-				<groupOrigin>0.447949 9.260532 -0.180641</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
-				4
+				2
 				<material>
 					<identifier>s_nd4</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>111</materialKind>
 					<property>
-						g_fakeShadowsAndDetailParams
-						<Vector4>
-							0.5 0.5 1 0.000000
-							<!--BW_String-->
-						</Vector4>
-					</property>
-					<property>
-						g_dirtColorParams
-						<Vector4>0.100000 0.000000 0.000000 0.000000</Vector4>
-					</property>
-					<property>
 						g_dirtColor
-						<Vector4>
-							0.47 0.43 0.38 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.470000 0.430000 0.380000 0.000000</Vector4>
 					</property>
 					<property>
 						g_atlasSizes
@@ -419,6 +222,162 @@
 				<groupOrigin>-0.863601 3.963329 -0.999295</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
+				3
+				<material>
+					<identifier>s_nd5</identifier>
+					<fx>shaders/std_effects/PBS_tiled.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>111</materialKind>
+					<property>
+						g_dirtColor
+						<Vector4>0.470000 0.430000 0.380000 0.000000</Vector4>
+					</property>
+					<property>
+						g_atlasSizes
+						<Vector4>5 4 5 4</Vector4>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/Buildings/hd_bld_EU_033_KitCrashHouses/EU_NewCity_01_19_blend.png</Texture>
+					</property>
+					<property>
+						g_tile1Tint
+						<Vector4>0.913726 0.901961 0.886275 1.000000</Vector4>
+					</property>
+					<property>
+						g_tile0Tint
+						<Vector4>0.850980 0.815686 0.780392 1.000000</Vector4>
+					</property>
+					<property>
+						dirtMap
+						<Texture>content/Buildings/00_Tiles/Dirt_Plaster_01.dds</Texture>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
+					</property>
+					<property>
+						albedoHeightTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wall_04_Internal_512_AM.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wall_04_Internal_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wall_04_Internal_512_MAO.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Buildings/00_Tiles/dds/Redbrick_06_crashed_512_AM.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Buildings/00_Tiles/dds/Redbrick_06_crashed_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Buildings/00_Tiles/dds/Redbrick_06_crashed_512_MAO.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/Buildings/00_Tiles/dds/Plaster_01_crash_512_AM.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Buildings/00_Tiles/dds/Plaster_01_crash_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Buildings/00_Tiles/dds/Plaster_01_crash_512_MAO.dds</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.000001 6.636195 -1.769065</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				4
+				<material>
+					<identifier>s_nd7</identifier>
+					<fx>shaders/std_effects/PBS_tiled.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>111</materialKind>
+					<property>
+						g_dirtColor
+						<Vector4>0.470000 0.430000 0.380000 0.050000</Vector4>
+					</property>
+					<property>
+						g_atlasSizes
+						<Vector4>5 4 5 4</Vector4>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/Buildings/hd_bld_EU_033_KitCrashHouses/EU_NewCity_01_19_blend.png</Texture>
+					</property>
+					<property>
+						g_tile1Tint
+						<Vector4>0.905882 0.913726 0.913726 1.000000</Vector4>
+					</property>
+					<property>
+						g_tile0Tint
+						<Vector4>0.874510 0.819608 0.796079 1.000000</Vector4>
+					</property>
+					<property>
+						dirtMap
+						<Texture>content/Buildings/00_Tiles/Dirt_railroad_01.dds</Texture>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
+					</property>
+					<property>
+						albedoHeightTile0
+						<Texture>content/Buildings/00_Tiles/dds/Blocks_02_512_AM.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Buildings/00_Tiles/dds/Blocks_02_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Buildings/00_Tiles/dds/Blocks_02_512_MAO.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Buildings/00_Tiles/dds/Blocks_02_crash_512_AM.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Buildings/00_Tiles/dds/Blocks_02_crash_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Buildings/00_Tiles/dds/Blocks_02_crash_512_MAO.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/Buildings/00_Tiles/dds/Plaster_01_crash_512_AM.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Buildings/00_Tiles/dds/Plaster_01_crash_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Buildings/00_Tiles/dds/Plaster_01_crash_512_MAO.dds</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.000001 6.636195 -0.241645</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
 				5
 				<material>
 					<identifier>s_nd9</identifier>
@@ -432,10 +391,6 @@
 					<property>
 						metallicGlossMap
 						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_Bricks_01_GMM.dds</Texture>
-					</property>
-					<property>
-						g_vertexColorMode
-						<Int>0</Int>
 					</property>
 					<property>
 						g_enableAO
@@ -456,7 +411,7 @@
 	</renderSet>
 	<boundingBox>
 		<min>-5.291781 -2.027318 -3.228588</min>
-		<max>5.291783 15.299709 1.234639</max>
+		<max>5.291783 15.299708 1.234639</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
 	<geometrySize>212790</geometrySize>

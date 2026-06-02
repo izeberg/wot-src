@@ -30,7 +30,8 @@ def getContextMenuData(event, uniqueID, selectedSetup):
                                                                                     'installedSlotId',
                                                                                     'itemInstalledSetupIdx',
                                                                                     'itemInstalledSetupSlotIdx',
-                                                                                    'isDisabled')}
+                                                                                    'isDisabled',
+                                                                                    'shellsCounts')}
         contextMenuArgs['emitterUID'] = uniqueID
         if contextMenuArgs['installedSlotId'] == NONE_ID:
             return createContextMenuData(TANK_SETUP_CARD_CM.get(event.getArgument('slotType')), contextMenuArgs)
@@ -61,7 +62,8 @@ def getHangarContextMenuData(event, uniqueID):
                                                                                     'isMountedMoreThanOne',
                                                                                     'installedSlotId',
                                                                                     'itemInstalledSetupIdx',
-                                                                                    'itemInstalledSetupSlotIdx')}
+                                                                                    'itemInstalledSetupSlotIdx',
+                                                                                    'shellsCounts')}
         contextMenuArgs['emitterUID'] = uniqueID
         if contextMenuArgs['intCD'] > 0:
             return createContextMenuData(HANGAR_TANK_SETUP_SLOT_CM.get(event.getArgument('slotType')), contextMenuArgs)

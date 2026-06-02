@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>content/3D_Customization/Cus_13_Asia_Shield_With_Weapon/normal/lod1/attachment</nodefullVisual>
 	<parent>content/3D_Customization/Cus_13_Asia_Shield_With_Weapon/normal/lod2/attachment</parent>
 	<extent>64.000000</extent>
 	<visibilityBox>
-		<min>-0.686677 0.000096 -1.317422</min>
-		<max>0.173072 0.408945 1.166492</max>
+		<min>-0.641951 0.000090 -1.231614</min>
+		<max>0.161800 0.382309 1.090514</max>
 	</visibilityBox>
 	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_13_Asia_Shield_With_Weapon/normal/lod1/attachment</nodefullVisual>
 </root>

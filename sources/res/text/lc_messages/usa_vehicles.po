@@ -320,10 +320,10 @@ msgid "A120_M48A5"
 msgstr "M48A5"
 
 msgid "A120_M48A5_7x7"
-msgstr "M48A5 7v7"
+msgstr "M48A5 7x7"
 
 msgid "A120_M48A5_7x7_short"
-msgstr "M48A5 7v7"
+msgstr "M48A5 7x7"
 
 msgid "A120_M48A5_descr"
 msgstr "?empty?"
@@ -1408,6 +1408,24 @@ msgstr ""
 msgid "A195_Gorilla_short"
 msgstr "\"巨猿\""
 
+msgid "A197_Jezevec"
+msgstr "\"獾\""
+
+msgid "A197_Jezevec_descr"
+msgstr ""
+"20世纪60年代初，J系开始研发一辆配备强劲武器、外形低矮且机动性良好的中型坦克。其设计有别于传统布局: "
+"战斗室位于后部，乘员几乎完全位于车体中，而火炮和摇摆式炮塔则通过遥控操作。由于设计复杂、成本高昂，该计划最终被放弃。一辆原型车被出售给客户进行测试，但其表现与最初预期存在差距。20世纪70年代中期，该坦克被转送至M系，用于相关技术研究。"
+
+msgid "A197_Jezevec_long_special"
+msgstr ""
+"\"獾\"是一辆M系IX级支援型中型坦克。该坦克配备一门独特的自动装填炮，虽然平均单发损伤较低，但大容量弹鼓和较短的短装填时间弥补了该不足，能够造成高额的爆发损伤。每发炮弹的装填时间相同，可在不影响装填效率的前提下灵活输出。它还具有出色的机动性。"
+
+msgid "A197_Jezevec_short"
+msgstr "\"獾\""
+
+msgid "A197_Jezevec_short_special"
+msgstr "出色的机动性，短装填时间较短的自动装填炮"
+
 msgid "A21_T14_long_special"
 msgstr ""
 "一辆M系V级重型坦克，拥有倾斜的正面装甲，优秀的每分钟损伤以及对重型坦克而言良好的机动性。虽然坦克车体侧面装甲较为薄弱，但额外的裙板能够部分补齐防护的短板。"
@@ -1598,13 +1616,13 @@ msgid "A67_T57_58"
 msgstr "T57重型坦克"
 
 msgid "A67_T57_58_7x7"
-msgstr "T57重型坦克 7v7"
+msgstr "T57重型坦克 7x7"
 
 msgid "A67_T57_58_7x7_descr"
 msgstr "?empty?"
 
 msgid "A67_T57_58_7x7_short"
-msgstr "T57重型坦克 7v7"
+msgstr "T57重型坦克 7x7"
 
 msgid "A67_T57_58_descr"
 msgstr "?empty?"
@@ -1625,10 +1643,10 @@ msgid "A69_T110E5"
 msgstr "T110E5"
 
 msgid "A69_T110E5_7x7"
-msgstr "T110E5 7v7"
+msgstr "T110E5 7x7"
 
 msgid "A69_T110E5_7x7_short"
-msgstr "T110E5 7v7"
+msgstr "T110E5 7x7"
 
 msgid "A69_T110E5_descr"
 msgstr "?empty?"
@@ -1930,6 +1948,9 @@ msgid "American_LFF_Corporation_V12_short"
 msgstr ""
 "拉弗朗斯\n"
 "312A V-12"
+
+msgid "B_58A"
+msgstr "B-58A"
 
 msgid "British_Wireless_set_N19"
 msgstr "WS No.19"
@@ -2306,6 +2327,9 @@ msgstr "AHT-7"
 
 msgid "Chassis_A195_Gorilla"
 msgstr "\"巨猿\""
+
+msgid "Chassis_A197_Jezevec"
+msgstr "\"獾\""
 
 msgid "Chassis_A22_M5_Stuart"
 msgstr "M5 \"斯图亚特\""
@@ -3655,6 +3679,9 @@ msgstr "QF 6磅炮Mk.III"
 msgid "QF_6_pounder_Mk_IIIA"
 msgstr "QF 6磅炮 Mk IIIA"
 
+msgid "Radiostanice_R_113A"
+msgstr "R-123A"
+
 msgid "Ram-II"
 msgstr "“公羊”II"
 
@@ -3749,14 +3776,14 @@ msgid "T-14_MapsTraining_Player_HT_1"
 msgstr "T14"
 
 msgid "T110E4_7x7"
-msgstr "T110E4 7v7"
+msgstr "T110E4 7x7"
 
 msgid "T110E4_7x7_descr"
 msgstr ""
 "1954年，汽车城举办了一场关于重型坦克开发前景的研讨会。除开其它的先进项目，克莱斯勒公司还以TS-31为基础提出了一种新型坦克设计，主要目的是确保其尺寸能够通过特定隧道。该计划下包含多种方案，但最终被取消。"
 
 msgid "T110E4_7x7_short"
-msgstr "T110E4 7v7"
+msgstr "T110E4 7x7"
 
 msgid "T110_cl"
 msgstr "T110E5 CL"
@@ -4304,6 +4331,9 @@ msgstr "AHT-7"
 
 msgid "Turret_1_A195_Gorilla"
 msgstr "\"巨猿\""
+
+msgid "Turret_1_A197_Jezevec"
+msgstr "\"獾\""
 
 msgid "Turret_1_A22_M5_Stuart"
 msgstr "M5 \"斯图亚特\""
@@ -6608,6 +6638,18 @@ msgstr "M64"
 
 msgid "_76mm_M79"
 msgstr "HVAP M93(M7)"
+
+msgid "_85_mm_D_58A"
+msgstr "85mm D-58A炮"
+
+msgid "_85_mm_UBR_372A"
+msgstr "85mm UBR 372A"
+
+msgid "_85_mm_UBR_372B"
+msgstr "85mm UBR 372B"
+
+msgid "_85_mm_UOF_372A"
+msgstr "85mm UOF 372A"
 
 msgid "_85mm_AAAC_I"
 msgstr "AAAC-I"

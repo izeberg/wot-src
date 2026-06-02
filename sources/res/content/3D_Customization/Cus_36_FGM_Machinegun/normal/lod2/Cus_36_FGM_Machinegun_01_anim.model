@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>content/3D_Customization/Cus_36_FGM_Machinegun/normal/lod2/Cus_36_FGM_Machinegun_01_anim</nodefullVisual>
 	<visibilityBox>
-		<min>-0.349494 -0.200000 -0.193419</min>
-		<max>0.176427 0.466602 1.452192</max>
+		<min>-0.349494 -0.100000 -0.312953</min>
+		<max>0.176427 0.506805 1.332658</max>
 	</visibilityBox>
 	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_36_FGM_Machinegun/normal/lod2/Cus_36_FGM_Machinegun_01_anim</nodefullVisual>
 </root>

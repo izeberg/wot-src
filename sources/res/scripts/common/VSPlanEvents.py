@@ -1,5 +1,6 @@
+from __future__ import absolute_import
 from collections import namedtuple
-from typing import TYPE_CHECKING, Optional
+from typing import Optional
 
 class PcVSPlanSimpleEvent(object):
     CLIENT_ACTIVATION_EVENT = 'OnClientActivation'

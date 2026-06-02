@@ -52,6 +52,9 @@ msgstr "A-220A-DZT"
 msgid "A_220A-DZT_CFE_A"
 msgstr "A-220A-DZT"
 
+msgid "A_220A_2"
+msgstr "A-220A-2"
+
 msgid "A_220B_1_QL"
 msgstr "A-220B(QL)"
 
@@ -512,13 +515,13 @@ msgid "Ch38_WZ113G_FT"
 msgstr "WZ113G"
 
 msgid "Ch38_WZ113G_FT_7x7"
-msgstr "WZ113G 7v7"
+msgstr "WZ113G 7x7"
 
 msgid "Ch38_WZ113G_FT_7x7_descr"
 msgstr "?empty?"
 
 msgid "Ch38_WZ113G_FT_7x7_short"
-msgstr "WZ113G 7v7"
+msgstr "WZ113G 7x7"
 
 msgid "Ch38_WZ113G_FT_descr"
 msgstr "?empty?"
@@ -567,7 +570,7 @@ msgid "Ch41_WZ_111_5A"
 msgstr "111 5A"
 
 msgid "Ch41_WZ_111_5A_7x7"
-msgstr "111 5A 7v7"
+msgstr "111 5A 7x7"
 
 msgid "Ch41_WZ_111_5A_7x7_short"
 msgstr "111 5A 7"
@@ -703,10 +706,10 @@ msgid "Ch48_BZ_75"
 msgstr "BZ-75"
 
 msgid "Ch48_BZ_75_7x7"
-msgstr "BZ-75 7v7"
+msgstr "BZ-75 7x7"
 
 msgid "Ch48_BZ_75_7x7_short"
-msgstr "BZ-75 7v7"
+msgstr "BZ-75 7x7"
 
 msgid "Ch48_BZ_75_descr"
 msgstr ""
@@ -1036,6 +1039,23 @@ msgstr ""
 msgid "Ch70_PTZ_78_short"
 msgstr "PTZ-78"
 
+msgid "Ch72_Yongshi"
+msgstr "骁悍"
+
+msgid "Ch72_Yongshi_desc"
+msgstr ""
+"一个重型坦克蓝图项目，作为113研发工作的一部分而设计。该坦克将基于成熟可靠的中型坦克零部件和组件的底盘与车体，与能够有效对抗敌方重型坦克的强劲武器结合起来。为加快设计进程，决定采用114计划的部分要素；然而，由于主战坦克类型的出现，113的所有研发工作均被叫停。"
+
+msgid "Ch72_Yongshi_long_special"
+msgstr ""
+"骁悍是一辆C系X级全能型重型坦克。火炮是其主要特点。该火炮拥有高额的平均单发损伤，同时，相对于拥有如此高额损伤的火炮来说，其手感异常优秀。该坦克还拥有坚固的车体和炮塔装甲，以及不俗的机动性。"
+
+msgid "Ch72_Yongshi_short"
+msgstr "骁悍"
+
+msgid "Ch72_Yongshi_short_special"
+msgstr "优秀的火炮手感，高额的平均单发损伤"
+
 msgid "Chassis_01_Ch24_Type64_SH"
 msgstr "64式BL"
 
@@ -1348,6 +1368,9 @@ msgstr "BZ-79"
 msgid "Chassis_Ch68_PGZ_70"
 msgstr "PGZ-70"
 
+msgid "Chassis_Ch72_Yongshi"
+msgstr "骁悍"
+
 msgid "Continental_AOSI_895_5_Prem"
 msgstr "大陆 AOSI-895-5"
 
@@ -1649,6 +1672,9 @@ msgstr "PGZ-70"
 msgid "Turret_1_Ch70_PTZ_78"
 msgstr "PTZ-78"
 
+msgid "Turret_1_Ch72_Yongshi"
+msgstr "骁悍"
+
 msgid "Turret_2_Ch04_T34_1"
 msgstr "T-34-1 II"
 
@@ -1742,6 +1768,9 @@ msgstr "V-2-34 (58)"
 
 msgid "V_2_54SC"
 msgstr "V-2-54SC"
+
+msgid "V_2_54SCC"
+msgstr "V-2-54SCC"
 
 msgid "V_2_54SCG"
 msgstr "V-2-54SCG"
@@ -2547,11 +2576,23 @@ msgstr "152mm GM-45炮"
 msgid "_152mm_GM_45AP"
 msgstr "GM 45AP"
 
+msgid "_152mm_GM_45AP_B"
+msgstr "GM 45AP B"
+
+msgid "_152mm_GM_45B"
+msgstr "152mm GM-45B炮"
+
 msgid "_152mm_GM_45CR"
 msgstr "GM 45CR"
 
+msgid "_152mm_GM_45CR_B"
+msgstr "GM 45CR B"
+
 msgid "_152mm_GM_45HE"
 msgstr "GM 45HE"
+
+msgid "_152mm_GM_45HE_B"
+msgstr "GM 45HE B"
 
 msgid "_152mm_HEAT_T"
 msgstr "破-152T"

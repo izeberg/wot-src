@@ -113,13 +113,13 @@
 						<Texture>content/3D_Customization/Cus_103_A15_Mouse_mascot/Cus_103_A15_Mouse_mascot_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.000000 0.241504 -0.158558</groupOrigin>
+				<groupOrigin>0.000000 0.291504 -0.158558</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-0.197456 -0.200000 -0.197201</min>
+		<min>-0.197456 -0.100000 -0.197201</min>
 		<max>0.197456 0.683008 0.514316</max>
 	</boundingBox>
 	<geometrySize>29136</geometrySize>

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.impl.gen import R
 from wg_async import wg_async, wg_await
 

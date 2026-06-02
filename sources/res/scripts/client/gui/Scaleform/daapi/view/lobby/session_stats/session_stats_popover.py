@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.daapi.view.meta.SessionStatsPopoverMeta import SessionStatsPopoverMeta
 from gui.Scaleform.genConsts.SESSION_STATS_CONSTANTS import SESSION_STATS_CONSTANTS
 from gui.Scaleform.daapi.view.lobby.session_stats.session_stats_settings import SessionStatsSettings

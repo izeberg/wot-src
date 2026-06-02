@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui import makeHtmlString
 from gui.impl.gen import R
 from gui.impl import backport

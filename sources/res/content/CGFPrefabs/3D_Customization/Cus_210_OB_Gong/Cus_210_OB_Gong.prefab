@@ -233,6 +233,14 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
+			<type>BW::VisibilityTunnelComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>d15c7b63-bbc1-4123-8c69-dcad0a21f92e</UUID>
+				<flags>3</flags>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
 			<type>VehicleHealthObserverComponent</type>
 			<version>1</version>
 			<component>

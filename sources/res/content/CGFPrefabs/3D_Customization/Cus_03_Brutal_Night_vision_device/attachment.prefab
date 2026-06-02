@@ -103,7 +103,10 @@
 				<config>
 					<property>
 						<name>Position</name>
-						<value>0 0 0</value>
+						<value>
+							0 0 -0.122284
+							<!--BW_String-->
+						</value>
 					</property>
 					<property>
 						<name>Scale</name>
@@ -111,7 +114,7 @@
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>-0 0 0</value>
+						<value>-0 0 -0</value>
 					</property>
 				</config>
 			</component>
@@ -129,7 +132,7 @@
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>0 0 0</value>
+						<value>-0 0 0</value>
 					</property>
 				</config>
 			</component>
@@ -328,6 +331,14 @@
 						<name>Cast Shadows</name>
 						<value>1</value>
 					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -343,6 +354,14 @@
 						<name>Cast Shadows</name>
 						<value>0</value>
 					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
+					</property>
 				</config>
 			</component>
 		</ComponentPool>
@@ -355,6 +374,10 @@
 				<config>
 					<property>
 						<name>Auto Start</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>DynamicModelLinkType</name>
 						<value>0</value>
 					</property>
 					<property>
@@ -438,6 +461,18 @@
 						<value>1</value>
 					</property>
 				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>BW::VisibilityTunnelComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>b416c421-9464-4627-9448-4c1325d20018</UUID>
+				<flags>3</flags>
+			</component>
+			<component>
+				<UUID>7a4032f2-0c1d-4ad0-a8d8-5a2aa8196394</UUID>
+				<flags>3</flags>
 			</component>
 		</ComponentPool>
 		<ComponentPool>

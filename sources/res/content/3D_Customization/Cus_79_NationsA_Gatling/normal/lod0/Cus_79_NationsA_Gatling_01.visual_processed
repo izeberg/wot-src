@@ -52,14 +52,14 @@
 						<Texture>content/3D_Customization/Cus_79_NationsA_Gatling/Cus_79_NationsA_Gatling_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.024076 0.349279 0.103165</groupOrigin>
+				<groupOrigin>0.024076 0.324921 0.103165</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.149202 -0.200000 -0.522906</min>
-		<max>0.197354 0.898557 0.729236</max>
+		<min>-0.149202 -0.100000 -0.522906</min>
+		<max>0.197354 0.749841 0.729236</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>216072</geometrySize>
+	<geometrySize>216396</geometrySize>
 </root>

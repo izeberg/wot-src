@@ -3,9 +3,9 @@
 	<parent>content/3D_Customization/Cus_61_ArmiesCh_Searchlight/normal/lod2/Cus_61_ArmiesCh_Searchlight_01</parent>
 	<extent>64.000000</extent>
 	<visibilityBox>
-		<min>-0.293993 -0.100000 -0.057201</min>
-		<max>0.291061 0.448169 0.193383</max>
+		<min>-0.293993 -0.100000 -0.085409</min>
+		<max>0.291061 0.448169 0.197505</max>
 	</visibilityBox>
-	<nodefullVisual>content/3D_Customization/Cus_61_ArmiesCh_Searchlight/normal/lod1/Cus_61_ArmiesCh_Searchlight_01</nodefullVisual>
 	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_61_ArmiesCh_Searchlight/normal/lod1/Cus_61_ArmiesCh_Searchlight_01</nodefullVisual>
 </root>

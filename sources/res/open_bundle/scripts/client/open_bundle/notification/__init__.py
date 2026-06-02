@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from open_bundle.gui.constants import GFNotificationTemplates
 from open_bundle.gui.impl.lobby.notifications.start_notification import StartNotification
 from open_bundle.gui.impl.lobby.notifications.special_rewards_notification import SpecialRewardsNotification

@@ -190,6 +190,9 @@ msgstr "Wz.64GC B"
 msgid "Chassis_Pl37_CS_67_Szakal"
 msgstr "CS-67 S"
 
+msgid "Chassis_Pl39_Husarz"
+msgstr "翼骑兵"
+
 msgid "Chassis_Pl40_Krazownik"
 msgstr "巡航者"
 
@@ -201,6 +204,9 @@ msgstr "GG-100/162mm炮"
 
 msgid "GG_100_162_mm_58"
 msgstr "GG-100/162mm炮 (58)"
+
+msgid "GG_100_162_mm_Husarz"
+msgstr "100/162mm Wz.64-1炮 (翼骑兵)"
 
 msgid "GG_100_162_mm_K"
 msgstr "GG-100/162mm K型炮 "
@@ -334,6 +340,9 @@ msgstr "PP-GG m100/162"
 msgid "PP_GG_m100_162_58"
 msgstr "PP-GG m100/162 (58)"
 
+msgid "PP_GG_m100_162_Husarz"
+msgstr "PP-GG m100/162 (翼骑兵)"
+
 msgid "PP_GG_m100_162_K"
 msgstr "PP-GG m100/162 K"
 
@@ -358,6 +367,9 @@ msgstr "PPrz-GG m100/162"
 msgid "PPrz_GG_m100_162_58"
 msgstr "PPrz-GG m100/162 (58)"
 
+msgid "PPrz_GG_m100_162_Husarz"
+msgstr "PPrz-GG m100/162 (翼骑兵)"
+
 msgid "PPrz_GG_m100_162_K"
 msgstr "PPrz-GG m100/162 K"
 
@@ -381,6 +393,9 @@ msgstr "PW-GG m100/162"
 
 msgid "PW_GG_m100_162_58"
 msgstr "PW-GG m100/162 (58)"
+
+msgid "PW_GG_m100_162_Husarz"
+msgstr "PW-GG m100/162 (翼骑兵)"
 
 msgid "PW_GG_m100_162_K"
 msgstr "PW-GG m100/162 K"
@@ -651,14 +666,14 @@ msgid "Pl21_CS_63"
 msgstr "CS-63"
 
 msgid "Pl21_CS_63_7x7"
-msgstr "CS-63 7v7"
+msgstr "CS-63 7x7"
 
 msgid "Pl21_CS_63_7x7_descr"
 msgstr ""
 "计划用于取代T-34-85的中型坦克，结合了S系坦克的设计思路与B系工程师提出的一些原创方案。该项目随着1968年T-55生产线的建立而被终止，没有建造任何原型车。"
 
 msgid "Pl21_CS_63_7x7_short"
-msgstr "CS-63 7v7"
+msgstr "CS-63 7x7"
 
 msgid "Pl21_CS_63_OSP3"
 msgstr "\"飓风\""
@@ -791,10 +806,10 @@ msgid "Pl29_NC_Wz_70T"
 msgstr "NC 70 B"
 
 msgid "Pl29_NC_Wz_70T_7x7"
-msgstr "NC 70 B 7v7"
+msgstr "NC 70 B 7x7"
 
 msgid "Pl29_NC_Wz_70T_7x7_short"
-msgstr "NC 70 B 7v7"
+msgstr "NC 70 B 7x7"
 
 msgid "Pl29_NC_Wz_70T_descr"
 msgstr ""
@@ -901,6 +916,23 @@ msgstr ""
 msgid "Pl37_CS_67_Szakal_short"
 msgstr "CS-67 S"
 
+msgid "Pl39_Husarz"
+msgstr "翼骑兵"
+
+msgid "Pl39_Husarz_descr"
+msgstr ""
+"翼骑兵自行反坦克炮计划，于1957年由位于格利维采的拉宾迪机械厂与B系军方合作研发。该坦克的武器和动力单元采用由S系提供的新型技术。由于S系和B系都将重心转向导弹的研发，该计划最终仅停留在蓝图阶段。"
+
+msgid "Pl39_Husarz_long_special"
+msgstr ""
+"翼骑兵是一辆B系VIII级突击型自行反坦克炮。该坦克的主要特点是深膛线火炮，这与其他B系自行反坦克炮的特点一脉相承。此外，全向旋转炮塔是其一大优势，使其能更轻松地造成高额的平均单发损伤。它还拥有不俗的装甲防护。"
+
+msgid "Pl39_Husarz_short"
+msgstr "翼骑兵"
+
+msgid "Pl39_Husarz_short_special"
+msgstr "深膛线火炮，全向旋转炮塔"
+
 msgid "Pl40_Krazownik"
 msgstr "巡航者"
 
@@ -962,6 +994,9 @@ msgstr "R-113"
 
 msgid "R_113_GC"
 msgstr "R-113 GC"
+
+msgid "R_113_Husarz"
+msgstr "R-113 (翼骑兵)"
 
 msgid "R_113_P"
 msgstr "R-113P"
@@ -1140,6 +1175,9 @@ msgstr "Wz.64GC B"
 msgid "Turret_1_Pl37_CS_67_Szakal"
 msgstr "CS 67 S"
 
+msgid "Turret_1_Pl39_Husarz"
+msgstr "翼骑兵"
+
 msgid "Turret_1_Pl40_Krazownik"
 msgstr "巡航者"
 
@@ -1187,6 +1225,9 @@ msgstr "CS-53 MH"
 
 msgid "V-2-34_B"
 msgstr "V-2-34"
+
+msgid "V_12_6_Husarz"
+msgstr "V-12-6 (翼骑兵)"
 
 msgid "V_16_x2"
 msgstr "V-16 x2"

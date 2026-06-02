@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.daapi.view.meta.EventBoardsResultFilterPopoverViewMeta import EventBoardsResultFilterPopoverViewMeta
 from gui.Scaleform.locale.EVENT_BOARDS import EVENT_BOARDS
 from gui.shared.utils.functions import makeTooltip

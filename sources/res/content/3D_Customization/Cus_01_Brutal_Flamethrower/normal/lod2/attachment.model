@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>content/3D_Customization/Cus_01_Brutal_Flamethrower/normal/lod2/attachment</nodefullVisual>
 	<parent>content/3D_Customization/Cus_01_Brutal_Flamethrower/normal/lod3/attachment</parent>
 	<extent>96.000000</extent>
 	<visibilityBox>
-		<min>-0.699429 -0.006689 -0.730677</min>
-		<max>0.187066 0.498144 0.435874</max>
+		<min>-0.648160 -0.006689 -0.730677</min>
+		<max>0.136608 0.489209 0.435874</max>
 	</visibilityBox>
 	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_01_Brutal_Flamethrower/normal/lod2/attachment</nodefullVisual>
 </root>

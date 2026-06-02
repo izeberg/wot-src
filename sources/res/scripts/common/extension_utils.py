@@ -1,4 +1,6 @@
+from __future__ import absolute_import
 import importlib
+from future.utils import with_metaclass
 from soft_exception import SoftException
 from ExtensionsManager import g_extensionsManager
 from constants import IS_CLIENT, IS_EDITOR, IS_BOT
@@ -113,14 +115,15 @@ def makeMergeXMLString(xmlPaths, mergeType, params):
     return _MergeExtensionFile.makeMergeXMLString(xmlPaths, mergeType, params)
 
 
-class ResMgr(object):
+class _ResMrgMeta(type):
 
-    class __metaclass__(type):
+    def __getattr__(cls, item):
+        if IS_CLIENT or IS_EDITOR or IS_BOT:
+            return getattr(rmgr, item)
+        return getattr(cls if item in ('openSection', 'addToCache') else rmgr, item)
 
-        def __getattr__(self, item):
-            if IS_CLIENT or IS_EDITOR or IS_BOT:
-                return getattr(rmgr, item)
-            return getattr(self if item in ('openSection', 'addToCache') else rmgr, item)
+
+class ResMgr(with_metaclass(_ResMrgMeta, object)):
 
     @classmethod
     def openSection(cls, filepath, createIfMissing=False):
@@ -143,7 +146,7 @@ class ResMgr(object):
             return rmgr.addToCache(ftPath, xml)
         mergeRequired, mergeType, _ = isExtXML(ftPath)
         if len(xmlPaths) > 1 and not mergeRequired:
-            raise SoftException('Multiple standalone resources for one relative path found: %s', ftPath)
+            raise SoftException(('Multiple standalone resources for one relative path found: {}').format(ftPath))
         if len(xmlPaths) > 1 and not corePath and mergeType not in (READ_METHOD.INCLUDE, READ_METHOD.INCLUDE_BY_PATH):
             raise SoftException(('The operation of merging files for files which are not present in the core is prohibited for the merge type: {t}. File: {f} may be present in different extensions!').format(t=mergeType, f=ftPath))
         cachedPath = next(iter(xmlPaths))

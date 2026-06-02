@@ -9,7 +9,7 @@
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
 		<node>
-			<identifier>nodes_01</identifier>
+			<identifier>Cus_203_LS_EMP_GunLamp</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -17,13 +17,22 @@
 				<row3>0.000000 0.000000 0.000000</row3>
 			</transform>
 			<node>
-				<identifier>HP_attachment</identifier>
+				<identifier>lod0</identifier>
 				<transform>
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 1.000000 0.000000</row1>
 					<row2>0.000000 0.000000 1.000000</row2>
 					<row3>0.000000 0.000000 0.000000</row3>
 				</transform>
+				<node>
+					<identifier>HP_module0</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
 			</node>
 		</node>
 	</node>
@@ -69,14 +78,14 @@
 						<Texture>content/3D_Customization/Cus_203_LS_EMP_GunLamp/Cus_203_LS_EMP_Gunlamp_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.026283 0.110775 0.147831</groupOrigin>
+				<groupOrigin>-0.026283 0.160703 0.054166</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.371832 -0.200000 -0.158668</min>
-		<max>0.319266 0.421551 0.454330</max>
+		<min>-0.371832 -0.100145 -0.252333</min>
+		<max>0.319266 0.421551 0.360665</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>234940</geometrySize>
+	<geometrySize>234420</geometrySize>
 </root>

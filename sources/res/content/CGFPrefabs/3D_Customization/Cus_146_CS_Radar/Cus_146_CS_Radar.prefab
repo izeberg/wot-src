@@ -908,7 +908,10 @@
 				<config>
 					<property>
 						<name>Position</name>
-						<value>0 0 0</value>
+						<value>
+							3.05176e-05 -0.0483551 0
+							<!--BW_String-->
+						</value>
 					</property>
 					<property>
 						<name>Scale</name>
@@ -916,7 +919,7 @@
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>-0 0 0</value>
+						<value>-0 0 -0</value>
 					</property>
 				</config>
 			</component>
@@ -927,13 +930,16 @@
 					<property>
 						<name>Position</name>
 						<value>
-							0 0.407499 0
+							3.05176e-05 0.359142 0
 							<!--BW_String-->
 						</value>
 					</property>
 					<property>
 						<name>Scale</name>
-						<value>1 1 1</value>
+						<value>
+							0.999999 0.999999 1
+							<!--BW_String-->
+						</value>
 					</property>
 					<property>
 						<name>Rotation</name>
@@ -1211,6 +1217,10 @@
 						<value>1</value>
 					</property>
 					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>decorType</name>
 						<value>0</value>
 					</property>
@@ -1227,6 +1237,10 @@
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
 						<value>0</value>
 					</property>
 					<property>
@@ -1249,6 +1263,10 @@
 						<value>0</value>
 					</property>
 					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>decorType</name>
 						<value>0</value>
 					</property>
@@ -1258,6 +1276,22 @@
 		<ComponentPool>
 			<type>ModelPropertyChanger</type>
 			<version>1</version>
+			<component>
+				<UUID>6b47b496-c12d-4070-bddf-33b155b499b1</UUID>
+				<flags>3</flags>
+			</component>
+			<component>
+				<UUID>336a0420-f825-4f9f-8cb4-42297bcf61e1</UUID>
+				<flags>3</flags>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>BW::VisibilityTunnelComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>ff064e59-dc64-4c7b-84c0-b0724195f0d6</UUID>
+				<flags>3</flags>
+			</component>
 			<component>
 				<UUID>6b47b496-c12d-4070-bddf-33b155b499b1</UUID>
 				<flags>3</flags>

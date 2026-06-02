@@ -8,24 +8,6 @@
 			<row2>0.000000 0.000000 1.000000</row2>
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
-		<node>
-			<identifier>nodes_01</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-			<node>
-				<identifier>HP_attachment</identifier>
-				<transform>
-					<row0>1.000000 0.000000 0.000000</row0>
-					<row1>0.000000 1.000000 0.000000</row1>
-					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 0.000000 0.000000</row3>
-				</transform>
-			</node>
-		</node>
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
@@ -38,8 +20,8 @@
 				<material>
 					<identifier>equipment</identifier>
 					<fx>shaders/std_effects/PBS_tank.fx</fx>
-					<materialKind>0</materialKind>
-					<collisionFlags>0</collisionFlags>
+					<materialKind>112</materialKind>
+					<collisionFlags>255</collisionFlags>
 					<property>
 						diffuseMap
 						<Texture>content/3D_Customization/Cus_12_Asia_Dragon_Head/Asia_Dragon_Head_AM.dds</Texture>
@@ -57,13 +39,14 @@
 						<Texture>content/3D_Customization/Cus_12_Asia_Dragon_Head/Asia_Dragon_Head_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.012101 0.282905 0.215796</groupOrigin>
+				<groupOrigin>0.012101 0.324378 0.012312</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.295409 -0.200000 -0.250535</min>
-		<max>0.319611 0.765811 0.682126</max>
+		<min>-0.295409 -0.100000 -0.454018</min>
+		<max>0.319611 0.748756 0.478643</max>
 	</boundingBox>
-	<geometrySize>24104</geometrySize>
+	<customBsp>true</customBsp>
+	<geometrySize>23544</geometrySize>
 </root>

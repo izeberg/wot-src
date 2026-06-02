@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from frameworks.wulf import ViewSettings
 from gui.battle_pass.sounds import ACTIVATE_CHAPTER_SOUND_SPACE
 from gui.impl.gen import R

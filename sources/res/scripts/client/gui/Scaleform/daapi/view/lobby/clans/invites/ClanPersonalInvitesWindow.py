@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.clans.clan_helpers import ClanListener
 from gui.clans import formatters
 from gui.Scaleform.daapi.view.meta.ClanPersonalInvitesWindowMeta import ClanPersonalInvitesWindowMeta

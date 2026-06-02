@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>content/3D_Customization/Cus_03_Brutal_Night_vision_device/normal/lod0/attachment</nodefullVisual>
 	<parent>content/3D_Customization/Cus_03_Brutal_Night_vision_device/normal/lod1/attachment</parent>
 	<visibilityBox>
-		<min>-0.699584 -0.014005 -0.737252</min>
-		<max>0.199971 0.513037 0.442991</max>
+		<min>-0.231604 -0.100000 -0.319615</min>
+		<max>0.342283 0.757295 0.344069</max>
 	</visibilityBox>
 	<extent>32.000000</extent>
 	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_03_Brutal_Night_vision_device/normal/lod0/attachment</nodefullVisual>
 </root>

@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from future.utils import viewvalues
 from constants import ARENA_GAMEPLAY_IDS, HANGAR_VISIBILITY_TAGS
 from extension_utils import ResMgr
 from soft_exception import SoftException
@@ -56,7 +58,7 @@ class SpaceVisibilityFlags(object):
                     return False
 
         else:
-            self.typeIDToIndex = dict((i, i) for i in self.types.itervalues() if 0 <= i < SpaceVisibilityFlags._SERVER_FLAGS_NUMBER)
+            self.typeIDToIndex = dict((i, i) for i in viewvalues(self.types) if 0 <= i < SpaceVisibilityFlags._SERVER_FLAGS_NUMBER)
         if len(self.typeIDToIndex) == 0:
             return False
         else:
