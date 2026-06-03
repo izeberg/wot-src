@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from frameworks.wulf import ViewSettings
 from gui.Scaleform.daapi.view.lobby.customization.shared import getSuitableText
 from gui.battle_pass.battle_pass_helpers import getStyleForChapter

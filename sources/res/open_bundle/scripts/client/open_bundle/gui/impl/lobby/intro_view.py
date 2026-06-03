@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from frameworks.wulf import ViewSettings, WindowLayer, WindowFlags
 from gui.shared import g_eventBus, events
 from open_bundle.helpers.account_settings import setIntroShown

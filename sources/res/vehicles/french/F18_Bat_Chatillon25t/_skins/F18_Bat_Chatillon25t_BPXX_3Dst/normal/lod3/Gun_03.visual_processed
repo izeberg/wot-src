@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>nodes_01</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>Gun</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>G</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 3.000000</row3>
+					</transform>
+					<node>
+						<identifier>HP_gunFire</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>-0.004211 0.016456 1.882570</row3>
+						</transform>
+					</node>
+					<node>
+						<identifier>G_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>0.000000 0.000000 -3.000000</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Joint_01</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>-0.002157 -0.000000 0.000000</row3>
+					</transform>
+					<node>
+						<identifier>Joint_02</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>0.000000 -0.096031 0.752254</row3>
+						</transform>
+						<node>
+							<identifier>Joint_02_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>0.002157 0.096031 -0.752254</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>Joint_01_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>0.002157 0.000000 -0.000000</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Joint_03</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>-0.002157 -0.000000 0.000000</row3>
+					</transform>
+					<node>
+						<identifier>Joint_03_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>0.002157 0.000000 -0.000000</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Gun_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>Gun_BlendBone</node>
+		<node>Joint_01_BlendBone</node>
+		<node>G_BlendBone</node>
+		<node>Joint_03_BlendBone</node>
+		<node>Joint_02_BlendBone</node>
+		<geometry>
+			<vertices>gun_03_Shape.vertices</vertices>
+			<primitive>gun_03_Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>hull_equipment_03_skinned</identifier>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
+					<property>
+						alphaReference
+						<Int>96</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/french/F18_Bat_Chatillon25t/_skins/F18_Bat_Chatillon25t_BPXX_3Dst/Bat_Chatillon25t_BPXX_3Dst_equipment_02_AM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/french/F18_Bat_Chatillon25t/_skins/F18_Bat_Chatillon25t_BPXX_3Dst/Bat_Chatillon25t_BPXX_3Dst_equipment_02_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/french/F18_Bat_Chatillon25t/_skins/F18_Bat_Chatillon25t_BPXX_3Dst/Bat_Chatillon25t_BPXX_3Dst_equipment_02_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.138059 0.347212 0.944394</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>tank_equipment_skinned</identifier>
+					<property>
+						g_detailUVTiling
+						<Vector4>3.506850 3.506850 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_detailPowerGloss
+						<Float>
+							0.35
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_maskBias
+						<Float>
+							0.18
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/french/F18_Bat_Chatillon25t/_skins/F18_Bat_Chatillon25t_BPXX_3Dst/Bat_Chatillon25t_BPXX_3Dst_equipment_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/french/F18_Bat_Chatillon25t/_skins/F18_Bat_Chatillon25t_BPXX_3Dst/Bat_Chatillon25t_BPXX_3Dst_equipment_ANM.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/french/F18_Bat_Chatillon25t/_skins/F18_Bat_Chatillon25t_BPXX_3Dst/Bat_Chatillon25t_BPXX_3Dst_equipment_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/french/F18_Bat_Chatillon25t/_skins/F18_Bat_Chatillon25t_BPXX_3Dst/Bat_Chatillon25t_BPXX_3Dst_equipment_AO.dds</Texture>
+					</property>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+				</material>
+				<groupOrigin>-0.157209 0.131249 1.264180</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				2
+				<material>
+					<identifier>tank_net_skinned</identifier>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
+					<property>
+						alphaReference
+						<Int>64</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/french/F18_Bat_Chatillon25t/_skins/F18_Bat_Chatillon25t_BPXX_3Dst/Bat_Chatillon25t_BPXX_3Dst_net_AM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/french/F18_Bat_Chatillon25t/_skins/F18_Bat_Chatillon25t_BPXX_3Dst/Bat_Chatillon25t_BPXX_3Dst_net_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/french/F18_Bat_Chatillon25t/_skins/F18_Bat_Chatillon25t_BPXX_3Dst/Bat_Chatillon25t_BPXX_3Dst_net_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.014195 0.210936 -1.197757</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				3
+				<material>
+					<identifier>tank_guns_skinned</identifier>
+					<property>
+						g_detailUVTiling
+						<Vector4>3.506850 3.506850 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_detailPowerGloss
+						<Float>
+							0.35
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_maskBias
+						<Float>
+							0.18
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/french/F18_Bat_Chatillon25t/_skins/F18_Bat_Chatillon25t_BPXX_3Dst/Bat_Chatillon25t_BPXX_3Dst_gun_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/french/F18_Bat_Chatillon25t/_skins/F18_Bat_Chatillon25t_BPXX_3Dst/Bat_Chatillon25t_BPXX_3Dst_gun_01_ANM.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/french/F18_Bat_Chatillon25t/_skins/F18_Bat_Chatillon25t_BPXX_3Dst/Bat_Chatillon25t_BPXX_3Dst_gun_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/french/F18_Bat_Chatillon25t/_skins/F18_Bat_Chatillon25t_BPXX_3Dst/Bat_Chatillon25t_BPXX_3Dst_gun_01_AO.dds</Texture>
+					</property>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+				</material>
+				<groupOrigin>0.118820 0.700704 -1.686345</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-1.349326 -0.636916 -2.211932</min>
+		<max>1.463595 2.038323 5.126018</max>
+	</boundingBox>
+	<geometrySize>81012</geometrySize>
+</root>

@@ -3,19 +3,16 @@
 	<materialNames/>
 	<visibilityBox>
 		<min>
-			-1.77067 0.000126319 -3.13615
+			-1.77082 0.00080754 -3.16724
 			<!--BW_String-->
 		</min>
 		<max>
-			1.77075 1.38477 3.28323
+			1.77083 1.38477 3.2527
 			<!--BW_String-->
 		</max>
 	</visibilityBox>
 	<tank>true</tank>
 	<parent>vehicles/german/G118_VK4503/normal/lod1/Chassis</parent>
-	<extent>
-		32.0
-		<!--BW_String-->
-	</extent>
+	<extent>32</extent>
 	<nodefullVisual>vehicles/german/G118_VK4503/normal/lod0/Chassis</nodefullVisual>
 </root>

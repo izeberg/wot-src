@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from functools import partial
 import BigWorld
 from adisp import adisp_process

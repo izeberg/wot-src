@@ -6639,26 +6639,28 @@
 						<slot>
 							<slotType>attachment</slotType>
 							<slotId>48000</slotId>
-							<position>
-								0.000007 0.352 0.100724
-								<!--BW_String-->
-							</position>
+							<position>0.000006 0.289807 0.598816</position>
 							<rotation>-0 0 0</rotation>
 							<scale>1 1 1</scale>
 							<applyType>gunMantlet</applyType>
 							<size>medium</size>
+							<enableVisTunnel>true</enableVisTunnel>
+							<hangerId>2</hangerId>
 						</slot>
 						<slot>
 							<slotType>attachment</slotType>
 							<slotId>48001</slotId>
-							<position>
-								0.134938 0.373 -1.21119
-								<!--BW_String-->
-							</position>
+							<position>0.829845 0.374977 -0.412661</position>
 							<rotation>-0 0 0</rotation>
 							<scale>1 1 1</scale>
 							<applyType>turret</applyType>
 							<size>medium</size>
+							<enableVisTunnel>true</enableVisTunnel>
+							<hangerId>2</hangerId>
+							<hangerRotation>
+								-0 1.483672 -0.000001
+								<!--BW_String-->
+							</hangerRotation>
 						</slot>
 						<slot>
 							<slotType>insigniaOnGun</slotType>
@@ -7484,26 +7486,28 @@
 						<slot>
 							<slotType>attachment</slotType>
 							<slotId>48000</slotId>
-							<position>
-								0.000007 0.352 0.100724
-								<!--BW_String-->
-							</position>
+							<position>0.000006 0.289807 0.598816</position>
 							<rotation>-0 0 0</rotation>
 							<scale>1 1 1</scale>
 							<applyType>gunMantlet</applyType>
 							<size>medium</size>
+							<enableVisTunnel>true</enableVisTunnel>
+							<hangerId>2</hangerId>
 						</slot>
 						<slot>
 							<slotType>attachment</slotType>
 							<slotId>48001</slotId>
-							<position>
-								0.134938 0.373 -1.21119
-								<!--BW_String-->
-							</position>
+							<position>0.829845 0.374977 -0.412661</position>
 							<rotation>-0 0 0</rotation>
 							<scale>1 1 1</scale>
 							<applyType>turret</applyType>
 							<size>medium</size>
+							<enableVisTunnel>true</enableVisTunnel>
+							<hangerId>2</hangerId>
+							<hangerRotation>
+								-0 1.483672 -0.000001
+								<!--BW_String-->
+							</hangerRotation>
 						</slot>
 						<slot>
 							<slotType>insigniaOnGun</slotType>

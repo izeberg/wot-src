@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from PlayerEvents import g_playerEvents
 from gui.filters.carousel_filter import CriteriesGroup
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS

@@ -8979,6 +8979,48 @@ package
       
       public static const NOTRECRUITEDTANKMAN_ONSLAUGHT_P5_4_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/onslaught_p5_4/howToGetInfo";
       
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP20_1_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_bp20_1/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP20_1_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp20_1/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP20_1_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp20_1/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP20_2_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_bp20_2/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP20_2_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp20_2/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP20_2_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp20_2/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP20_3_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_bp20_3/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP20_3_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp20_3/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP20_3_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp20_3/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP20_4_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_bp20_4/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP20_4_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp20_4/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP20_4_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp20_4/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_TIGERSMIDFIELDER_LABEL:String = "#tooltips:notrecruitedtankman/tigersMidfielder/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TIGERSMIDFIELDER_DESC:String = "#tooltips:notrecruitedtankman/tigersMidfielder/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TIGERSMIDFIELDER_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tigersMidfielder/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_TIGERSWINGER_LABEL:String = "#tooltips:notrecruitedtankman/tigersWinger/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TIGERSWINGER_DESC:String = "#tooltips:notrecruitedtankman/tigersWinger/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TIGERSWINGER_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tigersWinger/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_DESERTRAT_LABEL:String = "#tooltips:notrecruitedtankman/desertRat/label";
+      
+      public static const NOTRECRUITEDTANKMAN_DESERTRAT_DESC:String = "#tooltips:notrecruitedtankman/desertRat/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_DESERTRAT_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/desertRat/howToGetInfo";
+      
       public static const ELEN_SUMMARY_RANK_ENUM:Array = [ELEN_SUMMARY_RANK_1,ELEN_SUMMARY_RANK_2,ELEN_SUMMARY_RANK_3,ELEN_SUMMARY_RANK_4,ELEN_SUMMARY_RANK_NORANK];
       
       public static const ELEN_SUMMARY_PARAM_ALL_ALL_HEADER_ENUM:Array = [ELEN_SUMMARY_PARAM_MAX_ORIGINALXP_HEADER,ELEN_SUMMARY_PARAM_MAX_XP_HEADER,ELEN_SUMMARY_PARAM_MAX_DAMAGEDEALT_HEADER,ELEN_SUMMARY_PARAM_MAX_DAMAGEASSISTED_HEADER,ELEN_SUMMARY_PARAM_SUMALL_ORIGINALXP_HEADER,ELEN_SUMMARY_PARAM_SUMALL_XP_HEADER,ELEN_SUMMARY_PARAM_SUMALL_DAMAGEDEALT_HEADER,ELEN_SUMMARY_PARAM_SUMALL_DAMAGEASSISTED_HEADER];

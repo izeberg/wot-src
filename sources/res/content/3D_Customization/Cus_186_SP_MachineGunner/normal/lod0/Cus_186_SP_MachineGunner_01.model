@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodelessVisual>content/3D_Customization/Cus_186_SP_MachineGunner/normal/lod0/Cus_186_SP_MachineGunner_01</nodelessVisual>
 	<parent>content/3D_Customization/Cus_186_SP_MachineGunner/normal/lod1/Cus_186_SP_MachineGunner_01</parent>
 	<extent>32.000000</extent>
 	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.428558 -0.100000 -0.600742</min>
+		<max>0.241295 0.746956 1.297436</max>
+	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/Cus_186_SP_MachineGunner/normal/lod0/Cus_186_SP_MachineGunner_01</nodefullVisual>
 </root>

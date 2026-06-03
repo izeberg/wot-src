@@ -17,21 +17,12 @@
 				<row3>0.000000 0.000000 0.000000</row3>
 			</transform>
 			<node>
-				<identifier>HP_attachment</identifier>
-				<transform>
-					<row0>1.000000 0.000000 0.000000</row0>
-					<row1>0.000000 1.000000 0.000000</row1>
-					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 0.000000 0.000000</row3>
-				</transform>
-			</node>
-			<node>
 				<identifier>static_joint</identifier>
 				<transform>
 					<row0>0.000000 0.998486 0.055001</row0>
 					<row1>0.000000 0.055001 -0.998486</row1>
 					<row2>-1.000000 0.000000 0.000000</row2>
-					<row3>0.000000 0.000000 0.000000</row3>
+					<row3>0.000000 -0.198104 0.000000</row3>
 				</transform>
 				<node>
 					<identifier>joint_01</identifier>
@@ -42,12 +33,30 @@
 						<row3>0.685937 0.037785 -0.000000</row3>
 					</transform>
 					<node>
+						<identifier>joint_02</identifier>
+						<transform>
+							<row0>1.000000 0.000873 -0.000000</row0>
+							<row1>-0.000873 1.000000 0.000000</row1>
+							<row2>0.000000 -0.000000 1.000000</row2>
+							<row3>-0.272797 0.303909 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>joint_02_BlendBone</identifier>
+							<transform>
+								<row0>0.000000 0.000000 -1.000000</row0>
+								<row1>0.998534 0.054130 0.000000</row1>
+								<row2>-0.054130 0.998534 0.000000</row2>
+								<row3>-0.215624 -0.330609 0.000000</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
 						<identifier>joint_01_BlendBone</identifier>
 						<transform>
 							<row0>0.000000 0.000000 -1.000000</row0>
 							<row1>0.998486 0.055001 0.000000</row1>
 							<row2>-0.055001 0.998486 0.000000</row2>
-							<row3>-0.685937 -0.037785 0.000000</row3>
+							<row3>-0.488132 -0.026889 0.000000</row3>
 						</transform>
 					</node>
 				</node>
@@ -57,7 +66,7 @@
 						<row0>0.000000 0.000000 -1.000000</row0>
 						<row1>0.998486 0.055001 0.000000</row1>
 						<row2>-0.055001 0.998486 0.000000</row2>
-						<row3>0.000000 0.000000 0.000000</row3>
+						<row3>0.197805 0.010896 0.000000</row3>
 					</transform>
 				</node>
 			</node>
@@ -65,17 +74,18 @@
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>joint_02_BlendBone</node>
 		<node>joint_01_BlendBone</node>
 		<node>static_joint_BlendBone</node>
 		<geometry>
-			<vertices>attachment_Shape.vertices</vertices>
-			<primitive>attachment_Shape.indices</primitive>
+			<vertices>s0Shape.vertices</vertices>
+			<primitive>s0Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
 					<identifier>equipment_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>0</materialKind>
 					<property>
 						diffuseMap
@@ -86,18 +96,6 @@
 						<Texture>content/3D_Customization/Cus_10_Marine_Harpoon/Marine_Harpoon_AO.dds</Texture>
 					</property>
 					<property>
-						g_detailUVTiling
-						<Vector4>3.506000 1.753000 0.000000 0.000000</Vector4>
-					</property>
-					<property>
-						g_useDetailMetallic
-						<Bool>true</Bool>
-					</property>
-					<property>
-						metallicDetailMap
-						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
-					</property>
-					<property>
 						metallicGlossMap
 						<Texture>content/3D_Customization/Cus_10_Marine_Harpoon/Marine_Harpoon_GMM.dds</Texture>
 					</property>
@@ -106,14 +104,14 @@
 						<Texture>content/3D_Customization/Cus_10_Marine_Harpoon/Marine_Harpoon_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.000001 0.374813 -0.171734</groupOrigin>
+				<groupOrigin>-0.000001 0.317312 -0.159250</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-0.171364 -0.200000 -0.858656</min>
-		<max>0.171363 0.949626 1.202124</max>
+		<min>-0.158854 -0.100000 -0.796236</min>
+		<max>0.158853 0.734624 1.114737</max>
 	</boundingBox>
-	<geometrySize>233056</geometrySize>
+	<geometrySize>225440</geometrySize>
 </root>

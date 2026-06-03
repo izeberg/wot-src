@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/poland/Pl39_Husarz/crash/lod4/Hull</parent>
+	<extent>192.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-2.037890 -0.922065 -4.455812</min>
+		<max>1.920695 0.846084 4.473297</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/poland/Pl39_Husarz/crash/lod3/Hull</nodefullVisual>
+</root>

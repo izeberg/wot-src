@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from future.utils import viewvalues
 from CurrentVehicle import g_currentVehicle
 from gui.Scaleform.daapi.view.lobby.event_boards.event_boards_vos import makeFiltersVO, vehicleValueGetter
 from gui.Scaleform.daapi.view.lobby.rally.vo_converters import makeVehicleBasicVO
@@ -36,7 +38,7 @@ class EventBoardsAwardsOverlay(EventBoardsAwardsOverlayMeta):
                 vehicleIds = [ veh for _, veh in leaderboards ]
                 allVehicles = self.itemsCache.items.getVehicles(REQ_CRITERIA.IN_CD_LIST(vehicleIds))
                 fields = (('level', False), ('nations', True), ('type', True))
-                sortedVehicles = sortByFields(fields, allVehicles.itervalues(), vehicleValueGetter)
+                sortedVehicles = sortByFields(fields, viewvalues(allVehicles), vehicleValueGetter)
                 leaderboardID = eventData.getLeaderboardID(sortedVehicles[0].intCD)
         else:
             header = {'filters': makeFiltersVO(eventData.getType(), leaderboards, leaderboardID, category='awards')}

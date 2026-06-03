@@ -85,7 +85,18 @@
 				<isVisible>False</isVisible>
 			</lockedStyle>
 			<attachment>
-				<priority>115</priority>
+				<override>
+					<rarity>rare</rarity>
+					<priority>116</priority>
+				</override>
+				<override>
+					<rarity>epic</rarity>
+					<priority>117</priority>
+				</override>
+				<override>
+					<rarity>legendary</rarity>
+					<priority>118</priority>
+				</override>
 			</attachment>
 			<projectionDecal>
 				<priority>75</priority>

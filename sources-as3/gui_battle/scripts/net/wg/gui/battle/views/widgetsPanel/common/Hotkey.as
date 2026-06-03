@@ -29,8 +29,6 @@ package net.wg.gui.battle.views.widgetsPanel.common
       
       private static const MIN_BG_W:int = 28;
       
-      private static const INVALID_KEY_NAME:String = "--";
-      
       private static const MIN_FILL_HEIGHT:int = 1;
       
       private static const FILL_HEIGHT:int = 20;

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from adisp import adisp_process
 from gui import DialogsInterface
 from gui.shared import events, EVENT_BUS_SCOPE

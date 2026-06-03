@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from constants import Configs
 from gui.filters.mapbox_carousel_filter import MapboxCarouselFilter
 from gui.Scaleform.daapi.view.lobby.hangar.carousels import BattlePassTankCarousel

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.daapi.view.lobby.wot_plus.sound_constants import VEHICLE_RENTAL_SOUND_SPACE
 from gui.Scaleform.daapi.view.lobby.wot_plus.wot_plus_browser_pages import VehicleRentalView
 

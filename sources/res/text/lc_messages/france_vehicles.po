@@ -492,6 +492,9 @@ msgstr "Fantôme"
 msgid "Chassis_F141_Durendal"
 msgstr "Durendal"
 
+msgid "Chassis_F142_M47_Chevalier"
+msgstr "M47 Chevalier"
+
 msgid "Chassis_F143_Fauteur"
 msgstr "Fauteur"
 
@@ -743,6 +746,14 @@ msgstr "SARL 42"
 
 msgid "Citroen_105"
 msgstr "Citroën 105"
+
+msgid "Continental_AV_1790_5B_Chevalier"
+msgstr "Continental AV-1790-5B (Chevalier)"
+
+msgid "Continental_AV_1790_5B_Chevalier_short"
+msgstr ""
+"Continental\n"
+"AV-1790-5B (Chevalier)"
 
 msgid "Continental_AV_1790_8_Terrifiant"
 msgstr "Continental AV-1790-8 (Terrifiant)"
@@ -1804,6 +1815,37 @@ msgstr "Durendal"
 msgid "F141_Durendal_short_special"
 msgstr "Autoloader with containers, good mobility"
 
+msgid "F142_M47_Chevalier"
+msgstr "M47 Chevalier"
+
+msgid "F142_M47_Chevalier_descr"
+msgstr ""
+"A project for major modernization project of the M47, which was in service "
+"with the French army. The main goal was to keep the vehicle up to date until"
+" enough AMX 30 tanks were produced. The design called for installing a new "
+"gun, enhancing the fire-control system, strengthening the armor, mounting a "
+"bulldozer blade and external fuel tanks, as well as reducing the crew—the "
+"driver's assistant's position was replaced by an ammunition rack. However, "
+"the AMX 30 was adopted faster than expected, and the M47 modernization "
+"turned out to be outdated for the French army. The vehicle was also planned "
+"for export but did not receive interest. One prototype with a new gun was "
+"built to demonstrate the possibilities of rearmament; however, its further "
+"history is unknown."
+
+msgid "F142_M47_Chevalier_long_special"
+msgstr ""
+"The M47 Chevalier is a French Tier IX medium tank. While lacking any stand-"
+"out strengths, its smooth-handling gun with excellent depression angles, "
+"good mobility, and decent turret armor make it a competitive all-rounder. "
+"Extensive spaced armor coverage also provides additional protection, further"
+" enhancing its survivability."
+
+msgid "F142_M47_Chevalier_short"
+msgstr "M47 Chevalier"
+
+msgid "F142_M47_Chevalier_short_special"
+msgstr "Solid turret armor, good depression angles"
+
 msgid "F143_Fauteur"
 msgstr "Fauteur"
 
@@ -2188,10 +2230,10 @@ msgid "F64_AMX_50Fosh_B"
 msgstr "AMX 50 Foch B"
 
 msgid "F64_AMX_50Fosh_B_7x7"
-msgstr "AMX 50 Foch B 7v7"
+msgstr "AMX 50 Foch B 7x7"
 
 msgid "F64_AMX_50Fosh_B_7x7_short"
-msgstr "Foch B 7v7"
+msgstr "Foch B 7x7"
 
 msgid "F64_AMX_50Fosh_B_descr"
 msgstr ""
@@ -2557,7 +2599,7 @@ msgid "F88_AMX_13_105"
 msgstr "AMX 13 105"
 
 msgid "F88_AMX_13_105_7x7"
-msgstr "AMX 13 105 7v7"
+msgstr "AMX 13 105 7x7"
 
 msgid "F88_AMX_13_105_7x7_short"
 msgstr "AMX 13 105 7"
@@ -3206,6 +3248,9 @@ msgstr "SCR 528F"
 msgid "SCR_528_BPXIV"
 msgstr "SCR 528F"
 
+msgid "SCR_528_Chevalier"
+msgstr "SCR 528 (Chevalier)"
+
 msgid "SCR_528_F"
 msgstr "SCR-528 F"
 
@@ -3528,6 +3573,9 @@ msgstr "Fantôme"
 
 msgid "Turret_1_F141_Durendal"
 msgstr "Durendal"
+
+msgid "Turret_1_F142_M47_Chevalier"
+msgstr "M47 Chevalier"
 
 msgid "Turret_1_F143_Fauteur"
 msgstr "Fauteur"
@@ -3930,6 +3978,9 @@ msgstr "105 mm mle. 57 (D. 1504)"
 msgid "_105mm_CN_105_57_SH"
 msgstr "105 mm mle. 57 (D. 1504)"
 
+msgid "_105mm_CN_105_F1_Chevalier"
+msgstr "105 mm CN-105-F1 (Chevalier)"
+
 msgid "_105mm_Canon_13TR"
 msgstr "105 mm Canon 13TR"
 
@@ -3987,6 +4038,9 @@ msgstr "OCC-105-F1"
 msgid "_105mm_OCC_105_F1M"
 msgstr "OCC 105 F1M"
 
+msgid "_105mm_OCC_105_F1_Chevalier"
+msgstr "OCC-105-F1 (Chevalier)"
+
 msgid "_105mm_OCC_105_F1_ERAC"
 msgstr "OCC-105-F1 ERAC"
 
@@ -4007,6 +4061,9 @@ msgstr "OE-105-Mle. 60"
 
 msgid "_105mm_OE_105_Mle_60M"
 msgstr "OE 105 F1M Mle. 60"
+
+msgid "_105mm_OE_105_Mle_60_Chevalier"
+msgstr "OE-105 Mle. 60 (Chevalier)"
 
 msgid "_105mm_OE_105_Mle_60_D1504"
 msgstr "OE-105-Mle. 60 D. 1504"
@@ -4070,6 +4127,9 @@ msgstr "OFL-105-F1"
 
 msgid "_105mm_OFL_105_F1M"
 msgstr "OFL 105 F1M"
+
+msgid "_105mm_OFL_105_F1_Chevalier"
+msgstr "OFL-105-F1 (Chevalier)"
 
 msgid "_105mm_OFL_105_F1_ERAC"
 msgstr "OFL-105-F1 ERAC"

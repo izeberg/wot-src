@@ -1,7 +1,8 @@
+from __future__ import absolute_import, print_function
 import re, sys, itertools
 from bwdebug import DEBUG_MSG
 from bwdebug import ERROR_MSG
-import BigWorld, StringIO, objgraph
+import objgraph
 LIMIT_LEN = False
 MAX_LEN = 5
 MAX_DEPTH = 1
@@ -102,7 +103,6 @@ def gcDump():
         ERROR_MSG('Could not import gc module; ' + 'garbage collection support is not compiled in')
         return
 
-    leakCount = 0
     gcDebugEnable()
     DEBUG_MSG('Forcing a garbage collection...')
     leakCount = gc.collect()
@@ -173,9 +173,8 @@ def getGarbageGraph(depth=0):
         message = 'Could not import gc module; garbage collection support is not compiled in'
         return message
 
-    leakCount = 0
     gcDebugEnable()
-    leakCount = gc.collect()
+    _ = gc.collect()
     gc_dump = gc.garbage[:]
     del gc.garbage[:]
     if len(gc_dump) > 0:
@@ -314,7 +313,7 @@ def getObjectReferrers(obj, ignore):
                     else:
                         result += ' -> reference from gc.garbage list (ignore)\n'
                 except:
-                    print 'Error getting referrer'
+                    print('Error getting referrer')
 
                 i += 1
 
@@ -328,7 +327,7 @@ def getObjectReferrers(obj, ignore):
 
 
 def saveOptimizedGarbage(path):
-    import gc, sys, inspect
+    import gc, inspect
     delimiter = '=-=' * 100 + '\n'
     logPattern = '{}Representation str(garbageObject):\n{}\nObject type: {}\nRef count: {}\nModule of object: {}\n'
     gc.collect()

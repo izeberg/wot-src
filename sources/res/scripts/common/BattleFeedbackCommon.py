@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from constants import ATTACK_REASON, ATTACK_REASON_INDICES
 BATTLE_EVENTS_PROCESSING_TIMEOUT = 0.2
 CAPTURE_POINTS_TO_REPORT = 10

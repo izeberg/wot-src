@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging
 from Math import Vector3
 from gui.Scaleform.daapi.view.lobby.customization.shared import isSlotFilled, isItemsQuantityLimitReached, REGIONS_SLOTS
@@ -33,7 +34,7 @@ class StateContext(object):
 
 
 class Anchor(StateContext):
-    __slots__ = ('__service', '__slotId', '__uid', '__anchorShift', '__position', '__direction',
+    __slots__ = ('__slotId', '__uid', '__anchorShift', '__position', '__direction',
                  '__ctx')
     __service = dependency.descriptor(ICustomizationService)
 
@@ -130,7 +131,7 @@ class BaseState(object):
 
 
 class AnchorState(BaseState):
-    __slots__ = ('_service', 'stateID', '_ctx')
+    __slots__ = ('_ctx', )
     _service = dependency.descriptor(ICustomizationService)
     stateID = None
 

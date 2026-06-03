@@ -1,9 +1,13 @@
-import Math, collections
+from __future__ import absolute_import, division
+import collections
+from builtins import open
+from future.utils import listvalues, viewvalues, viewitems, with_metaclass
+from past.builtins import xrange
+import Math
 from wrapped_reflection_framework import ReflectionMetaclass
 _DEBUG_WITH_SVG = False
 
-class PhysicsTurretShape:
-    __metaclass__ = ReflectionMetaclass
+class PhysicsTurretShape(with_metaclass(ReflectionMetaclass, object)):
     PARAMS_DESC = {'zScale': (0.0, 2.0, 1.0, 0), 
        'zPos': (-2.0, 2.0, 0.0, 1), 
        'xScale': (0.0, 2.0, 1.0, 2), 
@@ -19,9 +23,10 @@ class PhysicsTurretShape:
        'zSlope': (0.0, 1.0, 0.0, 12), 
        'zSlopeCenter': (0.0, 1.0, 0.0, 13), 
        'topSlope': (0.0, 1.0, 0.0, 14)}
-    PARAM_NAME_BY_INDEX = dict((desc[3], name) for name, desc in PARAMS_DESC.iteritems())
+    PARAM_NAME_BY_INDEX = dict((desc[3], name) for name, desc in PARAMS_DESC.items())
 
     def __init__(self, bbMin=None, bbMax=None):
+        super(PhysicsTurretShape, self).__init__()
         self.__polys = None
         self.__params = None
         self.resetParams()
@@ -34,7 +39,7 @@ class PhysicsTurretShape:
         return
 
     def resetParams(self):
-        self.__params = dict(zip(PhysicsTurretShape.PARAMS_DESC.iterkeys(), (d[2] for d in PhysicsTurretShape.PARAMS_DESC.itervalues())))
+        self.__params = dict(zip(PhysicsTurretShape.PARAMS_DESC, (d[2] for d in viewvalues(PhysicsTurretShape.PARAMS_DESC))))
         self.__isDirty = True
 
     def getIsDirty(self):
@@ -76,7 +81,7 @@ class PhysicsTurretShape:
 
     def getParamsValues(self):
         values = []
-        names = collections.OrderedDict(sorted(PhysicsTurretShape.PARAM_NAME_BY_INDEX.iteritems())).values()
+        names = listvalues(collections.OrderedDict(sorted(viewitems(PhysicsTurretShape.PARAM_NAME_BY_INDEX))))
         for name in names:
             values.append(self.getParam(name))
 
@@ -237,7 +242,7 @@ class _Scene:
             self.svgname = filename
         else:
             self.svgname = self.name + '.svg'
-        file = open(self.svgname, 'w')
+        file = open(self.svgname, 'w', encoding='utf-8')
         file.writelines(self.strarray())
         file.close()
 

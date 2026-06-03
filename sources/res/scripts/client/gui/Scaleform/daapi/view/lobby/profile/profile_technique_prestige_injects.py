@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.framework.entities.inject_component_adaptor import InjectComponentAdaptor
 from gui.impl.lobby.prestige.prestige_profile_technique_views import PrestigeProfileTechniqueView, PrestigeProfileTechniqueEmblemView
 from gui.prb_control.entities.listener import IGlobalListener

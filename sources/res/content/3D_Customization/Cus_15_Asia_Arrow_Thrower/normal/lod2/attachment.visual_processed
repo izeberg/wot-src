@@ -8,24 +8,6 @@
 			<row2>0.000000 0.000000 1.000000</row2>
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
-		<node>
-			<identifier>nodes_01</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-			<node>
-				<identifier>HP_attachment</identifier>
-				<transform>
-					<row0>1.000000 0.000000 0.000000</row0>
-					<row1>0.000000 1.000000 0.000000</row1>
-					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 0.000000 0.000000</row3>
-				</transform>
-			</node>
-		</node>
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
@@ -38,8 +20,8 @@
 				<material>
 					<identifier>equipment</identifier>
 					<fx>shaders/std_effects/PBS_tank.fx</fx>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>0</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>112</materialKind>
 					<property>
 						diffuseMap
 						<Texture>content/3D_Customization/Cus_15_Asia_Arrow_Thrower/Asia_Arrow_Thrower_AM.dds</Texture>
@@ -57,13 +39,14 @@
 						<Texture>content/3D_Customization/Cus_15_Asia_Arrow_Thrower/Asia_Arrow_Thrower_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.000000 0.475444 0.033492</groupOrigin>
+				<groupOrigin>0.000000 0.525614 0.033492</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.486675 -0.200001 -0.547344</min>
-		<max>0.486675 1.150889 0.614327</max>
+		<min>-0.493159 -0.099661 -0.735759</min>
+		<max>0.493159 1.150889 0.876210</max>
 	</boundingBox>
+	<customBsp>true</customBsp>
 	<geometrySize>27448</geometrySize>
 </root>

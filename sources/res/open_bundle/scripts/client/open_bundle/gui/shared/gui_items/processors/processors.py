@@ -1,4 +1,6 @@
+from __future__ import absolute_import
 import BigWorld
+from future.utils import viewvalues
 from adisp import adisp_process, adisp_async
 from functools import partial
 from gui import SystemMessages
@@ -113,7 +115,7 @@ class ProcessNextStepProcessor(Processor):
     def __getCompensationValue(self, vehicles):
         comp = ZERO_MONEY
         for vehicleDict in vehicles:
-            for _, vehData in vehicleDict.iteritems():
+            for vehData in viewvalues(vehicleDict):
                 if 'rentCompensation' in vehData:
                     comp += Money.makeFromMoneyTuple(vehData['rentCompensation'])
                 if 'customCompensation' in vehData:

@@ -1108,7 +1108,7 @@ class LootBoxCurrenciesBonusUIPacker(CurrenciesBonusUIPacker):
     @classmethod
     def _getContentId(cls, bonus):
         if bonus.getCode() == CurrencyBP.TALER.value:
-            return [R.views.lobby.battle_pass.tooltips.BattlePassTalerTooltip()]
+            return [R.views.mono.battle_pass.tooltips.bptaler()]
         return super(LootBoxCurrenciesBonusUIPacker, cls)._getContentId(bonus)
 
 
@@ -1129,7 +1129,7 @@ class LootBoxBPCoinBonusUIPacker(SimpleBonusUIPacker):
 
     @classmethod
     def _getContentId(cls, bonus):
-        return [R.views.lobby.battle_pass.tooltips.BattlePassCoinTooltipView()]
+        return [R.views.mono.battle_pass.tooltips.bpcoin()]
 
 
 class LootBoxCompensationPacker(SimpleBonusUIPacker):

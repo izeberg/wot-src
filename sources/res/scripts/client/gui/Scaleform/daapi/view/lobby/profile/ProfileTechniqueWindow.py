@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.daapi.view.lobby.profile.QueuedVehicleDossierReceiver import QueuedVehicleDossierReceiver
 from gui.Scaleform.daapi.view.lobby.profile.ProfileTechnique import ProfileTechnique
 

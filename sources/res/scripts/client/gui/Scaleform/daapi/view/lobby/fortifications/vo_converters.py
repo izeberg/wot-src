@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.daapi.view.lobby.cyberSport import PLAYER_GUI_STATUS
 from gui.Scaleform.daapi.view.lobby.rally.vo_converters import makeSlotsVOs, MAX_PLAYER_COUNT_ALL, makeTotalLevelLabel, makeUnitStateLabel, makeVehicleVO
 from gui.Scaleform.locale.FORTIFICATIONS import FORTIFICATIONS

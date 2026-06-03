@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from adisp import adisp_process
 from gui import DialogsInterface

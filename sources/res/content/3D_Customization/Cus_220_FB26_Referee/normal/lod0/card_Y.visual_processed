@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<stream>colour</stream>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>card_fx_mat</identifier>
+					<fx>shaders/custom/vector_animation_2.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>112</materialKind>
+					<property>
+						compensationValue
+						<Vector4>0.500000 0.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/UniversalTextures/Graybox_01_AM.dds</Texture>
+					</property>
+					<property>
+						enableLighting
+						<Bool>true</Bool>
+					</property>
+					<property>
+						lightMultipliers
+						<Vector4>1.000000 1.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						TintlColor
+						<Vector4>1.000000 0.956863 0.000000 1.000000</Vector4>
+					</property>
+					<property>
+						g_visibilityTunnelCompensation
+						<Float>1.500000</Float>
+					</property>
+				</material>
+				<groupOrigin>-0.000000 -0.000000 -0.000001</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-0.087695 -0.143514 -0.050500</min>
+		<max>0.087695 0.143513 0.050500</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>9360</geometrySize>
+</root>

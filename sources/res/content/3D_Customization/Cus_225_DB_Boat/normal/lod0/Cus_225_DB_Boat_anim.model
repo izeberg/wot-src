@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-0.109328 -0.100000 -0.583921</min>
+		<max>0.109328 0.588958 0.437225</max>
+	</visibilityBox>
+	<parent>content/3D_Customization/Cus_225_DB_Boat/normal/lod1/Cus_225_DB_Boat_anim</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_225_DB_Boat/normal/lod0/Cus_225_DB_Boat_anim</nodefullVisual>
+</root>

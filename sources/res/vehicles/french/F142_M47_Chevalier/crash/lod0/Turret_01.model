@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F142_M47_Chevalier/crash/lod0/Turret_01</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/french/F142_M47_Chevalier/crash/lod1/Turret_01</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.240364 -0.000001 -2.504853</min>
+		<max>1.175949 1.602432 1.248901</max>
+	</visibilityBox>
+</root>

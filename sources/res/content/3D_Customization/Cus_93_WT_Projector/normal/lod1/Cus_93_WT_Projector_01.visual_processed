@@ -47,14 +47,14 @@
 						<Texture>content/3D_Customization/Cus_93_WT_Projector/Cus_93_WT_Projector_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.007311 0.183814 0.060526</groupOrigin>
+				<groupOrigin>-0.007311 0.233814 0.060526</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.193960 -0.200000 -0.184495</min>
-		<max>0.177980 0.567629 0.306431</max>
+		<min>-0.195109 -0.100000 -0.185588</min>
+		<max>0.179035 0.567628 0.308246</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>60584</geometrySize>
+	<geometrySize>60752</geometrySize>
 </root>

@@ -1,4 +1,4 @@
-import weakref
+import typing, weakref
 from collections import defaultdict
 from shared_utils import findFirst
 from CurrentVehicle import g_currentVehicle
@@ -8,6 +8,9 @@ from gui.prb_control.items import ValidationResult
 from gui.prb_control.settings import PREBATTLE_ROSTER, PREBATTLE_RESTRICTION
 from items.vehicles import VEHICLE_CLASS_TAGS, getVehicleType
 from prebattle_shared import isTeamValid, isVehicleValid
+if typing.TYPE_CHECKING:
+    from typing import List
+    from gui.prb_control.entities.base.entity import BasePrbEntity
 
 class IVehicleLimit(object):
 

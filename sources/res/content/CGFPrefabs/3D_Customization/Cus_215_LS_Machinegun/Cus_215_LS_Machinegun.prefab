@@ -121,7 +121,10 @@
 				<config>
 					<property>
 						<name>Position</name>
-						<value>0 0 0</value>
+						<value>
+							-0.0107346 -0.156854 0
+							<!--BW_String-->
+						</value>
 					</property>
 					<property>
 						<name>Scale</name>
@@ -129,7 +132,7 @@
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>-0 0 0</value>
+						<value>-0 0 -0</value>
 					</property>
 				</config>
 			</component>

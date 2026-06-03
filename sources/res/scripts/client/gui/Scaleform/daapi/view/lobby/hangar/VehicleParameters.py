@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from CurrentVehicle import g_currentVehicle, g_currentPreviewVehicle
 from account_helpers.AccountSettings import AccountSettings
 from gui.Scaleform.daapi.view.meta.VehicleParametersMeta import VehicleParametersMeta

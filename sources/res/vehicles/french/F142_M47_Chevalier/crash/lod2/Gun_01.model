@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F142_M47_Chevalier/crash/lod2/Gun_01</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/french/F142_M47_Chevalier/crash/lod3/Gun_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.402091 -0.307762 -1.109971</min>
+		<max>0.384138 0.471825 4.628284</max>
+	</visibilityBox>
+</root>

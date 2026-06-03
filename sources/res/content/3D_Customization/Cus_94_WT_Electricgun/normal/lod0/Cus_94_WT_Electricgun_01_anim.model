@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<visibilityBox>
-		<min>-0.162533 -0.200000 -0.382862</min>
-		<max>0.129727 0.671499 0.981635</max>
+		<min>-0.143029 -0.100000 -0.336918</min>
+		<max>0.114160 0.590919 0.863838</max>
 	</visibilityBox>
 	<parent>content/3D_Customization/Cus_94_WT_Electricgun/normal/lod1/Cus_94_WT_Electricgun_01_anim</parent>
 	<extent>32.000000</extent>
-	<nodefullVisual>content/3D_Customization/Cus_94_WT_Electricgun/normal/lod0/Cus_94_WT_Electricgun_01_anim</nodefullVisual>
 	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_94_WT_Electricgun/normal/lod0/Cus_94_WT_Electricgun_01_anim</nodefullVisual>
 </root>

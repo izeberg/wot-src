@@ -1,6 +1,8 @@
+from __future__ import absolute_import, division
 import operator
 from collections import defaultdict, namedtuple
 from typing import TYPE_CHECKING
+from future.utils import viewitems, viewvalues
 from gui.Scaleform.daapi.view.lobby.customization.progression_helpers import getC11n2dProgressionLinkBtnParams
 from gui.Scaleform.daapi.view.lobby.server_events.token_converter_helper import getBonusDataFromOneOfBonuses, convertTokensInBonusData
 from gui.shared.gui_items import GUI_ITEM_TYPE
@@ -26,6 +28,7 @@ from gui.server_events.personal_progress.formatters import PostBattleConditionsF
 from gui.shared.formatters import icons, text_styles
 from helpers import dependency, i18n, int2roman, time_utils
 from helpers.i18n import makeString as _ms
+from math_common import round_py2_style_int
 from nations import ALLIANCE_TO_NATIONS
 from personal_missions import PM_BRANCH
 from quest_xml_source import MAX_BONUS_LIMIT
@@ -178,7 +181,7 @@ class BattlePassProgress(object):
     def __initExtendedData(self):
         if not self.__battlePassController.isEnabled() or not self.__chaptersInfo:
             return
-        for chapterID, pointsInfo in self.__chaptersInfo.iteritems():
+        for chapterID, pointsInfo in viewitems(self.__chaptersInfo):
             previousPoints, currentPoints = pointsInfo
             if not isPostProgressionChapter(chapterID):
                 prevLevel = self.__battlePassController.getLevelByPoints(chapterID, previousPoints)
@@ -288,7 +291,7 @@ class EventPostBattleInfo(EventInfoModel):
         isQuestDailyQuest = isDailyQuest(str(self.event.getID()))
         for cond in self.event.bonusCond.getConditions().items:
             if isinstance(cond, conditions._Cumulativable):
-                for _, (curProg, totalProg, diff, _) in cond.getProgressPerGroup(pCur, pPrev).iteritems():
+                for curProg, totalProg, diff, _ in viewvalues(cond.getProgressPerGroup(pCur, pPrev)):
                     if not isQuestDailyQuest:
                         label = cond.getUserString()
                     else:
@@ -378,59 +381,59 @@ class QuestPostBattleInfo(EventPostBattleInfo, QuestInfoModel):
         groupBy = self.event.bonusCond.getGroupByValue()
         condsRoot = self.event.bonusCond.getConditions()
         if self.event.isCompleted(pCur) or condsRoot.isEmpty():
-            return (current, total, progressType, tooltip)
+            return (
+             current, total, progressType, tooltip)
+        countOfCumulatives = 0
+        cumulatives = defaultdict(list)
+        for cond in condsRoot.items:
+            if isinstance(cond, conditions._Cumulativable):
+                countOfCumulatives += 1
+                for groupByKey, (cur, tot, _, isCompleted) in viewitems(cond.getProgressPerGroup(pCur, pPrev)):
+                    if not isCompleted:
+                        cumulatives[groupByKey].append((cur, tot))
+
+        if groupBy is None and countOfCumulatives == 1 and cumulatives[None]:
+            (current, total), progressType = cumulatives[None][0], formatters.PROGRESS_BAR_TYPE.SIMPLE
         else:
-            countOfCumulatives = 0
-            cumulatives = defaultdict(list)
-            for cond in condsRoot.items:
-                if isinstance(cond, conditions._Cumulativable):
-                    countOfCumulatives += 1
-                    for groupByKey, (cur, tot, _, isCompleted) in cond.getProgressPerGroup(pCur, pPrev).iteritems():
-                        if not isCompleted:
-                            cumulatives[groupByKey].append((cur, tot))
+            avgProgressesPerGroup = []
+            for groupByKey, values in viewitems(cumulatives):
+                progressesSum = sum([ c / float(t) for c, t in values ])
+                avgProgressesPerGroup.append((
+                 groupByKey, round_py2_style_int(100.0 * progressesSum / len(values)), 100))
 
-            if groupBy is None and countOfCumulatives == 1 and cumulatives[None]:
-                (current, total), progressType = cumulatives[None][0], formatters.PROGRESS_BAR_TYPE.SIMPLE
-            else:
-                avgProgressesPerGroup = []
-                for groupByKey, values in cumulatives.iteritems():
-                    progressesSum = sum([ c / float(t) for c, t in values ])
-                    avgProgressesPerGroup.append((
-                     groupByKey, int(round(100.0 * progressesSum / len(values))), 100))
+        avgProgresses = sorted(avgProgressesPerGroup, key=operator.itemgetter(1), reverse=True)
+        if avgProgresses:
+            (groupByKey, current, total), nearestProgs = avgProgresses[0], avgProgresses[1:]
+            progressType = formatters.PROGRESS_BAR_TYPE.COMMON
+            if groupBy is not None and groupByKey is not None:
+                name, names = ('', '')
+                if groupBy == 'vehicle':
+                    name = self.itemsCache.items.getItemByCD(groupByKey).shortUserName
+                    names = [ self.itemsCache.items.getItemByCD(intCD).shortUserName for intCD, _, __ in nearestProgs
+                            ]
+                elif groupBy == 'nation':
+                    name = i18n.makeString('#menu:nations/%s' % groupByKey)
+                    names = [ i18n.makeString('#menu:nations/%s' % n) for n, _, __ in nearestProgs
+                            ]
+                elif groupBy == 'class':
+                    name = i18n.makeString('#menu:classes/%s' % groupByKey)
+                    names = [ i18n.makeString('#menu:classes/%s' % n) for n, _, __ in nearestProgs
+                            ]
+                elif groupBy == 'level':
 
-            avgProgresses = sorted(avgProgressesPerGroup, key=operator.itemgetter(1), reverse=True)
-            if avgProgresses:
-                (groupByKey, current, total), nearestProgs = avgProgresses[0], avgProgresses[1:]
-                progressType = formatters.PROGRESS_BAR_TYPE.COMMON
-                if groupBy is not None and groupByKey is not None:
-                    name, names = ('', '')
-                    if groupBy == 'vehicle':
-                        name = self.itemsCache.items.getItemByCD(groupByKey).shortUserName
-                        names = [ self.itemsCache.items.getItemByCD(intCD).shortUserName for intCD, _, __ in nearestProgs
-                                ]
-                    elif groupBy == 'nation':
-                        name = i18n.makeString('#menu:nations/%s' % groupByKey)
-                        names = [ i18n.makeString('#menu:nations/%s' % n) for n, _, __ in nearestProgs
-                                ]
-                    elif groupBy == 'class':
-                        name = i18n.makeString('#menu:classes/%s' % groupByKey)
-                        names = [ i18n.makeString('#menu:classes/%s' % n) for n, _, __ in nearestProgs
-                                ]
-                    elif groupBy == 'level':
+                    def makeLvlStr(lvl):
+                        return i18n.makeString(QUESTS.TOOLTIP_PROGRESS_GROUPBY_NOTE_LEVEL, int2roman(lvl))
 
-                        def makeLvlStr(lvl):
-                            return i18n.makeString(QUESTS.TOOLTIP_PROGRESS_GROUPBY_NOTE_LEVEL, int2roman(lvl))
-
-                        name = makeLvlStr(int(groupByKey.replace('level ', '')))
-                        names = [ makeLvlStr(int(l.replace('level ', ''))) for l, _, __ in nearestProgs
-                                ]
-                    note = None
-                    if names:
-                        note = makeHtmlString('html_templates:lobby/quests/tooltips/progress', 'note', {'names': (', ').join(names[:self.PROGRESS_TOOLTIP_MAX_ITEMS])})
-                    tooltip = {'header': i18n.makeString(QUESTS.TOOLTIP_PROGRESS_GROUPBY_HEADER), 
-                       'body': makeHtmlString('html_templates:lobby/quests/tooltips/progress', 'body', {'name': name}), 
-                       'note': note}
-            return (current, total, progressType, tooltip)
+                    name = makeLvlStr(int(groupByKey.replace('level ', '')))
+                    names = [ makeLvlStr(int(l.replace('level ', ''))) for l, _, __ in nearestProgs
+                            ]
+                note = None
+                if names:
+                    note = makeHtmlString('html_templates:lobby/quests/tooltips/progress', 'note', {'names': (', ').join(names[:self.PROGRESS_TOOLTIP_MAX_ITEMS])})
+                tooltip = {'header': i18n.makeString(QUESTS.TOOLTIP_PROGRESS_GROUPBY_HEADER), 
+                   'body': makeHtmlString('html_templates:lobby/quests/tooltips/progress', 'body', {'name': name}), 
+                   'note': note}
+        return (current, total, progressType, tooltip)
 
 
 class PersonalMissionPostBattleInfo(EventPostBattleInfo):
@@ -504,7 +507,7 @@ class _BattleMattersQuestInfo(QuestPostBattleInfo):
         progresses = []
         for cond in self.event.bonusCond.getConditions().items:
             if isinstance(cond, conditions._Cumulativable):
-                for _, (curProg, totalProg, diff, _) in cond.getProgressPerGroup(pCur, pPrev).iteritems():
+                for curProg, totalProg, diff, _ in viewvalues(cond.getProgressPerGroup(pCur, pPrev)):
                     if not diff:
                         continue
                     index += 1
@@ -546,7 +549,7 @@ class Progression2dStyleFormater(object):
         progresses = []
         for cond in event.bonusCond.getConditions().items:
             if isinstance(cond, conditions._Cumulativable):
-                for _, (curProg, totalProg, diff, _) in cond.getProgressPerGroup(pCur, pPrev).iteritems():
+                for curProg, totalProg, diff, _ in viewvalues(cond.getProgressPerGroup(pCur, pPrev)):
                     label = cond.getUserString()
                     customDescription = cond.getCustomDescription()
                     if customDescription is not None:
@@ -613,7 +616,7 @@ class Progression2dStyleFormater(object):
         count = 0
         for cond in event.bonusCond.getConditions().items:
             if isinstance(cond, conditions._Cumulativable):
-                for _, (curProg, totalProg, __, ___) in cond.getProgressPerGroup(pCur, pPrev).iteritems():
+                for curProg, totalProg, __, ___ in viewvalues(cond.getProgressPerGroup(pCur, pPrev)):
                     progress += curProg / float(totalProg)
                     count += 1
 

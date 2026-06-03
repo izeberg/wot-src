@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>vehicles/german/G118_VK4503/normal/lod4/Turret_01</nodefullVisual>
 	<tank>true</tank>
 	<materialNames/>
 	<visibilityBox>
@@ -13,4 +12,5 @@
 			<!--BW_String-->
 		</max>
 	</visibilityBox>
+	<nodefullVisual>vehicles/german/G118_VK4503/normal/lod4/Turret_01</nodefullVisual>
 </root>

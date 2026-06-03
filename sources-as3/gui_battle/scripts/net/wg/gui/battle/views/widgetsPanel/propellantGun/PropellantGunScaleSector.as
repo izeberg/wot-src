@@ -68,6 +68,58 @@ package net.wg.gui.battle.views.widgetsPanel.propellantGun
          super.onDispose();
       }
       
+      private function normalize(param1:Number) : Number
+      {
+         if(!this._snapValues)
+         {
+            return param1;
+         }
+         return param1 >= 0 ? (param1 <= 1 ? Number(param1) : Number(1)) : Number(0);
+      }
+      
+      private function drawContent(param1:Boolean = false) : void
+      {
+         var _loc3_:Number = NaN;
+         var _loc4_:Number = NaN;
+         var _loc5_:Number = NaN;
+         var _loc2_:Graphics = this.content.graphics;
+         _loc3_ = Math.min(this._currProgress,this._maxThreshold);
+         _loc4_ = _loc3_ - this._minThreshold;
+         _loc5_ = SCALE_START_ANGLE + this._minThreshold * SCALE_ARC_LENGTH;
+         var _loc6_:Number = CONTENT_RADIUS * Math.cos(_loc5_);
+         var _loc7_:Number = CONTENT_RADIUS * Math.sin(-_loc5_);
+         var _loc8_:Number = _loc4_ * SCALE_ARC_LENGTH;
+         if(!param1 && _loc5_ == this._lastAngle && _loc8_ == this._lastArc)
+         {
+            return;
+         }
+         this._lastAngle = _loc5_;
+         this._lastArc = _loc8_;
+         _loc2_.clear();
+         if(!this._bitmapData || _loc4_ <= 0)
+         {
+            return;
+         }
+         var _loc9_:Matrix = new Matrix();
+         _loc9_.translate(BITMAP_OFFSET_X - this._bitmapData.width,-this._bitmapData.height >> 1);
+         switch(this._bitmapAlign)
+         {
+            case BITMAP_ALIGN_TO_MIN:
+               _loc9_.rotate(this._minThreshold * -SCALE_ARC_LENGTH);
+               break;
+            case BITMAP_ALIGN_TO_MAX:
+               _loc9_.rotate((1 - this._maxThreshold) * SCALE_ARC_LENGTH);
+               break;
+            case BITMAP_ALIGN_DEFAULT:
+         }
+         _loc2_.lineStyle();
+         _loc2_.beginBitmapFill(this._bitmapData,_loc9_,false,true);
+         _loc2_.lineTo(_loc6_,_loc7_);
+         GraphicsUtilities.drawArc(_loc2_,0,0,_loc5_,_loc8_,CONTENT_RADIUS);
+         _loc2_.lineTo(0,0);
+         _loc2_.endFill();
+      }
+      
       public function set state(param1:String) : void
       {
          if(param1 == this.currentLabel)
@@ -156,58 +208,6 @@ package net.wg.gui.battle.views.widgetsPanel.propellantGun
             this._maxThreshold = this.normalize(this._maxThreshold);
             invalidateData();
          }
-      }
-      
-      private function normalize(param1:Number) : Number
-      {
-         if(!this._snapValues)
-         {
-            return param1;
-         }
-         return param1 >= 0 ? (param1 <= 1 ? Number(param1) : Number(1)) : Number(0);
-      }
-      
-      private function drawContent(param1:Boolean = false) : void
-      {
-         var _loc3_:Number = NaN;
-         var _loc4_:Number = NaN;
-         var _loc5_:Number = NaN;
-         var _loc2_:Graphics = this.content.graphics;
-         _loc3_ = Math.min(this._currProgress,this._maxThreshold);
-         _loc4_ = _loc3_ - this._minThreshold;
-         _loc5_ = SCALE_START_ANGLE + this._minThreshold * SCALE_ARC_LENGTH;
-         var _loc6_:Number = CONTENT_RADIUS * Math.cos(_loc5_);
-         var _loc7_:Number = CONTENT_RADIUS * Math.sin(-_loc5_);
-         var _loc8_:Number = _loc4_ * SCALE_ARC_LENGTH;
-         if(!param1 && _loc5_ == this._lastAngle && _loc8_ == this._lastArc)
-         {
-            return;
-         }
-         this._lastAngle = _loc5_;
-         this._lastArc = _loc8_;
-         _loc2_.clear();
-         if(!this._bitmapData || _loc4_ <= 0)
-         {
-            return;
-         }
-         var _loc9_:Matrix = new Matrix();
-         _loc9_.translate(BITMAP_OFFSET_X - this._bitmapData.width,-this._bitmapData.height >> 1);
-         switch(this._bitmapAlign)
-         {
-            case BITMAP_ALIGN_TO_MIN:
-               _loc9_.rotate(this._minThreshold * -SCALE_ARC_LENGTH);
-               break;
-            case BITMAP_ALIGN_TO_MAX:
-               _loc9_.rotate((1 - this._maxThreshold) * SCALE_ARC_LENGTH);
-               break;
-            case BITMAP_ALIGN_DEFAULT:
-         }
-         _loc2_.lineStyle();
-         _loc2_.beginBitmapFill(this._bitmapData,_loc9_,false,true);
-         _loc2_.lineTo(_loc6_,_loc7_);
-         GraphicsUtilities.drawArc(_loc2_,0,0,_loc5_,_loc8_,CONTENT_RADIUS);
-         _loc2_.lineTo(0,0);
-         _loc2_.endFill();
       }
    }
 }

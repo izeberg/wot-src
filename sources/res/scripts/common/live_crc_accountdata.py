@@ -1,4 +1,5 @@
-from live_crc import *
+from __future__ import absolute_import
+from live_crc import gen_delSubkeys_fn, gen_livehash_fn, gen_mergeCache_fn, gen_extract_fn, INCLUDE
 accountPersistentCacheDataScheme = {INCLUDE: {
            'economics', 'inventory', 'quests', 'tokens', 'potapovQuests', 'intUserSettings'}, 
    'stats': {INCLUDE: {

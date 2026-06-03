@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from logging import getLogger
 from typing import TYPE_CHECKING
 import BigWorld

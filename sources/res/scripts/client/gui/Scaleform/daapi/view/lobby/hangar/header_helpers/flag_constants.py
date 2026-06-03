@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.daapi.view.lobby.hangar.header_helpers.personal_mission_flags import PersonalMissionsFlag
 from gui.Scaleform.daapi.view.lobby.hangar.header_helpers.quest_flags import RankedQuestsFlag, ElenQuestsFlag, BattleQuestsFlag, MarathonQuestsFlag, MapboxQuestsFlag
 from gui.shared.system_factory import registerQuestFlag

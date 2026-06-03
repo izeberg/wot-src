@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>content/3D_Customization/Cus_07_Scout_Motobike/normal/lod2/attachment</nodefullVisual>
 	<parent>content/3D_Customization/Cus_07_Scout_Motobike/normal/lod3/attachment</parent>
 	<extent>96.000000</extent>
 	<tank>true</tank>
 	<visibilityBox>
-		<min>-0.353872 0.012032 -0.733582</min>
-		<max>0.200450 0.384291 0.689633</max>
+		<min>-0.499953 0.000301 -0.733582</min>
+		<max>0.054369 0.396723 0.689633</max>
 	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/Cus_07_Scout_Motobike/normal/lod2/attachment</nodefullVisual>
 </root>

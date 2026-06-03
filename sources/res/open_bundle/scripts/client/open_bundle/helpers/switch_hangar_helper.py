@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.prb_control.entities.listener import IGlobalListener
 from helpers import dependency
 from skeletons.gui.shared.utils import IHangarSpace

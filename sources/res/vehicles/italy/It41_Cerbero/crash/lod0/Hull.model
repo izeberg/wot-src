@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/italy/It41_Cerbero/crash/lod0/Hull</nodefullVisual>
+	<parent>vehicles/italy/It41_Cerbero/crash/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.600579 -0.968267 -3.507881</min>
+		<max>1.601577 0.816298 3.708715</max>
+	</visibilityBox>
+</root>

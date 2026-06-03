@@ -2302,25 +2302,29 @@
 				<slotType>attachment</slotType>
 				<slotId>18004</slotId>
 				<position>
-					0.033018 1.04344 -2.74213
+					-0.028 1.641 -0.056
 					<!--BW_String-->
 				</position>
-				<rotation>-0 -0 0</rotation>
+				<rotation>-0 0 0</rotation>
 				<scale>1 1 1</scale>
 				<applyType>turret</applyType>
 				<size>medium</size>
+				<enableVisTunnel>true</enableVisTunnel>
+				<hangerId>3</hangerId>
 			</slot>
 			<slot>
 				<slotType>attachment</slotType>
 				<slotId>18005</slotId>
 				<position>
-					-0.747274 1.51969 0.377961
+					-0.854 1.168 1.374
 					<!--BW_String-->
 				</position>
 				<rotation>-0 0 0</rotation>
 				<scale>1 1 1</scale>
 				<applyType>gunMantlet</applyType>
 				<size>medium</size>
+				<enableVisTunnel>true</enableVisTunnel>
+				<hangerId>2</hangerId>
 			</slot>
 		</customizationSlots>
 		<customization>

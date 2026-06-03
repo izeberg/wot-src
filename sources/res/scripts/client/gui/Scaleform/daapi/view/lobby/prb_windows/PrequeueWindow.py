@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from CurrentVehicle import g_currentVehicle
 from adisp import adisp_process
 from gui.Scaleform.daapi.view.meta.PrequeueWindowMeta import PrequeueWindowMeta

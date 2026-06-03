@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from functools import partial
 import BigWorld
 from adisp import adisp_process
@@ -57,11 +58,11 @@ class _GroupedMissionsView(MissionsGroupedViewMeta):
 
 class MissionsGroupedView(_GroupedMissionsView):
 
-    def dummyClicked(self, eventType):
-        if eventType == 'OpenCategoriesEvent':
+    def dummyClicked(self, clickType):
+        if clickType == 'OpenCategoriesEvent':
             showMissionsCategories()
         else:
-            super(MissionsGroupedView, self).dummyClicked(eventType)
+            super(MissionsGroupedView, self).dummyClicked(clickType)
 
     @staticmethod
     def _getBackground():
@@ -116,7 +117,7 @@ class MissionsMarathonView(MissionsMarathonViewMeta):
             yield lambda callback: callback(True)
         return
 
-    def setActive(self, value):
+    def setActive(self, isActive):
         self.reload()
 
     def setBuilder(self, builder, filterData, eventID):
@@ -221,7 +222,7 @@ class MissionsEventBoardsView(MissionsEventBoardsViewMeta):
         self.__openDetailsContainer(EVENTBOARDS_ALIASES.EVENTBOARDS_DETAILS_AWARDS_LINKAGE, ctx)
 
     @adisp_process
-    def serverClick(self, eventID, serverID):
+    def serverClick(self, eventID, server):
 
         def doJoin():
             from gui.Scaleform.framework import g_entitiesFactories
@@ -230,8 +231,7 @@ class MissionsEventBoardsView(MissionsEventBoardsViewMeta):
         reloginCtrl = dependency.instance(IReloginController)
         success = yield DialogsInterface.showI18nConfirmDialog('changePeriphery')
         if success:
-            reloginCtrl.doRelogin(int(serverID), extraChainSteps=(
-             actions.OnLobbyInitedAction(onInited=doJoin),))
+            reloginCtrl.doRelogin(int(server), extraChainSteps=(actions.OnLobbyInitedAction(onInited=doJoin),))
 
     @checkEventExist
     @adisp_process
@@ -382,8 +382,8 @@ class MissionsCategoriesView(_GroupedMissionsView):
 
 class CurrentVehicleMissionsView(CurrentVehicleMissionsViewMeta):
 
-    def setBuilder(self, builder, filters, eventId):
-        super(CurrentVehicleMissionsView, self).setBuilder(builder, filters, eventId)
+    def setBuilder(self, builder, filterData, eventID):
+        super(CurrentVehicleMissionsView, self).setBuilder(builder, filterData, eventID)
         self._builder.onBlocksDataChanged += self.__onBlocksDataChanged
 
     @staticmethod

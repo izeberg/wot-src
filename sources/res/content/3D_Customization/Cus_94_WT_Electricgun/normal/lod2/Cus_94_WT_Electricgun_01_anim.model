@@ -2,10 +2,10 @@
 <root>
 	<parent>content/3D_Customization/Cus_94_WT_Electricgun/normal/lod3/Cus_94_WT_Electricgun_01_anim</parent>
 	<extent>96.000000</extent>
-	<nodefullVisual>content/3D_Customization/Cus_94_WT_Electricgun/normal/lod2/Cus_94_WT_Electricgun_01_anim</nodefullVisual>
 	<visibilityBox>
-		<min>-0.155607 -0.200000 -0.382862</min>
-		<max>0.113593 0.671499 0.981635</max>
+		<min>-0.136934 -0.100000 -0.336918</min>
+		<max>0.099962 0.590919 0.863838</max>
 	</visibilityBox>
 	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_94_WT_Electricgun/normal/lod2/Cus_94_WT_Electricgun_01_anim</nodefullVisual>
 </root>

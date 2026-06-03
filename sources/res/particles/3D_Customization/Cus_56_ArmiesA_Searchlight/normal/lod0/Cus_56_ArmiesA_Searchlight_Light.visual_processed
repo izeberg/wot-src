@@ -71,6 +71,14 @@
 						g_useTime
 						<Bool>false</Bool>
 					</property>
+					<property>
+						g_enableVisTunnel
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_visibilityTunnelCompensation
+						<Float>22.000000</Float>
+					</property>
 				</material>
 				<groupOrigin>0.000092 0.391455 0.175941</groupOrigin>
 			</primitiveGroup>
@@ -136,6 +144,14 @@
 					<property>
 						opacity_UV_Distortion_Amount
 						<Vector4>0.000000 0.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_enableVisTunnel
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_visibilityTunnelCompensation
+						<Float>22.000000</Float>
 					</property>
 				</material>
 				<groupOrigin>0.000060 0.391457 0.051383</groupOrigin>

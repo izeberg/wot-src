@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.framework.entities.inject_component_adaptor import InjectComponentAdaptor
 from gui.impl.lobby.collection.collections_main_view import CollectionsMainView
 from gui.shared.event_dispatcher import showCollectionsIntro

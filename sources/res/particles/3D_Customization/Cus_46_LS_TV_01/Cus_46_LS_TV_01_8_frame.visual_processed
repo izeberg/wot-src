@@ -86,6 +86,14 @@
 						patternFilteringMode
 						<Int>1</Int>
 					</property>
+					<property>
+						g_enableVisTunnel
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_visibilityTunnelCompensation
+						<Float>11.000000</Float>
+					</property>
 				</material>
 				<groupOrigin>0.000126 -0.000162 -0.002461</groupOrigin>
 			</primitiveGroup>

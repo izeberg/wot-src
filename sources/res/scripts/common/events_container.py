@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from Event import Event, SafeEvent, EventManager, ContextEvent
 from synchronous_event import SynchronousEvent
 from events_debugger import EventsDebugger

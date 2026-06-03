@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.framework.entities.inject_component_adaptor import InjectComponentAdaptor
 from gui.impl.lobby.tank_setup.ammunition_setup.hangar import HangarAmmunitionSetupView
 from gui.shared.system_factory import collectAmmunitionSetupView

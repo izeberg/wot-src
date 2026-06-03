@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>content/3D_Customization/Cus_222_FB26_Fan/normal/lod2/Cus_222_FB26_Fan</nodefullVisual>
+	<parent>content/3D_Customization/Cus_222_FB26_Fan/normal/lod3/Cus_222_FB26_Fan</parent>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.585419 -0.005156 -0.765261</min>
+		<max>0.092901 0.399081 0.728241</max>
+	</visibilityBox>
+</root>

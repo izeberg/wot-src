@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>content/3D_Customization/Cus_220_FB26_Referee/normal/lod1/Cus_220_FB26_Referee</nodefullVisual>
+	<parent>content/3D_Customization/Cus_220_FB26_Referee/normal/lod2/Cus_220_FB26_Referee</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.181682 -0.100116 -0.394778</min>
+		<max>0.210790 0.587705 0.271032</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

@@ -92,7 +92,10 @@
 					</property>
 					<property>
 						<name>Scale</name>
-						<value>1 1 1</value>
+						<value>
+							0.9 0.9 0.9
+							<!--BW_String-->
+						</value>
 					</property>
 					<property>
 						<name>Rotation</name>
@@ -221,6 +224,14 @@
 						<name>Cast Shadows</name>
 						<value>1</value>
 					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
+					</property>
 				</config>
 			</component>
 		</ComponentPool>
@@ -233,6 +244,10 @@
 				<config>
 					<property>
 						<name>Auto Start</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>DynamicModelLinkType</name>
 						<value>0</value>
 					</property>
 					<property>

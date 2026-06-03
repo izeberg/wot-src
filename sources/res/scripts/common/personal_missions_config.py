@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from constants import ASSIST_TYPES, ATTACK_REASON, VEHICLE_CLASS
 from personal_missions_constants import TARGET_NATIONS, DESCRIPTIONS, DISPLAY_TYPE, CRIT_TYPES
 from personal_missions_constants import PROGRESS_TEMPLATE, CONDITION_ICON, VISIBLE_SCOPE, MULTIPLIER_TYPE

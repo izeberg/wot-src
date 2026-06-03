@@ -51,13 +51,13 @@
 						<Texture>content/3D_Customization/Cus_72_OTG_Projector/Cus_72_OTG_Projector_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.000000 0.361592 0.007447</groupOrigin>
+				<groupOrigin>0.000000 0.325000 0.007447</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.275307 -0.200000 -0.164957</min>
-		<max>0.275307 0.923185 0.162869</max>
+		<min>-0.275307 -0.100000 -0.164957</min>
+		<max>0.275307 0.750000 0.162869</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
 	<geometrySize>23482</geometrySize>

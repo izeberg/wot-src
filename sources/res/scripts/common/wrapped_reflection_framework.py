@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from constants import IS_UE_EDITOR
 from collections import namedtuple
 from contextlib import contextmanager

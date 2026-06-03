@@ -38,10 +38,10 @@ class VehiclesStatisticsPresenter(ViewComponent[VehicleStatisticsModel]):
         return super(VehiclesStatisticsPresenter, self).getViewModel()
 
     def createToolTipContent(self, event, contentID):
-        if contentID == R.views.lobby.battle_pass.tooltips.VehiclePointsTooltipView():
+        if contentID == R.views.mono.battle_pass.tooltips.vehicle_bp_points():
             return VehiclePointsTooltipView(int(event.getArgument('intCD')))
-        if contentID == R.views.lobby.battle_pass.tooltips.BattlePassOnPauseTooltipView():
-            return SimpleTooltipContent(R.views.lobby.battle_pass.tooltips.BattlePassOnPauseTooltipView())
+        if contentID == R.views.mono.battle_pass.tooltips.on_pause():
+            return SimpleTooltipContent(R.views.mono.battle_pass.tooltips.on_pause())
         return super(VehiclesStatisticsPresenter, self).createToolTipContent(event=event, contentID=contentID)
 
     def _getEvents(self):

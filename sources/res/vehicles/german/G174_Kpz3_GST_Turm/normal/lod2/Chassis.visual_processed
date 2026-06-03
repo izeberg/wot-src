@@ -1034,7 +1034,7 @@
 						<Bool>true</Bool>
 					</property>
 				</material>
-				<groupOrigin>-1.414074 0.723509 -0.101124</groupOrigin>
+				<groupOrigin>-1.414074 0.722010 -0.101124</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -1082,7 +1082,7 @@
 						<Bool>true</Bool>
 					</property>
 				</material>
-				<groupOrigin>1.414074 0.723509 -0.101124</groupOrigin>
+				<groupOrigin>1.414074 0.722010 -0.101124</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -1106,8 +1106,8 @@
 		<node>WD_L4_BlendBone</node>
 		<node>WD_L5_BlendBone</node>
 		<geometry>
-			<vertices>chassis_L_Shape.vertices</vertices>
-			<primitive>chassis_L_Shape.indices</primitive>
+			<vertices>chassis_LShape.vertices</vertices>
+			<primitive>chassis_LShape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -1169,7 +1169,7 @@
 						<Bool>true</Bool>
 					</property>
 				</material>
-				<groupOrigin>-1.318027 0.708626 -0.079914</groupOrigin>
+				<groupOrigin>-1.318027 0.707416 -0.079914</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -1193,8 +1193,8 @@
 		<node>WD_R4_BlendBone</node>
 		<node>WD_R5_BlendBone</node>
 		<geometry>
-			<vertices>chassis_R_Shape.vertices</vertices>
-			<primitive>chassis_R_Shape.indices</primitive>
+			<vertices>chassis_RShape.vertices</vertices>
+			<primitive>chassis_RShape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -1256,7 +1256,7 @@
 						<Bool>true</Bool>
 					</property>
 				</material>
-				<groupOrigin>1.317119 0.709479 -0.099687</groupOrigin>
+				<groupOrigin>1.317119 0.708194 -0.099687</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from helpers import dependency
 from open_bundle.gui.impl.gen.view_models.views.lobby.notifications.start_notification_model import StartNotificationModel
 from open_bundle.gui.shared.event_dispatcher import showOpenBundleMainView

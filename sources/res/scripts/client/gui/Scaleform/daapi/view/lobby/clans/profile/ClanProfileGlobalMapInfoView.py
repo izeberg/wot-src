@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import weakref
 from adisp import adisp_process
 from gui.Scaleform.daapi.view.lobby.clans.profile.clan_statistics_vos import FortGlobalMapStatistics

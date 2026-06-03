@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from future.utils import viewitems
 from frameworks.wulf import ViewSettings
 from gui.battle_pass.battle_pass_helpers import getChapterType, getReceivedTankmenCount, getTankmenShopPackages
 from gui.impl.gen import R
@@ -29,4 +31,4 @@ class BattlePassCompletedTooltipView(ViewImpl):
             model.setIsAvailableTankmen(self.__isAvailableTankmen(getTankmenShopPackages()))
 
     def __isAvailableTankmen(self, shopPackages):
-        return any(packageCount - getReceivedTankmenCount(tankman) != 0 for tankman, packageCount in shopPackages.iteritems())
+        return any(packageCount - getReceivedTankmenCount(tankman) != 0 for tankman, packageCount in viewitems(shopPackages))

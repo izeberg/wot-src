@@ -222,6 +222,10 @@
 						<value>1</value>
 					</property>
 					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>decorType</name>
 						<value>0</value>
 					</property>
@@ -238,6 +242,10 @@
 					<property>
 						<name>Auto Start</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>DynamicModelLinkType</name>
+						<value>0</value>
 					</property>
 					<property>
 						<name>Layers</name>
@@ -320,6 +328,14 @@
 						<value>-1</value>
 					</property>
 				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>BW::VisibilityTunnelComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>e4cb6152-92f1-4834-8612-1f24c7fe63af</UUID>
+				<flags>3</flags>
 			</component>
 		</ComponentPool>
 		<ComponentPool>

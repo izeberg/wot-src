@@ -8,24 +8,6 @@
 			<row2>0.000000 0.000000 1.000000</row2>
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
-		<node>
-			<identifier>nodes_01</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-			<node>
-				<identifier>HP_attachment</identifier>
-				<transform>
-					<row0>1.000000 0.000000 0.000000</row0>
-					<row1>0.000000 1.000000 0.000000</row1>
-					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 0.000000 0.000000</row3>
-				</transform>
-			</node>
-		</node>
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
@@ -37,40 +19,52 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>equipment</identifier>
-					<fx>shaders/std_effects/PBS_tank.fx</fx>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>0</materialKind>
+					<identifier>Halo</identifier>
+					<fx>shaders/custom/vector_animation_2.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>255</materialKind>
 					<property>
-						diffuseMap
-						<Texture>content/3D_Customization/Cus_22_Rock_Soffits/Rock_Soffits_AM.dds</Texture>
+						alphaFadeAmountSoft
+						<Vector4>0.000000 1.000000 0.000000 0.500000</Vector4>
 					</property>
 					<property>
-						excludeMaskAndAOMap
-						<Texture>content/3D_Customization/Cus_22_Rock_Soffits/Rock_Soffits_AO.dds</Texture>
-					</property>
-					<property>
-						g_detailUVTiling
-						<Vector4>3.506000 1.753000 0.000000 0.000000</Vector4>
-					</property>
-					<property>
-						g_useDetailMetallic
+						alphaFreshnelEnable
 						<Bool>true</Bool>
 					</property>
 					<property>
-						metallicDetailMap
-						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+						compensationValue
+						<Vector4>1.000000 0.000000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
-						metallicGlossMap
-						<Texture>content/3D_Customization/Cus_22_Rock_Soffits/Rock_Soffits_GMM.dds</Texture>
+						destBlend
+						<Int>2</Int>
 					</property>
 					<property>
-						normalMap
-						<Texture>content/3D_Customization/Cus_22_Rock_Soffits/Rock_Soffits_ANM.dds</Texture>
+						diffuseMap
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/Rays_01.dds</Texture>
+					</property>
+					<property>
+						gradientMap
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/null.dds</Texture>
+					</property>
+					<property>
+						opacity_UV_Speed_Scale
+						<Vector4>0.000000 100.000000 1.000000 0.001000</Vector4>
+					</property>
+					<property>
+						opacityMap
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/null.dds</Texture>
+					</property>
+					<property>
+						rampFreshnelMap
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/Gradients/Head_light_front_rays.dds</Texture>
+					</property>
+					<property>
+						TintlColor
+						<Vector4>1.000000 0.266667 0.180392 1.000000</Vector4>
 					</property>
 				</material>
-				<groupOrigin>0.046035 0.166891 0.067103</groupOrigin>
+				<groupOrigin>0.069641 0.368510 0.437108</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				1
@@ -78,7 +72,7 @@
 					<identifier>GodRays</identifier>
 					<fx>shaders/custom/vector_animation_2.fx</fx>
 					<collisionFlags>255</collisionFlags>
-					<materialKind>0</materialKind>
+					<materialKind>255</materialKind>
 					<property>
 						alphaFadeAmountSoft
 						<Vector4>0.000000 2.000000 0.200000 0.250000</Vector4>
@@ -160,7 +154,7 @@
 					<identifier>SpotlightLamp</identifier>
 					<fx>shaders/custom/vector_animation_2.fx</fx>
 					<collisionFlags>255</collisionFlags>
-					<materialKind>0</materialKind>
+					<materialKind>255</materialKind>
 					<property>
 						alphaFadeAmountSoft
 						<Vector4>1.000000 1.000000 0.010000 0.000000</Vector4>
@@ -187,15 +181,11 @@
 					</property>
 					<property>
 						gradientMap
-						<Texture>particles/content_deferred/GFX_models/GFX_textures/Gradients/Head_light_reflection_red.dds</Texture>
-					</property>
-					<property>
-						gradientMapEnable
-						<Bool>true</Bool>
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/Gradients/Head_light_reflection.dds</Texture>
 					</property>
 					<property>
 						lightMultipliers
-						<Vector4>5.000000 0.000000 0.000000 0.000000</Vector4>
+						<Vector4>3.000000 0.000000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						opacity_UV_Distortion_Amount
@@ -219,15 +209,23 @@
 					</property>
 					<property>
 						TintlColor
-						<Vector4>1.000000 0.082353 0.019608 1.000000</Vector4>
+						<Vector4>1.000000 0.101961 0.039216 0.968628</Vector4>
 					</property>
 					<property>
 						destBlend
-						<Int>1</Int>
+						<Int>2</Int>
 					</property>
 					<property>
 						diffuseUVSpeedAlphaOffset
-						<Vector4>0.000000 0.000000 1.080000 0.000000</Vector4>
+						<Vector4>0.000000 0.000000 1.050000 0.000000</Vector4>
+					</property>
+					<property>
+						g_visibilityTunnelCompensation
+						<Float>100.000000</Float>
+					</property>
+					<property>
+						gradientMapEnable
+						<Bool>true</Bool>
 					</property>
 				</material>
 				<groupOrigin>0.022116 0.368162 0.101061</groupOrigin>
@@ -235,52 +233,40 @@
 			<primitiveGroup>
 				3
 				<material>
-					<identifier>Halo</identifier>
-					<fx>shaders/custom/vector_animation_2.fx</fx>
-					<collisionFlags>255</collisionFlags>
-					<materialKind>0</materialKind>
+					<identifier>equipment</identifier>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>112</materialKind>
 					<property>
-						alphaFadeAmountSoft
-						<Vector4>0.000000 1.000000 0.000000 0.500000</Vector4>
+						diffuseMap
+						<Texture>content/3D_Customization/Cus_22_Rock_Soffits/Rock_Soffits_AM.dds</Texture>
 					</property>
 					<property>
-						alphaFreshnelEnable
+						excludeMaskAndAOMap
+						<Texture>content/3D_Customization/Cus_22_Rock_Soffits/Rock_Soffits_AO.dds</Texture>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>3.506000 1.753000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_useDetailMetallic
 						<Bool>true</Bool>
 					</property>
 					<property>
-						compensationValue
-						<Vector4>1.000000 0.000000 0.000000 0.000000</Vector4>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
 					<property>
-						destBlend
-						<Int>2</Int>
+						metallicGlossMap
+						<Texture>content/3D_Customization/Cus_22_Rock_Soffits/Rock_Soffits_GMM.dds</Texture>
 					</property>
 					<property>
-						diffuseMap
-						<Texture>particles/content_deferred/GFX_models/GFX_textures/Rays_01.dds</Texture>
-					</property>
-					<property>
-						gradientMap
-						<Texture>particles/content_deferred/GFX_models/GFX_textures/null.dds</Texture>
-					</property>
-					<property>
-						opacity_UV_Speed_Scale
-						<Vector4>0.000000 100.000000 1.000000 0.001000</Vector4>
-					</property>
-					<property>
-						opacityMap
-						<Texture>particles/content_deferred/GFX_models/GFX_textures/null.dds</Texture>
-					</property>
-					<property>
-						rampFreshnelMap
-						<Texture>particles/content_deferred/GFX_models/GFX_textures/Gradients/Head_light_front_rays.dds</Texture>
-					</property>
-					<property>
-						TintlColor
-						<Vector4>1.000000 0.266667 0.180392 1.000000</Vector4>
+						normalMap
+						<Texture>content/3D_Customization/Cus_22_Rock_Soffits/Rock_Soffits_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.069641 0.368510 0.437108</groupOrigin>
+				<groupOrigin>0.046035 0.216891 0.067103</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>

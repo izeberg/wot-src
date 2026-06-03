@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_221_FB26_Footballer/normal/lod2/Cus_221_FB26_Footballer</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.595593 0.011878 -0.512941</min>
+		<max>0.102258 0.486709 0.513825</max>
+	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/Cus_221_FB26_Footballer/normal/lod1/Cus_221_FB26_Footballer</nodefullVisual>
+</root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/chinese/Ch72_Yongshi/crash/lod1/Hull</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/chinese/Ch72_Yongshi/crash/lod2/Hull</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.718337 -0.845555 -3.835064</min>
+		<max>1.715856 0.690558 3.512161</max>
+	</visibilityBox>
+</root>

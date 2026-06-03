@@ -99,7 +99,7 @@
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>0 0 0</value>
+						<value>-0 0 0</value>
 					</property>
 				</config>
 			</component>
@@ -224,7 +224,23 @@
 						<name>Cast Shadows</name>
 						<value>1</value>
 					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
+					</property>
 				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>BW::VisibilityTunnelComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>d0da5635-a60f-4921-bd51-b5aee7de360d</UUID>
+				<flags>3</flags>
 			</component>
 		</ComponentPool>
 		<ComponentPool>

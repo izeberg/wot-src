@@ -14,7 +14,6 @@
 		<node>Scene Root</node>
 		<geometry>
 			<vertices>vertices</vertices>
-			<stream>colour</stream>
 			<primitive>indices</primitive>
 			<primitiveGroup>
 				0
@@ -56,14 +55,14 @@
 						<Texture>content/3D_Customization/Cus_146_CS_Radar/Cus_146_CS_Radar_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.000000 0.271629 0.320973</groupOrigin>
+				<groupOrigin>0.000000 0.297477 0.320973</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.283542 -0.199851 -0.194112</min>
-		<max>0.283542 0.743330 0.820071</max>
+		<min>-0.283541 -0.100000 -0.194111</min>
+		<max>0.283541 0.695176 0.820071</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>57912</geometrySize>
+	<geometrySize>52628</geometrySize>
 </root>

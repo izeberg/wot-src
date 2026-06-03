@@ -19,10 +19,48 @@
 			<primitiveGroup>
 				0
 				<material>
+					<identifier>equipment</identifier>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>112</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/3D_Customization/Cus_26_Mystic_Mirror/Mirror_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>content/3D_Customization/Cus_26_Mystic_Mirror/Mirror_AO.dds</Texture>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>3.506000 3.506000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/3D_Customization/Cus_26_Mystic_Mirror/Mirror_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/3D_Customization/Cus_26_Mystic_Mirror/Mirror_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.222299 0.166819 -0.003597</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
 					<identifier>Mirror</identifier>
 					<fx>shaders/custom/vector_animation_2.fx</fx>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>0</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>112</materialKind>
 					<property>
 						diffuseMap
 						<Texture>particles/3D_Customization/Cus_26_Mystic_Mirror/mystic_mirror.dds</Texture>
@@ -84,15 +122,15 @@
 						<Vector4>1.000000 0.000000 0.000000 0.000000</Vector4>
 					</property>
 				</material>
-				<groupOrigin>-0.249787 0.115636 0.017436</groupOrigin>
+				<groupOrigin>-0.222084 0.099967 0.015366</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				1
+				2
 				<material>
 					<identifier>Magic</identifier>
 					<fx>shaders/custom/vector_animation_2.fx</fx>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>0</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>112</materialKind>
 					<property>
 						diffuseMap
 						<Texture>particles/content_deferred/GFX_models/GFX_textures/hw_crystal_smoke.dds</Texture>
@@ -162,52 +200,14 @@
 						<Texture>particles/content_deferred/GFX_models/GFX_textures/null.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.249787 0.118320 0.017436</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
-				2
-				<material>
-					<identifier>equipment</identifier>
-					<fx>shaders/std_effects/PBS_tank.fx</fx>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>0</materialKind>
-					<property>
-						diffuseMap
-						<Texture>content/3D_Customization/Cus_26_Mystic_Mirror/Mirror_AM.dds</Texture>
-					</property>
-					<property>
-						excludeMaskAndAOMap
-						<Texture>content/3D_Customization/Cus_26_Mystic_Mirror/Mirror_AO.dds</Texture>
-					</property>
-					<property>
-						g_detailUVTiling
-						<Vector4>3.506000 3.506000 0.000000 0.000000</Vector4>
-					</property>
-					<property>
-						g_useDetailMetallic
-						<Bool>true</Bool>
-					</property>
-					<property>
-						metallicDetailMap
-						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
-					</property>
-					<property>
-						metallicGlossMap
-						<Texture>content/3D_Customization/Cus_26_Mystic_Mirror/Mirror_GMM.dds</Texture>
-					</property>
-					<property>
-						normalMap
-						<Texture>content/3D_Customization/Cus_26_Mystic_Mirror/Mirror_ANM.dds</Texture>
-					</property>
-				</material>
-				<groupOrigin>-0.248799 0.195801 -0.003597</groupOrigin>
+				<groupOrigin>-0.222084 0.098299 0.015366</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.696503 0.000024 -1.008039</min>
-		<max>0.198904 0.391579 1.000846</max>
+		<min>-0.603800 -0.000009 -0.859511</min>
+		<max>0.159202 0.333647 0.852318</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>367992</geometrySize>
+	<geometrySize>340308</geometrySize>
 </root>

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.framework.managers.loaders import SFViewLoadParams
 from gui.shared.gui_items import GUI_ITEM_TYPE
 from gui.shared.items_cache import CACHE_SYNC_REASON
@@ -116,7 +117,7 @@ class CyberSportIntroView(CyberSportIntroMeta):
                 for vehIntCD in vehDiff:
                     vehicle = self.itemsCache.items.getItemByCD(vehIntCD)
                     if not vehicle.activeInNationGroup and self._currentVehCD == vehIntCD:
-                        itemCD = iterVehTypeCDsInNationGroup(vehicle.intCD).next()
+                        itemCD = next(iterVehTypeCDsInNationGroup(vehicle.intCD))
                         self.__setSelectedVehicle(itemCD)
 
             return

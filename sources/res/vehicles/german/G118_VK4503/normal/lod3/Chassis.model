@@ -1,21 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<parent>vehicles/german/G118_VK4503/normal/lod4/Chassis</parent>
-	<extent>
-		192.0
-		<!--BW_String-->
-	</extent>
 	<tank>true</tank>
 	<materialNames/>
 	<visibilityBox>
 		<min>
-			-1.74266 0.000126319 -3.12765
+			-1.77067 0.00146688 -3.14971
 			<!--BW_String-->
 		</min>
 		<max>
-			1.74235 1.38477 3.25746
+			1.77005 1.38386 3.25158
 			<!--BW_String-->
 		</max>
 	</visibilityBox>
+	<parent>vehicles/german/G118_VK4503/normal/lod4/Chassis</parent>
+	<extent>192</extent>
 	<nodefullVisual>vehicles/german/G118_VK4503/normal/lod3/Chassis</nodefullVisual>
 </root>

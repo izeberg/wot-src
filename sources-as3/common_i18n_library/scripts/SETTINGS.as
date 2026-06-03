@@ -261,6 +261,10 @@ package
       
       public static const SNIPER_MODE_TERRAIN_TESSELLATION_ENABLED_DESCRIPTION:String = "#settings:SNIPER_MODE_TERRAIN_TESSELLATION_ENABLED/description";
       
+      public static const VISIBILITY_TUNNEL_ENABLED:String = "#settings:VISIBILITY_TUNNEL_ENABLED";
+      
+      public static const VISIBILITY_TUNNEL_ENABLED_DESCRIPTION:String = "#settings:VISIBILITY_TUNNEL_ENABLED/description";
+      
       public static const DYNAMICCAMERA:String = "#settings:dynamicCamera";
       
       public static const GAME_HORSTABILIZATIONSNP:String = "#settings:game/horStabilizationSnp";

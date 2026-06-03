@@ -163,6 +163,10 @@
 						rampFreshnelMap
 						<Texture>particles/content_deferred/GFX_models/GFX_textures/Gradients/Head_light_reflection_02.dds</Texture>
 					</property>
+					<property>
+						g_visibilityTunnelCompensation
+						<Float>10.000000</Float>
+					</property>
 				</material>
 				<groupOrigin>0.175154 0.755886 -0.083087</groupOrigin>
 			</primitiveGroup>
@@ -216,6 +220,10 @@
 					<property>
 						alphaFreshnelEnable
 						<Bool>true</Bool>
+					</property>
+					<property>
+						g_visibilityTunnelCompensation
+						<Float>6.500000</Float>
 					</property>
 				</material>
 				<groupOrigin>0.175154 0.755886 -0.083028</groupOrigin>

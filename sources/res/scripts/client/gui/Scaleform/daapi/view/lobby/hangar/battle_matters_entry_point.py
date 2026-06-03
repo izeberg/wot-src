@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.framework.entities.inject_component_adaptor import InjectComponentAdaptor
 from gui.impl.lobby.battle_matters.battle_matters_entry_point_view import BattleMattersEntryPointView
 from shared_utils import nextTick

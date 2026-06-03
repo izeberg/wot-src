@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>3.000000</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+		<track>
+			<name>animation</name>
+			<type>animation</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>1.266667</duration>
+				<resourceID>content/3D_Customization/Cus_220_FB26_Referee/animation/red.fbx</resourceID>
+				<clipName/>
+				<speed>1.000000</speed>
+				<layer>0</layer>
+				<blendIn>constant</blendIn>
+				<blendOut>constant</blendOut>
+				<blendInTime>0.000000</blendInTime>
+				<blendOutTime>0.000000</blendOutTime>
+				<clipStartTime>0.000000</clipStartTime>
+				<clipEndTime>1.266667</clipEndTime>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>whistle</name>
+		<type>model</type>
+		<resource>content/3D_Customization/Cus_220_FB26_Referee/normal/lod0/Cus_220_FB26_Referee.model</resource>
+		<track>
+			<name>animation</name>
+			<type>animation</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>1.266667</duration>
+				<resourceID>content/3D_Customization/Cus_220_FB26_Referee/animation/red.fbx</resourceID>
+				<clipName/>
+				<speed>1.000000</speed>
+				<layer>0</layer>
+				<blendIn>constant</blendIn>
+				<blendOut>constant</blendOut>
+				<blendInTime>0.000000</blendInTime>
+				<blendOutTime>0.000000</blendOutTime>
+				<clipStartTime>0.000000</clipStartTime>
+				<clipEndTime>1.266667</clipEndTime>
+			</frame>
+		</track>
+		<track>
+			<name>visibility</name>
+			<type>bool</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>false</value>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>red_card</name>
+		<type>model</type>
+		<resource>content/3D_Customization/Cus_220_FB26_Referee/normal/lod0/card_R.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>3.000000</duration>
+				<value>whistle|red_card</value>
+			</frame>
+		</track>
+		<track>
+			<name>visibility</name>
+			<type>bool</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>true</value>
+			</frame>
+			<frame>
+				<startTime>3.000000</startTime>
+				<value>false</value>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>card_fx_mat</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 0.023529 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 3.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 3.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.333333</startTime>
+				<value>1.000000 0.023529 0.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 1.500000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 1.500000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>1.000000 0.023529 0.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 -0.500000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -0.500000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.000000</startTime>
+				<value>1.000000 0.023529 0.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -1.000000</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -1.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

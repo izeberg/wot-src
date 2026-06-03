@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.daapi.view.meta.BasePrebattleListViewMeta import BasePrebattleListViewMeta
 from messenger.gui import events_dispatcher
 from messenger.gui.Scaleform.view.lobby import MESSENGER_VIEW_ALIAS

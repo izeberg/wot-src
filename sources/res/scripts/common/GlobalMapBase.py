@@ -1,4 +1,8 @@
-import struct, cPickle
+from __future__ import absolute_import
+import struct
+from future.moves import pickle
+from future.utils import viewitems
+from past.builtins import xrange
 from ops_pack import OpsUnpacker, packPascalString, unpackPascalString, initOpsFormatDef
 from debug_utils import LOG_DEBUG_DEV, LOG_CURRENT_EXCEPTION
 
@@ -13,8 +17,7 @@ class GM_ERROR:
 
 
 OK = GM_ERROR.OK
-GM_ERROR_NAMES = dict([ (v, k) for k, v in GM_ERROR.__dict__.iteritems() if not k.startswith('_')
-                      ])
+GM_ERROR_NAMES = {v:k for k, v in GM_ERROR.__dict__.items() if not k.startswith('_') if not k.startswith('_')}
 
 class GM_CLIENT_METHOD:
     SUBSCRIBE = 1
@@ -59,7 +62,7 @@ class GlobalMapBase(OpsUnpacker):
         s = ''
         if self.battles:
             s += 'battles(%s)' % len(self.battles)
-            for key, args in self.battles.iteritems():
+            for key, args in viewitems(self.battles):
                 s += '\n  [%s] %s' % (key, args)
 
         if self.battleUnits:
@@ -67,7 +70,7 @@ class GlobalMapBase(OpsUnpacker):
         return s
 
     def __str__(self):
-        return self.__repr__
+        return self.__repr__()
 
     def _persist(self):
         pass
@@ -79,17 +82,17 @@ class GlobalMapBase(OpsUnpacker):
         if self.battles:
             packed = struct.pack(self.FORMAT_HEADER, len(self.battles), len(self.battleUnits))
             fmt = self.FORMAT_ADD_BATTLE_HEADER
-            for battleID, data in self.battles.iteritems():
+            for battleID, data in viewitems(self.battles):
                 peripheryID = data['peripheryID']
                 createTime = data['createTime']
                 startTime = data['startTime']
                 isFinished = data['isFinished']
-                localizedData = packPascalString(cPickle.dumps(data['localizedData'], -1))
+                localizedData = packPascalString(pickle.dumps(data['localizedData'], -1))
                 packed += struct.pack(fmt, battleID, peripheryID, createTime, startTime, isFinished)
                 packed += localizedData
 
             fmt = self.FORMAT_ADD_BATTLE_UNIT_HEADER
-            for battleID, unitStr in self.battleUnits.iteritems():
+            for battleID, unitStr in viewitems(self.battleUnits):
                 packed += struct.pack(fmt, battleID, len(unitStr))
                 packed += unitStr
 
@@ -109,10 +112,10 @@ class GlobalMapBase(OpsUnpacker):
         offset = self.SIZE_HEADER
         sz = self.SIZE_ADD_BATTLE_HEADER
         fmt = self.FORMAT_ADD_BATTLE_HEADER
-        for i in xrange(lenBattles):
+        for _ in xrange(lenBattles):
             battleID, peripheryID, createTime, startTime, isFinished = struct.unpack_from(fmt, packedData, offset)
             localizedDataStr, localizedDataLen = unpackPascalString(packedData, offset + sz)
-            localizedData = cPickle.loads(localizedDataStr)
+            localizedData = pickle.loads(localizedDataStr)
             offset += sz + localizedDataLen
             self.battles[battleID] = {'peripheryID': peripheryID, 
                'createTime': createTime, 
@@ -123,7 +126,7 @@ class GlobalMapBase(OpsUnpacker):
         self.battleUnits = {}
         sz = self.SIZE_ADD_BATTLE_UNIT_HEADER
         fmt = self.FORMAT_ADD_BATTLE_UNIT_HEADER
-        for i in xrange(lenBattleUnits):
+        for _ in xrange(lenBattleUnits):
             battleID, unitStrLen = struct.unpack_from(fmt, packedData, offset)
             offset += sz
             unitStr = packedData[offset:offset + unitStrLen]
@@ -156,7 +159,7 @@ class GlobalMapBase(OpsUnpacker):
            'isFinished': False, 
            'localizedData': localizedData}
         packedData = struct.pack(self.FORMAT_ADD_BATTLE_HEADER, battleID, peripheryID, createTime, startTime, False)
-        packedData += packPascalString(cPickle.dumps(localizedData, -1))
+        packedData += packPascalString(pickle.dumps(localizedData, -1))
         self._appendOp(GM_OP.UNPACK_BATTLE, packedData)
 
     def _unpackBattle(self, packedData):
@@ -166,7 +169,7 @@ class GlobalMapBase(OpsUnpacker):
            'createTime': createTime, 
            'startTime': startTime, 
            'isFinished': isFinished, 
-           'localizedData': cPickle.loads(localizedDataStr)}
+           'localizedData': pickle.loads(localizedDataStr)}
         return packedData[self.SIZE_ADD_BATTLE_HEADER + localizedDataStrLen:]
 
     def _finishBattle(self, battleID):

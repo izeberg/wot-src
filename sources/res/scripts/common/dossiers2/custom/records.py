@@ -3484,7 +3484,7 @@ RECORDS = (
  (
   'singleAchievements', 'BattlePassCommonPr_19', 'p', 'B', 1),
  (
-  'singleAchievements', 'BPReserveAchievement_10', 'p', 'B', 1),
+  'singleAchievements', 'BattlePassCommonPr_20', 'p', 'B', 1),
  (
   'singleAchievements', 'BPReserveAchievement_1', 'p', 'B', 1),
  (
@@ -5469,7 +5469,7 @@ RECORD_DB_IDS = {('total', 'creationTime'): 68,
    ('singleAchievements', '15YearsOfService'): 2100, 
    ('singleAchievements', 'LunarNY2026CN'): 2101, 
    ('singleAchievements', 'BattlePassCommonPr_19'): 2019, 
-   ('singleAchievements', 'BPReserveAchievement_10'): 2020, 
+   ('singleAchievements', 'BattlePassCommonPr_20'): 2020, 
    ('singleAchievements', 'BPReserveAchievement_1'): 2102, 
    ('singleAchievements', 'BPReserveAchievement_2'): 2103, 
    ('singleAchievements', 'BPReserveAchievement_3'): 2104, 

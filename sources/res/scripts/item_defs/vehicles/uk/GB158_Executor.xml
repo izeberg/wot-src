@@ -844,7 +844,7 @@
 			</terrainResistance>
 			<brakeForce>15000</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>40</rotationSpeed>
+			<rotationSpeed>53</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.089
@@ -2502,19 +2502,22 @@
 				<slot>
 					<slotType>attachment</slotType>
 					<slotId>38000</slotId>
-					<position>0.770868 0.949565 -1.131574</position>
+					<position>1.372659 0.637376 0.262261</position>
 					<rotation>-0 -0 0</rotation>
 					<scale>1 1 1</scale>
 					<applyType>turret</applyType>
 					<size>medium</size>
+					<enableVisTunnel>true</enableVisTunnel>
+					<hangerId>5</hangerId>
+					<hangerRotation>
+						-0 1.047198 0
+						<!--BW_String-->
+					</hangerRotation>
 				</slot>
 				<slot>
 					<slotType>attachment</slotType>
 					<slotId>38001</slotId>
-					<position>
-						0 0.82711 0.844222
-						<!--BW_String-->
-					</position>
+					<position>0.187771 0.764149 1.046796</position>
 					<rotation>
 						-0.00002 -0 0
 						<!--BW_String-->
@@ -2522,6 +2525,8 @@
 					<scale>1 1 1</scale>
 					<applyType>gunMantlet</applyType>
 					<size>medium</size>
+					<enableVisTunnel>true</enableVisTunnel>
+					<hangerId>16</hangerId>
 				</slot>
 			</customizationSlots>
 			<wwturretRotatorSoundManual>tur_mech_trav</wwturretRotatorSoundManual>

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>vehicles/german/G118_VK4503/crash/lod4/Turret_01</nodefullVisual>
 	<tank>true</tank>
 	<materialNames/>
 	<visibilityBox>
 		<min>
-			-1.41079 -0.000000 -2.53882
+			-1.41079 -0.000041 -2.5388
 			<!--BW_String-->
 		</min>
 		<max>
-			1.22792 1.25424 1.49342
+			1.22792 1.2542 1.49344
 			<!--BW_String-->
 		</max>
 	</visibilityBox>
+	<nodefullVisual>vehicles/german/G118_VK4503/crash/lod4/Turret_01</nodefullVisual>
 </root>

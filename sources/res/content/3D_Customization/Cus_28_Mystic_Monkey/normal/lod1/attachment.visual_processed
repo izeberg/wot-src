@@ -8,24 +8,6 @@
 			<row2>0.000000 0.000000 1.000000</row2>
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
-		<node>
-			<identifier>nodes_01</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-			<node>
-				<identifier>HP_attachment</identifier>
-				<transform>
-					<row0>1.000000 0.000000 0.000000</row0>
-					<row1>0.000000 1.000000 0.000000</row1>
-					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 0.000000 0.000000</row3>
-				</transform>
-			</node>
-		</node>
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
@@ -38,8 +20,8 @@
 				<material>
 					<identifier>equipment</identifier>
 					<fx>shaders/std_effects/PBS_tank.fx</fx>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>0</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>112</materialKind>
 					<property>
 						diffuseMap
 						<Texture>content/3D_Customization/Cus_28_Mystic_Monkey/Monkey_AM.dds</Texture>
@@ -69,13 +51,14 @@
 						<Texture>content/3D_Customization/Cus_28_Mystic_Monkey/Monkey_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.001333 0.219941 0.040032</groupOrigin>
+				<groupOrigin>0.001333 0.269941 0.040032</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.155002 -0.182293 -0.163904</min>
-		<max>0.157668 0.639881 0.243968</max>
+		<min>-0.154719 -0.100000 -0.163116</min>
+		<max>0.157405 0.640018 0.244276</max>
 	</boundingBox>
+	<customBsp>true</customBsp>
 	<geometrySize>66932</geometrySize>
 </root>

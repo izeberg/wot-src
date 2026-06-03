@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<visibilityBox>
-		<min>-0.217031 -0.200023 -0.289999</min>
-		<max>0.217031 0.767500 0.283751</max>
+		<min>-0.217031 -0.100023 -0.289999</min>
+		<max>0.217031 0.748281 0.283751</max>
 	</visibilityBox>
 	<parent>content/3D_Customization/Cus_171_Lunar_Fireworks/normal/lod1/Cus_171_Lunar_Fireworks_01</parent>
 	<extent>32.000000</extent>
-	<nodefullVisual>content/3D_Customization/Cus_171_Lunar_Fireworks/normal/lod0/Cus_171_Lunar_Fireworks_01</nodefullVisual>
 	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_171_Lunar_Fireworks/normal/lod0/Cus_171_Lunar_Fireworks_01</nodefullVisual>
 </root>

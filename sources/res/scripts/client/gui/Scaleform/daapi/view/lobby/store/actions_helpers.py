@@ -1,5 +1,7 @@
+from __future__ import absolute_import, division
 import operator, time
 from collections import namedtuple
+from future.utils import viewitems, viewvalues
 import constants, nations
 from gui.Scaleform.locale.QUESTS import QUESTS
 from gui.Scaleform.locale.RES_ICONS import RES_ICONS
@@ -238,7 +240,7 @@ class ActionInfo(EventInfoModel):
     def _getPackedDiscounts(self, sorting=False):
         if not self._packedDiscounts:
             self._packedDiscounts = {}
-            for key, discount in self.discount.packDiscounts(sorting=sorting).iteritems():
+            for key, discount in viewitems(self.discount.packDiscounts(sorting=sorting)):
                 if discount.discountType == _DT.MULTIPLIER and not (discount.discountValue == 0 or discount.discountValue == 1):
                     self._packedDiscounts[key] = discount
                 elif discount.discountValue > 0:
@@ -637,7 +639,7 @@ class EquipmentActionInfo(ActionInfo):
     def getTableData(self):
         items = self._getPackedDiscounts()
         res = []
-        for _, data in items.iteritems():
+        for data in viewvalues(items):
             equip = data.discountName
             item = {'icon': '', 
                'additionalIcon': '', 
@@ -663,7 +665,7 @@ class OptDeviceActionInfo(ActionInfo):
     def getTableData(self):
         items = self._getPackedDiscounts()
         res = []
-        for _, data in items.iteritems():
+        for data in viewvalues(items):
             optDevice = data.discountName
             item = {'icon': '', 
                'additionalIcon': '', 
@@ -738,7 +740,7 @@ class C11nPriceGroupPriceActionInfo(ActionInfo):
     def getTableData(self):
         items = self._getPackedDiscounts()
         res = []
-        for data in items.itervalues():
+        for data in viewvalues(items):
             c11n = data.discountName
             item = {'icon': '', 
                'additionalIcon': '', 
@@ -1063,7 +1065,7 @@ def getAnnouncedActionInfo(info):
 
 def _parseAction(event):
     modifiers = event.getActions()
-    for modifierName, modifierData in modifiers.iteritems():
+    for modifierName, modifierData in viewitems(modifiers):
         for actionData in modifierData:
             modifier = getModifierObj(modifierName, event, actionData)
             if modifier is not None:

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<tank>true</tank>
-	<nodefullVisual>content/3D_Customization/Cus_104_A15_Deer_mascot/normal/lod1/Cus_104_A15_Deer_mascot</nodefullVisual>
 	<parent>content/3D_Customization/Cus_104_A15_Deer_mascot/normal/lod2/Cus_104_A15_Deer_mascot</parent>
 	<extent>64.000000</extent>
 	<visibilityBox>
 		<min>-0.208475 -0.200555 -0.280809</min>
 		<max>0.208472 0.733253 0.686154</max>
 	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/Cus_104_A15_Deer_mascot/normal/lod1/Cus_104_A15_Deer_mascot</nodefullVisual>
 </root>

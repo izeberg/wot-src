@@ -209,6 +209,8 @@ package net.wg.gui.lobby.settings.config
       
       public static const VEHICLE_DUST_ENABLED:String = "VEHICLE_DUST_ENABLED";
       
+      public static const VISIBILITY_TUNNEL_ENABLED:String = "VISIBILITY_TUNNEL_ENABLED";
+      
       public static const DRR_AUTOSCALER_ENABLED:String = "DRR_AUTOSCALER_ENABLED";
       
       public static const TESSELLATION_SUPPORTED:String = "tessellationSupported";

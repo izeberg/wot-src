@@ -115,7 +115,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							-0 2.36549 -0
+							-0 2.93755 0
 							<!--BW_String-->
 						</value>
 					</property>
@@ -131,11 +131,14 @@
 					</property>
 					<property>
 						<name>Scale</name>
-						<value>1 1 1</value>
+						<value>
+							0.9 0.9 0.9
+							<!--BW_String-->
+						</value>
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>0 0 0</value>
+						<value>-0 0 0</value>
 					</property>
 				</config>
 			</component>
@@ -334,6 +337,14 @@
 						<name>Cast Shadows</name>
 						<value>1</value>
 					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -348,6 +359,14 @@
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -384,6 +403,18 @@
 						<value>0</value>
 					</property>
 				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>BW::VisibilityTunnelComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>95fac478-a326-462b-a215-e05a769f6b1d</UUID>
+				<flags>3</flags>
+			</component>
+			<component>
+				<UUID>05555072-61b6-4467-afd8-73318f960b2a</UUID>
+				<flags>3</flags>
 			</component>
 		</ComponentPool>
 		<ComponentPool>

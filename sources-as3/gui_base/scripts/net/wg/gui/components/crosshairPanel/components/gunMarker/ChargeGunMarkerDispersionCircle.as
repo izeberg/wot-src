@@ -51,6 +51,11 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker
       
       override protected function draw() : void
       {
+         if(currMixingMC != null && isInvalid(GunMarkerConsts.GUN_MIXING_TYPE_VALIDATION))
+         {
+            GTweener.removeTweens(currMixingMC);
+            currMixingMC.alpha = mixingAlpha;
+         }
          super.draw();
          if(currMixingMC != null && isInvalid(GunMarkerConsts.GUN_MIXING_TYPE_VALIDATION))
          {
@@ -153,12 +158,6 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker
          }
          this._isChargeGunActive = param1;
          invalidate(GunMarkerConsts.CHARGE_GUN_ACTIVE_VALIDATION);
-      }
-      
-      override public function setType(param1:Number) : void
-      {
-         invalidate(GunMarkerConsts.GUN_MIXING_TYPE_VALIDATION);
-         super.setType(param1);
       }
       
       private function onFadeTweenComplete() : void

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/poland/Pl39_Husarz/normal/lod2/Chassis</nodefullVisual>
+	<parent>vehicles/poland/Pl39_Husarz/normal/lod3/Chassis</parent>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.800095 -0.000402 -4.313582</min>
+		<max>1.800007 1.094577 4.218134</max>
+	</visibilityBox>
+</root>

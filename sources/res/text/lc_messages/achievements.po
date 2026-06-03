@@ -182,15 +182,6 @@ msgstr "You have been in the game since %(regDate)s"
 msgid "BPReserveAchievement_1"
 msgstr "BP Reserve Achievement 1"
 
-msgid "BPReserveAchievement_10"
-msgstr "BP Reserve Achievement 10"
-
-msgid "BPReserveAchievement_10_condition"
-msgstr "• Awarded for completing the Progression."
-
-msgid "BPReserveAchievement_10_descr"
-msgstr "Awarded for your achievements during game"
-
 msgid "BPReserveAchievement_1_condition"
 msgstr "• Awarded for completing the Progression."
 
@@ -472,6 +463,15 @@ msgstr "Complete the Main Progression during Battle Pass Season 1."
 
 msgid "BattlePassCommonPr_2"
 msgstr "Long Road to Glory"
+
+msgid "BattlePassCommonPr_20"
+msgstr "Desert Drill"
+
+msgid "BattlePassCommonPr_20_condition"
+msgstr "• Awarded for completing all three Chapters."
+
+msgid "BattlePassCommonPr_20_descr"
+msgstr "Awarded for your achievements during Battle Pass Season XX."
 
 msgid "BattlePassCommonPr_2_condition"
 msgstr "• The Main Progression consists of 45 Stages."
@@ -3700,7 +3700,7 @@ msgstr ""
 "• Can be obtained in Random Battles only."
 
 msgid "medalAntiSpgFire_descr"
-msgstr "In a battle, destroy all enemy SPGs (at least 2) with an SPG."
+msgstr "In a battle, destroy 2 enemy SPGs with an SPG."
 
 msgid "medalBillotte"
 msgstr "Billotte's Medal"
@@ -3843,7 +3843,7 @@ msgstr ""
 "• Can be obtained in Random Battles only."
 
 msgid "medalBurda_descr"
-msgstr "Destroy 3 enemy SPGs in one battle."
+msgstr "Destroy 2 enemy SPGs in one battle."
 
 msgid "medalBurda_heroInfo"
 msgstr ""
@@ -3917,7 +3917,8 @@ msgstr "Dumitru's Medal"
 msgid "medalDumitru_condition"
 msgstr ""
 "• Drive a tank or a tank destroyer.\n"
-"• Can be obtained in Random Battles only."
+"• Can be obtained in Random Battles only.\n"
+"• Awarded before Update 2.3."
 
 msgid "medalDumitru_descr"
 msgstr "Destroy 3 enemy SPGs in one battle."
@@ -4294,7 +4295,7 @@ msgstr ""
 "• Can be obtained in Random Battles only."
 
 msgid "medalTamadaYoshio_descr"
-msgstr "Destroy at least 2 enemy SPGs in a light tank in one battle."
+msgstr "Destroy 2 enemy SPGs in a light tank in one battle."
 
 msgid "medalTamadaYoshio_heroInfo"
 msgstr ""

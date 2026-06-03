@@ -47,12 +47,12 @@
 						<Texture>content/3D_Customization/Cus_57_ArmiesA_Machinegun/Cus_57_ArmiesA_Machinegun_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.050055 0.273286 0.239287</groupOrigin>
+				<groupOrigin>-0.050055 0.323286 0.239287</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.428770 -0.200000 -0.625690</min>
+		<min>-0.428770 -0.100000 -0.625690</min>
 		<max>0.328660 0.746572 1.104264</max>
 	</boundingBox>
 	<customBsp>true</customBsp>

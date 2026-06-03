@@ -820,6 +820,12 @@ class AmmoController(MethodsRules, ViewComponentsController):
             self.__gunSettings.reloadEffect.reloadEnd()
         return
 
+    def getRelloadEffect(self):
+        result = None
+        if self.__gunSettings is not None and self.__gunSettings.reloadEffect is not None:
+            result = self.__gunSettings.reloadEffect.getRelloadEffect()
+        return result
+
     def getGunReloadingState(self):
         return self._reloadingState.getSnapshot()
 

@@ -2,6 +2,10 @@
 <root>
 	<parent>content/3D_Customization/Cus_210_OB_Gong/normal/lod2/Cus_210_OB_Gong</parent>
 	<extent>64.000000</extent>
-	<nodelessVisual>content/3D_Customization/Cus_210_OB_Gong/normal/lod1/Cus_210_OB_Gong</nodelessVisual>
 	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_210_OB_Gong/normal/lod1/Cus_210_OB_Gong</nodefullVisual>
+	<visibilityBox>
+		<min>-0.260380 -0.100001 -0.063849</min>
+		<max>0.260380 0.688756 0.063858</max>
+	</visibilityBox>
 </root>

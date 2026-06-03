@@ -1,8 +1,10 @@
+from __future__ import absolute_import
+from typing import Dict, Optional, FrozenSet
+from future.utils import viewitems
 from arena_bonus_type_caps import ALLOWED_ARENA_BONUS_TYPE_CAPS
 from constants import ARENA_BONUS_TYPE_NAMES
 from soft_exception import SoftException
 from extension_utils import ResMgr
-from typing import Dict, Optional, FrozenSet
 _CONFIG_FILE = 'scripts/item_defs/bonus_caps_config.xml'
 _XML_NAMESPACE = 'xmlns:xmlref'
 
@@ -12,7 +14,7 @@ def readConfig(verbose=False):
 
 
 def _readArenaTypes(section):
-    config = dict()
+    config = {}
     if section is None:
         return config
     else:
@@ -29,7 +31,7 @@ def _readArenaTypes(section):
             config[nameID] = _readBonuses(data)
 
         missedArenaTypes = []
-        for arenaType, arenaTypeID in ARENA_BONUS_TYPE_NAMES.iteritems():
+        for arenaType, arenaTypeID in viewitems(ARENA_BONUS_TYPE_NAMES):
             if arenaTypeID not in config and isinstance(arenaTypeID, int):
                 missedArenaTypes.append(arenaType)
 

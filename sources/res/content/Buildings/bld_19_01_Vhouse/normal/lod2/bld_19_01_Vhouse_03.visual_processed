@@ -22,7 +22,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 1.000000 0.000000</row1>
 					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>-2.487214 6.592323 -2.414770</row3>
+					<row3>0.000000 0.000000 0.000000</row3>
 				</transform>
 			</node>
 			<node>
@@ -31,7 +31,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 1.000000 0.000000</row1>
 					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>-4.732950 6.713062 2.801134</row3>
+					<row3>0.000000 0.000000 0.000000</row3>
 				</transform>
 			</node>
 			<node>
@@ -40,53 +40,17 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 1.000000 0.000000</row1>
 					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>4.249996 4.419030 0.000000</row3>
+					<row3>0.000000 0.000000 0.000000</row3>
 				</transform>
 			</node>
 			<node>
-				<identifier>lod2</identifier>
+				<identifier>lod0</identifier>
 				<transform>
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 1.000000 0.000000</row1>
 					<row2>0.000000 0.000000 1.000000</row2>
 					<row3>0.000000 0.000000 0.000000</row3>
 				</transform>
-				<node>
-					<identifier>d1_2</identifier>
-					<transform>
-						<row0>1.000000 0.000000 0.000000</row0>
-						<row1>0.000000 1.000000 0.000000</row1>
-						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>0.000000 0.000000 0.000000</row3>
-					</transform>
-				</node>
-				<node>
-					<identifier>d2_0</identifier>
-					<transform>
-						<row0>1.000000 0.000000 0.000000</row0>
-						<row1>0.000000 1.000000 0.000000</row1>
-						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>0.000000 0.000000 0.000000</row3>
-					</transform>
-				</node>
-				<node>
-					<identifier>d2_1</identifier>
-					<transform>
-						<row0>1.000000 0.000000 0.000000</row0>
-						<row1>0.000000 1.000000 0.000000</row1>
-						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>0.000000 0.000000 0.000000</row3>
-					</transform>
-				</node>
-				<node>
-					<identifier>d2_2</identifier>
-					<transform>
-						<row0>1.000000 0.000000 0.000000</row0>
-						<row1>0.000000 1.000000 0.000000</row1>
-						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>0.000000 0.000000 0.000000</row3>
-					</transform>
-				</node>
 				<node>
 					<identifier>d3_0</identifier>
 					<transform>
@@ -231,6 +195,15 @@
 						<row3>0.000000 0.000000 0.000000</row3>
 					</transform>
 				</node>
+				<node>
+					<identifier>s4_leaves</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
 			</node>
 		</node>
 	</node>
@@ -243,152 +216,6 @@
 			<primitive>indices</primitive>
 			<primitiveGroup>
 				0
-				<material>
-					<identifier>s_nd2</identifier>
-					<collisionFlags>255</collisionFlags>
-					<materialKind>111</materialKind>
-					<fx>shaders/std_effects/PBS_ext_detail.fx</fx>
-					<property>
-						g_detailMap
-						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_detalimap.dds</Texture>
-					</property>
-					<property>
-						diffuseMap
-						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_01_Vhouse_01-06_details_AM.dds</Texture>
-					</property>
-					<property>
-						normalMap
-						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_01_Vhouse_01-06_details_ANM.dds</Texture>
-					</property>
-					<property>
-						metallicGlossMap
-						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_01_Vhouse_01-06_details_GMM.dds</Texture>
-					</property>
-					<property>
-						g_enableTerrainBlending
-						<Bool>true</Bool>
-					</property>
-					<property>
-						g_detailInfluences
-						<Vector4>0.700000 0.700000 0.700000 1.000000</Vector4>
-					</property>
-					<property>
-						g_detailRejectTiling
-						<Vector4>2.000000 6.500000 10.000000 10.000000</Vector4>
-					</property>
-				</material>
-				<groupOrigin>0.086077 4.744830 -0.452217</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
-				1
-				<material>
-					<identifier>s_nd0</identifier>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>111</materialKind>
-					<fx>shaders/std_effects/PBS_tiled.fx</fx>
-					<property>
-						albedoHeightTile0
-						<Texture>content/Buildings/00_Tiles/dds/Bricks_stone_05_1024_AM.dds</Texture>
-					</property>
-					<property>
-						albedoHeightTile1
-						<Texture>content/Buildings/00_Tiles/dds/Plaster_09_1024_AM.dds</Texture>
-					</property>
-					<property>
-						albedoHeightTile2
-						<Texture>content/Buildings/00_Tiles/dds/Plaster_11_1024_AM.dds</Texture>
-					</property>
-					<property>
-						blendMask
-						<Texture>content/Buildings/bld_19_01_Vhouse/bld_19_01_Vhouse_03_blend.png</Texture>
-					</property>
-					<property>
-						colorTex
-						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
-					</property>
-					<property>
-						dirtMap
-						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_dirt_01_DM.dds</Texture>
-					</property>
-					<property>
-						g_enableTerrainBlending
-						<Bool>true</Bool>
-					</property>
-					<property>
-						g_fakeShadowsAndDetailParams
-						<Vector4>0.250000 0.300000 1.000000 0.000000</Vector4>
-					</property>
-					<property>
-						metallicAOTile0
-						<Texture>content/Buildings/00_Tiles/dds/Bricks_stone_05_1024_MAO.dds</Texture>
-					</property>
-					<property>
-						metallicAOTile1
-						<Texture>content/Buildings/00_Tiles/dds/Plaster_09_1024_MAO.dds</Texture>
-					</property>
-					<property>
-						metallicAOTile2
-						<Texture>content/Buildings/00_Tiles/dds/Plaster_11_1024_MAO.dds</Texture>
-					</property>
-					<property>
-						normalGlossSpecTile0
-						<Texture>content/Buildings/00_Tiles/dds/Bricks_stone_05_1024_GBMT.dds</Texture>
-					</property>
-					<property>
-						normalGlossSpecTile1
-						<Texture>content/Buildings/00_Tiles/dds/Plaster_09_1024_GBMT.dds</Texture>
-					</property>
-					<property>
-						normalGlossSpecTile2
-						<Texture>content/Buildings/00_Tiles/dds/Plaster_11_1024_GBMT.dds</Texture>
-					</property>
-				</material>
-				<groupOrigin>0.016931 4.844541 -0.414672</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
-				2
-				<material>
-					<identifier>s_nd3</identifier>
-					<collisionFlags>255</collisionFlags>
-					<materialKind>112</materialKind>
-					<fx>shaders/std_effects/PBS_ext_detail.fx</fx>
-					<property>
-						g_detailMap
-						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_detalimap.dds</Texture>
-					</property>
-					<property>
-						diffuseMap
-						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_01_Vhouse_01-06_railing_AM.dds</Texture>
-					</property>
-					<property>
-						normalMap
-						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_01_Vhouse_01-06_railing_ANM.dds</Texture>
-					</property>
-					<property>
-						metallicGlossMap
-						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_01_Vhouse_01-06_railing_GMM.dds</Texture>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>4</Int>
-					</property>
-					<property>
-						g_enableTerrainBlending
-						<Bool>true</Bool>
-					</property>
-					<property>
-						g_detailInfluences
-						<Vector4>0.700000 0.700000 0.700000 1.000000</Vector4>
-					</property>
-				</material>
-				<groupOrigin>-3.296859 5.197240 -5.295048</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
-				3
 				<material>
 					<identifier>n_stone2_3</identifier>
 					<collisionFlags>255</collisionFlags>
@@ -426,147 +253,7 @@
 				<groupOrigin>3.793874 5.939737 -0.029345</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				4
-				<material>
-					<identifier>n_stone1_3</identifier>
-					<collisionFlags>255</collisionFlags>
-					<materialKind>75</materialKind>
-					<fx>shaders/std_effects/PBS_tiled.fx</fx>
-					<property>
-						albedoHeightTile0
-						<Texture>content/Buildings/00_Tiles/dds/Roof_26_Tile_01_1024_AM.dds</Texture>
-					</property>
-					<property>
-						albedoHeightTile1
-						<Texture>content/Buildings/00_Tiles/dds/Roof_26_Tile_01_crashed_1024_AM.dds</Texture>
-					</property>
-					<property>
-						albedoHeightTile2
-						<Texture>content/Buildings/00_Tiles/dds/Plaster_09_1024_AM.dds</Texture>
-					</property>
-					<property>
-						blendMask
-						<Texture>content/Buildings/bld_19_01_Vhouse/bld_19_01_Vhouse_03_blend.png</Texture>
-					</property>
-					<property>
-						colorTex
-						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
-					</property>
-					<property>
-						dirtMap
-						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_dirt_01_DM.dds</Texture>
-					</property>
-					<property>
-						g_enableTerrainBlending
-						<Bool>true</Bool>
-					</property>
-					<property>
-						g_fakeShadowsAndDetailParams
-						<Vector4>0.250000 0.300000 1.000000 0.000000</Vector4>
-					</property>
-					<property>
-						g_tile0Tint
-						<Vector4>0.972549 0.988235 0.886275 1.000000</Vector4>
-					</property>
-					<property>
-						g_tile1Tint
-						<Vector4>0.972549 0.988235 0.886275 1.000000</Vector4>
-					</property>
-					<property>
-						metallicAOTile0
-						<Texture>content/Buildings/00_Tiles/dds/Roof_26_Tile_01_1024_MAO.dds</Texture>
-					</property>
-					<property>
-						metallicAOTile1
-						<Texture>content/Buildings/00_Tiles/dds/Roof_26_Tile_01_crashed_1024_MAO.dds</Texture>
-					</property>
-					<property>
-						metallicAOTile2
-						<Texture>content/Buildings/00_Tiles/dds/Plaster_09_1024_MAO.dds</Texture>
-					</property>
-					<property>
-						normalGlossSpecTile0
-						<Texture>content/Buildings/00_Tiles/dds/Roof_26_Tile_01_1024_GBMT.dds</Texture>
-					</property>
-					<property>
-						normalGlossSpecTile1
-						<Texture>content/Buildings/00_Tiles/dds/Roof_26_Tile_01_crashed_1024_GBMT.dds</Texture>
-					</property>
-					<property>
-						normalGlossSpecTile2
-						<Texture>content/Buildings/00_Tiles/dds/Plaster_09_1024_GBMT.dds</Texture>
-					</property>
-				</material>
-				<groupOrigin>3.936091 7.122167 0.086236</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
-				5
-				<material>
-					<identifier>n_stone0_3</identifier>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>75</materialKind>
-					<fx>shaders/std_effects/PBS_tiled.fx</fx>
-					<property>
-						albedoHeightTile0
-						<Texture>content/Buildings/00_Tiles/dds/Bricks_stone_05_1024_AM.dds</Texture>
-					</property>
-					<property>
-						albedoHeightTile1
-						<Texture>content/Buildings/00_Tiles/dds/Plaster_09_1024_AM.dds</Texture>
-					</property>
-					<property>
-						albedoHeightTile2
-						<Texture>content/Buildings/00_Tiles/dds/Plaster_11_1024_AM.dds</Texture>
-					</property>
-					<property>
-						blendMask
-						<Texture>content/Buildings/bld_19_01_Vhouse/bld_19_01_Vhouse_03_blend.png</Texture>
-					</property>
-					<property>
-						colorTex
-						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
-					</property>
-					<property>
-						dirtMap
-						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_dirt_01_DM.dds</Texture>
-					</property>
-					<property>
-						g_enableTerrainBlending
-						<Bool>true</Bool>
-					</property>
-					<property>
-						g_fakeShadowsAndDetailParams
-						<Vector4>0.250000 0.300000 1.000000 0.000000</Vector4>
-					</property>
-					<property>
-						metallicAOTile0
-						<Texture>content/Buildings/00_Tiles/dds/Bricks_stone_05_1024_MAO.dds</Texture>
-					</property>
-					<property>
-						metallicAOTile1
-						<Texture>content/Buildings/00_Tiles/dds/Plaster_09_1024_MAO.dds</Texture>
-					</property>
-					<property>
-						metallicAOTile2
-						<Texture>content/Buildings/00_Tiles/dds/Plaster_11_1024_MAO.dds</Texture>
-					</property>
-					<property>
-						normalGlossSpecTile0
-						<Texture>content/Buildings/00_Tiles/dds/Bricks_stone_05_1024_GBMT.dds</Texture>
-					</property>
-					<property>
-						normalGlossSpecTile1
-						<Texture>content/Buildings/00_Tiles/dds/Plaster_09_1024_GBMT.dds</Texture>
-					</property>
-					<property>
-						normalGlossSpecTile2
-						<Texture>content/Buildings/00_Tiles/dds/Plaster_11_1024_GBMT.dds</Texture>
-					</property>
-				</material>
-				<groupOrigin>4.107101 5.188956 0.045651</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
-				6
+				1
 				<material>
 					<identifier>n_stone1_2</identifier>
 					<collisionFlags>255</collisionFlags>
@@ -640,147 +327,45 @@
 				<groupOrigin>-2.691958 10.385052 2.874569</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				7
+				2
 				<material>
-					<identifier>n_stone0_2</identifier>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>74</materialKind>
-					<fx>shaders/std_effects/PBS_tiled.fx</fx>
-					<property>
-						albedoHeightTile0
-						<Texture>content/Buildings/00_Tiles/dds/Bricks_stone_05_1024_AM.dds</Texture>
-					</property>
-					<property>
-						albedoHeightTile1
-						<Texture>content/Buildings/00_Tiles/dds/Plaster_09_1024_AM.dds</Texture>
-					</property>
-					<property>
-						albedoHeightTile2
-						<Texture>content/Buildings/00_Tiles/dds/Plaster_11_1024_AM.dds</Texture>
-					</property>
-					<property>
-						blendMask
-						<Texture>content/Buildings/bld_19_01_Vhouse/bld_19_01_Vhouse_03_blend.png</Texture>
-					</property>
-					<property>
-						colorTex
-						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
-					</property>
-					<property>
-						dirtMap
-						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_dirt_01_DM.dds</Texture>
-					</property>
-					<property>
-						g_enableTerrainBlending
-						<Bool>true</Bool>
-					</property>
-					<property>
-						g_fakeShadowsAndDetailParams
-						<Vector4>0.250000 0.300000 1.000000 0.000000</Vector4>
-					</property>
-					<property>
-						metallicAOTile0
-						<Texture>content/Buildings/00_Tiles/dds/Bricks_stone_05_1024_MAO.dds</Texture>
-					</property>
-					<property>
-						metallicAOTile1
-						<Texture>content/Buildings/00_Tiles/dds/Plaster_09_1024_MAO.dds</Texture>
-					</property>
-					<property>
-						metallicAOTile2
-						<Texture>content/Buildings/00_Tiles/dds/Plaster_11_1024_MAO.dds</Texture>
-					</property>
-					<property>
-						normalGlossSpecTile0
-						<Texture>content/Buildings/00_Tiles/dds/Bricks_stone_05_1024_GBMT.dds</Texture>
-					</property>
-					<property>
-						normalGlossSpecTile1
-						<Texture>content/Buildings/00_Tiles/dds/Plaster_09_1024_GBMT.dds</Texture>
-					</property>
-					<property>
-						normalGlossSpecTile2
-						<Texture>content/Buildings/00_Tiles/dds/Plaster_11_1024_GBMT.dds</Texture>
-					</property>
-				</material>
-				<groupOrigin>-4.297335 7.151790 2.998804</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
-				8
-				<material>
-					<identifier>n_stone1_1</identifier>
+					<identifier>s_nd2</identifier>
 					<collisionFlags>255</collisionFlags>
-					<materialKind>73</materialKind>
-					<fx>shaders/std_effects/PBS_tiled.fx</fx>
+					<materialKind>111</materialKind>
+					<fx>shaders/std_effects/PBS_ext_detail.fx</fx>
 					<property>
-						albedoHeightTile0
-						<Texture>content/Buildings/00_Tiles/dds/Roof_26_Tile_01_1024_AM.dds</Texture>
+						g_detailMap
+						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_detalimap.dds</Texture>
 					</property>
 					<property>
-						albedoHeightTile1
-						<Texture>content/Buildings/00_Tiles/dds/Roof_26_Tile_01_crashed_1024_AM.dds</Texture>
+						diffuseMap
+						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_01_Vhouse_01-06_details_AM.dds</Texture>
 					</property>
 					<property>
-						albedoHeightTile2
-						<Texture>content/Buildings/00_Tiles/dds/Plaster_09_1024_AM.dds</Texture>
+						normalMap
+						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_01_Vhouse_01-06_details_ANM.dds</Texture>
 					</property>
 					<property>
-						blendMask
-						<Texture>content/Buildings/bld_19_01_Vhouse/bld_19_01_Vhouse_03_blend.png</Texture>
-					</property>
-					<property>
-						colorTex
-						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
-					</property>
-					<property>
-						dirtMap
-						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_dirt_01_DM.dds</Texture>
+						metallicGlossMap
+						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_01_Vhouse_01-06_details_GMM.dds</Texture>
 					</property>
 					<property>
 						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>
 					<property>
-						g_fakeShadowsAndDetailParams
-						<Vector4>0.250000 0.300000 1.000000 0.000000</Vector4>
+						g_detailInfluences
+						<Vector4>0.700000 0.700000 0.700000 1.000000</Vector4>
 					</property>
 					<property>
-						g_tile0Tint
-						<Vector4>0.972549 0.988235 0.886275 1.000000</Vector4>
-					</property>
-					<property>
-						g_tile1Tint
-						<Vector4>0.972549 0.988235 0.886275 1.000000</Vector4>
-					</property>
-					<property>
-						metallicAOTile0
-						<Texture>content/Buildings/00_Tiles/dds/Roof_26_Tile_01_1024_MAO.dds</Texture>
-					</property>
-					<property>
-						metallicAOTile1
-						<Texture>content/Buildings/00_Tiles/dds/Roof_26_Tile_01_crashed_1024_MAO.dds</Texture>
-					</property>
-					<property>
-						metallicAOTile2
-						<Texture>content/Buildings/00_Tiles/dds/Plaster_09_1024_MAO.dds</Texture>
-					</property>
-					<property>
-						normalGlossSpecTile0
-						<Texture>content/Buildings/00_Tiles/dds/Roof_26_Tile_01_1024_GBMT.dds</Texture>
-					</property>
-					<property>
-						normalGlossSpecTile1
-						<Texture>content/Buildings/00_Tiles/dds/Roof_26_Tile_01_crashed_1024_GBMT.dds</Texture>
-					</property>
-					<property>
-						normalGlossSpecTile2
-						<Texture>content/Buildings/00_Tiles/dds/Plaster_09_1024_GBMT.dds</Texture>
+						g_detailRejectTiling
+						<Vector4>2.000000 6.500000 10.000000 10.000000</Vector4>
 					</property>
 				</material>
-				<groupOrigin>-2.691457 10.408319 -1.807054</groupOrigin>
+				<groupOrigin>0.086077 4.744830 -0.452217</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				9
+				3
 				<material>
 					<identifier>n_stone0_1</identifier>
 					<collisionFlags>0</collisionFlags>
@@ -846,85 +431,53 @@
 				<groupOrigin>-2.743779 9.105877 -1.063733</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				10
+				4
 				<material>
-					<identifier>d_stone1_3</identifier>
+					<identifier>s_nd3</identifier>
 					<collisionFlags>255</collisionFlags>
-					<materialKind>89</materialKind>
-					<fx>shaders/std_effects/PBS_tiled.fx</fx>
+					<materialKind>112</materialKind>
+					<fx>shaders/std_effects/PBS_ext_detail.fx</fx>
 					<property>
-						albedoHeightTile0
-						<Texture>content/Buildings/00_Tiles/dds/Roof_26_Tile_01_1024_AM.dds</Texture>
+						g_detailMap
+						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_detalimap.dds</Texture>
 					</property>
 					<property>
-						albedoHeightTile1
-						<Texture>content/Buildings/00_Tiles/dds/Roof_26_Tile_01_crashed_1024_AM.dds</Texture>
+						diffuseMap
+						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_01_Vhouse_01-06_railing_AM.dds</Texture>
 					</property>
 					<property>
-						albedoHeightTile2
-						<Texture>content/Buildings/00_Tiles/dds/Plaster_09_1024_AM.dds</Texture>
+						normalMap
+						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_01_Vhouse_01-06_railing_ANM.dds</Texture>
 					</property>
 					<property>
-						blendMask
-						<Texture>content/Buildings/bld_19_01_Vhouse/bld_19_01_Vhouse_03_blend.png</Texture>
+						metallicGlossMap
+						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_01_Vhouse_01-06_railing_GMM.dds</Texture>
 					</property>
 					<property>
-						colorTex
-						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
+						alphaTestEnable
+						<Bool>true</Bool>
 					</property>
 					<property>
-						dirtMap
-						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_dirt_01_DM.dds</Texture>
+						alphaReference
+						<Int>4</Int>
 					</property>
 					<property>
 						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>
 					<property>
-						g_fakeShadowsAndDetailParams
-						<Vector4>0.250000 0.300000 1.000000 0.000000</Vector4>
-					</property>
-					<property>
-						g_tile0Tint
-						<Vector4>0.972549 0.988235 0.886275 1.000000</Vector4>
-					</property>
-					<property>
-						g_tile1Tint
-						<Vector4>0.972549 0.988235 0.886275 1.000000</Vector4>
-					</property>
-					<property>
-						metallicAOTile0
-						<Texture>content/Buildings/00_Tiles/dds/Roof_26_Tile_01_1024_MAO.dds</Texture>
-					</property>
-					<property>
-						metallicAOTile1
-						<Texture>content/Buildings/00_Tiles/dds/Roof_26_Tile_01_crashed_1024_MAO.dds</Texture>
-					</property>
-					<property>
-						metallicAOTile2
-						<Texture>content/Buildings/00_Tiles/dds/Plaster_09_1024_MAO.dds</Texture>
-					</property>
-					<property>
-						normalGlossSpecTile0
-						<Texture>content/Buildings/00_Tiles/dds/Roof_26_Tile_01_1024_GBMT.dds</Texture>
-					</property>
-					<property>
-						normalGlossSpecTile1
-						<Texture>content/Buildings/00_Tiles/dds/Roof_26_Tile_01_crashed_1024_GBMT.dds</Texture>
-					</property>
-					<property>
-						normalGlossSpecTile2
-						<Texture>content/Buildings/00_Tiles/dds/Plaster_09_1024_GBMT.dds</Texture>
+						g_detailInfluences
+						<Vector4>0.700000 0.700000 0.700000 1.000000</Vector4>
 					</property>
 				</material>
-				<groupOrigin>3.297006 5.689233 -0.016001</groupOrigin>
+				<groupOrigin>-3.296859 5.197240 -5.295048</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				11
+				5
 				<material>
-					<identifier>d_stone0_3</identifier>
+					<identifier>d_stone0_1</identifier>
 					<collisionFlags>0</collisionFlags>
-					<materialKind>89</materialKind>
+					<materialKind>87</materialKind>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<property>
 						albedoHeightTile0
@@ -983,48 +536,10 @@
 						<Texture>content/Buildings/00_Tiles/dds/Plaster_11_1024_GBMT.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>3.884453 4.292583 0.053612</groupOrigin>
+				<groupOrigin>-2.743779 8.434977 -1.893393</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				12
-				<material>
-					<identifier>d_stone2_2</identifier>
-					<collisionFlags>255</collisionFlags>
-					<materialKind>88</materialKind>
-					<fx>shaders/std_effects/PBS_ext_detail.fx</fx>
-					<property>
-						g_detailMap
-						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_detalimap.dds</Texture>
-					</property>
-					<property>
-						diffuseMap
-						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_01_Vhouse_01-06_details_AM.dds</Texture>
-					</property>
-					<property>
-						normalMap
-						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_01_Vhouse_01-06_details_ANM.dds</Texture>
-					</property>
-					<property>
-						metallicGlossMap
-						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_01_Vhouse_01-06_details_GMM.dds</Texture>
-					</property>
-					<property>
-						g_enableTerrainBlending
-						<Bool>true</Bool>
-					</property>
-					<property>
-						g_detailInfluences
-						<Vector4>0.700000 0.700000 0.700000 1.000000</Vector4>
-					</property>
-					<property>
-						g_detailRejectTiling
-						<Vector4>2.000000 6.500000 10.000000 10.000000</Vector4>
-					</property>
-				</material>
-				<groupOrigin>-2.970936 6.442124 3.075109</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
-				13
+				6
 				<material>
 					<identifier>d_stone1_2</identifier>
 					<collisionFlags>255</collisionFlags>
@@ -1098,7 +613,683 @@
 				<groupOrigin>-3.535477 6.501619 -2.095695</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
+				7
+				<material>
+					<identifier>d_stone0_3</identifier>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>89</materialKind>
+					<fx>shaders/std_effects/PBS_tiled.fx</fx>
+					<property>
+						albedoHeightTile0
+						<Texture>content/Buildings/00_Tiles/dds/Bricks_stone_05_1024_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Buildings/00_Tiles/dds/Plaster_09_1024_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/Buildings/00_Tiles/dds/Plaster_11_1024_AM.dds</Texture>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/Buildings/bld_19_01_Vhouse/bld_19_01_Vhouse_03_blend.png</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
+					</property>
+					<property>
+						dirtMap
+						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_dirt_01_DM.dds</Texture>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_fakeShadowsAndDetailParams
+						<Vector4>0.250000 0.300000 1.000000 0.000000</Vector4>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Buildings/00_Tiles/dds/Bricks_stone_05_1024_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Buildings/00_Tiles/dds/Plaster_09_1024_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Buildings/00_Tiles/dds/Plaster_11_1024_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Buildings/00_Tiles/dds/Bricks_stone_05_1024_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Buildings/00_Tiles/dds/Plaster_09_1024_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Buildings/00_Tiles/dds/Plaster_11_1024_GBMT.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>3.884453 4.292583 0.053612</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				8
+				<material>
+					<identifier>n_stone0_3</identifier>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>75</materialKind>
+					<fx>shaders/std_effects/PBS_tiled.fx</fx>
+					<property>
+						albedoHeightTile0
+						<Texture>content/Buildings/00_Tiles/dds/Bricks_stone_05_1024_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Buildings/00_Tiles/dds/Plaster_09_1024_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/Buildings/00_Tiles/dds/Plaster_11_1024_AM.dds</Texture>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/Buildings/bld_19_01_Vhouse/bld_19_01_Vhouse_03_blend.png</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
+					</property>
+					<property>
+						dirtMap
+						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_dirt_01_DM.dds</Texture>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_fakeShadowsAndDetailParams
+						<Vector4>0.250000 0.300000 1.000000 0.000000</Vector4>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Buildings/00_Tiles/dds/Bricks_stone_05_1024_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Buildings/00_Tiles/dds/Plaster_09_1024_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Buildings/00_Tiles/dds/Plaster_11_1024_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Buildings/00_Tiles/dds/Bricks_stone_05_1024_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Buildings/00_Tiles/dds/Plaster_09_1024_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Buildings/00_Tiles/dds/Plaster_11_1024_GBMT.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>4.107101 5.188956 0.045651</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				9
+				<material>
+					<identifier>n_stone0_2</identifier>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>74</materialKind>
+					<fx>shaders/std_effects/PBS_tiled.fx</fx>
+					<property>
+						albedoHeightTile0
+						<Texture>content/Buildings/00_Tiles/dds/Bricks_stone_05_1024_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Buildings/00_Tiles/dds/Plaster_09_1024_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/Buildings/00_Tiles/dds/Plaster_11_1024_AM.dds</Texture>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/Buildings/bld_19_01_Vhouse/bld_19_01_Vhouse_03_blend.png</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
+					</property>
+					<property>
+						dirtMap
+						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_dirt_01_DM.dds</Texture>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_fakeShadowsAndDetailParams
+						<Vector4>0.250000 0.300000 1.000000 0.000000</Vector4>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Buildings/00_Tiles/dds/Bricks_stone_05_1024_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Buildings/00_Tiles/dds/Plaster_09_1024_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Buildings/00_Tiles/dds/Plaster_11_1024_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Buildings/00_Tiles/dds/Bricks_stone_05_1024_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Buildings/00_Tiles/dds/Plaster_09_1024_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Buildings/00_Tiles/dds/Plaster_11_1024_GBMT.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-4.297335 7.151790 2.998804</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				10
+				<material>
+					<identifier>s_nd0</identifier>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>111</materialKind>
+					<fx>shaders/std_effects/PBS_tiled.fx</fx>
+					<property>
+						albedoHeightTile0
+						<Texture>content/Buildings/00_Tiles/dds/Bricks_stone_05_1024_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Buildings/00_Tiles/dds/Plaster_09_1024_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/Buildings/00_Tiles/dds/Plaster_11_1024_AM.dds</Texture>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/Buildings/bld_19_01_Vhouse/bld_19_01_Vhouse_03_blend.png</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
+					</property>
+					<property>
+						dirtMap
+						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_dirt_01_DM.dds</Texture>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_fakeShadowsAndDetailParams
+						<Vector4>0.250000 0.300000 1.000000 0.000000</Vector4>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Buildings/00_Tiles/dds/Bricks_stone_05_1024_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Buildings/00_Tiles/dds/Plaster_09_1024_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Buildings/00_Tiles/dds/Plaster_11_1024_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Buildings/00_Tiles/dds/Bricks_stone_05_1024_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Buildings/00_Tiles/dds/Plaster_09_1024_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Buildings/00_Tiles/dds/Plaster_11_1024_GBMT.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.016931 4.844541 -0.414672</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				11
+				<material>
+					<identifier>n_stone2_1</identifier>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>73</materialKind>
+					<fx>shaders/std_effects/PBS_ext_detail.fx</fx>
+					<property>
+						g_detailMap
+						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_detalimap.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_01_Vhouse_01-06_details_AM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_01_Vhouse_01-06_details_ANM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_01_Vhouse_01-06_details_GMM.dds</Texture>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_detailInfluences
+						<Vector4>0.700000 0.700000 0.700000 1.000000</Vector4>
+					</property>
+					<property>
+						g_detailRejectTiling
+						<Vector4>2.000000 6.500000 10.000000 10.000000</Vector4>
+					</property>
+				</material>
+				<groupOrigin>-2.692368 8.761748 -1.797217</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				12
+				<material>
+					<identifier>n_stone1_3</identifier>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>75</materialKind>
+					<fx>shaders/std_effects/PBS_tiled.fx</fx>
+					<property>
+						albedoHeightTile0
+						<Texture>content/Buildings/00_Tiles/dds/Roof_26_Tile_01_1024_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Buildings/00_Tiles/dds/Roof_26_Tile_01_crashed_1024_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/Buildings/00_Tiles/dds/Plaster_09_1024_AM.dds</Texture>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/Buildings/bld_19_01_Vhouse/bld_19_01_Vhouse_03_blend.png</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
+					</property>
+					<property>
+						dirtMap
+						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_dirt_01_DM.dds</Texture>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_fakeShadowsAndDetailParams
+						<Vector4>0.250000 0.300000 1.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_tile0Tint
+						<Vector4>0.972549 0.988235 0.886275 1.000000</Vector4>
+					</property>
+					<property>
+						g_tile1Tint
+						<Vector4>0.972549 0.988235 0.886275 1.000000</Vector4>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Buildings/00_Tiles/dds/Roof_26_Tile_01_1024_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Buildings/00_Tiles/dds/Roof_26_Tile_01_crashed_1024_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Buildings/00_Tiles/dds/Plaster_09_1024_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Buildings/00_Tiles/dds/Roof_26_Tile_01_1024_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Buildings/00_Tiles/dds/Roof_26_Tile_01_crashed_1024_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Buildings/00_Tiles/dds/Plaster_09_1024_GBMT.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>3.936091 7.122167 0.086236</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				13
+				<material>
+					<identifier>d_stone2_1</identifier>
+					<fx>shaders/std_effects/PBS_ext_detail.fx</fx>
+					<materialKind>87</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_01_Vhouse_01-06_details_AM.dds</Texture>
+					</property>
+					<property>
+						g_detailInfluences
+						<Vector4>0.700000 0.700000 0.700000 1.000000</Vector4>
+					</property>
+					<property>
+						g_detailMap
+						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_detalimap.dds</Texture>
+					</property>
+					<property>
+						g_detailRejectTiling
+						<Vector4>2.000000 6.500000 10.000000 10.000000</Vector4>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_01_Vhouse_01-06_details_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_01_Vhouse_01-06_details_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-2.747161 8.051655 -2.344888</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
 				14
+				<material>
+					<identifier>d_stone2_3</identifier>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>89</materialKind>
+					<fx>shaders/std_effects/PBS_ext_detail.fx</fx>
+					<property>
+						g_detailMap
+						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_detalimap.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_01_Vhouse_01-06_details_AM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_01_Vhouse_01-06_details_ANM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_01_Vhouse_01-06_details_GMM.dds</Texture>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_detailInfluences
+						<Vector4>0.700000 0.700000 0.700000 1.000000</Vector4>
+					</property>
+					<property>
+						g_detailRejectTiling
+						<Vector4>2.000000 6.500000 10.000000 10.000000</Vector4>
+					</property>
+				</material>
+				<groupOrigin>3.897218 4.292583 0.061560</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				15
+				<material>
+					<identifier>d_stone1_3</identifier>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>89</materialKind>
+					<fx>shaders/std_effects/PBS_tiled.fx</fx>
+					<property>
+						albedoHeightTile0
+						<Texture>content/Buildings/00_Tiles/dds/Roof_26_Tile_01_1024_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Buildings/00_Tiles/dds/Roof_26_Tile_01_crashed_1024_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/Buildings/00_Tiles/dds/Plaster_09_1024_AM.dds</Texture>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/Buildings/bld_19_01_Vhouse/bld_19_01_Vhouse_03_blend.png</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
+					</property>
+					<property>
+						dirtMap
+						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_dirt_01_DM.dds</Texture>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_fakeShadowsAndDetailParams
+						<Vector4>0.250000 0.300000 1.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_tile0Tint
+						<Vector4>0.972549 0.988235 0.886275 1.000000</Vector4>
+					</property>
+					<property>
+						g_tile1Tint
+						<Vector4>0.972549 0.988235 0.886275 1.000000</Vector4>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Buildings/00_Tiles/dds/Roof_26_Tile_01_1024_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Buildings/00_Tiles/dds/Roof_26_Tile_01_crashed_1024_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Buildings/00_Tiles/dds/Plaster_09_1024_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Buildings/00_Tiles/dds/Roof_26_Tile_01_1024_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Buildings/00_Tiles/dds/Roof_26_Tile_01_crashed_1024_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Buildings/00_Tiles/dds/Plaster_09_1024_GBMT.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>3.297006 5.689233 -0.016001</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				16
+				<material>
+					<identifier>n_stone1_1</identifier>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>73</materialKind>
+					<fx>shaders/std_effects/PBS_tiled.fx</fx>
+					<property>
+						albedoHeightTile0
+						<Texture>content/Buildings/00_Tiles/dds/Roof_26_Tile_01_1024_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Buildings/00_Tiles/dds/Roof_26_Tile_01_crashed_1024_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/Buildings/00_Tiles/dds/Plaster_09_1024_AM.dds</Texture>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/Buildings/bld_19_01_Vhouse/bld_19_01_Vhouse_03_blend.png</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
+					</property>
+					<property>
+						dirtMap
+						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_dirt_01_DM.dds</Texture>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_fakeShadowsAndDetailParams
+						<Vector4>0.250000 0.300000 1.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_tile0Tint
+						<Vector4>0.972549 0.988235 0.886275 1.000000</Vector4>
+					</property>
+					<property>
+						g_tile1Tint
+						<Vector4>0.972549 0.988235 0.886275 1.000000</Vector4>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Buildings/00_Tiles/dds/Roof_26_Tile_01_1024_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Buildings/00_Tiles/dds/Roof_26_Tile_01_crashed_1024_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Buildings/00_Tiles/dds/Plaster_09_1024_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Buildings/00_Tiles/dds/Roof_26_Tile_01_1024_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Buildings/00_Tiles/dds/Roof_26_Tile_01_crashed_1024_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Buildings/00_Tiles/dds/Plaster_09_1024_GBMT.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-2.691457 10.408319 -1.807054</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				17
+				<material>
+					<identifier>n_stone2_2</identifier>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>74</materialKind>
+					<fx>shaders/std_effects/PBS_ext_detail.fx</fx>
+					<property>
+						g_detailMap
+						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_detalimap.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_01_Vhouse_01-06_details_AM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_01_Vhouse_01-06_details_ANM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_01_Vhouse_01-06_details_GMM.dds</Texture>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_detailInfluences
+						<Vector4>0.700000 0.700000 0.700000 1.000000</Vector4>
+					</property>
+					<property>
+						g_detailRejectTiling
+						<Vector4>2.000000 6.500000 10.000000 10.000000</Vector4>
+					</property>
+				</material>
+				<groupOrigin>-2.710516 7.390304 3.201534</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				18
+				<material>
+					<identifier>d_stone2_2</identifier>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>88</materialKind>
+					<fx>shaders/std_effects/PBS_ext_detail.fx</fx>
+					<property>
+						g_detailMap
+						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_detalimap.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_01_Vhouse_01-06_details_AM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_01_Vhouse_01-06_details_ANM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_01_Vhouse_01-06_details_GMM.dds</Texture>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_detailInfluences
+						<Vector4>0.700000 0.700000 0.700000 1.000000</Vector4>
+					</property>
+					<property>
+						g_detailRejectTiling
+						<Vector4>2.000000 6.500000 10.000000 10.000000</Vector4>
+					</property>
+				</material>
+				<groupOrigin>-2.970936 6.442124 3.075109</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				19
 				<material>
 					<identifier>d_stone0_2</identifier>
 					<collisionFlags>0</collisionFlags>
@@ -1163,224 +1354,6 @@
 				</material>
 				<groupOrigin>-2.957316 6.280426 2.724712</groupOrigin>
 			</primitiveGroup>
-			<primitiveGroup>
-				15
-				<material>
-					<identifier>d_stone2_1</identifier>
-					<fx>shaders/std_effects/PBS_ext_detail.fx</fx>
-					<materialKind>87</materialKind>
-					<collisionFlags>255</collisionFlags>
-					<property>
-						diffuseMap
-						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_01_Vhouse_01-06_details_AM.dds</Texture>
-					</property>
-					<property>
-						g_detailInfluences
-						<Vector4>0.700000 0.700000 0.700000 1.000000</Vector4>
-					</property>
-					<property>
-						g_detailMap
-						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_detalimap.dds</Texture>
-					</property>
-					<property>
-						g_detailRejectTiling
-						<Vector4>2.000000 6.500000 10.000000 10.000000</Vector4>
-					</property>
-					<property>
-						g_enableTerrainBlending
-						<Bool>true</Bool>
-					</property>
-					<property>
-						metallicGlossMap
-						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_01_Vhouse_01-06_details_GMM.dds</Texture>
-					</property>
-					<property>
-						normalMap
-						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_01_Vhouse_01-06_details_ANM.dds</Texture>
-					</property>
-				</material>
-				<groupOrigin>-2.747161 8.051655 -2.344888</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
-				16
-				<material>
-					<identifier>d_stone0_1</identifier>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>87</materialKind>
-					<fx>shaders/std_effects/PBS_tiled.fx</fx>
-					<property>
-						albedoHeightTile0
-						<Texture>content/Buildings/00_Tiles/dds/Bricks_stone_05_1024_AM.dds</Texture>
-					</property>
-					<property>
-						albedoHeightTile1
-						<Texture>content/Buildings/00_Tiles/dds/Plaster_09_1024_AM.dds</Texture>
-					</property>
-					<property>
-						albedoHeightTile2
-						<Texture>content/Buildings/00_Tiles/dds/Plaster_11_1024_AM.dds</Texture>
-					</property>
-					<property>
-						blendMask
-						<Texture>content/Buildings/bld_19_01_Vhouse/bld_19_01_Vhouse_03_blend.png</Texture>
-					</property>
-					<property>
-						colorTex
-						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
-					</property>
-					<property>
-						dirtMap
-						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_dirt_01_DM.dds</Texture>
-					</property>
-					<property>
-						g_enableTerrainBlending
-						<Bool>true</Bool>
-					</property>
-					<property>
-						g_fakeShadowsAndDetailParams
-						<Vector4>0.250000 0.300000 1.000000 0.000000</Vector4>
-					</property>
-					<property>
-						metallicAOTile0
-						<Texture>content/Buildings/00_Tiles/dds/Bricks_stone_05_1024_MAO.dds</Texture>
-					</property>
-					<property>
-						metallicAOTile1
-						<Texture>content/Buildings/00_Tiles/dds/Plaster_09_1024_MAO.dds</Texture>
-					</property>
-					<property>
-						metallicAOTile2
-						<Texture>content/Buildings/00_Tiles/dds/Plaster_11_1024_MAO.dds</Texture>
-					</property>
-					<property>
-						normalGlossSpecTile0
-						<Texture>content/Buildings/00_Tiles/dds/Bricks_stone_05_1024_GBMT.dds</Texture>
-					</property>
-					<property>
-						normalGlossSpecTile1
-						<Texture>content/Buildings/00_Tiles/dds/Plaster_09_1024_GBMT.dds</Texture>
-					</property>
-					<property>
-						normalGlossSpecTile2
-						<Texture>content/Buildings/00_Tiles/dds/Plaster_11_1024_GBMT.dds</Texture>
-					</property>
-				</material>
-				<groupOrigin>-2.743779 8.434977 -1.893393</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
-				17
-				<material>
-					<identifier>d_stone2_3</identifier>
-					<collisionFlags>255</collisionFlags>
-					<materialKind>89</materialKind>
-					<fx>shaders/std_effects/PBS_ext_detail.fx</fx>
-					<property>
-						g_detailMap
-						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_detalimap.dds</Texture>
-					</property>
-					<property>
-						diffuseMap
-						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_01_Vhouse_01-06_details_AM.dds</Texture>
-					</property>
-					<property>
-						normalMap
-						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_01_Vhouse_01-06_details_ANM.dds</Texture>
-					</property>
-					<property>
-						metallicGlossMap
-						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_01_Vhouse_01-06_details_GMM.dds</Texture>
-					</property>
-					<property>
-						g_enableTerrainBlending
-						<Bool>true</Bool>
-					</property>
-					<property>
-						g_detailInfluences
-						<Vector4>0.700000 0.700000 0.700000 1.000000</Vector4>
-					</property>
-					<property>
-						g_detailRejectTiling
-						<Vector4>2.000000 6.500000 10.000000 10.000000</Vector4>
-					</property>
-				</material>
-				<groupOrigin>3.897218 4.292583 0.061560</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
-				18
-				<material>
-					<identifier>n_stone2_2</identifier>
-					<collisionFlags>255</collisionFlags>
-					<materialKind>74</materialKind>
-					<fx>shaders/std_effects/PBS_ext_detail.fx</fx>
-					<property>
-						g_detailMap
-						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_detalimap.dds</Texture>
-					</property>
-					<property>
-						diffuseMap
-						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_01_Vhouse_01-06_details_AM.dds</Texture>
-					</property>
-					<property>
-						normalMap
-						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_01_Vhouse_01-06_details_ANM.dds</Texture>
-					</property>
-					<property>
-						metallicGlossMap
-						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_01_Vhouse_01-06_details_GMM.dds</Texture>
-					</property>
-					<property>
-						g_enableTerrainBlending
-						<Bool>true</Bool>
-					</property>
-					<property>
-						g_detailInfluences
-						<Vector4>0.700000 0.700000 0.700000 1.000000</Vector4>
-					</property>
-					<property>
-						g_detailRejectTiling
-						<Vector4>2.000000 6.500000 10.000000 10.000000</Vector4>
-					</property>
-				</material>
-				<groupOrigin>-2.710516 7.390304 3.201534</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
-				19
-				<material>
-					<identifier>n_stone2_1</identifier>
-					<collisionFlags>255</collisionFlags>
-					<materialKind>73</materialKind>
-					<fx>shaders/std_effects/PBS_ext_detail.fx</fx>
-					<property>
-						g_detailMap
-						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_detalimap.dds</Texture>
-					</property>
-					<property>
-						diffuseMap
-						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_01_Vhouse_01-06_details_AM.dds</Texture>
-					</property>
-					<property>
-						normalMap
-						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_01_Vhouse_01-06_details_ANM.dds</Texture>
-					</property>
-					<property>
-						metallicGlossMap
-						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_01_Vhouse_01-06_details_GMM.dds</Texture>
-					</property>
-					<property>
-						g_enableTerrainBlending
-						<Bool>true</Bool>
-					</property>
-					<property>
-						g_detailInfluences
-						<Vector4>0.700000 0.700000 0.700000 1.000000</Vector4>
-					</property>
-					<property>
-						g_detailRejectTiling
-						<Vector4>2.000000 6.500000 10.000000 10.000000</Vector4>
-					</property>
-				</material>
-				<groupOrigin>-2.692368 8.761748 -1.797217</groupOrigin>
-			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
@@ -1388,5 +1361,5 @@
 		<max>7.216642 11.657307 5.760722</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>158824</geometrySize>
+	<geometrySize>159264</geometrySize>
 </root>

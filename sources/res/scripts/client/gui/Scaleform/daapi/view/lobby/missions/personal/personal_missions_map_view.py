@@ -1,4 +1,7 @@
-import operator, WWISE, SoundGroups
+from __future__ import absolute_import
+import operator
+from future.utils import viewvalues
+import WWISE, SoundGroups
 from gui.Scaleform.daapi.view.lobby.missions.missions_helper import getPersonalMissionAwardsFormatter, getMapRegionTooltipData
 from gui.Scaleform.daapi.view.meta.PersonalMissionsMapViewMeta import PersonalMissionsMapViewMeta
 from gui.Scaleform.genConsts.PERSONAL_MISSIONS_ALIASES import PERSONAL_MISSIONS_ALIASES
@@ -41,7 +44,7 @@ class PersonalMissionsMapView(PersonalMissionsMapViewMeta, PersonalMissionsNavig
     def refresh(self):
         chainID = self.getChainID()
         operation = self.getOperation()
-        quests = sorted(self.getChain().itervalues(), key=operator.methodcaller('getID'))
+        quests = sorted(viewvalues(self.getChain()), key=operator.methodcaller('getID'))
         questClassifier = ''
         enabled = False
         if operation.isUnlocked():

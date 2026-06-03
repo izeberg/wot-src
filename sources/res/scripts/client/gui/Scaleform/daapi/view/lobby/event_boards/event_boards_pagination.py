@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import Event
 from gui.Scaleform.daapi.view.meta.PaginationMeta import PaginationMeta
 from gui.shared.formatters import text_styles

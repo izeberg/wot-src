@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, typing
 from frameworks.state_machine import ConditionTransition, StateMachine
 from gui.battle_pass.state_machine import lockNotificationManager, states

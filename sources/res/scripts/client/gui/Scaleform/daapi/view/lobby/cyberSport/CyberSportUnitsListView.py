@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from UnitBase import UNIT_BROWSER_TYPE
 from gui.Scaleform.daapi.view.lobby.rally.rally_dps import ManualSearchDataProvider
 from gui.Scaleform.daapi.view.meta.CyberSportUnitsListMeta import CyberSportUnitsListMeta

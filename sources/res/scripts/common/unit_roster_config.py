@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from UnitRoster import BaseUnitRoster, BaseUnitRosterSlot, BaseUnitRosterLimits
 
 class UnitRosterSlot(BaseUnitRosterSlot):

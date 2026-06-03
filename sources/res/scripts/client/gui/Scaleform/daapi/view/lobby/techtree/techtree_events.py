@@ -1,4 +1,7 @@
-import operator, nations
+from __future__ import absolute_import
+import operator
+from future.utils import lmap, lfilter
+import nations
 from account_helpers import AccountSettings
 from account_helpers.AccountSettings import TOP_OF_TREE_CONFIG
 from gui.ClientUpdateManager import g_clientUpdateManager
@@ -69,7 +72,7 @@ class TechTreeEventsListener(ITechTreeEventsListener):
     __eventsCache = dependency.descriptor(IEventsCache)
     __itemsCache = dependency.descriptor(IItemsCache)
     __systemMessages = dependency.descriptor(ISystemMessages)
-    actions = property(lambda self: self.__actions.keys())
+    actions = property(lambda self: list(self.__actions))
 
     def __init__(self):
         self.__actions = {}
@@ -193,7 +196,7 @@ class TechTreeEventsListener(ITechTreeEventsListener):
                 self.__systemMessages.proto.serviceChannel.pushClientMessage({'actionName': self.getUserName(actionIDs[0]), 
                    'timeLeft': expireTime, 
                    'single': len(self.actions) == 1}, SCH_CLIENT_MSG_TYPE.TECH_TREE_ACTION_DISCOUNT)
-                map(self.__settings.setNotified, actionIDs)
+                lmap(self.__settings.setNotified, actionIDs)
 
     def __actionNotifierCondition(self, actionID):
         vehicleDossier = self.__getVehicleCDsWereInBattle()
@@ -223,7 +226,7 @@ class TechTreeEventsListener(ITechTreeEventsListener):
                     return bool(vehicles)
                 return False
 
-        return filter(_filterFunc, self.actions)
+        return lfilter(_filterFunc, self.actions)
 
     def __onInventoryUpdated(self, _):
         self.__update()

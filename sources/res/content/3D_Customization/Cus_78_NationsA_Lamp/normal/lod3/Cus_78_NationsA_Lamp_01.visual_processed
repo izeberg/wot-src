@@ -51,13 +51,13 @@
 						<Texture>content/3D_Customization/Cus_78_NationsA_Lamp/Cus_78_NationsA_Lamp_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.010146 0.198740 0.079722</groupOrigin>
+				<groupOrigin>0.000025 0.256861 0.075975</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.205919 -0.200000 -0.049893</min>
-		<max>0.145877 0.598146 0.205176</max>
+		<min>-0.200306 -0.100000 -0.056659</min>
+		<max>0.159681 0.614402 0.204349</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
 	<geometrySize>10096</geometrySize>

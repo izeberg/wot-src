@@ -1,5 +1,7 @@
+from __future__ import absolute_import
 import logging
 from collections import OrderedDict
+from future.utils import iteritems
 from gui.Scaleform.daapi.view.lobby.customization.shared import CustomizationTabs
 from gui.Scaleform.daapi.view.meta.CustomizationFiltersPopoverMeta import CustomizationFiltersPopoverMeta
 from gui.customization.shared import PROJECTION_DECAL_TEXT_FORM_TAG
@@ -178,10 +180,10 @@ class FilterPopover(CustomizationFiltersPopoverMeta):
         self.updateDefaultButton()
         self.__ctx.events.onCarouselFiltered(applied=value)
 
-    def changeGroup(self, filterGroupValue):
+    def changeGroup(self, itemId):
         if not self._isInit:
-            self.__ctx.events.onCarouselFiltered(group=filterGroupValue)
-            self._selectedGroup = filterGroupValue
+            self.__ctx.events.onCarouselFiltered(group=itemId)
+            self._selectedGroup = itemId
             self.updateDefaultButton()
         else:
             self._isInit = False
@@ -272,12 +274,12 @@ class FilterPopover(CustomizationFiltersPopoverMeta):
                'tooltip': nonEditableStylesBtnTooltip, 
                'selected': self._showOnlyNonEditableStylesEnabled})
             self.__filterChangeHandlers.append(self.setShowOnlyNonEditableStyles)
-        _formsBtns = [ {'value': self.PROJECTION_DECAL_IMAGE_FORM_TAG[formType], 'selected': value, 'tooltip': makeTooltip(('{} {}').format(backport.text(R.strings.vehicle_customization.popover.tooltip.form()), backport.text(PROJECTION_DECAL_TEXT_FORM_TAG[formType])), backport.text(R.strings.vehicle_customization.popover.tooltip.form.body(), value=backport.text(R.strings.vehicle_customization.form.dyn(formType)())))} for formType, value in self._formfactorTypes.iteritems()
+        _formsBtns = [ {'value': self.PROJECTION_DECAL_IMAGE_FORM_TAG[formType], 'selected': value, 'tooltip': makeTooltip(('{} {}').format(backport.text(R.strings.vehicle_customization.popover.tooltip.form()), backport.text(PROJECTION_DECAL_TEXT_FORM_TAG[formType])), backport.text(R.strings.vehicle_customization.popover.tooltip.form.body(), value=backport.text(R.strings.vehicle_customization.form.dyn(formType)())))} for formType, value in iteritems(self._formfactorTypes)
                      ]
         formsBtnsLbl = ''
         if self._formfactorTypes:
             formsBtnsLbl = text_styles.standard(backport.text(R.strings.vehicle_customization.filter.popover.formfilters.title()))
-        _raritiesBtns = [ {'value': backport.image(R.images.gui.maps.icons.customization.rarity.sign.s20x20.dyn(rarity)()), 'selected': selected, 'tooltip': makeTooltip(backport.text(R.strings.vehicle_customization.customization.filterPopover.rarity.header(), rarity=backport.text(R.strings.vehicle_customization.customization.rarity.dyn(rarity)())), backport.text(R.strings.vehicle_customization.customization.filterPopover.rarity.body(), rarity=backport.text(R.strings.vehicle_customization.customization.rarity.dyn(rarity)()).lower()))} for rarity, selected in self._raritiesGroup.iteritems()
+        _raritiesBtns = [ {'value': backport.image(R.images.gui.maps.icons.customization.rarity.sign.s20x20.dyn(rarity)()), 'selected': selected, 'tooltip': makeTooltip(backport.text(R.strings.vehicle_customization.customization.filterPopover.rarity.header(), rarity=backport.text(R.strings.vehicle_customization.customization.rarity.dyn(rarity)())), backport.text(R.strings.vehicle_customization.customization.filterPopover.rarity.body(), rarity=backport.text(R.strings.vehicle_customization.customization.rarity.dyn(rarity)()).lower()))} for rarity, selected in iteritems(self._raritiesGroup)
                         ]
         raritiesBtnsLbl = ''
         if self._raritiesGroup:

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.impl.gen import R
 from gui.impl import backport
 from gui.Scaleform.daapi.view.lobby.formatters.tooltips import packCalendarBlock

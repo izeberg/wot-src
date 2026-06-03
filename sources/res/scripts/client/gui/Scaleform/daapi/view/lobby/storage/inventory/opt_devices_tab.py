@@ -1,9 +1,10 @@
+from __future__ import absolute_import
 from collections import OrderedDict
 from enum import IntEnum
 from PlayerEvents import g_playerEvents
 from gui.shared.event_dispatcher import showSellDialog
 from gui.Scaleform.daapi.view.meta.StorageDevicesTabViewMeta import StorageDevicesTabViewMeta
-from gui.Scaleform.daapi.view.lobby.storage.inventory.inventory_view import TABS_SORT_ORDER, IN_GROUP_COMPARATOR
+from gui.Scaleform.daapi.view.lobby.storage.inventory.inventory_view import TABS_SORT_ORDER, IN_GROUP_SORT_KEYS
 from gui.Scaleform.daapi.view.lobby.store.browser.shop_helpers import getBuyOptionalDevicesUrl
 from gui.impl import backport
 from gui.impl.gen import R
@@ -69,7 +70,7 @@ class OptDevicesTabView(StorageDevicesTabViewMeta):
     def _initFilter(self):
         index = 0
         if self._filterMask in _BIT_TO_DEVICE_TYPE_MAP:
-            index = _BIT_TO_DEVICE_TYPE_MAP.keys().index(self._filterMask) + 1
+            index = list(_BIT_TO_DEVICE_TYPE_MAP).index(self._filterMask) + 1
         self.as_initModulesFilterS({'enabled': True, 'selectedIndex': index, 'data': _TYPE_FILTER_ITEMS})
 
     def _getClientSectionKey(self):
@@ -90,12 +91,10 @@ class OptDevicesTabView(StorageDevicesTabViewMeta):
     def _getRequestCriteria(self, invVehicles):
         return REQ_CRITERIA.INVENTORY
 
-    def _getComparator(self):
-
-        def _comparator(a, b):
-            return cmp(TABS_SORT_ORDER[a.itemTypeID], TABS_SORT_ORDER[b.itemTypeID]) or IN_GROUP_COMPARATOR[a.itemTypeID](a, b)
-
-        return _comparator
+    def _getItemSortKey(self, item):
+        return (
+         TABS_SORT_ORDER[item.itemTypeID],
+         IN_GROUP_SORT_KEYS[item.itemTypeID](item))
 
     def _buildItems(self):
         super(OptDevicesTabView, self)._buildItems()

@@ -1,12 +1,11 @@
-from abc import ABCMeta, abstractmethod
+from __future__ import absolute_import
+from future.utils import lmap, viewitems
 
 class Config(object):
-    __metaclass__ = ABCMeta
 
     def __init__(self, **kwargs):
-        map(lambda item: setattr(self, *item), kwargs.iteritems())
+        lmap(lambda item: setattr(self, *item), viewitems(kwargs))
 
     @classmethod
-    @abstractmethod
     def create(cls, *args, **kwargs):
-        pass
+        raise NotImplementedError

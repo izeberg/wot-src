@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing, AccountCommands
 from BaseAccountExtensionComponent import BaseAccountExtensionComponent
 from open_bundle_common.open_bundle_account_commands import CMD_OPEN_BUNDLE_PROCESS_NEXT_STEP

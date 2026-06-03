@@ -101,14 +101,14 @@
 						<Texture>content/3D_Customization/Cus_73_OTG_Machinegun/Cus_73_OTG_Machinegun_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.089880 0.264089 0.168553</groupOrigin>
+				<groupOrigin>-0.089880 0.314089 0.168553</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.464626 -0.200000 -0.640458</min>
-		<max>0.300262 0.748611 0.972121</max>
+		<min>-0.462475 -0.100000 -0.635014</min>
+		<max>0.290086 0.731705 0.972121</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>66506</geometrySize>
+	<geometrySize>66652</geometrySize>
 </root>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<materialNames/>
+	<visibilityBox>
+		<min>-1.725270 -0.000015 -3.646290</min>
+		<max>1.725270 1.081310 3.501040</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/chinese/Ch38_WZ113G_FT/_skins/Ch38_WZ113G_FT_BPXX_3Dst/crash/lod0/Chassis</nodefullVisual>
+	<parent>vehicles/chinese/Ch38_WZ113G_FT/_skins/Ch38_WZ113G_FT_BPXX_3Dst/crash/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+</root>

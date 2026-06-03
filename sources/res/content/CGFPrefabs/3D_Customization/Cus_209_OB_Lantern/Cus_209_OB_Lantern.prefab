@@ -1074,6 +1074,18 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
+			<type>BW::VisibilityTunnelComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>48b7e9c8-b92f-475a-a3f7-a44f9fd454fb</UUID>
+				<flags>3</flags>
+			</component>
+			<component>
+				<UUID>dc2935cd-1059-319a-8ddb-fa0e2b70b56e</UUID>
+				<flags>3</flags>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
 			<type>VehicleHealthObserverComponent</type>
 			<version>1</version>
 			<component>

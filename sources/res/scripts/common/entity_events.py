@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from events_container import EventsContainer
 
 class EntityEvents(EventsContainer):

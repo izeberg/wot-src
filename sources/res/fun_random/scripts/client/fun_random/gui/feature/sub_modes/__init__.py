@@ -3,6 +3,7 @@ import typing
 from fun_random_common.fun_constants import FunSubModeImpl
 from fun_random.gui.feature.sub_modes.base_sub_mode import FunBaseSubMode
 from fun_random.gui.feature.sub_modes.dev_sub_mode import FunDevSubMode
+from fun_random.gui.feature.sub_modes.equalize_sub_mode import EqualizeSubMode
 from fun_random.gui.shared.fun_system_factory import registerFunRandomSubMode, collectFunRandomSubMode
 if typing.TYPE_CHECKING:
     from fun_random.gui.feature.sub_modes.base_sub_mode import IFunSubMode
@@ -10,6 +11,7 @@ if typing.TYPE_CHECKING:
 
 def registerFunRandomSubModes():
     registerFunRandomSubMode(FunSubModeImpl.DEV_TEST, FunDevSubMode)
+    registerFunRandomSubMode(FunSubModeImpl.EQUALIZE, EqualizeSubMode)
 
 
 def createFunSubMode(subModeSettings):

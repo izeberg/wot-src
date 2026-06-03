@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/sweden/S37_Ambassador/crash/lod1/Hull</nodefullVisual>
+	<parent>vehicles/sweden/S37_Ambassador/crash/lod2/Hull</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.509986 -0.847397 -3.138900</min>
+		<max>1.510662 0.723626 3.134758</max>
+	</visibilityBox>
+</root>

@@ -60,14 +60,14 @@
 						<Bool>true</Bool>
 					</property>
 				</material>
-				<groupOrigin>0.015336 0.224621 -0.047548</groupOrigin>
+				<groupOrigin>0.015336 0.274523 -0.047548</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.188969 -0.200000 -0.289417</min>
+		<min>-0.188969 -0.100197 -0.289417</min>
 		<max>0.219640 0.649243 0.194322</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>244350</geometrySize>
+	<geometrySize>244458</geometrySize>
 </root>

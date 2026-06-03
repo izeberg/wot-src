@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>content/3D_Customization/Cus_124_Aviation_Camera/normal/lod2/Cus_124_Aviation_Camera_01</nodefullVisual>
 	<parent>content/3D_Customization/Cus_124_Aviation_Camera/normal/lod3/Cus_124_Aviation_Camera_01</parent>
 	<extent>96.000000</extent>
 	<visibilityBox>
-		<min>-0.223190 -0.192895 -0.152272</min>
+		<min>-0.223190 -0.100020 -0.152272</min>
 		<max>0.234557 0.752788 0.562782</max>
 	</visibilityBox>
 	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_124_Aviation_Camera/normal/lod2/Cus_124_Aviation_Camera_01</nodefullVisual>
 </root>

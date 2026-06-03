@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/italy/It41_Cerbero/normal/lod2/Turret_01</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/italy/It41_Cerbero/normal/lod3/Turret_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.541004 -0.000038 -3.216240</min>
+		<max>1.541004 1.466228 1.966369</max>
+	</visibilityBox>
+</root>
