@@ -112,7 +112,7 @@ class ChatProvider(ClientHolder):
         if not banInfo:
             return True
         else:
-            banItem = banInfo.getFirstActiveItem(components=exists.getBanComponent())
+            banItem = banInfo.getFirstActiveItem(game=banInfo.getCurrentGame(), components=exists.getBanComponent())
             if banItem is None:
                 return True
             if banItem.banType != NOVICE_RESTRICTIONS_BAN_TYPE:

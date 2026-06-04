@@ -13601,7 +13601,17 @@ package
       
       public static const MAPS_ICONS_EVENT_SUMMERSALE_REWARD_VECHICLES_360X270_R146_STG:String = "../maps/icons/event/summerSale/reward/vechicles/360x270/R146_STG.png";
       
+      public static const MAPS_ICONS_EVENT_SUMMERSALE_REWARD_VECHICLES_360X270_R149_OBJECT_268_4_02:String = "../maps/icons/event/summerSale/reward/vechicles/360x270/R149_Object_268_4_02.png";
+      
+      public static const MAPS_ICONS_EVENT_SUMMERSALE_REWARD_VECHICLES_360X270_R177_ISU_152K_BL10_02:String = "../maps/icons/event/summerSale/reward/vechicles/360x270/R177_ISU_152K_BL10_02.png";
+      
+      public static const MAPS_ICONS_EVENT_SUMMERSALE_REWARD_VECHICLES_360X270_R248_T44_STORM:String = "../maps/icons/event/summerSale/reward/vechicles/360x270/R248_T44_Storm.png";
+      
+      public static const MAPS_ICONS_EVENT_SUMMERSALE_REWARD_VECHICLES_360X270_R45_IS_7_02:String = "../maps/icons/event/summerSale/reward/vechicles/360x270/R45_IS-7_02.png";
+      
       public static const MAPS_ICONS_EVENT_SUMMERSALE_REWARD_VECHICLES_360X270_REWARD_RANDOM_TANK:String = "../maps/icons/event/summerSale/reward/vechicles/360x270/reward_random_tank.png";
+      
+      public static const MAPS_ICONS_EVENT_SUMMERSALE_REWARD_VECHICLES_360X270_UN24_VZ_68_2_BRITVA:String = "../maps/icons/event/summerSale/reward/vechicles/360x270/Un24_Vz_68_2_Britva.png";
       
       public static const MAPS_ICONS_EVENT_SUMMERSALE_REWARD_VECHICLES_400X300_J27_O_I_120_BP:String = "../maps/icons/event/summerSale/reward/vechicles/400x300/J27_O_I_120_BP.png";
       

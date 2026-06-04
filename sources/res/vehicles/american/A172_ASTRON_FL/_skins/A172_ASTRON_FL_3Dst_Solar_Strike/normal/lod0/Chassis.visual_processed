@@ -1150,38 +1150,24 @@
 			<primitiveGroup>
 				0
 				<material>
-					<fx>shaders/std_effects/PBS_tank_skinned_ao.fx</fx>
+					<fx>shaders/std_effects/PBS_tank_uvtransform_skinned_ao.fx</fx>
 					<materialKind>0</materialKind>
 					<identifier>track_mat_R0_skinned</identifier>
 					<collisionFlags>0</collisionFlags>
 					<property>
-						diffuseMap
-						<Texture>vehicles/american/tracks/a172_track_AM.dds</Texture>
-					</property>
-					<property>
-						metallicGlossMap
-						<Texture>vehicles/american/tracks/a172_track_GMM.dds</Texture>
-					</property>
-					<property>
-						g_detailPowerGloss
-						<Float>
-							0.35
-							<!--BW_String-->
-						</Float>
+						alphaReference
+						<Int>128</Int>
 					</property>
 					<property>
 						alphaTestEnable
 						<Bool>true</Bool>
 					</property>
 					<property>
-						g_maskBias
-						<Float>
-							0.18
-							<!--BW_String-->
-						</Float>
+						diffuseMap
+						<Texture>vehicles/american/tracks/a172_track_AM.dds</Texture>
 					</property>
 					<property>
-						g_useDetailMetallic
+						doubleSided
 						<Bool>true</Bool>
 					</property>
 					<property>
@@ -1189,15 +1175,7 @@
 						<Vector4>3.506850 0.876712 0.000000 0.000000</Vector4>
 					</property>
 					<property>
-						g_detailPower
-						<Float>5</Float>
-					</property>
-					<property>
-						normalMap
-						<Texture>vehicles/american/tracks/a172_track_ANM.dds</Texture>
-					</property>
-					<property>
-						doubleSided
+						g_useDetailMetallic
 						<Bool>true</Bool>
 					</property>
 					<property>
@@ -1205,15 +1183,12 @@
 						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
 					<property>
-						alphaReference
-						<Int>128</Int>
+						metallicGlossMap
+						<Texture>vehicles/american/tracks/a172_track_GMM.dds</Texture>
 					</property>
 					<property>
-						g_detailPowerAlbedo
-						<Float>
-							0.11
-							<!--BW_String-->
-						</Float>
+						normalMap
+						<Texture>vehicles/american/tracks/a172_track_ANM.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>1.473117 0.579663 1.862809</groupOrigin>
@@ -1236,38 +1211,24 @@
 			<primitiveGroup>
 				0
 				<material>
-					<fx>shaders/std_effects/PBS_tank_skinned_ao.fx</fx>
+					<fx>shaders/std_effects/PBS_tank_uvtransform_skinned_ao.fx</fx>
 					<materialKind>0</materialKind>
 					<identifier>track_mat_R1_skinned</identifier>
 					<collisionFlags>0</collisionFlags>
 					<property>
-						diffuseMap
-						<Texture>vehicles/american/tracks/a172_track_AM.dds</Texture>
-					</property>
-					<property>
-						metallicGlossMap
-						<Texture>vehicles/american/tracks/a172_track_GMM.dds</Texture>
-					</property>
-					<property>
-						g_detailPowerGloss
-						<Float>
-							0.35
-							<!--BW_String-->
-						</Float>
+						alphaReference
+						<Int>128</Int>
 					</property>
 					<property>
 						alphaTestEnable
 						<Bool>true</Bool>
 					</property>
 					<property>
-						g_maskBias
-						<Float>
-							0.18
-							<!--BW_String-->
-						</Float>
+						diffuseMap
+						<Texture>vehicles/american/tracks/a172_track_AM.dds</Texture>
 					</property>
 					<property>
-						g_useDetailMetallic
+						doubleSided
 						<Bool>true</Bool>
 					</property>
 					<property>
@@ -1275,15 +1236,7 @@
 						<Vector4>3.506850 0.876712 0.000000 0.000000</Vector4>
 					</property>
 					<property>
-						g_detailPower
-						<Float>5</Float>
-					</property>
-					<property>
-						normalMap
-						<Texture>vehicles/american/tracks/a172_track_ANM.dds</Texture>
-					</property>
-					<property>
-						doubleSided
+						g_useDetailMetallic
 						<Bool>true</Bool>
 					</property>
 					<property>
@@ -1291,15 +1244,12 @@
 						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
 					<property>
-						alphaReference
-						<Int>128</Int>
+						metallicGlossMap
+						<Texture>vehicles/american/tracks/a172_track_GMM.dds</Texture>
 					</property>
 					<property>
-						g_detailPowerAlbedo
-						<Float>
-							0.11
-							<!--BW_String-->
-						</Float>
+						normalMap
+						<Texture>vehicles/american/tracks/a172_track_ANM.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>1.473117 0.574563 -1.802415</groupOrigin>
@@ -1322,38 +1272,24 @@
 			<primitiveGroup>
 				0
 				<material>
-					<fx>shaders/std_effects/PBS_tank_skinned_ao.fx</fx>
+					<fx>shaders/std_effects/PBS_tank_uvtransform_skinned_ao.fx</fx>
 					<materialKind>0</materialKind>
 					<identifier>track_mat_L1_skinned</identifier>
 					<collisionFlags>0</collisionFlags>
 					<property>
-						diffuseMap
-						<Texture>vehicles/american/tracks/a172_track_AM.dds</Texture>
-					</property>
-					<property>
-						metallicGlossMap
-						<Texture>vehicles/american/tracks/a172_track_GMM.dds</Texture>
-					</property>
-					<property>
-						g_detailPowerGloss
-						<Float>
-							0.35
-							<!--BW_String-->
-						</Float>
+						alphaReference
+						<Int>128</Int>
 					</property>
 					<property>
 						alphaTestEnable
 						<Bool>true</Bool>
 					</property>
 					<property>
-						g_maskBias
-						<Float>
-							0.18
-							<!--BW_String-->
-						</Float>
+						diffuseMap
+						<Texture>vehicles/american/tracks/a172_track_AM.dds</Texture>
 					</property>
 					<property>
-						g_useDetailMetallic
+						doubleSided
 						<Bool>true</Bool>
 					</property>
 					<property>
@@ -1361,15 +1297,7 @@
 						<Vector4>3.506850 0.876712 0.000000 0.000000</Vector4>
 					</property>
 					<property>
-						g_detailPower
-						<Float>5</Float>
-					</property>
-					<property>
-						normalMap
-						<Texture>vehicles/american/tracks/a172_track_ANM.dds</Texture>
-					</property>
-					<property>
-						doubleSided
+						g_useDetailMetallic
 						<Bool>true</Bool>
 					</property>
 					<property>
@@ -1377,15 +1305,12 @@
 						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
 					<property>
-						alphaReference
-						<Int>128</Int>
+						metallicGlossMap
+						<Texture>vehicles/american/tracks/a172_track_GMM.dds</Texture>
 					</property>
 					<property>
-						g_detailPowerAlbedo
-						<Float>
-							0.11
-							<!--BW_String-->
-						</Float>
+						normalMap
+						<Texture>vehicles/american/tracks/a172_track_ANM.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>-1.472883 0.574563 -1.802397</groupOrigin>
@@ -1408,38 +1333,24 @@
 			<primitiveGroup>
 				0
 				<material>
-					<fx>shaders/std_effects/PBS_tank_skinned_ao.fx</fx>
+					<fx>shaders/std_effects/PBS_tank_uvtransform_skinned_ao.fx</fx>
 					<materialKind>0</materialKind>
 					<identifier>track_mat_L0_skinned</identifier>
 					<collisionFlags>0</collisionFlags>
 					<property>
-						diffuseMap
-						<Texture>vehicles/american/tracks/a172_track_AM.dds</Texture>
-					</property>
-					<property>
-						metallicGlossMap
-						<Texture>vehicles/american/tracks/a172_track_GMM.dds</Texture>
-					</property>
-					<property>
-						g_detailPowerGloss
-						<Float>
-							0.35
-							<!--BW_String-->
-						</Float>
+						alphaReference
+						<Int>128</Int>
 					</property>
 					<property>
 						alphaTestEnable
 						<Bool>true</Bool>
 					</property>
 					<property>
-						g_maskBias
-						<Float>
-							0.18
-							<!--BW_String-->
-						</Float>
+						diffuseMap
+						<Texture>vehicles/american/tracks/a172_track_AM.dds</Texture>
 					</property>
 					<property>
-						g_useDetailMetallic
+						doubleSided
 						<Bool>true</Bool>
 					</property>
 					<property>
@@ -1447,15 +1358,7 @@
 						<Vector4>3.506850 0.876712 0.000000 0.000000</Vector4>
 					</property>
 					<property>
-						g_detailPower
-						<Float>5</Float>
-					</property>
-					<property>
-						normalMap
-						<Texture>vehicles/american/tracks/a172_track_ANM.dds</Texture>
-					</property>
-					<property>
-						doubleSided
+						g_useDetailMetallic
 						<Bool>true</Bool>
 					</property>
 					<property>
@@ -1463,15 +1366,12 @@
 						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
 					<property>
-						alphaReference
-						<Int>128</Int>
+						metallicGlossMap
+						<Texture>vehicles/american/tracks/a172_track_GMM.dds</Texture>
 					</property>
 					<property>
-						g_detailPowerAlbedo
-						<Float>
-							0.11
-							<!--BW_String-->
-						</Float>
+						normalMap
+						<Texture>vehicles/american/tracks/a172_track_ANM.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>-1.471742 0.579662 1.861982</groupOrigin>

@@ -5482,7 +5482,7 @@
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						25.5
+						27.5
 						<!--BW_String-->
 					</reloadTime>
 					<shotDispersionFactors>
@@ -5491,7 +5491,7 @@
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
-							3.6
+							2.8
 							<!--BW_String-->
 						</afterShot>
 						<whileGunDamaged>
@@ -5500,12 +5500,12 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						1.8
+						1.5
 						<!--BW_String-->
 					</aimingTime>
 					<clip>
 						<count>4</count>
-						<rate>30</rate>
+						<rate>40</rate>
 					</clip>
 					<models>
 						<undamaged>vehicles/german/G112_KanonenJagdPanzer/normal/lod0/Gun_01.model</undamaged>
