@@ -3,10 +3,8 @@ from frameworks.wulf import Array, ViewModel
 from gui.impl.gen.view_models.views.lobby.battle_pass.skill_model import SkillModel
 
 class TankmanStates(Enum):
-    RECEIVED = 'received'
     PROGRESSION = 'progression'
     IN_SHOP = 'inShop'
-    NOT_FULL = 'notFull'
     UNAVAILABLE = 'unavailable'
 
 

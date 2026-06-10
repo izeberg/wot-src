@@ -8298,10 +8298,10 @@ class battle_pass(DynAccessor):
 
         class _description(DynAccessor):
             __slots__ = ()
-            award = DynAccessor(5343)
+            award = DynAccessor(5344)
             awardDisabled = DynAccessor(5551)
             coin = DynAccessor(5744)
-            collection = DynAccessor(5261)
+            collection = DynAccessor(5262)
             collectionCompleted = DynAccessor(5660)
             commander = DynAccessor(5683)
             taler = DynAccessor(5762)
@@ -8315,9 +8315,9 @@ class battle_pass(DynAccessor):
             awardSingle = DynAccessor(5502)
             coin = DynAccessor(5636)
             collection = DynAccessor(5706)
-            commander = DynAccessor(5378)
+            commander = DynAccessor(5379)
             taler = DynAccessor(5426)
-            ticket = DynAccessor(5281)
+            ticket = DynAccessor(5282)
 
         title = _title()
 
@@ -8332,21 +8332,21 @@ class battle_pass(DynAccessor):
             bpBuyLevelAwardsText = DynAccessor(5250)
             bpRemainLevelsAwardsText = DynAccessor(5663)
             button = DynAccessor(5568)
-            seeMoreButtonText = DynAccessor(5351)
+            seeMoreButtonText = DynAccessor(5352)
             subText = DynAccessor(5672)
 
         additionalRewards = _additionalRewards()
 
         class _footer(DynAccessor):
             __slots__ = ()
-            acceptButton = DynAccessor(5311)
+            acceptButton = DynAccessor(5312)
             allChaptersText = DynAccessor(5649)
             boughtChapterText = DynAccessor(5531)
             bpButtonTitle = DynAccessor(5747)
-            bpDescriptionGotStyle = DynAccessor(5292)
-            bpInProgressTitle = DynAccessor(5296)
-            bpLastStagesTitle = DynAccessor(5319)
-            bpMoreTitle = DynAccessor(5399)
+            bpDescriptionGotStyle = DynAccessor(5293)
+            bpInProgressTitle = DynAccessor(5297)
+            bpLastStagesTitle = DynAccessor(5320)
+            bpMoreTitle = DynAccessor(5400)
             bpTitle = DynAccessor(5687)
             getRewardsButton = DynAccessor(5757)
             postProgressionButton = DynAccessor(5692)
@@ -8372,15 +8372,15 @@ class battle_pass(DynAccessor):
         class _mainReward(DynAccessor):
             __slots__ = ()
             battlePassNewDeviceGiftToken = DynAccessor(5620)
-            battlePassTrophyGiftToken = DynAccessor(5375)
-            bpBuyAwardsCaption = DynAccessor(5379)
+            battlePassTrophyGiftToken = DynAccessor(5376)
+            bpBuyAwardsCaption = DynAccessor(5380)
             bpBuyWithLevels = DynAccessor(5496)
-            commander = DynAccessor(5412)
+            commander = DynAccessor(5413)
 
             class _newDeviceGiftToken(DynAccessor):
                 __slots__ = ()
-                buttonText = DynAccessor(5299)
-                buttonTitle = DynAccessor(5325)
+                buttonText = DynAccessor(5300)
+                buttonTitle = DynAccessor(5326)
 
             newDeviceGiftToken = _newDeviceGiftToken()
             reward = DynAccessor(5650)
@@ -8391,7 +8391,7 @@ class battle_pass(DynAccessor):
 
             class _trophyGiftToken(DynAccessor):
                 __slots__ = ()
-                buttonText = DynAccessor(5384)
+                buttonText = DynAccessor(5385)
                 buttonTitle = DynAccessor(5557)
 
             trophyGiftToken = _trophyGiftToken()
@@ -8403,13 +8403,13 @@ class battle_pass(DynAccessor):
     class _battlePassBuyLevels(DynAccessor):
         __slots__ = ()
         chapter = DynAccessor(5679)
-        levelsSelected = DynAccessor(5334)
+        levelsSelected = DynAccessor(5335)
 
     battlePassBuyLevels = _battlePassBuyLevels()
 
     class _battlePassBuyView(DynAccessor):
         __slots__ = ()
-        btnCancel = DynAccessor(5308)
+        btnCancel = DynAccessor(5309)
         btnRewards = DynAccessor(5457)
 
         class _confirm(DynAccessor):
@@ -8418,7 +8418,7 @@ class battle_pass(DynAccessor):
 
             class _checkbox(DynAccessor):
                 __slots__ = ()
-                stage = DynAccessor(5372)
+                stage = DynAccessor(5373)
 
             checkbox = _checkbox()
             description = DynAccessor(5605)
@@ -8437,7 +8437,7 @@ class battle_pass(DynAccessor):
             class _starterPack(DynAccessor):
                 __slots__ = ()
                 description = DynAccessor(5548)
-                purchaseText = DynAccessor(5293)
+                purchaseText = DynAccessor(5294)
 
             starterPack = _starterPack()
 
@@ -8446,8 +8446,8 @@ class battle_pass(DynAccessor):
 
         class _reward(DynAccessor):
             __slots__ = ()
-            descriptionFutureRewards = DynAccessor(5272)
-            descriptionNowRewards = DynAccessor(5419)
+            descriptionFutureRewards = DynAccessor(5273)
+            descriptionNowRewards = DynAccessor(5420)
             descriptionNowRewardsCheckbox = DynAccessor(5547)
             descriptionNowRewardsSingle = DynAccessor(5535)
             titleFutureRewards = DynAccessor(5247)
@@ -8467,13 +8467,13 @@ class battle_pass(DynAccessor):
 
     class _battlePassVehicleAwardView(DynAccessor):
         __slots__ = ()
-        button = DynAccessor(5347)
+        button = DynAccessor(5348)
 
         class _content(DynAccessor):
             __slots__ = ()
-            description = DynAccessor(5305)
-            postTitle = DynAccessor(5394)
-            subTitle = DynAccessor(5397)
+            description = DynAccessor(5306)
+            postTitle = DynAccessor(5395)
+            subTitle = DynAccessor(5398)
             title = DynAccessor(5646)
 
         content = _content()
@@ -8491,16 +8491,18 @@ class battle_pass(DynAccessor):
             c_201 = DynAccessor(5729)
             c_202 = DynAccessor(5728)
             c_203 = DynAccessor(5727)
+            c_204 = DynAccessor(5726)
 
         fullName = _fullName()
 
         class _fullNameUppercased(DynAccessor):
             __slots__ = ()
             c_10021 = DynAccessor(5511)
-            c_1114 = DynAccessor(5322)
+            c_1114 = DynAccessor(5323)
             c_201 = DynAccessor(5536)
             c_202 = DynAccessor(5538)
             c_203 = DynAccessor(5537)
+            c_204 = DynAccessor(5539)
 
         fullNameUppercased = _fullNameUppercased()
         title = DynAccessor(5478)
@@ -8549,7 +8551,7 @@ class battle_pass(DynAccessor):
 
             class _button(DynAccessor):
                 __slots__ = ()
-                cancel = DynAccessor(5400)
+                cancel = DynAccessor(5401)
                 submit = DynAccessor(5756)
                 switch = DynAccessor(5427)
 
@@ -8558,13 +8560,13 @@ class battle_pass(DynAccessor):
             class _description(DynAccessor):
                 __slots__ = ()
                 select = DynAccessor(5245)
-                switch = DynAccessor(5297)
+                switch = DynAccessor(5298)
 
             description = _description()
 
             class _extraChapterDescription(DynAccessor):
                 __slots__ = ()
-                highlightText = DynAccessor(5543)
+                highlightText = DynAccessor(5544)
                 text = DynAccessor(5256)
 
             extraChapterDescription = _extraChapterDescription()
@@ -8623,7 +8625,7 @@ class battle_pass(DynAccessor):
         class _postprogression(DynAccessor):
             __slots__ = ()
             locked = DynAccessor(5673)
-            name = DynAccessor(5282)
+            name = DynAccessor(5283)
 
             class _unlocked(DynAccessor):
                 __slots__ = ()
@@ -8635,11 +8637,11 @@ class battle_pass(DynAccessor):
 
         class _stages(DynAccessor):
             __slots__ = ()
-            additional = DynAccessor(5327)
+            additional = DynAccessor(5328)
 
             class _complete(DynAccessor):
                 __slots__ = ()
-                improved = DynAccessor(5381)
+                improved = DynAccessor(5382)
                 unimproved = DynAccessor(5583)
 
             complete = _complete()
@@ -8675,8 +8677,8 @@ class battle_pass(DynAccessor):
 
             class _reward(DynAccessor):
                 __slots__ = ()
-                subTitle = DynAccessor(5358)
-                title = DynAccessor(5407)
+                subTitle = DynAccessor(5359)
+                title = DynAccessor(5408)
 
             reward = _reward()
 
@@ -8696,12 +8698,12 @@ class battle_pass(DynAccessor):
         class _bonus(DynAccessor):
             __slots__ = ()
             battle_booster_gift = DynAccessor(5552)
-            blueprint_gift = DynAccessor(5359)
+            blueprint_gift = DynAccessor(5360)
             brochure_gift = DynAccessor(5735)
             crewbook_gift = DynAccessor(5609)
-            guide_gift = DynAccessor(5260)
+            guide_gift = DynAccessor(5261)
             modernized_device_gift = DynAccessor(5593)
-            new_device_gift = DynAccessor(5335)
+            new_device_gift = DynAccessor(5336)
             trophy_gift = DynAccessor(5617)
 
         bonus = _bonus()
@@ -8738,8 +8740,8 @@ class battle_pass(DynAccessor):
             class _roles(DynAccessor):
                 __slots__ = ()
                 commander = DynAccessor(5253)
-                driver = DynAccessor(5328)
-                gunner = DynAccessor(5279)
+                driver = DynAccessor(5329)
+                gunner = DynAccessor(5280)
                 loader = DynAccessor(5630)
                 radioman = DynAccessor(5595)
 
@@ -8755,12 +8757,12 @@ class battle_pass(DynAccessor):
         class _buyState(DynAccessor):
             __slots__ = ()
             buyButton = DynAccessor(5685)
-            description = DynAccessor(5346)
+            description = DynAccessor(5347)
             moreRewards = DynAccessor(5575)
-            title = DynAccessor(5357)
+            title = DynAccessor(5358)
 
         buyState = _buyState()
-        chapter = DynAccessor(5422)
+        chapter = DynAccessor(5423)
         completed = DynAccessor(5696)
 
         class _finalState(DynAccessor):
@@ -8769,10 +8771,10 @@ class battle_pass(DynAccessor):
             class _button(DynAccessor):
                 __slots__ = ()
                 showHangar = DynAccessor(5564)
-                showVehicle = DynAccessor(5371)
+                showVehicle = DynAccessor(5372)
 
             button = _button()
-            label = DynAccessor(5340)
+            label = DynAccessor(5341)
 
         finalState = _finalState()
 
@@ -8785,9 +8787,9 @@ class battle_pass(DynAccessor):
 
         class _tankmenState(DynAccessor):
             __slots__ = ()
-            description = DynAccessor(5315)
+            description = DynAccessor(5316)
             tankmenButton = DynAccessor(5554)
-            title = DynAccessor(5269)
+            title = DynAccessor(5270)
 
         tankmenState = _tankmenState()
 
@@ -8798,18 +8800,18 @@ class battle_pass(DynAccessor):
 
         class _battleRoyal(DynAccessor):
             __slots__ = ()
-            platoon = DynAccessor(5288)
-            solo = DynAccessor(5294)
+            platoon = DynAccessor(5289)
+            solo = DynAccessor(5295)
 
         battleRoyal = _battleRoyal()
 
         class _battleTypeTitle(DynAccessor):
             __slots__ = ()
-            c_1 = DynAccessor(5408)
+            c_1 = DynAccessor(5409)
             c_27 = DynAccessor(5567)
             c_29 = DynAccessor(5566)
-            c_43 = DynAccessor(5264)
-            c_49 = DynAccessor(5268)
+            c_43 = DynAccessor(5265)
+            c_49 = DynAccessor(5269)
 
         battleTypeTitle = _battleTypeTitle()
         bonus = DynAccessor(5759)
@@ -8842,21 +8844,21 @@ class battle_pass(DynAccessor):
             class _daily(DynAccessor):
                 __slots__ = ()
                 linkText = DynAccessor(5598)
-                text = DynAccessor(5361)
-                title = DynAccessor(5413)
+                text = DynAccessor(5362)
+                title = DynAccessor(5414)
 
             daily = _daily()
 
             class _epicBattlePoints(DynAccessor):
                 __slots__ = ()
                 text = DynAccessor(5228)
-                title = DynAccessor(5421)
+                title = DynAccessor(5422)
 
             epicBattlePoints = _epicBattlePoints()
 
             class _limitPoints(DynAccessor):
                 __slots__ = ()
-                text = DynAccessor(5318)
+                text = DynAccessor(5319)
                 title = DynAccessor(5445)
 
             limitPoints = _limitPoints()
@@ -8878,7 +8880,7 @@ class battle_pass(DynAccessor):
 
         condition = _condition()
         conditions = DynAccessor(5492)
-        description = DynAccessor(5344)
+        description = DynAccessor(5345)
         earned = DynAccessor(5456)
         extraPoints = DynAccessor(5498)
 
@@ -8914,7 +8916,7 @@ class battle_pass(DynAccessor):
             c_43 = DynAccessor(5468)
             c_49 = DynAccessor(5469)
 
-        rating = _rating(5374)
+        rating = _rating(5375)
 
         class _singleLevel(DynAccessor):
             __slots__ = ()
@@ -8924,7 +8926,7 @@ class battle_pass(DynAccessor):
 
         class _solo(DynAccessor):
             __slots__ = ()
-            c_29 = DynAccessor(5385)
+            c_29 = DynAccessor(5386)
 
         solo = _solo()
 
@@ -8936,23 +8938,23 @@ class battle_pass(DynAccessor):
 
         class _text(DynAccessor):
             __slots__ = ()
-            c_1 = DynAccessor(5295)
-            c_27 = DynAccessor(5331)
-            c_29 = DynAccessor(5336)
+            c_1 = DynAccessor(5296)
+            c_27 = DynAccessor(5332)
+            c_29 = DynAccessor(5337)
             c_43 = DynAccessor(5629)
             c_49 = DynAccessor(5632)
 
         text = _text()
-        title = DynAccessor(5360)
+        title = DynAccessor(5361)
         vehicle = DynAccessor(5518)
         vehicles = DynAccessor(5486)
 
         class _win(DynAccessor):
             __slots__ = ()
             c_1 = DynAccessor(5686)
-            c_27 = DynAccessor(5726)
-            c_43 = DynAccessor(5354)
-            c_49 = DynAccessor(5352)
+            c_27 = DynAccessor(5454)
+            c_43 = DynAccessor(5355)
+            c_49 = DynAccessor(5353)
 
         win = _win()
 
@@ -8976,7 +8978,7 @@ class battle_pass(DynAccessor):
         class _seasonDescription(DynAccessor):
             __slots__ = ()
             text = DynAccessor(5597)
-            title = DynAccessor(5403)
+            title = DynAccessor(5404)
 
         seasonDescription = _seasonDescription()
         title = DynAccessor(5431)
@@ -8988,22 +8990,22 @@ class battle_pass(DynAccessor):
         __slots__ = ()
         buyLevels = DynAccessor(5739)
         buyLevelsRewards = DynAccessor(5690)
-        buyPass = DynAccessor(5275)
-        buyPassConfirm = DynAccessor(5396)
+        buyPass = DynAccessor(5276)
+        buyPassConfirm = DynAccessor(5397)
         buyPassRewards = DynAccessor(5671)
         chapterChoice = DynAccessor(5479)
-        holidayFinal = DynAccessor(5338)
-        intro = DynAccessor(5417)
+        holidayFinal = DynAccessor(5339)
+        intro = DynAccessor(5418)
         postProgression = DynAccessor(5249)
         progression = DynAccessor(5737)
-        tankmenScreen = DynAccessor(5410)
+        tankmenScreen = DynAccessor(5411)
 
     navigation = _navigation()
 
     class _points(DynAccessor):
         __slots__ = ()
         top = DynAccessor(5546)
-        topCount = DynAccessor(5373)
+        topCount = DynAccessor(5374)
         transfer = DynAccessor(5255)
 
     points = _points()
@@ -9022,7 +9024,7 @@ class battle_pass(DynAccessor):
 
             class _description(DynAccessor):
                 __slots__ = ()
-                text = DynAccessor(5365)
+                text = DynAccessor(5366)
 
             description = _description()
 
@@ -9071,7 +9073,7 @@ class battle_pass(DynAccessor):
 
                 class _onPause(DynAccessor):
                     __slots__ = ()
-                    highlight = DynAccessor(5274)
+                    highlight = DynAccessor(5275)
                     regular = DynAccessor(5699)
 
                 onPause = _onPause()
@@ -9080,17 +9082,17 @@ class battle_pass(DynAccessor):
 
             class _headline(DynAccessor):
                 __slots__ = ()
-                deadline = DynAccessor(5313)
+                deadline = DynAccessor(5314)
                 unlocked = DynAccessor(5624)
 
             headline = _headline()
-            title = DynAccessor(5348)
+            title = DynAccessor(5349)
 
         header = _header()
 
         class _progression(DynAccessor):
             __slots__ = ()
-            currentStep = DynAccessor(5353)
+            currentStep = DynAccessor(5354)
             cyclesCompleted = DynAccessor(5501)
             cyclicalProgression = DynAccessor(5512)
 
@@ -9114,15 +9116,15 @@ class battle_pass(DynAccessor):
     class _progression(DynAccessor):
         __slots__ = ()
         about = DynAccessor(5533)
-        aboutExtra = DynAccessor(5349)
+        aboutExtra = DynAccessor(5350)
         activateChapter = DynAccessor(5661)
         activateChapterDescr = DynAccessor(5698)
-        activateExtraChapterDescr = DynAccessor(5326)
-        activatePausedExtraChapterDescr = DynAccessor(5376)
+        activateExtraChapterDescr = DynAccessor(5327)
+        activatePausedExtraChapterDescr = DynAccessor(5377)
 
         class _backToCurrentStageArrow(DynAccessor):
             __slots__ = ()
-            descr = DynAccessor(5285)
+            descr = DynAccessor(5286)
 
         backToCurrentStageArrow = _backToCurrentStageArrow()
 
@@ -9132,38 +9134,38 @@ class battle_pass(DynAccessor):
 
         backToPotentialStageArrow = _backToPotentialStageArrow()
         baseProgressionDescr = DynAccessor(5231)
-        battlePassBuyBtn = DynAccessor(5404)
+        battlePassBuyBtn = DynAccessor(5405)
         battlePassBuyDescr = DynAccessor(5592)
         battlePassBuyDescrStarterPack = DynAccessor(5439)
         battlePassBuyHolidayDescr = DynAccessor(5587)
-        battlePassNextChapterBuyDescr = DynAccessor(5284)
+        battlePassNextChapterBuyDescr = DynAccessor(5285)
         battlePassNextChapterEpisodesDescr = DynAccessor(5239)
         btnExtras = DynAccessor(5563)
         btnExtrasTooltip = DynAccessor(5750)
         btnNoExtrasTooltip = DynAccessor(5701)
         btnRewardSelect = DynAccessor(5441)
-        btnRewardSelectTooltip = DynAccessor(5286)
+        btnRewardSelectTooltip = DynAccessor(5287)
         btnRewardsSelect = DynAccessor(5637)
         btnRewardsUnavailable = DynAccessor(5689)
         btnTokensStore = DynAccessor(5569)
         btnTokensStoreTooltip = DynAccessor(5669)
         chapterText = DynAccessor(5653)
         currentStep = DynAccessor(5232)
-        currentStepLocked = DynAccessor(5321)
+        currentStepLocked = DynAccessor(5322)
         episodeBuyBtn = DynAccessor(5572)
         episodeBuyDescr = DynAccessor(5599)
         episodeBuyDisableDescr = DynAccessor(5662)
         error = DynAccessor(5604)
-        errorBtn = DynAccessor(5265)
+        errorBtn = DynAccessor(5266)
 
         class _extraChapterWidget(DynAccessor):
             __slots__ = ()
             commanderVoices = DynAccessor(5610)
             forLabel = DynAccessor(5230)
-            inHangarTooltip = DynAccessor(5388)
+            inHangarTooltip = DynAccessor(5389)
             labelWithBP = DynAccessor(5582)
-            style3DTitle = DynAccessor(5368)
-            styleName = DynAccessor(5271)
+            style3DTitle = DynAccessor(5369)
+            styleName = DynAccessor(5272)
             styleRemark = DynAccessor(5499)
             styleSubTitle = DynAccessor(5487)
             styleTitle = DynAccessor(5594)
@@ -9173,15 +9175,15 @@ class battle_pass(DynAccessor):
 
                 class _description(DynAccessor):
                     __slots__ = ()
-                    c_14 = DynAccessor(5302)
+                    c_14 = DynAccessor(5303)
 
                 description = _description()
 
-            tank = _tank(5303)
+            tank = _tank(5304)
             tankman = DynAccessor(5258)
-            tankName = DynAccessor(5395)
-            timer = DynAccessor(5333)
-            vehicleCaption = DynAccessor(5363)
+            tankName = DynAccessor(5396)
+            timer = DynAccessor(5334)
+            vehicleCaption = DynAccessor(5364)
             vehicleSubTitle = DynAccessor(5613)
             voiceoverTooltip = DynAccessor(5769)
 
@@ -9199,7 +9201,7 @@ class battle_pass(DynAccessor):
             class _status(DynAccessor):
                 __slots__ = ()
                 inactive = DynAccessor(5743)
-                paused = DynAccessor(5364)
+                paused = DynAccessor(5365)
 
             status = _status()
 
@@ -9215,7 +9217,7 @@ class battle_pass(DynAccessor):
 
             chapter = _chapter()
             inactive = DynAccessor(5693)
-            paused = DynAccessor(5390)
+            paused = DynAccessor(5391)
 
         header = _header()
 
@@ -9225,11 +9227,11 @@ class battle_pass(DynAccessor):
 
         howToEarnPoints = _howToEarnPoints()
         pausedStep = DynAccessor(5635)
-        postProgressionDescr = DynAccessor(5287)
+        postProgressionDescr = DynAccessor(5288)
         premiumProgressionDescr = DynAccessor(5622)
         progressionArrow = DynAccessor(5579)
         progressionChapterArrow = DynAccessor(5505)
-        progressionChapterGoTo = DynAccessor(5330)
+        progressionChapterGoTo = DynAccessor(5331)
 
         class _season(DynAccessor):
             __slots__ = ()
@@ -9243,15 +9245,15 @@ class battle_pass(DynAccessor):
 
         season = _season()
         seasonEndingDescr = DynAccessor(5581)
-        seasonEndingTooltip = DynAccessor(5411)
+        seasonEndingTooltip = DynAccessor(5412)
         takeReward = DynAccessor(5621)
         universalCommander = DynAccessor(5771)
 
         class _widget3dStyle(DynAccessor):
             __slots__ = ()
-            currentStyle = DynAccessor(5420)
+            currentStyle = DynAccessor(5421)
             forVehicle = DynAccessor(5432)
-            titleForClosedChapter = DynAccessor(5541)
+            titleForClosedChapter = DynAccessor(5542)
             titleForLastChapter = DynAccessor(5712)
             titleNoChapterSelected = DynAccessor(5446)
             viewStyles = DynAccessor(5677)
@@ -9259,8 +9261,8 @@ class battle_pass(DynAccessor):
         widget3dStyle = _widget3dStyle()
 
     progression = _progression()
-    questChainBonus = DynAccessor(5339)
-    randomQuestBonus = DynAccessor(5332)
+    questChainBonus = DynAccessor(5340)
+    randomQuestBonus = DynAccessor(5333)
 
     class _reward(DynAccessor):
         __slots__ = ()
@@ -9273,7 +9275,7 @@ class battle_pass(DynAccessor):
 
                 class _progress(DynAccessor):
                     __slots__ = ()
-                    tooltip = DynAccessor(5309)
+                    tooltip = DynAccessor(5310)
 
                 progress = _progress(5550)
 
@@ -9284,7 +9286,7 @@ class battle_pass(DynAccessor):
 
                 class _battle(DynAccessor):
                     __slots__ = ()
-                    tooltip = DynAccessor(5310)
+                    tooltip = DynAccessor(5311)
 
                 battle = _battle()
 
@@ -9306,25 +9308,25 @@ class battle_pass(DynAccessor):
 
                 class _pointsAux(DynAccessor):
                     __slots__ = ()
-                    tooltip = DynAccessor(5405)
+                    tooltip = DynAccessor(5406)
 
                 pointsAux = _pointsAux(5440)
 
                 class _quests(DynAccessor):
                     __slots__ = ()
-                    tooltip = DynAccessor(5329)
+                    tooltip = DynAccessor(5330)
 
                 quests = _quests()
                 tooltip = DynAccessor(5570)
 
-            progress = _progress(5414)
+            progress = _progress(5415)
 
             class _title(DynAccessor):
                 __slots__ = ()
                 free = DynAccessor(5434)
                 postProgression = DynAccessor(5758)
 
-            title = _title(5383)
+            title = _title(5384)
 
         postBattle = _postBattle()
 
@@ -9351,7 +9353,7 @@ class battle_pass(DynAccessor):
         class _fullName(DynAccessor):
             __slots__ = ()
             c_1002 = DynAccessor(5615)
-            c_20 = DynAccessor(5307)
+            c_20 = DynAccessor(5308)
 
         fullName = _fullName()
 
@@ -9366,14 +9368,14 @@ class battle_pass(DynAccessor):
 
     class _selectBonus(DynAccessor):
         __slots__ = ()
-        battle_booster_gift = DynAccessor(5454)
+        battle_booster_gift = DynAccessor(5259)
         blueprint_gift = DynAccessor(5584)
         brochure_gift = DynAccessor(5586)
         crewbook_gift = DynAccessor(5638)
-        guide_gift = DynAccessor(5391)
+        guide_gift = DynAccessor(5392)
         modernized_device_gift = DynAccessor(5764)
-        new_device_gift = DynAccessor(5369)
-        trophy_gift = DynAccessor(5320)
+        new_device_gift = DynAccessor(5370)
+        trophy_gift = DynAccessor(5321)
 
     selectBonus = _selectBonus()
 
@@ -9390,25 +9392,23 @@ class battle_pass(DynAccessor):
         timeLeft = _timeLeft()
 
     status = _status()
-    styleProgressBonus = DynAccessor(5382)
+    styleProgressBonus = DynAccessor(5383)
 
     class _styleProgression(DynAccessor):
         __slots__ = ()
         finalLevel = DynAccessor(5588)
-        newLevel = DynAccessor(5367)
-        newStyle = DynAccessor(5540)
+        newLevel = DynAccessor(5368)
+        newStyle = DynAccessor(5541)
 
     styleProgression = _styleProgression()
 
     class _tankmenVoiceover(DynAccessor):
         __slots__ = ()
-        chapterButton = DynAccessor(5298)
+        chapterButton = DynAccessor(5299)
         inShop = DynAccessor(5244)
         listen = DynAccessor(5490)
-        notFull = DynAccessor(5423)
-        progression = DynAccessor(5267)
-        received = DynAccessor(5545)
-        shopButton = DynAccessor(5389)
+        progression = DynAccessor(5268)
+        shopButton = DynAccessor(5390)
         title = DynAccessor(5720)
         unavailable = DynAccessor(5606)
 
@@ -9416,9 +9416,9 @@ class battle_pass(DynAccessor):
 
     class _title(DynAccessor):
         __slots__ = ()
-        earningPoints = DynAccessor(5356)
-        freePoints = DynAccessor(5342)
-        stage = DynAccessor(5377)
+        earningPoints = DynAccessor(5357)
+        freePoints = DynAccessor(5343)
+        stage = DynAccessor(5378)
 
     title = _title()
 
@@ -9430,7 +9430,7 @@ class battle_pass(DynAccessor):
 
             class _disabled(DynAccessor):
                 __slots__ = ()
-                body = DynAccessor(5277)
+                body = DynAccessor(5278)
 
             disabled = _disabled()
 
@@ -9438,8 +9438,8 @@ class battle_pass(DynAccessor):
 
         class _freePoints(DynAccessor):
             __slots__ = ()
-            body = DynAccessor(5380)
-            header = DynAccessor(5324)
+            body = DynAccessor(5381)
+            header = DynAccessor(5325)
 
         freePoints = _freePoints()
         lock = DynAccessor(5643)
@@ -9460,15 +9460,15 @@ class battle_pass(DynAccessor):
         class _battlePassPoints(DynAccessor):
             __slots__ = ()
             completed = DynAccessor(5603)
-            description = DynAccessor(5280)
-            title = DynAccessor(5304)
+            description = DynAccessor(5281)
+            title = DynAccessor(5305)
 
         battlePassPoints = _battlePassPoints()
 
         class _battlePassQuestsChain(DynAccessor):
             __slots__ = ()
-            secondaryText = DynAccessor(5370)
-            text = DynAccessor(5290)
+            secondaryText = DynAccessor(5371)
+            text = DynAccessor(5291)
             title = DynAccessor(5254)
 
         battlePassQuestsChain = _battlePassQuestsChain()
@@ -9476,15 +9476,15 @@ class battle_pass(DynAccessor):
         class _battlePassTaler(DynAccessor):
             __slots__ = ()
             secondaryText = DynAccessor(5768)
-            text = DynAccessor(5283)
+            text = DynAccessor(5284)
             title = DynAccessor(5612)
 
         battlePassTaler = _battlePassTaler()
 
         class _claimRewards(DynAccessor):
             __slots__ = ()
-            c_0 = DynAccessor(5314)
-            c_1 = DynAccessor(5312)
+            c_0 = DynAccessor(5315)
+            c_1 = DynAccessor(5313)
             multiple = DynAccessor(5429)
 
         claimRewards = _claimRewards()
@@ -9503,11 +9503,11 @@ class battle_pass(DynAccessor):
             finalLevel = DynAccessor(5633)
             got = DynAccessor(5482)
             message = DynAccessor(5722)
-            oneChapterSubTitle = DynAccessor(5306)
-            rewardsObtained = DynAccessor(5406)
-            subTitle = DynAccessor(5355)
+            oneChapterSubTitle = DynAccessor(5307)
+            rewardsObtained = DynAccessor(5407)
+            subTitle = DynAccessor(5356)
             tankmenNotRecieved = DynAccessor(5725)
-            title = DynAccessor(5402)
+            title = DynAccessor(5403)
 
         completed = _completed()
 
@@ -9526,7 +9526,7 @@ class battle_pass(DynAccessor):
 
         class _extra(DynAccessor):
             __slots__ = ()
-            daysAndHours = DynAccessor(5316)
+            daysAndHours = DynAccessor(5317)
             min = DynAccessor(5641)
 
         extra = _extra()
@@ -9536,7 +9536,7 @@ class battle_pass(DynAccessor):
 
             class _activateChapter(DynAccessor):
                 __slots__ = ()
-                descr = DynAccessor(5416)
+                descr = DynAccessor(5417)
 
             activateChapter = _activateChapter()
 
@@ -9559,16 +9559,16 @@ class battle_pass(DynAccessor):
         class _goldMission(DynAccessor):
             __slots__ = ()
             description = DynAccessor(5509)
-            highlightedDescription = DynAccessor(5386)
+            highlightedDescription = DynAccessor(5387)
             text = DynAccessor(5508)
             textDuration = DynAccessor(5748)
-            title = DynAccessor(5401)
+            title = DynAccessor(5402)
 
         goldMission = _goldMission()
 
         class _iconLock(DynAccessor):
             __slots__ = ()
-            descr1 = DynAccessor(5270)
+            descr1 = DynAccessor(5271)
             descr2 = DynAccessor(5506)
             holidayDescr1 = DynAccessor(5761)
             holidayDescr2 = DynAccessor(5760)
@@ -9578,14 +9578,14 @@ class battle_pass(DynAccessor):
 
         class _inProgress(DynAccessor):
             __slots__ = ()
-            baseReward = DynAccessor(5539)
-            battleRoyale = DynAccessor(5276)
+            baseReward = DynAccessor(5540)
+            battleRoyale = DynAccessor(5277)
             chapter = DynAccessor(5462)
             epic = DynAccessor(5767)
             getPointsFrom = DynAccessor(5754)
             hurryUp = DynAccessor(5532)
             improvedReward = DynAccessor(5640)
-            level = DynAccessor(5387)
+            level = DynAccessor(5388)
 
             class _playGame(DynAccessor):
                 __slots__ = ()
@@ -9593,8 +9593,8 @@ class battle_pass(DynAccessor):
                 comp7_light = DynAccessor(5691)
                 mapbox = DynAccessor(5560)
                 randoms = DynAccessor(5668)
-                ranked = DynAccessor(5263)
-                winback = DynAccessor(5362)
+                ranked = DynAccessor(5264)
+                winback = DynAccessor(5363)
 
             playGame = _playGame()
 
@@ -9604,16 +9604,16 @@ class battle_pass(DynAccessor):
 
             postProgression = _postProgression()
             timeLeft = DynAccessor(5500)
-            wotPlusProFooter = DynAccessor(5398)
+            wotPlusProFooter = DynAccessor(5399)
 
         inProgress = _inProgress()
 
         class _notChosen(DynAccessor):
             __slots__ = ()
-            description = DynAccessor(5323)
+            description = DynAccessor(5324)
             points = DynAccessor(5241)
             subTitle = DynAccessor(5618)
-            title = DynAccessor(5544)
+            title = DynAccessor(5545)
 
         notChosen = _notChosen()
 
@@ -9631,9 +9631,9 @@ class battle_pass(DynAccessor):
 
         class _points(DynAccessor):
             __slots__ = ()
-            footer = DynAccessor(5392)
+            footer = DynAccessor(5393)
             rules = DynAccessor(5514)
-            specialVehicles = DynAccessor(5418)
+            specialVehicles = DynAccessor(5419)
             subtitle = DynAccessor(5631)
             title = DynAccessor(5716)
 
@@ -9641,12 +9641,12 @@ class battle_pass(DynAccessor):
 
         class _pointsTable(DynAccessor):
             __slots__ = ()
-            header = DynAccessor(5291)
+            header = DynAccessor(5292)
             lose = DynAccessor(5766)
             loseWithoutDraw = DynAccessor(5674)
             place = DynAccessor(5616)
             places = DynAccessor(5525)
-            solo = DynAccessor(5337)
+            solo = DynAccessor(5338)
             squad = DynAccessor(5676)
             topPlace = DynAccessor(5436)
             win = DynAccessor(5435)
@@ -9656,7 +9656,7 @@ class battle_pass(DynAccessor):
         class _postProgress(DynAccessor):
             __slots__ = ()
             body = DynAccessor(5753)
-            header = DynAccessor(5415)
+            header = DynAccessor(5416)
 
         postProgress = _postProgress()
 
@@ -9665,7 +9665,7 @@ class battle_pass(DynAccessor):
             lose = DynAccessor(5474)
             loseWithoutDraw = DynAccessor(5745)
             topPlace = DynAccessor(5721)
-            win = DynAccessor(5278)
+            win = DynAccessor(5279)
 
         prestigePoints = _prestigePoints()
 
@@ -9674,7 +9674,7 @@ class battle_pass(DynAccessor):
 
             class _freePoints(DynAccessor):
                 __slots__ = ()
-                body = DynAccessor(5259)
+                body = DynAccessor(5260)
                 bodyExceptExtra = DynAccessor(5709)
                 header = DynAccessor(5665)
 
@@ -9685,7 +9685,7 @@ class battle_pass(DynAccessor):
         class _RandomQuestTooltip(DynAccessor):
             __slots__ = ()
             condition = DynAccessor(5702)
-            expireTime = DynAccessor(5289)
+            expireTime = DynAccessor(5290)
 
             class _rewards(DynAccessor):
                 __slots__ = ()
@@ -9693,12 +9693,12 @@ class battle_pass(DynAccessor):
                 directives = DynAccessor(5752)
                 money = DynAccessor(5607)
                 personal_reserves = DynAccessor(5561)
-                premium = DynAccessor(5341)
+                premium = DynAccessor(5342)
                 standardEquipment = DynAccessor(5711)
 
             rewards = _rewards()
-            rewardsTitle = DynAccessor(5301)
-            title = DynAccessor(5366)
+            rewardsTitle = DynAccessor(5302)
+            title = DynAccessor(5367)
 
         RandomQuestTooltip = _RandomQuestTooltip()
 
@@ -9717,7 +9717,7 @@ class battle_pass(DynAccessor):
 
         class _styles(DynAccessor):
             __slots__ = ()
-            descr = DynAccessor(5273)
+            descr = DynAccessor(5274)
             footer = DynAccessor(5452)
             name = DynAccessor(5623)
             style = DynAccessor(5746)
@@ -9731,7 +9731,7 @@ class battle_pass(DynAccessor):
             class _chosen(DynAccessor):
                 __slots__ = ()
                 levelWord = DynAccessor(5504)
-                subtitle = DynAccessor(5345)
+                subtitle = DynAccessor(5346)
                 text = DynAccessor(5444)
                 title = DynAccessor(5591)
 
@@ -9741,33 +9741,33 @@ class battle_pass(DynAccessor):
                 __slots__ = ()
                 text = DynAccessor(5574)
                 title = DynAccessor(5458)
-                warning = DynAccessor(5542)
+                warning = DynAccessor(5543)
 
             notChosen = _notChosen()
             paragraphBottom = DynAccessor(5235)
             paragraphTop = DynAccessor(5257)
 
         styleUpgrade = _styleUpgrade()
-        unlockBattlePass = DynAccessor(5393)
+        unlockBattlePass = DynAccessor(5394)
         unlockBattlePassForPostProgression = DynAccessor(5666)
 
         class _vehiclePoints(DynAccessor):
             __slots__ = ()
-            award = DynAccessor(5317)
+            award = DynAccessor(5318)
             comp7 = DynAccessor(5503)
             comp7_light = DynAccessor(5227)
             continuePlaying = DynAccessor(5524)
             descr = DynAccessor(5708)
-            mapbox = DynAccessor(5300)
+            mapbox = DynAccessor(5301)
             pointsObtained = DynAccessor(5521)
             ranked = DynAccessor(5238)
 
             class _special(DynAccessor):
                 __slots__ = ()
-                descr = DynAccessor(5350)
+                descr = DynAccessor(5351)
 
             special = _special()
-            title = DynAccessor(5266)
+            title = DynAccessor(5267)
 
         vehiclePoints = _vehiclePoints()
 
@@ -9777,14 +9777,14 @@ class battle_pass(DynAccessor):
         __slots__ = ()
         cancel = DynAccessor(5664)
         message = DynAccessor(5765)
-        submit = DynAccessor(5409)
+        submit = DynAccessor(5410)
         submitTooltip = DynAccessor(5246)
 
         class _title(DynAccessor):
             __slots__ = ()
             template = DynAccessor(5656)
 
-        title = _title(5262)
+        title = _title(5263)
 
     trophyDeviceUpgradeConfim = _trophyDeviceUpgradeConfim()
     universalTankmanBonus = DynAccessor(5233)
