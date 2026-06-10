@@ -18,7 +18,10 @@ msgid "channels/clan"
 msgstr "Клан"
 
 msgid "channels/common"
-msgstr "Общий"
+msgstr "Общий чат"
+
+msgid "channels/common/tooltip"
+msgstr "Общий чат для общения на текущем сервере."
 
 msgid "channels/epic_training"
 msgstr "Тренировочный — Линия фронта"
@@ -93,6 +96,17 @@ msgstr "Нельзя лишить администратора канала пр
 
 msgid "errors/delmoderatorowner"
 msgstr "Нельзя лишить владельца канала прав модератора."
+
+msgid "errors/novicerestrictions"
+msgstr ""
+"Вы можете принимать и отправлять сообщения только друзьям из списка контактов.\n"
+"\n"
+"Возможность отправки и принятия сообщений от всех игроков откроется после  %(battles)s боёв и получения в Ангар техники %(level)s (или выше) уровня."
+
+msgid "errors/novicerestrictionsshort"
+msgstr ""
+"Для доступа к боевому чату проведите %(battles)s боёв и получите любую "
+"машину %(level)s уровня или выше."
 
 msgid "errors/timeincorrect"
 msgstr ""

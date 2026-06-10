@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<ofEntity>
+		<Account/>
+	</ofEntity>
+	<Properties>
+		<chatLocked>
+			<Type>BOOL</Type>
+			<Flags>BASE_AND_CLIENT</Flags>
+			<default>FALSE</default>
+		</chatLocked>
+	</Properties>
+	<ClientMethods>
+		<setChatLockingState>
+			<Args>
+				<chatLocked>BOOL</chatLocked>
+			</Args>
+		</setChatLockingState>
+		<chatLockingStateChanged>
+			<Args>
+				<chatLocked>BOOL</chatLocked>
+			</Args>
+		</chatLockingStateChanged>
+	</ClientMethods>
+	<DefaultKeyName>accountNewbieChatLock</DefaultKeyName>
+</root>

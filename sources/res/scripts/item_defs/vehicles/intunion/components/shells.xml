@@ -584,13 +584,13 @@
 		<id>35001</id>
 		<userString>#intunion_vehicles:_57mm_53_BR_279_T</userString>
 		<icon>ap_cr</icon>
-		<price>152</price>
+		<price>252</price>
 		<kind>ARMOR_PIERCING_CR</kind>
 		<caliber>57</caliber>
 		<isTracer>true</isTracer>
 		<effects>mediumAPCR_autoshoot</effects>
 		<damage>
-			<armor>55</armor>
+			<armor>75</armor>
 			<devices>35</devices>
 		</damage>
 		<hitDeviceChanceMultiplier>
@@ -607,14 +607,14 @@
 		<id>35002</id>
 		<userString>#intunion_vehicles:_57mm_53_BR_279P_T</userString>
 		<icon>ap_cr_premium</icon>
-		<price>203</price>
+		<price>303</price>
 		<improved>true</improved>
 		<kind>ARMOR_PIERCING_CR</kind>
 		<caliber>57</caliber>
 		<isTracer>true</isTracer>
 		<effects>mediumAPCR_autoshoot</effects>
 		<damage>
-			<armor>33</armor>
+			<armor>46</armor>
 			<devices>35</devices>
 		</damage>
 		<hitDeviceChanceMultiplier>

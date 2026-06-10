@@ -1888,7 +1888,7 @@
 							<!--BW_String-->
 						</rate>
 						<rebuildShotDispersionDelay>
-							1.0
+							0.3
 							<!--BW_String-->
 						</rebuildShotDispersionDelay>
 					</autoShoot>
@@ -2620,7 +2620,7 @@
 		<detailed>
 			<engines>
 				<V_44_T>
-					<smplEnginePower>570</smplEnginePower>
+					<smplEnginePower>710</smplEnginePower>
 					<smplFwMaxSpeed>55</smplFwMaxSpeed>
 				</V_44_T>
 			</engines>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/russian/R214_ABM_152/normal/lod1/Hull</nodefullVisual>
+	<parent>vehicles/russian/R214_ABM_152/normal/lod2/Hull</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.699474 -0.564640 -3.279978</min>
+		<max>1.706431 0.622663 3.411941</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

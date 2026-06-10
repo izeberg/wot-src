@@ -250,7 +250,7 @@ package net.wg.gui.components.ribbon.data
          DAMAGE_SOURCE_MAP[DAMAGE_SOURCE_TYPES.FORT_ARTILLERY] = new DamageSourceComplexSetting(_loc1_,_loc2_,_loc3_);
       }
       
-      protected function init() : void
+      private function init() : void
       {
          this.initDynamicRibbons();
          if(!_isInit)

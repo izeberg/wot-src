@@ -52,6 +52,60 @@
 					</node>
 				</node>
 				<node>
+					<identifier>joint3</identifier>
+					<transform>
+						<row0>0.999995 -0.001919 0.002330</row0>
+						<row1>0.000678 0.895005 0.446055</row1>
+						<row2>-0.002942 -0.446051 0.895003</row2>
+						<row3>0.286404 -0.041328 0.547069</row3>
+					</transform>
+					<node>
+						<identifier>joint4</identifier>
+						<transform>
+							<row0>0.999997 -0.000736 -0.002029</row0>
+							<row1>-0.000061 0.929963 -0.367652</row1>
+							<row2>0.002157 0.367651 0.929961</row2>
+							<row3>0.001429 0.315243 0.138292</row3>
+						</transform>
+						<node>
+							<identifier>joint5</identifier>
+							<transform>
+								<row0>1.000000 -0.000000 0.000000</row0>
+								<row1>-0.000000 1.000000 -0.000000</row1>
+								<row2>-0.000000 -0.000000 1.000000</row2>
+								<row3>0.000290 0.002104 -0.654942</row3>
+							</transform>
+							<node>
+								<identifier>joint5_BlendBone</identifier>
+								<transform>
+									<row0>0.999999 0.001651 -0.000329</row0>
+									<row1>-0.001673 0.996314 -0.085765</row1>
+									<row2>-0.000186 -0.085765 -0.996315</row2>
+									<row3>-0.287781 -0.250641 -0.138070</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>joint4_BlendBone</identifier>
+							<transform>
+								<row0>0.999999 0.001651 -0.000329</row0>
+								<row1>-0.001673 0.996314 -0.085765</row1>
+								<row2>-0.000186 -0.085765 -0.996315</row2>
+								<row3>-0.287491 -0.248537 -0.793012</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>joint3_BlendBone</identifier>
+						<transform>
+							<row0>0.999995 0.000678 -0.002942</row0>
+							<row1>-0.001919 0.895005 -0.446051</row1>
+							<row2>-0.002330 -0.446055 -0.895003</row2>
+							<row3>-0.287757 -0.207228 -0.507220</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
 					<identifier>Gun_BlendBone</identifier>
 					<transform>
 						<row0>1.000000 0.000000 0.000000</row0>

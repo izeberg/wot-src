@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/chinese/Ch73_GPT_75/_skins/Ch73_GPT_75_3Dst_Armored_Heat/crash/lod3/Chassis</nodefullVisual>
+	<parent>vehicles/chinese/Ch73_GPT_75/_skins/Ch73_GPT_75_3Dst_Armored_Heat/crash/lod4/Chassis</parent>
+	<tank>true</tank>
+	<extent>
+		192.0
+		<!--BW_String-->
+	</extent>
+	<visibilityBox>
+		<min>-1.662852 0.000420 -3.328750</min>
+		<max>1.660684 1.022432 3.905859</max>
+	</visibilityBox>
+</root>

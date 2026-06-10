@@ -38,9 +38,23 @@
 	<numPlayerGroups>3</numPlayerGroups>
 	<playerGroupLimit>10</playerGroupLimit>
 	<estimatedLoad>
-		0.91
+		0.73
 		<!--BW_String-->
 	</estimatedLoad>
+	<bonusTypeOverrides>
+		<EPIC_RANDOM>
+			<estimatedLoad>
+				0.73
+				<!--BW_String-->
+			</estimatedLoad>
+		</EPIC_RANDOM>
+		<EPIC_RANDOM_TRAINING>
+			<estimatedLoad>
+				0.73
+				<!--BW_String-->
+			</estimatedLoad>
+		</EPIC_RANDOM_TRAINING>
+	</bonusTypeOverrides>
 	<gameplayTypes>
 		<ctf30x30>
 			<teamSpawnPoints>

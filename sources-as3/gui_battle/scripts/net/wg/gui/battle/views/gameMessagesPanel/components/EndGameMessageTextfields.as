@@ -22,11 +22,6 @@ package net.wg.gui.battle.views.gameMessagesPanel.components
       public final function dispose() : void
       {
          this._disposed = true;
-         this.onDispose();
-      }
-      
-      protected function onDispose() : void
-      {
          this.titleTF = null;
          this.subtitleTF = null;
       }

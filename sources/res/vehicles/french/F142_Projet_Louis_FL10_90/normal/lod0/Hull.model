@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/french/F142_Projet_Louis_FL10_90/normal/lod1/Hull</parent>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/french/F142_Projet_Louis_FL10_90/normal/lod0/Hull</nodefullVisual>
+	<visibilityBox>
+		<min>-1.534893 -0.670018 -3.322369</min>
+		<max>1.524440 0.749740 3.453781</max>
+	</visibilityBox>
+</root>

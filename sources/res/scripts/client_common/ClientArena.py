@@ -396,7 +396,8 @@ class ClientArena(object):
            'vehPostProgression': info[25], 
            'customRoleSlotTypeId': info[26], 
            'botDisplayStatus': info[27], 
-           'statTrackFrags': info[28]}
+           'statTrackFrags': info[28], 
+           'selectedComp7Skill': info[29]}
         return (
          info[0], infoAsDict)
 

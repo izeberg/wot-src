@@ -184,8 +184,8 @@ package net.wg.app.iml.base
          var scale:Number = param3;
          try
          {
-            h = Math.round(oh / scale);
-            w = Math.round(ow / scale);
+            h = Math.ceil(oh / scale);
+            w = Math.ceil(ow / scale);
             if(this.appWidth == w && this.appHeight == h && this.appScale == scale)
             {
                return;

@@ -6,7 +6,9 @@ package net.wg.gui.battle.comp7.VO.daapi
    {
        
       
-      public var role:String = "";
+      public var equipmentName:String = "";
+      
+      public var equipmentID:uint = 0;
       
       public var skillLevel:uint = 0;
       

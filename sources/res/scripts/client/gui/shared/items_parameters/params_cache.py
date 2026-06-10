@@ -8,7 +8,7 @@ import nations
 from debug_utils import LOG_CURRENT_EXCEPTION
 from items import vehicles, ITEM_TYPES, EQUIPMENT_TYPES
 from items.vehicles import getVehicleType
-from gui.shared.utils import GUN_NORMAL, GUN_CAN_BE_CLIP, GUN_CLIP, GUN_CAN_BE_AUTO_RELOAD, GUN_AUTO_RELOAD, GUN_DUAL_GUN, GUN_CAN_BE_DUAL_GUN, GUN_AUTOSHOOT_FLAME, GUN_CAN_BE_AUTOSHOOT_FLAME, GUN_AUTO_RELOAD_DUAL_GUN, GUN_CLIP_DUAL_GUN, GUN_CAN_BE_AUTO_RELOAD_DUAL_GUN, GUN_CAN_BE_CLIP_DUAL_GUN, GUN_CAN_BE_AUTOSHOOT, GUN_AUTOSHOOT
+from gui.shared.utils import GUN_NORMAL, GUN_CAN_BE_CLIP, GUN_CLIP, GUN_CAN_BE_AUTO_RELOAD, GUN_AUTO_RELOAD, GUN_DUAL_GUN, GUN_CAN_BE_DUAL_GUN, GUN_AUTOSHOOT_FLAME, GUN_CAN_BE_AUTOSHOOT_FLAME, GUN_AUTO_RELOAD_DUAL_GUN, GUN_CLIP_DUAL_GUN, GUN_CAN_BE_AUTO_RELOAD_DUAL_GUN, GUN_CAN_BE_CLIP_DUAL_GUN, GUN_CAN_BE_AUTOSHOOT, GUN_AUTOSHOOT, GUN_DUAL_ACCURACY, GUN_DUAL_GUN_DUAL_ACCURACY, GUN_CAN_HAVE_DUAL_ACCURACY, GUN_CAN_BE_DUAL_GUN_DUAL_ACCURACY
 from post_progression_common import ACTION_TYPES
 from soft_exception import SoftException
 if typing.TYPE_CHECKING:
@@ -84,8 +84,12 @@ class PrecachedGun(namedtuple('PrecachedGun', (
                     reloadingType = GUN_CAN_BE_AUTOSHOOT
             elif self.dualGunVehicles:
                 reloadingType = GUN_CAN_BE_DUAL_GUN
+                if self.dualAccuracyVehicles:
+                    reloadingType = GUN_CAN_BE_DUAL_GUN_DUAL_ACCURACY
             elif self.autoShootFlameVehicles:
                 reloadingType = GUN_CAN_BE_AUTOSHOOT_FLAME
+            elif self.dualAccuracyVehicles:
+                reloadingType = GUN_CAN_HAVE_DUAL_ACCURACY
         elif self.autoReloadVehicles and vehicleCD in self.autoReloadVehicles:
             reloadingType = GUN_AUTO_RELOAD
             if self.dualGunVehicles and vehicleCD in self.dualGunVehicles:
@@ -98,8 +102,12 @@ class PrecachedGun(namedtuple('PrecachedGun', (
                 reloadingType = GUN_AUTOSHOOT
         elif self.dualGunVehicles and vehicleCD in self.dualGunVehicles:
             reloadingType = GUN_DUAL_GUN
+            if self.dualAccuracyVehicles and vehicleCD in self.dualAccuracyVehicles:
+                reloadingType = GUN_DUAL_GUN_DUAL_ACCURACY
         elif self.autoShootFlameVehicles and vehicleCD in self.autoShootFlameVehicles:
             reloadingType = GUN_AUTOSHOOT_FLAME
+        elif self.dualAccuracyVehicles and vehicleCD in self.dualAccuracyVehicles:
+            reloadingType = GUN_DUAL_ACCURACY
         return reloadingType
 
     def getTurretsForVehicle(self, vehicleCD):

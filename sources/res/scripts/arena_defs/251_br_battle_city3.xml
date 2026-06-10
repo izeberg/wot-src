@@ -31,9 +31,35 @@
 		<freqZ>0</freqZ>
 	</water>
 	<estimatedLoad>
-		0.75
+		0.27
 		<!--BW_String-->
 	</estimatedLoad>
+	<bonusTypeOverrides>
+		<BATTLE_ROYALE_SOLO>
+			<estimatedLoad>
+				0.27
+				<!--BW_String-->
+			</estimatedLoad>
+		</BATTLE_ROYALE_SOLO>
+		<BATTLE_ROYALE_SQUAD>
+			<estimatedLoad>
+				0.27
+				<!--BW_String-->
+			</estimatedLoad>
+		</BATTLE_ROYALE_SQUAD>
+		<BATTLE_ROYALE_TRN_SOLO>
+			<estimatedLoad>
+				0.27
+				<!--BW_String-->
+			</estimatedLoad>
+		</BATTLE_ROYALE_TRN_SOLO>
+		<BATTLE_ROYALE_TRN_SQUAD>
+			<estimatedLoad>
+				0.27
+				<!--BW_String-->
+			</estimatedLoad>
+		</BATTLE_ROYALE_TRN_SQUAD>
+	</bonusTypeOverrides>
 	<gameplayTypes>
 		<ctf>
 			<enabledChatCommandFlags>EPIC_BATTLE_COMMANDS</enabledChatCommandFlags>

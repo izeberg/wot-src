@@ -9,7 +9,7 @@ package net.wg.gui.battle.comp7.stats.components
    public class RoleSkillLevel extends BattleUIComponent
    {
       
-      private static const INV_ROLE:uint = InvalidationType.SYSTEM_FLAGS_BORDER << 1;
+      private static const INV_EQUIPMENT:uint = InvalidationType.SYSTEM_FLAGS_BORDER << 1;
       
       private static const INV_SKILL_LEVEL:uint = InvalidationType.SYSTEM_FLAGS_BORDER << 2;
        
@@ -18,7 +18,9 @@ package net.wg.gui.battle.comp7.stats.components
       
       public var skillLevel:MovieClip = null;
       
-      private var _role:String = null;
+      private var _equipmentName:String = null;
+      
+      private var _equipmentID:uint = 0;
       
       private var _skillLevel:uint = 0;
       
@@ -51,9 +53,9 @@ package net.wg.gui.battle.comp7.stats.components
       override protected function draw() : void
       {
          super.draw();
-         if(this._role != null && isInvalid(INV_ROLE))
+         if(this._equipmentName != null && isInvalid(INV_EQUIPMENT))
          {
-            this._vmManager.drawGraphics(this._role,this.roleIcon.graphics);
+            this._vmManager.drawGraphics(this._equipmentName,this.roleIcon.graphics);
          }
          if(isInvalid(INV_SKILL_LEVEL))
          {
@@ -68,9 +70,14 @@ package net.wg.gui.battle.comp7.stats.components
          }
       }
       
-      public function getRole() : String
+      public function getEquipmentName() : String
       {
-         return this._role;
+         return this._equipmentName;
+      }
+      
+      public function getEquipmentID() : uint
+      {
+         return this._equipmentID;
       }
       
       public function setIsDisabled(param1:Boolean) : void
@@ -82,12 +89,20 @@ package net.wg.gui.battle.comp7.stats.components
          }
       }
       
-      public function setRole(param1:String) : void
+      public function setEquipmentName(param1:String) : void
       {
-         if(StringUtils.isNotEmpty(param1) && param1 != this._role)
+         if(StringUtils.isNotEmpty(param1) && param1 != this._equipmentName)
          {
-            this._role = param1;
-            invalidate(INV_ROLE);
+            this._equipmentName = param1;
+            invalidate(INV_EQUIPMENT);
+         }
+      }
+      
+      public function setEquipmentID(param1:uint) : void
+      {
+         if(param1 != this._equipmentID)
+         {
+            this._equipmentID = param1;
          }
       }
       

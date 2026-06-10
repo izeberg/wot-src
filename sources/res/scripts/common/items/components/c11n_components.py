@@ -877,6 +877,15 @@ class CustomizationCache(object):
             self.__questStyles = {id:style for id, style in self.styles.iteritems() if style.isQuestsProgression if style.isQuestsProgression}
         return self.__questStyles
 
+    @lru_cache()
+    def getBuiltinStyleForVehicle(self, vehTypeCompDescr):
+        vehicleType = vehicles.getVehicleType(vehTypeCompDescr)
+        for _, style in self.styles.iteritems():
+            if not style.isLockedOnVehicle:
+                continue
+            if style.matchVehicleType(vehicleType):
+                return style
+
     def getVehiclesCanMayInclude(self, item):
         vehsCanUseItem = self.__vehicleCanMayIncludeCustomization.get(item.compactDescr)
         if vehsCanUseItem is None:

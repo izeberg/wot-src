@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A172_ASTRON_FL/_skins/A172_ASTRON_FL_3Dst_Solar_Strike/normal/lod3/Hull</nodefullVisual>
+	<parent>vehicles/american/A172_ASTRON_FL/_skins/A172_ASTRON_FL_3Dst_Solar_Strike/normal/lod4/Hull</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-2.046312 -0.575049 -4.122820</min>
+		<max>2.047282 0.637279 3.880167</max>
+	</visibilityBox>
+</root>

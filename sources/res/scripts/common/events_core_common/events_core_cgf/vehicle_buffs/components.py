@@ -8,7 +8,7 @@ class BuffComponent(object):
 @registerComponent
 class PeriodicHealthChangeComponent(BuffComponent):
     domain = CGF.DomainOption.DomainAll
-    category = 'Portal'
+    category = 'Events Core'
     editorTitle = 'Periodic Health Change'
     healthChange = ComponentProperty(type=CGFMetaTypes.FLOAT, editorName='Health Change', value=1.0)
 
@@ -16,7 +16,7 @@ class PeriodicHealthChangeComponent(BuffComponent):
 @registerComponent
 class MovementBlockedComponent(BuffComponent):
     domain = CGF.DomainOption.DomainAll
-    category = 'Portal'
+    category = 'Events Core'
     editorTitle = 'Movement Blocked'
 
 

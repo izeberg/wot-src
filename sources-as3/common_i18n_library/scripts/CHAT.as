@@ -11,6 +11,8 @@ package
       
       public static const CHANNELS_COMMON:String = "#chat:channels/common";
       
+      public static const CHANNELS_COMMON_TOOLTIP:String = "#chat:channels/common/tooltip";
+      
       public static const CHANNELS_SPECIAL_BATTLES:String = "#chat:channels/special_battles";
       
       public static const CHANNELS_TOURNAMENT:String = "#chat:channels/tournament";
@@ -66,6 +68,10 @@ package
       public static const ERRORS_CHATBANNED:String = "#chat:errors/chatbanned";
       
       public static const ERRORS_CHATBANNEDPERMANENT:String = "#chat:errors/chatbannedpermanent";
+      
+      public static const ERRORS_NOVICERESTRICTIONS:String = "#chat:errors/novicerestrictions";
+      
+      public static const ERRORS_NOVICERESTRICTIONSSHORT:String = "#chat:errors/novicerestrictionsshort";
       
       public static const MESSAGES_USERBANNED:String = "#chat:messages/userbanned";
       

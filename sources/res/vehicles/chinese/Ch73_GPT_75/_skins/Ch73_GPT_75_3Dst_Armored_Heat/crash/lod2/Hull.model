@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/chinese/Ch73_GPT_75/_skins/Ch73_GPT_75_3Dst_Armored_Heat/crash/lod2/Hull</nodefullVisual>
+	<parent>vehicles/chinese/Ch73_GPT_75/_skins/Ch73_GPT_75_3Dst_Armored_Heat/crash/lod3/Hull</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.715271 -0.798426 -3.457207</min>
+		<max>1.710592 0.661662 3.717982</max>
+	</visibilityBox>
+</root>

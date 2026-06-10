@@ -348,7 +348,7 @@ def isStorageSessionTimeout():
 
 
 def isCustomizationAvailableForSell(item, vehicleCD=None):
-    if item.getSellPrice() == ITEM_PRICE_EMPTY or item.isRentable or item.isHidden:
+    if item.getSellPrice() == ITEM_PRICE_EMPTY or item.isRentable or item.isHidden or item.isForbiddenToSell:
         return False
     return getAvailableForSellCustomizationCount(item, vehicleCD) > 0
 

@@ -1049,7 +1049,7 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>3.507000 0.876750 0.000000 0.000000</Vector4>
+						<Vector4>3.507000 3.507000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_detailPower
@@ -1142,7 +1142,7 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>3.507000 0.876750 0.000000 0.000000</Vector4>
+						<Vector4>3.507000 3.507000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_detailPower
@@ -1240,7 +1240,7 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>3.507000 1.753500 0.000000 0.000000</Vector4>
+						<Vector4>3.507000 1.507000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_detailPower
@@ -1266,7 +1266,7 @@
 						</Float>
 					</property>
 				</material>
-				<groupOrigin>-1.312945 0.537070 0.040410</groupOrigin>
+				<groupOrigin>-1.312945 0.537212 0.040410</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -1334,7 +1334,7 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>3.507000 1.753500 0.000000 0.000000</Vector4>
+						<Vector4>3.507000 1.507000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_detailPower
@@ -1360,7 +1360,7 @@
 						</Float>
 					</property>
 				</material>
-				<groupOrigin>1.312945 0.537070 0.040410</groupOrigin>
+				<groupOrigin>1.312945 0.538371 0.040410</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -1369,6 +1369,6 @@
 		<min>-1.704999 -0.000004 -3.356797</min>
 		<max>1.705000 1.080256 3.323512</max>
 	</boundingBox>
-	<geometrySize>366120</geometrySize>
+	<geometrySize>362424</geometrySize>
 	<minUVDensity>0.015938</minUVDensity>
 </root>

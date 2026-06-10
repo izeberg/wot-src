@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-0.134233 -0.075979 1.420875</min>
+		<max>0.134234 0.447914 1.754806</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/french/F137_Tornade/_skins/F137_Tornade_3Dst_02/normal/lod1/Hatch_anim_01</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/french/F137_Tornade/_skins/F137_Tornade_3Dst_02/normal/lod0/Hatch_anim_01</nodefullVisual>
+</root>

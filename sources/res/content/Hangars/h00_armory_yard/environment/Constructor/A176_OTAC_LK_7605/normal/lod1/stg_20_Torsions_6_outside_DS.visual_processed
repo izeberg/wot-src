@@ -109,6 +109,18 @@
 						preSpawnTextureMap
 						<Texture>content/Hangars/h00_armory_yard/environment/Constructor/A176_OTAC_LK_7605/noise_alpha_mask.dds</Texture>
 					</property>
+					<property>
+						forwardSpawnContourColor
+						<Vector3>1 1 0</Vector3>
+					</property>
+					<property>
+						forwardInitialParticlesColor
+						<Vector3>1 1 0</Vector3>
+					</property>
+					<property>
+						forwardFinalParticlesColor
+						<Vector3>1 1 0</Vector3>
+					</property>
 				</material>
 				<groupOrigin>-0.198343 0.509105 0.507052</groupOrigin>
 			</primitiveGroup>

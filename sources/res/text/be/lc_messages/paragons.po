@@ -1118,6 +1118,13 @@ msgstr ""
 "Прагрэсія сезона пройдзена, але {brown_open}вы не забралі "
 "ўзнагароды.{brown_close}"
 
+msgid ""
+"seasonsProgression/seasonCard/tooltip/finishedHasRewardsState/timeMessage"
+msgstr ""
+"Награды можно забрать {brown_open}до %(hours)s:%(min) %(day)s %(month)s "
+"%(years)s года.{brown_close} Если вы не заберёте награды самостоятельно, они"
+" будут начислены автоматически в случайном порядке."
+
 msgid "seasonsProgression/seasonCard/tooltip/finishedState/description"
 msgstr "Усе этапы гэтага сезона пройдзены і ўзнагароды атрыманы."
 
@@ -1174,6 +1181,27 @@ msgstr ""
 msgid "seasonsProgression/subtitle/selectStageForGetReward"
 msgstr ""
 "Выберыце сезон праекта, каб атрымаць узнагароды за праходжанне яго этапаў."
+
+msgid "seasonsProgression/timeLeft/hour"
+msgstr "%(hours)s ч"
+
+msgid "seasonsProgression/timeLeft/hours"
+msgstr "%(hours)s ч %(minutes)s м"
+
+msgid "seasonsProgression/timeLeft/lessOneMin"
+msgstr "менш за хвіліну"
+
+msgid "seasonsProgression/timeLeft/minutes"
+msgstr "%(minutes)s м"
+
+msgid "seasonsProgression/timeLeft/shortTimeText"
+msgstr "Да %(day)s %(month)s"
+
+msgid "seasonsProgression/timeLeft/timeMessage"
+msgstr "Успейте пройти прогрессию и получить награды!"
+
+msgid "seasonsProgression/timeLeft/timeText"
+msgstr "Сезон завершится %(day)s %(month)s в %(hours)s:%(minutes) MCK"
 
 msgid "seasonsProgression/title/projectStages"
 msgstr "ВЫБАР СЕЗОНА"

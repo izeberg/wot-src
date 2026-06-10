@@ -315,11 +315,6 @@ def vehicleAttributeFactors():
        'stunResistanceEffect': 0.0, 
        'stunResistanceDuration': 0.0, 
        'repeatedStunDurationFactor': 1.0, 
-       'vehicle/canBeDamaged': True, 
-       'vehicle/canBeRammed': True, 
-       'vehicle/antifragmentationLiningFactor': 1.0, 
-       'deviceCanBeRepaired/leftTrackHealth': True, 
-       'deviceCanBeRepaired/rightTrackHealth': True, 
        'healthFactor': 1.0, 
        'damageFactor': 1.0, 
        'enginePowerFactor': 1.0, 
@@ -351,9 +346,7 @@ def vehicleAttributeFactors():
        'engineHealthFactor': 1.0, 
        'chassisHealthFactor': 1.0, 
        'trackRammingDamageFactor': 1.0, 
-       'penaltyReloadTime': 0.0, 
-       'vehicle/canBeAutorepaired': True, 
-       'vehicle/canBeDamagedByAoE': True}
+       'penaltyReloadTime': 0.0}
     for ten in TANKMAN_EXTRA_NAMES:
         factors[ten + CHANCE_TO_HIT_SUFFIX_FACTOR] = 0.0
 
@@ -1601,8 +1594,6 @@ class VehicleDescriptor(object):
            'radioHealthFactor': 1.0, 
            'surveyingDeviceHealthFactor': 1.0, 
            'gunHealthFactor': 1.0, 
-           'deviceCanBeRepaired/leftTrackHealth': True, 
-           'deviceCanBeRepaired/rightTrackHealth': True, 
            'demaskMovingFactor': 1.0, 
            'centerRotationFwdSpeedFactor': 1.0, 
            'deathZones/sensitivityFactor': 1.0, 
@@ -1935,7 +1926,7 @@ class VehicleType(object):
         self.hasTurboshaftEngine = 'turboshaftEngine' in self.tags
         self.hasSpeedometer = 'speedometer' in self.tags
         self.hasCharge = 'charger' in self.tags
-        self.builtins = {t.split('_user')[0] for t in self.tags if t.startswith('builtin') if t.startswith('builtin')}
+        self.builtins = {t.split('_user')[0] for t in self.tags if t.startswith('builtin') and t != 'builtinStyle' if t.startswith('builtin') and t != 'builtinStyle'}
         self.hasRocketAcceleration = 'rocketAcceleration' in self.tags
         self.preferential = 'preferential' in self.tags
         VehicleType.currentReadingVeh = self
@@ -2192,6 +2183,10 @@ class VehicleType(object):
     @property
     def isRestoredWithStyle(self):
         return 'restoreWithStyle' in self.tags
+
+    @property
+    def hasBuiltinStyle(self):
+        return 'builtinStyle' in self.tags
 
     @property
     def progressionDecalsOnly(self):
@@ -5878,6 +5873,8 @@ def _readPriceForItem(xmlCtx, section, compactDescr, prices=None):
         pricesDest['itemPrices'][compactDescr] = _xml.readPrice(xmlCtx, section, 'price')
         if section.readBool('notInShop', False):
             pricesDest['notInShopItems'].add(compactDescr)
+        if 'cannot_be_sold' in section.readString('tags', '').split():
+            pricesDest['forbiddenToSellItems'].add(compactDescr)
     return
 
 
@@ -5909,12 +5906,14 @@ def _readPriceForProgressionLvl(compactDescr, lvls):
     return
 
 
-def _copyPriceForItem(sourceCompactDescr, destCompactDescr, itemNotInShop):
+def _copyPriceForItem(sourceCompactDescr, destCompactDescr, itemNotInShop, itemForbiddenToSell=False):
     pricesDest = _g_prices
     if pricesDest is not None:
         pricesDest['itemPrices'][destCompactDescr] = pricesDest['itemPrices'].getPrices(sourceCompactDescr)
         if itemNotInShop or sourceCompactDescr in pricesDest['notInShopItems']:
             pricesDest['notInShopItems'].add(destCompactDescr)
+        if itemForbiddenToSell or sourceCompactDescr in pricesDest['forbiddenToSellItems']:
+            pricesDest['forbiddenToSellItems'].add(destCompactDescr)
     return
 
 

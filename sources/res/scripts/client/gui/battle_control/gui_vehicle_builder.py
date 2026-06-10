@@ -58,6 +58,10 @@ class VehicleBuilder(object):
         self.__assertNotSet(self.__invData, 'settings')
         self.__setInvData('settings', settings)
 
+    def setSelectedComp7Skill(self, selectedComp7Skill):
+        self.__assertNotSet(self.__invData, 'selectedComp7Skill')
+        self.__setInvData('selectedComp7Skill', selectedComp7Skill)
+
     def getResult(self):
         extData = self.__extData.copy() if self.__extData is not None else None
         vehicle = self.__itemsFactory.createVehicle(self.__strCD, extData=extData, invData=self.__invData)

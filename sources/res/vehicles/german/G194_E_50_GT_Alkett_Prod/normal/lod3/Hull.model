@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>vehicles/german/G194_E_50_GT_Alkett_Prod/normal/lod3/Hull</nodefullVisual>
 	<parent>vehicles/german/G194_E_50_GT_Alkett_Prod/normal/lod4/Hull</parent>
 	<tank>true</tank>
 	<extent>192.000000</extent>
@@ -8,4 +7,5 @@
 		<min>-1.940402 -0.695990 -3.935709</min>
 		<max>1.940402 0.780486 3.479235</max>
 	</visibilityBox>
+	<nodefullVisual>vehicles/german/G194_E_50_GT_Alkett_Prod/normal/lod3/Hull</nodefullVisual>
 </root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/italy/It35_Gladiatore/crash/lod4/Chassis</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<nodefullVisual>vehicles/italy/It35_Gladiatore/crash/lod3/Chassis</nodefullVisual>
+	<visibilityBox>
+		<min>-1.773494 -0.004149 -4.345870</min>
+		<max>1.773923 1.194214 4.573070</max>
+	</visibilityBox>
+</root>

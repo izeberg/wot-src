@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<Parent>DualAccuracyBase</Parent>
+	<Properties>
+		<gunStatesPublic>
+			<Type>
+				TUPLE
+				<of>UINT8</of>
+				<size>2</size>
+			</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</gunStatesPublic>
+	</Properties>
+	<ClientMethods>
+		<onCoolingDataUpdated>
+			<Arg>UINT8</Arg>
+			<Arg>FLOAT32</Arg>
+			<DetailLevel>MY_VEHICLE</DetailLevel>
+		</onCoolingDataUpdated>
+	</ClientMethods>
+</root>

@@ -143,7 +143,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.components.battleDamagePanel.components.DamageLogRenderer;
    import net.wg.gui.components.battleDamagePanel.components.DefaultSummaryImages;
    import net.wg.gui.components.battleDamagePanel.components.ShellTypeBG;
-   import net.wg.gui.components.battleDamagePanel.components.SummaryAnimation;
    import net.wg.gui.components.battleDamagePanel.constants.BattleDamageLogConstants;
    import net.wg.gui.components.battleDamagePanel.models.MessageRenderModel;
    import net.wg.gui.components.battleRoyale.ColumnHeader;
@@ -211,8 +210,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.components.common.bugreport.ReportBugPanel;
    import net.wg.gui.components.common.lobbyVehicleMarkers.CustomMarker;
    import net.wg.gui.components.common.lobbyVehicleMarkers.CustomMarkerVO;
-   import net.wg.gui.components.common.lobbyVehicleMarkers.HBLobbyVehicleMarkers;
-   import net.wg.gui.components.common.lobbyVehicleMarkers.HBLobbyVehicleMarkersVO;
    import net.wg.gui.components.common.lobbyVehicleMarkers.LobbyVehicleMarkers;
    import net.wg.gui.components.common.lobbyVehicleMarkers.LobbyVehicleMarkersVO;
    import net.wg.gui.components.common.lobbyVehicleMarkers.PlatoonMarker;
@@ -453,6 +450,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.components.crosshairPanel.components.CrosshairClipAutogunBar;
    import net.wg.gui.components.crosshairPanel.components.CrosshairClipQuantityBar;
    import net.wg.gui.components.crosshairPanel.components.CrosshairClipQuantityBarContainer;
+   import net.wg.gui.components.crosshairPanel.components.GunCoolingIndicator;
    import net.wg.gui.components.crosshairPanel.components.ShotDamageInd;
    import net.wg.gui.components.crosshairPanel.components.ShotFlyTimeInd;
    import net.wg.gui.components.crosshairPanel.components.artyScale.ArtyIndicationScale;
@@ -528,7 +526,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.components.paginator.PaginationDetailsNumButton;
    import net.wg.gui.components.paginator.PaginationGroup;
    import net.wg.gui.components.paginator.PaginationPageButton;
-   import net.wg.gui.components.paginator.PaginationStepper;
    import net.wg.gui.components.paginator.PaginatorArrowBtn;
    import net.wg.gui.components.paginator.PaginatorArrowsController;
    import net.wg.gui.components.paginator.vo.PaginatorPageNumVO;
@@ -1216,8 +1213,6 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_COMPONENTS_BATTLEDAMAGEPANEL_COMPONENTS_SHELLTYPEBG:Class = ShellTypeBG;
       
-      public static const NET_WG_GUI_COMPONENTS_BATTLEDAMAGEPANEL_COMPONENTS_SUMMARYANIMATION:Class = SummaryAnimation;
-      
       public static const NET_WG_GUI_COMPONENTS_BATTLEDAMAGEPANEL_CONSTANTS_BATTLEDAMAGELOGCONSTANTS:Class = BattleDamageLogConstants;
       
       public static const NET_WG_GUI_COMPONENTS_BATTLEDAMAGEPANEL_MODELS_MESSAGERENDERMODEL:Class = MessageRenderModel;
@@ -1351,10 +1346,6 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_COMPONENTS_COMMON_LOBBYVEHICLEMARKERS_CUSTOMMARKER:Class = CustomMarker;
       
       public static const NET_WG_GUI_COMPONENTS_COMMON_LOBBYVEHICLEMARKERS_CUSTOMMARKERVO:Class = CustomMarkerVO;
-      
-      public static const NET_WG_GUI_COMPONENTS_COMMON_LOBBYVEHICLEMARKERS_HBLOBBYVEHICLEMARKERS:Class = HBLobbyVehicleMarkers;
-      
-      public static const NET_WG_GUI_COMPONENTS_COMMON_LOBBYVEHICLEMARKERS_HBLOBBYVEHICLEMARKERSVO:Class = HBLobbyVehicleMarkersVO;
       
       public static const NET_WG_GUI_COMPONENTS_COMMON_LOBBYVEHICLEMARKERS_LOBBYVEHICLEMARKERS:Class = LobbyVehicleMarkers;
       
@@ -1830,6 +1821,8 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_CROSSHAIRCLIPQUANTITYBARCONTAINER:Class = CrosshairClipQuantityBarContainer;
       
+      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_GUNCOOLINGINDICATOR:Class = GunCoolingIndicator;
+      
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_SHOTDAMAGEIND:Class = ShotDamageInd;
       
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_SHOTFLYTIMEIND:Class = ShotFlyTimeInd;
@@ -1985,8 +1978,6 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_COMPONENTS_PAGINATOR_PAGINATIONGROUP:Class = PaginationGroup;
       
       public static const NET_WG_GUI_COMPONENTS_PAGINATOR_PAGINATIONPAGEBUTTON:Class = PaginationPageButton;
-      
-      public static const NET_WG_GUI_COMPONENTS_PAGINATOR_PAGINATIONSTEPPER:Class = PaginationStepper;
       
       public static const NET_WG_GUI_COMPONENTS_PAGINATOR_PAGINATORARROWBTN:Class = PaginatorArrowBtn;
       

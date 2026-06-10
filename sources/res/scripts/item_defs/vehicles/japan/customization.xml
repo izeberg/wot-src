@@ -262,7 +262,7 @@
 					<!--BW_String-->
 				</J25_Type_4>
 			</tiling>
-			<deny>J29_Nameless J30_Edelweiss</deny>
+			<deny/>
 		</winter_white>
 		<winter_spots>
 			<texture>vehicles/japan/Camouflage/winter_spots.dds</texture>
@@ -406,7 +406,7 @@
 					<!--BW_String-->
 				</J25_Type_4>
 			</tiling>
-			<deny>J29_Nameless J30_Edelweiss</deny>
+			<deny/>
 		</winter_spots>
 		<summer_four-color>
 			<texture>vehicles/japan/Camouflage/summer_four-color.dds</texture>
@@ -550,7 +550,7 @@
 					<!--BW_String-->
 				</J25_Type_4>
 			</tiling>
-			<deny>J29_Nameless J30_Edelweiss</deny>
+			<deny/>
 		</summer_four-color>
 		<summer_three-color_spots>
 			<texture>vehicles/japan/Camouflage/summer_three-color_spots.dds</texture>
@@ -694,7 +694,7 @@
 					<!--BW_String-->
 				</J25_Type_4>
 			</tiling>
-			<deny>J29_Nameless J30_Edelweiss</deny>
+			<deny/>
 		</summer_three-color_spots>
 		<desert_blue-brown>
 			<texture>vehicles/japan/Camouflage/desert_blue-brown.dds</texture>
@@ -838,7 +838,7 @@
 					<!--BW_String-->
 				</J25_Type_4>
 			</tiling>
-			<deny>J29_Nameless J30_Edelweiss</deny>
+			<deny/>
 		</desert_blue-brown>
 		<desert_green-brown_spots>
 			<texture>vehicles/japan/Camouflage/desert_green-brown_spots.dds</texture>
@@ -982,7 +982,7 @@
 					<!--BW_String-->
 				</J25_Type_4>
 			</tiling>
-			<deny>J29_Nameless J30_Edelweiss</deny>
+			<deny/>
 		</desert_green-brown_spots>
 		<IGR_Winter>
 			<texture>vehicles/german/Camouflage/IGR_Winter.dds</texture>
@@ -1124,7 +1124,7 @@
 				</J25_Type_4>
 			</tiling>
 			<notInShop>false</notInShop>
-			<deny>J29_Nameless J30_Edelweiss</deny>
+			<deny/>
 		</IGR_Winter>
 		<IGR_Summer>
 			<texture>vehicles/german/Camouflage/IGR_Summer.dds</texture>
@@ -1266,7 +1266,7 @@
 				</J25_Type_4>
 			</tiling>
 			<notInShop>false</notInShop>
-			<deny>J29_Nameless J30_Edelweiss</deny>
+			<deny/>
 		</IGR_Summer>
 		<IGR_Desert>
 			<texture>vehicles/german/Camouflage/IGR_Desert.dds</texture>
@@ -1408,7 +1408,7 @@
 				</J25_Type_4>
 			</tiling>
 			<notInShop>false</notInShop>
-			<deny>J29_Nameless J30_Edelweiss</deny>
+			<deny/>
 		</IGR_Desert>
 		<IGR_K_Winter>
 			<texture>vehicles/chinese/Camouflage/IGR_K_Winter.dds</texture>
@@ -1550,7 +1550,7 @@
 				</J25_Type_4>
 			</tiling>
 			<notInShop>false</notInShop>
-			<deny>J29_Nameless J30_Edelweiss</deny>
+			<deny/>
 		</IGR_K_Winter>
 		<IGR_K_Desert>
 			<texture>vehicles/chinese/Camouflage/IGR_K_Desert.dds</texture>
@@ -1692,7 +1692,7 @@
 				</J25_Type_4>
 			</tiling>
 			<notInShop>false</notInShop>
-			<deny>J29_Nameless J30_Edelweiss</deny>
+			<deny/>
 		</IGR_K_Desert>
 		<IGR_Ch_Winter>
 			<texture>vehicles/chinese/Camouflage/IGR_Ch_Winter.dds</texture>
@@ -1834,7 +1834,7 @@
 				</J25_Type_4>
 			</tiling>
 			<notInShop>false</notInShop>
-			<deny>J29_Nameless J30_Edelweiss</deny>
+			<deny/>
 		</IGR_Ch_Winter>
 		<IGR_Ch_Summer>
 			<texture>vehicles/chinese/Camouflage/IGR_Ch_Summer.dds</texture>
@@ -1976,7 +1976,7 @@
 				</J25_Type_4>
 			</tiling>
 			<notInShop>false</notInShop>
-			<deny>J29_Nameless J30_Edelweiss</deny>
+			<deny/>
 		</IGR_Ch_Summer>
 		<IGR_Ch_Desert>
 			<texture>vehicles/chinese/Camouflage/IGR_Ch_Desert.dds</texture>
@@ -2118,7 +2118,7 @@
 				</J25_Type_4>
 			</tiling>
 			<notInShop>false</notInShop>
-			<deny>J29_Nameless J30_Edelweiss</deny>
+			<deny/>
 		</IGR_Ch_Desert>
 		<Clan_camuflage_01>
 			<texture>vehicles/japan/Camouflage/Clan_camuflage_01.dds</texture>
@@ -2256,7 +2256,7 @@
 					<!--BW_String-->
 				</J25_Type_4>
 			</tiling>
-			<deny>J29_Nameless J30_Edelweiss</deny>
+			<deny/>
 		</Clan_camuflage_01>
 		<Clan_camuflage_02>
 			<texture>vehicles/french/Camouflage/Clan_camuflage_2.dds</texture>
@@ -2398,7 +2398,7 @@
 					<!--BW_String-->
 				</J25_Type_4>
 			</tiling>
-			<deny>J29_Nameless J30_Edelweiss</deny>
+			<deny/>
 		</Clan_camuflage_02>
 		<Clan_camuflage_03>
 			<texture>vehicles/french/Camouflage/Clan_camuflage_3.dds</texture>
@@ -2536,7 +2536,7 @@
 					<!--BW_String-->
 				</J25_Type_4>
 			</tiling>
-			<deny>J29_Nameless J30_Edelweiss</deny>
+			<deny/>
 		</Clan_camuflage_03>
 		<Clan_camuflage_04>
 			<texture>vehicles/french/Camouflage/Clan_camuflage_4.dds</texture>
@@ -2674,7 +2674,7 @@
 					<!--BW_String-->
 				</J25_Type_4>
 			</tiling>
-			<deny>J29_Nameless J30_Edelweiss</deny>
+			<deny/>
 		</Clan_camuflage_04>
 		<Cracked_ice>
 			<texture>vehicles/american/Camouflage/Cracked_ice.dds</texture>
@@ -2816,7 +2816,7 @@
 					<!--BW_String-->
 				</J16_ST_B1_IGR>
 			</tiling>
-			<deny>J29_Nameless J30_Edelweiss</deny>
+			<deny/>
 		</Cracked_ice>
 		<summer_camo>
 			<texture>vehicles/american/Camouflage/Cracked_ice.dds</texture>
@@ -2958,7 +2958,7 @@
 					<!--BW_String-->
 				</J16_ST_B1_IGR>
 			</tiling>
-			<deny>J29_Nameless J30_Edelweiss</deny>
+			<deny/>
 		</summer_camo>
 		<Desert_camou>
 			<texture>vehicles/german/Camouflage/Desert_camo-05-3.dds</texture>
@@ -3100,7 +3100,7 @@
 					<!--BW_String-->
 				</J16_ST_B1_IGR>
 			</tiling>
-			<deny>J29_Nameless J30_Edelweiss</deny>
+			<deny/>
 		</Desert_camou>
 		<Japan_Victim_Black>
 			<texture>vehicles/japan/Camouflage/Japan_Victim_01.dds</texture>
@@ -3235,7 +3235,7 @@
 					<!--BW_String-->
 				</J16_ST_B1>
 			</tiling>
-			<deny>J29_Nameless J30_Edelweiss</deny>
+			<deny/>
 		</Japan_Victim_Black>
 		<Japan_Victim_Gold>
 			<texture>vehicles/japan/Camouflage/Japan_Victim_01.dds</texture>
@@ -3370,7 +3370,7 @@
 					<!--BW_String-->
 				</J16_ST_B1>
 			</tiling>
-			<deny>J29_Nameless J30_Edelweiss</deny>
+			<deny/>
 		</Japan_Victim_Gold>
 		<Japan_Victim_Red>
 			<texture>vehicles/japan/Camouflage/Japan_Victim_01.dds</texture>
@@ -3505,7 +3505,7 @@
 					<!--BW_String-->
 				</J16_ST_B1>
 			</tiling>
-			<deny>J29_Nameless J30_Edelweiss</deny>
+			<deny/>
 		</Japan_Victim_Red>
 		<Japan_Victim_Silver>
 			<texture>vehicles/japan/Camouflage/Japan_Victim_01.dds</texture>
@@ -3640,7 +3640,7 @@
 					<!--BW_String-->
 				</J16_ST_B1>
 			</tiling>
-			<deny>J29_Nameless J30_Edelweiss</deny>
+			<deny/>
 		</Japan_Victim_Silver>
 		<Clan_camuflage_04_winter>
 			<texture>vehicles/french/Camouflage/Clan_camuflage_4.dds</texture>
@@ -3778,7 +3778,7 @@
 					<!--BW_String-->
 				</J25_Type_4>
 			</tiling>
-			<deny>J29_Nameless J30_Edelweiss</deny>
+			<deny/>
 		</Clan_camuflage_04_winter>
 		<Clan_camuflage_04_desert>
 			<texture>vehicles/french/Camouflage/Clan_camuflage_4.dds</texture>
@@ -3916,7 +3916,7 @@
 					<!--BW_String-->
 				</J25_Type_4>
 			</tiling>
-			<deny>J29_Nameless J30_Edelweiss</deny>
+			<deny/>
 		</Clan_camuflage_04_desert>
 	</camouflages>
 </root>

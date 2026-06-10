@@ -1046,12 +1046,6 @@ msgstr "РСЗО"
 msgid "G00_Startgestell_short"
 msgstr "РСЗО"
 
-msgid "G03_PzV_Panther_hb25_Elite"
-msgstr "Panther Elite"
-
-msgid "G03_PzV_Panther_hb25_Elite_short"
-msgstr "Panther Elite"
-
 msgid "G04"
 msgstr "G04"
 
@@ -1077,24 +1071,6 @@ msgstr "Медведь"
 
 msgid "G04_PzVI_Tiger_I_SHXXI_B_short"
 msgstr "Медведь"
-
-msgid "G04_PzVI_Tiger_I_hb25_Elite"
-msgstr "Tiger I (Elite)"
-
-msgid "G04_PzVI_Tiger_I_hb25_Elite_short"
-msgstr "Tiger I (Elite)"
-
-msgid "G08_Pz38t_hb25_Elite"
-msgstr "Pz.Kpfw. 38 (t)(Elite)"
-
-msgid "G08_Pz38t_hb25_Elite_short"
-msgstr "Pz. 38 (t) (Elite)"
-
-msgid "G09_Hetzer_hb25_Elite"
-msgstr "Hetzer Elite"
-
-msgid "G09_Hetzer_hb25_Elite_short"
-msgstr "Hetzer Elite"
 
 msgid "G100_Gtraktor_Krupp"
 msgstr "Großtraktor - Krupp"
@@ -1131,12 +1107,6 @@ msgstr ""
 "непосредственная поддержка атакующих подразделений пехоты. В 1937 году были "
 "изготовлены первые пять прототипов так называемой «нулевой» серии. Ранние "
 "модификации от Ausf.A до Ausf.F/8 выпускались до декабря 1942 года."
-
-msgid "G101_StuG_III_hb25_Elite"
-msgstr "StuG III Ausf. B Elite"
-
-msgid "G101_StuG_III_hb25_Elite_short"
-msgstr "StuG III B Elite"
 
 msgid "G101_StuG_III_short"
 msgstr "StuG III B"
@@ -1254,12 +1224,6 @@ msgstr "Pz. III K"
 msgid "G107_PzKpfwIII_AusfK_short_special"
 msgstr "Скорострельное орудие, хорошие УВН"
 
-msgid "G107_PzKpfwIII_AusfKhb25_Elite"
-msgstr "Pz.Kpfw. III Ausf. K (Elite)"
-
-msgid "G107_PzKpfwIII_AusfKhb25_Elite_short"
-msgstr "Pz. III K (Elite)"
-
 msgid "G108_PzKpfwII_AusfD"
 msgstr "Pz.Kpfw. II Ausf. D"
 
@@ -1312,12 +1276,6 @@ msgstr "Steyr WT"
 
 msgid "G109_Steyr_WT_short_special"
 msgstr "Комфортное орудие, хорошая маскировка"
-
-msgid "G10_PzIII_AusfJ_hb25_Elite"
-msgstr "Pz.Kpfw. III Ausf. J (Elite)"
-
-msgid "G10_PzIII_AusfJ_hb25_Elite_short"
-msgstr "Pz. III J (Elite)"
 
 msgid "G1105_T-55_NVA_DDR_T"
 msgstr "T 55 Test"
@@ -2108,12 +2066,6 @@ msgstr "Хорошая динамика и урон в минуту"
 msgid "G158_VK2801_105_SPXXI"
 msgstr "VK 28.01 mit 10,5 cm L/28"
 
-msgid "G158_VK2801_105_SPXXI_hb25_Elite"
-msgstr "VK 28.01 mit 10,5 cm L/28 Elite"
-
-msgid "G158_VK2801_105_SPXXI_hb25_Elite_short"
-msgstr "VK 28.01 105 Elite"
-
 msgid "G158_VK2801_105_SPXXI_long_special"
 msgstr ""
 "Старый знакомый многих игроков — немецкий лёгкий танк VI уровня. Отличается "
@@ -2379,18 +2331,6 @@ msgstr ""
 msgid "G16_PzVIB_Tiger_II_F_short_special"
 msgstr "Крепкая броня, точное орудие"
 
-msgid "G16_PzVIB_Tiger_II_hb25_Boss"
-msgstr "Tiger II Kommandant"
-
-msgid "G16_PzVIB_Tiger_II_hb25_Boss_short"
-msgstr "Tiger II Kommandant"
-
-msgid "G16_PzVIB_Tiger_II_hb25_Elite"
-msgstr "Tiger II Elite"
-
-msgid "G16_PzVIB_Tiger_II_hb25_Elite_short"
-msgstr "Tiger II Elite"
-
 msgid "G171_E77"
 msgstr "E 77"
 
@@ -2420,7 +2360,7 @@ msgstr "Универсальность, сбалансированность Т�
 
 msgid "G171_E77_descr"
 msgstr ""
-"Под конец Второй Мировой войны немецкое танкостроение оказалось в кризисной ситуации. Традиционные компоновочные решения приводили к тому, что танки оказывались чересчур тяжёлыми. В связи с этим некоторые танкостроительные фирмы начали проектные разработки, существенно отличавшиеся от классической немецкой школы танкостроения. Среди таких идей был и безымянный проект тяжёлого танка, разрабатывавшегося как альтернатива серии E. Основные особенности этого танка включали газотурбинный двигатель, заднее расположение ведущих колёс и трансмиссии, а также массивная литая башня. Благодаря новым компоновочным решениям предполагалось снизить массу танка и разрешить вопрос установки более мощного вооружения — 128-мм танковой пушки. Окончание войны поставило крест на этих планах, дальше эскизных проработок машина так и не продвинулась.\n"
+"Под конец Второй мировой войны немецкое танкостроение оказалось в кризисной ситуации. Традиционные компоновочные решения приводили к тому, что танки оказывались чересчур тяжёлыми. В связи с этим некоторые танкостроительные фирмы начали проектные разработки, существенно отличавшиеся от классической немецкой школы танкостроения. Среди таких идей был и безымянный проект тяжёлого танка, разрабатывавшегося как альтернатива серии E. Основные особенности этого танка включали газотурбинный двигатель, заднее расположение ведущих колёс и трансмиссии, а также массивную литую башню. Благодаря новым компоновочным решениям предполагалось снизить массу танка и разрешить вопрос установки более мощного вооружения — 128-мм танковой пушки. Окончание войны поставило крест на этих планах, дальше эскизных проработок машина так и не продвинулась.\n"
 "\n"
 "Характеристики машины могут быть изменены без компенсации."
 
@@ -2597,7 +2537,7 @@ msgid "G194_E_50_GT_Alkett_Prod_long_special"
 msgstr "?empty?"
 
 msgid "G194_E_50_GT_Alkett_Prod_short"
-msgstr "Alkett"
+msgstr "E 50 GT"
 
 msgid "G194_E_50_GT_Alkett_Prod_short_special"
 msgstr "?empty?"
@@ -2635,12 +2575,6 @@ msgstr ""
 " применялась на Восточном фронте, а с 1944 года — в Италии и на Западном "
 "фронте. Состояла на вооружении до конца войны."
 
-msgid "G20_Marder_II_hb25_Elite"
-msgstr "Marder II (Elite)"
-
-msgid "G20_Marder_II_hb25_Elite_short"
-msgstr "Marder II (Elite)"
-
 msgid "G20_Marder_II_short"
 msgstr "Marder II"
 
@@ -2652,12 +2586,6 @@ msgstr "Заяц"
 
 msgid "G25_PzII_Luchs_SHXXI_B_short"
 msgstr "Заяц"
-
-msgid "G26_VK1602_hb25_Elite"
-msgstr "VK 16.02 Leopard Elite"
-
-msgid "G26_VK1602_hb25_Elite_short"
-msgstr "Leopard Elite"
 
 msgid "G32_PzV_PzIV_CN_long_special"
 msgstr ""
@@ -2722,15 +2650,6 @@ msgstr ""
 msgid "G36_PzII_J_short_special"
 msgstr "Великолепная броня, малые габариты, хорошие УВН"
 
-msgid "G37_Ferdinand_hb25_Elite"
-msgstr "Ferdinand Elite"
-
-msgid "G42_Maus_hb25_Boss"
-msgstr "Maus Kommandant"
-
-msgid "G42_Maus_hb25_Boss_short"
-msgstr "Maus Kommandant"
-
 msgid "G44_JagdTigerH_long_special"
 msgstr ""
 "Немецкая ПТ-САУ VIII уровня с достойным бронированием, неплохой подвижностью"
@@ -2742,23 +2661,8 @@ msgid "G44_JagdTigerH_short_special"
 msgstr ""
 "Отличное орудие, хорошее фронтальное бронирование, неплохая подвижность"
 
-msgid "G44_JagdTiger_hb25_Boss"
-msgstr "Jagdtiger Kommandant"
-
-msgid "G44_JagdTiger_hb25_Boss_short"
-msgstr "Jagdtiger Kommandant"
-
-msgid "G51_Lowe_hb25_Boss"
-msgstr "Löwe Kommandant"
-
 msgid "G58_VK4502P"
 msgstr "VK 45.02 (P) Ausf. B7"
-
-msgid "G58_VK4502P7_hb25_Boss"
-msgstr "VK 45.02 B7 Kommandant"
-
-msgid "G58_VK4502P7_hb25_Boss_short"
-msgstr "VK 45.02 B7 Kommandant"
 
 msgid "G58_VK4502P7_long_special"
 msgstr ""
@@ -2797,12 +2701,6 @@ msgstr "Волк"
 msgid "G77_PzIV_Schmalturm_SHXXI_B_short"
 msgstr "Волк"
 
-msgid "G80_Pz_IV_AusfD_hb25_Elite"
-msgstr "Pz.Kpfw. IV Ausf. D (Elite)"
-
-msgid "G80_Pz_IV_AusfD_hb25_Elite_short"
-msgstr "Pz. IV D (Elite)"
-
 msgid "G81_Pz_IV_AusfH_GuP"
 msgstr "Pz.Kpfw. IV Ausf. H Ankou"
 
@@ -2830,12 +2728,6 @@ msgstr "Pz. IV H Ankou"
 msgid "G81_Pz_IV_AusfH_GuP_short_special"
 msgstr "Достойное бронепробитие, хорошие УВН, наличие экранов"
 
-msgid "G81_Pz_IV_AusfH_hb25_Elite"
-msgstr "Pz.Kpfw. IV Ausf. H Elite"
-
-msgid "G81_Pz_IV_AusfH_hb25_Elite_short"
-msgstr "Pz.Kpfw. IV H Elite"
-
 msgid "G85_Aufklarungspanzer_V"
 msgstr "Aufklärungspanzer V"
 
@@ -2846,12 +2738,6 @@ msgstr ""
 "серийного производства. Установка меньшей по габаритам башни снижала вес "
 "машины, что положительно отразилось бы на ходовых характеристиках. Однако "
 "работы были завершены ещё на стадии проектирования."
-
-msgid "G85_Aufklarungspanzer_V_hb25_Elite"
-msgstr "Aufklärungspanzer V Elite"
-
-msgid "G85_Aufklarungspanzer_V_hb25_Elite_short"
-msgstr "Aufkl.Pz. V Elite"
 
 msgid "G85_Aufklarungspanzer_V_long_special"
 msgstr ""
@@ -5900,9 +5786,6 @@ msgstr "DM13A2"
 msgid "_105mm_DM13_Kurz"
 msgstr "DM13 Kurz"
 
-msgid "_105mm_DM23A1"
-msgstr "DM23A1"
-
 msgid "_105mm_DM503"
 msgstr "DM503"
 
@@ -5926,6 +5809,9 @@ msgstr "Gr 39H1H"
 
 msgid "_105mm_Gr_39_rot_H1"
 msgstr "Gr. 39 rot H1 FES К.18"
+
+msgid "_105mm_HEAT_23A1"
+msgstr "HEAT-23A1"
 
 msgid "_105mm_HE_DM11"
 msgstr "DM11"

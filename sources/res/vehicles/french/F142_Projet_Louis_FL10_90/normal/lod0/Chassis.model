@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F142_Projet_Louis_FL10_90/normal/lod0/Chassis</nodefullVisual>
+	<parent>vehicles/french/F142_Projet_Louis_FL10_90/normal/lod1/Chassis</parent>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.410962 -0.000092 -3.057056</min>
+		<max>1.410964 1.157696 3.010413</max>
+	</visibilityBox>
+</root>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>Root_Hull</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>blade_01</identifier>
+				<transform>
+					<row0>-0.000001 0.998778 -0.049415</row0>
+					<row1>0.275638 0.047501 0.960087</row1>
+					<row2>0.961262 -0.013620 -0.275301</row2>
+					<row3>-0.694368 0.508327 -2.301416</row3>
+				</transform>
+				<node>
+					<identifier>blade_01_BlendBone</identifier>
+					<transform>
+						<row0>-0.000001 0.275638 0.961262</row0>
+						<row1>0.998778 0.047501 -0.013620</row1>
+						<row2>0.049415 -0.960087 0.275301</row2>
+						<row3>-0.621432 2.376808 0.040811</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>blade_02</identifier>
+				<transform>
+					<row0>-0.000002 0.998779 -0.049412</row0>
+					<row1>0.034898 -0.049382 -0.998170</row1>
+					<row2>-0.999391 -0.001726 -0.034855</row2>
+					<row3>-0.231181 0.508327 -2.301416</row3>
+				</transform>
+				<node>
+					<identifier>blade_02_BlendBone</identifier>
+					<transform>
+						<row0>-0.000002 0.034898 -0.999391</row0>
+						<row1>0.998779 -0.049382 -0.001726</row1>
+						<row2>0.049412 0.998170 0.034855</row2>
+						<row3>-0.621423 -2.264035 -0.310380</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>blade_03</identifier>
+				<transform>
+					<row0>0.000005 0.998779 -0.049407</row0>
+					<row1>-0.731359 -0.033692 -0.681160</row1>
+					<row2>-0.681993 0.036138 0.730465</row2>
+					<row3>0.232006 0.508327 -2.301416</row3>
+				</transform>
+				<node>
+					<identifier>blade_03_BlendBone</identifier>
+					<transform>
+						<row0>0.000005 -0.731359 -0.681993</row0>
+						<row1>0.998779 -0.033692 0.036138</row1>
+						<row2>0.049407 0.681160 -0.730465</row2>
+						<row3>-0.621413 -1.380827 1.820961</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>blade_04</identifier>
+				<transform>
+					<row0>0.000003 0.998778 -0.049415</row0>
+					<row1>-0.898793 -0.021660 -0.437837</row1>
+					<row2>-0.438373 0.044415 0.897695</row2>
+					<row3>0.695193 0.508326 -2.301416</row3>
+				</transform>
+				<node>
+					<identifier>blade_04_BlendBone</identifier>
+					<transform>
+						<row0>0.000003 -0.898793 -0.438373</row0>
+						<row1>0.998778 -0.021660 0.044415</row1>
+						<row2>0.049415 0.437837 -0.897695</row2>
+						<row3>-0.621431 -0.371800 2.348146</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>blade_05</identifier>
+				<transform>
+					<row0>0.000002 0.998779 -0.049393</row0>
+					<row1>0.766041 0.031748 0.642007</row1>
+					<row2>0.642791 -0.037839 -0.765106</row2>
+					<row3>-0.691947 0.457128 -2.820315</row3>
+				</transform>
+				<node>
+					<identifier>blade_05_BlendBone</identifier>
+					<transform>
+						<row0>0.000002 0.766041 0.642791</row0>
+						<row1>0.998779 0.031748 -0.037839</row1>
+						<row2>0.049393 -0.642007 0.765106</row2>
+						<row3>-0.595873 2.326209 -1.695766</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>blade_06</identifier>
+				<transform>
+					<row0>0.000001 0.998779 -0.049404</row0>
+					<row1>0.994522 -0.005165 -0.104396</row1>
+					<row2>-0.104524 -0.049133 -0.993308</row2>
+					<row3>-0.228760 0.457128 -2.820314</row3>
+				</transform>
+				<node>
+					<identifier>blade_06_BlendBone</identifier>
+					<transform>
+						<row0>0.000001 0.994522 -0.104524</row0>
+						<row1>0.998779 -0.005165 -0.049133</row1>
+						<row2>0.049404 0.104396 0.993308</row2>
+						<row3>-0.595904 -0.064562 -2.802891</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>blade_04_BlendBone</node>
+		<node>blade_03_BlendBone</node>
+		<node>blade_06_BlendBone</node>
+		<node>blade_02_BlendBone</node>
+		<node>blade_01_BlendBone</node>
+		<node>blade_05_BlendBone</node>
+		<geometry>
+			<vertices>hull_anim_Shape.vertices</vertices>
+			<primitive>hull_anim_Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_hull_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						alphaReference
+						<Int>128</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/russian/R87_T62A/_skins/R87_T62A_3Dst_02/T62A_3Dst_02_hull_01_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/russian/R87_T62A/_skins/R87_T62A_3Dst_02/T62A_3Dst_02_hull_01_AO.dds</Texture>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>7.014000 7.014000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/BP12_details_map.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/russian/R87_T62A/_skins/R87_T62A_3Dst_02/T62A_3Dst_02_hull_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/russian/R87_T62A/_skins/R87_T62A_3Dst_02/T62A_3Dst_02_hull_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.001625 0.466665 2.559383</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-0.867016 0.422750 -2.995408</min>
+		<max>0.870266 0.510579 -2.123358</max>
+	</boundingBox>
+	<geometrySize>12456</geometrySize>
+	<minUVDensity>10000.000000</minUVDensity>
+</root>

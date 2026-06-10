@@ -246,6 +246,7 @@ class _TipsValidator(object):
          _BattlesValidator(),
          _ArenaGuiTypeValidator(),
          _TagsValidator(),
+         _NoTagsValidator(),
          _LevelValidator(),
          _NationValidator(),
          _VehicleClassValidator(),
@@ -254,7 +255,8 @@ class _TipsValidator(object):
          _RankedBattlesValidator(),
          _PostProgressionValidator(),
          _ChassisTypeValidator(),
-         _VehPropertyValidator())
+         _VehPropertyValidator(),
+         _NotVehPropertyValidator())
 
     def validateRegularTip(self, tipFilter, ctx=None):
         if not tipFilter:
@@ -343,6 +345,14 @@ class _VehPropertyValidator(object):
         return not requiredProperty or getattr(ctx['vehicleType'], requiredProperty, False)
 
 
+class _NotVehPropertyValidator(object):
+
+    @staticmethod
+    def validate(tipFilter, ctx):
+        requiredProperty = tipFilter['notVehProperty']
+        return not requiredProperty or not getattr(ctx['vehicleType'], requiredProperty, False)
+
+
 class _BattlesValidator(object):
 
     @staticmethod
@@ -368,6 +378,15 @@ class _TagsValidator(object):
         requiredTags = tipFilter['tags']
         tags = ctx['vehicleType'].tags
         return not requiredTags or requiredTags.issubset(tags)
+
+
+class _NoTagsValidator(object):
+
+    @staticmethod
+    def validate(tipFilter, ctx):
+        requiredTags = tipFilter['noTags']
+        tags = ctx['vehicleType'].tags
+        return not requiredTags or not requiredTags.issubset(tags)
 
 
 class _LevelValidator(object):

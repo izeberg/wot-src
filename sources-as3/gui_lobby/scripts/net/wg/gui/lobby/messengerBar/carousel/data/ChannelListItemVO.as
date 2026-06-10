@@ -14,6 +14,8 @@ package net.wg.gui.lobby.messengerBar.carousel.data
       
       public var userName:String = "";
       
+      public var isLocked:Boolean = false;
+      
       private var _clientID:Number = 0;
       
       private var _label:String = "";

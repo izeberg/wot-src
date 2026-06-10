@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/french/F108_Panhard_EBR_105/_skins/F108_Panhard_EBR_105_3Dst_Reef_Rush/normal/lod1/Gun_01</parent>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-0.270719 -0.225744 -0.000000</min>
+		<max>0.524866 0.276651 3.946576</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/french/F108_Panhard_EBR_105/_skins/F108_Panhard_EBR_105_3Dst_Reef_Rush/normal/lod0/Gun_01</nodefullVisual>
+</root>

@@ -1,17 +1,21 @@
-import typing, itertools
+import itertools
 from collections import namedtuple
+import typing
 from constants import LOOTBOX_TOKEN_PREFIX, LOOTBOX_KEY_PREFIX
+from gui.impl.gen import R
 from helpers import dependency
 from items.components.crew_books_constants import CREW_BOOK_RARITY
-from skeletons.gui.shared import IItemsCache
-from skeletons.gui.lobby_context import ILobbyContext
 from lootboxes_common import makeLBKeyTokenID
+from skeletons.gui.lobby_context import ILobbyContext
+from skeletons.gui.shared import IItemsCache
 if typing.TYPE_CHECKING:
     from typing import Optional
 BonusInfo = namedtuple('SlotBonusInfo', ['probabilitiesList', 'bonusProbability', 'limitIDs', 'subBonusRawData'])
 OneOfBonusInfo = namedtuple('OneOfBonusInfo', ['limitIDs', 'subBonusRawData'])
 _AGGREGATE_BONUS_TYPES = {'crewBooks': (
                CREW_BOOK_RARITY.CREW_COMMON, CREW_BOOK_RARITY.CREW_RARE)}
+R_LOOTBOX_TOOLTIP = R.views.recursiveDyn(('gui_lootboxes', 'lobby', 'gui_lootboxes',
+                                          'tooltips', 'LootboxTooltip'))
 
 def aggregateSimilarBonuses(bonuses):
     masterAggregateBonuses = {}
@@ -92,3 +96,25 @@ def getKeyByID(keyID, itemsCache=None, lobbyContext=None):
 @dependency.replace_none_kwargs(itemsCache=IItemsCache)
 def hasInfiniteLootBoxes(itemsCache=None):
     return any(lb.isActiveHiddenCount() for lb in itemsCache.items.tokens.getLootBoxes().values())
+
+
+@dependency.replace_none_kwargs(itemsCache=IItemsCache)
+def createTooltipLootBoxContentDecorator(itemsCache=None):
+
+    def decorator(func):
+
+        def wrapper(self, event, contentID):
+            tooltipData = self.getTooltipData(event)
+            if R_LOOTBOX_TOOLTIP.exists() and contentID == R_LOOTBOX_TOOLTIP():
+                if tooltipData is None:
+                    return
+                from gui_lootboxes.gui.impl.lobby.gui_lootboxes.tooltips.lootbox_tooltip import LootboxTooltip
+                lootBoxID = tooltipData.get('lootBoxID')
+                lootBox = itemsCache.items.tokens.getLootBoxByID(int(lootBoxID))
+                return LootboxTooltip(lootBox)
+            else:
+                return func(self, event, contentID)
+
+        return wrapper
+
+    return decorator

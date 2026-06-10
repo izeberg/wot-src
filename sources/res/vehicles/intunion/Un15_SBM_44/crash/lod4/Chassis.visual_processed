@@ -39,7 +39,7 @@
 						<row0>1.000000 0.000000 0.000000</row0>
 						<row1>0.000000 1.000000 0.000000</row1>
 						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>0.000000 0.409000 0.000000</row3>
+						<row3>0.000000 0.408568 0.000000</row3>
 					</transform>
 					<node>
 						<identifier>V_BlendBone</identifier>
@@ -47,7 +47,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 -1.000000</row2>
-							<row3>0.000000 -0.909000 0.000000</row3>
+							<row3>0.000000 -0.908568 0.000000</row3>
 						</transform>
 					</node>
 				</node>
@@ -66,7 +66,6 @@
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
 		<node>Tank_BlendBone</node>
-		<node>V_BlendBone</node>
 		<geometry>
 			<vertices>chassis_R_Shape.vertices</vertices>
 			<primitive>chassis_R_Shape.indices</primitive>
@@ -98,14 +97,13 @@
 						<Texture>vehicles/intunion/Un15_SBM_44/SBM_44_proxy_AO.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>1.315340 0.534608 -0.030943</groupOrigin>
+				<groupOrigin>1.315340 0.533687 -0.030943</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
 		<node>Tank_BlendBone</node>
-		<node>V_BlendBone</node>
 		<geometry>
 			<vertices>chassis_L_Shape.vertices</vertices>
 			<primitive>chassis_L_Shape.indices</primitive>
@@ -137,14 +135,14 @@
 						<Texture>vehicles/intunion/Un15_SBM_44/SBM_44_proxy_AO.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-1.313894 0.534614 -0.040527</groupOrigin>
+				<groupOrigin>-1.313894 0.533687 -0.040527</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-1.575748 0.000860 -2.908879</min>
-		<max>1.577194 1.068356 2.989934</max>
+		<min>-1.575748 -0.000020 -2.908879</min>
+		<max>1.577194 1.067395 2.989934</max>
 	</boundingBox>
 	<geometrySize>4780</geometrySize>
 	<minUVDensity>0.003241</minUVDensity>

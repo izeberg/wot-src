@@ -1246,6 +1246,9 @@ msgstr "Спісана ачкоў Баявога пропуска"
 msgid "platformCurrencyMsg/debited/brcoin"
 msgstr "Спісана сталёвых пячатак"
 
+msgid "platformCurrencyMsg/debited/bumblebee_coin"
+msgstr "Списано крышечек"
+
 msgid "platformCurrencyMsg/debited/equip_coin"
 msgstr "Спісана кампанентаў"
 
@@ -1254,6 +1257,9 @@ msgstr "Спісана асабістых ачкоў славы"
 
 msgid "platformCurrencyMsg/debited/freeXP"
 msgstr "Вольны досвед спісаны"
+
+msgid "platformCurrencyMsg/debited/honey_coin"
+msgstr "Списано мёда"
 
 msgid "platformCurrencyMsg/debited/sacoin"
 msgstr "Спісана жэтонаў за выслугу гадоў"
@@ -1264,6 +1270,9 @@ msgstr "Налічана ачкоў Баявога пропуска"
 msgid "platformCurrencyMsg/received/brcoin"
 msgstr "Налічана сталёвых пячатак"
 
+msgid "platformCurrencyMsg/received/bumblebee_coin"
+msgstr "Начислено крышечек"
+
 msgid "platformCurrencyMsg/received/equip_coin"
 msgstr "Налічана кампанентаў"
 
@@ -1272,6 +1281,9 @@ msgstr "Налічана асабістых ачкоў славы"
 
 msgid "platformCurrencyMsg/received/freeXP"
 msgstr "Атрымана вольнага досведу"
+
+msgid "platformCurrencyMsg/received/honey_coin"
+msgstr "Начислено мёда"
 
 msgid "platformCurrencyMsg/received/sacoin"
 msgstr "Дададзена жэтонаў за выслугу гадоў"
@@ -1836,11 +1848,6 @@ msgstr "Патрачана вольнага досведу:"
 msgid "serviceChannelMessages/battlePassReward/buy/gold"
 msgstr "Выдаткавана золата:"
 
-msgid "serviceChannelMessages/battlePassReward/buyMultiple/text"
-msgstr ""
-"Цяпер бы будзеце атрымліваць узнагароды з базавай і палепшанай лінеек "
-"адначасова ў межах усіх раздзелаў сезона."
-
 msgid "serviceChannelMessages/battlePassReward/buyProgress/finalText"
 msgstr "50"
 
@@ -2285,6 +2292,21 @@ msgstr "Узнагарода ўжо была атрымана"
 msgid "serviceChannelMessages/buttons/close"
 msgstr "Закрыць"
 
+msgid "serviceChannelMessages/chatsUnlocked/battle"
+msgstr "Боевые чаты"
+
+msgid "serviceChannelMessages/chatsUnlocked/channels"
+msgstr "Каналы сувязі"
+
+msgid "serviceChannelMessages/chatsUnlocked/private"
+msgstr "Личные сообщения"
+
+msgid "serviceChannelMessages/chatsUnlocked/subtitle"
+msgstr "Доступны игровые чаты:"
+
+msgid "serviceChannelMessages/chatsUnlocked/title"
+msgstr "Разблакаваны гульнявыя магчымасці!"
+
 msgid "serviceChannelMessages/clan/LEFT_CLAN"
 msgstr "Вы выйшлі з клана або вас з яго выключылі:"
 
@@ -2672,6 +2694,9 @@ msgstr ""
 "Стаўка, якую вы зрабілі, аказалася вышэйшай за аўкцыённую цану тавару. "
 "Розніца стаўкі і аўкцыённай цаны неўзабаве вернецца на ваш акаўнт."
 
+msgid "serviceChannelMessages/invoiceDebited/boosters"
+msgstr "Списаны личные резервы"
+
 msgid "serviceChannelMessages/invoiceReceived/berthsAccrued"
 msgstr "Ложкі ў Жаўнерню дададзены"
 
@@ -2938,11 +2963,17 @@ msgstr ""
 "Ад адміністрацыі атрыманы рыштунак: %(typeName)s «%(itemName)s» — %(amount)d"
 " шт."
 
+msgid "serviceChannelMessages/limitedUIContentUnlocked/arcade"
+msgstr "Аркада"
+
 msgid "serviceChannelMessages/limitedUIContentUnlocked/battleMode"
 msgstr "Даступны рэжым бою:"
 
 msgid "serviceChannelMessages/limitedUIContentUnlocked/battleModes"
 msgstr "Даступныя рэжымы бою:"
+
+msgid "serviceChannelMessages/limitedUIContentUnlocked/comp7"
+msgstr "Націск"
 
 msgid "serviceChannelMessages/limitedUIContentUnlocked/content"
 msgstr "Даступны раздзел:"
@@ -2950,8 +2981,20 @@ msgstr "Даступны раздзел:"
 msgid "serviceChannelMessages/limitedUIContentUnlocked/contents"
 msgstr "Даступныя раздзелы:"
 
+msgid "serviceChannelMessages/limitedUIContentUnlocked/fieldTrials"
+msgstr "Полевые испытания"
+
+msgid "serviceChannelMessages/limitedUIContentUnlocked/frontline"
+msgstr "Лінія фронту"
+
 msgid "serviceChannelMessages/limitedUIContentUnlocked/personalMissions"
 msgstr "Кампаніі"
+
+msgid "serviceChannelMessages/limitedUIContentUnlocked/ranked"
+msgstr "Рангавыя баі"
+
+msgid "serviceChannelMessages/limitedUIContentUnlocked/specBattles"
+msgstr "Специальные бои"
 
 msgid "serviceChannelMessages/limitedUIContentUnlocked/stronghold"
 msgstr "Умацаваны раён"
@@ -2964,6 +3007,35 @@ msgstr "Турніры"
 
 msgid "serviceChannelMessages/limitedUIContentUnlocked/versusAI"
 msgstr "Палігон"
+
+msgid "serviceChannelMessages/limitedUIPlatoonLocked/COMP7"
+msgstr "Націск"
+
+msgid "serviceChannelMessages/limitedUIPlatoonLocked/EPIC"
+msgstr "Лінія фронту"
+
+msgid "serviceChannelMessages/limitedUIPlatoonLocked/FUN_RANDOM"
+msgstr "%(modeName)s"
+
+msgid "serviceChannelMessages/limitedUIPlatoonLocked/RANKED"
+msgstr "Рангавыя баі"
+
+msgid "serviceChannelMessages/limitedUIPlatoonLocked/VERSUS_AI"
+msgstr "Палігон"
+
+msgid "serviceChannelMessages/limitedUIPlatoonLocked/text"
+msgstr ""
+"Чтобы принять приглашение от игрока %(name)s во взвод режима "
+"«%(battleType)s», вам необходимо выполнить условия разблокировки этого "
+"режима боя."
+
+msgid "serviceChannelMessages/limitedUIPlatoonLocked/textNoName"
+msgstr ""
+"Чтобы принять приглашение во взвод режима «%(battleType)s», вам необходимо "
+"выполнить условия разблокировки этого режима боя."
+
+msgid "serviceChannelMessages/limitedUIPlatoonLocked/title"
+msgstr "Нельзя вступить во взвод"
 
 msgid "serviceChannelMessages/lootBoxes/button"
 msgstr "Да кантэйнераў"
@@ -3563,6 +3635,14 @@ msgstr "Спецыяльная ўзнагарода"
 
 msgid "serviceChannelMessages/specialReward/vehicleBlueprints"
 msgstr "Фрагмент чарцяжа для %(vehicleName)s (x%(fragmentsCount)s)"
+
+msgid "serviceChannelMessages/stallPurchaseReceipt/body"
+msgstr ""
+"Дата: %(date)s \n"
+"%(itemName)s"
+
+msgid "serviceChannelMessages/stallPurchaseReceipt/title"
+msgstr "Фінансавая аперацыя"
 
 msgid "serviceChannelMessages/sysMsg/converter/blueprintsReceived"
 msgstr "Атрымана кампенсацыя за чарцяжы даследаванай тэхнікі:"

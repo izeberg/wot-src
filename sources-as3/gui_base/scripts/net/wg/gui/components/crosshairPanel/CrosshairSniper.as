@@ -4,6 +4,8 @@ package net.wg.gui.components.crosshairPanel
    
    public class CrosshairSniper extends CrosshairWithCassette
    {
+      
+      private static const GUN_COOLING_INDICATOR_OFFSET:int = -175;
        
       
       public var zoomTF:TextField = null;
@@ -65,6 +67,11 @@ package net.wg.gui.components.crosshairPanel
       override protected function getAbilityModifierXPos() : Array
       {
          return this._abilityModifierXPositions;
+      }
+      
+      override protected function getGunCoolingIndicatorYOffset() : int
+      {
+         return GUN_COOLING_INDICATOR_OFFSET;
       }
    }
 }

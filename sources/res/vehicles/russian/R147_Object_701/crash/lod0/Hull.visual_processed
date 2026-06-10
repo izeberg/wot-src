@@ -49,12 +49,12 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>hull_Shape.vertices</vertices>
-			<primitive>hull_Shape.indices</primitive>
+			<vertices>hullShape.vertices</vertices>
+			<primitive>hullShape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_mat</identifier>
+					<identifier>tank</identifier>
 					<fx>shaders/std_effects/PBS_tank_crash.fx</fx>
 					<materialKind>0</materialKind>
 					<collisionFlags>0</collisionFlags>
@@ -133,6 +133,6 @@
 		<min>-1.666678 -0.830838 -3.563424</min>
 		<max>1.806023 0.871237 3.255538</max>
 	</boundingBox>
-	<geometrySize>1572964</geometrySize>
+	<geometrySize>1571322</geometrySize>
 	<minUVDensity>0.002223</minUVDensity>
 </root>

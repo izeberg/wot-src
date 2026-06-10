@@ -11,6 +11,9 @@ msgstr ""
 msgid "AN_GRC_3_8"
 msgstr "AN/GRC-4"
 
+msgid "AN_GRC_3_8_02"
+msgstr "AN/GRC-4"
+
 msgid "BMW_IV"
 msgstr "BMW IV"
 
@@ -122,12 +125,6 @@ msgstr "O-Ni"
 msgid "Chassis_J28_O_I_100_2"
 msgstr "O-Ni Kai"
 
-msgid "Chassis_J29_Nameless"
-msgstr "Nameless"
-
-msgid "Chassis_J30_Edelweiss"
-msgstr "Edelweiss"
-
 msgid "Chassis_J31_Type_5_KaRi"
 msgstr "Type 5 Ka-Ri"
 
@@ -154,6 +151,9 @@ msgstr "Type Но-Ri 3"
 
 msgid "Chassis_J36_Type_63_HT"
 msgstr "Type 63"
+
+msgid "Chassis_J36_Type_63_HT_02"
+msgstr "Type 63 02"
 
 msgid "Chassis_J37_Type_3_Ho_Ni_III"
 msgstr "Type Hara 1"
@@ -342,12 +342,6 @@ msgstr ""
 
 msgid "Chi_To_short"
 msgstr "Chi-To"
-
-msgid "Edelweiss_Engine"
-msgstr "Edelweiss"
-
-msgid "Edelweiss_Radio"
-msgstr "Edelweiss"
 
 msgid "FuG5A"
 msgstr "Fu 5 mit 20 WS.E."
@@ -566,53 +560,6 @@ msgstr ""
 msgid "J28_O_I_100_short"
 msgstr "O-Ni"
 
-msgid "J29_Nameless"
-msgstr "Nameless"
-
-msgid "J29_Nameless_descr"
-msgstr ""
-"Основная боевая машина отряда 422, подразделения регулярной армии Галлии, "
-"также известного как «Безымянные». Как и у танка Edelweiss, отличительной "
-"чертой данной машины были наклонные плиты брони. Массового распространения в"
-" танкостроении машина не получила. Насколько известно, машина отряда 422 — "
-"один из боевых прототипов."
-
-msgid "J29_Nameless_long_special"
-msgstr ""
-"Японский тяжёлый танк VIII уровня. Обладает неплохим уроном в минуту, "
-"крепкой бронёй и отличной максимальной скоростью для тяжёлого танка. Вместе "
-"с тем показатели разового урона и манёвренности достаточно скромные."
-
-msgid "J29_Nameless_short"
-msgstr "Nameless"
-
-msgid "J29_Nameless_short_special"
-msgstr "Отличное бронирование, хорошая мобильность"
-
-msgid "J30_Edelweiss"
-msgstr "Edelweiss"
-
-msgid "J30_Edelweiss_descr"
-msgstr ""
-"Экспериментальный средний танк. Разработан инженером Тэймером под "
-"руководством генерала Белгена Гюнтера по опыту боевых действий Первой "
-"Европейской Войны. С началом Второй Европейской Войны боевая машина "
-"использовалась Седьмым Отрядом Третьего Полка Галлийского Ополчения. Серийно"
-" не выпускался."
-
-msgid "J30_Edelweiss_long_special"
-msgstr ""
-"Японский средний танк VIII уровня. Обладает отличной мобильностью, неплохим "
-"орудием и хорошим обзором. Помимо основной брони у машины есть экраны, "
-"защищающие от снарядов противника. Подойдёт всем любителям активной игры на "
-"средних танках."
-
-msgid "J30_Edelweiss_short"
-msgstr "Edelweiss"
-
-msgid "J30_Edelweiss_short_special"
-msgstr "Неплохое орудие, отличная мобильность"
-
 msgid "J31_Type_5_KaRi"
 msgstr "Type 5 Ka-Ri"
 
@@ -708,6 +655,30 @@ msgstr "Ho-Ri 3"
 
 msgid "J36_Type_63_HT"
 msgstr "Type 63"
+
+msgid "J36_Type_63_HT_02"
+msgstr "Type 63 02"
+
+msgid "J36_Type_63_HT_02_descr"
+msgstr ""
+"Танк с рабочим индексом «Тип 63» являлся инициативной разработкой фирмы Mitsubishi, направленной на совершенствование показателей огневой мощи и защиты принятой на вооружение машины «Тип 61» с сохранением ею высокой подвижности. В конструкции танка предполагалось использовать гидропневматическую подвеску с возможностью изменения угла наклона корпуса. Главным нововведением конструкторам виделась башня с качающимся изолированным центральным отсеком, в котором было бы размещено вооружение с автоматом заряжания. Такая конструкция башни смогла бы обеспечить превосходные углы склонения пушки: до 18 градусов вкупе с работой подвески. Пушку планировали оснастить опытной системой охлаждения для сохранения точности при длительной стрельбе. Однако несмотря на перспективные технические решения в конструкции, «Тип 63» остался нереализованным проектом; руководство Сил самообороны Японии сделало ставку на танки с классической компоновкой.\n"
+"\n"
+"Характеристики машины могут быть изменены без компенсации."
+
+msgid "J36_Type_63_HT_02_long_special"
+msgstr ""
+"Тяжёлый танк с магазинной системой заряжания на три снаряда "
+"и гидропневматической подвеской, с помощью которой можно увеличить угол "
+"склонения орудия до 12 градусов. Также машина снабжена механикой охлаждения "
+"ствола и системой двойного сведения, что автоматически превращает танк "
+"в универсального бойца, который может как эффективно играть в ближнем бою "
+"«от рельефа», так и вести точную стрельбу с предельных дистанций."
+
+msgid "J36_Type_63_HT_02_short"
+msgstr "Type 63 02"
+
+msgid "J36_Type_63_HT_02_short_special"
+msgstr "Гидропневматическая подвеска, магазин на 3 снаряда, охлаждение орудия"
 
 msgid "J36_Type_63_HT_descr"
 msgstr ""
@@ -1013,12 +984,6 @@ msgstr ""
 msgid "NC27_short"
 msgstr "R. Otsu"
 
-msgid "Nameless_Engine"
-msgstr "Nameless"
-
-msgid "Nameless_Radio"
-msgstr "Nameless"
-
 msgid "STA_1"
 msgstr "STA-1"
 
@@ -1141,12 +1106,6 @@ msgstr "O-Ho"
 msgid "Turret_1_J28_O_I_100"
 msgstr "O-Ni"
 
-msgid "Turret_1_J29_Nameless"
-msgstr "Nameless"
-
-msgid "Turret_1_J30_Edelweiss"
-msgstr "Edelweiss"
-
 msgid "Turret_1_J31_Type_5_KaRi"
 msgstr "Type 5 Ka-Ri"
 
@@ -1164,6 +1123,9 @@ msgstr "Type Но-Ri 3"
 
 msgid "Turret_1_J36_Type_63_HT"
 msgstr "Type 63"
+
+msgid "Turret_1_J36_Type_63_HT_02"
+msgstr "Type 63 02"
 
 msgid "Turret_1_J37_Type_3_Ho_Ni_III"
 msgstr "Ho-Ni III"
@@ -1308,6 +1270,9 @@ msgstr "M392XB"
 msgid "_105mm_AP_M736"
 msgstr "M392XC"
 
+msgid "_105mm_AP_M736_02"
+msgstr "M392XC"
+
 msgid "_105mm_AP_Type_92"
 msgstr "Type 92 AP"
 
@@ -1347,6 +1312,9 @@ msgstr "HEAT Type 92 L45"
 msgid "_105mm_HEAT_M457"
 msgstr "M457"
 
+msgid "_105mm_HEAT_M457_02"
+msgstr "M457"
+
 msgid "_105mm_HEAT_M68"
 msgstr "10,5 cm HEAT Type 68"
 
@@ -1357,6 +1325,9 @@ msgid "_105mm_HEPT_Type75"
 msgstr "Type 75"
 
 msgid "_105mm_HEPT_Type76"
+msgstr "Type 76"
+
+msgid "_105mm_HEPT_Type76_02"
 msgstr "Type 76"
 
 msgid "_105mm_HE_M68"
@@ -1378,6 +1349,9 @@ msgid "_105mm_HE_Type_92B"
 msgstr "Type 92 HE"
 
 msgid "_105mm_JSW_105_60"
+msgstr "105 mm JSW 105/60"
+
+msgid "_105mm_JSW_105_60_02"
 msgstr "105 mm JSW 105/60"
 
 msgid "_105mm_M68_L7"
@@ -1851,18 +1825,6 @@ msgstr "7,5 cm Tank Gun Type 90"
 msgid "_88mm_AP_Type_3_Ju_Nu"
 msgstr "8,8 cm AP Type 1"
 
-msgid "_88mm_Edelweiss_AP"
-msgstr "AP/E"
-
-msgid "_88mm_Edelweiss_APCR"
-msgstr "APCR/E"
-
-msgid "_88mm_Edelweiss_ENH"
-msgstr "ENH/E"
-
-msgid "_88mm_Edelweiss_Gun"
-msgstr "88 mm Theimer L/40"
-
 msgid "_88mm_HEAT_Type_3_Ju_Nu"
 msgstr "8,8 cm HEAT-1"
 
@@ -1871,18 +1833,6 @@ msgstr "8,8 cm HE-1"
 
 msgid "_88mm_KwK_36_L56A"
 msgstr "8,8 cm Kw.K. 36 L/56"
-
-msgid "_88mm_Nameless_AP"
-msgstr "AP/N"
-
-msgid "_88mm_Nameless_APCR"
-msgstr "APCR/N"
-
-msgid "_88mm_Nameless_ENH"
-msgstr "ENH/N"
-
-msgid "_88mm_Nameless_Gun"
-msgstr "88 mm Breda L/48 (Trial Production)"
 
 msgid "_88mm_Pzgr.40"
 msgstr "Pzgr. 40"
@@ -1990,6 +1940,9 @@ msgid "_Mitsubishi_10ZF21WT"
 msgstr "Mitsubishi 10ZF21WT"
 
 msgid "_Mitsubishi_12H29WT"
+msgstr "Mitsubishi 12H29WT"
+
+msgid "_Mitsubishi_12H29WT_02"
 msgstr "Mitsubishi 12H29WT"
 
 msgid "_Mitsubishi_12HM20WT"

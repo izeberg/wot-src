@@ -215,6 +215,9 @@ msgstr "Prototipo 6"
 msgid "Chassis_It33_Orso"
 msgstr "Orso"
 
+msgid "Chassis_It35_Gladiatore"
+msgstr "Gladiatore"
+
 msgid "Chassis_It36_Gasta"
 msgstr "Gasta"
 
@@ -807,6 +810,29 @@ msgstr "Orso"
 msgid "It33_Orso_short_special"
 msgstr "Годнае франтальнае браніраванне, добрыя пашкоджанні за хвіліну"
 
+msgid "It35_Gladiatore"
+msgstr "Gladiatore"
+
+msgid "It35_Gladiatore_descr"
+msgstr ""
+"Проект тяжёлого танка Gladiatore разрабатывался в самом конце 1950-х годов итальянской фирмой OTO Melara по заказу Министерства обороны Италии. Работы велись параллельно с проектом «Европейского танка», разрабатывавшегося в ФРГ и Франции. По требованию итальянских военных танк Gladiatore должен был иметь массу около 60 тонн, мощное вооружение (105-мм длинноствольную пушку Cannone da 105/76) и броневую защиту, способную выдерживать попадания из современных советских 100-мм пушек. Кроме этого, танк должен был иметь низкий силуэт и способность эффективно действовать в условиях гористой местности. Однако в ходе рассмотрения эскизного проекта стало понятно, что машина выходит слишком дорогой и сложной для итальянской промышленности. В конечном итоге проект не получил дальнейшего финансирования и был закрыт.\n"
+"\n"
+"Характеристики машины могут быть изменены без компенсации."
+
+msgid "It35_Gladiatore_long_special"
+msgstr ""
+"Типичный представитель итальянских тяжёлых танков с уже знакомой механикой "
+"доработанной дозарядки. Обладает хорошей мобильностью, хорошо чувствует себя"
+" в позиционных перестрелках, благодаря крепкой башне, хорошей точности "
+"и углу склонения. Особенностью является возможность использовать два снаряда"
+" без потери урона в минуту."
+
+msgid "It35_Gladiatore_short"
+msgstr "Gladiatore"
+
+msgid "It35_Gladiatore_short_special"
+msgstr "Дозарядка на 4 снаряда, комфортная игра «от рельефа»"
+
 msgid "It36_Gasta"
 msgstr "Gasta"
 
@@ -847,6 +873,9 @@ msgstr "MB 837C"
 
 msgid "MB_838"
 msgstr "MB 838"
+
+msgid "MB_880_It35"
+msgstr "MB 880 Ea-500"
 
 msgid "MTU_870"
 msgstr "MTU 870"
@@ -986,6 +1015,9 @@ msgstr "Selex STR 633P"
 msgid "Selex_STR_70"
 msgstr "Selex STR 70"
 
+msgid "Selex_STR_70_It35"
+msgstr "RV 4"
+
 msgid "Turret_1_It03_M15_42"
 msgstr "M15/42"
 
@@ -1076,6 +1108,9 @@ msgstr "Prototipo 6"
 msgid "Turret_1_It33_Orso"
 msgstr "Orso"
 
+msgid "Turret_1_It35_Gladiatore"
+msgstr "Gladiatore"
+
 msgid "Turret_1_It36_Gasta"
 msgstr "Gasta"
 
@@ -1163,6 +1198,9 @@ msgstr "Cannone da 105/73"
 msgid "_105mm_Cannone_Da_105_76"
 msgstr "Cannone da 105/76"
 
+msgid "_105mm_Cannone_Da_105_76_It35"
+msgstr "105 mm Cannone Da 105/76"
+
 msgid "_105mm_Cannone_da_105_25"
 msgstr "Cannone da 105/25"
 
@@ -1172,10 +1210,19 @@ msgstr "Cannone da 105/58"
 msgid "_105mm_GEF_mod_51"
 msgstr "G.E.F. mod 51"
 
+msgid "_105mm_GEF_mod_51_It35"
+msgstr "G.E.F. mod 51"
+
 msgid "_105mm_GEP_mod_51"
 msgstr "G.E.P. mod 51"
 
+msgid "_105mm_GEP_mod_51_It35"
+msgstr "G.E.P. mod 51"
+
 msgid "_105mm_GS_mod_57"
+msgstr "G.S. mod 57"
+
+msgid "_105mm_GS_mod_57_It35"
 msgstr "G.S. mod 57"
 
 msgid "_105mm_HE_M113"

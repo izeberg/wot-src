@@ -660,15 +660,6 @@ CHAT_COMMANDS = Enumeration('chatCommands', [
   {'battleCmd': 1}),
  (
   BATTLE_CHAT_COMMAND_NAMES.FOCUS_SUPPLY,
-  {'battleCmd': 1}),
- (
-  BATTLE_CHAT_COMMAND_NAMES.OBJECTIVES_POINT,
-  {'battleCmd': 1}),
- (
-  BATTLE_CHAT_COMMAND_NAMES.HB_ARTILLERY_ON_YOURSELF,
-  {'battleCmd': 1}),
- (
-  BATTLE_CHAT_COMMAND_NAMES.HB_LAST_STAND,
   {'battleCmd': 1})], instance=AttributeEnumItem)
 CHAT_MEMBER_STATUSES = Enumeration('chatMemberStatuses', [
  'available',
@@ -838,6 +829,12 @@ def isRegularChannel(channelInfo):
 
 def isRegularChannelFlags(flags):
     return flags == 0
+
+
+def isBanAppliedToChannel(banType, channelInfo):
+    if banType == constants.NOVICE_RESTRICTIONS_BAN_TYPE:
+        return isRegularChannelFlags(channelInfo.get('flags', 0)) or isPrivateChannel(channelInfo)
+    return True
 
 
 class BaseChatCommandProcessor(object):
@@ -1242,12 +1239,14 @@ class UserBannedError(ChatError):
 
 class ChatBannedError(ChatError):
 
-    def __init__(self, banReason, banEndTime):
+    def __init__(self, banReason, banEndTime, banType=None):
         ChatError.__init__(self, CHAT_RESPONSES.chatBanned)
         self.__banReason = banReason
         self.__banEndTime = banEndTime
+        self.__banType = banType
         self._messageArgs = {'banReason': self.__banReason, 
-           'banEndTime': self.__banEndTime}
+           'banEndTime': self.__banEndTime, 
+           'banType': self.__banType}
 
     def _getMessage(self):
         if self.__banEndTime is not None:
@@ -1620,7 +1619,8 @@ SYS_MESSAGE_TYPE = Enumeration('systemMessageType', [
  'playStreakSysMessage',
  'playStreakSysWithRewardsMessage',
  'armoryYardRevertRerollMessage',
- 'tradingCaravanMessage'])
+ 'tradingCaravanMessage',
+ 'immediatelyOpenBoxReward'])
 SYS_MESSAGE_IMPORTANCE = Enumeration('systemMessageImportance', [
  'normal',
  'high'])

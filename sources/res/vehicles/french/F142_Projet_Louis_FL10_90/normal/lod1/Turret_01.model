@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F142_Projet_Louis_FL10_90/normal/lod1/Turret_01</nodefullVisual>
+	<parent>vehicles/french/F142_Projet_Louis_FL10_90/normal/lod2/Turret_01</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.093426 0.004322 -0.868826</min>
+		<max>1.090735 2.411102 0.881731</max>
+	</visibilityBox>
+</root>

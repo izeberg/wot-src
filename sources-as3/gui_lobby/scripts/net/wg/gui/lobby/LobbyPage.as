@@ -43,11 +43,9 @@ package net.wg.gui.lobby
       
       private static const TEASER_ANIM_SPEED_TIME:int = 600;
       
-      private static const TOP_SUB_VIEW_POSITION:Number = 53;
+      private static const TOP_SUB_VIEW_POSITION:Number = 51;
       
       private static const WARNING_EMPTY_HIT_AREA:String = "vehicleHitArea is null!";
-      
-      private static const HEADER_INVISIBLE_Y:int = -2000;
        
       
       public var vehicleHitArea:VehicleHitAreaComponent = null;
@@ -230,19 +228,6 @@ package net.wg.gui.lobby
          this.waiting.setMessage(param1);
          this.waiting.setSize(_width,_height);
          this.waiting.show();
-      }
-      
-      public function as_setInterfaceVisible(param1:Boolean, param2:Boolean) : void
-      {
-         if(this.header.visible == param1 && this.messengerBar.visible == param2)
-         {
-            return;
-         }
-         this.header.visible = param1;
-         this.header.y = !!param1 ? Number(0) : Number(HEADER_INVISIBLE_Y);
-         this.messengerBar.visible = param2;
-         this.updateStage(App.appWidth,App.appHeight);
-         dispatchEvent(new Event(Event.RESIZE));
       }
       
       public function as_setSubContainerItemsVisibility(param1:Boolean) : void

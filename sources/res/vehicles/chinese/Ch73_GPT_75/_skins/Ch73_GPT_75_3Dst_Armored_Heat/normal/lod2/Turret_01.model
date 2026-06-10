@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/chinese/Ch73_GPT_75/_skins/Ch73_GPT_75_3Dst_Armored_Heat/normal/lod2/Turret_01</nodefullVisual>
+	<parent>vehicles/chinese/Ch73_GPT_75/_skins/Ch73_GPT_75_3Dst_Armored_Heat/normal/lod3/Turret_01</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.568898 0.014974 -2.682487</min>
+		<max>1.526662 1.226442 1.746187</max>
+	</visibilityBox>
+</root>

@@ -14,6 +14,7 @@ package net.wg.gui.components.crosshairPanel
    import net.wg.gui.components.crosshairPanel.components.AbilityModifierIndicator;
    import net.wg.gui.components.crosshairPanel.components.ClipQuantityIndicator;
    import net.wg.gui.components.crosshairPanel.components.CrosshairClipQuantityBarContainer;
+   import net.wg.gui.components.crosshairPanel.components.GunCoolingIndicator;
    import net.wg.gui.components.crosshairPanel.components.ShotDamageInd;
    import net.wg.gui.components.crosshairPanel.components.ShotFlyTimeInd;
    import net.wg.gui.components.crosshairPanel.components.autoloader.AutoloaderIndicator;
@@ -34,6 +35,8 @@ package net.wg.gui.components.crosshairPanel
       private static const TF_LEFT_MARGIN:int = 2;
       
       private static const COOLANT_ABILITY_INDICATOR_OFFSET:int = -60;
+      
+      private static const GUN_COOLING_INDICATOR_OFFSET:int = -13;
        
       
       public var timerProgressTextField:TextField = null;
@@ -99,6 +102,8 @@ package net.wg.gui.components.crosshairPanel
       private var _coolantAbilityIndicator:CoolantAbilityIndicator = null;
       
       private var _abilityModifierIndicator:AbilityModifierIndicator = null;
+      
+      private var _gunCoolingIndicator:GunCoolingIndicator = null;
       
       private var _prevReloadingState:String = "";
       
@@ -174,6 +179,19 @@ package net.wg.gui.components.crosshairPanel
          this._coolantAbilityIndicator.y = this.timerProgressTextField.y;
          this._coolantAbilityIndicator.addEventListener(CoolantAbilityIndicator.ACTIVATED,this.onCoolantAbilityActivatedHandler);
          this._coolantAbilityIndicator.addEventListener(CoolantAbilityIndicator.DEACTIVATED,this.onCoolantAbilityDeactivatedHandler);
+      }
+      
+      private function addGunCoolingIndicator() : void
+      {
+         var _loc1_:Class = null;
+         if(!this._gunCoolingIndicator)
+         {
+            _loc1_ = Class(getDefinitionByName(Linkages.GUN_COOLING_INDICATOR));
+            this._gunCoolingIndicator = GunCoolingIndicator(new _loc1_());
+            addChild(this._gunCoolingIndicator);
+            this._gunCoolingIndicator.x = GUN_COOLING_INDICATOR_OFFSET;
+            this._gunCoolingIndicator.y = this.getGunCoolingIndicatorYOffset();
+         }
       }
       
       private function onCoolantAbilityDeactivatedHandler(param1:Event) : void
@@ -621,6 +639,28 @@ package net.wg.gui.components.crosshairPanel
       {
       }
       
+      public function animShotHitMarker(param1:String) : void
+      {
+      }
+      
+      public function setShotHitMarkerVisibility(param1:Boolean) : void
+      {
+      }
+      
+      public function setGunCoolingTime(param1:Boolean, param2:Number) : void
+      {
+         this.addGunCoolingIndicator();
+         this._gunCoolingIndicator.updateTime(param1,param2);
+      }
+      
+      public function setGunCoolingVisibility(param1:Boolean) : void
+      {
+         if(this._gunCoolingIndicator)
+         {
+            this._gunCoolingIndicator.visible = param1;
+         }
+      }
+      
       protected function onDispose() : void
       {
          removeEventListener(CrosshairPanelEvent.SOUND,this.onCrosshairPanelSoundHandler);
@@ -675,6 +715,11 @@ package net.wg.gui.components.crosshairPanel
          {
             this._overheatBar.dispose();
             this._overheatBar = null;
+         }
+         if(this._gunCoolingIndicator)
+         {
+            this._gunCoolingIndicator.dispose();
+            this._gunCoolingIndicator = null;
          }
       }
       
@@ -734,6 +779,11 @@ package net.wg.gui.components.crosshairPanel
       protected function getAbilityModifierXPos() : Array
       {
          return null;
+      }
+      
+      protected function getGunCoolingIndicatorYOffset() : int
+      {
+         return Values.ZERO;
       }
       
       private function updateQuickReloadingTimer() : void
@@ -841,6 +891,26 @@ package net.wg.gui.components.crosshairPanel
          this.mbAutoloaderComponent.alpha = this.cassetteAlpha;
       }
       
+      private function onCrosshairPanelSoundHandler(param1:CrosshairPanelEvent) : void
+      {
+         if(!visible)
+         {
+            param1.stopImmediatePropagation();
+         }
+      }
+      
+      private function updateShotIndicatorsVisibility() : void
+      {
+         if(this.shotDamageInd)
+         {
+            this.shotDamageInd.visible = this._shotDamageIndVisible;
+         }
+         if(this.shotFlyTimeInd)
+         {
+            this.shotFlyTimeInd.visible = this._shotFlyTimeIndVisible;
+         }
+      }
+      
       public function get autoloaderBoostParams() : BoostIndicatorStateParamsVO
       {
          if(this.isAutoloader)
@@ -862,34 +932,6 @@ package net.wg.gui.components.crosshairPanel
       public function get isAutoloader() : Boolean
       {
          return this._clipType == CROSSHAIR_CASSETTE_TYPES.AUTOLOADER || this._clipType == CROSSHAIR_CASSETTE_TYPES.MULTIPLE_BARREL_AUTOLOADER;
-      }
-      
-      private function onCrosshairPanelSoundHandler(param1:CrosshairPanelEvent) : void
-      {
-         if(!visible)
-         {
-            param1.stopImmediatePropagation();
-         }
-      }
-      
-      public function animShotHitMarker(param1:String) : void
-      {
-      }
-      
-      public function setShotHitMarkerVisibility(param1:Boolean) : void
-      {
-      }
-      
-      private function updateShotIndicatorsVisibility() : void
-      {
-         if(this.shotDamageInd)
-         {
-            this.shotDamageInd.visible = this._shotDamageIndVisible;
-         }
-         if(this.shotFlyTimeInd)
-         {
-            this.shotFlyTimeInd.visible = this._shotFlyTimeIndVisible;
-         }
       }
    }
 }

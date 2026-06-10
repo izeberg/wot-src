@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/russian/R214_ABM_152/crash/lod2/Turret_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.424842 -0.152845 -1.789542</min>
+		<max>1.595454 1.529968 1.366849</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/russian/R214_ABM_152/crash/lod1/Turret_01</nodefullVisual>
+</root>

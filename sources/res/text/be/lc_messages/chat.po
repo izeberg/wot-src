@@ -18,7 +18,10 @@ msgid "channels/clan"
 msgstr "Клан"
 
 msgid "channels/common"
-msgstr "Агульны"
+msgstr "Общий чат"
+
+msgid "channels/common/tooltip"
+msgstr "Общий чат для общения на текущем сервере."
 
 msgid "channels/epic_training"
 msgstr "Супольныя вучэнні — Лінія фронту"
@@ -92,6 +95,17 @@ msgstr "Нельга скасаваць мадэратарскія правы а
 
 msgid "errors/delmoderatorowner"
 msgstr "Нельга скасаваць мадэратарскія правы ўладальніку канала."
+
+msgid "errors/novicerestrictions"
+msgstr ""
+"Вы можете принимать и отправлять сообщения только друзьям из списка контактов.\n"
+"\n"
+"Возможность отправки и принятия сообщений от всех игроков откроется после  %(battles)s боёв и получения в Ангар техники %(level)s (или выше) уровня."
+
+msgid "errors/novicerestrictionsshort"
+msgstr ""
+"Для доступа к боевому чату проведите %(battles)s боёв и получите любую "
+"машину %(level)s уровня или выше."
 
 msgid "errors/timeincorrect"
 msgstr ""

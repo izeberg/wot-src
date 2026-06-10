@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/poland/Pl36_Bobr/normal/lod0/Turret_01</nodefullVisual>
+	<visibilityBox>
+		<min>-0.034517 -0.016148 -0.030507</min>
+		<max>0.034517 0.016148 0.030507</max>
+	</visibilityBox>
+</root>

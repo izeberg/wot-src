@@ -161,7 +161,7 @@
 					<property>
 						<name>Position</name>
 						<value>
-							-4.57764e-05 -7.81802e-09 4.57764e-05
+							-4.57764e-05 0.500301 4.57764e-05
 							<!--BW_String-->
 						</value>
 					</property>
@@ -511,25 +511,19 @@
 					</property>
 					<property>
 						<name>DistLimits</name>
-						<value>
-							6 13.2
-							<!--BW_String-->
-						</value>
+						<value>6 11</value>
 					</property>
 					<property>
 						<name>StartYaw</name>
-						<value>
-							-118.541
-							<!--BW_String-->
-						</value>
+						<value>-100</value>
 					</property>
 					<property>
 						<name>StartPitch</name>
-						<value>-12</value>
+						<value>-15</value>
 					</property>
 					<property>
 						<name>StartDist</name>
-						<value>12</value>
+						<value>9</value>
 					</property>
 				</config>
 			</component>

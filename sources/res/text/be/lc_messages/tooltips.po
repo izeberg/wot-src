@@ -645,6 +645,12 @@ msgstr ""
 msgid "advanced/driver"
 msgstr "Уплывае на дынамічныя характарыстыкі машыны."
 
+msgid "advanced/dualGunCooling"
+msgstr ""
+"После выстрела орудие начинает остывать, о чём свидетельствует мигающая иконка оранжевого цвета. После того как орудие остынет, иконка станет зелёной, а круг сведения уменьшится относительно первоначального.\n"
+"\n"
+"На двухорудийной установке при быстром щелчке кнопкой выстрела орудие ведёт привычный одиночный огонь. При удержании кнопки залпа оба заряженных орудия начинают готовиться к одновременному выстрелу из обоих орудий. Назначенную кнопку можно поменять в настройках. Выстрел залпом приведёт к временной блокировке перезарядки."
+
 msgid "advanced/economyBonds"
 msgstr "Рэдкая спецыялізаваная валюта, за якую купляюцца ўнікальныя тавары."
 
@@ -722,6 +728,12 @@ msgid "advanced/grousers"
 msgstr ""
 "Павялічвае хуткасць павароту машыны, а таксама захаванне набранай хуткасці "
 "пры перасячэнні ўсіх тыпаў грунту."
+
+msgid "advanced/gunCooling"
+msgstr ""
+"После выстрела орудие начинает остывать, о чём свидетельствует мигающая "
+"иконка оранжевого цвета. После того как орудие остынет, иконка станет "
+"зелёной, а круг сведения уменьшится относительно первоначального."
 
 msgid "advanced/gunner"
 msgstr ""
@@ -1103,6 +1115,14 @@ msgstr ""
 msgid "awardItem/brcoin/header"
 msgstr "Сталёвыя пячаткі"
 
+msgid "awardItem/bumblebee_coin/body"
+msgstr ""
+"За эти крышечки можно приобрести случайный набор Летней ярмарки с возможностью получить из него редкую технику.\n"
+"Крышечки можно приобрести в Магазине и получить за выполнение боевых задач события."
+
+msgid "awardItem/bumblebee_coin/header"
+msgstr "Крышечки Летней ярмарки"
+
 msgid "awardItem/comp7TokenCouponReward/body"
 msgstr ""
 "Дасягаючы новых рангаў у Націску, вы атрымаеце купоны на зніжку, кожны з "
@@ -1454,6 +1474,14 @@ msgstr "Дадатковая ўзнагарода."
 msgid "awardItem/groups/header"
 msgstr "Узнагарода"
 
+msgid "awardItem/honey_coin/body"
+msgstr ""
+"Соберите достаточное количество мёда и обменяйте его на технику, которую не удалось получить из набора Летней ярмарки.\n"
+"Мёд выпадает только из наборов Летней ярмарки."
+
+msgid "awardItem/honey_coin/header"
+msgstr "Мёд"
+
 msgid "awardItem/idle_crew_xp/body"
 msgstr "Выбраны экіпаж будзе няспынна назапашваць досвед."
 
@@ -1727,7 +1755,9 @@ msgstr ""
 "Настаўленне дзейнічае толькі пры ўсталяваным абсталяванні адпаведнага тыпу."
 
 msgid "battleBooster/useless/unsuitable_battlemode"
-msgstr "Эканамічныя інструкцыі не працуюць у рэжымах з адключанай эканомікай."
+msgstr ""
+"Экономические инструкции не работают в выбранном режиме боя. При выходе "
+"в бой инструкция НЕ расходуется."
 
 msgid "battleBorderMapModeButtonBar/info/body"
 msgstr ""
@@ -6249,12 +6279,6 @@ msgstr ""
 msgid "header/buttons/missions/header"
 msgstr "Задачы"
 
-msgid "header/buttons/museum/body"
-msgstr "Посетить виртуальную экспозицию советских танков и САУ."
-
-msgid "header/buttons/museum/header"
-msgstr "Музей"
-
 msgid "header/buttons/personalMissions/body"
 msgstr "Націсніце, каб перайсці да асабістых баявых задач."
 
@@ -6560,61 +6584,6 @@ msgstr ""
 msgid "limitedUISettingBlock/info/header"
 msgstr "Паэтапнае з'яўленне схаваных элементаў інтэрфейсу ў Гаражы"
 
-msgid "limited_ui/unlock_info/condition/isInClan"
-msgstr "Уступіць у клан."
-
-msgid "limited_ui/unlock_info/condition/minVehicleLevel"
-msgstr ""
-"Атрымаць любую тэхніку %(level)s узроўню або вышэйшага (акрамя пракатнай)."
-
-msgid "limited_ui/unlock_info/condition/separator"
-msgstr "або"
-
-msgid "limited_ui/unlock_info/footer/personal_missions/desc"
-msgstr ""
-"Кампаніі — гэта сістэма баявых задач для розных тыпаў тэхнікі і ўзроўняў. "
-"Узнагароды кампаній —унікальныя машыны і мноства гульнявых рэсурсаў."
-
-msgid "limited_ui/unlock_info/footer/personal_missions/title"
-msgstr "Пра Кампаніі"
-
-msgid "limited_ui/unlock_info/footer/stronghold/desc"
-msgstr ""
-"Умацаваны раён — гэта база клана, якую можна развіваць і адбудоўваць. "
-"Ва Умацаваным раёне можна рыхтаваць кланавыя рэзервы, якія павялічаць "
-"заробак у баях."
-
-msgid "limited_ui/unlock_info/footer/stronghold/title"
-msgstr "Пра Умацаваны раён"
-
-msgid "limited_ui/unlock_info/footer/tournaments/desc"
-msgstr ""
-"Турніры — перыядычныя спаборніцтвы з розным рэгламентам, у якіх можна "
-"заслужыць як унутрыгульнявыя, так і матэрыяльныя прызы."
-
-msgid "limited_ui/unlock_info/footer/tournaments/title"
-msgstr "Пра Турніры"
-
-msgid "limited_ui/unlock_info/footer/versus_ai/desc"
-msgstr ""
-"Палігон — рэжым, у якім каманда гульцоў змагаецца супраць тэхнікі "
-"пад кіраваннем штучнага інтэлекту."
-
-msgid "limited_ui/unlock_info/footer/versus_ai/title"
-msgstr "Пра Палігон"
-
-msgid "limited_ui/unlock_info/header/subtitle/few_conditions"
-msgstr "Выканайце ўмовы"
-
-msgid "limited_ui/unlock_info/header/subtitle/one_condition"
-msgstr "Выканайце ўмову"
-
-msgid "limited_ui/unlock_info/header/subtitle/one_of_conditions"
-msgstr "Выканайце адну з умоў"
-
-msgid "limited_ui/unlock_info/header/title"
-msgstr "Як атрымаць доступ?"
-
 msgid "lobby/header/buyPremiumAccount/disabled/body"
 msgstr ""
 "Працягнуць прэміум акаўнт будзе можна, калі да сканчэння тэрміну яго дзеяння"
@@ -6631,22 +6600,6 @@ msgstr "Інфармацыйныя лісткі даступныя ў поўна
 
 msgid "lobbyMenu/versionInfoButton/miniclient/header"
 msgstr "Увага!"
-
-msgid "loby_messenger/btnReferralDisabled/body"
-msgstr ""
-"Недоступно в выбранном режиме. Для получения доступа к функциональности "
-"перейдите в режим «Случайный бой»."
-
-msgid "loby_messenger/btnReferralDisabled/header"
-msgstr "Рэферальная праграма"
-
-msgid "loby_messenger/btnVehicleCartDisabled/body"
-msgstr ""
-"Недоступно в выбранном режиме. Для получения доступа к функциональности "
-"перейдите в режим «Случайный бой»."
-
-msgid "loby_messenger/btnVehicleCartDisabled/header"
-msgstr "Параўнанне тэхнікі"
 
 msgid "loby_messenger/channel_button/inRoaming"
 msgstr "Каналы недаступныя з прычыны змены рэгіёна"
@@ -7172,7 +7125,9 @@ msgid "moduleFits/unsuitable_battlemode/header"
 msgstr "Ад настаўлення няма карысці"
 
 msgid "moduleFits/unsuitable_battlemode/text"
-msgstr "Эканамічныя інструкцыі не працуюць у рэжымах з адключанай эканомікай."
+msgstr ""
+"Экономические инструкции не работают в выбранном режиме боя. При выходе "
+"в бой инструкция НЕ расходуется."
 
 msgid "moduleFits/upgradable/modernized/price"
 msgstr "Наладка %(level)s узроўню"
@@ -7196,6 +7151,136 @@ msgstr ""
 
 msgid "multiselection/alert/header"
 msgstr "Тэхніка не выбрана"
+
+msgid "newbie_restrictions/condition/battlesCountThreshold"
+msgstr "Провести %(battlesCount)s боёв в режиме «Случайный бой»."
+
+msgid "newbie_restrictions/condition/isInClan"
+msgstr "Уступіць у клан."
+
+msgid "newbie_restrictions/condition/minVehicleLevel"
+msgstr ""
+"Атрымаць любую тэхніку %(level)s узроўню або вышэйшага (акрамя пракатнай)."
+
+msgid "newbie_restrictions/condition/separator"
+msgstr "або"
+
+msgid "newbie_restrictions/condition/vehicleLevelThreshold"
+msgstr "Получить любую машину %(level)s уровня или выше (кроме арендной)."
+
+msgid "newbie_restrictions/footer/arcade/desc"
+msgstr ""
+"«Аркада» — развлекательный сезонный режим, бои в котором не идут "
+"в статистику игрока и проходят по правилам Стандартных боёв, "
+"но с изменёнными игровыми механиками. Как правило, эти изменения затрагивают"
+" характеристики техники."
+
+msgid "newbie_restrictions/footer/arcade/title"
+msgstr "Об Аркаде"
+
+msgid "newbie_restrictions/footer/chats/desc"
+msgstr ""
+"Получив доступ, вы сможете общаться в общем и боевом чатах с игроками, "
+"а также получать и писать личные сообщения игрокам, находящимся вне вашего "
+"списка контактов. До получения доступа вы можете использовать чат взвода, "
+"чат клана и личные сообщения от списка контактов, а также от вашего "
+"командира по реферальной программе."
+
+msgid "newbie_restrictions/footer/chats/title"
+msgstr "Об игровых чатах"
+
+msgid "newbie_restrictions/footer/comp7/desc"
+msgstr ""
+"«Натиск» — это соревновательный режим, предлагающий захватывающие сражения "
+"в формате 7x7, в котором команды состоят из близких по рейтингу игроков "
+"на технике X уровня. В режиме действуют различные модификаторы, расширяющие "
+"тактические возможности техники."
+
+msgid "newbie_restrictions/footer/comp7/title"
+msgstr "О Натиске"
+
+msgid "newbie_restrictions/footer/field_trials/desc"
+msgstr ""
+"«Полевые испытания» — специальный режим, в котором проходит тестирование "
+"предлагаемых изменений игровых механик и прочих нововведений, которые "
+"в будущем могут быть перенесены в основные игровые режимы."
+
+msgid "newbie_restrictions/footer/field_trials/title"
+msgstr "О Полевых испытаниях"
+
+msgid "newbie_restrictions/footer/frontline/desc"
+msgstr ""
+"«Линия фронта» — масштабный режим в формате 30x30 игроков, проходящий "
+"на специальных картах, разбитых на направления и квадраты. Команда атакующих"
+" продвигается по карте, захватывая территории, команда обороняющихся "
+"защищает артиллерийские батареи."
+
+msgid "newbie_restrictions/footer/frontline/title"
+msgstr "О Линии фронта"
+
+msgid "newbie_restrictions/footer/personal_missions/desc"
+msgstr ""
+"Кампаніі — гэта сістэма баявых задач для розных тыпаў тэхнікі і ўзроўняў. "
+"Узнагароды кампаній —унікальныя машыны і мноства гульнявых рэсурсаў."
+
+msgid "newbie_restrictions/footer/personal_missions/title"
+msgstr "Пра Кампаніі"
+
+msgid "newbie_restrictions/footer/ranked/desc"
+msgstr ""
+"«Ранговые бои» — это соревновательный режим, где мастерство продвигает вас "
+"по рангам и приносит уникальные награды. Уровни доступной техники, правила "
+"продвижения по рангам, а также правила боёв могут меняться в зависимости "
+"от конкретного запуска."
+
+msgid "newbie_restrictions/footer/ranked/title"
+msgstr "О Ранговых боях"
+
+msgid "newbie_restrictions/footer/spec_battles/desc"
+msgstr ""
+"«Специальные бои» — категория, в которую попадают определённые сезонные "
+"мероприятия, такие как Клановые бои на Глобальной карте, турниры, чемпионаты"
+" и другие активности с особым регламентом."
+
+msgid "newbie_restrictions/footer/spec_battles/title"
+msgstr "О Специальных боях"
+
+msgid "newbie_restrictions/footer/stronghold/desc"
+msgstr ""
+"Умацаваны раён — гэта база клана, якую можна развіваць і адбудоўваць. "
+"Ва Умацаваным раёне можна рыхтаваць кланавыя рэзервы, якія павялічаць "
+"заробак у баях."
+
+msgid "newbie_restrictions/footer/stronghold/title"
+msgstr "Пра Умацаваны раён"
+
+msgid "newbie_restrictions/footer/tournaments/desc"
+msgstr ""
+"Турніры — перыядычныя спаборніцтвы з розным рэгламентам, у якіх можна "
+"заслужыць як унутрыгульнявыя, так і матэрыяльныя прызы."
+
+msgid "newbie_restrictions/footer/tournaments/title"
+msgstr "Пра Турніры"
+
+msgid "newbie_restrictions/footer/versus_ai/desc"
+msgstr ""
+"Палігон — рэжым, у якім каманда гульцоў змагаецца супраць тэхнікі "
+"пад кіраваннем штучнага інтэлекту."
+
+msgid "newbie_restrictions/footer/versus_ai/title"
+msgstr "Пра Палігон"
+
+msgid "newbie_restrictions/header/subtitle/few_conditions"
+msgstr "Выканайце ўмовы"
+
+msgid "newbie_restrictions/header/subtitle/one_condition"
+msgstr "Выканайце ўмову"
+
+msgid "newbie_restrictions/header/subtitle/one_of_conditions"
+msgstr "Выканайце адну з умоў"
+
+msgid "newbie_restrictions/header/title"
+msgstr "Як атрымаць доступ?"
 
 msgid "notificationsView/tab/info/body"
 msgstr "Інфармацыйныя апавяшчэнні"
@@ -9146,6 +9231,62 @@ msgstr ""
 msgid "notrecruitedtankman/tankmen_BP19_5/label"
 msgstr "Баявы пропуск, «Вышэй за зоркі»"
 
+msgid "notrecruitedtankman/tankmen_BP20_1/desc"
+msgstr ""
+"Таксист «Дядя Костя» — местная знаменитость, бывший военный водитель, "
+"который и в мирное время не бросил любимого занятия, сев за руль своей белой"
+" ласточки — ГАЗ-20. Всегда вежлив и разговорчив, умеет поддержать беседу "
+"на многие темы, неплохо знает немецкий (фронтовое прошлое) и английский "
+"языки, чем вызывает безграничное уважение у интуристов. Любит шоколадное "
+"мороженое, на которое тратит большую часть чаевых."
+
+msgid "notrecruitedtankman/tankmen_BP20_1/label"
+msgstr "Боевой пропуск, «Всё включено!»"
+
+msgid "notrecruitedtankman/tankmen_BP20_2/desc"
+msgstr ""
+"Участник всесоюзных соревнований по плаванию в ластах, мастер спорта. Лето "
+"традиционно проводит на побережье, обеспечивая безопасность на воде. "
+"К счастью, работы немного, поэтому большую часть свободного времени "
+"посвящает чтению подписных технических изданий и разгадыванию кроссвордов."
+
+msgid "notrecruitedtankman/tankmen_BP20_2/label"
+msgstr "Боевой пропуск, «Всё включено!»"
+
+msgid "notrecruitedtankman/tankmen_BP20_3/desc"
+msgstr ""
+"Инженер ОТК машиностроительного завода, ежегодно сбегающий из шумных цехов "
+"в тихое лоно природы. Любит свежий воздух и отсутствие суеты, ценит свободу "
+"передвижений и места, где можно побыть наедине со своими мыслями "
+"и «почистить голову». Предпочитает отдыхать вдали от привычных курортных "
+"мест, заряжаясь бодростью и энергией на весь следующий рабочий год."
+
+msgid "notrecruitedtankman/tankmen_BP20_3/label"
+msgstr "Боевой пропуск, «Всё включено!»"
+
+msgid "notrecruitedtankman/tankmen_BP20_4/desc"
+msgstr ""
+"Главный технолог камвольного комбината, получившая долгожданную турпутёвку "
+"от профсоюза. Большую часть времени поглощена работой и бытовыми заботами, "
+"но раз в год позволяет себе отдохнуть «на полную катушку» (актуальная "
+"для места работы фраза), выжимая максимум из каждого свободного дня и ловя "
+"на себе восторженные взгляды отдыхающих."
+
+msgid "notrecruitedtankman/tankmen_BP20_4/label"
+msgstr "Боевой пропуск, «Всё включено!»"
+
+msgid "notrecruitedtankman/tankmen_BP20_5/desc"
+msgstr ""
+"Старшая пионервожатая лагеря «Тигрёнок», главная звезда нынешнего Праздника "
+"Нептуна. Увлекается скалолазанием и фотографией, организовала для детей "
+"в лагере полноценную цветную фотолабораторию — единственную на весь регион. "
+"Её выразительными и мастерски выполненными фотографиями украшены стены "
+"лагерного Дома культуры, чтобы лишний раз подчеркнуть красоту и величие "
+"местной природы."
+
+msgid "notrecruitedtankman/tankmen_BP20_5/label"
+msgstr "Боевой пропуск, «Всё включено!»"
+
 msgid "notrecruitedtankman/tankmen_DR2025_1/desc"
 msgstr ""
 "Душа кампаніі — і прытым надзвычай сур'ёзны спецыяліст канструктарскага "
@@ -9451,6 +9592,52 @@ msgstr ""
 
 msgid "notrecruitedtankman/tankmen_S2_5/label"
 msgstr "Праект «Арбіта», спецатрад Рагнара"
+
+msgid "notrecruitedtankman/tankmen_Summer26_1/desc"
+msgstr ""
+"«Надёжный и заботливый мужчина, обладающий отличными навыками руководителя. "
+"Он умеет сочетать требовательность к делу с искренним вниманием к людям, "
+"создавая атмосферу взаимного доверия и поддержки. Его решения всегда "
+"взвешены, а действия подкреплены личной ответственностью: он не просто "
+"управляет процессами, но и ведёт команду за собой примером, заботясь как "
+"о результате, так и о благополучии каждого»."
+
+msgid "notrecruitedtankman/tankmen_Summer26_1/label"
+msgstr "Летний отпуск"
+
+msgid "notrecruitedtankman/tankmen_Summer26_2/desc"
+msgstr ""
+"«Активная и очень деятельная девушка, которая всегда готова к новым "
+"открытиям и приключениям. Она не боится выходить из зоны комфорта "
+"и с лёгкостью воплощает смелые идеи в жизнь. Её неиссякаемая энергия "
+"и искренний интерес к миру вдохновляют окружающих, а каждый новый день "
+"для неё — это возможность узнать что-то важное, попробовать неизведанное "
+"и уверенно двигаться вперёд»."
+
+msgid "notrecruitedtankman/tankmen_Summer26_2/label"
+msgstr "Летний отпуск"
+
+msgid "notrecruitedtankman/tankmen_Summer26_3/desc"
+msgstr ""
+"«Холодная и сдержанная девушка, которая предпочитает несколько раз подумать,"
+" прежде чем сделать ход. Она тщательно взвешивает каждый вариант, "
+"руководствуясь не сиюминутными эмоциями, а расчётом и внутренним чутьём. "
+"За спокойной отстранённостью скрывается острый ум и чёткие принципы, "
+"благодаря которым её решения всегда точны, а слова — весомы»."
+
+msgid "notrecruitedtankman/tankmen_Summer26_3/label"
+msgstr "Летний отпуск"
+
+msgid "notrecruitedtankman/tankmen_Summer26_4/desc"
+msgstr ""
+"«Душа компании, которая может найти общий язык с кем угодно. Она умеет "
+"создавать тёплую и доверительную атмосферу, превращая случайных собеседников"
+" в близких знакомых. Искренний интерес к людям, тактичность и природная "
+"харизма делают любое собрание живее, а общение с ней — по-настоящему лёгким "
+"и приятным»."
+
+msgid "notrecruitedtankman/tankmen_Summer26_4/label"
+msgstr "Летний отпуск"
 
 msgid "notrecruitedtankman/tankmen_T3_1/desc"
 msgstr ""

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/russian/R214_ABM_152/normal/lod2/Chassis</nodefullVisual>
+	<parent>vehicles/russian/R214_ABM_152/normal/lod3/Chassis</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.631633 -0.000003 -2.879615</min>
+		<max>1.631636 1.106074 3.234616</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

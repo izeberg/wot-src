@@ -4611,7 +4611,6 @@
 	<radios>
 		<FuG12A>shared</FuG12A>
 	</radios>
-	<clientAdjustmentFactors/>
 	<physics>
 		<detailed>
 			<engines>
@@ -4706,6 +4705,12 @@
 		</devices>
 		<tankmen/>
 	</deviceExtras>
+	<clientAdjustmentFactors>
+		<armour>
+			1.065747476
+			<!--BW_String-->
+		</armour>
+	</clientAdjustmentFactors>
 	<effects>
 		<collision/>
 		<damagedStateGroup>large</damagedStateGroup>

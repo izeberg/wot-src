@@ -1963,14 +1963,6 @@ package
       
       public static const LOBBY_HEADER_BUYPREMIUMACCOUNT_DISABLED_BODY:String = "#tooltips:lobby/header/buyPremiumAccount/disabled/body";
       
-      public static const LOBY_MESSENGER_BTNREFERRALDISABLED_HEADER:String = "#tooltips:loby_messenger/btnReferralDisabled/header";
-      
-      public static const LOBY_MESSENGER_BTNREFERRALDISABLED_BODY:String = "#tooltips:loby_messenger/btnReferralDisabled/body";
-      
-      public static const LOBY_MESSENGER_BTNVEHICLECARTDISABLED_HEADER:String = "#tooltips:loby_messenger/btnVehicleCartDisabled/header";
-      
-      public static const LOBY_MESSENGER_BTNVEHICLECARTDISABLED_BODY:String = "#tooltips:loby_messenger/btnVehicleCartDisabled/body";
-      
       public static const TRAINING_CREATE_INVITES_CHECKBOX_HEADER:String = "#tooltips:training/create/invites_checkbox/header";
       
       public static const TRAINING_CREATE_INVITES_CHECKBOX_BODY:String = "#tooltips:training/create/invites_checkbox/body";
@@ -3887,6 +3879,14 @@ package
       
       public static const AWARDITEM_STEELHUNTERPOINT_BODY:String = "#tooltips:awardItem/steelHunterPoint/body";
       
+      public static const AWARDITEM_BUMBLEBEE_COIN_HEADER:String = "#tooltips:awardItem/bumblebee_coin/header";
+      
+      public static const AWARDITEM_BUMBLEBEE_COIN_BODY:String = "#tooltips:awardItem/bumblebee_coin/body";
+      
+      public static const AWARDITEM_HONEY_COIN_HEADER:String = "#tooltips:awardItem/honey_coin/header";
+      
+      public static const AWARDITEM_HONEY_COIN_BODY:String = "#tooltips:awardItem/honey_coin/body";
+      
       public static const AWARDITEM_FREEXP_HEADER:String = "#tooltips:awardItem/freeXP/header";
       
       public static const AWARDITEM_FREEXP_BODY:String = "#tooltips:awardItem/freeXP/body";
@@ -5124,6 +5124,10 @@ package
       public static const ADVANCED_VEHICLEAUTOSHOOTFLAMEGUN:String = "#tooltips:advanced/vehicleAutoShootFlameGun";
       
       public static const ADVANCED_VEHICLEAUTOSHOOTGUN:String = "#tooltips:advanced/vehicleAutoShootGun";
+      
+      public static const ADVANCED_GUNCOOLING:String = "#tooltips:advanced/gunCooling";
+      
+      public static const ADVANCED_DUALGUNCOOLING:String = "#tooltips:advanced/dualGunCooling";
       
       public static const ADVANCED_VEHICLERADIO:String = "#tooltips:advanced/vehicleRadio";
       
@@ -8053,35 +8057,67 @@ package
       
       public static const NOTRECRUITEDTANKMAN_COSM26_2_LABEL:String = "#tooltips:notrecruitedtankman/cosm26_2/label";
       
-      public static const LIMITED_UI_UNLOCK_INFO_HEADER_TITLE:String = "#tooltips:limited_ui/unlock_info/header/title";
+      public static const NEWBIE_RESTRICTIONS_HEADER_TITLE:String = "#tooltips:newbie_restrictions/header/title";
       
-      public static const LIMITED_UI_UNLOCK_INFO_HEADER_SUBTITLE_ONE_CONDITION:String = "#tooltips:limited_ui/unlock_info/header/subtitle/one_condition";
+      public static const NEWBIE_RESTRICTIONS_HEADER_SUBTITLE_ONE_CONDITION:String = "#tooltips:newbie_restrictions/header/subtitle/one_condition";
       
-      public static const LIMITED_UI_UNLOCK_INFO_HEADER_SUBTITLE_FEW_CONDITIONS:String = "#tooltips:limited_ui/unlock_info/header/subtitle/few_conditions";
+      public static const NEWBIE_RESTRICTIONS_HEADER_SUBTITLE_FEW_CONDITIONS:String = "#tooltips:newbie_restrictions/header/subtitle/few_conditions";
       
-      public static const LIMITED_UI_UNLOCK_INFO_HEADER_SUBTITLE_ONE_OF_CONDITIONS:String = "#tooltips:limited_ui/unlock_info/header/subtitle/one_of_conditions";
+      public static const NEWBIE_RESTRICTIONS_HEADER_SUBTITLE_ONE_OF_CONDITIONS:String = "#tooltips:newbie_restrictions/header/subtitle/one_of_conditions";
       
-      public static const LIMITED_UI_UNLOCK_INFO_CONDITION_MINVEHICLELEVEL:String = "#tooltips:limited_ui/unlock_info/condition/minVehicleLevel";
+      public static const NEWBIE_RESTRICTIONS_CONDITION_MINVEHICLELEVEL:String = "#tooltips:newbie_restrictions/condition/minVehicleLevel";
       
-      public static const LIMITED_UI_UNLOCK_INFO_CONDITION_ISINCLAN:String = "#tooltips:limited_ui/unlock_info/condition/isInClan";
+      public static const NEWBIE_RESTRICTIONS_CONDITION_ISINCLAN:String = "#tooltips:newbie_restrictions/condition/isInClan";
       
-      public static const LIMITED_UI_UNLOCK_INFO_CONDITION_SEPARATOR:String = "#tooltips:limited_ui/unlock_info/condition/separator";
+      public static const NEWBIE_RESTRICTIONS_CONDITION_SEPARATOR:String = "#tooltips:newbie_restrictions/condition/separator";
       
-      public static const LIMITED_UI_UNLOCK_INFO_FOOTER_PERSONAL_MISSIONS_TITLE:String = "#tooltips:limited_ui/unlock_info/footer/personal_missions/title";
+      public static const NEWBIE_RESTRICTIONS_CONDITION_BATTLESCOUNTTHRESHOLD:String = "#tooltips:newbie_restrictions/condition/battlesCountThreshold";
       
-      public static const LIMITED_UI_UNLOCK_INFO_FOOTER_PERSONAL_MISSIONS_DESC:String = "#tooltips:limited_ui/unlock_info/footer/personal_missions/desc";
+      public static const NEWBIE_RESTRICTIONS_CONDITION_VEHICLELEVELTHRESHOLD:String = "#tooltips:newbie_restrictions/condition/vehicleLevelThreshold";
       
-      public static const LIMITED_UI_UNLOCK_INFO_FOOTER_TOURNAMENTS_TITLE:String = "#tooltips:limited_ui/unlock_info/footer/tournaments/title";
+      public static const NEWBIE_RESTRICTIONS_FOOTER_PERSONAL_MISSIONS_TITLE:String = "#tooltips:newbie_restrictions/footer/personal_missions/title";
       
-      public static const LIMITED_UI_UNLOCK_INFO_FOOTER_TOURNAMENTS_DESC:String = "#tooltips:limited_ui/unlock_info/footer/tournaments/desc";
+      public static const NEWBIE_RESTRICTIONS_FOOTER_PERSONAL_MISSIONS_DESC:String = "#tooltips:newbie_restrictions/footer/personal_missions/desc";
       
-      public static const LIMITED_UI_UNLOCK_INFO_FOOTER_VERSUS_AI_TITLE:String = "#tooltips:limited_ui/unlock_info/footer/versus_ai/title";
+      public static const NEWBIE_RESTRICTIONS_FOOTER_TOURNAMENTS_TITLE:String = "#tooltips:newbie_restrictions/footer/tournaments/title";
       
-      public static const LIMITED_UI_UNLOCK_INFO_FOOTER_VERSUS_AI_DESC:String = "#tooltips:limited_ui/unlock_info/footer/versus_ai/desc";
+      public static const NEWBIE_RESTRICTIONS_FOOTER_TOURNAMENTS_DESC:String = "#tooltips:newbie_restrictions/footer/tournaments/desc";
       
-      public static const LIMITED_UI_UNLOCK_INFO_FOOTER_STRONGHOLD_TITLE:String = "#tooltips:limited_ui/unlock_info/footer/stronghold/title";
+      public static const NEWBIE_RESTRICTIONS_FOOTER_VERSUS_AI_TITLE:String = "#tooltips:newbie_restrictions/footer/versus_ai/title";
       
-      public static const LIMITED_UI_UNLOCK_INFO_FOOTER_STRONGHOLD_DESC:String = "#tooltips:limited_ui/unlock_info/footer/stronghold/desc";
+      public static const NEWBIE_RESTRICTIONS_FOOTER_VERSUS_AI_DESC:String = "#tooltips:newbie_restrictions/footer/versus_ai/desc";
+      
+      public static const NEWBIE_RESTRICTIONS_FOOTER_STRONGHOLD_TITLE:String = "#tooltips:newbie_restrictions/footer/stronghold/title";
+      
+      public static const NEWBIE_RESTRICTIONS_FOOTER_STRONGHOLD_DESC:String = "#tooltips:newbie_restrictions/footer/stronghold/desc";
+      
+      public static const NEWBIE_RESTRICTIONS_FOOTER_RANKED_TITLE:String = "#tooltips:newbie_restrictions/footer/ranked/title";
+      
+      public static const NEWBIE_RESTRICTIONS_FOOTER_RANKED_DESC:String = "#tooltips:newbie_restrictions/footer/ranked/desc";
+      
+      public static const NEWBIE_RESTRICTIONS_FOOTER_SPEC_BATTLES_TITLE:String = "#tooltips:newbie_restrictions/footer/spec_battles/title";
+      
+      public static const NEWBIE_RESTRICTIONS_FOOTER_SPEC_BATTLES_DESC:String = "#tooltips:newbie_restrictions/footer/spec_battles/desc";
+      
+      public static const NEWBIE_RESTRICTIONS_FOOTER_COMP7_TITLE:String = "#tooltips:newbie_restrictions/footer/comp7/title";
+      
+      public static const NEWBIE_RESTRICTIONS_FOOTER_COMP7_DESC:String = "#tooltips:newbie_restrictions/footer/comp7/desc";
+      
+      public static const NEWBIE_RESTRICTIONS_FOOTER_ARCADE_TITLE:String = "#tooltips:newbie_restrictions/footer/arcade/title";
+      
+      public static const NEWBIE_RESTRICTIONS_FOOTER_ARCADE_DESC:String = "#tooltips:newbie_restrictions/footer/arcade/desc";
+      
+      public static const NEWBIE_RESTRICTIONS_FOOTER_FIELD_TRIALS_TITLE:String = "#tooltips:newbie_restrictions/footer/field_trials/title";
+      
+      public static const NEWBIE_RESTRICTIONS_FOOTER_FIELD_TRIALS_DESC:String = "#tooltips:newbie_restrictions/footer/field_trials/desc";
+      
+      public static const NEWBIE_RESTRICTIONS_FOOTER_FRONTLINE_TITLE:String = "#tooltips:newbie_restrictions/footer/frontline/title";
+      
+      public static const NEWBIE_RESTRICTIONS_FOOTER_FRONTLINE_DESC:String = "#tooltips:newbie_restrictions/footer/frontline/desc";
+      
+      public static const NEWBIE_RESTRICTIONS_FOOTER_CHATS_TITLE:String = "#tooltips:newbie_restrictions/footer/chats/title";
+      
+      public static const NEWBIE_RESTRICTIONS_FOOTER_CHATS_DESC:String = "#tooltips:newbie_restrictions/footer/chats/desc";
       
       public static const NOTRECRUITEDTANKMAN_TANKMEN_BP19_1_DESC:String = "#tooltips:notrecruitedtankman/tankmen_BP19_1/desc";
       
@@ -8111,9 +8147,41 @@ package
       
       public static const NOTRECRUITEDTANKMAN_TANKMEN_PVEMAY26_2_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_PvEMay26_2/label";
       
-      public static const HEADER_BUTTONS_MUSEUM_HEADER:String = "#tooltips:header/buttons/museum/header";
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP20_1_DESC:String = "#tooltips:notrecruitedtankman/tankmen_BP20_1/desc";
       
-      public static const HEADER_BUTTONS_MUSEUM_BODY:String = "#tooltips:header/buttons/museum/body";
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP20_1_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_BP20_1/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP20_2_DESC:String = "#tooltips:notrecruitedtankman/tankmen_BP20_2/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP20_2_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_BP20_2/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP20_3_DESC:String = "#tooltips:notrecruitedtankman/tankmen_BP20_3/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP20_3_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_BP20_3/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP20_4_DESC:String = "#tooltips:notrecruitedtankman/tankmen_BP20_4/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP20_4_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_BP20_4/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP20_5_DESC:String = "#tooltips:notrecruitedtankman/tankmen_BP20_5/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP20_5_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_BP20_5/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_SUMMER26_1_DESC:String = "#tooltips:notrecruitedtankman/tankmen_Summer26_1/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_SUMMER26_1_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_Summer26_1/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_SUMMER26_2_DESC:String = "#tooltips:notrecruitedtankman/tankmen_Summer26_2/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_SUMMER26_2_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_Summer26_2/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_SUMMER26_3_DESC:String = "#tooltips:notrecruitedtankman/tankmen_Summer26_3/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_SUMMER26_3_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_Summer26_3/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_SUMMER26_4_DESC:String = "#tooltips:notrecruitedtankman/tankmen_Summer26_4/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_SUMMER26_4_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_Summer26_4/label";
       
       public static const ELEN_SUMMARY_RANK_ENUM:Array = [ELEN_SUMMARY_RANK_1,ELEN_SUMMARY_RANK_2,ELEN_SUMMARY_RANK_3,ELEN_SUMMARY_RANK_4,ELEN_SUMMARY_RANK_NORANK];
       

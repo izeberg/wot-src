@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.440612 -0.348645 -0.049916</min>
+		<max>0.432126 0.357661 7.587161</max>
+	</visibilityBox>
+	<nodelessVisual>vehicles/italy/It35_Gladiatore/crash/lod4/Gun_01</nodelessVisual>
+</root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/russian/R87_T62A/_skins/R87_T62A_3Dst_02/normal/lod0/Hull_anim_blade</nodefullVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.867166 0.402419 -2.995408</min>
+		<max>0.870266 0.510579 -2.123306</max>
+	</visibilityBox>
+	<parent>vehicles/russian/R87_T62A/_skins/R87_T62A_3Dst_02/normal/lod1/Hull_anim_blade</parent>
+	<extent>32.000000</extent>
+</root>

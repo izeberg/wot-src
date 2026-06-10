@@ -1,3 +1,5 @@
+from constants import NOVICE_RESTRICTIONS_BAN_TYPE
+from messenger.m_constants import PROTO_TYPE
 from messenger.proto.events import g_messengerEvents
 from messenger.proto.xmpp import find_criteria
 from messenger.proto.xmpp.errors import createChatBanError
@@ -50,7 +52,10 @@ class ChatProvider(ClientHolder):
         if exists is None:
             return
         else:
-            if self.playerCtx.isBanned(components=exists.getBanComponent()):
+            dbID = jid.getDatabaseID()
+            if not dbID:
+                return
+            if not self.__canSend(dbID, exists):
                 error = createChatBanError(self.playerCtx.getBanInfo())
                 if error:
                     g_messengerEvents.onErrorReceived(error)
@@ -101,3 +106,24 @@ class ChatProvider(ClientHolder):
         channels = self.channelsStorage.getChannelsByCriteria(find_criteria.XMPPChannelFindCriteria(msgType))
         for channel in channels:
             yield channel
+
+    def __canSend(self, dbID, exists):
+        banInfo = self.playerCtx.getBanInfo()
+        if not banInfo:
+            return True
+        else:
+            banItem = banInfo.getFirstActiveItem(game=banInfo.getCurrentGame(), components=exists.getBanComponent())
+            if banItem is None:
+                return True
+            if banItem.banType != NOVICE_RESTRICTIONS_BAN_TYPE:
+                return False
+            user = self.usersStorage.getUser(dbID, PROTO_TYPE.XMPP)
+            if user is None:
+                return False
+            if user.isConfirmedFriend():
+                return True
+            from gui.Scaleform.daapi.view.lobby.referral_program.referral_program_helpers import getRecruiterDbId
+            recruiterDbId = getRecruiterDbId()
+            if recruiterDbId == dbID:
+                return True
+            return False

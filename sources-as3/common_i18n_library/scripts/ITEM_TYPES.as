@@ -51,6 +51,10 @@ package
       
       public static const AUTOSHOOTGUN_NAME:String = "#item_types:autoShootGun/name";
       
+      public static const GUNCOOLING_NAME:String = "#item_types:gunCooling/name";
+      
+      public static const DUALGUNCOOLING_NAME:String = "#item_types:dualGunCooling/name";
+      
       public static const GUN_DESC:String = "#item_types:gun/desc";
       
       public static const GUN_TAGS:String = "#item_types:gun/tags";

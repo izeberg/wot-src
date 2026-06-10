@@ -230,5 +230,13 @@ package net.wg.gui.components.crosshairPanel
       public function setShotHitMarkerVisibility(param1:Boolean) : void
       {
       }
+      
+      public function setGunCoolingTime(param1:Boolean, param2:Number) : void
+      {
+      }
+      
+      public function setGunCoolingVisibility(param1:Boolean) : void
+      {
+      }
    }
 }

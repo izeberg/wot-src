@@ -179,6 +179,7 @@ class VEHICLE_TAGS(CONST_CONTAINER):
     NO_CREW_TRANSFER_PENALTY_TAG = constants.VEHICLE_NO_CREW_TRANSFER_PENALTY_TAG
     HIDDEN = 'hidden_in_hangar'
     RESTORE_WITH_STYLE = 'restoreWithStyle'
+    BUILTIN_STYLE = 'builtinStyle'
 
 
 DISCLAIMER_TAGS = frozenset((VEHICLE_TAGS.T34_DISCLAIMER,))
@@ -215,7 +216,8 @@ class Vehicle(FittingItem):
                  '_crewIndices', '_slotsIds', '_crew', '_lastCrew', '_hasModulesToSelect',
                  '_outfitComponents', '_isStyleInstalled', '_slotsAnchors', '_unlockedBy',
                  '_maxRentDuration', '_minRentDuration', '_slotsAnchorsById', '_hasNationGroup',
-                 '_extraSettings', '_groupIDs', '_postProgression', '_invData', '_proxy')
+                 '_extraSettings', '_groupIDs', '_postProgression', '_invData', '_proxy',
+                 '_selectedComp7Skill')
 
     class VEHICLE_STATE(object):
         DAMAGED = 'damaged'
@@ -368,6 +370,7 @@ class Vehicle(FittingItem):
         self._extraSettings = self._invData.get('extraSettings', 0)
         self._lock = self._invData.get('lock', (0, 0))
         self._repairCost, self._health = self._invData.get('repair', (0, 0))
+        self._selectedComp7Skill = self._invData.get('selectedComp7Skill', 0)
         self._gun = self.itemsFactory.createVehicleGun(vehDescr.gun.compactDescr, self._proxy, vehDescr.gun)
         self._turret = self.itemsFactory.createVehicleTurret(vehDescr.turret.compactDescr, self._proxy, vehDescr.turret)
         self._engine = self.itemsFactory.createVehicleEngine(vehDescr.engine.compactDescr, self._proxy, vehDescr.engine)
@@ -834,6 +837,14 @@ class Vehicle(FittingItem):
     @property
     def settings(self):
         return self._settings
+
+    @property
+    def selectedComp7Skill(self):
+        return self._selectedComp7Skill
+
+    @selectedComp7Skill.setter
+    def selectedComp7Skill(self, value):
+        self._selectedComp7Skill = value
 
     @settings.setter
     def settings(self, value):

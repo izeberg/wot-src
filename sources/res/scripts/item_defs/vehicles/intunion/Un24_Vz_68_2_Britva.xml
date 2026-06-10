@@ -1974,8 +1974,14 @@
 				<left>
 					<trackPairIdx>0</trackPairIdx>
 					<segmentsCount>204</segmentsCount>
-					<segmentsOuterThickness>0.060413</segmentsOuterThickness>
-					<segmentsInnerThickness>-0.010477</segmentsInnerThickness>
+					<segmentsOuterThickness>
+						0.05
+						<!--BW_String-->
+					</segmentsOuterThickness>
+					<segmentsInnerThickness>
+						0.04
+						<!--BW_String-->
+					</segmentsInnerThickness>
 					<segmentsPlaneOffset>
 						-1.376
 						<!--BW_String-->
@@ -2424,8 +2430,14 @@
 				<right>
 					<trackPairIdx>0</trackPairIdx>
 					<segmentsCount>204</segmentsCount>
-					<segmentsOuterThickness>0.060413</segmentsOuterThickness>
-					<segmentsInnerThickness>-0.010477</segmentsInnerThickness>
+					<segmentsOuterThickness>
+						0.05
+						<!--BW_String-->
+					</segmentsOuterThickness>
+					<segmentsInnerThickness>
+						0.04
+						<!--BW_String-->
+					</segmentsInnerThickness>
 					<segmentsPlaneOffset>
 						1.376
 						<!--BW_String-->

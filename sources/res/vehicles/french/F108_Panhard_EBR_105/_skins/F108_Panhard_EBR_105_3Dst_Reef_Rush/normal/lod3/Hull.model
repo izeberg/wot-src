@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F108_Panhard_EBR_105/_skins/F108_Panhard_EBR_105_3Dst_Reef_Rush/normal/lod3/Hull</nodefullVisual>
+	<parent>vehicles/french/F108_Panhard_EBR_105/_skins/F108_Panhard_EBR_105_3Dst_Reef_Rush/normal/lod4/Hull</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.245268 -0.815761 -2.727928</min>
+		<max>1.245267 0.289995 2.730698</max>
+	</visibilityBox>
+</root>

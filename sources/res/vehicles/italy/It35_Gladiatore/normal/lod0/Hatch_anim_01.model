@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/italy/It35_Gladiatore/normal/lod0/Hatch_anim_01</nodefullVisual>
+	<visibilityBox>
+		<min>-1.334329 0.138148 0.492573</min>
+		<max>-0.831224 0.431916 0.882818</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/italy/It35_Gladiatore/normal/lod1/Hatch_anim_01</parent>
+	<extent>32.000000</extent>
+</root>

@@ -931,6 +931,8 @@ package
       
       public static const SERVICECHANNELMESSAGES_INVOICERECEIVED_DISCOUNTS:String = "#messenger:serviceChannelMessages/invoiceReceived/discounts";
       
+      public static const SERVICECHANNELMESSAGES_INVOICEDEBITED_BOOSTERS:String = "#messenger:serviceChannelMessages/invoiceDebited/boosters";
+      
       public static const SERVICECHANNELMESSAGES_INVOICERECEIVED_EQUIPMENT:String = "#messenger:serviceChannelMessages/invoiceReceived/equipment";
       
       public static const SERVICECHANNELMESSAGES_INVOICERECEIVED_PIECES:String = "#messenger:serviceChannelMessages/invoiceReceived/pieces";
@@ -1971,8 +1973,6 @@ package
       
       public static const SERVICECHANNELMESSAGES_BATTLEPASSREWARD_BUYWITHREWARDS_ADDITIONALTEXT:String = "#messenger:serviceChannelMessages/battlePassReward/buyWithRewards/additionalText";
       
-      public static const SERVICECHANNELMESSAGES_BATTLEPASSREWARD_BUYMULTIPLE_TEXT:String = "#messenger:serviceChannelMessages/battlePassReward/buyMultiple/text";
-      
       public static const SERVICECHANNELMESSAGES_BATTLEPASSREWARD_BUYPROGRESS_TEXT:String = "#messenger:serviceChannelMessages/battlePassReward/buyProgress/text";
       
       public static const SERVICECHANNELMESSAGES_BATTLEPASSREWARD_BUYPROGRESS_FINALTEXT:String = "#messenger:serviceChannelMessages/battlePassReward/buyProgress/finalText";
@@ -2279,6 +2279,14 @@ package
       
       public static const PLATFORMCURRENCYMSG_DEBITED_FAMECOIN:String = "#messenger:platformCurrencyMsg/debited/famecoin";
       
+      public static const PLATFORMCURRENCYMSG_RECEIVED_BUMBLEBEE_COIN:String = "#messenger:platformCurrencyMsg/received/bumblebee_coin";
+      
+      public static const PLATFORMCURRENCYMSG_DEBITED_BUMBLEBEE_COIN:String = "#messenger:platformCurrencyMsg/debited/bumblebee_coin";
+      
+      public static const PLATFORMCURRENCYMSG_RECEIVED_HONEY_COIN:String = "#messenger:platformCurrencyMsg/received/honey_coin";
+      
+      public static const PLATFORMCURRENCYMSG_DEBITED_HONEY_COIN:String = "#messenger:platformCurrencyMsg/debited/honey_coin";
+      
       public static const PLATFORMCURRENCYMSG_RECEIVED_FREEXP:String = "#messenger:platformCurrencyMsg/received/freeXP";
       
       public static const PLATFORMCURRENCYMSG_DEBITED_FREEXP:String = "#messenger:platformCurrencyMsg/debited/freeXP";
@@ -2495,11 +2503,53 @@ package
       
       public static const SERVICECHANNELMESSAGES_LIMITEDUICONTENTUNLOCKED_STRONGHOLD:String = "#messenger:serviceChannelMessages/limitedUIContentUnlocked/stronghold";
       
+      public static const SERVICECHANNELMESSAGES_LIMITEDUICONTENTUNLOCKED_SPECBATTLES:String = "#messenger:serviceChannelMessages/limitedUIContentUnlocked/specBattles";
+      
+      public static const SERVICECHANNELMESSAGES_LIMITEDUICONTENTUNLOCKED_COMP7:String = "#messenger:serviceChannelMessages/limitedUIContentUnlocked/comp7";
+      
+      public static const SERVICECHANNELMESSAGES_LIMITEDUICONTENTUNLOCKED_ARCADE:String = "#messenger:serviceChannelMessages/limitedUIContentUnlocked/arcade";
+      
+      public static const SERVICECHANNELMESSAGES_LIMITEDUICONTENTUNLOCKED_FIELDTRIALS:String = "#messenger:serviceChannelMessages/limitedUIContentUnlocked/fieldTrials";
+      
+      public static const SERVICECHANNELMESSAGES_LIMITEDUICONTENTUNLOCKED_FRONTLINE:String = "#messenger:serviceChannelMessages/limitedUIContentUnlocked/frontline";
+      
+      public static const SERVICECHANNELMESSAGES_LIMITEDUICONTENTUNLOCKED_RANKED:String = "#messenger:serviceChannelMessages/limitedUIContentUnlocked/ranked";
+      
+      public static const SERVICECHANNELMESSAGES_CHATSUNLOCKED_TITLE:String = "#messenger:serviceChannelMessages/chatsUnlocked/title";
+      
+      public static const SERVICECHANNELMESSAGES_CHATSUNLOCKED_SUBTITLE:String = "#messenger:serviceChannelMessages/chatsUnlocked/subtitle";
+      
+      public static const SERVICECHANNELMESSAGES_CHATSUNLOCKED_CHANNELS:String = "#messenger:serviceChannelMessages/chatsUnlocked/channels";
+      
+      public static const SERVICECHANNELMESSAGES_CHATSUNLOCKED_BATTLE:String = "#messenger:serviceChannelMessages/chatsUnlocked/battle";
+      
+      public static const SERVICECHANNELMESSAGES_CHATSUNLOCKED_PRIVATE:String = "#messenger:serviceChannelMessages/chatsUnlocked/private";
+      
       public static const SERVICECHANNELMESSAGES_TRADINGCARAVANCOINADDED_TITLE:String = "#messenger:serviceChannelMessages/tradingCaravanCoinAdded/title";
       
       public static const SERVICECHANNELMESSAGES_TRADINGCARAVANCOINADDED_BODY:String = "#messenger:serviceChannelMessages/tradingCaravanCoinAdded/body";
       
       public static const SERVICECHANNELMESSAGES_PARAGONS_BODY:String = "#messenger:serviceChannelMessages/paragons/body";
+      
+      public static const SERVICECHANNELMESSAGES_LIMITEDUIPLATOONLOCKED_TITLE:String = "#messenger:serviceChannelMessages/limitedUIPlatoonLocked/title";
+      
+      public static const SERVICECHANNELMESSAGES_LIMITEDUIPLATOONLOCKED_TEXT:String = "#messenger:serviceChannelMessages/limitedUIPlatoonLocked/text";
+      
+      public static const SERVICECHANNELMESSAGES_LIMITEDUIPLATOONLOCKED_TEXTNONAME:String = "#messenger:serviceChannelMessages/limitedUIPlatoonLocked/textNoName";
+      
+      public static const SERVICECHANNELMESSAGES_LIMITEDUIPLATOONLOCKED_RANKED:String = "#messenger:serviceChannelMessages/limitedUIPlatoonLocked/RANKED";
+      
+      public static const SERVICECHANNELMESSAGES_LIMITEDUIPLATOONLOCKED_COMP7:String = "#messenger:serviceChannelMessages/limitedUIPlatoonLocked/COMP7";
+      
+      public static const SERVICECHANNELMESSAGES_LIMITEDUIPLATOONLOCKED_FUN_RANDOM:String = "#messenger:serviceChannelMessages/limitedUIPlatoonLocked/FUN_RANDOM";
+      
+      public static const SERVICECHANNELMESSAGES_LIMITEDUIPLATOONLOCKED_EPIC:String = "#messenger:serviceChannelMessages/limitedUIPlatoonLocked/EPIC";
+      
+      public static const SERVICECHANNELMESSAGES_LIMITEDUIPLATOONLOCKED_VERSUS_AI:String = "#messenger:serviceChannelMessages/limitedUIPlatoonLocked/VERSUS_AI";
+      
+      public static const SERVICECHANNELMESSAGES_STALLPURCHASERECEIPT_TITLE:String = "#messenger:serviceChannelMessages/stallPurchaseReceipt/title";
+      
+      public static const SERVICECHANNELMESSAGES_STALLPURCHASERECEIPT_BODY:String = "#messenger:serviceChannelMessages/stallPurchaseReceipt/body";
       
       public static const DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_ENUM:Array = [DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_OFFLINE,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_NOTREADY,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_READY,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_INBATTLE,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_AFK];
        

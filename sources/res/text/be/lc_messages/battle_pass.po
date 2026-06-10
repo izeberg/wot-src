@@ -421,20 +421,20 @@ msgstr "Задача без рашэння"
 msgid "chapter/fullName/185"
 msgstr "Артэфакты мінулага"
 
-msgid "chapter/fullName/191"
-msgstr "108 хвілін"
-
-msgid "chapter/fullName/192"
-msgstr "Месяцовая саната"
-
-msgid "chapter/fullName/193"
-msgstr "Заваёўнікі космасу"
-
-msgid "chapter/fullName/194"
-msgstr "Ключ на старт!"
-
 msgid "chapter/fullName/2"
 msgstr "У пекла і назад"
+
+msgid "chapter/fullName/201"
+msgstr "Горный серпантин"
+
+msgid "chapter/fullName/202"
+msgstr "На грэбені хвалі"
+
+msgid "chapter/fullName/203"
+msgstr "Нехоженые тропы"
+
+msgid "chapter/fullName/204"
+msgstr "Пляжная вечеринка"
 
 msgid "chapter/fullName/3"
 msgstr "Попел на ветры"
@@ -448,47 +448,47 @@ msgstr "Артэфакты мінулага"
 msgid "chapter/fullName/quoted/185"
 msgstr "Артэфакты мінулага"
 
-msgid "chapter/fullName/quoted/191"
-msgstr "108 хвілін"
+msgid "chapter/fullName/quoted/201"
+msgstr "Горный серпантин"
 
-msgid "chapter/fullName/quoted/192"
-msgstr "Месяцовая саната"
+msgid "chapter/fullName/quoted/202"
+msgstr "На грэбені хвалі"
 
-msgid "chapter/fullName/quoted/193"
-msgstr "Заваёўнікі космасу"
+msgid "chapter/fullName/quoted/203"
+msgstr "Нехоженые тропы"
 
-msgid "chapter/fullName/quoted/194"
-msgstr "Ключ на старт!"
+msgid "chapter/fullName/quoted/204"
+msgstr "Пляжная вечеринка"
 
 msgid "chapter/fullNameUppercased/185"
 msgstr "АРТЭФАКТЫ МІНУЛАГА"
 
-msgid "chapter/fullNameUppercased/191"
-msgstr "108 ХВІЛІН"
+msgid "chapter/fullNameUppercased/201"
+msgstr "ГОРНЫЙ СЕРПАНТИН"
 
-msgid "chapter/fullNameUppercased/192"
-msgstr "МЕСЯЦОВАЯ САНАТА"
+msgid "chapter/fullNameUppercased/202"
+msgstr "НА ГРЕБНЕ ВОЛНЫ"
 
-msgid "chapter/fullNameUppercased/193"
-msgstr "ЗАВАЁЎНІКІ КОСМАСУ"
+msgid "chapter/fullNameUppercased/203"
+msgstr "НЕХОЖЕНЫЕ ТРОПЫ"
 
-msgid "chapter/fullNameUppercased/194"
-msgstr "КЛЮЧ НА СТАРТ!"
+msgid "chapter/fullNameUppercased/204"
+msgstr "ПЛЯЖНАЯ ВЕЧЕРИНКА"
 
 msgid "chapter/fullNameUppercased/quoted/185"
 msgstr "АРТЭФАКТЫ МІНУЛАГА"
 
-msgid "chapter/fullNameUppercased/quoted/191"
-msgstr "108 ХВІЛІН"
+msgid "chapter/fullNameUppercased/quoted/201"
+msgstr "ГОРНЫЙ СЕРПАНТИН"
 
-msgid "chapter/fullNameUppercased/quoted/192"
-msgstr "МЕСЯЦОВАЯ САНАТА"
+msgid "chapter/fullNameUppercased/quoted/202"
+msgstr "НА ГРЕБНЕ ВОЛНЫ"
 
-msgid "chapter/fullNameUppercased/quoted/193"
-msgstr "ЗАВАЁЎНІКІ КОСМАСУ"
+msgid "chapter/fullNameUppercased/quoted/203"
+msgstr "НЕХОЖЕНЫЕ ТРОПЫ"
 
-msgid "chapter/fullNameUppercased/quoted/194"
-msgstr "КЛЮЧ НА СТАРТ!"
+msgid "chapter/fullNameUppercased/quoted/204"
+msgstr "ПЛЯЖНАЯ ВЕЧЕРИНКА"
 
 msgid "chapter/title"
 msgstr "РАЗДЗЕЛ %(chapter)s"
@@ -882,6 +882,24 @@ msgstr "Перамога"
 msgid "howToEarnPoints/win/50"
 msgstr "Перамога"
 
+msgid "ingameShop/notification/all/description"
+msgstr ""
+"Теперь вы будете получать награды из базовой и улучшенной линеек "
+"одновременно в рамках всех глав текущего сезона."
+
+msgid "ingameShop/notification/several/description"
+msgstr ""
+"Теперь вы будете получать награды из базовой и улучшенной линеек "
+"одновременно в рамках указанных глав: «%(chapter)s»"
+
+msgid "ingameShop/notification/single/description"
+msgstr ""
+"Теперь вы будете получать награды из базовой и улучшенной линеек "
+"одновременно в рамках главы «%(chapter)s»"
+
+msgid "ingameShop/notification/title"
+msgstr "Палепшаны пропуск куплены"
+
 msgid "intro/aboutButton"
 msgstr "ПРА БАЯВЫ ПРОПУСК"
 
@@ -942,19 +960,18 @@ msgstr "ДАСТУПНЫ АДМЫСЛОВЫ РАЗДЗЕЛ"
 
 msgid "intro/subTitle"
 msgstr ""
-"Якія цуды хавае Сусвет? Процьма пытанняў, і адказаў на іх няма, бо мы "
-"ў самым пачатку шляху! Але галоўнае — аднойчы знайшоўся той, хто першы "
-"сказаў: «Паехалі!». І пасля гэтага мы проста не можам сабе дазволіць "
-"спыніцца."
+"Сезон посвящён лету, отдыху, путешествиям и безграничному витамину D, "
+"который дарит нам солнце. Вас ждёт прогулка на побережье, где набегающая "
+"тёплая волна смоет все тревоги и заботы рабочего года."
 
 msgid "intro/title"
-msgstr "БАЯВЫ ПРОПУСК: ВЫШЭЙ ЗА ЗОРКІ"
+msgstr "БОЕВОЙ ПРОПУСК: ВСЁ ВКЛЮЧЕНО!"
 
 msgid "intro/vehicles/text"
 msgstr ""
-"У гэтым сезоне прадстаўлена новая ключавая тэхніка: T-54D, СТ-II і WZ-113G "
-"FT. Гуляючы на гэтай тэхніцы, вы зможаце заслужыць больш бонусных ачкоў "
-"Баявога пропуска за дасягненне ліміту ачкоў."
+"В этом сезоне представлена новая ключевая техника: Panhard EBR 105, Astron-"
+"FL и GPT-75. Играя на этой технике, вы сможете заработать больше бонусных "
+"очков Боевого пропуска за достижение лимита очков."
 
 msgid "intro/vehicles/title"
 msgstr "Новая ключавая тэхніка"

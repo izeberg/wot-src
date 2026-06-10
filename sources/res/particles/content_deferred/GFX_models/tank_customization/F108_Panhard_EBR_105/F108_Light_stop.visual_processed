@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>polySurface13Shape.vertices</vertices>
+			<stream>polySurface13Shape.colour</stream>
+			<primitive>polySurface13Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd1</identifier>
+					<materialKind>0</materialKind>
+					<collisionFlags>255</collisionFlags>
+				</material>
+				<groupOrigin>-0.000013 -0.016152 -2.677073</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						alphaFadeAmountFresnel
+						<Vector4>1.000000 0.000000 1.200000 1.000000</Vector4>
+					</property>
+					<property>
+						destBlend
+						<Int>2</Int>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>particles/content_deferred/GFX_models/tank_customization/F108_Panhard_EBR_105/F108_light.dds</Texture>
+					</property>
+					<property>
+						enableLighting
+						<Bool>true</Bool>
+					</property>
+					<property>
+						fadeMinDistance
+						<Float>0.000000</Float>
+					</property>
+					<property>
+						g_ditherCoeff
+						<Float>43.000000</Float>
+					</property>
+					<property>
+						g_useTime
+						<Bool>false</Bool>
+					</property>
+					<property>
+						lightMultipliers
+						<Vector4>50.000000 200.000000 1.000000 0.000000</Vector4>
+					</property>
+					<property>
+						lightMultipliersEnvDependent
+						<Vector4>0.000000 0.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						TintlColor
+						<Vector4>1.000000 0.000000 0.000000 1.000000</Vector4>
+					</property>
+					<property>
+						alphaFreshnelEnable
+						<Bool>true</Bool>
+					</property>
+				</material>
+				<groupOrigin>0.000330 0.118342 -2.639936</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-1.081820 -0.040322 -2.679025</min>
+		<max>1.082480 0.155343 -2.611021</max>
+	</boundingBox>
+	<geometrySize>2228</geometrySize>
+	<minUVDensity>3.259629</minUVDensity>
+</root>

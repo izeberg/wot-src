@@ -10,6 +10,10 @@ package net.wg.gui.lobby.messengerBar.carousel.data
       
       private var _label:String = "";
       
+      private var _isWulfTooltip:Boolean = false;
+      
+      private var _tooltipArgs:Array = null;
+      
       public function TooltipDataVO(param1:Object)
       {
          super(param1);
@@ -33,6 +37,36 @@ package net.wg.gui.lobby.messengerBar.carousel.data
       public function set label(param1:String) : void
       {
          this._label = param1;
+      }
+      
+      public function get isWulfTooltip() : Boolean
+      {
+         return this._isWulfTooltip;
+      }
+      
+      public function set isWulfTooltip(param1:Boolean) : void
+      {
+         this._isWulfTooltip = param1;
+      }
+      
+      public function get tooltipArgs() : Array
+      {
+         return this._tooltipArgs;
+      }
+      
+      public function set tooltipArgs(param1:Array) : void
+      {
+         this._tooltipArgs = param1;
+      }
+      
+      override protected function onDispose() : void
+      {
+         if(this._tooltipArgs != null)
+         {
+            this._tooltipArgs.splice(0,this._tooltipArgs.length);
+            this._tooltipArgs = null;
+         }
+         super.onDispose();
       }
    }
 }

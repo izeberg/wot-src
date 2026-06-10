@@ -31,6 +31,10 @@ package net.wg.data.constants.generated
       
       public static const VEHICLE_DUAL_GUN:String = "vehicleDualGun";
       
+      public static const VEHICLE_DUAL_GUN_COOLING:String = "dualGunCooling";
+      
+      public static const VEHICLE_GUN_COOLING:String = "gunCooling";
+      
       public static const VEHICLE_TURRET:String = "vehicleTurret";
       
       public static const VEHICLE_CHASSIS:String = "vehicleChassis";

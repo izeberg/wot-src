@@ -106,6 +106,11 @@
 					<destroyed>vehicles/french/F108_Panhard_EBR_105/_skins/tramontana/crash/lod0/Hull.model</destroyed>
 					<exploded>vehicles/french/F108_Panhard_EBR_105/_skins/tramontana/crash/lod0/Hull.model</exploded>
 				</tramontana>
+				<F108_Panhard_EBR_105_3Dst_Reef_Rush>
+					<undamaged>vehicles/french/F108_Panhard_EBR_105/_skins/F108_Panhard_EBR_105_3Dst_Reef_Rush/normal/lod0/Hull.model</undamaged>
+					<destroyed>vehicles/french/F108_Panhard_EBR_105/_skins/F108_Panhard_EBR_105_3Dst_Reef_Rush/crash/lod0/Hull.model</destroyed>
+					<exploded>vehicles/french/F108_Panhard_EBR_105/_skins/F108_Panhard_EBR_105_3Dst_Reef_Rush/crash/lod0/Hull.model</exploded>
+				</F108_Panhard_EBR_105_3Dst_Reef_Rush>
 			</sets>
 		</models>
 		<swinging>
@@ -125,7 +130,7 @@
 		</swinging>
 		<exhaust>
 			<pixie>gas_medium</pixie>
-			<nodes>HP_Track_Exhaus_1</nodes>
+			<nodes>HP_Track_Exhaus_1 HP_Track_Exhaus_2</nodes>
 		</exhaust>
 		<turretPositions>
 			<turret>0.000000 0.226365 -0.007033</turret>
@@ -938,6 +943,31 @@
 				<clipAngle>0.827194</clipAngle>
 				<anchorShift>0.534993</anchorShift>
 			</slot>
+			<slot>
+				<slotType>projectionDecal</slotType>
+				<slotId>15036</slotId>
+				<tags>formfactor_square</tags>
+				<compatibleModels>F108_Panhard_EBR_105_3Dst_Reef_Rush</compatibleModels>
+				<position>0.000159 1.254789 -2.369924</position>
+				<rotation>1.541902 0.007389 0.007396</rotation>
+				<scale>0.431992 0.136439 0.432005</scale>
+				<showOn>16</showOn>
+				<clipAngle>
+					1.43298
+					<!--BW_String-->
+				</clipAngle>
+				<verticalMirror>true</verticalMirror>
+				<anchorShift>
+					0.0517
+					<!--BW_String-->
+				</anchorShift>
+			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18000</slotId>
+				<position>0 0 0</position>
+				<rotation>0 0 0</rotation>
+			</slot>
 		</customizationSlots>
 		<customization>
 			<customizableVehicleAreas>
@@ -1005,17 +1035,27 @@
 						<destroyed>vehicles/french/F108_Panhard_EBR_105/_skins/tramontana/crash/lod0/Chassis.model</destroyed>
 						<exploded>vehicles/french/F108_Panhard_EBR_105/_skins/tramontana/crash/lod0/Chassis.model</exploded>
 					</tramontana>
+					<F108_Panhard_EBR_105_3Dst_Reef_Rush>
+						<undamaged>vehicles/french/F108_Panhard_EBR_105/_skins/F108_Panhard_EBR_105_3Dst_Reef_Rush/normal/lod0/Chassis.model</undamaged>
+						<destroyed>vehicles/french/F108_Panhard_EBR_105/_skins/F108_Panhard_EBR_105_3Dst_Reef_Rush/crash/lod0/Chassis.model</destroyed>
+						<exploded>vehicles/french/F108_Panhard_EBR_105/_skins/F108_Panhard_EBR_105_3Dst_Reef_Rush/crash/lod0/Chassis.model</exploded>
+					</F108_Panhard_EBR_105_3Dst_Reef_Rush>
 				</sets>
 			</models>
 			<traces>
 				<lodDist>MEDIUM</lodDist>
-				<bufferPrefs>mediumTank</bufferPrefs>
-				<textureSet>usa_04</textureSet>
-				<size>
-					0.5 0.4
-					<!--BW_String-->
-				</size>
 				<activePostmortem>true</activePostmortem>
+				<tracesParams>
+					<trackPairIdx>0</trackPairIdx>
+					<bufferPrefs>mediumTank</bufferPrefs>
+					<textureSet>usa_04</textureSet>
+					<size>
+						0.5 0.4
+						<!--BW_String-->
+					</size>
+					<offset>0 0</offset>
+					<centerOffsetFactor>1 1</centerOffsetFactor>
+				</tracesParams>
 			</traces>
 			<AODecals>
 				<decal>
@@ -1525,6 +1565,7 @@
 						0.04
 						<!--BW_String-->
 					</maxOffset>
+					<trackPairIdx>0</trackPairIdx>
 				</node>
 				<node>
 					<name>Track_L3</name>
@@ -1539,6 +1580,7 @@
 						0.04
 						<!--BW_String-->
 					</maxOffset>
+					<trackPairIdx>0</trackPairIdx>
 				</node>
 				<node>
 					<name>Track_R0</name>
@@ -1553,6 +1595,7 @@
 						0.04
 						<!--BW_String-->
 					</maxOffset>
+					<trackPairIdx>0</trackPairIdx>
 				</node>
 				<node>
 					<name>Track_R3</name>
@@ -1567,12 +1610,8 @@
 						0.04
 						<!--BW_String-->
 					</maxOffset>
+					<trackPairIdx>0</trackPairIdx>
 				</node>
-				<activePostmortem>true</activePostmortem>
-				<lodSettings>
-					<maxLodDistance>LEVERED_SUSPENSION</maxLodDistance>
-					<maxPriority>5</maxPriority>
-				</lodSettings>
 			</groundNodes>
 			<customizationSlots>
 				<slot>
@@ -1709,6 +1748,11 @@
 								<destroyed>vehicles/french/F108_Panhard_EBR_105/_skins/tramontana/crash/lod0/Gun_01.model</destroyed>
 								<exploded>vehicles/french/F108_Panhard_EBR_105/_skins/tramontana/crash/lod0/Gun_01.model</exploded>
 							</tramontana>
+							<F108_Panhard_EBR_105_3Dst_Reef_Rush>
+								<undamaged>vehicles/french/F108_Panhard_EBR_105/_skins/F108_Panhard_EBR_105_3Dst_Reef_Rush/normal/lod0/Gun_01.model</undamaged>
+								<destroyed>vehicles/french/F108_Panhard_EBR_105/_skins/F108_Panhard_EBR_105_3Dst_Reef_Rush/crash/lod0/Gun_01.model</destroyed>
+								<exploded>vehicles/french/F108_Panhard_EBR_105/_skins/F108_Panhard_EBR_105_3Dst_Reef_Rush/crash/lod0/Gun_01.model</exploded>
+							</F108_Panhard_EBR_105_3Dst_Reef_Rush>
 						</sets>
 					</models>
 					<hitTester>
@@ -1809,6 +1853,27 @@
 								<!--BW_String-->
 							</size>
 						</slot>
+						<slot>
+							<slotType>insigniaOnGun</slotType>
+							<slotId>49001</slotId>
+							<rayStart>
+								0 0 2.6
+								<!--BW_String-->
+							</rayStart>
+							<rayEnd>
+								0 0 3.3
+								<!--BW_String-->
+							</rayEnd>
+							<rayUp>
+								0.106354 0 0
+								<!--BW_String-->
+							</rayUp>
+							<compatibleModels>F108_Panhard_EBR_105_3Dst_Reef_Rush</compatibleModels>
+							<size>
+								0.7
+								<!--BW_String-->
+							</size>
+						</slot>
 					</customizationSlots>
 					<customization>
 						<customizableVehicleAreas>
@@ -1842,6 +1907,11 @@
 						<destroyed>vehicles/french/F108_Panhard_EBR_105/_skins/tramontana/crash/lod0/Turret_01.model</destroyed>
 						<exploded>vehicles/french/F108_Panhard_EBR_105/_skins/tramontana/crash/lod0/Turret_01.model</exploded>
 					</tramontana>
+					<F108_Panhard_EBR_105_3Dst_Reef_Rush>
+						<undamaged>vehicles/french/F108_Panhard_EBR_105/_skins/F108_Panhard_EBR_105_3Dst_Reef_Rush/normal/lod0/Turret_01.model</undamaged>
+						<destroyed>vehicles/french/F108_Panhard_EBR_105/_skins/F108_Panhard_EBR_105_3Dst_Reef_Rush/crash/lod0/Turret_01.model</destroyed>
+						<exploded>vehicles/french/F108_Panhard_EBR_105/_skins/F108_Panhard_EBR_105_3Dst_Reef_Rush/crash/lod0/Turret_01.model</exploded>
+					</F108_Panhard_EBR_105_3Dst_Reef_Rush>
 				</sets>
 			</models>
 			<hitTester>
@@ -2772,6 +2842,16 @@
 						<!--BW_String-->
 					</clipAngle>
 					<anchorShift>0.178862</anchorShift>
+				</slot>
+				<slot>
+					<slotType>projectionDecal</slotType>
+					<slotId>35040</slotId>
+					<tags>direction_left_to_right formfactor_square</tags>
+					<compatibleModels>F108_Panhard_EBR_105_3Dst_Reef_Rush</compatibleModels>
+					<position>0.851214 1.781693 -0.681889</position>
+					<rotation>1.106189 1.570796 3.141593</rotation>
+					<scale>0.829399 0.829399 0.829399</scale>
+					<showOn>256</showOn>
 				</slot>
 			</customizationSlots>
 			<customization>

@@ -9,6 +9,7 @@
 		<ArenaTriggerSystemComponent/>
 		<AccountRankedComponent/>
 		<ArenaRankedComponent/>
+		<AccountNewbieChatLockComponent/>
 	</StaticComponents>
 	<DynamicComponents>
 		<OwnVehicle/>
@@ -68,6 +69,7 @@
 		<EntityVisualScriptRunner/>
 		<SequenceNetworkSync/>
 		<DualAccuracy/>
+		<DualGunDualAccuracy/>
 		<RankedVoiceComponent/>
 	</DynamicComponents>
 </root>

@@ -39,7 +39,10 @@ package net.wg.gui.bootcamp.introVideoPage.containers
          this.txtDescription = null;
          this.txtReferral = null;
          this.dashline = null;
-         this.rewards.dispose();
+         if(this.rewards)
+         {
+            this.rewards.dispose();
+         }
          this.rewards = null;
          if(this._tween)
          {

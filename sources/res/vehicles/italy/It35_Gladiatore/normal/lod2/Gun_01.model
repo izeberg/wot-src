@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/italy/It35_Gladiatore/normal/lod3/Gun_01</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.531813 -0.369349 -0.073373</min>
+		<max>0.538898 0.364080 7.574795</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/italy/It35_Gladiatore/normal/lod2/Gun_01</nodefullVisual>
+</root>

@@ -123,6 +123,15 @@
 						<row3>0.000000 0.000000 0.000000</row3>
 					</transform>
 				</node>
+				<node>
+					<identifier>s9</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
 			</node>
 		</node>
 	</node>
@@ -579,7 +588,7 @@
 						<Texture>content/Hangars/h08_mt_hangar/enviroment/00_Tiles/Metal_01_Painted_512_GBMT.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-21.307491 16.762989 33.052471</groupOrigin>
+				<groupOrigin>-21.324551 16.762989 33.052471</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -804,6 +813,6 @@
 		<min>-44.431503 -1.000003 -4.742486</min>
 		<max>0.001479 33.585186 83.389023</max>
 	</boundingBox>
-	<geometrySize>487508</geometrySize>
+	<geometrySize>487016</geometrySize>
 	<minUVDensity>0.000074</minUVDensity>
 </root>

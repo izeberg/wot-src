@@ -634,6 +634,7 @@ _(#messenger:battle/toolTips/mutePlayer){/BODY}</value>
 		<tankmenInvoiceReceived>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/invoiceReceived/tankmen): &lt;font color=&apos;#8C8C7E&apos;&gt;&lt;b&gt;%(tankman)s&lt;/b&gt;&lt;/font&gt;&lt;/font&gt;</tankmenInvoiceReceived>
 		<tankmenInvoiceDismiss>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/invoiceReceived/tankmenToRemove): &lt;font color=&apos;#8C8C7E&apos;&gt;&lt;b&gt;%(tankmenToRemove)s&lt;/b&gt;&lt;/font&gt;&lt;/font&gt;</tankmenInvoiceDismiss>
 		<boostersInvoiceReceived>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/invoiceReceived/boosters): &lt;font color=&apos;#8C8C7E&apos;&gt;&lt;b&gt;%(boosters)s&lt;/b&gt;&lt;/font&gt;&lt;/font&gt;</boostersInvoiceReceived>
+		<boostersInvoiceDebited>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/invoiceDebited/boosters): &lt;font color=&apos;#8C8C7E&apos;&gt;&lt;b&gt;%(boosters)s&lt;/b&gt;&lt;/font&gt;&lt;/font&gt;</boostersInvoiceDebited>
 		<enhancementsAccruedInvoiceReceived>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/invoiceReceived/enhancementsAccrued): &lt;font color=&apos;#8C8C7E&apos;&gt;&lt;b&gt;%(count)s&lt;/b&gt;&lt;/font&gt;&lt;/font&gt;</enhancementsAccruedInvoiceReceived>
 		<enhancementsDebitedInvoiceReceived>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/invoiceReceived/enhancementsDebited): &lt;font color=&apos;#8C8C7E&apos;&gt;&lt;b&gt;%(count)s&lt;/b&gt;&lt;/font&gt;&lt;/font&gt;</enhancementsDebitedInvoiceReceived>
 		<discountsInvoiceReceived>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/invoiceReceived/discounts): &lt;font color=&apos;#8C8C7E&apos;&gt;&lt;b&gt;%(discounts)s&lt;/b&gt;&lt;/font&gt;&lt;/font&gt;</discountsInvoiceReceived>
@@ -981,6 +982,13 @@ _(#messenger:battle/toolTips/mutePlayer){/BODY}</value>
 &lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/referralTransaction/date):&lt;/font&gt; &lt;font color=&apos;#8C8C7E&apos;&gt;%(at)s&lt;/font&gt;
 &lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/referralLootBoxesReceived/body):&lt;/font&gt; &lt;font color=&apos;#CBAC77&apos;&gt;%(count)s&lt;/font&gt;</message>
 		</rpLootBoxesInvoiceReceived>
+		<battlePassBuyShopInvoiceReceived>
+			<type>grey</type>
+			<icon>BattlePassIcon</icon>
+			<bgIcon>bg_battle_pass</bgIcon>
+			<bgIconSizeAuto>true</bgIconSizeAuto>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(header)s&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(description)s&lt;/font&gt;</message>
+		</battlePassBuyShopInvoiceReceived>
 		<durationOfPremiumAccountExpires>
 			<type>yellow</type>
 			<icon>WarningIcon</icon>
@@ -2347,12 +2355,6 @@ _(#messenger:serviceChannelMessages/piggyBank/continueAfterSmashed)</message>
 			<bgIconSizeAuto>true</bgIconSizeAuto>
 			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(header)s&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(description)s&lt;/font&gt;&lt;br/&gt;%(text)s&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(additionalText)s&lt;/font&gt;</message>
 		</BattlePassBuySysMessage>
-		<BattlePassBuyMultipleMessage>
-			<type>grey</type>
-			<icon>InformationIcon</icon>
-			<priority>medium</priority>
-			<message>&lt;font color=&quot;#8C8C7E&quot;&gt;%(header)s&lt;/font&gt;</message>
-		</BattlePassBuyMultipleMessage>
 		<BattlePassDefaultRewardMessage>
 			<type>grey</type>
 			<icon>BattlePassIcon</icon>
@@ -3861,11 +3863,29 @@ _(#lootboxes:notification/lootBoxesAutoOpen/boxes)&lt;br/&gt;%(rewards)s</messag
 			<icon>LockOpen</icon>
 			<message>&lt;font face=&quot;$TitleFont&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/limitedUIContentUnlocked/title)&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#FEFEEC&quot;&gt;%(text)s&lt;/font&gt;</message>
 		</LimitedUIContentUnlocked>
+		<LimitedUIPlatoonLocked>
+			<priority>medium</priority>
+			<type>grey</type>
+			<icon>LockPlatoon</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/limitedUIPlatoonLocked/title)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;font color=&quot;#EE7000&quot;&gt;%(text)s&lt;/font&gt;</message>
+		</LimitedUIPlatoonLocked>
+		<ChatsUnlockedSysMessage>
+			<priority>medium</priority>
+			<type>grey</type>
+			<icon>LockOpen</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/chatsUnlocked/title)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;font face=&apos;$FieldFont&apos; size=&apos;14&apos; color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/chatsUnlocked/subtitle)&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#FEFEEC&quot;&gt;_(#messenger:serviceChannelMessages/chatsUnlocked/channels)&lt;br/&gt;_(#messenger:serviceChannelMessages/chatsUnlocked/battle)&lt;br/&gt;_(#messenger:serviceChannelMessages/chatsUnlocked/private)&lt;/font&gt;</message>
+		</ChatsUnlockedSysMessage>
 		<TradingCaravanCoinAdded>
 			<priority>medium</priority>
 			<type>grey</type>
 			<icon>Caravan</icon>
 			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/tradingCaravanCoinAdded/title)&lt;/font&gt;&lt;br/&gt;&lt;font size=&quot;14&quot; color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/tradingCaravanCoinAdded/body)&lt;/font&gt;&lt;font color=&apos;#D6D7D4&apos;&gt;%(count)s&lt;/font&gt;</message>
 		</TradingCaravanCoinAdded>
+		<StallPurchaseReceipt>
+			<priority>medium</priority>
+			<type>grey</type>
+			<icon>PersonalReserves2</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/stallPurchaseReceipt/title)&lt;/font&gt;&lt;br/&gt;&lt;font size=&quot;14&quot; color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/stallPurchaseReceipt/body)&lt;/font&gt;</message>
+		</StallPurchaseReceipt>
 	</htmlTemplates>
 </root>

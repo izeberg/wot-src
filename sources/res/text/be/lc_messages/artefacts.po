@@ -601,7 +601,7 @@ msgstr ""
 "Толькі для тэхнікі ЗША."
 
 msgid "cocacola/name"
-msgstr "Скрынка Колы"
+msgstr "Скрынка колы"
 
 msgid "cocacola/onUse"
 msgstr "?empty?"
@@ -679,6 +679,9 @@ msgstr ""
 msgid "comp7_aggressive_detection/name"
 msgstr "Актыўная разведка"
 
+msgid "comp7_aggressive_detection/shortDescr"
+msgstr "Увеличение обзора."
+
 msgid "comp7_ally_support/descr/active"
 msgstr ""
 "На наступныя {colorTagOpen}%(duration)d с{colorTagClose} экіпаж атрымлівае бонус {colorTagOpen}%(crewBuff_1).1f/%(crewBuff_2).1f/%(crewBuff_3).1f%%{colorTagClose} да ўзроўню валодання асноўнай спецыяльнасцю за кожную машыну іншай ролі ў вашай камандзе.\n"
@@ -687,6 +690,11 @@ msgstr ""
 
 msgid "comp7_ally_support/name"
 msgstr "Адзін за ўсіх"
+
+msgid "comp7_ally_support/shortDescr"
+msgstr ""
+"Бонус к характеристикам экипажа за союзников с уникальными ролевыми навыками"
+" в бою."
 
 msgid "comp7_aoe_heal/descr/active"
 msgstr ""
@@ -704,6 +712,11 @@ msgstr ""
 msgid "comp7_aoe_heal/name"
 msgstr "Палявая рамонтная зона"
 
+msgid "comp7_aoe_heal/shortDescr"
+msgstr ""
+"Восстановление очков прочности в зоне действия для техники игрока и его "
+"союзников."
+
 msgid "comp7_aoe_inspire/descr/active"
 msgstr ""
 "На наступныя {colorTagOpen}%(duration)d с{colorTagClose} ваш экіпаж і "
@@ -714,6 +727,9 @@ msgstr ""
 msgid "comp7_aoe_inspire/name"
 msgstr "Падняцце баявога духу"
 
+msgid "comp7_aoe_inspire/shortDescr"
+msgstr "Улучшение эффективности собственного экипажа и экипажей союзников."
+
 msgid "comp7_berserk/descr/active"
 msgstr ""
 "На наступныя {colorTagOpen}%(duration)d с{colorTagClose} час перанабівання гарматы скарачаецца на {colorTagOpen}%(gunReloadTimeBuff_1).0f/%(gunReloadTimeBuff_2).0f/%(gunReloadTimeBuff_3).0f%%{colorTagClose}. Роскід гарматы падчас руху, пры паваротах шасі і вежы, а таксама пасля стрэлу памяншаецца на {colorTagOpen}%(shotDispersionFactorsBuff_1).0f/%(shotDispersionFactorsBuff_2).0f/%(shotDispersionFactorsBuff_3).0f%%{colorTagClose} .\n"
@@ -723,6 +739,9 @@ msgstr ""
 msgid "comp7_berserk/name"
 msgstr "Лютасць"
 
+msgid "comp7_berserk/shortDescr"
+msgstr "Уменьшение времени перезарядки и разброса орудия."
+
 msgid "comp7_concentration/descr/active"
 msgstr ""
 "На наступныя {colorTagOpen}%(duration)d с{colorTagClose} памяншае роскід гарматы падчас руху, пры паваротах шасі і вежы, а таксама пасля стрэлу на {colorTagOpen}%(shotDispersionFactorsBuff_1).0f/%(shotDispersionFactorsBuff_2).0f/%(shotDispersionFactorsBuff_3).0f%%{colorTagClose}\n"
@@ -731,6 +750,11 @@ msgstr ""
 
 msgid "comp7_concentration/name"
 msgstr "Засяроджанне на цэлі"
+
+msgid "comp7_concentration/shortDescr"
+msgstr ""
+"Улучшение показателей разброса, времени сведения и перезарядки внутри "
+"механизма заряжания."
 
 msgid "comp7_fast_recharge/descr/active"
 msgstr ""
@@ -747,6 +771,9 @@ msgstr ""
 msgid "comp7_fast_recharge/name"
 msgstr "Спрытныя рукі"
 
+msgid "comp7_fast_recharge/shortDescr"
+msgstr "Ускорение перезарядки механизма заряжания и дозарядки."
+
 msgid "comp7_hunter/descr/active"
 msgstr ""
 "Абнуляе колькасць пашкоджаных стрэламі машын супраціўніка.\n"
@@ -761,6 +788,11 @@ msgstr ""
 msgid "comp7_hunter/name"
 msgstr "Паляўнічы на галовы"
 
+msgid "comp7_hunter/shortDescr"
+msgstr ""
+"Ускорение перезарядки и восстановление очков прочности за каждую "
+"повреждённую машину противника."
+
 msgid "comp7_juggernaut/descr/active"
 msgstr ""
 "На наступныя {colorTagOpen}%(duration_1)d/%(duration_2)d/%(duration_3)d с{colorTagClose} магутнасць рухавіка павышаецца на {colorTagOpen}%(enginePowerBuff).0f%%{colorTagClose}, хуткасць рамонту модуляў павялічваецца на {colorTagOpen}%(repairBuff)d%%{colorTagClose}, а час аглушэння зніжаецца на {colorTagOpen}%(stunDurationResist)d%%{colorTagClose}.\n"
@@ -769,6 +801,11 @@ msgstr ""
 
 msgid "comp7_juggernaut/name"
 msgstr "Напралом!"
+
+msgid "comp7_juggernaut/shortDescr"
+msgstr ""
+"Увеличение мобильности, скорости ремонта модулей и снижение времени "
+"оглушения."
 
 msgid "comp7_march/descr/active"
 msgstr ""
@@ -782,6 +819,9 @@ msgstr ""
 msgid "comp7_march/name"
 msgstr "Марш-кідок"
 
+msgid "comp7_march/shortDescr"
+msgstr "Увеличение максимальной скорости, динамики и маскировки."
+
 msgid "comp7_recon/descr/active"
 msgstr ""
 "Праз {colorTagOpen}%(delay)d с{colorTagClose} над выбранай вамі зонай "
@@ -794,6 +834,9 @@ msgstr ""
 msgid "comp7_recon/name"
 msgstr "Самалёт-выведнік"
 
+msgid "comp7_recon/shortDescr"
+msgstr "Обнаружение техники противника в заданной зоне."
+
 msgid "comp7_redline/descr/active"
 msgstr ""
 "Праз {colorTagOpen}%(delay)d с{colorTagClose} па выбранай вамі зоне будзе нанесены артылерыйскі ўдар.\n"
@@ -802,6 +845,10 @@ msgstr ""
 
 msgid "comp7_redline/name"
 msgstr "Агнявая падтрымка"
+
+msgid "comp7_redline/shortDescr"
+msgstr ""
+"Нанесение урона и оглушение экипажа противника посредством артобстрела."
 
 msgid "comp7_risky_attack/descr/active"
 msgstr ""
@@ -816,6 +863,316 @@ msgstr ""
 msgid "comp7_risky_attack/name"
 msgstr "Другое дыханне"
 
+msgid "comp7_risky_attack/shortDescr"
+msgstr ""
+"Увеличение мобильности, а также восстановление очков прочности после "
+"ускорения."
+
+msgid "comp7_roleSkillSlot/title"
+msgstr "РОЛЕВОЙ НАВЫК"
+
+msgid ""
+"comp7_skillDescription/dynamicParams/descr/aimingTimeBuff/comp7_concentration"
+msgstr "Уменьшение времени сведения орудия"
+
+msgid ""
+"comp7_skillDescription/dynamicParams/descr/clipReloadTimeBoost/comp7_concentration"
+msgstr ""
+"Уменьшение времени перезарядки между выстрелами внутри механизма заряжания"
+
+msgid "comp7_skillDescription/dynamicParams/descr/crewBuff/comp7_ally_support"
+msgstr ""
+"Улучшение уровня владения основной специальностью экипажа игрока за каждый "
+"уникальный выбранный навык на машинах союзников"
+
+msgid "comp7_skillDescription/dynamicParams/descr/crewBuff/comp7_aoe_inspire"
+msgstr ""
+"Повышение уровня владения основной специальностью экипажа игрока и союзников"
+
+msgid "comp7_skillDescription/dynamicParams/descr/damage/comp7_redline"
+msgstr "Пашкоджанні"
+
+msgid "comp7_skillDescription/dynamicParams/descr/damageFactors/comp7_sniper"
+msgstr "Увеличение урона, если машина не обнаружена в момент выстрела"
+
+msgid "comp7_skillDescription/dynamicParams/descr/debuf/comp7_aoe_heal"
+msgstr ""
+"Очки прочности, восстанавливаемые при последующих использованиях навыка"
+
+msgid "comp7_skillDescription/dynamicParams/descr/duration/comp7_juggernaut"
+msgstr "Время действия навыка"
+
+msgid "comp7_skillDescription/dynamicParams/descr/duration/comp7_march"
+msgstr "Время действия навыка"
+
+msgid "comp7_skillDescription/dynamicParams/descr/duration/comp7_recon"
+msgstr "Продолжительность обнаружения техники противника"
+
+msgid "comp7_skillDescription/dynamicParams/descr/duration/comp7_sniper"
+msgstr "Время действия навыка"
+
+msgid ""
+"comp7_skillDescription/dynamicParams/descr/extraHealFactor/comp7_risky_attack"
+msgstr ""
+"Дополнительный множитель к восстанавливаемым очкам прочности, который "
+"зависит от уровня навыка"
+
+msgid ""
+"comp7_skillDescription/dynamicParams/descr/gunReloadBuff/comp7_sure_shot"
+msgstr ""
+"Уменьшение времени перезарядки, пропорциональное урону, нанесённому машине "
+"противника"
+
+msgid ""
+"comp7_skillDescription/dynamicParams/descr/gunReloadTimeBuff/comp7_berserk"
+msgstr "Уменьшение времени перезарядки"
+
+msgid ""
+"comp7_skillDescription/dynamicParams/descr/gunReloadTimeBuff/comp7_fast_recharge"
+msgstr "Ускорение перезарядки"
+
+msgid "comp7_skillDescription/dynamicParams/descr/heal/comp7_aoe_heal"
+msgstr "Очки прочности, восстанавливаемые при первом использовании навыка"
+
+msgid "comp7_skillDescription/dynamicParams/descr/heal/comp7_hunter"
+msgstr ""
+"Очки прочности, восстанавливаемые за каждую повреждённую машину противника "
+"при активации навыка"
+
+msgid ""
+"comp7_skillDescription/dynamicParams/descr/killGunReloadBuff/comp7_sure_shot"
+msgstr ""
+"Уменьшение времени текущей перезарядки при уничтожении машины противника"
+
+msgid "comp7_skillDescription/dynamicParams/descr/radius/comp7_recon"
+msgstr "Радиус зоны обнаружения техники противника"
+
+msgid "comp7_skillDescription/dynamicParams/descr/radius/comp7_redline"
+msgstr "Радиус разлёта снарядов"
+
+msgid ""
+"comp7_skillDescription/dynamicParams/descr/shotDispersionFactorsBuff/comp7_berserk"
+msgstr "Уменьшение разброса орудия"
+
+msgid ""
+"comp7_skillDescription/dynamicParams/descr/shotDispersionFactorsBuff/comp7_concentration"
+msgstr "Уменьшение разброса орудия при движении и повороте машины и башни"
+
+msgid ""
+"comp7_skillDescription/dynamicParams/descr/shotDispersionFactorsBuff/comp7_sure_shot"
+msgstr "Уменьшение разброса орудия при движении и повороте машины и башни"
+
+msgid "comp7_skillDescription/dynamicParams/descr/skillChargeLevel"
+msgstr "Уровень заряда"
+
+msgid "comp7_skillDescription/dynamicParams/descr/stunDuration/comp7_redline"
+msgstr "Время оглушения"
+
+msgid ""
+"comp7_skillDescription/dynamicParams/descr/visionBuff/comp7_aggressive_detection"
+msgstr "Улучшение обзора машины"
+
+msgid "comp7_skillDescription/dynamicParams/title"
+msgstr "Изменение ролевого навыка:"
+
+msgid ""
+"comp7_skillDescription/dynamicParams/value/aimingTimeBuff/comp7_concentration"
+msgstr "{value}%"
+
+msgid ""
+"comp7_skillDescription/dynamicParams/value/clipReloadTimeBoost/comp7_concentration"
+msgstr "{value} с"
+
+msgid "comp7_skillDescription/dynamicParams/value/crewBuff/comp7_ally_support"
+msgstr "{value}%"
+
+msgid "comp7_skillDescription/dynamicParams/value/crewBuff/comp7_aoe_inspire"
+msgstr "{value}%"
+
+msgid "comp7_skillDescription/dynamicParams/value/damage/comp7_redline"
+msgstr "{value}"
+
+msgid "comp7_skillDescription/dynamicParams/value/damageFactors/comp7_sniper"
+msgstr "{value}%"
+
+msgid "comp7_skillDescription/dynamicParams/value/debuf/comp7_aoe_heal"
+msgstr "{value}"
+
+msgid "comp7_skillDescription/dynamicParams/value/duration/comp7_juggernaut"
+msgstr "{value} с"
+
+msgid "comp7_skillDescription/dynamicParams/value/duration/comp7_march"
+msgstr "{value} с"
+
+msgid "comp7_skillDescription/dynamicParams/value/duration/comp7_recon"
+msgstr "{value} с"
+
+msgid "comp7_skillDescription/dynamicParams/value/duration/comp7_sniper"
+msgstr "{value} с"
+
+msgid ""
+"comp7_skillDescription/dynamicParams/value/extraHealFactor/comp7_risky_attack"
+msgstr "{value}%"
+
+msgid ""
+"comp7_skillDescription/dynamicParams/value/gunReloadBuff/comp7_sure_shot"
+msgstr "{value}%"
+
+msgid ""
+"comp7_skillDescription/dynamicParams/value/gunReloadTimeBuff/comp7_berserk"
+msgstr "{value}%"
+
+msgid ""
+"comp7_skillDescription/dynamicParams/value/gunReloadTimeBuff/comp7_fast_recharge"
+msgstr "{value}%"
+
+msgid "comp7_skillDescription/dynamicParams/value/heal/comp7_aoe_heal"
+msgstr "{value}"
+
+msgid "comp7_skillDescription/dynamicParams/value/heal/comp7_hunter"
+msgstr "{value}"
+
+msgid ""
+"comp7_skillDescription/dynamicParams/value/killGunReloadBuff/comp7_sure_shot"
+msgstr "{value}%"
+
+msgid "comp7_skillDescription/dynamicParams/value/radius/comp7_recon"
+msgstr "{value} м"
+
+msgid "comp7_skillDescription/dynamicParams/value/radius/comp7_redline"
+msgstr "{value} м"
+
+msgid ""
+"comp7_skillDescription/dynamicParams/value/shotDispersionFactorsBuff/comp7_berserk"
+msgstr "{value}%"
+
+msgid ""
+"comp7_skillDescription/dynamicParams/value/shotDispersionFactorsBuff/comp7_concentration"
+msgstr "{value}%"
+
+msgid ""
+"comp7_skillDescription/dynamicParams/value/shotDispersionFactorsBuff/comp7_sure_shot"
+msgstr "{value}%"
+
+msgid "comp7_skillDescription/dynamicParams/value/stunDuration/comp7_redline"
+msgstr "{value} с"
+
+msgid ""
+"comp7_skillDescription/dynamicParams/value/visionBuff/comp7_aggressive_detection"
+msgstr "{value}%"
+
+msgid "comp7_skillDescription/staticParams/descr/baseHeal/default"
+msgstr "Базовое восстановление очков прочности"
+
+msgid "comp7_skillDescription/staticParams/descr/bkwSpeedBoost/default"
+msgstr "Увеличение максимальной скорости движения назад"
+
+msgid "comp7_skillDescription/staticParams/descr/cooldownSeconds/default"
+msgstr "Время перезарядки навыка"
+
+msgid "comp7_skillDescription/staticParams/descr/damageDistance/default"
+msgstr "Дистанция для нанесения урона для перезапуска навыка"
+
+msgid "comp7_skillDescription/staticParams/descr/delay/comp7_recon"
+msgstr "Задержка перед обнаружением техники"
+
+msgid "comp7_skillDescription/staticParams/descr/delay/comp7_redline"
+msgstr "Задержка перед нанесением урона по области"
+
+msgid "comp7_skillDescription/staticParams/descr/dispersionFactor/default"
+msgstr "Уменьшение разброса"
+
+msgid "comp7_skillDescription/staticParams/descr/duration/comp7_risky_attack"
+msgstr "Время действия ускорения"
+
+msgid "comp7_skillDescription/staticParams/descr/duration/default"
+msgstr "Время действия навыка"
+
+msgid "comp7_skillDescription/staticParams/descr/enginePowerBuff/default"
+msgstr "Увеличение мощности двигателя"
+
+msgid "comp7_skillDescription/staticParams/descr/fwdSpeedBoost/default"
+msgstr "Увеличение максимальной скорости движения вперёд"
+
+msgid "comp7_skillDescription/staticParams/descr/gunReloadBoost/default"
+msgstr "Уменьшение времени текущей перезарядки при получении попадания"
+
+msgid "comp7_skillDescription/staticParams/descr/gunReloadTimeBuff/default"
+msgstr ""
+"Сокращение времени перезарядки за каждую повреждённую машину противника"
+
+msgid "comp7_skillDescription/staticParams/descr/healDuration/default"
+msgstr "Время действия восстановления прочности"
+
+msgid "comp7_skillDescription/staticParams/descr/invisibilityFactor/default"
+msgstr "Бонус да маскіроўкі"
+
+msgid "comp7_skillDescription/staticParams/descr/radius/default"
+msgstr "Радиус зоны восстановления прочности техники"
+
+msgid "comp7_skillDescription/staticParams/descr/repairBuff/default"
+msgstr "Увеличение скорости ремонта модулей"
+
+msgid "comp7_skillDescription/staticParams/descr/skillChargeLevel"
+msgstr "Уровень заряда навыка в начале боя"
+
+msgid "comp7_skillDescription/staticParams/descr/stunDurationResist/default"
+msgstr "Уменьшение длительности оглушения машины игрока"
+
+msgid "comp7_skillDescription/staticParams/value/baseHeal/default"
+msgstr "{value}"
+
+msgid "comp7_skillDescription/staticParams/value/bkwSpeedBoost/default"
+msgstr "{value} км/ч"
+
+msgid "comp7_skillDescription/staticParams/value/cooldownSeconds/default"
+msgstr "{value} с"
+
+msgid "comp7_skillDescription/staticParams/value/damageDistance/comp7_berserk"
+msgstr "<{value} м"
+
+msgid "comp7_skillDescription/staticParams/value/damageDistance/comp7_sniper"
+msgstr ">{value} м"
+
+msgid "comp7_skillDescription/staticParams/value/damageDistance/default"
+msgstr "{value}"
+
+msgid "comp7_skillDescription/staticParams/value/delay/default"
+msgstr "{value} с"
+
+msgid "comp7_skillDescription/staticParams/value/dispersionFactor/default"
+msgstr "{value}"
+
+msgid "comp7_skillDescription/staticParams/value/duration/default"
+msgstr "{value} с"
+
+msgid "comp7_skillDescription/staticParams/value/enginePowerBuff/default"
+msgstr "{value}%"
+
+msgid "comp7_skillDescription/staticParams/value/fwdSpeedBoost/default"
+msgstr "{value} км/ч"
+
+msgid "comp7_skillDescription/staticParams/value/gunReloadBoost/default"
+msgstr "{value} c"
+
+msgid "comp7_skillDescription/staticParams/value/gunReloadTimeBuff/default"
+msgstr "{value}%"
+
+msgid "comp7_skillDescription/staticParams/value/healDuration/default"
+msgstr "{value} с"
+
+msgid "comp7_skillDescription/staticParams/value/invisibilityFactor/default"
+msgstr "{value}%"
+
+msgid "comp7_skillDescription/staticParams/value/radius/default"
+msgstr "{value} м"
+
+msgid "comp7_skillDescription/staticParams/value/repairBuff/default"
+msgstr "{value}%"
+
+msgid "comp7_skillDescription/staticParams/value/stunDurationResist/default"
+msgstr "{value}%"
+
 msgid "comp7_sniper/descr/active"
 msgstr ""
 "На наступныя {colorTagOpen}%(duration_1)d/%(duration_2)d/%(duration_3)d с{colorTagClose} параметр гарматы «Роскід на 100 м» будзе роўны {colorTagOpen}%(dispersionFactor).3f м{colorTagClose}.\n"
@@ -827,6 +1184,9 @@ msgstr ""
 msgid "comp7_sniper/name"
 msgstr "Трапны цалок"
 
+msgid "comp7_sniper/shortDescr"
+msgstr "Уменьшение разброса орудия и увеличение урона."
+
 msgid "comp7_sure_shot/descr/active"
 msgstr ""
 "На наступныя {colorTagOpen}%(duration)d с{colorTagClose} памяншае роскід гарматы падчас руху, пры паваротах шасі і вежы на {colorTagOpen}%(shotDispersionFactorsBuff_1).0f/%(shotDispersionFactorsBuff_2).0f/%(shotDispersionFactorsBuff_3).0f%%{colorTagClose}.\n"
@@ -837,6 +1197,11 @@ msgstr ""
 
 msgid "comp7_sure_shot/name"
 msgstr "Надзейны стрэл"
+
+msgid "comp7_sure_shot/shortDescr"
+msgstr ""
+"Уменьшение разброса, а также времени перезарядки при пробитии "
+"или уничтожении машины противника."
 
 msgid "concentration/descr"
 msgstr ""

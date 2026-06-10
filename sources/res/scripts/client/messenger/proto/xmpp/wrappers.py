@@ -2,6 +2,7 @@ from collections import namedtuple
 from constants import IGR_TYPE, ARENA_GUI_TYPE_LABEL
 from gui.shared.utils.decorators import ReprInjector
 from helpers import time_utils
+from messenger import g_settings
 from messenger.proto.entities import ClanInfo
 from messenger.proto.xmpp.gloox_constants import CHAT_STATE
 from messenger.proto.xmpp.xmpp_constants import XMPP_BAN_COMPONENT
@@ -31,7 +32,7 @@ class ChatMessage(object):
 
 ClientInfo = namedtuple('ClientInfo', ('igrID', 'igrRoomID', 'gameHost', 'arenaLabel'))
 _BanInfoItem = namedtuple('_BanInfoItem', ('source', 'setter', 'expiresAt', 'reason',
-                                           'components', 'game'))
+                                           'components', 'game', 'banType'))
 
 @ReprInjector.simple(('_items', 'items'))
 class BanInfo(object):
@@ -55,6 +56,10 @@ class BanInfo(object):
 
     def isBanned(self, game=None, components=None):
         return self.getFirstActiveItem(game=game, components=components) is not None
+
+    @staticmethod
+    def getCurrentGame():
+        return g_settings.server.XMPP.resource
 
 
 ExtsInfo = namedtuple('ExtsInfo', ('dbID', 'nickname', 'client', 'clan', 'ban'))
@@ -99,6 +104,7 @@ def makeBanInfo(*args):
         if len(item) < 6:
             continue
         source, setter, expiresAt, reason, components, game = item[:6]
+        banType = item[6] if len(item) >= 7 else None
         if source.isdigit():
             source = int(source)
         else:
@@ -107,7 +113,7 @@ def makeBanInfo(*args):
             expiresAt = time_utils.getTimestampFromUTC(time_utils.getTimeStructInUTC(float(expiresAt)))
         else:
             expiresAt = 0
-        items.append(_BanInfoItem(source, setter, expiresAt, reason, XMPP_BAN_COMPONENT.fromString(components), game))
+        items.append(_BanInfoItem(source, setter, expiresAt, reason, XMPP_BAN_COMPONENT.fromString(components), game, banType))
 
     if items:
         info = BanInfo(items)

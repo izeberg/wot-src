@@ -1,9 +1,8 @@
 from collections import namedtuple
 from Math import Matrix
 import BigWorld, AnimationSequence
-FlagSettings = namedtuple('FlagSettings', ['flagCompounModel', 'flagAlias',
- 'flagAnim', 'flagBackgroundTex', 'flagEmblemTex',
- 'flagEmblemTexCoords', 'spaceID'])
+FlagSettings = namedtuple('FlagSettings', [
+ 'flagCompounModel', 'flagAlias', 'flagAnim', 'flagBackgroundTex', 'spaceID'])
 
 class FlagModel(object):
     model = property(lambda self: self.__flagCompoundModel)
@@ -23,8 +22,6 @@ class FlagModel(object):
         self.__flagStaffFashion = BigWorld.AlphaFadeCompoundFashion()
         self.__flagFashion = BigWorld.FlagAlphaFadeFashion()
         self.__flagFashion.setColor(color)
-        self.__flagFashion.setFlagBackgroundTexture(flagSettings.flagBackgroundTex)
-        self.__flagFashion.setEmblemTexture(flagSettings.flagEmblemTex, flagSettings.flagEmblemTexCoords)
         translationMatrix = Matrix()
         translationMatrix.setTranslate(position)
         self.__flagFashion.overridePosition(translationMatrix)

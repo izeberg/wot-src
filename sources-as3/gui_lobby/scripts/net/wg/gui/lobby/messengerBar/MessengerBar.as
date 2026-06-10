@@ -19,6 +19,7 @@ package net.wg.gui.lobby.messengerBar
    import net.wg.gui.components.controls.universalBtn.UniversalBtn;
    import net.wg.gui.events.MessengerBarEvent;
    import net.wg.gui.lobby.messengerBar.carousel.ChannelCarousel;
+   import net.wg.gui.lobby.messengerBar.carousel.data.IToolTipData;
    import net.wg.gui.lobby.vehicleCompare.controls.VehicleCompareAnim;
    import net.wg.gui.lobby.vehicleCompare.data.VehicleCompareAnimVO;
    import net.wg.infrastructure.base.meta.IMessengerBarMeta;
@@ -192,7 +193,11 @@ package net.wg.gui.lobby.messengerBar
          registerFlashComponentS(this.channelCarousel,Aliases.CHANNEL_CAROUSEL);
          registerFlashComponentS(this.sessionStatsBtn,SESSION_STATS_CONSTANTS.SESSION_STATS_BUTTON_ALIAS);
          this.channelButton.addEventListener(ButtonEvent.CLICK,this.onChannelButtonClickHandler);
+         this.channelButton.addEventListener(MouseEvent.MOUSE_OVER,this.onChannelButtonMouseOverHandler);
+         this.channelButton.addEventListener(MouseEvent.MOUSE_OUT,this.onChannelButtonMouseOutHandler);
          this.contactsListBtn.addEventListener(ButtonEvent.CLICK,this.onContactsButtonClickHandler);
+         this.contactsListBtn.addEventListener(MouseEvent.MOUSE_OVER,this.onContactsButtonMouseOverHandler);
+         this.contactsListBtn.addEventListener(MouseEvent.MOUSE_OUT,this.onContactsButtonMouseOutHandler);
          this.referralBtn.addEventListener(ButtonEvent.CLICK,this.onReferralButtonClickHandler);
          this.vehicleCompareCartBtn.addEventListener(ButtonEvent.CLICK,this.onVehicleCmpBtnClickHandler);
          this.sessionStatsBtn.visible = this._sessionStatsBtnVisible;
@@ -212,6 +217,11 @@ package net.wg.gui.lobby.messengerBar
          this.channelButton.removeEventListener(ButtonEvent.CLICK,this.onChannelButtonClickHandler);
          this.referralBtn.removeEventListener(ButtonEvent.CLICK,this.onReferralButtonClickHandler);
          this.contactsListBtn.removeEventListener(ButtonEvent.CLICK,this.onContactsButtonClickHandler);
+         this.contactsListBtn.removeEventListener(MouseEvent.MOUSE_OVER,this.onContactsButtonMouseOverHandler);
+         this.contactsListBtn.removeEventListener(MouseEvent.MOUSE_OUT,this.onContactsButtonMouseOutHandler);
+         this.channelButton.removeEventListener(ButtonEvent.CLICK,this.onChannelButtonClickHandler);
+         this.channelButton.removeEventListener(MouseEvent.MOUSE_OVER,this.onChannelButtonMouseOverHandler);
+         this.channelButton.removeEventListener(MouseEvent.MOUSE_OUT,this.onChannelButtonMouseOutHandler);
          this.vehicleCompareCartBtn.removeEventListener(ButtonEvent.CLICK,this.onVehicleCmpBtnClickHandler);
          this.sessionStatsBtn.removeEventListener(ButtonEvent.CLICK,this.onSessionStatsBtnClickHandler);
          App.stage.removeEventListener(MessengerBarEvent.PIN_CHANNELS_WINDOW,this.onStagePinChannelsWindowHandler);
@@ -256,8 +266,6 @@ package net.wg.gui.lobby.messengerBar
          this.animPlacer.mouseChildren = false;
          var _loc1_:Boolean = App.globalVarsMgr.isInRoamingS();
          App.utils.universalBtnStyles.setStyle(this.channelButton,UniversalBtnStylesConst.STYLE_HEAVY_CRYSTAL);
-         this.channelButton.enabled = !_loc1_;
-         this.channelButton.tooltip = TOOLTIPS.LOBY_MESSENGER_CHANNELS_BUTTON;
          this.channelButton.useHtmlText = true;
          this.channelButton.disabledFillPadding = this.sessionStatsBtn.disabledFillPadding = this.vehicleCompareCartBtn.disabledFillPadding = this.contactsListBtn.disabledFillPadding = BUTTON_DISABLED_FILL_PADDING;
          this.channelButton.soundId = this.sessionStatsBtn.soundId = this.vehicleCompareCartBtn.soundId = this.contactsListBtn.soundId = BUTTON_SOUND_ID;
@@ -280,15 +288,22 @@ package net.wg.gui.lobby.messengerBar
       
       override protected function draw() : void
       {
-         var _loc1_:int = 0;
+         var _loc1_:Boolean = false;
+         var _loc2_:int = 0;
          super.draw();
          if(this._initData)
          {
             if(isInvalid(InvalidationType.DATA))
             {
                this.channelButton.iconSource = this._initData.channelsHtmlIcon;
+               _loc1_ = App.globalVarsMgr.isInRoamingS();
+               this.channelButton.enabled = !_loc1_ && !this._initData.channelsLocked;
+               this.channelButton.tooltip = Boolean(this._initData.channelsTooltipDataVO) ? null : TOOLTIPS.LOBY_MESSENGER_CHANNELS_BUTTON;
+               this.channelButton.mouseEnabledOnDisabled = this._initData.channelsLocked;
                this.contactsListBtn.iconSource = this._initData.contactsHtmlIcon;
-               this.contactsListBtn.tooltip = this._initData.contactsTooltip;
+               this.contactsListBtn.tooltip = Boolean(this._initData.contactsTooltipDataVO) ? null : this._initData.contactsTooltip;
+               this.contactsListBtn.enabled = !this._initData.contactsLocked;
+               this.contactsListBtn.button.mouseEnabledOnDisabled = this._initData.contactsLocked;
                this.vehicleCompareCartBtn.iconSource = this._initData.vehicleCompareHtmlIcon;
                this.vehicleCompareCartBtn.tooltip = this._initData.vehicleCompareTooltip;
                this.sessionStatsBtn.iconSource = this._initData.sessionStatsHtmlIcon;
@@ -344,17 +359,17 @@ package net.wg.gui.lobby.messengerBar
          if(isInvalid(InvalidationType.SIZE))
          {
             constraints.update(_width,_height);
-            _loc1_ = 0;
-            _loc1_ = (!!this.referralBtn.visible ? this.referralBtn.x + this.referralBtn.width : this.contactsListBtn.x + this.contactsListBtn.width) + BUTTONS_OFFSET_X;
+            _loc2_ = 0;
+            _loc2_ = (!!this.referralBtn.visible ? this.referralBtn.x + this.referralBtn.width : this.contactsListBtn.x + this.contactsListBtn.width) + BUTTONS_OFFSET_X;
             if(this.channelButton.visible)
             {
-               this.channelButton.x = _loc1_;
+               this.channelButton.x = _loc2_;
                this.fakeChnlBtn.x = this.channelButton.x;
                this.channelCarousel.x = this.channelButton.x + this.channelButton.width;
             }
             else
             {
-               this.channelCarousel.x = _loc1_;
+               this.channelCarousel.x = _loc2_;
             }
          }
          if(isInvalid(INV_VEHICLE_CMP_VISIBLE))
@@ -404,23 +419,6 @@ package net.wg.gui.lobby.messengerBar
          this._anim.x = -this._anim.width >> 1;
          this.animPlacer.visible = true;
          this._anim.play();
-      }
-      
-      override public function set visible(param1:Boolean) : void
-      {
-         super.visible = param1;
-         if(!this.isDAAPIInited)
-         {
-            return;
-         }
-         if(param1)
-         {
-            App.graphicsOptimizationMgr.register(this);
-         }
-         else
-         {
-            App.graphicsOptimizationMgr.unregister(this);
-         }
       }
       
       public function as_openVehicleCompareCartPopover(param1:Boolean) : void
@@ -655,6 +653,18 @@ package net.wg.gui.lobby.messengerBar
          invalidate(LAYOUT_INVALID);
       }
       
+      private function showTooltip(param1:IToolTipData) : void
+      {
+         if(param1.isWulfTooltip)
+         {
+            App.toolTipMgr.showWulfTooltip.apply(App.toolTipMgr,[param1.tooltipId].concat(param1.tooltipArgs));
+         }
+         else
+         {
+            App.toolTipMgr.showComplex(param1.tooltipId);
+         }
+      }
+      
       private function onReferralButtonClickHandler(param1:ButtonEvent) : void
       {
          referralButtonClickS();
@@ -665,9 +675,35 @@ package net.wg.gui.lobby.messengerBar
          channelButtonClickS();
       }
       
+      private function onChannelButtonMouseOverHandler(param1:MouseEvent) : void
+      {
+         if(this._initData.channelsTooltipDataVO)
+         {
+            this.showTooltip(this._initData.channelsTooltipDataVO);
+         }
+      }
+      
+      private function onChannelButtonMouseOutHandler(param1:MouseEvent) : void
+      {
+         App.toolTipMgr.hide();
+      }
+      
       private function onContactsButtonClickHandler(param1:ButtonEvent) : void
       {
          App.popoverMgr.show(this.contactsListBtn,CONTACTS_ALIASES.CONTACTS_POPOVER);
+      }
+      
+      private function onContactsButtonMouseOverHandler(param1:MouseEvent) : void
+      {
+         if(this._initData.contactsTooltipDataVO)
+         {
+            this.showTooltip(this._initData.contactsTooltipDataVO);
+         }
+      }
+      
+      private function onContactsButtonMouseOutHandler(param1:MouseEvent) : void
+      {
+         App.toolTipMgr.hide();
       }
       
       private function onVehicleCmpBtnClickHandler(param1:ButtonEvent) : void

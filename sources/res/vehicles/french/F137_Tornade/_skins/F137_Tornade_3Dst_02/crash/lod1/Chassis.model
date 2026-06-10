@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F137_Tornade/crash/lod1/Chassis</nodefullVisual>
+	<parent>vehicles/french/F137_Tornade/_skins/F137_Tornade_3Dst_02/crash/lod2/Chassis</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.596265 -0.000057 -3.520495</min>
+		<max>1.596265 1.170628 3.770460</max>
+	</visibilityBox>
+</root>

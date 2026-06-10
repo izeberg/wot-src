@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/american/A172_ASTRON_FL/_skins/A172_ASTRON_FL_3Dst_Solar_Strike/crash/lod2/Turret_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.508728 -0.008326 -3.211435</min>
+		<max>1.505093 1.713641 1.840670</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/american/A172_ASTRON_FL/_skins/A172_ASTRON_FL_3Dst_Solar_Strike/crash/lod1/Turret_01</nodefullVisual>
+</root>

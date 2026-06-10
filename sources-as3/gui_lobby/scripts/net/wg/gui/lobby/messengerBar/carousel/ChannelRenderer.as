@@ -2,6 +2,7 @@ package net.wg.gui.lobby.messengerBar.carousel
 {
    import flash.events.MouseEvent;
    import net.wg.data.constants.generated.CONTEXT_MENU_HANDLER_TYPE;
+   import net.wg.data.constants.generated.TEXT_ALIGN;
    import net.wg.gui.components.controls.CloseButton;
    import scaleform.clik.constants.InvalidationType;
    import scaleform.clik.events.ButtonEvent;
@@ -12,6 +13,10 @@ package net.wg.gui.lobby.messengerBar.carousel
    {
       
       private static const CLOSE_BTN_PADDING:uint = 23;
+      
+      private static const ICON_LOCK_PADDING_TOP:uint = 2;
+      
+      private static const ICON_LOCK_PADDING_RIGHT:uint = 8;
        
       
       public var closeButton:CloseButton = null;
@@ -51,7 +56,20 @@ package net.wg.gui.lobby.messengerBar.carousel
       {
          var _loc1_:Boolean = false;
          super.applyData();
+         openButton.enabled = !channelListData.isLocked;
+         if(channelListData.isLocked)
+         {
+            openButton.iconAlign = TEXT_ALIGN.RIGHT;
+            openButton.iconOffsetTop = ICON_LOCK_PADDING_TOP;
+            openButton.iconOffsetRight = ICON_LOCK_PADDING_RIGHT | 0;
+         }
+         else
+         {
+            openButton.iconAlign = TEXT_ALIGN.LEFT;
+            openButton.iconOffsetTop = 0;
+         }
          openButton.iconSource = channelListData.icon;
+         openButton.label = channelListData.label;
          _loc1_ = channelListData.canClose;
          this.closeButton.visible = _loc1_;
          var _loc2_:Padding = DEFAULT_TF_PADDING;

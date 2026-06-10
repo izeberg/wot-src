@@ -449,6 +449,20 @@ package
       
       public static const SEASONSPROGRESSION_STAGETEXT_AVAILABLESOON:String = "#paragons:seasonsProgression/stageText/availableSoon";
       
+      public static const SEASONSPROGRESSION_TIMELEFT_TIMETEXT:String = "#paragons:seasonsProgression/timeLeft/timeText";
+      
+      public static const SEASONSPROGRESSION_TIMELEFT_SHORTTIMETEXT:String = "#paragons:seasonsProgression/timeLeft/shortTimeText";
+      
+      public static const SEASONSPROGRESSION_TIMELEFT_HOUR:String = "#paragons:seasonsProgression/timeLeft/hour";
+      
+      public static const SEASONSPROGRESSION_TIMELEFT_HOURS:String = "#paragons:seasonsProgression/timeLeft/hours";
+      
+      public static const SEASONSPROGRESSION_TIMELEFT_MINUTES:String = "#paragons:seasonsProgression/timeLeft/minutes";
+      
+      public static const SEASONSPROGRESSION_TIMELEFT_LESSONEMIN:String = "#paragons:seasonsProgression/timeLeft/lessOneMin";
+      
+      public static const SEASONSPROGRESSION_TIMELEFT_TIMEMESSAGE:String = "#paragons:seasonsProgression/timeLeft/timeMessage";
+      
       public static const SEASONSPROGRESSION_TOOLTIP_HEADER_DEFAULT:String = "#paragons:seasonsProgression/tooltip/header/default";
       
       public static const SEASONSPROGRESSION_TOOLTIP_HEADER_DISABLED:String = "#paragons:seasonsProgression/tooltip/header/disabled";
@@ -484,6 +498,8 @@ package
       public static const SEASONSPROGRESSION_SEASONCARD_TOOLTIP_FINISHEDSTATE_DESCRIPTION:String = "#paragons:seasonsProgression/seasonCard/tooltip/finishedState/description";
       
       public static const SEASONSPROGRESSION_SEASONCARD_TOOLTIP_FINISHEDHASREWARDSSTATE_DESCRIPTION:String = "#paragons:seasonsProgression/seasonCard/tooltip/finishedHasRewardsState/description";
+      
+      public static const SEASONSPROGRESSION_SEASONCARD_TOOLTIP_FINISHEDHASREWARDSSTATE_TIMEMESSAGE:String = "#paragons:seasonsProgression/seasonCard/tooltip/finishedHasRewardsState/timeMessage";
       
       public static const SEASONSPROGRESSION_SEASONCARD_TOOLTIP_ANNOUNCEMENTSTATE_TITLE:String = "#paragons:seasonsProgression/seasonCard/tooltip/announcementState/title";
       

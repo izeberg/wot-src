@@ -913,9 +913,6 @@ msgstr "Купіць"
 msgid "boostersWindow/boostersTableRenderer/goToQuestBtnLabel"
 msgstr "Перайсці да задачы"
 
-msgid "boostersWindow/boostersTableRenderer/header"
-msgstr "%(boosterName)s %(quality)s"
-
 msgid "boostersWindow/boostersTableRenderer/questForOpen"
 msgstr "Каб атрымаць асабісты рэзерв, выканайце «%(questName)s»"
 
@@ -1110,9 +1107,6 @@ msgstr "Стварыць звяз для Лініі фронту"
 
 msgid "contextMenu/createEventSquad"
 msgstr "Стварыць звяз падзеі"
-
-msgid "contextMenu/createHistoricalBattleSquad"
-msgstr "Взвод события «Время героев»"
 
 msgid "contextMenu/createMapboxSquad"
 msgstr "Разведка боем: стварыць звяз"
@@ -2683,9 +2677,6 @@ msgstr "Рамонт"
 msgid "hangar/ammunitionPanel/technicalMaitenance/title"
 msgstr "Абслугоўванне"
 
-msgid "hangar/ammunitionPanel/trophyVehicle"
-msgstr "(трофей)"
-
 msgid "hangar/ammunitionPanel/tuningBtn"
 msgstr "Выгляд"
 
@@ -2980,9 +2971,6 @@ msgstr "Лёгкі танк"
 
 msgid "header/wotPlusExclusiveVehicleType/mediumTank"
 msgstr "Сярэдні танк"
-
-msgid "headerButton/museum"
-msgstr "Музей"
 
 msgid "headerButtons/account/accountRefill"
 msgstr "Купіць золата"

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F142_Projet_Louis_FL10_90/normal/lod0/Hatch_anim_01</nodefullVisual>
+	<visibilityBox>
+		<min>-0.139433 -0.139068 1.333039</min>
+		<max>0.120933 0.080863 1.616380</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/french/F142_Projet_Louis_FL10_90/normal/lod1/Hatch_anim_01</parent>
+	<extent>32.000000</extent>
+</root>

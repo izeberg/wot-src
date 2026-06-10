@@ -2,6 +2,12 @@ import logging
 __all__ = ('getClientServicesConfig', )
 _logger = logging.getLogger(__name__)
 
+def getOfflineClientServicesConfig(manager):
+    import connection_mgr
+    from skeletons.connection_mgr import IConnectionManager
+    manager.addInstance(IConnectionManager, connection_mgr.ConnectionManager(), finalizer='fini')
+
+
 def getClientServicesConfig(manager):
     import account_helpers, connection_mgr, MapActivities, dyn_objects_cache, gui, gameplay, helpers, uilogging, festivity, AvatarInputHandler
     from vehicle_systems.appearance_cache import AppearanceCache

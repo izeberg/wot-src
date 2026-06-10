@@ -16,7 +16,7 @@
 			<waitingMessage>festival/hangarLoading</waitingMessage>
 		</FESTIVAL>
 		<DEFAULT>
-			<space>h01_victory_day_2026</space>
+			<space>h08_mt_hangar</space>
 		</DEFAULT>
 		<COMP7>
 			<space>h33_comp7</space>
@@ -28,9 +28,5 @@
 			<space>h00_armory_yard</space>
 			<customEventMode>True</customEventMode>
 		</ARMORY_YARD>
-		<MUSEUM_OF_GLORY>
-			<space>h16_mt_museum</space>
-			<customEventMode>True</customEventMode>
-		</MUSEUM_OF_GLORY>
 	</hangar_scene_spaces>
 </root>

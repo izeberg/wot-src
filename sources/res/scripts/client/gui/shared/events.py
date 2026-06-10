@@ -43,7 +43,6 @@ class GameEvent(HasCtxEvent):
     SHOW_EXTENDED_INFO = 'game/showExtendedInfo'
     CHOICE_CONSUMABLE = 'game/choiceConsumable'
     MINIMAP_CMD = 'game/minimapCmd'
-    FULL_MAP_CMD = 'game/fullMapCmd'
     RADIAL_MENU_CMD = 'game/radialMenuCmd'
     TOGGLE_GUI = 'game/toggleGUI'
     GUI_VISIBILITY = 'game/guiVisibility'
@@ -313,7 +312,6 @@ class LobbySimpleEvent(HasCtxEvent):
     ENTITY_TOOLTIP_SHOW = 'entityTooltipShow'
     ENTITY_TOOLTIP_HIDE = 'entityTooltipHide'
     HANGAR_STATUS_CHANGED = 'hangarStatusChanged'
-    ON_GET_VISIBILITY_MENU_STATE = 'onGetVisibilityMenuState'
 
 
 class MissionsEvent(HasCtxEvent):
@@ -372,10 +370,6 @@ class LobbyHeaderEvent(LobbySimpleEvent):
 class LobbyHeaderMenuEvent(LobbySimpleEvent):
     TOGGLE_VISIBILITY = 'toggleVisibilityHeaderMenu'
     MENU_CLICK = 'headerMenuClick'
-
-
-class LobbyInterfaceEvent(LobbySimpleEvent):
-    TOGGLE_VISIBILITY = 'toggleVisibilityHeader'
 
 
 class ReferralViewEvent(HasCtxEvent):
@@ -651,8 +645,6 @@ class HangarVehicleEvent(HasCtxEvent):
     PLATOON_TANK_MARKER = 'hangarVehicle/platoonTankMarker'
     SELECT_VEHICLE_IN_HANGAR = 'hangarVehicle/selectVehicleInHangar'
     BOOTCAMP_SECOND_TANK_MARKER = 'hangarVehicle/bootcampSecondTankMarker'
-    ON_HB_TANK_LOADED = 'hangarVehicle/onHBTankLoaded'
-    ON_HB_TANK_DESTROY = 'hangarVehicle/onHBTankDestroy'
 
 
 class ManualEvent(HasCtxEvent):
@@ -885,3 +877,7 @@ class LobbyMarkersManagerEvent(HasCtxEvent):
 class RespawnViewEvent(SharedEvent):
     ON_RESPAWN_VIEW_SHOW = 'ON_RESPAWN_VIEW_SHOW'
     ON_RESPAWN_VIEW_HIDE = 'ON_RESPAWN_VIEW_HIDE'
+
+
+class SummerSaleViewEvent(SharedEvent):
+    ON_CLOSE_REWARD_VIEW = 'ON_CLOSE_REWARD_VIEW'

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/italy/It35_Gladiatore/crash/lod2/Turret_01</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<nodefullVisual>vehicles/italy/It35_Gladiatore/crash/lod1/Turret_01</nodefullVisual>
+	<visibilityBox>
+		<min>-1.430031 -0.000004 -2.315306</min>
+		<max>1.430030 1.273609 1.625806</max>
+	</visibilityBox>
+</root>

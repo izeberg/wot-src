@@ -90,6 +90,7 @@
 			</teamBasePositions>
 		</maps_training>
 		<assault2>
+			<minimap>spaces/01_karelia/mmap_comp7.dds</minimap>
 			<winnerIfTimeout>1</winnerIfTimeout>
 			<winnerIfExtermination>1</winnerIfExtermination>
 			<teamSpawnPoints>
@@ -109,6 +110,7 @@
 			</teamBasePositions>
 		</assault2>
 		<comp7>
+			<minimap>spaces/01_karelia/mmap_comp7.dds</minimap>
 			<winnerIfTimeout>1</winnerIfTimeout>
 			<winnerIfExtermination>1</winnerIfExtermination>
 			<teamSpawnPoints>

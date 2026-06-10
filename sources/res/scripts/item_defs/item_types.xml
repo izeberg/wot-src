@@ -165,13 +165,13 @@
 			<t34_disclaimer/>
 			<comp7/>
 			<restoreWithStyle/>
+			<builtinStyle/>
 			<hidden_in_hangar/>
 			<noCrewTransferPenalty/>
 			<wotPlus/>
 			<rentEligible/>
 			<bot_hunter/>
 			<debutBoxes/>
-			<notInShop/>
 			<preferential/>
 		</tags>
 	</vehicle>
@@ -306,9 +306,6 @@
 			<additInvisibilityDevice/>
 			<commandersView/>
 			<notBuyWhenAutoEquip/>
-			<hb_ability/>
-			<hb_passive_ability/>
-			<hb_roleAbility/>
 			<repairKitBattleRoyale/>
 			<advancedLogging/>
 			<hideIfNotInShop/>
@@ -388,7 +385,7 @@
 			<offspringArenaMusic/>
 			<sabatonArenaMusic/>
 			<ariaArenaMusic/>
-			<event_battles/>
+			<cannot_be_sold/>
 		</tags>
 	</customizationItem>
 	<crewSkin>

@@ -95,7 +95,7 @@
 					</property>
 					<property>
 						alphaReference
-						<Int>64</Int>
+						<Int>0</Int>
 					</property>
 					<property>
 						g_detailPowerAlbedo
@@ -113,6 +113,6 @@
 		<min>-1.335811 -0.026523 -1.939715</min>
 		<max>1.335811 1.157092 1.613964</max>
 	</boundingBox>
-	<geometrySize>73370</geometrySize>
+	<geometrySize>73784</geometrySize>
 	<minUVDensity>0.009711</minUVDensity>
 </root>

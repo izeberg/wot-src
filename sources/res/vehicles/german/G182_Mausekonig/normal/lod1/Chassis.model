@@ -3,8 +3,8 @@
 	<parent>vehicles/german/G182_Mausekonig/normal/lod2/Chassis</parent>
 	<extent>64.000000</extent>
 	<visibilityBox>
-		<min>-2.197191 -0.000074 -4.854267</min>
-		<max>2.197191 1.281253 4.836025</max>
+		<min>-2.325443 0.000236 -4.845617</min>
+		<max>2.325443 1.304310 4.836025</max>
 	</visibilityBox>
 	<tank>true</tank>
 	<nodefullVisual>vehicles/german/G182_Mausekonig/normal/lod1/Chassis</nodefullVisual>

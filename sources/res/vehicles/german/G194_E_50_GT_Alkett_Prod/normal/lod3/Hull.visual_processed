@@ -132,6 +132,10 @@
 						</Float>
 					</property>
 					<property>
+						alphaTestEnable
+						<Bool>false</Bool>
+					</property>
+					<property>
 						g_maskBias
 						<Float>
 							0.18
@@ -140,7 +144,10 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>7.014000 7.014000 0.000000 0.000000</Vector4>
+						<Vector4>
+							7.014 7.014 0.0 0.0
+							<!--BW_String-->
+						</Vector4>
 					</property>
 					<property>
 						g_detailPower
@@ -159,6 +166,10 @@
 						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
 					<property>
+						alphaReference
+						<Int>0</Int>
+					</property>
+					<property>
 						g_detailPowerAlbedo
 						<Float>
 							0.11
@@ -174,6 +185,6 @@
 		<min>-1.940402 -0.695990 -3.935709</min>
 		<max>1.940402 0.780486 3.479235</max>
 	</boundingBox>
-	<geometrySize>71038</geometrySize>
+	<geometrySize>70646</geometrySize>
 	<minUVDensity>0.003126</minUVDensity>
 </root>

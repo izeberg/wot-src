@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/american/A172_ASTRON_FL/_skins/A172_ASTRON_FL_3Dst_Solar_Strike/crash/lod4/Gun_01</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-0.345000 -0.253240 0.023971</min>
+		<max>0.345000 0.362397 4.989325</max>
+	</visibilityBox>
+	<nodelessVisual>vehicles/american/A172_ASTRON_FL/_skins/A172_ASTRON_FL_3Dst_Solar_Strike/crash/lod3/Gun_01</nodelessVisual>
+</root>

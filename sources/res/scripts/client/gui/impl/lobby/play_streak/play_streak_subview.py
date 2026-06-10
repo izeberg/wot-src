@@ -114,45 +114,46 @@ class PlayStreakSubView(PlayStreakSubViewBase):
             self._updateModel(tx)
 
     def _updateModel(self, model):
-        with model.transaction() as (tx):
-            tx.setStreakLength(self.__playStreakController.getStreakProgress())
-            self.__setIsFirstAppearance(model=tx)
-            tx.setSkipDayCount(self.__playStreakController.getSkipDayCount())
-            tx.setDailyWin(self.itemsCache.items.playStreak.getDailyConditionCompleted())
-            tx.setIsPaused(self.lobbyContext.getServerSettings().playStreakConfig.isPaused)
-            tx.setRedemptionDayCount(self.itemsCache.items.playStreak.getRedemptionDay())
-            tx.setIsBlocked(self.__playStreakController.getIsBlocked())
-            tx.setRedemptionMaxDayCount(self.lobbyContext.getServerSettings().playStreakConfig.daySkipSettings.get('freezeModeLength'))
-            tx.setIsEnabled(self.lobbyContext.getServerSettings().playStreakConfig.isEnabled)
-            modelBattleTypes = tx.getBattleTypes()
-            modelBattleTypes.clear()
-            modelBattleTypes.reserve(len(self.__playStreakController.getBattleTypes()))
-            for battleType in self.__playStreakController.getBattleTypes():
-                modelBattleTypes.addNumber(battleType)
+        if self.lobbyContext.getServerSettings().playStreakConfig.isEnabled:
+            with model.transaction() as (tx):
+                tx.setStreakLength(self.__playStreakController.getStreakProgress())
+                self.__setIsFirstAppearance(model=tx)
+                tx.setSkipDayCount(self.__playStreakController.getSkipDayCount())
+                tx.setDailyWin(self.itemsCache.items.playStreak.getDailyConditionCompleted())
+                tx.setIsPaused(self.lobbyContext.getServerSettings().playStreakConfig.isPaused)
+                tx.setRedemptionDayCount(self.itemsCache.items.playStreak.getRedemptionDay())
+                tx.setIsBlocked(self.__playStreakController.getIsBlocked())
+                tx.setRedemptionMaxDayCount(self.lobbyContext.getServerSettings().playStreakConfig.daySkipSettings.get('freezeModeLength'))
+                tx.setIsEnabled(self.lobbyContext.getServerSettings().playStreakConfig.isEnabled)
+                modelBattleTypes = tx.getBattleTypes()
+                modelBattleTypes.clear()
+                modelBattleTypes.reserve(len(self.__playStreakController.getBattleTypes()))
+                for battleType in self.__playStreakController.getBattleTypes():
+                    modelBattleTypes.addNumber(battleType)
 
-            modelBattleTypes.invalidate()
-            rewardsCalendar = self.__playStreakController.getRewardsCalendar()
-            calendarArray = tx.getRewardsCalendar()
-            calendarArray.clear()
-            for day, bonuses, tags, additionalInfo in rewardsCalendar:
-                calendarItemModel = tx.getRewardsCalendarType()()
-                calendarItemModel.setDay(day)
-                bonusArray = calendarItemModel.getRewards()
-                bonusArray.reserve(len(bonuses))
-                tagArray = calendarItemModel.getTags()
-                tagArray.reserve(len(tags))
-                additionalInfoArray = calendarItemModel.getAdditionalInfo()
-                additionalInfoArray.reserve(len(tags))
-                for tag in tags:
-                    tagArray.addString(tag)
+                modelBattleTypes.invalidate()
+                rewardsCalendar = self.__playStreakController.getRewardsCalendar()
+                calendarArray = tx.getRewardsCalendar()
+                calendarArray.clear()
+                for day, bonuses, tags, additionalInfo in rewardsCalendar:
+                    calendarItemModel = tx.getRewardsCalendarType()()
+                    calendarItemModel.setDay(day)
+                    bonusArray = calendarItemModel.getRewards()
+                    bonusArray.reserve(len(bonuses))
+                    tagArray = calendarItemModel.getTags()
+                    tagArray.reserve(len(tags))
+                    additionalInfoArray = calendarItemModel.getAdditionalInfo()
+                    additionalInfoArray.reserve(len(tags))
+                    for tag in tags:
+                        tagArray.addString(tag)
 
-                for info in additionalInfo:
-                    additionalInfoArray.addString(str(info))
+                    for info in additionalInfo:
+                        additionalInfoArray.addString(str(info))
 
-                packBonusModelAndTooltipData(bonuses, bonusArray, self.__tooltipData, getPlayStreakBonusPacker())
-                calendarArray.addViewModel(calendarItemModel)
+                    packBonusModelAndTooltipData(bonuses, bonusArray, self.__tooltipData, getPlayStreakBonusPacker())
+                    calendarArray.addViewModel(calendarItemModel)
 
-            calendarArray.invalidate()
+                calendarArray.invalidate()
 
     def _onSyncCompleted(self, *_):
         with self.viewModel.transaction() as (tx):

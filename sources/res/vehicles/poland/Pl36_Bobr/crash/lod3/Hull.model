@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/poland/Pl36_Bobr/crash/lod3/Hull</nodefullVisual>
+	<parent>vehicles/poland/Pl36_Bobr/crash/lod4/Hull</parent>
+	<tank>true</tank>
+	<extent>
+		192.0
+		<!--BW_String-->
+	</extent>
+	<visibilityBox>
+		<min>-1.584871 -1.297817 -3.036101</min>
+		<max>1.584301 0.572648 2.917188</max>
+	</visibilityBox>
+</root>
