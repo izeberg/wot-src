@@ -309,6 +309,9 @@ msgstr "宿命使然"
 msgid "chapter/fullName/203"
 msgstr "沙漠号令"
 
+msgid "chapter/fullName/204"
+msgstr "毁灭公爵"
+
 msgid "chapter/fullNameUppercased/10021"
 msgstr "猎牛之歌"
 
@@ -323,6 +326,9 @@ msgstr "宿命使然"
 
 msgid "chapter/fullNameUppercased/203"
 msgstr "沙漠号令"
+
+msgid "chapter/fullNameUppercased/204"
+msgstr "毁灭公爵"
 
 msgid "chapter/title"
 msgstr "章节%(chapter)s"
@@ -795,10 +801,10 @@ msgid "postProgressionView/footer/description/text"
 msgstr "完成所有章节后开放。已完成章节: %(completedChapters)/%(chaptersAmount)"
 
 msgid "postProgressionView/footer/extraChapter/description/text"
-msgstr "投身其中，获取专属奖励和独特个性化元素。"
+msgstr "乘员、附带3D风格的坦克，以及其他好物等待着您。好极了！"
 
 msgid "postProgressionView/footer/extraChapter/title/text"
-msgstr "特殊章节来了！"
+msgstr "毁灭公爵来了！"
 
 msgid "postProgressionView/footer/purchaseIP/banner/text"
 msgstr "购买高级通行证，获取更多奖励！"
@@ -1229,14 +1235,8 @@ msgstr "通过特殊礼包获取"
 msgid "tankmenVoiceover/listen"
 msgstr "试听"
 
-msgid "tankmenVoiceover/notFull"
-msgstr "开放获取: %(availableCount)s/%(count)s"
-
 msgid "tankmenVoiceover/progression"
 msgstr "完成进度阶段%(progressionLevel)s时获得"
-
-msgid "tankmenVoiceover/received"
-msgstr "已获得"
 
 msgid "tankmenVoiceover/shopButton"
 msgstr "前往购买"
