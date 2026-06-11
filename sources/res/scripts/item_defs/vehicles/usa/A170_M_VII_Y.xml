@@ -16,11 +16,11 @@
 	</speedLimits>
 	<invisibility>
 		<moving>
-			0.025
+			0.022
 			<!--BW_String-->
 		</moving>
 		<still>
-			0.049
+			0.045
 			<!--BW_String-->
 		</still>
 		<camouflageBonus>
@@ -28,7 +28,7 @@
 			<!--BW_String-->
 		</camouflageBonus>
 		<firePenalty>
-			0.074
+			0.067
 			<!--BW_String-->
 		</firePenalty>
 	</invisibility>
@@ -123,7 +123,7 @@
 				<!--BW_String-->
 			</armor_19>
 			<armor_22>
-				120.7
+				146.1
 				<!--BW_String-->
 			</armor_22>
 			<armor_24>
@@ -3865,6 +3865,10 @@
 					323.9
 					<!--BW_String-->
 				</armor_1>
+				<armor_2>
+					266.7
+					<!--BW_String-->
+				</armor_2>
 				<armor_4>
 					279.4
 					<!--BW_String-->
@@ -3983,7 +3987,7 @@
 				<maxRegenHealth>85</maxRegenHealth>
 				<repairCost>9</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>380</circularVisionRadius>
+			<circularVisionRadius>390</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>110</maxHealth>
 				<maxRegenHealth>55</maxRegenHealth>
@@ -3998,12 +4002,12 @@
 					<maxAmmo>40</maxAmmo>
 					<armor>
 						<armor_1>
-							247.7
+							317.5
 							<!--BW_String-->
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_1>
 						<armor_2>
-							222.3
+							292.1
 							<!--BW_String-->
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_2>
@@ -4027,7 +4031,7 @@
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_6>
 						<armor_7>
-							209.6
+							260.4
 							<!--BW_String-->
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_7>
@@ -4046,7 +4050,7 @@
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						10.2
+						9.7
 						<!--BW_String-->
 					</reloadTime>
 					<shotDispersionFactors>
@@ -4063,12 +4067,9 @@
 							<!--BW_String-->
 						</whileGunDamaged>
 					</shotDispersionFactors>
-					<aimingTime>
-						2.2
-						<!--BW_String-->
-					</aimingTime>
+					<aimingTime>2</aimingTime>
 					<invisibilityFactorAtShot>
-						0.18
+						0.19
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<customizationSlots>
