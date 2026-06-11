@@ -53,8 +53,6 @@ class ChatProvider(ClientHolder):
             return
         else:
             dbID = jid.getDatabaseID()
-            if not dbID:
-                return
             if not self.__canSend(dbID, exists):
                 error = createChatBanError(self.playerCtx.getBanInfo())
                 if error:
@@ -114,6 +112,8 @@ class ChatProvider(ClientHolder):
         else:
             banItem = banInfo.getFirstActiveItem(game=banInfo.getCurrentGame(), components=exists.getBanComponent())
             if banItem is None:
+                return True
+            if dbID == 0:
                 return True
             if banItem.banType != NOVICE_RESTRICTIONS_BAN_TYPE:
                 return False
