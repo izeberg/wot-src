@@ -15,6 +15,14 @@
 		<tmanToken>
 			<priority>110</priority>
 			<bigIcon>Standard</bigIcon>
+			<override>
+				<id>tankmen_bp17_5</id>
+				<priority>111</priority>
+			</override>
+			<override>
+				<id>tankmen_bp17_6</id>
+				<priority>110</priority>
+			</override>
 		</tmanToken>
 		<battlePassQuestChainToken>
 			<priority>100</priority>

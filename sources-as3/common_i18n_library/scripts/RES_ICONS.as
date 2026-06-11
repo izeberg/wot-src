@@ -9845,6 +9845,8 @@ package
       
       public static const MAPS_ICONS_BATTLEPASS_BACKGROUNDS_CHAPTER_CHOICE_C_203:String = "../maps/icons/battlePass/backgrounds/chapter_choice/c_203.png";
       
+      public static const MAPS_ICONS_BATTLEPASS_BACKGROUNDS_CHAPTER_CHOICE_C_204:String = "../maps/icons/battlePass/backgrounds/chapter_choice/c_204.png";
+      
       public static const MAPS_ICONS_BATTLEPASS_BACKGROUNDS_CHAPTER_CHOICE_DEFAULT_0:String = "../maps/icons/battlePass/backgrounds/chapter_choice/default_0.png";
       
       public static const MAPS_ICONS_BATTLEPASS_BACKGROUNDS_CHAPTER_CHOICE_DEFAULT_1:String = "../maps/icons/battlePass/backgrounds/chapter_choice/default_1.png";
@@ -9865,6 +9867,8 @@ package
       
       public static const MAPS_ICONS_BATTLEPASS_BACKGROUNDS_CHAPTER_GENERAL_C_203:String = "../maps/icons/battlePass/backgrounds/chapter_general/c_203.png";
       
+      public static const MAPS_ICONS_BATTLEPASS_BACKGROUNDS_CHAPTER_GENERAL_C_204:String = "../maps/icons/battlePass/backgrounds/chapter_general/c_204.png";
+      
       public static const MAPS_ICONS_BATTLEPASS_BACKGROUNDS_CHAPTER_GENERAL_DEFAULT_1:String = "../maps/icons/battlePass/backgrounds/chapter_general/default_1.png";
       
       public static const MAPS_ICONS_BATTLEPASS_BACKGROUNDS_CHAPTER_GENERAL_DEFAULT_2:String = "../maps/icons/battlePass/backgrounds/chapter_general/default_2.png";
@@ -9882,6 +9886,8 @@ package
       public static const MAPS_ICONS_BATTLEPASS_BACKGROUNDS_PROGRESSION_C_202:String = "../maps/icons/battlePass/backgrounds/progression/c_202.png";
       
       public static const MAPS_ICONS_BATTLEPASS_BACKGROUNDS_PROGRESSION_C_203:String = "../maps/icons/battlePass/backgrounds/progression/c_203.png";
+      
+      public static const MAPS_ICONS_BATTLEPASS_BACKGROUNDS_PROGRESSION_C_204:String = "../maps/icons/battlePass/backgrounds/progression/c_204.png";
       
       public static const MAPS_ICONS_BATTLEPASS_BACKGROUNDS_PROGRESSION_DEFAULT_0:String = "../maps/icons/battlePass/backgrounds/progression/default_0.png";
       
@@ -10013,6 +10019,8 @@ package
       
       public static const MAPS_ICONS_BATTLEPASS_CHAPTER_CHOICE_CARD_BG_C_203:String = "../maps/icons/battlePass/chapter_choice/card_bg/c_203.png";
       
+      public static const MAPS_ICONS_BATTLEPASS_CHAPTER_CHOICE_CARD_BG_C_204:String = "../maps/icons/battlePass/chapter_choice/card_bg/c_204.png";
+      
       public static const MAPS_ICONS_BATTLEPASS_CHAPTER_CHOICE_CARD_BG_DEFAULT_0:String = "../maps/icons/battlePass/chapter_choice/card_bg/default_0.png";
       
       public static const MAPS_ICONS_BATTLEPASS_CHAPTER_CHOICE_CARD_BG_DEFAULT_1:String = "../maps/icons/battlePass/chapter_choice/card_bg/default_1.png";
@@ -10068,6 +10076,8 @@ package
       public static const MAPS_ICONS_BATTLEPASS_CHAPTER_CHOICE_TANKS_C_202:String = "../maps/icons/battlePass/chapter_choice/tanks/c_202.png";
       
       public static const MAPS_ICONS_BATTLEPASS_CHAPTER_CHOICE_TANKS_C_203:String = "../maps/icons/battlePass/chapter_choice/tanks/c_203.png";
+      
+      public static const MAPS_ICONS_BATTLEPASS_CHAPTER_CHOICE_TANKS_C_204:String = "../maps/icons/battlePass/chapter_choice/tanks/c_204.png";
       
       public static const MAPS_ICONS_BATTLEPASS_CHAPTER_CHOICE_TANKS_DEFAULT_0:String = "../maps/icons/battlePass/chapter_choice/tanks/default_0.png";
       
@@ -10224,6 +10234,42 @@ package
       public static const MAPS_ICONS_BATTLEPASS_EMBLEM_ICON_C_203_PURCHASED_X60X60:String = "../maps/icons/battlePass/emblem/icon/c_203/purchased/x60x60.png";
       
       public static const MAPS_ICONS_BATTLEPASS_EMBLEM_ICON_C_203_PURCHASED_X80X80:String = "../maps/icons/battlePass/emblem/icon/c_203/purchased/x80x80.png";
+      
+      public static const MAPS_ICONS_BATTLEPASS_EMBLEM_ICON_C_204_BASIC_X100X100:String = "../maps/icons/battlePass/emblem/icon/c_204/basic/x100x100.png";
+      
+      public static const MAPS_ICONS_BATTLEPASS_EMBLEM_ICON_C_204_BASIC_X120X120:String = "../maps/icons/battlePass/emblem/icon/c_204/basic/x120x120.png";
+      
+      public static const MAPS_ICONS_BATTLEPASS_EMBLEM_ICON_C_204_BASIC_X160X160:String = "../maps/icons/battlePass/emblem/icon/c_204/basic/x160x160.png";
+      
+      public static const MAPS_ICONS_BATTLEPASS_EMBLEM_ICON_C_204_BASIC_X240X240:String = "../maps/icons/battlePass/emblem/icon/c_204/basic/x240x240.png";
+      
+      public static const MAPS_ICONS_BATTLEPASS_EMBLEM_ICON_C_204_BASIC_X28X28:String = "../maps/icons/battlePass/emblem/icon/c_204/basic/x28x28.png";
+      
+      public static const MAPS_ICONS_BATTLEPASS_EMBLEM_ICON_C_204_BASIC_X320X320:String = "../maps/icons/battlePass/emblem/icon/c_204/basic/x320x320.png";
+      
+      public static const MAPS_ICONS_BATTLEPASS_EMBLEM_ICON_C_204_BASIC_X48X48:String = "../maps/icons/battlePass/emblem/icon/c_204/basic/x48x48.png";
+      
+      public static const MAPS_ICONS_BATTLEPASS_EMBLEM_ICON_C_204_BASIC_X60X60:String = "../maps/icons/battlePass/emblem/icon/c_204/basic/x60x60.png";
+      
+      public static const MAPS_ICONS_BATTLEPASS_EMBLEM_ICON_C_204_BASIC_X80X80:String = "../maps/icons/battlePass/emblem/icon/c_204/basic/x80x80.png";
+      
+      public static const MAPS_ICONS_BATTLEPASS_EMBLEM_ICON_C_204_PURCHASED_X100X100:String = "../maps/icons/battlePass/emblem/icon/c_204/purchased/x100x100.png";
+      
+      public static const MAPS_ICONS_BATTLEPASS_EMBLEM_ICON_C_204_PURCHASED_X120X120:String = "../maps/icons/battlePass/emblem/icon/c_204/purchased/x120x120.png";
+      
+      public static const MAPS_ICONS_BATTLEPASS_EMBLEM_ICON_C_204_PURCHASED_X160X160:String = "../maps/icons/battlePass/emblem/icon/c_204/purchased/x160x160.png";
+      
+      public static const MAPS_ICONS_BATTLEPASS_EMBLEM_ICON_C_204_PURCHASED_X240X240:String = "../maps/icons/battlePass/emblem/icon/c_204/purchased/x240x240.png";
+      
+      public static const MAPS_ICONS_BATTLEPASS_EMBLEM_ICON_C_204_PURCHASED_X28X28:String = "../maps/icons/battlePass/emblem/icon/c_204/purchased/x28x28.png";
+      
+      public static const MAPS_ICONS_BATTLEPASS_EMBLEM_ICON_C_204_PURCHASED_X320X320:String = "../maps/icons/battlePass/emblem/icon/c_204/purchased/x320x320.png";
+      
+      public static const MAPS_ICONS_BATTLEPASS_EMBLEM_ICON_C_204_PURCHASED_X48X48:String = "../maps/icons/battlePass/emblem/icon/c_204/purchased/x48x48.png";
+      
+      public static const MAPS_ICONS_BATTLEPASS_EMBLEM_ICON_C_204_PURCHASED_X60X60:String = "../maps/icons/battlePass/emblem/icon/c_204/purchased/x60x60.png";
+      
+      public static const MAPS_ICONS_BATTLEPASS_EMBLEM_ICON_C_204_PURCHASED_X80X80:String = "../maps/icons/battlePass/emblem/icon/c_204/purchased/x80x80.png";
       
       public static const MAPS_ICONS_BATTLEPASS_EMBLEM_ICON_DEFAULT_0_BASIC_X100X100:String = "../maps/icons/battlePass/emblem/icon/default_0/basic/x100x100.png";
       
@@ -10410,6 +10456,38 @@ package
       public static const MAPS_ICONS_BATTLEPASS_EMBLEM_ICON_NOT_CHOSEN_X48X48:String = "../maps/icons/battlePass/emblem/icon/not_chosen/x48x48.png";
       
       public static const MAPS_ICONS_BATTLEPASS_EMBLEM_ICON_NOT_CHOSEN_X60X60:String = "../maps/icons/battlePass/emblem/icon/not_chosen/x60x60.png";
+      
+      public static const MAPS_ICONS_BATTLEPASS_EMBLEM_SHIELD_C_204_BASIC_X120X120:String = "../maps/icons/battlePass/emblem/shield/c_204/basic/x120x120.png";
+      
+      public static const MAPS_ICONS_BATTLEPASS_EMBLEM_SHIELD_C_204_BASIC_X200X200:String = "../maps/icons/battlePass/emblem/shield/c_204/basic/x200x200.png";
+      
+      public static const MAPS_ICONS_BATTLEPASS_EMBLEM_SHIELD_C_204_BASIC_X260X260:String = "../maps/icons/battlePass/emblem/shield/c_204/basic/x260x260.png";
+      
+      public static const MAPS_ICONS_BATTLEPASS_EMBLEM_SHIELD_C_204_BASIC_X300X300:String = "../maps/icons/battlePass/emblem/shield/c_204/basic/x300x300.png";
+      
+      public static const MAPS_ICONS_BATTLEPASS_EMBLEM_SHIELD_C_204_BASIC_X456X456:String = "../maps/icons/battlePass/emblem/shield/c_204/basic/x456x456.png";
+      
+      public static const MAPS_ICONS_BATTLEPASS_EMBLEM_SHIELD_C_204_BASIC_X600X600:String = "../maps/icons/battlePass/emblem/shield/c_204/basic/x600x600.png";
+      
+      public static const MAPS_ICONS_BATTLEPASS_EMBLEM_SHIELD_C_204_BASIC_X74X74:String = "../maps/icons/battlePass/emblem/shield/c_204/basic/x74x74.png";
+      
+      public static const MAPS_ICONS_BATTLEPASS_EMBLEM_SHIELD_C_204_BASIC_X912X912:String = "../maps/icons/battlePass/emblem/shield/c_204/basic/x912x912.png";
+      
+      public static const MAPS_ICONS_BATTLEPASS_EMBLEM_SHIELD_C_204_PURCHASED_X120X120:String = "../maps/icons/battlePass/emblem/shield/c_204/purchased/x120x120.png";
+      
+      public static const MAPS_ICONS_BATTLEPASS_EMBLEM_SHIELD_C_204_PURCHASED_X200X200:String = "../maps/icons/battlePass/emblem/shield/c_204/purchased/x200x200.png";
+      
+      public static const MAPS_ICONS_BATTLEPASS_EMBLEM_SHIELD_C_204_PURCHASED_X260X260:String = "../maps/icons/battlePass/emblem/shield/c_204/purchased/x260x260.png";
+      
+      public static const MAPS_ICONS_BATTLEPASS_EMBLEM_SHIELD_C_204_PURCHASED_X300X300:String = "../maps/icons/battlePass/emblem/shield/c_204/purchased/x300x300.png";
+      
+      public static const MAPS_ICONS_BATTLEPASS_EMBLEM_SHIELD_C_204_PURCHASED_X456X456:String = "../maps/icons/battlePass/emblem/shield/c_204/purchased/x456x456.png";
+      
+      public static const MAPS_ICONS_BATTLEPASS_EMBLEM_SHIELD_C_204_PURCHASED_X600X600:String = "../maps/icons/battlePass/emblem/shield/c_204/purchased/x600x600.png";
+      
+      public static const MAPS_ICONS_BATTLEPASS_EMBLEM_SHIELD_C_204_PURCHASED_X74X74:String = "../maps/icons/battlePass/emblem/shield/c_204/purchased/x74x74.png";
+      
+      public static const MAPS_ICONS_BATTLEPASS_EMBLEM_SHIELD_C_204_PURCHASED_X912X912:String = "../maps/icons/battlePass/emblem/shield/c_204/purchased/x912x912.png";
       
       public static const MAPS_ICONS_BATTLEPASS_EMBLEM_SHIELD_DEFAULT_BASIC_X120X120:String = "../maps/icons/battlePass/emblem/shield/default/basic/x120x120.png";
       
@@ -10941,6 +11019,18 @@ package
       
       public static const MAPS_ICONS_BATTLEPASS_LOGO_FLAG_DEFAULT_4_S:String = "../maps/icons/battlePass/logo/flag/default_4_s.png";
       
+      public static const MAPS_ICONS_BATTLEPASS_LOGO_RIBBON_CHAPTER_204_RIBBON_LARGE:String = "../maps/icons/battlePass/logo/ribbon/chapter_204/ribbon_large.png";
+      
+      public static const MAPS_ICONS_BATTLEPASS_LOGO_RIBBON_CHAPTER_204_RIBBON_LARGE_WITH_BP:String = "../maps/icons/battlePass/logo/ribbon/chapter_204/ribbon_large_with_bp.png";
+      
+      public static const MAPS_ICONS_BATTLEPASS_LOGO_RIBBON_CHAPTER_204_RIBBON_MEDIUM:String = "../maps/icons/battlePass/logo/ribbon/chapter_204/ribbon_medium.png";
+      
+      public static const MAPS_ICONS_BATTLEPASS_LOGO_RIBBON_CHAPTER_204_RIBBON_MEDIUM_WITH_BP:String = "../maps/icons/battlePass/logo/ribbon/chapter_204/ribbon_medium_with_bp.png";
+      
+      public static const MAPS_ICONS_BATTLEPASS_LOGO_RIBBON_CHAPTER_204_RIBBON_SMALL:String = "../maps/icons/battlePass/logo/ribbon/chapter_204/ribbon_small.png";
+      
+      public static const MAPS_ICONS_BATTLEPASS_LOGO_RIBBON_CHAPTER_204_RIBBON_SMALL_WITH_BP:String = "../maps/icons/battlePass/logo/ribbon/chapter_204/ribbon_small_with_bp.png";
+      
       public static const MAPS_ICONS_BATTLEPASS_LOGO_RIBBON_DEFAULT_RIBBON_LARGE:String = "../maps/icons/battlePass/logo/ribbon/default/ribbon_large.png";
       
       public static const MAPS_ICONS_BATTLEPASS_LOGO_RIBBON_DEFAULT_RIBBON_LARGE_WITH_BP:String = "../maps/icons/battlePass/logo/ribbon/default/ribbon_large_with_bp.png";
@@ -11098,6 +11188,8 @@ package
       public static const MAPS_ICONS_BATTLEPASS_REWARDS_ANTIFRAGMENTATIONLINING:String = "../maps/icons/battlePass/rewards/antifragmentationLining.png";
       
       public static const MAPS_ICONS_BATTLEPASS_REWARDS_AUTOEXTINGUISHERS:String = "../maps/icons/battlePass/rewards/autoExtinguishers.png";
+      
+      public static const MAPS_ICONS_BATTLEPASS_REWARDS_BATTLEPASSCOMMONPR_17EXTRA_1:String = "../maps/icons/battlePass/rewards/BattlePassCommonPr_17extra_1.png";
       
       public static const MAPS_ICONS_BATTLEPASS_REWARDS_BATTLEPASSCOMMONPR_7:String = "../maps/icons/battlePass/rewards/BattlePassCommonPr_7.png";
       
@@ -11297,6 +11389,10 @@ package
       
       public static const MAPS_ICONS_BATTLEPASS_REWARDS_IMPROVEDVENTILATIONBATTLEBOOSTER:String = "../maps/icons/battlePass/rewards/improvedVentilationBattleBooster.png";
       
+      public static const MAPS_ICONS_BATTLEPASS_REWARDS_INSCRIPTION_295996:String = "../maps/icons/battlePass/rewards/inscription_295996.png";
+      
+      public static const MAPS_ICONS_BATTLEPASS_REWARDS_INSCRIPTION_296252:String = "../maps/icons/battlePass/rewards/inscription_296252.png";
+      
       public static const MAPS_ICONS_BATTLEPASS_REWARDS_INSCRIPTION_6204:String = "../maps/icons/battlePass/rewards/inscription_6204.png";
       
       public static const MAPS_ICONS_BATTLEPASS_REWARDS_LARGEMEDKIT:String = "../maps/icons/battlePass/rewards/largeMedkit.png";
@@ -11366,6 +11462,12 @@ package
       public static const MAPS_ICONS_BATTLEPASS_REWARDS_PREMIUM_PLUS_90:String = "../maps/icons/battlePass/rewards/premium_plus_90.png";
       
       public static const MAPS_ICONS_BATTLEPASS_REWARDS_PREMIUM_UNIVERSAL:String = "../maps/icons/battlePass/rewards/premium_universal.png";
+      
+      public static const MAPS_ICONS_BATTLEPASS_REWARDS_PROJECTIONDECAL_311420:String = "../maps/icons/battlePass/rewards/projectionDecal_311420.png";
+      
+      public static const MAPS_ICONS_BATTLEPASS_REWARDS_PROJECTIONDECAL_311676:String = "../maps/icons/battlePass/rewards/projectionDecal_311676.png";
+      
+      public static const MAPS_ICONS_BATTLEPASS_REWARDS_PROJECTIONDECAL_311932:String = "../maps/icons/battlePass/rewards/projectionDecal_311932.png";
       
       public static const MAPS_ICONS_BATTLEPASS_REWARDS_PROJECTIONDECAL_321660:String = "../maps/icons/battlePass/rewards/projectionDecal_321660.png";
       
@@ -11443,6 +11545,10 @@ package
       
       public static const MAPS_ICONS_BATTLEPASS_REWARDS_STYLE:String = "../maps/icons/battlePass/rewards/style.png";
       
+      public static const MAPS_ICONS_BATTLEPASS_REWARDS_STYLE_283980:String = "../maps/icons/battlePass/rewards/style_283980.png";
+      
+      public static const MAPS_ICONS_BATTLEPASS_REWARDS_STYLE_284236:String = "../maps/icons/battlePass/rewards/style_284236.png";
+      
       public static const MAPS_ICONS_BATTLEPASS_REWARDS_STYLE_325196:String = "../maps/icons/battlePass/rewards/style_325196.png";
       
       public static const MAPS_ICONS_BATTLEPASS_REWARDS_STYLE_325452:String = "../maps/icons/battlePass/rewards/style_325452.png";
@@ -11468,6 +11574,8 @@ package
       public static const MAPS_ICONS_BATTLEPASS_REWARDS_STYLE_3D_1_595_SMALL:String = "../maps/icons/battlePass/rewards/style_3d_1_595_small.png";
       
       public static const MAPS_ICONS_BATTLEPASS_REWARDS_STYLE_3D_206412:String = "../maps/icons/battlePass/rewards/style_3d_206412.png";
+      
+      public static const MAPS_ICONS_BATTLEPASS_REWARDS_STYLE_3D_273996:String = "../maps/icons/battlePass/rewards/style_3d_273996.png";
       
       public static const MAPS_ICONS_BATTLEPASS_REWARDS_STYLE_3D_290636:String = "../maps/icons/battlePass/rewards/style_3d_290636.png";
       
@@ -11518,6 +11626,12 @@ package
       public static const MAPS_ICONS_BATTLEPASS_REWARDS_TANKMAN_TANKMEN_BP16_2:String = "../maps/icons/battlePass/rewards/tankman_tankmen_bp16_2.png";
       
       public static const MAPS_ICONS_BATTLEPASS_REWARDS_TANKMAN_TANKMEN_BP16_3:String = "../maps/icons/battlePass/rewards/tankman_tankmen_bp16_3.png";
+      
+      public static const MAPS_ICONS_BATTLEPASS_REWARDS_TANKMAN_TANKMEN_BP17_5:String = "../maps/icons/battlePass/rewards/tankman_tankmen_bp17_5.png";
+      
+      public static const MAPS_ICONS_BATTLEPASS_REWARDS_TANKMAN_TANKMEN_BP17_6:String = "../maps/icons/battlePass/rewards/tankman_tankmen_bp17_6.png";
+      
+      public static const MAPS_ICONS_BATTLEPASS_REWARDS_TANKMAN_TANKMEN_BP17_7:String = "../maps/icons/battlePass/rewards/tankman_tankmen_bp17_7.png";
       
       public static const MAPS_ICONS_BATTLEPASS_REWARDS_TANKMAN_TANKMEN_BP19_1:String = "../maps/icons/battlePass/rewards/tankman_tankmen_bp19_1.png";
       
@@ -11587,6 +11701,8 @@ package
       
       public static const MAPS_ICONS_BATTLEPASS_REWARDS_VEHICLE_49697:String = "../maps/icons/battlePass/rewards/vehicle_49697.png";
       
+      public static const MAPS_ICONS_BATTLEPASS_REWARDS_VEHICLE_49953:String = "../maps/icons/battlePass/rewards/vehicle_49953.png";
+      
       public static const MAPS_ICONS_BATTLEPASS_REWARDS_VEHICLE_50833:String = "../maps/icons/battlePass/rewards/vehicle_50833.png";
       
       public static const MAPS_ICONS_BATTLEPASS_REWARDS_VEHICLE_56897:String = "../maps/icons/battlePass/rewards/vehicle_56897.png";
@@ -11607,6 +11723,8 @@ package
       
       public static const MAPS_ICONS_BATTLEPASS_REWARDS_CHAPTERLOGO_CHAPTER_203_BP_ICON:String = "../maps/icons/battlePass/rewards/chapterLogo/chapter_203/bp_icon.png";
       
+      public static const MAPS_ICONS_BATTLEPASS_REWARDS_CHAPTERLOGO_CHAPTER_204_BP_ICON:String = "../maps/icons/battlePass/rewards/chapterLogo/chapter_204/bp_icon.png";
+      
       public static const MAPS_ICONS_BATTLEPASS_REWARDS_CHAPTERLOGO_DEFAULT_BP_ICON:String = "../maps/icons/battlePass/rewards/chapterLogo/default/bp_icon.png";
       
       public static const MAPS_ICONS_BATTLEPASS_TANKMAN_CHECK:String = "../maps/icons/battlePass/tankman/check.png";
@@ -11626,6 +11744,12 @@ package
       public static const MAPS_ICONS_BATTLEPASS_TANKMAN_PERSONS_COMMANDER_TANKMEN_BP16_2:String = "../maps/icons/battlePass/tankman/persons/commander_tankmen_bp16_2.png";
       
       public static const MAPS_ICONS_BATTLEPASS_TANKMAN_PERSONS_COMMANDER_TANKMEN_BP16_3:String = "../maps/icons/battlePass/tankman/persons/commander_tankmen_bp16_3.png";
+      
+      public static const MAPS_ICONS_BATTLEPASS_TANKMAN_PERSONS_COMMANDER_TANKMEN_BP17_5:String = "../maps/icons/battlePass/tankman/persons/commander_tankmen_bp17_5.png";
+      
+      public static const MAPS_ICONS_BATTLEPASS_TANKMAN_PERSONS_COMMANDER_TANKMEN_BP17_6:String = "../maps/icons/battlePass/tankman/persons/commander_tankmen_bp17_6.png";
+      
+      public static const MAPS_ICONS_BATTLEPASS_TANKMAN_PERSONS_COMMANDER_TANKMEN_BP17_7:String = "../maps/icons/battlePass/tankman/persons/commander_tankmen_bp17_7.png";
       
       public static const MAPS_ICONS_BATTLEPASS_TANKMAN_PERSONS_COMMANDER_TANKMEN_BP18_1:String = "../maps/icons/battlePass/tankman/persons/commander_tankmen_bp18_1.png";
       
@@ -39217,6 +39341,12 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_TANKMAN_TANKMEN_BP17_3:String = "../maps/icons/quests/bonuses/big/tankman_tankmen_bp17_3.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_TANKMAN_TANKMEN_BP17_5:String = "../maps/icons/quests/bonuses/big/tankman_tankmen_bp17_5.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_TANKMAN_TANKMEN_BP17_6:String = "../maps/icons/quests/bonuses/big/tankman_tankmen_bp17_6.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_TANKMAN_TANKMEN_BP17_7:String = "../maps/icons/quests/bonuses/big/tankman_tankmen_bp17_7.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_TANKMAN_TANKMEN_BP18_1:String = "../maps/icons/quests/bonuses/big/tankman_tankmen_bp18_1.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_TANKMAN_TANKMEN_BP18_2:String = "../maps/icons/quests/bonuses/big/tankman_tankmen_bp18_2.png";
@@ -39646,6 +39776,12 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_TANKMAN_TANKMEN_BP17_2:String = "../maps/icons/quests/bonuses/s180x135/tankman_tankmen_bp17_2.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_TANKMAN_TANKMEN_BP17_3:String = "../maps/icons/quests/bonuses/s180x135/tankman_tankmen_bp17_3.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_TANKMAN_TANKMEN_BP17_5:String = "../maps/icons/quests/bonuses/s180x135/tankman_tankmen_bp17_5.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_TANKMAN_TANKMEN_BP17_6:String = "../maps/icons/quests/bonuses/s180x135/tankman_tankmen_bp17_6.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_TANKMAN_TANKMEN_BP17_7:String = "../maps/icons/quests/bonuses/s180x135/tankman_tankmen_bp17_7.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_TANKMAN_TANKMEN_BP18_1:String = "../maps/icons/quests/bonuses/s180x135/tankman_tankmen_bp18_1.png";
       
@@ -42446,6 +42582,12 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_TANKMAN_TANKMEN_BP17_2:String = "../maps/icons/quests/bonuses/small/tankman_tankmen_bp17_2.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_TANKMAN_TANKMEN_BP17_3:String = "../maps/icons/quests/bonuses/small/tankman_tankmen_bp17_3.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_TANKMAN_TANKMEN_BP17_5:String = "../maps/icons/quests/bonuses/small/tankman_tankmen_bp17_5.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_TANKMAN_TANKMEN_BP17_6:String = "../maps/icons/quests/bonuses/small/tankman_tankmen_bp17_6.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_TANKMAN_TANKMEN_BP17_7:String = "../maps/icons/quests/bonuses/small/tankman_tankmen_bp17_7.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_TANKMAN_TANKMEN_BP18_1:String = "../maps/icons/quests/bonuses/small/tankman_tankmen_bp18_1.png";
       
