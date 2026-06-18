@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, typing
 from frameworks.wulf import ViewFlags, ViewSettings
 from gui.impl.gen import R
@@ -17,15 +18,11 @@ if typing.TYPE_CHECKING:
     from Event import Event
 _BATTLEMATTERS_VEHICLES_ORDER = ('Pl19_CS_52_LIS', 'R165_Object_703_II', 'A122_TS-5')
 
-def _vehiclesSortOrder(firstModel, secondModel):
-    firstIdx = secondIdx = len(_BATTLEMATTERS_VEHICLES_ORDER)
-    firstName = firstModel.getVehName()
-    secondName = secondModel.getVehName()
+def _vehiclesSortKey(model):
+    firstName = model.getVehName()
     if firstName in _BATTLEMATTERS_VEHICLES_ORDER:
-        firstIdx = _BATTLEMATTERS_VEHICLES_ORDER.index(firstName)
-    if secondName in _BATTLEMATTERS_VEHICLES_ORDER:
-        secondIdx = _BATTLEMATTERS_VEHICLES_ORDER.index(secondName)
-    return cmp(firstIdx, secondIdx)
+        return _BATTLEMATTERS_VEHICLES_ORDER.index(firstName)
+    return len(_BATTLEMATTERS_VEHICLES_ORDER)
 
 
 class BattleMattersMainRewardView(ViewImpl):
@@ -92,7 +89,7 @@ class BattleMattersMainRewardView(ViewImpl):
             _logger.error('Wrong bonus count for Battme Matters main reward view. Exiting.')
             return
         else:
-            vehicleVMs = sorted(BattleMattersVehiclesBonusUIPacker.pack(vehiclesBonus), cmp=_vehiclesSortOrder)
+            vehicleVMs = sorted(BattleMattersVehiclesBonusUIPacker.pack(vehiclesBonus), key=_vehiclesSortKey)
             with self.viewModel.transaction() as (tx):
                 vehicles = tx.getVehicles()
                 vehicles.clear()

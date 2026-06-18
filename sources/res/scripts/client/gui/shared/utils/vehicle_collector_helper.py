@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from backports.functools_lru_cache import lru_cache
 from account_helpers import AccountSettings

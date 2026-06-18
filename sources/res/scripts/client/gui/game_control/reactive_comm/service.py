@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import weakref
 from collections import deque
 import typing, wg_async

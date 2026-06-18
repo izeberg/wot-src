@@ -1,4 +1,7 @@
-import logging, BigWorld
+from __future__ import absolute_import
+import logging
+from future.utils import viewvalues
+import BigWorld
 from helpers import dependency
 from gui.battle_control.battle_constants import BATTLE_CTRL_ID
 from skeletons.gui.battle_session import IBattleSessionProvider
@@ -42,7 +45,7 @@ class AreaMarkersController(BaseMarkerController):
         else:
             vehicle = player.getVehicleAttached()
             observableVehiclePosition = vehicle.position if vehicle else None
-            for marker in self._markers.itervalues():
+            for marker in viewvalues(self._markers):
                 if marker.isEmpty():
                     continue
                 distanceToArea = marker.getDistanceToArea(observableVehiclePosition)

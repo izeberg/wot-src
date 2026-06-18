@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from typing import NamedTuple, List, Optional
 from shared_utils import CONST_CONTAINER
 

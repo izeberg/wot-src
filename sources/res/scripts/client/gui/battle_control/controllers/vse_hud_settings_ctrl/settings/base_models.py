@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from helpers import i18n
 from pve_battle_hud import getPveHudLogger

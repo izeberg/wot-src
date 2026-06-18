@@ -63,7 +63,7 @@ class RewardsSelectionView(SelectableRewardBase):
             showHangar()
 
     @staticmethod
-    def _compareRewardsByArtifactName(first, second):
+    def _rewardsSortKeyByArtifactName(x):
         artefacts = R.strings.artefacts
 
         def _safeExtract(path):
@@ -72,19 +72,19 @@ class RewardsSelectionView(SelectableRewardBase):
                 return backport.text(folder.name())
             return ''
 
-        return cmp(_safeExtract(first[0]), _safeExtract(second[0]))
+        return _safeExtract(x[0])
 
     @staticmethod
-    def _defaultComparator(first, second):
-        return cmp(first[0], second[0])
+    def _defaultSortKey(x):
+        return x[0]
 
-    def _getTypesComparator(self):
-        return self._defaultComparator
+    def _getTypesSortKey(self):
+        return self._defaultSortKey
 
-    def _getItemsComparator(self, tabName):
+    def _getItemsSortKey(self, tabName):
         if tabName in EPIC_OFFER_TYPES:
-            return self._compareRewardsByArtifactName
-        return self._defaultComparator
+            return self._rewardsSortKeyByArtifactName
+        return self._defaultSortKey
 
     def _processReceivedRewards(self, result):
         if result.success and result.auxData:

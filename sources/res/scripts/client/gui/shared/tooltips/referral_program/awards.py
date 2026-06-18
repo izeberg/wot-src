@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging
 from helpers import dependency
 from gui.impl import backport

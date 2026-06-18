@@ -21,9 +21,6 @@ msgstr ""
 "Это особые ящики, в которых вы найдёте уникальные и полезные внутриигровые предметы.\n"
 "Купить эти ящики можно во внутриигровом или Премиум магазинах."
 
-msgid "entryPoint/tooltip/title"
-msgstr "Что такое Драконьи ящики и как их получить"
-
 msgid "entryPoint/tooltip/warningTitle"
 msgstr "Драконьи ящики временно недоступны"
 
@@ -51,13 +48,3 @@ msgid "noBoxesView/description/"
 msgstr ""
 "У вас нет ящиков.\n"
 "Вы можете получить их в Магазине."
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/count"
-msgstr "Открыто ящиков: %(boxes)s"
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/header"
-msgstr "Оставшиеся ящики открыты"
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/text"
-msgstr ""
-"После завершения события мы открыли за вас ящики и начислили их содержимое."

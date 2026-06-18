@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from dog_tags_common.config.common import ComponentViewType, ComponentPurpose
 from dog_tags_common.number_formatter import formatComponentValue
 from dog_tags_common.player_dog_tag import DisplayableDogTag

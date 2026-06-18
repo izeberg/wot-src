@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from collections import namedtuple
 import typing
 from CurrentVehicle import g_currentVehicle

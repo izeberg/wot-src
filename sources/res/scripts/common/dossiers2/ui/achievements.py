@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import resource_helper
 from debug_utils import LOG_CURRENT_EXCEPTION
 from constants import IS_WEB

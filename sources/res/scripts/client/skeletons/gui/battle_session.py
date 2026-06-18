@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 if typing.TYPE_CHECKING:
     from typing import Iterable, Optional
@@ -269,13 +270,13 @@ class ISquadInvitationsHandler(object):
     def clear(self):
         raise NotImplementedError
 
-    def send(self, uid):
+    def send(self, sessionID):
         raise NotImplementedError
 
-    def accept(self, uid):
+    def accept(self, sessionID):
         raise NotImplementedError
 
-    def reject(self, uid):
+    def reject(self, sessionID):
         raise NotImplementedError
 
 
@@ -586,7 +587,7 @@ class IArenaDataProvider(object):
     def getEnemiesVehiclesNumber(self):
         raise NotImplementedError
 
-    def isAlly(self, attackerID):
+    def isAlly(self, vehicleID):
         raise NotImplementedError
 
     def getReservesModifier(self):
@@ -607,7 +608,7 @@ class IBattleContext(object):
     def getArenaDP(self):
         raise NotImplementedError
 
-    def getVehIDBySessionID(self, accID):
+    def getVehIDBySessionID(self, avatarSessionID):
         raise NotImplementedError
 
     def getSessionIDByVehID(self, vehID):

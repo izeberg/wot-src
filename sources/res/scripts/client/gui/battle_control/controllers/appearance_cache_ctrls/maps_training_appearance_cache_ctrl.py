@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging
 from gui.battle_control.controllers.appearance_cache_ctrls.event_appearance_cache_ctrl import EventAppearanceCacheController
 from helpers import uniprof

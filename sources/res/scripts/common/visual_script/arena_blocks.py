@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import Math
 from soft_exception import SoftException
 from visual_script.block import Meta, Block, InitParam, buildStrKeysValue

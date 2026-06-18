@@ -1,6 +1,7 @@
+from __future__ import absolute_import
 from dossiers2.custom.helpers import getMechanicEngineerRequirements, getVehicleCollectorRequirements, getTankExpertRequirements, getAllCollectorVehicles
-from abstract import NationSpecificAchievement
-from abstract.mixins import HasVehiclesList
+from gui.shared.gui_items.dossier.achievements.abstract import NationSpecificAchievement
+from gui.shared.gui_items.dossier.achievements.abstract.mixins import HasVehiclesList
 from collector_vehicle import CollectorVehicleConsts
 from helpers import dependency
 from skeletons.gui.shared import IItemsCache

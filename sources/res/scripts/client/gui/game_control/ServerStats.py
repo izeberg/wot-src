@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld, Event, constants
 from PlayerEvents import g_playerEvents
 from gui.Scaleform.locale.MENU import MENU

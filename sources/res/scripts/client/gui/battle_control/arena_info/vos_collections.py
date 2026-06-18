@@ -1,3 +1,6 @@
+from __future__ import absolute_import
+from future.utils import lmap
+from past.builtins import cmp
 from gui.shared.sort_key import SortKey
 from gui.battle_control.arena_info.arena_vos import EPIC_RANDOM_KEYS, EPIC_BATTLE_KEYS
 
@@ -174,7 +177,7 @@ class _Collection(object):
             yield item
 
     def ids(self, arenaDP):
-        return map(self._getID, self.iterator(arenaDP))
+        return lmap(self._getID, self.iterator(arenaDP))
 
     def _buildSeq(self, arenaDP):
         return arenaDP.getVehiclesInfoIterator()

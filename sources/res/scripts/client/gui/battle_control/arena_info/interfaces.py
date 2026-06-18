@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from gui.battle_control.arena_info.settings import ARENA_LISTENER_SCOPE as _SCOPE
 from gui.battle_control.controllers.interfaces import IBattleController
@@ -367,7 +368,7 @@ class IPrebattleSetupsController(IArenaPeriodController, IArenaLoadController, V
     def setEnhancements(self, vehicleID, enhancements):
         raise NotImplementedError
 
-    def setPostProgression(self, vehicleID, postProgression):
+    def setPostProgression(self, vehicleID, itemCDs):
         raise NotImplementedError
 
     def setDisabledSwitches(self, vehicleID, groupIDs):
@@ -450,14 +451,14 @@ class IPrebattleSetupController(IArenaLoadController, IArenaPeriodController, Vi
     def getVehiclesList():
         raise NotImplementedError
 
-    def updateVehicleInfo(self, vehiclesList):
+    def updateVehicleInfo(self, vehicleInfo):
         raise NotImplementedError
 
     @staticmethod
     def getCurrentVehicleInfo():
         raise NotImplementedError
 
-    def updateSpawnPoints(self, spawnPointsList):
+    def updateSpawnPoints(self, spawnPoints):
         raise NotImplementedError
 
     def updateConfirmationStatuses(self, newStatuses):

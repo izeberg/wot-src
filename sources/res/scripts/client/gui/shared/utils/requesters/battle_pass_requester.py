@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld
 from battle_pass_common import BATTLE_PASS_PDATA_KEY
 from gui.shared.utils.requesters.abstract import AbstractSyncDataRequester

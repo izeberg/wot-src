@@ -1,4 +1,6 @@
+from __future__ import absolute_import
 import typing
+from functools import total_ordering
 from constants import MIN_VEHICLE_LEVEL, MAX_VEHICLE_LEVEL
 from debug_utils import LOG_CURRENT_EXCEPTION
 from gui.Scaleform.genConsts.SLOT_HIGHLIGHT_TYPES import SLOT_HIGHLIGHT_TYPES
@@ -162,7 +164,7 @@ class Equipment(VehicleArtefact):
         return result
 
     def getConflictedEquipments(self, vehicle):
-        conflictEqs = list()
+        conflictEqs = []
         if self in vehicle.consumables.installed:
             return conflictEqs
         for e in vehicle.consumables.installed.getItems():
@@ -497,6 +499,7 @@ class RemovableDevice(VehicleArtefact):
         return ITEM_PRICE_EMPTY
 
 
+@total_ordering
 class OptionalDevice(RemovableDevice):
     __slots__ = ('_GUIEmblemID', '__isUpgradeable', '__isUpgraded')
 
@@ -507,26 +510,13 @@ class OptionalDevice(RemovableDevice):
         label = labelWithExtension.split('.')[0]
         self._GUIEmblemID = label
 
-    def __cmp__(self, other):
-        if other is None:
-            return 1
-        else:
-            if isinstance(other, OptionalDevice):
-                if self.isTrophy != other.isTrophy:
-                    if self.isTrophy:
-                        return 1
-                    return -1
-                if self.isTrophy:
-                    if self.isUpgraded != other.isUpgraded:
-                        if self.isSimilarDevice(other):
-                            if self.isUpgraded:
-                                return 1
-                            return -1
-                if self.isDeluxe != other.isDeluxe:
-                    if self.isDeluxe:
-                        return 1
-                    return -1
-            return super(OptionalDevice, self).__cmp__(other)
+    def __eq__(self, other):
+        return self._compare(other) == 0
+
+    def __lt__(self, other):
+        return self._compare(other) < 0
+
+    __hash__ = RemovableDevice.__hash__
 
     @property
     def level(self):
@@ -716,3 +706,24 @@ class OptionalDevice(RemovableDevice):
         if not kpi or len(kpi) >= 2 or any(bonus.type == KPI.Type.AGGREGATE_MUL for bonus in kpi):
             return stripColorTagDescrTags(self.shortDescriptionSpecial)
         return getKpiFormatDescription(kpi[0])
+
+    def _compare(self, other):
+        if other is None:
+            return 1
+        else:
+            if isinstance(other, OptionalDevice):
+                if self.isTrophy != other.isTrophy:
+                    if self.isTrophy:
+                        return 1
+                    return -1
+                if self.isTrophy:
+                    if self.isUpgraded != other.isUpgraded:
+                        if self.isSimilarDevice(other):
+                            if self.isUpgraded:
+                                return 1
+                            return -1
+                if self.isDeluxe != other.isDeluxe:
+                    if self.isDeluxe:
+                        return 1
+                    return -1
+            return super(OptionalDevice, self)._compare(other)

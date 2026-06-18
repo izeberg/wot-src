@@ -19,7 +19,7 @@ msgid "headerButton/tooltips/squad/header"
 msgstr "Взвод"
 
 msgid "members/header/last_stand"
-msgstr ": Последний рубеж: Вторжение"
+msgstr ": Последний рубеж: Северные земли"
 
 msgid "members/header/tooltip/last_stand/body"
 msgstr ""
@@ -36,22 +36,22 @@ msgid "platoon/difficulty/error_body_1"
 msgstr "Доступные игроку уровни сложности: «Стандарт»."
 
 msgid "platoon/difficulty/error_body_2"
-msgstr "Доступные игроку уровни сложности: «Стандарт», «Тяжело»."
+msgstr "Доступные игроку уровни сложности: «Стандарт», «Продвинутый»."
 
 msgid "platoon/difficulty/error_header"
 msgstr "Недоступный уровень сложности"
 
 msgid "platoon/difficulty/level_1"
-msgstr "Сложность: «Стандарт»"
+msgstr "Сложность: Стандарт"
 
 msgid "platoon/difficulty/level_2"
-msgstr "Сложность: «Тяжело»"
+msgstr "Сложность: Продвинутый"
 
 msgid "platoon/difficulty/level_3"
-msgstr "Сложность: «Жесть»"
+msgstr "Сложность: Жесть"
 
 msgid "platoon/difficulty/level_4"
-msgstr "Сложность: «Последний рубеж»"
+msgstr "Сложность: Последний рубеж"
 
 msgid "platoon/difficulty/lock_header"
 msgstr "Уровень сложности заблокирован"
@@ -66,6 +66,18 @@ msgstr ""
 
 msgid "platoon/difficulty/warning_header"
 msgstr "Неподходящая сложность"
+
+msgid "platoon/dropdown/difficulty_1"
+msgstr "«Стандарт» %(icon)s"
+
+msgid "platoon/dropdown/difficulty_2"
+msgstr "«Продвинутый» %(icon)s"
+
+msgid "platoon/dropdown/difficulty_3"
+msgstr "«Жесть» %(icon)s"
+
+msgid "platoon/dropdown/header/difficulty"
+msgstr "{whiteSpanish_Open}Сложность: {whiteSpanish_Close}%(difficulty)s"
 
 msgid "platoon/player/difficulty_body"
 msgstr "Только командир взвода может менять уровень сложности."

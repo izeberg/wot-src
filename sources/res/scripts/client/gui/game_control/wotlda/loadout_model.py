@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from typing import List, Tuple, Union, Any, Optional, TYPE_CHECKING
 from dict2model import models, fields, utils
 from dict2model.schemas import Schema, validate

@@ -1,4 +1,7 @@
-import operator, BigWorld
+from __future__ import absolute_import
+import operator
+from future.utils import viewitems
+import BigWorld
 from gui.shared import g_eventBus, EVENT_BUS_SCOPE
 from gui.shared.rq_cooldown import getRequestCoolDown
 
@@ -51,7 +54,7 @@ class CooldownHelper(object):
             cooldowns[requestID] = getRequestCoolDown(self._eventScope, requestID)
 
         if cooldowns:
-            requestID, cooldown = max(cooldowns.items(), key=operator.itemgetter(1))
+            requestID, cooldown = max(viewitems(cooldowns), key=operator.itemgetter(1))
             if cooldown > 0:
                 self.__isInCooldown = True
                 self.__handler(True)

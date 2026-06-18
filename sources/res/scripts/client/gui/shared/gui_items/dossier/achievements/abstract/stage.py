@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.shared.gui_items.dossier.achievements.abstract.regular import RegularAchievement
 from dossiers2.ui.achievements import ACHIEVEMENT_TYPE
 

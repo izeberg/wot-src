@@ -1,20 +1,17 @@
+from __future__ import absolute_import, division
 import logging, math, typing
 from exchange.personal_discounts_constants import ExchangeDiscountInfo, ExchangeDiscountType, ExchangeRate, ExchangeRateShowFormat
 if typing.TYPE_CHECKING:
     from typing import Tuple, List, Optional, Dict
 _logger = logging.getLogger(__name__)
 
-def sortExchangeRatesDiscountsRule(discount1, discount2):
-
-    def _getComparisonKeys(discount):
-        return (
-         float(discount.resourceRateValue) / discount.goldRateValue,
-         not discount.isPersonal,
-         discount.discountType == ExchangeDiscountType.UNLIMITED,
-         discount.amountOfDiscount,
-         -discount.discountLifetime)
-
-    return cmp(_getComparisonKeys(discount1), _getComparisonKeys(discount2))
+def sortExchangeRatesDiscountsKey(discount):
+    return (
+     float(discount.resourceRateValue) / discount.goldRateValue,
+     not discount.isPersonal,
+     discount.discountType == ExchangeDiscountType.UNLIMITED,
+     discount.amountOfDiscount,
+     -discount.discountLifetime)
 
 
 def isExchangeRateDiscountAvailable(discount, currentTime):
@@ -39,15 +36,14 @@ def getDiscountsRequiredForExchange(discounts, goldExchangeAmount, currentTime):
         if discount.amountOfDiscount >= leftAmount or discount.discountType == ExchangeDiscountType.UNLIMITED:
             discountWillBeUsed[discount] = leftAmount
             break
-        else:
-            leftAmount -= discount.amountOfDiscount
-            discountWillBeUsed[discount] = discount.amountOfDiscount
+        leftAmount -= discount.amountOfDiscount
+        discountWillBeUsed[discount] = discount.amountOfDiscount
 
     return discountWillBeUsed
 
 
 def sortExchangeRatesDiscounts(discountsInfo):
-    return sorted(discountsInfo, cmp=sortExchangeRatesDiscountsRule, reverse=True)
+    return sorted(discountsInfo, key=sortExchangeRatesDiscountsKey, reverse=True)
 
 
 def createCommonDiscount(exchangeType, exchangeRate):

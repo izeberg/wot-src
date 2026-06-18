@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging
 from Event import Event
 from account_helpers import AccountSettings

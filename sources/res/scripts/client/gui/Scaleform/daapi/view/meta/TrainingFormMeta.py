@@ -2,7 +2,7 @@ from gui.Scaleform.framework.entities.View import View
 
 class TrainingFormMeta(View):
 
-    def joinTrainingRequest(self, id):
+    def joinTrainingRequest(self, id, prbClusterId):
         self._printOverrideError('joinTrainingRequest')
 
     def createTrainingRequest(self):

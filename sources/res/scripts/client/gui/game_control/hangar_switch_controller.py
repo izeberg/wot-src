@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import json, logging, BigWorld, Event, ResMgr
 from constants import DEFAULT_HANGAR_SCENE
 from gui.prb_control.settings import FUNCTIONAL_FLAG
@@ -142,7 +143,7 @@ class HangarSpaceSwitchController(IHangarSpaceSwitchController, IGlobalListener)
         self.hangarSpaceUpdated = True
 
     def lockHangarOverride(self, sceneName):
-        for name in self._sceneSpaceParams.iterkeys():
+        for name in self._sceneSpaceParams:
             self._sceneSpaceParams[name] = SceneSpaceConfig(sceneName)
 
         for isPremium in (True, False):

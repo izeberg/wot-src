@@ -3493,32 +3493,32 @@
 		<macros>AUTH_REALM</macros>
 		<value>
 			<item>
-				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught-light-september-2025/
+				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught-light-june-2026/
 				<name>EU</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/onslaught-light-september-2025/
+				https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/onslaught-light-june-2026/
 				<name>ASIA</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/onslaught-light-september-2025/
+				https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/onslaught-light-june-2026/
 				<name>NA</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/onslaught-light-september-2025/
+				https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/onslaught-light-june-2026/
 				<name>CN</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught-light-september-2025/
+				https://webbrg-ct.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught-light-june-2026/
 				<name>CT</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught-light-september-2025/
+				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught-light-june-2026/
 				<name>default</name>
 				<type>url</type>
 			</item>
@@ -4482,6 +4482,16 @@
 			</item>
 		</value>
 	</petSystemInfoPage>
+	<challenges>
+		<type>dict</type>
+		<value>
+			<item>
+				/$LANGUAGE_CODE/promocontent/crucible/
+				<name>info</name>
+				<type>url</type>
+			</item>
+		</value>
+	</challenges>
 	<reportBugLink>
 		https://eu.wargaming.net/support/en/products/wot/help/29775/29787/36153/
 		<type>url</type>

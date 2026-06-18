@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from collections import namedtuple
 LSGameplayAction = namedtuple('LSGameplayAction', ('value', 'targetID', 'id'))
 

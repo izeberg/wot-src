@@ -1,18 +1,20 @@
+from __future__ import absolute_import
+from future.utils import viewvalues
 from helpers import dependency
-from mixins import Deprecated
-from mixins import Quest
-from mixins import HasVehiclesList as _HasVehiclesList
-from mixins import NoProgressBar
-from class_progress import ClassProgressAchievement
-from historical import HistoricalAchievement
-from nation_specific import NationSpecificAchievement
-from rare import RareAchievement
-from regular import RegularAchievement
-from series import SeriesAchievement
-from regular_ext import RegularExtAchievement
-from simple_progress import SimpleProgressAchievement
-from stage import StageAchievement
 from skeletons.gui.server_events import IEventsCache
+from .mixins import Deprecated
+from .mixins import Quest
+from .mixins import HasVehiclesList as _HasVehiclesList
+from .mixins import NoProgressBar
+from .class_progress import ClassProgressAchievement
+from .historical import HistoricalAchievement
+from .nation_specific import NationSpecificAchievement
+from .rare import RareAchievement
+from .regular import RegularAchievement
+from .series import SeriesAchievement
+from .regular_ext import RegularExtAchievement
+from .simple_progress import SimpleProgressAchievement
+from .stage import StageAchievement
 
 class DeprecatedAchievement(Deprecated, RegularAchievement):
     pass
@@ -45,7 +47,7 @@ def getCompletedPersonalMissionsCount(branch, classifiers):
         return quest.isFullCompleted() and quest.getQuestClassifier().classificationAttr in classifiers
 
     result = 0
-    for operation in eventsCache.getPersonalMissions().getOperationsForBranch(branch).itervalues():
+    for operation in viewvalues(eventsCache.getPersonalMissions().getOperationsForBranch(branch)):
         result += len(operation.getQuestsByFilter(_filter))
 
     return result

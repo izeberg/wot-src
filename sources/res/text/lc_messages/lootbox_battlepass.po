@@ -9,16 +9,6 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-
-msgid "autoOpenView/boxCount"
-msgid_plural "plural/autoOpenView/boxCount"
-msgstr[0] "%(count) оставшийся ваучер"
-msgstr[1] "%(count) оставшихся ваучера"
-msgstr[2] "%(count) оставшихся ваучеров"
-
-msgid "autoOpenView/subTitle"
-msgstr "Мы обменяли за вас %(boxCount)."
 
 msgid "awardViews/footer/backButton/"
 msgstr "Назад к ваучерам"
@@ -83,38 +73,6 @@ msgstr "Доступно: %(boxesCount)"
 
 msgid "quantityTitle/noBoxes"
 msgstr "Ваучеры закончились"
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/count"
-msgstr "Ваучеров обменяно: %(boxes)s"
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/header"
-msgstr "Обменяны оставшиеся ваучеры"
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/text"
-msgstr ""
-"После завершения сезона Боевого пропуска мы обменяли за вас все ваучеры и "
-"начислили награды на ваш аккаунт."
-
-msgid "serviceChannelMessages/lootBoxesDisabled/header"
-msgstr "Обмен ваучеров приостановлен"
-
-msgid "serviceChannelMessages/lootBoxesDisabled/text"
-msgstr "Операции с ваучерами временно недоступны: ведутся технические работы."
-
-msgid "serviceChannelMessages/lootBoxesEnabled/header"
-msgstr "Обмен ваучеров доступен"
-
-msgid "serviceChannelMessages/lootBoxesEnabled/text"
-msgstr "Операции с ваучерами снова доступны. Вперёд!"
-
-msgid "serviceChannelMessages/open"
-msgstr "%(boxName)s обменян!"
-
-msgid "serviceChannelMessages/server_error"
-msgstr "Ваучер не обменян"
-
-msgid "serviceChannelMessages/server_error/FAILURE"
-msgstr "Ошибка обмена"
 
 msgid "singleRewardView/footer/openNextButton/"
 msgstr "Обменять следующий"

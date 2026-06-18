@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from future.utils import old_div, viewvalues
 from goodies.GoodieResources import Gold, Credits
 
 class PRICE_TYPE:
@@ -16,7 +18,7 @@ def getItemPrice(item, gameParams, goodies=None, goodieTarget=None):
         priceType = PRICE_TYPE.PROMO
     if (actualPrice[0] == 0 or actualPrice[1] == 0) and goodies and goodieTarget:
         personalDiscounts = goodies.test(goodieTarget, {Credits(defaultPrice[0]), Gold(defaultPrice[1])})
-        for _, discount in personalDiscounts.iteritems():
+        for discount in viewvalues(personalDiscounts):
             if isinstance(discount, Gold) and discount.value <= actualPrice[1]:
                 actualPrice = (
                  0, discount.value)
@@ -42,7 +44,7 @@ def getNextSlotPrice(slots, slotsPrices):
 
 
 def getNextBerthPackPrice(berths, berthsPrices):
-    addPackNumber = (berths - berthsPrices[0]) / berthsPrices[1]
+    addPackNumber = old_div(berths - berthsPrices[0], berthsPrices[1])
     if addPackNumber < 0:
         return 0
     if addPackNumber < len(berthsPrices[2]):

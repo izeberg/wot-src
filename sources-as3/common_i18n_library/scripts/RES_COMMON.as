@@ -29,6 +29,8 @@ package
       
       public static const MAPS_ICONS_BLUEPRINTS_FRAGMENT_CONVERSION_BG:String = "../maps/icons/blueprints/fragment/conversion/bg.png";
       
+      public static const MAPS_ICONS_CHALLENGES_AWARDS_VIEW_BG:String = "../maps/icons/challenges/awards_view/bg.png";
+      
       public static const MAPS_ICONS_COLLECTIONS_INTRO_BG:String = "../maps/icons/collections/intro/bg.png";
       
       public static const MAPS_ICONS_CRYSTALSINFO_BG:String = "../maps/icons/crystalsInfo/bg.png";

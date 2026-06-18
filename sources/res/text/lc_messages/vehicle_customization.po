@@ -97,6 +97,47 @@ msgstr "Небесный сундук"
 msgid "attachment/Celestial/Cus_112_Celestial_XunLeiChong"
 msgstr "Небесное снаряжение"
 
+msgid "attachment/Challenger_s_Bounty"
+msgstr "Награда победителю"
+
+msgid "attachment/Challenger_s_Bounty/Cus_229_Challenges_Insignia"
+msgstr "Пылающая эмблема"
+
+msgid "attachment/Challenger_s_Bounty/Cus_229_Challenges_Insignia/description"
+msgstr ""
+"Желанный символ боевого мастерства. По слухам, начинает пылать после каждого"
+" уничтожения противника."
+
+msgid "attachment/Challenger_s_Bounty/Cus_230_Challenges_Trophy"
+msgstr "Кубок мастера-танкиста"
+
+msgid "attachment/Challenger_s_Bounty/Cus_231_Challenges_Breach"
+msgstr "Знак стойкости"
+
+msgid "attachment/Challenger_s_Bounty/Cus_232_Challenges_Order"
+msgstr "Элитный герб"
+
+msgid "attachment/Challenger_s_Bounty/Cus_233_Challenges_Armor"
+msgstr "Раскалённый снаряд"
+
+msgid "attachment/Field_Salvage"
+msgstr "Полевые трофеи"
+
+msgid "attachment/Field_Salvage/Cus_234_LS_Antenna"
+msgstr "Трофейная антенна"
+
+msgid "attachment/Field_Salvage/Cus_235_LS_ArmorPlate"
+msgstr "Трофейная бронепластина"
+
+msgid "attachment/Field_Salvage/Cus_236_LS_ReinforcedFlashlight"
+msgstr "Трофейный фонарь"
+
+msgid "attachment/Field_Salvage/Cus_237_LS_SmallTurret"
+msgstr "Трофейная башня"
+
+msgid "attachment/Field_Salvage/Cus_238_LS_TrophyWheels"
+msgstr "Трофейные катки"
+
 msgid "attachment/Football_Fever"
 msgstr "Футбольная лихорадка"
 
@@ -1431,6 +1472,15 @@ msgstr "Зимний комбинированный"
 
 msgid "camouflage/2_0_progression/description"
 msgstr "?empty?"
+
+msgid "camouflage/2d_cust_challenges_2026_1/label"
+msgstr "Крещение огнём"
+
+msgid "camouflage/2d_cust_challenges_2026_2/label"
+msgstr "Нарастающий жар"
+
+msgid "camouflage/2d_cust_challenges_2026_3/label"
+msgstr "Пылающая слава"
 
 msgid "camouflage/360_anniversary/description"
 msgstr "?empty?"
@@ -3751,6 +3801,9 @@ msgstr "Всесезонный камуфляж, приуроченный к о�
 msgid "camouflage/br_paid/label"
 msgstr "Стальной охотник"
 
+msgid "camouflage/brazen_bull/label"
+msgstr "Медный бык"
+
 msgid "camouflage/brazil_carnival/description"
 msgstr "?empty?"
 
@@ -4153,6 +4206,9 @@ msgstr "?empty?"
 msgid "camouflage/cn360_mid_autumn_2025_2/label"
 msgstr "Десять солнц"
 
+msgid "camouflage/cn360_relaunch_2026/label"
+msgstr "Золотой стрелок"
+
 msgid "camouflage/cn360_relaunch_820/description"
 msgstr "?empty?"
 
@@ -4464,6 +4520,9 @@ msgstr "?empty?"
 
 msgid "camouflage/countdown_tog2/label"
 msgstr "Хот-TOG"
+
+msgid "camouflage/cowmouflage/label"
+msgstr "Ка-муу-фляж"
 
 msgid "camouflage/cracked_stone_camo/description"
 msgstr ""
@@ -5838,6 +5897,9 @@ msgstr "?empty?"
 msgid "camouflage/liveops_hw_2025/label"
 msgstr "Эхо из преисподней"
 
+msgid "camouflage/liveops_liberty/label"
+msgstr "Леди Свобода"
+
 msgid "camouflage/liveops_manga/description"
 msgstr "?empty?"
 
@@ -5959,6 +6021,9 @@ msgstr "Аномальная метка"
 
 msgid "camouflage/ls26_1/label"
 msgstr "Шрамы аномалии"
+
+msgid "camouflage/ls26_2/label"
+msgstr "Прикосновение Воронки"
 
 msgid "camouflage/lunar26/description"
 msgstr "?empty?"
@@ -6833,6 +6898,9 @@ msgstr "Зимний камуфляж постоянного стиля."
 msgid "camouflage/prem_camouflage_winter/label"
 msgstr "\"Чёрная вдова\" зимний"
 
+msgid "camouflage/pub_cn360_welfare/label"
+msgstr "Лавры чемпиона"
+
 msgid "camouflage/pub_liveops/description"
 msgstr "?empty?"
 
@@ -6862,6 +6930,12 @@ msgstr "?empty?"
 
 msgid "camouflage/pub_west_charity_2/label"
 msgstr "Золотое сердце"
+
+msgid "camouflage/pub_west_community_1/label"
+msgstr "Цифровой рассвет"
+
+msgid "camouflage/pub_west_community_2/label"
+msgstr "Ретробудущее"
 
 msgid "camouflage/pub_west_ebr_racing/label"
 msgstr "Гоночные полосы"
@@ -6898,6 +6972,9 @@ msgstr "?empty?"
 
 msgid "camouflage/pub_west_token_2/label"
 msgstr "Опаловый отлив"
+
+msgid "camouflage/pub_west_token_store/label"
+msgstr "Взрыв красок"
 
 msgid "camouflage/pub_west_ua/description"
 msgstr "?empty?"
@@ -14308,6 +14385,9 @@ msgstr "Тигровые полосы"
 msgid "emblem/special/sticker_883"
 msgstr "День игры"
 
+msgid "emblem/special/sticker_884"
+msgstr "Ка-муу-фляж"
+
 msgid "filter/popover/bonusType/title"
 msgstr "Типы бонусов"
 
@@ -21213,6 +21293,12 @@ msgstr "Ядрышко"
 msgid "projection_decals/special/projection_decal_1064"
 msgstr "Бобр"
 
+msgid "projection_decals/special/projection_decal_1065"
+msgstr "Повышенная готовность"
+
+msgid "projection_decals/special/projection_decal_1066"
+msgstr "Единение с огнём"
+
 msgid "projection_decals/special/projection_decal_107"
 msgstr "Мяч"
 
@@ -21243,6 +21329,27 @@ msgstr "Глобальная карта"
 
 msgid "projection_decals/special/projection_decal_109/description"
 msgstr "Планы на вечер: карты, высадки, две провинции."
+
+msgid "projection_decals/special/projection_decal_1092"
+msgstr "Грозный светляк"
+
+msgid "projection_decals/special/projection_decal_1093"
+msgstr "Артобстрел"
+
+msgid "projection_decals/special/projection_decal_1094"
+msgstr "Бурёнка"
+
+msgid "projection_decals/special/projection_decal_1095"
+msgstr "Железная эмблема"
+
+msgid "projection_decals/special/projection_decal_1096"
+msgstr "Тлеющий щит"
+
+msgid "projection_decals/special/projection_decal_1097"
+msgstr "Расплавленный металл"
+
+msgid "projection_decals/special/projection_decal_1098"
+msgstr "Сирена"
 
 msgid "projection_decals/special/projection_decal_11"
 msgstr "15 сезон на Глобальной карте"
@@ -25556,6 +25663,9 @@ msgstr "В космос!"
 msgid "repaint/cosmonautics_day_2022"
 msgstr "Вверх"
 
+msgid "repaint/cowmouflage"
+msgstr "Ка-муу-фляж"
+
 msgid "repaint/crimson_wind"
 msgstr "Багровый ветер"
 
@@ -26779,7 +26889,7 @@ msgid "special_style/11_11"
 msgstr "Чёрный мрамор"
 
 msgid "special_style/11_11_2024_1"
-msgstr "Tank Titan"
+msgstr "Танчики"
 
 msgid "special_style/11_11_2024_1_desc"
 msgstr "Всесезонный ретро-стиль в честь настоящей аркадной классики."
@@ -27096,6 +27206,58 @@ msgstr ""
 "кричит. Выкованный с точностью и отточенный с амбициями, этот стиль "
 "демонстрирует стойкость британской брони. За холодным «фасадом» скрывается "
 "раскалённая волна огневой мощи, готовая вырваться наружу."
+
+msgid "special_style/2d_cust_challenges_2026_1"
+msgstr "Крещение огнём"
+
+msgid "special_style/2d_cust_challenges_2026_1_desc"
+msgstr "Пылающий всесезонный стиль для тех, кто готов принять Вызов."
+
+msgid "special_style/2d_cust_challenges_2026_1_desc/long"
+msgstr ""
+"Перед тобой испытание, какого ты ещё не встречал: шанс создать в бою "
+"собственную легенду и высечь своё имя в стали. Немногие осмеливаются принять"
+" Вызов — настолько беспощадны и тяжелы его испытания. Ещё меньше тех, кто "
+"способен с ними справиться. Назвать это проверкой танковых навыков будет "
+"преуменьшением. Тебе придётся познать пределы своих возможностей. Это "
+"испытание станет мерилом твоего мужества и стойкости перед лицом невзгод. "
+"Сможет ли страх одержать верх над волей? Или ты используешь свой шанс и "
+"станешь сильнее, чем когда-либо?"
+
+msgid "special_style/2d_cust_challenges_2026_2"
+msgstr "Нарастающий жар"
+
+msgid "special_style/2d_cust_challenges_2026_2_desc"
+msgstr ""
+"Обжигающий всесезонный стиль для тех, кто закаляет свою волю, приняв Вызов."
+
+msgid "special_style/2d_cust_challenges_2026_2_desc/long"
+msgstr ""
+"Напряжение растёт, давление усиливается, но ты не сдаёшься. Каждая деталь "
+"танка напоминает о суровых испытаниях, которые уже позади. С каждым "
+"поверженным противником боевой азарт разгорается с новой силой, а снаряды "
+"разят цели всё яростнее. Ведомый железной решимостью, ты действуешь уверенно"
+" и профессионально. Вызов — это путешествие без остановок, и ничто в этом "
+"мире не сможет удержать тебя на пути к триумфу."
+
+msgid "special_style/2d_cust_challenges_2026_3"
+msgstr "Пылающая слава"
+
+msgid "special_style/2d_cust_challenges_2026_3_desc"
+msgstr ""
+"Раскалённый всесезонный стиль для тех, кто принял Вызов и проложил свой путь"
+" к победе."
+
+msgid "special_style/2d_cust_challenges_2026_3_desc/long"
+msgstr ""
+"Закалённому в суровых испытаниях неведом страх. Ты сталкивался с "
+"трудностями, которые сломили бы любого, кроме самого опытного аса, и каждое "
+"новое задание было сложнее предыдущего. Но ты выдержал всё и стал истинным "
+"чемпионом. В каждом сражении ты демонстрируешь величие Вызова, сокрушая "
+"противника и подавляя его волю. Ты уверенно прокладываешь себе дорогу, "
+"указывая путь последователям, что мечтают повторить невероятные подвиги. "
+"Твоя победа бессмертна, достижения непревзойдённы, а бушующее пламя триумфа "
+"никогда не погаснет."
 
 msgid "special_style/360_anniversary"
 msgstr "Кои"
@@ -32214,6 +32376,23 @@ msgstr "Стальной охотник"
 msgid "special_style/br_paid_desc"
 msgstr "Всесезонный стиль, приуроченный к одноимённому режиму."
 
+msgid "special_style/brazen_bull"
+msgstr "Медный бык"
+
+msgid "special_style/brazen_bull_desc"
+msgstr "Иногда лучше, чтобы легенда оставалась просто легендой."
+
+msgid "special_style/brazen_bull_desc/long"
+msgstr ""
+"«Позволь поведать тебе о том, что с недавних пор не даёт мне покоя. По "
+"велению господина во дворе дворца установили статую быка из блестящей латуни"
+" с полым брюхом. В иные дни, когда что-то или, быть может, кто-то сильно "
+"разгневает правителя, нам, слугам, приказывают разжечь под статуей огонь. "
+"Что происходит далее — для нас загадка, ибо нас отсылают прочь. Однако "
+"вскоре дворец наполняется жутким рёвом. Звук до ужаса похож на человеческий."
+" И я всё задаюсь вопросом: обитает ли в статуе некий дух или это страдает "
+"сам бык?»"
+
 msgid "special_style/brazil_carnival"
 msgstr "Карнавальная ночь"
 
@@ -32636,6 +32815,19 @@ msgstr ""
 "пощадил последнее, оставив его дарить свет и тепло миру. С тех пор в небе "
 "сияет лишь одно солнце."
 
+msgid "special_style/cn360_relaunch_2026"
+msgstr "Золотой стрелок"
+
+msgid "special_style/cn360_relaunch_2026_desc"
+msgstr "Всесезонный стиль, прославляющий бронетехнику во всём её великолепии."
+
+msgid "special_style/cn360_relaunch_2026_desc/long"
+msgstr ""
+"Где бы мы были без танков, и есть ли лучший способ отдать им должное, чем "
+"нести их образ в бой? Изображение танка на золотом фоне украсит как "
+"современную, так и историческую броню. Подобно рыцарскому штандарту, пусть "
+"этот стиль станет вашим личным знаменем."
+
 msgid "special_style/cn360_relaunch_820"
 msgstr "Ведомые"
 
@@ -32990,6 +33182,23 @@ msgid "special_style/cosmonautics_day_desc"
 msgstr ""
 "Всесезонный стиль, олицетворяющий бесконечность и неизведанность "
 "пространства за пределами земной атмосферы."
+
+msgid "special_style/cowmouflage"
+msgstr "Ка-муу-фляж"
+
+msgid "special_style/cowmouflage_desc"
+msgstr "Ко-муу хочется выделиться из толпы?"
+
+msgid "special_style/cowmouflage_desc/long"
+msgstr ""
+"Время брать быка за рога! Забирайте этот пятнистый камуфляж, и пусть от "
+"соперников остаются рожки да ножки. Конечно, для выхода в свет в таком виде "
+"требуется некоторое муу-жество, присущее настоящим сливкам общества. Нельзя "
+"исключать и элемент неожиданности: стоит противнику замешкаться при виде "
+"необычного камуфляжа, как вы сжуёте его броню, будто травку на лужайке. "
+"Кого-то можно даже обратить в бегство. Смотришь на позиции противника— и "
+"будто корова языком слизала! Но хватит болтать. Пора на пастбище. То есть на"
+" стрельбище."
 
 msgid "special_style/cracked_stone_style"
 msgstr "Колотый камень"
@@ -34485,6 +34694,24 @@ msgstr ""
 "едва выдерживает, огибая фигуры, которых никогда не должно было быть. Этой "
 "машине не нужно топливо. Её питает что-то другое..."
 
+msgid "special_style/liveops_liberty"
+msgstr "Леди Свобода"
+
+msgid "special_style/liveops_liberty_desc"
+msgstr "Величественный всесезонный стиль для борцов за свободу."
+
+msgid "special_style/liveops_liberty_desc/long"
+msgstr ""
+"«А мне отдайте из глубин бездонных\n"
+"Своих изгоев, люд забитый свой,\n"
+"Пошлите мне отверженных, бездомных,\n"
+"Я им свечу у двери золотой».\n"
+"\n"
+"\n"
+"Когда раздастся грохот пушек, вспомните эти бессмертные строчки.\n"
+"\n"
+"Защищайте тех, кто не может защитить себя сам."
+
 msgid "special_style/liveops_manga"
 msgstr "Девушки-кошки"
 
@@ -34837,6 +35064,21 @@ msgstr ""
 "встречи с тем, что её создало. Я больше не боюсь воронки в небе. Мой танк "
 "поменялся, и я вместе с ним. Мы больше не жертвы этого вторжения. Мы — его "
 "самая опасная ошибка. Пусть приходят снова. Мы готовы»."
+
+msgid "special_style/ls26_2"
+msgstr "Прикосновение Воронки"
+
+msgid "special_style/ls26_2_desc"
+msgstr ""
+"Искажённый всесезонный стиль с аномальными изменениями структуры брони из-за"
+" контакта с Воронкой."
+
+msgid "special_style/ls26_2_desc/long"
+msgstr ""
+"Выброс энергии, зафиксированный после закрытия Воронки, превысил все "
+"допустимые значения. В этот момент на острове появились десятки обелисков — "
+"временных проводников таинственной энергии. А затем они исчезли. Вместе с "
+"Воронкой, которая оставила неизгладимый след в памяти всех очевидцев."
 
 msgid "special_style/lunar26"
 msgstr "Пылающий скакун"
@@ -36413,6 +36655,23 @@ msgstr ""
 "\n"
 "В годы Великой Отечественной войны ритуал хранения боевого знамени приобрёл особое значение. В условиях сложной боевой обстановки для охраны назначалась знамённая группа из числа особо отличившихся солдат, а для части издавался специальный приказ. Утеря воинской святыни считалась преступлением. В этом случае весь командный состав и виновные попадали под суд военного трибунала, а войсковую часть расформировывали."
 
+msgid "special_style/pub_cn360_welfare"
+msgstr "Лавры чемпиона"
+
+msgid "special_style/pub_cn360_welfare_desc"
+msgstr ""
+"Позолоченный всесезонный стиль, посвящённый Международному чемпионату по "
+"World of Tanks 2026."
+
+msgid "special_style/pub_cn360_welfare_desc/long"
+msgstr ""
+"Станьте свидетелем чего-то поистине исключительного, опасного и редкого. "
+"Пришло время решающей битвы лучших из лучших. Болейте за своего фаворита или"
+" просто наблюдайте за происходящим. Какая бы команда ни одержала победу, ей "
+"предстоит пройти испытание огнём — в буквальном смысле. На этой арене, где "
+"право выступать есть только у избранных, наградой за самые опасные сражения "
+"становится слава."
+
 msgid "special_style/pub_liveops"
 msgstr "Белая акула"
 
@@ -36480,6 +36739,38 @@ msgstr ""
 "другим. Только чистые сердцем способны отдавать, не ожидая ничего взамен. "
 "Такое стремление произрастает из истинной любви и заботы и неизменно делает "
 "мир лучше."
+
+msgid "special_style/pub_west_community_1"
+msgstr "Цифровой рассвет"
+
+msgid "special_style/pub_west_community_1_desc"
+msgstr "Вспомните рассвет цифровой эпохи с этим шикарным всесезонным стилем."
+
+msgid "special_style/pub_west_community_1_desc/long"
+msgstr ""
+"На экранах игровых автоматов мелькают рекорды, в музыкальных чартах гремят "
+"свежие хиты, а ЭЛТ-мониторы сияют неоновыми цветами. Из телевизоров на "
+"шатких стендах звучат заставки передач, глянцевые журналы рекламируют "
+"очередную новинку, а в блестящих пластиковых консолях скрываются целые "
+"вселенные в ожидании нажатия кнопки включения. Звенят монеты, сверкают "
+"логотипы, на видеомагнитофоне мерцает «12:00». Будущее наступило — его можно"
+" забрать домой в картонной коробке и подключить к телевизору."
+
+msgid "special_style/pub_west_community_2"
+msgstr "Ретробудущее"
+
+msgid "special_style/pub_west_community_2_desc"
+msgstr "Вспомните прошедшие десятилетия с этим всесезонным ретростилем."
+
+msgid "special_style/pub_west_community_2_desc/long"
+msgstr ""
+"Будущее словно складывалось по кусочкам. В школах появлялись компьютеры, а "
+"газеты пестрели новостями о спутниках, микрочипах и последних научных "
+"открытиях. Вдоль стен развлекательных центров выстроились ряды игровых "
+"автоматов, гудящие под светом люминесцентных ламп. Даже бабушки в узорчатых "
+"платочках, переговаривающиеся через бетонные балконы многоэтажек, начали "
+"обсуждать все эти новомодные машины. Новая эпоха постепенно обретала "
+"очертания."
 
 msgid "special_style/pub_west_desc"
 msgstr "Всесезонный стиль с клавишами, без которых победа была бы невозможна."
@@ -36589,6 +36880,21 @@ msgstr ""
 "ночи. Вы уверенно мчитесь вперёд, движимые чёткой целью. Вы доверяете своему"
 " опыту и инстинктам, и эта уверенность передаётся окружающим. Пусть смотрят."
 " Пусть восхищаются. Это ваш мир, и вы играете здесь главную роль."
+
+msgid "special_style/pub_west_token_store"
+msgstr "Взрыв красок"
+
+msgid "special_style/pub_west_token_store_desc"
+msgstr ""
+"Этот кричащий всесезонный стиль добавит вашей технике причудливых оттенков."
+
+msgid "special_style/pub_west_token_store_desc/long"
+msgstr ""
+"Если бы можно было изобразить звук разрывающихся снарядов, каким бы он был? "
+"Красного цвета, объятый пламенем? Можно и так, но есть и более абстрактный "
+"вариант. Стоит слегка размыть контуры летящего снаряда, и он превратится в "
+"струящуюся ленту красочных оттенков, которая растекается по пустому холсту, "
+"словно мистическое зелье, пролившееся из хрустального флакона."
 
 msgid "special_style/pub_west_ua"
 msgstr "Батьківщина"

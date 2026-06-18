@@ -1,5 +1,6 @@
-from regular import RegularAchievement
+from __future__ import absolute_import
 from gui.impl import backport
+from gui.shared.gui_items.dossier.achievements.abstract.regular import RegularAchievement
 
 class SeriesAchievement(RegularAchievement):
     __slots__ = ()

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from functools import partial
 import BigWorld, Math, SoundGroups
 from gui.battle_control.battle_constants import VEHICLE_VIEW_STATE

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BattleReplay, SoundGroups, nations, functools
 from constants import ARENA_PERIOD
 from gui.impl import backport

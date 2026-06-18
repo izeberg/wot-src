@@ -1,5 +1,7 @@
+from __future__ import absolute_import
 import logging, random
 from collections import namedtuple
+from future.utils import iteritems, viewitems, viewvalues
 import Event, ResMgr
 from constants import IS_DEVELOPMENT
 from gui.shared.gui_items import GUI_ITEM_TYPE
@@ -65,7 +67,7 @@ class HeroTankController(IHeroTankController):
         if IS_DEVELOPMENT and self.__debugTankCD is not None:
             return self.__debugTankCD
         else:
-            self.__currentTankCD = random.choice(self.__data.keys() or [None]) if self.isEnabled() else None
+            self.__currentTankCD = random.choice(list(self.__data) or [None]) if self.isEnabled() else None
             return self.__currentTankCD
 
     def getCurrentTankCD(self):
@@ -109,7 +111,7 @@ class HeroTankController(IHeroTankController):
     def __fullUpdate(self):
         items = self.itemsCache.items
         getItem = items.getItemByCD
-        self.__invVehiclesIntCD = tuple({intCD for intCD, rData in items.recycleBin.vehiclesBuffer.iteritems() if rData and getItem(intCD).isRestorePossible()}.union(items.inventory.getIventoryVehiclesCDs()))
+        self.__invVehiclesIntCD = tuple({intCD for intCD, rData in viewitems(items.recycleBin.vehiclesBuffer) if rData and getItem(intCD).isRestorePossible()}.union(items.inventory.getIventoryVehiclesCDs()))
 
     def __updateInventoryVehiclesData(self, reason, diff):
         if reason != CACHE_SYNC_REASON.CLIENT_UPDATE:
@@ -132,7 +134,7 @@ class HeroTankController(IHeroTankController):
         heroVehiclesDict = self.lobbyContext.getServerSettings().getHeroVehicles()
         if 'vehicles' in heroVehiclesDict:
             heroVehicles = heroVehiclesDict['vehicles']
-            for vCompDescr, vData in heroVehicles.iteritems():
+            for vCompDescr, vData in viewitems(heroVehicles):
                 if vCompDescr in self.__invVehiclesIntCD:
                     continue
                 self.__data[vCompDescr] = _HeroTankInfo(name=vData.get('name'), url=vData.get('url'), shopUrl=vData.get('shopUrl'), styleID=vData.get('styleID'), crew=self.__createCrew(vData.get('crew'), vCompDescr))
@@ -143,7 +145,7 @@ class HeroTankController(IHeroTankController):
     def __applyActions(self):
         hasHeroTankActions = False
         actions = self._eventsCache.getActions()
-        for action in actions.itervalues():
+        for action in viewvalues(actions):
             steps = action.getData().get('steps', [])
             if not steps:
                 continue
@@ -186,7 +188,7 @@ class HeroTankController(IHeroTankController):
                         continue
                     tData = None
                     tIdx = None
-                    for idx, tMan in tankmen.getNationConfig(nationId).premiumGroups.iteritems():
+                    for idx, tMan in iteritems(tankmen.getNationConfig(nationId).premiumGroups):
                         if tMan.name == tmanId:
                             tData = tMan
                             tIdx = idx

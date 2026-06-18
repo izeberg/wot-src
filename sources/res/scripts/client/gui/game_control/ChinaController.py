@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from adisp import adisp_process
 from gui.Scaleform.locale.MENU import MENU
 from helpers import dependency

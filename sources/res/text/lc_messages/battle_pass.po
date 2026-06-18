@@ -1294,7 +1294,7 @@ msgid "tankmenVoiceover/progression"
 msgstr "В прогрессии на этапе %(progressionLevel)s"
 
 msgid "tankmenVoiceover/received"
-msgstr "Получен"
+msgstr "Получено"
 
 msgid "tankmenVoiceover/shopButton"
 msgstr "В магазин"
@@ -1593,7 +1593,7 @@ msgstr ""
 msgid "tooltips/inProgress/playGame/mapbox"
 msgstr ""
 "Правила заработка очков Боевого пропуска на технике VIII–X уровней в режиме "
-"«Разведка боем»."
+"%(bond_Open)s«Разведка боем»%(bond_Close)s."
 
 msgid "tooltips/inProgress/playGame/randoms"
 msgstr ""

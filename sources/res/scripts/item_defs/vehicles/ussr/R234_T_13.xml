@@ -16,11 +16,11 @@
 	</speedLimits>
 	<invisibility>
 		<moving>
-			0.063
+			0.06
 			<!--BW_String-->
 		</moving>
 		<still>
-			0.125
+			0.12
 			<!--BW_String-->
 		</still>
 		<camouflageBonus>
@@ -28,7 +28,7 @@
 			<!--BW_String-->
 		</camouflageBonus>
 		<firePenalty>
-			0.188
+			0.18
 			<!--BW_String-->
 		</firePenalty>
 	</invisibility>

@@ -165,7 +165,7 @@ class SquadMembersView(ViewImpl, CallbackDelayer):
 
     def createContextMenu(self, event):
         if event.contentID == R.views.common.BackportContextMenu():
-            contextMenuData = getMemberContextMenuData(event, self._platoonCtrl.getPlatoonSlotsData())
+            contextMenuData = getMemberContextMenuData(event, self._getPlatoonSlotsData())
             if contextMenuData is not None:
                 window = BackportContextMenuWindow(contextMenuData, self.getParentWindow())
                 window.onStatusChanged += self.__onStatusChangedContextMenu
@@ -200,7 +200,7 @@ class SquadMembersView(ViewImpl, CallbackDelayer):
         unitMgr = prb_getters.getClientUnitMgr()
         if unitMgr and unitMgr.unit:
             unitMgr.unit.onUnitEstimateInQueueChanged += self._updateMembers
-            unitMgr.unit.onSquadSizeChanged += self._updateMembers
+            unitMgr.unit.onUnitSizeChanged += self._updateMembers
         g_eventBus.addListener(events.CoolDownEvent.PREBATTLE, self.__handleSetPrebattleCoolDown, scope=EVENT_BUS_SCOPE.LOBBY)
         g_eventBus.addListener(events.FightButtonEvent.FIGHT_BUTTON_UPDATE, self._updateReadyButton, scope=EVENT_BUS_SCOPE.LOBBY)
         g_eventBus.addListener(events.HideWindowEvent.HIDE_UNIT_WINDOW, self.__onMinimized, scope=EVENT_BUS_SCOPE.LOBBY)
@@ -231,7 +231,7 @@ class SquadMembersView(ViewImpl, CallbackDelayer):
         unitMgr = prb_getters.getClientUnitMgr()
         if unitMgr and unitMgr.unit:
             unitMgr.unit.onUnitEstimateInQueueChanged -= self._updateMembers
-            unitMgr.unit.onSquadSizeChanged -= self._updateMembers
+            unitMgr.unit.onUnitSizeChanged -= self._updateMembers
         g_eventBus.removeListener(events.CoolDownEvent.PREBATTLE, self.__handleSetPrebattleCoolDown, scope=EVENT_BUS_SCOPE.LOBBY)
         g_eventBus.removeListener(events.FightButtonEvent.FIGHT_BUTTON_UPDATE, self._updateReadyButton, scope=EVENT_BUS_SCOPE.LOBBY)
         g_eventBus.removeListener(events.HideWindowEvent.HIDE_UNIT_WINDOW, self.__onMinimized, scope=EVENT_BUS_SCOPE.LOBBY)

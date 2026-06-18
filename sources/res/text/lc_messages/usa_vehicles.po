@@ -1930,6 +1930,31 @@ msgstr ""
 msgid "A183_XM69_Hacker_short"
 msgstr "Hacker"
 
+msgid "A186_XM94_Shadow"
+msgstr "XM94 Shadow"
+
+msgid "A186_XM94_Shadow_desc"
+msgstr ""
+"Проект танка с классической компоновкой. В качестве средства обороны "
+"предусматривался пост дистанционного управления пулемётной установкой, а для"
+" определения дальности планировалось использовать систему OPTAR. Место "
+"командира должно было оснащаться экспериментальной системой кругового "
+"обзора. Разработка машины остановилась на стадии эскизного проекта."
+
+msgid "A186_XM94_Shadow_long_special"
+msgstr ""
+"XM94 Shadow — американский универсальный средний танк VIII уровня. Благодаря"
+" комфортному орудию, неплохой мобильности и отличному обзору он легко "
+"адаптируется к любым условиям боя: от позиционной борьбы до неожиданных "
+"обходов с фланга. Shadow способна проявить себя на любой карте, не оставляя "
+"противнику ни единого шанса уйти невредимым."
+
+msgid "A186_XM94_Shadow_short"
+msgstr "Shadow"
+
+msgid "A186_XM94_Shadow_short_special"
+msgstr "Отличные УВН, комфортное орудие"
+
 msgid "A187_Ares_75"
 msgstr "Ares 75"
 
@@ -2728,6 +2753,9 @@ msgstr "AN/GRC-7 RC"
 msgid "AN_GRC_6_SPHT"
 msgstr "AN/GRC-6 SPHT"
 
+msgid "AN_GRC_6_XM94_Shadow"
+msgstr "AN/GRC-6 (XM94)"
+
 msgid "AN_GRC_7"
 msgstr "AN/GRC-7"
 
@@ -3193,6 +3221,9 @@ msgstr "T803"
 
 msgid "Chassis_A183_XM69_Hacker"
 msgstr "XM69 Hacker"
+
+msgid "Chassis_A186_XM94_Shadow"
+msgstr "XM94 Shadow"
 
 msgid "Chassis_A187_Ares_75"
 msgstr "Ares 75 DARPA"
@@ -3986,6 +4017,14 @@ msgid "Continental_AV_1790_3_T32_short"
 msgstr ""
 "Continental\n"
 "AV-1790-3 (T32)"
+
+msgid "Continental_AV_1790_3_XM94_Shadow"
+msgstr "Continental AV-1790-3 (XM94)"
+
+msgid "Continental_AV_1790_3_XM94_Shadow_short"
+msgstr ""
+"Continental\n"
+"AV-1790-3 (XM94)"
 
 msgid "Continental_AV_1790_5A"
 msgstr "Continental AV-1790-5A"
@@ -5363,6 +5402,9 @@ msgstr "T803"
 msgid "Turret_1_A183_XM69_Hacker"
 msgstr "XM69 Hacker"
 
+msgid "Turret_1_A186_XM94_Shadow"
+msgstr "XM94 Shadow"
+
 msgid "Turret_1_A187_Ares_75"
 msgstr "Ares 75"
 
@@ -5918,6 +5960,18 @@ msgstr ""
 
 msgid "Wright_R-975EC2"
 msgstr "Wright R-975EC2"
+
+msgid "_103mm_APDS_T_T183_XM94_Shadow"
+msgstr "APDS-T T183 (XM94)"
+
+msgid "_103mm_Gun_T63_XM94_Shadow"
+msgstr "103 mm Gun T63 (XM94)"
+
+msgid "_103mm_HEATFS_T187_XM94_Shadow"
+msgstr "HEAT-FS T187 (XM94)"
+
+msgid "_103mm_HE_T189_XM94_Shadow"
+msgstr "HE T189 (XM94)"
 
 msgid "_105_mm_T141E5_AT"
 msgstr "105 mm T141E5 AT"

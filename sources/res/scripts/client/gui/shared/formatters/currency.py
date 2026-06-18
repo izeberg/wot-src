@@ -1,4 +1,6 @@
+from __future__ import absolute_import, division
 import logging
+from past.builtins import unicode
 from gui.impl import backport
 from gui.shared.formatters import text_styles
 from gui.shared.money import Currency

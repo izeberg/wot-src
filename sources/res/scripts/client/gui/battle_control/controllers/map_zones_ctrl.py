@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import Event, SoundGroups
 from cgf_components.zone_components import RandomEventZoneUINotificationType, WeatherZoneUINotificationType
 from gui.battle_control.arena_info.interfaces import IMapZonesController

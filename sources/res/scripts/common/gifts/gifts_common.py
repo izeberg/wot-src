@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from constants import IS_DEVELOPMENT
 from soft_exception import SoftException
 UNKNOWN_SENDER_ID = 0

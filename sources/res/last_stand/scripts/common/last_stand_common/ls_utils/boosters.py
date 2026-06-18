@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from last_stand_common.last_stand_constants import BOOSTER_FACTOR_OPERATIONS
 
 def getVehicleBoosterFactorsComponent(vehicle):

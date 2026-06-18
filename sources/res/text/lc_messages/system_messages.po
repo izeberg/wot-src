@@ -801,6 +801,62 @@ msgstr ""
 "Не удалось купить «%s». Нет свободных слотов в Ангаре. Пожалуйста, "
 "освободите слот."
 
+msgid "challenges/activate/serverError"
+msgstr "Не удалось активировать задачи «Вызова». Попробуйте позже."
+
+msgid "challenges/activate/success/text"
+msgstr ""
+"Первая задача в серии доступна для прохождения. Отправляйтесь в бой и "
+"примите Вызов!"
+
+msgid "challenges/activate/success/title"
+msgstr "«Вызов: %(challengeName)s» активирован!"
+
+msgid "challenges/challengeEnd/button"
+msgstr "К Вызову"
+
+msgid "challenges/challengeEnd/text"
+msgstr "Выполните их сейчас и получите награды."
+
+msgid "challenges/challengeEnd/title"
+msgstr "Задачи «Вызова» скоро закончатся!"
+
+msgid "challenges/challengeMissionComplete/header"
+msgstr "Поздравляем!"
+
+msgid "challenges/challengeMissionComplete/text"
+msgstr "Вы прошли «Вызов: %(challengeName)s»! Получены награды:"
+
+msgid "challenges/formatter/spent/credits"
+msgstr "Потрачено кредитов:"
+
+msgid "challenges/formatter/spent/crystal"
+msgstr "Потрачено бон:"
+
+msgid "challenges/formatter/spent/gold"
+msgstr "Потрачено золота:"
+
+msgid "challenges/restart/free/text"
+msgstr "Использован один бесплатный перезапуск: прогресс задач сброшен."
+
+msgid "challenges/restart/free/title"
+msgstr "«Вызов: %(challengeName)s» перезапущен бесплатно"
+
+msgid "challenges/restart/paid/title"
+msgstr "«Вызов: %(challengeName)s» перезапущен"
+
+msgid "challenges/restart/serverError"
+msgstr "Не удалось перезапустить задачи «Вызова». Попробуйте позже."
+
+msgid "challenges/serverError/COOLDOWN"
+msgstr "Действие недоступно. Дождитесь завершения текущей операции."
+
+msgid "challenges/surrender/serverError"
+msgstr "Не удалось отказаться от задач «Вызова». Попробуйте позже."
+
+msgid "challenges/surrender/success/text"
+msgstr "Вы отказались от «Вызова: %(challengeName)s». Серия задач провалена."
+
 msgid "change_tankman_role/FORBIDDEN"
 msgstr ""
 "Невозможно сменить специальность члену экипажа: у танка уникальный "
@@ -3931,10 +3987,10 @@ msgstr ""
 "можете в него вступить из-за некорректно выбранной машины. Выберите другую "
 "машину."
 
-msgid "squad/notValidMaxVehTypeDeleted"
+msgid "squad/notValidMaxCountVehDeleted"
 msgstr ""
-"Машина %(vehName)s исключена из состава взвода из-за ограничения по "
-"количеству техники этого типа во взводе. Выберите другой тип техники."
+"Машина %(vehName)s была удалена из-за лимита такой техники в одном взводе. "
+"Выберите другую машину."
 
 msgid "squad_bonus/switch_off/body"
 msgstr ""

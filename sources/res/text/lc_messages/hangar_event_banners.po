@@ -10,6 +10,31 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "event/ChallengeEventBanner/tooltip/description"
+msgstr ""
+"Примите Вызов, определяющий чемпионов! Активируйте серию задач и "
+"зарабатывайте награды за их выполнение. Одновременно можно активировать "
+"только одну серию, а задачи должны выполняться по порядку. Испытайте себя и "
+"проложите собственный путь к славе!"
+
+msgid "event/ChallengeEventBanner/tooltip/timer/text"
+msgstr "Ближайшая задача «Вызова» заканчивается через %(timer)s"
+
+msgid "event/ChallengeEventBanner/tooltip/title"
+msgstr "Вызов"
+
+msgid "event/ChallengesEventBanner/inProgress/description"
+msgstr "Проложите путь к славе!"
+
+msgid "event/ChallengesEventBanner/inProgress/description/activeChallenge"
+msgstr "Активно!"
+
+msgid "event/ChallengesEventBanner/intro/description"
+msgstr "Проложите путь к славе!"
+
+msgid "event/ChallengesEventBanner/title"
+msgstr "ВЫЗОВ"
+
 msgid "event/IntegratedAuctionEntryPont/inProgress/description"
 msgstr "Доступен новый лот!"
 

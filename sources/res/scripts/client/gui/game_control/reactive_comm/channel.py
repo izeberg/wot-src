@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, re, zlib
 from collections import deque
 import typing, Event, websocket
@@ -222,8 +223,10 @@ class SubscriptionStatus(object):
     def __repr__(self):
         return ('{}(client={}, server={})').format(self.__class__.__name__, self.__clientStatus, self.__serverStatus)
 
-    def __nonzero__(self):
+    def __bool__(self):
         return self.isSubscribed
+
+    __nonzero__ = __bool__
 
     @property
     def isSubscribed(self):

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import Math
 _mov = 0
 _rcp = 1

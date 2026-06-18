@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, BigWorld, Event, constants
 from account_helpers import AccountSettings
 from account_helpers.AccountSettings import GUI_START_BEHAVIOR
@@ -45,7 +46,7 @@ class WalletController(IWalletController):
         self.__clearWeaver()
         super(WalletController, self).fini()
 
-    def onLobbyStarted(self, event):
+    def onLobbyStarted(self, ctx):
         wallet = BigWorld.player().serverSettings['wallet']
         self.__useGold = bool(wallet[0])
         self.__useFreeXP = bool(wallet[1])
@@ -78,7 +79,7 @@ class WalletController(IWalletController):
 
     @property
     def dynamicComponentsStatuses(self):
-        return {currencyCode:(self.__currentStatus if 1 else self.STATUS.AVAILABLE) for currencyCode in self.itemsCache.items.stats.dynamicCurrencies.keys() if not constants.IS_CHINA}
+        return {currencyCode:(self.__currentStatus if 1 else self.STATUS.AVAILABLE) for currencyCode in self.itemsCache.items.stats.dynamicCurrencies if not constants.IS_CHINA}
 
     @property
     def isSyncing(self):

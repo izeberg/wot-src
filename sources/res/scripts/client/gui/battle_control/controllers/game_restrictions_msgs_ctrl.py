@@ -1,4 +1,5 @@
-import sys, time
+from __future__ import absolute_import
+import time
 from constants import getTimeOnArena, getArenaStartTime
 from messenger import MessengerEntry, g_settings
 from gui.battle_control.avatar_getter import getAvatarPlayLimits, getArenaUniqueID
@@ -8,6 +9,7 @@ from gui.shared.utils.scheduled_notifications import Notifiable, SimpleNotifier
 from gui.impl import backport
 from gui.impl.gen import R
 from helpers import time_utils
+_MAX_TIME = 2147483647
 
 class GameRestrictionsMessagesController(Notifiable, IBattleController):
     TIME_RESERVE = 59
@@ -39,25 +41,25 @@ class GameRestrictionsMessagesController(Notifiable, IBattleController):
         res = self.__playLimits['dailyPlayLimit']
         if res != -1:
             return res
-        return sys.maxint
+        return _MAX_TIME
 
     def __getWeeklyPlayTimeLeft(self):
         res = self.__playLimits['weeklyPlayLimit']
         if res != -1:
             return res
-        return sys.maxint
+        return _MAX_TIME
 
     def __getCurfew(self):
         res = self.__playLimits['curfew']
         if res != -1:
             return res
-        return sys.maxint
+        return _MAX_TIME
 
     def __getSessionPlayTimeLeft(self):
         res = self.__playLimits['sessionLimit']
         if res != -1:
             return res
-        return sys.maxint
+        return _MAX_TIME
 
     def __getTimeLeft(self):
         return min(self.__getCurfew(), self.__getDailyPlayTimeLeft(), self.__getWeeklyPlayTimeLeft(), self.__getSessionPlayTimeLeft())

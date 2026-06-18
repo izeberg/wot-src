@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, time
 from functools import partial
 import typing, weakref, BigWorld, SoundGroups
@@ -358,7 +359,7 @@ def __runComponentsSync(ctx, funcs):
                     break
                 yield future_async.resignTickIfRequired(0.0)
             else:
-                _logger.warn('__runCacheSync(): %s has been called for an already deleted PlayerAccount object.', funcName)
+                _logger.warning('__runCacheSync(): %s has been called for an already deleted PlayerAccount object.', funcName)
                 success = False
                 break
         except future_async.BrokenPromiseError:
@@ -436,7 +437,7 @@ def __notifyOnSyncComplete(ctx, callback=None):
     g_playerEvents.onGuiCacheSyncCompleted(ctx)
     ServicesLocator.itemsCache.onSyncCompleted(CACHE_SYNC_REASON.SHOW_GUI, {})
     if not playerRef():
-        _logger.warn('onSyncCompleted(): the item cache update callback has been called for an already deleted PlayerAccount object.')
+        _logger.warning('onSyncCompleted(): the item cache update callback has been called for an already deleted PlayerAccount object.')
         callback(False)
         return
     ServicesLocator.gameState.onAccountShowGUI(ServicesLocator.lobbyContext.getGuiCtx())

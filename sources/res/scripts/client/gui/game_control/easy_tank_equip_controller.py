@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import Event
 from typing import Optional, TYPE_CHECKING
 from constants import Configs

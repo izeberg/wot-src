@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from items import vehicles
 EXTERNAL_RENT_ENTITLEMENT_PREFIX = 'ext_rent'
 

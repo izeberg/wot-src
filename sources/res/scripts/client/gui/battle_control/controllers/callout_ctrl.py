@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging
 from collections import namedtuple
 import BigWorld, BattleReplay, CommandMapping, Event, Keys
@@ -233,7 +234,7 @@ class CalloutController(CallbackDelayer, IViewComponentsController):
             commandName = _ACTIONS.battleChatCommandFromActionID(cmd.getID()).name
             if self.__isActive is True and vehicleIDToAnswer == avatar_getter.getPlayerVehicleID() and self.__commandReceivedData is not None and self.__commandReceivedData.name is not None and commandName == _CALLOUT_COMMANDS_TO_REPLY_COMMANDS[self.__commandReceivedData.name]:
                 self.__executeHide(True, self.__commandReceivedData.name)
-            if commandName not in _CALLOUT_COMMANDS_TO_REPLY_COMMANDS.keys():
+            if commandName not in _CALLOUT_COMMANDS_TO_REPLY_COMMANDS:
                 return
             if commandName == BATTLE_CHAT_COMMAND_NAMES.COMMENDATION:
                 if not self.__isCommendationsCalloutEnabled or not self.__isCalloutEnabled:

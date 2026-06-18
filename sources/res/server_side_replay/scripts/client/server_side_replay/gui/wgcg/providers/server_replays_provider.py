@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from copy import deepcopy
 import typing
 from server_side_replay.gui.wgcg.providers.base_provider import BaseProvider, RequestSettings, UpdatePeriodType

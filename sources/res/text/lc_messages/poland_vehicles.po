@@ -190,11 +190,20 @@ msgstr "Wz. 64GC Bzyg"
 msgid "Chassis_Pl37_CS_67_Szakal"
 msgstr "CS-67 Szakal"
 
+msgid "Chassis_Pl38_63TP_Rycerski"
+msgstr "63TP Rycerski"
+
 msgid "Chassis_Pl39_Husarz"
 msgstr "Husarz"
 
 msgid "Chassis_Pl40_Krazownik"
 msgstr "Krazownik"
+
+msgid "Chassis_Pl44_Kolczatka"
+msgstr "Kolczatka"
+
+msgid "DNT_10_R"
+msgstr "DNT-10 (R)"
 
 msgid "Fug7A"
 msgstr "FuG 7"
@@ -1153,6 +1162,28 @@ msgstr ""
 msgid "Pl37_CS_67_Szakal_short"
 msgstr "Szakal"
 
+msgid "Pl38_63TP_Rycerski"
+msgstr "63TP Rycerski"
+
+msgid "Pl38_63TP_Rycerski_descr"
+msgstr ""
+"В послевоенные годы Польша выпускала танки по советским лицензиям, однако сохраняла потенциал для собственных разработок. В 1960-х годах был предложен проект тяжёлого танка 63TP Rycerski — машины с классической компоновкой, призванной объединить лучшие решения западной и советской школ танкостроения.\n"
+"Проект предполагал современный уровень огневой мощи и подвижности, а также улучшенные условия работы экипажа. Планировалось увеличить углы вертикального наведения орудия и упростить обслуживание. Боекомплект первой очереди размещался в кормовой нише башни, что обеспечивало удобство заряжающего и лучшую балансировку башни, снижая нагрузку на приводы наведения. В металле проект реализован не был."
+
+msgid "Pl38_63TP_Rycerski_long_special"
+msgstr ""
+"63TP Rycerski — польский тяжёлый танк IX уровня с необычным набором "
+"характеристик для универсального ТТ. У него хорошие показатели максимальной "
+"скорости, орудие с высоким разовым уроном и комфортными УВН, а также крепкая"
+" броня башни. В отличие от большинства машин этой роли, Rycerski может "
+"занимать ключевые позиции в самом начале боя."
+
+msgid "Pl38_63TP_Rycerski_short"
+msgstr "63TP"
+
+msgid "Pl38_63TP_Rycerski_short_special"
+msgstr "Комфортные УВН, хорошая мобильность"
+
 msgid "Pl39_Husarz"
 msgstr "Husarz"
 
@@ -1207,6 +1238,38 @@ msgstr "Krazownik"
 msgid "Pl40_Krazownik_short_special"
 msgstr "Хорошее бронирование, высокий разовый урон"
 
+msgid "Pl44_Kolczatka"
+msgstr "Kolczatka"
+
+msgid "Pl44_Kolczatka_desc"
+msgstr ""
+"В начале 1970-х годов в ПНР началась разработка экспериментальной "
+"противотанковой САУ Kolczatka с упором на высокую мобильность и низкую "
+"стоимость по сравнению с более тяжёлыми машинами. Открытое боевое отделение "
+"и экипаж из четырёх человек упрощали конструкцию и снижали массу. Ключевой "
+"особенностью должна была стать система управления огнём с лазерным "
+"дальномером и ночным прицелом. Также планировалось использовать "
+"унифицированное шасси от Zakłady Mechaniczne Łabędy с гусеницами с "
+"резиновыми башмаками, что обеспечивало высокую скорость и позволяло "
+"двигаться по дорогам общего пользования. Проект закрыли на стадии эскизов во"
+" второй половине 1970-х годов из-за финансовых ограничений, зависимости от "
+"кооперации в рамках Варшавского договора и смещения интереса военных в "
+"сторону ПТРК."
+
+msgid "Pl44_Kolczatka_long_special"
+msgstr ""
+"Kolczatka — польская ПТ-САУ IX уровня, которая сочетает характеристики "
+"снайперской самоходки и среднего танка. У машины высокая огневая мощь, "
+"хорошая мобильность, вращающаяся башня и отличные углы склонения орудия. Она"
+" эффективна на дальних дистанциях, но также может поддерживать союзников в "
+"авангарде и даже сражаться на первой линии."
+
+msgid "Pl44_Kolczatka_short"
+msgstr "Kolczatka"
+
+msgid "Pl44_Kolczatka_short_special"
+msgstr "Вращающаяся башня, хорошая мобильность"
+
 msgid "Polski_FIAT_122BC"
 msgstr "Polski FIAT 122BC"
 
@@ -1218,6 +1281,9 @@ msgstr "RKB/c"
 
 msgid "RKD"
 msgstr "RKD"
+
+msgid "RM_31T"
+msgstr "RM-31T"
 
 msgid "RR_Kestrel"
 msgstr "RR Kestrel"
@@ -1242,6 +1308,9 @@ msgstr "RTU «Jesion-M»"
 
 msgid "R_112"
 msgstr "R-112"
+
+msgid "R_112_R"
+msgstr "R-112 (R)"
 
 msgid "R_113"
 msgstr "R-113"
@@ -1432,11 +1501,17 @@ msgstr "Wz. 64GC Bzyg"
 msgid "Turret_1_Pl37_CS_67_Szakal"
 msgstr "CS-67 Szakal"
 
+msgid "Turret_1_Pl38_63TP_Rycerski"
+msgstr "63TP Rycerski"
+
 msgid "Turret_1_Pl39_Husarz"
 msgstr "Husarz"
 
 msgid "Turret_1_Pl40_Krazownik"
 msgstr "Krazownik"
+
+msgid "Turret_1_Pl44_Kolczatka"
+msgstr "Kolczatka"
 
 msgid "Turret_2_Pl05_50TP_Tyszkiewicza"
 msgstr "50TP Tyszkiewicza II"
@@ -1479,6 +1554,9 @@ msgstr "CS-53M-1H"
 
 msgid "Turret_3_Pl23_CS_53_SH"
 msgstr "CS-53 MH"
+
+msgid "UTD_20_FM"
+msgstr "UTD-20-FM"
 
 msgid "V-2-34_B"
 msgstr "V-2-34"
@@ -1753,6 +1831,15 @@ msgstr "OF-471"
 msgid "_122mm_OF-471M"
 msgstr "OF-471M"
 
+msgid "_122mm_PK_62_PCC"
+msgstr "PK-62 (PCC)"
+
+msgid "_122mm_POB_62_PCC"
+msgstr "POB-62 (PCC)"
+
+msgid "_122mm_PP_62_PCC"
+msgstr "PP-62 (PCC)"
+
 msgid "_122mm_UBR-471_PB"
 msgstr "BR-471PB"
 
@@ -1788,6 +1875,9 @@ msgstr "WOF-471P (53TP)"
 
 msgid "_122mm_WOF_471P_W"
 msgstr "WOF-471P (W)"
+
+msgid "_122mm_Wz_53_PCC"
+msgstr "122 mm Wz. 53 (PCC)"
 
 msgid "_122mm_armata_wz_53_56"
 msgstr "122 mm armata wz. 53/56"
@@ -1845,6 +1935,18 @@ msgstr "AZ-PB-46A"
 
 msgid "_130mm_R_14_wz_56"
 msgstr "130 mm R 14 wz. 56"
+
+msgid "_140mm_armata_wz_65"
+msgstr "140 mm armata wz. 65"
+
+msgid "_140mm_pocisk_kumulacyjny_wz_65"
+msgstr "Pocisk kumulacyjny wz. 65"
+
+msgid "_140mm_pocisk_podkalibrowy_wz_65"
+msgstr "Pocisk podkalibrowy wz. 65"
+
+msgid "_140mm_pocisk_wybuchowy_wz_65"
+msgstr "Pocisk wybuchowy wz. 65"
 
 msgid "_152mm_J_2"
 msgstr "152 mm J 2"

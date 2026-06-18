@@ -1,14 +1,15 @@
+from __future__ import absolute_import
 from abc import ABCMeta, abstractmethod
+from py2to3.patched_future import with_metaclass
 __all__ = ('BaseDataAccessor', )
 
-class BaseDataAccessor(object):
-    __metaclass__ = ABCMeta
+class BaseDataAccessor(with_metaclass(ABCMeta, object)):
 
     def __init__(self):
         pass
 
     @abstractmethod
-    def login(self, callback, account_id, token, jwt):
+    def login(self, callback, account_id, spa_token, jwt):
         pass
 
     @abstractmethod

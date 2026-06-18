@@ -18,13 +18,13 @@ msgid "info/difficult/1"
 msgstr "Сложность «Стандарт»"
 
 msgid "info/difficult/2"
-msgstr "Сложность «Тяжело»"
+msgstr "Сложность «Продвинутый»"
 
 msgid "info/difficult/3"
 msgstr "Сложность «Жесть»"
 
 msgid "info/mapName"
-msgstr "Последний рубеж • Линия Зигфрида • {difficulty}"
+msgstr "Последний рубеж • {mapName} • {difficulty}"
 
 msgid "info/respawnCount"
 msgstr "Количество возрождений: {count}"
@@ -42,22 +42,22 @@ msgid "ls_finish/reason/5/lose"
 msgstr "Все союзники покинули бой."
 
 msgid "ls_finish/reason/last_stand/1/win"
-msgstr "Зеро уничтожен, но это лишь начало."
+msgstr "Отличная работа! Готовы к миссии посложнее?"
 
 msgid "ls_finish/reason/last_stand/11/win"
 msgstr "Все противники на сложности «Стандарт» уничтожены."
 
 msgid "ls_finish/reason/last_stand_hard/1/win"
-msgstr "Зеро уничтожен. Вы спасли мир от вторжения."
+msgstr "Невероятный успех! Немногие доходят до этого уровня."
 
 msgid "ls_finish/reason/last_stand_hard/11/win"
 msgstr "Все противники на сложности «Жесть» уничтожены."
 
 msgid "ls_finish/reason/last_stand_medium/1/win"
-msgstr "Зеро уничтожен. Но конец ли это?"
+msgstr "Впечатляющая работа! Время для настоящего испытания."
 
 msgid "ls_finish/reason/last_stand_medium/11/win"
-msgstr "Все противники на сложности «Тяжело» уничтожены."
+msgstr "Все противники на сложности «Продвинутый» уничтожены."
 
 msgid "ribbon/ban"
 msgstr ""

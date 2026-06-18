@@ -1,5 +1,6 @@
+from __future__ import absolute_import
 from dossiers2.common.DossierBlockBuilders import *
-from battle_statistics_layouts import *
+from dossiers2.custom.battle_statistics_layouts import *
 from dossiers2.custom.dependencies import CLUB_BATTLES_STAT_DEPENDENCIES
 from dossiers2.custom.dependencies import CLUB_ACHIEVEMENTS_DEPENDENCIES
 _rated7x7BlockBuilder = StaticSizeBlockBuilder('rated7x7', RATED_7X7_BLOCK_LAYOUT, {}, [])

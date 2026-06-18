@@ -6721,5 +6721,25 @@
 				<_3347>desertRat.png</_3347>
 			</icons>
 		</desertRat>
+		<servicewoman>
+			<groupID>364</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>female</sex>
+			<notInShop>true</notInShop>
+			<tags>commander  passportReplacementForbidden</tags>
+			<roles>commander</roles>
+			<firstNames>
+				<_3349>#china_crew:names/servicewoman_n</_3349>
+			</firstNames>
+			<lastNames>
+				<_3349>#china_crew:names/servicewoman</_3349>
+			</lastNames>
+			<icons>
+				<_3349>servicewoman.png</_3349>
+			</icons>
+		</servicewoman>
 	</premiumGroups>
 </root>

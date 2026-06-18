@@ -1,4 +1,5 @@
 import re, typing, operator, time, BigWorld
+from challenges_common import isChallengeQuest
 from constants import EVENT_TYPE, EMAIL_CONFIRMATION_QUEST_ID
 from customization_quests_common import deserializeToken, validateToken
 from gui import makeHtmlString
@@ -401,7 +402,7 @@ def isRegularQuest(eventID):
 def isCommonBattleQuest(event):
     eventID = event.getID()
     idGameModeEvent = isDailyEpic(eventID) or isRankedDaily(eventID) or isRankedPlatform(eventID)
-    return not (idGameModeEvent or isPremium(eventID) or isDailyQuest(eventID) or isWeeklyQuest(eventID) or isBattleMattersQuestID(eventID) or event.getType() == EVENT_TYPE.PERSONAL_MISSION)
+    return not (idGameModeEvent or isPremium(eventID) or isDailyQuest(eventID) or isWeeklyQuest(eventID) or isBattleMattersQuestID(eventID) or isChallengeQuest(eventID) or event.getType() == EVENT_TYPE.PERSONAL_MISSION)
 
 
 @dependency.replace_none_kwargs(c11nService=ICustomizationService)

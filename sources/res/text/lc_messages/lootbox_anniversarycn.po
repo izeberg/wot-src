@@ -25,15 +25,6 @@ msgstr ""
 "При открытии этих коробок вы можете получить премиум машины IX уровня, "
 "внутриигровую валюту и прочие ценные награды."
 
-msgid "boxTooltip/guaranteed/text/bronze"
-msgstr "Осталось открыть %(count) до гарантированной награды"
-
-msgid "boxTooltip/guaranteed/text/gold"
-msgstr "Осталось открыть %(count) до гарантированной награды"
-
-msgid "boxTooltip/guaranteed/text/silver"
-msgstr "Осталось открыть %(count) до гарантированной награды"
-
 msgid "boxTooltip/howGet/text/bronze"
 msgstr ""
 "Могут быть получены в подарок при покупке предметов в Премиум магазине, а "
@@ -67,9 +58,6 @@ msgid "entryPoint/tooltip/description"
 msgstr ""
 "Специальные коробки, которые содержат новые и уникальные машины VIII–X уровней, а также другие награды.\n"
 "Вы можете получить коробки в подарок за покупку предметов в Премиум магазине, а также при открытии коробок любого другого типа."
-
-msgid "entryPoint/tooltip/title"
-msgstr "Что такое Дарованные коробки и как их получить?"
 
 msgid "entryPoint/tooltip/warningDescription"
 msgstr ""
@@ -116,17 +104,6 @@ msgid "noBoxesView/description/"
 msgstr ""
 "У вас нет коробок.\n"
 "Вы можете получить их в Премиум магазине."
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/count"
-msgstr "Открыто коробок: %(boxes)s"
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/header"
-msgstr "Оставшиеся коробки открыты"
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/text"
-msgstr ""
-"После завершения события мы открыли за вас коробки и начислили их "
-"содержимое."
 
 msgid "singleRewardView/tooltip/boxName/"
 msgstr "Избранной коробкой"

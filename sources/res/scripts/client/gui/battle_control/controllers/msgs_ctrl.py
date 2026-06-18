@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import weakref, BigWorld
 from helpers import dependency
 import BattleReplay, Event
@@ -279,7 +280,7 @@ class EpicBattleMessagesPlayer(BattleMessagesPlayer):
                 targetLane = voTarget.gameModeSpecific.getValue(EPIC_BATTLE_KEYS.PLAYER_GROUP)
                 attackerLane = voAttacker.gameModeSpecific.getValue(EPIC_BATTLE_KEYS.PLAYER_GROUP)
                 playerLane = playerDataComp.physicalLane
-                if playerLane != targetLane and playerLane != attackerLane:
+                if playerLane not in (targetLane, attackerLane):
                     return False
         return True
 
@@ -305,7 +306,7 @@ class EpicBattleMessagesController(BattleMessagesController):
                 targetLane = voTarget.gameModeSpecific.getValue(EPIC_BATTLE_KEYS.PLAYER_GROUP)
                 attackerLane = voAttacker.gameModeSpecific.getValue(EPIC_BATTLE_KEYS.PLAYER_GROUP)
                 playerLane = playerDataComp.physicalLane
-                if playerLane != targetLane and playerLane != attackerLane:
+                if playerLane not in (targetLane, attackerLane):
                     return False
         return True
 

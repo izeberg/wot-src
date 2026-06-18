@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from shared_utils import CONST_CONTAINER
 
 class BROWSER(CONST_CONTAINER):

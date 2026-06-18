@@ -1,12 +1,13 @@
+from __future__ import absolute_import
 from collections import OrderedDict
+from py2to3.patched_future import with_metaclass
 from serialization.field import intField
 from serialization.serializable_component import SerializableComponent
 from wrapped_reflection_framework import ReflectionMetaclass
 from ..types import C11nSerializationTypes
 __all__ = ('SequenceComponent', )
 
-class SequenceComponent(SerializableComponent):
-    __metaclass__ = ReflectionMetaclass
+class SequenceComponent(with_metaclass(ReflectionMetaclass, SerializableComponent)):
     customType = C11nSerializationTypes.SEQUENCE
     fields = OrderedDict((
      (

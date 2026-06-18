@@ -160,14 +160,17 @@
 				<slotType>clan</slotType>
 				<slotId>10000</slotId>
 				<rayStart>
-					1.1897 0.615355 2.62986
+					0 0.329712 3.140145
 					<!--BW_String-->
 				</rayStart>
 				<rayEnd>
-					1.1897 0.268326 2.43095
+					0 -0.017317 2.941236
 					<!--BW_String-->
 				</rayEnd>
-				<rayUp>0 0 -1</rayUp>
+				<rayUp>
+					0 0.497283 -0.867588
+					<!--BW_String-->
+				</rayUp>
 				<size>
 					0.32
 					<!--BW_String-->

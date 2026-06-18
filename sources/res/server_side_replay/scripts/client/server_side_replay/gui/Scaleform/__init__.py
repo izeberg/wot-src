@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from server_side_replay.gui.shared.event_dispatcher import showReplays
 from gui.shared.system_factory import registerMenuItems
 from helpers import dependency

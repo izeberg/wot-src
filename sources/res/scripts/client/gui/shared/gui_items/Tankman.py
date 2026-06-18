@@ -1,11 +1,16 @@
+from __future__ import absolute_import, division
 import time
+from builtins import range
 from collections import OrderedDict, namedtuple
 from copy import copy
+from functools import total_ordering
+from future.utils import iteritems, lfilter, listvalues, viewitems
 from itertools import chain
+from past.builtins import cmp
 import typing
 from constants import NEW_PERK_SYSTEM as NPS, SkinInvData
 from enum import Enum
-from gui import GUI_NATIONS_ORDER_INDEX, TANKMEN_ROLES_ORDER_DICT, nationCompareByIndex
+from gui import GUI_NATIONS_ORDER_INDEX, TANKMEN_ROLES_ORDER_DICT, nationSortKeyByIndex
 from gui.impl import backport
 from gui.impl.gen import R
 from gui.shared.gui_items import GUI_ITEM_TYPE, ItemsCollection, collectKpi
@@ -83,7 +88,7 @@ class TankmenComparator(object):
     def __call__(self, first, second):
         if first is None or second is None:
             return 1
-        res = nationCompareByIndex(first.nationID, second.nationID)
+        res = cmp(nationSortKeyByIndex(first.nationID), nationSortKeyByIndex(second.nationID))
         if res:
             return res
         else:
@@ -96,7 +101,7 @@ class TankmenComparator(object):
                     tman1vehicle = self._vehicleGetter(first.vehicleInvID)
                     tman2vehicle = self._vehicleGetter(second.vehicleInvID)
                     if tman1vehicle is not None and tman2vehicle is not None:
-                        res = tman1vehicle.__cmp__(tman2vehicle)
+                        res = cmp(tman1vehicle, tman2vehicle)
                         if res:
                             return res
                 TANKMEN_ROLES_ORDER = Tankman.TANKMEN_ROLES_ORDER
@@ -107,6 +112,7 @@ class TankmenComparator(object):
             return cmp(first.lastUserName, second.lastUserName) or 1
 
 
+@total_ordering
 class Tankman(GUIItem):
     NO_VEHICLE_INV_ID = -1
     _itemsCache = dependency.descriptor(IItemsCache)
@@ -153,7 +159,7 @@ class Tankman(GUIItem):
          self.nationID, _descr.vehicleTypeID))
         self._vehicleInvID = self.NO_VEHICLE_INV_ID
         self._vehicleDescr = None
-        self._vehicleBonuses = dict()
+        self._vehicleBonuses = {}
         self._vehicleSlotIdx = vehicleSlotIdx
         if vehicle is not None:
             self._vehicleInvID = vehicle.invID
@@ -170,8 +176,19 @@ class Tankman(GUIItem):
         self._comparator = TankmenComparator()
         return
 
-    def __cmp__(self, other):
-        return self._comparator(self, other)
+    def __lt__(self, other):
+        return self._compare(other) < 0
+
+    def __eq__(self, other):
+        if other is None or not isinstance(other, Tankman):
+            return False
+        return self.invID == other.invID
+
+    def __hash__(self):
+        return self._invID
+
+    def __repr__(self):
+        return 'Tankman<id:%d, nation:%d, vehicleID:%d>' % (self.invID, self.nationID, self.vehicleInvID)
 
     def _buildSkills(self, proxy):
         return [ getTankmanSkill(skill, self.role, self, proxy) for skill in self.descriptor.skills if skill != 'any' ]
@@ -202,7 +219,7 @@ class Tankman(GUIItem):
             return bonusSkills
 
     def _buildSkillsMap(self):
-        return dict([ (skill.name, skill) for skill in self.skills ])
+        return {skill.name:skill for skill in self.skills}
 
     def _equippedSkinID(self, proxy):
         if proxy is not None and proxy.inventory.isSynced():
@@ -292,11 +309,11 @@ class Tankman(GUIItem):
 
     @property
     def bonusSkillsCount(self):
-        return len(filter(None, chain(*self._bonusSkills.values())))
+        return len(lfilter(None, chain(*listvalues(self._bonusSkills))))
 
     @property
     def bonusSkillsCountByRole(self):
-        return {role:len(filter(None, skills)) for role, skills in self._bonusSkills.iteritems()}
+        return {role:len(lfilter(None, skills)) for role, skills in iteritems(self._bonusSkills)}
 
     @property
     def bonusSkillsLevels(self):
@@ -571,7 +588,7 @@ class Tankman(GUIItem):
             if self.roleLevel == tankmen.MAX_SKILL_LEVEL:
                 skillSeqNum = lastSkillNumValue
             needXp = 0
-            for level in xrange(nextSkillLevel, tankmen.MAX_SKILL_LEVEL):
+            for level in range(nextSkillLevel, tankmen.MAX_SKILL_LEVEL):
                 needXp += descr.levelUpXpCost(level, skillSeqNum)
 
             return needXp - descr.freeXP
@@ -651,7 +668,7 @@ class Tankman(GUIItem):
     def allSkillsLearned(self):
         allowedGroups = [
          'common'] + list(self.combinedRoles)
-        for group, skills in self.getPossibleSkillsByRole().iteritems():
+        for group, skills in viewitems(self.getPossibleSkillsByRole()):
             if group not in allowedGroups:
                 continue
             for skill in skills:
@@ -750,6 +767,9 @@ class Tankman(GUIItem):
         else:
             return self._itemsCache.items.getVehicle(self.vehicleInvID)
 
+    def _compare(self, other):
+        return self._comparator(self, other)
+
     def __packSkill(self, skillItem):
         return {'id': skillItem.name, 
            'iconName': skillItem.extensionLessIconName, 
@@ -759,18 +779,9 @@ class Tankman(GUIItem):
            'tankmanID': self.invID, 
            'isSituational': skillItem.isSituational}
 
-    def __eq__(self, other):
-        if other is None or not isinstance(other, Tankman):
-            return False
-        return self.invID == other.invID
-
-    def __repr__(self):
-        return 'Tankman<id:%d, nation:%d, vehicleID:%d>' % (
-         self.invID, self.nationID, self.vehicleInvID)
-
 
 class BaseBookConvertingFormatter(object):
-    __crewBooks = list()
+    __crewBooks = []
 
     def getTextMessage(self, header, qtyPrefix=''):
         formatedDate = str(time.strftime('%d.%m.%Y %H:%M:%S', time.localtime(time.time())))
@@ -780,7 +791,7 @@ class BaseBookConvertingFormatter(object):
 
     def setCrewBooks(self, crewBooks, itemsCache):
         self.__crewBooks = []
-        for intCD, count in crewBooks.iteritems():
+        for intCD, count in iteritems(crewBooks):
             crewBook = itemsCache.items.getItemByCD(intCD)
             if crewBook is None:
                 continue
@@ -998,7 +1009,7 @@ def crewMemberRealSkillLevel(vehicle, skillName, commonWithIncrease=True, skipIr
                 _, _, isRelevant, isSkillActive, _ = getSkillStates(skillName, skillRole, tankman, tdescr)
                 if skipIrrelevantState:
                     isRelevant = True
-                bonusSkills = [ s.name for s in sum(tankman.bonusSkills.values(), []) if s and s.isEnable ]
+                bonusSkills = [ s.name for s in sum(listvalues(tankman.bonusSkills), []) if s and s.isEnable ]
                 isMajorRoleSkill = isCommonSkill or skillRoleType == tankman.role
                 if isMajorRoleSkill:
                     hasMaxSkillsInRole = len(tankman.skills) == NPS.MAX_MAJOR_PERKS

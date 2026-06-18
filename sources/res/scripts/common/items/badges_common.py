@@ -1,6 +1,6 @@
+from __future__ import absolute_import
 import struct
 from typing import TYPE_CHECKING, List, Tuple, Any
-import battle_pass_common
 if TYPE_CHECKING:
     from BaseAccount import BaseAccount
 ExtraInfo = List[Any]
@@ -41,14 +41,16 @@ class BadgesCommon(object):
             badgeIDs = list(struct.unpack_from(fmt, packedData, offset))
             offset += struct.calcsize(fmt)
         else:
-            badgeIDs = list()
+            badgeIDs = []
         extraInfoLen, offset = BadgesCommon._unpackLen(packedData, offset)
         if extraInfoLen:
             extraInfo = list(struct.unpack_from(BadgesCommon._BADGES_EXTRA_INFO, packedData, offset))
             offset += struct.calcsize(BadgesCommon._BADGES_EXTRA_INFO)
         else:
-            extraInfo = list()
-        return ((badgeIDs, extraInfo), offset - initialOffset)
+            extraInfo = []
+        return (
+         (
+          badgeIDs, extraInfo), offset - initialOffset)
 
     @staticmethod
     def _getBadgeIDsFormat(badgesLen):

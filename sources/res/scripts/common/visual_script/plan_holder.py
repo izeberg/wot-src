@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from future.utils import viewitems
 from debug_utils import LOG_ERROR
 
 class PlanHolder(object):
@@ -73,7 +75,7 @@ class PlanHolder(object):
             self.plan.start(self.params)
 
     def _fetchInputParams(self):
-        for name, value in self.__inputParamCache.iteritems():
+        for name, value in viewitems(self.__inputParamCache):
             self.plan.setOptionalInputParam(name, value)
 
         self.__inputParamCache.clear()
@@ -86,7 +88,7 @@ class PlanHolder(object):
 
     def setOptionalInputParams(self, **kwargs):
         if self.isLoaded:
-            for k, v in kwargs.iteritems():
+            for k, v in viewitems(kwargs):
                 self.plan.setOptionalInputParam(k, v)
 
             return

@@ -1,7 +1,8 @@
-from dossiers2.ui.achievements import ACHIEVEMENT_BLOCK as _AB
-from abstract import RegularExtAchievement
-from abstract.mixins import NoProgressBar
+from __future__ import absolute_import
 from arena_achievements import ACHIEVEMENT_CONDITIONS, ACHIEVEMENT_CONDITIONS_EXT
+from dossiers2.ui.achievements import ACHIEVEMENT_BLOCK as _AB
+from gui.shared.gui_items.dossier.achievements.abstract import RegularExtAchievement
+from gui.shared.gui_items.dossier.achievements.abstract.mixins import NoProgressBar
 
 class HeroesOfRassenayAchievement(NoProgressBar, RegularExtAchievement):
 

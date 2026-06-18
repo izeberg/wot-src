@@ -1,3 +1,4 @@
+from __future__ import absolute_import, division
 import math, time
 from gui.Scaleform.locale.MENU import MENU
 from gui.impl import backport
@@ -153,15 +154,15 @@ class RentLeftFormatter(object):
             formatter = defaultFormatter
         identifier = None
         timeLeftString = ''
-        extraData = dict()
+        extraData = {}
         if rentData.seasonType == GameSeasonType.RANKED:
             identifier, timeLeftString, extraData = self.getRentRankedSeasonLeftStr(rentData, timeStyle)
-        if rentData.seasonType == GameSeasonType.EPIC:
+        elif rentData.seasonType == GameSeasonType.EPIC:
             return i18n.makeString(localization % _SEASON_TYPE_KEY[rentData.seasonType] + '/base')
+        ctx.update(extraData)
+        if not identifier:
+            return ''
         else:
-            ctx.update(extraData)
-            if not identifier:
-                return ''
             return formatter(localization % _SEASON_TYPE_KEY[rentData.seasonType] + '/%s', identifier, timeLeftString, ctx)
 
     def getRentRankedSeasonLeftStr(self, rentData, timeStyle):

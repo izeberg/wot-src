@@ -1,4 +1,6 @@
+from __future__ import absolute_import
 import logging, typing
+from future.utils import viewvalues
 from PlayerEvents import g_playerEvents
 from constants import PREBATTLE_TYPE
 from gui.game_control.wotlda.cache import CrewCache
@@ -66,7 +68,7 @@ class CrewAssistantCtrl(object):
 
     def validateOrderSets(self, orderSets):
         hasCommonSet, hasLegendarySet = False, False
-        for commonPercent, legendaryPercent in orderSets.itervalues():
+        for commonPercent, legendaryPercent in viewvalues(orderSets):
             hasCommonSet |= commonPercent > 0.0
             hasLegendarySet |= legendaryPercent > 0.0
             if hasCommonSet and hasLegendarySet:

@@ -21,9 +21,6 @@ msgstr ""
 "Это особые коробки, содержащие новые и уникальные предметы, такие как "
 "премиум техника, 2D-стили, кредиты и многое другое."
 
-msgid "entryPoint/tooltip/title"
-msgstr "Что такое Весенние коробки и как их получить?"
-
 msgid "entryPoint/tooltip/warningTitle"
 msgstr "Весенние коробки временно недоступны"
 
@@ -40,14 +37,3 @@ msgstr ""
 "из них, то премиум машина VIII–IX уровня из списка наград, которой у вас ещё"
 " нет, выпадет из %(guaranteed0)s-й коробки. После выпадения техники счётчик "
 "сбрасывается."
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/count"
-msgstr "Открыто коробок: %(boxes)s"
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/header"
-msgstr "Оставшиеся коробки открыты"
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/text"
-msgstr ""
-"После завершения события мы открыли за вас коробки и начислили их "
-"содержимое."

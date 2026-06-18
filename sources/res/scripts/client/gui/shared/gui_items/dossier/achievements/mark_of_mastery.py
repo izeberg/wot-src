@@ -1,6 +1,7 @@
-from helpers import i18n
-from abstract import ClassProgressAchievement
+from __future__ import absolute_import
 from dossiers2.ui.achievements import ACHIEVEMENT_BLOCK as _AB, MARK_OF_MASTERY
+from gui.shared.gui_items.dossier.achievements.abstract import ClassProgressAchievement
+from helpers import i18n
 from shared_utils import CONST_CONTAINER
 MASTERY_IS_NOT_ACHIEVED = 0
 

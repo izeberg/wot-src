@@ -1,9 +1,13 @@
+from __future__ import absolute_import
+import typing
 from debug_utils import LOG_ERROR
 from items.components import component_constants
 from items.components import legacy_stuff
-from items.components import shared_components
 from items.components import skills_constants
 from soft_exception import SoftException
+if typing.TYPE_CHECKING:
+    from past.builtins import unicode
+    from items.components import shared_components
 
 class SPECIAL_VOICE_TAG(object):
     BUFFON = 'buffonSpecialVoice'
@@ -159,7 +163,7 @@ class RanksSet(object):
         self.__rankIDsByNames = {}
 
     def __repr__(self):
-        return ('RanksSet({})').format(self.__rankIDsByNames.keys())
+        return ('RanksSet({})').format(list(self.__rankIDsByNames))
 
     def add(self, rank):
         self.__rankIDsByNames[rank.name] = len(self.__ranks)
@@ -324,7 +328,7 @@ class NationGroup(legacy_stuff.LegacyStuff):
 
     @property
     def isUnique(self):
-        return 1 == len(self.__firstNamesIDs) * len(self.__lastNamesIDs) * len(self.__iconsIDs)
+        return len(self.__firstNamesIDs) * len(self.__lastNamesIDs) * len(self.__iconsIDs) == 1
 
 
 class NationConfig(legacy_stuff.LegacyStuff):
@@ -419,7 +423,7 @@ class NationConfig(legacy_stuff.LegacyStuff):
 
 
 class LoreGroupComponent(object):
-    __slots__ = 'descr_by_nation'
+    __slots__ = ('descr_by_nation', )
     DEFAULT = 'default'
 
     def __init__(self, descr):

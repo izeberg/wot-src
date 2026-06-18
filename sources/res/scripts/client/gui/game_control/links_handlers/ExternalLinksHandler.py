@@ -1,4 +1,6 @@
+from __future__ import absolute_import
 import typing, logging
+from future.utils import viewitems
 from adisp import adisp_async, adisp_process
 from gui import GUI_SETTINGS
 from gui.game_control.links import URLMacros
@@ -50,7 +52,7 @@ class ExternalLinksHandler(IExternalLinksController):
     def init(self):
         self.__urlMacros = URLMacros()
         addListener = g_eventBus.addListener
-        for eventType, handlerName in _LISTENERS.iteritems():
+        for eventType, handlerName in viewitems(_LISTENERS):
             handler = getattr(self, handlerName, None)
             if not handler:
                 _logger.error('Handler is not found %s %s', eventType, handlerName)
@@ -67,9 +69,9 @@ class ExternalLinksHandler(IExternalLinksController):
             self.__urlMacros.clear()
             self.__urlMacros = None
         removeListener = g_eventBus.removeListener
-        for eventType, handlerName in _LISTENERS.iteritems():
+        for eventType, handlerName in viewitems(_LISTENERS):
             handler = getattr(self, handlerName, None)
-            if handler:
+            if handler is not None:
                 removeListener(eventType, handler)
 
         super(ExternalLinksHandler, self).fini()

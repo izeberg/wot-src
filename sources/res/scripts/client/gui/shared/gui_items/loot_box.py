@@ -1,4 +1,8 @@
+from __future__ import absolute_import
 from enum import Enum
+from functools import total_ordering
+from future.utils import iteritems
+from past.builtins import cmp
 from typing import TYPE_CHECKING
 from gui.impl import backport
 from gui.impl.gen import R
@@ -48,6 +52,7 @@ CATEGORIES_GUI_ORDER_NY = (
  NewYearCategories.ORIENTAL,
  NewYearCategories.FAIRYTALE)
 
+@total_ordering
 class LootBox(GUIItem):
     __slots__ = ('__id', '__invCount', '__isEnabled', '__type', '__category', '__bonus',
                  '__historyName', '__statsName', '__guaranteedFrequency', '__guaranteedFrequencyName',
@@ -64,8 +69,14 @@ class LootBox(GUIItem):
         return 'LootBox(id=%d, type=%s, category=%s, count=%d)' % (self.getID(), self.getType(),
          self.getCategory(), self.getInventoryCount())
 
-    def __cmp__(self, other):
-        return cmp(self.getID(), other.getID())
+    def __eq__(self, other):
+        return self._compare(other) == 0
+
+    def __lt__(self, other):
+        return self._compare(other) < 0
+
+    def __hash__(self):
+        return self.getID()
 
     def updateCount(self, invCount):
         self.__invCount = invCount
@@ -121,6 +132,9 @@ class LootBox(GUIItem):
     def getUseStats(self):
         return bool(self.__statsName)
 
+    def _compare(self, other):
+        return cmp(self.getID(), other.getID())
+
     def __updateByConfig(self, lootBoxConfig):
         self.__isEnabled = lootBoxConfig.get('enabled')
         self.__type = lootBoxConfig.get('type')
@@ -134,7 +148,7 @@ class LootBox(GUIItem):
 
     @staticmethod
     def __readProbabilityBonusLimit(limitsCfg):
-        for probabilityBonusName, limit in limitsCfg.iteritems():
+        for probabilityBonusName, limit in iteritems(limitsCfg):
             if 'useBonusProbabilityAfter' in limit:
                 return (probabilityBonusName, limit['useBonusProbabilityAfter'] + 1)
 
@@ -142,7 +156,7 @@ class LootBox(GUIItem):
 
     @staticmethod
     def __readFrequencyLimit(limitsCfg):
-        for limitName, limit in limitsCfg.iteritems():
+        for limitName, limit in iteritems(limitsCfg):
             if 'guaranteedFrequency' in limit:
                 return (limitName, limit['guaranteedFrequency'])
 

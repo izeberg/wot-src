@@ -6,6 +6,7 @@
 		<AN_VRC-3_LS_BOT>6506</AN_VRC-3_LS_BOT>
 		<AN-ARC-27_LS_BOT_v2>6000</AN-ARC-27_LS_BOT_v2>
 		<SCR_528_LS_PLAYER>6507</SCR_528_LS_PLAYER>
+		<SCR_508_1_LS_BOT>6503</SCR_508_1_LS_BOT>
 	</ids>
 	<shared>
 		<AN-ARC-27_LS_BOT>
@@ -15,7 +16,7 @@
 			<price>54000</price>
 			<notInShop>true</notInShop>
 			<weight>120</weight>
-			<distance>50</distance>
+			<distance>700</distance>
 			<maxHealth>200</maxHealth>
 			<maxRegenHealth>150</maxRegenHealth>
 			<repairCost>3</repairCost>
@@ -27,7 +28,7 @@
 			<price>54000</price>
 			<notInShop>true</notInShop>
 			<weight>80</weight>
-			<distance>50</distance>
+			<distance>700</distance>
 			<maxHealth>200</maxHealth>
 			<maxRegenHealth>150</maxRegenHealth>
 			<repairCost>3</repairCost>
@@ -39,7 +40,7 @@
 			<notInShop>true</notInShop>
 			<price>51600</price>
 			<weight>160</weight>
-			<distance>50</distance>
+			<distance>700</distance>
 			<maxHealth>250</maxHealth>
 			<maxRegenHealth>75</maxRegenHealth>
 			<repairCost>
@@ -54,7 +55,7 @@
 			<price>54000</price>
 			<notInShop>true</notInShop>
 			<weight>120</weight>
-			<distance>50</distance>
+			<distance>700</distance>
 			<maxHealth>200</maxHealth>
 			<maxRegenHealth>150</maxRegenHealth>
 			<repairCost>3</repairCost>
@@ -71,5 +72,17 @@
 			<maxRegenHealth>150</maxRegenHealth>
 			<repairCost>3</repairCost>
 		</SCR_528_LS_PLAYER>
+		<SCR_508_1_LS_BOT>
+			<userString>#last_stand.usa_vehicles.extend:SCR_508_1_A130_Super_Hellcat_LS_BOT</userString>
+			<tags/>
+			<notInShop>true</notInShop>
+			<level>8</level>
+			<price>21600</price>
+			<weight>100</weight>
+			<distance>700</distance>
+			<maxHealth>200</maxHealth>
+			<maxRegenHealth>150</maxRegenHealth>
+			<repairCost>3</repairCost>
+		</SCR_508_1_LS_BOT>
 	</shared>
 </root>

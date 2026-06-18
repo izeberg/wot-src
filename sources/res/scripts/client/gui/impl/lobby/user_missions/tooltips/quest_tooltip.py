@@ -1,15 +1,14 @@
-from abc import ABCMeta
+from __future__ import absolute_import
 from frameworks.wulf import ViewSettings
 from gui.impl.gen import R
 from gui.impl.gen.view_models.views.lobby.user_missions.widget.widget_quest_model import WidgetQuestModel
 from gui.impl.pub import ViewImpl
-from gui.shared.missions.packers.bonus import weeklyBonusSort
+from gui.shared.missions.packers.bonus import weeklyBonusSortKey
 from gui.shared.missions.packers.events import packQuestBonusModel
 from helpers import dependency
 from skeletons.gui.shared import IItemsCache
 
 class BaseQuestTooltip(ViewImpl):
-    __metaclass__ = ABCMeta
     _itemsCache = dependency.descriptor(IItemsCache)
 
     def __init__(self, quest):
@@ -48,9 +47,9 @@ class BaseQuestTooltip(ViewImpl):
     def _packBonuses(self, model, data, bonusPacker):
         bonuses = model.getBonuses()
         bonuses.clear()
-        packQuestBonusModel(quest=data, packer=bonusPacker, array=bonuses, sort=self._getRewardsSortFunc())
+        packQuestBonusModel(quest=data, packer=bonusPacker, array=bonuses, sortKey=self._getRewardsSortKey())
 
-    def _getRewardsSortFunc(self):
+    def _getRewardsSortKey(self):
         raise NotImplementedError
 
 
@@ -61,7 +60,7 @@ class DailyQuestTooltip(BaseQuestTooltip):
         settings.model = WidgetQuestModel()
         return settings
 
-    def _getRewardsSortFunc(self):
+    def _getRewardsSortKey(self):
         return
 
 
@@ -72,5 +71,5 @@ class WeeklyQuestTooltip(BaseQuestTooltip):
         settings.model = WidgetQuestModel()
         return settings
 
-    def _getRewardsSortFunc(self):
-        return weeklyBonusSort
+    def _getRewardsSortKey(self):
+        return weeklyBonusSortKey

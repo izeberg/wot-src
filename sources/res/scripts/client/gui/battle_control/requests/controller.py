@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from collections import namedtuple
 import BigWorld, AccountCommands
 from debug_utils import LOG_WARNING
@@ -40,7 +41,7 @@ class _AvatarRequester(RequestsByIDProcessor):
         return BigWorld.player().prebattleInvitations
 
     def _doCall(self, method, *args, **kwargs):
-        requestID = self._idsGenerator.next()
+        requestID = next(self._idsGenerator)
 
         def _callback(code, errStr, data):
             ctx = self._requests.get(requestID)

@@ -199,17 +199,21 @@ package
       
       public static const MEMBERS_FOOTER_INVALIDVEHICLELEVEL:String = "#platoon:members/footer/invalidVehicleLevel";
       
-      public static const MEMBERS_FOOTER_SCOUTFULL:String = "#platoon:members/footer/scoutFull";
+      public static const MEMBERS_FOOTER_VEHICLESGROUPISFULL:String = "#platoon:members/footer/vehiclesGroupIsFull";
       
-      public static const MEMBERS_FOOTER_SPGFULL:String = "#platoon:members/footer/spgFull";
+      public static const MEMBERS_FOOTER_VEHICLESGROUPISFULL_SCOUT:String = "#platoon:members/footer/vehiclesGroupIsFull/scout";
       
-      public static const MEMBERS_FOOTER_WHEELEDFULL:String = "#platoon:members/footer/wheeledFull";
+      public static const MEMBERS_FOOTER_VEHICLESGROUPISFULL_ROLE_LT_UNIVERSAL:String = "#platoon:members/footer/vehiclesGroupIsFull/role_LT_universal";
       
-      public static const MEMBERS_FOOTER_MEDIUMTANKFULL:String = "#platoon:members/footer/mediumTankFull";
+      public static const MEMBERS_FOOTER_VEHICLESGROUPISFULL_ROLE_LT_WHEELED:String = "#platoon:members/footer/vehiclesGroupIsFull/role_LT_wheeled";
       
-      public static const MEMBERS_FOOTER_HEAVYTANKFULL:String = "#platoon:members/footer/heavyTankFull";
+      public static const MEMBERS_FOOTER_VEHICLESGROUPISFULL_MEDIUMTANK:String = "#platoon:members/footer/vehiclesGroupIsFull/mediumTank";
       
-      public static const MEMBERS_FOOTER_AT_SPG_FULL:String = "#platoon:members/footer/AT_SPG_Full";
+      public static const MEMBERS_FOOTER_VEHICLESGROUPISFULL_HEAVYTANK:String = "#platoon:members/footer/vehiclesGroupIsFull/heavyTank";
+      
+      public static const MEMBERS_FOOTER_VEHICLESGROUPISFULL_AT_SPG:String = "#platoon:members/footer/vehiclesGroupIsFull/AT_SPG";
+      
+      public static const MEMBERS_FOOTER_VEHICLESGROUPISFULL_SPG:String = "#platoon:members/footer/vehiclesGroupIsFull/SPG";
       
       public static const MEMBERS_FOOTER_COMP7TOPPLAYER:String = "#platoon:members/footer/comp7TopPlayer";
       

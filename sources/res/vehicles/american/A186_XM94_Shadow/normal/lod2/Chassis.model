@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A186_XM94_Shadow/normal/lod2/Chassis</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/american/A186_XM94_Shadow/normal/lod3/Chassis</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.513086 0.000915 -2.702393</min>
+		<max>1.513086 0.971789 2.753879</max>
+	</visibilityBox>
+</root>

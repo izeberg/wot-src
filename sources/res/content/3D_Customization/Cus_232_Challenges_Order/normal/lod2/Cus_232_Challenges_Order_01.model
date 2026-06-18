@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_232_Challenges_Order/normal/lod3/Cus_232_Challenges_Order_01</parent>
+	<extent>96.000000</extent>
+	<nodefullVisual>content/3D_Customization/Cus_232_Challenges_Order/normal/lod2/Cus_232_Challenges_Order_01</nodefullVisual>
+	<visibilityBox>
+		<min>-0.487181 -0.055285 -0.793595</min>
+		<max>0.119103 0.118834 0.776863</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

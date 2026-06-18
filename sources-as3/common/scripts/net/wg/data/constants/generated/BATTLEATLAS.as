@@ -2619,6 +2619,8 @@ package net.wg.data.constants.generated
       
       public static const GERMANY_G19_WESPE:String = "germany-G19_Wespe";
       
+      public static const GERMANY_G200_CHI_GO:String = "germany-G200_Chi_Go";
+      
       public static const GERMANY_G20_MARDER_II:String = "germany-G20_Marder_II";
       
       public static const GERMANY_G21_PANZER_JAGER_I:String = "germany-G21_PanzerJager_I";
@@ -2885,6 +2887,8 @@ package net.wg.data.constants.generated
       
       public static const ITALY_IT37_SERPENTE:String = "italy-It37_Serpente";
       
+      public static const ITALY_IT38_DONNOLA:String = "italy-It38_Donnola";
+      
       public static const ITALY_IT39_COCCODRILLO:String = "italy-It39_Coccodrillo";
       
       public static const ITALY_IT40_PREDATORE:String = "italy-It40_Predatore";
@@ -3087,9 +3091,13 @@ package net.wg.data.constants.generated
       
       public static const POLAND_PL37_CS_67_SZAKAL:String = "poland-Pl37_CS_67_Szakal";
       
+      public static const POLAND_PL38_63_TP_RYCERSKI:String = "poland-Pl38_63TP_Rycerski";
+      
       public static const POLAND_PL39_HUSARZ:String = "poland-Pl39_Husarz";
       
       public static const POLAND_PL40_KRAZOWNIK:String = "poland-Pl40_Krazownik";
+      
+      public static const POLAND_PL44_KOLCZATKA:String = "poland-Pl44_Kolczatka";
       
       public static const SWEDEN_S01_STRV_74_A2:String = "sweden-S01_Strv_74_A2";
       
@@ -3696,6 +3704,8 @@ package net.wg.data.constants.generated
       public static const USA_A182_T803:String = "usa-A182_T803";
       
       public static const USA_A183_XM69_HACKER:String = "usa-A183_XM69_Hacker";
+      
+      public static const USA_A186_XM94_SHADOW:String = "usa-A186_XM94_Shadow";
       
       public static const USA_A187_ARES_75:String = "usa-A187_Ares_75";
       
@@ -4587,6 +4597,8 @@ package net.wg.data.constants.generated
       
       public static const BADGE_228:String = "badge_228";
       
+      public static const BADGE_229:String = "badge_229";
+      
       public static const BADGE_23:String = "badge_23";
       
       public static const BADGE_231:String = "badge_231";
@@ -4979,6 +4991,10 @@ package net.wg.data.constants.generated
       
       public static const LS_DAMAGE_LOG_ALPHA_16X16:String = "ls_damageLog_alpha_16x16";
       
+      public static const LS_DAMAGE_LOG_ARCHER_16X16:String = "ls_damageLog_archer_16x16";
+      
+      public static const LS_DAMAGE_LOG_BASTION_16X16:String = "ls_damageLog_bastion_16x16";
+      
       public static const LS_DAMAGE_LOG_BOMBER_16X16:String = "ls_damageLog_bomber_16x16";
       
       public static const LS_DAMAGE_LOG_BOMBER_ALPHA_16X16:String = "ls_damageLog_bomber_alpha_16x16";
@@ -5011,6 +5027,14 @@ package net.wg.data.constants.generated
       
       public static const GOAL_ALPHA_PURPLE:String = "goal_alpha_purple";
       
+      public static const GOAL_ARCHER:String = "goal_archer";
+      
+      public static const GOAL_ARCHER_DEAD:String = "goal_archer_dead";
+      
+      public static const GOAL_ARCHER_DEAD_PURPLE:String = "goal_archer_dead_purple";
+      
+      public static const GOAL_ARCHER_PURPLE:String = "goal_archer_purple";
+      
       public static const GOAL_AT_SPG:String = "goal_AT-SPG";
       
       public static const GOAL_AT_SPG_DEAD:String = "goal_AT-SPG_dead";
@@ -5018,6 +5042,14 @@ package net.wg.data.constants.generated
       public static const GOAL_AT_SPG_DEAD_PURPLE:String = "goal_AT-SPG_dead_purple";
       
       public static const GOAL_AT_SPG_PURPLE:String = "goal_AT-SPG_purple";
+      
+      public static const GOAL_BASTION:String = "goal_bastion";
+      
+      public static const GOAL_BASTION_DEAD:String = "goal_bastion_dead";
+      
+      public static const GOAL_BASTION_DEAD_PURPLE:String = "goal_bastion_dead_purple";
+      
+      public static const GOAL_BASTION_PURPLE:String = "goal_bastion_purple";
       
       public static const GOAL_BOMBER:String = "goal_bomber";
       
@@ -5213,6 +5245,22 @@ package net.wg.data.constants.generated
       
       public static const LS_ALPHA_ENEMY_RED:String = "ls_alpha_enemy_red";
       
+      public static const LS_ARCHER_ENEMY_DEAD_PURPLE:String = "ls_archer_enemy_dead_purple";
+      
+      public static const LS_ARCHER_ENEMY_DEAD_RED:String = "ls_archer_enemy_dead_red";
+      
+      public static const LS_ARCHER_ENEMY_PURPLE:String = "ls_archer_enemy_purple";
+      
+      public static const LS_ARCHER_ENEMY_RED:String = "ls_archer_enemy_red";
+      
+      public static const LS_BASTION_ENEMY_DEAD_PURPLE:String = "ls_bastion_enemy_dead_purple";
+      
+      public static const LS_BASTION_ENEMY_DEAD_RED:String = "ls_bastion_enemy_dead_red";
+      
+      public static const LS_BASTION_ENEMY_PURPLE:String = "ls_bastion_enemy_purple";
+      
+      public static const LS_BASTION_ENEMY_RED:String = "ls_bastion_enemy_red";
+      
       public static const LS_BOMBER_ALPHA_ENEMY_DEAD_PURPLE:String = "ls_bomber_alpha_enemy_dead_purple";
       
       public static const LS_BOMBER_ALPHA_ENEMY_DEAD_RED:String = "ls_bomber_alpha_enemy_dead_red";
@@ -5323,9 +5371,9 @@ package net.wg.data.constants.generated
       
       public static const LS_ICON_TOXIC_CHAT_OFF:String = "ls_icon_toxic_chat_off";
       
-      public static const LS_LEFT_STATS_MUTE:String = "ls_left_stats_mute";
-      
       public static const LS_PLAYERS_PANEL_SELF_BG:String = "ls_playersPanel_selfBg";
+      
+      public static const LS_SPEAK_ICON:String = "ls_speak_icon";
       
       public static const LS_SQUAD_INVITE_RECEIVED:String = "ls_squad_inviteReceived";
       
@@ -5439,11 +5487,19 @@ package net.wg.data.constants.generated
       
       public static const UK_GB83_FV4005_LS_BOT:String = "uk-GB83_FV4005_LS_BOT";
       
+      public static const UK_GB99_TURTLE_MK1_EASY_LS_BOT:String = "uk-GB99_Turtle_Mk1_EASY_LS_BOT";
+      
+      public static const UK_GB99_TURTLE_MK1_HARD_LS_BOT:String = "uk-GB99_Turtle_Mk1_HARD_LS_BOT";
+      
+      public static const UK_GB99_TURTLE_MK1_MEDIUM_LS_BOT:String = "uk-GB99_Turtle_Mk1_MEDIUM_LS_BOT";
+      
       public static const USA_A100_T49_LS_BOT:String = "usa-A100_T49_LS_BOT";
       
       public static const USA_A12_T32_LS_BOT:String = "usa-A12_T32_LS_BOT";
       
       public static const USA_A12_T32_LS_PLAYER:String = "usa-A12_T32_LS_PLAYER";
+      
+      public static const USA_A130_SUPER_HELLCAT_LS_BOT:String = "usa-A130_Super_Hellcat_LS_BOT";
       
       public static const USA_A35_PERSHING_LS_BOT:String = "usa-A35_Pershing_LS_BOT";
       

@@ -1,4 +1,6 @@
+from __future__ import absolute_import
 import typing
+from future.utils import viewkeys
 from debug_utils import LOG_WARNING
 from items.components.component_constants import EMPTY_STRING
 from items.components.tankmen_components import SPECIAL_CREW_TAG
@@ -32,7 +34,7 @@ class CustomCrew(object):
         if groupID not in nationGroups:
             LOG_WARNING('special_crew.CustomCrew.getCrewName: wrong value of the groupID (unknown groupID)', groupID)
             return EMPTY_STRING
-        tags = list(nationGroups[groupID].tags.intersection(CustomCrew.TAG_MAP.iterkeys()))
+        tags = list(nationGroups[groupID].tags.intersection(viewkeys(CustomCrew.TAG_MAP)))
         if tags:
             return CustomCrew.TAG_MAP.get(tags[0])
         return EMPTY_STRING
@@ -100,8 +102,8 @@ def isWitchesCrewCompleted(vehicleType, tankmenGroups):
     _, _, isPremium = unpackCrewParams(tankmenGroups[0])
     nationID, _ = vehicleType.id
     requiredGroupIDs = getTankmenWithTag(nationID, isPremium, SPECIAL_CREW_TAG.WITCHES_CREW)
-    uniqueRoles = set([ role[0] for role in vehicleType.crewRoles ])
-    actualGroupIDs = set([ unpackCrewParams(tGroup)[0] for tGroup in tankmenGroups ])
+    uniqueRoles = {role[0] for role in vehicleType.crewRoles}
+    actualGroupIDs = {unpackCrewParams(tGroup)[0] for tGroup in tankmenGroups}
     return len(actualGroupIDs & requiredGroupIDs) == len(uniqueRoles)
 
 

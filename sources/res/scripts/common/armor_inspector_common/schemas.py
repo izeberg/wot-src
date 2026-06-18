@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from armor_inspector_common.models import ArmorInspectorConfigModel
 from game_params_common.schema import GameParamsSchema
 from dict2model import fields

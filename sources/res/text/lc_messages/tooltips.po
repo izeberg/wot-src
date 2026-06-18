@@ -429,6 +429,9 @@ msgstr "%(value)d бон"
 msgid "additionalRewards/customizations/3d_style"
 msgstr "3D-стиль «%(value)s»"
 
+msgid "additionalRewards/customizations/attachment"
+msgstr "3D-объект"
+
 msgid "additionalRewards/customizations/camouflage"
 msgstr "Камуфляж «%(value)s»"
 
@@ -5785,20 +5788,20 @@ msgstr "Для выхода в бой выберите машину и подт�
 msgid "hangar/startBtn/squadNotReady/header"
 msgstr "Недоступно"
 
-msgid "hangar/status/toRent"
-msgstr "Перейти к продлению аренды."
+msgid "hangar/startBtn/wrongSquadVehicle/body"
+msgstr "Для подтверждения готовности выберите другую машину."
 
-msgid "hangar/tankCarusel/wrongSquadTypeVehicle/body"
-msgstr "Для подтверждения готовности выберите другой тип техники."
-
-msgid "hangar/tankCarusel/wrongSquadTypeVehicle/header"
+msgid "hangar/startBtn/wrongSquadVehicle/header"
 msgstr "Недоступно"
 
-msgid "hangar/tankCarusel/wrongSquadVehicle/body"
+msgid "hangar/startBtn/wrongSquadVehicleLevel/body"
 msgstr "Для подтверждения готовности выберите машину подходящего уровня."
 
-msgid "hangar/tankCarusel/wrongSquadVehicle/header"
+msgid "hangar/startBtn/wrongSquadVehicleLevel/header"
 msgstr "Недоступно"
+
+msgid "hangar/status/toRent"
+msgstr "Перейти к продлению аренды."
 
 msgid "hangar/tuning/body"
 msgstr "Нажмите, чтобы перейти на экран изменения внешнего вида машины."
@@ -9199,6 +9202,23 @@ msgstr "Собрать гоночную коллекцию «Виталий Ол
 
 msgid "notrecruitedtankman/race19_commanderC/label"
 msgstr "Уникальный командир"
+
+msgid "notrecruitedtankman/servicewoman/desc"
+msgstr ""
+"Какое бы задание ни получила Ядвига Волошин, она бралась за него с "
+"неизменной решительностью и усердием. В составе Польской женской "
+"вспомогательной службы она внесла свой вклад в военные победы, благодаря "
+"которым слава о национальном духе поляков разлетелась далеко за пределы "
+"страны. Обязанности Ядвиги менялись изо дня в день: она водила грузовик, "
+"сортировала срочные документы, передавала важные сообщения по радио и иногда"
+" даже проводила базовый инструктаж по основам обращения с оружием. Время "
+"показало, что такие женщины, как Ядвига, незаменимы для общего дела."
+
+msgid "notrecruitedtankman/servicewoman/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/servicewoman/label"
+msgstr "?empty?"
 
 msgid "notrecruitedtankman/skillsTitle"
 msgstr "Навыки"
@@ -12821,6 +12841,11 @@ msgstr "побед в аренду: %(count)s"
 
 msgid "quests/battlePass/linkBtn"
 msgstr "Посмотреть прогрессию Боевого пропуска"
+
+msgid "quests/bonuses/attachments_set/body"
+msgstr ""
+"Комплект 3D-объектов включает индивидуальные элементы для изменения внешнего"
+" вида определённой техники."
 
 msgid "quests/bonuses/token/battle_bonus_x5/body"
 msgstr ""

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from collections import namedtuple
 from enum import Enum
 EXCHANGE_RATE_GOLD_NAME = 'gold_exchange'

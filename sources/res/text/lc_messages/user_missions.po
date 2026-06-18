@@ -44,6 +44,9 @@ msgstr "Временно недоступно"
 msgid "battle_pass_widget/title"
 msgstr "Боевой пропуск"
 
+msgid "challenge_missions/entrypoint/tooltip/challengeTitle"
+msgstr "Вызов: {{challengeName}}"
+
 msgid "common/daterange/divider"
 msgstr "{{startDate}} – {{endDate}}"
 
@@ -178,6 +181,167 @@ msgstr "ЕЖЕНЕДЕЛЬНО"
 
 msgid "hub/basic_missions/weekly/update_info"
 msgstr "Обновляется каждый {{weekDay}}"
+
+msgid "hub/challenge_missions/card/activeLabel"
+msgstr "Активная задача"
+
+msgid "hub/challenge_missions/card/or"
+msgstr "ИЛИ"
+
+msgid "hub/challenge_missions/challenges_empty/title"
+msgstr "Новые задачи скоро появятся"
+
+msgid "hub/challenge_missions/complexity/easy"
+msgstr "БОЕЦ"
+
+msgid "hub/challenge_missions/complexity/hard"
+msgstr "АС"
+
+msgid "hub/challenge_missions/complexity/medium"
+msgstr "ЭЛИТА"
+
+msgid "hub/challenge_missions/complexity/tooltip/body"
+msgstr ""
+"Задачи бывают трёх категорий: боец, элита и ас. В каждой категории "
+"уникальные испытания и ценные награды."
+
+msgid "hub/challenge_missions/header"
+msgstr "ВЫЗОВ"
+
+msgid "hub/challenge_missions/header/buttons/activate"
+msgstr "Активировать"
+
+msgid "hub/challenge_missions/header/buttons/freeRestart"
+msgstr "Перезапустить бесплатно"
+
+msgid "hub/challenge_missions/header/buttons/restart"
+msgstr "Перезапустить"
+
+msgid "hub/challenge_missions/header/buttons/surrender"
+msgstr "Отказаться"
+
+msgid "hub/challenge_missions/header/buttons/toChallenge"
+msgstr "К задачам"
+
+msgid "hub/challenge_missions/header/complete"
+msgstr "%(completeIcon) Задачи «Вызова» выполнены"
+
+msgid "hub/challenge_missions/header/multiplier"
+msgstr "×%(count)s"
+
+msgid "hub/challenge_missions/header/numberTemplate"
+msgstr "%(currentNumber)s / %(commonNumber)s"
+
+msgid "hub/challenge_missions/header/remaining"
+msgstr "щитов осталось"
+
+msgid "hub/challenge_missions/header/restart/text"
+msgstr "бесплатных перезапусков"
+
+msgid "hub/challenge_missions/header/restriction"
+msgstr "Выполните активные задачи «Вызова»"
+
+msgid "hub/challenge_missions/header/timer/text"
+msgstr "Закончится через %(timer)s"
+
+msgid "hub/challenge_missions/header/unavailable"
+msgstr "%(lockIcon)Недоступно: %(text)s"
+
+msgid "hub/challenge_missions/header/vehicleRestriction"
+msgstr "требуется машина VI уровня или выше"
+
+msgid "hub/challenge_missions/missionsActive"
+msgstr "АКТИВНА"
+
+msgid "hub/challenge_missions/missionsCompleted"
+msgstr "Выполнена"
+
+msgid "hub/challenge_missions/missionsCount"
+msgstr "{{currentMissions}} / {{totalMissions}} задач"
+
+msgid "hub/challenge_missions/name/default"
+msgstr "Задача испытания"
+
+msgid "hub/challenge_missions/new"
+msgstr "НОВОЕ"
+
+msgid "hub/challenge_missions/notification/challenge_complete/affirmative"
+msgstr "К Вызову"
+
+msgid "hub/challenge_missions/notification/challenge_complete/button"
+msgstr "К Вызову"
+
+msgid "hub/challenge_missions/notification/challenge_complete/title"
+msgstr "«ВЫЗОВ: {{ challengeName }}» ПРОЙДЕН!"
+
+msgid "hub/challenge_missions/notification/fail/button"
+msgstr "К Вызову"
+
+msgid "hub/challenge_missions/notification/fail/title"
+msgstr ""
+"«Вызов: {{ challenge }}» не пройден. Перезапустите его и попробуйте получить"
+" награды снова!"
+
+msgid "hub/challenge_missions/notification/mission_complete/button"
+msgstr "К Вызову"
+
+msgid "hub/challenge_missions/notification/mission_complete/title"
+msgstr "ЗАДАЧА {{ mission }} ВЫПОЛНЕНА!"
+
+msgid "hub/challenge_missions/notification/shield/button"
+msgstr "К Вызову"
+
+msgid "hub/challenge_missions/notification/shield/text"
+msgstr "Задача {{ mission }} провалена"
+
+msgid "hub/challenge_missions/notification/shield/title"
+msgstr "ЩИТОВ ОСТАЛОСЬ"
+
+msgid "hub/challenge_missions/notification/start/button"
+msgstr "К Вызову"
+
+msgid "hub/challenge_missions/notification/start/newChallengesText"
+msgstr ""
+"Примите Вызов и испытайте себя в сериях задач с ценными наградами для тех, "
+"кто с ними справится."
+
+msgid "hub/challenge_missions/notification/start/newChallengesTitle"
+msgstr "ДОСТУПНЫ НОВЫЕ ЗАДАЧИ «ВЫЗОВА»!"
+
+msgid "hub/challenge_missions/notification/start/text"
+msgstr ""
+"Примите Вызов и проложите собственный путь к славе: проверьте свои навыки в "
+"сериях сложных задач с ценными наградами для тех, кто с ними справится."
+
+msgid "hub/challenge_missions/notification/start/title"
+msgstr "ПРИМИТЕ ВЫЗОВ"
+
+msgid "hub/challenge_missions/replay/completed"
+msgstr "Выполнено"
+
+msgid "hub/challenge_missions/reward/attachmentsTitle"
+msgstr "Комплект 3D-объектов"
+
+msgid "hub/challenge_missions/reward/improvedEquipment"
+msgstr "Усовершенствованное оборудование"
+
+msgid "hub/challenge_missions/reward/multi"
+msgstr "×{{count}}"
+
+msgid "hub/challenge_missions/reward/style2DTitle"
+msgstr "2D-стиль"
+
+msgid "hub/challenge_missions/reward/tankmanTitle"
+msgstr "Член экипажа"
+
+msgid "hub/challenge_missions/reward/vehicleTitle"
+msgstr "Машина"
+
+msgid "hub/challenge_missions/title"
+msgstr "ЗАДАЧИ «ВЫЗОВА»"
+
+msgid "hub/challenge_missions/tooltip/info_button"
+msgstr "О Вызове"
 
 msgid "hub/common_missions/title"
 msgstr "ДОПОЛНИТЕЛЬНЫЕ ЗАДАЧИ"
@@ -332,11 +496,53 @@ msgstr ""
 msgid "tooltip/daily_reroll/header"
 msgstr "Замена задачи"
 
+msgid "tooltip/hub/card/completed"
+msgstr "Задача выполнена, награда получена."
+
+msgid "tooltip/hub/card/disabled"
+msgstr ""
+"Выполните предыдущую задачу, чтобы открыть эту. Все задачи должны быть "
+"выполнены по порядку."
+
 msgid "tooltip/hub/info_button/body"
 msgstr "Нажмите, чтобы узнать подробности"
 
 msgid "tooltip/hub/info_button/header"
 msgstr "О задачах"
+
+msgid "tooltip/hub/replay/body"
+msgstr ""
+"Эту серию задач можно повторить. Ваш прогресс будет сброшен, щиты "
+"восстановятся, и вы снова сможете заработать награды."
+
+msgid "tooltip/hub/replay/header"
+msgstr "Повторение задач"
+
+msgid "tooltip/hub/restart/description"
+msgstr ""
+"Вы можете перезапустить серию задач после потери всех щитов. Прогресс задач "
+"будет сброшен, щиты восстановятся, и вы снова сможете заработать награды."
+
+msgid "tooltip/hub/restart/free_restarts_cost"
+msgstr "Стоимость последующих перезапусков: %(currency)s"
+
+msgid "tooltip/hub/restart/free_restarts_text"
+msgstr "Доступно бесплатных перезапусков: %(currentNumber)s %(commonNumber)s"
+
+msgid "tooltip/hub/restart/only_paid_restart"
+msgstr "Стоимость каждого перезапуска: %(currency)s"
+
+msgid "tooltip/hub/restart/title"
+msgstr "Перезапуски"
+
+msgid "tooltip/hub/shields/description"
+msgstr ""
+"Щиты защищают ваш прогресс. Каждая проваленная задача отнимает один щит. "
+"После потери всех щитов серия задач будет считаться проваленной. Если вы её "
+"перезапустите, щиты восстановятся."
+
+msgid "tooltip/hub/shields/title"
+msgstr "Щиты"
 
 msgid "tooltip/vehicle_restrictions"
 msgstr "Ограничения по технике:"

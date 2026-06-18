@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from functools import partial
 from enum import IntEnum
 from gui.clans import settings as clan_settings

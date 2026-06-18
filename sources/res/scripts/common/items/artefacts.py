@@ -1,31 +1,27 @@
+from __future__ import absolute_import, division
 import os
 from re import findall
 from enum import Enum, unique
-from typing import TYPE_CHECKING, NamedTuple, Set, Dict, Optional, Any, Tuple, List
+from future.utils import listvalues, viewitems, viewvalues
+from typing import NamedTuple, Set, Dict, Optional, Any, Tuple, List
+from Math import Vector3
+from ResMgr import DataSection
 import items, nations
 from ArenaType import readVisualScriptSection
-from ResMgr import DataSection
 from constants import IS_CLIENT, IS_CELLAPP, IS_WEB, VEHICLE_TTC_ASPECTS, ATTACK_REASON, ATTACK_REASON_INDICES, SERVER_TICK_LENGTH, SkillProcessorArgs, GroupSkillProcessorArgs, TTC_TOOLTIP_SECTIONS
 from debug_utils import LOG_DEBUG_DEV
 from extension_utils import importClass
 from items import ITEM_OPERATION, PREDEFINED_HEAL_GROUPS
-from items import _xml, vehicles, tankmen
+from items import _xml, vehicles
 from items.artefacts_helpers import VehicleFilter, _ArtefactFilter, readKpi
 from items.basic_item import BasicItem
 from items.components import shared_components, component_constants
 from items.components.supply_slot_categories import SupplySlotFilter, LevelsFactor, AttrsOperation, SlotCategories
-from items.vehicles import VehicleDescriptor
+from items.vehicles import VehicleDescriptor, _readPriceForOperation
+from items.tankmen import MAX_SKILL_LEVEL
 from soft_exception import SoftException
-from tankmen import MAX_SKILL_LEVEL
-from vehicles import _readPriceForOperation
-from Math import Vector3
-if TYPE_CHECKING:
-    from ResMgr import DataSection
 if IS_CLIENT:
     from helpers import i18n
-    from gui.impl.backport import text
-    from gui.impl.backport.backport_system_locale import getNiceNumberFormat
-    from gui.impl.gen import R
 elif IS_WEB:
     from web_stubs import i18n
 else:
@@ -62,7 +58,7 @@ class CommonXmlSectionReader(object):
     def read(self, xmlCtx, section, subsection_name):
         result = {}
         subsection = _xml.getSubsection(xmlCtx, section, subsection_name)
-        for key, tag_name in self.__xmlTagKeyMap.iteritems():
+        for key, tag_name in viewitems(self.__xmlTagKeyMap):
             if _xml.getSubsection(xmlCtx, subsection, tag_name, throwIfMissing=False) is None:
                 continue
             reader = self.__readersMap.get(key, None)
@@ -75,7 +71,7 @@ class CommonXmlSectionReader(object):
     @staticmethod
     def __createReaders(dictInstance):
         readers = {}
-        for name, value in dictInstance.iteritems():
+        for name, value in viewitems(dictInstance):
             factor_type = type(value)
             reader_type = 'TupleOfFloats' if factor_type is list else findall("'(\\w+)'", str(factor_type))[0].capitalize()
             readers[name] = getattr(_xml, 'read' + reader_type)
@@ -88,7 +84,7 @@ class VehicleFactorsXmlReader(CommonXmlSectionReader):
 
     def __init__(self):
         attrFactor = vehicles.defaultVehicleAttributeFactors()
-        _vehicle_attribute_factor_tags = {name:name.replace('/', '-') for name in attrFactor.iterkeys()}
+        _vehicle_attribute_factor_tags = {name:name.replace('/', '-') for name in attrFactor}
         super(VehicleFactorsXmlReader, self).__init__(_vehicle_attribute_factor_tags, attrFactor)
 
     @staticmethod
@@ -373,7 +369,7 @@ class OptionalDevice(Artefact):
         if factorsSection is None:
             return
         else:
-            for name, subsection in factorsSection.items():
+            for name in factorsSection.keys():
                 factor = LevelsFactor.readTypelessLevelsFactor(xmlCtx, factorsSection, name)
                 self._overridableFactors[name] = factor
 
@@ -409,7 +405,7 @@ class StaticOptionalDevice(OptionalDevice):
         if factorsSection is None:
             return
         else:
-            for name, subsection in factorsSection.items():
+            for subsection in factorsSection.values():
                 attrPath, factor = LevelsFactor.readLevelsFactor(xmlCtx, subsection)
                 splitted = tuple(attrPath.split('/'))
                 self._factors[splitted] = factor
@@ -430,7 +426,7 @@ class StaticOptionalDevice(OptionalDevice):
             LOG_DEBUG_DEV(('updateVehicleDescrAttrs: optional device ({}) is not installed').format(self))
             return
         else:
-            for splitted, factor in self._factors.iteritems():
+            for splitted, factor in viewitems(self._factors):
                 modulePath = splitted[:-1]
                 shortName = splitted[(-1)]
                 attrDict = self.defineAttrsDict(vehicleDescr, modulePath)
@@ -448,7 +444,7 @@ class StaticOptionalDevice(OptionalDevice):
             return factor.getActiveValue(level)
 
     def factorsContainCrewLevelIncrease(self):
-        return any('crewLevelIncrease' in splitted for splitted, _ in self._factors.iteritems())
+        return any('crewLevelIncrease' in splitted for splitted in self._factors)
 
 
 class StillVehicleOptionalDevice(StaticOptionalDevice):
@@ -641,10 +637,10 @@ class Grousers(StaticOptionalDevice):
             vehicleDescr.physics['rollingFrictionFactors'] = list(rffi * rollingFrictionFactorActiveValue for rffi in rff)
             return
 
-    def _readConfig(self, xmlCtx, section):
-        super(Grousers, self)._readConfig(xmlCtx, section)
-        self.rotationFactor = LevelsFactor.readTypelessLevelsFactor(xmlCtx, section, 'rotationFactor')
-        self.rollingFrictionFactor = LevelsFactor.readTypelessLevelsFactor(xmlCtx, section, 'rollingFrictionFactor')
+    def _readConfig(self, xmlCtx, scriptSection):
+        super(Grousers, self)._readConfig(xmlCtx, scriptSection)
+        self.rotationFactor = LevelsFactor.readTypelessLevelsFactor(xmlCtx, scriptSection, 'rotationFactor')
+        self.rollingFrictionFactor = LevelsFactor.readTypelessLevelsFactor(xmlCtx, scriptSection, 'rollingFrictionFactor')
 
 
 class RotationMechanisms(StaticOptionalDevice):
@@ -667,13 +663,13 @@ class RotationMechanisms(StaticOptionalDevice):
             miscAttrs['centerRotationFwdSpeedFactor'] *= self.wheelCenterRotationFwdSpeed.getActiveValue(level)
             return
 
-    def _readConfig(self, xmlCtx, section):
-        super(RotationMechanisms, self)._readConfig(xmlCtx, section)
-        self.trackMoveSpeedFactor = LevelsFactor.readTypelessLevelsFactor(xmlCtx, section, 'trackMoveSpeedFactor')
-        self.wheelMoveSpeedFactor = LevelsFactor.readTypelessLevelsFactor(xmlCtx, section, 'wheelMoveSpeedFactor')
-        self.trackRotateSpeedFactor = LevelsFactor.readTypelessLevelsFactor(xmlCtx, section, 'trackRotateSpeedFactor')
-        self.wheelRotateSpeedFactor = LevelsFactor.readTypelessLevelsFactor(xmlCtx, section, 'wheelRotateSpeedFactor')
-        self.wheelCenterRotationFwdSpeed = LevelsFactor.readTypelessLevelsFactor(xmlCtx, section, 'wheelCenterRotationFwdSpeed')
+    def _readConfig(self, xmlCtx, scriptSection):
+        super(RotationMechanisms, self)._readConfig(xmlCtx, scriptSection)
+        self.trackMoveSpeedFactor = LevelsFactor.readTypelessLevelsFactor(xmlCtx, scriptSection, 'trackMoveSpeedFactor')
+        self.wheelMoveSpeedFactor = LevelsFactor.readTypelessLevelsFactor(xmlCtx, scriptSection, 'wheelMoveSpeedFactor')
+        self.trackRotateSpeedFactor = LevelsFactor.readTypelessLevelsFactor(xmlCtx, scriptSection, 'trackRotateSpeedFactor')
+        self.wheelRotateSpeedFactor = LevelsFactor.readTypelessLevelsFactor(xmlCtx, scriptSection, 'wheelRotateSpeedFactor')
+        self.wheelCenterRotationFwdSpeed = LevelsFactor.readTypelessLevelsFactor(xmlCtx, scriptSection, 'wheelCenterRotationFwdSpeed')
 
 
 class Extinguisher(Equipment):
@@ -684,12 +680,12 @@ class Extinguisher(Equipment):
         self.fireStartingChanceFactor = component_constants.ZERO_FLOAT
         self.autoactivate = False
 
-    def _readConfig(self, xmlCtx, section):
-        if not section.has_key('fireStartingChanceFactor'):
+    def _readConfig(self, xmlCtx, scriptSection):
+        if not scriptSection.has_key('fireStartingChanceFactor'):
             self.fireStartingChanceFactor = 1.0
         else:
-            self.fireStartingChanceFactor = _xml.readPositiveFloat(xmlCtx, section, 'fireStartingChanceFactor')
-        self.autoactivate = section.readBool('autoactivate', False)
+            self.fireStartingChanceFactor = _xml.readPositiveFloat(xmlCtx, scriptSection, 'fireStartingChanceFactor')
+        self.autoactivate = scriptSection.readBool('autoactivate', False)
 
     def updateVehicleAttrFactorsForAspect(self, vehicleDescr, factors, aspect, *args, **kwargs):
         try:
@@ -706,9 +702,9 @@ class Fuel(Equipment):
         self.enginePowerFactor = component_constants.ZERO_FLOAT
         self.turretRotationSpeedFactor = component_constants.ZERO_FLOAT
 
-    def _readConfig(self, xmlCtx, section):
-        self.enginePowerFactor = _xml.readPositiveFloat(xmlCtx, section, 'enginePowerFactor')
-        self.turretRotationSpeedFactor = _xml.readPositiveFloat(xmlCtx, section, 'turretRotationSpeedFactor')
+    def _readConfig(self, xmlCtx, scriptSection):
+        self.enginePowerFactor = _xml.readPositiveFloat(xmlCtx, scriptSection, 'enginePowerFactor')
+        self.turretRotationSpeedFactor = _xml.readPositiveFloat(xmlCtx, scriptSection, 'turretRotationSpeedFactor')
 
     def updateVehicleAttrFactorsForAspect(self, vehicleDescr, factors, aspect, *args, **kwargs):
         try:
@@ -725,8 +721,8 @@ class Stimulator(Equipment):
         super(Stimulator, self).__init__()
         self.crewLevelIncrease = component_constants.ZERO_FLOAT
 
-    def _readConfig(self, xmlCtx, section):
-        self.crewLevelIncrease = _xml.readFloat(xmlCtx, section, 'crewLevelIncrease', component_constants.ZERO_FLOAT)
+    def _readConfig(self, xmlCtx, scriptSection):
+        self.crewLevelIncrease = _xml.readFloat(xmlCtx, scriptSection, 'crewLevelIncrease', component_constants.ZERO_FLOAT)
 
 
 class Repairkit(Equipment):
@@ -736,8 +732,8 @@ class Repairkit(Equipment):
         super(Repairkit, self).__init__()
         self.bonusValue = component_constants.ZERO_FLOAT
 
-    def _readConfig(self, xmlCtx, section):
-        self.bonusValue = _xml.readFraction(xmlCtx, section, 'bonusValue')
+    def _readConfig(self, xmlCtx, scriptSection):
+        self.bonusValue = _xml.readFraction(xmlCtx, scriptSection, 'bonusValue')
 
 
 class CountableConsumableConfigReader(object):
@@ -758,9 +754,9 @@ class RemovedRpmLimiter(Equipment):
         self.enginePowerFactor = component_constants.ZERO_FLOAT
         self.engineHpLossPerSecond = component_constants.ZERO_FLOAT
 
-    def _readConfig(self, xmlCtx, section):
-        self.enginePowerFactor = _xml.readPositiveFloat(xmlCtx, section, 'enginePowerFactor')
-        self.engineHpLossPerSecond = _xml.readPositiveFloat(xmlCtx, section, 'engineHpLossPerSecond')
+    def _readConfig(self, xmlCtx, scriptSection):
+        self.enginePowerFactor = _xml.readPositiveFloat(xmlCtx, scriptSection, 'enginePowerFactor')
+        self.engineHpLossPerSecond = _xml.readPositiveFloat(xmlCtx, scriptSection, 'engineHpLossPerSecond')
 
     def updateVehicleAttrFactorsForAspect(self, vehicleDescr, factors, aspect, *args, **kwargs):
         try:
@@ -781,12 +777,12 @@ class Afterburning(Equipment):
         self.enginePowerFactor = component_constants.ZERO_FLOAT
         self.maxSpeedFactor = component_constants.ZERO_FLOAT
 
-    def _readConfig(self, xmlCtx, section):
-        self.deploySeconds = _xml.readInt(xmlCtx, section, 'deploySeconds', 0)
-        self.consumeSeconds = _xml.readInt(xmlCtx, section, 'consumeSeconds', 0)
-        self.rechargeSeconds = _xml.readInt(xmlCtx, section, 'rechargeSeconds', 0)
-        self.enginePowerFactor = _xml.readPositiveFloat(xmlCtx, section, 'enginePowerFactor')
-        self.maxSpeedFactor = _xml.readPositiveFloat(xmlCtx, section, 'maxSpeedFactor')
+    def _readConfig(self, xmlCtx, scriptSection):
+        self.deploySeconds = _xml.readInt(xmlCtx, scriptSection, 'deploySeconds', 0)
+        self.consumeSeconds = _xml.readInt(xmlCtx, scriptSection, 'consumeSeconds', 0)
+        self.rechargeSeconds = _xml.readInt(xmlCtx, scriptSection, 'rechargeSeconds', 0)
+        self.enginePowerFactor = _xml.readPositiveFloat(xmlCtx, scriptSection, 'enginePowerFactor')
+        self.maxSpeedFactor = _xml.readPositiveFloat(xmlCtx, scriptSection, 'maxSpeedFactor')
 
     def updateVehicleAttrFactorsForAspect(self, vehicleDescr, factors, aspect, *args, **kwargs):
         try:
@@ -1186,7 +1182,7 @@ class ReconConfigReader(PlaneConfigReader):
         self.scanPointsAmount = _xml.readNonNegativeInt(xmlCtx, section, 'scanPointsAmount')
         self.antepositions = _xml.readTupleOfFloats(xmlCtx, section, 'antepositions')
         self.lateropositions = _xml.readTupleOfFloats(xmlCtx, section, 'lateropositions')
-        self.areaRadius = self.entitiesToSearch.get('Vehicle', {}).get('radius') or self.entitiesToSearch.values()[0]['radius']
+        self.areaRadius = self.entitiesToSearch.get('Vehicle', {}).get('radius') or listvalues(self.entitiesToSearch)[0]['radius']
         self.areaWidth = self.areaRadius * 2
         self.areaLength = self.areaRadius * (2 + self.scanPointsAmount - 1)
         self.wwsoundEquipmentUsed = _xml.readStringOrNone(xmlCtx, section, 'wwsoundEquipmentUsed')
@@ -1376,9 +1372,9 @@ class DynamicEquipment(Equipment):
         super(DynamicEquipment, self).__init__()
         self._config = []
 
-    def _readConfig(self, xmlCtx, section):
+    def _readConfig(self, xmlCtx, scriptSection):
         self._config = []
-        for subsection in section.values():
+        for subsection in scriptSection.values():
             if subsection.name == 'level':
                 self._config.append(self._readLevelConfig(xmlCtx, subsection))
             else:
@@ -1415,10 +1411,10 @@ class DynamicEquipment(Equipment):
         self._updateVehicleAttrFactorsImpl(factors, levelParams)
 
     def _readLevelConfig(self, xmlCtx, section):
-        raise NotImplemented
+        raise NotImplementedError
 
     def _updateVehicleAttrFactorsImpl(self, factors, levelParams):
-        raise NotImplemented
+        raise NotImplementedError
 
 
 class FactorBattleBooster(DynamicEquipment):
@@ -1473,10 +1469,10 @@ class SkillEquipment(Equipment):
         self.perkLevelMultiplier = None
         return
 
-    def _readConfig(self, xmlCtx, section):
-        super(SkillEquipment, self)._readConfig(xmlCtx, section)
-        self.skillName = _xml.readNonEmptyString(xmlCtx, section, 'skillName')
-        self.perkLevelMultiplier = _xml.readFloatOrNone(xmlCtx, section, 'perkLevelMultiplier')
+    def _readConfig(self, xmlCtx, scriptSection):
+        super(SkillEquipment, self)._readConfig(xmlCtx, scriptSection)
+        self.skillName = _xml.readNonEmptyString(xmlCtx, scriptSection, 'skillName')
+        self.perkLevelMultiplier = _xml.readFloatOrNone(xmlCtx, scriptSection, 'perkLevelMultiplier')
 
     def updateCrewSkill(self, *args):
         pass
@@ -1489,9 +1485,9 @@ class FactorSkillBattleBooster(SkillEquipment):
         super(FactorSkillBattleBooster, self).__init__()
         self.efficiencyFactor = component_constants.ZERO_FLOAT
 
-    def _readConfig(self, xmlCtx, section):
-        super(FactorSkillBattleBooster, self)._readConfig(xmlCtx, section)
-        self.efficiencyFactor = _xml.readPositiveFloat(xmlCtx, section, 'efficiencyFactor')
+    def _readConfig(self, xmlCtx, scriptSection):
+        super(FactorSkillBattleBooster, self)._readConfig(xmlCtx, scriptSection)
+        self.efficiencyFactor = _xml.readPositiveFloat(xmlCtx, scriptSection, 'efficiencyFactor')
 
     def updateCrewSkill(self, a):
         efficiency = (a.factor - 0.57) / 0.43
@@ -1510,9 +1506,9 @@ class SixthSenseBattleBooster(SkillEquipment):
         super(SixthSenseBattleBooster, self).__init__()
         self.delay = component_constants.ZERO_FLOAT
 
-    def _readConfig(self, xmlCtx, section):
-        super(SixthSenseBattleBooster, self)._readConfig(xmlCtx, section)
-        self.delay = _xml.readNonNegativeFloat(xmlCtx, section, 'delay')
+    def _readConfig(self, xmlCtx, scriptSection):
+        super(SixthSenseBattleBooster, self)._readConfig(xmlCtx, scriptSection)
+        self.delay = _xml.readNonNegativeFloat(xmlCtx, scriptSection, 'delay')
 
     def updateCrewSkill(self, a):
         if not a.isBoosterApplicable():
@@ -1531,13 +1527,13 @@ class PedantBattleBooster(SkillEquipment):
         super(PedantBattleBooster, self).__init__()
         self.ammoBayHealthFactor = component_constants.ZERO_FLOAT
 
-    def _readConfig(self, xmlCtx, section):
-        super(PedantBattleBooster, self)._readConfig(xmlCtx, section)
-        self.ammoBayHealthFactor = _xml.readPositiveFloat(xmlCtx, section, 'ammoBayHealthFactor')
+    def _readConfig(self, xmlCtx, scriptSection):
+        super(PedantBattleBooster, self)._readConfig(xmlCtx, scriptSection)
+        self.ammoBayHealthFactor = _xml.readPositiveFloat(xmlCtx, scriptSection, 'ammoBayHealthFactor')
 
     def updateCrewSkill(self, a):
         if a.level < MAX_SKILL_LEVEL:
-            level = MAX_SKILL_LEVEL
+            _ = MAX_SKILL_LEVEL
         else:
             a.skillConfig = a.skillConfig.recreate(self.ammoBayHealthFactor)
 
@@ -1550,10 +1546,10 @@ class LastEffortBattleBooster(SkillEquipment):
         self.durationPerLevel = component_constants.ZERO_FLOAT
         self.chanceToHitPerLevel = component_constants.ZERO_FLOAT
 
-    def _readConfig(self, xmlCtx, section):
-        super(LastEffortBattleBooster, self)._readConfig(xmlCtx, section)
-        self.durationPerLevel = _xml.readNonNegativeFloat(xmlCtx, section, 'durationPerLevel')
-        self.chanceToHitPerLevel = _xml.readFloat(xmlCtx, section, 'chanceToHitPerLevel')
+    def _readConfig(self, xmlCtx, scriptSection):
+        super(LastEffortBattleBooster, self)._readConfig(xmlCtx, scriptSection)
+        self.durationPerLevel = _xml.readNonNegativeFloat(xmlCtx, scriptSection, 'durationPerLevel')
+        self.chanceToHitPerLevel = _xml.readFloat(xmlCtx, scriptSection, 'chanceToHitPerLevel')
 
     def updateCrewSkill(self, a):
         if not a.isBoosterApplicable():
@@ -1603,9 +1599,9 @@ class RageArtillery(Equipment, RageEquipmentConfigReader, ArtilleryConfigReader)
         self.initRageEquipmentSlots()
         self.initArtillerySlots()
 
-    def _readConfig(self, xmlCtx, section):
-        self.readRageEquipmentConfig(xmlCtx, section)
-        self.readArtilleryConfig(xmlCtx, section)
+    def _readConfig(self, xmlCtx, scriptSection):
+        self.readRageEquipmentConfig(xmlCtx, scriptSection)
+        self.readArtilleryConfig(xmlCtx, scriptSection)
 
 
 class RageBomber(Equipment, RageEquipmentConfigReader, BomberConfigReader):
@@ -1630,10 +1626,10 @@ class ConsumableArtillery(Equipment, TooltipConfigReader, SharedCooldownConsumab
         self.initSharedCooldownConsumableSlots()
         self.initArtillerySlots()
 
-    def _readConfig(self, xmlCtx, section):
-        self.readTooltipInformation(xmlCtx, section)
-        self.readSharedCooldownConsumableConfig(xmlCtx, section)
-        self.readArtilleryConfig(xmlCtx, section)
+    def _readConfig(self, xmlCtx, scriptSection):
+        self.readTooltipInformation(xmlCtx, scriptSection)
+        self.readSharedCooldownConsumableConfig(xmlCtx, scriptSection)
+        self.readArtilleryConfig(xmlCtx, scriptSection)
 
 
 class ConsumableBomber(Equipment, TooltipConfigReader, SharedCooldownConsumableConfigReader, BomberConfigReader):
@@ -1780,8 +1776,9 @@ class AreaOfEffectEquipment(Equipment, TooltipConfigReader, SharedCooldownConsum
         self.initEffectsInformation()
         self.initSharedCooldownConsumableSlots()
 
-    def _readConfig(self, xmlCtx, section):
-        super(AreaOfEffectEquipment, self)._readConfig(xmlCtx, section)
+    def _readConfig(self, xmlCtx, scriptSection):
+        super(AreaOfEffectEquipment, self)._readConfig(xmlCtx, scriptSection)
+        section = scriptSection
         self.readTooltipInformation(xmlCtx, section)
         self.readSharedCooldownConsumableConfig(xmlCtx, section)
         self.readArcadeInformation(xmlCtx, section)
@@ -1834,12 +1831,12 @@ class AttackBomberEquipment(AreaOfEffectEquipment):
 class AttackArtilleryFortEquipment(AreaOfEffectEquipment):
     __slots__ = ('maxDamage', 'enemyAreaColor', 'enemyAreaColorBlind')
 
-    def _readConfig(self, xmlCtx, section):
-        super(AttackArtilleryFortEquipment, self)._readConfig(xmlCtx, section)
-        self.enemyAreaColor = _xml.readIntOrNone(xmlCtx, section, 'enemyAreaColor')
-        self.enemyAreaColorBlind = _xml.readIntOrNone(xmlCtx, section, 'enemyAreaColorBlind')
+    def _readConfig(self, xmlCtx, scriptSection):
+        super(AttackArtilleryFortEquipment, self)._readConfig(xmlCtx, scriptSection)
+        self.enemyAreaColor = _xml.readIntOrNone(xmlCtx, scriptSection, 'enemyAreaColor')
+        self.enemyAreaColorBlind = _xml.readIntOrNone(xmlCtx, scriptSection, 'enemyAreaColorBlind')
         if IS_CLIENT:
-            damagePerShot = sum([ self.__readDamageVehicleAction(action) for action in section['actions'].values() ])
+            damagePerShot = sum(self.__readDamageVehicleAction(action) for action in scriptSection['actions'].values())
             self.maxDamage = damagePerShot * self.shotsNumber
         else:
             self.maxDamage = 0
@@ -1880,9 +1877,9 @@ class UpgradableItem(Artefact):
     def level(self):
         return self._level
 
-    def _readConfig(self, xmlCtx, section):
-        super(UpgradableItem, self)._readConfig(xmlCtx, section)
-        self._readUpgradableConfig(xmlCtx, section)
+    def _readConfig(self, xmlCtx, scriptSection):
+        super(UpgradableItem, self)._readConfig(xmlCtx, scriptSection)
+        self._readUpgradableConfig(xmlCtx, scriptSection)
 
     def _readUpgradableConfig(self, xmlCtx, scriptSection):
         upgradeInfoSection = scriptSection['upgradeInfo']
@@ -2075,16 +2072,16 @@ class FLRegenerationKit(Equipment, SharedCooldownConsumableConfigReader, Tooltip
         self.resupplyHealthPointsFactor = 1.0
         return
 
-    def _readConfig(self, xmlCtx, section):
-        self.readTooltipInformation(xmlCtx, section)
-        self.readSharedCooldownConsumableConfig(xmlCtx, section)
-        self.healthRegenPerTick = _xml.readNonNegativeFloat(xmlCtx, section, 'healthRegenPerTick', 0.0)
-        self.initialHeal = _xml.readNonNegativeFloat(xmlCtx, section, 'initialHeal', 0.0)
-        self.healTime = _xml.readNonNegativeFloat(xmlCtx, section, 'healTime', 0.0)
-        self.healGroup = _xml.readIntOrNone(xmlCtx, section, 'healGroup')
-        self.tickInterval = _xml.readPositiveFloat(xmlCtx, section, 'tickInterval', 1.0)
-        self.expireByDamageReceived = _xml.readBool(xmlCtx, section, 'expireByDamageReceived', False)
-        self.resupplyHealthPointsFactor = _xml.readPositiveFloat(xmlCtx, section, 'resupplyHealthPointsFactor', 1.0)
+    def _readConfig(self, xmlCtx, scriptSection):
+        self.readTooltipInformation(xmlCtx, scriptSection)
+        self.readSharedCooldownConsumableConfig(xmlCtx, scriptSection)
+        self.healthRegenPerTick = _xml.readNonNegativeFloat(xmlCtx, scriptSection, 'healthRegenPerTick', 0.0)
+        self.initialHeal = _xml.readNonNegativeFloat(xmlCtx, scriptSection, 'initialHeal', 0.0)
+        self.healTime = _xml.readNonNegativeFloat(xmlCtx, scriptSection, 'healTime', 0.0)
+        self.healGroup = _xml.readIntOrNone(xmlCtx, scriptSection, 'healGroup')
+        self.tickInterval = _xml.readPositiveFloat(xmlCtx, scriptSection, 'tickInterval', 1.0)
+        self.expireByDamageReceived = _xml.readBool(xmlCtx, scriptSection, 'expireByDamageReceived', False)
+        self.resupplyHealthPointsFactor = _xml.readPositiveFloat(xmlCtx, scriptSection, 'resupplyHealthPointsFactor', 1.0)
 
 
 class FLAvatarStealthRadar(Equipment, SharedCooldownConsumableConfigReader, CooldownConsumableConfigReader, TooltipConfigReader, InspireConfigReader):
@@ -2102,14 +2099,14 @@ class FLAvatarStealthRadar(Equipment, SharedCooldownConsumableConfigReader, Cool
         self.detectionTime = component_constants.ZERO_FLOAT
         self.overridableFactors = {}
 
-    def _readConfig(self, xmlCtx, section):
-        self.readTooltipInformation(xmlCtx, section)
-        self.readSharedCooldownConsumableConfig(xmlCtx, section)
-        self.readConsumableWithTimeConfig(xmlCtx, section)
-        self.readInspireConfig(xmlCtx, section)
-        self.passiveCircularVisionRadius = _xml.readNonNegativeFloat(xmlCtx, section, 'passiveCircularVisionRadius', 0.0)
-        self.detectionTime = _xml.readNonNegativeFloat(xmlCtx, section, 'minesDetectionTime', 0.0)
-        self.readOverFactorsFromConfig(xmlCtx, section)
+    def _readConfig(self, xmlCtx, scriptSection):
+        self.readTooltipInformation(xmlCtx, scriptSection)
+        self.readSharedCooldownConsumableConfig(xmlCtx, scriptSection)
+        self.readConsumableWithTimeConfig(xmlCtx, scriptSection)
+        self.readInspireConfig(xmlCtx, scriptSection)
+        self.passiveCircularVisionRadius = _xml.readNonNegativeFloat(xmlCtx, scriptSection, 'passiveCircularVisionRadius', 0.0)
+        self.detectionTime = _xml.readNonNegativeFloat(xmlCtx, scriptSection, 'minesDetectionTime', 0.0)
+        self.readOverFactorsFromConfig(xmlCtx, scriptSection)
         if IS_CLIENT and self.longDescription:
             self.longDescription = i18n.makeString(self.longDescription, activationDelay=int(self.inactivationDelay))
 
@@ -2189,18 +2186,18 @@ class Minefield(Equipment, TooltipConfigReader, ArcadeEquipmentConfigReader, Cou
         self.areaMarker = None
         return
 
-    def _readConfig(self, xmlCtx, section):
-        bombs = _xml.readTupleOfFloats(xmlCtx, section, 'bombsPattern')
+    def _readConfig(self, xmlCtx, scriptSection):
+        bombs = _xml.readTupleOfFloats(xmlCtx, scriptSection, 'bombsPattern')
         self.bombsPattern = [ (bombs[b], bombs[(b + 1)]) for b in range(0, len(bombs) - 1, 2) ]
-        self.mineParams._readConfig(xmlCtx, section['mineParams'])
-        self.cooldownTime = _xml.readInt(xmlCtx, section, 'cooldownSeconds')
-        self.disableAllyDamage = _xml.readBool(xmlCtx, section, 'disableAllyDamage')
-        self.areaLength = _xml.readPositiveFloat(xmlCtx, section, 'areaLength')
-        self.areaWidth = _xml.readPositiveFloat(xmlCtx, section, 'areaWidth')
-        self.areaVisual = _xml.readStringOrNone(xmlCtx, section, 'areaVisual')
-        self.readCountableConsumableConfig(xmlCtx, section)
-        self.readTooltipInformation(xmlCtx, section)
-        self.readArcadeInformation(xmlCtx, section)
+        self.mineParams._readConfig(xmlCtx, scriptSection['mineParams'])
+        self.cooldownTime = _xml.readInt(xmlCtx, scriptSection, 'cooldownSeconds')
+        self.disableAllyDamage = _xml.readBool(xmlCtx, scriptSection, 'disableAllyDamage')
+        self.areaLength = _xml.readPositiveFloat(xmlCtx, scriptSection, 'areaLength')
+        self.areaWidth = _xml.readPositiveFloat(xmlCtx, scriptSection, 'areaWidth')
+        self.areaVisual = _xml.readStringOrNone(xmlCtx, scriptSection, 'areaVisual')
+        self.readCountableConsumableConfig(xmlCtx, scriptSection)
+        self.readTooltipInformation(xmlCtx, scriptSection)
+        self.readArcadeInformation(xmlCtx, scriptSection)
         if IS_CLIENT and self.longDescription:
             self.longDescription = i18n.makeString(self.longDescription, duration=int(self.mineParams.lifetime))
 
@@ -2225,7 +2222,8 @@ class FrontLineMinefield(Equipment, TooltipConfigReader, SharedCooldownConsumabl
         self.bombsNumber = 0
         return
 
-    def _readConfig(self, xmlCtx, section):
+    def _readConfig(self, xmlCtx, scriptSection):
+        section = scriptSection
         bombs = _xml.readTupleOfFloats(xmlCtx, section, 'bombsPattern')
         self.bombsPattern = [ (bombs[b], bombs[(b + 1)]) for b in range(0, len(bombs) - 1, 2) ]
         self.mineParams._readConfig(xmlCtx, section['mineParams'])
@@ -2249,14 +2247,14 @@ class VisualScriptEquipment(Equipment):
         super(VisualScriptEquipment, self).__init__()
         self.visualScript = {}
 
-    def _readConfig(self, xmlCtx, section):
-        self.visualScript = readVisualScriptSection(section)
+    def _readConfig(self, xmlCtx, scriptSection):
+        self.visualScript = readVisualScriptSection(scriptSection)
 
     def _exportSlotsToVSE(self):
         params = self._getExportParamsDict(ExportParamsTag.VSE)
         if not params:
             return
-        for _, plans in self.visualScript.iteritems():
+        for plans in viewvalues(self.visualScript):
             for planDef in plans:
                 planDef['params'].update(params)
 
@@ -2270,9 +2268,9 @@ class LevelBasedVisualScriptEquipment(VisualScriptEquipment):
         super(LevelBasedVisualScriptEquipment, self).__init__()
         self.radius = ()
 
-    def _readConfig(self, xmlCtx, section):
-        super(LevelBasedVisualScriptEquipment, self)._readConfig(xmlCtx, section)
-        self.radius = tuple(map(float, section.readString('radius').split()))
+    def _readConfig(self, xmlCtx, scriptSection):
+        super(LevelBasedVisualScriptEquipment, self)._readConfig(xmlCtx, scriptSection)
+        self.radius = tuple(map(float, scriptSection.readString('radius').split()))
         if len(self.radius) == 0:
             _xml.raiseWrongXml(xmlCtx, 'radius', 'should be multiple values separated by space.')
 
@@ -2283,18 +2281,18 @@ class LevelBasedVisualScriptEquipment(VisualScriptEquipment):
 class DynComponentsGroupEquipment(Equipment):
     __slots__ = ('durationSeconds', 'dynComponentsGroups')
 
-    def _readConfig(self, xmlCtx, section):
-        super(DynComponentsGroupEquipment, self)._readConfig(xmlCtx, section)
-        self.durationSeconds = _xml.readFloat(xmlCtx, section, 'durationSeconds')
-        self.dynComponentsGroups = frozenset(_xml.readString(xmlCtx, section, 'dynComponentsGroups').split())
+    def _readConfig(self, xmlCtx, scriptSection):
+        super(DynComponentsGroupEquipment, self)._readConfig(xmlCtx, scriptSection)
+        self.durationSeconds = _xml.readFloat(xmlCtx, scriptSection, 'durationSeconds')
+        self.dynComponentsGroups = frozenset(_xml.readString(xmlCtx, scriptSection, 'dynComponentsGroups').split())
 
 
 class PoiRadarEquipment(VisualScriptEquipment):
     __slots__ = ('duration', )
 
-    def _readConfig(self, xmlCtx, section):
-        super(PoiRadarEquipment, self)._readConfig(xmlCtx, section)
-        self.duration = section.readFloat('duration')
+    def _readConfig(self, xmlCtx, scriptSection):
+        super(PoiRadarEquipment, self)._readConfig(xmlCtx, scriptSection)
+        self.duration = scriptSection.readFloat('duration')
         self._exportSlotsToVSE()
 
 
@@ -2313,18 +2311,18 @@ class PoiArtilleryEquipment(VisualScriptEquipment, BaseMarkerConfigReader, Effec
         self.initMarkerInformation()
         self.initEffectsInformation()
 
-    def _readConfig(self, xmlCtx, section):
-        super(PoiArtilleryEquipment, self)._readConfig(xmlCtx, section)
-        self.delay = section.readFloat('delay')
-        self.radius = section.readFloat('radius')
-        self.damage = section.readFloat('damage')
-        self.stunDuration = section.readFloat('stunDuration')
-        self.areaShow = section.readString('areaShow').lower() or None
-        self.duration = section.readFloat('duration')
-        self.readMarkerConfig(xmlCtx, section)
-        self.readEffectConfig(xmlCtx, section)
-        self.fraction = section.readFloat('fraction')
-        self.requireAssists = section.readBool('requireAssists', False)
+    def _readConfig(self, xmlCtx, scriptSection):
+        super(PoiArtilleryEquipment, self)._readConfig(xmlCtx, scriptSection)
+        self.delay = scriptSection.readFloat('delay')
+        self.radius = scriptSection.readFloat('radius')
+        self.damage = scriptSection.readFloat('damage')
+        self.stunDuration = scriptSection.readFloat('stunDuration')
+        self.areaShow = scriptSection.readString('areaShow').lower() or None
+        self.duration = scriptSection.readFloat('duration')
+        self.readMarkerConfig(xmlCtx, scriptSection)
+        self.readEffectConfig(xmlCtx, scriptSection)
+        self.fraction = scriptSection.readFloat('fraction')
+        self.requireAssists = scriptSection.readBool('requireAssists', False)
         self._exportSlotsToVSE()
         return
 

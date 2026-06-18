@@ -429,6 +429,52 @@ msgstr ""
 "Нажав «Купить», вы теряете возможность получить компенсацию за приобретённое"
 " оборудование и снаряжение в золоте. Пожалуйста, проверьте всё внимательно."
 
+msgid "challenge_missions/activation/cancel"
+msgstr "Отменить"
+
+msgid "challenge_missions/activation/confirm"
+msgstr "Активировать"
+
+msgid "challenge_missions/activation/description"
+msgstr ""
+"После активации серию задач «Вызова» можно {{@ style (color "
+"#FFE4C0)}}выполнить, провалить, а также отказаться от неё{{/}}. Если вы "
+"провалите задачу в серии, то потеряете один щит."
+
+msgid "challenge_missions/activation/title"
+msgstr "Активировать «Вызов: {{challengeName}}»?"
+
+msgid "challenge_missions/restart/cancel"
+msgstr "Отменить"
+
+msgid "challenge_missions/restart/confirm"
+msgstr "Перезапустить"
+
+msgid "challenge_missions/restart/description"
+msgstr ""
+"Прогресс задачи будет сброшен, щиты восстановятся, и вы сможете снова "
+"зарабатывать награды. Серия задач будет активна сразу после перезапуска."
+
+msgid "challenge_missions/restart/free/title"
+msgstr "Перезапустить «Вызов: {{challengeName}}» бесплатно?"
+
+msgid "challenge_missions/restart/paid/title"
+msgstr "Перезапустить «Вызов: {{challengeName}}» за {{cost}}?"
+
+msgid "challenge_missions/surrender/cancel"
+msgstr "Отменить"
+
+msgid "challenge_missions/surrender/confirm"
+msgstr "Отказаться"
+
+msgid "challenge_missions/surrender/description"
+msgstr ""
+"Серия задач «Вызова», от которой вы отказались, сбрасывает весь прогресс и "
+"щиты. Вы можете перезапустить её в любое время."
+
+msgid "challenge_missions/surrender/title"
+msgstr "Отказаться от «Вызова: {{challengeName}}»?"
+
 msgid "changeGraphics/cancel"
 msgstr "Отменить"
 

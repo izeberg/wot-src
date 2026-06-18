@@ -98,6 +98,30 @@ msgstr ""
 msgid "battleHint/destroyEnemies"
 msgstr "Уничтожить технику противника: {num} ед."
 
+msgid "battleHint/destroyObelisk/subtitle/bonus"
+msgstr "данных, %(buffBonus)s"
+
+msgid "battleHint/destroyObelisk/subtitle/bonus/LS_BOT_OBELISK_HP_REGEN"
+msgstr "машины отремонтированы"
+
+msgid "battleHint/destroyObelisk/subtitle/bonus/LS_BOT_OBELISK_SHIELD"
+msgstr "щиты получены"
+
+msgid "battleHint/destroyObelisk/subtitle/bonus/LS_BOT_OBELISK_STUN"
+msgstr "противники оглушены"
+
+msgid "battleHint/destroyObelisk/title"
+msgstr "Обелиск %(name)s разрушен!"
+
+msgid "battleHint/destroyObelisk/title/name/LS_BOT_OBELISK_HP_REGEN"
+msgstr "«Реген»"
+
+msgid "battleHint/destroyObelisk/title/name/LS_BOT_OBELISK_SHIELD"
+msgstr "«Барьер»"
+
+msgid "battleHint/destroyObelisk/title/name/LS_BOT_OBELISK_STUN"
+msgstr "«Сбой»"
+
 msgid "battleHint/enemiesFromAbove"
 msgstr "Обнаружены точки появления! Противник на подходе!"
 
@@ -128,7 +152,7 @@ msgstr ""
 "пока он не достиг АТЛАСА!"
 
 msgid "battleHint/trapper"
-msgstr "Уничтожьте Ловца! Это&nbsp;остановит энергоудары."
+msgstr "Уничтожьте Ловца! Это&nbsp;остановит смертельные зоны."
 
 msgid "battleHint/turret"
 msgstr "Пробудились москиты!"
@@ -211,21 +235,21 @@ msgid "eventStats/difficulty"
 msgstr "Сложность: «%(difficulty)s»"
 
 msgid "eventStats/eventName"
-msgstr "Последний рубеж: Вторжение"
+msgstr "Последний рубеж: Северные земли"
 
 msgid "eventStats/globalTask"
-msgstr "Задача: отразить все волны противника"
+msgstr "Цель: уничтожить все волны противника"
 
 msgid "eventStats/mission"
-msgstr "Для победы отразите все волны противника."
+msgstr "Уничтожить все волны противника"
 
 msgid "eventStats/tableCaption"
 msgstr "Состав отряда"
 
 msgid "help/description_0"
 msgstr ""
-"Для победы отразите все волны противника.\n"
-"С каждой последующей атакой его сила растёт."
+"Для победы уничтожьте все волны противника.\n"
+"С каждой последующей волной его сила растёт."
 
 msgid "help/description_1"
 msgstr ""
@@ -243,7 +267,7 @@ msgstr ""
 "уничтожит его, и бой завершится поражением."
 
 msgid "help/title"
-msgstr "ПОСЛЕДНИЙ РУБЕЖ: ВТОРЖЕНИЕ"
+msgstr "ПОСЛЕДНИЙ РУБЕЖ: СЕВЕРНЫЕ ЗЕМЛИ"
 
 msgid "help/title_0"
 msgstr "ВОЛНЫ ПРОТИВНИКА"
@@ -268,8 +292,8 @@ msgstr "Бессмысленно!"
 
 msgid "loading/description_0"
 msgstr ""
-"Для победы отразите все волны противника.\n"
-"С каждой последующей атакой его сила растёт."
+"Для победы уничтожьте все волны противника.\n"
+"С каждой последующей волной его сила растёт."
 
 msgid "loading/description_1"
 msgstr ""
@@ -381,7 +405,7 @@ msgid "postmortem_messages/DEATH_FROM_LS_SHOT"
 msgstr "Машина уничтожена выстрелом противника"
 
 msgid "prebattle/description/message"
-msgstr "Задача: отразить все волны противника"
+msgstr "Цель: уничтожить все волны противника"
 
 msgid "prebattle/description/title"
 msgstr "Последний рубеж: сложность «%(difficulty)s»"
@@ -390,7 +414,7 @@ msgid "prebattle/difficulty/107"
 msgstr "Стандарт"
 
 msgid "prebattle/difficulty/108"
-msgstr "Тяжело"
+msgstr "Продвинутый"
 
 msgid "prebattle/difficulty/109"
 msgstr "Жесть"
@@ -413,6 +437,12 @@ msgstr "Еду к зоне!"
 msgid "radialMenu/move_to_magnus"
 msgstr "Защищаю"
 
+msgid "radialMenu/obelisk"
+msgstr "Я заберу обелиск!"
+
+msgid "radialMenu/obeliskHelp"
+msgstr "Разрушьте обелиск!"
+
 msgid "statusNotificationTimers/obeliskShield"
 msgstr "Энергощит"
 
@@ -426,3 +456,12 @@ msgstr ""
 
 msgid "teamList/teammates"
 msgstr "Союзники"
+
+msgid "voice_chat_panel/hint/chat/off"
+msgstr "Отключить голосовую связь"
+
+msgid "voice_chat_panel/hint/chat/on"
+msgstr "Включить голосовую связь"
+
+msgid "voice_chat_panel/hint/talk"
+msgstr "Нажмите, чтобы говорить"

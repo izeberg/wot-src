@@ -1,5 +1,10 @@
-import logging, os, urllib
+from __future__ import absolute_import
+import logging, os
 from copy import deepcopy
+from functools import total_ordering
+from future.moves.urllib.parse import urlencode
+from future.utils import iteritems, lfilter, listvalues, viewitems, viewvalues
+from past.builtins import cmp, range
 import typing, Math, ResMgr
 from CurrentVehicle import g_currentVehicle
 from gui.customization.shared import EDITABLE_STYLE_APPLY_TO_ALL_AREAS_TYPES, getAvailableRegions
@@ -161,7 +166,7 @@ def camoIconUrl(texture, width, height, colors, background=_CAMO_SWATCH_BACKGROU
        'gw': weights[1], 
        'bw': weights[2], 
        'aw': weights[3]}
-    return _CAMO_ICON_URL.format(texture=texture, params=urllib.urlencode(params))
+    return _CAMO_ICON_URL.format(texture=texture, params=urlencode(params))
 
 
 def personalNumIconTemplate(number, width, height, texture, fontPath, textureMask='', background=''):
@@ -175,7 +180,7 @@ def personalNumIconUrl(number, width, height, texture, fontPath, textureMask='',
        'font': fontPath, 
        'mask': textureMask, 
        'back': background}
-    return _PERSONAL_NUM_ICON_URL.format(texture=texture, params=urllib.urlencode(params))
+    return _PERSONAL_NUM_ICON_URL.format(texture=texture, params=urlencode(params))
 
 
 def previewTemplate(texture, width, height, innerWidth, innerHeight):
@@ -187,7 +192,7 @@ def previewUrl(texture, width, height, innerWidth, innerHeight):
        'h': height, 
        'iw': innerWidth, 
        'ih': innerHeight}
-    return _PREVIEW_ICON_URL.format(texture=texture, params=urllib.urlencode(params))
+    return _PREVIEW_ICON_URL.format(texture=texture, params=urlencode(params))
 
 
 class ConcealmentBonus(object):
@@ -229,6 +234,7 @@ class ConcealmentBonus(object):
         return backport.text(R.strings.vehicle_customization.bonus.name.camouflage())
 
 
+@total_ordering
 class Customization(FittingItem):
     __slots__ = ('_boundVehicles', '_bonus', '_installedVehicles', '__noveltyData',
                  '__progressingData', '__installedCount', '__boundInventoryCount',
@@ -255,7 +261,7 @@ class Customization(FittingItem):
             for vehicleCD in installedVehicles:
                 self._installedVehicles[vehicleCD] = proxy.inventory.getC11nItemAppliedOnVehicleCount(self.intCD, vehicleCD)
 
-            for vehIntCD, count in invCount.iteritems():
+            for vehIntCD, count in viewitems(invCount):
                 self._boundVehicles[vehIntCD] = count
 
             self._inventoryCount = self._boundVehicles.pop(UNBOUND_VEH_KEY, 0)
@@ -264,10 +270,13 @@ class Customization(FittingItem):
         self._isUnlocked = True
         return
 
-    def __cmp__(self, other):
-        if isinstance(other, Customization):
-            return cmp(self.userName, other.userName)
-        return -1
+    def __eq__(self, other):
+        return self._compare(other) == 0
+
+    def __lt__(self, other):
+        return self._compare(other) < 0
+
+    __hash__ = FittingItem.__hash__
 
     def __repr__(self):
         return ('{}<intCD:{}, id:{}>').format(self.__class__.__name__, self.intCD, self.id)
@@ -372,7 +381,7 @@ class Customization(FittingItem):
             return self._boundVehicles.get(vehicleIntCD, 0)
         else:
             if self.__boundInventoryCount is None:
-                self.__boundInventoryCount = sum(self._boundVehicles.itervalues())
+                self.__boundInventoryCount = sum(viewvalues(self._boundVehicles))
             return self.__boundInventoryCount
 
     def fullInventoryCount(self, vehicleIntCD=None):
@@ -388,7 +397,7 @@ class Customization(FittingItem):
             return self._installedVehicles.get(vehicleIntCD, 0)
         else:
             if self.__installedCount is None:
-                self.__installedCount = sum(self._installedVehicles.itervalues())
+                self.__installedCount = sum(viewvalues(self._installedVehicles))
             return self.__installedCount
 
     def fullCount(self, vehicleIntCD=None):
@@ -466,7 +475,7 @@ class Customization(FittingItem):
                 styleDescr = customizationCache.itemToQuestProgressionStyle[self.intCD]
                 qProg = styleDescr.questsProgression
                 for token in sorted(qProg.getGroupTokens()):
-                    groupItems = filter(bool, qProg.getItemsForGroup(token))
+                    groupItems = lfilter(bool, qProg.getItemsForGroup(token))
                     hasOtherItemsInChain = False
                     for level, itemsForLevel in enumerate(groupItems, 1):
                         itemsIdsForType = itemsForLevel.get(self.descriptor.itemType, ())
@@ -486,7 +495,7 @@ class Customization(FittingItem):
     def getIconApplied(self, component):
         return self.icon
 
-    def getInstalledVehicles(self, vehicles_=None):
+    def getInstalledVehicles(self, _=None):
         return set(self._installedVehicles)
 
     def getBoundVehicles(self):
@@ -579,7 +588,7 @@ class Customization(FittingItem):
     def getNoveltyCounter(self, vehicle):
         if not self.mayInstall(vehicle):
             return 0
-        return sum([ self.__noveltyData.get(key, 0) for key in (UNBOUND_VEH_KEY, vehicle.intCD) ])
+        return sum(self.__noveltyData.get(key, 0) for key in (UNBOUND_VEH_KEY, vehicle.intCD))
 
     @staticmethod
     def getSpecialArgs(component):
@@ -606,7 +615,7 @@ class Customization(FittingItem):
                 if conditionPath is not None:
                     return vehProgressData.currentProgressOnLevel.get(conditionPath, 0)
                 if vehProgressData.currentProgressOnLevel.values():
-                    return vehProgressData.currentProgressOnLevel.values()[0]
+                    return listvalues(vehProgressData.currentProgressOnLevel)[0]
             return 0
         return -1
 
@@ -616,7 +625,7 @@ class Customization(FittingItem):
             if conditionPath is not None:
                 return vehProgressData.maxProgressOnLevel.get(conditionPath, -1)
             if vehProgressData.maxProgressOnLevel.values():
-                return vehProgressData.maxProgressOnLevel.values()[0]
+                return listvalues(vehProgressData.maxProgressOnLevel)[0]
         return -1
 
     @staticmethod
@@ -700,6 +709,11 @@ class Customization(FittingItem):
 
     def _matchVehicleTags(self, vehicle):
         return not (vehicle and vehicle.isProgressionDecalsOnly)
+
+    def _compare(self, other):
+        if isinstance(other, Customization):
+            return cmp(self.userName, other.userName)
+        return -1
 
 
 class Paint(Customization):
@@ -1123,8 +1137,7 @@ class StatTracker(Attachment):
 
 
 class Style(Customization):
-    __slots__ = ('_changableTypes', '_itemsCache', '__outfits', '__dependenciesByIntCD',
-                 '__serialNumber')
+    __slots__ = ('_changableTypes', '__outfits', '__dependenciesByIntCD', '__serialNumber')
     _itemsCache = dependency.descriptor(IItemsCache)
 
     def __init__(self, intCompactDescr, proxy=None):
@@ -1193,7 +1206,7 @@ class Style(Customization):
     @property
     def alternateItems(self):
         items = []
-        for itemType, ids in self.descriptor.alternateItems.iteritems():
+        for itemType, ids in iteritems(self.descriptor.alternateItems):
             for itemId in ids:
                 compactDescr = makeIntCompactDescrByID('customizationItem', itemType, itemId)
                 items.append(self._service.getItemByCD(compactDescr))
@@ -1248,7 +1261,7 @@ class Style(Customization):
                 return ItemPrice(price=price, defPrice=price)
             return ITEM_PRICE_EMPTY
 
-        return sum((_getLevelPrice(lvl) for lvl in xrange(currentLvl + 1, targetLvl + 1)), ITEM_PRICE_EMPTY)
+        return sum((_getLevelPrice(lvl) for lvl in range(currentLvl + 1, targetLvl + 1)), ITEM_PRICE_EMPTY)
 
     def getRentInfo(self, vehicle):
         if not self.isRentable:
@@ -1267,9 +1280,9 @@ class Style(Customization):
         if self.__dependenciesByIntCD is None:
             self.__dependenciesByIntCD = {}
             makeCD = makeIntCompactDescrByID
-            for ancestorID, dependentData in self.descriptor.dependencies.iteritems():
+            for ancestorID, dependentData in iteritems(self.descriptor.dependencies):
                 dependentIntCDs = []
-                for iType, iIds in dependentData.iteritems():
+                for iType, iIds in iteritems(dependentData):
                     dependentIntCDs.extend([ makeCD('customizationItem', iType, iId) for iId in iIds ])
 
                 dependentIntCDs = tuple(dependentIntCDs)
@@ -1303,7 +1316,7 @@ class Style(Customization):
             if not self.isProgressionRequired:
                 return EditingStyleReason(EDITING_STYLE_REASONS.IS_EDITABLE)
             progressionStorage = self._itemsCache.items.inventory.getC11nProgressionDataForVehicle(vehicleIntCD)
-            for itemIntCD, progressionData in progressionStorage.iteritems():
+            for itemIntCD, progressionData in viewitems(progressionStorage):
                 if not progressionData.currentLevel:
                     continue
                 item = self._service.getItemByCD(itemIntCD)
@@ -1326,7 +1339,7 @@ class Style(Customization):
         c11nCtx = self._service.getCtx()
         if c11nCtx is not None and vehicleIntCD == g_currentVehicle.item.intCD:
             diffs = c11nCtx.stylesDiffsCache.getDiffs(self)
-            for diff in diffs.itervalues():
+            for diff in viewvalues(diffs):
                 if diff and isEditedStyle(parseCompDescr(diff)):
                     return True
 

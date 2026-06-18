@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from skeletons.gui.platform.controller import IPlatformRequestController
 if typing.TYPE_CHECKING:

@@ -1,5 +1,6 @@
+from __future__ import absolute_import
 import BigWorld
-from client_arena_component_system import ClientArenaComponent
+from arena_component_system.client_arena_component_system import ClientArenaComponent
 from constants import ARENA_SYNC_OBJECTS
 import Event
 from helpers.CallbackDelayer import CallbackDelayer

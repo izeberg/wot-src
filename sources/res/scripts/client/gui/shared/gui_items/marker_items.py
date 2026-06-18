@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import Math, copy, ResMgr
 from extension_utils import importClass
 from gui.Scaleform.daapi.view.battle.shared.component_marker.markers_components import ComponentBitMask as FLAG, COMPONENT_MARKER_TYPE_NAMES
@@ -38,7 +39,7 @@ class MarkerParamsFactory(object):
     @classmethod
     def buildBitMask(cls, params):
         bitMask = FLAG.NONE
-        for key in params.iterkeys():
+        for key in params:
             if key in FLAG.LIST:
                 bitMask |= key
 

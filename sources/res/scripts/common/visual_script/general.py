@@ -1,6 +1,7 @@
-from block import Block, makeResEditorData, InitParam
-from slot_types import SLOT_TYPE, arrayOf
+from __future__ import absolute_import
 from uuid_utils import genUUID
+from visual_script.block import Block, makeResEditorData, InitParam
+from visual_script.slot_types import SLOT_TYPE
 
 class ResourceSelector(Block):
 

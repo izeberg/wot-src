@@ -1,5 +1,8 @@
+from __future__ import absolute_import
+import weakref
 from functools import partial
-import weakref, BigWorld, BattleReplay, Event, SoundGroups, nations
+from future.utils import listvalues
+import BigWorld, BattleReplay, Event, SoundGroups, nations
 from BattleReplay import CallbackDataNames
 from constants import UNKNOWN_VEHICLE_ID
 from debug_utils import LOG_CURRENT_EXCEPTION
@@ -274,7 +277,7 @@ class VehicleStateController(IBattleController):
     def getStateValue(self, stateID):
         if stateID in self.__cachedStateValues:
             if stateID == VEHICLE_VIEW_STATE.DEVICES:
-                value = self.__cachedStateValues[stateID].values()
+                value = listvalues(self.__cachedStateValues[stateID])
             else:
                 value = self.__cachedStateValues[stateID]
             return value
@@ -285,7 +288,7 @@ class VehicleStateController(IBattleController):
             self.onVehicleStateUpdated(stateID, self.__cachedStateValues[stateID])
 
     def invalidate(self, state, value, vehicleID=0):
-        if vehicleID != 0 and vehicleID != self.__vehicleID:
+        if vehicleID not in (0, self.__vehicleID):
             return
         else:
             isStateChangeHandled = False

@@ -1,4 +1,7 @@
-import math, typing, ResMgr
+from __future__ import absolute_import
+import math, typing
+from past.builtins import intern
+import ResMgr
 from constants import IS_DEVELOPMENT
 from debug_utils import LOG_DEBUG
 from items import _xml

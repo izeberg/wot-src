@@ -1,12 +1,13 @@
-import InstantStatuses
+import CGF, InstantStatuses
 
 def invokeInstantStatusForVehicle(vehicle, instantStatusType):
-    instantStatus = vehicle.appearance.findComponentByType(instantStatusType)
-    if instantStatus is None:
-        vehicle.appearance.createComponent(instantStatusType)
+    gameObject = vehicle.appearance.gameObject
+    instantStatus = gameObject.findWrite(instantStatusType)
+    if not instantStatus:
+        queue = CGF.CommandQueue(gameObject.spaceID)
+        queue.createComponent(gameObject, instantStatusType)
     else:
         instantStatus.addNextDone()
-    return
 
 
 def invokeShotsDoneStatus(vehicle):

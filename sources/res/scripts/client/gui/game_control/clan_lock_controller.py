@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from future.utils import iteritems
 import Event
 from gui.ClientUpdateManager import g_clientUpdateManager
 from gui.shared.gui_items import CLAN_LOCK
@@ -42,7 +44,7 @@ class ClanLockController(IClanLockController, Notifiable):
         g_clientUpdateManager.removeObjectCallbacks(self)
 
     def __updateVehicleLocks(self, locks):
-        self.__lockedVehicles = [ key for key, value in locks.iteritems() if value.get(CLAN_LOCK, None) is not None
+        self.__lockedVehicles = [ key for key, value in iteritems(locks) if value.get(CLAN_LOCK, None) is not None
                                 ]
         self.__notificationStartStop()
         return

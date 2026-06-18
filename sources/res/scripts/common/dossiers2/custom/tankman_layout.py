@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from dossiers2.common.DossierBlockBuilders import *
 _tmanTotalBlockLayout = [
  'battlesCount']

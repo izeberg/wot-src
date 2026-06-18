@@ -17548,5 +17548,25 @@
 				<_8347>desertRat.png</_8347>
 			</icons>
 		</desertRat>
+		<servicewoman>
+			<groupID>364</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>female</sex>
+			<notInShop>true</notInShop>
+			<tags>commander  passportReplacementForbidden</tags>
+			<roles>commander</roles>
+			<firstNames>
+				<_8349>#italy_crew:names/servicewoman_n</_8349>
+			</firstNames>
+			<lastNames>
+				<_8349>#italy_crew:names/servicewoman</_8349>
+			</lastNames>
+			<icons>
+				<_8349>servicewoman.png</_8349>
+			</icons>
+		</servicewoman>
 	</premiumGroups>
 </root>

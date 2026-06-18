@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld
 from dog_tags_common.components_config import componentConfigAdapter as cca
 from dog_tags_common.config.common import ComponentViewType
@@ -37,7 +38,7 @@ class DogTagInfoTooltip(BlocksTooltipData):
         items.append(formatters.packTextBlockData(text_styles.middleTitle(dogTagComposer.getComponentTitle(compId)), padding=self.__titlePadding))
         typeLevelBlock = [
          text_styles.main(dogTagComposer.getComponentType(compId))]
-        valueBlock = list()
+        valueBlock = []
         if comp.viewType == ComponentViewType.ENGRAVING:
             typeLevelBlock.append(text_styles.main(', '))
             typeLevelBlock.append(text_styles.neutral(('{} {}').format(backport.text(R.strings.dogtags.customization.tooltip.level()), componentProgress.grade + 1)))

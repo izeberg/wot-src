@@ -1,7 +1,8 @@
+from __future__ import absolute_import
 import itertools, typing
+from collections import OrderedDict
 from enum import Enum
 import BigWorld
-from collections import OrderedDict
 from Event import Event, EventManager
 from account_helpers import AccountSettings
 from account_helpers.AccountSettings import BattleMatters

@@ -108,6 +108,18 @@ package
       public static const PLAYLIST_WARNING_HEADER:String = "#frontline.fl_tooltips:playlist/warning/header";
       
       public static const PLAYLIST_WARNING_BODY:String = "#frontline.fl_tooltips:playlist/warning/body";
+      
+      public static const BATTLEABILITYFILTER_FIRESUPPORT_HEADER:String = "#frontline.fl_tooltips:battleAbilityFilter/firesupport/header";
+      
+      public static const BATTLEABILITYFILTER_FIRESUPPORT_BODY:String = "#frontline.fl_tooltips:battleAbilityFilter/firesupport/body";
+      
+      public static const BATTLEABILITYFILTER_RECONNAISSANCE_HEADER:String = "#frontline.fl_tooltips:battleAbilityFilter/reconnaissance/header";
+      
+      public static const BATTLEABILITYFILTER_RECONNAISSANCE_BODY:String = "#frontline.fl_tooltips:battleAbilityFilter/reconnaissance/body";
+      
+      public static const BATTLEABILITYFILTER_TACTICS_HEADER:String = "#frontline.fl_tooltips:battleAbilityFilter/tactics/header";
+      
+      public static const BATTLEABILITYFILTER_TACTICS_BODY:String = "#frontline.fl_tooltips:battleAbilityFilter/tactics/body";
        
       
       public function FL_TOOLTIPS()

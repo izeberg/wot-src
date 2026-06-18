@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from server_side_replay.gui.wgcg.data_wrappers.server_replays import DataNames
 EXAMPLE_DATA = {DataNames.TOP_REPLAYS: {'kills_made': [
                                         {'rank': 1, 

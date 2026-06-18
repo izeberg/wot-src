@@ -1,8 +1,9 @@
+from __future__ import absolute_import
 from typing import Optional
 from items.components import legacy_stuff
 from items.components import skills_constants
+from items.components.perks_constants import StubPerkIDs
 from items.components.skills_constants import SkillTypeName
-from perks_constants import StubPerkIDs
 
 class BasicSkill(legacy_stuff.LegacyStuff):
     __slots__ = ('__name', '__vsePerk', '__uiSettings')

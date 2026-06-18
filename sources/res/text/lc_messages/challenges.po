@@ -1,0 +1,285 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-11 10:00+0300\n"
+"PO-Revision-Date: 2022-01-11 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgid "#PluralForms"
+msgstr ""
+"nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && "
+"(n%100<10 || n%100>=20) ? 1 : 2);"
+
+msgid "awards_view/additional_reward/title"
+msgstr "Также получено:"
+
+msgid "awards_view/footer/sub_title/reply"
+msgstr "Этот набор задач можно повторить."
+
+msgid "awards_view/footer/title/affirmative"
+msgstr "Так точно!"
+
+msgid "awards_view/footer/title/close"
+msgstr "Закрыть"
+
+msgid "awards_view/footer/title/in_garage"
+msgstr "Показать в Ангаре"
+
+msgid "awards_view/footer/title/replay"
+msgstr "Повторить"
+
+msgid "awards_view/footer/title/to_challenge"
+msgstr "К Вызову"
+
+msgid "awards_view/reward/description/premium_plus"
+msgstr "Танковый премиум аккаунт"
+
+msgid "awards_view/reward/description/vehicle_elite"
+msgstr "Премиум машина"
+
+msgid "awards_view/reward/description/vehicle_for_rent"
+msgstr "Техника в аренду"
+
+msgid "awards_view/reward/description/vehicle_with_style"
+msgstr "и стиль «{{styleName}}»"
+
+msgid "awards_view/reward/multi"
+msgstr "×{{count}}"
+
+msgid "awards_view/reward/title/premium_plus"
+msgid_plural "plural/awards_view/reward/title/premium_plus"
+msgstr[0] "%(day) день"
+msgstr[1] "%(day) дня"
+msgstr[2] "%(day) дней"
+
+msgid "awards_view/title"
+msgstr "«ВЫЗОВ» ПРОЙДЕН!"
+
+msgid "bonuses/battleBonusX5"
+msgstr "Задача на ×5 опыта за бой"
+
+msgid "bonuses/blueprints/nationalFragment"
+msgstr "Фрагмент чертежа: (%(nation)s)"
+
+msgid "bonuses/blueprints/universalFragment"
+msgstr "Универсальный фрагмент чертежа"
+
+msgid "bonuses/bpcoin"
+msgstr "Жетон Боевого пропуска"
+
+msgid "bonuses/crewBonusX3"
+msgstr "Задача на ×3 опыта экипажа"
+
+msgid "bonuses/description/attachments_set"
+msgstr "Комплект 3D-объектов"
+
+msgid "bonuses/description/booster"
+msgstr "Личный резерв"
+
+msgid "bonuses/description/bounty_equipment"
+msgstr "Трофейное оборудование"
+
+msgid "bonuses/description/crewSkin"
+msgstr "Облик экипажа"
+
+msgid "bonuses/description/directive"
+msgstr "Инструкция"
+
+msgid "bonuses/description/experimental_equipment"
+msgstr "Экспериментальное оборудование"
+
+msgid "bonuses/description/improved_equipment"
+msgstr "Усовершенствованное оборудование"
+
+msgid "bonuses/description/lockedStyle"
+msgstr "и стиль «%(styleName)s»"
+
+msgid "bonuses/description/standard_equipment"
+msgstr "Штатное оборудование"
+
+msgid "bonuses/description/style"
+msgstr "2D-стиль"
+
+msgid "bonuses/description/style_3d"
+msgstr "3D-стиль"
+
+msgid "bonuses/standardCrewMember/female"
+msgstr "Девушка-танкист"
+
+msgid "bonuses/standardCrewMember/male"
+msgstr "Новобранец"
+
+msgid "bonuses/uniqueCrewMember"
+msgstr "Член экипажа"
+
+msgid "condition/achievement"
+msgstr "Получить награду %(achievement)s"
+
+msgid "condition/achievement/title"
+msgstr "Герои битвы"
+
+msgid "condition/aggregated/damageAssistedRadioStunTrack/damageDealt"
+msgstr "Суммарно нанести и обеспечить нанесение %(goal)s ед. урона."
+
+msgid "condition/aggregated/damageBlockedByArmor/damageDealt/damageReceived"
+msgstr "Суммарно нанести, получить и заблокировать %(goal)s ед. урона."
+
+msgid "condition/aggregated/title"
+msgstr "Комплексное условие"
+
+msgid "condition/classes/AT-SPG"
+msgstr "ПТ-САУ"
+
+msgid "condition/classes/SPG"
+msgstr "САУ"
+
+msgid "condition/classes/heavyTank"
+msgstr "Тяжёлый танк"
+
+msgid "condition/classes/lightTank"
+msgstr "Лёгкий танк"
+
+msgid "condition/classes/mediumTank"
+msgstr "Средний танк"
+
+msgid "condition/critsCount"
+msgstr ""
+"Совершить критических попаданий по внутренним или внешним модулям техники "
+"противника: %(goal)s."
+
+msgid "condition/critsCount/title"
+msgstr "Обездвиживание"
+
+msgid "condition/damageBlockedByArmor"
+msgstr "Заблокировать %(goal)s ед. урона."
+
+msgid "condition/damageBlockedByArmor/compareWithMaxHealth"
+msgstr ""
+"Заблокировать в %(goal)s раза больше урона, чем прочность собственной "
+"машины."
+
+msgid "condition/damageBlockedByArmor/title"
+msgstr "Блокирование"
+
+msgid "condition/damageDealt"
+msgstr "Нанести %(goal)s ед. урона технике противника."
+
+msgid "condition/damageDealt/compareWithMaxHealth"
+msgstr ""
+"Нанести в %(goal)s раза больше урона, чем прочность собственной машины."
+
+msgid "condition/damageDealt/eventCount/maxDistance"
+msgstr ""
+"Совершить попаданий по технике противника с расстояния не более %(distance)s"
+" м: %(goal)s."
+
+msgid "condition/damageDealt/eventCount/minDistance"
+msgstr ""
+"Совершить попаданий по технике противника с расстояния не менее %(distance)s"
+" м: %(goal)s."
+
+msgid "condition/damageDealt/eventCount/ramming"
+msgstr "Нанести урон технике противника тараном не менее %(goal)s раз."
+
+msgid "condition/damageDealt/eventCount/withinViewRange"
+msgstr ""
+"Совершить попаданий по технике противника, попадающей в ваш радиус обзора: "
+"%(goal)s."
+
+msgid "condition/damageDealt/limittedTime"
+msgstr "Нанести %(goal)s ед. урона в первые %(timeLimit)s мин боя."
+
+msgid "condition/damageDealt/maxDistance"
+msgstr "Нанести %(goal)s ед. урона с расстояния не более %(distance)s м."
+
+msgid "condition/damageDealt/minDistance"
+msgstr "Нанести %(goal)s ед. урона с расстояния не менее %(distance)s м."
+
+msgid "condition/damageDealt/ramming"
+msgstr "Нанести %(goal)s ед. урона тараном."
+
+msgid "condition/damageDealt/ramming/title"
+msgstr "Таран"
+
+msgid "condition/damageDealt/title"
+msgstr "Огневая мощь"
+
+msgid "condition/damageDealt/whileEnemyInvisible"
+msgstr "Нанести %(goal)s ед. урона необнаруженной технике противника."
+
+msgid "condition/damageDealt/withinViewRange"
+msgstr ""
+"Нанести %(goal)s ед. урона технике противника, попадающей в ваш радиус "
+"обзора."
+
+msgid "condition/kills"
+msgstr "Уничтожить %(goal)s ед. техники противника."
+
+msgid "condition/kills/classes"
+msgstr "Уничтожить не менее %(goal)s %(vehicleClass)s противника."
+
+msgid "condition/kills/classesDiversity"
+msgstr ""
+"Уничтожить %(goal)s ед. техники противника %(classCount)s разных типов."
+
+msgid "condition/kills/title"
+msgstr "Уничтожение"
+
+msgid "condition/kills/whileFullHealth"
+msgstr "Уничтожить %(goal)s ед. техники противника, не получив урона."
+
+msgid "condition/kills/whileInvisible"
+msgstr "Уничтожить %(goal)s ед. техники противника, оставаясь необнаруженным."
+
+msgid "condition/percentFromTotalTeamDamage"
+msgstr ""
+"Сумма нанесённого урона должна составить %(goal)s%% от общего урона своей "
+"команды в бою."
+
+msgid "condition/percentFromTotalTeamDamage/title"
+msgstr "Урон"
+
+msgid "condition/piercingEnemyHits"
+msgstr "Совершить %(goal)s пробитий брони техники противника."
+
+msgid "condition/piercingEnemyHits/title"
+msgstr "Пробитие"
+
+msgid "condition/spotted"
+msgstr "Обнаружить %(goal)s ед. техники противника."
+
+msgid "condition/spotted/title"
+msgstr "Обнаружение"
+
+msgid "condition/spottedBeforeWeBecameSpotted"
+msgstr "Обнаружить %(goal)s ед. техники противника, оставаясь необнаруженным."
+
+msgid "condition/spottedBeforeWeBecameSpotted/title"
+msgstr "Обнаружение"
+
+msgid "condition/top/damageDealt"
+msgstr "Попасть в топ-%(rank)s своей команды по урону."
+
+msgid "condition/top/damageDealt/total"
+msgstr "Попасть в топ-%(rank)s обеих команд по урону."
+
+msgid "condition/top/title"
+msgstr "Топ-1"
+
+msgid "condition/top/xp"
+msgstr "Попасть в топ-%(rank)s своей команды по опыту."
+
+msgid "condition/unknown"
+msgstr "Поиск подходящей задачи..."
+
+msgid "condition/unknown/title"
+msgstr "Ожидание"
+
+msgid "postbattle/name"
+msgstr "ВЫЗОВ: "

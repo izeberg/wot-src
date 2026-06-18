@@ -1,6 +1,7 @@
+from __future__ import absolute_import
+from builtins import map
 from typing import List, Any, Sequence
-from misc import ASPECT, BLOCK_MODE, EDITOR_TYPE
-from itertools import imap
+from visual_script.misc import ASPECT, BLOCK_MODE
 
 def buildStrKeysValue(*args):
     return (';').join(args)
@@ -8,7 +9,7 @@ def buildStrKeysValue(*args):
 
 def makeResEditorData(path, *extensions):
     return [
-     path, (';;').join(imap(lambda ext: '*.%s' % ext, extensions))]
+     path, (';;').join(map(lambda ext: '*.%s' % ext, extensions))]
 
 
 class InitParam(object):

@@ -53,7 +53,7 @@ class LSEventBanner(BaseEventBanner):
 
     @property
     def borderColor(self):
-        return '#BD7817'
+        return '#FF3939'
 
     @property
     def bannerState(self):

@@ -1,5 +1,4 @@
 from frameworks.wulf import ViewModel
-from gui.impl.gen import R
 
 class BackgroundModel(ViewModel):
     __slots__ = ()
@@ -7,26 +6,26 @@ class BackgroundModel(ViewModel):
     def __init__(self, properties=3, commands=0):
         super(BackgroundModel, self).__init__(properties=properties, commands=commands)
 
-    def getSlug(self):
-        return self._getString(0)
+    def getId(self):
+        return self._getNumber(0)
 
-    def setSlug(self, value):
-        self._setString(0, value)
+    def setId(self, value):
+        self._setNumber(0, value)
 
     def getImage(self):
-        return self._getResource(1)
+        return self._getString(1)
 
     def setImage(self, value):
-        self._setResource(1, value)
+        self._setString(1, value)
 
     def getLabel(self):
-        return self._getResource(2)
+        return self._getString(2)
 
     def setLabel(self, value):
-        self._setResource(2, value)
+        self._setString(2, value)
 
     def _initialize(self):
         super(BackgroundModel, self)._initialize()
-        self._addStringProperty('slug', '')
-        self._addResourceProperty('image', R.invalid())
-        self._addResourceProperty('label', R.invalid())
+        self._addNumberProperty('id', 0)
+        self._addStringProperty('image', '')
+        self._addStringProperty('label', '')

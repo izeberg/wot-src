@@ -121,6 +121,10 @@ package net.wg.data.constants.generated
       
       public static const LS_ALPHA:String = "ls_alpha";
       
+      public static const LS_ARCHER:String = "ls_archer";
+      
+      public static const LS_BASTION:String = "ls_bastion";
+      
       public static const LS_BOMBER:String = "ls_bomber";
       
       public static const LS_BOMBER_ALPHA:String = "ls_bomber_alpha";

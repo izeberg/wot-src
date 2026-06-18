@@ -1,4 +1,7 @@
+from __future__ import absolute_import
+from builtins import range
 from enum import Enum
+from future.utils import viewitems
 from constants import SECTOR_STATE
 from enumerations import Enumeration, AttributeEnumItem
 from gui.impl.gen import R
@@ -10,7 +13,7 @@ class BATTLE_CTRL_ID(object):
 
 REUSABLE_BATTLE_CTRL_IDS = (
  BATTLE_CTRL_ID.MOD, BATTLE_CTRL_ID.GUI)
-BATTLE_CTRL_NAMES = dict([ (v, k) for k, v in BATTLE_CTRL_ID.__dict__.iteritems() if not k.startswith('_') ])
+BATTLE_CTRL_NAMES = {v:k for k, v in viewitems(BATTLE_CTRL_ID.__dict__) if not k.startswith('_') if not k.startswith('_')}
 
 def getBattleCtrlName(ctrlID):
     if ctrlID in BATTLE_CTRL_NAMES:

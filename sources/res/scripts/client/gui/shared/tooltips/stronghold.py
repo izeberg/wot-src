@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, typing
 from gui.Scaleform.daapi.view.lobby.rally.vo_converters import getReserveNameVO
 from gui.Scaleform.genConsts.BLOCKS_TOOLTIP_TYPES import BLOCKS_TOOLTIP_TYPES

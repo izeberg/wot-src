@@ -245,6 +245,10 @@
 				<id>If_22</id>
 			</block>
 			<block>
+				<class>If</class>
+				<id>If_23</id>
+			</block>
+			<block>
 				<class>OnAnyVehicleDestroyed</class>
 				<id>OnAnyVehicleDestroyed_2</id>
 				<slots>
@@ -271,6 +275,10 @@
 			<block>
 				<class>CompareVehicles</class>
 				<id>CompareVehicles_8</id>
+			</block>
+			<block>
+				<class>CompareVehicles</class>
+				<id>CompareVehicles_9</id>
 			</block>
 			<block>
 				<class>GetVariable</class>
@@ -520,10 +528,10 @@
 				<output>true</output>
 			</connection>
 			<connection>
-				<from>OnAnyVehicleDestroyed_2</from>
+				<from>If_23</from>
 				<input>input</input>
 				<to>If_21</to>
-				<output>onDestroyed</output>
+				<output>false</output>
 			</connection>
 			<connection>
 				<from>IsVehicleValid_2</from>
@@ -541,6 +549,18 @@
 				<from>CompareVehicles_8</from>
 				<input>value</input>
 				<to>If_22</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>OnAnyVehicleDestroyed_2</from>
+				<input>input</input>
+				<to>If_23</to>
+				<output>onDestroyed</output>
+			</connection>
+			<connection>
+				<from>CompareVehicles_9</from>
+				<input>value</input>
+				<to>If_23</to>
 				<output>res</output>
 			</connection>
 			<connection>
@@ -565,6 +585,18 @@
 				<from>GetVariable_4</from>
 				<input>b</input>
 				<to>CompareVehicles_8</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>OnAnyVehicleDestroyed_2</from>
+				<input>a</input>
+				<to>CompareVehicles_9</to>
+				<output>target</output>
+			</connection>
+			<connection>
+				<from>GetVariable_4</from>
+				<input>b</input>
+				<to>CompareVehicles_9</to>
 				<output>value</output>
 			</connection>
 			<connection>

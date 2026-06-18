@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing, BattleReplay, BigWorld, SoundGroups
 from constants import VEHICLE_HIT_FLAGS as VHF
 from Event import EventsSubscriber

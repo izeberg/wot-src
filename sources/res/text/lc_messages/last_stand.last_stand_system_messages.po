@@ -32,16 +32,16 @@ msgid "serviceChannelMessages/battleResults/artefacts"
 msgstr "Доступно записей для дешифровки"
 
 msgid "serviceChannelMessages/battleResults/battleTypeName"
-msgstr "Режим: «Последний рубеж: Вторжение»"
+msgstr "Режим: «Последний рубеж: Северные земли»"
 
 msgid "serviceChannelMessages/battleResults/battleTypeName/107"
-msgstr "Последний рубеж: Вторжение (Стандарт)"
+msgstr "«Последний рубеж: Северные земли» (Стандарт)"
 
 msgid "serviceChannelMessages/battleResults/battleTypeName/108"
-msgstr "Последний рубеж: Вторжение (Тяжело)"
+msgstr "«Последний рубеж: Северные земли» (Продвинутый)"
 
 msgid "serviceChannelMessages/battleResults/battleTypeName/109"
-msgstr "Последний рубеж: Вторжение (Жесть)"
+msgstr "«Последний рубеж: Северные земли» (Жесть)"
 
 msgid "serviceChannelMessages/battleResults/difficulty"
 msgstr "Сложность"
@@ -50,7 +50,7 @@ msgid "serviceChannelMessages/battleResults/difficulty/107"
 msgstr "Стандарт"
 
 msgid "serviceChannelMessages/battleResults/difficulty/108"
-msgstr "Тяжело"
+msgstr "Продвинутый"
 
 msgid "serviceChannelMessages/battleResults/difficulty/109"
 msgstr "Жесть"
@@ -82,15 +82,15 @@ msgstr "Финансовая операция"
 msgid "serviceChannelMessages/difficultyLevel_2/description"
 msgstr ""
 "Вы можете выбрать уровень сложности на панели сложности режима «Последний "
-"рубеж: Вторжение» в Ангаре."
+"рубеж» в Ангаре."
 
 msgid "serviceChannelMessages/difficultyLevel_2/title"
-msgstr "Разблокирован уровень сложности «Тяжело»"
+msgstr "Разблокирован уровень сложности «Продвинутый»"
 
 msgid "serviceChannelMessages/difficultyLevel_3/description"
 msgstr ""
 "Вы можете выбрать уровень сложности на панели сложности режима «Последний "
-"рубеж: Вторжение» в Ангаре."
+"рубеж» в Ангаре."
 
 msgid "serviceChannelMessages/difficultyLevel_3/title"
 msgstr "Разблокирован уровень сложности «Жесть»"
@@ -117,18 +117,17 @@ msgstr "Запись расшифрована"
 
 msgid "serviceChannelMessages/switchedOff"
 msgstr ""
-"Бои события «Последний рубеж: Вторжение» временно недоступны.\n"
+"Бои события «Последний рубеж» временно недоступны.\n"
 "Попробуйте позже."
 
 msgid "serviceChannelMessages/switchedOffDifficulty"
 msgstr ""
-"Бои события «Последний рубеж: Вторжение» (%(difficulty)s) временно недоступны.\n"
-"Попробуйте позже."
+"Бои на сложности %(difficulty)s временно недоступны. Попробуйте позже."
 
 msgid "serviceChannelMessages/switchedOffFull"
 msgstr ""
-"Событие «Последний рубеж: Вторжение» временно недоступно. Следите за "
-"новостями на игровом портале."
+"Событие «Последний рубеж» временно недоступно. Следите за новостями на "
+"игровом портале."
 
 msgid "unit/notification/changedDifficultyLevel"
 msgstr "Командир взвода изменил уровень сложности на %(level)s."

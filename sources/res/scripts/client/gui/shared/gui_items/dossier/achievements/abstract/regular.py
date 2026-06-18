@@ -1,3 +1,6 @@
+from __future__ import absolute_import
+from functools import total_ordering
+from past.builtins import cmp
 from dossiers2.custom.records import RECORD_MAX_VALUES
 from dossiers2.ui import achievements
 from gui.impl import backport
@@ -11,6 +14,7 @@ def dyn_or_num(accessor, name, default=None):
     return accessor.dyn(name, default=default)
 
 
+@total_ordering
 class RegularAchievement(GUIItem):
     __slots__ = ('_name', '_block', '_value', '_lvlUpValue', '_lvlUpTotalValue', '_isDone',
                  '_isInDossier', '_isValid')
@@ -43,6 +47,19 @@ class RegularAchievement(GUIItem):
             self._lvlUpValue = self._readLevelUpValue(dossier)
             self._isDone = self._getDoneStatus(dossier)
         return
+
+    def __repr__(self):
+        return '%s<name=%s; value=%s; levelUpValue=%s levelUpTotalValue=%s isDone=%s>' % (
+         self.__class__.__name__, self._name, str(self._value), str(self._lvlUpValue),
+         str(self._lvlUpTotalValue), str(self._isDone))
+
+    def __eq__(self, other):
+        return self._compare(other) == 0
+
+    def __lt__(self, other):
+        return self._compare(other) < 0
+
+    __hash__ = GUIItem.__hash__
 
     def getName(self):
         return self._name
@@ -237,18 +254,7 @@ class RegularAchievement(GUIItem):
     def _getDoneStatus(self, dossier):
         return self.getProgressValue() == 1.0
 
-    def __getPredefinedValue(self, getter):
-        value = getter(self.getRecordName())
-        if value is None:
-            value = getter(achievements.makeAchievesStorageName(self._block))
-        return value
-
-    def __repr__(self):
-        return '%s<name=%s; value=%s; levelUpValue=%s levelUpTotalValue=%s isDone=%s>' % (
-         self.__class__.__name__, self._name, str(self._value), str(self._lvlUpValue),
-         str(self._lvlUpTotalValue), str(self._isDone))
-
-    def __cmp__(self, other):
+    def _compare(self, other):
         if isinstance(other, RegularAchievement):
             aSection, bSection = self.getSection(), other.getSection()
             if aSection is not None and bSection is not None:
@@ -258,3 +264,9 @@ class RegularAchievement(GUIItem):
             return cmp(self.getWeight(), other.getWeight())
         else:
             return 1
+
+    def __getPredefinedValue(self, getter):
+        value = getter(self.getRecordName())
+        if value is None:
+            value = getter(achievements.makeAchievesStorageName(self._block))
+        return value

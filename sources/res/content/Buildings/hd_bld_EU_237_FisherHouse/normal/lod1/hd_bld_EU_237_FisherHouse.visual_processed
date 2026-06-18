@@ -562,7 +562,7 @@
 				<material>
 					<identifier>s_wall_1</identifier>
 					<collisionFlags>144</collisionFlags>
-					<materialKind>108</materialKind>
+					<materialKind>0</materialKind>
 				</material>
 				<groupOrigin>-0.072273 1.865138 1.397791</groupOrigin>
 			</primitiveGroup>
@@ -571,7 +571,7 @@
 				<material>
 					<identifier>s_wall_0</identifier>
 					<collisionFlags>131</collisionFlags>
-					<materialKind>108</materialKind>
+					<materialKind>0</materialKind>
 				</material>
 				<groupOrigin>-0.072273 5.377887 -0.044062</groupOrigin>
 			</primitiveGroup>

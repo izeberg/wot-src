@@ -47,6 +47,10 @@
 			</block>
 			<block>
 				<class>If</class>
+				<id>If_20</id>
+			</block>
+			<block>
+				<class>If</class>
 				<id>If_21</id>
 			</block>
 			<block>
@@ -56,6 +60,16 @@
 			<block>
 				<class>If</class>
 				<id>If_13</id>
+			</block>
+			<block>
+				<class>OnAnyVehicleDestroyed</class>
+				<id>OnAnyVehicleDestroyed_2</id>
+				<slots>
+					<slot>
+						<name>active</name>
+						<const>\true\</const>
+					</slot>
+				</slots>
 			</block>
 			<block>
 				<class>ComponentMethod</class>
@@ -75,23 +89,6 @@
 				</slots>
 			</block>
 			<block>
-				<class>ComponentMethod</class>
-				<id>ComponentMethod_18</id>
-				<params>
-					<param>
-						Animator.getDurationByName
-						<name>Component Type</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>arg#0</name>
-						<const>\trigger\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
 				<class>SetVariable</class>
 				<id>SetVariable_2</id>
 				<buddy>Variable_6</buddy>
@@ -106,6 +103,23 @@
 					<slot>
 						<name>value</name>
 						<const>\true\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>ComponentMethod</class>
+				<id>ComponentMethod_18</id>
+				<params>
+					<param>
+						Animator.getDurationByName
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>arg#0</name>
+						<const>\trigger\</const>
 					</slot>
 				</slots>
 			</block>
@@ -160,16 +174,6 @@
 				</slots>
 			</block>
 			<block>
-				<class>OnAnyVehicleDestroyed</class>
-				<id>OnAnyVehicleDestroyed_2</id>
-				<slots>
-					<slot>
-						<name>active</name>
-						<const>\true\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
 				<class>ComponentMethod</class>
 				<id>ComponentMethod_20</id>
 				<params>
@@ -210,6 +214,10 @@
 						<const>\0.000000\</const>
 					</slot>
 				</slots>
+			</block>
+			<block>
+				<class>CompareVehicles</class>
+				<id>CompareVehicles_9</id>
 			</block>
 			<block>
 				<class>CompareVehicles</class>
@@ -256,8 +264,20 @@
 			<connection>
 				<from>OnAnyVehicleDestroyed_2</from>
 				<input>input</input>
-				<to>If_21</to>
+				<to>If_20</to>
 				<output>onDestroyed</output>
+			</connection>
+			<connection>
+				<from>CompareVehicles_9</from>
+				<input>value</input>
+				<to>If_20</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>If_20</from>
+				<input>input</input>
+				<to>If_21</to>
+				<output>false</output>
 			</connection>
 			<connection>
 				<from>IsVehicleValid_2</from>
@@ -302,6 +322,12 @@
 				<output>value</output>
 			</connection>
 			<connection>
+				<from>If_13</from>
+				<input>input</input>
+				<to>SetVariable_2</to>
+				<output>false</output>
+			</connection>
+			<connection>
 				<from>ComponentMethod_19</from>
 				<input>in</input>
 				<to>ComponentMethod_18</to>
@@ -312,12 +338,6 @@
 				<input>gameObject</input>
 				<to>ComponentMethod_18</to>
 				<output>value</output>
-			</connection>
-			<connection>
-				<from>If_13</from>
-				<input>input</input>
-				<to>SetVariable_2</to>
-				<output>false</output>
 			</connection>
 			<connection>
 				<from>ComponentMethod_18</from>
@@ -378,6 +398,18 @@
 				<input>gameObject</input>
 				<to>ComponentMethod_22</to>
 				<output>value</output>
+			</connection>
+			<connection>
+				<from>OnAnyVehicleDestroyed_2</from>
+				<input>a</input>
+				<to>CompareVehicles_9</to>
+				<output>target</output>
+			</connection>
+			<connection>
+				<from>GameObjectToVehicle_2</from>
+				<input>b</input>
+				<to>CompareVehicles_9</to>
+				<output>vehicle</output>
 			</connection>
 			<connection>
 				<from>OnAnyVehicleDestroyed_2</from>

@@ -1,10 +1,11 @@
+from __future__ import absolute_import
 import CGF
-from cgf_script.component_meta_class import ComponentProperty, CGFMetaTypes, registerComponent
+from cgf_script.registration import ComponentProperty, registerComponent
 
 @registerComponent
 class StationaryReloadSequenceParamsComponent(object):
     category = 'Sequence'
     editorTitle = 'Stationary reload sequence params'
-    domain = CGF.DomainOption.DomainAll
-    sequencePreparingLayer = ComponentProperty(type=CGFMetaTypes.STRING, editorName='Sequence preparing layer', value='')
-    sequenceFinishingLayer = ComponentProperty(type=CGFMetaTypes.STRING, editorName='Sequence finishing layer', value='')
+    domain = CGF.Domain.All
+    sequencePreparingLayer = ComponentProperty(type=CGF.PropertyType.String, editorName='Sequence preparing layer', value='')
+    sequenceFinishingLayer = ComponentProperty(type=CGF.PropertyType.String, editorName='Sequence finishing layer', value='')

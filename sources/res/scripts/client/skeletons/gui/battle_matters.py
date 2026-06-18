@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 if typing.TYPE_CHECKING:
     from typing import Callable, List, Optional, Union
@@ -20,7 +21,7 @@ class IBattleMattersController(object):
         raise NotImplementedError
 
     @staticmethod
-    def isBattleMattersQuestID(quest):
+    def isBattleMattersQuestID(questID):
         raise NotImplementedError
 
     @staticmethod

@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from future.utils import itervalues
 from constants import IS_WEB
 if IS_WEB:
 
@@ -28,11 +30,7 @@ else:
 
     def questHasThisAchievementAsBonus(name, block):
         eventsCache = dependency.instance(IEventsCache)
-        for records in eventsCache.getQuestsDossierBonuses().itervalues():
-            if (block, name) in records:
-                return True
-
-        return False
+        return any((block, name) in records for records in itervalues(eventsCache.getQuestsDossierBonuses()))
 
 
     def alreadyAchieved(achievementClass, name, block, dossier):

@@ -139,7 +139,6 @@ class StationaryReloadController(VehicleDynamicComponent, IGunMechanicComponent,
 
     def _onAppearanceReady(self):
         super(StationaryReloadController, self)._onAppearanceReady()
-        self.__mechanicPrefabSpawner.loadAppearancePrefab()
         self.__statesEvents.processStatePrepared()
 
     def _onComponentAppearanceUpdate(self, **kwargs):

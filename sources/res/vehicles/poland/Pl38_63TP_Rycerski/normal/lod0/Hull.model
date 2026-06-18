@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.700629 -0.596468 -3.458233</min>
+		<max>1.703372 0.590966 3.564671</max>
+	</visibilityBox>
+	<parent>vehicles/poland/Pl38_63TP_Rycerski/normal/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/poland/Pl38_63TP_Rycerski/normal/lod0/Hull</nodefullVisual>
+</root>

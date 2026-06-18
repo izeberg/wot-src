@@ -11,12 +11,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
-msgid "autoOpenView/boxCount"
-msgid_plural "plural/autoOpenView/boxCount"
-msgstr[0] "%(count) оставшееся Пылающее сокровище"
-msgstr[1] "%(count) оставшихся Пылающих сокровища"
-msgstr[2] "%(count) оставшихся Пылающих сокровищ"
-
 msgid "awardViews/footer/backButton/"
 msgstr "К сокровищам"
 
@@ -41,11 +35,6 @@ msgstr "Открывайте Сокровища, чтобы увидеть ст�
 msgid "common/statistics/header"
 msgstr "Открыто Пылающих сокровищ: %(count)"
 
-msgid "common/statistics/tooltip/body"
-msgstr ""
-"Здесь можно посмотреть, какие ценности выпали из Пылающих сокровищ в течение"
-" события. Вы можете сбросить статистику вручную в любое время."
-
 msgid "confirmResetLootBoxStatistics/description"
 msgstr "Вся информация об открытых Пылающих сокровищах будет удалена."
 
@@ -57,9 +46,6 @@ msgstr ""
 "Это особые коробки, содержащие новые и уникальные предметы, среди которых "
 "премиум техника, 2D-стили и многое другое. Вы можете приобрести их во "
 "внутриигровом Магазине."
-
-msgid "entryPoint/tooltip/title"
-msgstr "Что такое Пылающие сокровища и как их получить?"
 
 msgid "entryPoint/tooltip/warningDescription"
 msgstr ""
@@ -121,42 +107,6 @@ msgstr "Сокровищ в наличии: %(boxesCount)"
 
 msgid "quantityTitle/noBoxes"
 msgstr "Сокровища закончились"
-
-msgid "serviceChannelMessages/finish/text"
-msgstr ""
-"Все оставшиеся Пылающие сокровища будут открыты. Содержимое будет начислено "
-"на ваш аккаунт."
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/count"
-msgstr "Открыто Пылающих сокровищ: %(boxes)s"
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/header"
-msgstr "Открыты оставшиеся Пылающие сокровища"
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/text"
-msgstr ""
-"После завершения события мы открыли за вас Пылающие сокровища и начислили их"
-" содержимое."
-
-msgid "serviceChannelMessages/lootBoxesDisabled/header"
-msgstr "Открытие Пылающих сокровищ приостановлено"
-
-msgid "serviceChannelMessages/lootBoxesDisabled/text"
-msgstr ""
-"Операции с Пылающими сокровищами временно недоступны: ведутся технические "
-"работы."
-
-msgid "serviceChannelMessages/lootBoxesEnabled/header"
-msgstr "Открытие Пылающих сокровищ доступно"
-
-msgid "serviceChannelMessages/lootBoxesEnabled/text"
-msgstr "Операции с Пылающими сокровищами снова доступны. Скорее открывайте!"
-
-msgid "serviceChannelMessages/multipleOpen"
-msgstr "Пылающие сокровища открыты!"
-
-msgid "serviceChannelMessages/server_error"
-msgstr "Пылающие сокровища не открыты"
 
 msgid "singleRewardView/tooltip/description/"
 msgstr ""

@@ -42,7 +42,7 @@ PHASE_COMPLETION_QUEST_BR_CONDITION = ('ls_phase', 'greater')
 TOTAL_PHASE_COUNT = 4
 _blueprints_national_order = [ str('blueprint_national_' + nation) for nation in GUI_NATIONS ]
 BONUS_ORDER = [
- BoostersSettings.BONUS_NAME, 'lootBox', 'dossier', 'vehicles', 'slots', 'tmanToken', 'tankmen', 'crewSkins', 'berths', 'customizations', 'crewBooks', PREMIUM_ENTITLEMENTS.VIP, PREMIUM_ENTITLEMENTS.PLUS, PREMIUM_ENTITLEMENTS.BASIC, Currency.BPCOIN, 'battlePassPoints', ProgressPointsSettings.BONUS_NAME, Currency.CRYSTAL, Currency.GOLD, Currency.CREDITS, 'xp', Currency.FREE_XP, Currency.EQUIP_COIN, 'battle_bonus_x5', 'crew_bonus_x3', 'battlePassQuestChainToken', 'tokens', 'battleToken', 'vehicleXP', 'tankmenXP', 'goodies', 'items', 'blueprints_universal'] + _blueprints_national_order + ['blueprints', 'blueprintsAny']
+ BoostersSettings.BONUS_NAME, 'lootBox', 'dossier', 'vehicles', 'slots', 'tmanToken', 'tankmen', 'crewSkins', 'berths', 'customizations', 'crewBooks', PREMIUM_ENTITLEMENTS.VIP, PREMIUM_ENTITLEMENTS.PLUS, PREMIUM_ENTITLEMENTS.BASIC, Currency.BPCOIN, ProgressPointsSettings.BONUS_NAME, Currency.CRYSTAL, Currency.GOLD, Currency.CREDITS, 'xp', Currency.FREE_XP, Currency.EQUIP_COIN, 'battle_bonus_x5', 'crew_bonus_x3', 'battlePassQuestChainToken', 'tokens', 'battleToken', 'vehicleXP', 'tankmenXP', 'goodies', 'items', 'blueprints_universal'] + _blueprints_national_order + ['blueprints', 'blueprintsAny'] + ['battlePassPoints']
 
 class Artefact(namedtuple('Artefact', ('artefactID', 'decodePrice', 'skipPrice', 'bonusRewards', 'questConditions',
                         'artefactTypes', 'limit'))):

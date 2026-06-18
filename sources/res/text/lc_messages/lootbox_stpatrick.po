@@ -11,12 +11,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
-msgid "autoOpenView/boxCount"
-msgid_plural "plural/autoOpenView/boxCount"
-msgstr[0] "%(count) оставшуюся коробку"
-msgstr[1] "%(count) оставшихся коробки"
-msgstr[2] "%(count) оставшихся коробок"
-
 msgid "awardViews/footer/backButton/"
 msgstr "Назад к коробкам"
 
@@ -41,11 +35,6 @@ msgstr "Открывайте коробки, чтобы просмотреть �
 msgid "common/statistics/header"
 msgstr "Открыто коробок: %(count)"
 
-msgid "common/statistics/tooltip/body"
-msgstr ""
-"Здесь можно посмотреть, какие ценности выпали из коробок в течение события. "
-"Вы можете сбросить статистику вручную в любое время."
-
 msgid "confirmResetLootBoxStatistics/description"
 msgstr "Вся информация об открытых коробках будет удалена."
 
@@ -56,9 +45,6 @@ msgid "entryPoint/tooltip/description"
 msgstr ""
 "Это особые коробки, в которых вы можете найти премиум технику, 3D-объекты, кредиты и другие ценности.\n"
 "Вы можете купить их во внутриигровом Магазине."
-
-msgid "entryPoint/tooltip/title"
-msgstr "Что такое Изумрудные коробки и как их получить?"
 
 msgid "entryPoint/tooltip/warningDescription"
 msgstr ""
@@ -119,40 +105,6 @@ msgstr "Коробок в наличии: %(boxesCount)"
 
 msgid "quantityTitle/noBoxes"
 msgstr "Коробки закончились"
-
-msgid "serviceChannelMessages/finish/text"
-msgstr ""
-"Все оставшиеся коробки будут открыты. Содержимое будет начислено на ваш "
-"аккаунт."
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/count"
-msgstr "Открыто коробок: %(boxes)s"
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/header"
-msgstr "Оставшиеся коробки открыты"
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/text"
-msgstr ""
-"После завершения события мы открыли за вас коробки и начислили их "
-"содержимое."
-
-msgid "serviceChannelMessages/lootBoxesDisabled/header"
-msgstr "Открытие коробок приостановлено"
-
-msgid "serviceChannelMessages/lootBoxesDisabled/text"
-msgstr "Операции с коробками временно недоступны: ведутся технические работы."
-
-msgid "serviceChannelMessages/lootBoxesEnabled/header"
-msgstr "Открытие коробок доступно"
-
-msgid "serviceChannelMessages/lootBoxesEnabled/text"
-msgstr "Операции с коробками снова доступны."
-
-msgid "serviceChannelMessages/multipleOpen"
-msgstr "Коробки открыты!"
-
-msgid "serviceChannelMessages/server_error"
-msgstr "Коробки не открыты"
 
 msgid "singleRewardView/tooltip/description/"
 msgstr ""

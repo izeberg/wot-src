@@ -1,5 +1,8 @@
+from __future__ import absolute_import
 import math
 from functools import partial
+from builtins import range
+from future.utils import viewvalues
 import BigWorld, SoundGroups
 from AtGunpoint import ARTY_HIT_PREDICTION_EPSILON_YAW
 from account_helpers.settings_core.settings_constants import DAMAGE_INDICATOR
@@ -96,7 +99,7 @@ class BaseHitPull(object):
         return
 
     def clearHideCallbacks(self):
-        for _, callbackID in self.__callbackIDs.items():
+        for callbackID in viewvalues(self.__callbackIDs):
             if callbackID is not None:
                 BigWorld.cancelCallback(callbackID)
 
@@ -213,7 +216,7 @@ class HitDamagePull(BaseHitPull):
             self.__damageIndicatorAllies = bool(diff[DAMAGE_INDICATOR.PRESET_ALLIES])
 
     def _createPull(self):
-        return [ HitDirection(idx_) for idx_ in xrange(HIT_INDICATOR_MAX_ON_SCREEN) ]
+        return [ HitDirection(idx_) for idx_ in range(HIT_INDICATOR_MAX_ON_SCREEN) ]
 
 
 class ArtyHitPredictionPull(BaseHitPull):
@@ -225,7 +228,7 @@ class ArtyHitPredictionPull(BaseHitPull):
         self.__hitSounds = {}
 
     def clear(self):
-        for sound in self.__hitSounds.values():
+        for sound in viewvalues(self.__hitSounds):
             if sound is not None:
                 sound.stop()
 
@@ -240,7 +243,7 @@ class ArtyHitPredictionPull(BaseHitPull):
         return self.__pollIsFull() or self.__hasHitNear(hitData)
 
     def _createPull(self):
-        return [ HitDirection(idx_) for idx_ in xrange(PREDICTION_INDICATOR_MAX_ON_SCREEN) ]
+        return [ HitDirection(idx_) for idx_ in range(PREDICTION_INDICATOR_MAX_ON_SCREEN) ]
 
     def _hitShown(self, hit):
         soundName = hit.getHitData().getSoundName()

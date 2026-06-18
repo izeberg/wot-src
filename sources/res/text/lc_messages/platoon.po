@@ -264,9 +264,6 @@ msgstr "Нажмите, чтобы отправить сообщение в ка
 msgid "members/chat/sendMessage/header"
 msgstr "Отправить сообщение"
 
-msgid "members/footer/AT_SPG_Full"
-msgstr "Достигнут максимум ПТ-САУ во взводе"
-
 msgid "members/footer/comp7Invite"
 msgstr "Пригласить"
 
@@ -282,26 +279,35 @@ msgstr "Нажмите, чтобы отменить готовность."
 msgid "members/footer/getReady"
 msgstr "Подтвердите готовность выйти в бой."
 
-msgid "members/footer/heavyTankFull"
-msgstr "Достигнут максимум тяжёлых танков во взводе"
-
 msgid "members/footer/invalidVehicleLevel"
 msgstr "Неподходящий уровень"
-
-msgid "members/footer/mediumTankFull"
-msgstr "Достигнут максимум средних танков во взводе"
-
-msgid "members/footer/scoutFull"
-msgstr "Достигнут максимум лёгких танков во взводе"
-
-msgid "members/footer/spgFull"
-msgstr "Достигнут максимум САУ во взводе"
 
 msgid "members/footer/vehicles/differentLevels"
 msgstr "Штраф к опыту из-за некорректного состава взвода!"
 
-msgid "members/footer/wheeledFull"
+msgid "members/footer/vehiclesGroupIsFull"
+msgstr "Достигнут лимит техники"
+
+msgid "members/footer/vehiclesGroupIsFull/AT_SPG"
+msgstr "Достигнут максимум ПТ-САУ во взводе"
+
+msgid "members/footer/vehiclesGroupIsFull/SPG"
+msgstr "Достигнут максимум САУ во взводе"
+
+msgid "members/footer/vehiclesGroupIsFull/heavyTank"
+msgstr "Достигнут максимум тяжёлых танков во взводе"
+
+msgid "members/footer/vehiclesGroupIsFull/mediumTank"
+msgstr "Достигнут максимум средних танков во взводе"
+
+msgid "members/footer/vehiclesGroupIsFull/role_LT_universal"
+msgstr "Достигнут максимум лёгких танков во взводе"
+
+msgid "members/footer/vehiclesGroupIsFull/role_LT_wheeled"
 msgstr "Достигнут максимум колёсных танков во взводе"
+
+msgid "members/footer/vehiclesGroupIsFull/scout"
+msgstr "Достигнут максимум лёгких танков во взводе"
 
 msgid "members/header/battle_royal"
 msgstr ": Стальной охотник"

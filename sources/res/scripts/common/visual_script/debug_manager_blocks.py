@@ -1,7 +1,8 @@
+from __future__ import absolute_import
 import Math
-from visual_script.slot_types import SLOT_TYPE, arrayOf
-from debug_manager_blocks_base import DebugManagerBlock, DEFAULT_COLOR
 from DebugManager import isGroupEnabled
+from visual_script.slot_types import SLOT_TYPE, arrayOf
+from visual_script.debug_manager_blocks_base import DebugManagerBlock, DEFAULT_COLOR
 
 class DebugManagerRegisterObject(DebugManagerBlock):
 

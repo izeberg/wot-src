@@ -1,10 +1,13 @@
+from __future__ import absolute_import
 import typing, weakref
 from collections import namedtuple
-import BigWorld, Event, TriggersManager, feedback_events
+from future.utils import lmap
+import BigWorld, Event, TriggersManager
 from constants import DEFAULT_GUN_INSTALLATION_INDEX, VEHICLE_HIT_EFFECT
 from debug_utils import LOG_CURRENT_EXCEPTION
 from gui.battle_control import avatar_getter
 from gui.battle_control.battle_constants import FEEDBACK_EVENT_ID as _FET, BATTLE_CTRL_ID
+from gui.battle_control.controllers import feedback_events
 from gui.battle_control.controllers.interfaces import IBattleController
 from vehicle_systems.tankStructure import TankPartNames
 if typing.TYPE_CHECKING:
@@ -18,7 +21,7 @@ class _DamagedDevicesExtraFetcher(object):
 
     def __init__(self, total, critical, destroyed, isInFire):
         super(_DamagedDevicesExtraFetcher, self).__init__()
-        self.__total = map(self.__convertExtra, total)
+        self.__total = lmap(self.__convertExtra, total)
         self.__critical = critical
         self.__destroyed = destroyed
         self.__isInFire = isInFire

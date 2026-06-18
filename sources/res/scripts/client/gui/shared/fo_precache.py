@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld
 from debug_utils import LOG_ERROR, LOG_DEBUG
 _IS_ENABLED = True

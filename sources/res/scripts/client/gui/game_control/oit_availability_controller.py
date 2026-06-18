@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld
 from PlayerEvents import g_playerEvents
 from config_schemas.oit_availability import oitAvailabilitySchema

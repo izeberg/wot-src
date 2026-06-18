@@ -1,4 +1,6 @@
+from __future__ import absolute_import
 import logging
+from future.utils import viewitems, viewvalues
 from typing import TYPE_CHECKING
 from gui.impl import backport
 from gui.impl.backport import getNiceNumberFormat
@@ -21,7 +23,7 @@ GUI_ITEM_TYPE_NAMES += ('dossierAccount', 'dossierVehicle', 'dossierTankman', 'a
                         'outfit', 'style', 'decal', 'emblem', 'inscription', 'projectionDecal',
                         'insignia', 'personalNumber', 'sequence', 'attachment', 'statTracker',
                         'vehicleMechanic', 'moduleMechanic')
-GUI_ITEM_TYPE_INDICES = dict((n, idx) for idx, n in enumerate(GUI_ITEM_TYPE_NAMES))
+GUI_ITEM_TYPE_INDICES = {n:idx for idx, n in enumerate(GUI_ITEM_TYPE_NAMES)}
 
 class GUI_ITEM_TYPE(CONST_CONTAINER):
     VEHICLE = GUI_ITEM_TYPE_INDICES['vehicle']
@@ -143,14 +145,14 @@ class ItemsCollection(dict):
 
     def filter(self, criteria):
         result = self.__class__()
-        for intCD, item in self.iteritems():
+        for intCD, item in viewitems(self):
             if criteria(item):
                 result.update({intCD: item})
 
         return result
 
     def __repr__(self):
-        return '%s<size:%d>' % (self.__class__.__name__, len(self.items()))
+        return '%s<size:%d>' % (self.__class__.__name__, len(self))
 
 
 def getVehicleComponentsByType(vehicle, itemTypeIdx):
@@ -186,8 +188,8 @@ def getVehicleComponentsByType(vehicle, itemTypeIdx):
 
 
 def getVehicleSuitablesByType(vehDescr, itemTypeId, turretPID=0):
-    descriptorsList = list()
-    current = list()
+    descriptorsList = []
+    current = []
     if itemTypeId == vehicles._CHASSIS:
         current = [
          vehDescr.chassis.compactDescr]
@@ -211,22 +213,21 @@ def getVehicleSuitablesByType(vehDescr, itemTypeId, turretPID=0):
     elif itemTypeId == vehicles._OPTIONALDEVICE:
         devs = vehicles.g_cache.optionalDevices()
         current = vehDescr.optionalDevices
-        descriptorsList = [ dev for dev in devs.itervalues() if dev.checkCompatibilityWithVehicle(vehDescr)[0]
+        descriptorsList = [ dev for dev in viewvalues(devs) if dev.checkCompatibilityWithVehicle(vehDescr)[0]
                           ]
     elif itemTypeId == vehicles._EQUIPMENT:
         eqs = vehicles.g_cache.equipments()
-        current = list()
-        descriptorsList = [ eq for eq in eqs.itervalues() if eq.checkCompatibilityWithVehicle(vehDescr)[0]
-                          ]
+        current = []
+        descriptorsList = [ eq for eq in viewvalues(eqs) if eq.checkCompatibilityWithVehicle(vehDescr)[0] ]
     elif itemTypeId == GUI_ITEM_TYPE.BATTLE_BOOSTER:
         eqs = vehicles.g_cache.equipments()
-        current = list()
-        descriptorsList = [ eq for eq in eqs.itervalues() if eq.equipmentType == EQUIPMENT_TYPES.battleBoosters and eq.checkCompatibilityWithVehicle(vehDescr)[0]
+        current = []
+        descriptorsList = [ eq for eq in viewvalues(eqs) if eq.equipmentType == EQUIPMENT_TYPES.battleBoosters and eq.checkCompatibilityWithVehicle(vehDescr)[0]
                           ]
     elif itemTypeId == GUI_ITEM_TYPE.BATTLE_ABILITY:
         eqs = vehicles.g_cache.equipments()
-        current = list()
-        descriptorsList = [ eq for eq in eqs.itervalues() if eq.equipmentType == EQUIPMENT_TYPES.battleAbilities and eq.checkCompatibilityWithVehicle(vehDescr)
+        current = []
+        descriptorsList = [ eq for eq in viewvalues(eqs) if eq.equipmentType == EQUIPMENT_TYPES.battleAbilities and eq.checkCompatibilityWithVehicle(vehDescr)
                           ]
     elif itemTypeId == vehicles._GUN:
         current = [

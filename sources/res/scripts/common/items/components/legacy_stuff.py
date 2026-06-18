@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from constants import IS_CLIENT, IS_CELLAPP, IS_BASEAPP
 from soft_exception import SoftException
 _IS_LEGACY_STUFF_SUPPORTED = not IS_CLIENT and not IS_CELLAPP and not IS_BASEAPP

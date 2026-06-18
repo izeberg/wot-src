@@ -1,12 +1,9 @@
 import CGF, Math
-from arena_bonus_type_caps import ARENA_BONUS_TYPE_CAPS
-from cgf_script.bonus_caps_rules import bonusCapsManager
-from cgf_script.component_meta_class import ComponentProperty, CGFMetaTypes, registerComponent
-from cgf_script.managers_registrator import onAddedQuery
+from typing import List
+from cgf_script.registration import ComponentProperty, registerComponent
 from constants import IS_CLIENT
 from helpers import dependency
 from helpers.CallbackDelayer import CallbackDelayer
-import GenericComponents
 from items import vehicles
 from skeletons.gui.battle_session import IBattleSessionProvider
 import BigWorld
@@ -21,17 +18,9 @@ else:
 @registerComponent
 class ThunderStrikeVisualizer(object):
     editorTitle = 'Thunder Strike Visualizer'
-    category = 'Abilities'
-    domain = CGF.DomainOption.DomainClient
-    strikePrefab = ComponentProperty(type=CGFMetaTypes.STRING, value='', editorName='strike prefab', annotations={'path': '*.prefab'})
-
-
-@bonusCapsManager(ARENA_BONUS_TYPE_CAPS.BATTLEROYALE, CGF.DomainOption.DomainClient)
-class ThunderStrikeManager(CGF.ComponentManager):
-
-    @onAddedQuery(ThunderStrike, GenericComponents.TransformComponent, CGF.GameObject)
-    def visualizeThunderStrike(self, thunderStrike, transform, go):
-        go.createComponent(ThunderStrikeLoader, thunderStrike, transform, go)
+    group = 'Abilities'
+    domain = CGF.Domain.Client
+    strikePrefab = ComponentProperty(type=CGF.PropertyType.String, value='', editorName='strike prefab', annotations={'path': '*.prefab'})
 
 
 class ThunderStrikeLoader(CallbackDelayer):
@@ -69,7 +58,7 @@ class ThunderStrikeLoader(CallbackDelayer):
             if not self.__isAttackerAlly():
                 usagePrefab = self.equipment.usagePrefabEnemy
                 self.__loadedEffectIsAlly = False
-        CGF.loadGameObjectIntoHierarchy(usagePrefab, self.__go, Math.Vector3(0, 0, 0), self.__onPrefabLoaded)
+        CGF.loadAndCreatePrefabWithParent(usagePrefab, self.__go, Math.Vector3(0, 0, 0), self.__onPrefabLoaded)
 
     def __showGuiMarker(self, delay):
         ctrl = self.__guiSessionProvider.shared.equipments
@@ -88,17 +77,18 @@ class ThunderStrikeLoader(CallbackDelayer):
             result = arenaDP.isAllyTeam(vehicle.publicInfo['team'])
             return result
 
-    def __onPrefabLoaded(self, prefabGO):
-        self.__prefabGO = prefabGO
-        prefabGO.addComponent(self.equipment)
+    def __onPrefabLoaded(self, objects, queue):
+        root = objects[0]
+        self.__prefabGO = queue.gameObject(root)
+        queue.assignComponent(root, self.equipment)
         self.__thunderStrikeEntity.onHit += self.__processHit
 
     def __processHit(self):
         if not self.__prefabGO:
             return
-        visualizer = self.__prefabGO.findComponentByType(ThunderStrikeVisualizer)
+        visualizer = self.__prefabGO.findRead(ThunderStrikeVisualizer)
         if visualizer.strikePrefab:
-            CGF.loadGameObjectIntoHierarchy(visualizer.strikePrefab, self.__prefabGO, Math.Vector3(0, 0, 0))
+            CGF.loadAndCreatePrefabWithParent(visualizer.strikePrefab, self.__prefabGO, Math.Vector3(0, 0, 0))
 
     def __removePrefab(self):
         if self.__prefabGO is not None:
@@ -113,3 +103,25 @@ class ThunderStrikeLoader(CallbackDelayer):
             return
         self.deactivate()
         self.activate()
+
+
+class ThunderStrikeSystem(CGF.System):
+    ThunderStrikeActivated = CGF.ActivateReaction(CGF.GameObject, CGF.ReactRo(ThunderStrike), CGF.Ro(CGF.TransformComponent))
+    ThunderLoaderActivated = CGF.ActivateReaction(CGF.ReactRw(ThunderStrikeLoader))
+    ThunderLoaderDeactivated = CGF.DeactivateReaction(CGF.ReactRw(ThunderStrikeLoader))
+    Reactions = CGF.Reactions(ThunderStrikeActivated, ThunderLoaderActivated, ThunderLoaderDeactivated)
+
+    def update(self):
+        q = CGF.CommandQueue(self.gom)
+        for go, thunderStrike, transform in self.reaction(self.ThunderStrikeActivated):
+            self.visualizeThunderStrike(thunderStrike, transform, go, q)
+
+        for loader in self.reaction(self.ThunderLoaderDeactivated):
+            loader.deactivate()
+
+        for loader in self.reaction(self.ThunderLoaderActivated):
+            loader.activate()
+
+    def visualizeThunderStrike(self, _, __, go, queue):
+        instance = ThunderStrikeLoader(CGF.ComponentLink(go, ThunderStrike), CGF.ComponentLink(go, CGF.TransformComponent), go)
+        queue.assignComponent(go, instance)

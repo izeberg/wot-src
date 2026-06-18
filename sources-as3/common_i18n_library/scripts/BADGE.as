@@ -993,6 +993,10 @@ package
       
       public static const BADGE_228_DESCR:String = "#badge:badge_228_descr";
       
+      public static const BADGE_229:String = "#badge:badge_229";
+      
+      public static const BADGE_229_DESCR:String = "#badge:badge_229_descr";
+      
       public static const BADGE_231:String = "#badge:badge_231";
       
       public static const BADGE_231_DESCR:String = "#badge:badge_231_descr";

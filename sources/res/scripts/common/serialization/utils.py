@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from typing import Dict, Type
 from .component_bin_deserializer import ComponentBinDeserializer
 from .component_bin_serializer import ComponentBinSerializer

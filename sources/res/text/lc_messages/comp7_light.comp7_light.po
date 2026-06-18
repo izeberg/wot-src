@@ -70,6 +70,9 @@ msgstr[2] "Наград:"
 msgid "battleResult/header/deserter"
 msgstr "Вы получили штраф"
 
+msgid "battleResult/missionsProgress/progression/title"
+msgstr "ПРОГРЕССИЯ «НАТИСКА ЛАЙТ»"
+
 msgid "calendarDay/serverName"
 msgstr "%(server)s"
 
@@ -243,6 +246,27 @@ msgstr ""
 
 msgid "noVehicles/title"
 msgstr "В Ангаре нет подходящей техники"
+
+msgid "pbs/tooltip/prestige_points_info_tooltip/bullet"
+msgstr "•"
+
+msgid "pbs/tooltip/prestige_points_info_tooltip/footer"
+msgstr "Узнайте подробности на странице «О Натиске Лайт»."
+
+msgid "pbs/tooltip/prestige_points_info_tooltip/header"
+msgstr "Очки престижа"
+
+msgid "pbs/tooltip/prestige_points_info_tooltip/listContent"
+msgstr ""
+"Нанесение урона;\n"
+"передача разведданных;\n"
+"обездвиживание;\n"
+"критические попадания;\n"
+"уничтожение техники противника;\n"
+"прочее."
+
+msgid "pbs/tooltip/prestige_points_info_tooltip/listHeader"
+msgstr "Очки престижа можно заработать за следующие действия в бою:"
 
 msgid "primeTimeView/status/seasonDisabled/first"
 msgstr "Сезон на сервере %(server)s завершился."

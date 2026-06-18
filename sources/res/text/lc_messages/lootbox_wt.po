@@ -50,11 +50,6 @@ msgstr "Открывайте Модули, чтобы просмотреть с�
 msgid "common/statistics/header"
 msgstr "Открыто Модулей: %(count)"
 
-msgid "common/statistics/tooltip/body"
-msgstr ""
-"Здесь можно посмотреть, какие ценности выпали из Модулей в течение события. "
-"Вы можете сбросить статистику вручную в любое время."
-
 msgid "confirmResetLootBoxStatistics/description"
 msgstr "Вся информация об открытых Модулях будет удалена."
 
@@ -65,9 +60,6 @@ msgid "entryPoint/tooltip/description"
 msgstr ""
 "Специальные Модули, содержащие новые и уникальные предметы, включая премиум технику, элементы внешнего вида, внутриигровую валюту и прочие ценные награды.\n"
 "Модули можно купить во внутриигровом или Премиум магазине."
-
-msgid "entryPoint/tooltip/title"
-msgstr "Что такое Модули и как их получить?"
 
 msgid "entryPoint/tooltip/warningDescription"
 msgstr ""
@@ -128,39 +120,6 @@ msgstr "Модулей в наличии: %(boxesCount)"
 
 msgid "quantityTitle/noBoxes"
 msgstr "Модули закончились"
-
-msgid "serviceChannelMessages/finish/text"
-msgstr ""
-"Все оставшиеся Модули будут открыты. Содержимое будет начислено на ваш "
-"аккаунт."
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/count"
-msgstr "Открыто Модулей: %(boxes)s"
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/header"
-msgstr "Оставшиеся Модули открыты"
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/text"
-msgstr ""
-"После завершения события мы открыли за вас Модули и начислили их содержимое."
-
-msgid "serviceChannelMessages/lootBoxesDisabled/header"
-msgstr "Открытие Модулей приостановлено"
-
-msgid "serviceChannelMessages/lootBoxesDisabled/text"
-msgstr "Операции с Модулями временно недоступны: ведутся технические работы."
-
-msgid "serviceChannelMessages/lootBoxesEnabled/header"
-msgstr "Открытие Модулей доступно"
-
-msgid "serviceChannelMessages/lootBoxesEnabled/text"
-msgstr "Операции с Модулями снова доступны."
-
-msgid "serviceChannelMessages/multipleOpen"
-msgstr "Модули открыты!"
-
-msgid "serviceChannelMessages/server_error"
-msgstr "Модули не открыты"
 
 msgid "singleRewardView/tooltip/description/"
 msgstr ""

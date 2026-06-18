@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from frameworks.wulf import ViewFlags, ViewSettings
 from gui.impl.gen.view_models.views.lobby.battle_matters.battle_matters_entry_point_view_model import BattleMattersEntryPointViewModel, State

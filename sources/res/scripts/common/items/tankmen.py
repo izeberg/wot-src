@@ -1,7 +1,11 @@
+from __future__ import absolute_import, division
 import math, random, struct
+from builtins import map, zip
 from collections import defaultdict
 from functools import partial
-from itertools import chain, izip
+from itertools import chain
+from past.builtins import xrange
+from future.utils import viewvalues, viewitems
 from typing import Any, Dict, List, Optional, Sequence, Set, TYPE_CHECKING, Tuple
 import persistent_data_cache_common as pdc, nations
 from constants import ITEM_DEFS_PATH, NEW_PERK_SYSTEM as NPS, VEHICLE_NO_CREW_TRANSFER_PENALTY_TAG, VEHICLE_WOT_PLUS_TAG
@@ -16,8 +20,9 @@ from items.readers import skills_readers, tankmen_readers
 from items.readers.crewBooks_readers import readCrewBooksCacheFromXML
 from items.readers.crewSkins_readers import readCrewSkinsCacheFromXML
 from items.tankman_flags import TankmanFlags
+from items.vehicles import EXTENDED_VEHICLE_TYPE_ID_FLAG, VEHICLE_CLASS_TAGS
+from math_common import round_py2_style_int
 from soft_exception import SoftException
-from vehicles import EXTENDED_VEHICLE_TYPE_ID_FLAG, VEHICLE_CLASS_TAGS, VehicleDescr
 from struct_helpers import unpackByte, packByte
 if TYPE_CHECKING:
     from items.vehicles import VehicleDescriptor, VehicleType
@@ -92,7 +97,7 @@ def getSkillsMask(skills):
     return result
 
 
-ALL_SKILLS_MASK = getSkillsMask([ skill for skill in LEARNABLE_ACTIVE_SKILLS if skill != 'reserved' ])
+ALL_SKILLS_MASK = getSkillsMask([ s for s in LEARNABLE_ACTIVE_SKILLS if s != 'reserved' ])
 
 def getNationConfig(nationID):
     if _g_nationsConfig[nationID] is None:
@@ -109,8 +114,8 @@ def getTankmenGroupNames():
     if _g_tankmenGroupNames is None:
         _g_tankmenGroupNames = []
         for nationID in xrange(len(nations.AVAILABLE_NAMES)):
-            _g_tankmenGroupNames.extend([ g.name for g in getNationGroups(nationID, False).itervalues() ])
-            _g_tankmenGroupNames.extend([ g.name for g in getNationGroups(nationID, True).itervalues() ])
+            _g_tankmenGroupNames.extend(g.name for g in viewvalues(getNationGroups(nationID, False)))
+            _g_tankmenGroupNames.extend(g.name for g in viewvalues(getNationGroups(nationID, True)))
 
         _g_tankmenGroupNames = set(_g_tankmenGroupNames)
     return _g_tankmenGroupNames
@@ -126,7 +131,7 @@ def passportProducer(nationID, isPremium=False):
     w = random.random()
     summWeight = 0.0
     group = None
-    for group in groups.itervalues():
+    for group in viewvalues(groups):
         weight = group.weight
         if summWeight <= w < summWeight + weight:
             break
@@ -171,7 +176,7 @@ def generateSkills(role, skillsMask):
             if skillsMask == ALL_SKILLS_MASK:
                 tankmanSkills.update(roleSkills)
             else:
-                for skill, idx in SKILL_INDICES.iteritems():
+                for skill, idx in viewitems(SKILL_INDICES):
                     if 1 << idx & skillsMask and skill in roleSkills:
                         tankmanSkills.add(skill)
 
@@ -239,9 +244,9 @@ def generateCompactDescr(passport, vehicleTypeID, role, roleLevel=MAX_SKILL_LEVE
     sef = skillsEfficiencyXP
     cd += packByte((SKILL_INDICES[role] << 1) + (sef >> 16 & 1)) + packByte(sef >> 8 & 255) + packByte(sef & 255)
     numSkills = len(skills) + len(freeSkills)
-    allSkills = [ SKILL_INDICES[s] for s in freeSkills ]
-    for s in skills:
-        allSkills.append(SKILL_INDICES[s])
+    allSkills = [ SKILL_INDICES[skill] for skill in freeSkills ]
+    for skill in skills:
+        allSkills.append(SKILL_INDICES[skill])
 
     cd += pack((str(1 + numSkills) + 'B'), numSkills, *allSkills)
     cd += packByte(lastSkillLevel if numSkills else 0)
@@ -249,7 +254,7 @@ def generateCompactDescr(passport, vehicleTypeID, role, roleLevel=MAX_SKILL_LEVE
         cd += pack('B', len(freeSkills))
     if tf.hasBonusSkills:
         bonusSkills = []
-        for roleSkills in rolesBonusSkills.itervalues():
+        for roleSkills in viewvalues(rolesBonusSkills):
             for skill in roleSkills:
                 if skill:
                     bonusSkills.append(SKILL_INDICES[skill])
@@ -428,10 +433,10 @@ class TankmanDescr(object):
         return list(self.__rolesBonusSkills[roleName])
 
     def getSkillsMask(self):
-        return getSkillsMask(self._skills + sum(self.__rolesBonusSkills.itervalues(), []))
+        return getSkillsMask(self._skills + sum(viewvalues(self.__rolesBonusSkills), []))
 
     def getActiveSkillsMask(self, tmanIndx, vehDescrType=None):
-        return str(getSkillsMask(self.getActiveSkills() + sum(self.getActiveBonusSkills(tmanIndx, vehDescrType).itervalues(), [])))
+        return str(getSkillsMask(self.getActiveSkills() + sum(viewvalues(self.getActiveBonusSkills(tmanIndx, vehDescrType)), [])))
 
     def getActiveBonusSkills(self, tmanIndx, vehDescrType=None):
         vehicleDescrType = vehDescrType or vehicles.g_cache.vehicle(self.nationID, self.vehicleTypeID)
@@ -514,7 +519,7 @@ class TankmanDescr(object):
 
     def hasSkills(self):
         hasSkills = self.selectedSkillsCount > 0
-        hasSkills |= any(skills for skills in self.__rolesBonusSkills.itervalues())
+        hasSkills |= any(skills for skills in viewvalues(self.__rolesBonusSkills))
         return hasSkills
 
     @property
@@ -637,7 +642,7 @@ class TankmanDescr(object):
         totalXpCost += self.getXpCostForSkillsLevels(self.lastSkillLevel if lastSkillNumber else 0, lastSkillNumber)
         levelUpXpCost = self.levelUpXpCost(min(MAX_SKILL_LEVEL - 1, currSkillLevel), currSkillsCount)
         currXpCost = self.getXpCostForSkillsLevels(currSkillLevel, currSkillsCount)
-        residualXP, levelUpXpCost = totalXpCost - currXpCost, levelUpXpCost
+        residualXP = totalXpCost - currXpCost
         if residualXP >= levelUpXpCost:
             residualXP -= levelUpXpCost
             if currSkillLevel == MAX_SKILL_LEVEL - 1:
@@ -759,7 +764,7 @@ class TankmanDescr(object):
             else:
                 role = next((role for role in ROLES_BY_SKILLS[skillName]), None)
                 if role is None:
-                    raise SoftException(("Skill doesn't have a role").format(skillName))
+                    raise SoftException(("Skill {} doesn't have a role").format(skillName))
                 if skillName in COMMON_SKILLS:
                     raise SoftException(('Can\'t learn "{}" as bonus skill').format(skillName))
                 numBonusSkills = self.selectedBonusSkillsCount(role)
@@ -769,7 +774,7 @@ class TankmanDescr(object):
                     return
             if skillName in self.__rolesBonusSkills[role]:
                 raise SoftException(('Bonus skill "{}" is already learned').format(skillName))
-            skillProgress = self.getTotalSkillsProgressPercent(withFree=True) / MAX_SKILL_LEVEL + (1 if not self.lastSkillLevel or self.lastSkillLevel == MAX_SKILL_LEVEL else 0)
+            skillProgress = self.getTotalSkillsProgressPercent(withFree=True) // MAX_SKILL_LEVEL + (1 if not self.lastSkillLevel or self.lastSkillLevel == MAX_SKILL_LEVEL else 0)
             if numBonusSkills > math.ceil(skillProgress / 2.0):
                 raise SoftException(('Tried to learn skill "{}" by index {}, while can have only {}').format(skillName, numBonusSkills, skillProgress))
         return
@@ -988,14 +993,14 @@ class TankmanDescr(object):
         rs = (SKILL_INDICES[self.role] << 17) + self.skillsEfficiencyXP
         cd += packByte(rs >> 16 & 255) + packByte(rs >> 8 & 255) + packByte(rs & 255)
         numSkills = self.lastSkillNumber
-        skills = [ SKILL_INDICES[s] for s in self._skills ]
+        skills = [ SKILL_INDICES[skill] for skill in self._skills ]
         cd += pack((str(1 + numSkills) + 'B'), numSkills, *skills)
         cd += packByte(self.__lastSkillLevel if numSkills else 0)
         if flags.hasFreeSkills:
-            cd += chr(self.freeSkillsNumber)
+            cd += packByte(self.freeSkillsNumber)
         if flags.hasBonusSkills:
             bonusSkills = []
-            for roleSkills in self.__rolesBonusSkills.itervalues():
+            for roleSkills in viewvalues(self.__rolesBonusSkills):
                 for skillName in roleSkills:
                     bonusSkills.append(SKILL_INDICES[skillName])
 
@@ -1082,7 +1087,7 @@ class TankmanDescr(object):
     def _updateRank(self):
         lastSkillLevel = self.lastSkillLevel if self.earnedSkillsCount > 0 else 0
         absLvl = max(0, self.earnedSkillsCount - 1) * MAX_SKILL_LEVEL + lastSkillLevel
-        self._rankIdx = 1 + absLvl / SKILL_LEVELS_PER_RANK
+        self._rankIdx = 1 + absLvl // SKILL_LEVELS_PER_RANK
         rr = getNationConfig(self.nationID).getRoleRanks(self.role)
         self.rankID = rr[min(self._rankIdx, len(rr) - 1)]
 
@@ -1162,7 +1167,7 @@ def makeTmanDescrByTmanData(tmanData):
     skills = skills if skills is not None else []
     freeSkills = freeSkills if freeSkills is not None else []
     rolesBonusSkills = rolesBonusSkills if rolesBonusSkills is not None else {}
-    bonusSkills = [ bonusSkill for bonusSkills in rolesBonusSkills.itervalues() for bonusSkill in bonusSkills ]
+    bonusSkills = [ bonusSkill for bSkills in viewvalues(rolesBonusSkills) for bonusSkill in bSkills ]
     __validateSkills(skills)
     __validateSkills(freeSkills)
     __validateSkills(bonusSkills)
@@ -1251,7 +1256,7 @@ def unpackCrewParams(crewGroup):
 
 
 def getCommanderInfo(crewDescrs, crewInvIDs):
-    for compDescr, invID in izip(crewDescrs, crewInvIDs):
+    for compDescr, invID in zip(crewDescrs, crewInvIDs):
         crewDescr = TankmanDescr(compDescr, True)
         if crewDescr.role == 'commander':
             return (crewDescr, invID)
@@ -1265,7 +1270,7 @@ def getCommanderGroup(crewDescrs):
 
 
 def getCrewGroups(crewDescrs):
-    crewDescrs = sorted([ TankmanDescr(descr, battleOnly=True) for descr, invID in izip(crewDescrs, [None] * len(crewDescrs)) ], key=lambda descr: skills_constants.ORDERED_ROLES.index(descr.role))
+    crewDescrs = sorted([ TankmanDescr(descr, battleOnly=True) for descr, _ in zip(crewDescrs, [None] * len(crewDescrs)) ], key=lambda descr: skills_constants.ORDERED_ROLES.index(descr.role))
     return [ getTankmanGroup(crewDescr) for crewDescr in crewDescrs ]
 
 
@@ -1277,13 +1282,13 @@ def getTankmanGroup(tankmanDescr):
 
 
 def getCommanderSkinID(crewDescs, crewIDs, crewSkins):
-    commanderDescr, commanderInvID = getCommanderInfo(crewDescs, crewIDs)
+    _, commanderInvID = getCommanderInfo(crewDescs, crewIDs)
     return crewSkins.get(commanderInvID, crew_skins_constants.NO_CREW_SKIN_ID)
 
 
 def getTankmenWithTag(nationID, isPremium, tag):
     nationGroups = getNationGroups(nationID, isPremium)
-    return set([ group.groupID for group in nationGroups.itervalues() if tag in group.tags ])
+    return {group.groupID for group in viewvalues(nationGroups) if tag in group.tags}
 
 
 def getSpecialVoiceTag(tankman, specialSoundCtrl):
@@ -1322,7 +1327,7 @@ def getNationGroups(nationID, isPremium):
 def findGroupsByIDs(groups, isFemale, firstNameID, secondNameID, iconID):
     found = [
      (-1, 0)]
-    for groupID, group in groups.iteritems():
+    for groupID, group in viewitems(groups):
         if isFemale != group.isFemales:
             continue
         overlap = 0
@@ -1340,7 +1345,7 @@ def findGroupsByIDs(groups, isFemale, firstNameID, secondNameID, iconID):
 
 
 def findBestGroupByGroupIDs(firstNameGroupID, lastNameGroupID, iconGroupID):
-    if firstNameGroupID == lastNameGroupID or firstNameGroupID == iconGroupID:
+    if firstNameGroupID in (lastNameGroupID, iconGroupID):
         return firstNameGroupID
     if lastNameGroupID == iconGroupID:
         return lastNameGroupID
@@ -1375,7 +1380,7 @@ def _makeLevelXpCosts():
      0] * (MAX_SKILL_LEVEL + 1)
     prevCost = 0
     for level in xrange(1, len(costs)):
-        prevCost += int(round(_LEVELUP_K1 * pow(_LEVELUP_K2, float(level - 1) / MAX_SKILL_LEVEL)))
+        prevCost += round_py2_style_int(_LEVELUP_K1 * pow(_LEVELUP_K2, float(level - 1) / MAX_SKILL_LEVEL))
         costs[level] = prevCost
 
     return costs
@@ -1430,7 +1435,7 @@ def getRecruitInfoFromToken(tokenName, **kwargs):
                 if parts[2] != 'false':
                     raise SoftException(('wrong "isPremium" value "{}"').format(tokenName, parts[2]))
                 for nation in result['nations']:
-                    if len(filter(lambda g: g.name == parts[3], getNationGroups(nation, result['isPremium']).itervalues())) != 1:
+                    if len([ g for g in viewvalues(getNationGroups(nation, result['isPremium'])) if g.name == parts[3] ]) != 1:
                         raise SoftException('wrong group name')
 
             result['group'] = parts[3]
@@ -1462,7 +1467,7 @@ def getRecruitInfoFromToken(tokenName, **kwargs):
                 freeSkills = parts[7].split('!')
                 if len(freeSkills) > MAX_SKILLS_IN_RECRUIT_TOKEN:
                     raise SoftException('too many free skills')
-                chosenFreeSkills = [ s for s in freeSkills if s != 'any' ]
+                chosenFreeSkills = [ skill for skill in freeSkills if skill != 'any' ]
                 freeSkillsSet = set(chosenFreeSkills)
                 if len(chosenFreeSkills) != len(freeSkillsSet):
                     raise SoftException('free skills are duplicated')
@@ -1516,7 +1521,7 @@ def generateRecruitToken(group, sourceID, nationList=(), isPremium=True, freeXP=
             tokenParts.append(('!').join(selectedNations))
         tokenParts.append('' if isPremium else 'false')
         for nation in selectedNations:
-            if len(filter(lambda g: g.name == group, getNationGroups(nations.INDICES[nation], isPremium).itervalues())) != 1:
+            if len([ g for g in viewvalues(getNationGroups(nations.INDICES[nation], isPremium)) if g.name == group ]) != 1:
                 return None
 
     tokenParts.append(group)
@@ -1608,7 +1613,7 @@ def getTankmanDeviceNameByIdxInCrew(idxInCrew, vehicle):
 
 
 def _getItemByCompactDescr(compactDescr):
-    itemTypeID, nationID, compTypeID = parseIntCompactDescr(compactDescr)
+    itemTypeID, _, compTypeID = parseIntCompactDescr(compactDescr)
     items = None
     if itemTypeID == ITEM_TYPES.crewSkin:
         items = g_cache.crewSkins().skins
@@ -1670,7 +1675,7 @@ def getSkillRoleType(skillName):
     if skillName in COMMON_SKILLS:
         return COMMON_SKILL_ROLE_TYPE
     else:
-        for role, skills in SKILLS_BY_ROLES.iteritems():
+        for role, skills in viewitems(SKILLS_BY_ROLES):
             if skillName in skills:
                 return role
 
@@ -1687,7 +1692,7 @@ def getLessMasteredIDX(tankmenDescrs):
                 sortingList.append((float('inf'), slotIdx))
 
     if sortingList:
-        sortingList = sorted(sortingList, key=lambda item: [ idx for idx in item ])
+        sortingList = sorted(sortingList, key=list)
         return (
          False, sortingList[0][(-1)])
     return (

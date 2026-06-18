@@ -1,6 +1,7 @@
 from __future__ import absolute_import
 import logging, typing
 from functools import partial
+from typing import List
 import BigWorld, CGF
 from constants import ROCKET_ACCELERATION_STATE
 from Event import Event
@@ -84,7 +85,7 @@ class RocketAccelerationController(BigWorld.DynamicScriptComponent, ILifeCycleCo
         self.__onTryActivate.clear()
         self.entity.events.onAppearanceReady -= self.__tryUpdatePrefab
         if self.__prefabGameObject is not None:
-            CGF.removeGameObject(self.__prefabGameObject)
+            self.__prefabGameObject.destroy()
             self.__prefabGameObject = None
         return
 
@@ -92,11 +93,12 @@ class RocketAccelerationController(BigWorld.DynamicScriptComponent, ILifeCycleCo
         if not self.__tryUpdatePrefab():
             self.entity.events.onAppearanceReady += self.__tryUpdatePrefab
 
-    def __onLoaded(self, path, root):
-        if not root.isValid:
+    def __onLoaded(self, path, root, _, queue):
+        if not root:
             _logger.error('Failed to load prefab: %s', path)
             return
-        self.__prefabGameObject = root
+        uuid = queue.gameObjectUuid(root)
+        self.__prefabGameObject = queue.gameObject(uuid)
 
     def __tryUpdatePrefab(self):
         if self.__prefabGameObject is not None:
@@ -113,5 +115,5 @@ class RocketAccelerationController(BigWorld.DynamicScriptComponent, ILifeCycleCo
             modelsSet = appearance.outfit.modelsSet
             outfit = modelsSet if modelsSet else _DEFAULT_OUTFIT
             prefabPath = typeDescriptor.type.prefabs[outfit]['mechanicEffects'][0]
-            loadAppearancePrefab(prefabPath, appearance, partial(self.__onLoaded, prefabPath))
+            loadAppearancePrefab(prefabPath, appearance, partial(self.__onLoaded, prefabPath), False)
             return True

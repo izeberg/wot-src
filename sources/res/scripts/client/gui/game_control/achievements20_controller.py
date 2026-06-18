@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, Event
 from PlayerEvents import g_playerEvents
 from account_helpers import AccountSettings
@@ -226,7 +227,7 @@ class Achievements20SettingsManager(object):
     __slots__ = ('__settings', )
 
     def __init__(self):
-        self.__settings = dict()
+        self.__settings = {}
 
     def start(self):
         self.__settings = AccountSettings.getSettings(ACHIEVEMENTS_INFO)

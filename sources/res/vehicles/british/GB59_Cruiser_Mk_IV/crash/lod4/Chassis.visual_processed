@@ -145,10 +145,6 @@
 						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<property>
-						crashTileMap
-						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
-					</property>
-					<property>
 						alphaTestEnable
 						<Bool>false</Bool>
 					</property>

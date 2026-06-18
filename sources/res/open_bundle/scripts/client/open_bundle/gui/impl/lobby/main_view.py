@@ -176,7 +176,7 @@ class MainView(ViewImpl):
         bonuses = hideInvisible(sortBonuses(cellBonusInfo['bonuses']))
         bonusModels = cellModel.getBonuses()
         bonusModels.clear()
-        packBonusModelAndTooltipData(bonuses, bonusModels, self.__tooltipItems, showAttachmentSet=True)
+        packBonusModelAndTooltipData(bonuses, bonusModels, self.__tooltipItems, showAttachmentsSets=True)
         cellModel.setBonuses(bonusModels)
 
     @replaceNoneKwargsModel

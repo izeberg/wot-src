@@ -413,85 +413,99 @@
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> ls_bomber </name>
+		<name> ls_archer </name>
 		<x> 68 </x>
 		<y> 1249 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> ls_bomber_alpha </name>
+		<name> ls_bastion </name>
 		<x> 85 </x>
+		<y> 1232 </y>
+		<width> 16 </width>
+		<height> 16 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> ls_bomber </name>
+		<x> 85 </x>
+		<y> 1249 </y>
+		<width> 16 </width>
+		<height> 16 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> ls_bomber_alpha </name>
+		<x> 102 </x>
 		<y> 1232 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> ls_boss </name>
-		<x> 85 </x>
+		<x> 102 </x>
 		<y> 1249 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> ls_catcher </name>
-		<x> 102 </x>
+		<x> 119 </x>
 		<y> 1232 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> ls_charger </name>
-		<x> 102 </x>
+		<x> 119 </x>
 		<y> 1249 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> ls_detonator </name>
-		<x> 119 </x>
+		<x> 136 </x>
 		<y> 1232 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> ls_hunter </name>
-		<x> 119 </x>
+		<x> 136 </x>
 		<y> 1249 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> ls_obelisk </name>
-		<x> 136 </x>
+		<x> 153 </x>
 		<y> 1232 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> ls_ripper </name>
-		<x> 136 </x>
+		<x> 153 </x>
 		<y> 1249 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> ls_runner </name>
-		<x> 153 </x>
+		<x> 170 </x>
 		<y> 1232 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> ls_sentry </name>
-		<x> 153 </x>
+		<x> 170 </x>
 		<y> 1249 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> ls_turret </name>
-		<x> 170 </x>
+		<x> 187 </x>
 		<y> 1232 </y>
 		<width> 16 </width>
 		<height> 16 </height>

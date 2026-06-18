@@ -1,5 +1,7 @@
+from __future__ import absolute_import
+from past.builtins import unicode
+from typing import Any, Callable, Sequence
 import Math
-from typing import *
 
 def allowEqualNone(eq):
 
@@ -80,10 +82,10 @@ EQUAL_COMPARATORS = {'Float': equalFloat,
    'Vector3': equalVector3, 
    'Vector4': equalVector4, 
    'Matrix': equalMatrix, 
-   'Strings': lambda lhs, rhs: equalSeq(lhs, rhs), 
-   'WideStrings': lambda lhs, rhs: equalSeq(lhs, rhs), 
+   'Strings': equalSeq, 
+   'WideStrings': equalSeq, 
    'Floats': lambda lhs, rhs: equalSeq(lhs, rhs, equalFloat), 
-   'Ints': lambda lhs, rhs: equalSeq(lhs, rhs), 
+   'Ints': equalSeq, 
    'Vector2s': lambda lhs, rhs: equalSeq(lhs, rhs, equalVector2), 
    'Vector3s': lambda lhs, rhs: equalSeq(lhs, rhs, equalVector3), 
    'Vector4s': lambda lhs, rhs: equalSeq(lhs, rhs, equalVector4)}
@@ -95,15 +97,15 @@ def equalComparator(tp):
         return equal
 
 
-DEFAULT_GETTERS = {'String': lambda : str(), 
-   'WideString': lambda : unicode(), 
+DEFAULT_GETTERS = {'String': str, 
+   'WideString': unicode, 
    'Float': lambda : 0.0, 
    'Int': lambda : 0, 
    'Int64': lambda : 0, 
-   'Vector2': lambda : Math.Vector2(), 
-   'Vector3': lambda : Math.Vector3(), 
-   'Vector4': lambda : Math.Vector4(), 
-   'Matrix': lambda : Math.Matrix(), 
+   'Vector2': Math.Vector2, 
+   'Vector3': Math.Vector3, 
+   'Vector4': Math.Vector4, 
+   'Matrix': Math.Matrix, 
    'Bool': lambda : False, 
    'Strings': lambda : (), 
    'WideStrings': lambda : (), 

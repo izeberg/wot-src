@@ -543,6 +543,9 @@ msgstr "Jagdpanther verstärkteketten"
 msgid "Chassis_G191_StuG_IIIF_CFE_A"
 msgstr "StuG III Ausf. F Kabasan"
 
+msgid "Chassis_G200_Chi_Go"
+msgstr "Chi-Go"
+
 msgid "Chassis_G23_Grille"
 msgstr "Grille"
 
@@ -3222,6 +3225,32 @@ msgstr "StuG III Kaba"
 msgid "G191_StuG_IIIF_CFE_A_short_special"
 msgstr "Хорошие мобильность и скорострельность"
 
+msgid "G200_Chi_Go"
+msgstr "Chi-Go"
+
+msgid "G200_Chi_Go_desc"
+msgstr ""
+"К началу 1945 года японские инженеры на основе немецкой технической "
+"документации по Pz.Kpfw. V Panther разработали собственный проект Chi-Go c "
+"рядом упрощений и компромиссных решений в конструкции. Впоследствии машиной "
+"заинтересовалась Германия, чья промышленность находилась в тяжелейшем "
+"состоянии. Разобранный образец был доставлен на подводной лодке для изучения"
+" и внедрения упрощённых технологий производства танков."
+
+msgid "G200_Chi_Go_long_special"
+msgstr ""
+"Chi-Go — универсальный немецкий средний танк VII уровня. Вариация знакомого "
+"Pz.Kpfw. V Panther с использованием японских технологий. Машина может "
+"похвастаться высоким разовым уроном в сравнении с одноклассниками, а "
+"неплохие показатели мобильности и бронирования башни позволяют играть "
+"агрессивно."
+
+msgid "G200_Chi_Go_short"
+msgstr "Chi-Go"
+
+msgid "G200_Chi_Go_short_special"
+msgstr "Неплохая броня башни, высокий разовый урон"
+
 msgid "G20_Marder_II"
 msgstr "Marder II"
 
@@ -4092,6 +4121,9 @@ msgstr "JgTig.8,8 cm"
 
 msgid "JagdTiger_SdKfz_185_short_special"
 msgstr "Отличное орудие с высокой точностью, скорострельностью и сведением"
+
+msgid "Kawasaki_Ha_60_LC_G"
+msgstr "Kawasaki Ha-60-LC-G"
 
 msgid "Kdo_Funkstation_SE_407"
 msgstr "Kdo. Funkstation SE 407"
@@ -5972,6 +6004,9 @@ msgstr "Jagdpanther"
 
 msgid "Turret_1_G191_StuG_IIIF_CFE_A"
 msgstr "StuG III Ausf. F Kabasan"
+
+msgid "Turret_1_G200_Chi_Go"
+msgstr "Chi-Go"
 
 msgid "Turret_1_G23_Grille"
 msgstr "Grille"
@@ -8348,6 +8383,9 @@ msgstr "8,8 cm Flak 41 L/74"
 msgid "_88mm_KwK_36_L56A"
 msgstr "8,8 cm Kw.K. 36 L/56"
 
+msgid "_88mm_KwK_43_L71"
+msgstr "8,8 cm Kw.K. 43 L/71"
+
 msgid "_88mm_KwK_43_L71A"
 msgstr "8,8 cm Pak 43 L/71"
 
@@ -8452,6 +8490,9 @@ msgstr "Pzgr 39/43"
 msgid "_88mm_Pzgr39_43D"
 msgstr "Pzgr 39/43K"
 
+msgid "_88mm_Pzgr39_43_C"
+msgstr "Pzgr 39/43 C"
+
 msgid "_88mm_Pzgr39_43_n"
 msgstr "Pzgr. 39/43 Ausf. E"
 
@@ -8463,6 +8504,9 @@ msgstr "Pzgr. 40/43 Flak 41"
 
 msgid "_88mm_Pzgr40_43D"
 msgstr "Pzgr 40/43K"
+
+msgid "_88mm_Pzgr40_43_C"
+msgstr "Pzgr 40/43 C"
 
 msgid "_88mm_Pzgr_39_164"
 msgstr "Pzgr. 39 (164)"
@@ -8586,6 +8630,9 @@ msgstr "Sprgr 43"
 
 msgid "_88mm_Sprg43D"
 msgstr "Sprgr 43K"
+
+msgid "_88mm_Sprg43_C"
+msgstr "Sprgr 43 C"
 
 msgid "_88mm_Sprgr.Flak_41"
 msgstr "Sprgr. Flak 41"
@@ -8820,6 +8867,9 @@ msgstr "9 cm Kanone (I-P)"
 
 msgid "_Gr_38_HL_A"
 msgstr "Gr 38 HL A"
+
+msgid "_Type3_Otsu_G"
+msgstr "Type 3 Otsu G"
 
 msgid "arcade_bomber_battle_royale_shell"
 msgstr "Battle Royale bomber shell"

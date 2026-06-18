@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G200_Chi_Go/normal/lod2/Gun_02</nodefullVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.614436 -0.392015 -0.065483</min>
+		<max>0.615337 0.412868 5.660297</max>
+	</visibilityBox>
+	<parent>vehicles/german/G200_Chi_Go/normal/lod3/Gun_02</parent>
+	<extent>96</extent>
+</root>

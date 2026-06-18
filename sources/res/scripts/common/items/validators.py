@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from items import ITEM_TYPES, EQUIPMENT_TYPES, vehicles
 
 def isBattleBooster(compDescr):

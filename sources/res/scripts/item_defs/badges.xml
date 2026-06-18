@@ -8129,6 +8129,60 @@
 			</value>
 		</badge>
 		<badge>
+			<name>ls26_1_01</name>
+			<type>dict</type>
+			<value>
+				<item>
+					228
+					<name>id</name>
+					<type>int</type>
+				</item>
+				<item>
+					7.05
+					<!--BW_String-->
+					<name>weight</name>
+					<type>float</type>
+				</item>
+				<item>
+					gold
+					<name>highlight</name>
+					<type>string</type>
+				</item>
+				<item>
+					False
+					<name>achievable</name>
+					<type>bool</type>
+				</item>
+			</value>
+		</badge>
+		<badge>
+			<name>ls26_2_01</name>
+			<type>dict</type>
+			<value>
+				<item>
+					229
+					<name>id</name>
+					<type>int</type>
+				</item>
+				<item>
+					7.06
+					<!--BW_String-->
+					<name>weight</name>
+					<type>float</type>
+				</item>
+				<item>
+					gold
+					<name>highlight</name>
+					<type>string</type>
+				</item>
+				<item>
+					False
+					<name>achievable</name>
+					<type>bool</type>
+				</item>
+			</value>
+		</badge>
+		<badge>
 			<name>comp7_5_3_master</name>
 			<type>dict</type>
 			<value>
@@ -8239,33 +8293,6 @@
 				</item>
 				<item>
 					True
-					<name>achievable</name>
-					<type>bool</type>
-				</item>
-			</value>
-		</badge>
-		<badge>
-			<name>ls26_1_01</name>
-			<type>dict</type>
-			<value>
-				<item>
-					228
-					<name>id</name>
-					<type>int</type>
-				</item>
-				<item>
-					7.05
-					<!--BW_String-->
-					<name>weight</name>
-					<type>float</type>
-				</item>
-				<item>
-					gold
-					<name>highlight</name>
-					<type>string</type>
-				</item>
-				<item>
-					False
 					<name>achievable</name>
 					<type>bool</type>
 				</item>

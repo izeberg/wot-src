@@ -1,4 +1,7 @@
-import functools, typing, weakref, BigWorld, win_points
+from __future__ import absolute_import
+import functools, typing, weakref
+from future.utils import lrange
+import BigWorld, win_points
 from arena_bonus_type_caps import ARENA_BONUS_TYPE_CAPS as _CAPS
 from battle_modifiers_common import BattleParams, BattleModifiers
 from constants import ARENA_GUI_TYPE as _GUI_TYPE, ARENA_GUI_TYPE_LABEL as _GUI_TYPE_LABEL, ARENA_BONUS_TYPE as _BONUS_TYPE, ARENA_PERIOD as _PERIOD, QUEUE_TYPE, TEAMS_IN_ARENA, VISIBILITY
@@ -205,7 +208,7 @@ class _ArenaTypeVisitor(IArenaVisitor):
         return self._arenaType.maxTeamsInArena
 
     def getTeamsOnArenaRange(self):
-        return range(1, self.getMaxTeamsOnArena() + 1)
+        return lrange(1, self.getMaxTeamsOnArena() + 1)
 
     @catch_attribute_exception(default=_ArenaTypeSkeleton.soloTeamNumbers)
     def getSoloTeamNumbers(self):

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from functools import partial
 import ArenaType, adisp

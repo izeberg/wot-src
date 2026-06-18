@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import os, types
 from functools import partial, wraps
 from debug_utils import LOG_WRAPPED_CURRENT_EXCEPTION, LOG_ERROR
@@ -10,7 +11,7 @@ class CallbackDispatcher(object):
         self.g = generator
         self.stepCallback = stepCallback
         try:
-            self.call(self.g.next())
+            self.call(next(self.g))
         except StopIteration:
             self.stepCallback(True)
 

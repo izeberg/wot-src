@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from collections import namedtuple
 from helpers import dependency
 from skeletons.gui.lobby_context import ILobbyContext

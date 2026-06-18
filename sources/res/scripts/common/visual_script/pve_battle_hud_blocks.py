@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from visual_script.block import Meta
 
 class PVEBattleHUDMeta(Meta):

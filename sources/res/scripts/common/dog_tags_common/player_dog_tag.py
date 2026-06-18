@@ -1,4 +1,6 @@
+from __future__ import absolute_import
 import typing
+from future.utils import viewvalues
 from dog_tags_common.components_config import componentConfigAdapter
 from dog_tags_common.config.common import ComponentViewType
 from soft_exception import SoftException
@@ -44,7 +46,7 @@ class PlayerDogTag(object):
         return self._components.get(viewType, None)
 
     def getComponentIter(self):
-        return self._components.itervalues()
+        return iter(viewvalues(self._components))
 
     def __eq__(self, other):
         if isinstance(other, PlayerDogTag):
@@ -63,6 +65,7 @@ class PlayerDogTag(object):
         return retStr
 
     __str__ = __repr__
+    __hash__ = None
 
     @staticmethod
     def fromDict(dtDict):

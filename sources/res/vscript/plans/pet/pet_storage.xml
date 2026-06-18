@@ -114,6 +114,10 @@
 				<id>GetRootOf_1</id>
 			</block>
 			<block>
+				<class>If</class>
+				<id>If_54</id>
+			</block>
+			<block>
 				<class>SwitchOnEnum</class>
 				<id>SwitchOnEnum_1</id>
 				<params>
@@ -154,6 +158,17 @@
 				<id>OnPetCanInteractInHangarStateChanged_1</id>
 			</block>
 			<block>
+				<class>HasComponent</class>
+				<id>HasComponent_1</id>
+				<params>
+					<param>
+						Selection
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+			</block>
+			<block>
 				<class>GetStorageStaticTrigger</class>
 				<id>GetStorageStaticTrigger_1</id>
 			</block>
@@ -168,6 +183,10 @@
 						<type>TypeT</type>
 					</param>
 				</params>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_55</id>
 			</block>
 			<block>
 				<class>RemoveComponent</class>
@@ -185,12 +204,23 @@
 				<id>If_8</id>
 			</block>
 			<block>
+				<class>DeactivateGameObject</class>
+				<id>DeactivateGameObject_1</id>
+			</block>
+			<block>
 				<class>IsValid</class>
 				<id>IsValid_2</id>
 			</block>
 			<block>
-				<class>DeactivateGameObject</class>
-				<id>DeactivateGameObject_1</id>
+				<class>HasComponent</class>
+				<id>HasComponent_2</id>
+				<params>
+					<param>
+						Selection
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
 			</block>
 			<block>
 				<class>ContextEventReceive</class>
@@ -410,6 +440,18 @@
 				<output>value</output>
 			</connection>
 			<connection>
+				<from>If_7</from>
+				<input>input</input>
+				<to>If_54</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>HasComponent_1</from>
+				<input>value</input>
+				<to>If_54</to>
+				<output>res</output>
+			</connection>
+			<connection>
 				<from>CreateComponent_2</from>
 				<input>in</input>
 				<to>SwitchOnEnum_1</to>
@@ -434,10 +476,10 @@
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>If_7</from>
+				<from>If_54</from>
 				<input>in</input>
 				<to>CreateComponent_2</to>
-				<output>true</output>
+				<output>false</output>
 			</connection>
 			<connection>
 				<from>ContextGetSelf_1</from>
@@ -458,10 +500,28 @@
 				<output>canInteract</output>
 			</connection>
 			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>HasComponent_1</to>
+				<output>value</output>
+			</connection>
+			<connection>
 				<from>If_7</from>
+				<input>input</input>
+				<to>If_55</to>
+				<output>false</output>
+			</connection>
+			<connection>
+				<from>HasComponent_2</from>
+				<input>value</input>
+				<to>If_55</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>If_55</from>
 				<input>in</input>
 				<to>RemoveComponent_7</to>
-				<output>false</output>
+				<output>true</output>
 			</connection>
 			<connection>
 				<from>ContextGetSelf_1</from>
@@ -482,12 +542,6 @@
 				<output>res</output>
 			</connection>
 			<connection>
-				<from>GetVariable_1</from>
-				<input>gameObject</input>
-				<to>IsValid_2</to>
-				<output>value</output>
-			</connection>
-			<connection>
 				<from>If_8</from>
 				<input>in</input>
 				<to>DeactivateGameObject_1</to>
@@ -497,6 +551,18 @@
 				<from>GetVariable_1</from>
 				<input>gameObject</input>
 				<to>DeactivateGameObject_1</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>GetVariable_1</from>
+				<input>gameObject</input>
+				<to>IsValid_2</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>HasComponent_2</to>
 				<output>value</output>
 			</connection>
 			<connection>
