@@ -1,6 +1,5 @@
 from __future__ import absolute_import
 from enum import Enum
-from functools import total_ordering
 from future.utils import iteritems
 from past.builtins import cmp
 from typing import TYPE_CHECKING
@@ -52,7 +51,6 @@ CATEGORIES_GUI_ORDER_NY = (
  NewYearCategories.ORIENTAL,
  NewYearCategories.FAIRYTALE)
 
-@total_ordering
 class LootBox(GUIItem):
     __slots__ = ('__id', '__invCount', '__isEnabled', '__type', '__category', '__bonus',
                  '__historyName', '__statsName', '__guaranteedFrequency', '__guaranteedFrequencyName',
@@ -68,15 +66,6 @@ class LootBox(GUIItem):
     def __repr__(self):
         return 'LootBox(id=%d, type=%s, category=%s, count=%d)' % (self.getID(), self.getType(),
          self.getCategory(), self.getInventoryCount())
-
-    def __eq__(self, other):
-        return self._compare(other) == 0
-
-    def __lt__(self, other):
-        return self._compare(other) < 0
-
-    def __hash__(self):
-        return self.getID()
 
     def updateCount(self, invCount):
         self.__invCount = invCount

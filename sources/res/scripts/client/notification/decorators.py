@@ -1584,10 +1584,6 @@ class ChallengesStartDecorator(MessageDecorator):
     def isShouldCountOnlyOnce(self):
         return True
 
-    @staticmethod
-    def isPinned():
-        return True
-
     def decrementCounterOnHidden(self):
         return True
 

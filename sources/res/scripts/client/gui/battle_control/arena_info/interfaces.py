@@ -504,13 +504,13 @@ class IMapZonesController(IBattleController):
     onZoneTransformed = None
     onTransformedZoneRemoved = None
 
-    def addMarkerToZone(self, zoneMarker, matrix):
+    def addMarkerToZone(self, zoneMarkerAccess, matrix):
         raise NotImplementedError
 
     def removeMarkerFromZone(self, zoneMarker):
         raise NotImplementedError
 
-    def addTransformedZone(self, zone):
+    def addTransformedZone(self, zoneAccess):
         raise NotImplementedError
 
     def removeTransformedZone(self, zone):

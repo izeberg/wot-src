@@ -1,7 +1,6 @@
 from __future__ import absolute_import
 import time
 from collections import namedtuple
-from functools import total_ordering
 from past.builtins import cmp
 from typing import Dict, Optional, Any, List
 
@@ -11,7 +10,6 @@ class CycleStatus(object):
     FUTURE = 'future'
 
 
-@total_ordering
 class GameSeasonCycle(namedtuple('GameSeasonCycle', 'ID, status, startDate, endDate, ordinalNumber, announceOnly')):
 
     def __hash__(self):
@@ -20,8 +18,20 @@ class GameSeasonCycle(namedtuple('GameSeasonCycle', 'ID, status, startDate, endD
     def __eq__(self, other):
         return self.__compare(other) == 0
 
+    def __ne__(self, other):
+        return self.__compare(other) != 0
+
     def __lt__(self, other):
         return self.__compare(other) < 0
+
+    def __le__(self, other):
+        return self.__compare(other) <= 0
+
+    def __gt__(self, other):
+        return self.__compare(other) > 0
+
+    def __ge__(self, other):
+        return self.__compare(other) >= 0
 
     def getUserName(self):
         return str(self.ordinalNumber)

@@ -80,6 +80,10 @@ def setAwardUnlockedLevel(level):
 def setNewStatusUnlockLevel(level, status):
     settings = AccountSettings.getSettings(AccountSettingsKeys.EVENT_KEY)
     unlockedLevels = settings[AccountSettingsKeys.UNLOCK_LEVELS]
+    if status:
+        for lvl in unlockedLevels:
+            unlockedLevels[lvl]['isNew'] = False
+
     unlockedLevels[level.value] = {'isNew': status}
     settings[AccountSettingsKeys.UNLOCK_LEVELS] = unlockedLevels
     AccountSettings.setSettings(AccountSettingsKeys.EVENT_KEY, settings)

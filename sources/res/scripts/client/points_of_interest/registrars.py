@@ -10,9 +10,9 @@ class PointsOfInterestModule(object):
     group = 'Battle'
     systems = [
      CGF.RegisterSystem(PoiStateCreateSystem, domain=CGF.Domain.Client),
-     CGF.RegisterSystem(PoiStateUpdateSystem, domain=CGF.Domain.Client, updateAfter=(
-      CGF.TransformUpdateSystem, PoiStateCreateSystem), updatePeriod=_UPDATE_PERIOD),
      CGF.RegisterSystem(PoiViewStateSystem, domain=CGF.Domain.Client, updateAfter=(
       CGF.TransformUpdateSystem,), updatePeriod=_UPDATE_PERIOD, perTickUpdate=True),
-     CGF.RegisterSystem(PoiSoundSystem, domain=CGF.Domain.Client, updatePeriod=_UPDATE_PERIOD)]
+     CGF.RegisterSystem(PoiSoundSystem, domain=CGF.Domain.Client, updatePeriod=_UPDATE_PERIOD),
+     CGF.RegisterSystem(PoiStateUpdateSystem, domain=CGF.Domain.Client, updateAfter=(
+      CGF.TransformUpdateSystem, PoiStateCreateSystem, PoiSoundSystem), updatePeriod=_UPDATE_PERIOD)]
     components = []

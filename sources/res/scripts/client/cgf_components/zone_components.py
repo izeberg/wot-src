@@ -172,11 +172,13 @@ class MapZoneSystem(CGF.System):
     ZoneMarkerDeactivated = CGF.DeactivateReaction(CGF.ReactRw(ZoneMarker))
     ZoneMarkerIterate = CGF.IterateReaction(CGF.ActiveOnly, CGF.Rw(ZoneMarker))
     ZoneMarkerAndTimerActivated = CGF.ActivateReaction(CGF.Rw(ZoneMarker), CGF.ReactRo(TimedActivatedComponent))
-    MinimapChangerActivated = CGF.ActivateReaction(CGF.ReactRw(UIComponents.MinimapChangerComponent))
+    ZoneMarkerAccess = CGF.AccessReaction(CGF.Rw(ZoneMarker))
+    MinimapChangerActivated = CGF.ActivateReaction(CGF.GameObject, CGF.ReactRw(UIComponents.MinimapChangerComponent))
     MinimapChangerDeactivated = CGF.DeactivateReaction(CGF.ReactRw(UIComponents.MinimapChangerComponent))
+    MinimapChangerAccess = CGF.AccessReaction(CGF.Rw(UIComponents.MinimapChangerComponent))
     VehicleAccess = CGF.AccessReaction(CGF.Rw(Vehicle))
     AreaTriggerAccess = CGF.AccessReaction(CGF.Rw(Triggers.AreaTriggerComponent))
-    Reactions = CGF.Reactions(RandomEventUINotificationsIterate, WeatherUINotificationsIterate, ZoneHintsIterate, ZoneMarkerActivated, ZoneMarkerDeactivated, ZoneMarkerIterate, RandomEventUINotificationsActivated, RandomEventUINotificationsDeactivated, RandomEventUINotificationsAccess, WeatherUINotificationsActivated, WeatherUINotificationsDeactivated, WeatherUINotificationsAccess, ZoneHintsActivated, ZoneHintsDeactivated, ZoneHintsAccess, MinimapChangerActivated, MinimapChangerDeactivated, RandomEventUIAndTimerActivated, ZoneMarkerAndTimerActivated, VehicleAccess, AreaTriggerAccess)
+    Reactions = CGF.Reactions(RandomEventUINotificationsIterate, WeatherUINotificationsIterate, ZoneHintsIterate, ZoneMarkerActivated, ZoneMarkerDeactivated, ZoneMarkerIterate, ZoneMarkerAccess, RandomEventUINotificationsActivated, RandomEventUINotificationsDeactivated, RandomEventUINotificationsAccess, WeatherUINotificationsActivated, WeatherUINotificationsDeactivated, WeatherUINotificationsAccess, ZoneHintsActivated, ZoneHintsDeactivated, ZoneHintsAccess, MinimapChangerActivated, MinimapChangerDeactivated, MinimapChangerAccess, RandomEventUIAndTimerActivated, ZoneMarkerAndTimerActivated, VehicleAccess, AreaTriggerAccess)
 
     def __init__(self):
         super(MapZoneSystem, self).__init__()
@@ -226,11 +228,12 @@ class MapZoneSystem(CGF.System):
             if mapZones:
                 mapZones.removeTransformedZone(changer)
 
-        for changer in self.reaction(self.MinimapChangerActivated):
+        minimapChangerAccess = self.reaction(self.MinimapChangerAccess)
+        for go, changer in self.reaction(self.MinimapChangerActivated):
             _logger.debug('on transformed zone added: %s', changer.layerId)
             mapZones = self.__guiSessionProvider.shared.mapZones
             if mapZones:
-                mapZones.addTransformedZone(changer)
+                mapZones.addTransformedZone(lambda go=go: minimapChangerAccess.find(go))
 
         for zone, timed in self.reaction(self.ZoneMarkerAndTimerActivated):
             reduce = max(zone.reduceDuration, 0.0)
@@ -253,12 +256,13 @@ class MapZoneSystem(CGF.System):
             _logger.debug('on random event zone added')
             self.__subscribeTrigger(go, notification, self.RandomEventUINotificationsAccess, triggerAccess, self.__onEnterRandomEventZone, self.__onExitRandomEventZone)
 
+        zoneMarkerAccess = self.reaction(self.ZoneMarkerAccess)
         for go, marker, tr in self.reaction(self.ZoneMarkerActivated):
             _logger.debug('on marker to zone added')
             marker.id = go.id
             mapZones = self.__guiSessionProvider.shared.mapZones
             if mapZones:
-                mapZones.addMarkerToZone(marker, tr.worldTransform)
+                mapZones.addMarkerToZone(lambda go=go: zoneMarkerAccess.find(go), tr.worldTransform)
 
     def periodUpdate(self):
         for marker in self.reaction(self.ZoneMarkerIterate):

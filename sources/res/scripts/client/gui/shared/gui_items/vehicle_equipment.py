@@ -90,8 +90,7 @@ class _Equipment(object):
     def __ne__(self, equipment):
         return not self.__eq__(equipment)
 
-    def __hash__(self):
-        return hash(list(self))
+    __hash__ = None
 
     def __repr__(self):
         return ('{}, guiItemType: {}, capacity: {}').format(self.__class__.__name__, GUI_ITEM_TYPE_NAMES[self.__guiItemType], self.__capacity)
@@ -632,8 +631,7 @@ class _EquipmentsSetupGroups(object):
     def __ne__(self, setupGroups):
         return not self.__eq__(setupGroups)
 
-    def __hash__(self):
-        return hash(self._groups)
+    __hash__ = None
 
     @property
     def groups(self):

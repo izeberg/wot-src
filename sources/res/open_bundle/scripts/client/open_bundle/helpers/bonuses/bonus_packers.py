@@ -51,18 +51,12 @@ def sortBonuses(bonuses, reverse=True, openBundle=None):
     return bonuses
 
 
-@dependency.replace_none_kwargs(openBundle=IOpenBundleController)
-def findVehicleCD(bonusesInfo, openBundle=None):
+def findVehicleCD(bonuses):
     vehicleCD = None
-    bonuses = []
-    for k, v in viewitems(bonusesInfo):
-        bonuses.extend(getNonQuestBonuses(k, v))
-
-    bonuses.sort(key=openBundle.getBonusPriority, reverse=True)
     for bonus in bonuses:
         if bonus.getName() == 'vehicles':
             vehicles = bonus.getVehicles()
-            vehicleCD = vehicles[0][0].intCD if vehicles else None
+            vehicleCD = vehicles[0][0].intCD if vehicles is not None else None
             break
 
     return vehicleCD

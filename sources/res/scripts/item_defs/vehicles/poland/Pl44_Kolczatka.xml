@@ -2860,7 +2860,7 @@
 					<slotType>paint</slotType>
 					<slotId>31000</slotId>
 					<anchorPosition>
-						0.000002 0.96718 0.19476
+						0.000003 1.153478 0.19476
 						<!--BW_String-->
 					</anchorPosition>
 					<anchorDirection>-0 1 0</anchorDirection>
@@ -2869,7 +2869,7 @@
 					<slotType>camouflage</slotType>
 					<slotId>32000</slotId>
 					<anchorPosition>
-						0.000002 0.96718 0.19476
+						0.000003 1.15348 0.19476
 						<!--BW_String-->
 					</anchorPosition>
 					<anchorDirection>-0 1 0</anchorDirection>
@@ -3605,13 +3605,13 @@
 				<slot>
 					<slotType>attachment</slotType>
 					<slotId>38000</slotId>
-					<position>-0.000002 0.789654 1.189529</position>
+					<position>-0.000001 0.879736 1.189529</position>
 					<rotation>-0 -0 0</rotation>
 					<scale>0.999999 0.999999 0.999999</scale>
 					<applyType>gunMantlet</applyType>
 					<size>small</size>
 					<enableVisTunnel>true</enableVisTunnel>
-					<hangerId>2</hangerId>
+					<hangerId>16</hangerId>
 				</slot>
 				<slot>
 					<slotType>attachment</slotType>

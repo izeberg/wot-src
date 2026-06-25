@@ -102,9 +102,9 @@ class SequenceSnapshot(object):
 
 
 class SequenceNetworkSyncSystem(CGF.System):
-    SequenceSyncIterate = CGF.IterateReaction(CGF.ActiveOnly, CGF.Ro(SequenceNetworkSync), CGF.Rw(Sequence))
+    SequenceSyncIterate = CGF.IterateReaction(CGF.ActiveOnly, CGF.GameObject, CGF.Ro(SequenceNetworkSync), CGF.Rw(Sequence))
     SequenceActivated = CGF.ActivateReaction(CGF.ReactHas(SequenceNetworkSync), CGF.Rw(Sequence))
-    SequenceDeactivated = CGF.DeactivateReaction(CGF.ReactHas(SequenceNetworkSync), CGF.Rw(Sequence))
+    SequenceDeactivated = CGF.DeactivateReaction(CGF.GameObject, CGF.ReactHas(SequenceNetworkSync), CGF.Rw(Sequence))
     SnapshotActivated = CGF.ActivateReaction(CGF.ReactRo(SequenceSnapshotComponent))
     SnapshotDeactivated = CGF.DeactivateReaction(CGF.ReactRo(SequenceSnapshotComponent))
     PauseActivated = CGF.ActivateReaction(CGF.ReactRo(SequencePauseComponent))
@@ -119,8 +119,8 @@ class SequenceNetworkSyncSystem(CGF.System):
     def update(self):
         syncIter, sequenceActivated, sequenceDeactivated, snapshotActivated, snapshotDeactivated, pauseActivated, pauseDeactivated = self.reactions
         snapshots = self.__snapshots
-        for sequence in sequenceDeactivated:
-            snapshots.pop(sequence, None)
+        for go, sequence in sequenceDeactivated:
+            snapshots.pop(go.id, None)
 
         if snapshotDeactivated:
             snapshots.clear()
@@ -138,11 +138,11 @@ class SequenceNetworkSyncSystem(CGF.System):
             isSyncPaused = True
             needPause = True
         _syncSequence = self.__syncSequence
-        for sync, sequence in syncIter:
+        for go, sync, sequence in syncIter:
             if createSnapshot:
-                snapshots[sequence] = SequenceSnapshot(sync.syncTime, sync.speed, sync.state, sync.activeLayerIdx, sync.transition)
+                snapshots[go.id] = SequenceSnapshot(sync.syncTime, sync.speed, sync.state, sync.activeLayerIdx, sync.transition)
             if needPause:
-                snapshot = snapshots.get(sequence)
+                snapshot = snapshots.get(go.id)
                 if snapshot is not None:
                     _syncSequence(snapshot, sequence)
             if isSyncPaused:

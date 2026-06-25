@@ -2,7 +2,7 @@ from __future__ import absolute_import, division
 import logging, math, random, typing
 from builtins import zip
 from collections import namedtuple, defaultdict
-from functools import reduce, total_ordering
+from functools import reduce
 from future.utils import iteritems, lfilter, viewitems, viewvalues
 from past.builtins import cmp
 from past.utils import old_div
@@ -205,7 +205,6 @@ EliteStatusProgress = typing.NamedTuple('EliteStatusProgress', (
   'total', typing.Set[int])))
 NO_VEHICLE_ID = -1
 
-@total_ordering
 class Vehicle(FittingItem):
     __slots__ = ('__customState', '__weakref__', '_inventoryID', '_xp', '_dailyXPFactor',
                  '_isElite', '_isFullyElite', '_clanLock', '_isUnique', '_rentPackages',
@@ -396,14 +395,14 @@ class Vehicle(FittingItem):
         self._radio = self.itemsFactory.createVehicleRadio(vehDescr.radio.compactDescr, self._proxy, vehDescr.radio)
         self._fuelTank = self.itemsFactory.createVehicleFuelTank(vehDescr.fuelTank.compactDescr, self._proxy, vehDescr.fuelTank)
 
-    def __lt__(self, other):
-        return self._compare(other) < 0
-
     def __eq__(self, other):
         if other is None:
             return False
         else:
             return self.descriptor.type.id == other.descriptor.type.id
+
+    def __ne__(self, other):
+        return not self == other
 
     def __hash__(self):
         return hash(self.descriptor.type.id)

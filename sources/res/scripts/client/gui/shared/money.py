@@ -182,21 +182,12 @@ class Money(object):
         if other is None:
             return False
         else:
-            for c in self.ALL:
-                if self.get(c) != other.get(c):
-                    return False
-
-            return True
+            return all(self.get(c) == other.get(c) for c in self.ALL)
 
     def __ne__(self, other):
-        for c in self.ALL:
-            if self.get(c) != other.get(c):
-                return True
+        return not self == other
 
-        return False
-
-    def __hash__(self):
-        return hash(self._values)
+    __hash__ = None
 
     def __bool__(self):
         return any(self)

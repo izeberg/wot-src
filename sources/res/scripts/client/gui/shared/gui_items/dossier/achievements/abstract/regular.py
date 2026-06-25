@@ -1,5 +1,4 @@
 from __future__ import absolute_import
-from functools import total_ordering
 from past.builtins import cmp
 from dossiers2.custom.records import RECORD_MAX_VALUES
 from dossiers2.ui import achievements
@@ -14,7 +13,6 @@ def dyn_or_num(accessor, name, default=None):
     return accessor.dyn(name, default=default)
 
 
-@total_ordering
 class RegularAchievement(GUIItem):
     __slots__ = ('_name', '_block', '_value', '_lvlUpValue', '_lvlUpTotalValue', '_isDone',
                  '_isInDossier', '_isValid')
@@ -52,14 +50,6 @@ class RegularAchievement(GUIItem):
         return '%s<name=%s; value=%s; levelUpValue=%s levelUpTotalValue=%s isDone=%s>' % (
          self.__class__.__name__, self._name, str(self._value), str(self._lvlUpValue),
          str(self._lvlUpTotalValue), str(self._isDone))
-
-    def __eq__(self, other):
-        return self._compare(other) == 0
-
-    def __lt__(self, other):
-        return self._compare(other) < 0
-
-    __hash__ = GUIItem.__hash__
 
     def getName(self):
         return self._name

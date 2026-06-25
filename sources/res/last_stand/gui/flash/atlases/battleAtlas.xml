@@ -1163,8 +1163,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> ally_bot_vehicle_big_blind </name>
-		<x> 1453 </x>
-		<y> 4965 </y>
+		<x> 1403 </x>
+		<y> 4942 </y>
 		<width> 17 </width>
 		<height> 17 </height>
 	</SubTexture>
@@ -1177,8 +1177,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> botVehicle </name>
-		<x> 3039 </x>
-		<y> 4560 </y>
+		<x> 3139 </x>
+		<y> 4079 </y>
 		<width> 23 </width>
 		<height> 23 </height>
 	</SubTexture>
@@ -1219,8 +1219,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> enemyVehicle </name>
-		<x> 1740 </x>
-		<y> 4524 </y>
+		<x> 2413 </x>
+		<y> 4361 </y>
 		<width> 19 </width>
 		<height> 18 </height>
 	</SubTexture>
@@ -1240,15 +1240,15 @@
 	</SubTexture>
 	<SubTexture>
 		<name> enemyVehicle_blind </name>
-		<x> 2413 </x>
-		<y> 4361 </y>
+		<x> 2073 </x>
+		<y> 4088 </y>
 		<width> 19 </width>
 		<height> 18 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> enemy_bot_vehicle </name>
-		<x> 1403 </x>
-		<y> 4942 </y>
+		<x> 1453 </x>
+		<y> 4965 </y>
 		<width> 17 </width>
 		<height> 17 </height>
 	</SubTexture>
@@ -1268,8 +1268,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> enemy_bot_vehicle_blind </name>
-		<x> 1376 </x>
-		<y> 4585 </y>
+		<x> 1328 </x>
+		<y> 4915 </y>
 		<width> 17 </width>
 		<height> 17 </height>
 	</SubTexture>
@@ -1303,8 +1303,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> squadVehicle </name>
-		<x> 2073 </x>
-		<y> 4088 </y>
+		<x> 557 </x>
+		<y> 5071 </y>
 		<width> 19 </width>
 		<height> 18 </height>
 	</SubTexture>
@@ -1324,8 +1324,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> squadVehicle_blind </name>
-		<x> 557 </x>
-		<y> 5071 </y>
+		<x> 1740 </x>
+		<y> 4524 </y>
 		<width> 19 </width>
 		<height> 18 </height>
 	</SubTexture>
@@ -1366,29 +1366,29 @@
 	</SubTexture>
 	<SubTexture>
 		<name> minimap_4_Symbol </name>
-		<x> 3134 </x>
-		<y> 4283 </y>
-		<width> 8 </width>
-		<height> 10 </height>
-	</SubTexture>
-	<SubTexture>
-		<name> minimap_5_Symbol </name>
-		<x> 925 </x>
-		<y> 5065 </y>
-		<width> 8 </width>
-		<height> 10 </height>
-	</SubTexture>
-	<SubTexture>
-		<name> minimap_6_Symbol </name>
 		<x> 1105 </x>
 		<y> 4639 </y>
 		<width> 8 </width>
 		<height> 10 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> minimap_7_Symbol </name>
+		<name> minimap_5_Symbol </name>
 		<x> 875 </x>
 		<y> 5054 </y>
+		<width> 8 </width>
+		<height> 10 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> minimap_6_Symbol </name>
+		<x> 3134 </x>
+		<y> 4283 </y>
+		<width> 8 </width>
+		<height> 10 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> minimap_7_Symbol </name>
+		<x> 925 </x>
+		<y> 5065 </y>
 		<width> 8 </width>
 		<height> 10 </height>
 	</SubTexture>
@@ -1408,15 +1408,15 @@
 	</SubTexture>
 	<SubTexture>
 		<name> minimap_A_Symbol </name>
-		<x> 689 </x>
-		<y> 4794 </y>
+		<x> 1128 </x>
+		<y> 4377 </y>
 		<width> 8 </width>
 		<height> 10 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> minimap_B_Symbol </name>
-		<x> 1128 </x>
-		<y> 4377 </y>
+		<x> 689 </x>
+		<y> 4794 </y>
 		<width> 8 </width>
 		<height> 10 </height>
 	</SubTexture>
@@ -1436,15 +1436,15 @@
 	</SubTexture>
 	<SubTexture>
 		<name> minimap_E_Symbol </name>
-		<x> 3122 </x>
-		<y> 4308 </y>
+		<x> 3145 </x>
+		<y> 4258 </y>
 		<width> 8 </width>
 		<height> 10 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> minimap_F_Symbol </name>
-		<x> 3145 </x>
-		<y> 4258 </y>
+		<x> 3122 </x>
+		<y> 4308 </y>
 		<width> 8 </width>
 		<height> 10 </height>
 	</SubTexture>
@@ -1471,8 +1471,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> minimap_K_Symbol </name>
-		<x> 517 </x>
-		<y> 4480 </y>
+		<x> 498 </x>
+		<y> 4580 </y>
 		<width> 8 </width>
 		<height> 10 </height>
 	</SubTexture>
@@ -4313,36 +4313,36 @@
 	</SubTexture>
 	<SubTexture>
 		<name> qualification_22x22 </name>
-		<x> 3139 </x>
-		<y> 4079 </y>
-		<width> 22 </width>
-		<height> 22 </height>
-	</SubTexture>
-	<SubTexture>
-		<name> rank_fifth_A_22x22 </name>
 		<x> 1394 </x>
 		<y> 4560 </y>
 		<width> 22 </width>
 		<height> 22 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> rank_first_A_22x22 </name>
-		<x> 3010 </x>
-		<y> 4471 </y>
+		<name> rank_fifth_A_22x22 </name>
+		<x> 3039 </x>
+		<y> 4560 </y>
 		<width> 22 </width>
 		<height> 22 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> rank_first_B_22x22 </name>
+		<name> rank_first_A_22x22 </name>
 		<x> 1443 </x>
 		<y> 4664 </y>
 		<width> 22 </width>
 		<height> 22 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> rank_first_C_22x22 </name>
+		<name> rank_first_B_22x22 </name>
 		<x> 2452 </x>
 		<y> 4496 </y>
+		<width> 22 </width>
+		<height> 22 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> rank_first_C_22x22 </name>
+		<x> 3010 </x>
+		<y> 4471 </y>
 		<width> 22 </width>
 		<height> 22 </height>
 	</SubTexture>
@@ -4355,8 +4355,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> rank_first_E_22x22 </name>
-		<x> 811 </x>
-		<y> 4878 </y>
+		<x> 1496 </x>
+		<y> 4399 </y>
 		<width> 22 </width>
 		<height> 22 </height>
 	</SubTexture>
@@ -4376,8 +4376,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> rank_fourth_C_22x22 </name>
-		<x> 1496 </x>
-		<y> 4399 </y>
+		<x> 811 </x>
+		<y> 4878 </y>
 		<width> 22 </width>
 		<height> 22 </height>
 	</SubTexture>
@@ -5979,15 +5979,15 @@
 	</SubTexture>
 	<SubTexture>
 		<name> epicRandomSwitchBt_3cols </name>
-		<x> 1093 </x>
-		<y> 4884 </y>
+		<x> 1462 </x>
+		<y> 4845 </y>
 		<width> 19 </width>
 		<height> 19 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> epicRandomSwitchBt_hidden </name>
-		<x> 1462 </x>
-		<y> 4845 </y>
+		<x> 1093 </x>
+		<y> 4884 </y>
 		<width> 19 </width>
 		<height> 19 </height>
 	</SubTexture>
@@ -6035,15 +6035,15 @@
 	</SubTexture>
 	<SubTexture>
 		<name> playersPanelSwitchBt_medium </name>
-		<x> 1346 </x>
-		<y> 2379 </y>
+		<x> 381 </x>
+		<y> 4955 </y>
 		<width> 18 </width>
 		<height> 18 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> playersPanelSwitchBt_short </name>
-		<x> 381 </x>
-		<y> 4955 </y>
+		<x> 1346 </x>
+		<y> 2379 </y>
 		<width> 18 </width>
 		<height> 18 </height>
 	</SubTexture>
@@ -6091,15 +6091,15 @@
 	</SubTexture>
 	<SubTexture>
 		<name> squad_gold_1 </name>
-		<x> 1039 </x>
-		<y> 5007 </y>
+		<x> 2228 </x>
+		<y> 4408 </y>
 		<width> 18 </width>
 		<height> 20 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> squad_gold_10 </name>
-		<x> 2228 </x>
-		<y> 4408 </y>
+		<x> 1039 </x>
+		<y> 5007 </y>
 		<width> 18 </width>
 		<height> 20 </height>
 	</SubTexture>
@@ -6112,22 +6112,22 @@
 	</SubTexture>
 	<SubTexture>
 		<name> squad_gold_12 </name>
+		<x> 1493 </x>
+		<y> 4915 </y>
+		<width> 18 </width>
+		<height> 20 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> squad_gold_13 </name>
 		<x> 1443 </x>
 		<y> 4892 </y>
 		<width> 18 </width>
 		<height> 20 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> squad_gold_13 </name>
+		<name> squad_gold_14 </name>
 		<x> 1729 </x>
 		<y> 4880 </y>
-		<width> 18 </width>
-		<height> 20 </height>
-	</SubTexture>
-	<SubTexture>
-		<name> squad_gold_14 </name>
-		<x> 1493 </x>
-		<y> 4915 </y>
 		<width> 18 </width>
 		<height> 20 </height>
 	</SubTexture>
@@ -6154,15 +6154,15 @@
 	</SubTexture>
 	<SubTexture>
 		<name> squad_gold_5 </name>
-		<x> 493 </x>
-		<y> 5105 </y>
+		<x> 3816 </x>
+		<y> 4155 </y>
 		<width> 18 </width>
 		<height> 20 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> squad_gold_6 </name>
-		<x> 3816 </x>
-		<y> 4155 </y>
+		<x> 493 </x>
+		<y> 5105 </y>
 		<width> 18 </width>
 		<height> 20 </height>
 	</SubTexture>
@@ -6175,22 +6175,22 @@
 	</SubTexture>
 	<SubTexture>
 		<name> squad_gold_8 </name>
-		<x> 791 </x>
-		<y> 4929 </y>
-		<width> 18 </width>
-		<height> 20 </height>
-	</SubTexture>
-	<SubTexture>
-		<name> squad_gold_9 </name>
 		<x> 4076 </x>
 		<y> 4156 </y>
 		<width> 18 </width>
 		<height> 20 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> squad_silver_1 </name>
+		<name> squad_gold_9 </name>
 		<x> 1109 </x>
 		<y> 4302 </y>
+		<width> 18 </width>
+		<height> 20 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> squad_silver_1 </name>
+		<x> 791 </x>
+		<y> 4929 </y>
 		<width> 18 </width>
 		<height> 20 </height>
 	</SubTexture>
@@ -6203,15 +6203,15 @@
 	</SubTexture>
 	<SubTexture>
 		<name> squad_silver_11 </name>
-		<x> 1512 </x>
-		<y> 4890 </y>
+		<x> 1421 </x>
+		<y> 4917 </y>
 		<width> 18 </width>
 		<height> 20 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> squad_silver_12 </name>
-		<x> 1687 </x>
-		<y> 4930 </y>
+		<x> 1629 </x>
+		<y> 4841 </y>
 		<width> 18 </width>
 		<height> 20 </height>
 	</SubTexture>
@@ -6224,15 +6224,15 @@
 	</SubTexture>
 	<SubTexture>
 		<name> squad_silver_14 </name>
-		<x> 1421 </x>
-		<y> 4917 </y>
+		<x> 1512 </x>
+		<y> 4890 </y>
 		<width> 18 </width>
 		<height> 20 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> squad_silver_2 </name>
-		<x> 1629 </x>
-		<y> 4841 </y>
+		<x> 1687 </x>
+		<y> 4930 </y>
 		<width> 18 </width>
 		<height> 20 </height>
 	</SubTexture>
@@ -6245,15 +6245,15 @@
 	</SubTexture>
 	<SubTexture>
 		<name> squad_silver_4 </name>
-		<x> 188 </x>
-		<y> 5060 </y>
+		<x> 794 </x>
+		<y> 4806 </y>
 		<width> 18 </width>
 		<height> 20 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> squad_silver_5 </name>
-		<x> 794 </x>
-		<y> 4806 </y>
+		<x> 188 </x>
+		<y> 5060 </y>
 		<width> 18 </width>
 		<height> 20 </height>
 	</SubTexture>
@@ -6266,36 +6266,36 @@
 	</SubTexture>
 	<SubTexture>
 		<name> squad_silver_7 </name>
-		<x> 1393 </x>
-		<y> 4867 </y>
+		<x> 2689 </x>
+		<y> 3526 </y>
 		<width> 18 </width>
 		<height> 20 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> squad_silver_8 </name>
-		<x> 139 </x>
-		<y> 5038 </y>
-		<width> 18 </width>
-		<height> 20 </height>
-	</SubTexture>
-	<SubTexture>
-		<name> squad_silver_9 </name>
-		<x> 769 </x>
-		<y> 4978 </y>
-		<width> 18 </width>
-		<height> 20 </height>
-	</SubTexture>
-	<SubTexture>
-		<name> super_squad_gold </name>
 		<x> 4071 </x>
 		<y> 1414 </y>
 		<width> 18 </width>
 		<height> 20 </height>
 	</SubTexture>
 	<SubTexture>
+		<name> squad_silver_9 </name>
+		<x> 1393 </x>
+		<y> 4867 </y>
+		<width> 18 </width>
+		<height> 20 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> super_squad_gold </name>
+		<x> 139 </x>
+		<y> 5038 </y>
+		<width> 18 </width>
+		<height> 20 </height>
+	</SubTexture>
+	<SubTexture>
 		<name> super_squad_silver </name>
-		<x> 2689 </x>
-		<y> 3526 </y>
+		<x> 769 </x>
+		<y> 4978 </y>
 		<width> 18 </width>
 		<height> 20 </height>
 	</SubTexture>
@@ -6350,8 +6350,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> level5 </name>
-		<x> 660 </x>
-		<y> 5066 </y>
+		<x> 2637 </x>
+		<y> 4598 </y>
 		<width> 14 </width>
 		<height> 16 </height>
 	</SubTexture>
@@ -16114,576 +16114,590 @@
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_24 </name>
+		<name> badge_234 </name>
 		<x> 1292 </x>
 		<y> 4965 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_25 </name>
+		<name> badge_235 </name>
 		<x> 1206 </x>
 		<y> 4985 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_26 </name>
+		<name> badge_24 </name>
 		<x> 1231 </x>
 		<y> 4985 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_27 </name>
+		<name> badge_25 </name>
 		<x> 1140 </x>
 		<y> 4986 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_28 </name>
+		<name> badge_26 </name>
 		<x> 1108 </x>
 		<y> 5004 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_29 </name>
+		<name> badge_27 </name>
 		<x> 1165 </x>
 		<y> 4986 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_3 </name>
+		<name> badge_28 </name>
 		<x> 1039 </x>
 		<y> 5028 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_30 </name>
+		<name> badge_29 </name>
 		<x> 1064 </x>
 		<y> 5028 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_31 </name>
+		<name> badge_3 </name>
 		<x> 987 </x>
 		<y> 5032 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_32 </name>
+		<name> badge_30 </name>
 		<x> 1012 </x>
 		<y> 5032 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_33 </name>
+		<name> badge_31 </name>
 		<x> 937 </x>
 		<y> 5051 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_34 </name>
+		<name> badge_32 </name>
 		<x> 962 </x>
 		<y> 5051 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_35 </name>
+		<name> badge_33 </name>
 		<x> 875 </x>
 		<y> 5065 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_36 </name>
+		<name> badge_34 </name>
 		<x> 900 </x>
 		<y> 5065 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_37 </name>
+		<name> badge_35 </name>
 		<x> 1471 </x>
 		<y> 4963 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_38 </name>
+		<name> badge_36 </name>
 		<x> 1403 </x>
 		<y> 4965 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_39 </name>
+		<name> badge_37 </name>
 		<x> 1428 </x>
 		<y> 4965 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_4 </name>
+		<name> badge_38 </name>
 		<x> 1342 </x>
 		<y> 4967 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_40 </name>
+		<name> badge_39 </name>
 		<x> 1317 </x>
 		<y> 4989 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_41 </name>
+		<name> badge_4 </name>
 		<x> 1367 </x>
 		<y> 4967 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_42 </name>
+		<name> badge_40 </name>
 		<x> 1256 </x>
 		<y> 4990 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_43 </name>
+		<name> badge_41 </name>
 		<x> 1281 </x>
 		<y> 4990 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_44 </name>
+		<name> badge_42 </name>
 		<x> 1190 </x>
 		<y> 5010 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_45 </name>
+		<name> badge_43 </name>
 		<x> 1215 </x>
 		<y> 5010 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_46 </name>
+		<name> badge_44 </name>
 		<x> 1133 </x>
 		<y> 5011 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_47 </name>
+		<name> badge_45 </name>
 		<x> 1158 </x>
 		<y> 5011 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_48 </name>
+		<name> badge_46 </name>
 		<x> 1089 </x>
 		<y> 5029 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_49 </name>
+		<name> badge_47 </name>
 		<x> 1037 </x>
 		<y> 5053 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_5 </name>
+		<name> badge_48 </name>
 		<x> 1062 </x>
 		<y> 5053 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_50 </name>
+		<name> badge_49 </name>
 		<x> 987 </x>
 		<y> 5057 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_51 </name>
+		<name> badge_5 </name>
 		<x> 1012 </x>
 		<y> 5057 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_52 </name>
+		<name> badge_50 </name>
 		<x> 925 </x>
 		<y> 5076 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_56 </name>
+		<name> badge_51 </name>
 		<x> 950 </x>
 		<y> 5076 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_57 </name>
+		<name> badge_52 </name>
 		<x> 1496 </x>
 		<y> 4963 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_58 </name>
+		<name> badge_56 </name>
 		<x> 1521 </x>
 		<y> 4963 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_59 </name>
+		<name> badge_57 </name>
 		<x> 1925 </x>
 		<y> 4887 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_6 </name>
+		<name> badge_58 </name>
 		<x> 1858 </x>
 		<y> 4895 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_60 </name>
+		<name> badge_59 </name>
 		<x> 1823 </x>
 		<y> 4903 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_61 </name>
+		<name> badge_6 </name>
 		<x> 1883 </x>
 		<y> 4895 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_62 </name>
+		<name> badge_60 </name>
 		<x> 1779 </x>
 		<y> 4927 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_63 </name>
+		<name> badge_61 </name>
 		<x> 1734 </x>
 		<y> 4945 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_64 </name>
+		<name> badge_62 </name>
 		<x> 1687 </x>
 		<y> 4953 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_65 </name>
+		<name> badge_63 </name>
 		<x> 1618 </x>
 		<y> 4955 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_66 </name>
+		<name> badge_64 </name>
 		<x> 1643 </x>
 		<y> 4955 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_67 </name>
+		<name> badge_65 </name>
 		<x> 1546 </x>
 		<y> 4964 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_68 </name>
+		<name> badge_66 </name>
 		<x> 1571 </x>
 		<y> 4964 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_69 </name>
+		<name> badge_67 </name>
 		<x> 1950 </x>
 		<y> 4887 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_7 </name>
+		<name> badge_68 </name>
 		<x> 1975 </x>
 		<y> 4887 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_70 </name>
+		<name> badge_69 </name>
 		<x> 1453 </x>
 		<y> 4988 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_71 </name>
+		<name> badge_7 </name>
 		<x> 1392 </x>
 		<y> 4990 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_72 </name>
+		<name> badge_70 </name>
 		<x> 1417 </x>
 		<y> 4990 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_73 </name>
+		<name> badge_71 </name>
 		<x> 1342 </x>
 		<y> 4992 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_74 </name>
+		<name> badge_72 </name>
 		<x> 1367 </x>
 		<y> 4992 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_75 </name>
+		<name> badge_73 </name>
 		<x> 1306 </x>
 		<y> 5014 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_76 </name>
+		<name> badge_74 </name>
 		<x> 1240 </x>
 		<y> 5015 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_77 </name>
+		<name> badge_75 </name>
 		<x> 1265 </x>
 		<y> 5015 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_78 </name>
+		<name> badge_76 </name>
 		<x> 1183 </x>
 		<y> 5035 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_79 </name>
+		<name> badge_77 </name>
 		<x> 1208 </x>
 		<y> 5035 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_8 </name>
+		<name> badge_78 </name>
 		<x> 1114 </x>
 		<y> 5036 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_80 </name>
+		<name> badge_79 </name>
 		<x> 1087 </x>
 		<y> 5054 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_81 </name>
+		<name> badge_8 </name>
 		<x> 1139 </x>
 		<y> 5036 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_82 </name>
+		<name> badge_80 </name>
 		<x> 1037 </x>
 		<y> 5078 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_83 </name>
+		<name> badge_81 </name>
 		<x> 1062 </x>
 		<y> 5078 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_84 </name>
+		<name> badge_82 </name>
 		<x> 975 </x>
 		<y> 5082 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_85 </name>
+		<name> badge_83 </name>
 		<x> 1000 </x>
 		<y> 5082 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_86 </name>
+		<name> badge_84 </name>
 		<x> 1478 </x>
 		<y> 4988 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_87 </name>
+		<name> badge_85 </name>
 		<x> 1503 </x>
 		<y> 4988 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_88 </name>
+		<name> badge_86 </name>
 		<x> 700 </x>
 		<y> 5061 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_89 </name>
+		<name> badge_87 </name>
 		<x> 660 </x>
 		<y> 5083 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_9 </name>
+		<name> badge_88 </name>
 		<x> 635 </x>
 		<y> 5091 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_90 </name>
+		<name> badge_89 </name>
 		<x> 607 </x>
 		<y> 5107 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_90_gold </name>
+		<name> badge_9 </name>
 		<x> 538 </x>
 		<y> 5115 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_91 </name>
+		<name> badge_90 </name>
 		<x> 563 </x>
 		<y> 5115 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_92 </name>
+		<name> badge_90_gold </name>
 		<x> 493 </x>
 		<y> 5129 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_93 </name>
+		<name> badge_91 </name>
 		<x> 725 </x>
 		<y> 5061 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_94 </name>
+		<name> badge_92 </name>
 		<x> 750 </x>
 		<y> 5061 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_95 </name>
+		<name> badge_93 </name>
 		<x> 775 </x>
 		<y> 5061 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_96 </name>
+		<name> badge_94 </name>
 		<x> 800 </x>
 		<y> 5061 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_97 </name>
+		<name> badge_95 </name>
 		<x> 825 </x>
 		<y> 5079 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_98 </name>
+		<name> badge_96 </name>
 		<x> 850 </x>
 		<y> 5079 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> badge_99 </name>
+		<name> badge_97 </name>
 		<x> 875 </x>
 		<y> 5090 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> override_badge_1 </name>
+		<name> badge_98 </name>
 		<x> 900 </x>
 		<y> 5090 </y>
+		<width> 24 </width>
+		<height> 24 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> badge_99 </name>
+		<x> 925 </x>
+		<y> 5101 </y>
+		<width> 24 </width>
+		<height> 24 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> override_badge_1 </name>
+		<x> 950 </x>
+		<y> 5101 </y>
 		<width> 24 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -16836,64 +16850,64 @@
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_airstrike_enemy_16x16Blind </name>
-		<x> 620 </x>
-		<y> 4795 </y>
-		<width> 16 </width>
-		<height> 16 </height>
-	</SubTexture>
-	<SubTexture>
-		<name> damageLog_airstrike_eq_16x16 </name>
 		<x> 1925 </x>
 		<y> 4870 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> damageLog_airstrike_eq_enemy_16x16 </name>
-		<x> 1419 </x>
-		<y> 4535 </y>
-		<width> 16 </width>
-		<height> 16 </height>
-	</SubTexture>
-	<SubTexture>
-		<name> damageLog_airstrike_eq_enemy_16x16Blind </name>
-		<x> 3229 </x>
-		<y> 4320 </y>
-		<width> 16 </width>
-		<height> 16 </height>
-	</SubTexture>
-	<SubTexture>
-		<name> damageLog_artillery_16x16 </name>
+		<name> damageLog_airstrike_eq_16x16 </name>
 		<x> 1359 </x>
 		<y> 4610 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> damageLog_artillery_enemy_16x16 </name>
-		<x> 2652 </x>
-		<y> 4549 </y>
+		<name> damageLog_airstrike_eq_enemy_16x16 </name>
+		<x> 3229 </x>
+		<y> 4320 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> damageLog_artillery_enemy_16x16Blind </name>
+		<name> damageLog_airstrike_eq_enemy_16x16Blind </name>
+		<x> 1419 </x>
+		<y> 4535 </y>
+		<width> 16 </width>
+		<height> 16 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> damageLog_artillery_16x16 </name>
+		<x> 620 </x>
+		<y> 4795 </y>
+		<width> 16 </width>
+		<height> 16 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> damageLog_artillery_enemy_16x16 </name>
 		<x> 1899 </x>
 		<y> 4820 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
+		<name> damageLog_artillery_enemy_16x16Blind </name>
+		<x> 2652 </x>
+		<y> 4549 </y>
+		<width> 16 </width>
+		<height> 16 </height>
+	</SubTexture>
+	<SubTexture>
 		<name> damageLog_artillery_eq_16x16 </name>
-		<x> 3586 </x>
-		<y> 4520 </y>
+		<x> 1376 </x>
+		<y> 4585 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_artillery_eq_enemy_16x16 </name>
-		<x> 1328 </x>
-		<y> 4915 </y>
+		<x> 3586 </x>
+		<y> 4520 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
@@ -16906,15 +16920,15 @@
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_art_16x16 </name>
-		<x> 1722 </x>
-		<y> 4549 </y>
+		<x> 1656 </x>
+		<y> 4751 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_assist_16x16 </name>
-		<x> 1656 </x>
-		<y> 4751 </y>
+		<x> 1722 </x>
+		<y> 4549 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
@@ -16948,15 +16962,15 @@
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_by_spawned_bot_16x16 </name>
-		<x> 1015 </x>
-		<y> 4927 </y>
+		<x> 4066 </x>
+		<y> 2439 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_cling_brander_16x16 </name>
-		<x> 4066 </x>
-		<y> 2439 </y>
+		<x> 1015 </x>
+		<y> 4927 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
@@ -17039,8 +17053,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_damage_enemy_16x16Blind </name>
-		<x> 1432 </x>
-		<y> 4377 </y>
+		<x> 1953 </x>
+		<y> 3818 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
@@ -17053,8 +17067,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_death_zone_16x16 </name>
-		<x> 2677 </x>
-		<y> 4449 </y>
+		<x> 1432 </x>
+		<y> 4377 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
@@ -17074,8 +17088,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_discover_16x16 </name>
-		<x> 1953 </x>
-		<y> 3818 </y>
+		<x> 2677 </x>
+		<y> 4449 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
@@ -17144,15 +17158,15 @@
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_light_16x16 </name>
-		<x> 1703 </x>
-		<y> 4776 </y>
+		<x> 1485 </x>
+		<y> 4282 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_middle_16x16 </name>
-		<x> 1485 </x>
-		<y> 4282 </y>
+		<x> 1703 </x>
+		<y> 4776 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
@@ -17242,8 +17256,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> goldCenter </name>
-		<x> 508 </x>
-		<y> 4555 </y>
+		<x> 510 </x>
+		<y> 4530 </y>
 		<width> 1 </width>
 		<height> 14 </height>
 	</SubTexture>
@@ -17256,8 +17270,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> whiteBlackCenter </name>
-		<x> 510 </x>
-		<y> 4530 </y>
+		<x> 534 </x>
+		<y> 4365 </y>
 		<width> 1 </width>
 		<height> 14 </height>
 	</SubTexture>
@@ -17270,15 +17284,15 @@
 	</SubTexture>
 	<SubTexture>
 		<name> whiteCenter </name>
-		<x> 485 </x>
-		<y> 4680 </y>
+		<x> 508 </x>
+		<y> 4555 </y>
 		<width> 1 </width>
 		<height> 14 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> whiteEdge </name>
-		<x> 1787 </x>
-		<y> 4592 </y>
+		<x> 2891 </x>
+		<y> 4134 </y>
 		<width> 4 </width>
 		<height> 14 </height>
 	</SubTexture>
@@ -17361,43 +17375,43 @@
 	</SubTexture>
 	<SubTexture>
 		<name> whiteIconSPG_elite16x16 </name>
-		<x> 1750 </x>
-		<y> 4808 </y>
-		<width> 16 </width>
-		<height> 16 </height>
-	</SubTexture>
-	<SubTexture>
-		<name> ls_damageLog_alpha_16x16 </name>
-		<x> 1750 </x>
-		<y> 4825 </y>
-		<width> 16 </width>
-		<height> 16 </height>
-	</SubTexture>
-	<SubTexture>
-		<name> ls_damageLog_archer_16x16 </name>
-		<x> 1037 </x>
-		<y> 4739 </y>
-		<width> 16 </width>
-		<height> 16 </height>
-	</SubTexture>
-	<SubTexture>
-		<name> ls_damageLog_bastion_16x16 </name>
-		<x> 1037 </x>
-		<y> 4756 </y>
-		<width> 16 </width>
-		<height> 16 </height>
-	</SubTexture>
-	<SubTexture>
-		<name> ls_damageLog_bomber_16x16 </name>
 		<x> 983 </x>
 		<y> 4841 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> ls_damageLog_bomber_alpha_16x16 </name>
+		<name> ls_damageLog_alpha_16x16 </name>
 		<x> 983 </x>
 		<y> 4858 </y>
+		<width> 16 </width>
+		<height> 16 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> ls_damageLog_archer_16x16 </name>
+		<x> 1750 </x>
+		<y> 4808 </y>
+		<width> 16 </width>
+		<height> 16 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> ls_damageLog_bastion_16x16 </name>
+		<x> 1750 </x>
+		<y> 4825 </y>
+		<width> 16 </width>
+		<height> 16 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> ls_damageLog_bomber_16x16 </name>
+		<x> 1037 </x>
+		<y> 4739 </y>
+		<width> 16 </width>
+		<height> 16 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> ls_damageLog_bomber_alpha_16x16 </name>
+		<x> 1037 </x>
+		<y> 4756 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
@@ -18166,8 +18180,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> ls_mapIconSoul </name>
-		<x> 2637 </x>
-		<y> 4598 </y>
+		<x> 660 </x>
+		<y> 5066 </y>
 		<width> 14 </width>
 		<height> 14 </height>
 	</SubTexture>

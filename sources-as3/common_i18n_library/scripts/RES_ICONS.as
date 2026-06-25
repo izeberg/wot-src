@@ -27615,6 +27615,10 @@ package
       
       public static const MAPS_ICONS_LIBRARY_BADGES_110X110_BADGE_232:String = "../maps/icons/library/badges/110x110/badge_232.png";
       
+      public static const MAPS_ICONS_LIBRARY_BADGES_110X110_BADGE_234:String = "../maps/icons/library/badges/110x110/badge_234.png";
+      
+      public static const MAPS_ICONS_LIBRARY_BADGES_110X110_BADGE_235:String = "../maps/icons/library/badges/110x110/badge_235.png";
+      
       public static const MAPS_ICONS_LIBRARY_BADGES_110X110_BADGE_36:String = "../maps/icons/library/badges/110x110/badge_36.png";
       
       public static const MAPS_ICONS_LIBRARY_BADGES_110X110_BADGE_37:String = "../maps/icons/library/badges/110x110/badge_37.png";
@@ -27930,6 +27934,10 @@ package
       public static const MAPS_ICONS_LIBRARY_BADGES_220X220_BADGE_232:String = "../maps/icons/library/badges/220x220/badge_232.png";
       
       public static const MAPS_ICONS_LIBRARY_BADGES_220X220_BADGE_233:String = "../maps/icons/library/badges/220x220/badge_233.png";
+      
+      public static const MAPS_ICONS_LIBRARY_BADGES_220X220_BADGE_234:String = "../maps/icons/library/badges/220x220/badge_234.png";
+      
+      public static const MAPS_ICONS_LIBRARY_BADGES_220X220_BADGE_235:String = "../maps/icons/library/badges/220x220/badge_235.png";
       
       public static const MAPS_ICONS_LIBRARY_BADGES_220X220_BADGE_36:String = "../maps/icons/library/badges/220x220/badge_36.png";
       
@@ -28312,6 +28320,10 @@ package
       public static const MAPS_ICONS_LIBRARY_BADGES_24X24_BADGE_232:String = "../maps/icons/library/badges/24x24/badge_232.png";
       
       public static const MAPS_ICONS_LIBRARY_BADGES_24X24_BADGE_233:String = "../maps/icons/library/badges/24x24/badge_233.png";
+      
+      public static const MAPS_ICONS_LIBRARY_BADGES_24X24_BADGE_234:String = "../maps/icons/library/badges/24x24/badge_234.png";
+      
+      public static const MAPS_ICONS_LIBRARY_BADGES_24X24_BADGE_235:String = "../maps/icons/library/badges/24x24/badge_235.png";
       
       public static const MAPS_ICONS_LIBRARY_BADGES_24X24_BADGE_24:String = "../maps/icons/library/badges/24x24/badge_24.png";
       
@@ -28697,6 +28709,10 @@ package
       
       public static const MAPS_ICONS_LIBRARY_BADGES_400X300_BADGE_233:String = "../maps/icons/library/badges/400x300/badge_233.png";
       
+      public static const MAPS_ICONS_LIBRARY_BADGES_400X300_BADGE_234:String = "../maps/icons/library/badges/400x300/badge_234.png";
+      
+      public static const MAPS_ICONS_LIBRARY_BADGES_400X300_BADGE_235:String = "../maps/icons/library/badges/400x300/badge_235.png";
+      
       public static const MAPS_ICONS_LIBRARY_BADGES_48X48_BADGE_1:String = "../maps/icons/library/badges/48x48/badge_1.png";
       
       public static const MAPS_ICONS_LIBRARY_BADGES_48X48_BADGE_10:String = "../maps/icons/library/badges/48x48/badge_10.png";
@@ -28982,6 +28998,10 @@ package
       public static const MAPS_ICONS_LIBRARY_BADGES_48X48_BADGE_232:String = "../maps/icons/library/badges/48x48/badge_232.png";
       
       public static const MAPS_ICONS_LIBRARY_BADGES_48X48_BADGE_233:String = "../maps/icons/library/badges/48x48/badge_233.png";
+      
+      public static const MAPS_ICONS_LIBRARY_BADGES_48X48_BADGE_234:String = "../maps/icons/library/badges/48x48/badge_234.png";
+      
+      public static const MAPS_ICONS_LIBRARY_BADGES_48X48_BADGE_235:String = "../maps/icons/library/badges/48x48/badge_235.png";
       
       public static const MAPS_ICONS_LIBRARY_BADGES_48X48_BADGE_24:String = "../maps/icons/library/badges/48x48/badge_24.png";
       
@@ -29448,6 +29468,10 @@ package
       public static const MAPS_ICONS_LIBRARY_BADGES_80X80_BADGE_232:String = "../maps/icons/library/badges/80x80/badge_232.png";
       
       public static const MAPS_ICONS_LIBRARY_BADGES_80X80_BADGE_233:String = "../maps/icons/library/badges/80x80/badge_233.png";
+      
+      public static const MAPS_ICONS_LIBRARY_BADGES_80X80_BADGE_234:String = "../maps/icons/library/badges/80x80/badge_234.png";
+      
+      public static const MAPS_ICONS_LIBRARY_BADGES_80X80_BADGE_235:String = "../maps/icons/library/badges/80x80/badge_235.png";
       
       public static const MAPS_ICONS_LIBRARY_BADGES_80X80_BADGE_24:String = "../maps/icons/library/badges/80x80/badge_24.png";
       
@@ -36849,6 +36873,10 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_110X110_BADGE_232:String = "../maps/icons/quests/bonuses/badges/110x110/badge_232.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_110X110_BADGE_234:String = "../maps/icons/quests/bonuses/badges/110x110/badge_234.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_110X110_BADGE_235:String = "../maps/icons/quests/bonuses/badges/110x110/badge_235.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_110X110_BADGE_36:String = "../maps/icons/quests/bonuses/badges/110x110/badge_36.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_110X110_BADGE_37:String = "../maps/icons/quests/bonuses/badges/110x110/badge_37.png";
@@ -37141,6 +37169,10 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_220X220_BADGE_233:String = "../maps/icons/quests/bonuses/badges/220x220/badge_233.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_220X220_BADGE_234:String = "../maps/icons/quests/bonuses/badges/220x220/badge_234.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_220X220_BADGE_235:String = "../maps/icons/quests/bonuses/badges/220x220/badge_235.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_220X220_BADGE_36:String = "../maps/icons/quests/bonuses/badges/220x220/badge_36.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_220X220_BADGE_37:String = "../maps/icons/quests/bonuses/badges/220x220/badge_37.png";
@@ -37342,6 +37374,10 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_232X174_BADGE_232:String = "../maps/icons/quests/bonuses/badges/232x174/badge_232.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_232X174_BADGE_233:String = "../maps/icons/quests/bonuses/badges/232x174/badge_233.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_232X174_BADGE_234:String = "../maps/icons/quests/bonuses/badges/232x174/badge_234.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_232X174_BADGE_235:String = "../maps/icons/quests/bonuses/badges/232x174/badge_235.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_24X24_BADGE_1:String = "../maps/icons/quests/bonuses/badges/24x24/badge_1.png";
       
@@ -37590,6 +37626,10 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_24X24_BADGE_232:String = "../maps/icons/quests/bonuses/badges/24x24/badge_232.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_24X24_BADGE_233:String = "../maps/icons/quests/bonuses/badges/24x24/badge_233.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_24X24_BADGE_234:String = "../maps/icons/quests/bonuses/badges/24x24/badge_234.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_24X24_BADGE_235:String = "../maps/icons/quests/bonuses/badges/24x24/badge_235.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_24X24_BADGE_24:String = "../maps/icons/quests/bonuses/badges/24x24/badge_24.png";
       
@@ -37871,6 +37911,10 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_296X222_BADGE_233:String = "../maps/icons/quests/bonuses/badges/296x222/badge_233.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_296X222_BADGE_234:String = "../maps/icons/quests/bonuses/badges/296x222/badge_234.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_296X222_BADGE_235:String = "../maps/icons/quests/bonuses/badges/296x222/badge_235.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_320X320_BADGE_102:String = "../maps/icons/quests/bonuses/badges/320x320/badge_102.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_400X300_BADGE_124:String = "../maps/icons/quests/bonuses/badges/400x300/badge_124.png";
@@ -38022,6 +38066,10 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_400X300_BADGE_232:String = "../maps/icons/quests/bonuses/badges/400x300/badge_232.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_400X300_BADGE_233:String = "../maps/icons/quests/bonuses/badges/400x300/badge_233.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_400X300_BADGE_234:String = "../maps/icons/quests/bonuses/badges/400x300/badge_234.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_400X300_BADGE_235:String = "../maps/icons/quests/bonuses/badges/400x300/badge_235.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_48X48_BADGE_1:String = "../maps/icons/quests/bonuses/badges/48x48/badge_1.png";
       
@@ -38270,6 +38318,10 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_48X48_BADGE_232:String = "../maps/icons/quests/bonuses/badges/48x48/badge_232.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_48X48_BADGE_233:String = "../maps/icons/quests/bonuses/badges/48x48/badge_233.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_48X48_BADGE_234:String = "../maps/icons/quests/bonuses/badges/48x48/badge_234.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_48X48_BADGE_235:String = "../maps/icons/quests/bonuses/badges/48x48/badge_235.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_48X48_BADGE_24:String = "../maps/icons/quests/bonuses/badges/48x48/badge_24.png";
       
@@ -38674,6 +38726,10 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_80X80_BADGE_232:String = "../maps/icons/quests/bonuses/badges/80x80/badge_232.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_80X80_BADGE_233:String = "../maps/icons/quests/bonuses/badges/80x80/badge_233.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_80X80_BADGE_234:String = "../maps/icons/quests/bonuses/badges/80x80/badge_234.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_80X80_BADGE_235:String = "../maps/icons/quests/bonuses/badges/80x80/badge_235.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_80X80_BADGE_24:String = "../maps/icons/quests/bonuses/badges/80x80/badge_24.png";
       

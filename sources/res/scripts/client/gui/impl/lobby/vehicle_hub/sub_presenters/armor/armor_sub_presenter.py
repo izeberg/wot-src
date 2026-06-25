@@ -563,8 +563,9 @@ class _ModulesSetup(object):
             gunsModel.addViewModel(gunModel)
             gunItem = self._itemsCache.items.getItemByCD(gun.compactDescr)
             mechanics = gunModel.getMechanics()
-            for mechanicName in gunItem.getMechanics(typeDescriptor):
-                mechanics.addString(mechanicName.value)
+            for m in gunItem.getModuleMechanicItems(typeDescriptor):
+                if not m.isHidden:
+                    mechanics.addString(m.guiName.value)
 
             gunDependencies = gunModel.getDependencies()
             for turret in turrets:
@@ -673,8 +674,9 @@ class _AttackerSetup(object):
             gunModel.setCompactDescr(gun.compactDescr)
             mechanics = gunModel.getMechanics()
             gunItem = self._itemsCache.items.getItemByCD(gun.compactDescr)
-            for mechanicName in gunItem.getMechanics(attackerDescr):
-                mechanics.addString(mechanicName.value)
+            for m in gunItem.getModuleMechanicItems(attackerDescr):
+                if not m.isHidden:
+                    mechanics.addString(m.guiName.value)
 
             gunsModel.addViewModel(gunModel)
 

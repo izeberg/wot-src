@@ -1,7 +1,6 @@
 from __future__ import absolute_import
 import logging, os
 from copy import deepcopy
-from functools import total_ordering
 from future.moves.urllib.parse import urlencode
 from future.utils import iteritems, lfilter, listvalues, viewitems, viewvalues
 from past.builtins import cmp, range
@@ -234,7 +233,6 @@ class ConcealmentBonus(object):
         return backport.text(R.strings.vehicle_customization.bonus.name.camouflage())
 
 
-@total_ordering
 class Customization(FittingItem):
     __slots__ = ('_boundVehicles', '_bonus', '_installedVehicles', '__noveltyData',
                  '__progressingData', '__installedCount', '__boundInventoryCount',
@@ -269,14 +267,6 @@ class Customization(FittingItem):
             self.__progressingData = proxy.inventory.getC11nProgressionDataForItem(intCompactDescr)
         self._isUnlocked = True
         return
-
-    def __eq__(self, other):
-        return self._compare(other) == 0
-
-    def __lt__(self, other):
-        return self._compare(other) < 0
-
-    __hash__ = FittingItem.__hash__
 
     def __repr__(self):
         return ('{}<intCD:{}, id:{}>').format(self.__class__.__name__, self.intCD, self.id)

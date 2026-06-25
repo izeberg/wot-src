@@ -3,7 +3,6 @@ import time
 from builtins import range
 from collections import OrderedDict, namedtuple
 from copy import copy
-from functools import total_ordering
 from future.utils import iteritems, lfilter, listvalues, viewitems
 from itertools import chain
 from past.builtins import cmp
@@ -112,7 +111,6 @@ class TankmenComparator(object):
             return cmp(first.lastUserName, second.lastUserName) or 1
 
 
-@total_ordering
 class Tankman(GUIItem):
     NO_VEHICLE_INV_ID = -1
     _itemsCache = dependency.descriptor(IItemsCache)
@@ -176,13 +174,13 @@ class Tankman(GUIItem):
         self._comparator = TankmenComparator()
         return
 
-    def __lt__(self, other):
-        return self._compare(other) < 0
-
     def __eq__(self, other):
         if other is None or not isinstance(other, Tankman):
             return False
         return self.invID == other.invID
+
+    def __ne__(self, other):
+        return not self == other
 
     def __hash__(self):
         return self._invID

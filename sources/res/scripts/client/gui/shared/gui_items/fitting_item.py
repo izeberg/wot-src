@@ -1,7 +1,6 @@
 from __future__ import absolute_import
 import typing
 from collections import namedtuple
-from functools import total_ordering
 from future.utils import iteritems, itervalues, viewitems
 from itertools import chain
 from past.builtins import cmp
@@ -181,7 +180,6 @@ class RentalInfoProvider(_RentalInfoProvider):
         return 0
 
 
-@total_ordering
 class FittingItem(GUIItem):
     __slots__ = ('_buyPrices', '_sellPrices', '_mayConsumeWalletResources', '_isHidden',
                  '_inventoryCount', '_isUnlocked', '_isBoughtForAltPrice', '_rentInfo',
@@ -231,14 +229,14 @@ class FittingItem(GUIItem):
             self._fullyConfigured = False
         return
 
-    def __lt__(self, other):
-        return self._compare(other) < 0
-
     def __eq__(self, other):
         if other is None:
             return False
         else:
             return self.intCD == other.intCD
+
+    def __ne__(self, other):
+        return not self == other
 
     def __hash__(self):
         return self.intCD

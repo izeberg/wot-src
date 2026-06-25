@@ -139,7 +139,7 @@ class ChallengeMissionsTab(UpdateChildrenMixin, ViewComponent[ChallengeMissions]
 
     def __onVehiclesSyncCompleted(self, _):
         self.__isSuitableVehicles = bool(getSuitableVehicles())
-        self.viewModel.setIsSuitableVehicles(self.__isSuitableVehicles)
+        self.__updateModel()
 
     def __onMoneyUpdated(self, _):
         self.__updateChallenges()

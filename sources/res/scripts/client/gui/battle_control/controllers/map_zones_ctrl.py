@@ -61,9 +61,9 @@ class MapZonesController(IMapZonesController):
     def getControllerID(self):
         return BATTLE_CTRL_ID.MAP_ZONES_CONTROLLER
 
-    def addMarkerToZone(self, zoneMarker, matrix):
-        self.__zoneMarkers[zoneMarker.id] = (
-         zoneMarker, matrix)
+    def addMarkerToZone(self, zoneMarkerAccess, matrix):
+        zoneMarker = zoneMarkerAccess()
+        self.__zoneMarkers[zoneMarker.id] = (zoneMarkerAccess, matrix)
         self.onMarkerToZoneAdded(zoneMarker, matrix)
         SoundGroups.g_instance.playSoundPos(SoundNotifications.DANGER_ZONE_MARKER_START, matrix.translation)
 
@@ -72,8 +72,9 @@ class MapZonesController(IMapZonesController):
         _, matrix = self.__zoneMarkers.pop(zoneMarker.id)
         SoundGroups.g_instance.playSoundPos(SoundNotifications.DANGER_ZONE_MARKER_STOP, matrix.translation)
 
-    def addTransformedZone(self, zone):
-        self.__transformedZones[zone.layerId] = zone
+    def addTransformedZone(self, zoneAccess):
+        zone = zoneAccess()
+        self.__transformedZones[zone.layerId] = zoneAccess
         self.onZoneTransformed(zone)
 
     def removeTransformedZone(self, zone):

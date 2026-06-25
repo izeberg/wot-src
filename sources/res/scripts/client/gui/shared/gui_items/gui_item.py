@@ -14,6 +14,7 @@ from soft_exception import SoftException
 @total_ordering
 class HasIntCD(object):
     __slots__ = ('intCompactDescr', 'itemTypeID', 'nationID', 'innationID')
+    __hash__ = None
 
     def __init__(self, intCompactDescr):
         super(HasIntCD, self).__init__()
@@ -21,13 +22,10 @@ class HasIntCD(object):
         self.itemTypeID, self.nationID, self.innationID = self._parseIntCompDescr(self.intCompactDescr)
 
     def __eq__(self, other):
-        return self._compare(other) == 0
+        return self.__compare(other) == 0
 
     def __lt__(self, other):
-        return self._compare(other) < 0
-
-    def __hash__(self):
-        return self.intCompactDescr
+        return self.__compare(other) < 0
 
     @property
     def intCD(self):
@@ -52,13 +50,10 @@ class HasIntCD(object):
     def _parseIntCompDescr(self, intCompactDescr):
         return vehicles.parseIntCompactDescr(intCompactDescr)
 
-    def _compare(self, other):
+    def __compare(self, other):
         if self is other:
-            return 1
-        res = cmp(nationSortKeyByIndex(self.nationID), nationSortKeyByIndex(other.nationID))
-        if res:
-            return res
-        return 0
+            return 0
+        return cmp(nationSortKeyByIndex(self.nationID), nationSortKeyByIndex(other.nationID))
 
 
 class HasStrCD(object):
@@ -76,6 +71,7 @@ class HasStrCD(object):
 @total_ordering
 class GUIItem(object):
     __slots__ = ('_intCD', '_strCD')
+    __hash__ = None
     itemsFactory = dependency.descriptor(IGuiItemsFactory)
 
     def __init__(self, intCD=None, strCD=None):
@@ -91,9 +87,6 @@ class GUIItem(object):
 
     def __lt__(self, other):
         return self._compare(other) < 0
-
-    def __hash__(self):
-        return self.intCD
 
     @property
     def intCDO(self):

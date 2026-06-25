@@ -1336,6 +1336,9 @@ class TemperatureGunThermalStates(object):
             return self.states == other.states and self.thermalStateHysteresis == other.thermalStateHysteresis
         return False
 
+    def __ne__(self, other):
+        return not self == other
+
     def __hash__(self):
         return hash((self.states, self.thermalStateHysteresis))
 
@@ -1552,6 +1555,9 @@ class PropellantGunDamageFactors(object):
 
     def __eq__(self, other):
         return isclose(self.minFactor, other.minFactor) and isclose(self.maxFactor, other.maxFactor)
+
+    def __ne__(self, other):
+        return not self == other
 
     __hash__ = None
 

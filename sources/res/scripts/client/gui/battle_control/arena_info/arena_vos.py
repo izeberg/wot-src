@@ -166,6 +166,7 @@ class PlayerInfoVO(object):
     __slots__ = ('accountDBID', 'avatarSessionID', 'name', 'fakeName', 'clanAbbrev',
                  'igrType', 'personaMissionIDs', 'personalMissionInfo', 'isPrebattleCreator',
                  'forbidInBattleInvitations', 'isTeamKiller')
+    __hash__ = None
     eventsCache = dependency.descriptor(IEventsCache)
 
     def __init__(self, accountDBID=0, avatarSessionID='', name=None, clanAbbrev='', igrType=IGR_TYPE.NONE, personalMissionIDs=None, personalMissionInfo=None, isPrebattleCreator=False, forbidInBattleInvitations=False, fakeName='', **kwargs):
@@ -187,9 +188,6 @@ class PlayerInfoVO(object):
 
     def __lt__(self, other):
         return self.__compare(other) < 0
-
-    def __hash__(self):
-        return hash(self.name)
 
     @property
     def isBot(self):
@@ -247,6 +245,7 @@ class VehicleTypeInfoVO(object):
                  'classTag', 'nationID', 'turretYawLimits', 'maxHealth', 'strCompactDescr',
                  'isOnlyForBattleRoyaleBattles', 'tags', 'chassisType', 'role', 'improvedRammingAnimationDamage',
                  'vehicleMechanics')
+    __hash__ = None
 
     def __init__(self, vehicleType=None, maxHealth=None, **kwargs):
         super(VehicleTypeInfoVO, self).__init__()
@@ -260,9 +259,6 @@ class VehicleTypeInfoVO(object):
 
     def __lt__(self, other):
         return self.__compare(other) < 0
-
-    def __hash__(self):
-        return hash((self.level, self.getOrderByClass(), self.shortName))
 
     def update(self, invalidate=_INVALIDATE_OP.NONE, vehicleType=None, maxHealth=None, **kwargs):
         if vehicleType is not None:

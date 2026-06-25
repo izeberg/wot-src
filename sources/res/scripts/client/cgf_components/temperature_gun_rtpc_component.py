@@ -27,7 +27,7 @@ class TemperatureGunRTPCComponent(object):
 class TemperatureGunMechanicSystem(CGF.System):
     TemperatureGunActivated = CGF.ActivateReaction(CGF.GameObject, CGF.ReactRw(TemperatureGunRTPCComponent))
     TemperatureGunDeactivated = CGF.DeactivateReaction(CGF.ReactRw(TemperatureGunRTPCComponent))
-    TemperatureGunIterate = CGF.IterateReaction(CGF.ActiveOnly, CGF.GameObject, CGF.Rw(TemperatureGunRTPCComponent))
+    TemperatureGunIterate = CGF.IterateReaction(CGF.ActiveOnly, CGF.Rw(TemperatureGunRTPCComponent))
     TemperatureControllerAccess = CGF.AccessReaction(CGF.GameObject, CGF.Ro(TemperatureGunController))
     Reactions = CGF.Reactions(TemperatureGunActivated, TemperatureGunDeactivated, TemperatureControllerAccess, TemperatureGunIterate)
 
@@ -38,16 +38,29 @@ class TemperatureGunMechanicSystem(CGF.System):
             self.__setGunTemperature(rtpc, None)
 
         for go, rtpc in self.reaction(self.TemperatureGunActivated):
-            rtpc.temperatureGunControllerGO, controller = CGF.findParentWithReaction(go, controllerAccess)
-            self.__setGunTemperature(rtpc, controller)
+            self.__resolveController(rtpc, go, controllerAccess)
 
         return
 
     def periodUpdate(self):
         controllerAccess = self.reaction(self.TemperatureControllerAccess)
-        for go, rtpc in self.reaction(self.TemperatureGunIterate):
-            rtpc.temperatureGunControllerGO, controller = CGF.findParentWithReaction(go, controllerAccess)
+        for rtpc in self.reaction(self.TemperatureGunIterate):
+            _, controller = controllerAccess.find(rtpc.temperatureGunControllerGO)
+            if controller is not None:
+                self.__setGunTemperature(rtpc, controller)
+
+        return
+
+    def __resolveController(self, rtpc, go, controllerAccess):
+        found = CGF.findParentWithReaction(go, controllerAccess)
+        if found is None:
+            rtpc.temperatureGunControllerGO = None
+            self.__setGunTemperature(rtpc, None)
+            return
+        else:
+            rtpc.temperatureGunControllerGO, controller = found
             self.__setGunTemperature(rtpc, controller)
+            return
 
     @classmethod
     def __getTemperatureGunProgress(cls, controller):

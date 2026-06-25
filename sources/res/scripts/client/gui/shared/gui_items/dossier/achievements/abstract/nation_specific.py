@@ -1,12 +1,10 @@
 from __future__ import absolute_import
-from functools import total_ordering
 from past.builtins import cmp
 from dossiers2.custom import cache
 from dossiers2.custom.cache import getCache as getDossiersCache
 from gui import nationSortKeyByIndex
 from gui.shared.gui_items.dossier.achievements.abstract.simple_progress import SimpleProgressAchievement
 
-@total_ordering
 class NationSpecificAchievement(SimpleProgressAchievement):
     __slots__ = ('_nationID', )
     _NATIONAL_VEHICLES = 'vehiclesInTreesByNation'
@@ -15,15 +13,6 @@ class NationSpecificAchievement(SimpleProgressAchievement):
     def __init__(self, namePrefix, nationID, block, dossier, value=None):
         self._nationID = nationID
         super(NationSpecificAchievement, self).__init__(self.makeFullName(namePrefix, nationID), block, dossier, value)
-
-    def __eq__(self, other):
-        return self._compare(other) == 0
-
-    def __lt__(self, other):
-        return self._compare(other) < 0
-
-    def __hash__(self):
-        return super(NationSpecificAchievement, self).__hash__()
 
     def getNationID(self):
         return self._nationID
