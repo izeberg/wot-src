@@ -3776,10 +3776,10 @@
 		</detailed>
 	</physics>
 	<rocketAcceleration>
-		<deployTime>3</deployTime>
-		<reloadTime>5</reloadTime>
-		<reuseCount>15</reuseCount>
-		<duration>3</duration>
+		<deployTime>10</deployTime>
+		<reloadTime>8</reloadTime>
+		<reuseCount>10</reuseCount>
+		<duration>4</duration>
 		<impulse>
 			<magnitude>100</magnitude>
 			<applyPoint>
@@ -3809,7 +3809,7 @@
 			<mul>
 				<name>dynAttrs/engine/power</name>
 				<value>
-					2.5
+					2.0
 					<!--BW_String-->
 				</value>
 			</mul>

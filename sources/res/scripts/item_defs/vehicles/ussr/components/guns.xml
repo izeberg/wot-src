@@ -19532,7 +19532,7 @@
 				<recoilEffect>large</recoilEffect>
 			</recoil>
 			<effects>shot_large_mb</effects>
-			<reloadEffect>dualgun_reload115_152</reloadEffect>
+			<reloadEffect>dualgun_autoloader_reload115_152</reloadEffect>
 			<pitchLimits>
 				<minPitch>
 					0.0 -18.0 1.0 -18.0

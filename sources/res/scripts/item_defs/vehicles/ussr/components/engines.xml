@@ -3574,9 +3574,9 @@
 			<level>8</level>
 			<price>58000</price>
 			<notInShop>true</notInShop>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
-			<power>700</power>
+			<wwsoundPC>eng_V2_34_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2_34_npc</wwsoundNPC>
+			<power>800</power>
 			<weight>1000</weight>
 			<maxHealth>260</maxHealth>
 			<maxRegenHealth>130</maxRegenHealth>
@@ -3585,8 +3585,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>299</rpm_min>
-			<rpm_max>2301</rpm_max>
+			<rpm_min>301</rpm_min>
+			<rpm_max>2200</rpm_max>
 		</V-14>
 		<V-54K_FL>
 			<userString>#ussr_vehicles:V-54K</userString>
