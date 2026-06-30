@@ -1,5 +1,6 @@
 import typing
 from shared_utils import first
+import BigWorld
 from account_helpers import AccountSettings
 from account_helpers.AccountSettings import NEW_LOBBY_TAB_COUNTER
 from dossiers2.ui.achievements import ACHIEVEMENT_BLOCK
@@ -134,6 +135,10 @@ class _GuaranteedRewardTooltipSchema(W2CSchema):
     id = Field(required=True, type=int)
     x = Field(required=True, type=int)
     y = Field(required=True, type=int)
+
+
+class _RequestTokenSchema(W2CSchema):
+    tokenName = Field(required=True, type=basestring)
 
 
 class UtilWebApiMixin(object):
@@ -319,3 +324,7 @@ class UtilWebApiMixin(object):
     def getUrlInfo(self, cmd):
         external = self._lnkCtrl.externalAllowed(cmd.url)
         return {'external_allowed': external}
+
+    @w2c(_RequestTokenSchema, 'request_single_token')
+    def requestToken(self, cmd):
+        BigWorld.player().requestSingleToken(cmd.tokenName)
