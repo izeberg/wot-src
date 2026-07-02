@@ -315,7 +315,7 @@ class GatewayDataAccessor(base.BaseDataAccessor):
         return self._request_data(callback, url, get_data=get_params, converters={'items.created_at': from_iso, 
            'items.updated_at': from_iso})
 
-    def get_account_invites(self, callback, account_id, fields=None, statuses=None, get_total_count=False, limit=None, offset=None):
+    def get_account_invites(self, callback, fields=None, statuses=None, get_total_count=False, limit=None, offset=None):
         statuses = statuses or ['active', 'declined', 'accepted', 'expired', 'error', 'deleted']
         get_params = {'fields': fields, 
            'statuses': statuses}

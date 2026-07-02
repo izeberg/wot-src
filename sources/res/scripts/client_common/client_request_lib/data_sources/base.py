@@ -29,7 +29,7 @@ class BaseDataAccessor(with_metaclass(ABCMeta, object)):
         pass
 
     @abstractmethod
-    def get_account_invites(self, callback, account_id, fields=None, statuses=None, offset=0, limit=18):
+    def get_account_invites(self, callback, fields=None, statuses=None, offset=0, limit=18):
         pass
 
     @abstractmethod

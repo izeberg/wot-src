@@ -596,7 +596,7 @@ class StagingDataAccessor(base.BaseDataAccessor):
        'clan_id': 'clan_id', 
        'comment': 'data.comment', 
        'status_changer_id': 'data.status_changer_id'}, paginated=True)
-    def get_account_invites(self, callback, account_id, fields=None, statuses=None, get_total_count=False, limit=18, offset=0):
+    def get_account_invites(self, callback, fields=None, statuses=None, get_total_count=False, limit=18, offset=0):
         statuses = statuses or ['active', 'declined', 'accepted', 'expired', 'error', 'deleted']
         get_params = {'fields': (',').join(fields), 
            'account_id': self._account, 

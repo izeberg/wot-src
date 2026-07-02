@@ -364,6 +364,16 @@
 				<id>If_1</id>
 			</block>
 			<block>
+				<class>OnAnyVehicleDestroyed</class>
+				<id>OnAnyVehicleDestroyed_1</id>
+				<slots>
+					<slot>
+						<name>active</name>
+						<const>\true\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
 				<class>MacroOutput</class>
 				<id>MacroOutput_3</id>
 				<params>
@@ -380,16 +390,6 @@
 				</params>
 			</block>
 			<block>
-				<class>OnAnyVehicleDestroyed</class>
-				<id>OnAnyVehicleDestroyed_1</id>
-				<slots>
-					<slot>
-						<name>active</name>
-						<const>\true\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
 				<class>CompareIntegers</class>
 				<id>CompareIntegers_2</id>
 				<slots>
@@ -400,16 +400,27 @@
 				</slots>
 			</block>
 			<block>
-				<class>CompareVehicles</class>
-				<id>CompareVehicles_8</id>
-			</block>
-			<block>
 				<class>IsVehicleValid</class>
 				<id>IsVehicleValid_1</id>
 			</block>
 			<block>
 				<class>CompareVehicles</class>
+				<id>CompareVehicles_8</id>
+			</block>
+			<block>
+				<class>CompareVehicles</class>
 				<id>CompareVehicles_3</id>
+			</block>
+			<block>
+				<class>And</class>
+				<id>And_2</id>
+				<params>
+					<param>
+						2
+						<name>Input Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
 			</block>
 			<block>
 				<class>MacroOutput</class>
@@ -426,6 +437,10 @@
 						<type>TypeT</type>
 					</param>
 				</params>
+			</block>
+			<block>
+				<class>IsVehicleValid</class>
+				<id>IsVehicleValid_2</id>
 			</block>
 			<block>
 				<class>GetVariable</class>
@@ -980,10 +995,10 @@
 				<output>greater</output>
 			</connection>
 			<connection>
-				<from>OnAnyVehicleDestroyed_1</from>
+				<from>If_12</from>
 				<input>input</input>
 				<to>If_20</to>
-				<output>onDestroyed</output>
+				<output>true</output>
 			</connection>
 			<connection>
 				<from>CompareVehicles_8</from>
@@ -992,13 +1007,13 @@
 				<output>res</output>
 			</connection>
 			<connection>
-				<from>If_20</from>
+				<from>OnAnyVehicleDestroyed_1</from>
 				<input>input</input>
 				<to>If_12</to>
-				<output>false</output>
+				<output>onDestroyed</output>
 			</connection>
 			<connection>
-				<from>IsVehicleValid_1</from>
+				<from>And_2</from>
 				<input>value</input>
 				<to>If_12</to>
 				<output>res</output>
@@ -1010,10 +1025,10 @@
 				<output>true</output>
 			</connection>
 			<connection>
-				<from>If_12</from>
+				<from>If_20</from>
 				<input>input</input>
 				<to>If_1</to>
-				<output>true</output>
+				<output>false</output>
 			</connection>
 			<connection>
 				<from>CompareVehicles_3</from>
@@ -1035,6 +1050,12 @@
 			</connection>
 			<connection>
 				<from>OnAnyVehicleDestroyed_1</from>
+				<input>vehicle</input>
+				<to>IsVehicleValid_1</to>
+				<output>target</output>
+			</connection>
+			<connection>
+				<from>OnAnyVehicleDestroyed_1</from>
 				<input>a</input>
 				<to>CompareVehicles_8</to>
 				<output>target</output>
@@ -1047,12 +1068,6 @@
 			</connection>
 			<connection>
 				<from>OnAnyVehicleDestroyed_1</from>
-				<input>vehicle</input>
-				<to>IsVehicleValid_1</to>
-				<output>attacker</output>
-			</connection>
-			<connection>
-				<from>OnAnyVehicleDestroyed_1</from>
 				<input>a</input>
 				<to>CompareVehicles_3</to>
 				<output>attacker</output>
@@ -1062,6 +1077,18 @@
 				<input>b</input>
 				<to>CompareVehicles_3</to>
 				<output>vehicle</output>
+			</connection>
+			<connection>
+				<from>IsVehicleValid_1</from>
+				<input>i1</input>
+				<to>And_2</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>IsVehicleValid_2</from>
+				<input>i2</input>
+				<to>And_2</to>
+				<output>res</output>
 			</connection>
 			<connection>
 				<from>If_12</from>
@@ -1074,6 +1101,12 @@
 				<input>onArenaKill</input>
 				<to>MacroOutput_12</to>
 				<output>false</output>
+			</connection>
+			<connection>
+				<from>OnAnyVehicleDestroyed_1</from>
+				<input>vehicle</input>
+				<to>IsVehicleValid_2</to>
+				<output>attacker</output>
 			</connection>
 			<connection>
 				<from>ArenaPeriodStartEvent_1</from>

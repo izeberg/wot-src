@@ -8,6 +8,8 @@ package net.wg.gui.battle.comp7.VO.daapi
       
       public var role:String = "";
       
+      public var roleSkillTooltipId:String = "";
+      
       public var skillLevel:uint = 0;
       
       public var rank:String = "";

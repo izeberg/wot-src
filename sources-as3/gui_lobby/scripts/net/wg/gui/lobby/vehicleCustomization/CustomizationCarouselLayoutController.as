@@ -16,8 +16,6 @@ package net.wg.gui.lobby.vehicleCustomization
       
       private static const BOOK_MARK_WIDTH_OFFSET:int = -3;
       
-      private static const FILTER_OFFSET_X:int = 40;
-      
       private static const BOOK_MARK_HORIZONTAL_SHIFT:int = -3;
       
       private static const BOOK_MARK_VERTICAL_SHIFT:int = -23;
@@ -48,6 +46,8 @@ package net.wg.gui.lobby.vehicleCustomization
       private var _contentWidth:Number = 0;
       
       private var _contentHeight:Number = 0;
+      
+      private var _leftPanelOffset:int = 0;
       
       public function CustomizationCarouselLayoutController(param1:IScroller)
       {
@@ -83,6 +83,7 @@ package net.wg.gui.lobby.vehicleCustomization
          var _loc13_:Rectangle = null;
          var _loc14_:Number = NaN;
          var _loc15_:int = 0;
+         var _loc16_:int = 0;
          this._itemLayouts.splice(0,this._itemLayouts.length);
          this._bookmarkLayouts.splice(0,this._bookmarkLayouts.length);
          this._separatorsLayouts.splice(0,this._separatorsLayouts.length);
@@ -144,9 +145,10 @@ package net.wg.gui.lobby.vehicleCustomization
             if(_loc14_ < this._scrollList.width)
             {
                _loc15_ = (this._scrollList.width - _loc14_ >> 1) - this._itemLayouts[0].x;
-               if(_loc15_ > FILTER_OFFSET_X)
+               _loc16_ = this._leftPanelOffset >> 1;
+               if(_loc15_ > _loc16_)
                {
-                  _loc15_ -= FILTER_OFFSET_X;
+                  _loc15_ -= _loc16_;
                }
                for each(_loc4_ in this._itemLayouts)
                {
@@ -272,6 +274,12 @@ package net.wg.gui.lobby.vehicleCustomization
          this._bookmarkData = param1.bookmarks;
          this._arrowsData = param1.arrows;
          this._showSeparators = param1.showSeparators;
+         this._layoutValid = false;
+      }
+      
+      public function setLeftPanelOffset(param1:int) : void
+      {
+         this._leftPanelOffset = param1;
          this._layoutValid = false;
       }
       

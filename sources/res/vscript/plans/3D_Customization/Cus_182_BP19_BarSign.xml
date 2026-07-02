@@ -368,12 +368,19 @@
 				</slots>
 			</block>
 			<block>
-				<class>IsVehicleValid</class>
-				<id>IsVehicleValid_1</id>
-			</block>
-			<block>
 				<class>CompareVehicles</class>
 				<id>CompareVehicles_8</id>
+			</block>
+			<block>
+				<class>And</class>
+				<id>And_2</id>
+				<params>
+					<param>
+						2
+						<name>Input Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
 			</block>
 			<block>
 				<class>GetVariable</class>
@@ -386,6 +393,10 @@
 						<type>TypeT</type>
 					</param>
 				</params>
+			</block>
+			<block>
+				<class>IsVehicleValid</class>
+				<id>IsVehicleValid_1</id>
 			</block>
 			<block>
 				<class>GetVariable</class>
@@ -402,6 +413,10 @@
 			<block>
 				<class>CompareVehicles</class>
 				<id>CompareVehicles_1</id>
+			</block>
+			<block>
+				<class>IsVehicleValid</class>
+				<id>IsVehicleValid_2</id>
 			</block>
 			<block>
 				<class>GameObjectToVehicle</class>
@@ -498,10 +513,10 @@
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>OnAnyVehicleDestroyed_1</from>
+				<from>If_1</from>
 				<input>input</input>
 				<to>If_20</to>
-				<output>onDestroyed</output>
+				<output>true</output>
 			</connection>
 			<connection>
 				<from>CompareVehicles_8</from>
@@ -510,22 +525,22 @@
 				<output>res</output>
 			</connection>
 			<connection>
-				<from>If_20</from>
+				<from>OnAnyVehicleDestroyed_1</from>
 				<input>input</input>
 				<to>If_1</to>
-				<output>false</output>
+				<output>onDestroyed</output>
 			</connection>
 			<connection>
-				<from>IsVehicleValid_1</from>
+				<from>And_2</from>
 				<input>value</input>
 				<to>If_1</to>
 				<output>res</output>
 			</connection>
 			<connection>
-				<from>If_1</from>
+				<from>If_20</from>
 				<input>input</input>
 				<to>If_2</to>
-				<output>true</output>
+				<output>false</output>
 			</connection>
 			<connection>
 				<from>CompareVehicles_1</from>
@@ -595,12 +610,6 @@
 			</connection>
 			<connection>
 				<from>OnAnyVehicleDestroyed_1</from>
-				<input>vehicle</input>
-				<to>IsVehicleValid_1</to>
-				<output>attacker</output>
-			</connection>
-			<connection>
-				<from>OnAnyVehicleDestroyed_1</from>
 				<input>a</input>
 				<to>CompareVehicles_8</to>
 				<output>target</output>
@@ -612,6 +621,24 @@
 				<output>vehicle</output>
 			</connection>
 			<connection>
+				<from>IsVehicleValid_1</from>
+				<input>i1</input>
+				<to>And_2</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>IsVehicleValid_2</from>
+				<input>i2</input>
+				<to>And_2</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>OnAnyVehicleDestroyed_1</from>
+				<input>vehicle</input>
+				<to>IsVehicleValid_1</to>
+				<output>attacker</output>
+			</connection>
+			<connection>
 				<from>OnAnyVehicleDestroyed_1</from>
 				<input>a</input>
 				<to>CompareVehicles_1</to>
@@ -622,6 +649,12 @@
 				<input>b</input>
 				<to>CompareVehicles_1</to>
 				<output>vehicle</output>
+			</connection>
+			<connection>
+				<from>OnAnyVehicleDestroyed_1</from>
+				<input>vehicle</input>
+				<to>IsVehicleValid_2</to>
+				<output>target</output>
 			</connection>
 			<connection>
 				<from>GetVehicleGameObject_1</from>

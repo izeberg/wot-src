@@ -192,6 +192,7 @@ package net.wg.gui.lobby.vehicleCustomization
          var _loc3_:int = param2 + OFFSET_ARROW + EXTRA_OFFSET + this.leftOffset;
          var _loc4_:int = param1 - _loc3_ - OFFSET_ARROW;
          _loc5_ = _loc4_ + leftArrowOffset - rightArrowOffset;
+         this._layoutController.setLeftPanelOffset(EXTRA_OFFSET + this.leftOffset);
          if(this.shopEntryPointBtn)
          {
             this.shopEntryPointBtn.x = SHOP_ENTRY_X;

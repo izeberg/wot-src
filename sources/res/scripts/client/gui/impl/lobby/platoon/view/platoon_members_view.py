@@ -122,7 +122,6 @@ class SquadMembersView(ViewImpl, CallbackDelayer):
         self._updateMembers()
 
     def _initialize(self, *args, **kwargs):
-        self.__setPreBattleCarouselOpened(True)
         self.__setPreBattleCarouselFocus(True)
 
     def _finalize(self):
@@ -130,6 +129,12 @@ class SquadMembersView(ViewImpl, CallbackDelayer):
         self.__setPreBattleCarouselOpened(False)
         self.__setPreBattleCarouselFocus(False)
         self.clearCallbacks()
+
+    def _onShown(self):
+        self.__setPreBattleCarouselOpened(True)
+
+    def _onHidden(self):
+        self.__setPreBattleCarouselOpened(False)
 
     def _addSubviewToLayout(self, subview):
         self.setChildView(subview.layoutID, subview)

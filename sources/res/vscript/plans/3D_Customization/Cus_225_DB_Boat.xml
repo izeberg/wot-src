@@ -51,10 +51,6 @@
 			</block>
 			<block>
 				<class>If</class>
-				<id>If_21</id>
-			</block>
-			<block>
-				<class>If</class>
 				<id>If_22</id>
 			</block>
 			<block>
@@ -70,6 +66,10 @@
 						<const>\true\</const>
 					</slot>
 				</slots>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_21</id>
 			</block>
 			<block>
 				<class>ComponentMethod</class>
@@ -191,10 +191,6 @@
 				</slots>
 			</block>
 			<block>
-				<class>IsVehicleValid</class>
-				<id>IsVehicleValid_2</id>
-			</block>
-			<block>
 				<class>ComponentMethod</class>
 				<id>ComponentMethod_22</id>
 				<params>
@@ -216,8 +212,19 @@
 				</slots>
 			</block>
 			<block>
-				<class>CompareVehicles</class>
-				<id>CompareVehicles_9</id>
+				<class>IsVehicleValid</class>
+				<id>IsVehicleValid_2</id>
+			</block>
+			<block>
+				<class>And</class>
+				<id>And_2</id>
+				<params>
+					<param>
+						2
+						<name>Input Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
 			</block>
 			<block>
 				<class>CompareVehicles</class>
@@ -252,6 +259,14 @@
 				</params>
 			</block>
 			<block>
+				<class>CompareVehicles</class>
+				<id>CompareVehicles_9</id>
+			</block>
+			<block>
+				<class>IsVehicleValid</class>
+				<id>IsVehicleValid_1</id>
+			</block>
+			<block>
 				<class>GetVehicleGameObject</class>
 				<id>GetVehicleGameObject_1</id>
 			</block>
@@ -262,10 +277,10 @@
 		</blocks>
 		<connections>
 			<connection>
-				<from>OnAnyVehicleDestroyed_2</from>
+				<from>If_21</from>
 				<input>input</input>
 				<to>If_20</to>
-				<output>onDestroyed</output>
+				<output>true</output>
 			</connection>
 			<connection>
 				<from>CompareVehicles_9</from>
@@ -276,20 +291,8 @@
 			<connection>
 				<from>If_20</from>
 				<input>input</input>
-				<to>If_21</to>
-				<output>false</output>
-			</connection>
-			<connection>
-				<from>IsVehicleValid_2</from>
-				<input>value</input>
-				<to>If_21</to>
-				<output>res</output>
-			</connection>
-			<connection>
-				<from>If_21</from>
-				<input>input</input>
 				<to>If_22</to>
-				<output>true</output>
+				<output>false</output>
 			</connection>
 			<connection>
 				<from>CompareVehicles_8</from>
@@ -308,6 +311,18 @@
 				<input>value</input>
 				<to>If_13</to>
 				<output>value</output>
+			</connection>
+			<connection>
+				<from>OnAnyVehicleDestroyed_2</from>
+				<input>input</input>
+				<to>If_21</to>
+				<output>onDestroyed</output>
+			</connection>
+			<connection>
+				<from>And_2</from>
+				<input>value</input>
+				<to>If_21</to>
+				<output>res</output>
 			</connection>
 			<connection>
 				<from>SetVariable_2</from>
@@ -382,12 +397,6 @@
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>OnAnyVehicleDestroyed_2</from>
-				<input>vehicle</input>
-				<to>IsVehicleValid_2</to>
-				<output>attacker</output>
-			</connection>
-			<connection>
 				<from>SetVariable_4</from>
 				<input>in</input>
 				<to>ComponentMethod_22</to>
@@ -398,6 +407,36 @@
 				<input>gameObject</input>
 				<to>ComponentMethod_22</to>
 				<output>value</output>
+			</connection>
+			<connection>
+				<from>OnAnyVehicleDestroyed_2</from>
+				<input>vehicle</input>
+				<to>IsVehicleValid_2</to>
+				<output>attacker</output>
+			</connection>
+			<connection>
+				<from>IsVehicleValid_2</from>
+				<input>i1</input>
+				<to>And_2</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>IsVehicleValid_1</from>
+				<input>i2</input>
+				<to>And_2</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>OnAnyVehicleDestroyed_2</from>
+				<input>a</input>
+				<to>CompareVehicles_8</to>
+				<output>attacker</output>
+			</connection>
+			<connection>
+				<from>GameObjectToVehicle_2</from>
+				<input>b</input>
+				<to>CompareVehicles_8</to>
+				<output>vehicle</output>
 			</connection>
 			<connection>
 				<from>OnAnyVehicleDestroyed_2</from>
@@ -413,15 +452,9 @@
 			</connection>
 			<connection>
 				<from>OnAnyVehicleDestroyed_2</from>
-				<input>a</input>
-				<to>CompareVehicles_8</to>
-				<output>attacker</output>
-			</connection>
-			<connection>
-				<from>GameObjectToVehicle_2</from>
-				<input>b</input>
-				<to>CompareVehicles_8</to>
-				<output>vehicle</output>
+				<input>vehicle</input>
+				<to>IsVehicleValid_1</to>
+				<output>target</output>
 			</connection>
 			<connection>
 				<from>ContextGetSelf_1</from>
