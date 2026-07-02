@@ -75,22 +75,22 @@
 	</camouflage>
 	<hull>
 		<armor>
-			<armor_1>170</armor_1>
-			<armor_2>280</armor_2>
+			<armor_1>200</armor_1>
+			<armor_2>300</armor_2>
 			<armor_3>80</armor_3>
 			<armor_4>50</armor_4>
-			<armor_5>35</armor_5>
-			<armor_6>52</armor_6>
-			<armor_7>145</armor_7>
+			<armor_5>50</armor_5>
+			<armor_6>90</armor_6>
+			<armor_7>180</armor_7>
 			<armor_8>0</armor_8>
 			<armor_9>90</armor_9>
 			<armor_10>25</armor_10>
-			<armor_11>70</armor_11>
+			<armor_11>80</armor_11>
 			<armor_12>55</armor_12>
 			<armor_13>35</armor_13>
-			<armor_14>50</armor_14>
-			<armor_15>25</armor_15>
-			<armor_16>25</armor_16>
+			<armor_14>150</armor_14>
+			<armor_15>50</armor_15>
+			<armor_16>50</armor_16>
 			<armor_17>200</armor_17>
 			<armor_18>140</armor_18>
 			<armor_19>125</armor_19>
@@ -1524,7 +1524,7 @@
 			</terrainResistance>
 			<brakeForce>60000</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>26</rotationSpeed>
+			<rotationSpeed>30</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.12
@@ -3370,8 +3370,8 @@
 				<armor_2>210</armor_2>
 				<armor_3>160</armor_3>
 				<armor_4>100</armor_4>
-				<armor_5>35</armor_5>
-				<armor_6>52</armor_6>
+				<armor_5>50</armor_5>
+				<armor_6>70</armor_6>
 				<armor_7>125</armor_7>
 				<armor_8>0</armor_8>
 				<armor_9>195</armor_9>
@@ -3428,7 +3428,7 @@
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_1>
 						<armor_2>
-							100
+							145
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_2>
 						<armor_3>
@@ -3440,7 +3440,7 @@
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_4>
 						<armor_5>
-							150
+							175
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_5>
 						<armor_6>
@@ -3520,7 +3520,10 @@
 						0.28
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>10</reloadTime>
+					<reloadTime>
+						9.4
+						<!--BW_String-->
+					</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
 							0.1
@@ -3542,11 +3545,11 @@
 					</invisibilityFactorAtShot>
 					<dualAccuracy>
 						<afterShotDispersionRadius>
-							0.42
+							0.38
 							<!--BW_String-->
 						</afterShotDispersionRadius>
 						<coolingDelay>
-							13.8
+							12.4
 							<!--BW_String-->
 						</coolingDelay>
 					</dualAccuracy>
@@ -4844,19 +4847,19 @@
 					<grounds>
 						<soft>
 							<rollingFriction>
-								0.18515
+								0.12515
 								<!--BW_String-->
 							</rollingFriction>
 						</soft>
 						<medium>
 							<rollingFriction>
-								0.10465
+								0.06465
 								<!--BW_String-->
 							</rollingFriction>
 						</medium>
 						<firm>
 							<rollingFriction>
-								0.08855
+								0.02855
 								<!--BW_String-->
 							</rollingFriction>
 						</firm>
@@ -4874,8 +4877,8 @@
 			<on>strv_siege_mode_on_PC</on>
 			<off>strv_siege_mode_off_PC</off>
 		</soundStateChange>
-		<autoSwitchOffRequiredVehicleSpeed>23</autoSwitchOffRequiredVehicleSpeed>
-		<autoSwitchOnRequiredVehicleSpeed>23</autoSwitchOnRequiredVehicleSpeed>
+		<autoSwitchOffRequiredVehicleSpeed>25</autoSwitchOffRequiredVehicleSpeed>
+		<autoSwitchOnRequiredVehicleSpeed>25</autoSwitchOnRequiredVehicleSpeed>
 	</siege_mode>
 	<hull_aiming>
 		<pitch>

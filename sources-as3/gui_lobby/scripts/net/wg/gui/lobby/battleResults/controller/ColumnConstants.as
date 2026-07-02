@@ -31,6 +31,10 @@ package net.wg.gui.lobby.battleResults.controller
       
       public static const PRESTIGE_POINTS:String = "prestigePoints";
       
+      public static const FORT_RESOURCE:String = "resourceCount";
+      
+      public static const GIFT_SYSTEM:String = "giftSystem";
+      
       public static const MEDAL:String = "medal";
       
       public static const KEY_PREBATTLE_ID:String = "prebattleID";

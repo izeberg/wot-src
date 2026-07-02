@@ -1615,12 +1615,11 @@ SYS_MESSAGE_TYPE = Enumeration('systemMessageType', [
  'paragonsChapterComplete',
  'battlePassCapReset',
  'prbVehicleMaxFlamethrowerKick',
- 'playStreakRewards',
- 'playStreakSysMessage',
- 'playStreakSysWithRewardsMessage',
  'armoryYardRevertRerollMessage',
  'tradingCaravanMessage',
- 'immediatelyOpenBoxReward'])
+ 'immediatelyOpenBoxReward',
+ 'excludedMapSlotKillSwitch',
+ 'bonusExcludedMapPremium'])
 SYS_MESSAGE_IMPORTANCE = Enumeration('systemMessageImportance', [
  'normal',
  'high'])

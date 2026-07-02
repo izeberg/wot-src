@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/british/GB138_FV246_Colossus/normal/lod2/Chassis</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.799544 -0.000180 -3.817236</min>
+		<max>1.799544 0.987944 3.782920</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/british/GB138_FV246_Colossus/normal/lod1/Chassis</nodefullVisual>
+</root>

@@ -78,7 +78,7 @@
 	<hull>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>5500</weight>
-		<maxHealth>380</maxHealth>
+		<maxHealth>450</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>130</maxHealth>
 			<maxRegenHealth>90</maxRegenHealth>
@@ -3160,7 +3160,7 @@
 				</right>
 			</physicalTracks>
 			<repairTime>
-				5.71428585
+				2.28001642
 				<!--BW_String-->
 			</repairTime>
 		</Chassis_A154_Convertible_Medium_Tank_T3E2>

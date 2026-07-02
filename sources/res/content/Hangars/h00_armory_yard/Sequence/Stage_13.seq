@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<duration>7.000000</duration>
+	<duration>7.190000</duration>
 	<sequenceObject>
 		<name>Root</name>
 		<type>model</type>
@@ -14,7 +14,7 @@
 			<type>attach</type>
 			<frame>
 				<startTime>0.000000</startTime>
-				<duration>5.766667</duration>
+				<duration>7.190000</duration>
 				<value>Root|</value>
 			</frame>
 		</track>
@@ -23,33 +23,19 @@
 			<type>vector3</type>
 			<frame>
 				<startTime>0.000000</startTime>
-				<value>0.863936 1.102255 -2.613474</value>
+				<value>0.612508 1.267051 -1.978745</value>
 				<inTangent>0.000000 0.000000 0.000000</inTangent>
 				<outTangent>0.000000 0.000000 0.000000</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
-			<frame>
-				<startTime>3.233334</startTime>
-				<value>0.863936 1.102255 -2.613474</value>
-				<inTangent>-0.000000 -0.000000 -0.000000</inTangent>
-				<outTangent>-0.682284 0.000000 4.896140</outTangent>
-				<tangentMode>257</tangentMode>
-			</frame>
-			<frame>
-				<startTime>3.366667</startTime>
-				<value>0.772965 1.102255 -1.960657</value>
-				<inTangent>-0.682284 -0.000000 4.896140</inTangent>
-				<outTangent>-0.682284 -0.000000 4.896140</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
 		</track>
 		<track>
-			<name>ay_ep_08_seq_stage_13</name>
+			<name>ay_ep_09_seq_stage_13</name>
 			<type>sound</type>
 			<frame>
 				<startTime>0.000000</startTime>
-				<duration>6.753250</duration>
-				<sequenceSound>ay_ep_08_seq_stage_13</sequenceSound>
+				<duration>7.181750</duration>
+				<sequenceSound>ay_seq_stage_13</sequenceSound>
 				<type>play_till_end</type>
 				<fade>0.000000</fade>
 			</frame>
@@ -58,7 +44,8 @@
 	<sequenceObject>
 		<name>stg_13_Accum_01</name>
 		<type>model</type>
-		<resource>content/Hangars/h00_armory_yard/environment/Constructor/A176_OTAC_LK_7605/normal/lod0/stg_13_Accum_01_xray.model</resource>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/GB142_FV249_Castle/normal/lod0/stg_13_Oil_01_xray.model</resource>
+		<castsShadow>false</castsShadow>
 		<track>
 			<name>visibility</name>
 			<type>bool</type>
@@ -136,7 +123,8 @@
 	<sequenceObject>
 		<name>stg_13_Accum_02</name>
 		<type>model</type>
-		<resource>content/Hangars/h00_armory_yard/environment/Constructor/A176_OTAC_LK_7605/normal/lod0/stg_13_Accum_02_xray.model</resource>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/GB142_FV249_Castle/normal/lod0/stg_13_Oil_02_xray.model</resource>
+		<castsShadow>false</castsShadow>
 		<track>
 			<name>visibility</name>
 			<type>bool</type>

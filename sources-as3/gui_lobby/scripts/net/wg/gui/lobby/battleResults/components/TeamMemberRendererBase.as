@@ -18,13 +18,13 @@ package net.wg.gui.lobby.battleResults.components
       protected static const DEFAULT_TEAM_KILLER_COLOR:int = 65535;
        
       
-      private var _vo:TeamMemberItemVO = null;
-      
       private var _commonStatsVO:CommonStatsVO = null;
       
       private var _isDataChanged:Boolean;
       
       private var _isCommonStatsVOChanged:Boolean;
+      
+      protected var _vo:TeamMemberItemVO = null;
       
       public function TeamMemberRendererBase()
       {

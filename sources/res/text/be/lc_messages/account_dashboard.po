@@ -24,20 +24,28 @@ msgid "close"
 msgstr "ЗАКРЫЦЬ"
 
 msgid "excludedMaps/cooldownTooltipBody"
-msgstr "Замяніць гэту мапу можна праз {cooldownStr}."
+msgstr "Заменить эту карту можно через {cooldownStr}"
 
 msgid "excludedMaps/cooldownTooltipHeader"
 msgstr "Замена мапы недаступная"
 
-msgid "excludedMaps/disabledTooltipBody"
+msgid "excludedMaps/disabledTooltipBody/defaultSlots"
+msgstr "Слот для исключения дополнительной карты временно недоступен."
+
+msgid "excludedMaps/disabledTooltipBody/premiumSlots"
 msgstr ""
 "Слот для выключэння дадатковай мапы даступны толькі пры актыўным Танкавым "
 "прэміум акаўнце."
 
-msgid "excludedMaps/disabledTooltipBodyWotPlus"
+msgid "excludedMaps/disabledTooltipBody/rewardsSlots"
 msgstr ""
-"Слот для выключэння дадатковай мапы даступны толькі пры актыўным Танкавым "
-"прэміум акаўнце."
+"Слот для исключения дополнительной карты можно получить за активное участие "
+"в крупных событиях и за выполнение определённых боевых задач."
+
+msgid "excludedMaps/disabledTooltipBody/subscrbSlots"
+msgstr ""
+"Слот для исключения дополнительной карты доступен только при активной "
+"подписке."
 
 msgid "excludedMaps/disabledTooltipHeader"
 msgstr "Слот недаступны"
@@ -53,11 +61,14 @@ msgstr "Замена мапы даступная"
 
 msgid "excludedMaps/selectTooltipBody"
 msgstr ""
-"Выберыце мапу са спіса ніжэй, каб выключыць яе з Выпадковых баёў (для "
-"падрэжыму «Звычайны бой»)."
+"Выберите карту, чтобы исключить её из ротации Случайных боёв (только для "
+"типа боя «Стандартный бой»)."
 
 msgid "excludedMaps/selectTooltipHeader"
 msgstr "Мапа не выбрана"
+
+msgid "excludedMaps/timerTooltipDescription"
+msgstr "Срок действия слота:"
 
 msgid "header/badgeTooltip"
 msgstr ""

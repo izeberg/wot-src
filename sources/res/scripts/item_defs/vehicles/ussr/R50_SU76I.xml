@@ -113,7 +113,7 @@
 		</armor>
 		<primaryArmor>armor_10 armor_3 armor_4</primaryArmor>
 		<weight>13325</weight>
-		<maxHealth>228</maxHealth>
+		<maxHealth>450</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>90</maxHealth>
 			<maxRegenHealth>60</maxRegenHealth>
@@ -4941,7 +4941,7 @@
 				</customizableVehicleAreas>
 			</customization>
 			<repairTime>
-				5.71428585
+				2.28001642
 				<!--BW_String-->
 			</repairTime>
 		</Chassis_SU76I>
@@ -4957,7 +4957,7 @@
 				<armor_1>0</armor_1>
 			</armor>
 			<weight>100</weight>
-			<maxHealth>57</maxHealth>
+			<maxHealth>60</maxHealth>
 			<rotationSpeed>42</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>100</maxHealth>

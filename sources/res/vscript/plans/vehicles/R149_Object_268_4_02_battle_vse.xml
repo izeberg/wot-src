@@ -396,6 +396,12 @@
 				</slots>
 			</block>
 			<block>
+				<class>IsVehicleValid</class>
+				<id>IsVehicleValid_1</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
 				<class>ComponentMethod</class>
 				<id>ComponentMethod_2</id>
 				<params>
@@ -436,6 +442,30 @@
 						<const>\0\</const>
 					</slot>
 				</slots>
+			</block>
+			<block>
+				<class>And</class>
+				<id>And_1</id>
+				<params>
+					<param>
+						2
+						<name>Input Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>GetVehicleGameObject</class>
+				<id>GetVehicleGameObject_1</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>GameObjectToVehicle</class>
+				<id>GameObjectToVehicle_2</id>
+				<params/>
+				<slots/>
 			</block>
 			<block>
 				<class>GetVariable</class>
@@ -534,14 +564,14 @@
 				</slots>
 			</block>
 			<block>
-				<class>OnAnyVehicleShoot</class>
-				<id>OnAnyVehicleShoot_1</id>
+				<class>If</class>
+				<id>If_2</id>
 				<params/>
 				<slots/>
 			</block>
 			<block>
-				<class>If</class>
-				<id>If_2</id>
+				<class>OnAnyVehicleShoot</class>
+				<id>OnAnyVehicleShoot_1</id>
 				<params/>
 				<slots/>
 			</block>
@@ -622,8 +652,8 @@
 				<slots/>
 			</block>
 			<block>
-				<class>CompareVehicles</class>
-				<id>CompareVehicles_1</id>
+				<class>IsVehicleValid</class>
+				<id>IsVehicleValid_2</id>
 				<params/>
 				<slots/>
 			</block>
@@ -705,9 +735,15 @@
 				<slots/>
 			</block>
 			<block>
-				<class>GameObjectToVehicle</class>
-				<id>GameObjectToVehicle_2</id>
-				<params/>
+				<class>And</class>
+				<id>And_2</id>
+				<params>
+					<param>
+						3
+						<name>Input Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
 				<slots/>
 			</block>
 			<block>
@@ -721,6 +757,12 @@
 						<type>TypeT</type>
 					</param>
 				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>IsVehicleValid</class>
+				<id>IsVehicleValid_3</id>
+				<params/>
 				<slots/>
 			</block>
 			<block>
@@ -763,8 +805,21 @@
 				<slots/>
 			</block>
 			<block>
-				<class>GetVehicleGameObject</class>
-				<id>GetVehicleGameObject_1</id>
+				<class>GetVariable</class>
+				<id>GetVariable_16</id>
+				<buddy>Variable_1</buddy>
+				<params>
+					<param>
+						VehicleT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>CompareVehicles</class>
+				<id>CompareVehicles_1</id>
 				<params/>
 				<slots/>
 			</block>
@@ -891,7 +946,7 @@
 				<output>exec</output>
 			</connection>
 			<connection>
-				<from>Not_1</from>
+				<from>And_1</from>
 				<input>value</input>
 				<to>If_1</to>
 				<output>res</output>
@@ -933,6 +988,12 @@
 				<output>value</output>
 			</connection>
 			<connection>
+				<from>GetVariable_3</from>
+				<input>vehicle</input>
+				<to>IsVehicleValid_1</to>
+				<output>value</output>
+			</connection>
+			<connection>
 				<from>SetVariable_2</from>
 				<input>in</input>
 				<to>ComponentMethod_2</to>
@@ -967,6 +1028,30 @@
 				<input>arg#1</input>
 				<to>ComponentMethod_1</to>
 				<output>res</output>
+			</connection>
+			<connection>
+				<from>IsVehicleValid_1</from>
+				<input>i1</input>
+				<to>And_1</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>Not_1</from>
+				<input>i2</input>
+				<to>And_1</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>GetVehicleGameObject_1</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>GetVehicleGameObject_1</from>
+				<input>gameObject</input>
+				<to>GameObjectToVehicle_2</to>
+				<output>vehicleObject</output>
 			</connection>
 			<connection>
 				<from>GetVariable_1</from>
@@ -1017,7 +1102,7 @@
 				<output>out</output>
 			</connection>
 			<connection>
-				<from>CompareVehicles_1</from>
+				<from>And_2</from>
 				<input>value</input>
 				<to>If_2</to>
 				<output>res</output>
@@ -1084,14 +1169,8 @@
 			</connection>
 			<connection>
 				<from>OnAnyVehicleShoot_1</from>
-				<input>a</input>
-				<to>CompareVehicles_1</to>
-				<output>vehicle</output>
-			</connection>
-			<connection>
-				<from>GameObjectToVehicle_2</from>
-				<input>b</input>
-				<to>CompareVehicles_1</to>
+				<input>vehicle</input>
+				<to>IsVehicleValid_2</to>
 				<output>vehicle</output>
 			</connection>
 			<connection>
@@ -1125,15 +1204,39 @@
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>GetVehicleGameObject_1</from>
-				<input>gameObject</input>
-				<to>GameObjectToVehicle_2</to>
-				<output>vehicleObject</output>
+				<from>IsVehicleValid_2</from>
+				<input>i1</input>
+				<to>And_2</to>
+				<output>res</output>
 			</connection>
 			<connection>
-				<from>ContextGetSelf_1</from>
-				<input>gameObject</input>
-				<to>GetVehicleGameObject_1</to>
+				<from>IsVehicleValid_3</from>
+				<input>i2</input>
+				<to>And_2</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>CompareVehicles_1</from>
+				<input>i3</input>
+				<to>And_2</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>GetVariable_16</from>
+				<input>vehicle</input>
+				<to>IsVehicleValid_3</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>OnAnyVehicleShoot_1</from>
+				<input>a</input>
+				<to>CompareVehicles_1</to>
+				<output>vehicle</output>
+			</connection>
+			<connection>
+				<from>GetVariable_16</from>
+				<input>b</input>
+				<to>CompareVehicles_1</to>
 				<output>value</output>
 			</connection>
 		</connections>

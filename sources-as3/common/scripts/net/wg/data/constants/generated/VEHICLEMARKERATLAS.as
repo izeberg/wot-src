@@ -383,6 +383,8 @@ package net.wg.data.constants.generated
       
       public static const FRANCE_F12_HOTCHKISS_H35:String = "france-F12_Hotchkiss_H35";
       
+      public static const FRANCE_F121_G1_L:String = "france-F121_G1L";
+      
       public static const FRANCE_F123_ERAC_105_PROTO:String = "france-F123_ERAC_105_Proto";
       
       public static const FRANCE_F124_AMX_13_FL11:String = "france-F124_AMX_13FL11";
@@ -774,6 +776,8 @@ package net.wg.data.constants.generated
       public static const GERMANY_G194_E_50_GT_ALKETT_PROD:String = "germany-G194_E_50_GT_Alkett_Prod";
       
       public static const GERMANY_G196_E_75_AUSF_B_DOPPEL:String = "germany-G196_E_75_Ausf_B_Doppel";
+      
+      public static const GERMANY_G197_E_94_FECHTER:String = "germany-G197_E_94_Fechter";
       
       public static const GERMANY_G20_MARDER_II:String = "germany-G20_Marder_II";
       
@@ -1789,6 +1793,8 @@ package net.wg.data.constants.generated
       
       public static const SWEDEN_S34_LAGO_M38:String = "sweden-S34_Lago_M38";
       
+      public static const SWEDEN_S35_VH_105_X60_ALT_II:String = "sweden-S35_VH_105_X60_alt_II";
+      
       public static const SWEDEN_S36_VK_155_PROJEKT:String = "sweden-S36_VK_155_Projekt";
       
       public static const SWEDEN_S37_AKV_151:String = "sweden-S37_AKV_151";
@@ -1899,6 +1905,8 @@ package net.wg.data.constants.generated
       
       public static const UK_GB130_FV225:String = "uk-GB130_FV225";
       
+      public static const UK_GB131_CRUSHER:String = "uk-GB131_Crusher";
+      
       public static const UK_GB133_CYCLONE_MK_2:String = "uk-GB133_Cyclone_Mk_2";
       
       public static const UK_GB134_FV242_B_CONDOR:String = "uk-GB134_FV242B_Condor";
@@ -1912,6 +1920,8 @@ package net.wg.data.constants.generated
       public static const UK_GB136_FV245:String = "uk-GB136_FV245";
       
       public static const UK_GB137_CVT_SPIDER:String = "uk-GB137_CVT_Spider";
+      
+      public static const UK_GB138_FV246_COLOSSUS:String = "uk-GB138_FV246_Colossus";
       
       public static const UK_GB139_VULCAN:String = "uk-GB139_Vulcan";
       
@@ -2286,6 +2296,8 @@ package net.wg.data.constants.generated
       public static const USA_A18_M41:String = "usa-A18_M41";
       
       public static const USA_A182_ALRS_M6:String = "usa-A182_ALRS_M6";
+      
+      public static const USA_A184_HTPC:String = "usa-A184_HTPC";
       
       public static const USA_A19_T2_LT:String = "usa-A19_T2_lt";
       

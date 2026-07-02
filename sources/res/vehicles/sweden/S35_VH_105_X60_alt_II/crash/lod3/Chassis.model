@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/sweden/S35_VH_105_X60_alt_II/crash/lod3/Chassis</nodefullVisual>
+	<parent>vehicles/sweden/S35_VH_105_X60_alt_II/crash/lod4/Chassis</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.380929 -0.000021 -2.614404</min>
+		<max>1.380931 0.923702 3.245781</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

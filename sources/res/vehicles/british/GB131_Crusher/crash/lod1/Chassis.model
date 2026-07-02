@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/british/GB131_Crusher/crash/lod2/Chassis</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.766823 -0.000000 -3.826702</min>
+		<max>1.772460 1.543378 4.434770</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/british/GB131_Crusher/crash/lod1/Chassis</nodefullVisual>
+</root>

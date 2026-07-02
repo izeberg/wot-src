@@ -131,6 +131,10 @@ package net.wg.gui.lobby.hangar
          this.questsFlags = null;
          this.economyWidget.dispose();
          this.economyWidget = null;
+         if(this._widget)
+         {
+            this._widget.removeEventListener(HeaderQuestsFlags.ENTRY_POINT_RESIZE,this.onEntryPointResizeHandler);
+         }
          this._widget = null;
          this.mcBackground = null;
          this._data = null;
@@ -200,7 +204,7 @@ package net.wg.gui.lobby.hangar
                   }
                }
             }
-            if(this.hasWidget(FUNRANDOM_ALIASES.FUN_RANDOM_HANGAR_WIDGET))
+            if(this.hasWidget(FUNRANDOM_ALIASES.FUN_RANDOM_HANGAR_WIDGET,FUNRANDOM_ALIASES.FUN_RANDOM_HANGAR_WIDGET))
             {
                this._widget.x = -(this._widget.width >> 1);
                this.questsFlags.flagsOffsetY = FUN_RANDOM_FLAGS_OFFSET_Y;
@@ -230,7 +234,7 @@ package net.wg.gui.lobby.hangar
          invalidateLayout();
       }
       
-      public function as_addEntryPoint(param1:String) : void
+      public function as_addEntryPoint(param1:String, param2:String) : void
       {
          this._scheduler.cancelTask(this.registerWidget);
          this._scheduler.cancelTask(this.regWidget);
@@ -241,7 +245,8 @@ package net.wg.gui.lobby.hangar
          else
          {
             this.unregisterWidget(true);
-            this._scheduler.scheduleOnNextFrame(this.registerWidget,param1);
+            param2 = param2 != null ? param2 : param1;
+            this._scheduler.scheduleOnNextFrame(this.registerWidget,param1,param2);
          }
       }
       
@@ -321,23 +326,25 @@ package net.wg.gui.lobby.hangar
          invalidateLayout();
       }
       
-      private function registerWidget(param1:String) : void
+      private function registerWidget(param1:String, param2:String) : void
       {
-         if(this.hasWidget(param1))
+         if(this.hasWidget(param1,param2))
          {
             return;
          }
-         var _loc2_:IHeaderEntryPoint = this.createWidget(param1);
-         if(!_loc2_)
+         var _loc3_:IHeaderEntryPoint = this.createWidget(param1);
+         if(!_loc3_)
          {
             return;
          }
-         _loc2_.alias = param1;
-         _loc2_.name = param1;
-         this.questsFlags.setEntryPoint(_loc2_);
-         this._widget = _loc2_;
+         _loc3_.alias = param1;
+         _loc3_.registerAlias = param2;
+         _loc3_.name = param1;
+         this.questsFlags.setEntryPoint(_loc3_);
+         this._widget = _loc3_;
+         this._widget.addEventListener(HeaderQuestsFlags.ENTRY_POINT_RESIZE,this.onEntryPointResizeHandler);
          invalidateLayout();
-         this._scheduler.scheduleTask(this.regWidget,REGISTER_WIDGET_DELAY,_loc2_,param1);
+         this._scheduler.scheduleTask(this.regWidget,REGISTER_WIDGET_DELAY,_loc3_,param2);
       }
       
       private function setQuestFlagsEntryPoint(param1:Boolean, param2:String, param3:String, param4:Boolean) : void
@@ -407,7 +414,8 @@ package net.wg.gui.lobby.hangar
          var _loc2_:String = null;
          if(this._widget)
          {
-            _loc2_ = this._widget.alias;
+            _loc2_ = this._widget.registerAlias;
+            this._widget.removeEventListener(HeaderQuestsFlags.ENTRY_POINT_RESIZE,this.onEntryPointResizeHandler);
             this.questsFlags.setEntryPoint(null);
             if(isFlashComponentRegisteredS(_loc2_))
             {
@@ -462,6 +470,8 @@ package net.wg.gui.lobby.hangar
                return new RankedBattlesHangarWidget();
             case HANGAR_ALIASES.STRONGHOLD_WIDGET:
                return new StrongholdWidget();
+            case HANGAR_ALIASES.GF_HEADER_WIDGET:
+               return new GFHeaderWidget();
             default:
                return null;
          }
@@ -480,15 +490,15 @@ package net.wg.gui.lobby.hangar
          }
       }
       
-      private function hasWidget(param1:String) : Boolean
+      private function hasWidget(param1:String, param2:String) : Boolean
       {
-         return this._widget && this._widget.alias == param1;
+         return this._widget && this._widget.alias == param1 && this._widget.registerAlias == param2;
       }
       
       private function updateSecondaryOffsets() : void
       {
          var _loc1_:Boolean = false;
-         if(this.hasWidget(HANGAR_ALIASES.EPIC_WIDGET))
+         if(this.hasWidget(HANGAR_ALIASES.EPIC_WIDGET,HANGAR_ALIASES.EPIC_WIDGET))
          {
             this._secondaryPointX = Values.ZERO;
          }

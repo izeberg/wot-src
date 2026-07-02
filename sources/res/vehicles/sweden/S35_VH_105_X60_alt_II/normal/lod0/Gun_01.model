@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.219682 -0.426514 0.158894</min>
+		<max>0.219672 0.446251 4.549000</max>
+	</visibilityBox>
+	<parent>vehicles/sweden/S35_VH_105_X60_alt_II/normal/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/sweden/S35_VH_105_X60_alt_II/normal/lod0/Gun_01</nodefullVisual>
+</root>

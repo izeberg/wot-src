@@ -4285,7 +4285,7 @@
 						<gun>40</gun>
 					</armor>
 					<aimingTime>
-						2.5
+						2.1
 						<!--BW_String-->
 					</aimingTime>
 					<shotDispersionFactors>
@@ -4307,7 +4307,7 @@
 						</maxPitch>
 					</pitchLimits>
 					<shotDispersionRadius>
-						0.35
+						0.34
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
@@ -4323,7 +4323,10 @@
 						<rate>24</rate>
 					</clip>
 					<autoreload>
-						<reloadTime>10 12 14 16</reloadTime>
+						<reloadTime>
+							10 11.5 13.5 15
+							<!--BW_String-->
+						</reloadTime>
 					</autoreload>
 					<models>
 						<undamaged>vehicles/italy/It08_Progetto_M40_mod_65/normal/lod0/Gun_01.model</undamaged>

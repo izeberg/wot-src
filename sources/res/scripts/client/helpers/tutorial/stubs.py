@@ -125,5 +125,8 @@ class StubTutorialLoader(ITutorialLoader):
     def stop(self, restore=True):
         pass
 
+    def stopTutorial(self):
+        pass
+
     def refuse(self):
         pass

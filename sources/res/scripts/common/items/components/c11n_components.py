@@ -214,7 +214,7 @@ class CamouflageItem(BaseCustomizationItem):
     itemType = CustomizationType.CAMOUFLAGE
     __slots__ = ('camoTypeIndex', 'palettes', 'compatibleParts', 'componentsCovering',
                  'invisibilityFactor', 'tiling', 'tilingSettings', 'scales', 'rotation',
-                 'exclusionImpact', 'glossMetallicSettings', 'emissionSettings',
+                 'exclusionImpact', 'forceUv0', 'glossMetallicSettings', 'emissionSettings',
                  'normalSettings', 'styleId')
     allSlots = BaseCustomizationItem.__slots__ + __slots__
     CAMO_TYPES = {'Transparent': '#vehicle_customization:camouflage/transparent', 
@@ -231,6 +231,7 @@ class CamouflageItem(BaseCustomizationItem):
         self.tilingSettings = (CamouflageTilingType.LEGACY, None, None)
         self.scales = (1.2, 1.0, 0.7)
         self.exclusionImpact = 1.0
+        self.forceUv0 = False
         self.glossMetallicSettings = {'glossMetallicMap': '', 'gloss': Math.Vector4(0.0), 'metallic': Math.Vector4(0.0)}
         self.emissionSettings = {'emissionMap': '', 'emissionPatternMap': '', 'forwardEmissionBrightness': DEFAULT_FORWARD_EMISSION, 
            'deferredEmissionBrightness': DEFAULT_DEFERRED_EMISSION, 
@@ -253,6 +254,7 @@ class CamouflageItem(BaseCustomizationItem):
         newItem.tilingSettings = deepcopy(self.tilingSettings)
         newItem.scales = self.scales
         newItem.exclusionImpact = self.exclusionImpact
+        newItem.forceUv0 = self.forceUv0
         newItem.emissionSettings = deepcopy(self.emissionSettings)
         newItem.normalSettings = deepcopy(self.normalSettings)
         super(CamouflageItem, self)._copy(newItem)

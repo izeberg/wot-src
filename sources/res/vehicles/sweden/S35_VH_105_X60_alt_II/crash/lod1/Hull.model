@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/sweden/S35_VH_105_X60_alt_II/crash/lod1/Hull</nodefullVisual>
+	<parent>vehicles/sweden/S35_VH_105_X60_alt_II/crash/lod2/Hull</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.400031 -0.730983 -2.314135</min>
+		<max>1.437647 0.631860 2.594030</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

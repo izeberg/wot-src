@@ -1270,12 +1270,3 @@ class IReferralProgramRequester(IRequester):
 
     def getRPPassiveIncome(self):
         raise NotImplementedError
-
-
-class IPlayStreakRequester(IRequester):
-
-    def getRedemptionDay(self):
-        raise NotImplementedError
-
-    def getDailyConditionCompleted(self):
-        raise NotImplementedError

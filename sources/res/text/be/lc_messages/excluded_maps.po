@@ -30,7 +30,7 @@ msgid "filtersTooltip/header/winter"
 msgstr "Зімовыя мапы"
 
 msgid "header/cooldown"
-msgstr "Мапу можна будзе змяніць праз %(cooldownEndTime)."
+msgstr "Карту можно будет сменить через %(cooldownEndTime)"
 
 msgid "header/title"
 msgstr "Выключаныя мапы"
@@ -59,15 +59,51 @@ msgstr "Тып мап:"
 msgid "notSelected"
 msgstr "Не выбрана"
 
+msgid "slot/buyPremButton"
+msgstr "Купить"
+
+msgid "slot/buyWotPlusButton"
+msgstr "Оформить"
+
+msgid "slot/cooldownTooltipBody"
+msgstr "Заменить эту карту можно через {cooldownStr}"
+
+msgid "slot/cooldownTooltipHeader"
+msgstr "Замена мапы недаступная"
+
+msgid "slot/disabledTooltipBody/defaultSlots"
+msgstr "Слот для исключения дополнительной карты временно недоступен."
+
+msgid "slot/disabledTooltipBody/premiumSlots"
+msgstr ""
+"Слот для выключэння дадатковай мапы даступны толькі пры актыўным Танкавым "
+"прэміум акаўнце."
+
+msgid "slot/disabledTooltipBody/rewardsSlots"
+msgstr ""
+"Слот для исключения дополнительной карты можно получить за активное участие "
+"в крупных событиях и за выполнение определённых боевых задач."
+
+msgid "slot/disabledTooltipBody/subscrbSlots"
+msgstr ""
+"Слот для исключения дополнительной карты доступен только при активной "
+"подписке."
+
 msgid "slot/disabledTooltipBodyWotPlus"
 msgstr ""
 "Слот для выключэння дадатковай мапы даступны толькі пры актыўным Танкавым "
 "прэміум акаўнце."
 
+msgid "slot/disabledTooltipHeader"
+msgstr "Слот недоступен"
+
 msgid "slot/replaceTooltipBody"
 msgstr ""
 "Выберыце мапу са спіса ніжэй, каб замяніць яе і выключыць з ратацыі "
 "Выпадковых баёў (толькі для тыпу бою «Звычайны бой»)."
+
+msgid "slot/replaceTooltipHeader"
+msgstr "Доступна замена карты"
 
 msgid "slot/selectTooltipBody"
 msgstr ""

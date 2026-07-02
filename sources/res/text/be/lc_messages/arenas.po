@@ -412,10 +412,12 @@ msgstr "Эль-Халуф"
 
 msgid "31_airfield/description"
 msgstr ""
-"Мапа багатая зручнымі месцамі пад засады і шматлікімі шляхамі для прарываў і"
-" манеўраў. У верхняй частцы мапы размяшчаецца вялікі аэрадром. Усярэдзіне "
-"знаходзіцца скалістае ўзвышша, якое дае кантроль над навакольнымі абшарамі і"
-" праходам да баз."
+"Пустынная карта с небольшими поселениями, лазурным побережьем в нижней части"
+" и аэродромом в верхней открывает широкие возможности для манёвров и "
+"фланговых атак. Узкие проходы позволяют тяжёлым танкам и ПТ-САУ укрываться "
+"от огня артиллерии, удерживая ключевые направления, а обширные песчаные "
+"равнины делают карту удобной для стремительных прорывов лёгких и средних "
+"танков."
 
 msgid "31_airfield/name"
 msgstr "Аэрадром"
@@ -637,6 +639,12 @@ msgstr ""
 msgid "99_poland/name"
 msgstr "Студзянкі"
 
+msgid "Hangar_mt_lite_editor/description"
+msgstr "?empty?"
+
+msgid "Hangar_mt_lite_editor/name"
+msgstr "?empty?"
+
 msgid "h00_armory_yard/description"
 msgstr "?empty?"
 
@@ -647,6 +655,12 @@ msgid "h08_mt_hangar/description"
 msgstr "?empty?"
 
 msgid "h08_mt_hangar/name"
+msgstr "?empty?"
+
+msgid "h17_mt_bday_2026/description"
+msgstr "?empty?"
+
+msgid "h17_mt_bday_2026/name"
 msgstr "?empty?"
 
 msgid "modified"

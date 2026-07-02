@@ -25,6 +25,8 @@ package net.wg.gui.battle.views.consumablesPanel
       
       private static const INVALIDATE_MODIFIER_VALUE:uint = InvalidationType.SYSTEM_FLAGS_BORDER << 2;
       
+      private static const INVALIDATE_DRAW_GLOWS:uint = InvalidationType.SYSTEM_FLAGS_BORDER << 3;
+      
       private static const SMALL_PADDING_CORRECTION:int = 6;
       
       private static const HIDE_TWEEN_Y_OFFSET:int = 10;
@@ -102,16 +104,6 @@ package net.wg.gui.battle.views.consumablesPanel
          this.hitMc.addEventListener(MouseEvent.MOUSE_OUT,this.onMouseOutHandler);
       }
       
-      private function onMouseOverHandler(param1:MouseEvent) : void
-      {
-         this.hasHover = true;
-      }
-      
-      private function onMouseOutHandler(param1:MouseEvent) : void
-      {
-         this.hasHover = false;
-      }
-      
       override protected function onDispose() : void
       {
          this.hitMc.removeEventListener(MouseEvent.MOUSE_OVER,this.onMouseOverHandler);
@@ -124,11 +116,7 @@ package net.wg.gui.battle.views.consumablesPanel
          this.clearSlotsModifierValuePositionTween();
          this.clearModifierValueCounterTween();
          this.clearSlotsGlowTween();
-         if(this._slotsGlows)
-         {
-            this._slotsGlows.splice(0,this._slotsGlows.length);
-            this._slotsGlows = null;
-         }
+         this.clearGlows();
          this._slotsModifierValueTf = null;
          this.slotsModifierType = null;
          this.slotsModifierValue = null;
@@ -141,6 +129,10 @@ package net.wg.gui.battle.views.consumablesPanel
       override protected function draw() : void
       {
          super.draw();
+         if(isInvalid(INVALIDATE_DRAW_GLOWS))
+         {
+            this.drawGlows();
+         }
          if(isInvalid(INVALIDATE_DRAW_LAYOUT))
          {
             this.drawLayout();
@@ -153,34 +145,55 @@ package net.wg.gui.battle.views.consumablesPanel
       
       private function drawLayout() : void
       {
-         var _loc4_:int = 0;
-         var _loc5_:MovieClip = null;
+         var _loc3_:int = 0;
          var _loc1_:String = SLOT_FRAME_LABEL + this.shellSlots;
          this.slotsFrame.gotoAndStop(!!this.isSmall ? _loc1_ + SLOT_FRAME_SMALL_RESOLUTION_POSTFIX : _loc1_);
          var _loc2_:int = !!this.isSmall ? int(SMALL_PADDING_CORRECTION) : int(Values.ZERO);
-         var _loc3_:int = this.shellPadding * this.shellSlots + _loc2_;
+         _loc3_ = this.shellPadding * this.shellSlots + _loc2_;
          this.bg.x = _loc3_ - this.bg.width >> 1;
          this.slotsModifierType.x = _loc3_ - this.slotsModifierType.width >> 1;
          this.slotsModifierValue.x = _loc3_ - this.slotsModifierValue.width >> 1;
-         if(!this._slotsGlows)
-         {
-            this._slotsGlows = new Vector.<MovieClip>();
-            _loc4_ = 0;
-            while(_loc4_ < this.shellSlots)
-            {
-               _loc5_ = App.utils.classFactory.getComponent(Linkages.ABILITY_MODIFIER_SLOT_GLOW,MovieClip);
-               this.slotsGlowContainer.addChild(_loc5_);
-               this._slotsGlows.push(_loc5_);
-               _loc4_++;
-            }
-         }
-         _loc4_ = 0;
-         while(_loc4_ < this.shellSlots)
-         {
-            this._slotsGlows[_loc4_].x = _loc4_ * this.shellPadding;
-            _loc4_++;
-         }
          this.hitMc.width = this.slotsGlowContainer.width;
+      }
+      
+      private function drawGlows() : void
+      {
+         var _loc1_:int = 0;
+         var _loc2_:MovieClip = null;
+         this.clearGlows();
+         this._slotsGlows = new Vector.<MovieClip>();
+         _loc1_ = 0;
+         while(_loc1_ < this.shellSlots)
+         {
+            _loc2_ = App.utils.classFactory.getComponent(Linkages.ABILITY_MODIFIER_SLOT_GLOW,MovieClip);
+            this.slotsGlowContainer.addChild(_loc2_);
+            this._slotsGlows.push(_loc2_);
+            _loc1_++;
+         }
+         _loc1_ = 0;
+         while(_loc1_ < this.shellSlots)
+         {
+            this._slotsGlows[_loc1_].x = _loc1_ * this.shellPadding;
+            _loc1_++;
+         }
+      }
+      
+      private function clearGlows() : void
+      {
+         var _loc1_:int = 0;
+         var _loc2_:int = 0;
+         if(this._slotsGlows)
+         {
+            _loc1_ = this._slotsGlows.length;
+            _loc2_ = 0;
+            while(_loc2_ < _loc1_)
+            {
+               this.slotsGlowContainer.removeChild(this._slotsGlows[_loc2_]);
+               _loc2_++;
+            }
+            this._slotsGlows.splice(0,_loc1_);
+            this._slotsGlows = null;
+         }
       }
       
       private function clearThisTween() : void
@@ -270,6 +283,16 @@ package net.wg.gui.battle.views.consumablesPanel
       private function updateSlotsModifierValueText() : void
       {
          this._slotsModifierValueTf.text = MODIFIER_VALUE_TEMPLATE.replace("value",this.modifierValue);
+      }
+      
+      private function onMouseOverHandler(param1:MouseEvent) : void
+      {
+         this.hasHover = true;
+      }
+      
+      private function onMouseOutHandler(param1:MouseEvent) : void
+      {
+         this.hasHover = false;
       }
       
       public function show(param1:int, param2:Boolean = false) : void
@@ -415,6 +438,7 @@ package net.wg.gui.battle.views.consumablesPanel
             return;
          }
          this._shellSlots = param1;
+         invalidate(INVALIDATE_DRAW_GLOWS);
          invalidate(INVALIDATE_DRAW_LAYOUT);
       }
       

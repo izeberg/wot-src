@@ -7,9 +7,9 @@
 		<resource/>
 	</sequenceObject>
 	<sequenceObject>
-		<name>stg_26_PostProg</name>
+		<name>stg_26_FullTank</name>
 		<type>model</type>
-		<resource>content/Hangars/h00_armory_yard/environment/Constructor/A176_OTAC_LK_7605/normal/lod0/stg_26_PostProg.model</resource>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/GB142_FV249_Castle/normal/lod0/stg_26_FullTank.model</resource>
 		<track>
 			<name>visibility</name>
 			<type>bool</type>

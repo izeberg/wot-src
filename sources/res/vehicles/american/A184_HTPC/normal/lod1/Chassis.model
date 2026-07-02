@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A184_HTPC/normal/lod1/Chassis</nodefullVisual>
+	<parent>vehicles/american/A184_HTPC/normal/lod2/Chassis</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.713895 -0.000001 -3.486117</min>
+		<max>1.713895 1.093683 3.225253</max>
+	</visibilityBox>
+</root>

@@ -33,6 +33,8 @@ package net.wg.gui.lobby.settings.components
       
       private static const SHOW_DELAY:int = 1500;
       
+      private static const TOOLTIP_OFFSET_Y:int = -7;
+      
       private static const INVALID_KEYS:String = "invalidKeys";
        
       
@@ -169,7 +171,9 @@ package net.wg.gui.lobby.settings.components
          }
          else
          {
-            _loc3_ = parent.localToGlobal(new Point(x + width,y - height - 7));
+            _loc3_ = parent.localToGlobal(new Point(x + width,y - height + TOOLTIP_OFFSET_Y));
+            _loc3_.x = _loc3_.x / App.appScale >> 0;
+            _loc3_.y = _loc3_.y / App.appScale >> 0;
             _loc4_ = new TooltipProps(BaseTooltips.TYPE_WARNING,_loc3_.x,_loc3_.y,0,0,SHOW_DELAY);
             _loc5_ = App.utils.locale.makeString(this._alertMessageAlias,{"keyName":_loc2_.keyName});
             _loc6_ = App.textMgr.getTextStyleById(TEXT_MANAGER_STYLES.ALERT_TEXT,_loc5_);

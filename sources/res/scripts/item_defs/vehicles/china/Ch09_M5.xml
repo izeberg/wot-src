@@ -119,7 +119,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_12 armor_4</primaryArmor>
 		<weight>10035</weight>
-		<maxHealth>416</maxHealth>
+		<maxHealth>400</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>140</maxHealth>
 			<maxRegenHealth>90</maxRegenHealth>
@@ -4638,7 +4638,7 @@
 				</customizableVehicleAreas>
 			</customization>
 			<repairTime>
-				4.57142878
+				2.85003138
 				<!--BW_String-->
 			</repairTime>
 		</Chassis_Ch09_M5>
@@ -7138,7 +7138,7 @@
 				</customizableVehicleAreas>
 			</customization>
 			<repairTime>
-				4.57142878
+				2.85003138
 				<!--BW_String-->
 			</repairTime>
 		</Chassis_Ch09_M5_2>
@@ -7147,6 +7147,12 @@
 		<Turret_1_Ch09_M5>
 			<userString>#china_vehicles:Turret_1_Ch09_M5</userString>
 			<tags/>
+			<unlocks>
+				<turret>
+					Turret_2_Ch09_M5
+					<cost>1200</cost>
+				</turret>
+			</unlocks>
 			<level>3</level>
 			<price>1890</price>
 			<armor>
@@ -7178,7 +7184,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>1020</weight>
-			<maxHealth>79</maxHealth>
+			<maxHealth>100</maxHealth>
 			<rotationSpeed>48</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>80</maxHealth>
@@ -7338,12 +7344,6 @@
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
-					<unlocks>
-						<turret>
-							Turret_2_Ch09_M5
-							<cost>1200</cost>
-						</turret>
-					</unlocks>
 					<armor>
 						<armor_1>
 							50.8
@@ -8031,7 +8031,7 @@
 			<unlocks>
 				<vehicle>
 					Ch21_T34
-					<cost>16000</cost>
+					<cost>19000</cost>
 				</vehicle>
 			</unlocks>
 			<armor>
@@ -8068,7 +8068,7 @@
 			</armor>
 			<primaryArmor>armor_2 armor_3 armor_4</primaryArmor>
 			<weight>1200</weight>
-			<maxHealth>104</maxHealth>
+			<maxHealth>120</maxHealth>
 			<rotationSpeed>48</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>80</maxHealth>
@@ -8770,15 +8770,6 @@
 		<Medium>shared</Medium>
 	</fuelTanks>
 	<radios>
-		<SCR_508>
-			shared
-			<unlocks>
-				<radio>
-					SCR_506
-					<cost>5600</cost>
-				</radio>
-			</unlocks>
-		</SCR_508>
 		<SCR_506>shared</SCR_506>
 	</radios>
 	<physics>

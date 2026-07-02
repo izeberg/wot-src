@@ -786,6 +786,10 @@ package
       public static const MTTV_FRAMEEDITVIEW_GROUPDELETION:String = "#development:mttv/FrameEditView/groupDeletion";
       
       public static const MTTV_FRAMEEDITVIEW_ADDFRAME:String = "#development:mttv/FrameEditView/addFrame";
+      
+      public static const COSMIC_INTRO_PHRASE_1:String = "#development:cosmic_intro/phrase_1";
+      
+      public static const COSMIC_INTRO_PHRASE_2:String = "#development:cosmic_intro/phrase_2";
        
       
       public function DEVELOPMENT()

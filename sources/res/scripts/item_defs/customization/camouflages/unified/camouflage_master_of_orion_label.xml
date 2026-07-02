@@ -1,0 +1,1077 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<xmlns:ussr>ussr</xmlns:ussr>
+	<xmlns:germany>germany</xmlns:germany>
+	<xmlns:usa>usa</xmlns:usa>
+	<xmlns:china>china</xmlns:china>
+	<xmlns:france>france</xmlns:france>
+	<xmlns:uk>uk</xmlns:uk>
+	<xmlns:japan>japan</xmlns:japan>
+	<xmlns:czech>czech</xmlns:czech>
+	<xmlns:sweden>sweden</xmlns:sweden>
+	<xmlns:poland>poland</xmlns:poland>
+	<xmlns:italy>italy</xmlns:italy>
+	<xmlns:intunion>intunion</xmlns:intunion>
+	<itemGroup>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R47_ISU-152_Zveroboj ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<camouflage>
+			<id>89</id>
+			<texture>vehicles/russian/Camouflage/master_of_orion.dds</texture>
+			<description>#vehicle_customization:camouflage/master_of_orion/description</description>
+			<scales>
+				1.3 1 0.7
+				<!--BW_String-->
+			</scales>
+			<userString>#vehicle_customization:camouflage/master_of_orion/label</userString>
+			<tags>hiddenInUI</tags>
+			<invisibilityFactor>1</invisibilityFactor>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<rotation>
+				<HULL>
+					0.5044
+					<!--BW_String-->
+				</HULL>
+				<TURRET>
+					0.5044
+					<!--BW_String-->
+				</TURRET>
+				<GUN>
+					0.5044
+					<!--BW_String-->
+				</GUN>
+			</rotation>
+			<tiling>
+				<china:Ch06_Renault_NC31>
+					0.65 0.65 -0.64 0.05
+					<!--BW_String-->
+				</china:Ch06_Renault_NC31>
+				<china:Ch07_Vickers_MkE_Type_BT26>
+					0.67 0.67 0.192814 -0.0538116
+					<!--BW_String-->
+				</china:Ch07_Vickers_MkE_Type_BT26>
+				<china:Ch08_Type97_Chi_Ha>
+					1.64 1.64 0.0100004 0.237348
+					<!--BW_String-->
+				</china:Ch08_Type97_Chi_Ha>
+				<china:Ch09_M5>
+					1.07 1.07 0.01 0.01
+					<!--BW_String-->
+				</china:Ch09_M5>
+				<china:Ch21_T34>
+					1.97 1.97 -0.53583 0.00999989
+					<!--BW_String-->
+				</china:Ch21_T34>
+				<china:Ch30_T-26G_FT>
+					2.8 2.8 -0.154694 0.00999906
+					<!--BW_String-->
+				</china:Ch30_T-26G_FT>
+				<china:Ch31_M3G_FT>
+					0.54 0.54 0.01 0.01
+					<!--BW_String-->
+				</china:Ch31_M3G_FT>
+				<china:Ch32_SU-76G_FT>
+					1.12 1.12 0.01 0.01
+					<!--BW_String-->
+				</china:Ch32_SU-76G_FT>
+				<china:Ch33_60G_FT>
+					0.69 0.69 -0.459836 0.0100003
+					<!--BW_String-->
+				</china:Ch33_60G_FT>
+				<czech:Cz03_LT_vz35>
+					2.04 2.04 0.01 0.01
+					<!--BW_String-->
+				</czech:Cz03_LT_vz35>
+				<czech:Cz06_Kolohousenka>
+					2.03 2.03 -0.389285 -0.248098
+					<!--BW_String-->
+				</czech:Cz06_Kolohousenka>
+				<czech:Cz09_T_24>
+					2.7 2.7 -0.230023 0.00999985
+					<!--BW_String-->
+				</czech:Cz09_T_24>
+				<czech:Cz10_LT_vz38>
+					2.14 2.14 0.01 0.01
+					<!--BW_String-->
+				</czech:Cz10_LT_vz38>
+				<czech:Cz11_V_8_H>
+					1.26 1.26 0.164009 0.170054
+					<!--BW_String-->
+				</czech:Cz11_V_8_H>
+				<france:F01_RenaultFT>
+					0.65 0.65 -0.64 0.01
+					<!--BW_String-->
+				</france:F01_RenaultFT>
+				<france:F02_D1>
+					1.7 1.7 0.0734035 -0.143253
+					<!--BW_String-->
+				</france:F02_D1>
+				<france:F03_D2>
+					1.07 1.07 0.00999979 0.372812
+					<!--BW_String-->
+				</france:F03_D2>
+				<france:F04_B1>
+					0.73 0.73 0.278104 0.01
+					<!--BW_String-->
+				</france:F04_B1>
+				<france:F05_BDR_G1B>
+					1.37 1.37 0.01 0.01
+					<!--BW_String-->
+				</france:F05_BDR_G1B>
+				<france:F100_Panhard_EBR_90>
+					1.65 1.65 -1.1314 0.0100022
+					<!--BW_String-->
+				</france:F100_Panhard_EBR_90>
+				<france:F106_Panhard_EBR_75_Mle1954>
+					0.94 0.94 0.424584 0.00999916
+					<!--BW_String-->
+				</france:F106_Panhard_EBR_75_Mle1954>
+				<france:F107_Hotchkiss_EBR>
+					1.04 1.04 -0.646674 0.0100016
+					<!--BW_String-->
+				</france:F107_Hotchkiss_EBR>
+				<france:F108_Panhard_EBR_105>
+					1.57 1.57 0.448341 0.00999915
+					<!--BW_String-->
+				</france:F108_Panhard_EBR_105>
+				<france:F110_Lynx_6x6>
+					0.5 0.5 0.01 0.01
+					<!--BW_String-->
+				</france:F110_Lynx_6x6>
+				<france:F110_Lynx_6x6_FL>
+					0.5 0.5 0.01 0.01
+					<!--BW_String-->
+				</france:F110_Lynx_6x6_FL>
+				<france:F111_AM39_Gendron_Somua>
+					1.14 1.14 -0.245272 0.0477254
+					<!--BW_String-->
+				</france:F111_AM39_Gendron_Somua>
+				<france:F112_M10_RBFM>
+					1.07 1.07 0.00999998 0.134907
+					<!--BW_String-->
+				</france:F112_M10_RBFM>
+				<france:F11_Renault_G1R>
+					1.76 1.76 -0.617712 0.00999978
+					<!--BW_String-->
+				</france:F11_Renault_G1R>
+				<france:F12_Hotchkiss_H35>
+					0.52 0.52 0.0226237 0.0988787
+					<!--BW_String-->
+				</france:F12_Hotchkiss_H35>
+				<france:F13_AMX38>
+					0.88 0.88 0.01 0.01
+					<!--BW_String-->
+				</france:F13_AMX38>
+				<france:F14_AMX40>
+					1.16 1.16 0.01 0.01
+					<!--BW_String-->
+				</france:F14_AMX40>
+				<france:F15_AMX_12t>
+					1.26 1.26 0.01 0.01
+					<!--BW_String-->
+				</france:F15_AMX_12t>
+				<france:F17_AMX_13_90>
+					1.13 1.13 0.01 0.01
+					<!--BW_String-->
+				</france:F17_AMX_13_90>
+				<france:F17_AMX_13_90_FL>
+					1.13 1.13 0.01 0.01
+					<!--BW_String-->
+				</france:F17_AMX_13_90_FL>
+				<france:F20_RenaultBS>
+					0.86 0.86 0.0415989 0.00989679
+					<!--BW_String-->
+				</france:F20_RenaultBS>
+				<france:F21_Lorraine39_L_AM>
+					1.53 1.53 0.01 0.01
+					<!--BW_String-->
+				</france:F21_Lorraine39_L_AM>
+				<france:F22_AMX_105AM>
+					1.4 1.4 0.01 0.01
+					<!--BW_String-->
+				</france:F22_AMX_105AM>
+				<france:F27_FCM_36Pak40>
+					2.17 2.17 0.01 0.01
+					<!--BW_String-->
+				</france:F27_FCM_36Pak40>
+				<france:F28_105_leFH18B2>
+					2.39 2.39 0.01 0.01
+					<!--BW_String-->
+				</france:F28_105_leFH18B2>
+				<france:F30_RenaultFT_AC>
+					1.81 1.81 0.224334 0.0717354
+					<!--BW_String-->
+				</france:F30_RenaultFT_AC>
+				<france:F32_Somua_Sau_40>
+					0.88 0.88 -0.726449 0.0100006
+					<!--BW_String-->
+				</france:F32_Somua_Sau_40>
+				<france:F33_S_35CA>
+					2.06 2.06 0.01 0.01
+					<!--BW_String-->
+				</france:F33_S_35CA>
+				<france:F42_AMR_35>
+					2.49 2.49 0.567846 0.00999968
+					<!--BW_String-->
+				</france:F42_AMR_35>
+				<france:F44_Somua_S35>
+					2.66 2.66 0.01 0.01
+					<!--BW_String-->
+				</france:F44_Somua_S35>
+				<france:F49_RenaultR35>
+					2.96 2.96 0.01 0.01
+					<!--BW_String-->
+				</france:F49_RenaultR35>
+				<france:F50_FCM36_20t>
+					1.76 1.76 0.01 0.01
+					<!--BW_String-->
+				</france:F50_FCM36_20t>
+				<france:F52_RenaultUE57>
+					1.22 1.22 0.01 0.01
+					<!--BW_String-->
+				</france:F52_RenaultUE57>
+				<france:F62_ELC_AMX>
+					1.5 1.5 0.00999688 -0.2231
+					<!--BW_String-->
+				</france:F62_ELC_AMX>
+				<france:F66_AMX_Ob_Am105>
+					0.99 0.99 0.01 0.01
+					<!--BW_String-->
+				</france:F66_AMX_Ob_Am105>
+				<france:F70_SARL42>
+					1.32 1.32 0.01 -0.0510483
+					<!--BW_String-->
+				</france:F70_SARL42>
+				<germany:G06_PzII>
+					1.14 1.14 0.4441 0.290491
+					<!--BW_String-->
+				</germany:G06_PzII>
+				<germany:G07_Pz35t>
+					2.2 2.2 0.613035 0.0100002
+					<!--BW_String-->
+				</germany:G07_Pz35t>
+				<germany:G08_Pz38t>
+					1.65 1.65 0.01 0.01
+					<!--BW_String-->
+				</germany:G08_Pz38t>
+				<germany:G09_Hetzer>
+					2.47 2.47 0.400514 0.00999884
+					<!--BW_String-->
+				</germany:G09_Hetzer>
+				<germany:G100_Gtraktor_Krupp>
+					2.4 2.4 0.01 0.01
+					<!--BW_String-->
+				</germany:G100_Gtraktor_Krupp>
+				<germany:G101_StuG_III>
+					2.44 2.44 -0.280781 0.0100003
+					<!--BW_String-->
+				</germany:G101_StuG_III>
+				<germany:G102_Pz_III>
+					1.11 1.11 0.01 0.01
+					<!--BW_String-->
+				</germany:G102_Pz_III>
+				<germany:G104_Stug_IV>
+					2.35 2.35 0.01 0.01
+					<!--BW_String-->
+				</germany:G104_Stug_IV>
+				<germany:G107_PzKpfwIII_AusfK>
+					2.27 2.27 0.01 0.01
+					<!--BW_String-->
+				</germany:G107_PzKpfwIII_AusfK>
+				<germany:G108_PzKpfwII_AusfD>
+					2.12 2.12 -0.195565 0.546326
+					<!--BW_String-->
+				</germany:G108_PzKpfwII_AusfD>
+				<germany:G10_PzIII_AusfJ>
+					3.72 3.72 -0.459225 -0.116492
+					<!--BW_String-->
+				</germany:G10_PzIII_AusfJ>
+				<germany:G116_Turan_III_prot>
+					0.93 0.93 0.01 0.01
+					<!--BW_String-->
+				</germany:G116_Turan_III_prot>
+				<germany:G117_Toldi_III>
+					0.6 0.6 0.0100008 -0.176154
+					<!--BW_String-->
+				</germany:G117_Toldi_III>
+				<germany:G11_Bison_I>
+					1.89 1.89 -0.215575 0.010002
+					<!--BW_String-->
+				</germany:G11_Bison_I>
+				<germany:G121_Grille_15_L63>
+					5.6 5.6 0.03 0.01
+					<!--BW_String-->
+				</germany:G121_Grille_15_L63>
+				<germany:G122_VK6501H>
+					1.35 1.35 0.01 0.01
+					<!--BW_String-->
+				</germany:G122_VK6501H>
+				<germany:G12_Ltraktor>
+					1.59 1.59 0.51744 0.00999533
+					<!--BW_String-->
+				</germany:G12_Ltraktor>
+				<germany:G139_MKA>
+					2.92 2.92 0.693131 0.0100005
+					<!--BW_String-->
+				</germany:G139_MKA>
+				<germany:G13_VK3001H>
+					2.28 2.28 0.01 -0.0739974
+					<!--BW_String-->
+				</germany:G13_VK3001H>
+				<germany:G19_Wespe>
+					2.28 2.28 0.01 0.01
+					<!--BW_String-->
+				</germany:G19_Wespe>
+				<germany:G20_Marder_II>
+					1.94 1.94 0.01 0.01
+					<!--BW_String-->
+				</germany:G20_Marder_II>
+				<germany:G21_PanzerJager_I>
+					1.2 1.2 0.127178 -0.0923843
+					<!--BW_String-->
+				</germany:G21_PanzerJager_I>
+				<germany:G22_Sturmpanzer_II>
+					2.46 2.46 0.01 0.01
+					<!--BW_String-->
+				</germany:G22_Sturmpanzer_II>
+				<germany:G23_Grille>
+					2.13 2.13 0.01 0.01
+					<!--BW_String-->
+				</germany:G23_Grille>
+				<germany:G25_PzII_Luchs>
+					1.8 1.8 0.01 0.01
+					<!--BW_String-->
+				</germany:G25_PzII_Luchs>
+				<germany:G26_VK1602>
+					1.57 1.57 0.01 0.01
+					<!--BW_String-->
+				</germany:G26_VK1602>
+				<germany:G28_PzIII_IV>
+					1 1 0.01 0.01
+					<!--BW_String-->
+				</germany:G28_PzIII_IV>
+				<germany:G32_PzV_PzIV>
+					2.38 2.38 0.01 0.01
+					<!--BW_String-->
+				</germany:G32_PzV_PzIV>
+				<germany:G32_PzV_PzIV_CN>
+					2.38 2.38 0.01 0.01
+					<!--BW_String-->
+				</germany:G32_PzV_PzIV_CN>
+				<germany:G32_PzV_PzIV_ausf_Alfa>
+					2.25 2.25 0.01 0.01
+					<!--BW_String-->
+				</germany:G32_PzV_PzIV_ausf_Alfa>
+				<germany:G33_H39_captured>
+					1.64 1.64 -0.524588 0.00999767
+					<!--BW_String-->
+				</germany:G33_H39_captured>
+				<germany:G34_S35_captured>
+					1.36 1.36 0.01 0.01
+					<!--BW_String-->
+				</germany:G34_S35_captured>
+				<germany:G35_B-1bis_captured>
+					0.75 0.75 -0.309157 0.235195
+					<!--BW_String-->
+				</germany:G35_B-1bis_captured>
+				<germany:G36_PzII_J>
+					1.13 1.13 0.01 0.01
+					<!--BW_String-->
+				</germany:G36_PzII_J>
+				<germany:G39_Marder_III>
+					2.72 2.72 0.294891 0.0100012
+					<!--BW_String-->
+				</germany:G39_Marder_III>
+				<germany:G46_T-25>
+					1.09 1.09 0.01 0.01
+					<!--BW_String-->
+				</germany:G46_T-25>
+				<germany:G48_E-25>
+					1.53 1.53 -0.775216 0.797355
+					<!--BW_String-->
+				</germany:G48_E-25>
+				<germany:G50_T-15>
+					1.16 1.16 0.01 0.01
+					<!--BW_String-->
+				</germany:G50_T-15>
+				<germany:G52_Pz38_NA>
+					1.95 1.95 0.01 0.01
+					<!--BW_String-->
+				</germany:G52_Pz38_NA>
+				<germany:G53_PzI>
+					1.64 1.64 0.01 0.01
+					<!--BW_String-->
+				</germany:G53_PzI>
+				<germany:G63_PzI_ausf_C>
+					1.07 1.07 0.01 0.01
+					<!--BW_String-->
+				</germany:G63_PzI_ausf_C>
+				<germany:G70_PzIV_Hydro>
+					1.08 1.08 0.01 0.01
+					<!--BW_String-->
+				</germany:G70_PzIV_Hydro>
+				<germany:G76_Pz_Sfl_IVc>
+					1.32 1.32 -0.394306 0.0100002
+					<!--BW_String-->
+				</germany:G76_Pz_Sfl_IVc>
+				<germany:G80_Pz_IV_AusfD>
+					1.19 1.19 -0.3836 0.00999969
+					<!--BW_String-->
+				</germany:G80_Pz_IV_AusfD>
+				<germany:G81_Pz_IV_AusfH>
+					1.71 1.71 0.01 0.01
+					<!--BW_String-->
+				</germany:G81_Pz_IV_AusfH>
+				<germany:G82_Pz_II_AusfG>
+					1.29 1.29 0.00999772 0.241327
+					<!--BW_String-->
+				</germany:G82_Pz_II_AusfG>
+				<germany:G83_Pz_IV_AusfA>
+					1.4 1.4 0.342505 -0.159841
+					<!--BW_String-->
+				</germany:G83_Pz_IV_AusfA>
+				<germany:G86_VK2001DB>
+					2.09 2.09 0.00999913 -0.633169
+					<!--BW_String-->
+				</germany:G86_VK2001DB>
+				<germany:G90_DW_II>
+					1.6 1.6 0.01 0.01
+					<!--BW_String-->
+				</germany:G90_DW_II>
+				<germany:G93_GW_Mk_VIe>
+					1.87 1.87 0.01 0.01
+					<!--BW_String-->
+				</germany:G93_GW_Mk_VIe>
+				<germany:G95_Pz_Sfl_IVb>
+					1.18 1.18 -0.177212 0.00999974
+					<!--BW_String-->
+				</germany:G95_Pz_Sfl_IVb>
+				<italy:It03_M15_42>
+					1.06 1.06 0.674682 0.152923
+					<!--BW_String-->
+				</italy:It03_M15_42>
+				<italy:It04_Fiat_3000>
+					1.54 1.54 -0.155361 0.641456
+					<!--BW_String-->
+				</italy:It04_Fiat_3000>
+				<italy:It05_Carro_L6_40>
+					0.82 0.82 0.0100071 0.601375
+					<!--BW_String-->
+				</italy:It05_Carro_L6_40>
+				<italy:It06_M14_41>
+					0.99 0.99 -0.214403 0.49437
+					<!--BW_String-->
+				</italy:It06_M14_41>
+				<italy:It07_P26_40>
+					0.83 0.83 0.01 0.01
+					<!--BW_String-->
+				</italy:It07_P26_40>
+				<italy:It11_P43>
+					0.61 0.61 -0.405544 0.4537
+					<!--BW_String-->
+				</italy:It11_P43>
+				<japan:J01_NC27>
+					0.9 0.9 0.410182 0.0572039
+					<!--BW_String-->
+				</japan:J01_NC27>
+				<japan:J02_Te_Ke>
+					2.97 2.97 -0.14447 -0.512608
+					<!--BW_String-->
+				</japan:J02_Te_Ke>
+				<japan:J03_Ha_Go>
+					2.17 2.17 -0.550045 0.0100054
+					<!--BW_String-->
+				</japan:J03_Ha_Go>
+				<japan:J04_Ke_Ni>
+					1.68 1.68 -0.0892656 0.0100011
+					<!--BW_String-->
+				</japan:J04_Ke_Ni>
+				<japan:J05_Ke_Ni_B>
+					1.41 1.41 -0.0835719 0.010001
+					<!--BW_String-->
+				</japan:J05_Ke_Ni_B>
+				<japan:J06_Ke_Ho>
+					2.55 2.55 -0.252423 0.00999846
+					<!--BW_String-->
+				</japan:J06_Ke_Ho>
+				<japan:J07_Chi_Ha>
+					2.15 2.15 0.00999944 -0.297864
+					<!--BW_String-->
+				</japan:J07_Chi_Ha>
+				<japan:J08_Chi_Nu>
+					2.26 2.26 -0.817637 0.00999935
+					<!--BW_String-->
+				</japan:J08_Chi_Nu>
+				<japan:J09_Chi_He>
+					3.39 3.39 0.01 0.01
+					<!--BW_String-->
+				</japan:J09_Chi_He>
+				<japan:J12_Chi_Nu_Kai>
+					2.74 2.74 0.0100001 -0.189904
+					<!--BW_String-->
+				</japan:J12_Chi_Nu_Kai>
+				<japan:J15_Chi_Ni>
+					2.35 2.35 -0.145415 0.390957
+					<!--BW_String-->
+				</japan:J15_Chi_Ni>
+				<japan:J21_Type_91>
+					1.63 1.63 0.01 0.01
+					<!--BW_String-->
+				</japan:J21_Type_91>
+				<japan:J22_Type_95>
+					1.16 1.16 0.01 0.01
+					<!--BW_String-->
+				</japan:J22_Type_95>
+				<japan:J23_Mi_To>
+					2.07 2.07 0.01 0.01
+					<!--BW_String-->
+				</japan:J23_Mi_To>
+				<japan:J26_Type_89>
+					1.26 1.26 0.00999965 0.15325
+					<!--BW_String-->
+				</japan:J26_Type_89>
+				<poland:Pl01_TKS_20mm>
+					1.44 1.44 0.0099919 -0.0996242
+					<!--BW_String-->
+				</poland:Pl01_TKS_20mm>
+				<poland:Pl06_10TP>
+					0.65 0.65 0.0100006 -0.207671
+					<!--BW_String-->
+				</poland:Pl06_10TP>
+				<poland:Pl07_14TP>
+					2.38 2.38 -0.361094 0.0100009
+					<!--BW_String-->
+				</poland:Pl07_14TP>
+				<poland:Pl09_7TP>
+					0.86 0.86 -0.327165 -0.568662
+					<!--BW_String-->
+				</poland:Pl09_7TP>
+				<poland:Pl12_25TP_KSUST_II>
+					1.36 1.36 0.01 0.01
+					<!--BW_String-->
+				</poland:Pl12_25TP_KSUST_II>
+				<poland:Pl14_4TP>
+					1.27 1.27 0.01 0.01
+					<!--BW_String-->
+				</poland:Pl14_4TP>
+				<sweden:S02_Strv_M42>
+					0.74 0.74 0.01 0.01
+					<!--BW_String-->
+				</sweden:S02_Strv_M42>
+				<sweden:S03_Strv_M38>
+					2.32 2.32 -0.300703 -0.133095
+					<!--BW_String-->
+				</sweden:S03_Strv_M38>
+				<sweden:S04_Lago_I>
+					0.66 0.66 0.01 0.01
+					<!--BW_String-->
+				</sweden:S04_Lago_I>
+				<sweden:S05_Strv_M21_29>
+					1.26 1.26 0.74781 0.427682
+					<!--BW_String-->
+				</sweden:S05_Strv_M21_29>
+				<sweden:S09_L_120_TD>
+					2.22 2.22 -0.00687654 -0.222601
+					<!--BW_String-->
+				</sweden:S09_L_120_TD>
+				<sweden:S11_Strv_103B>
+					0.64 0.64 1.05 0.01
+					<!--BW_String-->
+				</sweden:S11_Strv_103B>
+				<sweden:S12_Strv_M40>
+					4.55 4.55 -0.281506 0.00999852
+					<!--BW_String-->
+				</sweden:S12_Strv_M40>
+				<sweden:S14_Ikv_103>
+					1.27 1.27 -0.0917443 -0.0698962
+					<!--BW_String-->
+				</sweden:S14_Ikv_103>
+				<sweden:S15_L_60>
+					0.6 0.6 0.474959 0.00999687
+					<!--BW_String-->
+				</sweden:S15_L_60>
+				<sweden:S19_Sav_M43>
+					0.98 0.98 0.01 0.01
+					<!--BW_String-->
+				</sweden:S19_Sav_M43>
+				<sweden:S20_Ikv_72>
+					2.53 2.53 0.01 0.01
+					<!--BW_String-->
+				</sweden:S20_Ikv_72>
+				<uk:GB01_Medium_Mark_I>
+					1.83 1.83 0.681669 0.0100023
+					<!--BW_String-->
+				</uk:GB01_Medium_Mark_I>
+				<uk:GB03_Cruiser_Mk_I>
+					1.99 1.99 -0.397202 0.0099991
+					<!--BW_String-->
+				</uk:GB03_Cruiser_Mk_I>
+				<uk:GB04_Valentine>
+					1.88 1.88 -0.299463 0.0100006
+					<!--BW_String-->
+				</uk:GB04_Valentine>
+				<uk:GB05_Vickers_Medium_Mk_II>
+					1.08 1.08 0.00999962 -0.124756
+					<!--BW_String-->
+				</uk:GB05_Vickers_Medium_Mk_II>
+				<uk:GB06_Vickers_Medium_Mk_III>
+					1.26 1.26 0.333979 0.0100002
+					<!--BW_String-->
+				</uk:GB06_Vickers_Medium_Mk_III>
+				<uk:GB07_Matilda>
+					1.27 1.27 0.01 0.01
+					<!--BW_String-->
+				</uk:GB07_Matilda>
+				<uk:GB08_Churchill_I>
+					1.16 1.16 0.01 0.01
+					<!--BW_String-->
+				</uk:GB08_Churchill_I>
+				<uk:GB100_Manticore>
+					1.25 1.25 -0.561619 0.00999762
+					<!--BW_String-->
+				</uk:GB100_Manticore>
+				<uk:GB101_FV1066_Senlac>
+					0.89 0.89 0.01 0.01
+					<!--BW_String-->
+				</uk:GB101_FV1066_Senlac>
+				<uk:GB14_M2>
+					1.66 1.66 0.01 0.01
+					<!--BW_String-->
+				</uk:GB14_M2>
+				<uk:GB15_Stuart_I>
+					1.66 1.66 0.01 0.01
+					<!--BW_String-->
+				</uk:GB15_Stuart_I>
+				<uk:GB17_Grant_I>
+					2.48 2.48 0.01 0.01
+					<!--BW_String-->
+				</uk:GB17_Grant_I>
+				<uk:GB20_Crusader>
+					1.34 1.34 0.01 0.01
+					<!--BW_String-->
+				</uk:GB20_Crusader>
+				<uk:GB25_Loyd_Gun_Carriage>
+					1.79 1.79 0.00999891 -0.0831781
+					<!--BW_String-->
+				</uk:GB25_Loyd_Gun_Carriage>
+				<uk:GB26_Birch_Gun>
+					2.36 2.36 -0.204196 0.25609
+					<!--BW_String-->
+				</uk:GB26_Birch_Gun>
+				<uk:GB27_Sexton>
+					2.09 2.09 -0.0982223 0.120652
+					<!--BW_String-->
+				</uk:GB27_Sexton>
+				<uk:GB28_Bishop>
+					2.03 2.03 -0.30586 0.00999967
+					<!--BW_String-->
+				</uk:GB28_Bishop>
+				<uk:GB33_Sentinel_AC_I>
+					1.44 1.44 0.01 -0.0518321
+					<!--BW_String-->
+				</uk:GB33_Sentinel_AC_I>
+				<uk:GB39_Universal_CarrierQF2>
+					1.22 1.22 0.00999548 -0.236633
+					<!--BW_String-->
+				</uk:GB39_Universal_CarrierQF2>
+				<uk:GB41_Challenger>
+					1.24 1.24 0.01 0.01
+					<!--BW_String-->
+				</uk:GB41_Challenger>
+				<uk:GB42_Valentine_AT>
+					0.54 0.54 0.01 0.01
+					<!--BW_String-->
+				</uk:GB42_Valentine_AT>
+				<uk:GB44_Archer>
+					1.83 1.83 -0.16538 0.0100003
+					<!--BW_String-->
+				</uk:GB44_Archer>
+				<uk:GB50_Sherman_III>
+					1.5 1.5 0.01 -0.114931
+					<!--BW_String-->
+				</uk:GB50_Sherman_III>
+				<uk:GB51_Excelsior>
+					0.91 0.91 0.01 0.01
+					<!--BW_String-->
+				</uk:GB51_Excelsior>
+				<uk:GB57_Alecto>
+					1.27 1.27 0.01 0.01
+					<!--BW_String-->
+				</uk:GB57_Alecto>
+				<uk:GB58_Cruiser_Mk_III>
+					2.58 2.58 0.494515 0.218326
+					<!--BW_String-->
+				</uk:GB58_Cruiser_Mk_III>
+				<uk:GB59_Cruiser_Mk_IV>
+					1.89 1.89 0.0099997 -0.220359
+					<!--BW_String-->
+				</uk:GB59_Cruiser_Mk_IV>
+				<uk:GB60_Covenanter>
+					1.73 1.73 0.01 0.01
+					<!--BW_String-->
+				</uk:GB60_Covenanter>
+				<uk:GB68_Matilda_Black_Prince>
+					1.25 1.25 0.00999994 0.257906
+					<!--BW_String-->
+				</uk:GB68_Matilda_Black_Prince>
+				<uk:GB69_Cruiser_Mk_II>
+					2.48 2.48 0.00999928 -0.346859
+					<!--BW_String-->
+				</uk:GB69_Cruiser_Mk_II>
+				<uk:GB73_AT2>
+					1.1 1.1 0.247231 0.0100001
+					<!--BW_String-->
+				</uk:GB73_AT2>
+				<uk:GB76_Mk_VIC>
+					1.56 1.56 0.01 0.01
+					<!--BW_String-->
+				</uk:GB76_Mk_VIC>
+				<uk:GB78_Sexton_I>
+					1.36 1.36 0.01 0.01
+					<!--BW_String-->
+				</uk:GB78_Sexton_I>
+				<usa:A01_T1_Cunningham>
+					2 2 -0.89 -0.13
+					<!--BW_String-->
+				</usa:A01_T1_Cunningham>
+				<usa:A02_M2_lt>
+					3.03 3.03 0.186209 -0.342283
+					<!--BW_String-->
+				</usa:A02_M2_lt>
+				<usa:A03_M3_Stuart>
+					1.94 1.94 0.01 0.01
+					<!--BW_String-->
+				</usa:A03_M3_Stuart>
+				<usa:A04_M3_Grant>
+					2.68 2.68 -0.49747 0.00999989
+					<!--BW_String-->
+				</usa:A04_M3_Grant>
+				<usa:A05_M4_Sherman>
+					2.33 2.33 -0.920029 -0.125686
+					<!--BW_String-->
+				</usa:A05_M4_Sherman>
+				<usa:A09_T1_hvy>
+					2.22 2.22 -0.496095 0.01
+					<!--BW_String-->
+				</usa:A09_T1_hvy>
+				<usa:A100_T49>
+					0.88 0.88 0.00999982 -0.240721
+					<!--BW_String-->
+				</usa:A100_T49>
+				<usa:A107_T1_HMC>
+					2.03 2.03 0.0100046 0.202528
+					<!--BW_String-->
+				</usa:A107_T1_HMC>
+				<usa:A108_T18_HMC>
+					1.16 1.16 0.01 0.01
+					<!--BW_String-->
+				</usa:A108_T18_HMC>
+				<usa:A109_T56_GMC>
+					1.69 1.69 0.01 0.01
+					<!--BW_String-->
+				</usa:A109_T56_GMC>
+				<usa:A13_T34_hvy>
+					2.3 2.3 0.15 0.01
+					<!--BW_String-->
+				</usa:A13_T34_hvy>
+				<usa:A16_M7_Priest>
+					2.01 2.01 0.01 0.01
+					<!--BW_String-->
+				</usa:A16_M7_Priest>
+				<usa:A17_M37>
+					1.23 1.23 0.138469 0.0100001
+					<!--BW_String-->
+				</usa:A17_M37>
+				<usa:A18_M41>
+					2.67 2.67 0.363596 0.0100005
+					<!--BW_String-->
+				</usa:A18_M41>
+				<usa:A19_T2_lt>
+					1.54 1.54 0.431256 0.0099946
+					<!--BW_String-->
+				</usa:A19_T2_lt>
+				<usa:A21_T14>
+					1.63 1.63 0.141987 -0.387364
+					<!--BW_String-->
+				</usa:A21_T14>
+				<usa:A22_M5_Stuart>
+					2.25 2.25 -0.207092 -0.0763455
+					<!--BW_String-->
+				</usa:A22_M5_Stuart>
+				<usa:A23_M7_med>
+					1.66 1.66 0.312226 -0.371571
+					<!--BW_String-->
+				</usa:A23_M7_med>
+				<usa:A23_M7_med_02>
+					1.66 1.66 0.312226 -0.371571
+					<!--BW_String-->
+				</usa:A23_M7_med_02>
+				<usa:A24_T2_med>
+					1.63 1.63 -0.553697 0.00999792
+					<!--BW_String-->
+				</usa:A24_T2_med>
+				<usa:A25_M2_med>
+					2.18 2.18 0.243647 0.130561
+					<!--BW_String-->
+				</usa:A25_M2_med>
+				<usa:A27_T82>
+					1.75 1.75 0.01 0.01
+					<!--BW_String-->
+				</usa:A27_T82>
+				<usa:A29_T40>
+					2.48 2.48 0.01 0.01
+					<!--BW_String-->
+				</usa:A29_T40>
+				<usa:A30_M10_Wolverine>
+					2.04 2.04 -0.306615 0.00999998
+					<!--BW_String-->
+				</usa:A30_M10_Wolverine>
+				<usa:A33_MTLS-1G14>
+					1.19 1.19 -0.319096 -0.365296
+					<!--BW_String-->
+				</usa:A33_MTLS-1G14>
+				<usa:A34_M24_Chaffee>
+					1.83 1.83 -0.421456 0.00999922
+					<!--BW_String-->
+				</usa:A34_M24_Chaffee>
+				<usa:A43_M22_Locust>
+					1.42 1.42 0.00768497 0.571093
+					<!--BW_String-->
+				</usa:A43_M22_Locust>
+				<usa:A44_M4A2E4>
+					1.69 1.69 0.01 0.01
+					<!--BW_String-->
+				</usa:A44_M4A2E4>
+				<usa:A46_T3>
+					1.92 1.92 -0.0324925 0.0133009
+					<!--BW_String-->
+				</usa:A46_T3>
+				<usa:A57_M8A1>
+					2.52 2.52 0.01 0.01
+					<!--BW_String-->
+				</usa:A57_M8A1>
+				<usa:A58_T67>
+					1.5 1.5 0.00999898 0.299223
+					<!--BW_String-->
+				</usa:A58_T67>
+				<usa:A62_Ram-II>
+					2.24 2.24 -0.368238 0.447362
+					<!--BW_String-->
+				</usa:A62_Ram-II>
+				<usa:A74_T1_E6>
+					0.94 0.94 0.183906 -0.203074
+					<!--BW_String-->
+				</usa:A74_T1_E6>
+				<usa:A78_M4_Improved>
+					1.46 1.46 -0.0521575 0.234414
+					<!--BW_String-->
+				</usa:A78_M4_Improved>
+				<usa:A93_T7_Combat_Car>
+					1.88 1.88 -0.670179 -0.335981
+					<!--BW_String-->
+				</usa:A93_T7_Combat_Car>
+				<ussr:R02_SU-85>
+					1.97 1.97 0.01 0.01
+					<!--BW_String-->
+				</ussr:R02_SU-85>
+				<ussr:R03_BT-7>
+					1.92 1.92 0.01 0.01
+					<!--BW_String-->
+				</ussr:R03_BT-7>
+				<ussr:R04_T-34>
+					1.87 1.87 0.715173 0.0100002
+					<!--BW_String-->
+				</ussr:R04_T-34>
+				<ussr:R06_T-28>
+					1.08 1.08 -0.00014321 -0.232418
+					<!--BW_String-->
+				</ussr:R06_T-28>
+				<ussr:R08_BT-2>
+					1.23 1.23 -0.382794 0.00999919
+					<!--BW_String-->
+				</ussr:R08_BT-2>
+				<ussr:R09_T-26>
+					2.06 2.06 0.01 0.01
+					<!--BW_String-->
+				</ussr:R09_T-26>
+				<ussr:R100_SU122A>
+					2.66 2.66 0.01 0.01
+					<!--BW_String-->
+				</ussr:R100_SU122A>
+				<ussr:R105_BT_7A>
+					1.69 1.69 0.0105822 -0.240659
+					<!--BW_String-->
+				</ussr:R105_BT_7A>
+				<ussr:R10_AT-1>
+					1.62 1.62 0.01 0.01
+					<!--BW_String-->
+				</ussr:R10_AT-1>
+				<ussr:R118_T28_F30>
+					1.99 1.99 0.01 0.01
+					<!--BW_String-->
+				</ussr:R118_T28_F30>
+				<ussr:R11_MS-1>
+					2.3 2.3 -0.57 0.75
+					<!--BW_String-->
+				</ussr:R11_MS-1>
+				<ussr:R121_KV4_KTT>
+					2.3 2.3 0.01 0.01
+					<!--BW_String-->
+				</ussr:R121_KV4_KTT>
+				<ussr:R125_T_45>
+					0.33 0.33 0.00999327 -0.462022
+					<!--BW_String-->
+				</ussr:R125_T_45>
+				<ussr:R12_A-20>
+					0.86 0.86 -0.483345 0.00999954
+					<!--BW_String-->
+				</ussr:R12_A-20>
+				<ussr:R13_KV-1s>
+					0.94 0.94 0.01 0.01
+					<!--BW_String-->
+				</ussr:R13_KV-1s>
+				<ussr:R143_T_29>
+					0.77 0.77 0.01 0.01
+					<!--BW_String-->
+				</ussr:R143_T_29>
+				<ussr:R14_SU-5>
+					2.23 2.23 -0.31146 0.0099985
+					<!--BW_String-->
+				</ussr:R14_SU-5>
+				<ussr:R154_T_34E_1943>
+					1.18 1.18 0.01 0.01
+					<!--BW_String-->
+				</ussr:R154_T_34E_1943>
+				<ussr:R161_T_116>
+					0.89 0.89 0.0100013 -0.365604
+					<!--BW_String-->
+				</ussr:R161_T_116>
+				<ussr:R16_SU-18>
+					2.86 2.86 0.0100739 -0.450719
+					<!--BW_String-->
+				</ussr:R16_SU-18>
+				<ussr:R20_T-44>
+					2.5 2.5 -0.12 -0.12
+					<!--BW_String-->
+				</ussr:R20_T-44>
+				<ussr:R22_T-46>
+					1.84 1.84 0.00999936 -0.280148
+					<!--BW_String-->
+				</ussr:R22_T-46>
+				<ussr:R24_SU-76>
+					1.36 1.36 0.313487 0.0100014
+					<!--BW_String-->
+				</ussr:R24_SU-76>
+				<ussr:R25_GAZ-74b>
+					1.4 1.4 -0.543584 0.00999792
+					<!--BW_String-->
+				</ussr:R25_GAZ-74b>
+				<ussr:R31_Valentine_LL>
+					2.4 2.4 -0.513984 0.0100011
+					<!--BW_String-->
+				</ussr:R31_Valentine_LL>
+				<ussr:R32_Matilda_II_LL>
+					0.58 0.58 0.01 0.01
+					<!--BW_String-->
+				</ussr:R32_Matilda_II_LL>
+				<ussr:R33_Churchill_LL>
+					1.03 1.03 0.01 0.01
+					<!--BW_String-->
+				</ussr:R33_Churchill_LL>
+				<ussr:R34_BT-SV>
+					0.61 0.61 -0.248357 0.00999955
+					<!--BW_String-->
+				</ussr:R34_BT-SV>
+				<ussr:R38_KV-220>
+					1.36 1.36 -0.288092 0.00999999
+					<!--BW_String-->
+				</ussr:R38_KV-220>
+				<ussr:R38_KV-220_beta>
+					1.42 1.42 0.01 0.01
+					<!--BW_String-->
+				</ussr:R38_KV-220_beta>
+				<ussr:R41_T-50>
+					1.77 1.77 0.01 0.01
+					<!--BW_String-->
+				</ussr:R41_T-50>
+				<ussr:R42_T-60>
+					0.6 0.6 -0.858963 0.383636
+					<!--BW_String-->
+				</ussr:R42_T-60>
+				<ussr:R43_T-70>
+					1.03 1.03 0.0100006 -0.0753615
+					<!--BW_String-->
+				</ussr:R43_T-70>
+				<ussr:R44_T80>
+					2.24 2.24 -0.855974 0.00999412
+					<!--BW_String-->
+				</ussr:R44_T80>
+				<ussr:R45_IS-7>
+					2.1 2.1 0.01 0.01
+					<!--BW_String-->
+				</ussr:R45_IS-7>
+				<ussr:R50_SU76I>
+					2.02 2.02 -0.440762 0.0100005
+					<!--BW_String-->
+				</ussr:R50_SU76I>
+				<ussr:R56_T-127>
+					1.55 1.55 0.010002 -0.372448
+					<!--BW_String-->
+				</ussr:R56_T-127>
+				<ussr:R66_SU-26>
+					0.6 0.6 0.01 0.01
+					<!--BW_String-->
+				</ussr:R66_SU-26>
+				<ussr:R67_M3_LL>
+					1.33 1.33 0.11525 0.0102362
+					<!--BW_String-->
+				</ussr:R67_M3_LL>
+				<ussr:R68_A-32>
+					0.62 0.62 0.00999987 0.185464
+					<!--BW_String-->
+				</ussr:R68_A-32>
+				<ussr:R78_SU_85I>
+					1.08 1.08 0.0100004 0.370542
+					<!--BW_String-->
+				</ussr:R78_SU_85I>
+				<ussr:R80_KV1>
+					2.12 2.12 0.01 0.379289
+					<!--BW_String-->
+				</ussr:R80_KV1>
+				<ussr:R84_Tetrarch_LL>
+					0.82 0.82 0.100523 -0.296131
+					<!--BW_String-->
+				</ussr:R84_Tetrarch_LL>
+				<ussr:R86_LTP>
+					1.65 1.65 0.01 0.01
+					<!--BW_String-->
+				</ussr:R86_LTP>
+			</tiling>
+			<tilingSettings>
+				<type>relative</type>
+				<factor>
+					1.5 1.5
+					<!--BW_String-->
+				</factor>
+				<offset>
+					0.000000 -0.05
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+		</camouflage>
+	</itemGroup>
+</root>

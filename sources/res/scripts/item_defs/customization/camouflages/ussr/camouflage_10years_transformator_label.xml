@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<xmlns:ussr>ussr</xmlns:ussr>
+	<xmlns:germany>germany</xmlns:germany>
+	<xmlns:usa>usa</xmlns:usa>
+	<xmlns:china>china</xmlns:china>
+	<xmlns:france>france</xmlns:france>
+	<xmlns:uk>uk</xmlns:uk>
+	<xmlns:japan>japan</xmlns:japan>
+	<xmlns:czech>czech</xmlns:czech>
+	<xmlns:sweden>sweden</xmlns:sweden>
+	<xmlns:poland>poland</xmlns:poland>
+	<xmlns:italy>italy</xmlns:italy>
+	<xmlns:intunion>intunion</xmlns:intunion>
+	<itemGroup>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<include>
+				<vehicles>ussr:R38_KV-220 ussr:R38_KV-220_beta</vehicles>
+			</include>
+			<exclude>
+				<vehicles>ussr:R47_ISU-152_Zveroboj</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<camouflage>
+			<id>104</id>
+			<texture>vehicles/russian/Camouflage/10years_transformator.dds</texture>
+			<description>#vehicle_customization:camouflage/10years_transformator/description</description>
+			<scales>
+				1.3 1 0.7
+				<!--BW_String-->
+			</scales>
+			<userString>#vehicle_customization:camouflage/10years_transformator/label</userString>
+			<tags>hiddenInUI</tags>
+			<invisibilityFactor>1</invisibilityFactor>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<tiling>
+				<ussr:R38_KV-220>
+					2.2 2.2 0.22 1
+					<!--BW_String-->
+				</ussr:R38_KV-220>
+				<ussr:R38_KV-220_beta>
+					2.35 2.35 0.22 0.99
+					<!--BW_String-->
+				</ussr:R38_KV-220_beta>
+			</tiling>
+			<tilingSettings>
+				<type>relative</type>
+				<factor>
+					2.390943  2.389612
+					<!--BW_String-->
+				</factor>
+				<offset>0.000000 0.000000</offset>
+			</tilingSettings>
+		</camouflage>
+	</itemGroup>
+</root>

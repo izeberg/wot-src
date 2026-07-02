@@ -4,4 +4,8 @@
 	<parent>vehicles/american/A153_XM66F/crash/lod1/Gun_01</parent>
 	<extent>32.000000</extent>
 	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.415000 -0.394790 -2.241314</min>
+		<max>0.415000 0.394790 5.938765</max>
+	</visibilityBox>
 </root>

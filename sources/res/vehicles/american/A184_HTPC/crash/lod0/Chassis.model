@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-1.718066 -0.000209 -3.493962</min>
+		<max>1.717107 1.091633 3.322534</max>
+	</visibilityBox>
+	<parent>vehicles/american/A184_HTPC/crash/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/american/A184_HTPC/crash/lod0/Chassis</nodefullVisual>
+</root>

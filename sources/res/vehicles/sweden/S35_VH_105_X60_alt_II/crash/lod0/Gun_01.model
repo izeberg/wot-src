@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-0.292506 -0.426514 -0.545758</min>
+		<max>0.302952 0.446251 4.549000</max>
+	</visibilityBox>
+	<parent>vehicles/sweden/S35_VH_105_X60_alt_II/crash/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodelessVisual>vehicles/sweden/S35_VH_105_X60_alt_II/crash/lod0/Gun_01</nodelessVisual>
+</root>

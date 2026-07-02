@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<xmlns:ussr>ussr</xmlns:ussr>
+	<xmlns:germany>germany</xmlns:germany>
+	<xmlns:usa>usa</xmlns:usa>
+	<xmlns:china>china</xmlns:china>
+	<xmlns:france>france</xmlns:france>
+	<xmlns:uk>uk</xmlns:uk>
+	<xmlns:japan>japan</xmlns:japan>
+	<xmlns:czech>czech</xmlns:czech>
+	<xmlns:sweden>sweden</xmlns:sweden>
+	<xmlns:poland>poland</xmlns:poland>
+	<xmlns:italy>italy</xmlns:italy>
+	<xmlns:intunion>intunion</xmlns:intunion>
+	<itemGroup>
+		<season>ALL</season>
+		<historical>1</historical>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+		<camouflage>
+			<id>31063</id>
+			<texture>vehicles/russian/Camouflage/compendium_4_2024_MT.dds</texture>
+			<description>#vehicle_customization:camouflage/compendium_4_2024_MT/description</description>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<userString>#vehicle_customization:camouflage/compendium_4_2024_MT</userString>
+			<invisibilityFactor>1</invisibilityFactor>
+			<tags>fullRGB styleOnly hiddenInUI</tags>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<rotation>
+				<HULL>-0.959931</HULL>
+				<TURRET>-0.959931</TURRET>
+				<GUN>-0.959931</GUN>
+			</rotation>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>
+					2.3 2.3
+					<!--BW_String-->
+				</factor>
+				<offset>
+					4.39 3.14
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+			<tiling>
+				<japan:J28_O_I_100>
+					1.6 1.6 -0.04 -0.98
+					<!--BW_String-->
+				</japan:J28_O_I_100>
+				<ussr:R45_IS-7>
+					3.7 3.7 -0.23 1.44
+					<!--BW_String-->
+				</ussr:R45_IS-7>
+				<germany:G121_Grille_15_L63>
+					7.7 7.7 -0.13 1.01
+					<!--BW_String-->
+				</germany:G121_Grille_15_L63>
+				<uk:GB83_FV4005>
+					3.3 3.3 0.6 0.48
+					<!--BW_String-->
+				</uk:GB83_FV4005>
+				<germany:G73_E50_Ausf_M>
+					2.1 2.1 0.25 0.45
+					<!--BW_String-->
+				</germany:G73_E50_Ausf_M>
+				<italy:It20_Carro_Combattimento_45t>
+					2.3 2.3 -0.79 0.4
+					<!--BW_String-->
+				</italy:It20_Carro_Combattimento_45t>
+				<france:F18_Bat_Chatillon25t>
+					2.2 2.2 -0.01 1.04
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_7x7>
+					2.2 2.2 -0.01 1.04
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_7x7>
+				<france:F10_AMX_50B>
+					1.7 1.7 -0.73 -0.08
+					<!--BW_String-->
+				</france:F10_AMX_50B>
+				<france:F10_AMX_50B_bob>
+					1.7 1.7 -0.73 -0.08
+					<!--BW_String-->
+				</france:F10_AMX_50B_bob>
+				<france:F82_AMX_M4_Mle1949_Ter>
+					4.3 4.3 -0.34 -0.37
+					<!--BW_String-->
+				</france:F82_AMX_M4_Mle1949_Ter>
+				<china:Ch03_WZ-111>
+					2 2 0.9 1.56
+					<!--BW_String-->
+				</china:Ch03_WZ-111>
+				<czech:Cz04_T50_51>
+					4.7 4.7 -0.84 1.17
+					<!--BW_String-->
+				</czech:Cz04_T50_51>
+				<usa:A67_T57_58>
+					3.3 3.3 1.87 -1.32
+					<!--BW_String-->
+				</usa:A67_T57_58>
+				<uk:GB91_Super_Conqueror>
+					1.5 1.5 -1.9 0.48
+					<!--BW_String-->
+				</uk:GB91_Super_Conqueror>
+				<germany:G99_RhB_Waffentrager>
+					4.1 4.1 0.07 1.12
+					<!--BW_String-->
+				</germany:G99_RhB_Waffentrager>
+			</tiling>
+		</camouflage>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R47_ISU-152_Zveroboj ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+	</itemGroup>
+</root>

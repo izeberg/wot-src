@@ -14,7 +14,7 @@ from gui.shared.gui_items.customization import C11nStyleProgressData
 from helpers import time_utils, i18n, dependency, isPlayerAccount
 from shared_utils import CONST_CONTAINER, findFirst, first
 from skeletons.gui.customization import ICustomizationService
-from skeletons.gui.game_control import IMarathonEventsController, IArmoryYardController, IDebutBoxesController, IEarlyAccessController, ISummerSaleController
+from skeletons.gui.game_control import IMarathonEventsController, IArmoryYardController, IDebutBoxesController, IEarlyAccessController, ISummerSaleController, ITankAcademyController
 from skeletons.gui.lobby_context import ILobbyContext
 from skeletons.gui.server_events import IEventsCache
 from skeletons.gui.shared import IItemsCache
@@ -383,7 +383,7 @@ def isDailyQuest(eventID):
 
 def isDailySubsQuest--- This code section failed: ---
 
- L. 506         0  LOAD_FAST             0  'eventID'
+ L. 507         0  LOAD_FAST             0  'eventID'
                 3  POP_JUMP_IF_FALSE    31  'to 31'
                 6  LOAD_FAST             0  'eventID'
                 9  LOAD_ATTR             0  'startswith'
@@ -405,7 +405,7 @@ Parse error at or near `None' instruction at offset -1
 
 def isDailyPremiumQuest--- This code section failed: ---
 
- L. 513         0  LOAD_FAST             0  'eventID'
+ L. 514         0  LOAD_FAST             0  'eventID'
                 3  POP_JUMP_IF_FALSE    31  'to 31'
                 6  LOAD_FAST             0  'eventID'
                 9  LOAD_ATTR             0  'startswith'
@@ -676,10 +676,10 @@ def isActiveEarlyAccessQuest(eventID, earlyAccessCtrl=None):
 
 
 @dependency.replace_none_kwargs(lobbyContext=ILobbyContext)
-def isPlayStreakEnable(lobbyContext=None):
-    return lobbyContext.getServerSettings().getPlayStreakConfig().get('isEnabled', False)
-
-
-@dependency.replace_none_kwargs(lobbyContext=ILobbyContext)
 def isIngameBrowserEventEnable(lobbyContext=None):
-    return lobbyContext.getServerSettings().getIngameBrowserEventConfig().get('isEnabled', False)# Decompile failed :(
+    return lobbyContext.getServerSettings().getIngameBrowserEventConfig().get('isEnabled', False)
+
+
+@dependency.replace_none_kwargs(tankAcademyController=ITankAcademyController)
+def isTankAcademyQuest(eventID, tankAcademyController=None):
+    return tankAcademyController.isTankAcademyQuestID(eventID)# Decompile failed :(

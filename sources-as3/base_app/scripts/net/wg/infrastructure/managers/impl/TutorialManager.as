@@ -468,8 +468,7 @@ package net.wg.infrastructure.managers.impl
                   else if(_loc16_ == PARTIAL_MATCH)
                   {
                      _loc17_ = this.makeFullPath(param1,_loc12_);
-                     _loc18_ = this._fullPathToVO[_loc17_];
-                     if(_loc18_.foundComponent == null)
+                     if(_loc18_.foundComponent == null || _loc18_.foundComponent.stage == null)
                      {
                         _loc19_ = _loc12_.match(CRITERIA_REG_EXP);
                         _loc20_ = true;

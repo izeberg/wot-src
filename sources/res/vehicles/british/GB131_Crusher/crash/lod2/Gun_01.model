@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB131_Crusher/crash/lod2/Gun_01</nodefullVisual>
+	<parent>vehicles/british/GB131_Crusher/crash/lod3/Gun_01</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.607642 -0.375925 -1.250305</min>
+		<max>0.607718 0.419432 4.215120</max>
+	</visibilityBox>
+</root>

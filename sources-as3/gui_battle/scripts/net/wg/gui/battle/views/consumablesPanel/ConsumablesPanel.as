@@ -318,18 +318,22 @@ package net.wg.gui.battle.views.consumablesPanel
          {
             this._abilityModifier = this._classFactory.getComponent(Linkages.ABILITY_MODIFIER_INDICATOR,BattleAbilityModifierIndicator);
             addChildAt(this._abilityModifier,Values.ZERO);
+         }
+         this._abilityModifier.visible = this._shellSlots > Values.ZERO;
+         if(this._abilityModifier.visible)
+         {
             this._abilityModifier.shellSlots = this._shellSlots;
             this._abilityModifier.shellPadding = this._itemsPadding;
             this._abilityModifier.isSmall = this._itemsPadding == ITEM_WIDTH_SHORT_PADDING;
             this._abilityModifier.updateAnimationsSettings(this._isExtendedAnim);
-         }
-         if(param1 <= Values.ZERO)
-         {
-            this._abilityModifier.hide(param2);
-         }
-         else
-         {
-            this._abilityModifier.show(param1,param2);
+            if(param1 > Values.ZERO)
+            {
+               this._abilityModifier.show(param1,param2);
+            }
+            else
+            {
+               this._abilityModifier.hide(param2);
+            }
          }
       }
       

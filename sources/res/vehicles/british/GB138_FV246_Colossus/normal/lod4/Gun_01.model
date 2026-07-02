@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/british/GB138_FV246_Colossus/normal/lod4/Gun_01</nodefullVisual>
+	<visibilityBox>
+		<min>-0.753027 -0.317649 -0.189870</min>
+		<max>0.726869 0.258180 4.265014</max>
+	</visibilityBox>
+</root>

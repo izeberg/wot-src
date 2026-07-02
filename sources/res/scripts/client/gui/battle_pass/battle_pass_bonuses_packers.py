@@ -5,7 +5,7 @@ from battle_pass_common import BATTLE_PASS_Q_CHAIN_BONUS_NAME, BATTLE_PASS_RANDO
 from gui.Scaleform.genConsts.TOOLTIPS_CONSTANTS import TOOLTIPS_CONSTANTS
 from gui.battle_pass.battle_pass_helpers import getOfferTokenByGift, getSingleVehicleForCustomization, getStyleForChapter
 from gui.impl import backport
-from gui.impl.backport import TooltipData
+from gui.impl.backport import createTooltipData
 from gui.impl.gen import R
 from gui.impl.gen.view_models.common.missions.bonuses.bonus_model import BonusModel
 from gui.impl.gen.view_models.common.missions.bonuses.token_bonus_model import TokenBonusModel
@@ -32,6 +32,7 @@ if typing.TYPE_CHECKING:
     from gui.server_events.bonuses import TokensBonus
     from typing import Optional
     from gui.server_events.recruit_helper import _BaseRecruitInfo
+    from gui.impl.backport import TooltipData
 _logger = logging.getLogger(__name__)
 
 def getBattlePassBonusPackersMap():
@@ -100,7 +101,7 @@ def packBonusModelAndTooltipData(bonuses, bonusModelsList, tooltipData=None, pac
 
 
 def packSpecialTooltipData(specialReward, specialRewardItems, *args):
-    specialRewardItems[specialReward] = TooltipData(tooltip=None, isSpecial=True, specialAlias=specialReward, specialArgs=args)
+    specialRewardItems[specialReward] = createTooltipData(tooltip=None, isSpecial=True, specialAlias=specialReward, specialArgs=args)
     return
 
 
@@ -166,7 +167,7 @@ class TmanTemplateBonusPacker(_BattlePassFinalBonusPacker):
         tooltipData = []
         for tokenID in bonus.getTokens().iterkeys():
             if tokenID.startswith(RECRUIT_TMAN_TOKEN_PREFIX):
-                tooltipData.append(TooltipData(tooltip=None, isSpecial=True, specialAlias=TOOLTIPS_CONSTANTS.TANKMAN_NOT_RECRUITED, specialArgs=[
+                tooltipData.append(createTooltipData(tooltip=None, isSpecial=True, specialAlias=TOOLTIPS_CONSTANTS.TANKMAN_NOT_RECRUITED, specialArgs=[
                  tokenID]))
 
         return tooltipData
@@ -240,7 +241,7 @@ class BattlePassCustomizationsBonusPacker(_BattlePassFinalBonusPacker):
                 if vehicle is not None:
                     specialAlias = TOOLTIPS_CONSTANTS.TECH_CUSTOMIZATION_ITEM
                     specialArgs = CustomizationTooltipContext(itemCD=itemCustomization.intCD, vehicleIntCD=vehicle)
-            tooltipData.append(TooltipData(tooltip=None, isSpecial=True, specialAlias=specialAlias, specialArgs=specialArgs))
+            tooltipData.append(createTooltipData(tooltip=None, isSpecial=True, specialAlias=specialAlias, specialArgs=specialArgs))
 
         return tooltipData
 
@@ -356,7 +357,7 @@ class SelectBonusPacker(BaseBonusUIPacker):
     def _getToolTip(cls, bonus):
         tooltipData = []
         for tokenID in bonus.getTokens().iterkeys():
-            tooltipData.append(TooltipData(tooltip=None, isSpecial=True, specialAlias=TOOLTIPS_CONSTANTS.BATTLE_PASS_GIFT_TOKEN, specialArgs=[
+            tooltipData.append(createTooltipData(tooltip=None, isSpecial=True, specialAlias=TOOLTIPS_CONSTANTS.BATTLE_PASS_GIFT_TOKEN, specialArgs=[
              tokenID] + [bonus.getContext().get('isReceived', True)]))
 
         return tooltipData
@@ -416,7 +417,7 @@ class BattlePassStyleProgressTokenBonusPacker(_BattlePassFinalBonusPacker):
         chapter = bonus.getChapter()
         level = bonus.getLevel()
         return [
-         TooltipData(tooltip=None, isSpecial=True, specialAlias=None, specialArgs=[
+         createTooltipData(tooltip=None, isSpecial=True, specialAlias=None, specialArgs=[
           chapter, level])]
 
     @classmethod
@@ -521,7 +522,7 @@ class QuestChainBonusPacker(SimpleBonusUIPacker):
     @classmethod
     def _getToolTip(cls, bonus):
         return [
-         TooltipData(tooltip=None, isSpecial=True, specialAlias=None, specialArgs=[
+         createTooltipData(tooltip=None, isSpecial=True, specialAlias=None, specialArgs=[
           bonus.tokenID])]
 
 
@@ -548,7 +549,7 @@ class RandomQuestBonusPacker(SimpleBonusUIPacker):
     @classmethod
     def _getToolTip(cls, bonus):
         return [
-         TooltipData(tooltip=None, isSpecial=True, specialAlias=None, specialArgs=[
+         createTooltipData(tooltip=None, isSpecial=True, specialAlias=None, specialArgs=[
           bonus.tokenID])]
 
 
@@ -711,7 +712,7 @@ class BattlePassDogTagComponentsUIPacker(DogTagComponentsUIPacker):
 
     @classmethod
     def _getDogTagTooltip(cls, dogTagRecord, withBackground=None):
-        return TooltipData(tooltip=None, isSpecial=True, specialAlias=TOOLTIPS_CONSTANTS.DOG_TAGS_INFO, specialArgs=[
+        return createTooltipData(tooltip=None, isSpecial=True, specialAlias=TOOLTIPS_CONSTANTS.DOG_TAGS_INFO, specialArgs=[
          dogTagRecord.componentId, None, withBackground])
 
 

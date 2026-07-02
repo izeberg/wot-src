@@ -2,7 +2,7 @@ import typing
 from constants import ROLE_TYPE_TO_LABEL
 from gui.Scaleform.daapi.view.lobby.server_events.awards_formatters import SimpleBonusFormatter
 from gui.impl import backport
-from gui.impl.backport import TooltipData
+from gui.impl.backport import createTooltipData
 from gui.impl.gen import R
 from gui.impl.gen.view_models.common.missions.bonuses.token_bonus_model import TokenBonusModel
 from gui.server_events.awards_formatters import AwardsPacker, QuestsBonusComposer
@@ -21,6 +21,7 @@ from items.tankmen import RECRUIT_TMAN_TOKEN_PREFIX
 if typing.TYPE_CHECKING:
     from gui.server_events.bonuses import TmanTemplateTokensBonus
     from gui.server_events.bonuses import C11nProgressTokenBonus
+    from gui.impl.backport import TooltipData
 
 def getParagonsBonusPacker():
     mapping = getDefaultBonusPackersMap()
@@ -58,7 +59,7 @@ class ParagonsVehicleSelectorBonusUIPacker(SimpleBonusUIPacker):
     @classmethod
     def _getToolTip(cls, bonus):
         return [
-         TooltipData(tooltip=None, isSpecial=True, specialAlias=bonus.getName(), specialArgs=[
+         createTooltipData(tooltip=None, isSpecial=True, specialAlias=bonus.getName(), specialArgs=[
           bonus.getValue()])]
 
 
@@ -116,7 +117,7 @@ class ParagonsUnlockBonusUIPacker(SimpleBonusUIPacker):
     @classmethod
     def _getToolTip(cls, bonus):
         return [
-         TooltipData(tooltip=None, isSpecial=True, specialAlias=bonus.getName(), specialArgs=[
+         createTooltipData(tooltip=None, isSpecial=True, specialAlias=bonus.getName(), specialArgs=[
           next(iter(bonus.getValue().get('ids')))])]
 
 
@@ -150,7 +151,7 @@ class ParagonsProgressStyleBonusUIPacker(StyleProgressBonusUIPacker):
         branchID = bonus.getBranchID()
         progressLevel = bonus.getProgressLevel()
         style = getProgressionStyle(styleID, branchID, progressLevel)
-        tooltipData = TooltipData(tooltip=None, isSpecial=True, specialAlias=TOOLTIPS_CONSTANTS.TECH_CUSTOMIZATION_ITEM_AWARD, specialArgs=CustomizationTooltipContext(itemCD=style.intCD, showStatusBlock=False))
+        tooltipData = createTooltipData(tooltip=None, isSpecial=True, specialAlias=TOOLTIPS_CONSTANTS.TECH_CUSTOMIZATION_ITEM_AWARD, specialArgs=CustomizationTooltipContext(itemCD=style.intCD, showStatusBlock=False))
         return [
          tooltipData]
 

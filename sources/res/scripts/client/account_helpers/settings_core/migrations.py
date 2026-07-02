@@ -1557,6 +1557,16 @@ def _migrateTo145(core, data, initialized):
     data[GUI_START_BEHAVIOR][GuiSettingsBehavior.RANKED_WELCOME_VIEW_SHOWED] = False
 
 
+def _migrateTo146(core, data, initialized):
+    from account_helpers.settings_core.ServerSettingsManager import GUI_START_BEHAVIOR
+    data[GUI_START_BEHAVIOR][GuiSettingsBehavior.RANKED_WELCOME_VIEW_SHOWED] = False
+
+
+def _migrateTo147(core, data, initialized):
+    onceOnlyHintsData = data['onceOnlyHints3']
+    onceOnlyHintsData[OnceOnlyHints.BIRTHDAY_POSTBATTLE_TEAM_STATS_TAB_HINT] = False
+
+
 _versions = (
  (
   1, _initializeDefaultSettings, True, False, False),
@@ -1845,7 +1855,11 @@ _versions = (
  (
   144, _migrateTo144, False, False, False),
  (
-  145, _migrateTo145, False, False, False))
+  145, _migrateTo145, False, False, False),
+ (
+  146, _migrateTo146, False, False, False),
+ (
+  147, _migrateTo147, False, False, False))
 
 @adisp_async
 @adisp_process

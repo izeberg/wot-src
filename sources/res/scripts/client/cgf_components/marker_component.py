@@ -33,6 +33,16 @@ class LobbyFlashMarker(object):
     textKey = ComponentProperty(type=CGFMetaTypes.STRING, editorName='marker text key', value='#marathon:3dObject/showVideo')
     iconPosition = ComponentProperty(type=CGFMetaTypes.STRING, editorName='icon position', value='')
 
+    def __init__(self, icon=None, textKey=None, iconPosition=None):
+        super(LobbyFlashMarker, self).__init__()
+        if icon is not None:
+            self.icon = icon
+        if textKey is not None:
+            self.textKey = textKey
+        if iconPosition is not None:
+            self.iconPosition = iconPosition
+        return
+
 
 @registerComponent
 class LobbyFlashMarkerVisibility(object):

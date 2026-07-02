@@ -1263,6 +1263,9 @@ msgstr "Списано личных очков славы"
 msgid "platformCurrencyMsg/debited/freeXP"
 msgstr "Списано свободного опыта"
 
+msgid "platformCurrencyMsg/debited/goldenticket"
+msgstr "Списано золотых билетов"
+
 msgid "platformCurrencyMsg/debited/honey_coin"
 msgstr "Списано мёда"
 
@@ -1286,6 +1289,9 @@ msgstr "Начислено личных очков славы"
 
 msgid "platformCurrencyMsg/received/freeXP"
 msgstr "Получено свободного опыта"
+
+msgid "platformCurrencyMsg/received/goldenticket"
+msgstr "Начислено золотых билетов"
 
 msgid "platformCurrencyMsg/received/honey_coin"
 msgstr "Начислено мёда"
@@ -2484,6 +2490,26 @@ msgstr "От администрации получено юбилейных мо
 msgid "serviceChannelMessages/excludedMap/available/title"
 msgstr "Доступен дополнительный слот для исключения карты"
 
+msgid "serviceChannelMessages/excludedMap/event/disabled"
+msgstr ""
+"Слот для исключения карт за активное участие в событиях временно недоступен."
+
+msgid "serviceChannelMessages/excludedMap/event/enabled"
+msgstr ""
+"Слот для исключения карт за активное участие в событиях снова доступен."
+
+msgid "serviceChannelMessages/excludedMap/event/header"
+msgstr "Слот исключения карт"
+
+msgid "serviceChannelMessages/excludedMap/subscription/disabled"
+msgstr "Слот для исключения карт за активную подписку временно недоступен."
+
+msgid "serviceChannelMessages/excludedMap/subscription/enabled"
+msgstr "Слот для исключения карт за активную подписку снова доступен."
+
+msgid "serviceChannelMessages/excludedMap/subscription/header"
+msgstr "Слот исключения карт"
+
 msgid "serviceChannelMessages/excludedMap/unavailable/title"
 msgstr "?empty?"
 
@@ -3163,7 +3189,7 @@ msgid "serviceChannelMessages/offerTokenBonus/title"
 msgstr "Поставки из тыла"
 
 msgid "serviceChannelMessages/paragons/body"
-msgstr "Получен доступ к ветке техники."
+msgstr "Получен доступ к ветке техники."
 
 msgid ""
 "serviceChannelMessages/personalMission/3/earlyPerfectCompletion/congrats"
@@ -3195,54 +3221,6 @@ msgstr "Накопление серебра в хранилище приоста
 
 msgid "serviceChannelMessages/piggyBank/title"
 msgstr "Резервное хранилище открыто!"
-
-msgid "serviceChannelMessages/playStreakAvailable/body"
-msgstr "Задачи Цепи побед снова доступны для выполнения."
-
-msgid "serviceChannelMessages/playStreakCongrats/header"
-msgstr "Цепь побед"
-
-msgid "serviceChannelMessages/playStreakCongratsWithRewards/periodic/body"
-msgstr "Получена награда:"
-
-msgid "serviceChannelMessages/playStreakCongratsWithRewards/random/equipment"
-msgstr "Начислено случайное оборудование."
-
-msgid "serviceChannelMessages/playStreakCongratsWithRewards/random/goodie"
-msgstr "Начислены случайные резервы."
-
-msgid "serviceChannelMessages/playStreakCongratsWithRewards/random/prefix"
-msgstr "Добавлено: "
-
-msgid "serviceChannelMessages/playStreakCongratsWithRewards/regular/body"
-msgstr "Регулярное начисление:"
-
-msgid "serviceChannelMessages/playStreakCongratsWithoutRewards/body"
-msgstr "Задача %(savedData)s выполнена."
-
-msgid "serviceChannelMessages/playStreakDropProgress/body"
-msgstr "Прогресс события «Цепь побед» обнулён."
-
-msgid "serviceChannelMessages/playStreakFreezes/body"
-msgstr ""
-"Цепь побед была прервана. Для восстановления счётчика вам необходимо "
-"выполнить боевую задачу «Цепь побед» %(savedData)s раз."
-
-msgid "serviceChannelMessages/playStreakFreezesEnd/body"
-msgstr "Цепь побед восстановлена."
-
-msgid "serviceChannelMessages/playStreakFreezesInProgress/body"
-msgstr ""
-"Задача выполнена.\n"
-"Для восстановления счётчика осталось выполнить: %(savedData)s"
-
-msgid "serviceChannelMessages/playStreakPauseUsed/body"
-msgstr "Вы использовали паузу."
-
-msgid "serviceChannelMessages/playStreakUnavailable/body"
-msgstr ""
-"Выполнение задач Цепи побед временно недоступно.\n"
-"Попробуйте позже."
 
 msgid "serviceChannelMessages/prebattle/battleType/clan"
 msgstr "Клановый бой"

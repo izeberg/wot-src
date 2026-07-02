@@ -17,7 +17,7 @@ class ResMgr(object):
 
     @staticmethod
     def openSection(filepath, createIfMissing=False):
-        section = (IS_EDITOR or rmgr.openSection)(getRealmFilePath(filepath)) if 1 else None
+        section = rmgr.openSection(getRealmFilePath(filepath)) if not IS_CLIENT and not IS_EDITOR else None
         if section is not None:
             return section
         else:

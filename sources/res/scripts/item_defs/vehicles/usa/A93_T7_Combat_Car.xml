@@ -138,7 +138,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>5085</weight>
-		<maxHealth>240</maxHealth>
+		<maxHealth>300</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>90</maxHealth>
 			<maxRegenHealth>60</maxRegenHealth>
@@ -2228,7 +2228,7 @@
 			</terrainResistance>
 			<brakeForce>10500</brakeForce>
 			<rotationIsAroundCenter>false</rotationIsAroundCenter>
-			<rotationSpeed>44</rotationSpeed>
+			<rotationSpeed>50</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.26
@@ -3974,7 +3974,7 @@
 				</customizableVehicleAreas>
 			</customization>
 			<repairTime>
-				6.85714293
+				1.71001065
 				<!--BW_String-->
 			</repairTime>
 		</Chassis_T7_Combat_Car>
@@ -4029,8 +4029,8 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>800</weight>
-			<maxHealth>60</maxHealth>
-			<rotationSpeed>24</rotationSpeed>
+			<maxHealth>50</maxHealth>
+			<rotationSpeed>44</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>60</maxHealth>
 				<maxRegenHealth>30</maxRegenHealth>
@@ -4039,7 +4039,7 @@
 					<!--BW_String-->
 				</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>280</circularVisionRadius>
+			<circularVisionRadius>300</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>40</maxHealth>
 				<maxRegenHealth>20</maxRegenHealth>
@@ -4059,7 +4059,7 @@
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
-							1.1
+							0.5
 							<!--BW_String-->
 						</afterShot>
 						<whileGunDamaged>
@@ -4071,11 +4071,11 @@
 						<gun>10</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.53
+						0.5
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<aimingTime>
-						1.7
+						1.0
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>

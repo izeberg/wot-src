@@ -114,7 +114,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>7830</weight>
-		<maxHealth>384</maxHealth>
+		<maxHealth>450</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>100</maxHealth>
 			<maxRegenHealth>70</maxRegenHealth>
@@ -2289,11 +2289,11 @@
 			<rotationSpeed>35</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
-					0.32
+					0.26
 					<!--BW_String-->
 				</vehicleMovement>
 				<vehicleRotation>
-					0.32
+					0.26
 					<!--BW_String-->
 				</vehicleRotation>
 			</shotDispersionFactors>
@@ -4056,7 +4056,7 @@
 				</customizableVehicleAreas>
 			</customization>
 			<repairTime>
-				5.71428585
+				2.28001642
 				<!--BW_String-->
 			</repairTime>
 		</Chassis_Pz_IV_AusfA>
@@ -4079,11 +4079,11 @@
 			<rotationSpeed>40</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
-					0.29
+					0.24
 					<!--BW_String-->
 				</vehicleMovement>
 				<vehicleRotation>
-					0.29
+					0.24
 					<!--BW_String-->
 				</vehicleRotation>
 			</shotDispersionFactors>
@@ -5846,7 +5846,7 @@
 				</customizableVehicleAreas>
 			</customization>
 			<repairTime>
-				5.71428585
+				2.28001642
 				<!--BW_String-->
 			</repairTime>
 		</Chassis_Pz_IV_AusfA_2>
@@ -5890,7 +5890,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>1650</weight>
-			<maxHealth>71</maxHealth>
+			<maxHealth>80</maxHealth>
 			<rotationSpeed>44</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>70</maxHealth>
@@ -5939,7 +5939,7 @@
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
-						1.9
+						1.8
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -5947,7 +5947,7 @@
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<shotDispersionRadius>
-						0.46
+						0.42
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<effects>shot_medium</effects>
@@ -6036,7 +6036,7 @@
 						<maxPitch>0 10 1 10</maxPitch>
 					</pitchLimits>
 					<shotDispersionRadius>
-						0.51
+						0.48
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>4</reloadTime>
@@ -6980,7 +6980,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>1800</weight>
-			<maxHealth>96</maxHealth>
+			<maxHealth>100</maxHealth>
 			<rotationSpeed>44</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>70</maxHealth>
@@ -7024,7 +7024,7 @@
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
-						1.9
+						1.6
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -7032,7 +7032,7 @@
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<shotDispersionRadius>
-						0.46
+						0.40
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<effects>shot_medium</effects>
@@ -7119,12 +7119,12 @@
 						<maxPitch>0 10 1 10</maxPitch>
 					</pitchLimits>
 					<shotDispersionRadius>
-						0.5
+						0.46
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>4</reloadTime>
 					<aimingTime>
-						1.9
+						1.7
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>

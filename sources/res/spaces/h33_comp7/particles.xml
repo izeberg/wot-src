@@ -3,7 +3,11 @@
 	<forward>
 		<preloadTextures>
 			<path>
-				particles/content_forward/pfx_textures/eff_tex.dds
+				particles/content_forward/pfx_textures/eff_tex_split_splash_3.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_split_dirt.dds
 				<type>primary</type>
 			</path>
 			<path>
@@ -11,7 +15,23 @@
 				<type>primary</type>
 			</path>
 			<path>
+				particles/content_forward/pfx_textures/eff_tex_split_misc_2.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_split_smoke_5.dds
+				<type>primary</type>
+			</path>
+			<path>
 				particles/content_forward/pfx_textures/eff_tex_h33_comp7.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_split_misc_3.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_split_smoke_8.dds
 				<type>primary</type>
 			</path>
 		</preloadTextures>
@@ -59,7 +79,19 @@
 	<deferred>
 		<preloadTextures>
 			<path>
-				particles/content_deferred/pfx_textures/eff_tex.dds
+				particles/content_deferred/pfx_textures/eff_tex_h33_comp7.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_split_misc_3.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_split_splash_3.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_split_dirt.dds
 				<type>primary</type>
 			</path>
 			<path>
@@ -67,12 +99,20 @@
 				<type>primary</type>
 			</path>
 			<path>
-				particles/content_deferred/pfx_textures/eff_tex_water.dds
-				<type>water</type>
+				particles/content_deferred/pfx_textures/eff_tex_split_misc_2.dds
+				<type>primary</type>
 			</path>
 			<path>
-				particles/content_deferred/pfx_textures/eff_tex_h33_comp7.dds
+				particles/content_deferred/pfx_textures/eff_tex_split_smoke_5.dds
 				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_split_smoke_8.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_water.dds
+				<type>water</type>
 			</path>
 			<path>
 				particles/content_deferred/pfx_textures/eff_tex_distortion.dds

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/american/A184_HTPC/normal/lod1/Hull</parent>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/american/A184_HTPC/normal/lod0/Hull</nodefullVisual>
+	<visibilityBox>
+		<min>-1.726987 -0.536478 -3.735931</min>
+		<max>1.730713 0.622752 3.208910</max>
+	</visibilityBox>
+</root>

@@ -23,33 +23,33 @@
 			<type>vector3</type>
 			<frame>
 				<startTime>0.000000</startTime>
-				<value>-0.130502 1.526056 -1.931702</value>
+				<value>-0.130502 1.526056 -2.316292</value>
 				<inTangent>0.000000 0.000000 0.000000</inTangent>
 				<outTangent>0.000000 0.000000 0.000000</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 			<frame>
 				<startTime>3.400000</startTime>
-				<value>-0.130502 1.526056 -1.931702</value>
-				<inTangent>-0.000000 -0.000000 -0.000000</inTangent>
-				<outTangent>0.000000 0.000000 1.173902</outTangent>
-				<tangentMode>257</tangentMode>
+				<value>-0.130502 1.526056 -2.316292</value>
+				<inTangent>0.000000 0.000000 3.857528</inTangent>
+				<outTangent>0.000000 0.000000 3.857528</outTangent>
+				<tangentMode>0</tangentMode>
 			</frame>
 			<frame>
-				<startTime>3.866667</startTime>
-				<value>-0.130502 1.526056 -1.383881</value>
-				<inTangent>-0.000000 -0.000000 1.173902</inTangent>
-				<outTangent>-0.000000 -0.000000 1.173902</outTangent>
+				<startTime>3.533334</startTime>
+				<value>-0.130502 1.526056 -1.287617</value>
+				<inTangent>-0.000000 -0.000000 7.715057</inTangent>
+				<outTangent>-0.000000 -0.000000 7.715057</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 		</track>
 		<track>
-			<name>ay_ep_08_seq_stage_11</name>
+			<name>ay_ep_09_seq_stage_11</name>
 			<type>sound</type>
 			<frame>
 				<startTime>0.000000</startTime>
-				<duration>6.980417</duration>
-				<sequenceSound>ay_ep_08_seq_stage_11</sequenceSound>
+				<duration>7.000000</duration>
+				<sequenceSound>ay_seq_stage_11</sequenceSound>
 				<type>play_till_end</type>
 				<fade>0.000000</fade>
 			</frame>
@@ -58,7 +58,8 @@
 	<sequenceObject>
 		<name>stg_11_Exhaust</name>
 		<type>model</type>
-		<resource>content/Hangars/h00_armory_yard/environment/Constructor/A176_OTAC_LK_7605/normal/lod0/stg_11_Exhaust_xray.model</resource>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/GB142_FV249_Castle/normal/lod0/stg_11_Cooling_01_xray.model</resource>
+		<castsShadow>false</castsShadow>
 		<track>
 			<name>visibility</name>
 			<type>bool</type>
@@ -129,7 +130,8 @@
 	<sequenceObject>
 		<name>stg_11_AirIntake</name>
 		<type>model</type>
-		<resource>content/Hangars/h00_armory_yard/environment/Constructor/A176_OTAC_LK_7605/normal/lod0/stg_11_AirIntake_xray.model</resource>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/GB142_FV249_Castle/normal/lod0/stg_11_Cooling_02_xray.model</resource>
+		<castsShadow>false</castsShadow>
 		<track>
 			<name>visibility</name>
 			<type>bool</type>

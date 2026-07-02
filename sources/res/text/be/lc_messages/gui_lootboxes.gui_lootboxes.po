@@ -19,8 +19,8 @@ msgstr "Астатнія ўзнагароды"
 
 msgid "categories/accountCustomizations/subtitle"
 msgstr ""
-"Можа змяшчаць нашыўкі, жэтоны і іх складнікі, медалі і іншыя элементы "
-"ўпрыгожання профілю гульца."
+"Может содержать дополнительный слот для исключения карты, нашивки, жетоны, "
+"медали и другие элементы профиля игрока."
 
 msgid "categories/accountCustomizations/title"
 msgstr "Профіль"
@@ -293,9 +293,9 @@ msgstr "Механіка гарантаванай узнагароды"
 
 msgid "guaranteedRewardTooltip/block1/vehicle/text"
 msgstr ""
-"Гарантированный танк — техника %(level)s уровня из списка возможных наград в"
-" контейнерах. Вы гарантированно получите танк, которого ещё нет на вашем "
-"аккаунте, из %(bonus)s Если танк выпадет ранее, отсчёт начнётся заново."
+"Гарантированный танк — машина %(level)s уровня из списка возможного "
+"содержимого контейнеров. Танк гарантированно выпадет не позднее %(bonus)s "
+"Если получите какую-либо машину ранее, отсчёт начнётся заново."
 
 msgid "guaranteedRewardTooltip/block1/vehicle/title"
 msgstr "Механіка гарантаванага танка"
@@ -320,12 +320,12 @@ msgstr ""
 
 msgid "guaranteedRewardTooltip/block4/vehicle/text"
 msgstr ""
-"Если вся техника из списка наград уже есть на вашем аккаунте, то все "
-"следующие машины, полученные из контейнеров, будут компенсированы "
+"Если вся техника из списка наград уже есть на вашем аккаунте, то все "
+"следующие машины, полученные из контейнеров, будут компенсированы "
 "соответствующим количеством золота."
 
 msgid "guaranteedRewardTooltip/block4/vehicle/title"
-msgstr "После получения всей техники"
+msgstr "Когда вся техника уже получена"
 
 msgid "keyWelcomeScreen/content/first/description"
 msgstr ""
@@ -520,7 +520,7 @@ msgid "openBoxScreen/backBtn/4"
 msgstr "ДА РЭФЕРАЛЬНАЙ ПРАГРАМЫ"
 
 msgid "openBoxScreen/backBtn/5"
-msgstr "ДА СВЯТОЧНАЙ ПОШТЫ"
+msgstr "К ПРАЗДНИКУ"
 
 msgid "openBoxScreen/backBtnMain"
 msgstr "У Гараж"
@@ -691,6 +691,9 @@ msgid "rewards/gift/header/subTitle/moreSenders"
 msgstr ""
 "Адкрыты пасылкі ад гульца {cream_Open}%(senderName)s{cream_Close} "
 "%(moreSenders)"
+
+msgid "rewards/gift/header/subTitle/moreSendersTooltip/title"
+msgstr "Остальные игроки, отправившие вам посылки"
 
 msgid "rewards/gift/header/subTitle/single"
 msgstr "Адкрыта пасылка ад гульца {cream_Open}%(senderName)s{cream_Close}"
@@ -949,10 +952,10 @@ msgid "videoreward/button/title"
 msgstr "Так!"
 
 msgid "videoreward/button/titleGuaranteed"
-msgstr "Гэта выдатна!"
+msgstr "Так точно!"
 
 msgid "videoreward/description/commonText"
-msgstr "У Гаражы папаўненне!"
+msgstr "Гарантированная награда!"
 
 msgid "videoreward/description/rewardText"
 msgstr "Гарантаваная ўзнагарода!"

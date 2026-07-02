@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/french/F121_G1L/normal/lod4/Turret_01</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<nodefullVisual>vehicles/french/F121_G1L/normal/lod3/Turret_01</nodefullVisual>
+	<visibilityBox>
+		<min>-0.978612 0.000026 -1.182166</min>
+		<max>0.973909 1.269902 1.248977</max>
+	</visibilityBox>
+</root>

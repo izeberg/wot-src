@@ -727,6 +727,7 @@ _(#invites:invites/text/fort/defence) &lt;font color=&quot;#c9c9b6&quot;&gt;%(cl
 				<crystal>&lt;font color=&apos;#95907F&apos;&gt;%(value)s &lt;/font&gt;&lt;img src=&apos;img://gui/maps/icons/library/CrystalIcon-2.png&apos; width=&apos;16&apos; height=&apos;16&apos; vspace=&apos;-3&apos; /&gt;</crystal>
 				<equipCoin>&lt;font color=&apos;#95907F&apos;&gt;%(value)s &lt;/font&gt;&lt;img src=&apos;img://gui/maps/icons/library/equipCoin-1.png&apos; width=&apos;16&apos; height=&apos;16&apos; vspace=&apos;-3&apos; /&gt;</equipCoin>
 				<eventCoin>&lt;font color=&apos;#95907F&apos;&gt;%(value)s &lt;/font&gt;&lt;img src=&apos;img://gui/maps/icons/library/EventCoinIcon-2.png&apos; width=&apos;16&apos; height=&apos;16&apos; vspace=&apos;-3&apos; /&gt;</eventCoin>
+				<platformCurrency>&lt;font color=&apos;#95907F&apos;&gt;%(value)s &lt;/font&gt;&lt;img src=&apos;img://gui/maps/icons/library/%(iconName)sIcon-1.png&apos; width=&apos;16&apos; height=&apos;16&apos; vspace=&apos;-3&apos; /&gt;</platformCurrency>
 				<bpcoin>&lt;font color=&apos;#95907F&apos;&gt;%(value)s &lt;/font&gt;&lt;img src=&apos;img://gui/maps/icons/library/BpcoinIcon-1.png&apos; width=&apos;16&apos; height=&apos;16&apos; vspace=&apos;-3&apos; /&gt;</bpcoin>
 				<platformCurrency>&lt;font color=&apos;#95907F&apos;&gt;%(value)s &lt;/font&gt;&lt;img src=&apos;img://gui/maps/icons/library/%(iconName)sIcon-1.png&apos; width=&apos;16&apos; height=&apos;16&apos; vspace=&apos;-3&apos; /&gt;</platformCurrency>
 				<xp>&lt;font color=&apos;#95907F&apos;&gt;%(value)s &lt;/font&gt;&lt;img src=&apos;img://gui/maps/icons/library/XpIcon-1.png&apos; width=&apos;16&apos; height=&apos;15&apos; vspace=&apos;-3&apos; /&gt;</xp>
@@ -1151,6 +1152,7 @@ _(#invites:invites/text/fort/defence) &lt;font color=&quot;#c9c9b6&quot;&gt;%(cl
 			<failedStatusText>&lt;font face=&apos;$FieldFont&apos; size=&apos;14&apos; color=&apos;#B70000&apos;&gt;%(message)s&lt;/font&gt;</failedStatusText>
 			<yellowText>&lt;font face=&apos;$FieldFont&apos; size=&apos;14&apos; color=&apos;#FEAB34&apos;&gt;%(message)s&lt;/font&gt;</yellowText>
 			<greenText>&lt;font face=&apos;$FieldFont&apos; size=&apos;14&apos; color=&apos;#7ab300&apos;&gt;%(message)s&lt;/font&gt;</greenText>
+			<brownText>&lt;font color=&apos;#CBAC77&apos;&gt;%(message)s&lt;/font&gt;</brownText>
 			<discountText>&lt;font face=&apos;$FieldFont&apos; size=&apos;16&apos; color=&apos;#FEFEEC&apos;&gt;%(message)s&lt;/font&gt;</discountText>
 			<clockWithText>&lt;img src=&apos;img://gui/maps/icons/missions/daily/widgets/clock_icon_s.png&apos; width=&apos;24&apos; height=&apos;24&apos; vspace=&apos;-6&apos; hspace=&apos;0&apos;/&gt;&lt;font face=&apos;$TitleFont&apos; size=&apos;14&apos; color=&apos;#FFDD99&apos;&gt;%(text)s&lt;/font&gt;</clockWithText>
 			<poiCapturedBoldText>&lt;font size=&apos;18&apos; face=&apos;$TitleFont&apos;&gt;&lt;b&gt;%(message)s&lt;/b&gt;&lt;/font&gt;</poiCapturedBoldText>

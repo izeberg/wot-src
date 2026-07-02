@@ -77,7 +77,7 @@ package net.wg.gui.lobby.battleResults
       
       public var team2ListScrollBar:ScrollBar = null;
       
-      private var _enableScrollbars:Boolean = false;
+      protected var _enableScrollbars:Boolean = false;
       
       private var _focusCandidate:InteractiveObject = null;
       
@@ -231,7 +231,7 @@ package net.wg.gui.lobby.battleResults
          }
       }
       
-      private function createController(param1:CommonStatsVO) : void
+      protected function createController(param1:CommonStatsVO) : void
       {
          switch(param1.bonusType)
          {
@@ -260,20 +260,18 @@ package net.wg.gui.lobby.battleResults
                this._controller = new Comp7TeamStatsController(this);
                break;
             default:
-               if(this._enableScrollbars)
-               {
-                  this._controller = new ScrollBarTeamStatsController(this);
-               }
-               else
-               {
-                  this._controller = new DefaultTeamStatsController(this);
-               }
+               this._controller = this.createDefaultController();
          }
          this._controller.setColumns(this._columns);
          this._controller.setTables(this.header1,this.header2,this.team1List,this.team2List);
          this._controller.setTitles(this.ownTitle,this.enemyTitle);
          this._controller.setCybersport(this.csAlly,this.csEnemy);
          this._controller.setResources(this.teamResourceTotal,this.teamInfluenceTotal);
+      }
+      
+      protected function createDefaultController() : DefaultTeamStatsController
+      {
+         return !!this._enableScrollbars ? new ScrollBarTeamStatsController(this) : new DefaultTeamStatsController(this);
       }
       
       private function onTeam1StatsIndexChangeHandler(param1:ListEvent) : void

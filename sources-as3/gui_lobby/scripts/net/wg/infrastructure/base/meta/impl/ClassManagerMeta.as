@@ -637,6 +637,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.battleResults.CommonStats;
    import net.wg.gui.lobby.battleResults.DetailsStatsView;
    import net.wg.gui.lobby.battleResults.EpicStats;
+   import net.wg.gui.lobby.battleResults.GiftSystemTeamStats;
    import net.wg.gui.lobby.battleResults.IEmblemLoadedDelegate;
    import net.wg.gui.lobby.battleResults.PostbattleExtraTab;
    import net.wg.gui.lobby.battleResults.TeamStats;
@@ -683,6 +684,13 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.battleResults.components.detailsBlockStates.DetailsState;
    import net.wg.gui.lobby.battleResults.components.detailsBlockStates.PremiumBonusState;
    import net.wg.gui.lobby.battleResults.components.detailsBlockStates.PremiumInfoState;
+   import net.wg.gui.lobby.battleResults.components.giftSystem.GiftScrollbarTeamMemberItemRenderer;
+   import net.wg.gui.lobby.battleResults.components.giftSystem.GiftSystemBanner;
+   import net.wg.gui.lobby.battleResults.components.giftSystem.GiftSystemButtons;
+   import net.wg.gui.lobby.battleResults.components.giftSystem.GiftSystemSendButton;
+   import net.wg.gui.lobby.battleResults.components.giftSystem.GiftSystemStamps;
+   import net.wg.gui.lobby.battleResults.components.giftSystem.GiftTeamMemberItemRenderer;
+   import net.wg.gui.lobby.battleResults.components.giftSystem.IGiftTeamMemberItemRenderer;
    import net.wg.gui.lobby.battleResults.controller.ColumnConstants;
    import net.wg.gui.lobby.battleResults.controller.Comp7TeamStatsController;
    import net.wg.gui.lobby.battleResults.controller.CybersportTeamStatsController;
@@ -693,6 +701,9 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.battleResults.controller.RatedCybersportTeamStatsController;
    import net.wg.gui.lobby.battleResults.controller.ScrollBarTeamStatsController;
    import net.wg.gui.lobby.battleResults.controller.TeamStatsControllerAbstract;
+   import net.wg.gui.lobby.battleResults.controller.giftSystem.GiftColumnConstants;
+   import net.wg.gui.lobby.battleResults.controller.giftSystem.GiftDefaultTeamStatsController;
+   import net.wg.gui.lobby.battleResults.controller.giftSystem.GiftScrollBarTeamStatsController;
    import net.wg.gui.lobby.battleResults.cs.CsTeamEmblemEvent;
    import net.wg.gui.lobby.battleResults.cs.CsTeamEvent;
    import net.wg.gui.lobby.battleResults.cs.CsTeamStats;
@@ -710,6 +721,8 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.battleResults.data.EfficiencyHeaderVO;
    import net.wg.gui.lobby.battleResults.data.EfficiencyRendererVO;
    import net.wg.gui.lobby.battleResults.data.EpicEfficiencyData;
+   import net.wg.gui.lobby.battleResults.data.GiftStampVO;
+   import net.wg.gui.lobby.battleResults.data.GiftSystemVO;
    import net.wg.gui.lobby.battleResults.data.IconEfficiencyTooltipData;
    import net.wg.gui.lobby.battleResults.data.OvertimeVO;
    import net.wg.gui.lobby.battleResults.data.PersonalDataVO;
@@ -733,6 +746,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.battleResults.epic.vo.EpicQuestProgressInfoItemVO;
    import net.wg.gui.lobby.battleResults.event.BattleResultsViewEvent;
    import net.wg.gui.lobby.battleResults.event.ClanEmblemRequestEvent;
+   import net.wg.gui.lobby.battleResults.event.GiftSystemSendEvent;
    import net.wg.gui.lobby.battleResults.event.TeamTableSortEvent;
    import net.wg.gui.lobby.battleResults.managers.IStatsUtilsManager;
    import net.wg.gui.lobby.battleResults.managers.impl.StatsUtilsManager;
@@ -1164,6 +1178,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.hangar.CrewPanelInject;
    import net.wg.gui.lobby.hangar.DailyQuestWidget;
    import net.wg.gui.lobby.hangar.EconomyWidget;
+   import net.wg.gui.lobby.hangar.GFHeaderWidget;
    import net.wg.gui.lobby.hangar.Hangar;
    import net.wg.gui.lobby.hangar.HangarAmunitionSwitchAnimator;
    import net.wg.gui.lobby.hangar.HangarContentHelper;
@@ -4203,6 +4218,8 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_LOBBY_BATTLERESULTS_EPICSTATS:Class = EpicStats;
       
+      public static const NET_WG_GUI_LOBBY_BATTLERESULTS_GIFTSYSTEMTEAMSTATS:Class = GiftSystemTeamStats;
+      
       public static const NET_WG_GUI_LOBBY_BATTLERESULTS_IEMBLEMLOADEDDELEGATE:Class = IEmblemLoadedDelegate;
       
       public static const NET_WG_GUI_LOBBY_BATTLERESULTS_POSTBATTLEEXTRATAB:Class = PostbattleExtraTab;
@@ -4295,6 +4312,20 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_LOBBY_BATTLERESULTS_COMPONENTS_DETAILSBLOCKSTATES_PREMIUMINFOSTATE:Class = PremiumInfoState;
       
+      public static const NET_WG_GUI_LOBBY_BATTLERESULTS_COMPONENTS_GIFTSYSTEM_GIFTSCROLLBARTEAMMEMBERITEMRENDERER:Class = GiftScrollbarTeamMemberItemRenderer;
+      
+      public static const NET_WG_GUI_LOBBY_BATTLERESULTS_COMPONENTS_GIFTSYSTEM_GIFTSYSTEMBANNER:Class = GiftSystemBanner;
+      
+      public static const NET_WG_GUI_LOBBY_BATTLERESULTS_COMPONENTS_GIFTSYSTEM_GIFTSYSTEMBUTTONS:Class = GiftSystemButtons;
+      
+      public static const NET_WG_GUI_LOBBY_BATTLERESULTS_COMPONENTS_GIFTSYSTEM_GIFTSYSTEMSENDBUTTON:Class = GiftSystemSendButton;
+      
+      public static const NET_WG_GUI_LOBBY_BATTLERESULTS_COMPONENTS_GIFTSYSTEM_GIFTSYSTEMSTAMPS:Class = GiftSystemStamps;
+      
+      public static const NET_WG_GUI_LOBBY_BATTLERESULTS_COMPONENTS_GIFTSYSTEM_GIFTTEAMMEMBERITEMRENDERER:Class = GiftTeamMemberItemRenderer;
+      
+      public static const NET_WG_GUI_LOBBY_BATTLERESULTS_COMPONENTS_GIFTSYSTEM_IGIFTTEAMMEMBERITEMRENDERER:Class = IGiftTeamMemberItemRenderer;
+      
       public static const NET_WG_GUI_LOBBY_BATTLERESULTS_CONTROLLER_COLUMNCONSTANTS:Class = ColumnConstants;
       
       public static const NET_WG_GUI_LOBBY_BATTLERESULTS_CONTROLLER_COMP7TEAMSTATSCONTROLLER:Class = Comp7TeamStatsController;
@@ -4314,6 +4345,12 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_BATTLERESULTS_CONTROLLER_SCROLLBARTEAMSTATSCONTROLLER:Class = ScrollBarTeamStatsController;
       
       public static const NET_WG_GUI_LOBBY_BATTLERESULTS_CONTROLLER_TEAMSTATSCONTROLLERABSTRACT:Class = TeamStatsControllerAbstract;
+      
+      public static const NET_WG_GUI_LOBBY_BATTLERESULTS_CONTROLLER_GIFTSYSTEM_GIFTCOLUMNCONSTANTS:Class = GiftColumnConstants;
+      
+      public static const NET_WG_GUI_LOBBY_BATTLERESULTS_CONTROLLER_GIFTSYSTEM_GIFTDEFAULTTEAMSTATSCONTROLLER:Class = GiftDefaultTeamStatsController;
+      
+      public static const NET_WG_GUI_LOBBY_BATTLERESULTS_CONTROLLER_GIFTSYSTEM_GIFTSCROLLBARTEAMSTATSCONTROLLER:Class = GiftScrollBarTeamStatsController;
       
       public static const NET_WG_GUI_LOBBY_BATTLERESULTS_CS_CSTEAMEMBLEMEVENT:Class = CsTeamEmblemEvent;
       
@@ -4348,6 +4385,10 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_BATTLERESULTS_DATA_EFFICIENCYRENDERERVO:Class = EfficiencyRendererVO;
       
       public static const NET_WG_GUI_LOBBY_BATTLERESULTS_DATA_EPICEFFICIENCYDATA:Class = EpicEfficiencyData;
+      
+      public static const NET_WG_GUI_LOBBY_BATTLERESULTS_DATA_GIFTSTAMPVO:Class = GiftStampVO;
+      
+      public static const NET_WG_GUI_LOBBY_BATTLERESULTS_DATA_GIFTSYSTEMVO:Class = GiftSystemVO;
       
       public static const NET_WG_GUI_LOBBY_BATTLERESULTS_DATA_ICONEFFICIENCYTOOLTIPDATA:Class = IconEfficiencyTooltipData;
       
@@ -4394,6 +4435,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_BATTLERESULTS_EVENT_BATTLERESULTSVIEWEVENT:Class = BattleResultsViewEvent;
       
       public static const NET_WG_GUI_LOBBY_BATTLERESULTS_EVENT_CLANEMBLEMREQUESTEVENT:Class = ClanEmblemRequestEvent;
+      
+      public static const NET_WG_GUI_LOBBY_BATTLERESULTS_EVENT_GIFTSYSTEMSENDEVENT:Class = GiftSystemSendEvent;
       
       public static const NET_WG_GUI_LOBBY_BATTLERESULTS_EVENT_TEAMTABLESORTEVENT:Class = TeamTableSortEvent;
       
@@ -5238,6 +5281,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_HANGAR_DAILYQUESTWIDGET:Class = DailyQuestWidget;
       
       public static const NET_WG_GUI_LOBBY_HANGAR_ECONOMYWIDGET:Class = EconomyWidget;
+      
+      public static const NET_WG_GUI_LOBBY_HANGAR_GFHEADERWIDGET:Class = GFHeaderWidget;
       
       public static const NET_WG_GUI_LOBBY_HANGAR_HANGAR:Class = Hangar;
       

@@ -114,15 +114,11 @@
 				<type>primary</type>
 			</path>
 			<path>
-				particles/content_forward/pfx_textures/trail_2.dds
-				<type>primary</type>
-			</path>
-			<path>
-				particles/content_forward/pfx_textures/eff_tex.dds
-				<type>primary</type>
-			</path>
-			<path>
 				particles/content_forward/pfx_textures/eff_electricity_1.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/trail_2.dds
 				<type>primary</type>
 			</path>
 		</preloadTextures>

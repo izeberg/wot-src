@@ -29,7 +29,7 @@ from gui.impl.lobby.crew.crew_helpers.skill_helpers import getLastSkillSequenceN
 from gui.server_events import formatters
 from gui.server_events.awards_formatters import QuestsBonusComposer
 from gui.server_events.events_constants import BATTLE_MATTERS_QUEST_ID
-from gui.server_events.events_helpers import isC11nQuest, getDataByC11nQuest, isDailyQuest
+from gui.server_events.events_helpers import isC11nQuest, getDataByC11nQuest, isDailyQuest, isTankAcademyQuest
 from gui.shared.formatters import getItemPricesVO, getItemUnlockPricesVO, text_styles, icons
 from gui.shared.gui_items import GUI_ITEM_TYPE, Tankman, getVehicleComponentsByType
 from gui.shared.gui_items.Tankman import getCrewSkinIconSmall
@@ -504,7 +504,7 @@ class QuestsProgressBlock(base.StatsBlock):
                     if quest is not None:
                         c11nQuests.append((
                          quest, {pGroupBy: pCur}, {pGroupBy: pPrev}, isCompleted))
-                elif qID.startswith(BATTLE_MATTERS_QUEST_ID):
+                elif qID.startswith(BATTLE_MATTERS_QUEST_ID) or isTankAcademyQuest(qID):
                     data = self.__packQuestProgressData(qID, allCommonQuests, qProgress, isCompleted)
                     if data:
                         battleMattersProgressData.append(data)

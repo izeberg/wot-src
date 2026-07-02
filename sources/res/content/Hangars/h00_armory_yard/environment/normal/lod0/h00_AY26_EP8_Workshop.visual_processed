@@ -43,7 +43,7 @@
 						<Texture>content/Hangars/h00_armory_yard/environment/h00_AY26_EP8_Workshop_customization_Alpha_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-1.054466 1.539344 -6.386551</groupOrigin>
+				<groupOrigin>-0.317758 1.539343 -4.005580</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -475,7 +475,7 @@
 					<fx>shaders/std_effects/PBS_ext_dual.fx</fx>
 					<property>
 						diffuseMap
-						<Texture>content/Hangars/h00_armory_yard/environment/h00_AY26_EP8_Workshop_Floor_AM.dds</Texture>
+						<Texture>content/Hangars/h00_armory_yard/environment/hd_h00_AY24_0001_Workshop_Floor_AM.dds</Texture>
 					</property>
 					<property>
 						diffuseMap2
@@ -483,11 +483,11 @@
 					</property>
 					<property>
 						metallicGlossMap
-						<Texture>content/Hangars/h00_armory_yard/environment/h00_AY26_EP8_Workshop_Floor_GMM.dds</Texture>
+						<Texture>content/Hangars/h00_armory_yard/environment/hd_h00_AY24_0001_Workshop_Floor_GMM.dds</Texture>
 					</property>
 					<property>
 						normalMap
-						<Texture>content/Hangars/h00_armory_yard/environment/h00_AY26_EP8_Workshop_Floor_ANM.dds</Texture>
+						<Texture>content/Hangars/h00_armory_yard/environment/hd_h00_AY24_0001_Workshop_Floor_ANM.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>-6.179788 1.523680 -17.089130</groupOrigin>
@@ -527,6 +527,6 @@
 		<min>-31.727074 -0.068677 -47.644836</min>
 		<max>19.367498 14.776838 16.377745</max>
 	</boundingBox>
-	<geometrySize>924352</geometrySize>
+	<geometrySize>777832</geometrySize>
 	<minUVDensity>0.000083</minUVDensity>
 </root>

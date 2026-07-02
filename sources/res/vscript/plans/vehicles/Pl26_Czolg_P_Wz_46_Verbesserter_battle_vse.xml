@@ -657,6 +657,12 @@
 				<slots/>
 			</block>
 			<block>
+				<class>StopPlan</class>
+				<id>StopPlan_1</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
 				<class>GetVariable</class>
 				<id>GetVariable_16</id>
 				<buddy>Variable_9</buddy>
@@ -1526,6 +1532,12 @@
 				<input>value</input>
 				<to>If_6</to>
 				<output>value</output>
+			</connection>
+			<connection>
+				<from>If_6</from>
+				<input>input</input>
+				<to>StopPlan_1</to>
+				<output>false</output>
 			</connection>
 			<connection>
 				<from>GetVehicleGameObject_2</from>

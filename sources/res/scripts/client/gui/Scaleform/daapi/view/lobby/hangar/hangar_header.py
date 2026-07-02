@@ -1,4 +1,5 @@
 import logging, typing, BigWorld, inspect, constants, nations
+from ExtensionsManager import g_extensionsManager
 from CurrentVehicle import g_currentVehicle
 from armory_yard.gui.impl.gen.view_models.views.lobby.feature.armory_yard_main_view_model import TabId
 from armory_yard.skeletons.armory_yard_reroll_controller import IArmoryYardRerollController
@@ -13,6 +14,7 @@ from gui.Scaleform.genConsts.TOOLTIPS_CONSTANTS import TOOLTIPS_CONSTANTS
 from gui.Scaleform.locale.MENU import MENU
 from gui.Scaleform.locale.RES_ICONS import RES_ICONS
 from gui.Scaleform.locale.TOOLTIPS import TOOLTIPS
+from gui.Scaleform.daapi.view.lobby.hangar.entry_points.gf_header_widget import GFWidgetAliases
 from gui.battle_pass.battle_pass_helpers import getSupportedArenaBonusTypeFor
 from gui.event_boards.listener import IEventBoardsListener
 from gui.impl import backport
@@ -46,7 +48,7 @@ from shared_utils import first
 from skeletons.connection_mgr import IConnectionManager
 from skeletons.gui.battle_matters import IBattleMattersController
 from skeletons.gui.event_boards_controllers import IEventBoardController
-from skeletons.gui.game_control import IBattlePassController, IBootcampController, ICollectiveGoalEntryPointController, IResourceWellController, IMarathonEventsController, IFestivityController, IRankedBattlesController, IQuestsController, IBattleRoyaleController, IMapboxController, IEpicBattleMetaGameController, IFunRandomController, IComp7Controller, ILimitedUIController, IArmoryYardController, IEarlyAccessController, IVersusAIController, IWinbackController, IUniversalFlagEntryPointController
+from skeletons.gui.game_control import IBattlePassController, IBootcampController, ICollectiveGoalEntryPointController, IResourceWellController, IMarathonEventsController, IFestivityController, IRankedBattlesController, IQuestsController, IBattleRoyaleController, IMapboxController, IEpicBattleMetaGameController, IFunRandomController, IComp7Controller, ILimitedUIController, IArmoryYardController, IEarlyAccessController, IVersusAIController, IWinbackController, IUniversalFlagEntryPointController, ITankAcademyController
 from skeletons.gui.lobby_context import ILobbyContext
 from skeletons.gui.server_events import IEventsCache
 from skeletons.gui.shared import IItemsCache
@@ -202,6 +204,25 @@ _SCREEN_WIDTH_FOR_WRAP_GROUPS = 1300
 _MONITOR_SETTINGS = (
  'elenSettings', constants.PremiumConfigs.PREM_QUESTS, 'disabledPMOperations',
  'disabledPersonalMissions', 'isPM3QuestEnabled')
+_WIDGETS_ORDER = (
+ HANGAR_ALIASES.TANK_ACADEMY_ENTRY_POINT, HANGAR_ALIASES.BIRTHDAY_HEADER_ENTRY_POINT,
+ HANGAR_ALIASES.BATTLE_PASSS_ENTRY_POINT)
+
+def _widgetAliasToHangarAlias(widgetAlias):
+    if isinstance(widgetAlias, GFWidgetAliases):
+        return widgetAlias.registerAlias
+    return widgetAlias
+
+
+def _getWidgetIndex(widgetAlias):
+    alias = _widgetAliasToHangarAlias(widgetAlias)
+    try:
+        return _WIDGETS_ORDER.index(alias)
+    except ValueError:
+        pass
+
+    return len(_WIDGETS_ORDER)
+
 
 def _findPersonalMissionsState(eventsCache, vehicle, branch):
     branchState = WIDGET_PM_STATE.DISABLED
@@ -371,6 +392,7 @@ class HangarHeader(HangarHeaderMeta, IGlobalListener, IEventBoardsListener):
     __armoryYardRerollCtrl = dependency.descriptor(IArmoryYardRerollController)
     __earlyAccessCtrl = dependency.descriptor(IEarlyAccessController)
     __limitedUIController = dependency.descriptor(ILimitedUIController)
+    __tankAcademyController = dependency.descriptor(ITankAcademyController)
     __externalWidgets = {}
 
     def __init__(self):
@@ -439,6 +461,18 @@ class HangarHeader(HangarHeaderMeta, IGlobalListener, IEventBoardsListener):
     def updateBattleRoyaleHeader(self):
         self.__updateWidget()
 
+    def getCurrentArenaBonusType(self):
+        queueType = None
+        isInUnit = False
+        isSortie = True
+        if self.prbDispatcher is not None and self.prbEntity is not None:
+            state = self.prbDispatcher.getFunctionalState()
+            isInUnit = state.isInUnit(state.entityTypeID)
+            queueType = self.prbEntity.getQueueType()
+            if queueType == constants.QUEUE_TYPE.STRONGHOLD_UNITS:
+                isSortie = self.prbEntity.isSortie()
+        return getSupportedArenaBonusTypeFor(queueType, isInUnit, isSortie)
+
     def _populate(self):
         super(HangarHeader, self)._populate()
         self._currentVehicle = g_currentVehicle
@@ -469,6 +503,7 @@ class HangarHeader(HangarHeaderMeta, IGlobalListener, IEventBoardsListener):
         self.__armoryYardCtrl.onQuestsUpdated += self.update
         self.__earlyAccessCtrl.onUpdated += self.update
         self.__earlyAccessCtrl.onQuestsUpdated += self.update
+        self.__tankAcademyController.onStateChanged += self.__updateWidget
         g_clientUpdateManager.addCallbacks({'inventory.1': self.update, 
            'stats.tutorialsCompleted': self.update})
         if self._eventsController:
@@ -507,6 +542,7 @@ class HangarHeader(HangarHeaderMeta, IGlobalListener, IEventBoardsListener):
         self.__armoryYardCtrl.onQuestsUpdated -= self.update
         self.__earlyAccessCtrl.onUpdated -= self.update
         self.__earlyAccessCtrl.onQuestsUpdated -= self.update
+        self.__tankAcademyController.onStateChanged -= self.__updateWidget
         self._currentVehicle = None
         self.__screenWidth = None
         self.__activeWidgets = None
@@ -600,20 +636,27 @@ class HangarHeader(HangarHeaderMeta, IGlobalListener, IEventBoardsListener):
         return quests
 
     def __isArmoryYardFlagVisible(self):
-        isActiveInCurrentArenaType = self.__getCurrentArenaBonusType() in ARMORY_YARD_FLAG_BONUS_TYPES
+        isActiveInCurrentArenaType = self.getCurrentArenaBonusType() in ARMORY_YARD_FLAG_BONUS_TYPES
         isActiveLimitedUi = self.__limitedUIController.isRuleCompleted(LuiRules.ARMORY_YARD_ENTRY_POINT)
         isActiveAnnouncementSate = self.__armoryYardCtrl.isInAnnouncement() and isActiveInCurrentArenaType and isActiveLimitedUi
         isActivePauseSate = self.__armoryYardCtrl.isPaused and isActiveLimitedUi and not self.__armoryYardCtrl.isAllTokensReceived() and isActiveInCurrentArenaType
         return self.__armoryYardCtrl.isEnabled() and self.__armoryYardCtrl.isQuestActive() and not self.__armoryYardCtrl.isAllTokensReceived() and isActiveLimitedUi and (isActiveInCurrentArenaType or self.prbEntity is not None and self.prbEntity.getModeFlags() & FUNCTIONAL_FLAG.STRONGHOLD) or isActiveAnnouncementSate or isActivePauseSate
 
     def __isEarlyAccessFlagVisible(self):
-        return self.__earlyAccessCtrl.isEnabled() and self.__limitedUIController.isRuleCompleted(LuiRules.EARLY_ACCESS_ENTRY_POINT) and self.__earlyAccessCtrl.isAnyQuestAvailable() and self.__getCurrentArenaBonusType() in (
+        return self.__earlyAccessCtrl.isEnabled() and self.__limitedUIController.isRuleCompleted(LuiRules.EARLY_ACCESS_ENTRY_POINT) and self.__earlyAccessCtrl.isAnyQuestAvailable() and self.getCurrentArenaBonusType() in (
          constants.ARENA_BONUS_TYPE.REGULAR,
          constants.ARENA_BONUS_TYPE.EPIC_RANDOM,
          constants.ARENA_BONUS_TYPE.COMP7)
 
     def isPersonalMissionEnabled(self):
         return self._lobbyContext.getServerSettings().isPersonalMissionsEnabled() and not self.__mapboxCtrl.isMapboxMode() and not self.__comp7Controller.isComp7PrbActive() and not isStrongholdEntity(self.prbEntity) and self.__limitedUIController.isRuleCompleted(LuiRules.PERSONAL_MISSIONS)
+
+    def isBirthdayEnabled(self):
+        if not g_extensionsManager.isExtensionEnabled('mt_birthday'):
+            return False
+        from mt_birthday.skeletons.mt_birthday_controller import ITanksBirthdayController
+        birthdayContoller = dependency.instance(ITanksBirthdayController)
+        return not birthdayContoller.isDisabled()
 
     def isElenQuestsEnabled(self):
         return not self.__comp7Controller.isComp7PrbActive()
@@ -649,8 +692,8 @@ class HangarHeader(HangarHeaderMeta, IGlobalListener, IEventBoardsListener):
         isBPAvailable = not self.__battlePassController.isDisabled()
         isValidBattleType = self.prbDispatcher and self.prbDispatcher.getEntity() and self.__battlePassController.isValidBattleType(self.prbDispatcher.getEntity())
         isRuleCompleted = self.__limitedUIController.isRuleCompleted(LuiRules.BP_ENTRY)
-        isGameModeEnabled = self.__battlePassController.isGameModeEnabled(self.__getCurrentArenaBonusType())
-        isVisible = isBPAvailable and isValidBattleType and not self.__bootcampController.isInBootcamp() and isRuleCompleted and isGameModeEnabled
+        isGameModeEnabled = self.__battlePassController.isGameModeEnabled(self.getCurrentArenaBonusType())
+        isVisible = isBPAvailable and isValidBattleType and not self.__bootcampController.isInBootcamp() and isRuleCompleted and isGameModeEnabled and not self.isBirthdayEnabled()
         return isVisible
 
     @widgetFunc(HANGAR_ALIASES.RANKED_WIDGET)
@@ -678,21 +721,33 @@ class HangarHeader(HangarHeaderMeta, IGlobalListener, IEventBoardsListener):
         self.__updateBattlePassSmallWidget()
         if not self.__activeWidgets.update(ActiveWidgets.CENTER, alias):
             return
-        self.as_addEntryPointS(alias)
+        self.__addEntryPoint(alias)
         if alias == HANGAR_ALIASES.BATTLE_ROYALE_ENTRY_POINT:
             self.__updateVisibilityPersonalMission(True)
         elif alias == HANGAR_ALIASES.BATTLE_ROYALE_TOURNAMENT:
             self.__updateVisibilityPersonalMission(False)
 
+    def __addEntryPoint(self, alias):
+        registerAlias = None
+        if isinstance(alias, GFWidgetAliases):
+            registerAlias = alias.registerAlias
+            alias = alias.flashLinkage
+        self.as_addEntryPointS(alias, registerAlias)
+        return
+
     def __getWidgetAlias(self):
+        enabledWidgetAliases = []
         for alias, widgetGetter in self.__widgets.iteritems():
             if widgetGetter(self):
-                return alias
+                enabledWidgetAliases.append(alias)
 
         for alias, widgetGetter in self.__externalWidgets.iteritems():
             if widgetGetter(self):
-                return alias
+                enabledWidgetAliases.append(alias)
 
+        enabledWidgetAliases.sort(key=_getWidgetIndex)
+        if enabledWidgetAliases:
+            return first(enabledWidgetAliases)
         return ''
 
     def __updateBattlePassWidgetVisibility(self, *_):
@@ -801,7 +856,10 @@ class HangarHeader(HangarHeaderMeta, IGlobalListener, IEventBoardsListener):
                     vo['tooltip'] = TOOLTIPS.HANGAR_HEADER_PERSONALMISSIONS_DISABLEDALL
 
             result = sorted(result, key=lambda quest: quest['enable'], reverse=True)
-            return self._wrapQuestGroup(HANGAR_HEADER_QUESTS.QUEST_GROUP_PERSONAL, RES_ICONS.MAPS_ICONS_QUESTS_HEADERFLAGICONS_PERSONAL, result, True)
+            return self._wrapQuestGroup(HANGAR_HEADER_QUESTS.QUEST_GROUP_PERSONAL, RES_ICONS.MAPS_ICONS_QUESTS_HEADERFLAGICONS_PERSONAL, result, self.__isPersonalMissionsOnRight())
+
+    def __isPersonalMissionsOnRight(self):
+        return not (self.__isSecondaryBattlePassEntryPointAvaliable() and self.__isTankAcademyEntryPointVisible())
 
     def __onServerSettingChanged(self, diff):
         for key in _MONITOR_SETTINGS:
@@ -1061,29 +1119,33 @@ class HangarHeader(HangarHeaderMeta, IGlobalListener, IEventBoardsListener):
         return {'isVisible': False, 
            'quests': []}
 
-    def __getCurrentArenaBonusType(self):
-        queueType = None
-        isInUnit = False
-        isSortie = True
-        if self.prbDispatcher is not None and self.prbEntity is not None:
-            state = self.prbDispatcher.getFunctionalState()
-            isInUnit = state.isInUnit(state.entityTypeID)
-            queueType = self.prbEntity.getQueueType()
-            if queueType == constants.QUEUE_TYPE.STRONGHOLD_UNITS:
-                isSortie = self.prbEntity.isSortie()
-        return getSupportedArenaBonusTypeFor(queueType, isInUnit, isSortie)
+    def __isTankAcademyEntryPointVisible(self):
+        hangarWidgetAlias = self.__tankAcademyController.getHangarWidgetAlias()
+        if hangarWidgetAlias is None:
+            return False
+        else:
+            widgetGetter = self.__externalWidgets.get(hangarWidgetAlias)
+            if widgetGetter is None:
+                return False
+            return widgetGetter(self)
 
-    def __updateBattlePassSmallWidget(self):
-        currentArenaBonusType = self.__getCurrentArenaBonusType()
-        secondaryPointCanBeAvailable = currentArenaBonusType not in (
+    def __isSecondaryBattlePassEntryPointAvaliable(self):
+        currentArenaBonusType = self.getCurrentArenaBonusType()
+        isSpecialGameMode = currentArenaBonusType not in (
          constants.ARENA_BONUS_TYPE.REGULAR,
          constants.ARENA_BONUS_TYPE.UNKNOWN,
          constants.ARENA_BONUS_TYPE.MAPBOX)
+        isRegularGameMode = currentArenaBonusType == constants.ARENA_BONUS_TYPE.REGULAR
+        secondaryPointCanBeAvailable = isRegularGameMode and (self.__isTankAcademyEntryPointVisible() or self.isBirthdayEnabled()) or isSpecialGameMode
         isRuleCompleted = self.__limitedUIController.isRuleCompleted(LuiRules.BP_ENTRY)
-        isGameModeEnabled = self.__battlePassController.isGameModeEnabled(self.__getCurrentArenaBonusType())
-        secondaryEntryPointAvailable = secondaryPointCanBeAvailable and not self.__battlePassController.isDisabled() and isRuleCompleted and isGameModeEnabled
+        isGameModeEnabled = self.__battlePassController.isGameModeEnabled(self.getCurrentArenaBonusType())
+        return secondaryPointCanBeAvailable and not self.__battlePassController.isDisabled() and isRuleCompleted and isGameModeEnabled
+
+    def __updateBattlePassSmallWidget(self):
+        secondaryEntryPointAvailable = self.__isSecondaryBattlePassEntryPointAvaliable()
         self.as_setSecondaryEntryPointVisibleS(secondaryEntryPointAvailable)
         if secondaryEntryPointAvailable:
+            currentArenaBonusType = self.getCurrentArenaBonusType()
             self.getComponent(HANGAR_ALIASES.SECONDARY_ENTRY_POINT).update(currentArenaBonusType)
 
     def __updateVisibilityPersonalMission(self, isVisible):
@@ -1094,7 +1156,7 @@ class HangarHeader(HangarHeaderMeta, IGlobalListener, IEventBoardsListener):
         self.as_setDataS(headerVO)
 
     def __updateResourceWellEntryPoint(self):
-        isArenaBonusTypeFit = self.__getCurrentArenaBonusType() == constants.ARENA_BONUS_TYPE.REGULAR
+        isArenaBonusTypeFit = self.getCurrentArenaBonusType() == constants.ARENA_BONUS_TYPE.REGULAR
         isRandom = isArenaBonusTypeFit and not self.__bootcampController.isInBootcamp()
         isLuiRuleCompleted = self.__limitedUIController.isRuleCompleted(LuiRules.RESOURCE_WELL)
         isResourceWellVisible = self.__resourceWell.isActive() or self.__resourceWell.isPaused() or self.__resourceWell.isNotStarted()
@@ -1105,7 +1167,7 @@ class HangarHeader(HangarHeaderMeta, IGlobalListener, IEventBoardsListener):
 
     def __updateCollectiveGoalEntryPoint(self):
         isCollecitveGoalVisible = self.__collectiveGoalEntryPointController.isEnabled()
-        isVisibleInBonusType = self.__getCurrentArenaBonusType() in (
+        isVisibleInBonusType = self.getCurrentArenaBonusType() in (
          constants.ARENA_BONUS_TYPE.REGULAR,
          constants.ARENA_BONUS_TYPE.EPIC_RANDOM)
         self.as_setCollectiveGoalEntryPointS(isCollecitveGoalVisible and isVisibleInBonusType)
@@ -1113,14 +1175,14 @@ class HangarHeader(HangarHeaderMeta, IGlobalListener, IEventBoardsListener):
     def __updateUniversalFlagEntryPoint(self, *_):
         state = self.__universalFlagEntryPointController.visibilityState
         isUniversalFlagVisible = state != IUniversalFlagEntryPointController.VisibilityState.HIDDEN
-        isVisibleInBonusType = self.__getCurrentArenaBonusType() in (
+        isVisibleInBonusType = self.getCurrentArenaBonusType() in (
          constants.ARENA_BONUS_TYPE.REGULAR,
          constants.ARENA_BONUS_TYPE.EPIC_RANDOM)
         isLuiRuleCompleted = self.__limitedUIController.isRuleCompleted(LuiRules.UNIVERSAL_FLAG_ENTRY_POINT)
         self.as_setUniversalFlagEntryPointS(isUniversalFlagVisible and isVisibleInBonusType and isLuiRuleCompleted)
 
     def __updateBattleMattersEntryPoint(self):
-        isRandom = self.__getCurrentArenaBonusType() == constants.ARENA_BONUS_TYPE.REGULAR
+        isRandom = self.getCurrentArenaBonusType() == constants.ARENA_BONUS_TYPE.REGULAR
         controller = self.__battleMattersController
         isLuiRuleCompleted = self.__limitedUIController.isRuleCompleted(LuiRules.BM_FLAG)
         isBattleMattersMShow = controller.isEnabled() and (not controller.isFinished() or controller.hasUnobtainedDelayedRewards()) and controller.isValidConfiguration() and isRandom and isLuiRuleCompleted

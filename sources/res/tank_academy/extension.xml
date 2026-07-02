@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<FeatureName>tank_academy</FeatureName>
+	<IsEnabled>True</IsEnabled>
+	<Personality>TankAcademyPersonality</Personality>
+	<Components>
+		<StaticComponents/>
+		<DynamicComponents/>
+	</Components>
+	<Entities/>
+	<ExternalComponents/>
+	<gui>
+		<paths/>
+		<overrideAlias/>
+		<context_menu/>
+		<handler/>
+	</gui>
+</root>

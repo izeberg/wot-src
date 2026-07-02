@@ -75,7 +75,7 @@ package net.wg.gui.components.controls
             {
                this.iconContainer.x = !!this._visibleText ? Number(filtersMC.width - ICON_OFFSET ^ 0) : Number(0);
                hitMc.x = !!this._visibleText ? (!!this._showIcon ? Number(-HIT_MC_POS_X) : Number(0)) : Number(0);
-               hitMc.width = (!!this._showIcon ? this.iconContainer.x + this.iconContainer.width : 0) + (!!this._visibleText ? HIT_MC_POS_X : 0);
+               hitMc.width = (!!this._showIcon ? this.iconContainer.x + this.iconContainer.width : 0) + (!!this._visibleText ? this.iconContainer.x : 0);
                this.setSize(hitMc.width - HIT_MC_POS_X,hitMc.height);
             }
             else

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<xmlns:ussr>ussr</xmlns:ussr>
+	<xmlns:germany>germany</xmlns:germany>
+	<xmlns:usa>usa</xmlns:usa>
+	<xmlns:china>china</xmlns:china>
+	<xmlns:france>france</xmlns:france>
+	<xmlns:uk>uk</xmlns:uk>
+	<xmlns:japan>japan</xmlns:japan>
+	<xmlns:czech>czech</xmlns:czech>
+	<xmlns:sweden>sweden</xmlns:sweden>
+	<xmlns:poland>poland</xmlns:poland>
+	<xmlns:italy>italy</xmlns:italy>
+	<xmlns:intunion>intunion</xmlns:intunion>
+	<itemGroup>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R47_ISU-152_Zveroboj ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<camouflage>
+			<id>53</id>
+			<texture>vehicles/russian/Camouflage/Roll_out_Free.dds</texture>
+			<description>#vehicle_customization:camouflage/battlepass_free/description</description>
+			<scales>
+				1.3 1 0.7
+				<!--BW_String-->
+			</scales>
+			<userString>#vehicle_customization:camouflage/battlepass_free/label</userString>
+			<invisibilityFactor>1</invisibilityFactor>
+			<palettes>
+				<palette>
+					<c0>107 115 119 255</c0>
+					<c1>35 34 34 255</c1>
+					<c2>0 0 0 0</c2>
+					<c3>0 0 0 0</c3>
+				</palette>
+			</palettes>
+			<rotation>
+				<HULL>
+					0.0994838
+					<!--BW_String-->
+				</HULL>
+				<TURRET>
+					0.0994838
+					<!--BW_String-->
+				</TURRET>
+				<GUN>
+					0.0994838
+					<!--BW_String-->
+				</GUN>
+			</rotation>
+			<tiling>
+				<china:Ch01_Type59>
+					1.1 1.1 0.000000 0.9
+					<!--BW_String-->
+				</china:Ch01_Type59>
+				<china:Ch02_Type62>
+					1.79 1.79 0.46 0.8
+					<!--BW_String-->
+				</china:Ch02_Type62>
+				<china:Ch16_WZ_131>
+					1.83 1.83 0.53 0.72
+					<!--BW_String-->
+				</china:Ch16_WZ_131>
+				<china:Ch24_Type64>
+					2 2 0.000000 1.03
+					<!--BW_String-->
+				</china:Ch24_Type64>
+				<china:Ch30_T-26G_FT>
+					3.3 3.3 0.000000 1.33
+					<!--BW_String-->
+				</china:Ch30_T-26G_FT>
+				<czech:Cz05_T34_100>
+					4.5 4.5 0.38 0.52
+					<!--BW_String-->
+				</czech:Cz05_T34_100>
+				<france:F114_Projet_4_1>
+					2.3 2.3 0.000000 0.000000
+					<!--BW_String-->
+				</france:F114_Projet_4_1>
+				<france:F115_Lorraine_50t>
+					0.5 0.5 0.000000 0.000000
+					<!--BW_String-->
+				</france:F115_Lorraine_50t>
+				<france:F116_Bat_Chatillon_Bourrasque>
+					1.05 1.05 2.06 1.07
+					<!--BW_String-->
+				</france:F116_Bat_Chatillon_Bourrasque>
+				<france:F18_Bat_Chatillon25t>
+					1.05 1.05 2.06 1.07
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_7x7>
+					1.05 1.05 2.06 1.07
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_7x7>
+				<germany:G06_PzII>
+					1.3 1.3 2.92 2.88
+					<!--BW_String-->
+				</germany:G06_PzII>
+				<germany:G116_Turan_III_prot>
+					0.6 0.6 0.36 1.09
+					<!--BW_String-->
+				</germany:G116_Turan_III_prot>
+				<germany:G15_VK3601H>
+					1.09 1.09 0.68 0.15
+					<!--BW_String-->
+				</germany:G15_VK3601H>
+				<germany:G15_VK3601H_C>
+					1.09 1.09 0.68 0.15
+					<!--BW_String-->
+				</germany:G15_VK3601H_C>
+				<germany:G21_PanzerJager_I>
+					1.2 1.2 0.62 1
+					<!--BW_String-->
+				</germany:G21_PanzerJager_I>
+				<germany:G36_PzII_J>
+					1.1 1.1 3.29 1.42
+					<!--BW_String-->
+				</germany:G36_PzII_J>
+				<germany:G42_Maus>
+					2.3 2.3 0.000000 0.000000
+					<!--BW_String-->
+				</germany:G42_Maus>
+				<ussr:R230_Maus>
+					2.3 2.3 0.000000 0.000000
+					<!--BW_String-->
+				</ussr:R230_Maus>
+				<germany:G63_PzI_ausf_C>
+					1.4 1.4 1.03 0.88
+					<!--BW_String-->
+				</germany:G63_PzI_ausf_C>
+				<italy:It17_Progetto_CC55_mod_54>
+					1.2 1.2 1 1
+					<!--BW_String-->
+				</italy:It17_Progetto_CC55_mod_54>
+				<italy:It18_Progetto_C45_mod_71>1 1 1 1</italy:It18_Progetto_C45_mod_71>
+				<italy:It19_Progetto_C50_mod_66>1 1 1 1</italy:It19_Progetto_C50_mod_66>
+				<italy:It20_Carro_Combattimento_45t>1 1 1 1</italy:It20_Carro_Combattimento_45t>
+				<poland:Pl18_BUGI>
+					2 2 0.000000 0.000000
+					<!--BW_String-->
+				</poland:Pl18_BUGI>
+				<sweden:S11_Strv_103B>
+					0.8 0.8 2.66 1.24
+					<!--BW_String-->
+				</sweden:S11_Strv_103B>
+				<uk:GB108_A46>
+					0.6 0.6 -0.02 -0.2
+					<!--BW_String-->
+				</uk:GB108_A46>
+				<uk:GB25_Loyd_Gun_Carriage>
+					1.8 1.8 1.01 0.21
+					<!--BW_String-->
+				</uk:GB25_Loyd_Gun_Carriage>
+				<uk:GB91_Super_Conqueror>
+					0.93 0.93 3.09 1
+					<!--BW_String-->
+				</uk:GB91_Super_Conqueror>
+				<usa:A128_concept_1b>
+					0.58 0.58 0.000000 0.000000
+					<!--BW_String-->
+				</usa:A128_concept_1b>
+				<usa:A62_Ram-II>
+					2.2 2.2 2.5 1.76
+					<!--BW_String-->
+				</usa:A62_Ram-II>
+				<ussr:R121_KV4_KTT>
+					2.66 2.65 2.74 0.68
+					<!--BW_String-->
+				</ussr:R121_KV4_KTT>
+				<ussr:R170_IS_2_II>
+					1.19 1.19 0.000000 0.000000
+					<!--BW_String-->
+				</ussr:R170_IS_2_II>
+				<ussr:R171_IS_3_II>
+					1.19 1.19 0.000000 0.000000
+					<!--BW_String-->
+				</ussr:R171_IS_3_II>
+				<ussr:R171_IS_3_II_02>
+					1.19 1.19 0.000000 0.000000
+					<!--BW_String-->
+				</ussr:R171_IS_3_II_02>
+				<ussr:R172_Object_752>
+					1.4 1.4 -0.09 -0.04
+					<!--BW_String-->
+				</ussr:R172_Object_752>
+				<ussr:R32_Matilda_II_LL>
+					0.44 0.44 2.13 0.89
+					<!--BW_String-->
+				</ussr:R32_Matilda_II_LL>
+			</tiling>
+			<tilingSettings>
+				<type>relative</type>
+				<factor>
+					1.727338  1.705944
+					<!--BW_String-->
+				</factor>
+				<offset>0.000000 0.000000</offset>
+			</tilingSettings>
+		</camouflage>
+	</itemGroup>
+</root>

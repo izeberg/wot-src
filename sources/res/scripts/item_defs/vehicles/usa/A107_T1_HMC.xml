@@ -153,7 +153,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>3370</weight>
-		<maxHealth>128</maxHealth>
+		<maxHealth>150</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>60</maxHealth>
 			<maxRegenHealth>30</maxRegenHealth>
@@ -2404,11 +2404,11 @@
 			<rotationSpeed>18</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
-					0.55
+					0.28
 					<!--BW_String-->
 				</vehicleMovement>
 				<vehicleRotation>
-					0.55
+					0.28
 					<!--BW_String-->
 				</vehicleRotation>
 			</shotDispersionFactors>
@@ -3845,7 +3845,10 @@
 					<camouflage/>
 				</customizableVehicleAreas>
 			</customization>
-			<repairTime>8</repairTime>
+			<repairTime>
+				1.71001065
+				<!--BW_String-->
+			</repairTime>
 		</Chassis_A107_T1_HMC>
 		<Chassis_A107_T1_HMC_2>
 			<userString>#usa_vehicles:Chassis_A107_T1_HMC_2</userString>
@@ -3866,11 +3869,11 @@
 			<rotationSpeed>20</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
-					0.5
+					0.26
 					<!--BW_String-->
 				</vehicleMovement>
 				<vehicleRotation>
-					0.5
+					0.26
 					<!--BW_String-->
 				</vehicleRotation>
 			</shotDispersionFactors>
@@ -5308,7 +5311,7 @@
 				</customizableVehicleAreas>
 			</customization>
 			<repairTime>
-				7.5
+				1.71001065
 				<!--BW_String-->
 			</repairTime>
 		</Chassis_A107_T1_HMC_2>
@@ -5348,13 +5351,13 @@
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<shotDispersionRadius>
-						0.8
+						0.7
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>9</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.48
+							0.30
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>6</afterShot>
@@ -5364,7 +5367,7 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						5.5
+						5.0
 						<!--BW_String-->
 					</aimingTime>
 					<models>
@@ -5451,7 +5454,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_1 armor_1</primaryArmor>
 			<weight>100</weight>
-			<maxHealth>32</maxHealth>
+			<maxHealth>50</maxHealth>
 			<rotationSpeed>15</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>100</maxHealth>

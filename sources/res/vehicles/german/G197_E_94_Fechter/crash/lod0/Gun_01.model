@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-0.344265 -0.517225 -2.049687</min>
+		<max>0.446082 0.473266 5.770903</max>
+	</visibilityBox>
+	<parent>vehicles/german/G197_E_94_Fechter/crash/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/german/G197_E_94_Fechter/crash/lod0/Gun_01</nodefullVisual>
+</root>

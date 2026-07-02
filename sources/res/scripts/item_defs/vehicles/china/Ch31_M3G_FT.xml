@@ -10,7 +10,7 @@
 	<supplySlots>1 1 6 6 8 8 8</supplySlots>
 	<speedLimits>
 		<forward>55</forward>
-		<backward>12</backward>
+		<backward>16</backward>
 	</speedLimits>
 	<invisibility>
 		<moving>
@@ -111,7 +111,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>8274</weight>
-		<maxHealth>228</maxHealth>
+		<maxHealth>450</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>110</maxHealth>
 			<maxRegenHealth>70</maxRegenHealth>
@@ -2057,11 +2057,11 @@
 			<rotationSpeed>36</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
-					0.3
+					0.24
 					<!--BW_String-->
 				</vehicleMovement>
 				<vehicleRotation>
-					0.3
+					0.24
 					<!--BW_String-->
 				</vehicleRotation>
 			</shotDispersionFactors>
@@ -4342,7 +4342,7 @@
 				</customizableVehicleAreas>
 			</customization>
 			<repairTime>
-				5.71428585
+				2.28001642
 				<!--BW_String-->
 			</repairTime>
 		</Chassis_Ch31_M3G_FT>
@@ -6641,7 +6641,7 @@
 				</customizableVehicleAreas>
 			</customization>
 			<repairTime>
-				5.71428585
+				2.28001642
 				<!--BW_String-->
 			</repairTime>
 		</Chassis_Ch31_M3G_FT_2>
@@ -6661,7 +6661,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_1 armor_1</primaryArmor>
 			<weight>100</weight>
-			<maxHealth>57</maxHealth>
+			<maxHealth>50</maxHealth>
 			<rotationSpeed>40</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>70</maxHealth>
@@ -6707,7 +6707,7 @@
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<shotDispersionRadius>
-						0.42
+						0.38
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
@@ -6715,16 +6715,16 @@
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
-						2.3
+						1.6
 						<!--BW_String-->
 					</aimingTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.12
+							0.10
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
-							4.0
+							2.0
 							<!--BW_String-->
 						</afterShot>
 						<whileGunDamaged>
@@ -7149,7 +7149,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_1 armor_1</primaryArmor>
 			<weight>100</weight>
-			<maxHealth>57</maxHealth>
+			<maxHealth>60</maxHealth>
 			<rotationSpeed>40</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>70</maxHealth>
@@ -7204,16 +7204,16 @@
 					</shotDispersionRadius>
 					<reloadTime>5</reloadTime>
 					<aimingTime>
-						1.9
+						1.6
 						<!--BW_String-->
 					</aimingTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.12
+							0.10
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
-							4.0
+							2.0
 							<!--BW_String-->
 						</afterShot>
 						<whileGunDamaged>

@@ -121,7 +121,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>7190</weight>
-		<maxHealth>232</maxHealth>
+		<maxHealth>250</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>70</maxHealth>
 			<maxRegenHealth>35</maxRegenHealth>
@@ -3934,7 +3934,10 @@
 					<camouflage/>
 				</customizableVehicleAreas>
 			</customization>
-			<repairTime>9</repairTime>
+			<repairTime>
+				2.85003138
+				<!--BW_String-->
+			</repairTime>
 		</Sturmpanzerketten_ausf_A>
 		<Sturmpanzerketten_ausf_B>
 			<userString>#germany_vehicles:Sturmpanzerketten_ausf_B</userString>
@@ -5936,7 +5939,7 @@
 				</customizableVehicleAreas>
 			</customization>
 			<repairTime>
-				7.63636351
+				2.85003138
 				<!--BW_String-->
 			</repairTime>
 		</Sturmpanzerketten_ausf_B>
@@ -5953,7 +5956,7 @@
 				<armor_1>0</armor_1>
 			</armor>
 			<weight>100</weight>
-			<maxHealth>58</maxHealth>
+			<maxHealth>50</maxHealth>
 			<rotationSpeed>16</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>100</maxHealth>
@@ -5963,7 +5966,7 @@
 					<!--BW_String-->
 				</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>255</circularVisionRadius>
+			<circularVisionRadius>300</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>50</maxHealth>
 				<maxRegenHealth>25</maxRegenHealth>
@@ -5998,11 +6001,11 @@
 						<gun>25</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.84
+						0.80
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<aimingTime>
-						6.5
+						6.2
 						<!--BW_String-->
 					</aimingTime>
 					<pitchLimits>

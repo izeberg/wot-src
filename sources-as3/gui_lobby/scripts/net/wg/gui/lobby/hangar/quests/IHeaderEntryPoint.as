@@ -11,6 +11,10 @@ package net.wg.gui.lobby.hangar.quests
       
       function set alias(param1:String) : void;
       
+      function get registerAlias() : String;
+      
+      function set registerAlias(param1:String) : void;
+      
       function get marginRight() : int;
       
       function get marginLeft() : int;

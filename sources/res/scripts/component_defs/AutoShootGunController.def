@@ -14,8 +14,6 @@
 			<Exposed/>
 		</deactivateShooting>
 	</CellMethods>
-	<ClientMethods>
-		<showShooting/>
-	</ClientMethods>
+	<ClientMethods/>
 	<DefaultKeyName>autoShootGunController</DefaultKeyName>
 </root>

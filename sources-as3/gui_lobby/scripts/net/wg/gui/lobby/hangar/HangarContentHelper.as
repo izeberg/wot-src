@@ -75,9 +75,6 @@ package net.wg.gui.lobby.hangar
                case HANGAR_CONSTS.ALERT_MESSAGE:
                   this._hangar.removeAlertMessage();
                   break;
-               case HANGAR_CONSTS.COMP7_MODIFIERS:
-                  this._hangar.removeComp7Modifiers();
-                  break;
                case HANGAR_CONSTS.BATTLE_MODIFIERS:
                   this._hangar.removeBattleModifiers();
                   break;
@@ -134,9 +131,6 @@ package net.wg.gui.lobby.hangar
                   break;
                case HANGAR_CONSTS.ALERT_MESSAGE:
                   this._hangar.addAlertMessage();
-                  break;
-               case HANGAR_CONSTS.COMP7_MODIFIERS:
-                  this._hangar.addComp7Modifiers();
                   break;
                case HANGAR_CONSTS.BATTLE_MODIFIERS:
                   this._hangar.addBattleModifiers();

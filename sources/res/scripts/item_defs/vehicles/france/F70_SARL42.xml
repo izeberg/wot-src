@@ -96,7 +96,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_5 armor_9</primaryArmor>
 		<weight>9640</weight>
-		<maxHealth>432</maxHealth>
+		<maxHealth>500</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>125</maxHealth>
 			<maxRegenHealth>85</maxRegenHealth>
@@ -4628,7 +4628,7 @@
 				</customizableVehicleAreas>
 			</customization>
 			<repairTime>
-				5.71428585
+				2.85003138
 				<!--BW_String-->
 			</repairTime>
 		</Chassis_SARL42>
@@ -6982,7 +6982,7 @@
 				</customizableVehicleAreas>
 			</customization>
 			<repairTime>
-				5.71428585
+				2.85003138
 				<!--BW_String-->
 			</repairTime>
 		</Chassis_SARL42_2>
@@ -6991,6 +6991,12 @@
 		<Turret_1_SARL42>
 			<userString>#france_vehicles:Turret_1_SARL42</userString>
 			<tags/>
+			<unlocks>
+				<turret>
+					Turret_2_SARL42
+					<cost>1180</cost>
+				</turret>
+			</unlocks>
 			<level>3</level>
 			<price>2000</price>
 			<armor>
@@ -7010,7 +7016,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_5 armor_7</primaryArmor>
 			<weight>2800</weight>
-			<maxHealth>78</maxHealth>
+			<maxHealth>110</maxHealth>
 			<rotationSpeed>30</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>80</maxHealth>
@@ -7166,10 +7172,6 @@
 							_47mm_SA37_ameliore
 							<cost>2400</cost>
 						</gun>
-						<turret>
-							Turret_2_SARL42
-							<cost>1180</cost>
-						</turret>
 					</unlocks>
 					<armor>
 						<armor_1>
@@ -8284,7 +8286,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_7 armor_5</primaryArmor>
 			<weight>3500</weight>
-			<maxHealth>108</maxHealth>
+			<maxHealth>130</maxHealth>
 			<rotationSpeed>32</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>80</maxHealth>
@@ -8624,7 +8626,7 @@
 							0.12
 							<!--BW_String-->
 						</turretRotation>
-						<afterShot>4</afterShot>
+						<afterShot>2</afterShot>
 						<whileGunDamaged>
 							2.0
 							<!--BW_String-->
@@ -8763,7 +8765,7 @@
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<shotDispersionRadius>
-						0.45
+						0.40
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
@@ -8776,7 +8778,7 @@
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
-							4.0
+							2.0
 							<!--BW_String-->
 						</afterShot>
 						<whileGunDamaged>
@@ -8905,11 +8907,11 @@
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<shotDispersionRadius>
-						0.43
+						0.38
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						5.4
+						5.0
 						<!--BW_String-->
 					</reloadTime>
 					<shotDispersionFactors>
@@ -8918,7 +8920,7 @@
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
-							4.0
+							2.0
 							<!--BW_String-->
 						</afterShot>
 						<whileGunDamaged>
@@ -8927,7 +8929,7 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						2.3
+						2.0
 						<!--BW_String-->
 					</aimingTime>
 					<models>

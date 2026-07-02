@@ -1556,6 +1556,44 @@
 				<clipAngle>1.169371</clipAngle>
 				<verticalMirror>true</verticalMirror>
 			</slot>
+			<slot>
+				<slotType>fixedEmblem</slotType>
+				<slotId>17000</slotId>
+				<rayStart>-1.889346 0.538713 0.567904</rayStart>
+				<rayEnd>
+					-0.889369 0.538713 0.56118
+					<!--BW_String-->
+				</rayEnd>
+				<rayUp>
+					0.000001 1 0
+					<!--BW_String-->
+				</rayUp>
+				<emblemId>31479</emblemId>
+				<size>
+					0.65
+					<!--BW_String-->
+				</size>
+				<isUVProportional>false</isUVProportional>
+			</slot>
+			<slot>
+				<slotType>fixedEmblem</slotType>
+				<slotId>17001</slotId>
+				<rayStart>1.889346 0.538713 0.567904</rayStart>
+				<rayEnd>
+					0.889369 0.538713 0.56118
+					<!--BW_String-->
+				</rayEnd>
+				<rayUp>
+					-0.000001 1 0
+					<!--BW_String-->
+				</rayUp>
+				<emblemId>31479</emblemId>
+				<size>
+					0.65
+					<!--BW_String-->
+				</size>
+				<isUVProportional>false</isUVProportional>
+			</slot>
 		</customizationSlots>
 		<customization>
 			<customizableVehicleAreas>

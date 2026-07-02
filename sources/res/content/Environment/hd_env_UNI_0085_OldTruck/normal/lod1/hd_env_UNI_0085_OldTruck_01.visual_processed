@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>hd_env_UNI_0085_OldTruck_01</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>HP_module0</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 17.141830 3.071658</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>lod1</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>n0</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>n1</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>n1Shape.vertices</vertices>
+			<primitive>n1Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>n_glass0</identifier>
+					<fx>shaders/std_effects/PBS_glass.fx</fx>
+					<materialKind>73</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						dirtAlbedoMap
+						<Texture>content/Environment/hd_env_UNI_0085_OldTruck/hd_env_UNI_0085_OldTruck_Glass_AM.dds</Texture>
+					</property>
+					<property>
+						glassMap
+						<Texture>content/Environment/hd_env_UNI_0085_OldTruck/hd_env_UNI_0085_OldTruck_Glass_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Environment/hd_env_UNI_0085_OldTruck/hd_env_UNI_0085_OldTruck_Glass_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.013152 1.585770 -1.406278</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>d_metal0</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<materialKind>87</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/hd_env_UNI_0085_OldTruck/hd_env_UNI_0085_OldTruck_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Environment/hd_env_UNI_0085_OldTruck/hd_env_UNI_0085_OldTruck_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Environment/hd_env_UNI_0085_OldTruck/hd_env_UNI_0085_OldTruck_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.356859 0.140676 -0.293829</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				2
+				<material>
+					<identifier>n_metal0</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>73</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/hd_env_UNI_0085_OldTruck/hd_env_UNI_0085_OldTruck_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Environment/hd_env_UNI_0085_OldTruck/hd_env_UNI_0085_OldTruck_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Environment/hd_env_UNI_0085_OldTruck/hd_env_UNI_0085_OldTruck_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.010922 1.309298 0.001178</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-1.496068 -0.017091 -3.204289</min>
+		<max>1.071777 2.611412 2.945793</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>202470</geometrySize>
+	<minUVDensity>0.003105</minUVDensity>
+</root>

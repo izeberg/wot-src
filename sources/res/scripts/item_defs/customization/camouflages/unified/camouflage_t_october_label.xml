@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<xmlns:ussr>ussr</xmlns:ussr>
+	<xmlns:germany>germany</xmlns:germany>
+	<xmlns:usa>usa</xmlns:usa>
+	<xmlns:china>china</xmlns:china>
+	<xmlns:france>france</xmlns:france>
+	<xmlns:uk>uk</xmlns:uk>
+	<xmlns:japan>japan</xmlns:japan>
+	<xmlns:czech>czech</xmlns:czech>
+	<xmlns:sweden>sweden</xmlns:sweden>
+	<xmlns:poland>poland</xmlns:poland>
+	<xmlns:italy>italy</xmlns:italy>
+	<xmlns:intunion>intunion</xmlns:intunion>
+	<itemGroup>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R47_ISU-152_Zveroboj ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<camouflage>
+			<id>57</id>
+			<texture>vehicles/russian/Camouflage/t_october.dds</texture>
+			<description>#vehicle_customization:camouflage/t_october/description</description>
+			<scales>
+				1.3 1 0.7
+				<!--BW_String-->
+			</scales>
+			<userString>#vehicle_customization:camouflage/t_october/label</userString>
+			<tags>fullRGB</tags>
+			<invisibilityFactor>1</invisibilityFactor>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<rotation>
+				<HULL>-0.626961</HULL>
+				<TURRET>-0.626961</TURRET>
+				<GUN>-0.626961</GUN>
+			</rotation>
+			<tiling>
+				<france:F114_Projet_4_1>
+					1.76 1.76 0.000000 0.000000
+					<!--BW_String-->
+				</france:F114_Projet_4_1>
+				<sweden:S11_Strv_103B>
+					0.72 0.72 0.57 -0.44
+					<!--BW_String-->
+				</sweden:S11_Strv_103B>
+				<sweden:S18_EMIL_1951_E1>
+					0.9 0.9 1.64 0.82
+					<!--BW_String-->
+				</sweden:S18_EMIL_1951_E1>
+				<uk:GB107_Cavalier>
+					1.5 1.5 0.000000 0.000000
+					<!--BW_String-->
+				</uk:GB107_Cavalier>
+				<uk:GB91_Super_Conqueror>
+					0.93 0.93 0.94 0.81
+					<!--BW_String-->
+				</uk:GB91_Super_Conqueror>
+				<usa:A128_concept_1b>
+					0.5 0.5 2.84 -0.195713
+					<!--BW_String-->
+				</usa:A128_concept_1b>
+				<usa:A129_T6_medium>
+					3 3 0.000000 0.000000
+					<!--BW_String-->
+				</usa:A129_T6_medium>
+				<usa:A13_T34_hvy>
+					2.3 2.3 1.57 2.4
+					<!--BW_String-->
+				</usa:A13_T34_hvy>
+				<usa:A13_T34_hvy_FL>
+					2.3 2.3 1.57 2.4
+					<!--BW_String-->
+				</usa:A13_T34_hvy_FL>
+				<ussr:R170_IS_2_II>
+					1.5 1.5 -0.98 -1.6
+					<!--BW_String-->
+				</ussr:R170_IS_2_II>
+				<ussr:R172_Object_752>
+					2.6 2.6 0.57 0.54
+					<!--BW_String-->
+				</ussr:R172_Object_752>
+				<ussr:R20_T-44>
+					2.5 2.5 0.65 0.07
+					<!--BW_String-->
+				</ussr:R20_T-44>
+				<ussr:R32_Matilda_II_LL>
+					0.5 0.5 2.27 0.61
+					<!--BW_String-->
+				</ussr:R32_Matilda_II_LL>
+				<ussr:R45_IS-7>
+					2.5 2.5 -0.08 0.87
+					<!--BW_String-->
+				</ussr:R45_IS-7>
+			</tiling>
+			<tilingSettings>
+				<type>absolute</type>
+				<factor>250 250</factor>
+				<offset>
+					0.52 0.05
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+		</camouflage>
+	</itemGroup>
+</root>

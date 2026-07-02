@@ -457,6 +457,10 @@ class AbstractBattleMode(object):
         return
 
     @property
+    def _client_battleModifiersPanel(self):
+        return
+
+    @property
     def _client_prbSquadEntityClass(self):
         return
 
@@ -642,6 +646,10 @@ class AbstractBattleMode(object):
     def registerBannerEntryPointLUIRule(self):
         from gui.prb_control import prb_utils
         prb_utils.addBannerEntryPointLUIRule(self._CLIENT_BANNER_ENTRY_POINT_ALIAS, self._client_bannerEntryPointLUIRule, self._personality)
+
+    def registerBattleModifierPanels(self):
+        from gui.prb_control import prb_utils
+        prb_utils.addBattleModifiersPanel(self._client_battleModifiersPanel, self._personality)
 
     def registerProviderBattleQueue(self):
         from gui.prb_control import prb_utils

@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<nodelessVisual>vehicles/american/A153_XM66F/track/segment_02</nodelessVisual>
+	<visibilityBox>
+		<min>-0.298908 -0.000000 -0.085843</min>
+		<max>0.298908 0.113072 0.085843</max>
+	</visibilityBox>
 </root>

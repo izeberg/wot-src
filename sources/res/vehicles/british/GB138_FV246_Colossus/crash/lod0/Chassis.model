@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-1.806118 -0.000209 -4.154609</min>
+		<max>1.804904 0.984625 4.075058</max>
+	</visibilityBox>
+	<parent>vehicles/british/GB138_FV246_Colossus/crash/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/british/GB138_FV246_Colossus/crash/lod0/Chassis</nodefullVisual>
+</root>

@@ -9,7 +9,7 @@ package net.wg.gui.lobby.battleResults.controller
    public class ScrollBarTeamStatsController extends DefaultTeamStatsController
    {
       
-      private static const MAX_RENDERERS_DISPLAYED:int = 17;
+      private static const MAX_RENDERERS_DISPLAYED:uint = 17;
        
       
       public function ScrollBarTeamStatsController(param1:IEventDispatcher)
@@ -31,9 +31,14 @@ package net.wg.gui.lobby.battleResults.controller
       
       override protected function setupList(param1:DataProvider, param2:CommonStatsVO, param3:TeamStatsList) : void
       {
-         var _loc4_:Number = param3.rowHeight * MAX_RENDERERS_DISPLAYED;
+         var _loc4_:Number = param3.rowHeight * this.maxRenderersDisplayed;
          param3.height = _loc4_;
          super.setupList(param1,param2,param3);
+      }
+      
+      protected function get maxRenderersDisplayed() : uint
+      {
+         return MAX_RENDERERS_DISPLAYED;
       }
    }
 }

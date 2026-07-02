@@ -7440,7 +7440,10 @@
 						<rate>30</rate>
 					</clip>
 					<autoreload>
-						<reloadTime>8 9 11</reloadTime>
+						<reloadTime>
+							7.5 8.5 11
+							<!--BW_String-->
+						</reloadTime>
 					</autoreload>
 					<models>
 						<undamaged>vehicles/italy/It12_Prototipo_Standard_B/normal/lod0/Gun_01.model</undamaged>
@@ -8909,7 +8912,10 @@
 						<rate>30</rate>
 					</clip>
 					<autoreload>
-						<reloadTime>8 9 11</reloadTime>
+						<reloadTime>
+							7.5 8.5 11
+							<!--BW_String-->
+						</reloadTime>
 					</autoreload>
 					<models>
 						<undamaged>vehicles/italy/It12_Prototipo_Standard_B/normal/lod0/Gun_03.model</undamaged>
@@ -9062,11 +9068,11 @@
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
-						2.5
+						2.3
 						<!--BW_String-->
 					</aimingTime>
 					<shotDispersionRadius>
-						0.37
+						0.36
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<shotDispersionFactors>

@@ -9,7 +9,7 @@
 	<sequenceObject>
 		<name>stg_23_prepaint</name>
 		<type>model</type>
-		<resource>content/Hangars/h00_armory_yard/environment/Constructor/A176_OTAC_LK_7605/normal/lod0/stg_23_prepaint.model</resource>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/GB142_FV249_Castle/normal/lod0/stg_23_paint.model</resource>
 		<track>
 			<name>visibility</name>
 			<type>bool</type>
@@ -25,7 +25,7 @@
 		<track>
 			<name>material property float</name>
 			<type>float</type>
-			<identifier>s_nd10</identifier>
+			<identifier>s_nd0</identifier>
 			<property>repaintProgeression</property>
 			<frame>
 				<startTime>0.000000</startTime>
@@ -51,17 +51,28 @@
 			<type>attach</type>
 			<frame>
 				<startTime>0.000000</startTime>
-				<duration>3.233334</duration>
+				<duration>3.333333</duration>
 				<value>Root|</value>
 			</frame>
 		</track>
 		<track>
-			<name>ay_ep_08_seq_stage_23</name>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 2.679756 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>ay_ep_09_seq_stage_23</name>
 			<type>sound</type>
 			<frame>
 				<startTime>0.000000</startTime>
-				<duration>3.432563</duration>
-				<sequenceSound>ay_ep_08_seq_stage_23</sequenceSound>
+				<duration>3.288792</duration>
+				<sequenceSound>ay_seq_stage_23</sequenceSound>
 				<type>play_till_end</type>
 				<fade>0.000000</fade>
 			</frame>

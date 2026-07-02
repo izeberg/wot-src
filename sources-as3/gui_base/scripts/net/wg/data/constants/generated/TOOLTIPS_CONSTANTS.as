@@ -833,9 +833,15 @@ package net.wg.data.constants.generated
       
       public static const VEHICLE_STAT_TRACK:String = "vehicleStatTrack";
       
+      public static const BIRTHDAY_ENTRY_POINT:String = "birthdayEntryPoint";
+      
       public static const BIRTHDAY_GIFT_SYSTEM_POSTMARK:String = "birthdayGiftSystemPostmark";
       
+      public static const BIRTHDAY_GIFT_SYSTEM_DISABLED_PLAYER:String = "birthdayGiftDisabledPlayer";
+      
       public static const BIRTHDAY_GOLDEN_TICKET:String = "birthdayBirthdayGoldenTicket";
+      
+      public static const PREFERRED_MAP_SLOT_TOOLTIP:String = "preferredMapSlotTooltip";
       
       public static const ACHIEVEMENTS_SET:Array = [BATTLE_STATS_ACHIEVS,BATTLE_STATS_MARKS_ON_GUN_ACHIEVEMENT,ACHIEVEMENT,MARKS_ON_GUN_ACHIEVEMENT,GLOBAL_RATING,MARK_OF_MASTERY,ACHIEVEMENT_ATTR,SHOP_ACHIEVEMENT,SHOP_BADGE,REFERRAL_BADGE];
       
@@ -933,9 +939,11 @@ package net.wg.data.constants.generated
       
       public static const EARLY_ACCESS_LOBBY_SET:Array = [EARLY_ACCESS_COMMON_INFO,EARLY_ACCESS_VEHICLE_LOCKED,EARLY_ACCESS_PAUSED,EARLY_ACCESS_CAROUSEL_VEHICLE_POST_PROGRESSION,EARLY_ACCESS_CURRENCY,EARLY_ACCESS_ENTRY_POINT];
       
-      public static const BIRTHDAY_SET:Array = [BIRTHDAY_GIFT_SYSTEM_POSTMARK,BIRTHDAY_GOLDEN_TICKET,ECONOMY_BONUS_TOOLTIP];
+      public static const BIRTHDAY_SET:Array = [BIRTHDAY_ENTRY_POINT,BIRTHDAY_GIFT_SYSTEM_POSTMARK,BIRTHDAY_GOLDEN_TICKET,ECONOMY_BONUS_TOOLTIP,BIRTHDAY_GIFT_SYSTEM_DISABLED_PLAYER];
       
       public static const STORAGE_SET:Array = [STORAGE_RESTORE_DEVICE_INFO];
+      
+      public static const BONUSES_SET:Array = [PREFERRED_MAP_SLOT_TOOLTIP];
        
       
       public function TOOLTIPS_CONSTANTS()

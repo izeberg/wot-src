@@ -11,8 +11,6 @@ package net.wg.gui.lobby.battleResults.components
    public class SortieTeamStatsController extends FortTeamStatsController
    {
       
-      private static const FORT_RESOURCE:String = "resourceCount";
-      
       private static const FORT_RESOURCE_COLUMN_WIDTH:int = 62;
       
       private static const KEY_RESOURCE_COUNT:String = "resourceCount";
@@ -40,15 +38,15 @@ package net.wg.gui.lobby.battleResults.components
       {
          super.initColumnsData(param1);
          columnWidth[ColumnConstants.PLAYER] = !!param1.isShowSquad ? ColumnConstants.SQUAD_PLAYER_COLUMN_WIDTH - ColumnConstants.FIRST_COLUMN_WIDTH : ColumnConstants.SQUAD_PLAYER_COLUMN_WIDTH;
-         columnTooltip[FORT_RESOURCE] = BATTLE_RESULTS.TEAM_RESOURCEHEADER;
-         columnWidth[FORT_RESOURCE] = FORT_RESOURCE_COLUMN_WIDTH;
-         sortingKey[FORT_RESOURCE] = [KEY_RESOURCE_COUNT];
+         columnTooltip[ColumnConstants.FORT_RESOURCE] = BATTLE_RESULTS.TEAM_RESOURCEHEADER;
+         columnWidth[ColumnConstants.FORT_RESOURCE] = FORT_RESOURCE_COLUMN_WIDTH;
+         sortingKey[ColumnConstants.FORT_RESOURCE] = [KEY_RESOURCE_COUNT];
          columnWidth[ColumnConstants.MEDAL] = ColumnConstants.SQUAD_MEDAL_COLUMN_WIDTH;
       }
       
       override protected function getColumnIds(param1:CommonStatsVO) : Vector.<String>
       {
-         return new <String>[ColumnConstants.PLAYER,ColumnConstants.TANK,ColumnConstants.DAMAGE,ColumnConstants.FRAG,ColumnConstants.XP,FORT_RESOURCE,ColumnConstants.MEDAL];
+         return new <String>[ColumnConstants.PLAYER,ColumnConstants.TANK,ColumnConstants.DAMAGE,ColumnConstants.FRAG,ColumnConstants.XP,ColumnConstants.FORT_RESOURCE,ColumnConstants.MEDAL];
       }
       
       override protected function setupResources(param1:BattleResultsVO) : void

@@ -2,19 +2,10 @@
 <root>
 	<materialNames/>
 	<visibilityBox>
-		<min>
-			-9.10576 -1.59499 -4.52545
-			<!--BW_String-->
-		</min>
-		<max>
-			31.2523 19.609 5.16975
-			<!--BW_String-->
-		</max>
+		<min>-9.105760 -1.594990 -4.525450</min>
+		<max>31.252300 19.608999 5.169750</max>
 	</visibilityBox>
 	<parent>content/Buildings/hd_bld_SU_309_Elevator/normal/lod1/hd_bld_SU_309_Elevator</parent>
-	<extent>
-		96.0
-		<!--BW_String-->
-	</extent>
+	<extent>96.000000</extent>
 	<nodefullVisual>content/Buildings/hd_bld_SU_309_Elevator/normal/lod0/hd_bld_SU_309_Elevator</nodefullVisual>
 </root>

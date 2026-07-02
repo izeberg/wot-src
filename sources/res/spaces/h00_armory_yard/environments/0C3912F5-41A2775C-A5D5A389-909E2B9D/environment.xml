@@ -3,20 +3,20 @@
 	<Fog>
 		<version>2.000000</version>
 		<enable>true</enable>
-		<innerBB>-78.000000 -14.500000 80.000000 80.000000</innerBB>
-		<outerBB>-100.000000 -33.000000 100.000000 100.000000</outerBB>
+		<innerBB>-13.641617 -200.000000 200.000000 200.000000</innerBB>
+		<outerBB>-400.000000 -400.000000 400.000000 400.000000</outerBB>
 		<deferred>
 			<useEdgeFog>true</useEdgeFog>
-			<color>0.458824 0.427451 0.384314 1.000000</color>
-			<density>0.007000</density>
-			<height>4.500000</height>
-			<heightFalloff>0.427000</heightFalloff>
-			<startDistance>20.000000</startDistance>
-			<scatterStart>25.000000</scatterStart>
+			<color>0.368627 0.466667 0.580392 1.000000</color>
+			<density>0.025000</density>
+			<height>-100.000000</height>
+			<heightFalloff>0.004000</heightFalloff>
+			<startDistance>50.000000</startDistance>
+			<scatterStart>50.000000</scatterStart>
 			<scatterExponent>2.000000</scatterExponent>
-			<scatterColor>0.909804 0.780392 0.627451 1.000000</scatterColor>
-			<skyLow>-1.000000</skyLow>
-			<skyHigh>-1.000000</skyHigh>
+			<scatterColor>0.690196 0.572549 0.439216 5.000000</scatterColor>
+			<skyLow>-0.150000</skyLow>
+			<skyHigh>0.810000</skyHigh>
 			<useCustomCenter>false</useCustomCenter>
 			<centerPosition>0.000000 0.000000 0.000000</centerPosition>
 		</deferred>
@@ -39,10 +39,10 @@
 		<adaptationSpeed>100.000000</adaptationSpeed>
 		<bloom>
 			<enable>true</enable>
-			<threshold>0.240000</threshold>
-			<amount>0.330000</amount>
-			<tint>0.921569 0.721569 0.372549</tint>
-			<dirtAmount>0.560000</dirtAmount>
+			<threshold>0.100000</threshold>
+			<amount>0.840000</amount>
+			<tint>0.952941 0.823529 0.600000</tint>
+			<dirtAmount>0.530000</dirtAmount>
 		</bloom>
 		<environment>
 			<sunlightLumMultiplier>7.000000</sunlightLumMultiplier>
@@ -74,7 +74,7 @@
 			<active>2</active>
 		</tonemappings>
 		<colorCorrection>
-			<map>system/maps/post_processing/cube/wgr_film_a10_scontrol.dds</map>
+			<map>system/maps/post_processing/cube/Wgr_film_a10_cont_comb.dds</map>
 		</colorCorrection>
 		<rainDistortion>
 			<map>system/maps/void_cch.dds</map>
@@ -133,17 +133,17 @@
 		<enableFromPreset>2</enableFromPreset>
 		<radius>0.060000</radius>
 		<amplify>0.470000</amplify>
-		<fadeNear>0.820000</fadeNear>
+		<fadeNear>3.120000</fadeNear>
 		<terrainAOGammaCorrection>0.250000</terrainAOGammaCorrection>
 		<influences>
 			<speedtree>0.550000 0.750000</speedtree>
 			<terrain>0.000000 0.000000</terrain>
-			<objects>0.640000 0.000000</objects>
+			<objects>0.760000 0.000000</objects>
 			<localLights>0.760000</localLights>
 		</influences>
 	</SSAO>
 	<Shadow>
-		<maxShadowsSplitCount>5</maxShadowsSplitCount>
+		<maxShadowsSplitCount>4</maxShadowsSplitCount>
 		<maxDynamicViewDistance>16384.000000</maxDynamicViewDistance>
 		<lightSize>1.000000</lightSize>
 		<dynamicShadowsLightSize>13.000000</dynamicShadowsLightSize>
@@ -250,9 +250,9 @@
 	</dirt>
 	<SkyDome>
 		<worldMatrix>
-			<row0>-0.000488 0.000000 -1.000000</row0>
+			<row0>0.544639 0.000000 -0.838671</row0>
 			<row1>0.000000 1.000000 0.000000</row1>
-			<row2>1.000000 0.000000 -0.000488</row2>
+			<row2>0.838671 0.000000 0.544639</row2>
 			<row3>0.000000 0.000000 0.000000</row3>
 		</worldMatrix>
 		<worldMatrixForward>
@@ -296,6 +296,8 @@
 		<PsIllumMultForward>1.000000</PsIllumMultForward>
 		<PsRibbonMultDeferred>1.000000</PsRibbonMultDeferred>
 		<PsRibbonMultForward>1.000000</PsRibbonMultForward>
+		<particleEnvironmentTintEnabledDeferred>false</particleEnvironmentTintEnabledDeferred>
+		<particleEnvironmentTintEnabledForward>false</particleEnvironmentTintEnabledForward>
 	</VFXLighting>
 	<WeatherDependentSettings>
 		<environment_dependent_emission>

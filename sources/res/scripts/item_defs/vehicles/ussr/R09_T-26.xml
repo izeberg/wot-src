@@ -94,7 +94,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>5700</weight>
-		<maxHealth>288</maxHealth>
+		<maxHealth>300</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>75</maxHealth>
 			<maxRegenHealth>50</maxRegenHealth>
@@ -2141,11 +2141,11 @@
 			<rotationSpeed>50</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
-					0.25
+					0.22
 					<!--BW_String-->
 				</vehicleMovement>
 				<vehicleRotation>
-					0.25
+					0.22
 					<!--BW_String-->
 				</vehicleRotation>
 			</shotDispersionFactors>
@@ -4536,7 +4536,7 @@
 				</customizableVehicleAreas>
 			</customization>
 			<repairTime>
-				6.85714293
+				1.71001065
 				<!--BW_String-->
 			</repairTime>
 		</T-26>
@@ -4559,11 +4559,11 @@
 			<rotationSpeed>52</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
-					0.22
+					0.20
 					<!--BW_String-->
 				</vehicleMovement>
 				<vehicleRotation>
-					0.22
+					0.20
 					<!--BW_String-->
 				</vehicleRotation>
 			</shotDispersionFactors>
@@ -6954,7 +6954,7 @@
 				</customizableVehicleAreas>
 			</customization>
 			<repairTime>
-				6.85714293
+				1.71001065
 				<!--BW_String-->
 			</repairTime>
 		</T-26M>
@@ -6992,7 +6992,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>850</weight>
-			<maxHealth>52</maxHealth>
+			<maxHealth>40</maxHealth>
 			<rotationSpeed>44</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>60</maxHealth>
@@ -7002,7 +7002,7 @@
 					<!--BW_String-->
 				</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>280</circularVisionRadius>
+			<circularVisionRadius>300</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>40</maxHealth>
 				<maxRegenHealth>20</maxRegenHealth>
@@ -7041,7 +7041,7 @@
 						<gun>10</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.46
+						0.42
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
@@ -7049,7 +7049,7 @@
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
-						2.3
+						1.9
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -7149,7 +7149,7 @@
 						<gun>10</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.46
+						0.42
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
@@ -7157,7 +7157,7 @@
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
-						2.3
+						1.9
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -7253,7 +7253,7 @@
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
-						2.3
+						1.9
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -8118,7 +8118,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>1050</weight>
-			<maxHealth>72</maxHealth>
+			<maxHealth>60</maxHealth>
 			<rotationSpeed>46</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>60</maxHealth>
@@ -8147,11 +8147,11 @@
 					<maxAmmo>320</maxAmmo>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.14
+							0.10
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
-							4.0
+							2.0
 							<!--BW_String-->
 						</afterShot>
 						<whileGunDamaged>
@@ -8179,15 +8179,15 @@
 						<gun>10</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.46
+						0.40
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						2.3
+						2.0
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
-						2.3
+						1.6
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -8257,11 +8257,11 @@
 					<maxAmmo>270</maxAmmo>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.14
+							0.10
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
-							4.0
+							2.0
 							<!--BW_String-->
 						</afterShot>
 						<whileGunDamaged>
@@ -8289,15 +8289,15 @@
 						<gun>10</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.46
+						0.40
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						2.3
+						2.0
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
-						2.3
+						1.6
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -8367,11 +8367,11 @@
 					<maxAmmo>280</maxAmmo>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.14
+							0.10
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
-							4.0
+							2.0
 							<!--BW_String-->
 						</afterShot>
 						<whileGunDamaged>
@@ -8399,15 +8399,15 @@
 						<gun>10</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.39
+						0.38
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						2.3
+						2.0
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
-						2.3
+						1.6
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>

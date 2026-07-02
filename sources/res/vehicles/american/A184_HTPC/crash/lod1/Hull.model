@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A184_HTPC/crash/lod1/Hull</nodefullVisual>
+	<parent>vehicles/american/A184_HTPC/crash/lod2/Hull</parent>
+	<tank>true</tank>
+	<extent>
+		64.0
+		<!--BW_String-->
+	</extent>
+	<visibilityBox>
+		<min>-1.725232 -0.844802 -3.732255</min>
+		<max>1.780811 0.552382 3.206158</max>
+	</visibilityBox>
+</root>

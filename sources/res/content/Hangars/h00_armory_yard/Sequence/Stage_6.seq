@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<duration>4.980479</duration>
+	<duration>6.000000</duration>
 	<sequenceObject>
 		<name>Root</name>
 		<type>model</type>
@@ -12,62 +12,62 @@
 			<property>spawnProgeression</property>
 			<frame>
 				<startTime>0.000000</startTime>
-				<value>0.743119</value>
-				<inTangent>0.020216</inTangent>
-				<outTangent>0.020216</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>0.300000</startTime>
-				<value>0.749184</value>
-				<inTangent>0.060736</inTangent>
-				<outTangent>0.060736</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>0.333333</startTime>
-				<value>0.752559</value>
-				<inTangent>0.022000</inTangent>
-				<outTangent>0.022000</outTangent>
-				<tangentMode>771</tangentMode>
-			</frame>
-			<frame>
-				<startTime>1.300000</startTime>
-				<value>0.773083</value>
-				<inTangent>0.034369</inTangent>
-				<outTangent>0.034369</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>1.333333</startTime>
-				<value>0.774666</value>
-				<inTangent>0.039723</inTangent>
-				<outTangent>0.039723</outTangent>
+				<value>0.666558</value>
+				<inTangent>0.058104</inTangent>
+				<outTangent>0.058104</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 			<frame>
 				<startTime>1.833333</startTime>
-				<value>0.790636</value>
-				<inTangent>0.026698</inTangent>
-				<outTangent>0.026698</outTangent>
+				<value>0.773083</value>
+				<inTangent>0.052797</inTangent>
+				<outTangent>0.052797</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 			<frame>
-				<startTime>2.333333</startTime>
+				<startTime>1.866667</startTime>
+				<value>0.774666</value>
+				<inTangent>0.036353</inTangent>
+				<outTangent>0.036353</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.500000</startTime>
+				<value>0.790636</value>
+				<inTangent>0.023336</inTangent>
+				<outTangent>0.023336</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.000000</startTime>
 				<value>0.801364</value>
 				<inTangent>-0.005492</inTangent>
 				<outTangent>0.080020</outTangent>
 				<tangentMode>66307</tangentMode>
 			</frame>
 			<frame>
-				<startTime>3.666667</startTime>
+				<startTime>3.933334</startTime>
+				<value>0.840000</value>
+				<inTangent>0.085563</inTangent>
+				<outTangent>0.085563</outTangent>
+				<tangentMode>3</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.166667</startTime>
 				<value>1.000000</value>
-				<inTangent>0.074488</inTangent>
-				<outTangent>0.074488</outTangent>
+				<inTangent>0.064865</inTangent>
+				<outTangent>0.064865</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 			<frame>
-				<startTime>4.300000</startTime>
+				<startTime>5.800000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>6.000000</startTime>
 				<value>1.000000</value>
 				<inTangent>-0.000000</inTangent>
 				<outTangent>-0.000000</outTangent>
@@ -83,7 +83,7 @@
 			<type>attach</type>
 			<frame>
 				<startTime>0.000000</startTime>
-				<duration>4.966667</duration>
+				<duration>6.000000</duration>
 				<value>Root|</value>
 			</frame>
 		</track>
@@ -99,12 +99,12 @@
 			</frame>
 		</track>
 		<track>
-			<name>ay_ep_08_seq_stage_06</name>
+			<name>ay_ep_09_seq_stage_06</name>
 			<type>sound</type>
 			<frame>
 				<startTime>0.000000</startTime>
-				<duration>4.980479</duration>
-				<sequenceSound>ay_ep_08_seq_stage_06</sequenceSound>
+				<duration>5.955438</duration>
+				<sequenceSound>ay_seq_stage_06</sequenceSound>
 				<type>play_till_end</type>
 				<fade>0.000000</fade>
 			</frame>

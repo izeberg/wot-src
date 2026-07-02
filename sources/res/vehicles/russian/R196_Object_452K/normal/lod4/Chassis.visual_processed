@@ -1071,10 +1071,18 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_chassis_01_skinned</identifier>
-					<collisionFlags>255</collisionFlags>
-					<materialKind>0</materialKind>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<materialKind>0</materialKind>
+					<identifier>tank_proxy_skinned</identifier>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>vehicles/russian/R196_Object_452K/Object_452K_proxy_AM.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
 					<property>
 						metallicGlossMap
 						<Texture>vehicles/russian/R196_Object_452K/Object_452K_proxy_GMM.dds</Texture>
@@ -1084,16 +1092,12 @@
 						<Texture>vehicles/russian/R196_Object_452K/Object_452K_proxy_ANM.dds</Texture>
 					</property>
 					<property>
-						diffuseMap
-						<Texture>vehicles/russian/R196_Object_452K/Object_452K_proxy_AM.dds</Texture>
-					</property>
-					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/russian/R196_Object_452K/Object_452K_proxy_AO.dds</Texture>
 					</property>
 					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+						alphaReference
+						<Int>0</Int>
 					</property>
 				</material>
 				<groupOrigin>-1.364223 0.599679 -0.084695</groupOrigin>
@@ -1109,10 +1113,18 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_chassis_01_skinned</identifier>
-					<collisionFlags>255</collisionFlags>
-					<materialKind>0</materialKind>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<materialKind>0</materialKind>
+					<identifier>tank_proxy_skinned</identifier>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>vehicles/russian/R196_Object_452K/Object_452K_proxy_AM.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
 					<property>
 						metallicGlossMap
 						<Texture>vehicles/russian/R196_Object_452K/Object_452K_proxy_GMM.dds</Texture>
@@ -1122,16 +1134,12 @@
 						<Texture>vehicles/russian/R196_Object_452K/Object_452K_proxy_ANM.dds</Texture>
 					</property>
 					<property>
-						diffuseMap
-						<Texture>vehicles/russian/R196_Object_452K/Object_452K_proxy_AM.dds</Texture>
-					</property>
-					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/russian/R196_Object_452K/Object_452K_proxy_AO.dds</Texture>
 					</property>
 					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+						alphaReference
+						<Int>0</Int>
 					</property>
 				</material>
 				<groupOrigin>1.387206 0.566540 -0.088214</groupOrigin>

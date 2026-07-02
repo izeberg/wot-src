@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>Root</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>-0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.001969 -0.006344 0.004500</row3>
+			</transform>
+			<node>
+				<identifier>Baloon01</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.120023 0.004729 0.515019</row3>
+				</transform>
+				<node>
+					<identifier>Baloon01_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 -0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.118054 0.001615 -0.519519</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>Baloon02</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.074759 -0.035182 0.734953</row3>
+				</transform>
+				<node>
+					<identifier>Baloon02_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 -0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-0.076728 0.041527 -0.739453</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>Baloon03</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.130433 -0.045160 0.379553</row3>
+				</transform>
+				<node>
+					<identifier>Baloon03_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 -0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-0.132402 0.051505 -0.384053</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>Baloon04</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.180805 -0.185005 0.469350</row3>
+				</transform>
+				<node>
+					<identifier>Baloon04_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 -0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.178836 0.191349 -0.473850</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>Baloon05</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.068173 -0.221008 0.482007</row3>
+				</transform>
+				<node>
+					<identifier>Baloon05_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 -0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-0.070142 0.227353 -0.486507</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>Baloon06</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.220260 -0.291855 0.325260</row3>
+				</transform>
+				<node>
+					<identifier>Baloon06_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 -0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-0.222230 0.298199 -0.329760</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>Baloon07</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.025390 -0.416669 0.376198</row3>
+				</transform>
+				<node>
+					<identifier>Baloon07_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 -0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-0.027359 0.423013 -0.380698</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>Baloon08</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.175360 -0.397643 0.406742</row3>
+				</transform>
+				<node>
+					<identifier>Baloon08_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 -0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.173391 0.403987 -0.411242</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>Baloon09</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.058600 -0.423409 0.659638</row3>
+				</transform>
+				<node>
+					<identifier>Baloon09_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 -0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.056631 0.429753 -0.664138</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>Baloon10</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.315337 -0.372792 0.754876</row3>
+				</transform>
+				<node>
+					<identifier>Baloon10_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 -0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.313368 0.379136 -0.759376</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>Baloon11</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.187036 -0.423597 0.644619</row3>
+				</transform>
+				<node>
+					<identifier>Baloon11_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 -0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-0.189005 0.429941 -0.649119</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>Baloon12</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.132926 -0.185569 0.814330</row3>
+				</transform>
+				<node>
+					<identifier>Baloon12_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 -0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.130957 0.191914 -0.818830</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>Baloon13</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.010069 -0.103094 1.084136</row3>
+				</transform>
+				<node>
+					<identifier>Baloon13_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 -0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-0.012038 0.109439 -1.088636</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>Baloon14</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.043771 -0.318588 1.060153</row3>
+				</transform>
+				<node>
+					<identifier>Baloon14_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 -0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.041802 0.324933 -1.064653</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>Baloon15</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.125863 -0.207418 0.889972</row3>
+				</transform>
+				<node>
+					<identifier>Baloon15_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 -0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-0.127832 0.213762 -0.894472</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>Baloon16</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.277566 -0.162636 0.639864</row3>
+				</transform>
+				<node>
+					<identifier>Baloon16_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 -0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-0.279535 0.168980 -0.644364</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>rope_01</identifier>
+				<transform>
+					<row0>1.000000 -0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.001588 -0.001067 -0.007648</row3>
+				</transform>
+				<node>
+					<identifier>rope_01_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>-0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-0.000381 0.007412 0.003148</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>rope_02</identifier>
+				<transform>
+					<row0>1.000000 -0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000676 -0.011717 -0.007710</row3>
+				</transform>
+				<node>
+					<identifier>rope_02_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>-0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-0.002645 0.018062 0.003210</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>rope_03</identifier>
+				<transform>
+					<row0>1.000000 -0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.003528 -0.016555 -0.003632</row3>
+				</transform>
+				<node>
+					<identifier>rope_03_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>-0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-0.005497 0.022899 -0.000868</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>Root_BlendBone</identifier>
+				<transform>
+					<row0>1.000000 -0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 -1.000000</row2>
+					<row3>-0.001969 0.006344 -0.004500</row3>
+				</transform>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>Baloon07_BlendBone</node>
+		<node>Baloon11_BlendBone</node>
+		<node>Baloon10_BlendBone</node>
+		<node>Baloon15_BlendBone</node>
+		<node>Baloon14_BlendBone</node>
+		<node>Baloon13_BlendBone</node>
+		<node>Baloon08_BlendBone</node>
+		<node>Baloon04_BlendBone</node>
+		<node>Baloon01_BlendBone</node>
+		<node>Baloon05_BlendBone</node>
+		<node>Baloon06_BlendBone</node>
+		<node>Root_BlendBone</node>
+		<node>Baloon02_BlendBone</node>
+		<node>Baloon09_BlendBone</node>
+		<node>Baloon16_BlendBone</node>
+		<node>Baloon03_BlendBone</node>
+		<node>Baloon12_BlendBone</node>
+		<node>rope_02_BlendBone</node>
+		<node>rope_01_BlendBone</node>
+		<node>rope_03_BlendBone</node>
+		<geometry>
+			<vertices>s0Shape5.vertices</vertices>
+			<primitive>s0Shape5.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0_skinned</identifier>
+					<fx>shaders/controlPoint/controlPointFlag.fx</fx>
+					<materialKind>108</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/MilitaryEnvironment/mle000_BDAYFlagstaff/mle000_BDAYFlagstaff01_Flag_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_tintColor
+						<Vector4>1.000000 0.149020 0.149020 1.000000</Vector4>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/MilitaryEnvironment/mle000_BDAYFlagstaff/mle000_BDAYFlagstaff01_Flag_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/MilitaryEnvironment/mle000_BDAYFlagstaff/mle000_BDAYFlagstaff01_Flag_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.003938 -0.254500 -0.693654</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-0.516186 -0.678907 -0.042301</min>
+		<max>0.508309 0.169906 1.429609</max>
+	</boundingBox>
+	<geometrySize>63096</geometrySize>
+	<minUVDensity>0.062386</minUVDensity>
+</root>

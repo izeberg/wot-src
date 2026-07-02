@@ -174,6 +174,10 @@ package net.wg.gui.lobby.hangar.quests
          {
             return false;
          }
+         if(param1.isRightSide != this._isRightSide)
+         {
+            return false;
+         }
          var _loc2_:Vector.<HeaderQuestsVO> = param1.getQuests;
          var _loc3_:Vector.<String> = new Vector.<String>();
          for each(_loc4_ in _loc2_)

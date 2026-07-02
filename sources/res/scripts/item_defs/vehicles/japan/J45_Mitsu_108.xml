@@ -78,19 +78,19 @@
 	</camouflage>
 	<hull>
 		<armor>
-			<armor_1>100</armor_1>
-			<armor_2>80</armor_2>
-			<armor_3>80</armor_3>
+			<armor_1>90</armor_1>
+			<armor_2>60</armor_2>
+			<armor_3>60</armor_3>
 			<armor_4>50</armor_4>
-			<armor_5>25</armor_5>
-			<armor_6>28</armor_6>
+			<armor_5>40</armor_5>
+			<armor_6>30</armor_6>
 			<armor_7>100</armor_7>
 			<armor_8>0</armor_8>
 			<armor_9>80</armor_9>
 			<armor_10>15</armor_10>
-			<armor_11>25</armor_11>
+			<armor_11>45</armor_11>
 			<armor_12>50</armor_12>
-			<armor_13>80</armor_13>
+			<armor_13>60</armor_13>
 			<armor_14>12</armor_14>
 			<armor_15>
 				10
@@ -6205,7 +6205,7 @@
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>13400</weight>
 			<maxHealth>200</maxHealth>
-			<rotationSpeed>26</rotationSpeed>
+			<rotationSpeed>20</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>120</maxHealth>
 				<maxRegenHealth>60</maxRegenHealth>
@@ -6428,7 +6428,7 @@
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
-						2.8
+						3.2
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -6441,7 +6441,7 @@
 					</shotDispersionRadius>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.1
+							0.14
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>

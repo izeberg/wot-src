@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/british/GB138_FV246_Colossus/normal/lod1/Turret_01</parent>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.711317 0.000000 -2.991874</min>
+		<max>1.711317 2.574150 1.409689</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/british/GB138_FV246_Colossus/normal/lod0/Turret_01</nodefullVisual>
+</root>

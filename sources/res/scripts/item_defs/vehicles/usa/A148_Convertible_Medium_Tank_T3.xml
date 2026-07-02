@@ -116,7 +116,7 @@
 		</armor>
 		<primaryArmor>armor_2 armor_3 armor_4</primaryArmor>
 		<weight>5500</weight>
-		<maxHealth>360</maxHealth>
+		<maxHealth>450</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>130</maxHealth>
 			<maxRegenHealth>90</maxRegenHealth>
@@ -2412,7 +2412,7 @@
 				</right>
 			</physicalTracks>
 			<repairTime>
-				5.71428585
+				2.28001642
 				<!--BW_String-->
 			</repairTime>
 		</Chassis_A148_Convertible_Medium_Tank_T3>
@@ -2489,11 +2489,11 @@
 					</pitchLimits>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.14
+							0.10
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
-							4.0
+							1.5
 							<!--BW_String-->
 						</afterShot>
 						<whileGunDamaged>
@@ -2530,13 +2530,13 @@
 						<count>4</count>
 						<rate>120</rate>
 					</burst>
-					<reloadTime>15</reloadTime>
+					<reloadTime>13</reloadTime>
 					<aimingTime>
-						2.5
+						1.5
 						<!--BW_String-->
 					</aimingTime>
 					<shotDispersionRadius>
-						0.51
+						0.50
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<invisibilityFactorAtShot>

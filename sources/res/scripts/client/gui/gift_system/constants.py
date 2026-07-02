@@ -1,5 +1,6 @@
 from enum import unique, Enum, IntEnum
 DEV_STAMP_CODE = 'giftSystem_1_devStamp'
+MAX_CACHED_PLAYERS = 5000
 
 @unique
 class GifterResponseState(Enum):
@@ -29,3 +30,4 @@ class HubUpdateReason(IntEnum):
     OUTCOME_GIFT = 4
     KEEPER_CLEAR = 5
     STAMPER_UPDATE = 6
+    WAIT_RESPONSE_RECEIVED = 7

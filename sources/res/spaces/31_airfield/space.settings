@@ -8,11 +8,13 @@
 		<minY>-7</minY>
 		<maxY>6</maxY>
 	</bounds>
+	<borderMask>borderMask.dds</borderMask>
 	<farPlane>
-		<max>16000.000000</max>
-		<high>16000.000000</high>
-		<medium>4954.569824</medium>
+		<max>25000.000000</max>
+		<high>25000.000000</high>
+		<medium>25000.000000</medium>
 		<low>600.000000</low>
+		<camera>25000.000000</camera>
 	</farPlane>
 	<DecalsInfo>
 		<VisualDecals>true</VisualDecals>
@@ -22,38 +24,38 @@
 			<type>
 				<name>GBufferDecals</name>
 				<atlas>
-					<width>4096</width>
-					<height>4096</height>
+					<width>512</width>
+					<height>512</height>
 					<format>BC3_UNORM</format>
 					<constrains>
 						<minWidth>256</minWidth>
 						<minHeight>256</minHeight>
-						<maxWidth>1024</maxWidth>
-						<maxHeight>1024</maxHeight>
+						<maxWidth>2048</maxWidth>
+						<maxHeight>2048</maxHeight>
 						<format>BC3_UNORM</format>
 					</constrains>
 				</atlas>
 				<atlas>
-					<width>4096</width>
-					<height>4096</height>
+					<width>512</width>
+					<height>512</height>
 					<format>BC3_UNORM</format>
 					<constrains>
 						<minWidth>256</minWidth>
 						<minHeight>256</minHeight>
-						<maxWidth>1024</maxWidth>
-						<maxHeight>1024</maxHeight>
+						<maxWidth>2048</maxWidth>
+						<maxHeight>2048</maxHeight>
 						<format>BC3_UNORM</format>
 					</constrains>
 				</atlas>
 				<atlas>
-					<width>4096</width>
-					<height>4096</height>
+					<width>512</width>
+					<height>512</height>
 					<format>BC3_UNORM</format>
 					<constrains>
 						<minWidth>256</minWidth>
 						<minHeight>256</minHeight>
-						<maxWidth>1024</maxWidth>
-						<maxHeight>1024</maxHeight>
+						<maxWidth>2048</maxWidth>
+						<maxHeight>2048</maxHeight>
 						<format>BC3_UNORM</format>
 					</constrains>
 				</atlas>
@@ -61,14 +63,14 @@
 			<type>
 				<name>OtherDecals</name>
 				<atlas>
-					<width>2048</width>
-					<height>2048</height>
+					<width>512</width>
+					<height>512</height>
 					<format>BC1_UNORM</format>
 					<constrains>
-						<minWidth>128</minWidth>
-						<minHeight>128</minHeight>
-						<maxWidth>512</maxWidth>
-						<maxHeight>512</maxHeight>
+						<minWidth>256</minWidth>
+						<minHeight>256</minHeight>
+						<maxWidth>2048</maxWidth>
+						<maxHeight>2048</maxHeight>
 						<format>BC1_UNORM</format>
 					</constrains>
 				</atlas>
@@ -85,20 +87,21 @@
 	<chunkSize>100.000000</chunkSize>
 	<navmeshGenerator>navgen</navmeshGenerator>
 	<enableClusteredShading>false</enableClusteredShading>
-	<isSHGridQualityOverridden>false</isSHGridQualityOverridden>
-	<overrideSHGridQuality>0</overrideSHGridQuality>
+	<isSHGridQualityOverridden>true</isSHGridQualityOverridden>
+	<overrideSHGridQuality>1</overrideSHGridQuality>
 	<spaceVisibilityFlags>
 		<type>
 			<tag>ctf</tag>
 			<bitIndex>0</bitIndex>
 		</type>
 		<type>
-			<tag>bootcamp</tag>
-			<bitIndex>14</bitIndex>
-		</type>
-		<type>
 			<tag>comp7</tag>
 			<bitIndex>1</bitIndex>
 		</type>
 	</spaceVisibilityFlags>
+	<texturesMipShift>0</texturesMipShift>
+	<havok>
+		<enabled>true</enabled>
+		<simRadius>100.000000</simRadius>
+	</havok>
 </root>

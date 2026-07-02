@@ -98,7 +98,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>5565</weight>
-		<maxHealth>324</maxHealth>
+		<maxHealth>450</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>90</maxHealth>
 			<maxRegenHealth>60</maxRegenHealth>
@@ -4411,7 +4411,7 @@
 				</customizableVehicleAreas>
 			</customization>
 			<repairTime>
-				5.71428585
+				2.85003138
 				<!--BW_String-->
 			</repairTime>
 		</SU-76>
@@ -6507,7 +6507,7 @@
 				</customizableVehicleAreas>
 			</customization>
 			<repairTime>
-				5.71428585
+				2.85003138
 				<!--BW_String-->
 			</repairTime>
 		</SU-76bis>
@@ -6525,7 +6525,7 @@
 				<armor_8>0</armor_8>
 			</armor>
 			<weight>83</weight>
-			<maxHealth>81</maxHealth>
+			<maxHealth>100</maxHealth>
 			<rotationSpeed>44</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>100</maxHealth>
@@ -6554,12 +6554,12 @@
 					<maxAmmo>120</maxAmmo>
 					<unlocks>
 						<gun>
-							_57mm_ZiS-2
-							<cost>4000</cost>
-						</gun>
-						<gun>
 							_76mm_ZiS-3_mod_42
 							<cost>2600</cost>
+						</gun>
+						<gun>
+							_57mm_ZiS-2
+							<cost>4000</cost>
 						</gun>
 					</unlocks>
 					<armor>
@@ -6582,7 +6582,7 @@
 						<gun>10</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.41
+						0.38
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
@@ -6599,7 +6599,7 @@
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
-							3.0
+							2.0
 							<!--BW_String-->
 						</afterShot>
 						<whileGunDamaged>
@@ -6721,8 +6721,8 @@
 					<maxAmmo>95</maxAmmo>
 					<unlocks>
 						<vehicle>
-							R02_SU-85
-							<cost>12500</cost>
+							R100_SU122A
+							<cost>12570</cost>
 						</vehicle>
 					</unlocks>
 					<armor>
@@ -6745,24 +6745,24 @@
 						<gun>20</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.43
+						0.36
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						4.1
+						4.0
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
-						2.3
+						1.8
 						<!--BW_String-->
 					</aimingTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.12
+							0.10
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
-							3.5
+							2.5
 							<!--BW_String-->
 						</afterShot>
 						<whileGunDamaged>
@@ -6971,13 +6971,19 @@
 				</_76mm_ZiS-3_mod_42>
 				<_57mm_ZiS-2>
 					shared
+					<unlocks>
+						<vehicle>
+							R02_SU-85
+							<cost>12500</cost>
+						</vehicle>
+					</unlocks>
 					<pitchLimits>
 						<minPitch>0 -15 1 -15</minPitch>
 						<maxPitch>0 5 1 5</maxPitch>
 					</pitchLimits>
 					<maxAmmo>110</maxAmmo>
 					<reloadTime>
-						3.2
+						3.0
 						<!--BW_String-->
 					</reloadTime>
 					<armor>
@@ -7013,7 +7019,7 @@
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
-							3.0
+							2.0
 							<!--BW_String-->
 						</afterShot>
 						<whileGunDamaged>
@@ -7301,24 +7307,7 @@
 		<Medium>shared</Medium>
 	</fuelTanks>
 	<radios>
-		<_9R>
-			shared
-			<unlocks>
-				<radio>
-					_9RM
-					<cost>4040</cost>
-				</radio>
-			</unlocks>
-		</_9R>
-		<_9RM>
-			shared
-			<unlocks>
-				<vehicle>
-					R100_SU122A
-					<cost>12570</cost>
-				</vehicle>
-			</unlocks>
-		</_9RM>
+		<_9RM>shared</_9RM>
 	</radios>
 	<physics>
 		<detailed>

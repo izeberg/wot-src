@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/german/G197_E_94_Fechter/normal/lod1/Gun_01</parent>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-0.206575 -0.447963 0.269956</min>
+		<max>0.413674 0.534216 5.770903</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G197_E_94_Fechter/normal/lod0/Gun_01</nodefullVisual>
+</root>

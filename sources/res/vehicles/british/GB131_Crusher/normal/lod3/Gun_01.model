@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/british/GB131_Crusher/normal/lod4/Gun_01</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-0.588605 -0.380706 -0.175445</min>
+		<max>0.589513 0.344138 4.215076</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/british/GB131_Crusher/normal/lod3/Gun_01</nodefullVisual>
+</root>

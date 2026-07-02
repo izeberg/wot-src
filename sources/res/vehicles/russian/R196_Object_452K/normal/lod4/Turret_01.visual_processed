@@ -31,19 +31,23 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<primitive>indices</primitive>
+			<vertices>turret_01_Shape.vertices</vertices>
+			<primitive>turret_01_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_turret_01</identifier>
-					<property>
-						selfIllumination
-						<Float>0.000000</Float>
-					</property>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>0</materialKind>
 					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<materialKind>0</materialKind>
+					<identifier>tank_proxy</identifier>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>vehicles/russian/R196_Object_452K/Object_452K_proxy_AM.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
 					<property>
 						metallicGlossMap
 						<Texture>vehicles/russian/R196_Object_452K/Object_452K_proxy_GMM.dds</Texture>
@@ -53,16 +57,12 @@
 						<Texture>vehicles/russian/R196_Object_452K/Object_452K_proxy_ANM.dds</Texture>
 					</property>
 					<property>
-						diffuseMap
-						<Texture>vehicles/russian/R196_Object_452K/Object_452K_proxy_AM.dds</Texture>
-					</property>
-					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/russian/R196_Object_452K/Object_452K_proxy_AO.dds</Texture>
 					</property>
 					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+						alphaReference
+						<Int>0</Int>
 					</property>
 				</material>
 				<groupOrigin>-0.038985 0.678005 -0.436865</groupOrigin>

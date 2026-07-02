@@ -123,6 +123,8 @@ package
       
       public static const BONUSES_CREWSKIN_TEXT:String = "#quests:bonuses/crewSkin/text";
       
+      public static const BONUSES_PREFERREDMAPSLOTS_POSTBATTLE:String = "#quests:bonuses/preferredMapSlots/postBattle";
+      
       public static const BONUSES_DOSSIER_ACHIVE:String = "#quests:bonuses/dossier/achive";
       
       public static const BONUSES_DOSSIER_BADGE:String = "#quests:bonuses/dossier/badge";
@@ -2597,6 +2599,8 @@ package
       
       public static const BONUSNAME_HONEY_COIN:String = "#quests:bonusName/honey_coin";
       
+      public static const BONUSNAME_REWARDSSLOTS:String = "#quests:bonusName/rewardsSlots";
+      
       public static const ACTION_AUTO_CALENDAR:String = "#quests:action/auto/calendar";
       
       public static const ACTION_FULL_CALENDAR:String = "#quests:action/full/calendar";
@@ -3299,8 +3303,6 @@ package
       
       public static const DAILYQUESTS_TAB_CATHEGORY_TOOLTIP_DAILY_BODY:String = "#quests:dailyQuests/tab/cathegory/tooltip/daily/body";
       
-      public static const PLAYSTREAK_TAB_LABEL:String = "#quests:playStreak/tab/label";
-      
       public static const DAILYQUESTS_BODY_REROLL:String = "#quests:dailyQuests/body/reroll";
       
       public static const DAILYQUESTS_MISSIONSWITCH_TOOLTIP_HEADER:String = "#quests:dailyQuests/missionSwitch/tooltip/header";
@@ -3611,10 +3613,6 @@ package
       
       public static const INTROSCREEN_SUBTITLEDAILYQUESTSONLY:String = "#quests:introScreen/subtitleDailyQuestsOnly";
       
-      public static const INTROSCREEN_INPUTSERIES_HEADER:String = "#quests:introScreen/inputSeries/header";
-      
-      public static const INTROSCREEN_INPUTSERIES_DESCRIPTION:String = "#quests:introScreen/inputSeries/description";
-      
       public static const INTROSCREEN_DAILYQUESTS_HEADER:String = "#quests:introScreen/dailyQuests/header";
       
       public static const INTROSCREEN_DAILYQUESTS_DESCRIPTION:String = "#quests:introScreen/dailyQuests/description";
@@ -3682,6 +3680,8 @@ package
       public static const SWITCH_ISWEEKLYENABLED:String = "#quests:switch/isWeeklyEnabled";
       
       public static const SWITCH_ISWEEKLYENABLEDTITLE:String = "#quests:switch/isWeeklyEnabledTitle";
+      
+      public static const BONUSNAME_GOLDENTICKET:String = "#quests:bonusName/goldenticket";
       
       public static const BATTLECONDITION_STATE_ENUM:Array = [BATTLECONDITION_STATE_COMPLETED,BATTLECONDITION_STATE_COMPLETED_PERFECTLY,BATTLECONDITION_STATE_IN_PROGRESS,BATTLECONDITION_STATE_FAILED];
       

@@ -345,40 +345,19 @@
 				<material>
 					<identifier>d_stone6_2</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>88</materialKind>
 					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
 						g_tile0Tint
-						<Vector4>
-							0.96 0.870145 0.7872 1
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.960000 0.870145 0.787200 1.000000</Vector4>
 					</property>
 					<property>
 						g_tile2Tint
-						<Vector4>
-							0.815 0.815 0.815 1
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.815000 0.815000 0.815000 1.000000</Vector4>
 					</property>
 					<property>
 						g_dirtColor
-						<Vector4>
-							0.47 0.43 0.38 0.08
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.470000 0.430000 0.380000 0.080000</Vector4>
 					</property>
 					<property>
 						g_atlasSizes
@@ -444,40 +423,19 @@
 				<material>
 					<identifier>d_stone6_1</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>87</materialKind>
 					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
 						g_tile0Tint
-						<Vector4>
-							0.96 0.870145 0.7872 1
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.960000 0.870145 0.787200 1.000000</Vector4>
 					</property>
 					<property>
 						g_tile2Tint
-						<Vector4>
-							0.815 0.815 0.815 1
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.815000 0.815000 0.815000 1.000000</Vector4>
 					</property>
 					<property>
 						g_dirtColor
-						<Vector4>
-							0.47 0.43 0.38 0.08
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.470000 0.430000 0.380000 0.080000</Vector4>
 					</property>
 					<property>
 						g_atlasSizes
@@ -546,37 +504,20 @@
 					<collisionFlags>0</collisionFlags>
 					<materialKind>89</materialKind>
 					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
 						doubleSided
 						<Bool>true</Bool>
 					</property>
 					<property>
 						g_tile2Tint
-						<Vector4>
-							0.815 0.815 0.815 1
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.815000 0.815000 0.815000 1.000000</Vector4>
 					</property>
 					<property>
 						g_tile0Tint
-						<Vector4>
-							0.96 0.870145 0.7872 1
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.960000 0.870145 0.787200 1.000000</Vector4>
 					</property>
 					<property>
 						g_dirtColor
-						<Vector4>
-							0.47 0.43 0.38 0.08
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.470000 0.430000 0.380000 0.080000</Vector4>
 					</property>
 					<property>
 						g_atlasSizes
@@ -642,58 +583,31 @@
 				<material>
 					<identifier>d_metal1_3</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>89</materialKind>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
 					<property>
 						doubleSided
 						<Bool>true</Bool>
 					</property>
 					<property>
 						g_tile2Tint
-						<Vector4>
-							0.57 0.57 0.57 1
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.570000 0.570000 0.570000 1.000000</Vector4>
 					</property>
 					<property>
 						g_tile1Tint
-						<Vector4>
-							0.82 0.789332 0.6806 1
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.820000 0.789332 0.680600 1.000000</Vector4>
 					</property>
 					<property>
 						g_tile0Tint
-						<Vector4>
-							1 0.986 0.95 1
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>1.000000 0.986000 0.950000 1.000000</Vector4>
 					</property>
 					<property>
 						g_fakeShadowsAndDetailParams
-						<Vector4>
-							0.5 0.5 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
-					</property>
-					<property>
-						g_dirtColorParams
-						<Vector4>0.100000 0.000000 0.000000 0.000000</Vector4>
+						<Vector4>0.500000 0.500000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_dirtColor
-						<Vector4>
-							0.175 0.160106 0.141489 0.08
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.175000 0.160106 0.141489 0.080000</Vector4>
 					</property>
 					<property>
 						g_atlasSizes
@@ -759,58 +673,31 @@
 				<material>
 					<identifier>d_metal1_1</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>87</materialKind>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
 					<property>
 						doubleSided
 						<Bool>true</Bool>
 					</property>
 					<property>
 						g_tile2Tint
-						<Vector4>
-							0.57 0.57 0.57 1
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.570000 0.570000 0.570000 1.000000</Vector4>
 					</property>
 					<property>
 						g_tile1Tint
-						<Vector4>
-							0.82 0.789332 0.6806 1
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.820000 0.789332 0.680600 1.000000</Vector4>
 					</property>
 					<property>
 						g_tile0Tint
-						<Vector4>
-							1 0.986 0.95 1
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>1.000000 0.986000 0.950000 1.000000</Vector4>
 					</property>
 					<property>
 						g_fakeShadowsAndDetailParams
-						<Vector4>
-							0.5 0.5 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
-					</property>
-					<property>
-						g_dirtColorParams
-						<Vector4>0.100000 0.000000 0.000000 0.000000</Vector4>
+						<Vector4>0.500000 0.500000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_dirtColor
-						<Vector4>
-							0.175 0.160106 0.141489 0.08
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.175000 0.160106 0.141489 0.080000</Vector4>
 					</property>
 					<property>
 						g_atlasSizes
@@ -876,54 +763,31 @@
 				<material>
 					<identifier>d_stone5_1</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>87</materialKind>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
 					<property>
 						doubleSided
 						<Bool>true</Bool>
 					</property>
 					<property>
 						g_tile2Tint
-						<Vector4>
-							0.81965 0.845 0.834353 1
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.819650 0.845000 0.834353 1.000000</Vector4>
 					</property>
 					<property>
 						g_tile1Tint
-						<Vector4>
-							0.845 0.845 0.845 1
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.845000 0.845000 0.845000 1.000000</Vector4>
 					</property>
 					<property>
 						g_tile0Tint
-						<Vector4>
-							0.685 0.685 0.685 1
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.685000 0.685000 0.685000 1.000000</Vector4>
 					</property>
 					<property>
 						g_fakeShadowsAndDetailParams
-						<Vector4>
-							0.5 0.5 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.500000 0.500000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_dirtColor
-						<Vector4>
-							0.47 0.43 0.38 0.12
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.470000 0.430000 0.380000 0.120000</Vector4>
 					</property>
 					<property>
 						g_atlasSizes
@@ -992,37 +856,20 @@
 					<collisionFlags>0</collisionFlags>
 					<materialKind>88</materialKind>
 					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
 						doubleSided
 						<Bool>true</Bool>
 					</property>
 					<property>
 						g_tile2Tint
-						<Vector4>
-							0.815 0.815 0.815 1
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.815000 0.815000 0.815000 1.000000</Vector4>
 					</property>
 					<property>
 						g_tile0Tint
-						<Vector4>
-							0.96 0.870145 0.7872 1
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.960000 0.870145 0.787200 1.000000</Vector4>
 					</property>
 					<property>
 						g_dirtColor
-						<Vector4>
-							0.47 0.43 0.38 0.08
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.470000 0.430000 0.380000 0.080000</Vector4>
 					</property>
 					<property>
 						g_atlasSizes
@@ -1091,37 +938,20 @@
 					<collisionFlags>0</collisionFlags>
 					<materialKind>87</materialKind>
 					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
 						doubleSided
 						<Bool>true</Bool>
 					</property>
 					<property>
 						g_tile2Tint
-						<Vector4>
-							0.815 0.815 0.815 1
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.815000 0.815000 0.815000 1.000000</Vector4>
 					</property>
 					<property>
 						g_tile0Tint
-						<Vector4>
-							0.96 0.870145 0.7872 1
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.960000 0.870145 0.787200 1.000000</Vector4>
 					</property>
 					<property>
 						g_dirtColor
-						<Vector4>
-							0.47 0.43 0.38 0.08
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.470000 0.430000 0.380000 0.080000</Vector4>
 					</property>
 					<property>
 						g_atlasSizes
@@ -1190,37 +1020,16 @@
 					<collisionFlags>0</collisionFlags>
 					<materialKind>75</materialKind>
 					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
 						g_tile2Tint
-						<Vector4>
-							0.815 0.815 0.815 1
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.815000 0.815000 0.815000 1.000000</Vector4>
 					</property>
 					<property>
 						g_tile0Tint
-						<Vector4>
-							0.96 0.870145 0.7872 1
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.960000 0.870145 0.787200 1.000000</Vector4>
 					</property>
 					<property>
 						g_dirtColor
-						<Vector4>
-							0.47 0.43 0.38 0.08
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.470000 0.430000 0.380000 0.080000</Vector4>
 					</property>
 					<property>
 						g_atlasSizes
@@ -1286,54 +1095,27 @@
 				<material>
 					<identifier>n_stone5_1</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>73</materialKind>
 					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
 						g_tile2Tint
-						<Vector4>
-							0.81965 0.845 0.834353 1
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.819650 0.845000 0.834353 1.000000</Vector4>
 					</property>
 					<property>
 						g_tile1Tint
-						<Vector4>
-							0.845 0.845 0.845 1
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.845000 0.845000 0.845000 1.000000</Vector4>
 					</property>
 					<property>
 						g_tile0Tint
-						<Vector4>
-							0.685 0.685 0.685 1
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.685000 0.685000 0.685000 1.000000</Vector4>
 					</property>
 					<property>
 						g_fakeShadowsAndDetailParams
-						<Vector4>
-							0.5 0.5 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.500000 0.500000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_dirtColor
-						<Vector4>
-							0.47 0.43 0.38 0.12
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.470000 0.430000 0.380000 0.120000</Vector4>
 					</property>
 					<property>
 						g_atlasSizes
@@ -1399,58 +1181,27 @@
 				<material>
 					<identifier>n_metal1_3</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>75</materialKind>
 					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
 						g_tile2Tint
-						<Vector4>
-							0.615 0.607005 0.599625 1
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.615000 0.607005 0.599625 1.000000</Vector4>
 					</property>
 					<property>
 						g_tile1Tint
-						<Vector4>
-							0.935 0.900031 0.77605 1
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.935000 0.900031 0.776050 1.000000</Vector4>
 					</property>
 					<property>
 						g_tile0Tint
-						<Vector4>
-							1 0.986 0.95 1
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>1.000000 0.986000 0.950000 1.000000</Vector4>
 					</property>
 					<property>
 						g_fakeShadowsAndDetailParams
-						<Vector4>
-							0.5 0.5 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
-					</property>
-					<property>
-						g_dirtColorParams
-						<Vector4>0.100000 0.000000 0.000000 0.000000</Vector4>
+						<Vector4>0.500000 0.500000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_dirtColor
-						<Vector4>
-							0.175 0.160106 0.141489 0.08
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.175000 0.160106 0.141489 0.080000</Vector4>
 					</property>
 					<property>
 						g_atlasSizes
@@ -1516,58 +1267,31 @@
 				<material>
 					<identifier>n_metal1_1</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>73</materialKind>
 					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
 						doubleSided
-						<Bool>false</Bool>
+						<Bool>true</Bool>
 					</property>
 					<property>
 						g_tile2Tint
-						<Vector4>
-							0.615 0.607005 0.599625 1
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.615000 0.607005 0.599625 1.000000</Vector4>
 					</property>
 					<property>
 						g_tile1Tint
-						<Vector4>
-							0.935 0.900031 0.77605 1
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.935000 0.900031 0.776050 1.000000</Vector4>
 					</property>
 					<property>
 						g_tile0Tint
-						<Vector4>
-							1 0.986 0.95 1
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>1.000000 0.986000 0.950000 1.000000</Vector4>
 					</property>
 					<property>
 						g_fakeShadowsAndDetailParams
-						<Vector4>
-							0.5 0.5 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
-					</property>
-					<property>
-						g_dirtColorParams
-						<Vector4>0.100000 0.000000 0.000000 0.000000</Vector4>
+						<Vector4>0.500000 0.500000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_dirtColor
-						<Vector4>
-							0.175 0.160106 0.141489 0.08
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.175000 0.160106 0.141489 0.080000</Vector4>
 					</property>
 					<property>
 						g_atlasSizes
@@ -1636,37 +1360,20 @@
 					<collisionFlags>0</collisionFlags>
 					<materialKind>73</materialKind>
 					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
 						doubleSided
-						<Bool>false</Bool>
+						<Bool>true</Bool>
 					</property>
 					<property>
 						g_tile2Tint
-						<Vector4>
-							0.815 0.815 0.815 1
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.815000 0.815000 0.815000 1.000000</Vector4>
 					</property>
 					<property>
 						g_tile0Tint
-						<Vector4>
-							0.96 0.870144 0.7872 1
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.960000 0.870144 0.787200 1.000000</Vector4>
 					</property>
 					<property>
 						g_dirtColor
-						<Vector4>
-							0.47 0.43 0.38 0.08
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.470000 0.430000 0.380000 0.080000</Vector4>
 					</property>
 					<property>
 						g_atlasSizes
@@ -1735,37 +1442,20 @@
 					<collisionFlags>0</collisionFlags>
 					<materialKind>74</materialKind>
 					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
 						doubleSided
 						<Bool>true</Bool>
 					</property>
 					<property>
 						g_tile2Tint
-						<Vector4>
-							0.815 0.815 0.815 1
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.815000 0.815000 0.815000 1.000000</Vector4>
 					</property>
 					<property>
 						g_tile0Tint
-						<Vector4>
-							0.96 0.870145 0.7872 1
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.960000 0.870145 0.787200 1.000000</Vector4>
 					</property>
 					<property>
 						g_dirtColor
-						<Vector4>
-							0.47 0.43 0.38 0.08
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.470000 0.430000 0.380000 0.080000</Vector4>
 					</property>
 					<property>
 						g_atlasSizes
@@ -1831,40 +1521,23 @@
 				<material>
 					<identifier>s_nd3</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>111</materialKind>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
 					<property>
 						doubleSided
 						<Bool>true</Bool>
 					</property>
 					<property>
 						g_tile2Tint
-						<Vector4>
-							0.815 0.815 0.815 1
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.815000 0.815000 0.815000 1.000000</Vector4>
 					</property>
 					<property>
 						g_tile0Tint
-						<Vector4>
-							0.96 0.870145 0.7872 1
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.960000 0.870145 0.787200 1.000000</Vector4>
 					</property>
 					<property>
 						g_dirtColor
-						<Vector4>
-							0.47 0.43 0.38 0.08
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.470000 0.430000 0.380000 0.080000</Vector4>
 					</property>
 					<property>
 						g_atlasSizes
@@ -1930,58 +1603,31 @@
 				<material>
 					<identifier>s_nd2</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>112</materialKind>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
 					<property>
 						doubleSided
 						<Bool>true</Bool>
 					</property>
 					<property>
 						g_tile2Tint
-						<Vector4>
-							0.615 0.607005 0.599625 1
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.615000 0.607005 0.599625 1.000000</Vector4>
 					</property>
 					<property>
 						g_tile1Tint
-						<Vector4>
-							0.935 0.900031 0.77605 1
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.935000 0.900031 0.776050 1.000000</Vector4>
 					</property>
 					<property>
 						g_tile0Tint
-						<Vector4>
-							1 0.986 0.95 1
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>1.000000 0.986000 0.950000 1.000000</Vector4>
 					</property>
 					<property>
 						g_fakeShadowsAndDetailParams
-						<Vector4>
-							0.5 0.5 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
-					</property>
-					<property>
-						g_dirtColorParams
-						<Vector4>0.100000 0.000000 0.000000 0.000000</Vector4>
+						<Vector4>0.500000 0.500000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_dirtColor
-						<Vector4>
-							0.175 0.160106 0.141489 0.08
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.175000 0.160106 0.141489 0.080000</Vector4>
 					</property>
 					<property>
 						g_atlasSizes
@@ -2047,40 +1693,23 @@
 				<material>
 					<identifier>s_nd1</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>111</materialKind>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
 					<property>
 						doubleSided
 						<Bool>true</Bool>
 					</property>
 					<property>
 						g_tile2Tint
-						<Vector4>
-							0.66 0.6303 0.6303 1
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.660000 0.630300 0.630300 1.000000</Vector4>
 					</property>
 					<property>
 						g_tile1Tint
-						<Vector4>
-							0.615 0.5904 0.5904 1
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.615000 0.590400 0.590400 1.000000</Vector4>
 					</property>
 					<property>
 						g_tile0Tint
-						<Vector4>
-							0.768 0.77792 0.8 1
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.768000 0.777920 0.800000 1.000000</Vector4>
 					</property>
 					<property>
 						g_atlasSizes
@@ -2149,51 +1778,28 @@
 					<collisionFlags>0</collisionFlags>
 					<materialKind>111</materialKind>
 					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
 						doubleSided
 						<Bool>true</Bool>
 					</property>
 					<property>
 						g_tile2Tint
-						<Vector4>
-							0.63 0.609 0.567 1
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.630000 0.609000 0.567000 1.000000</Vector4>
 					</property>
 					<property>
 						g_tile1Tint
-						<Vector4>
-							0.7 0.683586 0.6755 1
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.700000 0.683586 0.675500 1.000000</Vector4>
 					</property>
 					<property>
 						g_tile0Tint
-						<Vector4>
-							0.63 0.63 0.63 1
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.630000 0.630000 0.630000 1.000000</Vector4>
 					</property>
 					<property>
 						g_fakeShadowsAndDetailParams
-						<Vector4>
-							0.5 0.5 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.500000 0.500000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_dirtColor
-						<Vector4>
-							0.47 0.43 0.38 0.11
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.470000 0.430000 0.380000 0.110000</Vector4>
 					</property>
 					<property>
 						g_atlasSizes
@@ -2261,6 +1867,6 @@
 		<max>31.275869 19.608978 5.113271</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>47424</geometrySize>
+	<geometrySize>38712</geometrySize>
 	<minUVDensity>0.050511</minUVDensity>
 </root>

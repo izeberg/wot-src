@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/german/G197_E_94_Fechter/normal/lod4/Chassis</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.909549 -0.000054 -4.115307</min>
+		<max>1.909549 1.341520 4.207350</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G197_E_94_Fechter/normal/lod3/Chassis</nodefullVisual>
+</root>

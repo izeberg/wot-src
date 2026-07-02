@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd2</identifier>
+					<fx>shaders/std_effects/PBS_glass.fx</fx>
+					<materialKind>112</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						dirtAlbedoMap
+						<Texture>content/Hangars/h00_armory_yard/environment/hd_h00_AY26_0004_Kettle_AM.dds</Texture>
+					</property>
+					<property>
+						g_filterColor
+						<Vector4>1.000000 0.831373 0.682353 1.000000</Vector4>
+					</property>
+					<property>
+						glassMap
+						<Texture>content/Hangars/h00_armory_yard/environment/hd_h00_AY26_0004_Kettle_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h00_armory_yard/environment/hd_h00_AY26_0004_Kettle_ANM.dds</Texture>
+					</property>
+					<sortOrder>1</sortOrder>
+				</material>
+				<groupOrigin>0.003621 0.069387 0.000000</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>s_nd1</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<materialKind>112</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h00_armory_yard/environment/hd_h00_AY26_0004_Kettle_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h00_armory_yard/environment/hd_h00_AY26_0004_Kettle_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h00_armory_yard/environment/hd_h00_AY26_0004_Kettle_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.010390 0.054009 -0.000000</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				2
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/PBS_glass.fx</fx>
+					<materialKind>112</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						dirtAlbedoMap
+						<Texture>content/Hangars/h00_armory_yard/environment/hd_h00_AY26_0004_Kettle_AM.dds</Texture>
+					</property>
+					<property>
+						glassMap
+						<Texture>content/Hangars/h00_armory_yard/environment/hd_h00_AY26_0004_Kettle_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h00_armory_yard/environment/hd_h00_AY26_0004_Kettle_ANM.dds</Texture>
+					</property>
+					<property>
+						g_applyFog
+						<Bool>false</Bool>
+					</property>
+				</material>
+				<groupOrigin>0.003621 0.078850 -0.000000</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-0.072116 0.000777 -0.047715</min>
+		<max>0.051336 0.144884 0.048672</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>24536</geometrySize>
+	<minUVDensity>5.219481</minUVDensity>
+</root>

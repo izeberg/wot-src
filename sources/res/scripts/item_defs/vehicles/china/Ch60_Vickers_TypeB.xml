@@ -3192,7 +3192,7 @@
 				</right>
 			</physicalTracks>
 			<repairTime>
-				6.85714293
+				1.71001065
 				<!--BW_String-->
 			</repairTime>
 		</Chassis_Ch60_Vickers_TypeB>
@@ -3275,7 +3275,7 @@
 						<gun>10</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.48
+						0.44
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
@@ -3297,7 +3297,7 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						2.1
+						1.6
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>

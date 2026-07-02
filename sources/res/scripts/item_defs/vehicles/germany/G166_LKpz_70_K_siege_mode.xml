@@ -2954,11 +2954,11 @@
 							<slotType>insigniaOnGun</slotType>
 							<slotId>49000</slotId>
 							<rayStart>
-								-0.000001 0 3.34677
+								-0.000001 0 4.15
 								<!--BW_String-->
 							</rayStart>
 							<rayEnd>
-								-0.000001 0 3.62077
+								-0.000001 0 4.424
 								<!--BW_String-->
 							</rayEnd>
 							<rayUp>
@@ -2987,6 +2987,7 @@
 						<collisionModelClient>vehicles/german/G166_LKpz_70_K/collision_client/Gun_02.model</collisionModelClient>
 					</hitTester>
 					<reloadEffect>autoloader_reload85_107</reloadEffect>
+					<edgeByVisualModel>false</edgeByVisualModel>
 					<camouflage>
 						<density>116.473709 116.448357</density>
 						<aoTextureSize>512 512</aoTextureSize>

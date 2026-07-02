@@ -11,7 +11,7 @@ from gui.battle_pass.battle_pass_bonuses_packers import getBattlePassBonusPacker
 from gui.battle_pass.battle_pass_bonuses_packers import TmanTemplateBonusPacker
 from gui.impl import backport
 from gui.impl.auxiliary.rewards_helper import BlueprintBonusTypes
-from gui.impl.backport import createTooltipData, TooltipData
+from gui.impl.backport import createTooltipData
 from gui.impl.gen import R
 from gui.impl.gen.view_models.views.lobby.battle_pass.reward_item_model import RewardItemModel
 from gui.server_events.bonuses import getNonQuestBonuses, VehiclesBonus, GoodiesBonus
@@ -40,6 +40,7 @@ if typing.TYPE_CHECKING:
     from gui.server_events.bonuses import SimpleBonus, TmanTemplateTokensBonus
     from account_helpers.offers.offer_bonuses import NationalBlueprintOfferBonus
     from gui.server_events.recruit_helper import _BaseRecruitInfo
+    from gui.impl.backport import TooltipData
 _logger = logging.getLogger(__name__)
 WINBACK_DISCOUNTS = 'winbackDiscounts'
 _BONUS_COUNT = 'count'

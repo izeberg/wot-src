@@ -388,14 +388,14 @@ class ItemPacker(ShopBaseUIPacker):
     @property
     def longDescription(self):
         if self.__item.itemTypeID == GUI_ITEM_TYPE.OPTIONALDEVICE:
-            return _removeStringColorTags(self.__item.longDescriptionSpecial)
+            return backport.text(R.strings.tooltips.advanced.dyn(self.__item.descriptor.archetype)())
         else:
             if self.__item.itemTypeID != GUI_ITEM_TYPE.BATTLE_BOOSTER:
                 return self.__item.fullDescription
             if self.__item.isCrewBooster():
                 return self.__item.fullDescriptionSpecial
             if self.__item.isEconomicBooster():
-                return self.__item.getEconomicDirectivesDescription()
+                return self.__item.longDescriptionSpecial
             return self.__item.getOptDeviceBoosterDescription(None)
 
     @property
@@ -534,10 +534,56 @@ class VehiclePacker(ShopBaseUIPacker):
         return True
 
 
+class BundlePacker(ShopBaseUIPacker):
+    __TEMPLATES = {'bundle': TemplateType.BUNDLE, 
+       'other': TemplateType.OTHER, 
+       'maintain': TemplateType.MAINTAIN, 
+       'customization': TemplateType.CUSTOMIZATION, 
+       'economicBooster': TemplateType.ECONOMICBOOSTER}
+
+    def __init__(self, params):
+        self.__keyName, self.__category, self.count = params
+        super(BundlePacker, self).__init__(self.count)
+
+    @property
+    def isSupported(self):
+        return True
+
+    @property
+    def icon(self):
+        return backport.image(R.images.armory_yard.gui.maps.icons.shop.bundles.c_180x135.dyn(self.__keyName)())
+
+    @property
+    def largeIcon(self):
+        return backport.image(R.images.armory_yard.gui.maps.icons.shop.bundles.c_400x300.dyn(self.__keyName)())
+
+    @property
+    def title(self):
+        return backport.text(R.strings.armory_shop.bundles.dyn(self.__keyName).title())
+
+    @property
+    def template(self):
+        return self.__TEMPLATES.get(self.__category, None)
+
+    @property
+    def description(self):
+        return backport.text(R.strings.armory_shop.bundles.dyn(self.__keyName).description())
+
+    @property
+    def longDescription(self):
+        return backport.text(R.strings.armory_shop.bundles.dyn(self.__keyName).longDescription())
+
+    def pack(self, model, isLargeIcon=False):
+        if not super(BundlePacker, self).pack(model, isLargeIcon):
+            return False
+        return True
+
+
 _BONUS_PACKS = {'customizations': CustomizationPacker, 
    'goodies': GoodiesPacker, 
    'items': ItemPacker, 
    'vehicles': VehiclePacker, 
+   'bundle': BundlePacker, 
    PREMIUM_ENTITLEMENTS.PLUS: PremiumPlusPacker, 
    Currency.CREDITS: CreditsPacker, 
    Currency.CRYSTAL: CrystalPacker, 
@@ -566,6 +612,8 @@ def getBonusPacker(productId, bonus, **kwargs):
     bonusItems = {}
     isCrew = isSlot = False
     exclusiveVehicleID = kwargs.get('exclusiveVehicle', None)
+    uiSection = kwargs.get('UI', {})
+    packAsBundle = kwargs.get('packAsBundle', uiSection.get('packAsBundle', {}))
     vehicleID = None
     for bonusType, bonusValue in bonus.iteritems():
         if bonusType == 'vehicles':
@@ -583,9 +631,12 @@ def getBonusPacker(productId, bonus, **kwargs):
             continue
         bonusItems[bonusType] = bonusValue
 
-    if vehicleID is not None:
+    if packAsBundle:
+        bonusType = 'bundle'
+        bonusValue = [packAsBundle.get('useKeyName'), packAsBundle.get('category'), kwargs.get('count', 0)]
+    elif vehicleID is not None:
         bonusType = 'vehicles'
-        bonusValue = [vehicleID, bool(bonusItems), isCrew, isSlot, kwargs.get('UI', {}).get('armoryEpisode', 0)]
+        bonusValue = [vehicleID, bool(bonusItems), isCrew, isSlot, uiSection.get('armoryEpisode', 0)]
     else:
         bonusType, bonusValue = bonusItems.items()[0]
     if bonusType == 'customizations':

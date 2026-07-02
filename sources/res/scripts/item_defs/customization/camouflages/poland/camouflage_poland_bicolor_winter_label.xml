@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<xmlns:ussr>ussr</xmlns:ussr>
+	<xmlns:germany>germany</xmlns:germany>
+	<xmlns:usa>usa</xmlns:usa>
+	<xmlns:china>china</xmlns:china>
+	<xmlns:france>france</xmlns:france>
+	<xmlns:uk>uk</xmlns:uk>
+	<xmlns:japan>japan</xmlns:japan>
+	<xmlns:czech>czech</xmlns:czech>
+	<xmlns:sweden>sweden</xmlns:sweden>
+	<xmlns:poland>poland</xmlns:poland>
+	<xmlns:italy>italy</xmlns:italy>
+	<xmlns:intunion>intunion</xmlns:intunion>
+	<itemGroup>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
+		<season>winter</season>
+		<historical>0</historical>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<include>
+				<nations>poland</nations>
+			</include>
+		</vehicleFilter>
+		<camouflage>
+			<id>640</id>
+			<texture>vehicles/british/Camouflage/GB_1_winter.dds</texture>
+			<description>#vehicle_customization:camouflage/poland/bicolor/winter/description</description>
+			<scales>
+				1.3 1 0.7
+				<!--BW_String-->
+			</scales>
+			<userString>#vehicle_customization:camouflage/poland/bicolor/winter/label</userString>
+			<invisibilityFactor>1</invisibilityFactor>
+			<palettes>
+				<palette>
+					<c0>177 176 173 255</c0>
+					<c1>116 110 90 255</c1>
+					<c2>0 0 0 0</c2>
+					<c3>0 0 0 0</c3>
+				</palette>
+			</palettes>
+			<tiling>
+				<poland:Pl01_TKS_20mm>
+					3.3 3.3 0.000000 0.000000
+					<!--BW_String-->
+				</poland:Pl01_TKS_20mm>
+				<poland:Pl05_50TP_Tyszkiewicza>
+					2.96 2.96 0.000000 0.000000
+					<!--BW_String-->
+				</poland:Pl05_50TP_Tyszkiewicza>
+				<poland:Pl06_10TP>
+					2.15 2.15 0.000000 0.000000
+					<!--BW_String-->
+				</poland:Pl06_10TP>
+				<poland:Pl07_14TP>
+					3.78 3.78 0.000000 0.000000
+					<!--BW_String-->
+				</poland:Pl07_14TP>
+				<poland:Pl08_50TP_prototyp>
+					2.52 2.52 0.000000 0.000000
+					<!--BW_String-->
+				</poland:Pl08_50TP_prototyp>
+				<poland:Pl09_7TP>
+					2.56 2.56 0.000000 0.000000
+					<!--BW_String-->
+				</poland:Pl09_7TP>
+				<poland:Pl10_40TP_Habicha>
+					2.46 2.46 0.000000 0.000000
+					<!--BW_String-->
+				</poland:Pl10_40TP_Habicha>
+				<poland:Pl11_45TP_Habicha>
+					2.34 2.34 0.000000 0.000000
+					<!--BW_String-->
+				</poland:Pl11_45TP_Habicha>
+				<poland:Pl12_25TP_KSUST_II>
+					2.81 2.81 0.000000 0.000000
+					<!--BW_String-->
+				</poland:Pl12_25TP_KSUST_II>
+				<poland:Pl13_53TP_Markowskiego>
+					2.3 2.3 0.000000 0.000000
+					<!--BW_String-->
+				</poland:Pl13_53TP_Markowskiego>
+				<poland:Pl14_4TP>
+					1.61 1.61 0.000000 0.000000
+					<!--BW_String-->
+				</poland:Pl14_4TP>
+				<poland:Pl15_60TP_Lewandowskiego>
+					2.4 2.4 0.000000 0.000000
+					<!--BW_String-->
+				</poland:Pl15_60TP_Lewandowskiego>
+				<poland:Pl16_T34_85_Rudy>
+					2.34 2.34 0.000000 0.000000
+					<!--BW_String-->
+				</poland:Pl16_T34_85_Rudy>
+				<poland:Pl17_DS_PZlnz>
+					2.34 2.34 0.000000 0.000000
+					<!--BW_String-->
+				</poland:Pl17_DS_PZlnz>
+				<poland:Pl19_CS_52_LIS>
+					1.31 1.31 0.000000 0.000000
+					<!--BW_String-->
+				</poland:Pl19_CS_52_LIS>
+				<poland:Pl20_CS_44>
+					2.34 2.34 0.000000 0.000000
+					<!--BW_String-->
+				</poland:Pl20_CS_44>
+				<poland:Pl21_CS_63>
+					2.52 2.52 0.000000 0.000000
+					<!--BW_String-->
+				</poland:Pl21_CS_63>
+				<poland:Pl21_CS_63_7x7>
+					2.52 2.52 0.000000 0.000000
+					<!--BW_String-->
+				</poland:Pl21_CS_63_7x7>
+				<poland:Pl22_CS_59>
+					2.52 2.52 0.000000 0.000000
+					<!--BW_String-->
+				</poland:Pl22_CS_59>
+				<poland:Pl23_CS_53>
+					2.34 2.34 0.000000 0.000000
+					<!--BW_String-->
+				</poland:Pl23_CS_53>
+			</tiling>
+			<tilingSettings>
+				<type>relative</type>
+				<factor>
+					4.097655  4.093627
+					<!--BW_String-->
+				</factor>
+				<offset>0.000000 0.000000</offset>
+			</tilingSettings>
+		</camouflage>
+	</itemGroup>
+</root>

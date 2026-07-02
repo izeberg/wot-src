@@ -9,7 +9,7 @@
 	</crew>
 	<supplySlots>8 8 8</supplySlots>
 	<speedLimits>
-		<forward>21</forward>
+		<forward>30</forward>
 		<backward>8</backward>
 	</speedLimits>
 	<invisibility>
@@ -129,7 +129,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>2750</weight>
-		<maxHealth>196</maxHealth>
+		<maxHealth>200</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>65</maxHealth>
 			<maxRegenHealth>45</maxRegenHealth>
@@ -1902,11 +1902,11 @@
 			<rotationSpeed>60</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
-					0.38
+					0.10
 					<!--BW_String-->
 				</vehicleMovement>
 				<vehicleRotation>
-					0.38
+					0.10
 					<!--BW_String-->
 				</vehicleRotation>
 			</shotDispersionFactors>
@@ -3250,7 +3250,7 @@
 				</customizableVehicleAreas>
 			</customization>
 			<repairTime>
-				3.41880345
+				1.70988882
 				<!--BW_String-->
 			</repairTime>
 		</Chassis_RenaultFT2>
@@ -3284,7 +3284,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>200</weight>
-			<maxHealth>49</maxHealth>
+			<maxHealth>80</maxHealth>
 			<rotationSpeed>34</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>50</maxHealth>
@@ -3294,7 +3294,7 @@
 					<!--BW_String-->
 				</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>280</circularVisionRadius>
+			<circularVisionRadius>300</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>30</maxHealth>
 				<maxRegenHealth>15</maxRegenHealth>
@@ -3306,35 +3306,13 @@
 			<guns>
 				<_37mm_APX_SA18>
 					shared
+					<maxAmmo>545</maxAmmo>
 					<unlocks>
 						<gun>
 							_13.2mm_Hotchkiss_mle._1930
 							<cost>30</cost>
 						</gun>
 					</unlocks>
-					<pitchLimits>
-						<minPitch>0 -35 1 -35</minPitch>
-						<maxPitch>
-							0 2 0.40856 2 0.472222 0 0.527778 0 0.59144 2 1 2
-							<!--BW_String-->
-						</maxPitch>
-					</pitchLimits>
-					<aimingTime>2</aimingTime>
-					<shotDispersionFactors>
-						<turretRotation>
-							0.14
-							<!--BW_String-->
-						</turretRotation>
-						<afterShot>
-							4.0
-							<!--BW_String-->
-						</afterShot>
-						<whileGunDamaged>
-							2.0
-							<!--BW_String-->
-						</whileGunDamaged>
-					</shotDispersionFactors>
-					<maxAmmo>545</maxAmmo>
 					<armor>
 						<armor_1>
 							16
@@ -3346,12 +3324,34 @@
 							<chanceToHitByExplosion>0</chanceToHitByExplosion>
 						</gun>
 					</armor>
+					<pitchLimits>
+						<minPitch>0 -35 1 -35</minPitch>
+						<maxPitch>
+							0 8 0.40856 8 0.472222 0 0.527778 0 0.59144 8 1 8
+							<!--BW_String-->
+						</maxPitch>
+					</pitchLimits>
+					<aimingTime>2</aimingTime>
+					<shotDispersionFactors>
+						<turretRotation>
+							0.10
+							<!--BW_String-->
+						</turretRotation>
+						<afterShot>
+							3.0
+							<!--BW_String-->
+						</afterShot>
+						<whileGunDamaged>
+							2.0
+							<!--BW_String-->
+						</whileGunDamaged>
+					</shotDispersionFactors>
 					<shotDispersionRadius>
-						0.54
+						0.34
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						2.5
+						2.0
 						<!--BW_String-->
 					</reloadTime>
 					<invisibilityFactorAtShot>
@@ -3448,6 +3448,7 @@
 				</_37mm_APX_SA18>
 				<_13.2mm_Hotchkiss_mle._1930>
 					shared
+					<maxAmmo>1700</maxAmmo>
 					<unlocks>
 						<vehicle>
 							F50_FCM36_20t
@@ -3461,7 +3462,6 @@
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
-					<maxAmmo>1665</maxAmmo>
 					<armor>
 						<armor_1>
 							16
@@ -3492,12 +3492,17 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>2</aimingTime>
-					<reloadTime>
-						5.8
-						<!--BW_String-->
-					</reloadTime>
+					<reloadTime>7</reloadTime>
+					<clip>
+						<count>20</count>
+						<rate>450</rate>
+					</clip>
+					<burst>
+						<count>5</count>
+						<rate>450</rate>
+					</burst>
 					<shotDispersionRadius>
-						0.58
+						0.42
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<invisibilityFactorAtShot>
@@ -4301,11 +4306,8 @@
 		<detailed>
 			<engines>
 				<Renault>
-					<smplEnginePower>
-						41.23396
-						<!--BW_String-->
-					</smplEnginePower>
-					<smplFwMaxSpeed>21</smplFwMaxSpeed>
+					<smplEnginePower>50</smplEnginePower>
+					<smplFwMaxSpeed>30</smplFwMaxSpeed>
 				</Renault>
 			</engines>
 			<chassis>

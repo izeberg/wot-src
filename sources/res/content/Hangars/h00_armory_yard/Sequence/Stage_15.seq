@@ -14,7 +14,7 @@
 			<type>attach</type>
 			<frame>
 				<startTime>0.000000</startTime>
-				<duration>6.633334</duration>
+				<duration>6.133334</duration>
 				<value>Root|</value>
 			</frame>
 		</track>
@@ -23,33 +23,33 @@
 			<type>vector3</type>
 			<frame>
 				<startTime>0.000000</startTime>
-				<value>0.398130 1.144203 2.120087</value>
+				<value>-0.261295 1.473128 1.782618</value>
 				<inTangent>0.000000 0.000000 0.000000</inTangent>
 				<outTangent>0.000000 0.000000 0.000000</outTangent>
 				<tangentMode>257</tangentMode>
 			</frame>
 			<frame>
-				<startTime>2.300000</startTime>
-				<value>0.398130 1.144203 2.120087</value>
-				<inTangent>-0.000000 -0.000000 -0.000000</inTangent>
-				<outTangent>0.000000 0.512610 -1.645705</outTangent>
-				<tangentMode>257</tangentMode>
+				<startTime>2.866667</startTime>
+				<value>-0.261295 1.473128 1.782618</value>
+				<inTangent>0.000000 -2.046997 -1.713952</inTangent>
+				<outTangent>0.000000 -2.046997 -1.713952</outTangent>
+				<tangentMode>1</tangentMode>
 			</frame>
 			<frame>
-				<startTime>2.666667</startTime>
-				<value>0.398130 1.332160 1.516661</value>
-				<inTangent>-0.000000 0.512610 -1.645705</inTangent>
-				<outTangent>-0.000000 0.512610 -1.645705</outTangent>
+				<startTime>3.000000</startTime>
+				<value>-0.261295 0.927262 1.325563</value>
+				<inTangent>-0.000000 -4.093994 -3.427903</inTangent>
+				<outTangent>-0.000000 -4.093994 -3.427903</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 		</track>
 		<track>
-			<name>ay_ep_08_seq_stage_15</name>
+			<name>ay_ep_09_seq_stage_15</name>
 			<type>sound</type>
 			<frame>
 				<startTime>0.000000</startTime>
-				<duration>6.633334</duration>
-				<sequenceSound>ay_ep_08_seq_stage_15</sequenceSound>
+				<duration>6.000000</duration>
+				<sequenceSound>ay_seq_stage_15</sequenceSound>
 				<type>play_till_end</type>
 				<fade>0.000000</fade>
 			</frame>
@@ -58,7 +58,8 @@
 	<sequenceObject>
 		<name>stg_15_hull_parts</name>
 		<type>model</type>
-		<resource>content/Hangars/h00_armory_yard/environment/Constructor/A176_OTAC_LK_7605/normal/lod0/stg_15_hull_parts_xray.model</resource>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/GB142_FV249_Castle/normal/lod0/stg_15_hull_01_xray.model</resource>
+		<castsShadow>false</castsShadow>
 		<track>
 			<name>visibility</name>
 			<type>bool</type>
@@ -129,16 +130,17 @@
 	<sequenceObject>
 		<name>stg_15_hull_ammo</name>
 		<type>model</type>
-		<resource>content/Hangars/h00_armory_yard/environment/Constructor/A176_OTAC_LK_7605/normal/lod0/stg_15_hull_ammo_xray.model</resource>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/GB142_FV249_Castle/normal/lod0/stg_15_hull_02_xray.model</resource>
+		<castsShadow>false</castsShadow>
 		<track>
 			<name>visibility</name>
 			<type>bool</type>
 			<frame>
-				<startTime>0.666667</startTime>
+				<startTime>1.166667</startTime>
 				<value>false</value>
 			</frame>
 			<frame>
-				<startTime>1.866667</startTime>
+				<startTime>2.366667</startTime>
 				<value>true</value>
 			</frame>
 		</track>
@@ -148,28 +150,28 @@
 			<identifier>s_nd0</identifier>
 			<property>g_spawnStage</property>
 			<frame>
-				<startTime>0.666667</startTime>
+				<startTime>1.166667</startTime>
 				<value>0.000000</value>
 				<inTangent>0.000000</inTangent>
 				<outTangent>0.000000</outTangent>
 				<tangentMode>257</tangentMode>
 			</frame>
 			<frame>
-				<startTime>1.866667</startTime>
+				<startTime>2.366667</startTime>
 				<value>0.000000</value>
 				<inTangent>0.010641</inTangent>
 				<outTangent>0.010641</outTangent>
 				<tangentMode>771</tangentMode>
 			</frame>
 			<frame>
-				<startTime>4.000000</startTime>
+				<startTime>4.500000</startTime>
 				<value>1.000000</value>
 				<inTangent>0.009074</inTangent>
 				<outTangent>0.009074</outTangent>
 				<tangentMode>771</tangentMode>
 			</frame>
 			<frame>
-				<startTime>4.333333</startTime>
+				<startTime>4.833333</startTime>
 				<value>1.000000</value>
 				<inTangent>-0.000000</inTangent>
 				<outTangent>-0.000000</outTangent>
