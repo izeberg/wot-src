@@ -19532,7 +19532,7 @@
 				<recoilEffect>large</recoilEffect>
 			</recoil>
 			<effects>shot_large_mb</effects>
-			<reloadEffect>dualgun_autoloader_reload115_152</reloadEffect>
+			<reloadEffect>dualgun_reload115_152</reloadEffect>
 			<pitchLimits>
 				<minPitch>
 					0.0 -18.0 1.0 -18.0
@@ -26532,7 +26532,7 @@
 				<recoilEffect>large</recoilEffect>
 			</recoil>
 			<effects>shot_largeext_mb</effects>
-			<reloadEffect>autoloader_reload115_152</reloadEffect>
+			<reloadEffect>reload115_152</reloadEffect>
 			<pitchLimits>
 				<minPitch>
 					0.0 -17.0 1.0 -17.0
@@ -27940,22 +27940,22 @@
 						0.8
 						<!--BW_String-->
 					</defaultPortion>
-					<speed>398</speed>
-					<gravity>62</gravity>
+					<speed>480</speed>
+					<gravity>157</gravity>
 					<maxDistance>10000</maxDistance>
 					<piercingPower>40 40</piercingPower>
-					<maxHeight>448</maxHeight>
+					<maxHeight>459</maxHeight>
 				</_152mm_53-OF-540B_ABM>
 				<_152mm_53-BR-540B_ABM>
 					<defaultPortion>
 						0.2
 						<!--BW_String-->
 					</defaultPortion>
-					<speed>560</speed>
-					<gravity>62</gravity>
+					<speed>576</speed>
+					<gravity>157</gravity>
 					<maxDistance>10000</maxDistance>
 					<piercingPower>255 240</piercingPower>
-					<maxHeight>448</maxHeight>
+					<maxHeight>661</maxHeight>
 				</_152mm_53-BR-540B_ABM>
 			</shots>
 		</_152mm_howitzer_D-20_ABM>

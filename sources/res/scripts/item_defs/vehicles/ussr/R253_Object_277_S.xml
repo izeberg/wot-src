@@ -2901,7 +2901,7 @@
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						11.8
+						12.0
 						<!--BW_String-->
 					</reloadTime>
 					<shotDispersionFactors>
@@ -3777,8 +3777,8 @@
 	</physics>
 	<rocketAcceleration>
 		<deployTime>10</deployTime>
-		<reloadTime>8</reloadTime>
-		<reuseCount>10</reuseCount>
+		<reloadTime>15</reloadTime>
+		<reuseCount>8</reuseCount>
 		<duration>4</duration>
 		<impulse>
 			<magnitude>100</magnitude>
@@ -3795,7 +3795,7 @@
 			<mul>
 				<name>dynAttrs/ramming</name>
 				<value>
-					1.25
+					1.05
 					<!--BW_String-->
 				</value>
 			</mul>
@@ -3809,14 +3809,14 @@
 			<mul>
 				<name>dynAttrs/engine/power</name>
 				<value>
-					2.0
+					1.524188204108681
 					<!--BW_String-->
 				</value>
 			</mul>
 			<mul>
 				<name>dynAttrs/vehicle/maxSpeed/forward</name>
 				<value>
-					1.272727272727273
+					1.090909090909091
 					<!--BW_String-->
 				</value>
 			</mul>
@@ -3839,21 +3839,21 @@
 			<mul>
 				<name>vehicleEnginePower</name>
 				<value>
-					2.5
+					1.524188204108681
 					<!--BW_String-->
 				</value>
 			</mul>
 			<mul>
 				<name>vehicleForwardMaxSpeed</name>
 				<value>
-					1.272727272727273
+					1.090909090909091
 					<!--BW_String-->
 				</value>
 			</mul>
 			<mul>
 				<name>vehicleBackwardMaxSpeed</name>
 				<value>
-					0.1
+					0.2
 					<!--BW_String-->
 				</value>
 			</mul>

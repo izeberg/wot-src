@@ -3435,9 +3435,9 @@
 			<level>10</level>
 			<price>132000</price>
 			<notInShop>true</notInShop>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
-			<power>700</power>
+			<wwsoundPC>eng_V2_34_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2_34_npc</wwsoundNPC>
+			<power>800</power>
 			<weight>1000</weight>
 			<maxHealth>360</maxHealth>
 			<maxRegenHealth>180</maxRegenHealth>
@@ -3447,7 +3447,7 @@
 				<!--BW_String-->
 			</fireStartingChance>
 			<rpm_min>299</rpm_min>
-			<rpm_max>2301</rpm_max>
+			<rpm_max>2300</rpm_max>
 		</_8TDF_R250>
 		<GTD_700P>
 			<userString>#ussr_vehicles:GTD_700P</userString>
