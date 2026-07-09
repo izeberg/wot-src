@@ -6,6 +6,7 @@ if typing.TYPE_CHECKING:
     from typing import Sequence, List, Dict, Optional, Tuple
     from mt_birthday.skeletons.sub_controllers import IGiftSystemSubController, ITanksBirthdayProgressionSubController
     from gui.shared.view_helpers.UsersInfoHelper import BatchUsersInfoHelper
+    from gui.Scaleform.daapi.view.lobby.hangar.entry_points.gf_header_widget import GFWidgetAliases
     from mt_birthday.gui.feature_types import BattlePlayerData
     from Event import Event
 
@@ -49,6 +50,9 @@ class ITanksBirthdayController(IGameController):
         raise NotImplementedError
 
     def isPlayerInBlackList(self, spaID):
+        raise NotImplementedError
+
+    def getHangarWidgetAlias(self):
         raise NotImplementedError
 
     def getExpiryTime(self):

@@ -21,7 +21,7 @@
 					<fx>shaders/std_effects/PBS_tank_crash.fx</fx>
 					<materialKind>0</materialKind>
 					<identifier>tank_proxy</identifier>
-					<collisionFlags>255</collisionFlags>
+					<collisionFlags>0</collisionFlags>
 					<property>
 						diffuseMap
 						<Texture>vehicles/german/G197_E_94_Fechter/E_94_Fechter_proxy_AM.dds</Texture>

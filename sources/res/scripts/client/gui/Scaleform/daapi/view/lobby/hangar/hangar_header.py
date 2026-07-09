@@ -588,7 +588,7 @@ class HangarHeader(HangarHeaderMeta, IGlobalListener, IEventBoardsListener):
             personalMissions = self.__getPersonalMissionsVO(vehicle)
             if personalMissions:
                 quests.append(personalMissions)
-        isBattleMissionsVisible = self.__limitedUIController.isRuleCompleted(LuiRules.BATTLE_MISSIONS)
+        isBattleMissionsVisible = self.__isBattleMissionsFlagVisible()
         isEarlyAccessFlagVisible = self.__isEarlyAccessFlagVisible()
         isArmoryYardFlagVisible = self.__isArmoryYardFlagVisible()
         isNeedsToWrapFlags = self.__screenWidth <= _SCREEN_WIDTH_FOR_WRAP_GROUPS
@@ -648,15 +648,11 @@ class HangarHeader(HangarHeaderMeta, IGlobalListener, IEventBoardsListener):
          constants.ARENA_BONUS_TYPE.EPIC_RANDOM,
          constants.ARENA_BONUS_TYPE.COMP7)
 
+    def __isBattleMissionsFlagVisible(self):
+        return self.__limitedUIController.isRuleCompleted(LuiRules.BATTLE_MISSIONS) or self.getCurrentArenaBonusType() not in constants.ARENA_BONUS_TYPE.RANDOM_RANGE
+
     def isPersonalMissionEnabled(self):
         return self._lobbyContext.getServerSettings().isPersonalMissionsEnabled() and not self.__mapboxCtrl.isMapboxMode() and not self.__comp7Controller.isComp7PrbActive() and not isStrongholdEntity(self.prbEntity) and self.__limitedUIController.isRuleCompleted(LuiRules.PERSONAL_MISSIONS)
-
-    def isBirthdayEnabled(self):
-        if not g_extensionsManager.isExtensionEnabled('mt_birthday'):
-            return False
-        from mt_birthday.skeletons.mt_birthday_controller import ITanksBirthdayController
-        birthdayContoller = dependency.instance(ITanksBirthdayController)
-        return not birthdayContoller.isDisabled()
 
     def isElenQuestsEnabled(self):
         return not self.__comp7Controller.isComp7PrbActive()
@@ -693,7 +689,7 @@ class HangarHeader(HangarHeaderMeta, IGlobalListener, IEventBoardsListener):
         isValidBattleType = self.prbDispatcher and self.prbDispatcher.getEntity() and self.__battlePassController.isValidBattleType(self.prbDispatcher.getEntity())
         isRuleCompleted = self.__limitedUIController.isRuleCompleted(LuiRules.BP_ENTRY)
         isGameModeEnabled = self.__battlePassController.isGameModeEnabled(self.getCurrentArenaBonusType())
-        isVisible = isBPAvailable and isValidBattleType and not self.__bootcampController.isInBootcamp() and isRuleCompleted and isGameModeEnabled and not self.isBirthdayEnabled()
+        isVisible = isBPAvailable and isValidBattleType and not self.__bootcampController.isInBootcamp() and isRuleCompleted and isGameModeEnabled
         return isVisible
 
     @widgetFunc(HANGAR_ALIASES.RANKED_WIDGET)
@@ -859,7 +855,7 @@ class HangarHeader(HangarHeaderMeta, IGlobalListener, IEventBoardsListener):
             return self._wrapQuestGroup(HANGAR_HEADER_QUESTS.QUEST_GROUP_PERSONAL, RES_ICONS.MAPS_ICONS_QUESTS_HEADERFLAGICONS_PERSONAL, result, self.__isPersonalMissionsOnRight())
 
     def __isPersonalMissionsOnRight(self):
-        return not (self.__isSecondaryBattlePassEntryPointAvaliable() and self.__isTankAcademyEntryPointVisible())
+        return not (self.__isSecondaryBattlePassEntryPointAvaliable() and (self.__isTankAcademyEntryPointVisible() or self.__isBirthdayEntryPointVisible()))
 
     def __onServerSettingChanged(self, diff):
         for key in _MONITOR_SETTINGS:
@@ -1119,15 +1115,30 @@ class HangarHeader(HangarHeaderMeta, IGlobalListener, IEventBoardsListener):
         return {'isVisible': False, 
            'quests': []}
 
+    def __isExternalWidgetVisible(self, hangarWidgetAlias):
+        widgetGetter = self.__externalWidgets.get(hangarWidgetAlias)
+        if widgetGetter is None:
+            return False
+        else:
+            return widgetGetter(self)
+
     def __isTankAcademyEntryPointVisible(self):
         hangarWidgetAlias = self.__tankAcademyController.getHangarWidgetAlias()
         if hangarWidgetAlias is None:
             return False
         else:
-            widgetGetter = self.__externalWidgets.get(hangarWidgetAlias)
-            if widgetGetter is None:
+            return self.__isExternalWidgetVisible(hangarWidgetAlias)
+
+    def __isBirthdayEntryPointVisible(self):
+        if not g_extensionsManager.isExtensionEnabled('mt_birthday'):
+            return False
+        else:
+            from mt_birthday.skeletons.mt_birthday_controller import ITanksBirthdayController
+            birthdayContoller = dependency.instance(ITanksBirthdayController)
+            hangarWidgetAlias = birthdayContoller.getHangarWidgetAlias()
+            if hangarWidgetAlias is None:
                 return False
-            return widgetGetter(self)
+            return self.__isExternalWidgetVisible(hangarWidgetAlias)
 
     def __isSecondaryBattlePassEntryPointAvaliable(self):
         currentArenaBonusType = self.getCurrentArenaBonusType()
@@ -1136,7 +1147,7 @@ class HangarHeader(HangarHeaderMeta, IGlobalListener, IEventBoardsListener):
          constants.ARENA_BONUS_TYPE.UNKNOWN,
          constants.ARENA_BONUS_TYPE.MAPBOX)
         isRegularGameMode = currentArenaBonusType == constants.ARENA_BONUS_TYPE.REGULAR
-        secondaryPointCanBeAvailable = isRegularGameMode and (self.__isTankAcademyEntryPointVisible() or self.isBirthdayEnabled()) or isSpecialGameMode
+        secondaryPointCanBeAvailable = isRegularGameMode and (self.__isTankAcademyEntryPointVisible() or self.__isBirthdayEntryPointVisible()) or isSpecialGameMode
         isRuleCompleted = self.__limitedUIController.isRuleCompleted(LuiRules.BP_ENTRY)
         isGameModeEnabled = self.__battlePassController.isGameModeEnabled(self.getCurrentArenaBonusType())
         return secondaryPointCanBeAvailable and not self.__battlePassController.isDisabled() and isRuleCompleted and isGameModeEnabled

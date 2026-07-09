@@ -108,14 +108,19 @@ class LobbyMarkersManager(CGF.ComponentManager):
 @autoregister(presentInAllWorlds=False, category='lobby')
 class LobbyMarkersVisibilityManager(CGF.ComponentManager):
 
+    def activate(self):
+        g_currentPreviewVehicle.onSelected += self.__onPreviewVehicleSelected
+
+    def deactivate(self):
+        g_currentPreviewVehicle.onSelected -= self.__onPreviewVehicleSelected
+
     @onAddedQuery(LobbyFlashMarkerVisibility, CGF.GameObject)
     def handleVisibilityAdded(self, lobbyFlashMarkerVisibility, _):
         self.__onHeroTankAction(lobbyFlashMarkerVisibility)
-        g_currentPreviewVehicle.onSelected += lambda : self.__onHeroTankAction(lobbyFlashMarkerVisibility)
 
-    @onRemovedQuery(LobbyFlashMarkerVisibility, CGF.GameObject)
-    def handleVisibilityRemoved(self, lobbyFlashMarkerVisibility, _):
-        g_currentPreviewVehicle.onSelected -= lambda : self.__onHeroTankAction(lobbyFlashMarkerVisibility)
+    def __onPreviewVehicleSelected(self):
+        for component in CGF.Query(self.spaceID, LobbyFlashMarkerVisibility):
+            self.__onHeroTankAction(component)
 
     def __onHeroTankAction(self, component):
         if g_currentPreviewVehicle.isHeroTank and g_currentPreviewVehicle.item:

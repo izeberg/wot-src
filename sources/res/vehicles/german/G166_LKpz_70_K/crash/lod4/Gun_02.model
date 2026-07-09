@@ -2,4 +2,8 @@
 <root>
 	<nodelessVisual>vehicles/german/G166_LKpz_70_K/crash/lod4/Gun_02</nodelessVisual>
 	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.367116 -0.502652 -1.855734</min>
+		<max>0.231019 0.225543 5.354892</max>
+	</visibilityBox>
 </root>

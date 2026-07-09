@@ -259,5 +259,12 @@ class GiftSystemSubController(IGiftSystemSubController):
     def __processCallback(self, result):
         if result.state is GifterResponseState.WEB_SUCCESS:
             for receiverID in set(result.receiverIDs).difference(result.declinedReceivers):
-                self.getKeeper().updateSentGiftState(receiverID)
-                self.getKeeper().delFromPlayersWaitingResponse(receiverID)
+                keeper = self.getKeeper()
+                if keeper:
+                    keeper.updateSentGiftState(receiverID)
+                    keeper.delFromPlayersWaitingResponse(receiverID)
+                else:
+                    _logger.info('[GiftSystemSubController] EventHub was deleted, use a workaround')
+                    keeper = self.__giftController.getEventHub(self.__giftEventID).getKeeper()
+                    keeper.updateSentGiftState(receiverID)
+                    keeper.delFromPlayersWaitingResponse(receiverID)

@@ -3338,7 +3338,7 @@
 					<maxAmmo>74</maxAmmo>
 					<armor>
 						<armor_1>
-							330
+							280
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_1>
 						<armor_2>
@@ -3440,11 +3440,11 @@
 						</maxPitch>
 					</pitchLimits>
 					<shotDispersionRadius>
-						0.37
+						0.36
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						9.0
+						8.5
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
@@ -3464,7 +3464,7 @@
 						<shootImpulse>200</shootImpulse>
 						<reloadLockTime>3</reloadLockTime>
 						<reloadTimes>
-							3.0 3.0
+							8.5 8.5
 							<!--BW_String-->
 						</reloadTimes>
 						<rateTime>4</rateTime>
@@ -3478,12 +3478,6 @@
 							<!--BW_String-->
 						</preChargeIndication>
 					</dualGun>
-					<clip>
-						<count>4</count>
-					</clip>
-					<autoreload>
-						<reloadTime>15 15 12 12</reloadTime>
-					</autoreload>
 					<models>
 						<undamaged>vehicles/russian/R171_IS_3_II/normal/lod0/Gun_06.model</undamaged>
 						<destroyed>vehicles/russian/R171_IS_3_II/crash/lod0/Gun_06.model</destroyed>
@@ -3702,7 +3696,7 @@
 							<camouflage>GUN</camouflage>
 						</customizableVehicleAreas>
 					</customization>
-					<reloadEffect>dualgun_autoloader_reload115_152</reloadEffect>
+					<reloadEffect>dualgun_reload115_152</reloadEffect>
 					<camouflage>
 						<density>
 							102.158 103.319

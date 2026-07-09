@@ -6042,7 +6042,7 @@
 		<id>31044</id>
 		<userString>#ussr_vehicles:_152mm_53-BR-540B</userString>
 		<icon>ap</icon>
-		<price>1480</price>
+		<price>1080</price>
 		<kind>ARMOR_PIERCING</kind>
 		<caliber>152</caliber>
 		<isTracer>true</isTracer>
@@ -6329,19 +6329,22 @@
 		<id>31043</id>
 		<userString>#ussr_vehicles:_152mm_53-OF-540B</userString>
 		<icon>he_spg</icon>
-		<price>1440</price>
+		<price>940</price>
 		<kind>HIGH_EXPLOSIVE</kind>
 		<caliber>152</caliber>
 		<explosionRadius>
-			7.6
+			8.0
 			<!--BW_String-->
 		</explosionRadius>
 		<isTracer>true</isTracer>
 		<effects>largeSF</effects>
 		<damage>
-			<armor>800</armor>
+			<armor>860</armor>
 			<devices>102</devices>
 		</damage>
+		<deviceDamagePossibility>
+			<protectFromIndirectHits>internal tankmen</protectFromIndirectHits>
+		</deviceDamagePossibility>
 	</_152mm_53-OF-540B_ABM>
 	<_152mm_53-OF-545>
 		<id>31007</id>

@@ -80,7 +80,7 @@ class BirthdayEntryPointView(GFHeaderWidgetView):
         if deltaPoints > 0:
             currentLevel, currentLevelConfig = self.__mtBirthday.progression.getCurrentProgressionLevel()
             prevLevel, _ = self.__mtBirthday.progression.getLevelByPoints(min(prevPoints, infLevelMaxPoints))
-            if currentLevel is not None and currentLevel - prevLevel > 0:
+            if currentLevel is not None and prevLevel is not None and currentLevel - prevLevel > 0:
                 isLevelUp = True
             if not isLevelUp:
                 progressionAnimationData = ProgressionAnimationData(currentPoints, prevPoints)

@@ -60,16 +60,26 @@
 							CurrentVehicleCD
 							<level>RequiredVehicleLevel</level>
 						</game-item>
+						<game-item>
+							CurrentVehicleCD
+							<not-premium/>
+						</game-item>
 					</condition>
 				</show-hint>
 				<show-hint>
 					TankCarouselHint
 					<condition>
 						<active>TankCarouselOnScene</active>
-						<game-item>
-							CurrentVehicleCD
-							<not-level>RequiredVehicleLevel</not-level>
-						</game-item>
+						<either>
+							<game-item>
+								CurrentVehicleCD
+								<not-level>RequiredVehicleLevel</not-level>
+							</game-item>
+							<game-item>
+								CurrentVehicleCD
+								<premium/>
+							</game-item>
+						</either>
 					</condition>
 				</show-hint>
 			</runtime-effects>
@@ -114,6 +124,10 @@
 						<game-item>
 							CurrentVehicleCD
 							<level>RequiredVehicleLevel</level>
+						</game-item>
+						<game-item>
+							CurrentVehicleCD
+							<not-premium/>
 						</game-item>
 					</condition>
 				</show-hint>
@@ -296,7 +310,7 @@
 		<hint>
 			TankCarouselHint
 			<item-id>TankCarousel</item-id>
-			<text>Выберите машину $RequiredVehicleLevelRoman$ уровня</text>
+			<text>Выберите исследуемую машину $RequiredVehicleLevelRoman$ уровня</text>
 			<hide-immediately>True</hide-immediately>
 			<update-runtime>True</update-runtime>
 			<arrow>
@@ -345,6 +359,10 @@
 						<game-item>
 							CurrentVehicleCD
 							<level>RequiredVehicleLevel</level>
+						</game-item>
+						<game-item>
+							CurrentVehicleCD
+							<not-premium/>
 						</game-item>
 					</condition>
 				</close-hint>

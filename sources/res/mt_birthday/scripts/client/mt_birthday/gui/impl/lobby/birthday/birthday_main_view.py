@@ -17,6 +17,7 @@ from mt_birthday.gui.impl.lobby.birthday.lootbox_entry_point import LootBoxesEnt
 from mt_birthday.gui.impl.lobby.birthday.web_browser_view import WebBrowserView, StaticWebBrowserView
 from mt_birthday.gui.impl.lobby.tooltips.post_stamp_tooltip import PostStampTooltip
 from mt_birthday.gui.shared.event_dispatcher import showGoldWagon
+from mt_birthday.gui.shared.events import BirthdayEvent
 from mt_birthday.skeletons.mt_birthday_controller import ITanksBirthdayController
 from mt_birthday.gui.impl.sounds import BIRTHDAY_SOUND_SPACE
 from mt_birthday.birthday_account_settings import setSettings
@@ -133,6 +134,11 @@ class BirthdayMainView(ViewImpl):
          (
           self.__settingsCore.onSettingsChanged, self.__updateTips)) + self.__lootboxEntryPoint.getEvents()
 
+    def _getListeners(self):
+        return (
+         (
+          BirthdayEvent.DESTROY_BIRTHDAY_MAIN_VIEW, self.__onClose),)
+
     def _getCallbacks(self):
         return (
          (
@@ -188,7 +194,7 @@ class BirthdayMainView(ViewImpl):
         if self.__currentTabID == TabId.TICKET_EXCHANGE:
             self.__ticketExchangeLogger.logExit()
 
-    def __onClose(self):
+    def __onClose(self, *args, **kwargs):
         self.destroyWindow()
         showHangar()
 

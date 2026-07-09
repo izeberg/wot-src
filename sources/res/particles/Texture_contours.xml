@@ -113885,6 +113885,48 @@
 		<contours>
 			<trimmingParams>
 				<textureName>particles/content_deferred/PFX_textures/eff_tex_water.dds</textureName>
+				<columns>2</columns>
+				<rows>1</rows>
+				<uvLeft>0.125000</uvLeft>
+				<uvRight>0.375000</uvRight>
+				<uvBottom>0.375000</uvBottom>
+				<uvTop>0.500000</uvTop>
+				<alphaThreshold>1.000000</alphaThreshold>
+			</trimmingParams>
+			<contour>
+				<vertex>0.000000 1.000000</vertex>
+				<vertex>0.000000 -0.000000</vertex>
+				<vertex>1.000000 1.000000</vertex>
+				<vertex>1.000000 -0.000000</vertex>
+				<vertex>1.000000 -0.000000</vertex>
+				<vertex>1.000000 -0.000000</vertex>
+				<vertex>1.000000 -0.000000</vertex>
+				<vertex>1.000000 -0.000000</vertex>
+			</contour>
+			<contour>
+				<vertex>0.000000 1.000000</vertex>
+				<vertex>0.000000 -0.000000</vertex>
+				<vertex>1.000000 1.000000</vertex>
+				<vertex>1.000000 -0.000000</vertex>
+				<vertex>1.000000 -0.000000</vertex>
+				<vertex>1.000000 -0.000000</vertex>
+				<vertex>1.000000 -0.000000</vertex>
+				<vertex>1.000000 -0.000000</vertex>
+			</contour>
+			<contour>
+				<vertex>0.000000 1.000000</vertex>
+				<vertex>0.000000 -0.000000</vertex>
+				<vertex>1.000000 1.000000</vertex>
+				<vertex>1.000000 -0.000000</vertex>
+				<vertex>1.000000 -0.000000</vertex>
+				<vertex>1.000000 -0.000000</vertex>
+				<vertex>1.000000 -0.000000</vertex>
+				<vertex>1.000000 -0.000000</vertex>
+			</contour>
+		</contours>
+		<contours>
+			<trimmingParams>
+				<textureName>particles/content_deferred/PFX_textures/eff_tex_water.dds</textureName>
 				<columns>3</columns>
 				<rows>1</rows>
 				<uvLeft>0.125000</uvLeft>

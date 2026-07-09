@@ -8,6 +8,7 @@ from helpers import dependency
 from gui.impl.lobby.common.sound_constants import BROWSER_VIEW_SOUND_SPACES
 from mt_birthday.gui.impl.sounds import BIRTHDAY_SOUND_SPACE
 from mt_birthday.gui.impl.gen.view_models.views.lobby.birthday.birthday_main_view_model import TabId
+from mt_birthday.gui.shared.events import BirthdayEvent
 from mt_birthday.skeletons.mt_birthday_controller import ITanksBirthdayController
 if typing.TYPE_CHECKING:
     from typing import List
@@ -19,6 +20,10 @@ def showMainView(tabId=None):
     __mtBirthday = dependency.instance(ITanksBirthdayController)
     if __mtBirthday.isEnabled():
         g_eventBus.handleEvent(events.LoadGuiImplViewEvent(GuiImplViewLoadParams(R.views.mt_birthday.lobby.birthday.BirthdayMainView(), BirthdayMainView, ScopeTemplates.LOBBY_SUB_SCOPE), tabId=tabId), scope=EVENT_BUS_SCOPE.LOBBY)
+
+
+def closeBirthdayMainView():
+    g_eventBus.handleEvent(BirthdayEvent(BirthdayEvent.DESTROY_BIRTHDAY_MAIN_VIEW))
 
 
 def showGoldWagon():

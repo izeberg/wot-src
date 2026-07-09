@@ -12,7 +12,8 @@ from skeletons.gui.app_loader import IAppLoader
 from skeletons.gui.shared import IItemsCache
 from skeletons.gui.customization import ICustomizationService
 from mt_birthday.skeletons.mt_birthday_controller import ITanksBirthdayController
-from mt_birthday.gui.shared.event_dispatcher import showTicketExchange
+from mt_birthday.gui.shared.event_dispatcher import showTicketExchange, closeBirthdayMainView
+from web.web_client_api.common import ItemPackEntry, ItemPackType
 if typing.TYPE_CHECKING:
     from gui.Scaleform.framework.entities.abstract.ToolTipMgrMeta import ToolTipMgrMeta
 _logger = logging.getLogger(__name__)
@@ -33,7 +34,8 @@ class TicketExchangeWebApiMixin(object):
 
     @w2c(_VehiclePreviewSchema, 'show_tank_preview')
     def openTankPreview(self, cmd):
-        showVehiclePreviewWithoutBottomPanel(cmd.vehCD, backCallback=self.__getPreviewCallback, previewAlias=VIEW_ALIAS.VEHICLE_PREVIEW, backBtnLabel=self.__backBtnLabel)
+        showVehiclePreviewWithoutBottomPanel(cmd.vehCD, backCallback=self.__getPreviewCallback, previewAlias=VIEW_ALIAS.VEHICLE_PREVIEW, backBtnLabel=self.__backBtnLabel, itemsPack=(
+         ItemPackEntry(type=ItemPackType.CREW_100, groupID=1),))
 
     @w2c(_StylePreviewSchema, 'show_style_preview')
     def openStylePreview(self, cmd):
@@ -43,6 +45,10 @@ class TicketExchangeWebApiMixin(object):
     @w2c(W2CSchema, 'show_golden_ticket_tooltip')
     def showLootboxGuaranteedRewardTooltip(self, cmd):
         self.__getTooltipMgr().onCreateWulfTooltip(TOOLTIPS_CONSTANTS.BIRTHDAY_GOLDEN_TICKET, [], *map(int, getMouseScreenPosition()))
+
+    @w2c(W2CSchema, 'close_birthday_main_view')
+    def closeBirthdayMainView(self, cmd):
+        closeBirthdayMainView()
 
     @property
     def __backBtnLabel(self):

@@ -4,4 +4,8 @@
 	<parent>vehicles/german/G166_LKpz_70_K/crash/lod2/Gun_02</parent>
 	<extent>64.000000</extent>
 	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.367867 -0.500001 -1.852470</min>
+		<max>0.278009 0.235652 5.341035</max>
+	</visibilityBox>
 </root>

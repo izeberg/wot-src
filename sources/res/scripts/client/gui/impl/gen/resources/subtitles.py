@@ -5,6 +5,6 @@ class Subtitles(DynAccessor):
 
     class _development(DynAccessor):
         __slots__ = ()
-        cosmic_intro_vp8_8_128 = DynAccessor(110543)
+        cosmic_intro_vp8_8_128 = DynAccessor(110545)
 
     development = _development()

@@ -94,6 +94,7 @@ class TanksBirthdayController(ITanksBirthdayController):
         self.__unseenGifts = {}
         self.__giftNotificationSeenCount = 0
         self.__callbackDelayer = CallbackDelayer()
+        self.__hangarWidgetAlias = None
         self.__addWidgetHandler()
         return
 
@@ -145,6 +146,9 @@ class TanksBirthdayController(ITanksBirthdayController):
 
     def isPlayerBlocked(self, spaID):
         return spaID == 0 or self.isAlreadyReceivedGift(spaID) or self.isBannedPlayer(spaID) or self.isPlayerInBlackList(spaID)
+
+    def getHangarWidgetAlias(self):
+        return self.__hangarWidgetAlias
 
     def isPlayerInBlackList(self, spaID):
         return spaID in {player.getID() for player in self.usersStorage.getList(IgnoredFindCriteria())}
@@ -444,13 +448,13 @@ class TanksBirthdayController(ITanksBirthdayController):
         self.onQuestsUpdated()
 
     def __addWidgetHandler(self):
-        aliases = GFWidgetAliases(flashLinkage=HANGAR_ALIASES.GF_HEADER_WIDGET, registerAlias=HANGAR_ALIASES.BIRTHDAY_HEADER_ENTRY_POINT)
-        HangarHeader.addExternalWidgetHandler(aliases, self.__widgetHandler)
+        self.__hangarWidgetAlias = GFWidgetAliases(flashLinkage=HANGAR_ALIASES.GF_HEADER_WIDGET, registerAlias=HANGAR_ALIASES.BIRTHDAY_HEADER_ENTRY_POINT)
+        HangarHeader.addExternalWidgetHandler(self.__hangarWidgetAlias, self.__widgetHandler)
 
     def __widgetHandler(self, _):
         return not self.isDisabled() and self.isValidBattleType() and not self.__tankAcademyController.isActive()
 
-    @staticmethod
-    def __removeWidgetHandler():
-        aliases = GFWidgetAliases(flashLinkage=HANGAR_ALIASES.GF_HEADER_WIDGET, registerAlias=HANGAR_ALIASES.BIRTHDAY_HEADER_ENTRY_POINT)
-        HangarHeader.removeExternalWidgetHandler(aliases)
+    def __removeWidgetHandler(self):
+        HangarHeader.removeExternalWidgetHandler(self.__hangarWidgetAlias)
+        self.__hangarWidgetAlias = None
+        return

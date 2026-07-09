@@ -61,6 +61,10 @@
 							CurrentVehicleCD
 							<level-range>RequiredVehicleMinLevel RequiredVehicleMaxLevel</level-range>
 						</game-item>
+						<game-item>
+							CurrentVehicleCD
+							<not-premium/>
+						</game-item>
 					</condition>
 				</show-hint>
 				<show-hint>
@@ -74,10 +78,16 @@
 					TankCarouselHint
 					<condition>
 						<active>TankCarouselOnScene</active>
-						<game-item>
-							CurrentVehicleCD
-							<not-level-range>RequiredVehicleMinLevel RequiredVehicleMaxLevel</not-level-range>
-						</game-item>
+						<either>
+							<game-item>
+								CurrentVehicleCD
+								<not-level-range>RequiredVehicleMinLevel RequiredVehicleMaxLevel</not-level-range>
+							</game-item>
+							<game-item>
+								CurrentVehicleCD
+								<premium/>
+							</game-item>
+						</either>
 					</condition>
 				</show-hint>
 			</runtime-effects>
@@ -132,6 +142,10 @@
 						<game-item>
 							CurrentVehicleCD
 							<level-range>RequiredVehicleMinLevel RequiredVehicleMaxLevel</level-range>
+						</game-item>
+						<game-item>
+							CurrentVehicleCD
+							<not-premium/>
 						</game-item>
 					</condition>
 				</show-hint>
@@ -273,6 +287,12 @@
 						<set-gui-item-criteria>ResearchItemNodeCriteria</set-gui-item-criteria>
 					</effects>
 				</click>
+				<esc>
+					VehicleResearchButton
+					<effects>
+						<refuse-training/>
+					</effects>
+				</esc>
 			</actions>
 		</hint>
 		<hint>
@@ -373,7 +393,7 @@
 		<hint>
 			TankCarouselHint
 			<item-id>TankCarousel</item-id>
-			<text>Выберите машину $RequiredVehicleMinLevelRoman$ уровня и выше</text>
+			<text>Выберите исследуемую машину $RequiredVehicleMinLevelRoman$ уровня и выше</text>
 			<hide-immediately>True</hide-immediately>
 			<update-runtime>True</update-runtime>
 			<arrow>
@@ -422,6 +442,10 @@
 						<game-item>
 							CurrentVehicleCD
 							<level-range>RequiredVehicleMinLevel RequiredVehicleMaxLevel</level-range>
+						</game-item>
+						<game-item>
+							CurrentVehicleCD
+							<not-premium/>
 						</game-item>
 					</condition>
 				</close-hint>

@@ -20285,6 +20285,10 @@ package
       
       public static const MAPS_ICONS_MODE_SELECTOR_TOOLTIPS_MISSION_ACTIVE:String = "../maps/icons/mode_selector/tooltips/mission_active.png";
       
+      public static const MAPS_ICONS_MODE_SELECTOR_TOOLTIPS_PLUS:String = "../maps/icons/mode_selector/tooltips/plus.png";
+      
+      public static const MAPS_ICONS_MODE_SELECTOR_TOOLTIPS_PLUS_GLOW:String = "../maps/icons/mode_selector/tooltips/plus_glow.png";
+      
       public static const MAPS_ICONS_MODE_SELECTOR_TOOLTIPS_SEPARATOR_DASHED:String = "../maps/icons/mode_selector/tooltips/separator_dashed.png";
       
       public static const MAPS_ICONS_MODE_SELECTOR_TOOLTIPS_SEPARATOR_DASHED_SHORT:String = "../maps/icons/mode_selector/tooltips/separator_dashed_short.png";
