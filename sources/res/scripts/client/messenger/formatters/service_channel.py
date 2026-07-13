@@ -3945,7 +3945,7 @@ class PrbVehicleKickFilterFormatter(PrbVehicleKickFormatter):
     typeKick = b'prbVehicleKickFilter'
 
 
-class PrbVehicleMaxTypeKickFormatter(ServiceChannelFormatter):
+class PrbVehicleMaxCountKickFormatter(ServiceChannelFormatter):
     __itemsCache = dependency.descriptor(IItemsCache)
 
     def format(self, message, *args):
@@ -3955,8 +3955,8 @@ class PrbVehicleMaxTypeKickFormatter(ServiceChannelFormatter):
         if vehInvID:
             vehicle = self.__itemsCache.items.getVehicle(vehInvID)
             if vehicle:
-                formatted = g_settings.msgTemplates.format(b'prbVehicleMaxTypeKick', ctx={b'vehName': vehicle.userName})
-        return [MessageData(formatted, self._getGuiSettings(message, b'prbVehicleMaxTypeKick'))]
+                formatted = g_settings.msgTemplates.format(b'prbVehicleMaxCountKick', ctx={b'vehName': vehicle.userName})
+        return [MessageData(formatted, self._getGuiSettings(message, b'prbVehicleMaxCountKick'))]
 
 
 class RotationGroupLockFormatter(ServiceChannelFormatter):
@@ -6025,6 +6025,19 @@ class PM3CompletionFormatter(QuestAchievesFormatter):
             return cls._SEPARATOR.join(result)
         else:
             return
+
+
+class ChallengesAchievesFormatter(QuestAchievesFormatter):
+
+    @classmethod
+    def _processTokens(cls, data):
+        result = []
+        for token in data.get(b'tokens', {}).iterkeys():
+            tankmanTokenResult = _processTankmanToken(token)
+            if tankmanTokenResult:
+                result.append(tankmanTokenResult)
+
+        return cls._SEPARATOR.join(result)
 
 
 class PrestigeMilestoneRewardFormatter(ServiceChannelFormatter):

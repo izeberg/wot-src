@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, typing
 from enum import Enum
 from functools import partial

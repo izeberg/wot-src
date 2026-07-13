@@ -1,13 +1,13 @@
+from __future__ import absolute_import
 from constants import IS_DEVELOPMENT
 if IS_DEVELOPMENT:
-    import VSE
-    from plan_holder import PlanHolder
-    import weakref
+    import VSE, weakref
     from debug_utils import LOG_DEBUG_DEV
-    from plan_tags import getAllTags
+    from visual_script.plan_holder import PlanHolder
+    from visual_script.plan_tags import getAllTags
 
     class DebugPlanHolder(PlanHolder):
-        __slots__ = 'contextName'
+        __slots__ = ('contextName', )
 
         def __init__(self, plan, state, auto=False):
             super(DebugPlanHolder, self).__init__(plan, state, auto)

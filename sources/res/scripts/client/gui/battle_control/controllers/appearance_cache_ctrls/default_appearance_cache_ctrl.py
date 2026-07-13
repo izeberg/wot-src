@@ -1,4 +1,7 @@
-import logging, BigWorld, CGF
+from __future__ import absolute_import
+import logging
+from future.utils import iteritems
+import BigWorld, CGF
 from common_tank_structure import VehicleAppearanceCacheInfo
 from gui.battle_control.arena_info.interfaces import IAppearanceCacheController
 from gui.battle_control.battle_constants import BATTLE_CTRL_ID
@@ -53,6 +56,7 @@ class DefaultAppearanceCacheController(IAppearanceCacheController):
         return self._appearanceCache.getAppearance(vId, vInfo, callback, strCD, needLoad)
 
     def reloadAppearance(self, vId, vInfo, callback=None, strCD=None, oldStrCD=None):
+        _logger.debug('reloadAppearance(%d)', vId)
         for vehStrCD in (strCD, oldStrCD):
             oldAppearance = self._appearanceCache.removeAppearance(vId, vehStrCD)
             if oldAppearance is not None:
@@ -80,12 +84,12 @@ class DefaultAppearanceCacheController(IAppearanceCacheController):
         self._precacheFunc(vehiclesInfo, groupIDs)
 
     def _cacheAllVehicles(self, vehiclesInfo, _=None):
-        for vId, vInfo in vehiclesInfo.iteritems():
+        for vId, vInfo in iteritems(vehiclesInfo):
             self.__cacheVehicle(vId, vInfo)
 
     def _cachePlayerGroupVehicles(self, vehiclesInfo, groupIDs=None):
         playerGroupId = self._arena.componentSystem.playerDataComponent.getPlayerGroupForPlayer()
-        for vId, vInfo in vehiclesInfo.iteritems():
+        for vId, vInfo in iteritems(vehiclesInfo):
             if groupIDs is not None:
                 groupId = groupIDs[vId]
             else:
@@ -107,7 +111,7 @@ class DefaultAppearanceCacheController(IAppearanceCacheController):
             playerVehicleId = getattr(BigWorld.player(), 'playerVehicleID', 0)
             if playerVehicleId <= 0:
                 return
-            yield self._arena.awaitVehiclesAdded(vIds.keys())
+            yield self._arena.awaitVehiclesAdded(list(vIds))
             groupIDs = None
             if playerVehicleId in vIds:
                 vehicleInfos = self._arena.vehicles.copy()
@@ -123,6 +127,7 @@ class DefaultAppearanceCacheController(IAppearanceCacheController):
         if typeDescriptor is not None:
             isAlive = vInfo['isAlive']
             outfitCD = vInfo['outfitCD']
-            info = VehicleAppearanceCacheInfo(typeDescr=typeDescriptor, health=int(isAlive), isCrewActive=isAlive, isTurretDetached=False, outfitCD=outfitCD, forceDynAttachmentLoading=False, entityGameObject=CGF.GameObject.INVALID_GAME_OBJECT)
+            respawnID = vInfo['respawnID']
+            info = VehicleAppearanceCacheInfo(typeDescr=typeDescriptor, health=int(isAlive), isCrewActive=isAlive, isTurretDetached=False, outfitCD=outfitCD, forceDynAttachmentLoading=False, entityGameObject=CGF.GameObject.INVALID_GAME_OBJECT, respawnID=respawnID)
             self._appearanceCache.getAppearance(vId, info, strCD=typeDescriptor.makeCompactDescr())
         return

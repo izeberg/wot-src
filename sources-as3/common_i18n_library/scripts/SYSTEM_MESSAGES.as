@@ -351,7 +351,7 @@ package
       
       public static const SQUAD_NOTVALIDDELETEDFILTER:String = "#system_messages:squad/notValidDeletedFilter";
       
-      public static const SQUAD_NOTVALIDMAXVEHTYPEDELETED:String = "#system_messages:squad/notValidMaxVehTypeDeleted";
+      public static const SQUAD_NOTVALIDMAXCOUNTVEHDELETED:String = "#system_messages:squad/notValidMaxCountVehDeleted";
       
       public static const SQUAD_NOTVALIDENQUEUEDATA:String = "#system_messages:squad/notValidEnqueueData";
       
@@ -2916,6 +2916,42 @@ package
       public static const W2GT_SWITCHOFF_HEADER:String = "#system_messages:w2gt/switchOff/header";
       
       public static const W2GT_SWITCHOFF_DESCRIPTION:String = "#system_messages:w2gt/switchOff/description";
+      
+      public static const CHALLENGES_ACTIVATE_SERVERERROR:String = "#system_messages:challenges/activate/serverError";
+      
+      public static const CHALLENGES_ACTIVATE_SUCCESS_TITLE:String = "#system_messages:challenges/activate/success/title";
+      
+      public static const CHALLENGES_ACTIVATE_SUCCESS_TEXT:String = "#system_messages:challenges/activate/success/text";
+      
+      public static const CHALLENGES_RESTART_SERVERERROR:String = "#system_messages:challenges/restart/serverError";
+      
+      public static const CHALLENGES_RESTART_PAID_TITLE:String = "#system_messages:challenges/restart/paid/title";
+      
+      public static const CHALLENGES_RESTART_FREE_TITLE:String = "#system_messages:challenges/restart/free/title";
+      
+      public static const CHALLENGES_RESTART_FREE_TEXT:String = "#system_messages:challenges/restart/free/text";
+      
+      public static const CHALLENGES_SURRENDER_SERVERERROR:String = "#system_messages:challenges/surrender/serverError";
+      
+      public static const CHALLENGES_SURRENDER_SUCCESS_TEXT:String = "#system_messages:challenges/surrender/success/text";
+      
+      public static const CHALLENGES_SERVERERROR_COOLDOWN:String = "#system_messages:challenges/serverError/COOLDOWN";
+      
+      public static const CHALLENGES_FORMATTER_SPENT_CREDITS:String = "#system_messages:challenges/formatter/spent/credits";
+      
+      public static const CHALLENGES_FORMATTER_SPENT_GOLD:String = "#system_messages:challenges/formatter/spent/gold";
+      
+      public static const CHALLENGES_FORMATTER_SPENT_CRYSTAL:String = "#system_messages:challenges/formatter/spent/crystal";
+      
+      public static const CHALLENGES_CHALLENGEEND_TITLE:String = "#system_messages:challenges/challengeEnd/title";
+      
+      public static const CHALLENGES_CHALLENGEEND_TEXT:String = "#system_messages:challenges/challengeEnd/text";
+      
+      public static const CHALLENGES_CHALLENGEEND_BUTTON:String = "#system_messages:challenges/challengeEnd/button";
+      
+      public static const CHALLENGES_CHALLENGEMISSIONCOMPLETE_HEADER:String = "#system_messages:challenges/challengeMissionComplete/header";
+      
+      public static const CHALLENGES_CHALLENGEMISSIONCOMPLETE_TEXT:String = "#system_messages:challenges/challengeMissionComplete/text";
        
       
       public function SYSTEM_MESSAGES()

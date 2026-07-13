@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import weakref
 from collections import namedtuple
 from PlayerEvents import g_playerEvents

@@ -1012,6 +1012,7 @@ class LootBoxVehiclesBonusUIPacker(VehiclesBonusUIPacker):
         model.setType(VehicleType(vehicle.type))
         model.setLevel(vehicle.level)
         model.setIsElite(vehicle.isElite)
+        model.setIsWheeled(vehicle.isWheeledTech)
         model.setIcon(getUnicName(vehicle.name))
 
     @classmethod

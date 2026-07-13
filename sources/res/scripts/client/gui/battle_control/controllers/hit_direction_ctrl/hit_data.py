@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import math
 from gui.battle_control.battle_constants import HIT_FLAGS
 from constants import ATTACK_REASON_INDICES, ATTACK_REASON

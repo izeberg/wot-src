@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld
 from gui.shared.utils.requesters.abstract import AbstractSyncDataRequester
 from skeletons.gui.shared.utils.requesters import IBattleRoyaleRequester
@@ -35,4 +36,4 @@ class BattleRoyaleRequester(AbstractSyncDataRequester, IBattleRoyaleRequester):
     def _preprocessValidData(self, data):
         if 'battleRoyale' in data:
             return dict(data['battleRoyale'])
-        return dict()
+        return {}

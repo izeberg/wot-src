@@ -162,19 +162,18 @@ class KillCamDataComponent(BigWorld.DynamicScriptComponent):
 
     def __getDynAttachmentsInfo(self, vehicle):
         parentGameObject = vehicle.entityGameObject
-        hierarchy = CGF.HierarchyManager(parentGameObject.spaceID)
-        result = hierarchy.findComponentsInHierarchy(parentGameObject, StationaryReloadSequenceParamsComponent)
+        result = CGF.findInHierarchyWithComponent(parentGameObject, StationaryReloadSequenceParamsComponent)
         if not result:
             return
         else:
             if len(result) > 1:
                 _logger.warning('Multiple StationaryReloadSequenceParamsComponent is not supported in death cam')
                 return
-            gameObject, _ = first(result)
-            if not gameObject.isValid():
+            gameObject = first(result).object
+            if not gameObject.valid:
                 return
-            sequence = gameObject.findComponentByType(Sequence)
-            stateSwitcher = gameObject.findComponentByType(StateSwitcherComponent)
+            sequence = gameObject.findRead(Sequence)
+            stateSwitcher = gameObject.findRead(StateSwitcherComponent)
             if sequence is None or stateSwitcher is None:
                 return
             return {'activeSequenceLayer': sequence.activeLayerIdx, 'sequenceTime': sequence.time, 

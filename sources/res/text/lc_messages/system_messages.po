@@ -776,6 +776,65 @@ msgstr ""
 "Unable to purchase \"%s\". No available slots in the Garage. Please free up "
 "a slot."
 
+msgid "challenges/activate/serverError"
+msgstr "Unable to activate Crucible missions. Please try again later."
+
+msgid "challenges/activate/success/text"
+msgstr ""
+"The first mission in this series is available for completion. Enter battle "
+"and rise to the challenge!"
+
+msgid "challenges/activate/success/title"
+msgstr "Crucible: %(challengeName)s activated!"
+
+msgid "challenges/challengeEnd/button"
+msgstr "To Crucible"
+
+msgid "challenges/challengeEnd/text"
+msgstr "Complete it now and receive your rewards."
+
+msgid "challenges/challengeEnd/title"
+msgstr "Crucible missions ending soon!"
+
+msgid "challenges/challengeMissionComplete/header"
+msgstr "Congratulations!"
+
+msgid "challenges/challengeMissionComplete/text"
+msgstr "You completed Crucible: %(challengeName)s! Rewards received:"
+
+msgid "challenges/formatter/spent/credits"
+msgstr "Credits spent:"
+
+msgid "challenges/formatter/spent/crystal"
+msgstr "Bonds spent:"
+
+msgid "challenges/formatter/spent/gold"
+msgstr "Gold spent:"
+
+msgid "challenges/restart/free/text"
+msgstr "One free restart has been used and mission progress has been reset."
+
+msgid "challenges/restart/free/title"
+msgstr "Crucible: %(challengeName)s restarted for free"
+
+msgid "challenges/restart/paid/title"
+msgstr "Crucible: %(challengeName)s restarted"
+
+msgid "challenges/restart/serverError"
+msgstr "Unable to restart Crucible missions. Please try again later."
+
+msgid "challenges/serverError/COOLDOWN"
+msgstr ""
+"Action unavailable. Please wait until the current operation is complete."
+
+msgid "challenges/surrender/serverError"
+msgstr "Unable to abandon Crucible missions. Please try again later."
+
+msgid "challenges/surrender/success/text"
+msgstr ""
+"You have abandoned Crucible: %(challengeName)s. The series of missions has "
+"been failed."
+
 msgid "change_tankman_role/FORBIDDEN"
 msgstr ""
 "Unable to change qualification of the crew member: the tank has unique "
@@ -3886,11 +3945,10 @@ msgstr ""
 "requirements or you cannot join because the vehicle that does not meet the "
 "requirements. Please select another vehicle."
 
-msgid "squad/notValidMaxVehTypeDeleted"
+msgid "squad/notValidMaxCountVehDeleted"
 msgstr ""
-"The %(vehName)s has been removed from the Platoon due to restrictions on the"
-" number of vehicles of this type allowed per Platoon. Select a vehicle of "
-"another type."
+"The %(vehName)s has been removed due to restrictions on the number of these "
+"vehicles allowed per Platoon. Select a different vehicle."
 
 msgid "squad_bonus/switch_off/body"
 msgstr ""

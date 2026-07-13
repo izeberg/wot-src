@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging
 from collections import namedtuple
 import BigWorld
@@ -230,7 +231,7 @@ class RequestsByIDProcessor(object):
     def _doCall(self, method, *args, **kwargs):
         result = method(*args, **kwargs)
         if self._idsGenerator is not None:
-            return self._idsGenerator.next()
+            return next(self._idsGenerator)
         else:
             return result
 
@@ -283,7 +284,7 @@ class DataRequestsByIDProcessor(RequestsByIDProcessor):
         return
 
     def _doCall(self, method, *args, **kwargs):
-        requestID = self._idsGenerator.next()
+        requestID = next(self._idsGenerator)
         method(requestID, *args, **kwargs)
         return requestID
 
@@ -329,7 +330,7 @@ class ClientRequestsByIDProcessor(RequestsByIDProcessor):
         return
 
     def _doCall(self, method, *args, **kwargs):
-        requestID = self._idsGenerator.next()
+        requestID = next(self._idsGenerator)
 
         def _callback(code, txtMsg, data):
             ctx = self._requests.get(requestID)

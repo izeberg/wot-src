@@ -3,7 +3,7 @@ from abc import ABCMeta
 from collections import defaultdict
 from functools import partial
 from typing import TYPE_CHECKING
-from account_helpers.AccountSettings import INTEGRATED_AUCTION_NOTIFICATIONS, IS_BATTLE_PASS_EXTRA_START_NOTIFICATION_SEEN, IS_BATTLE_PASS_START_NOTIFICATION_SEEN, LOOT_BOXES_WAS_FINISHED, LOOT_BOXES_WAS_STARTED, PROGRESSIVE_REWARD_VISITED, RECRUITS_NOTIFICATIONS, SENIORITY_AWARDS_COINS_REMINDER_SHOWN_TIMESTAMP, VEH_SKILL_TREE_POPUP_SHOWN, VEH_SKILL_TREE_RECORDED_NOFITICATION_NODE, BattleMatters
+from account_helpers.AccountSettings import INTEGRATED_AUCTION_NOTIFICATIONS, IS_BATTLE_PASS_EXTRA_START_NOTIFICATION_SEEN, IS_BATTLE_PASS_START_NOTIFICATION_SEEN, LOOT_BOXES_WAS_FINISHED, LOOT_BOXES_WAS_STARTED, PROGRESSIVE_REWARD_VISITED, RECRUITS_NOTIFICATIONS, SENIORITY_AWARDS_COINS_REMINDER_SHOWN_TIMESTAMP, VEH_SKILL_TREE_POPUP_SHOWN, VEH_SKILL_TREE_RECORDED_NOFITICATION_NODE, BattleMatters, CHALLENGES_START_SEEN_NOTIFICATION, CHALLENGES_REMINDER_SEEN_NOTIFICATION
 from account_helpers.settings_core.settings_constants import SeniorityAwardsStorageKeys
 from gui.Scaleform.locale.SYSTEM_MESSAGES import SYSTEM_MESSAGES
 from gui.server_events.finders import PM_CAMPAIGNS_IDS, PM_SWITCHER_CAMPAIGN
@@ -64,13 +64,14 @@ from messenger.m_constants import PROTO_TYPE, SCH_CLIENT_MSG_TYPE, USER_ACTION_I
 from messenger.proto import proto_getter
 from messenger.proto.events import g_messengerEvents
 from messenger.proto.xmpp.xmpp_constants import XMPP_ITEM_TYPE
-from notification.decorators import BattleMattersReminderDecorator, BattlePassLockButtonDecorator, BattlePassSwitchChapterReminderDecorator, C2DProgressionStyleDecorator, C11nMessageDecorator, C11nProgressiveItemDecorator, ClanAppActionDecorator, ClanAppsDecorator, ClanInvitesActionDecorator, ClanInvitesDecorator, ClanSingleAppDecorator, ClanSingleInviteDecorator, CollectionCustomMessageDecorator, CollectionsLockButtonDecorator, EmailConfirmationReminderMessageDecorator, ExchangeRateDiscountDecorator, FriendshipRequestDecorator, IntegratedAuctionStageFinishDecorator, IntegratedAuctionStageStartDecorator, LockButtonMessageDecorator, LootBoxSystemDecorator, LowPriorityDecorator, MapboxButtonDecorator, MessageDecorator, MissingEventsDecorator, PersonalMission3QuestDecorator, PetSystemDecorator, PostProgressionDecorator, PrbInviteDecorator, PrestigeFirstEntryDecorator, PrestigeLvlUpDecorator, ProgressiveRewardDecorator, RecruitReminderMessageDecorator, SeniorityAwardsDecorator, VehSkillTreePerkAvailableDecorator, WGNCPopUpDecorator, WinbackSelectableRewardReminderDecorator
+from notification.decorators import BattleMattersReminderDecorator, BattlePassLockButtonDecorator, BattlePassSwitchChapterReminderDecorator, C2DProgressionStyleDecorator, C11nMessageDecorator, C11nProgressiveItemDecorator, ClanAppActionDecorator, ClanAppsDecorator, ClanInvitesActionDecorator, ClanInvitesDecorator, ClanSingleAppDecorator, ClanSingleInviteDecorator, CollectionCustomMessageDecorator, CollectionsLockButtonDecorator, EmailConfirmationReminderMessageDecorator, ExchangeRateDiscountDecorator, FriendshipRequestDecorator, IntegratedAuctionStageFinishDecorator, IntegratedAuctionStageStartDecorator, LockButtonMessageDecorator, LootBoxSystemDecorator, LowPriorityDecorator, MapboxButtonDecorator, MessageDecorator, MissingEventsDecorator, PersonalMission3QuestDecorator, PetSystemDecorator, PostProgressionDecorator, PrbInviteDecorator, PrestigeFirstEntryDecorator, PrestigeLvlUpDecorator, ProgressiveRewardDecorator, RecruitReminderMessageDecorator, SeniorityAwardsDecorator, VehSkillTreePerkAvailableDecorator, WGNCPopUpDecorator, WinbackSelectableRewardReminderDecorator, ChallengesStartDecorator, ChallengesReminderDecorator
 from notification.settings import NOTIFICATION_TYPE, NotificationData
 from personal_missions import PM_BRANCH
 from shared_utils import first
 from skeletons.account_helpers.settings_core import ISettingsCache
 from skeletons.gui.app_loader import IAppLoader
 from skeletons.gui.battle_matters import IBattleMattersController
+from skeletons.gui.challenges import IChallengesController
 from skeletons.gui.game_control import IBattlePassController, ICollectionsSystemController, IEasyTankEquipController, IEventsNotificationsController, IExchangeRatesWithDiscountsProvider, IGameSessionController, ILimitedUIController, ILootBoxSystemController, ISeniorityAwardsController, ISteamCompletionController, IWinbackController
 from skeletons.gui.goodies import IGoodiesCache
 from skeletons.gui.impl import INotificationWindowController
@@ -2369,15 +2370,17 @@ class LootBoxSystemListener(_NotificationListener):
         SystemMessages.pushMessage(text=backport.text(R.strings.lootbox_system.helpers.doubleBreakLine()) + backport.text(getTextResource(res + [NotificationPathPart.TEXT], eventName)()) if boxesCount > 0 else '', priority=NotificationPriorityLevel.MEDIUM, type=SystemMessages.SM_TYPE.LootBoxSystemFinish, messageData={'header': backport.text(getTextResource(res + [NotificationPathPart.HEADER], eventName)(), eventName=eventNameText)})
         self.__lootBoxes.setSetting(eventName, LOOT_BOXES_WAS_FINISHED, True)
 
-    @staticmethod
-    def __pushLootBoxesEnabled(eventName):
-        res = ['serviceChannelMessages', 'lootBoxesEnabled']
-        SystemMessages.pushMessage(text=backport.text(getTextResource(res + [NotificationPathPart.TEXT], eventName)()), priority=NotificationPriorityLevel.HIGH, type=SystemMessages.SM_TYPE.LootBoxSystemEnabled, messageData={'header': backport.text(getTextResource(res + [NotificationPathPart.HEADER], eventName)())})
+    def __pushLootBoxesEnabled(self, eventName):
+        res = [
+         'serviceChannelMessages', 'lootBoxesEnabled']
+        eventNameText = backport.text(getTextResource(self.__nameRes, eventName)())
+        SystemMessages.pushMessage(text=backport.text(getTextResource(res + [NotificationPathPart.TEXT], eventName)()), priority=NotificationPriorityLevel.HIGH, type=SystemMessages.SM_TYPE.LootBoxSystemEnabled, messageData={'header': backport.text(getTextResource(res + [NotificationPathPart.HEADER], eventName)(), eventName=eventNameText)})
 
-    @staticmethod
-    def __pushLootBoxesDisabled(eventName):
-        res = ['serviceChannelMessages', 'lootBoxesDisabled']
-        SystemMessages.pushMessage(text=backport.text(getTextResource(res + [NotificationPathPart.TEXT], eventName)()), priority=NotificationPriorityLevel.HIGH, type=SystemMessages.SM_TYPE.LootBoxSystemDisabled, messageData={'header': backport.text(getTextResource(res + [NotificationPathPart.HEADER], eventName)())})
+    def __pushLootBoxesDisabled(self, eventName):
+        res = [
+         'serviceChannelMessages', 'lootBoxesDisabled']
+        eventNameText = backport.text(getTextResource(self.__nameRes, eventName)())
+        SystemMessages.pushMessage(text=backport.text(getTextResource(res + [NotificationPathPart.TEXT], eventName)()), priority=NotificationPriorityLevel.HIGH, type=SystemMessages.SM_TYPE.LootBoxSystemDisabled, messageData={'header': backport.text(getTextResource(res + [NotificationPathPart.HEADER], eventName)(), eventName=eventNameText)})
 
 
 class PM3NotificationListener(_NotificationListener):
@@ -2580,6 +2583,70 @@ class SkillTreePerkAvailableListener(BaseReminderListener):
             return
 
 
+class ChallengesListener(_NotificationListener):
+    __challenges = dependency.descriptor(IChallengesController)
+    __TYPE = NOTIFICATION_TYPE.CHALLENGES_START
+    __DEFAULT_ENTITY_ID = 0
+    __TEMPLATE = GFNotificationTemplates.CHALLENGES_START_NOTIFICATION
+
+    def start(self, model):
+        result = super(ChallengesListener, self).start(model)
+        self.__challenges.onChallengesSettingsChanged += self.__pushNotification
+        if result:
+            self.__pushNotification()
+        return True
+
+    def stop(self):
+        self.__challenges.onChallengesSettingsChanged -= self.__pushNotification
+        super(ChallengesListener, self).stop()
+
+    def __pushNotification(self):
+        if self.__challenges.isEnabled:
+            challengesStartSeen = AccountSettings.getNotifications(CHALLENGES_START_SEEN_NOTIFICATION)
+            challengeIDs = {challenge.challengeID for challenge in self.__challenges.availableChallenges()}
+            if not self.__hasReminderNotification():
+                pushReminder = False
+                challengesReminderSeen = AccountSettings.getNotifications(CHALLENGES_REMINDER_SEEN_NOTIFICATION)
+                for challenge in self.__challenges.availableChallenges():
+                    if challenge.isExpiringSoon and challenge.challengeID not in challengesReminderSeen:
+                        challengesReminderSeen.add(challenge.challengeID)
+                        pushReminder = True
+
+                if pushReminder:
+                    self.__pushReminderNotification()
+                AccountSettings.setNotifications(CHALLENGES_REMINDER_SEEN_NOTIFICATION, challengesReminderSeen)
+            if challengeIDs and not challengesStartSeen:
+                self.__pushStartNotification(self.__DEFAULT_ENTITY_ID, True)
+                AccountSettings.setNotifications(CHALLENGES_START_SEEN_NOTIFICATION, challengeIDs)
+                return
+            unseenChallengeIDs = challengeIDs - challengesStartSeen
+            if unseenChallengeIDs:
+                seenChallengeIDs = challengesStartSeen | challengeIDs
+                AccountSettings.setNotifications(CHALLENGES_START_SEEN_NOTIFICATION, seenChallengeIDs)
+                self.__pushStartNotification(max(unseenChallengeIDs), False)
+
+    def __pushStartNotification(self, entityId, firstNotification):
+        model = self._model()
+        if model is not None:
+            gfDataID = str(uuid.uuid4())
+            getCache().setPayload(gfDataID, {'first': firstNotification})
+            model.addNotification(ChallengesStartDecorator(entityId, self.__TYPE, {'gfDataID': gfDataID}, model, self.__TEMPLATE, NotificationPriorityLevel.HIGH))
+        return
+
+    def __hasReminderNotification(self):
+        model = self._model()
+        if model is not None:
+            return model.hasNotification(NOTIFICATION_TYPE.CHALLENGES_REMINDER, ChallengesReminderDecorator.ENTITY_ID)
+        else:
+            return True
+
+    def __pushReminderNotification(self):
+        model = self._model()
+        if model is not None:
+            model.addNotification(ChallengesReminderDecorator(model=model))
+        return
+
+
 registerNotificationsListeners((
  ServiceChannelListener, MissingEventsListener, PrbInvitesListener, FriendshipRqsListener, _WGNCListenersContainer,
  ProgressiveRewardListener, SwitcherListener, TankPremiumListener,
@@ -2591,7 +2658,7 @@ registerNotificationsListeners((
  PrestigeListener, SeniorityAwardsVehicleSelectionListener, NDQSwitcherListener,
  XpTranslationRatesDiscountsListener, GoldExchangeRatesDiscountsListener,
  LootBoxSystemListener, EasyTankEquipStateListener, PM3NotificationListener,
- SkillTreePerkAvailableListener))
+ SkillTreePerkAvailableListener, ChallengesListener))
 
 class NotificationsListeners(_NotificationListener):
 

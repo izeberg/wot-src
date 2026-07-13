@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, operator, BigWorld
 from helpers import time_utils
 from shared_utils import forEach, findFirst

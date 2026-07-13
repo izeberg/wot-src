@@ -1,6 +1,8 @@
 from __future__ import absolute_import
-import Math
+import typing, Math
 from enum import Enum, unique
+if typing.TYPE_CHECKING:
+    from messenger_common_chat2 import ExtBattleChatCommand
 
 class GENERIC_MESSENGER_ARGS(Enum):
     INT32_ARG_1 = 'int32Arg1'
@@ -98,6 +100,14 @@ class ReplyState(Enum):
     CAN_RESPOND = 4
 
 
+class BattleChatCommandExtProcessorType(Enum):
+    TEAM_BROADCAST = 0
+    ALLY_PLAYER = 1
+    ENEMY_PLAYER = 2
+    COMMENDATIONS_PLAYER = 3
+    NO_PROCESS_COMMAND = 4
+
+
 ONE_SHOT_COMMANDS_TO_REPLIES = {BATTLE_CHAT_COMMAND_NAMES.TURNBACK: BATTLE_CHAT_COMMAND_NAMES.POSITIVE, 
    BATTLE_CHAT_COMMAND_NAMES.THANKS: BATTLE_CHAT_COMMAND_NAMES.POSITIVE, 
    BATTLE_CHAT_COMMAND_NAMES.RELOADINGGUN: BATTLE_CHAT_COMMAND_NAMES.CONFIRM, 
@@ -184,6 +194,10 @@ CHAT_COMMANDS_THAT_IGNORE_COOLDOWNS = [
  BATTLE_CHAT_COMMAND_NAMES.CLEAR_CHAT_COMMANDS]
 BLOCKING_TEAM_COMM_CHAT_COMMANDS = [
  BATTLE_CHAT_COMMAND_NAMES.ATTENTION_TO_POSITION]
+
+def extendCommandMarkerTypes(command):
+    _COMMAND_NAME_TRANSFORM_MARKER_TYPE.setdefault(command.name, command.markerType)
+
 
 def getUniqueTeamOrControlPointID(baseTeamID, baseID):
     return baseID | baseTeamID << 4

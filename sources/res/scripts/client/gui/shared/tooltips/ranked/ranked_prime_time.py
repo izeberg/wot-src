@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from helpers import time_utils
 from gui.shared.tooltips import ToolTipBaseData, TOOLTIP_TYPE
 from helpers import dependency

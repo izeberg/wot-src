@@ -1,5 +1,5 @@
 import BigWorld
-from cgf_obsolete_script.py_component import Component
+from components_base.component import Component
 import SoundGroups
 from constants import VEHICLE_SIEGE_STATE
 from gui.battle_control import avatar_getter

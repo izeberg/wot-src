@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from visual_script import ASPECT
 from visual_script.block import Block, Meta
 from visual_script.slot_types import SLOT_TYPE

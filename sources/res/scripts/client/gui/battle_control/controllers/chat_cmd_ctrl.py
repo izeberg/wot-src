@@ -1,4 +1,7 @@
-import logging, math, weakref, BigWorld, CommandMapping, DestructibleEntity, Math, Vehicle
+from __future__ import absolute_import
+import logging, math, weakref
+from future.utils import viewitems
+import BigWorld, CommandMapping, DestructibleEntity, Math, Vehicle
 from AvatarInputHandler import aih_global_binding
 from AvatarInputHandler.cameras import getWorldRayAndPoint
 from aih_constants import CTRL_MODE_NAME
@@ -165,7 +168,7 @@ class ChatCommandsController(IBattleController):
         if advChatCmp is None:
             return
         else:
-            for chatCmd, keyboardCmd in KB_MAPPING.iteritems():
+            for chatCmd, keyboardCmd in viewitems(KB_MAPPING):
                 if cmdMap.isFired(keyboardCmd, key):
                     if chatCmd in DIRECT_ACTION_BATTLE_CHAT_COMMANDS:
                         self.handleChatCommand(chatCmd)

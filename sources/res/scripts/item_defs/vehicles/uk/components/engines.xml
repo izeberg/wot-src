@@ -3404,7 +3404,7 @@
 			<notInShop>true</notInShop>
 			<wwsoundPC>eng_leyland_l60_PC</wwsoundPC>
 			<wwsoundNPC>eng_leyland_l60_NPC</wwsoundNPC>
-			<power>850</power>
+			<power>800</power>
 			<weight>500</weight>
 			<maxHealth>310</maxHealth>
 			<maxRegenHealth>155</maxRegenHealth>
@@ -3413,8 +3413,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>272</rpm_min>
-			<rpm_max>2381</rpm_max>
+			<rpm_min>290</rpm_min>
+			<rpm_max>2327</rpm_max>
 		</Leyland_L60F>
 		<Leyland_L60_No_4_Mk_2>
 			<userString>#gb_vehicles:Leyland_L60_No_4_Mk_2</userString>

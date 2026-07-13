@@ -63,6 +63,7 @@ package net.wg.gui.components.tooltips
          var _loc1_:Number = NaN;
          var _loc3_:FortDivisionVO = null;
          var _loc4_:Number = NaN;
+         var _loc5_:Number = NaN;
          var _loc6_:ToolTipBlockVO = null;
          var _loc7_:Number = NaN;
          var _loc8_:ToolTipBlockResultVO = null;
@@ -73,7 +74,7 @@ package net.wg.gui.components.tooltips
          contentMargin.bottom = 24;
          topPosition = bgShadowMargin.top + contentMargin.top;
          _loc4_ = bgShadowMargin.left + contentMargin.left;
-         var _loc5_:Number = bgShadowMargin.horizontal + contentMargin.horizontal;
+         _loc5_ = bgShadowMargin.horizontal + contentMargin.horizontal;
          this._headerTF.autoSize = TextFieldAutoSize.LEFT;
          this._headerTF.htmlText = Utils.instance.htmlWrapper(_loc3_.name,Utils.instance.COLOR_HEADER,18,"$TitleFont");
          this._headerTF.width = this._headerTF.textWidth + 5;

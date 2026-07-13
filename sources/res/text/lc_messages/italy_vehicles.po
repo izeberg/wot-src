@@ -256,6 +256,9 @@ msgstr "Stone Sentinel"
 msgid "Chassis_It37_Serpente"
 msgstr "Serpente"
 
+msgid "Chassis_It38_Donnola"
+msgstr "Donnola"
+
 msgid "Chassis_It39_Coccodrillo"
 msgstr "Coccodrillo"
 
@@ -971,6 +974,34 @@ msgstr "Serpente"
 msgid "It37_Serpente_short_special"
 msgstr "Double gun system, good mobility"
 
+msgid "It38_Donnola"
+msgstr "Donnola"
+
+msgid "It38_Donnola_descr"
+msgstr ""
+"In 1975, the Italian military began developing an expeditionary unit fire "
+"support tank. The designers planned to mount the cutting-edge 60 mm HVGS gun"
+" in a light two-man turret. The gun offered good armor penetration thanks to"
+" a high initial shell velocity. The compact and light tank, suitable for air"
+" transport, was designed for airborne troops, marine units, and the Alpini "
+"mountain infantry corps. However, because the vehicle's parts and components"
+" were not unified with other Italian vehicles, the project was closed at the"
+" prototype stage."
+
+msgid "It38_Donnola_long_special"
+msgstr ""
+"The Donnola is a Tier IX Italian light tank. Thanks to its excellent "
+"mobility, small dimensions, and good concealment, this vehicle is effective "
+"at reconnaissance. At the same time, its unusual gun—a three-round "
+"autoloader with all shells housed in a single container—enables the Donnola "
+"to provide fire support."
+
+msgid "It38_Donnola_short"
+msgstr "Donnola"
+
+msgid "It38_Donnola_short_special"
+msgstr "Container autoloader, good top speed"
+
 msgid "It39_Coccodrillo"
 msgstr "Coccodrillo"
 
@@ -1086,6 +1117,9 @@ msgstr "MTU 870 (p)"
 msgid "MTU_873"
 msgstr "MTU 873"
 
+msgid "MTU_8V183_TE_22_Donnola"
+msgstr "MTU 8V183 TE-22 (Donnola)"
+
 msgid "MTU_MB_837_Ba_500A"
 msgstr "MTU MB Ba 500A"
 
@@ -1178,6 +1212,9 @@ msgstr "SEM-25S"
 
 msgid "SEM_35"
 msgstr "SEM-35"
+
+msgid "SEM_70_Donnola"
+msgstr "SEM-70 (Donnola)"
 
 msgid "SEM_80"
 msgstr "SEM-80"
@@ -1340,6 +1377,9 @@ msgstr "Stone Sentinel"
 
 msgid "Turret_1_It37_Serpente"
 msgstr "Serpente"
+
+msgid "Turret_1_It38_Donnola"
+msgstr "Donnola T 60/70 A"
 
 msgid "Turret_1_It39_Coccodrillo"
 msgstr "Coccodrillo"
@@ -1772,6 +1812,18 @@ msgstr "c.p. 47/32 mod. 40"
 
 msgid "_47mm_c_p_47_40_mod_39"
 msgstr "c.p. 47/40 mod. 39"
+
+msgid "_60mm_OTO_HVGS_Donnola"
+msgstr "60 mm OTO HVGS (Donnola)"
+
+msgid "_60mm_Type_300_APFSDS_T_Donnola"
+msgstr "Type 300 APFSDS-T (Donnola)"
+
+msgid "_60mm_Type_301_HE_T_Donnola"
+msgstr "Type 301 HE-T (Donnola)"
+
+msgid "_60mm_Type_310_HEAT_FS_Donnola"
+msgstr "Type 310 HEAT-FS (Donnola)"
 
 msgid "_75mm_Cannone_da_75_18"
 msgstr "Cannone da 75/18"

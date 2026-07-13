@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.shared.system_factory import collectBattleControllerRepo, collectSharedControllerRepo
 from gui.battle_control.controllers.repositories import BattleSessionSetup
 from gui.battle_control.controllers.repositories import SharedControllersLocator

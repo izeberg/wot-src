@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from skeletons.gui.prebattle_hints.controller import IPrebattleHintsControlStrategy
 
 class INewbiePrebattleHintsController(IPrebattleHintsControlStrategy):

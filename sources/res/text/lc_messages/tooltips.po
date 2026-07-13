@@ -428,6 +428,9 @@ msgstr "%(value)d bonds"
 msgid "additionalRewards/customizations/3d_style"
 msgstr "%(value)s 3D style"
 
+msgid "additionalRewards/customizations/attachment"
+msgstr "3D Attachment"
+
 msgid "additionalRewards/customizations/camouflage"
 msgstr "%(value)s camouflage"
 
@@ -5838,20 +5841,20 @@ msgstr "To join the battle, select a vehicle and confirm that you are ready."
 msgid "hangar/startBtn/squadNotReady/header"
 msgstr "Unavailable"
 
-msgid "hangar/status/toRent"
-msgstr "Extend the rental period"
+msgid "hangar/startBtn/wrongSquadVehicle/body"
+msgstr "Select another vehicle to confirm your readiness."
 
-msgid "hangar/tankCarusel/wrongSquadTypeVehicle/body"
-msgstr "Select other vehicle type to confirm your readiness"
-
-msgid "hangar/tankCarusel/wrongSquadTypeVehicle/header"
+msgid "hangar/startBtn/wrongSquadVehicle/header"
 msgstr "Unavailable"
 
-msgid "hangar/tankCarusel/wrongSquadVehicle/body"
+msgid "hangar/startBtn/wrongSquadVehicleLevel/body"
 msgstr "To confirm that you are ready, select a vehicle of a suitable tier."
 
-msgid "hangar/tankCarusel/wrongSquadVehicle/header"
+msgid "hangar/startBtn/wrongSquadVehicleLevel/header"
 msgstr "Unavailable"
+
+msgid "hangar/status/toRent"
+msgstr "Extend the rental period"
 
 msgid "hangar/tuning/body"
 msgstr "Click to go to the Exterior screen."
@@ -9230,6 +9233,23 @@ msgstr "Complete Vitaliy Olenenko's Racing Collection."
 msgid "notrecruitedtankman/race19_commanderC/label"
 msgstr "Unique Commander"
 
+msgid "notrecruitedtankman/servicewoman/desc"
+msgstr ""
+"Whatever the assignment, Jadwiga Wołoszyn took it on with poise and "
+"diligence. As a proud member of the Polish Women's Auxiliary Service, she "
+"became part of a remarkable wartime effort that carried her country's spirit"
+" far beyond its borders. Her duties shifted with the needs of the day—at "
+"times behind the wheel of a transport truck, at others sorting urgent "
+"documents or relaying vital communications via radio, and occasionally in "
+"basic weapons instruction. Through it all, women like Jadwiga proved "
+"indispensable to the cause."
+
+msgid "notrecruitedtankman/servicewoman/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/servicewoman/label"
+msgstr "?empty?"
+
 msgid "notrecruitedtankman/skillsTitle"
 msgstr "Perks"
 
@@ -11067,6 +11087,82 @@ msgstr "?empty?"
 msgid "notrecruitedtankman/tankmen_bp20_4/label"
 msgstr "Battle Pass Season XX"
 
+msgid "notrecruitedtankman/tankmen_bp20_5/desc"
+msgstr ""
+"Once a respected geneticist, Doctor George Wilhelm Krieger built his career "
+"on enhancing soldiers' combat performance. His reputation, however, "
+"collapsed when his unsanctioned testing on humans came to light. Forced into"
+" exile from the scientific community, he resumed his dealings from the "
+"shadows, using his ill-gotten gains to establish a covert research facility "
+"on a remote archipelago, guarded by his own private army of mercenaries. "
+"There, he seeks to reactivate primal abilities long lost to human "
+"evolution—a volatile power that, once unleashed, may be impossible to "
+"contain."
+
+msgid "notrecruitedtankman/tankmen_bp20_5/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp20_5/label"
+msgstr "Battle Pass: Far Cry"
+
+msgid "notrecruitedtankman/tankmen_bp20_6/desc"
+msgstr ""
+"Ex-Navy officer Jack Carver puts his lethal set of skills to use as a "
+"private boat charter in the South Pacific. When he's hired to take a "
+"reporter to a remote island, things quickly get out of hand—his boat is "
+"destroyed by a missile fired by mercenaries moments after arrival. Stranded "
+"ashore, Jack is contacted by a mysterious insider who reveals the island's "
+"disturbing secrets. He soon uncovers a horrific experiment led by the "
+"disgraced scientist Dr. Krieger, who plans to replace humanity with "
+"engineered super-beings. Now, Jack must stop the operation and find a way "
+"back to civilization."
+
+msgid "notrecruitedtankman/tankmen_bp20_6/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp20_6/label"
+msgstr "Battle Pass: Far Cry"
+
+msgid "notrecruitedtankman/tankmen_bp20_7/desc"
+msgstr ""
+"\"You are fearless. You will defeat anyone who stands in your way.\"\n"
+"Citra Talugmai is the enigmatic leader of the Rakyat tribe, revered as a living goddess. A warrior of striking beauty, her magnetic presence is matched only by her devotion to her beliefs and her relentless ambition to restore her people to greatness. Through a hypnotic blend of allure and manipulation, she ensnares the outsider Jason Brody, drawing him into her sway and stoking the darkness within him to nurture his descent into madness in service of her own twisted vision."
+
+msgid "notrecruitedtankman/tankmen_bp20_7/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp20_7/label"
+msgstr "Battle Pass: Far Cry"
+
+msgid "notrecruitedtankman/tankmen_bp20_8/desc"
+msgstr ""
+"Talented and intelligent but lacking direction, Jason Brody drifts through "
+"life, focusing on partying, extreme sports, and his girlfriend, Liza—despite"
+" their clashes over his refusal to buckle down. Now stranded on a hostile "
+"island, he is finally forced to concentrate on one goal: rescuing his "
+"friends. In the process, he uncovers within himself a frightening capacity "
+"for violence, a natural instinct for survival, and a growing thirst for "
+"vengeance... along with a place where he might truly belong. But everything "
+"comes at a cost, and whether he's willing to pay it remains to be "
+"determined."
+
+msgid "notrecruitedtankman/tankmen_bp20_8/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp20_8/label"
+msgstr "Battle Pass: Far Cry"
+
+msgid "notrecruitedtankman/tankmen_bp20_9/desc"
+msgstr ""
+"\"Our great and glorious leader who has risked his life and limb to bring Kyrat out of the past. He sacrifices everything for his adopted homeland and loves its people like his own children. May Pagan's light shine upon you all.\"\n"
+"Self-styled King of Kyrat, Pagan Min rules the tumultuous and remote nation through a brutal dictatorship enforced by his private army. Flamboyant, sadistic, and brazenly narcissistic, he pivots from playful banter to nauseating brutality in an instant—savoring each with the same refined relish as his impeccably plated meals."
+
+msgid "notrecruitedtankman/tankmen_bp20_9/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp20_9/label"
+msgstr "Battle Pass: Far Cry"
+
 msgid "notrecruitedtankman/tankmen_bp2_1/desc"
 msgstr ""
 "People are always asking if I know Jack Reed. Before I answer, I usually "
@@ -12883,6 +12979,11 @@ msgstr "victories within the rental period: %(count)s"
 
 msgid "quests/battlePass/linkBtn"
 msgstr "See Battle Pass Progression"
+
+msgid "quests/bonuses/attachments_set/body"
+msgstr ""
+"Set of 3D attachments includes individual elements to customize specific "
+"vehicles."
 
 msgid "quests/bonuses/token/battle_bonus_x5/body"
 msgstr ""

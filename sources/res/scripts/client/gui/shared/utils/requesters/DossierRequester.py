@@ -1,5 +1,7 @@
+from __future__ import absolute_import
 import time
 from functools import partial
+from future.utils import iteritems, viewitems
 import BigWorld, constants, dossiers2, AccountCommands
 from adisp import adisp_async
 from debug_utils import LOG_ERROR
@@ -57,7 +59,7 @@ class UserDossier(object):
                 self.__cache['layout'] = value[9]
                 self.__cache['layoutState'] = value[10]
                 self.__cache['serviceRecordCustomization'] = value[11]
-                for sID, d in (value[4] or {}).iteritems():
+                for sID, d in viewitems(value[4] or {}):
                     seasons[sID] = dossiers2.getRated7x7DossierDescr(d)
 
             callback(self.__cache['account'])
@@ -269,7 +271,7 @@ class DossierRequester(AbstractSyncDataRequester, IDossierRequester):
          constants.DOSSIER_TYPE.VEHICLE, vehTypeCompDescr), (0, ''))[1]
 
     def getVehDossiersIterator(self):
-        for (dossierType, vehIntCD), records in self._data.iteritems():
+        for (dossierType, vehIntCD), records in iteritems(self._data):
             if dossierType == constants.DOSSIER_TYPE.VEHICLE:
                 yield (
                  vehIntCD, records[1])
@@ -285,4 +287,4 @@ class DossierRequester(AbstractSyncDataRequester, IDossierRequester):
     def onCenterIsLongDisconnected(self, isLongDisconnected):
         if isLongDisconnected:
             return
-        self.__users = dict(item for item in self.__users.iteritems() if item[1].isAvailable)
+        self.__users = dict(item for item in viewitems(self.__users) if item[1].isAvailable)

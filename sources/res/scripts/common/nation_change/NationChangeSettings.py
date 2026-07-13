@@ -1,6 +1,8 @@
+from __future__ import absolute_import
+from future.utils import viewvalues
 from typing import List, Dict, Iterable
-from realm_utils import ResMgr
 from items import _xml
+from realm_utils import ResMgr
 
 class NationGroup(object):
     __slots__ = ('ID', 'tankList')
@@ -19,14 +21,14 @@ class NationChangeSettings(object):
         return self.__groupById.get(groupId)
 
     def findVehicleGroup(self, vehicleTypeName):
-        for groupId, group in self.__groupById.iteritems():
+        for group in viewvalues(self.__groupById):
             if vehicleTypeName in group.tankList:
                 return group
 
         return
 
     def iterGroups(self):
-        return self.__groupById.itervalues()
+        return viewvalues(self.__groupById)
 
     @staticmethod
     def __readSettings(xmlPath):

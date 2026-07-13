@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import sys, weakref, typing
 from debug_utils import LOG_CURRENT_EXCEPTION
 from frameworks.wulf import WindowFlags
@@ -175,7 +176,7 @@ class ToolTipData(ToolTipBaseData):
 
     def getDisplayableData(self, *args, **kwargs):
         self.item = self.context.buildItem(*args, **kwargs)
-        result = dict()
+        result = {}
         for field in self.fields:
             key, value = field.buildData()
             if field.isAvailable and key not in self.context.fieldsToExclude:
@@ -355,10 +356,10 @@ def getUnlockPrice(compactDescr, parentCD=None, vehicleLevel=UNKNOWN_VEHICLE_LEV
         isAvailable = compactDescr in unlocks
         if parentCD is not None:
             return getUnlockProps(isAvailable, parentCD)
-        vehsCompDescrs = [ compDescr for compDescr in pricesDict.keys() if compDescr in unlocks ]
+        vehsCompDescrs = [ compDescr for compDescr in pricesDict if compDescr in unlocks ]
         if not vehsCompDescrs:
             vehsCompDescrs = pricesDict.keys()
-        minUnlockPrice = sys.maxint
+        minUnlockPrice = sys.maxsize
         minUnlockPriceVehCD = None
         for vcd in vehsCompDescrs:
             if pricesDict[vcd] <= minUnlockPrice:

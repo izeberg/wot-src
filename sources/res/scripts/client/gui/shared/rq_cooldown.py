@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import math, BigWorld
 from debug_utils import LOG_WARNING
 from gui import SystemMessages

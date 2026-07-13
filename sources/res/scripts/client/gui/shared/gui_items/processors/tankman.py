@@ -1,4 +1,7 @@
-import logging, BigWorld
+from __future__ import absolute_import
+import logging
+from future.utils import viewvalues
+import BigWorld
 from gui import SystemMessages, makeHtmlString
 from gui.SystemMessages import CURRENCY_TO_SM_TYPE, SM_TYPE
 from gui.game_control.restore_contoller import getTankmenRestoreInfo
@@ -247,7 +250,7 @@ class TankmanUnload(GroupedRequestProcessor):
 
     @staticmethod
     def __tmanQuantity(ctx):
-        return len(ctx) / 2
+        return len(ctx) // 2
 
 
 class TankmanReturn(Processor):
@@ -343,7 +346,7 @@ class TankmanRetraining(GroupedRequestProcessor):
         return makeSuccess(changeRoleMsg + backport.text(R.strings.system_messages.dyn(sysMessagePrefix).financial_success_free(), vehName=vehicle.shortUserName), auxData=self._makeSuccessData(ctx))
 
     def __sysMessagePrefix(self, ctx):
-        amount = len(ctx) / 3
+        amount = len(ctx) // 3
         if amount > 1:
             return 'retraining_crew'
         return 'retraining_tankman'
@@ -489,7 +492,7 @@ class TankmanChangePassport(ItemProcessor):
     def __hasUniqueData(cls, tankman, firstNameID, lastNameID, iconID):
         tDescr = tankman.descriptor
         nationConfig = tankmen.getNationConfig(tankman.nationID)
-        for group in nationConfig.normalGroups.itervalues():
+        for group in viewvalues(nationConfig.normalGroups):
             if group.notInShop:
                 if tDescr.firstNameID != firstNameID and firstNameID is not None and tDescr.firstNameID in group.firstNamesList or tDescr.lastNameID != lastNameID and lastNameID is not None and tDescr.lastNameID in group.lastNamesList or tDescr.iconID != iconID and iconID is not None and tDescr.iconID in group.iconsList:
                     return True

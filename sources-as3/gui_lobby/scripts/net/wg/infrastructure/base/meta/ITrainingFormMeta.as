@@ -6,7 +6,7 @@ package net.wg.infrastructure.base.meta
    {
        
       
-      function joinTrainingRequestS(param1:String) : void;
+      function joinTrainingRequestS(param1:int, param2:int) : void;
       
       function createTrainingRequestS() : void;
       

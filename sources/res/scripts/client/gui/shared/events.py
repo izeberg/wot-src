@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging
 from collections import namedtuple
 import typing
@@ -910,12 +911,13 @@ class UserMissionsEvent(SharedEvent):
     CHANGE_CONTENT_LAYOUT = 'changeContentLayout'
     TRANSITION_TO_MISSION = 'transitionToMission'
 
-    def __init__(self, eventType, tabID=None, questId=None, eventID=None, groupID=None, showMissionDetails=None, y=None, height=None):
+    def __init__(self, eventType, tabID=None, questId=None, eventID=None, groupID=None, challengeID=None, showMissionDetails=None, y=None, height=None):
         super(UserMissionsEvent, self).__init__(eventType)
         self.tabID = tabID
         self.questId = questId
         self.eventID = eventID
         self.groupID = groupID
+        self.challengeID = challengeID
         self.showMissionDetails = showMissionDetails
         self.y = y
         self.height = height

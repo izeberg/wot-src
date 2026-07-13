@@ -1,6 +1,9 @@
+from __future__ import absolute_import
+import copy, typing
+from future.utils import viewitems, viewvalues
 from operator import itemgetter
-from sys import maxint
-import copy, typing, BigWorld, Event
+from sys import maxsize
+import BigWorld, Event
 from constants import RentType, SEASON_NAME_BY_TYPE, IS_RENTALS_ENABLED
 from gui.shared.gui_items import GUI_ITEM_TYPE
 from gui.shared.utils.requesters.ItemsRequester import REQ_CRITERIA
@@ -10,7 +13,9 @@ from helpers import time_utils
 from skeletons.gui.game_control import IRentalsController, ISeasonsController, IEpicBattleMetaGameController
 from skeletons.gui.shared import IItemsCache
 from rent_common import SeasonRentDuration, calculateSeasonRentPrice
-from season_common import GameSeason
+if typing.TYPE_CHECKING:
+    from gui.shared.gui_items.fitting_item import RentalInfoProvider
+    from season_common import GameSeason
 RENT_TYPE_WEIGHTS = {RentType.TIME_RENT: 0, 
    RentType.SEASON_CYCLE_RENT: 1, 
    RentType.SEASON_RENT: 2}
@@ -69,7 +74,7 @@ class RentalsController(IRentalsController):
     def filterRentPackages(self, rentPrices):
         filteredRentPrices = {}
         if self.isEnabled():
-            for rentType, packagesToFilter in rentPrices.iteritems():
+            for rentType, packagesToFilter in viewitems(rentPrices):
                 if rentType == RentType.SEASON_RENT:
                     filteredRentPrices[rentType] = self.__filterSeasonCyclePackages(packagesToFilter, self.__seasonFilter)
                 elif rentType == RentType.SEASON_CYCLE_RENT:
@@ -86,7 +91,7 @@ class RentalsController(IRentalsController):
         mainRentTypeWeight = float('-inf')
         seasonType = None
         if self.isEnabled():
-            for rentType, packages in self.filterRentPackages(rentPrices).iteritems():
+            for rentType, packages in viewitems(self.filterRentPackages(rentPrices)):
                 if packages:
                     if rentType == RentType.TIME_RENT:
                         if mainRentType is None:
@@ -106,7 +111,7 @@ class RentalsController(IRentalsController):
                         if rentTypeWeight > mainRentTypeWeight:
                             mainRentType = rentType
                             mainRentTypeWeight = rentTypeWeight
-                            seasonType = packages.itervalues().next().get('seasonType', None)
+                            seasonType = next(iter(viewvalues(packages))).get('seasonType', None)
 
         return (
          hasAvailableRentPackages, mainRentType, seasonType)
@@ -142,7 +147,7 @@ class RentalsController(IRentalsController):
     @staticmethod
     def __filterSeasonCyclePackages(packagesToFilter, filterFunc):
         filteredPackages = {}
-        for packageID, package in packagesToFilter.iteritems():
+        for packageID, package in viewitems(packagesToFilter):
             seasonType = package.get('seasonType', None)
             if filterFunc(packageID, seasonType, package):
                 filteredPackages[packageID] = package
@@ -160,7 +165,7 @@ class RentalsController(IRentalsController):
             if delta > 0:
                 notificationList.append((vehicle.intCD, self.getDeltaPeriod(delta), vehicle.isRentPromotion))
 
-        nextRentNotification = maxint
+        nextRentNotification = maxsize
         if notificationList:
             _, nextRentNotification, forceUpdate = min(notificationList, key=itemgetter(1))
             for item in notificationList:
@@ -180,7 +185,7 @@ class RentalsController(IRentalsController):
                 if delta > 0:
                     nextRentNotification = min(nextRentNotification, self.getDeltaPeriod(delta)) + 1
 
-        if not notificationList and nextRentNotification == maxint:
+        if not notificationList and nextRentNotification == maxsize:
             return
         self.__rentNotifyTimeCallback = BigWorld.callback(nextRentNotification, self.__notifyRentTime)
 

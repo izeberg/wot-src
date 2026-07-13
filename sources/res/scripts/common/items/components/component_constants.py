@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import collections, enum
 from soft_exception import SoftException
 from wrapped_reflection_framework import reflectedNamedTuple

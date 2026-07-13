@@ -1,7 +1,10 @@
-import time, calendar, datetime, XmlConfigReader, helpers_common
+from __future__ import absolute_import
+import time, calendar, datetime
+from future.utils import viewitems
+import helpers_common, XmlConfigReader
 from debug_utils import LOG_WARNING
-from goodie_constants import GOODIE_VARIETY
-from . import goodie_helpers
+from goodies import goodie_helpers
+from goodies.goodie_constants import GOODIE_VARIETY
 from items.vehicles import makeVehicleTypeCompDescrByName
 from soft_exception import SoftException
 _CONFIG_FILE = 'scripts/server_xml/goodies.xml'
@@ -13,7 +16,7 @@ def readConfig(verbose):
 
 
 def _readGoodieResource(section):
-    for n, t in goodie_helpers.GOODIE_TEXT_TO_RESOURCE.iteritems():
+    for n, t in viewitems(goodie_helpers.GOODIE_TEXT_TO_RESOURCE):
         v = section.readString(n, '')
         if v:
             value, isPercentage = XmlConfigReader.parsePercentage(v)
@@ -24,7 +27,7 @@ def _readGoodieResource(section):
 
 
 def _readGoodieTarget(reader, subsectionName):
-    for n, t in goodie_helpers.GOODIE_TEXT_TO_TARGET.iteritems():
+    for n, t in viewitems(goodie_helpers.GOODIE_TEXT_TO_TARGET):
         section = reader.getSubsection(('/').join((subsectionName, n)))
         if section:
             name = section.readString('name', '')
@@ -47,7 +50,7 @@ def _readGoodieCondition(section):
     if section is None:
         return
     else:
-        for n, t in goodie_helpers.GOODIE_TEXT_TO_CONDITION.iteritems():
+        for n, t in viewitems(goodie_helpers.GOODIE_TEXT_TO_CONDITION):
             value = section.readString(n, '')
             if value:
                 return (t, int(value))
@@ -72,7 +75,7 @@ def _readPrice(reader, subsectionName):
 
 
 def _validator(uid, variety, resource, price):
-    t, value, isPercentage = resource
+    _, value, isPercentage = resource
     if value < 0:
         raise SoftException('Bad goodie %d value (negative) %d' % uid % value)
     if variety in GOODIE_VARIETY.DISCOUNT_LIKE and isPercentage and value > 100:

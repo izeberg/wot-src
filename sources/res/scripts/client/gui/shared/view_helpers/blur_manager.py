@@ -1,6 +1,8 @@
-import typing
+from __future__ import absolute_import
+import logging, typing, weakref
+from future.utils import listvalues
 from math import isnan
-import GUI, logging, weakref
+import GUI
 from collections import deque
 from gui.app_loader.settings import APP_NAME_SPACE as _SPACE
 from helpers import dependency
@@ -49,7 +51,7 @@ class BlurEffect(IBlurEffect):
         return self._config
 
     def updateConfig(self, config):
-        if set([ type(x) for x in config ]) != set([ type(x) for x in self._config ]):
+        if {type(x) for x in config} != {type(x) for x in self._config}:
             _logger.error("Can't update blur config with different blur types")
         self._config = config
         self._manager.updateBlur(self)
@@ -373,5 +375,5 @@ class CachedBlur(object):
         return self.__sceneBlurConfig.enabled
 
     def __updateRects(self):
-        self.__sceneBlurConfig.rects = self.__rects.values()
+        self.__sceneBlurConfig.rects = listvalues(self.__rects)
         self.__blur.updateConfig(self.__blurConfig)

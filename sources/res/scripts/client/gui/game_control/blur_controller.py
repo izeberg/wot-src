@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging
 from gui.doc_loaders.blur_loader import readBlurSettings
 from gui.shared.view_helpers.blur_manager import BlurManager, BlurEffect

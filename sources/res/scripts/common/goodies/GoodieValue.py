@@ -1,6 +1,8 @@
+from __future__ import absolute_import, division
 from soft_exception import SoftException
 from math import floor
 from typing import TypeVar
+from math_common import round_py2_style_int
 
 class GoodieValue(object):
     __slots__ = [
@@ -30,6 +32,8 @@ class GoodieValue(object):
             return self.value == other.value
         raise SoftException('Comparison of absolute and percent values')
 
+    __hash__ = None
+
     @staticmethod
     def percent(value):
         return GoodieValue(value, False)
@@ -56,7 +60,7 @@ class GoodieValue(object):
         if self.isAbsolute:
             return self.value
         else:
-            return int(round(float(x) * self.value))
+            return round_py2_style_int(float(x) * self.value)
 
 
 GoodieValueType = TypeVar('GoodieValueType', bound=GoodieValue)

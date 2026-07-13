@@ -4,7 +4,7 @@ from future.moves.urllib.parse import urljoin
 from battle_pass_common import BattlePassTankmenSource
 from frameworks.wulf import Array
 from gui.Scaleform.daapi.view.lobby.store.browser.shop_helpers import getShopURL
-from gui.battle_pass.battle_pass_helpers import getDataByTankman
+from gui.battle_pass.battle_pass_helpers import getReceivedTankmenCount, getDataByTankman
 from gui.battle_pass.sounds import BattlePassSounds
 from gui.collection.collections_helpers import getTankmanFullName
 from gui.impl.gen import R
@@ -134,17 +134,19 @@ class TankmenVoiceoverPresenter(ViewComponent[TankmenVoiceoverViewModel]):
         model.setCount(count)
         model.setSkills(skillsArray)
         model.setHasVoiceover(self.__battlePass.isVoicedTankman(groupName))
-        self.__fillTankmenStateForModel(model, tankmanInfo, count)
+        self.__fillTankmenStateForModel(model, tankman, tankmanInfo, count)
         self.__fillTankmenProgressionInfo(model, tankmanInfo)
 
-    def __fillTankmenStateForModel(self, model, tankmanInfo, count):
+    def __fillTankmenStateForModel(self, model, tankman, tankmanInfo, count):
+        receivedCount = getReceivedTankmenCount(tankman)
+        availableCount = count - receivedCount
         state = TankmanStates.UNAVAILABLE
         source = tankmanInfo.get('source', '')
         if source == BattlePassTankmenSource.SHOP:
-            state = TankmanStates.IN_SHOP
+            state = self.__getStateForShopTankmanModel(count, availableCount)
         if source == BattlePassTankmenSource.PROGRESSION:
-            state = self.__getStateForProgressionTankmanModel(tankmanInfo.get('chapterId'))
-        model.setAvailableCount(count)
+            state = self.__getStateForProgressionTankmanModel(source, tankmanInfo.get('chapterId'), receivedCount)
+        model.setAvailableCount(availableCount)
         model.setState(state)
 
     def __fillTankmenProgressionInfo(self, model, tankmanInfo):
@@ -154,7 +156,16 @@ class TankmenVoiceoverPresenter(ViewComponent[TankmenVoiceoverViewModel]):
             model.setChapterID(chapterID)
             model.setProgressionLevel(level)
 
-    def __getStateForProgressionTankmanModel(self, chapterID):
+    def __getStateForShopTankmanModel(self, count, availableCount):
+        if availableCount <= 0:
+            return TankmanStates.RECEIVED
+        if availableCount == count:
+            return TankmanStates.IN_SHOP
+        return TankmanStates.NOT_FULL
+
+    def __getStateForProgressionTankmanModel(self, source, chapterID, receivedCount):
+        if receivedCount:
+            return TankmanStates.RECEIVED
         if self.__battlePass.isActive() and chapterID in self.__battlePass.getChapterIDs():
             return TankmanStates.PROGRESSION
         return TankmanStates.UNAVAILABLE

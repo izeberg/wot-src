@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>nodes_01</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>HP_gunJoint</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.000030 0.430993 1.571774</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Fire_1</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.150000 0.532453 -2.300000</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Track_Exhaus_1</identifier>
+				<transform>
+					<row0>0.072632 0.000000 0.997359</row0>
+					<row1>-0.048911 0.998797 0.003562</row1>
+					<row2>-0.996159 -0.049040 0.072544</row2>
+					<row3>-1.047310 0.067177 -2.034835</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Track_Exhaus_2</identifier>
+				<transform>
+					<row0>0.072632 0.000000 0.997359</row0>
+					<row1>-0.014225 -0.999898 0.001036</row1>
+					<row2>0.997257 -0.014263 -0.072624</row2>
+					<row3>1.047420 0.067177 -2.034835</row3>
+				</transform>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<stream>colour</stream>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_equipment_02</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<property>
+						diffuseMap
+						<Texture>vehicles/american/A170_M_VII_Y/_skins/A170_M_VII_Y_FCC_3Dst/M_VII_Y_FCC_3Dst_equipment_02_AM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/american/A170_M_VII_Y/_skins/A170_M_VII_Y_FCC_3Dst/M_VII_Y_FCC_3Dst_equipment_02_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/american/A170_M_VII_Y/_skins/A170_M_VII_Y_FCC_3Dst/M_VII_Y_FCC_3Dst_equipment_02_ANM.dds</Texture>
+					</property>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						alphaReference
+						<Int>128</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_enableTransmission
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_vertexAnimationParams
+						<Vector4>0.005000 0.020000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_vertexColorMode
+						<Int>1</Int>
+					</property>
+				</material>
+				<groupOrigin>0.478804 0.923539 -1.368018</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>tank_equipment_01</identifier>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						alphaReference
+						<Int>127</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/american/A170_M_VII_Y/_skins/A170_M_VII_Y_FCC_3Dst/M_VII_Y_FCC_3Dst_equipment_01_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/american/A170_M_VII_Y/_skins/A170_M_VII_Y_FCC_3Dst/M_VII_Y_FCC_3Dst_equipment_01_AO.dds</Texture>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>5.000000 2.500000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/american/A170_M_VII_Y/_skins/A170_M_VII_Y_FCC_3Dst/M_VII_Y_FCC_3Dst_equipment_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/american/A170_M_VII_Y/_skins/A170_M_VII_Y_FCC_3Dst/M_VII_Y_FCC_3Dst_equipment_01_ANM.dds</Texture>
+					</property>
+					<property>
+						g_defaultDetail
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_detailParams
+						<matrix>
+							<element>62074880</element>
+							<element>1020081200</element>
+							<element>192954368</element>
+							<element>1006632960</element>
+							<element>931160064</element>
+							<element>1006632960</element>
+							<element>466370560</element>
+							<element>1006648904</element>
+							<element>582172672</element>
+							<element>1006632960</element>
+							<element>995573760</element>
+							<element>1073741824</element>
+							<element>679493632</element>
+							<element>1006648904</element>
+							<element>679485440</element>
+							<element>1006632960</element>
+						</matrix>
+					</property>
+					<property>
+						g_glossMax
+						<Float>0.751456</Float>
+					</property>
+					<property>
+						g_glossMin
+						<Float>0.273301</Float>
+					</property>
+					<property>
+						g_tilingRatio
+						<Vector2>2.000000 1.000000</Vector2>
+					</property>
+					<property>
+						g_dirtLevel
+						<Float>0.300000</Float>
+					</property>
+				</material>
+				<groupOrigin>-0.016603 0.936922 -1.736156</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				2
+				<material>
+					<identifier>tank_turret_01</identifier>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						g_detailUVTiling
+						<Vector4>3.506850 3.506850 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_detailPowerGloss
+						<Float>
+							0.35
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_maskBias
+						<Float>
+							0.18
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/american/A170_M_VII_Y/_skins/A170_M_VII_Y_FCC_3Dst/M_VII_Y_FCC_3Dst_turret_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/american/A170_M_VII_Y/_skins/A170_M_VII_Y_FCC_3Dst/M_VII_Y_FCC_3Dst_turret_01_ANM.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/american/A170_M_VII_Y/_skins/A170_M_VII_Y_FCC_3Dst/M_VII_Y_FCC_3Dst_turret_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/american/A170_M_VII_Y/_skins/A170_M_VII_Y_FCC_3Dst/M_VII_Y_FCC_3Dst_turret_01_AO.dds</Texture>
+					</property>
+					<property>
+						g_defaultDetail
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_glossMax
+						<Float>0.729612</Float>
+					</property>
+					<property>
+						g_glossMin
+						<Float>0.280583</Float>
+					</property>
+					<property>
+						g_detailParams
+						<matrix>
+							<element>58730496</element>
+							<element>1020081200</element>
+							<element>260055040</element>
+							<element>1006632960</element>
+							<element>196290560</element>
+							<element>1006632960</element>
+							<element>431177728</element>
+							<element>1006632960</element>
+							<element>431177728</element>
+							<element>1006632960</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>343949312</element>
+							<element>1006632960</element>
+							<element>41959424</element>
+							<element>1006632960</element>
+						</matrix>
+					</property>
+					<property>
+						g_tilingRatio
+						<Vector2>2.000000 1.000000</Vector2>
+					</property>
+				</material>
+				<groupOrigin>0.006453 0.753689 -0.933923</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				3
+				<material>
+					<identifier>tank_net</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						alphaReference
+						<Int>127</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/american/A170_M_VII_Y/_skins/A170_M_VII_Y_FCC_3Dst/M_VII_Y_FCC_3Dst_net_01_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_enableTransmission
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_vertexAnimationParams
+						<Vector4>0.005000 0.005000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_vertexColorMode
+						<Int>1</Int>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/american/A170_M_VII_Y/_skins/A170_M_VII_Y_FCC_3Dst/M_VII_Y_FCC_3Dst_net_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/american/A170_M_VII_Y/_skins/A170_M_VII_Y_FCC_3Dst/M_VII_Y_FCC_3Dst_net_01_ANM.dds</Texture>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>3.506850 3.506850 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.035920 0.545270 -1.323851</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-1.736147 -0.126817 -3.869277</min>
+		<max>1.996228 1.973894 1.747985</max>
+	</boundingBox>
+	<geometrySize>2667354</geometrySize>
+</root>

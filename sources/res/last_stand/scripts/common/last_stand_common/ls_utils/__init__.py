@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import re, nations
 from items import vehicles
 from typing import TYPE_CHECKING

@@ -149,7 +149,6 @@ class ClientDomain(object):
     SUSTAINING = 'sustaining'
     VISIBILITY = 'visibility'
     VITALITY = 'vitality'
-    EQUALIZE = 'equalize'
     ALL = set()
 
 

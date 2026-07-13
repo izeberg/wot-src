@@ -1,4 +1,6 @@
+from __future__ import absolute_import
 from collections import namedtuple
+from future.utils import viewitems
 import BigWorld
 from ItemRestore import RESTORE_VEHICLE_TYPE
 from gui.shared.utils.requesters.abstract import AbstractSyncDataRequester
@@ -58,12 +60,12 @@ class RecycleBinRequester(AbstractSyncDataRequester, IRecycleBinRequester):
             return
 
     def getVehiclesIntCDs(self):
-        return self.vehiclesBuffer.keys()
+        return list(self.vehiclesBuffer)
 
     def getTankmen(self, maxDuration):
         filteredBuffer = {}
         tankmenBuffer = self.recycleBin.get('tankmen', {}).get('buffer', {})
-        for tankmanId, (strCD, dismissedAt) in tankmenBuffer.iteritems():
+        for tankmanId, (strCD, dismissedAt) in viewitems(tankmenBuffer):
             if time_utils.getTimeDeltaTillNow(dismissedAt) < maxDuration:
                 filteredBuffer[tankmanId] = (
                  strCD, dismissedAt)

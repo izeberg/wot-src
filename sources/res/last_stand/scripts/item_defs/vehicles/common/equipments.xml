@@ -44,8 +44,8 @@
 		</vehicleFilter>
 		<script>
 			last_stand_common.items.ls_artefacts.LSEquipment
-			<durationSeconds>5</durationSeconds>
-			<cooldownSeconds>7</cooldownSeconds>
+			<durationSeconds>6</durationSeconds>
+			<cooldownSeconds>3</cooldownSeconds>
 			<reuseCount>-1</reuseCount>
 			<usageCost>25</usageCost>
 			<dynComponentsGroups>LS_nitro</dynComponentsGroups>
@@ -53,8 +53,8 @@
 			<variants>
 				<variant>
 					<id>hasHydraulicChassis</id>
-					<cooldownSeconds>7</cooldownSeconds>
-					<durationSeconds>5</durationSeconds>
+					<cooldownSeconds>3</cooldownSeconds>
+					<durationSeconds>6</durationSeconds>
 					<usageCost>25</usageCost>
 					<equipmentItem>LS_nitro</equipmentItem>
 					<dynComponentsGroups>LS_nitro_siege</dynComponentsGroups>
@@ -137,7 +137,7 @@
 		<script>
 			last_stand_common.items.ls_artefacts.LSEquipment
 			<cooldownSeconds>3</cooldownSeconds>
-			<durationSeconds>7</durationSeconds>
+			<durationSeconds>10</durationSeconds>
 			<reuseCount>-1</reuseCount>
 			<usageCost>50</usageCost>
 			<dynComponentsGroups>LS_damageShield</dynComponentsGroups>

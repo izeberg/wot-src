@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from gui.impl import backport
 from gui.impl.gen import R
@@ -193,6 +194,9 @@ class TankmanSkill(_SkillData, _SkillPresenter):
         if not isinstance(other, TankmanSkill):
             return False
         return self.name == other.name
+
+    def __hash__(self):
+        return hash(self.name)
 
 
 def getIsSkillEnable(skillName, roles):

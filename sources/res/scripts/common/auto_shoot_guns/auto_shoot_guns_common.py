@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from constants import SERVER_TICK_LENGTH
 DISCRETE_SHOOTING_THRESHOLD = 0.25
 BURST_VERIFYING_DELTA = 0.0

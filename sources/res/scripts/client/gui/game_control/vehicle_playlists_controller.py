@@ -1,4 +1,7 @@
-import json, logging, os, uuid, typing, Event
+from __future__ import absolute_import
+import json, logging, os, uuid, typing
+from future.utils import iteritems
+import Event
 from PlayerEvents import g_playerEvents
 from gui.shared.utils import getPlayerDatabaseID
 from helpers.local_cache import FileLocalCache
@@ -149,7 +152,7 @@ class VehiclePlaylistsController(IVehiclePlaylistsController):
 
     def iterPlaylists(self):
         if self.isEnabled and self.__cache:
-            for plID, pStrData in self.__cache.data.iteritems():
+            for plID, pStrData in iteritems(self.__cache.data):
                 yield (
                  plID, pStrData)
 

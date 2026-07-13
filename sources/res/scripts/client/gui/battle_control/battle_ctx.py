@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, Settings
 from gui.battle_control.arena_info import player_format
 from gui.impl import backport

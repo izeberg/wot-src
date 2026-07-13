@@ -1,4 +1,4 @@
-import BigWorld
+import BigWorld, CGF
 from aih_constants import CTRL_MODE_NAME
 from wotdecorators import noexcept
 
@@ -20,14 +20,15 @@ class InBattleUpgrades(BigWorld.DynamicScriptComponent):
     def onVehicleUpgraded(self, newVehCompactDescr, newVehOutfitCompactDescr):
         vehicle = self.entity
         vehicle.isUpgrading = True
-        if vehicle.entityGameObject.findComponentByType(UpgradeInProgressComponent):
-            vehicle.entityGameObject.removeComponentByType(UpgradeInProgressComponent)
-        vehicle.entityGameObject.createComponent(UpgradeInProgressComponent)
+        queue = CGF.CommandQueue(vehicle.entityGameObject.spaceID)
+        if vehicle.entityGameObject.hasComponent(UpgradeInProgressComponent):
+            queue.removeComponent(vehicle.entityGameObject, UpgradeInProgressComponent)
+        queue.createComponent(vehicle.entityGameObject, UpgradeInProgressComponent)
         self.__onVehicleUpgraded(vehicle, newVehCompactDescr, newVehOutfitCompactDescr)
 
         def removeUpgrageInProgressComponent():
             if vehicle and vehicle.entityGameObject:
-                vehicle.entityGameObject.removeComponentByType(UpgradeInProgressComponent)
+                vehicle.entityGameObject.removeComponent(UpgradeInProgressComponent)
 
         BigWorld.callback(0, removeUpgrageInProgressComponent)
         vehicle.isUpgrading = False

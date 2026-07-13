@@ -682,22 +682,15 @@
 				</params>
 			</block>
 			<block>
-				<class>SetVariable</class>
-				<id>SetVariable_58</id>
-				<buddy>Variable_50</buddy>
+				<class>Macro</class>
+				<id>Macro_13</id>
 				<params>
 					<param>
-						BoolT
-						<name>Variable Type</name>
-						<type>TypeT</type>
+						ResolveEffectSize
+						<name>Macro Name</name>
+						<type>StringT</type>
 					</param>
 				</params>
-				<slots>
-					<slot>
-						<name>value</name>
-						<const>\true\</const>
-					</slot>
-				</slots>
 			</block>
 			<block>
 				<class>SetVariable</class>
@@ -718,15 +711,26 @@
 				</slots>
 			</block>
 			<block>
-				<class>Macro</class>
-				<id>Macro_13</id>
+				<class>SetVariable</class>
+				<id>SetVariable_58</id>
+				<buddy>Variable_50</buddy>
 				<params>
 					<param>
-						ResolveEffectSize
-						<name>Macro Name</name>
-						<type>StringT</type>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
 					</param>
 				</params>
+				<slots>
+					<slot>
+						<name>value</name>
+						<const>\true\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_43</id>
 			</block>
 			<block>
 				<class>SetVariable</class>
@@ -747,21 +751,8 @@
 				</slots>
 			</block>
 			<block>
-				<class>Delay</class>
-				<id>Delay_1</id>
-				<params>
-					<param>
-						BoolT
-						<name>Value Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>stack</name>
-						<const>\false\</const>
-					</slot>
-				</slots>
+				<class>If</class>
+				<id>If_42</id>
 			</block>
 			<block>
 				<class>ComponentMethod</class>
@@ -777,6 +768,23 @@
 					<slot>
 						<name>arg#1</name>
 						<const>\0.000000\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>Delay</class>
+				<id>Delay_1</id>
+				<params>
+					<param>
+						BoolT
+						<name>Value Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>stack</name>
+						<const>\false\</const>
 					</slot>
 				</slots>
 			</block>
@@ -799,12 +807,16 @@
 				</slots>
 			</block>
 			<block>
+				<class>IsValid</class>
+				<id>IsValid_2</id>
+			</block>
+			<block>
 				<class>GetVariable</class>
-				<id>GetVariable_155</id>
-				<buddy>Variable_45</buddy>
+				<id>GetVariable_154</id>
+				<buddy>Variable_47</buddy>
 				<params>
 					<param>
-						GameObjectT
+						StringT
 						<name>Variable Type</name>
 						<type>TypeT</type>
 					</param>
@@ -841,12 +853,23 @@
 				</slots>
 			</block>
 			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_154</id>
-				<buddy>Variable_47</buddy>
+				<class>HasComponent</class>
+				<id>HasComponent_2</id>
 				<params>
 					<param>
-						StringT
+						Sequence
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_167</id>
+				<buddy>Variable_45</buddy>
+				<params>
+					<param>
+						GameObjectT
 						<name>Variable Type</name>
 						<type>TypeT</type>
 					</param>
@@ -875,12 +898,80 @@
 				</slots>
 			</block>
 			<block>
+				<class>If</class>
+				<id>If_45</id>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_44</id>
+			</block>
+			<block>
+				<class>ComponentMethod</class>
+				<id>ComponentMethod_1</id>
+				<params>
+					<param>
+						Sequence.requestLayerChangeByName
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>arg#0</name>
+						<const>\opened\</const>
+					</slot>
+					<slot>
+						<name>arg#1</name>
+						<const>\0.000000\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
 				<class>GetVariable</class>
 				<id>GetVariable_157</id>
 				<buddy>Variable_48</buddy>
 				<params>
 					<param>
 						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>IsValid</class>
+				<id>IsValid_3</id>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_171</id>
+				<buddy>Variable_45</buddy>
+				<params>
+					<param>
+						GameObjectT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>HasComponent</class>
+				<id>HasComponent_3</id>
+				<params>
+					<param>
+						Sequence
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_168</id>
+				<buddy>Variable_45</buddy>
+				<params>
+					<param>
+						GameObjectT
 						<name>Variable Type</name>
 						<type>TypeT</type>
 					</param>
@@ -906,6 +997,14 @@
 				<id>If_39</id>
 			</block>
 			<block>
+				<class>If</class>
+				<id>If_47</id>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_46</id>
+			</block>
+			<block>
 				<class>SetVariable</class>
 				<id>SetVariable_61</id>
 				<buddy>Variable_51</buddy>
@@ -920,6 +1019,27 @@
 					<slot>
 						<name>value</name>
 						<const>\false\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>ComponentMethod</class>
+				<id>ComponentMethod_3</id>
+				<params>
+					<param>
+						Sequence.requestLayerChangeByName
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>arg#0</name>
+						<const>\closed\</const>
+					</slot>
+					<slot>
+						<name>arg#1</name>
+						<const>\0.000000\</const>
 					</slot>
 				</slots>
 			</block>
@@ -946,6 +1066,10 @@
 						<type>TypeT</type>
 					</param>
 				</params>
+			</block>
+			<block>
+				<class>IsValid</class>
+				<id>IsValid_4</id>
 			</block>
 			<block>
 				<class>GetVariable</class>
@@ -988,6 +1112,41 @@
 			</block>
 			<block>
 				<class>GetVariable</class>
+				<id>GetVariable_170</id>
+				<buddy>Variable_45</buddy>
+				<params>
+					<param>
+						GameObjectT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_169</id>
+				<buddy>Variable_45</buddy>
+				<params>
+					<param>
+						GameObjectT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>HasComponent</class>
+				<id>HasComponent_4</id>
+				<params>
+					<param>
+						Sequence
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>GetVariable</class>
 				<id>GetVariable_165</id>
 				<buddy>Variable_48</buddy>
 				<params>
@@ -1001,6 +1160,18 @@
 			<block>
 				<class>Not</class>
 				<id>Not_2</id>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_172</id>
+				<buddy>Variable_45</buddy>
+				<params>
+					<param>
+						GameObjectT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
 			</block>
 			<block>
 				<class>If</class>
@@ -1023,72 +1194,6 @@
 				<params>
 					<param>
 						FloatT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-			</block>
-			<block>
-				<class>ComponentMethod</class>
-				<id>ComponentMethod_1</id>
-				<params>
-					<param>
-						Sequence.requestLayerChangeByName
-						<name>Component Type</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>arg#0</name>
-						<const>\opened\</const>
-					</slot>
-					<slot>
-						<name>arg#1</name>
-						<const>\0.000000\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_150</id>
-				<buddy>Variable_45</buddy>
-				<params>
-					<param>
-						GameObjectT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-			</block>
-			<block>
-				<class>ComponentMethod</class>
-				<id>ComponentMethod_3</id>
-				<params>
-					<param>
-						Sequence.requestLayerChangeByName
-						<name>Component Type</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>arg#0</name>
-						<const>\closed\</const>
-					</slot>
-					<slot>
-						<name>arg#1</name>
-						<const>\0.000000\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_151</id>
-				<buddy>Variable_45</buddy>
-				<params>
-					<param>
-						GameObjectT
 						<name>Variable Type</name>
 						<type>TypeT</type>
 					</param>
@@ -1128,6 +1233,14 @@
 						<type>TypeT</type>
 					</param>
 				</params>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_41</id>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_40</id>
 			</block>
 			<block>
 				<class>SetVariable</class>
@@ -1343,6 +1456,17 @@
 				</slots>
 			</block>
 			<block>
+				<class>Sequence</class>
+				<id>Sequence_10</id>
+				<params>
+					<param>
+						2
+						<name>Output Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
+			</block>
+			<block>
 				<class>ComponentMethod</class>
 				<id>ComponentMethod_2</id>
 				<params>
@@ -1364,6 +1488,33 @@
 				</slots>
 			</block>
 			<block>
+				<class>IsValid</class>
+				<id>IsValid_1</id>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_173</id>
+				<buddy>Variable_45</buddy>
+				<params>
+					<param>
+						GameObjectT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>HasComponent</class>
+				<id>HasComponent_1</id>
+				<params>
+					<param>
+						Sequence
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+			</block>
+			<block>
 				<class>GetVariable</class>
 				<id>GetVariable_149</id>
 				<buddy>Variable_45</buddy>
@@ -1383,17 +1534,6 @@
 						StopAndResetGainSound
 						<name>Macro Name</name>
 						<type>StringT</type>
-					</param>
-				</params>
-			</block>
-			<block>
-				<class>Sequence</class>
-				<id>Sequence_10</id>
-				<params>
-					<param>
-						2
-						<name>Output Count</name>
-						<type>IntT</type>
 					</param>
 				</params>
 			</block>
@@ -1803,10 +1943,10 @@
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>ComponentMethod_4</from>
-				<input>input</input>
-				<to>SetVariable_58</to>
-				<output>out</output>
+				<from>OnDiscreteShotDone_1</from>
+				<input>in</input>
+				<to>Macro_13</to>
+				<output>onDiscreteShotDone</output>
 			</connection>
 			<connection>
 				<from>Delay_1</from>
@@ -1815,16 +1955,58 @@
 				<output>out</output>
 			</connection>
 			<connection>
-				<from>OnDiscreteShotDone_1</from>
-				<input>in</input>
-				<to>Macro_13</to>
-				<output>onDiscreteShotDone</output>
+				<from>ComponentMethod_4</from>
+				<input>input</input>
+				<to>SetVariable_58</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>If_42</from>
+				<input>input</input>
+				<to>If_43</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>HasComponent_2</from>
+				<input>value</input>
+				<to>If_43</to>
+				<output>res</output>
 			</connection>
 			<connection>
 				<from>Macro_13</from>
 				<input>input</input>
 				<to>SetVariable_51</to>
 				<output>out</output>
+			</connection>
+			<connection>
+				<from>SetVariable_51</from>
+				<input>input</input>
+				<to>If_42</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>IsValid_2</from>
+				<input>value</input>
+				<to>If_42</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>If_43</from>
+				<input>in</input>
+				<to>ComponentMethod_4</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>GetVariable_172</from>
+				<input>gameObject</input>
+				<to>ComponentMethod_4</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>GetVariable_154</from>
+				<input>arg#0</input>
+				<to>ComponentMethod_4</to>
+				<output>value</output>
 			</connection>
 			<connection>
 				<from>SetVariable_58</from>
@@ -1839,34 +2021,28 @@
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>SetVariable_51</from>
-				<input>in</input>
-				<to>ComponentMethod_4</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>GetVariable_155</from>
-				<input>gameObject</input>
-				<to>ComponentMethod_4</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>GetVariable_154</from>
-				<input>arg#0</input>
-				<to>ComponentMethod_4</to>
-				<output>value</output>
-			</connection>
-			<connection>
 				<from>SetVariable_52</from>
 				<input>input</input>
 				<to>SetVariable_59</to>
 				<output>out</output>
 			</connection>
 			<connection>
+				<from>GetVariable_167</from>
+				<input>gameObject</input>
+				<to>IsValid_2</to>
+				<output>value</output>
+			</connection>
+			<connection>
 				<from>SetVariable_59</from>
 				<input>input</input>
 				<to>SetVariable_62</to>
 				<output>out</output>
+			</connection>
+			<connection>
+				<from>GetVariable_167</from>
+				<input>gameObject</input>
+				<to>HasComponent_2</to>
+				<output>value</output>
 			</connection>
 			<connection>
 				<from>SwitchOnEnum_2</from>
@@ -1897,6 +2073,54 @@
 				<input>input</input>
 				<to>SetVariable_60</to>
 				<output>out</output>
+			</connection>
+			<connection>
+				<from>If_44</from>
+				<input>input</input>
+				<to>If_45</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>HasComponent_3</from>
+				<input>value</input>
+				<to>If_45</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>If_34</from>
+				<input>input</input>
+				<to>If_44</to>
+				<output>false</output>
+			</connection>
+			<connection>
+				<from>IsValid_3</from>
+				<input>value</input>
+				<to>If_44</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>If_45</from>
+				<input>in</input>
+				<to>ComponentMethod_1</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>GetVariable_171</from>
+				<input>gameObject</input>
+				<to>ComponentMethod_1</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>GetVariable_168</from>
+				<input>gameObject</input>
+				<to>IsValid_3</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>GetVariable_168</from>
+				<input>gameObject</input>
+				<to>HasComponent_3</to>
+				<output>value</output>
 			</connection>
 			<connection>
 				<from>Sequence_2</from>
@@ -1935,10 +2159,58 @@
 				<output>value</output>
 			</connection>
 			<connection>
+				<from>If_46</from>
+				<input>input</input>
+				<to>If_47</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>HasComponent_4</from>
+				<input>value</input>
+				<to>If_47</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>If_39</from>
+				<input>input</input>
+				<to>If_46</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>If_38</from>
+				<input>input</input>
+				<to>If_46</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>IsValid_4</from>
+				<input>value</input>
+				<to>If_46</to>
+				<output>res</output>
+			</connection>
+			<connection>
 				<from>ComponentMethod_3</from>
 				<input>input</input>
 				<to>SetVariable_61</to>
 				<output>out</output>
+			</connection>
+			<connection>
+				<from>If_47</from>
+				<input>in</input>
+				<to>ComponentMethod_3</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>GetVariable_170</from>
+				<input>gameObject</input>
+				<to>ComponentMethod_3</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>GetVariable_169</from>
+				<input>gameObject</input>
+				<to>IsValid_4</to>
+				<output>value</output>
 			</connection>
 			<connection>
 				<from>SwitchOnEnum_2</from>
@@ -1965,6 +2237,12 @@
 				<output>res</output>
 			</connection>
 			<connection>
+				<from>GetVariable_169</from>
+				<input>gameObject</input>
+				<to>HasComponent_4</to>
+				<output>value</output>
+			</connection>
+			<connection>
 				<from>GetVariable_165</from>
 				<input>a</input>
 				<to>Not_2</to>
@@ -1986,36 +2264,6 @@
 				<from>GetVariable_156</from>
 				<input>a</input>
 				<to>CompareFloats_5</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>If_34</from>
-				<input>in</input>
-				<to>ComponentMethod_1</to>
-				<output>false</output>
-			</connection>
-			<connection>
-				<from>GetVariable_150</from>
-				<input>gameObject</input>
-				<to>ComponentMethod_1</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>If_38</from>
-				<input>in</input>
-				<to>ComponentMethod_3</to>
-				<output>true</output>
-			</connection>
-			<connection>
-				<from>If_39</from>
-				<input>in</input>
-				<to>ComponentMethod_3</to>
-				<output>true</output>
-			</connection>
-			<connection>
-				<from>GetVariable_151</from>
-				<input>gameObject</input>
-				<to>ComponentMethod_3</to>
 				<output>value</output>
 			</connection>
 			<connection>
@@ -2047,6 +2295,30 @@
 				<input>gameObject</input>
 				<to>GameObjectToVehicle_1</to>
 				<output>value</output>
+			</connection>
+			<connection>
+				<from>If_40</from>
+				<input>input</input>
+				<to>If_41</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>HasComponent_1</from>
+				<input>value</input>
+				<to>If_41</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>Sequence_10</from>
+				<input>input</input>
+				<to>If_40</to>
+				<output>o0</output>
+			</connection>
+			<connection>
+				<from>IsValid_1</from>
+				<input>value</input>
+				<to>If_40</to>
+				<output>res</output>
 			</connection>
 			<connection>
 				<from>StartScript_1</from>
@@ -2271,15 +2543,33 @@
 				<output>false</output>
 			</connection>
 			<connection>
-				<from>Sequence_10</from>
+				<from>OnOverheatStacksState_1</from>
+				<input>input</input>
+				<to>Sequence_10</to>
+				<output>unsubscribeOut</output>
+			</connection>
+			<connection>
+				<from>If_41</from>
 				<input>in</input>
 				<to>ComponentMethod_2</to>
-				<output>o0</output>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>GetVariable_173</from>
+				<input>gameObject</input>
+				<to>ComponentMethod_2</to>
+				<output>value</output>
 			</connection>
 			<connection>
 				<from>GetVariable_149</from>
 				<input>gameObject</input>
-				<to>ComponentMethod_2</to>
+				<to>IsValid_1</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>GetVariable_149</from>
+				<input>gameObject</input>
+				<to>HasComponent_1</to>
 				<output>value</output>
 			</connection>
 			<connection>
@@ -2287,12 +2577,6 @@
 				<input>in</input>
 				<to>Macro_16</to>
 				<output>out</output>
-			</connection>
-			<connection>
-				<from>OnOverheatStacksState_1</from>
-				<input>input</input>
-				<to>Sequence_10</to>
-				<output>unsubscribeOut</output>
 			</connection>
 			<connection>
 				<from>Sequence_10</from>

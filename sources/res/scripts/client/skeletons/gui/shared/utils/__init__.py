@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from typing import TYPE_CHECKING, Optional, Dict
 from skeletons.gui.shared.utils import requesters
 if TYPE_CHECKING:
@@ -94,6 +95,10 @@ class IItemsRequester(requesters.IRequester):
         raise NotImplementedError
 
     @property
+    def challenges(self):
+        raise NotImplementedError
+
+    @property
     def tankmenStatsCache(self):
         raise NotImplementedError
 
@@ -142,7 +147,7 @@ class IItemsRequester(requesters.IRequester):
     def getDismissedTankmen(self, criteria=None):
         raise NotImplementedError
 
-    def removeUnsuitableTankmen(self, tankmen, criteria=None):
+    def removeUnsuitableTankmen(self, allTankmen, criteria=None):
         raise NotImplementedError
 
     def tankmenInBarracksCount(self):

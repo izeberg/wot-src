@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld, game_loading_bindings
 from adisp import adisp_process
 from debug_utils import LOG_DEBUG, LOG_ERROR
@@ -176,11 +177,12 @@ class DisconnectFromPeriphery(Action):
         app = self.appLoader.getApp()
         if app:
             from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
-            view = app.containerManager.getView(WindowLayer.VIEW)
-            if view and view.settings.alias == VIEW_ALIAS.LOGIN and view.isCreated() and self.connectionMgr.isDisconnected():
-                LOG_DEBUG('Disconnect action. Player came to login')
-                self._completed = True
-                self._running = False
+            if app.containerManager:
+                view = app.containerManager.getView(WindowLayer.VIEW)
+                if view and view.settings.alias == VIEW_ALIAS.LOGIN and view.isCreated() and self.connectionMgr.isDisconnected():
+                    LOG_DEBUG('Disconnect action. Player came to login')
+                    self._completed = True
+                    self._running = False
         return self._running
 
 

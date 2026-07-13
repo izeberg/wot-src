@@ -1,4 +1,7 @@
-import logging, BigWorld, CGF, GenericComponents, Math, typing, BattleReplay, constants
+from __future__ import absolute_import
+import logging, typing
+from future.utils import iteritems
+import BigWorld, CGF, GenericComponents, Math, BattleReplay, constants
 from Event import Event, EventManager
 from constants import ARENA_PERIOD
 from gui.battle_control import avatar_getter
@@ -32,9 +35,8 @@ class _SceneController(object):
 
     def updateSpawnPoint(self, vehicleID, newStatus):
         if vehicleID in self.__spawnPoints:
-            areaComponent = self.__spawnPoints[vehicleID].findComponentByType(GenericComponents.TerrainSelectedAreaComponent)
-            newColor = self.__getAreaColor(vehicleID, newStatus)
-            areaComponent.setColor(newColor)
+            areaComponent = self.__spawnPoints[vehicleID].findWrite(GenericComponents.TerrainSelectedAreaComponent)
+            areaComponent.setColor(self.__getAreaColor(vehicleID, newStatus))
         elif vehicleID in self.__pendingSpawnPoints:
             self.__pendingSpawnPoints[vehicleID]['status'] = newStatus
         else:
@@ -42,7 +44,7 @@ class _SceneController(object):
 
     def clear(self):
         for go in self.__spawnPoints.values():
-            CGF.removeGameObject(go)
+            go.destroy()
 
         self.__spawnPoints.clear()
         self.__pendingSpawnPoints.clear()
@@ -58,10 +60,11 @@ class _SceneController(object):
         visualPath = self.__config.getVisualPath(positionNumber)
         if not visualPath:
             return
-        self.__spawnPoints[vehicle.id] = newGO = CGF.GameObject(vehicle.spaceID)
-        newGO.createComponent(GenericComponents.TransformComponent, Math.Matrix(vehicle.matrix))
-        newGO.createComponent(GenericComponents.TerrainSelectedAreaComponent, visualPath, self.__config.size, self.__config.overTerrainHeight, self.__getAreaColor(vehicle.id, status))
-        newGO.activate()
+        queue = CGF.CommandQueue(vehicle.spaceID)
+        self.__spawnPoints[vehicle.id] = newGO = queue.createGameObject()
+        queue.createComponent(newGO, CGF.TransformComponent, Math.Matrix(vehicle.matrix))
+        queue.createComponent(newGO, GenericComponents.TerrainSelectedAreaComponent, visualPath, self.__config.size, self.__config.overTerrainHeight, self.__getAreaColor(vehicle.id, status))
+        queue.activateGameObject(newGO)
 
     def __getAreaColor(self, vehicleID, status):
         isConfirmed = status == constants.VehicleSelectionPlayerStatus.CONFIRMED
@@ -162,7 +165,7 @@ class PrebattleSetupController(IPrebattleSetupController):
         if self.__currentArenaPeriod >= ARENA_PERIOD.BATTLE:
             return
         confirmationStatuses = avatar_getter.getArena().teamInfo.TeamInfoInBattleVehicleSwitch.statuses or {}
-        for vehicleId, position in spawnPoints.iteritems():
+        for vehicleId, position in iteritems(spawnPoints):
             status = confirmationStatuses.get(vehicleId, constants.VehicleSelectionPlayerStatus.NOT_CONFIRMED)
             self.__sceneCtrl.createSpawnPoint(vehicleId, position, status)
 
@@ -170,7 +173,7 @@ class PrebattleSetupController(IPrebattleSetupController):
         if self.__currentArenaPeriod >= ARENA_PERIOD.BATTLE:
             return
         self.onTeammateSelectionStatuses(newStatuses)
-        for vehID, status in newStatuses.iteritems():
+        for vehID, status in iteritems(newStatuses):
             self.__sceneCtrl.updateSpawnPoint(vehID, status)
 
     def getCurrentGUIVehicle(self):

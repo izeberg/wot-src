@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from enum import Enum
 RS_PDATA_KEY = 'renewableSub'
 RS_EXPIRATION_TIME = 'expiry'

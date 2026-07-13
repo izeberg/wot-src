@@ -1,4 +1,7 @@
-import math, BigWorld, GUI
+from __future__ import absolute_import
+import math
+from future.utils import lmap
+import BigWorld, GUI
 from shared_utils import findFirst
 from gui.shared.utils.graphics import getSuitableVideoModes, getSuitableWindowSizes, VideoMode, WindowSize, BorderlessSize
 
@@ -16,7 +19,7 @@ class MonitorSettings(object):
 
     @property
     def currentWindowSize(self):
-        return WindowSize(*map(int, BigWorld.wg_getCurrentResolution(BigWorld.WindowModeWindowed)))
+        return WindowSize(*lmap(int, BigWorld.wg_getCurrentResolution(BigWorld.WindowModeWindowed)))
 
     @property
     def borderlessSizes(self):
@@ -35,7 +38,7 @@ class MonitorSettings(object):
     @property
     def currentBorderlessSize(self):
         if self.windowMode == BigWorld.WindowModeBorderless:
-            return BorderlessSize(*map(int, BigWorld.getBorderlessParameters()))
+            return BorderlessSize(*lmap(int, BigWorld.getBorderlessParameters()))
         return VideoMode(*BigWorld.listBorderlessResolutionsAllMonitors()[self.currentMonitor][0])
 
     @property

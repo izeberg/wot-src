@@ -1,6 +1,7 @@
-import copy
+from __future__ import absolute_import
+import copy, typing
+from builtins import range
 from itertools import chain
-import typing
 from future.utils import itervalues
 from debug_utils import LOG_CURRENT_EXCEPTION, LOG_ERROR, LOG_WARNING
 from gui import GUI_SETTINGS
@@ -168,11 +169,11 @@ def get(item, vehicleDescr=None):
         return _getParamsProvider(item, vehicleDescr).getAllDataDict()
     except Exception:
         LOG_CURRENT_EXCEPTION()
-        return dict()
+        return {}
 
 
 def getParameters(item, vehicleDescr=None):
-    return get(item, vehicleDescr).get('parameters', dict())
+    return get(item, vehicleDescr).get('parameters', {})
 
 
 def getCompatibles(item, vehicleDescr=None):
@@ -438,7 +439,7 @@ def __hasEffect(groupName, comparator, targetState):
         if type(state[0]) is not tuple:
             state = (
              state,)
-        if any([ status == targetState for status, _ in state ]):
+        if any(status == targetState for status, _ in state):
             return True
 
     return False
@@ -573,7 +574,7 @@ class VehParamsBaseGenerator(object):
                             result.append(lineSeparator)
                         hasExtraParams = True
                     result.append(formattedParam)
-                    for _ in xrange(nSlashCount):
+                    for _ in range(nSlashCount):
                         block = self._makeExtraAdditionalBlock(extraParamName, groupName, formattedParam['tooltip'])
                         if block is not None:
                             result.append(block)
@@ -589,7 +590,7 @@ class VehParamsBaseGenerator(object):
             stateHighlight = _STATE_TO_HIGHLIGHT[state[0]]
             if highlight == HANGAR_ALIASES.VEH_PARAM_RENDERER_HIGHLIGHT_NONE:
                 highlight = stateHighlight
-            elif stateHighlight != HANGAR_ALIASES.VEH_PARAM_RENDERER_HIGHLIGHT_NONE and highlight != stateHighlight:
+            elif stateHighlight not in (HANGAR_ALIASES.VEH_PARAM_RENDERER_HIGHLIGHT_NONE, highlight):
                 highlight = HANGAR_ALIASES.VEH_PARAM_RENDERER_HIGHLIGHT_MIXED
 
         return highlight

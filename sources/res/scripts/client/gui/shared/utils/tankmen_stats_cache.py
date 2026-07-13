@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from future.utils import viewvalues
 from AccountCommands import LOCK_REASON
 from debug_utils import LOG_DEBUG_DEV
 from gui.shared.gui_items import GUI_ITEM_TYPE
@@ -184,7 +186,7 @@ class TankmenStatsCache(object):
         self._needUpdate = False
         self._reset()
         tankmen = self.itemsCache.items.getInventoryTankmenRO()
-        for tankman in tankmen.itervalues():
+        for tankman in viewvalues(tankmen):
             tmanCtx = _TankmanContext(self.itemsCache, tankman)
             self._resetFillComponent.checkTankman(tmanCtx)
             self._junkComponent.checkTankman(tmanCtx)

@@ -1,40 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<duration>1.100000</duration>
+	<duration>1.966667</duration>
 	<sequenceObject>
 		<name>Root</name>
 		<type>model</type>
 		<resource/>
-	</sequenceObject>
-	<sequenceObject>
-		<name>glow</name>
-		<type>particle</type>
-		<resource>particles/Environment/last_stand/enemies/obelisk_hit_damage_01.eff</resource>
-		<track>
-			<name>emission</name>
-			<type>float</type>
-			<frame>
-				<startTime>0.000000</startTime>
-				<value>0.000000</value>
-				<inTangent>6.000000</inTangent>
-				<outTangent>6.000000</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>0.166667</startTime>
-				<value>1.000000</value>
-				<inTangent>2.464280</inTangent>
-				<outTangent>2.464280</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>1.100000</startTime>
-				<value>0.000000</value>
-				<inTangent>-1.071429</inTangent>
-				<outTangent>-1.071429</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-		</track>
 	</sequenceObject>
 	<sequenceObject>
 		<name>Light</name>
@@ -45,7 +15,7 @@
 			<type>float</type>
 			<frame>
 				<startTime>0.000000</startTime>
-				<value>35.000000</value>
+				<value>25.000000</value>
 				<inTangent>-17.647057</inTangent>
 				<outTangent>-17.647057</outTangent>
 				<tangentMode>0</tangentMode>
@@ -56,7 +26,7 @@
 			<type>float</type>
 			<frame>
 				<startTime>0.000000</startTime>
-				<value>25.000000</value>
+				<value>5.000000</value>
 				<inTangent>0.000000</inTangent>
 				<outTangent>0.000000</outTangent>
 				<tangentMode>0</tangentMode>
@@ -82,8 +52,15 @@
 			<frame>
 				<startTime>0.666667</startTime>
 				<value>0.000000</value>
-				<inTangent>-11752.969727</inTangent>
-				<outTangent>-11752.969727</outTangent>
+				<inTangent>-5876.480957</inTangent>
+				<outTangent>-5876.480957</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.966667</startTime>
+				<value>0.000000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>-0.000000</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 		</track>
@@ -117,6 +94,36 @@
 				<value>100.000000</value>
 				<inTangent>0.000000</inTangent>
 				<outTangent>0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Particle 0</name>
+		<type>particle</type>
+		<resource>particles/Environment/last_stand/enemies/obelisk_hit_damage_01.eff</resource>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>29.999998</inTangent>
+				<outTangent>29.999998</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.033333</startTime>
+				<value>1.000000</value>
+				<inTangent>29.999998</inTangent>
+				<outTangent>-1.666667</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.633333</startTime>
+				<value>0.000000</value>
+				<inTangent>-1.666667</inTangent>
+				<outTangent>-1.666667</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 		</track>

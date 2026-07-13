@@ -2689,6 +2689,12 @@ package
       
       public static const BONUSNAME_OPTIONAL_DEVICES_ASSISTANT:String = "#quests:bonusName/optional_devices_assistant";
       
+      public static const BONUSNAME_ATTACHMENTS_SET_DEFAULT:String = "#quests:bonusName/attachments_set/default";
+      
+      public static const BONUSNAME_ATTACHMENTS_SET_OCEANICSENTINEL:String = "#quests:bonusName/attachments_set/oceanicSentinel";
+      
+      public static const BONUSNAME_ATTACHMENTS_SET_CHALLENGERSBOUNTY:String = "#quests:bonusName/attachments_set/challengersBounty";
+      
       public static const ACTION_AUTO_CALENDAR:String = "#quests:action/auto/calendar";
       
       public static const ACTION_FULL_CALENDAR:String = "#quests:action/full/calendar";

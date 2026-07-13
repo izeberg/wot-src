@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A186_XM94_Shadow/normal/lod2/Hull</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/american/A186_XM94_Shadow/normal/lod3/Hull</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.543015 -0.454641 -3.039190</min>
+		<max>1.544921 0.608961 2.936356</max>
+	</visibilityBox>
+</root>

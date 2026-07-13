@@ -1,3 +1,4 @@
+from __future__ import absolute_import, print_function
 import BigWorld, ResMgr, FX, random
 from functools import partial
 import traceback, Bloom
@@ -60,7 +61,7 @@ class WeatherSystem():
             except ValueError:
                 self.skyBoxModels.append(BigWorld.Model(''))
 
-        if callback != None:
+        if callback is not None:
             callback()
         return
 
@@ -69,7 +70,7 @@ class WeatherSystem():
             BigWorld.delSkyBox(i, self.fader)
 
         self.skyBoxModels = []
-        if self.fx != None:
+        if self.fx is not None:
             self.fx.detach()
             self.fx = None
         self.loaded = False
@@ -82,7 +83,7 @@ class WeatherSystem():
             callback()
 
     def _onLoadFX(self, callback, resourceRef):
-        if self.fx != None:
+        if self.fx is not None:
             self.fx.detach()
             self.fx = None
         if self.loaded:
@@ -97,7 +98,7 @@ class WeatherSystem():
         return
 
     def _fadeOutFX(self):
-        if self.fx != None:
+        if self.fx is not None:
             return self.fx.stop()
         else:
             return 0.0
@@ -106,11 +107,11 @@ class WeatherSystem():
         curr = self.fader.value
         if fadingIn:
             if not self.loaded:
-                print "calling fadeIn on a weather system that isn't loaded.  please call prepareResources() first", self.name
+                print("calling fadeIn on a weather system that isn't loaded.  please call prepareResources() first", self.name)
                 traceback.print_stack()
                 return
             for sb in self.skyBoxModels:
-                if sb != None:
+                if sb is not None:
                     BigWorld.addSkyBox(sb, self.fader)
 
             f = self._fogAmount(self.fog[3])
@@ -151,7 +152,7 @@ class WeatherSystem():
 
     def edUnloadSkyBoxes(self):
         for sb in self.skyBoxModels:
-            if sb != None:
+            if sb is not None:
                 BigWorld.delSkyBox(sb, self.fader)
 
         return
@@ -184,13 +185,13 @@ class Weather(Listenable):
         return
 
     def toggleRandomWeather(self, force=None):
-        if force != None:
+        if force is not None:
             turningOff = not force
         else:
-            turningOff = self.randomWeatherCallback != None
+            turningOff = self.randomWeatherCallback is not None
         stateChanged = False
-        wasOn = self.randomWeatherCallback != None
-        if turningOff and self.randomWeatherCallback != None:
+        wasOn = self.randomWeatherCallback is not None
+        if turningOff and wasOn:
             BigWorld.cancelCallback(self.randomWeatherCallback)
             self.randomWeatherCallback = None
             stateChanged = wasOn
@@ -202,12 +203,12 @@ class Weather(Listenable):
         return
 
     def isWeatherRandom(self):
-        return self.randomWeatherCallback != None
+        return self.randomWeatherCallback is not None
 
     def nextWeatherSystem(self, direction, immediate=False):
         systems = self._weatherSystemsForCurrentSpace()
         idx = 0
-        if self.system != None:
+        if self.system is not None:
             for s in systems:
                 if s.name == self.system.name:
                     break
@@ -222,7 +223,7 @@ class Weather(Listenable):
         return
 
     def _randomWeather(self, initial=False):
-        if initial or self.randomWeatherCallback != None:
+        if initial or self.randomWeatherCallback is not None:
             self.randomWeatherCallback = BigWorld.callback(60.0, self._randomWeather)
             systems = self._weatherSystemsForCurrentSpace()
             ds = random.choice(systems)
@@ -270,7 +271,7 @@ class Weather(Listenable):
         self.fogController = m
 
     def summon(self, systemName, immediate=False, serverSync=False, resummon=False):
-        if self.localOverride != None:
+        if self.localOverride is not None:
             self.overridenWeather = systemName
             systemName = self.localOverride
         if not resummon and self.system and self.system.name == systemName:
@@ -306,7 +307,7 @@ class Weather(Listenable):
             return
 
     def override(self, systemName, immediate=False):
-        if systemName == None or systemName == '':
+        if systemName in (None, ''):
             self.localOverride = None
             self.summon(self.overridenWeather, immediate, serverSync=False, resummon=False)
             self.overridenWeather = None
@@ -320,7 +321,7 @@ class Weather(Listenable):
         if self.system:
             self.system.fadeIn(False, self.fadeSpeed, immediate)
             self.system = None
-        if system != None:
+        if system is not None:
             self.system = system
             self.system.fadeIn(True, self.fadeSpeed)
             self.skyBoxFogFactor = system.skyBoxFogFactor
@@ -336,7 +337,7 @@ class Weather(Listenable):
     def _onSystemSummoned(self):
         self.listeners.weather(system=self.system)
         self.summoning = False
-        if self.pendingWeatherChange != None:
+        if self.pendingWeatherChange is not None:
             self.summon(self.pendingWeatherChange)
             self.pendingWeatherChange = None
         return

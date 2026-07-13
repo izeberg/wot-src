@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing, time, logging
 from contextlib import contextmanager
 LOGGER_NAME = 'PersistentDataCache'

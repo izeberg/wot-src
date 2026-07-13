@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging
 from typing import Optional
 from gui.game_control.wotlda.loadout_model import BaseOptDeviceLoadoutModel

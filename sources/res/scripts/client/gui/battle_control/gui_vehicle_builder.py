@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.veh_post_progression.helpers import getInstalledShells, setFeatures, setDisabledSwitches, updateInvInstalled
 from helpers import dependency
 from items import vehicles

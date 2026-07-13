@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, typing, BigWorld, AccountCommands
 from gui.SystemMessages import SM_TYPE, CURRENCY_TO_SM_TYPE
 from gui.impl import backport
@@ -17,7 +18,7 @@ class BoosterProcessor(Processor):
         self.booster = booster
         self.opType = opType
 
-    def _response(self, code, callback, ctx=None, errStr=''):
+    def _response(self, code, callback, errStr='', ctx=None):
         if code < 0:
             _logger.error("Server responses an error [%s] while process %s '%s'", code2str(code), self.booster.boosterGuiType, str(self.booster))
             return callback(self._errorHandler(code, ctx=ctx, errStr=errStr))

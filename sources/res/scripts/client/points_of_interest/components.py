@@ -1,4 +1,4 @@
-import enum, typing, BigWorld, CGF
+import enum, typing
 if typing.TYPE_CHECKING:
     from points_of_interest_shared import PoiType
     from helpers.fixed_dict import StatusWithTimeInterval
@@ -72,9 +72,6 @@ class PoiCaptureBlockerStateComponent(object):
     def __init__(self, poiID, blockReasons):
         self.id = poiID
         self.blockReasons = blockReasons
-        poi = BigWorld.entities.get(poiID)
-        self.poiState = CGF.ComponentLink(poi.entityGameObject, PoiStateComponent) if poi is not None else None
-        return
 
 
 class PoiVehicleStateComponent(object):

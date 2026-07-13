@@ -50,8 +50,8 @@ class ProgressBarMixin(BattleHint):
     DEAD_ENEMY_STATUS_POSTFIX = '_dead'
     DEFAULT_ENEMY_STATUS = {'role': 'unknown', 'isDead': False}
     STATUS_SORTING_ORDER = ['boss', 'obelisk', 'alpha', 'charger', 'heavyTank', 'hunter', 'mediumTank', 'sentry',
-     'turret', 'AT-SPG', 'bomber_alpha', 'bomber', 'catcher', 'detonator', 'ripper', 'runner',
-     'lightTank', 'SPG', 'unknown']
+     'turret', 'AT-SPG', 'bastion', 'bomber_alpha', 'bomber', 'catcher', 'detonator',
+     'ripper', 'archer', 'runner', 'lightTank', 'SPG', 'unknown']
 
     def _getEnemiesInfo(self):
         if self.lsBattleGuiCtrl:

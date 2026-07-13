@@ -42,10 +42,10 @@ package net.wg.infrastructure.base.meta.impl
          super.onDispose();
       }
       
-      public function joinTrainingRequestS(param1:String) : void
+      public function joinTrainingRequestS(param1:int, param2:int) : void
       {
          App.utils.asserter.assertNotNull(this.joinTrainingRequest,"joinTrainingRequest" + Errors.CANT_NULL);
-         this.joinTrainingRequest(param1);
+         this.joinTrainingRequest(param1,param2);
       }
       
       public function createTrainingRequestS() : void

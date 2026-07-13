@@ -1,6 +1,9 @@
+from __future__ import absolute_import
+from builtins import str
+from future.utils import viewitems
 from typing import Dict, List
-import base64
 from gui.wgcg.base.contexts import CommonWebRequestCtx
+from py2to3.compat import base64compat
 from server_side_replay.gui.wgcg.data_wrappers import server_replays
 from server_side_replay.gui.wgcg.requests import SERVER_SIDE_REPLAY_REQUEST_TYPE
 
@@ -8,7 +11,7 @@ def makeTupleByDict(ntClass, data):
     unsupportedFields = set(data) - set(ntClass._fields)
     supported = {}
     fieldTypes = getattr(ntClass, '_field_types', None)
-    for k, v in data.iteritems():
+    for k, v in viewitems(data):
         if k not in unsupportedFields:
             if fieldTypes and v is None:
                 try:
@@ -111,7 +114,7 @@ class FindReplayCtx(JwtWebRequestCtx):
         self.__replayName = replayName
 
     def getReplayName(self):
-        return base64.b64encode(str(self.__replayName))
+        return base64compat.b64encode(str(self.__replayName))
 
     def getRequestType(self):
         return SERVER_SIDE_REPLAY_REQUEST_TYPE.POST_FIND_REPLAY

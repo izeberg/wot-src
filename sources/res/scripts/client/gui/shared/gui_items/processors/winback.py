@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing, BigWorld
 from gui import SystemMessages
 from gui.Scaleform.Waiting import Waiting

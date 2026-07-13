@@ -18,6 +18,8 @@ package net.wg.data.constants.generated
       public static const GRAY:String = "gray";
       
       public static const CUSTOM:String = "custom";
+      
+      public static const LIGHT_BLUE:String = "light_blue";
        
       
       public function BATTLE_NOTIFICATIONS_TIMER_COLORS()

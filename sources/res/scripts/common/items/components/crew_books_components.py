@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import items, nations
 from items.components.crew_books_constants import CrewBookCacheType, CREW_BOOK_RARITY
 

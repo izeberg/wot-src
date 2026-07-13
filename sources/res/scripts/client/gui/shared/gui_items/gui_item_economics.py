@@ -1,3 +1,4 @@
+from __future__ import absolute_import, division
 import typing
 from collections import namedtuple
 from gui.shared.money import Money, Currency, MONEY_UNDEFINED, ZERO_MONEY
@@ -117,14 +118,19 @@ class ItemPrice(object):
         self.__price = price
         self.__defPrice = defPrice
 
-    def __nonzero__(self):
+    def __bool__(self):
         return self.__price.isDefined()
+
+    __nonzero__ = __bool__
 
     def __eq__(self, other):
         return self.price == other.price and self.defPrice == other.defPrice
 
     def __ne__(self, other):
         return self.price != other.price or self.defPrice != other.defPrice
+
+    def __hash__(self):
+        return hash((self.__price, self.__defPrice))
 
     def __repr__(self):
         return ('ItemPrice(price: {}, defPrice: {})').format(self.price, self.defPrice)
@@ -147,11 +153,14 @@ class ItemPrice(object):
     def __rmul__(self, n):
         return self.__mul__(n)
 
-    def __div__(self, n):
+    def __truediv__(self, n):
         return ItemPrice(self.price / n, self.defPrice / n)
 
-    def __rdiv__(self, n):
-        return self.__div__(n)
+    def __rtruediv__(self, n):
+        return self.__truediv__(n)
+
+    __div__ = __truediv__
+    __rdiv__ = __rtruediv__
 
     @property
     def price(self):
@@ -199,10 +208,12 @@ class ItemPrices(object):
     def __iter__(self):
         return self.iteritems(directOrder=True)
 
-    def __nonzero__(self):
+    def __bool__(self):
         if self.__itemPrice:
             return True
         return False
+
+    __nonzero__ = __bool__
 
     @property
     def itemPrice(self):

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.genConsts.BLOCKS_TOOLTIP_TYPES import BLOCKS_TOOLTIP_TYPES
 from gui.impl import backport
 from gui.impl.gen import R
@@ -53,9 +54,9 @@ class RankedTooltipData(BlocksTooltipData):
         totalBattlesCount = self.rankedController.getTotalQualificationBattles()
         quests = self.rankedController.getQualificationQuests()
         quests[totalBattlesCount] = self.rankedController.getRank(ZERO_RANK_ID + 1).getQuest()
-        battles = quests.keys()
-        fitBattles = [ x for x in battles if x > currentBattlesCount ]
+        battles = list(quests)
         if battles:
+            fitBattles = [ x for x in battles if x > currentBattlesCount ]
             return quests[(min(fitBattles) if fitBattles else max(battles))]
         return
 

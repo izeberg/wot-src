@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from soft_exception import SoftException
 __all__ = ('SerializationException', 'FoundItemException')
 

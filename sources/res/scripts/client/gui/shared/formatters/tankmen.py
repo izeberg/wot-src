@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from helpers import dependency
 from skeletons.gui.shared import IItemsCache
 from gui.shared.money import Currency

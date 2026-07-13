@@ -1,6 +1,6 @@
 from __future__ import absolute_import
 from future.builtins import range
-import WWISE
+import WWISE, ArenaType
 from gui.impl.backport import BackportTooltipWindow, createTooltipData
 from gui.impl.lobby.common.tooltips.extended_text_tooltip import ExtendedTextTooltip
 from gui.impl.pub import WindowImpl
@@ -128,6 +128,8 @@ class BattleResultView(BaseView):
         commonVO = totalVO['common']
         isWin = commonVO['resultShortStr'] == PLAYER_TEAM_RESULT.WIN
         model.setIsWin(isWin)
+        geometryType = ArenaType.g_geometryCache[totalVO['geometryId']]
+        model.battleInfo.setMapName(geometryType.geometryName)
         model.battleInfo.setStartDate(commonVO['arenaCreateTimeStr'])
         model.battleInfo.setDuration(commonVO['duration'])
         difficulty = ARENA_BONUS_TYPE_TO_LEVEL[commonVO['bonusType']]

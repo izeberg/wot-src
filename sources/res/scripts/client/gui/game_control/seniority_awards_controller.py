@@ -1,5 +1,7 @@
+from __future__ import absolute_import
 import logging, re
 from enum import Enum
+from future.utils import viewitems
 from typing import TYPE_CHECKING
 import BigWorld, Event
 from constants import Configs
@@ -243,13 +245,13 @@ class SeniorityAwardsController(ISeniorityAwardsController):
             rewardId = quest.getID().split(':')[(-1)]
             for vehBonus in quest.getBonuses('vehicles'):
                 vehicles = vehBonus.getValue()
-                for intCD in vehicles.iterkeys():
+                for intCD in vehicles:
                     bonusVehicles[rewardId] = self.__itemsCache.items.getItemByCD(intCD)
 
         return bonusVehicles
 
     def getAvailableVehicleSelectionRewards(self):
-        return {key:value for key, value in self.getVehicleSelectionRewards().items() if self.__itemsCache.items.inventory.getItemData(value.intCD) is None}
+        return {key:value for key, value in viewitems(self.getVehicleSelectionRewards()) if self.__itemsCache.items.inventory.getItemData(value.intCD) is None}
 
     def getVehicleSelectionQuestReward(self, vehicleRewardId):
         if self.isVehicleSelectionQuestCompleted(vehicleRewardId):

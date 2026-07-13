@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from collections import namedtuple
 CONFIG_NAME = 'trade_in_config'
 ConversionRule = namedtuple('ConversionRule', [

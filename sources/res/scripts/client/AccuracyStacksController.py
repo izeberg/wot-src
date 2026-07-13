@@ -71,7 +71,6 @@ class AccuracyStacksController(VehicleDynamicComponent, IMechanicComponent, IMec
 
     def _onAppearanceReady(self):
         super(AccuracyStacksController, self)._onAppearanceReady()
-        self.__mechanicPrefabSpawner.loadAppearancePrefab()
         self.__statesEvents.processStatePrepared()
 
     def _onComponentAppearanceUpdate(self, **kwargs):

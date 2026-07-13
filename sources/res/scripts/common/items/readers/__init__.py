@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from items.readers import chassis_readers
 from items.readers import gun_readers
 from items.readers import shared_readers
@@ -6,7 +7,7 @@ from items.readers import sound_readers
 from items.readers import tankmen_readers
 from constants import HAS_DEV_RESOURCES
 if HAS_DEV_RESOURCES:
-    from json_reader import vehicle_reader
+    from items.readers.json_reader import vehicle_reader
 __all__ = ('chassis_readers', 'gun_readers', 'shared_readers', 'skills_readers', 'sound_readers',
            'tankmen_readers', 'json_vehicle_reader')
 if HAS_DEV_RESOURCES:

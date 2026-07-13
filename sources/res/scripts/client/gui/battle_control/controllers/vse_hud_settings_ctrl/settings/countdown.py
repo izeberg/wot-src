@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.battle_control.controllers.vse_hud_settings_ctrl.settings.base_models import TextClientModel
 
 class CountdownClientModel(TextClientModel):

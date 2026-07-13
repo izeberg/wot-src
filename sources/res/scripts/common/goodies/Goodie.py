@@ -1,12 +1,14 @@
+from __future__ import absolute_import
 import time
 from itertools import chain
+from future.utils import viewitems
 from typing import Dict, Tuple
 from debug_utils import LOG_DEBUG_DEV
-from goodie_constants import GOODIE_STATE
+from goodies.goodie_constants import GOODIE_STATE
 
 def decrementExpirationsInOrder(amountToRemove, oldExpirations):
     updatedDict = oldExpirations.copy()
-    orderedTimestamps = sorted(oldExpirations.iterkeys())
+    orderedTimestamps = sorted(oldExpirations)
     for timestamp in orderedTimestamps:
         count = updatedDict[timestamp]
         if count > amountToRemove:
@@ -19,7 +21,7 @@ def decrementExpirationsInOrder(amountToRemove, oldExpirations):
 
 
 def mergeExpirationsInto(source, target):
-    for key in set(chain(source.iterkeys(), target.iterkeys())):
+    for key in set(chain(source, target)):
         value2 = target.get(key, 0)
         value1 = source.get(key, 0)
         target[key] = value1 + value2
@@ -67,7 +69,7 @@ class Goodie(object):
         expired = {}
         valid = {}
         now = int(time.time())
-        for expireTimeStamp, count in self.expirations.iteritems():
+        for expireTimeStamp, count in viewitems(self.expirations):
             if expireTimeStamp <= now:
                 expired[expireTimeStamp] = count
             else:

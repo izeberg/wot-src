@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld
 from gui.shared.utils.requesters.abstract import AbstractSyncDataRequester
 from skeletons.gui.shared.utils.requesters import IOffersRequester
@@ -5,7 +6,7 @@ from skeletons.gui.shared.utils.requesters import IOffersRequester
 class OffersRequester(AbstractSyncDataRequester, IOffersRequester):
 
     def getReceivedGifts(self, offerID):
-        return self.__getOffer(offerID).get('gifts', dict())
+        return self.__getOffer(offerID).get('gifts', {})
 
     def isBannerSeen(self, offerID):
         return self.__getOffer(offerID).get('bannerSeen', False)

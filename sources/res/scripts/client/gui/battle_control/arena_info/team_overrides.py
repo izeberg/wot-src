@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import VOIP
 from constants import ARENA_GUI_TYPE
 from gui.battle_control import avatar_getter

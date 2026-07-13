@@ -1,8 +1,10 @@
 from frameworks.wulf import ViewSettings
 from frameworks.wulf.view.array import fillViewModelsArray
 from gui.impl.gen import R
+from gui.impl.gen.view_models.common.missions.bonuses.icon_bonus_model import IconBonusModel
 from gui.impl.gen.view_models.views.lobby.tooltips.additional_rewards_tooltip_model import AdditionalRewardsTooltipModel
 from gui.impl.pub import ViewImpl
+from gui.shared.gui_items import GUI_ITEM_TYPE, GUI_ITEM_TYPE_NAMES
 
 class AdditionalRewardsTooltip(ViewImpl):
     __slots__ = ()
@@ -25,7 +27,7 @@ class AdditionalRewardsTooltip(ViewImpl):
             model.setHeaderCount(self._getHeaderCount())
             model.setDescription(R.invalid())
             model.setDescriptionCount(0)
-            fillViewModelsArray(packedBonuses, model.getBonus())
+            self._fillBonusesArray(packedBonuses, model.getBonus())
 
     @classmethod
     def _getHeader(cls):
@@ -34,6 +36,27 @@ class AdditionalRewardsTooltip(ViewImpl):
     @classmethod
     def _getHeaderCount(cls):
         return 0
+
+    @staticmethod
+    def _fillBonusesArray(bonusModels, array):
+        attachmentCount = 0
+        attachmentModel = None
+        array.clear()
+        for bonusModel in bonusModels:
+            if hasattr(bonusModel, 'getIcon') and bonusModel.getIcon() == GUI_ITEM_TYPE_NAMES[GUI_ITEM_TYPE.ATTACHMENT]:
+                if attachmentModel is None:
+                    attachmentModel = IconBonusModel()
+                    attachmentModel.setIcon(bonusModel.getIcon())
+                    attachmentModel.setName(bonusModel.getName())
+                    array.addViewModel(attachmentModel)
+                attachmentCount += int(bonusModel.getValue())
+            else:
+                array.addViewModel(bonusModel)
+
+        if attachmentModel is not None:
+            attachmentModel.setValue(str(attachmentCount))
+        array.invalidate()
+        return
 
 
 class AdditionalBattlePassRewardsTooltip(ViewImpl):

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import copy, typing
 from future.utils import itervalues
 from constants import BonusTypes
@@ -13,6 +14,7 @@ from post_progression_common import ACTION_TYPES
 from shared_utils import findFirst
 from skeletons.gui.shared import IItemsCache
 if typing.TYPE_CHECKING:
+    import gui
     from gui.shared.gui_items.Vehicle import Vehicle
     from items.vehicle_items import Gun
 

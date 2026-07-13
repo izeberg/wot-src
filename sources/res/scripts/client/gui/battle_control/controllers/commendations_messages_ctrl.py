@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, typing, BigWorld, BattleReplay
 from chat_commands_consts import BATTLE_CHAT_COMMAND_NAMES
 from commendations_common import CommendationHelpers

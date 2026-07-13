@@ -440,18 +440,6 @@
 						<Texture>content/Buildings/hd_bld_AM_015_TownShop_03/hd_bld_AM_015_TownShop_03_BGMM.dds</Texture>
 					</property>
 					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
 						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>
@@ -476,18 +464,6 @@
 					<property>
 						metallicGlossMap
 						<Texture>content/Buildings/hd_bld_AM_015_TownShop_03/hd_bld_AM_015_TownShop_03_BGMM.dds</Texture>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
 					</property>
 					<property>
 						g_enableTerrainBlending
@@ -516,18 +492,6 @@
 						<Texture>content/Buildings/hd_bld_AM_015_TownShop_03/hd_bld_AM_015_TownShop_03_BGMM.dds</Texture>
 					</property>
 					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
 						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>
@@ -552,18 +516,6 @@
 					<property>
 						metallicGlossMap
 						<Texture>content/Buildings/hd_bld_AM_015_TownShop_03/hd_bld_AM_015_TownShop_03_BGMM.dds</Texture>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
 					</property>
 					<property>
 						g_enableTerrainBlending
@@ -592,18 +544,6 @@
 						<Texture>content/Buildings/hd_bld_AM_015_TownShop_03/hd_bld_AM_015_TownShop_03_BGMM.dds</Texture>
 					</property>
 					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
 						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>
@@ -628,18 +568,6 @@
 					<property>
 						metallicGlossMap
 						<Texture>content/Buildings/hd_bld_AM_015_TownShop_03/hd_bld_AM_015_TownShop_03_BGMM.dds</Texture>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
 					</property>
 					<property>
 						g_enableTerrainBlending
@@ -668,18 +596,6 @@
 						<Texture>content/Buildings/hd_bld_AM_015_TownShop_03/hd_bld_AM_015_TownShop_03_BGMM.dds</Texture>
 					</property>
 					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
 						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>
@@ -691,7 +607,7 @@
 				<material>
 					<identifier>s_ramp_0</identifier>
 					<collisionFlags>131</collisionFlags>
-					<materialKind>111</materialKind>
+					<materialKind>0</materialKind>
 				</material>
 				<groupOrigin>0.809704 -0.078638 -0.009918</groupOrigin>
 			</primitiveGroup>

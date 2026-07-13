@@ -1,4 +1,5 @@
-from client_arena_component_system import ClientArenaComponent
+from __future__ import absolute_import
+from arena_component_system.client_arena_component_system import ClientArenaComponent
 import Event
 
 class StepRepairPointComponent(ClientArenaComponent):

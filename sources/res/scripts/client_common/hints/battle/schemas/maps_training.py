@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import enum, typing
 from dict2model import fields
 from dict2model import validate

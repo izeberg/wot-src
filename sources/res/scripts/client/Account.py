@@ -18,6 +18,7 @@ from account_helpers import client_epic_meta_game, tokens
 from account_helpers import client_ranked, client_badges
 from account_helpers.achievements20 import Achievements20
 from account_helpers.battle_pass import BattlePassManager
+from account_helpers.challenges import Challenges
 from account_helpers.dog_tags import DogTags
 from account_helpers.festivity_manager import FestivityManager
 from account_helpers.game_restrictions import GameRestrictions
@@ -191,6 +192,7 @@ class PlayerAccount(BigWorld.Entity, ClientChat):
         self.customFilesCache = g_accountRepository.customFilesCache
         self.renewableSubscription = g_accountRepository.renewableSubscription
         self.petSystem = g_accountRepository.petSystem
+        self.challenges = g_accountRepository.challenges
         self.syncData.setAccount(self)
         self.inventory.setAccount(self)
         self.stats.setAccount(self)
@@ -278,6 +280,7 @@ class PlayerAccount(BigWorld.Entity, ClientChat):
         self.gameRestrictions.onAccountBecomePlayer()
         self.achievements20.onAccountBecomePlayer()
         self.petSystem.onAccountBecomePlayer()
+        self.challenges.onAccountBecomePlayer()
         chatManager.switchPlayerProxy(self)
         events.onAccountBecomePlayer()
         BigWorld.target.source = BigWorld.MouseTargetingMatrix()
@@ -323,6 +326,7 @@ class PlayerAccount(BigWorld.Entity, ClientChat):
         self.gameRestrictions.onAccountBecomeNonPlayer()
         self.achievements20.onAccountBecomeNonPlayer()
         self.petSystem.onAccountBecomeNonPlayer()
+        self.challenges.onAccountBecomeNonPlayer()
         self.__cancelCommands()
         self.syncData.setAccount(None)
         self.inventory.setAccount(None)
@@ -780,10 +784,10 @@ class PlayerAccount(BigWorld.Entity, ClientChat):
             return
         self.base.doCmdInt3(AccountCommands.REQUEST_ID_NO_RESPONSE, AccountCommands.CMD_PRB_DECLINE_INVITE, prebattleID, peripheryID, 0)
 
-    def prb_join(self, prebattleID):
+    def prb_join(self, prebattleID, clusterID):
         if events.isPlayerEntityChanging:
             return
-        self.base.doCmdInt3(AccountCommands.REQUEST_ID_NO_RESPONSE, AccountCommands.CMD_PRB_JOIN, prebattleID, 0, 0)
+        self.base.doCmdInt3(AccountCommands.REQUEST_ID_NO_RESPONSE, AccountCommands.CMD_PRB_JOIN, prebattleID, clusterID, 0)
 
     def prb_leave(self, callback):
         if events.isPlayerEntityChanging:
@@ -1171,6 +1175,7 @@ class PlayerAccount(BigWorld.Entity, ClientChat):
             self.gameRestrictions.synchronize(isFullSync, diff)
             self.achievements20.synchronize(isFullSync, diff)
             self.petSystem.synchronize(isFullSync, diff)
+            self.challenges.synchronize(isFullSync, diff)
             self._synchronizeServerSettings(diff)
             self._synchronizeDisabledPersonalMissions(diff)
             self._synchronizeEventNotifications(diff)
@@ -1439,6 +1444,7 @@ class _AccountRepository(object):
         self.crewAccountController = CrewAccountController.CrewAccountController(self.inventory)
         self.renewableSubscription = {}
         self.petSystem = PetSystem(self.syncData, self.commandProxy)
+        self.challenges = Challenges(self.syncData, self.commandProxy)
         self.gMap = ClientGlobalMap()
         self.onTokenReceived = Event.Event()
         self.requestID = AccountCommands.REQUEST_ID_UNRESERVED_MIN

@@ -45,6 +45,8 @@ package net.wg.gui.lobby.vehicleCustomization.controls.propertiesSheet
       
       private var _isShown:Boolean = false;
       
+      private var _isHeard:Boolean = false;
+      
       public function CustomizationPropertiesSheet()
       {
          super();
@@ -99,11 +101,12 @@ package net.wg.gui.lobby.vehicleCustomization.controls.propertiesSheet
                this.anchorSwitchers.setGapOffset(!!this._model.isNarrowSlot ? int(SWITCHERS_H_OFFSET) : int(0));
             }
             dispatchEvent(new CustomizationEvent(CustomizationEvent.SHOW_PROPERTIES_SHEET,false));
-            if(!this._isShown)
+            if(!this._isHeard && this._model.showSwitchers)
             {
-               this._isShown = true;
+               this._isHeard = true;
                dispatchEvent(new CustomizationSoundEvent(CustomizationSoundEvent.PLAY_SOUND,CUSTOMIZATION_ALIASES.SOUND_RADIAL_BIG));
             }
+            this._isShown = true;
          }
          if(this._isShown && isInvalid(CLOSE_STATUS_INVALID))
          {

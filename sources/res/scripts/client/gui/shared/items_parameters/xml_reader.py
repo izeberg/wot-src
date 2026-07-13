@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import resource_helper
 from future.utils import iteritems
 _SIMPLIFIED_COEFFICIENTS_PATH = 'gui/params_coefficients.xml'

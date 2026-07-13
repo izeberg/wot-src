@@ -1,4 +1,6 @@
+from __future__ import absolute_import
 import logging, weakref, typing
+from future.utils import viewvalues
 from account_helpers.settings_core import settings_constants
 from gui.battle_control import avatar_getter
 from gui.battle_control.battle_constants import HIT_INDICATOR_MAX_ON_SCREEN, BATTLE_CTRL_ID
@@ -60,7 +62,7 @@ class HitDirectionController(IViewComponentsController):
 
     def setVisible(self, flag):
         self.__isVisible = flag
-        for uiComponent in self.__uiHitComponents.itervalues():
+        for uiComponent in viewvalues(self.__uiHitComponents):
             uiComponent.setVisible(self.__isVisible)
 
     def setViewComponents(self, *components):
@@ -81,7 +83,7 @@ class HitDirectionController(IViewComponentsController):
         return
 
     def clearViewComponents(self):
-        for uiComponent in self.__uiHitComponents.itervalues():
+        for uiComponent in viewvalues(self.__uiHitComponents):
             uiComponent.clear()
 
     def addHit(self, hitDirYaw, attackerID, damage, isBlocked, critFlags, isHighExplosive, damagedID, attackReasonID):
@@ -118,7 +120,7 @@ class HitDirectionController(IViewComponentsController):
         return self.__uiHitComponents[HitType.ARTY_HIT_PREDICTION].pull.findPostponedHit(hitData) is not None
 
     def _hideAllHits(self):
-        for uiComponent in self.__uiHitComponents.itervalues():
+        for uiComponent in viewvalues(self.__uiHitComponents):
             uiComponent.pull.hideAllHits()
 
     def __isFriendlyFireMode(self):
@@ -127,14 +129,14 @@ class HitDirectionController(IViewComponentsController):
         return isFriendlyFireMode and isCustomAllyDamageEffect
 
     def __clearHideCallbacks(self):
-        for uiComponent in self.__uiHitComponents.itervalues():
+        for uiComponent in viewvalues(self.__uiHitComponents):
             uiComponent.pull.clearHideCallbacks()
 
     def __handleGUIVisibility(self, event):
         self.setVisible(event.ctx['visible'])
 
     def __onSettingsChanged(self, diff):
-        for uiComponent in self.__uiHitComponents.itervalues():
+        for uiComponent in viewvalues(self.__uiHitComponents):
             uiComponent.invalidateSettings(diff)
 
     def __onPostmortemKillerVision(self, killerVehicleID):

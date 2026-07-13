@@ -1,4 +1,6 @@
+from __future__ import absolute_import
 from collections import defaultdict
+from future.utils import lmap
 from gui import TANKMEN_ROLES_ORDER_DICT
 from gui.battle_control import avatar_getter
 from gui.battle_control.battle_constants import VEHICLE_DEVICES, VEHICLE_INDICATOR_TYPE, AUTO_ROTATION_FLAG, WHEELED_VEHICLE_DEVICES, TRACK_WITHIN_TRACK_DEVICES
@@ -113,7 +115,7 @@ def getCrewMainRolesWithIndexes(crewRoles):
             role += str(ind)
         return role
 
-    return map(_mapping, crewRoles)
+    return lmap(_mapping, crewRoles)
 
 
 class TankmenStatesIterator(object):
@@ -132,7 +134,7 @@ class TankmenStatesIterator(object):
     def __iter__(self):
         return self
 
-    def next(self):
+    def __next__(self):
         if self._rolesEnum:
             role = self._rolesEnum.pop(0)
             if role in self._mainRoles:
@@ -145,6 +147,8 @@ class TankmenStatesIterator(object):
             self._states.clear()
             raise StopIteration
             return
+
+    next = __next__
 
 
 class VehicleDeviceStatesIterator(object):
@@ -163,7 +167,7 @@ class VehicleDeviceStatesIterator(object):
     def __iter__(self):
         return self
 
-    def next(self):
+    def __next__(self):
         if self._devices:
             name = self._devices.pop(0)
             if name == 'turretRotator' and not self._hasTurret:
@@ -173,6 +177,8 @@ class VehicleDeviceStatesIterator(object):
             self._states.clear()
             raise StopIteration
             return
+
+    next = __next__
 
     def clear(self):
         self._states.clear()

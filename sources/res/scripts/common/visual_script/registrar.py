@@ -1,7 +1,8 @@
+from __future__ import absolute_import
 import inspect
-from block import Block
-from context import VScriptContext
-from type import VScriptType, VScriptEnum, VScriptStruct
+from visual_script.block import Block
+from visual_script.context import VScriptContext
+from visual_script.type import VScriptType, VScriptEnum, VScriptStruct
 __all__ = [
  'VSBlockRegistrar']
 

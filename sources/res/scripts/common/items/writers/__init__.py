@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from items.writers import shared_writers
 from items.writers import chassis_writers
 from items.writers import gun_writers

@@ -1,10 +1,14 @@
-import typing, base64, cPickle, weakref
-from visual_script.block import Block, InitParam, EDITOR_TYPE, buildStrKeysValue, Meta
-from visual_script.misc import ASPECT, errorVScript
+from __future__ import absolute_import
+import typing, weakref
+from past.builtins import long
+from future.moves import pickle
+from Math import Vector2, Vector3, Vector4, Matrix
+from debug_utils import LOG_ERROR
+from py2to3.compat import base64compat
+from visual_script.block import Block, InitParam, buildStrKeysValue, Meta
+from visual_script.misc import ASPECT, errorVScript, EDITOR_TYPE
 from visual_script.slot_types import SLOT_TYPE, arrayOf
 from visual_script.type import VScriptType
-from debug_utils import LOG_ERROR
-from Math import Vector2, Vector3, Vector4, Matrix
 
 class DictionaryMeta(Meta):
 
@@ -31,7 +35,7 @@ class Dictionary(VScriptType, dict):
     @classmethod
     def vs_toString(cls, value):
         if value:
-            return base64.b64encode(cPickle.dumps(value, -1))
+            return base64compat.b64encode(pickle.dumps(value, -1))
         else:
             return ''
 
@@ -39,9 +43,9 @@ class Dictionary(VScriptType, dict):
     def vs_fromString(cls, str_):
         try:
             if str_:
-                return cPickle.loads(base64.b64decode(str_))
+                return pickle.loads(base64compat.b64decode(str_))
         except Exception as e:
-            LOG_ERROR('[VScript]', 'Error of load Dictionary from string: %s' % e.message)
+            LOG_ERROR('[VScript]', 'Error of load Dictionary from string: %s' % str(e))
 
         return Dictionary()
 
@@ -118,7 +122,7 @@ class AddToDictionary(Block, DictionaryMeta):
     @classmethod
     def initParams(cls):
         return [
-         InitParam('Value type', SLOT_TYPE.STR, buildStrKeysValue(*ALLOWED_DATA_TYPES.iterkeys()), EDITOR_TYPE.STR_KEY_SELECTOR),
+         InitParam('Value type', SLOT_TYPE.STR, buildStrKeysValue(*ALLOWED_DATA_TYPES), EDITOR_TYPE.STR_KEY_SELECTOR),
          InitParam('Is Array', SLOT_TYPE.BOOL, False)]
 
     def captionText(self):
@@ -161,7 +165,7 @@ class IsInDictionary(Block, DictionaryMeta):
     @classmethod
     def initParams(cls):
         return [
-         InitParam('Value type', SLOT_TYPE.STR, buildStrKeysValue(*ALLOWED_DATA_TYPES.iterkeys()), EDITOR_TYPE.STR_KEY_SELECTOR),
+         InitParam('Value type', SLOT_TYPE.STR, buildStrKeysValue(*ALLOWED_DATA_TYPES), EDITOR_TYPE.STR_KEY_SELECTOR),
          InitParam('Is Array', SLOT_TYPE.BOOL, False)]
 
     def captionText(self):
@@ -219,7 +223,7 @@ class GetFromDictionary(Block, DictionaryMeta):
     @classmethod
     def initParams(cls):
         return [
-         InitParam('Value type', SLOT_TYPE.STR, buildStrKeysValue(*ALLOWED_DATA_TYPES.iterkeys()), EDITOR_TYPE.STR_KEY_SELECTOR),
+         InitParam('Value type', SLOT_TYPE.STR, buildStrKeysValue(*ALLOWED_DATA_TYPES), EDITOR_TYPE.STR_KEY_SELECTOR),
          InitParam('Is Array', SLOT_TYPE.BOOL, False)]
 
     def captionText(self):
@@ -273,8 +277,7 @@ class RemoveFromDictionary(Block, DictionaryMeta):
                 if valueType is dict:
                     self._value.setValue(Dictionary(value))
                 else:
-                    (
-                     self._value.setValue(value),)
+                    self._value.setValue(value)
                 newDict = Dictionary(keyValueStorage)
                 newDict.pop(key)
                 self._res.setValue(newDict)
@@ -287,7 +290,7 @@ class RemoveFromDictionary(Block, DictionaryMeta):
     @classmethod
     def initParams(cls):
         return [
-         InitParam('Value type', SLOT_TYPE.STR, buildStrKeysValue(*ALLOWED_DATA_TYPES.iterkeys()), EDITOR_TYPE.STR_KEY_SELECTOR),
+         InitParam('Value type', SLOT_TYPE.STR, buildStrKeysValue(*ALLOWED_DATA_TYPES), EDITOR_TYPE.STR_KEY_SELECTOR),
          InitParam('Is Array', SLOT_TYPE.BOOL, False)]
 
     def captionText(self):

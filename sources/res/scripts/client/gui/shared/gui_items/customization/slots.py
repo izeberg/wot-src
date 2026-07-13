@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, Math
 from shared_utils import first
 from gui.shared.gui_items import GUI_ITEM_TYPE

@@ -1,6 +1,9 @@
+from __future__ import absolute_import, division
+import typing
+from builtins import range
 from collections import defaultdict
 from collections import namedtuple
-import BattleReplay, BigWorld, Event, typing
+import BigWorld, BattleReplay, Event
 from ReplayEvents import g_replayEvents
 from constants import SECTOR_STATE, PLAYER_RANK
 from debug_utils import verify, LOG_ERROR, LOG_DEBUG
@@ -99,7 +102,7 @@ class EpicMissionsController(IViewComponentsController):
         self.__overTimeEnd = None
         self.__isRegisterEpicMissionPanel = False
         self.__missionPanelDelayQueue = set()
-        self.__orderBattleAbilities = list()
+        self.__orderBattleAbilities = []
         self.__isLaneContested = [
          False, False, False]
         self.__contestedEndTime = [

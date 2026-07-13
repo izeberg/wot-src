@@ -24,5 +24,5 @@ class BattleQuestTooltip(BaseQuestTooltip):
             fillViewModelsArray(packedBonuses, tx.getBonuses())
             tx.setCountdown(EventInfoModel.getDailyProgressResetTimeDelta())
 
-    def _getRewardsSortFunc(self):
+    def _getRewardsSortKey(self):
         return

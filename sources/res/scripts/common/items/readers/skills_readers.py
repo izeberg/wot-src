@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from collections import namedtuple
 import ResMgr
 from constants import IS_CLIENT, IS_WEB, TTC_TOOLTIP_SECTIONS

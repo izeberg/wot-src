@@ -49,11 +49,6 @@ msgstr "Open modules to view statistics."
 msgid "common/statistics/header"
 msgstr "Modules opened: %(count)"
 
-msgid "common/statistics/tooltip/body"
-msgstr ""
-"Here you can view the items you received from modules during the event. You "
-"can manually reset these statistics at any time."
-
 msgid "confirmResetLootBoxStatistics/description"
 msgstr "All information on opened modules will be deleted."
 
@@ -64,9 +59,6 @@ msgid "entryPoint/tooltip/description"
 msgstr ""
 "These are special modules containing new and unique items, including Premium vehicles, customization elements, in-game currencies, and other valuable rewards.\n"
 "Modules can be obtained from the in-game Store or Premium Shop."
-
-msgid "entryPoint/tooltip/title"
-msgstr "Modules and How to Receive Them"
 
 msgid "entryPoint/tooltip/warningDescription"
 msgstr ""
@@ -127,41 +119,6 @@ msgstr "Modules available: %(boxesCount)"
 
 msgid "quantityTitle/noBoxes"
 msgstr "No modules available"
-
-msgid "serviceChannelMessages/finish/text"
-msgstr ""
-"All remaining modules will be opened. Their contents will be added to your "
-"account."
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/count"
-msgstr "Modules opened: %(boxes)s"
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/header"
-msgstr "Remaining Modules Opened"
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/text"
-msgstr ""
-"At the end of the event, we opened all of your modules and added their "
-"contents to your account."
-
-msgid "serviceChannelMessages/lootBoxesDisabled/header"
-msgstr "Module Opening Suspended"
-
-msgid "serviceChannelMessages/lootBoxesDisabled/text"
-msgstr ""
-"Operations with modules are temporarily unavailable due to maintenance."
-
-msgid "serviceChannelMessages/lootBoxesEnabled/header"
-msgstr "Module Opening Available"
-
-msgid "serviceChannelMessages/lootBoxesEnabled/text"
-msgstr "Operations with modules are available again. Open them!"
-
-msgid "serviceChannelMessages/multipleOpen"
-msgstr "Modules opened!"
-
-msgid "serviceChannelMessages/server_error"
-msgstr "Module Not Opened"
 
 msgid "singleRewardView/tooltip/description/"
 msgstr ""

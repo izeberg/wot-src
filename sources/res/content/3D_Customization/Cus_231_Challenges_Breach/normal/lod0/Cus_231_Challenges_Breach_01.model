@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_231_Challenges_Breach/normal/lod1/Cus_231_Challenges_Breach_01</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-0.521432 0.002827 -0.967179</min>
+		<max>0.036721 0.279429 0.977482</max>
+	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/Cus_231_Challenges_Breach/normal/lod0/Cus_231_Challenges_Breach_01</nodefullVisual>
+	<tank>true</tank>
+</root>

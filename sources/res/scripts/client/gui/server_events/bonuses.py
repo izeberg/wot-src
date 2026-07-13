@@ -1,15 +1,19 @@
+from __future__ import absolute_import
 import copy, logging
 from collections import namedtuple, defaultdict
 from functools import partial
 from operator import itemgetter
-import BigWorld, typing
+import typing
+from future.utils import iteritems
+from past.builtins import cmp
+import BigWorld
 from adisp import adisp_process
 from gui.game_control.wot_plus.utils import getAdditionalXPPromoData, getMaxGoldReserveCapacityFromAllTiers
 from shared_utils import CONST_CONTAINER, first, makeTupleByDict, findFirst
 from battle_pass_common import BATTLE_PASS_OFFER_TOKEN_PREFIX, BATTLE_PASS_Q_CHAIN_BONUS_NAME, BATTLE_PASS_Q_CHAIN_TOKEN_PREFIX, BATTLE_PASS_RANDOM_QUEST_BONUS_NAME, BATTLE_PASS_RANDOM_QUEST_TOKEN_PREFIX, BATTLE_PASS_SELECT_BONUS_NAME, BATTLE_PASS_STYLE_PROGRESS_BONUS_NAME, BATTLE_PASS_TOKEN_3D_STYLE, BATTLE_PASS_TOKEN_PREFIX
 from blueprints.BlueprintTypes import BlueprintTypes
 from blueprints.FragmentTypes import getFragmentType
-from constants import CURRENCY_TOKEN_PREFIX, DOSSIER_TYPE, EVENT_TYPE as _ET, LOOTBOX_TOKEN_PREFIX, PREMIUM_ENTITLEMENTS, RESOURCE_TOKEN_PREFIX, RentType, CUSTOMIZATION_PROGRESS_PREFIX, WoTPlusBonusType, STYLE_3D_PROGRESS_PREFIX
+from constants import CURRENCY_TOKEN_PREFIX, DOSSIER_TYPE, EVENT_TYPE as _ET, LOOTBOX_TOKEN_PREFIX, PREMIUM_ENTITLEMENTS, RESOURCE_TOKEN_PREFIX, RentType, CUSTOMIZATION_PROGRESS_PREFIX, WoTPlusBonusType, STYLE_3D_PROGRESS_PREFIX, ATTACHMENTS_SET_TOKEN_PREFIX
 from debug_utils import LOG_CURRENT_EXCEPTION, LOG_ERROR
 from dog_tags_common.components_config import componentConfigAdapter as dogTagComponentConfig
 from dog_tags_common.config.common import ComponentPurpose, ComponentViewType
@@ -612,7 +616,7 @@ class TokensBonus(SimpleBonus):
 
     def getTokens(self):
         result = {}
-        for tID, d in self._value.iteritems():
+        for tID, d in iteritems(self._value):
             expires = d.get('expires', {'at': None}) or {'at': None}
             result[tID] = self._TOKEN_RECORD(tID, expires.values()[0], d.get('count', 0), d.get('limit'))
 
@@ -1328,6 +1332,8 @@ def tokensFactory(name, value, isCompensation=False, ctx=None):
             result.append(Style3DProgressRewardBonus(name, {tID: tValue}, isCompensation, ctx))
         elif tID.startswith(LOOTBOX_COMPENSATION_TOKEN_PREFIX):
             result.append(LootboxCompensationTokenBonus(name, {tID: tValue}, isCompensation, ctx))
+        elif tID.startswith(ATTACHMENTS_SET_TOKEN_PREFIX):
+            result.append(AttachmentsSetTokenBonus({tID: tValue}, isCompensation, ctx))
         else:
             appropriateTokenFound = False
             for checker, classBonus in collectBonusTokens():
@@ -1729,7 +1735,7 @@ class VehiclesBonus(SimpleBonus):
     def _getWrappedBonusList(self):
         result = []
         for item, vehInfo in self.getVehicles():
-            icons = dict()
+            icons = {}
             if self.isRentVehicle(vehInfo):
                 for size in AWARDS_SIZES.ALL():
                     icons[size] = RES_ICONS.getRentVehicleAwardIcon(size)
@@ -3136,6 +3142,16 @@ class DogTagComponentBonus(SimpleBonus):
         return cls._DogTagComponentRecord(componentId=dogTagInfo['id'], unlock=dogTagInfo.get('unlock'), grade=dogTagInfo.get('grade', 0), value=dogTagInfo.get('value'))
 
 
+class AttachmentsSetTokenBonus(TokensBonus):
+    NAME = 'attachments_set'
+
+    def __init__(self, value, isCompensation=False, ctx=None):
+        super(AttachmentsSetTokenBonus, self).__init__(self.NAME, value, isCompensation, ctx)
+
+    def isShowInGUI(self):
+        return True
+
+
 _BONUSES = {Currency.CREDITS: CreditsBonus, 
    Currency.GOLD: GoldBonus, 
    Currency.CRYSTAL: CrystalBonus, 
@@ -3585,7 +3601,7 @@ def getVehicleCrewReward(vehiclesReward):
         return None
     else:
         _, vehicleInfo = vehiclesReward.getVehicles()[0]
-        tmen = [ tman for tman in vehicleInfo.get('tankmen', []) ]
+        tmen = list(vehicleInfo.get('tankmen', []))
         tmenBonus = TankmenBonus('tankmen', tmen)
         return tmenBonus
 
@@ -3622,3 +3638,40 @@ def _isSelectableBonusID(bonusID):
     if isSelectableBonus and offers.getOfferByToken(bonusID) is None:
         _logger.debug('Offer token %s has no offer', bonusID)
     return isSelectableBonus
+
+
+def parseAttachmentsSetToken(tokenID):
+    if not tokenID.startswith(ATTACHMENTS_SET_TOKEN_PREFIX):
+        return ('', [])
+    tokenParts = tokenID.split(':')
+    setName = tokenParts[1]
+    attachmentIDs = [ int(attachmentID) for attachmentID in tokenParts[2:] ]
+    return (
+     setName, attachmentIDs)
+
+
+def processAttachmentsSetTokens(bonuses, showAttachmentsSets):
+    if not showAttachmentsSets:
+        return [ bonus for bonus in bonuses if bonus.getName() != AttachmentsSetTokenBonus.NAME ]
+    else:
+        finalBonuses = []
+        attachmentIDs = set()
+        for bonus in bonuses:
+            if bonus.getName() == AttachmentsSetTokenBonus.NAME:
+                for tokenID in bonus.getTokens():
+                    _, tokenAttachmentIDs = parseAttachmentsSetToken(tokenID)
+                    attachmentIDs.update(tokenAttachmentIDs)
+
+        for bonus in bonuses:
+            if bonus.getName() == 'customizations':
+                customizations = bonus.getCustomizations()
+                for item in customizations:
+                    customizationItem = bonus.getC11nItem(item)
+                    if not (customizationItem is not None and customizationItem.itemTypeID == GUI_ITEM_TYPE.ATTACHMENT and customizationItem.id in attachmentIDs):
+                        finalBonuses.append(bonus)
+                        break
+
+            else:
+                finalBonuses.append(bonus)
+
+        return finalBonuses

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from adisp import adisp_process, adisp_async
 from gui.game_control.links import URLMacros
 from helpers import dependency

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from persistent_data_cache_common.common import getLogger
 from soft_exception import SoftException

@@ -132,7 +132,7 @@ class SelectorDesc(object):
     def fillTemplate(self, args, effects):
         pass
 
-    def getActiveEffects(self, effects, args):
+    def getActiveEffects(self, effects, args, resetEffectArgs=None):
         pass
 
 
@@ -170,14 +170,16 @@ class DiscreteSelectorDesc(SelectorDesc):
 
         self._selectors = newSelectors
 
-    def getActiveEffects(self, effects, args):
+    def getActiveEffects(self, effects, args, resetEffectArgs=None):
         keyValue = args.get(self._variable, None)
         if keyValue is None:
             return
         else:
             value = self._selectors.get(keyValue, None)
             if value is not None:
-                value.getActiveEffects(effects, args)
+                if resetEffectArgs is not None and self._variable in resetEffectArgs:
+                    value.getActiveEffects(resetEffectArgs[self._variable], args)
+                value.getActiveEffects(effects, args, resetEffectArgs)
             return
 
 
@@ -233,18 +235,22 @@ class RangeSelectorDesc(SelectorDesc):
 
         self.__keys = tuple(newKeys)
 
-    def getActiveEffects(self, effects, args):
+    def getActiveEffects(self, effects, args, resetEffectArgs=None):
         keyValue = args[self._variable]
         if not keyValue:
             return
-        idx = -1
-        for leftBound in self.__keys:
-            if keyValue < leftBound:
-                break
-            idx += 1
+        else:
+            idx = -1
+            for leftBound in self.__keys:
+                if keyValue < leftBound:
+                    break
+                idx += 1
 
-        if -1 < idx < len(self._selectors):
-            self._selectors[idx].getActiveEffects(effects, args)
+            if -1 < idx < len(self._selectors):
+                if resetEffectArgs is not None and self._variable in resetEffectArgs:
+                    self._selectors[idx].getActiveEffects(resetEffectArgs[self._variable], args)
+                self._selectors[idx].getActiveEffects(effects, args, resetEffectArgs)
+            return
 
 
 class UnionSelectorDesc(SelectorDesc):
@@ -266,11 +272,11 @@ class UnionSelectorDesc(SelectorDesc):
         for selector in self._selectors:
             selector.fillTemplate(args, effects)
 
-    def getActiveEffects(self, effects, args):
+    def getActiveEffects(self, effects, args, resetEffectArgs=None):
         isPc = args['isPC']
         for selector in self._selectors:
             if selector._isPC is None or selector._isPC == isPc:
-                selector.getActiveEffects(effects, args)
+                selector.getActiveEffects(effects, args, resetEffectArgs)
 
         return
 
@@ -331,8 +337,11 @@ class EffectSelectorDesc(SelectorDesc):
             self.__makeId(effects)
         return
 
-    def getActiveEffects(self, effects, args):
+    def getActiveEffects(self, effects, args, resetEffectArgs=None):
         effects.add(self._id)
+        if resetEffectArgs is not None and self._variable in resetEffectArgs:
+            resetEffectArgs[self._variable].add(self._id)
+        return
 
     def __makeId(self, effects):
         if effects is not None:
@@ -391,7 +400,7 @@ class EffectDescriptorBase(object):
         self._selectorDesc = None
         return
 
-    def getActiveEffects(self, effects, args):
+    def getActiveEffects(self, effects, args, resetEffectArgs):
         pass
 
 
@@ -431,9 +440,9 @@ class CustomEffectsDescriptor(EffectDescriptorBase):
         else:
             return
 
-    def getActiveEffects(self, effects, args):
+    def getActiveEffects(self, effects, args, resetEffectArgs):
         if self._selectorDesc is not None:
-            self._selectorDesc.getActiveEffects(effects, args)
+            self._selectorDesc.getActiveEffects(effects, args, resetEffectArgs)
         return
 
 
@@ -466,7 +475,7 @@ class ExhaustEffectDescriptor(EffectDescriptorBase):
         else:
             return
 
-    def getActiveEffects(self, effects, args):
+    def getActiveEffects(self, effects, args, resetEffectArgs):
         raise SoftException('This function should not be called by hand.')
 
 
@@ -523,20 +532,34 @@ class MainSelectorBase(object):
             self._activeEffectId = set()
             return
 
-    def update(self, args):
+    def update(self, args, effectsToReset):
         if not self._enabled:
             return
-        activeEffects = set()
-        self._effectSelector.getActiveEffects(activeEffects, args)
-        disableEffects = self._activeEffectId.difference(activeEffects)
-        for effect in disableEffects:
-            self.enable(effect, False)
+        else:
+            resetEffectArgs = None
+            if effectsToReset:
+                resetEffectArgs = {varName:set() for varName in effectsToReset}
+            activeEffects = set()
+            self._effectSelector.getActiveEffects(activeEffects, args, resetEffectArgs)
+            if resetEffectArgs:
+                self.__resetEffects(resetEffectArgs)
+            disableEffects = self._activeEffectId.difference(activeEffects)
+            for effect in disableEffects:
+                self.enable(effect, False)
 
-        enableEffects = activeEffects.difference(self._activeEffectId)
-        for effect in enableEffects:
-            self.enable(effect, True)
+            enableEffects = activeEffects.difference(self._activeEffectId)
+            for effect in enableEffects:
+                self.enable(effect, True)
 
-        self._activeEffectId = activeEffects
+            self._activeEffectId = activeEffects
+            return
+
+    def __resetEffects(self, resetEffectArgs):
+        for _, effectIds in resetEffectArgs.items():
+            for effId in effectIds:
+                if effId in self._activeEffectId:
+                    self.enable(effId, False)
+                    self._activeEffectId.remove(effId)
 
 
 class MainCustomSelector(MainSelectorBase):

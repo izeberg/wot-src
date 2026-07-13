@@ -65,7 +65,7 @@
 						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.000140 0.621246 -0.001817</groupOrigin>
+				<groupOrigin>0.000140 0.659799 -0.001847</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -73,5 +73,5 @@
 		<min>-1.585740 0.000728 -1.720163</min>
 		<max>1.586020 1.339769 1.716529</max>
 	</boundingBox>
-	<geometrySize>4508</geometrySize>
+	<geometrySize>4164</geometrySize>
 </root>

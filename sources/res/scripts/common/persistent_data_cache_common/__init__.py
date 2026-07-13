@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing, wg_async
 from persistent_data_cache_common.common import getLogger, DEFAULT_SAVING_TIMEOUT
 from persistent_data_cache_common.manager import ForceCreatingPDCManager

@@ -1,7 +1,7 @@
 from __future__ import absolute_import
 import copy, random, time, typing
 from builtins import zip
-from future.utils import iteritems, itervalues
+from future.utils import listitems, iteritems, itervalues
 from past.builtins import xrange, basestring
 from account_shared import getCustomizationItem
 from constants import LOOTBOX_TOKEN_PREFIX
@@ -563,7 +563,7 @@ class BonusNodeAcceptor(object):
             self.__shouldUseBonusProbability = False
 
     def getDropInGroupInfo(self):
-        for k, v in self.__dropInGroupsBonuses.items():
+        for k, v in listitems(self.__dropInGroupsBonuses):
             if len(v) == 0:
                 self.__dropInGroupsBonuses.pop(k)
 

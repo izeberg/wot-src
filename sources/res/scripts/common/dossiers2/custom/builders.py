@@ -1,9 +1,10 @@
+from __future__ import absolute_import
 import time
 from constants import DOSSIER_TYPE
 from dossiers2.common.DossierBuilder import DossierBuilder
 from dossiers2.common.utils import getDossierVersion
-from layouts import *
-from updaters import *
+from dossiers2.custom.layouts import *
+from dossiers2.custom.updaters import *
 getAccountDossierVersion = lambda dossierCompDescr: getDossierVersion(dossierCompDescr, '<' + VERSION_RECORD_FORMAT, ACCOUNT_DOSSIER_VERSION)
 getVehicleDossierVersion = lambda dossierCompDescr: getDossierVersion(dossierCompDescr, '<' + VERSION_RECORD_FORMAT, VEHICLE_DOSSIER_VERSION)
 getTankmanDossierVersion = lambda dossierCompDescr: getDossierVersion(dossierCompDescr, '<' + VERSION_RECORD_FORMAT, TANKMAN_DOSSIER_VERSION)

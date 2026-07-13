@@ -1,6 +1,9 @@
+from __future__ import absolute_import
 import logging, operator
-from abc import ABCMeta, abstractmethod
+from builtins import range, zip
 from collections import defaultdict, namedtuple
+from future.utils import iteritems, itervalues, lfilter, listvalues, viewitems, viewvalues
+from past.builtins import unicode
 from typing import TYPE_CHECKING
 import BigWorld, constants, dossiers2, nations
 from PlayerEvents import g_playerEvents
@@ -30,7 +33,8 @@ from gui.shared.system_factory import GuiItemsCacheInvalidatorParams, collectGui
 from wg_async import wg_async, wg_await, distributeLoopOverTicks
 if TYPE_CHECKING:
     from typing import Optional, Dict, List
-    import skeletons.gui.shared.utils.requesters as requesters
+    import gui
+    from skeletons.gui.shared.utils import requesters
     from disjoint_set import DisjointSet
     from gui.shared.gui_items.badge import Badge
     from gui.shared.gui_items.Tankman import Tankman
@@ -48,26 +52,25 @@ def getDiffID(itemdID):
 
 
 class _CriteriaCondition(object):
-    __metaclass__ = ABCMeta
 
-    @abstractmethod
     def __call__(self, item):
-        pass
+        raise NotImplementedError
 
 
 class PredicateCondition(_CriteriaCondition):
+
+    def __init__(self, predicate):
+        super(PredicateCondition, self).__init__()
+        self.predicate = predicate
+
+    def __call__(self, item):
+        return self.predicate(item)
 
     def lookInInventory(self):
         return False
 
     def getIntCDProtector(self):
         return
-
-    def __init__(self, predicate):
-        self.predicate = predicate
-
-    def __call__(self, item):
-        return self.predicate(item)
 
 
 class InventoryPredicateCondition(PredicateCondition):
@@ -237,7 +240,7 @@ class VehsMultiNationSuitableCriteria(VehsSuitableCriteria):
     def _selectAllSuitableItemsByVehicle(self, vehicle, itemTypeID, outSuitableCompDescrs):
         self._selectAllSuitableItemsByVehicleDescr(vehicle.descriptor, itemTypeID, outSuitableCompDescrs)
         if vehicle.hasNationGroup:
-            targetVehCD = iterVehTypeCDsInNationGroup(vehicle.intCD).next()
+            targetVehCD = next(iterVehTypeCDsInNationGroup(vehicle.intCD))
             if targetVehCD:
                 self._selectAllSuitableItemsByVehicleDescr(self.itemsCache.items.getItemByCD(targetVehCD).descriptor, itemTypeID, outSuitableCompDescrs)
 
@@ -253,9 +256,9 @@ class VehicleCanInstallC11nCriteria(RequestCriteria):
 
     def __init__(self, itemTypeID, criteria, items):
         if items is None:
-            items = self._itemsCache.items.getItems(itemTypeID, criteria).values()
+            items = listvalues(self._itemsCache.items.getItems(itemTypeID, criteria))
         else:
-            items = filter(criteria, items)
+            items = lfilter(criteria, items)
         super(VehicleCanInstallC11nCriteria, self).__init__(PredicateCondition(lambda vehicle: _hasSuitableC11n(vehicle, items)))
         return
 
@@ -272,7 +275,7 @@ class REQ_CRITERIA(object):
     UNLOCKED = RequestCriteria(PredicateCondition(operator.attrgetter('isUnlocked')))
     REMOVABLE = RequestCriteria(PredicateCondition(operator.attrgetter('isRemovable')))
     INVENTORY = RequestCriteria(InventoryPredicateCondition(lambda item: item.inventoryCount > 0))
-    NATIONS = staticmethod(lambda nationIDs=nations.INDICES.keys(): RequestCriteria(PredicateCondition(lambda item: item.nationID in nationIDs)))
+    NATIONS = staticmethod(lambda nationIDs=list(nations.INDICES): RequestCriteria(PredicateCondition(lambda item: item.nationID in nationIDs)))
     INNATION_IDS = staticmethod(lambda innationIDs: RequestCriteria(PredicateCondition(lambda item: item.innationID in innationIDs)))
     ITEM_TYPES = staticmethod(lambda *args: RequestCriteria(PredicateCondition(lambda item: item.itemTypeID in args)))
     ITEM_TYPES_NAMES = staticmethod(lambda *args: RequestCriteria(PredicateCondition(lambda item: item.itemTypeName in args)))
@@ -292,9 +295,9 @@ class REQ_CRITERIA(object):
         OBSERVER = RequestCriteria(PredicateCondition(lambda item: item.isObserver))
         EARN_CRYSTALS = RequestCriteria(PredicateCondition(lambda item: item.isEarnCrystals))
         LOCKED = RequestCriteria(PredicateCondition(lambda item: item.isLocked))
-        CLASSES = staticmethod(lambda types=constants.VEHICLE_CLASS_INDICES.keys(): RequestCriteria(PredicateCondition(lambda item: item.type in types)))
-        LEVELS = staticmethod(lambda levels=range(1, constants.MAX_VEHICLE_LEVEL + 1): RequestCriteria(PredicateCondition(lambda item: item.level in levels)))
-        ROLES = staticmethod(lambda roles=constants.ROLE_LABEL_TO_TYPE.keys(): RequestCriteria(PredicateCondition(lambda item: item.roleLabel in roles)))
+        CLASSES = staticmethod(lambda types=constants.VEHICLE_CLASSES: RequestCriteria(PredicateCondition(lambda item: item.type in types)))
+        LEVELS = staticmethod(lambda levels=frozenset(range(1, constants.MAX_VEHICLE_LEVEL + 1)): RequestCriteria(PredicateCondition(lambda item: item.level in levels)))
+        ROLES = staticmethod(lambda roles=frozenset(constants.ROLE_LABEL_TO_TYPE): RequestCriteria(PredicateCondition(lambda item: item.roleLabel in roles)))
         LEVEL = staticmethod(lambda level=1: RequestCriteria(PredicateCondition(lambda item: item.level == level)))
         SPECIFIC_BY_CD = staticmethod(lambda typeCompDescrs: RequestCriteria(PredicateCondition(lambda item: item.intCD in typeCompDescrs)))
         SPECIFIC_BY_NAME = staticmethod(lambda typeNames: RequestCriteria(PredicateCondition(lambda item: item.name in typeNames)))
@@ -369,42 +372,15 @@ class REQ_CRITERIA(object):
         ACTIVE = ~DISMISSED
 
     class RECRUIT(object):
-        ROLES = staticmethod(lambda roles=tankmen.ROLES: RequestCriteria(PredicateCondition(--- This code section failed: ---
-
- L. 635         0  LOAD_FAST             0  'item'
-                3  LOAD_ATTR             0  'getRoles'
-                6  CALL_FUNCTION_0       0  None
-                9  POP_JUMP_IF_FALSE    53  'to 53'
-               12  LOAD_GLOBAL           1  'any'
-               15  BUILD_LIST_0          0 
-               18  LOAD_FAST             0  'item'
-               21  LOAD_ATTR             0  'getRoles'
-               24  CALL_FUNCTION_0       0  None
-               27  GET_ITER         
-               28  FOR_ITER             18  'to 49'
-               31  STORE_FAST            1  'role'
-               34  LOAD_FAST             1  'role'
-               37  LOAD_DEREF            0  'roles'
-               40  COMPARE_OP            6  in
-               43  LIST_APPEND           2  None
-               46  JUMP_BACK            28  'to 28'
-               49  CALL_FUNCTION_1       1  None
-               52  RETURN_VALUE_LAMBDA
-             53_0  COME_FROM             9  '9'
-               53  LOAD_GLOBAL           2  'True'
-               56  RETURN_VALUE_LAMBDA
-               -1  LAMBDA_MARKER    
-
-Parse error at or near `None' instruction at offset -1
-)))
-        NATION = staticmethod(lambda _nations=nations.NAMES: RequestCriteria(PredicateCondition(lambda item: any([ nation in _nations for nation in item.getNations() ]))))
+        ROLES = staticmethod(lambda roles=tankmen.ROLES: RequestCriteria(PredicateCondition(lambda item: any(role in roles for role in item.getRoles()) if item.getRoles() else True)))
+        NATION = staticmethod(lambda _nations=nations.NAMES: RequestCriteria(PredicateCondition(lambda item: any(nation in _nations for nation in item.getNations()))))
         SPECIFIC_BY_NAME = staticmethod(lambda name: RequestCriteria(PredicateCondition(lambda item: name.lower() in unicode(item.getFullUserName()).lower())))
 
     class CREW_ITEM(object):
         IN_ACCOUNT = RequestCriteria(PredicateCondition(lambda item: item.inAccount()))
         BOOK_RARITIES = staticmethod(lambda rarityTypes: RequestCriteria(PredicateCondition(lambda item: item.getBookType() in rarityTypes)))
         ID = staticmethod(lambda bookId: RequestCriteria(PredicateCondition(lambda item: item.getID() == bookId)))
-        NATIONS = staticmethod(lambda nationIDs=nations.INDICES.keys(): RequestCriteria(PredicateCondition(lambda item: item.nationID in nationIDs or item.getNationID() == nations.NONE_INDEX)))
+        NATIONS = staticmethod(lambda nationIDs=nations.NAMES: RequestCriteria(PredicateCondition(lambda item: item.nationID in nationIDs or item.getNationID() == nations.NONE_INDEX)))
 
     class BOOSTER(object):
         ENABLED = RequestCriteria(PredicateCondition(lambda item: item.enabled))
@@ -496,7 +472,7 @@ class ItemsRequester(IItemsRequester):
      'dossier', 'clanInfo', 'seasons', 'ranked', 'dogTag', 'battleRoyaleStats', 'wtr', 'layout', 'layoutState',
      'serviceRecordCustomization'])
 
-    def __init__(self, inventory, stats, dossiers, goodies, shop, recycleBin, vehicleRotation, ranked, battleRoyale, badges, epicMetaGame, tokens, festivityRequester, blueprints=None, sessionStatsRequester=None, anonymizerRequester=None, battlePassRequester=None, giftSystemRequester=None, gameRestrictionsRequester=None, achievements20Requester=None, petSystemRequester=None):
+    def __init__(self, inventory, stats, dossiers, goodies, shop, recycleBin, vehicleRotation, ranked, battleRoyale, badges, epicMetaGame, tokens, festivityRequester, blueprints=None, sessionStatsRequester=None, anonymizerRequester=None, battlePassRequester=None, giftSystemRequester=None, gameRestrictionsRequester=None, achievements20Requester=None, petSystemRequester=None, challengesRequester=None):
         self.__inventory = inventory
         self.__stats = stats
         self.__dossiers = dossiers
@@ -518,6 +494,7 @@ class ItemsRequester(IItemsRequester):
         self.__gameRestrictions = gameRestrictionsRequester
         self.__achievements20 = achievements20Requester
         self.__petSystem = petSystemRequester
+        self.__challenges = challengesRequester
         self.__itemsCache = defaultdict(dict)
         self.__brokenSyncAlreadyLoggedTypes = set()
         self.__fittingItemRequesters = {
@@ -612,6 +589,10 @@ class ItemsRequester(IItemsRequester):
         return self.__petSystem
 
     @property
+    def challenges(self):
+        return self.__challenges
+
+    @property
     def tankmenStatsCache(self):
         return self.__tankmenStatsCache
 
@@ -656,12 +637,13 @@ class ItemsRequester(IItemsRequester):
         yield wg_await(self.__gameRestrictions.request())
         yield wg_await(self.__achievements20.request())
         yield wg_await(self.__petSystem.request())
+        yield wg_await(self.__challenges.request())
         Waiting.hide('download/common')
         self.__brokenSyncAlreadyLoggedTypes.clear()
 
     def isSynced--- This code section failed: ---
 
- L.1097         0  LOAD_FAST             0  'self'
+ L.1110         0  LOAD_FAST             0  'self'
                 3  LOAD_ATTR             0  '__blueprints'
                 6  LOAD_CONST               None
                 9  COMPARE_OP            9  is-not
@@ -825,7 +807,7 @@ Parse error at or near `None' instruction at offset -1
         invalidate = defaultdict(set)
         if diff is None:
             LOG_DEBUG('Gui items cache full invalidation')
-            for itemTypeID, cache in self.__itemsCache.iteritems():
+            for itemTypeID, cache in viewitems(self.__itemsCache):
                 if itemTypeID not in (GUI_ITEM_TYPE.ACCOUNT_DOSSIER, GUI_ITEM_TYPE.VEHICLE_DOSSIER,
                  GUI_ITEM_TYPE.BATTLE_ABILITY):
                     cache.clear()
@@ -835,24 +817,24 @@ Parse error at or near `None' instruction at offset -1
             for invalidator in collectGuiItemsCacheInvalidators():
                 invalidator(GuiItemsCacheInvalidatorParams(self.__inventory, invalidate, diff))
 
-            for statName, data in diff.get('stats', {}).iteritems():
+            for statName, data in iteritems(diff.get('stats', {})):
                 if statName in ('unlocks', ('unlocks', '_r')):
                     self._invalidateUnlocks(data, invalidate)
                 elif statName == 'eliteVehicles':
                     invalidate[GUI_ITEM_TYPE.VEHICLE].update(data)
                 elif statName in ('vehTypeXP', 'vehTypeLocks'):
-                    invalidate[GUI_ITEM_TYPE.VEHICLE].update(iterVehiclesWithNationGroupInOrder(data.keys()))
+                    invalidate[GUI_ITEM_TYPE.VEHICLE].update(iterVehiclesWithNationGroupInOrder(list(data)))
                 elif statName in (('multipliedXPVehs', '_r'), ('multipliedRankedBattlesVehs', '_r')):
                     getter = vehicles.getVehicleTypeCompactDescr
                     vehiclesDict = self.__inventory.getItems(GUI_ITEM_TYPE.VEHICLE)
                     inventoryVehiclesCDs = []
                     if vehiclesDict:
-                        inventoryVehiclesCDs = [ getter(v['compDescr']) for v in vehiclesDict.itervalues() ]
+                        inventoryVehiclesCDs = [ getter(v['compDescr']) for v in itervalues(vehiclesDict) ]
                     invalidate[GUI_ITEM_TYPE.VEHICLE].update(inventoryVehiclesCDs)
                 elif statName in ('oldVehInvIDs', ):
                     invalidate[GUI_ITEM_TYPE.VEHICLE].update(data)
 
-            for cacheType, data in diff.get('cache', {}).iteritems():
+            for cacheType, data in iteritems(diff.get('cache', {})):
                 if cacheType == 'vehsLock':
                     self.__tankmenStatsCache.setNeedUpdate()
                     for itemID in data.keys():
@@ -860,21 +842,21 @@ Parse error at or near `None' instruction at offset -1
                         if vehData is not None:
                             invalidate[GUI_ITEM_TYPE.VEHICLE].add(vehData.descriptor.type.compactDescr)
 
-            for cacheType, data in diff.get('groupLocks', {}).iteritems():
+            for cacheType, data in iteritems(diff.get('groupLocks', {})):
                 if cacheType in ('isGroupLocked', 'groupBattles'):
                     getter = vehicles.getVehicleTypeCompactDescr
-                    inventoryVehiclesCDs = [ getter(v['compDescr']) for v in self.inventory.getItems(GUI_ITEM_TYPE.VEHICLE).itervalues() ]
+                    inventoryVehiclesCDs = [ getter(v['compDescr']) for v in itervalues(self.inventory.getItems(GUI_ITEM_TYPE.VEHICLE)) ]
                     invalidate[GUI_ITEM_TYPE.VEHICLE].update(inventoryVehiclesCDs)
 
-            for itemTypeID, itemsDiff in diff.get('inventory', {}).iteritems():
+            for itemTypeID, itemsDiff in iteritems(diff.get('inventory', {})):
                 if itemTypeID == GUI_ITEM_TYPE.VEHICLE:
                     if 'compDescr' in itemsDiff:
-                        for strCD in itemsDiff['compDescr'].itervalues():
+                        for strCD in itervalues(itemsDiff['compDescr']):
                             if strCD is not None:
                                 invalidate[itemTypeID].add(vehicles.getVehicleTypeCompactDescr(strCD))
 
-                    for data in itemsDiff.itervalues():
-                        for itemID in data.iterkeys():
+                    for data in itervalues(itemsDiff):
+                        for itemID in data:
                             vehData = self.__inventory.getVehicleData(getDiffID(itemID))
                             if vehData is not None:
                                 invalidate[itemTypeID].add(vehData.descriptor.type.compactDescr)
@@ -882,8 +864,8 @@ Parse error at or near `None' instruction at offset -1
 
                 elif itemTypeID == GUI_ITEM_TYPE.TANKMAN:
                     self.__tankmenStatsCache.setNeedUpdate()
-                    for data in itemsDiff.itervalues():
-                        invalidate[itemTypeID].update(data.keys())
+                    for data in itervalues(itemsDiff):
+                        invalidate[itemTypeID].update(list(data))
                         for itemID in data.keys():
                             tmanInvID = getDiffID(itemID)
                             tmanData = self.__inventory.getTankmanData(tmanInvID)
@@ -892,8 +874,8 @@ Parse error at or near `None' instruction at offset -1
                                 invalidate[GUI_ITEM_TYPE.TANKMAN].update(self.__getTankmenIDsForTankman(tmanData))
 
                 elif itemTypeID == GUI_ITEM_TYPE.CREW_SKINS:
-                    for data in itemsDiff.itervalues():
-                        invalidate[GUI_ITEM_TYPE.TANKMAN].update(data.keys())
+                    for data in itervalues(itemsDiff):
+                        invalidate[GUI_ITEM_TYPE.TANKMAN].update(list(data))
 
                     if SkinInvData.ITEMS in itemsDiff:
                         skinsDiff = itemsDiff[SkinInvData.ITEMS]
@@ -908,13 +890,13 @@ Parse error at or near `None' instruction at offset -1
                                 invalidate[GUI_ITEM_TYPE.TANKMAN].update(self.__getTankmenIDsForTankman(tmanData))
 
                 elif itemTypeID == GUI_ITEM_TYPE.CREW_BOOKS:
-                    invalidate[itemTypeID].update(itemsDiff.keys())
+                    invalidate[itemTypeID].update(list(itemsDiff))
                 elif itemTypeID == GUI_ITEM_TYPE.SHELL:
-                    invalidate[itemTypeID].update(itemsDiff.keys())
+                    invalidate[itemTypeID].update(list(itemsDiff))
                     vehicleItems = self.__inventory.getItems(GUI_ITEM_TYPE.VEHICLE)
                     if vehicleItems:
-                        for shellIntCD in itemsDiff.iterkeys():
-                            for vehicle in vehicleItems.itervalues():
+                        for shellIntCD in itemsDiff:
+                            for vehicle in viewvalues(vehicleItems):
                                 shells = vehicle['shells']
                                 for intCD, _, _ in LayoutIterator(shells):
                                     if shellIntCD == intCD:
@@ -926,7 +908,7 @@ Parse error at or near `None' instruction at offset -1
                                             invalidate[GUI_ITEM_TYPE.GUN].add(gunIntCD)
 
                 elif itemTypeID == GUI_ITEM_TYPE.CUSTOMIZATION:
-                    for vehicleIntCD, outfitsData in itemsDiff.get(CustomizationInvData.OUTFITS, {}).iteritems():
+                    for vehicleIntCD, outfitsData in itemsDiff.get(CustomizationInvData.OUTFITS, {}).items():
                         invalidate[GUI_ITEM_TYPE.VEHICLE].add(vehicleIntCD)
                         for season in outfitsData or SeasonType.RANGE:
                             invalidate[GUI_ITEM_TYPE.OUTFIT].add((vehicleIntCD, season))
@@ -935,17 +917,17 @@ Parse error at or near `None' instruction at offset -1
                      CustomizationInvData.DRESSED, CustomizationInvData.PROGRESSION,
                      CustomizationInvData.SERIAL_NUMBERS)
                     for storageKey in storageKeys:
-                        for cType, items in itemsDiff.get(storageKey, {}).iteritems():
-                            for idx in items.iterkeys():
+                        for cType, items in iteritems(itemsDiff.get(storageKey, {})):
+                            for idx in items:
                                 intCD = vehicles.makeIntCompactDescrByID('customizationItem', cType, getDiffID(idx))
                                 invalidate[GUI_ITEM_TYPE.CUSTOMIZATION].add(intCD)
 
                 else:
-                    invalidate[itemTypeID].update(itemsDiff.keys())
+                    invalidate[itemTypeID].update(list(itemsDiff))
 
-            for itemType, itemsDiff in diff.get('recycleBin', {}).iteritems():
+            for itemType, itemsDiff in iteritems(diff.get('recycleBin', {})):
                 deletedItems = itemsDiff.get('buffer', {})
-                for itemID in deletedItems.iterkeys():
+                for itemID in deletedItems:
                     if itemType == 'tankmen':
                         invalidate[GUI_ITEM_TYPE.TANKMAN].add(itemID * -1)
                     else:
@@ -960,22 +942,22 @@ Parse error at or near `None' instruction at offset -1
                     synchronizeDicts(diff[BATTLE_PASS_PDATA_KEY], invalidate.setdefault(BATTLE_PASS_PDATA_KEY, {}))
             if 'goodies' in diff:
                 vehicleDiscounts = self.__shop.getVehicleDiscountDescriptions()
-                for goodieID in diff['goodies'].iterkeys():
+                for goodieID in diff['goodies']:
                     if goodieID in vehicleDiscounts:
                         vehicleDiscount = vehicleDiscounts[goodieID]
                         invalidate[GUI_ITEM_TYPE.VEHICLE].add(vehicleDiscount.target.targetValue)
 
-            vehicleSelectedAbilities = diff.get('epicMetaGame', {}).get('selectedAbilities', {}).keys()
+            vehicleSelectedAbilities = list(diff.get('epicMetaGame', {}).get('selectedAbilities', {}))
             if vehicleSelectedAbilities:
                 invalidate[GUI_ITEM_TYPE.VEHICLE].update(vehicleSelectedAbilities)
-            existingIDs = self.__itemsCache[GUI_ITEM_TYPE.VEH_POST_PROGRESSION].keys()
+            existingIDs = list(self.__itemsCache[GUI_ITEM_TYPE.VEH_POST_PROGRESSION])
             invalidIDs = self.__vehPostProgressionCtrl.getInvalidProgressions(diff, existingIDs)
             if invalidIDs:
                 invalidate[GUI_ITEM_TYPE.VEH_POST_PROGRESSION].update(invalidIDs)
                 invalidate[GUI_ITEM_TYPE.VEHICLE].update(invalidIDs)
             if GUI_ITEM_TYPE.TANKMAN in invalidate:
                 self._invTmenRO = None
-            for itemTypeID, uniqueIDs in invalidate.iteritems():
+            for itemTypeID, uniqueIDs in viewitems(invalidate):
                 self._invalidateItems(itemTypeID, uniqueIDs)
 
         return invalidate
@@ -1096,7 +1078,7 @@ Parse error at or near `None' instruction at offset -1
     def getInventoryTankmen(self, criteria=REQ_CRITERIA.TANKMAN.ACTIVE, limit=None):
         result = ItemsCollection()
         activeTankmenInvData = self.__inventory.getItemsData(GUI_ITEM_TYPE.TANKMAN)
-        for invID, tankmanInvData in activeTankmenInvData.iteritems():
+        for invID, tankmanInvData in iteritems(activeTankmenInvData):
             item = self.__makeTankman(invID, tankmanInvData)
             if criteria(item):
                 result[invID] = item
@@ -1115,7 +1097,7 @@ Parse error at or near `None' instruction at offset -1
         result = ItemsCollection()
         duration = self.__shop.tankmenRestoreConfig.billableDuration
         dismissedTankmenData = self.__recycleBin.getTankmen(duration)
-        for invID, tankmanData in dismissedTankmenData.iteritems():
+        for invID, tankmanData in viewitems(dismissedTankmenData):
             item = self.__makeDismissedTankman(invID, tankmanData)
             if criteria(item):
                 result[invID] = item
@@ -1139,11 +1121,11 @@ Parse error at or near `None' instruction at offset -1
 
     def tankmenInBarracksCount(self):
         tmen = self.getInventoryTankmenRO()
-        return sum(1 for tmn in tmen.itervalues() if not tmn.isInTank)
+        return sum(1 for tmn in viewvalues(tmen) if not tmn.isInTank)
 
     def hasAnyTmanInBarracks(self):
         tmen = self.getInventoryTankmenRO()
-        return any(not tman.isInTank for tman in tmen.itervalues())
+        return any(not tman.isInTank for tman in viewvalues(tmen))
 
     def freeTankmenBerthsCount(self):
         return self.stats.tankmenBerthsCount - self.tankmenInBarracksCount()
@@ -1157,7 +1139,7 @@ Parse error at or near `None' instruction at offset -1
     def getBadges(self, criteria=REQ_CRITERIA.EMPTY):
         result = ItemsCollection()
         receivedBadges = self.getAccountDossier().getDossierDescr()[BADGES_BLOCK]
-        for badgeID, badgeData in self.__badges.available.iteritems():
+        for badgeID, badgeData in viewitems(self.__badges.available):
             item = self.__makeBadge(badgeID, badgeData=badgeData, receivedBadges=receivedBadges)
             if criteria(item):
                 result[badgeID] = item
@@ -1434,7 +1416,7 @@ Parse error at or near `None' instruction at offset -1
                 compDescrs.append(compDescr)
 
         createdItems = self.itemsFactory.createGuiItemsOfSameType(itemType, compDescrs, proxy=self)
-        container.update(dict(zip(compDescrs, createdItems)))
+        container.update(zip(compDescrs, createdItems))
         items.extend(createdItems)
         return items
 

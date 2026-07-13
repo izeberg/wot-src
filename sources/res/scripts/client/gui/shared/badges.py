@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.doc_loaders.badges_loader import getAvailableBadges
 from helpers import dependency
 from skeletons.gui.shared.gui_items import IGuiItemsFactory

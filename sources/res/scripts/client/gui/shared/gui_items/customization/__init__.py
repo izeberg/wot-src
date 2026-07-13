@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from collections import namedtuple
 from items.components.c11n_constants import ProjectionDecalDirectionTags
 from shared_utils import first

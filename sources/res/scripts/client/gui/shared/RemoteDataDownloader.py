@@ -1,6 +1,10 @@
-import time, httplib, base64, threading
-from functools import partial
+from __future__ import absolute_import
+import time, base64, threading
+from builtins import map
 from collections import namedtuple
+from functools import partial
+from future.utils import viewvalues
+from http import client as httplib
 from debug_utils import LOG_DEBUG
 from helpers import threads, http, time_utils, local_cache
 _TIMEOUT = 10.0
@@ -143,7 +147,7 @@ class _RemoteDataDownloader(object):
         if self.__storageCache is not None:
             self.__storageCache.onRead -= self.__cache_onRead
             self.__storageCache.clear()
-        for pool in self._pools.itervalues():
+        for pool in viewvalues(self._pools):
             pool.stop()
 
         return
@@ -198,7 +202,7 @@ class _RemoteDataDownloader(object):
     def __cache_onRead(self):
         if not self.__storageCache:
             return
-        for pool in self._pools.itervalues():
+        for pool in viewvalues(self._pools):
             pool.start()
 
 

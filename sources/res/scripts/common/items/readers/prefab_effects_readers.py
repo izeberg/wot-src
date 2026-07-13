@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing, ResMgr
 from constants import SHELL_TYPES_INDICES
 from debug_utils import LOG_ERROR

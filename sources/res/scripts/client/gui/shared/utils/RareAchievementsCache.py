@@ -1,5 +1,7 @@
+from __future__ import absolute_import
 import re
 from functools import partial
+from future.utils import lfilter
 import ResMgr, Event
 from debug_utils import LOG_WARNING, LOG_CURRENT_EXCEPTION, LOG_DEBUG
 from helpers import i18n, getClientLanguage
@@ -25,7 +27,7 @@ class RaresCache(IRaresCache):
     RARE_ACHIEVEMENT_ICON_PATTERN = '^%s[0-9]+\\.png$' % RARE_ACHIEVEMENT_PREFIX
 
     def __init__(self):
-        self.__cache = dict()
+        self.__cache = {}
         self.__local = set()
         self.onTextReceived = Event.Event()
         self.onImageReceived = Event.Event()
@@ -35,9 +37,9 @@ class RaresCache(IRaresCache):
         rareIcons180x180 = ResMgr.openSection(IMAGE_PATH.IT_180X180)
         listOfIcons = set()
         if rareIcons67x71 is not None:
-            listOfIcons.update(filter(iconPattern.match, rareIcons67x71.keys()))
+            listOfIcons.update(lfilter(iconPattern.match, rareIcons67x71.keys()))
         if rareIcons180x180 is not None:
-            listOfIcons.update(filter(iconPattern.match, rareIcons180x180.keys()))
+            listOfIcons.update(lfilter(iconPattern.match, rareIcons180x180.keys()))
         for icon in listOfIcons:
             rareName = achieveIDPattern.search(icon).group()
             rareID = self.__getRareAchievementID(rareName)
@@ -83,7 +85,7 @@ class RaresCache(IRaresCache):
             getRareAchievementImageBig(achieveId, partial(self.__onImageReceived, IMAGE_TYPE.IT_180X180))
 
     def __onTextReceived(self, rareID, text):
-        achieveData = self.__cache.setdefault(rareID, dict())
+        achieveData = self.__cache.setdefault(rareID, {})
         title = text.get('title')
         descr = text.get('description')
         info = text.get('historyInfo')
@@ -111,7 +113,7 @@ class RaresCache(IRaresCache):
         return
 
     def __onImageReceived(self, imgType, imgID, imageData):
-        achieveData = self.__cache.setdefault(imgID, dict())
+        achieveData = self.__cache.setdefault(imgID, {})
         achieveImgData = achieveData.setdefault('image', {})
         if imageData is None:
             return
@@ -127,19 +129,19 @@ class RaresCache(IRaresCache):
         return achieveID in self.__local
 
     def getTitle(self, achieveID):
-        return self.__cache.get(achieveID, dict()).get('title') or i18n.makeString('#tooltips:achievement/action/unavailable/title')
+        return self.__cache.get(achieveID, {}).get('title') or i18n.makeString('#tooltips:achievement/action/unavailable/title')
 
     def getDescription(self, achieveID):
-        return self.__cache.get(achieveID, dict()).get('descr') or i18n.makeString('#tooltips:achievement/action/unavailable/descr')
+        return self.__cache.get(achieveID, {}).get('descr') or i18n.makeString('#tooltips:achievement/action/unavailable/descr')
 
     def getImageData(self, imgType, achieveID):
-        return self.__cache.get(achieveID, dict()).get('image', {}).get(imgType)
+        return self.__cache.get(achieveID, {}).get('image', {}).get(imgType)
 
     def getHeroInfo(self, achieveID):
-        return self.__cache.get(achieveID, dict()).get('historyInfo')
+        return self.__cache.get(achieveID, {}).get('historyInfo')
 
     def getConditions(self, achieveID):
-        return self.__cache.get(achieveID, dict()).get('conditions')
+        return self.__cache.get(achieveID, {}).get('conditions')
 
     def getAchievementImageUrl(self, imgType, achieveID):
         return getRareAchievementImageUrl(URL_NAMES[imgType], achieveID)

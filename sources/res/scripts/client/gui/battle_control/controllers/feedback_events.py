@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging
 from BattleFeedbackCommon import BATTLE_EVENT_TYPE as _BET, NONE_SHELL_TYPE
 from DamageComponents import DamageZoneType

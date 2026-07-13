@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from chat_shared import SYS_MESSAGE_TYPE
 from constants import ARENA_BONUS_TYPE

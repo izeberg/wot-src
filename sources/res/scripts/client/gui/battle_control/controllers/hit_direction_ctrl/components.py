@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import weakref, typing
 from account_helpers.settings_core.settings_constants import DAMAGE_INDICATOR, GRAPHICS
 if typing.TYPE_CHECKING:

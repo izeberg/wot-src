@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging
 from constants import IS_DEVELOPMENT, NC_MESSAGE_PRIORITY
 _logger = logging.getLogger(__name__)

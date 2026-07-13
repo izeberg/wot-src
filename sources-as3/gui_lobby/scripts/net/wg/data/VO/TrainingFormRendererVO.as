@@ -35,6 +35,8 @@ package net.wg.data.VO
       
       public var badgeVisualVO:BadgeVisualVO = null;
       
+      public var prbClusterId:Number = 0;
+      
       public function TrainingFormRendererVO(param1:Object)
       {
          super(param1);

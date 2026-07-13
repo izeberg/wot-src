@@ -16,7 +16,7 @@ class FunSubModeClientConfig(namedtuple('_FunSubModeClientConfig', ('subModeImpl
 
     @classmethod
     def defaults(cls):
-        return cls(FunSubModeImpl.DEFAULT, DEFAULT_ASSETS_PACK, DEFAULT_SETTINGS_KEY, DEFAULT_PRIORITY, UNKNOWN_WWISE_REMAPPING, (), {}, '', '')
+        return cls()
 
 
 class FunSubModeFiltrationConfig(namedtuple('FunSubModeFiltrationConfig', ('levels', 'forbiddenClassTags', 'forbiddenVehTypes',
@@ -30,7 +30,7 @@ class FunSubModeFiltrationConfig(namedtuple('FunSubModeFiltrationConfig', ('leve
 
     @classmethod
     def defaults(cls):
-        return cls((), set(), set(), set())
+        return cls()
 
 
 class FunSubModeSeasonalityConfig(namedtuple('FunSubModeSeasonalityConfig', ('isEnabled', 'peripheryIDs', 'seasons',
@@ -45,7 +45,7 @@ class FunSubModeSeasonalityConfig(namedtuple('FunSubModeSeasonalityConfig', ('is
 
     @classmethod
     def defaults(cls):
-        return cls(False, set(), {}, {}, ())
+        return cls()
 
     def asDict(self):
         return self._asdict()
@@ -72,11 +72,11 @@ class FunSubModeConfig(namedtuple('_FunSubModeConfig', ('eventID', 'isEnabled', 
 
     @classmethod
     def defaults(cls):
-        return cls(UNKNOWN_EVENT_ID, False, {}, {}, {})
+        return cls()
 
     @classmethod
     def __filterAllowedFields(cls, data, allowedFields):
-        return dict((k, v) for k, v in viewitems(data) if k in allowedFields)
+        return {k:v for k, v in viewitems(data) if k in allowedFields}
 
     @classmethod
     def __packConfigPart(cls, configPartCls, configPartName, data):
@@ -94,7 +94,7 @@ class FunProgressionConfig(namedtuple('_FunProgressionConfig', ('name', 'executo
 
     @classmethod
     def defaults(cls):
-        return cls('', (), (), None, None, ())
+        return cls()
 
 
 class FunMetaProgressionConfig(namedtuple('_FunMetaProgressionConfig', ('isEnabled', 'progressions'))):
@@ -108,7 +108,7 @@ class FunMetaProgressionConfig(namedtuple('_FunMetaProgressionConfig', ('isEnabl
 
     @classmethod
     def defaults(cls):
-        return cls(False, ())
+        return cls()
 
     @classmethod
     def __packProgressionsConfigs(cls, data):
@@ -130,7 +130,7 @@ class FunRandomConfig(namedtuple('_FunRandomConfig', ('isEnabled', 'subModes', '
 
     @classmethod
     def defaults(cls):
-        return cls(False, {}, {}, DEFAULT_ASSETS_PACK, DEFAULT_SETTINGS_KEY, '')
+        return cls()
 
     def replace(self, data):
         data = self.__packSubModesConfigs(data)
@@ -140,7 +140,7 @@ class FunRandomConfig(namedtuple('_FunRandomConfig', ('isEnabled', 'subModes', '
 
     @classmethod
     def __filterAllowedFields(cls, data, allowedFields):
-        return dict((k, v) for k, v in viewitems(data) if k in allowedFields)
+        return {k:v for k, v in viewitems(data) if k in allowedFields}
 
     @classmethod
     def __packMetaProgressionConfig(cls, data):

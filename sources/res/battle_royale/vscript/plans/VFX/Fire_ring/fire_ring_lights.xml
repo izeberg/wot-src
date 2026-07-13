@@ -65,50 +65,6 @@
 						<type>StringT</type>
 					</param>
 				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>SetComponentProperties</class>
-				<id>SetComponentProperties_1</id>
-				<params>
-					<param>
-						Transform
-						<name>Component Type</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>GetComponentProperties</class>
-				<id>GetComponentProperties_2</id>
-				<params>
-					<param>
-						Transform
-						<name>Component Type</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>SetVariable</class>
-				<id>SetVariable_1</id>
-				<buddy>Variable_1</buddy>
-				<params>
-					<param>
-						FloatT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>MatrixPosition</class>
-				<id>MatrixPosition_1</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>CreateComponent</class>
@@ -148,6 +104,37 @@
 				</slots>
 			</block>
 			<block>
+				<class>SetComponentProperties</class>
+				<id>SetComponentProperties_1</id>
+				<params>
+					<param>
+						Transform
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>MatrixPosition</class>
+				<id>MatrixPosition_2</id>
+			</block>
+			<block>
+				<class>SetVariable</class>
+				<id>SetVariable_1</id>
+				<buddy>Variable_1</buddy>
+				<params>
+					<param>
+						FloatT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>MatrixPosition</class>
+				<id>MatrixPosition_1</id>
+			</block>
+			<block>
 				<class>GetComponentProperties</class>
 				<id>GetComponentProperties_1</id>
 				<params>
@@ -157,37 +144,41 @@
 						<type>StringT</type>
 					</param>
 				</params>
-				<slots/>
+			</block>
+			<block>
+				<class>MatrixRotation</class>
+				<id>MatrixRotation_2</id>
+			</block>
+			<block>
+				<class>GetComponentProperties</class>
+				<id>GetComponentProperties_2</id>
+				<params>
+					<param>
+						Transform
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
 			</block>
 			<block>
 				<class>CreateMatrix</class>
 				<id>CreateMatrix_1</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>MatrixRotation</class>
 				<id>MatrixRotation_1</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>StartScript</class>
 				<id>StartScript_1</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>MatrixScale</class>
 				<id>MatrixScale_1</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
-				<class>GetParentOf</class>
-				<id>GetParentOf_1</id>
-				<params/>
-				<slots/>
+				<class>MatrixScale</class>
+				<id>MatrixScale_2</id>
 			</block>
 			<block>
 				<class>CreateVector</class>
@@ -217,10 +208,25 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
+			</block>
+			<block>
+				<class>GetParentOf</class>
+				<id>GetParentOf_1</id>
 			</block>
 		</blocks>
 		<connections>
+			<connection>
+				<from>SetComponentProperties_1</from>
+				<input>in</input>
+				<to>CreateComponent_1</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>CreateComponent_1</to>
+				<output>value</output>
+			</connection>
 			<connection>
 				<from>GetComponentProperties_2</from>
 				<input>in</input>
@@ -234,22 +240,28 @@
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>CreateMatrix_1</from>
-				<input>local</input>
+				<from>MatrixPosition_2</from>
+				<input>position</input>
 				<to>SetComponentProperties_1</to>
 				<output>res</output>
 			</connection>
 			<connection>
-				<from>SetVariable_1</from>
-				<input>in</input>
-				<to>GetComponentProperties_2</to>
-				<output>out</output>
+				<from>MatrixRotation_2</from>
+				<input>rotation</input>
+				<to>SetComponentProperties_1</to>
+				<output>res</output>
 			</connection>
 			<connection>
-				<from>ContextGetSelf_1</from>
-				<input>gameObject</input>
-				<to>GetComponentProperties_2</to>
-				<output>value</output>
+				<from>MatrixScale_2</from>
+				<input>scale</input>
+				<to>SetComponentProperties_1</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>CreateMatrix_1</from>
+				<input>a</input>
+				<to>MatrixPosition_2</to>
+				<output>res</output>
 			</connection>
 			<connection>
 				<from>GetComponentProperties_1</from>
@@ -270,18 +282,6 @@
 				<output>local</output>
 			</connection>
 			<connection>
-				<from>SetComponentProperties_1</from>
-				<input>in</input>
-				<to>CreateComponent_1</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>ContextGetSelf_1</from>
-				<input>gameObject</input>
-				<to>CreateComponent_1</to>
-				<output>value</output>
-			</connection>
-			<connection>
 				<from>StartScript_1</from>
 				<input>in</input>
 				<to>GetComponentProperties_1</to>
@@ -292,6 +292,24 @@
 				<input>gameObject</input>
 				<to>GetComponentProperties_1</to>
 				<output>parent</output>
+			</connection>
+			<connection>
+				<from>CreateMatrix_1</from>
+				<input>a</input>
+				<to>MatrixRotation_2</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>SetVariable_1</from>
+				<input>in</input>
+				<to>GetComponentProperties_2</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>GetComponentProperties_2</to>
+				<output>value</output>
 			</connection>
 			<connection>
 				<from>MatrixPosition_1</from>
@@ -324,10 +342,10 @@
 				<output>local</output>
 			</connection>
 			<connection>
-				<from>ContextGetSelf_1</from>
-				<input>gameObject</input>
-				<to>GetParentOf_1</to>
-				<output>value</output>
+				<from>CreateMatrix_1</from>
+				<input>a</input>
+				<to>MatrixScale_2</to>
+				<output>res</output>
 			</connection>
 			<connection>
 				<from>GetVariable_1</from>
@@ -339,6 +357,12 @@
 				<from>GetVariable_1</from>
 				<input>z</input>
 				<to>CreateVector_2</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>GetParentOf_1</to>
 				<output>value</output>
 			</connection>
 		</connections>

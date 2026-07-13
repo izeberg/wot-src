@@ -11,7 +11,6 @@
 			<block>
 				<class>FrameEvent</class>
 				<id>FrameEvent_1</id>
-				<params/>
 				<slots>
 					<slot>
 						<name>active</name>
@@ -26,7 +25,6 @@
 			<block>
 				<class>FlowGate</class>
 				<id>FlowGate_1</id>
-				<params/>
 				<slots>
 					<slot>
 						<name>openAtStart</name>
@@ -37,8 +35,6 @@
 			<block>
 				<class>StopPlan</class>
 				<id>StopPlan_1</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>SetParticleParameter</class>
@@ -60,20 +56,17 @@
 			<block>
 				<class>StartScript</class>
 				<id>StartScript_1</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>GetComponentProperty</class>
-				<id>GetComponentProperty_1</id>
+				<id>GetComponentProperty_2</id>
 				<params>
 					<param>
-						Transform.world
+						Transform.world_pos
 						<name>Component Type</name>
 						<type>StringT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>SetParticleParameter</class>
@@ -85,12 +78,10 @@
 						<type>StringT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>CreateColor</class>
 				<id>CreateColor_1</id>
-				<params/>
 				<slots>
 					<slot>
 						<name>r</name>
@@ -121,7 +112,6 @@
 						<type>StringT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>Constant</class>
@@ -133,18 +123,10 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>MatrixPosition</class>
-				<id>MatrixPosition_1</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>CurvePoint</class>
 				<id>CurvePoint_1</id>
-				<params/>
 				<slots>
 					<slot>
 						<name>curve_id</name>
@@ -162,13 +144,10 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>AbsoluteFloat</class>
 				<id>AbsoluteFloat_1</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>SubtractVector</class>
@@ -180,19 +159,14 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>Get Player Vehicle</class>
 				<id>Get Player Vehicle_1</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>GetVehicleTransform</class>
 				<id>GetVehicleTransform_1</id>
-				<params/>
-				<slots/>
 			</block>
 		</blocks>
 		<connections>
@@ -215,19 +189,19 @@
 				<output>failure</output>
 			</connection>
 			<connection>
-				<from>GetComponentProperty_1</from>
-				<input>input</input>
-				<to>StopPlan_1</to>
-				<output>failure</output>
-			</connection>
-			<connection>
 				<from>SetParticleParameter_2</from>
 				<input>input</input>
 				<to>StopPlan_1</to>
 				<output>failure</output>
 			</connection>
 			<connection>
-				<from>GetComponentProperty_1</from>
+				<from>GetComponentProperty_2</from>
+				<input>input</input>
+				<to>StopPlan_1</to>
+				<output>failure</output>
+			</connection>
+			<connection>
+				<from>GetComponentProperty_2</from>
 				<input>in</input>
 				<to>SetParticleParameter_2</to>
 				<output>out</output>
@@ -241,13 +215,13 @@
 			<connection>
 				<from>StartScript_1</from>
 				<input>in</input>
-				<to>GetComponentProperty_1</to>
+				<to>GetComponentProperty_2</to>
 				<output>out</output>
 			</connection>
 			<connection>
 				<from>ContextGetSelf_1</from>
 				<input>gameObject</input>
-				<to>GetComponentProperty_1</to>
+				<to>GetComponentProperty_2</to>
 				<output>value</output>
 			</connection>
 			<connection>
@@ -275,16 +249,10 @@
 				<output>y</output>
 			</connection>
 			<connection>
-				<from>MatrixPosition_1</from>
+				<from>GetComponentProperty_2</from>
 				<input>value</input>
 				<to>Constant_1</to>
-				<output>res</output>
-			</connection>
-			<connection>
-				<from>GetComponentProperty_1</from>
-				<input>a</input>
-				<to>MatrixPosition_1</to>
-				<output>world</output>
+				<output>world_pos</output>
 			</connection>
 			<connection>
 				<from>AbsoluteFloat_1</from>

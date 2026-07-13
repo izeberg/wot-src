@@ -1,11 +1,11 @@
 import CGF
-from cgf_script.component_meta_class import CGFMetaTypes, ComponentProperty, registerComponent
+from cgf_script.registration import ComponentProperty, registerComponent
 from gui.pet_system.constants import StorageStateKey
 
 @registerComponent
 class StorageStateComponent(object):
-    domain = CGF.DomainOption.DomainClient
+    group = 'Pet system'
     editorTitle = 'Pet Storage State Component'
-    category = 'Pet system'
+    domain = CGF.Domain.Client
     names = {name:name for name in StorageStateKey.ALL}
-    storageObjectKey = ComponentProperty(type=CGFMetaTypes.STRING, editorName='storage object key', value='active', annotations={'comboBox': names})
+    storageObjectKey = ComponentProperty(type=CGF.PropertyType.String, editorName='storage object key', value='active', annotations={'comboBox': names})

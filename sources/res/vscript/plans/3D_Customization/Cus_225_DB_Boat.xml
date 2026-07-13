@@ -47,7 +47,7 @@
 			</block>
 			<block>
 				<class>If</class>
-				<id>If_21</id>
+				<id>If_20</id>
 			</block>
 			<block>
 				<class>If</class>
@@ -56,6 +56,20 @@
 			<block>
 				<class>If</class>
 				<id>If_13</id>
+			</block>
+			<block>
+				<class>OnAnyVehicleDestroyed</class>
+				<id>OnAnyVehicleDestroyed_2</id>
+				<slots>
+					<slot>
+						<name>active</name>
+						<const>\true\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_21</id>
 			</block>
 			<block>
 				<class>ComponentMethod</class>
@@ -75,23 +89,6 @@
 				</slots>
 			</block>
 			<block>
-				<class>ComponentMethod</class>
-				<id>ComponentMethod_18</id>
-				<params>
-					<param>
-						Animator.getDurationByName
-						<name>Component Type</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>arg#0</name>
-						<const>\trigger\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
 				<class>SetVariable</class>
 				<id>SetVariable_2</id>
 				<buddy>Variable_6</buddy>
@@ -106,6 +103,23 @@
 					<slot>
 						<name>value</name>
 						<const>\true\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>ComponentMethod</class>
+				<id>ComponentMethod_18</id>
+				<params>
+					<param>
+						Animator.getDurationByName
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>arg#0</name>
+						<const>\trigger\</const>
 					</slot>
 				</slots>
 			</block>
@@ -160,16 +174,6 @@
 				</slots>
 			</block>
 			<block>
-				<class>OnAnyVehicleDestroyed</class>
-				<id>OnAnyVehicleDestroyed_2</id>
-				<slots>
-					<slot>
-						<name>active</name>
-						<const>\true\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
 				<class>ComponentMethod</class>
 				<id>ComponentMethod_20</id>
 				<params>
@@ -185,10 +189,6 @@
 						<const>\trigger\</const>
 					</slot>
 				</slots>
-			</block>
-			<block>
-				<class>IsVehicleValid</class>
-				<id>IsVehicleValid_2</id>
 			</block>
 			<block>
 				<class>ComponentMethod</class>
@@ -210,6 +210,21 @@
 						<const>\0.000000\</const>
 					</slot>
 				</slots>
+			</block>
+			<block>
+				<class>IsVehicleValid</class>
+				<id>IsVehicleValid_2</id>
+			</block>
+			<block>
+				<class>And</class>
+				<id>And_2</id>
+				<params>
+					<param>
+						2
+						<name>Input Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
 			</block>
 			<block>
 				<class>CompareVehicles</class>
@@ -244,6 +259,14 @@
 				</params>
 			</block>
 			<block>
+				<class>CompareVehicles</class>
+				<id>CompareVehicles_9</id>
+			</block>
+			<block>
+				<class>IsVehicleValid</class>
+				<id>IsVehicleValid_1</id>
+			</block>
+			<block>
 				<class>GetVehicleGameObject</class>
 				<id>GetVehicleGameObject_1</id>
 			</block>
@@ -254,22 +277,22 @@
 		</blocks>
 		<connections>
 			<connection>
-				<from>OnAnyVehicleDestroyed_2</from>
+				<from>If_21</from>
 				<input>input</input>
-				<to>If_21</to>
-				<output>onDestroyed</output>
+				<to>If_20</to>
+				<output>true</output>
 			</connection>
 			<connection>
-				<from>IsVehicleValid_2</from>
+				<from>CompareVehicles_9</from>
 				<input>value</input>
-				<to>If_21</to>
+				<to>If_20</to>
 				<output>res</output>
 			</connection>
 			<connection>
-				<from>If_21</from>
+				<from>If_20</from>
 				<input>input</input>
 				<to>If_22</to>
-				<output>true</output>
+				<output>false</output>
 			</connection>
 			<connection>
 				<from>CompareVehicles_8</from>
@@ -290,6 +313,18 @@
 				<output>value</output>
 			</connection>
 			<connection>
+				<from>OnAnyVehicleDestroyed_2</from>
+				<input>input</input>
+				<to>If_21</to>
+				<output>onDestroyed</output>
+			</connection>
+			<connection>
+				<from>And_2</from>
+				<input>value</input>
+				<to>If_21</to>
+				<output>res</output>
+			</connection>
+			<connection>
 				<from>SetVariable_2</from>
 				<input>in</input>
 				<to>ComponentMethod_21</to>
@@ -302,6 +337,12 @@
 				<output>value</output>
 			</connection>
 			<connection>
+				<from>If_13</from>
+				<input>input</input>
+				<to>SetVariable_2</to>
+				<output>false</output>
+			</connection>
+			<connection>
 				<from>ComponentMethod_19</from>
 				<input>in</input>
 				<to>ComponentMethod_18</to>
@@ -312,12 +353,6 @@
 				<input>gameObject</input>
 				<to>ComponentMethod_18</to>
 				<output>value</output>
-			</connection>
-			<connection>
-				<from>If_13</from>
-				<input>input</input>
-				<to>SetVariable_2</to>
-				<output>false</output>
 			</connection>
 			<connection>
 				<from>ComponentMethod_18</from>
@@ -362,12 +397,6 @@
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>OnAnyVehicleDestroyed_2</from>
-				<input>vehicle</input>
-				<to>IsVehicleValid_2</to>
-				<output>attacker</output>
-			</connection>
-			<connection>
 				<from>SetVariable_4</from>
 				<input>in</input>
 				<to>ComponentMethod_22</to>
@@ -381,6 +410,24 @@
 			</connection>
 			<connection>
 				<from>OnAnyVehicleDestroyed_2</from>
+				<input>vehicle</input>
+				<to>IsVehicleValid_2</to>
+				<output>attacker</output>
+			</connection>
+			<connection>
+				<from>IsVehicleValid_2</from>
+				<input>i1</input>
+				<to>And_2</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>IsVehicleValid_1</from>
+				<input>i2</input>
+				<to>And_2</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>OnAnyVehicleDestroyed_2</from>
 				<input>a</input>
 				<to>CompareVehicles_8</to>
 				<output>attacker</output>
@@ -390,6 +437,24 @@
 				<input>b</input>
 				<to>CompareVehicles_8</to>
 				<output>vehicle</output>
+			</connection>
+			<connection>
+				<from>OnAnyVehicleDestroyed_2</from>
+				<input>a</input>
+				<to>CompareVehicles_9</to>
+				<output>target</output>
+			</connection>
+			<connection>
+				<from>GameObjectToVehicle_2</from>
+				<input>b</input>
+				<to>CompareVehicles_9</to>
+				<output>vehicle</output>
+			</connection>
+			<connection>
+				<from>OnAnyVehicleDestroyed_2</from>
+				<input>vehicle</input>
+				<to>IsVehicleValid_1</to>
+				<output>target</output>
 			</connection>
 			<connection>
 				<from>ContextGetSelf_1</from>

@@ -1,8 +1,11 @@
-import heapq, logging
+from __future__ import absolute_import
+import functools, heapq, logging
 from collections import defaultdict
+from future.utils import viewvalues
 from BWUtil import AsyncReturn
 from debug_utils import LOG_CURRENT_EXCEPTION
 from adisp import adisp_process, isAsync
+from shared_utils import safeExecute
 from wg_async import wg_async, wg_await, await_callback, isWgAsync
 _logger = logging.getLogger(__name__)
 
@@ -90,17 +93,14 @@ class EventBus(object):
             return
         handlers = self.__handlers[scope][event.eventType]
         for handler in handlers:
-            try:
-                handler(event)
-            except TypeError:
-                LOG_CURRENT_EXCEPTION()
+            safeExecute(functools.partial(handler, event))
 
     def clear(self):
-        for _, events in self.__handlers.iteritems():
+        for events in viewvalues(self.__handlers):
             events.clear()
 
         self.__handlers.clear()
-        for _, events in self.__restrictions.iteritems():
+        for events in viewvalues(self.__restrictions):
             events.clear()
 
         self.__restrictions.clear()
@@ -118,7 +118,7 @@ class EventBus(object):
                     proceed = restriction(event)
                 if not proceed:
                     raise AsyncReturn(False)
-            except TypeError:
+            except Exception:
                 LOG_CURRENT_EXCEPTION()
 
         raise AsyncReturn(True)
@@ -141,6 +141,8 @@ class SharedEvent(object):
 
     def __eq__(self, other):
         return other is not None and self.__dict__ == other.__dict__
+
+    __hash__ = object.__hash__
 
 
 SharedEventType = type(SharedEvent)

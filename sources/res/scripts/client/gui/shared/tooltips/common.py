@@ -1,5 +1,9 @@
-import cPickle, json, logging, math
+from __future__ import absolute_import, division
+import json, logging, math
+from builtins import map
 from collections import namedtuple, defaultdict
+from future.moves import pickle
+from future.utils import viewvalues
 from gui.impl.lobby.collection.tooltips.collection_item_tooltip_view import CollectionItemTooltipView
 from gui.impl.lobby.personal_reserves.booster_tooltip import BoosterTooltip
 from gui.impl.lobby.personal_reserves.quest_booster_tooltip import QuestBoosterTooltip
@@ -95,7 +99,7 @@ class IgrTooltipData(ToolTipBaseData):
         premVehQuests = []
         if self.igrCtrl.getRoomType() in (constants.IGR_TYPE.PREMIUM, constants.IGR_TYPE.BASE):
             quests = self.eventsCache.getQuests()
-            for q in quests.itervalues():
+            for q in viewvalues(quests):
                 if self.igrCtrl.getRoomType() == constants.IGR_TYPE.PREMIUM:
                     template = g_htmlTemplates['html_templates:lobby/tooltips']['igr_quest']
                     if q.accountReqs.hasIGRCondition() and not q.hasPremIGRVehBonus():
@@ -555,11 +559,11 @@ class ServersInfoTooltipData(BlocksTooltipData):
     def _packBlocks(self, *args, **kwargs):
         self.item = self.context.buildItem(*args, **kwargs)
         items = super(ServersInfoTooltipData, self)._packBlocks(*args, **kwargs)
-        serverBlocks = list()
-        serverBlocks.append(formatters.packTextBlockData(text_styles.middleTitle(backport.text(R.strings.tooltips.header.menu.server())), padding=formatters.packPadding(0, 0, 4)))
+        serverBlocks = [
+         formatters.packTextBlockData(text_styles.middleTitle(backport.text(R.strings.tooltips.header.menu.server())), padding=formatters.packPadding(0, 0, 4))]
         simpleHostList = g_preDefinedHosts.getSimpleHostsList(g_preDefinedHosts.hostsWithRoaming())
         isColorBlind = self.settingsCore.getSetting('isColorBlind')
-        if self.connectionMgr.peripheryID == 0:
+        if self.connectionMgr.peripheryID == constants.STANDALONE_CLUSTER_ID:
             serverBlocks.append(self.__packServerBlock(self.connectionMgr.serverUserName, self.__getPingData(self.connectionMgr.url), HOST_AVAILABILITY.IGNORED, True, isColorBlind))
         if simpleHostList:
             currServUrl = self.connectionMgr.url
@@ -700,11 +704,11 @@ class ActionTooltipData(ToolTipBaseData):
                     hasRentCompensation = True
                     rentCompensation = item.rentCompensation.gold
         elif itemType == ACTION_TOOLTIPS_TYPE.CAMOUFLAGE:
-            intCD, itemType = cPickle.loads(key)
+            intCD, itemType = pickle.loads(key)
             item = self.itemsCache.items.getItemByCD(int(intCD))
             itemName = '%s/camouflage/priceFactor' % item.name.split(':')[(-1)]
         elif itemType == ACTION_TOOLTIPS_TYPE.EMBLEMS:
-            group, itemType = cPickle.loads(key)
+            group, itemType = pickle.loads(key)
             itemName = '%s/priceFactor' % group
         elif itemType == ACTION_TOOLTIPS_TYPE.AMMO:
             item = self.itemsCache.items.getItemByCD(int(key))
@@ -840,13 +844,11 @@ class ToolTipFortWrongTime(ToolTipBaseData):
         if wrongState == 'wrongTime':
             return {'header': i18n.makeString(TOOLTIPS.FORTWRONGTIME_HEADER), 
                'body': i18n.makeString(TOOLTIPS.FORTWRONGTIME_BODY, local=backport.getShortTimeFormat(time_utils.getCurrentTimestamp()), server=backport.getShortTimeFormat(time_utils.getCurrentLocalServerTimestamp()))}
-        else:
-            if (wrongState == 'lockTime' or wrongState == 'ownDefenceTime') and timePeriods is not None and len(timePeriods) >= 1:
-                timeStart, timeFinish = timePeriods[0]
-                return {'header': i18n.makeString(TOOLTIPS.FORTWRONGTIME_LOCKTIME_HEADER), 
-                   'body': i18n.makeString(TOOLTIPS.FORTWRONGTIME_LOCKTIME_BODY, timeStart=formatReceivedData(timeStart), timeFinish=formatReceivedData(timeFinish))}
-            raise SoftException('%s: Unexpected state: %s' % (self, wrongState))
-            return
+        if wrongState in ('lockTime', 'ownDefenceTime') and timePeriods:
+            timeStart, timeFinish = timePeriods[0]
+            return {'header': i18n.makeString(TOOLTIPS.FORTWRONGTIME_LOCKTIME_HEADER), 
+               'body': i18n.makeString(TOOLTIPS.FORTWRONGTIME_LOCKTIME_BODY, timeStart=formatReceivedData(timeStart), timeFinish=formatReceivedData(timeFinish))}
+        raise SoftException('%s: Unexpected state: %s' % (self, wrongState))
 
 
 class MapSmallTooltipData(ToolTipBaseData):
@@ -871,7 +873,7 @@ class QuestVehiclesBonusTooltipData(ToolTipBaseData):
         vehiclesList = []
         oneColumnLen = 20
         maxItemsLen = 60
-        maxColumnLen = maxItemsLen / 2
+        maxColumnLen = maxItemsLen // 2
         for b in bonuses:
             if b.isShowInGUI():
                 flist = b.formattedList()
@@ -1447,10 +1449,10 @@ class VehicleHistoricalReferenceTooltipData(BlocksTooltipData):
     def _packBlocks(self, *args, **kwargs):
         item = self.context.buildItem(*args, **kwargs)
         content = super(VehicleHistoricalReferenceTooltipData, self)._packBlocks(*args, **kwargs)
-        blocks = list()
-        blocks.append(formatters.packImageBlockData(img=('../maps/icons/flags/160x100/{}.png').format(item.nationName), align=BLOCKS_TOOLTIP_TYPES.ALIGN_LEFT, padding={'left': -19}))
-        blocks.append(formatters.packTextBlockData(text_styles.highTitle(TOOLTIPS.VEHICLEPREVIEW_HISTORICALREFERENCE_TITLE), padding={'top': -72}))
-        blocks.append(formatters.packTextBlockData(text_styles.main(item.fullDescription), padding={'top': 10}))
+        blocks = [
+         formatters.packImageBlockData(img=('../maps/icons/flags/160x100/{}.png').format(item.nationName), align=BLOCKS_TOOLTIP_TYPES.ALIGN_LEFT, padding={'left': -19}),
+         formatters.packTextBlockData(text_styles.highTitle(TOOLTIPS.VEHICLEPREVIEW_HISTORICALREFERENCE_TITLE), padding={'top': -72}),
+         formatters.packTextBlockData(text_styles.main(item.fullDescription), padding={'top': 10})]
         content.append(formatters.packBuildUpBlockData(blocks))
         return content
 
@@ -1497,7 +1499,7 @@ class TechTreeDiscountInfoTooltip(TechTreeEventTooltipBase):
         return items
 
     def __packActionBlock(self, actionIDs, packHeader=False):
-        blocks = list()
+        blocks = []
         if packHeader:
             blocks.append(self._actionNameBlock(backport.text(R.strings.tooltips.techTreePage.event.name(), eventName=self._eventsListener.getUserName(actionIDs[0])), backport.text(R.strings.tooltips.header.buttons.techtree.extended.description()), backport.image(R.images.gui.maps.icons.library.discount())))
         else:
@@ -1524,9 +1526,9 @@ class TechTreeNationDiscountTooltip(TechTreeEventTooltipBase):
         closestAction = self._eventsListener.getActiveAction(nationID=nationID)
         if nationID not in self._eventsListener.getNations():
             return items
-        blocks = list()
-        blocks.append(self._actionNameBlock(backport.text(R.strings.tooltips.techTreePage.event.name(), eventName=self._eventsListener.getUserName(closestAction)), backport.text(R.strings.tooltips.techTreePage.event.description(), nation=backport.text(R.strings.nations.dyn(nation).genetiveCase())), backport.image(R.images.gui.maps.icons.library.discount())))
-        blocks.append(self._actionExpireBlock(closestAction))
+        blocks = [
+         self._actionNameBlock(backport.text(R.strings.tooltips.techTreePage.event.name(), eventName=self._eventsListener.getUserName(closestAction)), backport.text(R.strings.tooltips.techTreePage.event.description(), nation=backport.text(R.strings.nations.dyn(nation).genetiveCase())), backport.image(R.images.gui.maps.icons.library.discount())),
+         self._actionExpireBlock(closestAction)]
         items.append(formatters.packBuildUpBlockData(blocks))
         return items
 

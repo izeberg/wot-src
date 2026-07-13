@@ -1,4 +1,6 @@
+from __future__ import absolute_import
 from datetime import datetime
+from past.utils import old_div
 from gui.impl import backport
 from gui.impl.gen import R
 from gui.shared.formatters import text_styles
@@ -23,7 +25,7 @@ class RankedCalendarDayExtendedTooltip(RankedCalendarDayTooltip):
         blocks = []
         currentSeason = self.__rankedController.getCurrentSeason()
         if currentSeason:
-            daysLeft = int((currentSeason.getEndDate() - time_utils.getServerUTCTime()) / time_utils.ONE_DAY)
+            daysLeft = int(old_div(currentSeason.getEndDate() - time_utils.getServerUTCTime(), time_utils.ONE_DAY))
             seasonName = currentSeason.getUserName() or currentSeason.getNumber()
             blocks.append(self.__packTimeLeftBlock(seasonName, daysLeft))
         blocks.append(self._packHeaderBlock())

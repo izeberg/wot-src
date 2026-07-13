@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from constants import REQUEST_COOLDOWN
 from external_strings_utils import truncate_utf8
 from gui.prb_control import settings as prb_settings

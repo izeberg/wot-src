@@ -1,7 +1,9 @@
-from debug_utils import LOG_DEBUG
+from __future__ import absolute_import
+import logging
 from helpers import dependency
 from skeletons.gui.game_control import IReloginController
 from skeletons.helpers.statistics import IStatisticsCollector
+_logger = logging.getLogger(__name__)
 
 class ReloginController(IReloginController):
     statsCollector = dependency.descriptor(IStatisticsCollector)
@@ -22,7 +24,7 @@ class ReloginController(IReloginController):
 
     def doRelogin(self, peripheryID, onStoppedHandler=None, extraChainSteps=None):
         from gui.shared import actions
-        LOG_DEBUG('Attempt to relogin to the another periphery', peripheryID)
+        _logger.debug('Attempt to relogin to the another periphery. peripheryID: %s', peripheryID)
         chain = [
          actions.LeavePrbModalEntity(),
          actions.DisconnectFromPeriphery(loginViewPreselectedPeriphery=peripheryID),
@@ -39,7 +41,7 @@ class ReloginController(IReloginController):
         if self.__reloginStoppedHandler is not None:
             self.__reloginStoppedHandler(isCompleted)
         self.statsCollector.needCollectSystemData(True)
-        LOG_DEBUG('Relogin finished', isCompleted)
+        _logger.debug('Relogin finished. isCompleted=%s', isCompleted)
         return
 
     def __clearReloginChain(self):

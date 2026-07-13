@@ -1,8 +1,9 @@
+from __future__ import absolute_import
 from visual_script.misc import ASPECT
 from visual_script.registrar import VSBlockRegistrar
 from visual_script.contexts.perks_context import PerkContext, CrewContext, PerkNotifyState
 from visual_script.contexts.cgf_context import CGFGameObjectContext
-import ability_common, example, general, vehicle_blocks, qa_blocks, qa_education_blocks, balance, entity_blocks, arena_blocks, dictionary_blocks, debug_manager_blocks, cgf_blocks, commendations_common, vehicle_mechanics_blocks, command_flow
+from visual_script import ability_common, example, general, vehicle_blocks, qa_blocks, qa_education_blocks, balance, entity_blocks, arena_blocks, dictionary_blocks, debug_manager_blocks, cgf_blocks, commendations_common, vehicle_mechanics_blocks, command_flow
 g_blockRegistrar = VSBlockRegistrar(ASPECT.CLIENT, ASPECT.SERVER)
 g_blockRegistrar.regBlocksFromModule(example)
 g_blockRegistrar.regTypesFromModule(example)

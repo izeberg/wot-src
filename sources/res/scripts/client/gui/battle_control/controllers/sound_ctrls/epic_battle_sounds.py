@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import SoundGroups
 from BattleFeedbackCommon import BATTLE_EVENT_TYPE
 from constants import EQUIPMENT_STAGES, VEHICLE_HIT_FLAGS as VHF

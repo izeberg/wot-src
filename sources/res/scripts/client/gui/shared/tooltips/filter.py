@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import constants
 from frameworks.wulf import WindowLayer
 from helpers import dependency

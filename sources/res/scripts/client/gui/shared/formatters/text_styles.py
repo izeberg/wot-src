@@ -1,4 +1,7 @@
+from __future__ import absolute_import
 import re, types
+from builtins import map
+from past.builtins import basestring
 from gui import makeHtmlString
 from gui.shared.money import Currency
 from helpers import i18n
@@ -78,7 +81,7 @@ def _getStyle(style, ctx=None):
 
 
 def _formatText(style, text=''):
-    if isinstance(text, types.StringTypes) and i18n.isValidKey(text):
+    if isinstance(text, basestring) and i18n.isValidKey(text):
         text = i18n.makeString(text)
     return _getStyle(style, {'message': text})
 
@@ -548,11 +551,11 @@ def bptaler(text):
 
 
 def getRawStyles(names):
-    return dict((name, _getStyle(name)) for name in names)
+    return {name:_getStyle(name) for name in names}
 
 
 def getStyles(names):
-    return dict((name, _formatText(name)) for name in names)
+    return {name:_formatText(name) for name in names}
 
 
 def _processStyle(style):
@@ -560,8 +563,7 @@ def _processStyle(style):
         if not style:
             raise SoftException('Empty sequence')
         return _formatText(*style[:1])
-    else:
-        return _formatText(style)
+    return _formatText(style)
 
 
 def concatStylesToSingleLine(*styles):

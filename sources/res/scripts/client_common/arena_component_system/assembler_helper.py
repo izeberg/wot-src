@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from battleground.airdrops import AirdropsComponent
 from battleground.berserker_effect import BerserkerEffectComponent
 from constants import ARENA_BONUS_TYPE

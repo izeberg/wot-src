@@ -1,7 +1,8 @@
-from abstract import ClassProgressAchievement
-from abstract.mixins import Deprecated, Fortification, NoProgressBar
+from __future__ import absolute_import
 from dossiers2.ui.achievements import ACHIEVEMENT_BLOCK as _AB
 from gui.shared.gui_items.dossier.achievements import validators
+from gui.shared.gui_items.dossier.achievements.abstract import ClassProgressAchievement
+from gui.shared.gui_items.dossier.achievements.abstract.mixins import Deprecated, Fortification, NoProgressBar
 
 class BattleTestedAchievement(ClassProgressAchievement):
     __slots__ = ()
