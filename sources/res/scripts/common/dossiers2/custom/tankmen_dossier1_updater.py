@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import dossiers2, struct
 __TANKMAN_LAYOUT_10 = [
  '_version',

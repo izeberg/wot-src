@@ -19,15 +19,6 @@ msgstr "开启后，您将有机会从这些补给品中获得稀有的X级金�
 msgid "boxTooltip/description/text/silver"
 msgstr "开启后，您将有机会从这些补给品中获得IX级金币坦克、游戏内货币，以及其他珍贵奖励。"
 
-msgid "boxTooltip/guaranteed/text/bronze"
-msgstr "再开启%(count)个补给品即可获得保底奖励"
-
-msgid "boxTooltip/guaranteed/text/gold"
-msgstr "再开启%(count)个补给品即可获得保底奖励"
-
-msgid "boxTooltip/guaranteed/text/silver"
-msgstr "再开启%(count)个补给品即可获得保底奖励"
-
 msgid "boxTooltip/howGet/text/bronze"
 msgstr "可作为在特惠商城中购买物品的奖励获得，也可在开启其他类型的补给品时获得。"
 
@@ -59,9 +50,6 @@ msgid "entryPoint/tooltip/description"
 msgstr ""
 "这些特殊补给品内含全新且独特的VIII–X级坦克和其他奖励。\n"
 "该补给品可作为在特惠商城中购买物品的奖励获得，也可在开启其他类型的补给品时获得。"
-
-msgid "entryPoint/tooltip/title"
-msgstr "天赐之福补给品及其获取方式"
 
 msgid "entryPoint/tooltip/warningDescription"
 msgstr "由于技术原因，目前无法开启或获取补给品。我们对造成的不便深表歉意。"
@@ -97,15 +85,6 @@ msgid "noBoxesView/description/"
 msgstr ""
 "您没有任何补给品。\n"
 "您可在特惠商城中购买补给品礼包。"
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/count"
-msgstr "已开启补给品: %(boxes)s"
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/header"
-msgstr "已开启剩余的补给品"
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/text"
-msgstr "活动结束后，我们开启了您全部的补给品，所含奖励已添加至您的账号。"
 
 msgid "singleRewardView/tooltip/boxName/"
 msgstr "天选补给品"

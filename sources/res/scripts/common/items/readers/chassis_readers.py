@@ -1,4 +1,8 @@
-import math, ResMgr
+from __future__ import absolute_import
+import math
+from future.utils import lrange
+from past.builtins import intern
+import ResMgr
 from items import _xml
 from items.components import chassis_components
 from items.components import component_constants
@@ -36,7 +40,7 @@ def readWheelsAndGroups(xmlCtx, section):
             wheelId += 1
 
     wheelIndices = [ wheel.index for wheel in wheels ]
-    if sorted(wheelIndices) == range(len(wheels)):
+    if sorted(wheelIndices) == lrange(len(wheels)):
         sortedWheels = [
          None] * len(wheels)
         for wheel in wheels:

@@ -1,8 +1,11 @@
+from __future__ import absolute_import
 from inspect import getmembers
 from enumerations import Enumeration
 from enum import IntEnum
-from misc import EDITOR_TYPE, ASPECT
+from future.utils import viewitems, viewvalues
 from typing import Any, List
+from visual_script.misc import EDITOR_TYPE, ASPECT
+from py2to3.patched_future import with_metaclass
 __all__ = ('VScriptType', 'VScriptEnum', 'VScriptStruct', 'VScriptStructField')
 
 class VScriptType(object):
@@ -77,7 +80,7 @@ class VScriptEnum(object):
 
         elif isinstance(cls.vs_enum(), dict):
             enum = cls.vs_enum()
-            for name, value in enum.iteritems():
+            for name, value in viewitems(enum):
                 if isinstance(name, str) and isinstance(value, int):
                     entriesData[name] = value
 
@@ -118,7 +121,7 @@ class AllowVScriptStruct(type):
             if hasattr(base, 'vs_fields'):
                 fieldData.update(base.vs_fields)
 
-        for key, value in members.iteritems():
+        for value in viewvalues(members):
             if isinstance(value, VScriptStructField):
                 fieldData[value.name[1:]] = value.type
 
@@ -126,8 +129,7 @@ class AllowVScriptStruct(type):
         return type.__new__(cls, name, bases, members)
 
 
-class VScriptStruct(object):
-    __metaclass__ = AllowVScriptStruct
+class VScriptStruct(with_metaclass(AllowVScriptStruct, object)):
 
     def __new__(cls, *args, **kwargs):
         return super(VScriptStruct, cls).__new__(cls)

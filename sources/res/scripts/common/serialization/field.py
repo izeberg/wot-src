@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from .definitions import FieldTypes, FieldType, FieldFlags
 __all__ = ('arrayField', 'intField', 'strField', 'xmlOnlyIntField', 'xmlOnlyFloatField',
            'xmlOnlyFloatArrayField', 'applyAreaEnumField', 'xmlOnlyApplyAreaEnumField',

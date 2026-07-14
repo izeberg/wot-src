@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from collections import namedtuple
 from skeletons.gui.game_control import IFunRandomController
 _FunRandomConfig = namedtuple('_FunRandomConfig', ('isEnabled', 'subModes', 'metaProgression'))

@@ -467,6 +467,21 @@ class _VehsListCondition(_Condition, _VehsListParser):
     def getAttackReason(self):
         return ATTACK_REASONS[self.getAttackReasonIdx()]
 
+    def getDistance(self):
+        return _getNodeValue(self._data, 'distance', default=None)
+
+    def getTimeLimit(self):
+        return _getNodeValue(self._data, 'limittedTime', default=None)
+
+    def getWhileInvisible(self):
+        return _getNodeValue(self._data, 'whileInvisible', default=False)
+
+    def getWhileFullHealth(self):
+        return _getNodeValue(self._data, 'whileFullHealth', default=False)
+
+    def getClassesDiversity(self):
+        return _getNodeValue(self._data, 'classesDiversity', default=None)
+
     def getLabelKey(self):
         raise SoftException('This method should not be reached in this context')
 
@@ -1284,6 +1299,7 @@ class BattleResults(_Condition, _Negatable, _Updatable):
          self.TOP_RANGE_HIGHEST, int(_getNodeValue(self._data, 'max', self.TOP_RANGE_LOWEST)))
         self._isTotal = 'total' in self._data
         self._isAvg = 'average' in self._data
+        self._compareWithMaxHealth = 'compareWithMaxHealth' in self._data
         self._relation = _findRelation(self._data.keys())
         self._relationValue = _getNodeValue(self._data, self._relation)
         self._localeKey = localeKey
@@ -1321,6 +1337,10 @@ class BattleResults(_Condition, _Negatable, _Updatable):
     @property
     def relation(self):
         return self._relation
+
+    @property
+    def compareWithMaxHealth(self):
+        return self._compareWithMaxHealth
 
     def isNegative(self):
         return self._isNegative

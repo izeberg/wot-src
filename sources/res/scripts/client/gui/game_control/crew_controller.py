@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.shared.gui_items.Tankman import NO_SLOT, NO_TANKMAN
 from gui.prb_control.entities.listener import IGlobalListener
 from helpers import dependency

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.shared.tooltips import ToolTipBaseData
 from gui.Scaleform.genConsts.TOOLTIPS_CONSTANTS import TOOLTIPS_CONSTANTS
 from gui.impl.backport.backport_tooltip import DecoratedTooltipWindow

@@ -1,6 +1,11 @@
-from __future__ import print_function
-import __builtin__, os, traceback, sys, pydoc, fnmatch, logging, BigWorld, BWLogging, BWUtil, ResMgr, bwdeprecations
+from __future__ import absolute_import, print_function
+import os, traceback, sys, pydoc, fnmatch, logging, BigWorld, BWLogging, BWUtil, ResMgr, bwdeprecations
 from bwdebug import NOTICE_MSG
+try:
+    import builtins
+except ImportError:
+    import __builtin__ as builtins
+
 DEFAULT_ENCODING = 'utf-8'
 PLATFORM_SUFFIX = BWUtil.getPlatformSuffix()
 
@@ -14,7 +19,7 @@ class _Helper(object):
 
 
 def set_helper():
-    __builtin__.help = _Helper()
+    builtins.help = _Helper()
 
 
 def set_default_encoding():
@@ -36,7 +41,7 @@ def resMgrListDir(path, fnpat=None):
 
 
 def resMgrDirExists(path):
-    return ResMgr.openSection(path) != None
+    return ResMgr.openSection(path) is not None
 
 
 def getsitepackages():
@@ -70,9 +75,9 @@ def addpackage(sitedir, name, known_paths):
         reset = 0
     fullname = os.path.join(sitedir, name)
     try:
-        f = open(fullname, 'rU')
-    except IOError as e:
-        print('ioerror', e, fullname, file=sys.stderr)
+        f = builtins.open(fullname, 'rU', encoding='utf-8')
+    except IOError as error:
+        print('ioerror', error, fullname, file=sys.stderr)
         return
 
     with f:
@@ -96,11 +101,11 @@ def addpackage(sitedir, name, known_paths):
                 if dir not in known_paths and resMgrDirExists(relativeDir):
                     sys.path.append(dir)
                     known_paths.add(dir)
-            except Exception as err:
+            except Exception:
                 print(('Error processing line {:d} of {}:\n').format(n + 1, fullname), file=sys.stderr)
                 for record in traceback.format_exception(*sys.exc_info()):
-                    for line in record.splitlines():
-                        print('  ' + line, file=sys.stderr)
+                    for sLine in record.splitlines():
+                        print('  ' + sLine, file=sys.stderr)
 
                 print('\nRemainder of file ignored', file=sys.stderr)
                 break
@@ -158,6 +163,11 @@ def revert_builtin_open_patch():
     BWUtil.revertPatchedOpen()
 
 
+@BWUtil.if_only_not_component('client', 'bot')
+def patch_future_builtins_open():
+    BWUtil.monkeyPatchFutureOpen()
+
+
 @BWUtil.if_only_not_component('process_defs')
 def set_threading_bootstrap():
     import threading
@@ -179,6 +189,7 @@ def main():
     set_default_encoding()
     setup_paths()
     revert_builtin_open_patch()
+    patch_future_builtins_open()
     set_twisted_reactor()
     import bwpydevd
     bwpydevd.startDebug(isStartUp=True)

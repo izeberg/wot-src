@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from builtins import range
 CREW_BOOKS_XML_FILE = 'crewBooks.xml'
 CREW_BOOKS_PRICE_GROUPS_XML_FILE = 'priceGroups.xml'
 CREW_BOOK_TYPES_XML_FILE = 'crewBookTypes.xml'

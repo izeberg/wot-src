@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A186_XM94_Shadow/normal/lod3/Turret_01</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/american/A186_XM94_Shadow/normal/lod4/Turret_01</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.291719 -0.104186 -1.990593</min>
+		<max>1.208018 3.108634 1.289678</max>
+	</visibilityBox>
+</root>

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld, constants
 from PlayerEvents import g_playerEvents
 from account_helpers import AccountSettings

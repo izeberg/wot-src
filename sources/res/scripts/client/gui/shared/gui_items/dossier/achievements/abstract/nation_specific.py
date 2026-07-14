@@ -1,7 +1,9 @@
-from simple_progress import SimpleProgressAchievement
+from __future__ import absolute_import
+from past.builtins import cmp
 from dossiers2.custom import cache
 from dossiers2.custom.cache import getCache as getDossiersCache
-from gui import nationCompareByIndex
+from gui import nationSortKeyByIndex
+from gui.shared.gui_items.dossier.achievements.abstract.simple_progress import SimpleProgressAchievement
 
 class NationSpecificAchievement(SimpleProgressAchievement):
     __slots__ = ('_nationID', )
@@ -42,11 +44,11 @@ class NationSpecificAchievement(SimpleProgressAchievement):
     def _getDoneStatus(self, dossier):
         return bool(dossier.getRecordValue(*self.getRecordName()))
 
-    def __cmp__(self, other):
-        res = super(NationSpecificAchievement, self).__cmp__(other)
+    def _compare(self, other):
+        res = super(NationSpecificAchievement, self)._compare(other)
         if res:
             return res
         if isinstance(other, NationSpecificAchievement):
             if self._nationID != -1 and other._nationID != -1:
-                return nationCompareByIndex(self._nationID, other._nationID)
+                return cmp(nationSortKeyByIndex(self._nationID), nationSortKeyByIndex(other._nationID))
         return 0

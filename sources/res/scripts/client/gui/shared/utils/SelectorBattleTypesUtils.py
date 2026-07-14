@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from account_helpers.AccountSettings import AccountSettings, KNOWN_SELECTOR_BATTLES
 
 def setBattleTypeAsKnown(bType):

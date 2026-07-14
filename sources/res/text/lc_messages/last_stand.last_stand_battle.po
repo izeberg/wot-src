@@ -98,6 +98,30 @@ msgstr ""
 msgid "battleHint/destroyEnemies"
 msgstr "需要击毁敌方坦克数量: {num}"
 
+msgid "battleHint/destroyObelisk/subtitle/bonus"
+msgstr "数据点数，%(buffBonus)s"
+
+msgid "battleHint/destroyObelisk/subtitle/bonus/LS_BOT_OBELISK_HP_REGEN"
+msgstr "已修复坦克"
+
+msgid "battleHint/destroyObelisk/subtitle/bonus/LS_BOT_OBELISK_SHIELD"
+msgstr "已获得护盾"
+
+msgid "battleHint/destroyObelisk/subtitle/bonus/LS_BOT_OBELISK_STUN"
+msgstr "已对敌人造成弹震"
+
+msgid "battleHint/destroyObelisk/title"
+msgstr "已摧毁%(name)s方尖碑！"
+
+msgid "battleHint/destroyObelisk/title/name/LS_BOT_OBELISK_HP_REGEN"
+msgstr "恢复型"
+
+msgid "battleHint/destroyObelisk/title/name/LS_BOT_OBELISK_SHIELD"
+msgstr "屏障型"
+
+msgid "battleHint/destroyObelisk/title/name/LS_BOT_OBELISK_STUN"
+msgstr "干扰型"
+
 msgid "battleHint/enemiesFromAbove"
 msgstr "发现出生点！敌方坦克来袭！"
 
@@ -128,7 +152,7 @@ msgstr ""
 "抵达阿特拉斯前阻止它！"
 
 msgid "battleHint/trapper"
-msgstr "击毁捕猎者即可终止能量攻击。"
+msgstr "击毁捕猎者，阻止崩坏区域出现。"
 
 msgid "battleHint/turret"
 msgstr "疟蚊苏醒了！"
@@ -211,20 +235,20 @@ msgid "eventStats/difficulty"
 msgstr "难度: %(difficulty)s"
 
 msgid "eventStats/eventName"
-msgstr "星火燎原:入侵"
+msgstr "星火燎原:北境"
 
 msgid "eventStats/globalTask"
-msgstr "目标: 在敌人的所有攻击波次中幸存"
+msgstr "目标: 消灭所有敌人波次"
 
 msgid "eventStats/mission"
-msgstr "在敌人的所有攻击波次中幸存"
+msgstr "消灭所有敌人波次"
 
 msgid "eventStats/tableCaption"
 msgstr "分队队员"
 
 msgid "help/description_0"
 msgstr ""
-"在敌人的所有攻击波次中幸存下来即可获胜。\n"
+"消灭所有敌方波次即可获胜。\n"
 "敌人会随着波次变得更加强大。"
 
 msgid "help/description_1"
@@ -239,7 +263,7 @@ msgid "help/description_3"
 msgstr "不惜一切代价保护阿特拉斯，抵御最终的余响坦克重置者。如果它抵达阿特拉斯，就会将其摧毁，战斗也将失败。"
 
 msgid "help/title"
-msgstr "星火燎原:入侵"
+msgstr "星火燎原:北境"
 
 msgid "help/title_0"
 msgstr "敌方攻击波次"
@@ -264,7 +288,7 @@ msgstr "无法造成损伤！"
 
 msgid "loading/description_0"
 msgstr ""
-"在敌人的所有攻击波次中存活下来即可获胜。\n"
+"消灭所有敌方波次即可获胜。\n"
 "敌人会随着波次变得更加强大。"
 
 msgid "loading/description_1"
@@ -371,7 +395,7 @@ msgid "postmortem_messages/DEATH_FROM_LS_SHOT"
 msgstr "坦克被敌方射击击毁"
 
 msgid "prebattle/description/message"
-msgstr "目标: 在敌人的所有攻击波次中幸存"
+msgstr "目标: 消灭所有敌人波次"
 
 msgid "prebattle/description/title"
 msgstr "星火燎原: %(difficulty)s难度"
@@ -380,7 +404,7 @@ msgid "prebattle/difficulty/107"
 msgstr "普通"
 
 msgid "prebattle/difficulty/108"
-msgstr "激战"
+msgstr "进阶"
 
 msgid "prebattle/difficulty/109"
 msgstr "残酷"
@@ -403,6 +427,12 @@ msgstr "正在驶往区域！"
 msgid "radialMenu/move_to_magnus"
 msgstr "正在防御"
 
+msgid "radialMenu/obelisk"
+msgstr "方尖碑交给我！"
+
+msgid "radialMenu/obeliskHelp"
+msgstr "摧毁方尖碑！"
+
 msgid "statusNotificationTimers/obeliskShield"
 msgstr "能量护盾"
 
@@ -416,3 +446,12 @@ msgstr ""
 
 msgid "teamList/teammates"
 msgstr "我方"
+
+msgid "voice_chat_panel/hint/chat/off"
+msgstr "关闭语音聊天"
+
+msgid "voice_chat_panel/hint/chat/on"
+msgstr "开启语音聊天"
+
+msgid "voice_chat_panel/hint/talk"
+msgstr "按下即可聊天"

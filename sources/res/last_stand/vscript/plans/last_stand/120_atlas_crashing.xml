@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<info>
+		<name>last_stand/120_atlas_crashing</name>
+		<isMacro>false</isMacro>
+		<version>0</version>
+		<aspect>
+			<compatibles>SERVER</compatibles>
+		</aspect>
+		<blocks>
+			<block>
+				<class>ComponentMethod</class>
+				<id>ComponentMethod_1</id>
+				<params>
+					<param>
+						Sequence.start
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>ContextPropertyGet</class>
+				<id>ContextPropertyGet_1</id>
+				<params>
+					<param>
+						CGFGameObjectContext
+						<name>Context Name</name>
+						<type>StringT</type>
+					</param>
+					<param>
+						getArena
+						<name>Member Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>TriggerExternal</class>
+				<id>TriggerExternal_1</id>
+				<slots>
+					<slot>
+						<name>eventID</name>
+						<const>\LS_AtlasCrashing\</const>
+					</slot>
+					<slot>
+						<name>isActive</name>
+						<const>\true\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>ContextGetSelf</class>
+				<id>ContextGetSelf_1</id>
+				<params>
+					<param>
+						CGFGameObjectContext
+						<name>Context Name</name>
+						<type>StringT</type>
+					</param>
+					<param>
+						getSelf
+						<name>Member Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
+			</block>
+		</blocks>
+		<connections>
+			<connection>
+				<from>TriggerExternal_1</from>
+				<input>in</input>
+				<to>ComponentMethod_1</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>ComponentMethod_1</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>ContextPropertyGet_1</from>
+				<input>arena</input>
+				<to>TriggerExternal_1</to>
+				<output>value</output>
+			</connection>
+		</connections>
+		<macros/>
+		<curves/>
+	</info>
+</root>

@@ -174,8 +174,10 @@
 			<block>
 				<class>If</class>
 				<id>If_1</id>
-				<params/>
-				<slots/>
+			</block>
+			<block>
+				<class>StartScript</class>
+				<id>StartScript_1</id>
 			</block>
 			<block>
 				<class>Macro</class>
@@ -187,13 +189,6 @@
 						<type>StringT</type>
 					</param>
 				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>StartScript</class>
-				<id>StartScript_1</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>HasComponent</class>
@@ -205,7 +200,6 @@
 						<type>StringT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>ContextGetSelf</class>
@@ -222,7 +216,6 @@
 						<type>StringT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>SetVariable</class>
@@ -235,7 +228,6 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>GetComponentProperties</class>
@@ -247,7 +239,6 @@
 						<type>StringT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>Macro</class>
@@ -276,7 +267,6 @@
 						<type>IntT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>CreateVector</class>
@@ -310,13 +300,10 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>GetParentOf</class>
 				<id>GetParentOf_1</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>MultiplyFloat</class>
@@ -346,7 +333,6 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>MultiplyFloat</class>
@@ -376,7 +362,6 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>MultiplyFloat</class>
@@ -405,7 +390,6 @@
 						<type>IntT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>CreateVector</class>
@@ -435,13 +419,10 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>DivideFloat</class>
 				<id>DivideFloat_2</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>MultiplyFloat</class>
@@ -453,7 +434,6 @@
 						<type>IntT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>MultiplyFloat</class>
@@ -483,12 +463,10 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>AbsoluteFloat</class>
 				<id>AbsoluteFloat_1</id>
-				<params/>
 				<slots>
 					<slot>
 						<name>a</name>
@@ -544,13 +522,10 @@
 						<type>IntT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>DivideFloat</class>
 				<id>DivideFloat_1</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>GetVariable</class>
@@ -563,13 +538,10 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>SubtractFloat</class>
 				<id>SubtractFloat_1</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>MultiplyFloat</class>
@@ -667,7 +639,6 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>MultiplyFloat</class>
@@ -1008,8 +979,6 @@
 					<block>
 						<class>IsValid</class>
 						<id>IsValid_1</id>
-						<params/>
-						<slots/>
 					</block>
 					<block>
 						<class>MacroInput</class>
@@ -1031,13 +1000,10 @@
 								<type>StringT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>If</class>
 						<id>If_2</id>
-						<params/>
-						<slots/>
 					</block>
 					<block>
 						<class>LoadPrefab</class>
@@ -1054,12 +1020,10 @@
 								<type>BoolT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>FindFirstNode</class>
 						<id>FindFirstNode_6</id>
-						<params/>
 						<slots>
 							<slot>
 								<name>name</name>
@@ -1082,7 +1046,6 @@
 								<type>TypeT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>MultiplyFloat</class>
@@ -1121,7 +1084,6 @@
 					<block>
 						<class>CreateMatrix</class>
 						<id>CreateMatrix_2</id>
-						<params/>
 						<slots>
 							<slot>
 								<name>pos</name>
@@ -1144,7 +1106,6 @@
 								<type>TypeT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>MultiplyFloat</class>
@@ -1178,7 +1139,6 @@
 								<type>StringT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 				</blocks>
 				<connections>
@@ -1285,12 +1245,10 @@
 								<type>StringT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>FindFirstNode</class>
 						<id>FindFirstNode_5</id>
-						<params/>
 						<slots>
 							<slot>
 								<name>includingInactive</name>
@@ -1301,8 +1259,17 @@
 					<block>
 						<class>ActivateGameObject</class>
 						<id>ActivateGameObject_1</id>
-						<params/>
-						<slots/>
+					</block>
+					<block>
+						<class>SetComponentProperty</class>
+						<id>SetComponentProperty_12</id>
+						<params>
+							<param>
+								Particle.emissionRate
+								<name>Component Type</name>
+								<type>StringT</type>
+							</param>
+						</params>
 					</block>
 					<block>
 						<class>MacroInput</class>
@@ -1333,18 +1300,6 @@
 					</block>
 					<block>
 						<class>SetComponentProperty</class>
-						<id>SetComponentProperty_12</id>
-						<params>
-							<param>
-								Particle.emissionRate
-								<name>Component Type</name>
-								<type>StringT</type>
-							</param>
-						</params>
-						<slots/>
-					</block>
-					<block>
-						<class>SetComponentProperty</class>
 						<id>SetComponentProperty_11</id>
 						<params>
 							<param>
@@ -1353,7 +1308,6 @@
 								<type>StringT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>MacroInput</class>
@@ -1379,21 +1333,6 @@
 							<slot>
 								<name>required</name>
 								<const>\true\</const>
-							</slot>
-						</slots>
-					</block>
-					<block>
-						<class>CreateMatrix</class>
-						<id>CreateMatrix_3</id>
-						<params/>
-						<slots>
-							<slot>
-								<name>rotation</name>
-								<const>\0.000000, 0.000000, 0.000000\</const>
-							</slot>
-							<slot>
-								<name>scale</name>
-								<const>\1.000000, 1.000000, 1.000000\</const>
 							</slot>
 						</slots>
 					</block>
@@ -1461,7 +1400,32 @@
 								<type>StringT</type>
 							</param>
 						</params>
-						<slots/>
+					</block>
+					<block>
+						<class>MatrixPosition</class>
+						<id>MatrixPosition_1</id>
+					</block>
+					<block>
+						<class>CreateMatrix</class>
+						<id>CreateMatrix_3</id>
+						<slots>
+							<slot>
+								<name>rotation</name>
+								<const>\0.000000, 0.000000, 0.000000\</const>
+							</slot>
+							<slot>
+								<name>scale</name>
+								<const>\1.000000, 1.000000, 1.000000\</const>
+							</slot>
+						</slots>
+					</block>
+					<block>
+						<class>MatrixRotation</class>
+						<id>MatrixRotation_1</id>
+					</block>
+					<block>
+						<class>MatrixScale</class>
+						<id>MatrixScale_1</id>
 					</block>
 					<block>
 						<class>ContextGetSelf</class>
@@ -1478,7 +1442,6 @@
 								<type>StringT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 				</blocks>
 				<connections>
@@ -1543,12 +1506,6 @@
 						<output>emissionSize</output>
 					</connection>
 					<connection>
-						<from>MacroInput_3</from>
-						<input>pos</input>
-						<to>CreateMatrix_3</to>
-						<output>translation</output>
-					</connection>
-					<connection>
 						<from>MacroInput_2</from>
 						<input>in</input>
 						<to>SetComponentProperties_3</to>
@@ -1561,9 +1518,45 @@
 						<output>node</output>
 					</connection>
 					<connection>
-						<from>CreateMatrix_3</from>
-						<input>local</input>
+						<from>MatrixPosition_1</from>
+						<input>position</input>
 						<to>SetComponentProperties_3</to>
+						<output>res</output>
+					</connection>
+					<connection>
+						<from>MatrixRotation_1</from>
+						<input>rotation</input>
+						<to>SetComponentProperties_3</to>
+						<output>res</output>
+					</connection>
+					<connection>
+						<from>MatrixScale_1</from>
+						<input>scale</input>
+						<to>SetComponentProperties_3</to>
+						<output>res</output>
+					</connection>
+					<connection>
+						<from>CreateMatrix_3</from>
+						<input>a</input>
+						<to>MatrixPosition_1</to>
+						<output>res</output>
+					</connection>
+					<connection>
+						<from>MacroInput_3</from>
+						<input>pos</input>
+						<to>CreateMatrix_3</to>
+						<output>translation</output>
+					</connection>
+					<connection>
+						<from>CreateMatrix_3</from>
+						<input>a</input>
+						<to>MatrixRotation_1</to>
+						<output>res</output>
+					</connection>
+					<connection>
+						<from>CreateMatrix_3</from>
+						<input>a</input>
+						<to>MatrixScale_1</to>
 						<output>res</output>
 					</connection>
 				</connections>

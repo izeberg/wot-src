@@ -1,4 +1,4 @@
-import types
+from __future__ import absolute_import
 from shared_utils import CONST_CONTAINER
 from gui.shared.utils.requesters.abstract import Response, ClientRequestsByIDProcessor
 from gui.shared.utils.requesters.RequestsController import RequestsController
@@ -32,7 +32,7 @@ class ServerSideReplayRequester(ClientRequestsByIDProcessor):
         super(ServerSideReplayRequester, self).__init__(sender, ServerSideReplayRequestResponse)
 
     def _getSenderMethod(self, sender, methodName):
-        if isinstance(methodName, types.TupleType):
+        if isinstance(methodName, tuple):
             storageName, methodName = methodName
             sender = getattr(sender, storageName, None)
         return super(ServerSideReplayRequester, self)._getSenderMethod(sender, methodName)

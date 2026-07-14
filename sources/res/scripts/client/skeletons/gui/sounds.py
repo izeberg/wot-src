@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from gui.battle_control.controllers.interfaces import IBattleController
 

@@ -1,4 +1,5 @@
-import abc, os, enum, typing
+from __future__ import absolute_import
+import os, enum, typing
 from persistent_data_cache_common import cached_data
 from persistent_data_cache_common.common import getLogger, MeasureExecutionTime, DEFAULT_SAVING_TIMEOUT
 from soft_exception import SoftException
@@ -25,7 +26,6 @@ class SavingCacheFailedException(SoftException):
 
 class BasePDCache(object):
     __slots__ = ('_events', '_logger', '_config', '_cachedData', '_destroyed', '_savingState')
-    __metaclass__ = abc.ABCMeta
 
     def __init__(self, config, eventsDispatcher):
         self._logger = getLogger(self.__class__.__name__)
@@ -179,21 +179,17 @@ class BasePDCache(object):
             self._logger.exception('Cannot delete cache file <%s>.', filePath)
             return False
 
-    @abc.abstractmethod
     def _loadCachedData(self, filePath):
-        pass
+        raise NotImplementedError
 
-    @abc.abstractmethod
     def _saveCachedData(self, filePath, cachedData):
-        pass
+        raise NotImplementedError
 
-    @abc.abstractmethod
     def _isFileExist(self, filePath):
-        pass
+        raise NotImplementedError
 
-    @abc.abstractmethod
     def _deleteFile(self, filePath):
-        pass
+        raise NotImplementedError
 
 
 class DefaultPDCache(BasePDCache):

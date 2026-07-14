@@ -7,7 +7,7 @@ from frameworks.wulf import WindowFlags
 from gui.Scaleform.lobby_entry import getLobbyStateMachine
 from gui.battle_pass.battle_pass_decorators import createBackportTooltipDecorator, createTooltipContentDecorator
 from gui.battle_pass.battle_pass_helpers import getChapterForTankmenScreen
-from gui.battle_pass.sounds import BATTLE_PASS_TASKS_SOUND_SPACE, switchBattlePassSoundFilter, getBattlePassEnterSound, getBattlePassExitSound, getBattlePassExtraExitSound, getBattlePassExtraEnterSound
+from gui.battle_pass.sounds import BATTLE_PASS_TASKS_SOUND_SPACE, switchBattlePassSoundFilter, getBattlePassEnterSound, getBattlePassExitSound, getBattlePassExtraExitSound, getBattlePassExtraEnterSound, switchOverlaySoundFilter
 from gui.impl.gen import R
 from gui.impl.gen.view_models.views.lobby.battle_pass.main_view_model import MainViewModel
 from gui.impl.lobby.battle_pass.battle_pass_buy_levels_view import BuyLevelsPresenter
@@ -22,7 +22,6 @@ from gui.impl.pub.view_component import ViewComponent
 from gui.lobby_state_machine.routable_view import IRoutableView
 from gui.lobby_state_machine.router import SubstateRouter
 from gui.shared.event_dispatcher import showHangar
-from gui.sounds.filters import switchHangarOverlaySoundFilter
 from helpers import dependency
 from shared_utils import safeCall
 from skeletons.gui.game_control import IBattlePassController
@@ -171,7 +170,7 @@ class MainView(ViewComponent[MainViewModel], IRoutableView):
         self.soundManager.playSound(getBattlePassEnterSound(battlePass=self.__battlePass))
 
     def __playSwitchSounds(self, originalPresenterID, previousChapter):
-        switchHangarOverlaySoundFilter(self.__activePresenterID in (_BP.BuyPass(), _BP.BuyLevels()))
+        switchOverlaySoundFilter(self.__activePresenterID in (_BP.BuyPass(), _BP.BuyLevels()))
         includedActivePresenters = (
          _BP.ChapterChoice(), _BP.Progression(), _BP.PostProgression(), _BP.TankmenScreen())
         sameChapterTransition = previousChapter == self.__activeChapterID and (originalPresenterID in (_BP.BuyPass(), _BP.BuyLevels(), _BP.TankmenScreen()) and self.__activePresenterID == _BP.Progression() or originalPresenterID == _BP.Progression() and self.__activePresenterID == _BP.TankmenScreen())
@@ -190,7 +189,7 @@ class MainView(ViewComponent[MainViewModel], IRoutableView):
         if self.__isExtraChapterPresenter():
             self.soundManager.playSound(getBattlePassExtraExitSound(self.__activeChapterID))
         self.soundManager.playSound(getBattlePassExitSound(battlePass=self.__battlePass))
-        switchHangarOverlaySoundFilter(on=False)
+        switchOverlaySoundFilter(on=False)
 
     def __isExtraChapterPresenter(self):
         return self.__activePresenterID not in _NO_CHAPTER_PRESENTERS and self.__battlePass.isExtraChapter(self.__activeChapterID)

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing, wg_async
 from gui.platform.base.statuses.constants import DEFAULT_CONTEXT
 from skeletons.gui.platform.controller import IPlatformRequestController

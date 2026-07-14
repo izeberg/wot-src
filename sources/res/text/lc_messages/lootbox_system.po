@@ -14,12 +14,6 @@ msgstr ""
 msgid "#PluralForms"
 msgstr "nplurals=1; plural=0;"
 
-msgid "autoOpenView/boxCount"
-msgid_plural "plural/autoOpenView/boxCount"
-msgstr[0] "剩余%(count)个补给品"
-msgstr[1] "剩余%(count)个补给品"
-msgstr[2] "剩余%(count)个补给品"
-
 msgid "autoOpenView/rewardGroups/crewBooksAndCrew"
 msgstr "乘员和训练手册"
 
@@ -35,17 +29,14 @@ msgstr "其他"
 msgid "autoOpenView/rewardGroups/vehicles"
 msgstr "坦克"
 
-msgid "autoOpenView/subTitle"
-msgstr "我们为您开启了%(boxCount)"
-
 msgid "autoOpenView/submitButtonText"
 msgstr "收到！"
 
 msgid "autoOpenView/title"
-msgstr "您已获得"
+msgstr "已获得奖励"
 
 msgid "awardViews/footer/backButton/"
-msgstr "返回补给品"
+msgstr "收到!"
 
 msgid "bonuses/description/battle_booster"
 msgstr "指令"
@@ -75,16 +66,15 @@ msgid "bonuses/label/bpcoin"
 msgstr "战斗通行证令牌"
 
 msgid "boxTooltip/description/text/default"
-msgstr "开启后，您将有机会从这些补给品中获得VIII–IX级金币坦克、个性化元素、配件、金币、战争债券、乘员手册，以及其他珍贵奖励。"
+msgstr ""
+"开启后，您将有机会从这些补给品中获得坦克、实用资源，以及其他珍贵物品。\n"
+"您可在军械库中购买补给品礼包。"
 
 msgid "boxTooltip/guaranteed/text/default"
-msgstr "再开启%(count)个补给品即可获得保底奖励"
+msgstr "保底奖励掉落前需开启的补给品数量(如果之前未掉落)。"
 
 msgid "boxTooltip/howGet/text/default"
-msgstr "玩家可在军械库或特惠商城中购买战术补给品礼包，开启其他类型的补给品时也有机会获得战术补给品。"
-
-msgid "boxTooltip/howGet/title"
-msgstr "如何获取"
+msgstr "您可在军械库中购买补给品礼包。"
 
 msgid "common/backButton"
 msgstr "返回"
@@ -102,13 +92,13 @@ msgid "common/footer/checkbox"
 msgstr "显示开启动画"
 
 msgid "common/getButton/lowerCase"
-msgstr "购买补给品礼包"
+msgstr "获取更多"
 
 msgid "common/getButton/upperCase"
-msgstr "购买补给品礼包"
+msgstr "获取更多"
 
 msgid "common/infoButton"
-msgstr "内含什么奖励？"
+msgstr "奖励列表"
 
 msgid "common/loader"
 msgstr "正在开启补给品..."
@@ -128,17 +118,14 @@ msgstr[0] "天"
 msgstr[1] "天"
 msgstr[2] "天"
 
+msgid "common/selectTooltip"
+msgstr "补给品不足，无法一次性开启{{count}}个"
+
 msgid "common/statistics/emptyHeader"
 msgstr "开启补给品即可查看统计数据。"
 
 msgid "common/statistics/header"
 msgstr "已开启的补给品数量: %(count)"
-
-msgid "common/statistics/tooltip/body"
-msgstr "此处显示您在活动期间从补给品中所获得的物品。您可随时手动重置统计数据。"
-
-msgid "common/statistics/tooltip/title"
-msgstr "所获奖励统计数据"
 
 msgid "common/statsButton"
 msgstr "统计数据"
@@ -147,7 +134,7 @@ msgid "confirmResetLootBoxStatistics/cancel"
 msgstr "取消"
 
 msgid "confirmResetLootBoxStatistics/description"
-msgstr "已开启补给品的所有信息都将被删除。"
+msgstr "您的奖励历史记录将被删除。"
 
 msgid "confirmResetLootBoxStatistics/submit"
 msgstr "重置"
@@ -165,24 +152,16 @@ msgid "entryPoint/maxBoxesCount"
 msgstr "×999+"
 
 msgid "entryPoint/tooltip/description"
-msgstr ""
-"这些特殊补给品内含全新且独特的物品，包括金币坦克、2D风格、《坦克世界》高级账号天数等。\n"
-"您可使用银币在军械库中购买该补给品礼包。"
-
-msgid "entryPoint/tooltip/lessThanMinute"
-msgstr "少于1分钟"
+msgstr "这些特殊补给品内含全新且独特的物品。您可在军械库中购买补给品礼包。"
 
 msgid "entryPoint/tooltip/timerText"
-msgstr "剩余:"
-
-msgid "entryPoint/tooltip/title"
-msgstr "战术补给品及其获取方式"
+msgstr "距活动结束还有"
 
 msgid "entryPoint/tooltip/warningDescription"
-msgstr "由于技术原因，目前无法开启或获取补给品。我们对造成的不便深表歉意。"
+msgstr "我们遇到了技术问题，已暂时中止活动并进行修复。"
 
 msgid "entryPoint/tooltip/warningTitle"
-msgstr "战术补给品暂不可用"
+msgstr "暂不开放"
 
 msgid "eventName/lowerCase"
 msgstr "战场物资"
@@ -190,17 +169,35 @@ msgstr "战场物资"
 msgid "eventName/upperCase"
 msgstr "战场物资"
 
-msgid "guaranteedTitle/nextBox"
-msgstr "下个补给品将掉落保底奖励！"
+msgid "guaranteed/tooltip/count/first"
+msgstr "%(count)个"
+
+msgid "guaranteed/tooltip/count/other"
+msgstr "%(count)个"
+
+msgid "guaranteed/tooltip/count/second"
+msgstr "%(count)个"
+
+msgid "guaranteed/tooltip/count/third"
+msgstr "%(count)个"
+
+msgid "guaranteed/tooltip/description/count/"
+msgstr "每开启%(count)补给品"
+
+msgid "guaranteed/tooltip/description/item/"
+msgstr "坦克"
+
+msgid "guaranteed/tooltip/description0/"
+msgstr "%(count)将保底掉落%(item)。如果提前掉落坦克，计数器将重置。"
+
+msgid "guaranteed/tooltip/description1/"
+msgstr "若车库中已拥有补给品内的所有坦克，您将获得金币作为补偿。"
 
 msgid "guaranteedTitle/text"
-msgstr "保底奖励掉落前还需开启的最大补给品数量: %(count)"
+msgstr "再开启%(count)个补给品将掉落%(name)"
 
-msgid "hasBoxesView/guaranteedTitle/tabText"
-msgid_plural "plural/hasBoxesView/guaranteedTitle/tabText"
-msgstr[0] "再开启%(count)个补给品即可获得保底奖励"
-msgstr[1] "再开启%(count)个补给品即可获得保底奖励"
-msgstr[2] "再开启%(count)个补给品即可获得保底奖励"
+msgid "guaranteedTitle/textName"
+msgstr "保底奖励"
 
 msgid "hasBoxesView/openButtonText"
 msgstr "开启"
@@ -211,6 +208,9 @@ msgstr "<br/><br/>"
 msgid "helpers/lootBoxBonus"
 msgstr "%(boxName)s: %(count)s"
 
+msgid "homeView/subtitle"
+msgstr "距活动结束还有%(time)"
+
 msgid "infoPage/footer/description/autoOpen"
 msgstr "如果您在活动结束前没有开启全部补给品，那么系统稍后会自动开启这些补给品。"
 
@@ -219,7 +219,7 @@ msgstr "如果您已拥有补给品内容列表中的全部坦克，之后从开
 
 msgid "infoPage/footer/description/guaranteed"
 msgstr ""
-"每%(guaranteed0)s个补给品都保底内含1辆VIII–X级坦克。如果这些补给品始终未掉落保底坦克，那么当您开启第%(guaranteed0)s个补给品时，必定会掉落1辆您车库中尚未拥有的VIII–X级坦克。补给品掉落坦克后，计数器将重置。"
+"每%(guaranteed0)s个补给品都保底内含1辆VIII–X级坦克。如果这些补给品始终未掉落保底坦克，那么当您开启第%(guaranteed0)s个补给品(取决于补给品类型)时，必定会掉落1辆您车库中尚未拥有的VIII–X级坦克。补给品掉落坦克后，计数器将重置。"
 
 msgid "infoPage/footer/title/autoOpen"
 msgstr "自动开启"
@@ -230,17 +230,20 @@ msgstr "补偿"
 msgid "infoPage/footer/title/guaranteed"
 msgstr "保底奖励"
 
-msgid "infoPage/header/description"
-msgstr "开启补给品就有机会获得珍贵的游戏内物品！详情见下文。"
-
 msgid "infoPage/header/lootListLink"
 msgstr "在官网上查看物品列表"
 
-msgid "infoPage/header/subtitle"
-msgstr "%(from)至%(to)"
+msgid "infoPage/header/probability/description"
+msgstr "掉落几率"
 
-msgid "infoPage/header/videoButtonText"
-msgstr "观看视频"
+msgid "infoPage/header/probability/title"
+msgstr "奖励组"
+
+msgid "infoPage/header/rewards/description"
+msgstr "您将从所获奖励组中，获得这些奖励之一"
+
+msgid "infoPage/header/rewards/title"
+msgstr "奖励"
 
 msgid "infoPage/rewards/divider"
 msgstr "|"
@@ -249,24 +252,28 @@ msgid "infoPage/rewards/percent"
 msgstr "%"
 
 msgid "multipleRewardView/footer/openNextButton/"
-msgstr "再开启%(count)个"
+msgstr "开启更多"
 
 msgid "multipleRewardView/header/subTitle/"
 msgstr "从%(name)中获得的奖励(已开启%(boxesCount)个补给品)"
 
 msgid "multipleRewardView/header/title/"
-msgstr "您已获得"
+msgstr "已获得奖励"
 
 msgid "noBoxesView/description/"
-msgstr ""
-"您没有任何补给品。您可在军械库或特惠商城中\n"
-"购买补给品礼包。"
+msgstr "您可在军械库中购买补给品礼包"
+
+msgid "noBoxesView/getBoxes/"
+msgstr "前往购买"
+
+msgid "noBoxesView/goToButton/"
+msgstr "前往可用补给品"
 
 msgid "preview/backLabel"
 msgstr "前往补给品"
 
 msgid "quantityTitle/boxesAvailable"
-msgstr "可用的补给品: %(boxesCount)"
+msgstr "可用补给品: %(boxesCount)"
 
 msgid "quantityTitle/noBoxes"
 msgstr "没有可用的补给品"
@@ -279,9 +286,6 @@ msgstr "适用于%(vehicleInfo)"
 
 msgid "rareRewardOverlay/rewardDescription/style/text"
 msgstr "\"%(style)\"3D风格"
-
-msgid "rareRewardOverlay/rewardDescription/title/text"
-msgstr "这是您的"
 
 msgid "serviceChannelMessages/finish/header"
 msgstr "%(eventName)s活动已结束"
@@ -299,34 +303,34 @@ msgid "serviceChannelMessages/lootBoxesAutoOpen/text"
 msgstr "您在活动期间未收到的物品已添加至您的账号。"
 
 msgid "serviceChannelMessages/lootBoxesDisabled/header"
-msgstr "补给品开启已暂停"
+msgstr "%(eventName)s"
 
 msgid "serviceChannelMessages/lootBoxesDisabled/text"
-msgstr "由于服务器维护，补给品的相关操作暂时无法进行。"
+msgstr "活动由于维护暂不开放。"
 
 msgid "serviceChannelMessages/lootBoxesEnabled/header"
-msgstr "补给品开启已恢复"
+msgstr "%(eventName)s"
 
 msgid "serviceChannelMessages/lootBoxesEnabled/text"
-msgstr "补给品相关操作已恢复正常。去开启补给品吧！"
+msgstr "活动已重新开放。我们对造成的不便深表歉意。"
 
 msgid "serviceChannelMessages/multipleOpen"
-msgstr "已开启补给品！"
+msgstr "%(boxName)s(%(count)s个)"
 
 msgid "serviceChannelMessages/open"
-msgstr "已开启%(boxName)s！"
+msgstr "%(boxName)s"
+
+msgid "serviceChannelMessages/received"
+msgstr "已获得奖励:"
 
 msgid "serviceChannelMessages/server_error"
-msgstr "未开启补给品"
+msgstr "错误"
 
 msgid "serviceChannelMessages/server_error/COOLDOWN"
 msgstr "请等待上个操作完成。"
 
 msgid "serviceChannelMessages/server_error/DISABLED"
 msgstr "暂时无法操作。请稍后再试。"
-
-msgid "serviceChannelMessages/server_error/FAILURE"
-msgstr "补给品开启出错"
 
 msgid "serviceChannelMessages/start/button"
 msgstr "前往活动"
@@ -337,55 +341,17 @@ msgstr "%(eventName)s活动已开启"
 msgid "serviceChannelMessages/start/text"
 msgstr "仅持续至%(date)s: 金币坦克和珍贵游戏内物品等待着您！"
 
-msgid "serviceChannelMessages/statisticReset/server_error/header"
-msgstr "错误"
-
 msgid "serviceChannelMessages/statisticReset/server_error/text"
 msgstr "无法重置统计数据。请稍后再试。"
 
 msgid "singleRewardView/extraReward/text/"
-msgstr "还有:"
+msgstr "还有"
 
 msgid "singleRewardView/footer/openNextButton/"
-msgstr "开启下一个"
-
-msgid "singleRewardView/header/subTitle/"
-msgstr "从%(name)中获得的奖励"
+msgstr "开启更多"
 
 msgid "singleRewardView/header/title/"
-msgstr "您已获得"
-
-msgid "singleRewardView/tooltip/count/first"
-msgstr "%(count)"
-
-msgid "singleRewardView/tooltip/count/other"
-msgstr "%(count)"
-
-msgid "singleRewardView/tooltip/count/second"
-msgstr "%(count)"
-
-msgid "singleRewardView/tooltip/count/third"
-msgstr "%(count)"
-
-msgid "singleRewardView/tooltip/description/"
-msgstr "如果已拥有补给品内容列表中的所有VIII–IX级坦克，之后开启补给品掉落的所有坦克都将转换为其当前价格对应的金币补偿。"
-
-msgid "singleRewardView/tooltip/label/"
-msgstr "当您已获得所有坦克:"
-
-msgid "singleRewardView/tooltip/remainingCount"
-msgid_plural "plural/singleRewardView/tooltip/remainingCount"
-msgstr[0] "%(remainingCount)补给品"
-msgstr[1] "%(remainingCount)补给品"
-msgstr[2] "%(remainingCount)补给品"
-
-msgid "singleRewardView/tooltip/subtitle/"
-msgstr ""
-"保底奖励是补给品内容列表中的坦克。\n"
-"如果开启%(remainingCount)个补给品后仍未掉落保底坦克，那么当第%(count)个补给品开启时必定会掉落。补给品掉落坦克后，计数器将重置。"
-
-msgid "singleRewardView/tooltip/title/"
-msgstr "保底奖励"
+msgstr "已获得奖励"
 
 msgid "singleRewardView/uniqueTankman"
 msgstr "独特乘员"
@@ -406,7 +372,7 @@ msgid "statisticsRewards/label/blueprint_tube"
 msgstr "蓝图碎片"
 
 msgid "statisticsRewards/label/brochure"
-msgstr "手册"
+msgstr "简册"
 
 msgid "statisticsRewards/label/brochure_tooltip"
 msgstr "培训手册"

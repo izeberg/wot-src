@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld
 from enum import Enum
 from gui.Scaleform.genConsts.QUESTS_ALIASES import QUESTS_ALIASES

@@ -403,6 +403,47 @@ msgstr "一旦您点击下方的折价置换按钮，用金币购买的配件和
 msgid "buyVehicleWindow/warning"
 msgstr "点击“购买”按钮，购买的配件和给养将不会退回为金币。请仔细查看道具。"
 
+msgid "challenge_missions/activation/cancel"
+msgstr "取消"
+
+msgid "challenge_missions/activation/confirm"
+msgstr "确认"
+
+msgid "challenge_missions/activation/description"
+msgstr ""
+"激活后，熔炉试炼系列任务将开放，任务可以{{@ style (color "
+"#FFE4C0)}}完成或放弃，也可能失败{{/}}。如果系列中的一个任务失败，您将失去一个护盾。"
+
+msgid "challenge_missions/activation/title"
+msgstr "激活熔炉试炼: {{challengeName}}？"
+
+msgid "challenge_missions/restart/cancel"
+msgstr "取消"
+
+msgid "challenge_missions/restart/confirm"
+msgstr "确认"
+
+msgid "challenge_missions/restart/description"
+msgstr "您的任务进度将重置，护盾将恢复，您将能再次获取奖励。重新开始后，该系列任务会立即激活。"
+
+msgid "challenge_missions/restart/free/title"
+msgstr "免费重新开始熔炉试炼: {{challengeName}}？"
+
+msgid "challenge_missions/restart/paid/title"
+msgstr "花费{{cost}}重新开始熔炉试炼: {{challengeName}}？"
+
+msgid "challenge_missions/surrender/cancel"
+msgstr "取消"
+
+msgid "challenge_missions/surrender/confirm"
+msgstr "确认"
+
+msgid "challenge_missions/surrender/description"
+msgstr "放弃将结束该熔炉试炼系列任务，并重置所有进度和护盾。您可以随时重新开始该系列任务。"
+
+msgid "challenge_missions/surrender/title"
+msgstr "放弃熔炉试炼: {{challengeName}}？"
+
 msgid "changeGraphics/cancel"
 msgstr "取消"
 

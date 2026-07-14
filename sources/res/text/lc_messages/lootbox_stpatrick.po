@@ -11,12 +11,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-msgid "autoOpenView/boxCount"
-msgid_plural "plural/autoOpenView/boxCount"
-msgstr[0] "剩余%(count)个补给品"
-msgstr[1] "剩余%(count)个补给品"
-msgstr[2] "剩余%(count)个补给品"
-
 msgid "awardViews/footer/backButton/"
 msgstr "返回补给品"
 
@@ -41,9 +35,6 @@ msgstr "开启补给品即可查看统计数据。"
 msgid "common/statistics/header"
 msgstr "已开启补给品: %(count)"
 
-msgid "common/statistics/tooltip/body"
-msgstr "此处显示您在活动期间从补给品中所获得的物品。您可随时手动重置统计数据。"
-
 msgid "confirmResetLootBoxStatistics/description"
 msgstr "已开启补给品的所有信息都将被删除。"
 
@@ -54,9 +45,6 @@ msgid "entryPoint/tooltip/description"
 msgstr ""
 "这些特殊补给品内含金币坦克、3D附件、银币，以及其他珍贵游戏内物品。\n"
 "您可在军械库中购买补给品礼包。"
-
-msgid "entryPoint/tooltip/title"
-msgstr "四叶草补给品及其获取方式"
 
 msgid "entryPoint/tooltip/warningDescription"
 msgstr "由于技术原因，目前无法开启补给品或购买补给品礼包。我们对造成的不便深表歉意。"
@@ -105,36 +93,6 @@ msgstr "可用的补给品: %(boxesCount)"
 
 msgid "quantityTitle/noBoxes"
 msgstr "没有可用的补给品"
-
-msgid "serviceChannelMessages/finish/text"
-msgstr "系统将开启所有剩余的补给品，所含奖励将添加至您的账号。"
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/count"
-msgstr "已开启补给品: %(boxes)s"
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/header"
-msgstr "已开启剩余的补给品"
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/text"
-msgstr "活动结束后，我们开启了您全部的补给品，所含奖励已添加至您的账号。"
-
-msgid "serviceChannelMessages/lootBoxesDisabled/header"
-msgstr "补给品开启已暂停"
-
-msgid "serviceChannelMessages/lootBoxesDisabled/text"
-msgstr "由于服务器维护，补给品相关操作暂时无法进行。"
-
-msgid "serviceChannelMessages/lootBoxesEnabled/header"
-msgstr "补给品开启已恢复"
-
-msgid "serviceChannelMessages/lootBoxesEnabled/text"
-msgstr "补给品相关操作已恢复正常。去开启补给品吧！"
-
-msgid "serviceChannelMessages/multipleOpen"
-msgstr "已开启补给品！"
-
-msgid "serviceChannelMessages/server_error"
-msgstr "未开启补给品"
 
 msgid "singleRewardView/tooltip/description/"
 msgstr "如果您车库中已拥有补给品奖励池中的所有坦克，那么对于之后掉落的每辆坦克，您都将获得坦克当前价格对应的金币补偿。"

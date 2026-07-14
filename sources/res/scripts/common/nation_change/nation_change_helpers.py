@@ -1,4 +1,6 @@
+from __future__ import absolute_import
 import typing
+from functools import reduce
 from operator import add, contains
 import nation_change
 from items import vehicles

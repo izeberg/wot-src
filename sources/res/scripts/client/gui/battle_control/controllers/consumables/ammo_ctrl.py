@@ -1,5 +1,7 @@
+from __future__ import absolute_import, division
 import logging, typing, weakref
 from collections import namedtuple, defaultdict
+from future.utils import viewitems, viewvalues
 from math import fabs, ceil
 import BigWorld, CommandMapping, Event, math_utils
 from StationaryReloadController import StationaryReloadAmmoState
@@ -18,6 +20,7 @@ from gui.shared.utils.decorators import ReprInjector
 from gui.Scaleform.genConsts.AUTOLOADERBOOSTVIEWSTATES import AUTOLOADERBOOSTVIEWSTATES
 from ReloadEffect import ReloadEffectStrategy
 from items import vehicles
+from math_common import round_py2_style_int
 from skeletons.gui.battle_session import IBattleSessionProvider
 from vehicles.mechanics.mechanic_constants import VehicleMechanic
 from vehicles.mechanics.mechanic_helpers import getVehicleDescrMechanicParams
@@ -122,7 +125,7 @@ class _GunSettings(object):
     @cached_property
     def lowCurrentAmmo(self):
         if self.isUnlimitedClip and self.temperatureParams is not None:
-            return int(round(self.temperatureParams.maxTemperature / self.temperatureParams.heatingPerShot))
+            return round_py2_style_int(self.temperatureParams.maxTemperature / self.temperatureParams.heatingPerShot)
         else:
             return 0
 
@@ -338,8 +341,8 @@ class ReloadingTimeState(ReloadingTimeSnapshot, IGunReloadingState):
         else:
             self._startTime = 0.0
             self._updateTime = 0.0
-        if actualTime == 0:
-            self.stopPredicateReloading()
+            if actualTime == 0:
+                self.stopPredicateReloading()
         self._actualTime = actualTime
         self._baseTime = baseTime
 
@@ -879,7 +882,7 @@ class AmmoController(MethodsRules, ViewComponentsController):
         return (intCD for intCD in self._order)
 
     def getShellsLayout(self):
-        return self.__ammo.iteritems()
+        return viewitems(self.__ammo)
 
     def getCurrentShells(self):
         if self.__currShellCD is not None:
@@ -894,17 +897,14 @@ class AmmoController(MethodsRules, ViewComponentsController):
             result = quantityInClip
             if result == 0 and (isReloadingFinished or self._reloadingState.isReloadingFinished()):
                 clipSize = self.__gunSettings.clip.size
-                if clipSize <= quantity:
-                    result = clipSize
-                else:
-                    result = quantity
+                result = min(clipSize, quantity)
             return result
         return quantity
 
     def getAllShellsQuantityLeft(self):
         quantity = self.getShellsQuantityLeft()
         if quantity == 0:
-            return sum(quantity for quantity, _ in self.__ammo.itervalues())
+            return sum(quantity for quantity, _ in viewvalues(self.__ammo))
         return quantity
 
     def getClipPercentLeft(self):
@@ -1094,7 +1094,7 @@ class AmmoController(MethodsRules, ViewComponentsController):
         return self.__ammoStatesInfo.getSpecialReloadMessage()
 
     def handleAmmoChoice(self, key):
-        if any([ component.isActive for component in self._viewComponents ]):
+        if any(component.isActive for component in self._viewComponents):
             for component in self._viewComponents:
                 component.handleAmmoKey(key)
 
@@ -1160,7 +1160,7 @@ class AmmoController(MethodsRules, ViewComponentsController):
             component.setNextShellCD(intCD)
 
     def __canChangeShell(self):
-        return sum(1 for quantity, _ in self.__ammo.itervalues() if quantity > 0) > 1
+        return sum(1 for quantity, _ in viewvalues(self.__ammo) if quantity > 0) > 1
 
     def __shotFail(self):
         if self.__gunSettings.reloadEffect is not None and self.__currShellCD in self.__ammo:

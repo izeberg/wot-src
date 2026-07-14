@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, typing
 from debug_utils import LOG_WARNING
 from items import vehicles, EQUIPMENT_TYPES, getTypeOfCompactDescr

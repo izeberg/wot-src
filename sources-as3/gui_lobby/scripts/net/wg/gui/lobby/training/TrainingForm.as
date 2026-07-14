@@ -188,7 +188,7 @@ package net.wg.gui.lobby.training
       
       private function onOpenTrainingRoomHandler(param1:TrainingEvent) : void
       {
-         joinTrainingRequestS(param1.initObj.id);
+         joinTrainingRequestS(param1.initObj.id,param1.initObj.prbClusterId);
       }
       
       private function onCreateButtonClickHandler(param1:ButtonEvent) : void

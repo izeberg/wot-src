@@ -1,8 +1,10 @@
-import zlib, cPickle
+from __future__ import absolute_import
+import zlib
+from future.moves import pickle
 from debug_utils import LOG_ERROR
 
 def z_dumps(obj, protocol=-1, level=1):
-    return zlib.compress(cPickle.dumps(obj, protocol), level)
+    return zlib.compress(pickle.dumps(obj, protocol), level)
 
 
 def z_loads(value):
@@ -13,8 +15,8 @@ def z_loads(value):
         return
 
     try:
-        result = cPickle.loads(result)
-    except cPickle.PickleError:
+        result = pickle.loads(result)
+    except pickle.PickleError:
         LOG_ERROR('Can not unpickle value', value)
         result = None
 

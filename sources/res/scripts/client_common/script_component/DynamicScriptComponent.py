@@ -1,4 +1,7 @@
-import logging, BigWorld
+from __future__ import absolute_import
+import logging
+from future.utils import iteritems
+import BigWorld
 from PlayerEvents import g_playerEvents
 from shared_utils import nextTick
 from vehicle_systems.stricted_loading import makeCallbackWeak
@@ -31,7 +34,7 @@ class DynamicScriptComponent(BigWorld.DynamicScriptComponent):
 
     @property
     def keyName(self):
-        return next(name for name, value in self.entity.dynamicComponents.iteritems() if value == self)
+        return next(name for name, value in iteritems(self.entity.dynamicComponents) if value == self)
 
     def _onAvatarReady(self):
         pass

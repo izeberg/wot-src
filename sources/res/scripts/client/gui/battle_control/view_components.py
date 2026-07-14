@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, weakref
 from collections import defaultdict
 from soft_exception import SoftException
@@ -77,12 +78,10 @@ class _ComponentsBridge(object):
                 sameViewAliases = set(componentsIDs).intersection(self.__indexes[ctrlID])
                 if sameViewAliases:
                     raise ComponentsBridgeError('Linkage of controller ID to view alias have to be defined only once! ' + ('Controller ID: {}, same view aliases: {}').format(ctrlID, sameViewAliases))
-                else:
-                    self.__components[ctrlID].extend([None] * len(componentsIDs))
-                    self.__indexes[ctrlID].extend(componentsIDs)
+                self.__components[ctrlID].extend([None] * len(componentsIDs))
+                self.__indexes[ctrlID].extend(componentsIDs)
             else:
-                self.__components[ctrlID] = [
-                 None] * len(componentsIDs)
+                self.__components[ctrlID] = [None] * len(componentsIDs)
                 self.__indexes[ctrlID] = list(componentsIDs)
             for componentID in componentsIDs:
                 self.__componentToCrl[componentID].append(ctrlID)

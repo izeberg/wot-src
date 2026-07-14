@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from future.utils import iteritems
 import varint
 from constants import IS_EDITOR
 from serialization.definitions import FieldFlags, FieldTypes
@@ -18,7 +20,7 @@ class ComponentBinSerializer(object):
         hasValue = 0
         offset = 1
         result = ['\x00']
-        for fieldName, fieldInfo in obj.fields.iteritems():
+        for fieldName, fieldInfo in iteritems(obj.fields):
             if fieldInfo.flags & FieldFlags.DEPRECATED:
                 offset <<= 1
                 continue

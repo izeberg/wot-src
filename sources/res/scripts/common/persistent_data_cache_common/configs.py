@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from soft_exception import SoftException
 if typing.TYPE_CHECKING:

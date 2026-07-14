@@ -4779,8 +4779,8 @@ msgstr "火力支援"
 
 msgid "supporter_condition"
 msgstr ""
-"• 目标被击毁或失败被计算在内。\n"
-"• 跳弹未击穿不被计算在内。\n"
+"• 仅计入被盟友击毁或在战斗中自毁的目标。\n"
+"• 跳弹和未击穿的射击不包含在内。\n"
 "• 只能在标准模式中获得。"
 
 msgid "supporter_descr"

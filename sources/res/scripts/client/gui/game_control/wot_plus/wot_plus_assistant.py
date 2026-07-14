@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, typing, wg_async
 from BWUtil import AsyncReturn
 from gui.game_control.wot_plus.wot_plus_crew_assist import CrewAssistantCtrl

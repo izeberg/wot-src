@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from builtins import range
 from gui.Scaleform.locale.INGAME_GUI import INGAME_GUI
 from gui.shared.gui_items.Vehicle import VEHICLE_BATTLE_TYPES_ORDER_INDICES
 from shared_utils import BitmaskHelper
@@ -16,7 +18,7 @@ UNKNOWN_VEHICLE_CLASS_NAME = 'unknown'
 UNKNOWN_PLAYER_NAME = INGAME_GUI.PLAYERS_PANEL_UNKNOWN_NAME
 UNKNOWN_VEHICLE_LEVEL = -1
 UNKNOWN_VEHICLE_CLASS_ORDER = 100
-SQUAD_RANGE_TO_SHOW = xrange(2, 4)
+SQUAD_RANGE_TO_SHOW = range(2, 4)
 
 class ARENA_LISTENER_SCOPE(object):
     LOAD = 1

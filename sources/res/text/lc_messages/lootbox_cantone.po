@@ -19,9 +19,6 @@ msgstr "暖春补给品"
 msgid "entryPoint/tooltip/description"
 msgstr "这些特殊补给品内含全新且独特的物品，包括金币坦克、2D风格、银币，以及其他好物。"
 
-msgid "entryPoint/tooltip/title"
-msgstr "暖春补给品及其获取方式"
-
 msgid "entryPoint/tooltip/warningTitle"
 msgstr "暖春补给品暂不可用"
 
@@ -34,12 +31,3 @@ msgstr "暖春补给品"
 msgid "infoPage/footer/description/guaranteed"
 msgstr ""
 "每%(guaranteed0)s个暖春补给品都保底内含1辆VIII–IX级坦克。如果这些补给品始终未掉落保底坦克，那么当您开启第%(guaranteed0)s个补给品时，必定会掉落1辆您尚未拥有的VIII–IX级坦克。补给品掉落坦克后，计数器将重置。"
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/count"
-msgstr "已开启补给品: %(boxes)s"
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/header"
-msgstr "已开启剩余的补给品"
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/text"
-msgstr "活动结束后，我们开启了您全部的补给品，所含奖励已添加至您的账号。"

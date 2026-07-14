@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_230_Challenges_Trophy/normal/lod2/Cus_230_Challenges_Trophy_01</parent>
+	<extent>40.000000</extent>
+	<visibilityBox>
+		<min>-0.217229 -0.100031 -0.157586</min>
+		<max>0.217229 0.672847 0.157587</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_230_Challenges_Trophy/normal/lod1/Cus_230_Challenges_Trophy_01</nodefullVisual>
+</root>

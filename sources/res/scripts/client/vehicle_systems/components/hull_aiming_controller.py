@@ -1,7 +1,12 @@
-import cgf_obsolete_script.py_component
+import CGF
+from cgf_script.registration import registerComponent
 from constants import VEHICLE_SIEGE_STATE
 
-class HullAimingController(cgf_obsolete_script.py_component.Component):
+@registerComponent
+class HullAimingController(object):
+    domain = CGF.Domain.ClientEditor
+    userVisible = False
+    vseVisible = False
 
     def __init__(self):
         self.__vehicleFilter = None
@@ -11,7 +16,6 @@ class HullAimingController(cgf_obsolete_script.py_component.Component):
     def deactivate(self):
         self.__vehicleFilter = None
         self.__vehicleDescriptor = None
-        super(HullAimingController, self).deactivate()
         return
 
     def destroy(self):
@@ -33,4 +37,18 @@ class HullAimingController(cgf_obsolete_script.py_component.Component):
         newSuspensionSpringLength = self.__vehicleDescriptor.chassis.suspensionSpringsLength
         if newSuspensionSpringLength is not None:
             physics.setDamperSpringsLength(newSuspensionSpringLength['left'], newSuspensionSpringLength['right'])
+        return
+
+
+class HullAimingSystem(CGF.System):
+    AimingDeactivated = CGF.DeactivateReaction(CGF.GameObject, CGF.ReactRw(HullAimingController))
+    Reactions = CGF.Reactions(AimingDeactivated)
+
+    def update(self):
+        for _, aiming in self.reaction(self.AimingDeactivated):
+            self.__deactivateAiming(aiming)
+
+    def __deactivateAiming(self, aimingComponent):
+        if aimingComponent is not None:
+            aimingComponent.deactivate()
         return

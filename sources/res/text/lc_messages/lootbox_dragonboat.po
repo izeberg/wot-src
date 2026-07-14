@@ -21,9 +21,6 @@ msgstr ""
 "这些特殊补给品内含独特且珍贵的游戏内物品。\n"
 "您可在军械库或特惠商城中购买补给品礼包。"
 
-msgid "entryPoint/tooltip/title"
-msgstr "端午补给品礼包及其购买方式"
-
 msgid "entryPoint/tooltip/warningTitle"
 msgstr "端午补给品暂不可用"
 
@@ -44,12 +41,3 @@ msgid "noBoxesView/description/"
 msgstr ""
 "您没有任何补给品。\n"
 "您可在军械库中购买补给品礼包。"
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/count"
-msgstr "已开启补给品: %(boxes)s"
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/header"
-msgstr "已开启剩余的补给品"
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/text"
-msgstr "活动结束后，我们开启了您全部的补给品，所含奖励已添加至您的账号。"

@@ -665,6 +665,60 @@ msgstr "无法购买坦克‘%s’。在车库里没有可用车位。可以考�
 msgid "buy_vehicle_slot_error2"
 msgstr "购买坦克‘%s’失败。车库中无可用车位。请腾出一个空车位。"
 
+msgid "challenges/activate/serverError"
+msgstr "无法激活熔炉试炼任务。请稍后再试。"
+
+msgid "challenges/activate/success/text"
+msgstr "该系列任务中的第一个已开放。投身战斗，迎接挑战！"
+
+msgid "challenges/activate/success/title"
+msgstr "熔炉试炼: %(challengeName)s已激活！"
+
+msgid "challenges/challengeEnd/button"
+msgstr "前往熔炉试炼"
+
+msgid "challenges/challengeEnd/text"
+msgstr "立即完成挑战，获取奖励。"
+
+msgid "challenges/challengeEnd/title"
+msgstr "熔炉试炼任务即将结束！"
+
+msgid "challenges/challengeMissionComplete/header"
+msgstr "恭喜!"
+
+msgid "challenges/challengeMissionComplete/text"
+msgstr "您已完成熔炉试炼: %(challengeName)s！已获得奖励:"
+
+msgid "challenges/formatter/spent/credits"
+msgstr "花费银币:"
+
+msgid "challenges/formatter/spent/crystal"
+msgstr "花费战争债券:"
+
+msgid "challenges/formatter/spent/gold"
+msgstr "花费金币:"
+
+msgid "challenges/restart/free/text"
+msgstr "已使用一次免费重新开始的机会，任务进度已重置。"
+
+msgid "challenges/restart/free/title"
+msgstr "熔炉试炼: %(challengeName)s已免费重新开始"
+
+msgid "challenges/restart/paid/title"
+msgstr "熔炉试炼: %(challengeName)s已重新开始"
+
+msgid "challenges/restart/serverError"
+msgstr "无法重新开始熔炉试炼任务。请稍后再试。"
+
+msgid "challenges/serverError/COOLDOWN"
+msgstr "无法操作。请耐心等待当前操作完成。"
+
+msgid "challenges/surrender/serverError"
+msgstr "无法放弃熔炉试炼任务。请稍后再试。"
+
+msgid "challenges/surrender/success/text"
+msgstr "您已放弃熔炉试炼: %(challengeName)s。该系列任务已失败。"
+
 msgid "change_tankman_role/FORBIDDEN"
 msgstr "无法更改专业:该坦克拥有独特的永久乘员。"
 
@@ -3466,8 +3520,8 @@ msgstr "由于队长更改了要求，%(vehName)s不可加入小队。"
 msgid "squad/notValidEnqueueData"
 msgstr "您被从小队中移除，可能因为指挥官更改了小队要求或因为您的坦克不符合要求。请选择另一台坦克。"
 
-msgid "squad/notValidMaxVehTypeDeleted"
-msgstr "由于每个小队允许的特定坦克类型存在限制，%(vehName)s已从小队中移除。请选择其他类型的坦克。"
+msgid "squad/notValidMaxCountVehDeleted"
+msgstr "由于每个小队允许的该类型坦克数量存在限制，%(vehName)s已被移除。请选择另一辆坦克。"
 
 msgid "squad_bonus/switch_off/body"
 msgstr ""

@@ -1285,6 +1285,24 @@ msgstr ""
 msgid "A183_XM69_Hacker_short"
 msgstr "XM69 \"开拓者\""
 
+msgid "A186_XM94_Shadow"
+msgstr "XM94 \"暗侍\""
+
+msgid "A186_XM94_Shadow_desc"
+msgstr ""
+"一个采用传统布局的坦克计划。该坦克拟配备用于防御的遥控机枪站，以及用于测距的OPTAR系统。车长席计划配备试验型全向观察系统。相关研发工作在蓝图阶段终止。"
+
+msgid "A186_XM94_Shadow_long_special"
+msgstr ""
+"XM94 "
+"\"暗侍\"是一辆M系VIII级全能型中型坦克。它拥有手感极为优秀的火炮、良好的机动性，以及出色的观察范围，可以轻松适应各种战况，无论是阵地战还是出其不意的侧翼突袭。\"暗侍\"在任何环境下都能高效作战，让对手难以全身而退。"
+
+msgid "A186_XM94_Shadow_short"
+msgstr "\"暗侍\""
+
+msgid "A186_XM94_Shadow_short_special"
+msgstr "出色的火炮俯角，手感良好的火炮"
+
 msgid "A187_Ares_75"
 msgstr "Ares 75"
 
@@ -1826,6 +1844,9 @@ msgstr "AN/GRC-7 RC"
 msgid "AN_GRC_6_SPHT"
 msgstr "AN/GRC-6 SPHT"
 
+msgid "AN_GRC_6_XM94_Shadow"
+msgstr "AN/GRC-6 (XM94)"
+
 msgid "AN_GRC_7"
 msgstr "AN/GRC-7"
 
@@ -2291,6 +2312,9 @@ msgstr "T803"
 
 msgid "Chassis_A183_XM69_Hacker"
 msgstr "XM69 \"开拓者\""
+
+msgid "Chassis_A186_XM94_Shadow"
+msgstr "XM94 \"暗侍\""
 
 msgid "Chassis_A187_Ares_75"
 msgstr "Ares 75 DARPA"
@@ -3084,6 +3108,14 @@ msgid "Continental_AV_1790_3_T32_short"
 msgstr ""
 "大陆\n"
 "AV-1790-3 (T32)"
+
+msgid "Continental_AV_1790_3_XM94_Shadow"
+msgstr "大陆 AV-1790-3 (XM94)"
+
+msgid "Continental_AV_1790_3_XM94_Shadow_short"
+msgstr ""
+"大陆\n"
+"AV-1790-3 (XM94)"
 
 msgid "Continental_AV_1790_5A"
 msgstr "大陆 AV-1790-5A"
@@ -4305,6 +4337,9 @@ msgstr "T803"
 msgid "Turret_1_A183_XM69_Hacker"
 msgstr "XM69 \"开拓者\""
 
+msgid "Turret_1_A186_XM94_Shadow"
+msgstr "XM94 \"暗侍\""
+
 msgid "Turret_1_A187_Ares_75"
 msgstr "Ares 75"
 
@@ -4860,6 +4895,18 @@ msgstr ""
 
 msgid "Wright_R-975EC2"
 msgstr "莱特 R-975EC2"
+
+msgid "_103mm_APDS_T_T183_XM94_Shadow"
+msgstr "APDS-T T183 (XM94)"
+
+msgid "_103mm_Gun_T63_XM94_Shadow"
+msgstr "103mm T63炮 (XM94)"
+
+msgid "_103mm_HEATFS_T187_XM94_Shadow"
+msgstr "HEAT-FS T187 (XM94)"
+
+msgid "_103mm_HE_T189_XM94_Shadow"
+msgstr "HE T189 (XM94)"
 
 msgid "_105_mm_T141E5_AT"
 msgstr "105mm T141E5 AT炮"

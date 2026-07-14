@@ -1,11 +1,14 @@
-import BigWorld
+import BigWorld, CGF
 from aih_constants import CTRL_MODE_NAME
-from cgf_obsolete_script.py_component import Component
+from cgf_script.registration import registerComponent
 
-class VehicleShadowManager(Component):
+@registerComponent
+class VehicleShadowManager(object):
+    domain = CGF.Domain.ClientEditor
+    userVisible = False
+    vseVisible = False
 
     def __init__(self, compound=None, playerTargetChangeEvent=None, cameraChangeModeEvent=None):
-        super(VehicleShadowManager, self).__init__()
         self.__compoundModel = None
         self.__playerTargetChangeEvent = playerTargetChangeEvent
         self.__cameraChangeModeEvent = cameraChangeModeEvent
@@ -63,5 +66,21 @@ class VehicleShadowManager(Component):
         if BigWorld.player().getVehicleAttached() is vehicle:
             self.updatePlayerTarget(newCompoundModel)
 
-    def destroy(self):
-        pass
+
+class VehicleShadowSystem(CGF.System):
+    ManagerActivated = CGF.ActivateReaction(CGF.ReactRw(VehicleShadowManager))
+    ManagerDeactivated = CGF.DeactivateReaction(CGF.ReactRw(VehicleShadowManager))
+    Reactions = CGF.Reactions(ManagerActivated, ManagerDeactivated)
+
+    def update(self):
+        for manager in self.reaction(self.ManagerActivated):
+            self.__activateManager(manager)
+
+        for manager in self.reaction(self.ManagerDeactivated):
+            self.__deactivateManager(manager)
+
+    def __activateManager(self, manager):
+        manager.activate()
+
+    def __deactivateManager(self, manager):
+        manager.deactivate()

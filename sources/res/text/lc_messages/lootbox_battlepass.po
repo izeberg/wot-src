@@ -9,16 +9,6 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-
-msgid "autoOpenView/boxCount"
-msgid_plural "plural/autoOpenView/boxCount"
-msgstr[0] "剩余%(count)张凭证"
-msgstr[1] "剩余%(count)张凭证"
-msgstr[2] "剩余%(count)张凭证"
-
-msgid "autoOpenView/subTitle"
-msgstr "我们为您刮开了%(boxCount)张凭证"
 
 msgid "awardViews/footer/backButton/"
 msgstr "返回凭证"
@@ -78,36 +68,6 @@ msgstr "可用: %(boxesCount)"
 
 msgid "quantityTitle/noBoxes"
 msgstr "没有可用的凭证"
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/count"
-msgstr "已刮开凭证: %(boxes)s"
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/header"
-msgstr "已刮开剩余凭证"
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/text"
-msgstr "战斗通行证赛季结束后，我们刮开了您全部的凭证，所含奖励已添加至您的账号。"
-
-msgid "serviceChannelMessages/lootBoxesDisabled/header"
-msgstr "刮开凭证功能已暂停"
-
-msgid "serviceChannelMessages/lootBoxesDisabled/text"
-msgstr "由于服务器维护，凭证相关操作暂时无法进行。"
-
-msgid "serviceChannelMessages/lootBoxesEnabled/header"
-msgstr "刮开凭证功能已恢复"
-
-msgid "serviceChannelMessages/lootBoxesEnabled/text"
-msgstr "凭证相关操作已恢复正常。即刻刮开凭证！"
-
-msgid "serviceChannelMessages/open"
-msgstr "已刮开%(boxName)s！"
-
-msgid "serviceChannelMessages/server_error"
-msgstr "未刮开凭证"
-
-msgid "serviceChannelMessages/server_error/FAILURE"
-msgstr "刮开凭证出错"
 
 msgid "singleRewardView/footer/openNextButton/"
 msgstr "刮开下一张"

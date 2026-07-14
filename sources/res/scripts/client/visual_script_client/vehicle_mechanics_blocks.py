@@ -1,7 +1,7 @@
 import logging, BigWorld, typing
 from constants import OVERHEAT_GAIN_STATE, TARGET_DESIGNATOR_STATE
 from events_handler import eventHandler
-from vehicles.mechanics.generic_mechanics.wheeled_dash.mechanic_interfaces import IWheeledDashListenerLogic
+from vehicles.mechanics.generic_mechanics.wheeled_dash import IWheeledDashListenerLogic
 from vehicles.mechanics.mechanic_commands import IMechanicCommandsListenerLogic
 from vehicles.mechanics.mechanic_constants import VehicleMechanic, VEHICLE_MECHANIC_USED_COMMANDS
 from visual_script.block import Block

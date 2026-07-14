@@ -18,13 +18,13 @@ msgid "info/difficult/1"
 msgstr "普通难度"
 
 msgid "info/difficult/2"
-msgstr "激战难度"
+msgstr "进阶难度"
 
 msgid "info/difficult/3"
 msgstr "残酷难度"
 
 msgid "info/mapName"
-msgstr "星火燎原 • 齐格菲防线 • {difficulty}"
+msgstr "星火燎原 • {mapName} • {difficulty}"
 
 msgid "info/respawnCount"
 msgstr "重生次数: {count}"
@@ -42,22 +42,22 @@ msgid "ls_finish/reason/5/lose"
 msgstr "所有盟友已离开战斗。"
 
 msgid "ls_finish/reason/last_stand/1/win"
-msgstr "已终结重置者——但这只是个开始。"
+msgstr "干得漂亮！准备好迎接更困难的任务了吗？"
 
 msgid "ls_finish/reason/last_stand/11/win"
 msgstr "已消灭普通难度的所有敌人。"
 
 msgid "ls_finish/reason/last_stand_hard/1/win"
-msgstr "已终结重置者。您阻止了入侵，拯救了世界。"
+msgstr "表现出色！很少有人能达到这个水平。"
 
 msgid "ls_finish/reason/last_stand_hard/11/win"
 msgstr "已消灭残酷难度的所有敌人。"
 
 msgid "ls_finish/reason/last_stand_medium/1/win"
-msgstr "已终结重置者，这一切终于结束了吗？"
+msgstr "干得漂亮！现在是时候迎接真正的挑战了。"
 
 msgid "ls_finish/reason/last_stand_medium/11/win"
-msgstr "已消灭激战难度的所有敌人。"
+msgstr "已消灭进阶难度的所有敌人。"
 
 msgid "ribbon/ban"
 msgstr ""

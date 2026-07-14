@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from enum import Enum
 from soft_exception import SoftException
 DOG_TAGS_FILE = 'scripts/item_defs/dog_tags/dog_tags.xml'
@@ -43,6 +44,7 @@ class ComponentNumberType(Enum):
 class DogTagsException(SoftException):
 
     def __init__(self, err, *args):
+        super(DogTagsException, self).__init__()
         self.err = err
         self.args = args
 

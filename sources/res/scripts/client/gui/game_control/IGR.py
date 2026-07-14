@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import Event, constants
 from PlayerEvents import g_playerEvents
 from skeletons.gui.game_control import IIGRController

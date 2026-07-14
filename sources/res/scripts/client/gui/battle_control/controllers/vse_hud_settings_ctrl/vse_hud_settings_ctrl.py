@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from Event import Event, EventManager
 from gui.battle_control.arena_info.interfaces import IVSEHUDSettingsController

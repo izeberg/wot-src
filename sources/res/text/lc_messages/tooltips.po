@@ -424,6 +424,9 @@ msgstr "%(value)d战争债券"
 msgid "additionalRewards/customizations/3d_style"
 msgstr "%(value)s3D风格"
 
+msgid "additionalRewards/customizations/attachment"
+msgstr "3D附件"
+
 msgid "additionalRewards/customizations/camouflage"
 msgstr "%(value)s涂装"
 
@@ -5188,20 +5191,20 @@ msgstr "选择一辆坦克并确认您已准备就绪并加入战斗。"
 msgid "hangar/startBtn/squadNotReady/header"
 msgstr "不可用"
 
+msgid "hangar/startBtn/wrongSquadVehicle/body"
+msgstr "选择另一辆坦克以确认您已准备就绪。"
+
+msgid "hangar/startBtn/wrongSquadVehicle/header"
+msgstr "无法加入战斗"
+
+msgid "hangar/startBtn/wrongSquadVehicleLevel/body"
+msgstr "选择一辆等级适合的坦克并确认您已准备就绪。"
+
+msgid "hangar/startBtn/wrongSquadVehicleLevel/header"
+msgstr "无法加入战斗"
+
 msgid "hangar/status/toRent"
 msgstr "延期租用时间"
-
-msgid "hangar/tankCarusel/wrongSquadTypeVehicle/body"
-msgstr "选择其它坦克类型以确认您是否就绪"
-
-msgid "hangar/tankCarusel/wrongSquadTypeVehicle/header"
-msgstr "不可用"
-
-msgid "hangar/tankCarusel/wrongSquadVehicle/body"
-msgstr "确认您准备好并选择一辆等级适合的坦克。"
-
-msgid "hangar/tankCarusel/wrongSquadVehicle/header"
-msgstr "不可用"
 
 msgid "hangar/tuning/body"
 msgstr "点击进入个性化界面。"
@@ -7891,6 +7894,16 @@ msgstr "完成维塔利·奥列年科的赛车图鉴。"
 msgid "notrecruitedtankman/race19_commanderC/label"
 msgstr "独特车长"
 
+msgid "notrecruitedtankman/servicewoman/desc"
+msgstr ""
+"无论接到何种任务，亚德维加·沃洛申都以沉着与勤勉应对。作为B系女子辅助服务队的光荣一员，她参与了意义非凡的战时行动，将奉献精神发扬光大。她的职责随战局所需而不断调整——有时驾驶运输卡车，有时整理紧急文件，有时通过无线电传达关键情报，偶尔还承担基础武器训练的工作。在整个战事时期，无数像亚德维加这样的女性证明了自己对伟大目标不可或缺的价值。"
+
+msgid "notrecruitedtankman/servicewoman/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/servicewoman/label"
+msgstr "?empty?"
+
 msgid "notrecruitedtankman/skillsTitle"
 msgstr "特长"
 
@@ -9073,6 +9086,60 @@ msgstr "?empty?"
 
 msgid "notrecruitedtankman/tankmen_bp20_4/label"
 msgstr "战斗通行证赛季XX"
+
+msgid "notrecruitedtankman/tankmen_bp20_5/desc"
+msgstr ""
+"乔治·威廉·克里格博士曾是一位备受尊敬的遗传学家，他的职业生涯致力于提高士兵的作战效率。然而，当他未经许可进行人体实验的事实曝光后，声誉便一落千丈。被科学界驱逐后，他转入幕后活动，利用非法所得，在一处偏远群岛建立了一座秘密研究设施，并由其私人雇佣兵军队守卫。在那里，他试图重新激活人类进化中早已消失的原始能力——一股一旦释放便可能无法控制的危险力量。"
+
+msgid "notrecruitedtankman/tankmen_bp20_5/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp20_5/label"
+msgstr "战斗通行证:孤岛惊魂"
+
+msgid "notrecruitedtankman/tankmen_bp20_6/desc"
+msgstr ""
+"前海军军官杰克·卡弗如今在南太平洋以私人船只租赁为生，凭借致命的技能维持生计。当他受雇将一名记者送往一座偏远岛屿时，情况迅速失控——刚抵达不久，他的船便被雇佣兵发射的导弹击毁。被困岛上的杰克随后与一名神秘内部人士取得了联系，对方揭示了岛上令人不安的秘密。他很快发现，这里正在进行由声名狼藉的科学家克里格博士主导的骇人实验。该实验计划用经过基因改造的超级生物取代人类。现在，杰克必须阻止这项行动，并找到重返文明世界的方法。"
+
+msgid "notrecruitedtankman/tankmen_bp20_6/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp20_6/label"
+msgstr "战斗通行证:孤岛惊魂"
+
+msgid "notrecruitedtankman/tankmen_bp20_7/desc"
+msgstr ""
+"\"你无所畏惧，将击败任何挡路之人。\"\n"
+"西特拉·塔尔格迈是拉克亚特族神秘的领袖，被族人奉为在世女神。这位兼具惊艳美貌与战士气质的女性，以强烈的信念与恢复族群荣耀的野心驱动自己。她以魅惑与操控交织的方式，引诱外来者杰森·布罗迪，将其纳入自己的掌控之中，唤醒他内心的黑暗，推动他一步步堕入疯狂，以实现她扭曲的愿景。"
+
+msgid "notrecruitedtankman/tankmen_bp20_7/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp20_7/label"
+msgstr "战斗通行证:孤岛惊魂"
+
+msgid "notrecruitedtankman/tankmen_bp20_8/desc"
+msgstr ""
+"杰森·布罗迪才华横溢、聪明过人，但缺乏人生方向，生活漫无目的，只专注于派对、极限运动和女友莉莎——尽管两人因他拒绝安分守己而时常发生冲突。如今被困在一个危机四伏的岛屿上，他终于被迫专注于一个目标:"
+" "
+"营救朋友。在此过程中，他发现自己内心深处潜藏着可怕的暴力倾向、天生的生存本能和日益增长的复仇渴望...同时也找到了一个或许真正属于他的归宿。然而，一切皆有代价，而他是否愿意付出这一代价，仍未可知。"
+
+msgid "notrecruitedtankman/tankmen_bp20_8/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp20_8/label"
+msgstr "战斗通行证:孤岛惊魂"
+
+msgid "notrecruitedtankman/tankmen_bp20_9/desc"
+msgstr ""
+"\"我们伟大而光荣的领袖，为将凯拉特从过去的阴影中带出，不惜以身犯险。他为这片收养他的土地奉献所有，爱这里的人民如同亲生子女。愿蒲甘之光照耀你们。\"\n"
+"自封为凯拉特之王的蒲甘·明，依靠其私人军队维系残酷独裁，统治着这个动荡而偏远的地区。他浮华张扬、残忍成性、毫不掩饰自恋本色——前一刻还能嬉笑调侃，下一刻便展现令人作呕的暴虐，却对两者都抱以同样精致而从容的享受，如同品味他摆盘考究的佳肴一般。"
+
+msgid "notrecruitedtankman/tankmen_bp20_9/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp20_9/label"
+msgstr "战斗通行证:孤岛惊魂"
 
 msgid "notrecruitedtankman/tankmen_bp2_1/desc"
 msgstr ""
@@ -10508,6 +10575,9 @@ msgstr "租用期内的胜率:%(count)s"
 
 msgid "quests/battlePass/linkBtn"
 msgstr "查看战斗通行证进度"
+
+msgid "quests/bonuses/attachments_set/body"
+msgstr "3D附件套装包含用于个性化特定坦克的独立元素。"
 
 msgid "quests/bonuses/token/battle_bonus_x5/body"
 msgstr "驾驶任意已取得当天首胜奖励的坦克，从第2场胜利开始获得5倍经验。"

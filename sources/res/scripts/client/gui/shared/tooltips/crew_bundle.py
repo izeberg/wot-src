@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from collections import namedtuple
 from gui.Scaleform.genConsts.BLOCKS_TOOLTIP_TYPES import BLOCKS_TOOLTIP_TYPES
 from gui.impl import backport

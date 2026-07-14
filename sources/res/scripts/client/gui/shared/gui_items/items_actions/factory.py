@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging
 from adisp import adisp_process, adisp_async
 from gui.shared.gui_items.items_actions import actions

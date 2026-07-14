@@ -1,4 +1,6 @@
+from __future__ import absolute_import
 from collections import defaultdict
+from future.utils import viewitems
 from debug_utils import LOG_ERROR
 from shared_utils.account_helpers.diff_utils import synchronizeDicts
 
@@ -65,7 +67,7 @@ class ArenaSyncObject(object):
             return cache
 
     def __processChangeList(self, changeList):
-        for handler, diffpaths in self.__callbacks.iteritems():
+        for handler, diffpaths in viewitems(self.__callbacks):
             for diffpath in diffpaths:
                 isFire, args = self.__processDiffPath(diffpath, changeList)
                 if isFire:

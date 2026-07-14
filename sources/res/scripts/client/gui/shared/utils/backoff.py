@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import random
 
 class AbstractBackoff(object):
@@ -39,10 +40,12 @@ class AbstractBackoff(object):
     def shift(self, value):
         self._tries += value
 
-    def next(self):
+    def __next__(self):
         delay = self.addRandom(self.calcDelay())
         self._tries += 1
         return self.normalize(delay)
+
+    next = __next__
 
     def getTries(self):
         return self._tries

@@ -1,3 +1,4 @@
+from __future__ import absolute_import, division
 import sys, time, typing, BigWorld, Event, account_shared, constants
 from battle_modifiers_common import BattleParams
 from constants import SECONDS_IN_DAY
@@ -131,8 +132,8 @@ class GameSessionController(IGameSessionController, IGlobalListener, Notifiable)
         return
 
     def isSessionStartedThisDay(self):
-        svrDaysCount = int(_getSvrLocal()) / time_utils.ONE_DAY
-        clientDaysCount = int(self.__sessionStartedAt - self.__regionals().getDayStartingTime()) / time_utils.ONE_DAY
+        svrDaysCount = int(_getSvrLocal()) // time_utils.ONE_DAY
+        clientDaysCount = int(self.__sessionStartedAt - self.__regionals().getDayStartingTime()) // time_utils.ONE_DAY
         return svrDaysCount == clientDaysCount
 
     def getDailyPlayTimeLeft(self):
@@ -314,7 +315,7 @@ class GameSessionController(IGameSessionController, IGlobalListener, Notifiable)
         if self.__curfewBlockTime is not None:
             curfewTimeLeft = self.__curfewBlockTime - _getSvrUtcToday()
         else:
-            curfewTimeLeft = sys.maxint
+            curfewTimeLeft = sys.maxsize
         return (playTimeLeft, _checkForNegative(curfewTimeLeft))
 
     def __loadBanCallback(self, banTimeLeft=0):

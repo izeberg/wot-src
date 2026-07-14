@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from collections import namedtuple
 from debug_utils import LOG_DEBUG
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS

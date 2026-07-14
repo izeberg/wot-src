@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<path>
+		<id>1518078728</id>
+		<name>path</name>
+		<node>
+			<name>District 4 - Zone 1</name>
+			<colour>0.800000 0.200000 0.572549 0.498039</colour>
+			<id>2063669485</id>
+			<transform>
+				<row0>300.000000 0.000000 0.000000</row0>
+				<row1>0.000000 100.000000 0.000000</row1>
+				<row2>0.000000 0.000000 600.000000</row2>
+				<row3>490.000000 50.000000 -80.000000</row3>
+			</transform>
+		</node>
+		<node>
+			<name>District 4 - Zone 3</name>
+			<colour>0.800000 0.325490 0.200000 0.498039</colour>
+			<id>17534664</id>
+			<transform>
+				<row0>140.000000 0.000000 0.000000</row0>
+				<row1>0.000000 100.000000 0.000000</row1>
+				<row2>0.000000 0.000000 240.000000</row2>
+				<row3>270.000000 50.000000 20.000000</row3>
+			</transform>
+		</node>
+		<node>
+			<name>District 4 - Zone 2</name>
+			<colour>0.200000 0.800000 0.400000 0.500000</colour>
+			<id>637112665</id>
+			<transform>
+				<row0>300.000000 0.000000 0.000000</row0>
+				<row1>0.000000 100.000000 0.000000</row1>
+				<row2>0.000000 0.000000 400.000000</row2>
+				<row3>450.000000 50.000000 420.000000</row3>
+			</transform>
+		</node>
+	</path>
+</root>

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, BigWorld
 from gui.shared.gui_items.processors import Processor, makeI18nError
 _logger = logging.getLogger(__name__)

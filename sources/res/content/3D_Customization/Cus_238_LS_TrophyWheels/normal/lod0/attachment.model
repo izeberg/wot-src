@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_238_LS_TrophyWheels/normal/lod1/attachment</parent>
+	<visibilityBox>
+		<min>-0.559237 -0.009898 -0.742084</min>
+		<max>0.069768 0.431790 0.735700</max>
+	</visibilityBox>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_238_LS_TrophyWheels/normal/lod0/attachment</nodefullVisual>
+</root>

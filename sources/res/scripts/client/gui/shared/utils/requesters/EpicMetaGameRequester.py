@@ -1,4 +1,7 @@
-import typing, BigWorld
+from __future__ import absolute_import, division
+import typing
+from past.utils import old_div
+import BigWorld
 from gui.shared.utils.requesters.abstract import AbstractSyncDataRequester
 from skeletons.gui.shared.utils.requesters import IEpicMetaGameRequester
 
@@ -10,7 +13,7 @@ class EpicMetaGameRequester(AbstractSyncDataRequester, IEpicMetaGameRequester):
 
     @property
     def seasonData(self):
-        return self.getCacheValue('seasonData', (0, None, dict()))
+        return self.getCacheValue('seasonData', (0, None, {}))
 
     @property
     def skillPoints(self):
@@ -34,7 +37,7 @@ class EpicMetaGameRequester(AbstractSyncDataRequester, IEpicMetaGameRequester):
     @property
     def averageXP(self):
         if self.battleCount > 0:
-            return self.getCacheValue('famePts', 0) / self.battleCount
+            return old_div(self.getCacheValue('famePts', 0), self.battleCount)
         return 0
 
     def _requestCache(self, callback=None):
@@ -43,4 +46,4 @@ class EpicMetaGameRequester(AbstractSyncDataRequester, IEpicMetaGameRequester):
     def _preprocessValidData(self, data):
         if 'epicMetaGame' in data:
             return dict(data['epicMetaGame'])
-        return dict()
+        return {}

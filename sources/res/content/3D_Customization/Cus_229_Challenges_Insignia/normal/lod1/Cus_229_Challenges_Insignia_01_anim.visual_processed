@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>static_joint</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>base</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>center</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.281050 0.000000</row3>
+					</transform>
+					<node>
+						<identifier>feather_1</identifier>
+						<transform>
+							<row0>0.484255 0.874927 0.000000</row0>
+							<row1>0.000000 0.000000 -1.000000</row1>
+							<row2>-0.874927 0.484255 0.000000</row2>
+							<row3>-0.098163 -0.013234 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>feather_1_BlendBone</identifier>
+							<transform>
+								<row0>0.484255 0.000000 -0.874927</row0>
+								<row1>0.874927 0.000000 0.484255</row1>
+								<row2>0.000000 1.000000 0.000000</row2>
+								<row3>-0.186783 -0.000000 -0.215577</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>feather_2</identifier>
+						<transform>
+							<row0>0.495359 0.868688 0.000000</row0>
+							<row1>0.000000 0.000000 -1.000000</row1>
+							<row2>-0.868688 0.495359 0.000000</row2>
+							<row3>-0.099006 0.047962 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>feather_2_BlendBone</identifier>
+							<transform>
+								<row0>0.495360 0.000000 -0.868688</row0>
+								<row1>0.868688 0.000000 0.495360</row1>
+								<row2>0.000000 1.000000 0.000000</row2>
+								<row3>-0.236766 -0.000000 -0.248984</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>feather_3</identifier>
+						<transform>
+							<row0>0.495299 0.868723 -0.000000</row0>
+							<row1>-0.000000 0.000000 -1.000000</row1>
+							<row2>-0.868723 0.495299 0.000000</row2>
+							<row3>-0.098752 0.109457 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>feather_3_BlendBone</identifier>
+							<transform>
+								<row0>0.495299 -0.000000 -0.868723</row0>
+								<row1>0.868723 0.000000 0.495299</row1>
+								<row2>0.000000 1.000000 -0.000000</row2>
+								<row3>-0.290331 -0.000000 -0.279206</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>feather_4</identifier>
+						<transform>
+							<row0>0.484255 -0.874927 0.000000</row0>
+							<row1>0.000000 0.000000 -1.000000</row1>
+							<row2>0.874927 0.484255 0.000000</row2>
+							<row3>0.098163 -0.013234 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>feather_4_BlendBone</identifier>
+							<transform>
+								<row0>0.484255 0.000000 0.874927</row0>
+								<row1>-0.874927 0.000000 0.484255</row1>
+								<row2>0.000000 1.000000 0.000000</row2>
+								<row3>0.186783 -0.000000 -0.215577</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>feather_5</identifier>
+						<transform>
+							<row0>0.495359 -0.868688 0.000000</row0>
+							<row1>-0.000000 -0.000000 -1.000000</row1>
+							<row2>0.868688 0.495359 -0.000000</row2>
+							<row3>0.099006 0.047962 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>feather_5_BlendBone</identifier>
+							<transform>
+								<row0>0.495359 -0.000000 0.868688</row0>
+								<row1>-0.868688 -0.000000 0.495359</row1>
+								<row2>0.000000 1.000000 0.000000</row2>
+								<row3>0.236766 -0.000000 -0.248984</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>feather_6</identifier>
+						<transform>
+							<row0>0.495299 -0.868723 0.000000</row0>
+							<row1>-0.000000 -0.000000 -1.000000</row1>
+							<row2>0.868723 0.495299 -0.000000</row2>
+							<row3>0.098752 0.109457 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>feather_6_BlendBone</identifier>
+							<transform>
+								<row0>0.495299 -0.000000 0.868723</row0>
+								<row1>-0.868723 -0.000000 0.495299</row1>
+								<row2>0.000000 1.000000 0.000000</row2>
+								<row3>0.290331 -0.000000 -0.279206</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>head</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>0.000000 0.088000 0.000000</row3>
+						</transform>
+						<node>
+							<identifier>head_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>0.000000 -0.369050 0.000000</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>center_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>0.000000 -0.281050 0.000000</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>base_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>base_BlendBone</node>
+		<node>center_BlendBone</node>
+		<node>feather_3_BlendBone</node>
+		<node>feather_6_BlendBone</node>
+		<geometry>
+			<vertices>s0Shape.vertices</vertices>
+			<primitive>s0Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>112</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/3D_Customization/Cus_229_Challenges_Insignia/Cus_229_Challenges_Insignia_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>content/3D_Customization/Cus_229_Challenges_Insignia/Cus_229_Challenges_Insignia_AO.dds</Texture>
+					</property>
+					<property>
+						g_defaultDetail
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_detailParams
+						<matrix>
+							<element>427434527</element>
+							<element>1020081200</element>
+							<element>287915151</element>
+							<element>1006632960</element>
+							<element>298782720</element>
+							<element>1006632960</element>
+							<element>396760770</element>
+							<element>1006632960</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>4261412864</element>
+							<element>0</element>
+						</matrix>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>4.000000 4.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_dirtLevel
+						<Float>0.360000</Float>
+					</property>
+					<property>
+						g_glossMax
+						<Float>0.627675</Float>
+					</property>
+					<property>
+						g_glossMin
+						<Float>0.365683</Float>
+					</property>
+					<property>
+						g_metallicDetailInfluence
+						<Float>0.380000</Float>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/3D_Customization/Cus_229_Challenges_Insignia/Cus_229_Challenges_Insignia_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/3D_Customization/Cus_229_Challenges_Insignia/Cus_229_Challenges_Insignia_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.000000 0.200362 -0.000000</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-0.237797 -0.099988 -0.065591</min>
+		<max>0.237797 0.500712 0.065591</max>
+	</boundingBox>
+	<geometrySize>13496</geometrySize>
+</root>

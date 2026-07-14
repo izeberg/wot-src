@@ -1,12 +1,15 @@
+from __future__ import absolute_import
 from collections import OrderedDict, defaultdict
 from data_structures import OrderedSet
-from string import lower, upper
+from functools import reduce
+from future.utils import listitems, viewitems
 from typing import TYPE_CHECKING
 from debug_utils import LOG_ERROR
 from items.components import c11n_components as cn
 from items.components.c11n_constants import ApplyArea, CustomizationType, CustomizationTypeNames, HIDDEN_CAMOUFLAGE_ID, EMPTY_ITEM_ID
 from items.named_vector import NamedVector
 from items.utils import getDifferVehiclePartNames
+from py2to3.patched_future import with_metaclass
 from serialization import ComponentBinSerializer
 from serialization.field import intField, strField, intArrayField, customArrayField
 from serialization.serializable_component import SerializableComponent
@@ -109,8 +112,7 @@ def getAllItemsFromOutfit(cc, outfit, ignoreHiddenCamouflage=True, ignoreEmpty=T
     return dict(result)
 
 
-class CustomizationOutfit(SerializableComponent):
-    __metaclass__ = ReflectionMetaclass
+class CustomizationOutfit(with_metaclass(ReflectionMetaclass, SerializableComponent)):
     customType = C11nSerializationTypes.OUTFIT
     fields = OrderedDict((
      (
@@ -159,12 +161,14 @@ class CustomizationOutfit(SerializableComponent):
         self.stat_trackers = stat_trackers or []
         super(CustomizationOutfit, self).__init__()
 
-    def __nonzero__(self):
+    def __bool__(self):
         for v in getattr(type(self), '__slots__'):
             if getattr(self, v):
                 return True
 
         return False
+
+    __nonzero__ = __bool__
 
     def getInvisibilityCamouflageId(self):
         for ce in self.camouflages:
@@ -177,7 +181,7 @@ class CustomizationOutfit(SerializableComponent):
         if not self:
             return ''
         for typeId in CustomizationType.APPLIED_TO_TYPES:
-            componentsAttrName = ('{}s').format(lower(CustomizationTypeNames[typeId]))
+            componentsAttrName = ('{}s').format(CustomizationTypeNames[typeId].lower())
             components = CustomizationOutfit.applyAreaBitmaskToDict(getattr(self, componentsAttrName))
             setattr(self, componentsAttrName, CustomizationOutfit.shrinkAreaBitmask(components))
 
@@ -215,12 +219,12 @@ class CustomizationOutfit(SerializableComponent):
     @staticmethod
     def shrinkAreaBitmask(components):
         grouped = {}
-        for at, lst in components.iteritems():
+        for at, lst in viewitems(components):
             for i in lst:
                 grouped.setdefault(i, []).append(at)
 
         res = []
-        for item, group in grouped.iteritems():
+        for item, group in viewitems(grouped):
             curItem = item.copy()
             curItem.appliedTo = reduce(int.__or__, group, 0)
             res.append(curItem)
@@ -234,7 +238,7 @@ class CustomizationOutfit(SerializableComponent):
             resultOutfit.serial_number = outfit.serial_number
             resultOutfit.styleId = outfit.styleId
         for itemType in CustomizationType.RANGE:
-            typeName = lower(CustomizationTypeNames[itemType])
+            typeName = CustomizationTypeNames[itemType].lower()
             componentsAttrName = ('{}s').format(typeName)
             if componentsAttrName not in self.__slots__:
                 continue
@@ -285,7 +289,7 @@ class CustomizationOutfit(SerializableComponent):
         resultOutfit.attachments = self.attachments
         resultOutfit.stat_trackers = self.stat_trackers
         for itemType in CustomizationType.FULL_RANGE:
-            typeName = lower(CustomizationTypeNames[itemType])
+            typeName = CustomizationTypeNames[itemType].lower()
             componentsAttrName = ('{}s').format(typeName)
             if componentsAttrName not in self.__slots__:
                 continue
@@ -335,7 +339,7 @@ class CustomizationOutfit(SerializableComponent):
         for c11nType in dismountTypes:
             if c11nType is CustomizationType.STYLE:
                 continue
-            components = getattr(self, ('{}s').format(lower(CustomizationTypeNames[c11nType])))
+            components = getattr(self, ('{}s').format(CustomizationTypeNames[c11nType].lower()))
             if c11nType in CustomizationType.APPLIED_TO_TYPES:
                 for component in components:
                     for area in areas:
@@ -388,9 +392,9 @@ class CustomizationOutfit(SerializableComponent):
           ApplyArea.TURRET_REGIONS_VALUE, vehDescr.turret),
          (
           ApplyArea.GUN_REGIONS_VALUE, vehDescr.gun)):
-            for componentName, (area, _) in vehiclePart.customizableVehicleAreas.iteritems():
-                components = getattr(self, ('{}s').format(lower(componentName)))
-                componentType = getattr(CustomizationType, upper(componentName))
+            for componentName, (area, _) in viewitems(vehiclePart.customizableVehicleAreas):
+                components = getattr(self, ('{}s').format(componentName.lower()))
+                componentType = getattr(CustomizationType, componentName.upper())
                 for component in components:
                     if componentType == CustomizationType.CAMOUFLAGE and component.id == HIDDEN_CAMOUFLAGE_ID:
                         continue
@@ -407,7 +411,7 @@ class CustomizationOutfit(SerializableComponent):
     def countComponents(self, componentId, typeId):
         result = 0
         if typeId in CustomizationType.APPLIED_TO_TYPES:
-            outfitComponents = getattr(self, ('{}s').format(lower(CustomizationTypeNames[typeId])))
+            outfitComponents = getattr(self, ('{}s').format(CustomizationTypeNames[typeId].lower()))
             for component in outfitComponents:
                 if componentId == component.id:
                     result += ApplyArea.getAppliedCount(component.appliedTo)
@@ -431,7 +435,7 @@ class CustomizationOutfit(SerializableComponent):
         countBefore = count
         if count > 0:
             if typeId in CustomizationType.APPLIED_TO_TYPES:
-                attr = ('{}s').format(lower(CustomizationTypeNames[typeId]))
+                attr = ('{}s').format(CustomizationTypeNames[typeId].lower())
                 outfitComponents = getattr(self, attr)
                 for component in outfitComponents:
                     if componentId == component.id:
@@ -476,12 +480,12 @@ class CustomizationOutfit(SerializableComponent):
     def removeComponents(self, typeIds):
         for typeId in typeIds:
             if typeId in CustomizationType.DISMOUNT_TYPE:
-                attr = ('{}s').format(lower(CustomizationTypeNames[typeId]))
+                attr = ('{}s').format(CustomizationTypeNames[typeId].lower())
                 setattr(self, attr, [])
 
     def wipe(self, gameParams, cache, getGroupedComponentPrice, vehType=None):
         outfitItems = getAllItemsFromOutfit(cache, self)
-        for itemDescr, count in outfitItems.items():
+        for itemDescr, count in listitems(outfitItems):
             cid, itemId = cn.splitIntDescr(itemDescr)
             isNeedRemove = False
             item = cache.itemTypes[cid][itemId]

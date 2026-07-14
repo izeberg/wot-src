@@ -1,5 +1,6 @@
-from simple_progress import SimpleProgressAchievement
+from __future__ import absolute_import, division
 from gui.impl import backport
+from gui.shared.gui_items.dossier.achievements.abstract.simple_progress import SimpleProgressAchievement
 from helpers import i18n
 from dossiers2.custom.config import RECORD_CONFIGS
 

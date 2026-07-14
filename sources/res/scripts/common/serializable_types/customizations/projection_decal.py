@@ -1,6 +1,8 @@
+from __future__ import absolute_import
 from collections import OrderedDict
 from constants import IS_EDITOR
 from items.components.c11n_constants import ApplyArea, Options, DEFAULT_SCALE_FACTOR_ID, DEFAULT_SCALE, DEFAULT_ROTATION, DEFAULT_POSITION, DEFAULT_DECAL_TINT_COLOR, ProjectionDecalMatchingTags
+from py2to3.patched_future import with_metaclass
 from serialization import FieldFlags
 from serialization.field import intField, optionsEnumField, xmlOnlyApplyAreaEnumField, xmlOnlyFloatArrayField, xmlOnlyIntField, intArrayField, xmlOnlyTagsField
 from serialization.serializable_component import SerializableComponent
@@ -8,8 +10,7 @@ from wrapped_reflection_framework import ReflectionMetaclass
 from ..types import C11nSerializationTypes
 __all__ = ('ProjectionDecalComponent', )
 
-class ProjectionDecalComponent(SerializableComponent):
-    __metaclass__ = ReflectionMetaclass
+class ProjectionDecalComponent(with_metaclass(ReflectionMetaclass, SerializableComponent)):
     customType = C11nSerializationTypes.PROJECTION_DECAL
     fields = OrderedDict((
      (

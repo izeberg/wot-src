@@ -7,7 +7,7 @@ class AfterburningBattleRoyale(EntityExtra):
         appearance = vehicle.appearance
         if appearance is not None:
             effectMgr = appearance.customEffectManager
-            if effectMgr is not None:
+            if effectMgr:
                 effectMgr.variables['Nitro'] = 1
         return
 
@@ -16,6 +16,6 @@ class AfterburningBattleRoyale(EntityExtra):
         appearance = vehicle.appearance
         if appearance is not None:
             effectMgr = appearance.customEffectManager
-            if effectMgr is not None:
+            if effectMgr:
                 effectMgr.variables['Nitro'] = 0
         return

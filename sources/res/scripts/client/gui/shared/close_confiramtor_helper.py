@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import adisp
 from wg_async import wg_async, wg_await
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS

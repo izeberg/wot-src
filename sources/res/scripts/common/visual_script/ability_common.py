@@ -1,6 +1,7 @@
+from __future__ import absolute_import
 import typing
-from visual_script.type import VScriptEnum
 from constants import EQUIPMENT_STAGES, EQUIPMENT_ERROR_STATES
+from visual_script.type import VScriptEnum
 
 class Stage(VScriptEnum):
 

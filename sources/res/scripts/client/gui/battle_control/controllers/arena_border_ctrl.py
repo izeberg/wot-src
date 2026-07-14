@@ -1,3 +1,4 @@
+from __future__ import absolute_import, division
 import BigWorld, Math
 from gui.battle_control.arena_info.interfaces import IArenaLoadController
 from gui.battle_control.battle_constants import BATTLE_CTRL_ID

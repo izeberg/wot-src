@@ -256,6 +256,9 @@ msgstr "大地精魄"
 msgid "Chassis_It37_Serpente"
 msgstr "\"鞭蛇\""
 
+msgid "Chassis_It38_Donnola"
+msgstr "多诺拉"
+
 msgid "Chassis_It39_Coccodrillo"
 msgstr "\"战鳄\""
 
@@ -738,6 +741,23 @@ msgstr "\"鞭蛇\""
 msgid "It37_Serpente_short_special"
 msgstr "双管火炮系统，良好的机动性"
 
+msgid "It38_Donnola"
+msgstr "多诺拉"
+
+msgid "It38_Donnola_descr"
+msgstr ""
+"1975年，I系军方开始研发一辆适用于远征部队的火力支援坦克。设计人员计划将当时先进的60毫米HVGS火炮安装在轻型双人炮塔中。得益于较高的炮口初速，该火炮拥有良好的装甲穿透力。这辆紧凑轻便的坦克适合空运，专为空降部队、海军陆战队和山地步兵团设计。然而，由于其零部件未与其他I系装甲载具统一，该计划在原型车阶段被终止。"
+
+msgid "It38_Donnola_long_special"
+msgstr ""
+"多诺拉是一辆I系IX级轻型坦克。得益于出色的机动性、小巧的尺寸和良好的隐蔽能力，该坦克能高效地进行侦察。同时，其3连发弹夹炮独具特色，所有炮弹都装在一个短弹夹中，也使得多诺拉能够提供火力支援。"
+
+msgid "It38_Donnola_short"
+msgstr "多诺拉"
+
+msgid "It38_Donnola_short_special"
+msgstr "带有短弹夹的弹夹炮，良好的最大速度"
+
 msgid "It39_Coccodrillo"
 msgstr "\"战鳄\""
 
@@ -822,6 +842,9 @@ msgstr "MTU 870 (p)"
 
 msgid "MTU_873"
 msgstr "MTU 873"
+
+msgid "MTU_8V183_TE_22_Donnola"
+msgstr "MTU 8V183 TE-22 (多诺拉)"
 
 msgid "MTU_MB_837_Ba_500A"
 msgstr "MTU MB Ba 500A"
@@ -915,6 +938,9 @@ msgstr "SEM-25S"
 
 msgid "SEM_35"
 msgstr "SEM-35"
+
+msgid "SEM_70_Donnola"
+msgstr "SEM-70 (多诺拉)"
 
 msgid "SEM_80"
 msgstr "SEM-80"
@@ -1077,6 +1103,9 @@ msgstr "大地精魄"
 
 msgid "Turret_1_It37_Serpente"
 msgstr "\"鞭蛇\""
+
+msgid "Turret_1_It38_Donnola"
+msgstr "多诺拉 T 60/70 A"
 
 msgid "Turret_1_It39_Coccodrillo"
 msgstr "\"战鳄\""
@@ -1509,6 +1538,18 @@ msgstr "c.p.47/32 M40"
 
 msgid "_47mm_c_p_47_40_mod_39"
 msgstr "c.p. 47/40 M39"
+
+msgid "_60mm_OTO_HVGS_Donnola"
+msgstr "60mm OTO HVGS炮 (多诺拉)"
+
+msgid "_60mm_Type_300_APFSDS_T_Donnola"
+msgstr "300型 APFSDS-T (多诺拉)"
+
+msgid "_60mm_Type_301_HE_T_Donnola"
+msgstr "301型 HE-T (多诺拉)"
+
+msgid "_60mm_Type_310_HEAT_FS_Donnola"
+msgstr "310型 HEAT-FS (多诺拉)"
 
 msgid "_75mm_Cannone_da_75_18"
 msgstr "75mm L/18炮"

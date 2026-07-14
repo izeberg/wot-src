@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G200_Chi_Go/crash/lod3/Turret_01</nodefullVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.189565 -0.087310 -1.531014</min>
+		<max>1.192214 2.654901 1.621848</max>
+	</visibilityBox>
+	<parent>vehicles/german/G200_Chi_Go/crash/lod4/Turret_01</parent>
+	<extent>192</extent>
+</root>

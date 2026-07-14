@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from builtins import range
 import Event
 from helpers import time_utils
 from gui.ClientUpdateManager import g_clientUpdateManager
@@ -33,7 +35,8 @@ def getForbiddenPeriods(hours, formatter=None):
             if currRange is None:
                 currRange = [
                  h, h]
-            elif h - currRange[1] > 1:
+                continue
+            if h - currRange[1] > 1:
                 guiData.append(_formatPeriod(currRange[0], _getNextHour(currRange[1])))
                 currRange = [h, h]
             else:

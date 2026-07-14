@@ -1,5 +1,7 @@
+from __future__ import absolute_import
 import random, string, time
-from functools import wraps, partial
+from functools import wraps
+from future.utils import viewitems
 from datetime import datetime, timedelta, time as dt_time
 from client_request_lib import exceptions
 from client_request_lib.data_sources import base
@@ -25,8 +27,6 @@ def fake_method(example):
                 result = {'description': e.description}
                 status_code = e.status_code
                 response_code = e.response_code
-            except:
-                raise
 
             _doResponse(callback, result, status_code, response_code)
 
@@ -115,7 +115,7 @@ class FakeDataAccessor(base.BaseDataAccessor):
     def _filter_data(self, data, fields):
         if isinstance(data, list):
             return [ self._filter_data(i, fields) for i in data ]
-        return {k:v for k, v in data.iteritems() if k in fields}
+        return {k:v for k, v in viewitems(data) if k in fields}
 
     def _request_data(self, section, entity_id, fields=None):
         if not self._account:
@@ -187,7 +187,7 @@ class FakeDataAccessor(base.BaseDataAccessor):
         return [ self._request_data('clans_info', clan_id, fields=fields) for clan_id in clan_ids ]
 
     @fake_method(example=lambda acc_id: {'id': acc_id, 'name': 'name'})
-    def get_accounts_names(self, account_ids, fields=None):
+    def get_accounts_names(self, callback, account_ids, fields=None):
         return [ self._request_data('accounts_names', account_id, fields=fields) for account_id in account_ids ]
 
     @fake_method(example=lambda attr_prefix: {'user_stated_country': 'RU'})
@@ -223,16 +223,16 @@ class FakeDataAccessor(base.BaseDataAccessor):
     def get_accounts_clans(self, account_ids, fields):
         return [ self._request_data('accounts_clans', i, fields=fields) for i in account_ids ]
 
-    @fake_method(example=lambda (account_id, statuses): [ {'status': random.choice(statuses or ('active', 'declined', 'cancelled', 'accepted', 'expired',
-                           'error', 'deleted')), 'created_at': datetime.now(), 'updated_at': datetime.now(), 'sender_id': random.randrange(1, 10000), 'id': random.randrange(1, 1000000), 'account_id': account_id, 'clan_id': random.randrange(1, 10000), 'status_changer_id': random.randrange(1, 10000), 'comment': ('Welcome {}!').format(random.randrange(1, 10000)) if random.choice((1, 0)) else ''} for i in range(random.randrange(0, 1000))
+    @fake_method(example=lambda params: [ {'status': random.choice(params[1] or ('active', 'declined', 'cancelled', 'accepted', 'expired',
+                            'error', 'deleted')), 'created_at': datetime.now(), 'updated_at': datetime.now(), 'sender_id': random.randrange(1, 10000), 'id': random.randrange(1, 1000000), 'account_id': params[0], 'clan_id': random.randrange(1, 10000), 'status_changer_id': random.randrange(1, 10000), 'comment': ('Welcome {}!').format(random.randrange(1, 10000)) if random.choice((1, 0)) else ''} for i in range(random.randrange(0, 1000))
     ])
     @paginated_method
     def get_account_applications(self, fields=None, statuses=None):
         return self._request_data('account_applications', (
          self.account, tuple(statuses or [])), fields=fields)
 
-    @fake_method(example=lambda (clan_id, statuses): [ {'status': random.choice(statuses or ('active', 'declined', 'cancelled', 'accepted', 'expired',
-                           'error', 'deleted')), 'created_at': datetime.now(), 'updated_at': datetime.now(), 'sender_id': random.randrange(1, 10000), 'id': random.randrange(1, 1000000), 'account_id': random.randrange(1, 10000), 'clan_id': clan_id, 'status_changer_id': random.randrange(1, 10000), 'comment': ('Welcome {}!').format(random.randrange(1, 10000)) if random.choice((1, 0)) else ''} for i in range(random.randrange(0, 1000))
+    @fake_method(example=lambda params: [ {'status': random.choice(params[1] or ('active', 'declined', 'cancelled', 'accepted', 'expired',
+                            'error', 'deleted')), 'created_at': datetime.now(), 'updated_at': datetime.now(), 'sender_id': random.randrange(1, 10000), 'id': random.randrange(1, 1000000), 'account_id': random.randrange(1, 10000), 'clan_id': params[0], 'status_changer_id': random.randrange(1, 10000), 'comment': ('Welcome {}!').format(random.randrange(1, 10000)) if random.choice((1, 0)) else ''} for i in range(random.randrange(0, 1000))
     ])
     @paginated_method
     def get_clan_applications(self, clan_id, fields=None, statuses=None):
@@ -251,16 +251,16 @@ class FakeDataAccessor(base.BaseDataAccessor):
     def get_recommended_clans(self, fields=None):
         return self._request_data('recommended_clans', self.account)
 
-    @fake_method(example=lambda (clan_id, statuses): [ {'status': random.choice(statuses or ('active', 'declined', 'cancelled', 'accepted', 'expired',
-                           'error', 'deleted')), 'created_at': datetime.now(), 'updated_at': datetime.now(), 'sender_id': random.randrange(1, 10000), 'id': random.randrange(1, 1000000), 'account_id': random.randrange(1, 10000), 'clan_id': clan_id, 'comment': ('Welcome {}!').format(random.randrange(1, 10000)) if random.choice((1, 0)) else '', 'status_changer_id': 2132} for i in range(random.randrange(0, 1000))
+    @fake_method(example=lambda params: [ {'status': random.choice(params[1] or ('active', 'declined', 'cancelled', 'accepted', 'expired',
+                            'error', 'deleted')), 'created_at': datetime.now(), 'updated_at': datetime.now(), 'sender_id': random.randrange(1, 10000), 'id': random.randrange(1, 1000000), 'account_id': random.randrange(1, 10000), 'clan_id': params[0], 'comment': ('Welcome {}!').format(random.randrange(1, 10000)) if random.choice((1, 0)) else '', 'status_changer_id': 2132} for i in range(random.randrange(0, 1000))
     ])
     @paginated_method
     def get_clan_invites(self, clan_id, fields=None, statuses=None):
         return self._request_data('clan_invites', (
          clan_id, tuple(statuses or [])), fields=fields)
 
-    @fake_method(example=lambda (account_id, statuses): [ {'status': random.choice(statuses or ('active', 'declined', 'cancelled', 'accepted', 'expired',
-                           'error', 'deleted')), 'created_at': datetime.now(), 'updated_at': datetime.now(), 'sender_id': random.randrange(1, 10000), 'id': random.randrange(1, 1000000), 'account_id': account_id, 'clan_id': random.randrange(1, 10000), 'status_changer_id': 2132, 'comment': ('Welcome {}!').format(random.randrange(1, 10000)) if random.choice((1, 0)) else ''} for i in range(random.randrange(0, 1000))
+    @fake_method(example=lambda params: [ {'status': random.choice(params[1] or ('active', 'declined', 'cancelled', 'accepted', 'expired',
+                            'error', 'deleted')), 'created_at': datetime.now(), 'updated_at': datetime.now(), 'sender_id': random.randrange(1, 10000), 'id': random.randrange(1, 1000000), 'account_id': params[0], 'clan_id': random.randrange(1, 10000), 'status_changer_id': 2132, 'comment': ('Welcome {}!').format(random.randrange(1, 10000)) if random.choice((1, 0)) else ''} for i in range(random.randrange(0, 1000))
     ])
     @paginated_method
     def get_account_invites(self, fields=None, statuses=None):

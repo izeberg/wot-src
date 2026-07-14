@@ -3076,6 +3076,10 @@
 			<texture>particles/content_deferred/PFX_textures/eff_tex_distortion.dds</texture>
 		</preload>
 		<preload>
+			<shader>\data\shaders\ps_shimmer.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization_main.dds</texture>
+		</preload>
+		<preload>
 			<shader>\data\shaders\ps.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/eff_rocket_accelerator.dds</texture>
 		</preload>
@@ -3494,6 +3498,10 @@
 		<fn_effect_bin>particles/3D_Customization/Cus_216_LS_GasBaloons/Cus_216_LS_GasBaloons_Smoke.eff</fn_effect_bin>
 		<fn_effect_bin>particles/3D_Customization/Cus_113_Historical_M129/Cus_113_Historical_M129.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_113_Historical_M129/Cus_113_Historical_M129.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/3D_Customization/Cus_229_Challenges_Insignia/Cus_229_Challenges_Insignia_fire.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_229_Challenges_Insignia/Cus_229_Challenges_Insignia_fire.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/3D_Customization/Cus_233_Challenges_Armor/cus_233_challenges_armor_smoke.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_233_Challenges_Armor/cus_233_challenges_armor_smoke.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Battle_Royal/Afterburning/br_nitro_gearup.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Battle_Royal/Afterburning/br_nitro_idle.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Battle_Royal/Afterburning/br_nitro_load.vfx</fn_effect_bin>

@@ -190,11 +190,20 @@ msgstr "Wz.64GC B"
 msgid "Chassis_Pl37_CS_67_Szakal"
 msgstr "CS-67 S"
 
+msgid "Chassis_Pl38_63TP_Rycerski"
+msgstr "63TP R"
+
 msgid "Chassis_Pl39_Husarz"
 msgstr "翼骑兵"
 
 msgid "Chassis_Pl40_Krazownik"
 msgstr "巡航者"
+
+msgid "Chassis_Pl44_Kolczatka"
+msgstr "\"棘刺\""
+
+msgid "DNT_10_R"
+msgstr "DNT-10 (R)"
 
 msgid "Fug7A"
 msgstr "FuG 7"
@@ -916,6 +925,26 @@ msgstr ""
 msgid "Pl37_CS_67_Szakal_short"
 msgstr "CS-67 S"
 
+msgid "Pl38_63TP_Rycerski"
+msgstr "63TP R"
+
+msgid "Pl38_63TP_Rycerski_descr"
+msgstr ""
+"战后，B系开始生产S系授权的坦克，但仍保留了自主研发的潜力。20世纪60年代，B系提出了63TP R重型坦克计划——该坦克采用传统布局，旨在融合西方和S系坦克制造的最佳创新成果。\n"
+"该设计要求坦克具备现代水平的火力与机动性，并改善乘员的操作条件。火炮的俯仰角得到加强，维护也得以简化。弹药主要位于炮塔尾舱中，这不仅使得装填更加方便，还减轻了瞄准驱动装置的负载，从而提高了炮塔的平衡性。该坦克最终未能成型。"
+
+msgid "Pl38_63TP_Rycerski_long_special"
+msgstr ""
+"63TP "
+"R是一辆B系IX级重型坦克。作为全能型重坦，其参数独具特色——良好的最大速度和一门具有优秀平均单发损伤的火炮，同时还拥有良好的火炮俯角和坚固的炮塔装甲。有别于大多数同角色坦克，63TP"
+" R能够率先抢占关键点位。"
+
+msgid "Pl38_63TP_Rycerski_short"
+msgstr "63TP"
+
+msgid "Pl38_63TP_Rycerski_short_special"
+msgstr "良好的火炮俯角和机动性"
+
 msgid "Pl39_Husarz"
 msgstr "翼骑兵"
 
@@ -950,6 +979,23 @@ msgstr "巡航者"
 msgid "Pl40_Krazownik_short_special"
 msgstr "良好的装甲，高额的平均单发损伤"
 
+msgid "Pl44_Kolczatka"
+msgstr "\"棘刺\""
+
+msgid "Pl44_Kolczatka_desc"
+msgstr ""
+"20世纪70年代初，B系开始研发\"棘刺\"试验型自行反坦克炮，相比更沉重的载具，该坦克注重高机动性和低成本。开放式战斗室和4名乘员不仅简化了结构，还减轻了重量。配备激光测距仪和夜视仪的火控系统原本将成为关键特色。设计人员还计划使用瓦贝迪机械厂的通用底盘，配备橡胶履带板，使坦克能够高速行驶并使用公共道路。由于资金限制，以及对条约组织内部合作的依赖，加上军方将研发重点转向反坦克导弹，该计划于20世纪70年代后半期在蓝图阶段被终止。"
+
+msgid "Pl44_Kolczatka_long_special"
+msgstr ""
+"\"棘刺\"是一辆B系IX级自行反坦克炮，融合了狙击型自行反坦克炮和中型坦克的特点。它拥有强劲的火力、良好的机动性、全向旋转炮塔和出色的火炮俯角，不仅擅长远程打击，也能提供火力支援，甚至在前线与敌交锋。"
+
+msgid "Pl44_Kolczatka_short"
+msgstr "\"棘刺\""
+
+msgid "Pl44_Kolczatka_short_special"
+msgstr "全向旋转炮塔，出色的机动性"
+
 msgid "Polski_FIAT_122BC"
 msgstr "波尔斯基菲亚特 122BC"
 
@@ -961,6 +1007,9 @@ msgstr "RKB/c"
 
 msgid "RKD"
 msgstr "RKD"
+
+msgid "RM_31T"
+msgstr "RM-31T"
 
 msgid "RR_Kestrel"
 msgstr "RR K"
@@ -985,6 +1034,9 @@ msgstr "RTU \"杰西恩-M\""
 
 msgid "R_112"
 msgstr "R-112"
+
+msgid "R_112_R"
+msgstr "R-112 (R)"
 
 msgid "R_113"
 msgstr "R-113"
@@ -1175,11 +1227,17 @@ msgstr "Wz.64GC B"
 msgid "Turret_1_Pl37_CS_67_Szakal"
 msgstr "CS 67 S"
 
+msgid "Turret_1_Pl38_63TP_Rycerski"
+msgstr "63TP R"
+
 msgid "Turret_1_Pl39_Husarz"
 msgstr "翼骑兵"
 
 msgid "Turret_1_Pl40_Krazownik"
 msgstr "巡航者"
+
+msgid "Turret_1_Pl44_Kolczatka"
+msgstr "\"棘刺\""
 
 msgid "Turret_2_Pl05_50TP_Tyszkiewicza"
 msgstr "50TP T II型"
@@ -1222,6 +1280,9 @@ msgstr "CS-53M-1H"
 
 msgid "Turret_3_Pl23_CS_53_SH"
 msgstr "CS-53 MH"
+
+msgid "UTD_20_FM"
+msgstr "UTD-20-FM"
 
 msgid "V-2-34_B"
 msgstr "V-2-34"
@@ -1496,6 +1557,15 @@ msgstr "OF-471"
 msgid "_122mm_OF-471M"
 msgstr "OF-471M"
 
+msgid "_122mm_PK_62_PCC"
+msgstr "PK-62 (PCC)"
+
+msgid "_122mm_POB_62_PCC"
+msgstr "POB-62 (PCC)"
+
+msgid "_122mm_PP_62_PCC"
+msgstr "PP-62 (PCC)"
+
 msgid "_122mm_UBR-471_PB"
 msgstr "BR-471PB"
 
@@ -1531,6 +1601,9 @@ msgstr "WOF-471P (53TP)"
 
 msgid "_122mm_WOF_471P_W"
 msgstr "WOF-471P (W)"
+
+msgid "_122mm_Wz_53_PCC"
+msgstr "122mm wz.53炮 (PCC)"
 
 msgid "_122mm_armata_wz_53_56"
 msgstr "122mm wz.53/56炮"
@@ -1588,6 +1661,18 @@ msgstr "AZ-PB-46A"
 
 msgid "_130mm_R_14_wz_56"
 msgstr "130mm R 14 wz.56炮"
+
+msgid "_140mm_armata_wz_65"
+msgstr "140mm wz.65炮"
+
+msgid "_140mm_pocisk_kumulacyjny_wz_65"
+msgstr "HEAT wz.65"
+
+msgid "_140mm_pocisk_podkalibrowy_wz_65"
+msgstr "APCR wz.65"
+
+msgid "_140mm_pocisk_wybuchowy_wz_65"
+msgstr "HE wz.65"
 
 msgid "_152mm_J_2"
 msgstr "152mm J 2炮"

@@ -1,4 +1,4 @@
-from cgf_obsolete_script.py_component import Component
+from components_base.component import Component
 
 class InputHandlerCommand(Component):
 

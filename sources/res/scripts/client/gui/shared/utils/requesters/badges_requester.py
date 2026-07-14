@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing, BigWorld
 from gui.doc_loaders.badges_loader import getAvailableBadges
 from gui.shared.utils.requesters.abstract import AbstractSyncDataRequester

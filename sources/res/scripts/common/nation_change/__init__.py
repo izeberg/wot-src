@@ -1,5 +1,6 @@
+from __future__ import absolute_import
 from constants import ITEM_DEFS_PATH
-from NationChangeSettings import NationChangeSettings
+from nation_change.NationChangeSettings import NationChangeSettings
 g_settings = None
 PDATA_NATION_CHANGE_VEHICLE_DOSSIER_KEY = 'nationChangeVehicleDossier'
 CONFIG_XML_PATH = ITEM_DEFS_PATH + 'nation_change.xml'

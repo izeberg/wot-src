@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, constants
 from CurrentVehicle import g_currentVehicle
 from debug_utils import LOG_ERROR
@@ -46,7 +47,7 @@ class AchievementParamsField(ToolTipParameterField):
 class AchievementStatsField(ToolTipDataField):
 
     def _getValue(self):
-        result = dict()
+        result = {}
         achievement = self._tooltip.item
         if achievement and achievement.getType() == 'class':
             result['classParams'] = RECORD_CONFIGS.get(achievement.getName())

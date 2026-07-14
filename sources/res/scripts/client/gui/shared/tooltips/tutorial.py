@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.locale.RES_COMMON import RES_COMMON
 from gui.shared.tooltips.common import BlocksTooltipData
 from gui.shared.tooltips import TOOLTIP_TYPE

@@ -42,6 +42,9 @@ msgstr "暂不开放"
 msgid "battle_pass_widget/title"
 msgstr "战斗通行证"
 
+msgid "challenge_missions/entrypoint/tooltip/challengeTitle"
+msgstr "熔炉试炼: {{challengeName}}"
+
 msgid "common/daterange/divider"
 msgstr "{{startDate}} – {{endDate}}"
 
@@ -162,6 +165,159 @@ msgstr "每周"
 
 msgid "hub/basic_missions/weekly/update_info"
 msgstr "每{{weekDay}}更新"
+
+msgid "hub/challenge_missions/card/activeLabel"
+msgstr "已激活的任务"
+
+msgid "hub/challenge_missions/card/or"
+msgstr "或"
+
+msgid "hub/challenge_missions/challenges_empty/title"
+msgstr "新任务即将开放..."
+
+msgid "hub/challenge_missions/complexity/easy"
+msgstr "斗士"
+
+msgid "hub/challenge_missions/complexity/hard"
+msgstr "王牌"
+
+msgid "hub/challenge_missions/complexity/medium"
+msgstr "精英"
+
+msgid "hub/challenge_missions/complexity/tooltip/body"
+msgstr "任务分为3个类别: 斗士、精英和王牌。每个类别都将带来独特挑战与珍贵奖励。"
+
+msgid "hub/challenge_missions/header"
+msgstr "熔炉试炼"
+
+msgid "hub/challenge_missions/header/buttons/activate"
+msgstr "激活"
+
+msgid "hub/challenge_missions/header/buttons/freeRestart"
+msgstr "免费重新开始"
+
+msgid "hub/challenge_missions/header/buttons/restart"
+msgstr "重新开始"
+
+msgid "hub/challenge_missions/header/buttons/surrender"
+msgstr "放弃"
+
+msgid "hub/challenge_missions/header/buttons/toChallenge"
+msgstr "前往任务"
+
+msgid "hub/challenge_missions/header/complete"
+msgstr "%(completeIcon)熔炉试炼任务已完成"
+
+msgid "hub/challenge_missions/header/multiplier"
+msgstr "×%(count)s"
+
+msgid "hub/challenge_missions/header/numberTemplate"
+msgstr "%(currentNumber)s/%(commonNumber)s"
+
+msgid "hub/challenge_missions/header/remaining"
+msgstr "剩余护盾"
+
+msgid "hub/challenge_missions/header/restart/text"
+msgstr "免费重新开始次数"
+
+msgid "hub/challenge_missions/header/restriction"
+msgstr "完成已激活的熔炉试炼任务"
+
+msgid "hub/challenge_missions/header/timer/text"
+msgstr "距结束还有%(timer)s"
+
+msgid "hub/challenge_missions/header/unavailable"
+msgstr "%(lockIcon)暂不开放: %(text)s"
+
+msgid "hub/challenge_missions/header/vehicleRestriction"
+msgstr "仅限VI级或更高等级的坦克"
+
+msgid "hub/challenge_missions/missionsActive"
+msgstr "已激活"
+
+msgid "hub/challenge_missions/missionsCompleted"
+msgstr "已完成"
+
+msgid "hub/challenge_missions/missionsCount"
+msgstr "任务进度{{currentMissions}}/{{totalMissions}}"
+
+msgid "hub/challenge_missions/name/default"
+msgstr "挑战任务"
+
+msgid "hub/challenge_missions/new"
+msgstr "新"
+
+msgid "hub/challenge_missions/notification/challenge_complete/affirmative"
+msgstr "前往熔炉试炼"
+
+msgid "hub/challenge_missions/notification/challenge_complete/button"
+msgstr "前往熔炉试炼"
+
+msgid "hub/challenge_missions/notification/challenge_complete/title"
+msgstr "熔炉试炼: {{ challengeName }}已完成！"
+
+msgid "hub/challenge_missions/notification/fail/button"
+msgstr "前往熔炉试炼"
+
+msgid "hub/challenge_missions/notification/fail/title"
+msgstr "熔炉试炼: {{ challenge }}未完成。重新开始该任务，再次获取奖励！"
+
+msgid "hub/challenge_missions/notification/mission_complete/button"
+msgstr "前往熔炉试炼"
+
+msgid "hub/challenge_missions/notification/mission_complete/title"
+msgstr "{{ mission }}任务已完成！"
+
+msgid "hub/challenge_missions/notification/shield/button"
+msgstr "前往熔炉试炼"
+
+msgid "hub/challenge_missions/notification/shield/text"
+msgstr "{{ mission }}任务失败"
+
+msgid "hub/challenge_missions/notification/shield/title"
+msgstr "剩余护盾"
+
+msgid "hub/challenge_missions/notification/start/button"
+msgstr "前往熔炉试炼"
+
+msgid "hub/challenge_missions/notification/start/newChallengesText"
+msgstr "踏入熔炉试炼，挑战一系列严苛任务，完成即可获得珍贵奖励。"
+
+msgid "hub/challenge_missions/notification/start/newChallengesTitle"
+msgstr "新熔炉试炼任务已开放！"
+
+msgid "hub/challenge_missions/notification/start/text"
+msgstr "踏入熔炉试炼，铸就荣耀: 挑战一系列严苛任务，完成即可获得珍贵奖励。"
+
+msgid "hub/challenge_missions/notification/start/title"
+msgstr "踏入熔炉试炼"
+
+msgid "hub/challenge_missions/replay/completed"
+msgstr "已完成"
+
+msgid "hub/challenge_missions/reward/attachmentsTitle"
+msgstr "3D附件套装"
+
+msgid "hub/challenge_missions/reward/improvedEquipment"
+msgstr "改进型配件"
+
+msgid "hub/challenge_missions/reward/multi"
+msgstr "×{{count}}"
+
+msgid "hub/challenge_missions/reward/style2DTitle"
+msgstr "2D风格"
+
+msgid "hub/challenge_missions/reward/tankmanTitle"
+msgstr "乘员"
+
+msgid "hub/challenge_missions/reward/vehicleTitle"
+msgstr "坦克"
+
+msgid "hub/challenge_missions/title"
+msgstr "熔炉试炼任务"
+
+msgid "hub/challenge_missions/tooltip/info_button"
+msgstr "关于熔炉试炼"
 
 msgid "hub/common_missions/title"
 msgstr "额外任务"
@@ -285,11 +441,44 @@ msgstr "您每{time}时可重置一次不感兴趣的任务。"
 msgid "tooltip/daily_reroll/header"
 msgstr "重置任务"
 
+msgid "tooltip/hub/card/completed"
+msgstr "已完成任务并获得奖励。"
+
+msgid "tooltip/hub/card/disabled"
+msgstr "完成前置任务即可解锁该任务。系列任务中的每个任务都须依次完成。"
+
 msgid "tooltip/hub/info_button/body"
 msgstr "点击查看更多信息"
 
 msgid "tooltip/hub/info_button/header"
 msgstr "关于任务"
+
+msgid "tooltip/hub/replay/body"
+msgstr "该系列任务可在完成后重复挑战。您的进度将被重置，护盾也将恢复，您将能再次获取奖励。"
+
+msgid "tooltip/hub/replay/header"
+msgstr "重新挑战任务"
+
+msgid "tooltip/hub/restart/description"
+msgstr "失去所有护盾后，您可以重新开启该系列任务。您的任务进度将被重置，护盾也将恢复，您将能再次获取奖励。"
+
+msgid "tooltip/hub/restart/free_restarts_cost"
+msgstr "后续重新开始花费: %(currency)s"
+
+msgid "tooltip/hub/restart/free_restarts_text"
+msgstr "可用免费重新开始次数: %(currentNumber)s%(commonNumber)s"
+
+msgid "tooltip/hub/restart/only_paid_restart"
+msgstr "每次重新开始花费: %(currency)s"
+
+msgid "tooltip/hub/restart/title"
+msgstr "重新开始次数"
+
+msgid "tooltip/hub/shields/description"
+msgstr "护盾用于保护您的进度。每当一个任务失败，将消耗一个护盾，当所有护盾都耗尽时，系列任务即告失败。如果您重新开始任务，护盾将恢复。"
+
+msgid "tooltip/hub/shields/title"
+msgstr "护盾"
 
 msgid "tooltip/vehicle_restrictions"
 msgstr "坦克限制:"

@@ -1,4 +1,5 @@
-import Math, BigWorld
+from __future__ import absolute_import
+import Math
 
 class BWLogicalNode(object):
 

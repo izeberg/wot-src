@@ -1,4 +1,5 @@
-import functools, sys, warnings
+from __future__ import absolute_import
+import functools, warnings, BigWorld
 
 def deprecatedAlias(method, oldname):
 
@@ -19,7 +20,6 @@ def addDeprecatedAliasOf(module, newname, oldname):
     setattr(module, oldname, deprecatedAlias(method, oldname))
 
 
-import BigWorld
 if BigWorld.component == 'client':
     addDeprecatedAliasOf(BigWorld, 'serverTime', 'stime')
 addDeprecatedAliasOf(BigWorld, 'ThirdPersonTargetingMatrix', 'ThirdPersonTargettingMatrix')

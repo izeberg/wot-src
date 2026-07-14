@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from collections import namedtuple
 from functools import partial
 import BigWorld
@@ -386,6 +387,10 @@ class OwnVehicleBase(BigWorld.DynamicScriptComponent):
     @property
     def nextShell(self):
         return self.__getVehicleSetting(VEHICLE_SETTING.NEXT_SHELLS)
+
+    @property
+    def isInitialUpdated(self):
+        return self.__isInitialUpdated
 
     def __getItemsByType(self, ammoType):
         return [ ammo for ammo in self.vehicleAmmoList if vehicles.parseIntCompactDescr(ammo.compactDescr)[0] == ammoType

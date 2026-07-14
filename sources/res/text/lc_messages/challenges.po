@@ -1,0 +1,267 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-11 10:00+0300\n"
+"PO-Revision-Date: 2022-01-11 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "#PluralForms"
+msgstr "nplurals=1; plural=0;"
+
+msgid "awards_view/additional_reward/title"
+msgstr "同时获得:"
+
+msgid "awards_view/footer/sub_title/reply"
+msgstr "该系列任务可重复挑战。"
+
+msgid "awards_view/footer/title/affirmative"
+msgstr "收到!"
+
+msgid "awards_view/footer/title/close"
+msgstr "关闭"
+
+msgid "awards_view/footer/title/in_garage"
+msgstr "前往车库查看"
+
+msgid "awards_view/footer/title/replay"
+msgstr "再次挑战"
+
+msgid "awards_view/footer/title/to_challenge"
+msgstr "前往熔炉试炼"
+
+msgid "awards_view/reward/description/premium_plus"
+msgstr "《坦克世界》高级账号"
+
+msgid "awards_view/reward/description/vehicle_elite"
+msgstr "金币坦克"
+
+msgid "awards_view/reward/description/vehicle_for_rent"
+msgstr "租用坦克"
+
+msgid "awards_view/reward/description/vehicle_with_style"
+msgstr "和\"{{styleName}}\"风格"
+
+msgid "awards_view/reward/multi"
+msgstr "×{{count}}"
+
+msgid "awards_view/reward/title/premium_plus"
+msgid_plural "plural/awards_view/reward/title/premium_plus"
+msgstr[0] "%(day)天"
+msgstr[1] "%(day)天"
+msgstr[2] "%(day)天"
+
+msgid "awards_view/title"
+msgstr "已完成熔炉试炼！"
+
+msgid "bonuses/battleBonusX5"
+msgstr "5倍胜场经验任务"
+
+msgid "bonuses/blueprints/nationalFragment"
+msgstr "蓝图碎片: (%(nation)s)"
+
+msgid "bonuses/blueprints/universalFragment"
+msgstr "通用蓝图碎片"
+
+msgid "bonuses/bpcoin"
+msgstr "战斗通行证令牌"
+
+msgid "bonuses/crewBonusX3"
+msgstr "3倍乘员经验任务"
+
+msgid "bonuses/description/attachments_set"
+msgstr "3D附件套装"
+
+msgid "bonuses/description/booster"
+msgstr "个人储备"
+
+msgid "bonuses/description/bounty_equipment"
+msgstr "赏金配件"
+
+msgid "bonuses/description/crewSkin"
+msgstr "乘员皮肤"
+
+msgid "bonuses/description/directive"
+msgstr "指令"
+
+msgid "bonuses/description/experimental_equipment"
+msgstr "试验型配件"
+
+msgid "bonuses/description/improved_equipment"
+msgstr "改进型配件"
+
+msgid "bonuses/description/lockedStyle"
+msgstr "和\"%(styleName)s\"风格"
+
+msgid "bonuses/description/standard_equipment"
+msgstr "标准配件"
+
+msgid "bonuses/description/style"
+msgstr "2D风格"
+
+msgid "bonuses/description/style_3d"
+msgstr "3D风格"
+
+msgid "bonuses/standardCrewMember/female"
+msgstr "女性乘员"
+
+msgid "bonuses/standardCrewMember/male"
+msgstr "新兵"
+
+msgid "bonuses/uniqueCrewMember"
+msgstr "乘员"
+
+msgid "condition/achievement"
+msgstr "获得%(achievement)s奖励"
+
+msgid "condition/achievement/title"
+msgstr "战斗英雄"
+
+msgid "condition/aggregated/damageAssistedRadioStunTrack/damageDealt"
+msgstr "造成、协助造成总计%(goal)s点损伤"
+
+msgid "condition/aggregated/damageBlockedByArmor/damageDealt/damageReceived"
+msgstr "造成、受到、抵挡总计%(goal)s点损伤"
+
+msgid "condition/aggregated/title"
+msgstr "复杂条件"
+
+msgid "condition/classes/AT-SPG"
+msgstr "自行反坦克炮"
+
+msgid "condition/classes/SPG"
+msgstr "自行火炮"
+
+msgid "condition/classes/heavyTank"
+msgstr "重型坦克"
+
+msgid "condition/classes/lightTank"
+msgstr "轻型坦克"
+
+msgid "condition/classes/mediumTank"
+msgstr "中型坦克"
+
+msgid "condition/critsCount"
+msgstr "对敌方坦克的内部或外部模块造成%(goal)s次关键一击"
+
+msgid "condition/critsCount/title"
+msgstr "无法移动"
+
+msgid "condition/damageBlockedByArmor"
+msgstr "抵挡%(goal)s点损伤"
+
+msgid "condition/damageBlockedByArmor/compareWithMaxHealth"
+msgstr "抵挡%(goal)s倍于自身坦克生命值的损伤"
+
+msgid "condition/damageBlockedByArmor/title"
+msgstr "抵挡"
+
+msgid "condition/damageDealt"
+msgstr "对敌方坦克造成%(goal)s点损伤"
+
+msgid "condition/damageDealt/compareWithMaxHealth"
+msgstr "造成%(goal)s倍于自身坦克生命值的损伤"
+
+msgid "condition/damageDealt/eventCount/maxDistance"
+msgstr "击中距离%(distance)s米或更近的敌方坦克%(goal)s次"
+
+msgid "condition/damageDealt/eventCount/minDistance"
+msgstr "击中距离%(distance)s米或更远的敌方坦克%(goal)s次"
+
+msgid "condition/damageDealt/eventCount/ramming"
+msgstr "通过撞击对敌方坦克造成%(goal)s次损伤"
+
+msgid "condition/damageDealt/eventCount/withinViewRange"
+msgstr "击中自身坦克观察范围内的敌方坦克%(goal)s次"
+
+msgid "condition/damageDealt/limittedTime"
+msgstr "在战斗的前%(timeLimit)s分钟内，对敌方坦克造成%(goal)s点损伤"
+
+msgid "condition/damageDealt/maxDistance"
+msgstr "对距离%(distance)s米或更近的敌方坦克造成%(goal)s点损伤"
+
+msgid "condition/damageDealt/minDistance"
+msgstr "对距离%(distance)s米或更远的敌方坦克造成%(goal)s点损伤"
+
+msgid "condition/damageDealt/ramming"
+msgstr "通过撞击对敌方坦克造成%(goal)s点损伤"
+
+msgid "condition/damageDealt/ramming/title"
+msgstr "撞击"
+
+msgid "condition/damageDealt/title"
+msgstr "损伤"
+
+msgid "condition/damageDealt/whileEnemyInvisible"
+msgstr "对未被点亮的敌方坦克造成%(goal)s点损伤"
+
+msgid "condition/damageDealt/withinViewRange"
+msgstr "对自身坦克观察范围内的敌方坦克造成%(goal)s点损伤"
+
+msgid "condition/kills"
+msgstr "击毁%(goal)s辆敌方坦克"
+
+msgid "condition/kills/classes"
+msgstr "击毁%(goal)s辆敌方%(vehicleClass)s"
+
+msgid "condition/kills/classesDiversity"
+msgstr "击毁%(goal)s辆%(classCount)s种不同类型的敌方坦克"
+
+msgid "condition/kills/title"
+msgstr "击毁"
+
+msgid "condition/kills/whileFullHealth"
+msgstr "在自身坦克受到任何损伤前，击毁%(goal)s辆敌方坦克"
+
+msgid "condition/kills/whileInvisible"
+msgstr "击毁%(goal)s辆敌方坦克，且在击毁时保持不被点亮"
+
+msgid "condition/percentFromTotalTeamDamage"
+msgstr "对敌方坦克造成的损伤占己方团队造成损伤总量的%(goal)s%%"
+
+msgid "condition/percentFromTotalTeamDamage/title"
+msgstr "损伤"
+
+msgid "condition/piercingEnemyHits"
+msgstr "击穿敌方装甲%(goal)s次"
+
+msgid "condition/piercingEnemyHits/title"
+msgstr "击穿"
+
+msgid "condition/spotted"
+msgstr "点亮%(goal)s辆敌方坦克"
+
+msgid "condition/spotted/title"
+msgstr "点亮"
+
+msgid "condition/spottedBeforeWeBecameSpotted"
+msgstr "点亮%(goal)s辆敌方坦克，且在点亮敌方坦克时自身保持不被点亮"
+
+msgid "condition/spottedBeforeWeBecameSpotted/title"
+msgstr "点亮"
+
+msgid "condition/top/damageDealt"
+msgstr "造成的损伤排名本队前%(rank)s"
+
+msgid "condition/top/damageDealt/total"
+msgstr "造成的损伤排名双方团队前%(rank)s"
+
+msgid "condition/top/title"
+msgstr "排名靠前"
+
+msgid "condition/top/xp"
+msgstr "所获经验排名本队前%(rank)s"
+
+msgid "condition/unknown"
+msgstr "正在查找最合适的任务..."
+
+msgid "condition/unknown/title"
+msgstr "正在等待任务"
+
+msgid "postbattle/name"
+msgstr "熔炉试炼: "

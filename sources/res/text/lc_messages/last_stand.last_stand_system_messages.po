@@ -29,16 +29,16 @@ msgid "serviceChannelMessages/battleResults/artefacts"
 msgstr "可供解密的胶片"
 
 msgid "serviceChannelMessages/battleResults/battleTypeName"
-msgstr "模式: 星火燎原:入侵"
+msgstr "模式: 星火燎原:北境"
 
 msgid "serviceChannelMessages/battleResults/battleTypeName/107"
-msgstr "星火燎原:入侵(普通)"
+msgstr "星火燎原:北境(普通)"
 
 msgid "serviceChannelMessages/battleResults/battleTypeName/108"
-msgstr "星火燎原:入侵(激战)"
+msgstr "星火燎原:北境(进阶)"
 
 msgid "serviceChannelMessages/battleResults/battleTypeName/109"
-msgstr "星火燎原:入侵(残酷)"
+msgstr "星火燎原:北境(残酷)"
 
 msgid "serviceChannelMessages/battleResults/difficulty"
 msgstr "难度"
@@ -47,7 +47,7 @@ msgid "serviceChannelMessages/battleResults/difficulty/107"
 msgstr "普通"
 
 msgid "serviceChannelMessages/battleResults/difficulty/108"
-msgstr "激战"
+msgstr "进阶"
 
 msgid "serviceChannelMessages/battleResults/difficulty/109"
 msgstr "残酷"
@@ -77,13 +77,13 @@ msgid "serviceChannelMessages/bundlePurchase/title"
 msgstr "交易"
 
 msgid "serviceChannelMessages/difficultyLevel_2/description"
-msgstr "您可在星火燎原:入侵车库内的难度面板上选择难度等级。"
+msgstr "您可在星火燎原车库内的难度面板上选择难度等级。"
 
 msgid "serviceChannelMessages/difficultyLevel_2/title"
-msgstr "已解锁激战难度"
+msgstr "已解锁进阶难度"
 
 msgid "serviceChannelMessages/difficultyLevel_3/description"
-msgstr "您可在星火燎原:入侵车库内的难度面板上选择难度等级。"
+msgstr "您可在星火燎原车库内的难度面板上选择难度等级。"
 
 msgid "serviceChannelMessages/difficultyLevel_3/title"
 msgstr "已解锁残酷难度"
@@ -108,16 +108,14 @@ msgstr "解密成功"
 
 msgid "serviceChannelMessages/switchedOff"
 msgstr ""
-"星火燎原:入侵战斗暂不开放。\n"
+"星火燎原战斗暂不开放。\n"
 "请稍后再试。"
 
 msgid "serviceChannelMessages/switchedOffDifficulty"
-msgstr ""
-"星火燎原:入侵(%(difficulty)s)战斗暂不开放。\n"
-"请稍后再试。"
+msgstr "%(difficulty)s难度战斗暂不开放。请稍后再试。"
 
 msgid "serviceChannelMessages/switchedOffFull"
-msgstr "星火燎原:入侵暂不开放。请前往游戏官网查看最新消息。"
+msgstr "星火燎原暂不开放。请前往游戏官网查看最新消息。"
 
 msgid "unit/notification/changedDifficultyLevel"
 msgstr "小队指挥官已将难度等级改为: %(level)s。"

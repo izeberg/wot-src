@@ -1442,7 +1442,7 @@ def _getDynCollisionTransformProvider(entityID, componentIDx):
         return
     else:
         go = vehicle.appearance.collisions.getPartGameObject(componentIDx)
-        if go.isValid():
+        if go.valid:
             return vehicle.appearance.collisions.getPartTransformProvider(componentIDx)
         return
 

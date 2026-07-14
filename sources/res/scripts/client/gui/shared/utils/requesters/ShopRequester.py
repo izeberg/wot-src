@@ -1,7 +1,8 @@
+from __future__ import absolute_import
 import logging, weakref
-from abc import ABCMeta, abstractmethod
+from builtins import map, range
 from collections import namedtuple
-from future.utils import viewvalues
+from future.utils import iteritems, viewitems, viewvalues
 import typing, BigWorld
 from constants import WIN_XP_FACTOR_MODE, ARENA_BONUS_TYPE
 from goodies.goodie_constants import GOODIE_VARIETY, GOODIE_TARGET_TYPE, GOODIE_RESOURCE_TYPE
@@ -43,11 +44,9 @@ class _NamedGoodieData(GoodieData):
 
 
 class ShopCommonStats(IShopCommonStats):
-    __metaclass__ = ABCMeta
 
-    @abstractmethod
     def getValue(self, key, defaultValue=None):
-        pass
+        raise NotImplementedError
 
     def getPrices(self):
         try:
@@ -65,19 +64,19 @@ class ShopCommonStats(IShopCommonStats):
         try:
             return self.getItemsData()['notInShopItems']
         except KeyError:
-            return set([])
+            return set()
 
     def getHiddenBoosters(self):
         try:
             return self.getGoodiesData()['notInShop']
         except KeyError:
-            return set([])
+            return set()
 
     def getNotToBuyVehicles(self):
         try:
             return self.getItemsData()['vehiclesNotToBuy']
         except KeyError:
-            return set([])
+            return set()
 
     def getVehicleRentPrices(self):
         try:
@@ -89,7 +88,7 @@ class ShopCommonStats(IShopCommonStats):
         try:
             return self.getItemsData()['vehiclesToSellForGold']
         except KeyError:
-            return set([])
+            return set()
 
     def getVehiclesSellPriceFactors(self):
         try:
@@ -269,7 +268,7 @@ class ShopCommonStats(IShopCommonStats):
         return self.getItemsData().get('playerEmblemGroupPriceFactors', {})
 
     def getEmblemsGroupHiddens(self):
-        return self.getItemsData().get('notInShopPlayerEmblemGroups', set([]))
+        return self.getItemsData().get('notInShopPlayerEmblemGroups', set())
 
     def getInscriptionsGroupPriceFactors(self, nationID):
         return self.getItemsData().get('inscriptionGroupPriceFactors', [])[nationID]
@@ -298,7 +297,7 @@ class ShopCommonStats(IShopCommonStats):
         return self.goodies.get(discountID, None)
 
     def getGoodiesByVariety(self, variety):
-        return dict((goodieID, item) for goodieID, item in self.goodies.iteritems() if item.variety == variety)
+        return {goodieID:item for goodieID, item in iteritems(self.goodies) if item.variety == variety}
 
     @property
     def boosters(self):
@@ -379,7 +378,7 @@ class ShopRequester(AbstractSyncDataRequester, ShopCommonStats, IShopRequester):
         if 'goodies' in data:
             goodies = data['goodies'].get('goodies', {})
             formattedGoodies = {}
-            for goodieID, goodieData in goodies.iteritems():
+            for goodieID, goodieData in viewitems(goodies):
                 formattedGoodies[goodieID] = _NamedGoodieData(*goodieData)
 
             data['goodies']['goodies'] = formattedGoodies
@@ -388,7 +387,7 @@ class ShopRequester(AbstractSyncDataRequester, ShopCommonStats, IShopRequester):
     def getPremiumCostWithDiscount(self, premiumPacketDiscounts=None):
         discounts = premiumPacketDiscounts or self.personalPremiumPacketsDiscounts
         premiumCostWithDiscount = self.premiumCost.copy()
-        for discount in discounts.itervalues():
+        for discount in viewvalues(discounts):
             premiumCostWithDiscount[discount.getTargetValue()] = getPremiumCost(self.premiumCost, discount)
 
         return premiumCostWithDiscount
@@ -396,7 +395,7 @@ class ShopRequester(AbstractSyncDataRequester, ShopCommonStats, IShopRequester):
     def isActionOnPremium(self):
         premiumCost = self.premiumCost
         defaultPremiumCost = self.defaults.premiumCost
-        for days, price in premiumCost.iteritems():
+        for days, price in viewitems(premiumCost):
             if defaultPremiumCost[days] != price:
                 return True
 
@@ -427,7 +426,7 @@ class ShopRequester(AbstractSyncDataRequester, ShopCommonStats, IShopRequester):
         countItems = len(defaultCost)
         tankmanCostWithGoodyDiscount = self.getTankmanCostWithGoodyDiscount(vehLevel)
         if countItems == len(tankmanCostWithGoodyDiscount):
-            for idx in xrange(countItems):
+            for idx in range(countItems):
                 commanderLevelsPrices = {}
                 commanderLevelsDefPrices = {}
                 for currency in Currency.ALL:
@@ -483,7 +482,7 @@ class ShopRequester(AbstractSyncDataRequester, ShopCommonStats, IShopRequester):
         defaultPrice = self.defaults.getItemPrice(typeCompDescr)
         currency = defaultPrice.getCurrency()
         personalVehicleDiscountPrice = None
-        for _, discount in self.personalVehicleDiscounts.iteritems():
+        for discount in viewvalues(self.personalVehicleDiscounts):
             if discount.getTargetValue() == typeCompDescr:
                 discountPrice = self.__getPriceWithDiscount(defaultPrice, discount.resource)
                 if discountPrice.isDefined() and (personalVehicleDiscountPrice is None or discountPrice.get(currency) < personalVehicleDiscountPrice.get(currency)):
@@ -504,7 +503,7 @@ class ShopRequester(AbstractSyncDataRequester, ShopCommonStats, IShopRequester):
         return Money(**cost)
 
     def __getDiscountsDescriptionsByTarget(self, targetType):
-        return dict((discountID, item) for discountID, item in self.discounts.iteritems() if item.target.targetType == targetType and item.enabled)
+        return {discountID:item for discountID, item in viewitems(self.discounts) if item.target.targetType == targetType and item.enabled}
 
     def __applyGoodyToStudyCost(self, prices, goody):
 
@@ -518,7 +517,7 @@ class ShopRequester(AbstractSyncDataRequester, ShopCommonStats, IShopRequester):
 
     def __personalDiscountsByTarget(self, targetType):
         discounts = self.__getDiscountsDescriptionsByTarget(targetType)
-        return dict((discountID, item) for discountID, item in discounts.iteritems() if discountID in self._goodies.goodies)
+        return {discountID:item for discountID, item in viewitems(discounts) if discountID in self._goodies.goodies}
 
     @staticmethod
     def __getPriceWithDiscount(price, resourceData):
@@ -533,6 +532,7 @@ class ShopRequester(AbstractSyncDataRequester, ShopCommonStats, IShopRequester):
 class DefaultShopRequester(ShopCommonStats):
 
     def __init__(self, cache, proxy):
+        super(DefaultShopRequester, self).__init__()
         self.__cache = cache.copy()
         self.__proxy = weakref.proxy(proxy)
 

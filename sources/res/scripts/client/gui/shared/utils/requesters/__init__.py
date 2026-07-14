@@ -1,20 +1,22 @@
-from ShopRequester import ShopRequester
-from InventoryRequester import InventoryRequester
-from StatsRequester import StatsRequester
-from DossierRequester import DossierRequester
-from GoodiesRequester import GoodiesRequester
-from blueprints_requester import BlueprintsRequester
-from recycle_bin_requester import RecycleBinRequester
-from vehicle_rotation_requester import VehicleRotationRequester
-from tokens_requester import TokensRequester
-from session_stats_requester import SessionStatsRequester
-from ItemsRequester import REQ_CRITERIA, RequestCriteria, getDiffID
-from TokenRequester import TokenRequester, getTokenRequester, fini as _rq_fini
-from TokenResponse import TokenResponse
-from abstract import RequestCtx
-from abstract import DataRequestCtx
-from abstract import RequestsByIDProcessor
-from abstract import DataRequestsByIDProcessor
+from __future__ import absolute_import
+from . import ItemsRequester
+from .ShopRequester import ShopRequester
+from .InventoryRequester import InventoryRequester
+from .StatsRequester import StatsRequester
+from .DossierRequester import DossierRequester
+from .GoodiesRequester import GoodiesRequester
+from .blueprints_requester import BlueprintsRequester
+from .recycle_bin_requester import RecycleBinRequester
+from .vehicle_rotation_requester import VehicleRotationRequester
+from .tokens_requester import TokensRequester
+from .session_stats_requester import SessionStatsRequester
+from .ItemsRequester import REQ_CRITERIA, RequestCriteria, getDiffID
+from .TokenRequester import TokenRequester, getTokenRequester, fini as _rq_fini
+from .TokenResponse import TokenResponse
+from .abstract import RequestCtx
+from .abstract import DataRequestCtx
+from .abstract import RequestsByIDProcessor
+from .abstract import DataRequestsByIDProcessor
 
 def fini():
     _rq_fini()

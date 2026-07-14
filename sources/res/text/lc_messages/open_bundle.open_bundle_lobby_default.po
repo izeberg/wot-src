@@ -62,7 +62,7 @@ msgid "intro/cards/description/c_3"
 msgstr "每个阶段都需要支付一定数量的金币。随着进度推动，获得的战争债券数量和阶段价格都会变化。"
 
 msgid "intro/cards/link"
-msgstr "在官网上查看每个阶段的条件和价格。"
+msgstr "欲知每个阶段的条件和价格，请查看{{@ class 'linkPart'}}官网。{{icon}}{{/}}"
 
 msgid "intro/cards/title/c_1"
 msgstr "购买战争债券"

@@ -1,8 +1,9 @@
-from visual_script.block import Block, Meta
-from visual_script.misc import ASPECT, errorVScript
-from visual_script.slot_types import SLOT_TYPE, arrayOf
+from __future__ import absolute_import
 import DebugManager
 from DebugManager import COLORS, isGroupEnabled, setGroupEnabled
+from visual_script.block import Block, Meta
+from visual_script.misc import ASPECT, errorVScript
+from visual_script.slot_types import SLOT_TYPE
 
 def uint32toInt32(value):
     if value <= 2147483647:

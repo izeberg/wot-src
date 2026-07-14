@@ -68,6 +68,9 @@ msgstr[2] "奖励:"
 msgid "battleResult/header/deserter"
 msgstr "您受到了处罚"
 
+msgid "battleResult/missionsProgress/progression/title"
+msgstr "轻量级天梯战进度"
+
 msgid "calendarDay/serverName"
 msgstr "%(server)s"
 
@@ -221,6 +224,27 @@ msgstr "车库中需要有至少一辆符合该模式要求的%(levels)s级坦�
 
 msgid "noVehicles/title"
 msgstr "您的车库中没有满足要求的坦克"
+
+msgid "pbs/tooltip/prestige_points_info_tooltip/bullet"
+msgstr "•"
+
+msgid "pbs/tooltip/prestige_points_info_tooltip/footer"
+msgstr "请参阅\"关于轻量级天梯战\"页面了解详情。"
+
+msgid "pbs/tooltip/prestige_points_info_tooltip/header"
+msgstr "声望点数"
+
+msgid "pbs/tooltip/prestige_points_info_tooltip/listContent"
+msgstr ""
+"造成损伤\n"
+"点亮协助\n"
+"击毁履带\n"
+"造成关键一击\n"
+"击毁敌方坦克\n"
+"以及其他行为"
+
+msgid "pbs/tooltip/prestige_points_info_tooltip/listHeader"
+msgstr "执行以下战斗行为可获得声望点数:"
 
 msgid "primeTimeView/status/seasonDisabled/first"
 msgstr "%(server)s服务器上的赛季已结束。"

@@ -508,6 +508,9 @@ msgstr "“猎豹”加强型"
 msgid "Chassis_G191_StuG_IIIF_CFE_A"
 msgstr "III号突击炮F型\"河马\""
 
+msgid "Chassis_G200_Chi_Go"
+msgstr "\"黑豹\"奇戈"
+
 msgid "Chassis_G23_Grille"
 msgstr "“蟋蟀”"
 
@@ -2465,6 +2468,23 @@ msgstr "III号突击炮F型\"河马\""
 msgid "G191_StuG_IIIF_CFE_A_short_special"
 msgstr "良好的机动性，较高的射速"
 
+msgid "G200_Chi_Go"
+msgstr "\"黑豹\"奇戈"
+
+msgid "G200_Chi_Go_desc"
+msgstr ""
+"1945年初，R系工程师在参考D系V号坦克\"黑豹\"的技术资料的基础上，自主研发出\"黑豹\"奇戈项目，并在结构上进行了一系列简化和技术取舍。后来，工业陷入困境的D系对该坦克产生了兴趣。一辆拆解后的样车通过潜艇运往D系，用于研究和实施简化型坦克生产技术。"
+
+msgid "G200_Chi_Go_long_special"
+msgstr ""
+"\"黑豹\"奇戈是一辆D系VII级全能型中型坦克。它是经典V号坦克\"黑豹\"的变体，并融合了R系科技。与同等级中型坦克相比，该坦克拥有较高的平均单发损伤。凭借装甲良好的炮塔和不俗的机动性，它在必要时能够采取激进的玩法。"
+
+msgid "G200_Chi_Go_short"
+msgstr "\"黑豹\"奇戈"
+
+msgid "G200_Chi_Go_short_special"
+msgstr "装甲防护不俗的炮塔，高额的平均单发损伤"
+
 msgid "G20_Marder_II"
 msgstr "“黄鼠狼”II"
 
@@ -3088,6 +3108,9 @@ msgstr "“猎虎” 88 L/71"
 
 msgid "JagdTiger_SdKfz_185_short_special"
 msgstr "拥有一门兼顾精度、射速和瞄准时间的优秀火炮。"
+
+msgid "Kawasaki_Ha_60_LC_G"
+msgstr "川崎 Ha-60-LC-G"
 
 msgid "Kdo_Funkstation_SE_407"
 msgstr "SE 407(指挥型)"
@@ -4808,6 +4831,9 @@ msgstr "“猎豹”"
 
 msgid "Turret_1_G191_StuG_IIIF_CFE_A"
 msgstr "III号突击炮F型\"河马\""
+
+msgid "Turret_1_G200_Chi_Go"
+msgstr "\"黑豹\"奇戈"
 
 msgid "Turret_1_G23_Grille"
 msgstr "“蟋蟀”"
@@ -7232,6 +7258,9 @@ msgstr ""
 "8.8cm KwK 36\n"
 "L/56炮"
 
+msgid "_88mm_KwK_43_L71"
+msgstr "8.8cm KwK 43 L/71炮"
+
 msgid "_88mm_KwK_43_L71A"
 msgstr ""
 "8.8cm KwK 43\n"
@@ -7354,6 +7383,9 @@ msgstr "Pzgr 39/43"
 msgid "_88mm_Pzgr39_43D"
 msgstr "Pzgr 39/43K"
 
+msgid "_88mm_Pzgr39_43_C"
+msgstr "Pzgr 39/43 C"
+
 msgid "_88mm_Pzgr39_43_n"
 msgstr "Pzgr 39/43 E型"
 
@@ -7365,6 +7397,9 @@ msgstr "Pzgr 40/43 Flak 41"
 
 msgid "_88mm_Pzgr40_43D"
 msgstr "Pzgr 40/43K"
+
+msgid "_88mm_Pzgr40_43_C"
+msgstr "Pzgr 40/43 C"
 
 msgid "_88mm_Pzgr_39_164"
 msgstr "Pzgr 39 (164)"
@@ -7488,6 +7523,9 @@ msgstr "Sprgr 43"
 
 msgid "_88mm_Sprg43D"
 msgstr "Sprgr 43K"
+
+msgid "_88mm_Sprg43_C"
+msgstr "Sprgr 43 C"
 
 msgid "_88mm_Sprgr.Flak_41"
 msgstr "Sprgr Flak 41"
@@ -7724,6 +7762,9 @@ msgstr "9cm炮 (I-P)"
 
 msgid "_Gr_38_HL_A"
 msgstr "Gr 38 HL A"
+
+msgid "_Type3_Otsu_G"
+msgstr "三式乙型 G"
 
 msgid "arcade_bomber_battle_royale_shell"
 msgstr "Battle Royale bomber shell"

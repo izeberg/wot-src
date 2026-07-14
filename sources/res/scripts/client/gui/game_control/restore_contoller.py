@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import operator, time
 from operator import itemgetter
 import BigWorld, Event
@@ -105,7 +106,7 @@ class RestoreController(IRestoreController, Notifiable):
         restoreConfig = self.itemsCache.items.shop.tankmenRestoreConfig
         self.__maxTankmenBufferLength = restoreConfig.limit
         self.__tankmanLiveTime = restoreConfig.billableDuration
-        if invalidItems == {} or any([ tmanID < 0 for tmanID in invalidItems.get(GUI_ITEM_TYPE.TANKMAN, []) ]):
+        if invalidItems == {} or any(tmanID < 0 for tmanID in invalidItems.get(GUI_ITEM_TYPE.TANKMAN, [])):
             self.__updateTankmenList()
         self.__clearRestoreTimeNotifyCallback()
         self.__startRestoreTimeNotifyCallback()
@@ -168,7 +169,7 @@ class RestoreController(IRestoreController, Notifiable):
 
     def __checkLimitedRestoreNotification(self):
         criteria = IntCDProtectionRequestCriteria(_hasLimitedRestore, self.itemsCache.items.recycleBin.getVehiclesIntCDs())
-        vehicles = self.itemsCache.items.getVehicles(criteria).values()
+        vehicles = self.itemsCache.items.getVehicles(criteria)
         lastRestoreNotification = AccountSettings.getSettings(LAST_RESTORE_NOTIFICATION)
         if lastRestoreNotification is None:
             showMessage = True

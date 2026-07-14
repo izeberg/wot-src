@@ -276,18 +276,6 @@
 					<collisionFlags>0</collisionFlags>
 					<materialKind>88</materialKind>
 					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
 						diffuseMap
 						<Texture>content/Buildings/hd_bld_AM_016_Garage/hd_bld_AM_016_Garage_BAM.dds</Texture>
 					</property>
@@ -313,18 +301,6 @@
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>87</materialKind>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
 					<property>
 						diffuseMap
 						<Texture>content/Buildings/hd_bld_AM_016_Garage/hd_bld_AM_016_Garage_BAM.dds</Texture>
@@ -352,18 +328,6 @@
 					<collisionFlags>0</collisionFlags>
 					<materialKind>74</materialKind>
 					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
 						diffuseMap
 						<Texture>content/Buildings/hd_bld_AM_016_Garage/hd_bld_AM_016_Garage_BAM.dds</Texture>
 					</property>
@@ -389,18 +353,6 @@
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>73</materialKind>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
 					<property>
 						diffuseMap
 						<Texture>content/Buildings/hd_bld_AM_016_Garage/hd_bld_AM_016_Garage_BAM.dds</Texture>
@@ -428,18 +380,6 @@
 					<collisionFlags>0</collisionFlags>
 					<materialKind>111</materialKind>
 					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
 						diffuseMap
 						<Texture>content/Buildings/hd_bld_AM_016_Garage/hd_bld_AM_016_Garage_BAM.dds</Texture>
 					</property>
@@ -463,7 +403,7 @@
 				<material>
 					<identifier>s_ramp_0</identifier>
 					<collisionFlags>131</collisionFlags>
-					<materialKind>111</materialKind>
+					<materialKind>0</materialKind>
 				</material>
 				<groupOrigin>0.205915 -0.072749 -0.029086</groupOrigin>
 			</primitiveGroup>

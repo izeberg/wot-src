@@ -2731,7 +2731,7 @@
 						<value>True</value>
 					</item>
 					<item>
-						/$LANGUAGE_CODE/promocontent/bp-special-chapter-8-Video/
+						/$LANGUAGE_CODE/promocontent/bp-special-chapter-9-Video/
 						<name>url</name>
 						<type>url</type>
 					</item>
@@ -2753,7 +2753,7 @@
 				<type>dict</type>
 				<value>
 					<item>
-						/$LANGUAGE_CODE/promocontent/bp-special-chapter-8/
+						/$LANGUAGE_CODE/promocontent/bp-special-chapter-9/
 						<name>url</name>
 						<type>url</type>
 					</item>
@@ -3493,32 +3493,32 @@
 		<macros>AUTH_REALM</macros>
 		<value>
 			<item>
-				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught-light-september-2025/
+				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught-light-june-2026/
 				<name>EU</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/onslaught-light-september-2025/
+				https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/onslaught-light-june-2026/
 				<name>ASIA</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/onslaught-light-september-2025/
+				https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/onslaught-light-june-2026/
 				<name>NA</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/onslaught-light-september-2025/
+				https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/onslaught-light-june-2026/
 				<name>CN</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught-light-september-2025/
+				https://webbrg-ct.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught-light-june-2026/
 				<name>CT</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught-light-september-2025/
+				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught-light-june-2026/
 				<name>default</name>
 				<type>url</type>
 			</item>
@@ -4482,6 +4482,16 @@
 			</item>
 		</value>
 	</petSystemInfoPage>
+	<challenges>
+		<type>dict</type>
+		<value>
+			<item>
+				/$LANGUAGE_CODE/promocontent/crucible/
+				<name>info</name>
+				<type>url</type>
+			</item>
+		</value>
+	</challenges>
 	<markerBgSettings>
 		40 100 100 3.0
 		<!--BW_String-->

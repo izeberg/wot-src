@@ -1,6 +1,7 @@
+from __future__ import absolute_import
+import ResMgr
 from soft_exception import SoftException
 from items import _xml
-import ResMgr
 _CONFIG_FILE = 'scripts/item_defs/vehicles/common/stun.xml'
 g_cfg = {}
 

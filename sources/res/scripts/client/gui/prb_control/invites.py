@@ -179,7 +179,7 @@ class PrbInviteWrapper(_PrbInviteData):
         return PRB_INVITE_STATE.getFromOldState(self)
 
     def accept(self, callback=None):
-        if self.connectionMgr.peripheryID == self.peripheryID:
+        if not self.anotherPeriphery:
             BigWorld.player().prb_acceptInvite(self.prebattleID, self.peripheryID)
         else:
             _logger.error('Invalid periphery. %s', (
@@ -275,7 +275,7 @@ class PrbInvitationWrapper(PrbInviteWrapper):
         return PRB_INVITE_STATE.getFromNewState(self)
 
     def accept(self, callback=None):
-        if self.connectionMgr.peripheryID == self.peripheryID:
+        if not self.anotherPeriphery:
             BigWorld.player().prebattleInvitations.acceptInvitation(self.id, self.creatorVehID or self.creatorID, callback)
         else:
             _logger.error('Invalid periphery. %s', (

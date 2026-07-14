@@ -10,6 +10,27 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "event/ChallengeEventBanner/tooltip/description"
+msgstr "踏入熔炉试炼，铸就勇士！激活系列任务，完成即可获得奖励。一次只能激活一个系列任务，且必须按顺序完成。磨炼战斗技巧，为荣耀而战！"
+
+msgid "event/ChallengeEventBanner/tooltip/timer/text"
+msgstr "距即将到期的熔炉试炼任务结束还有%(timer)s"
+
+msgid "event/ChallengeEventBanner/tooltip/title"
+msgstr "熔炉试炼"
+
+msgid "event/ChallengesEventBanner/inProgress/description"
+msgstr "铸就荣耀之路！"
+
+msgid "event/ChallengesEventBanner/inProgress/description/activeChallenge"
+msgstr "已激活！"
+
+msgid "event/ChallengesEventBanner/intro/description"
+msgstr "铸就荣耀之路！"
+
+msgid "event/ChallengesEventBanner/title"
+msgstr "熔炉试炼"
+
 msgid "event/IntegratedAuctionEntryPont/inProgress/description"
 msgstr "全新拍品已开放！"
 

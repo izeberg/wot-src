@@ -19,6 +19,10 @@ def isPlayerAvatar():
     return hasattr(BigWorld.player(), 'arena')
 
 
+def isPlayerExist():
+    return hasattr(BigWorld, 'player')
+
+
 def getLanguageCode():
     if i18n.doesTextExist('#settings:LANGUAGE_CODE'):
         return i18n.makeString('#settings:LANGUAGE_CODE')
@@ -156,20 +160,20 @@ def getHelperServicesConfig(manager):
 
 def isShowingKillCam--- This code section failed: ---
 
- L. 239         0  LOAD_CONST               -1
+ L. 244         0  LOAD_CONST               -1
                 3  LOAD_CONST               ('DeathCamEvent',)
                 6  IMPORT_NAME           0  'gui.shared.events'
                 9  IMPORT_FROM           1  'DeathCamEvent'
                12  STORE_FAST            0  'DeathCamEvent'
                15  POP_TOP          
 
- L. 240        16  LOAD_GLOBAL           2  'BigWorld'
+ L. 245        16  LOAD_GLOBAL           2  'BigWorld'
                19  LOAD_ATTR             3  'player'
                22  CALL_FUNCTION_0       0  None
                25  LOAD_ATTR             4  'inputHandler'
                28  STORE_FAST            1  'inputHandler'
 
- L. 243        31  LOAD_FAST             1  'inputHandler'
+ L. 248        31  LOAD_FAST             1  'inputHandler'
                34  POP_JUMP_IF_FALSE    74  'to 74'
                37  LOAD_FAST             1  'inputHandler'
                40  LOAD_ATTR             5  'ctrlModeName'

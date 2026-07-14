@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from helpers import dependency
 from skeletons.gui.battle_session import IBattleSessionProvider
@@ -10,7 +11,7 @@ _logger = getLogger('Component')
 
 class IBattleHintView(object):
 
-    def showHint(self, hint, data):
+    def showHint(self, model, params):
         pass
 
     def hideHint(self, hint=None):

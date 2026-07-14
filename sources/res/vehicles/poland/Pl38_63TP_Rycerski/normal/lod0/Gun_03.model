@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/poland/Pl38_63TP_Rycerski/normal/lod0/Gun_03</nodefullVisual>
+	<visibilityBox>
+		<min>-0.403127 -0.282959 0.042969</min>
+		<max>0.831650 0.399612 5.929262</max>
+	</visibilityBox>
+	<parent>vehicles/poland/Pl38_63TP_Rycerski/normal/lod1/Gun_03</parent>
+	<extent>32.000000</extent>
+</root>

@@ -1,8 +1,9 @@
+from __future__ import absolute_import
 import typing
 from dog_tags_common.config.common import ValidateException, TRIUMPH_GRADES, SKILL_GRADES, STARTING_COMPONENT_TYPES, DEDICATION_GRADES, RANKED_SKILL_GRADES
 if typing.TYPE_CHECKING:
-    from dog_tag_framework import ComponentDefinition, StartingComponents
-    from common import ComponentPurpose, ComponentViewType
+    from dog_tags_common.config.dog_tag_framework import ComponentDefinition, StartingComponents
+    from dog_tags_common.config.common import ComponentPurpose, ComponentViewType
 
 def validateCommon(component):
     if component.isDefault and component.isHidden:

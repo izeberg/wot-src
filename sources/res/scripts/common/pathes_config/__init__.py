@@ -1,4 +1,6 @@
+from __future__ import absolute_import
 import os, sys, site
+from soft_exception import SoftException
 
 def setupPaths():
     root = '../../../../..'

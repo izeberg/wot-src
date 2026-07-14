@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from typing import Optional, Dict, Set, Any, Union
 from copy import copy
 from constants import IS_CLIENT

@@ -33,7 +33,6 @@
 						<type>BoolT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>Variable</class>
@@ -459,7 +458,6 @@
 						<type>BoolT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>Macro</class>
@@ -471,7 +469,6 @@
 						<type>StringT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>Sequence</class>
@@ -483,13 +480,10 @@
 						<type>IntT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>TriggerSoundOnEngine</class>
 				<id>TriggerSoundOnEngine_1</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>GetVariable</class>
@@ -502,7 +496,6 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>GetVariable</class>
@@ -515,13 +508,10 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>StartScript</class>
 				<id>StartScript_1</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>SetVariable</class>
@@ -534,7 +524,6 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>SetVariable</class>
@@ -547,7 +536,6 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>SetVariable</class>
@@ -560,7 +548,6 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>Macro</class>
@@ -572,19 +559,14 @@
 						<type>StringT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>GetRootOf</class>
 				<id>GetRootOf_1</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>GetVehicleAppearanceGameObject</class>
 				<id>GetVehicleAppearanceGameObject_7</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>SetVariable</class>
@@ -597,7 +579,6 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>Macro</class>
@@ -609,7 +590,6 @@
 						<type>StringT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>SetVariable</class>
@@ -622,7 +602,6 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>Macro</class>
@@ -634,7 +613,6 @@
 						<type>StringT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>GetVariable</class>
@@ -647,13 +625,10 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>OnVehiclePassengerInfo</class>
 				<id>OnVehiclePassengerInfo_1</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>SetVariable</class>
@@ -666,7 +641,6 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>SetVariable</class>
@@ -679,7 +653,6 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>GetComponentProperties</class>
@@ -691,7 +664,6 @@
 						<type>StringT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>Macro</class>
@@ -703,7 +675,6 @@
 						<type>StringT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>SetVariable</class>
@@ -716,7 +687,10 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
+			</block>
+			<block>
+				<class>GetGameObjects</class>
+				<id>GetGameObjects_1</id>
 			</block>
 			<block>
 				<class>SetVariable</class>
@@ -729,7 +703,14 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
+			</block>
+			<block>
+				<class>GetGameObjects</class>
+				<id>GetGameObjects_2</id>
+			</block>
+			<block>
+				<class>GetSpaceID</class>
+				<id>GetSpaceID_1</id>
 			</block>
 			<block>
 				<class>SetVariable</class>
@@ -742,7 +723,10 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
+			</block>
+			<block>
+				<class>GetGameObjects</class>
+				<id>GetGameObjects_3</id>
 			</block>
 			<block>
 				<class>Sequence</class>
@@ -754,7 +738,6 @@
 						<type>IntT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>Macro</class>
@@ -784,7 +767,6 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>SwitchOnEnum</class>
@@ -796,7 +778,6 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>GetVariable</class>
@@ -809,13 +790,10 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>TriggerSoundOnEngine</class>
 				<id>TriggerSoundOnEngine_13</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>GetVariable</class>
@@ -828,7 +806,6 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>GetVariable</class>
@@ -841,13 +818,10 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>OnPowerModeState</class>
 				<id>OnPowerModeState_1</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>ContextGetSelf</class>
@@ -864,7 +838,6 @@
 						<type>StringT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>GetVariable</class>
@@ -877,13 +850,10 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>FinishScript</class>
 				<id>FinishScript_1</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>Sequence</class>
@@ -895,7 +865,6 @@
 						<type>IntT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>Macro</class>
@@ -907,13 +876,10 @@
 						<type>StringT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>TriggerSoundOnEngine</class>
 				<id>TriggerSoundOnEngine_5</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>GetVariable</class>
@@ -926,7 +892,6 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>GetVariable</class>
@@ -939,7 +904,6 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>Sequence</class>
@@ -951,7 +915,6 @@
 						<type>IntT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>SwitchOnEnum</class>
@@ -963,7 +926,6 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>SwitchOnEnum</class>
@@ -975,7 +937,6 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>GetVariable</class>
@@ -988,7 +949,6 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>GetVariable</class>
@@ -1001,7 +961,6 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>Macro</class>
@@ -1082,7 +1041,6 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>GetVariable</class>
@@ -1095,7 +1053,6 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>GetVariable</class>
@@ -1108,13 +1065,10 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>TriggerSoundOnEngine</class>
 				<id>TriggerSoundOnEngine_11</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>GetVariable</class>
@@ -1127,7 +1081,6 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>GetVariable</class>
@@ -1140,7 +1093,6 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>Sequence</class>
@@ -1152,7 +1104,6 @@
 						<type>IntT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>SwitchOnEnum</class>
@@ -1164,7 +1115,6 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>GetVariable</class>
@@ -1177,7 +1127,6 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>Macro</class>
@@ -1258,7 +1207,6 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>GetVariable</class>
@@ -1271,7 +1219,6 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>GetVariable</class>
@@ -1284,7 +1231,6 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 		</blocks>
 		<connections>
@@ -1535,39 +1481,117 @@
 				<output>soundPowerModeDeactivationNPC</output>
 			</connection>
 			<connection>
-				<from>SetVariable_7</from>
+				<from>GetGameObjects_1</from>
 				<input>input</input>
 				<to>SetVariable_45</to>
 				<output>out</output>
 			</connection>
 			<connection>
-				<from>GetComponentProperties_2</from>
+				<from>GetGameObjects_1</from>
+				<input>input</input>
+				<to>SetVariable_45</to>
+				<output>failed</output>
+			</connection>
+			<connection>
+				<from>GetGameObjects_1</from>
 				<input>value</input>
 				<to>SetVariable_45</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>SetVariable_7</from>
+				<input>in</input>
+				<to>GetGameObjects_1</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>GetSpaceID_1</from>
+				<input>spaceID</input>
+				<to>GetGameObjects_1</to>
+				<output>spaceID</output>
+			</connection>
+			<connection>
+				<from>GetComponentProperties_2</from>
+				<input>uuids</input>
+				<to>GetGameObjects_1</to>
 				<output>startNodesList</output>
 			</connection>
 			<connection>
-				<from>SetVariable_45</from>
+				<from>GetGameObjects_2</from>
 				<input>input</input>
 				<to>SetVariable_44</to>
 				<output>out</output>
 			</connection>
 			<connection>
-				<from>GetComponentProperties_2</from>
+				<from>GetGameObjects_2</from>
+				<input>input</input>
+				<to>SetVariable_44</to>
+				<output>failed</output>
+			</connection>
+			<connection>
+				<from>GetGameObjects_2</from>
 				<input>value</input>
 				<to>SetVariable_44</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>SetVariable_45</from>
+				<input>in</input>
+				<to>GetGameObjects_2</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>GetSpaceID_1</from>
+				<input>spaceID</input>
+				<to>GetGameObjects_2</to>
+				<output>spaceID</output>
+			</connection>
+			<connection>
+				<from>GetComponentProperties_2</from>
+				<input>uuids</input>
+				<to>GetGameObjects_2</to>
 				<output>idleNodesList</output>
 			</connection>
 			<connection>
-				<from>SetVariable_44</from>
+				<from>ContextGetSelf_1</from>
+				<input>object</input>
+				<to>GetSpaceID_1</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>GetGameObjects_3</from>
 				<input>input</input>
 				<to>SetVariable_46</to>
 				<output>out</output>
 			</connection>
 			<connection>
-				<from>GetComponentProperties_2</from>
+				<from>GetGameObjects_3</from>
+				<input>input</input>
+				<to>SetVariable_46</to>
+				<output>failed</output>
+			</connection>
+			<connection>
+				<from>GetGameObjects_3</from>
 				<input>value</input>
 				<to>SetVariable_46</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>SetVariable_44</from>
+				<input>in</input>
+				<to>GetGameObjects_3</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>GetSpaceID_1</from>
+				<input>spaceID</input>
+				<to>GetGameObjects_3</to>
+				<output>spaceID</output>
+			</connection>
+			<connection>
+				<from>GetComponentProperties_2</from>
+				<input>uuids</input>
+				<to>GetGameObjects_3</to>
 				<output>endNodesList</output>
 			</connection>
 			<connection>
@@ -1877,7 +1901,6 @@
 								<type>StringT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>MacroOutput</class>
@@ -1894,7 +1917,6 @@
 								<type>TypeT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>SetVariable</class>
@@ -1907,7 +1929,6 @@
 								<type>TypeT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>SetVariable</class>
@@ -1920,7 +1941,6 @@
 								<type>TypeT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>GetVariable</class>
@@ -1933,7 +1953,6 @@
 								<type>TypeT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>MacroInput</class>
@@ -1955,7 +1974,6 @@
 								<type>StringT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>ContextGetSelf</class>
@@ -1972,7 +1990,6 @@
 								<type>StringT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 				</blocks>
 				<connections>
@@ -2031,13 +2048,10 @@
 								<type>StringT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>If</class>
 						<id>If_2</id>
-						<params/>
-						<slots/>
 					</block>
 					<block>
 						<class>SetVariable</class>
@@ -2050,7 +2064,6 @@
 								<type>TypeT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>MacroOutput</class>
@@ -2067,7 +2080,6 @@
 								<type>TypeT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>GetVariable</class>
@@ -2080,7 +2092,6 @@
 								<type>TypeT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>SetVariable</class>
@@ -2093,7 +2104,6 @@
 								<type>TypeT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>MacroOutput</class>
@@ -2110,7 +2120,6 @@
 								<type>TypeT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>MacroInput</class>
@@ -2132,7 +2141,6 @@
 								<type>StringT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>GetVariable</class>
@@ -2145,7 +2153,6 @@
 								<type>TypeT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>MacroInput</class>
@@ -2167,7 +2174,6 @@
 								<type>StringT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>ContextGetSelf</class>
@@ -2184,7 +2190,6 @@
 								<type>StringT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 				</blocks>
 				<connections>
@@ -2250,8 +2255,6 @@
 					<block>
 						<class>ActivateGameObject</class>
 						<id>ActivateGameObject_24</id>
-						<params/>
-						<slots/>
 					</block>
 					<block>
 						<class>MacroInput</class>
@@ -2295,7 +2298,6 @@
 								<type>TypeT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>IterateArray</class>
@@ -2317,8 +2319,6 @@
 					<block>
 						<class>If</class>
 						<id>If_8</id>
-						<params/>
-						<slots/>
 					</block>
 					<block>
 						<class>MacroInput</class>
@@ -2377,8 +2377,6 @@
 					<block>
 						<class>DeactivateGameObject</class>
 						<id>DeactivateGameObject_11</id>
-						<params/>
-						<slots/>
 					</block>
 					<block>
 						<class>ContextGetSelf</class>
@@ -2395,7 +2393,6 @@
 								<type>StringT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 				</blocks>
 				<connections>
@@ -2547,7 +2544,6 @@
 								<type>TypeT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>MacroInput</class>
@@ -2569,7 +2565,6 @@
 								<type>StringT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>SetVariable</class>
@@ -2582,13 +2577,10 @@
 								<type>TypeT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>If</class>
 						<id>If_9</id>
-						<params/>
-						<slots/>
 					</block>
 					<block>
 						<class>SetVariable</class>
@@ -2601,7 +2593,6 @@
 								<type>TypeT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>ContextGetSelf</class>
@@ -2618,7 +2609,6 @@
 								<type>StringT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>GetVariable</class>
@@ -2631,7 +2621,6 @@
 								<type>TypeT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>GetVariable</class>
@@ -2644,19 +2633,14 @@
 								<type>TypeT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>GameTime</class>
 						<id>GameTime_1</id>
-						<params/>
-						<slots/>
 					</block>
 					<block>
 						<class>CompareIntegers</class>
 						<id>CompareIntegers_1</id>
-						<params/>
-						<slots/>
 					</block>
 					<block>
 						<class>MacroInput</class>
@@ -2678,7 +2662,6 @@
 								<type>StringT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>AddInteger</class>
@@ -2690,7 +2673,6 @@
 								<type>IntT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>GetVariable</class>
@@ -2703,7 +2685,6 @@
 								<type>TypeT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 				</blocks>
 				<connections>

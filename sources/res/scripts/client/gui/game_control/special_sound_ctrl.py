@@ -1,5 +1,8 @@
+from __future__ import absolute_import
+import logging
 from collections import namedtuple
-import logging, ResMgr, SoundGroups, nations
+from future.utils import viewitems
+import ResMgr, SoundGroups, nations
 from account_helpers.settings_core import settings_constants
 from account_helpers.settings_core.options import AltVoicesSetting
 from helpers import dependency
@@ -132,7 +135,7 @@ class SpecialSoundCtrl(ISpecialSoundCtrl):
             if isPlayerVehicle and vehiclePublicInfo.outfit:
                 outfit = Outfit(vehiclePublicInfo.outfit, vehicleCD=vehiclePublicInfo.compDescr)
                 if outfit.style and outfit.style.tags:
-                    for tag, arenaMusic in self.__arenaMusicByStyle.iteritems():
+                    for tag, arenaMusic in viewitems(self.__arenaMusicByStyle):
                         if tag in outfit.style.tags:
                             self.__arenaMusicSetup = arena.arenaType.wwmusicSetup.copy()
                             self.__arenaMusicSetup.update(arenaMusic)
@@ -207,7 +210,7 @@ class SpecialSoundCtrl(ISpecialSoundCtrl):
                 if specialVoiceParams is not None:
                     break
         else:
-            for tag, params in self.__voiceoverByTankman.iteritems():
+            for tag, params in viewitems(self.__voiceoverByTankman):
                 if tankmen.hasTagInTankmenGroup(nationID, groupID, isPremium, tag):
                     specialVoiceParams = params
                     break

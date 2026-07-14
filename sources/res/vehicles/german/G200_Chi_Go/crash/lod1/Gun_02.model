@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodelessVisual>vehicles/german/G200_Chi_Go/crash/lod1/Gun_02</nodelessVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.608279 -0.384359 -1.558773</min>
+		<max>0.608281 0.412868 5.654631</max>
+	</visibilityBox>
+	<parent>vehicles/german/G200_Chi_Go/crash/lod2/Gun_02</parent>
+	<extent>64</extent>
+</root>

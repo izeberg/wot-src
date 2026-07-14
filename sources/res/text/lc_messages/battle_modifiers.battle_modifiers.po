@@ -52,12 +52,6 @@ msgstr "一组表示坦克造成损伤能力的参数。"
 msgid "domain/damageDealing/name"
 msgstr "输出参数"
 
-msgid "domain/equalize/description"
-msgstr "坦克等级越低，参数增强得越多——赋予低等级坦克不容小觑的实力！在战斗中无需花费资源，也无法获取资源。"
-
-msgid "domain/equalize/name"
-msgstr "I-X级坦克战斗"
-
 msgid "domain/mobility/description"
 msgstr "一组表示您坦克机动及速度特性的参数。"
 
@@ -153,9 +147,6 @@ msgstr "撞击时其它模块受到的损伤"
 
 msgid "modifier/name/envTankmanDamageChance"
 msgstr "撞击时乘员受伤的几率"
-
-msgid "modifier/name/equalize"
-msgstr "每个等级都具有不同的生命值、内部与外部模块耐久度、损伤和穿透力修改器。"
 
 msgid "modifier/name/equipmentCooldown"
 msgstr "给养冷却时间"

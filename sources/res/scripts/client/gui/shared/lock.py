@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import weakref
 from Event import Event
 from soft_exception import SoftException

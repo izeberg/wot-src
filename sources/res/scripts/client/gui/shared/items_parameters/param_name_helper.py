@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging
 from gui.impl.gen import R
 _logger = logging.getLogger(__name__)

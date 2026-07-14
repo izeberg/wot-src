@@ -11,5 +11,4 @@ class BonusesLayoutAttrs(object):
      PRIORITY, VISIBILITY)
 
 
-ATTACHMENTS_TOKEN_PREFIX = 'attachments_set'
 ATTACHMENTS_TOKEN_NAME = 'attachmentsSet'

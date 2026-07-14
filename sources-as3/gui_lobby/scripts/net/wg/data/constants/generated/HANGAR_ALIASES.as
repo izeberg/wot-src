@@ -65,6 +65,8 @@ package net.wg.data.constants.generated
       
       public static const LIVE_OPS_WEB_EVENTS_ENTRY_POINT:String = "liveOpsWebEventsEntryPoint";
       
+      public static const CHALLENGES_EVENT_BANNER:String = "ChallengesEventBanner";
+      
       public static const AMMUNITION_SETUP_VIEW_VEHICLE_PARAMS:String = "ammunitionSetupViewVehicleParams";
       
       public static const AMMUNITION_PANEL_INJECT:String = "ammunitionPanelInject";

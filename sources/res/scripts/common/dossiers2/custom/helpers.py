@@ -1,4 +1,6 @@
+from __future__ import absolute_import
 import time, typing
+from future.utils import viewitems, viewvalues
 from constants import INVOICE_EMITTER
 from achievements20.cache import getCache as getAchievementsCache
 from debug_utils import LOG_SENTRY
@@ -10,7 +12,7 @@ from optional_bonuses import BONUS_MERGERS
 
 def getTankExpertRequirements(vehTypeFrags, nationID=ALL_NATIONS_INDEX):
     cache = getCache()
-    killedVehTypes = set(vehTypeFrags.iterkeys())
+    killedVehTypes = set(vehTypeFrags)
     res = {'tankExpert': cache['vehiclesInTrees'] - killedVehTypes}
     if nationID == ALL_NATIONS_INDEX:
         nationIDs = cache['nationsWithVehiclesInTree']
@@ -59,7 +61,7 @@ def getAllCollectorVehicles(nationID=ALL_NATIONS_INDEX):
     collectorVehicles = set()
     collectorVehiclesByNations = cache['collectorVehiclesByNations']
     if nationID == ALL_NATIONS_INDEX:
-        for collectorVehiclesInNation in collectorVehiclesByNations.itervalues():
+        for collectorVehiclesInNation in viewvalues(collectorVehiclesByNations):
             collectorVehicles.update(collectorVehiclesInNation)
 
     else:
@@ -80,7 +82,7 @@ def getRecordMaxValue(block, record):
 
 def updateTankExpert(dossierDescr, vehTypeFrags, nationID):
     res = getTankExpertRequirements(vehTypeFrags, nationID)
-    for record, value in res.iteritems():
+    for record, value in viewitems(res):
         if len(value) == 0:
             if not dossierDescr['achievements'][record]:
                 dossierDescr['achievements'][record] = True
@@ -89,7 +91,7 @@ def updateTankExpert(dossierDescr, vehTypeFrags, nationID):
 
 def updateMechanicEngineer(dossierDescr, defaultUnlocks, unlocks, nationID):
     res = getMechanicEngineerRequirements(defaultUnlocks, unlocks, nationID)
-    for record, value in res.iteritems():
+    for record, value in viewitems(res):
         if len(value) == 0:
             if not dossierDescr['achievements'][record]:
                 dossierDescr['achievements'][record] = True
@@ -98,7 +100,7 @@ def updateMechanicEngineer(dossierDescr, defaultUnlocks, unlocks, nationID):
 
 def updateVehicleCollector(dossierDescr, inventoryVehicles, nationID):
     res = getVehicleCollectorRequirements(inventoryVehicles, nationID)
-    for record, value in res.iteritems():
+    for record, value in viewitems(res):
         if len(value) == 0:
             if not dossierDescr['achievements'][record]:
                 dossierDescr['achievements'][record] = True
@@ -157,14 +159,14 @@ def processAchievements20(dossierDescr, receivedItemCompDescrs, item, invoicePro
 
     dossierChanges = dossierDescr.getChanges()
     rewards = {}
-    for achievementType, blockBackup in achievementBlockBackups.iteritems():
+    for achievementType, blockBackup in viewitems(achievementBlockBackups):
         for achievementID in dossierChanges.get(achievementType, ()):
             achievement = achievementsCache.getAchievementByID(achievementType, achievementID)
-            currentValue, currentStage, currentTimestamp = achievement.getCurrentDataFromDossier(dossierDescr)
+            _, currentStage, _ = achievement.getCurrentDataFromDossier(dossierDescr)
             if blockBackup.get(achievementID, (0, 0))[1] != currentStage:
                 achievementRewards = achievement.getStageBonusByValue(currentStage)
                 if achievementRewards:
-                    for key, value in achievementRewards.iteritems():
+                    for key, value in viewitems(achievementRewards):
                         if key in BONUS_MERGERS:
                             BONUS_MERGERS[key](rewards, key, value, False, 1, None)
 

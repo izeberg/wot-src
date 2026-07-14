@@ -28,52 +28,14 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>RemoveGameObject</class>
 				<id>RemoveGameObject_1</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
-				<class>FlowGate</class>
-				<id>FlowGate_1</id>
-				<params/>
-				<slots>
-					<slot>
-						<name>openAtStart</name>
-						<const>\false\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>ListenLocalEvent</class>
-				<id>ListenLocalEvent_2</id>
-				<params>
-					<param>
-						onEnter
-						<name>Event Name</name>
-						<type>StringT</type>
-					</param>
-					<param>
-						GameObjectT
-						<name>who</name>
-						<type>TypeT</type>
-					</param>
-					<param>
-						GameObjectT
-						<name>where</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>StartScript</class>
 				<id>StartScript_1</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>ComponentMethod</class>
@@ -112,20 +74,10 @@
 			<block>
 				<class>FinishScript</class>
 				<id>FinishScript_1</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
-				<class>ComponentMethod</class>
-				<id>ComponentMethod_3</id>
-				<params>
-					<param>
-						Area Trigger.removeEnterReaction
-						<name>Component Type</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots/>
+				<class>If</class>
+				<id>If_1</id>
 			</block>
 			<block>
 				<class>ComponentMethod</class>
@@ -137,13 +89,63 @@
 						<type>StringT</type>
 					</param>
 				</params>
-				<slots/>
+			</block>
+			<block>
+				<class>ComponentMethod</class>
+				<id>ComponentMethod_3</id>
+				<params>
+					<param>
+						Area Trigger.removeEnterReaction
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>HasComponent</class>
+				<id>HasComponent_1</id>
+				<params>
+					<param>
+						Area Trigger
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>FlowGate</class>
+				<id>FlowGate_1</id>
+				<slots>
+					<slot>
+						<name>openAtStart</name>
+						<const>\false\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>ListenLocalEvent</class>
+				<id>ListenLocalEvent_2</id>
+				<params>
+					<param>
+						onEnter
+						<name>Event Name</name>
+						<type>StringT</type>
+					</param>
+					<param>
+						GameObjectT
+						<name>who</name>
+						<type>TypeT</type>
+					</param>
+					<param>
+						GameObjectT
+						<name>where</name>
+						<type>TypeT</type>
+					</param>
+				</params>
 			</block>
 			<block>
 				<class>StopPlan</class>
 				<id>StopPlan_1</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>SpawnComponent</class>
@@ -171,11 +173,15 @@
 						<const>\true\</const>
 					</slot>
 					<slot>
+						<name>emissionRate</name>
+						<const>\1.000000\</const>
+					</slot>
+					<slot>
 						<name>effect</name>
 						<const>\particles/Environment/Battle_Royal/Loot_Area/br_flare_blue.eff\</const>
 					</slot>
 					<slot>
-						<name>Rate</name>
+						<name>opacity</name>
 						<const>\1.000000\</const>
 					</slot>
 					<slot>
@@ -183,8 +189,32 @@
 						<const>\true\</const>
 					</slot>
 					<slot>
-						<name>oneTimeEffect</name>
-						<const>\false\</const>
+						<name>tintColor</name>
+						<const>\-1\</const>
+					</slot>
+					<slot>
+						<name>epicenterOffset</name>
+						<const>\0.000000, 0.000000, 0.000000\</const>
+					</slot>
+					<slot>
+						<name>emissionSize</name>
+						<const>\0.000000, 0.000000, 0.000000\</const>
+					</slot>
+					<slot>
+						<name>startSpeed</name>
+						<const>\1.000000, 1.000000\</const>
+					</slot>
+					<slot>
+						<name>gravity</name>
+						<const>\1.000000\</const>
+					</slot>
+					<slot>
+						<name>windWeight</name>
+						<const>\1.000000\</const>
+					</slot>
+					<slot>
+						<name>fps</name>
+						<const>\1.000000\</const>
 					</slot>
 					<slot>
 						<name>translation</name>
@@ -215,7 +245,6 @@
 						<type>StringT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 		</blocks>
 		<connections>
@@ -230,18 +259,6 @@
 				<input>gameObject</input>
 				<to>RemoveGameObject_1</to>
 				<output>object</output>
-			</connection>
-			<connection>
-				<from>ListenLocalEvent_1</from>
-				<input>input</input>
-				<to>FlowGate_1</to>
-				<output>exec</output>
-			</connection>
-			<connection>
-				<from>SpawnComponent_1</from>
-				<input>open</input>
-				<to>FlowGate_1</to>
-				<output>out</output>
 			</connection>
 			<connection>
 				<from>StartScript_1</from>
@@ -269,21 +286,15 @@
 			</connection>
 			<connection>
 				<from>FinishScript_1</from>
-				<input>in</input>
-				<to>ComponentMethod_3</to>
+				<input>input</input>
+				<to>If_1</to>
 				<output>out</output>
 			</connection>
 			<connection>
-				<from>ContextGetSelf_1</from>
-				<input>gameObject</input>
-				<to>ComponentMethod_3</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>ComponentMethod_1</from>
-				<input>arg#0</input>
-				<to>ComponentMethod_3</to>
-				<output>return</output>
+				<from>HasComponent_1</from>
+				<input>value</input>
+				<to>If_1</to>
+				<output>res</output>
 			</connection>
 			<connection>
 				<from>ComponentMethod_3</from>
@@ -302,6 +313,42 @@
 				<input>arg#0</input>
 				<to>ComponentMethod_4</to>
 				<output>return</output>
+			</connection>
+			<connection>
+				<from>If_1</from>
+				<input>in</input>
+				<to>ComponentMethod_3</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>ComponentMethod_3</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>ComponentMethod_1</from>
+				<input>arg#0</input>
+				<to>ComponentMethod_3</to>
+				<output>return</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>HasComponent_1</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>ListenLocalEvent_1</from>
+				<input>input</input>
+				<to>FlowGate_1</to>
+				<output>exec</output>
+			</connection>
+			<connection>
+				<from>SpawnComponent_1</from>
+				<input>open</input>
+				<to>FlowGate_1</to>
+				<output>out</output>
 			</connection>
 			<connection>
 				<from>SpawnComponent_1</from>

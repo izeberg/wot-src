@@ -1,6 +1,9 @@
+from __future__ import absolute_import, division
 import sys, struct
 from functools import partial
-from comp7_helpers import archiveSeasons, archiveMaxSeasons, archiveCutSeasons, addSeasonRecord
+from future.utils import viewitems, viewvalues
+from past.builtins import xrange
+from dossiers2.custom.comp7_helpers import archiveSeasons, archiveMaxSeasons, archiveCutSeasons, addSeasonRecord
 from dossiers2.common.updater_utils import getNewStaticSizeBlockValues, getStaticSizeBlockRecordValues
 from dossiers2.common.updater_utils import getDictBlockRecordValues, updateDictRecords
 from dossiers2.common.updater_utils import getNewBinarySetBlockValues, setStaticSizeBlockRecordValues
@@ -413,7 +416,7 @@ def _count7x7awards(ctx):
     if values and values['forTacticalOperations'] > 0:
         awardNum += 5 - values['forTacticalOperations']
         del values['forTacticalOperations']
-    for val in values.itervalues():
+    for val in viewvalues(values):
         awardNum += val
 
     return awardNum
@@ -990,7 +993,7 @@ def _countBattleHeroesBasedOn7x7Medals(ctx):
     packing = {'wolfAmongSheepMedal': (2, 'H'), 'geniusForWarMedal': (6, 'H')}
     awardNum = 0
     values = getStaticSizeBlockRecordValues(ctx, 'achievements7x7', packing)
-    for val in values.itervalues():
+    for val in viewvalues(values):
         awardNum += val
 
     return awardNum
@@ -1466,7 +1469,7 @@ def __updateFromAccountDossier107(compDescr):
         keyFormat, valueFormat = ('I', 'IIII')
         itemFormat = keyFormat + valueFormat
         itemSize = struct.calcsize('<' + itemFormat)
-        length = len(a15x15Cut) / itemSize
+        length = len(a15x15Cut) // itemSize
         fmt = '<' + itemFormat * length
         values = struct.unpack(fmt, a15x15Cut)
         newValues = []
@@ -1474,7 +1477,7 @@ def __updateFromAccountDossier107(compDescr):
         markOfMasteryCutBlockValues = []
         itemLength = len(itemFormat)
         idx = 0
-        for i in xrange(length):
+        for _ in xrange(length):
             items = values[idx:idx + itemLength]
             newValues += items[:3] + items[4:]
             if items[3] != 0:
@@ -1523,7 +1526,7 @@ def __updateFromAccountDossier108(compDescr):
     badges = getStaticSizeBlockRecordValues(updateCtx, 'rankedBadges', rankedBadgesPacking)
     addItems = {}
     _SECONDS_IN_DAY = 86400
-    for strBadgeID, daysTimestamp in badges.iteritems():
+    for strBadgeID, daysTimestamp in viewitems(badges):
         if daysTimestamp:
             addItems[int(strBadgeID)] = daysTimestamp * _SECONDS_IN_DAY
 
@@ -1531,7 +1534,7 @@ def __updateFromAccountDossier108(compDescr):
     itemFormat = 'II'
     subBlockFormat = '<'
     subBlockValues = []
-    for k, v in addItems.iteritems():
+    for k, v in viewitems(addItems):
         subBlockFormat += itemFormat
         subBlockValues.append(k)
         subBlockValues.append(v)
@@ -2282,8 +2285,8 @@ def __updateFromAccountDossier133(compDescr):
        'blocksLayout': blocksLayout}
     getHeader(updateCtx)
     epicSeasonsValues = getDictBlockRecordValues(updateCtx, 'epicSeasons', 'II', 'HHBB')
-    for key, values in epicSeasonsValues.iteritems():
-        battleCount, averageFamePts, tokensCount, level = values
+    for key, values in viewitems(epicSeasonsValues):
+        battleCount, averageFamePts, _, level = values
         epicSeasonsValues[key] = (battleCount, averageFamePts, level, 0, 0)
 
     LOG_DEBUG_DEV('__updateFromAccountDossier133 epicSeasonsValues', epicSeasonsValues)
@@ -4703,7 +4706,7 @@ def __updateFromVehicleDossier95(compDescr):
        'rated7x7': 104, 'clan2': 44, 
        'fallout': 128, 'company2': 44, 
        'a7x7': 108}
-    for block, offset in battlesOnStunningVehiclesOffsets.iteritems():
+    for block, offset in viewitems(battlesOnStunningVehiclesOffsets):
         lastFieldKey = {'a7x7': 'battlesCountBefore9_0', 
            'globalMapCommon': 'battlesCountBefore9_0', 
            'fallout': 'deathCount'}.get(block, 'damageBlockedByArmor')
@@ -4721,34 +4724,32 @@ def __updateFromVehicleDossier95(compDescr):
         damageAssistedStun = values['damageAssistedStun']
         if damageAssistedStun <= 65535:
             continue
-        elif 0 == stunNum:
+        if stunNum == 0:
             setStaticSizeBlockRecordValues(updateCtx, block, {lastFieldKey: (offset - 4, 'I'), 'damageAssistedStun': (
                                     offset + 8, 'I')}, {lastFieldKey: lastField + (damageAssistedStun & 4294901760), 'damageAssistedStun': damageAssistedStun & 65535})
-        elif 0 != stunNum and damageAssistedStun > 65535:
-            if 'a15x15_2' != block:
+        elif damageAssistedStun > 65535:
+            if block != 'a15x15_2':
                 continue
-            else:
-                piercingPacking = {'noDamageDirectHitsReceived': (16, 'I'), 'directHitsReceived': (12, 'I'), 'potentialDamageReceived': (36, 'I'), 
-                   'piercingsReceived': (20, 'I')}
-                damageReceivedPacking = {'damageReceived': (40, 'I')}
-                data = getStaticSizeBlockRecordValues(updateCtx, 'a15x15_2', piercingPacking)
-                data.update(getStaticSizeBlockRecordValues(updateCtx, 'a15x15', damageReceivedPacking))
-                if data['piercingsReceived'] < 50 or data['directHitsReceived'] < 50:
-                    continue
-                else:
-                    potentialDamagePerHit = 1.0 * data['potentialDamageReceived'] / data['directHitsReceived']
-                    aproxDamageBlockedByArmor = data['potentialDamageReceived'] - data['damageReceived']
-                    if data['noDamageDirectHitsReceived'] < 50 or aproxDamageBlockedByArmor <= 65535:
-                        continue
-                    potentialDamagePerHitForBlockedDamage = 1.0 * lastField / data['noDamageDirectHitsReceived']
-                    while aproxDamageBlockedByArmor >= lastField + (damageAssistedStun & 4294901760) and potentialDamagePerHit > potentialDamagePerHitForBlockedDamage:
-                        lastField += 65536
-                        damageAssistedStun -= 65536
-                        potentialDamagePerHitForBlockedDamage = 1.0 * lastField / data['noDamageDirectHitsReceived']
+            piercingPacking = {'noDamageDirectHitsReceived': (16, 'I'), 'directHitsReceived': (12, 'I'), 'potentialDamageReceived': (36, 'I'), 
+               'piercingsReceived': (20, 'I')}
+            damageReceivedPacking = {'damageReceived': (40, 'I')}
+            data = getStaticSizeBlockRecordValues(updateCtx, 'a15x15_2', piercingPacking)
+            data.update(getStaticSizeBlockRecordValues(updateCtx, 'a15x15', damageReceivedPacking))
+            if data['piercingsReceived'] < 50 or data['directHitsReceived'] < 50:
+                continue
+            potentialDamagePerHit = 1.0 * data['potentialDamageReceived'] / data['directHitsReceived']
+            aproxDamageBlockedByArmor = data['potentialDamageReceived'] - data['damageReceived']
+            if data['noDamageDirectHitsReceived'] < 50 or aproxDamageBlockedByArmor <= 65535:
+                continue
+            potentialDamagePerHitForBlockedDamage = 1.0 * lastField / data['noDamageDirectHitsReceived']
+            while aproxDamageBlockedByArmor >= lastField + (damageAssistedStun & 4294901760) and potentialDamagePerHit > potentialDamagePerHitForBlockedDamage:
+                lastField += 65536
+                damageAssistedStun -= 65536
+                potentialDamagePerHitForBlockedDamage = 1.0 * lastField / data['noDamageDirectHitsReceived']
 
-                    if damageAssistedStun >= 0:
-                        setStaticSizeBlockRecordValues(updateCtx, block, {lastFieldKey: (offset - 4, 'I'), 'damageAssistedStun': (
-                                                offset + 8, 'I')}, {lastFieldKey: lastField, 'damageAssistedStun': damageAssistedStun})
+            if damageAssistedStun >= 0:
+                setStaticSizeBlockRecordValues(updateCtx, block, {lastFieldKey: (offset - 4, 'I'), 'damageAssistedStun': (
+                                        offset + 8, 'I')}, {lastFieldKey: lastField, 'damageAssistedStun': damageAssistedStun})
 
     setVersion(updateCtx, 96)
     return (96, updateCtx['dossierCompDescr'])
@@ -4921,7 +4922,7 @@ def __updateFromVehicleDossier100(compDescr):
     if oldValues:
         newValues = getStaticSizeBlockRecordValues(updateCtx, 'max30x30', recordsPacking)
         if newValues:
-            setStaticSizeBlockRecordValues(updateCtx, 'max30x30', recordsPacking, {name:max(oldValues.get(name, 0), newValues.get(name, 0)) for name in recordsPacking.iterkeys()})
+            setStaticSizeBlockRecordValues(updateCtx, 'max30x30', recordsPacking, {name:max(oldValues.get(name, 0), newValues.get(name, 0)) for name in recordsPacking})
         else:
             oldBlockCompDescr = getBlockCompDescr(updateCtx, 'epicBattleAchievements')
             setBlockCompDescr(updateCtx, 'max30x30', oldBlockCompDescr)

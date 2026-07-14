@@ -1,4 +1,7 @@
-import random, re, typing, ArenaType, wg_async as future_async
+from __future__ import absolute_import
+import random, re, typing
+from builtins import map, range
+import ArenaType, wg_async as future_async
 from adisp import adisp_async
 from gui import GUI_SETTINGS, SystemMessages
 from gui.Scaleform.locale.SYSTEM_MESSAGES import SYSTEM_MESSAGES
@@ -17,7 +20,7 @@ if typing.TYPE_CHECKING:
 
 def rnd_choice(*args):
     args = list(args)
-    for _ in xrange(len(args)):
+    for _ in range(len(args)):
         c = random.choice(args)
         yield c
         args.remove(c)

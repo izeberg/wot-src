@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from constants import SHELL_TYPES, DamageAbsorptionTypeToLabel, SHELL_MECHANICS_TYPE
 from items.components.component_constants import DEFAULT_ENABLE_TRACE_RICOCHET, ZERO_FLOAT, ZERO_TUPLE2
 from typing import Set, Optional, Tuple, Union

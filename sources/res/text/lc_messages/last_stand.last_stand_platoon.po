@@ -19,7 +19,7 @@ msgid "headerButton/tooltips/squad/header"
 msgstr "小队"
 
 msgid "members/header/last_stand"
-msgstr ": 星火燎原:入侵"
+msgstr ": 星火燎原:北境"
 
 msgid "members/header/tooltip/last_stand/body"
 msgstr "所有小队成员都必须已经解锁指挥官所选难度等级，才能加入活动战斗。"
@@ -31,10 +31,10 @@ msgid "platoon/commander/difficulty_body"
 msgstr "您可以选择任意开放的难度等级。"
 
 msgid "platoon/difficulty/error_body_1"
-msgstr "开放的难度等级: 普通"
+msgstr "开放的难度等级: 普通。"
 
 msgid "platoon/difficulty/error_body_2"
-msgstr "开放的难度等级: 普通、激战。"
+msgstr "开放的难度等级: 普通、进阶。"
 
 msgid "platoon/difficulty/error_header"
 msgstr "难度未开放"
@@ -43,7 +43,7 @@ msgid "platoon/difficulty/level_1"
 msgstr "难度: 普通"
 
 msgid "platoon/difficulty/level_2"
-msgstr "难度: 激战"
+msgstr "难度: 进阶"
 
 msgid "platoon/difficulty/level_3"
 msgstr "难度: 残酷"
@@ -62,6 +62,18 @@ msgstr "一位或多位小队成员尚未解锁该难度等级。"
 
 msgid "platoon/difficulty/warning_header"
 msgstr "难度不符"
+
+msgid "platoon/dropdown/difficulty_1"
+msgstr "普通%(icon)s"
+
+msgid "platoon/dropdown/difficulty_2"
+msgstr "进阶%(icon)s"
+
+msgid "platoon/dropdown/difficulty_3"
+msgstr "残酷%(icon)s"
+
+msgid "platoon/dropdown/header/difficulty"
+msgstr "{whiteSpanish_Open}难度: {whiteSpanish_Close}%(difficulty)s"
 
 msgid "platoon/player/difficulty_body"
 msgstr "仅小队指挥官可更改难度等级。"

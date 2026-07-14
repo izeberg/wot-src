@@ -243,9 +243,6 @@ msgstr "点击将消息发布在聊天频道。"
 msgid "members/chat/sendMessage/header"
 msgstr "发送消息"
 
-msgid "members/footer/AT_SPG_Full"
-msgstr "小队中的自行反坦克炮数量已达到上限"
-
 msgid "members/footer/comp7Invite"
 msgstr "邀请"
 
@@ -261,26 +258,35 @@ msgstr "点击以表示您未就绪。"
 msgid "members/footer/getReady"
 msgstr "确认您已准备好参战。"
 
-msgid "members/footer/heavyTankFull"
-msgstr "小队中的重型坦克数量已达到上限"
-
 msgid "members/footer/invalidVehicleLevel"
 msgstr "等级不符合要求"
-
-msgid "members/footer/mediumTankFull"
-msgstr "小队中的中型坦克数量已达到上限"
-
-msgid "members/footer/scoutFull"
-msgstr "小队中的轻型坦克数量已达到上限"
-
-msgid "members/footer/spgFull"
-msgstr "小队中的自行火炮数量已达到上限"
 
 msgid "members/footer/vehicles/differentLevels"
 msgstr "小队坦克组成错误，受到经验惩罚！"
 
-msgid "members/footer/wheeledFull"
+msgid "members/footer/vehiclesGroupIsFull"
+msgstr "已达到坦克数量上限"
+
+msgid "members/footer/vehiclesGroupIsFull/AT_SPG"
+msgstr "小队中的自行反坦克炮数量已达到上限"
+
+msgid "members/footer/vehiclesGroupIsFull/SPG"
+msgstr "小队中的自行火炮数量已达到上限"
+
+msgid "members/footer/vehiclesGroupIsFull/heavyTank"
+msgstr "小队中的重型坦克数量已达到上限"
+
+msgid "members/footer/vehiclesGroupIsFull/mediumTank"
+msgstr "小队中的中型坦克数量已达到上限"
+
+msgid "members/footer/vehiclesGroupIsFull/role_LT_universal"
+msgstr "小队中的轻型坦克数量已达到上限"
+
+msgid "members/footer/vehiclesGroupIsFull/role_LT_wheeled"
 msgstr "小队中的轮式战车数量已达到上限"
+
+msgid "members/footer/vehiclesGroupIsFull/scout"
+msgstr "小队中的轻型坦克数量已达到上限"
 
 msgid "members/header/battle_royal"
 msgstr ": 钢铁猎手"

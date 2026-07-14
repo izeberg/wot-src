@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from Event import Event, EventManager
 from skeletons.gui.game_control import ILoadoutController
 from wg_async import wg_async, await_callback

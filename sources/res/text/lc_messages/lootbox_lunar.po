@@ -11,12 +11,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-msgid "autoOpenView/boxCount"
-msgid_plural "plural/autoOpenView/boxCount"
-msgstr[0] "剩余%(count)个骏马补给品"
-msgstr[1] "剩余%(count)个骏马补给品"
-msgstr[2] "剩余%(count)个骏马补给品"
-
 msgid "awardViews/footer/backButton/"
 msgstr "返回补给品"
 
@@ -41,9 +35,6 @@ msgstr "开启骏马补给品即可查看统计数据。"
 msgid "common/statistics/header"
 msgstr "已开启骏马补给品: %(count)"
 
-msgid "common/statistics/tooltip/body"
-msgstr "此处显示您在活动期间从骏马补给品中所获得的物品。您可随时手动重置统计数据。"
-
 msgid "confirmResetLootBoxStatistics/description"
 msgstr "已开启骏马补给品的所有信息都将被删除。"
 
@@ -52,9 +43,6 @@ msgstr "前往骏马补给品"
 
 msgid "entryPoint/tooltip/description"
 msgstr "这些特殊补给品内含全新且独特的物品，包括金币坦克、2D风格，以及其他好物。您可在军械库中购买骏马补给品礼包。"
-
-msgid "entryPoint/tooltip/title"
-msgstr "骏马补给品及其获取方式"
 
 msgid "entryPoint/tooltip/warningDescription"
 msgstr "由于技术原因，目前无法开启骏马补给品，或购买补给品礼包。我们对造成的不便深表歉意。"
@@ -103,36 +91,6 @@ msgstr "可用的补给品: %(boxesCount)"
 
 msgid "quantityTitle/noBoxes"
 msgstr "没有可用的补给品"
-
-msgid "serviceChannelMessages/finish/text"
-msgstr "系统将开启所有剩余的骏马补给品，所含奖励将添加至您的账号。"
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/count"
-msgstr "已开启骏马补给品: %(boxes)s"
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/header"
-msgstr "已开启剩余的骏马补给品"
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/text"
-msgstr "活动结束后，我们开启了您全部的骏马补给品，所含奖励已添加至您的账号。"
-
-msgid "serviceChannelMessages/lootBoxesDisabled/header"
-msgstr "暂时无法开启骏马补给品"
-
-msgid "serviceChannelMessages/lootBoxesDisabled/text"
-msgstr "由于服务器维护，骏马补给品相关操作暂时无法进行。"
-
-msgid "serviceChannelMessages/lootBoxesEnabled/header"
-msgstr "骏马补给品开启已恢复"
-
-msgid "serviceChannelMessages/lootBoxesEnabled/text"
-msgstr "骏马补给品相关操作已恢复正常。去开启补给品吧！"
-
-msgid "serviceChannelMessages/multipleOpen"
-msgstr "已开启骏马补给品！"
-
-msgid "serviceChannelMessages/server_error"
-msgstr "未开启骏马补给品"
 
 msgid "singleRewardView/tooltip/description/"
 msgstr "如果您车库中已拥有骏马补给品内容列表中的全部坦克，对于之后从骏马补给品中获得的每辆坦克，您都将获得坦克当前价格所对应的金币补偿。"

@@ -17,10 +17,10 @@ msgid "bannerTooltip/callToAction"
 msgstr "%(mode)——游戏模式。点击探索"
 
 msgid "bannerTooltip/description"
-msgstr "特殊的PvE模式将带您迎战一波又一波的敌方黑暗势力。使用您最喜爱的座驾，消灭余响坦克，抵御攻势。专属奖励和更多精彩内容等待着您！"
+msgstr "特殊的PvE模式将带您迎战一波又一波的敌方攻势。选择您最喜爱的座驾，击毁余响坦克，抵御攻势。专属奖励和更多精彩内容等待着您！"
 
 msgid "bannerTooltip/header"
-msgstr "星火燎原:入侵"
+msgstr "星火燎原:北境"
 
 msgid "bannerTooltip/performanceRisk/text/highRisk"
 msgstr "您的计算机性能不足以运行此模式。您可能会遇到图形和坦克移动方面的问题。游戏客户端也有可能崩溃。"
@@ -131,8 +131,7 @@ msgid "points/battles"
 msgstr "• 参加活动战斗"
 
 msgid "points/body"
-msgstr ""
-"数据点数可用于推动星火燎原:入侵活动进度，获取包括一项重要奖励在内的珍贵资源。可通过参加活动战斗、完成每日任务或购买\"{{bundle_name}}\"来获取数据点数。"
+msgstr "数据点数可用于推动星火燎原活动进度，从而获取珍贵资源。可通过参加活动战斗、完成每日任务或购买\"{{bundle_name}}\"来获取数据点数。"
 
 msgid "points/bottom"
 msgstr "活动结束时间: (%(date)s)"
@@ -162,7 +161,7 @@ msgid "points/vehicleDaily"
 msgstr "• 获得每日坦克奖励:"
 
 msgid "rewardPath/info/first"
-msgstr "您可通过每日任务来获取更多数据点数，这些任务在活动期间每天更新。"
+msgstr "您可通过完成每日任务来获取更多数据点数，这些任务在活动期间每天更新。"
 
 msgid "rewardPath/info/header"
 msgstr "额外数据点数"
@@ -186,7 +185,7 @@ msgid "rewardPath/tooltip/counter/progress"
 msgstr "数据点数进度{{current}}/{{max}}"
 
 msgid "rewardPath/tooltip/description"
-msgstr "在战斗中收集数据点数，推动星火燎原:入侵的进度。每个阶段都会为您带来珍贵物品和坦克加成奖励，助您击败更强大的敌人。"
+msgstr "在战斗中收集数据点数，推动星火燎原活动进度。每个阶段都会为您带来珍贵物品和坦克加成奖励，助您击败更强的敌人。"
 
 msgid "rewardPath/tooltip/finalStage"
 msgstr "最终阶段"
@@ -256,9 +255,6 @@ msgstr "警告"
 
 msgid "teamList/warned/self/body"
 msgstr "您因挂机/中途离场受到惩罚，未获得该战斗的任何奖励。"
-
-msgid "vehicle/eventBonus"
-msgstr "驾驶该坦克赢得一场战斗，即可获得5数据点数的每日坦克奖励。"
 
 msgid "vehicle/lowEfficiency"
 msgstr "效率低"

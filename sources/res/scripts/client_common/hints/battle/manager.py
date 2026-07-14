@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from hints_common.battle import manager
 from hints.battle.schemas.base import clientHintSchema

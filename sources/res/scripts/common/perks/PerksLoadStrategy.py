@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from future.utils import iteritems
 from perks.vse_plan import VsePlan, PlanStatus
 from wg_async import wg_async, wg_await, distributeLoopOverTicks2
 
@@ -84,7 +86,7 @@ class DefaultLoadStrategy(BaseLoadStrategy):
     def loadPlansAsync(self, isAutoStart=False):
         _MAX_LOAD_PLANS = 10
         tempCreator = []
-        for scopeId, (scope, creator) in self._scope.iteritems():
+        for scopeId, (scope, creator) in iteritems(self._scope):
             for perkId, (level, args) in scope:
                 plan = VsePlan(self._owner, scopeId, level, perkId, self._onStatusChanged, args)
                 self._plans.append(plan)

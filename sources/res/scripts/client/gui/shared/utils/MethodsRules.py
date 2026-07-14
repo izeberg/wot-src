@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging
 from collections import defaultdict
 from types import MethodType
@@ -33,10 +34,10 @@ class MethodsRules(object):
         self.__notificationToDelay = defaultdict(list)
         self.__delayersProcessed = set()
 
-    def clear(self, reset=True):
+    def clear(self, leave=True):
         self.__listenersToSkip = []
         self.__delayersProcessed.clear()
-        if reset:
+        if leave:
             self.__notificationToDelay.clear()
 
     def skipListenerNotification(self, wrapper):
