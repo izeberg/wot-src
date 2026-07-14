@@ -68,6 +68,9 @@ msgstr[2] "Rewards:"
 msgid "battleResult/header/deserter"
 msgstr "You have received a penalty"
 
+msgid "battleResult/missionsProgress/progression/title"
+msgstr "ONSLAUGHT LIGHT PROGRESSION"
+
 msgid "calendarDay/serverName"
 msgstr "%(server)s"
 
@@ -241,6 +244,28 @@ msgstr ""
 
 msgid "noVehicles/title"
 msgstr "No suitable vehicles in your Garage"
+
+msgid "pbs/tooltip/prestige_points_info_tooltip/bullet"
+msgstr "•"
+
+msgid "pbs/tooltip/prestige_points_info_tooltip/footer"
+msgstr "See the About Onslaught Light page for details."
+
+msgid "pbs/tooltip/prestige_points_info_tooltip/header"
+msgstr "Prestige Points"
+
+msgid "pbs/tooltip/prestige_points_info_tooltip/listContent"
+msgstr ""
+"Causing damage\n"
+"Spotting assists\n"
+"Destroying tracks\n"
+"Causing critical hits\n"
+"Destroying enemy vehicles\n"
+"And more"
+
+msgid "pbs/tooltip/prestige_points_info_tooltip/listHeader"
+msgstr ""
+"Prestige Points can be earned for performing combat actions including:"
 
 msgid "primeTimeView/status/seasonDisabled/first"
 msgstr "Season has ended on the %(server)s server."

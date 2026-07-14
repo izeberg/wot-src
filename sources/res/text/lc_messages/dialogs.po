@@ -429,6 +429,53 @@ msgstr ""
 "Purchased equipment and consumables will not be refunded with gold once you "
 "click the Purchase button below. Please check all the details carefully."
 
+msgid "challenge_missions/activation/cancel"
+msgstr "Cancel"
+
+msgid "challenge_missions/activation/confirm"
+msgstr "Activate"
+
+msgid "challenge_missions/activation/description"
+msgstr ""
+"Once activated, a series of Crucible missions can be {{@ style (color "
+"#FFE4C0)}}completed, failed, or abandoned{{/}}. If you fail a mission in the"
+" series, you will lose one shield."
+
+msgid "challenge_missions/activation/title"
+msgstr "Activate Crucible: {{challengeName}}?"
+
+msgid "challenge_missions/restart/cancel"
+msgstr "Cancel"
+
+msgid "challenge_missions/restart/confirm"
+msgstr "Restart"
+
+msgid "challenge_missions/restart/description"
+msgstr ""
+"Your mission progress will reset, your shields will be restored, and you "
+"will be able to earn the rewards again. The series of missions will be "
+"active immediately after restarting."
+
+msgid "challenge_missions/restart/free/title"
+msgstr "Restart Crucible: {{challengeName}} for free?"
+
+msgid "challenge_missions/restart/paid/title"
+msgstr "Restart Crucible: {{challengeName}} for {{cost}}?"
+
+msgid "challenge_missions/surrender/cancel"
+msgstr "Cancel"
+
+msgid "challenge_missions/surrender/confirm"
+msgstr "Abandon"
+
+msgid "challenge_missions/surrender/description"
+msgstr ""
+"Abandoning will end this series of Crucible missions and reset all progress "
+"and shields. You can restart it at any time."
+
+msgid "challenge_missions/surrender/title"
+msgstr "Abandon Crucible: {{challengeName}}?"
+
 msgid "changeGraphics/cancel"
 msgstr "Cancel"
 

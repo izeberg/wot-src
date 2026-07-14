@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 if typing.TYPE_CHECKING:
     from account_helpers.settings_core.ServerSettingsManager import ServerSettingsManager

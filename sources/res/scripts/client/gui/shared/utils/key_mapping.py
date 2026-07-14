@@ -1,3 +1,6 @@
+from __future__ import absolute_import
+from builtins import chr
+from future.utils import viewitems
 import BigWorld, CommandMapping, Keys
 from helpers.i18n import makeString
 from gui.Scaleform.locale.READABLE_KEY_NAMES import READABLE_KEY_NAMES
@@ -114,7 +117,7 @@ BW_TO_SCALEFORM = {Keys.KEY_NONE: 777,
    Keys.KEY_APOSTROPHE: 222, 
    Keys.KEY_AX: 225, 
    Keys.KEY_OEM_102: 225}
-SCALEFORM_TO_BW = dict([ (v, k) for k, v in BW_TO_SCALEFORM.iteritems() ])
+SCALEFORM_TO_BW = {v:k for k, v in viewitems(BW_TO_SCALEFORM)}
 BW_TO_SCALEFORM_OVERRIDE = {Keys.KEY_NONE: 0, 
    Keys.KEY_MOUSE0: 1, 
    Keys.KEY_MOUSE1: 2, 
@@ -124,7 +127,7 @@ BW_TO_SCALEFORM_OVERRIDE = {Keys.KEY_NONE: 0,
    Keys.KEY_MOUSE5: 6, 
    Keys.KEY_MOUSE6: 7, 
    Keys.KEY_MOUSE7: 8}
-SCALEFORM_TO_BW_OVERRIDE = dict([ (v, k) for k, v in BW_TO_SCALEFORM_OVERRIDE.iteritems() ])
+SCALEFORM_TO_BW_OVERRIDE = {v:k for k, v in viewitems(BW_TO_SCALEFORM_OVERRIDE)}
 SCALEFORM_TO_BW[16] = Keys.KEY_LSHIFT
 SCALEFORM_TO_BW[17] = Keys.KEY_LCONTROL
 SCALEFORM_TO_BW[18] = Keys.KEY_LALT
@@ -183,6 +186,6 @@ def __getVK(command):
                 key = SCALEFORM_TO_BW[vk]
             else:
                 key = BigWorld.mapVirtualKey(vk, MappingType.MAPVK_VK_TO_CHAR)
-                return (unichr(key).upper(), True)
+                return (chr(key).upper(), True)
     return (
      BigWorld.keyToString(key), False)

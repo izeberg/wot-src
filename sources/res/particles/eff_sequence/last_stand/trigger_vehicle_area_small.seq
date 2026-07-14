@@ -104,6 +104,28 @@
 		<type>model</type>
 		<resource>particles/content_deferred/GFX_models/environment/last_stand/volot/bomber_zone_01.model</resource>
 		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.450000 1.000000 1.450000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
 	</sequenceObject>
 	<sequenceObject>
 		<name>fence</name>
@@ -126,7 +148,7 @@
 			<type>vector3</type>
 			<frame>
 				<startTime>0.000000</startTime>
-				<value>1.000000 3.000000 1.000000</value>
+				<value>1.450000 3.000000 1.450000</value>
 				<inTangent>0.000000 0.000000 0.000000</inTangent>
 				<outTangent>0.000000 0.000000 0.000000</outTangent>
 				<tangentMode>0</tangentMode>

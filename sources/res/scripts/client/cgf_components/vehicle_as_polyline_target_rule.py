@@ -1,7 +1,7 @@
+from __future__ import absolute_import
 import CGF
-from GameplayDebug import PolylineDebugTargetComponent
-from cgf_script.managers_registrator import onAddedQuery, Rule, registerManager, registerRule
-from constants import IS_CLIENT
+from cgf_script.registration import registerModule
+from constants import IS_CLIENT, HAS_DEV_RESOURCES
 if IS_CLIENT:
     from Vehicle import Vehicle
 else:
@@ -10,20 +10,28 @@ else:
         pass
 
 
-class VehicleAsPolylineTargetConfigurator(CGF.ComponentManager):
+if HAS_DEV_RESOURCES:
+    from GameplayDebug import PolylineDebugTargetComponent
+else:
 
-    @onAddedQuery(Vehicle, CGF.GameObject)
-    def onVehicleAppeared(self, vehicle, go):
-        if go.findComponentByType(PolylineDebugTargetComponent) is None:
-            go.createComponent(PolylineDebugTargetComponent)
-        return
+    class PolylineDebugTargetComponent(object):
+        pass
 
 
-@registerRule
-class VehicleAsPolylineTargetRule(Rule):
-    category = 'Fall Tanks'
-    domain = CGF.DomainOption.DomainClient | CGF.DomainOption.DomainEditor
+class VehicleAsPolylineTargetConfiguratorSystem(CGF.System):
+    VehicleCreated = CGF.ActivateReaction(CGF.GameObject, CGF.ReactHas(Vehicle))
+    Reactions = CGF.Reactions(VehicleCreated)
 
-    @registerManager(VehicleAsPolylineTargetConfigurator, domain=CGF.DomainOption.DomainClient)
-    def constructConfigurator(self):
-        return
+    def update(self):
+        queue = CGF.CommandQueue(self.spaceID)
+        for go in self.reaction(self.VehicleCreated):
+            if not go.hasComponent(PolylineDebugTargetComponent):
+                queue.createComponent(go, PolylineDebugTargetComponent)
+
+
+@registerModule
+class VehicleAsPolylineTargetModule(object):
+    name = 'PolyLine Debug Target'
+    group = 'Fall Tanks'
+    systems = [
+     CGF.RegisterSystem(VehicleAsPolylineTargetConfiguratorSystem, domain=CGF.Domain.Client)]

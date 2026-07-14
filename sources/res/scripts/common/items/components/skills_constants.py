@@ -1,4 +1,6 @@
+from __future__ import absolute_import
 from collections import OrderedDict
+from future.utils import iteritems
 SKILL_NAMES = ('reserved', 'commander', 'radioman', 'driver', 'gunner', 'loader', 'repair',
                'fireFighting', 'camouflage', 'brotherhood', 'any', 'armorPatching',
                'reserved', 'reserved', 'reserved', 'reserved', 'commander_tutor',
@@ -57,11 +59,11 @@ SKILLS_BY_ROLES_ORDERED = {ROLE_NAMES.COMMANDER: COMMON_SKILLS_ORDERED + COMMAND
 SKILL_NAMES_ORDERED = COMMON_SKILLS_ORDERED + COMMANDER_SKILLS + GUNNER_SKILLS + DRIVER_SKILLS + RADIOMAN_SKILLS + LOADER_SKILLS
 SKILL_INDICES_ORDERED = dict((x[1], x[0]) for x in enumerate(SKILL_NAMES_ORDERED))
 SKILLS_BY_ROLES = {}
-for role, skills in SKILLS_BY_ROLES_ORDERED.iteritems():
+for role, skills in iteritems(SKILLS_BY_ROLES_ORDERED):
     SKILLS_BY_ROLES.setdefault(role, frozenset(skills))
 
 ROLES_BY_SKILLS = {}
-for role, skills in SKILLS_BY_ROLES.iteritems():
+for role, skills in iteritems(SKILLS_BY_ROLES):
     for skill in skills:
         ROLES_BY_SKILLS.setdefault(skill, set()).add(role)
 

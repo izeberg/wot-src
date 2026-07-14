@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld
 from gui.shared.utils.requesters.abstract import AbstractSyncDataRequester
 from skeletons.gui.shared.utils.requesters import IRankedRequester
@@ -50,4 +51,4 @@ class RankedRequester(AbstractSyncDataRequester, IRankedRequester):
     def _preprocessValidData(self, data):
         if 'ranked' in data:
             return dict(data['ranked'])
-        return dict()
+        return {}

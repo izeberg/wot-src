@@ -81,6 +81,8 @@ package net.wg.gui.battle.views.consumablesPanel
       
       private var _basePanelWidth:int = 0;
       
+      private var _basePanelPosX:int = 0;
+      
       private var _shellButtonLinkage:String = "";
       
       private var _tween:Tween = null;
@@ -682,7 +684,7 @@ package net.wg.gui.battle.views.consumablesPanel
          {
             this._tween.onComplete(this._tween);
          }
-         x = this._stageWidth - this._basePanelWidth >> 1;
+         x = this._basePanelPosX = this._stageWidth - this._basePanelWidth >> 1;
          y = this._stageHeight - this._bottomPadding;
          dispatchEvent(new ConsumablesPanelEvent(ConsumablesPanelEvent.UPDATE_POSITION));
       }
@@ -754,9 +756,19 @@ package net.wg.gui.battle.views.consumablesPanel
          return this._itemsPadding;
       }
       
-      protected function set basePanelWidth(param1:Number) : void
+      public function set basePanelWidth(param1:Number) : void
       {
          this._basePanelWidth = param1;
+      }
+      
+      public function get basePanelWidth() : Number
+      {
+         return this._basePanelWidth;
+      }
+      
+      public function get panelPosX() : Number
+      {
+         return this._basePanelPosX;
       }
    }
 }

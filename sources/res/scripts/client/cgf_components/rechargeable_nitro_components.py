@@ -1,8 +1,7 @@
+from __future__ import absolute_import
 import CGF, SoundGroups
-from cgf_script.component_meta_class import registerComponent, ComponentProperty, CGFMetaTypes
-from cgf_script.managers_registrator import autoregister, onProcessQuery, onAddedQuery, onRemovedQuery
+from cgf_script.registration import registerComponent, ComponentProperty
 from constants import IS_CLIENT
-from cgf_common.cgf_helpers import getParentGameObjectByComponent
 if IS_CLIENT:
     from RechargeableNitroController import RechargeableNitroController
 else:
@@ -14,9 +13,9 @@ else:
 @registerComponent
 class RechargeableNitroRTPCComponent(object):
     category = 'Sound'
-    domain = CGF.DomainOption.DomainClient
     editorTitle = 'Rechargeable Nitro RTPC'
-    RTPCName = ComponentProperty(type=CGFMetaTypes.STRING, value='RTPC_ext_abl_nitro_fuel', editorName='RTPC name')
+    domain = CGF.Domain.Client
+    RTPCName = ComponentProperty(type=CGF.PropertyType.String, value='RTPC_ext_abl_nitro_fuel', editorName='RTPC name')
 
     def __init__(self):
         super(RechargeableNitroRTPCComponent, self).__init__()
@@ -25,37 +24,41 @@ class RechargeableNitroRTPCComponent(object):
         return
 
 
-@autoregister(presentInAllWorlds=True)
-class RechargeableNitroMechanicManager(CGF.ComponentManager):
+class RechargeableNitroMechanicSystem(CGF.System):
+    NitroActivated = CGF.ActivateReaction(CGF.GameObject, CGF.ReactRw(RechargeableNitroRTPCComponent))
+    NitroDeactivated = CGF.DeactivateReaction(CGF.ReactRw(RechargeableNitroRTPCComponent))
+    NitroIterate = CGF.IterateReaction(CGF.ActiveOnly, CGF.Rw(RechargeableNitroRTPCComponent))
+    NitroControllerAccess = CGF.AccessReaction(CGF.GameObject, CGF.Rw(RechargeableNitroController))
+    Reactions = CGF.Reactions(NitroActivated, NitroDeactivated, NitroIterate, NitroControllerAccess)
 
-    @onAddedQuery(CGF.GameObject, RechargeableNitroRTPCComponent)
-    def onRechargeableNitroRTPCAdded(self, gameObject, rechargeableNitroRTPCComponent):
-        rechargeableNitroRTPCComponent.rechargeableNitroControllerGO = getParentGameObjectByComponent(gameObject, RechargeableNitroController)
-        self.__setRechargeableNitroRTPC(rechargeableNitroRTPCComponent)
+    def commonUpdate(self):
+        nitroAccess = self.reaction(self.NitroControllerAccess)
+        for nitro in self.reaction(self.NitroDeactivated):
+            nitro.rechargeableNitroControllerGO = None
+            self.__setRechargeableNitroRTPC(nitro)
 
-    @onProcessQuery(RechargeableNitroRTPCComponent, period=0.2)
-    def onRechargeableNitroProgressRTPCProcess(self, rechargeableNitroRTPCComponent):
-        self.__setRechargeableNitroRTPC(rechargeableNitroRTPCComponent)
+        for go, nitro in self.reaction(self.NitroActivated):
+            nitro.rechargeableNitroControllerGO, _ = CGF.findParentWithReaction(go, nitroAccess)
+            self.__setRechargeableNitroRTPC(nitro)
 
-    @onRemovedQuery(RechargeableNitroRTPCComponent)
-    def onRechargeableNitroRTPCRemoved(self, rechargeableNitroRTPCComponent):
-        rechargeableNitroRTPCComponent.rechargeableNitroControllerGO = None
-        self.__setRechargeableNitroRTPC(rechargeableNitroRTPCComponent)
         return
 
-    @classmethod
-    def __setRechargeableNitroRTPC(cls, rechargeableNitroRTPCComponent):
+    def periodUpdate(self):
+        for nitro in self.reaction(self.NitroIterate):
+            self.__setRechargeableNitroRTPC(nitro)
+
+    def __setRechargeableNitroRTPC(self, rechargeableNitroRTPCComponent):
         progress = 0.0
         if rechargeableNitroRTPCComponent.rechargeableNitroControllerGO is not None:
-            progress = cls.__getRechargeableNitroActiveProgress(rechargeableNitroRTPCComponent.rechargeableNitroControllerGO)
+            progress = self.__getRechargeableNitroActiveProgress(rechargeableNitroRTPCComponent.rechargeableNitroControllerGO)
         if rechargeableNitroRTPCComponent.progress != progress:
             SoundGroups.g_instance.setGlobalRTPC(rechargeableNitroRTPCComponent.RTPCName, progress)
             rechargeableNitroRTPCComponent.progress = progress
         return
 
-    @classmethod
-    def __getRechargeableNitroActiveProgress(cls, rechargeableNitroControllerGO):
-        rechargeableNitroController = rechargeableNitroControllerGO.findComponentByType(RechargeableNitroController)
+    def __getRechargeableNitroActiveProgress(self, rechargeableNitroControllerGO):
+        nitroAccess = self.reaction(self.NitroControllerAccess)
+        _, rechargeableNitroController = nitroAccess.find(rechargeableNitroControllerGO)
         if not rechargeableNitroController:
             return 0.0
         return 100 * (1 - rechargeableNitroController.getMechanicState().progress)

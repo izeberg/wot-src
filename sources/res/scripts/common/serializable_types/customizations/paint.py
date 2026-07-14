@@ -1,14 +1,15 @@
+from __future__ import absolute_import
 from collections import OrderedDict
 from typing import Dict
 from items.components.c11n_constants import ApplyArea
+from py2to3.patched_future import with_metaclass
 from serialization.field import intField, applyAreaEnumField
 from serialization.serializable_component import SerializableComponent
 from wrapped_reflection_framework import ReflectionMetaclass
 from ..types import C11nSerializationTypes
 __all__ = ('PaintComponent', )
 
-class PaintComponent(SerializableComponent):
-    __metaclass__ = ReflectionMetaclass
+class PaintComponent(with_metaclass(ReflectionMetaclass, SerializableComponent)):
     customType = C11nSerializationTypes.PAINT
     fields = OrderedDict((
      (

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.shared.event_bus import EventBus, EVENT_BUS_SCOPE, EventPriority
 __all__ = ('g_eventBus', 'getSharedServices', 'EVENT_BUS_SCOPE', 'EventPriority')
 g_eventBus = EventBus()

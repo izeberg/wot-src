@@ -1,8 +1,10 @@
+from __future__ import absolute_import
 import collections, logging, sys, typing
 from future.utils import iteritems
 from constants import BonusTypes
 from gui.shared.gui_items import KPI
 from gui.shared.items_parameters import params_cache
+from math_common import decimal_round, round_py2_style
 from shared_utils import first
 from gui.shared.utils import WHEELED_SWITCH_ON_TIME, WHEELED_SWITCH_OFF_TIME, DUAL_GUN_CHARGE_TIME, SHOT_DISPERSION_ANGLE, TURBOSHAFT_INVISIBILITY_STILL_FACTOR, TURBOSHAFT_INVISIBILITY_MOVING_FACTOR, DISPERSION_RADIUS, CHASSIS_REPAIR_TIME, TURBOSHAFT_SWITCH_TIME, DUAL_GUN_RATE_TIME, DUAL_ACCURACY_COOLING_DELAY, BURST_FIRE_RATE, BURST_TIME_INTERVAL, AUTO_SHOOT_CLIP_FIRE_RATE, TWIN_GUN_RELOAD_ONE_GUN_TIME, TWIN_GUN_RELOAD_TWO_GUN_TIME, SHELL_LOADING_TIME_PROP_NAME
 if typing.TYPE_CHECKING:
@@ -123,7 +125,7 @@ class PARAM_STATE(object):
 
 
 DEFAULT_AVG_VALUE = (
- sys.maxint, -1)
+ sys.maxsize, -1)
 
 def getParamExtendedData(paramName, value, otherValue, penalties=None, customQualityParams=None, isSituational=False, hasNormalization=False, highlightedBonuses=None):
     possibleBonuses, bonuses, inactive, penalties = penalties if penalties is not None else ([], [], [], [])
@@ -142,11 +144,11 @@ def getParamExtendedData(paramName, value, otherValue, penalties=None, customQua
         if isinstance(value, (tuple, list)):
             roundedValues = []
             for val in value:
-                roundedValues.append(float(round(val)))
+                roundedValues.append(float(round_py2_style(val)))
 
             value = roundedValues
         else:
-            value = float(round(value))
+            value = float(round_py2_style(value))
     return _ParameterInfo(paramName, value, state, possibleBonuses, inactive, bonuses, penalties, isSituational, mustHighlight)
 
 
@@ -565,12 +567,12 @@ def _getParamStateInfo(paramName, val1, val2, customReverted=False, isSituationa
         hasNoParam = False
         if isinstance(val1, float) and isinstance(val2, float):
             diff = val1 - val2
-            diff = round(diff, 4)
+            diff = decimal_round(diff, 4)
         else:
             if isinstance(val1, float):
-                val1 = round(val1, 4)
+                val1 = decimal_round(val1, 4)
             if isinstance(val2, float):
-                val2 = round(val2, 4)
+                val2 = decimal_round(val2, 4)
             diff = val1 - val2
     if diff != 0 and isSituational:
         return (PARAM_STATE.SITUATIONAL, diff)

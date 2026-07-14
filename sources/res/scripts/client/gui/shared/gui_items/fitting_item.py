@@ -1,6 +1,10 @@
+from __future__ import absolute_import
+import typing
 from collections import namedtuple
+from future.utils import iteritems, itervalues, viewitems
 from itertools import chain
-import typing, BigWorld
+from past.builtins import cmp
+import BigWorld
 from debug_utils import LOG_CURRENT_EXCEPTION
 from gui import GUI_SETTINGS
 from gui.Scaleform.genConsts.SLOT_HIGHLIGHT_TYPES import SLOT_HIGHLIGHT_TYPES
@@ -85,7 +89,7 @@ class RentalInfoProvider(_RentalInfoProvider):
         return
 
     def getActiveSeasonRent(self):
-        for seasonType, rentTypes in self.seasonRent.iteritems():
+        for seasonType, rentTypes in viewitems(self.seasonRent):
             seasonRents = [ item for item in rentTypes if item[1] == SeasonRentDuration.ENTIRE_SEASON ]
             if seasonRents:
                 for rentType in seasonRents:
@@ -152,7 +156,7 @@ class RentalInfoProvider(_RentalInfoProvider):
 
     def _getLastFutureCycleRentInfo(self):
         now = time_utils.getCurrentLocalServerTimestamp()
-        for seasonType, rentTypes in self.seasonRent.iteritems():
+        for seasonType, rentTypes in iteritems(self.seasonRent):
             currentSeason = self.seasonsController.getCurrentSeason(seasonType)
             if currentSeason:
                 currentCycleID = currentSeason.getCycleID() or currentSeason.getLastActiveCycleID(now)
@@ -224,6 +228,22 @@ class FittingItem(GUIItem):
             self._isInitiallyUnlocked = False
             self._fullyConfigured = False
         return
+
+    def __eq__(self, other):
+        if other is None:
+            return False
+        else:
+            return self.intCD == other.intCD
+
+    def __ne__(self, other):
+        return not self == other
+
+    def __hash__(self):
+        return self.intCD
+
+    def __repr__(self):
+        return '%s<intCD:%d, type:%s, nation:%d>' % (
+         self.__class__.__name__, self.intCD, self.itemTypeName, self.nationID)
 
     def _getAltPrice(self, buyPrice, proxy):
         return MONEY_UNDEFINED
@@ -442,7 +462,7 @@ class FittingItem(GUIItem):
         optDevicesLayouts = None
         if vehicle.optDevices.setupLayouts.capacity > 1:
             optDevicesLayouts = []
-            for setup in vehicle.optDevices.setupLayouts.setups.itervalues():
+            for setup in itervalues(vehicle.optDevices.setupLayouts.setups):
                 optDevicesLayouts.append(setup.getIntCDs())
 
         return vehicle.descriptor.mayInstallComponent(self.intCD, optDevicesLayouts=optDevicesLayouts)
@@ -515,7 +535,7 @@ class FittingItem(GUIItem):
     def getConflictedEquipments(self, vehicle):
         return ()
 
-    def getInstalledVehicles(self, vehs):
+    def getInstalledVehicles(self, vehicles):
         return set()
 
     def isRestorePossible(self):
@@ -569,7 +589,7 @@ class FittingItem(GUIItem):
     def _getShortInfoKey(self):
         return '#menu:descriptions/' + self.itemTypeName
 
-    def __cmp__(self, other):
+    def _compare(self, other):
         if other is None:
             return 1
         else:
@@ -590,13 +610,3 @@ class FittingItem(GUIItem):
                     return res
 
             return cmp(self.userName, other.userName)
-
-    def __eq__(self, other):
-        if other is None:
-            return False
-        else:
-            return self.intCD == other.intCD
-
-    def __repr__(self):
-        return '%s<intCD:%d, type:%s, nation:%d>' % (
-         self.__class__.__name__, self.intCD, self.itemTypeName, self.nationID)

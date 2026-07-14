@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/german/G200_Chi_Go/normal/lod0/Hull</nodefullVisual>
+	<visibilityBox>
+		<min>-1.724243 -0.785562 -3.776547</min>
+		<max>1.726184 0.789285 3.475058</max>
+	</visibilityBox>
+	<parent>vehicles/german/G200_Chi_Go/normal/lod1/Hull</parent>
+	<extent>32</extent>
+</root>

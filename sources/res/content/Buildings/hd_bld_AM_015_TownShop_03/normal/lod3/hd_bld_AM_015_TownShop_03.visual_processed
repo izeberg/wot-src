@@ -441,18 +441,6 @@
 						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_AM_city_02_GMM.dds</Texture>
 					</property>
 					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
 						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>
@@ -473,18 +461,6 @@
 					<property>
 						dirtMap
 						<Texture>content/Buildings/00_Tiles/Dirt_PChurch_02_DM.dds</Texture>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
 					</property>
 					<property>
 						g_enableTerrainBlending
@@ -565,18 +541,6 @@
 						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_AM_city_01_GMM.dds</Texture>
 					</property>
 					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
 						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>
@@ -597,18 +561,6 @@
 					<property>
 						dirtMap
 						<Texture>content/Buildings/00_Tiles/Dirt_fountain_01_DM.dds</Texture>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
 					</property>
 					<property>
 						g_enableTerrainBlending
@@ -689,18 +641,6 @@
 						<Texture>content/Buildings/hd_bld_AM_015_TownShop_03/AM_houses_01_13_blend.png</Texture>
 					</property>
 					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
 						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>
@@ -779,18 +719,6 @@
 						<Texture>content/Buildings/00_Tiles/Dirt_PChurch_01_DM.dds</Texture>
 					</property>
 					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
 						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>
@@ -859,18 +787,6 @@
 					<property>
 						dirtMap
 						<Texture>content/Buildings/00_Tiles/Dirt_PChurch_02_DM.dds</Texture>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
 					</property>
 					<property>
 						g_enableTerrainBlending
@@ -955,18 +871,6 @@
 						<Texture>content/Buildings/00_Tiles/Dirt_PChurch_02_DM.dds</Texture>
 					</property>
 					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
 						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>
@@ -1035,18 +939,6 @@
 					<property>
 						blendMask
 						<Texture>content/Buildings/hd_bld_AM_015_TownShop_03/AM_houses_01_13_blend.png</Texture>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
 					</property>
 					<property>
 						g_enableTerrainBlending
@@ -1127,18 +1019,6 @@
 						<Texture>content/Buildings/00_Tiles/Dirt_PChurch_01_DM.dds</Texture>
 					</property>
 					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
 						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>
@@ -1207,18 +1087,6 @@
 					<property>
 						dirtMap
 						<Texture>content/Buildings/00_Tiles/Dirt_PChurch_02_DM.dds</Texture>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
 					</property>
 					<property>
 						g_enableTerrainBlending
@@ -1303,18 +1171,6 @@
 						<Texture>content/Buildings/00_Tiles/Dirt_PChurch_02_DM.dds</Texture>
 					</property>
 					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
 						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>
@@ -1393,18 +1249,6 @@
 						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_AM_city_02_GMM.dds</Texture>
 					</property>
 					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
 						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>
@@ -1425,18 +1269,6 @@
 					<property>
 						dirtMap
 						<Texture>content/Buildings/00_Tiles/Dirt_PChurch_02_DM.dds</Texture>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
 					</property>
 					<property>
 						g_enableTerrainBlending
@@ -1517,18 +1349,6 @@
 						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_AM_city_01_GMM.dds</Texture>
 					</property>
 					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
 						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>
@@ -1549,18 +1369,6 @@
 					<property>
 						dirtMap
 						<Texture>content/Buildings/00_Tiles/Dirt_fountain_01_DM.dds</Texture>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
 					</property>
 					<property>
 						g_enableTerrainBlending
@@ -1641,18 +1449,6 @@
 						<Texture>content/Buildings/hd_bld_AM_015_TownShop_03/AM_houses_01_13_blend.png</Texture>
 					</property>
 					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
 						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>
@@ -1729,18 +1525,6 @@
 					<property>
 						dirtMap
 						<Texture>content/Buildings/00_Tiles/Dirt_PChurch_02_DM.dds</Texture>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
 					</property>
 					<property>
 						g_enableTerrainBlending
@@ -1825,18 +1609,6 @@
 						<Texture>content/Buildings/00_Tiles/Dirt_PChurch_02_DM.dds</Texture>
 					</property>
 					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
 						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>
@@ -1911,18 +1683,6 @@
 						<Texture>content/Buildings/00_Tiles/Dirt_PChurch_02_DM.dds</Texture>
 					</property>
 					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
 						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>
@@ -1995,18 +1755,6 @@
 					<property>
 						dirtMap
 						<Texture>content/Buildings/00_Tiles/Dirt_PChurch_02_DM.dds</Texture>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
 					</property>
 					<property>
 						g_enableTerrainBlending
@@ -2091,18 +1839,6 @@
 						<Texture>content/Buildings/00_Tiles/Dirt_PChurch_01_DM.dds</Texture>
 					</property>
 					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
 						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>
@@ -2167,18 +1903,6 @@
 					<property>
 						blendMask
 						<Texture>content/Buildings/hd_bld_AM_015_TownShop_03/AM_houses_01_13_blend.png</Texture>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
 					</property>
 					<property>
 						g_enableTerrainBlending
@@ -2257,18 +1981,6 @@
 					<property>
 						dirtMap
 						<Texture>content/Buildings/00_Tiles/Dirt_fountain_01_DM.dds</Texture>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
 					</property>
 					<property>
 						g_enableTerrainBlending
@@ -2357,18 +2069,6 @@
 						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_AM_city_02_GMM.dds</Texture>
 					</property>
 					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
 						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>
@@ -2395,18 +2095,6 @@
 						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_AM_city_01_GMM.dds</Texture>
 					</property>
 					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
 						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>
@@ -2427,18 +2115,6 @@
 					<property>
 						dirtMap
 						<Texture>content/Buildings/00_Tiles/Dirt_PChurch_02_DM.dds</Texture>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
 					</property>
 					<property>
 						g_enableTerrainBlending
@@ -2515,18 +2191,6 @@
 						<Texture>content/Buildings/00_Tiles/Dirt_PChurch_02_DM.dds</Texture>
 					</property>
 					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
 						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>
@@ -2599,18 +2263,6 @@
 					<property>
 						dirtMap
 						<Texture>content/Buildings/00_Tiles/Dirt_PChurch_02_DM.dds</Texture>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
 					</property>
 					<property>
 						g_enableTerrainBlending
@@ -2695,18 +2347,6 @@
 						<Texture>content/Buildings/00_Tiles/Dirt_PChurch_01_DM.dds</Texture>
 					</property>
 					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
 						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>
@@ -2771,18 +2411,6 @@
 					<property>
 						blendMask
 						<Texture>content/Buildings/hd_bld_AM_015_TownShop_03/AM_houses_01_13_blend.png</Texture>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
 					</property>
 					<property>
 						g_enableTerrainBlending
@@ -2861,18 +2489,6 @@
 					<property>
 						dirtMap
 						<Texture>content/Buildings/00_Tiles/Dirt_fountain_01_DM.dds</Texture>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
 					</property>
 					<property>
 						g_enableTerrainBlending
@@ -2961,18 +2577,6 @@
 						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_AM_city_01_GMM.dds</Texture>
 					</property>
 					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
 						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>
@@ -2993,18 +2597,6 @@
 					<property>
 						dirtMap
 						<Texture>content/Buildings/00_Tiles/Dirt_PChurch_02_DM.dds</Texture>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
 					</property>
 					<property>
 						g_enableTerrainBlending
@@ -3081,18 +2673,6 @@
 						<Texture>content/Buildings/00_Tiles/Dirt_PChurch_02_DM.dds</Texture>
 					</property>
 					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
 						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>
@@ -3165,18 +2745,6 @@
 					<property>
 						dirtMap
 						<Texture>content/Buildings/00_Tiles/Dirt_PChurch_02_DM.dds</Texture>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
 					</property>
 					<property>
 						g_enableTerrainBlending
@@ -3261,18 +2829,6 @@
 						<Texture>content/Buildings/00_Tiles/Dirt_PChurch_01_DM.dds</Texture>
 					</property>
 					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
 						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>
@@ -3337,18 +2893,6 @@
 					<property>
 						blendMask
 						<Texture>content/Buildings/hd_bld_AM_015_TownShop_03/AM_houses_01_13_blend.png</Texture>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
 					</property>
 					<property>
 						g_enableTerrainBlending
@@ -3427,18 +2971,6 @@
 					<property>
 						dirtMap
 						<Texture>content/Buildings/00_Tiles/Dirt_fountain_01_DM.dds</Texture>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
 					</property>
 					<property>
 						g_enableTerrainBlending
@@ -3527,18 +3059,6 @@
 						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_AM_city_01_GMM.dds</Texture>
 					</property>
 					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
 						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>
@@ -3559,18 +3079,6 @@
 					<property>
 						dirtMap
 						<Texture>content/Buildings/00_Tiles/Dirt_PChurch_02_DM.dds</Texture>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
 					</property>
 					<property>
 						g_enableTerrainBlending
@@ -3651,18 +3159,6 @@
 						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_AM_city_02_GMM.dds</Texture>
 					</property>
 					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
 						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>
@@ -3683,18 +3179,6 @@
 					<property>
 						dirtMap
 						<Texture>content/Buildings/00_Tiles/Dirt_PChurch_02_DM.dds</Texture>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
 					</property>
 					<property>
 						g_enableTerrainBlending
@@ -3775,18 +3259,6 @@
 						<Texture>content/Buildings/00_Tiles/Dirt_PChurch_02_DM.dds</Texture>
 					</property>
 					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
 						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>
@@ -3858,7 +3330,7 @@
 				<material>
 					<identifier>s_ramp_0</identifier>
 					<collisionFlags>131</collisionFlags>
-					<materialKind>111</materialKind>
+					<materialKind>0</materialKind>
 				</material>
 				<groupOrigin>0.809704 -0.078638 -0.009918</groupOrigin>
 			</primitiveGroup>

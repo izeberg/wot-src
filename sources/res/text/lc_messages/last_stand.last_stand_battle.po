@@ -98,6 +98,30 @@ msgstr ""
 msgid "battleHint/destroyEnemies"
 msgstr "Enemies to destroy: {num}"
 
+msgid "battleHint/destroyObelisk/subtitle/bonus"
+msgstr "data, %(buffBonus)s"
+
+msgid "battleHint/destroyObelisk/subtitle/bonus/LS_BOT_OBELISK_HP_REGEN"
+msgstr "Vehicles repaired"
+
+msgid "battleHint/destroyObelisk/subtitle/bonus/LS_BOT_OBELISK_SHIELD"
+msgstr "Shield granted"
+
+msgid "battleHint/destroyObelisk/subtitle/bonus/LS_BOT_OBELISK_STUN"
+msgstr "Enemies stunned"
+
+msgid "battleHint/destroyObelisk/title"
+msgstr "%(name)s Obelisk destroyed!"
+
+msgid "battleHint/destroyObelisk/title/name/LS_BOT_OBELISK_HP_REGEN"
+msgstr "Regen"
+
+msgid "battleHint/destroyObelisk/title/name/LS_BOT_OBELISK_SHIELD"
+msgstr "Barrier"
+
+msgid "battleHint/destroyObelisk/title/name/LS_BOT_OBELISK_STUN"
+msgstr "Glitch"
+
 msgid "battleHint/enemiesFromAbove"
 msgstr "Spawn spots detected! Enemy incoming!"
 
@@ -128,7 +152,7 @@ msgstr ""
 "before it reaches ATLAS!"
 
 msgid "battleHint/trapper"
-msgstr "Destroy the Trapper to&nbsp;stop Energy Strikes."
+msgstr "Destroy the Trapper to&nbsp;stop destruction zones appearing."
 
 msgid "battleHint/turret"
 msgstr "Mosquitoes have awakened!"
@@ -211,21 +235,21 @@ msgid "eventStats/difficulty"
 msgstr "Difficulty: %(difficulty)s"
 
 msgid "eventStats/eventName"
-msgstr "Last Stand: Invasion"
+msgstr "Last Stand: Terra Nord"
 
 msgid "eventStats/globalTask"
-msgstr "Objective: Survive all enemy attack waves"
+msgstr "Objective: Destroy all enemy waves"
 
 msgid "eventStats/mission"
-msgstr "Survive all enemy attack waves"
+msgstr "Destroy all enemy waves"
 
 msgid "eventStats/tableCaption"
 msgstr "Squad Members"
 
 msgid "help/description_0"
 msgstr ""
-"Survive all enemy attack waves to win.\n"
-"The enemy grows stronger with each successive attack."
+"Destroy all enemy waves to win.\n"
+"The enemy grows stronger with each successive wave."
 
 msgid "help/description_1"
 msgstr ""
@@ -243,7 +267,7 @@ msgstr ""
 "ATLAS, it will destroy it and the battle will be lost."
 
 msgid "help/title"
-msgstr "LAST STAND: INVASION"
+msgstr "LAST STAND: TERRA NORD"
 
 msgid "help/title_0"
 msgstr "ENEMY ATTACK WAVES"
@@ -268,8 +292,8 @@ msgstr "No use!"
 
 msgid "loading/description_0"
 msgstr ""
-"Survive all enemy attack waves to win.\n"
-"The enemy grows stronger with each successive attack."
+"Destroy all enemy waves to win.\n"
+"The enemy grows stronger with each successive wave."
 
 msgid "loading/description_1"
 msgstr ""
@@ -379,16 +403,16 @@ msgid "postmortem_messages/DEATH_FROM_LS_SHOT"
 msgstr "Vehicle destroyed by an enemy shot"
 
 msgid "prebattle/description/message"
-msgstr "Objective: Survive all enemy attack waves"
+msgstr "Objective: Destroy all enemy waves"
 
 msgid "prebattle/description/title"
 msgstr "Last Stand: %(difficulty)s Difficulty"
 
 msgid "prebattle/difficulty/107"
-msgstr "Basic"
+msgstr "Regular"
 
 msgid "prebattle/difficulty/108"
-msgstr "Intense"
+msgstr "Advanced"
 
 msgid "prebattle/difficulty/109"
 msgstr "Brutal"
@@ -411,6 +435,12 @@ msgstr "Driving to the zone!"
 msgid "radialMenu/move_to_magnus"
 msgstr "Defending"
 
+msgid "radialMenu/obelisk"
+msgstr "I'll take the Obelisk!"
+
+msgid "radialMenu/obeliskHelp"
+msgstr "Destroy the Obelisk!"
+
 msgid "statusNotificationTimers/obeliskShield"
 msgstr "Energy Shield"
 
@@ -424,3 +454,12 @@ msgstr ""
 
 msgid "teamList/teammates"
 msgstr "Allies"
+
+msgid "voice_chat_panel/hint/chat/off"
+msgstr "Disable voice chat"
+
+msgid "voice_chat_panel/hint/chat/on"
+msgstr "Enable voice chat"
+
+msgid "voice_chat_panel/hint/talk"
+msgstr "Press to talk"

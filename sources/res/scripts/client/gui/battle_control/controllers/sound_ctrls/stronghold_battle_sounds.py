@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import random, typing, BigWorld, SoundGroups, WWISE
 from constants import EQUIPMENT_STAGES
 from gui.battle_control.battle_constants import VEHICLE_VIEW_STATE
@@ -194,7 +195,8 @@ class _AOEZoneSoundPlayer(VehicleStateSoundPlayer, CallbackDelayer):
             if isinstance(equipment, artefacts.AttackArtilleryFortEquipment):
                 if longestZone is None:
                     longestZone = zone
-                elif longestZone['endTime'] < zone['endTime']:
+                    continue
+                if longestZone['endTime'] < zone['endTime']:
                     longestZone = zone
 
         return longestZone

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, BigWorld, Avatar
 from PlayerEvents import g_playerEvents
 from helpers import dependency, isPlayerAvatar

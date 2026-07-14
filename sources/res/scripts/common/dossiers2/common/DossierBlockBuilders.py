@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from typing import List, Union
 from dossiers2.common.DossierBlocks import *

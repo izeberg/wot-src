@@ -1,4 +1,7 @@
-import logging, operator, BigWorld
+from __future__ import absolute_import
+import logging, operator
+from future.utils import listvalues
+import BigWorld
 from constants import EVENT_TYPE
 from gui import SystemMessages
 from gui.SystemMessages import SM_TYPE
@@ -54,11 +57,11 @@ class PMQuestSelect(_PMRequest):
     eventsCache = dependency.descriptor(IEventsCache)
 
     def __init__(self, branch, personalMission):
-        currentSelectedQuests = self.eventsCache.getPersonalMissions().getSelectedQuestsForBranch(branch).values()
+        currentSelectedQuests = listvalues(self.eventsCache.getPersonalMissions().getSelectedQuestsForBranch(branch))
         operationID = personalMission.getOperationID()
         operation = self.eventsCache.getPersonalMissions().getOperationsForBranch(branch).get(operationID)
         if not operation.isStarted() and not operation.getCompletedQuests():
-            quests, oldQuest = self._removeFromSameChain(currentSelectedQuests, operation.getInitialQuests().values())
+            quests, oldQuest = self._removeFromSameChain(currentSelectedQuests, listvalues(operation.getInitialQuests()))
         else:
             quests, oldQuest = self._removeFromSameChain(currentSelectedQuests, [personalMission])
         super(PMQuestSelect, self).__init__(quests, branch)

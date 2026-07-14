@@ -1,6 +1,8 @@
-from debug_utils import LOG_WARNING
-from client_arena_component_system import ClientArenaComponentSystem
+from __future__ import absolute_import
+from future.utils import viewitems
+from arena_component_system.client_arena_component_system import ClientArenaComponentSystem
 from arena_components.player_type_specific_components import getDefaultComponents
+from debug_utils import LOG_WARNING
 
 def createComponentSystem(arena, bonusType, arenaType):
     componentSystem = ClientArenaComponentSystem(arena, bonusType, arenaType)
@@ -10,7 +12,6 @@ def createComponentSystem(arena, bonusType, arenaType):
     else:
         ClientArenaComponentAssembler._assembleBonusCapsComponents(componentSystem)
     ClientArenaComponentAssembler._addArenaComponents(componentSystem, getDefaultComponents(bonusType))
-    componentSystem.activate()
     return componentSystem
 
 
@@ -39,13 +40,13 @@ class ClientArenaComponentAssembler(object):
     def _assembleBonusCapsComponents(componentSystem):
         from arena_component_system.assembler_helper import ARENA_BONUS_TYPE_CAP_COMPONENTS
         arena = componentSystem.arena()
-        for name, (bonusFlag, componentClass) in ARENA_BONUS_TYPE_CAP_COMPONENTS.iteritems():
+        for name, (bonusFlag, componentClass) in viewitems(ARENA_BONUS_TYPE_CAP_COMPONENTS):
             if arena.hasBonusCap(bonusFlag):
                 ClientArenaComponentAssembler._addArenaComponent(componentSystem, name, componentClass)
 
     @staticmethod
     def _addArenaComponents(componentSystem, componentsList):
-        for name, componentClass in componentsList.iteritems():
+        for name, componentClass in viewitems(componentsList):
             ClientArenaComponentAssembler._addArenaComponent(componentSystem, name, componentClass)
 
     @staticmethod

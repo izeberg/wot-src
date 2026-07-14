@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, typing, BigWorld, Event
 from WebBrowser import WebBrowser
 from adisp import adisp_async, adisp_process
@@ -59,7 +60,7 @@ class BrowserController(IBrowserController):
         self.__stop()
         BigWorld.destroyBrowser()
 
-    def onLobbyInited(self, ctx):
+    def onLobbyInited(self, event):
         BigWorld.createBrowser()
 
     def addFilterHandler(self, handler):
@@ -69,7 +70,7 @@ class BrowserController(IBrowserController):
         self.__filters.discard(handler)
 
     def nextBrowserID(self):
-        return self.__browserIDGenerator.next()
+        return next(self.__browserIDGenerator)
 
     @adisp_async
     @adisp_process
@@ -84,10 +85,10 @@ class BrowserController(IBrowserController):
         size = browserSize or BROWSER.SIZE
         webBrowserID = browserID
         if browserID is None:
-            browserID = self.__browserIDGenerator.next()
+            browserID = next(self.__browserIDGenerator)
             webBrowserID = browserID
         elif not isinstance(browserID, int):
-            webBrowserID = self.__browserIDGenerator.next()
+            webBrowserID = next(self.__browserIDGenerator)
         ctx = {'url': url, 
            'title': title, 
            'showActionBtn': showActionBtn, 

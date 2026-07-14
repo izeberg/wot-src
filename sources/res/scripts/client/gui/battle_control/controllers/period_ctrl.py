@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import weakref, BattleReplay, BigWorld
 from constants import ARENA_PERIOD as _PERIOD
 from gui.battle_control import event_dispatcher
@@ -182,8 +183,7 @@ class ArenaPeriodController(IArenaPeriodController, ViewComponentsController):
             viewCmp.setTotalTime(totalTime)
 
         minutes, seconds = divmod(int(totalTime), 60)
-        for idx in range(len(self._timeNotifications)):
-            m, s, f, state = self._timeNotifications[idx]
+        for idx, (m, s, f, state) in enumerate(self._timeNotifications):
             condValid = totalTime <= m * 60 + s
             if condValid and not state:
                 f(minutes, seconds)

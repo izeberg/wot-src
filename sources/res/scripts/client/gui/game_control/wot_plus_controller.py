@@ -1,13 +1,10 @@
-import logging, typing
-from enum import Enum
+from __future__ import absolute_import
+import logging
 from time import time
-import BigWorld
+import typing
+from enum import Enum
+import AccountCommands, BigWorld, constants
 from BWUtil import AsyncReturn
-from helpers.CallbackDelayer import CallbackDelayer
-from helpers.time_utils import ONE_MINUTE, ONE_DAY
-from shared_utils import findFirst
-from shared_utils.account_helpers.diff_utils import synchronizeDicts
-import AccountCommands, constants
 from CurrentVehicle import g_currentVehicle
 from Event import Event
 from PlayerEvents import g_playerEvents
@@ -15,7 +12,7 @@ from constants import RENEWABLE_SUBSCRIPTION_ENTITLEMENTS
 from debug_utils import LOG_ERROR_DEV
 from gui import SystemMessages
 from gui.Scaleform.daapi.view.lobby.missions.awards_formatters import CurtailingAwardsComposer
-from gui.game_control.wot_plus.service_record_customization import getValidatedServiceRecordRibbon, getValidatedServiceRecordBackground
+from gui.game_control.wot_plus.service_record_customization.service_record_customization import ServiceRecordAssetManager
 from gui.game_control.wot_plus.wot_plus_assistant import WotPlusAssistant
 from gui.impl import backport
 from gui.impl.gen import R
@@ -28,11 +25,15 @@ from gui.server_events.bonuses import SimpleBonus
 from gui.shared.gui_items.artefacts import OptionalDevice
 from gui.shared.utils.requesters.ItemsRequester import REQ_CRITERIA
 from helpers import dependency
+from helpers.CallbackDelayer import CallbackDelayer
+from helpers.time_utils import ONE_MINUTE, ONE_DAY
 from messenger.m_constants import SCH_CLIENT_MSG_TYPE
 from piggy_bank_common.settings_constants import PIGGY_BANK_PDATA_KEY
 from renewable_subscription_common.schema import renewableSubscriptionsConfigSchema
 from renewable_subscription_common.settings_constants import IDLE_CREW_XP_PDATA_KEY, SUBSCRIPTION_DURATION_LENGTH, IDLE_CREW_VEH_INV_ID, RS_EXPIRATION_TIME, WotPlusState, RS_TIER, PRO_BOOST_PDATA_KEY, WotPlusTier, RS_SR_BACKGROUND, RS_SR_RIBBON, PRO_BOOST_ACTIVATION_TIME, PRO_BOOSTED_VEHICLE
 from renewable_subscription_common.settings_helpers import SubscriptionSettingsStorage
+from shared_utils import findFirst
+from shared_utils.account_helpers.diff_utils import synchronizeDicts
 from skeletons.gui.game_control import IWotPlusController, ISteamCompletionController
 from skeletons.gui.platform.product_fetch_controller import IUserSubscriptionsFetchController
 from skeletons.gui.shared import IItemsCache
@@ -111,6 +112,7 @@ class WotPlusController(IWotPlusController, _ProBoostMixin, CallbackDelayer):
         self._billingPeriod = None
         self._hasSteamSubscription = False
         self._assistant = WotPlusAssistant()
+        self._srcAssetManager = ServiceRecordAssetManager()
         self.onDataChanged = Event()
         self.onAttendanceUpdated = Event()
         self.onPendingRentChanged = Event()
@@ -128,11 +130,18 @@ class WotPlusController(IWotPlusController, _ProBoostMixin, CallbackDelayer):
         g_playerEvents.onClientUpdated -= self._onClientUpdate
         g_playerEvents.onRenewableSubscriptionStatusChanged -= self._onRenewableSubscriptionStatusChanged
         self.stopProBoostTimer()
+        if self._srcAssetManager is not None:
+            self._srcAssetManager.clear()
+            self._srcAssetManager = None
+        return
 
     def onLobbyStarted(self, _):
         g_playerEvents.onConfigModelUpdated += self._onConfigModelUpdated
         self.processSwitchNotifications()
         self._invalidateProBoost()
+        if self._srcAssetManager is not None:
+            self._srcAssetManager.init()
+        return
 
     def onAccountBecomePlayer(self):
         self._account = BigWorld.player()
@@ -292,27 +301,26 @@ class WotPlusController(IWotPlusController, _ProBoostMixin, CallbackDelayer):
         return (
          False, False)
 
-    def getCrewAssistOrderSets(self, vehicle, tankmanRole):
+    def getCrewAssistOrderSets(self, vehIntCD, tankmanRole):
         if self.hasSubscription():
-            return self._assistant.crewAssistant.getOrderSets(vehicle, tankmanRole)
+            return self._assistant.crewAssistant.getOrderSets(vehIntCD, tankmanRole)
         return {}
 
     def validateCrewAssistOrderSets(self, orderSets):
         return self._assistant.crewAssistant.validateOrderSets(orderSets)
 
-    def getServiceRecordBackground(self):
+    def getServiceRecordBackgroundID(self):
         if self.getSettingsStorage().isServiceRecordCustomizationAvailable():
-            index = self._cache.get(RS_SR_BACKGROUND, 0)
-        else:
-            index = 0
-        return getValidatedServiceRecordBackground(index)
+            return self._cache.get(RS_SR_BACKGROUND, 0)
+        return 0
 
-    def getServiceRecordRibbon(self):
+    def getServiceRecordRibbonID(self):
         if self.getSettingsStorage().isServiceRecordCustomizationAvailable():
-            index = self._cache.get(RS_SR_RIBBON, 0)
-        else:
-            index = 0
-        return getValidatedServiceRecordRibbon(index)
+            return self._cache.get(RS_SR_RIBBON, 0)
+        return 0
+
+    def getSRCAssetManager(self):
+        return self._srcAssetManager
 
     @ifAccount
     def toggleWotPlusDev(self, tier=WotPlusTier.CORE):

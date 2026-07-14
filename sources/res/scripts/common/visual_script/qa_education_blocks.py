@@ -1,7 +1,8 @@
+from __future__ import absolute_import, division
 import math
-from block import Block
-from slot_types import SLOT_TYPE
-from qa_blocks import QAMeta
+from visual_script.block import Block
+from visual_script.qa_blocks import QAMeta
+from visual_script.slot_types import SLOT_TYPE
 
 class CheckTriangleLesson1(Block, QAMeta):
 

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld
 from gui.battle_control import avatar_getter
 from gui.battle_control.arena_info.interfaces import IArenaVehiclesController

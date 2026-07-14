@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from dossiers2.common.utils import getDossierVersion
 from dossiers2.custom import updaters
 from dossiers2.custom.builders import *

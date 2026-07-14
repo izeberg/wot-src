@@ -1,4 +1,6 @@
+from __future__ import absolute_import
 import logging, typing
+from future.utils import iteritems, viewvalues
 from adisp import adisp_process
 from gui.shared.event_dispatcher import showOfferGiftsWindow
 from shared_utils import findFirst, first
@@ -33,7 +35,7 @@ class _TeamData(typing.NamedTuple('_TeamData', (
         teamID = params.get('id', 0)
         name = params.get('name', '')
         logoURLs = {}
-        for sizeStr, url in params.get('logo_urls', {}).iteritems():
+        for sizeStr, url in iteritems(params.get('logo_urls', {})):
             logoSize = cls.__getLogoSizeByStr(sizeStr)
             if logoSize:
                 logoURLs[logoSize] = url
@@ -231,7 +233,7 @@ class _IngameTournamentData(typing.NamedTuple('_IngameTournamentData', (
                 leaderboardByPositionData.setdefault(paramsSection.get('position'), []).append(paramsSection)
 
             formattedLeaderboard = []
-            for positionData in leaderboardByPositionData.itervalues():
+            for positionData in viewvalues(leaderboardByPositionData):
                 formattedLeaderboard.append(_LeaderboardData.fromParamsData(positionData))
 
             formattedLeaderboard.sort(key=lambda leaderboardPosition: leaderboardPosition.fromPosition)
@@ -276,7 +278,7 @@ class _IngameTournamentData(typing.NamedTuple('_IngameTournamentData', (
     def getTotalRewardAmount(self):
         if self.prizePool.is_dynamic:
             return self.prizePool.qty
-        return sum([ reward.amount for reward in self.rewards ])
+        return sum(reward.amount for reward in self.rewards)
 
     def getLastPrizePoolUpdate(self):
         return self.prizePool.updated_at

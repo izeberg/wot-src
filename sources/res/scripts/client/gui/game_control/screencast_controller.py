@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld
 from gui.battle_control.arena_info.interfaces import IArenaVehiclesController
 from gui.shared.utils import getPlayerDatabaseID

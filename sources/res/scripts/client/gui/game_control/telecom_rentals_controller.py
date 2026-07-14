@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld
 from gui import SystemMessages
 from gui.ClientUpdateManager import g_clientUpdateManager
@@ -60,5 +61,5 @@ class TelecomRentalsNotificationController(ITelecomRentalsNotificationController
             self.processSwitchNotifications()
 
     def __onTokensUpdate(self, diff):
-        if PARTNERSHIP_BLOCKED_TOKEN_NAME in diff.keys():
+        if PARTNERSHIP_BLOCKED_TOKEN_NAME in diff:
             self.processSwitchNotifications()

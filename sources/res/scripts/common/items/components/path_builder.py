@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import persistent_data_cache_common as pdc
 __all__ = ('makeIndexes', 'makePath')
 _SEPARATOR = '/'

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/italy/It38_Donnola/crash/lod2/Hull</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/italy/It38_Donnola/crash/lod3/Hull</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.396962 -0.678282 -2.815250</min>
+		<max>1.422278 0.648849 2.836394</max>
+	</visibilityBox>
+</root>

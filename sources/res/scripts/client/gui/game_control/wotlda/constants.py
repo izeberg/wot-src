@@ -1,4 +1,6 @@
+from __future__ import absolute_import
 import enum
+from future.utils import listvalues
 
 class SupportedWotldaLoadoutType(enum.Enum):
     EASY_TANK_EQUIP = 'easy_tank_equip'
@@ -13,7 +15,7 @@ class SupportedWTRRange(enum.Enum):
 
     @staticmethod
     def allRanges():
-        return SupportedWTRRange.__members__.values()
+        return listvalues(SupportedWTRRange.__members__)
 
 
 EQUIPMENT_ARCHETYPE_1 = 'equipment_archetype_id_1'

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import enum, logging, typing, ArenaType, BigWorld
 from Event import Event, EventManager
 from client_request_lib.exceptions import ResponseCodes
@@ -90,11 +91,11 @@ class W2GTBattleController(IW2GTBattleController):
     def invalidateVehiclesInfo(self, arenaDP):
         self.__tryInitializeData()
 
-    def invalidateVehicleStatus(self, flags, vInfo, arenaDP):
-        if vInfo.isObserver():
+    def invalidateVehicleStatus(self, flags, vInfoVO, arenaDP):
+        if vInfoVO.isObserver():
             return
-        vehicleID = vInfo.vehicleID
-        if vehicleID == self.__playerVehicleID and not vInfo.isAlive():
+        vehicleID = vInfoVO.vehicleID
+        if vehicleID == self.__playerVehicleID and not vInfoVO.isAlive():
             self.__isPlayerAlive = False
             if self.__plugin:
                 self.__plugin.setDestroyed()

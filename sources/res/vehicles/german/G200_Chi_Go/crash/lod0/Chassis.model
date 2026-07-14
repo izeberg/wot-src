@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/german/G200_Chi_Go/crash/lod0/Chassis</nodefullVisual>
+	<visibilityBox>
+		<min>-1.675616 -0.000005 -3.389026</min>
+		<max>1.675706 1.447687 3.645578</max>
+	</visibilityBox>
+	<parent>vehicles/german/G200_Chi_Go/crash/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+</root>

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging
 from constants import ClansConfig
 from Event import Event

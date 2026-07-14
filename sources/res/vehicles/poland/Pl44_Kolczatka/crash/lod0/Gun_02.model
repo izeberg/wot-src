@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/poland/Pl44_Kolczatka/crash/lod1/Gun_02</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-0.415110 -0.377000 -1.926755</min>
+		<max>0.415109 0.246482 6.760005</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/poland/Pl44_Kolczatka/crash/lod0/Gun_02</nodefullVisual>
+</root>

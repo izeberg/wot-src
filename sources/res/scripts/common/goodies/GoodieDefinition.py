@@ -1,7 +1,9 @@
+from __future__ import absolute_import
 import time
 from typing import TYPE_CHECKING
-from Goodie import Goodie
-from goodie_constants import GOODIE_VARIETY, GOODIE_STATE
+from future.utils import viewvalues
+from goodies.Goodie import Goodie
+from goodies.goodie_constants import GOODIE_VARIETY, GOODIE_STATE
 from soft_exception import SoftException
 if TYPE_CHECKING:
     from typing import Optional, Dict
@@ -74,13 +76,11 @@ class GoodieDefinition(object):
                 if self.variety in GOODIE_VARIETY.DISCOUNT_LIKE:
                     result = self.value.reduce(resource.value)
                     if self.target.limit is not None and resource.value - result > self.target.limit:
-                        raise OverLimitException('Discount is over the limit' % self.target.limit)
-                    else:
-                        return resource.__class__(result)
-                else:
-                    if self.variety == GOODIE_VARIETY.BOOSTER:
-                        return resource.__class__(self.value.increase(resource.value))
-                    raise SoftException('Programming error, Goodie is not a discount or booster' % self.variety)
+                        raise OverLimitException('Discount is over the limit %s' % self.target.limit)
+                    return resource.__class__(result)
+                if self.variety == GOODIE_VARIETY.BOOSTER:
+                    return resource.__class__(self.value.increase(resource.value))
+                raise SoftException('Programming error, Goodie is not a discount or booster %s' % self.variety)
 
         return
 
@@ -97,7 +97,7 @@ class GoodieDefinition(object):
             return
         else:
             if self.expireAfter is not None:
-                if expirations is None or sum(expirations.itervalues()) != counter:
+                if expirations is None or sum(viewvalues(expirations)) != counter:
                     raise ExpirationCountException((state, finishTime, counter, expirations))
             if state is None:
                 if self.autostart:

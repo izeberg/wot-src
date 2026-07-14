@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing, Event
 from frameworks.wulf import ViewSettings
 from gui.impl.gen import R

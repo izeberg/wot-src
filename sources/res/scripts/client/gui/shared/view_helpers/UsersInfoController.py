@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from future.utils import viewitems
 import BigWorld
 from AccountCommands import isCodeValid
 from debug_utils import LOG_WARNING
@@ -84,7 +86,7 @@ class UsersInfoController(RequestsController):
 
         def _ratingsCallback(code, errStr, ratings):
             if isCodeValid(code):
-                for userDbID, rating in (ratings or {}).iteritems():
+                for userDbID, rating in viewitems(ratings or {}):
                     user = getter(userDbID)
                     if user:
                         user.update(globalRating=rating)

@@ -1,6 +1,5 @@
-import time
-from string import join
-import adisp, BigWorld
+from __future__ import absolute_import
+import time, adisp, BigWorld
 from debug_utils import LOG_DEBUG
 from gui.Scaleform.Waiting import Waiting
 
@@ -131,16 +130,16 @@ class InternalRepresenter(object):
             clazz.__repr_params__ = self.argNames
         representation = []
         attrMethNames = []
-        for i in xrange(len(clazz.__repr_params__)):
-            attrMethNames.append(makeArr(clazz.__repr_params__[i]))
+        for i, param in enumerate(clazz.__repr_params__):
+            attrMethNames.append(makeArr(param))
             if attrMethNames[(-1)][0][:2] == '__':
                 if clazz.__name__[0] != '_':
-                    attrMethNames[(-1)][0] = join(['_', clazz.__name__, attrMethNames[(-1)][0]], sep='')
+                    attrMethNames[(-1)][0] = ('').join(['_', clazz.__name__, attrMethNames[(-1)][0]])
                 else:
-                    attrMethNames[(-1)][0] = join([clazz.__name__, attrMethNames[(-1)][0]], sep='')
+                    attrMethNames[(-1)][0] = ('').join([clazz.__name__, attrMethNames[(-1)][0]])
             representation.append(('{0} = {{{1}}}').format(attrMethNames[(-1)][1], i))
 
-        representation = join([clazz.__name__, '(', join(representation, sep=', '), ')'], sep='')
+        representation = ('').join([clazz.__name__, '(', (', ').join(representation), ')'])
 
         def __repr__(self):
             formatedArgs = []

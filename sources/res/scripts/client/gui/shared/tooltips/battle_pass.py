@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from battle_pass_common import BattlePassState
 from gui.impl import backport
 from gui.impl.gen import R

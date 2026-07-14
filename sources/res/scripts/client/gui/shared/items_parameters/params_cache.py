@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import itertools, math, sys
 from collections import namedtuple
 from functools import partial
@@ -211,7 +212,7 @@ def _precacheEquipments(data):
 def _precacheOptionalDevices(data):
     data.cache.setdefault(nations.NONE_INDEX, {})[ITEM_TYPES.optionalDevice] = {}
     for deviceDescr in itervalues(vehicles.g_cache.optionalDevices()):
-        wmin, wmax = sys.maxint, -1
+        wmin, wmax = sys.maxsize, -1
         deviceNations = set()
         for vDescr in data.vehiclesCache.generator():
             if not deviceDescr.checkCompatibilityWithVehicle(vDescr)[0]:

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from collections import defaultdict
 import inspect
 from future.utils import iteritems, itervalues

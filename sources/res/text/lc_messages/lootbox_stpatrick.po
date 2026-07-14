@@ -11,12 +11,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgid "autoOpenView/boxCount"
-msgid_plural "plural/autoOpenView/boxCount"
-msgstr[0] "%(count) remaining chest"
-msgstr[1] "%(count) remaining chests"
-msgstr[2] "%(count) remaining chests"
-
 msgid "awardViews/footer/backButton/"
 msgstr "Back to Chests"
 
@@ -41,11 +35,6 @@ msgstr "Open chests to view statistics."
 msgid "common/statistics/header"
 msgstr "Chests opened: %(count)"
 
-msgid "common/statistics/tooltip/body"
-msgstr ""
-"Here you can view the items you received from chests during the event. You "
-"can manually reset these statistics at any time."
-
 msgid "confirmResetLootBoxStatistics/description"
 msgstr "All information on opened chests will be deleted."
 
@@ -56,9 +45,6 @@ msgid "entryPoint/tooltip/description"
 msgstr ""
 "These are special chests containing Premium vehicles, 3D attachments, credits, and other valuable in-game items.\n"
 "You can get them in the in-game Store."
-
-msgid "entryPoint/tooltip/title"
-msgstr "Emerald Chests and How to Receive Them"
 
 msgid "entryPoint/tooltip/warningDescription"
 msgstr ""
@@ -119,41 +105,6 @@ msgstr "Chests available: %(boxesCount)"
 
 msgid "quantityTitle/noBoxes"
 msgstr "No chests available"
-
-msgid "serviceChannelMessages/finish/text"
-msgstr ""
-"All remaining chests will be opened. Their contents will be added to your "
-"account."
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/count"
-msgstr "Chests opened: %(boxes)s"
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/header"
-msgstr "Remaining Chests Opened"
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/text"
-msgstr ""
-"At the end of the event, we opened all of your chests and added their "
-"contents to your account."
-
-msgid "serviceChannelMessages/lootBoxesDisabled/header"
-msgstr "Chest Opening Suspended"
-
-msgid "serviceChannelMessages/lootBoxesDisabled/text"
-msgstr ""
-"Operations with chests are temporarily unavailable due to maintenance."
-
-msgid "serviceChannelMessages/lootBoxesEnabled/header"
-msgstr "Chest Opening Available"
-
-msgid "serviceChannelMessages/lootBoxesEnabled/text"
-msgstr "Operations with chests are available again. Open them!"
-
-msgid "serviceChannelMessages/multipleOpen"
-msgstr "Chests opened!"
-
-msgid "serviceChannelMessages/server_error"
-msgstr "Chest Not Opened"
 
 msgid "singleRewardView/tooltip/description/"
 msgstr ""

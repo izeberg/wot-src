@@ -11,12 +11,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgid "autoOpenView/boxCount"
-msgid_plural "plural/autoOpenView/boxCount"
-msgstr[0] "%(count) remaining Blazing Treasure"
-msgstr[1] "%(count) remaining Blazing Treasures"
-msgstr[2] "%(count) remaining Blazing Treasures"
-
 msgid "awardViews/footer/backButton/"
 msgstr "Back to Treasures"
 
@@ -41,11 +35,6 @@ msgstr "Open Treasures to view statistics."
 msgid "common/statistics/header"
 msgstr "Blazing Treasures opened: %(count)"
 
-msgid "common/statistics/tooltip/body"
-msgstr ""
-"Here you can view the items you received from Blazing Treasures during the "
-"event. You can manually reset these statistics at any time."
-
 msgid "confirmResetLootBoxStatistics/description"
 msgstr "All information on opened Blazing Treasures will be deleted."
 
@@ -56,9 +45,6 @@ msgid "entryPoint/tooltip/description"
 msgstr ""
 "These are special boxes containing new and unique items, including Premium "
 "vehicles, 2D styles, and more. You can get them in the in-game Store."
-
-msgid "entryPoint/tooltip/title"
-msgstr "Blazing Treasures and How to Receive Them"
 
 msgid "entryPoint/tooltip/warningDescription"
 msgstr ""
@@ -120,42 +106,6 @@ msgstr "Treasures available: %(boxesCount)"
 
 msgid "quantityTitle/noBoxes"
 msgstr "No Treasures available"
-
-msgid "serviceChannelMessages/finish/text"
-msgstr ""
-"All remaining Blazing Treasures will be opened. Their contents will be added"
-" to your account."
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/count"
-msgstr "Blazing Treasures opened: %(boxes)s"
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/header"
-msgstr "Remaining Blazing Treasures Opened"
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/text"
-msgstr ""
-"At the end of the event, we opened all of your Blazing Treasures and added "
-"their contents to your account."
-
-msgid "serviceChannelMessages/lootBoxesDisabled/header"
-msgstr "Blazing Treasure Opening Suspended"
-
-msgid "serviceChannelMessages/lootBoxesDisabled/text"
-msgstr ""
-"Operations with Blazing Treasures are temporarily unavailable due to "
-"maintenance."
-
-msgid "serviceChannelMessages/lootBoxesEnabled/header"
-msgstr "Blazing Treasure Opening Available"
-
-msgid "serviceChannelMessages/lootBoxesEnabled/text"
-msgstr "Operations with Blazing Treasures are available again. Open them!"
-
-msgid "serviceChannelMessages/multipleOpen"
-msgstr "Blazing Treasures opened!"
-
-msgid "serviceChannelMessages/server_error"
-msgstr "Blazing Treasure Not Opened"
 
 msgid "singleRewardView/tooltip/description/"
 msgstr ""

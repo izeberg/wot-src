@@ -21,9 +21,6 @@ msgstr ""
 "These are special boxes containing new and unique items, including Premium "
 "vehicles, 2D styles, credits, and more."
 
-msgid "entryPoint/tooltip/title"
-msgstr "Warm Spring Supply Boxes and How to Receive Them"
-
 msgid "entryPoint/tooltip/warningTitle"
 msgstr "Warm Spring Supply Boxes Temporarily Unavailable"
 
@@ -40,14 +37,3 @@ msgstr ""
 "then a Tier VIII–IX vehicle you do not already own will drop when you open "
 "the %(guaranteed0)sth box (depending on the box type). When it does, the "
 "counter is reset."
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/count"
-msgstr "Boxes opened: %(boxes)s"
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/header"
-msgstr "Remaining Boxes Opened"
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/text"
-msgstr ""
-"At the end of the event, we opened all of your boxes and added their "
-"contents to your account."

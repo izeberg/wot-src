@@ -9,7 +9,7 @@ from skeletons.gui.shared.utils import IHangarSpace
 from skeletons.account_helpers.settings_core import ISettingsCore
 from skeletons.gui.customization import ICustomizationService
 from vehicle_systems.tankStructure import TankPartIndexes, TankPartNames
-from cgf_components.hangar_camera_manager import HangarCameraManager, DOFParams
+from cgf_components.hangar_camera_manager import HangarCameraSystem, DOFParams
 _VERTICAL_OFFSET = (0, -0.2, 0)
 _VERTICAL_EPSILON = 0.1
 _WORLD_UP = Math.Vector3(0, 1, 0)
@@ -22,6 +22,7 @@ _STYLE_INFO_MAX_VEHICLE_HEIGHT = 0.3
 _STYLE_INFO_VEHICLE_SCREEN_X_SHIFT = 1.0 / 3
 _PROJECTION_DECALS_DIR_CLIP_COS = 0.8
 _ATTACHMENT_MAX_PITCH = math.radians(30)
+CUSTOMIZATION_CAMERA_NAME = 'Customization'
 
 class C11nCameraModes(object):
     START_STATE = 0
@@ -64,8 +65,8 @@ class C11nHangarCameraManager(TimeDeltaMeter):
         return self.__currentMode
 
     def resetCustomizationCamera(self, resetRotation=True, resetDistance=True):
-        cameraManager = CGF.getManager(self._hangarSpace.spaceID, HangarCameraManager)
-        if not cameraManager:
+        cameraManager = CGF.getSystem(self._hangarSpace.spaceID, HangarCameraSystem)
+        if not cameraManager or cameraManager.getCurrentCameraName() != CUSTOMIZATION_CAMERA_NAME:
             return
         cameraManager.resetCameraTarget(EASING_TRANSITION_DURATION, resetRotation, resetDistance)
         self.enableMovementByMouse()
@@ -73,7 +74,7 @@ class C11nHangarCameraManager(TimeDeltaMeter):
         self.__currentMode = C11nCameraModes.PREVIEW
 
     def locateCameraOnDecal(self, location, width, slotId, relativeSize=0.5, forceRotate=False):
-        cameraManager = CGF.getManager(self._hangarSpace.spaceID, HangarCameraManager)
+        cameraManager = CGF.getSystem(self._hangarSpace.spaceID, HangarCameraSystem)
         if not cameraManager:
             return False
         halfF = width / (2 * relativeSize)
@@ -87,7 +88,7 @@ class C11nHangarCameraManager(TimeDeltaMeter):
         return True
 
     def locateCameraOnAnchor(self, position, normal, up, slotId, forceRotate=False, customConstraints=False):
-        cameraManager = CGF.getManager(self._hangarSpace.spaceID, HangarCameraManager)
+        cameraManager = CGF.getSystem(self._hangarSpace.spaceID, HangarCameraSystem)
         if not cameraManager:
             return False
         else:
@@ -111,7 +112,7 @@ class C11nHangarCameraManager(TimeDeltaMeter):
             return True
 
     def locateCameraToStyleInfoPreview(self):
-        cameraManager = CGF.getManager(self._hangarSpace.spaceID, HangarCameraManager)
+        cameraManager = CGF.getSystem(self._hangarSpace.spaceID, HangarCameraSystem)
         if not cameraManager:
             return
         else:
@@ -154,7 +155,7 @@ class C11nHangarCameraManager(TimeDeltaMeter):
             return
 
     def enableMovementByMouse(self, enableRotation=True, enableZoom=True):
-        cameraManager = CGF.getManager(self._hangarSpace.spaceID, HangarCameraManager)
+        cameraManager = CGF.getSystem(self._hangarSpace.spaceID, HangarCameraSystem)
         if not cameraManager:
             return False
         cameraManager.enableMovementByMouse(enableRotation, enableZoom)

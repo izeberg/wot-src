@@ -74,11 +74,6 @@ class Comp7LightMembersView(SquadMembersView):
     def _getWindowInfoTooltipHeaderAndBody(self):
         return (None, None)
 
-    def _getPlatoonSlotsData(self):
-        slots = super(Comp7LightMembersView, self)._getPlatoonSlotsData()
-        slots.sort(key=self.__playerTimeJoin)
-        return slots
-
     def _hasFreeSlot(self):
         if self.__unitMgr is not None and self.__unitMgr.unit is not None:
             return len(self.__unitMgr.unit.getPlayers()) < self.__unitMgr.unit.getSquadSize()
@@ -89,14 +84,14 @@ class Comp7LightMembersView(SquadMembersView):
         super(Comp7LightMembersView, self)._addListeners()
         self.viewModel.header.memberCountDropdown.onChange += self.__onMemberCountDropdown
         if self.__unitMgr is not None and self.__unitMgr.unit is not None:
-            self.__unitMgr.unit.onSquadSizeChanged += self.__updateEntityState
+            self.__unitMgr.unit.onUnitSizeChanged += self.__updateEntityState
         return
 
     def _removeListeners(self):
         super(Comp7LightMembersView, self)._removeListeners()
         self.viewModel.header.memberCountDropdown.onChange -= self.__onMemberCountDropdown
         if self.__unitMgr is not None and self.__unitMgr.unit is not None:
-            self.__unitMgr.unit.onSquadSizeChanged -= self.__updateEntityState
+            self.__unitMgr.unit.onUnitSizeChanged -= self.__updateEntityState
         return
 
     def __updateDropDown(self, model):
@@ -144,9 +139,3 @@ class Comp7LightMembersView(SquadMembersView):
     @staticmethod
     def __getDropDownItemTooltipText():
         return backport.text(R.strings.platoon.members.header.tooltip.comp7_light.dropdown.item())
-
-    @staticmethod
-    def __playerTimeJoin(slot):
-        player = slot['player'] or {}
-        roleIndex = -(player.get('isOffline') or slot['role']) if 1 else 0
-        return (not player, roleIndex, player.get('timeJoin', 0))

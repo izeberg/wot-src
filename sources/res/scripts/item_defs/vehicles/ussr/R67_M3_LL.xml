@@ -139,7 +139,7 @@
 		</exhaust>
 		<turretPositions>
 			<turret>
-				0.000000 0.759472 0.17251
+				0.000000 0.720744 0.17251
 				<!--BW_String-->
 			</turret>
 		</turretPositions>
@@ -2713,7 +2713,7 @@
 				</decal>
 			</AODecals>
 			<trackThickness>
-				0.0266476
+				0.02665
 				<!--BW_String-->
 			</trackThickness>
 			<trackNodes>
@@ -2910,7 +2910,10 @@
 			<physicalTracks>
 				<left>
 					<segmentsCount>134</segmentsCount>
-					<segmentsOuterThickness>0.048266</segmentsOuterThickness>
+					<segmentsOuterThickness>
+						0.053
+						<!--BW_String-->
+					</segmentsOuterThickness>
 					<segmentsInnerThickness>
 						0.07
 						<!--BW_String-->
@@ -3657,7 +3660,10 @@
 				</left>
 				<right>
 					<segmentsCount>134</segmentsCount>
-					<segmentsOuterThickness>0.048266</segmentsOuterThickness>
+					<segmentsOuterThickness>
+						0.053
+						<!--BW_String-->
+					</segmentsOuterThickness>
 					<segmentsInnerThickness>
 						0.07
 						<!--BW_String-->

@@ -1,5 +1,7 @@
-from typing import TYPE_CHECKING
+from __future__ import absolute_import
 from copy import deepcopy
+from future.utils import viewitems
+from typing import TYPE_CHECKING
 import BigWorld, Event, BattleReplay
 from helpers import dependency
 from PlayerEvents import g_playerEvents
@@ -46,7 +48,7 @@ class PerksController(ViewComponentsController):
                 for viewCmp in self._viewComponents:
                     viewCmp.updatePerks(changes, self._prevPanelState)
 
-            for perkID, data in changes.iteritems():
+            for perkID, data in viewitems(changes):
                 updater = getattr(self, _UPDATE_FUN_PREFIX + str(perkID), None)
                 if updater is not None:
                     updater(perkID=perkID, **data)
@@ -58,7 +60,7 @@ class PerksController(ViewComponentsController):
         if not self._isInBattle():
             return
         changes, currentRibbonsState = self._getCurrentState(self.__checkRibbonsBySettings(ribbons), self._prevRibbonsState)
-        for perkID, perkData in sorted(changes.iteritems(), key=lambda item: item[1]['endTime']):
+        for perkID, perkData in sorted(viewitems(changes), key=lambda item: item[1]['endTime']):
             if perkData['endTime'] > BigWorld.serverTime() and perkData.get('state', PerkState.ACTIVE):
                 prevPerkEndTime = self._prevRibbonsState.get(perkID, {}).get('endTime', 0)
                 if perkData['endTime'] - prevPerkEndTime > _INTERVAL_FOR_SAME_NOTIFICATION:
@@ -89,7 +91,7 @@ class PerksController(ViewComponentsController):
         return not self.__hiddenAllPerks and getSkillsConfig().vsePerkToSkill.get(perkID) not in self.__hiddenPerks
 
     def _onVehicleControlling(self, vehicle):
-        for perkID, data in self._prevPanelState.iteritems():
+        for perkID, data in viewitems(self._prevPanelState):
             updater = getattr(self, _UPDATE_FUN_PREFIX + str(perkID), None)
             if updater is not None:
                 updater(vehicle=vehicle, perkID=perkID, **data)
@@ -120,14 +122,14 @@ class PerksController(ViewComponentsController):
             viewCmp.setPerks(perks)
             viewCmp.updatePerks(self._prevPanelState, {})
 
-        for perkID in self._prevPanelState.keys():
+        for perkID in self._prevPanelState:
             if self._canShowPerk(perkID):
                 self.onPerkChanged({_DATA_KEY_PERK_ID: perkID})
 
     def _getCurrentState(self, source, prevState):
         currentState = {item[_DATA_KEY_PERK_ID]:{key:item[key] for key in set(item.keys()) ^ {_DATA_KEY_PERK_ID}} for item in source}
         changes = {}
-        for perkID, data in currentState.iteritems():
+        for perkID, data in viewitems(currentState):
             if perkID not in prevState or prevState[perkID] != data:
                 changes[perkID] = data
 
@@ -158,7 +160,7 @@ class PerksController(ViewComponentsController):
         self.__updateHiddenPerks()
 
     def __onSettingsChanged(self, diff):
-        if any(name in _CREW_SETTING for name in diff.iterkeys()):
+        if any(name in _CREW_SETTING for name in diff):
             self.__updateHiddenPerks()
             vehicle = self.sessionProvider.shared.vehicleState.getControllingVehicle()
             if vehicle:
@@ -168,6 +170,6 @@ class PerksController(ViewComponentsController):
         self.__hiddenPerks.clear()
         perksVisibleOptions = self.settingsCore.packSettings(settings_constants.SITUATIONAL_PERKS.ALL())
         self.__hiddenAllPerks = not self.settingsCore.getSetting(settings_constants.BATTLE_EVENTS.CREW_PERKS)
-        for perkName, isVisible in perksVisibleOptions.iteritems():
+        for perkName, isVisible in viewitems(perksVisibleOptions):
             if not isVisible:
                 self.__hiddenPerks.add(perkName)

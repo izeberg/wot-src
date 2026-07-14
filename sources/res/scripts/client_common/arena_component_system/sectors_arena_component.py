@@ -1,5 +1,6 @@
+from __future__ import absolute_import
 from collections import defaultdict
-from client_arena_component_system import ClientArenaComponent
+from arena_component_system.client_arena_component_system import ClientArenaComponent
 import Event
 from constants import SECTOR_STATE
 from debug_utils import LOG_WARNING
@@ -95,7 +96,7 @@ class SectorGroup(object):
                 for point in sectorWayPoints:
                     if self.isInSector(point['position']):
                         if self.__wayPoints.get(point['team'], None) is None:
-                            self.__wayPoints[point['team']] = list()
+                            self.__wayPoints[point['team']] = []
                         self.__wayPoints[point['team']].append(point['position'])
 
             return

@@ -1,19 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<visibilityBox>
-		<min>
-			-2.78414 -0.422967 -5.029
-			<!--BW_String-->
-		</min>
-		<max>
-			3.62052 3.65111 5.7667
-			<!--BW_String-->
-		</max>
+		<min>-2.784140 -0.422967 -5.029000</min>
+		<max>3.620520 3.651110 5.766700</max>
 	</visibilityBox>
 	<parent>content/Buildings/hd_bld_AM_016_Garage/normal/lod1/hd_bld_AM_016_Garage</parent>
-	<extent>
-		48.0
-		<!--BW_String-->
-	</extent>
+	<extent>48.000000</extent>
 	<nodefullVisual>content/Buildings/hd_bld_AM_016_Garage/normal/lod0/hd_bld_AM_016_Garage</nodefullVisual>
 </root>

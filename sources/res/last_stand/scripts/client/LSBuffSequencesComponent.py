@@ -1,5 +1,5 @@
 from __future__ import absolute_import
-import CGF, GenericComponents
+import typing, CGF, GenericComponents
 from dyn_components_groups import groupComponent
 from last_stand.ls_buff_effect_component_common import LSBuffEffectComponentCommon
 from xml_config_specs import StrParam, Vector3Param, ListParam, ObjParam, IntParam, BoolParam
@@ -34,7 +34,7 @@ class LSBuffSequencesComponent(LSBuffEffectComponentCommon):
     @property
     def _animators(self):
         for go in self._gameObjects:
-            animator = go.findComponentByType(GenericComponents.AnimatorComponent) if go and go.isValid() else None
+            animator = go.findWrite(GenericComponents.AnimatorComponent) if go else None
             if animator:
                 yield animator
 
@@ -46,21 +46,23 @@ class LSBuffSequencesComponent(LSBuffEffectComponentCommon):
 
     def _activateEffects(self):
         self._gameObjectsHideInSniperMode = []
+        queue = CGF.CommandQueue(self.spaceID)
         for i, gameObject in enumerate(self._gameObjects):
             config = self._componentConfigs[i]
             if not config.sequence or not self._isVisible(config.visibleTo) or not self._checkNode(config):
                 if gameObject is not None:
-                    self.__destroyObject(gameObject)
+                    if gameObject.valid:
+                        queue.removeGameObject(gameObject)
                     self._gameObjects[i] = None
                 continue
             if gameObject is None:
-                gameObject = self._createGameObject(config.bindNode, config.offset)
-                gameObject.createComponent(GenericComponents.AnimatorComponent, config.sequence, 0, 1, config.loopCount, config.autoStart, '')
+                gameObject = self._createGameObject(queue, config.bindNode, config.offset)
+                queue.createComponent(gameObject, GenericComponents.AnimatorComponent, config.sequence, 0, 1, config.loopCount, config.autoStart, '')
                 self._gameObjects[i] = gameObject
             if self._needsListenToSniperMode(config.sniperModeVisibleTo):
                 self._gameObjectsHideInSniperMode.append(gameObject)
                 if self._isInSniperMode:
-                    gameObject.deactivate()
+                    queue.deactivateGameObject(gameObject)
 
         return
 
@@ -77,27 +79,29 @@ class LSBuffSequencesComponent(LSBuffEffectComponentCommon):
             animator.setTrigger(triggerName)
 
     def _deactivateEffects(self):
+        queue = CGF.CommandQueue(self.spaceID)
         for i, gameObject in enumerate(self._gameObjects):
             if gameObject is not None:
-                self.__destroyObject(gameObject)
+                if gameObject.valid:
+                    queue.removeGameObject(gameObject)
                 self._gameObjects[i] = None
 
         return
 
-    def _createGameObject(self, bindNode='', offset=(0, 0, 0)):
+    def _createGameObject(self, queue, bindNode='', offset=(0, 0, 0)):
         if self._hasAppearance:
             parentGO = self.entity.appearance.gameObject
         else:
             parentGO = self.entity.entityGameObject
-        gameObject = CGF.GameObject(self.spaceID)
-        gameObject.createComponent(GenericComponents.HierarchyComponent, parentGO)
-        gameObject.createComponent(GenericComponents.TransformComponent, offset)
-        gameObject.createComponent(GenericComponents.NodeFollower, bindNode, parentGO)
+        gameObject = queue.createGameObject()
+        queue.createComponent(gameObject, CGF.HierarchyComponent, parentGO)
+        queue.createComponent(gameObject, CGF.TransformComponent, offset)
+        queue.createComponent(gameObject, GenericComponents.NodeFollowerComponent, bindNode, parentGO.uuid)
         return gameObject
 
     def _onSniperModeChanged(self, isEnabled):
         for go in self._gameObjectsHideInSniperMode:
-            if not go.isValid():
+            if not go.valid:
                 continue
             if isEnabled:
                 go.deactivate()
@@ -116,7 +120,3 @@ class LSBuffSequencesComponent(LSBuffEffectComponentCommon):
             if not self._hasAppearance or not getattr(self.entity, 'model', None):
                 return False
             return self.entity.model.node(config.bindNode)
-
-    def __destroyObject(self, gameObject):
-        if gameObject.isValid():
-            gameObject.destroy()

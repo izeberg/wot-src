@@ -320,9 +320,9 @@
 			<type>vector3</type>
 			<frame>
 				<startTime>0.033333</startTime>
-				<value>0.000000 0.000000 0.000000</value>
-				<inTangent>149.999893 32.142834 149.999893</inTangent>
-				<outTangent>149.999893 32.142834 149.999893</outTangent>
+				<value>0.001000 0.001000 0.001000</value>
+				<inTangent>149.997757 32.140690 149.997757</inTangent>
+				<outTangent>149.997757 32.140690 149.997757</outTangent>
 				<tangentMode>768</tangentMode>
 			</frame>
 			<frame>
@@ -334,9 +334,9 @@
 			</frame>
 			<frame>
 				<startTime>1.666667</startTime>
-				<value>80.000000 0.000000 80.000000</value>
-				<inTangent>8.571426 -12.857140 8.571426</inTangent>
-				<outTangent>8.571426 -12.857140 8.571426</outTangent>
+				<value>80.000000 0.001000 80.000000</value>
+				<inTangent>8.571426 -12.856282 8.571426</inTangent>
+				<outTangent>8.571426 -12.856282 8.571426</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 		</track>

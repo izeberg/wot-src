@@ -2448,6 +2448,14 @@
 				<id>OnPetCanInteractInHangarStateChanged_1</id>
 			</block>
 			<block>
+				<class>If</class>
+				<id>If_38</id>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_54</id>
+			</block>
+			<block>
 				<class>CreateComponent</class>
 				<id>CreateComponent_2</id>
 				<params>
@@ -2465,12 +2473,34 @@
 				</slots>
 			</block>
 			<block>
+				<class>HasComponent</class>
+				<id>HasComponent_1</id>
+				<params>
+					<param>
+						Selection
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+			</block>
+			<block>
 				<class>If</class>
-				<id>If_38</id>
+				<id>If_55</id>
 			</block>
 			<block>
 				<class>RemoveComponent</class>
 				<id>RemoveComponent_7</id>
+				<params>
+					<param>
+						Selection
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>HasComponent</class>
+				<id>HasComponent_2</id>
 				<params>
 					<param>
 						Selection
@@ -3706,18 +3736,6 @@
 				<output>out</output>
 			</connection>
 			<connection>
-				<from>If_38</from>
-				<input>in</input>
-				<to>CreateComponent_2</to>
-				<output>true</output>
-			</connection>
-			<connection>
-				<from>ContextGetSelf_1</from>
-				<input>gameObject</input>
-				<to>CreateComponent_2</to>
-				<output>value</output>
-			</connection>
-			<connection>
 				<from>OnPetCanInteractInHangarStateChanged_1</from>
 				<input>input</input>
 				<to>If_38</to>
@@ -3731,14 +3749,62 @@
 			</connection>
 			<connection>
 				<from>If_38</from>
+				<input>input</input>
+				<to>If_54</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>HasComponent_1</from>
+				<input>value</input>
+				<to>If_54</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>If_54</from>
 				<input>in</input>
-				<to>RemoveComponent_7</to>
+				<to>CreateComponent_2</to>
 				<output>false</output>
 			</connection>
 			<connection>
 				<from>ContextGetSelf_1</from>
 				<input>gameObject</input>
+				<to>CreateComponent_2</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>HasComponent_1</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>If_38</from>
+				<input>input</input>
+				<to>If_55</to>
+				<output>false</output>
+			</connection>
+			<connection>
+				<from>HasComponent_2</from>
+				<input>value</input>
+				<to>If_55</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>If_55</from>
+				<input>in</input>
 				<to>RemoveComponent_7</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>RemoveComponent_7</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>HasComponent_2</to>
 				<output>value</output>
 			</connection>
 		</connections>

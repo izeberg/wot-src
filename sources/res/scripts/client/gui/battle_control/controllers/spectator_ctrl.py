@@ -1,4 +1,5 @@
-import Event, BigWorld, BattleReplay
+from __future__ import absolute_import
+import BigWorld, Event, BattleReplay
 from gui.battle_control.battle_constants import BATTLE_CTRL_ID
 from gui.battle_control.view_components import ViewComponentsController
 from gui.Scaleform.genConsts.EPIC_CONSTS import EPIC_CONSTS

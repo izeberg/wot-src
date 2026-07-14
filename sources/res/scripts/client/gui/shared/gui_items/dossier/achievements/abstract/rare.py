@@ -1,6 +1,7 @@
+from __future__ import absolute_import
 import uuid, imghdr, BigWorld
+from gui.shared.gui_items.dossier.achievements.abstract.regular import RegularAchievement
 from gui.shared.utils.RareAchievementsCache import IMAGE_TYPE
-from regular import RegularAchievement
 from dossiers2.ui.achievements import ACHIEVEMENT_BLOCK as _AB
 from gui.shared.gui_items.dossier.achievements import validators
 from helpers import dependency

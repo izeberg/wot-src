@@ -8,7 +8,7 @@ from math_utils import clamp, clamp01
 
 class DissolveUpdater(object):
     __slots__ = ('dissolveHandler', 'componentRef', 'entityRef', 'appearanceRef', 'dissolveFactor',
-                 'fadeInTime', 'fadeOutTime', 'maxDissolveFactor')
+                 'fadeInTime', 'fadeOutTime', 'maxDissolveFactor', 'dissolveFashions')
     UPDATE_RATE = 0.05
 
     def __init__(self, componentRef, entityRef, appearanceRef, dissolveFactor, fadeInTime, fadeOutTime, maxDissolveFactor):
@@ -21,12 +21,13 @@ class DissolveUpdater(object):
         self.fadeInTime = max(0.0001, fadeInTime)
         self.fadeOutTime = max(0.0001, fadeOutTime)
         self.maxDissolveFactor = clamp01(maxDissolveFactor)
+        self.dissolveFashions = None
+        return
 
     def start(self):
         appearance = self.appearanceRef()
-        for fashion in appearance.fashions:
-            if not fashion:
-                continue
+        self.dissolveFashions = tuple(f for f in appearance.fashions if f)
+        for fashion in self.dissolveFashions:
             fashion.addMaterialHandler(self.dissolveHandler)
             fashion.addTrackMaterialHandler(self.dissolveHandler)
 
@@ -34,15 +35,15 @@ class DissolveUpdater(object):
         DissolveUpdater._updateDissolve(self)
 
     def stop(self):
-        if not self.appearanceRef():
+        if self.dissolveHandler is None:
             return
         else:
             self.dissolveHandler.setEnabled(False)
-            for fashion in self.appearanceRef().fashions:
-                if not fashion:
-                    continue
-                fashion.removeMaterialHandler(self.dissolveHandler)
+            if self.dissolveFashions is not None:
+                for fashion in self.dissolveFashions:
+                    fashion.removeMaterialHandler(self.dissolveHandler)
 
+                self.dissolveFashions = None
             self.dissolveHandler = None
             return
 
@@ -70,7 +71,7 @@ class LSBuffDissolveComponent(DynamicScriptComponent):
     def _onAvatarReady(self):
         super(LSBuffDissolveComponent, self)._onAvatarReady()
         appearance = self.entity.appearance
-        if appearance is None:
+        if appearance is None or not appearance.isConstructed:
             self.entity.events.onAppearanceReady += self._onAppearanceReady
         elif not appearance.damageState.isCurrentModelDamaged:
             self._onAppearanceReady()

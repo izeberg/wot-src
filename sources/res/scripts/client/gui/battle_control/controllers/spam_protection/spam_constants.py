@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from enum import IntEnum
 DEFAULT_COOLDOWN = 1.0
 

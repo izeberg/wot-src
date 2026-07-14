@@ -1,4 +1,5 @@
-import encodings, json, logging, sys, BigWorld
+from __future__ import absolute_import
+import json, logging, sys, BigWorld
 
 class BWLogger(logging.Logger):
     TRACE = logging.DEBUG - 1

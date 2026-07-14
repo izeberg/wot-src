@@ -1,6 +1,9 @@
+from __future__ import absolute_import
 from functools import partial
 from time import time
 from enum import Enum
+from future.utils import viewitems, viewvalues
+from past.builtins import xrange
 from typing import TYPE_CHECKING, Union, Set, List, Dict, Optional, Any, Iterable
 from account_shared import getCustomizationItem
 from bonus_readers import readBonusSection, SUPPORTED_BONUSES
@@ -82,7 +85,7 @@ def _readConfig():
         try:
             config[name] = __readAchievements(name, value)
         except SoftException as e:
-            raise SoftException(("Error: '{}', achievement type '{}'").format(e.message, name))
+            raise SoftException(("Error: '{}', achievement type '{}'").format(str(e), name))
 
     return config
 
@@ -123,8 +126,8 @@ def __readAchievements(achievementsType, achievementsSection):
                 raise SoftException(("Duplicate achievement id '{}'").format(achievementID))
             try:
                 conditions = __readConditions(value['conditions'])
-                if set(conditions.iterkeys()) - ALLOWED_CONDITIONS_BY_ACHIEVEMENT_TYPE[achievementsType]:
-                    raise SoftException(('Unexpected conditions for achievement type: {}').format(set(conditions.iterkeys()) - ALLOWED_CONDITIONS_BY_ACHIEVEMENT_TYPE[achievementsType]))
+                if set(conditions) - ALLOWED_CONDITIONS_BY_ACHIEVEMENT_TYPE[achievementsType]:
+                    raise SoftException(('Unexpected conditions for achievement type: {}').format(set(conditions) - ALLOWED_CONDITIONS_BY_ACHIEVEMENT_TYPE[achievementsType]))
                 if 'requiredAchievementIDs' in conditions:
                     if achievementID in conditions['requiredAchievementIDs']:
                         raise SoftException("Own achievement id can't be at required achievements list")
@@ -147,7 +150,7 @@ def __readAchievements(achievementsType, achievementsSection):
                 if IS_CLIENT or IS_WEB:
                     achievementData['UI'] = __readUIConfig(value, achievementID)
             except SoftException as e:
-                raise SoftException(e.message + (", achievement id: '{}'").format(achievementID))
+                raise SoftException(str(e) + (", achievement id: '{}'").format(achievementID))
 
             achievements[achievementID] = Achievement(achievementData)
 
@@ -161,7 +164,7 @@ def __readAchievements(achievementsType, achievementsSection):
 def __stageAllValueGetterByVehicleFilter(filterData):
     vehicleCache = getHelperCache()
     vehiclesByFilter = vehicleCache['vehiclesInTrees']
-    if 'nations' in filterData and filterData['nations'] != set(INDICES.itervalues()):
+    if 'nations' in filterData and filterData['nations'] != set(viewvalues(INDICES)):
         nationVehicles = set()
         for nationID in filterData['nations']:
             nationVehicles |= vehicleCache['vehiclesInTreesByNation'][nationID]
@@ -208,7 +211,7 @@ def __readStages(stagesSection, conditions):
                 raise SoftException(("Missed stage '{}' value").format(len(stages)))
             if stageValue == 'all':
                 stageValue = 0
-                for conditionName, conditionData in conditions.iteritems():
+                for conditionName, conditionData in viewitems(conditions):
                     if conditionName not in __stageAllValueGetterByCondition:
                         raise SoftException(("Unexpected condition '{}' for 'all' value, stage index: {}").format(conditionName, len(stages)))
                     stageValue += __stageAllValueGetterByCondition[conditionName](conditionData)
@@ -243,7 +246,7 @@ def __readVehicleFilterConditions(filterSection):
                 raise SoftException(('Invalid nations: {}').format(invalidNations))
             nationsIDs = {INDICES[nation] for nation in nations}
         else:
-            nationsIDs = set(INDICES.itervalues())
+            nationsIDs = set(viewvalues(INDICES))
         if filterSection.has_key('vehClasses'):
             vehClasses = set(filterSection.readString('vehClasses').split())
             invalidVehClasses = vehClasses - vehicles.VEHICLE_CLASS_TAGS
@@ -336,20 +339,20 @@ class g_cache(object):
     def init(self):
         self.__data = data = _readConfig()
         achievementsByConditions = data.setdefault('achievementsByConditions', {})
-        for achievementType, achievementsByType in data.iteritems():
-            (VEHICLE_ACHIEVEMENTS_POP_UPS if achievementType == 'vehicleAchievements' else CUSTOMIZATION_ACHIEVEMENTS_POP_UPS).extend(achievementsByType.iterkeys())
+        for achievementType, achievementsByType in viewitems(data):
+            (VEHICLE_ACHIEVEMENTS_POP_UPS if achievementType == 'vehicleAchievements' else CUSTOMIZATION_ACHIEVEMENTS_POP_UPS).extend(achievementsByType)
             dependencies = VEHICLE_ACHIEVEMENTS_DEPENDENCIES if achievementType == 'vehicleAchievements' else CUSTOMIZATION_ACHIEVEMENTS_DEPENDENCIES
-            for achievementID, achievement in achievementsByType.iteritems():
+            for achievementID, achievement in viewitems(achievementsByType):
                 rewards = achievement.getAllBonuses()
                 if rewards and 'dogTagComponents' in rewards:
                     self.__totalVehicleAchievement = (
                      achievementType, achievementID)
-                for conditionKey, conditionData in achievement.conditions.iteritems():
+                for conditionKey, conditionData in viewitems(achievement.conditions):
                     if conditionKey in ITEM_CONDITION_KEYS:
                         achievementsByConditions.setdefault(conditionKey, {}).setdefault(conditionData, set()).add(achievement)
                     elif conditionKey in ITEM_FILTER_CONDITION_KEYS:
                         itemFilter = achievementsByConditions.setdefault(conditionKey, {})
-                        for filterName, filterValues in conditionData.iteritems():
+                        for filterName, filterValues in viewitems(conditionData):
                             filterData = itemFilter.setdefault(filterName, {})
                             for filterValue in filterValues:
                                 filterData.setdefault(filterValue, set()).add(achievement)
@@ -525,7 +528,7 @@ class Achievement(object):
             for stage in stages:
                 rewards = stage.get('rewards')
                 if rewards:
-                    for rewardName, rewardValue in rewards.iteritems():
+                    for rewardName, rewardValue in viewitems(rewards):
                         result.setdefault(rewardName, []).append(rewardValue)
 
             return result

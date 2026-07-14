@@ -50,7 +50,8 @@ class HangarShellItemContextMenu(BaseHangarEquipmentSlotContextMenu):
     def _initFlashValues(self, ctx):
         super(HangarShellItemContextMenu, self)._initFlashValues(ctx)
         self._slotsCount = self._getVehicleItems().getShellsCount()
-        self._shellsCounts = ctx.shellsCounts
+        self._shellsCounts = getattr(ctx, 'shellsCounts', None)
+        return
 
     def _applyShellCounts(self, layout):
         for idx, item in enumerate(layout):
@@ -58,6 +59,8 @@ class HangarShellItemContextMenu(BaseHangarEquipmentSlotContextMenu):
                 continue
             for shellData in self._shellsCounts:
                 if shellData.intCD == item.intCD:
+                    if shellData.count is None:
+                        continue
                     item.count = int(shellData.count)
                     layout[idx] = item
                     break

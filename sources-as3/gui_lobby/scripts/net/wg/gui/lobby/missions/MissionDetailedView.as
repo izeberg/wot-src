@@ -31,6 +31,8 @@ package net.wg.gui.lobby.missions
       private static const INFO_ICON_GAP:int = 6;
       
       private static const BOTTOM_STATUS_GAP:int = 8;
+      
+      private static const TITLE_TF_WIDTH:int = 466;
        
       
       public var dateTf:TextField;
@@ -90,6 +92,11 @@ package net.wg.gui.lobby.missions
       override protected function getAwardsWidth() : int
       {
          return this.bg.width;
+      }
+      
+      override protected function getTitleWidth() : int
+      {
+         return TITLE_TF_WIDTH;
       }
       
       override protected function onDispose() : void

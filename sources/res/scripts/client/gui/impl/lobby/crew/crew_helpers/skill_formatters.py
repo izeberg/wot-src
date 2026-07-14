@@ -62,8 +62,7 @@ class SkillLvlFormatter(object):
     def __ne__(self, other):
         return self._cmp(other) != 0
 
-    def __hash__(self):
-        raise TypeError('hash not implemented')
+    __hash__ = None
 
     def _cmp(self, other):
         if isinstance(other, int):

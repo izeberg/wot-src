@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from future.utils import viewvalues
 from gui.impl.common.fade_manager import FadeManager, DefaultFadingCover
 from wg_async import wg_await, wg_async
 from skeletons.gui.game_control import IFadingController
@@ -30,7 +32,7 @@ class FadingController(IFadingController):
         self._hideImmediately()
 
     def _hideImmediately(self):
-        for fadeManager in self._managerByLayer.itervalues():
+        for fadeManager in viewvalues(self._managerByLayer):
             fadeManager.hideImmediately()
 
     def _getFadeManager(self, layerID):

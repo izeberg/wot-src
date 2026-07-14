@@ -1,5 +1,6 @@
-from block import Block
-from slot_types import SLOT_TYPE, arrayOf
+from __future__ import absolute_import
+from visual_script.block import Block
+from visual_script.slot_types import SLOT_TYPE, arrayOf
 from visual_script.vehicle_blocks import VehicleMeta
 
 class NoCrewCriticalBase(Block, VehicleMeta):

@@ -1,8 +1,9 @@
+from __future__ import absolute_import
 from gui.impl import backport
 from helpers import i18n
 from dossiers2.ui.achievements import ACHIEVEMENT_BLOCK as _AB, MARK_ON_GUN
 from gui import makeHtmlString
-from abstract import RegularAchievement
+from gui.shared.gui_items.dossier.achievements.abstract import RegularAchievement
 from items import vehicles
 from nations import NAMES as NATION_NAMES
 

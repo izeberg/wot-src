@@ -1,10 +1,12 @@
-import ResMgr, nations, os
+from __future__ import absolute_import
+import os
+from past.builtins import intern
+import ResMgr, nations, items.components.crew_skins_components as cc
 from constants import REGIONAL_REALMS
 from items import _xml
 from items import vehicles
-from items.components import skills_constants, crew_skins_constants
+from items.components import crew_skins_constants
 from items.components import tankmen_components
-import items.components.crew_skins_components as cc
 
 def _readPriceForItem(pricesDest, xmlCtx, section, compactDescr):
     if pricesDest is not None:
@@ -38,9 +40,9 @@ def _readPriceGroups(pricesCache, cache, xmlCtx, section, sectionName):
         _readPriceForItem(pricesCache, iCtx, iSection, priceGroup.compactDescr)
         if iSection.has_key('tags'):
             tags = iSection.readString('tags').split()
-            priceGroup.tags = frozenset(map(intern, tags))
-            for tag in priceGroup.tags:
-                cache.priceGroupTags.setdefault(tag, []).append(priceGroup)
+            priceGroup.tags = frozenset(intern(tag) for tag in tags)
+            for priceTag in priceGroup.tags:
+                cache.priceGroupTags.setdefault(priceTag, []).append(priceGroup)
 
         cache.priceGroupNames[priceGroup.name] = priceGroup.id
         cache.priceGroups[priceGroup.id] = priceGroup
@@ -113,7 +115,7 @@ def _readSkinItem(pricesCache, cache, xmlCtx, section, storage):
 
 
 def _readCrewSkinsCacheFromXMLSection(pricesCache, cache, xmlCtx, section, sectionName, storage):
-    for i, (gname, gsection) in enumerate(section.items()):
+    for gname, gsection in section.items():
         if gname != sectionName:
             continue
         _readSkinItem(pricesCache, cache, xmlCtx, gsection, storage)

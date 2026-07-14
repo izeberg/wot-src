@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import weakref, BigWorld, Keys
 from Event import Event
 from account_helpers.settings_core.settings_constants import GRAPHICS

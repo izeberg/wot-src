@@ -1,5 +1,5 @@
-import CGF, enum, BattleReplay
-from cgf_script.managers_registrator import autoregister
+from __future__ import absolute_import
+import enum, BattleReplay
 from constants import IS_UE_EDITOR
 from helpers import isPlayerAccount, isPlayerAvatar
 
@@ -29,10 +29,3 @@ def clientWorldsPredicate(clientWorlds):
         return bool(getClientWorld() & clientWorlds)
 
     return predicate
-
-
-def clientWorldsManager(clientWorlds):
-    domain = CGF.DomainOption.DomainClient
-    if ClientWorld.EDITOR & clientWorlds:
-        domain |= CGF.DomainOption.DomainEditor
-    return autoregister(presentInAllWorlds=True, creationPredicate=clientWorldsPredicate(clientWorlds), domain=domain)

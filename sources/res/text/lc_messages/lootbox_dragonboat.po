@@ -21,9 +21,6 @@ msgstr ""
 "These are special boxes containing unique and valuable in-game items.\n"
 "You can obtain boxes in the in-game Store or Premium Shop."
 
-msgid "entryPoint/tooltip/title"
-msgstr "Dragon Boat Boxes and How to Receive Them"
-
 msgid "entryPoint/tooltip/warningTitle"
 msgstr "Dragon Boat Boxes Temporarily Unavailable"
 
@@ -51,14 +48,3 @@ msgid "noBoxesView/description/"
 msgstr ""
 "You do not have any boxes.\n"
 "You can get them in the in-game Store."
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/count"
-msgstr "Boxes opened: %(boxes)s"
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/header"
-msgstr "Remaining Boxes Opened"
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/text"
-msgstr ""
-"At the end of the event, we opened all of your boxes and added their "
-"contents to your account."

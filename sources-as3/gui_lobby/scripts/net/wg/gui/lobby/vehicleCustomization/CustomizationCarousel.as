@@ -5,7 +5,6 @@ package net.wg.gui.lobby.vehicleCustomization
    import flash.display.MovieClip;
    import flash.events.Event;
    import flash.events.MouseEvent;
-   import flash.geom.Point;
    import flash.geom.Rectangle;
    import net.wg.data.ListDAAPIDataProvider;
    import net.wg.data.VO.TankCarouselFilterInitVO;
@@ -189,11 +188,11 @@ package net.wg.gui.lobby.vehicleCustomization
          var _loc5_:int = 0;
          var _loc9_:Number = NaN;
          var _loc10_:Number = NaN;
-         var _loc11_:Point = null;
-         var _loc12_:Rectangle = null;
+         var _loc11_:Rectangle = null;
          var _loc3_:int = param2 + OFFSET_ARROW + EXTRA_OFFSET + this.leftOffset;
          var _loc4_:int = param1 - _loc3_ - OFFSET_ARROW;
          _loc5_ = _loc4_ + leftArrowOffset - rightArrowOffset;
+         this._layoutController.setLeftPanelOffset(EXTRA_OFFSET + this.leftOffset);
          if(this.shopEntryPointBtn)
          {
             this.shopEntryPointBtn.x = SHOP_ENTRY_X;
@@ -206,20 +205,14 @@ package net.wg.gui.lobby.vehicleCustomization
          var _loc7_:Number = 0;
          if(_loc6_.minHorizontalScrollPosition == _loc6_.maxHorizontalScrollPosition && _loc6_.maxHorizontalScrollPosition == 0)
          {
-            _loc9_ = scrollList.viewPort.visibleWidth;
-            _loc10_ = 0;
-            if(_loc6_.usesLayoutController())
+            if(!_loc6_.usesLayoutController())
             {
-               _loc11_ = this._layoutController.getMaxExtents();
-               _loc10_ = _loc11_.x - _loc9_;
-            }
-            else
-            {
+               _loc9_ = scrollList.viewPort.visibleWidth;
                _loc10_ = _loc6_.minHorizontalScrollPosition + scrollList.viewPort.validWidth - _loc9_;
-            }
-            if(_loc10_ < 0)
-            {
-               _loc7_ = Math.min(-1 * _loc10_ >> 1,SHORT_LIST_MAX_LEFT_OFFSET);
+               if(_loc10_ < 0)
+               {
+                  _loc7_ = Math.min(-1 * _loc10_ >> 1,SHORT_LIST_MAX_LEFT_OFFSET);
+               }
             }
          }
          var _loc8_:int = scrollList.width;
@@ -233,9 +226,9 @@ package net.wg.gui.lobby.vehicleCustomization
          this.dragBlocker.width = param1;
          if(hasScrollButtons)
          {
-            _loc12_ = CustomizationShared.computeItemSize(false,this._isMinResolution);
-            leftArrow.height = _loc12_.height;
-            rightArrow.height = _loc12_.height;
+            _loc11_ = CustomizationShared.computeItemSize(false,this._isMinResolution);
+            leftArrow.height = _loc11_.height;
+            rightArrow.height = _loc11_.height;
          }
          this.scrollBar.width = scrollList.width;
          this.scrollBar.x = scrollList.x;

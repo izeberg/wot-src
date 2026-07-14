@@ -1,8 +1,7 @@
-from abc import ABCMeta
+from __future__ import absolute_import
 from typing import TypeVar
 
 class GoodieTarget(object):
-    __metaclass__ = ABCMeta
 
     def __init__(self, targetID, limit=None):
         self._targetID = targetID
@@ -29,15 +28,15 @@ class GoodieTarget(object):
 
 
 class GoodieTargetAvatar(GoodieTarget):
-    __metaclass__ = ABCMeta
+    pass
 
 
 class GoodieTargetVehicle(GoodieTarget):
-    __metaclass__ = ABCMeta
+    pass
 
 
 class HangarTarget(GoodieTarget):
-    __metaclass__ = ABCMeta
+    pass
 
 
 class BuyPremiumAccount(HangarTarget):

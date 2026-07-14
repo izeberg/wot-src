@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/italy/It38_Donnola/normal/lod3/Gun_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.374355 -0.250365 -0.343059</min>
+		<max>0.370701 0.409856 3.551017</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/italy/It38_Donnola/normal/lod2/Gun_01</nodefullVisual>
+</root>

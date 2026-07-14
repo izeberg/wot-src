@@ -1,5 +1,7 @@
+from __future__ import absolute_import
 from UserDict import IterableUserDict
 import typing
+from future.utils import iteritems
 from account_helpers import AccountSettings
 from account_helpers.AccountSettings import QUEST_DELTAS, QUESTS
 if typing.TYPE_CHECKING:
@@ -10,11 +12,11 @@ class QuestDeltasSettings(IterableUserDict):
     def __init__(self, subKey=''):
         IterableUserDict.__init__(self)
         self._subKey = subKey
-        savedSettings = AccountSettings.getSettings(QUESTS).get(QUEST_DELTAS, dict()).get(self._subKey)
+        savedSettings = AccountSettings.getSettings(QUESTS).get(QUEST_DELTAS, {}).get(self._subKey)
         if savedSettings is None:
             return
         else:
-            for k, v in savedSettings.iteritems():
+            for k, v in iteritems(savedSettings):
                 self.data[k] = v
 
             return
@@ -28,7 +30,6 @@ class QuestDeltasSettings(IterableUserDict):
         self._saveToSettings()
 
     def _saveToSettings(self):
-        savedDict = {k:v for k, v in self.data.iteritems()}
         questSettings = AccountSettings.getSettings(QUESTS)
-        questSettings.get(QUEST_DELTAS, dict())[self._subKey] = savedDict
+        questSettings.get(QUEST_DELTAS, {})[self._subKey] = dict(self.data)
         AccountSettings.setSettings(QUESTS, questSettings)

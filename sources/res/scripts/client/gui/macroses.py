@@ -72,7 +72,7 @@ def getPeripheryID(args=None, connectionMgr=None):
     if connectionMgr is not None:
         return str(connectionMgr.peripheryID)
     else:
-        return '0'
+        return str(constants.STANDALONE_CLUSTER_ID)
 
 
 def getUnitServerID(args=None):

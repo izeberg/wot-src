@@ -48,7 +48,7 @@
 				<material>
 					<identifier>s_nd0</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>1</collisionFlags>
 					<materialKind>112</materialKind>
 					<property>
 						albedoHeightTile0

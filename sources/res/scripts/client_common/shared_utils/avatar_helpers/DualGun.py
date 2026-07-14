@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from constants import DUAL_GUN
 
 class DualGunHelper(object):

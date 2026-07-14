@@ -54,7 +54,7 @@ class SwitchCamera(Block, CameraMeta):
     def _execute(self):
         cameraName = self._cameraName.getValue()
         spaceId = self._spaceId.getValue()
-        cameraManager = CGF.getManager(spaceId, hangar_camera_manager.HangarCameraManager)
+        cameraManager = CGF.getSystem(spaceId, hangar_camera_manager.HangarCameraSystem)
         if cameraManager:
             cameraManager.switchByCameraName(cameraName, self._instantly.getValue())
         self._out.call()
@@ -88,7 +88,7 @@ class ActivateCameraWithOverlay(Block, CameraMeta):
     def _execute(self):
         cameraName = self._cameraName.getValue()
         spaceId = self._spaceId.getValue()
-        cameraManager = CGF.getManager(spaceId, hangar_camera_manager.HangarCameraManager)
+        cameraManager = CGF.getSystem(spaceId, hangar_camera_manager.HangarCameraSystem)
         if cameraManager:
             cameraManager.activateCamera(cameraName)
         self.overlay.setOverlayState(True)
@@ -111,7 +111,7 @@ class DeactivateCameraWithOverlay(Block, CameraMeta):
 
     def _execute(self):
         spaceId = self._spaceId.getValue()
-        cameraManager = CGF.getManager(spaceId, hangar_camera_manager.HangarCameraManager)
+        cameraManager = CGF.getSystem(spaceId, hangar_camera_manager.HangarCameraSystem)
         if cameraManager:
             cameraManager.switchToTank()
         self.overlay.setOverlayState(False)
@@ -134,7 +134,7 @@ class OnCameraSwitched(Block, CameraMeta):
         return
 
     def _initialize(self):
-        cameraManager = CGF.getManager(self._spaceID.getValue(), hangar_camera_manager.HangarCameraManager)
+        cameraManager = CGF.getSystem(self._spaceID.getValue(), hangar_camera_manager.HangarCameraSystem)
         if cameraManager:
             cameraManager.onCameraSwitched += self._onCameraSwitched
 
@@ -156,7 +156,7 @@ class GetCameraName(Block, CameraMeta):
 
     def _execute(self):
         spaceId = self._spaceId.getValue()
-        cameraManager = CGF.getManager(spaceId, hangar_camera_manager.HangarCameraManager)
+        cameraManager = CGF.getSystem(spaceId, hangar_camera_manager.HangarCameraSystem)
         if cameraManager:
             self._cameraName.setValue(cameraManager.getCurrentCameraName())
 

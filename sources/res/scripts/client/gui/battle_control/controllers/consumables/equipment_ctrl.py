@@ -1,6 +1,9 @@
+from __future__ import absolute_import, division
 import itertools, logging
+from builtins import round
 from collections import namedtuple
 from functools import partial
+from future.utils import listvalues, viewitems, viewvalues
 from typing import Optional
 import BigWorld, Event, SoundGroups
 from AvatarInputHandler.AimingSystems import getShotTargetInfo
@@ -80,7 +83,7 @@ class EquipmentSound(object):
 
     @staticmethod
     def getSounds():
-        return EquipmentSound._soundMap.values()
+        return listvalues(EquipmentSound._soundMap)
 
     @staticmethod
     def playSound(ID):
@@ -235,7 +238,7 @@ class _EquipmentItem(object):
 
     @property
     def becomeAvailable(self):
-        return self.getPrevQuantity() <= 0 and self.getQuantity() > 0
+        return self.getPrevQuantity() <= 0 < self.getQuantity()
 
     def getDescriptor(self):
         return self._descriptor
@@ -905,7 +908,7 @@ class _RegenerationKitItem(_EquipmentItem):
         else:
             vehicle = BigWorld.entities.get(avatar.playerVehicleID)
             if not vehicle or vehicle.health >= vehicle.maxHealth and not any(deviceState in ('destroyed',
-                                                                                              'critical') for deviceState in avatar.deviceStates.itervalues()):
+                                                                                              'critical') for deviceState in viewvalues(avatar.deviceStates)):
                 return (
                  False, _ActivationError('vehicleIsNotDamaged', {'name': self._descriptor.userString}))
             return (
@@ -1172,7 +1175,7 @@ class _DAMAGE_PANEL_EQUIPMENT(CONST_CONTAINER):
 def _getInitialTagsAndClass(descriptor, tagsToItems):
     descrTags = descriptor.tags
     tagsCandidate, clazzCandidate = tuple(), None
-    for requiredTags, itemClass in tagsToItems.iteritems():
+    for requiredTags, itemClass in viewitems(tagsToItems):
         for tag in requiredTags:
             if tag not in descrTags:
                 break
@@ -1261,7 +1264,7 @@ class EquipmentsController(MethodsRules, IBattleController):
             self.onEquipmentsCleared()
 
     def cancel(self):
-        item = findFirst(lambda item: item.isInPreparing() and item.canDeactivate(), self._equipments.itervalues())
+        item = findFirst(lambda item: item.isInPreparing() and item.canDeactivate(), viewvalues(self._equipments))
         if item is not None:
             item.deactivate()
             return True
@@ -1272,7 +1275,7 @@ class EquipmentsController(MethodsRules, IBattleController):
         return intCD in self._equipments
 
     def iterEquipmentsByTag(self, tag, condition=None):
-        return ((intCD, item) for intCD, item in self._equipments.iteritems() if tag in item.getTags() and (condition is None or condition(item)))
+        return ((intCD, item) for intCD, item in viewitems(self._equipments) if tag in item.getTags() and (condition is None or condition(item)))
 
     def getEquipmentNameByID(self, itemID):
         item = vehicles.g_cache.equipments().get(itemID, None)
@@ -1291,7 +1294,7 @@ class EquipmentsController(MethodsRules, IBattleController):
         return item
 
     def getEquipmentByName(self, equipmentName):
-        for eqItem in self._equipments.itervalues():
+        for eqItem in viewvalues(self._equipments):
             if eqItem.getDescriptor().name == equipmentName:
                 return eqItem
 
@@ -1352,7 +1355,7 @@ class EquipmentsController(MethodsRules, IBattleController):
         return
 
     def updateMapCase(self):
-        for item in self._equipments.itervalues():
+        for item in viewvalues(self._equipments):
             item.updateMapCase()
 
     @MethodsRules.delayable('notifyPlayerVehicleSet')
@@ -1417,7 +1420,7 @@ class EquipmentsController(MethodsRules, IBattleController):
             return (False, None)
         else:
             result, error = True, None
-            for _, item in self._equipments.iteritems():
+            for item in viewvalues(self._equipments):
                 if tag in item.getTags() and _DAMAGE_PANEL_EQUIPMENT.hasValue(tag):
                     result, error = self._doChangeSetting(item, entityName, avatar)
                     break
@@ -1426,7 +1429,7 @@ class EquipmentsController(MethodsRules, IBattleController):
              result, error)
 
     def showMarker(self, eq, pos, direction, time, team=None):
-        item = findFirst(lambda e: e.getEquipmentID() == eq.id[1], self._equipments.itervalues())
+        item = findFirst(lambda e: e.getEquipmentID() == eq.id[1], viewvalues(self._equipments))
         if item is None:
             item = self.createItem(eq, 0, -1, 0, 0)
         self.onEquipmentMarkerShown(item, pos, direction, time, team)
@@ -1457,7 +1460,7 @@ class EquipmentsController(MethodsRules, IBattleController):
                         if vehicle and vehicle.position.distTo(hitPoint) < vehicle.position.distTo(desiredShotPoint):
                             desiredShotPoint = hitPoint
                     self.__preferredPosition = desiredShotPoint
-                forEach(lambda e: e.deactivate(), [ e for e in self._equipments.itervalues() if e.getStage() == EQUIPMENT_STAGES.PREPARING ])
+                forEach(lambda e: e.deactivate(), [ e for e in viewvalues(self._equipments) if e.getStage() == EQUIPMENT_STAGES.PREPARING ])
                 item.activate(entityName, avatar)
         return (
          result, error)
@@ -1964,7 +1967,7 @@ class EquipmentsReplayPlayer(EquipmentsController):
         return
 
     def __tick(self):
-        for intCD, percentGetter in self.__percentGetters.iteritems():
+        for intCD, percentGetter in viewitems(self.__percentGetters):
             percent = percentGetter()
             currentPercent = self.__percents.get(intCD)
             if currentPercent != percent:
@@ -1972,12 +1975,12 @@ class EquipmentsReplayPlayer(EquipmentsController):
                 self.onEquipmentCooldownInPercent(intCD, percent)
 
     def __tickInSeconds(self):
-        for intCD, timeGetter in self.__timeGetters.iteritems():
+        for intCD, timeGetter in viewitems(self.__timeGetters):
             time = timeGetter()
             currentTime = self.__times.get(intCD)
             if currentTime != time:
                 isBaseTime = False
-                if self._equipments.has_key(intCD):
+                if intCD in self._equipments:
                     isBaseTime = self._equipments[intCD].getStage() == EQUIPMENT_STAGES.ACTIVE
                 self.__times[intCD] = time
                 self.onEquipmentCooldownTime(intCD, time, isBaseTime, time == 0)

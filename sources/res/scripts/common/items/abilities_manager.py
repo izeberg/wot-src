@@ -1,8 +1,9 @@
+from __future__ import absolute_import
 import typing
-from operator import add
 from collections import defaultdict, namedtuple
+from operator import add
+from future.utils import viewitems
 from items import perks
-from itertools import imap
 from debug_utils import LOG_DEBUG_DEV
 _AbilityRecord = namedtuple('_AbilityRecord', ('name', 'perks'))
 
@@ -16,13 +17,13 @@ class AbilitiesManager(object):
         self.reset()
 
     def addBuild(self, vehInvID, scopeName, perksDict, priority=DEFAULT_PRIORITY):
-        validPerks = {perkID:perkLevel for perkID, perkLevel in perksDict.iteritems() if perks.g_cache.perks.validatePerk(perkID) and perkLevel > 0 if perks.g_cache.perks.validatePerk(perkID) and perkLevel > 0}
+        validPerks = {perkID:perkLevel for perkID, perkLevel in viewitems(perksDict) if perks.g_cache.perks.validatePerk(perkID) and perkLevel > 0 if perks.g_cache.perks.validatePerk(perkID) and perkLevel > 0}
         if len(validPerks) != len(perksDict):
             LOG_DEBUG_DEV(('AbilitiesManager.addBuild: build is empty or holds not valid perks: {}, {}, {}, {}').format(vehInvID, scopeName, priority, perksDict))
         if validPerks:
             LOG_DEBUG_DEV(('AbilitiesManager.addBuild:{}, {}, {}, {}').format(vehInvID, scopeName, priority, validPerks))
             del_index = None
-            for i, (pr, rec) in enumerate(self._scopes[vehInvID]):
+            for i, (_, rec) in enumerate(self._scopes[vehInvID]):
                 if rec.name == scopeName:
                     del_index = i
                     break
@@ -36,7 +37,7 @@ class AbilitiesManager(object):
 
     def modifyBuild(self, vehInvID, scopeName, modDict, operator=add):
         build = None
-        for pr, rec in self._scopes[vehInvID]:
+        for _, rec in self._scopes[vehInvID]:
             if rec.name == scopeName:
                 build = rec.perks
                 break
@@ -46,7 +47,7 @@ class AbilitiesManager(object):
             self.addBuild(vehInvID, scopeName, modDict)
             return
         else:
-            for perkID, mod in modDict.iteritems():
+            for perkID, mod in viewitems(modDict):
                 buildValue = build.get(perkID)
                 if buildValue is None:
                     build[perkID] = mod
@@ -62,8 +63,8 @@ class AbilitiesManager(object):
         else:
             vehBuilds = sorted(vehiclePerks, key=lambda e: e[0])
             if perksMaxLevelConfig is not None:
-                return {vehBuild[1].name:tuple((perkID, min(perksMaxLevelConfig.getMaxPerkLevel(perkID, level), level)) for perkID, level in vehBuild[1].perks.iteritems()) for vehBuild in vehBuilds}
-            return {vehBuild[1].name:tuple(vehBuild[1].perks.iteritems()) for vehBuild in vehBuilds}
+                return {vehBuild[1].name:tuple((perkID, min(perksMaxLevelConfig.getMaxPerkLevel(perkID, level), level)) for perkID, level in viewitems(vehBuild[1].perks)) for vehBuild in vehBuilds}
+            return {vehBuild[1].name:tuple(viewitems(vehBuild[1].perks)) for vehBuild in vehBuilds}
 
     def getPerksListByVehicle(self, vehInvID):
         vehiclePerks = self._scopes.get(vehInvID)
@@ -74,7 +75,7 @@ class AbilitiesManager(object):
             return {vehBuild[1].name:vehBuild[1].perks.keys() for vehBuild in vehBuilds}
 
     def getPerkLevelByVehicle(self, vehInvID, scopeName, perkID):
-        for pr, rec in self._scopes[vehInvID]:
+        for _, rec in self._scopes[vehInvID]:
             if rec.name == scopeName:
                 return rec.perks.get(perkID, 0)
 

@@ -1,4 +1,4 @@
-
+from __future__ import absolute_import
 
 def init():
     from dossiers2.custom.cache import buildCache

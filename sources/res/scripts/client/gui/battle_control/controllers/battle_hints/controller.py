@@ -1,10 +1,12 @@
+from __future__ import absolute_import
 import sys, weakref, typing
 from typing import Optional, Dict, Tuple, Union
-import BattleReplay, replay
+import BattleReplay
 from PlayerEvents import g_playerEvents
 from debug_utils import LOG_DEBUG
 from gui.battle_control.view_components import ViewComponentsController
 from gui.battle_control.battle_constants import BATTLE_CTRL_ID
+from gui.battle_control.controllers.battle_hints import replay
 from gui.battle_control.controllers.battle_hints.common import getLogger
 from gui.battle_control.controllers.battle_hints.queues import BattleHintsQueuesMgr
 from gui.battle_control.controllers.battle_hints.component import BattleHintComponent
@@ -31,7 +33,7 @@ class BattleHintsController(ViewComponentsController):
         self._modelsMgr = battleHintsModelsMgr.get()
         self._queuesMgr = BattleHintsQueuesMgr()
         self._history = BattleHintsHistory()
-        self._maxPriorityOffset = SequenceIDGenerator(lowBound=0, highBound=sys.maxint)
+        self._maxPriorityOffset = SequenceIDGenerator(lowBound=0, highBound=sys.maxsize)
         self._components = {}
         self._replayController = None
         _logger.debug('Initialized.')
@@ -65,7 +67,7 @@ class BattleHintsController(ViewComponentsController):
         hint, queue = self._prepare(hintName, params=params)
         if hint and queue and hint.canBeShown():
             if immediately:
-                hint.setMaxPriority(self._maxPriorityOffset.next())
+                hint.setMaxPriority(self._maxPriorityOffset.nextSequenceID)
             queue.add(hint)
 
     @ifStarted

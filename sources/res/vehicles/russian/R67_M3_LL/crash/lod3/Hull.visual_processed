@@ -22,7 +22,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 1.000000 0.000000</row1>
 					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 -0.158037 -1.705544</row3>
+					<row3>0.000000 -0.196767 -1.705544</row3>
 				</transform>
 			</node>
 			<node>
@@ -31,7 +31,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 1.000000 0.000000</row1>
 					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>-0.190733 0.379997 -0.072383</row3>
+					<row3>-0.190733 0.341267 -0.072383</row3>
 				</transform>
 			</node>
 			<node>
@@ -40,7 +40,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 1.000000 0.000000</row1>
 					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 0.759474 0.172510</row3>
+					<row3>0.000000 0.720744 0.172510</row3>
 				</transform>
 			</node>
 		</node>
@@ -91,7 +91,7 @@
 						<Int>0</Int>
 					</property>
 				</material>
-				<groupOrigin>0.003066 0.144759 -0.090703</groupOrigin>
+				<groupOrigin>0.003066 0.106029 -0.090703</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				1
@@ -148,7 +148,7 @@
 						<Int>0</Int>
 					</property>
 				</material>
-				<groupOrigin>-0.010646 0.115344 -0.028939</groupOrigin>
+				<groupOrigin>-0.010646 0.076614 -0.028939</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				2
@@ -205,13 +205,13 @@
 						<Int>64</Int>
 					</property>
 				</material>
-				<groupOrigin>0.000008 -0.389999 0.131432</groupOrigin>
+				<groupOrigin>0.000008 -0.428729 0.131432</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-1.151158 -0.870880 -2.339926</min>
-		<max>1.129867 0.870764 2.282047</max>
+		<min>-1.151158 -0.909610 -2.339926</min>
+		<max>1.129867 0.832034 2.282047</max>
 	</boundingBox>
-	<geometrySize>201756</geometrySize>
+	<geometrySize>200956</geometrySize>
 </root>

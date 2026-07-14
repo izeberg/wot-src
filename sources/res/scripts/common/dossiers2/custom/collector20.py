@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import ResMgr, typing
 from items.vehicles import makeVehicleTypeCompDescrByName
 from soft_exception import SoftException

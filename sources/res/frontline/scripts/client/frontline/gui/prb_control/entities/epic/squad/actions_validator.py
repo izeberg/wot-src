@@ -4,7 +4,7 @@ from gui.prb_control.entities.base.actions_validator import ActionsValidatorComp
 from gui.prb_control.entities.base.squad.actions_validator import SquadActionsValidator, SquadVehiclesValidator
 from gui.prb_control.entities.base.unit.actions_validator import CommanderValidator
 from gui.prb_control.entities.base.unit.actions_validator import UnitStateValidator
-from gui.prb_control.entities.random.squad.actions_validator import BalancedSquadVehiclesValidator, RoleForbiddenSquadVehiclesValidator
+from gui.prb_control.entities.random.squad.actions_validator import BalancedSquadVehiclesValidator, SquadRestrictionsVehiclesValidator
 from gui.prb_control.items import ValidationResult
 from gui.prb_control.settings import UNIT_RESTRICTION
 from helpers import time_utils, dependency
@@ -42,7 +42,7 @@ class EpicSquadActionsValidator(SquadActionsValidator):
         return ActionsValidatorComposite(entity, validators=[
          _EpicBalancedSquadVehiclesValidator(entity),
          _EpicVehiclesValidator(entity),
-         RoleForbiddenSquadVehiclesValidator(entity)])
+         SquadRestrictionsVehiclesValidator(entity)])
 
     def _createStateValidator(self, entity):
         return _EpicStateValidator(entity)

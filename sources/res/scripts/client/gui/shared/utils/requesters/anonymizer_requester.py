@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing, BigWorld
 from gui.shared.utils.requesters.abstract import AbstractSyncDataRequester
 from skeletons.gui.shared.utils.requesters import IAnonymizerRequester
@@ -10,7 +11,7 @@ class AnonymizerRequester(AbstractSyncDataRequester, IAnonymizerRequester):
 
     @property
     def contactsFeedback(self):
-        return self.getCacheValue('contactsFeedback', list())
+        return self.getCacheValue('contactsFeedback', [])
 
     def _requestCache(self, callback=None):
         BigWorld.player().anonymizer.getCache(lambda resID, value: self._response(resID, value, callback))

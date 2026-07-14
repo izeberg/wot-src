@@ -266,9 +266,6 @@ msgstr "Click to send a message to chat channel."
 msgid "members/chat/sendMessage/header"
 msgstr "Send Message"
 
-msgid "members/footer/AT_SPG_Full"
-msgstr "The Platoon has reached the maximum number of tank destroyers"
-
 msgid "members/footer/comp7Invite"
 msgstr "Invite"
 
@@ -284,26 +281,35 @@ msgstr "Click to indicate that you are not ready."
 msgid "members/footer/getReady"
 msgstr "Confirm that you are ready to join the battle."
 
-msgid "members/footer/heavyTankFull"
-msgstr "The Platoon has reached the maximum number of heavy tanks"
-
 msgid "members/footer/invalidVehicleLevel"
 msgstr "Incompatible Tier"
-
-msgid "members/footer/mediumTankFull"
-msgstr "The Platoon has reached the maximum number of medium tanks"
-
-msgid "members/footer/scoutFull"
-msgstr "The Platoon has reached the maximum number of light tanks"
-
-msgid "members/footer/spgFull"
-msgstr "The Platoon has reached the maximum number of SPGs"
 
 msgid "members/footer/vehicles/differentLevels"
 msgstr "Penalty to experience due to inappropriate Platoon composition!"
 
-msgid "members/footer/wheeledFull"
+msgid "members/footer/vehiclesGroupIsFull"
+msgstr "Vehicle limit reached"
+
+msgid "members/footer/vehiclesGroupIsFull/AT_SPG"
+msgstr "The Platoon has reached the maximum number of tank destroyers"
+
+msgid "members/footer/vehiclesGroupIsFull/SPG"
+msgstr "The Platoon has reached the maximum number of SPGs"
+
+msgid "members/footer/vehiclesGroupIsFull/heavyTank"
+msgstr "The Platoon has reached the maximum number of heavy tanks"
+
+msgid "members/footer/vehiclesGroupIsFull/mediumTank"
+msgstr "The Platoon has reached the maximum number of medium tanks"
+
+msgid "members/footer/vehiclesGroupIsFull/role_LT_universal"
+msgstr "The Platoon has reached the maximum number of light tanks"
+
+msgid "members/footer/vehiclesGroupIsFull/role_LT_wheeled"
 msgstr "The Platoon has reached the maximum number of wheeled vehicles"
+
+msgid "members/footer/vehiclesGroupIsFull/scout"
+msgstr "The Platoon has reached the maximum number of light tanks"
 
 msgid "members/header/battle_royal"
 msgstr ": Steel Hunter"

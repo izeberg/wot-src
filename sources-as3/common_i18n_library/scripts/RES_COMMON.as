@@ -27,7 +27,11 @@ package
       
       public static const MAPS_ICONS_BATTLEPASS_WIDGET_BACKGROUND_DEFAULT_BG:String = "../maps/icons/battlePass/widget/background/default/bg.png";
       
+      public static const MAPS_ICONS_BATTLEPASS_WIDGET_BACKGROUND_SEASON_20_BG:String = "../maps/icons/battlePass/widget/background/season_20/bg.png";
+      
       public static const MAPS_ICONS_BLUEPRINTS_FRAGMENT_CONVERSION_BG:String = "../maps/icons/blueprints/fragment/conversion/bg.png";
+      
+      public static const MAPS_ICONS_CHALLENGES_AWARDS_VIEW_BG:String = "../maps/icons/challenges/awards_view/bg.png";
       
       public static const MAPS_ICONS_COLLECTIONS_INTRO_BG:String = "../maps/icons/collections/intro/bg.png";
       

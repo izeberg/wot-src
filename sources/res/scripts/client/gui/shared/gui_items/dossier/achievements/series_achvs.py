@@ -1,6 +1,7 @@
+from __future__ import absolute_import
 from dossiers2.ui.achievements import ACHIEVEMENT_BLOCK as _AB
-from abstract import SeriesAchievement
-from abstract.mixins import Deprecated, Quest, NoProgressBar
+from gui.shared.gui_items.dossier.achievements.abstract import SeriesAchievement
+from gui.shared.gui_items.dossier.achievements.abstract.mixins import Deprecated, Quest, NoProgressBar
 
 class AimerAchievement(NoProgressBar, SeriesAchievement):
 

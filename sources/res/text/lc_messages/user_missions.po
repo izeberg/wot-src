@@ -42,6 +42,9 @@ msgstr "Temporarily unavailable"
 msgid "battle_pass_widget/title"
 msgstr "Battle Pass"
 
+msgid "challenge_missions/entrypoint/tooltip/challengeTitle"
+msgstr "Crucible: {{challengeName}}"
+
 msgid "common/daterange/divider"
 msgstr "{{startDate}} - {{endDate}}"
 
@@ -177,6 +180,167 @@ msgstr "WEEKLY"
 
 msgid "hub/basic_missions/weekly/update_info"
 msgstr "Updated every {{weekDay}}"
+
+msgid "hub/challenge_missions/card/activeLabel"
+msgstr "Active Mission"
+
+msgid "hub/challenge_missions/card/or"
+msgstr "OR"
+
+msgid "hub/challenge_missions/challenges_empty/title"
+msgstr "New missions coming soon..."
+
+msgid "hub/challenge_missions/complexity/easy"
+msgstr "FIGHTER"
+
+msgid "hub/challenge_missions/complexity/hard"
+msgstr "ACE"
+
+msgid "hub/challenge_missions/complexity/medium"
+msgstr "ELITE"
+
+msgid "hub/challenge_missions/complexity/tooltip/body"
+msgstr ""
+"There are three categories of missions: Fighter, Elite and Ace. Each "
+"category brings unique challenges and valuable rewards."
+
+msgid "hub/challenge_missions/header"
+msgstr "CRUCIBLE"
+
+msgid "hub/challenge_missions/header/buttons/activate"
+msgstr "Activate"
+
+msgid "hub/challenge_missions/header/buttons/freeRestart"
+msgstr "Restart for Free"
+
+msgid "hub/challenge_missions/header/buttons/restart"
+msgstr "Restart"
+
+msgid "hub/challenge_missions/header/buttons/surrender"
+msgstr "Abandon"
+
+msgid "hub/challenge_missions/header/buttons/toChallenge"
+msgstr "To Missions"
+
+msgid "hub/challenge_missions/header/complete"
+msgstr "%(completeIcon) Crucible Missions Completed"
+
+msgid "hub/challenge_missions/header/multiplier"
+msgstr "×%(count)s"
+
+msgid "hub/challenge_missions/header/numberTemplate"
+msgstr "%(currentNumber)s / %(commonNumber)s"
+
+msgid "hub/challenge_missions/header/remaining"
+msgstr "shields left"
+
+msgid "hub/challenge_missions/header/restart/text"
+msgstr "free restarts"
+
+msgid "hub/challenge_missions/header/restriction"
+msgstr "Complete the active Crucible missions"
+
+msgid "hub/challenge_missions/header/timer/text"
+msgstr "Will end in %(timer)s"
+
+msgid "hub/challenge_missions/header/unavailable"
+msgstr "%(lockIcon)Unavailable: %(text)s"
+
+msgid "hub/challenge_missions/header/vehicleRestriction"
+msgstr "Vehicle of Tier VI or higher required"
+
+msgid "hub/challenge_missions/missionsActive"
+msgstr "ACTIVE"
+
+msgid "hub/challenge_missions/missionsCompleted"
+msgstr "Completed"
+
+msgid "hub/challenge_missions/missionsCount"
+msgstr "{{currentMissions}} / {{totalMissions}} missions"
+
+msgid "hub/challenge_missions/name/default"
+msgstr "Challenge Mission"
+
+msgid "hub/challenge_missions/new"
+msgstr "NEW"
+
+msgid "hub/challenge_missions/notification/challenge_complete/affirmative"
+msgstr "To Crucible"
+
+msgid "hub/challenge_missions/notification/challenge_complete/button"
+msgstr "To Crucible"
+
+msgid "hub/challenge_missions/notification/challenge_complete/title"
+msgstr "CRUCIBLE: {{ challengeName }} COMPLETED!"
+
+msgid "hub/challenge_missions/notification/fail/button"
+msgstr "To Crucible"
+
+msgid "hub/challenge_missions/notification/fail/title"
+msgstr ""
+"Crucible: {{ challenge }} not completed. Restart it and go for the rewards "
+"again!"
+
+msgid "hub/challenge_missions/notification/mission_complete/button"
+msgstr "To Crucible"
+
+msgid "hub/challenge_missions/notification/mission_complete/title"
+msgstr "MISSION {{ mission }} COMPLETED!"
+
+msgid "hub/challenge_missions/notification/shield/button"
+msgstr "To Crucible"
+
+msgid "hub/challenge_missions/notification/shield/text"
+msgstr "Mission {{ mission }} failed"
+
+msgid "hub/challenge_missions/notification/shield/title"
+msgstr "SHIELDS LEFT"
+
+msgid "hub/challenge_missions/notification/start/button"
+msgstr "To Crucible"
+
+msgid "hub/challenge_missions/notification/start/newChallengesText"
+msgstr ""
+"Enter the Crucible and take on sets of demanding missions with valuable "
+"rewards for those who conquer them."
+
+msgid "hub/challenge_missions/notification/start/newChallengesTitle"
+msgstr "NEW CRUCIBLE MISSIONS AVAILABLE!"
+
+msgid "hub/challenge_missions/notification/start/text"
+msgstr ""
+"Forge your way to glory in the Crucible: take on sets of demanding missions "
+"with valuable rewards for those who conquer them."
+
+msgid "hub/challenge_missions/notification/start/title"
+msgstr "ENTER THE CRUCIBLE"
+
+msgid "hub/challenge_missions/replay/completed"
+msgstr "Completed"
+
+msgid "hub/challenge_missions/reward/attachmentsTitle"
+msgstr "3D attachment set"
+
+msgid "hub/challenge_missions/reward/improvedEquipment"
+msgstr "Improved equipment"
+
+msgid "hub/challenge_missions/reward/multi"
+msgstr "×{{count}}"
+
+msgid "hub/challenge_missions/reward/style2DTitle"
+msgstr "2D style"
+
+msgid "hub/challenge_missions/reward/tankmanTitle"
+msgstr "Crew member"
+
+msgid "hub/challenge_missions/reward/vehicleTitle"
+msgstr "Vehicle"
+
+msgid "hub/challenge_missions/title"
+msgstr "CRUCIBLE MISSIONS"
+
+msgid "hub/challenge_missions/tooltip/info_button"
+msgstr "About the Crucible"
 
 msgid "hub/common_missions/title"
 msgstr "EXTRA MISSIONS"
@@ -330,11 +494,55 @@ msgstr ""
 msgid "tooltip/daily_reroll/header"
 msgstr "Mission Re-roll"
 
+msgid "tooltip/hub/card/completed"
+msgstr "Mission completed, reward received."
+
+msgid "tooltip/hub/card/disabled"
+msgstr ""
+"Complete the preceding mission to unlock this one. All missions in a series "
+"must be completed sequentially."
+
 msgid "tooltip/hub/info_button/body"
 msgstr "Click for additional information"
 
 msgid "tooltip/hub/info_button/header"
 msgstr "About Missions"
+
+msgid "tooltip/hub/replay/body"
+msgstr ""
+"This series of missions can be replayed after completion. Your progress will"
+" reset and shields will be restored, and you will be able to earn the "
+"rewards again."
+
+msgid "tooltip/hub/replay/header"
+msgstr "Replay Missions"
+
+msgid "tooltip/hub/restart/description"
+msgstr ""
+"You can restart a series of missions after losing all your shields. Your "
+"mission progress will reset, your shields will be restored, and you will be "
+"able to earn the rewards again."
+
+msgid "tooltip/hub/restart/free_restarts_cost"
+msgstr "Subsequent restarts cost: %(currency)s"
+
+msgid "tooltip/hub/restart/free_restarts_text"
+msgstr "Free restarts available: %(currentNumber)s %(commonNumber)s"
+
+msgid "tooltip/hub/restart/only_paid_restart"
+msgstr "Each restart costs: %(currency)s"
+
+msgid "tooltip/hub/restart/title"
+msgstr "Restarts"
+
+msgid "tooltip/hub/shields/description"
+msgstr ""
+"Shields protect your progress. Each failed mission costs one shield, and "
+"when all shields are lost, the series of missions is failed. If you restart "
+"it, your shields will be restored."
+
+msgid "tooltip/hub/shields/title"
+msgstr "Shields"
 
 msgid "tooltip/vehicle_restrictions"
 msgstr "Vehicle restrictions:"

@@ -7,6 +7,7 @@
 		</battleResultProcessor_onBattleResultsReceived>
 		<battleResultProcessor_onPlayerLeftArena>
 			<Arg>INT32</Arg>
+			<Arg>INT32</Arg>
 			<Arg>MAILBOX</Arg>
 			<Arg>UINT64</Arg>
 			<Arg>PYTHON</Arg>

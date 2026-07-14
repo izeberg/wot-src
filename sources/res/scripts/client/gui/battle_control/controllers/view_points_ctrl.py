@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import weakref, functools, BigWorld
 from debug_utils import LOG_DEBUG
 from gui.battle_control.arena_info.interfaces import IViewPointsController

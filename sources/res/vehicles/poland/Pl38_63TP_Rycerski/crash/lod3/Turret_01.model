@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/poland/Pl38_63TP_Rycerski/crash/lod3/Turret_01</nodefullVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.490686 0.000648 -2.312262</min>
+		<max>1.493466 3.852926 1.322491</max>
+	</visibilityBox>
+	<parent>vehicles/poland/Pl38_63TP_Rycerski/crash/lod4/Turret_01</parent>
+	<extent>192.000000</extent>
+</root>

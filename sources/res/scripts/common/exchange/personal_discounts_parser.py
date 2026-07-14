@@ -1,5 +1,5 @@
+from __future__ import absolute_import
 import logging, re
-from decimal import Decimal
 from backports.functools_lru_cache import lru_cache
 import typing
 from exchange.personal_discounts_constants import EXCHANGE_RATE_GOLD_NAME, ExchangeRateCoefficientType, ExchangeDiscountInfo, ExchangeDiscountType, ExchangeRateShowFormat, ExchangeRateDiscountToken, EXCHANGE_RATE_FREE_XP_NAME, DIGITAL_TEMPLATE

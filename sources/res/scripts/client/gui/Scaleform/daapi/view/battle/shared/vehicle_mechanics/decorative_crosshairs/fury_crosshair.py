@@ -1,5 +1,6 @@
 from __future__ import absolute_import
-import typing
+import typing, BattleReplay
+from ReplayEvents import g_replayEvents
 from events_containers.common.containers import ContainersListener
 from events_handler import eventHandler
 from gui.Scaleform.daapi.view.meta.FuryDecorativeCrosshairMeta import FuryDecorativeCrosshairMeta
@@ -19,6 +20,16 @@ class FuryDecorativeCrosshair(FuryDecorativeCrosshairMeta, ContainersListener, I
         self.__level = -1
         self.__progress = -1.0
 
+    def _populate(self):
+        super(FuryDecorativeCrosshair, self)._populate()
+        if BattleReplay.g_replayCtrl.isPlaying:
+            g_replayEvents.onTimeWarpFinish += self.__onReplayTimeWarpFinished
+
+    def _dispose(self):
+        if BattleReplay.g_replayCtrl.isPlaying:
+            g_replayEvents.onTimeWarpFinish -= self.__onReplayTimeWarpFinished
+        super(FuryDecorativeCrosshair, self)._dispose()
+
     @eventHandler
     def onStatePrepared(self, state):
         self.__invalidateState(state)
@@ -35,6 +46,9 @@ class FuryDecorativeCrosshair(FuryDecorativeCrosshairMeta, ContainersListener, I
         return [
          VehicleMechanicPassengerUpdater(VehicleMechanic.BATTLE_FURY, self),
          VehicleMechanicStatesUpdater(VehicleMechanic.BATTLE_FURY, self)]
+
+    def __onReplayTimeWarpFinished(self):
+        self.as_setGunStackProgressS(self.__level, self.__progress)
 
     def __invalidateState(self, state):
         if state.level != self.__level or state.progress != self.__progress:

@@ -1,4 +1,6 @@
+from __future__ import absolute_import
 from collections import namedtuple
+from future.utils import viewvalues
 import BigWorld
 from gui.battle_control.arena_info.interfaces import IArenaLoadController
 from gui.battle_control.battle_constants import BATTLE_CTRL_ID
@@ -32,7 +34,7 @@ class DeathZonesController(IArenaLoadController):
             return
         else:
             if self.__timersData and vehicle.isAlive():
-                closestStrikeData = min(self.__timersData.itervalues(), key=lambda timersData: timersData.timeToStrike)
+                closestStrikeData = min(viewvalues(self.__timersData), key=lambda timersData: timersData.timeToStrike)
                 if closestStrikeData.timeToStrike != self.__timeToStrikeInCurrentNotification:
                     player.updateDeathZoneWarningNotification(True, not self.__playerEnterZone, closestStrikeData.timeToStrike, closestStrikeData.waveDuration)
                     self.__timeToStrikeInCurrentNotification = closestStrikeData.timeToStrike

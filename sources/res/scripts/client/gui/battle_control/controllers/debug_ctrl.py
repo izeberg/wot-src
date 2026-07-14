@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld, BattleReplay
 from gui.battle_control.battle_constants import BATTLE_CTRL_ID
 from gui.battle_control.view_components import IViewComponentsController

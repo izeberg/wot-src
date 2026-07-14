@@ -1,4 +1,4 @@
-import CGF, GenericComponents, Event
+import CGF, Event
 from helpers import dependency
 from script_component.DynamicScriptComponent import DynamicScriptComponent
 from skeletons.dynamic_objects_cache import IBattleDynamicObjectsCache
@@ -18,5 +18,5 @@ class VehicleBRRespawnEffectComponent(DynamicScriptComponent):
         if not prefabPath:
             return
         vehGO = self.entity.entityGameObject
-        transformComponent = vehGO.findComponentByType(GenericComponents.TransformComponent)
-        CGF.loadGameObject(prefabPath, vehGO.spaceID, transformComponent.worldPosition)
+        transformComponent = vehGO.findRead(CGF.TransformComponent)
+        CGF.loadAndCreatePrefab(prefabPath, vehGO.spaceID, transformComponent.worldPosition)

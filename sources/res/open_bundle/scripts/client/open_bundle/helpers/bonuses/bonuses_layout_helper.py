@@ -7,7 +7,7 @@ from gui.server_events.recruit_helper import getRecruitInfo
 from gui.shared.gui_items import GUI_ITEM_TYPE
 from gui.shared.utils.requesters.blueprints_requester import getVehicleCDForIntelligence, getVehicleCDForNational
 from messenger.formatters.service_channel_helpers import getCustomizationItem
-from open_bundle.helpers.bonuses.bonuses_constants import BonusesLayoutAttrs, ATTACHMENTS_TOKEN_PREFIX, ATTACHMENTS_TOKEN_NAME
+from open_bundle.helpers.bonuses.bonuses_constants import BonusesLayoutAttrs
 from shared_utils import first
 _logger = logging.getLogger(__name__)
 if TYPE_CHECKING:
@@ -166,24 +166,13 @@ class _CurrenciesSubTypeGetter(_BaseSubTypeGetter):
         return bonus.getCode()
 
 
-class _BattleTokenSubTypeGetter(_BaseSubTypeGetter):
-
-    @staticmethod
-    def getSubType(bonus):
-        keys = bonus.getValue().keys()
-        if first(keys).startswith(ATTACHMENTS_TOKEN_PREFIX):
-            return ATTACHMENTS_TOKEN_NAME
-        return ''
-
-
 _SUBTYPE_GETTERS = {'default': _BaseSubTypeGetter, 
    'customizations': _CustomizationSubTypeGetter, 
    'currencies': _CurrenciesSubTypeGetter, 
    'goodies': _GoodiesSubTypeGetter, 
    'items': _ItemsSubTypeGetter, 
    'vehicles': _VehiclesSubTypeGetter, 
-   'tmanToken': _TankmanSubTypeGetter, 
-   'battleToken': _BattleTokenSubTypeGetter}
+   'tmanToken': _TankmanSubTypeGetter}
 
 class _BaseValueGetter(object):
 

@@ -1,5 +1,6 @@
+from __future__ import absolute_import
 import typing
-from pet_constants import PetPromoConsts
+from pet_system_common.pet_constants import PetPromoConsts
 if typing.TYPE_CHECKING:
     from typing import List, Dict, Iterable
 INVALID_PET_NAME_ID = -1
@@ -31,4 +32,4 @@ class PetPromoConfig(object):
         return self.getPets().get(petID, {}).get(PetPromoConsts.SHOP_URL, '')
 
     def getAvailablePets(self, unlockedPetsIDs):
-        return [ petID for petID in self.getPets().iterkeys() if petID not in unlockedPetsIDs ]
+        return [ petID for petID in self.getPets() if petID not in unlockedPetsIDs ]

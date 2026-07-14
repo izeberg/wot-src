@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import weakref, BattleReplay
 from constants import IS_DEVELOPMENT, ARENA_GUI_TYPE
 from frontline.gui.frontline_helpers import FLBattleTypeDescription

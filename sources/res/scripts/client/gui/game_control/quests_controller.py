@@ -1,4 +1,7 @@
+from __future__ import absolute_import
 import weakref, typing
+from builtins import filter
+from future.utils import listvalues, viewvalues
 from constants import EVENT_TYPE, PremiumConfigs
 from gui.ClientUpdateManager import g_clientUpdateManager
 from gui.shared.gui_items import GUI_ITEM_TYPE
@@ -44,7 +47,7 @@ class _QuestCache(object):
         return self.__invVehicles
 
     def getAllAvailableQuests(self):
-        return self.__eventsCache.getQuests(self.__filterFunc).values()
+        return listvalues(self.__eventsCache.getQuests(self.__filterFunc))
 
     def isAnyQuestAvailable(self):
         vehicles = self.getInventoryVehicles()
@@ -55,7 +58,7 @@ class _QuestCache(object):
         return False
 
     def getFirstAvailableQuest(self):
-        for quests in self.__cache.itervalues():
+        for quests in viewvalues(self.__cache):
             if quests:
                 return quests
 
@@ -88,7 +91,7 @@ class _QuestCache(object):
 
     def __update(self, vehicle=None):
         quests = self.__eventsCache.getQuests(self.__filterFunc)
-        for quest in quests.itervalues():
+        for quest in viewvalues(quests):
             suitableVehicles = quest.getSuitableVehicles()
             if vehicle and vehicle not in suitableVehicles:
                 continue
@@ -105,7 +108,7 @@ class _QuestCache(object):
         requestCriteria |= ~REQ_CRITERIA.VEHICLE.DISABLED_IN_PREM_IGR
         requestCriteria |= ~REQ_CRITERIA.VEHICLE.EXPIRED_RENT
         requestCriteria |= ~REQ_CRITERIA.VEHICLE.EVENT_BATTLE
-        self.__invVehicles = self.itemsCache.items.getVehicles(requestCriteria).values() or []
+        self.__invVehicles = listvalues(self.itemsCache.items.getVehicles(requestCriteria)) or []
 
     @classmethod
     def __filterFunc(cls, event):
@@ -123,7 +126,7 @@ class _QuestCache(object):
 
 
 class QuestsController(IQuestsController):
-    __slots__ = ('__quests', 'eventsCache')
+    __slots__ = ('__quests', )
     eventsCache = dependency.descriptor(IEventsCache)
     lobbyContext = dependency.descriptor(ILobbyContext)
     __battleRoyaleController = dependency.descriptor(IBattleRoyaleController)

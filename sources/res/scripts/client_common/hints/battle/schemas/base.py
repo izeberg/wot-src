@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, typing
 from constants import IS_DEVELOPMENT, IS_VS_EDITOR
 from dict2model import exceptions
@@ -212,7 +213,7 @@ def validateHintTextModel(model):
     count = sum([ 1 for text in (model.raw, model.key, model.template) if text ])
     if count <= 0:
         raise exceptions.ValidationError('Text not provided.')
-    elif count != 1:
+    if count != 1:
         raise exceptions.ValidationError('More than one text source provided.')
 
 

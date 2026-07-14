@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, typing, weakref, BigWorld
 from Event import SafeEvent
 if typing.TYPE_CHECKING:

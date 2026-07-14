@@ -730,6 +730,9 @@ _(#messenger:battle/toolTips/mutePlayer){/BODY}</value>
 		<personalReservesRelease>&lt;font color=&quot;#8C8C7E&quot;&gt;_(#messenger:serviceChannelMessages/personalReservesRelease/description)&lt;/font&gt;&lt;font color=&quot;#E9E2BF&quot;&gt;%(boosterCount)s&lt;/font&gt;</personalReservesRelease>
 		<pm3Gray>&lt;font color=&quot;#807e79&quot;&gt;%(message)s&lt;/font&gt;</pm3Gray>
 		<pm3Beige>&lt;font color=&quot;#c7c5bb&quot;&gt;%(message)s&lt;/font&gt;</pm3Beige>
+		<challengesSpentCredits>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#system_messages:challenges/formatter/spent/credits) &lt;font color=&apos;#D6D7D4&apos;&gt;%(amount)s&lt;/font&gt;&lt;/font&gt;</challengesSpentCredits>
+		<challengesSpentGold>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#system_messages:challenges/formatter/spent/gold) &lt;font color=&apos;#FFC363&apos;&gt;%(amount)s&lt;/font&gt;&lt;/font&gt;</challengesSpentGold>
+		<challengesSpentCrystal>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#system_messages:challenges/formatter/spent/crystal) &lt;font color=&apos;#C9C9B6&apos;&gt;%(amount)s&lt;/font&gt;&lt;/font&gt;</challengesSpentCrystal>
 	</htmlTemplatesSimple>
 	<htmlTemplates>
 		<SimpleGiftSysMessage>
@@ -1901,12 +1904,12 @@ _(#messenger:battle/toolTips/mutePlayer){/BODY}</value>
 			<icon>MessageIcon</icon>
 			<message>&lt;font color=&quot;#8C8C7E&quot;&gt;_(#system_messages:squad/notValidDeletedFilter)&lt;/font&gt;</message>
 		</prbVehicleKickFilter>
-		<prbVehicleMaxTypeKick>
+		<prbVehicleMaxCountKick>
 			<priority>high</priority>
 			<type>grey</type>
 			<icon>MessageIcon</icon>
-			<message>&lt;font color=&quot;#8C8C7E&quot;&gt;_(#system_messages:squad/notValidMaxVehTypeDeleted)&lt;/font&gt;</message>
-		</prbVehicleMaxTypeKick>
+			<message>&lt;font color=&quot;#8C8C7E&quot;&gt;_(#system_messages:squad/notValidMaxCountVehDeleted)&lt;/font&gt;</message>
+		</prbVehicleMaxCountKick>
 		<prbWrongEnqueueDataKick>
 			<priority>high</priority>
 			<type>grey</type>
@@ -2211,14 +2214,14 @@ _(#messenger:battle/toolTips/mutePlayer){/BODY}</value>
 		<LootBoxSystemRewardsSysMessage>
 			<type>grey</type>
 			<priority>low</priority>
-			<icon>GiftIcon</icon>
-			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(header)s&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;%(text)s</message>
+			<icon>InformationIcon</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(header)s&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;%(rewardsHeader)s&lt;br/&gt;%(text)s</message>
 		</LootBoxSystemRewardsSysMessage>
 		<LootBoxSystemAutoOpenMessage>
 			<priority>high</priority>
 			<type>grey</type>
-			<icon>GiftIcon</icon>
-			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(header)s&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;font face=&quot;$FieldFont&quot; size=&quot;14&quot; color=&apos;#8C8C7E&apos;&gt;%(description)s&lt;/font&gt;%(count)s</message>
+			<icon>InformationIcon</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(header)s&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;font face=&quot;$FieldFont&quot; size=&quot;14&quot; color=&apos;#8C8C7E&apos;&gt;%(description)s&lt;/font&gt;</message>
 			<buttonsLayout>
 				<button>
 					<type>submit</type>
@@ -2228,12 +2231,6 @@ _(#messenger:battle/toolTips/mutePlayer){/BODY}</value>
 				</button>
 			</buttonsLayout>
 		</LootBoxSystemAutoOpenMessage>
-		<LootBoxSystemResetStatsErrorSysMessage>
-			<type>grey</type>
-			<priority>medium</priority>
-			<icon>ErrorIcon</icon>
-			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#lootbox_system:serviceChannelMessages/statisticReset/server_error/header)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;%(text)s</message>
-		</LootBoxSystemResetStatsErrorSysMessage>
 		<OfferGiftBonusesSysMessage>
 			<type>grey</type>
 			<priority>low</priority>
@@ -3611,5 +3608,72 @@ _(#messenger:serviceChannelMessages/piggyBank/continueAfterSmashed)</message>
 			<icon>InformationIcon</icon>
 			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/collector20/title)&lt;/font&gt;&lt;br/&gt;&lt;font size=&apos;9&apos;&gt;&lt;/font&gt;&lt;br/&gt;%(message)s</message>
 		</Collector20RewardReceivedMessage>
+		<ChallengesActivationSysMessage>
+			<type>grey</type>
+			<priority>medium</priority>
+			<icon>WhiteFlag</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(title)s&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;</message>
+		</ChallengesActivationSysMessage>
+		<ChallengesFreeRestartSysMessage>
+			<type>grey</type>
+			<priority>medium</priority>
+			<icon>WhiteFlag</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(title)s&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;</message>
+		</ChallengesFreeRestartSysMessage>
+		<ChallengesPaidRestartSysMessage>
+			<type>grey</type>
+			<priority>medium</priority>
+			<icon>WhiteFlag</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(title)s&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(time)s&lt;br/&gt;%(text)s&lt;/font&gt;</message>
+		</ChallengesPaidRestartSysMessage>
+		<ChallengesFailNotification>
+			<groupID>info</groupID>
+			<priority>high</priority>
+			<gfViewName>ChallengesFailNotification</gfViewName>
+			<linkage>GamefaceNotification</linkage>
+		</ChallengesFailNotification>
+		<ChallengesShieldUsedNotification>
+			<groupID>info</groupID>
+			<priority>high</priority>
+			<gfViewName>ChallengesShieldUsedNotification</gfViewName>
+			<linkage>GamefaceNotification</linkage>
+		</ChallengesShieldUsedNotification>
+		<ChallengesStartNotification>
+			<groupID>info</groupID>
+			<priority>high</priority>
+			<gfViewName>ChallengesStartNotification</gfViewName>
+			<linkage>GamefaceNotification</linkage>
+		</ChallengesStartNotification>
+		<ChallengesMissionCompletedNotification>
+			<groupID>info</groupID>
+			<priority>high</priority>
+			<gfViewName>ChallengesMissionCompletedNotification</gfViewName>
+			<linkage>GamefaceNotification</linkage>
+		</ChallengesMissionCompletedNotification>
+		<ChallengesChallengeCompletedNotification>
+			<groupID>info</groupID>
+			<priority>high</priority>
+			<gfViewName>ChallengesChallengeCompletedNotification</gfViewName>
+			<linkage>GamefaceNotification</linkage>
+		</ChallengesChallengeCompletedNotification>
+		<ChallengesReminderSysMessage>
+			<type>grey</type>
+			<priority>medium</priority>
+			<icon>InformationIcon</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#system_messages:challenges/challengeEnd/title)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;_(#system_messages:challenges/challengeEnd/text)&lt;/font&gt;</message>
+			<buttonsLayout>
+				<button>
+					<type>submit</type>
+					<label>_(#system_messages:challenges/challengeEnd/button)</label>
+					<action>openExpiringChallenge</action>
+				</button>
+			</buttonsLayout>
+		</ChallengesReminderSysMessage>
+		<ChallengesKingRewardSysMessage>
+			<type>grey</type>
+			<priority>medium</priority>
+			<icon>InformationIcon</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#system_messages:challenges/challengeMissionComplete/header)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(header)s&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;</message>
+		</ChallengesKingRewardSysMessage>
 	</htmlTemplates>
 </root>

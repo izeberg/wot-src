@@ -1,9 +1,10 @@
 import BigWorld, Math, AnimationSequence, CGF, math_utils
-from cgf_script.component_meta_class import ComponentProperty, CGFMetaTypes, registerComponent
-from cgf_obsolete_script.py_component import Component
+from cgf_script.registration import ComponentProperty, registerComponent
+from components_base.component import Component
 from battleground.iself_assembler import ISelfAssembler
-from cgf_obsolete_script.script_game_object import ScriptGameObject, ComponentDescriptorTyped
+from components_base.component_descriptor import ComponentDescriptorTyped
 from arena_component_system.client_arena_component_system import ClientArenaComponent
+from components_base.component_controller import ComponentController
 from helpers import EffectsList, isPlayerAvatar
 from PlayerEvents import g_playerEvents
 
@@ -95,10 +96,10 @@ class SequenceComponent(Component):
 
     def bindAsTerrainEffect(self, position, spaceId, scale=None, loopCount=1):
         if self.createTerrainEffect(position, scale, loopCount):
-            effectHandler = CGF.GameObject(spaceId)
-            effectHandler.createComponent(_SequenceAnimatorTimer, self.__sequenceAnimator, effectHandler)
-            effectHandler.activate()
-            effectHandler.transferOwnershipToWorld()
+            queue = CGF.CommandQueue(spaceId)
+            effectHandler = queue.createGameObject()
+            queue.createComponent(effectHandler, _SequenceAnimatorTimer, self.__sequenceAnimator, effectHandler)
+            queue.activateGameObject(effectHandler)
             self.__sequenceAnimator = None
         return
 
@@ -157,8 +158,10 @@ class SequenceComponent(Component):
 
 @registerComponent
 class _SequenceAnimatorTimer(object):
-    domain = CGF.DomainOption.DomainClient | CGF.DomainOption.DomainEditor
-    parent = ComponentProperty(type=CGFMetaTypes.LINK, value=CGF.GameObject)
+    domain = CGF.Domain.ClientEditor
+    userVisible = False
+    vseVisible = False
+    parent = ComponentProperty(type=CGF.PropertyType.Link, value=CGF.GameObject)
 
     def __init__(self, sequenceAnimator, parent):
         super(_SequenceAnimatorTimer, self).__init__()
@@ -170,7 +173,7 @@ class _SequenceAnimatorTimer(object):
             self.__sequenceAnimator.stop()
             self.__sequenceAnimator.setEnabled(False)
             self.__sequenceAnimator = None
-            CGF.removeGameObject(self.parent)
+            self.parent.destroy()
         return
 
     def destroy(self):
@@ -210,7 +213,7 @@ class EffectPlayer(Component):
         return
 
 
-class TerrainAreaGameObject(ScriptGameObject, ISelfAssembler):
+class TerrainAreaObject(ComponentController, ISelfAssembler):
     model = ComponentDescriptorTyped(ModelComponent)
     terrainArea = ComponentDescriptorTyped(TerrainAreaComponent)
 
@@ -247,7 +250,7 @@ class AvatarRelatedComponent(ClientArenaComponent):
         g_playerEvents.onAvatarBecomePlayer -= self._initialize
 
 
-class SequenceObject(ScriptGameObject):
+class SequenceObject(ComponentController):
     sequence = ComponentDescriptorTyped(SequenceComponent)
 
     def __init__(self):
@@ -298,7 +301,7 @@ class CompoundSequenceObject(SequenceObject):
         return
 
 
-class EffectPlayerObject(ScriptGameObject):
+class EffectPlayerObject(ComponentController):
     effectList = ComponentDescriptorTyped(EffectPlayer)
 
     def __init__(self):
@@ -313,3 +316,12 @@ class EffectPlayerObject(ScriptGameObject):
         if self.effectList is not None:
             self.effectList.stop()
         return
+
+
+class BattlegroundSequenceSystem(CGF.System):
+    Deactivate = CGF.DeactivateReaction(CGF.ReactRw(SequenceComponent))
+    Reactions = CGF.Reactions(Deactivate)
+
+    def update(self):
+        for effect in self.reaction(self.Deactivate):
+            effect.deactivate()

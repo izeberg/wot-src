@@ -33,7 +33,6 @@
 						<type>BoolT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>Variable</class>
@@ -60,7 +59,6 @@
 						<type>BoolT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>Variable</class>
@@ -87,12 +85,10 @@
 						<type>BoolT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>FrameEvent</class>
 				<id>FrameEvent_1</id>
-				<params/>
 				<slots>
 					<slot>
 						<name>active</name>
@@ -105,6 +101,17 @@
 				</slots>
 			</block>
 			<block>
+				<class>GetComponentProperty</class>
+				<id>GetComponentProperty_1</id>
+				<params>
+					<param>
+						Transform.rotation
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+			</block>
+			<block>
 				<class>GetVariable</class>
 				<id>GetVariable_1</id>
 				<buddy>Variable_1</buddy>
@@ -115,12 +122,10 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>FlowGate</class>
 				<id>FlowGate_2</id>
-				<params/>
 				<slots>
 					<slot>
 						<name>openAtStart</name>
@@ -131,8 +136,6 @@
 			<block>
 				<class>StartScript</class>
 				<id>StartScript_1</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>SetVariable</class>
@@ -145,7 +148,6 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>SetVariable</class>
@@ -158,7 +160,6 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>SetVariable</class>
@@ -171,18 +172,14 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>GetVehicleAppearanceGameObject</class>
 				<id>GetVehicleAppearanceGameObject_2</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>FindFirstNode</class>
 				<id>FindFirstNode_2</id>
-				<params/>
 				<slots>
 					<slot>
 						<name>name</name>
@@ -197,7 +194,6 @@
 			<block>
 				<class>FindFirstNode</class>
 				<id>FindFirstNode_1</id>
-				<params/>
 				<slots>
 					<slot>
 						<name>name</name>
@@ -212,8 +208,6 @@
 			<block>
 				<class>GetVehicleGameObject</class>
 				<id>GetVehicleGameObject_1</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>ContextGetSelf</class>
@@ -230,7 +224,6 @@
 						<type>StringT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>GetComponentProperties</class>
@@ -242,7 +235,6 @@
 						<type>StringT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>GetVariable</class>
@@ -255,7 +247,6 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>ComponentMethod</class>
@@ -289,7 +280,6 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>Macro</class>
@@ -311,20 +301,6 @@
 			<block>
 				<class>FloatSign</class>
 				<id>FloatSign_2</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
-				<class>GetComponentProperties</class>
-				<id>GetComponentProperties_2</id>
-				<params>
-					<param>
-						Transform
-						<name>Component Type</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>MultiplyFloat</class>
@@ -336,7 +312,6 @@
 						<type>IntT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>Macro</class>
@@ -348,7 +323,6 @@
 						<type>StringT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>SplitVector</class>
@@ -360,7 +334,6 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 		</blocks>
 		<connections>
@@ -380,6 +353,18 @@
 				<from>ContextGetSelf_1</from>
 				<input>default</input>
 				<to>Variable_1</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>GetComponentProperties_1</from>
+				<input>in</input>
+				<to>GetComponentProperty_1</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>GetVariable_4</from>
+				<input>gameObject</input>
+				<to>GetComponentProperty_1</to>
 				<output>value</output>
 			</connection>
 			<connection>
@@ -467,7 +452,7 @@
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>GetComponentProperties_2</from>
+				<from>GetComponentProperty_1</from>
 				<input>in</input>
 				<to>ComponentMethod_7</to>
 				<output>out</output>
@@ -497,18 +482,6 @@
 				<output>rounded</output>
 			</connection>
 			<connection>
-				<from>GetComponentProperties_1</from>
-				<input>in</input>
-				<to>GetComponentProperties_2</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>GetVariable_4</from>
-				<input>gameObject</input>
-				<to>GetComponentProperties_2</to>
-				<output>value</output>
-			</connection>
-			<connection>
 				<from>FloatSign_2</from>
 				<input>i0</input>
 				<to>MultiplyFloat_34</to>
@@ -527,10 +500,10 @@
 				<output>y</output>
 			</connection>
 			<connection>
-				<from>GetComponentProperties_2</from>
+				<from>GetComponentProperty_1</from>
 				<input>a</input>
 				<to>SplitVector_5</to>
-				<output>local_rotation</output>
+				<output>rotation</output>
 			</connection>
 		</connections>
 		<macros>
@@ -552,7 +525,6 @@
 								<type>StringT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>MacroOutput</class>
@@ -569,24 +541,18 @@
 								<type>TypeT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>Floor</class>
 						<id>Floor_3</id>
-						<params/>
-						<slots/>
 					</block>
 					<block>
 						<class>SubtractFloat</class>
 						<id>SubtractFloat_4</id>
-						<params/>
-						<slots/>
 					</block>
 					<block>
 						<class>DivideFloat</class>
 						<id>DivideFloat_3</id>
-						<params/>
 						<slots>
 							<slot>
 								<name>b</name>
@@ -647,7 +613,6 @@
 								<type>StringT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>MultiplyFloat</class>
@@ -724,8 +689,6 @@
 					<block>
 						<class>Cos</class>
 						<id>Cos_4</id>
-						<params/>
-						<slots/>
 					</block>
 					<block>
 						<class>MultiplyFloat</class>
@@ -737,7 +700,6 @@
 								<type>IntT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>MultiplyFloat</class>
@@ -766,13 +728,10 @@
 								<type>TypeT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>Sin</class>
 						<id>Sin_4</id>
-						<params/>
-						<slots/>
 					</block>
 					<block>
 						<class>MultiplyFloat</class>
@@ -784,7 +743,6 @@
 								<type>IntT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>MacroInput</class>
@@ -806,7 +764,6 @@
 								<type>StringT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>MacroOutput</class>
@@ -823,7 +780,6 @@
 								<type>TypeT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>MacroInput</class>
@@ -845,7 +801,6 @@
 								<type>StringT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>ContextGetSelf</class>
@@ -862,7 +817,6 @@
 								<type>StringT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 				</blocks>
 				<connections>
@@ -946,7 +900,6 @@
 								<type>TypeT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>VectorLength</class>
@@ -958,7 +911,6 @@
 								<type>TypeT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>MacroInput</class>
@@ -980,7 +932,6 @@
 								<type>StringT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>MacroOutput</class>
@@ -997,7 +948,6 @@
 								<type>TypeT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>MultiplyFloat</class>
@@ -1019,8 +969,6 @@
 					<block>
 						<class>Atan2</class>
 						<id>Atan2_1</id>
-						<params/>
-						<slots/>
 					</block>
 					<block>
 						<class>NormalizeVector</class>
@@ -1032,7 +980,6 @@
 								<type>TypeT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>SplitVector</class>
@@ -1044,7 +991,6 @@
 								<type>TypeT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>ContextGetSelf</class>
@@ -1061,7 +1007,6 @@
 								<type>StringT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 				</blocks>
 				<connections>
@@ -1133,7 +1078,6 @@
 								<type>StringT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>MacroOutput</class>
@@ -1150,18 +1094,14 @@
 								<type>TypeT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>Round</class>
 						<id>Round_1</id>
-						<params/>
-						<slots/>
 					</block>
 					<block>
 						<class>DivideFloat</class>
 						<id>DivideFloat_4</id>
-						<params/>
 						<slots>
 							<slot>
 								<name>b</name>
@@ -1189,7 +1129,6 @@
 								<type>StringT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>MultiplyFloat</class>
@@ -1254,13 +1193,10 @@
 								<type>StringT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>FloatSign</class>
 						<id>FloatSign_7</id>
-						<params/>
-						<slots/>
 					</block>
 					<block>
 						<class>AddFloat</class>
@@ -1294,7 +1230,6 @@
 								<type>TypeT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>MultiplyFloat</class>
@@ -1306,13 +1241,10 @@
 								<type>IntT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>Floor</class>
 						<id>Floor_5</id>
-						<params/>
-						<slots/>
 					</block>
 					<block>
 						<class>Macro</class>
@@ -1334,7 +1266,6 @@
 					<block>
 						<class>DivideFloat</class>
 						<id>DivideFloat_6</id>
-						<params/>
 						<slots>
 							<slot>
 								<name>b</name>
@@ -1383,7 +1314,6 @@
 								<type>StringT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>AddFloat</class>
@@ -1395,7 +1325,6 @@
 								<type>IntT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>AddFloat</class>
@@ -1417,13 +1346,10 @@
 					<block>
 						<class>Floor</class>
 						<id>Floor_6</id>
-						<params/>
-						<slots/>
 					</block>
 					<block>
 						<class>DivideFloat</class>
 						<id>DivideFloat_7</id>
-						<params/>
 						<slots>
 							<slot>
 								<name>b</name>
@@ -1583,7 +1509,6 @@
 								<type>StringT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>MacroInput</class>
@@ -1605,7 +1530,6 @@
 								<type>StringT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>MacroOutput</class>
@@ -1622,7 +1546,6 @@
 								<type>TypeT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>AddFloat</class>
@@ -1634,13 +1557,10 @@
 								<type>IntT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>Floor</class>
 						<id>Floor_7</id>
-						<params/>
-						<slots/>
 					</block>
 					<block>
 						<class>MultiplyFloat</class>
@@ -1662,8 +1582,6 @@
 					<block>
 						<class>DivideFloat</class>
 						<id>DivideFloat_8</id>
-						<params/>
-						<slots/>
 					</block>
 					<block>
 						<class>MultiplyFloat</class>
@@ -1702,7 +1620,6 @@
 								<type>StringT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 				</blocks>
 				<connections>
@@ -1774,7 +1691,6 @@
 								<type>StringT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>MacroInput</class>
@@ -1796,7 +1712,6 @@
 								<type>StringT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>MacroOutput</class>
@@ -1813,19 +1728,14 @@
 								<type>TypeT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>Round</class>
 						<id>Round_1</id>
-						<params/>
-						<slots/>
 					</block>
 					<block>
 						<class>DivideFloat</class>
 						<id>DivideFloat_4</id>
-						<params/>
-						<slots/>
 					</block>
 					<block>
 						<class>MultiplyFloat</class>

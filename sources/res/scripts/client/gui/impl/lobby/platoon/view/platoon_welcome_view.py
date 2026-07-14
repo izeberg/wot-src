@@ -26,12 +26,16 @@ class WelcomeView(ViewImpl):
     _layoutID = R.views.lobby.platoon.PlatoonDropdown()
 
     def __init__(self, layoutID=None):
-        settings = ViewSettings(layoutID=layoutID or self._layoutID, model=PlatoonDropdownModel())
+        settings = ViewSettings(layoutID=layoutID or self._layoutID, model=self._viewModelClass())
         self.__tiersLimitSubview = TiersLimitSubview()
         self.__tiersLimitSubview.setShowCallback(self.__showSettingsCallback)
         self.__tiersFilterSubview = TiersFilterSubview()
         self.__prbEntityType = self.__platoonCtrl.getPrbEntityType()
         super(WelcomeView, self).__init__(settings)
+
+    @property
+    def _viewModelClass(self):
+        return PlatoonDropdownModel
 
     def getPrbEntityType(self):
         return self.__prbEntityType
@@ -76,7 +80,7 @@ class WelcomeView(ViewImpl):
 
     def _addListeners(self):
         with self.viewModel.transaction() as (model):
-            model.findPlatoon.onClick += self.__onFind
+            model.findPlatoon.onClick += self._onFind
             model.createPlatoon.onClick += self.__onCreate
             model.onOutsideClick += self._onOutsideClick
         self.__lobbyContext.getServerSettings().onServerSettingsChange += self.__onServerSettingsChange
@@ -85,7 +89,7 @@ class WelcomeView(ViewImpl):
 
     def _removeListeners(self):
         with self.viewModel.transaction() as (model):
-            model.findPlatoon.onClick -= self.__onFind
+            model.findPlatoon.onClick -= self._onFind
             model.createPlatoon.onClick -= self.__onCreate
             model.onOutsideClick -= self._onOutsideClick
         self.__lobbyContext.getServerSettings().onServerSettingsChange -= self.__onServerSettingsChange
@@ -112,7 +116,7 @@ class WelcomeView(ViewImpl):
     def __onCreate(self):
         self.__platoonCtrl.createPlatoon(startAutoSearchOnUnitJoin=False)
 
-    def __onFind(self):
+    def _onFind(self):
         self.__platoonCtrl.createPlatoon(startAutoSearchOnUnitJoin=True)
         SearchView.resetState()
 

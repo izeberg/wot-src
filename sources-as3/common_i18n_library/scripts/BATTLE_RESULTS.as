@@ -1065,6 +1065,8 @@ package
       
       public static const MISSIONSPROGRESS_NOTIFICATIONSTABS_PERSONALMISSIONS_OPERATION_MISSION_COMPLETE:String = "#battle_results:missionsProgress/notificationsTabs/personalMissions/operation_mission_complete";
       
+      public static const MISSIONSPROGRESS_NOTIFICATIONSTABS_CHALLENGE:String = "#battle_results:missionsProgress/notificationsTabs/challenge";
+      
       public static const CONDITIONS_TYPE_OR:String = "#battle_results:conditions/type/or";
       
       public static const CONDITIONS_TYPE_AND:String = "#battle_results:conditions/type/and";

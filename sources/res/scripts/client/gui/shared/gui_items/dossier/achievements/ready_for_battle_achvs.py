@@ -1,5 +1,6 @@
-from abstract import ClassProgressAchievement, getCompletedPersonalMissionsCount
+from __future__ import absolute_import
 from dossiers2.ui.achievements import ACHIEVEMENT_BLOCK as _AB
+from gui.shared.gui_items.dossier.achievements.abstract import ClassProgressAchievement, getCompletedPersonalMissionsCount
 from nations import Alliances
 from personal_missions import PM_BRANCH, PM3QType
 

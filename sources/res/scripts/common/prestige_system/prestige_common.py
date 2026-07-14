@@ -1,8 +1,9 @@
+from __future__ import absolute_import
 import typing
 from constants import IS_CLIENT
 from prestige_system import getCache, computePrestigeCache
 if typing.TYPE_CHECKING:
-    from typing import Dict, List, Optional, Iterable
+    from typing import Dict, List, Optional
 PrestigeGrade = typing.NamedTuple('_PrestigeGrade', (
  (
   'level', int),

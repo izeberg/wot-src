@@ -1,6 +1,9 @@
+from __future__ import absolute_import
 import logging
 from itertools import chain
-import typing, constants
+import typing
+from future.utils import viewitems
+import constants
 from gui.impl.backport.backport_tooltip import DecoratedTooltipWindow
 from gui.Scaleform.daapi.view.lobby.techtree.settings import UnlockProps
 from gui.Scaleform.genConsts.BLOCKS_TOOLTIP_TYPES import BLOCKS_TOOLTIP_TYPES
@@ -298,7 +301,7 @@ class DefaultCrewMemberTooltipData(BlocksTooltipData):
             roles = list(tman.roles() if tman.isInTank else tman.vehicleNativeDescr.type.crewRoles[slotIdx])
         mainRole = roles[0]
         bodyStr = ('{}/{}').format(TOOLTIPS.VEHICLEPREVIEW_CREW, mainRole)
-        crewParams = {k:text_styles.neutral(v) for k, v in _CREW_TOOLTIP_PARAMS[mainRole].iteritems()}
+        crewParams = {k:text_styles.neutral(v) for k, v in viewitems(_CREW_TOOLTIP_PARAMS[mainRole])}
         blocks.append(formatters.packTitleDescBlock(text_styles.highTitle(ITEM_TYPES.tankman_roles(mainRole)), text_styles.main(_ms(bodyStr, **crewParams))))
         roles.remove(mainRole)
         roles.sort(key=ORDERED_ROLES.index)

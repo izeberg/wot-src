@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<stream>colour</stream>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>standardSurface1</identifier>
+					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						alphaFadeAmountFresnel
+						<Vector4>1.000000 0.000000 0.600000 0.200000</Vector4>
+					</property>
+					<property>
+						alphaFreshnelEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						destBlend
+						<Int>2</Int>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/Fire_phases_01.dds</Texture>
+					</property>
+					<property>
+						diffuseUVSpeedAlphaOffset
+						<Vector4>0.000000 -1.000000 0.500000 0.000000</Vector4>
+					</property>
+					<property>
+						distortion_UV_Speed_Amount
+						<Vector4>0.200000 -0.300000 0.200000 0.400000</Vector4>
+					</property>
+					<property>
+						distortionMap
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/114_czech_vel_smoke_fire.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						enableLighting
+						<Bool>true</Bool>
+					</property>
+					<property>
+						fogAdjustBlend
+						<Float>1.000000</Float>
+					</property>
+					<property>
+						FreshnelColor
+						<Vector4>0.984314 0.380392 0.000000 1.000000</Vector4>
+					</property>
+					<property>
+						g_visibilityTunnelCompensation
+						<Float>4.000000</Float>
+					</property>
+					<property>
+						lightMultipliers
+						<Vector4>6.000000 0.500000 0.500000 0.000000</Vector4>
+					</property>
+					<property>
+						selfIllumLight
+						<Vector3>0.717647 0.000000 0.000000</Vector3>
+					</property>
+					<property>
+						softFactor
+						<Float>0.100000</Float>
+					</property>
+					<property>
+						TintlColor
+						<Vector4>1.000000 0.588235 0.000000 1.000000</Vector4>
+					</property>
+				</material>
+				<groupOrigin>0.008029 0.319642 -0.011636</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-0.374298 -0.033311 -0.167037</min>
+		<max>0.390356 0.672595 0.143765</max>
+	</boundingBox>
+	<geometrySize>29756</geometrySize>
+</root>

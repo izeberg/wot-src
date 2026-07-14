@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging
 from operator import attrgetter
 import adisp, typing
@@ -126,10 +127,11 @@ def showEpicBattlesPrimeTimeWindow():
     g_eventBus.handleEvent(events.LoadViewEvent(SFViewLoadParams(EPICBATTLES_ALIASES.EPIC_BATTLES_PRIME_TIME_ALIAS), ctx={}), EVENT_BUS_SCOPE.LOBBY)
 
 
-def showEpicBattlesAfterBattleWindow(levelUpInfo, parent=None):
+@dependency.replace_none_kwargs(notificationMgr=INotificationWindowController)
+def showEpicBattlesAfterBattleWindow(levelUpInfo, parent=None, notificationMgr=None):
     from frontline.gui.impl.lobby.post_battle_rewards_view import PostBattleRewardsWindow
     window = PostBattleRewardsWindow(ctx=levelUpInfo, parent=parent)
-    window.load()
+    notificationMgr.append(WindowNotificationCommand(window))
 
 
 def showFrontlinePostBattleResultsWindow(arenaUniqueID):
@@ -1127,9 +1129,8 @@ def showOptDeviceCommonWindowDialog(wrappedViewClass, deviceDescr=None, layoutID
     result = yield wg_await(dialogs.showSingleDialogWithResultData(compDescr=deviceDescr, layoutID=layoutID or R.views.lobby.demountkit.CommonWindow(), wrappedViewClass=wrappedViewClass))
     if result.busy:
         raise AsyncReturn((False, {}))
-    else:
-        isOk, _ = result.result
-        raise AsyncReturn((isOk, {}))
+    isOk, _ = result.result
+    raise AsyncReturn((isOk, {}))
 
 
 @wg_async
@@ -2165,3 +2166,27 @@ def showCollector20RewardWindow(dossierRewards, notificationMgr=None):
     from gui.impl.lobby.collector20_reward.collector20_reward_view import Collector20RewardWindow
     window = Collector20RewardWindow(dossierRewards)
     notificationMgr.append(WindowNotificationCommand(window))
+
+
+@wg_async
+def showChallengesActionConfirmDialog(challengeID, confirmType, isFree=False, parent=None, callback=None):
+    from gui.impl.dialogs import dialogs
+    from gui.impl.lobby.challenges.confirmation_view import ChallengesConfirmationView
+    result = yield wg_await(dialogs.showSingleDialogWithResultData(layoutID=R.views.mono.challenges.dialogs.challenge_dialog(), wrappedViewClass=ChallengesConfirmationView, parent=parent, challengeID=challengeID, confirmationType=confirmType, isFree=isFree))
+    if result.busy:
+        callback((False, {}))
+    else:
+        callback(result.result)
+
+
+@dependency.replace_none_kwargs(notificationMgr=INotificationWindowController)
+def showChallengesAwardsWindow(challenge, rewardsData, notificationMgr=None):
+    from gui.impl.lobby.challenges.awards_view import ChallengesAwardsScreen
+    window = ChallengesAwardsScreen(challenge, rewardsData)
+    notificationMgr.append(WindowNotificationCommand(window))
+
+
+def showAttachmentsSetPreview(setTokenID):
+    from gui.impl.lobby.customization.attachments_preview.attachments_preview import AttachmentsPreviewWindow
+    window = AttachmentsPreviewWindow(setTokenID)
+    window.load()

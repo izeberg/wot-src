@@ -4,6 +4,7 @@ from gui.impl.gen import R
 from gui.Scaleform.daapi.view.lobby.header.helpers.controls_helpers import DefaultLobbyHeaderHelper
 from last_stand.gui.scaleform.daapi.view.lobby.header.helpers.fight_btn_tooltips import getLSFightButtonTooltipData
 from last_stand.gui.impl.lobby.page.ls_lobby_header import LSLobbyHeader
+from last_stand.gui.impl.lobby.page.ls_lobby_footer import LSLobbyFooter
 if typing.TYPE_CHECKING:
     from gui.impl.pub.view_component import ViewComponent
 
@@ -13,6 +14,10 @@ class LSLobbyHeaderHelper(DefaultLobbyHeaderHelper):
     @classmethod
     def getHeaderType(cls):
         return LSLobbyHeader
+
+    @classmethod
+    def getFooterType(cls):
+        return LSLobbyFooter
 
     @classmethod
     def _getDisabledFightTooltipData(cls, prbValidation, isInSquad):

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld
 from gui.shared.gui_items.processors import Processor
 
