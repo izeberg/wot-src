@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_235_LS_ArmorPlate/normal/lod3/attachment</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.571817 -0.012460 -0.657141</min>
+		<max>0.055458 0.401211 0.713839</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_235_LS_ArmorPlate/normal/lod2/attachment</nodefullVisual>
+</root>

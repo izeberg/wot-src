@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging
 from account_helpers.AccountSettings import AccountSettings, LOBBY_MENU_MANUAL_TRIGGER_SHOWN
 from gui.Scaleform.daapi.view.lobby.manual.states import ManualState, ManualChapterState

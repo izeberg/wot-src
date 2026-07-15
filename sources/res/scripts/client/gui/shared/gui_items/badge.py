@@ -1,4 +1,6 @@
+from __future__ import absolute_import
 import re, typing
+from past.builtins import cmp
 from account_helpers import AccountSettings
 from account_helpers.AccountSettings import LAST_BADGES_VISIT
 from dossiers2.ui.achievements import BADGES_BLOCK
@@ -48,16 +50,6 @@ class Badge(GUIItem):
             if self.isAchieved:
                 self.achievedAt = receivedBadges[self.badgeID]
         return
-
-    def __cmp__(self, other):
-        if self.achievedAt == other.achievedAt:
-            return cmp(self.getWeight(), other.getWeight())
-        else:
-            if self.achievedAt is None:
-                return 1
-            if other.achievedAt is None:
-                return -1
-            return cmp(other.achievedAt, self.achievedAt)
 
     def hasDynamicContent(self):
         return False
@@ -179,6 +171,16 @@ class Badge(GUIItem):
         if m:
             return m.group(1)
         return ''
+
+    def _compare(self, other):
+        if self.achievedAt == other.achievedAt:
+            return cmp(self.getWeight(), other.getWeight())
+        else:
+            if self.achievedAt is None:
+                return 1
+            if other.achievedAt is None:
+                return -1
+            return cmp(other.achievedAt, self.achievedAt)
 
     def __getIconPath(self, size, shortIconName=False):
         iconPostfix = self.getIconPostfix()

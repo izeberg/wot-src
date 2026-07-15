@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging
 from gui.SystemMessages import SM_TYPE, CURRENCY_TO_SM_TYPE, CURRENCY_TO_SM_TYPE_DISMANTLING
 from gui.impl import backport

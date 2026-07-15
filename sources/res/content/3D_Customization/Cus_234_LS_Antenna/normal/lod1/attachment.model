@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_234_LS_Antenna/normal/lod2/attachment</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.071313 -0.100000 -0.060527</min>
+		<max>0.078954 2.834203 0.044004</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_234_LS_Antenna/normal/lod1/attachment</nodefullVisual>
+</root>

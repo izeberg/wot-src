@@ -1,7 +1,11 @@
+from __future__ import absolute_import
 import operator
 from collections import defaultdict
 import typing
 from enum import Enum
+from functools import total_ordering
+from future.utils import lmap, viewvalues
+from past.builtins import cmp
 import nations
 from constants import IGR_TYPE, FLAG_ACTION, ARENA_GUI_TYPE, ROLE_TYPE, BOT_DISPLAY_STATUS, BOT_DISPLAY_CLASS_NAMES, LocalizableBotName, BotNamingType, TEAM_PANEL_MODE
 from arena_bonus_type_caps import ARENA_BONUS_TYPE_CAPS
@@ -157,10 +161,12 @@ def isBattleRoyaleTank(tags):
     return VEHICLE_TAGS.BATTLE_ROYALE in tags
 
 
+@total_ordering
 class PlayerInfoVO(object):
     __slots__ = ('accountDBID', 'avatarSessionID', 'name', 'fakeName', 'clanAbbrev',
                  'igrType', 'personaMissionIDs', 'personalMissionInfo', 'isPrebattleCreator',
                  'forbidInBattleInvitations', 'isTeamKiller')
+    __hash__ = None
     eventsCache = dependency.descriptor(IEventsCache)
 
     def __init__(self, accountDBID=0, avatarSessionID='', name=None, clanAbbrev='', igrType=IGR_TYPE.NONE, personalMissionIDs=None, personalMissionInfo=None, isPrebattleCreator=False, forbidInBattleInvitations=False, fakeName='', **kwargs):
@@ -177,8 +183,11 @@ class PlayerInfoVO(object):
         self.forbidInBattleInvitations = forbidInBattleInvitations
         self.isTeamKiller = False
 
-    def __cmp__(self, other):
-        return cmp(self.name, other.name)
+    def __eq__(self, other):
+        return self.__compare(other) == 0
+
+    def __lt__(self, other):
+        return self.__compare(other) < 0
 
     @property
     def isBot(self):
@@ -224,7 +233,11 @@ class PlayerInfoVO(object):
             LOG_ERROR('Key error trying to get personal mission: no key in cache', e)
             return []
 
+    def __compare(self, other):
+        return cmp(self.name, other.name)
 
+
+@total_ordering
 class VehicleTypeInfoVO(object):
     __slots__ = ('compactDescr', 'shortName', 'name', 'level', 'iconName', 'iconPath',
                  'isObserver', 'isPremiumIGR', 'isDualGunVehicle', 'isTwinGunVehicle',
@@ -232,6 +245,7 @@ class VehicleTypeInfoVO(object):
                  'classTag', 'nationID', 'turretYawLimits', 'maxHealth', 'strCompactDescr',
                  'isOnlyForBattleRoyaleBattles', 'tags', 'chassisType', 'role', 'improvedRammingAnimationDamage',
                  'vehicleMechanics')
+    __hash__ = None
 
     def __init__(self, vehicleType=None, maxHealth=None, **kwargs):
         super(VehicleTypeInfoVO, self).__init__()
@@ -240,14 +254,11 @@ class VehicleTypeInfoVO(object):
     def __repr__(self):
         return ('VehicleTypeInfoVO(compactDescr = {0:n})').format(self.compactDescr)
 
-    def __cmp__(self, other):
-        result = cmp(other.level, self.level)
-        if result:
-            return result
-        result = cmp(self.getOrderByClass(), other.getOrderByClass())
-        if result:
-            return result
-        return cmp(self.shortName, other.shortName)
+    def __eq__(self, other):
+        return self.__compare(other) == 0
+
+    def __lt__(self, other):
+        return self.__compare(other) < 0
 
     def update(self, invalidate=_INVALIDATE_OP.NONE, vehicleType=None, maxHealth=None, **kwargs):
         if vehicleType is not None:
@@ -331,7 +342,17 @@ class VehicleTypeInfoVO(object):
     def getOrderByClass(self):
         return settings.getOrderByVehicleClass(self.classTag)
 
+    def __compare(self, other):
+        result = cmp(other.level, self.level)
+        if result:
+            return result
+        result = cmp(self.getOrderByClass(), other.getOrderByClass())
+        if result:
+            return result
+        return cmp(self.shortName, other.shortName)
 
+
+@total_ordering
 class VehicleArenaInfoVO(object):
     __slots__ = ('vehicleID', 'team', 'player', 'playerStatus', 'vehicleType', 'vehicleStatus',
                  'prebattleID', 'events', 'squadIndex', 'invitationDeliveryStatus',
@@ -372,17 +393,11 @@ class VehicleArenaInfoVO(object):
     def __eq__(self, other):
         return self.vehicleID == other.vehicleID
 
-    def __cmp__(self, other):
-        result = cmp(self.team, other.team)
-        if result:
-            return result
-        result = cmp(other.isAlive(), self.isAlive())
-        if result:
-            return result
-        result = cmp(self.vehicleType, other.vehicleType)
-        if result:
-            return result
-        return cmp(self.player, other.player)
+    def __lt__(self, other):
+        return self.__compare(other) < 0
+
+    def __hash__(self):
+        return hash(self.vehicleID)
 
     @property
     def selectedBadge(self):
@@ -644,6 +659,18 @@ class VehicleArenaInfoVO(object):
             invitationStatus = _DELIVERY_STATUS.FORBIDDEN_BY_RECEIVER
         return invitationStatus
 
+    def __compare(self, other):
+        result = cmp(self.team, other.team)
+        if result:
+            return result
+        result = cmp(other.isAlive(), self.isAlive())
+        if result:
+            return result
+        result = cmp(self.vehicleType, other.vehicleType)
+        if result:
+            return result
+        return cmp(self.player, other.player)
+
 
 class VehicleArenaInteractiveStatsVO(object):
     __slots__ = ('xp', 'damageDealt', 'capturePts', 'flagActions', 'winPoints', 'deathCount',
@@ -683,7 +710,7 @@ class VehicleArenaInteractiveStatsVO(object):
         self.damageDealt += damageDealt
         self.capturePts += capturePts
         if flagActions is not None:
-            self.flagActions = map(operator.add, self.flagActions, flagActions)
+            self.flagActions = lmap(operator.add, self.flagActions, flagActions)
         if winPoints:
             result |= _INVALIDATE_OP.SORTING
         self.winPoints += winPoints
@@ -839,7 +866,7 @@ class VehicleArenaStatsDict(defaultdict):
         return value
 
     def clearInteractiveStats(self):
-        for vo in self.itervalues():
+        for vo in viewvalues(self):
             vo.clearInteractiveStats()
 
 

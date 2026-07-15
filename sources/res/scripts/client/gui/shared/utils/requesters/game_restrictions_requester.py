@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing, BigWorld
 from constants import RESTRICTION_KEY
 from gui.shared.utils.requesters.abstract import AbstractSyncDataRequester

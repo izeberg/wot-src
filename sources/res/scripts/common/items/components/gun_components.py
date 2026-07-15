@@ -1,5 +1,7 @@
-from typing import TYPE_CHECKING, Tuple, Optional
+from __future__ import absolute_import
+from typing import TYPE_CHECKING, Tuple
 from items.components import legacy_stuff
+from py2to3.patched_future import with_metaclass
 from soft_exception import SoftException
 from wrapped_reflection_framework import reflectedNamedTuple
 from wrapped_reflection_framework import ReflectionMetaclass
@@ -8,10 +10,9 @@ if TYPE_CHECKING:
 RecoilEffect = reflectedNamedTuple('RecoilEffect', ('lodDist', 'amplitude', 'backoffTime',
                                                     'returnTime'))
 
-class GunShot(legacy_stuff.LegacyStuff):
+class GunShot(with_metaclass(ReflectionMetaclass, legacy_stuff.LegacyStuff)):
     __slots__ = ('shell', 'defaultPortion', 'piercingPower', 'speed', 'gravity', 'nominalMaxDistance',
                  'maxDistance', 'maxHeight')
-    __metaclass__ = ReflectionMetaclass
 
     def __init__(self, shell, defaultPortion, piercingPower, speed, gravity, maxDistance, maxHeight):
         super(GunShot, self).__init__()

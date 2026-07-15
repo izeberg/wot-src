@@ -65,9 +65,6 @@ class ILSController(IGameController):
     def selectRandomMode(self):
         raise NotImplementedError
 
-    def selectVehicle(self, invID):
-        raise NotImplementedError
-
     def getVehiclesConfig(self):
         raise NotImplementedError
 

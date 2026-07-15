@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing, logging, importlib, section2dict
 from extension_utils import ResMgr
 from dict2model import exceptions

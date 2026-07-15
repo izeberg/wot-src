@@ -1,9 +1,10 @@
+from __future__ import absolute_import, print_function
 AVAILABLE = False
 try:
     from _Scaleform import *
     AVAILABLE = True
 except ImportError:
-    print 'There is no module named _Scaleform.  The most likely cause of this \tis the client was built without Scaleform support.  Please check the \tdocumentation for further details on enabling Scaleform support.'
+    print('There is no module named _Scaleform.  The most likely cause of this     is the client was built without Scaleform support.  Please check the     documentation for further details on enabling Scaleform support.')
 
 def showCursor():
     import GUI, BigWorld
@@ -13,11 +14,11 @@ def showCursor():
 
 
 def exampleFSCommandHandler(cmd, s2):
-    print 'FSCommand - ', cmd, s2
+    print('FSCommand - ', cmd, s2)
 
 
 def exampleExternalInterfaceHandler(cmd, *args):
-    print 'External Interface command - ', cmd, args
+    print('External Interface command - ', cmd, args)
 
 
 def createMovieInstance(file='scaleform/d3d9guide.swf'):
@@ -37,7 +38,7 @@ def create3DDemo():
 
 
 def createMovieGUI(file='scaleform/d3d9guide.swf'):
-    m, d = createMovieInstance(file)
+    m, _ = createMovieInstance(file)
     import GUI
     for i in GUI.roots():
         i.position[2] = max(i.position[2], 0.1)
@@ -52,11 +53,11 @@ def createMovieGUI(file='scaleform/d3d9guide.swf'):
 
 
 def createIMEFontsMovie():
-    print 'Fonts loading from Python is not supported anymore.'
+    print('Fonts loading from Python is not supported anymore.')
 
 
 def createIME():
-    print 'Fonts mapping from Python is not supported anymore.'
+    print('Fonts mapping from Python is not supported anymore.')
     showCursor()
 
 
@@ -66,11 +67,11 @@ def createIMEMovie():
 
 
 def createFontMovie(file='scaleform/drawtext_fonts.swf'):
-    print 'Fonts loading from Python is not supported anymore.'
+    print('Fonts loading from Python is not supported anymore.')
 
 
 def createAllFontsMovie():
-    print 'Fonts loading from Python is not supported anymore.'
+    print('Fonts loading from Python is not supported anymore.')
 
 
 def createFlashText(fontName='Slate Mobile'):

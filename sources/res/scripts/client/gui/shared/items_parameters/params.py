@@ -1,16 +1,19 @@
+from __future__ import absolute_import, division
 import copy, math, operator
-from collections import namedtuple, Sequence, Iterable
-from itertools import izip_longest
+from builtins import map, zip
+from collections import namedtuple
+from future.moves.itertools import zip_longest
+from future.utils import iteritems, itervalues, lmap, lzip
 from math import ceil, floor
-import typing
-from future.utils import iteritems, itervalues
-import BigWorld
+from past.utils import old_div
+import typing, BigWorld
+from py2to3.moves.collections.abc import Sequence, Iterable
 from constants import SHELL_TYPES, BonusTypes, SHELL_MECHANICS_TYPE
 from debug_utils import LOG_DEBUG
 from gui.shared.gui_items import KPI
 from gui.shared.gui_items.Tankman import isSkillLearnt, crewMemberRealSkillLevel
 from gui.shared.items_parameters import calcShellParams, getShotsPerMinute, isAutoReloadGun, isDualGun, isTwinGun, isUnlimitedClipGun, isTemperatureGun, isOverheatedUnlimitedGun, getMechanicsReloadDelay, getShellDescriptors, getOptionalDeviceWeight, NO_DATA, isLowChargeShotGun
-from gui.shared.items_parameters.params_constants import ONE_HUNDRED_PERCENTS, AUTOCANNON_SHOT_DISTANCE, MIN_VISION_RADIUS, MAX_VISION_RADIUS, PIERCING_DISTANCES, MIN_RELATIVE_VALUE, EXTRAS_CAMOUFLAGE, MAX_DAMAGED_MODULES_DETECTION_PERK_VAL, MAX_ART_NOTIFICATION_DELAY_PERK_VAL, METERS_PER_SECOND_TO_KILOMETERS_PER_HOUR, HIDDEN_PARAM_DEFAULTS
+from gui.shared.items_parameters.params_constants import ONE_HUNDRED_PERCENTS, AUTOCANNON_SHOT_DISTANCE, MIN_VISION_RADIUS, MAX_VISION_RADIUS, PIERCING_DISTANCES, MIN_RELATIVE_VALUE, EXTRAS_CAMOUFLAGE, MAX_DAMAGED_MODULES_DETECTION_PERK_VAL, MAX_ART_NOTIFICATION_DELAY_PERK_VAL, METERS_PER_SECOND_TO_KILOMETERS_PER_HOUR, HIDDEN_PARAM_DEFAULTS, EPSILON
 from gui.shared.items_parameters.base_params import CompatibleParams, ParameterBase, ParamsDictProxy, WeightedParam
 from gui.shared.items_parameters.comparator import rateParameterState, PARAM_STATE
 from gui.shared.items_parameters import functions
@@ -24,7 +27,7 @@ from items import utils as items_utils
 from items.components import component_constants
 from items.components.component_constants import MODERN_HE_PIERCING_POWER_REDUCTION_FACTOR_FOR_SHIELDS
 from items.params_utils import getHeatedAimingTime, getTemperatureRateOfFire
-from math_common import round_py2_style_int
+from math_common import decimal_round, round_py2_style, round_py2_style_int
 from post_progression_common import ACTION_TYPES
 from shared_utils import findFirst, first
 from soft_exception import SoftException
@@ -71,16 +74,16 @@ def _processExtraBonuses(vehicle):
 
 def _universalSum(a, b):
     if isinstance(a, Sequence):
-        return map(operator.add, a, b)
+        return lmap(operator.add, a, b)
     return a + b
 
 
 def _average(listOfNumbers):
-    return sum(listOfNumbers) / len(listOfNumbers)
+    return old_div(sum(listOfNumbers), len(listOfNumbers))
 
 
 def _timesToSecs(timesPerMinutes):
-    return time_utils.ONE_MINUTE / timesPerMinutes
+    return old_div(time_utils.ONE_MINUTE, timesPerMinutes)
 
 
 class VehicleParams(ParameterBase):
@@ -106,7 +109,7 @@ class VehicleParams(ParameterBase):
 
     @property
     def vehicleWeight(self):
-        return self._itemDescr.physics['weight'] / 1000
+        return self._itemDescr.physics['weight'] / 1000.0
 
     @property
     def enginePower(self):
@@ -134,11 +137,11 @@ class VehicleParams(ParameterBase):
 
     @property
     def enginePowerPerTon(self):
-        powerPerTon = round(self.enginePower / self.vehicleWeight, 2)
+        powerPerTon = decimal_round(self.enginePower / self.vehicleWeight, 2)
         if self._itemDescr.hasTurboshaftEngine:
-            return (powerPerTon, round(self.turboshaftEnginePower / self.vehicleWeight, 2))
+            return (powerPerTon, decimal_round(self.turboshaftEnginePower / self.vehicleWeight, 2))
         if self._itemDescr.hasRocketAcceleration:
-            return (powerPerTon, round(self.rocketAccelerationEnginePower / self.vehicleWeight, 2))
+            return (powerPerTon, decimal_round(self.rocketAccelerationEnginePower / self.vehicleWeight, 2))
         return (
          powerPerTon,)
 
@@ -173,7 +176,7 @@ class VehicleParams(ParameterBase):
 
             def rounder(v, needRound):
                 if needRound:
-                    return float(round(v, 2))
+                    return float(decimal_round(v, 2))
                 return float(v)
 
             return [ rounder(value * coeff, needRound) for value, coeff, needRound in zip(self.speedLimits, (
@@ -215,9 +218,9 @@ class VehicleParams(ParameterBase):
             return None
         else:
             allTrfs = self.__getTerrainResistanceFactors()
-            avgTrf = sum(allTrfs) / len(allTrfs)
+            avgTrf = old_div(sum(allTrfs), len(allTrfs))
             chassisRotationSpeed = items_utils.getChassisRotationSpeed(self._itemDescr, self.__factors)
-            baseRotationSpeed = math.degrees(chassisRotationSpeed) / avgTrf
+            baseRotationSpeed = old_div(math.degrees(chassisRotationSpeed), avgTrf)
             rotationSpeedFactor = self.__getFactorValueFromSkill(skillName, argName)
             if _DO_TTC_LOG:
                 LOG_DEBUG('TTC of chassisRotationSpeed: baseRotationSpeed:%f * driver_virtuosoFactor:%f' % (
@@ -240,7 +243,7 @@ class VehicleParams(ParameterBase):
 
     @property
     def hullArmor(self):
-        return tuple(round(armor) for armor in self._itemDescr.hull.primaryArmor)
+        return tuple(round_py2_style(armor) for armor in self._itemDescr.hull.primaryArmor)
 
     @property
     def damage(self):
@@ -270,12 +273,12 @@ class VehicleParams(ParameterBase):
     def avgDamage(self):
         shell = self._itemDescr.shot.shell
         damage = self.__calculateDamageOrPiercingRandom(shell.armorDamage[0], shell.damageRandomization, isNeedToRound=False)
-        return int(round(sum(damage) / 2.0))
+        return round_py2_style_int(sum(damage) / 2.0)
 
     @property
     def avgDamagePerSecond(self):
         if self._itemDescr.isAutoShootGunVehicle:
-            return round(float(self.avgDamage) / self._itemDescr.gun.clip[1])
+            return round_py2_style(float(self.avgDamage) / self._itemDescr.gun.clip[1])
         else:
             return
 
@@ -295,7 +298,7 @@ class VehicleParams(ParameterBase):
         if isOverheatedUnlimitedGun(self._itemDescr.gun):
             return None
         else:
-            return round(max(self.__calcReloadTime()) * self.avgDamage)
+            return round_py2_style(max(self.__calcReloadTime()) * self.avgDamage)
 
     @property
     def avgDamagePerMinuteSituational(self):
@@ -304,18 +307,18 @@ class VehicleParams(ParameterBase):
         if isOverheatedUnlimitedGun(self._itemDescr.gun):
             return None
         else:
-            return round(max(self.__calcReloadTime(isSituational=True)) * self.avgDamage)
+            return round_py2_style(max(self.__calcReloadTime(isSituational=True)) * self.avgDamage)
 
     @property
     def temperatureAvgDamagePerMinute(self):
         if isOverheatedUnlimitedGun(self._itemDescr.gun):
-            return round(self.temperatureReloadTime * self.avgDamage)
+            return round_py2_style(self.temperatureReloadTime * self.avgDamage)
         else:
             return
 
     @property
     def avgPiercingPower(self):
-        return int(round(sum(self.piercingPower) / 2.0))
+        return round_py2_style_int(sum(self.piercingPower) / 2.0)
 
     @property
     def piercingPower(self):
@@ -384,13 +387,13 @@ class VehicleParams(ParameterBase):
     @property
     def continuousShotsPerMinute(self):
         if self._itemDescr.isAutoShootGunVehicle:
-            return round(60.0 / self._itemDescr.gun.clip[1])
+            return round_py2_style(60.0 / self._itemDescr.gun.clip[1])
         else:
             return
 
     @property
     def turretRotationSpeed(self):
-        rotSpeedVal = round(math.degrees(items_utils.getTurretRotationSpeed(self._itemDescr, self.__factors)), 2)
+        rotSpeedVal = decimal_round(math.degrees(items_utils.getTurretRotationSpeed(self._itemDescr, self.__factors)), 2)
         skillName = 'gunner_quickAiming'
         argName = 'turretRotationSpeed'
         factor = self.__getFactorValueFromSkill(skillName, argName)
@@ -399,7 +402,7 @@ class VehicleParams(ParameterBase):
             rotSpeedSiegeVal = items_utils.getTurretRotationSpeed(self._itemDescr.siegeVehicleDescr, self.__factors)
             rotSpeedSiegeVal *= factor
             return (
-             rotSpeedVal, round(math.degrees(rotSpeedSiegeVal), 2))
+             rotSpeedVal, decimal_round(math.degrees(rotSpeedSiegeVal), 2))
         return (
          rotSpeedVal,)
 
@@ -419,13 +422,15 @@ class VehicleParams(ParameterBase):
     @property
     def turretArmor(self):
         if self.__hasTurret():
-            return tuple(round(armor) for armor in self._itemDescr.turret.primaryArmor)
+            return tuple(round_py2_style(armor) for armor in self._itemDescr.turret.primaryArmor)
+        else:
+            return
 
     @property
     def explosionRadius(self):
         shotShell = self._itemDescr.shot.shell
         if shotShell.kind == SHELL_TYPES.HIGH_EXPLOSIVE:
-            return round(shotShell.type.explosionRadius, 2)
+            return decimal_round(shotShell.type.explosionRadius, 2)
         return 0
 
     @property
@@ -553,7 +558,7 @@ class VehicleParams(ParameterBase):
         gunCorrection = gunCorrection.get('caliberCorrection', 1)
         shotDispersionAngle = max(self.shotDispersionAngle[(-1)], 0.001)
         avgDamagePerMinute = self.avgDamagePerMinute or self.temperatureAvgDamagePerMinute
-        value = round(avgDamagePerMinute * penetration / shotDispersionAngle * (coeffs['rotationIntercept'] + coeffs['rotationSlope'] * rotationSpeed) * turretCoefficient * coeffs['normalization'] * self.__adjustmentCoefficient('power') * spgCorrection * gunCorrection * heCorrection)
+        value = round_py2_style(old_div(avgDamagePerMinute * penetration, shotDispersionAngle) * (coeffs['rotationIntercept'] + coeffs['rotationSlope'] * rotationSpeed) * turretCoefficient * coeffs['normalization'] * self.__adjustmentCoefficient('power') * spgCorrection * gunCorrection * heCorrection)
         return max(value, MIN_RELATIVE_VALUE)
 
     @property
@@ -561,7 +566,7 @@ class VehicleParams(ParameterBase):
         coeffs = self.__coefficients['armour']
         hullArmor = self._itemDescr.hull.primaryArmor
         turretArmor = self._itemDescr.turret.primaryArmor if self.__hasTurret() else hullArmor
-        value = round((hullArmor[0] * coeffs['hullFront'] + hullArmor[1] * coeffs['hullSide'] + hullArmor[2] * coeffs['hullBack'] + turretArmor[0] * coeffs['turretFront'] + turretArmor[1] * coeffs['turretSide'] + turretArmor[2] * coeffs['turretBack']) * self.maxHealth * coeffs['normalization'] * self.__adjustmentCoefficient('armour'))
+        value = round_py2_style((hullArmor[0] * coeffs['hullFront'] + hullArmor[1] * coeffs['hullSide'] + hullArmor[2] * coeffs['hullBack'] + turretArmor[0] * coeffs['turretFront'] + turretArmor[1] * coeffs['turretSide'] + turretArmor[2] * coeffs['turretBack']) * self.maxHealth * coeffs['normalization'] * self.__adjustmentCoefficient('armour'))
         return max(value, MIN_RELATIVE_VALUE)
 
     @property
@@ -571,20 +576,20 @@ class VehicleParams(ParameterBase):
             suspensionInfluence = self.maxSteeringLockAngle * coeffs['maxSteeringLockAngle']
         else:
             suspensionInfluence = self.chassisRotationSpeed * coeffs['chassisRotation']
-        value = round((suspensionInfluence + self.speedLimits[0] * coeffs['speedLimit'] + self.__getRealSpeedLimit() * coeffs['realSpeedLimit']) * coeffs['normalization'] * self.__adjustmentCoefficient('mobility'))
+        value = round_py2_style((suspensionInfluence + self.speedLimits[0] * coeffs['speedLimit'] + self.__getRealSpeedLimit() * coeffs['realSpeedLimit']) * coeffs['normalization'] * self.__adjustmentCoefficient('mobility'))
         return max(value, MIN_RELATIVE_VALUE)
 
     @property
     def relativeVisibility(self):
         coeffs = self.__coefficients['visibility']
-        value = round((self.circularVisionRadius[0] - MIN_VISION_RADIUS) / (MAX_VISION_RADIUS - MIN_VISION_RADIUS) * coeffs['normalization'] * self.__adjustmentCoefficient('visibility'))
+        value = round_py2_style((self.circularVisionRadius[0] - MIN_VISION_RADIUS) / (MAX_VISION_RADIUS - MIN_VISION_RADIUS) * coeffs['normalization'] * self.__adjustmentCoefficient('visibility'))
         return max(value, MIN_RELATIVE_VALUE)
 
     @property
     def relativeCamouflage(self):
         coeffs = self.__coefficients['camouflage']
         invisibilityMovingFactor, invisibilityStillFactor = self.__getInvisibilityValues(self._itemDescr)
-        value = round((invisibilityMovingFactor.current + invisibilityStillFactor.current + invisibilityStillFactor.atShot) / 3.0 * coeffs['normalization'] * self.__adjustmentCoefficient('camouflage'))
+        value = round_py2_style((invisibilityMovingFactor.current + invisibilityStillFactor.current + invisibilityStillFactor.atShot) / 3.0 * coeffs['normalization'] * self.__adjustmentCoefficient('camouflage'))
         return max(value, MIN_RELATIVE_VALUE)
 
     @property
@@ -697,7 +702,7 @@ class VehicleParams(ParameterBase):
             gun = self._itemDescr.gun
             burstCountLeft, burstInterval, _ = gun.burst
             return (
-             burstInterval, gun.clip[0] / burstCountLeft, burstCountLeft)
+             burstInterval, old_div(gun.clip[0], burstCountLeft), burstCountLeft)
         else:
             return
 
@@ -707,7 +712,7 @@ class VehicleParams(ParameterBase):
             gun = self._itemDescr.siegeVehicleDescr.gun
             burstCountLeft, burstInterval, _ = gun.burst
             return (
-             burstInterval, gun.clip[0] / burstCountLeft, burstCountLeft)
+             burstInterval, old_div(gun.clip[0], burstCountLeft), burstCountLeft)
         else:
             return
 
@@ -842,8 +847,9 @@ class VehicleParams(ParameterBase):
     @property
     def wheelsRotationSpeed(self):
         if not self._itemDescr.isWheeledVehicle and not self._itemDescr.isWheeledOnSpotRotation:
-            return
-        return self.__kpi.getFactor(KPI.Name.WHEELS_ROTATION_SPEED)
+            return None
+        else:
+            return self.__kpi.getFactor(KPI.Name.WHEELS_ROTATION_SPEED)
 
     @property
     def softGroundFactor(self):
@@ -866,7 +872,7 @@ class VehicleParams(ParameterBase):
             LOG_DEBUG('TTC of softGroundFactor: realSoftGroundFactor:%f = softGroundFactor:%f - (baseTerrainResDiff:%f * badRoadsKingSoftGroundFactor:%f);resValInPercent:%f = ((1 - (realSoftGroundFactor:%f / softGroundFactor:%f)) * 100)' % (
              realSoftGroundFactor, softGroundFactor, baseTerrainResDiff, badRoadsKingSoftGroundFactor,
              resValInPercent, realSoftGroundFactor, softGroundFactor))
-        return round(resValInPercent, 2)
+        return decimal_round(resValInPercent, 2)
 
     @property
     def artNotificationDelayFactorSituational(self):
@@ -943,7 +949,7 @@ class VehicleParams(ParameterBase):
 
     @staticmethod
     def getBonuses(vehicle, ignoreDisabledPostProgression=True):
-        installedItems = [ item for item in vehicle.consumables.installed.getItems() ]
+        installedItems = vehicle.consumables.installed.getItems()
         result = [ (eq.name, eq.itemTypeName) for eq in installedItems ]
         optDevs = vehicle.optDevices.installed.getItems()
         optDevs = [ (device.name, device.itemTypeName) for device in optDevs ]
@@ -1003,7 +1009,7 @@ class VehicleParams(ParameterBase):
                                 continue
                             state = rateParameterState(paramName, currParams[paramName], newValue)
                             if isinstance(currParams[paramName], Iterable):
-                                states, deltas = zip(*state)
+                                states, deltas = lzip(*state)
                                 if findFirst(lambda v: v == PARAM_STATE.WORSE, states):
                                     paramPenalties[slotId] = deltas
                             elif state[0] == PARAM_STATE.WORSE:
@@ -1079,7 +1085,7 @@ class VehicleParams(ParameterBase):
 
     def __shotDispersionAngle(self, isSituational=False):
         shotDispersions = getClientShotDispersion(self._itemDescr, self.__factors['shotDispersion'][0])
-        baseShotDispersions = (round(shotDispersion * 100, 4) for shotDispersion in shotDispersions)
+        baseShotDispersions = (decimal_round(shotDispersion * 100, 4) for shotDispersion in shotDispersions)
         focusFactorValue = 1
         loneWolfFactor = 1
         skillName = 'gunner_armorer'
@@ -1107,7 +1113,7 @@ class VehicleParams(ParameterBase):
         if miscAttrs:
             if len(miscAttrs) > len(limits):
                 raise SoftException('correction can not be less than speed limits')
-            correction = map(itemDescr.miscAttrs.get, miscAttrs)
+            correction = lmap(itemDescr.miscAttrs.get, miscAttrs)
         skillName = 'driver_motorExpert'
         realSkillLevel = crewMemberRealSkillLevel(self.__vehicle, skillName)
         if realSkillLevel != tankmen.NO_SKILL:
@@ -1117,10 +1123,9 @@ class VehicleParams(ParameterBase):
         else:
             motorExpertSpeed = [
              0, 0]
-        speedLimit = [ round(speed * METERS_PER_SECOND_TO_KILOMETERS_PER_HOUR + correct, 2) for speed, correct in izip_longest(limits, correction, fillvalue=0)
+        speedLimit = [ decimal_round(speed * METERS_PER_SECOND_TO_KILOMETERS_PER_HOUR + correct, 2) for speed, correct in zip_longest(limits, correction, fillvalue=0)
                      ]
-        resultSpeedLimit = map(sum, zip(speedLimit, motorExpertSpeed))
-        return resultSpeedLimit
+        return lmap(sum, zip(speedLimit, motorExpertSpeed))
 
     def __adjustmentCoefficient(self, paramName):
         return self._itemDescr.type.clientAdjustmentFactors[paramName]
@@ -1203,7 +1208,7 @@ class VehicleParams(ParameterBase):
             return self._itemDescr.gun.pitchLimits['absolute']
 
     def __getEnginePower(self, power):
-        return round(power * self.__factors['engine/power'] * self._itemDescr.miscAttrs['enginePowerFactor'] / component_constants.HP_TO_WATTS)
+        return round_py2_style(power * self.__factors['engine/power'] * self._itemDescr.miscAttrs['enginePowerFactor'] / component_constants.HP_TO_WATTS)
 
     def __getSwitchOffTime(self):
         siegeMode = self._itemDescr.type.siegeModeParams
@@ -1338,7 +1343,7 @@ class VehicleParams(ParameterBase):
 
     def __getTerrainResistanceFactors(self):
         terrainResistancePhysicsFactors = map(operator.truediv, self._itemDescr.physics['terrainResistance'], self._itemDescr.chassis.terrainResistance)
-        return map(operator.mul, self.__factors['chassis/terrainResistance'], terrainResistancePhysicsFactors)
+        return lmap(operator.mul, self.__factors['chassis/terrainResistance'], terrainResistancePhysicsFactors)
 
     def __getFactorValueFromSkill(self, skillName, argName):
         skill = tankmen.getSkillsConfig().getSkill(skillName)
@@ -1403,7 +1408,7 @@ class ShellParams(CompatibleParams):
     @property
     def avgDamagePerSecond(self):
         if self._vehicleDescr and self._vehicleDescr.isAutoShootGunVehicle:
-            return round(float(self.avgDamage) / self._vehicleDescr.gun.clip[1])
+            return round_py2_style(float(self.avgDamage) / self._vehicleDescr.gun.clip[1])
         else:
             return
 
@@ -1513,7 +1518,7 @@ class ShellParams(CompatibleParams):
         if not hasattr(shellType, 'piercingPowerLossFactorByDistance'):
             return None
         else:
-            return round_py2_style_int(shellType.piercingPowerLossFactorByDistance * 10)
+            return round_py2_style_int(shellType.piercingPowerLossFactorByDistance * 10 + EPSILON)
 
     @property
     def screensArmorMultiplier(self):

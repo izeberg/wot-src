@@ -117,7 +117,10 @@ package net.wg.gui.lobby.training
       {
          this._itemClicked = true;
          this.enabled = false;
-         dispatchEvent(new TrainingEvent(TrainingEvent.OPEN_TRAINING_ROOM,{"id":this._dataVO.id}));
+         dispatchEvent(new TrainingEvent(TrainingEvent.OPEN_TRAINING_ROOM,{
+            "id":this._dataVO.id,
+            "prbClusterId":this._dataVO.prbClusterId
+         }));
       }
    }
 }

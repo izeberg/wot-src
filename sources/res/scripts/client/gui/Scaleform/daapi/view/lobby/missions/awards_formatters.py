@@ -358,7 +358,7 @@ class MainOperationAwardComposer(PersonalMissionsAwardComposer):
     def _getPreformattedTankwomanBonus(self, operation):
         _, total = _getTankwomansCountInOperation(operation)
         if total:
-            return PreformattedBonus(bonusName=self._TANKWOMAN_BONUS, label=formatCountLabel(total), images=dict((size, RES_ICONS.getBonusIcon(size, self._TANKWOMAN_BONUS)) for size in AWARDS_SIZES.ALL()), labelFormatter=text_styles.stats, align=LABEL_ALIGN.RIGHT, specialAlias=TOOLTIPS_CONSTANTS.PERSONAL_MISSIONS_TANKWOMAN, isSpecial=True, specialArgs=[])
+            return PreformattedBonus(bonusName=self._TANKWOMAN_BONUS, label=formatCountLabel(total), images={size:RES_ICONS.getBonusIcon(size, self._TANKWOMAN_BONUS) for size in AWARDS_SIZES.ALL()}, labelFormatter=text_styles.stats, align=LABEL_ALIGN.RIGHT, specialAlias=TOOLTIPS_CONSTANTS.PERSONAL_MISSIONS_TANKWOMAN, isSpecial=True, specialArgs=[])
         else:
             return
 

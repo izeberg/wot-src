@@ -1,3 +1,4 @@
+from __future__ import absolute_import, division
 import logging
 from itertools import combinations
 from typing import Optional
@@ -16,6 +17,7 @@ from gui.shared.gui_items import GUI_ITEM_ECONOMY_CODE, GUI_ITEM_TYPE
 from gui.shared.money import Money, Currency
 from helpers import i18n, dependency, int2roman
 from helpers.i18n import makeString
+from math_common import decimal_round
 from skeletons.gui.customization import ICustomizationService
 from skeletons.gui.shared import IItemsCache
 _logger = logging.getLogger(__name__)
@@ -46,7 +48,7 @@ def _getFormattedPrice(price, isBuying, checkGold):
         if price.isCurrencyDefined(currencyName):
             return fmtCurrency[currencyName]
 
-    return
+    return ''
 
 
 def formatActionPrices(oldPrice, newPrice, isBuying, checkGold=False):
@@ -124,12 +126,12 @@ def moneyWithIcon(money, currType=None):
 
 
 def getMoneyVO(moneyObj):
-    return tuple((c, v) for c, v in moneyObj.iteritems())
+    return tuple((c, v) for c, v in moneyObj.items())
 
 
 def getMoneyVOWithReason(errorMsg, moneyObj):
     result = []
-    for c, v in moneyObj.iteritems():
+    for c, v in moneyObj.items():
         if errorMsg == GUI_ITEM_ECONOMY_CODE.getCurrencyError(c):
             result.append(('%sError' % c, v))
         else:
@@ -274,5 +276,5 @@ def getRoleText(roleLabel):
 
 def calculateWinRate(wins, battles, precision=0):
     if battles > 0:
-        return round(100.0 * wins / battles, precision)
+        return decimal_round(100.0 * wins / battles, precision)
     return 0.0

@@ -1,7 +1,7 @@
 import CGF
 from enum import Enum
 from ClientSelectableCameraObject import ClientSelectableCameraObject
-from cgf_components.hangar_camera_manager import HangarCameraManager
+from cgf_components.hangar_camera_manager import HangarCameraSystem
 from gui.hangar_cameras.hangar_camera_common import CameraRelatedEvents
 from gui.shared import g_eventBus, EVENT_BUS_SCOPE, events
 from helpers import dependency
@@ -20,7 +20,7 @@ class RotatableViewHelper(object):
     def getCameraManager(self):
         spaceID = self.__hangarSpace.spaceID
         if spaceID is not None:
-            return CGF.getManager(spaceID, HangarCameraManager)
+            return CGF.getSystem(spaceID, HangarCameraSystem)
         else:
             return
 

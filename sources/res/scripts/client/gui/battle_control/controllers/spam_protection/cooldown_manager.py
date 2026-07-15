@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing, BigWorld
 from gui.battle_control.controllers.spam_protection.spam_constants import DEFAULT_COOLDOWN
 

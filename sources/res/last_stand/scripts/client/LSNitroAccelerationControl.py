@@ -4,6 +4,7 @@ import BigWorld, Event, CommandMapping
 class LSNitroAccelerationControl(BigWorld.DynamicScriptComponent):
 
     def __init__(self):
+        super(LSNitroAccelerationControl, self).__init__()
         self._eManager = Event.EventManager()
         self.onActivate = Event.Event(self._eManager)
 

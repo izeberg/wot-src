@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from items.components.skills_constants import ROLE_NAMES
 SKILLS_BY_ROLES_ST = {ROLE_NAMES.COMMANDER: ('commander_eagleEye', 'commander_emergency', 'commander_tutor', 'commander_holdLine',
  'commander_coordination', 'commander_enemyShotPredictor', 'commander_practical',

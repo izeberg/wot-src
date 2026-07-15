@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging
 from hints_common.battle.schemas.const import MAX_PRIORITY
 DEFAULT_LOGGER_NAME = 'BattleHints'

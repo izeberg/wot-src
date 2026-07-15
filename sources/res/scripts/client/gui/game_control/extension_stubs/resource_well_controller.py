@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from collections import namedtuple
 from typing import Dict, Optional, Set, TYPE_CHECKING, List
 from Event import EventManager, Event

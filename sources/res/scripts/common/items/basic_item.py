@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from items import ITEM_TYPE_NAMES
 from items.components import legacy_stuff, shared_components, component_constants
 _LONG_DESCR_PROPERTY = 'longDescriptionSpecial'

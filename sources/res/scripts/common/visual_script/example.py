@@ -1,10 +1,12 @@
+from __future__ import absolute_import
+from builtins import range
+from future.utils import lmap
 import BigWorld
-from block import Block, Meta, InitParam, buildStrKeysValue, makeResEditorData
-from slot_types import SLOT_TYPE, arrayOf
+from visual_script.block import Block, Meta, InitParam, buildStrKeysValue
 from visual_script.misc import ASPECT, BLOCK_MODE, EDITOR_TYPE, EDITOR_CUSTOM_ICON
-from tunable_event_block import TunableEventBlock
-from type import VScriptType, VScriptEnum, VScriptStruct, VScriptStructField
-import weakref
+from visual_script.slot_types import SLOT_TYPE, arrayOf
+from visual_script.tunable_event_block import TunableEventBlock
+from visual_script.type import VScriptType, VScriptEnum, VScriptStruct, VScriptStructField
 
 class Example(Meta):
 
@@ -83,7 +85,7 @@ class MulArray(Block, Example):
     def _execute(self):
         array = self._arrayIn.getValue()
         mul = self._mulValue.getValue()
-        array = map(lambda v: v * mul, array)
+        array = lmap(lambda v: v * mul, array)
         self._arrayOut.setValue(array)
 
     @classmethod
@@ -113,8 +115,8 @@ class WeightSequence(Block, Example):
         super(WeightSequence, self).__init__(*args, **kwargs)
         self._in = self._makeEventInputSlot('in', WeightSequence._execute)
         n, = self._getInitParams()
-        self._weightSlots = [ self._makeDataInputSlot('w' + str(i), SLOT_TYPE.FLOAT) for i in xrange(n) ]
-        self._outSlots = [ self._makeEventOutputSlot('out' + str(i)) for i in xrange(n) ]
+        self._weightSlots = [ self._makeDataInputSlot('w' + str(i), SLOT_TYPE.FLOAT) for i in range(n) ]
+        self._outSlots = [ self._makeEventOutputSlot('out' + str(i)) for i in range(n) ]
 
     def _execute(self):
         iterData = ((slot.getValue(), idx) for idx, slot in enumerate(self._weightSlots))

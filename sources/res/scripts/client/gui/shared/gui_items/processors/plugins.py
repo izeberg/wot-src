@@ -1,7 +1,9 @@
-import BigWorld, logging, typing
+from __future__ import absolute_import
+import logging, typing
 from collections import namedtuple
 from functools import partial
-import wg_async as future_async
+from future.utils import lrange, viewvalues
+import BigWorld, wg_async as future_async
 from account_helpers import isLongDisconnectedFromCenter
 from account_helpers.AccountSettings import AccountSettings
 from adisp import adisp_async, adisp_process
@@ -43,6 +45,7 @@ if not IS_EDITOR:
     from gui.impl.pub.dialog_window import DialogResult, DialogButtons, SingleDialogResult
     from gui.impl.dialogs.gf_builders import ResDialogBuilder
 if typing.TYPE_CHECKING:
+    from gui.goodies.goodie_items import DemountKit
     from gui.shared.gui_items.Vehicle import Vehicle
     from post_progression_common import ACTION_TYPES
 _logger = logging.getLogger(__name__)
@@ -480,7 +483,7 @@ class TankmanDropSkillValidator(SyncValidator):
 
 
 class GroupOperationsValidator(SyncValidator):
-    AVAILABLE_OPERATIONS = range(3)
+    AVAILABLE_OPERATIONS = lrange(3)
 
     def __init__(self, group, operation=0, isEnabled=True):
         super(GroupOperationsValidator, self).__init__(isEnabled)
@@ -1049,10 +1052,10 @@ class BattleBoosterConfirmator(I18nMessageAbstractConfirmator):
         return not self.__battleBooster.isAffectsOnVehicle(self.__vehicle)
 
     def _makeMeta(self):
-        data = self.itemsCache.items.getItems(GUI_ITEM_TYPE.OPTIONALDEVICE, REQ_CRITERIA.VEHICLE.SUITABLE([self.__vehicle], [
-         GUI_ITEM_TYPE.OPTIONALDEVICE])).values()
+        data = viewvalues(self.itemsCache.items.getItems(GUI_ITEM_TYPE.OPTIONALDEVICE, REQ_CRITERIA.VEHICLE.SUITABLE([
+         self.__vehicle], [GUI_ITEM_TYPE.OPTIONALDEVICE])))
         optDevicesList = [ device for device in data if self.__battleBooster.isOptionalDeviceCompatible(device) ]
-        ctx = {'devices': (', ').join(set([ device.userName for device in optDevicesList ]))}
+        ctx = {'devices': (', ').join({device.userName for device in optDevicesList})}
         localeKey = self.localeKey if optDevicesList else self.__notSuitableLocaleKey
         return I18nConfirmDialogMeta(localeKey, meta=HtmlMessageLocalDialogMeta('html_templates:lobby/dialogs', localeKey, ctx=ctx))
 

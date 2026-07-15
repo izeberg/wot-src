@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<parent>content/Buildings/hd_bld_AM_016_Garage/normal/lod4/hd_bld_AM_016_Garage</parent>
-	<extent>
-		250.0
-		<!--BW_String-->
-	</extent>
+	<extent>250.000000</extent>
 	<nodefullVisual>content/Buildings/hd_bld_AM_016_Garage/normal/lod3/hd_bld_AM_016_Garage</nodefullVisual>
+	<visibilityBox>
+		<min>-2.754201 -0.433638 -5.029003</min>
+		<max>3.624941 3.640283 5.775104</max>
+	</visibilityBox>
 </root>

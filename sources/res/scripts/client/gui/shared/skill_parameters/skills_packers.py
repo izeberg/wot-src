@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from typing import TYPE_CHECKING
 from gui.impl.gen.view_models.views.lobby.crew.crew_constants import Color
 from gui.impl.gen.view_models.views.lobby.crew.tooltips.crew_perks_tooltip_booster_model import PerkImpactType

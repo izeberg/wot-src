@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from typing import TYPE_CHECKING
 if TYPE_CHECKING:
     from typing import Optional, Dict, List, Any, Tuple

@@ -1,9 +1,10 @@
 from __future__ import absolute_import
+from typing import Optional, List
 import math, random
 from functools import partial
 from future.utils import viewvalues
 from past.builtins import xrange
-import BigWorld, AnimationSequence, CGF, GenericComponents, Math, math_utils, CombatSelectedArea
+import BigWorld, AnimationSequence, CGF, Math, math_utils, CombatSelectedArea
 from ProjectileMover import collideDynamicAndStatic
 from account_helpers.settings_core.settings_constants import GRAPHICS
 from gui.battle_control import avatar_getter
@@ -125,7 +126,7 @@ class AreaOfEffect(BigWorld.Entity, EffectRunner):
     def __init__(self):
         BigWorld.Entity.__init__(self)
         self._equipment = vehicles.g_cache.equipments()[self.equipmentID]
-        self.__areaGO = None
+        self.__areaGo = None
         self.__mainAreaID = None
         self.__destroyGoCallback = None
         EffectRunner.__init__(self, self, self._equipment)
@@ -218,7 +219,7 @@ class AreaOfEffect(BigWorld.Entity, EffectRunner):
                 self._callbacks[areaID] = BigWorld.callback(areaTimeout, partial(self._areaDestroy, areaID))
                 self.__mainAreaID = areaID
                 if self._equipment.areaUsedPrefab:
-                    CGF.loadGameObjectIntoHierarchy(self._equipment.areaUsedPrefab, self.entityGameObject, Math.Vector3(), self.__onAreaGOLoaded)
+                    CGF.loadAndCreatePrefabWithParent(self._equipment.areaUsedPrefab, self.entityGameObject, Math.Vector3(), self.__onAreaGOLoaded)
                     self.__destroyGoCallback = BigWorld.callback(areaTimeout, self.__destroyAreaGO)
             return
 
@@ -241,11 +242,12 @@ class AreaOfEffect(BigWorld.Entity, EffectRunner):
         vInfo = self.sessionProvider.getArenaDP().getVehicleInfo(self.vehicleID)
         return vInfo.team == avatar_getter.getObserverTeam()
 
-    def __onAreaGOLoaded(self, gameObject):
+    def __onAreaGOLoaded(self, objects, queue):
         if self.isDestroyed:
             return
-        self.__areaGO = gameObject
-        t = gameObject.findComponentByType(GenericComponents.TransformComponent)
+        root = objects[0]
+        self.__areaGo = queue.gameObject(root)
+        t = queue.component(root, CGF.TransformComponent)
         floatEpsilon = 0.001
         xScale = self._equipment.areaWidth * 0.5
         zScale = self._equipment.areaLength * 0.5
@@ -255,9 +257,9 @@ class AreaOfEffect(BigWorld.Entity, EffectRunner):
          0.0, floatEpsilon, 0.0))
 
     def __destroyAreaGO(self):
-        if self.__areaGO is not None:
-            CGF.removeGameObject(self.__areaGO)
-        self.__areaGO = None
+        if self.__areaGo is not None:
+            self.__areaGo.destroy()
+        self.__areaGo = None
         self.__destroyGoCallback = None
         return
 

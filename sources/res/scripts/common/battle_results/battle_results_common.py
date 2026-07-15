@@ -1,4 +1,5 @@
-from battle_results_constants import BATTLE_RESULT_ENTRY_TYPE as ENTRY_TYPE
+from __future__ import absolute_import
+from battle_results.battle_results_constants import BATTLE_RESULT_ENTRY_TYPE as ENTRY_TYPE
 from constants import FLAG_ACTION
 from DictPackers import DictPacker, MergeDictPacker, SimpleDictPacker, DeltaPacker, ValueReplayPacker, roundToInt
 from items.vehicles import VEHICLE_DEVICE_TYPE_NAMES, VEHICLE_TANKMAN_TYPE_NAMES

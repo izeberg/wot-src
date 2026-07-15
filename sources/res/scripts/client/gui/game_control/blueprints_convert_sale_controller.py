@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from enum import Enum
 from account_helpers import AccountSettings
 from account_helpers.AccountSettings import BLUEPRINTS_CONVERT_SALE_STARTED_SEEN
@@ -27,7 +28,7 @@ class BlueprintsConvertSaleController(IBlueprintsConvertSaleController):
         self._isEnabled = False
         self._isStarted = False
 
-    def onLobbyStarted(self, event):
+    def onLobbyStarted(self, ctx):
         if not isPlayerAccount():
             return
         self._isEnabled = int(self._lobbyContext.getServerSettings().getBlueprintsConvertSaleConfig().isEnabled())

@@ -1,8 +1,9 @@
+from __future__ import absolute_import
 import typing, Event
 from helpers import dependency, time_utils
 from skeletons.gui.game_control import IEventBattlesController
 from skeletons.gui.lobby_context import ILobbyContext
-from season_provider import SeasonProvider
+from gui.game_control.season_provider import SeasonProvider
 from gui.shared.utils.scheduled_notifications import Notifiable, SimpleNotifier
 if typing.TYPE_CHECKING:
     from helpers.server_settings import _EventBattlesConfig

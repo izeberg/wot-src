@@ -15,16 +15,16 @@ msgid "info/dateAndDuration"
 msgstr "%(date)s, duration: %(duration)s"
 
 msgid "info/difficult/1"
-msgstr "Basic Difficulty"
+msgstr "Regular Difficulty"
 
 msgid "info/difficult/2"
-msgstr "Intense Difficulty"
+msgstr "Advanced Difficulty"
 
 msgid "info/difficult/3"
 msgstr "Brutal Difficulty"
 
 msgid "info/mapName"
-msgstr "Last Stand • Siegfried Line • {difficulty}"
+msgstr "Last Stand • {mapName} • {difficulty}"
 
 msgid "info/respawnCount"
 msgstr "Respawn times: {count}"
@@ -42,22 +42,22 @@ msgid "ls_finish/reason/5/lose"
 msgstr "All allies have left the battle."
 
 msgid "ls_finish/reason/last_stand/1/win"
-msgstr "Zero eliminated—but this is just the beginning."
+msgstr "Well done! Ready for a tougher mission?"
 
 msgid "ls_finish/reason/last_stand/11/win"
-msgstr "All enemies on Basic difficulty eliminated."
+msgstr "All enemies on Regular difficulty eliminated."
 
 msgid "ls_finish/reason/last_stand_hard/1/win"
-msgstr "Zero eliminated. You saved our world from invasion."
+msgstr "Outstanding performance! Few reach this level."
 
 msgid "ls_finish/reason/last_stand_hard/11/win"
 msgstr "All enemies on Brutal difficulty eliminated."
 
 msgid "ls_finish/reason/last_stand_medium/1/win"
-msgstr "Zero eliminated—but is this the end?"
+msgstr "Impressive work! Now time for the real challenge."
 
 msgid "ls_finish/reason/last_stand_medium/11/win"
-msgstr "All enemies on Intense difficulty eliminated."
+msgstr "All enemies on Advanced difficulty eliminated."
 
 msgid "ribbon/ban"
 msgstr ""

@@ -53,19 +53,19 @@ class RankedSelectableRewardView(SelectableRewardBase):
         self.__tryToShowRewardsWindow()
         super(RankedSelectableRewardView, self)._onCloseClick()
 
-    def _getItemsComparator(self, _):
-        return self.__rewardsComparator
+    def _getItemsSortKey(self, _):
+        return self.__rewardsSortKey
 
     def __tryToShowRewardsWindow(self, showRemainedSelection=False):
         if self.__allRewards:
             showRankedYearAwardWindow(self.__allRewards, self.__points, True, showRemainedSelection=showRemainedSelection)
 
-    def __rewardsComparator(self, reward1, reward2):
+    def __rewardsSortKey(self, reward):
         defaultKey = len(self.__REWARDS_ORDER)
         rewardsList = self.__REWARDS_ORDER
-        key1 = rewardsList.index(reward1[0]) if reward1[0] in rewardsList else defaultKey
-        key2 = rewardsList.index(reward2[0]) if reward2[0] in rewardsList else defaultKey
-        return cmp(key1, key2)
+        if reward[0] in rewardsList:
+            return rewardsList.index(reward[0])
+        return defaultKey
 
 
 class RankedSelectableRewardWindow(LobbyNotificationWindow):

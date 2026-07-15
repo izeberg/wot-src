@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>nodes_01</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>HP_gunJoint</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.000030 0.430993 1.571774</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Fire_1</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.150000 0.532453 -2.300000</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Track_Exhaus_1</identifier>
+				<transform>
+					<row0>0.072632 0.000000 0.997359</row0>
+					<row1>-0.048911 0.998797 0.003562</row1>
+					<row2>-0.996159 -0.049040 0.072544</row2>
+					<row3>-1.047310 0.067177 -2.034835</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Track_Exhaus_2</identifier>
+				<transform>
+					<row0>0.072632 0.000000 0.997359</row0>
+					<row1>-0.014225 -0.999898 0.001036</row1>
+					<row2>0.997257 -0.014263 -0.072624</row2>
+					<row3>1.047420 0.067177 -2.034835</row3>
+				</transform>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<stream>colour</stream>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_turret_01</identifier>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						g_detailUVTiling
+						<Vector4>3.506850 3.506850 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_detailPowerGloss
+						<Float>
+							0.35
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_maskBias
+						<Float>
+							0.18
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/american/A170_M_VII_Y/_skins/A170_M_VII_Y_FCC_3Dst/M_VII_Y_FCC_3Dst_turret_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/american/A170_M_VII_Y/_skins/A170_M_VII_Y_FCC_3Dst/M_VII_Y_FCC_3Dst_turret_01_ANM.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/american/A170_M_VII_Y/_skins/A170_M_VII_Y_FCC_3Dst/M_VII_Y_FCC_3Dst_turret_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/american/A170_M_VII_Y/_skins/A170_M_VII_Y_FCC_3Dst/M_VII_Y_FCC_3Dst_turret_01_AO.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.006503 0.751990 -0.934313</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>tank_equipment_02</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						alphaReference
+						<Int>128</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/american/A170_M_VII_Y/_skins/A170_M_VII_Y_FCC_3Dst/M_VII_Y_FCC_3Dst_equipment_02_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_enableTransmission
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/american/A170_M_VII_Y/_skins/A170_M_VII_Y_FCC_3Dst/M_VII_Y_FCC_3Dst_equipment_02_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/american/A170_M_VII_Y/_skins/A170_M_VII_Y_FCC_3Dst/M_VII_Y_FCC_3Dst_equipment_02_ANM.dds</Texture>
+					</property>
+					<property>
+						g_vertexAnimationParams
+						<Vector4>0.005000 0.020000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_vertexColorMode
+						<Int>1</Int>
+					</property>
+				</material>
+				<groupOrigin>0.478686 0.923535 -1.367028</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				2
+				<material>
+					<identifier>tank_net</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						alphaReference
+						<Int>127</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/american/A170_M_VII_Y/_skins/A170_M_VII_Y_FCC_3Dst/M_VII_Y_FCC_3Dst_net_01_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_enableTransmission
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_vertexAnimationParams
+						<Vector4>0.005000 0.005000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_vertexColorMode
+						<Int>1</Int>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/american/A170_M_VII_Y/_skins/A170_M_VII_Y_FCC_3Dst/M_VII_Y_FCC_3Dst_net_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/american/A170_M_VII_Y/_skins/A170_M_VII_Y_FCC_3Dst/M_VII_Y_FCC_3Dst_net_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.047099 0.545248 -1.323847</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				3
+				<material>
+					<identifier>tank_equipment_01</identifier>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						g_detailUVTiling
+						<Vector4>3.506850 3.506850 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_detailPowerGloss
+						<Float>
+							0.35
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_maskBias
+						<Float>
+							0.18
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/american/A170_M_VII_Y/_skins/A170_M_VII_Y_FCC_3Dst/M_VII_Y_FCC_3Dst_equipment_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/american/A170_M_VII_Y/_skins/A170_M_VII_Y_FCC_3Dst/M_VII_Y_FCC_3Dst_equipment_01_ANM.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/american/A170_M_VII_Y/_skins/A170_M_VII_Y_FCC_3Dst/M_VII_Y_FCC_3Dst_equipment_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/american/A170_M_VII_Y/_skins/A170_M_VII_Y_FCC_3Dst/M_VII_Y_FCC_3Dst_equipment_01_AO.dds</Texture>
+					</property>
+					<property>
+						alphaReference
+						<Int>127</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+				</material>
+				<groupOrigin>-0.021880 0.935957 -1.739261</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-1.735411 -0.126794 -3.867164</min>
+		<max>1.996228 1.973864 1.748546</max>
+	</boundingBox>
+	<geometrySize>836076</geometrySize>
+</root>

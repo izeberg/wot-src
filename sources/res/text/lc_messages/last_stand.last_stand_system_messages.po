@@ -29,25 +29,25 @@ msgid "serviceChannelMessages/battleResults/artefacts"
 msgstr "Records available for decryption"
 
 msgid "serviceChannelMessages/battleResults/battleTypeName"
-msgstr "Mode: Last Stand: Invasion"
+msgstr "Mode: Last Stand: Terra Nord"
 
 msgid "serviceChannelMessages/battleResults/battleTypeName/107"
-msgstr "Last Stand: Invasion (Basic)"
+msgstr "Last Stand: Terra Nord (Regular)"
 
 msgid "serviceChannelMessages/battleResults/battleTypeName/108"
-msgstr "Last Stand: Invasion (Intense)"
+msgstr "Last Stand: Terra Nord (Advanced)"
 
 msgid "serviceChannelMessages/battleResults/battleTypeName/109"
-msgstr "Last Stand: Invasion (Brutal)"
+msgstr "Last Stand: Terra Nord (Brutal)"
 
 msgid "serviceChannelMessages/battleResults/difficulty"
 msgstr "Difficulty"
 
 msgid "serviceChannelMessages/battleResults/difficulty/107"
-msgstr "Basic"
+msgstr "Regular"
 
 msgid "serviceChannelMessages/battleResults/difficulty/108"
-msgstr "Intense"
+msgstr "Advanced"
 
 msgid "serviceChannelMessages/battleResults/difficulty/109"
 msgstr "Brutal"
@@ -79,15 +79,15 @@ msgstr "Financial Transaction"
 msgid "serviceChannelMessages/difficultyLevel_2/description"
 msgstr ""
 "You can select the difficulty level on the difficulty panel in the Last "
-"Stand: Invasion Garage."
+"Stand Garage."
 
 msgid "serviceChannelMessages/difficultyLevel_2/title"
-msgstr "Intense Difficulty Unlocked"
+msgstr "Advanced Difficulty Unlocked"
 
 msgid "serviceChannelMessages/difficultyLevel_3/description"
 msgstr ""
 "You can select the difficulty level on the difficulty panel in the Last "
-"Stand: Invasion Garage."
+"Stand Garage."
 
 msgid "serviceChannelMessages/difficultyLevel_3/title"
 msgstr "Brutal Difficulty Unlocked"
@@ -114,18 +114,17 @@ msgstr "Decryption Successful"
 
 msgid "serviceChannelMessages/switchedOff"
 msgstr ""
-"Battles in Last Stand: Invasion are temporarily unavailable.\n"
+"Last Stand battles are temporarily unavailable.\n"
 "Try again later."
 
 msgid "serviceChannelMessages/switchedOffDifficulty"
 msgstr ""
-"Battles in Last Stand: Invasion (%(difficulty)s) are temporarily unavailable.\n"
-"Try again later."
+"%(difficulty)s difficulty battles are temporarily unavailable. Try again "
+"later."
 
 msgid "serviceChannelMessages/switchedOffFull"
 msgstr ""
-"Last Stand: Invasion is currently unavailable. Check the game portal for "
-"updates."
+"Last Stand is currently unavailable. Check the game portal for updates."
 
 msgid "unit/notification/changedDifficultyLevel"
 msgstr "The Platoon Commander has changed the difficulty to: %(level)s."

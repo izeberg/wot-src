@@ -1,9 +1,9 @@
+from __future__ import absolute_import
 import typing
-from abc import ABCMeta
+from hints_common.battle.schemas.const import BLOCK_ALL_HINTS_SCOPE_FILTER
 from visual_script.block import Block, Meta, InitParam
 from visual_script.misc import errorVScript, ASPECT, EDITOR_TYPE
 from visual_script.slot_types import SLOT_TYPE
-from hints_common.battle.schemas.const import BLOCK_ALL_HINTS_SCOPE_FILTER
 if typing.TYPE_CHECKING:
     from hints_common.battle.manager import CommonBattleHintsModelsManager
 
@@ -75,7 +75,6 @@ class BaseSelectHint(Block, HintsMeta):
 
 
 class BaseHintAction(Block, HintsMeta):
-    __metaclass__ = ABCMeta
 
     def __init__(self, *args, **kwargs):
         super(BaseHintAction, self).__init__(*args, **kwargs)
@@ -117,7 +116,7 @@ class HintActionParamsMixin(object):
             if name in params:
                 errorVScript(self, ('Name <{}> already in use.').format(name))
                 continue
-            elif name in self.RESERVED:
+            if name in self.RESERVED:
                 errorVScript(self, ('Name <{}> reserved and can be used in params.').format(name))
                 continue
             params.append(name)

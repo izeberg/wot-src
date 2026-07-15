@@ -1,8 +1,7 @@
-import Event
+from __future__ import absolute_import
+import Math, CommandMapping, Event
 from chat_commands_consts import INVALID_VEHICLE_POSITION
-import CommandMapping
 from gui.battle_control import event_dispatcher as gui_event_dispatcher
-import Math
 from gui.battle_control.controllers.default_maps_ctrl import DefaultMapsController
 
 class EpicMapsController(DefaultMapsController):

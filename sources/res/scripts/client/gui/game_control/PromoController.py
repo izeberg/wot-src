@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, typing
 from collections import namedtuple
 import BigWorld
@@ -274,8 +275,7 @@ class PromoController(IPromoController):
         self.__notificationsCtrl.onEventNotificationsChanged -= self.__onEventNotification
         g_eventBus.removeListener(BrowserEvent.BROWSER_CREATED, self.__handleBrowserCreated)
         self.__browserCreationCallbacks = {}
-        watcherKeys = self.__browserWatchers.keys()
-        for browserID in watcherKeys:
+        for browserID in list(self.__browserWatchers):
             self.__clearWatcher(browserID)
 
         return

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from debug_utils import LOG_ERROR
 from gui.Scaleform.daapi.view.lobby.hangar.hangar_cm_handlers import VehicleContextMenuHandler
 

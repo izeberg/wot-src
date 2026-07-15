@@ -1,4 +1,4 @@
-from abc import ABCMeta
+from __future__ import absolute_import, division
 from exchange.personal_discounts_constants import ExchangeDiscountType, EXCHANGE_RATE_GOLD_NAME, MAX_DISCOUNT_COEFFICIENT, MAX_TIMESTAMP_VALUE, MAX_DISCOUNT_VALUE, ExchangeDiscountInfo, ExchangeRate, ExchangeRateShowFormat
 
 def isDiscountValuesCorrect(discount, defaultGoldRateValue, defaultResourceRateValue):
@@ -10,7 +10,6 @@ def isDiscountValuesCorrect(discount, defaultGoldRateValue, defaultResourceRateV
 
 
 class BaseExchangeValidator(object):
-    __metaclass__ = ABCMeta
     _maxRateMultiplier = MAX_DISCOUNT_COEFFICIENT
     _maxDiscountValue = MAX_DISCOUNT_VALUE
     _maxLifetime = MAX_TIMESTAMP_VALUE

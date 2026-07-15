@@ -5,7 +5,6 @@ from helpers.EffectsList import effectsFromSection
 from skeletons.dynamic_objects_cache import IBattleDynamicObjectsCache
 from skeletons.gui.battle_session import IBattleSessionProvider
 from vehicle_systems.stricted_loading import makeCallbackWeak
-import GenericComponents
 from items import vehicles
 if IS_CLIENT:
     import Vehicle
@@ -23,7 +22,7 @@ def _getTrapOrRepairPointDescr(equipmentID):
 
 
 def _getPlayerVehicleImpl(who):
-    playerEntityRef = who.findComponentByType(NetworkComponents.NetworkEntity)
+    playerEntityRef = who.findRead(NetworkComponents.NetworkEntity)
     if playerEntityRef is None:
         return
     else:
@@ -47,8 +46,9 @@ class DynamicObjectsCacheLoader(object):
         return
 
     def activate(self):
-        gameObject = CGF.GameObject(self.spaceID)
-        self.gameObject = gameObject
+        queue = CGF.CommandQueue(self.spaceID)
+        self.gameObject = queue.createGameObject()
+        queue.createComponent(self.gameObject, CGF.HierarchyComponent)
         pointDescr = _getTrapOrRepairPointDescr(self.equipmentID)
         from AffectComponent import getInfluenceZoneType
         self.__influenceZoneType = getInfluenceZoneType(pointDescr)
@@ -77,7 +77,7 @@ class DynamicObjectsCacheLoader(object):
 
         else:
             _logger.debug('Trap point: Effect name is not defined')
-        self.gameObject.activate()
+        queue.activateGameObject(self.gameObject)
         self.guiSessionProvider.onUpdateObservedVehicleData += self._onUpdateObservedVehicleData
         return
 
@@ -90,17 +90,18 @@ class DynamicObjectsCacheLoader(object):
             self.gameObject.destroy()
         self.gameObject = None
         player = BigWorld.player()
-        for id_ in self.fireIDs:
-            player.terrainEffects.stop(id_)
+        if player is not None:
+            for id_ in self.fireIDs:
+                player.terrainEffects.stop(id_)
 
+        del self.fireIDs[:]
         return
 
     def __onResourceLoaded(self, effectP, position, scaleRatio, pointDescr, resourceRefs):
         if effectP in resourceRefs.failedIDs:
             return
         else:
-            gameObject = self.gameObject
-            if gameObject is None:
+            if self.gameObject is None:
                 return
             x = z = pointDescr.radius
             if scaleRatio:
@@ -115,13 +116,13 @@ class DynamicObjectsCacheLoader(object):
             from battleground.components import SequenceComponent
             yShift = -zoneDepth
             position = position + Math.Vector3(0, yShift, 0)
-            self.__visual = g = CGF.GameObject(self.spaceID)
-            g.createComponent(GenericComponents.TransformComponent, position)
-            g.createComponent(GenericComponents.HierarchyComponent, self.gameObject)
-            sequenceComponent = g.createComponent(SequenceComponent, resourceRefs[effectP])
+            queue = CGF.CommandQueue(self.spaceID)
+            self.__visual = g = queue.createGameObject()
+            queue.createComponent(g, CGF.TransformComponent, position)
+            queue.createComponent(g, CGF.HierarchyComponent, self.gameObject)
+            sequenceComponent = queue.assignComponent(g, SequenceComponent(resourceRefs[effectP]))
             sequenceComponent.createTerrainEffect(position, scale=scale, loopCount=-1)
-            g.activate()
-            g.transferOwnershipToWorld()
+            queue.activateGameObject(g)
             return
 
     def __getEffectConfig(self, config):
@@ -137,3 +138,16 @@ class DynamicObjectsCacheLoader(object):
     def _onUpdateObservedVehicleData(self, vehicleID, *args):
         self.deactivate()
         self.activate()
+
+
+class DynamicObjectsCacheLoaderSystem(CGF.System):
+    DynamicObjectsCacheActivated = CGF.ActivateReaction(CGF.ReactRw(DynamicObjectsCacheLoader))
+    DynamicObjectsCacheDeactivated = CGF.DeactivateReaction(CGF.ReactRw(DynamicObjectsCacheLoader))
+    Reactions = CGF.Reactions(DynamicObjectsCacheActivated, DynamicObjectsCacheDeactivated)
+
+    def update(self):
+        for loader in self.reaction(self.DynamicObjectsCacheDeactivated):
+            loader.deactivate()
+
+        for loader in self.reaction(self.DynamicObjectsCacheActivated):
+            loader.activate()

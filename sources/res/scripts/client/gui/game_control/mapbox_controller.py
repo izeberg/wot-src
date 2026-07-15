@@ -1,7 +1,9 @@
-import random
+from __future__ import absolute_import
+import logging, random
 from collections import namedtuple
 from functools import partial
-import logging, typing
+import typing
+from future.utils import iteritems
 from account_helpers.AccountSettings import AccountSettings, MAPBOX_PROGRESSION
 from wg_async import wg_async, wg_await, await_callback, BrokenPromiseError
 import adisp, BigWorld
@@ -9,6 +11,7 @@ from BWUtil import AsyncReturn
 from constants import QUEUE_TYPE, PREBATTLE_TYPE, Configs
 import Event
 from frameworks.wulf import WindowLayer
+from gui.game_control.season_provider import SeasonProvider
 from gui.mapbox import mapbox_helpers
 from gui.mapbox.mapbox_helpers import formatMapboxBonuses, convertTimeFromISO
 from gui.mapbox.mapbox_survey_manager import MapboxSurveyManager
@@ -26,7 +29,6 @@ from gui.shared.utils.SelectorBattleTypesUtils import setBattleTypeAsUnknown
 from gui.shared.utils.scheduled_notifications import Notifiable, SimpleNotifier, TimerNotifier
 from gui.wgcg.mapbox.contexts import MapboxProgressionCtx, MapboxCompleteSurveyCtx
 from helpers import dependency, server_settings, time_utils
-from season_provider import SeasonProvider
 from skeletons.gui.game_control import IMapboxController
 from skeletons.gui.lobby_context import ILobbyContext
 from skeletons.gui.web import IWebController
@@ -177,7 +179,7 @@ class MapboxController(Notifiable, SeasonProvider, IMapboxController, IGlobalLis
         progressionData = self.__progressionDataProvider.getProgressionData()
         if not self.isEnabled() or self.getCurrentCycleID() is None or progressionData is None:
             return 0
-        return len([ mapName for mapName, mapData in progressionData.surveys.iteritems() if not self.__settingsManager.isMapVisited(mapName) and mapData.progress >= mapData.total
+        return len([ mapName for mapName, mapData in iteritems(progressionData.surveys) if not self.__settingsManager.isMapVisited(mapName) and mapData.progress >= mapData.total
                    ])
 
     @wg_async
@@ -378,7 +380,7 @@ class MapboxProgressionDataProvider(Notifiable):
         if not self.__progressionData:
             return None
         else:
-            return ProgressionData({key:MapData(value['progress'], value['total'], value['passed']) for key, value in self.__progressionData.get('surveys', {}).iteritems()}, {value['battles']:RewardData(formatMapboxBonuses(value['reward']), value['status']) for value in self.__progressionData.get('rewards', [])}, self.__progressionData.get('min_rank'), self.__progressionData.get('total_battles_amount'), self.__getProgressionRestartTimeWithRandomDelay())
+            return ProgressionData({key:MapData(value['progress'], value['total'], value['passed']) for key, value in iteritems(self.__progressionData.get('surveys', {}))}, {value['battles']:RewardData(formatMapboxBonuses(value['reward']), value['status']) for value in self.__progressionData.get('rewards', [])}, self.__progressionData.get('min_rank'), self.__progressionData.get('total_battles_amount'), self.__getProgressionRestartTimeWithRandomDelay())
 
     def getProgressionRestartTime(self):
         if self.__progressionData:

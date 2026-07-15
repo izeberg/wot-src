@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from enum import Enum, unique
 MAX_CHANNEL_HISTORY = 10
 CHANNEL_UNSUBSCRIPTION_DELAY = 60

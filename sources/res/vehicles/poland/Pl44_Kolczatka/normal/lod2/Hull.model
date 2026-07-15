@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/poland/Pl44_Kolczatka/normal/lod3/Hull</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.597294 -0.570270 -3.601003</min>
+		<max>1.598342 0.515656 3.675180</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/poland/Pl44_Kolczatka/normal/lod2/Hull</nodefullVisual>
+</root>

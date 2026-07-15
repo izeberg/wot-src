@@ -16,8 +16,6 @@ package net.wg.gui.lobby.vehicleCustomization
       
       private static const BOOK_MARK_WIDTH_OFFSET:int = -3;
       
-      private static const FILTER_OFFSET_X:int = 40;
-      
       private static const BOOK_MARK_HORIZONTAL_SHIFT:int = -3;
       
       private static const BOOK_MARK_VERTICAL_SHIFT:int = -23;
@@ -44,6 +42,12 @@ package net.wg.gui.lobby.vehicleCustomization
       private var _layoutValid:Boolean = false;
       
       private var _disposed:Boolean = false;
+      
+      private var _contentWidth:Number = 0;
+      
+      private var _contentHeight:Number = 0;
+      
+      private var _leftPanelOffset:int = 0;
       
       public function CustomizationCarouselLayoutController(param1:IScroller)
       {
@@ -76,8 +80,10 @@ package net.wg.gui.lobby.vehicleCustomization
          var _loc10_:Boolean = false;
          var _loc11_:Boolean = false;
          var _loc12_:CustomizationCarouselArrowVO = null;
-         var _loc13_:Number = NaN;
-         var _loc14_:int = 0;
+         var _loc13_:Rectangle = null;
+         var _loc14_:Number = NaN;
+         var _loc15_:int = 0;
+         var _loc16_:int = 0;
          this._itemLayouts.splice(0,this._itemLayouts.length);
          this._bookmarkLayouts.splice(0,this._bookmarkLayouts.length);
          this._separatorsLayouts.splice(0,this._separatorsLayouts.length);
@@ -124,29 +130,41 @@ package net.wg.gui.lobby.vehicleCustomization
          _loc3_ -= _loc2_;
          if(this._itemLayouts.length > 0)
          {
-            _loc13_ = _loc3_ - this._itemLayouts[0].x;
-            if(_loc13_ < this._scrollList.width)
+            _loc13_ = this._itemLayouts[this._itemLayouts.length - 1];
+            this._contentWidth = _loc13_.right;
+            this._contentHeight = _loc13_.bottom;
+         }
+         else
+         {
+            this._contentWidth = 0;
+            this._contentHeight = 0;
+         }
+         if(this._itemLayouts.length > 0)
+         {
+            _loc14_ = _loc3_ - this._itemLayouts[0].x;
+            if(_loc14_ < this._scrollList.width)
             {
-               _loc14_ = (this._scrollList.width - _loc13_ >> 1) - this._itemLayouts[0].x;
-               if(_loc14_ > FILTER_OFFSET_X)
+               _loc15_ = (this._scrollList.width - _loc14_ >> 1) - this._itemLayouts[0].x;
+               _loc16_ = this._leftPanelOffset >> 1;
+               if(_loc15_ > _loc16_)
                {
-                  _loc14_ -= FILTER_OFFSET_X;
+                  _loc15_ -= _loc16_;
                }
                for each(_loc4_ in this._itemLayouts)
                {
-                  _loc4_.offset(_loc14_,0);
+                  _loc4_.offset(_loc15_,0);
                }
                for each(_loc5_ in this._bookmarkLayouts)
                {
-                  _loc5_.offset(_loc14_,0);
+                  _loc5_.offset(_loc15_,0);
                }
                for each(_loc6_ in this._separatorsLayouts)
                {
-                  _loc6_.offset(_loc14_,0);
+                  _loc6_.offset(_loc15_,0);
                }
                for each(_loc12_ in this._arrowsData)
                {
-                  _loc12_.position.offset(_loc14_,0);
+                  _loc12_.position.offset(_loc15_,0);
                }
             }
          }
@@ -209,15 +227,11 @@ package net.wg.gui.lobby.vehicleCustomization
       
       public function getMaxExtents() : Point
       {
-         if(this._itemLayouts.length == 0)
+         if(!this._layoutValid)
          {
-            return new Point(0,0);
+            this.generateLayout();
          }
-         var _loc1_:Rectangle = this._itemLayouts[this._itemLayouts.length - 1];
-         var _loc2_:Point = new Point();
-         _loc2_.x = _loc1_.right;
-         _loc2_.y = _loc1_.bottom;
-         return _loc2_;
+         return new Point(this._contentWidth,this._contentHeight);
       }
       
       public function getRightIndex(param1:int) : int
@@ -260,6 +274,12 @@ package net.wg.gui.lobby.vehicleCustomization
          this._bookmarkData = param1.bookmarks;
          this._arrowsData = param1.arrows;
          this._showSeparators = param1.showSeparators;
+         this._layoutValid = false;
+      }
+      
+      public function setLeftPanelOffset(param1:int) : void
+      {
+         this._leftPanelOffset = param1;
          this._layoutValid = false;
       }
       

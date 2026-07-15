@@ -1,6 +1,8 @@
+from __future__ import absolute_import
 import math, weakref
 from collections import defaultdict
 from functools import partial
+from future.utils import lmap, viewitems
 from math import copysign
 import BigWorld, Event
 from arena_component_system.client_arena_component_system import ClientArenaComponent
@@ -54,7 +56,7 @@ def makeEdgeId(a, b):
 
 def decomposeEdgeId(edgeId):
     return (
-     int(edgeId / MAX_NUM_NODES), edgeId % MAX_NUM_NODES)
+     int(edgeId // MAX_NUM_NODES), edgeId % MAX_NUM_NODES)
 
 
 class _SectorGroupNode(object):
@@ -151,7 +153,7 @@ class EpicSectorWarningComponent(ClientArenaComponent, CallbackDelayer):
         return self.__edges.get(edgeID, None)
 
     def getEdgeIdsByNodeId(self, nodeId):
-        return map(partial(makeEdgeId, nodeId), self.__nodes[nodeId].neighbours)
+        return lmap(partial(makeEdgeId, nodeId), self.__nodes[nodeId].neighbours)
 
     def __onAvatarReady(self):
         if self._componentSystem() is None:
@@ -260,14 +262,14 @@ class EpicSectorWarningComponent(ClientArenaComponent, CallbackDelayer):
             return
         else:
             adjacentEdges = self.getEdgeIdsByNodeId(newNodeID)
-            currentActiveWarnings = self.__activeWarnings.keys()
+            currentActiveWarnings = list(self.__activeWarnings)
             for activeEdgeId in currentActiveWarnings:
                 if activeEdgeId not in adjacentEdges:
                     fromId, toId = decomposeEdgeId(activeEdgeId)
                     self.__showWarning(fromId, toId, WARNING_TYPE.NONE)
 
             localState = self.__nodes[newNodeID].mappedState
-            for edgeId, edge in self.__edges.iteritems():
+            for edgeId, edge in viewitems(self.__edges):
                 adjacentNodes = decomposeEdgeId(edgeId)
                 adjacentStates = [ self.__nodes[nodeId].mappedState for nodeId in adjacentNodes ]
                 if newNodeID in adjacentNodes:
@@ -378,7 +380,7 @@ class EpicSectorWarningComponent(ClientArenaComponent, CallbackDelayer):
 
     def __tick(self):
         transitionTimesToDel = []
-        for sectorGroupId, endTime in self.__transitionEndTimes.iteritems():
+        for sectorGroupId, endTime in viewitems(self.__transitionEndTimes):
             diffTime = math.ceil(endTime - BigWorld.serverTime())
             if diffTime >= 0:
                 self.onTransitionTimerUpdated(sectorGroupId, diffTime)

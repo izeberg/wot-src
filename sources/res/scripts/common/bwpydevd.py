@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import os, sys, ResMgr, BigWorld, threading, bwdebug
 REPLACE_PATHS = []
 HAS_BW_CONFIG = False

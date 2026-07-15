@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from arena_component_system.client_arena_component_assembler import ClientArenaComponentAssembler
 from arena_components.player_type_specific_components import getPlayerTypeSpecificComponentsForEpicRandom
 

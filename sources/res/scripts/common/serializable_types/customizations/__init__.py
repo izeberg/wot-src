@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from serialization import parseCompDescr
 from serialization.serializable_component import SerializableComponentChildType
 from .attachment import AttachmentComponent

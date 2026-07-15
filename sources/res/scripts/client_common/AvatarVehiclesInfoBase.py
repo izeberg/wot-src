@@ -1,5 +1,7 @@
-import BigWorld
+from __future__ import absolute_import
 from collections import namedtuple
+from future.utils import listitems
+import BigWorld
 VehInfoDiffBufferEntry = namedtuple('VehInfoDiffBufferEntry', ('new', 'prev'))
 
 class AvatarVehiclesInfoBase(BigWorld.DynamicScriptComponent):
@@ -27,7 +29,7 @@ class AvatarVehiclesInfoBase(BigWorld.DynamicScriptComponent):
             vehInfoIndex = changePath[0]
             vehInfo = self.vehiclesInfo[vehInfoIndex]
             self._updateVehicleInfo(vehInfo, self.__diffBuffer)
-            for attrName, diff in self.__diffBuffer.items():
+            for attrName, diff in listitems(self.__diffBuffer):
                 if diff.prev is None or diff.new is None:
                     continue
                 setter = getattr(self, self.SET_VEH_INFO_FMT.format(attrName), None)

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/american/A170_M_VII_Y/_skins/A170_M_VII_Y_FCC_3Dst/crash/lod3/Hull</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.784383 -1.022405 -2.976146</min>
+		<max>1.781204 0.729818 3.027774</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/american/A170_M_VII_Y/_skins/A170_M_VII_Y_FCC_3Dst/crash/lod2/Hull</nodefullVisual>
+</root>

@@ -190,11 +190,20 @@ msgstr "Wz. 64GC Bzyg"
 msgid "Chassis_Pl37_CS_67_Szakal"
 msgstr "CS-67 Szakal"
 
+msgid "Chassis_Pl38_63TP_Rycerski"
+msgstr "63TP Rycerski"
+
 msgid "Chassis_Pl39_Husarz"
 msgstr "Husarz"
 
 msgid "Chassis_Pl40_Krazownik"
 msgstr "Krazownik"
+
+msgid "Chassis_Pl44_Kolczatka"
+msgstr "Kolczatka"
+
+msgid "DNT_10_R"
+msgstr "DNT-10 (R)"
 
 msgid "Fug7A"
 msgstr "FuG 7"
@@ -1140,6 +1149,28 @@ msgstr ""
 msgid "Pl37_CS_67_Szakal_short"
 msgstr "Szakal"
 
+msgid "Pl38_63TP_Rycerski"
+msgstr "63TP Rycerski"
+
+msgid "Pl38_63TP_Rycerski_descr"
+msgstr ""
+"In the post-war years, Poland manufactured tanks under Soviet licenses but retained potential for its own developments. In the 1960s, a project was proposed for the 63TP Rycerski heavy tank—a vehicle with a conventional configuration that aimed to combine the best Western and Soviet tank building innovations.\n"
+"The design called for a modern level of firepower and mobility, as well as improved crew operating conditions. The gun elevation and depression would have been increased, and maintenance simplified. The ammunition was primarily located in a rear recess of the turret, making loading more convenient and giving the turret better balance by reducing the load on the aiming drives. The tank was never built."
+
+msgid "Pl38_63TP_Rycerski_long_special"
+msgstr ""
+"The 63TP Rycerski is a Tier IX Polish heavy tank. It has an unconventional "
+"set of versatile heavy tank characteristics—good top speed and a gun with "
+"solid alpha damage—and also features good gun depression and strong turret "
+"armor. Unlike most vehicles in its role, the Rycerski can take up key "
+"positions early on."
+
+msgid "Pl38_63TP_Rycerski_short"
+msgstr "63TP"
+
+msgid "Pl38_63TP_Rycerski_short_special"
+msgstr "Good gun depression, good mobility"
+
 msgid "Pl39_Husarz"
 msgstr "Husarz"
 
@@ -1193,6 +1224,37 @@ msgstr "Krazownik"
 msgid "Pl40_Krazownik_short_special"
 msgstr "Good armor, high single damage"
 
+msgid "Pl44_Kolczatka"
+msgstr "Kolczatka"
+
+msgid "Pl44_Kolczatka_desc"
+msgstr ""
+"In the early 1970s, Poland started developing the Kolczatka experimental "
+"tank destroyer, focusing on high mobility and low costs compared to heavier "
+"vehicles. An open fighting compartment and a crew of four simplified "
+"construction and reduced the weight. A fire-control system with a laser "
+"rangefinder and a night sight was supposed to be a key feature. The "
+"designers also planned to use a unified chassis from Zakłady Mechaniczne "
+"Łabędy with tracks with rubber shoes, enabling the vehicle to drive at high "
+"speeds and use public roads. The project was closed at the blueprint phase "
+"in the latter half of the 1970s due to financial constraints, dependence on "
+"cooperation within the Warsaw Pact, and the military's shift of interest "
+"toward ATGMs."
+
+msgid "Pl44_Kolczatka_long_special"
+msgstr ""
+"The Kolczatka is a Tier IX Polish tank destroyer that blends the "
+"characteristics of a sniper TD with those of a medium tank. It offers strong"
+" firepower, good mobility, a fully rotating turret, and excellent gun "
+"depression. Effective not only at long range, it can also provide support "
+"and fight on the front line."
+
+msgid "Pl44_Kolczatka_short"
+msgstr "Kolczatka"
+
+msgid "Pl44_Kolczatka_short_special"
+msgstr "Fully rotating turret, good mobility"
+
 msgid "Polski_FIAT_122BC"
 msgstr "Polski FIAT 122BC"
 
@@ -1204,6 +1266,9 @@ msgstr "RKB/c"
 
 msgid "RKD"
 msgstr "RKD"
+
+msgid "RM_31T"
+msgstr "RM-31T"
 
 msgid "RR_Kestrel"
 msgstr "RR Kestrel"
@@ -1228,6 +1293,9 @@ msgstr "RTU \"Jesion-M\""
 
 msgid "R_112"
 msgstr "R-112"
+
+msgid "R_112_R"
+msgstr "R-112 (R)"
 
 msgid "R_113"
 msgstr "R-113"
@@ -1418,11 +1486,17 @@ msgstr "Wz. 64GC Bzyg"
 msgid "Turret_1_Pl37_CS_67_Szakal"
 msgstr "CS-67 Szakal"
 
+msgid "Turret_1_Pl38_63TP_Rycerski"
+msgstr "63TP Rycerski"
+
 msgid "Turret_1_Pl39_Husarz"
 msgstr "Husarz"
 
 msgid "Turret_1_Pl40_Krazownik"
 msgstr "Krazownik"
+
+msgid "Turret_1_Pl44_Kolczatka"
+msgstr "Kolczatka"
 
 msgid "Turret_2_Pl05_50TP_Tyszkiewicza"
 msgstr "50TP Tyszkiewicza II"
@@ -1465,6 +1539,9 @@ msgstr "CS-53M-1H"
 
 msgid "Turret_3_Pl23_CS_53_SH"
 msgstr "CS-53 MH"
+
+msgid "UTD_20_FM"
+msgstr "UTD-20-FM"
 
 msgid "V-2-34_B"
 msgstr "V-2-34"
@@ -1739,6 +1816,15 @@ msgstr "OF-471"
 msgid "_122mm_OF-471M"
 msgstr "OF-471M"
 
+msgid "_122mm_PK_62_PCC"
+msgstr "PK-62 (PCC)"
+
+msgid "_122mm_POB_62_PCC"
+msgstr "POB-62 (PCC)"
+
+msgid "_122mm_PP_62_PCC"
+msgstr "PP-62 (PCC)"
+
 msgid "_122mm_UBR-471_PB"
 msgstr "BR-471PB"
 
@@ -1774,6 +1860,9 @@ msgstr "WOF-471P (53TP)"
 
 msgid "_122mm_WOF_471P_W"
 msgstr "WOF-471P (W)"
+
+msgid "_122mm_Wz_53_PCC"
+msgstr "122 mm Wz. 53 (PCC)"
 
 msgid "_122mm_armata_wz_53_56"
 msgstr "122 mm armata wz. 53/56"
@@ -1831,6 +1920,18 @@ msgstr "AZ-PB-46A"
 
 msgid "_130mm_R_14_wz_56"
 msgstr "130 mm R 14 wz. 56"
+
+msgid "_140mm_armata_wz_65"
+msgstr "140 mm armata wz. 65"
+
+msgid "_140mm_pocisk_kumulacyjny_wz_65"
+msgstr "Pocisk kumulacyjny wz. 65"
+
+msgid "_140mm_pocisk_podkalibrowy_wz_65"
+msgstr "Pocisk podkalibrowy wz. 65"
+
+msgid "_140mm_pocisk_wybuchowy_wz_65"
+msgstr "Pocisk wybuchowy wz. 65"
 
 msgid "_152mm_J_2"
 msgstr "152 mm J 2"

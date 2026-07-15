@@ -1,5 +1,7 @@
+from __future__ import absolute_import
+from future.utils import viewitems
 from typing import TYPE_CHECKING
-import CommandMapping, Keys, Event, VOIP
+import Keys, CommandMapping, Event, VOIP
 from constants import IS_CHINA
 from debug_utils import LOG_DEBUG
 from gui.app_loader import sf_battle
@@ -72,12 +74,12 @@ class DynSquadArenaController(object):
             squadSizes = arenaDP.getSquadSizes()
             otherTeams = arenaDP.getEnemyTeams()
             for myTeam in myTeams:
-                for squadIdx, squadSize in squadSizes[myTeam].iteritems():
+                for squadIdx, squadSize in viewitems(squadSizes[myTeam]):
                     self.__sentAllyCreatePlatoons.append(squadIdx)
                     self.__squadMembersAlly[squadIdx] = squadSize
 
             for otherTeam in otherTeams:
-                for squadIdx, squadSize in squadSizes[otherTeam].iteritems():
+                for squadIdx, squadSize in viewitems(squadSizes[otherTeam]):
                     self.__sentEnemyCreatePlatoons.append(squadIdx)
                     self.__squadMembersEnemy[squadIdx] = squadSize
 

@@ -1,6 +1,7 @@
+from __future__ import absolute_import
 from typing import Set, Any, Optional, List, Dict, Tuple
 from ResMgr import DataSection
-from debug_utils import LOG_CODEPOINT_WARNING, LOG_WARNING
+from debug_utils import LOG_CODEPOINT_WARNING
 from items import _xml
 from soft_exception import SoftException
 

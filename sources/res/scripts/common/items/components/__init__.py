@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from items.components import c11n_constants
 from items.components import chassis_components
 from items.components import component_constants

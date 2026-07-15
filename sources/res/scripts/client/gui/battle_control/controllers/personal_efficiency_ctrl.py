@@ -1,4 +1,6 @@
+from __future__ import absolute_import
 import weakref
+from builtins import range
 from collections import defaultdict, deque
 import Event
 from shared_utils import BitmaskHelper
@@ -347,7 +349,7 @@ class PersonalEfficiencyController(IBattleController):
         if eventsCount > 0:
             eventsCount = min(eventsCount, _LOG_MAX_LEN)
             if totals:
-                for key in totals.iterkeys():
+                for key in totals:
                     self.__totalEfficiency[key] = self.__totalEfficiency[key] + totals[key]
                     totals[key] = self.__totalEfficiency[key]
 

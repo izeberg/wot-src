@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>last_stand/vehicles/american/A130_Super_Hellcat_LS_BOT/normal/lod2/Chassis</nodefullVisual>
+	<parent>last_stand/vehicles/american/A130_Super_Hellcat_LS_BOT/normal/lod3/Chassis</parent>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.384639 0.000346 -2.504668</min>
+		<max>1.384639 1.079551 2.549511</max>
+	</visibilityBox>
+</root>

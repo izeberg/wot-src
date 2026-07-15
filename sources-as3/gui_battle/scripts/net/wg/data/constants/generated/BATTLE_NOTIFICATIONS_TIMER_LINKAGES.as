@@ -103,6 +103,8 @@ package net.wg.data.constants.generated
       
       public static const HP_RESTORE_ON_DAMAGE_ICON:String = "hpRestoreOnDamageIconUI";
       
+      public static const SHIELD_ICON:String = "shieldIconUI";
+      
       public static const POI_GREEN_ARTILLERY_ICON:String = "PoIGreenArtilleryIconUI";
       
       public static const POI_GREEN_ARTILLERY_SMALL_ICON:String = "PoIGreenArtillerySmallIconUI";

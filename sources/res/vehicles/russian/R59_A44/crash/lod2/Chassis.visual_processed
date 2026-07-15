@@ -39,7 +39,7 @@
 						<row0>1.000000 0.000000 0.000000</row0>
 						<row1>0.000000 1.000000 0.000000</row1>
 						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>0.000000 0.490125 0.000000</row3>
+						<row3>0.000000 0.492208 0.000000</row3>
 					</transform>
 					<node>
 						<identifier>V_BlendBone</identifier>
@@ -178,5 +178,5 @@
 		<min>-1.533646 0.003212 -3.148936</min>
 		<max>1.533646 1.188471 3.095921</max>
 	</boundingBox>
-	<geometrySize>70212</geometrySize>
+	<geometrySize>70404</geometrySize>
 </root>

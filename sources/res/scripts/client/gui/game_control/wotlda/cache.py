@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import os, logging
 from typing import Dict, Any
 from helpers.local_cache import FileLocalCache

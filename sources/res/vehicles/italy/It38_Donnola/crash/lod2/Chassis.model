@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/italy/It38_Donnola/crash/lod2/Chassis</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/italy/It38_Donnola/crash/lod3/Chassis</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.292618 -0.000003 -2.501116</min>
+		<max>1.292618 0.885552 2.459310</max>
+	</visibilityBox>
+</root>

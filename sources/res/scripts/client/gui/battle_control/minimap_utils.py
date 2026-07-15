@@ -1,4 +1,7 @@
-import math, string, BigWorld, Math, math_utils
+from __future__ import absolute_import, division
+import math, string
+from past.utils import old_div
+import BigWorld, Math, math_utils
 from constants import AOI
 AOI_TO_FAR_TIME = 5.0
 MINIMAP_SIZE = (210.0, 210.0)
@@ -85,8 +88,8 @@ def getPositionByCellIndex(cellIndex, bottomLeft, upperRight, dimensions):
     xOffset = -bottomLeft[0]
     yOffset = -bottomLeft[1]
     return (
-     column * spaceSize[0] / dimensions - xOffset, 0,
-     -row * spaceSize[1] / dimensions + spaceSize[1] - yOffset)
+     old_div(column * spaceSize[0], dimensions) - xOffset, 0,
+     old_div(-row * spaceSize[1], dimensions) + spaceSize[1] - yOffset)
 
 
 def getCellName(cellId, dimensions):
@@ -99,5 +102,5 @@ def getCellName(cellId, dimensions):
 
 
 def getMinimapBasePingScale(minimapSizeIndex, minScale, maxScale):
-    p = minimapSizeIndex / _MAX_SIZE_INDEX
+    p = old_div(minimapSizeIndex, _MAX_SIZE_INDEX)
     return (1 - p) * minScale + maxScale * p

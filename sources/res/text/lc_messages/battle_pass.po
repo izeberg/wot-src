@@ -331,8 +331,8 @@ msgstr "C'est Notre Destin"
 msgid "chapter/fullName/203"
 msgstr "Desert Command"
 
-msgid "chapter/fullName/204"
-msgstr "Duke Nukem"
+msgid "chapter/fullName/205"
+msgstr "Far Cry"
 
 msgid "chapter/fullNameUppercased/10021"
 msgstr "CARMEN DE BISONTE"
@@ -349,8 +349,8 @@ msgstr "C'EST NOTRE DESTIN"
 msgid "chapter/fullNameUppercased/203"
 msgstr "DESERT COMMAND"
 
-msgid "chapter/fullNameUppercased/204"
-msgstr "DUKE NUKEM"
+msgid "chapter/fullNameUppercased/205"
+msgstr "FAR CRY"
 
 msgid "chapter/title"
 msgstr "CHAPTER %(chapter)s"
@@ -843,10 +843,10 @@ msgstr ""
 "%(completedChapters)/%(chaptersAmount)"
 
 msgid "postProgressionView/footer/extraChapter/description/text"
-msgstr "Crew members, a vehicle with 3D style, and more await. Groovy!"
+msgstr "Grab a Premium vehicle and exclusive customization elements."
 
 msgid "postProgressionView/footer/extraChapter/title/text"
-msgstr "Duke Nukem is here!"
+msgstr "Battle Pass: Far Cry is here!"
 
 msgid "postProgressionView/footer/purchaseIP/banner/text"
 msgstr "Purchase the Improved Pass and get more rewards!"
@@ -1294,8 +1294,14 @@ msgstr "In a special bundle"
 msgid "tankmenVoiceover/listen"
 msgstr "Listen"
 
+msgid "tankmenVoiceover/notFull"
+msgstr "Available %(availableCount)s of %(count)s"
+
 msgid "tankmenVoiceover/progression"
 msgstr "At Progression Stage %(progressionLevel)s"
+
+msgid "tankmenVoiceover/received"
+msgstr "Received"
 
 msgid "tankmenVoiceover/shopButton"
 msgstr "To the Shop"
@@ -1591,8 +1597,8 @@ msgstr ""
 
 msgid "tooltips/inProgress/playGame/mapbox"
 msgstr ""
-"The rules of adding Battle Pass Points in Recon Mission for Tier VIII–X "
-"vehicles."
+"The rules of adding Battle Pass Points in %(bond_Open)sRecon "
+"Mission%(bond_Close)s for Tier VIII–X vehicles."
 
 msgid "tooltips/inProgress/playGame/randoms"
 msgstr ""

@@ -1,12 +1,9 @@
-import ResMgr
+from __future__ import absolute_import
+import typing, ResMgr
 from debug_utils import LOG_ERROR
 from items.components import shared_components, component_constants, c11n_constants
-from items.components.component_constants import ALLOWED_PROJECTION_DECALS_ANCHORS, ALLOWED_SLOTS_ANCHORS, ALLOWED_EMBLEM_SLOTS, ALLOWED_MISC_SLOTS
+from items.components.component_constants import ALLOWED_PROJECTION_DECALS_ANCHORS, ALLOWED_SLOTS_ANCHORS, ALLOWED_EMBLEM_SLOTS
 from items import _xml
-import typing
-from constants import IS_UE_EDITOR
-if IS_UE_EDITOR:
-    from combined_data_section import CombinedDataSection
 
 def writeProjectionSlots(slotDS, slot):
     if slot.type == 'projectionDecal':

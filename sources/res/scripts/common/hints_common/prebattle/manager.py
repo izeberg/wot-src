@@ -1,4 +1,6 @@
+from __future__ import absolute_import
 import logging, typing
+from future.utils import viewitems
 from dict2model import exceptions
 from hints_common.common.manager import BaseHintsModelsManager
 from hints_common.prebattle.schemas import hintSchema, BaseHintSchema
@@ -21,12 +23,12 @@ class PrebattleHintsModelsManager(BaseHintsModelsManager):
         if not isinstance(schema, BaseHintSchema):
             raise exceptions.ValidationError(('Schema type must be {} or inherited.').format(BaseHintSchema))
 
-    def _addToStorage(self, schema, hint):
-        self._hints.append(hint)
+    def _addToStorage(self, schema, model):
+        self._hints.append(model)
 
     def _validateRegistered(self):
         errors = None
-        for path, schema in self._importedSchemas.iteritems():
+        for path, schema in viewitems(self._importedSchemas):
             try:
                 schema.validateRegistered(list(self._hints))
             except exceptions.ValidationError as ve:

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.impl import backport
 from gui.shared.gui_items.dossier.achievements.abstract import DeprecatedAchievement
 from helpers import i18n

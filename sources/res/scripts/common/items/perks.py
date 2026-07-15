@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from constants import ITEM_DEFS_PATH
 from items.readers.perks_readers import readPerksCacheFromXML
 from items.components.perks_components import PerksCashe
@@ -12,7 +13,7 @@ def init(preloadEverything):
 
 
 class Cache(object):
-    __slots__ = '__perks'
+    __slots__ = ('__perks', )
 
     def __init__(self):
         self.__perks = None

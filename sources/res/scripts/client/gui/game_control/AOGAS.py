@@ -1,4 +1,7 @@
-import time, weakref, BigWorld, Event
+from __future__ import absolute_import, division
+import time, weakref
+from builtins import round
+import BigWorld, Event
 from constants import AOGAS_TIME, ACCOUNT_ATTR
 from debug_utils import LOG_ERROR, LOG_DEBUG
 from enumerations import AttributeEnumItem, Enumeration

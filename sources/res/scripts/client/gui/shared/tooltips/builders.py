@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import importlib, logging
 from typing import Any
 from gui.Scaleform.daapi.settings.config import ADVANCED_COMPLEX_TOOLTIPS
@@ -251,7 +252,7 @@ class BuildersCollection(object):
 
     @property
     def linkages(self):
-        return self._builders.keys()
+        return list(self._builders)
 
     @property
     def total(self):
@@ -282,10 +283,10 @@ class LazyBuildersCollection(BuildersCollection):
         self._settings = None
         return
 
-    def getBuilder(self, linkage):
-        builder = super(LazyBuildersCollection, self).getBuilder(linkage)
+    def getBuilder(self, tooltipType):
+        builder = super(LazyBuildersCollection, self).getBuilder(tooltipType)
         if builder is None:
-            builder = self._load(linkage)
+            builder = self._load(tooltipType)
         return builder
 
     def _load(self, tooltipType):

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from typing import TYPE_CHECKING
 from constants import ITEM_DEFS_PATH
 from items.readers import skills_readers

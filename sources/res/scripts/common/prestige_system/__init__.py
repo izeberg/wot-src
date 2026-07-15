@@ -1,6 +1,8 @@
-from typing import TYPE_CHECKING
+from __future__ import absolute_import
+from builtins import zip
 from copy import copy
-from itertools import izip
+from future.utils import lrange, viewvalues
+from typing import TYPE_CHECKING
 from debug_utils import LOG_DEBUG_DEV, LOG_DEBUG
 from dossiers2.custom.cache import getCache as getDossiers2Cache, buildCache as buildDossiers2Cache
 if TYPE_CHECKING:
@@ -33,7 +35,7 @@ def computePrestigeCache(config, cache=None, dossiers2Cache=None):
         overrideItems = config['overrideItems']
         dossier2Cache = dossiers2Cache or getDossiers2Cache()
         allVehicleDescrs = set(dossier2Cache['vehiclesNameToDescr'].values())
-        defaultLevels = computeLevelCost(defaultLevelCostArgs, range(1, defaultMaxLevel + 1))
+        defaultLevels = computeLevelCost(defaultLevelCostArgs, lrange(1, defaultMaxLevel + 1))
         prestigePoints = computeAllPrestigePoints(defaultLevels, overrideItems, allVehicleDescrs, defaultLevelCostArgs)
         cache['prestigePoints'] = prestigePoints
         return
@@ -46,7 +48,7 @@ def computeAllPrestigePoints(defaultLevels, overrideItems, allVehicleDescrs, def
         overridePoints, newMaxLevel = computePrestigePoints(override)
         applyOverridePoints(prestigePoints, overridePoints, vehicles, defaultLevelCostArgs, newMaxLevel)
 
-    for vehCD, points in prestigePoints.iteritems():
+    for points in viewvalues(prestigePoints):
         if points:
             points[0] = 0
 
@@ -64,7 +66,7 @@ def computePrestigePoints(override):
         levelCostArgs = override.get('levelCostArgs')
         if levelCostArgs is not None:
             levelCosts = computeLevelCost(levelCostArgs, levels)
-            for _level, _levelCost in izip(levels, levelCosts):
+            for _level, _levelCost in zip(levels, levelCosts):
                 points[_level - 1] = _levelCost
 
         newMaxLevel = override.get('maxLevel', None)
@@ -77,7 +79,7 @@ def preprocessLevels(levels):
     if len(levels) == 1:
         return levels
     if len(levels) == 2:
-        levels = range(levels[0], levels[1] + 1)
+        levels = lrange(levels[0], levels[1] + 1)
     return levels
 
 
@@ -89,9 +91,9 @@ def computeLevelCost(levelCostArgs, levels):
     if len(levelCostArgs) == 4:
         levelCostBaseValue, frequency, coefficient, formulaType = levelCostArgs
         if formulaType == 'exponent':
-            return [ int(levelCostBaseValue * coefficient ** int(level / frequency)) for level in levels ]
+            return [ int(levelCostBaseValue * coefficient ** int(level // frequency)) for level in levels ]
         if formulaType == 'linear':
-            return [ int(levelCostBaseValue + coefficient * int(level / frequency)) for level in levels ]
+            return [ int(levelCostBaseValue + coefficient * int(level // frequency)) for level in levels ]
 
 
 def applyOverridePoints(prestigePointsDict, overridePoints, vehicles, defaultLevelCostArgs, newMaxLevel=None):
@@ -101,7 +103,7 @@ def applyOverridePoints(prestigePointsDict, overridePoints, vehicles, defaultLev
             if currentPrestigeLevelForVeh > newMaxLevel:
                 prestigePointsDict[vehicle] = prestigePointsDict[vehicle][:newMaxLevel]
             elif currentPrestigeLevelForVeh < newMaxLevel:
-                additionalPointsFromDefault = computeLevelCost(defaultLevelCostArgs, range(currentPrestigeLevelForVeh, newMaxLevel))
+                additionalPointsFromDefault = computeLevelCost(defaultLevelCostArgs, lrange(currentPrestigeLevelForVeh, newMaxLevel))
                 prestigePointsDict[vehicle] += additionalPointsFromDefault
         for i, point in enumerate(overridePoints[:len(prestigePointsDict[vehicle])]):
             if point == 0:

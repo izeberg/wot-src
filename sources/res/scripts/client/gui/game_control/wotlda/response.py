@@ -1,4 +1,5 @@
-import httplib
+from __future__ import absolute_import
+from http import client as httplib
 from typing import Dict, Optional, TYPE_CHECKING
 from gui.game_control.wotlda.constants import LAST_UPDATE_TIMESTAMP, SupportedWotldaLoadoutType
 if TYPE_CHECKING:

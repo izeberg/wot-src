@@ -1,4 +1,5 @@
-
+from __future__ import absolute_import
+import typing
 
 def invalidFemalePassportProducer(nationID, isPremium=False):
     return (-1, (nationID, isPremium, True, 0, 0, 0))
@@ -15,7 +16,7 @@ def passport_generator(nationID, isPremium=False, method=invalidMalePassportProd
         tmp.append(method(nationID, isPremium))
         try:
             try:
-                if all(map(lambda f: f(i, *tmp[0]), filters)):
+                if all([ f(i, *tmp[0]) for f in filters ]):
                     yield tmp.pop()[1]
                 else:
                     tmp.pop()
@@ -31,7 +32,8 @@ def acceptOn(key, value):
 
     def wrapper(seqId, group, passport):
         original = getattr(group, key)
-        return value in (original if hasattr(original, '__contains__') else (original,))
+        original = original if hasattr(original, '__contains__') else (original,)
+        return value in original
 
     return wrapper
 

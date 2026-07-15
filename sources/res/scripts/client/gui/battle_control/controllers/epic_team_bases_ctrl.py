@@ -1,9 +1,10 @@
+from __future__ import absolute_import
 import BigWorld, BattleReplay
 from debug_utils import LOG_ERROR
 from epic_constants import EPIC_BATTLE_TEAM_ID
+from gui.battle_control.controllers.team_bases_ctrl import BattleTeamsBasesController, makeClientTeamBaseID
 from helpers import dependency
 from skeletons.gui.battle_session import IBattleSessionProvider
-from team_bases_ctrl import BattleTeamsBasesController, makeClientTeamBaseID
 
 class EpicBattleTeamsBasesController(BattleTeamsBasesController):
     sessionProvider = dependency.descriptor(IBattleSessionProvider)

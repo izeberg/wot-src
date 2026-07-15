@@ -1,4 +1,5 @@
-from debug_utils import LOG_DEBUG_DEV, LOG_DEBUG_DEV
+from __future__ import absolute_import
+from debug_utils import LOG_DEBUG_DEV
 from ops_pack import OpsPacker, OpsUnpacker, initOpsFormatDef
 
 class CBM_OP:

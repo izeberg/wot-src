@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<info>
-		<name>random_events/notification/SmokeTestPlan</name>
+		<name>random_events/notification/notification</name>
 		<isMacro>false</isMacro>
 		<version>0</version>
 		<aspect>
@@ -143,7 +143,6 @@
 						<type>BoolT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>ContextGetSelf</class>
@@ -160,18 +159,14 @@
 						<type>StringT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>StopPlan</class>
 				<id>StopPlan_1</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>Print</class>
 				<id>Print_3</id>
-				<params/>
 				<slots>
 					<slot>
 						<name>value</name>
@@ -182,8 +177,6 @@
 			<block>
 				<class>StartScript</class>
 				<id>StartScript_1</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>SetVariable</class>
@@ -196,7 +189,6 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>SetVariable</class>
@@ -209,7 +201,6 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>SetVariable</class>
@@ -232,13 +223,10 @@
 			<block>
 				<class>If</class>
 				<id>If_1</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>Print</class>
 				<id>Print_4</id>
-				<params/>
 				<slots>
 					<slot>
 						<name>value</name>
@@ -248,21 +236,18 @@
 			</block>
 			<block>
 				<class>GetComponentProperties</class>
-				<id>GetComponentProperties_2</id>
+				<id>GetComponentProperties_3</id>
 				<params>
 					<param>
-						TimedActivatedComponent
+						BW::TimedActivatedComponent
 						<name>Component Type</name>
 						<type>StringT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>SubtractFloat</class>
 				<id>SubtractFloat_3</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>GetVariable</class>
@@ -275,19 +260,10 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>CompareFloats</class>
 				<id>CompareFloats_1</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
-				<class>CurveDuration</class>
-				<id>CurveDuration_1</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>GetVariable</class>
@@ -300,7 +276,10 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
+			</block>
+			<block>
+				<class>CurveDuration</class>
+				<id>CurveDuration_1</id>
 			</block>
 			<block>
 				<class>FloatVariableAdd</class>
@@ -313,12 +292,10 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>FrameEvent</class>
 				<id>FrameEvent_1</id>
-				<params/>
 				<slots>
 					<slot>
 						<name>active</name>
@@ -340,12 +317,10 @@
 						<type>StringT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>CurvePoint</class>
 				<id>CurvePoint_1</id>
-				<params/>
 				<slots>
 					<slot>
 						<name>curve_id</name>
@@ -364,13 +339,10 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>SubtractFloat</class>
 				<id>SubtractFloat_1</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>GetVariable</class>
@@ -383,7 +355,6 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 		</blocks>
 		<connections>
@@ -400,19 +371,19 @@
 				<output>out</output>
 			</connection>
 			<connection>
-				<from>GetComponentProperties_2</from>
+				<from>GetComponentProperties_3</from>
 				<input>input</input>
 				<to>Print_3</to>
 				<output>failure</output>
 			</connection>
 			<connection>
-				<from>GetComponentProperties_2</from>
+				<from>GetComponentProperties_3</from>
 				<input>input</input>
 				<to>SetVariable_3</to>
 				<output>out</output>
 			</connection>
 			<connection>
-				<from>GetComponentProperties_2</from>
+				<from>GetComponentProperties_3</from>
 				<input>value</input>
 				<to>SetVariable_3</to>
 				<output>timeFromStart</output>
@@ -456,23 +427,23 @@
 			<connection>
 				<from>StartScript_1</from>
 				<input>in</input>
-				<to>GetComponentProperties_2</to>
+				<to>GetComponentProperties_3</to>
 				<output>out</output>
 			</connection>
 			<connection>
 				<from>ContextGetSelf_1</from>
 				<input>gameObject</input>
-				<to>GetComponentProperties_2</to>
+				<to>GetComponentProperties_3</to>
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>GetComponentProperties_2</from>
+				<from>GetComponentProperties_3</from>
 				<input>a</input>
 				<to>SubtractFloat_3</to>
 				<output>end</output>
 			</connection>
 			<connection>
-				<from>GetComponentProperties_2</from>
+				<from>GetComponentProperties_3</from>
 				<input>b</input>
 				<to>SubtractFloat_3</to>
 				<output>start</output>

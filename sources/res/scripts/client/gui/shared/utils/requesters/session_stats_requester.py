@@ -1,4 +1,6 @@
+from __future__ import absolute_import
 from collections import namedtuple
+from future.utils import viewitems
 import BigWorld
 from constants import ARENA_BONUS_TYPE
 from gui.shared.utils.requesters.abstract import AbstractSyncDataRequester
@@ -137,7 +139,7 @@ class BaseAccountStats(BaseStats):
     @staticmethod
     def _sumRecords(data, *startWithStrings):
         result = 0
-        for key, val in data.iteritems():
+        for key, val in viewitems(data):
             if key.startswith(startWithStrings):
                 result += val
 
@@ -176,7 +178,7 @@ class SessionStatsRequester(AbstractSyncDataRequester, ISessionStatsRequester):
 
     def getStatsVehList(self, arenaType):
         statsDictData = self.getCacheValue('sessionStats', {})
-        return statsDictData.get(arenaType, {}).get(_StatKind.VEHICLE_DAY_STAT, {}).keys()
+        return list(statsDictData.get(arenaType, {}).get(_StatKind.VEHICLE_DAY_STAT, {}))
 
     def getAccountWtr(self):
         return self.getCacheValue('wtr', {}).get('wtr_general', None)

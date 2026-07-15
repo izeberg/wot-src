@@ -1,4 +1,6 @@
+from __future__ import absolute_import
 from collections import namedtuple
+from py2to3.patched_future import with_metaclass
 from wrapped_reflection_framework import ReflectionMetaclass, reflectedNamedTuple
 __all__ = ('SoundPair', 'StatedSounds', 'HullAimingSound', 'SoundSiegeModeStateChange',
            'WWTripleSoundConfig')
@@ -15,9 +17,8 @@ SoundSiegeModeStateChange = namedtuple('SoundSiegeModeStateChange', [
  'trigger',
  'unavailable'])
 
-class WWTripleSoundConfig(object):
+class WWTripleSoundConfig(with_metaclass(ReflectionMetaclass, object)):
     __slots__ = ('__eventNames', )
-    __metaclass__ = ReflectionMetaclass
 
     def __init__(self, wwsound, wwsoundPC, wwsoundNPC):
         super(WWTripleSoundConfig, self).__init__()

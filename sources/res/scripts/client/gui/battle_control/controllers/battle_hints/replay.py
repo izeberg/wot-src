@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from typing import Optional, Dict, Union
 import BattleReplay

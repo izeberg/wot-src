@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui import makeHtmlString
 from gui.shared.utils.functions import stripColorTagDescrTags
 from helpers import i18n

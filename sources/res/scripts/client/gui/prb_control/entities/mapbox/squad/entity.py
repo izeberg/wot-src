@@ -4,7 +4,7 @@ from gui.ClientUpdateManager import g_clientUpdateManager
 from gui.prb_control.ctrl_events import g_prbCtrlEvents
 from gui.prb_control.entities.base.squad.ctx import SquadSettingsCtx
 from gui.prb_control.entities.base.squad.entity import SquadEntryPoint, SquadEntity
-from gui.prb_control.entities.base.squad.mixins import RestrictedRoleTagMixin
+from gui.prb_control.entities.base.squad.mixins import SquadRestrictionsMixin
 from gui.prb_control.entities.mapbox.pre_queue.vehicles_watcher import MapboxVehiclesWatcher
 from gui.prb_control.entities.mapbox.scheduler import MapboxScheduler
 from gui.prb_control.entities.mapbox.squad.action_handler import MapboxSquadActionsHandler
@@ -32,7 +32,7 @@ class MapboxSquadEntryPoint(SquadEntryPoint):
         unitMgr.createMapboxSquad()
 
 
-class MapboxSquadEntity(SquadEntity, RestrictedRoleTagMixin):
+class MapboxSquadEntity(SquadEntity, SquadRestrictionsMixin):
     __eventsCache = dependency.descriptor(IEventsCache)
     __lobbyContext = dependency.descriptor(ILobbyContext)
     __mapboxCtrl = dependency.descriptor(IMapboxController)
@@ -136,11 +136,10 @@ class MapboxSquadEntity(SquadEntity, RestrictedRoleTagMixin):
 
     def _vehicleStateCondition(self, v):
         if self._isBalancedSquad:
-            result = v.level in self._rosterSettings.getLevelsRange()
-            if not result:
+            if v.level not in self._rosterSettings.getLevelsRange():
                 return False
-        if self.isRoleRestrictionValid():
-            return self.isTagVehicleAvailable(v.tags)
+        if self.isSquadRestrictionValid():
+            return self.isVehicleSuitableForSquad(v)
         return super(MapboxSquadEntity, self)._vehicleStateCondition(v)
 
     def _onServerSettingChanged(self, *args, **kwargs):

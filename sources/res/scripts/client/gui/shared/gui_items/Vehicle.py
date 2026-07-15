@@ -1,6 +1,12 @@
+from __future__ import absolute_import, division
 import logging, math, random, typing
+from builtins import zip
 from collections import namedtuple, defaultdict
-from itertools import izip, chain
+from functools import reduce
+from future.utils import iteritems, lfilter, viewitems, viewvalues
+from past.builtins import cmp
+from past.utils import old_div
+from itertools import chain
 from operator import itemgetter
 import BigWorld
 from backports.functools_lru_cache import lru_cache
@@ -34,7 +40,6 @@ from gui.shared.gui_items.gui_item_economics import ItemPrice, ItemPrices, ITEM_
 from gui.shared.gui_items.tankman_skill import BROTHERHOOD_SKILL_NAME
 from gui.shared.gui_items.vehicle_equipment import VehicleEquipment, SUPPORT_EXT_DATA_FEATURES
 from gui.shared.gui_items.vehicle_mechanics.factories.vehicle_mechanis import VehicleMechanicFactory
-from gui.shared.gui_items.vehicle_mechanics.vehicle_mechanic_item import VehicleMechanicItem
 from gui.shared.money import MONEY_UNDEFINED, Currency, Money
 from gui.shared.utils import makeSearchableString
 from gui.shared.utils.functions import replaceHyphenToUnderscore
@@ -43,6 +48,7 @@ from items import customizations, filterIntCDsByItemType, getTypeInfoByName, get
 from items.components.c11n_constants import HIDDEN_CAMOUFLAGE_ID, EMPTY_ITEM_ID, ApplyArea, ItemTags, SeasonType
 from items.tankmen import MAX_SKILLS_EFFICIENCY_XP, MAX_SKILL_LEVEL, NO_SLOT, TankmanDescr
 from items.vehicles import getItemByCompactDescr, getVehicleType
+from math_common import round_py2_style
 from nation_change.nation_change_helpers import hasNationGroup, iterVehTypeCDsInNationGroup
 from post_progression_common import TankSetupGroupsId
 from rent_common import parseRentID
@@ -54,12 +60,13 @@ from skeletons.gui.server_events import IEventsCache
 from skeletons.gui.shared import IItemsCache
 from soft_exception import SoftException
 if typing.TYPE_CHECKING:
+    from typing import Any, Dict, List, Optional, Tuple, Iterable
     from skeletons.gui.shared import IItemsRequester
     from items.customizations import CustomizationOutfit
     from vehicle_outfit.outfit import Outfit
+    from gui.shared.gui_items.vehicle_mechanics.vehicle_mechanic_item import VehicleMechanicItem
     from gui.veh_post_progression.models.progression import PostProgressionItem, AvailabilityCheckResult
     from post_progression_common import VehicleState
-    from typing import Any, Dict, List, Optional, Tuple, Iterable
 _logger = logging.getLogger(__name__)
 
 class VEHICLE_CLASS_NAME(CONST_CONTAINER):
@@ -78,7 +85,7 @@ VEHICLE_TYPES_ORDER = (
  VEHICLE_CLASS_NAME.SPG)
 EmblemSlotHelper = namedtuple('EmblemSlotHelper', ['tankAreaSlot', 'tankAreaId'])
 SlotHelper = namedtuple('SlotHelper', ['tankAreaSlot', 'tankAreaId'])
-VEHICLE_TYPES_ORDER_INDICES = dict((n, i) for i, n in enumerate(VEHICLE_TYPES_ORDER))
+VEHICLE_TYPES_ORDER_INDICES = {n:i for i, n in enumerate(VEHICLE_TYPES_ORDER)}
 VEHICLE_TYPES_ORDER_INDICES_REVERSED = {n:i for i, n in enumerate(reversed(VEHICLE_TYPES_ORDER))}
 UNKNOWN_VEHICLE_CLASS_ORDER = 100
 
@@ -96,15 +103,15 @@ VEHICLE_TABLE_TYPES_ORDER = (
  VEHICLE_CLASS_NAME.LIGHT_TANK,
  VEHICLE_CLASS_NAME.AT_SPG,
  VEHICLE_CLASS_NAME.SPG)
-VEHICLE_TABLE_TYPES_ORDER_INDICES = dict((n, i) for i, n in enumerate(VEHICLE_TABLE_TYPES_ORDER))
-VEHICLE_TABLE_TYPES_ORDER_INDICES_REVERSED = dict((n, i) for i, n in enumerate(reversed(VEHICLE_TABLE_TYPES_ORDER)))
+VEHICLE_TABLE_TYPES_ORDER_INDICES = {n:i for i, n in enumerate(VEHICLE_TABLE_TYPES_ORDER)}
+VEHICLE_TABLE_TYPES_ORDER_INDICES_REVERSED = {n:i for i, n in enumerate(reversed(VEHICLE_TABLE_TYPES_ORDER))}
 VEHICLE_BATTLE_TYPES_ORDER = (
  VEHICLE_CLASS_NAME.HEAVY_TANK,
  VEHICLE_CLASS_NAME.MEDIUM_TANK,
  VEHICLE_CLASS_NAME.AT_SPG,
  VEHICLE_CLASS_NAME.LIGHT_TANK,
  VEHICLE_CLASS_NAME.SPG)
-VEHICLE_BATTLE_TYPES_ORDER_INDICES = dict((n, i) for i, n in enumerate(VEHICLE_BATTLE_TYPES_ORDER))
+VEHICLE_BATTLE_TYPES_ORDER_INDICES = {n:i for i, n in enumerate(VEHICLE_BATTLE_TYPES_ORDER)}
 _ALL_ROLES_ORDER = [
  constants.ROLE_TYPE.LT_UNIVERSAL,
  constants.ROLE_TYPE.LT_WHEELED,
@@ -319,7 +326,7 @@ class Vehicle(FittingItem):
         else:
             self._searchableUserName = makeSearchableString(self.userName)
         self._proxy = proxy
-        self._invData = invData or dict()
+        self._invData = invData or {}
         postProgressionFeatures = None
         if self._proxy is not None and self._proxy.inventory.isSynced() and self._proxy.stats.isSynced() and self._proxy.shop.isSynced() and self._proxy.vehicleRotation.isSynced() and self._proxy.recycleBin.isSynced():
             invDataTmp = self._proxy.inventory.getItems(GUI_ITEM_TYPE.VEHICLE, inventoryID)
@@ -353,7 +360,7 @@ class Vehicle(FittingItem):
             postProgressionFeatures = self._proxy.inventory.getVehPostProgressionFeaturesListByCD(self.intCD)
         if postProgressionFeatures is None and extData and SUPPORT_EXT_DATA_FEATURES in extData:
             postProgressionFeatures = extData[SUPPORT_EXT_DATA_FEATURES]
-        self._inventoryCount = 1 if self._invData.keys() else 0
+        self._inventoryCount = 1 if self._invData else 0
         self._settings = self._invData.get('settings', 0)
         self._extraSettings = self._invData.get('extraSettings', 0)
         self._lock = self._invData.get('lock', (0, 0))
@@ -388,6 +395,22 @@ class Vehicle(FittingItem):
         self._radio = self.itemsFactory.createVehicleRadio(vehDescr.radio.compactDescr, self._proxy, vehDescr.radio)
         self._fuelTank = self.itemsFactory.createVehicleFuelTank(vehDescr.fuelTank.compactDescr, self._proxy, vehDescr.fuelTank)
 
+    def __eq__(self, other):
+        if other is None:
+            return False
+        else:
+            return self.descriptor.type.id == other.descriptor.type.id
+
+    def __ne__(self, other):
+        return not self == other
+
+    def __hash__(self):
+        return hash(self.descriptor.type.id)
+
+    def __repr__(self):
+        return 'Vehicle<id:%d, intCD:%d, nation:%d, lock:%s>' % (
+         self.invID, self.intCD, self.nationID, self.lock)
+
     def __deepcopy__(self, memo=None):
         raise SoftException('Deep copy of GUI Vehicle is not supported')
 
@@ -409,7 +432,7 @@ class Vehicle(FittingItem):
         crewList = self._invData.get('crew', defaultCrew)
         battleCrewList = self._invData.get('battleCrewCDs')
         self.calcCrewBonuses(battleCrewList or crewList, self._proxy, fromBattle=battleCrewList is not None)
-        self._crewIndices = dict([ (invID, idx) for idx, invID in enumerate(crewList) ])
+        self._crewIndices = {invID:idx for idx, invID in enumerate(crewList)}
         self._crew = self._buildCrew(battleCrewList or crewList, self._proxy, fromBattle=battleCrewList is not None)
         return
 
@@ -473,7 +496,7 @@ class Vehicle(FittingItem):
         return (slotsAnchorsById, slotsAnchors)
 
     def getAnchors(self, slotType, areaId):
-        return self._slotsAnchors.get(slotType, {}).get(areaId, {}).iteritems()
+        return viewitems(self._slotsAnchors.get(slotType, {}).get(areaId, {}))
 
     def getAnchorBySlotId(self, slotType, areaId, regionIdx):
         return self._slotsAnchors.get(slotType, {}).get(areaId, {}).get(regionIdx)
@@ -502,7 +525,7 @@ class Vehicle(FittingItem):
     @property
     def outfits(self):
         vehicleCD = self.descriptor.makeCompactDescr()
-        outfits = {season:self.__getOutfit(component, vehicleCD) for season, component in self._outfitComponents.iteritems()}
+        outfits = {season:self.__getOutfit(component, vehicleCD) for season, component in viewitems(self._outfitComponents)}
         return outfits
 
     def getPersonalDiscountPrice(self):
@@ -517,7 +540,7 @@ class Vehicle(FittingItem):
          -1, 0, set())
 
     def calcCrewBonuses(self, crew, proxy, fromBattle):
-        self._bonuses = bonuses = dict()
+        self._bonuses = bonuses = {}
         bonuses['equipment'] = 0.0
         for eq in self.consumables.installed.getItems():
             bonuses['equipment'] += eq.crewLevelIncrease
@@ -544,7 +567,7 @@ class Vehicle(FittingItem):
         bonuses['brotherhood'] = brotherhoodLevel * tankmen.getSkillsConfig().getSkill('brotherhood').crewLevelIncrease
         if commanderEffRoleLevel > 0:
             commanderEffRoleLevel += bonuses['brotherhood'] + bonuses['equipment'] + bonuses['optDevices']
-            bonuses['commander'] += round(commanderEffRoleLevel / tankmen.COMMANDER_ADDITION_RATIO)
+            bonuses['commander'] += round_py2_style(old_div(commanderEffRoleLevel, tankmen.COMMANDER_ADDITION_RATIO))
         return
 
     def getTankmanIDBySlotIdx(self, slotIdx):
@@ -592,7 +615,7 @@ class Vehicle(FittingItem):
         return
 
     def _buildCrew(self, crew, proxy, fromBattle):
-        crewItems = list()
+        crewItems = []
         crewRoles = self.descriptor.type.crewRoles
         for idx, tankmanID in enumerate(crew):
             tankman = None
@@ -605,12 +628,6 @@ class Vehicle(FittingItem):
             crewItems.append((idx, tankman))
 
         return sortCrew(crewItems, crewRoles)
-
-    @staticmethod
-    def __crewSort(t1, t2):
-        if t1 is None or t2 is None:
-            return 0
-        return t1.__cmp__(t2)
 
     def _parseCompDescr(self, compactDescr):
         nId, innID = vehicles.parseVehicleCompactDescr(compactDescr)
@@ -638,9 +655,8 @@ class Vehicle(FittingItem):
 
     @classmethod
     def _parserOptDevs(cls, layoutList, proxy):
-        result = list()
-        for i in xrange(len(layoutList)):
-            optDevDescr = layoutList[i]
+        result = []
+        for optDevDescr in layoutList:
             result.append(cls.itemsFactory.createOptionalDevice(optDevDescr.compactDescr, proxy) if optDevDescr is not None else None)
 
         return result
@@ -713,7 +729,7 @@ class Vehicle(FittingItem):
             for turretCD in filterIntCDsByItemType(total, GUI_ITEM_TYPE.TURRET):
                 total.remove(turretCD)
 
-        unlocks = {items for items in self.itemsCache.items.stats.unlocks}
+        unlocks = set(self.itemsCache.items.stats.unlocks)
         unlocked = total & unlocks
         toUnlock = total - unlocked
         return EliteStatusProgress(unlocked, toUnlock, total)
@@ -1178,7 +1194,7 @@ class Vehicle(FittingItem):
     def getC11nItemsNoveltyCounter(self, proxy, itemTypes=None, season=None, itemFilter=None):
         count = 0
         newItems = proxy.inventory.getC11nItemsNoveltyCounters(self._descriptor.type)
-        for itemCD, qtyItems in newItems.iteritems():
+        for itemCD, qtyItems in viewitems(newItems):
             item = proxy.getItemByCD(itemCD)
             if not item.mayInstall(self):
                 continue
@@ -1194,7 +1210,7 @@ class Vehicle(FittingItem):
 
     def getNewC11nItems(self, proxy):
         newItems = []
-        for itemCD in proxy.inventory.getC11nItemsNoveltyCounters(self._descriptor.type).iterkeys():
+        for itemCD in proxy.inventory.getC11nItemsNoveltyCounters(self._descriptor.type):
             item = proxy.getItemByCD(itemCD)
             if item.id == EMPTY_ITEM_ID:
                 continue
@@ -1814,7 +1830,7 @@ class Vehicle(FittingItem):
                         skills[tankmanIdx].append(skill.name)
                         skillLevels[tankmanIdx] = skill.level
 
-                    for forRole, bonusSkils in vehTankman.bonusSkills.iteritems():
+                    for forRole, bonusSkils in iteritems(vehTankman.bonusSkills):
                         for bonusSkil in bonusSkils:
                             if bonusSkil:
                                 rolesBonusSkills.setdefault(tankmanIdx, {}).setdefault(forRole, []).append(bonusSkil.name)
@@ -1857,7 +1873,7 @@ class Vehicle(FittingItem):
         if not skillNames:
             return self.crew
         else:
-            skillNames = filter(None, skillNames)
+            skillNames = lfilter(None, skillNames)
             crewItems = []
             for slotIdx, tman in self.crew:
                 if tman is None:
@@ -1866,7 +1882,7 @@ class Vehicle(FittingItem):
                 tmanDescr = tman.descriptor
                 skills = tmanDescr.skills[:]
                 rolesBonusSkills = {}
-                for role, bonusSkills in tman.bonusSkills.iteritems():
+                for role, bonusSkills in iteritems(tman.bonusSkills):
                     rolesBonusSkills[role] = [ skill.name for skill in bonusSkills if skill ]
 
                 lastSkillLevel = tmanDescr.lastSkillLevel if skills else MAX_SKILL_LEVEL
@@ -1876,7 +1892,7 @@ class Vehicle(FittingItem):
                     if _cannotAddSkill(tman, skillName):
                         continue
                     roleType = tankmen.getSkillRoleType(skillName)
-                    if roleType == tman.role or roleType == tankmen.COMMON_SKILL_ROLE_TYPE:
+                    if roleType in (tman.role, tankmen.COMMON_SKILL_ROLE_TYPE):
                         if skillName not in skills:
                             skills.insert(0, skillName)
                         elif skillName in skills[-1:]:
@@ -1900,7 +1916,7 @@ class Vehicle(FittingItem):
 
     def getCrewWithoutSelectedSkills(self, skillNames=None):
         skillNamesToRemove = set(skillNames or [])
-        crewItems = list()
+        crewItems = []
         crewRoles = self.descriptor.type.crewRoles
         for slotIdx, tman in self.crew:
             if not tman or not set(tman.skillsMap) & skillNamesToRemove:
@@ -1919,7 +1935,7 @@ class Vehicle(FittingItem):
             lastBonusSkillLevel = [ level for level in tman.bonusSlotsLevels if level is not None ].pop()
             rolesBonusSkills = defaultdict(list)
             maxLevelSkills = []
-            for role, bonusSkills in tman.bonusSkills.iteritems():
+            for role, bonusSkills in iteritems(tman.bonusSkills):
                 for bonusSkill in bonusSkills:
                     if bonusSkill and bonusSkill.name not in skillNamesToRemove:
                         rolesBonusSkills[role].append(bonusSkill.name)
@@ -1941,7 +1957,7 @@ class Vehicle(FittingItem):
         return sortCrew(crewItems, crewRoles)
 
     def getCrewWithoutAllSkills(self):
-        crewItems = list()
+        crewItems = []
         crewRoles = self.descriptor.type.crewRoles
         for slotIdx, tman in self.crew:
             tmanDescr = tman.descriptor
@@ -1960,9 +1976,9 @@ class Vehicle(FittingItem):
         skillsEfficiencyByIdxs = skillsEfficiencyByIdxs or {}
         rolesBonusSkills = rolesBonusSkills or {}
         bonusSkillsLevels = bonusSkillsLevels or {}
-        crewItems = list()
+        crewItems = []
         crewRoles = self.descriptor.type.crewRoles
-        brotherhoodActive = skillsByIdxs and any(BROTHERHOOD_SKILL_NAME in skills for skills in skillsByIdxs.values())
+        brotherhoodActive = skillsByIdxs and any(BROTHERHOOD_SKILL_NAME in skills for skills in viewvalues(skillsByIdxs))
         for idx, _ in enumerate(crewRoles):
             defRoleLevel = levelByIdxs.get(idx, defRoleLevel)
             if defRoleLevel is not None:
@@ -2079,25 +2095,6 @@ class Vehicle(FittingItem):
     def isForbiddenToBattle(self):
         return self.compactDescr in getForbiddenForBattleVehicles()
 
-    def __cmp__(self, other):
-        if self.isRestorePossible() and not other.isRestorePossible():
-            return -1
-        if not self.isRestorePossible() and other.isRestorePossible():
-            return 1
-        if self.isRestorePossible() and other.isRestorePossible():
-            return cmp(other.hasLimitedRestore(), self.hasLimitedRestore()) or cmp(self.restoreInfo.getRestoreTimeLeft(), other.restoreInfo.getRestoreTimeLeft())
-        return super(Vehicle, self).__cmp__(other)
-
-    def __eq__(self, other):
-        if other is None:
-            return False
-        else:
-            return self.descriptor.type.id == other.descriptor.type.id
-
-    def __repr__(self):
-        return 'Vehicle<id:%d, intCD:%d, nation:%d, lock:%s>' % (
-         self.invID, self.intCD, self.nationID, self.lock)
-
     def _mayPurchase(self, price, money):
         if getattr(BigWorld.player(), 'isLongDisconnectedFromCenter', False):
             return (False, GUI_ITEM_ECONOMY_CODE.CENTER_UNAVAILABLE)
@@ -2111,6 +2108,15 @@ class Vehicle(FittingItem):
            'hullArmor': backport.getIntegralFormat(armor[1]), 
            'caliber': backport.getIntegralFormat(caliber)}
 
+    def _compare(self, other):
+        if self.isRestorePossible() and not other.isRestorePossible():
+            return -1
+        if not self.isRestorePossible() and other.isRestorePossible():
+            return 1
+        if self.isRestorePossible() and other.isRestorePossible():
+            return cmp(other.hasLimitedRestore(), self.hasLimitedRestore()) or cmp(self.restoreInfo.getRestoreTimeLeft(), other.restoreInfo.getRestoreTimeLeft())
+        return super(Vehicle, self)._compare(other)
+
     def _sortByType(self, other):
         return compareByVehTypeName(self.type, other.type)
 
@@ -2122,7 +2128,7 @@ class Vehicle(FittingItem):
         if self.isRented:
             return MONEY_UNDEFINED
         defaultDevices, installedDevices, _ = self.descriptor.getDevices()
-        for defCompDescr, instCompDescr in izip(defaultDevices, installedDevices):
+        for defCompDescr, instCompDescr in zip(defaultDevices, installedDevices):
             if defCompDescr == instCompDescr:
                 continue
             modulePrice = FittingItem(defCompDescr, proxy).sellPrices.itemPrice.defPrice
@@ -2339,7 +2345,9 @@ def findVehicleArmorMinMax(vd):
 
 def sortCrew(crewItems, crewRoles):
     RO = Tankman.TANKMEN_ROLES_ORDER
-    return sorted(crewItems, cmp=lambda a, b: RO[crewRoles[a[0]][0]] - RO[crewRoles[b[0]][0]])
+    if len(crewItems) > 1:
+        return sorted(crewItems, key=lambda k: RO[crewRoles[k[0]][0]])
+    return crewItems
 
 
 def getLobbyDescription(vehicle):

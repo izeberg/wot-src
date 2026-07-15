@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing, logging, BigWorld, constants
 from avatar_helpers import getAvatarSessionID
 from constants import BattleUserActions
@@ -350,7 +351,7 @@ class AnonymizerFakesController(IAnonymizerFakesController):
             return False
 
     def __notifyModification(self, vehicleData):
-        actions = list()
+        actions = []
         user = self.usersStorage.getUser(vehicleData.sessionID, scope=UserEntityScope.BATTLE)
         if user is None:
             user = self.__addBattleUser(vehicleData)

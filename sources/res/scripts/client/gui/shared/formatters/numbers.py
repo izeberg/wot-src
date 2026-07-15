@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from typing import Optional, Callable
 from gui.impl import backport
 

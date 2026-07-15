@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import math, ResMgr
 from items import _xml
 from items.components import sound_components

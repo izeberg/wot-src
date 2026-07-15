@@ -1,4 +1,6 @@
+from __future__ import absolute_import
 import heapq, math
+from builtins import round
 from gui.shared.utils.requesters import REQ_CRITERIA, RequestCriteria
 
 class SortRequestCriteria(RequestCriteria):

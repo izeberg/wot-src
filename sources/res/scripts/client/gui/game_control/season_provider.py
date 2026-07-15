@@ -1,5 +1,7 @@
+from __future__ import absolute_import
 from collections import defaultdict
 from operator import itemgetter
+from future.utils import iteritems, itervalues, viewitems
 import typing, season_common
 from shared_utils import first, findFirst
 from skeletons.gui.game_control import ISeasonProvider
@@ -109,11 +111,11 @@ class SeasonProvider(ISeasonProvider):
         now = now or self.__getNow()
         seasonSettings = self.__getSeasonSettings()
         if seasonSettings is not None:
-            for seasonID, seasonData in seasonSettings.seasons.iteritems():
+            for seasonID, seasonData in iteritems(seasonSettings.seasons):
                 if seasonData['startSeason'] <= now < seasonData['endSeason']:
                     currCycleInfo = (
                      None, None, seasonID, None)
-                    for cycleID, cycleTimes in seasonData['cycles'].iteritems():
+                    for cycleID, cycleTimes in iteritems(seasonData['cycles']):
                         if cycleTimes['start'] <= now < cycleTimes['end']:
                             currCycleInfo = (
                              cycleTimes['start'], cycleTimes['end'], seasonID, cycleID)
@@ -150,7 +152,7 @@ class SeasonProvider(ISeasonProvider):
         settings = self.__getSeasonSettings()
         seasonsComing = []
         if settings is not None:
-            for seasonID, season in settings.seasons.iteritems():
+            for seasonID, season in iteritems(settings.seasons):
                 startSeason = season['startSeason']
                 if now < startSeason:
                     seasonsComing.append((seasonID, startSeason))
@@ -266,7 +268,7 @@ class SeasonProvider(ISeasonProvider):
         primeTimes = gameModeSettings.primeTimes
         peripheryIDs = gameModeSettings.peripheryIDs
         primeTimesPeriods = defaultdict(lambda : defaultdict(list))
-        for primeTime in primeTimes.itervalues():
+        for primeTime in itervalues(primeTimes):
             period = (primeTime['start'], primeTime['end'])
             weekdays = primeTime['weekdays']
             for pID in primeTime['peripheryIDs']:
@@ -276,7 +278,7 @@ class SeasonProvider(ISeasonProvider):
                 for wDay in weekdays:
                     periphery[wDay].append(period)
 
-        return {pID:PrimeTime(pID, {wDay:collapseIntervals(periods) for wDay, periods in pPeriods.iteritems()}) for pID, pPeriods in primeTimesPeriods.iteritems()}
+        return {pID:PrimeTime(pID, {wDay:collapseIntervals(periods) for wDay, periods in iteritems(pPeriods)}) for pID, pPeriods in iteritems(primeTimesPeriods)}
 
     def getPrimeTimesForDay(self, selectedTime, groupIdentical=False):
         primeTimes = self.getPrimeTimes()
@@ -289,7 +291,7 @@ class SeasonProvider(ISeasonProvider):
                 continue
             dayPeriods = primeTimes[peripheryID].getPeriodsBetween(dayStart, dayEnd)
             if groupIdentical and dayPeriods in serversPeriodsMapping.values():
-                for name, period in serversPeriodsMapping.iteritems():
+                for name, period in viewitems(serversPeriodsMapping):
                     serverInMapping = name if period == dayPeriods else None
                     if serverInMapping:
                         newName = ('{0}, {1}').format(serverInMapping, serverShortName)
@@ -316,7 +318,7 @@ class SeasonProvider(ISeasonProvider):
         settings = self.__getSeasonSettings()
         seasonsPassed = []
         if settings is not None:
-            for seasonID, season in settings.seasons.iteritems():
+            for seasonID, season in iteritems(settings.seasons):
                 endSeason = season['endSeason']
                 if now >= endSeason:
                     seasonsPassed.append((seasonID, endSeason))
@@ -324,7 +326,7 @@ class SeasonProvider(ISeasonProvider):
         return seasonsPassed
 
     def getAllSeasons(self):
-        return sorted(list(self.getSeason(sID) for sID in self.__getSeasonSettings().seasons.keys()), key=lambda s: s.getNumber())
+        return sorted((self.getSeason(sID) for sID in self.__getSeasonSettings().seasons), key=lambda s: s.getNumber())
 
     def getTimer(self, now=None, peripheryID=None):
         now = now or self.__getNow()
@@ -393,7 +395,7 @@ class SeasonProvider(ISeasonProvider):
     def _getAllPeripheryIDs(self):
         if self.__connectionMgr.isStandalone():
             return {self.__connectionMgr.peripheryID}
-        return set([ host.peripheryID for host in g_preDefinedHosts.hostsWithRoaming() ])
+        return {host.peripheryID for host in g_preDefinedHosts.hostsWithRoaming()}
 
     def _getHostList(self):
         hostsList = g_preDefinedHosts.getSimpleHostsList(g_preDefinedHosts.hostsWithRoaming(), withShortName=True)

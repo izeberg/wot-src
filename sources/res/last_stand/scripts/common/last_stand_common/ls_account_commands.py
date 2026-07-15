@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 CMD_LS_UNLOCK_TOKEN = 30200
 CMD_LS_LOCK_TOKEN = 30201
 CMD_LS_ARTEFACT_OPEN = 30202

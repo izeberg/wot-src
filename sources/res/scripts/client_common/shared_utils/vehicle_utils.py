@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import NetworkFilters, BigWorld
 from adisp import adisp_process
 from debug_utils import LOG_DEBUG
@@ -113,7 +114,7 @@ def getMatinfo(vehicleEntity, partIndex, matKind, isWheeledVehicle):
     matInfo = None
     typeDescriptor = vehicleEntity.typeDescriptor
     collisionComponent = vehicleEntity.appearance.collisions
-    if collisionComponent is not None and partIndex > collisionComponent.maxStaticPartIndex:
+    if collisionComponent and partIndex > collisionComponent.maxStaticPartIndex:
         matInfo = BigWorld.getMaterialInfo(collisionComponent.getPartGameObject(partIndex), matKind)
     elif partIndex == TankPartIndexes.CHASSIS or partIndex >= len(TankPartIndexes.ALL):
         matInfo = typeDescriptor.chassis.materials.get(matKind)
@@ -123,7 +124,7 @@ def getMatinfo(vehicleEntity, partIndex, matKind, isWheeledVehicle):
         matInfo = typeDescriptor.turret.materials.get(matKind)
     elif partIndex == TankPartIndexes.GUN:
         matInfo = typeDescriptor.gun.materials.get(matKind)
-    elif isWheeledVehicle and collisionComponent is not None:
+    elif isWheeledVehicle and collisionComponent:
         wheelName = collisionComponent.getPartName(partIndex)
         if wheelName is not None:
             matInfo = typeDescriptor.chassis.wheelsArmor.get(wheelName, None)

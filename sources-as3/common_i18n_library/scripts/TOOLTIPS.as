@@ -1265,13 +1265,13 @@ package
       
       public static const HANGAR_STARTBTN_BATTLEROYALE_WOTPLUSEXCLUSIVEUNAVAILABLE_BODY:String = "#tooltips:hangar/startBtn/battleRoyale/wotPlusExclusiveUnavailable/body";
       
-      public static const HANGAR_TANKCARUSEL_WRONGSQUADVEHICLE_HEADER:String = "#tooltips:hangar/tankCarusel/wrongSquadVehicle/header";
+      public static const HANGAR_STARTBTN_WRONGSQUADVEHICLELEVEL_HEADER:String = "#tooltips:hangar/startBtn/wrongSquadVehicleLevel/header";
       
-      public static const HANGAR_TANKCARUSEL_WRONGSQUADVEHICLE_BODY:String = "#tooltips:hangar/tankCarusel/wrongSquadVehicle/body";
+      public static const HANGAR_STARTBTN_WRONGSQUADVEHICLELEVEL_BODY:String = "#tooltips:hangar/startBtn/wrongSquadVehicleLevel/body";
       
-      public static const HANGAR_TANKCARUSEL_WRONGSQUADTYPEVEHICLE_HEADER:String = "#tooltips:hangar/tankCarusel/wrongSquadTypeVehicle/header";
+      public static const HANGAR_STARTBTN_WRONGSQUADVEHICLE_HEADER:String = "#tooltips:hangar/startBtn/wrongSquadVehicle/header";
       
-      public static const HANGAR_TANKCARUSEL_WRONGSQUADTYPEVEHICLE_BODY:String = "#tooltips:hangar/tankCarusel/wrongSquadTypeVehicle/body";
+      public static const HANGAR_STARTBTN_WRONGSQUADVEHICLE_BODY:String = "#tooltips:hangar/startBtn/wrongSquadVehicle/body";
       
       public static const ACHIEVEMENT_HISTORYDESCRIPTIONHEADER:String = "#tooltips:achievement/historyDescriptionHeader";
       
@@ -5137,6 +5137,8 @@ package
       
       public static const QUESTS_BONUSES_TOKEN_PERSONAL_MISSIONS_POINTS_BODY:String = "#tooltips:quests/bonuses/token/personal_missions_points/body";
       
+      public static const QUESTS_BONUSES_ATTACHMENTS_SET_BODY:String = "#tooltips:quests/bonuses/attachments_set/body";
+      
       public static const HANGAR_HEADER_WGMONEYTOOLTIP_GOLDNAME:String = "#tooltips:hangar/header/wgmoneyTooltip/goldName";
       
       public static const HANGAR_HEADER_WGMONEYTOOLTIP_CREDITSNAME:String = "#tooltips:hangar/header/wgmoneyTooltip/creditsName";
@@ -7811,6 +7813,8 @@ package
       
       public static const ADDITIONALREWARDS_CUSTOMIZATIONS_EMBLEM:String = "#tooltips:additionalRewards/customizations/emblem";
       
+      public static const ADDITIONALREWARDS_CUSTOMIZATIONS_ATTACHMENT:String = "#tooltips:additionalRewards/customizations/attachment";
+      
       public static const ADDITIONALREWARDS_PREMIUM:String = "#tooltips:additionalRewards/premium";
       
       public static const ADDITIONALREWARDS_PREMIUM_PLUS:String = "#tooltips:additionalRewards/premium_plus";
@@ -9020,6 +9024,42 @@ package
       public static const NOTRECRUITEDTANKMAN_DESERTRAT_DESC:String = "#tooltips:notrecruitedtankman/desertRat/desc";
       
       public static const NOTRECRUITEDTANKMAN_DESERTRAT_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/desertRat/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_SERVICEWOMAN_LABEL:String = "#tooltips:notrecruitedtankman/servicewoman/label";
+      
+      public static const NOTRECRUITEDTANKMAN_SERVICEWOMAN_DESC:String = "#tooltips:notrecruitedtankman/servicewoman/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_SERVICEWOMAN_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/servicewoman/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP20_5_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_bp20_5/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP20_5_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp20_5/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP20_5_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp20_5/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP20_6_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_bp20_6/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP20_6_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp20_6/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP20_6_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp20_6/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP20_7_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_bp20_7/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP20_7_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp20_7/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP20_7_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp20_7/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP20_8_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_bp20_8/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP20_8_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp20_8/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP20_8_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp20_8/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP20_9_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_bp20_9/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP20_9_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp20_9/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP20_9_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp20_9/howToGetInfo";
       
       public static const ELEN_SUMMARY_RANK_ENUM:Array = [ELEN_SUMMARY_RANK_1,ELEN_SUMMARY_RANK_2,ELEN_SUMMARY_RANK_3,ELEN_SUMMARY_RANK_4,ELEN_SUMMARY_RANK_NORANK];
       

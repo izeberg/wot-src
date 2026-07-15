@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/poland/Pl44_Kolczatka/crash/lod2/Turret_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.106184 -0.161879 -2.138379</min>
+		<max>1.102658 1.298170 1.522060</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/poland/Pl44_Kolczatka/crash/lod1/Turret_01</nodefullVisual>
+</root>

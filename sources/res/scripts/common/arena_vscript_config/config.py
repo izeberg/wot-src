@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing, logging
 from extension_utils import ResMgr
 import section2dict

@@ -1,7 +1,7 @@
 from __future__ import absolute_import, division
 import math, logging
 from collections import namedtuple
-from future.utils import viewvalues, with_metaclass
+from future.utils import viewvalues
 import BigWorld
 from Math import Vector2, Matrix
 from constants import IS_DEVELOPMENT, IS_CLIENT, IS_BOT
@@ -10,6 +10,7 @@ from soft_exception import SoftException
 from constants import IS_EDITOR
 from wrapped_reflection_framework import ReflectionMetaclass
 from items import _xml
+from py2to3.patched_future import with_metaclass
 _logger = logging.getLogger(__name__)
 
 class ModelStatus:

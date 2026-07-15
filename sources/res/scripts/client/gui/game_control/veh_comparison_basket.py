@@ -1,9 +1,12 @@
+from __future__ import absolute_import
 from collections import namedtuple
 from copy import deepcopy
-from itertools import imap
+from builtins import map, range
+from future.utils import itervalues, lrange
+from itertools import chain
+from typing import TYPE_CHECKING
 import BigWorld
 from helpers.local_cache import FileLocalCache
-from typing import TYPE_CHECKING
 import Event
 from debug_utils import LOG_WARNING, LOG_DEBUG, LOG_ERROR, LOG_CURRENT_EXCEPTION
 from gui import SystemMessages
@@ -64,7 +67,7 @@ def getCrewSkills(vehicle):
     for idx, tankman in vehicle.crew:
         if tankman is not None:
             skillList = [ skill.name for skill in tankman.skills if skill.isRelevant ]
-            skillList += [ skill.name for skill in sum(tankman.bonusSkills.values(), []) if skill ]
+            skillList.extend(skill.name for skill in chain.from_iterable(itervalues(tankman.bonusSkills)) if skill)
             currentSkills[idx] = (tankman.role, skillList)
         else:
             currentSkills[idx] = (
@@ -75,7 +78,7 @@ def getCrewSkills(vehicle):
 
 def _removeVehicleCamouflages(vehicle):
     descr = vehicle.descriptor
-    for i in xrange(len(descr.camouflages)):
+    for i in range(len(descr.camouflages)):
         descr.setCamouflage(i, None, 0, 0)
 
     return
@@ -482,7 +485,7 @@ class VehComparisonBasket(IVehicleComparisonBasket):
         if vehCompareData.getEquipment() != newEqs:
             isChanged = True
             vehCompareData.setEquipment(newEqs)
-        if crewLvl != CrewTypes.SKILL_100 and crewLvl != CrewTypes.CURRENT:
+        if crewLvl not in (CrewTypes.SKILL_100, CrewTypes.CURRENT):
             crewSkills = getStockCrewSkills(vehicle)
         if vehCompareData.getCrewData() != (crewLvl, crewSkills):
             vehCompareData.setCrewData(crewLvl, crewSkills)
@@ -504,7 +507,7 @@ class VehComparisonBasket(IVehicleComparisonBasket):
     @_ErrorNotification
     def addVehicle(self, vehicleCompactDesr, initParameters=None):
         if not isinstance(vehicleCompactDesr, (int, float)):
-            raise SoftException(('Int-type compact descriptor is invalid: ').format(vehicleCompactDesr))
+            raise SoftException(('Int-type compact descriptor is invalid: {}').format(vehicleCompactDesr))
         if self.__canBeAdded():
             vehicleCompactDesr = getValidVehicleCDForNationChange(vehicleCompactDesr)
             vehCmpData = self._createVehCompareData(vehicleCompactDesr, initParameters)
@@ -520,7 +523,7 @@ class VehComparisonBasket(IVehicleComparisonBasket):
         currVehsCount = len(self.__vehicles)
         if newVehsCount + currVehsCount <= MAX_VEHICLES_TO_COMPARE_COUNT:
             self.__vehicles.extend(map(self._createVehCompareData, vehCDs))
-            self.__applyChanges(addedIDXs=range(currVehsCount, currVehsCount + newVehsCount), addedCDs=vehCDs)
+            self.__applyChanges(addedIDXs=lrange(currVehsCount, currVehsCount + newVehsCount), addedCDs=vehCDs)
         else:
             LOG_DEBUG("Couldn't add vehicles in the comparison basket, basket is full!")
 
@@ -555,7 +558,7 @@ class VehComparisonBasket(IVehicleComparisonBasket):
             removedCDs.append(vehCompareData.getVehicleCD())
 
         self.__vehicles = []
-        self.__applyChanges(removedIDXs=range(len(removedCDs) - 1, -1, -1), removedCDs=removedCDs)
+        self.__applyChanges(removedIDXs=lrange(len(removedCDs) - 1, -1, -1), removedCDs=removedCDs)
 
     @property
     def maxVehiclesToCompare(self):
@@ -594,7 +597,7 @@ class VehComparisonBasket(IVehicleComparisonBasket):
         return [ vehCompareData.getVehicleCD() for vehCompareData in self.__vehicles ]
 
     def getVehiclesPropertiesIter(self, getter):
-        return imap(getter, self.__vehicles)
+        return map(getter, self.__vehicles)
 
     def getVehiclesCount(self):
         return len(self.__vehicles)
@@ -689,7 +692,7 @@ class VehComparisonBasket(IVehicleComparisonBasket):
                     vehCDs.append(intCD)
 
             if vehCDs:
-                self.__applyChanges(addedIDXs=range(0, len(vehCDs)), addedCDs=vehCDs)
+                self.__applyChanges(addedIDXs=lrange(len(vehCDs)), addedCDs=vehCDs)
             return
 
     def _getVehiclesIterator(self):
@@ -720,56 +723,57 @@ class VehComparisonBasket(IVehicleComparisonBasket):
     def __onCacheResync(self, reason, diff):
         if reason != CACHE_SYNC_REASON.CLIENT_UPDATE:
             return
-        changedIDXs = set()
-        nationChangedIDxs = set()
-        if diff is not None and GUI_ITEM_TYPE.VEHICLE in diff:
-            vehDiff = diff[GUI_ITEM_TYPE.VEHICLE]
-            diffKeys = diff.keys()
-            isModulesOrDeviceChanged = set(diffKeys).intersection(set(GUI_ITEM_TYPE.VEHICLE_MODULES + (GUI_ITEM_TYPE.OPTIONALDEVICE,)))
-            isEquipmentChanged = GUI_ITEM_TYPE.EQUIPMENT in diffKeys
-            for changedVehCD in vehDiff:
-                for idx, vehCompareData in enumerate(self.__vehicles):
-                    if changedVehCD == vehCompareData.getVehicleCD():
-                        vehicle = self.itemsCache.items.getItemByCD(changedVehCD)
-                        isCachedVehInInv = vehicle.isInInventory
-                        isRentalChanged = vehicle.rentalIsOver != vehCompareData.isRentalOver()
-                        if vehCompareData.isInInventory() != isCachedVehInInv:
-                            self.__updateInventoryData(vehCompareData, vehicle)
-                            self.__updateInventoryEquipment(vehCompareData, vehicle)
-                            self.__updateInventoryCrewData(vehCompareData, vehicle)
-                            self.__updatePostProgression(vehCompareData, vehicle)
-                            if not isCachedVehInInv:
-                                crewLevel, crewSkills = vehCompareData.getCrewData()
-                                if crewLevel == CrewTypes.CURRENT:
-                                    vehCompareData.setCrewData(CrewTypes.SKILL_100, crewSkills)
-                            changedIDXs.add(idx)
-                        else:
-                            if isModulesOrDeviceChanged:
+        else:
+            changedIDXs = set()
+            nationChangedIDxs = set()
+            if diff is not None and GUI_ITEM_TYPE.VEHICLE in diff:
+                vehDiff = diff[GUI_ITEM_TYPE.VEHICLE]
+                diffKeys = set(diff)
+                isModulesOrDeviceChanged = diffKeys.intersection(set(GUI_ITEM_TYPE.VEHICLE_MODULES + (GUI_ITEM_TYPE.OPTIONALDEVICE,)))
+                isEquipmentChanged = GUI_ITEM_TYPE.EQUIPMENT in diffKeys
+                for changedVehCD in vehDiff:
+                    for idx, vehCompareData in enumerate(self.__vehicles):
+                        if changedVehCD == vehCompareData.getVehicleCD():
+                            vehicle = self.itemsCache.items.getItemByCD(changedVehCD)
+                            isCachedVehInInv = vehicle.isInInventory
+                            isRentalChanged = vehicle.rentalIsOver != vehCompareData.isRentalOver()
+                            if vehCompareData.isInInventory() != isCachedVehInInv:
                                 self.__updateInventoryData(vehCompareData, vehicle)
-                                changedIDXs.add(idx)
-                            if isEquipmentChanged:
                                 self.__updateInventoryEquipment(vehCompareData, vehicle)
-                                changedIDXs.add(idx)
-                            if GUI_ITEM_TYPE.TANKMAN in diffKeys:
                                 self.__updateInventoryCrewData(vehCompareData, vehicle)
-                            if GUI_ITEM_TYPE.CUSTOMIZATION in diffKeys or GUI_ITEM_TYPE.OUTFIT in diffKeys:
-                                self.__updateInventoryData(vehCompareData, vehicle)
-                                changedIDXs.add(idx)
-                            if GUI_ITEM_TYPE.VEH_POST_PROGRESSION in diffKeys or isRentalChanged:
-                                vehCompareData.setRentalIsOver(vehicle.rentalIsOver)
                                 self.__updatePostProgression(vehCompareData, vehicle)
+                                if not isCachedVehInInv:
+                                    crewLevel, crewSkills = vehCompareData.getCrewData()
+                                    if crewLevel == CrewTypes.CURRENT:
+                                        vehCompareData.setCrewData(CrewTypes.SKILL_100, crewSkills)
                                 changedIDXs.add(idx)
-                        vehicleCompactDesr = getValidVehicleCDForNationChange(changedVehCD)
-                        if vehicleCompactDesr != changedVehCD:
-                            vehCmpData = self._createVehCompareData(vehicleCompactDesr)
-                            self.__vehicles[idx] = vehCmpData
-                            nationChangedIDxs.add(idx)
+                            else:
+                                if isModulesOrDeviceChanged:
+                                    self.__updateInventoryData(vehCompareData, vehicle)
+                                    changedIDXs.add(idx)
+                                if isEquipmentChanged:
+                                    self.__updateInventoryEquipment(vehCompareData, vehicle)
+                                    changedIDXs.add(idx)
+                                if GUI_ITEM_TYPE.TANKMAN in diffKeys:
+                                    self.__updateInventoryCrewData(vehCompareData, vehicle)
+                                if GUI_ITEM_TYPE.CUSTOMIZATION in diffKeys or GUI_ITEM_TYPE.OUTFIT in diffKeys:
+                                    self.__updateInventoryData(vehCompareData, vehicle)
+                                    changedIDXs.add(idx)
+                                if GUI_ITEM_TYPE.VEH_POST_PROGRESSION in diffKeys or isRentalChanged:
+                                    vehCompareData.setRentalIsOver(vehicle.rentalIsOver)
+                                    self.__updatePostProgression(vehCompareData, vehicle)
+                                    changedIDXs.add(idx)
+                            vehicleCompactDesr = getValidVehicleCDForNationChange(changedVehCD)
+                            if vehicleCompactDesr != changedVehCD:
+                                vehCmpData = self._createVehCompareData(vehicleCompactDesr)
+                                self.__vehicles[idx] = vehCmpData
+                                nationChangedIDxs.add(idx)
 
-        if changedIDXs:
-            self.onParametersChange(changedIDXs)
-        if nationChangedIDxs:
-            self.onNationChange(nationChangedIDxs)
-        return
+            if changedIDXs:
+                self.onParametersChange(changedIDXs)
+            if nationChangedIDxs:
+                self.onNationChange(nationChangedIDxs)
+            return
 
     @classmethod
     def __updateInventoryEquipment(cls, vehCompareData, vehicle):

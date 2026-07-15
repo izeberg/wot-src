@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging
 from itertools import chain
 from constants import MIN_VEHICLE_LEVEL

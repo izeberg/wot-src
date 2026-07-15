@@ -60,23 +60,18 @@ GUI_NATIONS_ORDER_INDEX[NONE_NATION_NAME] = nations.NONE_INDEX
 GUI_NATIONS_ORDER_INDEX_REVERSED = {name:idx for idx, name in enumerate(reversed(GUI_NATIONS))}
 GUI_NATIONS_ORDER_INDICES = {nations.INDICES.get(name, nations.NONE_INDEX):idx for name, idx in GUI_NATIONS_ORDER_INDEX.items()}
 
-def nationCompareByName(first, second):
-    if second is None:
-        return -1
-    else:
-        if first is None:
-            return 1
-        return GUI_NATIONS_ORDER_INDEX[first] - GUI_NATIONS_ORDER_INDEX[second]
+def _nationSortKeyByName(nation):
+    return GUI_NATIONS_ORDER_INDEX[nation]
 
 
-def nationCompareByIndex(first, second):
+def nationSortKeyByIndex(index):
 
     def getNationName(idx):
         if idx != nations.NONE_INDEX:
             return nations.NAMES[idx]
         return NONE_NATION_NAME
 
-    return nationCompareByName(getNationName(first), getNationName(second))
+    return _nationSortKeyByName(getNationName(index))
 
 
 def getNationIndex(nationOrderIndex):

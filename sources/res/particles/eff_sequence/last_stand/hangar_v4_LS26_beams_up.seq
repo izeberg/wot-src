@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>37.000004</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>beam_01</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/environment/hangar_v4_LS26/beams_01.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-2.035513 14.290756 -16.252632</value>
+				<inTangent>-0.287991 -0.790808 -1.569032</inTangent>
+				<outTangent>-0.287991 -0.790808 -1.569032</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>84.601013 286.960938 96.038628</value>
+				<inTangent>2.604662 14.615016 14.779417</inTangent>
+				<outTangent>2.604662 14.615016 14.779417</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>2.487811 3.000000 1.000000</value>
+				<inTangent>0.133321 0.213770 -0.133508</inTangent>
+				<outTangent>0.133321 0.213770 -0.133508</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>brush5Shader</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 0.000000 0.541176 0.000000</value>
+				<inTangent>0.000174 0.000000 0.000000 0.016136</inTangent>
+				<outTangent>0.000174 0.000000 0.000000 0.016136</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.000000</startTime>
+				<value>1.000694 0.000000 0.541176 0.800000</value>
+				<inTangent>0.000009 0.000000 0.000000 0.008668</inTangent>
+				<outTangent>0.000009 0.000000 0.000000 0.008668</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.000000</startTime>
+				<value>1.000539 0.000000 0.541176 0.800000</value>
+				<inTangent>-0.000110 0.000000 0.000000 -0.010392</inTangent>
+				<outTangent>-0.000110 0.000000 0.000000 -0.010392</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>9.000000</startTime>
+				<value>1.000282 0.000000 0.541176 0.000000</value>
+				<inTangent>-0.000064 -0.000000 -0.000000 -0.007025</inTangent>
+				<outTangent>-0.000064 -0.000000 -0.000000 -0.007025</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>beam_02</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/environment/hangar_v4_LS26/beams_01.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.000000</startTime>
+				<value>11.344130 11.799481 18.531271</value>
+				<inTangent>0.165907 -0.449273 -0.487132</inTangent>
+				<outTangent>0.165907 -0.449273 -0.487132</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.000000</startTime>
+				<value>72.193748 267.356232 243.542969</value>
+				<inTangent>-2.736897 -4.324567 32.537720</inTangent>
+				<outTangent>-2.736897 -4.324567 32.537720</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.000000</startTime>
+				<value>2.600000 3.700000 1.200000</value>
+				<inTangent>0.024748 0.154412 0.044118</inTangent>
+				<outTangent>0.024748 0.154412 0.044118</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>brush5Shader</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>7.000000</startTime>
+				<value>1.000000 0.000000 0.541176 0.000000</value>
+				<inTangent>0.000174 0.000000 0.000000 0.016136</inTangent>
+				<outTangent>0.000174 0.000000 0.000000 0.016136</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>11.000001</startTime>
+				<value>1.000694 0.000000 0.541176 0.800000</value>
+				<inTangent>0.000009 0.000000 0.000000 0.008668</inTangent>
+				<outTangent>0.000009 0.000000 0.000000 0.008668</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>12.000001</startTime>
+				<value>1.000539 0.000000 0.541176 0.800000</value>
+				<inTangent>-0.000110 0.000000 0.000000 -0.010392</inTangent>
+				<outTangent>-0.000110 0.000000 0.000000 -0.010392</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>16.000000</startTime>
+				<value>1.000282 0.000000 0.541176 0.000000</value>
+				<inTangent>-0.000064 -0.000000 -0.000000 -0.007025</inTangent>
+				<outTangent>-0.000064 -0.000000 -0.000000 -0.007025</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>beam_03</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/environment/hangar_v4_LS26/beams_01.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>14.000001</startTime>
+				<value>17.319897 14.290756 -15.146437</value>
+				<inTangent>4.301201 -0.000000 0.245821</inTangent>
+				<outTangent>4.301201 -0.000000 0.245821</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>14.000001</startTime>
+				<value>84.600143 229.071457 96.037804</value>
+				<inTangent>-0.000193 -12.864326 -0.000183</inTangent>
+				<outTangent>-0.000193 -12.864326 -0.000183</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>14.000001</startTime>
+				<value>2.487811 4.000000 1.000000</value>
+				<inTangent>0.133321 0.213770 -0.133508</inTangent>
+				<outTangent>0.133321 0.213770 -0.133508</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>brush5Shader</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>14.000001</startTime>
+				<value>1.000000 0.000000 0.541176 0.000000</value>
+				<inTangent>0.000174 0.000000 0.000000 0.016136</inTangent>
+				<outTangent>0.000174 0.000000 0.000000 0.016136</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>18.000000</startTime>
+				<value>1.000694 0.000000 0.541176 0.800000</value>
+				<inTangent>0.000009 0.000000 0.000000 0.008668</inTangent>
+				<outTangent>0.000009 0.000000 0.000000 0.008668</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>19.000002</startTime>
+				<value>1.000539 0.000000 0.541176 0.800000</value>
+				<inTangent>-0.000110 0.000000 0.000000 -0.010392</inTangent>
+				<outTangent>-0.000110 0.000000 0.000000 -0.010392</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>23.000002</startTime>
+				<value>1.000282 0.000000 0.541176 0.000000</value>
+				<inTangent>-0.000064 -0.000000 -0.000000 -0.007025</inTangent>
+				<outTangent>-0.000064 -0.000000 -0.000000 -0.007025</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>beam_04</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/environment/hangar_v4_LS26/beams_01.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>21.000002</startTime>
+				<value>-15.611162 14.552773 13.857701</value>
+				<inTangent>-3.108927 0.060004 6.895496</inTangent>
+				<outTangent>-3.108927 0.060004 6.895496</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>21.000002</startTime>
+				<value>84.601700 401.909424 96.039383</value>
+				<inTangent>0.000157 26.324081 0.000173</inTangent>
+				<outTangent>0.000157 26.324081 0.000173</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>21.033335</startTime>
+				<value>2.487811 4.000000 1.000000</value>
+				<inTangent>0.133321 0.213770 -0.133508</inTangent>
+				<outTangent>0.133321 0.213770 -0.133508</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>brush5Shader</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>21.033335</startTime>
+				<value>1.000000 0.000000 0.541176 0.000000</value>
+				<inTangent>0.000174 0.000000 0.000000 0.016136</inTangent>
+				<outTangent>0.000174 0.000000 0.000000 0.016136</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>25.033335</startTime>
+				<value>1.000694 0.000000 0.541176 0.800000</value>
+				<inTangent>0.000009 0.000000 0.000000 0.008668</inTangent>
+				<outTangent>0.000009 0.000000 0.000000 0.008668</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>26.033335</startTime>
+				<value>1.000539 0.000000 0.541176 0.800000</value>
+				<inTangent>-0.000110 0.000000 0.000000 -0.010392</inTangent>
+				<outTangent>-0.000110 0.000000 0.000000 -0.010392</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>30.033335</startTime>
+				<value>1.000282 0.000000 0.541176 0.000000</value>
+				<inTangent>-0.000064 -0.000000 -0.000000 -0.007025</inTangent>
+				<outTangent>-0.000064 -0.000000 -0.000000 -0.007025</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>beam_05</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/environment/hangar_v4_LS26/beams_01.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>28.000002</startTime>
+				<value>20.814465 9.204314 -1.486794</value>
+				<inTangent>5.440472 -1.211058 3.515676</inTangent>
+				<outTangent>5.440472 -1.211058 3.515676</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>28.000002</startTime>
+				<value>76.838165 245.948227 152.957123</value>
+				<inTangent>-1.848298 -9.764934 13.552026</inTangent>
+				<outTangent>-1.848298 -9.764934 13.552026</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>28.000002</startTime>
+				<value>2.487811 3.500000 0.600000</value>
+				<inTangent>0.133321 0.213770 -0.133508</inTangent>
+				<outTangent>0.133321 0.213770 -0.133508</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>brush5Shader</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>28.000002</startTime>
+				<value>1.000000 0.000000 0.541176 0.000000</value>
+				<inTangent>0.000174 0.000000 0.000000 0.016136</inTangent>
+				<outTangent>0.000174 0.000000 0.000000 0.016136</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>32.000000</startTime>
+				<value>1.000694 0.000000 0.541176 0.800000</value>
+				<inTangent>0.000009 0.000000 0.000000 0.008668</inTangent>
+				<outTangent>0.000009 0.000000 0.000000 0.008668</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>33.000000</startTime>
+				<value>1.000539 0.000000 0.541176 0.800000</value>
+				<inTangent>-0.000110 0.000000 0.000000 -0.010392</inTangent>
+				<outTangent>-0.000110 0.000000 0.000000 -0.010392</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>37.000004</startTime>
+				<value>1.000282 0.000000 0.541176 0.000000</value>
+				<inTangent>-0.000064 -0.000000 -0.000000 -0.007025</inTangent>
+				<outTangent>-0.000064 -0.000000 -0.000000 -0.007025</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

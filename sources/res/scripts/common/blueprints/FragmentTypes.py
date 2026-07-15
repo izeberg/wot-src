@@ -1,14 +1,17 @@
-import nations, typing
+from __future__ import absolute_import
+import typing
+from past.builtins import long
+import nations
 from backports.functools_lru_cache import lru_cache
 from items import vehicles, ITEM_TYPES
 from random_utils import wchoices
 from debug_utils import LOG_DEBUG_DEV, LOG_ERROR
 from . import g_cache, BlueprintsException, getAllResearchableVehicles
-from BlueprintTypes import BlueprintTypes
+from blueprints.BlueprintTypes import BlueprintTypes
+from math_common import round_py2_style
 
 class BlueprintFragment(object):
-    __slots__ = ('nationID', 'vehTypeCD', 'total', 'isUniversal', 'getXPValueForFragments',
-                 'makeIntCompDescr', 'getRequiredFragmentCounts', 'decayExtraFragments')
+    __slots__ = ('vehTypeCD', 'total')
     FTYPE = BlueprintTypes.NONE
     nationID = property(lambda self: self.vehTypeCD >> 4 & 15)
 
@@ -51,7 +54,7 @@ class NationalBlueprintFragment(BlueprintFragment):
     @staticmethod
     @lru_cache(maxsize=len(nations.NAMES) * 2)
     def fromNation(nationNameOrId):
-        nationID = nations.INDICES.get(nationNameOrId, -1) if type(nationNameOrId) is str else nationNameOrId
+        nationID = nations.INDICES.get(nationNameOrId, -1) if isinstance(nationNameOrId, str) else nationNameOrId
         return NationalBlueprintFragment(65280 + (nationID << 4) + ITEM_TYPES.vehicle)
 
     def __repr__(self):
@@ -67,7 +70,7 @@ class VehicleBlueprintFragment(BlueprintFragment):
 
     @staticmethod
     def fromVehicleType(vehNameOrTypeDescr, enableException=True):
-        vehTypeCD = vehicles.makeVehicleTypeCompDescrByName(vehNameOrTypeDescr) if type(vehNameOrTypeDescr) is str else vehNameOrTypeDescr
+        vehTypeCD = vehicles.makeVehicleTypeCompDescrByName(vehNameOrTypeDescr) if isinstance(vehNameOrTypeDescr, str) else vehNameOrTypeDescr
         if enableException and vehTypeCD not in getAllResearchableVehicles():
             raise BlueprintsException(('Cannot create blueprint for non-researchable vehicle {}').format(vehTypeCD))
         return VehicleBlueprintFragment(vehTypeCD, enableException)
@@ -119,7 +122,7 @@ class VehicleBlueprintFragment(BlueprintFragment):
         _, _, require, _, allyConversionCoefs = availableLevels.get(vehicleLevel, (0, 0, (0, 0), (0, 0), {}))
         allyConversionCoefs = allyConversionCoefs.get(nations.NATION_TO_ALLIANCE_IDS_MAP[nationID], {})
         nationalRequire = require[0]
-        return {NationalBlueprintFragment.fromNation(nId).makeIntCompDescr():(round(allyConversionCoefs[nId] * nationalRequire) if nId != nationID else nationalRequire) for nId in allyConversionCoefs.iterkeys()}
+        return {NationalBlueprintFragment.fromNation(nId).makeIntCompDescr():(round_py2_style(allyConversionCoefs[nId] * nationalRequire) if nId != nationID else nationalRequire) for nId in allyConversionCoefs}
 
 
 class IntelligenceDataFragment(BlueprintFragment):
@@ -135,7 +138,7 @@ class IntelligenceDataFragment(BlueprintFragment):
 
 
 def getFragmentType(ifragmentCD):
-    if type(ifragmentCD) in (int, long):
+    if isinstance(ifragmentCD, (int, long)):
         return ifragmentCD & 15
     raise BlueprintsException('Wrong fragment compact descriptor', ifragmentCD)
 
@@ -163,13 +166,13 @@ def isValidFragment(maybeFragment, defaultUnlocks):
 
 
 def isValidFragmentType(maybeFragment):
-    if type(maybeFragment) in (int, long):
+    if isinstance(maybeFragment, (int, long)):
         return maybeFragment & 15 in BlueprintTypes.ALL
     return False
 
 
 def isUniversalFragment(maybeFragment):
-    if type(maybeFragment) in (int, long):
+    if isinstance(maybeFragment, (int, long)):
         return maybeFragment and maybeFragment & 15 in BlueprintTypes.UNIVERSAL
     return False
 

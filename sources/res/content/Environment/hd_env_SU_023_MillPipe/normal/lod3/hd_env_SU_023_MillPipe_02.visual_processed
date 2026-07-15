@@ -22,7 +22,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 1.000000 0.000000</row1>
 					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 15.495263 0.000000</row3>
+					<row3>0.000000 0.000000 0.000000</row3>
 				</transform>
 			</node>
 			<node>
@@ -31,7 +31,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 1.000000 0.000000</row1>
 					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 29.131977 0.000000</row3>
+					<row3>0.000000 0.000000 0.000000</row3>
 				</transform>
 			</node>
 			<node>
@@ -134,32 +134,10 @@
 						<Texture>content/Environment/hd_env_SU_023_MillPipe/hd_env_SU_023_MillPipe_02_BGMM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.014696 17.634600 -0.023694</groupOrigin>
+				<groupOrigin>0.014696 17.634600 -0.023692</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				1
-				<material>
-					<identifier>n_stone2_2</identifier>
-					<fx>shaders/std_effects/PBS_ext.fx</fx>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>74</materialKind>
-					<property>
-						diffuseMap
-						<Texture>content/Environment/hd_env_SU_023_MillPipe/hd_env_SU_023_MillPipe_02_BAM.dds</Texture>
-					</property>
-					<property>
-						normalMap
-						<Texture>content/Environment/hd_env_SU_023_MillPipe/hd_env_SU_023_MillPipe_02_BANM.dds</Texture>
-					</property>
-					<property>
-						metallicGlossMap
-						<Texture>content/Environment/hd_env_SU_023_MillPipe/hd_env_SU_023_MillPipe_02_BGMM.dds</Texture>
-					</property>
-				</material>
-				<groupOrigin>0.001046 30.127411 -0.017767</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
-				2
 				<material>
 					<identifier>s_nd0</identifier>
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
@@ -179,6 +157,28 @@
 					</property>
 				</material>
 				<groupOrigin>-0.000530 5.082827 0.047596</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				2
+				<material>
+					<identifier>n_stone2_2</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>74</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/hd_env_SU_023_MillPipe/hd_env_SU_023_MillPipe_02_BAM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Environment/hd_env_SU_023_MillPipe/hd_env_SU_023_MillPipe_02_BANM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Environment/hd_env_SU_023_MillPipe/hd_env_SU_023_MillPipe_02_BGMM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.001046 30.127411 -0.017758</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>

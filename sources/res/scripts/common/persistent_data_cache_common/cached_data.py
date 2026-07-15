@@ -1,5 +1,7 @@
+from __future__ import absolute_import
 import typing
 from collections import OrderedDict
+from future.utils import iteritems, listitems
 import wg_pickle
 from persistent_data_cache_common.common import getLogger, MeasureExecutionTime
 if typing.TYPE_CHECKING:
@@ -33,7 +35,7 @@ class LoadedData(object):
                 self._logger.debug('Data <%s> has been loaded with <%s>.', name, serializer)
 
         except Exception:
-            for name, appliedSerializer in appliedSerializers.iteritems():
+            for name, appliedSerializer in iteritems(appliedSerializers):
                 appliedSerializer.rollbackSideEffects()
                 self._logger.debug('Deserialized data <%s|%s> side effects rollback.', name, appliedSerializer)
 
@@ -64,7 +66,7 @@ class CreatedData(object):
         self._logger.debug('Data <%s|%s> added.', name, serializerClass)
 
     def toDict(self):
-        return {'version': self._version, 'data': self._data.items()}
+        return {'version': self._version, 'data': listitems(self._data)}
 
 
 def dumps(cachedData):

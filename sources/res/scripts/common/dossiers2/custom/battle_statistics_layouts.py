@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from dossiers2.common.DossierBlockBuilders import *
 from dossiers2.custom.dependencies import VEH_TYPE_FRAGS_DEPENDENCIES
 from dossiers2.custom.dependencies import TOTAL_STATS_DEPENDENCIES

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import Event
 from skeletons.gui.game_control import IComp7LightController
 from gui.periodic_battles.models import PrimeTimeStatus

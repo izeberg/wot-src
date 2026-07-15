@@ -1,3 +1,4 @@
+from __future__ import absolute_import, print_function
 import ResMgr
 
 def gatherChunks(spaceDir):
@@ -34,4 +35,4 @@ def validateShells(spaceDir):
             if shell in shells:
                 shells.remove(shell)
 
-    print shells
+    print(shells)

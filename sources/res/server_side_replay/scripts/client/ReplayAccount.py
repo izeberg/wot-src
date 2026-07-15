@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, enum, BigWorld, BattleReplay
 from PlayerEvents import g_playerEvents
 from ReplayEvents import g_replayEvents

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/italy/It38_Donnola/crash/lod2/Turret_01</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/italy/It38_Donnola/crash/lod3/Turret_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.333287 -0.314941 -1.699035</min>
+		<max>1.505151 1.240703 1.302319</max>
+	</visibilityBox>
+</root>

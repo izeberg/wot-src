@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from enum import Enum
 import Event
 from gui.server_events import settings

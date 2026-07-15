@@ -25,15 +25,6 @@ msgstr ""
 "When opened, these boxes may grant you Tier IX Premium vehicles, in-game "
 "currencies, and other valuable rewards."
 
-msgid "boxTooltip/guaranteed/text/bronze"
-msgstr "Open %(count) more until Guaranteed Reward"
-
-msgid "boxTooltip/guaranteed/text/gold"
-msgstr "Open %(count) more until Guaranteed Reward"
-
-msgid "boxTooltip/guaranteed/text/silver"
-msgstr "Open %(count) more until Guaranteed Reward"
-
 msgid "boxTooltip/howGet/text/bronze"
 msgstr ""
 "Can be received as a gift for purchasing items in the Premium Shop as well "
@@ -67,9 +58,6 @@ msgid "entryPoint/tooltip/description"
 msgstr ""
 "These are special boxes containing new and unique Tier VIII–X vehicles and more rewards.\n"
 "You can receive boxes as a gift for purchasing items in the Premium Shop as well as receive them while opening boxes of any other kind."
-
-msgid "entryPoint/tooltip/title"
-msgstr "God's Blessing Boxes and How to Receive Them"
 
 msgid "entryPoint/tooltip/warningDescription"
 msgstr ""
@@ -116,17 +104,6 @@ msgid "noBoxesView/description/"
 msgstr ""
 "You do not have any boxes.\n"
 "You can get them in the Premium Shop."
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/count"
-msgstr "Boxes opened: %(boxes)s"
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/header"
-msgstr "Remaining Boxes Opened"
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/text"
-msgstr ""
-"At the end of the event, we opened all of your boxes and added their "
-"contents to your account."
 
 msgid "singleRewardView/tooltip/boxName/"
 msgstr "Chosen Lootbox"

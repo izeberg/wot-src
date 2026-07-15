@@ -172,10 +172,8 @@
 			<priority>80</priority>
 			<isVisible>False</isVisible>
 		</slots>
-		<battleToken>
-			<attachmentsSet>
-				<priority>376</priority>
-			</attachmentsSet>
-		</battleToken>
+		<attachments_set>
+			<priority>376</priority>
+		</attachments_set>
 	</bonuses>
 </root>

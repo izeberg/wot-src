@@ -89,7 +89,7 @@
 	<hull>
 		<armor>
 			<armor_1>
-				158.8
+				139.7
 				<!--BW_String-->
 			</armor_1>
 			<armor_2>
@@ -113,7 +113,7 @@
 				<!--BW_String-->
 			</armor_6>
 			<armor_7>
-				69.9
+				63.5
 				<!--BW_String-->
 			</armor_7>
 			<armor_8>0</armor_8>
@@ -197,7 +197,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>27300</weight>
-		<maxHealth>1360</maxHealth>
+		<maxHealth>1320</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>230</maxHealth>
 			<maxRegenHealth>173</maxRegenHealth>
@@ -2770,7 +2770,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>10800</weight>
-			<maxHealth>340</maxHealth>
+			<maxHealth>330</maxHealth>
 			<rotationSpeed>25</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>170</maxHealth>
@@ -2817,7 +2817,7 @@
 							<!--BW_String-->
 						</armor_7>
 						<armor_8>
-							171.5
+							152.4
 							<!--BW_String-->
 						</armor_8>
 						<gun>50</gun>
@@ -2852,7 +2852,7 @@
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<reloadTime>
-						12.9
+						13.3
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>

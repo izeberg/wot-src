@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from future.utils import viewvalues
 from typing import TYPE_CHECKING
 from gui import makeHtmlString
 from gui.Scaleform.genConsts.BLOCKS_TOOLTIP_TYPES import BLOCKS_TOOLTIP_TYPES
@@ -43,7 +45,7 @@ class BoosterTooltipData(BlocksTooltipData):
             items.append(infoBlocks)
         items.append(formatters.packBuildUpBlockData([
          self.__getBonusBlocks(booster)], linkage=BLOCKS_TOOLTIP_TYPES.TOOLTIP_BUILDUP_BLOCK_WHITE_BG_LINKAGE, padding=formatters.packPadding(top=-5, bottom=-10)))
-        priceStorageItems = list()
+        priceStorageItems = []
         priceInfo = self.__getPriceInfo(stats, booster)
         if priceInfo:
             priceStorageItems.append(priceInfo)
@@ -150,11 +152,11 @@ class BoosterTooltipData(BlocksTooltipData):
     def __getBoosterQuestNames(self, boosterID):
         questsResult = set()
         quests = events_helpers.getBoosterQuests()
-        for q in quests.itervalues():
+        for q in viewvalues(quests):
             bonuses = q.getBonuses('goodies')
             for b in bonuses:
                 boosters = b.getBoosters()
-                for qBooster, _ in boosters.iteritems():
+                for qBooster in boosters:
                     if boosterID == qBooster.boosterID:
                         questsResult.add(q.getUserName())
 

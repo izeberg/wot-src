@@ -10,6 +10,31 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "event/ChallengeEventBanner/tooltip/description"
+msgstr ""
+"Enter the Crucible, where champions are forged! Activate a series of "
+"missions, then earn rewards as you complete them. Only one series of "
+"missions can be active at a time, and missions must be completed in order. "
+"Test your skills and fight your way to glory!"
+
+msgid "event/ChallengeEventBanner/tooltip/timer/text"
+msgstr "Nearest Crucible mission ends in %(timer)s"
+
+msgid "event/ChallengeEventBanner/tooltip/title"
+msgstr "Crucible"
+
+msgid "event/ChallengesEventBanner/inProgress/description"
+msgstr "Forge your way to glory!"
+
+msgid "event/ChallengesEventBanner/inProgress/description/activeChallenge"
+msgstr "Active!"
+
+msgid "event/ChallengesEventBanner/intro/description"
+msgstr "Forge your way to glory!"
+
+msgid "event/ChallengesEventBanner/title"
+msgstr "CRUCIBLE"
+
 msgid "event/IntegratedAuctionEntryPont/inProgress/description"
 msgstr "A new lot is available!"
 

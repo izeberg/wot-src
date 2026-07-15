@@ -1,5 +1,7 @@
+from __future__ import absolute_import, division
+from future.utils import viewitems, viewvalues
 import Event
-from client_arena_component_system import ClientArenaComponent
+from arena_component_system.client_arena_component_system import ClientArenaComponent
 
 class DestructibleEntitiesComponent(ClientArenaComponent):
     destructibleEntities = property(lambda self: self.__destructibleEntities)
@@ -44,7 +46,7 @@ class DestructibleEntitiesComponent(ClientArenaComponent):
 
     def getNumDestroyedEntities(self):
         count = 0
-        for _, destEntity in self.__destructibleEntities.iteritems():
+        for destEntity in viewvalues(self.__destructibleEntities):
             if destEntity.health <= 0:
                 count += 1
 
@@ -53,7 +55,7 @@ class DestructibleEntitiesComponent(ClientArenaComponent):
     def getTotalRemainingHealthPercentage(self):
         totalMaxHealth = 0.0
         totalRemainingHealth = 0.0
-        for _, object_ in self.__destructibleEntities.iteritems():
+        for object_ in viewvalues(self.__destructibleEntities):
             totalMaxHealth += object_.maxHealth
             totalRemainingHealth += object_.health
 
@@ -62,7 +64,7 @@ class DestructibleEntitiesComponent(ClientArenaComponent):
 
     def getDestroyedEntityIds(self):
         destroyed = []
-        for entityId, destEntity in self.__destructibleEntities.iteritems():
+        for entityId, destEntity in viewitems(self.__destructibleEntities):
             if destEntity.health <= 0:
                 destroyed.append(entityId)
 
@@ -72,7 +74,7 @@ class DestructibleEntitiesComponent(ClientArenaComponent):
         return self.__destructibleEntities.get(destId, None)
 
     def getDestructibleEntityAndDestructibleIDByEntityID(self, entityID):
-        for destID, entity in self.__destructibleEntities.iteritems():
+        for destID, entity in viewitems(self.__destructibleEntities):
             if entity.id == entityID:
                 return (entity, destID)
 
@@ -83,7 +85,7 @@ class DestructibleEntitiesComponent(ClientArenaComponent):
         def getDistance(entity):
             return entity.position.flatDistTo(position)
 
-        aliveHQs = [ hq for hq in self.__destructibleEntities.itervalues() if hq.health > 0 ]
+        aliveHQs = [ hq for hq in viewvalues(self.__destructibleEntities) if hq.health > 0 ]
         if not aliveHQs:
             return (None, None)
         else:

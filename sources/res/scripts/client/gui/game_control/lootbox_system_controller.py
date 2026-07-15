@@ -1,6 +1,8 @@
+from __future__ import absolute_import
 import logging
 from copy import deepcopy
 from functools import partial
+from future.utils import itervalues, listvalues, viewitems, viewvalues
 from typing import TYPE_CHECKING
 import Event
 from account_helpers.AccountSettings import AccountSettings, LOOTBOX_SYSTEM, LOOT_BOXES_HAS_NEW, LOOT_BOXES_INTRO_VIDEO_SHOWN, LOOT_BOXES_OPEN_ANIMATION_ENABLED, LOOT_BOXES_SELECTED_BOX, LOOT_BOXES_UNIQUE_ID, LOOT_BOXES_WAS_FINISHED, LOOT_BOXES_WAS_STARTED
@@ -89,7 +91,7 @@ class LootBoxSystemController(ILootBoxSystemController, EventsHandler):
 
     @property
     def eventNames(self):
-        return self.__getConfig().events.keys()
+        return list(self.__getConfig().events)
 
     @property
     def mainEntryPoint(self):
@@ -131,8 +133,8 @@ class LootBoxSystemController(ILootBoxSystemController, EventsHandler):
              rewardsData, boxesCount)
 
     @adisp_process
-    def resetStatistics(self, boxesIDs):
-        result = yield ResetLootBoxSystemStatisticsProcessor(boxesIDs).request()
+    def resetStatistics(self, boxIDs):
+        result = yield ResetLootBoxSystemStatisticsProcessor(boxIDs).request()
         if result.userMsg:
             SystemMessages.pushI18nMessage(result.userMsg, type=result.sysMsgType, priority=NotificationPriorityLevel.MEDIUM)
         g_eventBus.handleEvent(events.LootBoxSystemEvent(events.LootBoxSystemEvent.ON_STATISTICS_RESET, {'isCompleted': result.success and not bool(result.userMsg)}), EVENT_BUS_SCOPE.LOBBY)
@@ -176,12 +178,12 @@ class LootBoxSystemController(ILootBoxSystemController, EventsHandler):
         return self.__getEventConfig(eventName).getActiveTime()
 
     def getBoxesCountToGuaranteed(self, category):
-        lootBox = findFirst(lambda b: b.getCategory() == category, self.__itemsCache.items.tokens.getLootBoxes().itervalues())
+        lootBox = findFirst(lambda b: b.getCategory() == category, viewvalues(self.__itemsCache.items.tokens.getLootBoxes()))
         return self.getBoxInfo(lootBox.getID())['boxCountToGuaranteedBonus']
 
     def getBoxesCount(self, eventName, category=None):
         if category is None:
-            return sum(self.__boxesCount.get(eventName, {}).itervalues())
+            return sum(itervalues(self.__boxesCount.get(eventName, {})))
         else:
             return self.__boxesCount.get(eventName, {}).get(category, 0)
 
@@ -196,7 +198,7 @@ class LootBoxSystemController(ILootBoxSystemController, EventsHandler):
         return list((callable(criteria) or self.getBoxes)(eventName, isCompatible) if 1 else self.getBoxes(eventName, lambda b: isCompatible(b) and criteria(b)))
 
     def getBoxes(self, eventName, criteria=None):
-        iterBoxes = (callable(criteria) or self.__itemsCache.items.tokens.getLootBoxes().itervalues)() if 1 else (box for box in self.__itemsCache.items.tokens.getLootBoxes().itervalues() if criteria(box))
+        iterBoxes = (callable(criteria) or viewvalues)(self.__itemsCache.items.tokens.getLootBoxes()) if 1 else (box for box in viewvalues(self.__itemsCache.items.tokens.getLootBoxes()) if criteria(box))
         priority = self.getBoxesPriority(eventName)
         return sorted(iterBoxes, key=lambda c: priority.get(c.getCategory(), len(priority)))
 
@@ -204,7 +206,7 @@ class LootBoxSystemController(ILootBoxSystemController, EventsHandler):
         return self.__boxesInfo.get(boxID, {})
 
     def getBoxInfoByCategory(self, boxCategory):
-        return findFirst(lambda i: i.get('category') == boxCategory, self.__boxesInfo.itervalues())
+        return findFirst(lambda i: i.get('category') == boxCategory, viewvalues(self.__boxesInfo))
 
     def getBoxesInfo(self):
         return deepcopy(self.__boxesInfo)
@@ -284,7 +286,7 @@ class LootBoxSystemController(ILootBoxSystemController, EventsHandler):
 
     def __getBoxesCount(self):
         result = {}
-        for box in self.__itemsCache.items.tokens.getLootBoxes().itervalues():
+        for box in viewvalues(self.__itemsCache.items.tokens.getLootBoxes()):
             boxType = box.getType()
             if box.isEnabled() and boxType in self.eventNames:
                 result.setdefault(boxType, {})
@@ -295,10 +297,10 @@ class LootBoxSystemController(ILootBoxSystemController, EventsHandler):
         return result
 
     def __onTokensUpdated(self, diff):
-        if any(token.startswith(LOOTBOX_TOKEN_PREFIX) for token in diff.iterkeys()):
+        if any(token.startswith(LOOTBOX_TOKEN_PREFIX) for token in diff):
             newBoxesCount = self.__getBoxesCount()
-            for boxType, boxTypeInfo in self.__boxesCount.iteritems():
-                for boxCategory, oldCount in boxTypeInfo.iteritems():
+            for boxType, boxTypeInfo in viewitems(self.__boxesCount):
+                for boxCategory, oldCount in viewitems(boxTypeInfo):
                     newCount = newBoxesCount.get(boxType, {}).get(boxCategory, 0)
                     if newCount != oldCount:
                         self.__boxesCount.update(newBoxesCount)
@@ -308,18 +310,18 @@ class LootBoxSystemController(ILootBoxSystemController, EventsHandler):
                         break
 
     def __onBoxesUpdate(self, diff):
-        for historyName in diff.get('history', {}).iterkeys():
-            for boxID in self.__boxesInfo.iterkeys():
+        for historyName in diff.get('history', {}):
+            for boxID, boxInfo in viewitems(self.__boxesInfo):
                 lootBox = self.__itemsCache.items.tokens.getLootBoxByID(boxID)
                 if lootBox.getHistoryName() == historyName:
-                    guaranteedBonusLimit = self.__boxesInfo[boxID].get('limit', 0)
+                    guaranteedBonusLimit = boxInfo.get('limit', 0)
                     opened = self.__itemsCache.items.tokens.getAttemptsAfterGuaranteedRewards(lootBox)
-                    self.__boxesInfo[boxID]['boxCountToGuaranteedBonus'] = max(guaranteedBonusLimit - opened, 0)
+                    boxInfo['boxCountToGuaranteedBonus'] = max(guaranteedBonusLimit - opened, 0)
 
         self.onBoxesUpdated()
 
     def __updateBoxesInfo(self):
-        boxes = self.__itemsCache.items.tokens.getLootBoxes().values()
+        boxes = listvalues(self.__itemsCache.items.tokens.getLootBoxes())
         boxesInfoData = {}
         if boxes:
             self.__updateBoxes(boxes, boxesInfoData, self.__getTooltipConfig())

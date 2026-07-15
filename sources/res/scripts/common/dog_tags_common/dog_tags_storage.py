@@ -1,5 +1,7 @@
+from __future__ import absolute_import
 import typing
 from collections import namedtuple
+from future.utils import viewitems
 from dog_tags_common.components_config import componentConfigAdapter
 from dog_tags_common.config.common import NO_PROGRESS, DEFAULT_GRADE
 from dog_tags_common.player_dog_tag import PlayerDogTag, DogTagComponent
@@ -53,7 +55,7 @@ class ProgressStorage(Storage):
         return {}
 
     def getAllItems(self):
-        for compId, progress in self._section.iteritems():
+        for compId, progress in viewitems(self._section):
             yield (
              compId, ProgressRecord(*progress))
 

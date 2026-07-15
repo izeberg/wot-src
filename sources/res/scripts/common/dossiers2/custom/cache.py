@@ -1,3 +1,6 @@
+from __future__ import absolute_import
+from future.utils import viewvalues
+from past.builtins import xrange
 import nations
 from items import vehicles
 from collector_vehicle import CollectorVehicleConsts
@@ -34,7 +37,7 @@ def buildCache():
     for nationIdx in xrange(len(nations.NAMES)):
         nationList = vehicles.g_list.getList(nationIdx)
         vehiclesInNationTree = set()
-        for vehDescr in nationList.itervalues():
+        for vehDescr in viewvalues(nationList):
             if EXCLUDE_VEHICLE_BY_TAGS.intersection(vehDescr.tags):
                 continue
             vehiclesNameToDescr[vehDescr.name] = vehDescr.compactDescr

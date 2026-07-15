@@ -1,4 +1,7 @@
-import functools, typing, Math, nations
+from __future__ import absolute_import
+import functools, typing
+from future.utils import viewvalues
+import Math, nations
 from constants import SHELL_TYPES, ATTACK_REASON, SHELL_MECHANICS_TYPE, INFINITE_SHELL_TAG, RandomizationType, FORCE_FINITE_SHELL_TAG, SHELL_TYPES_INDICES
 from items import ITEM_TYPES, ITEM_TYPE_NAMES, makeIntCompactDescrByID
 from items.basic_item import BasicItem
@@ -8,6 +11,7 @@ from items.components import gun_components
 from items.components import shared_components
 from items.components import shell_components
 from items.components import sound_components
+from py2to3.patched_future import with_metaclass
 from soft_exception import SoftException
 from wrapped_reflection_framework import ReflectionMetaclass
 from typing import TYPE_CHECKING, Tuple, Sequence, Dict, NamedTuple, Optional, Union, Type, List
@@ -79,11 +83,10 @@ class VehicleItem(BasicItem):
 
 
 @add_shallow_copy('unlocks')
-class InstallableItem(VehicleItem):
+class InstallableItem(with_metaclass(ReflectionMetaclass, VehicleItem)):
     __slots__ = ('weight', 'modelsSets', 'models', 'materials', 'hitTesterManager',
                  'unlocks', 'armorHomogenization', 'camouflage', 'healthParams',
                  'sounds', 'emblemSlots', 'slotsAnchors')
-    __metaclass__ = ReflectionMetaclass
 
     def __init__(self, typeID, componentID, componentName, compactDescr, level=1):
         super(InstallableItem, self).__init__(typeID, componentID, componentName, compactDescr, level=level, status=VEHICLE_ITEM_STATUS.EMPTY)
@@ -147,8 +150,7 @@ class InstallableItem(VehicleItem):
 
 
 @add_shallow_copy()
-class Chassis(InstallableItem):
-    __metaclass__ = ReflectionMetaclass
+class Chassis(with_metaclass(ReflectionMetaclass, InstallableItem)):
     __slots__ = ('hullPosition', 'topRightCarryingPoint', 'navmeshGirth', 'minPlaneNormalY',
                  'specificFriction', 'rotationSpeed', 'rotationSpeedLimit', 'rotationIsAroundCenter',
                  'shotDispersionFactors', 'terrainResistance', 'bulkHealthFactor',
@@ -213,7 +215,7 @@ class Chassis(InstallableItem):
             else:
                 prevLeftMatParam = ''
                 if self.tracks is not None:
-                    for trackPair in self.tracks.trackPairs.itervalues():
+                    for trackPair in viewvalues(self.tracks.trackPairs):
                         if prevLeftMatParam and trackPair.leftMaterial != prevLeftMatParam:
                             self._chassisType = CHASSIS_ITEM_TYPE.SEPARATE
                             return self._chassisType
@@ -264,8 +266,7 @@ class Radio(InstallableItem):
 
 
 @add_shallow_copy()
-class Turret(InstallableItem):
-    __metaclass__ = ReflectionMetaclass
+class Turret(with_metaclass(ReflectionMetaclass, InstallableItem)):
     __slots__ = ('gunPosition', 'gunJointPitch', 'rotationSpeed', 'turretRotatorHealth',
                  'surveyingDeviceHealth', 'invisibilityFactor', 'primaryArmor', 'ceilless',
                  'showEmblemsOnGun', 'guns', 'secondaryGuns', 'turretRotatorSoundManual',
@@ -305,8 +306,7 @@ class Turret(InstallableItem):
 
 
 @add_shallow_copy('__weakref__')
-class Gun(InstallableItem):
-    __metaclass__ = ReflectionMetaclass
+class Gun(with_metaclass(ReflectionMetaclass, InstallableItem)):
     __slots__ = ('rotationSpeed', 'reloadTime', 'aimingTime', 'maxAmmo', 'invisibilityFactorAtShot',
                  'effectsCaliber', 'effects', 'reloadEffect', 'impulse', 'recoil',
                  'animateEmblemSlots', 'shotOffset', 'multiGunState', 'turretYawLimits',
@@ -383,8 +383,7 @@ class Gun(InstallableItem):
 
 
 @add_shallow_copy('variantName')
-class Hull(BasicItem):
-    __metaclass__ = ReflectionMetaclass
+class Hull(with_metaclass(ReflectionMetaclass, BasicItem)):
     __slots__ = ('variantName', 'hitTesterManager', 'materials', 'weight', 'maxHealth',
                  'ammoBayHealth', 'armorHomogenization', 'turretPositions', 'turretPitches',
                  'turretHardPoints', 'variantMatch', 'fakeTurrets', 'emblemSlots',

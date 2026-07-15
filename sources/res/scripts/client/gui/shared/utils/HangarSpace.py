@@ -1,5 +1,6 @@
+from __future__ import absolute_import
 import weakref
-from Queue import Queue
+from queue import Queue
 from functools import wraps, partial
 import BigWorld, Math, CGF, Event, Keys, ResMgr, constants
 from debug_utils import LOG_DEBUG
@@ -26,7 +27,7 @@ from gui import GUI_CTRL_MODE_FLAG as _CTRL_FLAG
 from gui.hangar_cameras.hangar_camera_common import CameraMovementStates
 from uilogging.performance.hangar.loggers import HangarMetricsLogger
 from uilogging.performance.battle.loggers import BattleMetricsLogger
-from cgf_components.hangar_camera_manager import HangarCameraManager
+from cgf_components.hangar_camera_manager import HangarCameraSystem
 _Q_CHECK_DELAY = 0.0
 
 class _execute_after_hangar_space_inited(object):
@@ -129,10 +130,10 @@ class HangarVideoCameraController(object):
             self.__setEnabled(False)
             return
         else:
-            cameraManager = CGF.getManager(self.hangarSpace.spaceID, HangarCameraManager)
+            cameraManager = CGF.getSystem(self.hangarSpace.spaceID, HangarCameraSystem)
             if cameraManager:
                 self.__lastCameraName = cameraManager.getCurrentCameraName()
-                cameraManager.deactivate()
+                cameraManager.onMappingUnloaded()
             self.__videoCamera.enable()
             self.appLoader.detachCursor(app_settings.APP_NAME_SPACE.SF_LOBBY)
             BigWorld.player().objectsSelectionEnabled(False)
@@ -141,9 +142,9 @@ class HangarVideoCameraController(object):
 
     def __disableVideoCamera(self):
         self.__videoCamera.disable()
-        cameraManager = CGF.getManager(self.hangarSpace.spaceID, HangarCameraManager)
+        cameraManager = CGF.getSystem(self.hangarSpace.spaceID, HangarCameraSystem)
         if cameraManager:
-            cameraManager.activate()
+            cameraManager.onMappingLoaded()
             cameraManager.switchByCameraName(self.__lastCameraName)
         self.appLoader.attachCursor(app_settings.APP_NAME_SPACE.SF_LOBBY, _CTRL_FLAG.GUI_ENABLED)
         BigWorld.player().objectsSelectionEnabled(True)
@@ -413,9 +414,9 @@ class HangarSpace(IHangarSpace):
         if self.__inited:
             self.__space.updateVehicleCustomization(outfit)
 
-    def getCentralPointForArea(self, areaId):
+    def getCentralPointForArea(self, areaID):
         if self.__inited:
-            return self.__space.getCentralPointForArea(areaId)
+            return self.__space.getCentralPointForArea(areaID)
         return Math.Vector3(0.0)
 
     @g_execute_after_hangar_space_inited

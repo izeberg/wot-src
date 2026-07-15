@@ -307,6 +307,25 @@ package net.wg.gui.battle.components.stats.playersPanel.list
          this.deadBg.mouseEnabled = this.deadBg.mouseChildren = false;
       }
       
+      protected function validateMute() : void
+      {
+         this.mute.visible = this.isMute;
+         this.speakAnimation.mute = this.isMute;
+         if(!this.isMute && this._isSpeaking)
+         {
+            this.speakAnimation.speaking = true;
+         }
+         if(this.disableCommunication)
+         {
+            this.disableCommunication.visible = this._isIgnoredTmp;
+         }
+      }
+      
+      protected function validateSpeaking() : void
+      {
+         this.speakAnimation.speaking = this._isSpeaking;
+      }
+      
       override protected function draw() : void
       {
          super.draw();
@@ -332,20 +351,11 @@ package net.wg.gui.battle.components.stats.playersPanel.list
          }
          if(isInvalid(PlayersPanelInvalidationType.MUTE))
          {
-            this.mute.visible = this.isMute;
-            this.speakAnimation.mute = this.isMute;
-            if(!this.isMute && this._isSpeaking)
-            {
-               this.speakAnimation.speaking = true;
-            }
-            if(this.disableCommunication)
-            {
-               this.disableCommunication.visible = this._isIgnoredTmp;
-            }
+            this.validateMute();
          }
          if(!this.isMute && isInvalid(PlayersPanelInvalidationType.IS_SPEAKING))
          {
-            this.speakAnimation.speaking = this._isSpeaking;
+            this.validateSpeaking();
          }
          if(isInvalid(PlayersPanelInvalidationType.SELECTED))
          {

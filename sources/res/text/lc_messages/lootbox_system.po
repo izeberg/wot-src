@@ -14,12 +14,6 @@ msgstr ""
 msgid "#PluralForms"
 msgstr "nplurals=2; plural=(n != 1);"
 
-msgid "autoOpenView/boxCount"
-msgid_plural "plural/autoOpenView/boxCount"
-msgstr[0] "%(count) remaining box"
-msgstr[1] "%(count) remaining boxes"
-msgstr[2] "%(count) remaining boxes"
-
 msgid "autoOpenView/rewardGroups/crewBooksAndCrew"
 msgstr "Crew and Training"
 
@@ -35,17 +29,14 @@ msgstr "Other"
 msgid "autoOpenView/rewardGroups/vehicles"
 msgstr "Vehicles"
 
-msgid "autoOpenView/subTitle"
-msgstr "We opened %(boxCount) for you"
-
 msgid "autoOpenView/submitButtonText"
 msgstr "Affirmative!"
 
 msgid "autoOpenView/title"
-msgstr "YOU HAVE RECEIVED"
+msgstr "RECEIVED REWARDS"
 
 msgid "awardViews/footer/backButton/"
-msgstr "Back to Boxes"
+msgstr "Affirmative!"
 
 msgid "bonuses/description/battle_booster"
 msgstr "Directive"
@@ -76,20 +67,15 @@ msgstr "Battle Pass Token"
 
 msgid "boxTooltip/description/text/default"
 msgstr ""
-"When opened, these boxes may grant you Tier VIII–IX Premium vehicles, "
-"customization elements, equipment, gold, bonds, Crew Books, and other "
-"valuable rewards."
+"When opened it may drop vehicles, economy resources, and other valuable items.\n"
+"Boxes are available in the in-game Store."
 
 msgid "boxTooltip/guaranteed/text/default"
-msgstr "Open %(count) more until Guaranteed Reward"
+msgstr ""
+"openings left until the guaranteed reward, if it does not drop earlier."
 
 msgid "boxTooltip/howGet/text/default"
-msgstr ""
-"Tactical Boxes can be purchased in the in-game Store or Premium Shop, as "
-"well as received when opening boxes of any other kind."
-
-msgid "boxTooltip/howGet/title"
-msgstr "How to Receive"
+msgstr "Boxes are available in the in-game Store."
 
 msgid "common/backButton"
 msgstr "BACK"
@@ -107,13 +93,13 @@ msgid "common/footer/checkbox"
 msgstr "Opening Animation"
 
 msgid "common/getButton/lowerCase"
-msgstr "Get Boxes"
+msgstr "Get more"
 
 msgid "common/getButton/upperCase"
-msgstr "GET BOXES"
+msgstr "GET MORE"
 
 msgid "common/infoButton"
-msgstr "WHAT'S INSIDE?"
+msgstr "What's inside?"
 
 msgid "common/loader"
 msgstr "Box opening..."
@@ -133,28 +119,23 @@ msgstr[0] "day"
 msgstr[1] "days"
 msgstr[2] "days"
 
+msgid "common/selectTooltip"
+msgstr "Not enough boxes to open {{count}} at once"
+
 msgid "common/statistics/emptyHeader"
 msgstr "Open boxes to view statistics."
 
 msgid "common/statistics/header"
 msgstr "Boxes opened: %(count)"
 
-msgid "common/statistics/tooltip/body"
-msgstr ""
-"Here you can view the items you received from boxes during the event. You "
-"can manually reset these statistics at any time."
-
-msgid "common/statistics/tooltip/title"
-msgstr "Opening statistics"
-
 msgid "common/statsButton"
-msgstr "Stats"
+msgstr "Statistics"
 
 msgid "confirmResetLootBoxStatistics/cancel"
 msgstr "Cancel"
 
 msgid "confirmResetLootBoxStatistics/description"
-msgstr "All information on opened boxes will be deleted."
+msgstr "Your reward history will be deleted."
 
 msgid "confirmResetLootBoxStatistics/submit"
 msgstr "Reset"
@@ -173,25 +154,19 @@ msgstr "×999+"
 
 msgid "entryPoint/tooltip/description"
 msgstr ""
-"These are special boxes containing new and unique items, including Premium vehicles, 2D styles, days of WoT Premium Account, and more.\n"
-"You can purchase boxes for credits in the in-game Store."
-
-msgid "entryPoint/tooltip/lessThanMinute"
-msgstr "less than a minute"
+"These are special boxes containing new and unique items. They can be "
+"obtained from the in-game Store."
 
 msgid "entryPoint/tooltip/timerText"
-msgstr "Remaining:"
-
-msgid "entryPoint/tooltip/title"
-msgstr "Tactical Boxes and How to Receive Them"
+msgstr "The event will end in"
 
 msgid "entryPoint/tooltip/warningDescription"
 msgstr ""
-"Boxes cannot currently be opened or purchased due to technical reasons. We "
-"apologize for the temporary inconvenience."
+"We ran into a technical issue and have temporarily paused the event while we"
+" fix it."
 
 msgid "entryPoint/tooltip/warningTitle"
-msgstr "Tactical Boxes Temporarily Unavailable"
+msgstr "Temporarily unavailable"
 
 msgid "eventName/lowerCase"
 msgstr "Battlefield Supplies"
@@ -199,17 +174,36 @@ msgstr "Battlefield Supplies"
 msgid "eventName/upperCase"
 msgstr "BATTLEFIELD SUPPLIES"
 
-msgid "guaranteedTitle/nextBox"
-msgstr "Guaranteed Reward in the next box!"
+msgid "guaranteed/tooltip/count/first"
+msgstr "%(count)st"
+
+msgid "guaranteed/tooltip/count/other"
+msgstr "%(count)th"
+
+msgid "guaranteed/tooltip/count/second"
+msgstr "%(count)nd"
+
+msgid "guaranteed/tooltip/count/third"
+msgstr "%(count)rd"
+
+msgid "guaranteed/tooltip/description/count/"
+msgstr "every %(count) opening"
+
+msgid "guaranteed/tooltip/description/item/"
+msgstr "vehicle"
+
+msgid "guaranteed/tooltip/description0/"
+msgstr ""
+"A %(item) is guaranteed %(count). The counter resets if one drops earlier."
+
+msgid "guaranteed/tooltip/description1/"
+msgstr "If all vehicles are already owned, you receive a gold instead."
 
 msgid "guaranteedTitle/text"
-msgstr "Maximum boxes before a Guaranteed Reward: %(count)"
+msgstr "%(name) in %(count) openings"
 
-msgid "hasBoxesView/guaranteedTitle/tabText"
-msgid_plural "plural/hasBoxesView/guaranteedTitle/tabText"
-msgstr[0] "%(count) opening left until Guaranteed Reward"
-msgstr[1] "%(count) openings left until Guaranteed Reward"
-msgstr[2] "%(count) openings left until Guaranteed Reward"
+msgid "guaranteedTitle/textName"
+msgstr "Guaranteed Reward"
 
 msgid "hasBoxesView/openButtonText"
 msgstr "Open"
@@ -219,6 +213,9 @@ msgstr "<br/><br/>"
 
 msgid "helpers/lootBoxBonus"
 msgstr "%(boxName)s: %(count)s"
+
+msgid "homeView/subtitle"
+msgstr "The event will end in %(time)"
 
 msgid "infoPage/footer/description/autoOpen"
 msgstr ""
@@ -236,7 +233,8 @@ msgstr ""
 "Every %(guaranteed0)s boxes are guaranteed to contain a Tier VIII–X vehicle."
 " If you open them without one dropping such a vehicle, then a Tier VIII–X "
 "vehicle you do not already own will drop when you open the "
-"%(guaranteed0)s&zwnbsp;th box. When it does, the counter is reset."
+"%(guaranteed0)s&zwnbsp;th box (depending on the box type). When it does, the"
+" counter is reset."
 
 msgid "infoPage/footer/title/autoOpen"
 msgstr "Auto Open"
@@ -247,19 +245,20 @@ msgstr "Compensation"
 msgid "infoPage/footer/title/guaranteed"
 msgstr "Guaranteed Reward"
 
-msgid "infoPage/header/description"
-msgstr ""
-"Open the box for the chance to receive valuable in-game items! See more "
-"details below."
-
 msgid "infoPage/header/lootListLink"
 msgstr "View list of items on the game portal"
 
-msgid "infoPage/header/subtitle"
-msgstr "From %(from) through %(to)"
+msgid "infoPage/header/probability/description"
+msgstr "Drop probability"
 
-msgid "infoPage/header/videoButtonText"
-msgstr "Watch Video"
+msgid "infoPage/header/probability/title"
+msgstr "Group"
+
+msgid "infoPage/header/rewards/description"
+msgstr "You will receive one of these rewards from each group obtained"
+
+msgid "infoPage/header/rewards/title"
+msgstr "Rewards"
 
 msgid "infoPage/rewards/divider"
 msgstr "|"
@@ -268,39 +267,40 @@ msgid "infoPage/rewards/percent"
 msgstr "%"
 
 msgid "multipleRewardView/footer/openNextButton/"
-msgstr "Open %(count) More"
+msgstr "Open More"
 
 msgid "multipleRewardView/header/subTitle/"
 msgstr "From the %(name) (%(boxesCount) boxes opened)"
 
 msgid "multipleRewardView/header/title/"
-msgstr "YOU HAVE RECEIVED"
+msgstr "RECEIVED REWARDS"
 
 msgid "noBoxesView/description/"
-msgstr ""
-"You do not have any boxes. You can get them\n"
-"in the in-game Store or the Premium Shop."
+msgstr "Boxes are available in the in-game Store"
+
+msgid "noBoxesView/getBoxes/"
+msgstr "To the Store"
+
+msgid "noBoxesView/goToButton/"
+msgstr "To Available Boxes"
 
 msgid "preview/backLabel"
 msgstr "TO BOXES"
 
 msgid "quantityTitle/boxesAvailable"
-msgstr "Boxes available: %(boxesCount)"
+msgstr "Available: %(boxesCount)"
 
 msgid "quantityTitle/noBoxes"
-msgstr "No boxes available"
+msgstr "No more boxes"
 
 msgid "rareRewardOverlay/rewardDescription/button/text"
 msgstr "Continue"
 
 msgid "rareRewardOverlay/rewardDescription/style/description/text"
-msgstr "for the %(vehicleInfo)"
+msgstr "for %(vehicleInfo)"
 
 msgid "rareRewardOverlay/rewardDescription/style/text"
 msgstr "%(style) 3D style"
-
-msgid "rareRewardOverlay/rewardDescription/title/text"
-msgstr "Here’s your"
 
 msgid "serviceChannelMessages/finish/header"
 msgstr "The «%(eventName)s» event has ended"
@@ -320,34 +320,34 @@ msgid "serviceChannelMessages/lootBoxesAutoOpen/text"
 msgstr "We have added the items you did not receive during the event."
 
 msgid "serviceChannelMessages/lootBoxesDisabled/header"
-msgstr "Box Opening Suspended"
+msgstr "%(eventName)s"
 
 msgid "serviceChannelMessages/lootBoxesDisabled/text"
-msgstr "Operations with boxes are temporarily unavailable due to maintenance."
+msgstr "The event is temporarily unavailable due to maintenance."
 
 msgid "serviceChannelMessages/lootBoxesEnabled/header"
-msgstr "Box Opening Available"
+msgstr "%(eventName)s"
 
 msgid "serviceChannelMessages/lootBoxesEnabled/text"
-msgstr "Operations with boxes are available again. Open them!"
+msgstr "The event is available again. We apologize for the inconvenience."
 
 msgid "serviceChannelMessages/multipleOpen"
-msgstr "Boxes Opened!"
+msgstr "%(boxName)s (%(count)s pcs)"
 
 msgid "serviceChannelMessages/open"
-msgstr "%(boxName)s Opened!"
+msgstr "%(boxName)s"
+
+msgid "serviceChannelMessages/received"
+msgstr "Rewards received:"
 
 msgid "serviceChannelMessages/server_error"
-msgstr "Box Not Opened"
+msgstr "Error"
 
 msgid "serviceChannelMessages/server_error/COOLDOWN"
 msgstr "Please wait until the previous operation is complete."
 
 msgid "serviceChannelMessages/server_error/DISABLED"
 msgstr "Action is temporarily unavailable. Try again later."
-
-msgid "serviceChannelMessages/server_error/FAILURE"
-msgstr "Opening Error"
 
 msgid "serviceChannelMessages/start/button"
 msgstr "Go to Event"
@@ -358,58 +358,17 @@ msgstr "The «%(eventName)s» event has started"
 msgid "serviceChannelMessages/start/text"
 msgstr "Only until %(date)s: Premium vehicles and valuable in-game assets!"
 
-msgid "serviceChannelMessages/statisticReset/server_error/header"
-msgstr "Error"
-
 msgid "serviceChannelMessages/statisticReset/server_error/text"
 msgstr "Unable to reset statistics. Please try again later."
 
 msgid "singleRewardView/extraReward/text/"
-msgstr "And also:"
+msgstr "And also"
 
 msgid "singleRewardView/footer/openNextButton/"
-msgstr "Open Next"
-
-msgid "singleRewardView/header/subTitle/"
-msgstr "From the %(name)"
+msgstr "Open More"
 
 msgid "singleRewardView/header/title/"
-msgstr "YOU HAVE RECEIVED"
-
-msgid "singleRewardView/tooltip/count/first"
-msgstr "%(count)st"
-
-msgid "singleRewardView/tooltip/count/other"
-msgstr "%(count)th"
-
-msgid "singleRewardView/tooltip/count/second"
-msgstr "%(count)nd"
-
-msgid "singleRewardView/tooltip/count/third"
-msgstr "%(count)rd"
-
-msgid "singleRewardView/tooltip/description/"
-msgstr ""
-"If you already own all Tier VIII–IX vehicles from the list of possible box "
-"contents, then all subsequent vehicles you receive from boxes will be "
-"compensated in gold."
-
-msgid "singleRewardView/tooltip/label/"
-msgstr "When All Vehicles Are Received:"
-
-msgid "singleRewardView/tooltip/remainingCount"
-msgid_plural "plural/singleRewardView/tooltip/remainingCount"
-msgstr[0] "%(remainingCount) box"
-msgstr[1] "%(remainingCount) boxes"
-msgstr[2] "%(remainingCount) boxes"
-
-msgid "singleRewardView/tooltip/subtitle/"
-msgstr ""
-"The Guaranteed Reward is a vehicle from the list of possible box contents.\n"
-"If you open %(remainingCount) without one dropping such a vehicle, it will drop when you open the %(count) box. When it does, the counter is reset."
-
-msgid "singleRewardView/tooltip/title/"
-msgstr "Guaranteed Reward"
+msgstr "RECEIVED REWARDS"
 
 msgid "singleRewardView/uniqueTankman"
 msgstr "Unique crew member"
@@ -430,7 +389,7 @@ msgid "statisticsRewards/label/blueprint_tube"
 msgstr "Blueprint Fragments"
 
 msgid "statisticsRewards/label/brochure"
-msgstr "Booklet"
+msgstr "Booklets"
 
 msgid "statisticsRewards/label/brochure_tooltip"
 msgstr "Training Booklets"
@@ -442,7 +401,7 @@ msgid "statisticsRewards/label/credits"
 msgstr "Credits"
 
 msgid "statisticsRewards/label/crewBook"
-msgstr "Manual"
+msgstr "Manuals"
 
 msgid "statisticsRewards/label/crewBook_tooltip"
 msgstr "Training Manuals"
@@ -472,7 +431,7 @@ msgid "statisticsRewards/label/gold"
 msgstr "Gold"
 
 msgid "statisticsRewards/label/guide"
-msgstr "Guide"
+msgstr "Guides"
 
 msgid "statisticsRewards/label/guide_tooltip"
 msgstr "Training Guides"
@@ -493,7 +452,7 @@ msgid "statisticsRewards/label/rations"
 msgstr "Rations"
 
 msgid "statisticsRewards/label/recertificationForm"
-msgstr "Retraining Order"
+msgstr "Retraining Orders"
 
 msgid "statisticsRewards/label/style"
 msgstr "2D Styles"
@@ -511,7 +470,7 @@ msgid "statisticsRewards/label/vehicles"
 msgstr "Vehicles"
 
 msgid "statisticsRewards/resetButton/text"
-msgstr "Reset Stats"
+msgstr "Reset Statistics"
 
 msgid "statisticsRewards/resetButton/tooltipText"
 msgstr "Click to reset all statistics."

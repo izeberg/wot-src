@@ -1,8 +1,6 @@
+from __future__ import absolute_import
 import items, nations
-from constants import CURRENT_REALM, CURRENT_REALM_IS_REGIONAL
-from items import ITEM_TYPES
 from items.components.crew_skins_constants import CrewSkinType, TANKMAN_SEX, CREW_SKIN_PROPERTIES_MASKS
-from soft_exception import SoftException
 
 class CrewSkin(object):
     itemType = CrewSkinType.CREW_SKIN

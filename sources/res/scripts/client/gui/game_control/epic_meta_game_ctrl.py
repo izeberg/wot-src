@@ -1,7 +1,11 @@
+from __future__ import absolute_import
 import logging
 from bisect import insort_right
 from operator import itemgetter
-import typing, BigWorld, Event, adisp, nations
+import typing
+from builtins import range
+from future.utils import iteritems, viewitems, viewvalues
+import BigWorld, Event, adisp, nations
 from CurrentVehicle import g_currentVehicle
 from account_helpers.AccountSettings import AccountSettings, GUI_START_BEHAVIOR, EPIC_LAST_CYCLE_ID
 from account_helpers.client_epic_meta_game import skipResponse
@@ -41,7 +45,7 @@ from skeletons.gui.lobby_context import ILobbyContext
 from skeletons.gui.offers import IOffersDataProvider
 from skeletons.gui.server_events import IEventsCache
 from skeletons.gui.shared import IItemsCache
-from season_provider import SeasonProvider
+from gui.game_control.season_provider import SeasonProvider
 if typing.TYPE_CHECKING:
     from gui.server_events.event_items import Quest
     from helpers.server_settings import EpicGameConfig
@@ -124,7 +128,7 @@ class EpicBattleMetaGameController(Notifiable, SeasonProvider, IEpicBattleMetaGa
         self.__skillData = {}
         self.__playerMaxLevel = 0
         self.__levelProgress = tuple()
-        self.__abilityPointsForLevel = list()
+        self.__abilityPointsForLevel = []
         self.__performanceGroup = None
         self.__isEpicSoundMode = False
         self.__showedResultsForArenas = []
@@ -148,7 +152,7 @@ class EpicBattleMetaGameController(Notifiable, SeasonProvider, IEpicBattleMetaGa
         self.stopGlobalListening()
         super(EpicBattleMetaGameController, self).fini()
 
-    def onLobbyInited(self, ctx):
+    def onLobbyInited(self, event):
         self.__lobbyContext.getServerSettings().onServerSettingsChange += self.__updateEpicMetaGameSettings
         g_currentVehicle.onChanged += self.__invalidateBattleAbilities
         self.__itemsCache.onSyncCompleted += self.__onSyncCompleted
@@ -297,7 +301,7 @@ class EpicBattleMetaGameController(Notifiable, SeasonProvider, IEpicBattleMetaGa
         return self.__levelProgress[level]
 
     def getPointsForLevel(self, level):
-        return sum(self.__levelProgress[level] for level in xrange(level - 1))
+        return sum(self.__levelProgress[level] for level in range(level - 1))
 
     def getLevelProgress(self):
         return self.__levelProgress
@@ -318,7 +322,7 @@ class EpicBattleMetaGameController(Notifiable, SeasonProvider, IEpicBattleMetaGa
 
     def getGroupedSkills(self):
         result = {category:[] for category in CATEGORIES_ORDER}
-        for _, skillData in self.getAllSkillsInformation().iteritems():
+        for skillData in viewvalues(self.getAllSkillsInformation()):
             result[skillData.category].append(skillData)
 
         return [ (category, sorted(result[category], key=lambda vo: vo.price)) for category in CATEGORIES_ORDER ]
@@ -334,12 +338,12 @@ class EpicBattleMetaGameController(Notifiable, SeasonProvider, IEpicBattleMetaGa
 
     def getPlayerRanksInfo(self):
         famePtsByRank = self.__metaSettings.metaLevel.get('famePtsByRank', {})
-        return {rankLvl:(extraFamePts, getRankSettings().bonus.factor100ByRank[rankLvl]) for rankLvl, extraFamePts in famePtsByRank.iteritems()}
+        return {rankLvl:(extraFamePts, getRankSettings().bonus.factor100ByRank[rankLvl]) for rankLvl, extraFamePts in viewitems(famePtsByRank)}
 
     def getPlayerRanksWithBonusInfo(self):
         famePtsByRank = self.__metaSettings.metaLevel.get('famePtsByRank', {})
         fameBonusByRank = self.__metaSettings.metaLevel.get('fameBonusByRank', {})
-        return {rankLvl:(extraFamePts, getRankSettings().bonus.factor100ByRank[rankLvl], fameBonusByRank[rankLvl]) for rankLvl, extraFamePts in famePtsByRank.iteritems()}
+        return {rankLvl:(extraFamePts, getRankSettings().bonus.factor100ByRank[rankLvl], fameBonusByRank[rankLvl]) for rankLvl, extraFamePts in viewitems(famePtsByRank)}
 
     def isRandomReservesModeEnabled(self):
         return bool(self.__metaSettings.randomReservesMode)
@@ -427,10 +431,10 @@ class EpicBattleMetaGameController(Notifiable, SeasonProvider, IEpicBattleMetaGa
         return self.getCurrentSeason() or self.getNextSeason()
 
     def getAllUnlockedSkillInfoBySkillId(self):
-        return {skillID:skill.getSkillInfo() for skillID, skill in self.__skillData.iteritems() if skill.isActivated if skill.isActivated}
+        return {skillID:skill.getSkillInfo() for skillID, skill in viewitems(self.__skillData) if skill.isActivated if skill.isActivated}
 
     def getUnlockedAbilityIds(self):
-        return (skill.getSkillInfo().eqID for skill in self.getAllSkillsInformation().itervalues() if skill.isActivated and skill.getSkillInfo() is not None)
+        return (skill.getSkillInfo().eqID for skill in viewvalues(self.getAllSkillsInformation()) if skill.isActivated and skill.getSkillInfo() is not None)
 
     def getStoredEpicDiscount(self):
         return BigWorld.player().FLAccountComponent.getStoredDiscount()
@@ -522,10 +526,10 @@ class EpicBattleMetaGameController(Notifiable, SeasonProvider, IEpicBattleMetaGa
     def isNeedToTakeReward(self):
         currentLevel, _ = self.getPlayerLevelInfo()
         rewardsData = self.getAllLevelRewards()
-        for bonuses in (rewards.getBonuses() for level, rewards in rewardsData.iteritems() if level <= currentLevel):
+        for bonuses in (rewards.getBonuses() for level, rewards in viewitems(rewardsData) if level <= currentLevel):
             for bonus in bonuses:
                 if bonus.getName() == EPIC_SELECT_BONUS_NAME:
-                    for tokenID in bonus.getTokens().iterkeys():
+                    for tokenID in bonus.getTokens():
                         if self.__itemsCache.items.tokens.getToken(tokenID):
                             return True
 
@@ -533,7 +537,7 @@ class EpicBattleMetaGameController(Notifiable, SeasonProvider, IEpicBattleMetaGa
 
     def getNotChosenRewardTokens(self):
         tokens = []
-        for token in self.__itemsCache.items.tokens.getTokens().iterkeys():
+        for token in self.__itemsCache.items.tokens.getTokens():
             if not token.startswith(EPIC_CHOICE_REWARD_OFFER_GIFT_TOKENS):
                 continue
             if not self.__offersProvider.getOfferByToken(token.replace('_gift', '')):
@@ -591,7 +595,7 @@ class EpicBattleMetaGameController(Notifiable, SeasonProvider, IEpicBattleMetaGa
             return
 
     def hasAnyOfferGiftToken(self):
-        return any(token.startswith(EPIC_CHOICE_REWARD_OFFER_GIFT_TOKENS) for token in self.__itemsCache.items.tokens.getTokens().iterkeys())
+        return any(token.startswith(EPIC_CHOICE_REWARD_OFFER_GIFT_TOKENS) for token in self.__itemsCache.items.tokens.getTokens())
 
     def replaceOfferByGift(self, bonuses):
         result = []
@@ -620,10 +624,10 @@ class EpicBattleMetaGameController(Notifiable, SeasonProvider, IEpicBattleMetaGa
             bonuses.append(FrontlineSkillBonus(skillPoints))
 
     def __getQuests(self):
-        quests = dict()
+        quests = {}
         levels = []
         allQuests = self.__eventsCache.getAllQuests()
-        for questKey, questData in allQuests.iteritems():
+        for questKey, questData in viewitems(allQuests):
             if LEVELUP_TOKEN_TEMPLATE in questKey:
                 _, _, questNum = questKey.partition(LEVELUP_TOKEN_TEMPLATE)
                 if questNum:
@@ -644,12 +648,12 @@ class EpicBattleMetaGameController(Notifiable, SeasonProvider, IEpicBattleMetaGa
     def __getReceivedGift(self, bonus):
         if bonus.getName() == EPIC_SELECT_BONUS_NAME:
             bonus.updateContext({'isReceived': False})
-            for tokenID in bonus.getTokens().iterkeys():
+            for tokenID in bonus.getTokens():
                 offer = self.__offersProvider.getOfferByToken(tokenID.replace('_gift', ''))
                 if offer:
                     receivedGifts = self.__offersProvider.getReceivedGifts(offer.id)
                     if receivedGifts:
-                        for giftId, count in receivedGifts.iteritems():
+                        for giftId, count in iteritems(receivedGifts):
                             if count > 0:
                                 return offer.getGift(giftId)
 
@@ -672,7 +676,7 @@ class EpicBattleMetaGameController(Notifiable, SeasonProvider, IEpicBattleMetaGa
         maxSkillLvl = self.__metaSettings.maxCombatReserveLevel
         eqs = vehicles.g_cache.equipments()
         if skills:
-            for key, value in skills.iteritems():
+            for key, value in iteritems(skills):
                 self.__skillData[key] = EpicMetaGameSkill(key, maxSkillLvl, value.get('tags'), value.get('price', 0))
                 lvls = value['levels']
                 lvlAmount = len(lvls)
@@ -797,17 +801,17 @@ class EpicBattleMetaGameController(Notifiable, SeasonProvider, IEpicBattleMetaGa
         stats = BigWorld.wg_getClientStatistics()
         stats['graphicsEngine'] = getGraphicsEngineValue()
         self.__performanceGroup = EPIC_PERF_GROUP.LOW_RISK
-        for groupName, conditions in PERFORMANCE_GROUP_LIMITS.iteritems():
+        for groupName, conditions in viewitems(PERFORMANCE_GROUP_LIMITS):
             for currentLimit in conditions:
                 condValid = True
                 systemStats = currentLimit.get(EPIC_META_GAME_LIMIT_TYPE.SYSTEM_DATA, {})
-                for key, limit in systemStats.iteritems():
+                for key, limit in viewitems(systemStats):
                     currValue = stats.get(key, None)
                     if currValue is None or currValue != limit:
                         condValid = False
 
                 hardwareParams = currentLimit.get(EPIC_META_GAME_LIMIT_TYPE.HARDWARE_PARAMS, {})
-                for key, limit in hardwareParams.iteritems():
+                for key, limit in viewitems(hardwareParams):
                     currValue = BigWorld.getAutoDetectGraphicsSettingsScore(key)
                     if currValue >= limit:
                         condValid = False
@@ -850,5 +854,5 @@ class EpicBattleMetaGameController(Notifiable, SeasonProvider, IEpicBattleMetaGa
         return self.__lobbyContext.getServerSettings().epicMetaGame
 
     def __onTokensUpdate(self, diff):
-        if any(key.startswith(EPIC_CHOICE_REWARD_OFFER_GIFT_TOKENS) for key in diff.keys()):
+        if any(key.startswith(EPIC_CHOICE_REWARD_OFFER_GIFT_TOKENS) for key in diff):
             pass

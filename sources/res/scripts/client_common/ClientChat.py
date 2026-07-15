@@ -1,10 +1,12 @@
-import cPickle, zlib, time
+from __future__ import absolute_import
+import zlib, time
 from collections import deque
-from invites import INVITE_TYPES
-import helpers.time_utils as tm, BigWorld, Event, chat_shared
+from future.moves import pickle
+import BigWorld, Event, chat_shared, helpers.time_utils as tm
 from debug_utils import LOG_CURRENT_EXCEPTION, LOG_ERROR, LOG_DEBUG
 from chat_shared import CHAT_RESPONSES, CHAT_ACTIONS, CHAT_COMMANDS, parseCommandMessage, ChatCommandError, isCommandMessage, buildChatActionData, ChatError, ChatCommandInCooldown, SYS_MESSAGE_TYPE
 from ids_generators import SequenceIDGenerator
+from invites import INVITE_TYPES
 from messenger import MessengerEntry
 from constants import USER_SEARCH_MODE, IS_CLIENT
 
@@ -20,7 +22,7 @@ class ClientChat(object):
         self._idGen = SequenceIDGenerator()
 
     def acquireRequestID(self):
-        return self._idGen.next()
+        return next(self._idGen)
 
     def requestSystemChatChannels(self):
         self.__baseChatCommand(CHAT_COMMANDS.requestSystemChatChannels)
@@ -202,13 +204,13 @@ class ClientChat(object):
         failed = False
         try:
             data = zlib.decompress(data)
-            chatMessages = cPickle.loads(data)
+            chatMessages = pickle.loads(data)
         except Exception:
             LOG_CURRENT_EXCEPTION()
             failed = True
 
         if not failed:
-            chIds = sorted(chatMessages.keys(), cmp=lambda x, y: cmp(abs(x), abs(y)))
+            chIds = sorted(chatMessages.keys(), key=abs)
             for chId in chIds:
                 channelQueue = chatMessages.get(chId, deque())
                 while True:

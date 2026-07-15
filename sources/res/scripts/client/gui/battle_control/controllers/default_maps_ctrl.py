@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import Event
 from gui.battle_control import minimap_utils
 from gui.battle_control.battle_constants import BATTLE_CTRL_ID

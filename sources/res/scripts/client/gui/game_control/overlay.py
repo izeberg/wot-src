@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing, GUI
 from wg_async import wg_async, wg_await, AsyncEvent
 from frameworks.wulf import WindowLayer

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from dossiers2.common.DossierBlockBuilders import *
 from dossiers2.custom.dependencies import ACHIEVEMENT15X15_DEPENDENCIES
 from dossiers2.custom.dependencies import ACHIEVEMENT7X7_DEPENDENCIES
@@ -13,7 +14,7 @@ from dossiers2.custom.dependencies import EPIC_BATTLE_STATS_DEPENDENCIES
 from dossiers2.custom.dependencies import STEAM_ACHIEVEMENT_DEPENDENCIES
 from dossiers2.custom.dependencies import VEHICLE_ACHIEVEMENTS_DEPENDENCIES, VEHICLE_ACHIEVEMENTS_POP_UPS
 from dossiers2.custom.dependencies import CUSTOMIZATION_ACHIEVEMENTS_DEPENDENCIES, CUSTOMIZATION_ACHIEVEMENTS_POP_UPS
-from battle_statistics_layouts import *
+from dossiers2.custom.battle_statistics_layouts import *
 TOTAL_BLOCK_LAYOUT = [
  'creationTime', 'lastBattleTime', 'battleLifeTime', 'treesCut', 'mileage']
 _totalBlockBuilder = StaticSizeBlockBuilder('total', TOTAL_BLOCK_LAYOUT, TOTAL_STATS_DEPENDENCIES, [])
@@ -566,7 +567,7 @@ accountDossierLayout = (
  _comp7ArchiveManticoreBlockBuilder, _maxComp7ArchiveManticoreBlockBuilder,
  _comp7CutArchiveManticoreBlockBuilder)
 ACCOUNT_DOSSIER_BLOCKS = {b.name:b for b in accountDossierLayout}
-ACCOUNT_DOSSIER_STATIC_BLOCKS = frozenset(b.name for b in accountDossierLayout if type(b) == StaticSizeBlockBuilder)
-ACCOUNT_DOSSIER_BINARY_SET_BLOCKS = [ b.name for b in accountDossierLayout if type(b) == BinarySetDossierBlockBuilder ]
-ACCOUNT_DOSSIER_DICT_BLOCKS = [ b.name for b in accountDossierLayout if type(b) == DictBlockBuilder ]
-ACCOUNT_DOSSIER_LIST_BLOCKS = [ b.name for b in accountDossierLayout if type(b) == ListBlockBuilder ]
+ACCOUNT_DOSSIER_STATIC_BLOCKS = frozenset(b.name for b in accountDossierLayout if isinstance(b, StaticSizeBlockBuilder))
+ACCOUNT_DOSSIER_BINARY_SET_BLOCKS = [ b.name for b in accountDossierLayout if isinstance(b, BinarySetDossierBlockBuilder) ]
+ACCOUNT_DOSSIER_DICT_BLOCKS = [ b.name for b in accountDossierLayout if isinstance(b, DictBlockBuilder) ]
+ACCOUNT_DOSSIER_LIST_BLOCKS = [ b.name for b in accountDossierLayout if isinstance(b, ListBlockBuilder) ]

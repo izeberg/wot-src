@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from Event import Event
 from skeletons.gui.shared.utils import IItemsRequester, requesters
 

@@ -1,5 +1,6 @@
+from __future__ import absolute_import
 import typing
-from pet_constants import PetSynergyConsts as pc
+from pet_system_common.pet_constants import PetSynergyConsts as pc
 if typing.TYPE_CHECKING:
     from typing import Dict
 

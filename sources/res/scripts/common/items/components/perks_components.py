@@ -1,5 +1,9 @@
+from __future__ import absolute_import
 from collections import namedtuple
+from functools import reduce
 import typing
+from future.utils import viewitems
+from past.builtins import xrange
 from items.components.perks_constants import PerkMasks, PerkTags
 from soft_exception import SoftException
 PerkArgument = namedtuple('PerkArgument', ('value', 'postValues'))
@@ -9,7 +13,7 @@ def convertPerksListToDict(perksList):
 
 
 def convertPerksDictToList(perksDict):
-    return list(reduce(lambda t1, t2: t1 + t2, perksDict.iteritems()))
+    return list(reduce(lambda t1, t2: t1 + t2, viewitems(perksDict)))
 
 
 def packPerk(perkID, level):

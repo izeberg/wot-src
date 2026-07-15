@@ -1,5 +1,7 @@
-from collections import defaultdict
+from __future__ import absolute_import
 import typing
+from collections import defaultdict
+from future.utils import viewitems
 from items import tankmen, vehicles
 if typing.TYPE_CHECKING:
     from typing import Dict, List, Tuple
@@ -11,10 +13,10 @@ CREW_BOOK_XP = 250001
 GUIDE_XP = 100001
 BROCHURE_XP = 20001
 
-def findJunkTankmen(tankmenCompDescrs, vehicles=None):
+def findJunkTankmen(tankmenCompDescrs, tankmenVehicles=None):
     removeTankmenList = {}
-    for key, compDescr in tankmenCompDescrs.iteritems():
-        if vehicles is not None and key in vehicles:
+    for key, compDescr in viewitems(tankmenCompDescrs):
+        if tankmenVehicles is not None and key in tankmenVehicles:
             continue
         tankmanDescr = tankmen.TankmanDescr(compDescr)
         if isTrashTankman(tankmanDescr):
@@ -34,7 +36,7 @@ def calculateXpFromTankmen(tankmenCompDescrs):
 
 def getNationBooksFromXp(xpByNation):
     crewBooks = {}
-    for nationID, xp in xpByNation.iteritems():
+    for nationID, xp in viewitems(xpByNation):
         if not xp:
             continue
         crewBookCD = NATIONS_CREW_BOOKS[nationID]['crewBookCD']
@@ -65,7 +67,7 @@ def _savingTrashTankmanXP(tankmanDescr, cashVehicleNativeType, savingXPByNation)
         cashVehicleNativeType[typeID] = vehType
     xp = tankmanDescr.totalXP()
     if xp > 0:
-        savingXPByNation[nationID] += xp / len(vehType.crewRoles)
+        savingXPByNation[nationID] += xp // len(vehType.crewRoles)
 
 
 def isTrashTankman(tankman):

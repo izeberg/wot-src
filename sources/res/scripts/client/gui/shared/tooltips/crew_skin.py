@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from future.utils import iteritems
 from skeletons.gui.shared import IItemsCache
 from gui.shared.formatters import text_styles
 from gui.shared.tooltips import TOOLTIP_TYPE, formatters
@@ -14,7 +16,7 @@ _MAX_USERS_DISPLAYED = 10
 
 @dependency.replace_none_kwargs(itemsCache=IItemsCache)
 def _skinUsersRoleAndVehicleText(fstring, item, itemsCache=None):
-    return [ fstring.format(role=backport.text(R.strings.item_types.tankman.roles.dyn(tankman.role)()), vehicle=itemsCache.items.getItemByCD(tankman.vehicleNativeDescr.type.compactDescr).shortUserName) for invID, tankman in itemsCache.items.getTankmen().iteritems() if invID in item.getTankmenIDs()
+    return [ fstring.format(role=backport.text(R.strings.item_types.tankman.roles.dyn(tankman.role)()), vehicle=itemsCache.items.getItemByCD(tankman.vehicleNativeDescr.type.compactDescr).shortUserName) for invID, tankman in iteritems(itemsCache.items.getTankmen()) if invID in item.getTankmenIDs()
            ]
 
 

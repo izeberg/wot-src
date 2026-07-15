@@ -6,7 +6,7 @@ from gui.impl.gen import R
 from gui.impl import backport
 from last_stand.gui.ls_gui_constants import BATTLE_CTRL_ID, FEEDBACK_EVENT_ID
 from last_stand.gui.ls_vehicle_role_helper import getVehicleRole
-from last_stand_common.last_stand_constants import LS_ROLE_PREFIX, PLAYERS_TEAM
+from last_stand_common.last_stand_constants import LS_ROLE_PREFIX, PLAYERS_TEAM, LS_OBELISK_VEH_MARKER, LS_OBELISK_ACTIVE_TIME
 from LSTeamInfoStatsComponent import LSTeamInfoStatsComponent
 VEHICLE_MARKER = 'LSVehicleMarkerUI'
 
@@ -20,12 +20,14 @@ class LSVehicleMarkerPlugin(RespawnableVehicleMarkerPlugin):
         if lsBattleGuiCtrl:
             lsBattleGuiCtrl.onVehicleBuffIconAdded += self.__onVehicleBuffIconAdded
             lsBattleGuiCtrl.onVehicleInvulnerabilityChanged += self.__onVehicleInvulnerabilityChanged
+            lsBattleGuiCtrl.onClearObeliskVehicleMarker += self._onClearObeliskMarker
 
     def fini(self):
         lsBattleGuiCtrl = self.lsBattleGuiCtrl
         if lsBattleGuiCtrl:
             lsBattleGuiCtrl.onVehicleBuffIconAdded -= self.__onVehicleBuffIconAdded
             lsBattleGuiCtrl.onVehicleInvulnerabilityChanged -= self.__onVehicleInvulnerabilityChanged
+            lsBattleGuiCtrl.onClearObeliskVehicleMarker -= self._onClearObeliskMarker
         super(LSVehicleMarkerPlugin, self).fini()
 
     @property
@@ -42,6 +44,11 @@ class LSVehicleMarkerPlugin(RespawnableVehicleMarkerPlugin):
             return
         self._destroyVehicleMarker(vehID)
         return
+
+    def _getActiveCommandTime(self, action):
+        if action == LS_OBELISK_VEH_MARKER:
+            return LS_OBELISK_ACTIVE_TIME
+        return super(LSVehicleMarkerPlugin, self)._getActiveCommandTime(action)
 
     def _hideVehicleMarker(self, vehicleID):
         vInfo = self.sessionProvider.getArenaDP().getVehicleInfo(vehicleID)
@@ -100,6 +107,13 @@ class LSVehicleMarkerPlugin(RespawnableVehicleMarkerPlugin):
             self._updateMarkerState(handle, newState, False, stateText, iconAnimation, isFrequent)
         else:
             super(LSVehicleMarkerPlugin, self)._onVehicleFeedbackReceived(eventID, vehicleID, value)
+
+    def _onClearObeliskMarker(self, vehicleID):
+        if vehicleID not in self._markers:
+            return
+        marker = self._markers[vehicleID]
+        self._invokeMarker(marker.getMarkerID(), 'stopActionMarker')
+        marker.setIsActionMarkerActive(False)
 
     def __onVehicleBuffIconAdded(self, vehicleId, icon):
         marker = self._markers.get(vehicleId)

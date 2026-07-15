@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from enum import Enum
 AUTO_SHOOT_DEV_KEYS = False
 AUTO_SHOOT_DEV_BURST_CLAMP = 1.0

@@ -482,6 +482,10 @@
 				<id>If_9</id>
 			</block>
 			<block>
+				<class>StartScript</class>
+				<id>StartScript_1</id>
+			</block>
+			<block>
 				<class>SetVariable</class>
 				<id>SetVariable_8</id>
 				<buddy>Variable_8</buddy>
@@ -574,6 +578,85 @@
 				</params>
 			</block>
 			<block>
+				<class>SetVariable</class>
+				<id>SetVariable_16</id>
+				<buddy>Variable_3</buddy>
+				<params>
+					<param>
+						GameObjectT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>GetGameObject</class>
+				<id>GetGameObject_1</id>
+			</block>
+			<block>
+				<class>GetComponentProperties</class>
+				<id>GetComponentProperties_5</id>
+				<params>
+					<param>
+						Rocket Accelerator Terrain Effect
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>GetGameObject</class>
+				<id>GetGameObject_2</id>
+			</block>
+			<block>
+				<class>SetVariable</class>
+				<id>SetVariable_17</id>
+				<buddy>Variable_6</buddy>
+				<params>
+					<param>
+						GameObjectT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>GetSpaceID</class>
+				<id>GetSpaceID_1</id>
+			</block>
+			<block>
+				<class>GetGameObject</class>
+				<id>GetGameObject_3</id>
+			</block>
+			<block>
+				<class>SetVariable</class>
+				<id>SetVariable_18</id>
+				<buddy>Variable_4</buddy>
+				<params>
+					<param>
+						GameObjectT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>SetVariable</class>
+				<id>SetVariable_19</id>
+				<buddy>Variable_5</buddy>
+				<params>
+					<param>
+						GameObjectT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>GetGameObject</class>
+				<id>GetGameObject_4</id>
+			</block>
+			<block>
 				<class>FlowGate</class>
 				<id>FlowGate_1</id>
 				<slots>
@@ -590,69 +673,6 @@
 			<block>
 				<class>HasParent</class>
 				<id>HasParent_1</id>
-			</block>
-			<block>
-				<class>SetVariable</class>
-				<id>SetVariable_6</id>
-				<buddy>Variable_3</buddy>
-				<params>
-					<param>
-						GameObjectT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-			</block>
-			<block>
-				<class>SetVariable</class>
-				<id>SetVariable_7</id>
-				<buddy>Variable_6</buddy>
-				<params>
-					<param>
-						GameObjectT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-			</block>
-			<block>
-				<class>GetComponentProperties</class>
-				<id>GetComponentProperties_4</id>
-				<params>
-					<param>
-						Rocket Accelerator Terrain Effect
-						<name>Component Type</name>
-						<type>StringT</type>
-					</param>
-				</params>
-			</block>
-			<block>
-				<class>SetVariable</class>
-				<id>SetVariable_5</id>
-				<buddy>Variable_4</buddy>
-				<params>
-					<param>
-						GameObjectT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-			</block>
-			<block>
-				<class>SetVariable</class>
-				<id>SetVariable_4</id>
-				<buddy>Variable_5</buddy>
-				<params>
-					<param>
-						GameObjectT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-			</block>
-			<block>
-				<class>StartScript</class>
-				<id>StartScript_1</id>
 			</block>
 			<block>
 				<class>Macro</class>
@@ -1446,13 +1466,151 @@
 				<output>out</output>
 			</connection>
 			<connection>
+				<from>GetGameObject_1</from>
+				<input>input</input>
+				<to>SetVariable_16</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>GetGameObject_1</from>
+				<input>value</input>
+				<to>SetVariable_16</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>GetComponentProperties_5</from>
+				<input>in</input>
+				<to>GetGameObject_1</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>GetSpaceID_1</from>
+				<input>spaceID</input>
+				<to>GetGameObject_1</to>
+				<output>spaceID</output>
+			</connection>
+			<connection>
+				<from>GetComponentProperties_5</from>
+				<input>uuid</input>
+				<to>GetGameObject_1</to>
+				<output>snow</output>
+			</connection>
+			<connection>
+				<from>StartScript_1</from>
+				<input>in</input>
+				<to>GetComponentProperties_5</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>GetComponentProperties_5</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>SetVariable_16</from>
+				<input>in</input>
+				<to>GetGameObject_2</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>GetSpaceID_1</from>
+				<input>spaceID</input>
+				<to>GetGameObject_2</to>
+				<output>spaceID</output>
+			</connection>
+			<connection>
+				<from>GetComponentProperties_5</from>
+				<input>uuid</input>
+				<to>GetGameObject_2</to>
+				<output>stone</output>
+			</connection>
+			<connection>
+				<from>GetGameObject_2</from>
+				<input>input</input>
+				<to>SetVariable_17</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>GetGameObject_2</from>
+				<input>value</input>
+				<to>SetVariable_17</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>object</input>
+				<to>GetSpaceID_1</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>SetVariable_17</from>
+				<input>in</input>
+				<to>GetGameObject_3</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>GetSpaceID_1</from>
+				<input>spaceID</input>
+				<to>GetGameObject_3</to>
+				<output>spaceID</output>
+			</connection>
+			<connection>
+				<from>GetComponentProperties_5</from>
+				<input>uuid</input>
+				<to>GetGameObject_3</to>
+				<output>sand</output>
+			</connection>
+			<connection>
+				<from>GetGameObject_3</from>
+				<input>input</input>
+				<to>SetVariable_18</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>GetGameObject_3</from>
+				<input>value</input>
+				<to>SetVariable_18</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>GetGameObject_4</from>
+				<input>input</input>
+				<to>SetVariable_19</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>GetGameObject_4</from>
+				<input>value</input>
+				<to>SetVariable_19</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>SetVariable_18</from>
+				<input>in</input>
+				<to>GetGameObject_4</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>GetSpaceID_1</from>
+				<input>spaceID</input>
+				<to>GetGameObject_4</to>
+				<output>spaceID</output>
+			</connection>
+			<connection>
+				<from>GetComponentProperties_5</from>
+				<input>uuid</input>
+				<to>GetGameObject_4</to>
+				<output>ground</output>
+			</connection>
+			<connection>
 				<from>FrameEvent_1</from>
 				<input>input</input>
 				<to>FlowGate_1</to>
 				<output>exec</output>
 			</connection>
 			<connection>
-				<from>SetVariable_4</from>
+				<from>SetVariable_19</from>
 				<input>open</input>
 				<to>FlowGate_1</to>
 				<output>out</output>
@@ -1468,66 +1626,6 @@
 				<input>gameObject</input>
 				<to>HasParent_1</to>
 				<output>value</output>
-			</connection>
-			<connection>
-				<from>GetComponentProperties_4</from>
-				<input>input</input>
-				<to>SetVariable_6</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>GetComponentProperties_4</from>
-				<input>value</input>
-				<to>SetVariable_6</to>
-				<output>snow</output>
-			</connection>
-			<connection>
-				<from>SetVariable_6</from>
-				<input>input</input>
-				<to>SetVariable_7</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>GetComponentProperties_4</from>
-				<input>value</input>
-				<to>SetVariable_7</to>
-				<output>stone</output>
-			</connection>
-			<connection>
-				<from>StartScript_1</from>
-				<input>in</input>
-				<to>GetComponentProperties_4</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>ContextGetSelf_1</from>
-				<input>gameObject</input>
-				<to>GetComponentProperties_4</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>SetVariable_7</from>
-				<input>input</input>
-				<to>SetVariable_5</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>GetComponentProperties_4</from>
-				<input>value</input>
-				<to>SetVariable_5</to>
-				<output>sand</output>
-			</connection>
-			<connection>
-				<from>SetVariable_5</from>
-				<input>input</input>
-				<to>SetVariable_4</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>GetComponentProperties_4</from>
-				<input>value</input>
-				<to>SetVariable_4</to>
-				<output>ground</output>
 			</connection>
 			<connection>
 				<from>Macro_2</from>

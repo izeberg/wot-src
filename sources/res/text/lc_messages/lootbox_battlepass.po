@@ -9,16 +9,6 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-
-msgid "autoOpenView/boxCount"
-msgid_plural "plural/autoOpenView/boxCount"
-msgstr[0] "%(count) remaining Voucher"
-msgstr[1] "%(count) remaining Vouchers"
-msgstr[2] "%(count) remaining Vouchers"
-
-msgid "autoOpenView/subTitle"
-msgstr "We scratched %(boxCount) for you"
 
 msgid "awardViews/footer/backButton/"
 msgstr "Back to Vouchers"
@@ -83,39 +73,6 @@ msgstr "Available: %(boxesCount)"
 
 msgid "quantityTitle/noBoxes"
 msgstr "No Vouchers available"
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/count"
-msgstr "Vouchers scratched: %(boxes)s"
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/header"
-msgstr "Remaining Vouchers Scratched"
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/text"
-msgstr ""
-"At the end of the Battle Pass Season, we scratched all of your Vouchers and "
-"added the rewards to your account."
-
-msgid "serviceChannelMessages/lootBoxesDisabled/header"
-msgstr "Voucher Scratching Suspended"
-
-msgid "serviceChannelMessages/lootBoxesDisabled/text"
-msgstr ""
-"Operations with Vouchers are temporarily unavailable due to maintenance."
-
-msgid "serviceChannelMessages/lootBoxesEnabled/header"
-msgstr "Voucher Scratching Available"
-
-msgid "serviceChannelMessages/lootBoxesEnabled/text"
-msgstr "Operations with Vouchers are available again. Scratch them!"
-
-msgid "serviceChannelMessages/open"
-msgstr "%(boxName)s Scratched!"
-
-msgid "serviceChannelMessages/server_error"
-msgstr "Voucher Not Scratched"
-
-msgid "serviceChannelMessages/server_error/FAILURE"
-msgstr "Scratching Error"
 
 msgid "singleRewardView/footer/openNextButton/"
 msgstr "Scratch Next"

@@ -39,7 +39,7 @@
 						<row0>1.000000 0.000000 0.000000</row0>
 						<row1>0.000000 1.000000 0.000000</row1>
 						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>0.000000 0.532444 0.000000</row3>
+						<row3>0.000000 0.530562 0.000000</row3>
 					</transform>
 					<node>
 						<identifier>V_BlendBone</identifier>
@@ -47,7 +47,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 -1.000000</row2>
-							<row3>0.000000 -1.032444 0.000000</row3>
+							<row3>0.000000 -1.030562 0.000000</row3>
 						</transform>
 					</node>
 				</node>
@@ -116,8 +116,8 @@
 	</renderSet>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
-		<node>Tank_BlendBone</node>
 		<node>V_BlendBone</node>
+		<node>Tank_BlendBone</node>
 		<geometry>
 			<vertices>track_L_Shape.vertices</vertices>
 			<stream>track_L_Shape.uv2</stream>

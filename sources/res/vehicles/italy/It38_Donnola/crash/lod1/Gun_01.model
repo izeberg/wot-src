@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/italy/It38_Donnola/crash/lod1/Gun_01</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/italy/It38_Donnola/crash/lod2/Gun_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.343169 -0.424753 -1.133894</min>
+		<max>0.344027 0.274346 3.551017</max>
+	</visibilityBox>
+</root>

@@ -1,13 +1,15 @@
-from typing import *
+from __future__ import absolute_import
+from future.utils import viewitems
+from typing import TYPE_CHECKING, Any, Tuple, Optional, Dict, Set, Type
 from extension_utils import ResMgr, importClass
 from ResMgr import DataSection
 from WeakMixin import WeakMixin
 from items import ITEM_TYPES, parseIntCompactDescr, makeIntCompactDescrByID, EQUIPMENT_TYPES, vehicles
 from items.basic_item import BasicItem
+from items.components.supply_slot_categories import CategoriesHolder, SlotCategories
 from items.vehicles import getItemByCompactDescr
 from nations import NONE_INDEX
 from soft_exception import SoftException
-from supply_slot_categories import CategoriesHolder, SlotCategories
 if TYPE_CHECKING:
     from items.artefacts import Equipment
 
@@ -29,6 +31,9 @@ class SupplySlot(CategoriesHolder):
 
     def __ne__(self, other):
         return not self == other
+
+    def __hash__(self):
+        return hash(self.slotID)
 
     def readFromSection(self, section):
         self.slotID = section.readInt('id')
@@ -143,7 +148,7 @@ class SupplySlotsCache(object):
     def readCacheFromFile(self, xmlPath):
         slotsSection = ResMgr.openSection(xmlPath)['slots']
         cache = {}
-        for name, section in slotsSection.items():
+        for section in slotsSection.values():
             slotDescr = SupplySlot.initSlot(section)
             cache[slotDescr.slotID] = slotDescr
 
@@ -158,10 +163,10 @@ class SupplySlotsCache(object):
         return self.slotDescrs[slotID]
 
     def getSlotDescrsByTags(self, itags=(), etags=()):
-        itags, etags = set(itags), etags
+        itags = set(itags)
         if not itags.isdisjoint(etags):
             return {}
-        return {i:sd for i, sd in self.__slotDescrs.iteritems() if sd.tags.isdisjoint(etags) and bool(itags) ^ sd.tags.isdisjoint(itags)}
+        return {i:sd for i, sd in viewitems(self.__slotDescrs) if sd.tags.isdisjoint(etags) and bool(itags) ^ sd.tags.isdisjoint(itags)}
 
     @property
     def categories(self):

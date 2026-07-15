@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld, Math
 from debug_utils import LOG_WARNING, LOG_CURRENT_EXCEPTION
 from gui.battle_control.avatar_getter import getInputHandler

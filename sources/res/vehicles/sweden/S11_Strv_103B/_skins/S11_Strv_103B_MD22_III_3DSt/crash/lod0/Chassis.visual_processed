@@ -31,7 +31,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 1.000000 0.000000</row1>
 					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 0.005303 -0.032631</row3>
+					<row3>0.000000 -0.001013 -0.032631</row3>
 				</transform>
 				<node>
 					<identifier>V</identifier>
@@ -39,7 +39,7 @@
 						<row0>1.000000 0.000000 0.000000</row0>
 						<row1>0.000000 1.000000 0.000000</row1>
 						<row2>0.000000 -0.000000 1.000000</row2>
-						<row3>0.000000 0.497623 0.003473</row3>
+						<row3>0.000000 0.503939 0.003473</row3>
 					</transform>
 					<node>
 						<identifier>V_BlendBone</identifier>
@@ -51,21 +51,11 @@
 						</transform>
 					</node>
 				</node>
-				<node>
-					<identifier>Tank_BlendBone</identifier>
-					<transform>
-						<row0>1.000000 0.000000 0.000000</row0>
-						<row1>0.000000 1.000000 0.000000</row1>
-						<row2>0.000000 0.000000 -1.000000</row2>
-						<row3>0.000000 -0.005303 0.032631</row3>
-					</transform>
-				</node>
 			</node>
 		</node>
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
-		<node>Tank_BlendBone</node>
 		<node>V_BlendBone</node>
 		<geometry>
 			<vertices>track_R_Shape.vertices</vertices>
@@ -121,7 +111,6 @@
 	</renderSet>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
-		<node>Tank_BlendBone</node>
 		<node>V_BlendBone</node>
 		<geometry>
 			<vertices>track_L_Shape.vertices</vertices>
@@ -180,5 +169,5 @@
 		<min>-1.634038 0.003627 -2.601155</min>
 		<max>1.634038 1.233701 2.511899</max>
 	</boundingBox>
-	<geometrySize>164406</geometrySize>
+	<geometrySize>164598</geometrySize>
 </root>

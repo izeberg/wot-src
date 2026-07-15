@@ -82,18 +82,7 @@ class ActionButtonStateVO(dict):
                                           CYBERSPORT.WINDOW_UNIT_MESSAGE_FORTIFICATIONNOTAVAILABLE, {}), 
            UNIT_RESTRICTION.VEHICLE_INVALID_LEVEL: (
                                                   self.__getNotAvailableIcon() + i18n.makeString(PLATOON.MEMBERS_FOOTER_INVALIDVEHICLELEVEL), {}), 
-           UNIT_RESTRICTION.SPG_IS_FULL: (
-                                        self.__getNotAvailableIcon() + i18n.makeString(PLATOON.MEMBERS_FOOTER_SPGFULL), {}), 
-           UNIT_RESTRICTION.SCOUT_IS_FULL: (
-                                          self.__getNotAvailableIcon() + i18n.makeString(PLATOON.MEMBERS_FOOTER_SCOUTFULL), {}), 
-           UNIT_RESTRICTION.WHEELED_IS_FULL: (
-                                            self.__getNotAvailableIcon() + i18n.makeString(PLATOON.MEMBERS_FOOTER_WHEELEDFULL), {}), 
-           UNIT_RESTRICTION.MEDIUMTANK_IS_FULL: (
-                                               self.__getNotAvailableIcon() + i18n.makeString(PLATOON.MEMBERS_FOOTER_MEDIUMTANKFULL), {}), 
-           UNIT_RESTRICTION.HEAVYTANK_IS_FULL: (
-                                              self.__getNotAvailableIcon() + i18n.makeString(PLATOON.MEMBERS_FOOTER_HEAVYTANKFULL), {}), 
-           UNIT_RESTRICTION.AT_SPG_IS_FULL: (
-                                           self.__getNotAvailableIcon() + i18n.makeString(PLATOON.MEMBERS_FOOTER_AT_SPG_FULL), {}), 
+           UNIT_RESTRICTION.VEHICLES_GROUP_IS_FULL: BoundMethodWeakref(self._getVehiclesGroupIsFullMessage), 
            UNIT_RESTRICTION.ROTATION_GROUP_LOCKED: BoundMethodWeakref(self._rotationGroupBlockMessage), 
            UNIT_RESTRICTION.UNIT_MAINTENANCE: (
                                              CYBERSPORT.WINDOW_UNIT_MESSAGE_MAINTENANCE, {}), 
@@ -192,6 +181,23 @@ class ActionButtonStateVO(dict):
         return (
          CYBERSPORT.WINDOW_UNIT_MESSAGE_GETREADY, {})
 
+    def _getVehiclesGroupIsFullMessage(self):
+        DEFAULT_TAG_PRIORITY = 0.0
+        TAGS_PRIORITY = {'role_LT_universal': 0.9, 
+           'role_LT_wheeled': 1.0}
+        res = R.strings.platoon.members.footer.vehiclesGroupIsFull
+        tagsWithoutSlot = self.__validationCtx['tags']
+        if tagsWithoutSlot:
+            tagsWithoutSlot = sorted(tagsWithoutSlot, key=lambda t: TAGS_PRIORITY.get(t, DEFAULT_TAG_PRIORITY), reverse=True)
+            for tag in tagsWithoutSlot:
+                tagRes = res.dyn(tag.replace('-', '_'))
+                if tagRes:
+                    res = tagRes
+                    break
+
+        return (
+         self.__getNotAvailableIcon() + backport.text(res()), {})
+
     def __getState(self):
         if self.__isEnabled:
             if self._playerInfo.isInSlot:
@@ -207,9 +213,10 @@ class ActionButtonStateVO(dict):
             if self.__flags.isLocked():
                 return (CYBERSPORT.WINDOW_UNIT_MESSAGE_UNITISLOCKED, {})
             return (CYBERSPORT.WINDOW_UNIT_MESSAGE_UNITISFULL, {})
-        if callable(self.__INVALID_UNIT_MESSAGES[self.__restrictionType]):
-            return self.__INVALID_UNIT_MESSAGES[self.__restrictionType]()
-        return self.__INVALID_UNIT_MESSAGES[self.__restrictionType]
+        state = self.__INVALID_UNIT_MESSAGES[self.__restrictionType]
+        if callable(state):
+            return state()
+        return state
 
     @property
     def __toolTipData(self):

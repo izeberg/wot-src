@@ -1,4 +1,7 @@
+from __future__ import absolute_import
+from builtins import map
 from collections import namedtuple
+from future.utils import lfilter, lmap
 import BigWorld, Event
 from PlayerEvents import g_playerEvents
 from helpers import getLocalizedData
@@ -29,7 +32,7 @@ class EventsNotificationsController(IEventsNotificationsController):
     def getEventsNotifications(self, filterFunc=None):
         player = BigWorld.player()
         if player:
-            return filter(filterFunc or (lambda a: True), map(EventNotification.make, player.eventNotifications))
+            return lfilter(filterFunc or (lambda a: True), map(EventNotification.make, player.eventNotifications))
         return ()
 
     def __stop(self):
@@ -37,8 +40,8 @@ class EventsNotificationsController(IEventsNotificationsController):
         g_playerEvents.onEventNotificationsChanged -= self.__onEventNotification
 
     def __onEventNotification(self, diff):
-        added = map(EventNotification.make, diff.get('added', ()))
-        removed = map(EventNotification.make, diff.get('removed', ()))
+        added = lmap(EventNotification.make, diff.get('added', ()))
+        removed = lmap(EventNotification.make, diff.get('removed', ()))
         self.onEventNotificationsChanged(added, removed)
 
 

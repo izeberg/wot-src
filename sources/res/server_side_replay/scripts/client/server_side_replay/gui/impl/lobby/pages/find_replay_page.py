@@ -1,4 +1,6 @@
+from __future__ import absolute_import
 import logging
+from past.builtins import unicode
 from typing import TYPE_CHECKING
 import BigWorld
 from BattleReplay import BattleReplay

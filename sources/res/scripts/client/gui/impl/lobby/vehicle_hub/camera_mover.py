@@ -1,7 +1,6 @@
 from __future__ import absolute_import
 import math, CGF
 from CameraComponents import OrbitComponent
-from GenericComponents import TransformComponent
 from gui.subhangar.subhangar_state_groups import CameraMover
 from helpers import dependency
 from math_utils import reduceToPI
@@ -25,9 +24,9 @@ class VehicleHubCameraMover(CameraMover):
         if not cameraGo:
             cameraManager.switchByCameraName(cameraName, instantly=True)
             return
-        hierarchy = CGF.HierarchyManager(self.__hangarSpace.spaceID)
-        parentTransformComponent = hierarchy.getParent(cameraGo).findComponentByType(TransformComponent)
-        orbitComponent = cameraGo.findComponentByType(OrbitComponent)
+        hierarchy = CGF.findHierarchySingleton(self.__hangarSpace.spaceID)
+        parentTransformComponent = hierarchy.getParent(cameraGo).findRead(CGF.TransformComponent)
+        orbitComponent = cameraGo.findRead(OrbitComponent)
         if not orbitComponent or not parentTransformComponent:
             cameraManager.switchByCameraName(cameraName, instantly=True)
             return

@@ -19,7 +19,7 @@ msgid "headerButton/tooltips/squad/header"
 msgstr "Platoon"
 
 msgid "members/header/last_stand"
-msgstr ": Last Stand: Invasion"
+msgstr ": Last Stand: Terra Nord"
 
 msgid "members/header/tooltip/last_stand/body"
 msgstr ""
@@ -33,19 +33,19 @@ msgid "platoon/commander/difficulty_body"
 msgstr "You can select any of the available difficulty levels."
 
 msgid "platoon/difficulty/error_body_1"
-msgstr "Available difficulty levels: Basic."
+msgstr "Available difficulty levels: Regular."
 
 msgid "platoon/difficulty/error_body_2"
-msgstr "Available difficulty levels: Basic, Intense."
+msgstr "Available difficulty levels: Regular, Advanced."
 
 msgid "platoon/difficulty/error_header"
 msgstr "Unavailable Difficulty"
 
 msgid "platoon/difficulty/level_1"
-msgstr "Difficulty: Basic"
+msgstr "Difficulty: Regular"
 
 msgid "platoon/difficulty/level_2"
-msgstr "Difficulty: Intense"
+msgstr "Difficulty: Advanced"
 
 msgid "platoon/difficulty/level_3"
 msgstr "Difficulty: Brutal"
@@ -64,6 +64,18 @@ msgstr "One or more Platoon members have not unlocked this difficulty level."
 
 msgid "platoon/difficulty/warning_header"
 msgstr "Incompatible Difficulty"
+
+msgid "platoon/dropdown/difficulty_1"
+msgstr "Regular %(icon)s"
+
+msgid "platoon/dropdown/difficulty_2"
+msgstr "Advanced %(icon)s"
+
+msgid "platoon/dropdown/difficulty_3"
+msgstr "Brutal %(icon)s"
+
+msgid "platoon/dropdown/header/difficulty"
+msgstr "{whiteSpanish_Open}Difficulty: {whiteSpanish_Close}%(difficulty)s"
 
 msgid "platoon/player/difficulty_body"
 msgstr "Only the Platoon Commander can change the difficulty level."

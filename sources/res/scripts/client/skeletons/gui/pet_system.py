@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from skeletons.gui.game_control import IGameController
 if typing.TYPE_CHECKING:

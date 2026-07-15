@@ -18,6 +18,9 @@ class IGunShootingEventsLogic(object):
     def processAppearanceReady(self):
         raise NotImplementedError
 
+    def processAppearanceReset(self):
+        raise NotImplementedError
+
     def processDiscreteShot(self, gunIndex):
         raise NotImplementedError
 
