@@ -280,7 +280,7 @@ class ArmoryYardShopBuyView(ArmoryYardShopBaseView):
 
     def __updatePlayerMoney(self, _=None):
         gold, tokens, crystal = self.__getPlayerMoney()
-        if self.viewModel.getGoldAmount() == int(gold) and self.viewModel.getCurrencyAmount() == tokens:
+        if self.viewModel.getGoldAmount() == int(gold) and self.viewModel.getCurrencyAmount() == tokens and self.viewModel.getCrystalAmount() == int(crystal):
             return
         with self.viewModel.transaction() as (model):
             model.setGoldAmount(int(gold))

@@ -18,13 +18,15 @@ def getBrowserSettings(url=''):
 
 
 class WebBrowserView(BrowserView):
-    __slots__ = ('_mainViewEvents', '_currentTabId', '__url')
+    __slots__ = ('_mainViewEvents', '_currentTabId', '__isSkipEscape')
     __appLoader = dependency.descriptor(IAppLoader)
 
-    def __init__(self, mainViewEvents, currentTabId, url=''):
+    def __init__(self, mainViewEvents, currentTabId, url='', skipEscape=True):
         super(WebBrowserView, self).__init__(R.views.common.Browser(), getBrowserSettings(url))
         self._mainViewEvents = mainViewEvents
         self._currentTabId = currentTabId
+        self.__isSkipEscape = skipEscape
+        self.browser.skipEscape = True
 
     def _getEvents(self):
         return super(WebBrowserView, self)._getEvents() + (
@@ -40,8 +42,10 @@ class WebBrowserView(BrowserView):
         if self.browser is not None:
             if newTabID == self._currentTabId:
                 self.browser.navigate(self.url)
+                self.browser.skipEscape = self.__isSkipEscape
             else:
                 self.browser.navigate(_BLANK_BROWSER_PAGE)
+                self.browser.skipEscape = True
         return
 
     def _finalize(self):

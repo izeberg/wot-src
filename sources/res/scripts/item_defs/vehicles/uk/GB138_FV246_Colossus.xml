@@ -85,7 +85,6 @@
 			<armor_3>84</armor_3>
 			<armor_4>56</armor_4>
 			<armor_5>25</armor_5>
-			<armor_6>20</armor_6>
 			<armor_7>180</armor_7>
 			<armor_8>0</armor_8>
 			<armor_9>99</armor_9>
@@ -96,6 +95,11 @@
 			<armor_14>42</armor_14>
 			<armor_15>20</armor_15>
 			<armor_16>84</armor_16>
+			<armor_17>110</armor_17>
+			<armor_18>100</armor_18>
+			<armor_19>125</armor_19>
+			<armor_20>110</armor_20>
+			<armor_21>20</armor_21>
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>29150</weight>
@@ -2545,7 +2549,7 @@
 			<price>50000</price>
 			<notInShop>true</notInShop>
 			<armor>
-				<armor_1>200</armor_1>
+				<armor_1>140</armor_1>
 				<armor_2>160</armor_2>
 				<armor_3>114</armor_3>
 				<armor_4>89</armor_4>
@@ -2553,12 +2557,24 @@
 				<armor_6>20</armor_6>
 				<armor_7>160</armor_7>
 				<armor_8>0</armor_8>
-				<armor_9>160</armor_9>
+				<armor_9>
+					160
+					<vehicleDamageFactor>0</vehicleDamageFactor>
+				</armor_9>
 				<armor_10>152</armor_10>
 				<armor_11>114</armor_11>
 				<armor_12>89</armor_12>
+				<armor_13>178</armor_13>
+				<armor_14>254</armor_14>
+				<armor_15>240</armor_15>
+				<armor_16>220</armor_16>
+				<armor_17>130</armor_17>
+				<armor_18>195</armor_18>
+				<armor_19>160</armor_19>
+				<armor_20>140</armor_20>
+				<armor_21>254</armor_21>
 			</armor>
-			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
+			<primaryArmor>armor_21 armor_3 armor_4</primaryArmor>
 			<weight>15000</weight>
 			<maxHealth>450</maxHealth>
 			<rotationSpeed>28</rotationSpeed>
@@ -2594,13 +2610,25 @@
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_2>
 						<armor_3>
-							114
+							140
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_3>
 						<armor_4>
 							0
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_4>
+						<armor_5>
+							10
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_5>
+						<armor_6>
+							114
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_6>
+						<armor_7>
+							230
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_7>
 						<gun>45</gun>
 					</armor>
 					<shotDispersionRadius>

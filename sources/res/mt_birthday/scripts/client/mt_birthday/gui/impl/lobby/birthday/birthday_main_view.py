@@ -45,7 +45,7 @@ def _createAboutView(events, *_):
 
 @dependency.replace_none_kwargs(birthdayController=ITanksBirthdayController)
 def _createTicketExchangeView(events, birthdayController=None, *_):
-    return WebBrowserView(events, TabId.TICKET_EXCHANGE, birthdayController.getTicketExchangeURL())
+    return WebBrowserView(events, TabId.TICKET_EXCHANGE, birthdayController.getTicketExchangeURL(), skipEscape=False)
 
 
 @dependency.replace_none_kwargs(birthdayController=ITanksBirthdayController)

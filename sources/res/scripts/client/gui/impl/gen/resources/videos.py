@@ -255,19 +255,19 @@ class Videos(DynAccessor):
 
         class _tanks_birthday_2026(DynAccessor):
             __slots__ = ()
-            A122_TS_5 = DynAccessor(110514)
-            A124_T54E2 = DynAccessor(110515)
-            A149_AMBT = DynAccessor(110516)
-            Ch43_WZ_122_2 = DynAccessor(110517)
-            F130_AMX_Tracteur_D = DynAccessor(110518)
-            G168_KJpz_T_III = DynAccessor(110519)
-            GB110_FV4201_Chieftain_Prototype = DynAccessor(110520)
-            GB112_Caliban = DynAccessor(110521)
+            A140_ASTRON_REX_105mm = DynAccessor(110514)
+            A182_ALRS_M6 = DynAccessor(110515)
+            Ch63_STT_617Q = DynAccessor(110516)
+            Ch76_HSD_1 = DynAccessor(110517)
+            Cz20_ShPTK_TVP_100_mm = DynAccessor(110518)
+            F117_Alt_Proto_AMX_30 = DynAccessor(110519)
+            F130_AMX_Tracteur_D = DynAccessor(110520)
+            G168_KJpz_T_III = DynAccessor(110521)
             intro = DynAccessor(110522)
-            It18_Progetto_C45_mod_71 = DynAccessor(110523)
-            Pl19_CS_52_LIS = DynAccessor(110524)
-            R188_Object_259A = DynAccessor(110525)
-            R227_Object_407_MZ = DynAccessor(110526)
+            R192_K_2 = DynAccessor(110523)
+            R227_Object_407_MZ = DynAccessor(110524)
+            R233_ASU_85 = DynAccessor(110525)
+            R47_ISU_152_Zveroboj = DynAccessor(110526)
 
         tanks_birthday_2026 = _tanks_birthday_2026()
 
@@ -320,8 +320,14 @@ class Videos(DynAccessor):
 
     platoon = _platoon()
 
+    class _startup(DynAccessor):
+        __slots__ = ()
+        c_1_44_showreel = DynAccessor(110544)
+
+    startup = _startup()
+
     class _vehicle(DynAccessor):
         __slots__ = ()
-        A122_TS_5 = DynAccessor(110544)
+        A122_TS_5 = DynAccessor(110545)
 
     vehicle = _vehicle()

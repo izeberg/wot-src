@@ -12,7 +12,7 @@ REWARD_VIDEO_CONFIG = {'common': {'vehicles': {'hasFooter': True,
    'tanks_birthday_2026': {'vehicles': {'hasFooter': True, 
                                         'videos': [
                                                  {'videoResName': 'intro', 
-                                                    'duration': 11},
+                                                    'duration': 12},
                                                  {'videoResName': None, 
                                                     'duration': 12, 
                                                     'showFooterTiming': 3}]}}, 
