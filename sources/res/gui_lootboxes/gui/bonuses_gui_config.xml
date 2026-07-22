@@ -11,9 +11,11 @@
 		<uniqueTankmen/>
 		<tankmen/>
 		<style/>
+		<lbStyleProgress/>
 		<personalBooster/>
 		<crewBook/>
 		<ordinaryCurrency/>
+		<customCurrency/>
 		<optionalDevice/>
 		<equipment/>
 		<battleBooster/>
@@ -36,6 +38,7 @@
 			<uniqueTankmen/>
 			<tankmen/>
 			<style/>
+			<lbStyleProgress/>
 			<personalBooster/>
 			<crewBook/>
 			<ordinaryCurrency/>
@@ -118,6 +121,31 @@
 			<berth/>
 			<blueprint/>
 		</TanksBirthday_24_Order>
+		<TanksBirthday_26_Order>
+			<categories>tanks_birthday_2026</categories>
+			<vehicle/>
+			<uniqueCustomization/>
+			<customLootBox/>
+			<customLootBoxKey/>
+			<rarityOptionalDevice/>
+			<rarityCurrency/>
+			<premium/>
+			<uniqueTankmen/>
+			<tankmen/>
+			<style/>
+			<lbStyleProgress/>
+			<personalBooster/>
+			<crewBook/>
+			<ordinaryCurrency/>
+			<customCurrency/>
+			<optionalDevice/>
+			<equipment/>
+			<battleBooster/>
+			<customization/>
+			<slot/>
+			<berth/>
+			<blueprint/>
+		</TanksBirthday_26_Order>
 		<Cosmic_26_Order>
 			<categories>cosmic_2026</categories>
 			<vehicle/>

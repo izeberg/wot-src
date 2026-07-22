@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A184_HTPC/normal/lod1/Hatch_anim_01</nodefullVisual>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.118862 0.812022 2.322504</min>
+		<max>0.118862 1.050724 2.524614</max>
+	</visibilityBox>
+	<parent>vehicles/american/A184_HTPC/normal/lod2/Hatch_anim_01</parent>
+</root>

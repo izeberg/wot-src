@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G197_E_94_Fechter/normal/lod0/Hatch_anim_01</nodefullVisual>
+	<visibilityBox>
+		<min>-0.098376 0.568694 2.256805</min>
+		<max>0.123197 0.755816 2.410547</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/german/G197_E_94_Fechter/normal/lod1/Hatch_anim_01</parent>
+	<extent>32.000000</extent>
+</root>

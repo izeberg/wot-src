@@ -53,6 +53,8 @@ package net.wg.data.constants.generated
       
       public static const COMP7_ENTRY_POINT:String = "Comp7EntryPoint";
       
+      public static const GF_HEADER_WIDGET:String = "gfHeaderWidget";
+      
       public static const TANK_CAROUSEL_UI:String = "TankCarouselUI";
       
       public static const BR_TANK_CAROUSEL_UI:String = "BRTanksCarouselUI";
@@ -157,8 +159,6 @@ package net.wg.data.constants.generated
       
       public static const FUN_RANDOM_HANGAR_WIDGET:String = "FunRandomHangarWidget";
       
-      public static const FUN_RANDOM_MODIFIERS_PANEL:String = "FunRandomModifiersPanel";
-      
       public static const EVENT_CREW_HEALING_COMPONENT:String = "eventCrewHealingComponent";
       
       public static const EVENT_CREW_BOOSTER_COMPONENT:String = "eventCrewBoosterComponent";
@@ -181,11 +181,15 @@ package net.wg.data.constants.generated
       
       public static const BIRTHDAY_BANNER_ENTRY_POINT:String = "BirthdayBannerEntryPoint";
       
+      public static const BIRTHDAY_HEADER_ENTRY_POINT:String = "BirthdayHeaderEntryPoint";
+      
       public static const BLACK_MARKET_ENTRY_POINT:String = "BlackMarketEntryPoint";
       
       public static const PARAGONS_BANNER_ENTRY_POINT:String = "ParagonsBannerEntryPoint";
       
       public static const SUMMER_SALE_ENTRY_POINT:String = "SummerSaleEntryPoint";
+      
+      public static const TANK_ACADEMY_ENTRY_POINT:String = "TankAcademyEntryPoint";
        
       
       public function HANGAR_ALIASES()

@@ -4,11 +4,23 @@
 		<name>default</name>
 		<preloadTextures>
 			<path>
-				particles/content_forward/pfx_textures/eff_tex.dds
+				particles/content_forward/pfx_textures/eff_tex_split_dirt.dds
 				<type>primary</type>
 			</path>
 			<path>
-				particles/content_forward/pfx_textures/eff_tex_long.dds
+				particles/content_forward/pfx_textures/eff_tex_split_splash_3.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_split_fire_6.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_split_smoke_5.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_split_misc_2.dds
 				<type>primary</type>
 			</path>
 			<path>
@@ -20,18 +32,81 @@
 				<type>primary</type>
 			</path>
 			<path>
-				particles/content_forward/pfx_textures/eff_tex_38_mannerheim_line.dds
+				particles/content_forward/pfx_textures/eff_tex_split_misc_5.dds
 				<type>primary</type>
 			</path>
 			<path>
-				particles/content_forward/pfx_textures/eff_dirt.dds
+				particles/content_forward/pfx_textures/eff_tex_split_fire_4.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_split_smoke_7.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_split_misc_3.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_split_fire_smoke_1.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_split_smoke_1.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_split_misc_6.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_split_fire_2.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_split_smoke_3.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_split_misc_4.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_split_splash_1.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_split_fire_3.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_split_fire_5.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_split_smoke_6.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_split_smoke_8.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_long.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_split_sparks.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_38_mannerheim_line.dds
 				<type>primary</type>
 			</path>
 		</preloadTextures>
 		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/hd_bld_uni_712_littlewoodshed.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/inf_bld_uni_000_base_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/inf_building_fire_01.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/inf_building_fire_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/interior/04_himmelsdorf_fire_storm.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/interior/04_himmelsdorf_glow.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/interior/04_himmelsdorf_glow_s.vfx</fn_effect_bin>
@@ -97,7 +172,6 @@
 		<fn_effect_bin>particles/environment/buildings/hd_bld_uni_712_littlewoodshed.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/buildings/inf_bld_uni_000_base_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/buildings/inf_building_fire_01.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/buildings/inf_building_fire_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/04_himmelsdorf_fire_storm.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/04_himmelsdorf_glow.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/38_mannerheim_fog.eff</fn_effect_bin>
@@ -176,27 +250,15 @@
 		<name>default</name>
 		<preloadTextures>
 			<path>
-				particles/content_deferred/pfx_textures/eff_tex_long.dds
+				particles/content_deferred/pfx_textures/eff_tex_split_misc_3.dds
 				<type>primary</type>
 			</path>
 			<path>
-				particles/content_deferred/pfx_textures/eff_tex.dds
+				particles/content_deferred/pfx_textures/eff_tex_split_dirt.dds
 				<type>primary</type>
 			</path>
 			<path>
-				particles/content_deferred/pfx_textures/eff_leaves.dds
-				<type>primary</type>
-			</path>
-			<path>
-				particles/content_deferred/pfx_textures/eff_tex_water.dds
-				<type>water</type>
-			</path>
-			<path>
-				particles/content_deferred/pfx_textures/eff_tex_distortion.dds
-				<type>primary</type>
-			</path>
-			<path>
-				particles/content_deferred/pfx_textures/eff_tex_38_mannerheim_line.dds
+				particles/content_deferred/pfx_textures/eff_tex_split_splash_3.dds
 				<type>primary</type>
 			</path>
 			<path>
@@ -204,12 +266,104 @@
 				<type>primary</type>
 			</path>
 			<path>
-				particles/content_deferred/pfx_textures/eff_tex_force_field.dds
-				<type>forcefields</type>
+				particles/content_deferred/pfx_textures/eff_tex_split_misc_2.dds
+				<type>primary</type>
 			</path>
 			<path>
-				particles/content_deferred/pfx_textures/eff_dirt.dds
+				particles/content_deferred/pfx_textures/eff_tex_split_smoke_5.dds
 				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_split_misc_5.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_leaves.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_split_smoke_7.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_split_misc_6.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_split_smoke_1.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_split_smoke_6.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_split_fire_smoke_1.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_split_fire_2.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_split_fire_6.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_split_smoke_3.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_split_misc_4.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_38_mannerheim_line.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_distortion.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_split_splash_1.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_split_smoke_8.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_long.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_split_sparks.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_split_fire_4.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_split_misc_7.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_water.dds
+				<type>water</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_split_fire_5.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_split_fire_3.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_force_field.dds
+				<type>forcefields</type>
 			</path>
 			<path>
 				particles/content_deferred/pfx_textures/tracers.dds
@@ -219,7 +373,6 @@
 		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/hd_bld_uni_712_littlewoodshed.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/inf_bld_uni_000_base_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/inf_building_fire_01.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/inf_building_fire_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/cameraeffects/winter_drift_floor_easy.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/cameraeffects/winter_drift_floor_easy_p.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/cameraeffects/winter_snow_light.vfx</fn_effect_bin>
@@ -290,7 +443,6 @@
 		<fn_effect_bin>particles/environment/buildings/hd_bld_uni_712_littlewoodshed.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/buildings/inf_bld_uni_000_base_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/buildings/inf_building_fire_01.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/buildings/inf_building_fire_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/04_himmelsdorf_fire_storm.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/04_himmelsdorf_glow.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/38_mannerheim_fog.eff</fn_effect_bin>

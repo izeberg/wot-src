@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/french/F121_G1L/normal/lod4/Hull</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<nodefullVisual>vehicles/french/F121_G1L/normal/lod3/Hull</nodefullVisual>
+	<visibilityBox>
+		<min>-1.246725 -0.756245 -3.092219</min>
+		<max>1.246724 0.619196 3.410420</max>
+	</visibilityBox>
+</root>

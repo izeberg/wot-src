@@ -2,6 +2,7 @@ package net.wg.infrastructure.base.meta.impl
 {
    import net.wg.data.constants.Errors;
    import net.wg.gui.lobby.battleResults.data.BattleResultsVO;
+   import net.wg.gui.lobby.battleResults.data.GiftSystemVO;
    import net.wg.infrastructure.base.AbstractWindowView;
    import net.wg.infrastructure.exceptions.AbstractException;
    
@@ -27,7 +28,13 @@ package net.wg.infrastructure.base.meta.impl
       
       public var showDogTagWindow:Function;
       
+      public var sendGift:Function;
+      
+      public var gotoGiftStamps:Function;
+      
       private var _battleResultsVO:BattleResultsVO;
+      
+      private var _giftSystemVO:GiftSystemVO;
       
       public function BattleResultsMeta()
       {
@@ -40,6 +47,11 @@ package net.wg.infrastructure.base.meta.impl
          {
             this._battleResultsVO.dispose();
             this._battleResultsVO = null;
+         }
+         if(this._giftSystemVO)
+         {
+            this._giftSystemVO.dispose();
+            this._giftSystemVO = null;
          }
          super.onDispose();
       }
@@ -98,6 +110,18 @@ package net.wg.infrastructure.base.meta.impl
          this.showDogTagWindow(param1);
       }
       
+      public function sendGiftS(param1:int, param2:String) : void
+      {
+         App.utils.asserter.assertNotNull(this.sendGift,"sendGift" + Errors.CANT_NULL);
+         this.sendGift(param1,param2);
+      }
+      
+      public function gotoGiftStampsS() : void
+      {
+         App.utils.asserter.assertNotNull(this.gotoGiftStamps,"gotoGiftStamps" + Errors.CANT_NULL);
+         this.gotoGiftStamps();
+      }
+      
       public final function as_setData(param1:Object) : void
       {
          var _loc2_:BattleResultsVO = this._battleResultsVO;
@@ -109,9 +133,27 @@ package net.wg.infrastructure.base.meta.impl
          }
       }
       
+      public final function as_setGiftSystemData(param1:Object) : void
+      {
+         var _loc2_:GiftSystemVO = this._giftSystemVO;
+         this._giftSystemVO = new GiftSystemVO(param1);
+         this.setGiftSystemData(this._giftSystemVO);
+         if(_loc2_)
+         {
+            _loc2_.dispose();
+         }
+      }
+      
       protected function setData(param1:BattleResultsVO) : void
       {
          var _loc2_:String = "as_setData" + Errors.ABSTRACT_INVOKE;
+         DebugUtils.LOG_ERROR(_loc2_);
+         throw new AbstractException(_loc2_);
+      }
+      
+      protected function setGiftSystemData(param1:GiftSystemVO) : void
+      {
+         var _loc2_:String = "as_setGiftSystemData" + Errors.ABSTRACT_INVOKE;
          DebugUtils.LOG_ERROR(_loc2_);
          throw new AbstractException(_loc2_);
       }

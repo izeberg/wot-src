@@ -14,6 +14,8 @@ package net.wg.gui.lobby.battleResults.event
       public static const BATTLE_QUEUE_ENTERED:String = "BattleLoadingStarted";
       
       public static const BATTLE_QUEUE_EXITED:String = "BattleLoadingFinished";
+      
+      public static const GOTO_GIFT_STAMPS:String = "GotoGiftStampsView";
        
       
       public function BattleResultsViewEvent(param1:String)

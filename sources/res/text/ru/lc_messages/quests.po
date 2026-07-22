@@ -1202,7 +1202,7 @@ msgid "bonusName/eventCoin"
 msgstr "Особая валюта события"
 
 msgid "bonusName/excluded_map"
-msgstr "Исключённая карта"
+msgstr "Дополнительный слот для исключения карт"
 
 msgid "bonusName/exclusive_vehicle"
 msgstr "Эксклюзивная техника"
@@ -1224,6 +1224,9 @@ msgstr "Золото"
 
 msgid "bonusName/gold_bank"
 msgstr "Хранилище золота"
+
+msgid "bonusName/goldenticket"
+msgstr "Золотой билет"
 
 msgid "bonusName/honey_coin"
 msgstr "Мёд"
@@ -1260,6 +1263,9 @@ msgstr "Стандартный призовой бой."
 
 msgid "bonusName/rankedDailyBattles"
 msgstr "Ежедневный призовой бой."
+
+msgid "bonusName/rewardsSlots"
+msgstr "Слот для исключения карты"
 
 msgid "bonusName/slots"
 msgstr "Слоты в Ангаре"
@@ -1406,6 +1412,9 @@ msgstr "%(name)s (x%(count)s)"
 
 msgid "bonuses/notAvailable"
 msgstr "Награда недоступна"
+
+msgid "bonuses/preferredMapSlots/postBattle"
+msgstr "Слот для исключения карты: %(days)s"
 
 msgid "bonuses/premium_plus/description"
 msgstr "Дней Танкового премиум аккаунта: %(value)s"
@@ -4815,15 +4824,6 @@ msgstr ""
 msgid "introScreen/dailyQuests/header"
 msgstr "Ежедневные задачи"
 
-msgid "introScreen/inputSeries/description"
-msgstr ""
-"Удлиняйте свою цепь побед, ежедневно выполняя боевую задачу; она всегда одна"
-" — победить в бою или получить 250 ед. «чистого» опыта. Накапливайте "
-"регулярные награды, сохраняя вашу цепь побед непрерывной."
-
-msgid "introScreen/inputSeries/header"
-msgstr "Цепь побед"
-
 msgid "introScreen/subtitle"
 msgstr ""
 "Интерфейс и механики ежедневных задач были полностью обновлены. Теперь во "
@@ -5515,9 +5515,6 @@ msgstr "Выполнено основное условие"
 
 msgid "personalMission/status/sheetRecoveryInProgress"
 msgstr "Возврат бланка приказа: выполните основное и дополнительное условия"
-
-msgid "playStreak/tab/label"
-msgstr "Серия входов"
 
 msgid "postBattle/progressReset"
 msgstr "Одно из условий не выполнено, прогресс обнулён"

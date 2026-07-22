@@ -9,7 +9,7 @@
 	</crew>
 	<supplySlots>8 8 8</supplySlots>
 	<speedLimits>
-		<forward>25</forward>
+		<forward>30</forward>
 		<backward>8</backward>
 	</speedLimits>
 	<invisibility>
@@ -128,7 +128,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>4285</weight>
-		<maxHealth>188</maxHealth>
+		<maxHealth>200</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>65</maxHealth>
 			<maxRegenHealth>45</maxRegenHealth>
@@ -2314,11 +2314,11 @@
 			<rotationSpeed>40</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
-					0.36
+					0.10
 					<!--BW_String-->
 				</vehicleMovement>
 				<vehicleRotation>
-					0.36
+					0.10
 					<!--BW_String-->
 				</vehicleRotation>
 			</shotDispersionFactors>
@@ -3701,7 +3701,7 @@
 				</customizableVehicleAreas>
 			</customization>
 			<repairTime>
-				3.41880345
+				1.70988882
 				<!--BW_String-->
 			</repairTime>
 		</Chassis_Cz06_Kolohousenka>
@@ -3738,7 +3738,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_1 armor_1</primaryArmor>
 			<weight>500</weight>
-			<maxHealth>47</maxHealth>
+			<maxHealth>80</maxHealth>
 			<rotationSpeed>28</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>50</maxHealth>
@@ -3748,7 +3748,7 @@
 					<!--BW_String-->
 				</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>280</circularVisionRadius>
+			<circularVisionRadius>300</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>30</maxHealth>
 				<maxRegenHealth>15</maxRegenHealth>
@@ -3799,20 +3799,20 @@
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<shotDispersionRadius>
-						0.44
+						0.40
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						3.3
+						2.7
 						<!--BW_String-->
 					</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.14
+							0.10
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
-							4.0
+							3.0
 							<!--BW_String-->
 						</afterShot>
 						<whileGunDamaged>
@@ -3821,7 +3821,7 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						2.1
+						1.9
 						<!--BW_String-->
 					</aimingTime>
 					<models>
@@ -3951,7 +3951,7 @@
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<shotDispersionRadius>
-						0.42
+						0.40
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
@@ -3960,11 +3960,11 @@
 					</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.14
+							0.10
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
-							4.0
+							3.0
 							<!--BW_String-->
 						</afterShot>
 						<whileGunDamaged>
@@ -4659,7 +4659,7 @@
 						52.86406
 						<!--BW_String-->
 					</smplEnginePower>
-					<smplFwMaxSpeed>25</smplFwMaxSpeed>
+					<smplFwMaxSpeed>30</smplFwMaxSpeed>
 				</Hanomag_WD_50PS>
 			</engines>
 			<chassis>

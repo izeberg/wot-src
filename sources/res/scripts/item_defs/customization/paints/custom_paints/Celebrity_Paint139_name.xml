@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<itemGroup>
+		<name>Celebrity_Paint_139</name>
+		<userString>#vehicle_customization:repaint/color_group_04</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>hiddenInUI</tags>
+		<priceGroup>paints 20g notInShop</priceGroup>
+		<vehicleFilter>
+			<include>
+				<vehicles>ussr:R112_T54_45_02</vehicles>
+			</include>
+		</vehicleFilter>
+		<paint>
+			<id>31428</id>
+			<color>16 33 56 255</color>
+			<gloss>
+				0.63
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.235
+				<!--BW_String-->
+			</metallic>
+			<texture>gui/maps/vehicles/repaints/custom_color_26.png</texture>
+			<userString>#vehicle_customization:Celebrity_Paint139/name</userString>
+			<description>#vehicle_customization:Celebrity_Paint139/description</description>
+		</paint>
+	</itemGroup>
+</root>

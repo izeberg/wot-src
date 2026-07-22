@@ -88,6 +88,7 @@ BONUS_TAG_HANDLER_MAP = {Currency.CREDITS: lambda b: BonusesSortTags.CURRENCY,
    VehiclesBonus.VEHICLES_BONUS: lambda b: BonusesSortTags.VEHICLE, 
    'tankmen': _getTankmenTag, 
    'customizations': _getCustomizationTag, 
+   'lbStyleProgress': lambda b: BonusesSortTags.LB_STYLE_PROGRESS, 
    'goodies': _getGoodiesTag, 
    'items': _getItemTag, 
    'blueprints': lambda b: BonusesSortTags.BLUEPRINT, 
@@ -97,12 +98,14 @@ BONUS_TAG_HANDLER_MAP = {Currency.CREDITS: lambda b: BonusesSortTags.CURRENCY,
    'randomCrewbook': lambda b: BonusesSortTags.CREW_BOOK, 
    'crewBooks': lambda b: BonusesSortTags.CREW_BOOK, 
    'dogTagComponents': lambda b: BonusesSortTags.CUSTOMIZATION, 
+   'preferredMapSlots': lambda b: BonusesSortTags.CUSTOMIZATION, 
    'dossier': lambda b: BonusesSortTags.CUSTOMIZATION, 
    'tmanToken': _getTankmenTokenTag, 
    'battleToken': _getTokensTag, 
    'freeXP': lambda b: BonusesSortTags.CURRENCY, 
    'entitlements': lambda b: BonusesSortTags.CURRENCY, 
-   'lootBoxToken': lambda b: BonusesSortTags.CUSTOM_LOOTBOX}
+   'lootBoxToken': lambda b: BonusesSortTags.CUSTOM_LOOTBOX, 
+   'currencies': lambda b: BonusesSortTags.CUSTOM_CURRENCY}
 
 def getVehBonusSortKey(bonus):
     vehicle, vehInfo = first(bonus.getVehicles())
@@ -129,7 +132,8 @@ def getTokensSortKey(bonus, guiLootBoxController=None):
 BONUSES_KEY_FUNC = {'items': lambda b: first(b.getItems()), 
    'crewBooks': lambda b: first(b.getItems()), 
    'vehicles': getVehBonusSortKey, 
-   'battleToken': getTokensSortKey}
+   'battleToken': getTokensSortKey, 
+   'lbStyleProgress': lambda b: b.getProgressLevel()}
 
 def _defaultBonusKeyFunc(bonus):
     return bonus.getName()
@@ -157,6 +161,7 @@ def getStatisticSortKeyFunc(order):
        Currency.GOLD: lambda b: __CURRENCY_ORDER.index(b.getName()), 
        Currency.CRYSTAL: lambda b: __CURRENCY_ORDER.index(b.getName()), 
        Currency.FREE_XP: lambda b: __CURRENCY_ORDER.index(b.getName()), 
-       Currency.EQUIP_COIN: lambda b: __CURRENCY_ORDER.index(b.getName())}
+       Currency.EQUIP_COIN: lambda b: __CURRENCY_ORDER.index(b.getName()), 
+       'lbStyleProgress': lambda b: b.getProgressLevel()}
     return lambda b: (
      order.index(getBonusSortTag(b)), mapping.get(b.getName(), _defaultBonusKeyFunc)(b))

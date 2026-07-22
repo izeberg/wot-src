@@ -14,7 +14,7 @@
 			<type>attach</type>
 			<frame>
 				<startTime>0.000000</startTime>
-				<duration>6.333333</duration>
+				<duration>7.766667</duration>
 				<value>Root|</value>
 			</frame>
 		</track>
@@ -30,12 +30,12 @@
 			</frame>
 		</track>
 		<track>
-			<name>ay_ep_08_seq_stage_09</name>
+			<name>ay_ep_09_seq_stage_09</name>
 			<type>sound</type>
 			<frame>
 				<startTime>0.000000</startTime>
-				<duration>6.266667</duration>
-				<sequenceSound>ay_ep_08_seq_stage_09</sequenceSound>
+				<duration>7.761229</duration>
+				<sequenceSound>ay_seq_stage_09</sequenceSound>
 				<type>play_till_end</type>
 				<fade>0.000000</fade>
 			</frame>
@@ -44,7 +44,8 @@
 	<sequenceObject>
 		<name>stg_9_transmission</name>
 		<type>model</type>
-		<resource>content/Hangars/h00_armory_yard/environment/Constructor/A176_OTAC_LK_7605/normal/lod0/stg_9_transmission_xray.model</resource>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/GB142_FV249_Castle/normal/lod0/stg_9_transmission_xray.model</resource>
+		<castsShadow>false</castsShadow>
 		<track>
 			<name>visibility</name>
 			<type>bool</type>

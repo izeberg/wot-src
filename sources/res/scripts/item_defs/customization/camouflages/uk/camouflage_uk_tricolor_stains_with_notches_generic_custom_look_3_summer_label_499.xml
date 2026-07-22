@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<xmlns:ussr>ussr</xmlns:ussr>
+	<xmlns:germany>germany</xmlns:germany>
+	<xmlns:usa>usa</xmlns:usa>
+	<xmlns:china>china</xmlns:china>
+	<xmlns:france>france</xmlns:france>
+	<xmlns:uk>uk</xmlns:uk>
+	<xmlns:japan>japan</xmlns:japan>
+	<xmlns:czech>czech</xmlns:czech>
+	<xmlns:sweden>sweden</xmlns:sweden>
+	<xmlns:poland>poland</xmlns:poland>
+	<xmlns:italy>italy</xmlns:italy>
+	<xmlns:intunion>intunion</xmlns:intunion>
+	<itemGroup>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
+		<season>ALL</season>
+		<historical>0</historical>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<include>
+				<vehicles>uk:GB09_Churchill_VII uk:GB10_Black_Prince</vehicles>
+			</include>
+		</vehicleFilter>
+		<camouflage>
+			<id>499</id>
+			<texture>vehicles/british/Camouflage/GB_1_stains_with_notches.dds</texture>
+			<description>#vehicle_customization:camouflage/uk/tricolor/stains_with_notches_generic_custom_look_3_summer/description</description>
+			<scales>
+				1.3 1 0.8
+				<!--BW_String-->
+			</scales>
+			<userString>#vehicle_customization:camouflage/uk/tricolor/stains_with_notches_generic_custom_look_3_summer/label</userString>
+			<tags>hiddenInUI</tags>
+			<invisibilityFactor>1</invisibilityFactor>
+			<palettes>
+				<palette>
+					<c0>42 53 29 255</c0>
+					<c1>160 148 134 127</c1>
+					<c2>101 107 94 0</c2>
+					<c3>79 89 73 255</c3>
+				</palette>
+			</palettes>
+			<rotation>
+				<HULL>
+					-1.45718
+					<!--BW_String-->
+				</HULL>
+				<TURRET>
+					-1.45718
+					<!--BW_String-->
+				</TURRET>
+				<GUN>
+					-1.45718
+					<!--BW_String-->
+				</GUN>
+			</rotation>
+			<tiling>
+				<uk:GB09_Churchill_VII>
+					1.64 1.64 0.000000 0.26
+					<!--BW_String-->
+				</uk:GB09_Churchill_VII>
+				<uk:GB10_Black_Prince>
+					3.96 3.96 0.18 0.28
+					<!--BW_String-->
+				</uk:GB10_Black_Prince>
+			</tiling>
+			<tilingSettings>
+				<type>relative</type>
+				<factor>
+					2.49113 2.48982
+					<!--BW_String-->
+				</factor>
+				<offset>0.000000 0.000000</offset>
+			</tilingSettings>
+		</camouflage>
+	</itemGroup>
+</root>

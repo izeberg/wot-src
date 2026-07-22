@@ -183,6 +183,48 @@
 				</item>
 			</value>
 		</scene>
+		<scene>
+			<name>missions</name>
+			<type>dict</type>
+			<value>
+				<item>
+					<name>sceneID</name>
+					<value>MissionsPage</value>
+				</item>
+				<item>
+					<name>event</name>
+					<value>missions</value>
+				</item>
+			</value>
+		</scene>
+		<scene>
+			<name>BattleMattersMissionView</name>
+			<type>dict</type>
+			<value>
+				<item>
+					<name>sceneID</name>
+					<value>MissionsPage</value>
+				</item>
+				<item>
+					<name>event</name>
+					<value>missions</value>
+				</item>
+			</value>
+		</scene>
+		<scene>
+			<name>TankAcademyMainView</name>
+			<type>dict</type>
+			<value>
+				<item>
+					<name>sceneID</name>
+					<value>MissionsPage</value>
+				</item>
+				<item>
+					<name>event</name>
+					<value>missions</value>
+				</item>
+			</value>
+		</scene>
 	</scenes>
 	<gui-items>
 		<item>
@@ -1517,7 +1559,7 @@
 						<item>
 							<name>left</name>
 							<type>float</type>
-							<value>-40</value>
+							<value>0</value>
 						</item>
 						<item>
 							<name>top</name>
@@ -1527,7 +1569,7 @@
 						<item>
 							<name>right</name>
 							<type>float</type>
-							<value>-40</value>
+							<value>0</value>
 						</item>
 						<item>
 							<name>bottom</name>
@@ -1610,6 +1652,126 @@
 									<value>5</value>
 								</item>
 							</value>
+						</item>
+					</value>
+				</item>
+			</value>
+		</item>
+		<item>
+			<name>TankAcademyResearchItemNodeButton</name>
+			<type>dict</type>
+			<value>
+				<item>
+					<name>view</name>
+					<value>research</value>
+				</item>
+				<item>
+					<name>path</name>
+					<value>researchItems:ResearchItemNode?%ResearchItemNodeID%.button</value>
+				</item>
+				<item>
+					<name>padding</name>
+					<type>dict</type>
+					<value>
+						<item>
+							<name>left</name>
+							<type>float</type>
+							<value>-4</value>
+						</item>
+						<item>
+							<name>top</name>
+							<type>float</type>
+							<value>-14</value>
+						</item>
+						<item>
+							<name>right</name>
+							<type>float</type>
+							<value>-4</value>
+						</item>
+						<item>
+							<name>bottom</name>
+							<type>float</type>
+							<value>-2</value>
+						</item>
+					</value>
+				</item>
+			</value>
+		</item>
+		<item>
+			<name>TankAcademyBuyModuleDialogAcceptButton</name>
+			<type>dict</type>
+			<value>
+				<item>
+					<name>view</name>
+					<value>R.views.lobby.research.BuyModuleDialogView</value>
+				</item>
+				<item>
+					<name>path</name>
+					<value>div[id=buy-module-dialog-accept]</value>
+				</item>
+				<item>
+					<name>padding</name>
+					<type>dict</type>
+					<value>
+						<item>
+							<name>left</name>
+							<type>float</type>
+							<value>0</value>
+						</item>
+						<item>
+							<name>top</name>
+							<type>float</type>
+							<value>0</value>
+						</item>
+						<item>
+							<name>right</name>
+							<type>float</type>
+							<value>0</value>
+						</item>
+						<item>
+							<name>bottom</name>
+							<type>float</type>
+							<value>0</value>
+						</item>
+					</value>
+				</item>
+			</value>
+		</item>
+		<item>
+			<name>TankAcademyBuyModuleDialogCancelButton</name>
+			<type>dict</type>
+			<value>
+				<item>
+					<name>view</name>
+					<value>R.views.lobby.research.BuyModuleDialogView</value>
+				</item>
+				<item>
+					<name>path</name>
+					<value>div[id=buy-module-dialog-cancel]</value>
+				</item>
+				<item>
+					<name>padding</name>
+					<type>dict</type>
+					<value>
+						<item>
+							<name>left</name>
+							<type>float</type>
+							<value>0</value>
+						</item>
+						<item>
+							<name>top</name>
+							<type>float</type>
+							<value>0</value>
+						</item>
+						<item>
+							<name>right</name>
+							<type>float</type>
+							<value>0</value>
+						</item>
+						<item>
+							<name>bottom</name>
+							<type>float</type>
+							<value>0</value>
 						</item>
 					</value>
 				</item>
@@ -4777,7 +4939,7 @@
 			</value>
 		</item>
 		<item>
-			<name>PostbattleExtraTab</name>
+			<name>PostbattleTeamStatsTab</name>
 			<type>dict</type>
 			<value>
 				<item>
@@ -4786,7 +4948,7 @@
 				</item>
 				<item>
 					<name>path</name>
-					<value>tabs_mc:TabButtonUI?viewId=PostbattleExtraTabUI</value>
+					<value>tabs_mc:TabButtonUI?viewId=GiftSystemTeamStatsUI</value>
 				</item>
 				<item>
 					<name>padding</name>
@@ -5067,6 +5229,46 @@
 				<item>
 					<name>path</name>
 					<value>div[id=battle-matters-entry-point]</value>
+				</item>
+				<item>
+					<name>padding</name>
+					<type>dict</type>
+					<value>
+						<item>
+							<name>left</name>
+							<type>float</type>
+							<value>0</value>
+						</item>
+						<item>
+							<name>top</name>
+							<type>float</type>
+							<value>0</value>
+						</item>
+						<item>
+							<name>right</name>
+							<type>float</type>
+							<value>0</value>
+						</item>
+						<item>
+							<name>bottom</name>
+							<type>float</type>
+							<value>0</value>
+						</item>
+					</value>
+				</item>
+			</value>
+		</item>
+		<item>
+			<name>TankAcademyEntryPoint</name>
+			<type>dict</type>
+			<value>
+				<item>
+					<name>view</name>
+					<value>R.views.tank_academy.lobby.tank_academy.TankAcademyEntryPointView</value>
+				</item>
+				<item>
+					<name>path</name>
+					<value>div[id=entry-point-content]</value>
 				</item>
 				<item>
 					<name>padding</name>

@@ -27,6 +27,8 @@ from .py_object_wrappers import getRealFormat
 from .py_object_wrappers import getTimeFormat
 from .py_object_wrappers import getDateFormat
 from .py_object_wrappers import caseMap
+from .py_object_wrappers import ResourceType
+from .py_object_wrappers import ResourceDescriptor
 from .view.array import Array
 from .view.command import Command
 from .view.view import ViewSettings
@@ -44,4 +46,4 @@ __all__ = ('GuiApplication', 'PropertyType', 'PositionAnchor', 'ViewFlags', 'Vie
            'getTranslatedText', 'getTranslatedPluralText', 'getImagePath', 'getSoundEffectId',
            'getLayoutPath', 'getTranslatedTextByResId', 'getTranslatedPluralTextByResId',
            'getTranslatedKey', 'getNumberFormat', 'getRealFormat', 'getTimeFormat',
-           'getDateFormat', 'caseMap')
+           'getDateFormat', 'caseMap', 'ResourceType', 'ResourceDescriptor')

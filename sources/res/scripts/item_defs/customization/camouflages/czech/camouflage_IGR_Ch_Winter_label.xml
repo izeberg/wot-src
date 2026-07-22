@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<xmlns:ussr>ussr</xmlns:ussr>
+	<xmlns:germany>germany</xmlns:germany>
+	<xmlns:usa>usa</xmlns:usa>
+	<xmlns:china>china</xmlns:china>
+	<xmlns:france>france</xmlns:france>
+	<xmlns:uk>uk</xmlns:uk>
+	<xmlns:japan>japan</xmlns:japan>
+	<xmlns:czech>czech</xmlns:czech>
+	<xmlns:sweden>sweden</xmlns:sweden>
+	<xmlns:poland>poland</xmlns:poland>
+	<xmlns:italy>italy</xmlns:italy>
+	<xmlns:intunion>intunion</xmlns:intunion>
+	<itemGroup>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
+		<season>winter</season>
+		<historical>1</historical>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<include>
+				<nations>czech</nations>
+			</include>
+		</vehicleFilter>
+		<camouflage>
+			<id>15709</id>
+			<texture>vehicles/chinese/Camouflage/IGR_Ch_Winter.dds</texture>
+			<description>#vehicle_customization:camouflage/IGR_Ch_Winter/description</description>
+			<scales>
+				1.3 1 0.7
+				<!--BW_String-->
+			</scales>
+			<userString>#vehicle_customization:camouflage/IGR_Ch_Winter/label</userString>
+			<tags>premiumIGR</tags>
+			<invisibilityFactor>1</invisibilityFactor>
+			<palettes>
+				<palette>
+					<c0>54 47 35 255</c0>
+					<c1>91 73 57 255</c1>
+					<c2>132 114 70 255</c2>
+					<c3>157 141 108 255</c3>
+				</palette>
+			</palettes>
+			<tiling>
+				<Cz01_Skoda_T40>
+					1.4 1.4 0.48 0.2
+					<!--BW_String-->
+				</Cz01_Skoda_T40>
+				<Cz02_TVP_T50>
+					1.8 1.8 0.000000 0.08
+					<!--BW_String-->
+				</Cz02_TVP_T50>
+				<Cz02_TVP_T50_FL>
+					1.8 1.8 0.000000 0.08
+					<!--BW_String-->
+				</Cz02_TVP_T50_FL>
+				<Cz03_LT_vz35>
+					5 5 0.5 0.13
+					<!--BW_String-->
+				</Cz03_LT_vz35>
+				<Cz04_T50_51>
+					4.8 4.8 0.000000 0.000000
+					<!--BW_String-->
+				</Cz04_T50_51>
+				<Cz05_T34_100>
+					7.2 7.2 0.000000 0.000000
+					<!--BW_String-->
+				</Cz05_T34_100>
+				<Cz06_Kolohousenka>
+					2.9 2.9 0.91 0.81
+					<!--BW_String-->
+				</Cz06_Kolohousenka>
+				<Cz07_TVP_46>
+					3.6 3.6 0.22 0.44
+					<!--BW_String-->
+				</Cz07_TVP_46>
+				<Cz08_T_25>
+					1.8 1.8 0.000000 0.45
+					<!--BW_String-->
+				</Cz08_T_25>
+				<Cz09_T_24>
+					3.4 3.4 0.000000 0.000000
+					<!--BW_String-->
+				</Cz09_T_24>
+				<Cz10_LT_vz38>
+					2 2 0.000000 0.000000
+					<!--BW_String-->
+				</Cz10_LT_vz38>
+				<Cz11_V_8_H>
+					2.2 2.2 0.000000 0.000000
+					<!--BW_String-->
+				</Cz11_V_8_H>
+				<czech:Cz13_T_27>
+					2.93 2.93 3.12 5.63
+					<!--BW_String-->
+				</czech:Cz13_T_27>
+			</tiling>
+			<tilingSettings>
+				<type>relative</type>
+				<factor>
+					2.082269  2.082755
+					<!--BW_String-->
+				</factor>
+				<offset>0.000000 0.000000</offset>
+			</tilingSettings>
+		</camouflage>
+	</itemGroup>
+</root>

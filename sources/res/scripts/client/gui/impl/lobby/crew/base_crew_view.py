@@ -1,4 +1,4 @@
-from typing import TYPE_CHECKING, Optional
+from typing import TYPE_CHECKING, Optional, Union
 from AccountCommands import LOCK_REASON
 from PlayerEvents import g_playerEvents
 from crew_sounds import CREW_SOUND_SPACE, CREW_SOUND_OVERLAY_SPACE
@@ -251,5 +251,5 @@ class BaseCrewView(BaseCrewSoundView, IGlobalListener):
         self.destroyWindow()
 
     def _onVehicleLockChanged(self, vehInvID, lockReason):
-        if lockReason[0] in (LOCK_REASON.PREBATTLE, LOCK_REASON.UNIT):
+        if lockReason and lockReason[0] in (LOCK_REASON.PREBATTLE, LOCK_REASON.UNIT):
             self._destroySubViews()

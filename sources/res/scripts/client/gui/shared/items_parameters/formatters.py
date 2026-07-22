@@ -291,10 +291,12 @@ def isDiffEnoughToDisplay(value):
 
 
 def getParameterSmallIconPath(parameter):
+    parameter = _getResAvailable(R.images.gui.maps.icons.vehParams.small, parameter)
     return RES_ICONS.MAPS_ICONS_VEHPARAMS_SMALL + '/%s.png' % parameter
 
 
 def getParameterBigIconPath(parameter):
+    parameter = _getResAvailable(R.images.gui.maps.icons.vehParams.big, parameter)
     return RES_ICONS.MAPS_ICONS_VEHPARAMS_BIG + '/%s.png' % parameter
 
 
@@ -405,8 +407,14 @@ def _getRoundReload(value):
     return backport.getNiceNumberFormat(round(value, 1))
 
 
-FORMAT_SETTINGS = {'relativePower': _integralFormat, 
-   'damage': _niceRangeFormat, 
+def _getResAvailable(resPath, parameter):
+    resId = resPath.dyn(parameter)
+    if resId.exists():
+        return parameter
+    return 'param_not_found'
+
+
+FORMAT_SETTINGS = {'relativePower': _integralFormat, 'damage': _niceRangeFormat, 
    DISTANCE_DAMAGE_PROP_NAME: _niceRangeFormat, 
    'piercingPower': _niceRangeFormat, 
    'reloadTime': _niceRangeFormat, 

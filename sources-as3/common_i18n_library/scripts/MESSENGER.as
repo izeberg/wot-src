@@ -2097,6 +2097,18 @@ package
       
       public static const SERVICECHANNELMESSAGES_EXCLUDEDMAP_UNAVAILABLE_TITLE:String = "#messenger:serviceChannelMessages/excludedMap/unavailable/title";
       
+      public static const SERVICECHANNELMESSAGES_EXCLUDEDMAP_SUBSCRIPTION_HEADER:String = "#messenger:serviceChannelMessages/excludedMap/subscription/header";
+      
+      public static const SERVICECHANNELMESSAGES_EXCLUDEDMAP_SUBSCRIPTION_ENABLED:String = "#messenger:serviceChannelMessages/excludedMap/subscription/enabled";
+      
+      public static const SERVICECHANNELMESSAGES_EXCLUDEDMAP_SUBSCRIPTION_DISABLED:String = "#messenger:serviceChannelMessages/excludedMap/subscription/disabled";
+      
+      public static const SERVICECHANNELMESSAGES_EXCLUDEDMAP_EVENT_HEADER:String = "#messenger:serviceChannelMessages/excludedMap/event/header";
+      
+      public static const SERVICECHANNELMESSAGES_EXCLUDEDMAP_EVENT_ENABLED:String = "#messenger:serviceChannelMessages/excludedMap/event/enabled";
+      
+      public static const SERVICECHANNELMESSAGES_EXCLUDEDMAP_EVENT_DISABLED:String = "#messenger:serviceChannelMessages/excludedMap/event/disabled";
+      
       public static const SERVICECHANNELMESSAGES_CURRENCIESRESERVES_SMASH_TITLE:String = "#messenger:serviceChannelMessages/currenciesReserves/smash/title";
       
       public static const SERVICECHANNELMESSAGES_WOTPLUS_UNLOCKMESSAGE_TITLE:String = "#messenger:serviceChannelMessages/wotPlus/unlockMessage/title";
@@ -2457,34 +2469,6 @@ package
       
       public static const SERVICECHANNELMESSAGES_NEWYEARMANDARINSCONVERT_TEXT:String = "#messenger:serviceChannelMessages/newYearMandarinsConvert/text";
       
-      public static const SERVICECHANNELMESSAGES_PLAYSTREAKCONGRATS_HEADER:String = "#messenger:serviceChannelMessages/playStreakCongrats/header";
-      
-      public static const SERVICECHANNELMESSAGES_PLAYSTREAKCONGRATSWITHREWARDS_PERIODIC_BODY:String = "#messenger:serviceChannelMessages/playStreakCongratsWithRewards/periodic/body";
-      
-      public static const SERVICECHANNELMESSAGES_PLAYSTREAKCONGRATSWITHREWARDS_REGULAR_BODY:String = "#messenger:serviceChannelMessages/playStreakCongratsWithRewards/regular/body";
-      
-      public static const SERVICECHANNELMESSAGES_PLAYSTREAKCONGRATSWITHREWARDS_RANDOM_PREFIX:String = "#messenger:serviceChannelMessages/playStreakCongratsWithRewards/random/prefix";
-      
-      public static const SERVICECHANNELMESSAGES_PLAYSTREAKCONGRATSWITHREWARDS_RANDOM_EQUIPMENT:String = "#messenger:serviceChannelMessages/playStreakCongratsWithRewards/random/equipment";
-      
-      public static const SERVICECHANNELMESSAGES_PLAYSTREAKCONGRATSWITHREWARDS_RANDOM_GOODIE:String = "#messenger:serviceChannelMessages/playStreakCongratsWithRewards/random/goodie";
-      
-      public static const SERVICECHANNELMESSAGES_PLAYSTREAKCONGRATSWITHOUTREWARDS_BODY:String = "#messenger:serviceChannelMessages/playStreakCongratsWithoutRewards/body";
-      
-      public static const SERVICECHANNELMESSAGES_PLAYSTREAKPAUSEUSED_BODY:String = "#messenger:serviceChannelMessages/playStreakPauseUsed/body";
-      
-      public static const SERVICECHANNELMESSAGES_PLAYSTREAKDROPPROGRESS_BODY:String = "#messenger:serviceChannelMessages/playStreakDropProgress/body";
-      
-      public static const SERVICECHANNELMESSAGES_PLAYSTREAKUNAVAILABLE_BODY:String = "#messenger:serviceChannelMessages/playStreakUnavailable/body";
-      
-      public static const SERVICECHANNELMESSAGES_PLAYSTREAKAVAILABLE_BODY:String = "#messenger:serviceChannelMessages/playStreakAvailable/body";
-      
-      public static const SERVICECHANNELMESSAGES_PLAYSTREAKFREEZES_BODY:String = "#messenger:serviceChannelMessages/playStreakFreezes/body";
-      
-      public static const SERVICECHANNELMESSAGES_PLAYSTREAKFREEZESINPROGRESS_BODY:String = "#messenger:serviceChannelMessages/playStreakFreezesInProgress/body";
-      
-      public static const SERVICECHANNELMESSAGES_PLAYSTREAKFREEZESEND_BODY:String = "#messenger:serviceChannelMessages/playStreakFreezesEnd/body";
-      
       public static const SERVICECHANNELMESSAGES_LIMITEDUICONTENTUNLOCKED_TITLE:String = "#messenger:serviceChannelMessages/limitedUIContentUnlocked/title";
       
       public static const SERVICECHANNELMESSAGES_LIMITEDUICONTENTUNLOCKED_BATTLEMODES:String = "#messenger:serviceChannelMessages/limitedUIContentUnlocked/battleModes";
@@ -2530,6 +2514,10 @@ package
       public static const SERVICECHANNELMESSAGES_TRADINGCARAVANCOINADDED_BODY:String = "#messenger:serviceChannelMessages/tradingCaravanCoinAdded/body";
       
       public static const SERVICECHANNELMESSAGES_PARAGONS_BODY:String = "#messenger:serviceChannelMessages/paragons/body";
+      
+      public static const PLATFORMCURRENCYMSG_RECEIVED_GOLDENTICKET:String = "#messenger:platformCurrencyMsg/received/goldenticket";
+      
+      public static const PLATFORMCURRENCYMSG_DEBITED_GOLDENTICKET:String = "#messenger:platformCurrencyMsg/debited/goldenticket";
       
       public static const SERVICECHANNELMESSAGES_LIMITEDUIPLATOONLOCKED_TITLE:String = "#messenger:serviceChannelMessages/limitedUIPlatoonLocked/title";
       

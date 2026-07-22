@@ -1,5 +1,5 @@
-from math import ceil
 import BigWorld
+from math import ceil
 from OwnVehicleBase import Cooldowns
 from ReloadEffect import ReloadType
 from constants import DUAL_GUN, ARENA_PERIOD
@@ -48,7 +48,7 @@ class DualGunHelper(IDualGunHelper):
             if gunStates[secondGun] == DUAL_GUN.GUN_STATE.RELOADING:
                 reloadingGun = secondGun
             if reloadingGun is not None:
-                ammoCtrl.triggerReloadEffect(cooldownTimes[reloadingGun].leftTime, cooldownTimes[reloadingGun].baseTime, ReloadType.DUALGUN)
+                ammoCtrl.triggerReloadEffect(cooldownTimes[reloadingGun].leftTime, cooldownTimes[reloadingGun].baseTime, ReloadType.DUALGUN, reloadingGun)
         if gunStates[activeGun] == DUAL_GUN.GUN_STATE.RELOADING:
             if not self.__debuffTrigger:
                 __callReloadTimeWrapper(cooldownTimes[activeGun].leftTime, cooldownTimes[activeGun].baseTime)
@@ -132,7 +132,7 @@ class DualGunClipAutoReloadHelper(IDualGunHelper):
             if gunStates[secondGun] == DUAL_GUN.GUN_STATE.RELOADING:
                 reloadingGun = secondGun
             if reloadingGun is not None:
-                ammoCtrl.triggerReloadEffect(cooldownTimes[reloadingGun].leftTime, cooldownTimes[reloadingGun].baseTime, ReloadType.DUALGUN)
+                ammoCtrl.triggerReloadEffect(cooldownTimes[reloadingGun].leftTime, cooldownTimes[reloadingGun].baseTime, ReloadType.DUALGUN, reloadingGun)
             _, canShotState = ammoCtrl.canShoot()
             _, shellsInClip = ammoCtrl.getCurrentShells()
             burstSize = ammoCtrl.getGunSettings().burst.size

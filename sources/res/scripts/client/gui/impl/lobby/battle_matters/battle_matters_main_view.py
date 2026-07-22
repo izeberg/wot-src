@@ -31,7 +31,7 @@ from helpers import dependency
 from skeletons.account_helpers.settings_core import ISettingsCore
 from skeletons.gui.app_loader import IAppLoader
 from skeletons.gui.battle_matters import IBattleMattersController
-from skeletons.gui.game_control import IManualController, IBootcampController
+from skeletons.gui.game_control import IManualController, IBootcampController, ITankAcademyController
 from skeletons.gui.server_events import IEventsCache
 from skeletons.gui.shared import IItemsCache
 from skeletons.gui.lobby_context import ILobbyContext
@@ -44,6 +44,7 @@ _logger = logging.getLogger(__name__)
 class BattleMattersMissionComponent(InjectComponentAdaptor, BattleMattersViewMeta):
     __slots__ = ()
     __battleMattersController = dependency.descriptor(IBattleMattersController)
+    __tankAcademyController = dependency.descriptor(ITankAcademyController)
     __settingsCore = dependency.descriptor(ISettingsCore)
 
     @nextTick
@@ -76,10 +77,12 @@ class BattleMattersMissionComponent(InjectComponentAdaptor, BattleMattersViewMet
 
     def _onPopulate(self):
         self.__battleMattersController.onStateChanged += self.__onStateChanged
+        self.__tankAcademyController.onStateChanged += self.__onTankAcademyStateChanged
         self.__checkHint()
 
     def _destroy(self):
         self.__battleMattersController.onStateChanged -= self.__onStateChanged
+        self.__tankAcademyController.onStateChanged -= self.__onTankAcademyStateChanged
         super(BattleMattersMissionComponent, self)._destroy()
 
     def _onViewReady(self, *args):
@@ -87,6 +90,14 @@ class BattleMattersMissionComponent(InjectComponentAdaptor, BattleMattersViewMet
             self.as_showViewS()
 
     def _getComponentClass(self, openMainRewardView=False, openVehicleSelection=False, openMainView=False, **kwargs):
+        if self.__tankAcademyController.isEnabled():
+            if openVehicleSelection:
+                from tank_academy.gui.impl.lobby.tank_academy.tank_academy_vehicles_selection_view import TankAcademyVehiclesSelectionView
+                return (
+                 TankAcademyVehiclesSelectionView, [kwargs.get('tokenID')])
+            from tank_academy.gui.impl.lobby.tank_academy.tank_academy_main_view import TankAcademyMainView
+            return (
+             TankAcademyMainView, [])
         if self.__battleMattersController.isPaused():
             return (BattleMattersPausedView, [])
         if openMainRewardView or openVehicleSelection or openMainView:
@@ -103,6 +114,13 @@ class BattleMattersMissionComponent(InjectComponentAdaptor, BattleMattersViewMet
         controller = self.__battleMattersController
         if controller.isEnabled() and (not controller.isFinished() or controller.hasUnobtainedDelayedRewards()) and controller.isValidConfiguration():
             showBattleMatters()
+        else:
+            showHangar()
+
+    def __onTankAcademyStateChanged(self):
+        controller = self.__tankAcademyController
+        if controller.isEnabled() and (not controller.isFinished() or controller.hasUnobtainedDelayedRewards()) and controller.isValidConfiguration():
+            showBattleMattersMainView()
         else:
             showHangar()
 

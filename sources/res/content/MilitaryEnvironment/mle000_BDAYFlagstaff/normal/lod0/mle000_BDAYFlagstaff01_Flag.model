@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>content/MilitaryEnvironment/mle000_BDAYFlagstaff/normal/lod0/mle000_BDAYFlagstaff01_Flag</nodefullVisual>
+	<visibilityBox>
+		<min>-0.518975 -0.676719 -0.041890</min>
+		<max>0.508539 0.173609 1.427559</max>
+	</visibilityBox>
+	<parent>content/MilitaryEnvironment/mle000_BDAYFlagstaff/normal/lod1/mle000_BDAYFlagstaff01_Flag</parent>
+	<extent>96.000000</extent>
+	<animation>
+		<name>FlagAnimAction</name>
+		<animationClip>
+			<resource>content/MilitaryEnvironment/mle000_BDAYFlagstaff/Animation/flag_balls.fbx</resource>
+			<clipName/>
+		</animationClip>
+	</animation>
+</root>

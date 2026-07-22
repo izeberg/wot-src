@@ -97,6 +97,11 @@
 			<UUID>3df50c14-0475-472b-8334-3abf12623845</UUID>
 			<flags>0</flags>
 		</GameObject>
+		<GameObject>
+			<name>ay_ambient_street</name>
+			<UUID>1831532d-fc45-46a9-8e1c-dcdffcb589d3</UUID>
+			<flags>0</flags>
+		</GameObject>
 	</GameObjects>
 	<components>
 		<ComponentPool>
@@ -274,6 +279,16 @@
 			</component>
 			<component>
 				<objectIndex>18</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>8844560d-a205-4167-ae9b-405ed36a1df4</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>19</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -682,6 +697,27 @@
 					</property>
 				</config>
 			</component>
+			<component>
+				<objectIndex>19</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							1.78053 2.6061 -19.2333
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
 		</ComponentPool>
 		<ComponentPool>
 			<type>Sound3D</type>
@@ -1003,6 +1039,24 @@
 					<property>
 						<name>Event name</name>
 						<value>ay_ambient_small_tools</value>
+					</property>
+					<property>
+						<name>AutoStart</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>19</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Object name</name>
+						<value>ay_ambient_street</value>
+					</property>
+					<property>
+						<name>Event name</name>
+						<value>ay_ambient_street</value>
 					</property>
 					<property>
 						<name>AutoStart</name>

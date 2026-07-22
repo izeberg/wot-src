@@ -6,11 +6,63 @@
 		<preloadVisual>particles/mesh_particles/environment/Lightning_mesh_03.visual</preloadVisual>
 		<preloadTextures>
 			<path>
-				particles/content_forward/pfx_textures/eff_tex.dds
+				particles/content_forward/pfx_textures/eff_tex_split_misc_2.dds
 				<type>primary</type>
 			</path>
 			<path>
-				particles/content_forward/pfx_textures/eff_tex_long.dds
+				particles/content_forward/pfx_textures/eff_tex_split_smoke_5.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_split_dirt.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_split_splash_3.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_split_misc_7.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_split_smoke_4.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_split_fire_smoke_1.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_split_misc_3.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_split_fire_2.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_split_misc_6.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_split_smoke_3.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_split_misc_4.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/lightning_02.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_split_fire_5.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_split_smoke_6.dds
 				<type>primary</type>
 			</path>
 			<path>
@@ -22,7 +74,39 @@
 				<type>primary</type>
 			</path>
 			<path>
-				particles/content_forward/pfx_textures/lightning_02.dds
+				particles/content_forward/pfx_textures/eff_tex_split_fire_1.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_split_misc_5.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_split_fire_4.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_split_smoke_7.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_split_sparks.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_split_smoke_8.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_long.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_28_desert.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_split_splash_4.dds
 				<type>primary</type>
 			</path>
 			<path>
@@ -30,38 +114,46 @@
 				<type>primary</type>
 			</path>
 		</preloadTextures>
-		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/bld_19_04_ampitheratre_columnruin_01.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/bld_19_04_ampitheratre_columnruin_04.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/hd_bld_af_001_vhouse_ruins_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/hd_bld_af_001_vhouse_ruins_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/hd_bld_af_004_vhouse_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/hd_bld_af_005_barracks_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/hd_bld_af_006_vhouse_01.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/inf_bld_19_04_ampitheratre_wallruin_02.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/inf_bld_19_04_ampitheratre_wallruin_04.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/inf_bld_19_04_ampitheratre_wallruin_05.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/inf_bld_uni_000_base_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/inf_bldaf_module_01.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/inf_env_uni_653_oldsailboat.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/inf_mle002_kpp_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/inf_mle002_kpp_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/interior/31_airfield_dust_devil.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/interior/31_airfield_dust_devil_p.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_env005_tun.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_env205_boats01.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_env_su_045_gazm20.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_env_su_045_gazm20_ram.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_mle_uni_026_canopy_03.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_mle_uni_811_camouflagetent_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_env021_pier_2.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_env021_pier_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_env034_wattledbasket.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_env414_pole_fall_1.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_env414_pole_touchdown.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_env418_oldgmercedes.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_env418_oldgmercedes1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_env601_bunchlogs3.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_env601_bunchlogs4.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_env601_bunchlogs5.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_env_112_14_tablecaffe_004.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_env_19_11_washingline_02.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_env611_tablebench.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_env_101_03_haystack_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_env_af_019_well.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_env_af_022_paintbag.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_env_af_023_foodtrailer.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_env_af_024_dyeing_01.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_env_af_024_dyeing_02.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_env_af_024_dyeing_03.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_env_af_026_cart.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_env_af_027_sheds.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_env_af_028_well.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_env_af_029_dryingthread.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_env_af_030_commodityshelf.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_env_af_033_tent.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_env_am_034_scaffold.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_env_uni_632_doraenv_04.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_envaf_003_claystove_1.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_envaf_003_claystove_2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_envaf_004_colortent_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_envaf_005_clayjug_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_envaf_006_barrelfuel_01.vfx</fn_effect_bin>
@@ -74,12 +166,12 @@
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_envaf_012_shed_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_envaf_012_shed_2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_envaf_013_cart.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_envam_011_truck_01.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_envam_011_truck_03.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_envam_002_barrels_01.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_envam_002_barrels_02_03.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_envam_002_barrels_04.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_envas_012_recyclebin4.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_envnw_002_marketshelves_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_envnw_002_marketshelves_03.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_fuel_env418_oldgmercedes.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_fuel_env608_sovbus.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_fuel_envaf_006_barellfuel2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_fuel_envaf_007_aircraftrefueller.vfx</fn_effect_bin>
@@ -87,43 +179,34 @@
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_fuel_mleaf_003_westlandlysander.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_gaf003_rabitzfence.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_gaf003_rabitzfence_end.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_gaf013_fencetile1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_gaf009_barbedwareend.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_gaf009_barbedwaretile1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_gaf011_fencetile_1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_gaf011_fencetile_2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_gafaf_001_clayfence_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_gafaf_001_clayfence_07.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_gafaf_001_clayfence_corner_01.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_hd_env_af_020_claystove_lifetime.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_mil005_kdp.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_mle009_boxcamouflage1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_mle009_boxcamouflage_detonation.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_mle013_watchtower.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_mle016_boxeshowitzer.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_mle019_gerboxes1.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_mle020_germotocycle.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_mle033_watchtower1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_mle046_bag1.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_mleaf_002_radiolocator.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_mleaf_003_westlandlysander.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_mleaf_004_hurricane.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_mlesu_83_02_opelblitz_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_shells_detonation_medium.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_shells_detonation_small.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/pfx/environment/plane_engine_1.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/pfx/environment/trees/broadleaves/inf_tree_bush_dry_fall.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/pfx/environment/trees/broadleaves/inf_tree_bush_dry_fall_small.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/pfx/environment/trees/broadleaves/inf_tree_bush_dry_touchdown.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/pfx/environment/trees/broadleaves/inf_tree_bush_dry_touchdown_small.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/pfx/environment/trees/broadleaves/inf_tree_bush_fall_small.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/scenarios/105_air_smoke_trail_dense.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/scenarios/121_lost_paradise_rpm03_load04.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/scenarios/31_airfield_dust_plane.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/trees/broadleaves/tree_linden_town_dry_23m_fall.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/trees/broadleaves/tree_linden_town_dry_23m_touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/trees/broadleaves/tree_olive_01_fall.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/trees/broadleaves/tree_olive_01_touchdown.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/pfx/environment/trees/broadleaves/tree_olive_03_fall.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/pfx/environment/trees/broadleaves/tree_olive_03_touchdown.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/pfx/environment/trees/conifers/inf_tree_scots_pine_fall_small.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/pfx/environment/trees/conifers/inf_tree_scots_pine_touchdown_small.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/trees/conifers/tree_acacia_african_01_fall.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/trees/conifers/tree_acacia_african_01_touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/trees/conifers/tree_bananapalm_01_fall.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/trees/conifers/tree_bananapalm_01_touchdown.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/pfx/environment/trees/conifers/tree_cypress_regular_6m_touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/trees/conifers/tree_pheonixpalm_big01_fall.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/trees/conifers/tree_pheonixpalm_big01_touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/trees/conifers/tree_pheonixpalm_medium_fall.vfx</fn_effect_bin>
@@ -131,45 +214,49 @@
 		<fn_effect_bin>particles/content_forward/pfx/environment/trees/conifers/tree_pheonixpalm_small01_fall.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/trees/conifers/tree_pheonixpalm_small01_touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/sparks/sparks_env_med.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/environment/buildings/bld_19_04_ampitheratre_columnruin_01.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/buildings/bld_19_04_ampitheratre_columnruin_04.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/buildings/hd_bld_af_001_vhouse_ruins_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/buildings/hd_bld_af_001_vhouse_ruins_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/buildings/hd_bld_af_004_vhouse_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/buildings/hd_bld_af_005_barracks_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/buildings/hd_bld_af_006_vhouse_01.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/buildings/inf_bld_19_04_ampitheratre_wallruin_02.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/buildings/inf_bld_19_04_ampitheratre_wallruin_04.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/buildings/inf_bld_19_04_ampitheratre_wallruin_05.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/buildings/inf_bld_uni_000_base_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/buildings/inf_bldaf_module_01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/buildings/inf_env_uni_653_oldsailboat.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/buildings/inf_mle002_kpp_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/buildings/inf_mle002_kpp_02.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/28_desert_shimmer_distant.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/31_airfield_dust_devil.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/31_airfield_lightning_01.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/31_airfield_rif_foam.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/31_airfield_rif_wave.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/31_airfield_roof_sand.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/31_airfield_sand_floor_ee.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/31_airfield_sea_tornado_sequence.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/31_airfield_shore_wave.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/31_airfield_shore_wave_splash.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/inf_env005_tun.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/hd_env205_boats01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/hd_env_su_045_gazm20.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/hd_env_su_045_gazm20_ram.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/hd_mle_uni_026_canopy_03.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/hd_mle_uni_811_camouflagetent_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_env021_pier_2.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/inf_env021_pier_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_env034_wattledbasket.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/inf_env414_pole_fall_1.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/inf_env414_pole_touchdown.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_env418_oldgmercedes1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_env601_bunchlogs3.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_env601_bunchlogs4.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_env601_bunchlogs5.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/inf_env_112_14_tablecaffe_004.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/inf_env_19_11_washingline_02.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_env611_tablebench.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_env_101_03_haystack_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_env_af_019_well.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_env_af_022_paintbag.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_env_af_023_foodtrailer.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_env_af_024_dyeing_01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_env_af_024_dyeing_02.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_env_af_024_dyeing_03.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_env_af_026_cart.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_env_af_027_sheds.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_env_af_028_well.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_env_af_029_dryingthread.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_env_af_030_commodityshelf.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_env_af_033_tent.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_env_am_034_scaffold.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_env_uni_632_doraenv_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_envaf_003_claystove_1.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/inf_envaf_003_claystove_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_envaf_004_colortent_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_envaf_005_clayjug_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_envaf_006_barrelfuel_01.eff</fn_effect_bin>
@@ -182,12 +269,12 @@
 		<fn_effect_bin>particles/environment/objects/inf_envaf_012_shed_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_envaf_012_shed_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_envaf_013_cart.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/inf_envam_011_truck_01.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/inf_envam_011_truck_03.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_envam_002_barrels_01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_envam_002_barrels_02_03.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_envam_002_barrels_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_envas_012_recyclebin4.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_envnw_002_marketshelves_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_envnw_002_marketshelves_03.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/inf_fuel_env418_oldgmercedes2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_fuel_env608_sovbus.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_fuel_envaf_006_barellfuel2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_fuel_envaf_007_aircraftrefueller.eff</fn_effect_bin>
@@ -195,43 +282,34 @@
 		<fn_effect_bin>particles/environment/objects/inf_fuel_mleaf_003_westlandlysander.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_gaf003_rabitzfence.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_gaf003_rabitzfence_end.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/inf_gaf013_fencetile1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_gaf009_barbedwareend.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_gaf009_barbedwaretile1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_gaf011_fencetile_1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_gaf011_fencetile_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_gafaf_001_clayfence_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_gafaf_001_clayfence_07.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_gafaf_001_clayfence_corner_01.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/inf_hd_env_af_020_claystove_lifetime.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_mil005_kdp.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_mle009_boxcamouflage1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_mle009_boxcamouflage_detonation.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/inf_mle013_watchtower.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/inf_mle016_boxeshowitzer.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_mle019_gerboxes1.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/inf_mle020_germotocycle.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_mle033_watchtower1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_mle046_bag1.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/inf_mleaf_002_radiolocator.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_mleaf_003_westlandlysander.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_mleaf_004_hurricane.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/inf_mlesu_83_02_opelblitz_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_shells_detonation_medium.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_shells_detonation_small.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/plane_engine_1.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/trees/broadleaves/inf_tree_bush_dry_fall.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/trees/broadleaves/inf_tree_bush_dry_fall_small.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/trees/broadleaves/inf_tree_bush_dry_touchdown.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/trees/broadleaves/inf_tree_bush_dry_touchdown_small.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/trees/broadleaves/inf_tree_bush_fall_small.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/scenarios/105_air_smoke_trail_dense.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/scenarios/121_lost_paradise_rpm03_load04.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/scenarios/31_airfield_dust_plane.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/trees/broadleaves/tree_linden_town_dry_23m_fall.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/trees/broadleaves/tree_linden_town_dry_23m_touchdown.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/trees/broadleaves/tree_olive_01_fall.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/trees/broadleaves/tree_olive_01_touchdown.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/trees/broadleaves/tree_olive_03_fall.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/trees/broadleaves/tree_olive_03_touchdown.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/trees/conifers/inf_tree_scots_pine_fall_small.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/trees/conifers/inf_tree_scots_pine_touchdown_small.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/trees/conifers/tree_acacia_african_01_fall.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/trees/conifers/tree_acacia_african_01_touchdown.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/trees/conifers/tree_bananapalm_01_fall.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/trees/conifers/tree_bananapalm_01_touchdown.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/trees/conifers/tree_cypress_regular_6m_touchdown.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/trees/conifers/tree_pheonixpalm_big01_fall.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/trees/conifers/tree_pheonixpalm_big01_touchdown.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/trees/conifers/tree_pheonixpalm_medium_fall.eff</fn_effect_bin>
@@ -248,6 +326,7 @@
 		<preloadVisual>particles/mesh_particles/tree_palm_03.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/tree_palm_04.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/tree_twig_01.visual</preloadVisual>
+		<preloadVisual>particles/mesh_particles/tree_twig_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_bamboo_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_board_04.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_board_square_01.visual</preloadVisual>
@@ -263,19 +342,15 @@
 		<preloadVisual>particles/mesh_particles/environment/Lightning_mesh_03.visual</preloadVisual>
 		<preloadTextures>
 			<path>
-				particles/content_deferred/pfx_textures/eff_rocket_accelerator.dds
+				particles/content_deferred/pfx_textures/eff_tex_split_misc_7.dds
 				<type>primary</type>
 			</path>
 			<path>
-				particles/content_deferred/pfx_textures/eff_tex_long.dds
+				particles/content_deferred/pfx_textures/eff_tex_split_smoke_4.dds
 				<type>primary</type>
 			</path>
 			<path>
-				particles/content_deferred/pfx_textures/eff_tex.dds
-				<type>primary</type>
-			</path>
-			<path>
-				particles/content_deferred/pfx_textures/eff_leaves.dds
+				particles/content_deferred/pfx_textures/eff_tex_split_misc_3.dds
 				<type>primary</type>
 			</path>
 			<path>
@@ -283,8 +358,72 @@
 				<type>primary</type>
 			</path>
 			<path>
-				particles/content_deferred/pfx_textures/eff_tex_force_field.dds
-				<type>forcefields</type>
+				particles/content_deferred/pfx_textures/eff_tex_split_misc_2.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_split_smoke_5.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_split_misc_6.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_split_splash_3.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_split_dirt.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_split_smoke_3.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_split_misc_4.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_split_fire_2.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_split_smoke_6.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_split_misc_5.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_leaves.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_split_smoke_7.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_split_fire_smoke_1.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_split_fire_5.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_split_fire_4.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_split_sparks.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_split_smoke_8.dds
+				<type>primary</type>
 			</path>
 			<path>
 				particles/content_deferred/pfx_textures/lightning_02.dds
@@ -295,59 +434,86 @@
 				<type>water</type>
 			</path>
 			<path>
-				particles/content_deferred/pfx_textures/tracers.dds
+				particles/content_deferred/pfx_textures/eff_rocket_accelerator.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_long.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_split_fire_1.dds
 				<type>primary</type>
 			</path>
 			<path>
 				particles/content_deferred/pfx_textures/eff_tex_distortion.dds
 				<type>primary</type>
 			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_waves_ocean.dds
+				<type>water</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_force_field.dds
+				<type>forcefields</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_split_splash_4.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/tracers.dds
+				<type>primary</type>
+			</path>
 		</preloadTextures>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/bld_19_04_ampitheratre_columnruin_01.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/bld_19_04_ampitheratre_columnruin_04.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/hd_bld_af_001_vhouse_ruins_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/hd_bld_af_001_vhouse_ruins_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/hd_bld_af_004_vhouse_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/hd_bld_af_005_barracks_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/hd_bld_af_006_vhouse_01.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/inf_bld_19_04_ampitheratre_wallruin_02.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/inf_bld_19_04_ampitheratre_wallruin_04.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/inf_bld_19_04_ampitheratre_wallruin_05.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/inf_bld_uni_000_base_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/inf_bldaf_module_01.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/inf_env_uni_653_oldsailboat.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/inf_mle002_kpp_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/inf_mle002_kpp_02.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/28_desert_shimmer_distant.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/31_airfield_dust_devil.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/31_airfield_dust_devil_p.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/31_airfield_lightning_01.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/31_airfield_lightning_02.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/31_airfield_rif_foam.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/31_airfield_rif_wave.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/31_airfield_rif_wave_p.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/31_airfield_roof_sand.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/31_airfield_sand_floor_ee.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/31_airfield_sand_floor_p.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/31_airfield_sea_tornado_sequence.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/31_airfield_shore_wave.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/31_airfield_shore_wave_s.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/31_airfield_shore_wave_splash.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/31_airfield_shore_wave_splash_s.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_env005_tun.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_env205_boats01.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_env_su_045_gazm20.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_env_su_045_gazm20_ram.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_mle_uni_026_canopy_03.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_mle_uni_811_camouflagetent_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_env021_pier_2.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_env021_pier_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_env034_wattledbasket.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_env414_pole_fall_1.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_env414_pole_touchdown.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_env418_oldgmercedes.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_env418_oldgmercedes1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_env601_bunchlogs3.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_env601_bunchlogs4.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_env601_bunchlogs5.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_env_112_14_tablecaffe_004.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_env_19_11_washingline_02.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_env611_tablebench.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_env_101_03_haystack_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_env_af_019_well.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_env_af_022_paintbag.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_env_af_023_foodtrailer.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_env_af_024_dyeing_01.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_env_af_024_dyeing_02.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_env_af_024_dyeing_03.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_env_af_026_cart.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_env_af_027_sheds.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_env_af_028_well.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_env_af_029_dryingthread.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_env_af_030_commodityshelf.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_env_af_033_tent.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_env_am_034_scaffold.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_env_uni_632_doraenv_04.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_envaf_003_claystove_1.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_envaf_003_claystove_2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_envaf_004_colortent_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_envaf_005_clayjug_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_envaf_006_barrelfuel_01.vfx</fn_effect_bin>
@@ -360,12 +526,12 @@
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_envaf_012_shed_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_envaf_012_shed_2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_envaf_013_cart.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_envam_011_truck_01.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_envam_011_truck_03.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_envam_002_barrels_01.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_envam_002_barrels_02_03.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_envam_002_barrels_04.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_envas_012_recyclebin4.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_envnw_002_marketshelves_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_envnw_002_marketshelves_03.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_fuel_env418_oldgmercedes.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_fuel_env608_sovbus.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_fuel_envaf_006_barellfuel2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_fuel_envaf_007_aircraftrefueller.vfx</fn_effect_bin>
@@ -373,43 +539,34 @@
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_fuel_mleaf_003_westlandlysander.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_gaf003_rabitzfence.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_gaf003_rabitzfence_end.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_gaf013_fencetile1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_gaf009_barbedwareend.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_gaf009_barbedwaretile1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_gaf011_fencetile_1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_gaf011_fencetile_2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_gafaf_001_clayfence_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_gafaf_001_clayfence_07.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_gafaf_001_clayfence_corner_01.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_hd_env_af_020_claystove_lifetime.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_mil005_kdp.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_mle009_boxcamouflage1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_mle009_boxcamouflage_detonation.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_mle013_watchtower.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_mle016_boxeshowitzer.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_mle019_gerboxes1.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_mle020_germotocycle.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_mle033_watchtower1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_mle046_bag1.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_mleaf_002_radiolocator.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_mleaf_003_westlandlysander.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_mleaf_004_hurricane.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_mlesu_83_02_opelblitz_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_shells_detonation_medium.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_shells_detonation_small.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/plane_engine_1.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/trees/broadleaves/inf_tree_bush_dry_fall.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/trees/broadleaves/inf_tree_bush_dry_fall_small.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/trees/broadleaves/inf_tree_bush_dry_touchdown.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/trees/broadleaves/inf_tree_bush_dry_touchdown_small.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/trees/broadleaves/inf_tree_bush_fall_small.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/scenarios/105_air_smoke_trail_dense.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/scenarios/121_lost_paradise_rpm03_load04.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/scenarios/31_airfield_dust_plane.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/trees/broadleaves/tree_linden_town_dry_23m_fall.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/trees/broadleaves/tree_linden_town_dry_23m_touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/trees/broadleaves/tree_olive_01_fall.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/trees/broadleaves/tree_olive_01_touchdown.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/trees/broadleaves/tree_olive_03_fall.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/trees/broadleaves/tree_olive_03_touchdown.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/trees/conifers/inf_tree_scots_pine_fall_small.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/trees/conifers/inf_tree_scots_pine_touchdown_small.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/trees/conifers/tree_acacia_african_01_fall.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/trees/conifers/tree_acacia_african_01_touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/trees/conifers/tree_bananapalm_01_fall.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/trees/conifers/tree_bananapalm_01_touchdown.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/trees/conifers/tree_cypress_regular_6m_touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/trees/conifers/tree_pheonixpalm_big01_fall.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/trees/conifers/tree_pheonixpalm_big01_touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/trees/conifers/tree_pheonixpalm_medium_fall.vfx</fn_effect_bin>
@@ -417,45 +574,49 @@
 		<fn_effect_bin>particles/content_deferred/pfx/environment/trees/conifers/tree_pheonixpalm_small01_fall.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/trees/conifers/tree_pheonixpalm_small01_touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/sparks/sparks_env_med.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/environment/buildings/bld_19_04_ampitheratre_columnruin_01.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/buildings/bld_19_04_ampitheratre_columnruin_04.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/buildings/hd_bld_af_001_vhouse_ruins_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/buildings/hd_bld_af_001_vhouse_ruins_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/buildings/hd_bld_af_004_vhouse_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/buildings/hd_bld_af_005_barracks_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/buildings/hd_bld_af_006_vhouse_01.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/buildings/inf_bld_19_04_ampitheratre_wallruin_02.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/buildings/inf_bld_19_04_ampitheratre_wallruin_04.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/buildings/inf_bld_19_04_ampitheratre_wallruin_05.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/buildings/inf_bld_uni_000_base_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/buildings/inf_bldaf_module_01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/buildings/inf_env_uni_653_oldsailboat.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/buildings/inf_mle002_kpp_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/buildings/inf_mle002_kpp_02.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/28_desert_shimmer_distant.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/31_airfield_dust_devil.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/31_airfield_lightning_01.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/31_airfield_rif_foam.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/31_airfield_rif_wave.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/31_airfield_roof_sand.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/31_airfield_sand_floor_ee.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/31_airfield_sea_tornado_sequence.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/31_airfield_shore_wave.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/31_airfield_shore_wave_splash.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/inf_env005_tun.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/hd_env205_boats01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/hd_env_su_045_gazm20.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/hd_env_su_045_gazm20_ram.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/hd_mle_uni_026_canopy_03.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/hd_mle_uni_811_camouflagetent_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_env021_pier_2.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/inf_env021_pier_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_env034_wattledbasket.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/inf_env414_pole_fall_1.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/inf_env414_pole_touchdown.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_env418_oldgmercedes1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_env601_bunchlogs3.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_env601_bunchlogs4.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_env601_bunchlogs5.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/inf_env_112_14_tablecaffe_004.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/inf_env_19_11_washingline_02.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_env611_tablebench.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_env_101_03_haystack_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_env_af_019_well.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_env_af_022_paintbag.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_env_af_023_foodtrailer.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_env_af_024_dyeing_01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_env_af_024_dyeing_02.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_env_af_024_dyeing_03.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_env_af_026_cart.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_env_af_027_sheds.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_env_af_028_well.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_env_af_029_dryingthread.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_env_af_030_commodityshelf.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_env_af_033_tent.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_env_am_034_scaffold.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_env_uni_632_doraenv_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_envaf_003_claystove_1.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/inf_envaf_003_claystove_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_envaf_004_colortent_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_envaf_005_clayjug_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_envaf_006_barrelfuel_01.eff</fn_effect_bin>
@@ -468,12 +629,12 @@
 		<fn_effect_bin>particles/environment/objects/inf_envaf_012_shed_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_envaf_012_shed_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_envaf_013_cart.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/inf_envam_011_truck_01.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/inf_envam_011_truck_03.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_envam_002_barrels_01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_envam_002_barrels_02_03.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_envam_002_barrels_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_envas_012_recyclebin4.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_envnw_002_marketshelves_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_envnw_002_marketshelves_03.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/inf_fuel_env418_oldgmercedes2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_fuel_env608_sovbus.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_fuel_envaf_006_barellfuel2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_fuel_envaf_007_aircraftrefueller.eff</fn_effect_bin>
@@ -481,43 +642,34 @@
 		<fn_effect_bin>particles/environment/objects/inf_fuel_mleaf_003_westlandlysander.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_gaf003_rabitzfence.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_gaf003_rabitzfence_end.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/inf_gaf013_fencetile1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_gaf009_barbedwareend.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_gaf009_barbedwaretile1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_gaf011_fencetile_1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_gaf011_fencetile_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_gafaf_001_clayfence_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_gafaf_001_clayfence_07.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_gafaf_001_clayfence_corner_01.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/inf_hd_env_af_020_claystove_lifetime.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_mil005_kdp.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_mle009_boxcamouflage1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_mle009_boxcamouflage_detonation.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/inf_mle013_watchtower.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/inf_mle016_boxeshowitzer.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_mle019_gerboxes1.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/inf_mle020_germotocycle.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_mle033_watchtower1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_mle046_bag1.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/inf_mleaf_002_radiolocator.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_mleaf_003_westlandlysander.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_mleaf_004_hurricane.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/inf_mlesu_83_02_opelblitz_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_shells_detonation_medium.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_shells_detonation_small.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/plane_engine_1.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/trees/broadleaves/inf_tree_bush_dry_fall.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/trees/broadleaves/inf_tree_bush_dry_fall_small.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/trees/broadleaves/inf_tree_bush_dry_touchdown.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/trees/broadleaves/inf_tree_bush_dry_touchdown_small.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/trees/broadleaves/inf_tree_bush_fall_small.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/scenarios/105_air_smoke_trail_dense.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/scenarios/121_lost_paradise_rpm03_load04.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/scenarios/31_airfield_dust_plane.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/trees/broadleaves/tree_linden_town_dry_23m_fall.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/trees/broadleaves/tree_linden_town_dry_23m_touchdown.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/trees/broadleaves/tree_olive_01_fall.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/trees/broadleaves/tree_olive_01_touchdown.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/trees/broadleaves/tree_olive_03_fall.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/trees/broadleaves/tree_olive_03_touchdown.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/trees/conifers/inf_tree_scots_pine_fall_small.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/trees/conifers/inf_tree_scots_pine_touchdown_small.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/trees/conifers/tree_acacia_african_01_fall.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/trees/conifers/tree_acacia_african_01_touchdown.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/trees/conifers/tree_bananapalm_01_fall.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/trees/conifers/tree_bananapalm_01_touchdown.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/trees/conifers/tree_cypress_regular_6m_touchdown.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/trees/conifers/tree_pheonixpalm_big01_fall.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/trees/conifers/tree_pheonixpalm_big01_touchdown.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/trees/conifers/tree_pheonixpalm_medium_fall.eff</fn_effect_bin>
@@ -525,7 +677,6 @@
 		<fn_effect_bin>particles/environment/trees/conifers/tree_pheonixpalm_small01_fall.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/trees/conifers/tree_pheonixpalm_small01_touchdown.eff</fn_effect_bin>
 		<preloadVisual>particles/mesh_particles/metal_stick.visual</preloadVisual>
-		<preloadVisual>particles/mesh_particles/stone_brick_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/stone_brick_03.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/stone_concrete_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/stone_concrete_02.visual</preloadVisual>
@@ -535,6 +686,7 @@
 		<preloadVisual>particles/mesh_particles/tree_palm_03.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/tree_palm_04.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/tree_twig_01.visual</preloadVisual>
+		<preloadVisual>particles/mesh_particles/tree_twig_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_bamboo_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_board_04.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_board_square_01.visual</preloadVisual>

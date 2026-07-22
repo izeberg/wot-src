@@ -46,6 +46,7 @@ CLIENT_CHECKED_TRIGGERS = frozenset([
 class SfLobbyProxy(GUIProxy):
     statsCollector = dependency.descriptor(IStatisticsCollector)
     __tutorialLoader = dependency.descriptor(ITutorialLoader)
+    __waitingEnabled = True
 
     def __init__(self, effectPlayer):
         super(SfLobbyProxy, self).__init__()
@@ -53,6 +54,10 @@ class SfLobbyProxy(GUIProxy):
         self.effects = effectPlayer
         self._commands = GUICommandsFactory()
         return
+
+    @classmethod
+    def setWaitingEnabled(cls, value):
+        cls.__waitingEnabled = value
 
     @sf_lobby
     def app(self):
@@ -84,6 +89,7 @@ class SfLobbyProxy(GUIProxy):
         return True
 
     def fini(self):
+        self.setWaitingEnabled(True)
         self._commands = None
         self.eManager.clear()
         self.effects.stopAll()
@@ -103,11 +109,13 @@ class SfLobbyProxy(GUIProxy):
 
     def lock(self):
         self.statsCollector.noteHangarLoadingState(HANGAR_LOADING_STATE.START_LOADING_TUTORIAL)
-        self.showWaiting('update-scene', isSingle=True)
+        if self.__waitingEnabled:
+            self.showWaiting('update-scene', isSingle=True)
 
     def release(self):
         self.statsCollector.noteHangarLoadingState(HANGAR_LOADING_STATE.FINISH_LOADING_TUTORIAL)
-        self.hideWaiting('update-scene')
+        if self.__waitingEnabled:
+            self.hideWaiting('update-scene')
 
     def loadConfig(self, filePath):
         self.config = gui_config.readConfig(filePath)

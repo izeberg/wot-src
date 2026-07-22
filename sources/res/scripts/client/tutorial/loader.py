@@ -166,6 +166,11 @@ class TutorialLoader(ITutorialLoader):
             self.__restoreID = None
         return
 
+    def stopTutorial(self):
+        self.__restoreID = None
+        self.__doStop()
+        return
+
     def refuse(self):
         if self.__tutorial is not None:
             self.__tutorial.refuse()
@@ -250,6 +255,8 @@ class TutorialLoader(ITutorialLoader):
             self.__doStop()
             if self.__dispatcher is None:
                 self.__setDispatcher(settings.dispatcher)
+            if not settings.hintsEnabled:
+                self.__doStopHints()
             self.__tutorial = core.Tutorial(settings, descriptor)
             self.__tutorial.onStopped += self.__onTutorialStopped
             result = self.__tutorial.run(weakref.proxy(self.__dispatcher), runCtx)

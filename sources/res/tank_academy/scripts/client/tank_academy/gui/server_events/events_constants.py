@@ -1,0 +1,2 @@
+TANK_ACADEMY_QUEST_PREFIX = 'tank_academy'
+TANK_ACADEMY_QUEST_GROUP_PREFIX = 'tank_academy_group'

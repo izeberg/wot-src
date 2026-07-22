@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/french/F121_G1L/crash/lod3/Gun_01</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<nodefullVisual>vehicles/french/F121_G1L/crash/lod2/Gun_01</nodefullVisual>
+	<visibilityBox>
+		<min>-0.270814 -0.278434 -0.787997</min>
+		<max>0.259115 0.280026 3.454000</max>
+	</visibilityBox>
+</root>

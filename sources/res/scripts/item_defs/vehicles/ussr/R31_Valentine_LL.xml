@@ -94,7 +94,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_5 armor_4</primaryArmor>
 		<weight>8300</weight>
-		<maxHealth>464</maxHealth>
+		<maxHealth>400</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>140</maxHealth>
 			<maxRegenHealth>90</maxRegenHealth>
@@ -3925,7 +3925,7 @@
 				</customizableVehicleAreas>
 			</customization>
 			<repairTime>
-				5.71428585
+				2.85003138
 				<!--BW_String-->
 			</repairTime>
 		</ValentineMK_I>
@@ -3956,7 +3956,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>2000</weight>
-			<maxHealth>116</maxHealth>
+			<maxHealth>180</maxHealth>
 			<rotationSpeed>
 				48.13
 				<!--BW_String-->
@@ -4005,6 +4005,29 @@
 						0.29
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
+					<shotDispersionFactors>
+						<turretRotation>
+							0.1
+							<!--BW_String-->
+						</turretRotation>
+						<afterShot>2</afterShot>
+						<whileGunDamaged>
+							2.0
+							<!--BW_String-->
+						</whileGunDamaged>
+					</shotDispersionFactors>
+					<shotDispersionRadius>
+						0.37
+						<!--BW_String-->
+					</shotDispersionRadius>
+					<reloadTime>
+						2.0
+						<!--BW_String-->
+					</reloadTime>
+					<aimingTime>
+						1.7
+						<!--BW_String-->
+					</aimingTime>
 					<models>
 						<undamaged>vehicles/russian/R31_Valentine_LL/normal/lod0/Gun_01.model</undamaged>
 						<destroyed>vehicles/russian/R31_Valentine_LL/crash/lod0/Gun_01.model</destroyed>

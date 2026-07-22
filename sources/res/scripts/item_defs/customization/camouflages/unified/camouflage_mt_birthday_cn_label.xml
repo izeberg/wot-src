@@ -1,0 +1,3187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<xmlns:ussr>ussr</xmlns:ussr>
+	<xmlns:germany>germany</xmlns:germany>
+	<xmlns:usa>usa</xmlns:usa>
+	<xmlns:china>china</xmlns:china>
+	<xmlns:france>france</xmlns:france>
+	<xmlns:uk>uk</xmlns:uk>
+	<xmlns:japan>japan</xmlns:japan>
+	<xmlns:czech>czech</xmlns:czech>
+	<xmlns:sweden>sweden</xmlns:sweden>
+	<xmlns:poland>poland</xmlns:poland>
+	<xmlns:italy>italy</xmlns:italy>
+	<xmlns:intunion>intunion</xmlns:intunion>
+	<itemGroup>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R47_ISU-152_Zveroboj ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<camouflage>
+			<id>644</id>
+			<texture>vehicles/russian/Camouflage/ussr_style.dds</texture>
+			<description>#vehicle_customization:camouflage/mt_birthday_cn/description</description>
+			<scales>
+				1.3 1 0.7
+				<!--BW_String-->
+			</scales>
+			<userString>#vehicle_customization:camouflage/mt_birthday_cn/label</userString>
+			<invisibilityFactor>1</invisibilityFactor>
+			<palettes>
+				<palette>
+					<c0>35 46 66 255</c0>
+					<c1>122 121 121 255</c1>
+					<c2>58 81 55 255</c2>
+					<c3>0 0 0 0</c3>
+				</palette>
+			</palettes>
+			<tiling>
+				<china:Ch01_Type59>
+					0.91 0.91 0.53 -0.32
+					<!--BW_String-->
+				</china:Ch01_Type59>
+				<china:Ch02_Type62>
+					1.59 1.59 -2.5 -0.46
+					<!--BW_String-->
+				</china:Ch02_Type62>
+				<china:Ch03_WZ-111>
+					1.65 1.65 -0.44 -0.93
+					<!--BW_String-->
+				</china:Ch03_WZ-111>
+				<china:Ch04_T34_1>
+					2.26 2.26 4.64 0.63
+					<!--BW_String-->
+				</china:Ch04_T34_1>
+				<china:Ch05_T34_2>
+					2.03 2.03 0.63 0.89
+					<!--BW_String-->
+				</china:Ch05_T34_2>
+				<china:Ch06_Renault_NC31>
+					0.95 0.95 2.49 1.63
+					<!--BW_String-->
+				</china:Ch06_Renault_NC31>
+				<china:Ch07_Vickers_MkE_Type_BT26>
+					0.72 0.72 4.32 0.4
+					<!--BW_String-->
+				</china:Ch07_Vickers_MkE_Type_BT26>
+				<china:Ch08_Type97_Chi_Ha>
+					2.04 2.04 2.42 1.16
+					<!--BW_String-->
+				</china:Ch08_Type97_Chi_Ha>
+				<china:Ch09_M5>
+					1.12 1.12 2.46 0.86
+					<!--BW_String-->
+				</china:Ch09_M5>
+				<china:Ch10_IS2>
+					1.52 1.52 0.67 -0.13
+					<!--BW_String-->
+				</china:Ch10_IS2>
+				<china:Ch11_110>
+					2.78 2.78 3.57 0.25
+					<!--BW_String-->
+				</china:Ch11_110>
+				<china:Ch12_111_1_2_3>
+					1.31 1.31 2.04 0.54
+					<!--BW_String-->
+				</china:Ch12_111_1_2_3>
+				<china:Ch12_111_1_2_3_FL>
+					1.31 1.31 2.04 0.54
+					<!--BW_String-->
+				</china:Ch12_111_1_2_3_FL>
+				<china:Ch14_T34_3>
+					1.86 1.86 1.58 2.71
+					<!--BW_String-->
+				</china:Ch14_T34_3>
+				<china:Ch15_59_16>
+					1.53 1.53 2.79 -1.06
+					<!--BW_String-->
+				</china:Ch15_59_16>
+				<china:Ch16_WZ_131>
+					1.41 1.41 0.65 1.56
+					<!--BW_String-->
+				</china:Ch16_WZ_131>
+				<china:Ch17_WZ131_1_WZ132>
+					1.22 1.22 2.61 1.56
+					<!--BW_String-->
+				</china:Ch17_WZ131_1_WZ132>
+				<china:Ch17_WZ131_1_WZ132_FL>
+					1.22 1.22 2.61 1.56
+					<!--BW_String-->
+				</china:Ch17_WZ131_1_WZ132_FL>
+				<china:Ch18_WZ-120>
+					1.28 1.28 0.67 -1.69
+					<!--BW_String-->
+				</china:Ch18_WZ-120>
+				<china:Ch19_121>
+					2.39 2.39 0.72 -0.14
+					<!--BW_String-->
+				</china:Ch19_121>
+				<china:Ch19_121_7x7>
+					2.39 2.39 0.72 -0.14
+					<!--BW_String-->
+				</china:Ch19_121_7x7>
+				<china:Ch20_Type58>
+					2.65 2.65 2.38 0.38
+					<!--BW_String-->
+				</china:Ch20_Type58>
+				<china:Ch21_T34>
+					2.04 2.04 4.73 -2.06
+					<!--BW_String-->
+				</china:Ch21_T34>
+				<china:Ch22_113>
+					1.17 1.17 2.67 0.58
+					<!--BW_String-->
+				</china:Ch22_113>
+				<china:Ch22_113P>
+					1.13 1.13 2.1 1.74
+					<!--BW_String-->
+				</china:Ch22_113P>
+				<china:Ch23_112>
+					1.16 1.16 3.64 1.48
+					<!--BW_String-->
+				</china:Ch23_112>
+				<china:Ch24_Type64>
+					1.62 1.62 3.34 1.63
+					<!--BW_String-->
+				</china:Ch24_Type64>
+				<china:Ch25_121_mod_1971B>
+					2.99 2.99 2.21 0.52
+					<!--BW_String-->
+				</china:Ch25_121_mod_1971B>
+				<china:Ch26_59_Patton>
+					2.24 2.24 5.24 3.46
+					<!--BW_String-->
+				</china:Ch26_59_Patton>
+				<china:Ch28_WZ_132A>
+					0.66 0.66 2.64 1.64
+					<!--BW_String-->
+				</china:Ch28_WZ_132A>
+				<china:Ch29_Type_62C_prot>
+					0.47 0.47 1.73 1.28
+					<!--BW_String-->
+				</china:Ch29_Type_62C_prot>
+				<china:Ch30_T-26G_FT>
+					2.66 2.66 2.59 3.6
+					<!--BW_String-->
+				</china:Ch30_T-26G_FT>
+				<china:Ch31_M3G_FT>
+					0.57 0.57 2.43 1.28
+					<!--BW_String-->
+				</china:Ch31_M3G_FT>
+				<china:Ch32_SU-76G_FT>
+					1.1 1.1 2.83 0.23
+					<!--BW_String-->
+				</china:Ch32_SU-76G_FT>
+				<china:Ch33_60G_FT>
+					0.76 0.76 1.78 1.48
+					<!--BW_String-->
+				</china:Ch33_60G_FT>
+				<china:Ch34_WZ131G_FT>
+					1.23 1.23 2.12 1.33
+					<!--BW_String-->
+				</china:Ch34_WZ131G_FT>
+				<china:Ch35_T-34-2G_FT>
+					1.26 1.26 1.42 1.1
+					<!--BW_String-->
+				</china:Ch35_T-34-2G_FT>
+				<china:Ch36_WZ111_1G_FT>
+					1.56 1.56 1.16 0.88
+					<!--BW_String-->
+				</china:Ch36_WZ111_1G_FT>
+				<china:Ch37_WZ111G_FT>
+					2.56 2.56 4.07 0.66
+					<!--BW_String-->
+				</china:Ch37_WZ111G_FT>
+				<china:Ch38_WZ113G_FT>
+					0.63 0.63 2.39 1.53
+					<!--BW_String-->
+				</china:Ch38_WZ113G_FT>
+				<china:Ch38_WZ113G_FT_7x7>
+					0.63 0.63 2.39 1.53
+					<!--BW_String-->
+				</china:Ch38_WZ113G_FT_7x7>
+				<china:Ch39_WZ120_1G_FT>
+					0.75 0.75 2.21 2.25
+					<!--BW_String-->
+				</china:Ch39_WZ120_1G_FT>
+				<china:Ch39_WZ120_1G_FT_FL>
+					0.75 0.75 2.21 2.25
+					<!--BW_String-->
+				</china:Ch39_WZ120_1G_FT_FL>
+				<china:Ch40_WZ120G_FT>
+					2.39 2.39 0.55 0.63
+					<!--BW_String-->
+				</china:Ch40_WZ120G_FT>
+				<china:Ch41_WZ_111_5A>
+					1.15 1.15 1.92 3.68
+					<!--BW_String-->
+				</china:Ch41_WZ_111_5A>
+				<china:Ch41_WZ_111_5A_bob>
+					1.15 1.15 1.92 3.68
+					<!--BW_String-->
+				</china:Ch41_WZ_111_5A_bob>
+				<china:Ch41_WZ_111_5A_7x7>
+					1.15 1.15 1.92 3.68
+					<!--BW_String-->
+				</china:Ch41_WZ_111_5A_7x7>
+				<china:Ch41_WZ_111_MT>
+					1.15 1.15 1.92 3.68
+					<!--BW_String-->
+				</china:Ch41_WZ_111_MT>
+				<china:Ch42_WalkerBulldog_M41D>
+					1.2 1.2 0.24 -0.56
+					<!--BW_String-->
+				</china:Ch42_WalkerBulldog_M41D>
+				<china:Ch43_WZ_122_2>
+					1.26 1.26 0.85 0.22
+					<!--BW_String-->
+				</china:Ch43_WZ_122_2>
+				<czech:Cz01_Skoda_T40>
+					1.25 1.25 2.9 1.45
+					<!--BW_String-->
+				</czech:Cz01_Skoda_T40>
+				<czech:Cz02_TVP_T50>
+					2.41 2.41 1.87 3.41
+					<!--BW_String-->
+				</czech:Cz02_TVP_T50>
+				<czech:Cz02_TVP_T50_FL>
+					2.41 2.41 1.87 3.41
+					<!--BW_String-->
+				</czech:Cz02_TVP_T50_FL>
+				<czech:Cz03_LT_vz35>
+					2.15 2.15 3.11 3.03
+					<!--BW_String-->
+				</czech:Cz03_LT_vz35>
+				<czech:Cz04_T50_51>
+					3.95 3.95 4.39 0.91
+					<!--BW_String-->
+				</czech:Cz04_T50_51>
+				<czech:Cz05_T34_100>
+					4.12 4.12 1.22 1.15
+					<!--BW_String-->
+				</czech:Cz05_T34_100>
+				<czech:Cz06_Kolohousenka>
+					2.9 2.9 2.37 -1.44
+					<!--BW_String-->
+				</czech:Cz06_Kolohousenka>
+				<czech:Cz07_TVP_46>
+					2.82 2.82 1.11 0.75
+					<!--BW_String-->
+				</czech:Cz07_TVP_46>
+				<czech:Cz08_T_25>
+					1.27 1.27 2.61 0.54
+					<!--BW_String-->
+				</czech:Cz08_T_25>
+				<czech:Cz09_T_24>
+					2.4 2.4 1.93 -0.49
+					<!--BW_String-->
+				</czech:Cz09_T_24>
+				<czech:Cz10_LT_vz38>
+					2.43 2.43 1.31 0.25
+					<!--BW_String-->
+				</czech:Cz10_LT_vz38>
+				<czech:Cz11_V_8_H>
+					1.45 1.45 0.63 2.47
+					<!--BW_String-->
+				</czech:Cz11_V_8_H>
+				<czech:Cz13_T_27>
+					2 2 2.35 3.78
+					<!--BW_String-->
+				</czech:Cz13_T_27>
+				<france:F01_RenaultFT>
+					1.09 1.09 2.03 0.13
+					<!--BW_String-->
+				</france:F01_RenaultFT>
+				<france:F02_D1>
+					1.75 1.75 0.39 -0.63
+					<!--BW_String-->
+				</france:F02_D1>
+				<france:F03_D2>
+					1.39 1.39 0.59 -1.48
+					<!--BW_String-->
+				</france:F03_D2>
+				<france:F04_B1>
+					0.68 0.68 1.77 0.52
+					<!--BW_String-->
+				</france:F04_B1>
+				<france:F05_BDR_G1B>
+					1.45 1.45 0.4 -0.21
+					<!--BW_String-->
+				</france:F05_BDR_G1B>
+				<france:F06_ARL_44>
+					1.26 1.26 0.79 -0.14
+					<!--BW_String-->
+				</france:F06_ARL_44>
+				<france:F07_AMX_M4_1945>
+					2.69 2.69 0.41 -1.76
+					<!--BW_String-->
+				</france:F07_AMX_M4_1945>
+				<france:F08_AMX_50_100>
+					2.04 2.04 0.75 0.27
+					<!--BW_String-->
+				</france:F08_AMX_50_100>
+				<france:F08_AMX_50_100_FL>
+					2.04 2.04 0.75 0.27
+					<!--BW_String-->
+				</france:F08_AMX_50_100_FL>
+				<france:F08_AMX_50_100_IGR>
+					2.5 2.5 0.000000 0.000000
+					<!--BW_String-->
+				</france:F08_AMX_50_100_IGR>
+				<france:F09_AMX_50_120>
+					2.5 2.5 0.78 0.28
+					<!--BW_String-->
+				</france:F09_AMX_50_120>
+				<france:F100_Panhard_EBR_90>
+					2.23 2.23 0.27 0.09
+					<!--BW_String-->
+				</france:F100_Panhard_EBR_90>
+				<france:F106_Panhard_EBR_75_Mle1954>
+					1.07 1.07 0.63 -1.78
+					<!--BW_String-->
+				</france:F106_Panhard_EBR_75_Mle1954>
+				<france:F107_Hotchkiss_EBR>
+					1.46 1.46 6.6 -0.74
+					<!--BW_String-->
+				</france:F107_Hotchkiss_EBR>
+				<france:F108_Panhard_EBR_105>
+					1.88 1.88 0.44 -1.12
+					<!--BW_String-->
+				</france:F108_Panhard_EBR_105>
+				<france:F109_AMD_Panhard_178B>
+					0.77 0.77 1.78 -0.1
+					<!--BW_String-->
+				</france:F109_AMD_Panhard_178B>
+				<france:F10_AMX_50B>
+					1.16 1.16 0.44 0.1
+					<!--BW_String-->
+				</france:F10_AMX_50B>
+				<france:F10_AMX_50B_bob>
+					1.16 1.16 0.44 0.1
+					<!--BW_String-->
+				</france:F10_AMX_50B_bob>
+				<france:F110_Lynx_6x6>
+					0.63 0.63 1.61 -1.86
+					<!--BW_String-->
+				</france:F110_Lynx_6x6>
+				<france:F110_Lynx_6x6_FL>
+					0.63 0.63 1.61 -1.86
+					<!--BW_String-->
+				</france:F110_Lynx_6x6_FL>
+				<france:F111_AM39_Gendron_Somua>
+					1.16 1.16 1.85 -1.78
+					<!--BW_String-->
+				</france:F111_AM39_Gendron_Somua>
+				<france:F112_M10_RBFM>
+					2.3 2.3 7.38 5.92
+					<!--BW_String-->
+				</france:F112_M10_RBFM>
+				<france:F114_Projet_4_1>
+					1.85 1.85 0.000000 0.000000
+					<!--BW_String-->
+				</france:F114_Projet_4_1>
+				<france:F116_Bat_Chatillon_Bourrasque>
+					1.03 1.03 0.66 -0.44
+					<!--BW_String-->
+				</france:F116_Bat_Chatillon_Bourrasque>
+				<france:F11_Renault_G1R>
+					2.12 2.12 0.73 -0.15
+					<!--BW_String-->
+				</france:F11_Renault_G1R>
+				<france:F12_Hotchkiss_H35>
+					0.68 0.68 -1.23 0.58
+					<!--BW_String-->
+				</france:F12_Hotchkiss_H35>
+				<france:F13_AMX38>
+					0.92 0.92 2.01 -1.25
+					<!--BW_String-->
+				</france:F13_AMX38>
+				<france:F14_AMX40>
+					1.57 1.57 1.26 0.68
+					<!--BW_String-->
+				</france:F14_AMX40>
+				<france:F15_AMX_12t>
+					1.75 1.75 0.32 -0.54
+					<!--BW_String-->
+				</france:F15_AMX_12t>
+				<france:F16_AMX_13_75>
+					1.54 1.54 2 2.18276
+					<!--BW_String-->
+				</france:F16_AMX_13_75>
+				<france:F16_AMX_13_75_FL>
+					1.54 1.54 2 2.18276
+					<!--BW_String-->
+				</france:F16_AMX_13_75_FL>
+				<france:F17_AMX_13_90>
+					1.13 1.13 7.12 7.9
+					<!--BW_String-->
+				</france:F17_AMX_13_90>
+				<france:F17_AMX_13_90_FL>
+					1.13 1.13 7.12 7.9
+					<!--BW_String-->
+				</france:F17_AMX_13_90_FL>
+				<france:F18_Bat_Chatillon25t>
+					1.03 1.03 0.66 -0.44
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_7x7>
+					1.03 1.03 0.66 -0.44
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_7x7>
+				<france:F19_Lorraine40t>
+					2.62 2.62 0.43 -0.75
+					<!--BW_String-->
+				</france:F19_Lorraine40t>
+				<france:F20_RenaultBS>
+					0.95 0.95 1.65 0.91
+					<!--BW_String-->
+				</france:F20_RenaultBS>
+				<france:F21_Lorraine39_L_AM>
+					1.99 1.99 0.19 -1.06
+					<!--BW_String-->
+				</france:F21_Lorraine39_L_AM>
+				<france:F22_AMX_105AM>
+					2.16 2.16 1.52 0.12
+					<!--BW_String-->
+				</france:F22_AMX_105AM>
+				<france:F23_AMX_13F3AM>
+					1.5 1.5 1.59 0.15
+					<!--BW_String-->
+				</france:F23_AMX_13F3AM>
+				<france:F24_Lorraine155_50>
+					1.5 1.5 0.93 0.92
+					<!--BW_String-->
+				</france:F24_Lorraine155_50>
+				<france:F25_Lorraine155_51>
+					1.53 1.53 0.98 0.88
+					<!--BW_String-->
+				</france:F25_Lorraine155_51>
+				<france:F27_FCM_36Pak40>
+					2.86 2.86 1.48 1.22
+					<!--BW_String-->
+				</france:F27_FCM_36Pak40>
+				<france:F28_105_leFH18B2>
+					3.27 3.27 0.55 2.35529
+					<!--BW_String-->
+				</france:F28_105_leFH18B2>
+				<france:F30_RenaultFT_AC>
+					2.19 2.19 0.72 1.26
+					<!--BW_String-->
+				</france:F30_RenaultFT_AC>
+				<france:F32_Somua_Sau_40>
+					1.13 1.13 0.99 -1.35
+					<!--BW_String-->
+				</france:F32_Somua_Sau_40>
+				<france:F33_S_35CA>
+					3.84 3.84 2.35 1.44
+					<!--BW_String-->
+				</france:F33_S_35CA>
+				<france:F34_ARL_V39>
+					1.49 1.49 1.68 -0.93
+					<!--BW_String-->
+				</france:F34_ARL_V39>
+				<france:F35_AMX_AC_Mle1946>
+					2.58 2.58 2.76 -4.86
+					<!--BW_String-->
+				</france:F35_AMX_AC_Mle1946>
+				<france:F36_AMX_AC_Mle1948>
+					3.1 3.1 0.01 -1.37
+					<!--BW_String-->
+				</france:F36_AMX_AC_Mle1948>
+				<france:F36_AMX_AC_Mle1948_FL>
+					3.1 3.1 0.01 -1.37
+					<!--BW_String-->
+				</france:F36_AMX_AC_Mle1948_FL>
+				<france:F37_AMX50_Foch>
+					1.73 1.73 1.35 -2.34
+					<!--BW_String-->
+				</france:F37_AMX50_Foch>
+				<france:F38_Bat_Chatillon155_58>
+					1.25 1.25 0.78 0.85
+					<!--BW_String-->
+				</france:F38_Bat_Chatillon155_58>
+				<france:F42_AMR_35>
+					3.58 3.58 5.52 6.19
+					<!--BW_String-->
+				</france:F42_AMR_35>
+				<france:F44_Somua_S35>
+					3.52 3.52 7.22 4.59
+					<!--BW_String-->
+				</france:F44_Somua_S35>
+				<france:F49_RenaultR35>
+					3.58 3.58 5.52 6.19
+					<!--BW_String-->
+				</france:F49_RenaultR35>
+				<france:F50_FCM36_20t>
+					1.85 1.85 6.43 6.21
+					<!--BW_String-->
+				</france:F50_FCM36_20t>
+				<france:F52_RenaultUE57>
+					1.03 1.03 0.61 0.61
+					<!--BW_String-->
+				</france:F52_RenaultUE57>
+				<france:F62_ELC_AMX>
+					1.87 1.87 5.9 6.74
+					<!--BW_String-->
+				</france:F62_ELC_AMX>
+				<france:F64_AMX_50Fosh_155>
+					3.29 3.29 8.72 7.59
+					<!--BW_String-->
+				</france:F64_AMX_50Fosh_155>
+				<france:F64_AMX_50Fosh_B>
+					3.29 3.29 8.72 7.59
+					<!--BW_String-->
+				</france:F64_AMX_50Fosh_B>
+				<france:F64_AMX_50Fosh_B_7x7>
+					3.29 3.29 8.72 7.59
+					<!--BW_String-->
+				</france:F64_AMX_50Fosh_B_7x7>
+				<france:F65_FCM_50t>
+					1.43 1.43 8.57 7.04
+					<!--BW_String-->
+				</france:F65_FCM_50t>
+				<france:F66_AMX_Ob_Am105>
+					1.15 1.15 10.53 7.41
+					<!--BW_String-->
+				</france:F66_AMX_Ob_Am105>
+				<france:F67_Bat_Chatillon155_55>
+					1.25 1.25 7.6 5.1
+					<!--BW_String-->
+				</france:F67_Bat_Chatillon155_55>
+				<france:F68_AMX_Chasseur_de_char_46>
+					1.94 1.94 8.2 7.35
+					<!--BW_String-->
+				</france:F68_AMX_Chasseur_de_char_46>
+				<france:F68_AMX_Chasseur_de_char_46_02>
+					1.94 1.94 8.2 7.35
+					<!--BW_String-->
+				</france:F68_AMX_Chasseur_de_char_46_02>
+				<france:F69_AMX13_57_100>
+					1.69 1.69 1.06 7.54
+					<!--BW_String-->
+				</france:F69_AMX13_57_100>
+				<france:F69_AMX13_57_100_GrandFinal>
+					1.32 1.32 0.44 7.87
+					<!--BW_String-->
+				</france:F69_AMX13_57_100_GrandFinal>
+				<france:F70_SARL42>
+					2.28 2.28 11.1 8.9
+					<!--BW_String-->
+				</france:F70_SARL42>
+				<france:F71_AMX_30_prototype>
+					2.3 2.3 7.38 5.92
+					<!--BW_String-->
+				</france:F71_AMX_30_prototype>
+				<france:F72_AMX_30>
+					2.59 2.59 5.28 4.46
+					<!--BW_String-->
+				</france:F72_AMX_30>
+				<france:F73_M4A1_Revalorise>
+					1.83 1.83 7.63 5.69
+					<!--BW_String-->
+				</france:F73_M4A1_Revalorise>
+				<france:F74_AMX_M4_1949>
+					3 3 7.75 8.04
+					<!--BW_String-->
+				</france:F74_AMX_M4_1949>
+				<france:F75_Char_de_25t>
+					2.11 2.11 8.58 6.55
+					<!--BW_String-->
+				</france:F75_Char_de_25t>
+				<france:F81_Char_de_65t>
+					1.32 1.32 0.65 -0.34
+					<!--BW_String-->
+				</france:F81_Char_de_65t>
+				<france:F82_AMX_M4_Mle1949_Ter>
+					2.71 2.71 7.75 6.03
+					<!--BW_String-->
+				</france:F82_AMX_M4_Mle1949_Ter>
+				<france:F83_AMX_M4_Mle1949_Bis>
+					2.07 2.07 7.17 6.74
+					<!--BW_String-->
+				</france:F83_AMX_M4_Mle1949_Bis>
+				<france:F83_AMX_M4_Mle1949_Bis_FL>
+					2.07 2.07 7.17 6.74
+					<!--BW_String-->
+				</france:F83_AMX_M4_Mle1949_Bis_FL>
+				<france:F84_Somua_SM>
+					1.12 1.12 8.69 7.99
+					<!--BW_String-->
+				</france:F84_Somua_SM>
+				<france:F85_M4A1_FL10>
+					2 2 2.96 6.91
+					<!--BW_String-->
+				</france:F85_M4A1_FL10>
+				<france:F87_Batignolles-Chatillon_12t>
+					1.42 1.42 6.61 6.52
+					<!--BW_String-->
+				</france:F87_Batignolles-Chatillon_12t>
+				<france:F87_Batignolles-Chatillon_12t_FL>
+					1.42 1.42 6.61 6.52
+					<!--BW_String-->
+				</france:F87_Batignolles-Chatillon_12t_FL>
+				<france:F88_AMX_13_105>
+					1.32 1.32 1.64 -1.47
+					<!--BW_String-->
+				</france:F88_AMX_13_105>
+				<france:F88_AMX_13_105_7x7>
+					1.32 1.32 1.64 -1.47
+					<!--BW_String-->
+				</france:F88_AMX_13_105_7x7>
+				<france:F89_Canon_dassaut_de_105>
+					0.74 0.74 6.47 6.33
+					<!--BW_String-->
+				</france:F89_Canon_dassaut_de_105>
+				<france:F97_ELC_EVEN_90>
+					3.24 3.24 8.91 7.92
+					<!--BW_String-->
+				</france:F97_ELC_EVEN_90>
+				<france:F97_ELC_EVEN_90_FL>
+					3.24 3.24 8.91 7.92
+					<!--BW_String-->
+				</france:F97_ELC_EVEN_90_FL>
+				<germany:G02_Hummel>
+					3 3 5.82 8.84
+					<!--BW_String-->
+				</germany:G02_Hummel>
+				<germany:G03_PzV_Panther>
+					1.9 1.9 0.18 0.16
+					<!--BW_String-->
+				</germany:G03_PzV_Panther>
+				<germany:G04_PzVI_Tiger_I>
+					2.5 2.5 2.47 6.3
+					<!--BW_String-->
+				</germany:G04_PzVI_Tiger_I>
+				<germany:G04_PzVI_Tiger_I_FL>
+					2.5 2.5 2.47 6.3
+					<!--BW_String-->
+				</germany:G04_PzVI_Tiger_I_FL>
+				<germany:G04_PzVI_Tiger_IA>
+					2.5 2.5 2.47 6.3
+					<!--BW_String-->
+				</germany:G04_PzVI_Tiger_IA>
+				<germany:G05_StuG_40_AusfG>
+					2.7 2.7 5.62 2.19
+					<!--BW_String-->
+				</germany:G05_StuG_40_AusfG>
+				<germany:G06_PzII>
+					1.3 1.3 1.58 8.49
+					<!--BW_String-->
+				</germany:G06_PzII>
+				<germany:G07_Pz35t>
+					2 2 4.73 9.73
+					<!--BW_String-->
+				</germany:G07_Pz35t>
+				<germany:G08_Pz38t>
+					1.5 1.5 11.23 3.42
+					<!--BW_String-->
+				</germany:G08_Pz38t>
+				<germany:G09_Hetzer>
+					2.5 2.5 3.29 6.64
+					<!--BW_String-->
+				</germany:G09_Hetzer>
+				<germany:G100_Gtraktor_Krupp>
+					3 3 0.4 0.78
+					<!--BW_String-->
+				</germany:G100_Gtraktor_Krupp>
+				<germany:G101_StuG_III>
+					2.7 2.7 1.64 5.27
+					<!--BW_String-->
+				</germany:G101_StuG_III>
+				<germany:G102_Pz_III>
+					1.3 1.3 8.49 6.37
+					<!--BW_String-->
+				</germany:G102_Pz_III>
+				<germany:G103_RU_251>
+					1.3 1.3 7.67 7.19
+					<!--BW_String-->
+				</germany:G103_RU_251>
+				<germany:G104_Stug_IV>
+					3 3 2.74 8.7
+					<!--BW_String-->
+				</germany:G104_Stug_IV>
+				<germany:G105_T-55_NVA_DDR>
+					1.3 1.3 2.33 8.97
+					<!--BW_String-->
+				</germany:G105_T-55_NVA_DDR>
+				<germany:G106_PzKpfwPanther_AusfF>
+					1.8 1.8 0.09 1.8
+					<!--BW_String-->
+				</germany:G106_PzKpfwPanther_AusfF>
+				<germany:G107_PzKpfwIII_AusfK>
+					2.4 2.4 11.71 4.93
+					<!--BW_String-->
+				</germany:G107_PzKpfwIII_AusfK>
+				<germany:G108_PzKpfwII_AusfD>
+					2.5 2.5 9.52 2.88
+					<!--BW_String-->
+				</germany:G108_PzKpfwII_AusfD>
+				<germany:G109_Steyr_WT>
+					1.5 1.5 1.85 6.44
+					<!--BW_String-->
+				</germany:G109_Steyr_WT>
+				<germany:G10_PzIII_AusfJ>
+					4.3 4.3 7.6 3.63
+					<!--BW_String-->
+				</germany:G10_PzIII_AusfJ>
+				<germany:G110_Typ_205>
+					2.7 2.7 1.32 1.32
+					<!--BW_String-->
+				</germany:G110_Typ_205>
+				<germany:G112_KanonenJagdPanzer>
+					1.9 1.9 5.34 9.45
+					<!--BW_String-->
+				</germany:G112_KanonenJagdPanzer>
+				<germany:G112_KanonenJagdPanzer_105>
+					1.9 1.9 5.34 9.45
+					<!--BW_String-->
+				</germany:G112_KanonenJagdPanzer_105>
+				<germany:G113_SP_I_C>
+					2.1 2.1 6.23 5.07
+					<!--BW_String-->
+				</germany:G113_SP_I_C>
+				<germany:G114_Rheinmetall_Skorpian>
+					1.6 1.6 0.000000 7.05
+					<!--BW_String-->
+				</germany:G114_Rheinmetall_Skorpian>
+				<germany:G114_Skorpian>
+					1.6 1.6 0.000000 7.05
+					<!--BW_String-->
+				</germany:G114_Skorpian>
+				<germany:G115_Typ_205B>
+					1.2 1.2 0.000000 0.49
+					<!--BW_String-->
+				</germany:G115_Typ_205B>
+				<germany:G115_Typ_205_4_Jun>
+					1.2 1.2 0.000000 0.49
+					<!--BW_String-->
+				</germany:G115_Typ_205_4_Jun>
+				<germany:G116_Turan_III_prot>
+					0.6 0.6 0.89 8.42
+					<!--BW_String-->
+				</germany:G116_Turan_III_prot>
+				<germany:G117_Toldi_III>
+					0.5 0.5 8.15 2.95
+					<!--BW_String-->
+				</germany:G117_Toldi_III>
+				<germany:G118_VK4503>
+					0.7 0.7 3.7 2.33
+					<!--BW_String-->
+				</germany:G118_VK4503>
+				<germany:G119_Panzer58>
+					1.8 1.8 9.58 1.36
+					<!--BW_String-->
+				</germany:G119_Panzer58>
+				<germany:G119_Panzer58_BF>
+					1.8 1.8 9.58 1.36
+					<!--BW_String-->
+				</germany:G119_Panzer58_BF>
+				<germany:G119_Pz58_Mutz>
+					1.8 1.8 9.58 1.36
+					<!--BW_String-->
+				</germany:G119_Pz58_Mutz>
+				<germany:G11_Bison_I>
+					2.2 2.2 8.29 0.000000
+					<!--BW_String-->
+				</germany:G11_Bison_I>
+				<germany:G120_M41_90>
+					1.3 1.3 2.26 9.45
+					<!--BW_String-->
+				</germany:G120_M41_90>
+				<germany:G120_M41_90_GrandFinal>
+					1.3 1.3 2.26 9.45
+					<!--BW_String-->
+				</germany:G120_M41_90_GrandFinal>
+				<germany:G121_Grille_15_L63>
+					3.92 3.92 6.61 4.88
+					<!--BW_String-->
+				</germany:G121_Grille_15_L63>
+				<germany:G122_VK6501H>
+					1.6 1.6 2.22 1.02
+					<!--BW_String-->
+				</germany:G122_VK6501H>
+				<germany:G125_Spz_57_Rh>
+					1.1 1.1 2.6 5.27
+					<!--BW_String-->
+				</germany:G125_Spz_57_Rh>
+				<germany:G126_HWK_12>
+					0.5 0.5 8.15 7.67
+					<!--BW_String-->
+				</germany:G126_HWK_12>
+				<germany:G126_HWK_12_FL>
+					0.5 0.5 8.15 7.67
+					<!--BW_String-->
+				</germany:G126_HWK_12_FL>
+				<germany:G12_Ltraktor>
+					1.5 1.5 10.27 3.7
+					<!--BW_String-->
+				</germany:G12_Ltraktor>
+				<germany:G134_PzKpfw_VII>
+					2.1 2.1 3.07 5.41
+					<!--BW_String-->
+				</germany:G134_PzKpfw_VII>
+				<germany:G134_PzKpfw_VII_7x7>
+					2.1 2.1 3.07 5.41
+					<!--BW_String-->
+				</germany:G134_PzKpfw_VII_7x7>
+				<germany:G136_Tiger_131>
+					1.2 1.2 4.52 0.6
+					<!--BW_String-->
+				</germany:G136_Tiger_131>
+				<germany:G137_PzVI_Tiger_217>
+					0.6 0.6 5.75 0.02
+					<!--BW_String-->
+				</germany:G137_PzVI_Tiger_217>
+				<germany:G138_VK168_02>
+					1.1 1.1 0.48 1.8
+					<!--BW_String-->
+				</germany:G138_VK168_02>
+				<germany:G138_VK168_02_Mauerbrecher>
+					1 1 0.48 1.8
+					<!--BW_String-->
+				</germany:G138_VK168_02_Mauerbrecher>
+				<germany:G139_MKA>
+					1.82 1.82 2.6 6.44
+					<!--BW_String-->
+				</germany:G139_MKA>
+				<germany:G13_VK3001H>
+					2.2 2.2 10.55 2.19
+					<!--BW_String-->
+				</germany:G13_VK3001H>
+				<germany:G140_HWK_30>
+					0.8 0.8 6.64 3.63
+					<!--BW_String-->
+				</germany:G140_HWK_30>
+				<germany:G141_VK7501K>
+					1.5 1.5 1.66 1.9
+					<!--BW_String-->
+				</germany:G141_VK7501K>
+				<germany:G142_M48RPz>
+					1.46 1.46 10.12 7.14
+					<!--BW_String-->
+				</germany:G142_M48RPz>
+				<germany:G143_E75_TS>
+					1.8 1.8 0.89 5.07
+					<!--BW_String-->
+				</germany:G143_E75_TS>
+				<germany:G144_Kpz_50t>
+					0.8 0.8 6.64 3.63
+					<!--BW_String-->
+				</germany:G144_Kpz_50t>
+				<germany:G147_Kunze_Panzer>
+					0.8 0.8 6.64 3.63
+					<!--BW_String-->
+				</germany:G147_Kunze_Panzer>
+				<germany:G15_VK3601H>
+					0.9 0.9 6.99 5.34
+					<!--BW_String-->
+				</germany:G15_VK3601H>
+				<germany:G15_VK3601H_C>
+					0.9 0.9 6.99 5.34
+					<!--BW_String-->
+				</germany:G15_VK3601H_C>
+				<germany:G16_PzVIB_Tiger_II>
+					1.5 1.5 1.71 8.49
+					<!--BW_String-->
+				</germany:G16_PzVIB_Tiger_II>
+				<germany:G16_PzVIB_Tiger_II_FL>
+					1.5 1.5 1.71 8.49
+					<!--BW_String-->
+				</germany:G16_PzVIB_Tiger_II_FL>
+				<germany:G16_PzVIB_Tiger_II_F>
+					1.5 1.5 1.71 8.49
+					<!--BW_String-->
+				</germany:G16_PzVIB_Tiger_II_F>
+				<germany:G16_PzVIB_Tiger_II_IGR>
+					1.5 1.5 1.71 8.47
+					<!--BW_String-->
+				</germany:G16_PzVIB_Tiger_II_IGR>
+				<germany:G17_JagdPzIV>
+					2.3 2.3 2.88 5.41
+					<!--BW_String-->
+				</germany:G17_JagdPzIV>
+				<germany:G18_JagdPanther>
+					2.5 2.5 3.63 8.7
+					<!--BW_String-->
+				</germany:G18_JagdPanther>
+				<germany:G19_Wespe>
+					2.2 2.2 3.63 7.33
+					<!--BW_String-->
+				</germany:G19_Wespe>
+				<germany:G20_Marder_II>
+					2 2 3.56 1.69
+					<!--BW_String-->
+				</germany:G20_Marder_II>
+				<germany:G21_PanzerJager_I>
+					1.3 1.3 4.66 7.67
+					<!--BW_String-->
+				</germany:G21_PanzerJager_I>
+				<germany:G22_Sturmpanzer_II>
+					2.3 2.3 2.47 11.92
+					<!--BW_String-->
+				</germany:G22_Sturmpanzer_II>
+				<germany:G23_Grille>
+					2.3 2.3 2.19 7.19
+					<!--BW_String-->
+				</germany:G23_Grille>
+				<germany:G24_VK3002DB>
+					2.1 2.1 5.62 6.64
+					<!--BW_String-->
+				</germany:G24_VK3002DB>
+				<germany:G25_PzII_Luchs>
+					1.7 1.7 3.7 6.92
+					<!--BW_String-->
+				</germany:G25_PzII_Luchs>
+				<germany:G26_VK1602>
+					1.6 1.6 4.18 8.08
+					<!--BW_String-->
+				</germany:G26_VK1602>
+				<germany:G27_VK3001P>
+					2.5 2.5 8.57 2.26
+					<!--BW_String-->
+				</germany:G27_VK3001P>
+				<germany:G28_PzIII_IV>
+					0.8 0.8 1.85 10.07
+					<!--BW_String-->
+				</germany:G28_PzIII_IV>
+				<germany:G32_PzV_PzIV>
+					2.5 2.5 0.55 9.45
+					<!--BW_String-->
+				</germany:G32_PzV_PzIV>
+				<germany:G32_PzV_PzIV_CN>
+					2.5 2.5 0.55 9.45
+					<!--BW_String-->
+				</germany:G32_PzV_PzIV_CN>
+				<germany:G32_PzV_PzIV_ausf_Alfa>
+					2.5 2.5 0.55 9.45
+					<!--BW_String-->
+				</germany:G32_PzV_PzIV_ausf_Alfa>
+				<germany:G32_PzV_PzIV_ausf_Alfa_CN>
+					2.5 2.5 0.55 9.45
+					<!--BW_String-->
+				</germany:G32_PzV_PzIV_ausf_Alfa_CN>
+				<germany:G33_H39_captured>
+					1.8 1.8 7.67 7.6
+					<!--BW_String-->
+				</germany:G33_H39_captured>
+				<germany:G34_S35_captured>
+					1.5 1.5 2.53 3.77
+					<!--BW_String-->
+				</germany:G34_S35_captured>
+				<germany:G35_B-1bis_captured>
+					0.8 0.8 3.29 7.33
+					<!--BW_String-->
+				</germany:G35_B-1bis_captured>
+				<germany:G36_PzII_J>
+					1.3 1.3 4.79 8.7
+					<!--BW_String-->
+				</germany:G36_PzII_J>
+				<germany:G37_Ferdinand>
+					2.8 2.8 5 7.47
+					<!--BW_String-->
+				</germany:G37_Ferdinand>
+				<germany:G37_Ferdinand_FL>
+					2.8 2.8 5 7.47
+					<!--BW_String-->
+				</germany:G37_Ferdinand_FL>
+				<germany:G39_Marder_III>
+					2.8 2.8 4.38 5.34
+					<!--BW_String-->
+				</germany:G39_Marder_III>
+				<germany:G40_Nashorn>
+					4.3 4.3 3.9 8.29
+					<!--BW_String-->
+				</germany:G40_Nashorn>
+				<germany:G41_DickerMax>
+					2.8 2.8 2.33 0.34
+					<!--BW_String-->
+				</germany:G41_DickerMax>
+				<germany:G42_Maus>
+					2.91 2.91 5.63 5.31
+					<!--BW_String-->
+				</germany:G42_Maus>
+				<ussr:R230_Maus>
+					2.91 2.91 5.63 5.31
+					<!--BW_String-->
+				</ussr:R230_Maus>
+				<germany:G43_Sturer_Emil>
+					1.5 1.5 0.76 0.34
+					<!--BW_String-->
+				</germany:G43_Sturer_Emil>
+				<germany:G44_JagdTiger>
+					1.5 1.5 1.92 6.1
+					<!--BW_String-->
+				</germany:G44_JagdTiger>
+				<germany:G44_JagdTiger_FL>
+					1.5 1.5 1.92 6.1
+					<!--BW_String-->
+				</germany:G44_JagdTiger_FL>
+				<germany:G44_JagdTigerH>
+					1.5 1.5 1.92 6.1
+					<!--BW_String-->
+				</germany:G44_JagdTigerH>
+				<germany:G45_G_Tiger>
+					3.4 3.4 1.78 1.95
+					<!--BW_String-->
+				</germany:G45_G_Tiger>
+				<germany:G46_T-25>
+					1.4 1.4 10.68 2.47
+					<!--BW_String-->
+				</germany:G46_T-25>
+				<germany:G48_E-25>
+					3.03 3.03 6.82 7.16
+					<!--BW_String-->
+				</germany:G48_E-25>
+				<germany:G49_G_Panther>
+					1.7 1.7 1.96 2.88
+					<!--BW_String-->
+				</germany:G49_G_Panther>
+				<germany:G50_T-15>
+					1 1 0.08 6.58
+					<!--BW_String-->
+				</germany:G50_T-15>
+				<germany:G51_Lowe>
+					1.8 1.8 0.89 5.07
+					<!--BW_String-->
+				</germany:G51_Lowe>
+				<germany:G52_Pz38_NA>
+					2 2 1.58 5.68
+					<!--BW_String-->
+				</germany:G52_Pz38_NA>
+				<germany:G53_PzI>
+					1.3 1.3 2.26 10.62
+					<!--BW_String-->
+				</germany:G53_PzI>
+				<germany:G54_E-50>
+					2 2 5.41 1.55
+					<!--BW_String-->
+				</germany:G54_E-50>
+				<germany:G54_E-50_FL>
+					2 2 5.41 1.55
+					<!--BW_String-->
+				</germany:G54_E-50_FL>
+				<germany:G55_E-75>
+					2.5 2.5 0.68 0.42
+					<!--BW_String-->
+				</germany:G55_E-75>
+				<germany:G55_E-75_FL>
+					2.5 2.5 0.68 0.42
+					<!--BW_String-->
+				</germany:G55_E-75_FL>
+				<germany:G56_E-100>
+					2.5 2.5 4.21 4.49
+					<!--BW_String-->
+				</germany:G56_E-100>
+				<germany:G189_E100_02>
+					2.5 2.5 4.21 4.49
+					<!--BW_String-->
+				</germany:G189_E100_02>
+				<germany:G57_PzVI_Tiger_P>
+					2.3 2.3 2.26 10.27
+					<!--BW_String-->
+				</germany:G57_PzVI_Tiger_P>
+				<germany:G58_VK4502P>
+					1.4 1.4 3.63 5.96
+					<!--BW_String-->
+				</germany:G58_VK4502P>
+				<germany:G58_VK4502P7>
+					1.4 1.4 3.63 5.96
+					<!--BW_String-->
+				</germany:G58_VK4502P7>
+				<germany:G61_G_E>
+					3.2 3.2 2.4 0.56
+					<!--BW_String-->
+				</germany:G61_G_E>
+				<germany:G63_PzI_ausf_C>
+					1.2 1.2 1.85 6.64
+					<!--BW_String-->
+				</germany:G63_PzI_ausf_C>
+				<germany:G64_Panther_II>
+					2 2 1.92 0.9
+					<!--BW_String-->
+				</germany:G64_Panther_II>
+				<germany:G64_Panther_II_FL>
+					2 2 1.92 0.9
+					<!--BW_String-->
+				</germany:G64_Panther_II_FL>
+				<germany:G65_JagdTiger_SdKfz_185>
+					2.5 2.5 3.29 6.71
+					<!--BW_String-->
+				</germany:G65_JagdTiger_SdKfz_185>
+				<germany:G66_VK2801>
+					1.3 1.3 4.59 6.64
+					<!--BW_String-->
+				</germany:G66_VK2801>
+				<germany:G67_VK4502A>
+					1 1 3.29 7.05
+					<!--BW_String-->
+				</germany:G67_VK4502A>
+				<germany:G70_PzIV_Hydro>
+					0.8 0.8 7.67 2.74
+					<!--BW_String-->
+				</germany:G70_PzIV_Hydro>
+				<germany:G71_JagdPantherII>
+					1.8 1.8 9.59 4.73
+					<!--BW_String-->
+				</germany:G71_JagdPantherII>
+				<germany:G72_JagdPz_E100>
+					1.5 1.5 3.36 0.45
+					<!--BW_String-->
+				</germany:G72_JagdPz_E100>
+				<germany:G73_E50_Ausf_M>
+					1.5 1.5 6.03 5.14
+					<!--BW_String-->
+				</germany:G73_E50_Ausf_M>
+				<germany:G73_E50_Ausf_M_7x7>
+					1.5 1.5 6.03 5.14
+					<!--BW_String-->
+				</germany:G73_E50_Ausf_M_7x7>
+				<germany:G76_Pz_Sfl_IVc>
+					1.7 1.7 0.19 0.02
+					<!--BW_String-->
+				</germany:G76_Pz_Sfl_IVc>
+				<germany:G77_PzIV_Schmalturm>
+					2.5 2.5 2.26 2.81
+					<!--BW_String-->
+				</germany:G77_PzIV_Schmalturm>
+				<germany:G78_Panther_M10>
+					1.5 1.5 6.03 5.14
+					<!--BW_String-->
+				</germany:G78_Panther_M10>
+				<germany:G80_Pz_IV_AusfD>
+					1.05 1.05 6.44 4.86
+					<!--BW_String-->
+				</germany:G80_Pz_IV_AusfD>
+				<germany:G81_Pz_IV_AusfH>
+					2.5 2.5 0.38 0.48
+					<!--BW_String-->
+				</germany:G81_Pz_IV_AusfH>
+				<germany:G82_Pz_II_AusfG>
+					1 1 11.3 1.78
+					<!--BW_String-->
+				</germany:G82_Pz_II_AusfG>
+				<germany:G83_Pz_IV_AusfA>
+					1.2 1.2 1.85 8.77
+					<!--BW_String-->
+				</germany:G83_Pz_IV_AusfA>
+				<germany:G85_Auf_Panther>
+					1.1 1.1 5.27 8.97
+					<!--BW_String-->
+				</germany:G85_Auf_Panther>
+				<germany:G85_Aufklarungspanzer_V>
+					1.1 1.1 5.27 8.97
+					<!--BW_String-->
+				</germany:G85_Aufklarungspanzer_V>
+				<germany:G86_VK2001DB>
+					2 2 4.59 2.47
+					<!--BW_String-->
+				</germany:G86_VK2001DB>
+				<germany:G87_VK3002DB_V1>
+					2.3 2.3 2.81 5.75
+					<!--BW_String-->
+				</germany:G87_VK3002DB_V1>
+				<germany:G88_Indien_Panzer>
+					1.4 1.4 10.27 5.41
+					<!--BW_String-->
+				</germany:G88_Indien_Panzer>
+				<germany:G89_Leopard1>
+					2 2 1.16 4.73
+					<!--BW_String-->
+				</germany:G89_Leopard1>
+				<germany:G89_Leopard1_bob>
+					2 2 1.16 4.73
+					<!--BW_String-->
+				</germany:G89_Leopard1_bob>
+				<germany:G90_DW_II>
+					1.5 1.5 0.85 1.71
+					<!--BW_String-->
+				</germany:G90_DW_II>
+				<germany:G91_Pro_Ag_A>
+					2 2 0.14 3.01
+					<!--BW_String-->
+				</germany:G91_Pro_Ag_A>
+				<germany:G92_VK7201>
+					2.2 2.2 4.93 6.92
+					<!--BW_String-->
+				</germany:G92_VK7201>
+				<germany:G93_GW_Mk_VIe>
+					2.2 2.2 2.16 0.63
+					<!--BW_String-->
+				</germany:G93_GW_Mk_VIe>
+				<germany:G94_GW_Tiger_P>
+					4 4 7.6 4.11
+					<!--BW_String-->
+				</germany:G94_GW_Tiger_P>
+				<germany:G95_Pz_Sfl_IVb>
+					1.3 1.3 4.79 8.7
+					<!--BW_String-->
+				</germany:G95_Pz_Sfl_IVb>
+				<germany:G96_VK3002M>
+					1.2 1.2 1.1 6.16
+					<!--BW_String-->
+				</germany:G96_VK3002M>
+				<germany:G97_Waffentrager_IV>
+					4 4 4.79 0.34
+					<!--BW_String-->
+				</germany:G97_Waffentrager_IV>
+				<germany:G98_Waffentrager_E100>
+					2.5 2.5 0.55 0.51
+					<!--BW_String-->
+				</germany:G98_Waffentrager_E100>
+				<germany:G98_Waffentrager_E100_P>
+					2.5 2.5 0.55 0.51
+					<!--BW_String-->
+				</germany:G98_Waffentrager_E100_P>
+				<germany:G99_RhB_Waffentrager>
+					2.5 2.5 2.47 3.22
+					<!--BW_String-->
+				</germany:G99_RhB_Waffentrager>
+				<italy:It03_M15_42>
+					1.4 1.4 3.49 -0.11
+					<!--BW_String-->
+				</italy:It03_M15_42>
+				<italy:It04_Fiat_3000>
+					1.85 1.85 4.65 2.59
+					<!--BW_String-->
+				</italy:It04_Fiat_3000>
+				<italy:It05_Carro_L6_40>
+					1.17 1.17 1.35 1.52
+					<!--BW_String-->
+				</italy:It05_Carro_L6_40>
+				<italy:It06_M14_41>
+					1.13 1.13 4.24 1.66
+					<!--BW_String-->
+				</italy:It06_M14_41>
+				<italy:It07_P26_40>
+					1.05 1.05 2.72 2.55
+					<!--BW_String-->
+				</italy:It07_P26_40>
+				<italy:It08_Progetto_M40_mod_65>
+					1.02 1.02 4.48 1.85
+					<!--BW_String-->
+				</italy:It08_Progetto_M40_mod_65>
+				<italy:It08_Progetto_M40_mod_65_bob>
+					1.02 1.02 4.48 1.85
+					<!--BW_String-->
+				</italy:It08_Progetto_M40_mod_65_bob>
+				<italy:It09_P43_ter>
+					1.89 1.89 3.53 2.34
+					<!--BW_String-->
+				</italy:It09_P43_ter>
+				<italy:It10_P43_bis>
+					1.09 1.09 1.66 -0.67
+					<!--BW_String-->
+				</italy:It10_P43_bis>
+				<italy:It11_P43>
+					0.97 0.97 2.47 1.67
+					<!--BW_String-->
+				</italy:It11_P43>
+				<italy:It12_Prototipo_Standard_B>
+					1.38 1.38 1.9 -1.25
+					<!--BW_String-->
+				</italy:It12_Prototipo_Standard_B>
+				<italy:It13_Progetto_M35_mod_46>
+					1.36 1.36 1.75 -0.25
+					<!--BW_String-->
+				</italy:It13_Progetto_M35_mod_46>
+				<italy:It14_P44_Pantera>
+					0.99 0.99 2.89 0.62
+					<!--BW_String-->
+				</italy:It14_P44_Pantera>
+				<italy:It15_Rinoceronte>
+					0.8 0.8 6.64 3.63
+					<!--BW_String-->
+				</italy:It15_Rinoceronte>
+				<italy:It16_Carro_d_assalto_P88>
+					0.97 0.97 2.12 1.74
+					<!--BW_String-->
+				</italy:It16_Carro_d_assalto_P88>
+				<italy:It17_Progetto_CC55_mod_54>
+					1.02 1.02 4.48 1.85
+					<!--BW_String-->
+				</italy:It17_Progetto_CC55_mod_54>
+				<italy:It18_Progetto_C45_mod_71>
+					1.02 1.02 4.48 1.85
+					<!--BW_String-->
+				</italy:It18_Progetto_C45_mod_71>
+				<italy:It19_Progetto_C50_mod_66>
+					0.99 0.99 2.89 0.62
+					<!--BW_String-->
+				</italy:It19_Progetto_C50_mod_66>
+				<italy:It20_Carro_Combattimento_45t>
+					0.99 0.99 2.89 0.62
+					<!--BW_String-->
+				</italy:It20_Carro_Combattimento_45t>
+				<japan:J01_NC27>
+					0.97 0.97 6.82 5.95
+					<!--BW_String-->
+				</japan:J01_NC27>
+				<japan:J02_Te_Ke>
+					3.64 3.64 9.37 9.32
+					<!--BW_String-->
+				</japan:J02_Te_Ke>
+				<japan:J03_Ha_Go>
+					2.9 2.9 8.51 7.76
+					<!--BW_String-->
+				</japan:J03_Ha_Go>
+				<japan:J04_Ke_Ni>
+					2.35 2.35 7.16 6.63
+					<!--BW_String-->
+				</japan:J04_Ke_Ni>
+				<japan:J05_Ke_Ni_B>
+					1.12 1.12 7.96 6.56
+					<!--BW_String-->
+				</japan:J05_Ke_Ni_B>
+				<japan:J06_Ke_Ho>
+					2.83 2.83 6.6 5.49
+					<!--BW_String-->
+				</japan:J06_Ke_Ho>
+				<japan:J07_Chi_Ha>
+					2.79 2.79 9.46 6.41
+					<!--BW_String-->
+				</japan:J07_Chi_Ha>
+				<japan:J08_Chi_Nu>
+					3.46 3.46 8.9 7.42
+					<!--BW_String-->
+				</japan:J08_Chi_Nu>
+				<japan:J09_Chi_He>
+					3.62 3.62 10.61 9.43
+					<!--BW_String-->
+				</japan:J09_Chi_He>
+				<japan:J10_Chi_To>
+					1.06 1.06 0.9 -1.19
+					<!--BW_String-->
+				</japan:J10_Chi_To>
+				<japan:J11_Chi_Ri>
+					2.27 2.27 7.82 7.78
+					<!--BW_String-->
+				</japan:J11_Chi_Ri>
+				<japan:J11_Chi_Ri_IGR>
+					2.62 2.62 7.58 7.52
+					<!--BW_String-->
+				</japan:J11_Chi_Ri_IGR>
+				<japan:J12_Chi_Nu_Kai>
+					4.34 4.34 8.49 9.32
+					<!--BW_String-->
+				</japan:J12_Chi_Nu_Kai>
+				<japan:J13_STA_1>
+					1.4 1.4 9.71 8.43
+					<!--BW_String-->
+				</japan:J13_STA_1>
+				<japan:J14_Type_61>
+					2.07 2.07 8.59 8.79
+					<!--BW_String-->
+				</japan:J14_Type_61>
+				<japan:J15_Chi_Ni>
+					2.78 2.78 9.63 7.78
+					<!--BW_String-->
+				</japan:J15_Chi_Ni>
+				<japan:J16_ST_B1>
+					1.98 1.98 9.2 7.03
+					<!--BW_String-->
+				</japan:J16_ST_B1>
+				<japan:J18_STA_2_3>
+					2.63 2.63 9.8 9.7
+					<!--BW_String-->
+				</japan:J18_STA_2_3>
+				<japan:J19_Tiger_I_Jpn>
+					3.02 3.02 10.73 9.37
+					<!--BW_String-->
+				</japan:J19_Tiger_I_Jpn>
+				<japan:J20_Type_2605>
+					2.68 2.68 8.91 7.64
+					<!--BW_String-->
+				</japan:J20_Type_2605>
+				<japan:J20_Type_2605_7x7>
+					2.68 2.68 8.91 7.64
+					<!--BW_String-->
+				</japan:J20_Type_2605_7x7>
+				<japan:J21_Type_91>
+					1.64 1.64 7.45 5.22
+					<!--BW_String-->
+				</japan:J21_Type_91>
+				<japan:J22_Type_95>
+					1.57 1.57 6.46 6.62
+					<!--BW_String-->
+				</japan:J22_Type_95>
+				<japan:J23_Mi_To>
+					3.06 3.06 7.39 6.73
+					<!--BW_String-->
+				</japan:J23_Mi_To>
+				<japan:J24_Mi_To_130_tons>
+					2.49 2.49 5.26 5.56
+					<!--BW_String-->
+				</japan:J24_Mi_To_130_tons>
+				<japan:J25_Type_4>
+					2.29 2.29 7.28 7.38
+					<!--BW_String-->
+				</japan:J25_Type_4>
+				<japan:J26_Type_89>
+					1.89 1.89 7.34 6.79
+					<!--BW_String-->
+				</japan:J26_Type_89>
+				<japan:J27_O_I_120>
+					2.64 2.64 3.73 5.08
+					<!--BW_String-->
+				</japan:J27_O_I_120>
+				<japan:J27_O_I_120_BP>
+					2.64 2.64 3.73 5.08
+					<!--BW_String-->
+				</japan:J27_O_I_120_BP>
+				<japan:J28_O_I_100>
+					1.6 1.6 7.39 8.15
+					<!--BW_String-->
+				</japan:J28_O_I_100>
+				<poland:Pl01_TKS_20mm>
+					1.42 1.42 0.29 0.14
+					<!--BW_String-->
+				</poland:Pl01_TKS_20mm>
+				<poland:Pl03_PzV_Poland>
+					1.75 1.75 1.78 -1.28
+					<!--BW_String-->
+				</poland:Pl03_PzV_Poland>
+				<poland:Pl05_50TP_Tyszkiewicza>
+					1.45 1.45 1.53 0.45
+					<!--BW_String-->
+				</poland:Pl05_50TP_Tyszkiewicza>
+				<poland:Pl06_10TP>
+					1.09 1.09 2.76 2.34
+					<!--BW_String-->
+				</poland:Pl06_10TP>
+				<poland:Pl07_14TP>
+					3.07 3.07 0.96 -0.88
+					<!--BW_String-->
+				</poland:Pl07_14TP>
+				<poland:Pl08_50TP_prototyp>
+					1.47 1.47 1.58 1.04
+					<!--BW_String-->
+				</poland:Pl08_50TP_prototyp>
+				<poland:Pl09_7TP>
+					0.94 0.94 0.49 -1.05
+					<!--BW_String-->
+				</poland:Pl09_7TP>
+				<poland:Pl10_40TP_Habicha>
+					1.22 1.22 0.61 0.52
+					<!--BW_String-->
+				</poland:Pl10_40TP_Habicha>
+				<poland:Pl11_45TP_Habicha>
+					1.26 1.26 0.85 0.22
+					<!--BW_String-->
+				</poland:Pl11_45TP_Habicha>
+				<poland:Pl12_25TP_KSUST_II>
+					2.09 2.09 0.06 0.43
+					<!--BW_String-->
+				</poland:Pl12_25TP_KSUST_II>
+				<poland:Pl13_53TP_Markowskiego>
+					2.03 2.03 0.83 1.55
+					<!--BW_String-->
+				</poland:Pl13_53TP_Markowskiego>
+				<poland:Pl14_4TP>
+					1.69 1.69 1.3 -0.03
+					<!--BW_String-->
+				</poland:Pl14_4TP>
+				<poland:Pl15_60TP_Lewandowskiego>
+					1.31 1.31 1.44 -0.64
+					<!--BW_String-->
+				</poland:Pl15_60TP_Lewandowskiego>
+				<poland:Pl16_T34_85_Rudy>
+					1.26 1.26 0.85 0.22
+					<!--BW_String-->
+				</poland:Pl16_T34_85_Rudy>
+				<poland:Pl17_DS_PZlnz>
+					1.26 1.26 0.85 0.22
+					<!--BW_String-->
+				</poland:Pl17_DS_PZlnz>
+				<poland:Pl18_BUGI>
+					2.5 2.5 0.000000 0.000000
+					<!--BW_String-->
+				</poland:Pl18_BUGI>
+				<poland:Pl19_CS_52_LIS>
+					0.8 0.8 6.64 3.63
+					<!--BW_String-->
+				</poland:Pl19_CS_52_LIS>
+				<poland:Pl20_CS_44>
+					1.26 1.26 0.85 0.22
+					<!--BW_String-->
+				</poland:Pl20_CS_44>
+				<poland:Pl21_CS_63>
+					1.47 1.47 1.58 1.04
+					<!--BW_String-->
+				</poland:Pl21_CS_63>
+				<poland:Pl21_CS_63_7x7>
+					1.47 1.47 1.58 1.04
+					<!--BW_String-->
+				</poland:Pl21_CS_63_7x7>
+				<poland:Pl22_CS_59>
+					1.47 1.47 1.58 1.04
+					<!--BW_String-->
+				</poland:Pl22_CS_59>
+				<poland:Pl23_CS_53>
+					1.26 1.26 0.85 0.22
+					<!--BW_String-->
+				</poland:Pl23_CS_53>
+				<sweden:S01_Strv_74_A2>
+					1.64 1.64 0.53 0.82
+					<!--BW_String-->
+				</sweden:S01_Strv_74_A2>
+				<sweden:S02_Strv_M42>
+					0.88 0.88 2.65 0.72
+					<!--BW_String-->
+				</sweden:S02_Strv_M42>
+				<sweden:S03_Strv_M38>
+					2.95 2.95 1.01 -1.89
+					<!--BW_String-->
+				</sweden:S03_Strv_M38>
+				<sweden:S04_Lago_I>
+					0.75 0.75 0.89 -0.67
+					<!--BW_String-->
+				</sweden:S04_Lago_I>
+				<sweden:S05_Strv_M21_29>
+					1.54 1.54 1.22 0.6
+					<!--BW_String-->
+				</sweden:S05_Strv_M21_29>
+				<sweden:S06_Ikv_90_Typ_B_Bofors>
+					0.92 0.92 2.04 -1.43
+					<!--BW_String-->
+				</sweden:S06_Ikv_90_Typ_B_Bofors>
+				<sweden:S07_Strv_74>
+					0.93 0.93 0.86 0.34
+					<!--BW_String-->
+				</sweden:S07_Strv_74>
+				<sweden:S08_Ikv_65_Alt_2>
+					1.11 1.11 2.33 -0.45
+					<!--BW_String-->
+				</sweden:S08_Ikv_65_Alt_2>
+				<sweden:S09_L_120_TD>
+					2.13 2.13 0.51 0.4
+					<!--BW_String-->
+				</sweden:S09_L_120_TD>
+				<sweden:S10_Strv_103_0_Series>
+					0.67 0.67 1.35 -1.29
+					<!--BW_String-->
+				</sweden:S10_Strv_103_0_Series>
+				<sweden:S10_Strv_103_0_Series_FL>
+					0.67 0.67 1.35 -1.29
+					<!--BW_String-->
+				</sweden:S10_Strv_103_0_Series_FL>
+				<sweden:S11_Strv_103B>
+					0.78 0.78 0.69 0.08
+					<!--BW_String-->
+				</sweden:S11_Strv_103B>
+				<sweden:S12_Strv_M40>
+					4.52 4.52 0.57 0.26
+					<!--BW_String-->
+				</sweden:S12_Strv_M40>
+				<sweden:S13_Leo>
+					1.97 1.97 0.79 -1.72
+					<!--BW_String-->
+				</sweden:S13_Leo>
+				<sweden:S14_Ikv_103>
+					1.6 1.6 -0.08 0.98
+					<!--BW_String-->
+				</sweden:S14_Ikv_103>
+				<sweden:S15_L_60>
+					0.68 0.68 0.83 -0.29
+					<!--BW_String-->
+				</sweden:S15_L_60>
+				<sweden:S16_Kranvagn>
+					0.56 0.56 0.39 0.43
+					<!--BW_String-->
+				</sweden:S16_Kranvagn>
+				<sweden:S16_Kranvagn_bob>
+					0.56 0.56 0.39 0.43
+					<!--BW_String-->
+				</sweden:S16_Kranvagn_bob>
+				<sweden:S17_EMIL_1952_E2>
+					0.92 0.92 0.58 1.43
+					<!--BW_String-->
+				</sweden:S17_EMIL_1952_E2>
+				<sweden:S18_EMIL_1951_E1>
+					1.14 1.14 -0.45 4.44
+					<!--BW_String-->
+				</sweden:S18_EMIL_1951_E1>
+				<sweden:S19_Sav_M43>
+					1.11 1.11 1.1 -0.04
+					<!--BW_String-->
+				</sweden:S19_Sav_M43>
+				<sweden:S20_Ikv_72>
+					3.26 3.26 0.81 0.14
+					<!--BW_String-->
+				</sweden:S20_Ikv_72>
+				<sweden:S21_UDES_03>
+					2.64 2.64 0.9 0.21
+					<!--BW_String-->
+				</sweden:S21_UDES_03>
+				<sweden:S22_Strv_S1>
+					1.1 1.1 1.8 0.76
+					<!--BW_String-->
+				</sweden:S22_Strv_S1>
+				<sweden:S22_Strv_S1_FL>
+					1.1 1.1 1.8 0.76
+					<!--BW_String-->
+				</sweden:S22_Strv_S1_FL>
+				<sweden:S23_Strv_81>
+					3.03 3.03 1.27 0.37
+					<!--BW_String-->
+				</sweden:S23_Strv_81>
+				<sweden:S23_Strv_81_sabaton>
+					2 2 0.7 0.44
+					<!--BW_String-->
+				</sweden:S23_Strv_81_sabaton>
+				<sweden:S25_EMIL_51>
+					1.33 1.33 0.64 1.07
+					<!--BW_String-->
+				</sweden:S25_EMIL_51>
+				<sweden:S26_Lansen_C>
+					2.47 2.47 0.06 -0.49
+					<!--BW_String-->
+				</sweden:S26_Lansen_C>
+				<sweden:S27_UDES_16>
+					3.04 3.04 1.05 0.63
+					<!--BW_String-->
+				</sweden:S27_UDES_16>
+				<sweden:S28_UDES_15_16>
+					2.64 2.64 0.9 0.21
+					<!--BW_String-->
+				</sweden:S28_UDES_15_16>
+				<sweden:S28_UDES_15_16_7x7>
+					2.64 2.64 0.9 0.21
+					<!--BW_String-->
+				</sweden:S28_UDES_15_16_7x7>
+				<sweden:S29_UDES_14_5>
+					1.38 1.38 0.000000 0.000000
+					<!--BW_String-->
+				</sweden:S29_UDES_14_5>
+				<sweden:S30_UDES_03_Alt_3>
+					1.38 1.38 0.000000 0.000000
+					<!--BW_String-->
+				</sweden:S30_UDES_03_Alt_3>
+				<sweden:S31_Strv_K>
+					0.56 0.56 0.39 0.43
+					<!--BW_String-->
+				</sweden:S31_Strv_K>
+				<uk:GB01_Medium_Mark_I>
+					2.64 2.64 8.57 9.43
+					<!--BW_String-->
+				</uk:GB01_Medium_Mark_I>
+				<uk:GB03_Cruiser_Mk_I>
+					2.93 2.93 10.68 10.63
+					<!--BW_String-->
+				</uk:GB03_Cruiser_Mk_I>
+				<uk:GB04_Valentine>
+					1.7 1.7 6.51 6.14
+					<!--BW_String-->
+				</uk:GB04_Valentine>
+				<uk:GB05_Vickers_Medium_Mk_II>
+					1.32 1.32 8.75 7.54
+					<!--BW_String-->
+				</uk:GB05_Vickers_Medium_Mk_II>
+				<uk:GB06_Vickers_Medium_Mk_III>
+					1.64 1.64 8.95 10.07
+					<!--BW_String-->
+				</uk:GB06_Vickers_Medium_Mk_III>
+				<uk:GB07_Matilda>
+					1.28 1.28 6.12 6.48
+					<!--BW_String-->
+				</uk:GB07_Matilda>
+				<uk:GB08_Churchill_I>
+					1.75 1.75 10.16 8.65
+					<!--BW_String-->
+				</uk:GB08_Churchill_I>
+				<uk:GB09_Churchill_VII>
+					1.34 1.34 10.54 6.49
+					<!--BW_String-->
+				</uk:GB09_Churchill_VII>
+				<uk:GB100_Manticore>
+					1.5 1.5 0.000000 0.000000
+					<!--BW_String-->
+				</uk:GB100_Manticore>
+				<uk:GB101_FV1066_Senlac>
+					1.5 1.5 0.000000 0.000000
+					<!--BW_String-->
+				</uk:GB101_FV1066_Senlac>
+				<uk:GB102_LHMTV>
+					2.11 2.11 0.41 0.64
+					<!--BW_String-->
+				</uk:GB102_LHMTV>
+				<uk:GB102_LHMTV_FL>
+					2.11 2.11 0.41 0.64
+					<!--BW_String-->
+				</uk:GB102_LHMTV_FL>
+				<uk:GB103_GSOR3301_AVR_FS>
+					2.11 2.11 0.41 0.64
+					<!--BW_String-->
+				</uk:GB103_GSOR3301_AVR_FS>
+				<uk:GB104_GSR_3301_Setter>
+					2.11 2.11 0.41 0.64
+					<!--BW_String-->
+				</uk:GB104_GSR_3301_Setter>
+				<uk:GB105_Black_Prince_2019>
+					2.53 2.53 8.77 7.46
+					<!--BW_String-->
+				</uk:GB105_Black_Prince_2019>
+				<uk:GB106_Cobra>
+					1.32 1.32 0.61 -0.98
+					<!--BW_String-->
+				</uk:GB106_Cobra>
+				<uk:GB107_Cavalier>
+					2.5 2.5 0.000000 0.000000
+					<!--BW_String-->
+				</uk:GB107_Cavalier>
+				<uk:GB108_A46>
+					0.91 0.91 0.000000 0.000000
+					<!--BW_String-->
+				</uk:GB108_A46>
+				<uk:GB109_GSOR_1008>
+					0.56 0.56 0.39 0.43
+					<!--BW_String-->
+				</uk:GB109_GSOR_1008>
+				<uk:GB10_Black_Prince>
+					2.53 2.53 8.77 7.46
+					<!--BW_String-->
+				</uk:GB10_Black_Prince>
+				<uk:GB11_Caernarvon>
+					2.8 2.8 8.74 7.55
+					<!--BW_String-->
+				</uk:GB11_Caernarvon>
+				<uk:GB12_Conqueror>
+					1.01 1.01 8.78 8.6
+					<!--BW_String-->
+				</uk:GB12_Conqueror>
+				<uk:GB12_Conqueror_FL>
+					1.01 1.01 8.78 8.6
+					<!--BW_String-->
+				</uk:GB12_Conqueror_FL>
+				<uk:GB13_FV215b>
+					2.35 2.35 9.66 8.97
+					<!--BW_String-->
+				</uk:GB13_FV215b>
+				<uk:GB14_M2>
+					2.07 2.07 9.87 7.2
+					<!--BW_String-->
+				</uk:GB14_M2>
+				<uk:GB15_Stuart_I>
+					2.07 2.07 9.87 7.2
+					<!--BW_String-->
+				</uk:GB15_Stuart_I>
+				<uk:GB17_Grant_I>
+					2.69 2.69 9.23 7.71
+					<!--BW_String-->
+				</uk:GB17_Grant_I>
+				<uk:GB19_Sherman_Firefly>
+					2.25 2.25 6.36 9.5
+					<!--BW_String-->
+				</uk:GB19_Sherman_Firefly>
+				<uk:GB20_Crusader>
+					1.75 1.75 9.09 8.51
+					<!--BW_String-->
+				</uk:GB20_Crusader>
+				<uk:GB21_Cromwell>
+					1.96 1.96 10.92 9.65
+					<!--BW_String-->
+				</uk:GB21_Cromwell>
+				<uk:GB22_Comet>
+					1.38 1.38 9.77 7.48
+					<!--BW_String-->
+				</uk:GB22_Comet>
+				<uk:GB23_Centurion>
+					2.9 2.9 8.76 7.55
+					<!--BW_String-->
+				</uk:GB23_Centurion>
+				<uk:GB24_Centurion_Mk3>
+					2.7 2.7 8.17 7.93
+					<!--BW_String-->
+				</uk:GB24_Centurion_Mk3>
+				<uk:GB25_Loyd_Gun_Carriage>
+					2.09 2.09 9.17 12.05
+					<!--BW_String-->
+				</uk:GB25_Loyd_Gun_Carriage>
+				<uk:GB26_Birch_Gun>
+					3.1 3.1 8.94 8.84
+					<!--BW_String-->
+				</uk:GB26_Birch_Gun>
+				<uk:GB27_Sexton>
+					3.12 3.12 7.96 8
+					<!--BW_String-->
+				</uk:GB27_Sexton>
+				<uk:GB28_Bishop>
+					2.43 2.43 7.03 7.4
+					<!--BW_String-->
+				</uk:GB28_Bishop>
+				<uk:GB29_Crusader_5inch>
+					1.76 1.76 8.06 7.78
+					<!--BW_String-->
+				</uk:GB29_Crusader_5inch>
+				<uk:GB30_FV3805>
+					1.47 1.47 10.64 9.13
+					<!--BW_String-->
+				</uk:GB30_FV3805>
+				<uk:GB31_Conqueror_Gun>
+					1.51 1.51 7.59 8.02
+					<!--BW_String-->
+				</uk:GB31_Conqueror_Gun>
+				<uk:GB32_Tortoise>
+					2.98 2.98 10.24 10.08
+					<!--BW_String-->
+				</uk:GB32_Tortoise>
+				<uk:GB33_Sentinel_AC_I>
+					2.04 2.04 8.41 7.04
+					<!--BW_String-->
+				</uk:GB33_Sentinel_AC_I>
+				<uk:GB35_Sentinel_AC_IV>
+					3.29 3.29 8.36 8.81
+					<!--BW_String-->
+				</uk:GB35_Sentinel_AC_IV>
+				<uk:GB37_Valliant>
+					1.5 1.5 0.000000 0.000000
+					<!--BW_String-->
+				</uk:GB37_Valliant>
+				<uk:GB39_Universal_CarrierQF2>
+					1.32 1.32 7.79 9.45
+					<!--BW_String-->
+				</uk:GB39_Universal_CarrierQF2>
+				<uk:GB40_Gun_Carrier_Churchill>
+					1.32 1.32 7.75 7.27
+					<!--BW_String-->
+				</uk:GB40_Gun_Carrier_Churchill>
+				<uk:GB41_Challenger>
+					1.69 1.69 9.84 11.2
+					<!--BW_String-->
+				</uk:GB41_Challenger>
+				<uk:GB42_Valentine_AT>
+					0.96 0.96 9.45 10.49
+					<!--BW_String-->
+				</uk:GB42_Valentine_AT>
+				<uk:GB44_Archer>
+					2.5 2.5 9.71 8.57
+					<!--BW_String-->
+				</uk:GB44_Archer>
+				<uk:GB45_Achilles_IIC>
+					2.05 2.05 10.36 7.76
+					<!--BW_String-->
+				</uk:GB45_Achilles_IIC>
+				<uk:GB48_FV215b_183>
+					3.05 3.05 8.62 8.78
+					<!--BW_String-->
+				</uk:GB48_FV215b_183>
+				<uk:GB50_Sherman_III>
+					1.76 1.76 0.61 0.7
+					<!--BW_String-->
+				</uk:GB50_Sherman_III>
+				<uk:GB51_Excelsior>
+					0.79 0.79 -0.5 -2.43
+					<!--BW_String-->
+				</uk:GB51_Excelsior>
+				<uk:GB52_A45>
+					1.22 1.22 0.43 1.28
+					<!--BW_String-->
+				</uk:GB52_A45>
+				<uk:GB57_Alecto>
+					1.8 1.8 1.34 1.17
+					<!--BW_String-->
+				</uk:GB57_Alecto>
+				<uk:GB58_Cruiser_Mk_III>
+					3.06 3.06 1.19 0.9
+					<!--BW_String-->
+				</uk:GB58_Cruiser_Mk_III>
+				<uk:GB59_Cruiser_Mk_IV>
+					2.71 2.71 4.13 -0.61
+					<!--BW_String-->
+				</uk:GB59_Cruiser_Mk_IV>
+				<uk:GB60_Covenanter>
+					1.98 1.98 2.52 1.14
+					<!--BW_String-->
+				</uk:GB60_Covenanter>
+				<uk:GB63_TOG_II>
+					0.74 0.74 0.18 0.11
+					<!--BW_String-->
+				</uk:GB63_TOG_II>
+				<uk:GB68_Matilda_Black_Prince>
+					2.08 2.08 0.57 1.31
+					<!--BW_String-->
+				</uk:GB68_Matilda_Black_Prince>
+				<uk:GB69_Cruiser_Mk_II>
+					3.62 3.62 0.73 -0.4
+					<!--BW_String-->
+				</uk:GB69_Cruiser_Mk_II>
+				<uk:GB70_N_FV4202_105>
+					2.2 2.2 0.78 0.44
+					<!--BW_String-->
+				</uk:GB70_N_FV4202_105>
+				<uk:GB71_AT_15A>
+					2.97 2.97 0.52 0.27
+					<!--BW_String-->
+				</uk:GB71_AT_15A>
+				<uk:GB72_AT15>
+					2.13 2.13 3.66 6.92
+					<!--BW_String-->
+				</uk:GB72_AT15>
+				<uk:GB73_AT2>
+					1.27 1.27 1.92 -1.09
+					<!--BW_String-->
+				</uk:GB73_AT2>
+				<uk:GB74_AT8>
+					2.19 2.19 0.67 1.23
+					<!--BW_String-->
+				</uk:GB74_AT8>
+				<uk:GB75_AT7>
+					1.84 1.84 -0.01 -0.38
+					<!--BW_String-->
+				</uk:GB75_AT7>
+				<uk:GB76_Mk_VIC>
+					1.45 1.45 0.67 0.82
+					<!--BW_String-->
+				</uk:GB76_Mk_VIC>
+				<uk:GB77_FV304>
+					3.37 3.37 2.53 1.44
+					<!--BW_String-->
+				</uk:GB77_FV304>
+				<uk:GB78_Sexton_I>
+					1.87 1.87 0.28 0.9
+					<!--BW_String-->
+				</uk:GB78_Sexton_I>
+				<uk:GB79_FV206>
+					1.48 1.48 0.41 0.23
+					<!--BW_String-->
+				</uk:GB79_FV206>
+				<uk:GB80_Charioteer>
+					2.98 2.98 0.92 0.52
+					<!--BW_String-->
+				</uk:GB80_Charioteer>
+				<uk:GB81_FV4004>
+					3.52 3.52 1.02 1.02
+					<!--BW_String-->
+				</uk:GB81_FV4004>
+				<uk:GB83_FV4005>
+					2.76 2.76 0.71 1.05
+					<!--BW_String-->
+				</uk:GB83_FV4005>
+				<uk:GB84_Chieftain_Mk6>
+					5.76 5.76 0.82 -0.5
+					<!--BW_String-->
+				</uk:GB84_Chieftain_Mk6>
+				<uk:GB85_Cromwell_Berlin>
+					0.95 0.95 0.000000 0.000000
+					<!--BW_String-->
+				</uk:GB85_Cromwell_Berlin>
+				<uk:GB86_Centurion_Action_X>
+					1.43 1.43 1.17 0.68
+					<!--BW_String-->
+				</uk:GB86_Centurion_Action_X>
+				<uk:GB86_Centurion_Action_X_7x7>
+					1.43 1.43 1.17 0.68
+					<!--BW_String-->
+				</uk:GB86_Centurion_Action_X_7x7>
+				<uk:GB87_Chieftain_T95_turret>
+					3.46 3.46 0.67 0.28
+					<!--BW_String-->
+				</uk:GB87_Chieftain_T95_turret>
+				<uk:GB88_T95_Chieftain_turret>
+					0.59 0.59 0.69 -0.54
+					<!--BW_String-->
+				</uk:GB88_T95_Chieftain_turret>
+				<uk:GB91_Super_Conqueror>
+					1.07 1.07 2.06 0.63
+					<!--BW_String-->
+				</uk:GB91_Super_Conqueror>
+				<uk:GB92_FV217>
+					0.91 0.91 2.29 1.6
+					<!--BW_String-->
+				</uk:GB92_FV217>
+				<uk:GB92_FV217_7x7>
+					0.91 0.91 2.29 1.6
+					<!--BW_String-->
+				</uk:GB92_FV217_7x7>
+				<uk:GB93_Caernarvon_AX>
+					1.72 1.72 1.58 0.07
+					<!--BW_String-->
+				</uk:GB93_Caernarvon_AX>
+				<uk:GB94_Centurion_Mk5-1_RAAC>
+					1.59 1.59 0.54 1.06
+					<!--BW_String-->
+				</uk:GB94_Centurion_Mk5-1_RAAC>
+				<uk:GB95_Ekins_Firefly_M4A4>
+					1.66 1.66 2.19 2.51
+					<!--BW_String-->
+				</uk:GB95_Ekins_Firefly_M4A4>
+				<uk:GB96_Excalibur>
+					2.44 2.44 2.17 3.44
+					<!--BW_String-->
+				</uk:GB96_Excalibur>
+				<uk:GB97_Chimera>
+					3.03 3.03 0.49 0.18
+					<!--BW_String-->
+				</uk:GB97_Chimera>
+				<uk:GB98_T95_FV4201_Chieftain>
+					1.32 1.32 0.61 -0.98
+					<!--BW_String-->
+				</uk:GB98_T95_FV4201_Chieftain>
+				<uk:GB99_Turtle_Mk1>
+					0.91 0.91 2.29 1.6
+					<!--BW_String-->
+				</uk:GB99_Turtle_Mk1>
+				<usa:A01_T1_Cunningham>
+					2.38 2.38 6.77 2.96
+					<!--BW_String-->
+				</usa:A01_T1_Cunningham>
+				<usa:A02_M2_lt>
+					3.04 3.04 4.97 5.69
+					<!--BW_String-->
+				</usa:A02_M2_lt>
+				<usa:A03_M3_Stuart>
+					2.64 2.64 7.69 5.77
+					<!--BW_String-->
+				</usa:A03_M3_Stuart>
+				<usa:A04_M3_Grant>
+					2.82 2.82 7.17 8.25
+					<!--BW_String-->
+				</usa:A04_M3_Grant>
+				<usa:A05_M4_Sherman>
+					3.14 3.14 7.79 8.59
+					<!--BW_String-->
+				</usa:A05_M4_Sherman>
+				<usa:A06_M4A3E8_Sherman>
+					3.47 3.47 5.85 6.96
+					<!--BW_String-->
+				</usa:A06_M4A3E8_Sherman>
+				<usa:A07_T20>
+					2.81 2.81 7.56 5.87
+					<!--BW_String-->
+				</usa:A07_T20>
+				<usa:A09_T1_hvy>
+					3.16 3.16 7.5 7.58
+					<!--BW_String-->
+				</usa:A09_T1_hvy>
+				<usa:A100_T49>
+					1.52 1.52 6.19 6.98
+					<!--BW_String-->
+				</usa:A100_T49>
+				<usa:A101_M56>
+					2.96 2.96 8.75 9.39
+					<!--BW_String-->
+				</usa:A101_M56>
+				<usa:A102_T28_concept>
+					1.68 1.68 8.59 5.71
+					<!--BW_String-->
+				</usa:A102_T28_concept>
+				<usa:A103_T71E1>
+					2.41 2.41 6.68 6.17
+					<!--BW_String-->
+				</usa:A103_T71E1>
+				<usa:A104_M4A3E8A>
+					2.86 2.86 7.76 8.4
+					<!--BW_String-->
+				</usa:A104_M4A3E8A>
+				<usa:A106_M48A2_120>
+					2.91 2.91 6.75 6.66
+					<!--BW_String-->
+				</usa:A106_M48A2_120>
+				<usa:A107_T1_HMC>
+					2.34 2.34 5.33 5.88
+					<!--BW_String-->
+				</usa:A107_T1_HMC>
+				<usa:A108_T18_HMC>
+					1.18 1.18 5.55 6.89
+					<!--BW_String-->
+				</usa:A108_T18_HMC>
+				<usa:A109_T56_GMC>
+					2.48 2.48 7.9 7.38
+					<!--BW_String-->
+				</usa:A109_T56_GMC>
+				<usa:A10_M6>
+					2.13 2.13 6.84 6.78
+					<!--BW_String-->
+				</usa:A10_M6>
+				<usa:A111_T25_Pilot>
+					2.81 2.81 8.7 8.16
+					<!--BW_String-->
+				</usa:A111_T25_Pilot>
+				<usa:A112_T71E2>
+					1.13 1.13 7.36 8.28
+					<!--BW_String-->
+				</usa:A112_T71E2>
+				<usa:A112_T71E2R>
+					1.13 1.13 7.36 8.28
+					<!--BW_String-->
+				</usa:A112_T71E2R>
+				<usa:A115_Chrysler_K>
+					1.79 1.79 1.11 1.28
+					<!--BW_String-->
+				</usa:A115_Chrysler_K>
+				<usa:A115_Chrysler_K_GF>
+					1.09 1.09 7.67 8.52
+					<!--BW_String-->
+				</usa:A115_Chrysler_K_GF>
+				<usa:A116_XM551>
+					1.83 1.83 2.74 1.5
+					<!--BW_String-->
+				</usa:A116_XM551>
+				<usa:A117_T26E5>
+					1.16 1.16 11.33 9.6
+					<!--BW_String-->
+				</usa:A117_T26E5>
+				<usa:A117_T26E5_FL>
+					1.16 1.16 11.33 9.6
+					<!--BW_String-->
+				</usa:A117_T26E5_FL>
+				<usa:A118_M4_Thunderbolt>
+					1.36 1.36 6.83 7.31
+					<!--BW_String-->
+				</usa:A118_M4_Thunderbolt>
+				<usa:A11_T29>
+					2.62 2.62 7.9 6.82
+					<!--BW_String-->
+				</usa:A11_T29>
+				<usa:A120_M48A5>
+					1.46 1.46 10.12 7.14
+					<!--BW_String-->
+				</usa:A120_M48A5>
+				<usa:A120_M48A5_7x7>
+					1.46 1.46 10.12 7.14
+					<!--BW_String-->
+				</usa:A120_M48A5_7x7>
+				<usa:A121_M26_Cologne>
+					1.16 1.16 7.46 9.28
+					<!--BW_String-->
+				</usa:A121_M26_Cologne>
+				<usa:A122_TS-5>
+					4.24 4.24 0.63 -0.31
+					<!--BW_String-->
+				</usa:A122_TS-5>
+				<usa:A123_T78>
+					3.05 3.05 0.000000 0.000000
+					<!--BW_String-->
+				</usa:A123_T78>
+				<usa:A124_T54E2>
+					3.02 3.02 4.43 6.97
+					<!--BW_String-->
+				</usa:A124_T54E2>
+				<usa:A125_AEP_1>
+					2 2 10.12 7.14
+					<!--BW_String-->
+				</usa:A125_AEP_1>
+				<usa:A126_PzVI_Tiger_II_capt>
+					1.5 1.5 1.71 8.49
+					<!--BW_String-->
+				</usa:A126_PzVI_Tiger_II_capt>
+				<usa:A127_TL_1_LPC>
+					1.66 1.66 7.48 8.57
+					<!--BW_String-->
+				</usa:A127_TL_1_LPC>
+				<usa:A128_concept_1b>
+					1 1 1.9 0.000000
+					<!--BW_String-->
+				</usa:A128_concept_1b>
+				<usa:A129_T6_medium>
+					3 3 5.55 6.89
+					<!--BW_String-->
+				</usa:A129_T6_medium>
+				<usa:A12_T32>
+					2.56 2.56 8.74 10.02
+					<!--BW_String-->
+				</usa:A12_T32>
+				<usa:A12_T32_M>
+					2.56 2.56 8.74 10.02
+					<!--BW_String-->
+				</usa:A12_T32_M>
+				<usa:A12_T32_FL>
+					2.56 2.56 8.74 10.02
+					<!--BW_String-->
+				</usa:A12_T32_FL>
+				<usa:A130_Super_Hellcat>
+					1.66 1.66 7.94 8.19
+					<!--BW_String-->
+				</usa:A130_Super_Hellcat>
+				<usa:A132_T77>
+					1.83 1.83 7.8 7.18
+					<!--BW_String-->
+				</usa:A132_T77>
+				<usa:A134_M24E2_SuperChaffee>
+					3.05 3.05 0.000000 0.000000
+					<!--BW_String-->
+				</usa:A134_M24E2_SuperChaffee>
+				<usa:A136_T42>
+					3.24 3.24 9.34 9.65
+					<!--BW_String-->
+				</usa:A136_T42>
+				<usa:A13_T34_hvy>
+					3.26 3.26 0.69 1.02
+					<!--BW_String-->
+				</usa:A13_T34_hvy>
+				<usa:A13_T34_hvy_BF>
+					2.5 2.5 0.06 1.53
+					<!--BW_String-->
+				</usa:A13_T34_hvy_BF>
+				<usa:A14_T30>
+					1.83 1.83 7.8 7.18
+					<!--BW_String-->
+				</usa:A14_T30>
+				<usa:A14_T30_FL>
+					1.83 1.83 7.8 7.18
+					<!--BW_String-->
+				</usa:A14_T30_FL>
+				<usa:A16_M7_Priest>
+					2.87 2.87 7.58 6.51
+					<!--BW_String-->
+				</usa:A16_M7_Priest>
+				<usa:A17_M37>
+					1.72 1.72 8.14 8.33
+					<!--BW_String-->
+				</usa:A17_M37>
+				<usa:A18_M41>
+					3.6 3.6 9.83 8.88
+					<!--BW_String-->
+				</usa:A18_M41>
+				<usa:A19_T2_lt>
+					2.48 2.48 9.67 8.44
+					<!--BW_String-->
+				</usa:A19_T2_lt>
+				<usa:A21_T14>
+					2.91 2.91 10.1 9.54
+					<!--BW_String-->
+				</usa:A21_T14>
+				<usa:A22_M5_Stuart>
+					2.75 2.75 9.49 8.16
+					<!--BW_String-->
+				</usa:A22_M5_Stuart>
+				<usa:A23_M7_med>
+					2.77 2.77 9.61 7.42
+					<!--BW_String-->
+				</usa:A23_M7_med>
+				<usa:A23_M7_med_02>
+					2.77 2.77 9.61 7.42
+					<!--BW_String-->
+				</usa:A23_M7_med_02>
+				<usa:A24_T2_med>
+					2.77 2.77 8.2 7.7
+					<!--BW_String-->
+				</usa:A24_T2_med>
+				<usa:A25_M2_med>
+					2.9 2.9 7.41 9.6
+					<!--BW_String-->
+				</usa:A25_M2_med>
+				<usa:A27_T82>
+					1.96 1.96 7.87 7.97
+					<!--BW_String-->
+				</usa:A27_T82>
+				<usa:A29_T40>
+					3.19 3.19 8.49 6.98
+					<!--BW_String-->
+				</usa:A29_T40>
+				<usa:A30_M10_Wolverine>
+					2.92 2.92 9.12 5.75
+					<!--BW_String-->
+				</usa:A30_M10_Wolverine>
+				<usa:A31_M36_Slagger>
+					1.93 1.93 6.34 6.77
+					<!--BW_String-->
+				</usa:A31_M36_Slagger>
+				<usa:A32_M12>
+					2.4 2.4 8.27 5.77
+					<!--BW_String-->
+				</usa:A32_M12>
+				<usa:A33_MTLS-1G14>
+					1.5 1.5 8.32 7.53
+					<!--BW_String-->
+				</usa:A33_MTLS-1G14>
+				<usa:A34_M24_Chaffee>
+					2.75 2.75 8.76 7.03
+					<!--BW_String-->
+				</usa:A34_M24_Chaffee>
+				<usa:A35_Pershing>
+					2.35 2.35 7.21 6.54
+					<!--BW_String-->
+				</usa:A35_Pershing>
+				<usa:A35_Pershing_FL>
+					2.35 2.35 7.21 6.54
+					<!--BW_String-->
+				</usa:A35_Pershing_FL>
+				<usa:A36_Sherman_Jumbo>
+					3.13 3.13 0.09 4.39
+					<!--BW_String-->
+				</usa:A36_Sherman_Jumbo>
+				<usa:A37_M40M43>
+					0.98 0.98 7.51 7.05
+					<!--BW_String-->
+				</usa:A37_M40M43>
+				<usa:A38_T92>
+					1.51 1.51 9.52 8.75
+					<!--BW_String-->
+				</usa:A38_T92>
+				<usa:A39_T28>
+					1.28 1.28 8.45 8.25
+					<!--BW_String-->
+				</usa:A39_T28>
+				<usa:A40_T95>
+					2.86 2.86 7.99 7.47
+					<!--BW_String-->
+				</usa:A40_T95>
+				<usa:A41_M18_Hellcat>
+					1.66 1.66 7.94 8.19
+					<!--BW_String-->
+				</usa:A41_M18_Hellcat>
+				<usa:A43_M22_Locust>
+					1.85 1.85 6.13 5.43
+					<!--BW_String-->
+				</usa:A43_M22_Locust>
+				<usa:A44_M4A2E4>
+					3.45 3.45 6.69 6.61
+					<!--BW_String-->
+				</usa:A44_M4A2E4>
+				<usa:A45_M6A2E1>
+					3.33 3.33 7.21 6.21
+					<!--BW_String-->
+				</usa:A45_M6A2E1>
+				<usa:A46_T3>
+					2.72 2.72 6.33 5.38
+					<!--BW_String-->
+				</usa:A46_T3>
+				<usa:A57_M8A1>
+					3.23 3.23 7.34 6
+					<!--BW_String-->
+				</usa:A57_M8A1>
+				<usa:A58_T67>
+					2.74 2.74 7.63 7.61
+					<!--BW_String-->
+				</usa:A58_T67>
+				<usa:A62_Ram-II>
+					3.11 3.11 7.23 6.18
+					<!--BW_String-->
+				</usa:A62_Ram-II>
+				<usa:A63_M46_Patton>
+					1.69 1.69 7.74 8.46
+					<!--BW_String-->
+				</usa:A63_M46_Patton>
+				<usa:A63_M46_Patton_FL>
+					1.69 1.69 7.74 8.46
+					<!--BW_String-->
+				</usa:A63_M46_Patton_FL>
+				<usa:A64_T25_AT>
+					3.08 3.08 6.69 7.29
+					<!--BW_String-->
+				</usa:A64_T25_AT>
+				<usa:A64_T25_AT_FL>
+					3.08 3.08 6.69 7.29
+					<!--BW_String-->
+				</usa:A64_T25_AT_FL>
+				<usa:A66_M103>
+					2.46 2.46 8.95 7.34
+					<!--BW_String-->
+				</usa:A66_M103>
+				<usa:A67_T57_58>
+					2.79 2.79 0.43 6.42
+					<!--BW_String-->
+				</usa:A67_T57_58>
+				<usa:A68_T28_Prototype>
+					4.46 4.46 7.96 6.56
+					<!--BW_String-->
+				</usa:A68_T28_Prototype>
+				<usa:A68_T28_Prototype_FL>
+					4.46 4.46 7.96 6.56
+					<!--BW_String-->
+				</usa:A68_T28_Prototype_FL>
+				<usa:A69_T110E5>
+					2.95 2.95 8.55 9.27
+					<!--BW_String-->
+				</usa:A69_T110E5>
+				<usa:A69_T110E5_cl>
+					2.95 2.95 8.55 9.27
+					<!--BW_String-->
+				</usa:A69_T110E5_cl>
+				<usa:A69_T110E5_7x7>
+					2.95 2.95 8.55 9.27
+					<!--BW_String-->
+				</usa:A69_T110E5_7x7>
+				<usa:A71_T21>
+					1.51 1.51 10.71 9.33
+					<!--BW_String-->
+				</usa:A71_T21>
+				<usa:A72_T25_2>
+					0.88 0.88 9 9.56
+					<!--BW_String-->
+				</usa:A72_T25_2>
+				<usa:A74_T1_E6>
+					1.03 1.03 9.87 10.77
+					<!--BW_String-->
+				</usa:A74_T1_E6>
+				<usa:A78_M4_Improved>
+					2.99 2.99 10.36 10.4
+					<!--BW_String-->
+				</usa:A78_M4_Improved>
+				<usa:A80_T26_E4_SuperPershing>
+					3.3 3.3 7.36 8.32
+					<!--BW_String-->
+				</usa:A80_T26_E4_SuperPershing>
+				<usa:A81_T95_E2>
+					1.66 1.66 7.48 8.57
+					<!--BW_String-->
+				</usa:A81_T95_E2>
+				<usa:A83_T110E4>
+					1.74 1.74 7.53 7.17
+					<!--BW_String-->
+				</usa:A83_T110E4>
+				<usa:A83_T110E4_7x7>
+					1.74 1.74 7.53 7.17
+					<!--BW_String-->
+				</usa:A83_T110E4_7x7>
+				<usa:A85_T110E3>
+					3.32 3.32 8.05 7.87
+					<!--BW_String-->
+				</usa:A85_T110E3>
+				<usa:A86_T23E3>
+					2.22 2.22 10.7 10.23
+					<!--BW_String-->
+				</usa:A86_T23E3>
+				<usa:A87_M44>
+					3.38 3.38 7.59 4.57
+					<!--BW_String-->
+				</usa:A87_M44>
+				<usa:A88_M53_55>
+					2.75 2.75 7.56 8.54
+					<!--BW_String-->
+				</usa:A88_M53_55>
+				<usa:A89_T54E1>
+					3.02 3.02 4.43 6.97
+					<!--BW_String-->
+				</usa:A89_T54E1>
+				<usa:A90_T69>
+					3.24 3.24 9.34 9.65
+					<!--BW_String-->
+				</usa:A90_T69>
+				<usa:A92_M60>
+					1.85 1.85 10.3 9.99
+					<!--BW_String-->
+				</usa:A92_M60>
+				<usa:A93_T7_Combat_Car>
+					2.07 2.07 8.06 7.95
+					<!--BW_String-->
+				</usa:A93_T7_Combat_Car>
+				<usa:A94_T37>
+					3.23 3.23 8.11 9.89
+					<!--BW_String-->
+				</usa:A94_T37>
+				<usa:A95_T95_E6>
+					2.03 2.03 4.66 4.18
+					<!--BW_String-->
+				</usa:A95_T95_E6>
+				<usa:A97_M41_Bulldog>
+					3.23 3.23 10.92 10.03
+					<!--BW_String-->
+				</usa:A97_M41_Bulldog>
+				<usa:A97_M41_Bulldog_FL>
+					3.23 3.23 10.92 10.03
+					<!--BW_String-->
+				</usa:A97_M41_Bulldog_FL>
+				<usa:A99_T92_LT>
+					1.69 1.69 4.64 2.47
+					<!--BW_String-->
+				</usa:A99_T92_LT>
+				<ussr:R01_IS>
+					2.36 2.36 7.51 7.97
+					<!--BW_String-->
+				</ussr:R01_IS>
+				<ussr:R02_SU-85>
+					2.5 2.5 6.03 3.15
+					<!--BW_String-->
+				</ussr:R02_SU-85>
+				<ussr:R03_BT-7>
+					2.8 2.8 1.37 8.49
+					<!--BW_String-->
+				</ussr:R03_BT-7>
+				<ussr:R04_T-34>
+					2.8 2.8 5.48 6.16
+					<!--BW_String-->
+				</ussr:R04_T-34>
+				<ussr:R06_T-28>
+					1.08 1.08 3.77 12.33
+					<!--BW_String-->
+				</ussr:R06_T-28>
+				<ussr:R07_T-34-85>
+					2.79 2.79 7.68 6.41
+					<!--BW_String-->
+				</ussr:R07_T-34-85>
+				<ussr:R08_BT-2>
+					0.85 0.85 6.03 6.51
+					<!--BW_String-->
+				</ussr:R08_BT-2>
+				<ussr:R09_T-26>
+					2.2 2.2 7.74 7.33
+					<!--BW_String-->
+				</ussr:R09_T-26>
+				<ussr:R100_SU122A>
+					2.5 2.5 7.81 3.22
+					<!--BW_String-->
+				</ussr:R100_SU122A>
+				<ussr:R101_MT25>
+					2 2 7.81 3.15
+					<!--BW_String-->
+				</ussr:R101_MT25>
+				<ussr:R104_Object_430_II>
+					1.5 1.5 1.99 4.59
+					<!--BW_String-->
+				</ussr:R104_Object_430_II>
+				<ussr:R105_BT_7A>
+					1.9 1.9 10 2.4
+					<!--BW_String-->
+				</ussr:R105_BT_7A>
+				<ussr:R106_KV85>
+					1.3 1.3 2.88 3.84
+					<!--BW_String-->
+				</ussr:R106_KV85>
+				<ussr:R107_LTB>
+					1.8 1.8 9.96 4.86
+					<!--BW_String-->
+				</ussr:R107_LTB>
+				<ussr:R108_T34_85M>
+					2 2 0.89 8.01
+					<!--BW_String-->
+				</ussr:R108_T34_85M>
+				<ussr:R109_T54S>
+					2.3 2.3 4.52 11.16
+					<!--BW_String-->
+				</ussr:R109_T54S>
+				<ussr:R109_T54S_T>
+					2.3 2.3 4.52 11.16
+					<!--BW_String-->
+				</ussr:R109_T54S_T>
+				<ussr:R10_AT-1>
+					1.7 1.7 11.16 5.75
+					<!--BW_String-->
+				</ussr:R10_AT-1>
+				<ussr:R110_Object_260>
+					2.8 2.8 3.77 4.86
+					<!--BW_String-->
+				</ussr:R110_Object_260>
+				<ussr:R111_ISU130>
+					3.07 3.07 5.62 1.85
+					<!--BW_String-->
+				</ussr:R111_ISU130>
+				<ussr:R112_T54_45>
+					2.02 2.02 5.45 12.47
+					<!--BW_String-->
+				</ussr:R112_T54_45>
+				<ussr:R112_T54_45_02>
+					2.02 2.02 5.45 12.47
+					<!--BW_String-->
+				</ussr:R112_T54_45_02>
+				<ussr:R113_Object_730>
+					1.2 1.2 2.68 3.97
+					<!--BW_String-->
+				</ussr:R113_Object_730>
+				<ussr:R114_Object_244>
+					3 3 9.38 4.38
+					<!--BW_String-->
+				</ussr:R114_Object_244>
+				<ussr:R115_IS-3_auto>
+					2.3 2.3 10.48 2.4
+					<!--BW_String-->
+				</ussr:R115_IS-3_auto>
+				<ussr:R115_IS-3_auto_S>
+					2.3 2.3 10.48 2.4
+					<!--BW_String-->
+				</ussr:R115_IS-3_auto_S>
+				<ussr:R115_IS-3_auto_test>
+					2.3 2.3 10.48 2.4
+					<!--BW_String-->
+				</ussr:R115_IS-3_auto_test>
+				<ussr:R116_ISU122C_Berlin>
+					2.8 2.8 5.96 12.26
+					<!--BW_String-->
+				</ussr:R116_ISU122C_Berlin>
+				<ussr:R117_T34_85_Rudy>
+					1 1 9.52 3.56
+					<!--BW_String-->
+				</ussr:R117_T34_85_Rudy>
+				<ussr:R118_T28_F30>
+					2.2 2.2 2.4 2.4
+					<!--BW_String-->
+				</ussr:R118_T28_F30>
+				<ussr:R119_Object_777>
+					1.4 1.4 10.55 1.58
+					<!--BW_String-->
+				</ussr:R119_Object_777>
+				<ussr:R119_Object_777C>
+					1.4 1.4 10.55 1.58
+					<!--BW_String-->
+				</ussr:R119_Object_777C>
+				<ussr:R11_MS-1>
+					2.73 2.73 7.16 7.25
+					<!--BW_String-->
+				</ussr:R11_MS-1>
+				<ussr:R120_T22SR_A22>
+					1.21 1.21 0.99 0.8
+					<!--BW_String-->
+				</ussr:R120_T22SR_A22>
+				<ussr:R121_KV4_KTT>
+					2.58 2.58 5.75 6.51
+					<!--BW_String-->
+				</ussr:R121_KV4_KTT>
+				<ussr:R122_T44_100>
+					2.7 2.7 4.38 2.6
+					<!--BW_String-->
+				</ussr:R122_T44_100>
+				<ussr:R122_T44_100B>
+					2.7 2.7 9.18 1.92
+					<!--BW_String-->
+				</ussr:R122_T44_100B>
+				<ussr:R123_Kirovets_1>
+					1.67 1.67 8.42 9.18
+					<!--BW_String-->
+				</ussr:R123_Kirovets_1>
+				<ussr:R124_Object_279>
+					1.69 1.69 7.47 2.6
+					<!--BW_String-->
+				</ussr:R124_Object_279>
+				<ussr:R125_T_45>
+					0.5 0.5 4.93 5.96
+					<!--BW_String-->
+				</ussr:R125_T_45>
+				<ussr:R126_Object_730_5>
+					1.2 1.2 8.63 1.71
+					<!--BW_String-->
+				</ussr:R126_Object_730_5>
+				<ussr:R127_T44_100_K>
+					2.7 2.7 9.18 1.92
+					<!--BW_String-->
+				</ussr:R127_T44_100_K>
+				<ussr:R127_T44_100_M>
+					2.7 2.7 9.18 1.92
+					<!--BW_String-->
+				</ussr:R127_T44_100_M>
+				<ussr:R127_T44_100_P>
+					2.7 2.7 9.18 1.92
+					<!--BW_String-->
+				</ussr:R127_T44_100_P>
+				<ussr:R127_T44_100_U>
+					2.7 2.7 9.18 1.92
+					<!--BW_String-->
+				</ussr:R127_T44_100_U>
+				<ussr:R127_T44_100_I>
+					2.7 2.7 9.18 1.92
+					<!--BW_String-->
+				</ussr:R127_T44_100_I>
+				<ussr:R128_KV4_Kreslavskiy>
+					2.1 2.1 8.37 5
+					<!--BW_String-->
+				</ussr:R128_KV4_Kreslavskiy>
+				<ussr:R129_Object_257>
+					1.2 1.2 1.55 6.03
+					<!--BW_String-->
+				</ussr:R129_Object_257>
+				<ussr:R12_A-20>
+					0.78 0.78 2.19 8.22
+					<!--BW_String-->
+				</ussr:R12_A-20>
+				<ussr:R131_Tank_Gavalov>
+					1.8 1.8 2.05 2.53
+					<!--BW_String-->
+				</ussr:R131_Tank_Gavalov>
+				<ussr:R132_VNII_100LT>
+					1 1 1.09 0.94
+					<!--BW_String-->
+				</ussr:R132_VNII_100LT>
+				<ussr:R132_VNII_100LT_7x7>
+					1 1 1.09 0.94
+					<!--BW_String-->
+				</ussr:R132_VNII_100LT_7x7>
+				<ussr:R133_KV_122>
+					1.2 1.2 9.79 2.95
+					<!--BW_String-->
+				</ussr:R133_KV_122>
+				<ussr:R134_Object_252U>
+					1.15 1.15 3.39 6.99
+					<!--BW_String-->
+				</ussr:R134_Object_252U>
+				<ussr:R135_T_103>
+					1.3 1.3 1.19 7.88
+					<!--BW_String-->
+				</ussr:R135_T_103>
+				<ussr:R139_IS_M>
+					0.41 0.41 1.64 1.04
+					<!--BW_String-->
+				</ussr:R139_IS_M>
+				<ussr:R13_KV-1s>
+					1.1 1.1 4.45 6.16
+					<!--BW_String-->
+				</ussr:R13_KV-1s>
+				<ussr:R140_M4_Loza>
+					1.2 1.2 3.97 8.42
+					<!--BW_String-->
+				</ussr:R140_M4_Loza>
+				<ussr:R143_T_29>
+					0.83 0.83 2.03 1.85
+					<!--BW_String-->
+				</ussr:R143_T_29>
+				<ussr:R144_K_91>
+					1 1 3.49 9.52
+					<!--BW_String-->
+				</ussr:R144_K_91>
+				<ussr:R145_Object_705_A>
+					2 2 3.22 9.66
+					<!--BW_String-->
+				</ussr:R145_Object_705_A>
+				<ussr:R146_STG>
+					1.2 1.2 2.21 4.32
+					<!--BW_String-->
+				</ussr:R146_STG>
+				<ussr:R146_STG_Tday>
+					1.2 1.2 2.21 4.32
+					<!--BW_String-->
+				</ussr:R146_STG_Tday>
+				<ussr:R148_Object_430_U>
+					0.4 0.4 7.6 5.34
+					<!--BW_String-->
+				</ussr:R148_Object_430_U>
+				<ussr:R148_Object_430_U_bob>
+					0.4 0.4 7.6 5.34
+					<!--BW_String-->
+				</ussr:R148_Object_430_U_bob>
+				<ussr:R149_Object_268_4>
+					2 2 5.14 8.56
+					<!--BW_String-->
+				</ussr:R149_Object_268_4>
+				<ussr:R149_Object_268_4_bob>
+					2 2 5.14 8.56
+					<!--BW_String-->
+				</ussr:R149_Object_268_4_bob>
+				<ussr:R14_SU-5>
+					2.2 2.2 7.6 1.94
+					<!--BW_String-->
+				</ussr:R14_SU-5>
+				<ussr:R151_Object_257_2>
+					1 1 9.86 3.29
+					<!--BW_String-->
+				</ussr:R151_Object_257_2>
+				<ussr:R152_KV2_W>
+					2.21 2.21 8.3 8.92
+					<!--BW_String-->
+				</ussr:R152_KV2_W>
+				<ussr:R153_Object_705>
+					2.3 2.3 8.01 2.74
+					<!--BW_String-->
+				</ussr:R153_Object_705>
+				<ussr:R154_T_34E_1943>
+					1 1 8.84 5.48
+					<!--BW_String-->
+				</ussr:R154_T_34E_1943>
+				<ussr:R155_Object_277>
+					2 2 5.34 2.4
+					<!--BW_String-->
+				</ussr:R155_Object_277>
+				<ussr:R156_IS_2M>
+					1 1 6.64 2.67
+					<!--BW_String-->
+				</ussr:R156_IS_2M>
+				<ussr:R157_Object_279R>
+					1.1 1.1 6.58 3.29
+					<!--BW_String-->
+				</ussr:R157_Object_279R>
+				<ussr:R158_LT_432>
+					1 1 3.84 0.94
+					<!--BW_String-->
+				</ussr:R158_LT_432>
+				<ussr:R159_SU_130PM>
+					0.35 0.35 0.14 1.92
+					<!--BW_String-->
+				</ussr:R159_SU_130PM>
+				<ussr:R15_S-51>
+					1 1 3.97 8.63
+					<!--BW_String-->
+				</ussr:R15_S-51>
+				<ussr:R160_T_50_2>
+					1.7 1.7 0.000000 0.000000
+					<!--BW_String-->
+				</ussr:R160_T_50_2>
+				<ussr:R161_T_116>
+					1.7 1.7 0.000000 0.000000
+					<!--BW_String-->
+				</ussr:R161_T_116>
+				<ussr:R165_Object_703_II>
+					1.15 1.15 3.39 6.99
+					<!--BW_String-->
+				</ussr:R165_Object_703_II>
+				<ussr:R165_Object_703_II_2>
+					1.15 1.15 3.39 6.99
+					<!--BW_String-->
+				</ussr:R165_Object_703_II_2>
+				<ussr:R165_Object_703_II_100>
+					1.15 1.15 3.39 6.99
+					<!--BW_String-->
+				</ussr:R165_Object_703_II_100>
+				<ussr:R169_ST_II>
+					2.6 2.6 4.79 6.51
+					<!--BW_String-->
+				</ussr:R169_ST_II>
+				<ussr:R16_SU-18>
+					4.6 4.6 9.25 8.01
+					<!--BW_String-->
+				</ussr:R16_SU-18>
+				<ussr:R170_IS_2_II>
+					1.8 1.8 9.17 4.38
+					<!--BW_String-->
+				</ussr:R170_IS_2_II>
+				<ussr:R171_IS_3_II>
+					1.8 1.8 9.17 4.38
+					<!--BW_String-->
+				</ussr:R171_IS_3_II>
+				<ussr:R171_IS_3_II_02>
+					1.8 1.8 9.17 4.38
+					<!--BW_String-->
+				</ussr:R171_IS_3_II_02>
+				<ussr:R172_Object_752>
+					3 3 0.64 0.000000
+					<!--BW_String-->
+				</ussr:R172_Object_752>
+				<ussr:R173_K_91_2>
+					1 1 3.49 9.52
+					<!--BW_String-->
+				</ussr:R173_K_91_2>
+				<ussr:R173_K_91_2_122>
+					1 1 3.49 9.52
+					<!--BW_String-->
+				</ussr:R173_K_91_2_122>
+				<ussr:R175_IS_2_screen>
+					1 1 6.64 2.67
+					<!--BW_String-->
+				</ussr:R175_IS_2_screen>
+				<ussr:R177_ISU_152K_BL10>
+					2.7 2.7 1.29 1.7
+					<!--BW_String-->
+				</ussr:R177_ISU_152K_BL10>
+				<ussr:R178_Object_780>
+					1 1 6.64 2.67
+					<!--BW_String-->
+				</ussr:R178_Object_780>
+				<ussr:R17_SU-100>
+					1.5 1.5 3.01 8.7
+					<!--BW_String-->
+				</ussr:R17_SU-100>
+				<ussr:R180_Object_274_A>
+					2 2 5.34 2.4
+					<!--BW_String-->
+				</ussr:R180_Object_274_A>
+				<ussr:R18_SU-152>
+					2.5 2.5 5.82 4.11
+					<!--BW_String-->
+				</ussr:R18_SU-152>
+				<ussr:R19_IS-3>
+					3 3 2.01 0.86
+					<!--BW_String-->
+				</ussr:R19_IS-3>
+				<ussr:R19_IS-3_FL>
+					3 3 2.01 0.86
+					<!--BW_String-->
+				</ussr:R19_IS-3_FL>
+				<ussr:R1013_IS_3_T>
+					3 3 2.01 0.86
+					<!--BW_String-->
+				</ussr:R1013_IS_3_T>
+				<ussr:R20_T-44>
+					2.27 2.27 1.71 7.67
+					<!--BW_String-->
+				</ussr:R20_T-44>
+				<ussr:R22_T-46>
+					2.2 2.2 3.36 6.85
+					<!--BW_String-->
+				</ussr:R22_T-46>
+				<ussr:R23_T-43>
+					2.3 2.3 7.53 2.19
+					<!--BW_String-->
+				</ussr:R23_T-43>
+				<ussr:R23_T-43_FL>
+					2.3 2.3 7.53 2.19
+					<!--BW_String-->
+				</ussr:R23_T-43_FL>
+				<ussr:R24_SU-76>
+					1.4 1.4 6.17 8.36
+					<!--BW_String-->
+				</ussr:R24_SU-76>
+				<ussr:R25_GAZ-74b>
+					1.4 1.4 4.32 7.88
+					<!--BW_String-->
+				</ussr:R25_GAZ-74b>
+				<ussr:R26_SU-8>
+					1.3 1.3 4.79 8.01
+					<!--BW_String-->
+				</ussr:R26_SU-8>
+				<ussr:R27_SU-14>
+					3.2 3.2 1.7 1.65
+					<!--BW_String-->
+				</ussr:R27_SU-14>
+				<ussr:R31_Valentine_LL>
+					2.7 2.7 4.86 8.42
+					<!--BW_String-->
+				</ussr:R31_Valentine_LL>
+				<ussr:R32_Matilda_II_LL>
+					0.5 0.5 1.82 1.39
+					<!--BW_String-->
+				</ussr:R32_Matilda_II_LL>
+				<ussr:R33_Churchill_LL>
+					1.2 1.2 10.41 5.96
+					<!--BW_String-->
+				</ussr:R33_Churchill_LL>
+				<ussr:R34_BT-SV>
+					0.55 0.55 4.59 4.59
+					<!--BW_String-->
+				</ussr:R34_BT-SV>
+				<ussr:R38_KV-220>
+					1.7 1.7 5.75 0.1
+					<!--BW_String-->
+				</ussr:R38_KV-220>
+				<ussr:R38_KV-220_beta>
+					1.7 1.7 5.75 0.1
+					<!--BW_String-->
+				</ussr:R38_KV-220_beta>
+				<ussr:R39_KV-3>
+					2.7 2.7 7.6 2.96
+					<!--BW_String-->
+				</ussr:R39_KV-3>
+				<ussr:R40_T-54>
+					2.4 2.4 5.14 0.77
+					<!--BW_String-->
+				</ussr:R40_T-54>
+				<ussr:R40_T-54_FL>
+					2.4 2.4 5.14 0.77
+					<!--BW_String-->
+				</ussr:R40_T-54_FL>
+				<ussr:R41_T-50>
+					1.7 1.7 2.6 10.34
+					<!--BW_String-->
+				</ussr:R41_T-50>
+				<ussr:R42_T-60>
+					0.75 0.75 2.77 1.72
+					<!--BW_String-->
+				</ussr:R42_T-60>
+				<ussr:R43_T-70>
+					0.75 0.75 1.58 5.48
+					<!--BW_String-->
+				</ussr:R43_T-70>
+				<ussr:R44_T80>
+					2 2 1.55 1.73
+					<!--BW_String-->
+				</ussr:R44_T80>
+				<ussr:R45_IS-7>
+					2.38 2.38 8.44 7.35
+					<!--BW_String-->
+				</ussr:R45_IS-7>
+				<ussr:R45_IS-7_fallout>
+					1.56 1.56 1.86 2.28
+					<!--BW_String-->
+				</ussr:R45_IS-7_fallout>
+				<ussr:R46_KV-13>
+					2.5 2.5 3.49 10
+					<!--BW_String-->
+				</ussr:R46_KV-13>
+				<ussr:R47_ISU-152>
+					2.7 2.7 1.29 1.7
+					<!--BW_String-->
+				</ussr:R47_ISU-152>
+				<ussr:R47_ISU-152_FL>
+					2.7 2.7 1.29 1.7
+					<!--BW_String-->
+				</ussr:R47_ISU-152_FL>
+				<ussr:R49_SU100Y>
+					2.5 2.5 1.85 0.77
+					<!--BW_String-->
+				</ussr:R49_SU100Y>
+				<ussr:R50_SU76I>
+					2 2 5.96 2.67
+					<!--BW_String-->
+				</ussr:R50_SU76I>
+				<ussr:R51_Object_212>
+					3 3 2.33 2.52
+					<!--BW_String-->
+				</ussr:R51_Object_212>
+				<ussr:R52_Object_261>
+					2.5 2.5 5.21 4.66
+					<!--BW_String-->
+				</ussr:R52_Object_261>
+				<ussr:R53_Object_704>
+					2.2 2.2 5.07 7.26
+					<!--BW_String-->
+				</ussr:R53_Object_704>
+				<ussr:R54_KV-5>
+					2.6 2.6 0.82 0.57
+					<!--BW_String-->
+				</ussr:R54_KV-5>
+				<ussr:R56_T-127>
+					2.2 2.2 1.31 7.19
+					<!--BW_String-->
+				</ussr:R56_T-127>
+				<ussr:R57_A43>
+					2 2 0.76 3.7
+					<!--BW_String-->
+				</ussr:R57_A43>
+				<ussr:R58_SU-101>
+					1.1 1.1 9.66 4.32
+					<!--BW_String-->
+				</ussr:R58_SU-101>
+				<ussr:R59_A44>
+					0.9 0.9 0.73 0.89
+					<!--BW_String-->
+				</ussr:R59_A44>
+				<ussr:R60_Object416>
+					0.9 0.9 6.92 1.64
+					<!--BW_String-->
+				</ussr:R60_Object416>
+				<ussr:R61_Object252>
+					2.8 2.8 11.03 3.63
+					<!--BW_String-->
+				</ussr:R61_Object252>
+				<ussr:R61_Object252_BF>
+					2.8 2.8 11.03 3.63
+					<!--BW_String-->
+				</ussr:R61_Object252_BF>
+				<ussr:R63_ST_I>
+					1.4 1.4 9.18 4.18
+					<!--BW_String-->
+				</ussr:R63_ST_I>
+				<ussr:R66_SU-26>
+					0.7 0.7 3.2 2.6
+					<!--BW_String-->
+				</ussr:R66_SU-26>
+				<ussr:R67_M3_LL>
+					1.3 1.3 9.73 4.38
+					<!--BW_String-->
+				</ussr:R67_M3_LL>
+				<ussr:R68_A-32>
+					0.55 0.55 4.11 7.81
+					<!--BW_String-->
+				</ussr:R68_A-32>
+				<ussr:R71_IS_2B>
+					2.3 2.3 11.58 10.34
+					<!--BW_String-->
+				</ussr:R71_IS_2B>
+				<ussr:R72_T150>
+					1.2 1.2 0.78 1.8
+					<!--BW_String-->
+				</ussr:R72_T150>
+				<ussr:R73_KV4>
+					2.3 2.3 9.52 2.67
+					<!--BW_String-->
+				</ussr:R73_KV4>
+				<ussr:R74_SU100M1>
+					1.7 1.7 8.84 1.78
+					<!--BW_String-->
+				</ussr:R74_SU100M1>
+				<ussr:R75_SU122_54>
+					3 3 9.45 9.11
+					<!--BW_String-->
+				</ussr:R75_SU122_54>
+				<ussr:R77_KV2>
+					2.21 2.21 8.3 8.92
+					<!--BW_String-->
+				</ussr:R77_KV2>
+				<ussr:R78_SU_85I>
+					1.3 1.3 5.62 5.34
+					<!--BW_String-->
+				</ussr:R78_SU_85I>
+				<ussr:R80_KV1>
+					2 2 11.58 8.7
+					<!--BW_String-->
+				</ussr:R80_KV1>
+				<ussr:R81_IS8>
+					1.4 1.4 6.37 10.48
+					<!--BW_String-->
+				</ussr:R81_IS8>
+				<ussr:R84_Tetrarch_LL>
+					0.9 0.9 4.04 8.42
+					<!--BW_String-->
+				</ussr:R84_Tetrarch_LL>
+				<ussr:R86_LTP>
+					1.3 1.3 10.07 2.26
+					<!--BW_String-->
+				</ussr:R86_LTP>
+				<ussr:R87_T62A>
+					1.5 1.5 5.55 9.26
+					<!--BW_String-->
+				</ussr:R87_T62A>
+				<ussr:R88_Object268>
+					2.7 2.7 1.92 2.88
+					<!--BW_String-->
+				</ussr:R88_Object268>
+				<ussr:R89_SU122_44>
+					0.9 0.9 0.42 1.8
+					<!--BW_String-->
+				</ussr:R89_SU122_44>
+				<ussr:R90_IS_4M>
+					2.6 2.6 4.79 6.51
+					<!--BW_String-->
+				</ussr:R90_IS_4M>
+				<ussr:R90_IS_4M_7x7>
+					2.6 2.6 4.79 6.51
+					<!--BW_String-->
+				</ussr:R90_IS_4M_7x7>
+				<ussr:R91_SU14_1>
+					3 3 2.03 2.53
+					<!--BW_String-->
+				</ussr:R91_SU14_1>
+				<ussr:R93_Object263>
+					1.4 1.4 1.27 6.85
+					<!--BW_String-->
+				</ussr:R93_Object263>
+				<ussr:R93_Object263_FL>
+					1.4 1.4 1.27 6.85
+					<!--BW_String-->
+				</ussr:R93_Object263_FL>
+				<ussr:R93_Object263B>
+					1.4 1.4 1.27 6.85
+					<!--BW_String-->
+				</ussr:R93_Object263B>
+				<ussr:R95_Object_907>
+					0.6 0.6 9.66 1.3
+					<!--BW_String-->
+				</ussr:R95_Object_907>
+				<ussr:R95_Object_907A>
+					0.6 0.6 9.66 5.89
+					<!--BW_String-->
+				</ussr:R95_Object_907A>
+				<ussr:R96_Object_430>
+					2 2 8.42 3.29
+					<!--BW_String-->
+				</ussr:R96_Object_430>
+				<ussr:R96_Object_430B>
+					2 2 8.42 3.29
+					<!--BW_String-->
+				</ussr:R96_Object_430B>
+				<ussr:R97_Object_140>
+					1.3 1.3 1.37 2.18
+					<!--BW_String-->
+				</ussr:R97_Object_140>
+				<ussr:R97_Object_140_cl>
+					1.3 1.3 1.37 2.18
+					<!--BW_String-->
+				</ussr:R97_Object_140_cl>
+				<ussr:R98_T44_85>
+					2.5 2.5 6.99 9.38
+					<!--BW_String-->
+				</ussr:R98_T44_85>
+				<ussr:R98_T44_85M>
+					2.5 2.5 6.99 9.38
+					<!--BW_String-->
+				</ussr:R98_T44_85M>
+				<ussr:R99_T44_122>
+					2.4 2.4 9.66 1.99
+					<!--BW_String-->
+				</ussr:R99_T44_122>
+				<ussr:R99_T44_122_CN>
+					2.4 2.4 9.66 1.99
+					<!--BW_String-->
+				</ussr:R99_T44_122_CN>
+			</tiling>
+			<tilingSettings>
+				<type>relative</type>
+				<factor>
+					1.771542  1.764947
+					<!--BW_String-->
+				</factor>
+				<offset>0.000000 0.000000</offset>
+			</tilingSettings>
+		</camouflage>
+	</itemGroup>
+</root>

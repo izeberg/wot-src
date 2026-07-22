@@ -6,7 +6,7 @@ from gui.impl import backport
 from gui.impl.gen import R
 from armory_yard.gui.impl.gen.view_models.views.lobby.feature.armory_yard_rewards_vehicle_model import ArmoryYardRewardsVehicleModel
 from armory_yard_constants import isArmoryYardBattleToken, FEATURE_NAME_BASE, ARMORY_YARD_COIN_NAME
-from gui.impl.backport import TooltipData
+from gui.impl.backport import TooltipData, createTooltipData
 from gui.impl.gen.view_models.common.missions.bonuses.bonus_model import BonusModel
 from gui.impl.gen.view_models.common.missions.bonuses.icon_bonus_model import IconBonusModel
 from gui.server_events.bonuses import getNonQuestBonuses, splitBonuses, mergeBonuses, VehiclesBonus, TokensBonus, CurrenciesBonus, CustomizationsBonus
@@ -36,7 +36,7 @@ class ArmoryYardTokenBonusUIPacker(TokenBonusUIPacker):
     @classmethod
     def _getToolTip(cls, bonus):
         return [
-         TooltipData(tooltip=None, isSpecial=True, specialAlias=None, specialArgs=[])]
+         createTooltipData(tooltip=None, isSpecial=True, specialAlias=None, specialArgs=[])]
 
     @classmethod
     def _getContentId(cls, bonus):
@@ -82,7 +82,7 @@ class ArmoryYardCurrencyBonusUIPacker(SimpleBonusUIPacker):
     @classmethod
     def _getToolTip(cls, bonus):
         tooltipData = [
-         TooltipData(tooltip=None, isSpecial=True, specialAlias=None, specialArgs=[
+         createTooltipData(tooltip=None, isSpecial=True, specialAlias=None, specialArgs=[
           bonus.getCode()])]
         return tooltipData
 
@@ -169,7 +169,7 @@ class ArmoryYardVehiclesBonusUIPacker(VehiclesBonusUIPacker):
         rentSeason = bonus.getRentSeason(vehInfo)
         rentCycle = bonus.getRentCycle(vehInfo)
         rentExpiryTime = cls._getRentExpiryTime(rentDays)
-        return TooltipData(tooltip=None, isSpecial=True, specialAlias=TOOLTIPS_CONSTANTS.ARMORY_YARD_AWARD_VEHICLE, specialArgs=[
+        return createTooltipData(tooltip=None, isSpecial=True, specialAlias=TOOLTIPS_CONSTANTS.ARMORY_YARD_AWARD_VEHICLE, specialArgs=[
          vehicle.intCD, tmanRoleLevel, rentExpiryTime, rentBattles, rentWins, rentSeason, rentCycle])
 
 
@@ -236,7 +236,7 @@ def packRestModel(rewardsList, rewardListModel, tooltipData, index, restRewardsT
     model.setValue(backport.text(restRewardsTextId or R.strings.armory_yard.buyView.reward.rest(), count=len(rewardsList)))
     model.setTooltipContentId(str(R.views.armory_yard.lobby.feature.tooltips.RestRewardTooltipView()))
     tooltipID = str(len(tooltipData))
-    tooltipData[tooltipID] = TooltipData(tooltip=None, isSpecial=True, specialAlias=None, specialArgs=[
+    tooltipData[tooltipID] = createTooltipData(tooltip=None, isSpecial=True, specialAlias=None, specialArgs=[
      rewardsList])
     model.setTooltipId(tooltipID)
     model.setIndex(index)

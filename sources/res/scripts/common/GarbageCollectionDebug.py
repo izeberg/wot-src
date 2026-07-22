@@ -134,15 +134,26 @@ def gcDump():
 def get_garbage_data_with_extended_info(gc_dump):
     result = []
 
-    def getName(obj, default=''):
+    def getName(obj, default='-'):
         gName = ''
         try:
             gName = obj.__class__.__name__
-        except AttributeError:
+        except Exception:
             pass
 
         if gName:
             return gName
+        return default
+
+    def getRepr(obj, default='-'):
+        gRepr = ''
+        try:
+            gRepr = repr(obj)
+        except Exception:
+            pass
+
+        if gRepr:
+            return gRepr[:100]
         return default
 
     def analyze_refs(refs):
@@ -164,7 +175,8 @@ def get_garbage_data_with_extended_info(gc_dump):
         if garbageID in displayed_garbage:
             continue
         result.append({'source': (
-                    id(garbage), type(garbage), getName(garbage, '<indefinable>'), repr(garbage)[:100]), 
+                    id(garbage), type(garbage), getName(garbage, '<indefinable>'),
+                    getRepr(garbage, '<cannot extract>')), 
            'referents': analyze_refs(gc.get_referents(garbage)), 
            'referrers': analyze_refs(gc.get_referrers(garbage))})
         displayed_garbage.append(id(garbage))

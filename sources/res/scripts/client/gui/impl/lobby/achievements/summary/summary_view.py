@@ -13,7 +13,7 @@ from gui.clans.clan_cache import ClanInfo
 from gui.clans.formatters import getClanRoleString
 from gui.dog_tag_composer import DogTagComposerClient
 from gui.impl import backport
-from gui.impl.backport import TooltipData
+from gui.impl.backport import createTooltipData
 from gui.impl.gen import R
 from gui.impl.gen.view_models.views.lobby.achievements.achievements_constants import KPITypes
 from gui.impl.gen.view_models.views.lobby.achievements.views.summary.statistic_item_model import StatisticItemModel
@@ -289,12 +289,12 @@ class SummaryView(SubModelPresenter):
         return EditState.AVAILABLE
 
     def __getDogTagBackportTooltipData(self, compId):
-        return TooltipData(tooltip=None, isSpecial=True, specialAlias=TOOLTIPS_CONSTANTS.DOG_TAGS_INFO, specialArgs=[
+        return createTooltipData(tooltip=None, isSpecial=True, specialAlias=TOOLTIPS_CONSTANTS.DOG_TAGS_INFO, specialArgs=[
          compId, self.__userId])
 
     def __getAchievementsBackportTooltipData(self, name, block):
         achievement = self.__dossier.getTotalStats().getAchievement((block, name))
-        return TooltipData(tooltip=None, isSpecial=True, specialAlias=TOOLTIPS_CONSTANTS.ACHIEVEMENT, specialArgs=(
+        return createTooltipData(tooltip=None, isSpecial=True, specialAlias=TOOLTIPS_CONSTANTS.ACHIEVEMENT, specialArgs=(
          self.__dossier.getDossierType(),
          dumpDossier(self.__dossier),
          block,

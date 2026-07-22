@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<xmlns:ussr>ussr</xmlns:ussr>
+	<xmlns:germany>germany</xmlns:germany>
+	<xmlns:usa>usa</xmlns:usa>
+	<xmlns:china>china</xmlns:china>
+	<xmlns:france>france</xmlns:france>
+	<xmlns:uk>uk</xmlns:uk>
+	<xmlns:japan>japan</xmlns:japan>
+	<xmlns:czech>czech</xmlns:czech>
+	<xmlns:sweden>sweden</xmlns:sweden>
+	<xmlns:poland>poland</xmlns:poland>
+	<xmlns:italy>italy</xmlns:italy>
+	<xmlns:intunion>intunion</xmlns:intunion>
+	<itemGroup>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<include>
+				<levels>8 9 10</levels>
+			</include>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R47_ISU-152_Zveroboj ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<camouflage>
+			<id>185</id>
+			<texture>vehicles/russian/Camouflage/horseman_30.dds</texture>
+			<description>#vehicle_customization:camouflage/the_first_horseman/description</description>
+			<scales>
+				1.3 1 0.7
+				<!--BW_String-->
+			</scales>
+			<userString>#vehicle_customization:camouflage/the_first_horseman/label</userString>
+			<tags>fullRGB</tags>
+			<invisibilityFactor>1</invisibilityFactor>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<rotation>
+				<HULL>0.261799</HULL>
+				<TURRET>0.261799</TURRET>
+				<GUN>0.261799</GUN>
+			</rotation>
+			<tiling>
+				<france:F108_Panhard_EBR_105>
+					4 4 13.2314 14.65
+					<!--BW_String-->
+				</france:F108_Panhard_EBR_105>
+				<france:F10_AMX_50B>
+					3 3 13.2114 14.51
+					<!--BW_String-->
+				</france:F10_AMX_50B>
+				<france:F10_AMX_50B_bob>
+					3 3 13.2114 14.51
+					<!--BW_String-->
+				</france:F10_AMX_50B_bob>
+				<france:F18_Bat_Chatillon25t>
+					2.7 2.7 12.9414 15.11
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_7x7>
+					2.7 2.7 12.9414 15.11
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_7x7>
+				<france:F84_Somua_SM>
+					2.7 2.7 12.8814 15.27
+					<!--BW_String-->
+				</france:F84_Somua_SM>
+				<germany:G121_Grille_15_L63>
+					11 11 14.2014 15.06
+					<!--BW_String-->
+				</germany:G121_Grille_15_L63>
+				<germany:G99_RhB_Waffentrager>
+					5.5 5.5 13.4014 14.93
+					<!--BW_String-->
+				</germany:G99_RhB_Waffentrager>
+				<italy:It08_Progetto_M40_mod_65>
+					2.5 2.5 11.9614 13.99
+					<!--BW_String-->
+				</italy:It08_Progetto_M40_mod_65>
+				<japan:J20_Type_2605>
+					4.4 4.4 13.3214 14.6
+					<!--BW_String-->
+				</japan:J20_Type_2605>
+				<japan:J20_Type_2605_7x7>
+					4.4 4.4 13.3214 14.6
+					<!--BW_String-->
+				</japan:J20_Type_2605_7x7>
+				<poland:Pl15_60TP_Lewandowskiego>
+					3 3 13.2614 15.1
+					<!--BW_String-->
+				</poland:Pl15_60TP_Lewandowskiego>
+				<sweden:S11_Strv_103B>
+					2 2 13.3714 15.1
+					<!--BW_String-->
+				</sweden:S11_Strv_103B>
+				<uk:GB83_FV4005>
+					3.8 3.8 13.5114 13.94
+					<!--BW_String-->
+				</uk:GB83_FV4005>
+				<uk:GB91_Super_Conqueror>
+					2.2 2.2 12.7014 14.83
+					<!--BW_String-->
+				</uk:GB91_Super_Conqueror>
+				<usa:A12_T32>
+					5 5 12.8014 15.67
+					<!--BW_String-->
+				</usa:A12_T32>
+				<usa:A12_T32_M>
+					5 5 12.8014 15.67
+					<!--BW_String-->
+				</usa:A12_T32_M>
+				<usa:A67_T57_58>
+					7 7 12.9414 13.64
+					<!--BW_String-->
+				</usa:A67_T57_58>
+				<ussr:R148_Object_430_U>
+					1.2 1.2 13.3114 14.01
+					<!--BW_String-->
+				</ussr:R148_Object_430_U>
+				<ussr:R148_Object_430_U_bob>
+					1.2 1.2 13.3114 14.01
+					<!--BW_String-->
+				</ussr:R148_Object_430_U_bob>
+				<ussr:R155_Object_277>
+					5 5 8.0714 14.64
+					<!--BW_String-->
+				</ussr:R155_Object_277>
+				<ussr:R180_Object_274_A>
+					5 5 8.0714 14.64
+					<!--BW_String-->
+				</ussr:R180_Object_274_A>
+				<ussr:R19_IS-3>
+					7 7 13.1114 14.53
+					<!--BW_String-->
+				</ussr:R19_IS-3>
+				<ussr:R19_IS-3_FL>
+					7 7 13.1114 14.53
+					<!--BW_String-->
+				</ussr:R19_IS-3_FL>
+				<ussr:R1013_IS_3_T>
+					7 7 13.1114 14.53
+					<!--BW_String-->
+				</ussr:R1013_IS_3_T>
+				<ussr:R20_T-44>
+					6 6 13.1814 14.44
+					<!--BW_String-->
+				</ussr:R20_T-44>
+				<ussr:R45_IS-7>
+					4 4 13.2214 15.14
+					<!--BW_String-->
+				</ussr:R45_IS-7>
+			</tiling>
+			<tilingSettings>
+				<type>relative</type>
+				<factor>
+					3.3 3.3
+					<!--BW_String-->
+				</factor>
+				<offset>
+					13.4914 18.0384
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+		</camouflage>
+	</itemGroup>
+</root>

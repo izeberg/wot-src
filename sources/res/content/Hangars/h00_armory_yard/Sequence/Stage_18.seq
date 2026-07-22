@@ -14,7 +14,7 @@
 			<type>attach</type>
 			<frame>
 				<startTime>0.000000</startTime>
-				<duration>5.500000</duration>
+				<duration>6.533334</duration>
 				<value>Root|</value>
 			</frame>
 		</track>
@@ -23,42 +23,57 @@
 			<type>vector3</type>
 			<frame>
 				<startTime>0.000000</startTime>
-				<value>0.519759 1.546788 -0.083433</value>
+				<value>-0.860835 2.201114 0.078051</value>
 				<inTangent>0.000000 0.000000 0.000000</inTangent>
 				<outTangent>0.000000 0.000000 0.000000</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 			<frame>
 				<startTime>2.333333</startTime>
-				<value>0.519759 1.546788 -0.083433</value>
+				<value>-0.860835 2.201114 0.078051</value>
 				<inTangent>-0.000000 -0.000000 -0.000000</inTangent>
-				<outTangent>-1.549804 0.000000 -0.392670</outTangent>
+				<outTangent>1.929380 0.000000 -3.386271</outTangent>
 				<tangentMode>257</tangentMode>
 			</frame>
 			<frame>
-				<startTime>3.000000</startTime>
-				<value>-0.513444 1.546788 -0.345213</value>
-				<inTangent>-1.549804 -0.000000 -0.392670</inTangent>
-				<outTangent>-1.549804 -0.000000 -0.392670</outTangent>
-				<tangentMode>0</tangentMode>
+				<startTime>2.733334</startTime>
+				<value>-0.089081 2.201114 -1.276461</value>
+				<inTangent>1.929380 -0.000000 -3.386271</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.500000</startTime>
+				<value>-0.089081 2.201114 -1.276461</value>
+				<inTangent>-0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>0.000000 -17.489845 21.776520</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.566667</startTime>
+				<value>-0.089081 1.035117 0.175316</value>
+				<inTangent>-0.000000 -17.489845 21.776520</inTangent>
+				<outTangent>-0.000000 -17.489845 21.776520</outTangent>
+				<tangentMode>257</tangentMode>
 			</frame>
 		</track>
 		<track>
-			<name>ay_ep_08_seq_stage_18</name>
+			<name>ay_ep_09_seq_stage_18</name>
 			<type>sound</type>
 			<frame>
 				<startTime>0.000000</startTime>
-				<duration>5.705812</duration>
-				<sequenceSound>ay_ep_08_seq_stage_18</sequenceSound>
+				<duration>6.500000</duration>
+				<sequenceSound>ay_seq_stage_18</sequenceSound>
 				<type>play_till_end</type>
 				<fade>0.000000</fade>
 			</frame>
 		</track>
 	</sequenceObject>
 	<sequenceObject>
-		<name>stg_18_Ammo_machinegun</name>
+		<name>stg_18_Ammo_1</name>
 		<type>model</type>
-		<resource>content/Hangars/h00_armory_yard/environment/Constructor/A176_OTAC_LK_7605/normal/lod0/stg_18_Ammo_machinegun.model</resource>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/GB142_FV249_Castle/normal/lod0/stg_18_Ammo_01_xray.model</resource>
+		<castsShadow>false</castsShadow>
 		<track>
 			<name>visibility</name>
 			<type>bool</type>
@@ -84,14 +99,14 @@
 				<tangentMode>771</tangentMode>
 			</frame>
 			<frame>
-				<startTime>2.666667</startTime>
+				<startTime>2.333333</startTime>
 				<value>1.000000</value>
 				<inTangent>0.007347</inTangent>
 				<outTangent>0.007347</outTangent>
 				<tangentMode>771</tangentMode>
 			</frame>
 			<frame>
-				<startTime>3.333333</startTime>
+				<startTime>3.000000</startTime>
 				<value>1.000000</value>
 				<inTangent>-0.000000</inTangent>
 				<outTangent>-0.135135</outTangent>
@@ -104,34 +119,35 @@
 			<identifier>s_nd0</identifier>
 			<property>g_glowColor</property>
 			<frame>
-				<startTime>3.333333</startTime>
+				<startTime>3.000000</startTime>
 				<value>0.901961 0.207843 0.000000 1.000000</value>
 				<inTangent>-0.083333 0.090196 0.142157 0.000000</inTangent>
-				<outTangent>-0.090909 0.098396 0.155080 0.000000</outTangent>
+				<outTangent>-0.111111 0.120261 0.189542 0.000000</outTangent>
 				<tangentMode>257</tangentMode>
 			</frame>
 			<frame>
-				<startTime>7.000000</startTime>
+				<startTime>6.000000</startTime>
 				<value>0.568627 0.568627 0.568627 1.000000</value>
-				<inTangent>-0.090909 0.098396 0.155080 -0.000000</inTangent>
+				<inTangent>-0.111111 0.120261 0.189542 -0.000000</inTangent>
 				<outTangent>-0.083333 0.090196 0.142157 -0.000000</outTangent>
 				<tangentMode>257</tangentMode>
 			</frame>
 		</track>
 	</sequenceObject>
 	<sequenceObject>
-		<name>stg_18_Ammo</name>
+		<name>stg_18_Ammo_2</name>
 		<type>model</type>
-		<resource>content/Hangars/h00_armory_yard/environment/Constructor/A176_OTAC_LK_7605/normal/lod0/stg_18_Ammo_xray.model</resource>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/GB142_FV249_Castle/normal/lod0/stg_18_Ammo_02_xray.model</resource>
+		<castsShadow>false</castsShadow>
 		<track>
 			<name>visibility</name>
 			<type>bool</type>
 			<frame>
-				<startTime>0.000000</startTime>
+				<startTime>0.566667</startTime>
 				<value>false</value>
 			</frame>
 			<frame>
-				<startTime>2.000000</startTime>
+				<startTime>2.400000</startTime>
 				<value>true</value>
 			</frame>
 		</track>
@@ -141,21 +157,21 @@
 			<identifier>s_nd0</identifier>
 			<property>g_spawnStage</property>
 			<frame>
-				<startTime>2.000000</startTime>
+				<startTime>2.400000</startTime>
 				<value>0.000000</value>
 				<inTangent>0.011529</inTangent>
 				<outTangent>0.011529</outTangent>
 				<tangentMode>771</tangentMode>
 			</frame>
 			<frame>
-				<startTime>4.000000</startTime>
+				<startTime>3.733334</startTime>
 				<value>1.000000</value>
 				<inTangent>0.007347</inTangent>
 				<outTangent>0.007347</outTangent>
 				<tangentMode>771</tangentMode>
 			</frame>
 			<frame>
-				<startTime>4.666667</startTime>
+				<startTime>4.400000</startTime>
 				<value>1.000000</value>
 				<inTangent>-0.000000</inTangent>
 				<outTangent>-0.135135</outTangent>
@@ -168,16 +184,81 @@
 			<identifier>s_nd0</identifier>
 			<property>g_glowColor</property>
 			<frame>
-				<startTime>4.666667</startTime>
+				<startTime>4.400000</startTime>
 				<value>0.901961 0.207843 0.000000 1.000000</value>
 				<inTangent>-0.083333 0.090196 0.142157 0.000000</inTangent>
 				<outTangent>-0.142857 0.154622 0.243697 0.000000</outTangent>
 				<tangentMode>257</tangentMode>
 			</frame>
 			<frame>
-				<startTime>7.000000</startTime>
+				<startTime>6.733334</startTime>
 				<value>0.568627 0.568627 0.568627 1.000000</value>
 				<inTangent>-0.142857 0.154622 0.243697 -0.000000</inTangent>
+				<outTangent>-0.083333 0.090196 0.142157 -0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_18_Ammo_3</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/GB142_FV249_Castle/normal/lod0/stg_18_Ammo_03_xray.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>visibility</name>
+			<type>bool</type>
+			<frame>
+				<startTime>1.000000</startTime>
+				<value>false</value>
+			</frame>
+			<frame>
+				<startTime>3.333333</startTime>
+				<value>true</value>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd2</identifier>
+			<property>g_spawnStage</property>
+			<frame>
+				<startTime>3.333333</startTime>
+				<value>0.000000</value>
+				<inTangent>0.011529</inTangent>
+				<outTangent>0.011529</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.333333</startTime>
+				<value>1.000000</value>
+				<inTangent>0.007347</inTangent>
+				<outTangent>0.007347</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.000000</startTime>
+				<value>1.000000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>-0.135135</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd2</identifier>
+			<property>g_glowColor</property>
+			<frame>
+				<startTime>5.000000</startTime>
+				<value>0.901961 0.207843 0.000000 1.000000</value>
+				<inTangent>-0.083333 0.090196 0.142157 0.000000</inTangent>
+				<outTangent>-0.166667 0.180392 0.284314 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>7.000000</startTime>
+				<value>0.568627 0.568627 0.568627 1.000000</value>
+				<inTangent>-0.166667 0.180392 0.284314 -0.000000</inTangent>
 				<outTangent>-0.083333 0.090196 0.142157 -0.000000</outTangent>
 				<tangentMode>257</tangentMode>
 			</frame>

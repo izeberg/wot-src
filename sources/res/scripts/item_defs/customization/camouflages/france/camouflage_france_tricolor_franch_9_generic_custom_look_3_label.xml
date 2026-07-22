@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<xmlns:ussr>ussr</xmlns:ussr>
+	<xmlns:germany>germany</xmlns:germany>
+	<xmlns:usa>usa</xmlns:usa>
+	<xmlns:china>china</xmlns:china>
+	<xmlns:france>france</xmlns:france>
+	<xmlns:uk>uk</xmlns:uk>
+	<xmlns:japan>japan</xmlns:japan>
+	<xmlns:czech>czech</xmlns:czech>
+	<xmlns:sweden>sweden</xmlns:sweden>
+	<xmlns:poland>poland</xmlns:poland>
+	<xmlns:italy>italy</xmlns:italy>
+	<xmlns:intunion>intunion</xmlns:intunion>
+	<itemGroup>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
+		<season>desert</season>
+		<historical>0</historical>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<include>
+				<nations>france</nations>
+			</include>
+		</vehicleFilter>
+		<camouflage>
+			<id>34</id>
+			<texture>vehicles/french/Camouflage/Cfran_1_franch_09.dds</texture>
+			<description>#vehicle_customization:camouflage/france/tricolor/franch_9_generic_custom_look_3/description</description>
+			<scales>
+				1.3 1 0.7
+				<!--BW_String-->
+			</scales>
+			<userString>#vehicle_customization:camouflage/france/tricolor/franch_9_generic_custom_look_3/label</userString>
+			<invisibilityFactor>1</invisibilityFactor>
+			<palettes>
+				<palette>
+					<c0>76 57 51 255</c0>
+					<c1>140 118 88 255</c1>
+					<c2>79 86 76 255</c2>
+					<c3>0 0 0 0</c3>
+				</palette>
+			</palettes>
+			<rotation>
+				<HULL>0.261799</HULL>
+				<TURRET>0.261799</TURRET>
+				<GUN>0.261799</GUN>
+			</rotation>
+			<tiling>
+				<france:F01_RenaultFT>
+					1.29 1.29 5.93 1.48
+					<!--BW_String-->
+				</france:F01_RenaultFT>
+				<france:F02_D1>
+					2.19 2.19 4.65 1.6
+					<!--BW_String-->
+				</france:F02_D1>
+				<france:F03_D2>
+					1.84 1.84 1.84 1.84
+					<!--BW_String-->
+				</france:F03_D2>
+				<france:F04_B1>
+					1.22 1.22 3.26 3.36
+					<!--BW_String-->
+				</france:F04_B1>
+				<france:F05_BDR_G1B>
+					2.02 2.02 4 2.51
+					<!--BW_String-->
+				</france:F05_BDR_G1B>
+				<france:F06_ARL_44>
+					2.23 2.23 4.83 1.23
+					<!--BW_String-->
+				</france:F06_ARL_44>
+				<france:F07_AMX_M4_1945>
+					3.72 3.72 2.55 3.45
+					<!--BW_String-->
+				</france:F07_AMX_M4_1945>
+				<france:F08_AMX_50_100>
+					3.07 3.07 5.37 2.08
+					<!--BW_String-->
+				</france:F08_AMX_50_100>
+				<france:F08_AMX_50_100_FL>
+					3.07 3.07 5.37 2.08
+					<!--BW_String-->
+				</france:F08_AMX_50_100_FL>
+				<france:F08_AMX_50_100_IGR>
+					2.67 2.42 1.7 3.3
+					<!--BW_String-->
+				</france:F08_AMX_50_100_IGR>
+				<france:F09_AMX_50_120>
+					3.49 3.49 3.77 3.51
+					<!--BW_String-->
+				</france:F09_AMX_50_120>
+				<france:F100_Panhard_EBR_90>
+					2.67 2.67 0.000000 0.000000
+					<!--BW_String-->
+				</france:F100_Panhard_EBR_90>
+				<france:F106_Panhard_EBR_75_Mle1954>
+					1.57 1.57 0.000000 0.000000
+					<!--BW_String-->
+				</france:F106_Panhard_EBR_75_Mle1954>
+				<france:F107_Hotchkiss_EBR>
+					1.91 1.91 2.79 1.26
+					<!--BW_String-->
+				</france:F107_Hotchkiss_EBR>
+				<france:F108_Panhard_EBR_105>
+					2.6 2.6 0.000000 1.32
+					<!--BW_String-->
+				</france:F108_Panhard_EBR_105>
+				<france:F109_AMD_Panhard_178B>
+					1.15 1.15 0.49 1.38
+					<!--BW_String-->
+				</france:F109_AMD_Panhard_178B>
+				<france:F10_AMX_50B>
+					1.61 1.61 0.78 0.65
+					<!--BW_String-->
+				</france:F10_AMX_50B>
+				<france:F10_AMX_50B_bob>
+					1.61 1.61 0.78 0.65
+					<!--BW_String-->
+				</france:F10_AMX_50B_bob>
+				<france:F110_Lynx_6x6>
+					0.8 0.8 0.000000 0.43
+					<!--BW_String-->
+				</france:F110_Lynx_6x6>
+				<france:F110_Lynx_6x6_FL>
+					0.8 0.8 0.000000 0.43
+					<!--BW_String-->
+				</france:F110_Lynx_6x6_FL>
+				<france:F111_AM39_Gendron_Somua>
+					1.79 1.79 0.52 0.41
+					<!--BW_String-->
+				</france:F111_AM39_Gendron_Somua>
+				<france:F112_M10_RBFM>
+					2.06 2.06 0.000000 0.26
+					<!--BW_String-->
+				</france:F112_M10_RBFM>
+				<france:F114_Projet_4_1>
+					1.34 1.34 0.000000 0.000000
+					<!--BW_String-->
+				</france:F114_Projet_4_1>
+				<france:F115_Lorraine_50t>
+					0.95 0.95 0.000000 0.000000
+					<!--BW_String-->
+				</france:F115_Lorraine_50t>
+				<france:F116_Bat_Chatillon_Bourrasque>
+					1.64 1.64 -0.08 0.42
+					<!--BW_String-->
+				</france:F116_Bat_Chatillon_Bourrasque>
+				<france:F11_Renault_G1R>
+					3.82 3.82 7.27 2.26
+					<!--BW_String-->
+				</france:F11_Renault_G1R>
+				<france:F12_Hotchkiss_H35>
+					0.97 0.97 6.87 3.94
+					<!--BW_String-->
+				</france:F12_Hotchkiss_H35>
+				<france:F13_AMX38>
+					1.21 1.21 2.51 5.31
+					<!--BW_String-->
+				</france:F13_AMX38>
+				<france:F14_AMX40>
+					2.17 2.17 1.02 2.49
+					<!--BW_String-->
+				</france:F14_AMX40>
+				<france:F15_AMX_12t>
+					1.89 1.89 2.23 6.92
+					<!--BW_String-->
+				</france:F15_AMX_12t>
+				<france:F16_AMX_13_75>
+					2.38 2.38 1.89 4.79
+					<!--BW_String-->
+				</france:F16_AMX_13_75>
+				<france:F17_AMX_13_90>
+					1.45 1.45 1.87 2.08
+					<!--BW_String-->
+				</france:F17_AMX_13_90>
+				<france:F17_AMX_13_90_IGR>
+					2.42 2.42 1.7 3.3
+					<!--BW_String-->
+				</france:F17_AMX_13_90_IGR>
+				<france:F18_Bat_Chatillon25t>
+					1.64 1.64 -0.08 0.42
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_7x7>
+					1.64 1.64 -0.08 0.42
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_7x7>
+				<france:F18_Bat_Chatillon25t_IGR>
+					2.67 2.67 1.7 3.3
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_IGR>
+				<france:F19_Lorraine40t>
+					4.25 4.25 5.16 2.77
+					<!--BW_String-->
+				</france:F19_Lorraine40t>
+				<france:F20_RenaultBS>
+					1.45 1.45 5.6 3.94
+					<!--BW_String-->
+				</france:F20_RenaultBS>
+				<france:F21_Lorraine39_L_AM>
+					2.06 2.06 3.84 5.82
+					<!--BW_String-->
+				</france:F21_Lorraine39_L_AM>
+				<france:F22_AMX_105AM>
+					3.29 3.29 5.3 5.47
+					<!--BW_String-->
+				</france:F22_AMX_105AM>
+				<france:F23_AMX_13F3AM>
+					2.18 2.18 3.56 3.12
+					<!--BW_String-->
+				</france:F23_AMX_13F3AM>
+				<france:F24_Lorraine155_50>
+					2.43 2.43 6.72 2.26
+					<!--BW_String-->
+				</france:F24_Lorraine155_50>
+				<france:F25_Lorraine155_51>
+					2.55 2.55 5.8 1.81
+					<!--BW_String-->
+				</france:F25_Lorraine155_51>
+				<france:F27_FCM_36Pak40>
+					4.37 4.37 5.03 4.7
+					<!--BW_String-->
+				</france:F27_FCM_36Pak40>
+				<france:F28_105_leFH18B2>
+					4.67 4.67 1.65 2.6
+					<!--BW_String-->
+				</france:F28_105_leFH18B2>
+				<france:F28_105_leFH18B2_IGR>
+					5.82 5.82 1.7 3.3
+					<!--BW_String-->
+				</france:F28_105_leFH18B2_IGR>
+				<france:F30_RenaultFT_AC>
+					2.64 2.64 8.72 1.38
+					<!--BW_String-->
+				</france:F30_RenaultFT_AC>
+				<france:F32_Somua_Sau_40>
+					1.31 1.31 8.01 0.91
+					<!--BW_String-->
+				</france:F32_Somua_Sau_40>
+				<france:F33_S_35CA>
+					4.49 4.49 3.54 5.76
+					<!--BW_String-->
+				</france:F33_S_35CA>
+				<france:F33_S_35CA_IGR>
+					3.76 3.64 1.7 3.3
+					<!--BW_String-->
+				</france:F33_S_35CA_IGR>
+				<france:F34_ARL_V39>
+					2.57 2.57 4.39 6.45
+					<!--BW_String-->
+				</france:F34_ARL_V39>
+				<france:F35_AMX_AC_Mle1946>
+					3.33 3.33 2.46 10.91
+					<!--BW_String-->
+				</france:F35_AMX_AC_Mle1946>
+				<france:F36_AMX_AC_Mle1948>
+					3.64 3.64 7.19 5.03
+					<!--BW_String-->
+				</france:F36_AMX_AC_Mle1948>
+				<france:F36_AMX_AC_Mle1948_FL>
+					3.64 3.64 7.19 5.03
+					<!--BW_String-->
+				</france:F36_AMX_AC_Mle1948_FL>
+				<france:F36_AMX_AC_Mle1948_IGR>
+					4.49 4.49 1.7 3.3
+					<!--BW_String-->
+				</france:F36_AMX_AC_Mle1948_IGR>
+				<france:F37_AMX50_Foch>
+					2 2 10.51 3.67
+					<!--BW_String-->
+				</france:F37_AMX50_Foch>
+				<france:F38_Bat_Chatillon155_58>
+					1.7 1.7 2 4.78
+					<!--BW_String-->
+				</france:F38_Bat_Chatillon155_58>
+				<france:F42_AMR_35>
+					5.11 5.11 5.97 2.73
+					<!--BW_String-->
+				</france:F42_AMR_35>
+				<france:F44_Somua_S35>
+					4.9 4.9 3.66 2.96
+					<!--BW_String-->
+				</france:F44_Somua_S35>
+				<france:F49_RenaultR35>
+					5.11 5.11 5.97 2.73
+					<!--BW_String-->
+				</france:F49_RenaultR35>
+				<france:F50_FCM36_20t>
+					2.79 2.79 3.19 2.89
+					<!--BW_String-->
+				</france:F50_FCM36_20t>
+				<france:F52_RenaultUE57>
+					1.5 1.5 3.01 3.78
+					<!--BW_String-->
+				</france:F52_RenaultUE57>
+				<france:F62_ELC_AMX>
+					3.03 3.03 4.86 5.21
+					<!--BW_String-->
+				</france:F62_ELC_AMX>
+				<france:F62_ELC_AMX_IGR>
+					2.3 2.3 1.7 3.3
+					<!--BW_String-->
+				</france:F62_ELC_AMX_IGR>
+				<france:F64_AMX_50Fosh_155>
+					3.27 3.27 2.36 3.24
+					<!--BW_String-->
+				</france:F64_AMX_50Fosh_155>
+				<france:F64_AMX_50Fosh_B>
+					3.27 3.27 2.36 3.24
+					<!--BW_String-->
+				</france:F64_AMX_50Fosh_B>
+				<france:F64_AMX_50Fosh_B_7x7>
+					3.27 3.27 2.36 3.24
+					<!--BW_String-->
+				</france:F64_AMX_50Fosh_B_7x7>
+				<france:F65_FCM_50t>
+					1.7 1.7 0.000000 0.000000
+					<!--BW_String-->
+				</france:F65_FCM_50t>
+				<france:F66_AMX_Ob_Am105>
+					1.33 1.33 4.7 3.22
+					<!--BW_String-->
+				</france:F66_AMX_Ob_Am105>
+				<france:F67_Bat_Chatillon155_55>
+					1.86 1.86 3.89 4.08
+					<!--BW_String-->
+				</france:F67_Bat_Chatillon155_55>
+				<france:F68_AMX_Chasseur_de_char_46>
+					2.02 2.02 4.3 3.26
+					<!--BW_String-->
+				</france:F68_AMX_Chasseur_de_char_46>
+				<france:F68_AMX_Chasseur_de_char_46_02>
+					2.02 2.02 4.3 3.26
+					<!--BW_String-->
+				</france:F68_AMX_Chasseur_de_char_46_02>
+				<france:F69_AMX13_57_100>
+					2.21 2.21 6.49 4.55
+					<!--BW_String-->
+				</france:F69_AMX13_57_100>
+				<france:F69_AMX13_57_100_GrandFinal>
+					2.42 2.42 6.49 4.55
+					<!--BW_String-->
+				</france:F69_AMX13_57_100_GrandFinal>
+				<france:F70_SARL42>
+					2.91 2.91 2.51 6.66
+					<!--BW_String-->
+				</france:F70_SARL42>
+				<france:F71_AMX_30_prototype>
+					3.01 3.01 2.38 2.74
+					<!--BW_String-->
+				</france:F71_AMX_30_prototype>
+				<france:F72_AMX_30>
+					3.46 3.46 3.65 1.86
+					<!--BW_String-->
+				</france:F72_AMX_30>
+				<france:F73_M4A1_Revalorise>
+					2.08 2.08 1.01 2.97
+					<!--BW_String-->
+				</france:F73_M4A1_Revalorise>
+				<france:F73_M4A1_Revalorise_FL>
+					2.08 2.08 1.01 2.97
+					<!--BW_String-->
+				</france:F73_M4A1_Revalorise_FL>
+				<france:F74_AMX_M4_1949>
+					3.64 3.64 0.88 3.74
+					<!--BW_String-->
+				</france:F74_AMX_M4_1949>
+				<france:F74_AMX_M4_1949_FL>
+					3.64 3.64 0.88 3.74
+					<!--BW_String-->
+				</france:F74_AMX_M4_1949_FL>
+				<france:F74_AMX_M4_1949_Liberte>
+					3.64 3.64 0.88 3.74
+					<!--BW_String-->
+				</france:F74_AMX_M4_1949_Liberte>
+				<france:F75_Char_de_25t>
+					1.94 1.94 0.02 0.22
+					<!--BW_String-->
+				</france:F75_Char_de_25t>
+				<france:F81_Char_de_65t>
+					1.94 1.94 8.62 1.53
+					<!--BW_String-->
+				</france:F81_Char_de_65t>
+				<france:F82_AMX_M4_Mle1949_Ter>
+					3.76 3.76 8.16 2.92
+					<!--BW_String-->
+				</france:F82_AMX_M4_Mle1949_Ter>
+				<france:F83_AMX_M4_Mle1949_Bis>
+					2.33 2.33 7.74 5.2
+					<!--BW_String-->
+				</france:F83_AMX_M4_Mle1949_Bis>
+				<france:F83_AMX_M4_Mle1949_Bis_FL>
+					2.33 2.33 7.74 5.2
+					<!--BW_String-->
+				</france:F83_AMX_M4_Mle1949_Bis_FL>
+				<france:F84_Somua_SM>
+					1.57 1.57 5.45 2.81
+					<!--BW_String-->
+				</france:F84_Somua_SM>
+				<france:F85_M4A1_FL10>
+					3.16 3.16 0.000000 0.000000
+					<!--BW_String-->
+				</france:F85_M4A1_FL10>
+				<france:F87_Batignolles-Chatillon_12t>
+					1.7 1.7 1.75 3.44
+					<!--BW_String-->
+				</france:F87_Batignolles-Chatillon_12t>
+				<france:F87_Batignolles-Chatillon_12t_FL>
+					1.7 1.7 1.75 3.44
+					<!--BW_String-->
+				</france:F87_Batignolles-Chatillon_12t_FL>
+				<france:F88_AMX_13_105>
+					2.18 2.18 4.82 3.18
+					<!--BW_String-->
+				</france:F88_AMX_13_105>
+				<france:F88_AMX_13_105_7x7>
+					2.18 2.18 4.82 3.18
+					<!--BW_String-->
+				</france:F88_AMX_13_105_7x7>
+				<france:F89_Canon_dassaut_de_105>
+					0.74 0.74 2.27 3.73
+					<!--BW_String-->
+				</france:F89_Canon_dassaut_de_105>
+				<france:F97_ELC_EVEN_90>
+					4.85 4.85 1.39 3.17
+					<!--BW_String-->
+				</france:F97_ELC_EVEN_90>
+				<france:F97_ELC_EVEN_90_FL>
+					4.85 4.85 1.39 3.17
+					<!--BW_String-->
+				</france:F97_ELC_EVEN_90_FL>
+			</tiling>
+			<tilingSettings>
+				<type>relative</type>
+				<factor>
+					2.342047  2.343744
+					<!--BW_String-->
+				</factor>
+				<offset>0.000000 0.000000</offset>
+			</tilingSettings>
+		</camouflage>
+	</itemGroup>
+</root>

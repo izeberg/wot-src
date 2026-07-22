@@ -12,10 +12,10 @@ msgid "buttons/cancelSearch/caption"
 msgstr "Адмена пошуку"
 
 msgid "buttons/cancelSearch/description"
-msgstr "Націсніце, каб адмяніць пошук удзельнікаў звязу."
+msgstr "Нажмите, чтобы отменить поиск совзводных."
 
 msgid "buttons/createPlatoon/caption"
-msgstr "Новы звяз"
+msgstr "Новый взвод"
 
 msgid "buttons/createPlatoon/comp7/forSeven/caption"
 msgstr "7 гульцоў"
@@ -30,13 +30,13 @@ msgid "buttons/createPlatoon/comp7/forTwo/caption"
 msgstr "2 гульцы"
 
 msgid "buttons/createPlatoon/comp7/forTwo/description"
-msgstr "Стварэнне звязу з двух гульцоў."
+msgstr "Создание взвода, состоящего из двух игроков."
 
 msgid "buttons/createPlatoon/comp7/forTwo/text"
 msgstr "2 гульцы"
 
 msgid "buttons/createPlatoon/description"
-msgstr "Стварыце звяз і запрасіце сяброў для сумеснай гульні."
+msgstr "Создайте взвод и пригласите друзей для совместной игры."
 
 msgid "buttons/createSuperPlatoon/caption"
 msgstr "Новы суперзвяз"
@@ -50,43 +50,44 @@ msgstr ""
 
 msgid "buttons/findPlayers/descriptionMembers"
 msgstr ""
-"Пачаўшы пошук гульцоў, вы адменіце ўсе адпраўленыя сябрам запрашэнні ў звяз."
+"Начав поиск игроков, вы отмените все отправленные друзьям приглашения во "
+"взвод."
 
 msgid "buttons/findPlayers/tooltip/header"
 msgstr "Пошук гульцоў"
 
 msgid "buttons/findPlayers/tooltip/noAssembling/body"
-msgstr "Пошук гульцоў у звяз недаступны: занадта шмат звязаў на серверы."
+msgstr "Поиск игроков во взвод недоступен: слишком много взводов на сервере."
 
 msgid "buttons/findPlayers/tooltip/noSuitableTank/body"
-msgstr "Пошук гульцоў у звяз недаступны: няма прыдатнай тэхнікі."
+msgstr "Поиск игроков во взвод недоступен: нет подходящей техники."
 
 msgid "buttons/invite/fullSquad/description"
-msgstr "Звяз запоўнены"
+msgstr "Взвод заполнен"
 
 msgid "buttons/invite/player/caption"
 msgstr "Запрасіць гульца"
 
 msgid "buttons/invite/player/description"
-msgstr "Націсніце, каб запрасіць гульца ў звяз"
+msgstr "Нажмите, чтобы пригласить игрока во взвод"
 
 msgid "buttons/invite/players/caption"
 msgstr "Запрасіць гульцоў"
 
 msgid "buttons/invite/players/description"
-msgstr "Націсніце, каб запрасіць гульцоў у звяз."
+msgstr "Нажмите, чтобы пригласить игроков во взвод."
 
 msgid "buttons/leavePlatoon/caption"
-msgstr "Пакінуць звяз"
+msgstr "Покинуть взвод"
 
 msgid "buttons/leavePlatoon/description"
-msgstr "Націсніце, каб выйсці са складу звязу."
+msgstr "Нажмите, чтобы выйти из состава взвода."
 
 msgid "buttons/mute/caption"
 msgstr "Адключыць галасавую сувязь"
 
 msgid "buttons/mute/description"
-msgstr "Націсніце, каб адключыць галасавую сувязь у звязе."
+msgstr "Нажмите, чтобы отключить голосовую связь во взводе."
 
 msgid "buttons/notReady/caption"
 msgstr "Не гатовы"
@@ -118,21 +119,21 @@ msgid "buttons/unMute/caption"
 msgstr "Уключыць галасавую сувязь"
 
 msgid "buttons/unMute/description"
-msgstr "Націсніце, каб уключыць галасавую сувязь у звязе."
+msgstr "Нажмите, чтобы включить голосовую связь во взводе."
 
 msgid "headerButton/inSquad"
-msgstr "У звязе"
+msgstr "Во взводе"
 
 msgid "headerButton/onboarding"
 msgstr ""
-"ПАЧНІЦЕ ПОШУК ГУЛЬЦОЎ\n"
-"ДЛЯ ФАРМАВАННЯ ЗВЯЗУ"
+"НАЧНИТЕ ПОИСК ИГРОКОВ\n"
+"ДЛЯ ФОРМИРОВАНИЯ ВЗВОДА"
 
 msgid "headerButton/searching"
 msgstr "Шуканне..."
 
 msgid "headerButton/squad"
-msgstr "Звязовая гульня"
+msgstr "Взводная игра"
 
 msgid "headerButton/tooltips/battleRoyaleSquad/body"
 msgstr ""
@@ -140,23 +141,23 @@ msgstr ""
 "паляўнічы»."
 
 msgid "headerButton/tooltips/battleRoyaleSquad/header"
-msgstr "Звяз"
+msgstr "Взвод"
 
 msgid "headerButton/tooltips/comp7QualificationSquad/body"
 msgstr ""
-"Да завяршэння кваліфікацыі вы не можаце ствараць звязы або далучацца да іх.\n"
-"Пасля яе завяршэння вам стануць даступнымі звязы з 2 гульцоў."
+"До завершения квалификации вы не сможете создавать или присоединяться ко взводам.\n"
+"После её завершения вам станут доступны взводы из 2 игроков."
 
 msgid "headerButton/tooltips/comp7QualificationSquad/header"
-msgstr "Гульня ў звязе недаступная"
+msgstr "Игра во взводе недоступна"
 
 msgid "headerButton/tooltips/comp7Squad/body"
 msgstr ""
-"Вы можаце стварыць звяз або далучыцца да існуючага. У Націску даступныя "
-"звязы з 2 гульцоў."
+"Вы можете создать взвод или присоединиться к существующему. В Натиске "
+"доступны взводы из 2 игроков."
 
 msgid "headerButton/tooltips/comp7Squad/header"
-msgstr "Звяз"
+msgstr "Взвод"
 
 msgid "headerButton/tooltips/cosmicSquad/body"
 msgstr "Экспедыцыя «У космас!» мае толькі адзіночныя заезды."
@@ -171,40 +172,40 @@ msgstr ""
 "• Тыпы баёў: «Сталёвае паляванне», «Перавага»."
 
 msgid "headerButton/tooltips/dominationSquad/header"
-msgstr "Звяз"
+msgstr "Взвод"
 
 msgid "headerButton/tooltips/eventSquad/body"
 msgstr "Стварэнне фармавання з 2–3 гульцоў для супольнай гульні ў падзеі."
 
 msgid "headerButton/tooltips/eventSquad/header"
-msgstr "Звяз падзеі"
+msgstr "Взвод события"
 
 msgid "headerButton/tooltips/inMapboxSquad/body"
-msgstr "Націсніце, каб перайсці ў меню звязу."
+msgstr "Нажмите, чтобы перейти в меню взвода."
 
 msgid "headerButton/tooltips/inMapboxSquad/header"
-msgstr "Разведка боем: звяз"
+msgstr "Разведка боем: взвод"
 
 msgid "headerButton/tooltips/inSquad/body"
-msgstr "Націсніце, каб перайсці ў меню звязу."
+msgstr "Нажмите, чтобы перейти в меню взвода."
 
 msgid "headerButton/tooltips/inSquad/header"
-msgstr "Звяз"
+msgstr "Взвод"
 
 msgid "headerButton/tooltips/mapboxSquad/body"
 msgstr ""
-"Стварэнне звязу з 2–3 гульцоў для супольнай гульні ў рэжыме «Разведка боем»."
+"Создание взвода из 2–3 игроков для совместной игры в режиме «Разведка боем»."
 
 msgid "headerButton/tooltips/mapboxSquad/header"
-msgstr "Разведка боем: звяз"
+msgstr "Разведка боем: взвод"
 
 msgid "headerButton/tooltips/rankedSquad/body"
 msgstr ""
-"Вы можаце стварыць звяз або далучыцца да існуючага. У Рангавых баях "
-"даступныя звязы з 2 гульцоў."
+"Вы можете создать взвод или присоединиться к существующему. В Ранговых боях "
+"доступны взводы из 2 игроков."
 
 msgid "headerButton/tooltips/rankedSquad/header"
-msgstr "Звяз"
+msgstr "Взвод"
 
 msgid "headerButton/tooltips/searching/body"
 msgstr "Пошук гульцоў..."
@@ -218,7 +219,7 @@ msgstr ""
 "• Тыпы баёў: Стандартны бой, Штурм, Сустрэчны бой, Генеральная бітва, а таксама Лінія фронту (калі гэты рэжым даступны)."
 
 msgid "headerButton/tooltips/squad/header"
-msgstr "Звяз"
+msgstr "Взвод"
 
 msgid "headerButton/tooltips/versusAISquad/body"
 msgstr ""
@@ -226,13 +227,13 @@ msgstr ""
 "«Палігон»."
 
 msgid "headerButton/tooltips/versusAISquad/header"
-msgstr "Звяз"
+msgstr "Взвод"
 
 msgid "members/card/connectionLost"
 msgstr "Злучэнне спынена"
 
 msgid "members/card/disabled"
-msgstr "У рэжыме даступныя толькі звязы з двух гульцоў"
+msgstr "В режиме доступны только взводы из двух игроков"
 
 msgid "members/card/disabledVertical"
 msgstr "Недаступна для гэтага рэжыму"
@@ -268,7 +269,7 @@ msgid "members/chat/sendMessage/header"
 msgstr "Адправіць паведамленне"
 
 msgid "members/footer/flamethrowerFull"
-msgstr "Дасягнуты максімум агнямётных танкаў у звязе"
+msgstr "Достигнут максимум огнемётных танков во взводе"
 
 msgid "members/footer/getNotReady"
 msgstr "Націсніце, каб скасаваць гатоўнасць."
@@ -280,19 +281,19 @@ msgid "members/footer/invalidVehicleLevel"
 msgstr "Неадпаведны ўзровень"
 
 msgid "members/footer/scoutForbidden"
-msgstr "Немагчыма ўзяць лёгкі танк у звяз"
+msgstr "Невозможно взять лёгкий танк во взвод"
 
 msgid "members/footer/scoutFull"
-msgstr "У звязе ўжо максімум лёгкіх танкаў"
+msgstr "Достигнут максимум лёгких танков во взводе"
 
 msgid "members/footer/spgForbidden"
-msgstr "Немагчыма ўзяць САУ ў звяз"
+msgstr "Невозможно взять САУ во взвод"
 
 msgid "members/footer/spgFull"
-msgstr "У звязе ўжо максімум САУ"
+msgstr "Достигнут максимум САУ во взводе"
 
 msgid "members/footer/vehicles/differentLevels"
-msgstr "Штраф да досведу з-за памылковага складу звязу!"
+msgstr "Штраф к опыту из-за некорректного состава взвода!"
 
 msgid "members/header/battle_royal"
 msgstr ": Сталёвы паляўнічы"
@@ -323,18 +324,18 @@ msgstr ": Выпадковы бой"
 
 msgid "members/header/tooltip/comp7/body"
 msgstr ""
-"Розніца ў ачках рэйтынгу паміж гульцамі звязу не павінна перавышаць "
+"Разница в очках рейтинга между игроками взвода не должна превышать "
 "%(rating)s."
 
 msgid "members/header/tooltip/comp7/dropdown"
-msgstr "Толькі камандзір звязу можа мяняць ліміт гульцоў."
+msgstr "Только командир взвода может менять лимит игроков."
 
 msgid "members/header/tooltip/comp7/dropdown/item"
 msgstr ""
 "Нельга змяніць. Ліміт гульцоў не можа быць меншы за іх цяперашнюю колькасць."
 
 msgid "members/header/tooltip/comp7/header"
-msgstr "Правілы фармавання звязу"
+msgstr "Правила формирования взвода"
 
 msgid "members/header/tooltip/epic/body"
 msgstr ""
@@ -342,36 +343,36 @@ msgstr ""
 "толькі для тэхнікі %(level)s узроўню."
 
 msgid "members/header/tooltip/epic/header"
-msgstr "Правілы фармавання звязу"
+msgstr "Правила формирования взвода"
 
 msgid "members/header/tooltip/event/body"
-msgstr "Звяз павінен складацца з трох адмысловых машын рэжыму."
+msgstr "Взвод должен состоять из трёх специальных машин режима."
 
 msgid "members/header/tooltip/event/header"
-msgstr "Правілы фармавання звязу"
+msgstr "Правила формирования взвода"
 
 msgid "members/header/tooltip/ranked/header"
-msgstr "Правілы фармавання звязу"
+msgstr "Правила формирования взвода"
 
 msgid "members/header/tooltip/ranked/restriction"
-msgstr "Звяз не мае абмежаванняў паводле фармавання."
+msgstr "Взвод не имеет ограничений по формированию."
 
 msgid "members/header/tooltip/ranked/restriction_division"
 msgstr "Гульцы павінны знаходзіцца ў адным дывізіёне."
 
 msgid "members/header/tooltip/ranked/restriction_rank"
-msgstr "Розніца ў рангах паміж гульцамі звязу не павінна перавышаць %(rank)s."
+msgstr "Разница в рангах между игроками взвода не должна превышать %(rank)s."
 
 msgid "members/header/tooltip/ranked/restriction_rank_division"
 msgstr ""
-"• Розніца ў рангах паміж гульцамі звязу не павінна перавышаць %(rank)s.\n"
-"• Гульца павінны знаходзіцца ў адным дывізіёне."
+"• Разница в рангах между игроками взвода не должна превышать %(rank)s.\n"
+"• Игроки должны находиться в одном дивизионе."
 
 msgid "members/header/tooltip/standard/body"
-msgstr "Звяз павінен складацца з машын аднаго ўзроўню."
+msgstr "Взвод должен состоять из машин одного уровня."
 
 msgid "members/header/tooltip/standard/header"
-msgstr "Правілы фармавання звязу"
+msgstr "Правила формирования взвода"
 
 msgid "searching/estimated/caption"
 msgstr "Разліковы час"
@@ -406,4 +407,4 @@ msgid "settings/voice"
 msgstr "Гульцы з галасавой сувяззю"
 
 msgid "squad"
-msgstr "Звяз"
+msgstr "Взвод"

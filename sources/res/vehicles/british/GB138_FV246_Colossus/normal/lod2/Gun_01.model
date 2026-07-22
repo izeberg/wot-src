@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/british/GB138_FV246_Colossus/normal/lod3/Gun_01</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<nodefullVisual>vehicles/british/GB138_FV246_Colossus/normal/lod2/Gun_01</nodefullVisual>
+	<visibilityBox>
+		<min>-0.772392 -0.310816 -0.140159</min>
+		<max>0.772392 0.269156 4.265015</max>
+	</visibilityBox>
+</root>

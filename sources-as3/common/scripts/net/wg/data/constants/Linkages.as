@@ -339,6 +339,14 @@ package net.wg.data.constants
       
       public static const COMP7_TEAM_RIGHT_MEMBER_RENDERER:String = "Comp7TeamRightMemberRendererUI";
       
+      public static const GIFT_TEAM_LEFT_MEMBER_RENDERER:String = "GiftTeamLeftMemberRendererUI";
+      
+      public static const GIFT_TEAM_RIGHT_MEMBER_RENDERER:String = "GiftTeamRightMemberRendererUI";
+      
+      public static const GIFT_SCROLLBAR_TEAM_LEFT_MEMBER_RENDERER:String = "GiftScrollbarTeamLeftMemberRendererUI";
+      
+      public static const GIFT_SCROLLBAR_TEAM_RIGHT_MEMBER_RENDERER:String = "GiftScrollbarTeamRightMemberRendererUI";
+      
       public static const SCROLLBAR_TEAM_LEFT_MEMBER_RENDERER:String = "ScrollbarTeamLeftMemberRendererUI";
       
       public static const SCROLLBAR_TEAM_RIGHT_MEMBER_RENDERER:String = "ScrollbarTeamRightMemberRendererUI";

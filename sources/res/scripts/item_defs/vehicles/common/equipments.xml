@@ -10,6 +10,13 @@
 		<icon>handExtinguishers</icon>
 		<price>3000</price>
 		<tags>extinguisher</tags>
+		<vehicleFilter>
+			<include>
+				<vehicle>
+					<minLevel>4</minLevel>
+				</vehicle>
+			</include>
+		</vehicleFilter>
 		<script>
 			Extinguisher
 			<autoactivate>true</autoactivate>
@@ -29,6 +36,13 @@
 		<price>20000</price>
 		<improved>true</improved>
 		<tags>extinguisher premium_equipment</tags>
+		<vehicleFilter>
+			<include>
+				<vehicle>
+					<minLevel>4</minLevel>
+				</vehicle>
+			</include>
+		</vehicleFilter>
 		<script>
 			Extinguisher
 			<fireStartingChanceFactor>
@@ -60,6 +74,13 @@
 		<icon>smallMedkit</icon>
 		<price>3000</price>
 		<tags>medkit</tags>
+		<vehicleFilter>
+			<include>
+				<vehicle>
+					<minLevel>3</minLevel>
+				</vehicle>
+			</include>
+		</vehicleFilter>
 		<script>
 			Repairkit
 			<repairAll>true</repairAll>
@@ -88,6 +109,13 @@
 		<price>20000</price>
 		<improved>true</improved>
 		<tags>medkit premium_equipment</tags>
+		<vehicleFilter>
+			<include>
+				<vehicle>
+					<minLevel>3</minLevel>
+				</vehicle>
+			</include>
+		</vehicleFilter>
 		<script>
 			Repairkit
 			<repairAll>true</repairAll>

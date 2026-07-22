@@ -11,8 +11,6 @@ package net.wg.gui.lobby.hangar.quests
       
       public var flagIcon:Image = null;
       
-      private var _src:String = "";
-      
       private var _isHorizontalFlipped:Boolean = false;
       
       private var _disposed:Boolean = false;
@@ -33,16 +31,20 @@ package net.wg.gui.lobby.hangar.quests
       
       public function setFlag(param1:String, param2:Boolean) : void
       {
-         if(this._src == param1)
+         if(this._isHorizontalFlipped != param2)
          {
-            return;
+            this._isHorizontalFlipped = param2;
+            this.updateLayout();
          }
-         this._src = param1;
-         this._isHorizontalFlipped = param2;
-         this.flagIcon.source = this._src;
+         this.flagIcon.source = param1;
       }
       
       private function onFlagIconChangeHandler(param1:Event) : void
+      {
+         this.updateLayout();
+      }
+      
+      private function updateLayout() : void
       {
          if(this._isHorizontalFlipped)
          {

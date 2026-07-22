@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<htmlTemplates>
+		<TankAcademyAwardsQuest>
+			<priority>medium</priority>
+			<type>grey</type>
+			<icon>battleMattersIcon</icon>
+			<bgIconSizeAuto>true</bgIconSizeAuto>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&apos;&gt;_(#tank_academy.tank_academy:serviceChannelMessages/awards/header)&lt;/font&gt;
+&lt;font color=&apos;#8C8C7E&apos;&gt;%(body)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;_(#tank_academy.tank_academy:serviceChannelMessages/awards/received)&lt;/font&gt;&lt;br/&gt;%(achieves)s</message>
+			<buttonsLayout>
+				<button>
+					<type>submit</type>
+					<label>_(#tank_academy.tank_academy:serviceChannelMessages/awards/received/button)</label>
+					<action>openTankAcademy</action>
+				</button>
+			</buttonsLayout>
+		</TankAcademyAwardsQuest>
+		<TankAcademyTokenQuest>
+			<priority>low</priority>
+			<type>grey</type>
+			<icon>battleMattersIcon</icon>
+			<bgIconSizeAuto>true</bgIconSizeAuto>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&apos;&gt;_(#tank_academy.tank_academy:serviceChannelMessages/awards/header)&lt;/font&gt;
+&lt;font color=&apos;#8C8C7E&apos;&gt;%(body)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;_(#tank_academy.tank_academy:serviceChannelMessages/awards/received)&lt;/font&gt;&lt;br/&gt;%(achieves)s&lt;br/&gt;
+&lt;font color=&apos;#8C8C7E&apos;&gt;%(footer)s&lt;/font&gt;&lt;br/&gt;</message>
+			<buttonsLayout>
+				<button>
+					<type>submit</type>
+					<label>_(#tank_academy.tank_academy:serviceChannelMessages/awards/footer/button)</label>
+					<action>openTankAcademyVehicleSelection</action>
+					<width>120</width>
+				</button>
+			</buttonsLayout>
+		</TankAcademyTokenQuest>
+		<TankAcademyTokenAward>
+			<priority>medium</priority>
+			<type>grey</type>
+			<icon>battleMattersIcon</icon>
+			<bgIconSizeAuto>true</bgIconSizeAuto>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&apos;&gt;_(#tank_academy.tank_academy:serviceChannelMessages/awards/tokenAward/header)&lt;/font&gt;
+&lt;font color=&apos;#8C8C7E&apos;&gt;_(#tank_academy.tank_academy:serviceChannelMessages/awards/tokenAward/body)&lt;/font&gt;&lt;br/&gt;
+&lt;font color=&apos;#8C8C7E&apos;&gt;_(#tank_academy.tank_academy:serviceChannelMessages/awards/received)&lt;/font&gt;&lt;br/&gt;%(achieves)s</message>
+		</TankAcademyTokenAward>
+	</htmlTemplates>
+</root>

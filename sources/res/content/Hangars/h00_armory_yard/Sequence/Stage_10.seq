@@ -23,40 +23,47 @@
 			<type>vector3</type>
 			<frame>
 				<startTime>0.000000</startTime>
-				<value>0.713438 1.000000 -1.404873</value>
+				<value>0.061874 1.462913 -1.550900</value>
 				<inTangent>-0.106103 0.000000 -0.007821</inTangent>
-				<outTangent>-0.106103 0.000000 -0.007821</outTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
 				<tangentMode>257</tangentMode>
 			</frame>
 			<frame>
-				<startTime>3.833333</startTime>
-				<value>0.306709 1.000000 -1.434855</value>
-				<inTangent>-0.106103 -0.000000 -0.007821</inTangent>
-				<outTangent>-2.112234 0.000000 -0.012060</outTangent>
+				<startTime>3.933334</startTime>
+				<value>0.061874 1.462913 -1.550900</value>
+				<inTangent>-0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>0.000000 0.000000 -7.916101</outTangent>
 				<tangentMode>257</tangentMode>
 			</frame>
 			<frame>
-				<startTime>4.266667</startTime>
-				<value>-0.608593 1.000000 -1.440081</value>
-				<inTangent>-2.112234 -0.000000 -0.012060</inTangent>
-				<outTangent>3.960539 0.000000 -2.297853</outTangent>
+				<startTime>4.066667</startTime>
+				<value>0.061874 1.462913 -2.606380</value>
+				<inTangent>-0.000000 -0.000000 -7.916101</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
 				<tangentMode>257</tangentMode>
 			</frame>
 			<frame>
-				<startTime>4.633334</startTime>
-				<value>0.843605 1.000000 -2.282627</value>
-				<inTangent>3.960539 -0.000000 -2.297853</inTangent>
-				<outTangent>-0.349100 -0.000000 -2.354713</outTangent>
+				<startTime>5.033334</startTime>
+				<value>0.061874 1.462913 -2.606380</value>
+				<inTangent>-0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>0.000000 0.000000 5.717760</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.200000</startTime>
+				<value>0.061874 1.462913 -1.653421</value>
+				<inTangent>-0.000000 -0.000000 5.717760</inTangent>
+				<outTangent>-0.000000 -0.000000 5.717760</outTangent>
 				<tangentMode>257</tangentMode>
 			</frame>
 		</track>
 		<track>
-			<name>ay_ep_08_seq_stage_10</name>
+			<name>ay_ep_09_seq_stage_10</name>
 			<type>sound</type>
 			<frame>
 				<startTime>0.000000</startTime>
-				<duration>8.533334</duration>
-				<sequenceSound>ay_ep_08_seq_stage_10</sequenceSound>
+				<duration>7.524333</duration>
+				<sequenceSound>ay_seq_stage_10</sequenceSound>
 				<type>play_till_end</type>
 				<fade>0.000000</fade>
 			</frame>
@@ -65,7 +72,8 @@
 	<sequenceObject>
 		<name>stg_10_fuel_01</name>
 		<type>model</type>
-		<resource>content/Hangars/h00_armory_yard/environment/Constructor/A176_OTAC_LK_7605/normal/lod0/stg_10_fuel_01_xray.model</resource>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/GB142_FV249_Castle/normal/lod0/stg_10_fuel_01_xray.model</resource>
+		<castsShadow>false</castsShadow>
 		<track>
 			<name>visibility</name>
 			<type>bool</type>
@@ -136,7 +144,8 @@
 	<sequenceObject>
 		<name>stg_10_fuel_02</name>
 		<type>model</type>
-		<resource>content/Hangars/h00_armory_yard/environment/Constructor/A176_OTAC_LK_7605/normal/lod0/stg_10_fuel_02_xray.model</resource>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/GB142_FV249_Castle/normal/lod0/stg_10_fuel_02_xray.model</resource>
+		<castsShadow>false</castsShadow>
 		<track>
 			<name>visibility</name>
 			<type>bool</type>
@@ -207,7 +216,8 @@
 	<sequenceObject>
 		<name>stg_10_fuel_03</name>
 		<type>model</type>
-		<resource>content/Hangars/h00_armory_yard/environment/Constructor/A176_OTAC_LK_7605/normal/lod0/stg_10_fuel_03_xray.model</resource>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/GB142_FV249_Castle/normal/lod0/stg_10_fuel_03_xray.model</resource>
+		<castsShadow>false</castsShadow>
 		<track>
 			<name>visibility</name>
 			<type>bool</type>

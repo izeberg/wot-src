@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<xmlns:ussr>ussr</xmlns:ussr>
+	<xmlns:germany>germany</xmlns:germany>
+	<xmlns:usa>usa</xmlns:usa>
+	<xmlns:china>china</xmlns:china>
+	<xmlns:france>france</xmlns:france>
+	<xmlns:uk>uk</xmlns:uk>
+	<xmlns:japan>japan</xmlns:japan>
+	<xmlns:czech>czech</xmlns:czech>
+	<xmlns:sweden>sweden</xmlns:sweden>
+	<xmlns:poland>poland</xmlns:poland>
+	<xmlns:italy>italy</xmlns:italy>
+	<xmlns:intunion>intunion</xmlns:intunion>
+	<itemGroup>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R47_ISU-152_Zveroboj ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<camouflage>
+			<id>15966</id>
+			<texture>vehicles/russian/Camouflage/mid_autumn_fest_2023_2.dds</texture>
+			<userString>#vehicle_customization:camouflage/mid_autumn_fest_2023_2/label</userString>
+			<description>#vehicle_customization:camouflage/mid_autumn_fest_2023_2/description</description>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<tags>hiddenInUI fullRGB</tags>
+			<invisibilityFactor>1</invisibilityFactor>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<rotation>
+				<HULL>0.610865</HULL>
+				<TURRET>0.610865</TURRET>
+				<GUN>0.610865</GUN>
+			</rotation>
+			<tiling>
+				<germany:G42_Maus>
+					2.84 2.84 8.42 16.629999
+					<!--BW_String-->
+				</germany:G42_Maus>
+				<ussr:R230_Maus>
+					2.84 2.84 8.42 16.629999
+					<!--BW_String-->
+				</ussr:R230_Maus>
+				<usa:A45_M6A2E1>
+					3.08 3.08 0.51 -0.57
+					<!--BW_String-->
+				</usa:A45_M6A2E1>
+				<usa:A67_T57_58>
+					3.2 3.2 -1.28 -2.68
+					<!--BW_String-->
+				</usa:A67_T57_58>
+				<germany:G121_Grille_15_L63>
+					9.38 9.38 -3.26 -4.89
+					<!--BW_String-->
+				</germany:G121_Grille_15_L63>
+				<germany:G56_E-100>
+					2.85 2.85 -2.83 -1.27
+					<!--BW_String-->
+				</germany:G56_E-100>
+				<germany:G189_E100_02>
+					2.85 2.85 -2.83 -1.27
+					<!--BW_String-->
+				</germany:G189_E100_02>
+				<uk:GB83_FV4005>
+					3.3 3.3 0.11 -0.3
+					<!--BW_String-->
+				</uk:GB83_FV4005>
+				<italy:It13_Progetto_M35_mod_46>
+					1.75 1.75 1.52 -0.34
+					<!--BW_String-->
+				</italy:It13_Progetto_M35_mod_46>
+				<ussr:R108_T34_85M>
+					3.68 3.68 -0.8 -0.89
+					<!--BW_String-->
+				</ussr:R108_T34_85M>
+				<sweden:S11_Strv_103B>
+					1.5 1.5 0.15 -2.02
+					<!--BW_String-->
+				</sweden:S11_Strv_103B>
+			</tiling>
+			<tilingSettings>
+				<type>relative</type>
+				<factor>
+					2.7 2.7
+					<!--BW_String-->
+				</factor>
+				<offset>
+					0.52 -0.5
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+		</camouflage>
+	</itemGroup>
+</root>

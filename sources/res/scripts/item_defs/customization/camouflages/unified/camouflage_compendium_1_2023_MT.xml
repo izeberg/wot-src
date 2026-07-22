@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<xmlns:ussr>ussr</xmlns:ussr>
+	<xmlns:germany>germany</xmlns:germany>
+	<xmlns:usa>usa</xmlns:usa>
+	<xmlns:china>china</xmlns:china>
+	<xmlns:france>france</xmlns:france>
+	<xmlns:uk>uk</xmlns:uk>
+	<xmlns:japan>japan</xmlns:japan>
+	<xmlns:czech>czech</xmlns:czech>
+	<xmlns:sweden>sweden</xmlns:sweden>
+	<xmlns:poland>poland</xmlns:poland>
+	<xmlns:italy>italy</xmlns:italy>
+	<xmlns:intunion>intunion</xmlns:intunion>
+	<itemGroup>
+		<season>ALL</season>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
+		<historical>1</historical>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+		<camouflage>
+			<id>31008</id>
+			<texture>vehicles/russian/Camouflage/compendium_camo_1_2023.dds</texture>
+			<description>#vehicle_customization:camouflage/compendium_1_2023_MT/description</description>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<userString>#vehicle_customization:camouflage/compendium_1_2023_MT</userString>
+			<tags>hiddenInUI fullRGB</tags>
+			<invisibilityFactor>1</invisibilityFactor>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<rotation>
+				<HULL>-0.872665</HULL>
+				<TURRET>-0.872665</TURRET>
+				<GUN>-0.872665</GUN>
+			</rotation>
+			<tiling>
+				<france:F18_Bat_Chatillon25t>
+					2.1 2.1 0.08 0.56
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_7x7>
+					2.1 2.1 0.08 0.56
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_7x7>
+				<france:F18_Bat_Chatillon25t_IGR>
+					2.1 2.1 0.08 0.56
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_IGR>
+				<france:F82_AMX_M4_Mle1949_Ter>
+					3.8 3.8 0.89 0.89
+					<!--BW_String-->
+				</france:F82_AMX_M4_Mle1949_Ter>
+				<france:F108_Panhard_EBR_105>
+					2.5 2.5 -0.27 0.28
+					<!--BW_String-->
+				</france:F108_Panhard_EBR_105>
+				<germany:G42_Maus>
+					2.7 2.7 -1.04 0.49
+					<!--BW_String-->
+				</germany:G42_Maus>
+				<ussr:R230_Maus>
+					2.7 2.7 -1.04 0.49
+					<!--BW_String-->
+				</ussr:R230_Maus>
+				<germany:G42_Maus_IGR>
+					2.7 2.7 -1.04 0.49
+					<!--BW_String-->
+				</germany:G42_Maus_IGR>
+				<germany:G56_E-100>
+					2.7 2.7 -1.37 0.25
+					<!--BW_String-->
+				</germany:G56_E-100>
+				<germany:G189_E100_02>
+					2.7 2.7 -1.37 0.25
+					<!--BW_String-->
+				</germany:G189_E100_02>
+				<italy:It08_Progetto_M40_mod_65_bob>
+					1.5 1.5 1 1
+					<!--BW_String-->
+				</italy:It08_Progetto_M40_mod_65_bob>
+				<japan:J20_Type_2605>
+					2.8 2.8 0.69 0.29
+					<!--BW_String-->
+				</japan:J20_Type_2605>
+				<japan:J20_Type_2605_7x7>
+					2.8 2.8 0.69 0.29
+					<!--BW_String-->
+				</japan:J20_Type_2605_7x7>
+				<japan:J28_O_I_100>
+					1.1 1.1 0.46 0.57
+					<!--BW_String-->
+				</japan:J28_O_I_100>
+				<italy:It08_Progetto_M40_mod_65>
+					1.5 1.5 1 1
+					<!--BW_String-->
+				</italy:It08_Progetto_M40_mod_65>
+				<usa:A13_T34_hvy>
+					2.7 2.7 -0.05 0.05
+					<!--BW_String-->
+				</usa:A13_T34_hvy>
+				<usa:A13_T34_hvy_FL>
+					2.7 2.7 -0.05 0.05
+					<!--BW_String-->
+				</usa:A13_T34_hvy_FL>
+				<usa:A13_T34_hvy_IGR>
+					2.7 2.7 -0.05 0.05
+					<!--BW_String-->
+				</usa:A13_T34_hvy_IGR>
+				<usa:A67_T57_58>
+					3.2 3.2 -1.78 0.42
+					<!--BW_String-->
+				</usa:A67_T57_58>
+				<ussr:R19_IS-3>
+					4.3 4.3 0.36 -0.49
+					<!--BW_String-->
+				</ussr:R19_IS-3>
+				<ussr:R19_IS-3_FL>
+					4.3 4.3 0.36 -0.49
+					<!--BW_String-->
+				</ussr:R19_IS-3_FL>
+				<ussr:R1013_IS_3_T>
+					4.3 4.3 0.36 -0.49
+					<!--BW_String-->
+				</ussr:R1013_IS_3_T>
+				<ussr:R19_IS-3_IGR>
+					4.3 4.3 0.36 -0.49
+					<!--BW_String-->
+				</ussr:R19_IS-3_IGR>
+				<ussr:R20_T-44>
+					4.7 4.7 -0.34 -0.22
+					<!--BW_String-->
+				</ussr:R20_T-44>
+				<ussr:R20_T-44_FL>
+					4.7 4.7 -0.34 -0.22
+					<!--BW_String-->
+				</ussr:R20_T-44_FL>
+				<ussr:R20_T-44_IGR>
+					4.7 4.7 -0.34 -0.22
+					<!--BW_String-->
+				</ussr:R20_T-44_IGR>
+				<ussr:R45_IS-7>
+					3.2 3.2 0.52 0.33
+					<!--BW_String-->
+				</ussr:R45_IS-7>
+				<ussr:R45_IS-7_IGR>
+					3.2 3.2 0.52 0.33
+					<!--BW_String-->
+				</ussr:R45_IS-7_IGR>
+				<ussr:R45_IS-7_fallout>
+					3.2 3.2 0.52 0.33
+					<!--BW_String-->
+				</ussr:R45_IS-7_fallout>
+				<sweden:S11_Strv_103B>
+					1.3 1.3 -0.13 0.47
+					<!--BW_String-->
+				</sweden:S11_Strv_103B>
+				<uk:GB83_FV4005>
+					2.7 2.7 0.19 -0.11
+					<!--BW_String-->
+				</uk:GB83_FV4005>
+			</tiling>
+			<tilingSettings>
+				<type>relative</type>
+				<factor>
+					2.5 2.5
+					<!--BW_String-->
+				</factor>
+				<offset>
+					-1.07 -0.12
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+		</camouflage>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R47_ISU-152_Zveroboj ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+	</itemGroup>
+</root>

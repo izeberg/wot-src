@@ -1192,7 +1192,7 @@ msgid "bonusName/eventCoin"
 msgstr "Асаблівая валюта падзеі"
 
 msgid "bonusName/excluded_map"
-msgstr "Выключаная мапа"
+msgstr "Дополнительный слот для исключения карт"
 
 msgid "bonusName/exclusive_vehicle"
 msgstr "Эксклюзіўная тэхніка"
@@ -1214,6 +1214,9 @@ msgstr "Золата"
 
 msgid "bonusName/gold_bank"
 msgstr "Сховішча золата"
+
+msgid "bonusName/goldenticket"
+msgstr "Золотой билет"
 
 msgid "bonusName/honey_coin"
 msgstr "Мёд"
@@ -1250,6 +1253,9 @@ msgstr "Стандартны прызавы бой."
 
 msgid "bonusName/rankedDailyBattles"
 msgstr "Штодзённы прызавы бой."
+
+msgid "bonusName/rewardsSlots"
+msgstr "Слот для исключения карты"
 
 msgid "bonusName/slots"
 msgstr "Слоты ў Гаражы"
@@ -1397,6 +1403,9 @@ msgstr "%(name)s (×%(count)s)"
 
 msgid "bonuses/notAvailable"
 msgstr "Узнагарода недаступная"
+
+msgid "bonuses/preferredMapSlots/postBattle"
+msgstr "Слот для исключения карты: %(days)s"
 
 msgid "bonuses/premium_plus/description"
 msgstr "Дзён Танкавага прэміум акаўнту: %(value)s"
@@ -4906,16 +4915,6 @@ msgstr ""
 msgid "introScreen/dailyQuests/header"
 msgstr "Штодзённыя задачы"
 
-msgid "introScreen/inputSeries/description"
-msgstr ""
-"Падаўжайце свой ланцуг перамог, штодзённа выконваючы баявую задачу; яна "
-"заўжды адна — перамагчы ў баі або атрымаць 250 адз. «чыстага» досведу. "
-"Назапашвайце рэгулярныя ўзнагароды, захоўваючы ваш ланцуг перамог "
-"бесперапынным."
-
-msgid "introScreen/inputSeries/header"
-msgstr "Ланцуг перамог"
-
 msgid "introScreen/subtitle"
 msgstr ""
 "Інтэрфейс і механікі штодзённых задач былі цалкам абноўлены. Цяпер ва "
@@ -5607,9 +5606,6 @@ msgstr "Выканана асноўная ўмова"
 msgid "personalMission/status/sheetRecoveryInProgress"
 msgstr "Вяртанне бланка загаду: выканайце асноўную і дадатковую ўмовы"
 
-msgid "playStreak/tab/label"
-msgstr "Серыя ўваходаў"
-
 msgid "postBattle/progressReset"
 msgstr "Ход выканання абнулены, бо адна з умоў не была выканана"
 
@@ -5905,7 +5901,7 @@ msgid "reward/tooltip/title"
 msgstr "Бонус падпіскі"
 
 msgid "summerSale/missions/header/button/gotoEvent"
-msgstr "Да падзеі"
+msgstr "К событию"
 
 msgid "summerSale/missions/header/button/gotoShop"
 msgstr "У Краму"
@@ -5923,7 +5919,7 @@ msgid "summerSale/missions/header/disabled"
 msgstr "Задачи временно недоступны."
 
 msgid "summerSale/missions/header/info"
-msgstr "ПРА ПАДЗЕЮ"
+msgstr "О СОБЫТИИ"
 
 msgid "switch/isDailyPremEnabled"
 msgstr ""

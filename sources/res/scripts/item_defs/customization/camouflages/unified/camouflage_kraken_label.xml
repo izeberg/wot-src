@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<xmlns:ussr>ussr</xmlns:ussr>
+	<xmlns:germany>germany</xmlns:germany>
+	<xmlns:usa>usa</xmlns:usa>
+	<xmlns:china>china</xmlns:china>
+	<xmlns:france>france</xmlns:france>
+	<xmlns:uk>uk</xmlns:uk>
+	<xmlns:japan>japan</xmlns:japan>
+	<xmlns:czech>czech</xmlns:czech>
+	<xmlns:sweden>sweden</xmlns:sweden>
+	<xmlns:poland>poland</xmlns:poland>
+	<xmlns:italy>italy</xmlns:italy>
+	<xmlns:intunion>intunion</xmlns:intunion>
+	<itemGroup>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<include>
+				<levels>8 9 10</levels>
+			</include>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R47_ISU-152_Zveroboj ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<camouflage>
+			<id>357</id>
+			<texture>vehicles/russian/Camouflage/kraken.dds</texture>
+			<description>#vehicle_customization:camouflage/kraken/description</description>
+			<scales>
+				1.3 1 0.7
+				<!--BW_String-->
+			</scales>
+			<userString>#vehicle_customization:camouflage/kraken/label</userString>
+			<tags>fullRGB</tags>
+			<invisibilityFactor>1</invisibilityFactor>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<rotation>
+				<HULL>-0.261799</HULL>
+				<TURRET>-0.261799</TURRET>
+				<GUN>-0.261799</GUN>
+			</rotation>
+			<tiling>
+				<france:F10_AMX_50B>
+					1.6 1.6 -0.09 7.268
+					<!--BW_String-->
+				</france:F10_AMX_50B>
+				<france:F10_AMX_50B_bob>
+					1.6 1.6 -0.09 7.268
+					<!--BW_String-->
+				</france:F10_AMX_50B_bob>
+				<france:F82_AMX_M4_Mle1949_Ter>
+					4 4 -0.507 6.278
+					<!--BW_String-->
+				</france:F82_AMX_M4_Mle1949_Ter>
+				<germany:G55_E-75>
+					3.5 3.5 0.03 7.058
+					<!--BW_String-->
+				</germany:G55_E-75>
+				<germany:G55_E-75_FL>
+					3.5 3.5 0.03 7.058
+					<!--BW_String-->
+				</germany:G55_E-75_FL>
+				<germany:G56_E-100>
+					2.7 2.7 0.61 7.148
+					<!--BW_String-->
+				</germany:G56_E-100>
+				<germany:G189_E100_02>
+					2.7 2.7 0.61 7.148
+					<!--BW_String-->
+				</germany:G189_E100_02>
+				<poland:Pl15_60TP_Lewandowskiego>
+					1.8 1.8 -0.255 6.316
+					<!--BW_String-->
+				</poland:Pl15_60TP_Lewandowskiego>
+				<sweden:S11_Strv_103B>
+					2 2 0.38 6.608
+					<!--BW_String-->
+				</sweden:S11_Strv_103B>
+				<sweden:S16_Kranvagn>
+					1.1 1.1 -0.348 6.157
+					<!--BW_String-->
+				</sweden:S16_Kranvagn>
+				<uk:GB32_Tortoise>
+					3.7 3.7 1.364 7.98
+					<!--BW_String-->
+				</uk:GB32_Tortoise>
+				<uk:GB83_FV4005>
+					3.1 3.1 -0.6 6.738
+					<!--BW_String-->
+				</uk:GB83_FV4005>
+				<uk:GB91_Super_Conqueror>
+					1.5 1.5 1.18 6.738
+					<!--BW_String-->
+				</uk:GB91_Super_Conqueror>
+				<usa:A13_T34_hvy>
+					3 3 0.54 7.608
+					<!--BW_String-->
+				</usa:A13_T34_hvy>
+				<usa:A66_M103>
+					3.2 3.2 -0.46 6.368
+					<!--BW_String-->
+				</usa:A66_M103>
+				<usa:A67_T57_58>
+					3.1 3.1 -0.03 5.998
+					<!--BW_String-->
+				</usa:A67_T57_58>
+				<ussr:R155_Object_277>
+					3.2 3.2 -1.2 6.118
+					<!--BW_String-->
+				</ussr:R155_Object_277>
+				<ussr:R20_T-44>
+					4.3 4.3 -0.23 6.248
+					<!--BW_String-->
+				</ussr:R20_T-44>
+				<ussr:R45_IS-7>
+					2.7 2.7 0.52 7.488
+					<!--BW_String-->
+				</ussr:R45_IS-7>
+			</tiling>
+			<tilingSettings>
+				<type>relative</type>
+				<factor>
+					2.2 2.2
+					<!--BW_String-->
+				</factor>
+				<offset>
+					-1.86 7.148
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+		</camouflage>
+	</itemGroup>
+</root>

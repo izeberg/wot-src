@@ -88,7 +88,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_2 armor_2</primaryArmor>
 		<weight>12595</weight>
-		<maxHealth>356</maxHealth>
+		<maxHealth>500</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>100</maxHealth>
 			<maxRegenHealth>70</maxRegenHealth>
@@ -4524,7 +4524,7 @@
 				</customizableVehicleAreas>
 			</customization>
 			<repairTime>
-				5.71428585
+				2.28001642
 				<!--BW_String-->
 			</repairTime>
 		</Chassis_J21_Type_91>
@@ -6832,7 +6832,7 @@
 				</customizableVehicleAreas>
 			</customization>
 			<repairTime>
-				5.71428585
+				2.28001642
 				<!--BW_String-->
 			</repairTime>
 		</Chassis_J21_Type_91_2>
@@ -6856,7 +6856,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_1 armor_1</primaryArmor>
 			<weight>1500</weight>
-			<maxHealth>89</maxHealth>
+			<maxHealth>100</maxHealth>
 			<rotationSpeed>30</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>70</maxHealth>
@@ -6921,7 +6921,7 @@
 					</shotDispersionRadius>
 					<reloadTime>4</reloadTime>
 					<aimingTime>
-						2.6
+						2.0
 						<!--BW_String-->
 					</aimingTime>
 					<shotDispersionFactors>
@@ -7041,7 +7041,7 @@
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
-						2.1
+						1.8
 						<!--BW_String-->
 					</aimingTime>
 					<shotDispersionFactors>

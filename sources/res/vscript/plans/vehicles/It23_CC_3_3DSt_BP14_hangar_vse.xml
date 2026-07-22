@@ -131,23 +131,6 @@
 				</slots>
 			</block>
 			<block>
-				<class>ComponentMethod</class>
-				<id>ComponentMethod_3</id>
-				<params>
-					<param>
-						Animator.start
-						<name>Component Type</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>arg#0</name>
-						<const>\0.000000\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
 				<class>Repeat</class>
 				<id>Repeat_2</id>
 				<params/>
@@ -155,21 +138,6 @@
 					<slot>
 						<name>interval</name>
 						<const>\40.000000\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>FindFirstNode</class>
-				<id>FindFirstNode_3</id>
-				<params/>
-				<slots>
-					<slot>
-						<name>name</name>
-						<const>\drill_GO\</const>
-					</slot>
-					<slot>
-						<name>includingInactive</name>
-						<const>\true\</const>
 					</slot>
 				</slots>
 			</block>
@@ -260,28 +228,10 @@
 				<output>node</output>
 			</connection>
 			<connection>
-				<from>ComponentMethod_2</from>
-				<input>in</input>
-				<to>ComponentMethod_3</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>FindFirstNode_3</from>
-				<input>gameObject</input>
-				<to>ComponentMethod_3</to>
-				<output>node</output>
-			</connection>
-			<connection>
 				<from>Sequence_1</from>
 				<input>start</input>
 				<to>Repeat_2</to>
 				<output>o1</output>
-			</connection>
-			<connection>
-				<from>ContextGetSelf_1</from>
-				<input>gameObject</input>
-				<to>FindFirstNode_3</to>
-				<output>value</output>
 			</connection>
 			<connection>
 				<from>ContextGetSelf_1</from>

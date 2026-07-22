@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/french/F121_G1L/crash/lod4/Turret_01</nodefullVisual>
+	<visibilityBox>
+		<min>-0.960126 -0.000029 -1.232586</min>
+		<max>0.963285 1.214146 1.070335</max>
+	</visibilityBox>
+</root>

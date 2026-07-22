@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A184_HTPC/crash/lod3/Gun_01</nodefullVisual>
+	<parent>vehicles/american/A184_HTPC/crash/lod4/Gun_01</parent>
+	<tank>true</tank>
+	<extent>
+		192.0
+		<!--BW_String-->
+	</extent>
+	<visibilityBox>
+		<min>-0.534493 -0.354241 -1.478336</min>
+		<max>0.531291 0.382234 6.395700</max>
+	</visibilityBox>
+</root>

@@ -1,0 +1,6 @@
+EXTENSION_NAME = 'tank_academy'
+GAME_PARAMS_KEY = 'tank_academy_config'
+TANK_ACADEMY_COMPLETE_TOKEN = 'tank_academy_complete'
+TANK_ACADEMY_UNLOCK_TOKEN = 'tank_academy_unlock'
+AB_TEST_FEATURE_NAME = 'tank_academy'
+AB_TEST_DEFAULT_GROUP_NAME = 'default'

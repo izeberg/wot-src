@@ -90,7 +90,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>8000</weight>
-		<maxHealth>432</maxHealth>
+		<maxHealth>400</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>110</maxHealth>
 			<maxRegenHealth>75</maxRegenHealth>
@@ -3230,7 +3230,7 @@
 				</customizableVehicleAreas>
 			</customization>
 			<repairTime>
-				4.57142878
+				2.85003138
 				<!--BW_String-->
 			</repairTime>
 		</BT-5>
@@ -4811,7 +4811,7 @@
 				</customizableVehicleAreas>
 			</customization>
 			<repairTime>
-				4.57142878
+				2.85003138
 				<!--BW_String-->
 			</repairTime>
 		</BT-7>
@@ -4843,7 +4843,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>950</weight>
-			<maxHealth>78</maxHealth>
+			<maxHealth>110</maxHealth>
 			<rotationSpeed>38</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>80</maxHealth>
@@ -4882,7 +4882,7 @@
 						<gun>10</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.44
+						0.38
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
@@ -5923,7 +5923,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>1050</weight>
-			<maxHealth>108</maxHealth>
+			<maxHealth>140</maxHealth>
 			<rotationSpeed>40</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>80</maxHealth>
@@ -5973,7 +5973,7 @@
 						<gun>10</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.42
+						0.36
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
@@ -6066,13 +6066,22 @@
 				</_45mm_20K>
 				<_37mm_ZiS-19>
 					shared
+					<unlocks>
+						<vehicle>
+							R04_T-34
+							<cost>11500</cost>
+						</vehicle>
+					</unlocks>
 					<maxAmmo>200</maxAmmo>
 					<shotDispersionFactors>
 						<turretRotation>
 							0.08
 							<!--BW_String-->
 						</turretRotation>
-						<afterShot>3</afterShot>
+						<afterShot>
+							1.5
+							<!--BW_String-->
+						</afterShot>
 						<whileGunDamaged>
 							2.0
 							<!--BW_String-->
@@ -6094,7 +6103,7 @@
 						<gun>10</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.37
+						0.36
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
@@ -7116,15 +7125,6 @@
 		</BT-7_conic>
 	</turrets0>
 	<engines>
-		<M-17T>
-			shared
-			<unlocks>
-				<engine>
-					M-17F
-					<cost>850</cost>
-				</engine>
-			</unlocks>
-		</M-17T>
 		<M-17F>
 			shared
 			<unlocks>
@@ -7138,12 +7138,8 @@
 			shared
 			<unlocks>
 				<vehicle>
-					R04_T-34
-					<cost>11500</cost>
-				</vehicle>
-				<vehicle>
 					R12_A-20
-					<cost>10200</cost>
+					<cost>11500</cost>
 				</vehicle>
 			</unlocks>
 		</V-2>
@@ -7152,30 +7148,11 @@
 		<Small>shared</Small>
 	</fuelTanks>
 	<radios>
-		<_71-TK-3>
-			shared
-			<unlocks>
-				<radio>
-					_12LL
-					<cost>5600</cost>
-				</radio>
-			</unlocks>
-		</_71-TK-3>
 		<_12LL>shared</_12LL>
 	</radios>
 	<physics>
 		<detailed>
 			<engines>
-				<M-17T>
-					<smplEnginePower>
-						475.7765
-						<!--BW_String-->
-					</smplEnginePower>
-					<smplFwMaxSpeed>
-						65.4
-						<!--BW_String-->
-					</smplFwMaxSpeed>
-				</M-17T>
 				<M-17F>
 					<smplEnginePower>
 						528.6406

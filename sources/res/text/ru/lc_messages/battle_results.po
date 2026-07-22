@@ -491,7 +491,7 @@ msgid "details/calculations/battlePayments"
 msgstr "Боевые выплаты"
 
 msgid "details/calculations/birthdayEconomicsBonus"
-msgstr "Бонус дня рождения игры"
+msgstr "Бонус Дня рождения игры"
 
 msgid "details/calculations/boosters"
 msgstr "Эффект от личных резервов"
@@ -801,6 +801,23 @@ msgstr "За этот бой вы можете получить:"
 
 msgid "getPremiumPopover/prem"
 msgstr "Премиум аккаунт"
+
+msgid "giftSystem/banner/stamps/button/notAvailable"
+msgstr "Заработать"
+
+msgid "giftSystem/banner/stamps/label/available"
+msgstr "В наличии:"
+
+msgid "giftSystem/banner/stamps/label/notAvailable"
+msgstr "У вас нет марок"
+
+msgid "giftSystem/banner/title"
+msgstr ""
+"Поблагодарите за хороший бой!\n"
+"Отправьте %(emphasized)s."
+
+msgid "giftSystem/banner/title/emphasized"
+msgstr "праздничную посылку"
 
 msgid "noData"
 msgstr "Извините, подробные результаты боя недоступны."

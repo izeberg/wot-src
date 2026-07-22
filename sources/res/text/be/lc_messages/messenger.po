@@ -222,7 +222,7 @@ msgid "client/dynSquad/inviteAccepted/user"
 msgstr "%(receiver)s уступіў у звяз %(squadNum)s."
 
 msgid "client/dynSquad/inviteReceived"
-msgstr "%(creator)s запрасіў вас у звяз."
+msgstr "%(creator)s пригласил вас во взвод."
 
 msgid "client/dynSquad/inviteReceived/anonymized"
 msgstr ""
@@ -230,7 +230,7 @@ msgstr ""
 "Увага! Гульцы з вашага звязу будуць бачыць ваша сапраўднае гульнявое імя і тэг клана."
 
 msgid "client/dynSquad/inviteSent"
-msgstr "%(receiver)s запрошаны ў звяз."
+msgstr "%(receiver)s приглашён во взвод."
 
 msgid "client/error/broadcastInCooldown"
 msgstr "Адпраўка паведамленняў часова прыпынена на %s с."
@@ -1258,6 +1258,9 @@ msgstr "Спісана асабістых ачкоў славы"
 msgid "platformCurrencyMsg/debited/freeXP"
 msgstr "Вольны досвед спісаны"
 
+msgid "platformCurrencyMsg/debited/goldenticket"
+msgstr "Списано золотых билетов"
+
 msgid "platformCurrencyMsg/debited/honey_coin"
 msgstr "Списано мёда"
 
@@ -1281,6 +1284,9 @@ msgstr "Налічана асабістых ачкоў славы"
 
 msgid "platformCurrencyMsg/received/freeXP"
 msgstr "Атрымана вольнага досведу"
+
+msgid "platformCurrencyMsg/received/goldenticket"
+msgstr "Начислено золотых билетов"
 
 msgid "platformCurrencyMsg/received/honey_coin"
 msgstr "Начислено мёда"
@@ -2472,6 +2478,26 @@ msgstr "Ад адміністрацыі атрымана юбілейных ма
 msgid "serviceChannelMessages/excludedMap/available/title"
 msgstr "Даступны дадатковы слот для выключэння мапы"
 
+msgid "serviceChannelMessages/excludedMap/event/disabled"
+msgstr ""
+"Слот для исключения карт за активное участие в событиях временно недоступен."
+
+msgid "serviceChannelMessages/excludedMap/event/enabled"
+msgstr ""
+"Слот для исключения карт за активное участие в событиях снова доступен."
+
+msgid "serviceChannelMessages/excludedMap/event/header"
+msgstr "Слот исключения карт"
+
+msgid "serviceChannelMessages/excludedMap/subscription/disabled"
+msgstr "Слот для исключения карт за активную подписку временно недоступен."
+
+msgid "serviceChannelMessages/excludedMap/subscription/enabled"
+msgstr "Слот для исключения карт за активную подписку снова доступен."
+
+msgid "serviceChannelMessages/excludedMap/subscription/header"
+msgstr "Слот исключения карт"
+
 msgid "serviceChannelMessages/excludedMap/unavailable/title"
 msgstr "?empty?"
 
@@ -3153,7 +3179,7 @@ msgid "serviceChannelMessages/offerTokenBonus/title"
 msgstr "Пастаўкі з тылу"
 
 msgid "serviceChannelMessages/paragons/body"
-msgstr "Получен доступ к ветке техники."
+msgstr "Получен доступ к ветке техники."
 
 msgid ""
 "serviceChannelMessages/personalMission/3/earlyPerfectCompletion/congrats"
@@ -3186,54 +3212,6 @@ msgstr "Назапашванне срэбра ў сховішчы прыпыне
 
 msgid "serviceChannelMessages/piggyBank/title"
 msgstr "Рэзервовае сховішча адчынена!"
-
-msgid "serviceChannelMessages/playStreakAvailable/body"
-msgstr "Задачы Ланцуга перамог зноў даступныя для выканання."
-
-msgid "serviceChannelMessages/playStreakCongrats/header"
-msgstr "Ланцуг перамог"
-
-msgid "serviceChannelMessages/playStreakCongratsWithRewards/periodic/body"
-msgstr "Атрымана ўзнагарода:"
-
-msgid "serviceChannelMessages/playStreakCongratsWithRewards/random/equipment"
-msgstr "Налічана выпадковае абсталяванне."
-
-msgid "serviceChannelMessages/playStreakCongratsWithRewards/random/goodie"
-msgstr "Налічаны выпадковыя рэзервы."
-
-msgid "serviceChannelMessages/playStreakCongratsWithRewards/random/prefix"
-msgstr "Дададзена: "
-
-msgid "serviceChannelMessages/playStreakCongratsWithRewards/regular/body"
-msgstr "Рэгулярнае налічэнне:"
-
-msgid "serviceChannelMessages/playStreakCongratsWithoutRewards/body"
-msgstr "Задача %(savedData)s выканана."
-
-msgid "serviceChannelMessages/playStreakDropProgress/body"
-msgstr "Прагрэс падзеі «Ланцуг перамог» абнулены."
-
-msgid "serviceChannelMessages/playStreakFreezes/body"
-msgstr ""
-"Ланцуг перамог быў перарваны. Для аднаўлення лічыльніка неабходна выканаць "
-"баявую задачу «Ланцуг перамог» %(savedData)s разоў."
-
-msgid "serviceChannelMessages/playStreakFreezesEnd/body"
-msgstr "Ланцуг перамог адноўлены."
-
-msgid "serviceChannelMessages/playStreakFreezesInProgress/body"
-msgstr ""
-"Задача выканана.\n"
-"Для аднаўлення лічыльніка засталося выканаць: %(savedData)s"
-
-msgid "serviceChannelMessages/playStreakPauseUsed/body"
-msgstr "Вы выкарысталі паўзу."
-
-msgid "serviceChannelMessages/playStreakUnavailable/body"
-msgstr ""
-"Выкананне задач Ланцуга перамог часова недаступнае.\n"
-"Паспрабуйце пазней."
 
 msgid "serviceChannelMessages/prebattle/battleType/clan"
 msgstr "Кланавы бой"

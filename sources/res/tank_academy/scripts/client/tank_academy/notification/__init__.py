@@ -1,0 +1,5 @@
+from gui.shared.system_factory import registerNotificationsActionsHandlers
+from tank_academy.notification.action_handlers import OpenTankAcademyHandler, OpenTankAcademyVehicleSelectionHandler
+
+def registerClientNotificationHandlers():
+    registerNotificationsActionsHandlers((OpenTankAcademyHandler, OpenTankAcademyVehicleSelectionHandler))

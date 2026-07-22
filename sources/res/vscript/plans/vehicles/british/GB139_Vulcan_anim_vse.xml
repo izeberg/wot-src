@@ -1055,6 +1055,12 @@
 			</block>
 			<block>
 				<class>If</class>
+				<id>If_8</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>If</class>
 				<id>If_3</id>
 				<params/>
 				<slots/>
@@ -1127,6 +1133,24 @@
 				<slots/>
 			</block>
 			<block>
+				<class>IsVehicleValid</class>
+				<id>IsVehicleValid_2</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>And</class>
+				<id>And_1</id>
+				<params>
+					<param>
+						2
+						<name>Input Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
 				<class>GetVariable</class>
 				<id>GetVariable_6</id>
 				<buddy>Variable_3</buddy>
@@ -1137,6 +1161,25 @@
 						<type>TypeT</type>
 					</param>
 				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_27</id>
+				<buddy>Variable_10</buddy>
+				<params>
+					<param>
+						VehicleT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>IsVehicleValid</class>
+				<id>IsVehicleValid_1</id>
+				<params/>
 				<slots/>
 			</block>
 			<block>
@@ -1504,18 +1547,6 @@
 				<slots/>
 			</block>
 			<block>
-				<class>Macro</class>
-				<id>Macro_10</id>
-				<params>
-					<param>
-						getVehicleVelocity
-						<name>Macro Name</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
 				<class>GetVariable</class>
 				<id>GetVariable_24</id>
 				<buddy>Variable_11</buddy>
@@ -1643,6 +1674,18 @@
 						GameObjectT
 						<name>Variable Type</name>
 						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>Macro</class>
+				<id>Macro_10</id>
+				<params>
+					<param>
+						getVehicleVelocity
+						<name>Macro Name</name>
+						<type>StringT</type>
 					</param>
 				</params>
 				<slots/>
@@ -2054,8 +2097,20 @@
 			<connection>
 				<from>OnAnyVehicleShoot_2</from>
 				<input>input</input>
-				<to>If_3</to>
+				<to>If_8</to>
 				<output>out</output>
+			</connection>
+			<connection>
+				<from>And_1</from>
+				<input>value</input>
+				<to>If_8</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>If_8</from>
+				<input>input</input>
+				<to>If_3</to>
+				<output>true</output>
 			</connection>
 			<connection>
 				<from>CompareVehicles_1</from>
@@ -2115,6 +2170,30 @@
 				<from>GetVariable_6</from>
 				<input>value</input>
 				<to>If_1</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>OnAnyVehicleShoot_2</from>
+				<input>vehicle</input>
+				<to>IsVehicleValid_2</to>
+				<output>vehicle</output>
+			</connection>
+			<connection>
+				<from>IsVehicleValid_2</from>
+				<input>i1</input>
+				<to>And_1</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>IsVehicleValid_1</from>
+				<input>i2</input>
+				<to>And_1</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>GetVariable_27</from>
+				<input>vehicle</input>
+				<to>IsVehicleValid_1</to>
 				<output>value</output>
 			</connection>
 			<connection>
@@ -2268,24 +2347,6 @@
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>Delay_1</from>
-				<input>in</input>
-				<to>Macro_10</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>GetVariable_24</from>
-				<input>appearance</input>
-				<to>Macro_10</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>GetVariable_23</from>
-				<input>vehicle</input>
-				<to>Macro_10</to>
-				<output>value</output>
-			</connection>
-			<connection>
 				<from>ListenLocalEvent_2</from>
 				<input>input</input>
 				<to>Delay_1</to>
@@ -2326,6 +2387,24 @@
 				<input>externalVelocity</input>
 				<to>CreateComponent_4</to>
 				<output>res</output>
+			</connection>
+			<connection>
+				<from>Delay_1</from>
+				<input>in</input>
+				<to>Macro_10</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>GetVariable_23</from>
+				<input>vehicle</input>
+				<to>Macro_10</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>GetVariable_24</from>
+				<input>appearance</input>
+				<to>Macro_10</to>
+				<output>value</output>
 			</connection>
 		</connections>
 		<macros>
@@ -2574,6 +2653,97 @@
 				<name>getVehicleVelocity</name>
 				<blocks>
 					<block>
+						<class>NormalizeVector</class>
+						<id>NormalizeVector_2</id>
+						<params>
+							<param>
+								Vector3T
+								<name>Value Type</name>
+								<type>TypeT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
+						<class>MacroOutput</class>
+						<id>MacroOutput_2</id>
+						<params>
+							<param>
+								res
+								<name>Output Name</name>
+								<type>StringT</type>
+							</param>
+							<param>
+								Vector3T
+								<name>Output Type</name>
+								<type>TypeT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
+						<class>MultiplyVectorByFloat</class>
+						<id>MultiplyVectorByFloat_2</id>
+						<params>
+							<param>
+								Vector3T
+								<name>Value Type</name>
+								<type>TypeT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
+						<class>GetVehicleTransform</class>
+						<id>GetVehicleTransform_1</id>
+						<params/>
+						<slots/>
+					</block>
+					<block>
+						<class>MacroInput</class>
+						<id>MacroInput_2</id>
+						<params>
+							<param>
+								vehicle
+								<name>Input Name</name>
+								<type>StringT</type>
+							</param>
+							<param>
+								VehicleT
+								<name>Input Type</name>
+								<type>TypeT</type>
+							</param>
+							<param>
+								Default
+								<name>Input Editor</name>
+								<type>StringT</type>
+							</param>
+						</params>
+						<slots>
+							<slot>
+								<name>required</name>
+								<const>\true\</const>
+							</slot>
+						</slots>
+					</block>
+					<block>
+						<class>ContextGetSelf</class>
+						<id>ContextGetSelf_2</id>
+						<params>
+							<param>
+								CGFGameObjectContext
+								<name>Context Name</name>
+								<type>StringT</type>
+							</param>
+							<param>
+								getSelf
+								<name>Member Name</name>
+								<type>StringT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
 						<class>MacroInput</class>
 						<id>MacroInput_1</id>
 						<params>
@@ -2612,6 +2782,12 @@
 						<slots/>
 					</block>
 					<block>
+						<class>If</class>
+						<id>If_6</id>
+						<params/>
+						<slots/>
+					</block>
+					<block>
 						<class>GetComponentProperty</class>
 						<id>GetComponentProperty_2</id>
 						<params>
@@ -2621,6 +2797,12 @@
 								<type>StringT</type>
 							</param>
 						</params>
+						<slots/>
+					</block>
+					<block>
+						<class>IsVehicleValid</class>
+						<id>IsVehicleValid_3</id>
+						<params/>
 						<slots/>
 					</block>
 					<block>
@@ -2650,122 +2832,19 @@
 							</slot>
 						</slots>
 					</block>
-					<block>
-						<class>MacroInput</class>
-						<id>MacroInput_2</id>
-						<params>
-							<param>
-								vehicle
-								<name>Input Name</name>
-								<type>StringT</type>
-							</param>
-							<param>
-								VehicleT
-								<name>Input Type</name>
-								<type>TypeT</type>
-							</param>
-							<param>
-								Default
-								<name>Input Editor</name>
-								<type>StringT</type>
-							</param>
-						</params>
-						<slots>
-							<slot>
-								<name>required</name>
-								<const>\true\</const>
-							</slot>
-						</slots>
-					</block>
-					<block>
-						<class>NormalizeVector</class>
-						<id>NormalizeVector_2</id>
-						<params>
-							<param>
-								Vector3T
-								<name>Value Type</name>
-								<type>TypeT</type>
-							</param>
-						</params>
-						<slots/>
-					</block>
-					<block>
-						<class>ContextGetSelf</class>
-						<id>ContextGetSelf_2</id>
-						<params>
-							<param>
-								CGFGameObjectContext
-								<name>Context Name</name>
-								<type>StringT</type>
-							</param>
-							<param>
-								getSelf
-								<name>Member Name</name>
-								<type>StringT</type>
-							</param>
-						</params>
-						<slots/>
-					</block>
-					<block>
-						<class>MultiplyVectorByFloat</class>
-						<id>MultiplyVectorByFloat_2</id>
-						<params>
-							<param>
-								Vector3T
-								<name>Value Type</name>
-								<type>TypeT</type>
-							</param>
-						</params>
-						<slots/>
-					</block>
-					<block>
-						<class>GetVehicleTransform</class>
-						<id>GetVehicleTransform_1</id>
-						<params/>
-						<slots/>
-					</block>
-					<block>
-						<class>MacroOutput</class>
-						<id>MacroOutput_2</id>
-						<params>
-							<param>
-								res
-								<name>Output Name</name>
-								<type>StringT</type>
-							</param>
-							<param>
-								Vector3T
-								<name>Output Type</name>
-								<type>TypeT</type>
-							</param>
-						</params>
-						<slots/>
-					</block>
 				</blocks>
 				<connections>
-					<connection>
-						<from>GetComponentProperty_2</from>
-						<input>out</input>
-						<to>MacroOutput_1</to>
-						<output>out</output>
-					</connection>
-					<connection>
-						<from>MacroInput_1</from>
-						<input>in</input>
-						<to>GetComponentProperty_2</to>
-						<output>in</output>
-					</connection>
-					<connection>
-						<from>MacroInput_3</from>
-						<input>gameObject</input>
-						<to>GetComponentProperty_2</to>
-						<output>appearance</output>
-					</connection>
 					<connection>
 						<from>GetVehicleTransform_1</from>
 						<input>a</input>
 						<to>NormalizeVector_2</to>
 						<output>direction</output>
+					</connection>
+					<connection>
+						<from>MultiplyVectorByFloat_2</from>
+						<input>res</input>
+						<to>MacroOutput_2</to>
+						<output>res</output>
 					</connection>
 					<connection>
 						<from>NormalizeVector_2</from>
@@ -2786,10 +2865,40 @@
 						<output>vehicle</output>
 					</connection>
 					<connection>
-						<from>MultiplyVectorByFloat_2</from>
-						<input>res</input>
-						<to>MacroOutput_2</to>
+						<from>GetComponentProperty_2</from>
+						<input>out</input>
+						<to>MacroOutput_1</to>
+						<output>out</output>
+					</connection>
+					<connection>
+						<from>MacroInput_1</from>
+						<input>input</input>
+						<to>If_6</to>
+						<output>in</output>
+					</connection>
+					<connection>
+						<from>IsVehicleValid_3</from>
+						<input>value</input>
+						<to>If_6</to>
 						<output>res</output>
+					</connection>
+					<connection>
+						<from>If_6</from>
+						<input>in</input>
+						<to>GetComponentProperty_2</to>
+						<output>true</output>
+					</connection>
+					<connection>
+						<from>MacroInput_3</from>
+						<input>gameObject</input>
+						<to>GetComponentProperty_2</to>
+						<output>appearance</output>
+					</connection>
+					<connection>
+						<from>MacroInput_2</from>
+						<input>vehicle</input>
+						<to>IsVehicleValid_3</to>
+						<output>vehicle</output>
 					</connection>
 				</connections>
 			</macro>
@@ -3096,14 +3205,14 @@
 						<output>out</output>
 					</connection>
 					<connection>
-						<from>GetVariable_26</from>
-						<input>appearance</input>
+						<from>GetVariable_25</from>
+						<input>vehicle</input>
 						<to>Macro_8</to>
 						<output>value</output>
 					</connection>
 					<connection>
-						<from>GetVariable_25</from>
-						<input>vehicle</input>
+						<from>GetVariable_26</from>
+						<input>appearance</input>
 						<to>Macro_8</to>
 						<output>value</output>
 					</connection>

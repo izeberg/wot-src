@@ -1388,6 +1388,9 @@ msgstr ""
 msgid "counter/newCounter"
 msgstr "НОВОЕ"
 
+msgid "crystals/info/tab/earn/comp7"
+msgstr "Натиск"
+
 msgid "crystals/info/tab/earn/events/description"
 msgstr ""
 "Боны можно заработать и другими способами:\n"
@@ -1400,6 +1403,11 @@ msgstr ""
 
 msgid "crystals/info/tab/earn/events/title"
 msgstr "БОНЫ ЗА СОБЫТИЯ"
+
+msgid "crystals/info/tab/earn/general"
+msgstr ""
+"Генеральное\n"
+"сражение"
 
 msgid "crystals/info/tab/earn/level/description"
 msgstr ""
@@ -1414,19 +1422,6 @@ msgstr "ХI уровней"
 
 msgid "crystals/info/tab/earn/level/descriptionContent/level9"
 msgstr "IX уровня"
-
-msgid "crystals/info/tab/earn/level/mod/0"
-msgstr ""
-"Случайный\n"
-"бой"
-
-msgid "crystals/info/tab/earn/level/mod/1"
-msgstr ""
-"Генеральное\n"
-"сражение"
-
-msgid "crystals/info/tab/earn/level/mod/2"
-msgstr "Натиск"
 
 msgid "crystals/info/tab/earn/level/title"
 msgstr "УРОВЕНЬ ТЕХНИКИ"
@@ -1447,6 +1442,16 @@ msgstr "бон в неделю"
 
 msgid "crystals/info/tab/earn/marker/title"
 msgstr "ИНДИКАТОР ЗАРАБОТКА БОН"
+
+msgid "crystals/info/tab/earn/random"
+msgstr ""
+"Случайный\n"
+"бой"
+
+msgid "crystals/info/tab/earn/ranked"
+msgstr ""
+"Ранговый\n"
+"бой"
 
 msgid "crystals/info/tab/earnTab"
 msgstr "Как заработать"
@@ -1471,10 +1476,8 @@ msgstr "НАТИСК"
 
 msgid "crystals/info/tab/get/description"
 msgstr ""
-"Играйте в Случайных боях и Генеральных сражениях на машинах с активным "
-"индикатором заработка бон. Чем выше ваша позиция в послебоевой статистике по"
-" количеству заработанного «чистого» опыта, тем больше бон вы получите за "
-"бой."
+"Играйте в Случайных боях, Генеральных сражениях и других указанных ниже режимах\n"
+"на машинах с активным индикатором заработка бон. Чем выше ваша позиция в послебоевой статистике по количеству заработанного «чистого» опыта, тем больше бон вы получите за бой."
 
 msgid "crystals/info/tab/get/general"
 msgstr "ГЕНЕРАЛЬНОЕ СРАЖЕНИЕ"
@@ -3126,7 +3129,7 @@ msgid "headerButtons/battle/types/epicTraining/descr"
 msgstr "Линия фронта"
 
 msgid "headerButtons/battle/types/eventSquad"
-msgstr "Ивентовый взвод"
+msgstr "Взвод события"
 
 msgid "headerButtons/battle/types/fallout"
 msgstr "«Бой до последнего»"

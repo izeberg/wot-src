@@ -4533,11 +4533,13 @@ package
       
       public static const CRYSTALS_INFO_TAB_EARN_LEVEL_DESCRIPTIONCONTENT_LEVEL9:String = "#menu:crystals/info/tab/earn/level/descriptionContent/level9";
       
-      public static const CRYSTALS_INFO_TAB_EARN_LEVEL_MOD_0:String = "#menu:crystals/info/tab/earn/level/mod/0";
+      public static const CRYSTALS_INFO_TAB_EARN_RANDOM:String = "#menu:crystals/info/tab/earn/random";
       
-      public static const CRYSTALS_INFO_TAB_EARN_LEVEL_MOD_1:String = "#menu:crystals/info/tab/earn/level/mod/1";
+      public static const CRYSTALS_INFO_TAB_EARN_GENERAL:String = "#menu:crystals/info/tab/earn/general";
       
-      public static const CRYSTALS_INFO_TAB_EARN_LEVEL_MOD_2:String = "#menu:crystals/info/tab/earn/level/mod/2";
+      public static const CRYSTALS_INFO_TAB_EARN_COMP7:String = "#menu:crystals/info/tab/earn/comp7";
+      
+      public static const CRYSTALS_INFO_TAB_EARN_RANKED:String = "#menu:crystals/info/tab/earn/ranked";
       
       public static const CRYSTALS_INFO_TAB_EARN_MARKER_TITLE:String = "#menu:crystals/info/tab/earn/marker/title";
       

@@ -21,6 +21,11 @@ package net.wg.gui.components.containers.inject
          addChild(this._proxy);
       }
       
+      protected function getProxyUnsafe() : ChildViewProxy
+      {
+         return this._proxy;
+      }
+      
       override public function setSize(param1:Number, param2:Number) : void
       {
          App.utils.asserter.assert(!isDisposed(),Errors.CANT_NULL);

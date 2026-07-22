@@ -215,6 +215,9 @@ msgstr "Latt Stridsfordon 120"
 msgid "Chassis_S34_Lago_M38"
 msgstr "Lago M38"
 
+msgid "Chassis_S35_VH_105_X60_alt_II"
+msgstr "VH 105"
+
 msgid "Chassis_S36_VK_155_Projekt"
 msgstr "VK 155"
 
@@ -336,6 +339,9 @@ msgstr "Ra 400 P"
 msgid "Ra_400_P_SH"
 msgstr "Ra 400P"
 
+msgid "Ra_400_V"
+msgstr "Ra 400"
+
 msgid "Ra_421"
 msgstr "Ra 421"
 
@@ -356,6 +362,9 @@ msgstr "Ra 421 T"
 
 msgid "Rolls_Royce_K60"
 msgstr "Rolls-Royce K60"
+
+msgid "Rolls_Royce_K60M1"
+msgstr "Rolls-Royce K60M1"
 
 msgid "Rolls_Royce_K60_M1"
 msgstr "Rolls-Royce K60 M1"
@@ -1105,6 +1114,27 @@ msgstr "Lago M38"
 msgid "S34_Lago_M38_short_special"
 msgstr "Неплохая лобовая броня, высокая скорострельность"
 
+msgid "S35_VH_105_X60_alt_II"
+msgstr "VH 105 X60 alt II"
+
+msgid "S35_VH_105_X60_alt_II_descr"
+msgstr ""
+"Шведская 105-мм гаубичная САУ VH 105 X60 разработана фирмой Bofors и является дальнейшим развитием проекта лёгкой 105-мм гаубичной САУ VAK на шасси ЗСУ VAK 40.  Проект VH 105 X60 был разработан в трёх вариантах, отличавшихся друг от друга конструкцией шасси и башни. Вне зависимости от варианта проекта весь экипаж САУ из 4-х человек размещался в башне. САУ должна была обладать высокой подвижностью и быть оснащена водоходным оборудованием. Вооружение состояло из 105-мм гаубицы с механизированным заряжанием, причём стреляные гильзы с помощью специального механизма выбрасывались через отверстие в лобовом листе башни. Проект машины так и остался на бумаге из-за его высокой стоимости. В конечном итоге шведские военные отдали предпочтение более совершенной САУ Bkan 1.\n"
+"\n"
+"Характеристики машины могут быть изменены без компенсации."
+
+msgid "S35_VH_105_X60_alt_II_long_special"
+msgstr ""
+"Динамичная САУ с небольшими габаритами и башней полного вращения. Из плюсов "
+"орудия стоит отметить магазинную систему стрельбы с дозарядкой, который "
+"компенсируется минусом — невысоким уроном за выстрел."
+
+msgid "S35_VH_105_X60_alt_II_short"
+msgstr "X60 alt II"
+
+msgid "S35_VH_105_X60_alt_II_short_special"
+msgstr "Магазинная система заряжания, наличие башни"
+
 msgid "S36_VK_155_Projekt"
 msgstr "VK 155 Projekt"
 
@@ -1388,6 +1418,9 @@ msgstr "Latt Stridsfordon 120"
 msgid "Turret_1_S34_Lago_M38"
 msgstr "Lago M38"
 
+msgid "Turret_1_S35_VH_105_X60_alt_II"
+msgstr "VH 105"
+
 msgid "Turret_1_S36_VK_155_Projekt"
 msgstr "VK 155"
 
@@ -1474,6 +1507,9 @@ msgstr "slpprj D/5"
 
 msgid "_105mm_Bofors_D_G5_SH"
 msgstr "10,5 cm Bofors D/5"
+
+msgid "_105mm_Haubits_L40"
+msgstr "10,5 cm Haubits L/40"
 
 msgid "_105mm_Kanon_M34"
 msgstr "10,5 cm Kanon m/34"
@@ -1628,6 +1664,9 @@ msgstr "slpprj m/66P"
 msgid "_105mm_slpprj_m_ny"
 msgstr "slpprj m/ny"
 
+msgid "_105mm_slpsgr_m65"
+msgstr "slpsgr m/65"
+
 msgid "_105mm_slpsgr_m_49"
 msgstr "slpsgr m/49"
 
@@ -1638,6 +1677,9 @@ msgid "_105mm_slpsgr_m_65"
 msgstr "slpsgr m/65"
 
 msgid "_105mm_slsgr_M_34"
+msgstr "slsgr m/34"
+
+msgid "_105mm_slsgr_m34"
 msgstr "slsgr m/34"
 
 msgid "_105mm_slsgr_m_61A"

@@ -97,10 +97,6 @@
 						excludeMaskAndAOMap
 						<Texture>vehicles/russian/R196_Object_452K/Object_452K_proxy_AO.dds</Texture>
 					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
 				</material>
 				<groupOrigin>-1.364223 0.599679 -0.084695</groupOrigin>
 			</primitiveGroup>
@@ -139,10 +135,6 @@
 					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/russian/R196_Object_452K/Object_452K_proxy_AO.dds</Texture>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
 					</property>
 				</material>
 				<groupOrigin>1.387206 0.566540 -0.088214</groupOrigin>

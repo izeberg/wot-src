@@ -2781,18 +2781,36 @@ _(#messenger:serviceChannelMessages/piggyBank/continueAfterSmashed)</message>
 			<icon>WarningIcon</icon>
 			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/wotPlus/goldReserve/isFull/title)&lt;/font&gt;&lt;br/&gt;</message>
 		</GoldReserveFullMessage>
-		<BonusExcludedMapAvailable>
+		<BonusExcludedMapPremiumAvailable>
 			<priority>medium</priority>
 			<type>grey</type>
 			<icon>InformationIcon</icon>
 			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/excludedMap/available/title)&lt;/font&gt;</message>
+		</BonusExcludedMapPremiumAvailable>
+		<BonusExcludedMapAvailable>
+			<priority>medium</priority>
+			<type>grey</type>
+			<icon>InformationIcon</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/excludedMap/subscription/header)&lt;/font&gt;&lt;br/&gt;&lt;font size=&quot;14&quot; color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/excludedMap/subscription/enabled)&lt;/font&gt;</message>
 		</BonusExcludedMapAvailable>
 		<BonusExcludedMapUnavailable>
 			<priority>medium</priority>
 			<type>grey</type>
-			<icon>WarningIcon</icon>
-			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/excludedMap/unavailable/title)&lt;/font&gt;</message>
+			<icon>ErrorIcon</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/excludedMap/subscription/header)&lt;/font&gt;&lt;br/&gt;&lt;font size=&quot;14&quot; color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/excludedMap/subscription/disabled)&lt;/font&gt;</message>
 		</BonusExcludedMapUnavailable>
+		<RewardsExcludedMapSlotEnabledMessage>
+			<priority>medium</priority>
+			<type>grey</type>
+			<icon>InformationIcon</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/excludedMap/event/header)&lt;/font&gt;&lt;br/&gt;&lt;font size=&quot;14&quot; color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/excludedMap/event/enabled)&lt;/font&gt;</message>
+		</RewardsExcludedMapSlotEnabledMessage>
+		<RewardsExcludedMapSlotDisabledMessage>
+			<priority>medium</priority>
+			<type>grey</type>
+			<icon>ErrorIcon</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/excludedMap/event/header)&lt;/font&gt;&lt;br/&gt;&lt;font size=&quot;14&quot; color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/excludedMap/event/disabled)&lt;/font&gt;</message>
+		</RewardsExcludedMapSlotDisabledMessage>
 		<PassiveXPNoTankMessage>
 			<priority>medium</priority>
 			<type>grey</type>
@@ -3781,70 +3799,6 @@ _(#lootboxes:notification/lootBoxesAutoOpen/boxes)&lt;br/&gt;%(rewards)s</messag
 &lt;font color=&apos;#8C8C7E&apos;&gt;%(rewards)s&lt;/font&gt;&lt;br/&gt;
 </message>
 		</DailyQuestsEpicCompensation>
-		<PlayStreakRewards>
-			<priority>medium</priority>
-			<gfViewName>PlayStreakRewards</gfViewName>
-			<gfViewPopUpHeight>392</gfViewPopUpHeight>
-			<gfViewPopUpWidth>290</gfViewPopUpWidth>
-			<gfViewHeight>240</gfViewHeight>
-			<gfViewWidth>282</gfViewWidth>
-			<linkage>GamefaceNotification</linkage>
-		</PlayStreakRewards>
-		<PlayStreakCongratsWithRewards>
-			<priority>medium</priority>
-			<type>grey</type>
-			<icon>BattleResultIcon</icon>
-			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/playStreakCongrats/header)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;%(text)s</message>
-		</PlayStreakCongratsWithRewards>
-		<PlayStreakCongratsWithoutRewards>
-			<priority>medium</priority>
-			<type>grey</type>
-			<icon>BattleResultIcon</icon>
-			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/playStreakCongrats/header)&lt;/font&gt;&lt;br/&gt;
-&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/playStreakCongratsWithoutRewards/body)&lt;/font&gt;</message>
-		</PlayStreakCongratsWithoutRewards>
-		<PlayStreakPauseUsed>
-			<priority>medium</priority>
-			<type>grey</type>
-			<icon>InformationIcon</icon>
-			<message>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/playStreakPauseUsed/body)&lt;/font&gt;</message>
-		</PlayStreakPauseUsed>
-		<PlayStreakDropProgress>
-			<priority>medium</priority>
-			<type>grey</type>
-			<icon>WarningIcon</icon>
-			<message>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/playStreakDropProgress/body)&lt;/font&gt;</message>
-		</PlayStreakDropProgress>
-		<PlayStreakUnavailable>
-			<priority>medium</priority>
-			<type>grey</type>
-			<icon>ErrorIcon</icon>
-			<message>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/playStreakUnavailable/body)&lt;/font&gt;</message>
-		</PlayStreakUnavailable>
-		<PlayStreakAvailable>
-			<priority>medium</priority>
-			<type>grey</type>
-			<icon>WarningIcon</icon>
-			<message>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/playStreakAvailable/body)&lt;/font&gt;</message>
-		</PlayStreakAvailable>
-		<PlayStreakFreezes>
-			<priority>medium</priority>
-			<type>grey</type>
-			<icon>WarningIcon</icon>
-			<message>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/playStreakFreezes/body)&lt;/font&gt;</message>
-		</PlayStreakFreezes>
-		<PlayStreakFreezesInProgress>
-			<priority>medium</priority>
-			<type>grey</type>
-			<icon>BattleResultIcon</icon>
-			<message>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/playStreakFreezesInProgress/body)&lt;/font&gt;</message>
-		</PlayStreakFreezesInProgress>
-		<PlayStreakFreezesEnd>
-			<priority>medium</priority>
-			<type>grey</type>
-			<icon>InformationIcon</icon>
-			<message>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/playStreakFreezesEnd/body)&lt;/font&gt;</message>
-		</PlayStreakFreezesEnd>
 		<ClanSeasonProgressReward>
 			<priority>low</priority>
 			<type>grey</type>

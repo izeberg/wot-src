@@ -2,6 +2,7 @@ package net.wg.gui.lobby.battleResults.components
 {
    import flash.display.InteractiveObject;
    import flash.display.MovieClip;
+   import flash.events.Event;
    import flash.events.MouseEvent;
    import flash.text.TextField;
    import net.wg.data.constants.UserTags;
@@ -55,8 +56,6 @@ package net.wg.gui.lobby.battleResults.components
       
       public var separator:MovieClip = null;
       
-      public var myArea:MovieClip = null;
-      
       public var deadBg:MovieClip = null;
       
       public var medalBg:MovieClip = null;
@@ -82,9 +81,10 @@ package net.wg.gui.lobby.battleResults.components
       public function TeamMemberStatsView()
       {
          var _loc1_:Number = NaN;
+         var _loc2_:Number = NaN;
          super();
          _loc1_ = scaleX;
-         var _loc2_:Number = scaleY;
+         _loc2_ = scaleY;
          scaleX = 1;
          scaleY = 1;
          this.initTargetScale(_loc1_,_loc2_);
@@ -117,6 +117,7 @@ package net.wg.gui.lobby.battleResults.components
       {
          super.configUI();
          this._vehicleStats = VehicleDetails(this.statsScrollPane.target);
+         this._vehicleStats.addEventListener(Event.RESIZE,this.onVehicleStatsResizeHandler,false,0,true);
          this.statsScrollPane.width = STATS_SCROLL_PANE_WIDTH;
          this.selectVehicleTitle.text = BATTLE_RESULTS.SELECTVEHICLE;
          this._initialStatsY = this.statsScrollPane.y;
@@ -127,6 +128,8 @@ package net.wg.gui.lobby.battleResults.components
       
       override protected function onDispose() : void
       {
+         this._vehicleStats.removeEventListener(Event.RESIZE,this.onVehicleStatsResizeHandler);
+         this._vehicleStats = null;
          this.closeBtn.removeEventListener(ButtonEvent.CLICK,this.onCloseButtonClickHandler);
          this.closeBtn.dispose();
          this.closeBtn = null;
@@ -145,10 +148,8 @@ package net.wg.gui.lobby.battleResults.components
          this.playerNameLbl.dispose();
          this.playerNameLbl = null;
          this.vehicleName = null;
-         this._vehicleStats = null;
          this.statsScrollPane.dispose();
          this.statsScrollPane = null;
-         this.myArea = null;
          this.deadBg = null;
          this.medalBg = null;
          this.achievements.dispose();
@@ -291,6 +292,11 @@ package net.wg.gui.lobby.battleResults.components
          }
          this._isCloseBtnVisible = param1;
          invalidate(INVALIDATE_CLOSE_BTN);
+      }
+      
+      private function onVehicleStatsResizeHandler(param1:Event) : void
+      {
+         this.separator.visible = this._vehicleStats.height > this.statsScrollPane.height;
       }
       
       private function onVehicleLabelRollOverHandler(param1:MouseEvent) : void

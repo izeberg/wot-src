@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<xmlns:ussr>ussr</xmlns:ussr>
+	<xmlns:germany>germany</xmlns:germany>
+	<xmlns:usa>usa</xmlns:usa>
+	<xmlns:china>china</xmlns:china>
+	<xmlns:france>france</xmlns:france>
+	<xmlns:uk>uk</xmlns:uk>
+	<xmlns:japan>japan</xmlns:japan>
+	<xmlns:czech>czech</xmlns:czech>
+	<xmlns:sweden>sweden</xmlns:sweden>
+	<xmlns:poland>poland</xmlns:poland>
+	<xmlns:italy>italy</xmlns:italy>
+	<xmlns:intunion>intunion</xmlns:intunion>
+	<itemGroup>
+		<season>ALL</season>
+		<historical>1</historical>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+		<camouflage>
+			<id>31035</id>
+			<texture>vehicles/russian/Camouflage/compendium_3_2023_MT.dds</texture>
+			<description>#vehicle_customization:camouflage/compendium_3_2023_MT/description</description>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<userString>#vehicle_customization:camouflage/compendium_3_2023_MT</userString>
+			<invisibilityFactor>1</invisibilityFactor>
+			<tags>hiddenInUI fullRGB</tags>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<rotation>
+				<HULL>-0.436332</HULL>
+				<TURRET>-0.436332</TURRET>
+				<GUN>-0.436332</GUN>
+			</rotation>
+			<tilingSettings>
+				<type>relative</type>
+				<factor>
+					3.1 3.1
+					<!--BW_String-->
+				</factor>
+				<offset>
+					-1.31 -2.57
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+			<tiling>
+				<sweden:S11_Strv_103B>
+					2 2 -0.07 -0.32
+					<!--BW_String-->
+				</sweden:S11_Strv_103B>
+				<sweden:S10_Strv_103_0_Series_FL>1 1 0 0</sweden:S10_Strv_103_0_Series_FL>
+				<uk:GB91_Super_Conqueror>
+					2.1 2.1 0.58 0.05
+					<!--BW_String-->
+				</uk:GB91_Super_Conqueror>
+				<usa:A67_T57_58>
+					3.6 3.6 -0.26 -0.16
+					<!--BW_String-->
+				</usa:A67_T57_58>
+				<france:F10_AMX_50B>
+					2 2 -0.33 0.07
+					<!--BW_String-->
+				</france:F10_AMX_50B>
+				<france:F10_AMX_50B_bob>
+					2 2 -0.33 0.07
+					<!--BW_String-->
+				</france:F10_AMX_50B_bob>
+				<france:F18_Bat_Chatillon25t>
+					2.3 2.3 0.36 1.54
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_7x7>
+					2.3 2.3 0.36 1.54
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_7x7>
+				<italy:It20_Carro_Combattimento_45t>
+					2.6 2.6 0.11 -0.09
+					<!--BW_String-->
+				</italy:It20_Carro_Combattimento_45t>
+				<germany:G56_E-100>
+					3.2 3.2 -1.32 0.55
+					<!--BW_String-->
+				</germany:G56_E-100>
+				<germany:G189_E100_02>
+					3.2 3.2 -1.32 0.55
+					<!--BW_String-->
+				</germany:G189_E100_02>
+				<germany:G73_E50_Ausf_M>
+					2.4 2.4 -0.29 1.08
+					<!--BW_String-->
+				</germany:G73_E50_Ausf_M>
+				<uk:GB83_FV4005>
+					3.4 3.4 -0.37 -0.3
+					<!--BW_String-->
+				</uk:GB83_FV4005>
+				<germany:G99_RhB_Waffentrager>
+					4.5 4.5 0.22 0.62
+					<!--BW_String-->
+				</germany:G99_RhB_Waffentrager>
+				<italy:It08_Progetto_M40_mod_65>
+					1.5 1.5 1 1.65
+					<!--BW_String-->
+				</italy:It08_Progetto_M40_mod_65>
+				<italy:It08_Progetto_M40_mod_65_bob>
+					1.5 1.5 1 1.65
+					<!--BW_String-->
+				</italy:It08_Progetto_M40_mod_65_bob>
+				<japan:J28_O_I_100>
+					1.4 1.4 0.64 -0.34
+					<!--BW_String-->
+				</japan:J28_O_I_100>
+				<ussr:R149_Object_268_4>
+					3.2 3.2 0 0
+					<!--BW_String-->
+				</ussr:R149_Object_268_4>
+				<ussr:R149_Object_268_4_bob>
+					3.2 3.2 0 0
+					<!--BW_String-->
+				</ussr:R149_Object_268_4_bob>
+				<ussr:R155_Object_277>
+					3.6 3.6 1.46 0.2
+					<!--BW_String-->
+				</ussr:R155_Object_277>
+				<uk:GB100_Manticore>
+					3.4 3.4 0.36 -0.6
+					<!--BW_String-->
+				</uk:GB100_Manticore>
+			</tiling>
+		</camouflage>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R47_ISU-152_Zveroboj ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+	</itemGroup>
+</root>

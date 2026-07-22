@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB138_FV246_Colossus/normal/lod0/Hatch_left_anim_01</nodefullVisual>
+	<visibilityBox>
+		<min>-1.303202 0.590107 0.892128</min>
+		<max>-1.173880 0.780846 1.149735</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/british/GB138_FV246_Colossus/normal/lod1/Hatch_left_anim_01</parent>
+	<extent>32.000000</extent>
+</root>

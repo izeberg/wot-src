@@ -19,8 +19,8 @@ msgstr "Остальные награды"
 
 msgid "categories/accountCustomizations/subtitle"
 msgstr ""
-"Может содержать нашивки, жетоны и их составляющие, медали и другие элементы "
-"украшения профиля игрока."
+"Может содержать дополнительный слот для исключения карты, нашивки, жетоны, "
+"медали и другие элементы профиля игрока."
 
 msgid "categories/accountCustomizations/title"
 msgstr "Профиль"
@@ -293,9 +293,9 @@ msgstr "Механика гарантированной награды"
 
 msgid "guaranteedRewardTooltip/block1/vehicle/text"
 msgstr ""
-"Гарантированный танк — техника %(level)s уровня из списка возможных наград "
-"в контейнерах. Вы гарантированно получите танк, которого ещё нет на вашем "
-"аккаунте, из %(bonus)s. Если танк выпадет ранее, отсчёт начнётся заново."
+"Гарантированный танк — машина %(level)s уровня из списка возможного "
+"содержимого контейнеров. Танк гарантированно выпадет не позднее %(bonus)s. "
+"Если получите какую-либо машину ранее, отсчёт начнётся заново."
 
 msgid "guaranteedRewardTooltip/block1/vehicle/title"
 msgstr "Механика гарантированного танка"
@@ -326,7 +326,7 @@ msgstr ""
 "соответствующим количеством золота."
 
 msgid "guaranteedRewardTooltip/block4/vehicle/title"
-msgstr "После получения всей техники"
+msgstr "Когда вся техника уже получена"
 
 msgid "keyWelcomeScreen/content/first/description"
 msgstr ""
@@ -522,7 +522,7 @@ msgid "openBoxScreen/backBtn/4"
 msgstr "К РЕФЕРАЛЬНОЙ ПРОГРАММЕ"
 
 msgid "openBoxScreen/backBtn/5"
-msgstr "К ПРАЗДНИЧНОЙ ПОЧТЕ"
+msgstr "К ПРАЗДНИКУ"
 
 msgid "openBoxScreen/backBtnMain"
 msgstr "В Ангар"
@@ -694,6 +694,9 @@ msgid "rewards/gift/header/subTitle/moreSenders"
 msgstr ""
 "Открыты посылки от игрока {cream_Open}%(senderName)s{cream_Close} "
 "%(moreSenders)"
+
+msgid "rewards/gift/header/subTitle/moreSendersTooltip/title"
+msgstr "Остальные игроки, отправившие вам посылки"
 
 msgid "rewards/gift/header/subTitle/single"
 msgstr "Открыта посылка от игрока {cream_Open}%(senderName)s{cream_Close}"
@@ -952,10 +955,10 @@ msgid "videoreward/button/title"
 msgstr "Так точно!"
 
 msgid "videoreward/button/titleGuaranteed"
-msgstr "Это прекрасно!"
+msgstr "Так точно!"
 
 msgid "videoreward/description/commonText"
-msgstr "В Ангаре пополнение!"
+msgstr "Гарантированная награда!"
 
 msgid "videoreward/description/rewardText"
 msgstr "Гарантированная награда!"

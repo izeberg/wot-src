@@ -790,6 +790,16 @@ package
       public static const CUSTOMIZATIONPROGRESS_AWARD_RECEIVED:String = "#battle_results:customizationProgress/award/received";
       
       public static const CUSTOMIZATIONPROGRESS_AWARD_NEWLEVEL:String = "#battle_results:customizationProgress/award/newLevel";
+      
+      public static const GIFTSYSTEM_BANNER_TITLE:String = "#battle_results:giftSystem/banner/title";
+      
+      public static const GIFTSYSTEM_BANNER_TITLE_EMPHASIZED:String = "#battle_results:giftSystem/banner/title/emphasized";
+      
+      public static const GIFTSYSTEM_BANNER_STAMPS_LABEL_AVAILABLE:String = "#battle_results:giftSystem/banner/stamps/label/available";
+      
+      public static const GIFTSYSTEM_BANNER_STAMPS_LABEL_NOTAVAILABLE:String = "#battle_results:giftSystem/banner/stamps/label/notAvailable";
+      
+      public static const GIFTSYSTEM_BANNER_STAMPS_BUTTON_NOTAVAILABLE:String = "#battle_results:giftSystem/banner/stamps/button/notAvailable";
        
       
       public function BATTLE_RESULTS()

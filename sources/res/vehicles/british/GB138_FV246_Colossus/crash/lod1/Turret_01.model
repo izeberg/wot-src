@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/british/GB138_FV246_Colossus/crash/lod2/Turret_01</parent>
+	<tank>true</tank>
+	<extent>
+		64.0
+		<!--BW_String-->
+	</extent>
+	<nodefullVisual>vehicles/british/GB138_FV246_Colossus/crash/lod1/Turret_01</nodefullVisual>
+	<visibilityBox>
+		<min>-1.468437 0.000001 -2.991874</min>
+		<max>1.468437 2.574150 1.696233</max>
+	</visibilityBox>
+</root>

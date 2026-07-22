@@ -92,7 +92,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_10</primaryArmor>
 		<weight>6060</weight>
-		<maxHealth>304</maxHealth>
+		<maxHealth>450</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>110</maxHealth>
 			<maxRegenHealth>75</maxRegenHealth>
@@ -4668,7 +4668,7 @@
 				</customizableVehicleAreas>
 			</customization>
 			<repairTime>
-				5.71428585
+				2.85003138
 				<!--BW_String-->
 			</repairTime>
 		</Chassis_Ch32_SU-76G_FT>
@@ -6505,7 +6505,7 @@
 				</customizableVehicleAreas>
 			</customization>
 			<repairTime>
-				5.71428585
+				2.85003138
 				<!--BW_String-->
 			</repairTime>
 		</Chassis_Ch32_SU-76G_FT_2>
@@ -6524,7 +6524,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_3</primaryArmor>
 			<weight>100</weight>
-			<maxHealth>76</maxHealth>
+			<maxHealth>110</maxHealth>
 			<rotationSpeed>40</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>100</maxHealth>
@@ -6572,11 +6572,11 @@
 						<maxPitch>0 5 1 5</maxPitch>
 					</pitchLimits>
 					<shotDispersionRadius>
-						0.4
+						0.38
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<aimingTime>
-						2.3
+						2.0
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -6590,7 +6590,7 @@
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
-							4.0
+							2.0
 							<!--BW_String-->
 						</afterShot>
 						<whileGunDamaged>
@@ -6760,7 +6760,7 @@
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
-							4.0
+							2.0
 							<!--BW_String-->
 						</afterShot>
 						<whileGunDamaged>
@@ -6846,7 +6846,7 @@
 					<unlocks>
 						<vehicle>
 							Ch33_60G_FT
-							<cost>10300</cost>
+							<cost>17300</cost>
 						</vehicle>
 					</unlocks>
 					<armor>
@@ -6874,7 +6874,7 @@
 						<maxPitch>0 5 1 5</maxPitch>
 					</pitchLimits>
 					<shotDispersionRadius>
-						0.42
+						0.36
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
@@ -6882,7 +6882,7 @@
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
-						2.3
+						2.0
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -6895,7 +6895,7 @@
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
-							4.0
+							1.9
 							<!--BW_String-->
 						</afterShot>
 						<whileGunDamaged>
@@ -7075,15 +7075,6 @@
 		<Medium>shared</Medium>
 	</fuelTanks>
 	<radios>
-		<_9RM_shop>
-			shared
-			<unlocks>
-				<radio>
-					A-220_1
-					<cost>7000</cost>
-				</radio>
-			</unlocks>
-		</_9RM_shop>
 		<A-220_1>shared</A-220_1>
 	</radios>
 	<clientAdjustmentFactors/>

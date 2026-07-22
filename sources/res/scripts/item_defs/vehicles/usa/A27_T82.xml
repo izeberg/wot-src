@@ -61,7 +61,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>10172</weight>
-		<maxHealth>160</maxHealth>
+		<maxHealth>250</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>80</maxHealth>
 			<maxRegenHealth>40</maxRegenHealth>
@@ -5007,7 +5007,10 @@
 					<camouflage/>
 				</customizableVehicleAreas>
 			</customization>
-			<repairTime>9</repairTime>
+			<repairTime>
+				2.85003138
+				<!--BW_String-->
+			</repairTime>
 		</Chassis_A27_T82>
 		<Chassis_A27_T82_2>
 			<userString>#usa_vehicles:Chassis_A27_T82_2</userString>
@@ -7300,7 +7303,7 @@
 				</customizableVehicleAreas>
 			</customization>
 			<repairTime>
-				7.63636351
+				2.85003138
 				<!--BW_String-->
 			</repairTime>
 		</Chassis_A27_T82_2>
@@ -7442,7 +7445,7 @@
 				<armor_8>0</armor_8>
 			</armor>
 			<weight>100</weight>
-			<maxHealth>40</maxHealth>
+			<maxHealth>60</maxHealth>
 			<rotationSpeed>44</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>100</maxHealth>
@@ -7452,7 +7455,7 @@
 					<!--BW_String-->
 				</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>255</circularVisionRadius>
+			<circularVisionRadius>300</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>50</maxHealth>
 				<maxRegenHealth>25</maxRegenHealth>
@@ -7622,7 +7625,7 @@
 				<armor_8>0</armor_8>
 			</armor>
 			<weight>100</weight>
-			<maxHealth>40</maxHealth>
+			<maxHealth>60</maxHealth>
 			<rotationSpeed>44</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>100</maxHealth>
@@ -7632,7 +7635,7 @@
 					<!--BW_String-->
 				</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>255</circularVisionRadius>
+			<circularVisionRadius>300</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>50</maxHealth>
 				<maxRegenHealth>25</maxRegenHealth>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/french/F121_G1L/normal/lod1/Chassis</parent>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.247576 -0.000030 -3.181638</min>
+		<max>1.247576 1.340974 3.282803</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/french/F121_G1L/normal/lod0/Chassis</nodefullVisual>
+</root>

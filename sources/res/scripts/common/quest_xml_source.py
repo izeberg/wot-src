@@ -379,6 +379,7 @@ class Source(object):
            'bonusLimit': self.__readCondition_int, 
            'isTutorialCompleted': self.__readCondition_bool, 
            'isBattleMattersEnabled': self.__readCondition_bool, 
+           'isTankAcademyEnabled': self.__readCondition_bool, 
            'activeProgression': self.__readCondition_string, 
            'isSteamAllowed': self.__readCondition_bool, 
            'totalBattles': self.__readBattleResultsConditionList, 
@@ -439,6 +440,10 @@ class Source(object):
                'allInSpecifiedClasses': self.__readCondition_true, 
                'enemyIsNotSpotted': self.__readCondition_true, 
                'installedModules': self.__readBattleResultsConditionList, 
+               'installedNonDefaultModulesCount': self.__readBattleResultsConditionList, 
+               'allCrewMembersHaveSelectedSkill': self.__readCondition_true, 
+               'postProgressionLevel': self.__readBattleResultsConditionList, 
+               'allAvailableShellTypesLoaded': self.__readCondition_true, 
                'guns': self.__readCondition_installedModules, 
                'engines': self.__readCondition_installedModules, 
                'chassis': self.__readCondition_installedModules, 
@@ -476,6 +481,8 @@ class Source(object):
                'battles': self.__readBattleResultsConditionList, 
                'count': self.__readCondition_int, 
                'upperLimit': self.__readCondition_true, 
+               'unique': self.__readBattleResultsConditionList, 
+               'uniqueBy': self.__readCondition_groupBy, 
                'inrow': self.__readCondition_true, 
                'groupBy': self.__readBattleResultsConditionList, 
                'groupName': self.__readCondition_groupBy, 
@@ -491,12 +498,14 @@ class Source(object):
                'unregularAmmo': self.__readCondition_true, 
                'isNotLeaver': self.__readCondition_true, 
                'isFirstBlood': self.__readConditionComplex_true, 
-               'winAloneAgainstVehicleCount': self.__readCondition_int})
+               'winAloneAgainstVehicleCount': self.__readCondition_int, 
+               'enemyClans': self.__readBattleResultsConditionList})
         if eventType in (EVENT_TYPE.BATTLE_QUEST, EVENT_TYPE.PERSONAL_QUEST):
             condition_readers.update({'red': self.__readListOfInts, 
                'silver': self.__readListOfInts, 
                'gold': self.__readListOfInts, 
-               'black': self.__readListOfInts})
+               'black': self.__readListOfInts, 
+               'clanDBIDs': self.__readListOfInts})
         if eventType in (EVENT_TYPE.RANKED_QUEST,):
             condition_readers.update({'season': self.__readCondition_int, 
                'cycle': self.__readCondition_int, 
@@ -515,7 +524,7 @@ class Source(object):
          'customizations', 'vehicleChoice', 'crewSkin', 'blueprint', 'blueprintAny', 'enhancement',
          'eventCoin', 'bpcoin', 'entitlement', 'rankedDailyBattles', 'rankedBonusBattles', 'equipCoin',
          'dogTagComponent', 'battlePassPoints', 'currency', 'freePremiumCrew', 'entitlementList',
-         'dailyQuestReroll', 'noviceReset'} | EXTENSIONS_BONUSES.get(ALL_EVENT_TYPES_FOR_BONUSES, set())
+         'dailyQuestReroll', 'noviceReset', 'preferredMapSlots'} | EXTENSIONS_BONUSES.get(ALL_EVENT_TYPES_FOR_BONUSES, set())
         if eventType in (EVENT_TYPE.BATTLE_QUEST, EVENT_TYPE.PERSONAL_QUEST, EVENT_TYPE.NT_QUEST):
             bonusTypes.update(('xp', 'tankmenXP', 'xpFactor', 'creditsFactor', 'freeXPFactor',
                                'tankmenXPFactor'))

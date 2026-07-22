@@ -1,6 +1,7 @@
 package net.wg.gui.lobby.battleResults
 {
    import flash.display.Sprite;
+   import flash.events.Event;
    import flash.events.FocusEvent;
    import flash.text.TextField;
    import flash.utils.Dictionary;
@@ -11,9 +12,11 @@ package net.wg.gui.lobby.battleResults
    import net.wg.gui.events.QuestEvent;
    import net.wg.gui.events.ViewStackEvent;
    import net.wg.gui.lobby.battleResults.data.BattleResultsVO;
+   import net.wg.gui.lobby.battleResults.data.GiftSystemVO;
    import net.wg.gui.lobby.battleResults.data.TabInfoVO;
    import net.wg.gui.lobby.battleResults.event.BattleResultsViewEvent;
    import net.wg.gui.lobby.battleResults.event.ClanEmblemRequestEvent;
+   import net.wg.gui.lobby.battleResults.event.GiftSystemSendEvent;
    import net.wg.gui.lobby.battleResults.event.TeamTableSortEvent;
    import net.wg.gui.lobby.battleResults.progressReport.DogTagLinkEvent;
    import net.wg.gui.lobby.battleResults.progressReport.UnlockLinkEvent;
@@ -45,6 +48,8 @@ package net.wg.gui.lobby.battleResults
       
       private var _data:BattleResultsVO = null;
       
+      private var _giftSystemData:GiftSystemVO = null;
+      
       public function BattleResults()
       {
          this._emblemLoadingDelegates = new Dictionary();
@@ -63,6 +68,7 @@ package net.wg.gui.lobby.battleResults
          this.noResult.text = BATTLE_RESULTS.NODATA;
          this.tabs_mc.addEventListener(FocusEvent.FOCUS_IN,this.onTabFocusInHandler);
          this.view_mc.addEventListener(ViewStackEvent.VIEW_CHANGED,this.onViewChangedHandler);
+         this.view_mc.addEventListener(GiftSystemSendEvent.SEND_GIFT_REQUEST,this.onSendGiftRequestHandler);
          addEventListener(UnlockLinkEvent.TYPE,this.onUnlockLinkBtnHandler);
          addEventListener(DogTagLinkEvent.BATTLE_RESULTS_DOG_TAG_LINK_BTN_EVENT,this.onDogTagLinkBtnHandler);
          addEventListener(TeamTableSortEvent.TYPE,this.onTeamTableSortEventHandler);
@@ -70,8 +76,14 @@ package net.wg.gui.lobby.battleResults
          addEventListener(QuestEvent.SELECT_QUEST,this.onShowEventsWindowHandler,false,0,true);
          addEventListener(BattleResultsViewEvent.APPLIED_PREMIUM_BONUS,this.onAppliedPremiumBonusHandler,false,0,true);
          addEventListener(BattleResultsViewEvent.SHOW_DETAILS_PREMIUM,this.onShowDetailsPremiumHandler,false,0,true);
+         addEventListener(BattleResultsViewEvent.GOTO_GIFT_STAMPS,this.onGotoGiftStampsHandler,false,0,true);
          this.tabs_mc.visible = false;
          this.line.visible = false;
+      }
+      
+      private function onSendGiftRequestHandler(param1:GiftSystemSendEvent) : void
+      {
+         sendGiftS(param1.playerId,param1.stampName);
       }
       
       override protected function onPopulate() : void
@@ -100,17 +112,20 @@ package net.wg.gui.lobby.battleResults
          removeEventListener(BattleResultsViewEvent.APPLIED_PREMIUM_BONUS,this.onAppliedPremiumBonusHandler);
          removeEventListener(BattleResultsViewEvent.SHOW_DETAILS_PREMIUM,this.onShowDetailsPremiumHandler);
          removeEventListener(DogTagLinkEvent.BATTLE_RESULTS_DOG_TAG_LINK_BTN_EVENT,this.onDogTagLinkBtnHandler);
+         removeEventListener(BattleResultsViewEvent.GOTO_GIFT_STAMPS,this.onGotoGiftStampsHandler);
          App.utils.data.cleanupDynamicObject(this._emblemLoadingDelegates);
          this._emblemLoadingDelegates = null;
          this.tabs_mc.removeEventListener(FocusEvent.FOCUS_IN,this.onTabFocusInHandler);
          this.tabs_mc.removeEventListener(IndexEvent.INDEX_CHANGE,this.onTabIndexChangeHandler);
          this.view_mc.removeEventListener(ViewStackEvent.VIEW_CHANGED,this.onViewChangedHandler);
+         this.view_mc.removeEventListener(GiftSystemSendEvent.SEND_GIFT_REQUEST,this.onSendGiftRequestHandler);
          this.tabs_mc.dispose();
          this.tabs_mc = null;
          this.view_mc.dispose();
          this.view_mc = null;
          this.noResult = null;
          this._data = null;
+         this._giftSystemData = null;
          this.line = null;
          super.onDispose();
       }
@@ -155,6 +170,15 @@ package net.wg.gui.lobby.battleResults
          showWaiting = false;
          this.registerComponent(this.view_mc.currentView as IRegisteredComponent);
          this.view_mc.currentView.update(param1);
+      }
+      
+      override protected function setGiftSystemData(param1:GiftSystemVO) : void
+      {
+         this._giftSystemData = param1;
+         if(this.view_mc.currentView is GiftSystemTeamStats)
+         {
+            GiftSystemTeamStats(this.view_mc.currentView).updateGiftSystemData(this._giftSystemData);
+         }
       }
       
       public function as_setClanEmblem(param1:String, param2:String) : void
@@ -226,6 +250,11 @@ package net.wg.gui.lobby.battleResults
          getClanEmblemS(param1.uid,param1.clanId);
       }
       
+      private function onGotoGiftStampsHandler(param1:Event) : void
+      {
+         gotoGiftStampsS();
+      }
+      
       private function onFocusRequestHandler(param1:FocusRequestEvent) : void
       {
          setFocus(param1.focusContainer.getComponentForFocus());
@@ -246,6 +275,10 @@ package net.wg.gui.lobby.battleResults
       {
          this.registerComponent(param1.view as IRegisteredComponent);
          param1.view.update(this._data);
+         if(param1.view is GiftSystemTeamStats)
+         {
+            GiftSystemTeamStats(param1.view).updateGiftSystemData(this._giftSystemData);
+         }
       }
       
       private function onShowEventsWindowHandler(param1:QuestEvent) : void

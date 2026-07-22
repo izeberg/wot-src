@@ -24,6 +24,10 @@ package net.wg.infrastructure.base.meta
       
       function showDogTagWindowS(param1:int) : void;
       
+      function sendGiftS(param1:int, param2:String) : void;
+      
+      function gotoGiftStampsS() : void;
+      
       function as_setData(param1:Object) : void;
       
       function as_setClanEmblem(param1:String, param2:String) : void;
@@ -31,5 +35,7 @@ package net.wg.infrastructure.base.meta
       function as_setTeamInfo(param1:String, param2:String, param3:String) : void;
       
       function as_setIsInBattleQueue(param1:Boolean) : void;
+      
+      function as_setGiftSystemData(param1:Object) : void;
    }
 }

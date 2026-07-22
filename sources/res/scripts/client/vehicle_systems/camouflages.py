@@ -37,10 +37,10 @@ RepaintParams = namedtuple('PaintParams', ('enabled', 'baseColor', 'color', 'met
                                            'gloss', 'fading', 'strength'))
 RepaintParams.__new__.__defaults__ = (
  False, 0, (0, 0, 0), Math.Vector4(0.0), Math.Vector4(0.0), 0.0, 0.0)
-CamoParams = namedtuple('CamoParams', ('mask', 'excludeMap', 'exclusionImpact', 'tiling',
-                                       'rotation', 'weights', 'c0', 'c1', 'c2', 'c3',
-                                       'gloss', 'metallic', 'useGMTexture', 'glossMetallicMap',
-                                       'useEmission', 'forwardEmissionBrightness',
+CamoParams = namedtuple('CamoParams', ('mask', 'excludeMap', 'exclusionImpact', 'forceUv0',
+                                       'tiling', 'rotation', 'weights', 'c0', 'c1',
+                                       'c2', 'c3', 'gloss', 'metallic', 'useGMTexture',
+                                       'glossMetallicMap', 'useEmission', 'forwardEmissionBrightness',
                                        'deferredEmissionBrightness', 'emissionMap',
                                        'emissionAnimationSpeed', 'emissionPatternMap',
                                        'useNormalMap', 'normalMap', 'normalMapFactor',
@@ -363,6 +363,7 @@ def getCamo(appearance, outfit, containerId, vDesc, descId, isDamaged, default=N
                 return result
             tiling, exclusionMap = processTiling(appearance, vDesc, descId, camouflage, component)
             exclusionImpact = camouflage.exclusionImpact
+            forceUv0 = camouflage.forceUv0
             glossMetallicMap = camouflage.glossMetallicSettings['glossMetallicMap']
             useGMTexture = bool(glossMetallicMap)
             gloss = camouflage.glossMetallicSettings['gloss']
@@ -378,7 +379,7 @@ def getCamo(appearance, outfit, containerId, vDesc, descId, isDamaged, default=N
             normalMapFactor = camouflage.normalSettings['normalMapFactor']
             normalMaxLod = camouflage.normalSettings['normalMaxLod']
             camoAngle = camouflage.rotation[descId]
-            result = CamoParams(camouflage.texture, exclusionMap or '', exclusionImpact, tiling, camoAngle, weights, palette[0], palette[1], palette[2], palette[3], gloss, metallic, useGMTexture, glossMetallicMap, useEmission, forwardEmissionBrightness, deferredEmissionBrightness, emissionMap, emissionAnimationSpeed, emissionPatternMap, useNormalMap, normalMap, normalMapFactor, normalMaxLod)
+            result = CamoParams(camouflage.texture, exclusionMap or '', exclusionImpact, forceUv0, tiling, camoAngle, weights, palette[0], palette[1], palette[2], palette[3], gloss, metallic, useGMTexture, glossMetallicMap, useEmission, forwardEmissionBrightness, deferredEmissionBrightness, emissionMap, emissionAnimationSpeed, emissionPatternMap, useNormalMap, normalMap, normalMapFactor, normalMaxLod)
         return result
 
 

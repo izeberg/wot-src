@@ -119,7 +119,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>17521</weight>
-		<maxHealth>456</maxHealth>
+		<maxHealth>500</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>120</maxHealth>
 			<maxRegenHealth>69</maxRegenHealth>
@@ -4261,7 +4261,7 @@
 				</customizableVehicleAreas>
 			</customization>
 			<repairTime>
-				5.71428585
+				2.85003138
 				<!--BW_String-->
 			</repairTime>
 		</Chassis_GB33_Sentinel_AC_I>
@@ -4302,7 +4302,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_1 armor_4</primaryArmor>
 			<weight>4000</weight>
-			<maxHealth>114</maxHealth>
+			<maxHealth>120</maxHealth>
 			<rotationSpeed>44</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>100</maxHealth>
@@ -4371,12 +4371,26 @@
 						0.37
 						<!--BW_String-->
 					</shotDispersionRadius>
+					<shotDispersionFactors>
+						<turretRotation>
+							0.10
+							<!--BW_String-->
+						</turretRotation>
+						<afterShot>
+							2.0
+							<!--BW_String-->
+						</afterShot>
+						<whileGunDamaged>
+							2.0
+							<!--BW_String-->
+						</whileGunDamaged>
+					</shotDispersionFactors>
 					<reloadTime>
-						2.07
+						1.8
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
-						2.7
+						1.7
 						<!--BW_String-->
 					</aimingTime>
 					<models>

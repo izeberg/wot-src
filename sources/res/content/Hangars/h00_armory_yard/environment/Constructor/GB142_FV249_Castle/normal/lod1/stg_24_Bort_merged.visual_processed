@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>stg_24_Bort_mergedShape.vertices</vertices>
+			<primitive>stg_24_Bort_mergedShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>112</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h00_armory_yard/environment/Constructor/GB142_FV249_Castle/FV249_Castle_interior_outside_paint_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h00_armory_yard/environment/Constructor/GB142_FV249_Castle/FV249_Castle_interior_outside_paint_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h00_armory_yard/environment/Constructor/GB142_FV249_Castle/FV249_Castle_interior_outside_paint_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.000054 1.169400 -0.074402</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-1.937438 0.649391 -3.804586</min>
+		<max>1.937329 1.689409 3.655781</max>
+	</boundingBox>
+	<geometrySize>184794</geometrySize>
+	<minUVDensity>0.001287</minUVDensity>
+</root>

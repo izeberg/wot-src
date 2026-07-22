@@ -317,23 +317,6 @@
 		</value>
 	</setting>
 	<setting>
-		<name>infoPagePlayStreak</name>
-		<type>macros</type>
-		<macros>AUTH_REALM</macros>
-		<value>
-			<item>
-				https://webbrg.tanki.su/$LANGUAGE_CODE/promocontent/play_streak/
-				<name>default</name>
-				<type>url</type>
-			</item>
-			<item>
-				https://webbrg-rpt.tanki.su/$LANGUAGE_CODE/promocontent/play_streak/
-				<name>CT</name>
-				<type>url</type>
-			</item>
-		</value>
-	</setting>
-	<setting>
 		<name>nations_order</name>
 		<type>list</type>
 		<value>
@@ -2309,7 +2292,7 @@
 		<macros>AUTH_REALM</macros>
 		<value>
 			<item>
-				https://webbrg.tanki.su/$LANGUAGE_CODE/promocontent/birthday-2025/
+				https://webbrg.tanki.su/$LANGUAGE_CODE/promocontent/mt_birthday/
 				<name>default</name>
 				<type>url</type>
 			</item>
@@ -2322,6 +2305,18 @@
 		<value>
 			<item>
 				https://webbrg.tanki.su/$LANGUAGE_CODE/promocontent/summer_sale/
+				<name>default</name>
+				<type>url</type>
+			</item>
+		</value>
+	</setting>
+	<setting>
+		<name>tankAcademyInfoPageURL</name>
+		<type>macros</type>
+		<macros>AUTH_REALM</macros>
+		<value>
+			<item>
+				https://webbrg.tanki.su/ru/promocontent/tank-academy/
 				<name>default</name>
 				<type>url</type>
 			</item>

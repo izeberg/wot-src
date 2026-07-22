@@ -92,7 +92,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>11600</weight>
-		<maxHealth>332</maxHealth>
+		<maxHealth>450</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>125</maxHealth>
 			<maxRegenHealth>85</maxRegenHealth>
@@ -4348,7 +4348,7 @@
 				</customizableVehicleAreas>
 			</customization>
 			<repairTime>
-				5.71428585
+				2.85003138
 				<!--BW_String-->
 			</repairTime>
 		</Hetzer_Ausf_A>
@@ -5881,7 +5881,7 @@
 				</customizableVehicleAreas>
 			</customization>
 			<repairTime>
-				5.71428585
+				2.85003138
 				<!--BW_String-->
 			</repairTime>
 		</Hetzer_Ausf_B>
@@ -5897,7 +5897,7 @@
 				<armor_1>0</armor_1>
 			</armor>
 			<weight>0</weight>
-			<maxHealth>83</maxHealth>
+			<maxHealth>100</maxHealth>
 			<rotationSpeed>44</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>100</maxHealth>
@@ -5907,7 +5907,7 @@
 					<!--BW_String-->
 				</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>260</circularVisionRadius>
+			<circularVisionRadius>300</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>60</maxHealth>
 				<maxRegenHealth>30</maxRegenHealth>

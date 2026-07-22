@@ -1043,7 +1043,7 @@ msgid "common/premiumContinue"
 msgstr "Прадоўжыць прэміум"
 
 msgid "contextMenu/acceptInvitationToSquad"
-msgstr "Прыняць запрашэнне ў звяз"
+msgstr "Принять приглашение во взвод"
 
 msgid "contextMenu/addToFriends"
 msgstr "Дадаць у спіс сяброў"
@@ -1094,31 +1094,31 @@ msgid "contextMenu/copyToClipBoard"
 msgstr "Скапіраваць імя"
 
 msgid "contextMenu/createBattleRoyaleSquad"
-msgstr "Стварыць звяз паляўнічых"
+msgstr "Создать взвод охотников"
 
 msgid "contextMenu/createComp7Squad"
-msgstr "Стварыць звяз для «Націску»"
+msgstr "Создать взвод для Натиска"
 
 msgid "contextMenu/createContactNote"
 msgstr "Стварыць нататку"
 
 msgid "contextMenu/createEpicSquad"
-msgstr "Стварыць звяз для Лініі фронту"
+msgstr "Создать взвод для Линии фронта"
 
 msgid "contextMenu/createEventSquad"
-msgstr "Стварыць звяз падзеі"
+msgstr "Создать взвод события"
 
 msgid "contextMenu/createMapboxSquad"
-msgstr "Разведка боем: стварыць звяз"
+msgstr "Разведка боем: создать взвод"
 
 msgid "contextMenu/createPrivateChannel"
 msgstr "Адправіць паведамленне"
 
 msgid "contextMenu/createRankedSquad"
-msgstr "Стварыць звяз для Рангавага бою"
+msgstr "Создать взвод для Рангового боя"
 
 msgid "contextMenu/createSquad"
-msgstr "Стварыць звяз"
+msgstr "Создать взвод"
 
 msgid "contextMenu/crewWidgetChangeCrewMember"
 msgstr "Змяніць члена экіпажа"
@@ -1160,7 +1160,7 @@ msgid "contextMenu/exchange"
 msgstr "Абмяняць"
 
 msgid "contextMenu/excludedFromSquad"
-msgstr "Выключыць са звязу"
+msgstr "Исключить из взвода"
 
 msgid "contextMenu/forbiddenNick"
 msgstr "Забароненае імя гульца або назва клана"
@@ -1187,7 +1187,7 @@ msgid "contextMenu/goToNextVehicle"
 msgstr "Даследаваць модулі"
 
 msgid "contextMenu/inSquad"
-msgstr "Гулец у звязе"
+msgstr "Игрок во взводе"
 
 msgid "contextMenu/incorrectBehavior"
 msgstr "Неналежныя паводзіны ў чаце"
@@ -1202,7 +1202,7 @@ msgid "contextMenu/kickPlayerFromUnit"
 msgstr "Выключыць з фарміравання"
 
 msgid "contextMenu/leaveSquad"
-msgstr "Пакінуць звяз"
+msgstr "Покинуть взвод"
 
 msgid "contextMenu/lockSlot"
 msgstr "Заблакаваць слот"
@@ -1248,7 +1248,7 @@ msgid "contextMenu/rejectFriendship"
 msgstr "Адмовіцца дадаць у сябры"
 
 msgid "contextMenu/rejectInvitationToSquad"
-msgstr "Адмовіцца ад запрашэння ў звяз"
+msgstr "Отклонить приглашение во взвод"
 
 msgid "contextMenu/removeContactNote"
 msgstr "Выдаліць нататку"
@@ -1284,7 +1284,7 @@ msgid "contextMenu/sendClanInvite"
 msgstr "Запрасіць у клан"
 
 msgid "contextMenu/sendInvitationToSquad"
-msgstr "Запрасіць у звяз"
+msgstr "Пригласить во взвод"
 
 msgid "contextMenu/setMuted"
 msgstr "Забараніць галасавую сувязь"
@@ -1371,7 +1371,7 @@ msgid "contextMenu/viewClanProfile"
 msgstr "Профіль клана"
 
 msgid "contextMenu/withdrawInvitationToSquad"
-msgstr "Адклікаць запрашэнне ў звяз"
+msgstr "Отозвать приглашение во взвод"
 
 msgid "copy"
 msgstr ""
@@ -1381,6 +1381,9 @@ msgstr ""
 
 msgid "counter/newCounter"
 msgstr "НОВАЕ"
+
+msgid "crystals/info/tab/earn/comp7"
+msgstr "Націск"
 
 msgid "crystals/info/tab/earn/events/description"
 msgstr ""
@@ -1395,6 +1398,11 @@ msgstr ""
 msgid "crystals/info/tab/earn/events/title"
 msgstr "БОНЫ ЗА ПАДЗЕІ"
 
+msgid "crystals/info/tab/earn/general"
+msgstr ""
+"Генеральная\n"
+"бітва"
+
 msgid "crystals/info/tab/earn/level/description"
 msgstr ""
 "Боны здабываюцца на тэхніцы %(level10) і %(level11), а таксама на прэміум тэхніцы %(level9)\n"
@@ -1408,19 +1416,6 @@ msgstr "ХI узроўняў"
 
 msgid "crystals/info/tab/earn/level/descriptionContent/level9"
 msgstr "IX узроўню"
-
-msgid "crystals/info/tab/earn/level/mod/0"
-msgstr ""
-"Выпадковы\n"
-"бой"
-
-msgid "crystals/info/tab/earn/level/mod/1"
-msgstr ""
-"Генеральная\n"
-"бітва"
-
-msgid "crystals/info/tab/earn/level/mod/2"
-msgstr "Націск"
 
 msgid "crystals/info/tab/earn/level/title"
 msgstr "УЗРОВЕНЬ ТЭХНІКІ"
@@ -1441,6 +1436,16 @@ msgstr "бонаў на тыдзень"
 
 msgid "crystals/info/tab/earn/marker/title"
 msgstr "ІНДЫКАТАР ЗАРОБКУ БОНАЎ"
+
+msgid "crystals/info/tab/earn/random"
+msgstr ""
+"Выпадковы\n"
+"бой"
+
+msgid "crystals/info/tab/earn/ranked"
+msgstr ""
+"Ранговый\n"
+"бой"
 
 msgid "crystals/info/tab/earnTab"
 msgstr "Як здабыць"
@@ -1465,10 +1470,8 @@ msgstr "НАЦІСК"
 
 msgid "crystals/info/tab/get/description"
 msgstr ""
-"Гуляйце ў Выпадковых баях і Генеральных бітвах на машынах з актыўным "
-"індыкатарам заробку бонаў. Чым вышэйшая ваша пазіцыя ў паслябаявой "
-"статыстыцы паводле колькасці здабытага «чыстага» досведу, тым больш бонаў вы"
-" атрымаеце за бой."
+"Играйте в Случайных боях, Генеральных сражениях и других указанных ниже режимах\n"
+"на машинах с активным индикатором заработка бон. Чем выше ваша позиция в послебоевой статистике по количеству заработанного «чистого» опыта, тем больше бон вы получите за бой."
 
 msgid "crystals/info/tab/get/general"
 msgstr "ГЕНЕРАЛЬНАЯ БІТВА"
@@ -3030,7 +3033,7 @@ msgid "headerButtons/battle/menu/historical"
 msgstr "Гістарычны бой"
 
 msgid "headerButtons/battle/menu/squad"
-msgstr "Звяз"
+msgstr "Взвод"
 
 msgid "headerButtons/battle/menu/standart"
 msgstr "Выпадковы бой"
@@ -3057,10 +3060,10 @@ msgid "headerButtons/battle/types/battleRoyale/extra/startsAt"
 msgstr "%(time)s"
 
 msgid "headerButtons/battle/types/battleRoyaleSquad"
-msgstr "Звяз паляўнічых"
+msgstr "Взвод охотников"
 
 msgid "headerButtons/battle/types/battleRoyaleSquad/description"
-msgstr "Стварыць звяз з 2 байцоў"
+msgstr "Создать взвод из 2 игроков"
 
 msgid "headerButtons/battle/types/comp7"
 msgstr "Націск"
@@ -3083,7 +3086,7 @@ msgid "headerButtons/battle/types/comp7/extra/startsAt"
 msgstr "З %(time)s"
 
 msgid "headerButtons/battle/types/comp7Squad"
-msgstr "Стварыць звяз «Націск»"
+msgstr "Создать взвод Натиск"
 
 msgid "headerButtons/battle/types/epic"
 msgstr "Лінія фронту"
@@ -3112,7 +3115,7 @@ msgid "headerButtons/battle/types/epicTraining/descr"
 msgstr "Лінія фронту"
 
 msgid "headerButtons/battle/types/eventSquad"
-msgstr "Івэнтавы звяз"
+msgstr "Взвод события"
 
 msgid "headerButtons/battle/types/fallout"
 msgstr "«Бой да апошняга»"
@@ -3172,7 +3175,7 @@ msgid "headerButtons/battle/types/mapbox/extra/startsAt"
 msgstr "З %(time)s"
 
 msgid "headerButtons/battle/types/mapboxSquad"
-msgstr "Стварыць звяз"
+msgstr "Создать взвод"
 
 msgid "headerButtons/battle/types/mapsTraining"
 msgstr "Тапаграфія"
@@ -3223,7 +3226,7 @@ msgid "headerButtons/battle/types/rankedLeave/descr"
 msgstr "Выйсці з бою"
 
 msgid "headerButtons/battle/types/rankedSquad"
-msgstr "Стварыць звяз для Рангавага бою"
+msgstr "Создать взвод для Рангового боя"
 
 msgid "headerButtons/battle/types/rts"
 msgstr "Мастацтва стратэгіі"
@@ -3244,7 +3247,7 @@ msgid "headerButtons/battle/types/rts/availability/frozen"
 msgstr "Рэжым адключаны"
 
 msgid "headerButtons/battle/types/simpleSquad"
-msgstr "Звяз"
+msgstr "Взвод"
 
 msgid "headerButtons/battle/types/spec"
 msgstr "Адмысловы бой"
@@ -3256,10 +3259,10 @@ msgid "headerButtons/battle/types/specLeave"
 msgstr "Адмысловы бой"
 
 msgid "headerButtons/battle/types/squad"
-msgstr "Звяз"
+msgstr "Взвод"
 
 msgid "headerButtons/battle/types/squad/description"
-msgstr "Гульня звязам да 3-х байцоў"
+msgstr "Игра взводом до 3 бойцов"
 
 msgid "headerButtons/battle/types/standart"
 msgstr "Выпадковы бой"
@@ -3274,7 +3277,7 @@ msgid "headerButtons/battle/types/strongholds"
 msgstr "Умацаваны раён: бітвы"
 
 msgid "headerButtons/battle/types/training"
-msgstr "Супольныя вучэнні"
+msgstr "Тренировочный бой"
 
 msgid "headerButtons/battle/types/training/descr"
 msgstr "Вучэбны бой з ручным падборам хаўруснікаў і супраціўнікаў."
@@ -3410,8 +3413,8 @@ msgstr "тэхніцы %(level)s узроўню"
 
 msgid "headerButtons/fightBtn/tooltip/falloutNotEnoughPlayer/body"
 msgstr ""
-"Каб уступіць у бой, гатоўнасць звязу павінны пацвердзіць камандзір звязу і "
-"прынамсі адзін удзельнік звязу."
+"Для выхода в бой подтвердить готовность должны командир взвода и как минимум"
+" один из совзводных."
 
 msgid "headerButtons/fightBtn/tooltip/falloutNotEnoughPlayer/header"
 msgstr "Нельга ўступіць у бой"
@@ -3982,7 +3985,7 @@ msgid "loading/battleTypes/19"
 msgstr "Выпадковы бой"
 
 msgid "loading/battleTypes/2"
-msgstr "Супольныя вучэнні"
+msgstr "Тренировочный бой"
 
 msgid "loading/battleTypes/20"
 msgstr "Супольныя вучэнні"
@@ -7116,18 +7119,18 @@ msgid "training/create/title"
 msgstr "Стварэнне вучэбнага палігона"
 
 msgid "training/createButton"
-msgstr "Стварыць пакой"
+msgstr "Создать комнату"
 
 msgid "training/description"
 msgstr ""
-"Досвед і срэбра ў Супольных вучэннях не налічваюцца, аднак усё абслугоўванне"
-" тэхнікі цалкам бясплатнае."
+"Опыт и серебро в Тренировочных боях не начисляются, однако всё обслуживание "
+"техники полностью бесплатное."
 
 msgid "training/info/deleteButton"
-msgstr "Выдаліць пакой"
+msgstr "Удалить комнату"
 
 msgid "training/info/exitButton"
-msgstr "Выйсці з пакоя"
+msgstr "Выйти из комнаты"
 
 msgid "training/info/inviteButton"
 msgstr "Запрасіць..."
@@ -7157,7 +7160,7 @@ msgid "training/info/settings/title"
 msgstr "Налады вучэбнага палігона"
 
 msgid "training/info/settingsButton"
-msgstr "Налады пакоя"
+msgstr "Настройки комнаты"
 
 msgid "training/info/startButton"
 msgstr "Пачаць бой"
@@ -7199,7 +7202,7 @@ msgid "training/info/timeout/value"
 msgstr "%d хвілін"
 
 msgid "training/info/title"
-msgstr "Вучэбны палігон (%s)"
+msgstr "Тренировочная комната (%s)"
 
 msgid "training/info/useCommonVoiceChat"
 msgstr "агульная"
@@ -7232,10 +7235,10 @@ msgid "training/playersTitle"
 msgstr "Гульцы"
 
 msgid "training/roomsLabel"
-msgstr "Усяго вучэбных палігонаў: %(roomsTotal)s"
+msgstr "Всего тренировочных комнат: %(roomsTotal)s"
 
 msgid "training/title"
-msgstr "Супольныя вучэнні"
+msgstr "Тренировочные бои"
 
 msgid "unlocks/exchangeButton"
 msgstr "Абмяняць"

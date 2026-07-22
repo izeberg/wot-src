@@ -4954,7 +4954,10 @@
 					<camouflage/>
 				</customizableVehicleAreas>
 			</customization>
-			<repairTime>9</repairTime>
+			<repairTime>
+				2.28001642
+				<!--BW_String-->
+			</repairTime>
 		</Chassis_GB27_Sexton>
 		<Chassis_GB27_Sexton_2>
 			<userString>#gb_vehicles:Chassis_GB27_Sexton_2</userString>
@@ -7089,7 +7092,7 @@
 				</customizableVehicleAreas>
 			</customization>
 			<repairTime>
-				7.63636351
+				2.28001642
 				<!--BW_String-->
 			</repairTime>
 		</Chassis_GB27_Sexton_2>
@@ -7123,7 +7126,7 @@
 					<!--BW_String-->
 				</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>260</circularVisionRadius>
+			<circularVisionRadius>300</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>45</maxHealth>
 				<maxRegenHealth>22</maxRegenHealth>
@@ -7336,7 +7339,7 @@
 					<!--BW_String-->
 				</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>260</circularVisionRadius>
+			<circularVisionRadius>300</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>45</maxHealth>
 				<maxRegenHealth>22</maxRegenHealth>

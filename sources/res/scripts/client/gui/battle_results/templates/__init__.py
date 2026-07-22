@@ -3,6 +3,7 @@ from gui.battle_results.templates.cybersport import CYBER_SPORT_BLOCK
 from gui.battle_results.templates.fortification import STRONGHOLD_BATTLE_COMMON_STATS_BLOCK
 from gui.battle_results.templates.fortification import STRONGHOLD_PERSONAL_STATS_BLOCK
 from gui.battle_results.templates.fortification import STRONGHOLD_TEAMS_STATS_BLOCK
+from gui.battle_results.templates.fortification import STRONGHOLD_TABS_BLOCK
 from gui.battle_results.templates.regular import MULTI_TEAM_TABS_BLOCK
 from gui.battle_results.templates.regular import PROGRESSIVE_REWARD_VO
 from gui.battle_results.templates.regular import REGULAR_TABS_BLOCK
@@ -59,7 +60,7 @@ __all__ = ('TOTAL_VO_META', 'MULTI_TEAM_TABS_BLOCK', 'REGULAR_TABS_BLOCK', 'RAND
            'BR_COMMON_STATS_BLOCK', 'MAPS_TRAINING_RESULTS_BLOCK', 'COMP7_PERSONAL_STATS_BLOCK',
            'TOURNAMENT_COMP7_PERSONAL_STATS_BLOCK', 'COMP7_COMMON_STATS_BLOCK', 'TOURNAMENT_COMP7_COMMON_STATS_BLOCK',
            'COMP7_TEAMS_STATS_BLOCK', 'COMP7_BATTLE_PASS_PROGRESS_STATS_BLOCK', 'EFFICIENCY_TITLE_WITH_SKILLS_VO',
-           'PARAGONS_PROGRESS_STATS_BLOCK')
+           'PARAGONS_PROGRESS_STATS_BLOCK', 'STRONGHOLD_TABS_BLOCK')
 TOTAL_VO_META = base.DictMeta({'personal': {}, 'common': {}, 'team1': [], 'team2': [], 'textData': {}, 'battlePass': None, 
    'quests': None, 
    'unlocks': [], 'tabInfo': [], 'cyberSport': None, 

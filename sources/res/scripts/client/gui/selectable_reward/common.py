@@ -1,7 +1,7 @@
 import logging, typing
 from adisp import adisp_process
 from gui.Scaleform.genConsts.TOOLTIPS_CONSTANTS import TOOLTIPS_CONSTANTS
-from gui.impl.backport import TooltipData
+from gui.impl.backport import createTooltipData
 from gui.selectable_reward.constants import FEATURE_TO_PREFIX, Features
 from gui.server_events.bonuses import SelectableBonus
 from gui.shared.gui_items.processors import makeError
@@ -181,7 +181,7 @@ class BattlePassSelectableRewardManager(SelectableRewardManager):
     def getTabTooltipData(cls, selectableBonus):
         tokenID = selectableBonus.getValue().keys()[0]
         if cls.isFeatureReward(tokenID):
-            return TooltipData(tooltip=None, isSpecial=True, specialAlias=TOOLTIPS_CONSTANTS.BATTLE_PASS_GIFT_TOKEN, specialArgs=[
+            return createTooltipData(tooltip=None, isSpecial=True, specialAlias=TOOLTIPS_CONSTANTS.BATTLE_PASS_GIFT_TOKEN, specialArgs=[
              _getGiftTokenFromOffer(tokenID), True])
         else:
             return
@@ -197,7 +197,7 @@ class PersonalMissionsSelectableRewardManager(SelectableRewardManager):
         if cls.__REWARD_EXTRA_ENDING in tokenID:
             tokenID = tokenID.replace(cls.__REWARD_EXTRA_ENDING, '')
         if cls.isFeatureReward(tokenID):
-            return TooltipData(tooltip=None, isSpecial=True, specialAlias=TOOLTIPS_CONSTANTS.BATTLE_PASS_GIFT_TOKEN, specialArgs=[
+            return createTooltipData(tooltip=None, isSpecial=True, specialAlias=TOOLTIPS_CONSTANTS.BATTLE_PASS_GIFT_TOKEN, specialArgs=[
              _getGiftTokenFromOffer(tokenID), True])
         else:
             return
@@ -217,7 +217,7 @@ class RankedSelectableRewardManager(SelectableRewardManager):
     def getTabTooltipData(cls, selectableBonus):
         tokenID = selectableBonus.getValue().keys()[0]
         if cls.isFeatureReward(tokenID):
-            return TooltipData(tooltip=None, isSpecial=True, specialAlias=TOOLTIPS_CONSTANTS.BATTLE_PASS_GIFT_TOKEN, specialArgs=[
+            return createTooltipData(tooltip=None, isSpecial=True, specialAlias=TOOLTIPS_CONSTANTS.BATTLE_PASS_GIFT_TOKEN, specialArgs=[
              _getGiftTokenFromOffer(tokenID), True])
         else:
             return
@@ -230,7 +230,7 @@ class EpicSelectableRewardManager(SelectableRewardManager):
     def getTabTooltipData(cls, selectableBonus):
         tokenID = selectableBonus.getValue().keys()[0]
         if cls.isFeatureReward(tokenID):
-            return TooltipData(tooltip=None, isSpecial=True, specialAlias=TOOLTIPS_CONSTANTS.EPIC_BATTLE_INSTRUCTION_TOOLTIP, specialArgs=[
+            return createTooltipData(tooltip=None, isSpecial=True, specialAlias=TOOLTIPS_CONSTANTS.EPIC_BATTLE_INSTRUCTION_TOOLTIP, specialArgs=[
              _getGiftTokenFromOffer(tokenID)])
         else:
             return

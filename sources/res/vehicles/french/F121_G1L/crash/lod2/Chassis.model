@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/french/F121_G1L/crash/lod3/Chassis</parent>
+	<tank>true</tank>
+	<extent>
+		96.0
+		<!--BW_String-->
+	</extent>
+	<nodefullVisual>vehicles/french/F121_G1L/crash/lod2/Chassis</nodefullVisual>
+	<visibilityBox>
+		<min>-1.180119 -0.000030 -3.190820</min>
+		<max>1.180119 1.339561 3.285628</max>
+	</visibilityBox>
+</root>

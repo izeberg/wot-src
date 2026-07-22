@@ -11,6 +11,31 @@ msgstr ""
 msgid "systemError/closeBtn"
 msgstr "Закрыць"
 
+msgid "systemError/failLoadingRecources"
+msgstr ""
+"Произошла ошибка при загрузке ресурсов. Проверка целостности данных запустится автоматически после закрытия этого окна.\n"
+"Подробнее: https://lesta.ru/support/ru/products/mt/article/15285/"
+
+msgid "systemError/failLoadingResourceWithMods"
+msgstr ""
+"Произошла ошибка при загрузке ресурсов. Возможна несовместимость с одним из установленных модов. Работа клиента будет завершена.\n"
+"Решение: запустите игру в безопасном режиме без модификаций или очистите папку с модами."
+
+msgid "systemError/gameTitle"
+msgstr "Мир танков"
+
+msgid "systemError/outOfMemory"
+msgstr ""
+"Произошла ошибка при выделении виртуальной памяти для процесса.\n"
+"Решение: необходимо использовать 64-битную версию Windows.\n"
+"Подробнее: https://lesta.ru/support/ru/products/mt/article/15260/"
+
+msgid "systemError/outOfMemoryWin64"
+msgstr ""
+"Произошла ошибка при выделении памяти для процесса.\n"
+"Решение: необходимо включить файл подкачки или увеличить его размер.\n"
+"Подробнее: https://lesta.ru/support/ru/products/mt/article/15190/"
+
 msgid "systemError/restartBtn"
 msgstr "Перазапуск гульні"
 

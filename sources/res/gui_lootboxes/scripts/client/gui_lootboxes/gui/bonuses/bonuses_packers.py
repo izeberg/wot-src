@@ -5,26 +5,29 @@ from gui.collection.collections_constants import COLLECTION_ITEM_BONUS_NAME
 from gui.collection.collections_helpers import getItemName, getCollectionRes
 from gui.impl import backport
 from gui.impl.gen.view_models.common.missions.bonuses.icon_bonus_model import IconBonusModel
+from gui.impl.gen.view_models.common.missions.bonuses.progress_style_bonus_model import ProgressStyleBonusModel
 from gui.shared.gui_items import GUI_ITEM_TYPE
 from gui.shared.gui_items.customization import CustomizationTooltipContext
+from gui.shared.gui_items.customization.c11n_helpers import getProgressionStyleCamouflage
 from gui.shared.money import Money
 from gui.shared.utils.functions import makeTooltip
 from gui_lootboxes.gui.bonuses.bonuses_helpers import TOKEN_COMPENSATION_PREFIX, parseCompenstaionToken
 from gui_lootboxes.gui.impl.gen.view_models.views.lobby.gui_lootboxes.compensation_bonus_model import CompensationBonusModel
 from gui_lootboxes.gui.impl.gen.view_models.views.lobby.gui_lootboxes.customization_bonus_model import CustomizationBonusModel
 from gui.Scaleform.genConsts.TOOLTIPS_CONSTANTS import TOOLTIPS_CONSTANTS
-from gui.impl.backport import TooltipData, createTooltipData
+from gui.impl.backport import createTooltipData
 from gui.impl.gen import R
-from gui.server_events.bonuses import getServiceBonuses, CollectionEntitlementBonus, AnyCollectionItemBonus
+from gui.server_events.bonuses import getServiceBonuses, CollectionEntitlementBonus, AnyCollectionItemBonus, LbC11nProgressTokenBonus
 from gui.server_events.recruit_helper import getRecruitInfo
 from gui.shared.gui_items.Vehicle import getNationLessName
-from gui.shared.missions.packers.bonus import BACKPORT_TOOLTIP_CONTENT_ID, BonusUIPacker, CustomizationBonusUIPacker, SimpleBonusUIPacker, VehiclesBonusUIPacker, getDefaultBonusPackersMap, TankmenBonusUIPacker, TokenBonusUIPacker, CrewBookBonusUIPacker, DogTagComponentsUIPacker, PremiumDaysBonusPacker
+from gui.shared.missions.packers.bonus import BACKPORT_TOOLTIP_CONTENT_ID, BonusUIPacker, CustomizationBonusUIPacker, SimpleBonusUIPacker, VehiclesBonusUIPacker, getDefaultBonusPackersMap, TankmenBonusUIPacker, TokenBonusUIPacker, CrewBookBonusUIPacker, DogTagComponentsUIPacker, PremiumDaysBonusPacker, StyleProgressBonusUIPacker, PreferredMapSlotBonusUIPacker
 from gui_lootboxes.gui.impl.gen.view_models.views.lobby.gui_lootboxes.dog_tag_bonus_model import DogTagBonusModel, DogTagType
 from gui_lootboxes.gui.impl.gen.view_models.views.lobby.gui_lootboxes.vehicle_bonus_model import VehicleBonusModel, VehicleType
 from helpers import dependency
 from items.tankmen import RECRUIT_TMAN_TOKEN_PREFIX
 from shared_utils import first
 from skeletons.gui.game_control import ICollectionsSystemController
+from skeletons.gui.shared import IItemsCache
 _logger = logging.getLogger(__name__)
 EXTRA_BONUS_PACKER_MAPS_DEFAULT = {}
 EXTRA_BONUS_PACKER_MAPS_REWARDS = {}
@@ -39,21 +42,16 @@ def getLootBoxesBonusPackerMap():
        'customizations': LootBoxCustomizationBonusUIPacker(), 
        'collectionItem': LootBoxAnyCollectionItemBonusUIPacker(), 
        'anyCollectionItem': LootBoxAnyCollectionItemBonusUIPacker(), 
-       'dogTagComponents': LootBoxDogTagUIPacker()})
+       'dogTagComponents': LootBoxDogTagUIPacker(), 
+       LbC11nProgressTokenBonus.BONUS_NAME: LootboxStyleProgressBonusUIPacker()})
     mapping.update(EXTRA_BONUS_PACKER_MAPS_DEFAULT)
     return mapping
 
 
 def getStatisticsBonusPackerMap():
-    mapping = getDefaultBonusPackersMap()
-    mapping.update({'vehicles': LootBoxVehiclesBonusUIPacker(), 
-       'crewBooks': LootBoxCrewBookBonusUIPacker(), 
-       'tmanToken': TmanTemplateBonusPacker(), 
-       'customizations': LootBoxCustomizationBonusUIPacker(), 
-       'collectionItem': LootBoxAnyCollectionItemBonusUIPacker(), 
-       'anyCollectionItem': LootBoxAnyCollectionItemBonusUIPacker(), 
-       'dogTagComponents': LootBoxDogTagUIPacker(), 
-       constants.PREMIUM_ENTITLEMENTS.PLUS: PremiumDaysBonusPacker()})
+    mapping = getLootBoxesBonusPackerMap()
+    mapping.update({constants.PREMIUM_ENTITLEMENTS.PLUS: PremiumDaysBonusPacker(), 
+       'preferredMapSlots': PreferredMapSlotBonusUIPacker()})
     mapping.update(EXTRA_BONUS_PACKER_STATISTICS)
     return mapping
 
@@ -73,24 +71,19 @@ def getLootboxesWithPossibleCompensationBonusPacker():
 
 
 def getRewardsScreenDefaultBonusPackerMap():
-    mapping = getDefaultBonusPackersMap()
-    mapping.update({'tmanToken': TmanTemplateBonusPacker(), 
-       'vehicles': LootBoxVehiclesBonusUIPacker(), 
-       'customizations': LootBoxCustomizationBonusUIPacker(), 
-       'tankmen': LootBoxTankmenBonusUIPacker(), 
+    mapping = getLootBoxesBonusPackerMap()
+    mapping.update({'tankmen': LootBoxTankmenBonusUIPacker(), 
        'collectionItem': LootBoxCollectionItemBonusUIPacker(), 
        'battleToken': LootBoxTokensBonusUIPacker(), 
-       'dogTagComponents': LootBoxDogTagUIPacker(), 
-       'anyCollectionItem': LootBoxAnyCollectionItemBonusUIPacker(), 
-       constants.PREMIUM_ENTITLEMENTS.PLUS: PremiumDaysBonusPacker()})
+       constants.PREMIUM_ENTITLEMENTS.PLUS: PremiumDaysBonusPacker(), 
+       'preferredMapSlots': PreferredMapSlotBonusUIPacker()})
     mapping.update(EXTRA_BONUS_PACKER_MAPS_REWARDS)
     return mapping
 
 
 def getAdditionalRewardsTooltipBonusPacker():
     mapping = getRewardsScreenDefaultBonusPackerMap()
-    mapping.update({'customizations': AdditionalRewardsCustomizationBonusUIPacker(), 
-       'vehicles': VehiclesBonusUIPacker()})
+    mapping.update({'customizations': AdditionalRewardsCustomizationBonusUIPacker()})
     return BonusUIPacker(mapping)
 
 
@@ -101,7 +94,8 @@ def getRewardsBonusPacker():
 def getMainRewardsBonusPacker():
     mapping = getRewardsScreenDefaultBonusPackerMap()
     mapping.update({'tmanToken': TmanTemplateRewardScreenBonusPacker(), 
-       'customizations': LootBoxUniqueCustomizationBonusUIPacker()})
+       'customizations': LootBoxUniqueCustomizationBonusUIPacker(), 
+       LbC11nProgressTokenBonus.BONUS_NAME: LootboxStyleProgressBonusUIPacker()})
     mapping.update(EXTRA_BONUS_PACKER_MAPS_MAIN_REWARDS)
     return BonusUIPacker(mapping)
 
@@ -171,7 +165,7 @@ class TmanTemplateBonusPacker(SimpleBonusUIPacker):
         tooltipData = []
         for tokenID in bonus.getTokens().iterkeys():
             if tokenID.startswith(RECRUIT_TMAN_TOKEN_PREFIX):
-                tooltipData.append(TooltipData(tooltip=None, isSpecial=True, specialAlias=TOOLTIPS_CONSTANTS.TANKMAN_NOT_RECRUITED, specialArgs=[
+                tooltipData.append(createTooltipData(tooltip=None, isSpecial=True, specialAlias=TOOLTIPS_CONSTANTS.TANKMAN_NOT_RECRUITED, specialArgs=[
                  tokenID]))
 
         return tooltipData
@@ -217,7 +211,10 @@ class LootBoxCustomizationBonusUIPacker(CustomizationBonusUIPacker):
                     packer = LootBoxCompensationBonusUIPacker()
                     result.extend(packer.pack(compBonus))
             else:
-                result.append(cls._packSingleBonus(bonus, item, cls._getLabel(bonus.getC11nItem(item))))
+                style = bonus.getC11nItem(item)
+                if style.isQuestsProgression:
+                    continue
+                result.append(cls._packSingleBonus(bonus, item, cls._getLabel(style)))
 
         return result
 
@@ -248,11 +245,11 @@ class LootBoxCustomizationBonusUIPacker(CustomizationBonusUIPacker):
             if compensation:
                 compBonus = cls.__getCompBonus(compensation)
                 if compBonus:
-                    tooltipData.append(TooltipData(tooltip=None, isSpecial=True, specialAlias=None, specialArgs=[
+                    tooltipData.append(createTooltipData(tooltip=None, isSpecial=True, specialAlias=None, specialArgs=[
                      compBonus, bonus]))
             else:
                 itemCustomization = bonus.getC11nItem(item)
-                tooltipData.append(TooltipData(tooltip=None, isSpecial=True, specialAlias=TOOLTIPS_CONSTANTS.TECH_CUSTOMIZATION_ITEM_AWARD, specialArgs=CustomizationTooltipContext(itemCD=itemCustomization.intCD)))
+                tooltipData.append(createTooltipData(tooltip=None, isSpecial=True, specialAlias=TOOLTIPS_CONSTANTS.TECH_CUSTOMIZATION_ITEM_AWARD, specialArgs=CustomizationTooltipContext(itemCD=itemCustomization.intCD)))
 
         return tooltipData
 
@@ -347,7 +344,7 @@ class LootBoxCrewBookBonusUIPacker(CrewBookBonusUIPacker):
         else:
             specialAlias, specialArgs = TOOLTIPS_CONSTANTS.RANDOM_CREWBOOK, (item.intCD, item)
         return [
-         TooltipData(tooltip=None, isSpecial=True, specialAlias=specialAlias, specialArgs=specialArgs)]
+         createTooltipData(tooltip=None, isSpecial=True, specialAlias=specialAlias, specialArgs=specialArgs)]
 
     @classmethod
     def _getContentId(cls, bonus):
@@ -369,7 +366,7 @@ class LootBoxCompensationBonusUIPacker(SimpleBonusUIPacker):
     @classmethod
     def _getToolTip(cls, bonus):
         return [
-         TooltipData(tooltip=None, isSpecial=True, specialAlias=None, specialArgs=[
+         createTooltipData(tooltip=None, isSpecial=True, specialAlias=None, specialArgs=[
           cls._getCompensatedBonus(bonus), bonus])]
 
     @classmethod
@@ -420,7 +417,7 @@ class LootBoxTokensBonusUIPacker(TokenBonusUIPacker):
                 currency, value, item, itemID = parseCompenstaionToken(tokenID)
                 bonus = first(getServiceBonuses(currency, value * record.count, isCompensation=True))
                 if bonus:
-                    result.append(TooltipData(tooltip=None, isSpecial=True, specialAlias=None, specialArgs=[
+                    result.append(createTooltipData(tooltip=None, isSpecial=True, specialAlias=None, specialArgs=[
                      cls.__getCompReasonBonus(item, itemID), bonus]))
 
         return result
@@ -597,7 +594,7 @@ class LootBoxCollectionItemBonusUIPacker(SimpleBonusUIPacker):
     @classmethod
     def _getToolTip(cls, bonus):
         if cls._isValidBonus(bonus):
-            return [TooltipData(tooltip=None, isSpecial=True, specialAlias=None, specialArgs=[bonus.getItemId(), bonus.getCollectionId()])]
+            return [createTooltipData(tooltip=None, isSpecial=True, specialAlias=None, specialArgs=[bonus.getItemId(), bonus.getCollectionId()])]
         else:
             return []
 
@@ -658,3 +655,58 @@ class LootBoxAnyCollectionItemBonusUIPacker(LootBoxCollectionItemBonusUIPacker):
     @classmethod
     def _getBonusModel(cls):
         return IconBonusModel()
+
+
+class LootboxStyleProgressBonusUIPacker(StyleProgressBonusUIPacker):
+    __itemsCache = dependency.descriptor(IItemsCache)
+    _ICON_NAME = 'progressionStyle'
+
+    @classmethod
+    def _pack(cls, bonus):
+        return [cls._packSingleBonus(bonus)]
+
+    @classmethod
+    def _packSingleBonus(cls, bonus):
+        model = cls._getBonusModel()
+        cls._packCommon(bonus, model)
+        styleID = bonus.getStyleID()
+        branchID = bonus.getBranchID()
+        progressLevel = bonus.getProgressLevel()
+        camo = getProgressionStyleCamouflage(styleID, branchID, progressLevel)
+        if camo is not None:
+            icon = cls._getIcon(styleID, progressLevel)
+        else:
+            _logger.error('Missing camouflage for StyleProgressBonus: styleID=%s; level=%s', styleID, progressLevel)
+            icon = cls._ICON_NAME
+        model.setIcon(icon)
+        model.setLabel(bonus.format())
+        model.setStyleID(styleID)
+        model.setBranchID(branchID)
+        model.setProgressLevel(progressLevel)
+        model.setIsGranted(cls._getIsGranted(styleID, branchID, progressLevel))
+        return model
+
+    @classmethod
+    def _getIcon(cls, styleID, progressLevel):
+        iconName = ('style_progress_{styleID}_{progressLevel}').format(styleID=styleID, progressLevel=progressLevel)
+        if R.images.gui.maps.icons.quests.bonuses.s600x450.dyn(iconName).exists():
+            return iconName
+        return cls._ICON_NAME
+
+    @classmethod
+    def _getIsGranted(cls, styleID, branchID, progressLevel):
+        return bool(cls.__itemsCache.items.tokens.getToken(constants.LOOTBOX_CUSTOMIZATION_PROGRESS_FORMAT.format(styleID, branchID, progressLevel)))
+
+    @staticmethod
+    def _getLabel(camo):
+        return camo.longUserName
+
+    @classmethod
+    def _getToolTip(cls, bonus):
+        styleID = bonus.getStyleID()
+        branchID = bonus.getBranchID()
+        progressLevel = bonus.getProgressLevel()
+        camo = getProgressionStyleCamouflage(styleID, branchID, progressLevel)
+        tooltipData = createTooltipData(tooltip=None, isSpecial=True, specialAlias=TOOLTIPS_CONSTANTS.TECH_CUSTOMIZATION_ITEM_AWARD, specialArgs=CustomizationTooltipContext(itemCD=camo.intCD, showStatusBlock=False, level=progressLevel))
+        return [
+         tooltipData]

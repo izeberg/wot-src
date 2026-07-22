@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.725774 -0.421098 -0.178849</min>
+		<max>0.694911 0.419143 6.397907</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/american/A184_HTPC/normal/lod4/Gun_01</nodefullVisual>
+</root>

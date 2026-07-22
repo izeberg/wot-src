@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/german/G197_E_94_Fechter/normal/lod3/Hull</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<nodefullVisual>vehicles/german/G197_E_94_Fechter/normal/lod2/Hull</nodefullVisual>
+	<visibilityBox>
+		<min>-2.000000 -0.694174 -4.651833</min>
+		<max>2.000000 1.023628 4.327640</max>
+	</visibilityBox>
+</root>

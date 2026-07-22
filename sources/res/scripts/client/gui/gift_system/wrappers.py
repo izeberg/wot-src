@@ -4,6 +4,7 @@ OpenedGiftData = namedtuple('OpenedGiftData', 'senderID, metaInfo')
 GiftsHistoryData = namedtuple('GiftsHistoryData', ('aggregated', 'detailed'))
 GiftsWebState = namedtuple('GiftsWebState', ('sendLimit', 'expireTime', 'expireDelta',
                                              'executionTime', 'state', 'common'))
+GiftsWaitResponse = namedtuple('GiftsWaitResponse', 'players, lastPlayerUpdatedAt, firstPlayerUpdatedAt')
 IncomeSysMessage = namedtuple('IncomeSysMessage', ('eventID', 'senderID', 'giftItemID',
                                                    'meta', 'executionTime'))
 SendGiftResponse = namedtuple('SendGiftResponse', ('state', 'receiverIDs', 'outCount',

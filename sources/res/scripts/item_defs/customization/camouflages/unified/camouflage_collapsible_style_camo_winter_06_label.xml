@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<xmlns:ussr>ussr</xmlns:ussr>
+	<xmlns:germany>germany</xmlns:germany>
+	<xmlns:usa>usa</xmlns:usa>
+	<xmlns:china>china</xmlns:china>
+	<xmlns:france>france</xmlns:france>
+	<xmlns:uk>uk</xmlns:uk>
+	<xmlns:japan>japan</xmlns:japan>
+	<xmlns:czech>czech</xmlns:czech>
+	<xmlns:sweden>sweden</xmlns:sweden>
+	<xmlns:poland>poland</xmlns:poland>
+	<xmlns:italy>italy</xmlns:italy>
+	<xmlns:intunion>intunion</xmlns:intunion>
+	<itemGroup>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
+		<season>winter</season>
+		<historical>0</historical>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<camouflage>
+			<id>132</id>
+			<texture>vehicles/russian/Camouflage/Collapsible_style_CRACK.dds</texture>
+			<description>#vehicle_customization:camouflage/collapsible_style/camo_winter_06/description</description>
+			<scales>
+				1.3 1 0.7
+				<!--BW_String-->
+			</scales>
+			<userString>#vehicle_customization:camouflage/collapsible_style/camo_winter_06/label</userString>
+			<tags>styleOnly</tags>
+			<invisibilityFactor>1</invisibilityFactor>
+			<palettes>
+				<palette>
+					<c0>22 26 38 255</c0>
+					<c1>138 141 152 255</c1>
+					<c2>201 201 201 255</c2>
+					<c3>86 90 101 255</c3>
+				</palette>
+			</palettes>
+			<rotation>
+				<HULL>
+					-0.0872665
+					<!--BW_String-->
+				</HULL>
+				<TURRET>
+					-0.0872665
+					<!--BW_String-->
+				</TURRET>
+				<GUN>
+					-0.0872665
+					<!--BW_String-->
+				</GUN>
+			</rotation>
+			<tilingSettings>
+				<type>relative</type>
+				<factor>
+					4.4 4.4
+					<!--BW_String-->
+				</factor>
+				<offset>
+					4.91597 0.689659
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+		</camouflage>
+	</itemGroup>
+</root>

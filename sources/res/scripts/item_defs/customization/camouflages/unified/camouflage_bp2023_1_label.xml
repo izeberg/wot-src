@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<xmlns:ussr>ussr</xmlns:ussr>
+	<xmlns:germany>germany</xmlns:germany>
+	<xmlns:usa>usa</xmlns:usa>
+	<xmlns:china>china</xmlns:china>
+	<xmlns:france>france</xmlns:france>
+	<xmlns:uk>uk</xmlns:uk>
+	<xmlns:japan>japan</xmlns:japan>
+	<xmlns:czech>czech</xmlns:czech>
+	<xmlns:sweden>sweden</xmlns:sweden>
+	<xmlns:poland>poland</xmlns:poland>
+	<xmlns:italy>italy</xmlns:italy>
+	<xmlns:intunion>intunion</xmlns:intunion>
+	<itemGroup>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R47_ISU-152_Zveroboj ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<camouflage>
+			<id>708</id>
+			<texture>vehicles/russian/Camouflage/bp2023_1.dds</texture>
+			<description>#vehicle_customization:camouflage/bp2023_1/description</description>
+			<scales>
+				1.3 1 0.7
+				<!--BW_String-->
+			</scales>
+			<userString>#vehicle_customization:camouflage/bp2023_1/label</userString>
+			<tags>fullRGB hiddenInUI</tags>
+			<invisibilityFactor>1</invisibilityFactor>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<rotation>
+				<HULL>
+					-0.25988
+					<!--BW_String-->
+				</HULL>
+				<TURRET>
+					-0.25988
+					<!--BW_String-->
+				</TURRET>
+				<GUN>
+					-0.25988
+					<!--BW_String-->
+				</GUN>
+			</rotation>
+			<tilingSettings>
+				<type>relative</type>
+				<factor>
+					3.5 3.5
+					<!--BW_String-->
+				</factor>
+				<offset>
+					-5.95 -6.58
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+			<tiling>
+				<germany:G114_Skorpian>
+					3.1 3.1 -1.9 -2.08
+					<!--BW_String-->
+				</germany:G114_Skorpian>
+				<uk:GB83_FV4005>
+					4.105 4.105 -6.45 -6.58
+					<!--BW_String-->
+				</uk:GB83_FV4005>
+				<sweden:S11_Strv_103B>
+					1.3 1.3 -8.83 -8.66
+					<!--BW_String-->
+				</sweden:S11_Strv_103B>
+				<germany:G51_Lowe>
+					3.42 3.42 -6.17 -5.54
+					<!--BW_String-->
+				</germany:G51_Lowe>
+			</tiling>
+			<gloss>
+				0.29 0.36 0.509 0.29
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.19 0.23 0.23 0.2
+				<!--BW_String-->
+			</metallic>
+		</camouflage>
+		<camouflage>
+			<id>712</id>
+			<texture>vehicles/russian/Camouflage/bp2023_3.dds</texture>
+			<description>#vehicle_customization:camouflage/bp2023_3/description</description>
+			<scales>
+				1.3 1 0.7
+				<!--BW_String-->
+			</scales>
+			<userString>#vehicle_customization:camouflage/bp2023_3/label</userString>
+			<tags>fullRGB hiddenInUI</tags>
+			<invisibilityFactor>1</invisibilityFactor>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<rotation>
+				<HULL>0.656418</HULL>
+				<TURRET>0.656418</TURRET>
+				<GUN>0.656418</GUN>
+			</rotation>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>
+					2.67 2.67
+					<!--BW_String-->
+				</factor>
+				<offset>
+					-0.48 -1.56
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+			<gloss>
+				0.35 0.509 0.6 0.39
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.2 0.23 0.45 0.2
+				<!--BW_String-->
+			</metallic>
+		</camouflage>
+		<camouflage>
+			<id>713</id>
+			<texture>vehicles/russian/Camouflage/bp2023_4.dds</texture>
+			<description>#vehicle_customization:camouflage/bp2023_4/description</description>
+			<scales>
+				1.3 1 0.7
+				<!--BW_String-->
+			</scales>
+			<userString>#vehicle_customization:camouflage/bp2023_4/label</userString>
+			<tags>fullRGB hiddenInUI</tags>
+			<invisibilityFactor>1</invisibilityFactor>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<rotation>
+				<HULL>-0.108734</HULL>
+				<TURRET>-0.108734</TURRET>
+				<GUN>-0.108734</GUN>
+			</rotation>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>
+					2.38 2.38
+					<!--BW_String-->
+				</factor>
+				<offset>
+					1.9 -4.55
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+			<gloss>
+				0.37 0.42 0.509 0.38
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.22 0.23 0.23 0.2
+				<!--BW_String-->
+			</metallic>
+			<tiling>
+				<germany:G42_Maus>
+					3.07 3.07 0.98 -5.29
+					<!--BW_String-->
+				</germany:G42_Maus>
+				<ussr:R230_Maus>
+					3.07 3.07 0.98 -5.29
+					<!--BW_String-->
+				</ussr:R230_Maus>
+				<ussr:R159_SU_130PM>
+					0.8 0.8 1.08 -4.69
+					<!--BW_String-->
+				</ussr:R159_SU_130PM>
+				<france:F114_Projet_4_1>
+					2.266 2.266 1.68 -4.67
+					<!--BW_String-->
+				</france:F114_Projet_4_1>
+				<france:F116_Bat_Chatillon_Bourrasque>
+					2.45 2.45 -1.63 0.18
+					<!--BW_String-->
+				</france:F116_Bat_Chatillon_Bourrasque>
+				<italy:It08_Progetto_M40_mod_65>
+					1.67 1.67 1.76 -4.61
+					<!--BW_String-->
+				</italy:It08_Progetto_M40_mod_65>
+				<italy:It13_Progetto_M35_mod_46>
+					1.84 1.84 -2.34 0.45
+					<!--BW_String-->
+				</italy:It13_Progetto_M35_mod_46>
+				<uk:GB83_FV4005>
+					3.15 3.15 1.86 -2.01
+					<!--BW_String-->
+				</uk:GB83_FV4005>
+				<japan:J16_ST_B1>
+					3.15 3.15 1 0.69
+					<!--BW_String-->
+				</japan:J16_ST_B1>
+				<usa:A67_T57_58>
+					3.032 3.032 1.62 -2.69
+					<!--BW_String-->
+				</usa:A67_T57_58>
+			</tiling>
+		</camouflage>
+	</itemGroup>
+</root>

@@ -1,0 +1,798 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<xmlns:ussr>ussr</xmlns:ussr>
+	<xmlns:germany>germany</xmlns:germany>
+	<xmlns:usa>usa</xmlns:usa>
+	<xmlns:china>china</xmlns:china>
+	<xmlns:france>france</xmlns:france>
+	<xmlns:uk>uk</xmlns:uk>
+	<xmlns:japan>japan</xmlns:japan>
+	<xmlns:czech>czech</xmlns:czech>
+	<xmlns:sweden>sweden</xmlns:sweden>
+	<xmlns:poland>poland</xmlns:poland>
+	<xmlns:italy>italy</xmlns:italy>
+	<xmlns:intunion>intunion</xmlns:intunion>
+	<itemGroup>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
+		<season>desert</season>
+		<historical>0</historical>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<include>
+				<nations>ussr</nations>
+			</include>
+			<exclude>
+				<vehicles>ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<camouflage>
+			<id>693</id>
+			<texture>vehicles/russian/Camouflage/Cussr_1_4Leningrad.dds</texture>
+			<description>#vehicle_customization:camouflage/ussr/tricolor/Leningrad/description</description>
+			<scales>
+				1.3 1 0.7
+				<!--BW_String-->
+			</scales>
+			<userString>#vehicle_customization:camouflage/ussr/tricolor/Leningrad/label</userString>
+			<invisibilityFactor>1</invisibilityFactor>
+			<palettes>
+				<palette>
+					<c0>73 53 39 255</c0>
+					<c1>92 94 74 255</c1>
+					<c2>147 131 110 255</c2>
+					<c3>66 71 44 0</c3>
+				</palette>
+			</palettes>
+			<tiling>
+				<R01_IS>
+					4 4 1.32 0.68
+					<!--BW_String-->
+				</R01_IS>
+				<R02_SU-85>
+					3.58 3.58 0.77 1.48
+					<!--BW_String-->
+				</R02_SU-85>
+				<R03_BT-7>
+					4.11 4.11 1.53 0.48
+					<!--BW_String-->
+				</R03_BT-7>
+				<R04_T-34>
+					3.4 3.3 2.44 1.45
+					<!--BW_String-->
+				</R04_T-34>
+				<R05_KV>
+					4.5 5.7 0.31 0.8
+					<!--BW_String-->
+				</R05_KV>
+				<R06_T-28>
+					1.76 1.76 0.5 2.02
+					<!--BW_String-->
+				</R06_T-28>
+				<R07_T-34-85>
+					4.13 4.13 0.5 0.18
+					<!--BW_String-->
+				</R07_T-34-85>
+				<R08_BT-2>
+					1 1 1.59 1.01
+					<!--BW_String-->
+				</R08_BT-2>
+				<R09_T-26>
+					3.66 3.66 0.71 0.28
+					<!--BW_String-->
+				</R09_T-26>
+				<R100_SU122A>
+					4.3 4.3 0.4 0.77
+					<!--BW_String-->
+				</R100_SU122A>
+				<R101_MT25>
+					3.8 3.8 0.000000 0.000000
+					<!--BW_String-->
+				</R101_MT25>
+				<R104_Object_430_II>
+					2 2 0.92 0.12
+					<!--BW_String-->
+				</R104_Object_430_II>
+				<R105_BT_7A>
+					5.8 5.8 0.000000 0.000000
+					<!--BW_String-->
+				</R105_BT_7A>
+				<R106_KV85>
+					2.16 2.16 0.7 1.14
+					<!--BW_String-->
+				</R106_KV85>
+				<R106_KV85_IGR>
+					4.7 4.8 0.000000 0.000000
+					<!--BW_String-->
+				</R106_KV85_IGR>
+				<R107_LTB>
+					3.39 3.39 2.55 0.75
+					<!--BW_String-->
+				</R107_LTB>
+				<R108_T34_85M>
+					3.2 3.2 0.86 2.52
+					<!--BW_String-->
+				</R108_T34_85M>
+				<R109_T54S>
+					4.01 4.01 0.5 0.31
+					<!--BW_String-->
+				</R109_T54S>
+				<R109_T54S_T>
+					4.01 4.01 0.5 0.31
+					<!--BW_String-->
+				</R109_T54S_T>
+				<R10_AT-1>
+					2.03 2.03 0.64 0.03
+					<!--BW_String-->
+				</R10_AT-1>
+				<R110_Object_260>
+					3.73 3.73 1.58 1.55
+					<!--BW_String-->
+				</R110_Object_260>
+				<R111_ISU130>
+					5.95 5.95 0.32 0.83
+					<!--BW_String-->
+				</R111_ISU130>
+				<R112_T54_45>
+					4.43 4.43 1.97 0.56
+					<!--BW_String-->
+				</R112_T54_45>
+				<R112_T54_45_02>
+					4.43 4.43 1.97 0.56
+					<!--BW_String-->
+				</R112_T54_45_02>
+				<R112_T54_45_FL>
+					4.43 4.43 1.97 0.56
+					<!--BW_String-->
+				</R112_T54_45_FL>
+				<R113_Object_730>
+					2.03 2.03 0.37 0.37
+					<!--BW_String-->
+				</R113_Object_730>
+				<R114_Object_244>
+					4 4 0.46 0.1
+					<!--BW_String-->
+				</R114_Object_244>
+				<R115_IS-3_auto>
+					4 4 1.38 0.5
+					<!--BW_String-->
+				</R115_IS-3_auto>
+				<R115_IS-3_auto_S>
+					4 4 1.38 0.5
+					<!--BW_String-->
+				</R115_IS-3_auto_S>
+				<R115_IS-3_auto_test>
+					3.8 3.8 0.7 1
+					<!--BW_String-->
+				</R115_IS-3_auto_test>
+				<R116_ISU122C_Berlin>
+					4.36 4.36 0.84 0.4
+					<!--BW_String-->
+				</R116_ISU122C_Berlin>
+				<R117_T34_85_Rudy>
+					2.13 2.13 1.68 0.58
+					<!--BW_String-->
+				</R117_T34_85_Rudy>
+				<R118_T28_F30>
+					3.87 3.87 0.91 1.16
+					<!--BW_String-->
+				</R118_T28_F30>
+				<R119_Object_777>
+					2.72 2.72 0.74 1.47
+					<!--BW_String-->
+				</R119_Object_777>
+				<R119_Object_777C>
+					2.72 2.72 0.74 1.47
+					<!--BW_String-->
+				</R119_Object_777C>
+				<R11_MS-1>
+					3 3 2.04 1.52
+					<!--BW_String-->
+				</R11_MS-1>
+				<R120_T22SR_A22>
+					2.05 2.05 0.46 0.29
+					<!--BW_String-->
+				</R120_T22SR_A22>
+				<R121_KV4_KTT>
+					3.48 3.48 5.17 3.8
+					<!--BW_String-->
+				</R121_KV4_KTT>
+				<R122_T44_100>
+					4.64 4.64 1 0.55
+					<!--BW_String-->
+				</R122_T44_100>
+				<R122_T44_100B>
+					4.3 4.3 1.28 0.76
+					<!--BW_String-->
+				</R122_T44_100B>
+				<R123_Kirovets_1>
+					2.56 2.56 0.3 0.47
+					<!--BW_String-->
+				</R123_Kirovets_1>
+				<R124_Object_279>
+					6.2 6.2 0.000000 0.000000
+					<!--BW_String-->
+				</R124_Object_279>
+				<R125_T_45>
+					0.65 0.65 0.48 0.7
+					<!--BW_String-->
+				</R125_T_45>
+				<R126_Object_730_5>
+					1.92 1.92 0.24 0.23
+					<!--BW_String-->
+				</R126_Object_730_5>
+				<R127_T44_100_K>
+					4.3 4.3 1.28 0.76
+					<!--BW_String-->
+				</R127_T44_100_K>
+				<R127_T44_100_M>
+					4.3 4.3 1.28 0.76
+					<!--BW_String-->
+				</R127_T44_100_M>
+				<R127_T44_100_P>
+					4.3 4.3 1.28 0.76
+					<!--BW_String-->
+				</R127_T44_100_P>
+				<R127_T44_100_U>
+					5 5 0.31 1.18
+					<!--BW_String-->
+				</R127_T44_100_U>
+				<R127_T44_100_I>
+					5 5 0.31 1.18
+					<!--BW_String-->
+				</R127_T44_100_I>
+				<R128_KV4_Kreslavskiy>
+					2.54 2.54 0.000000 0.000000
+					<!--BW_String-->
+				</R128_KV4_Kreslavskiy>
+				<R129_Object_257>
+					1.46 1.46 0.000000 0.000000
+					<!--BW_String-->
+				</R129_Object_257>
+				<R12_A-20>
+					1.51 1.51 0.58 1.08
+					<!--BW_String-->
+				</R12_A-20>
+				<R131_Tank_Gavalov>
+					2.79 2.79 0.000000 0.000000
+					<!--BW_String-->
+				</R131_Tank_Gavalov>
+				<R132_VNII_100LT>
+					2.1 2.1 0.000000 0.000000
+					<!--BW_String-->
+				</R132_VNII_100LT>
+				<R132_VNII_100LT_7x7>
+					2.1 2.1 0.000000 0.000000
+					<!--BW_String-->
+				</R132_VNII_100LT_7x7>
+				<R133_KV_122>
+					2.07 2.07 0.000000 0.000000
+					<!--BW_String-->
+				</R133_KV_122>
+				<R134_Object_252U>
+					2 2 0.000000 0.000000
+					<!--BW_String-->
+				</R134_Object_252U>
+				<R135_T_103>
+					1.51 1.51 7.1 4.6
+					<!--BW_String-->
+				</R135_T_103>
+				<R139_IS_M>
+					0.62 0.62 0.22 0.000000
+					<!--BW_String-->
+				</R139_IS_M>
+				<R13_KV-1s>
+					1.87 1.87 0.61 0.28
+					<!--BW_String-->
+				</R13_KV-1s>
+				<R140_M4_Loza>
+					1.7 1.7 5.45 5.82
+					<!--BW_String-->
+				</R140_M4_Loza>
+				<R143_T_29>
+					1.5 1.5 2 1.6
+					<!--BW_String-->
+				</R143_T_29>
+				<R144_K_91>
+					1.79 1.79 1.89 0.000000
+					<!--BW_String-->
+				</R144_K_91>
+				<R145_Object_705_A>
+					3.79 3.79 0.000000 0.000000
+					<!--BW_String-->
+				</R145_Object_705_A>
+				<R146_STG>
+					1.75 1.75 2.37 2.49
+					<!--BW_String-->
+				</R146_STG>
+				<R148_Object_430_U>
+					0.71 0.71 2.32 1.83
+					<!--BW_String-->
+				</R148_Object_430_U>
+				<R148_Object_430_U_bob>
+					0.71 0.71 2.32 1.83
+					<!--BW_String-->
+				</R148_Object_430_U_bob>
+				<R149_Object_268_4>
+					3.77 3.77 0.4 1.8
+					<!--BW_String-->
+				</R149_Object_268_4>
+				<R149_Object_268_4_bob>
+					3.77 3.77 0.4 1.8
+					<!--BW_String-->
+				</R149_Object_268_4_bob>
+				<R14_SU-5>
+					4.3 4.3 0.2 0.72
+					<!--BW_String-->
+				</R14_SU-5>
+				<R151_Object_257_2>
+					1.95 1.95 1.91 6.47
+					<!--BW_String-->
+				</R151_Object_257_2>
+				<R152_KV2_W>
+					3.83 3.83 0.000000 0.93
+					<!--BW_String-->
+				</R152_KV2_W>
+				<R153_Object_705>
+					3.77 3.77 1.61 1.4
+					<!--BW_String-->
+				</R153_Object_705>
+				<R154_T_34E_1943>
+					1.71 1.71 0.22987 2.27948
+					<!--BW_String-->
+				</R154_T_34E_1943>
+				<R155_Object_277>
+					3.37 3.37 0.2 1.66
+					<!--BW_String-->
+				</R155_Object_277>
+				<R156_IS_2M>
+					1.69 1.69 2.62 1.91
+					<!--BW_String-->
+				</R156_IS_2M>
+				<R157_Object_279R>
+					1.96 1.96 0.89 0.39
+					<!--BW_String-->
+				</R157_Object_279R>
+				<R15_S-51>
+					1.8 1.8 0.05 0.62
+					<!--BW_String-->
+				</R15_S-51>
+				<R16_SU-18>
+					6 6 0.37 0.6
+					<!--BW_String-->
+				</R16_SU-18>
+				<R17_SU-100>
+					2.39 2.39 0.37 0.85
+					<!--BW_String-->
+				</R17_SU-100>
+				<R18_SU-152>
+					4.18 4.18 1.46 1.27
+					<!--BW_String-->
+				</R18_SU-152>
+				<R18_SU-152_IGR>
+					8.5 8.5 0.56 0.93
+					<!--BW_String-->
+				</R18_SU-152_IGR>
+				<R19_IS-3>
+					4 4 1 0.16
+					<!--BW_String-->
+				</R19_IS-3>
+				<R19_IS-3_FL>
+					4 4 1 0.16
+					<!--BW_String-->
+				</R19_IS-3_FL>
+				<R1013_IS_3_T>
+					4 4 1 0.16
+					<!--BW_String-->
+				</R1013_IS_3_T>
+				<R19_IS-3_IGR>
+					5.4 5.3 1 0.02
+					<!--BW_String-->
+				</R19_IS-3_IGR>
+				<R20_T-44>
+					4 4 0.3 0.61
+					<!--BW_String-->
+				</R20_T-44>
+				<R20_T-44_FL>
+					4 4 0.3 0.61
+					<!--BW_String-->
+				</R20_T-44_FL>
+				<R20_T-44_IGR>
+					8 8 0.3 0.3
+					<!--BW_String-->
+				</R20_T-44_IGR>
+				<R22_T-46>
+					4 4 0.61 1.49
+					<!--BW_String-->
+				</R22_T-46>
+				<R23_T-43>
+					4 4 1.05 0.77
+					<!--BW_String-->
+				</R23_T-43>
+				<R23_T-43_FL>
+					4 4 1.05 0.77
+					<!--BW_String-->
+				</R23_T-43_FL>
+				<R24_SU-76>
+					2.62 2.62 1.9 0.08
+					<!--BW_String-->
+				</R24_SU-76>
+				<R25_GAZ-74b>
+					2.53 2.53 0.1 0.000000
+					<!--BW_String-->
+				</R25_GAZ-74b>
+				<R26_SU-8>
+					2.3 2.3 0.66 4.16
+					<!--BW_String-->
+				</R26_SU-8>
+				<R27_SU-14>
+					3.79 3.79 0.92 0.31
+					<!--BW_String-->
+				</R27_SU-14>
+				<R31_Valentine_LL>
+					4.41 4.41 1.09 0.34
+					<!--BW_String-->
+				</R31_Valentine_LL>
+				<R31_Valentine_LL_IGR>
+					5 5 0.69 0.26
+					<!--BW_String-->
+				</R31_Valentine_LL_IGR>
+				<R32_Matilda_II_LL>
+					0.7 0.7 5.77 3.79
+					<!--BW_String-->
+				</R32_Matilda_II_LL>
+				<R33_Churchill_LL>
+					1.61 1.61 0.29 0.55
+					<!--BW_String-->
+				</R33_Churchill_LL>
+				<R34_BT-SV>
+					0.97 0.97 0.78 0.34
+					<!--BW_String-->
+				</R34_BT-SV>
+				<R38_KV-220>
+					2.25 2.25 1.45 0.99
+					<!--BW_String-->
+				</R38_KV-220>
+				<R38_KV-220_beta>
+					3.2 3.2 0.21 0.33
+					<!--BW_String-->
+				</R38_KV-220_beta>
+				<R39_KV-3>
+					3.24 3.24 1.12 0.78
+					<!--BW_String-->
+				</R39_KV-3>
+				<R40_T-54>
+					4 4 0.66 0.33
+					<!--BW_String-->
+				</R40_T-54>
+				<R40_T-54_FL>
+					4 4 0.66 0.33
+					<!--BW_String-->
+				</R40_T-54_FL>
+				<R41_T-50>
+					3 3 2.25 0.79
+					<!--BW_String-->
+				</R41_T-50>
+				<R42_T-60>
+					1.05 1.05 2 5.9
+					<!--BW_String-->
+				</R42_T-60>
+				<R43_T-70>
+					1.34 1.34 0.16 0.36
+					<!--BW_String-->
+				</R43_T-70>
+				<R44_T80>
+					3.59 3.59 0.28 0.000000
+					<!--BW_String-->
+				</R44_T80>
+				<R45_IS-7>
+					3.47 3.47 0.3 0.24
+					<!--BW_String-->
+				</R45_IS-7>
+				<R45_IS-7_IGR>
+					6.5 6.2 0.000000 0.000000
+					<!--BW_String-->
+				</R45_IS-7_IGR>
+				<R46_KV-13>
+					4.8 4.8 0.17 0.76
+					<!--BW_String-->
+				</R46_KV-13>
+				<R47_ISU-152>
+					3.81 3.81 0.4 0.35
+					<!--BW_String-->
+				</R47_ISU-152>
+				<R47_ISU-152_FL>
+					3.81 3.81 0.4 0.35
+					<!--BW_String-->
+				</R47_ISU-152_FL>
+				<R47_ISU-152_IGR>
+					4.2 4.2 0.4 1.8
+					<!--BW_String-->
+				</R47_ISU-152_IGR>
+				<R49_SU100Y>
+					3.36 3.36 0.15 0.46
+					<!--BW_String-->
+				</R49_SU100Y>
+				<R50_SU76I>
+					3.52 3.52 1.37 0.49
+					<!--BW_String-->
+				</R50_SU76I>
+				<R51_Object_212>
+					3.77 3.77 0.62 2.29
+					<!--BW_String-->
+				</R51_Object_212>
+				<R52_Object_261>
+					3.35 3.35 2.72 0.000000
+					<!--BW_String-->
+				</R52_Object_261>
+				<R53_Object_704>
+					3.81 3.81 0.57 1.49
+					<!--BW_String-->
+				</R53_Object_704>
+				<R54_KV-5>
+					3 3 0.35 0.38
+					<!--BW_String-->
+				</R54_KV-5>
+				<R54_KV-5_IGR>
+					5 5 0.6 0.000000
+					<!--BW_String-->
+				</R54_KV-5_IGR>
+				<R56_T-127>
+					2.53 2.53 0.53 1.11
+					<!--BW_String-->
+				</R56_T-127>
+				<R57_A43>
+					3.76 3.76 0.45 0.35
+					<!--BW_String-->
+				</R57_A43>
+				<R58_SU-101>
+					2 2 0.71 1.2
+					<!--BW_String-->
+				</R58_SU-101>
+				<R59_A44>
+					1.75 1.75 1.28 4.54
+					<!--BW_String-->
+				</R59_A44>
+				<R60_Object416>
+					1.78 1.78 6.25 6.17
+					<!--BW_String-->
+				</R60_Object416>
+				<R61_Object252>
+					4.37 4.37 2.33 0.82
+					<!--BW_String-->
+				</R61_Object252>
+				<R61_Object252_FL>
+					4.37 4.37 2.33 0.82
+					<!--BW_String-->
+				</R61_Object252_FL>
+				<R63_ST_I>
+					2.09 2.09 0.19 0.21
+					<!--BW_String-->
+				</R63_ST_I>
+				<R66_SU-26>
+					0.9 0.9 2.78 1.78
+					<!--BW_String-->
+				</R66_SU-26>
+				<R67_M3_LL>
+					1.62 1.62 7.64 8.51
+					<!--BW_String-->
+				</R67_M3_LL>
+				<R68_A-32>
+					0.87 0.87 0.72 0.84
+					<!--BW_String-->
+				</R68_A-32>
+				<R70_T_50_2>
+					4.6 4.5 0.12 0.000000
+					<!--BW_String-->
+				</R70_T_50_2>
+				<R71_IS_2B>
+					5 5 0.000000 0.64
+					<!--BW_String-->
+				</R71_IS_2B>
+				<R72_T150>
+					2.2 2.2 1 0.81
+					<!--BW_String-->
+				</R72_T150>
+				<R73_KV4>
+					3 3 1.31 3.24
+					<!--BW_String-->
+				</R73_KV4>
+				<R74_SU100M1>
+					3.26 3.26 0.46 0.62
+					<!--BW_String-->
+				</R74_SU100M1>
+				<R75_SU122_54>
+					4 4 0.000000 0.68
+					<!--BW_String-->
+				</R75_SU122_54>
+				<R77_KV2>
+					2.6 2.6 1.81 1.81
+					<!--BW_String-->
+				</R77_KV2>
+				<R77_KV2_IGR>
+					4.8 4.8 0.000000 0.2
+					<!--BW_String-->
+				</R77_KV2_IGR>
+				<R78_SU_85I>
+					2 2 2.04 0.74
+					<!--BW_String-->
+				</R78_SU_85I>
+				<R80_KV1>
+					3.5 3.5 0.46 0.95
+					<!--BW_String-->
+				</R80_KV1>
+				<R81_IS8>
+					1.97 1.97 0.83 1.3
+					<!--BW_String-->
+				</R81_IS8>
+				<R84_Tetrarch_LL>
+					1 1 0.33 0.7
+					<!--BW_String-->
+				</R84_Tetrarch_LL>
+				<R86_LTP>
+					2 2 0.15 0.4
+					<!--BW_String-->
+				</R86_LTP>
+				<R87_T62A>
+					2.05 2.05 0.24 0.06
+					<!--BW_String-->
+				</R87_T62A>
+				<R87_T62A_fallout>
+					3 3 0.000000 0.000000
+					<!--BW_String-->
+				</R87_T62A_fallout>
+				<R88_Object268>
+					3.81 3.81 0.08 0.47
+					<!--BW_String-->
+				</R88_Object268>
+				<R89_SU122_44>
+					1.4 1.4 0.26 0.27
+					<!--BW_String-->
+				</R89_SU122_44>
+				<R90_IS_4M>
+					3.74 3.74 0.31 0.76
+					<!--BW_String-->
+				</R90_IS_4M>
+				<R90_IS_4M_7x7>
+					3.74 3.74 0.31 0.76
+					<!--BW_String-->
+				</R90_IS_4M_7x7>
+				<R91_SU14_1>
+					3.5 3.5 0.38 0.81
+					<!--BW_String-->
+				</R91_SU14_1>
+				<R93_Object263>
+					1.7 1.7 0.000000 0.2
+					<!--BW_String-->
+				</R93_Object263>
+				<R93_Object263_FL>
+					1.7 1.7 0.000000 0.2
+					<!--BW_String-->
+				</R93_Object263_FL>
+				<R95_Object_907>
+					0.81 0.81 0.66 4.39
+					<!--BW_String-->
+				</R95_Object_907>
+				<R95_Object_907A>
+					0.81 0.81 0.66 4.39
+					<!--BW_String-->
+				</R95_Object_907A>
+				<R96_Object_430>
+					2.9 2.9 3.48 0.000000
+					<!--BW_String-->
+				</R96_Object_430>
+				<R97_Object_140>
+					2.3 2.3 6.9 4.3
+					<!--BW_String-->
+				</R97_Object_140>
+				<R97_Object_140_cl>
+					2.3 2.3 6.9 4.3
+					<!--BW_String-->
+				</R97_Object_140_cl>
+				<R98_T44_85>
+					4 4 0.87 0.33
+					<!--BW_String-->
+				</R98_T44_85>
+				<R98_T44_85M>
+					4.2 4.2 3.4 4.5
+					<!--BW_String-->
+				</R98_T44_85M>
+				<R99_T44_122>
+					3.84 3.84 0.46 0.26
+					<!--BW_String-->
+				</R99_T44_122>
+				<R99_T44_122_CN>
+					3.84 3.84 0.46 0.26
+					<!--BW_String-->
+				</R99_T44_122_CN>
+				<ussr:R158_LT_432>
+					1.73 1.73 0.24 0.93
+					<!--BW_String-->
+				</ussr:R158_LT_432>
+				<ussr:R159_SU_130PM>
+					0.59 0.59 0.000000 0.000000
+					<!--BW_String-->
+				</ussr:R159_SU_130PM>
+				<ussr:R160_T_50_2>
+					1.63 1.63 1.71 1.81
+					<!--BW_String-->
+				</ussr:R160_T_50_2>
+				<ussr:R161_T_116>
+					1.63 1.63 1.71 1.81
+					<!--BW_String-->
+				</ussr:R161_T_116>
+				<ussr:R165_Object_703_II>
+					2 2 0.000000 0.000000
+					<!--BW_String-->
+				</ussr:R165_Object_703_II>
+				<ussr:R165_Object_703_II_2>
+					2 2 0.000000 0.000000
+					<!--BW_String-->
+				</ussr:R165_Object_703_II_2>
+				<ussr:R165_Object_703_II_100>
+					2 2 0.000000 0.000000
+					<!--BW_String-->
+				</ussr:R165_Object_703_II_100>
+				<ussr:R169_ST_II>
+					3.74 3.74 0.31 0.76
+					<!--BW_String-->
+				</ussr:R169_ST_II>
+				<ussr:R170_IS_2_II>
+					2.47 2.47 0.46 0.1
+					<!--BW_String-->
+				</ussr:R170_IS_2_II>
+				<ussr:R171_IS_3_II>
+					2.47 2.47 0.46 0.1
+					<!--BW_String-->
+				</ussr:R171_IS_3_II>
+				<ussr:R171_IS_3_II_02>
+					2.47 2.47 0.46 0.1
+					<!--BW_String-->
+				</ussr:R171_IS_3_II_02>
+				<ussr:R172_Object_752>
+					5.4 5.4 1 0.02
+					<!--BW_String-->
+				</ussr:R172_Object_752>
+				<ussr:R173_K_91_2>
+					1.79 1.79 1.89 0.000000
+					<!--BW_String-->
+				</ussr:R173_K_91_2>
+				<ussr:R173_K_91_2_122>
+					1.79 1.79 1.89 0.000000
+					<!--BW_String-->
+				</ussr:R173_K_91_2_122>
+				<ussr:R175_IS_2_screen>
+					1.69 1.69 2.62 1.91
+					<!--BW_String-->
+				</ussr:R175_IS_2_screen>
+				<ussr:R177_ISU_152K_BL10>
+					3.81 3.81 0.4 0.35
+					<!--BW_String-->
+				</ussr:R177_ISU_152K_BL10>
+				<ussr:R178_Object_780>
+					1.69 1.69 2.62 1.91
+					<!--BW_String-->
+				</ussr:R178_Object_780>
+				<ussr:R180_Object_274_A>
+					3.37 3.37 0.2 1.66
+					<!--BW_String-->
+				</ussr:R180_Object_274_A>
+				<ussr:R93_Object263B>
+					1.7 1.7 0.000000 0.2
+					<!--BW_String-->
+				</ussr:R93_Object263B>
+				<ussr:R96_Object_430B>
+					2.9 2.9 3.48 0.000000
+					<!--BW_String-->
+				</ussr:R96_Object_430B>
+			</tiling>
+			<tilingSettings>
+				<type>relative</type>
+				<factor>
+					2.721679  2.724718
+					<!--BW_String-->
+				</factor>
+				<offset>0.000000 0.000000</offset>
+			</tilingSettings>
+		</camouflage>
+	</itemGroup>
+</root>

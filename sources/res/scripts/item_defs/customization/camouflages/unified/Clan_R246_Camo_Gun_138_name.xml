@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<xmlns:ussr>ussr</xmlns:ussr>
+	<xmlns:germany>germany</xmlns:germany>
+	<xmlns:usa>usa</xmlns:usa>
+	<xmlns:china>china</xmlns:china>
+	<xmlns:france>france</xmlns:france>
+	<xmlns:uk>uk</xmlns:uk>
+	<xmlns:japan>japan</xmlns:japan>
+	<xmlns:czech>czech</xmlns:czech>
+	<xmlns:sweden>sweden</xmlns:sweden>
+	<xmlns:poland>poland</xmlns:poland>
+	<xmlns:italy>italy</xmlns:italy>
+	<xmlns:intunion>intunion</xmlns:intunion>
+	<itemGroup>
+		<season>ALL</season>
+		<historical>1</historical>
+		<camouflage>
+			<id>31406</id>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 84</c3>
+				</palette>
+			</palettes>
+			<tiling>
+				<ussr:R246_Object_168_122>1 1 -0 -0</ussr:R246_Object_168_122>
+			</tiling>
+			<tilingSettings>
+				<type>relative</type>
+				<factor>1 1</factor>
+				<offset>0 0</offset>
+			</tilingSettings>
+			<texture>vehicles/russian/Camouflage/Clan_R246_Camo_Gun_138.dds</texture>
+			<glossMetallicMap>vehicles/russian/Camouflage/Clan_R246_Camo_Gun_138_GMM.dds</glossMetallicMap>
+			<description>#vehicle_customization:Clan_R246_Camo_Gun_138/description</description>
+			<userString>#vehicle_customization:Clan_R246_Camo_Gun_138/name</userString>
+			<exclusionImpact>
+				0.55
+				<!--BW_String-->
+			</exclusionImpact>
+		</camouflage>
+		<vehicleFilter>
+			<include>
+				<nations>ussr</nations>
+				<levels>10</levels>
+				<vehicles>ussr:R246_Object_168_122</vehicles>
+			</include>
+		</vehicleFilter>
+		<userString>#vehicle_customization:camouflage/transparent</userString>
+		<tags>hiddenInUI fullRGB</tags>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+	</itemGroup>
+</root>

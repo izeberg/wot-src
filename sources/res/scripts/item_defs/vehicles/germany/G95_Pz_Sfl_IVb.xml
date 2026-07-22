@@ -98,7 +98,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>4515</weight>
-		<maxHealth>244</maxHealth>
+		<maxHealth>250</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>70</maxHealth>
 			<maxRegenHealth>35</maxRegenHealth>
@@ -3423,7 +3423,7 @@
 				</customizableVehicleAreas>
 			</customization>
 			<repairTime>
-				8.39999962
+				2.85003138
 				<!--BW_String-->
 			</repairTime>
 		</Chassis_Pz_Sfl_IVb>
@@ -5059,7 +5059,7 @@
 				</customizableVehicleAreas>
 			</customization>
 			<repairTime>
-				7.38461542
+				2.85003138
 				<!--BW_String-->
 			</repairTime>
 		</Chassis_Pz_Sfl_IVb_2>
@@ -5096,7 +5096,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>2000</weight>
-			<maxHealth>61</maxHealth>
+			<maxHealth>70</maxHealth>
 			<rotationSpeed>10</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>100</maxHealth>
@@ -5106,7 +5106,7 @@
 					<!--BW_String-->
 				</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>255</circularVisionRadius>
+			<circularVisionRadius>300</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>50</maxHealth>
 				<maxRegenHealth>25</maxRegenHealth>

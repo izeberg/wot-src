@@ -1,0 +1,418 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "battleResults/descr"
+msgstr "Танковая академия: {questIdx} задача."
+
+msgid "battleResults/linkBtn/tooltip"
+msgstr "К задачам Танковой академии"
+
+msgid "battleResults/progress/tooltip"
+msgstr "Прогресс в этом бою"
+
+msgid "bonusDelayed/dialog/cancel"
+msgstr "Отменить"
+
+msgid "bonusDelayed/dialog/closeBtn"
+msgstr "ЗАКРЫТЬ"
+
+msgid "bonusDelayed/dialog/confirm"
+msgstr "Подтвердить"
+
+msgid "bonusDelayed/dialog/description"
+msgstr ""
+"Вы получите {whiteSpanish_Open}%(vehicleName)s{whiteSpanish_Close} со 100%-м"
+" экипажем и слотом в Ангаре."
+
+msgid "bonusDelayed/dialog/title"
+msgstr "Забрать в награду %(vehicleName)s?"
+
+msgid "entryPoint/hint/quests"
+msgstr "ЗАДАЧИ ТАНКОВОЙ АКАДЕМИИ"
+
+msgid "entryPoint/hint/rewards"
+msgstr ""
+"ТЕХНИКА В НАГРАДУ\n"
+"ЗА ВЫПОЛНЕНИЕ ЗАДАЧ"
+
+msgid "entryPoint/new"
+msgstr "Новая задача"
+
+msgid "entryPointTooltip/completed"
+msgstr "%(icon)s Все задачи выполнены"
+
+msgid "entryPointTooltip/hasToken"
+msgstr "Доступна техника на выбор!"
+
+msgid "entryPointTooltip/header/counter"
+msgstr "Выполнено задач: %(completed)s / %(total)s"
+
+msgid "entryPointTooltip/header/title"
+msgstr "Танковая академия"
+
+msgid "entryPointTooltip/quest/progress"
+msgstr "%(completed)s / %(total)s"
+
+msgid "entryPointTooltip/quest/title"
+msgstr "Текущая задача: %(questNumber)s"
+
+msgid "entryPointTooltip/rewards/title"
+msgstr "Награда за выполнение:"
+
+msgid "entryPointTooltip/token/expireDate"
+msgstr ""
+"%(icon)s Забрать технику можно до %(date)s {cream_Open}г.{cream_Close}"
+
+msgid "entryPointTooltip/token/timeLeft"
+msgstr "%(icon)s Забрать технику можно ещё %(date)s"
+
+msgid "mainView/footer/currentQuestButton"
+msgstr "К текущей задаче"
+
+msgid "mainView/footer/progress"
+msgstr "Выполнено задач: %(completed)s / %(total)s"
+
+msgid "mainView/header/infoButton"
+msgstr "ОБ АКАДЕМИИ"
+
+msgid "mainView/header/title"
+msgstr "ТАНКОВАЯ АКАДЕМИЯ"
+
+msgid "mainView/questCard/action"
+msgstr "Подсказка"
+
+msgid "mainView/questCard/subtitle/unavailable"
+msgstr "Завершите предыдущие задачи."
+
+msgid "mainView/questCard/title/done"
+msgstr "Выполненная задача"
+
+msgid "mainView/questCard/title/inProgress"
+msgstr "Текущая задача"
+
+msgid "mainView/questCard/title/unavailable"
+msgstr "Предстоящая задача"
+
+msgid "mainView/questRewards/box/name"
+msgstr "Довольствие академии"
+
+msgid "mainView/questRewards/box/tooltipHeader"
+msgstr "Содержит:"
+
+msgid "mainView/questRewards/descriptions/battle_bonus_x5"
+msgstr ""
+"Возможность заработка\n"
+"дополнительного опыта за бой."
+
+msgid "mainView/questRewards/descriptions/box"
+msgstr ""
+"Набор дополнительных наград,\n"
+"помогающих в прохождении Академии."
+
+msgid "mainView/questRewards/descriptions/credits"
+msgstr ""
+"Основная валюта.\n"
+"Применяется повсеместно."
+
+msgid "mainView/questRewards/descriptions/crewBooks"
+msgstr ""
+"Прибавляет опыт экипажу,\n"
+"позволяя изучить важные навыки."
+
+msgid "mainView/questRewards/descriptions/freeXP"
+msgstr ""
+"Ресурс, помогающий\n"
+"в исследовании веток техники."
+
+msgid "mainView/questRewards/descriptions/gold"
+msgstr ""
+"Ценная валюта. Помогает\n"
+"ускорить развитие в игре."
+
+msgid "mainView/questRewards/descriptions/premium_plus"
+msgstr ""
+"Статус аккаунта, дающий\n"
+"множество различных бонусов."
+
+msgid "mainView/questVehicleRewards/rewards/title/acquired"
+msgstr "Ресурсы получены"
+
+msgid "mainView/questVehicleRewards/rewards/title/unavailable"
+msgstr "Ресурсы для развития"
+
+msgid "mainView/questVehicleRewards/vehicle/action"
+msgstr "Показать в Ангаре"
+
+msgid "mainView/questVehicleRewards/vehicle/level"
+msgstr "%(level)s УРОВЕНЬ"
+
+msgid "mainView/questVehicleRewards/vehicle/title/acquired"
+msgstr "Машина получена"
+
+msgid "mainView/questVehicleRewards/vehicle/title/available"
+msgstr "Доступна машина на выбор!"
+
+msgid "mainView/questVehicleRewards/vehicle/title/unavailable"
+msgstr ""
+"Дополнительная машина\n"
+"на выбор в награду"
+
+msgid "mainView/widget/tokens/active/title"
+msgstr "ЗАБРАТЬ ТЕХНИКУ"
+
+msgid "mainView/widget/tokens/active/tooltip"
+msgstr ""
+"Нажмите, чтобы забрать технику, заработанную за выполнение задач Танковой "
+"академии."
+
+msgid "mainView/widget/tokens/allRewards/title"
+msgstr "ВСЕ НАГРАДЫ"
+
+msgid "mainView/widget/tokens/allRewards/tooltip"
+msgstr "Нажмите, чтобы ознакомиться со списком всех наград Танковой академии."
+
+msgid "mainView/widget/tokens/inactive/title"
+msgstr ""
+"ТЕХНИКА\n"
+"В НАГРАДУ"
+
+msgid "mainView/widget/tokens/inactive/tooltip"
+msgstr ""
+"Нажмите, чтобы ознакомиться с техникой, доступной за выполнение задач "
+"Танковой академии."
+
+msgid "rewardsView/button/accept"
+msgstr "Так точно!"
+
+msgid "rewardsView/button/close"
+msgstr "ЗАКРЫТЬ"
+
+msgid "rewardsView/button/nextTask"
+msgstr "К следующей задаче"
+
+msgid "rewardsView/button/viewAcademy"
+msgstr "К Танковой академии"
+
+msgid "rewardsView/button/viewHangar"
+msgstr "Посмотреть в Ангаре"
+
+msgid "rewardsView/header/chainText"
+msgstr "Условия задачи выполнены ранее"
+
+msgid "rewardsView/header/finalSubtitle"
+msgstr "ФИНАЛЬНАЯ ЗАДАЧА ВЫПОЛНЕНА"
+
+msgid "rewardsView/header/subtitle"
+msgstr "ЗАДАЧА %(stage)s ВЫПОЛНЕНА"
+
+msgid "rewardsView/header/title"
+msgstr "ТАНКОВАЯ АКАДЕМИЯ"
+
+msgid "rewardsView/header/vehicleSubtitle"
+msgstr "ТЕХНИКА ПОЛУЧЕНА"
+
+msgid "rewardsView/selectVehicleWidget/button"
+msgstr "Выбрать технику"
+
+msgid "rewardsView/selectVehicleWidget/subtitle"
+msgstr ""
+"В награду за выполнение задачи доступен выбор исследуемой техники %(level)s "
+"уровня."
+
+msgid "rewardsView/selectVehicleWidget/subtitlePrem"
+msgstr ""
+"В награду за выполнение задачи доступен выбор премиум техники %(level)s "
+"уровня."
+
+msgid "rewardsView/selectVehicleWidget/title"
+msgstr "Выберите дополнительную машину %(level)s уровня!"
+
+msgid "serviceChannelMessages/awards/body"
+msgstr "Задача %(questIdx)s выполнена!"
+
+msgid "serviceChannelMessages/awards/done/body"
+msgstr "Вся цепочка задач Танковой академии пройдена."
+
+msgid "serviceChannelMessages/awards/footer"
+msgstr "Вы можете выбрать любую из предложенных машин %(level)s уровня."
+
+msgid "serviceChannelMessages/awards/footer/button"
+msgstr "К выбору машины"
+
+msgid "serviceChannelMessages/awards/footer/premium"
+msgstr ""
+"Вы можете выбрать любую из предложенных премиум машин %(level)s уровня."
+
+msgid "serviceChannelMessages/awards/header"
+msgstr "Танковая академия"
+
+msgid "serviceChannelMessages/awards/received"
+msgstr "Получена награда:"
+
+msgid "serviceChannelMessages/awards/received/button"
+msgstr "К задачам"
+
+msgid "serviceChannelMessages/awards/tokenAward/body"
+msgstr "Техника выбрана."
+
+msgid "serviceChannelMessages/awards/tokenAward/header"
+msgstr "Поздравляем!"
+
+msgid "serviceChannelMessages/token"
+msgstr "Возможность выбора техники %(level)s уровня в награду"
+
+msgid "serviceChannelMessages/token/premium"
+msgstr "Возможность выбора премиум техники %(level)s уровня в награду"
+
+msgid "timeLeft/days"
+msgstr "%(days)s д."
+
+msgid "timeLeft/hours"
+msgstr "%(hours)s ч."
+
+msgid "timeLeft/min"
+msgstr "%(minutes)s мин."
+
+msgid "vehiclesSelection/backButton/subtitle"
+msgstr "К ТАНКОВОЙ АКАДЕМИИ"
+
+msgid "vehiclesSelection/backButton/title"
+msgstr "НАЗАД"
+
+msgid "vehiclesSelection/card/additionalTitleNoRole"
+msgstr "Описание типа техники"
+
+msgid "vehiclesSelection/card/additionalTitleRole"
+msgstr "Особенности роли техники"
+
+msgid "vehiclesSelection/card/compare/tooltip/body"
+msgstr "Добавить к сравнению"
+
+msgid "vehiclesSelection/card/continuationText"
+msgstr "Машина продолжает уже начатую ветку исследования техники."
+
+msgid "vehiclesSelection/card/vehicleName"
+msgstr "{cream_Open}%(level)s{cream_Close} %(icon)s %(name)s"
+
+msgid "vehiclesSelection/card/vehicleType/AT-SPG"
+msgstr "ПТ-САУ"
+
+msgid "vehiclesSelection/card/vehicleType/SPG"
+msgstr "САУ"
+
+msgid "vehiclesSelection/card/vehicleType/heavyTank"
+msgstr "Тяжёлый танк"
+
+msgid "vehiclesSelection/card/vehicleType/lightTank"
+msgstr "Лёгкий танк"
+
+msgid "vehiclesSelection/card/vehicleType/mediumTank"
+msgstr "Средний танк"
+
+msgid "vehiclesSelection/card/vehicleTypeDescription/AT-SPG"
+msgstr ""
+"Как правило, слабобронированная техника, оснащённая очень точными "
+"дальнобойными орудиями. Такие машины хорошо маскируются и могут вести огонь "
+"из засады."
+
+msgid "vehiclesSelection/card/vehicleTypeDescription/SPG"
+msgstr ""
+"Медленные и слабобронированные артиллерийские установки, которые ведут огонь"
+" с больших дистанций и закрытых позиций, нанося урон по области."
+
+msgid "vehiclesSelection/card/vehicleTypeDescription/heavyTank"
+msgstr ""
+"Машины с мощным орудием и толстой бронёй, способные выдерживать и наносить "
+"значительный урон, однако малоподвижны. Рекомендуемый тип техники для "
+"новичков."
+
+msgid "vehiclesSelection/card/vehicleTypeDescription/lightTank"
+msgstr ""
+"Очень подвижные машины-разведчики с хорошей маскировкой и обзором, однако со"
+" скромным бронированием и невысокой огневой мощью."
+
+msgid "vehiclesSelection/card/vehicleTypeDescription/mediumTank"
+msgstr ""
+"Универсальные и многоцелевые танки, которые достаточно подвижны, однако при "
+"этом обладают ощутимой огневой мощью и бронёй."
+
+msgid "vehiclesSelection/doneView/level"
+msgstr "%(level)s уровня"
+
+msgid "vehiclesSelection/doneView/title"
+msgstr "Вся доступная в Танковой академии %(vehicleText)s %(level)s получена!"
+
+msgid "vehiclesSelection/doneView/vehicleText/defaultVehicle"
+msgstr "техника"
+
+msgid "vehiclesSelection/doneView/vehicleText/premiumVehicle"
+msgstr "премиум техника"
+
+msgid "vehiclesSelection/filterPopover/nation"
+msgstr "Нация"
+
+msgid "vehiclesSelection/filterPopover/title"
+msgstr "Фильтр по параметрам"
+
+msgid "vehiclesSelection/filterPopover/type"
+msgstr "Тип техники"
+
+msgid "vehiclesSelection/header/title"
+msgstr "ТЕХНИКА В НАГРАДУ"
+
+msgid "vehiclesSelection/infoWidget/hasToken"
+msgstr "Выберите%(premium)sмашину %(level)s уровня в награду!"
+
+msgid "vehiclesSelection/infoWidget/noTokenFew"
+msgstr "По машине %(selectionText)s за выполнение задач №:"
+
+msgid "vehiclesSelection/infoWidget/noTokenSingle"
+msgstr "Одна%(premium)sмашина %(selectionText)s за выполнение задачи №:"
+
+msgid "vehiclesSelection/infoWidget/selectionPremiumText"
+msgstr "премиум"
+
+msgid "vehiclesSelection/infoWidget/selectionText"
+msgstr "на выбор"
+
+msgid "vehiclesSelection/noVehicles/subtitleDefault"
+msgstr ""
+"У вас исследована вся техника %(level)s уровня, доступная для получения в "
+"награду."
+
+msgid "vehiclesSelection/noVehicles/subtitlePremium"
+msgstr ""
+"У вас приобретена вся премиум техника %(level)s уровня, доступная для "
+"получения в награду."
+
+msgid "vehiclesSelection/noVehicles/title"
+msgstr "Отсутствует машина для выбора"
+
+msgid "vehiclesSelection/tabs/count"
+msgstr "%(count)s ед."
+
+msgid "vehiclesSelection/tabs/label"
+msgstr "%(level)s уровень"
+
+msgid "vehiclesSelection/vehiclePreview/uniqueVehicleTitle"
+msgstr ""
+"Техника доступна к выбору в награду за выполнение задач Танковой академии"
+
+msgid "welcomeView/button/closeButton"
+msgstr "ЗАКРЫТЬ"
+
+msgid "welcomeView/button/continueButton"
+msgstr "Продолжить"
+
+msgid "welcomeView/subtitle"
+msgstr "%(count)s МАШИН В НАГРАДУ"
+
+msgid "welcomeView/title"
+msgstr "ТАНКОВАЯ АКАДЕМИЯ"

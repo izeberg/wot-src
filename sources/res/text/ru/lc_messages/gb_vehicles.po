@@ -276,6 +276,9 @@ msgstr "Conqueror Mk. II"
 msgid "Chassis_GB130_FV225"
 msgstr "FV225"
 
+msgid "Chassis_GB131_Crusher"
+msgstr "Crusher"
+
 msgid "Chassis_GB133_Cyclone_Mk_2"
 msgstr "Cyclone Mk. I"
 
@@ -305,6 +308,9 @@ msgstr "FV245 Mk. II"
 
 msgid "Chassis_GB137_CVT_Spider"
 msgstr "CVT Spider"
+
+msgid "Chassis_GB138_FV246_Colossus"
+msgstr "FV246"
 
 msgid "Chassis_GB139_Vulcan"
 msgstr "Vulcan Mk. I"
@@ -1473,6 +1479,29 @@ msgstr "Crossbow"
 msgid "GB130_FV225_short_special"
 msgstr "?empty?"
 
+msgid "GB131_Crusher"
+msgstr "Crusher"
+
+msgid "GB131_Crusher_descr"
+msgstr ""
+"Проект тяжёлого танка с рабочим названием Crusher воплотил в себе представления конструкторов о машине, концептуально отличавшейся от танка Centurion. Для повышения мобильности при использовании существующего двигателя было принято решение уменьшить заброневой объём, а следовательно, и боевую массу танка. Предположительно, с этой целью экипаж планировалось разместить в башне, а носовую часть корпуса — исключить из конструкции. Ещё одним возможным мотивом такого решения являлось стремление повысить противоминную защищённость экипажа. При этом ходовая часть, разработанная на базе элементов шасси тяжёлого танка Churchill, была смещена вперёд для улучшения проходимости. В качестве вооружения рассматривались 114-мм или 127-мм танковые пушки, однако независимо от выбранного калибра расчётная масса машины по-прежнему оставалась высокой, а британских военных интересовала более лёгкая и подвижная техника. Проект Crusher был закрыт на стадии деревянного макета.\n"
+"\n"
+"Характеристики машины могут быть изменены без компенсации."
+
+msgid "GB131_Crusher_long_special"
+msgstr ""
+"Штурмовой британский тяжёлый танк с хорошим лобовым бронированием и "
+"комфортным орудием. Отличный тренажёр для игры на технике подобного типа: "
+"прощает ошибки, может применяться в разных тактических ситуациях, не имеет "
+"ярких негативных сторон. Скромная динамика играет скорее на руку машине — "
+"риск выскочить на все стволы минимален."
+
+msgid "GB131_Crusher_short"
+msgstr "Crusher"
+
+msgid "GB131_Crusher_short_special"
+msgstr "Комфортное орудие, хорошее лобовое бронирование"
+
 msgid "GB133_Cyclone_Mk_2"
 msgstr "Cyclone Mk.2"
 
@@ -1635,6 +1664,28 @@ msgstr "Spider"
 
 msgid "GB137_CVT_Spider_short_special"
 msgstr "Хорошая маскировка, система дозарядки магазина"
+
+msgid "GB138_FV246_Colossus"
+msgstr "FV246 Colossus"
+
+msgid "GB138_FV246_Colossus_descr"
+msgstr ""
+"В конце 1950-х годов в Великобритании была проработана серия проектов тяжёлых двухпушечных танков. Одним из них был проект FV246 Colossus. Спаренная установка орудий была призвана обеспечить высокую огневую производительность, а за точность ведения стрельбы должен был отвечать продвинутый прицельный комплекс с оптическим дальномером с длинной базой. От параллельно прорабатывавшихся машин этот проект отличал замысел широкого применения броневого литья: литыми предлагалось сделать практически весь корпус и башню. Вероятно, опираясь на развитую британскую сталелитейную промышленность, конструкторы и технологи пытались снизить трудоёмкость изготовления танка, сохранив его массу оптимальной не в ущерб защищённости. Так или иначе, концепция двухствольной артсистемы не оправдала себя, и проект FV246 Colossus был закрыт.\n"
+"\n"
+"Характеристики машины могут быть изменены без компенсации."
+
+msgid "GB138_FV246_Colossus_long_special"
+msgstr ""
+"Тяжёлый танк с комфортным двухствольным орудием, высокой мобильностью и "
+"отличной точностью. Благодаря достойной башне и хорошим УВН машина прекрасно"
+" чувствует себя при прорыве обороны противника в группе с союзниками и в "
+"позиционных перестрелках."
+
+msgid "GB138_FV246_Colossus_short"
+msgstr "Colossus"
+
+msgid "GB138_FV246_Colossus_short_special"
+msgstr "Высокая мобильность, отличная точность"
 
 msgid "GB139_Vulcan"
 msgstr "Vulcan"
@@ -2999,6 +3050,9 @@ msgstr "WS No. 19 Mk. III"
 msgid "N19Mk3_C"
 msgstr "WS No. 19 Mk. III"
 
+msgid "N19Mk3_GB138"
+msgstr "WS No. 19 Special"
+
 msgid "N19Mk3_GB142"
 msgstr "№ 19 Mk.3/31"
 
@@ -3009,6 +3063,9 @@ msgid "N19_S"
 msgstr "N19 S"
 
 msgid "N22"
+msgstr "WS No. 22"
+
+msgid "N22_GB131"
 msgstr "WS No. 22"
 
 msgid "N22_LT"
@@ -3167,6 +3224,9 @@ msgstr "Rolls-Royce Griffon 180"
 msgid "Rolls_Royce_Griffon_A"
 msgstr "Rolls-Royce Griffon A"
 
+msgid "Rolls_Royce_Griffon_GB138"
+msgstr "Rolls-Royce Griffon"
+
 msgid "Rolls_Royce_Griffon_IIT_GB142"
 msgstr "Rolls-Royce Griffon IIT"
 
@@ -3187,6 +3247,9 @@ msgstr "Rolls-Royce Meteor Mk. IVB (900)"
 
 msgid "Rolls_Royce_Meteor_MkIV_B12"
 msgstr "Rolls-Royce Meteor Mk. IVB/12"
+
+msgid "Rolls_Royce_Meteor_Mk_XI_GB131"
+msgstr "Rolls-Royce Meteor Mk. XI"
 
 msgid "Rolls_Royce_Meteor_P"
 msgstr "Rolls-Royce Meteor P"
@@ -3410,6 +3473,9 @@ msgstr "Conqueror Mk. II"
 msgid "Turret_1_GB130_FV225"
 msgstr "FV225"
 
+msgid "Turret_1_GB131_Crusher"
+msgstr "Crusher"
+
 msgid "Turret_1_GB133_Cyclone_Mk_2"
 msgstr "Cyclone Mk. I"
 
@@ -3424,6 +3490,9 @@ msgstr "FV240-1"
 
 msgid "Turret_1_GB137_CVT_Spider"
 msgstr "CVT Spider"
+
+msgid "Turret_1_GB138_FV246_Colossus"
+msgstr "FV246"
 
 msgid "Turret_1_GB139_Vulcan"
 msgstr "Vulcan Mk. I"
@@ -3831,6 +3900,9 @@ msgstr "APDS Kl/14"
 msgid "_105mm_APDS_L28"
 msgstr "APDS L28"
 
+msgid "_105mm_APDS_L28_GB138"
+msgstr "APDS L28"
+
 msgid "_105mm_AP_Mk7"
 msgstr "AP Mk7"
 
@@ -3850,6 +3922,9 @@ msgid "_105mm_Gun_L7_HEAT_SH"
 msgstr "105 mm Gun L7A2"
 
 msgid "_105mm_HEAT_L51"
+msgstr "HEAT L51"
+
+msgid "_105mm_HEAT_L51_GB138"
 msgstr "HEAT L51"
 
 msgid "_105mm_HEAT_L7"
@@ -3883,6 +3958,9 @@ msgid "_105mm_HEAT_M67"
 msgstr "HEAT M67"
 
 msgid "_105mm_HESH_L35"
+msgstr "HESH L35"
+
+msgid "_105mm_HESH_L35_GB138"
 msgstr "HESH L35"
 
 msgid "_105mm_HESH_L7"
@@ -3942,6 +4020,9 @@ msgstr "105 mm Gun L7 C"
 msgid "_105mm_L7_dualgun"
 msgstr "105 mm Dual Gun L7"
 
+msgid "_105mm_L7_dualgun_GB138"
+msgstr "105 mm Dual Gun L7"
+
 msgid "_105mm_L7_dualgun_T"
 msgstr "105 mm Dual Gun L7"
 
@@ -3986,6 +4067,18 @@ msgstr "110 mm MV N HE"
 
 msgid "_110mm_MV_N_HEAT"
 msgstr "110 mm MV N HEAT"
+
+msgid "_114mm_55Pdr_Gun_GB131"
+msgstr "114 mm 55 Pdr Gun"
+
+msgid "_114mm_APCBC_GB136"
+msgstr "APCBC Mk. 1"
+
+msgid "_114mm_APDS_GB136"
+msgstr "APDS L28M"
+
+msgid "_114mm_HE_GB136"
+msgstr "HE Mk. 1"
 
 msgid "_12.7mm_AP_M2"
 msgstr "AP M2"

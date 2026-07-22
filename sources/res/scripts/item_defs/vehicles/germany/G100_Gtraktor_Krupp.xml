@@ -12,7 +12,7 @@
 	<supplySlots>1 1 6 6 8 8 8</supplySlots>
 	<speedLimits>
 		<forward>44</forward>
-		<backward>12</backward>
+		<backward>15</backward>
 	</speedLimits>
 	<invisibility>
 		<moving>
@@ -97,7 +97,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>7850</weight>
-		<maxHealth>456</maxHealth>
+		<maxHealth>450</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>100</maxHealth>
 			<maxRegenHealth>80</maxRegenHealth>
@@ -4011,7 +4011,7 @@
 				</customizableVehicleAreas>
 			</customization>
 			<repairTime>
-				6.85714293
+				2.28001642
 				<!--BW_String-->
 			</repairTime>
 		</Chassis_G100_Gtraktor_Krupp>
@@ -4033,7 +4033,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_3</primaryArmor>
 			<weight>2000</weight>
-			<maxHealth>114</maxHealth>
+			<maxHealth>120</maxHealth>
 			<rotationSpeed>41</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>80</maxHealth>
@@ -4079,7 +4079,7 @@
 						</maxPitch>
 					</pitchLimits>
 					<shotDispersionRadius>
-						0.55
+						0.45
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<invisibilityFactorAtShot>
@@ -4087,7 +4087,7 @@
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<aimingTime>
-						2.2
+						1.8
 						<!--BW_String-->
 					</aimingTime>
 					<reloadTime>
@@ -4096,11 +4096,11 @@
 					</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.16
+							0.10
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
-							4.0
+							3.0
 							<!--BW_String-->
 						</afterShot>
 						<whileGunDamaged>

@@ -10,7 +10,7 @@
 	<supplySlots>1 1 1 6 6 6 8 8 8</supplySlots>
 	<speedLimits>
 		<forward>24</forward>
-		<backward>12</backward>
+		<backward>15</backward>
 	</speedLimits>
 	<invisibility>
 		<moving>
@@ -94,7 +94,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_7 armor_4</primaryArmor>
 		<weight>9960</weight>
-		<maxHealth>324</maxHealth>
+		<maxHealth>450</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>100</maxHealth>
 			<maxRegenHealth>70</maxRegenHealth>
@@ -5080,7 +5080,7 @@
 				</customizableVehicleAreas>
 			</customization>
 			<repairTime>
-				5.71428585
+				2.85003138
 				<!--BW_String-->
 			</repairTime>
 		</Chassis_GB42_Valentine_AT>
@@ -7784,7 +7784,7 @@
 				</customizableVehicleAreas>
 			</customization>
 			<repairTime>
-				5.71428585
+				2.85003138
 				<!--BW_String-->
 			</repairTime>
 		</Chassis_GB42_Valentine_AT_2>
@@ -7802,7 +7802,7 @@
 				<armor_3>0</armor_3>
 			</armor>
 			<weight>100</weight>
-			<maxHealth>81</maxHealth>
+			<maxHealth>110</maxHealth>
 			<rotationSpeed>44</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>100</maxHealth>
@@ -7839,24 +7839,27 @@
 						<gun>15</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.41
+						0.36
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
 						2.8
 						<!--BW_String-->
 					</reloadTime>
-					<aimingTime>2</aimingTime>
+					<aimingTime>
+						1.7
+						<!--BW_String-->
+					</aimingTime>
 					<invisibilityFactorAtShot>
 						0.28
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.12
+							0.10
 							<!--BW_String-->
 						</turretRotation>
-						<afterShot>4</afterShot>
+						<afterShot>2</afterShot>
 						<whileGunDamaged>
 							2.0
 							<!--BW_String-->
@@ -7945,13 +7948,13 @@
 						<gun>30</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.49
+						0.45
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>8</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.16
+							0.10
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>4</afterShot>
@@ -7961,7 +7964,7 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						2.5
+						2.1
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -8074,7 +8077,7 @@
 							0.08
 							<!--BW_String-->
 						</turretRotation>
-						<afterShot>3</afterShot>
+						<afterShot>2</afterShot>
 						<whileGunDamaged>
 							2.0
 							<!--BW_String-->
@@ -8419,24 +8422,6 @@
 		</Turret_1_GB42_Valentine_AT>
 	</turrets0>
 	<engines>
-		<AEC_A189>
-			shared
-			<unlocks>
-				<engine>
-					AEC_A1909
-					<cost>180</cost>
-				</engine>
-			</unlocks>
-		</AEC_A189>
-		<AEC_A1909>
-			shared
-			<unlocks>
-				<engine>
-					GMC_6-71_Mk10
-					<cost>700</cost>
-				</engine>
-			</unlocks>
-		</AEC_A1909>
 		<GMC_6-71_Mk10>
 			shared
 			<unlocks>
@@ -8452,52 +8437,11 @@
 		<Medium>shared</Medium>
 	</fuelTanks>
 	<radios>
-		<N11>
-			shared
-			<unlocks>
-				<radio>
-					N9
-					<cost>610</cost>
-				</radio>
-			</unlocks>
-		</N11>
-		<N9>
-			shared
-			<unlocks>
-				<radio>
-					N19Mk1
-					<cost>1480</cost>
-				</radio>
-			</unlocks>
-		</N9>
-		<N19Mk1>
-			shared
-			<unlocks>
-				<radio>
-					N19Mk2
-					<cost>3600</cost>
-				</radio>
-			</unlocks>
-		</N19Mk1>
 		<N19Mk2>shared</N19Mk2>
 	</radios>
 	<physics>
 		<detailed>
 			<engines>
-				<AEC_A189>
-					<smplEnginePower>
-						142.733
-						<!--BW_String-->
-					</smplEnginePower>
-					<smplFwMaxSpeed>24</smplFwMaxSpeed>
-				</AEC_A189>
-				<AEC_A1909>
-					<smplEnginePower>
-						138.5038
-						<!--BW_String-->
-					</smplEnginePower>
-					<smplFwMaxSpeed>24</smplFwMaxSpeed>
-				</AEC_A1909>
 				<GMC_6-71_Mk10>
 					<smplEnginePower>
 						145.9048

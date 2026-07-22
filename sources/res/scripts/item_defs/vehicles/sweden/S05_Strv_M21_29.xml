@@ -145,7 +145,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>5328</weight>
-		<maxHealth>224</maxHealth>
+		<maxHealth>200</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>65</maxHealth>
 			<maxRegenHealth>45</maxRegenHealth>
@@ -2163,11 +2163,11 @@
 			<rotationSpeed>35</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
-					0.32
+					0.10
 					<!--BW_String-->
 				</vehicleMovement>
 				<vehicleRotation>
-					0.32
+					0.10
 					<!--BW_String-->
 				</vehicleRotation>
 			</shotDispersionFactors>
@@ -3502,7 +3502,7 @@
 				</customizableVehicleAreas>
 			</customization>
 			<repairTime>
-				3.41880345
+				1.70988882
 				<!--BW_String-->
 			</repairTime>
 		</Chassis_S05_Strv_M21_29>
@@ -3536,7 +3536,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>500</weight>
-			<maxHealth>56</maxHealth>
+			<maxHealth>80</maxHealth>
 			<rotationSpeed>28</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>50</maxHealth>
@@ -3546,7 +3546,7 @@
 					<!--BW_String-->
 				</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>290</circularVisionRadius>
+			<circularVisionRadius>300</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>30</maxHealth>
 				<maxRegenHealth>15</maxRegenHealth>
@@ -3590,20 +3590,24 @@
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<shotDispersionRadius>
-						0.44
+						0.40
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						2.6
+						2.5
 						<!--BW_String-->
 					</reloadTime>
+					<aimingTime>
+						2.0
+						<!--BW_String-->
+					</aimingTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.12
+							0.10
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
-							4.0
+							3.0
 							<!--BW_String-->
 						</afterShot>
 						<whileGunDamaged>
@@ -3673,7 +3677,7 @@
 				</_37mm_kanon_m_Skoda>
 				<_20mm_akan_m_Madsen>
 					shared
-					<maxAmmo>1110</maxAmmo>
+					<maxAmmo>1116</maxAmmo>
 					<unlocks>
 						<vehicle>
 							S03_Strv_M38
@@ -3700,21 +3704,25 @@
 						<minPitch>0 -15 1 -15</minPitch>
 						<maxPitch>0 10 1 10</maxPitch>
 					</pitchLimits>
+					<shotDispersionRadius>
+						0.40
+						<!--BW_String-->
+					</shotDispersionRadius>
 					<invisibilityFactorAtShot>
 						0.238
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<aimingTime>
-						2.5
+						2.0
 						<!--BW_String-->
 					</aimingTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.12
+							0.10
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
-							1.5
+							1.0
 							<!--BW_String-->
 						</afterShot>
 						<whileGunDamaged>
@@ -3723,9 +3731,13 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<clip>
-						<count>10</count>
+						<count>12</count>
 						<rate>200</rate>
 					</clip>
+					<burst>
+						<count>3</count>
+						<rate>350</rate>
+					</burst>
 					<models>
 						<undamaged>vehicles/sweden/S05_Strv_M21_29/normal/lod0/Gun_02.model</undamaged>
 						<destroyed>vehicles/sweden/S05_Strv_M21_29/crash/lod0/Gun_02.model</destroyed>
@@ -4336,7 +4348,7 @@
 		<detailed>
 			<engines>
 				<Daimler_Benz_m_1910>
-					<smplEnginePower>80</smplEnginePower>
+					<smplEnginePower>120</smplEnginePower>
 					<smplFwMaxSpeed>25</smplFwMaxSpeed>
 				</Daimler_Benz_m_1910>
 			</engines>

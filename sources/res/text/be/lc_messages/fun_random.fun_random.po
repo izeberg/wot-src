@@ -323,178 +323,6 @@ msgstr "?empty?"
 msgid "modes/development/userName"
 msgstr "?empty?"
 
-msgid "modes/fep1431/capsUserName"
-msgstr "ПРАЗДНИЧНАЯ АРКАДА"
-
-msgid "modes/fep1431/detailedUserName"
-msgstr "%(modeName)s"
-
-msgid "modes/fep1431/metaProgressionTooltip/header/active"
-msgstr "Задача Аркады. Этап: %(done)s{par_Open}/%(total)s{par_Close}"
-
-msgid "modes/fep1431/metaProgressionTooltip/reward/tip"
-msgstr "Прагрэс выканання ўлічваецца ў любым падрэжыме Аркады."
-
-msgid "modes/fep1431/metaProgressionTooltip/subheader"
-msgstr "Задача Аркады"
-
-msgid "modes/fep1431/metaProgressionTooltip/timer/completedResettable"
-msgstr "да новай задачы Аркады"
-
-msgid "modes/fep1431/modeSubSelector/progression/info"
-msgstr "Прагрэс выканання ўлічваецца ў любым падрэжыме Аркады."
-
-msgid "modes/fep1431/modeSubSelector/progression/timer"
-msgstr "да новай задачы Аркады"
-
-msgid "modes/fep1431/mode_selector/battleCondition"
-msgstr "15x15"
-
-msgid "modes/fep1431/mode_selector/description"
-msgstr "Экспериментальные бои с изменёнными ТТХ"
-
-msgid "modes/fep1431/mode_selector/levelCondition"
-msgstr "{parSecondary_open}I{parSecondary_close} %(levels)s&nbsp;узроўні"
-
-msgid "modes/fep1431/mode_selector/progression/resettable"
-msgstr "да новай задачы Аркады"
-
-msgid "modes/fep1431/notification/finishSubModes/withProgression"
-msgstr "Падрэжым %(subModeName)s завершаны: прагрэсія скінутая."
-
-msgid "modes/fep1431/notification/finishSubModes/withoutProgression"
-msgstr "Падрэжым %(subModeName)s завершаны."
-
-msgid "modes/fep1431/notification/newSubModes/withProgression"
-msgstr "Даступныя новыя ўзнагароды і падрэжым %(subModeName)s."
-
-msgid "modes/fep1431/notification/newSubModes/withoutProgression"
-msgstr "Даступны новы падрэжым — %(subModeName)s."
-
-msgid "modes/fep1431/notification/switchOffSubModes"
-msgstr "Падрэжым %(subModeName)s недаступны: вядуцца тэхнічныя работы."
-
-msgid "modes/fep1431/notification/switchOnSubModes"
-msgstr "Падрэжым %(subModeName)s зноў даступны."
-
-msgid "modes/fep1431/progression/congratulation/descr"
-msgstr "Вы прайшлі ўсе этапы Аркады"
-
-msgid "modes/fep1431/progression/info"
-msgstr "Задачу можна выконваць у любым падрэжыме Аркады."
-
-msgid "modes/fep1431/progression/title"
-msgstr "ЗАДАЧА АРКАДЫ"
-
-msgid "modes/fep1431/scheduler/notification/available"
-msgstr "Баі падрэжыму %(subModeName)s зноў даступныя."
-
-msgid "modes/fep1431/scheduler/notification/available/title"
-msgstr "Рэжым спынення агню"
-
-msgid "modes/fep1431/scheduler/notification/primeTime"
-msgstr ""
-"Баі падрэжыму %(subModeName)s недаступныя да заканчэння рэжыму спынення "
-"агню."
-
-msgid "modes/fep1431/scheduler/notification/primeTime/title"
-msgstr "Рэжым спынення агню"
-
-msgid "modes/fep1431/tooltip/filter/body"
-msgstr "Паказваць/схаваць прыдатную тэхніку для рэжыму «Аркада»."
-
-msgid "modes/fep1431/tooltip/filter/header"
-msgstr "Аркадная тэхніка"
-
-msgid "modes/fep1431/userName"
-msgstr "Праздничная Аркада"
-
-msgid "modes/fep1432/capsUserName"
-msgstr "ПРАЗДНИЧНАЯ АРКАДА"
-
-msgid "modes/fep1432/detailedUserName"
-msgstr "%(modeName)s"
-
-msgid "modes/fep1432/metaProgressionTooltip/header/active"
-msgstr "Задача Аркады. Этап: %(done)s{par_Open}/%(total)s{par_Close}"
-
-msgid "modes/fep1432/metaProgressionTooltip/reward/tip"
-msgstr "Прагрэс выканання ўлічваецца ў любым падрэжыме Аркады."
-
-msgid "modes/fep1432/metaProgressionTooltip/subheader"
-msgstr "Задача Аркады"
-
-msgid "modes/fep1432/metaProgressionTooltip/timer/completedResettable"
-msgstr "да новай задачы Аркады"
-
-msgid "modes/fep1432/modeSubSelector/progression/info"
-msgstr "Прагрэс выканання ўлічваецца ў любым падрэжыме Аркады."
-
-msgid "modes/fep1432/modeSubSelector/progression/timer"
-msgstr "да новай задачы Аркады"
-
-msgid "modes/fep1432/mode_selector/battleCondition"
-msgstr "15x15"
-
-msgid "modes/fep1432/mode_selector/description"
-msgstr "Экспериментальные бои с изменёнными ТТХ"
-
-msgid "modes/fep1432/mode_selector/levelCondition"
-msgstr "{parSecondary_open}I{parSecondary_close} %(levels)s&nbsp;узроўні"
-
-msgid "modes/fep1432/mode_selector/progression/resettable"
-msgstr "да новай задачы Аркады"
-
-msgid "modes/fep1432/notification/finishSubModes/withProgression"
-msgstr "Падрэжым %(subModeName)s завершаны: прагрэсія скінутая."
-
-msgid "modes/fep1432/notification/finishSubModes/withoutProgression"
-msgstr "Падрэжым %(subModeName)s завершаны."
-
-msgid "modes/fep1432/notification/newSubModes/withProgression"
-msgstr "Даступныя новыя ўзнагароды і падрэжым %(subModeName)s."
-
-msgid "modes/fep1432/notification/newSubModes/withoutProgression"
-msgstr "Даступны новы падрэжым — %(subModeName)s."
-
-msgid "modes/fep1432/notification/switchOffSubModes"
-msgstr "Падрэжым %(subModeName)s недаступны: вядуцца тэхнічныя работы."
-
-msgid "modes/fep1432/notification/switchOnSubModes"
-msgstr "Падрэжым %(subModeName)s зноў даступны."
-
-msgid "modes/fep1432/progression/congratulation/descr"
-msgstr "Вы прайшлі ўсе этапы Аркады"
-
-msgid "modes/fep1432/progression/info"
-msgstr "Задачу можна выконваць у любым падрэжыме Аркады."
-
-msgid "modes/fep1432/progression/title"
-msgstr "ЗАДАЧА АРКАДЫ"
-
-msgid "modes/fep1432/scheduler/notification/available"
-msgstr "Баі падрэжыму %(subModeName)s зноў даступныя."
-
-msgid "modes/fep1432/scheduler/notification/available/title"
-msgstr "Рэжым спынення агню"
-
-msgid "modes/fep1432/scheduler/notification/primeTime"
-msgstr ""
-"Баі падрэжыму %(subModeName)s недаступныя да заканчэння рэжыму спынення "
-"агню."
-
-msgid "modes/fep1432/scheduler/notification/primeTime/title"
-msgstr "Рэжым спынення агню"
-
-msgid "modes/fep1432/tooltip/filter/body"
-msgstr "Паказваць/схаваць прыдатную тэхніку для рэжыму «Аркада»."
-
-msgid "modes/fep1432/tooltip/filter/header"
-msgstr "Аркадная тэхніка"
-
-msgid "modes/fep1432/userName"
-msgstr "Праздничная Аркада"
-
 msgid "modes/undefined/capsUserName"
 msgstr "АРКАДА"
 
@@ -532,7 +360,7 @@ msgid "modes/undefined/mode_selector/progression/resettable"
 msgstr "да новай задачы Аркады"
 
 msgid "modes/undefined/notification/finishSubModes/withProgression"
-msgstr "Падрэжым %(subModeName)s завершаны: прагрэсія скінутая."
+msgstr "Падрэжым %(subModeName)s завершаны: прагрэсія скінута."
 
 msgid "modes/undefined/notification/finishSubModes/withoutProgression"
 msgstr "Падрэжым %(subModeName)s завершаны."
@@ -634,8 +462,7 @@ msgid "notification/newSubModes/withoutProgression"
 msgstr "Даступныя новыя падрэжымы: %(subModesNames)s."
 
 msgid "notification/progressionComplete"
-msgstr ""
-"Вы выканалі ўсе даступныя задачы рэжыму %(modeName)s. Атрыманая ўзнагарода:"
+msgstr "Вы выполнили все доступные задачи %(modeName)s. Получена награда:"
 
 msgid "notification/progressionComplete/resetLessDay"
 msgstr ""
@@ -648,8 +475,7 @@ msgstr ""
 "выканаць задачы яшчэ раз."
 
 msgid "notification/progressionStageComplete"
-msgstr ""
-"Вы выканалі задач рэжыму %(modeName)s: %(counter)s. Атрыманая ўзнагарода:"
+msgstr "Вы выполнили задач %(modeName)s: %(counter)s. Получена награда:"
 
 msgid "notification/subModesSeparator"
 msgstr ", "
@@ -859,100 +685,6 @@ msgstr "?empty?"
 
 msgid "sub_modes/development/userName/quoted"
 msgstr "?empty?"
-
-msgid "sub_modes/fep1431/capsUserName"
-msgstr "Праздничная Аркада"
-
-msgid "sub_modes/fep1431/detailsHelp/page1/description"
-msgstr ""
-"В этом запуске у всей техники увеличена прочность, мощность двигателей "
-"и скорость перезарядки. Отличное подспорье для бодрого танкового рубилова "
-"на предельно малых дистанциях."
-
-msgid "sub_modes/fep1431/detailsHelp/page1/title"
-msgstr "Отметим праздники весело!"
-
-msgid "sub_modes/fep1431/detailsHelpHint/description"
-msgstr "для знакомства с особенностями режима"
-
-msgid "sub_modes/fep1431/detailsHelpHint/press"
-msgstr "Націсніце"
-
-msgid "sub_modes/fep1431/detailsHelpTitle"
-msgstr "Праздничная Аркада"
-
-msgid "sub_modes/fep1431/subModeCard/battleCondition"
-msgstr "?empty?"
-
-msgid "sub_modes/fep1431/subModeCard/description"
-msgstr "Праздничная Аркада"
-
-msgid "sub_modes/fep1431/subModeCard/levelCondition"
-msgstr "?empty?"
-
-msgid "sub_modes/fep1431/subModeCard/title"
-msgstr "Праздничная Аркада"
-
-msgid "sub_modes/fep1431/tips/tip1/description"
-msgstr ""
-"Больше прочности, мощнее двигатели, быстрее стрельба — всё, что нужно "
-"для отличного времяпрепровождения в праздничные дни."
-
-msgid "sub_modes/fep1431/tips/tip1/title"
-msgstr "Изменённые ТТХ"
-
-msgid "sub_modes/fep1431/userName"
-msgstr "Праздничная Аркада"
-
-msgid "sub_modes/fep1431/userName/quoted"
-msgstr "Праздничная Аркада"
-
-msgid "sub_modes/fep1432/capsUserName"
-msgstr "Праздничная Аркада"
-
-msgid "sub_modes/fep1432/detailsHelp/page1/description"
-msgstr ""
-"В этом запуске у всей техники увеличена прочность, мощность двигателей "
-"и скорость перезарядки. Отличное подспорье для бодрого танкового рубилова "
-"на предельно малых дистанциях."
-
-msgid "sub_modes/fep1432/detailsHelp/page1/title"
-msgstr "Отметим праздники весело!"
-
-msgid "sub_modes/fep1432/detailsHelpHint/description"
-msgstr "для знакомства с особенностями режима"
-
-msgid "sub_modes/fep1432/detailsHelpHint/press"
-msgstr "Націсніце"
-
-msgid "sub_modes/fep1432/detailsHelpTitle"
-msgstr "Праздничная Аркада"
-
-msgid "sub_modes/fep1432/subModeCard/battleCondition"
-msgstr "?empty?"
-
-msgid "sub_modes/fep1432/subModeCard/description"
-msgstr "Праздничная Аркада"
-
-msgid "sub_modes/fep1432/subModeCard/levelCondition"
-msgstr "?empty?"
-
-msgid "sub_modes/fep1432/subModeCard/title"
-msgstr "Праздничная Аркада"
-
-msgid "sub_modes/fep1432/tips/tip1/description"
-msgstr ""
-"Больше прочности, мощнее двигатели, быстрее стрельба — всё, что нужно "
-"для отличного времяпрепровождения в праздничные дни."
-
-msgid "sub_modes/fep1432/tips/tip1/title"
-msgstr "Изменённые ТТХ"
-
-msgid "sub_modes/fep1432/userName"
-msgstr "Праздничная Аркада"
-
-msgid "sub_modes/fep1432/userName/quoted"
-msgstr "Праздничная Аркада"
 
 msgid "sub_modes/undefined/capsUserName"
 msgstr "UNKNOWN SUB MODE NAME"

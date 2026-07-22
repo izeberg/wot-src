@@ -10,7 +10,7 @@
 	<supplySlots>2 1 1 6 6 6 7 8 8 8</supplySlots>
 	<postProgressionTree>role_MT_sniper</postProgressionTree>
 	<speedLimits>
-		<forward>60</forward>
+		<forward>55</forward>
 		<backward>30</backward>
 	</speedLimits>
 	<invisibility>
@@ -1893,7 +1893,7 @@
 					</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.1
+							0.12
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
@@ -1906,7 +1906,7 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						2.2
+						2.3
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -2018,7 +2018,7 @@
 						<gun>10</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.37
+						0.38
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
@@ -2027,7 +2027,7 @@
 					</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.1
+							0.12
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
@@ -2040,7 +2040,7 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						2.2
+						2.3
 						<!--BW_String-->
 					</aimingTime>
 					<pitchLimits>
@@ -2923,7 +2923,7 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						2.2
+						2.3
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -3049,7 +3049,7 @@
 						<gun>10</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.36
+						0.37
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
@@ -3058,7 +3058,7 @@
 					</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.08
+							0.10
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
@@ -3070,7 +3070,10 @@
 							<!--BW_String-->
 						</whileGunDamaged>
 					</shotDispersionFactors>
-					<aimingTime>2</aimingTime>
+					<aimingTime>
+						2.3
+						<!--BW_String-->
+					</aimingTime>
 					<pitchLimits>
 						<minPitch>0 -15  1 -15</minPitch>
 						<maxPitch>0 5 1 5</maxPitch>
@@ -3210,7 +3213,7 @@
 					</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.06
+							0.10
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>3</afterShot>
@@ -4117,11 +4120,11 @@
 			<engines>
 				<Rolls_Royce_B80P>
 					<smplEnginePower>210</smplEnginePower>
-					<smplFwMaxSpeed>60</smplFwMaxSpeed>
+					<smplFwMaxSpeed>55</smplFwMaxSpeed>
 				</Rolls_Royce_B80P>
 				<Daimler_DQ450>
 					<smplEnginePower>220</smplEnginePower>
-					<smplFwMaxSpeed>60</smplFwMaxSpeed>
+					<smplFwMaxSpeed>55</smplFwMaxSpeed>
 				</Daimler_DQ450>
 			</engines>
 			<chassis>

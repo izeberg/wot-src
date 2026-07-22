@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-1.534268 -0.179538 -1.566826</min>
+		<max>1.410812 1.209686 1.208002</max>
+	</visibilityBox>
+	<parent>vehicles/sweden/S35_VH_105_X60_alt_II/crash/lod1/Turret_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/sweden/S35_VH_105_X60_alt_II/crash/lod0/Turret_01</nodefullVisual>
+</root>

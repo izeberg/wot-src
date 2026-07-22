@@ -8,6 +8,8 @@ package net.wg.gui.lobby.hangar.quests
       
       private var _alias:String = "";
       
+      private var _registerAlias:String = "";
+      
       public function HangarWidgetDAAPI()
       {
          super();
@@ -41,6 +43,16 @@ package net.wg.gui.lobby.hangar.quests
       public function get visibleHeight() : int
       {
          return 0;
+      }
+      
+      public function get registerAlias() : String
+      {
+         return this._registerAlias;
+      }
+      
+      public function set registerAlias(param1:String) : void
+      {
+         this._registerAlias = param1;
       }
    }
 }

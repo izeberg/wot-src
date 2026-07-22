@@ -16,7 +16,7 @@ from chat_shared import MapRemovedFromBLReason, SYS_MESSAGE_TYPE, decompressSysM
 from constants import ARENA_BONUS_TYPE, ARENA_GUI_TYPE, AUTO_MAINTENANCE_RESULT, AUTO_MAINTENANCE_TYPE, FAIRPLAY_VIOLATIONS, FINISH_REASON, INVOICE_ASSET, KICK_REASON, KICK_REASON_NAMES, NC_MESSAGE_PRIORITY, NC_MESSAGE_TYPE, OFFER_TOKEN_PREFIX, PREBATTLE_TYPE, PREMIUM_ENTITLEMENTS, PREMIUM_TYPE, RESTRICTION_TYPE, SYS_MESSAGE_CLAN_EVENT, SYS_MESSAGE_CLAN_EVENT_NAMES, SYS_MESSAGE_FORT_EVENT_NAMES, SwitchState, SECONDS_IN_DAY, BattleRoyaleResult
 from gui.impl.lobby.stronghold.stronghold_helpers import CLAN_SEASON_PROGRESS_PREFIX
 from gui.server_events.formatters import formatGold
-from play_streak.play_streak_constants import RANDOM_GOODIE_TOKEN, RANDOM_EQUIPMENT_TOKEN
+from gui.shared.gui_items.customization.c11n_helpers import getProgressionStyleCamouflage
 from debug_utils import LOG_ERROR
 from dog_tags_common.components_config import componentConfigAdapter
 from dog_tags_common.config.common import ComponentViewType
@@ -54,6 +54,7 @@ from gui.shared.formatters.currency import applyAll, getBWFormatter, getStyle
 from gui.shared.formatters.time_formatters import RentDurationKeys, getTillTimeByResource, getTimeLeftInfo
 from gui.shared.gui_items.Tankman import Tankman
 from gui.shared.gui_items.Vehicle import getShortUserName, getUserName, getWotPlusExclusiveVehicleTypeUserName
+from preferred_maps import SlotTypeId, getSlotTypeName
 from gui.shared.gui_items.crew_skin import localizedFullName
 from gui.shared.gui_items.dossier.achievements.abstract.class_progress import ClassProgressAchievement
 from gui.shared.gui_items.dossier.factories import getAchievementFactory
@@ -81,11 +82,10 @@ from messenger.ext import passCensor
 from messenger.formatters import NCContextItemFormatter, TimeFormatter
 from messenger.formatters.service_channel_helpers import EOL, MessageData, getCustomizationItem, getCustomizationItemData, getRewardsForQuests, mergeRewards, popCollectionEntitlements, parseTokenBonusCount
 from messenger.proto.bw.wrappers import ServiceChannelMessage
-from messenger.m_constants import GFNotificationTemplates
 from nations import NAMES
 from shared_utils import BoundMethodWeakref, first
 from skeletons.gui.battle_matters import IBattleMattersController
-from skeletons.gui.game_control import IBattlePassController, IBattleRoyaleController, ICollectionsSystemController, IEpicBattleMetaGameController, IFunRandomController, IMapboxController, IRankedBattlesController, IResourceWellController, IWinbackController, IWotPlusController, IBRProgressionOnTokensController, IEarlyAccessController, IGuiLootBoxesController, ILimitedUIController
+from skeletons.gui.game_control import IBattlePassController, IBattleRoyaleController, ICollectionsSystemController, IEpicBattleMetaGameController, IFunRandomController, IMapboxController, IRankedBattlesController, IResourceWellController, IWinbackController, IWotPlusController, IBRProgressionOnTokensController, IEarlyAccessController, IGuiLootBoxesController, ILimitedUIController, ITankAcademyController
 from skeletons.gui.goodies import IGoodiesCache
 from skeletons.gui.lobby_context import ILobbyContext
 from skeletons.gui.offers import IOffersDataProvider
@@ -491,6 +491,7 @@ class ServerRebootCancelledFormatter(ServiceChannelFormatter):
 class FormatSpecialReward(object):
     __lobbyContext = dependency.descriptor(ILobbyContext)
     __battleMattersController = dependency.descriptor(IBattleMattersController)
+    __tankAcademyController = dependency.descriptor(ITankAcademyController)
     __winbackController = dependency.descriptor(IWinbackController)
     __funRandomController = dependency.descriptor(IFunRandomController)
 
@@ -545,6 +546,7 @@ class FormatSpecialReward(object):
     def __extractExcludedItems(self, data):
         excludeFilters = (
          self.__battleMattersController.isBattleMattersQuestID,
+         self.__tankAcademyController.isTankAcademyQuestID,
          self.__funRandomController.progressions.isProgressionExecutor,
          self.__winbackController.isWinbackQuest)
         excludedQuests = (qID for qID in data.get(b'completedQuestIDs', set()) if any(excludeFilter(qID) for excludeFilter in excludeFilters))
@@ -3027,6 +3029,11 @@ class QuestAchievesFormatter(object):
                         itemsNames.append(makeHtmlString(b'html_templates:lobby/quests/bonuses', b'lootBoxKey', {b'name': text, b'count': intCount}))
                 elif tokenID == CLAN_SEASON_PROGRESS_PREFIX:
                     itemsNames.append(backport.text(R.strings.messenger.serviceChannelMessages.battleResults.quests.items.name(), name=backport.text(R.strings.quests.bonusName.clan_season_progress()), count=count))
+                elif tokenID.startswith(constants.LOOTBOX_CUSTOMIZATION_PROGRESS_PREFIX):
+                    _, style, progressLevel = tokenID.split(b':')
+                    styleID, branchID = style.split(b'_')
+                    camo = getProgressionStyleCamouflage(int(styleID), int(branchID), int(progressLevel))
+                    itemsNames.append(backport.text(R.strings.quests.bonusName.styleProgress(), name=camo.userName, progress=int(progressLevel)))
 
         entitlementsList = [ (eID, eData.get(b'count', 0)) for eID, eData in data.get(b'entitlements', {}).iteritems() ]
         entitlementsStr = InvoiceReceivedFormatter.getEntitlementsString(entitlementsList)
@@ -3076,11 +3083,28 @@ class QuestAchievesFormatter(object):
             strDogTags = cls._processDogTags(data.get(b'dogTagComponents', {}))
             if strDogTags:
                 result.append(strDogTags)
+            preferredMapSlots = data.get(b'preferredMapSlots', {})
+            if preferredMapSlots:
+                slotNames = []
+                for slotID, days in preferredMapSlots.iteritems():
+                    slotName = getSlotTypeName(slotID).value
+                    bonusName = R.strings.quests.bonusName.dyn(slotName)
+                    name = backport.text(bonusName()) if bonusName.exists() else slotName
+                    slotNames.append(backport.text(R.strings.messenger.serviceChannelMessages.battleResults.quests.items.name(), name=name, count=backport.getIntegralFormat(days)))
+
+                if slotNames:
+                    result.append(cls.__makeQuestsAchieve(b'battleQuestsItems', names=(b', ').join(slotNames)))
         return result
 
     @classmethod
-    def _processTokens(cls, tokens):
-        return b''
+    def _processTokens(cls, data):
+        result = []
+        for token in data.get(b'tokens', {}).iterkeys():
+            tankmanTokenResult = _processTankmanToken(token)
+            if tankmanTokenResult:
+                result.append(tankmanTokenResult)
+
+        return (b'\n').join(result)
 
     @classmethod
     def _processDogTags(cls, dogTags):
@@ -4215,12 +4239,34 @@ class PiggyBankSmashedFormatter(ServiceChannelFormatter):
         return []
 
 
+class ExcludedMapSlotKillSwitchFormatter(ServiceChannelFormatter):
+    __TEMPLATES = {True: b'RewardsExcludedMapSlotEnabledMessage', 
+       False: b'RewardsExcludedMapSlotDisabledMessage'}
+
+    def format(self, message, *args):
+        if not message or not message.data:
+            return [MessageData(None, None)]
+        else:
+            slotType = message.data.get(b'slotType')
+            isEnabled = message.data.get(b'enabled')
+            if slotType is None or isEnabled is None:
+                return [MessageData(None, None)]
+            if slotType != SlotTypeId.REWARDS.value:
+                return [MessageData(None, None)]
+            template = self.__TEMPLATES.get(bool(isEnabled))
+            if template is None:
+                return [MessageData(None, None)]
+            formatted = g_settings.msgTemplates.format(template, {})
+            guiSettings = self._getGuiSettings(message, template, priorityLevel=NC_MESSAGE_PRIORITY.MEDIUM)
+            return [MessageData(formatted, guiSettings)]
+
+
 class BlackMapRemovedFormatter(ServiceChannelFormatter):
     __TEMPLATE = b'BlackMapRemovedMessage'
     __REASONS_SETTINGS = {MapRemovedFromBLReason.MAP_DISABLED: {b'text': R.strings.messenger.serviceChannelMessages.blackMapRemoved.mapDisabled(), 
                                              b'priority': NC_MESSAGE_PRIORITY.MEDIUM}, 
        MapRemovedFromBLReason.SLOT_DISABLED: {b'text': R.strings.messenger.serviceChannelMessages.blackMapRemoved.slotDisabled(), 
-                                              b'priority': NC_MESSAGE_PRIORITY.LOW}}
+                                              b'priority': NC_MESSAGE_PRIORITY.MEDIUM}}
 
     def format(self, message, *args):
         if message.data:
@@ -6095,72 +6141,6 @@ class GFSMFormatter(ClientSysMessageFormatter):
         guiSettings = self._getGuiSettings(message, template)
         return [
          MessageData(formatted, guiSettings)]
-
-
-class PlayStreakRewardsFormatter(ServiceChannelFormatter):
-    __TEMPLATE = GFNotificationTemplates.PLAY_STREAK_REWARDS
-
-    def format(self, message, *args):
-        formatted = g_settings.msgTemplates.format(self.__TEMPLATE, data={b'linkageData': message})
-        guiSettings = self._getGuiSettings(message, self.__TEMPLATE)
-        return [
-         MessageData(formatted, guiSettings)]
-
-
-class PlayStreakSysMessageFormatter(ServiceChannelFormatter):
-
-    def format(self, message, *args):
-        assetType = message.data.get(b'assetType')
-        if not assetType:
-            return [MessageData(None, None)]
-        else:
-            formatted = g_settings.msgTemplates.format(assetType, ctx={b'savedData': message.data.get(b'savedData')})
-            return [
-             MessageData(formatted, self._getGuiSettings(message, assetType))]
-
-
-class PlayStreakSysMessageRewardsFormatter(WaitItemsSyncFormatter):
-    __TEMPLATE = b'PlayStreakCongratsWithRewards'
-    _SEPARATOR = b'<br/>'
-    __itemsCache = dependency.descriptor(IItemsCache)
-
-    @adisp_async
-    @adisp_process
-    def format(self, message, callback=None):
-        fmt = b''
-        isSynced = yield self._waitForSyncItems()
-        if message.data and isSynced:
-            if message.data.get(b'periodicRewards'):
-                fmt = backport.text(R.strings.messenger.serviceChannelMessages.playStreakCongratsWithRewards.regular.body()) + self._SEPARATOR
-            invoice = message.data.get(b'invoice')
-            tokens = invoice.pop(b'tokens', None)
-            if tokens:
-                for tokenID, tokenData in tokens.iteritems():
-                    intCount = tokenData.get(b'count', 1)
-                    if tokenID.startswith(constants.LOOTBOX_TOKEN_PREFIX) and intCount > 0:
-                        lootBox = self.__itemsCache.items.tokens.getLootBoxByTokenID(tokenID)
-                        prefix = backport.text(R.strings.messenger.serviceChannelMessages.playStreakCongratsWithRewards.random.prefix())
-                        if lootBox:
-                            fmt += prefix + makeHtmlString(b'html_templates:lobby/quests/bonuses', b'rawLootBox', {b'name': lootBox.getUserName(), b'count': intCount})
-                    elif tokenID.startswith(RANDOM_GOODIE_TOKEN):
-                        fmt += backport.text(R.strings.messenger.serviceChannelMessages.playStreakCongratsWithRewards.random.goodie()) + self._SEPARATOR
-                    elif tokenID.startswith(RANDOM_EQUIPMENT_TOKEN):
-                        fmt += backport.text(R.strings.messenger.serviceChannelMessages.playStreakCongratsWithRewards.random.equipment()) + self._SEPARATOR
-
-            invoice.pop(b'version', None)
-            if invoice:
-                fmt += QuestAchievesFormatter.formatQuestAchieves(invoice, False)
-            if fmt:
-                formatted = g_settings.msgTemplates.format(self.__TEMPLATE, ctx={b'text': fmt, 
-                   b'streakLength': message.data.get(b'periodicRewards')})
-                settings = self._getGuiSettings(message, self.__TEMPLATE)
-                settings.showAt = BigWorld.time()
-                callback([MessageData(formatted, settings)])
-            else:
-                callback([MessageData(None, None)])
-        else:
-            callback([MessageData(None, None)])
-        return
 
 
 class LimitedUIContentUnlockedFormatter(ClientSysMessageFormatter):

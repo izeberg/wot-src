@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>stg_13_Oil_01_xrayShape.vertices</vertices>
+			<primitive>stg_13_Oil_01_xrayShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/custom/xray_inside.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						g_freshnelParamsPacked
+						<Vector4>10.000000 3.000000 1.000000 2.000000</Vector4>
+					</property>
+					<property>
+						g_glowColor
+						<Vector4>0.568627 0.568627 0.568627 1.000000</Vector4>
+					</property>
+					<property>
+						g_lightMultipliersPacked
+						<Vector4>0.300000 0.400000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_pervading
+						<Float>0.100000</Float>
+					</property>
+					<property>
+						g_spawnHotHDRColor
+						<Vector4>0.901961 0.207843 0.000000 1.000000</Vector4>
+					</property>
+					<property>
+						g_spawnNoiseTexture
+						<Texture>content/Hangars/h00_armory_yard/environment/Constructor/noise_alpha_mask.dds</Texture>
+					</property>
+					<property>
+						g_spawnTextureTransform
+						<Vector4>4.000000 2.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_transitionStage
+						<Float>1.000000</Float>
+					</property>
+				</material>
+				<groupOrigin>0.033622 0.000000 -0.015072</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-0.056250 -0.217333 -0.266027</min>
+		<max>0.123493 0.217333 0.235883</max>
+	</boundingBox>
+	<geometrySize>90</geometrySize>
+	<minUVDensity>3.674251</minUVDensity>
+</root>

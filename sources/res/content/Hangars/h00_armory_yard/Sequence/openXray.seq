@@ -13,15 +13,15 @@
 			<frame>
 				<startTime>1.000000</startTime>
 				<value>0.138000</value>
-				<inTangent>0.333000</inTangent>
-				<outTangent>0.333000</outTangent>
+				<inTangent>0.393000</inTangent>
+				<outTangent>0.393000</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 			<frame>
 				<startTime>1.666667</startTime>
-				<value>0.360000</value>
-				<inTangent>0.333000</inTangent>
-				<outTangent>0.333000</outTangent>
+				<value>0.400000</value>
+				<inTangent>0.393000</inTangent>
+				<outTangent>0.393000</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 		</track>
@@ -33,35 +33,35 @@
 			<frame>
 				<startTime>1.000000</startTime>
 				<value>0.138000</value>
-				<inTangent>0.333000</inTangent>
-				<outTangent>0.333000</outTangent>
+				<inTangent>0.393000</inTangent>
+				<outTangent>0.393000</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 			<frame>
 				<startTime>1.666667</startTime>
-				<value>0.360000</value>
-				<inTangent>0.333000</inTangent>
-				<outTangent>0.333000</outTangent>
+				<value>0.400000</value>
+				<inTangent>0.393000</inTangent>
+				<outTangent>0.393000</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 		</track>
 		<track>
 			<name>material property float</name>
 			<type>float</type>
-			<identifier>s_nd5</identifier>
+			<identifier>s_nd2</identifier>
 			<property>g_transitionStage</property>
 			<frame>
 				<startTime>1.000000</startTime>
 				<value>0.138000</value>
-				<inTangent>0.333000</inTangent>
-				<outTangent>0.333000</outTangent>
+				<inTangent>0.393000</inTangent>
+				<outTangent>0.393000</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 			<frame>
 				<startTime>1.666667</startTime>
-				<value>0.360000</value>
-				<inTangent>0.333000</inTangent>
-				<outTangent>0.333000</outTangent>
+				<value>0.400000</value>
+				<inTangent>0.393000</inTangent>
+				<outTangent>0.393000</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 		</track>

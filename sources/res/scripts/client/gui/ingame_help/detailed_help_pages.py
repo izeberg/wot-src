@@ -441,11 +441,7 @@ class DualAccuracyPagesBuilder(DetailedHelpPagesBuilder):
     @classmethod
     def buildPages(cls, ctx):
         pages = []
-        if ctx.get('isDualGun'):
-            picture = R.images.gui.maps.icons.battleHelp.dualAccuracy.mechanics()
-        else:
-            picture = R.images.gui.maps.icons.battleHelp.dualAccuracy.mechanics_without_indication()
-        addPage(pages, buildTitle(ctx), backport.text(R.strings.ingame_help.detailsHelp.dualAccuracy.mechanics.title()), text_styles.mainBig(backport.text(R.strings.ingame_help.detailsHelp.dualAccuracy.mechanics())), [], [], backport.image(picture), hintCtx=HelpHintContext.MECHANICS)
+        addPage(pages, buildTitle(ctx), backport.text(R.strings.ingame_help.detailsHelp.dualAccuracy.mechanics.title()), text_styles.mainBig(backport.text(R.strings.ingame_help.detailsHelp.dualAccuracy.mechanics())), [], [], backport.image(R.images.gui.maps.icons.battleHelp.dualAccuracy.mechanics()), hintCtx=HelpHintContext.MECHANICS)
         return pages
 
     @classmethod
@@ -453,7 +449,6 @@ class DualAccuracyPagesBuilder(DetailedHelpPagesBuilder):
         hasDualAccuracy = vehicle is not None and vehicle.typeDescriptor.hasDualAccuracy
         ctx['hasUniqueVehicleHelpScreen'] = ctx.get('hasUniqueVehicleHelpScreen') or hasDualAccuracy
         ctx['hasDualAccuracy'] = hasDualAccuracy
-        ctx['isDualGun'] = vehicle is not None and vehicle.typeDescriptor.isDualgunVehicle
         return
 
 

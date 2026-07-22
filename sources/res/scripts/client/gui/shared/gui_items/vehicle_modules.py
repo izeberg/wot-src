@@ -284,7 +284,7 @@ class VehicleGun(VehicleModule):
         if self.hasDualGunDualAccuracy():
             return backport.text(R.strings.item_types.dualGunCooling.name())
         if self.hasDualAccuracy():
-            pass
+            return backport.text(R.strings.item_types.gunCooling.name())
         if self.isDualGun():
             return backport.text(R.strings.item_types.dualGun.name())
         if self.isAutoShootGun():
@@ -322,8 +322,8 @@ class VehicleGun(VehicleModule):
         if self.hasDualGunDualAccuracy():
             return FITTING_TYPES.VEHICLE_DUAL_GUN_COOLING
         if self.hasDualAccuracy():
-            pass
-        elif self.isDualGun():
+            return FITTING_TYPES.VEHICLE_GUN_COOLING
+        if self.isDualGun():
             return FITTING_TYPES.VEHICLE_DUAL_GUN
         return super(VehicleGun, self).getGUIEmblemID()
 

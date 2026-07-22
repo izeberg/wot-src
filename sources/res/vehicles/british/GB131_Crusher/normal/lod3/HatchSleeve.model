@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB131_Crusher/normal/lod3/HatchSleeve</nodefullVisual>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<parent>vehicles/british/GB131_Crusher/normal/lod4/HatchSleeve</parent>
+	<visibilityBox>
+		<min>-1.369530 0.144433 -0.708810</min>
+		<max>-1.233114 0.420960 -0.511059</max>
+	</visibilityBox>
+</root>
