@@ -80,9 +80,13 @@ class Highlighter(object):
 
     def removeHighlight(self):
         vehicle = self.__getVehicle()
-        if self.isOn and vehicle is not None and not self.isDisabled:
-            self.__highlightStatus &= ~self.HIGHLIGHT_ON
-            BigWorld.wgDelEdgeDetectEntity(vehicle)
+        if vehicle is not None:
+            if self.isOn and not self.isDisabled:
+                self.__highlightStatus &= ~self.HIGHLIGHT_ON
+            if not vehicle.isDestroyed:
+                self.__removeHighlightComponent(vehicle)
+                if vehicle.model is not None:
+                    BigWorld.wgDelEdgeDetectEntity(vehicle)
         return
 
     def highlight(self, enable, forceSimpleEdge=False):
@@ -134,10 +138,24 @@ class Highlighter(object):
             root = appearance.gameObject
             if root is None or not root.valid:
                 return
-            highlight = root.findRead(EdgeHighlightComponent)
-            if highlight is not None:
-                root.removeComponent(highlight)
+            root.removeComponent(EdgeHighlightComponent)
             if isOn:
                 queue = CGF.CommandQueue(root.spaceID)
                 queue.createComponent(root, EdgeHighlightComponent, *args)
         return
+
+    def __removeHighlightComponent(self, vehicle):
+        appearance = vehicle.appearance
+        if appearance is not None:
+            appearance.gameObject.removeComponent(EdgeHighlightComponent)
+        return
+
+
+class HighlighterSystem(CGF.System):
+    Activate = CGF.ActivateReaction(CGF.GameObject, CGF.Ro(Highlighter), CGF.ReactRw(EdgeHighlightComponent))
+    Reactions = CGF.Reactions(Activate)
+
+    def update(self):
+        for go, highlighter, edgeHighlight in self.reaction(self.Activate):
+            if not highlighter.isOn:
+                go.removeComponent(edgeHighlight)
