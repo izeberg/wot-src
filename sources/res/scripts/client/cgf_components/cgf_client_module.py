@@ -51,7 +51,7 @@ from ShotsReceiver import ShotReceiverSystem, ShotsReceiver
 from VehicleStickers import VehicleStickersSystem
 from vehicle_systems.components.hull_aiming_controller import HullAimingSystem, HullAimingController
 from vehicle_systems.components.CrashedTracks import CrashedTracksController, CrashedTracksSystem
-from vehicle_systems.components.highlighter import Highlighter
+from vehicle_systems.components.highlighter import Highlighter, HighlighterSystem
 from vehicle_systems.components.vehicle_shadow_manager import VehicleShadowManager, VehicleShadowSystem
 from vehicle_systems.components.siegeEffectsController import SiegeEffectsController
 from vehicle_appearance.component import VehicleAppearanceComponent
@@ -309,7 +309,9 @@ class VehicleAppearanceModule(object):
      CGF.RegisterSystem(CrashedTracksSystem, domain=CGF.Domain.ClientEditor, predicate=clientWorldsPredicate(ClientWorld.BATTLE | ClientWorld.EDITOR)),
      CGF.RegisterSystem(HullAimingSystem, domain=CGF.Domain.ClientEditor, predicate=clientWorldsPredicate(ClientWorld.BATTLE | ClientWorld.EDITOR)),
      CGF.RegisterSystem(VehicleShadowSystem, domain=CGF.Domain.ClientEditor),
-     CGF.RegisterSystem(CustomEffectManagerSystem, domain=CGF.Domain.ClientEditor, predicate=clientWorldsPredicate(ClientWorld.BATTLE | ClientWorld.EDITOR))]
+     CGF.RegisterSystem(CustomEffectManagerSystem, domain=CGF.Domain.ClientEditor, predicate=clientWorldsPredicate(ClientWorld.BATTLE | ClientWorld.EDITOR)),
+     CGF.RegisterSystem(HighlighterSystem, domain=CGF.Domain.Client, updateAfter=(
+      CommonTankAppearanceActivateSystem,))]
     components = [
      VehicleAppearanceComponent,
      CrashedTracksController,
