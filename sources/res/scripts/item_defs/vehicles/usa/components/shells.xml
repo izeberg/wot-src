@@ -3415,7 +3415,7 @@
 		<effects>smallFlame_Pneumatic_2</effects>
 		<hasStun>false</hasStun>
 		<damage>
-			<armor>22</armor>
+			<armor>25</armor>
 			<devices>20</devices>
 		</damage>
 		<armorSpalls>
@@ -3427,7 +3427,7 @@
 			<damageAbsorption>SPALLS</damageAbsorption>
 			<useEffectiveArmor/>
 			<damage>
-				<armor>75</armor>
+				<armor>80</armor>
 				<devices>20</devices>
 			</damage>
 		</armorSpalls>

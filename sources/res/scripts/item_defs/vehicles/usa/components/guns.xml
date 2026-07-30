@@ -11708,30 +11708,17 @@
 				</whileGunDamaged>
 			</shotDispersionFactors>
 			<shots>
-				<_40mm_M7_8_flameshell_basic_test>
-					<defaultPortion>
-						0.5
-						<!--BW_String-->
-					</defaultPortion>
-					<speed>100</speed>
-					<gravity>
-						9.81
-						<!--BW_String-->
-					</gravity>
-					<maxDistance>200</maxDistance>
-					<piercingPower>100 100</piercingPower>
-				</_40mm_M7_8_flameshell_basic_test>
 				<_40mm_M7_8_flameshell_alternative_test>
 					<defaultPortion>
-						0.5
+						1.0
 						<!--BW_String-->
 					</defaultPortion>
-					<speed>80</speed>
+					<speed>150</speed>
 					<gravity>
-						9.81
+						0.0
 						<!--BW_String-->
 					</gravity>
-					<maxDistance>100</maxDistance>
+					<maxDistance>250</maxDistance>
 					<piercingPower>100 100</piercingPower>
 				</_40mm_M7_8_flameshell_alternative_test>
 			</shots>

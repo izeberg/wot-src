@@ -732,18 +732,22 @@
 		<kind>HIGH_EXPLOSIVE</kind>
 		<caliber>105</caliber>
 		<explosionRadius>
-			4.91
+			5.91
 			<!--BW_String-->
 		</explosionRadius>
 		<isTracer>true</isTracer>
 		<effects>mainSH</effects>
 		<damage>
-			<armor>450</armor>
+			<armor>470</armor>
 			<devices>150</devices>
 		</damage>
 		<deviceDamagePossibility>
 			<protectFromIndirectHits>internal tankmen</protectFromIndirectHits>
 		</deviceDamagePossibility>
+		<explosionDamageFactor>
+			0.70
+			<!--BW_String-->
+		</explosionDamageFactor>
 	</_105mm_slsgr_m34>
 	<_105mm_slsgr_m_61A>
 		<id>14</id>

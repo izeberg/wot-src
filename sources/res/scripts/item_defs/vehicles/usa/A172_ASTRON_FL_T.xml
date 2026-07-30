@@ -4515,54 +4515,14 @@
 							2.0
 							<!--BW_String-->
 						</coolingDelay>
-						<coolingPerSec>12</coolingPerSec>
-						<coolingOverheatPerSec>16</coolingOverheatPerSec>
+						<coolingPerSec>20</coolingPerSec>
+						<coolingOverheatPerSec>10</coolingOverheatPerSec>
 						<thermalStateHysteresis>1</thermalStateHysteresis>
 						<thermalStates>
 							<state>
-								<maxTemperature>60</maxTemperature>
+								<maxTemperature>120</maxTemperature>
 								<isOverheated>True</isOverheated>
 								<modifiers/>
-							</state>
-							<state>
-								<maxTemperature>110</maxTemperature>
-								<isOverheated>True</isOverheated>
-								<modifiers>
-									<mul>
-										<name>dynAttrs/armorSpallsDamageFactor</name>
-										<value>
-											0.70
-											<!--BW_String-->
-										</value>
-									</mul>
-									<mul>
-										<name>dynAttrs/damageFactor</name>
-										<value>
-											0.70
-											<!--BW_String-->
-										</value>
-									</mul>
-								</modifiers>
-							</state>
-							<state>
-								<maxTemperature>160</maxTemperature>
-								<isOverheated>True</isOverheated>
-								<modifiers>
-									<mul>
-										<name>dynAttrs/armorSpallsDamageFactor</name>
-										<value>
-											0.40
-											<!--BW_String-->
-										</value>
-									</mul>
-									<mul>
-										<name>dynAttrs/damageFactor</name>
-										<value>
-											0.40
-											<!--BW_String-->
-										</value>
-									</mul>
-								</modifiers>
 							</state>
 						</thermalStates>
 					</temperatureMechanics>

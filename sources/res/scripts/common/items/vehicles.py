@@ -3249,6 +3249,8 @@ def getUnlocksSources():
             for itemDescr in unlocks:
                 res.setdefault(itemDescr, set()).add(vehicleType)
 
+            res.setdefault(vehicleType.compactDescr, set()).add(vehicleType)
+
     return res
 
 

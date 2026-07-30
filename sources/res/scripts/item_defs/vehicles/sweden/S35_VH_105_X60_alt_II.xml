@@ -2863,7 +2863,7 @@
 						0.6
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>46</reloadTime>
+					<reloadTime>18</reloadTime>
 					<aimingTime>
 						5.0
 						<!--BW_String-->
@@ -2874,7 +2874,7 @@
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
-							2.75
+							2.0
 							<!--BW_String-->
 						</afterShot>
 						<whileGunDamaged>
@@ -2883,14 +2883,14 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<clip>
-						<count>5</count>
+						<count>3</count>
 						<rate>120</rate>
 					</clip>
 					<autoreload>
-						<reloadTime>10 12 14 16 18</reloadTime>
+						<reloadTime>12 15 18</reloadTime>
 					</autoreload>
 					<burst>
-						<count>5</count>
+						<count>3</count>
 						<rate>120</rate>
 					</burst>
 					<invisibilityFactorAtShot>
