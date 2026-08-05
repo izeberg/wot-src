@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/french/F141_Durendal/_skins/F141_Durendal_RW26_3Dst/normal/lod2/Gun_01</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.013487 -0.309980 -0.116551</min>
+		<max>0.627057 0.551477 5.473172</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/french/F141_Durendal/_skins/F141_Durendal_RW26_3Dst/normal/lod1/Gun_01</nodefullVisual>
+</root>
