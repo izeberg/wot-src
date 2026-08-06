@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F141_Durendal/_skins/F141_Durendal_RW26_3Dst/normal/lod0/Hull</nodefullVisual>
+	<parent>vehicles/french/F141_Durendal/_skins/F141_Durendal_RW26_3Dst/normal/lod1/Hull</parent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.760244 -0.675736 -3.496528</min>
+		<max>1.738255 0.646142 3.091406</max>
+	</visibilityBox>
+	<extent>32.000000</extent>
+</root>
