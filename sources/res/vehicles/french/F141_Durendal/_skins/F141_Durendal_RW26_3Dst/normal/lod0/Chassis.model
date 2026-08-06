@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/french/F141_Durendal/_skins/F141_Durendal_RW26_3Dst/normal/lod1/Chassis</parent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.633634 -0.000027 -3.166080</min>
+		<max>1.633634 1.149573 3.103075</max>
+	</visibilityBox>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/french/F141_Durendal/_skins/F141_Durendal_RW26_3Dst/normal/lod0/Chassis</nodefullVisual>
+</root>

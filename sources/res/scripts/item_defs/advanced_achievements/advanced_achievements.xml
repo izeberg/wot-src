@@ -8741,6 +8741,22 @@
 					<vehicle>uk:GB158_Executor</vehicle>
 				</conditions>
 			</achievement>
+			<achievement>
+				<id>496</id>
+				<deprecated>true</deprecated>
+				<UI>
+					<stringKey>F141_Durendal</stringKey>
+					<background>vehicles</background>
+				</UI>
+				<stages>
+					<stage>
+						<value>1</value>
+					</stage>
+				</stages>
+				<conditions>
+					<vehicle>france:F141_Durendal</vehicle>
+				</conditions>
+			</achievement>
 		</vehicleAchievements>
 		<customizationAchievements>
 			<achievement>
