@@ -5589,6 +5589,16 @@ package
       
       public static const MAPS_ICONS_ADVANCED_ACHIEVEMENTS_ICONS_F140_FANTOME_TROPHY_S94X80:String = "../maps/icons/advanced_achievements/icons/F140_Fantome_trophy_s94x80.png";
       
+      public static const MAPS_ICONS_ADVANCED_ACHIEVEMENTS_ICONS_F141_DURENDAL_TROPHY_S144X116:String = "../maps/icons/advanced_achievements/icons/F141_Durendal_trophy_s144x116.png";
+      
+      public static const MAPS_ICONS_ADVANCED_ACHIEVEMENTS_ICONS_F141_DURENDAL_TROPHY_S218X176:String = "../maps/icons/advanced_achievements/icons/F141_Durendal_trophy_s218x176.png";
+      
+      public static const MAPS_ICONS_ADVANCED_ACHIEVEMENTS_ICONS_F141_DURENDAL_TROPHY_S52X44:String = "../maps/icons/advanced_achievements/icons/F141_Durendal_trophy_s52x44.png";
+      
+      public static const MAPS_ICONS_ADVANCED_ACHIEVEMENTS_ICONS_F141_DURENDAL_TROPHY_S68X56:String = "../maps/icons/advanced_achievements/icons/F141_Durendal_trophy_s68x56.png";
+      
+      public static const MAPS_ICONS_ADVANCED_ACHIEVEMENTS_ICONS_F141_DURENDAL_TROPHY_S94X80:String = "../maps/icons/advanced_achievements/icons/F141_Durendal_trophy_s94x80.png";
+      
       public static const MAPS_ICONS_ADVANCED_ACHIEVEMENTS_ICONS_F143_FAUTEUR_S144X116:String = "../maps/icons/advanced_achievements/icons/F143_Fauteur_s144x116.png";
       
       public static const MAPS_ICONS_ADVANCED_ACHIEVEMENTS_ICONS_F143_FAUTEUR_S218X176:String = "../maps/icons/advanced_achievements/icons/F143_Fauteur_s218x176.png";

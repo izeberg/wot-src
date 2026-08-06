@@ -4555,6 +4555,8 @@ package
       
       public static const CAMOUFLAGE_BP2026_JUNE_7_LABEL:String = "#vehicle_customization:camouflage/bp2026_june_7/label";
       
+      public static const CAMOUFLAGE_F141_DURENDAL_RW26_3DST_LABEL:String = "#vehicle_customization:camouflage/F141_Durendal_RW26_3Dst/label";
+      
       public static const CAMOUFLAGE_OLS_2026_1_SILVER_LABEL:String = "#vehicle_customization:camouflage/ols_2026_1_silver/label";
       
       public static const CAMOUFLAGE_OLS_2026_1_GOLD_LABEL:String = "#vehicle_customization:camouflage/ols_2026_1_gold/label";
@@ -16026,6 +16028,10 @@ package
       public static const SPECIAL_STYLE_WOT_HEAT_MISSION_REWARD:String = "#vehicle_customization:special_style/wot_heat_mission_reward";
       
       public static const SPECIAL_STYLE_WOT_HEAT_MISSION_REWARD_DESC:String = "#vehicle_customization:special_style/wot_heat_mission_reward_desc";
+      
+      public static const SPECIAL_STYLE_F141_DURENDAL_RW26_3DST:String = "#vehicle_customization:special_style/F141_Durendal_RW26_3Dst";
+      
+      public static const SPECIAL_STYLE_F141_DURENDAL_RW26_3DST_DESC_LONG:String = "#vehicle_customization:special_style/F141_Durendal_RW26_3Dst_desc/long";
       
       public static const SPECIAL_STYLE_TIGER_STRIPES:String = "#vehicle_customization:special_style/tiger_stripes";
       

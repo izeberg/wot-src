@@ -852,6 +852,24 @@
 			<hangarModelName>particles/Tank/customization/A170_M_VII_Y_FCC_3Dst/A170_M_VII_Y_FCC_3Dst.prefab</hangarModelName>
 			<attachmentLogic>prefab</attachmentLogic>
 		</attachment>
+		<attachment>
+			<id>192</id>
+			<name>F141_Durendal_RW26_3Dst_Lamp</name>
+			<modelName>vehicles/french/F141_Durendal/_skins/F141_Durendal_RW26_3Dst/lamp_switcher.prefab</modelName>
+			<attachmentLogic>prefab</attachmentLogic>
+		</attachment>
+		<attachment>
+			<id>193</id>
+			<name>F141_Durendal_RW26_3Dst_GunNum</name>
+			<modelName>vehicles/french/F141_Durendal/_skins/F141_Durendal_RW26_3Dst/gun_number_switcher.prefab</modelName>
+			<attachmentLogic>prefab</attachmentLogic>
+		</attachment>
+		<attachment>
+			<id>196</id>
+			<name>F141_Durendal_RW26_3Dst_GunNumwinter</name>
+			<modelName>vehicles/french/F141_Durendal/_skins/F141_Durendal_RW26_3Dst/gun_number_switcher_winter.prefab</modelName>
+			<attachmentLogic>prefab</attachmentLogic>
+		</attachment>
 	</itemGroup>
 	<itemGroup>
 		<name>Dragon Vanguard</name>
