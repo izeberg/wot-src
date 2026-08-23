@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/chinese/Ch47_BZ_176/_skins/Ch47_BZ_176_KS_3Dst/normal/lod0/Gun_02_fur</nodefullVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.308380 -0.370186 -0.134898</min>
+		<max>0.304042 0.289860 0.279596</max>
+	</visibilityBox>
+	<parent>vehicles/chinese/Ch47_BZ_176/_skins/Ch47_BZ_176_KS_3Dst/normal/lod1/Gun_02_fur</parent>
+	<extent>32.000000</extent>
+</root>

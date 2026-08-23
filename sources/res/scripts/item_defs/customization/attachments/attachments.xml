@@ -825,6 +825,13 @@
 			<attachmentLogic>prefab</attachmentLogic>
 		</attachment>
 		<attachment>
+			<id>182</id>
+			<name>Ch47_BZ_176_KS_3Dst</name>
+			<modelName>particles/Tank/customization/Ch47_BZ_176_KS_3Dst/Ch47_BZ_176_KS_3Dst.prefab</modelName>
+			<hangarModelName>particles/Tank/customization/Ch47_BZ_176_KS_3Dst/Ch47_BZ_176_KS_3Dst_hangar.prefab</hangarModelName>
+			<attachmentLogic>prefab</attachmentLogic>
+		</attachment>
+		<attachment>
 			<id>190</id>
 			<name>A170_M_VII_Y_FCC_3Dst</name>
 			<modelName>particles/Tank/customization/A170_M_VII_Y_FCC_3Dst/A170_M_VII_Y_FCC_3Dst.prefab</modelName>
@@ -844,9 +851,23 @@
 			<attachmentLogic>prefab</attachmentLogic>
 		</attachment>
 		<attachment>
+			<id>195</id>
+			<name>Ch47_BZ_176_KS_3Dst_Fur</name>
+			<modelName>particles/Tank/customization/Ch47_BZ_176_KS_3Dst/Ch47_BZ_176_KS_3Dst_Fur.prefab</modelName>
+			<hangarModelName>particles/Tank/customization/Ch47_BZ_176_KS_3Dst/Ch47_BZ_176_KS_3Dst_Fur.prefab</hangarModelName>
+			<attachmentLogic>prefab</attachmentLogic>
+		</attachment>
+		<attachment>
 			<id>196</id>
 			<name>F141_Durendal_RW26_3Dst_GunNumwinter</name>
 			<modelName>vehicles/french/F141_Durendal/_skins/F141_Durendal_RW26_3Dst/gun_number_switcher_winter.prefab</modelName>
+			<attachmentLogic>prefab</attachmentLogic>
+		</attachment>
+		<attachment>
+			<id>197</id>
+			<name>Ch74_Waffentrager_15_3Dst</name>
+			<modelName>particles/Tank/customization/Ch74_Waffentrager_15_3Dst/Ch74_Waffentrager_15_3Dst.prefab</modelName>
+			<hangarModelName>particles/Tank/customization/Ch74_Waffentrager_15_3Dst/Ch74_Waffentrager_15_3Dst_hangar.prefab</hangarModelName>
 			<attachmentLogic>prefab</attachmentLogic>
 		</attachment>
 	</itemGroup>

@@ -377,8 +377,8 @@ class EventsCache(IEventsCache):
 
         return self._getQuests(rankedFilterFunc)
 
-    def getAllQuests(self, filterFunc=None, includePersonalMissions=False):
-        return self._getQuests(filterFunc, includePersonalMissions)
+    def getAllQuests(self, filterFunc=None, includePersonalMissions=False, makeRelations=True):
+        return self._getQuests(filterFunc, includePersonalMissions, makeRelations)
 
     def getActions(self, filterFunc=None):
         filterFunc = filterFunc or (lambda a: True)

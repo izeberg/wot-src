@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.835043 -0.000000 -3.787757</min>
+		<max>1.860996 1.283529 3.492668</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/american/A168_XM_57/_skins/A168_XM_57_K_3Dst/normal/lod0/Chassis</nodefullVisual>
+	<parent>vehicles/american/A168_XM_57/_skins/A168_XM_57_K_3Dst/normal/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+</root>

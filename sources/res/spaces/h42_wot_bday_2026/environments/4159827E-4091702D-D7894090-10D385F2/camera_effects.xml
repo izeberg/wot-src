@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<effectMap>spaces/h42_wot_bday_2026/environments/4159827E-4091702D-D7894090-10D385F2/camera_effects_map.dds</effectMap>
+	<effect>
+		<id>1</id>
+		<name>particles/content_deferred/PFX/Environment/hangar/hangar_v3_wot_bday_2025_confetti.vfx</name>
+		<alignToTerrain>false</alignToTerrain>
+		<useCameraTarget>false</useCameraTarget>
+	</effect>
+</root>

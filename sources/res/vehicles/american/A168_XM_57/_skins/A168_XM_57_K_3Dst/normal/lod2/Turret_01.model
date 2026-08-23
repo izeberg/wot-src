@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/american/A168_XM_57/_skins/A168_XM_57_K_3Dst/normal/lod3/Turret_01</parent>
+	<extent>96.000000</extent>
+	<nodefullVisual>vehicles/american/A168_XM_57/_skins/A168_XM_57_K_3Dst/normal/lod2/Turret_01</nodefullVisual>
+	<visibilityBox>
+		<min>-1.186105 -0.009635 -1.229880</min>
+		<max>1.186599 0.915143 1.451049</max>
+	</visibilityBox>
+</root>

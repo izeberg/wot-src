@@ -12719,4 +12719,109 @@
 			<tags>hiddenInUI</tags>
 		</paint>
 	</itemGroup>
+	<itemGroup>
+		<name>2D Customization Journey Marathon</name>
+		<userString>#vehicle_customization:repaint/color_group_04</userString>
+		<season>ALL</season>
+		<historical>2</historical>
+		<priceGroup>paints 20g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
+		</vehicleFilter>
+		<paint>
+			<id>680</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_26.png</texture>
+			<color>24 36 38 255</color>
+			<gloss>
+				0.63
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.235
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:special_style/2d_cust_journey_marathon_1</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
+	</itemGroup>
+	<itemGroup>
+		<name>2D Customization Journey Marathon</name>
+		<userString>#vehicle_customization:repaint/color_group_04</userString>
+		<season>ALL</season>
+		<historical>0</historical>
+		<priceGroup>paints 20g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
+		</vehicleFilter>
+		<paint>
+			<id>681</id>
+			<texture>gui/maps/vehicles/repaints/germany_color_03.png</texture>
+			<color>61 57 31 255</color>
+			<gloss>
+				0.509
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.23
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:special_style/2d_cust_journey_marathon_3</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
+		<paint>
+			<id>682</id>
+			<texture>gui/maps/vehicles/repaints/czech_base_color.png</texture>
+			<color>74 69 48 255</color>
+			<gloss>
+				0.509
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.23
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:special_style/2d_cust_journey_marathon_4</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
+	</itemGroup>
+	<itemGroup>
+		<name>German Tanks Event</name>
+		<userString>#vehicle_customization:repaint/color_group_04</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>paints 20g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
+		</vehicleFilter>
+		<paint>
+			<id>683</id>
+			<texture>gui/maps/vehicles/repaints/france_color_02.png</texture>
+			<color>79 79 79 255</color>
+			<gloss>
+				0.509
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.23
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:special_style/german_tanks_event</userString>
+			<tags>styleOnly hiddenInUI</tags>
+		</paint>
+	</itemGroup>
 </root>

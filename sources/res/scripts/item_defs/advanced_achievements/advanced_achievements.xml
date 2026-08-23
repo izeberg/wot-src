@@ -8741,6 +8741,22 @@
 					<vehicle>france:F141_Durendal</vehicle>
 				</conditions>
 			</achievement>
+			<achievement>
+				<id>497</id>
+				<deprecated>true</deprecated>
+				<UI>
+					<stringKey>G200_Chi_Go</stringKey>
+					<background>vehicles</background>
+				</UI>
+				<stages>
+					<stage>
+						<value>1</value>
+					</stage>
+				</stages>
+				<conditions>
+					<vehicle>germany:G200_Chi_Go</vehicle>
+				</conditions>
+			</achievement>
 		</vehicleAchievements>
 		<customizationAchievements>
 			<achievement>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/chinese/Ch45_WZ_114/_skins/Ch45_WZ_114_KS_3Dst/crash/lod3/Hull</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.764370 -0.853080 -3.673270</min>
+		<max>1.767180 0.690490 3.660264</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/chinese/Ch45_WZ_114/_skins/Ch45_WZ_114_KS_3Dst/crash/lod2/Hull</nodefullVisual>
+</root>

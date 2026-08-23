@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<stream>colour</stream>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>mt_glow</identifier>
+					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						alphaFadeAmountFresnel
+						<Vector4>1.000000 1.000000 3.000000 0.000000</Vector4>
+					</property>
+					<property>
+						alphaFreshnelEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						destBlend
+						<Int>2</Int>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>particles/Tank/customization/Ch74_Waffentrager_15_3Dst/glow_flow.dds</Texture>
+					</property>
+					<property>
+						diffuseUVSpeedAlphaOffset
+						<Vector4>-0.020000 0.020000 0.400000 0.000000</Vector4>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						enableLighting
+						<Bool>true</Bool>
+					</property>
+					<property>
+						fogAdjustBlend
+						<Float>1.000000</Float>
+					</property>
+					<property>
+						FreshnelColor
+						<Vector4>0.015686 0.000000 1.000000 1.000000</Vector4>
+					</property>
+					<property>
+						lightMultipliers
+						<Vector4>5.000000 0.300000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						softFactor
+						<Float>0.000000</Float>
+					</property>
+					<property>
+						TintlColor
+						<Vector4>0.000000 0.227451 0.933333 1.000000</Vector4>
+					</property>
+					<property>
+						distortion_UV_Speed_Amount
+						<Vector4>-0.010000 -0.010000 0.500000 0.500000</Vector4>
+					</property>
+					<property>
+						distortionMap
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/Distortion01.dds</Texture>
+					</property>
+					<property>
+						alphaAdditiveEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_enableEnvMultiplier
+						<Bool>true</Bool>
+					</property>
+				</material>
+				<groupOrigin>0.000001 2.180082 -1.763071</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-1.828520 1.464120 -3.196342</min>
+		<max>1.828521 2.895323 -0.330477</max>
+	</boundingBox>
+	<geometrySize>25342</geometrySize>
+</root>

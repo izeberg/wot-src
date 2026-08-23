@@ -1094,6 +1094,21 @@
 		<tags>AT-SPG role_ATSPG_assault HD heavyAT-SPG improvedVentilation_class1_user tankRammer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user</tags>
 		<level>8</level>
 	</A168_XM_57>
+	<A168_XM_57_CFE_I>
+		<id>171</id>
+		<userString>#usa_vehicles:A168_XM_57_CFE_I</userString>
+		<shortUserString>#usa_vehicles:A168_XM_57_CFE_I_short</shortUserString>
+		<description>#usa_vehicles:A168_XM_57_CFE_I_descr</description>
+		<shortDescriptionSpecial>#usa_vehicles:A168_XM_57_CFE_I_short_special</shortDescriptionSpecial>
+		<longDescriptionSpecial>#usa_vehicles:A168_XM_57_CFE_I_long_special</longDescriptionSpecial>
+		<price>
+			8200
+			<gold/>
+		</price>
+		<notInShop>True</notInShop>
+		<tags>AT-SPG role_ATSPG_assault HD heavyAT-SPG improvedVentilation_class1_user tankRammer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user lockOutfit restoreWithStyle</tags>
+		<level>8</level>
+	</A168_XM_57_CFE_I>
 	<A166_H_3>
 		<id>165</id>
 		<userString>#usa_vehicles:A166_H_3</userString>

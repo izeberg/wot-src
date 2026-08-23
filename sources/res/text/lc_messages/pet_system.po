@@ -55,6 +55,9 @@ msgstr "Combat XP"
 msgid "breedName/dog_1"
 msgstr "German shepherd"
 
+msgid "breedName/dog_2"
+msgstr "Labrador"
+
 msgid "eventView/button"
 msgstr "Affirmative"
 
@@ -94,6 +97,13 @@ msgstr ""
 " a blast floored its handler, the dog dragged the fallen man to cover and "
 "shielded him until rescue came. Wounded but loyal, never leaving his side. A"
 " true soldier's guardian."
+
+msgid "petDescription/dog_2"
+msgstr ""
+"Always eager for adventure, this lively Labrador is a loyal companion who "
+"barks approvingly at the sound of human laughter and wags his tail when "
+"making new friends. Rumor has it he's been seen in two places at once, "
+"though nobody has yet worked out how."
 
 msgid "petEventTooltip/body"
 msgstr "%(petName)s found something while you were gone! Go check it out!"
@@ -221,13 +231,20 @@ msgid "promotion/button/challenge"
 msgstr "Missions"
 
 msgid "promotion/button/purchase"
-msgstr "Purchase"
+msgstr "To Store"
 
 msgid "promotion/challengeInfo/text_1"
 msgstr "Mission information"
 
+msgid "promotion/challengeInfo/text_2"
+msgstr ""
+"Available for purchase in a special event bundle in the in-game Store."
+
 msgid "promotion/challengeInfo/title_1"
 msgstr "Missions"
+
+msgid "promotion/challengeInfo/title_2"
+msgstr "How to Receive"
 
 msgid "synergyTooltip/description/done"
 msgstr ""
