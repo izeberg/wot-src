@@ -191,10 +191,16 @@ msgstr "%#d %bd, %TIME"
 msgid "regionalDate/dayMonthFull"
 msgstr "%#d %Bd"
 
+msgid "regionalDate/dayMonthFull/EU"
+msgstr "%#d %Bd"
+
 msgid "regionalDate/dayMonthFullTime"
 msgstr "%#d %Bd, %TIME"
 
 msgid "regionalDate/dayMonthNumeric"
+msgstr "%d.%m"
+
+msgid "regionalDate/dayMonthNumeric/EU"
 msgstr "%d.%m"
 
 msgid "regionalDate/fullDate"

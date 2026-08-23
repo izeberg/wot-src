@@ -268,23 +268,14 @@ msgstr ""
 "Покупка этапа прогрессии мгновенно открывает и даёт вам все награды этого "
 "этапа."
 
-msgid "battlePassBuyView/reward/descriptionFutureRewards"
-msgstr "Эти награды будут начислены по завершении следующих этапов."
-
-msgid "battlePassBuyView/reward/descriptionNowRewards"
-msgstr "Сейчас будут начислены следующие награды за этапы %(steps)s"
-
 msgid "battlePassBuyView/reward/descriptionNowRewardsCheckbox"
 msgstr "Вы сразу же получите следующие награды"
 
-msgid "battlePassBuyView/reward/descriptionNowRewardsSingle"
-msgstr "Сейчас будут начислены следующие награды за этап %(steps)s"
-
 msgid "battlePassBuyView/reward/titleFutureRewards"
-msgstr "БУДУТ ОТКРЫТЫ"
+msgstr "Открываются в непройденных этапах"
 
 msgid "battlePassBuyView/reward/titleNowRewards"
-msgstr "БУДУТ ПОЛУЧЕНЫ СРАЗУ"
+msgstr "Начисляются сразу"
 
 msgid "battlePassStatus/activateChapter"
 msgstr "Активировать главу Боевого пропуска"
@@ -316,17 +307,17 @@ msgstr "Песнь о зубре"
 msgid "chapter/fullName/1114"
 msgstr "Песнь о зубре"
 
-msgid "chapter/fullName/200"
+msgid "chapter/fullName/210"
 msgstr "Тропа престижа"
 
-msgid "chapter/fullName/201"
-msgstr "Погребённое прошлое"
+msgid "chapter/fullName/211"
+msgstr "Специалист"
 
-msgid "chapter/fullName/202"
-msgstr "C'est Notre Destin"
+msgid "chapter/fullName/212"
+msgstr "Каскадёр"
 
-msgid "chapter/fullName/203"
-msgstr "Владыки пустыни"
+msgid "chapter/fullName/213"
+msgstr "Стоик"
 
 msgid "chapter/fullNameUppercased/10021"
 msgstr "ПЕСНЬ О ЗУБРЕ"
@@ -334,14 +325,14 @@ msgstr "ПЕСНЬ О ЗУБРЕ"
 msgid "chapter/fullNameUppercased/1114"
 msgstr "ПЕСНЬ О ЗУБРЕ"
 
-msgid "chapter/fullNameUppercased/201"
-msgstr "ПОГРЕБЁННОЕ ПРОШЛОЕ"
+msgid "chapter/fullNameUppercased/211"
+msgstr "СПЕЦИАЛИСТ"
 
-msgid "chapter/fullNameUppercased/202"
-msgstr "C'EST NOTRE DESTIN"
+msgid "chapter/fullNameUppercased/212"
+msgstr "КАСКАДЁР"
 
-msgid "chapter/fullNameUppercased/203"
-msgstr "ВЛАДЫКИ ПУСТЫНИ"
+msgid "chapter/fullNameUppercased/213"
+msgstr "СТОИК"
 
 msgid "chapter/title"
 msgstr "ГЛАВА «%(chapter)s»"
@@ -512,6 +503,9 @@ msgstr "Задача на ×3 опыта экипажа"
 
 msgid "equipCoinBonus"
 msgstr "Компоненты: %(count)s"
+
+msgid "finalReward/attachmentsSet/title"
+msgstr "Комплект 3D-объектов"
 
 msgid "finalReward/tankman/roles/commander"
 msgstr "командир"
@@ -1206,11 +1200,8 @@ msgstr "Этап %(level)d Тропы престижа"
 msgid "rewardChoice/crewBook/rewardDescription"
 msgstr "опыта каждому члену экипажа выбранной машины %(nation)s"
 
-msgid "rewardChoice/subTitle"
-msgstr "ВЫБЕРИТЕ НАГРАДУ"
-
 msgid "rewardChoice/title"
-msgstr "БОЕВОЙ ПРОПУСК"
+msgstr "Выберите награды"
 
 msgid "rewardChoice/titleChapter"
 msgstr "БОЕВОЙ ПРОПУСК. ГЛАВА «%(chapter)s»"
@@ -1221,14 +1212,14 @@ msgstr "БОЕВОЙ ПРОПУСК. ГЛАВА «%(chapter)s», ЭТАП %(leve
 msgid "season/fullName/1002"
 msgstr "Песнь о зубре"
 
-msgid "season/fullName/20"
-msgstr "Сквозь пески"
+msgid "season/fullName/21"
+msgstr "Отстранённые"
 
 msgid "season/fullNameUppercased/1002"
 msgstr "ПЕСНЬ О ЗУБРЕ"
 
-msgid "season/fullNameUppercased/20"
-msgstr "СКВОЗЬ ПЕСКИ"
+msgid "season/fullNameUppercased/21"
+msgstr "ОТСТРАНЁННЫЕ"
 
 msgid "selectBonus/battle_booster_gift"
 msgstr "Инструкции на выбор"

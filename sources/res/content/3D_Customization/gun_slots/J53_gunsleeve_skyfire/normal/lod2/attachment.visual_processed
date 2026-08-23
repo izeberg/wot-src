@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>nodes_01</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>HP_attachment</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<stream>colour</stream>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>attachment_mat_04</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<property>
+						diffuseMap
+						<Texture>content/3D_Customization/gun_slots/J53_gunsleeve_skyfire/J53_gun_slot_04_AM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/3D_Customization/gun_slots/J53_gunsleeve_skyfire/J53_gun_slot_04_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/3D_Customization/gun_slots/J53_gunsleeve_skyfire/J53_gun_slot_04_ANM.dds</Texture>
+					</property>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						alphaReference
+						<Int>127</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_enableTransmission
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_vertexAnimationParams
+						<Vector4>0.007000 0.005000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_vertexColorMode
+						<Int>1</Int>
+					</property>
+				</material>
+				<groupOrigin>0.059657 -0.042982 1.098930</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>attachment_mat_03</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<property>
+						diffuseMap
+						<Texture>content/3D_Customization/gun_slots/J53_gunsleeve_skyfire/J53_gun_slot_03_AM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/3D_Customization/gun_slots/J53_gunsleeve_skyfire/J53_gun_slot_03_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/3D_Customization/gun_slots/J53_gunsleeve_skyfire/J53_gun_slot_03_ANM.dds</Texture>
+					</property>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						alphaReference
+						<Int>127</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_enableTransmission
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_vertexAnimationParams
+						<Vector4>0.007000 0.005000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_vertexColorMode
+						<Int>1</Int>
+					</property>
+				</material>
+				<groupOrigin>0.015272 -0.042550 1.523997</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				2
+				<material>
+					<identifier>attachment_mat_02</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<property>
+						diffuseMap
+						<Texture>content/3D_Customization/gun_slots/J53_gunsleeve_skyfire/J53_gun_slot_02_AM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/3D_Customization/gun_slots/J53_gunsleeve_skyfire/J53_gun_slot_02_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/3D_Customization/gun_slots/J53_gunsleeve_skyfire/J53_gun_slot_02_ANM.dds</Texture>
+					</property>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						alphaReference
+						<Int>127</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_enableTransmission
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_vertexAnimationParams
+						<Vector4>0.007000 0.005000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_vertexColorMode
+						<Int>1</Int>
+					</property>
+				</material>
+				<groupOrigin>-0.094000 -0.059974 1.337137</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				3
+				<material>
+					<identifier>attachment_mat_01</identifier>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						alphaReference
+						<Int>64</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/3D_Customization/gun_slots/J53_gunsleeve_skyfire/J53_gun_slot_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>content/3D_Customization/gun_slots/J53_gunsleeve_skyfire/J53_gun_slot_01_AO.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/3D_Customization/gun_slots/J53_gunsleeve_skyfire/J53_gun_slot_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/3D_Customization/gun_slots/J53_gunsleeve_skyfire/J53_gun_slot_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.031641 0.002804 1.401390</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-0.374610 -0.541983 -1.173827</min>
+		<max>0.450168 0.404164 3.848099</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>24588</geometrySize>
+</root>

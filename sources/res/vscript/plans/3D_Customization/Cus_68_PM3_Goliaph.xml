@@ -9,77 +9,6 @@
 		</aspect>
 		<blocks>
 			<block>
-				<class>ArenaPeriodStartEvent</class>
-				<id>ArenaPeriodStartEvent_3</id>
-				<params>
-					<param>
-						Battle
-						<name>Period</name>
-						<type>EArenaPeriodT</type>
-					</param>
-				</params>
-			</block>
-			<block>
-				<class>StartScript</class>
-				<id>StartScript_1</id>
-			</block>
-			<block>
-				<class>ContextGetSelf</class>
-				<id>ContextGetSelf_1</id>
-				<params>
-					<param>
-						CGFGameObjectContext
-						<name>Context Name</name>
-						<type>StringT</type>
-					</param>
-					<param>
-						getSelf
-						<name>Member Name</name>
-						<type>StringT</type>
-					</param>
-				</params>
-			</block>
-			<block>
-				<class>If</class>
-				<id>If_18</id>
-			</block>
-			<block>
-				<class>ComponentMethod</class>
-				<id>ComponentMethod_33</id>
-				<params>
-					<param>
-						Animator.setTrigger
-						<name>Component Type</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>arg#0</name>
-						<const>\beginning\</const>
-					</slot>
-					<slot>
-						<name>arg#1</name>
-						<const>\true\</const>
-					</slot>
-					<slot>
-						<name>arg#2</name>
-						<const>\0\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>ArenaPeriod</class>
-				<id>ArenaPeriod_1</id>
-				<params>
-					<param>
-						Battle
-						<name>Period</name>
-						<type>EArenaPeriodT</type>
-					</param>
-				</params>
-			</block>
-			<block>
 				<class>If</class>
 				<id>If_17</id>
 			</block>
@@ -98,14 +27,6 @@
 				<id>CompareVehicles_6</id>
 			</block>
 			<block>
-				<class>GetVehicleGameObject</class>
-				<id>GetVehicleGameObject_1</id>
-			</block>
-			<block>
-				<class>GameObjectToVehicle</class>
-				<id>GameObjectToVehicle_2</id>
-			</block>
-			<block>
 				<class>GetVehicleHealth</class>
 				<id>GetVehicleHealth_2</id>
 			</block>
@@ -116,6 +37,10 @@
 			<block>
 				<class>If</class>
 				<id>If_15</id>
+			</block>
+			<block>
+				<class>GameObjectToVehicle</class>
+				<id>GameObjectToVehicle_2</id>
 			</block>
 			<block>
 				<class>MultiplyFloat</class>
@@ -143,6 +68,10 @@
 						<const>\current\</const>
 					</slot>
 				</slots>
+			</block>
+			<block>
+				<class>GetVehicleGameObject</class>
+				<id>GetVehicleGameObject_1</id>
 			</block>
 			<block>
 				<class>CompareFloats</class>
@@ -219,38 +148,174 @@
 					</slot>
 				</slots>
 			</block>
+			<block>
+				<class>ContextGetSelf</class>
+				<id>ContextGetSelf_1</id>
+				<params>
+					<param>
+						CGFGameObjectContext
+						<name>Context Name</name>
+						<type>StringT</type>
+					</param>
+					<param>
+						getSelf
+						<name>Member Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>ArenaPeriodStartEvent</class>
+				<id>ArenaPeriodStartEvent_3</id>
+				<params>
+					<param>
+						Battle
+						<name>Period</name>
+						<type>EArenaPeriodT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>ComponentMethod</class>
+				<id>ComponentMethod_33</id>
+				<params>
+					<param>
+						Animator.setTrigger
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>arg#0</name>
+						<const>\beginning\</const>
+					</slot>
+					<slot>
+						<name>arg#1</name>
+						<const>\true\</const>
+					</slot>
+					<slot>
+						<name>arg#2</name>
+						<const>\0\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>StartScript</class>
+				<id>StartScript_1</id>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_18</id>
+			</block>
+			<block>
+				<class>ArenaPeriod</class>
+				<id>ArenaPeriod_1</id>
+				<params>
+					<param>
+						Battle
+						<name>Period</name>
+						<type>EArenaPeriodT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>GSMState</class>
+				<id>GSMState_1</id>
+				<params>
+					<param>
+						PREBATTLE
+						<name>GSM State</name>
+						<type>GameplayStateIDT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>ComponentMethod</class>
+				<id>ComponentMethod_41</id>
+				<params>
+					<param>
+						Animator.setTrigger
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>arg#0</name>
+						<const>\pbh\</const>
+					</slot>
+					<slot>
+						<name>arg#1</name>
+						<const>\true\</const>
+					</slot>
+					<slot>
+						<name>arg#2</name>
+						<const>\0\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>Sequence</class>
+				<id>Sequence_2</id>
+				<params>
+					<param>
+						2
+						<name>Output Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_21</id>
+			</block>
+			<block>
+				<class>OnPrebattleHighlights</class>
+				<id>OnPrebattleHighlights_1</id>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_22</id>
+			</block>
+			<block>
+				<class>ComponentMethod</class>
+				<id>ComponentMethod_40</id>
+				<params>
+					<param>
+						Animator.setTrigger
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>arg#0</name>
+						<const>\beginning\</const>
+					</slot>
+					<slot>
+						<name>arg#1</name>
+						<const>\true\</const>
+					</slot>
+					<slot>
+						<name>arg#2</name>
+						<const>\0\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>GSMState</class>
+				<id>GSMState_2</id>
+				<params>
+					<param>
+						PREBATTLE_HIGHLIGHTS
+						<name>GSM State</name>
+						<type>GameplayStateIDT</type>
+					</param>
+				</params>
+			</block>
 		</blocks>
 		<connections>
-			<connection>
-				<from>StartScript_1</from>
-				<input>input</input>
-				<to>If_18</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>ArenaPeriod_1</from>
-				<input>value</input>
-				<to>If_18</to>
-				<output>isActive</output>
-			</connection>
-			<connection>
-				<from>If_18</from>
-				<input>in</input>
-				<to>ComponentMethod_33</to>
-				<output>true</output>
-			</connection>
-			<connection>
-				<from>ArenaPeriodStartEvent_3</from>
-				<input>in</input>
-				<to>ComponentMethod_33</to>
-				<output>start</output>
-			</connection>
-			<connection>
-				<from>ContextGetSelf_1</from>
-				<input>gameObject</input>
-				<to>ComponentMethod_33</to>
-				<output>value</output>
-			</connection>
 			<connection>
 				<from>OnAnyVehicleDamaged_1</from>
 				<input>input</input>
@@ -274,18 +339,6 @@
 				<input>b</input>
 				<to>CompareVehicles_6</to>
 				<output>target</output>
-			</connection>
-			<connection>
-				<from>ContextGetSelf_1</from>
-				<input>gameObject</input>
-				<to>GetVehicleGameObject_1</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>GetVehicleGameObject_1</from>
-				<input>gameObject</input>
-				<to>GameObjectToVehicle_2</to>
-				<output>vehicleObject</output>
 			</connection>
 			<connection>
 				<from>GameObjectToVehicle_2</from>
@@ -318,6 +371,12 @@
 				<output>less</output>
 			</connection>
 			<connection>
+				<from>GetVehicleGameObject_1</from>
+				<input>gameObject</input>
+				<to>GameObjectToVehicle_2</to>
+				<output>vehicleObject</output>
+			</connection>
+			<connection>
 				<from>GetVehicleMaxHealth_2</from>
 				<input>i0</input>
 				<to>MultiplyFloat_3</to>
@@ -328,6 +387,12 @@
 				<input>vehicle</input>
 				<to>GetVehicleMaxHealth_2</to>
 				<output>vehicle</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>GetVehicleGameObject_1</to>
+				<output>value</output>
 			</connection>
 			<connection>
 				<from>GetVehicleHealth_2</from>
@@ -381,6 +446,108 @@
 				<from>ContextGetSelf_1</from>
 				<input>gameObject</input>
 				<to>ComponentMethod_38</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>If_18</from>
+				<input>in</input>
+				<to>ComponentMethod_33</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>ArenaPeriodStartEvent_3</from>
+				<input>in</input>
+				<to>ComponentMethod_33</to>
+				<output>start</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>ComponentMethod_33</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>StartScript_1</from>
+				<input>input</input>
+				<to>If_18</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>ArenaPeriod_1</from>
+				<input>value</input>
+				<to>If_18</to>
+				<output>isActive</output>
+			</connection>
+			<connection>
+				<from>Sequence_2</from>
+				<input>in</input>
+				<to>ComponentMethod_41</to>
+				<output>o0</output>
+			</connection>
+			<connection>
+				<from>OnPrebattleHighlights_1</from>
+				<input>in</input>
+				<to>ComponentMethod_41</to>
+				<output>onEnded</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>ComponentMethod_41</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>If_21</from>
+				<input>input</input>
+				<to>Sequence_2</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>If_18</from>
+				<input>input</input>
+				<to>If_21</to>
+				<output>false</output>
+			</connection>
+			<connection>
+				<from>GSMState_1</from>
+				<input>value</input>
+				<to>If_21</to>
+				<output>isActive</output>
+			</connection>
+			<connection>
+				<from>If_22</from>
+				<input>subscribe</input>
+				<to>OnPrebattleHighlights_1</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>Sequence_2</from>
+				<input>unsubscribe</input>
+				<to>OnPrebattleHighlights_1</to>
+				<output>o1</output>
+			</connection>
+			<connection>
+				<from>GSMState_2</from>
+				<input>input</input>
+				<to>If_22</to>
+				<output>onEnterState</output>
+			</connection>
+			<connection>
+				<from>GSMState_2</from>
+				<input>value</input>
+				<to>If_22</to>
+				<output>isActive</output>
+			</connection>
+			<connection>
+				<from>OnPrebattleHighlights_1</from>
+				<input>in</input>
+				<to>ComponentMethod_40</to>
+				<output>onStart</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>ComponentMethod_40</to>
 				<output>value</output>
 			</connection>
 		</connections>

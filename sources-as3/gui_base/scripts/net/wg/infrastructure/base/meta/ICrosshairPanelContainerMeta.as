@@ -98,6 +98,8 @@ package net.wg.infrastructure.base.meta
       
       function as_updateDualGunMarkerState(param1:int) : void;
       
+      function as_setAuxiliaryRocketLauncherActive(param1:Boolean) : void;
+      
       function as_setTwinGunMarkerActive(param1:Boolean) : void;
       
       function as_setTwinGunMarkerState(param1:uint) : void;
@@ -112,7 +114,7 @@ package net.wg.infrastructure.base.meta
       
       function as_setShotFlyTimes(param1:Array) : void;
       
-      function as_setShellChangeTime(param1:Boolean, param2:Number) : void;
+      function as_setShellChangeTime(param1:Boolean, param2:String) : void;
       
       function as_isFaded(param1:Boolean) : void;
       
@@ -145,5 +147,9 @@ package net.wg.infrastructure.base.meta
       function as_setDispersionCircleThickness(param1:Boolean) : void;
       
       function as_setAlternateZoomPosition(param1:Boolean) : void;
+      
+      function as_setShellCalibrationState(param1:uint) : void;
+      
+      function as_setAutoreloaderSurgeState(param1:Boolean) : void;
    }
 }

@@ -42,7 +42,11 @@ _GUN_MARKER_LINKAGES = {_CONSTANTS.ARCADE_GUN_MARKER_NAME: _CONSTANTS.GUN_MARKER
    _CONSTANTS.LOW_CHARGE_SHOT_GUN_ARCADE_MARKER_NAME: _CONSTANTS.LOW_CHARGE_SHOT_GUN_MARKER_LINKAGE, 
    _CONSTANTS.LOW_CHARGE_SHOT_GUN_SNIPER_MARKER_NAME: _CONSTANTS.LOW_CHARGE_SHOT_GUN_MARKER_LINKAGE, 
    _CONSTANTS.DEBUG_LOW_CHARGE_SHOT_GUN_ARCADE_MARKER_NAME: _CONSTANTS.GUN_MARKER_DEBUG_LINKAGE, 
-   _CONSTANTS.DEBUG_LOW_CHARGE_SHOT_GUN_SNIPER_MARKER_NAME: _CONSTANTS.GUN_MARKER_DEBUG_LINKAGE}
+   _CONSTANTS.DEBUG_LOW_CHARGE_SHOT_GUN_SNIPER_MARKER_NAME: _CONSTANTS.GUN_MARKER_DEBUG_LINKAGE, 
+   _CONSTANTS.AUXILIARY_ROCKET_LAUNCHER_GUN_ARCADE_MARKER_NAME: _CONSTANTS.AUXILIARY_ROCKET_LAUNCHER_GUN_MARKER_ARCADE_LINKAGE, 
+   _CONSTANTS.AUXILIARY_ROCKET_LAUNCHER_GUN_SNIPER_MARKER_NAME: _CONSTANTS.AUXILIARY_ROCKET_LAUNCHER_GUN_MARKER_SNIPER_LINKAGE, 
+   _CONSTANTS.DEBUG_AUXILIARY_ROCKET_LAUNCHER_GUN_ARCADE_MARKER_NAME: _CONSTANTS.AUXILIARY_ROCKET_LAUNCHER_GUN_MARKER_ARCADE_DEBUG_LINKAGE, 
+   _CONSTANTS.DEBUG_AUXILIARY_ROCKET_LAUNCHER_GUN_SNIPER_MARKER_NAME: _CONSTANTS.AUXILIARY_ROCKET_LAUNCHER_GUN_MARKER_SNIPER_DEBUG_LINKAGE}
 
 class _GunMarkersFactories(object):
 
@@ -129,6 +133,8 @@ class _ControlMarkersFactory(_GunMarkersFactory):
             markers = self._createChargeGunMarkers()
         elif VehicleMechanic.LOW_CHARGE_SHOT in self._vehicleInfo.vehicleType.vehicleMechanics:
             markers = self._createLowChargeShotGunMarkers()
+        elif VehicleMechanic.AUXILIARY_ROCKET_LAUNCHER in self._vehicleInfo.vehicleType.vehicleMechanics:
+            markers = self._createAuxiliaryRocketLauncherGunMarkers()
         else:
             markers = self._createDefaultMarkers()
         return markers
@@ -179,6 +185,12 @@ class _ControlMarkersFactory(_GunMarkersFactory):
         return (
          self._createArcadeMarker(markerType, _CONSTANTS.LOW_CHARGE_SHOT_GUN_ARCADE_MARKER_NAME),
          self._createSniperMarker(markerType, _CONSTANTS.LOW_CHARGE_SHOT_GUN_SNIPER_MARKER_NAME))
+
+    def _createAuxiliaryRocketLauncherGunMarkers(self):
+        markerType = self._getMarkerType()
+        return (
+         self._createArcadeMarker(markerType, _CONSTANTS.AUXILIARY_ROCKET_LAUNCHER_GUN_ARCADE_MARKER_NAME),
+         self._createSniperMarker(markerType, _CONSTANTS.AUXILIARY_ROCKET_LAUNCHER_GUN_SNIPER_MARKER_NAME))
 
     def _createDefaultMarkers(self):
         markerType = self._getMarkerType()
@@ -250,6 +262,11 @@ class _DevControlMarkersFactory(_ControlMarkersFactory):
             return self._createLowChargeShotGunDebugMarkers()
         return super(_DevControlMarkersFactory, self)._createLowChargeShotGunMarkers()
 
+    def _createAuxiliaryRocketLauncherGunMarkers(self):
+        if self._useDebugMarkers():
+            return self._createAuxiliaryRocketLauncherDebugMarkers()
+        return super(_DevControlMarkersFactory, self)._createAuxiliaryRocketLauncherGunMarkers()
+
     def _createAccuracyGunDebugMarkers(self):
         return (
          self._createArcadeMarker(GUN_MARKER_TYPE.CLIENT, _CONSTANTS.ACCURACY_GUN_ARCADE_MARKER_NAME),
@@ -298,6 +315,13 @@ class _DevControlMarkersFactory(_ControlMarkersFactory):
          self._createArcadeMarker(GUN_MARKER_TYPE.SERVER, _CONSTANTS.DEBUG_LOW_CHARGE_SHOT_GUN_ARCADE_MARKER_NAME),
          self._createSniperMarker(GUN_MARKER_TYPE.CLIENT, _CONSTANTS.LOW_CHARGE_SHOT_GUN_SNIPER_MARKER_NAME),
          self._createSniperMarker(GUN_MARKER_TYPE.SERVER, _CONSTANTS.DEBUG_LOW_CHARGE_SHOT_GUN_SNIPER_MARKER_NAME))
+
+    def _createAuxiliaryRocketLauncherDebugMarkers(self):
+        return (
+         self._createArcadeMarker(GUN_MARKER_TYPE.CLIENT, _CONSTANTS.AUXILIARY_ROCKET_LAUNCHER_GUN_ARCADE_MARKER_NAME),
+         self._createArcadeMarker(GUN_MARKER_TYPE.SERVER, _CONSTANTS.DEBUG_AUXILIARY_ROCKET_LAUNCHER_GUN_ARCADE_MARKER_NAME),
+         self._createSniperMarker(GUN_MARKER_TYPE.CLIENT, _CONSTANTS.AUXILIARY_ROCKET_LAUNCHER_GUN_SNIPER_MARKER_NAME),
+         self._createSniperMarker(GUN_MARKER_TYPE.SERVER, _CONSTANTS.DEBUG_AUXILIARY_ROCKET_LAUNCHER_GUN_SNIPER_MARKER_NAME))
 
 
 class _EquipmentMarkersFactory(_GunMarkersFactory):

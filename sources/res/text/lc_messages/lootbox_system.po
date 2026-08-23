@@ -40,6 +40,30 @@ msgstr "ПОЛУЧЕННЫЕ НАГРАДЫ"
 msgid "awardViews/footer/backButton/"
 msgstr "Так точно!"
 
+msgid "awardViews/footer/caption/attemptsLeft"
+msgstr "Ещё {{count}}"
+
+msgid "awardViews/footer/caption/noAttempts"
+msgstr "Повторные открытия закончились"
+
+msgid "awardViews/footer/caption/valuable"
+msgstr "Ценная награда"
+
+msgid "awardViews/footer/rerollButton/free"
+msgstr "Переоткрыть бесплатно"
+
+msgid "awardViews/footer/rerollButton/notEnoughBons"
+msgstr "Недостаточно бон"
+
+msgid "awardViews/footer/rerollButton/paid"
+msgstr "Переоткрыть за {{count}}"
+
+msgid "awardViews/footer/rerollButton/reopen"
+msgstr "Переоткрыть"
+
+msgid "awardViews/footer/tooltip/specialDropBody"
+msgstr "Ценные награды нельзя поменять при повторном открытии коробки."
+
 msgid "bonuses/description/battle_booster"
 msgstr "Предбоевая инструкция"
 
@@ -132,6 +156,18 @@ msgstr "Открыто коробок: %(count)"
 msgid "common/statsButton"
 msgstr "Статистика"
 
+msgid "confirmRerollLootBox/cancel"
+msgstr "Отменить"
+
+msgid "confirmRerollLootBox/description/default"
+msgstr "Коробка будет открыта ещё раз с возможностью получить другие награды."
+
+msgid "confirmRerollLootBox/reopen"
+msgstr "Переоткрыть"
+
+msgid "confirmRerollLootBox/title"
+msgstr "Переоткрыть за {{cost}}?"
+
 msgid "confirmResetLootBoxStatistics/cancel"
 msgstr "Отменить"
 
@@ -159,7 +195,7 @@ msgstr ""
 "можно получить во внутриигровом Магазине."
 
 msgid "entryPoint/tooltip/timerText"
-msgstr "Событие продлится до"
+msgstr "Событие завершится через"
 
 msgid "entryPoint/tooltip/warningDescription"
 msgstr "По техническим причинам событие временно приостановлено."
@@ -217,33 +253,42 @@ msgstr "%(boxName)s: %(count)s"
 msgid "homeView/subtitle"
 msgstr "Событие завершится через %(time)"
 
-msgid "infoPage/footer/description/autoOpen"
+msgid "infoPage/footer/description/autoOpen/default"
 msgstr ""
-"Если вы не откроете все коробки до окончания события, они будут открыты "
+"Если вы не откроете коробки до окончания события, они будут открыты "
 "автоматически."
 
-msgid "infoPage/footer/description/compensation"
+msgid "infoPage/footer/description/compensation/default"
 msgstr ""
 "Если у вас уже есть вся техника из списка возможных наград, все последующие "
 "машины, которые вы получите из коробок, будут компенсированы золотом в "
 "размере их полной стоимости."
 
-msgid "infoPage/footer/description/guaranteed"
+msgid "infoPage/footer/description/guaranteed/default"
 msgstr ""
-"Каждые %(guaranteed0)s Коробок гарантированно содержат машину VIII–X "
-"уровней. Если при их открытии вам не выпадет такая техника, то в "
-"%(guaranteed0)s&zwnbsp;-й Коробке вы обязательно найдёте машину VIII–X "
-"уровней, которой у вас ещё нет. После выпадения техники счётчик "
-"сбрасывается."
+"Каждые %(guaranteed)s коробок гарантированно содержат машину VIII–X уровней."
+" Если при их открытии вам не выпадет такая техника, то в "
+"%(guaranteed)s&zwnbsp;-й коробке (в зависимости от её типа) вы обязательно "
+"найдёте машину VIII–X уровней, которой у вас ещё нет. После выпадения "
+"техники счётчик сбрасывается."
 
-msgid "infoPage/footer/title/autoOpen"
+msgid "infoPage/footer/description/reroll/default"
+msgstr ""
+"Если вам не нравится содержимое коробки, вы можете открыть её ещё раз с "
+"возможностью получить другие предметы из того же списка. Каждую коробку "
+"можно открыть повторно ограниченное количество раз:"
+
+msgid "infoPage/footer/title/autoOpen/default"
 msgstr "Автооткрытие"
 
-msgid "infoPage/footer/title/compensation"
+msgid "infoPage/footer/title/compensation/default"
 msgstr "Компенсация"
 
-msgid "infoPage/footer/title/guaranteed"
+msgid "infoPage/footer/title/guaranteed/default"
 msgstr "Гарантированная награда"
+
+msgid "infoPage/footer/title/reroll/default"
+msgstr "Повторное открытие"
 
 msgid "infoPage/header/lootListLink"
 msgstr "Смотреть список предметов на игровом портале"
@@ -255,7 +300,7 @@ msgid "infoPage/header/probability/title"
 msgstr "Группа"
 
 msgid "infoPage/header/rewards/description"
-msgstr "Вы получите одну из этих наград из каждой полученной группы"
+msgstr "Может выпасть не более одной награды из группы"
 
 msgid "infoPage/header/rewards/title"
 msgstr "Награды"
@@ -301,6 +346,30 @@ msgstr "для %(vehicleInfo)"
 
 msgid "rareRewardOverlay/rewardDescription/style/text"
 msgstr "3D-стиль «%(style)»"
+
+msgid "reroll/free"
+msgstr "Бесплатно"
+
+msgid "reroll/singleStep"
+msgstr "{{step}}"
+
+msgid "reroll/template"
+msgstr "{{start}}–{{end}}"
+
+msgid "serviceChannelMessages/financialTransaction"
+msgstr "Финансовая операция"
+
+msgid "serviceChannelMessages/financialTransaction/credits"
+msgstr "Списано кредитов: %(amount)s"
+
+msgid "serviceChannelMessages/financialTransaction/crystal"
+msgstr "Списано бон: %(amount)s"
+
+msgid "serviceChannelMessages/financialTransaction/date"
+msgstr "Дата: %(date)s"
+
+msgid "serviceChannelMessages/financialTransaction/gold"
+msgstr "Списано золота: %(amount)s"
 
 msgid "serviceChannelMessages/finish/header"
 msgstr "Событие «%(eventName)s» завершено"
@@ -510,3 +579,17 @@ msgstr "Компенсировано машин: %(count)"
 
 msgid "tooltip/compensation/notification"
 msgstr "Компенсация за машину, которая уже есть в Ангаре."
+
+msgid "tooltip/reroll/attempt"
+msgstr "Повторное открытие"
+
+msgid "tooltip/reroll/price"
+msgstr "Стоимость"
+
+msgid "tooltip/reroll/text/default"
+msgstr ""
+"При повторном открытии коробки у вас появляется возможность получить другие "
+"награды из того же списка."
+
+msgid "tooltip/reroll/title/default"
+msgstr "Повторное открытие"

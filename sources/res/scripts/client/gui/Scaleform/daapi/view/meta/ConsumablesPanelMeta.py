@@ -47,6 +47,10 @@ class ConsumablesPanelMeta(BaseDAAPIComponent):
         if self._isDAAPIInited():
             return self.flashObject.as_setCurrentShell(idx)
 
+    def as_suppressNextShellBlinkS(self, suppress):
+        if self._isDAAPIInited():
+            return self.flashObject.as_suppressNextShellBlink(suppress)
+
     def as_addEquipmentSlotS(self, idx, keyCode, sfKeyCode, quantity, timeRemaining, reloadingTime, iconPath, tooltipText, animation):
         if self._isDAAPIInited():
             return self.flashObject.as_addEquipmentSlot(idx, keyCode, sfKeyCode, quantity, timeRemaining, reloadingTime, iconPath, tooltipText, animation)
@@ -102,6 +106,10 @@ class ConsumablesPanelMeta(BaseDAAPIComponent):
     def as_setSPGShotResultS(self, shellIdx, shotResult):
         if self._isDAAPIInited():
             return self.flashObject.as_setSPGShotResult(shellIdx, shotResult)
+
+    def as_setShellModeS(self, shellIdx, shellMode, isActive):
+        if self._isDAAPIInited():
+            return self.flashObject.as_setShellMode(shellIdx, shellMode, isActive)
 
     def as_addRoleSkillSlotS(self, idx, keyCode, sfKeyCode, quantity, timeRemaining, reloadingTime, iconPath, tooltipText, animation):
         if self._isDAAPIInited():

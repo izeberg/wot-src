@@ -16,6 +16,7 @@ package net.wg.gui.lobby.settings
    import net.wg.gui.lobby.settings.config.SettingsConfigHelper;
    import net.wg.gui.lobby.settings.events.SettingViewEvent;
    import net.wg.gui.lobby.settings.vo.ColorFilerSettingsVo;
+   import net.wg.gui.lobby.settings.vo.IncreaseEffectsContrastVO;
    import net.wg.gui.lobby.settings.vo.SettingsControlProp;
    import net.wg.gui.lobby.settings.vo.base.SettingsDataVo;
    import net.wg.infrastructure.managers.counter.CounterProps;
@@ -382,6 +383,14 @@ package net.wg.gui.lobby.settings
          super.updateDependedControl(param1);
       }
       
+      public function onSettingsChanged() : void
+      {
+         if(currentScreenModeId == SettingsConfigHelper.RESOLUTION)
+         {
+            this.updateColorSettingsEnabled();
+         }
+      }
+      
       public function rewriteInitialValues() : void
       {
          var _loc1_:SettingsControlProp = SettingsControlProp(data[SettingsConfigHelper.FOV]);
@@ -477,14 +486,6 @@ package net.wg.gui.lobby.settings
             }
          }
          return _loc4_;
-      }
-      
-      public function onSettingsChanged() : void
-      {
-         if(currentScreenModeId == SettingsConfigHelper.RESOLUTION)
-         {
-            this.updateColorSettingsEnabled();
-         }
       }
       
       private function updateCurrentTab() : void
@@ -1068,6 +1069,7 @@ package net.wg.gui.lobby.settings
          var _loc11_:Boolean = false;
          var _loc12_:SettingsStepSlider = null;
          var _loc13_:DropdownMenu = null;
+         var _loc14_:IncreaseEffectsContrastVO = null;
          var _loc8_:uint = 0;
          var _loc9_:Array = param2.options;
          switch(param2.type)
@@ -1085,6 +1087,11 @@ package net.wg.gui.lobby.settings
                if(!this._isInited)
                {
                   _loc10_.addEventListener(Event.SELECT,this.onCheckBoxOrderedSelectHandler);
+               }
+               if(param1 == SettingsConfigHelper.INCREASE_EFFECTS_CONTRAST_ENABLED)
+               {
+                  _loc14_ = new IncreaseEffectsContrastVO(param2.extraData);
+                  _loc10_.visible = _loc14_.enabled;
                }
                break;
             case SettingsConfigHelper.TYPE_STEP_SLIDER:

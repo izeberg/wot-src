@@ -16,11 +16,12 @@ from gui.shared.formatters import icons, text_styles
 from helpers import i18n
 from messenger import g_settings
 from messenger.m_constants import PROTO_TYPE
-from messenger.storage import storage_getter
+from messenger.storage import MessengerStorageDescriptor, UsersStorage
 from messenger.proto import proto_getter
 from skeletons.gui.lobby_context import ILobbyContext
 
 class CandidatesDataProvider(DAAPIDataProvider):
+    usersStorage = MessengerStorageDescriptor(UsersStorage)
 
     def __init__(self):
         super(CandidatesDataProvider, self).__init__()
@@ -53,7 +54,7 @@ class CandidatesDataProvider(DAAPIDataProvider):
 
     def _buildData(self, candidates):
         isPlayerSpeaking = self.bwProto.voipController.isPlayerSpeaking
-        userGetter = storage_getter('users')().getUser
+        userGetter = self.usersStorage.getUser
         colorGetter = g_settings.getColorScheme('rosters').getColors
         mapping = [ (pInfo, userGetter(pInfo.dbID)) for pInfo in viewvalues(candidates) ]
         sortedList = sorted(mapping, key=UnitCandidatesSortKey)
@@ -172,6 +173,7 @@ class StaticFormationCandidatesDP(CandidatesDataProvider):
 
 class ManualSearchDataProvider(BaseRallyListDataProvider):
     lobbyContext = dependency.descriptor(ILobbyContext)
+    usersStorage = MessengerStorageDescriptor(UsersStorage)
 
     @prbEntityProperty
     def prbEntity(self):
@@ -182,7 +184,7 @@ class ManualSearchDataProvider(BaseRallyListDataProvider):
 
     def buildList(self, selectedID, result):
         self.clear()
-        userGetter = storage_getter('users')().getUser
+        userGetter = self.usersStorage.getUser
         colorGetter = g_settings.getColorScheme('rosters').getColors
         pNameGetter = self.lobbyContext.getPeripheryName
         ratingFormatter = backport.getIntegralFormat
@@ -222,7 +224,7 @@ class ManualSearchDataProvider(BaseRallyListDataProvider):
                 return
             creatorDBID = creator.get('dbID', None)
             if userDBID == creatorDBID:
-                userGetter = storage_getter('users')().getUser
+                userGetter = self.usersStorage.getUser
                 colorGetter = g_settings.getColorScheme('rosters').getColors
                 colors = colorGetter(userGetter(creatorDBID).getGuiType())
                 creator['colors'] = colors
@@ -234,7 +236,7 @@ class ManualSearchDataProvider(BaseRallyListDataProvider):
     def updateList(self, selectedID, result):
         isFullUpdate, diff = False, []
         self._selectedIdx = None
-        userGetter = storage_getter('users')().getUser
+        userGetter = self.usersStorage.getUser
         colorGetter = g_settings.getColorScheme('rosters').getColors
         ratingFormatter = backport.getIntegralFormat
         result = set(result)

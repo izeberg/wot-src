@@ -76,7 +76,7 @@ package net.wg.gui.lobby.manualChapter.controls
          {
             this.loader.source = this._vo.icon;
          }
-         if(isInvalid(InvalidationType.DATA,InvalidationType.SIZE))
+         if(isInvalidTypes(InvalidationType.DATA,InvalidationType.SIZE))
          {
             this.updateLabel();
             height = this.txtDescription.y + this.txtDescription.contentHeight;

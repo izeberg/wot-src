@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from collections import namedtuple
 import CGF, Math, BigWorld
 from death_zones_helpers import ZONE_STATE, idxFrom, zoneIdFrom, ZONES_SIZE

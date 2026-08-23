@@ -1207,6 +1207,12 @@ msgstr "Дополнительные грунтозацепы (Класс 3)"
 msgid "gun_balancing_1/name"
 msgstr "Балансировка орудия (Тип 1)"
 
+msgid "gun_balancing_2/name"
+msgstr "Балансировка орудия (Тип 2)"
+
+msgid "gun_barrel_modification_1/name"
+msgstr "Модификация ствола орудия (Тип 1)"
+
 msgid "handExtinguishers/always"
 msgstr "?empty?"
 
@@ -1504,6 +1510,9 @@ msgstr "Улучшенная подвеска (Тип 1)"
 msgid "improved_suspension_2/name"
 msgstr "Улучшенная подвеска (Тип 2)"
 
+msgid "improved_turret_drive_1/name"
+msgstr "Улучшенный привод башни (Тип 1)"
+
 msgid "inspire/longDescr"
 msgstr ""
 "При использовании воодушевляет экипаж машины игрока и ближайших союзников в "
@@ -1718,6 +1727,9 @@ msgstr "Система повышения мобильности Т3"
 msgid "modernizedTurbochargerRotationMechanism3/short_special"
 msgstr "Система повышения мобильности Т3"
 
+msgid "muzzle_flash_suppressor_1/name"
+msgstr "Пламегаситель (Тип 1)"
+
 msgid "nitro/battleDescr"
 msgstr ""
 "Временно увеличивает мощность двигателя машины игрока на "
@@ -1799,6 +1811,14 @@ msgstr ""
 
 msgid "poi_artillery_aoe/name"
 msgstr "Артиллерийский удар"
+
+msgid "poi_illumination_flare/descr"
+msgstr ""
+"После небольшой задержки осветительная ракета подсвечивает выбранную область. Машины противника, оказавшиеся этой в зоне, остаются обнаруженными и получают больше урона.\n"
+"Повторный захват Наблюдательного поста возможен через несколько минут."
+
+msgid "poi_illumination_flare/name"
+msgstr "Осветительная ракета"
 
 msgid "poi_radar/descr"
 msgstr ""
@@ -2477,37 +2497,93 @@ msgstr ""
 "Облегчённый\n"
 "корпус"
 
-msgid "role_LT_universal_pair_4_1/name"
-msgstr "Антибликовая маскировка оптики"
+msgid "role_LT_scout_pair_4_1/name"
+msgstr "Антибликовое покрытие фар"
 
-msgid "role_LT_universal_pair_4_1/splitName"
+msgid "role_LT_scout_pair_4_1/splitName"
 msgstr ""
-"Антибликовая\n"
-"маскировка оптики"
+"Антибликовое\n"
+"покрытие фар"
 
-msgid "role_LT_universal_pair_4_2/name"
-msgstr "Выносные обзорные приборы"
+msgid "role_LT_scout_pair_4_2/name"
+msgstr "Электропривод перископа"
 
-msgid "role_LT_universal_pair_4_2/splitName"
+msgid "role_LT_scout_pair_4_2/splitName"
 msgstr ""
-"Выносные\n"
-"обзорные приборы"
+"Электропривод\n"
+"перископа"
 
-msgid "role_LT_universal_pair_5_1/name"
+msgid "role_LT_scout_pair_5_1/name"
 msgstr "Панорамные триплексы"
 
-msgid "role_LT_universal_pair_5_1/splitName"
-msgstr ""
-"Панорамные\n"
-"триплексы"
+msgid "role_LT_scout_pair_5_1/splitName"
+msgstr "Панорамные триплексы"
 
-msgid "role_LT_universal_pair_5_2/name"
+msgid "role_LT_scout_pair_5_2/name"
 msgstr "Узкоугольный смотровой прибор"
 
-msgid "role_LT_universal_pair_5_2/splitName"
+msgid "role_LT_scout_pair_5_2/splitName"
 msgstr ""
 "Узкоугольный\n"
 "смотровой прибор"
+
+msgid "role_LT_support_pair_4_1/name"
+msgstr "Новые механизмы наведения"
+
+msgid "role_LT_support_pair_4_1/splitName"
+msgstr "Новые механизмы наведения"
+
+msgid "role_LT_support_pair_4_2/name"
+msgstr "Электропривод перископа"
+
+msgid "role_LT_support_pair_4_2/splitName"
+msgstr ""
+"Электропривод\n"
+"перископа"
+
+msgid "role_LT_support_pair_5_1/name"
+msgstr "Общее увеличение прочности"
+
+msgid "role_LT_support_pair_5_1/splitName"
+msgstr ""
+"Общее увеличение\n"
+"прочности"
+
+msgid "role_LT_support_pair_5_2/name"
+msgstr "Антибликовое покрытие фар"
+
+msgid "role_LT_support_pair_5_2/splitName"
+msgstr ""
+"Антибликовое\n"
+"покрытие фар"
+
+msgid "role_LT_universal_pair_4_1/name"
+msgstr "Настройка эжектора"
+
+msgid "role_LT_universal_pair_4_1/splitName"
+msgstr "Настройка эжектора"
+
+msgid "role_LT_universal_pair_4_2/name"
+msgstr "Перераспределение энергопитания"
+
+msgid "role_LT_universal_pair_4_2/splitName"
+msgstr ""
+"Перераспределение\n"
+"энергопитания"
+
+msgid "role_LT_universal_pair_5_1/name"
+msgstr "Улучшенная нарезка ствола"
+
+msgid "role_LT_universal_pair_5_1/splitName"
+msgstr ""
+"Улучшенная\n"
+"нарезка ствола"
+
+msgid "role_LT_universal_pair_5_2/name"
+msgstr "Чувствительная оптика"
+
+msgid "role_LT_universal_pair_5_2/splitName"
+msgstr "Чувствительная оптика"
 
 msgid "role_LT_wheeled_pair_4_1/name"
 msgstr "Укрепление силового каркаса"
@@ -3213,6 +3289,9 @@ msgstr ""
 "Создаёт зону, в которую бьёт череда из %(thunderCount)s электрических разрядов с низкой задержкой. Каждый разряд наносит {whiteSpanish_Open}%(damage)s ед. урона{whiteSpanish_Close} и накладывает эффект, снижающий подвижность техники в зоне действия.\n"
 "\n"
 "*Первый разряд ударяет через %(delay)s с после активации умения. Ремонтный набор сбрасывает эффект."
+
+msgid "torsion_bars_replace_1/name"
+msgstr "Замена торсионов (Тип 1)"
 
 msgid "trappoint/battleDescr"
 msgstr ""

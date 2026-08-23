@@ -21,11 +21,10 @@ msgstr "Так точно!"
 
 msgid "error/description"
 msgstr ""
-"Информация временно недоступна. Приносим извинения за неудобства, попробуйте"
-" повторить позже."
+"Приносим извинения за причинённые неудобства. Повторите попытку позже."
 
 msgid "error/title"
-msgstr "Не удалось открыть окно выбора награды"
+msgstr "Страница временно недоступна."
 
 msgid "footer/closeBtn/label"
 msgstr "Выбрать позже"
@@ -37,7 +36,7 @@ msgstr[1] "Выберите награды из представленных к�
 msgstr[2] "Выберите награды из представленных категорий."
 
 msgid "footer/okBtn/label"
-msgstr "Забрать"
+msgstr "Забрать награды"
 
 msgid "footer/rewardsSelected"
 msgstr "Выбрано наград:"
@@ -59,14 +58,14 @@ msgstr "Уже получено"
 
 msgid "reward/tooltip/state_limited/body"
 msgstr ""
-"Лимит выбираемых предметов в данной категории достигнут. Вы можете отменить "
-"выбор одной из единиц, чтобы добавить другую."
+"Достигнуто максимальное количество предметов данной категории. Исключите "
+"один из них или выберите другой."
 
 msgid "reward/tooltip/state_limited/header"
 msgstr "Достигнут максимум"
 
 msgid "tabs/counter"
-msgstr "%(count)s/%(limit)s"
+msgstr "%(count)s / %(limit)s"
 
 msgid "tabs/items/battleBooster"
 msgstr ""
@@ -113,6 +112,9 @@ msgstr "Штатное оборудование"
 
 msgid "tabs/items/trophy"
 msgstr "Трофейное оборудование"
+
+msgid "tooltips/footer/body"
+msgstr "Выберите награды для получения"
 
 msgid "tooltips/selectedRewards/description"
 msgstr "Нажмите «Забрать», чтобы получить выбранные награды."

@@ -43,10 +43,10 @@
 						<node>
 							<identifier>HP_gunFire_L</identifier>
 							<transform>
-								<row0>1.000000 0.000000 0.000000</row0>
-								<row1>0.000000 1.000000 0.000000</row1>
+								<row0>0.866025 0.500000 0.000000</row0>
+								<row1>-0.500000 0.866025 0.000000</row1>
 								<row2>0.000000 0.000000 1.000000</row2>
-								<row3>-0.218741 -0.033307 1.967053</row3>
+								<row3>-0.218741 -0.033307 1.627023</row3>
 							</transform>
 						</node>
 						<node>
@@ -70,10 +70,10 @@
 						<node>
 							<identifier>HP_gunFire_R</identifier>
 							<transform>
-								<row0>1.000000 0.000000 0.000000</row0>
-								<row1>0.000000 1.000000 0.000000</row1>
+								<row0>0.866025 -0.500000 0.000000</row0>
+								<row1>0.500000 0.866025 0.000000</row1>
 								<row2>-0.000000 0.000000 1.000000</row2>
-								<row3>0.218956 -0.033307 1.967053</row3>
+								<row3>0.218956 -0.033307 1.627023</row3>
 							</transform>
 						</node>
 						<node>
@@ -85,6 +85,15 @@
 								<row3>-0.001000 0.000000 -3.000000</row3>
 							</transform>
 						</node>
+					</node>
+					<node>
+						<identifier>HP_gunFire</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>0.000108 -0.033307 1.627023</row3>
+						</transform>
 					</node>
 					<node>
 						<identifier>G_BlendBone</identifier>
@@ -192,5 +201,5 @@
 		<min>-0.547401 -0.248282 -0.007427</min>
 		<max>0.547933 0.337288 5.028752</max>
 	</boundingBox>
-	<geometrySize>2124</geometrySize>
+	<geometrySize>2044</geometrySize>
 </root>

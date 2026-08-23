@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, weakref, BigWorld, BattleReplay
 from Event import EventsSubscriber
 from ReplayEvents import g_replayEvents
@@ -70,10 +71,10 @@ class RespawnMessagePanel(BRRespawnMessagePanelMeta, ISpawnListener, IArenaPerio
                 message = formatRespawnActivatedMessage(timeLeft, self.RESPAWN_DELAY_BEFORE_SHOW)
                 self.__addMessage(message)
 
-    def updateTeammateRespawnTime(self, teammateTimeLeft):
-        if teammateTimeLeft > 0.0:
-            _logger.debug('formatStayInCoverMessage %s', teammateTimeLeft)
-            message = formatStayInCoverMessage(teammateTimeLeft, RESPAWNING_TIMER_DELAY)
+    def updateTeammateRespawnTime(self, timeLeft):
+        if timeLeft > 0.0:
+            _logger.debug('formatStayInCoverMessage %s', timeLeft)
+            message = formatStayInCoverMessage(timeLeft, RESPAWNING_TIMER_DELAY)
             self.__addMessage(message)
 
     def updateBlockToResurrectTime(self, blockTime):

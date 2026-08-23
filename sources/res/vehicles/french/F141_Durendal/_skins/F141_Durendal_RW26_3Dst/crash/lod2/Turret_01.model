@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F141_Durendal/_skins/F141_Durendal_RW26_3Dst/crash/lod2/Turret_01</nodefullVisual>
+	<parent>vehicles/french/F141_Durendal/_skins/F141_Durendal_RW26_3Dst/crash/lod3/Turret_01</parent>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.554565 -0.005895 -2.529810</min>
+		<max>1.530881 1.422053 1.549750</max>
+	</visibilityBox>
+</root>

@@ -3,6 +3,8 @@ import typing
 from gui.battle_control.battle_constants import CANT_SHOOT_ERROR
 from gui.battle_control.components_states.ammo.constants import AmmoShootPossibility
 from gui.battle_control.components_states.ammo.interfaces import IComponentAmmoState
+if typing.TYPE_CHECKING:
+    from gui.battle_control.components_states.ammo.interfaces import IAmmoMode
 
 class DefaultComponentAmmoState(IComponentAmmoState):
 
@@ -23,4 +25,10 @@ class DefaultComponentAmmoState(IComponentAmmoState):
         return AmmoShootPossibility.NOT_DEFINED
 
     def getSpecialReloadMessage(self):
+        return
+
+    def getAmmoMode(self):
+        return
+
+    def getShellReloadTimes(self, currShell, shellChangeTime, shells):
         return

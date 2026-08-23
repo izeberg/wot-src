@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G196_Versuchspanzer_57/crash/lod1/Turret_02</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/german/G196_Versuchspanzer_57/crash/lod2/Turret_02</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.404201 -0.027319 -2.061530</min>
+		<max>1.419629 1.140128 1.495667</max>
+	</visibilityBox>
+</root>

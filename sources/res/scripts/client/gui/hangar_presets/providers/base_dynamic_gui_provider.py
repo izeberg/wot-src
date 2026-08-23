@@ -1,6 +1,6 @@
 import typing
 from arena_bonus_type_caps import ARENA_BONUS_TYPE_CAPS as BONUS_CAPS
-from battle_modifiers_common import BattleModifiers, BattleParams, getGlobalModifiers
+from battle_modifiers_common import BattleModifiers, BattleParams, getDevGlobalModifiers
 from constants import ARENA_BONUS_TYPE, IS_DEVELOPMENT
 from gui.hangar_presets.obsolete.hangar_presets_getters import IPresetsGetter, EmptyPresetsGetter
 from gui.Scaleform.daapi.view.lobby.header.helpers.controls_helpers import EmptyLobbyHeaderFooterHelper
@@ -56,7 +56,7 @@ class EmptyHangarDynamicGuiProvider(IHangarDynamicGuiProvider):
     @classmethod
     def getDefaultBattleModifiers(cls):
         if IS_DEVELOPMENT:
-            return getGlobalModifiers()
+            return getDevGlobalModifiers()
         return cls._DEFAULT_BATTLE_MODIFIERS
 
     @classmethod

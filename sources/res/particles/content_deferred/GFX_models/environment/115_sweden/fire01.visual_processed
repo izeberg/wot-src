@@ -21,6 +21,10 @@
 				<material>
 					<identifier>FireSmall</identifier>
 					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
+					<property>
+						g_enableEnvMultiplier
+						<Bool>true</Bool>
+					</property>
 					<collisionFlags>255</collisionFlags>
 					<materialKind>0</materialKind>
 					<property>
@@ -64,7 +68,7 @@
 					<property>
 						lightMultipliers
 						<Vector4>
-							22 0.000000 0.000000 0.000000
+							40.740741 0.000000 0.000000 0.000000
 							<!--BW_String-->
 						</Vector4>
 					</property>

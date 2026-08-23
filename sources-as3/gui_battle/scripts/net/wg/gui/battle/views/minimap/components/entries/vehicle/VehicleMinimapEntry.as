@@ -349,9 +349,14 @@ package net.wg.gui.battle.views.minimap.components.entries.vehicle
       
       public function setAlive() : void
       {
-         this._currentTextField.visible = this._isVehicleLabelVisible;
          this._deadState = Values.EMPTY_STR;
-         invalidate(INVALID_CHANGE_VEHICLE_ANIMATION_TYPE);
+         if(this._minimapEntryController.isShowVehicleNamesTurnedOn)
+         {
+            this._isVehicleLabelVisible = true;
+            this._labelHelper.validateLabel();
+         }
+         this._currentTextField.visible = this._isVehicleLabelVisible;
+         invalidate(INVALID_CHANGE_VEHICLE_ANIMATION_TYPE | INVALID_VEHICLE_LABEL);
       }
       
       public function setAnimation(param1:String) : void
@@ -363,9 +368,11 @@ package net.wg.gui.battle.views.minimap.components.entries.vehicle
       public function setDead(param1:Boolean) : void
       {
          this._currentTextField.visible = false;
+         this._isVehicleLabelVisible = false;
+         this._labelHelper.validateLabel();
          this._deadState = VehicleMinimapEntryConst.DEAD;
          this._isDeadPermanent = param1;
-         invalidate(INVALID_CHANGE_VEHICLE_ANIMATION_TYPE);
+         invalidate(INVALID_CHANGE_VEHICLE_ANIMATION_TYPE | INVALID_VEHICLE_LABEL);
       }
       
       public function setFlagBearer(param1:Boolean) : void
@@ -459,15 +466,6 @@ package net.wg.gui.battle.views.minimap.components.entries.vehicle
          }
       }
       
-      public function showVehicleHp(param1:Boolean) : void
-      {
-         if(this._showVehicleHp != param1)
-         {
-            this._showVehicleHp = param1;
-            invalidate(INVALID_HP);
-         }
-      }
-      
       public function showExtendedInfo(param1:Boolean) : void
       {
          if(this._isExtendedInfoShown != param1)
@@ -477,8 +475,21 @@ package net.wg.gui.battle.views.minimap.components.entries.vehicle
          }
       }
       
+      public function showVehicleHp(param1:Boolean) : void
+      {
+         if(this._showVehicleHp != param1)
+         {
+            this._showVehicleHp = param1;
+            invalidate(INVALID_HP);
+         }
+      }
+      
       public function showVehicleName() : void
       {
+         if(this._deadState == VehicleMinimapEntryConst.DEAD)
+         {
+            return;
+         }
          this._isVehicleLabelVisible = true;
          this._labelHelper.validateLabel();
          invalidate(INVALID_VEHICLE_LABEL);
@@ -492,14 +503,14 @@ package net.wg.gui.battle.views.minimap.components.entries.vehicle
          }
       }
       
-      public function get vehicleID() : Number
-      {
-         return this._vehicleID;
-      }
-      
       public function updateSizeIndex(param1:int) : void
       {
          this._labelHelper.updateSizeIndex(param1);
+      }
+      
+      public function get vehicleID() : Number
+      {
+         return this._vehicleID;
       }
       
       public function get isVehicleLabelVisible() : Boolean

@@ -485,12 +485,12 @@ msgstr ""
 
 msgid "modes/fall_tanks/entryPoint/tooltip/performance/highRisk/description"
 msgstr ""
-"Режим требователен к компьютеру. Карта может долго загружаться, возможны "
-"проблемы с графикой и перемещением техники в бою. В случае недостаточной "
-"производительности попробуйте понизить настройки графики."
+"Производительности вашего компьютера недостаточно для данного режима. Будут "
+"наблюдаться проблемы с графикой и перемещением техники, возможно также "
+"аварийное закрытие клиента игры."
 
 msgid "modes/fall_tanks/entryPoint/tooltip/performance/highRisk/header"
-msgstr "Возможно снижение производительности"
+msgstr "Низкая производительность"
 
 msgid "modes/fall_tanks/entryPoint/tooltip/performance/mediumRisk/description"
 msgstr ""
@@ -543,29 +543,27 @@ msgstr "{parSecondary_open}I{parSecondary_close} Все уровни"
 
 msgid "modes/fall_tanks/mode_selector/performance/highRisk/description"
 msgstr ""
-"При низких настройках могут появляться графические артефакты и другие "
-"проблемы. Для лучшего качества рекомендуется выбрать высокие настройки, если"
-" ваш компьютер соответствует требованиям. Режим требователен к компьютеру. "
-"Возможно снижение FPS при интенсивных боевых действиях."
+"Производительности вашего компьютера недостаточно для данного режима. Будут "
+"наблюдаться проблемы с графикой и перемещением техники, возможно также "
+"аварийное закрытие клиента игры."
 
 msgid "modes/fall_tanks/mode_selector/performance/highRisk/header"
-msgstr "Рекомендуется использовать высокие настройки графики"
+msgstr "Низкая производительность"
 
 msgid "modes/fall_tanks/mode_selector/performance/highRisk/headerIcon"
-msgstr "%(icon) Рекомендуется использовать высокие настройки графики"
+msgstr "%(icon) Низкая производительность"
 
 msgid "modes/fall_tanks/mode_selector/performance/mediumRisk/description"
 msgstr ""
-"При низких настройках могут появляться графические артефакты и другие "
-"проблемы. Для лучшего качества рекомендуется выбрать высокие настройки, если"
-" ваш компьютер соответствует требованиям. Режим требователен к компьютеру. "
-"Возможно снижение FPS при интенсивных боевых действиях."
+"Режим требователен к компьютеру. Карта может долго загружаться, возможны "
+"проблемы с графикой и перемещением техники в бою. В случае недостаточной "
+"производительности, попробуйте понизить настройки графики."
 
 msgid "modes/fall_tanks/mode_selector/performance/mediumRisk/header"
-msgstr "Рекомендуется использовать высокие настройки графики"
+msgstr "Возможно снижение производительности"
 
 msgid "modes/fall_tanks/mode_selector/performance/mediumRisk/headerIcon"
-msgstr "%(icon) Рекомендуется использовать высокие настройки графики"
+msgstr "%(icon) Возможно снижение производительности"
 
 msgid "modes/fall_tanks/mode_selector/progression/resettable"
 msgstr "До новой задачи режима «Сияние неона»"
@@ -601,13 +599,13 @@ msgid "modes/fall_tanks/progression/infinite/congratulations"
 msgstr "Поздравляем!"
 
 msgid "modes/fall_tanks/progression/infinite/infinityStep"
-msgstr "Бесконечная постпрогрессия"
+msgstr "Повторяемый этап"
 
 msgid "modes/fall_tanks/progression/infinite/mainProgressionFinished"
 msgstr "Вы завершили основную прогрессию"
 
 msgid "modes/fall_tanks/progression/questsList/quest/infinityStageProgress"
-msgstr "Выполняйте этот этап без ограничений."
+msgstr "Получите столько наград, сколько сможете:"
 
 msgid "modes/fall_tanks/progression/questsList/totalPointsEarned"
 msgstr "Заработано очков: {{progressionSteps}}"
@@ -627,13 +625,13 @@ msgstr "Повторяемая"
 
 msgid ""
 "modes/fall_tanks/progressionQuests/quest/progressChangeLabel/forCompletion"
-msgstr "За выполнение:"
+msgstr "За выполнение"
 
 msgid "modes/fall_tanks/progressionQuests/quest/progressChangeLabel/forLoss"
-msgstr "За поражение:"
+msgstr "За поражение"
 
 msgid "modes/fall_tanks/progressionQuests/quest/progressChangeLabel/forWin"
-msgstr "За победу:"
+msgstr "За победу"
 
 msgid "modes/fall_tanks/progressionQuests/quest/progressChangeLabel/points"
 msgstr "Очки:"
@@ -660,10 +658,10 @@ msgstr ""
 "следующем цикле."
 
 msgid "modes/fall_tanks/progressionQuests/tooltip/expiresCurrent"
-msgstr "Доступна {{timeLeft}}"
+msgstr "Завершится через {{timeLeft}}"
 
 msgid "modes/fall_tanks/progressionQuests/tooltip/expiresInfinite"
-msgstr "Доступна {{timeLeft}}"
+msgstr "До конца события {{timeLeft}}"
 
 msgid "modes/fall_tanks/progressionQuests/tooltip/newMissions"
 msgstr "Новые задачи станут доступны через {{timeLeft}}"
@@ -1306,6 +1304,14 @@ msgstr "Избегайте лазеров и рассчитывайте прыж
 msgid "sub_modes/fall_tanks/detailsHelp/page2/title"
 msgstr "Осторожно: лазеры и прыжки"
 
+msgid "sub_modes/fall_tanks/detailsHelp/page3/description"
+msgstr ""
+"Если ваша машина застряла, используйте способность «Возврат к контрольной "
+"точке», чтобы телепортироваться к последней пройденной контрольной точке."
+
+msgid "sub_modes/fall_tanks/detailsHelp/page3/title"
+msgstr "Возврат к контрольной точке"
+
 msgid "sub_modes/fall_tanks/detailsHelpHint/description"
 msgstr ", чтобы узнать подробности режима"
 
@@ -1319,47 +1325,45 @@ msgid "sub_modes/fall_tanks/subModeCard/battleCondition"
 msgstr "15–30"
 
 msgid "sub_modes/fall_tanks/subModeCard/description"
-msgstr ""
-"Пробейтесь\n"
-"к финишной черте"
+msgstr "Пробейтесь к финишной черте"
 
 msgid "sub_modes/fall_tanks/subModeCard/levelCondition"
 msgstr "{parSecondary_open}I{parSecondary_close} Все уровни"
 
 msgid "sub_modes/fall_tanks/subModeCard/performance/highRisk/description"
 msgstr ""
-"При низких настройках могут появляться графические артефакты и другие "
-"проблемы. Для лучшего качества рекомендуется выбрать высокие настройки, если"
-" ваш компьютер соответствует требованиям. Режим требователен к компьютеру. "
-"Возможно снижение FPS при интенсивных боевых действиях."
+"Производительности вашего компьютера недостаточно для данного режима. Будут "
+"наблюдаться проблемы с графикой и перемещением техники, возможно также "
+"аварийное закрытие клиента игры."
 
 msgid "sub_modes/fall_tanks/subModeCard/performance/highRisk/header"
-msgstr "Рекомендуется использовать высокие настройки графики"
+msgstr "Низкая производительность"
 
 msgid "sub_modes/fall_tanks/subModeCard/performance/highRisk/headerIcon"
-msgstr "%(icon) Рекомендуется использовать высокие настройки графики"
+msgstr "%(icon) Низкая производительность"
 
 msgid "sub_modes/fall_tanks/subModeCard/performance/mediumRisk/description"
 msgstr ""
-"При низких настройках могут появляться графические артефакты и другие "
-"проблемы. Для лучшего качества рекомендуется выбрать высокие настройки, если"
-" ваш компьютер соответствует требованиям. Режим требователен к компьютеру. "
-"Возможно снижение FPS при интенсивных боевых действиях."
+"Режим требователен к компьютеру. Карта может долго загружаться, возможны "
+"проблемы с графикой и перемещением техники в бою. В случае недостаточной "
+"производительности, попробуйте понизить настройки графики."
 
 msgid "sub_modes/fall_tanks/subModeCard/performance/mediumRisk/header"
-msgstr "Рекомендуется использовать высокие настройки графики"
+msgstr "Возможно снижение производительности"
 
 msgid "sub_modes/fall_tanks/subModeCard/performance/mediumRisk/headerIcon"
-msgstr "%(icon) Рекомендуется использовать высокие настройки графики"
+msgstr "%(icon) Возможно снижение производительности"
 
 msgid "sub_modes/fall_tanks/subModeCard/title"
 msgstr "Сияние неона"
 
 msgid "sub_modes/fall_tanks/tips/tip1/description"
-msgstr "?empty?"
+msgstr ""
+"Участвуйте в гонках на опасных трассах, выполняйте задачи и получайте "
+"награды."
 
 msgid "sub_modes/fall_tanks/tips/tip1/title"
-msgstr "?empty?"
+msgstr "Сияние неона"
 
 msgid "sub_modes/fall_tanks/userName"
 msgstr "Сияние неона"

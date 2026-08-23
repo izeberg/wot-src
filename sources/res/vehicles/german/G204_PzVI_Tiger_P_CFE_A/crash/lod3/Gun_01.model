@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/german/G204_PzVI_Tiger_P_CFE_A/crash/lod4/Gun_01</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-0.850172 -0.479601 -2.073621</min>
+		<max>0.831292 0.309820 4.136963</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G204_PzVI_Tiger_P_CFE_A/crash/lod3/Gun_01</nodefullVisual>
+</root>

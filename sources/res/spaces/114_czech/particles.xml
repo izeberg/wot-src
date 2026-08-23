@@ -3,8 +3,28 @@
 	<forward>
 		<name>default</name>
 		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/Spark.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/Spark.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/lightning_02.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_tex_83_kharkiv_fire.dds</texture>
+		</preload>
+		<preload>
 			<shader>\data\shaders\ps_solid.fx</shader>
 			<texture>particles/content_forward/PFX_textures/eff_tex.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_water.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_tex_water.dds</texture>
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps_water.fx</shader>
@@ -35,23 +55,15 @@
 			<texture>particles/content_forward/PFX_textures/eff_dirt.dds</texture>
 		</preload>
 		<preload>
-			<shader>\data\shaders\ps_water.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_tex.dds</texture>
-		</preload>
-		<preload>
 			<shader>\data\shaders\ps.fx</shader>
 			<texture>particles/content_forward/PFX_textures/eff_tex.dds</texture>
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps_long.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_tex.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_water.fx</shader>
 			<texture>particles/content_forward/PFX_textures/tracers.dds</texture>
 		</preload>
 		<preload>
-			<shader>\data\shaders\ps_long.fx</shader>
+			<shader>\data\shaders\ps_water.fx</shader>
 			<texture>particles/content_forward/PFX_textures/tracers.dds</texture>
 		</preload>
 		<preload>
@@ -64,11 +76,43 @@
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_forward/PFX_textures/lightning_02.dds</texture>
+			<texture>particles/content_forward/PFX_textures/eff_customization.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_customization.dds</texture>
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_tex_83_kharkiv_fire.dds</texture>
+			<texture>particles/content_forward/PFX_textures/eff_customization_2.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_customization_2.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_customization_main.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_customization_main.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/cus_14_sparks.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/cus_14_sparks.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/electric_engine.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_fireworks.dds</texture>
 		</preload>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/hd_bld_UNI_008_WorkshopNew_Doors_Big_01_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/hd_bld_UNI_008_WorkshopNew_Doors_Big_01_3.vfx</fn_effect_bin>
@@ -93,7 +137,6 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/114_czech_fire.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/114_czech_firesmoke.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/114_czech_gas_combustion.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/63_tundra_firesmoke_thick.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_bld_UNI_008_WorkshopNew_Doors_Big_02_Left.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_bld_UNI_010_WorkshopIndoor_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_bld_UNI_010_WorkshopIndoor_FireStairs_02.vfx</fn_effect_bin>
@@ -230,11 +273,11 @@
 		<fn_effect_bin>particles/environment/interior/114_czech_fire.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/114_czech_fire.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/114_czech_firesmoke.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/114_czech_firesmoke_thick_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/114_czech_gas_combustion.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/114_czech_gasolin_fire_big.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/114_czech_gasolin_fire_small.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/19_monastery_fire_small_2.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/63_tundra_firesmoke_thick.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_bld_UNI_008_WorkshopNew_Doors_Big_02_Left.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_bld_UNI_010_WorkshopIndoor_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_bld_UNI_010_WorkshopIndoor_FireStairs_02.eff</fn_effect_bin>
@@ -433,6 +476,10 @@
 			<texture>particles/content_deferred/PFX_textures/eff_tex_distortion.dds</texture>
 		</preload>
 		<preload>
+			<shader>\data\shaders\ps_shimmer.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization_main.dds</texture>
+		</preload>
+		<preload>
 			<shader>\data\shaders\ps.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/eff_rocket_accelerator.dds</texture>
 		</preload>
@@ -442,11 +489,67 @@
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization_2.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization_2.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/Spark.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
 			<texture>particles/content_deferred/GFX_models/GFX_textures/lightning_02.dds</texture>
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/eff_tex_83_kharkiv_fire.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization_main.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization_main.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/cus_14_sparks.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/cus_14_sparks.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/FireTrunkAtlasLong_03.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/electric_engine.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_fireworks.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_fireworks.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_tex_h34.dds</texture>
 		</preload>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/hd_bld_UNI_008_WorkshopNew_Doors_Big_01_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/hd_bld_UNI_008_WorkshopNew_Doors_Big_01_3.vfx</fn_effect_bin>
@@ -471,12 +574,12 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/114_czech_explosion_low.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/114_czech_fire.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/114_czech_firesmoke.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/114_czech_firesmoke_thick_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/114_czech_gas_combustion.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/114_czech_Gasolin_fire_big.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/114_czech_Gasolin_fire_small.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/19_Ashes_CE.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/19_Paper_CE.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/63_tundra_firesmoke_thick.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_bld_UNI_008_WorkshopNew_Doors_Big_02_Left.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_bld_UNI_010_WorkshopIndoor_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_bld_UNI_010_WorkshopIndoor_FireStairs_02.vfx</fn_effect_bin>
@@ -613,11 +716,11 @@
 		<fn_effect_bin>particles/environment/interior/114_czech_fire.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/114_czech_fire.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/114_czech_firesmoke.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/114_czech_firesmoke_thick_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/114_czech_gas_combustion.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/114_czech_gasolin_fire_big.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/114_czech_gasolin_fire_small.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/19_monastery_fire_small_2.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/63_tundra_firesmoke_thick.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_bld_UNI_008_WorkshopNew_Doors_Big_02_Left.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_bld_UNI_010_WorkshopIndoor_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_bld_UNI_010_WorkshopIndoor_FireStairs_02.eff</fn_effect_bin>

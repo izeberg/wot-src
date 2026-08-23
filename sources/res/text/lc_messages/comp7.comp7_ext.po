@@ -64,25 +64,25 @@ msgid "alertMessage/notSet"
 msgstr "Режим недоступен на сервере %(serverName)s"
 
 msgid "alertMessage/preannounce/first"
-msgstr "Сезон Лазурного дракона начинается %(date)s"
+msgstr "Сезон Лазурного феникса начинается %(date)s"
 
 msgid "alertMessage/preannounce/second"
-msgstr "Сезон Алого дракона начинается %(date)s"
+msgstr "Сезон Алого феникса начинается %(date)s"
 
 msgid "alertMessage/preannounce/third"
-msgstr "Сезон Нефритового дракона начинается %(date)s"
+msgstr "Сезон Нефритового феникса начинается %(date)s"
 
 msgid "alertMessage/qualification"
 msgstr "Ожидание результатов квалификации для присвоения ранга"
 
 msgid "alertMessage/seasonEnd/first"
-msgstr "Сезон Лазурного дракона завершён"
+msgstr "Сезона Лазурного феникса завершён"
 
 msgid "alertMessage/seasonEnd/second"
-msgstr "Сезон Алого дракона завершён"
+msgstr "Сезон Алого феникса завершён"
 
 msgid "alertMessage/seasonEnd/third"
-msgstr "Сезон Нефритового дракона завершён"
+msgstr "Сезон Нефритового феникса завершён"
 
 msgid "alertMessage/standaloneNotAvailable"
 msgstr "Бои на сервере начнутся через %(primeDelta)s"
@@ -289,6 +289,9 @@ msgstr "ТТХ машины улучшены"
 msgid "battlePage/statusNotificationTimers/hunter"
 msgstr "Восстановление прочности"
 
+msgid "battlePage/statusNotificationTimers/illuminationFlare"
+msgstr "Получаемый урон увеличен"
+
 msgid "battlePage/statusNotificationTimers/juggernaut"
 msgstr "ТТХ машины улучшены"
 
@@ -419,21 +422,21 @@ msgstr "%(start)s – %(end)s"
 
 msgid "calendarDay/timeLeft/first"
 msgid_plural "plural/calendarDay/timeLeft/first"
-msgstr[0] "Сезон Лазурного дракона продлится %(days)d день"
-msgstr[1] "Сезон Лазурного дракона продлится %(days)d дня"
-msgstr[2] "Сезон Лазурного дракона продлится %(days)d дней"
+msgstr[0] "Сезон Лазурного феникса продлится %(days)d день"
+msgstr[1] "Сезон Лазурного феникса продлится %(days)d дня"
+msgstr[2] "Сезон Лазурного феникса продлится %(days)d дней"
 
 msgid "calendarDay/timeLeft/second"
 msgid_plural "plural/calendarDay/timeLeft/second"
-msgstr[0] "Сезон Алого дракона продлится %(days)d день"
-msgstr[1] "Сезон Алого дракона продлится %(days)d дня"
-msgstr[2] "Сезон Алого дракона продлится %(days)d дней"
+msgstr[0] "Сезон Алого феникса продлится %(days)d день"
+msgstr[1] "Сезон Алого феникса продлится %(days)d дня"
+msgstr[2] "Сезон Алого феникса продлится %(days)d дней"
 
 msgid "calendarDay/timeLeft/third"
 msgid_plural "plural/calendarDay/timeLeft/third"
-msgstr[0] "Сезон Нефритового дракона продлится %(days)d день"
-msgstr[1] "Сезон Нефритового дракона продлится %(days)d дня"
-msgstr[2] "Сезон Нефритового дракона продлится %(days)d дней"
+msgstr[0] "Сезон Нефритового феникса продлится %(days)d день"
+msgstr[1] "Сезон Нефритового феникса продлится %(days)d дня"
+msgstr[2] "Сезон Нефритового феникса продлится %(days)d дней"
 
 msgid "calendarDay/title"
 msgstr "Расписание"
@@ -478,7 +481,7 @@ msgid "crewMembersTooltip/perks"
 msgstr "Навыки"
 
 msgid "crewMembersTooltip/subHeading"
-msgstr "Натиск. Год Дракона"
+msgstr "Натиск: год Феникса"
 
 msgid "crewMembersTooltip/zeroPerks"
 msgstr "«Нулевые» навыки"
@@ -666,6 +669,20 @@ msgstr ""
 "Если ваша машина исключена, выберите любую другую из списка заранее "
 "подготовленной арендной техники."
 
+msgid "intro/description/draw"
+msgstr ""
+"Если по истечении времени ни одна из команд не победила однозначно, исход "
+"боя определяется по дополнительным критериям в следующем порядке: количество"
+" оставшихся машин, нанесённый урон, первая уничтоженная машина. Если ни одна"
+" команда не нанесла урона, объявляется ничья."
+
+msgid "intro/description/nightMaps"
+msgstr ""
+"Ночные карты позволяют с другой стороны взглянуть на знакомые поля сражений "
+"с помощью особых условий, новых Наблюдательных постов, обновлённых ключевых "
+"позиций и изменённых механик обнаружения. Текущий набор карт включает "
+"«Штиль», «Песчаную реку», «Заставу» и «Степи»."
+
 msgid "intro/description/onslaughtModifiers"
 msgstr ""
 "В режиме действуют модификаторы, меняющие параметры техники, такие как "
@@ -674,11 +691,10 @@ msgstr ""
 
 msgid "intro/description/pointsOfInterest"
 msgstr ""
-"На карте есть области, захват которых позволяет использовать тактические "
-"навыки. Существует 2 типа ключевых позиций: Артиллерийский штаб даст "
-"возможность нанести артудар по определённому участку территории, а Узел "
-"связи поможет обнаружить всю технику противника. В зависимости от карты, "
-"наличие и расположение ключевых позиций может меняться."
+"После захвата определённых участков карты вы получите доступ к тактическим "
+"навыкам. Есть два типа ключевых позиций: Артиллерийский штаб, позволяющий "
+"нанести точечный удар, и Узел связи, раскрывающий местоположение всех машин "
+"противника. Количество и расположение этих позиций зависит от карты."
 
 msgid "intro/description/qualification"
 msgid_plural "plural/intro/description/qualification"
@@ -697,9 +713,9 @@ msgstr[2] ""
 
 msgid "intro/description/ranks"
 msgstr ""
-"Система, отражающая мастерство игрока. Продвигайтесь по рангам от «Железа» "
-"до «Легенды» и получайте ценные призы. Сражайтесь в течение всего года "
-"Дракона, чтобы получить уникальные годовые награды."
+"Продвигайтесь по рангам от «Железа» до «Легенды» и получайте ценные призы. "
+"Сражайтесь в течение всего года Феникса, чтобы получить уникальные годовые "
+"награды."
 
 msgid "intro/description/roleSkills"
 msgstr ""
@@ -716,6 +732,12 @@ msgstr ""
 
 msgid "intro/title/banPhase"
 msgstr "ИСКЛЮЧЕНИЕ ТЕХНИКИ"
+
+msgid "intro/title/draw"
+msgstr "ОПРЕДЕЛЕНИЕ НИЧЬЕЙ"
+
+msgid "intro/title/nightMaps"
+msgstr "НОЧНЫЕ КАРТЫ"
 
 msgid "intro/title/onslaughtModifiers"
 msgstr "МОДИФИКАТОРЫ «НАТИСКА»"
@@ -905,16 +927,19 @@ msgid "pbs/overview/extraLeaveStatus/win"
 msgstr "ПОБЕДА, НО ВЫ"
 
 msgid "pbs/overview/highRank/promoted"
-msgstr "Звание повышено: %(rank)s"
+msgstr "Звание повышено: {{rank}}"
+
+msgid "pbs/overview/highRank/rating"
+msgstr "Рейтинг: {{score}}"
 
 msgid "pbs/overview/lowRank/default"
-msgstr "%(rank)s, %(division)s"
+msgstr "{{rank}}, {{division}}"
 
 msgid "pbs/overview/lowRank/demoted"
-msgstr "Звание понижено: %(rank)s, %(division)s"
+msgstr "Звание понижено: {{rank}}, {{division}}"
 
 msgid "pbs/overview/lowRank/promoted"
-msgstr "Звание повышено: %(rank)s, %(division)s"
+msgstr "Звание повышено: {{rank}}, {{division}}"
 
 msgid "pbs/overview/qualification/description"
 msgstr "Боёв проведено"
@@ -991,13 +1016,13 @@ msgid "prestigeIndicatorTooltip/prestigeRecord/season/heading"
 msgstr "Максимальное количество очков престижа за сезон: %(recordPrestige)s"
 
 msgid "primeTimeView/status/seasonDisabled/first"
-msgstr "Сезон Лазурного дракона на сервере %(server)s завершился."
+msgstr "Сезон Лазурного феникса на сервере %(server)s завершился."
 
 msgid "primeTimeView/status/seasonDisabled/second"
-msgstr "Сезон Алого дракона на сервере %(server)s завершился."
+msgstr "Сезон Алого феникса на сервере %(server)s завершился."
 
 msgid "primeTimeView/status/seasonDisabled/third"
-msgstr "Сезон Нефритового дракона на сервере %(server)s завершился."
+msgstr "Сезон Нефритового феникса на сервере %(server)s завершился."
 
 msgid "products/actions/buy"
 msgstr "Приобрести"
@@ -1624,16 +1649,16 @@ msgid "rewardsScreen/description/qualificationEnded"
 msgstr "НАТИСК. КВАЛИФИКАЦИЯ ЗАВЕРШЕНА"
 
 msgid "rewardsScreen/description/season/first"
-msgstr "НАТИСК. СЕЗОН ЛАЗУРНОГО ДРАКОНА"
+msgstr "НАТИСК: СЕЗОН ЛАЗУРНОГО ФЕНИКСА"
 
 msgid "rewardsScreen/description/season/second"
-msgstr "НАТИСК. СЕЗОН АЛОГО ДРАКОНА"
+msgstr "НАТИСК: СЕЗОН АЛОГО ФЕНИКСА"
 
 msgid "rewardsScreen/description/season/third"
-msgstr "НАТИСК. СЕЗОН НЕФРИТОВОГО ДРАКОНА"
+msgstr "НАТИСК: СЕЗОН НЕФРИТОВОГО ФЕНИКСА"
 
 msgid "rewardsScreen/description/year"
-msgstr "НАТИСК. ГОД ДРАКОНА"
+msgstr "НАТИСК. ГОД ФЕНИКСА"
 
 msgid "rewardsScreen/goToVehicle"
 msgstr "Где мой Ashbringer?!"
@@ -1770,13 +1795,13 @@ msgid "season/secondsLeft"
 msgstr "До завершения: %(seconds)s с"
 
 msgid "seasonName/first"
-msgstr "Сезон Лазурного дракона"
+msgstr "Сезон Лазурного феникса"
 
 msgid "seasonName/second"
-msgstr "Сезон Алого дракона"
+msgstr "Сезон Алого феникса"
 
 msgid "seasonName/third"
-msgstr "Сезон Нефритового дракона"
+msgstr "Сезон Нефритового феникса"
 
 msgid "seasonPointTooltip/header"
 msgstr "Знамёна «Натиска»"
@@ -1840,13 +1865,13 @@ msgstr[1] "Получено %(points)s знамени «Натиска»"
 msgstr[2] "Получено %(points)s знамён «Натиска»"
 
 msgid "seasonStatistics/seasonNameUpper/first"
-msgstr "СЕЗОН I. ЛАЗУРНЫЙ ДРАКОН"
+msgstr "СЕЗОН I: ЛАЗУРНЫЙ ФЕНИКС"
 
 msgid "seasonStatistics/seasonNameUpper/second"
-msgstr "СЕЗОН II. АЛЫЙ ДРАКОН"
+msgstr "СЕЗОН II: АЛЫЙ ФЕНИКС"
 
 msgid "seasonStatistics/seasonNameUpper/third"
-msgstr "СЕЗОН III. НЕФРИТОВЫЙ ДРАКОН"
+msgstr "СЕЗОН III: НЕФРИТОВЫЙ ФЕНИКС"
 
 msgid "seasonStatistics/section/statistics/battles/additional"
 msgstr "Побед: %(additional)s"
@@ -1945,13 +1970,13 @@ msgid "selectorTooltip/unavailable/nextSeason"
 msgstr "Режим станет доступен %(time)s"
 
 msgid "shortSeasonName/first"
-msgstr "Лазурный дракон"
+msgstr "Лазурный феникс"
 
 msgid "shortSeasonName/second"
-msgstr "Алый дракон"
+msgstr "Алый феникс"
 
 msgid "shortSeasonName/third"
-msgstr "Нефритовый дракон"
+msgstr "Нефритовый феникс"
 
 msgid "sidebar/tabs/tooltip/body/leaderboard"
 msgstr ""
@@ -2276,7 +2301,8 @@ msgstr "Полное расписание"
 
 msgid "tournament/visitShop/description/ols"
 msgstr ""
-"Поддержите серию «Легенды Натиска» с помощью специальных турнирных наборов!"
+"Если выбранная вами команда победит, вы получите уникальную золотую нашивку "
+"OLS 2026. Поддержите своих фаворитов!"
 
 msgid "tournament/visitShop/description/wci"
 msgstr ""
@@ -2318,7 +2344,7 @@ msgstr ""
 "рождением новых легенд!"
 
 msgid "tournamentsEntryPointTooltip/heading/ols"
-msgstr "6-й сезон OLS"
+msgstr "Седьмой сезон OLS"
 
 msgid "tournamentsEntryPointTooltip/heading/wci"
 msgstr "WCI 2025"
@@ -2461,66 +2487,67 @@ msgstr ""
 "эффектный 2D-стиль и многое другое. Удачи на поле боя!"
 
 msgid "whatsNewView/banner/heading"
-msgstr "Насладитесь последними моментами года Дракона!"
+msgstr "Насладитесь последними моментами года Феникса!"
 
 msgid "whatsNewView/banner/title/large"
-msgstr "СЕЗОН НЕФРИТОВОГО ДРАКОНА"
+msgstr "СЕЗОН ЛАЗУРНОГО ФЕНИКСА"
 
 msgid "whatsNewView/banner/title/small"
 msgstr "НАТИСК. ЧТО НОВОГО?"
 
 msgid "whatsNewView/button/ok"
-msgstr "Бан-тастика!"
+msgstr "Раздуйте пламя!"
 
-msgid "whatsNewView/detailedBattleResults/description"
+msgid "whatsNewView/drawConditions/description"
 msgstr ""
-"Улучшенный экран с результатами боя в стиле обновления 2.0 теперь содержит "
-"дополнительную информацию в зависимости от режима."
+"Если по истечении времени ни одна из команд не победила однозначно, исход "
+"боя определяется по дополнительным критериям в следующем порядке: количество"
+" оставшихся машин, нанесённый урон, первая уничтоженная машина. Если ни одна"
+" команда не нанесла урона, объявляется ничья."
 
-msgid "whatsNewView/detailedBattleResults/heading"
-msgstr "Подробные результаты боя"
-
-msgid "whatsNewView/equippedRentals/description"
-msgstr ""
-"Вашу машину исключили? Не беда. Выберите арендную технику с заранее "
-"настроенным экипажем. оборудованием, боекомплектом и снаряжением."
-
-msgid "whatsNewView/equippedRentals/heading"
-msgstr "Готовая техника в аренду %(tag)s"
-
-msgid "whatsNewView/intro/description"
-msgstr ""
-"В этом сезоне команды могут исключать машины из боя. Общайтесь с союзниками,"
-" чтобы запретить нежелательную или определиться с наиболее подходящей "
-"техникой для команды."
-
-msgid "whatsNewView/intro/heading"
-msgstr "Исключение техники %(tag)s"
+msgid "whatsNewView/drawConditions/heading"
+msgstr "Обновлённое определение ничьей {{tag}}"
 
 msgid "whatsNewView/mapChanges/heading"
 msgstr "Карты"
 
-msgid "whatsNewView/newAvailableVehicles/heading"
-msgstr "Новые машины, доступные в «Натиске»"
+msgid "whatsNewView/newLTRoles/description"
+msgstr ""
+"Обновление 2.4 включает новые роли для лёгких танков и ребаланс "
+"характеристик техники. Опробуйте их в бою!"
+
+msgid "whatsNewView/newLTRoles/heading"
+msgstr "Новые роли лёгких танков {{tag}}"
+
+msgid "whatsNewView/nightMaps/description"
+msgstr ""
+"Свежий геймплей на знакомых картах. Ночные условия, новые Наблюдательные "
+"посты, перемещение ключевых позиций и изменённые механики обнаружения. Всё "
+"это меняет ход боя, а внимательность, тайминг и тактические манёвры "
+"становятся важны как никогда."
+
+msgid "whatsNewView/nightMaps/heading"
+msgstr "Ночные карты уже здесь! {{tag}}"
+
+msgid "whatsNewView/noSuperPlatoons/description"
+msgstr ""
+"Из-за невысокой популярности супервзводы были отключены. Мы работаем над "
+"другими командными форматами в «Натиске». Турниры в формате 7 на 7 доступны "
+"на постоянной основе."
+
+msgid "whatsNewView/noSuperPlatoons/heading"
+msgstr "Супервзводов больше нет {{tag}}"
 
 msgid "whatsNewView/rentalVehicles/heading"
 msgstr "Арендная техника"
 
-msgid "whatsNewView/roleSkillUpdate/description"
+msgid "whatsNewView/seasonalBalanceChanges/description"
 msgstr ""
-"Для режима доступен новый американский средний танк X уровня Ares 90 с "
-"соответствующим ролевым навыком."
+"• Карты: «Эрленберг» удалён. Ключевые позиции на карте «Аэродром» перемещены. На карте «Промзона» внесены незначительные изменения.\n"
+"• Техника: Vz. 60S Dravec удалён. Добавлен новый немецкий тяжёлый танк Kampfpanzer 67."
 
-msgid "whatsNewView/roleSkillUpdate/heading"
-msgstr "Обновление ролевого навыка %(tag)s"
-
-msgid "whatsNewView/shopUpdates/description"
-msgstr ""
-"Машина 114 SP2 теперь доступна для покупки в Магазине «Натиска» на ранге "
-"«Серебро»."
-
-msgid "whatsNewView/shopUpdates/heading"
-msgstr "Обновления Магазина %(tag)s"
+msgid "whatsNewView/seasonalBalanceChanges/heading"
+msgstr "Сезонные балансные изменения {{tag}}"
 
 msgid "whatsNewView/stamp/removed"
 msgstr "УДАЛЕНО"
@@ -2682,13 +2709,13 @@ msgid "yearlyStatistics/seasonDateInterval"
 msgstr "%(start)s–%(end)s"
 
 msgid "yearlyStatistics/seasonName/0"
-msgstr "Сезон I. Лазурный дракон"
+msgstr "Сезон I: Лазурный феникс"
 
 msgid "yearlyStatistics/seasonName/1"
-msgstr "Сезон II. Алый дракон"
+msgstr "Сезон II: Алый феникс"
 
 msgid "yearlyStatistics/seasonName/2"
-msgstr "Сезон III. Нефритовый дракон"
+msgstr "Сезон III: Нефритовый феникс"
 
 msgid "yearlyStatistics/seasonStatus/active"
 msgstr "Текущий"

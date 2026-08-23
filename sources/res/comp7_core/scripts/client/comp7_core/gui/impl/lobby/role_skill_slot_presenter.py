@@ -1,6 +1,5 @@
 from __future__ import absolute_import
 from CurrentVehicle import g_currentVehicle
-from constants import ROLE_TYPE_TO_LABEL
 from gui.impl.gen import R
 from gui.impl.backport import createTooltipData, BackportTooltipWindow
 from gui.impl.pub.view_component import ViewComponent
@@ -35,7 +34,7 @@ class RoleSkillSlotPresenter(ViewComponent[RoleSkillSlotModel]):
             if tooltipId == self._roleSkillTooltipId:
                 tooltipData = createTooltipData(isSpecial=True, specialAlias=tooltipId, specialArgs=(
                  event.getArgument('roleSkill'),
-                 self.__getCurrentVehicleRole(),
+                 self.__getCurrentVehicleRoleEquipmentKey(),
                  self.__getCurrentVehicleRoleSkillLevel()))
             if tooltipData is not None:
                 window = BackportTooltipWindow(tooltipData, self.getParentWindow())
@@ -54,20 +53,29 @@ class RoleSkillSlotPresenter(ViewComponent[RoleSkillSlotModel]):
         return
 
     def __getCurrentVehicleRoleSkill(self):
-        roleName = self.__getCurrentVehicleRole()
-        if roleName is None:
+        vehicle = self._getVehicle()
+        if vehicle is None:
             return
         else:
-            return self._modeController.getRoleEquipment(roleName)
+            roleEquipmentKey = self.__getCurrentVehicleRoleEquipmentKey()
+            return self._modeController.getRoleEquipment(roleEquipmentKey)
 
     def __getCurrentVehicleRoleSkillLevel(self):
-        roleName = self.__getCurrentVehicleRole()
-        if roleName is None:
+        vehicle = self._getVehicle()
+        if vehicle is None:
             return
         else:
-            return self._modeController.getEquipmentStartLevel(roleName)
+            roleEquipmentKey = self.__getCurrentVehicleRoleEquipmentKey()
+            return self._modeController.getEquipmentStartLevel(roleEquipmentKey)
 
-    def __getCurrentVehicleRole(self):
+    def __getCurrentVehicleRoleEquipmentKey(self):
+        vehicle = self._getVehicle()
+        if vehicle is None:
+            return
+        else:
+            return self._modeController.getRoleEquipmentKey(vehicle.descriptor.type)
+
+    def _getVehicle(self):
         if not g_currentVehicle.isPresent():
             return
         else:
@@ -75,4 +83,4 @@ class RoleSkillSlotPresenter(ViewComponent[RoleSkillSlotModel]):
             restriction = self._modeController.isSuitableVehicle(vehicle)
             if restriction is not None:
                 return
-            return ROLE_TYPE_TO_LABEL.get(vehicle.descriptor.role)
+            return vehicle

@@ -44,7 +44,7 @@ package net.wg.gui.lobby.components
       override protected function draw() : void
       {
          super.draw();
-         if(isInvalid(InvalidationType.LAYOUT,InvalidationType.SIZE))
+         if(isInvalidTypes(InvalidationType.LAYOUT,InvalidationType.SIZE))
          {
             this.updateLayout();
          }

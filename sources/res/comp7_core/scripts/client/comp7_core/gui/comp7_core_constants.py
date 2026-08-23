@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from constants_utils import ConstInjector
 from gui.battle_control import battle_constants
 

@@ -11,8 +11,32 @@
 			<texture>particles/content_forward/PFX_textures/eff_tex_h07_new_year_2015.dds</texture>
 		</preload>
 		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_tex_long.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_water.fx</shader>
+			<texture>particles/content_forward/PFX_textures/250_br_battle_snow_dust_2_2.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_tex_83_kharkiv_fire.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/Spark.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/Spark.dds</texture>
+		</preload>
+		<preload>
 			<shader>\data\shaders\ps_solid.fx</shader>
 			<texture>particles/content_forward/PFX_textures/eff_tex.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_water.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_tex_water.dds</texture>
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps_water.fx</shader>
@@ -36,10 +60,6 @@
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_tex_long.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps.fx</shader>
 			<texture>particles/content_forward/PFX_textures/eff_dirt.dds</texture>
 		</preload>
 		<preload>
@@ -59,12 +79,52 @@
 			<texture>particles/content_forward/PFX_textures/tracers.dds</texture>
 		</preload>
 		<preload>
-			<shader>\data\shaders\ps_water.fx</shader>
-			<texture>particles/content_forward/PFX_textures/250_br_battle_snow_dust_2_2.dds</texture>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_rocket_accelerator.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_rocket_accelerator.dds</texture>
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_tex_83_kharkiv_fire.dds</texture>
+			<texture>particles/content_forward/PFX_textures/eff_customization.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_customization.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_customization_2.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_customization_2.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_customization_main.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_customization_main.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/cus_14_sparks.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/cus_14_sparks.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/electric_engine.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_fireworks.dds</texture>
 		</preload>
 		<fn_effect_bin>particles/Environment/Battle_Royal/Loot_Area/br_flare_green_end.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/Battle_Royal/Loot_Area/br_flare_green.eff</fn_effect_bin>
@@ -440,15 +500,15 @@
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_tex_long.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/eff_dirt.dds</texture>
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps_long.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/eff_dirt.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_tex_long.dds</texture>
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps.fx</shader>
@@ -471,8 +531,44 @@
 			<texture>particles/content_deferred/PFX_textures/eff_tex_distortion.dds</texture>
 		</preload>
 		<preload>
+			<shader>\data\shaders\ps_shimmer.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization_main.dds</texture>
+		</preload>
+		<preload>
 			<shader>\data\shaders\ps_water.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/250_br_battle_snow_dust_2_2.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_tex_83_kharkiv_fire.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_rocket_accelerator.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_rocket_accelerator.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization_2.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization_2.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/Spark.dds</texture>
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps.fx</shader>
@@ -480,7 +576,31 @@
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_tex_83_kharkiv_fire.dds</texture>
+			<texture>particles/content_deferred/PFX_textures/eff_customization_main.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization_main.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/cus_14_sparks.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/cus_14_sparks.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/FireTrunkAtlasLong_03.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/electric_engine.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_tex_h34.dds</texture>
 		</preload>
 		<fn_effect_bin>particles/Environment/Battle_Royal/Loot_Area/br_flare_green_end.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/Battle_Royal/Loot_Area/br_flare_green.eff</fn_effect_bin>

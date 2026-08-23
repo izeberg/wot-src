@@ -1,37 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<forward>
-		<name>default</name>
 		<preload>
-			<shader>\data\shaders\ps_solid.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_tex.dds</texture>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_fireworks.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/electric_engine.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/cus_14_sparks.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/cus_14_sparks.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_customization_main.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_customization_main.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_customization_2.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_customization_2.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_customization.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_customization.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_rocket_accelerator.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_rocket_accelerator.dds</texture>
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps_water.fx</shader>
+			<texture>particles/content_forward/PFX_textures/tracers.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/tracers.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
 			<texture>particles/content_forward/PFX_textures/eff_tex.dds</texture>
 		</preload>
 		<preload>
-			<shader>\data\shaders\ps_water.fx</shader>
+			<shader>\data\shaders\ps_long.fx</shader>
 			<texture>particles/content_forward/PFX_textures/eff_dirt.dds</texture>
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_leaves.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_long.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_tex.dds</texture>
+			<texture>particles/content_forward/PFX_textures/eff_dirt.dds</texture>
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps_long.fx</shader>
 			<texture>particles/content_forward/PFX_textures/eff_tex_long.dds</texture>
 		</preload>
 		<preload>
-			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_dirt.dds</texture>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_tex.dds</texture>
 		</preload>
 		<preload>
-			<shader>\data\shaders\ps_long.fx</shader>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_leaves.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_water.fx</shader>
 			<texture>particles/content_forward/PFX_textures/eff_dirt.dds</texture>
 		</preload>
 		<preload>
@@ -39,29 +90,14 @@
 			<texture>particles/content_forward/PFX_textures/eff_tex.dds</texture>
 		</preload>
 		<preload>
-			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_tex.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_long.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_tex.dds</texture>
-		</preload>
-		<preload>
 			<shader>\data\shaders\ps_water.fx</shader>
-			<texture>particles/content_forward/PFX_textures/tracers.dds</texture>
+			<texture>particles/content_forward/PFX_textures/eff_tex_water.dds</texture>
 		</preload>
 		<preload>
-			<shader>\data\shaders\ps_long.fx</shader>
-			<texture>particles/content_forward/PFX_textures/tracers.dds</texture>
+			<shader>\data\shaders\ps_solid.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_tex.dds</texture>
 		</preload>
-		<preload>
-			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_rocket_accelerator.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_long.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_rocket_accelerator.dds</texture>
-		</preload>
+		<name>default</name>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/env_housesmoke_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/random_events/08_ruinberg_anti_aircraft_explosions.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/random_events/08_ruinberg_bomb_explosion.vfx</fn_effect_bin>
@@ -111,11 +147,9 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bld_UNI_000_Base_03.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bld_UNI_000_Base_04.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bld_UNI_000_Base_05.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/env_housesmoke_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/08_ruinberg_fires_small.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/08_ruinberg_firesmoke.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/08_ruinberg_firesmoke_transparent.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/99_poland_smoke_FireGrass_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_bld_UNI_006_KitCrashFactory_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_env_112_11_AdvertisingCloset_03.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_env_AM_015_AdvertisingPosters_02.vfx</fn_effect_bin>
@@ -243,11 +277,11 @@
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_05.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/env_housesmoke_01.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/env_housesmoke_02.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/env_housesmoke_07.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/08_ruinberg_fires_small.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/08_ruinberg_firesmoke.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/08_ruinberg_firesmoke_transparent.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/99_poland_smoke_firegrass_01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/08_ruinberg_smoke_firegrass_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_bld_UNI_006_KitCrashFactory_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env_112_11_AdvertisingCloset_03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env_AM_015_AdvertisingPosters_02.eff</fn_effect_bin>
@@ -375,29 +409,92 @@
 		<preloadVisual>particles/mesh_particles/wood_stick_03.visual</preloadVisual>
 	</forward>
 	<deferred>
-		<name>default</name>
 		<preload>
-			<shader>\data\shaders\ps_solid.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_tex.dds</texture>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_fireworks.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/electric_engine.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/FireTrunkAtlasLong_03.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/cus_14_sparks.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/cus_14_sparks.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization_main.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization_main.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization_2.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization_2.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_rocket_accelerator.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_rocket_accelerator.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_shimmer.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_tex_distortion.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_force_fields.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_tex_force_field.dds</texture>
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps_water.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/tracers.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/tracers.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/eff_tex.dds</texture>
 		</preload>
 		<preload>
-			<shader>\data\shaders\ps_water.fx</shader>
+			<shader>\data\shaders\ps_long.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/eff_dirt.dds</texture>
 		</preload>
 		<preload>
-			<shader>\data\shaders\ps_water_displacement.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_tex_water.dds</texture>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_dirt.dds</texture>
 		</preload>
 		<preload>
-			<shader>\data\shaders\ps_foam.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_tex_water.dds</texture>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_tex_long.dds</texture>
 		</preload>
 		<preload>
-			<shader>\data\shaders\ps_under_water.fx</shader>
+			<shader>\data\shaders\ps_long.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/eff_tex.dds</texture>
 		</preload>
 		<preload>
@@ -405,49 +502,38 @@
 			<texture>particles/content_deferred/PFX_textures/eff_leaves.dds</texture>
 		</preload>
 		<preload>
-			<shader>\data\shaders\ps_long.fx</shader>
+			<shader>\data\shaders\ps_under_water.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/eff_tex.dds</texture>
 		</preload>
 		<preload>
-			<shader>\data\shaders\ps_long.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_tex_long.dds</texture>
+			<shader>\data\shaders\ps_foam.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_tex_water.dds</texture>
 		</preload>
 		<preload>
-			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_dirt.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_long.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_dirt.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_tex.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_long.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/tracers.dds</texture>
+			<shader>\data\shaders\ps_water_displacement.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_tex_water.dds</texture>
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps_water.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/tracers.dds</texture>
+			<texture>particles/content_deferred/PFX_textures/eff_dirt.dds</texture>
 		</preload>
 		<preload>
-			<shader>\data\shaders\ps_force_fields.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_tex_force_field.dds</texture>
+			<shader>\data\shaders\ps_water.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_tex.dds</texture>
 		</preload>
 		<preload>
-			<shader>\data\shaders\ps_shimmer.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_tex_distortion.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_rocket_accelerator.dds</texture>
+			<shader>\data\shaders\ps_solid.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_tex.dds</texture>
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps_long.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_rocket_accelerator.dds</texture>
+			<texture>particles/content_deferred/PFX_textures/eff_fireworks.dds</texture>
 		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_tex_h34.dds</texture>
+		</preload>
+		<name>default</name>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/env_housesmoke_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/random_events/08_ruinberg_anti_aircraft_explosions.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/random_events/08_ruinberg_bomb_explosion.vfx</fn_effect_bin>
@@ -505,11 +591,11 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/CameraEffects/nature_yellow_leaves_large_wind_P.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/CameraEffects/nature_yellow_leaves_wind.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/CameraEffects/nature_yellow_leaves_wind_P.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/env_housesmoke_02.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/env_housesmoke_07.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/08_ruinberg_fires_small.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/08_ruinberg_firesmoke.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/08_ruinberg_firesmoke_transparent.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/99_poland_smoke_FireGrass_01.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/08_ruinberg_smoke_FireGrass_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_bld_UNI_006_KitCrashFactory_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_env_112_11_AdvertisingCloset_03.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_env_AM_015_AdvertisingPosters_02.vfx</fn_effect_bin>
@@ -637,11 +723,11 @@
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_05.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/env_housesmoke_01.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/env_housesmoke_02.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/env_housesmoke_07.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/08_ruinberg_fires_small.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/08_ruinberg_firesmoke.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/08_ruinberg_firesmoke_transparent.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/99_poland_smoke_firegrass_01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/08_ruinberg_smoke_firegrass_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_bld_UNI_006_KitCrashFactory_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env_112_11_AdvertisingCloset_03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env_AM_015_AdvertisingPosters_02.eff</fn_effect_bin>

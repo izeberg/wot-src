@@ -4,6 +4,9 @@ package net.wg.gui.battle.views.widgetsPanel.settings
    import net.wg.data.constants.Linkages;
    import net.wg.data.constants.generated.BATTLE_VIEW_ALIASES;
    import net.wg.data.constants.generated.BATTLE_WIDGETS_CONSTS;
+   import net.wg.gui.battle.views.widgetsPanel.AutoreloaderSurgeWidget;
+   import net.wg.gui.battle.views.widgetsPanel.AuxiliaryRocketLauncherWidget;
+   import net.wg.gui.battle.views.widgetsPanel.BustleFeedWidget;
    import net.wg.gui.battle.views.widgetsPanel.ChargeShotWidget;
    import net.wg.gui.battle.views.widgetsPanel.ChargeableBurstWidget;
    import net.wg.gui.battle.views.widgetsPanel.ConcentrationWidget;
@@ -13,6 +16,9 @@ package net.wg.gui.battle.views.widgetsPanel.settings
    import net.wg.gui.battle.views.widgetsPanel.PropellantGunWidget;
    import net.wg.gui.battle.views.widgetsPanel.RechargeableNitroWidget;
    import net.wg.gui.battle.views.widgetsPanel.RocketAcceleratorWidget;
+   import net.wg.gui.battle.views.widgetsPanel.ShellCalibrationWidget;
+   import net.wg.gui.battle.views.widgetsPanel.ShellParamsSwitcherWidget;
+   import net.wg.gui.battle.views.widgetsPanel.SightPointerWidget;
    import net.wg.gui.battle.views.widgetsPanel.StagedJetBoostersWidget;
    import net.wg.gui.battle.views.widgetsPanel.StanceDanceFightWidget;
    import net.wg.gui.battle.views.widgetsPanel.StanceDanceTurboWidget;
@@ -56,7 +62,13 @@ package net.wg.gui.battle.views.widgetsPanel.settings
          this._settingsList[BATTLE_WIDGETS_CONSTS.STAGED_JET_BOOSTERS] = new WidgetProperties(Linkages.STAGED_JET_BOOSTERS,StagedJetBoostersWidget,BATTLE_VIEW_ALIASES.STAGED_JET_BOOSTERS_WIDGET);
          this._settingsList[BATTLE_WIDGETS_CONSTS.WHEELED_DASH] = new WidgetProperties(Linkages.WHEELED_DASH,WheeledDashWidget,BATTLE_VIEW_ALIASES.WHEELED_DASH_WIDGET);
          this._settingsList[BATTLE_WIDGETS_CONSTS.PROPELLANT_GUN] = new WidgetProperties(Linkages.PROPELLANT_GUN,PropellantGunWidget,BATTLE_VIEW_ALIASES.PROPELLANT_GUN_WIDGET);
+         this._settingsList[BATTLE_WIDGETS_CONSTS.AUXILIARY_ROCKET_LAUNCHER] = new WidgetProperties(Linkages.AUXILIARY_ROCKET_LAUNCHER,AuxiliaryRocketLauncherWidget,BATTLE_VIEW_ALIASES.AUXILIARY_ROCKET_LAUNCHER_WIDGET);
          this._settingsList[BATTLE_WIDGETS_CONSTS.LOW_CHARGE_SHOT] = new WidgetProperties(Linkages.LOW_CHARGE_SHOT,LowChargeShotWidget,BATTLE_VIEW_ALIASES.LOW_CHARGE_SHOT_WIDGET);
+         this._settingsList[BATTLE_WIDGETS_CONSTS.SHELL_CALIBRATION] = new WidgetProperties(Linkages.SHELL_CALIBRATION,ShellCalibrationWidget,BATTLE_VIEW_ALIASES.SHELL_CALIBRATION_WIDGET);
+         this._settingsList[BATTLE_WIDGETS_CONSTS.SHELL_PARAMS_SWITCHER] = new WidgetProperties(Linkages.SHELL_PARAMS_SWITCHER,ShellParamsSwitcherWidget,BATTLE_VIEW_ALIASES.SHELL_PARAMS_SWITCHER_WIDGET);
+         this._settingsList[BATTLE_WIDGETS_CONSTS.AUTORELOADER_SURGE] = new WidgetProperties(Linkages.AUTORELOADER_SURGE,AutoreloaderSurgeWidget,BATTLE_VIEW_ALIASES.AUTORELOADER_SURGE_WIDGET);
+         this._settingsList[BATTLE_WIDGETS_CONSTS.BUSTLE_FEED] = new WidgetProperties(Linkages.BUSTLE_FEED,BustleFeedWidget,BATTLE_VIEW_ALIASES.BUSTLE_FEED_WIDGET);
+         this._settingsList[BATTLE_WIDGETS_CONSTS.SIGHT_POINTER_WIDGET] = new WidgetProperties(Linkages.SIGHT_POINTER_WIDGET,SightPointerWidget,BATTLE_VIEW_ALIASES.SIGHT_POINTER_WIDGET);
       }
       
       public static function get instance() : WidgetSettings

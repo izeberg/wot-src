@@ -1574,6 +1574,35 @@ msgstr "Отличная лобовая броня, высокий разовы�
 msgid "A168_XM_57"
 msgstr "XM57"
 
+msgid "A168_XM_57_CFE_I"
+msgstr "Ironclad Guardian"
+
+msgid "A168_XM_57_CFE_I_descr"
+msgstr ""
+"Черепаха-дракон — помесь двух из четырёх священных зверей китайской "
+"мифологии, обладающая драконьей живучестью и черепашьим долголетием. Её "
+"изящная фигура сочетает прочный панцирь черепахи с величественной головой "
+"дракона, развевающимся хвостом и мощными лапами. Высеченное из священного "
+"камня, чтобы нести на своих плечах бремя мира, это мифическое существо "
+"послужило источником вдохновения для памятников во всех девяти провинциях. "
+"Его почитают в легендах и издавна считают символом постоянства и удачи. Во "
+"всём огромном царстве нет никого, кто не почитал бы этого божественного "
+"стража."
+
+msgid "A168_XM_57_CFE_I_long_special"
+msgstr ""
+"Ironclad Guardian — американская противотанковая САУ с необычным дизайном. В"
+" башенную установку с ограниченным сектором обстрела в 150 градусов "
+"установлено 155-мм орудие, что позволяет контролировать обширную территорию,"
+" не поворачивая корпус. В плане защищённости машина не уступает T95 и "
+"представляет значительную угрозу бронированной технике противника."
+
+msgid "A168_XM_57_CFE_I_short"
+msgstr "Ironclad"
+
+msgid "A168_XM_57_CFE_I_short_special"
+msgstr "Большой калибр, башенная установка с ограниченным сектором обстрела"
+
 msgid "A168_XM_57_descr"
 msgstr ""
 "К середине 1950-х годов появилась идея башенной установки орудия с "
@@ -2598,6 +2627,21 @@ msgstr "T110E4"
 msgid "A85_T110E3"
 msgstr "T110E3"
 
+msgid "A85_T110E3_7x7"
+msgstr "T110E3 7x7"
+
+msgid "A85_T110E3_7x7_descr"
+msgstr ""
+"В 1954 году в Детройте прошла конференция, посвящённая перспективным тяжёлым"
+" танкам. На ней было представлено несколько аванпроектов новых машин, на "
+"базе одного из которых (TS-31) компания Chrysler Corporation предложила "
+"разработать новый тяжёлый танк. Главной целью стало создание машины, которая"
+" смогла бы без проблем пройти по Бернскому национальному туннелю. После "
+"проработки нескольких вариантов работы над танком были прекращены."
+
+msgid "A85_T110E3_7x7_short"
+msgstr "T110E3 7x7"
+
 msgid "A85_T110E3_descr"
 msgstr ""
 "В 1954 году в Детройте прошла конференция по вопросу будущих тяжёлых танков."
@@ -2801,6 +2845,9 @@ msgstr "AN/VRC-24"
 msgid "AN_VRC-3"
 msgstr "AN/VRC-3"
 
+msgid "AN_VRC-3_7x7_0"
+msgstr "AN/VRC-3"
+
 msgid "AN_VRC-3_Rush_Ep1"
 msgstr "AN/VRC-3S"
 
@@ -2841,6 +2888,9 @@ msgid "AN_VRC_3_57_58_7x7"
 msgstr "AN/VRC-3"
 
 msgid "AN_VRC_3_XM"
+msgstr "AN/VRC-3XM"
+
+msgid "AN_VRC_3_XM_CFE_I"
 msgstr "AN/VRC-3XM"
 
 msgid "AN_VRC_46"
@@ -3186,6 +3236,9 @@ msgstr "TS-6"
 msgid "Chassis_A168_XM_57"
 msgstr "XM57"
 
+msgid "Chassis_A168_XM_57_CFE_I"
+msgstr "Ironclad Guardian"
+
 msgid "Chassis_A169_PattonIII_120"
 msgstr "Patton the Tank"
 
@@ -3396,6 +3449,9 @@ msgstr "T110E4"
 msgid "Chassis_A85_T110E3"
 msgstr "T110E3"
 
+msgid "Chassis_A85_T110E3_7x7"
+msgstr "T110E3"
+
 msgid "Chassis_A87_M44"
 msgstr "T99E1"
 
@@ -3576,6 +3632,9 @@ msgstr ""
 "AOI-628-2"
 
 msgid "Continental_AOI_1490E3"
+msgstr "Continental AOI-1490E3"
+
+msgid "Continental_AOI_1490E3_7x7"
 msgstr "Continental AOI-1490E3"
 
 msgid "Continental_AOI_1490E3_short"
@@ -3951,6 +4010,14 @@ msgstr ""
 
 msgid "Continental_AVI_1790_8XM"
 msgstr "Continental AVI-1790-8XM"
+
+msgid "Continental_AVI_1790_8XM_CFE_I"
+msgstr "Continental AVI-1790-8XM"
+
+msgid "Continental_AVI_1790_8XM_CFE_I_short"
+msgstr ""
+"Continental\n"
+"AVI-1790-8XM"
 
 msgid "Continental_AVI_1790_8XM_short"
 msgstr ""
@@ -5366,6 +5433,9 @@ msgstr "TS-6"
 msgid "Turret_1_A168_XM_57"
 msgstr "XM57"
 
+msgid "Turret_1_A168_XM_57_CFE_I"
+msgstr "Ironclad Guardian"
+
 msgid "Turret_1_A169_PattonIII_120"
 msgstr "Patton the Tank"
 
@@ -5508,6 +5578,9 @@ msgid "Turret_1_A83_T110E4"
 msgstr "T110E4"
 
 msgid "Turret_1_A85_T110E3"
+msgstr "T110E3"
+
+msgid "Turret_1_A85_T110E3_7x7"
 msgstr "T110E3"
 
 msgid "Turret_1_A87_M44"
@@ -6708,14 +6781,14 @@ msgstr "152 mm Gun-Launcher XM81 (conventional T49)"
 msgid "_152mm_HEAT_XM409"
 msgstr "HEAT XM409"
 
-msgid "_152mm_HEAT_XM409E1"
-msgstr "HEAT XM409E1"
-
-msgid "_152mm_HEAT_XM409E1_T49"
-msgstr "HEAT XM409E1 (T49)"
-
 msgid "_152mm_HEAT_XM409_T49"
 msgstr "HEAT XM409 (T49)"
+
+msgid "_152mm_HESH_XM657E3"
+msgstr "HESH XM657E3"
+
+msgid "_152mm_HESH_XM657E3_T49"
+msgstr "HESH XM657E3 (T49)"
 
 msgid "_152mm_HE_XM657E2"
 msgstr "HE XM657E2"
@@ -6727,6 +6800,9 @@ msgid "_152mm_HE_XM657E3"
 msgstr "HE XM657E3"
 
 msgid "_155mm_APCR_M112E3"
+msgstr "APCR M112E3"
+
+msgid "_155mm_APCR_M112E3_7x7"
 msgstr "APCR M112E3"
 
 msgid "_155mm_APCR_M112_T95"
@@ -6744,6 +6820,9 @@ msgstr "AP M111E1"
 msgid "_155mm_AP_M111E3"
 msgstr "AP M111E3"
 
+msgid "_155mm_AP_M111E3_7x7"
+msgstr "AP M111E3"
+
 msgid "_155mm_AP_M111E4"
 msgstr "AP M111E4"
 
@@ -6757,6 +6836,9 @@ msgid "_155mm_AP_M111_T95"
 msgstr "AP M111 (T95)"
 
 msgid "_155mm_AP_M111_XM57"
+msgstr "AP M111 XM57"
+
+msgid "_155mm_AP_M111_XM57_CFE_I"
 msgstr "AP M111 XM57"
 
 msgid "_155mm_AP_M112"
@@ -6783,6 +6865,9 @@ msgstr "AP M112 (M53)"
 msgid "_155mm_AP_M112_XM57"
 msgstr "APCR M112 XM57"
 
+msgid "_155mm_AP_M112_XM57_CFE_I"
+msgstr "APCR M112 XM57"
+
 msgid "_155mm_AP_MPCS"
 msgstr "AP MPCS"
 
@@ -6793,6 +6878,9 @@ msgid "_155mm_AT_Gun_T7E2"
 msgstr "155 mm AT Gun T7E2"
 
 msgid "_155mm_AT_Gun_T7E3"
+msgstr "155 mm AT Gun T7E3"
+
+msgid "_155mm_AT_Gun_T7E3_7x7"
 msgstr "155 mm AT Gun T7E3"
 
 msgid "_155mm_AT_Gun_T7E4"
@@ -6819,6 +6907,9 @@ msgstr "155 mm Gun M46"
 msgid "_155mm_Gun_T7XM"
 msgstr "155 mm Gun T7XM"
 
+msgid "_155mm_Gun_T7XM_CFE_I"
+msgstr "155 mm Gun T7XM"
+
 msgid "_155mm_HEAT_M167"
 msgstr "HEAT M167"
 
@@ -6838,6 +6929,9 @@ msgid "_155mm_HE_M101E1"
 msgstr "HE M101E1"
 
 msgid "_155mm_HE_M101E3"
+msgstr "HE M101E3"
+
+msgid "_155mm_HE_M101E3_7x7"
 msgstr "HE M101E3"
 
 msgid "_155mm_HE_M101E4"
@@ -6871,6 +6965,9 @@ msgid "_155mm_HE_M101_T95"
 msgstr "HE M101 (T95)"
 
 msgid "_155mm_HE_M101_XM57"
+msgstr "HE M101 XM57"
+
+msgid "_155mm_HE_M101_XM57_CFE_I"
 msgstr "HE M101 XM57"
 
 msgid "_155mm_HE_M102"

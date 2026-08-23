@@ -99,7 +99,7 @@ msgid "booster/booster_pick_up_radius/description"
 msgstr ""
 "После исследования увеличивает {EDCB9E_Start}радиус сбора "
 "мириума{EDCB9E_End} с техники противника на "
-"{EDCB9E_Start}%(pick_up_radius_add)s{EDCB9E_End}."
+"{EDCB9E_Start}%(pick_up_radius_add)s%%{EDCB9E_End}."
 
 msgid "booster/booster_pick_up_radius/name"
 msgstr "Радиус сбора мириума"
@@ -547,7 +547,7 @@ msgstr "Все ежедневные задачи выполнены"
 
 msgid "questCard/completed"
 msgstr ""
-"Ежедневная задача выполненена.\n"
+"Ежедневная задача выполнена.\n"
 "Возвращайтесь завтра."
 
 msgid "reward/rest"

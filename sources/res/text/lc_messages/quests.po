@@ -984,6 +984,12 @@ msgstr "Управляемый бонус к опыту"
 msgid "bonusName/attachment"
 msgstr "3D-объект"
 
+msgid "bonusName/attachments_set/aerialAdvance"
+msgstr "Воздушное превосходство"
+
+msgid "bonusName/attachments_set/airDefenseSuite"
+msgstr "Система ПВО"
+
 msgid "bonusName/attachments_set/challengersBounty"
 msgstr "Награда победителю"
 
@@ -992,6 +998,9 @@ msgstr "Комплект 3D-объектов"
 
 msgid "bonusName/attachments_set/oceanicSentinel"
 msgstr "Хранители океана"
+
+msgid "bonusName/attachments_set/searchAndDestroy"
+msgstr "Поиск и ликвидация"
 
 msgid "bonusName/attendance_reward"
 msgstr "Награды за посещение"
@@ -1499,7 +1508,7 @@ msgid "dailyQuests/condition/doDamageVeh"
 msgstr "нанести урон %(value)d ед. техники за бой"
 
 msgid "dailyQuests/condition/doDamageVeh_accum"
-msgstr "нанести урон противнику"
+msgstr "нанести урон машинам противника"
 
 msgid "dailyQuests/condition/doDamageVeh_singular_accum"
 msgstr "нанести урон противнику"
@@ -4586,6 +4595,14 @@ msgstr "Стратегическая задача"
 
 msgid "item/type/specialMission"
 msgstr "Укрепрайон: особые указания"
+
+msgid "lockedForRerollTooltip/body"
+msgstr ""
+"Эта задача будет доступна для выполнения ежедневно в течение события. "
+"Заменить её нельзя."
+
+msgid "lockedForRerollTooltip/header"
+msgstr "Фиксированная задача"
 
 msgid "metrics/state/done"
 msgstr "Завершено"

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from constants import Configs
 from gui.Scaleform.daapi.view.lobby.epicBattle.epic_prime_time import EpicBattlesPrimeTimeView
 from gui.Scaleform.daapi.view.lobby.epicBattle.epic_prime_time import EpicBattleServerPresenter

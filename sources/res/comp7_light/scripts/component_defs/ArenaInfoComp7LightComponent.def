@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<Properties>
+		<teamsDamageDealt>
+			<Type>
+				ARRAY
+				<of>INT32</of>
+				<size>2</size>
+			</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</teamsDamageDealt>
+	</Properties>
+	<ofEntity>
+		<ArenaInfo/>
+	</ofEntity>
+	<DefaultKeyName>comp7</DefaultKeyName>
+</root>

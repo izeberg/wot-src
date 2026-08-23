@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from constants import PREBATTLE_TYPE, QUEUE_TYPE
 from battle_royale.gui.constants import BattleRoyaleSubMode
 from battle_royale.gui.impl.lobby.br_helpers.utils import isBattleResultsStateEntered

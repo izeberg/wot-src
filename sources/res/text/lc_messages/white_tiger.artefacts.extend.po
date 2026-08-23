@@ -1,0 +1,356 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-01 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "builtinAfterburning_wt/always"
+msgstr "?empty?"
+
+msgid "builtinAfterburning_wt/descr"
+msgstr "Боевое умение"
+
+msgid "builtinAfterburning_wt/features"
+msgstr ""
+"1. Используйте «Форсаж» для быстрого перемещения к точкам интереса.\n"
+"2. Используйте ускорение для отступления с опасных участков карты.\n"
+"3. Используйте «Форсаж», чтобы «закружить» противника или избежать урона.\n"
+"4. Умение увеличивает урон от тарана."
+
+msgid "builtinAfterburning_wt/long_special"
+msgstr "?empty?"
+
+msgid "builtinAfterburning_wt/name"
+msgstr "Форсаж"
+
+msgid "builtinAfterburning_wt/onUse"
+msgstr ""
+"Активируемое умение, на короткое время улучшающее динамические ТТХ машины."
+
+msgid "builtinAfterburning_wt/restriction"
+msgstr "?empty?"
+
+msgid "builtinAfterburning_wt/short_special"
+msgstr "?empty?"
+
+msgid "builtinChargedShot_wt/always"
+msgstr "?empty?"
+
+msgid "builtinChargedShot_wt/descr"
+msgstr "Боевое умение"
+
+msgid "builtinChargedShot_wt/features"
+msgstr ""
+"1. Используйте «Урановый лом», чтобы поджигать Часовых, стреляя им в корму.\n"
+"2. Умение очень эффективно при стрельбе с дальних дистанций: оно отвлекает и повреждает цели."
+
+msgid "builtinChargedShot_wt/long_special"
+msgstr "?empty?"
+
+msgid "builtinChargedShot_wt/name"
+msgstr "Урановый лом"
+
+msgid "builtinChargedShot_wt/onUse"
+msgstr ""
+"После активации умения следующий выстрел будет более точным и нанесёт "
+"увеличенный урон машине противника и её модулям."
+
+msgid "builtinChargedShot_wt/restriction"
+msgstr "?empty?"
+
+msgid "builtinChargedShot_wt/short_special"
+msgstr "?empty?"
+
+msgid "builtinExplosiveShot_wt/always"
+msgstr "?empty?"
+
+msgid "builtinExplosiveShot_wt/descr"
+msgstr "Боевое умение"
+
+msgid "builtinExplosiveShot_wt/features"
+msgstr ""
+"1. Используйте «Взрывной заряд», чтобы нанести огромный урон большим группам противника.\n"
+"2. Цели могут быть поражены за укрытием, даже если они не находятся на линии огня.\n"
+"3. Техника за неразрушаемым укрытием получает сниженный урон или не получает его вовсе.\n"
+"4. Чем больше машин противника задето «Взрывным зарядом», тем выше его урон."
+
+msgid "builtinExplosiveShot_wt/long_special"
+msgstr "?empty?"
+
+msgid "builtinExplosiveShot_wt/name"
+msgstr "Взрывной заряд"
+
+msgid "builtinExplosiveShot_wt/onUse"
+msgstr ""
+"После активации умения следующий снаряд взорвётся при контакте с "
+"поверхностью и нанесёт гарантированный урон в определённом радиусе."
+
+msgid "builtinExplosiveShot_wt/restriction"
+msgstr "?empty?"
+
+msgid "builtinExplosiveShot_wt/short_special"
+msgstr "?empty?"
+
+msgid "builtinHyperion_wt/always"
+msgstr "?empty?"
+
+msgid "builtinHyperion_wt/descr"
+msgstr "Секретная технология Эрмелинды"
+
+msgid "builtinHyperion_wt/features"
+msgstr ""
+"1. «Гиперион» заряжается, пока вы наносите урон машинам противника.\n"
+"2. Гончие узнают, когда вы примените это разрушительное умение.\n"
+"3. Действие защитных умений противника, таких как «Баллистический купол» и «Полный ремонт», прекратится после одного импульса.\n"
+"4. Ваши Часовые и Blitzträger защищены от разрушительного воздействия."
+
+msgid "builtinHyperion_wt/long_special"
+msgstr "?empty?"
+
+msgid "builtinHyperion_wt/name"
+msgstr "Гиперион"
+
+msgid "builtinHyperion_wt/onUse"
+msgstr ""
+"Выстреливает импульсами чистой энергии по выбранной области. Через несколько"
+" секунд там всё будет уничтожено."
+
+msgid "builtinHyperion_wt/restriction"
+msgstr "Умение недоступно без активного щита."
+
+msgid "builtinHyperion_wt/short_special"
+msgstr "?empty?"
+
+msgid "builtinImpulse_wt/always"
+msgstr "?empty?"
+
+msgid "builtinImpulse_wt/descr"
+msgstr "Боевое умение"
+
+msgid "builtinImpulse_wt/features"
+msgstr ""
+"1. «Электромагнитный импульс» проходит сквозь элементы окружения. Это помогает замедлять слишком манёвренные цели.\n"
+"2. Умение снимает полезные эффекты с техники противника.\n"
+"3. Оно также может отключать умения противника на время действия оглушения."
+
+msgid "builtinImpulse_wt/long_special"
+msgstr "?empty?"
+
+msgid "builtinImpulse_wt/name"
+msgstr "Электромагнитный импульс"
+
+msgid "builtinImpulse_wt/onUse"
+msgstr ""
+"Выброс энергии покрывает круговую площадь вокруг машины, оглушает все цели в"
+" зоне поражения, а также наносит урон ближайшим из них. Проходит через любые"
+" препятствия и сбрасывает очки перегрузки генератора с поражённых машин."
+
+msgid "builtinImpulse_wt/restriction"
+msgstr "Умение недоступно без активного щита."
+
+msgid "builtinImpulse_wt/short_special"
+msgstr "?empty?"
+
+msgid "builtinInstantStunShoot_wt/always"
+msgstr "?empty?"
+
+msgid "builtinInstantStunShoot_wt/descr"
+msgstr "Боевое умение"
+
+msgid "builtinInstantStunShoot_wt/features"
+msgstr ""
+"1. «Электромагнитная стрела» оглушает технику. Используйте это умение, чтобы сначала замедлить противника, а затем нанести ему урон.\n"
+"2. У умения есть зона поражения. Оглушить цель можно и без прямого попадания.\n"
+"3. «Электромагнитную стрелу» можно использовать даже при незаряженном орудии.\n"
+"4. Умение снимает положительные эффекты с техники противника.\n"
+"5. «Электромагнитная стрела» может отключать умения противника на время действия оглушения."
+
+msgid "builtinInstantStunShoot_wt/long_special"
+msgstr "?empty?"
+
+msgid "builtinInstantStunShoot_wt/name"
+msgstr "Электромагнитная стрела"
+
+msgid "builtinInstantStunShoot_wt/onUse"
+msgstr ""
+"Выстрел высоковольтным зарядом, который замедляет и оглушает цель, а также "
+"отключает её боевые умения. «Электромагнитная стрела» может прервать процесс"
+" перегрузки генератора."
+
+msgid "builtinInstantStunShoot_wt/restriction"
+msgstr "Умение недоступно без активного щита."
+
+msgid "builtinInstantStunShoot_wt/short_special"
+msgstr "?empty?"
+
+msgid "builtinLargeMedkit_wt/always"
+msgstr "%(crewHitChance)s к защите экипажа от ранений"
+
+msgid "builtinLargeMedkit_wt/descr"
+msgstr "Лечение всех раненых членов экипажа и снятие эффекта оглушения."
+
+msgid "builtinLargeMedkit_wt/long_special"
+msgstr ""
+"Позволяет вернуть в строй сразу всех раненых членов экипажа. Также пассивно "
+"повышает защиту экипажа от ранений. Требует ручной активации."
+
+msgid "builtinLargeMedkit_wt/name"
+msgstr "Большая аптечка"
+
+msgid "builtinLargeMedkit_wt/onUse"
+msgstr ""
+"Лечение всех раненых членов экипажа. Используется многократно за бой. Не "
+"расходуется."
+
+msgid "builtinLargeMedkit_wt/restriction"
+msgstr "?empty?"
+
+msgid "builtinLargeMedkit_wt/short_special"
+msgstr "Лечит всех раненых членов экипажа"
+
+msgid "builtinLargeMedkit_wt/stunDisabled/descr"
+msgstr "Лечение всех раненых членов экипажа."
+
+msgid "builtinRepairkit_wt/always"
+msgstr "%(vehicleRepairSpeed)s к скорости ремонта модулей"
+
+msgid "builtinRepairkit_wt/descr"
+msgstr "Ремонт всех повреждённых модулей."
+
+msgid "builtinRepairkit_wt/long_special"
+msgstr ""
+"Позволяет восстановить сразу все повреждённые модули. Также пассивно "
+"увеличивает скорость ремонта. Требует ручной активации."
+
+msgid "builtinRepairkit_wt/name"
+msgstr "Большой ремкомплект"
+
+msgid "builtinRepairkit_wt/onUse"
+msgstr ""
+"Починка всех повреждённых модулей. Используется многократно за бой. Не "
+"расходуется."
+
+msgid "builtinRepairkit_wt/restriction"
+msgstr "?empty?"
+
+msgid "builtinSelfRepair_wt/always"
+msgstr "?empty?"
+
+msgid "builtinSelfRepair_wt/descr"
+msgstr "Боевое умение"
+
+msgid "builtinSelfRepair_wt/features"
+msgstr ""
+"1. Используйте «Полный ремонт» в перерывах между боевыми действиями, чтобы полностью восстановить прочность машины.\n"
+"2. Процесс восстановления прерывается при получении урона.\n"
+"3. Используйте «Полный ремонт» во время боя или после активации «Гипериона», чтобы восстановить небольшое количество очков прочности и повысить шансы на выживание."
+
+msgid "builtinSelfRepair_wt/long_special"
+msgstr "?empty?"
+
+msgid "builtinSelfRepair_wt/name"
+msgstr "Полный ремонт"
+
+msgid "builtinSelfRepair_wt/onUse"
+msgstr ""
+"Восстанавливает очки прочности машины до максимального значения или до тех "
+"пор, пока она не получит урон."
+
+msgid "builtinSelfRepair_wt/restriction"
+msgstr "Умение может быть использовано, только если ваша машина повреждена."
+
+msgid "builtinSelfRepair_wt/short_special"
+msgstr "?empty?"
+
+msgid "builtinShield_wt/always"
+msgstr "?empty?"
+
+msgid "builtinShield_wt/descr"
+msgstr "Боевое умение"
+
+msgid "builtinShield_wt/features"
+msgstr ""
+"1. «Баллистический купол» действует недолго. Используйте его в критических ситуациях для защиты от снарядов противника.\n"
+"2. Используйте его, чтобы избежать оглушения.\n"
+"3. Помните: «Баллистический купол» не защищает от тарана и падения."
+
+msgid "builtinShield_wt/long_special"
+msgstr "?empty?"
+
+msgid "builtinShield_wt/name"
+msgstr "Баллистический купол"
+
+msgid "builtinShield_wt/onUse"
+msgstr ""
+"На определённое время даёт неуязвимость к оглушению и получению урона от "
+"снарядов."
+
+msgid "builtinShield_wt/restriction"
+msgstr "?empty?"
+
+msgid "builtinShield_wt/short_special"
+msgstr "?empty?"
+
+msgid "builtinStronghold_wt/always"
+msgstr "?empty?"
+
+msgid "builtinStronghold_wt/descr"
+msgstr "Боевое умение"
+
+msgid "builtinStronghold_wt/features"
+msgstr ""
+"1. Осадный режим значительно снижает мобильность вашей машины, а также ваши шансы уйти — используйте его с умом.\n"
+"2. Машина обладает отличными углами вертикального наведения, дающими возможность использовать особенности рельефа.\n"
+"3. Также у машины неплохая выживаемость, что позволит вам поддерживать союзников в бою.\n"
+"4. Вы можете выйти из осадного режима, активировав его снова. Оставшееся время действия будет вычтено из времени подготовки."
+
+msgid "builtinStronghold_wt/long_special"
+msgstr "?empty?"
+
+msgid "builtinStronghold_wt/name"
+msgstr "Осадный режим"
+
+msgid "builtinStronghold_wt/onUse"
+msgstr ""
+"На определённое время увеличивает скорострельность машины, но ухудшает "
+"мобильность."
+
+msgid "builtinStronghold_wt/restriction"
+msgstr "?empty?"
+
+msgid "builtinStronghold_wt/short_special"
+msgstr "?empty?"
+
+msgid "builtinTeleport_wt/always"
+msgstr "?empty?"
+
+msgid "builtinTeleport_wt/descr"
+msgstr "Секретная технология фон Кригера"
+
+msgid "builtinTeleport_wt/features"
+msgstr ""
+"1. Когда вы используете «Телепорт», Гончие получают информацию об этом. Однако узнать, где вы окажетесь, они не могут.\n"
+"2. Далеко уходить от Гончих не рекомендуется — вы можете не успеть добраться до ключевых позиций."
+
+msgid "builtinTeleport_wt/long_special"
+msgstr "?empty?"
+
+msgid "builtinTeleport_wt/name"
+msgstr "Телепорт"
+
+msgid "builtinTeleport_wt/onUse"
+msgstr ""
+"Позволяет машине с некоторой задержкой перенестись в выбранную точку на "
+"карте. В момент подготовки умения управлять техникой невозможно."
+
+msgid "builtinTeleport_wt/restriction"
+msgstr "Умение недоступно без активного щита."
+
+msgid "builtinTeleport_wt/short_special"
+msgstr "?empty?"

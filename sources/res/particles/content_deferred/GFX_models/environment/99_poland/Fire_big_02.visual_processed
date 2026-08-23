@@ -24,6 +24,10 @@
 					<materialKind>0</materialKind>
 					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
 					<property>
+						g_enableEnvMultiplier
+						<Bool>true</Bool>
+					</property>
+					<property>
 						TintlColor
 						<Vector4>
 							1 0.352941 0.000000 1
@@ -46,10 +50,7 @@
 					</property>
 					<property>
 						lightMultipliers
-						<Vector4>
-							10 0.000000 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>15.151515 0.000000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						alphaFadeAmountFresnel
@@ -89,6 +90,10 @@
 					<materialKind>0</materialKind>
 					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
 					<property>
+						g_enableEnvMultiplier
+						<Bool>true</Bool>
+					</property>
+					<property>
 						diffuseUVSpeedAlphaOffset
 						<Vector4>
 							0.05 0.18 0.7 0.000000
@@ -105,7 +110,7 @@
 					<property>
 						lightMultipliers
 						<Vector4>
-							60 0.000000 0.000000 0.000000
+							90.909091 0.000000 0.000000 0.000000
 							<!--BW_String-->
 						</Vector4>
 					</property>
@@ -151,6 +156,10 @@
 					<materialKind>0</materialKind>
 					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
 					<property>
+						g_enableEnvMultiplier
+						<Bool>true</Bool>
+					</property>
+					<property>
 						TintlColor
 						<Vector4>1 1 1 1</Vector4>
 					</property>
@@ -170,10 +179,7 @@
 					</property>
 					<property>
 						lightMultipliers
-						<Vector4>
-							20 0.000000 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>30.303030 0.000000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						FreshnelColor
@@ -224,6 +230,10 @@
 					<materialKind>0</materialKind>
 					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
 					<property>
+						g_enableEnvMultiplier
+						<Bool>true</Bool>
+					</property>
+					<property>
 						diffuseUVSpeedAlphaOffset
 						<Vector4>
 							0.05 0.165 0.6 0.000000
@@ -239,10 +249,7 @@
 					</property>
 					<property>
 						lightMultipliers
-						<Vector4>
-							10.002 0.000000 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>15.154545 0.000000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						selfIllumLight

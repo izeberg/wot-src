@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/sweden/S41_BV_111/normal/lod1/Gun_01</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/sweden/S41_BV_111/normal/lod2/Gun_01</parent>
+	<extent>64</extent>
+	<visibilityBox>
+		<min>-0.266846 -0.486184 -1.785509</min>
+		<max>0.264673 0.323609 4.807713</max>
+	</visibilityBox>
+</root>

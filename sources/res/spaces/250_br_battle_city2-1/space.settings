@@ -176,4 +176,8 @@
 		<simRadius>100.000000</simRadius>
 	</havok>
 	<NonChunkUDO>true</NonChunkUDO>
+	<navmeshGenerator>navgen</navmeshGenerator>
+	<enableClusteredShading>false</enableClusteredShading>
+	<isSHGridQualityOverridden>false</isSHGridQualityOverridden>
+	<overrideSHGridQuality>0</overrideSHGridQuality>
 </root>

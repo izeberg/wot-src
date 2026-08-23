@@ -151,6 +151,28 @@ msgstr[0] "{{count}} победа"
 msgstr[1] "{{count}} победы"
 msgstr[2] "{{count}} побед"
 
+msgid "restBonusWidget/tooltip/available"
+msgstr "Доступно {{value}}"
+
+msgid "restBonusWidget/tooltip/battleExperience"
+msgstr "Боевой опыт"
+
+msgid "restBonusWidget/tooltip/description/body"
+msgstr ""
+"Чтобы отметить ваше возвращение, мы приготовили кое-что особенное: {{@ style"
+" (color #ede6d9e6)}}ежедневный бонус{{/}} к боевому опыту, заработанному за "
+"первую победу в день на каждой машине."
+
+msgid "restBonusWidget/tooltip/description/header"
+msgstr "С возвращением, командир!"
+
+msgid "restBonusWidget/tooltip/reset"
+msgstr ""
+"Бонус обновляется ежедневно в {{@ style (color #ede6d9e6)}}{{value}}{{/}}."
+
+msgid "restBonusWidget/tooltip/title/available"
+msgstr "Бонус за возвращение доступен"
+
 msgid "tooltip/filters/myVehicle/body"
 msgstr "Нажмите, чтобы перейти к плейлистам техники"
 

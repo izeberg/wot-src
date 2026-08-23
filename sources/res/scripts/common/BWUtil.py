@@ -194,7 +194,6 @@ def findPlatformName():
             return
 
         return finaliseShortNameFromReleaseInfo(*platformData)
-        return
 
 
 def getPlatformArchitecutre():

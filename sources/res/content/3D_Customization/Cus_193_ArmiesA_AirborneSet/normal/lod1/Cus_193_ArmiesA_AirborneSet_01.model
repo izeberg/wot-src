@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>content/3D_Customization/Cus_193_ArmiesA_AirborneSet/normal/lod1/Cus_193_ArmiesA_AirborneSet_01</nodefullVisual>
+	<parent>content/3D_Customization/Cus_193_ArmiesA_AirborneSet/normal/lod2/Cus_193_ArmiesA_AirborneSet_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.527335 -0.000002 -0.533688</min>
+		<max>0.065585 0.414944 0.631206</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

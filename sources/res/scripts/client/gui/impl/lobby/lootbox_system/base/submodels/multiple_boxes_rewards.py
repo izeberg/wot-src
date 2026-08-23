@@ -1,5 +1,5 @@
 from typing import TYPE_CHECKING
-import Windowing
+import SoundGroups, Windowing
 from frameworks.wulf import Array
 from gui.Scaleform.framework.entities.View import ViewKey
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
@@ -16,6 +16,8 @@ from gui.lootbox_system.base.sound import enterLootBoxesMultipleRewardState, exi
 from gui.lootbox_system.base.utils import isShopVisible, openBoxes
 from gui.lootbox_system.base.views_loaders import showItemPreview
 from gui.shared import EVENT_BUS_SCOPE, events
+from gui.shared.system_factory import collectLootBoxMainView
+from gui.sounds.filters import StatesGroup, States
 from helpers import dependency
 from skeletons.gui.game_control import ILootBoxSystemController
 if TYPE_CHECKING:
@@ -101,6 +103,10 @@ class MultipleBoxesRewards(SubViewImpl):
     def __setVideoPlaying(self, ctx=None):
         isPlaying = ctx.get('isPlaying')
         self.__isVideoPlaying = isPlaying
+        SoundGroups.g_instance.setState(StatesGroup.VIDEO_OVERLAY, States.VIDEO_OVERLAY_ON if isPlaying else States.VIDEO_OVERLAY_OFF)
+
+    def _getBonusPacker(self):
+        return
 
     @replaceNoneKwargsModel
     def __setWindowAccessible(self, model=None):
@@ -135,7 +141,7 @@ class MultipleBoxesRewards(SubViewImpl):
         bonuses.clear()
         for boxRewards in self.__bonuses:
             boxModel = Array()
-            packBonusModelAndTooltipData(boxRewards, boxModel, tooltipData=self.__tooltipItems, merge=False, eventName=self.__eventName, showLootboxCompensation=True)
+            packBonusModelAndTooltipData(boxRewards, boxModel, tooltipData=self.__tooltipItems, merge=False, eventName=self.__eventName, showLootboxCompensation=True, packer=self._getBonusPacker())
             bonuses.addArray(boxModel)
 
         bonuses.invalidate()
@@ -180,4 +186,9 @@ class MultipleBoxesRewards(SubViewImpl):
 
     def __updateStateContext(self, bonuses):
         lsm = getLobbyStateMachine()
-        lsm.getStateByViewKey(ViewKey(VIEW_ALIAS.LOOT_BOXES_MAIN_VIEW)).updateCachedCtx({'bonuses': bonuses})
+        stateViewKey = ViewKey(VIEW_ALIAS.LOOT_BOXES_MAIN_VIEW)
+        for validator, viewKey in collectLootBoxMainView():
+            if validator():
+                stateViewKey = viewKey
+
+        lsm.getStateByViewKey(stateViewKey).updateCachedCtx({'bonuses': bonuses})

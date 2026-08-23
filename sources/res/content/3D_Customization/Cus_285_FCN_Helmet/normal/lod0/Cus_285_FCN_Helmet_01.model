@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-0.176433 -0.073140 -0.386080</min>
+		<max>0.176151 0.787053 0.160432</max>
+	</visibilityBox>
+	<parent>content/3D_Customization/Cus_285_FCN_Helmet/normal/lod1/Cus_285_FCN_Helmet_01</parent>
+	<extent>32.000000</extent>
+	<nodelessVisual>content/3D_Customization/Cus_285_FCN_Helmet/normal/lod0/Cus_285_FCN_Helmet_01</nodelessVisual>
+	<tank>true</tank>
+</root>

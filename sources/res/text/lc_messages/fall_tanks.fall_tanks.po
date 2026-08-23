@@ -1,0 +1,111 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-01 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "ability/name"
+msgstr "Способность"
+
+msgid "arenaDescription/winText"
+msgstr "Задача: достигнуть финишной черты!"
+
+msgid "battleLoading/description"
+msgstr ""
+"Используйте способности «Рывок» и «Щит», чтобы сеять хаос на поле боя."
+
+msgid "battleLoading/header"
+msgstr "Вперёд к финишу, и пусть соперники останутся позади!"
+
+msgid "battleResults/battleStatus/finished"
+msgstr "ТРАССА ПРОЙДЕНА"
+
+msgid "battleResults/battleStatus/inTop"
+msgstr "МЕСТО"
+
+msgid "battleResults/battleStatus/notFinished"
+msgstr ""
+"ТРАССА\n"
+"НЕ ПРОЙДЕНА"
+
+msgid "battleResults/finishReason/finished"
+msgstr "Финишная черта достигнута"
+
+msgid "battleResults/finishReason/notFinished"
+msgstr "Финишная черта не достигнута"
+
+msgid "battleResults/footerSubtitle/finished"
+msgstr "Неплохо!"
+
+msgid "battleResults/footerSubtitle/notFinished"
+msgstr "В следующий раз повезёт!"
+
+msgid "battleResults/footerSubtitle/top"
+msgstr "Топ-3!"
+
+msgid "battleWidget/checkpoint"
+msgstr "КОНТРОЛЬНАЯ ТОЧКА"
+
+msgid "battleWidget/enemyPosition"
+msgstr "ПОЗИЦИЯ СОПЕРНИКА"
+
+msgid "battleWidget/notFinished"
+msgstr ""
+"ТРАССА\n"
+"НЕ ПРОЙДЕНА"
+
+msgid "battleWidget/place"
+msgstr "МЕСТО"
+
+msgid "battleWidget/position"
+msgstr "ПОЗИЦИЯ"
+
+msgid "battleWidget/timeFormat"
+msgstr "{minutes}:{seconds}.{milliseconds}"
+
+msgid "buttonHint/evacuation/description"
+msgstr ", чтобы вернуться к последней контрольной точке"
+
+msgid "buttonHint/evacuation/noBindingKey"
+msgstr "Клавиша телепортации не назначена"
+
+msgid "buttonHint/evacuation/press"
+msgstr "Удерживайте"
+
+msgid "efficiencyRibbons/fallTanksKill"
+msgstr "Разрушен"
+
+msgid "evacuationAbilityTooltip/description"
+msgstr "Если вы застряли, телепортируйтесь к последней контрольной точке."
+
+msgid "evacuationAbilityTooltip/name"
+msgstr "Возврат к контрольной точке"
+
+msgid "serviceChannelMessages/battleResults/finishTime"
+msgstr "Время"
+
+msgid "serviceChannelMessages/battleResults/finished"
+msgstr "%(playerPlace)s-е место"
+
+msgid "serviceChannelMessages/battleResults/notFinished"
+msgstr "Трасса не пройдена"
+
+msgid "shellTooltip/caliber"
+msgstr "Калибр: %(caliber)s мм"
+
+msgid "shellTooltip/description"
+msgstr ""
+"При попадании вместо нанесения урона создаёт мощный импульс. Чем больше "
+"калибр орудия, тем сильнее взрыв!"
+
+msgid "shellTooltip/header"
+msgstr "Импульсный заряд"
+
+msgid "statusNotificationTimer/evacuation"
+msgstr "Перемещение к контрольной точке..."

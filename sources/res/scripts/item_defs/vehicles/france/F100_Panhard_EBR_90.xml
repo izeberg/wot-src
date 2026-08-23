@@ -8,7 +8,7 @@
 		<radioman/>
 	</crew>
 	<supplySlots>3 1 1 6 6 6 7 8 8 8</supplySlots>
-	<postProgressionTree>role_LT_wheeled</postProgressionTree>
+	<postProgressionTree>role_LT_scout</postProgressionTree>
 	<customRoleSlotOptions>2 4</customRoleSlotOptions>
 	<speedLimits>
 		<forward>65</forward>
@@ -99,7 +99,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>7451</weight>
-		<maxHealth>960</maxHealth>
+		<maxHealth>1040</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>200</maxHealth>
 			<maxRegenHealth>135</maxRegenHealth>
@@ -2028,7 +2028,7 @@
 						<collisionModelClient>vehicles/french/F100_Panhard_EBR_90/collision_client/Wheel_L_02.model</collisionModelClient>
 					</hitTester>
 					<armor>
-						<wheel>10</wheel>
+						<wheel>5</wheel>
 					</armor>
 					<wheelPos>
 						-1.076 0.581 0.705
@@ -2066,7 +2066,7 @@
 						<collisionModelClient>vehicles/french/F100_Panhard_EBR_90/collision_client/Wheel_L_03.model</collisionModelClient>
 					</hitTester>
 					<armor>
-						<wheel>10</wheel>
+						<wheel>5</wheel>
 					</armor>
 					<wheelPos>
 						-1.076 0.581 -0.705
@@ -2206,7 +2206,7 @@
 						<collisionModelClient>vehicles/french/F100_Panhard_EBR_90/collision_client/Wheel_R_02.model</collisionModelClient>
 					</hitTester>
 					<armor>
-						<wheel>10</wheel>
+						<wheel>5</wheel>
 					</armor>
 					<wheelPos>
 						1.076 0.581 0.705
@@ -2244,7 +2244,7 @@
 						<collisionModelClient>vehicles/french/F100_Panhard_EBR_90/collision_client/Wheel_R_03.model</collisionModelClient>
 					</hitTester>
 					<armor>
-						<wheel>10</wheel>
+						<wheel>5</wheel>
 					</armor>
 					<wheelPos>
 						1.076 0.581 -0.705
@@ -2661,7 +2661,7 @@
 						<collisionModelClient>vehicles/french/F100_Panhard_EBR_90/collision_client/Wheel_L_02.model</collisionModelClient>
 					</hitTester>
 					<armor>
-						<wheel>10</wheel>
+						<wheel>5</wheel>
 					</armor>
 					<wheelPos>
 						-1.076 0.581 0.705
@@ -2699,7 +2699,7 @@
 						<collisionModelClient>vehicles/french/F100_Panhard_EBR_90/collision_client/Wheel_L_03.model</collisionModelClient>
 					</hitTester>
 					<armor>
-						<wheel>10</wheel>
+						<wheel>5</wheel>
 					</armor>
 					<wheelPos>
 						-1.076 0.581 -0.705
@@ -2839,7 +2839,7 @@
 						<collisionModelClient>vehicles/french/F100_Panhard_EBR_90/collision_client/Wheel_R_02.model</collisionModelClient>
 					</hitTester>
 					<armor>
-						<wheel>10</wheel>
+						<wheel>5</wheel>
 					</armor>
 					<wheelPos>
 						1.076 0.581 0.705
@@ -2877,7 +2877,7 @@
 						<collisionModelClient>vehicles/french/F100_Panhard_EBR_90/collision_client/Wheel_R_03.model</collisionModelClient>
 					</hitTester>
 					<armor>
-						<wheel>10</wheel>
+						<wheel>5</wheel>
 					</armor>
 					<wheelPos>
 						1.076 0.581 -0.705
@@ -3110,7 +3110,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_7 armor_4</primaryArmor>
 			<weight>2000</weight>
-			<maxHealth>240</maxHealth>
+			<maxHealth>260</maxHealth>
 			<rotationSpeed>66</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>150</maxHealth>
@@ -3120,7 +3120,7 @@
 					<!--BW_String-->
 				</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>330</circularVisionRadius>
+			<circularVisionRadius>340</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>110</maxHealth>
 				<maxRegenHealth>55</maxRegenHealth>
@@ -3148,7 +3148,7 @@
 						<armor_7>30</armor_7>
 						<armor_8>0</armor_8>
 						<armor_9>40</armor_9>
-						<gun>10</gun>
+						<gun>20</gun>
 					</armor>
 					<turretYawLimits>-180 180</turretYawLimits>
 					<pitchLimits>
@@ -3543,6 +3543,7 @@
 						</customizableVehicleAreas>
 					</customization>
 					<edgeByVisualModel>false</edgeByVisualModel>
+					<muzzleBrake>HORIZONTAL</muzzleBrake>
 					<camouflage>
 						<tiling>
 							1 0.5 0.000000 0.000000
@@ -3567,7 +3568,7 @@
 						<armor_7>30</armor_7>
 						<armor_8>0</armor_8>
 						<armor_9>40</armor_9>
-						<gun>10</gun>
+						<gun>20</gun>
 					</armor>
 					<turretYawLimits>-180 180</turretYawLimits>
 					<pitchLimits>
@@ -3962,6 +3963,7 @@
 						</customizableVehicleAreas>
 					</customization>
 					<edgeByVisualModel>false</edgeByVisualModel>
+					<muzzleBrake>HORIZONTAL</muzzleBrake>
 					<camouflage>
 						<tiling>
 							1 0.5 0.000000 0.000000

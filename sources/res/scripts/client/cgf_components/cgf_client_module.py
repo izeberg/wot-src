@@ -7,6 +7,7 @@ from cgf_components.audition_component_2d import AuditionsSystem
 from cgf_components.mechanic_components.cyclic_rocket.accelerator_status_tracker import AcceleratorStatusTrackerComponentSystem, AcceleratorStatusTrackerComponent
 from cgf_components.mechanic_components.cyclic_rocket.nozzle_controller import NozzleController, NozzleActivationSyncComponent, NozzleControllerComponentSystem
 from cgf_components.mechanic_components.cyclic_rocket.staged_jet_boosters import StagedJetBoostersComponentSystem
+from cgf_components.mechanic_components.bustle_feed import BustleFeedVariableStorageCachingSystem
 from constants import IS_EDITOR, IS_CGF_DUMP
 from arena_bonus_type_caps import ARENA_BONUS_TYPE_CAPS
 from cgf_components.client_worlds_helpers import clientWorldsPredicate, ClientWorld
@@ -43,6 +44,7 @@ from cgf_components.trigger_vse_component import TriggerVSEComponent, TriggerVis
 from cgf_components.vehicle_health_observer_manager import VehicleHealthObserverSystem
 from cgf_components.visual_effect_component_manager import KillCamVisualEffectComponentSystem
 from cgf_components.zone_components import MapZoneSystem, RandomEventZoneUINotification, WeatherZoneUINotification, ZoneHint, ZoneMarker
+from cgf_components.crest_moving_effects_component import CrestMovingEffectsComponent
 from gui.pet_system.cgf_components.pet_place_component import PetPlaceComponent, PetPrefabSystem
 from vehicle_systems.components.vehicle_to_camera_alignment_components import VehicleToCameraAlignmentSystem, VehicleToCameraAlignmentComponent
 from DeathComponent import DeathComponentSystem
@@ -51,7 +53,7 @@ from ShotsReceiver import ShotReceiverSystem, ShotsReceiver
 from VehicleStickers import VehicleStickersSystem
 from vehicle_systems.components.hull_aiming_controller import HullAimingSystem, HullAimingController
 from vehicle_systems.components.CrashedTracks import CrashedTracksController, CrashedTracksSystem
-from vehicle_systems.components.highlighter import Highlighter
+from vehicle_systems.components.highlighter import Highlighter, HighlighterSystem
 from vehicle_systems.components.vehicle_shadow_manager import VehicleShadowManager, VehicleShadowSystem
 from vehicle_systems.components.siegeEffectsController import SiegeEffectsController
 from vehicle_appearance.component import VehicleAppearanceComponent
@@ -64,8 +66,13 @@ if IS_EDITOR or IS_CGF_DUMP:
         Reactions = CGF.Reactions()
 
 
+    class CrestMovingEffectsSystem(object):
+        Reactions = CGF.Reactions()
+
+
 else:
     from gui.hangar_vehicle_appearance_system import HangarAppearanceSystem
+    from cgf_components.crest_moving_manager import CrestMovingEffectsSystem
 
 @registerModule
 class ClientCommonModule(object):
@@ -117,7 +124,9 @@ class ClientCommonModule(object):
      CGF.RegisterSystem(NozzleControllerComponentSystem, domain=CGF.Domain.ClientEditor, predicate=clientWorldsPredicate(ClientWorld.BATTLE | ClientWorld.EDITOR)),
      CGF.RegisterSystem(StagedJetBoostersComponentSystem, domain=CGF.Domain.Client, predicate=clientWorldsPredicate(ClientWorld.BATTLE | ClientWorld.EDITOR)),
      CGF.RegisterSystem(DestructibleEntityStatesSystem, domain=CGF.Domain.Client, predicate=clientWorldsPredicate(ClientWorld.BATTLE)),
-     CGF.RegisterSystem(DetachedTurretSystem, domain=CGF.Domain.Client, predicate=clientWorldsPredicate(ClientWorld.BATTLE), updatePeriod=SERVER_TICK_LENGTH)]
+     CGF.RegisterSystem(DetachedTurretSystem, domain=CGF.Domain.Client, predicate=clientWorldsPredicate(ClientWorld.BATTLE), updatePeriod=SERVER_TICK_LENGTH),
+     CGF.RegisterSystem(CrestMovingEffectsSystem, domain=CGF.Domain.Client, predicate=clientWorldsPredicate(ClientWorld.BATTLE | ClientWorld.EDITOR)),
+     CGF.RegisterSystem(BustleFeedVariableStorageCachingSystem, domain=CGF.Domain.Client, predicate=clientWorldsPredicate(ClientWorld.BATTLE))]
     components = [
      cgf_components.vehicle_mechanics_components.VehicleMechanicSimpleActivationSounds,
      cgf_components.vehicle_mechanics_components.ConcentrationModeEffects,
@@ -133,7 +142,8 @@ class ClientCommonModule(object):
      cgf_components.vehicle_mechanics_components.TargetDesignatorEffects,
      cgf_components.vehicle_mechanics_components.StanceDanceEffects,
      cgf_components.vehicle_mechanics_components.StationaryReloadEffects,
-     cgf_components.vehicle_mechanics_components.ChargeShotEffects,
+     cgf_components.vehicle_mechanics_components.AutoreloaderSurgeEffects,
+     cgf_components.vehicle_mechanics_components.SightPointerEffects,
      AcceleratorStatusTrackerComponent,
      TriggerVSEComponent,
      StatisticDisplayComponent,
@@ -164,7 +174,8 @@ class ClientCommonModule(object):
      RandomEventZoneUINotification,
      ShotsReceiver,
      NozzleController,
-     NozzleActivationSyncComponent]
+     NozzleActivationSyncComponent,
+     CrestMovingEffectsComponent]
 
 
 @registerModule
@@ -309,7 +320,9 @@ class VehicleAppearanceModule(object):
      CGF.RegisterSystem(CrashedTracksSystem, domain=CGF.Domain.ClientEditor, predicate=clientWorldsPredicate(ClientWorld.BATTLE | ClientWorld.EDITOR)),
      CGF.RegisterSystem(HullAimingSystem, domain=CGF.Domain.ClientEditor, predicate=clientWorldsPredicate(ClientWorld.BATTLE | ClientWorld.EDITOR)),
      CGF.RegisterSystem(VehicleShadowSystem, domain=CGF.Domain.ClientEditor),
-     CGF.RegisterSystem(CustomEffectManagerSystem, domain=CGF.Domain.ClientEditor, predicate=clientWorldsPredicate(ClientWorld.BATTLE | ClientWorld.EDITOR))]
+     CGF.RegisterSystem(CustomEffectManagerSystem, domain=CGF.Domain.ClientEditor, predicate=clientWorldsPredicate(ClientWorld.BATTLE | ClientWorld.EDITOR)),
+     CGF.RegisterSystem(HighlighterSystem, domain=CGF.Domain.Client, updateAfter=(
+      CommonTankAppearanceActivateSystem,))]
     components = [
      VehicleAppearanceComponent,
      CrashedTracksController,

@@ -274,6 +274,76 @@
 				<class>GameObjectToVehicle</class>
 				<id>GameObjectToVehicle_2</id>
 			</block>
+			<block>
+				<class>Macro</class>
+				<id>Macro_1</id>
+				<params>
+					<param>
+						CustomizationVehicleEvents
+						<name>Macro Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>ComponentMethod</class>
+				<id>ComponentMethod_24</id>
+				<params>
+					<param>
+						Animator.startLayerByName
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>arg#0</name>
+						<const>\trigger\</const>
+					</slot>
+					<slot>
+						<name>arg#1</name>
+						<const>\0.000000\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>ComponentMethod</class>
+				<id>ComponentMethod_23</id>
+				<params>
+					<param>
+						Animator.stopLayerByName
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>arg#0</name>
+						<const>\trigger\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>ComponentMethod</class>
+				<id>ComponentMethod_25</id>
+				<params>
+					<param>
+						Animator.startLayerByName
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>arg#0</name>
+						<const>\idle\</const>
+					</slot>
+					<slot>
+						<name>arg#1</name>
+						<const>\0.000000\</const>
+					</slot>
+				</slots>
+			</block>
 		</blocks>
 		<connections>
 			<connection>
@@ -467,6 +537,48 @@
 				<input>gameObject</input>
 				<to>GameObjectToVehicle_2</to>
 				<output>vehicleObject</output>
+			</connection>
+			<connection>
+				<from>GameObjectToVehicle_2</from>
+				<input>vehicle</input>
+				<to>Macro_1</to>
+				<output>vehicle</output>
+			</connection>
+			<connection>
+				<from>Macro_1</from>
+				<input>in</input>
+				<to>ComponentMethod_24</to>
+				<output>PrebattleHighlightStart</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>ComponentMethod_24</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>Macro_1</from>
+				<input>in</input>
+				<to>ComponentMethod_23</to>
+				<output>PrebattleHighlightEnd</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>ComponentMethod_23</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>ComponentMethod_23</from>
+				<input>in</input>
+				<to>ComponentMethod_25</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>ComponentMethod_25</to>
+				<output>value</output>
 			</connection>
 		</connections>
 		<macros/>

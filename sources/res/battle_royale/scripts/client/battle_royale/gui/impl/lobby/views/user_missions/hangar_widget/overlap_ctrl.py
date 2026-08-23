@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from battle_royale.gui.impl.lobby.views.states import BattleRoyaleHangarState
 from gui.impl.lobby.user_missions.hangar_widget.overlap_ctrl import OverlapCtrlMixin
 

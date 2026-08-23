@@ -10,9 +10,6 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "autoOpenView/bottomLabel"
-msgstr "Мы открыли все ваши новогодние коробки"
-
 msgid "autoOpenView/congratsLabel"
 msgstr "Поздравляем!"
 
@@ -67,36 +64,10 @@ msgstr "x{count}"
 msgid "entryDesc/buySlot"
 msgstr "Большие коробки можно купить в Премиум магазине"
 
-msgid "entryDesc/newYear_premium"
-msgstr "Большие коробки"
-
-msgid "entryDesc/newYear_usual"
-msgstr "Малые коробки"
-
-msgid "entryDesc/questSlot"
-msgstr "Малые коробки можно заработать, выполняя задачи"
-
 msgid "entryDesc/restrictedMode"
 msgstr "Функциональность временно недоступна. Попробуйте позже."
 
 msgid "entryPoint/header"
-msgstr "Коробки"
-
-msgid "entryTooltip/body/h1"
-msgstr "Где купить большие коробки:"
-
-msgid "entryTooltip/body/h2"
-msgstr "Как получить малые коробки:"
-
-msgid "entryTooltip/body/p1"
-msgstr ""
-"Покупайте коробки с новогодними украшениями для себя и своих друзей в "
-"Премиум магазине."
-
-msgid "entryTooltip/body/p2"
-msgstr "Выдаются за выполнение новогодних боевых задач."
-
-msgid "entryTooltip/header"
 msgstr "Коробки"
 
 msgid "entryView/boxesCount"
@@ -105,24 +76,8 @@ msgstr "еще контейнеров: {count}"
 msgid "entryView/buyLabel"
 msgstr "ДОКУПИТЬ КОРОБКИ"
 
-msgid "entryView/ended/newYear_premium"
-msgstr ""
-"Большие коробки на Складе закончились,\n"
-"можете купить их в Премиум магазине"
-
-msgid "entryView/ended/newYear_usual"
-msgstr ""
-"Малые коробки закончились,\n"
-"можете заработать их в бою"
-
 msgid "entryView/lootboxesCount"
 msgstr "x{count}"
-
-msgid "entryView/title"
-msgstr "Новогоднее наступление {year}"
-
-msgid "entryView/year"
-msgstr "2019"
 
 msgid "multiOpenView/applyLabel"
 msgstr "Так точно!"
@@ -199,9 +154,6 @@ msgstr "Открытие ящиков"
 msgid "notification/lootBoxesReceived/invoice"
 msgstr "Начислено"
 
-msgid "notification/ny19man"
-msgstr "Уникальный член экипажа: %(count)s"
-
 msgid "notification/rewards"
 msgstr "Вам присвоены следующие награды:"
 
@@ -265,36 +217,6 @@ msgstr "Уникальный (реально!) стиль для"
 msgid "specialReward/vehicle/goToBtn"
 msgstr "Посмотреть в Ангаре"
 
-msgid "tooltip/category/header/Christmas"
-msgstr "Рождественские коробки"
-
-msgid "tooltip/category/header/Fairytale"
-msgstr "Волшебные коробки"
-
-msgid "tooltip/category/header/NewYear"
-msgstr "Новогодние коробки"
-
-msgid "tooltip/category/header/Oriental"
-msgstr "Восточные коробки"
-
-msgid "tooltip/category/rewards/Christmas"
-msgstr "Рождественской коллекции"
-
-msgid "tooltip/category/rewards/Fairytale"
-msgstr "Волшебной коллекции"
-
-msgid "tooltip/category/rewards/NewYear"
-msgstr "Новогодней коллекции"
-
-msgid "tooltip/category/rewards/Oriental"
-msgstr "Восточной коллекции"
-
-msgid "tooltip/category/rewards/description"
-msgstr "В коробках находятся украшения из {category} и другие ценные награды."
-
-msgid "tooltip/category/rewards/header"
-msgstr "Награды:"
-
 msgid "tooltip/entryView/buyBoxes"
 msgstr "Купить дополнительные коробки в Премиум магазине."
 
@@ -306,12 +228,6 @@ msgstr "Операция временно недоступна. Попробуй
 
 msgid "type/event_premium"
 msgstr "Dawn Supply Box"
-
-msgid "type/newYear_premium"
-msgstr "БОЛЬШИЕ КОРОБКИ"
-
-msgid "type/newYear_usual"
-msgstr "МАЛЫЕ КОРОБКИ"
 
 msgid "type/wt_boss"
 msgstr "Стартер Инженера"

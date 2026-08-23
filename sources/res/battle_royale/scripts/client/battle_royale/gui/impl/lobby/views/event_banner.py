@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from account_helpers.AccountSettings import AccountSettings, BATTLE_ROYALE_BANNER_FIRST_APPEARANCE_TIMESTAMP
 from battle_royale.gui.constants import BattleRoyaleModeState
 from battle_royale.gui.impl.lobby.tooltips.banner_tooltip_view import BannerTooltipView

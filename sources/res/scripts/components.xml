@@ -14,6 +14,9 @@
 		<ArenaCommendationsMasterComponent/>
 		<ArenaDynObstaclesComponent/>
 		<ArenaFogOfWarComponent/>
+		<ArenaRiggedBattleComponent/>
+		<ArenaPBHComponent/>
+		<AccountPBHComponent/>
 	</StaticComponents>
 	<DynamicComponents>
 		<OwnVehicle/>
@@ -50,6 +53,8 @@
 		<AvatarCommendations/>
 		<VehicleCircle/>
 		<VehicleRadarDetection/>
+		<IlluminationFlareDetection/>
+		<IlluminationFlareTargetController/>
 		<VehicleBuff/>
 		<IncomingDamageModifier/>
 		<GunReloadBoost/>
@@ -77,6 +82,7 @@
 		<VehicleRespawnComponent/>
 		<VehicleLivesComponent/>
 		<TeamInfoLivesComponent/>
+		<TeamInfoPBHComponent/>
 		<PveHudWidgetsStateComponent/>
 		<PveMinimapController/>
 		<TargetMarkersComponent/>
@@ -114,10 +120,17 @@
 		<TargetDesignatorTargetController/>
 		<TargetDesignatorTeamController/>
 		<StanceDanceController/>
+		<AutoreloaderSurgeController/>
+		<CrestMovingController/>
 		<ChargeableBurstComponent/>
 		<DebuffController/>
 		<StagedJetBoostersController/>
 		<PropellantGunController/>
 		<WheeledDashController/>
+		<SightPointerComponent/>
+		<AuxiliaryRocketLauncherComponent/>
+		<ShellParamsSwitcherController/>
+		<ShellCalibrationController/>
+		<BustleFeedController/>
 	</DynamicComponents>
 </root>

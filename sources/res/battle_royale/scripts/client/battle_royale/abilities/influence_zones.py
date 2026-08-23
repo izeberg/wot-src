@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import math, CGF, Math, CombatSelectedArea, math_utils
 from typing import List
 from battle_royale.abilities.area_abilities import AreaAbilityVisualizer

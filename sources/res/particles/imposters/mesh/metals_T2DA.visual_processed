@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>lambert1</identifier>
+					<fx>shaders/gpu_particles/gpu_particle_imposter_pbs_ext.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						alphaReference
+						<Int>160</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						diffuseMapArray
+						<Texture>particles/imposters/textures/metals_AM_T2DA.dds</Texture>
+					</property>
+					<property>
+						ditherTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_arrayLength
+						<Float>4.000000</Float>
+					</property>
+					<property>
+						g_enableConvertTolinear
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_framesXY
+						<Int>18</Int>
+					</property>
+					<property>
+						g_parallax
+						<Float>0.000000</Float>
+					</property>
+					<property>
+						g_useTexture2DArray
+						<Bool>true</Bool>
+					</property>
+					<property>
+						normalMapArray
+						<Texture>particles/imposters/textures/metals_NM_T2DA.dds</Texture>
+					</property>
+					<property>
+						g_enableGMM
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>particles/imposters/textures/metals_GMM_T2DA.dds</Texture>
+					</property>
+					<property>
+						g_useArraySlicesDistibution
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_useDitherOverLifetime
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_useGradient
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_useRandomGradient
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_useSizeTimeline
+						<Bool>true</Bool>
+					</property>
+				</material>
+				<groupOrigin>0.000000 0.000000 0.000000</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-0.499829 -0.500000 -0.013088</min>
+		<max>0.499829 0.500000 0.013088</max>
+	</boundingBox>
+	<cameraCollision>false</cameraCollision>
+	<geometrySize>140</geometrySize>
+</root>

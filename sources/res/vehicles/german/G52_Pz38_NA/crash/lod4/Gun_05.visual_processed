@@ -19,32 +19,13 @@
 				0
 				<material>
 					<identifier>tank_guns</identifier>
-					<fx>shaders/std_effects/PBS_tank_crash.fx</fx>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>0</materialKind>
 					<property>
 						g_crashUVTiling
-						<Vector4>
-							2 1 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>2.000000 1.000000 0.000000 0.000000</Vector4>
 					</property>
-					<property>
-						crashTileMap
-						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
-					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
-					</property>
-					<property>
-						excludeMaskAndAOMap
-						<Texture>vehicles/german/G52_Pz38_NA/Pz38_NA_guns_AO.dds</Texture>
-					</property>
-					<property>
-						colorIdMap
-						<Texture>vehicles/german/G52_Pz38_NA/Pz38_NA_guns_ID.dds</Texture>
-					</property>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<fx>shaders/std_effects/PBS_tank_crash.fx</fx>
 					<property>
 						metallicGlossMap
 						<Texture>vehicles/german/G52_Pz38_NA/Pz38_NA_guns_GMM.dds</Texture>
@@ -58,18 +39,26 @@
 						<Texture>vehicles/german/G52_Pz38_NA/Pz38_NA_guns_AM.dds</Texture>
 					</property>
 					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
+						excludeMaskAndAOMap
+						<Texture>vehicles/german/G52_Pz38_NA/Pz38_NA_guns_AO.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/german/G52_Pz38_NA/Pz38_NA_guns_ID.dds</Texture>
+					</property>
+					<property>
+						crashTileMap
+						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.001813 -0.011928 1.109905</groupOrigin>
+				<groupOrigin>0.001963 -0.004418 0.811871</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.095576 -0.176360 -0.025000</min>
-		<max>0.099202 0.152504 2.242508</max>
+		<min>-0.098139 -0.178646 -0.025000</min>
+		<max>0.102064 0.169811 1.641377</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>1822</geometrySize>
+	<geometrySize>1512</geometrySize>
 </root>

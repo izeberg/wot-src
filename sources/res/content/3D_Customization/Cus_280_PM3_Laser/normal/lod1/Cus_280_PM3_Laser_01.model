@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>content/3D_Customization/Cus_280_PM3_Laser/normal/lod1/Cus_280_PM3_Laser_01</nodefullVisual>
+	<parent>content/3D_Customization/Cus_280_PM3_Laser/normal/lod2/Cus_280_PM3_Laser_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.062908 -0.068582 -0.279224</min>
+		<max>0.058909 0.624894 0.368313</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>5.700000</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+		<track>
+			<name>animation</name>
+			<type>animation</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>2.733333</duration>
+				<resourceID>content/3D_Customization/Cus_284_FCN_Totem/animations/Cus_284_FCN_Totem_kill.fbx</resourceID>
+				<clipName/>
+				<speed>1.000000</speed>
+				<layer>0</layer>
+				<blendIn>constant</blendIn>
+				<blendOut>constant</blendOut>
+				<blendInTime>0.000000</blendInTime>
+				<blendOutTime>0.000000</blendOutTime>
+				<clipStartTime>0.000000</clipStartTime>
+				<clipEndTime>2.733333</clipEndTime>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>eyes_smoke</name>
+		<type>model</type>
+		<resource>particles/3D_Customization/Cus_284_FCN_Totem/Cus_284_FCN_Totem_smoke.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.002479 0.001537</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 180.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.100000</startTime>
+				<value>0.866784 1.000000 1.000000</value>
+				<inTangent>0.124890 0.000000 0.000000</inTangent>
+				<outTangent>0.124890 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.166667</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>0.062445 0.000000 0.000465</inTangent>
+				<outTangent>0.062445 0.000000 0.000465</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.266667</startTime>
+				<value>1.000000 1.000000 1.001955</value>
+				<inTangent>-0.109313 0.000000 -0.000158</inTangent>
+				<outTangent>-0.109313 0.000000 -0.000158</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.833333</startTime>
+				<value>0.657485 1.000000 1.000000</value>
+				<inTangent>-0.218627 -0.000000 -0.001248</inTangent>
+				<outTangent>-0.218627 -0.000000 -0.001248</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>MaterialFBXASC046002</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 1.000000 1.000000 0.020612</value>
+				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.114824</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.300000</startTime>
+				<value>1.000000 1.000000 1.000000 0.055059</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 0.114824</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 1.232532</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.066667</startTime>
+				<value>1.000000 1.000000 1.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 -0.058735</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -0.058735</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.400000</startTime>
+				<value>1.000000 1.000000 1.000000 0.550000</value>
+				<inTangent>0.000000 0.000000 0.000000 -0.759970</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -0.759970</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.066667</startTime>
+				<value>1.000000 1.000000 1.000000 0.436707</value>
+				<inTangent>0.000000 0.000000 0.000000 -0.353758</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -0.353758</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.600000</startTime>
+				<value>1.000000 1.000000 1.000000 0.150000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.537576</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -0.187500</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.400000</startTime>
+				<value>1.000000 1.000000 1.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.187500</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.700000</startTime>
+				<value>1.000000 1.000000 1.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>glow</name>
+		<type>particle</type>
+		<resource>particles/3D_Customization/Cus_284_FCN_Totem/Cus_284_glow.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.386939 0.045803</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>9.999999</inTangent>
+				<outTangent>9.999999</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.033333</startTime>
+				<value>1.000000</value>
+				<inTangent>9.999999</inTangent>
+				<outTangent>9.999999</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.733334</startTime>
+				<value>1.000000</value>
+				<inTangent>-3.000003</inTangent>
+				<outTangent>-3.000003</outTangent>
+				<tangentMode>2</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.900000</startTime>
+				<value>0.000000</value>
+				<inTangent>-6.000006</inTangent>
+				<outTangent>-6.000006</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>particleSize</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.578678</value>
+				<inTangent>-4.707765</inTangent>
+				<outTangent>-4.707765</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.100000</startTime>
+				<value>1.107901</value>
+				<inTangent>-0.834569</inTangent>
+				<outTangent>-0.834569</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.300000</startTime>
+				<value>1.000000</value>
+				<inTangent>-0.156240</inTangent>
+				<outTangent>-0.156240</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.633333</startTime>
+				<value>0.919153</value>
+				<inTangent>-0.220842</inTangent>
+				<outTangent>-0.220842</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.733334</startTime>
+				<value>0.500000</value>
+				<inTangent>-0.381048</inTangent>
+				<outTangent>-0.381048</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>eyes</name>
+		<type>model</type>
+		<resource>particles/3D_Customization/Cus_284_FCN_Totem/Cus_284_FCN_Totem_eyes.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>5.700000</duration>
+				<value>Root|mask</value>
+			</frame>
+		</track>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 -0.283235 0.000488</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 180.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>MaterialFBXASC046001</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 1.000000 1.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 2.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 2.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>1.000000 1.000000 1.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.863953</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.863953</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.933333</startTime>
+				<value>1.000000 1.000000 1.000000 0.610000</value>
+				<inTangent>0.000000 0.000000 0.000000 -0.243694</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -0.243694</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.766667</startTime>
+				<value>1.000000 1.000000 1.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.215294</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -0.215294</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

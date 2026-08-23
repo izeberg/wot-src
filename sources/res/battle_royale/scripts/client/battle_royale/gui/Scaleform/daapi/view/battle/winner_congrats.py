@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld
 from battle_royale.gui.battle_control.controllers.br_battle_sounds import BREvents
 from gui.Scaleform.daapi.view.meta.BattleRoyaleWinnerCongratsMeta import BattleRoyaleWinnerCongratsMeta

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_hull_01</identifier>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/Vehicles/G183_Fossa_VM_68_h/Fossa_VM_68_h_hull_01_AM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/Vehicles/G183_Fossa_VM_68_h/Fossa_VM_68_h_hull_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/Vehicles/G183_Fossa_VM_68_h/Fossa_VM_68_h_hull_01_ANM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>content/Hangars/Vehicles/G183_Fossa_VM_68_h/Fossa_VM_68_h_hull_01_AO.dds</Texture>
+					</property>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						g_defaultDetail
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_detailParams
+						<matrix>
+							<element>56711383</element>
+							<element>1020081200</element>
+							<element>295583580</element>
+							<element>1003945984</element>
+							<element>361512202</element>
+							<element>1008664576</element>
+							<element>329472809</element>
+							<element>1003945984</element>
+							<element>497109145</element>
+							<element>1011367675</element>
+							<element>231497083</element>
+							<element>1014693888</element>
+							<element>1336962099</element>
+							<element>1077411840</element>
+							<element>780482365</element>
+							<element>1006632960</element>
+						</matrix>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>7.013700 7.013700 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_dirtLevel
+						<Float>0.400000</Float>
+					</property>
+					<property>
+						g_glossMax
+						<Float>0.578689</Float>
+					</property>
+					<property>
+						g_glossMin
+						<Float>0.272678</Float>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.009385 1.345124 0.175614</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-1.339777 1.110601 -2.934079</min>
+		<max>1.321007 1.579647 3.285307</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>309464</geometrySize>
+</root>

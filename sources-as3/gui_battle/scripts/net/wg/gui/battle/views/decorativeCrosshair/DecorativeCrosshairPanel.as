@@ -44,6 +44,11 @@ package net.wg.gui.battle.views.decorativeCrosshair
          super.onDispose();
       }
       
+      override protected function updateVisibility() : void
+      {
+         this.visible = this._isVisible && _isCompVisible;
+      }
+      
       public function as_addDecorCrosshair(param1:String) : void
       {
          var _loc2_:String = null;
@@ -115,12 +120,6 @@ package net.wg.gui.battle.views.decorativeCrosshair
       {
          this.x = param1;
          this.y = param2;
-         invalidateSize();
-      }
-      
-      override protected function updateVisibility() : void
-      {
-         this.visible = this._isVisible && _isCompVisible;
       }
    }
 }

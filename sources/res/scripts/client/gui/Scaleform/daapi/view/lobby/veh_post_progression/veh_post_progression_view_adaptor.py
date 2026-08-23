@@ -15,5 +15,7 @@ class VehiclePostProgressionViewAdaptor(InjectComponentAdaptor):
         parentAlias = self.__ctx['parentAlias']
         if parentAlias == VIEW_ALIAS.VEH_POST_PROGRESSION:
             return PostProgressionCfgComponentView(**self.__ctx)
-        if parentAlias == VIEW_ALIAS.VEH_POST_PROGRESSION_CMP:
-            return PostProgressionCmpComponentView(**self.__ctx)
+        else:
+            if parentAlias == VIEW_ALIAS.VEH_POST_PROGRESSION_CMP:
+                return PostProgressionCmpComponentView(**self.__ctx)
+            return

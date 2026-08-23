@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from battle_royale.gui.Scaleform.daapi.view.lobby.hangar_constants import QuestFlagTypes
 from gui.impl import backport
 from gui.impl.gen import R

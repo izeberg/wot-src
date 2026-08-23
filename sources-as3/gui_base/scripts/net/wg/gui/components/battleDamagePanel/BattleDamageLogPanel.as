@@ -142,14 +142,14 @@ package net.wg.gui.components.battleDamagePanel
          this._damageLogDetailsBottomController.detailsStats(param1,param2,param3);
       }
       
-      public function as_addDetailMessageBottom(param1:String, param2:String, param3:String, param4:String, param5:String, param6:String) : void
+      public function as_addDetailMessageBottom(param1:String, param2:String, param3:String, param4:String, param5:String, param6:String, param7:String) : void
       {
-         this._damageLogDetailsBottomController.addDetailsMessage(param1,param2,param3,param4,param5,param6);
+         this._damageLogDetailsBottomController.addDetailsMessage(param1,param2,param3,param4,param5,param6,param7);
       }
       
-      public function as_addDetailMessageTop(param1:String, param2:String, param3:String, param4:String, param5:String, param6:String) : void
+      public function as_addDetailMessageTop(param1:String, param2:String, param3:String, param4:String, param5:String, param6:String, param7:String) : void
       {
-         this._damageLogDetailsTopController.addDetailsMessage(param1,param2,param3,param4,param5,param6);
+         this._damageLogDetailsTopController.addDetailsMessage(param1,param2,param3,param4,param5,param6,param7);
       }
       
       public function as_isDownAltButton(param1:Boolean) : void

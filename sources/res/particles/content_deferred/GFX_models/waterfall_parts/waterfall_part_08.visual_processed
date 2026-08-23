@@ -21,6 +21,10 @@
 				<material>
 					<identifier>waterfall02</identifier>
 					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
+					<property>
+						g_enableEnvMultiplier
+						<Bool>true</Bool>
+					</property>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
 					<property>
@@ -38,7 +42,7 @@
 					<property>
 						lightMultipliers
 						<Vector4>
-							1 0.000000 0.8 0.000000
+							0.909091 0.000000 0.8 0.000000
 							<!--BW_String-->
 						</Vector4>
 					</property>

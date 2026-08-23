@@ -2,14 +2,11 @@
 <root>
 	<tank>true</tank>
 	<parent>vehicles/german/G08_Pz38t/crash/lod1/Gun_04</parent>
-	<extent>32</extent>
+	<extent>32.000000</extent>
 	<materialNames/>
 	<visibilityBox>
-		<min>-0.143621 -0.149046 -0.534288</min>
-		<max>
-			0.0967224 0.20622 1.588
-			<!--BW_String-->
-		</max>
+		<min>-0.089172 -0.149046 -0.460003</min>
+		<max>0.089074 0.206220 1.627166</max>
 	</visibilityBox>
 	<nodelessVisual>vehicles/german/G08_Pz38t/crash/lod0/Gun_04</nodelessVisual>
 </root>

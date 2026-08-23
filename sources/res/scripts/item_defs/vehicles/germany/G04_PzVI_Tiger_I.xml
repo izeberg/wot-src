@@ -6544,6 +6544,7 @@
 							<camouflage>GUN</camouflage>
 						</customizableVehicleAreas>
 					</customization>
+					<muzzleBrake>HORIZONTAL</muzzleBrake>
 					<camouflage>
 						<tiling>
 							0.6 0.6 0.000000 0.000000
@@ -6563,6 +6564,10 @@
 						<vehicle>
 							G16_PzVIB_Tiger_II
 							<cost>78000</cost>
+						</vehicle>
+						<vehicle>
+							G193_Pz_Kpfw_55
+							<cost>95000</cost>
 						</vehicle>
 					</unlocks>
 					<reloadTime>
@@ -6764,6 +6769,7 @@
 							<camouflage>GUN</camouflage>
 						</customizableVehicleAreas>
 					</customization>
+					<muzzleBrake>HORIZONTAL</muzzleBrake>
 					<camouflage>
 						<tiling>
 							0.6 0.6 0.000000 0.000000

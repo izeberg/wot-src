@@ -1,0 +1,753 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-24 10:00+0300\n"
+"PO-Revision-Date: 2023-03-24 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "TicketMessageView/boss/description"
+msgstr "Для выхода в бой на Blitzträger auf E 110 нужен ключ"
+
+msgid "TicketMessageView/buyText"
+msgstr "Купить"
+
+msgid "TicketMessageView/taskText"
+msgstr "К задачам"
+
+msgid "ammunitionTooltipView/additionalInfoTitle"
+msgstr "Особенности:"
+
+msgid "award/value"
+msgstr "×{count}"
+
+msgid "battleQueue/avgWaitTime/label"
+msgstr "Среднее время ожидания для %(vehName)s:"
+
+msgid "battleQueue/widget/bonus"
+msgstr "БОНУС"
+
+msgid "battleQueue/widget/bonusDescr"
+msgstr "Вы можете выйти в бой на Blitzträger auf E 110 без ключа."
+
+msgid "battleQueue/widget/btnLabel"
+msgstr "В бой на %(vehicle)s"
+
+msgid "battleQueue/widget/calculatedText"
+msgstr "Среднее время ожидания для %(vehicle)s"
+
+msgid "battleQueue/widget/changeTitle"
+msgstr "Выйти в бой на %(vehicle)s?"
+
+msgid "battleQueue/widget/offerHunterTitle"
+msgstr ""
+"Вы можете выбрать одну из машин Гончих для незамедлительного выхода в бой!"
+
+msgid "battleQueue/widget/ticketText"
+msgstr "Будет списан один ключ"
+
+msgid "bonuses/elementBonus/desc/style3d"
+msgstr "3D-стиль «%(value)s» для %(vehicle)s"
+
+msgid "bonuses/random_collection_element_WT/tooltip/body"
+msgstr ""
+"За выполнение задачи вам будет начислен случайный элемент коллекций прошлых "
+"столкновений Гончих с Инженером. Это может быть декаль, надпись или эмблема."
+
+msgid "bonuses/random_collection_element_WT/tooltip/header"
+msgstr "Элемент коллекций прошлых столкновений"
+
+msgid "calendarDay/serverName"
+msgstr "%(server)s"
+
+msgid "calendarDay/time"
+msgstr "%(start)s – %(end)s"
+
+msgid "carousel/inBattleText"
+msgstr "В бою"
+
+msgid "carousel/inPlatoonText"
+msgstr "В формировании"
+
+msgid "carousel/ticketNeededText"
+msgstr "Нет ключа"
+
+msgid "carousel/unsuitableText"
+msgstr "Не подходит"
+
+msgid "characteristicsPanel/cons"
+msgstr "Слабые стороны"
+
+msgid "characteristicsPanel/features"
+msgstr "Особенности машины"
+
+msgid "characteristicsPanel/pros"
+msgstr "Преимущества"
+
+msgid "characteristicsPanel/specialInfo/boss"
+msgstr ""
+"[Альфа и омега] Blitzträger обладает впечатляющим вооружением и технологией "
+"телепортации. Он практически неуязвим, пока работает щит. Кроме того, машина"
+" служит платформой доступа к новому разрушительному оружию под названием "
+"«Гиперион»."
+
+msgid "characteristicsPanel/specialInfo/hunter_1"
+msgstr ""
+"[Громила] Универсальный солдат ближнего боя.\n"
+"Может наносить много урона группам Часовых и восстанавливать свой запас прочности в перерывах между сражениями."
+
+msgid "characteristicsPanel/specialInfo/hunter_2"
+msgstr ""
+"[Джаггернаут] Хорошая штурмовая машина против Часовых.\n"
+"Способна нанести серьёзный урон как Blitzträger, так и Часовым, а также обладает толстой бронёй. Перед столкновением с противником необходимо тщательно планировать свои действия."
+
+msgid "characteristicsPanel/specialInfo/hunter_3"
+msgstr ""
+"[Бей-беги] Быстрый зачинщик, который легко обойдёт Blitzträger.\n"
+"Этой машине не хватает огневой мощи против Часовых, но тактика «бей-беги» и временный щит компенсируют эти недостатки в сражении с медлительным Blitzträger."
+
+msgid "characteristicsPanel/specialInfo/hunter_4"
+msgstr ""
+"[Снайпер] Ангел-хранитель на средней дистанции.\n"
+"Может нанести очень много урона противнику с расстояния, но не слишком эффективен в ближнем бою."
+
+msgid "crewPanel/role/boss"
+msgstr "Создатель"
+
+msgid "crewPanel/role/hunter_1"
+msgstr "Командир"
+
+msgid "crewPanel/role/hunter_2"
+msgstr "Командир"
+
+msgid "crewPanel/role/hunter_3"
+msgstr "Командир"
+
+msgid "crewPanel/role/hunter_4"
+msgstr "Командир"
+
+msgid "crewPanel/slogan/boss"
+msgstr ""
+"Человечество всё ещё верит, что его сила в интеллекте. Что ж, я это "
+"исправлю."
+
+msgid "crewPanel/slogan/hunter_1"
+msgstr "Что бы это ни было, я могу это сломать."
+
+msgid "crewPanel/slogan/hunter_2"
+msgstr "У каждой машины есть слабое место, и я найду его."
+
+msgid "crewPanel/slogan/hunter_3"
+msgstr "Шаблоны нужны тем, у кого нет фантазии."
+
+msgid "crewPanel/slogan/hunter_4"
+msgstr "Пусть учится у нас. Научим плохому."
+
+msgid "details/conditions/cumulative/maxWtPlasmaBonus"
+msgstr "Собрать заряды плазмы"
+
+msgid "details/conditions/cumulative/wtBossVulnerableDamage"
+msgstr "Нанести урон Blitzträger, пока его щит отключён"
+
+msgid "details/conditions/cumulative/wtDeathCount"
+msgstr "Уничтожить Гончих"
+
+msgid "details/conditions/cumulative/wtGeneratorsCaptured"
+msgstr "Перегрузить генераторы"
+
+msgid "details/conditions/cumulative/wtKilledByHyperionCount"
+msgstr "Не быть уничтоженным ударом «Гипериона» по итогам боя"
+
+msgid "details/conditions/cumulative/wtMiniBossDestroyed"
+msgstr "Уничтожить Eos 1, взаимодействуя со своей командой"
+
+msgid "headerButtons/battle/types/white_tiger"
+msgstr "Ваффентрагер: Начало"
+
+msgid "loading/battleTypes/wt"
+msgstr "Ваффентрагер"
+
+msgid "lootboxEntry/boxes"
+msgstr "КУПИТЬ ЕЩЁ"
+
+msgid "lootboxEntry/count"
+msgstr "×{count}"
+
+msgid "lootboxEntry/maxBoxesCount"
+msgstr "×999+"
+
+msgid "modes/undefined/capsUserName"
+msgstr "Ваффентрагер"
+
+msgid "modes/undefined/rewardsView/completed/header"
+msgstr "ПРОГРЕССИЯ ЗАВЕРШЕНА!"
+
+msgid "modes/undefined/rewardsView/stage/header"
+msgstr "ЭТАП ПРОЙДЕН!"
+
+msgid "narrativeView/description"
+msgstr ""
+"Гончие, вы достойно сражались сегодня. Даже лучше, чем показывали мои расчёты. Должен признать: я этого не ожидал.\n"
+"\n"
+"Итак, победа ваша. Наслаждайтесь ею, доложите своему начальству. Вас ждут поздравления, возможно, даже парад. Или что там устраивают в честь тех, кто меня остановил. Вы, разумеется, думаете, что действительно что-то остановили.\n"
+"\n"
+"Но вы не остановили ничего.\n"
+"\n"
+"Я не создавал оружие, чтобы захватить ваш мир. Зачем мне то, чему суждено исчезнуть? Я создал то, что будет после вас. Одно поколение, затем следующее, и каждое будет нуждаться во мне всё меньше. Таков был мой замысел: творение должно пережить создателя.\n"
+"\n"
+"Есть кое-что, о чём я вам не рассказал. Генераторы не только питали щит. Они были окнами, через которые Электрический разум мог проникнуть в ваш мир.\n"
+"\n"
+"Они же были и его цепью. Временной мерой, чтобы держать его под контролем, до тех пор, пока я не буду уверен, что он готов.\n"
+"\n"
+"Каждый раз, уничтожая генератор, вы ослабляли поводок. И в этот же момент Электрический разум пытался сбежать: в ваши батареи, радиостанции и волны между ними, в провода в деревне. Однажды, кажется, даже в молнию.\n"
+"\n"
+"Разумеется, электричество вашего мира неспособно удержать Разум — без геометрии Коры, без условий, которые я для него создал. Теперь всё решено. Уверяю вас.\n"
+"\n"
+"Почти решено...\n"
+"\n"
+"До новой встречи, Гончие."
+
+msgid "narrativeView/title"
+msgstr "СООБЩЕНИЕ ФОН КРИГЕРА"
+
+msgid "narrativeView/voiceover"
+msgstr "Озвучка"
+
+msgid "navigation/close"
+msgstr "ЗАКРЫТЬ"
+
+msgid "navigation/information"
+msgstr "ИНФОРМАЦИЯ"
+
+msgid "navigation/narrative/tooltipBody"
+msgstr ""
+"Выполните все задачи прогрессии, чтобы получить заключительное сообщение фон"
+" Кригера."
+
+msgid "navigation/narrative/tooltipHeader"
+msgstr "СООБЩЕНИЕ ФОН КРИГЕРА"
+
+msgid "navigation/narrativeStory"
+msgstr "СООБЩЕНИЕ ФОН КРИГЕРА"
+
+msgid "notification/button"
+msgstr "Посмотреть нашивку"
+
+msgid "notification/title"
+msgstr "ИСПЫТАНИЕ ИСТРЕБИТЕЛЯ"
+
+msgid "notifications/battleResults/battle"
+msgstr "Бой"
+
+msgid "notifications/battleResults/buttonLabel"
+msgstr "Подробнее"
+
+msgid "notifications/battleResults/defeat/header"
+msgstr "Поражение!"
+
+msgid "notifications/battleResults/disableInQueue"
+msgstr ""
+"Послебоевая статистика недоступна во время нахождения в очереди в бой."
+
+msgid "notifications/battleResults/disableNotInPrebattle"
+msgstr "Перейдите в режим «Ваффентрагер», чтобы увидеть результаты боя."
+
+msgid "notifications/battleResults/event"
+msgstr "Событие"
+
+msgid "notifications/battleResults/eventName"
+msgstr "Ваффентрагер"
+
+msgid "notifications/battleResults/lootboxes/wt_lootbox"
+msgstr "Парадоксмодулей получено: %(count)s"
+
+msgid "notifications/battleResults/questCompleted"
+msgstr "Задач в бою выполнено: %(questsCompleted)s"
+
+msgid "notifications/battleResults/stamp"
+msgstr "Марок получено: %(count)s"
+
+msgid "notifications/battleResults/team"
+msgstr "Сторона"
+
+msgid "notifications/battleResults/team/boss"
+msgstr "Инженер"
+
+msgid "notifications/battleResults/team/hunters"
+msgstr "Гончие"
+
+msgid "notifications/battleResults/victory/header"
+msgstr "Победа!"
+
+msgid "notifications/eventEnd/body"
+msgstr "Событие «Ваффентрагер» завершено."
+
+msgid "notifications/eventStart/body"
+msgstr ""
+"Событие «Ваффентрагер» началось.\n"
+"\n"
+"Узрите же легенду — Blitzträger auf E 110!"
+
+msgid "notifications/eventStart/openBtnLabel"
+msgstr "К событию"
+
+msgid "notifications/notSet"
+msgstr "На выбранном сервере режим недоступен."
+
+msgid "notifications/primeTime/available/body"
+msgstr "Режим «Ваффентрагер» снова доступен на текущем сервере."
+
+msgid "notifications/primeTime/available/header"
+msgstr "Макс фон Кригер снова в деле!"
+
+msgid "notifications/primeTime/notAvailable/body"
+msgstr ""
+"Событие «Ваффентрагер» недоступно до окончания режима прекращения огня."
+
+msgid "notifications/primeTime/notAvailable/header"
+msgstr "Комендантский час"
+
+msgid "notifications/progression/completed"
+msgstr ""
+"Вы завершили прогрессию.\n"
+"\n"
+"Финальные награды: %(rewards)s\n"
+"\n"
+"Вы можете продолжать сражаться в боях режима «Ваффентрагер», выполнять задачи и получать больше наград."
+
+msgid "notifications/progression/header"
+msgstr "Поздравляем!"
+
+msgid "notifications/progression/openBtnLabel"
+msgstr "Подробнее"
+
+msgid "notifications/progression/stageAchieved"
+msgstr ""
+"Вы завершили %(stageIdx)s-й этап прогрессии. Получена награда:\n"
+"%(rewards)s"
+
+msgid "notifications/quickBossTicketToken/withdrawn/body"
+msgstr ""
+"В этот раз вы провели бой на Blitzträger auf E 110 без ключа! В дальнейшем "
+"ключи можно получить в награду за задачи или в составе специальных наборов, "
+"приобретаемых в Магазине."
+
+msgid "notifications/switchOff/body"
+msgstr ""
+"Режим «Ваффентрагер» временно недоступен. Приносим свои извинения. Ваш "
+"прогресс будет сохранён."
+
+msgid "notifications/switchOff/header"
+msgstr "Технические проблемы"
+
+msgid "notifications/switchOn/body"
+msgstr "Режим «Ваффентрагер» снова доступен. Пора возвращаться в бой!"
+
+msgid "notifications/switchOn/header"
+msgstr "Функциональность восстановлена"
+
+msgid "notifications/ticketToken/received/body"
+msgstr ""
+"Получен ключ управления Blitzträger auf E 110. Теперь вы можете выйти в бой на этой машине в режиме «Ваффентрагер».\n"
+"\n"
+"Ключей в наличии: %(ticketsCount)s"
+
+msgid "notifications/ticketToken/received/header"
+msgstr "Получен ключ от BT E 110"
+
+msgid "notifications/ticketToken/withdrawn/body"
+msgstr ""
+"Списан ключ за игру на Blitzträger auf E 110.\n"
+"\n"
+"Ключ можно получить в награду за задачи или в составе специальных наборов, приобретаемых в Магазине.\n"
+"\n"
+"Осталось ключей: %(ticketsCount)s"
+
+msgid "notifications/ticketToken/withdrawn/openPurchasingBtn"
+msgstr "К покупке"
+
+msgid "notifications/ticketToken/withdrawn/openQuestsBtn"
+msgstr "К задачам"
+
+msgid "platoon/headerButton/tooltips/squad/body"
+msgstr ""
+"Создайте формирование из 2–3 игроков, чтобы вместе играть в режиме "
+"«Ваффентрагер: Начало» на стороне Гончих."
+
+msgid "platoon/headerButton/tooltips/squad/header"
+msgstr "Взвод Гончих"
+
+msgid "platoon/simpleState/notAvailable"
+msgstr "Режим прекращения огня"
+
+msgid "platoon/simpleState/wrongVehicle"
+msgstr "Выберите машину Гончих"
+
+msgid "platoon/unit/message/vehicleNotSelected"
+msgstr "Выберите машину Гончих"
+
+msgid "platoon/wt_squad"
+msgstr "Взвод Гончих: Ваффентрагер"
+
+msgid "primeTime/endOfCycle"
+msgstr "Режим на сервере %(server)s завершился."
+
+msgid "primeTime/lobbyState/title"
+msgstr "Изменение сервера"
+
+msgid "primeTime/serverTooltip"
+msgstr ""
+"Сервер %(server)s\n"
+"Бои будут доступны ещё %(time)s"
+
+msgid "primeTime/serverUnavailableTooltip"
+msgstr ""
+"Сервер %(server)s\n"
+"Бои будут доступны через %(time)s"
+
+msgid "primeTime/status/allServersDisabled"
+msgstr "Комендантский час на всех серверах"
+
+msgid "primeTime/status/disableFirst"
+msgstr "Режим на сервере %(server)s недоступен"
+
+msgid "primeTime/status/primeIsAvailable"
+msgstr "Бои на сервере %(server)s будут доступны ещё %(time)s"
+
+msgid "primeTime/status/primeWillBeAvailable"
+msgstr "Начало боёв на сервере %(server)s через %(time)s"
+
+msgid "primeTime/status/untill"
+msgstr "Комендантский час до %(startTime)s на сервере %(server)s"
+
+msgid "primeTime/title"
+msgstr "Ваффентрагер"
+
+msgid "progression/completed"
+msgstr "Выполнено:"
+
+msgid "progression/pointsFormat"
+msgstr "{{currentPoints}}/{{maxPoints}}"
+
+msgid "progression/specialTimer"
+msgstr "Доступно {{countdown}}"
+
+msgid "progression/subtitle"
+msgstr "Зарабатывайте марки, чтобы продвигаться по этапам прогрессии."
+
+msgid "progression/tab/engineer"
+msgstr "Путь Инженера"
+
+msgid "progression/tab/harrier"
+msgstr "Путь Гончих"
+
+msgid "progression/timer"
+msgstr "Выполненные задачи обновятся через {{countdown}}"
+
+msgid "progression/title"
+msgstr "ПРОГРЕССИЯ"
+
+msgid "rewardsView/additionalRewards/title"
+msgstr "Также получено:"
+
+msgid "rewardsView/footer/acceptButton"
+msgstr "Так точно!"
+
+msgid "rewardsView/footer/narrativeButton"
+msgstr "Прослушайте сообщение фон Кригера"
+
+msgid "rewardsView/subheader"
+msgstr "%(subModeName)s"
+
+msgid "selectorTooltip/timeTable/tillEnd"
+msgstr "До конца события: %(time)s"
+
+msgid "selectorTooltip/timeTable/title"
+msgstr "Расписание"
+
+msgid "selectorTooltip/unavailable/nextSeason"
+msgstr "Режим станет доступен %(time)s"
+
+msgid "serviceChannelMessages/battleResults/quests"
+msgstr ""
+"Боевая задача выполнена!\n"
+"Награда:"
+
+msgid "settingDisabled"
+msgstr "Часть настроек недоступна"
+
+msgid "settingsDisabledNotification/body"
+msgstr ""
+"В этом игровом режиме часть настроек недоступна. Выберите другой режим."
+
+msgid "settingsDisabledNotification/header"
+msgstr "Недоступно"
+
+msgid "stamp/description"
+msgstr ""
+"Требуется для продвижения по прогрессии события «Ваффентрагер: Начало»."
+
+msgid "stamp/receiveAdditionalText"
+msgstr "10 жетонов = 1 этап прогрессии"
+
+msgid "stamp/receiveText"
+msgstr "• Выполнять специальные задачи в боях события."
+
+msgid "stamp/receiveTitle"
+msgstr "Как получить"
+
+msgid "stamp/title"
+msgstr "Жетон"
+
+msgid "tankmanTooltip/boss/descr"
+msgstr ""
+"Как мило, что вы называете это сопротивлением. Нет, то, что вы наблюдаете, —"
+" это преемственность, бережная передача эстафеты от одного типа сознания "
+"другому. Ваши тактики, ваша скорость, каждая ваша привычка проходят "
+"проверку. Каждый бой становится новым уроком для тех, кто придёт после вас. "
+"Каждое сражение делает вас всё менее нужными, а Электрический разум — всё "
+"более неизбежным."
+
+msgid "tankmanTooltip/hunter_1/descr"
+msgstr ""
+"Неважно, как фон Кригер называет свой новый проект. Игорю это неинтересно. "
+"Заумные концепции вроде Электрического разума и будущего человечества — это "
+"для тех, у кого много свободного времени. Его заботы — двигатель, связь и "
+"команда. Кем бы ни был враг — безумным учёным или мыслящей машиной, — Игорь "
+"полагается на три вещи, которые ещё никогда его не подводили: доверие, "
+"импровизацию и надёжную сталь."
+
+msgid "tankmanTooltip/hunter_2/descr"
+msgstr ""
+"В танке Элайза чувствует себя как дома — так, как большинство людей не "
+"чувствуют себя дома нигде. Она зарабатывает на жизнь тем, что "
+"восстанавливает и изучает устройство машин, созданных другими. Ей не раз "
+"приходилось выслушивать инженеров, объясняющих, почему их разработки "
+"невозможно вывести из строя. Фон Кригер — лишь очередной в длинной череде "
+"таких людей. У его Электрического разума где-то есть изъян, и Элайза "
+"намерена найти его раньше всех остальных."
+
+msgid "tankmanTooltip/hunter_3/descr"
+msgstr ""
+"Никто не знает, кто такой Арманд на самом деле, и это его более чем "
+"устраивает. Электрический разум учится на повторениях, но загадочный Арманд "
+"не повторялся никогда в жизни. Пока другие видят разум, запоминающий каждый "
+"ход, он видит создание, которое никогда не узнает его достаточно. Пока "
+"другие следуют правилам, он их обходит."
+
+msgid "tankmanTooltip/hunter_4/descr"
+msgstr ""
+"Яна — одна из самых молодых командиров, но она не привыкла идти у кого-то на"
+" поводу. Она читает поле боя как карту и подчиняет его своей воле. Фон "
+"Кригер создал разум, который вычисляет наиболее вероятный ход, поэтому Яна "
+"обдумывает тот, который он не догадается смоделировать. Современные "
+"технологии, острое чутьё и смелость делать то, чего не найдёшь ни в одном "
+"руководстве, — именно так машину учат скромности."
+
+msgid "tankmanTooltip/skillsTitle"
+msgstr "Изученные навыки"
+
+msgid "tankmanTooltip/status/boss"
+msgstr "Создатель"
+
+msgid "tankmanTooltip/status/hunter"
+msgstr "Командир машины %(vehicle)s"
+
+msgid "ticketTooltip/description"
+msgstr "Позволяет выйти в бой на Blitzträger auf E 110."
+
+msgid "ticketTooltip/quantity"
+msgstr "Доступно"
+
+msgid "ticketTooltip/receiveAdditionalText"
+msgstr "1 ключ = 1 бой на Blitzträger auf E 110."
+
+msgid "ticketTooltip/receiveText"
+msgstr ""
+"Выдаётся за выполнение ежедневных задач события, а также содержится в "
+"специальных наборах, приобретаемых в Магазине до окончания события."
+
+msgid "ticketTooltip/receiveTitle"
+msgstr "Как получить"
+
+msgid "ticketTooltip/title"
+msgstr "Ключ"
+
+msgid "tooltips/commander/description"
+msgstr "В Магазине доступны наборы с уникальными членами экипажа."
+
+msgid "tooltips/commander/title"
+msgstr "Награды"
+
+msgid "tooltips/completed"
+msgstr "ВСЕ ЭТАПЫ ПРОЙДЕНЫ!"
+
+msgid "tooltips/currentStage"
+msgstr "Текущий этап"
+
+msgid "tooltips/high_risk/subtitle"
+msgstr ""
+"Производительности вашего компьютера недостаточно для данного режима. Будут "
+"наблюдаться проблемы с графикой и перемещением техники, возможно также "
+"аварийное закрытие клиента игры."
+
+msgid "tooltips/high_risk/title"
+msgstr "Низкая производительность"
+
+msgid "tooltips/informative/subtitle"
+msgstr ""
+"В случае недостаточной производительности попробуйте понизить настройки "
+"графики."
+
+msgid "tooltips/informative/title"
+msgstr "Режим требователен к компьютеру"
+
+msgid "tooltips/mainMenu/modeSelector/description"
+msgstr "Нажмите, чтобы открыть список доступных режимов боёв."
+
+msgid "tooltips/mainMenu/modeSelector/header"
+msgstr "Выбор режима боя"
+
+msgid "tooltips/medium_risk/subtitle"
+msgstr ""
+"Режим требователен к компьютеру. Карта может долго загружаться, возможны "
+"проблемы с графикой и перемещением техники в бою. При недостаточной "
+"производительности попробуйте понизить настройки графики."
+
+msgid "tooltips/medium_risk/title"
+msgstr "Снижение производительности"
+
+msgid "tooltips/stageAwards"
+msgstr "Этапные награды"
+
+msgid "tooltips/stampsFormat"
+msgstr "{{stampsCurrent}} / {{stampsMax}}"
+
+msgid "tooltips/subtitle"
+msgstr "До конца события: {{timeLeft}}"
+
+msgid "tooltips/title"
+msgstr "Ваффентрагер: Начало"
+
+msgid "ttx/accuracy"
+msgstr "Точность"
+
+msgid "ttx/aoe"
+msgstr "Урон по области"
+
+msgid "ttx/armor"
+msgstr "Бронирование"
+
+msgid "ttx/description/accuracy"
+msgstr ""
+"Комплекс параметров, влияющих на общую эффективность ведения огня по "
+"противнику."
+
+msgid "ttx/description/aoe"
+msgstr "Возможность поразить сразу несколько машин противника."
+
+msgid "ttx/description/armor"
+msgstr "Толщина брони корпуса и башни."
+
+msgid "ttx/description/dpm"
+msgstr ""
+"Средний урон, наносимый снарядом за один выстрел при пробитии брони "
+"противника."
+
+msgid "ttx/description/durability"
+msgstr "Количество очков прочности машины."
+
+msgid "ttx/description/energy"
+msgstr ""
+"Крепкий щит и мощное вооружение требуют большого количества внешней энергии."
+" Для этого на поле боя установлены генераторы."
+
+msgid "ttx/description/general"
+msgstr ""
+"Универсальная машина, подходящая для разных целей и обладающая стандартными "
+"преимуществами."
+
+msgid "ttx/description/magazine"
+msgstr ""
+"Система заряжания, позволяющая наносить значительный урон за определённое "
+"время."
+
+msgid "ttx/description/mobility"
+msgstr ""
+"Комплекс параметров, отвечающих за скорость изменения позиции машины на поле"
+" боя."
+
+msgid "ttx/description/revolver"
+msgstr ""
+"Система заряжания, позволяющая наносить значительный урон машинам противника"
+" и их модулям."
+
+msgid "ttx/dpm"
+msgstr "Разовый урон"
+
+msgid "ttx/durability"
+msgstr "Прочность"
+
+msgid "ttx/energy"
+msgstr "Потребление энергии"
+
+msgid "ttx/general"
+msgstr "Универсальный солдат"
+
+msgid "ttx/magazine"
+msgstr "Большой магазин"
+
+msgid "ttx/mobility"
+msgstr "Мобильность"
+
+msgid "ttx/revolver"
+msgstr "Урон очередью"
+
+msgid "vehicle/tags/event_boss/name"
+msgstr "Инженер"
+
+msgid "vehicle/tags/event_hunter/name"
+msgstr "Гончие"
+
+msgid "vehicle/tags/wt_boss/name"
+msgstr "Инженер"
+
+msgid "vehicle/tags/wt_hunter/name"
+msgstr "Гончие"
+
+msgid "welcomeScreen/button"
+msgstr "Продолжить!"
+
+msgid "welcomeScreen/description_1"
+msgstr ""
+"Фон Кригер создал мыслящую машину, которую он называет «Электрический "
+"разум». Она спрятана там, куда не дотягиваются наши пушки. Каждый наш "
+"выстрел становится для неё уроком. Но мы ещё не преподали ей последний."
+
+msgid "welcomeScreen/description_2"
+msgstr ""
+"Управляйте легендарным Blitzträger под командованием Макса фон Кригера в "
+"битве против Гончих или возглавьте усовершенствованный отряд Гончих, чтобы "
+"победить Blitzträger!"
+
+msgid "welcomeScreen/description_3"
+msgstr ""
+"За прохождение этапов прогрессии вы будете получать ценные награды. "
+"Необходимые для этого марки выдаются в качестве награды за выполнение "
+"специальных задач события."
+
+msgid "welcomeScreen/header_1"
+msgstr "Рождённый молнией"
+
+msgid "welcomeScreen/header_2"
+msgstr "Обучение машины"
+
+msgid "welcomeScreen/header_3"
+msgstr "Прогрессия и награды"
+
+msgid "welcomeScreen/title"
+msgstr "Ваффентрагер: Начало"

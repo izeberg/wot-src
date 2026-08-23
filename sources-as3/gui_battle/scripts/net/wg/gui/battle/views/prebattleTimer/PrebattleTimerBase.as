@@ -32,6 +32,8 @@ package net.wg.gui.battle.views.prebattleTimer
       
       private static const INVALID_TIME_TF:uint = InvalidationType.SYSTEM_FLAGS_BORDER << 5;
       
+      private static const INVALID_PBH_VISIBILITY:uint = InvalidationType.SYSTEM_FLAGS_BORDER << 6;
+      
       private static const FRAME_LABEL_INIT:String = "init";
       
       private static const FRAME_LABEL_HIDE:String = "hide";
@@ -40,7 +42,19 @@ package net.wg.gui.battle.views.prebattleTimer
       
       private static const TIMER_LARGE_Y:int = -14;
       
+      private static const TIMER_LARGE_Y_PBH:int = -67;
+      
       private static const TIMER_SMALL_Y:int = 25;
+      
+      private static const TIMER_SMALL_Y_PBH:int = -56;
+      
+      private static const MESSAGE_LARGE_Y:int = 141;
+      
+      private static const MESSAGE_LARGE_Y_PBH:int = 90;
+      
+      private static const MESSAGE_SMALL_Y:int = 141;
+      
+      private static const MESSAGE_SMALL_Y_PBH:int = 60;
        
       
       public var message:TextFieldContainer = null;
@@ -70,6 +84,8 @@ package net.wg.gui.battle.views.prebattleTimer
       private var _isNeedWinChangePosition:Boolean = true;
       
       private var _isBackgroundHided:Boolean = false;
+      
+      private var _isPBHVisible:Boolean = false;
       
       public function PrebattleTimerBase()
       {
@@ -139,6 +155,11 @@ package net.wg.gui.battle.views.prebattleTimer
          {
             this.timer.setTime(this._totalTime,false);
          }
+         if(isInvalid(INVALID_PBH_VISIBILITY))
+         {
+            this.doUpdateSize(this.getState());
+            this.background.visible = this.isBackgroundVisible;
+         }
          if(this._isNeedWinChangePosition && isInvalid(InvalidationType.SIZE))
          {
             this.win.y = this.message.y + this.message.height | 0;
@@ -149,6 +170,11 @@ package net.wg.gui.battle.views.prebattleTimer
                this.doUpdateSize(_loc1_);
             }
          }
+      }
+      
+      public function as_togglePreBattleHighlightsVisibility(param1:Boolean) : void
+      {
+         this.togglePreBattleHighlightsVisibility(param1);
       }
       
       public function as_hideAll(param1:Boolean) : void
@@ -190,7 +216,7 @@ package net.wg.gui.battle.views.prebattleTimer
       public function hideBackground() : void
       {
          this._isBackgroundHided = true;
-         this.background.visible = false;
+         this.background.visible = this.isBackgroundVisible;
       }
       
       public function updateStage(param1:Number, param2:Number) : void
@@ -203,7 +229,16 @@ package net.wg.gui.battle.views.prebattleTimer
       {
          var _loc2_:Boolean = param1 == SMALL_STATE;
          this.timer.scaleX = this.timer.scaleY = !!_loc2_ ? Number(TIMER_SMALL_SCALE) : Number(TIMER_LARGE_SCALE);
-         this.timer.y = !!_loc2_ ? Number(TIMER_SMALL_Y) : Number(TIMER_LARGE_Y);
+         if(this._isPBHVisible)
+         {
+            this.timer.y = !!_loc2_ ? Number(TIMER_SMALL_Y_PBH) : Number(TIMER_LARGE_Y_PBH);
+            this.message.y = !!_loc2_ ? Number(MESSAGE_SMALL_Y_PBH) : Number(MESSAGE_LARGE_Y_PBH);
+         }
+         else
+         {
+            this.timer.y = !!_loc2_ ? Number(TIMER_SMALL_Y) : Number(TIMER_LARGE_Y);
+            this.message.y = !!_loc2_ ? Number(MESSAGE_SMALL_Y) : Number(MESSAGE_LARGE_Y);
+         }
       }
       
       protected function doResetHideAnim() : void
@@ -216,7 +251,7 @@ package net.wg.gui.battle.views.prebattleTimer
          this.win.visible = param1;
          this.timer.visible = param1;
          this.message.visible = param1;
-         this.background.visible = !!this._isBackgroundHided ? Boolean(false) : Boolean(param1);
+         this.background.visible = this.isBackgroundVisible;
          if(!param1)
          {
             dispatchEvent(new PrebattleTimerEvent(PrebattleTimerEvent.START_HIDING,false));
@@ -274,6 +309,25 @@ package net.wg.gui.battle.views.prebattleTimer
             return SMALL_STATE;
          }
          return LARGE_STATE;
+      }
+      
+      protected function togglePreBattleHighlightsVisibility(param1:Boolean) : void
+      {
+         if(this._isPBHVisible != param1)
+         {
+            this._isPBHVisible = param1;
+            invalidate(INVALID_PBH_VISIBILITY | INVALID_COMPONENT_VISIBILITY);
+         }
+      }
+      
+      protected function get isPBHVisible() : Boolean
+      {
+         return this._isPBHVisible;
+      }
+      
+      protected function get isBackgroundVisible() : Boolean
+      {
+         return this._componentVisibility && !this._isBackgroundHided && !this._isPBHVisible;
       }
       
       private function onHideCompleted() : void

@@ -129,7 +129,7 @@ package net.wg.gui.lobby.rankedBattles19.view.rewards
             }
             invalidateSize();
          }
-         if(isInvalid(InvalidationType.SIZE,INV_VIEW_PADDING))
+         if(isInvalidTypes(InvalidationType.SIZE,INV_VIEW_PADDING))
          {
             this._containerGlobalLeftShift = Boolean(viewPadding) ? Number(viewPadding.left >> 1) : Number(Values.ZERO);
             this.divisionSelector.x = (_width - this.divisionSelector.width >> 1) - this._containerGlobalLeftShift;

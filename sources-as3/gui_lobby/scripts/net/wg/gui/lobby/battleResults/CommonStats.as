@@ -296,7 +296,7 @@ package net.wg.gui.lobby.battleResults
       override protected function draw() : void
       {
          super.draw();
-         if(this._data != null && isInvalid(InvalidationType.DATA,InvalidationType.SIZE))
+         if(this._data != null && isInvalidTypes(InvalidationType.DATA,InvalidationType.SIZE))
          {
             this.tankSlot.validateNow();
             this.efficiencyList.validateNow();

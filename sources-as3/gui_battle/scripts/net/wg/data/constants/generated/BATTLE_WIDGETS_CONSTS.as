@@ -39,15 +39,27 @@ package net.wg.data.constants.generated
       
       public static const WHEELED_DASH:String = "WheeledDashWidget";
       
+      public static const AUXILIARY_ROCKET_LAUNCHER:String = "auxiliaryRocketLauncherWidget";
+      
+      public static const SHELL_PARAMS_SWITCHER:String = "shellParamsSwitcherWidget";
+      
+      public static const AUTORELOADER_SURGE:String = "autoreloaderSurgeWidget";
+      
+      public static const BUSTLE_FEED:String = "bustleFeed";
+      
+      public static const SIGHT_POINTER_WIDGET:String = "SightPointerWidget";
+      
       public static const DUMMY:String = "dummy";
       
-      public static const MECHANICS_WIDGETS_RIGHT:Array = [ROCKET_ACCELERATOR,RECHARGEABLE_NITRO,CONCENTRATION,POWER,CHARGE_SHOT,SUPPORT_WEAPON,PILLBOX_SIEGE,STANCE_DANCE_TURBO,TARGET_DESIGNATOR_WIDGET,STAGED_JET_BOOSTERS,WHEELED_DASH];
+      public static const SHELL_CALIBRATION:String = "shellCalibrationWidget";
+      
+      public static const MECHANICS_WIDGETS_RIGHT:Array = [ROCKET_ACCELERATOR,RECHARGEABLE_NITRO,CONCENTRATION,POWER,CHARGE_SHOT,SUPPORT_WEAPON,PILLBOX_SIEGE,STANCE_DANCE_TURBO,TARGET_DESIGNATOR_WIDGET,STAGED_JET_BOOSTERS,SIGHT_POINTER_WIDGET,WHEELED_DASH,AUXILIARY_ROCKET_LAUNCHER,SHELL_PARAMS_SWITCHER,BUSTLE_FEED];
       
       public static const MECHANICS_WIDGETS_LEFT:Array = [STANCE_DANCE_FIGHT];
       
-      public static const INFO_WIDGETS:Array = [STATIONARY_RELOAD];
+      public static const INFO_WIDGETS:Array = [STATIONARY_RELOAD,SHELL_CALIBRATION];
       
-      public static const CENTRAL_WIDGETS:Array = [CHARGEABLE_BURST,TEMPERATURE_GUN_OVERHEAT,TEMPERATURE_GUN_HEAT_ZONES,LOW_CHARGE_SHOT,PROPELLANT_GUN];
+      public static const CENTRAL_WIDGETS:Array = [CHARGEABLE_BURST,TEMPERATURE_GUN_OVERHEAT,TEMPERATURE_GUN_HEAT_ZONES,LOW_CHARGE_SHOT,PROPELLANT_GUN,AUTORELOADER_SURGE];
        
       
       public function BATTLE_WIDGETS_CONSTS()

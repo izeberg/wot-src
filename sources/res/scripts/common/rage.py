@@ -51,8 +51,7 @@ class RageSettings(object):
         if item in ('pointsForFlagPickup', 'pointsForFlagCapture', 'pointsForOneResource',
                     'deathPenalty'):
             return lambda isSolo: getattr(self.soloSettings, item) if isSolo else getattr(self.teamSettings, item)
-        else:
-            return super(RageSettings, self).__getattr__(item)
+        return super(RageSettings, self).__getattr__(item)
 
 
 g_cache = None

@@ -185,6 +185,10 @@ class CrosshairPanelContainerMeta(DAAPISimpleContainerMeta):
         if self._isDAAPIInited():
             return self.flashObject.as_updateDualGunMarkerState(markerState)
 
+    def as_setAuxiliaryRocketLauncherActiveS(self, value):
+        if self._isDAAPIInited():
+            return self.flashObject.as_setAuxiliaryRocketLauncherActive(value)
+
     def as_setTwinGunMarkerActiveS(self, value):
         if self._isDAAPIInited():
             return self.flashObject.as_setTwinGunMarkerActive(value)
@@ -213,9 +217,9 @@ class CrosshairPanelContainerMeta(DAAPISimpleContainerMeta):
         if self._isDAAPIInited():
             return self.flashObject.as_setShotFlyTimes(shotFlyTimes)
 
-    def as_setShellChangeTimeS(self, quickChangerIsActive, shellChangeTime):
+    def as_setShellChangeTimeS(self, quickChangerIsActive, intuitionCooldown):
         if self._isDAAPIInited():
-            return self.flashObject.as_setShellChangeTime(quickChangerIsActive, shellChangeTime)
+            return self.flashObject.as_setShellChangeTime(quickChangerIsActive, intuitionCooldown)
 
     def as_isFadedS(self, value):
         if self._isDAAPIInited():
@@ -280,3 +284,11 @@ class CrosshairPanelContainerMeta(DAAPISimpleContainerMeta):
     def as_setAlternateZoomPositionS(self, value):
         if self._isDAAPIInited():
             return self.flashObject.as_setAlternateZoomPosition(value)
+
+    def as_setShellCalibrationStateS(self, mask):
+        if self._isDAAPIInited():
+            return self.flashObject.as_setShellCalibrationState(mask)
+
+    def as_setAutoreloaderSurgeStateS(self, isActive):
+        if self._isDAAPIInited():
+            return self.flashObject.as_setAutoreloaderSurgeState(isActive)

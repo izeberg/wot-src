@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, typing, VOIP, CommandMapping
 from account_helpers.settings_core.settings_constants import SOUND
 from constants import IS_CHINA, ARENA_BONUS_TYPE

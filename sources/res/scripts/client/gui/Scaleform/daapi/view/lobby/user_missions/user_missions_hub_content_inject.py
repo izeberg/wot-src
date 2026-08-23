@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.daapi.view.meta.UserMissionsHubContentInjectMeta import UserMissionsHubContentInjectMeta
 from gui.Scaleform.framework.entities.inject_component_adaptor import InjectComponentAdaptor
 

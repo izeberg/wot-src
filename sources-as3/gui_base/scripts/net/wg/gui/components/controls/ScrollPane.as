@@ -97,7 +97,7 @@ package net.wg.gui.components.controls
             this.createScrollBar();
             invalidate(SCROLL_POSITION_INV);
          }
-         if(isInvalid(InvalidationType.SIZE,SCROLL_POSITION_INV))
+         if(isInvalidTypes(InvalidationType.SIZE,SCROLL_POSITION_INV))
          {
             this.drawScrollBar();
             this.drawMask();

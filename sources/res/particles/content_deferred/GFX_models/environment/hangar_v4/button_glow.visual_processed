@@ -21,6 +21,10 @@
 				<material>
 					<identifier>s_nd0</identifier>
 					<fx>shaders/custom/vector_animation_2.fx</fx>
+					<property>
+						g_enableEnvMultiplier
+						<Bool>true</Bool>
+					</property>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
 					<property>
@@ -53,7 +57,7 @@
 					</property>
 					<property>
 						lightMultipliers
-						<Vector4>1.500000 5.000000 1.000000 0.000000</Vector4>
+						<Vector4>12.195122 5.000000 1.000000 0.000000</Vector4>
 					</property>
 					<property>
 						rampFreshnelMap

@@ -1,9 +1,10 @@
+from __future__ import absolute_import
 import logging, CommandMapping
 from CurrentVehicle import g_currentVehicle
 from gui.Scaleform.daapi.view.common.battle_royale import br_helpers
 from gui.shared.gui_items.Vehicle import getTypeBigIconPath
 from battle_royale.gui.Scaleform.daapi.view.common.veh_modules_config_cmp import VehicleModulesConfiguratorCmp
-from battle_royale_sounds import BATTLE_ROYALE_VEHICLE_INFO_SOUND_SPACE
+from battle_royale.gui.Scaleform.daapi.view.lobby.battle_royale_sounds import BATTLE_ROYALE_VEHICLE_INFO_SOUND_SPACE
 from gui.Scaleform.daapi.view.meta.BattleRoyaleVehicleInfoMeta import BattleRoyaleVehicleInfoMeta
 from gui.impl import backport
 from gui.impl.gen import R

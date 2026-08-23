@@ -1,3 +1,4 @@
+from __future__ import absolute_import, division
 import math, BigWorld, Event, Math
 from constants import VISIBILITY
 from gui.shared.utils.scheduled_notifications import Notifiable, SimpleNotifier

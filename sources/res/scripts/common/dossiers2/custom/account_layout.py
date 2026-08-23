@@ -14,6 +14,7 @@ from dossiers2.custom.dependencies import EPIC_BATTLE_STATS_DEPENDENCIES
 from dossiers2.custom.dependencies import STEAM_ACHIEVEMENT_DEPENDENCIES
 from dossiers2.custom.dependencies import VEHICLE_ACHIEVEMENTS_DEPENDENCIES, VEHICLE_ACHIEVEMENTS_POP_UPS
 from dossiers2.custom.dependencies import CUSTOMIZATION_ACHIEVEMENTS_DEPENDENCIES, CUSTOMIZATION_ACHIEVEMENTS_POP_UPS
+from dossiers2.custom.dependencies import PLAYER_BADGES_DEPENDENCIES
 from dossiers2.custom.battle_statistics_layouts import *
 TOTAL_BLOCK_LAYOUT = [
  'creationTime', 'lastBattleTime', 'battleLifeTime', 'treesCut', 'mileage']
@@ -49,6 +50,7 @@ _comp7Season3BlockBuilder = StaticSizeBlockBuilder('comp7Season3', COMP7_BLOCK_L
 _comp7ArchiveGriffinBlockBuilder = StaticSizeBlockBuilder('comp7ArchiveGriffin', COMP7_BLOCK_LAYOUT, {}, [])
 _comp7ArchivePegasusBlockBuilder = StaticSizeBlockBuilder('comp7ArchivePegasus', COMP7_BLOCK_LAYOUT, {}, [])
 _comp7ArchiveManticoreBlockBuilder = StaticSizeBlockBuilder('comp7ArchiveManticore', COMP7_BLOCK_LAYOUT, {}, [])
+_comp7ArchiveDragonBlockBuilder = StaticSizeBlockBuilder('comp7ArchiveDragon', COMP7_BLOCK_LAYOUT, {}, [])
 _max15x15BlockBuilder = StaticSizeBlockBuilder('max15x15', MAX_15x15_AND_BEST_VEHICLE_BLOCK_LAYOUT, {}, [])
 _max7x7BlockBuilder = StaticSizeBlockBuilder('max7x7', MAX_AND_BEST_VEHICLE_BLOCK_LAYOUT, {}, [])
 _maxRated7x7BlockBuilder = StaticSizeBlockBuilder('maxRated7x7', MAX_AND_BEST_VEHICLE_BLOCK_LAYOUT, {}, [])
@@ -75,6 +77,7 @@ _maxComp7Season3BlockBuilder = StaticSizeBlockBuilder('maxComp7Season3', MAX_COM
 _maxComp7ArchiveGriffinBlockBuilder = StaticSizeBlockBuilder('maxComp7ArchiveGriffin', MAX_COMP7_BLOCK_LAYOUT, {}, [])
 _maxComp7ArchivePegasusBlockBuilder = StaticSizeBlockBuilder('maxComp7ArchivePegasus', MAX_COMP7_BLOCK_LAYOUT, {}, [])
 _maxComp7ArchiveManticoreBlockBuilder = StaticSizeBlockBuilder('maxComp7ArchiveManticore', MAX_COMP7_BLOCK_LAYOUT, {}, [])
+_maxComp7ArchiveDragonBlockBuilder = StaticSizeBlockBuilder('maxComp7ArchiveDragon', MAX_COMP7_BLOCK_LAYOUT, {}, [])
 
 class VEHICLE_STATS:
     FRAGS = 'vehTypeFrags'
@@ -101,6 +104,7 @@ class VEHICLE_STATS:
     COMP7_CUT_ARCHIVE_GRIFFIN = 'comp7CutArchiveGriffin'
     COMP7_CUT_ARCHIVE_PEGASUS = 'comp7CutArchivePegasus'
     COMP7_CUT_ARCHIVE_MANTICORE = 'comp7CutArchiveManticore'
+    COMP7_CUT_ARCHIVE_DRAGON = 'comp7CutArchiveDragon'
     PRESTIGE_SYSTEM = 'prestigeSystem'
     VEHICLE_ACHIEVEMENTS = 'vehicleAchievements'
     CUSTOMIZATION_ACHIEVEMENTS = 'customizationAchievements'
@@ -111,7 +115,7 @@ class VEHICLE_STATS:
      RATED_7x7_CUT, GLOBAL_MAP_COMMON_CUT, FALLOUT_CUT, MARK_OF_MASTERY_CUT, EPIC_BATTLE_CUT,
      COMP7_CUT_SEASON_1, COMP7_CUT_SEASON_2, COMP7_CUT_SEASON_3, COMP7_CUT_ARCHIVE_GRIFFIN, PRESTIGE_SYSTEM,
      VEHICLE_ACHIEVEMENTS, CUSTOMIZATION_ACHIEVEMENTS, COMP7_CUT_ARCHIVE_PEGASUS,
-     STAT_TRACKERS_VEH_STATS_CUT, COMP7_CUT_ARCHIVE_MANTICORE)
+     STAT_TRACKERS_VEH_STATS_CUT, COMP7_CUT_ARCHIVE_MANTICORE, COMP7_CUT_ARCHIVE_DRAGON)
 
 
 _vehTypeFragsBlockBuilder = DictBlockBuilder(VEHICLE_STATS.FRAGS, 'I', 'H', VEH_TYPE_FRAGS_DEPENDENCIES)
@@ -138,6 +142,7 @@ _comp7CutSeason3BlockBuilder = DictBlockBuilder(VEHICLE_STATS.COMP7_CUT_SEASON_3
 _comp7CutArchiveGriffinBlockBuilder = DictBlockBuilder(VEHICLE_STATS.COMP7_CUT_ARCHIVE_GRIFFIN, 'I', 'IIII', {})
 _comp7CutArchivePegasusBlockBuilder = DictBlockBuilder(VEHICLE_STATS.COMP7_CUT_ARCHIVE_PEGASUS, 'I', 'IIII', {})
 _comp7CutArchiveManticoreBlockBuilder = DictBlockBuilder(VEHICLE_STATS.COMP7_CUT_ARCHIVE_MANTICORE, 'I', 'IIII', {})
+_comp7CutArchiveDragonBlockBuilder = DictBlockBuilder(VEHICLE_STATS.COMP7_CUT_ARCHIVE_DRAGON, 'I', 'IIII', {})
 _statTrackersVehStatsCutBlockBuilder = DictBlockBuilder(VEHICLE_STATS.STAT_TRACKERS_VEH_STATS_CUT, 'I', 'I', {})
 _ACHIEVEMENTS15X15_BLOCK_LAYOUT = [
  'fragsBeast', 'sniperSeries', 'maxSniperSeries', 'invincibleSeries',
@@ -187,7 +192,9 @@ _ACHIEVEMENTS15X15_BLOCK_LAYOUT = [
  'wt2022HunterWins', 'wt2022BossWins', 'wt2022SpecBossDefeat',
  'wt2023HunterWins', 'wt2023BossWins', 'wt2023MaxPlasma',
  'wt2024HunterWins', 'wt2024BossWins', 'wt2024HunterWinsEpic', 'mapboxClimateExpert',
- 'readyForBattleAssault', 'readyForBattleSniper', 'readyForBattleSupport']
+ 'readyForBattleAssault', 'readyForBattleSniper', 'readyForBattleSupport',
+ 'readyForBattleFossaAssault', 'readyForBattleFossaSniper',
+ 'readyForBattleFossaSupport']
 _achievements15x15PopUps = [
  'warrior', 'invader', 'sniper', 'defender', 'steelwall', 'supporter',
  'scout', 'medalKay', 'medalCarius', 'medalKnispel', 'medalPoppel', 'medalAbrams',
@@ -235,7 +242,8 @@ _achievements15x15PopUps = [
  'wt2022HunterWins', 'wt2022BossWins', 'wt2022SpecBossDefeat',
  'wt2023HunterWins', 'wt2023BossWins', 'wt2023MaxPlasma',
  'wt2024HunterWins', 'wt2024BossWins', 'wt2024HunterWinsEpic', 'mapboxClimateExpert',
- 'readyForBattleAssault', 'readyForBattleSniper', 'readyForBattleSupport']
+ 'readyForBattleAssault', 'readyForBattleSniper', 'readyForBattleSupport',
+ 'readyForBattleFossaAssault', 'readyForBattleFossaSniper', 'readyForBattleFossaSupport']
 _achievements15x15BlockBuilder = StaticSizeBlockBuilder('achievements', _ACHIEVEMENTS15X15_BLOCK_LAYOUT, ACHIEVEMENT15X15_DEPENDENCIES, _achievements15x15PopUps)
 _STEAM_BLOCK_LAYOUT = [
  'steamBattleCredits', 'steamLittleSavingsMedal', 'steamMintedCoinMedal', 'steamKingMidasMedal',
@@ -387,9 +395,12 @@ _SINGLE_ACHIEVEMENTS_VALUES = [
  'ls2_0Medal', 'sccHero', 'wt2025progression', 'twoPointZeroMedal',
  'twoPointZeroCollectorMedal', 'hw2025Medal', 'NY26_AtmsphrLevel',
  'NY26_CelebChallenge', 'grinch_medal_2026', '15YearsOfService', 'LunarNY2026CN',
- 'BPReserveAchievement_1', 'BPReserveAchievement_2', 'BPReserveAchievement_3',
+ 'BattlePassCommonPr_21', 'BPReserveAchievement_2', 'BPReserveAchievement_3',
  'BPReserveAchievement_4', 'BPReserveAchievement_5', 'BPReserveAchievement_6',
- 'BPReserveAchievement_7', 'BPReserveAchievement_9']
+ 'BPReserveAchievement_7', 'BPReserveAchievement_9', 'wot16thAnniversary',
+ 'wt2026progression', 'comp7_6_1', 'comp7_6_yearly_iron',
+ 'comp7_6_yearly_bronze', 'comp7_6_yearly_silver', 'comp7_6_yearly_gold',
+ 'comp7_6_yearly_champion', 'comp7_6_yearly_legend']
 _singleAchievementsPopUps = [
  'titleSniper', 'invincible', 'diehard', 'handOfDeath',
  'armorPiercer', 'battleCitizen', 'WFC2014', 'tacticalBreakthrough', 'aimer',
@@ -467,9 +478,12 @@ _singleAchievementsPopUps = [
  'ls2_0Medal', 'sccHero', 'wt2025progression', 'twoPointZeroMedal',
  'twoPointZeroCollectorMedal', 'hw2025Medal', 'NY26_AtmsphrLevel',
  'NY26_CelebChallenge', 'grinch_medal_2026', '15YearsOfService', 'LunarNY2026CN',
- 'BPReserveAchievement_1', 'BPReserveAchievement_2', 'BPReserveAchievement_3',
+ 'BattlePassCommonPr_21', 'BPReserveAchievement_2', 'BPReserveAchievement_3',
  'BPReserveAchievement_4', 'BPReserveAchievement_5', 'BPReserveAchievement_6',
- 'BPReserveAchievement_7', 'BPReserveAchievement_9']
+ 'BPReserveAchievement_7', 'BPReserveAchievement_9', 'wot16thAnniversary',
+ 'wt2026progression', 'comp7_6_1', 'comp7_6_yearly_iron',
+ 'comp7_6_yearly_bronze', 'comp7_6_yearly_silver', 'comp7_6_yearly_gold',
+ 'comp7_6_yearly_champion', 'comp7_6_yearly_legend']
 _singleAchievementsBlockBuilder = BinarySetDossierBlockBuilder('singleAchievements', _SINGLE_ACHIEVEMENTS_VALUES, SINGLE_ACHIEVEMENTS_DEPENDENCIES, _singleAchievementsPopUps)
 FORT_ACHIEVEMENTS_BLOCK_LAYOUT = [
  'conqueror', 'fireAndSword', 'crusher', 'counterblow', 'kampfer', 'soldierOfFortune']
@@ -482,7 +496,7 @@ _clanAchievementsPopUps = ['medalRotmistrov']
 _clanAchievementsBlockBuilder = StaticSizeBlockBuilder('clanAchievements', CLAN_ACHIEVEMENTS_BLOCK_LAYOUT, {}, _clanAchievementsPopUps)
 RANKED_BADGES_BLOCK_LAYOUT = [
  '1', '2', '3', '4', '5', '6', '7', '8', '9']
-_playerBadgesBlockBuilder = DictBlockBuilder('playerBadges', 'I', 'I', {})
+_playerBadgesBlockBuilder = DictBlockBuilder('playerBadges', 'I', 'I', PLAYER_BADGES_DEPENDENCIES)
 _rankedSeasonsBlockBuilder = DictBlockBuilder('rankedSeasons', 'II', 'BHHHH', {})
 _rareAchievementsBlockBuilder = ListBlockBuilder('rareAchievements', 'I', {})
 UNIQUE_ACHIEVEMENT_VALUES = [
@@ -565,7 +579,8 @@ accountDossierLayout = (
  _commendationsBlockBuilder,
  _statTrackersVehStatsCutBlockBuilder,
  _comp7ArchiveManticoreBlockBuilder, _maxComp7ArchiveManticoreBlockBuilder,
- _comp7CutArchiveManticoreBlockBuilder)
+ _comp7CutArchiveManticoreBlockBuilder, _comp7ArchiveDragonBlockBuilder,
+ _maxComp7ArchiveDragonBlockBuilder, _comp7CutArchiveDragonBlockBuilder)
 ACCOUNT_DOSSIER_BLOCKS = {b.name:b for b in accountDossierLayout}
 ACCOUNT_DOSSIER_STATIC_BLOCKS = frozenset(b.name for b in accountDossierLayout if isinstance(b, StaticSizeBlockBuilder))
 ACCOUNT_DOSSIER_BINARY_SET_BLOCKS = [ b.name for b in accountDossierLayout if isinstance(b, BinarySetDossierBlockBuilder) ]

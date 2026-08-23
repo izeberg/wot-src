@@ -6,7 +6,7 @@ from messenger.m_constants import USER_TAG, GAME_ONLINE_STATUS
 from messenger.proto.bw.find_criteria import BWClanChannelFindCriteria
 from messenger.proto.entities import CurrentLobbyUserEntity, SharedUserEntity, ClanInfo
 from messenger.proto.events import g_messengerEvents
-from messenger.storage import storage_getter
+from messenger.storage import MessengerStorageDescriptor, ChannelsStorage, PlayerCtxStorage, UsersStorage
 
 class _INIT_STEPS(object):
     CLAN_INFO_RECEIVED = 1
@@ -15,20 +15,15 @@ class _INIT_STEPS(object):
 
 
 class ClanListener(object):
+    usersStorage = MessengerStorageDescriptor(UsersStorage)
+    channelsStorage = MessengerStorageDescriptor(ChannelsStorage)
+    playerCtx = MessengerStorageDescriptor(PlayerCtxStorage)
 
     def __init__(self):
         super(ClanListener, self).__init__()
         self.__initSteps = 0
         self.__clanChannel = None
         self.__channelCriteria = BWClanChannelFindCriteria()
-        return
-
-    @storage_getter('users')
-    def usersStorage(self):
-        return
-
-    @storage_getter('playerCtx')
-    def playerCtx(self):
         return
 
     def start(self):
@@ -48,7 +43,7 @@ class ClanListener(object):
         self.playerCtx.onClanInfoChanged -= self.__pc_onClanInfoChanged
 
     def __findClanChannel(self):
-        channel = storage_getter('channels')().getChannelByCriteria(self.__channelCriteria)
+        channel = self.channelsStorage.getChannelByCriteria(self.__channelCriteria)
         if channel is not None:
             self.__initClanChannel(channel)
         return

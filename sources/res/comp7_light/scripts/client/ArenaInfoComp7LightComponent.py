@@ -1,0 +1,5 @@
+from __future__ import absolute_import
+from ArenaInfoComp7BaseComponent import ArenaInfoComp7BaseComponent
+
+class ArenaInfoComp7LightComponent(ArenaInfoComp7BaseComponent):
+    pass

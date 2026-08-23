@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.impl.backport import BackportTooltipWindow, TooltipData
 from gui.impl.gen import R
 from gui.impl.gen.view_models.views.lobby.user_missions.hub.tabs.tab_id import TabId

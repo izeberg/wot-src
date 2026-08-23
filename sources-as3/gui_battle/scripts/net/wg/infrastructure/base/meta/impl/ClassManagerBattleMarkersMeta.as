@@ -34,6 +34,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.battle.views.vehicleMarkers.BRVehicleMarker;
    import net.wg.gui.battle.views.vehicleMarkers.BranderVehicle2dMarker;
    import net.wg.gui.battle.views.vehicleMarkers.Comp7VehicleMarker;
+   import net.wg.gui.battle.views.vehicleMarkers.Comp7VehicleStatusContainerMarker;
    import net.wg.gui.battle.views.vehicleMarkers.DamageLabel;
    import net.wg.gui.battle.views.vehicleMarkers.DamageLabelAnimatedScreen;
    import net.wg.gui.battle.views.vehicleMarkers.FlagContainer;
@@ -149,6 +150,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_BATTLE_VIEWS_VEHICLEMARKERS_BRVEHICLEMARKER:Class = BRVehicleMarker;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_VEHICLEMARKERS_COMP7VEHICLEMARKER:Class = Comp7VehicleMarker;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_VEHICLEMARKERS_COMP7VEHICLESTATUSCONTAINERMARKER:Class = Comp7VehicleStatusContainerMarker;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_VEHICLEMARKERS_DAMAGELABEL:Class = DamageLabel;
       

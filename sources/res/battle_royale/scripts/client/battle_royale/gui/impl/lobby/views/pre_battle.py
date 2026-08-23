@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from future.utils import viewvalues
 import BigWorld, ArenaType
 from BattleRoyaleTournament import MAX_PLAYERS_IN_SQUAD
 from battle_royale.gui.impl.gen.view_models.views.lobby.views.pre_battle_view_model import PreBattleViewModel
@@ -176,7 +178,7 @@ class PreBattleView(ViewImpl):
                 teams[teamID] = []
             teams[teamID].append(p)
 
-        for p in teams.itervalues():
+        for p in viewvalues(teams):
             p.sort(key=lambda x: (-x['role'], x['name']))
 
         return teams

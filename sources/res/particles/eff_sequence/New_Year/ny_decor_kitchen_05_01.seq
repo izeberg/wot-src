@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>2.501000</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<enabledInEditor>true</enabledInEditor>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>yellow_light_1</name>
+		<type>particle</type>
+		<enabledInEditor>true</enabledInEditor>
+		<resource>particles/Environment/hangar/new_year_cust_kitchen_light_yellow.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-3.525730 2.463911 1.822192</value>
+				<inTangent>-0.706045 0.000385 -1.258969</inTangent>
+				<outTangent>-0.706045 0.000385 -1.258969</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.376820</startTime>
+				<value>-3.791782 2.464056 1.347787</value>
+				<inTangent>-0.669183 -0.000031 -1.273790</inTangent>
+				<outTangent>-0.669183 -0.000031 -1.273790</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.690065</startTime>
+				<value>-3.989853 2.463916 0.944137</value>
+				<inTangent>0.002921 -0.002547 -1.287082</inTangent>
+				<outTangent>0.002921 -0.002547 -1.287082</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.938156</startTime>
+				<value>-3.831530 2.462763 0.625202</value>
+				<inTangent>0.679776 -0.000569 -1.267903</inTangent>
+				<outTangent>0.679776 -0.000569 -1.267903</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.264658</startTime>
+				<value>-3.595995 2.463909 0.216992</value>
+				<inTangent>0.701535 0.018792 -1.261062</inTangent>
+				<outTangent>0.701535 0.018792 -1.261062</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.533978</startTime>
+				<value>-3.412405 2.473086 -0.125548</value>
+				<inTangent>0.728347 0.038497 -1.239315</inTangent>
+				<outTangent>0.728347 0.038497 -1.239315</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.777949</startTime>
+				<value>-3.223324 2.483557 -0.419962</value>
+				<inTangent>1.102226 -0.006300 -0.658060</inTangent>
+				<outTangent>1.102226 -0.006300 -0.658060</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.122559</startTime>
+				<value>-2.730726 2.464425 -0.457649</value>
+				<inTangent>1.436359 -0.028446 -0.046800</inTangent>
+				<outTangent>1.436359 -0.028446 -0.046800</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.500000</startTime>
+				<value>-2.185972 2.463906 -0.451700</value>
+				<inTangent>1.443281 -0.001375 0.015761</inTangent>
+				<outTangent>1.443281 -0.001375 0.015761</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>yellow_light_2</name>
+		<type>particle</type>
+		<enabledInEditor>true</enabledInEditor>
+		<resource>particles/Environment/hangar/new_year_cust_kitchen_light_yellow.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-2.185970 2.463910 -0.451700</value>
+				<inTangent>1.647557 -0.036811 0.920923</inTangent>
+				<outTangent>1.647557 -0.036811 0.920923</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.304174</startTime>
+				<value>-1.684826 2.452713 -0.171579</value>
+				<inTangent>1.646235 -0.028345 0.923500</inTangent>
+				<outTangent>1.646235 -0.028345 0.923500</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.628212</startTime>
+				<value>-1.151812 2.446272 0.128505</value>
+				<inTangent>1.641196 0.019526 0.931831</inTangent>
+				<outTangent>1.641196 0.019526 0.931831</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.062059</startTime>
+				<value>-0.441397 2.471838 0.535273</value>
+				<inTangent>1.632746 0.036485 0.946566</inTangent>
+				<outTangent>1.632746 0.036485 0.946566</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.437187</startTime>
+				<value>0.169317 2.477105 0.893726</value>
+				<inTangent>1.631229 -0.020717 0.949312</inTangent>
+				<outTangent>1.631229 -0.020717 0.949312</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.807146</startTime>
+				<value>0.773994 2.456582 1.242625</value>
+				<inTangent>1.634961 -0.039829 0.942810</inTangent>
+				<outTangent>1.634961 -0.039829 0.942810</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.118788</startTime>
+				<value>1.283678 2.449045 1.536362</value>
+				<inTangent>1.632484 0.007373 0.947477</inTangent>
+				<outTangent>1.632484 0.007373 0.947477</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.499827</startTime>
+				<value>1.904577 2.463879 1.899267</value>
+				<inTangent>0.814745 0.019465 0.476205</inTangent>
+				<outTangent>0.814745 0.019465 0.476205</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.501000</startTime>
+				<value>1.904577 2.463879 1.899267</value>
+				<inTangent>-0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>yellow_light_3</name>
+		<type>particle</type>
+		<enabledInEditor>true</enabledInEditor>
+		<resource>particles/Environment/hangar/new_year_cust_kitchen_light_yellow.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.923698 2.472043 1.935971</value>
+				<inTangent>0.733678 -0.000028 1.277736</inTangent>
+				<outTangent>0.733678 -0.000028 1.277736</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.433050</startTime>
+				<value>2.241417 2.472031 2.489294</value>
+				<inTangent>0.688823 -0.005117 1.296162</inTangent>
+				<outTangent>0.688823 -0.005117 1.296162</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.728167</startTime>
+				<value>2.431463 2.469019 2.877251</value>
+				<inTangent>-0.063879 -0.035927 1.279269</inTangent>
+				<outTangent>-0.063879 -0.035927 1.279269</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.890721</startTime>
+				<value>2.306015 2.458998 3.079461</value>
+				<inTangent>-0.775473 -0.028007 1.247199</inTangent>
+				<outTangent>-0.775473 -0.028007 1.247199</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.171750</startTime>
+				<value>2.087032 2.460581 3.430873</value>
+				<inTangent>-0.749686 0.018689 1.267751</inTangent>
+				<outTangent>-0.749686 0.018689 1.267751</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.512373</startTime>
+				<value>1.841732 2.471394 3.868591</value>
+				<inTangent>-0.723468 0.017064 1.278591</inTangent>
+				<outTangent>-0.723468 0.017064 1.278591</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.765315</startTime>
+				<value>1.657898 2.471997 4.190366</value>
+				<inTangent>-1.095091 -0.010947 0.669845</inTangent>
+				<outTangent>-1.095091 -0.010947 0.669845</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.896633</startTime>
+				<value>1.465727 2.468809 4.199238</value>
+				<inTangent>-1.467284 -0.039046 0.063767</inTangent>
+				<outTangent>-1.467284 -0.039046 0.063767</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.075615</startTime>
+				<value>1.202414 2.459177 4.209972</value>
+				<inTangent>-1.471927 -0.010566 0.014754</inTangent>
+				<outTangent>-1.471927 -0.010566 0.014754</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.500000</startTime>
+				<value>0.577429 2.473047 4.197043</value>
+				<inTangent>-1.472684 0.032683 -0.030465</inTangent>
+				<outTangent>-1.472684 0.032683 -0.030465</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>yellow_light_4</name>
+		<type>particle</type>
+		<enabledInEditor>true</enabledInEditor>
+		<resource>particles/Environment/hangar/new_year_cust_kitchen_light_yellow.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.636436 2.463856 4.200734</value>
+				<inTangent>-1.690392 0.000020 -0.898613</inTangent>
+				<outTangent>-1.690392 0.000020 -0.898613</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.405329</startTime>
+				<value>-0.048729 2.463864 3.836500</value>
+				<inTangent>-1.674533 0.000026 -0.927234</inTangent>
+				<outTangent>-1.674533 0.000026 -0.927234</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.758911</startTime>
+				<value>-0.635206 2.463875 3.498527</value>
+				<inTangent>-1.652114 -0.010941 -0.966972</inTangent>
+				<outTangent>-1.652114 -0.010941 -0.966972</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.112504</startTime>
+				<value>-1.217062 2.456127 3.152682</value>
+				<inTangent>-1.647681 -0.000272 -0.974494</inTangent>
+				<outTangent>-1.647681 -0.000272 -0.974494</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.475558</startTime>
+				<value>-1.816031 2.463885 2.800193</value>
+				<inTangent>-1.657635 0.010666 -0.957471</inTangent>
+				<outTangent>-1.657635 0.010666 -0.957471</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.862357</startTime>
+				<value>-2.460232 2.463871 2.435038</value>
+				<inTangent>-1.653799 -0.000006 -0.964050</inTangent>
+				<outTangent>-1.653799 -0.000006 -0.964050</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.191834</startTime>
+				<value>-3.001276 2.463879 2.110814</value>
+				<inTangent>-1.643107 0.000036 -0.981746</inTangent>
+				<outTangent>-1.643107 0.000036 -0.981746</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.489064</startTime>
+				<value>-3.489946 2.463893 1.819697</value>
+				<inTangent>0.086226 -0.000206 -0.188760</inTangent>
+				<outTangent>0.086226 -0.000206 -0.188760</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.500000</startTime>
+				<value>-3.470079 2.463888 1.826280</value>
+				<inTangent>1.816533 -0.000458 0.601914</inTangent>
+				<outTangent>1.816533 -0.000458 0.601914</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>pie_steam</name>
+		<type>particle</type>
+		<enabledInEditor>true</enabledInEditor>
+		<resource>particles/Environment/hangar/h07_new_year_decor_smoke.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.393150 1.619956 2.071222</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotation</name>
+			<type>quaternion</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.258819 0.000000 0.965926</value>
+				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 30.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Light Object 1</name>
+		<type>light</type>
+		<enabledInEditor>true</enabledInEditor>
+		<lightType>spotlight</lightType>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-1.532568 2.411072 1.312602</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>outerRadius</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.400000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>innerRadius</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.400000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>multiplier</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>9.549296</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>color</name>
+			<type>vector4</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 0.678431 0.584314 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotation</name>
+			<type>quaternion</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.303376 0.433902 -0.157927 -0.833517</value>
+				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>40.000000 305.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>coneAngle</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>100.000000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Light Object 2</name>
+		<type>light</type>
+		<enabledInEditor>true</enabledInEditor>
+		<lightType>spotlight</lightType>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.350790 2.503364 2.164942</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>outerRadius</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.300000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>innerRadius</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.300000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>multiplier</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>6.366198</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>color</name>
+			<type>vector4</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 0.678431 0.584314 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotation</name>
+			<type>quaternion</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.109382 0.875426 -0.408218 0.234570</value>
+				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>50.000000 150.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>coneAngle</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>70.000000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>pie_warm</name>
+		<type>particle</type>
+		<enabledInEditor>true</enabledInEditor>
+		<resource>particles/Environment/hangar/h07_new_year_decor_warm.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-2.217281 1.603225 1.626857</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>chimney_smoke</name>
+		<type>particle</type>
+		<enabledInEditor>true</enabledInEditor>
+		<resource>particles/Environment/hangar/new_year_cust_kitchen_chimney_smoke.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-2.041094 3.180264 1.087562</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>chimney_smoke_2</name>
+		<type>particle</type>
+		<enabledInEditor>true</enabledInEditor>
+		<resource>particles/Environment/hangar/new_year_cust_kitchen_chimney_smoke.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-2.596508 3.180222 0.835555</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>teacup_steam_1</name>
+		<type>particle</type>
+		<enabledInEditor>true</enabledInEditor>
+		<resource>particles/Environment/hangar/new_year_cust_decor_table_steam_cup.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.981312 1.446476 1.794840</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>teacup_steam_2</name>
+		<type>particle</type>
+		<enabledInEditor>true</enabledInEditor>
+		<resource>particles/Environment/hangar/new_year_cust_decor_table_steam_cup.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-2.447676 1.222790 -0.569994</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>snow_roof_01</name>
+		<type>particle</type>
+		<enabledInEditor>true</enabledInEditor>
+		<resource>particles/Environment/hangar/new_year_cust_tent_snow_roof.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-2.090225 2.608733 -0.389963</value>
+				<inTangent>2.323551 0.000031 0.044831</inTangent>
+				<outTangent>1.543325 0.000012 0.905634</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.220137</startTime>
+				<value>-0.207157 2.608748 0.715035</value>
+				<inTangent>1.543325 0.000012 0.905634</inTangent>
+				<outTangent>1.551256 0.000024 0.891981</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.500000</startTime>
+				<value>1.778238 2.608779 1.856649</value>
+				<inTangent>1.551256 0.000024 0.891981</inTangent>
+				<outTangent>0.486788 -0.000011 0.780150</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>snow_roof_2_copied</name>
+		<type>particle</type>
+		<enabledInEditor>true</enabledInEditor>
+		<resource>particles/Environment/hangar/new_year_cust_tent_snow_roof.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.778238 2.608779 1.856649</value>
+				<inTangent>2.127172 0.000047 1.223168</inTangent>
+				<outTangent>0.521674 -0.000012 0.836060</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.057544</startTime>
+				<value>2.329931 2.608766 2.740819</value>
+				<inTangent>0.521674 -0.000012 0.836060</inTangent>
+				<outTangent>-0.480266 -0.000009 0.860514</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.500000</startTime>
+				<value>1.637169 2.608753 3.982073</value>
+				<inTangent>-0.480266 -0.000009 0.860514</inTangent>
+				<outTangent>-1.187593 -0.000023 2.127866</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

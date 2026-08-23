@@ -31,6 +31,9 @@ msgstr "ČKD AXL"
 msgid "CKD_AXL_CN"
 msgstr "ČKD AXL GW"
 
+msgid "CKD_AXL_P"
+msgstr "ČKD AXL-P"
+
 msgid "Chassis_Cz01_Skoda_T40"
 msgstr "Škoda T 40"
 
@@ -192,6 +195,9 @@ msgstr "DBV-152"
 
 msgid "Chassis_Cz43_Ogar"
 msgstr "Ogar"
+
+msgid "Chassis_Cz46_Vz_63P"
+msgstr "Vz. 63P"
 
 msgid "Cz01_Skoda_T40"
 msgstr "Škoda T 40"
@@ -1040,6 +1046,31 @@ msgstr "Ogar"
 msgid "Cz43_Ogar_short_special"
 msgstr "Газотурбинный двигатель, комфортное орудие"
 
+msgid "Cz46_Vz_63P"
+msgstr "Vz. 63P"
+
+msgid "Cz46_Vz_63P_descr"
+msgstr ""
+"Несмотря на то, что в 1960-х годах фокус мирового танкостроения сместился на"
+" проектирование ОБТ, разработка тяжёлых танков продолжалась. Один из "
+"примеров — чехословацкий Vz. 63 Palcát («Булава»). Проект предусматривал "
+"ультимативную защиту и высокую огневую мощь, а также подключаемый механизм "
+"заряжания пушки, требовавший усиленной вентиляции башни для вывода пороховых"
+" газов. Сложность внедрения (большие затраты ресурсов, длительная "
+"разработка, серьёзная перестройка производственной базы) и закат эпохи "
+"тяжёлых машин привели к закрытию проекта."
+
+msgid "Cz46_Vz_63P_long_special"
+msgstr ""
+"Vz. 63P — венец чехословацкого тяжёлого танкостроения. Танк вооружён мощным "
+"орудием с магазином заряжания на два снаряда и отличается хорошими "
+"показателями брони и мобильности. Кроме того, его снаряды оснащены "
+"улучшенными взрывателями, что позволяет играть агрессивно и оказывать "
+"постоянное давление на противника."
+
+msgid "Cz46_Vz_63P_short"
+msgstr "Vz. 63P"
+
 msgid "DG_TK_61"
 msgstr "DG-TK-61"
 
@@ -1111,6 +1142,9 @@ msgstr "Radiostanice R-113S"
 
 msgid "Radiostanice_RM_31T"
 msgstr "Radiostanice RM-31T"
+
+msgid "Radiostanice_RM_31TP"
+msgstr "Radiostanice RM-31TP"
 
 msgid "Radiostanice_RM_31T_56G"
 msgstr "Radiostanice RM-31T-130M"
@@ -1357,6 +1391,9 @@ msgstr "DBV-152"
 
 msgid "Turret_1_Cz43_Ogar"
 msgstr "Ogar"
+
+msgid "Turret_1_Cz46_Vz_63P"
+msgstr "Vz. 63P"
 
 msgid "Turret_2_Cz02_TVP_T50"
 msgstr "Škoda T 50 (1950)"
@@ -1688,6 +1725,9 @@ msgstr "Nárazový vz. 51 (A)"
 msgid "_130mm_Narazovy_vz_55"
 msgstr "Nárazový vz. 51"
 
+msgid "_130mm_Narazovy_vz_63_NZ"
+msgstr "Nárazový vz. 63 NZ"
+
 msgid "_130mm_Prurazny_59-56G"
 msgstr "Průrazný vz. 130M"
 
@@ -1724,6 +1764,12 @@ msgstr "Průrazný vz. 55 (s jádrem)"
 msgid "_130mm_Prurazny_vz_56"
 msgstr "Průrazný vz. 56"
 
+msgid "_130mm_Prurazny_vz_63_NZ"
+msgstr "Průrazný vz. 63 NZ"
+
+msgid "_130mm_Prurazny_vz_63_s_jadrem_NZ"
+msgstr "Průrazný vz. 63 (s jádrem) NZ"
+
 msgid "_130mm_Skoda_R_14"
 msgstr "130 mm Škoda R 14"
 
@@ -1738,6 +1784,9 @@ msgstr "130 mm vz. 54 2 GW"
 
 msgid "_130mm_vz_57"
 msgstr "130 mm vz.57"
+
+msgid "_130mm_vz_63_s_ANZ"
+msgstr "130 mm vz. 63 s ANZ"
 
 msgid "_152_mm_D_20SM"
 msgstr "152 mm D-20SM"

@@ -1267,9 +1267,7 @@ msgid "kpi/bonus/negative/vehicleStrength"
 msgstr "от запаса прочности машины"
 
 msgid "kpi/bonus/negative/vehicleTurretOrCuttingRotationSpeed"
-msgstr ""
-"от скорости вращения башни или горизонтального наведения орудия для машин с "
-"неподвижной рубкой"
+msgstr "от скорости горизонтального наведения"
 
 msgid "kpi/bonus/negative/vehicleTurretRotationSpeed"
 msgstr "от скорости вращения башни"
@@ -1537,7 +1535,7 @@ msgid "kpi/bonus/positive/vehicleGunShotDispersion"
 msgstr "к разбросу при движении и поворотах"
 
 msgid "kpi/bonus/positive/vehicleGunShotDispersionAfterShot"
-msgstr "к размеру круга сведения после выстрела"
+msgstr "от размера круга сведения после выстрела"
 
 msgid "kpi/bonus/positive/vehicleGunShotDispersionChassisMovement"
 msgstr "к разбросу при движении ходовой"
@@ -1606,9 +1604,7 @@ msgid "kpi/bonus/positive/vehicleStrength"
 msgstr "к запасу прочности машины"
 
 msgid "kpi/bonus/positive/vehicleTurretOrCuttingRotationSpeed"
-msgstr ""
-"к скорости поворота башни или горизонтального наведения орудия для машин с "
-"неподвижной рубкой"
+msgstr "к скорости горизонтального наведения"
 
 msgid "kpi/bonus/positive/vehicleTurretRotationSpeed"
 msgstr "к скорости вращения башни"
@@ -2412,6 +2408,60 @@ msgstr " и "
 
 msgid "tooltips/separator/other"
 msgstr ", "
+
+msgid "tooltips/shellMechanics/bustleFeed/description"
+msgstr ""
+"Режим внешней подачи боеприпасов (ВПБ) позволяет использовать снаряды с "
+"повышенным уроном."
+
+msgid "tooltips/shellMechanics/bustleFeed/off"
+msgstr "Базовые значения в стандартном режиме."
+
+msgid "tooltips/shellMechanics/bustleFeed/on"
+msgstr "Изменённые значения в режиме внешней подачи боеприпасов."
+
+msgid "tooltips/shellMechanics/lowChargeShot/basic/description"
+msgstr "Базовые параметры для выстрелов с полным зарядом"
+
+msgid "tooltips/shellMechanics/lowChargeShot/modified/description"
+msgstr "Параметры для выстрелов с одним зарядом"
+
+msgid "tooltips/shellMechanics/lowChargeShot/off"
+msgstr "Базовые параметры для выстрелов с полным зарядом"
+
+msgid "tooltips/shellMechanics/lowChargeShot/offLabel"
+msgstr "Базовые"
+
+msgid "tooltips/shellMechanics/lowChargeShot/on"
+msgstr "Параметры для выстрелов с одним зарядом"
+
+msgid "tooltips/shellMechanics/shellParamsSwitcher/angled_armor/description"
+msgstr ""
+"В режиме калибровки снаряды этого типа эффективны при попадании в броню под "
+"большим углом."
+
+msgid "tooltips/shellMechanics/shellParamsSwitcher/description"
+msgstr ""
+"Орудие оснащено устройствами, которые позволяют изменять некоторые параметры"
+" снаряда перед выстрелом."
+
+msgid "tooltips/shellMechanics/shellParamsSwitcher/noscreen/description"
+msgstr ""
+"В стандартном режиме снаряды этого типа эффективны против брони без экранов."
+
+msgid "tooltips/shellMechanics/shellParamsSwitcher/off"
+msgstr "Стандартный режим"
+
+msgid "tooltips/shellMechanics/shellParamsSwitcher/on"
+msgstr "Режим калибровки"
+
+msgid "tooltips/shellMechanics/shellParamsSwitcher/screen/description"
+msgstr "В режиме калибровки снаряды этого типа могут пробивать экраны."
+
+msgid "tooltips/shellMechanics/shellParamsSwitcher/straight_armor/description"
+msgstr ""
+"В стандартном режиме снаряды этого типа эффективны против вертикальной "
+"брони."
 
 msgid "tooltips/specializationDesc"
 msgstr ""

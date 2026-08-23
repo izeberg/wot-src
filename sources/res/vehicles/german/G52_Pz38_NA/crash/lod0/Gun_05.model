@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<tank>true</tank>
-	<parent>vehicles/german/G52_Pz38_NA/crash/lod1/Gun_05</parent>
-	<extent>32</extent>
 	<materialNames/>
 	<visibilityBox>
-		<min>
-			-0.095552 -0.17749 -0.0228258
-			<!--BW_String-->
-		</min>
-		<max>
-			0.0998368 0.152504 2.23775
-			<!--BW_String-->
-		</max>
+		<min>-0.095576 -0.177215 -0.473284</min>
+		<max>0.099813 0.158675 1.640249</max>
 	</visibilityBox>
 	<nodelessVisual>vehicles/german/G52_Pz38_NA/crash/lod0/Gun_05</nodelessVisual>
+	<parent>vehicles/german/G52_Pz38_NA/crash/lod1/Gun_05</parent>
+	<extent>32</extent>
 </root>

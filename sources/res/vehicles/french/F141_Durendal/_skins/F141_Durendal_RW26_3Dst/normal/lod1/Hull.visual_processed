@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>nodes_01</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>HP_Fire_1</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 -0.012779 -2.160692</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Fire_2</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 -0.162093 2.239148</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_LFront</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.781012 0.624516</row1>
+					<row2>0.000000 -0.624516 0.781012</row2>
+					<row3>-1.344816 0.056983 2.988970</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_LRear</identifier>
+				<transform>
+					<row0>-0.970600 0.194099 0.142342</row0>
+					<row1>0.046580 0.731659 -0.680077</row1>
+					<row2>-0.236148 -0.653452 -0.719190</row2>
+					<row3>-1.344816 -0.020230 -3.067739</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_RFront</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.781012 0.624516</row1>
+					<row2>0.000000 -0.624516 0.781012</row2>
+					<row3>1.344816 0.056989 2.988970</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_RRear</identifier>
+				<transform>
+					<row0>-0.970600 0.194099 0.142342</row0>
+					<row1>0.046580 0.731659 -0.680077</row1>
+					<row2>-0.236148 -0.653452 -0.719190</row2>
+					<row3>1.344816 -0.022911 -3.068864</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Track_Exhaus_1</identifier>
+				<transform>
+					<row0>-0.515730 -0.007403 0.856719</row0>
+					<row1>-0.006837 0.999966 0.004525</row1>
+					<row2>-0.856724 -0.003523 -0.515763</row2>
+					<row3>-1.535873 0.412919 -2.645104</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Track_Exhaus_2</identifier>
+				<transform>
+					<row0>-0.459551 -0.001272 -0.888151</row0>
+					<row1>-0.007778 0.999966 0.002592</row1>
+					<row2>0.888117 0.008100 -0.459545</row2>
+					<row3>1.531295 0.412919 -2.645104</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_turretJoint</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.574920 0.312540</row3>
+				</transform>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_hull_01</identifier>
+					<property>
+						g_detailPowerGloss
+						<Float>
+							0.35
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_maskBias
+						<Float>
+							0.18
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
+					</property>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/french/F141_Durendal/_skins/F141_Durendal_RW26_3Dst/Durendal_RW26_3Dst_hull_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/french/F141_Durendal/_skins/F141_Durendal_RW26_3Dst/Durendal_RW26_3Dst_hull_01_ANM.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/french/F141_Durendal/_skins/F141_Durendal_RW26_3Dst/Durendal_RW26_3Dst_hull_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/french/F141_Durendal/_skins/F141_Durendal_RW26_3Dst/Durendal_RW26_3Dst_hull_01_AO.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>7.013699 7.013699 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						alphaReference
+						<Int>128</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_defaultDetail
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_detailParams
+						<matrix>
+							<element>41107456</element>
+							<element>1073755184</element>
+							<element>763379712</element>
+							<element>1040204360</element>
+							<element>436154368</element>
+							<element>1013317632</element>
+							<element>357380096</element>
+							<element>1040187392</element>
+							<element>969687040</element>
+							<element>1006632960</element>
+							<element>332148736</element>
+							<element>1033517462</element>
+							<element>125837312</element>
+							<element>1020067840</element>
+							<element>332148736</element>
+							<element>1033502720</element>
+						</matrix>
+					</property>
+					<property>
+						g_dirtLevel
+						<Float>0.330000</Float>
+					</property>
+					<property>
+						g_glossMax
+						<Float>0.653103</Float>
+					</property>
+					<property>
+						g_glossMin
+						<Float>0.301379</Float>
+					</property>
+				</material>
+				<groupOrigin>0.002069 -0.031494 -0.132582</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>tank_camo</identifier>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<property>
+						alphaReference
+						<Int>128</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/french/F141_Durendal/_skins/F141_Durendal_RW26_3Dst/Durendal_RW26_3Dst_net_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_enableTransmission
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/french/F141_Durendal/_skins/F141_Durendal_RW26_3Dst/Durendal_RW26_3Dst_net_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/french/F141_Durendal/_skins/F141_Durendal_RW26_3Dst/Durendal_RW26_3Dst_net_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.017689 0.177246 2.133585</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				2
+				<material>
+					<identifier>tank_vegetation</identifier>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<property>
+						alphaReference
+						<Int>128</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/french/F141_Durendal/_skins/F141_Durendal_RW26_3Dst/Durendal_RW26_3Dst_vegetation_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_enableTransmission
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/french/F141_Durendal/_skins/F141_Durendal_RW26_3Dst/Durendal_RW26_3Dst_vegetation_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/french/F141_Durendal/_skins/F141_Durendal_RW26_3Dst/Durendal_RW26_3Dst_vegetation_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.024024 0.298040 2.228940</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				3
+				<material>
+					<identifier>tank_equipment</identifier>
+					<property>
+						diffuseMap
+						<Texture>vehicles/french/F141_Durendal/_skins/F141_Durendal_RW26_3Dst/Durendal_RW26_3Dst_equipment_01_AM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/french/F141_Durendal/_skins/F141_Durendal_RW26_3Dst/Durendal_RW26_3Dst_equipment_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/french/F141_Durendal/_skins/F141_Durendal_RW26_3Dst/Durendal_RW26_3Dst_equipment_01_ANM.dds</Texture>
+					</property>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/french/F141_Durendal/_skins/F141_Durendal_RW26_3Dst/Durendal_RW26_3Dst_equipment_01_AO.dds</Texture>
+					</property>
+					<property>
+						g_defaultDetail
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_detailParams
+						<matrix>
+							<element>41107456</element>
+							<element>1073755184</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>360726528</element>
+							<element>1040187392</element>
+							<element>928604160</element>
+							<element>1107296256</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>127475712</element>
+							<element>1013317632</element>
+							<element>327163904</element>
+							<element>1033502720</element>
+						</matrix>
+					</property>
+					<property>
+						g_dirtLevel
+						<Float>0.360000</Float>
+					</property>
+					<property>
+						g_glossMax
+						<Float>0.653103</Float>
+					</property>
+					<property>
+						g_tilingRatio
+						<Vector2>1.000000 0.500000</Vector2>
+					</property>
+				</material>
+				<groupOrigin>-0.386840 -0.014651 -0.228323</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-1.760244 -0.675736 -3.496528</min>
+		<max>1.738255 0.646142 3.091406</max>
+	</boundingBox>
+	<geometrySize>796574</geometrySize>
+</root>

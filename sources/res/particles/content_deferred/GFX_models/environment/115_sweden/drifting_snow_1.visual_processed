@@ -22,12 +22,16 @@
 				<material>
 					<identifier>lambert1</identifier>
 					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
+					<property>
+						g_enableEnvMultiplier
+						<Bool>true</Bool>
+					</property>
 					<collisionFlags>255</collisionFlags>
 					<materialKind>0</materialKind>
 					<property>
 						lightMultipliers
 						<Vector4>
-							1 0.75 1 0.000000
+							1.851852 0.75 1 0.000000
 							<!--BW_String-->
 						</Vector4>
 					</property>

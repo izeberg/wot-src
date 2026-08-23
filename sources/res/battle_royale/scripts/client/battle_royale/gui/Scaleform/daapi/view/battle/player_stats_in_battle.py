@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, BigWorld
 from constants import ARENA_BONUS_TYPE
 from gui.Scaleform.daapi.view.meta.BattleRoyalePlayerStatsMeta import BattleRoyalePlayerStatsMeta

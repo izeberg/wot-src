@@ -37,8 +37,8 @@
 						<transform>
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
-							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>0.000150 -0.002528 -1.475644</row3>
+							<row2>-0.000000 0.000000 1.000000</row2>
+							<row3>0.000150 -0.002528 -1.367765</row3>
 						</transform>
 					</node>
 					<node>
@@ -47,7 +47,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 -1.000000</row2>
-							<row3>0.000000 0.000000 -3.000000</row3>
+							<row3>-0.000000 0.000000 -3.000000</row3>
 						</transform>
 					</node>
 				</node>
@@ -68,8 +68,8 @@
 		<node>Gun_BlendBone</node>
 		<node>G_BlendBone</node>
 		<geometry>
-			<vertices>gun_02Shape3.vertices</vertices>
-			<primitive>gun_02Shape3.indices</primitive>
+			<vertices>gun_02_Shape.vertices</vertices>
+			<primitive>gun_02_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -77,10 +77,6 @@
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
-					</property>
 					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/german/G08_Pz38t/Pz38t_guns_AO.dds</Texture>
@@ -101,19 +97,15 @@
 						diffuseMap
 						<Texture>vehicles/german/G08_Pz38t/Pz38t_guns_AM.dds</Texture>
 					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
 				</material>
-				<groupOrigin>-0.000049 0.024448 -0.766611</groupOrigin>
+				<groupOrigin>-0.000049 0.024448 -0.762703</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
 		<min>-0.089167 -0.152695 -0.106840</min>
-		<max>0.089070 0.201591 1.640061</max>
+		<max>0.089070 0.201591 1.632245</max>
 	</boundingBox>
 	<geometrySize>16156</geometrySize>
 </root>

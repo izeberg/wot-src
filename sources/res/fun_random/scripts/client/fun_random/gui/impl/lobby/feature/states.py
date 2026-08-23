@@ -1,7 +1,7 @@
 from __future__ import absolute_import
 import typing
-from frameworks.state_machine import StateFlags
-from frameworks.state_machine.transitions import TransitionType
+from frameworks_common.state_machine import StateFlags
+from frameworks_common.state_machine.transitions import TransitionType
 from fun_random_common.fun_constants import FunSubModeImpl
 from fun_random.gui.feature.util.fun_mixins import FunSubModesWatcher, FunAssetPacksMixin
 from fun_random.gui.impl.lobby.feature.fun_random_tier_list_view import FunRandomTierListView

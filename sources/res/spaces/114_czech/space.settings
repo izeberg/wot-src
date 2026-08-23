@@ -2,8 +2,8 @@
 <root>
 	<flora>spaces/114_czech/flora.xml</flora>
 	<bounds>
-		<minX>-6</minX>
-		<maxX>7</maxX>
+		<minX>-7</minX>
+		<maxX>6</maxX>
 		<minY>-7</minY>
 		<maxY>6</maxY>
 	</bounds>
@@ -151,4 +151,7 @@
 			<bitIndex>2</bitIndex>
 		</type>
 	</spaceVisibilityFlags>
+	<lightsCutOffDistance>500.000000</lightsCutOffDistance>
+	<isSimplifiedSHGridQualityOverridden>false</isSimplifiedSHGridQualityOverridden>
+	<overrideSimplifiedSHGridQuality>2</overrideSimplifiedSHGridQuality>
 </root>

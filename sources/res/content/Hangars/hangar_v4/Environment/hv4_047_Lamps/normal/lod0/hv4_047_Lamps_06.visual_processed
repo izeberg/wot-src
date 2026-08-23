@@ -46,6 +46,10 @@
 				<material>
 					<identifier>s_nd1</identifier>
 					<fx>shaders/std_effects/glow.fx</fx>
+					<property>
+						g_enableEnvMultiplier
+						<Bool>true</Bool>
+					</property>
 					<materialKind>112</materialKind>
 					<collisionFlags>255</collisionFlags>
 					<property>
@@ -54,7 +58,7 @@
 					</property>
 					<property>
 						selfIllumination
-						<Float>16.000000</Float>
+						<Float>33.299999</Float>
 					</property>
 					<property>
 						g_tintColor

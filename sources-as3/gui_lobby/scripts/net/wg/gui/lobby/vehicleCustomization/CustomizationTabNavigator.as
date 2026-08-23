@@ -46,8 +46,11 @@ package net.wg.gui.lobby.vehicleCustomization
       
       private var _tween:Tween = null;
       
+      private var _tmpPoint:Point;
+      
       public function CustomizationTabNavigator()
       {
+         this._tmpPoint = new Point();
          super();
       }
       
@@ -85,17 +88,8 @@ package net.wg.gui.lobby.vehicleCustomization
          this.modalLine = null;
          this.selector = null;
          this.overlay = null;
+         this._tmpPoint = null;
          super.onDispose();
-      }
-      
-      public function clearTween() : void
-      {
-         if(this._tween != null)
-         {
-            this._tween.paused = true;
-            this._tween.dispose();
-            this._tween = null;
-         }
       }
       
       override protected function draw() : void
@@ -112,6 +106,16 @@ package net.wg.gui.lobby.vehicleCustomization
          }
       }
       
+      public function clearTween() : void
+      {
+         if(this._tween != null)
+         {
+            this._tween.paused = true;
+            this._tween.dispose();
+            this._tween = null;
+         }
+      }
+      
       public function getFocusChain() : Vector.<InteractiveObject>
       {
          var _loc1_:Vector.<InteractiveObject> = new Vector.<InteractiveObject>();
@@ -121,7 +125,13 @@ package net.wg.gui.lobby.vehicleCustomization
       
       public function setData(param1:CustomizationTabNavigatorVO) : void
       {
+         this._selectedId = param1.selectedTab;
          this.tabBar.setData(param1.tabsDP,param1.selectedTab);
+      }
+      
+      public function setNotificationCounters(param1:CustomizationBottomPanelNotificationVO) : void
+      {
+         this.tabBar.setNotificationCounters(param1);
       }
       
       public function switchState(param1:Boolean) : void
@@ -157,27 +167,6 @@ package net.wg.gui.lobby.vehicleCustomization
          }
       }
       
-      public function setNotificationCounters(param1:CustomizationBottomPanelNotificationVO) : void
-      {
-         this.tabBar.setNotificationCounters(param1);
-      }
-      
-      private function onTabBarChangeHandler(param1:Event) : void
-      {
-         var _loc2_:Button = this.tabBar.getButtonAt(this.tabBar.selectedIndex);
-         if(!_loc2_)
-         {
-            return;
-         }
-         if(this._selectedId == _loc2_.data.id)
-         {
-            return;
-         }
-         this._selectedId = _loc2_.data.id;
-         this.updateSelector(_loc2_);
-         dispatchEvent(new CustomizationTabEvent(CustomizationTabEvent.TAB_CHANGED,this._selectedId,true));
-      }
-      
       private function updateSelector(param1:Button) : void
       {
          if(!param1)
@@ -185,7 +174,9 @@ package net.wg.gui.lobby.vehicleCustomization
             return;
          }
          param1.validateNow();
-         var _loc2_:Point = param1.parent.localToGlobal(new Point(param1.x,param1.y));
+         this._tmpPoint.x = param1.x;
+         this._tmpPoint.y = param1.y;
+         var _loc2_:Point = param1.parent.localToGlobal(this._tmpPoint);
          _loc2_ = globalToLocal(_loc2_);
          this.selector.x = _loc2_.x + (param1.width >> 1);
       }
@@ -218,6 +209,22 @@ package net.wg.gui.lobby.vehicleCustomization
       {
          this._isMinResolution = param1;
          this.tabBar.toggleResolutions(param1);
+      }
+      
+      private function onTabBarChangeHandler(param1:Event) : void
+      {
+         var _loc2_:Button = this.tabBar.getButtonAt(this.tabBar.selectedIndex);
+         if(!_loc2_)
+         {
+            return;
+         }
+         if(this._selectedId == _loc2_.data.id)
+         {
+            return;
+         }
+         this._selectedId = _loc2_.data.id;
+         this.updateSelector(_loc2_);
+         dispatchEvent(new CustomizationTabEvent(CustomizationTabEvent.TAB_CHANGED,this._selectedId,true));
       }
       
       private function onTabBarResizeHandler(param1:Event) : void

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from battle_royale.gui.battle_control.controllers.notification_manager import RespawnMessage, MessageType
 from gui.Scaleform.genConsts.BATTLE_ROYAL_CONSTS import BATTLE_ROYAL_CONSTS
 from gui.impl import backport

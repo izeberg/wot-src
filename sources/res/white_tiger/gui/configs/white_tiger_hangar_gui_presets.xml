@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<presets>
+		<preset>
+			<name>white_tiger</name>
+			<basePreset>default</basePreset>
+			<components>
+				<component>
+					<name>alertMessage</name>
+					<visible>True</visible>
+				</component>
+				<component>
+					<name>carousel</name>
+					<visible>True</visible>
+					<type>whiteTigerTankCarousel</type>
+					<layout>TankCarouselUI</layout>
+				</component>
+			</components>
+		</preset>
+	</presets>
+	<queueTypePresets>
+		<item>
+			<queueType>110</queueType>
+			<presetName>white_tiger</presetName>
+		</item>
+	</queueTypePresets>
+</root>

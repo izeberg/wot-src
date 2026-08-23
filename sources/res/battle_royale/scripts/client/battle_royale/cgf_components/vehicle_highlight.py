@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld, CGF, GenericComponents
 from aih_constants import CTRL_MODES, CTRL_MODE_NAME
 from constants import IS_CLIENT

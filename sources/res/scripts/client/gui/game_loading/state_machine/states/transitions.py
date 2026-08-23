@@ -1,10 +1,10 @@
 import typing
-from frameworks.state_machine.transitions import StringEventTransition
+from frameworks_common.state_machine.transitions import StringEventTransition
 from gui.game_loading import loggers
 from gui.game_loading.resources.cdn.models import LocalSlideModel
 from gui.game_loading.state_machine.const import GameLoadingStatesEvents
 if typing.TYPE_CHECKING:
-    from frameworks.state_machine.events import StringEvent
+    from frameworks_common.state_machine.events import StringEvent
     from gui.game_loading.state_machine.states.base import BaseState
     from gui.game_loading.state_machine.states.login_screen import LoginScreenState
     from gui.game_loading.state_machine.states.player_loading import PlayerLoadingState

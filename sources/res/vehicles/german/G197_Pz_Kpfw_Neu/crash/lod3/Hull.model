@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G197_Pz_Kpfw_Neu/crash/lod3/Hull</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/german/G197_Pz_Kpfw_Neu/crash/lod4/Hull</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.778215 -0.929256 -4.232957</min>
+		<max>1.748422 0.567248 3.640005</max>
+	</visibilityBox>
+</root>

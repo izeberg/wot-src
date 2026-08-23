@@ -24,8 +24,6 @@ package net.wg.gui.battle.windows
    public class IngameMenu extends IngameMenuMeta implements IIngameMenuMeta
    {
       
-      public static var NEW_COUNTERS_CONTAINER_ID:String = "inGameMenuCountersContainer";
-      
       private static const TYPE_UNAVAILABLE:String = "unavailable";
       
       private static const TYPE_CLUSTER:String = "clusterCCU";
@@ -39,6 +37,8 @@ package net.wg.gui.battle.windows
       private static const INVALIDATE_BUTTONS_LABELS:String = "buttonsLabels";
       
       private static const INVALIDATE_MENU_BUTTONS_POSITIONS:String = "buttonsPositions";
+      
+      private static const NEW_COUNTERS_CONTAINER_ID:String = "inGameMenuCountersContainer";
       
       private static const PADDING:int = 5;
       
@@ -193,7 +193,7 @@ package net.wg.gui.battle.windows
                this.hideStats();
             }
          }
-         if(isInvalid(INVALIDATE_SERVER_INFO,INVALIDATE_MENU_BUTTONS_POSITIONS))
+         if(isInvalidTypes(INVALIDATE_SERVER_INFO,INVALIDATE_MENU_BUTTONS_POSITIONS))
          {
             _loc1_ = 0;
             if(this._serverState == INTERFACE_STATES.HIDE_SERVER_STATS)
@@ -246,6 +246,12 @@ package net.wg.gui.battle.windows
          }
       }
       
+      override protected function setMenuButtons(param1:Vector.<String>) : void
+      {
+         this._buttonsOrder = param1;
+         invalidate(INVALIDATE_MENU_BUTTONS_POSITIONS);
+      }
+      
       public function as_setMenuButtonsLabels(param1:String, param2:String, param3:String, param4:String) : void
       {
          this._quitLabel = param4;
@@ -270,10 +276,9 @@ package net.wg.gui.battle.windows
          invalidate(INVALIDATE_SERVER_STATS);
       }
       
-      override protected function setMenuButtons(param1:Vector.<String>) : void
+      public function as_setVisibility(param1:Boolean) : void
       {
-         this._buttonsOrder = param1;
-         invalidate(INVALIDATE_MENU_BUTTONS_POSITIONS);
+         visible = param1;
       }
       
       private function rePositionElements(param1:int = 0) : void
@@ -353,11 +358,6 @@ package net.wg.gui.battle.windows
       private function onCancelBtnPressHandler(param1:ButtonEvent) : void
       {
          cancelClickS();
-      }
-      
-      public function as_setVisibility(param1:Boolean) : void
-      {
-         visible = param1;
       }
    }
 }

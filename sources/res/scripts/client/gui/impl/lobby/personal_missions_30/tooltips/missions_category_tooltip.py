@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from frameworks.wulf import ViewSettings
 from gui.impl.gen import R
@@ -23,9 +24,9 @@ class MissionsCategoryTooltip(ViewImpl):
         return super(MissionsCategoryTooltip, self).getViewModel()
 
     def _onLoading(self):
-        minLevel, maxLevel = self.__eventsCache.getPersonalMissions().getVehicleLevelRestrictions(self.__operation.getID())
+        _, maxLevel = self.__eventsCache.getPersonalMissions().getVehicleLevelRestrictions(self.__operation.getID())
         with self.viewModel.transaction() as (vm):
             vm.setCategory(self.__category)
             vm.setOperationName(self.__operation.getShortUserName())
-            vm.setMinLevel(minLevel)
+            vm.setMinLevel(self.__operation.getRequiredVehicleLevel())
             vm.setMaxLevel(maxLevel)

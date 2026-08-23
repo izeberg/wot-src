@@ -75,6 +75,13 @@ msgstr ""
 "перемещения по полю боя. При активации реактивные ускорители уменьшают "
 "манёвренность и не могут быть отключены вручную."
 
+msgid "abilities/common/description/shellParamsSwitcher"
+msgstr ""
+"Орудие этой машины оснащено специальными устройствами, которые позволяют "
+"изменять некоторые параметры снаряда перед выстрелом. В зависимости от "
+"выбранного режима характеристики боеприпаса изменяются, что позволяет быстро"
+" адаптироваться к различным боевым ситуациям."
+
 msgid "abilities/common/description/siegeMode"
 msgstr ""
 "При активации этот специальный режим улучшает и/или изменяет определённые "
@@ -137,6 +144,9 @@ msgstr "Автоматическая пушка с системой контро
 msgid "abilities/common/name/rocketAcceleration"
 msgstr "Реактивные ускорители"
 
+msgid "abilities/common/name/shellParamsSwitcher"
+msgstr "Система калибровки снаряда"
+
 msgid "abilities/common/name/siegeMode"
 msgstr "Осадный режим"
 
@@ -157,10 +167,29 @@ msgstr ""
 "Оставаясь неподвижным или двигаясь медленно, вы накапливаете уровни точности, повышающие точность следующего выстрела.\n"
 "На максимальном уровне достигаются хорошие характеристики орудия с уменьшенным разбросом при движении или повороте корпуса/башни."
 
+msgid "abilities/special/description/autoreloaderSurge"
+msgstr ""
+"Механизм мгновенно уменьшает время заряжания снаряда до определённого "
+"значения. Каждое применение использует один заряд за снаряд, которые "
+"постепенно восполняются. Скорость восполнения увеличивается при полном "
+"магазине. В начале боя доступно определённое количество зарядов."
+
+msgid "abilities/special/description/auxiliaryRocketLauncher"
+msgstr ""
+"Машина оснащена ракетной пусковой установкой в маске орудия. Активируйте "
+"способность, чтобы переключиться на прицел вспомогательного оружия и "
+"запустите неуправляемую ОФ ракету кнопкой выстрела."
+
 msgid "abilities/special/description/battleFury"
 msgstr ""
 "При каждом попадании по противнику вы получаете уровень эффективности перезарядки, временно ускоряющий перезарядку вашего орудия.\n"
 "При уничтожении машины противника вы получаете дополнительные уровни эффективности перезарядки."
+
+msgid "abilities/special/description/bustleFeed"
+msgstr ""
+"Модуль внешней подачи боеприпасов позволяет выстрелить единичным снарядом "
+"повышенной мощности, который наносит увеличенный урон. Активация модуля "
+"снижает мобильность и скорострельность."
 
 msgid "abilities/special/description/chargeShot"
 msgstr ""
@@ -250,6 +279,26 @@ msgstr ""
 "время, чтобы остыть перед повторным использованием. В противном случае они "
 "перегреются и временно отключатся."
 
+msgid "abilities/special/description/shellCalibration"
+msgstr ""
+"При попадании по обнаруженному противнику взрыватель следующего снаряда "
+"подстраивается под результат. Если удалось пробить броню, урон следующего "
+"боеприпаса увеличивается. В противном случае повышается его бронепробитие."
+
+msgid "abilities/special/description/shellParamsSwitcher"
+msgstr ""
+"Орудие этой машины оснащено специальными устройствами, которые позволяют "
+"изменять некоторые параметры снаряда перед выстрелом. В зависимости от "
+"выбранного режима характеристики боеприпаса изменяются, что позволяет быстро"
+" адаптироваться к различным боевым ситуациям."
+
+msgid "abilities/special/description/sightPointer"
+msgstr ""
+"При активации устройство сканирует сектор перед вашей машиной, обнаруживая "
+"скрытые цели. Если оно раскрывает необнаруженного противника, ваша машина "
+"также немедленно становится обнаруженной. Вы можете вручную остановить "
+"сканирование после небольшой задержки."
+
 msgid "abilities/special/description/stagedJetBoosters"
 msgstr ""
 "Твердотопливные ускорители улучшают разгон, мобильность и манёвренность на "
@@ -300,8 +349,17 @@ msgstr ""
 msgid "abilities/special/name/accuracyStacks"
 msgstr "Аналоговый баллистический вычислитель"
 
+msgid "abilities/special/name/autoreloaderSurge"
+msgstr "Механизм ускоренного заряжания"
+
+msgid "abilities/special/name/auxiliaryRocketLauncher"
+msgstr "Спаренная ракетная установка"
+
 msgid "abilities/special/name/battleFury"
 msgstr "Полуавтоматическая боеукладка"
+
+msgid "abilities/special/name/bustleFeed"
+msgstr "Режим внешней подачи боеприпасов"
 
 msgid "abilities/special/name/chargeShot"
 msgstr "Термобаллистическая перегрузка"
@@ -342,6 +400,15 @@ msgstr "Индукционный дожигатель заряда"
 msgid "abilities/special/name/rechargeableNitro"
 msgstr "Жидкотопливный ускоритель"
 
+msgid "abilities/special/name/shellCalibration"
+msgstr "Регулируемый взрыватель"
+
+msgid "abilities/special/name/shellParamsSwitcher"
+msgstr "Система калибровки снаряда"
+
+msgid "abilities/special/name/sightPointer"
+msgstr "ИК-система поиска и слежения (ИК-СПС)"
+
 msgid "abilities/special/name/stagedJetBoosters"
 msgstr "Последовательные ракетные ускорители"
 
@@ -368,10 +435,21 @@ msgstr ""
 "Увеличивает точность следующего выстрела с хорошей стабилизацией при полной "
 "калибровке."
 
+msgid "abilities/special/shortDescription/autoreloaderSurge"
+msgstr "Мгновенно уменьшает время перезарядки до определённого значения."
+
+msgid "abilities/special/shortDescription/auxiliaryRocketLauncher"
+msgstr "Запускает неуправляемую ОФ ракету из спаренной установки."
+
 msgid "abilities/special/shortDescription/battleFury"
 msgstr ""
 "Каждое попадание по машине противника на некоторое время ускоряет "
 "перезарядку."
+
+msgid "abilities/special/shortDescription/bustleFeed"
+msgstr ""
+"Стреляет снарядами с высоким уроном, жертвуя мобильностью и "
+"скорострельностью."
 
 msgid "abilities/special/shortDescription/chargeShot"
 msgstr ""
@@ -433,6 +511,21 @@ msgstr ""
 "Ускорители, которые можно активировать в любой момент для резкого прироста "
 "скорости."
 
+msgid "abilities/special/shortDescription/shellCalibration"
+msgstr ""
+"Попадание в обнаруженного противника увеличивает урон или бронепробиваемость"
+" следующего снаряда."
+
+msgid "abilities/special/shortDescription/shellParamsSwitcher"
+msgstr ""
+"Орудие оснащено устройствами, которые позволяют изменять некоторые параметры"
+" снаряда перед выстрелом."
+
+msgid "abilities/special/shortDescription/sightPointer"
+msgstr ""
+"Увеличивает дальность обзора и обнаруживает движущуюся и замаскированную "
+"технику в узком секторе."
+
 msgid "abilities/special/shortDescription/stagedJetBoosters"
 msgstr ""
 "Твердотопливные ускорители улучшают разгон, мобильность и манёвренность."
@@ -476,12 +569,24 @@ msgstr ""
 " хорошую стабилизацию орудия с уменьшенным разбросом при движении и "
 "поворотах корпуса/башни. Эффект сбрасывается после выстрела."
 
+msgid "characteristics/abilities/special/description/auxiliaryRocketLauncher"
+msgstr ""
+"Машина оснащена ракетной пусковой установкой в маске орудия. Активируйте "
+"способность, чтобы переключиться на прицел вспомогательного оружия и "
+"запустите неуправляемую ОФ ракету кнопкой выстрела."
+
 msgid "characteristics/abilities/special/description/battleFury"
 msgstr ""
 "При каждом попадании по видимому противнику вы получаете уровень "
 "эффективности перезарядки, временно ускоряющий перезарядку вашего орудия. "
 "При уничтожении машины противника вы получаете дополнительные уровни "
 "эффективности перезарядки."
+
+msgid "characteristics/abilities/special/description/bustleFeed"
+msgstr ""
+"Модуль внешней подачи боеприпасов позволяет выстрелить единичным снарядом "
+"повышенной мощности, который наносит увеличенный урон. Активация модуля "
+"снижает мобильность и скорострельность."
 
 msgid "characteristics/abilities/special/description/chargeShot"
 msgstr ""
@@ -580,6 +685,27 @@ msgstr ""
 "При критическом уровне нагрева ускорители временно отключаются — планируйте "
 "свои действия, чтобы не оказаться застигнутым врасплох."
 
+msgid "characteristics/abilities/special/description/shellCalibration"
+msgstr ""
+"При попадании по обнаруженному противнику взрыватель следующего снаряда "
+"подстраивается под результат. Если удалось пробить броню, урон следующего "
+"боеприпаса увеличивается. В противном случае повышается его бронепробитие."
+
+msgid "characteristics/abilities/special/description/shellParamsSwitcher"
+msgstr ""
+"Орудие оснащено устройствами, которые позволяют изменять некоторые параметры"
+" снаряда перед выстрелом. В снаряжении указано, какие характеристики "
+"боеприпаса изменятся при переключением режима огня."
+
+msgid "characteristics/abilities/special/description/sightPointer"
+msgstr ""
+"Улучшенное оптическое устройство, которое увеличивает дальность обзора и "
+"упрощает обнаружение движущихся и замаскированных целей. При активации "
+"устройство сканирует сектор перед вашей машиной, обнаруживая скрытые цели. "
+"Если оно раскрывает необнаруженного противника, ваша машина также немедленно"
+" становится обнаруженной. Вы можете вручную остановить сканирование после "
+"небольшой задержки."
+
 msgid "characteristics/abilities/special/description/stagedJetBoosters"
 msgstr ""
 "Твердотопливные ускорители улучшают разгон, мобильность и манёвренность на "
@@ -635,6 +761,18 @@ msgstr ""
 "Все указанные значения являются максимально возможными для машины. "
 "Оборудование, инструкции и снаряжение могут изменять их, но такие значения "
 "здесь не отображаются."
+
+msgid "characteristics/shellParamsSwitcher/ARMOR_PIERCING"
+msgstr "калибруемый ББ снаряд"
+
+msgid "characteristics/shellParamsSwitcher/ARMOR_PIERCING_CR"
+msgstr "калибруемый подкалиберный снаряд"
+
+msgid "characteristics/shellParamsSwitcher/HIGH_EXPLOSIVE"
+msgstr "калибруемый ОФ снаряд"
+
+msgid "characteristics/shellParamsSwitcher/HOLLOW_CHARGE"
+msgstr "калибруемый кумулятивный снаряд"
 
 msgid "characteristics/templates/upTo"
 msgstr "До %(value)%s"

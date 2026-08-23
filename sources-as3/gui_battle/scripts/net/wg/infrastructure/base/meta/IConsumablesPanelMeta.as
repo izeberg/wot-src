@@ -30,6 +30,8 @@ package net.wg.infrastructure.base.meta
       
       function as_setCurrentShell(param1:int) : void;
       
+      function as_suppressNextShellBlink(param1:Boolean) : void;
+      
       function as_addEquipmentSlot(param1:int, param2:Number, param3:Number, param4:int, param5:Number, param6:Number, param7:String, param8:String, param9:int) : void;
       
       function as_showEquipmentSlots(param1:Boolean) : void;
@@ -57,6 +59,8 @@ package net.wg.infrastructure.base.meta
       function as_setPanelSettings(param1:int) : void;
       
       function as_setSPGShotResult(param1:int, param2:int) : void;
+      
+      function as_setShellMode(param1:int, param2:String, param3:Boolean) : void;
       
       function as_addRoleSkillSlot(param1:int, param2:Number, param3:Number, param4:int, param5:Number, param6:Number, param7:String, param8:String, param9:int) : void;
       

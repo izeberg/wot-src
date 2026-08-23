@@ -1,5 +1,5 @@
 from __future__ import absolute_import
-from gui.shared.system_factory import collectBattleControllerRepo, collectSharedControllerRepo
+from gui.shared.system_factory import collectBattleControllerRepo, collectSharedControllerRepo, collectDynamicBattleControllerRepo
 from gui.battle_control.controllers.repositories import BattleSessionSetup
 from gui.battle_control.controllers.repositories import SharedControllersLocator
 from gui.battle_control.controllers.repositories import DynamicControllersLocator
@@ -19,5 +19,7 @@ def createShared(setup):
 def createDynamic(setup):
     repository, inited = collectBattleControllerRepo(setup.arenaVisitor.gui.guiType, setup)
     if not inited:
-        repository = ClassicControllersRepository.create(setup)
+        repository, isDynamicInited = collectDynamicBattleControllerRepo(setup)
+        if not isDynamicInited:
+            repository = ClassicControllersRepository.create(setup)
     return DynamicControllersLocator(repository=repository)

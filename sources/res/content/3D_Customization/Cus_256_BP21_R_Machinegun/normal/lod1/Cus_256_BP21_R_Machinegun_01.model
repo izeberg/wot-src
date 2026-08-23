@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>content/3D_Customization/Cus_256_BP21_R_Machinegun/normal/lod1/Cus_256_BP21_R_Machinegun_01</nodefullVisual>
+	<parent>content/3D_Customization/Cus_256_BP21_R_Machinegun/normal/lod2/Cus_256_BP21_R_Machinegun_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.559579 0.002605 -0.859210</min>
+		<max>0.062826 0.473388 0.917893</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

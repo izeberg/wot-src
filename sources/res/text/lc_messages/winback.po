@@ -10,51 +10,6 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "dailyQuestsIntroView/buttons/close"
-msgstr "ЗАКРЫТЬ"
-
-msgid "dailyQuestsIntroView/buttons/confirm"
-msgstr "Так точно!"
-
-msgid "dailyQuestsIntroView/info/mode/description"
-msgstr ""
-"Разминка поможет вам вспомнить основы игры. Бои проходят против машин под "
-"управлением искусственного интеллекта, а результаты не учитываются в "
-"статистике. Разминку можно завершить в любой момент и перейти к Случайным "
-"боям."
-
-msgid "dailyQuestsIntroView/info/mode/title"
-msgstr "Разминка"
-
-msgid "dailyQuestsIntroView/info/quests/description"
-msgstr ""
-"Выполняйте задачи, проходите этапы прогрессии «Снова в строй» и получайте "
-"игровые ценности. Каждая выполненная стандартная, премиум или бонусная "
-"задача приближает вас к награде. Задачи можно выполнять в Разминке и "
-"Случайных боях."
-
-msgid "dailyQuestsIntroView/info/quests/descriptionBP"
-msgstr ""
-"Выполняйте задачи, проходите этапы прогрессии «Снова в строй» и получайте "
-"ценные награды. Во время действия Боевого пропуска к наградам будут "
-"добавлены очки Боевого пропуска. Задачи можно выполнять в Разминке и "
-"Случайных боях."
-
-msgid "dailyQuestsIntroView/info/quests/title"
-msgstr "Снова в строй"
-
-msgid "dailyQuestsIntroView/info/rewards/description"
-msgstr ""
-"В награду вы можете получить премиум машины VIII уровня в аренду, "
-"исследуемые машины VI уровня, а также скидки на исследование и покупку "
-"техники. За завершение прогрессии вы получите главную награду."
-
-msgid "dailyQuestsIntroView/info/rewards/title"
-msgstr "Награды"
-
-msgid "dailyQuestsIntroView/title"
-msgstr "СНОВА В СТРОЙ"
-
 msgid "mainRewardTooltip/description"
 msgstr "Завершив прогрессию «Снова в строй», вы получите:"
 
@@ -62,7 +17,7 @@ msgid "mainRewardTooltip/title"
 msgstr "Главная награда"
 
 msgid "mainRewardTooltip/vehicleRewardLabel"
-msgstr "Скидка на исследование и покупку машины %(level)s уровня"
+msgstr "Скидка на исследование и покупку машины {{level}} уровня"
 
 msgid "modeInfoTooltip/description"
 msgstr ""
@@ -83,27 +38,67 @@ msgstr "Разминка"
 
 msgid "selectableRewardTooltip/basic/description"
 msgstr ""
-"Для выбора доступна любая исследуемая техника %(level)s уровня. Машина идёт "
+"Для выбора доступна любая исследуемая техника {{level}} уровня. Машина идёт "
 "с исследованными модулями, экипажем и слотом в Ангаре."
 
 msgid "selectableRewardTooltip/basic/title"
-msgstr "Машина %(level)s уровня"
+msgstr "Машина {{level}} уровня"
 
 msgid "selectableRewardTooltip/discount/description"
 msgstr ""
-"Скидка %(researchDiscount)s на исследование и %(purchaseDiscount)s на "
-"покупку машины %(level)s уровня. Для выбора доступна любая исследуемая "
+"Скидка {{researchDiscount}} на исследование и {{purchaseDiscount}} на "
+"покупку машины {{level}} уровня. Для выбора доступна любая исследуемая "
 "техника."
 
 msgid "selectableRewardTooltip/discount/footer"
 msgstr ""
-"Скидка на {whiteSpanish_Open}исследование{whiteSpanish_Close} суммируется со"
-" скидкой от фрагментов чертежей машины. Скидка на "
-"{whiteSpanish_Open}покупку{whiteSpanish_Close} применяется наибольшая из "
-"доступных."
+"Скидка на {{@ style (color $color)}}исследование{{/}} суммируется со скидкой"
+" от фрагментов чертежей машины. Для {{@ style (color $color)}}покупки{{/}} "
+"применяется наибольшая скидка из доступных."
 
 msgid "selectableRewardTooltip/discount/title"
-msgstr "Скидка на машину %(level)s уровня"
+msgstr "Скидка на машину {{level}} уровня"
+
+msgid "umgIntroView/buttons/confirm"
+msgstr "Так точно!"
+
+msgid "umgIntroView/info/mode/description"
+msgstr ""
+"«Разминка» поможет вам вспомнить основы игры. Бои проходят против машин под "
+"управлением искусственного интеллекта, а результаты не идут в статистику. Из"
+" «Разминки» можно выйти в любой момент и перейти к Случайным боям."
+
+msgid "umgIntroView/info/mode/title"
+msgstr "Разминка"
+
+msgid "umgIntroView/info/quests/description/battlePass"
+msgstr ""
+"Выполняйте задачи, проходите этапы прогрессии «Снова в строй» и получайте "
+"ценные награды. Во время действия Боевого пропуска к наградам будут "
+"добавлены очки Боевого пропуска. Задачи можно выполнять в «Разминке» и "
+"Случайных боях."
+
+msgid "umgIntroView/info/quests/description/default"
+msgstr ""
+"Выполняйте задачи, проходите этапы прогрессии «Снова в строй» и получайте "
+"игровые ценности. Каждая выполненная стандартная, премиум или бонусная "
+"задача приближает вас к награде. Задачи можно выполнять в «Разминке» и "
+"Случайных боях."
+
+msgid "umgIntroView/info/quests/title"
+msgstr "Снова в строй"
+
+msgid "umgIntroView/info/rewards/description"
+msgstr ""
+"В награду вы можете получить премиум машины VIII уровня в аренду, "
+"исследуемые машины VI уровня, а также скидки на исследование и покупку "
+"техники. За завершение прогрессии вы получите главную награду."
+
+msgid "umgIntroView/info/rewards/title"
+msgstr "Награды"
+
+msgid "umgIntroView/title"
+msgstr "СНОВА В СТРОЙ"
 
 msgid "vehicleDiscountRewardTooltip/description"
 msgstr ""
@@ -146,7 +141,7 @@ msgid "winbackLeaveModeDialogView/title"
 msgstr "Завершить Разминку?"
 
 msgid "winbackPopover/battlesCount"
-msgstr "Осталось боёв: %(battlesCount)s"
+msgstr "Осталось боёв: {{battlesCount}}"
 
 msgid "winbackPopover/description"
 msgstr ""
@@ -182,20 +177,15 @@ msgstr "Также получено:"
 
 msgid "winbackRewardView/selectableReward/discount"
 msgstr ""
-"Скидка %(expDiscount)s на исследование и %(priceDiscount)s на покупку машины"
-" %(level)s уровня"
-
-msgid "winbackRewardView/selectableReward/expDiscount"
-msgstr "{white_Open}%(expDiscount)s%{white_Close}"
+"Скидка {{@ style (bold) (color $color1)}}{{expDiscount}}%{{/}} на "
+"исследование и {{@ style (bold) (color $color2)}}{{priceDiscount}}%{{/}} на "
+"покупку машины {{level}} уровня"
 
 msgid "winbackRewardView/selectableReward/gift"
-msgstr "Машина %(level)s уровня"
-
-msgid "winbackRewardView/selectableReward/priceDiscount"
-msgstr "{cream_Open}%(priceDiscount)s%{cream_Close}"
+msgstr "Машина {{level}} уровня"
 
 msgid "winbackRewardView/selectableReward/reserveDiscount"
-msgstr "Скидка на машину %(level)s уровня"
+msgstr "Скидка на машину {{level}} уровня"
 
 msgid "winbackRewardView/subtitle/regularProgressionCompleted"
 msgstr "За выполнение цепочки ежедневных задач"
@@ -220,26 +210,21 @@ msgstr "ПРОГРЕССИЯ ЗАВЕРШЕНА"
 
 msgid "winbackRewardView/vehicleReward/discount"
 msgstr ""
-"Скидка %(expDiscount)s на исследование\n"
-"и %(priceDiscount)s на покупку"
-
-msgid "winbackRewardView/vehicleReward/expDiscount"
-msgstr "{white_Open}%(expDiscount)s%{white_Close}"
+"Скидка {{@ style (bold) (color $color1)}}{{expDiscount}}%{{/}} на "
+"исследование и {{@ style (bold) (color $color2)}}{{priceDiscount}}%{{/}} на "
+"покупку"
 
 msgid "winbackRewardView/vehicleReward/inHangar"
 msgstr "В Ангаре"
 
-msgid "winbackRewardView/vehicleReward/priceDiscount"
-msgstr "{cream_Open}%(priceDiscount)s%{cream_Close}"
-
 msgid "winbackRewardView/vehicleReward/rent"
-msgstr "Дней аренды: %(days)s"
+msgstr "Дней аренды: {{days}}"
 
 msgid "winbackRewardView/vehicleReward/reserveDiscount"
 msgstr "Скидка на исследование и покупку"
 
 msgid "winbackSelectableRewardView/bluePrintReward/value"
-msgstr "x%(value)s"
+msgstr "x{{value}}"
 
 msgid "winbackSelectableRewardView/buttons/cancel"
 msgstr "Выбрать позже"
@@ -254,13 +239,13 @@ msgid "winbackSelectableRewardView/buttons/reset"
 msgstr "Сбросить фильтр"
 
 msgid "winbackSelectableRewardView/category/rewardsAvailabilityCounter"
-msgstr "%(rewardsSelected)s/%(rewardsAvailable)s"
+msgstr "{{rewardsSelected}}/{{rewardsAvailable}}"
 
 msgid "winbackSelectableRewardView/category/title"
 msgstr "Скидка на машину"
 
 msgid "winbackSelectableRewardView/category/titleDiscount"
-msgstr "Машина %(vehicleLevel)s уровня"
+msgstr "Машина {{vehicleLevel}} уровня"
 
 msgid "winbackSelectableRewardView/error/button"
 msgstr "Так точно!"
@@ -275,14 +260,14 @@ msgstr "Не удалось открыть окно выбора награды"
 
 msgid "winbackSelectableRewardView/filter/allTheVehiclesHaveBeenExplored"
 msgstr ""
-"Вы исследовали все машины %(vehicleLevel)s уровня, в награду вам доступны "
-"национальные фрагменты чертежей."
+"Вы исследовали все машины {{vehicleLevel}} уровня. В качестве награды вам "
+"доступны национальные фрагменты чертежей."
 
 msgid "winbackSelectableRewardView/filter/placeholder"
 msgstr "Поиск по названию"
 
 msgid "winbackSelectableRewardView/filter/searchResult"
-msgstr "%(itemsShown)s {par_Open}/ %(itemsAvailable)s{par_Close}"
+msgstr "{{itemsShown}} {{@ style (color $color)}}/ {{itemsAvailable}}{{/}}"
 
 msgid "winbackSelectableRewardView/filter/shown"
 msgstr "Показано:"
@@ -294,7 +279,7 @@ msgid "winbackSelectableRewardView/filter/tooltip/header"
 msgstr "Установить по умолчанию"
 
 msgid "winbackSelectableRewardView/footer/actionText/active"
-msgstr "Выбрано наград: %(amountRewards)s %(infoIcon)s"
+msgstr "Выбрано наград: {{amountRewards}} {{infoIcon}}"
 
 msgid "winbackSelectableRewardView/footer/actionText/disable"
 msgstr "Выберите награды из представленных категорий"
@@ -304,33 +289,33 @@ msgstr "Ничего не найдено. Измените настройки и
 
 msgid "winbackSelectableRewardView/selectedReward/tooltip/blueprint/subtitle"
 msgstr ""
-"{white_Open}x%(bluePrintsAmount)s Национальный фрагмент чертежа{white_Close}"
-" (%(countryName)s)"
+"{{@ style (color $color)}}{{bluePrintsAmount}} Национальный фрагмент "
+"чертежа{{/}} ({{countryName}})"
 
 msgid ""
 "winbackSelectableRewardView/selectedReward/tooltip/rewardDiscount/subtitle"
 msgstr ""
-"{white_Open}%(name)s{white_Close} (Скидка %(expDiscount)s% на исследование и"
-" %(priceDiscount)s% на покупку)"
+"{{@ style (color $color)}}{{name}}{{/}} ({{expDiscount}}% скидка на "
+"исследование и {{priceDiscount}}% скидка на покупку)"
 
 msgid ""
 "winbackSelectableRewardView/selectedReward/tooltip/rewardDiscount/title"
-msgstr "Скидка на машину %(level)s уровня"
+msgstr "Скидка на машину {{level}} уровня"
 
 msgid ""
 "winbackSelectableRewardView/selectedReward/tooltip/rewardForGift/subtitle"
 msgstr ""
-"{white_Open}%(name)s{white_Close} (Все исследованные модули, экипаж и слот в"
-" Ангаре)"
+"{{@ style (color $color)}}{{name}}{{/}} (Все исследованные модули, экипаж и "
+"слот в Ангаре)"
 
 msgid "winbackSelectableRewardView/selectedReward/tooltip/rewardForGift/title"
-msgstr "Машина %(level)s уровня"
+msgstr "Машина {{level}} уровня"
 
 msgid "winbackSelectableRewardView/selectedReward/tooltip/subtitle"
 msgstr "Нажмите «Забрать» и получите выбранные награды."
 
 msgid "winbackSelectableRewardView/selectedReward/tooltip/title"
-msgstr "Выбрано наград: %(amountRewards)s"
+msgstr "Выбрано наград: {{@ style (color $color)}}{{amountRewards}}{{/}}"
 
 msgid "winbackSelectableRewardView/tabs/buy"
 msgstr "Покупка"
@@ -345,7 +330,7 @@ msgid "winbackSelectableRewardView/title/text"
 msgstr "ВЫБЕРИТЕ НАГРАДУ"
 
 msgid "winbackSelectableRewardView/vehicleName"
-msgstr "%(type)s {cream_Open}%(level)s{cream_Close} %(name)s"
+msgstr "{{@ style (color $color)}}{{level}}{{/}} {{name}} {{type}}"
 
 msgid "winbackSelectableRewardView/vehicleType/AT-SPG"
 msgstr "ПТ-САУ"

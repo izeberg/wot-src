@@ -21,6 +21,10 @@
 				<material>
 					<identifier>glowing</identifier>
 					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
+					<property>
+						g_enableEnvMultiplier
+						<Bool>true</Bool>
+					</property>
 					<materialKind>0</materialKind>
 					<collisionFlags>0</collisionFlags>
 					<property>
@@ -53,7 +57,10 @@
 					</property>
 					<property>
 						lightMultipliers
-						<Vector4>100.000000 25.000000 10.000000 0.000000</Vector4>
+						<Vector4>
+							108.695652 25.000000 10.000000 0.000000
+							<!--BW_String-->
+						</Vector4>
 					</property>
 					<property>
 						doubleSided

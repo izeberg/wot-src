@@ -95,7 +95,7 @@ class ParamsDictProxy(object):
             return default
 
     def keys(self):
-        return list(self.__iter__())
+        return list(iter(self))
 
     def values(self):
         self.__loadAllValues()

@@ -3525,6 +3525,12 @@
 				</_130mm_vz_54_2A>
 				<_130mm_vz_54>
 					shared
+					<unlocks>
+						<vehicle>
+							Cz46_Vz_63P
+							<cost>325000</cost>
+						</vehicle>
+					</unlocks>
 					<maxAmmo>40</maxAmmo>
 					<armor>
 						<armor_1>
@@ -3834,6 +3840,7 @@
 							</slaves>
 						</master>
 					</drivenJoints>
+					<muzzleBrake>RADIAL</muzzleBrake>
 					<camouflage>
 						<density>
 							89.577 90.9536

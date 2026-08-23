@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/chinese/Ch74_Waffentrager_15/normal/lod0/Turret_01</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/chinese/Ch74_Waffentrager_15/normal/lod1/Turret_01</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.978870 -0.005374 -2.516358</min>
+		<max>2.010387 2.251115 1.749876</max>
+	</visibilityBox>
+</root>

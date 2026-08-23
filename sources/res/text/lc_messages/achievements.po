@@ -151,15 +151,6 @@ msgstr "Выдаётся игрокам за их неоценимый вкла�
 msgid "15YearsOfService_descr"
 msgstr "Вы в игре с %(regDate)s"
 
-msgid "BPReserveAchievement_1"
-msgstr "Резервное достижение БП 1"
-
-msgid "BPReserveAchievement_1_condition"
-msgstr "• Выдавалась за прохождение прогрессии."
-
-msgid "BPReserveAchievement_1_descr"
-msgstr "За определённые успехи в игре."
-
 msgid "BPReserveAchievement_2"
 msgstr "Резервное достижение БП 2"
 
@@ -458,6 +449,16 @@ msgstr "• Выдаётся после прохождения всех трёх
 
 msgid "BattlePassCommonPr_20_descr"
 msgstr "За определённые успехи в рамках двадцатого сезона Боевого пропуска."
+
+msgid "BattlePassCommonPr_21"
+msgstr "Вылазка в низине"
+
+msgid "BattlePassCommonPr_21_condition"
+msgstr "• Выдаётся после прохождения всех трёх глав."
+
+msgid "BattlePassCommonPr_21_descr"
+msgstr ""
+"За определённые успехи в рамках двадцать первого сезона Боевого пропуска."
 
 msgid "BattlePassCommonPr_2_condition"
 msgstr "• Основная часть прогрессии состоит из 45 этапов."
@@ -2206,6 +2207,62 @@ msgstr ""
 "Выдавалась за сбор не менее 9 знамён «Натиска» в году Дракона режима "
 "«Натиск»."
 
+msgid "comp7_6_1"
+msgstr "Лазурная искра"
+
+msgid "comp7_6_1_descr"
+msgstr ""
+"Выдавалась за выполнение цепочки задач в сезоне Лазурного феникса режима "
+"«Натиск»."
+
+msgid "comp7_6_yearly_bronze"
+msgstr "Бронзовый феникс"
+
+msgid "comp7_6_yearly_bronze_descr"
+msgstr ""
+"Выдавалась за сбор не менее 6 знамён «Натиска» в году Феникса режима "
+"«Натиск»."
+
+msgid "comp7_6_yearly_champion"
+msgstr "Чемпион года Феникса"
+
+msgid "comp7_6_yearly_champion_descr"
+msgstr ""
+"Выдавалась за сбор не менее 15 знамён «Натиска» в году Феникса режима "
+"«Натиск»."
+
+msgid "comp7_6_yearly_gold"
+msgstr "Золотой феникс"
+
+msgid "comp7_6_yearly_gold_descr"
+msgstr ""
+"Выдавалась за сбор не менее 12 знамён «Натиска» в году Феникса режима "
+"«Натиск»."
+
+msgid "comp7_6_yearly_iron"
+msgstr "Железный феникс"
+
+msgid "comp7_6_yearly_iron_descr"
+msgstr ""
+"Выдавалась за сбор не менее 3 знамён «Натиска» в году Феникса режима "
+"«Натиск»."
+
+msgid "comp7_6_yearly_legend"
+msgstr "Легенда года Феникса"
+
+msgid "comp7_6_yearly_legend_descr"
+msgstr ""
+"Выдавалась за сбор не менее 18 знамён «Натиска» в году Феникса режима "
+"«Натиск»."
+
+msgid "comp7_6_yearly_silver"
+msgstr "Серебряный феникс"
+
+msgid "comp7_6_yearly_silver_descr"
+msgstr ""
+"Выдавалась за сбор не менее 9 знамён «Натиска» в году Феникса режима "
+"«Натиск»."
+
 msgid "conqueror"
 msgstr "«Завоеватель %(rank)s»"
 
@@ -2912,7 +2969,7 @@ msgid "huntsman_condition"
 msgstr "• Выдаётся только в Случайных боях."
 
 msgid "huntsman_descr"
-msgstr "Уничтожить все лёгкие танки противника в одном бою, но не менее 3."
+msgstr "Уничтожить все лёгкие танки противника в одном бою, но не менее 2."
 
 msgid "huntsman_heroInfo"
 msgstr ""
@@ -4849,13 +4906,44 @@ msgstr ""
 "«Образцовое выполнение: Союз» III степени."
 
 msgid "readyForBattleAssault"
-msgstr "Образцовое выполнение: Авангард"
+msgstr "Образцовое выполнение: «Сектор 3», задачи «Авангард»"
 
 msgid "readyForBattleAssault_condition"
 msgstr "?empty?"
 
 msgid "readyForBattleAssault_descr"
-msgstr "За выполнение всех задач Авангарда кампании «Сектор 3»."
+msgstr ""
+"За выполнение всех задач «Авангард» в основных операциях кампании «Сектор "
+"3»."
+
+msgid "readyForBattleFossaAssault"
+msgstr "Образцовое выполнение: Fossa, задачи «Авангард»"
+
+msgid "readyForBattleFossaAssault_condition"
+msgstr "?empty?"
+
+msgid "readyForBattleFossaAssault_descr"
+msgstr ""
+"За выполнение всех задач «Авангард» операции Fossa кампании «Сектор 3»."
+
+msgid "readyForBattleFossaSniper"
+msgstr "Образцовое выполнение: Fossa, задачи «Засада»"
+
+msgid "readyForBattleFossaSniper_condition"
+msgstr "?empty?"
+
+msgid "readyForBattleFossaSniper_descr"
+msgstr "За выполнение всех задач «Засада» операции Fossa кампании «Сектор 3»."
+
+msgid "readyForBattleFossaSupport"
+msgstr "Образцовое выполнение: Fossa, задачи «Поддержка»"
+
+msgid "readyForBattleFossaSupport_condition"
+msgstr "?empty?"
+
+msgid "readyForBattleFossaSupport_descr"
+msgstr ""
+"За выполнение всех задач «Поддержка» операции Fossa кампании «Сектор 3»."
 
 msgid "readyForBattleHT"
 msgstr "«Образцовое выполнение: тяжёлые танки»"
@@ -4982,22 +5070,25 @@ msgstr ""
 "«Образцовое выполнение: САУ» IV степени."
 
 msgid "readyForBattleSniper"
-msgstr "Образцовое выполнение: Засада"
+msgstr "Образцовое выполнение: «Сектор 3», задачи «Засада»"
 
 msgid "readyForBattleSniper_condition"
 msgstr "?empty?"
 
 msgid "readyForBattleSniper_descr"
-msgstr "За выполнение всех задач Засады кампании «Сектор 3»."
+msgstr ""
+"За выполнение всех задач «Засада» в основных операциях кампании «Сектор 3»."
 
 msgid "readyForBattleSupport"
-msgstr "Образцовое выполнение: Поддержка"
+msgstr "Образцовое выполнение: «Сектор 3», задачи «Поддержка»"
 
 msgid "readyForBattleSupport_condition"
 msgstr "?empty?"
 
 msgid "readyForBattleSupport_descr"
-msgstr "За выполнение всех задач Поддержки кампании «Сектор 3»."
+msgstr ""
+"За выполнение всех задач «Поддержка» в основных операциях кампании «Сектор "
+"3»."
 
 msgid "reliableComrade"
 msgstr "«Надёжный боевой товарищ»"
@@ -5802,6 +5893,19 @@ msgstr ""
 msgid "wot15thAnniversary_descr"
 msgstr "Пройти первый этап прогрессии события."
 
+msgid "wot16thAnniversary"
+msgstr "Шестнадцатилетие WoT"
+
+msgid "wot16thAnniversary_condition"
+msgstr ""
+"Выдаётся игрокам, принявшим участие в событии «Праздничное путешествие "
+"2026»."
+
+msgid "wot16thAnniversary_descr"
+msgstr ""
+"Присоединяйтесь к празднованию шестнадцатилетия World of Tanks и участвуйте "
+"в событии «Праздничное путешествие»."
+
 msgid "wt2022BossWins"
 msgstr "Закон Юнг для участка цепи"
 
@@ -5901,6 +6005,19 @@ msgstr ""
 
 msgid "wt2025progression_descr"
 msgstr "За определённые успехи в режиме «Ваффентрагер: Парадокс»."
+
+msgid "wt2026progression"
+msgstr "Обуздавший шторм"
+
+msgid "wt2026progression_condition"
+msgstr ""
+"Выдавалась за прохождение прогрессии в событии «Ваффентрагер: Начало 2026». "
+"Этой чести удостоены те, кто выступил против первой мыслящей машины фон "
+"Кригера — Электрического разума — и разорвал все цепи, связывающие его с "
+"нашим миром."
+
+msgid "wt2026progression_descr"
+msgstr "Пройти прогрессию режима «Ваффентрагер: Начало 2026»."
 
 msgid "wtBossWins"
 msgstr "Повелитель молний"

@@ -94,9 +94,9 @@ REGIONS_BY_SLOT_TYPE = {container.getAreaID():{slotType:slot.getRegions() for sl
 
 class Outfit(HasStrCD):
     __slots__ = ('_id', '_styleDescr', '_containers', '_vehicleCD', '__itemsCounter',
-                 '__styleProgressionLevel', '__styleSerialNumber')
+                 '__styleProgressionLevel', '__styleSerialNumber', '_originalCDT')
 
-    def __init__(self, strCompactDescr=None, component=None, vehicleCD='', vehicleType=None):
+    def __init__(self, strCompactDescr=None, component=None, vehicleCD='', vehicleType=None, originalCDT=None):
         super(Outfit, self).__init__(strCompactDescr)
         self._containers = {}
         self._vehicleCD = vehicleCD
@@ -124,6 +124,7 @@ class Outfit(HasStrCD):
                 container.unpack(component)
 
         self.__itemsCounter = None
+        self._originalCDT = self.customizationDisplayType() if originalCDT is None else originalCDT
         self.invalidate()
         return
 
@@ -284,6 +285,10 @@ class Outfit(HasStrCD):
     @property
     def serialNumber(self):
         return self.__styleSerialNumber
+
+    @property
+    def originalCustomizationDisplayType(self):
+        return self._originalCDT
 
     def setSerialNumber(self, value):
         self.__styleSerialNumber = value

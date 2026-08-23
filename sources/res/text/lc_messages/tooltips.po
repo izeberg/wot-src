@@ -7181,6 +7181,23 @@ msgstr ""
 msgid "moduleFits/wrong_slot/body"
 msgstr "Модуль уже установлен в другом слоте."
 
+msgid "moduleInfo/params/criticalHitChance"
+msgstr ""
+"Вероятность нанесения критического урона модулям и/или экипажу противника."
+
+msgid "moduleInfo/params/normalizationAngle"
+msgstr ""
+"Величина, на которую уменьшается угол попадания снаряда, когда он касается "
+"брони."
+
+msgid "moduleInfo/params/penetrationLoss"
+msgstr ""
+"Снижение бронепробития за каждые 100 мм после того, как снаряд попадает в "
+"экран."
+
+msgid "moduleInfo/params/ricochetAngle"
+msgstr "Угол гарантированного рикошета при попадании в броню противника."
+
 msgid "multiselection/alert/body"
 msgstr ""
 "Выберите технику: выйти в бой можно только полностью укомплектовав группу."
@@ -7296,6 +7313,56 @@ msgstr "?empty?"
 
 msgid "notrecruitedtankman/birthday14_mouse/label"
 msgstr "День рождения World of Tanks 2024"
+
+msgid "notrecruitedtankman/birthday16_crew_1/desc"
+msgstr ""
+"Дайте танкисту хот-дог — и он будет сыт один день. Дайте Тодду Джефферсону "
+"гриль — он наготовит хот-догов на целый отряд. Тодд по праву считается самым"
+" опытным инженером в ангаре и всегда помогает новобранцам освоиться. Обычно "
+"он до отвала их кормит жаренным мясом во время неожиданных барбекю-"
+"вечеринок. Во время праздничной поездки ему как раз представилась отличная "
+"возможность заняться любимыми делами — возиться с двигателями днём и "
+"готовить на своём портативном гриле вечером."
+
+msgid "notrecruitedtankman/birthday16_crew_1/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/birthday16_crew_1/label"
+msgstr "Праздничное путешествие"
+
+msgid "notrecruitedtankman/birthday16_crew_2/desc"
+msgstr ""
+"Когда просвистел свисток и уставшие механики неспешно возвращались домой "
+"после долгой смены, у Бобби Рея были другие планы. В ушах ещё стоял гул "
+"станков, а на лице играла хитрая улыбка. Он кубарем скатился на первый этаж,"
+" схватил свою гитару из шкафчика и помчался в клуб на ночной рок-н-рольный "
+"концерт. Когда коллеги предложили отправиться в юбилейное путешествие в "
+"честь шестнадцатилетия, сразу было понятно, что отвечать за музыку будет "
+"именно Бобби. За время службы он опробовал множество различных орудий, но ни"
+" одно из них и в подмётки не годится его надёжной полуакустической гитаре."
+
+msgid "notrecruitedtankman/birthday16_crew_2/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/birthday16_crew_2/label"
+msgstr "Праздничное путешествие"
+
+msgid "notrecruitedtankman/birthday16_crew_3/desc"
+msgstr ""
+"Коллеги Рози придерживаются двух главных принципов: «работает — не трогай» и"
+" «не работает — зови Рози». В школе она была звездой бейсбола, но затем "
+"стала великолепным механиком. Она просто обожает решать проблемы, за которые"
+" остальные даже боятся взяться. Нет такой детали, которую она не смогла бы "
+"починить, поэтому во время праздничной поездки ей нет равных. Она знает, как"
+" завести любой двигатель, починить гусеницы и при этом оставаться в хорошем "
+"расположении духа. Какие бы сюрпризы не преподнесла поездка, можете быть "
+"уверены — Рози к ним готова."
+
+msgid "notrecruitedtankman/birthday16_crew_3/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/birthday16_crew_3/label"
+msgstr "Праздничное путешествие"
 
 msgid "notrecruitedtankman/bob20_commander1_asia/desc"
 msgstr ""
@@ -8456,6 +8523,29 @@ msgstr ""
 
 msgid "notrecruitedtankman/hw25_Titi_CN/label"
 msgstr "巴比伦: 荣耀征途"
+
+msgid "notrecruitedtankman/jager_mailand/desc"
+msgstr ""
+"Егерь Mailand присоединяется к отряду со свежим взглядом на события, "
+"разворачивающиеся на поле боя. Эффектный новый облик и уникальная озвучка "
+"Mailand гарантированно разнообразят ваши сражения."
+
+msgid "notrecruitedtankman/jager_mailand/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/jager_mailand/label"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/jager_mouzakrobat/desc"
+msgstr ""
+"Встречайте егеря MouzAkrobat с его фирменным стилем ведения боя. Благодаря "
+"его уникальной озвучке ваши сражения станут более запоминающимися."
+
+msgid "notrecruitedtankman/jager_mouzakrobat/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/jager_mouzakrobat/label"
+msgstr "?empty?"
 
 msgid "notrecruitedtankman/john_christmas/desc"
 msgstr ""
@@ -11043,6 +11133,148 @@ msgstr "?empty?"
 msgid "notrecruitedtankman/tankmen_bp20_4/label"
 msgstr "Боевой пропуск, XX сезон"
 
+msgid "notrecruitedtankman/tankmen_bp20_5/desc"
+msgstr ""
+"В прошлом выдающийся генетик, доктор Джордж Вильгельм Кригер посвятил "
+"карьеру исследованию способов повысить боевые характеристики солдат. Однако,"
+" когда жуткие эксперименты над людьми стали достоянием общественности, его "
+"репутация была уничтожена. Став изгоем в научном сообществе, Кригер "
+"возобновил деятельность в подполье. На незаконно нажитые средства он создал "
+"на отдалённом архипелаге тайный исследовательский центр под охраной армии "
+"наёмников. Там учёный пытается вернуть человеку утраченные в ходе эволюции "
+"первобытные способности — силу, которую, однажды выпустив на волю, уже "
+"невозможно будет взять под контроль."
+
+msgid "notrecruitedtankman/tankmen_bp20_5/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp20_5/label"
+msgstr "Боевой пропуск: Far Cry"
+
+msgid "notrecruitedtankman/tankmen_bp20_6/desc"
+msgstr ""
+"Бывший спецназовец Джек Карвер работает капитаном чартерного катера в южной "
+"части Тихого океана. Получив заказ доставить журналистку на отдалённый "
+"остров, он и представить не мог, чем всё обернётся. Едва они прибывают на "
+"место, как катер уничтожает ракета, выпущенная наёмниками. Джеку удаётся "
+"добраться до берега, где с ним выходит на связь таинственный информатор, "
+"который посвящает его в жуткие секреты острова. Вскоре он узнаёт о "
+"чудовищном эксперименте доктора Кригера — опального учёного, мечтающего "
+"заменить человечество генетически модифицированными существами. Теперь Джек "
+"должен сорвать планы Кригера и найти способ вернуться к цивилизации."
+
+msgid "notrecruitedtankman/tankmen_bp20_6/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp20_6/label"
+msgstr "Боевой пропуск: Far Cry"
+
+msgid "notrecruitedtankman/tankmen_bp20_7/desc"
+msgstr ""
+"«Ты бесстрашен. Ты победишь любого, кто встанет на твоём пути».\n"
+"Цитра Талугмай — загадочная предводительница племени Ракьят, почитаемая как живая богиня. Воительница поразительной красоты, она страстно предана верованиям своего народа и неустанно стремится вернуть ему былое величие. Обаянием и манипуляциями Цитра заманивает в ловушку и подчиняет своей воле Джейсона Броди. Разжигая тьму, скрытую в его душе, она направляет его по пути безумия, используя как орудие для воплощения своих извращённых планов."
+
+msgid "notrecruitedtankman/tankmen_bp20_7/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp20_7/label"
+msgstr "Боевой пропуск: Far Cry"
+
+msgid "notrecruitedtankman/tankmen_bp20_8/desc"
+msgstr ""
+"Джейсон Броди — талантливый и умный, но непутёвый малый, привыкший плыть по "
+"течению. В основном его интересуют вечеринки, экстремальные виды спорта и "
+"его девушка Лиза, постоянно напоминающая о том, что пора бы взяться за ум. "
+"Оказавшись на враждебном острове, он наконец вынужден сосредоточиться на "
+"единственной важной цели: спасении друзей. По ходу дела Джейсон обнаруживает"
+" в себе пугающую склонность к насилию, природные инстинкты выживания и "
+"растущую жажду мести, а также находит место, где чувствует себя своим. Но у "
+"всего есть своя цена, и ещё предстоит выяснить, готов ли он её заплатить."
+
+msgid "notrecruitedtankman/tankmen_bp20_8/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp20_8/label"
+msgstr "Боевой пропуск: Far Cry"
+
+msgid "notrecruitedtankman/tankmen_bp20_9/desc"
+msgstr ""
+"«Наш великий и славный король, который рисковал своей жизнью и здоровьем, чтобы освободить Кират от цепей прошлого. Он всем пожертвовал ради своей второй родины и любит её народ, как своих детей. Да озарит вас свет Пэйгана».\n"
+"Самопровозглашённый король Кирата Пэйган Мин установил в неспокойной отдалённой стране жестокую диктатуру с опорой на личную армию. Этот эпатажный, самовлюблённый садист мгновенно переходит от беззаботных шуток к отвратительной жестокости, смакуя и то, и другое с тем же наслаждением, что и свои безупречно сервированные блюда."
+
+msgid "notrecruitedtankman/tankmen_bp20_9/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp20_9/label"
+msgstr "Боевой пропуск: Far Cry"
+
+msgid "notrecruitedtankman/tankmen_bp21_1/desc"
+msgstr ""
+"Бесплодные солончаки, куда Вадима Куприна направили на очередное задание, он"
+" знал как свои пять пальцев. Он привык к опасным условиям, ведь служил "
+"специалистом по защите от химического оружия задолго до того, как впервые "
+"занял место в танке. Спустя двадцать лет он оказался всего в нескольких днях"
+" пути от комплекса лабораторий, где когда-то начинал службу младшим "
+"техником. Время и пережитые испытания оставляют свой след на каждом, но, как"
+" любит шутить Вадим, документы на его увольнение так никто и не оформил — "
+"так что, пока с ними не разберутся, он останется здесь."
+
+msgid "notrecruitedtankman/tankmen_bp21_1/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp21_1/label"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp21_2/desc"
+msgstr ""
+"Цветущие долины, в которых прошло детство Брина Пауэлла, были совсем "
+"непохожи на те суровые места, куда его привела служба. Последний инструктаж "
+"оказался удивительно скуп на подробности, а такие формулировки, как "
+"«неопознанное химическое вещество» и «риск смертельной опасности: крайне "
+"высокий», заставили бы многих командиров просить о переводе. Но Брин всегда "
+"ценил в других инстинкт самосохранения. Смельчак по натуре, он мог бы "
+"сделать блестящую карьеру каскадёра, если бы захотел. Впрочем, его манера "
+"езды тоже очень напоминает погони из боевиков."
+
+msgid "notrecruitedtankman/tankmen_bp21_2/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp21_2/label"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp21_3/desc"
+msgstr ""
+"Нагаи Сора — сама невозмутимость. У него за плечами большой опыт "
+"миротворческих миссий в горячих точках, поэтому он сохраняет хладнокровие "
+"даже в самых напряжённых ситуациях. Нагаи не смогли выбить из равновесия ни "
+"утомительные ночные патрули, ни поступление всё более тревожных разведданных"
+" о неизвестном веществе, на поиски которого отправили его экипаж. Он "
+"поддерживает боевой дух шуточками на грани чёрного юмора, не теряя ни блеска"
+" в глазах, ни лёгкости походки."
+
+msgid "notrecruitedtankman/tankmen_bp21_3/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp21_3/label"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp21_4/desc"
+msgstr ""
+"От зоркого взгляда Сандрин Уссе не ускользало ничто. Ещё до участия в "
+"секретной танковой разведывательной операции она стала знаменитым снайпером "
+", а её орлиный глаз давал фору прицелу винтовки. Стоило показать Сандрин "
+"хотя бы обрывок вражеских разведданных, как она делала настолько точные "
+"выводы, что даже собственный экипаж поначалу принимал её невероятную "
+"наблюдательность за ясновидение. Под командованием девушки загадки редко "
+"остаются нераскрытыми. К счастью для команды, всё своё внимание она "
+"сосредоточила на поисках источника неизвестного реагента."
+
+msgid "notrecruitedtankman/tankmen_bp21_4/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp21_4/label"
+msgstr "?empty?"
+
 msgid "notrecruitedtankman/tankmen_bp2_1/desc"
 msgstr ""
 "Если вы попросите характеристику на Рида у его командира, тот скорее всего "
@@ -11560,6 +11792,96 @@ msgstr "?empty?"
 msgid "notrecruitedtankman/tankmen_mtlb1_6/label"
 msgstr "Уникальный член экипажа"
 
+msgid "notrecruitedtankman/tankmen_mtlb4_1/desc"
+msgstr ""
+"Предводитель Шести Мудрецов и главный генерал Эрлан-шэня. Он с рождения "
+"обладает божественной силой и мастерски владеет пикой-полумесяцем. "
+"Хладнокровный и решительный стратег, он командует войском. Он самый близкий "
+"соратник Эрлан-шэня, поэтому принимает участие во всех важнейших решениях. "
+"Он помог усмирить реку Минь и расколоть Персиковую гору. Во время осады горы"
+" Хуаго он перекрыл пути к отступлению и помог захватить Великого мудреца."
+
+msgid "notrecruitedtankman/tankmen_mtlb4_1/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_mtlb4_1/label"
+msgstr "Уникальный член экипажа"
+
+msgid "notrecruitedtankman/tankmen_mtlb4_2/desc"
+msgstr ""
+"Второй из шести мудрецов, известный как командир Чжан, владеет сверкающим "
+"серебряным копьём, стремительным, как взмах драконьего крыла. В его душе "
+"живёт ненависть к истинному злу, и он, не раздумывая, бросается в бой. Он "
+"усмирил демонов Семидесяти двух пещер и сразил тысячелетнего дракона "
+"наводнений в реке Минь. В период возвышения в ранг богов и кампании против "
+"Царя обезьян его бесстрашие и решительность в бою прославили героя во всём "
+"мире."
+
+msgid "notrecruitedtankman/tankmen_mtlb4_2/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_mtlb4_2/label"
+msgstr "Уникальный член экипажа"
+
+msgid "notrecruitedtankman/tankmen_mtlb4_3/desc"
+msgstr ""
+"Третий мудрец — командир Ли. Обладая могучим телосложением и невероятной "
+"силой, он предпочитает использовать в бою моргенштерн. Известный своим "
+"хладнокровием, он никогда не теряет самообладания, даже в самый разгар "
+"битвы. Он помогал Эрлан-шэню прокладывать путь войскам и первым прорвался "
+"через врата Пещеры водяного занавеса на горе Хуаго."
+
+msgid "notrecruitedtankman/tankmen_mtlb4_3/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_mtlb4_3/label"
+msgstr "Уникальный член экипажа"
+
+msgid "notrecruitedtankman/tankmen_mtlb4_4/desc"
+msgstr ""
+"Командир Яо — четвёртый из шести мудрецов. Он сражается парными крюками, "
+"нанося молниеносные и непредсказуемые удары. Яростный, но сообразительный "
+"боец, он часто идёт в авангарде. Вместе с Эрлан-шэнем он побывал в "
+"многочисленных походах и продемонстрировал такую доблесть в период "
+"возвышения в ранг богов и осады Царя обезьян, что демоны обращались в "
+"бегство при одном его появлении."
+
+msgid "notrecruitedtankman/tankmen_mtlb4_4/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_mtlb4_4/label"
+msgstr "Уникальный член экипажа"
+
+msgid "notrecruitedtankman/tankmen_mtlb4_5/desc"
+msgstr ""
+"Пятый мудрец — генерал Го. Он необычайно ловок и управляется с посохом с "
+"такой скоростью, что тот превращается в размытое пятно. Его движения "
+"невидимы для глаза, а удары обрушиваются с силой грома. Человек чести, "
+"всегда верный своему слову, он мастер разведки и засады, благодаря чему не "
+"раз пробирался в логово демонов, чтобы добыть ценные сведения для Эрлан-"
+"шэня."
+
+msgid "notrecruitedtankman/tankmen_mtlb4_5/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_mtlb4_5/label"
+msgstr "Уникальный член экипажа"
+
+msgid "notrecruitedtankman/tankmen_mtlb4_6/desc"
+msgstr ""
+"Шестой из Шести Мудрецов — генерал Чжи, личный телохранитель Эрлан-шэня. Он "
+"непревзойдённый стрелок. Его лук подобен растущей луне, а стрелы летят, "
+"словно падающие звёзды. Не уступая в отваге своим братьям, он отличается "
+"прямолинейностью, харизмой и непоколебимой преданностью. Во время битвы на "
+"горе Хуаго он сражался плечом к плечу с Эрлан-шэнем и лично захватил "
+"нескольких обезьяньих генералов."
+
+msgid "notrecruitedtankman/tankmen_mtlb4_6/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_mtlb4_6/label"
+msgstr "Уникальный член экипажа"
+
 msgid "notrecruitedtankman/tankmen_pm3_1/desc"
 msgstr ""
 "Дочь учёных-антифашистов из Дрездена, Лени осталась одна, когда её родителей"
@@ -11610,6 +11932,24 @@ msgid "notrecruitedtankman/tankmen_pm3_3/howToGetInfo"
 msgstr "?empty?"
 
 msgid "notrecruitedtankman/tankmen_pm3_3/label"
+msgstr "Кампания «Сектор 3»"
+
+msgid "notrecruitedtankman/tankmen_pm4_1/desc"
+msgstr ""
+"Стефан вырос в семье бернских часовщиков и унаследовал ремесло, требующее "
+"тишины, терпения и полного самообладания. Эти качества ему пригодились, но "
+"совсем на другом поприще. В 1940 году британская разведка изменила его "
+"судьбу: нейтральная Швейцария осталась по одну сторону границы, а он — по "
+"другую. В Альпах он прошёл путь от механика, обслуживавшего шпионское "
+"оборудование, до снайпера. Он не бросил винтовку и после войны: теперь он "
+"устраняет тех, кто ускользнул от правосудия под вымышленными именами. Стефан"
+" всегда работал и работает в одиночку, не оставляя следов. В «Секторе 3» его"
+" лица ещё никто не видел."
+
+msgid "notrecruitedtankman/tankmen_pm4_1/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_pm4_1/label"
 msgstr "Кампания «Сектор 3»"
 
 msgid "notrecruitedtankman/tankwoman/desc"
@@ -14024,6 +14364,17 @@ msgstr ""
 msgid "shell/basic/description/bold"
 msgstr "Базовый снаряд"
 
+msgid "shell/mechanics/bustleFeed/description"
+msgstr ""
+"Режим внешней подачи боеприпасов (ВПБ) позволяет использовать снаряды с "
+"повышенным уроном."
+
+msgid "shell/mechanics/bustleFeed/paramsHeader/basic"
+msgstr "Базовые"
+
+msgid "shell/mechanics/bustleFeed/paramsHeader/specific"
+msgstr "Модифицированные"
+
 msgid "shell/mechanics/lowChargeShot/description"
 msgstr ""
 "Специальная механика для орудия машины, которая позволяет стрелять раньше с "
@@ -14043,6 +14394,24 @@ msgstr "Базовые:"
 
 msgid "shell/mechanics/lowChargeShot/paramsHeader/specific"
 msgstr "Изменённые:"
+
+msgid "shell/mechanics/shellCalibration/description"
+msgstr ""
+"Регулируемый взрыватель увеличивает средний урон или бронепробиваемость."
+
+msgid "shell/mechanics/shellCalibration/paramsHeader"
+msgstr "Изменяемые"
+
+msgid "shell/mechanics/shellParamsSwitcher/description"
+msgstr ""
+"Орудие оснащено устройствами, которые позволяют изменять некоторые параметры"
+" снаряда перед выстрелом."
+
+msgid "shell/mechanics/shellParamsSwitcher/paramsHeader/basic"
+msgstr "Стандартные"
+
+msgid "shell/mechanics/shellParamsSwitcher/paramsHeader/specific"
+msgstr "Калиброванные"
 
 msgid "showArtyHitOnMap/body"
 msgstr ""
@@ -14264,6 +14633,16 @@ msgstr ""
 
 msgid "soundQualityOn/header"
 msgstr "Низкое качество"
+
+msgid "specialMechanics/shellCalibration/avgDamage"
+msgstr ""
+"{{@ style (color #E9E2BF)}}Средний урон{{/}} увеличивается в случае пробития"
+" брони противника."
+
+msgid "specialMechanics/shellCalibration/avgPiercingPower"
+msgstr ""
+"{{@ style (color #E9E2BF)}}Средняя бронепробиваемость{{/}} увеличивается в "
+"случае непробития брони противника."
 
 msgid "specializationWotPlus/content/header"
 msgstr "Члены экипажа обучаются на 50% быстрее на премиум технике:"
@@ -14672,6 +15051,46 @@ msgstr ""
 "Время между выстрелом последнего снаряда (или ствола) и заряжанием нового "
 "магазина. / Количество стволов или снарядов в магазине."
 
+msgid "tank_params/desc/autoreloaderSurgeBoostedReloadTime"
+msgstr ""
+"Время, которое заменяет оставшееся время перезарядки при использовании "
+"механизма."
+
+msgid "tank_params/desc/autoreloaderSurgeChargeTimeFast"
+msgstr "Время подготовки одного заряда при полном магазине."
+
+msgid "tank_params/desc/autoreloaderSurgeChargeTimeSlow"
+msgstr "Время подготовки одного заряда при неполном магазине."
+
+msgid "tank_params/desc/autoreloaderSurgeInitCharges"
+msgstr "Количество доступных зарядов в начале боя."
+
+msgid "tank_params/desc/autoreloaderSurgeMaxCharges"
+msgstr ""
+"Максимальное количество зарядов для ускоренной перезарядки снаряда, "
+"доступных единовременно."
+
+msgid "tank_params/desc/auxiliaryRocketLauncherAvgDamage"
+msgstr ""
+"Среднее значение урона, наносимого ракетой за один запуск при пробитии "
+"брони. Разброс урона составляет от –25% до +25% от среднего значения."
+
+msgid "tank_params/desc/auxiliaryRocketLauncherDispersion"
+msgstr ""
+"Показывает, на сколько метров ракета может отклониться от точки прицеливания"
+" за каждые 100 метров расстояния до цели."
+
+msgid "tank_params/desc/auxiliaryRocketLauncherPenetration"
+msgstr ""
+"Средняя толщина брони, пробиваемая ракетой с учётом её нормализации. Разброс"
+" составляет от –25% до +25% от среднего значения."
+
+msgid "tank_params/desc/auxiliaryRocketLauncherReloadTime"
+msgstr "Время перезарядки ракетной установки"
+
+msgid "tank_params/desc/auxiliaryRocketLauncherVelocity"
+msgstr "Определяет скорость полёта неуправляемой ракеты."
+
 msgid "tank_params/desc/avgDamage"
 msgstr ""
 "Среднее значение урона, наносимого базовым снарядом за один выстрел при "
@@ -14705,6 +15124,30 @@ msgid "tank_params/desc/burstFireRate"
 msgstr ""
 "Время смены снаряда в кассете. / Количество кассет в магазине. / Количество "
 "снарядов в кассете."
+
+msgid "tank_params/desc/bustleFeedDamagePerShot"
+msgstr ""
+"Среднее значение урона, наносимого единичным снарядом повышенной мощности за"
+" один выстрел при пробитии брони. Разброс урона составляет от –25% до +25% "
+"от среднего значения."
+
+msgid "tank_params/desc/bustleFeedMaxSpeed"
+msgstr ""
+"Уменьшение номинальной скорости движения вперёд в режиме внешней подачи "
+"боеприпасов. Скорость движения назад не меняется."
+
+msgid "tank_params/desc/bustleFeedRateOfFire"
+msgstr "Уменьшение скорострельности в режиме внешней подачи боеприпасов."
+
+msgid "tank_params/desc/bustleFeedSwitchingToEASMMode"
+msgstr ""
+"Минимальное время подготовки орудия после активации режима внешней подачи "
+"боеприпасов. В этот период переключать режимы невозможно."
+
+msgid "tank_params/desc/bustleFeedSwitchingToStandardMode"
+msgstr ""
+"Минимальное время подготовки орудия после возврата в стандартный режим. В "
+"этот период переключать режимы невозможно."
 
 msgid "tank_params/desc/chargeTime"
 msgstr ""
@@ -15170,8 +15613,17 @@ msgstr ""
 "Количество снарядов, доступных для вспомогательного орудия во время "
 "активации."
 
+msgid "tank_params/desc/shellCalibrationAvgDamage"
+msgstr "Бонус к урону после успешного пробития брони противника."
+
+msgid "tank_params/desc/shellCalibrationAvgPenetration"
+msgstr "Бонус к бронепробиваемости после непробития брони противника"
+
 msgid "tank_params/desc/shellLoadingTime"
 msgstr "Время подготовки ленты в начале боя и смены типа снарядов."
+
+msgid "tank_params/desc/shellParamsSwitchingTime"
+msgstr "Время переключения между стандартным режимом и режимом калибровки."
 
 msgid "tank_params/desc/shotDispersionAngle"
 msgstr ""
@@ -15188,6 +15640,43 @@ msgstr ""
 "Показывает, на сколько метров снаряд может отклониться от точки прицеливания"
 " за каждые 100 метров расстояния до цели. Базовое значение (первое) — при "
 "нагреве орудия, улучшенное (второе) — после остывания."
+
+msgid "tank_params/desc/sightPointerConsealmentFoliage"
+msgstr ""
+"Прогрессивное уменьшение незаметности замаскированных в растительности машин"
+" противника в секторе сканирования ИК-СПС."
+
+msgid "tank_params/desc/sightPointerConsealmentMoving"
+msgstr ""
+"Прогрессивное уменьшение незаметности движущихся машин противника в секторе "
+"сканирования ИК-СПС."
+
+msgid "tank_params/desc/sightPointerDeployTime"
+msgstr "Время, необходимое для первого использования ИК-СПС после начала боя."
+
+msgid "tank_params/desc/sightPointerDuration"
+msgstr "Продолжительность сканирования ИК-СПС."
+
+msgid "tank_params/desc/sightPointerReloadTime"
+msgstr "Время, необходимое для повторного использования ИК-СПС."
+
+msgid "tank_params/desc/sightPointerRotationSpeed"
+msgstr "Уменьшение скорости вращения башни при активной ИК-СПС."
+
+msgid "tank_params/desc/sightPointerSectorAngleEnd"
+msgstr "Ширина сектора сканирования ИК-СПС в конце её действия."
+
+msgid "tank_params/desc/sightPointerSectorAngleStart"
+msgstr "Ширина сектора сканирования ИК-СПС в начале её действия."
+
+msgid "tank_params/desc/sightPointerSelfSpottingTime"
+msgstr ""
+"Время обнаружения вашей машины после обнаружения противника с помощью ИК-"
+"СПС."
+
+msgid "tank_params/desc/sightPointerViewRange"
+msgstr ""
+"Прогрессивное увеличение дальности обзора в секторе сканирования ИК-СПС."
 
 msgid "tank_params/desc/speedLimits"
 msgstr "Паспортная скорость машины."

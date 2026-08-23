@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from account_helpers import AccountSettings
 from account_helpers.AccountSettings import COMP7_UI_SECTION, COMP7_UMG_PROGRESSION_POINTS_SEEN
 from comp7.gui.impl.gen.view_models.views.lobby.entry_point_model import EntryPointModel

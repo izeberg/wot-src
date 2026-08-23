@@ -1,0 +1,123 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"Last-Translator: i_maliavko <i_maliavko@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "battleHints/wtOvertime_boss"
+msgstr "Освободите все генераторы!"
+
+msgid "battleHints/wtOvertime_header"
+msgstr "ОВЕРТАЙМ"
+
+msgid "battleHints/wtOvertime_hunters"
+msgstr "Захватите любой генератор!"
+
+msgid "battleTimer/overtime/messageText"
+msgstr "Овертайм!"
+
+msgid "battleTimer/timeRemaining/boss/messageText"
+msgstr "Время на вашей стороне!"
+
+msgid "battleTimer/timeRemaining/hunter/messageText"
+msgstr "Время на исходе!"
+
+msgid "botNames/Ermelinda"
+msgstr "Эрмелинда"
+
+msgid "efficiencyRibbons/damageCircuitOverload"
+msgstr "Урон «Коротким замыканием»"
+
+msgid "efficiencyRibbons/damageHyperion"
+msgstr "Урон от «Гипериона»"
+
+msgid "hunterRespawn/hintText"
+msgstr "Выберите точку возрождения, или она будет выбрана автоматически"
+
+msgid "hunterRespawn/timerText"
+msgstr "До возвращения в бой..."
+
+msgid "loading/boss/hint1"
+msgstr ""
+"1. Продержитесь как можно дольше. Если Гончие не успеют вас уничтожить, вы "
+"победите."
+
+msgid "loading/boss/hint2"
+msgstr ""
+"2. Уничтожайте машины противника, чтобы избавить их от зарядов плазмы и "
+"бонусов к огневой мощи. Начинайте с самых сильных."
+
+msgid "loading/boss/hint3"
+msgstr ""
+"3. Заряжайте ваше супероружие «Гиперион», повреждая машины Гончих. "
+"Используйте его, чтобы нанести огромный урон по большой площади."
+
+msgid "loading/boss/hint4"
+msgstr ""
+"4. На вашей стороне будет сражаться сама Эрмелинда. Она может временно "
+"блокировать генераторы, а её энергетическая аура ускоряет перезарядку вашей "
+"машины и техники Часовых. Кроме того, она даёт достаточно энергии для "
+"отключённых умений."
+
+msgid "loading/hunter/hint1"
+msgstr ""
+"1. Уничтожьте Blitzträger, пока не вышло время! Перегружайте генераторы, "
+"чтобы ненадолго отключить его щит."
+
+msgid "loading/hunter/hint2"
+msgstr ""
+"2. Перегружая генераторы, Гончие собирают плазму, которая даёт значительный "
+"бонус к огневой мощи. Бонус сбрасывается при уничтожении машины."
+
+msgid "loading/hunter/hint3"
+msgstr ""
+"3. Берегитесь супероружия «Гиперион». Blitzträger заряжает его, нанося урон "
+"Гончим."
+
+msgid "loading/hunter/hint4"
+msgstr ""
+"4. Остерегайтесь внезапного вмешательства Эрмелинды. Она может временно "
+"блокировать генераторы, усиливать союзников, а также использовать технологии"
+" Blitzträger."
+
+msgid "minimap/respawnEntry/hintText"
+msgstr "Вы начнёте здесь"
+
+msgid "pbt/defeat/1/1"
+msgstr "Старик сегодня проиграл. А Электрический разум — нет."
+
+msgid "pbt/defeat/2/3"
+msgstr ""
+"Не осталось ни времени, ни вариантов. Как и ожидалось. Попытайтесь ещё раз."
+
+msgid "pbt/victory/1/3"
+msgstr "Гончие, часы говорят, что ваше время истекло. Эволюция согласна."
+
+msgid "pbt/victory/2/1"
+msgstr "Гончие, вы победили. Электрический разум благодарит вас."
+
+msgid "playersPanel/botName"
+msgstr "Часовой"
+
+msgid "playersPanel/campLabel"
+msgstr "Генератор %(index)s"
+
+msgid "postbattle_screen/botName"
+msgstr "Часовой"
+
+msgid "reticle/dmg"
+msgstr "+%(num)s%% К УРОНУ"
+
+msgid "stats/team/boss"
+msgstr "Инженер"
+
+msgid "stats/team/hunters"
+msgstr "Гончие"
+
+msgid "teamBasePanel/capturing"
+msgstr "Перегрузка генератора %(num)s (%(percent)s%%)"

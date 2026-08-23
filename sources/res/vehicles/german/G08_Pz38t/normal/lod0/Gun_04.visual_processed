@@ -37,8 +37,8 @@
 						<transform>
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
-							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>0.000054 -0.002528 -1.527985</row3>
+							<row2>-0.000000 0.000000 1.000000</row2>
+							<row3>0.000054 -0.002528 -1.498276</row3>
 						</transform>
 					</node>
 					<node>
@@ -47,7 +47,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 -1.000000</row2>
-							<row3>0.000000 0.000000 -3.000000</row3>
+							<row3>-0.000000 0.000000 -3.000000</row3>
 						</transform>
 					</node>
 				</node>
@@ -68,8 +68,8 @@
 		<node>G_BlendBone</node>
 		<node>Gun_BlendBone</node>
 		<geometry>
-			<vertices>gun_04Shape5.vertices</vertices>
-			<primitive>gun_04Shape5.indices</primitive>
+			<vertices>gun_04_Shape.vertices</vertices>
+			<primitive>gun_04_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -79,10 +79,7 @@
 					<materialKind>0</materialKind>
 					<property>
 						g_detailUVTiling
-						<Vector4>
-							3.50685 1.75342 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>3.506850 1.753420 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_detailPowerGloss
@@ -118,10 +115,6 @@
 						<Bool>true</Bool>
 					</property>
 					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
-					</property>
-					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/german/G08_Pz38t/Pz38t_guns_AO.dds</Texture>
 					</property>
@@ -141,19 +134,15 @@
 						diffuseMap
 						<Texture>vehicles/german/G08_Pz38t/Pz38t_guns_AM.dds</Texture>
 					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
 				</material>
-				<groupOrigin>-0.000049 0.028587 -0.736091</groupOrigin>
+				<groupOrigin>-0.000049 0.028587 -0.755674</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
 		<min>-0.089172 -0.149046 -0.115819</min>
-		<max>0.089074 0.206220 1.588001</max>
+		<max>0.089074 0.206220 1.627166</max>
 	</boundingBox>
 	<geometrySize>46016</geometrySize>
 </root>

@@ -3,14 +3,8 @@
 	<tank>true</tank>
 	<materialNames/>
 	<visibilityBox>
-		<min>
-			-0.0955765 -0.17636 -0.0226985
-			<!--BW_String-->
-		</min>
-		<max>
-			0.0992019 0.152504 2.24251
-			<!--BW_String-->
-		</max>
+		<min>-0.098139 -0.178646 -0.017635</min>
+		<max>0.102064 0.169811 1.667610</max>
 	</visibilityBox>
 	<nodefullVisual>vehicles/german/G52_Pz38_NA/normal/lod4/Gun_05</nodefullVisual>
 </root>

@@ -193,6 +193,8 @@ package net.wg.gui.lobby.settings.config
       
       public static const OBJECT_LOD:String = "OBJECT_LOD";
       
+      public static const VISIBILITY_TUNNEL:String = "VISIBILITY_TUNNEL";
+      
       public static const SNIPER_MODE_EFFECTS_QUALITY:String = "SNIPER_MODE_EFFECTS_QUALITY";
       
       public static const TRACK_PHYSICS_QUALITY:String = "TRACK_PHYSICS_QUALITY";
@@ -200,6 +202,8 @@ package net.wg.gui.lobby.settings.config
       public static const SNIPER_MODE_GRASS_ENABLED:String = "SNIPER_MODE_GRASS_ENABLED";
       
       public static const VEHICLE_TRACES_ENABLED:String = "VEHICLE_TRACES_ENABLED";
+      
+      public static const INCREASE_EFFECTS_CONTRAST_ENABLED:String = "INCREASE_EFFECTS_CONTRAST_ENABLED";
       
       public static const SEMITRANSPARENT_LEAVES_ENABLED:String = "SEMITRANSPARENT_LEAVES_ENABLED";
       
@@ -209,8 +213,6 @@ package net.wg.gui.lobby.settings.config
       
       public static const VEHICLE_DUST_ENABLED:String = "VEHICLE_DUST_ENABLED";
       
-      public static const VISIBILITY_TUNNEL_ENABLED:String = "VISIBILITY_TUNNEL_ENABLED";
-      
       public static const DRR_AUTOSCALER_ENABLED:String = "DRR_AUTOSCALER_ENABLED";
       
       public static const TESSELLATION_SUPPORTED:String = "tessellationSupported";
@@ -218,6 +220,8 @@ package net.wg.gui.lobby.settings.config
       public static const NATIVE_RESOLUTION:String = "nativeResolution";
       
       public static const IS_SD_QUALITY:String = "isSDQuality";
+      
+      public static const SHOW_PBH:String = "showPrebattleHighlights";
       
       public static const RENDER_PIPELINE:String = "RENDER_PIPELINE";
       

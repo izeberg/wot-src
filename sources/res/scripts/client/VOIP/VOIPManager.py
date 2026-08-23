@@ -9,7 +9,7 @@ from messenger.m_constants import USER_ACTION_ID, USER_TAG
 from messenger.proto import proto_getter
 from messenger.proto.events import g_messengerEvents
 from messenger.proto.shared_find_criteria import MutedFindCriteria
-from messenger.storage import storage_getter
+from messenger.storage import MessengerStorageDescriptor, UsersStorage
 from helpers import dependency
 from skeletons.account_helpers.settings_core import ISettingsCore
 from account_helpers.settings_core.settings_constants import SOUND
@@ -23,6 +23,7 @@ _BACK_OFF_EXP_RANDOM_FACTOR = 0.5
 
 class VOIPManager(VOIPHandler):
     settingsCore = dependency.descriptor(ISettingsCore)
+    usersStorage = MessengerStorageDescriptor(UsersStorage)
 
     def __init__(self):
         _logger.info('Create')
@@ -66,10 +67,6 @@ class VOIPManager(VOIPHandler):
 
     @proto_getter(PROTO_TYPE.BW_CHAT2)
     def bwProto(self):
-        return
-
-    @storage_getter('users')
-    def usersStorage(self):
         return
 
     @proto_getter(PROTO_TYPE.MIGRATION)

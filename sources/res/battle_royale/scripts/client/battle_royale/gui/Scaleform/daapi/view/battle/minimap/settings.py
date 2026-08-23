@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from constants import LOOT_TYPE
 
 class BattleRoyaleEntries(object):

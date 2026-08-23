@@ -3,7 +3,7 @@ from AvatarInputHandler.control_modes import PostMortemControlMode
 from account_helpers.settings_core.settings_constants import GAME
 from aih_constants import CTRL_MODE_NAME
 from helpers import dependency
-from constants import POSTMORTEM_MODIFIERS, DEFAULT_POSTMORTEM_SETTINGS, ARENA_BONUS_TYPE, RM_STATE
+from constants import POSTMORTEM_MODIFIERS, DEFAULT_POSTMORTEM_SETTINGS, RM_STATE
 from skeletons.gui.battle_session import IBattleSessionProvider
 from skeletons.gui.lobby_context import ILobbyContext
 _TRAJECTORY_PROGRESS_DELAY = 0.1
@@ -44,11 +44,6 @@ class AvatarPostmortemComponent(object):
     def onBecomeNonPlayer(self):
         self.settingsCore.serverSettings.settingsCache.onSyncCompleted -= self.__onSettingsSyncCompleted
         self.destroy()
-
-    def canSwitchToAllyVehicle(self):
-        if self.arenaBonusType in (ARENA_BONUS_TYPE.EPIC_BATTLE,):
-            return False
-        return True
 
     def isPostmortemFeatureEnabled(self, feature):
         if feature not in CTRL_MODE_NAME.POSTMORTEM_CONTROL_MODES:

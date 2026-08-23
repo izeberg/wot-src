@@ -73,6 +73,19 @@ msgstr ""
 "Настройка вступит в силу со следующего боя, если в текущем бою она была "
 "отключена."
 
+msgid "INCREASE_EFFECTS_CONTRAST_ENABLED"
+msgstr "Улучшенные визуальные эффекты"
+
+msgid "INCREASE_EFFECTS_CONTRAST_ENABLED/description"
+msgstr ""
+"Включает улучшенные визуальные эффекты. Отключение этой настройки возвращает"
+" стандартные эффекты, что может повысить производительность игры."
+
+msgid "INCREASE_EFFECTS_CONTRAST_ENABLED/warning"
+msgstr ""
+"Настройка начнёт действовать со следующего боя, если в текущем бою она была "
+"отключена."
+
 msgid "LANGUAGE_CODE"
 msgstr "ru"
 
@@ -261,14 +274,14 @@ msgstr ""
 "\n"
 "Недоступно при упрощённых настройках графики и низком значении качества декалей."
 
-msgid "VISIBILITY_TUNNEL_ENABLED"
-msgstr "Скрыть 3D-объекты в снайперском режиме"
+msgid "VISIBILITY_TUNNEL"
+msgstr "Видимость эффектов и 3D-объектов"
 
-msgid "VISIBILITY_TUNNEL_ENABLED/description"
+msgid "VISIBILITY_TUNNEL/description"
 msgstr ""
-"Временно отключает отображение 3D-объектов в прицеле снайперского режима.\n"
+"Настраивает видимость эффектов и 3D-объектов в центральной части экрана, чтобы уменьшить визуальные помехи при прицеливании. Видимость 3D-объектов настраивается только для снайперского режима.\n"
 "\n"
-"Разгружает экран и повышает точность прицеливания."
+"Чем ниже значение, тем прозрачнее становятся эффекты и 3D-объекты, что упрощает прицеливание."
 
 msgid "WATER_QUALITY"
 msgstr "Качество воды"
@@ -2211,6 +2224,19 @@ msgstr "Режим:"
 
 msgid "screenMode/windowed"
 msgstr "Оконный"
+
+msgid "showPrebattleHighlights"
+msgstr "Включить «В центре внимания»"
+
+msgid "showPrebattleHighlights/description"
+msgstr ""
+"Во время предбоевого отсчёта камера выборочно показывает самую эффектную технику в бою.\n"
+"\n"
+"Отключение параметра может повысить производительность игры."
+
+msgid "showPrebattleHighlights/warning"
+msgstr ""
+"Если в данном бою параметр был отключён, он включится в следующем бою."
 
 msgid "smoothing/description"
 msgstr ""

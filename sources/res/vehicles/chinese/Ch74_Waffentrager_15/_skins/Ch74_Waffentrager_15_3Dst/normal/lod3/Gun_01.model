@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/chinese/Ch74_Waffentrager_15/_skins/Ch74_Waffentrager_15_3Dst/normal/lod4/Gun_01</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-0.760942 -0.750733 -1.670941</min>
+		<max>0.669782 1.490092 7.901935</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/chinese/Ch74_Waffentrager_15/_skins/Ch74_Waffentrager_15_3Dst/normal/lod3/Gun_01</nodefullVisual>
+</root>

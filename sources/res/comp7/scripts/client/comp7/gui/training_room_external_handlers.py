@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from account_helpers import isDemonstrator, isDemonstratorExpert
 from comp7.gui.prb_control.entities.limits import Comp7TrainingLimits
 from comp7.gui.prb_control.entities.pre_queue.vehicles_watcher import Comp7VehiclesWatcher

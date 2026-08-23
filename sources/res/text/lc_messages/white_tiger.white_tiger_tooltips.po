@@ -1,0 +1,198 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-16 10:00+0300\n"
+"PO-Revision-Date: 2023-03-16 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "bannerTooltip/allStagesAreCompleted"
+msgstr "Все этапы пройдены!"
+
+msgid "bannerTooltip/description"
+msgstr ""
+"Blitzträger против Гончих: асимметричные сражения в формате «1 против 6» на "
+"модифицированной технике. Зарабатывайте уникальные элементы внешнего вида и "
+"другие ценные награды."
+
+msgid "bannerTooltip/expiryDate/frozen"
+msgstr "Режим прекращения огня"
+
+msgid "bannerTooltip/expiryDate/inAnnouncement"
+msgstr "Ваффентрагер будет готов"
+
+msgid "bannerTooltip/expiryDate/technicalPause"
+msgstr "Сейчас режим недоступен"
+
+msgid "bannerTooltip/header"
+msgstr "Ваффентрагер: Начало"
+
+msgid "bannerTooltip/mode"
+msgstr "РЕЖИМ"
+
+msgid "bannerTooltip/modeHint"
+msgstr "— переход в другой режим"
+
+msgid "bannerTooltip/performanceRisk/text/highRisk"
+msgstr ""
+"Производительности вашего компьютера недостаточно для данного режима. Будут "
+"наблюдаться проблемы с графикой и перемещением техники, возможно также "
+"аварийное закрытие клиента игры."
+
+msgid "bannerTooltip/performanceRisk/text/lowRisk"
+msgstr ""
+"В случае недостаточной производительности попробуйте понизить настройки "
+"графики."
+
+msgid "bannerTooltip/performanceRisk/text/mediumRisk"
+msgstr ""
+"Режим требователен к компьютеру. Карта может долго загружаться, возможны "
+"проблемы с графикой и перемещением техники в бою. При недостаточной "
+"производительности попробуйте понизить настройки графики."
+
+msgid "bannerTooltip/performanceRisk/title/highRisk"
+msgstr "Низкая производительность"
+
+msgid "bannerTooltip/performanceRisk/title/lowRisk"
+msgstr "Режим требователен к компьютеру"
+
+msgid "bannerTooltip/performanceRisk/title/mediumRisk"
+msgstr "Снижение производительности"
+
+msgid "bannerTooltip/year"
+msgstr "2026"
+
+msgid "battleResult/interaction/friend/friend"
+msgstr "Вы уже друзья."
+
+msgid "battleResult/interaction/friend/inviteSent"
+msgstr "Ожидается подтверждение запроса на добавление в «Друзья»."
+
+msgid "battleResult/interaction/friend/removeFromBlacklist"
+msgstr "Удалить игрока из «Чёрного списка»."
+
+msgid "battleResult/interaction/friend/sendInvite"
+msgstr "Добавить в «Друзья»"
+
+msgid "battleResult/interaction/menu"
+msgstr "Нажмите, чтобы открыть меню взаимодействия с игроком."
+
+msgid "battleResult/interaction/platoon/platoonCanMade"
+msgstr "Добавить во взвод"
+
+msgid "battleResult/interaction/platoon/platoonDone"
+msgstr "Игрок уже во взводе."
+
+msgid "battleResult/interaction/platoon/platoonSent"
+msgstr "Приглашение уже отправлено."
+
+msgid "battleResult/interaction/platoon/platoonUnavailable"
+msgstr "Только командир может приглашать игроков во взвод."
+
+msgid "dailyQuests/badgeStatus"
+msgstr "%(icon) Доступно до %(date)s"
+
+msgid "dailyQuests/rewards"
+msgstr "Награды:"
+
+msgid "dailyQuests/status"
+msgstr "Новая ежедневная задача через %(icon) %(timer)"
+
+msgid "hangar/startBtn/lock/body"
+msgstr "Для выхода в бой выберите доступную машину."
+
+msgid "hangar/startBtn/lock/header"
+msgstr "Недоступно"
+
+msgid "hangar/startBtn/offline/body"
+msgstr ""
+"Бои временно недоступны для выбранного уровня сложности/режима по "
+"техническим причинам."
+
+msgid "hangar/startBtn/offline/header"
+msgstr "Недоступно"
+
+msgid "hangar/startBtn/squadInBattle/body"
+msgstr ""
+"Для выхода в бой дождитесь, когда взвод вернётся из предыдущего сражения."
+
+msgid "hangar/startBtn/squadInBattle/header"
+msgstr "Недоступно"
+
+msgid "hangar/startBtn/squadNotAvailableLevel/body"
+msgstr "Неподходящий для взвода уровень сложности."
+
+msgid "hangar/startBtn/squadNotAvailableLevel/header"
+msgstr "Недоступно"
+
+msgid "metaWidget/body"
+msgstr "Нажмите, чтобы просмотреть все задачи и награды события."
+
+msgid "metaWidget/header"
+msgstr "Цепочка наград"
+
+msgid "shopWidget/body"
+msgstr ""
+"Нажмите, чтобы перейти в особый раздел Магазина, в котором представлены "
+"наборы события."
+
+msgid "shopWidget/header"
+msgstr "Ключи Ваффентрагера и другое"
+
+msgid "teamList/actions/body"
+msgstr "Горячие клавиши для создания взвода и добавления/удаления друзей."
+
+msgid "teamList/actions/header"
+msgstr "Быстрые действия"
+
+msgid "teamList/damage/body"
+msgstr "Сортировать по количеству нанесённого урона."
+
+msgid "teamList/damage/header"
+msgstr "Нанесённый урон"
+
+msgid "teamList/keys/body"
+msgstr ""
+"Сортировать по количеству заработанных ключей (значение указано без учёта "
+"бонуса за выполнение ежедневной задачи в бою)."
+
+msgid "teamList/keys/header"
+msgstr "Ключей получено"
+
+msgid "teamList/kills/body"
+msgstr "Сортировать по количеству уничтоженной техники."
+
+msgid "teamList/kills/header"
+msgstr "Уничтожено машин противника"
+
+msgid "teamList/name/header"
+msgstr "Имя игрока"
+
+msgid "teamList/place/body"
+msgstr "Сортировать по занятому месту в команде."
+
+msgid "teamList/place/header"
+msgstr "Место в команде"
+
+msgid "teamList/squad/header"
+msgstr "Взвод — это формирование для совместной игры."
+
+msgid "teamList/vehicle/body"
+msgstr "Сортировать по типу и названию техники."
+
+msgid "teamList/vehicle/header"
+msgstr "Техника"
+
+msgid "vehicle/eventBonus"
+msgstr ""
+"Доступны бонусные ключи за выполнение ежедневной задачи на данной машине"
+
+msgid "vehicle/lowEfficiency"
+msgstr "Низкая эффективность экипажа"
+
+msgid "vehicle/rentState"
+msgstr "Машина заблокирована"

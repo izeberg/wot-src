@@ -161,8 +161,7 @@ class KillModeBase(IControlMode, CallbackDelayer):
             self._switchToCtrlMode(CTRL_MODE_NAME.DEATH_FREE_CAM)
             return True
         if key in (Keys.KEY_LEFTMOUSE, Keys.KEY_RIGHTMOUSE) and not isDown:
-            avatar = BigWorld.player()
-            self._switchToCtrlMode(CTRL_MODE_NAME.POSTMORTEM, immediateSwitchToAllyVehicle=avatar.canSwitchToAllyVehicle())
+            self._switchToCtrlMode(CTRL_MODE_NAME.POSTMORTEM, immediateSwitchToAllyVehicle=self._canSwitchToAllyVehicle())
             return True
         return False
 
@@ -253,6 +252,9 @@ class KillModeBase(IControlMode, CallbackDelayer):
         if needToRespawn:
             return False
         return BigWorld.player().isPostmortemFeatureEnabled(CTRL_MODE_NAME.DEATH_FREE_CAM)
+
+    def _canSwitchToAllyVehicle(self):
+        return True
 
     def _switchToCtrlMode(self, targetMode, **kwargs):
         if targetMode != CTRL_MODE_NAME.DEATH_FREE_CAM:
@@ -634,7 +636,9 @@ class KillCamMode(KillModeBase):
              simulatedKiller.gunFireMatrix(gunInstallationIndex, gunIndex))
         else:
             simulatedKillerGunInfo = None
-        self.killCamCtrl.killCamModeActive(self.__unspottedOrigin, simulatedKillerGunInfo, projectileData, phaseDurations, hasSpottedData, simulatedKiller is not None, playerRelativeArmor, playerIsSpotted, totalSceneDuration - _START_VISION_DELAY, causeOfDeath)
+        mechanicsInfo = {'player': self._rawSimulationData.get('player', {}).get('mechanicsInfo'), 
+           'attacker': self._rawSimulationData.get('attacker', {}).get('mechanicsInfo')}
+        self.killCamCtrl.killCamModeActive(self.__unspottedOrigin, simulatedKillerGunInfo, projectileData, phaseDurations, hasSpottedData, simulatedKiller is not None, playerRelativeArmor, playerIsSpotted, totalSceneDuration - _START_VISION_DELAY, causeOfDeath, mechanicsInfo)
         return
 
     def __fadeScreen(self, bFade=True, duration=1.0):

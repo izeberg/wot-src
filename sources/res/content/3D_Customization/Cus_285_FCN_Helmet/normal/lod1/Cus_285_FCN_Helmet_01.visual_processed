@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<stream>colour</stream>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd1</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>112</materialKind>
+					<property>
+						alphaReference
+						<Int>60</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/3D_Customization/Cus_285_FCN_Helmet/Cus_285_FCN_Helmet_01_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_applyScreenSpaceMorphing
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_enableTransmission
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_vertexAnimationParams
+						<Vector4>0.006000 0.001000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/3D_Customization/Cus_285_FCN_Helmet/Cus_285_FCN_Helmet_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/3D_Customization/Cus_285_FCN_Helmet/Cus_285_FCN_Helmet_01_ANM.dds</Texture>
+					</property>
+					<property>
+						g_vertexColorMode
+						<Int>1</Int>
+					</property>
+				</material>
+				<groupOrigin>0.002233 0.609226 -0.260355</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>112</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/3D_Customization/Cus_285_FCN_Helmet/Cus_285_FCN_Helmet_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>content/3D_Customization/Cus_285_FCN_Helmet/Cus_285_FCN_Helmet_AO.dds</Texture>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>2.000000 2.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_metallicDetailInfluence
+						<Float>0.300000</Float>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/3D_Customization/Cus_285_FCN_Helmet/Cus_285_FCN_Helmet_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/3D_Customization/Cus_285_FCN_Helmet/Cus_285_FCN_Helmet_ANM.dds</Texture>
+					</property>
+					<property>
+						g_defaultDetail
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_detailMetallicCutoff
+						<Float>0.590000</Float>
+					</property>
+					<property>
+						g_detailParams
+						<matrix>
+							<element>54331791</element>
+							<element>1056322608</element>
+							<element>536816640</element>
+							<element>1079782806</element>
+							<element>262023588</element>
+							<element>1108279296</element>
+							<element>436149248</element>
+							<element>1197539328</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>4261412864</element>
+							<element>0</element>
+						</matrix>
+					</property>
+					<property>
+						g_dirtLevel
+						<Float>0.480000</Float>
+					</property>
+					<property>
+						g_glossMax
+						<Float>0.432103</Float>
+					</property>
+					<property>
+						g_glossMin
+						<Float>0.133210</Float>
+					</property>
+				</material>
+				<groupOrigin>0.000000 0.234903 -0.007515</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-0.173993 -0.070000 -0.555283</min>
+		<max>0.178459 0.767639 0.158189</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>61248</geometrySize>
+</root>

@@ -272,6 +272,31 @@ msgstr ""
 msgid "detailsHelp/mechanics/autoShootGun_overheatGun/page1/title"
 msgstr "Автоматическая пушка с системой контроля температуры"
 
+msgid "detailsHelp/mechanics/autoreloaderSurge/page1/description"
+msgstr ""
+"Механизм мгновенно уменьшает время заряжания снаряда до определённого "
+"значения. Каждое применение использует один заряд за снаряд, которые "
+"постепенно восполняются. Скорость восполнения увеличивается при полном "
+"магазине. В начале боя доступно определённое количество зарядов."
+
+msgid "detailsHelp/mechanics/autoreloaderSurge/page1/title"
+msgstr "Механизм ускоренного заряжания"
+
+msgid "detailsHelp/mechanics/auxiliaryRocketLauncher/page1/description"
+msgstr ""
+"Эта машина оснащена ракетной пусковой установкой в маске орудия. Чтобы "
+"переключиться на ракетный прицел, нажмите клавишу"
+
+msgid "detailsHelp/mechanics/auxiliaryRocketLauncher/page1/title"
+msgstr "Спаренная ракетная установка"
+
+msgid "detailsHelp/mechanics/auxiliaryRocketLauncher/page2/description"
+msgstr ""
+"Чтобы запустить ракету в режиме ракетного прицела, нажмите клавишу огня:"
+
+msgid "detailsHelp/mechanics/auxiliaryRocketLauncher/page2/title"
+msgstr "Спаренная ракетная установка"
+
 msgid "detailsHelp/mechanics/battleFury/page1/description"
 msgstr ""
 "При каждом попадании по противнику вы получаете уровень эффективности перезарядки, временно ускоряющий перезарядку вашего орудия.\n"
@@ -279,6 +304,15 @@ msgstr ""
 
 msgid "detailsHelp/mechanics/battleFury/page1/title"
 msgstr "Полуавтоматическая боеукладка"
+
+msgid "detailsHelp/mechanics/bustleFeed/page1/description"
+msgstr ""
+"Модуль внешней подачи боеприпасов позволяет выстрелить единичным снарядом "
+"повышенной мощности, который наносит увеличенный урон. Активация модуля "
+"снижает мобильность и скорострельность."
+
+msgid "detailsHelp/mechanics/bustleFeed/page1/title"
+msgstr "Режим внешней подачи боеприпасов"
 
 msgid "detailsHelp/mechanics/chargeShot/page1/description"
 msgstr ""
@@ -441,6 +475,43 @@ msgstr ""
 
 msgid "detailsHelp/mechanics/rocketAcceleration/page2/title"
 msgstr "Преимущества и недостатки"
+
+msgid "detailsHelp/mechanics/shellCalibration/page1/description"
+msgstr ""
+"При попадании по обнаруженному противнику взрыватель следующего снаряда "
+"подстраивается под результат. Если удалось пробить броню, урон следующего "
+"боеприпаса увеличивается. В противном случае повышается его бронепробитие."
+
+msgid "detailsHelp/mechanics/shellCalibration/page1/title"
+msgstr "Регулируемый взрыватель"
+
+msgid "detailsHelp/mechanics/shellParamsSwitcher/page1/description"
+msgstr ""
+"Орудие этой машины оснащено специальными устройствами, которые позволяют "
+"изменять некоторые параметры снаряда перед выстрелом. В зависимости от "
+"выбранного режима характеристики боеприпаса изменяются, что позволяет быстро"
+" адаптироваться к различным боевым ситуациям."
+
+msgid "detailsHelp/mechanics/shellParamsSwitcher/page1/title"
+msgstr "Система калибровки снаряда"
+
+msgid "detailsHelp/mechanics/sightPointer/page1/description"
+msgstr ""
+"Улучшенное оптическое устройство, которое увеличивает дальность обзора и "
+"упрощает обнаружение движущихся и замаскированных целей. При активации "
+"устройство сканирует сектор перед вашей машиной, обнаруживая скрытые цели."
+
+msgid "detailsHelp/mechanics/sightPointer/page1/title"
+msgstr "ИК-система поиска и слежения (ИК-СПС)"
+
+msgid "detailsHelp/mechanics/sightPointer/page2/description"
+msgstr ""
+"Если оно раскрывает необнаруженного противника, ваша машина также немедленно"
+" становится обнаруженной и обнаруженные вами противники сразу узнают об "
+"этом. Вы можете вручную остановить сканирование после небольшой задержки."
+
+msgid "detailsHelp/mechanics/sightPointer/page2/title"
+msgstr "ИК-система поиска и слежения (ИК-СПС)"
 
 msgid "detailsHelp/mechanics/stagedJetBoosters/page1/description"
 msgstr ""

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from battle_royale.gui.game_control.awards_controller import BRProgressionStageHandler
 from battle_royale.gui.game_control.progression_controller import BRProgressionController
 from battle_royale.gui.game_control.battle_royale_controller import BattleRoyaleController as _BattleRoyale

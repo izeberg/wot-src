@@ -281,23 +281,7 @@
 		<name>default</name>
 		<preload>
 			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/lightning_02.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_water_displacement.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_tex_water_101_dday_ext.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_water_displacement.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_tex_water_10_hills.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/snow.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_long.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/snow.dds</texture>
+			<texture>particles/content_deferred/PFX_textures/lightning_01.dds</texture>
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps_solid.fx</shader>
@@ -308,12 +292,16 @@
 			<texture>particles/content_deferred/PFX_textures/eff_tex.dds</texture>
 		</preload>
 		<preload>
-			<shader>\data\shaders\ps_water.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_dirt.dds</texture>
+			<shader>\data\shaders\ps_water_displacement.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_tex_water.dds</texture>
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps_water_displacement.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_tex_water.dds</texture>
+			<texture>particles/content_deferred/PFX_textures/eff_tex_water_101_dday_ext.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_water_displacement.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_tex_water_10_hills.dds</texture>
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps_foam.fx</shader>
@@ -328,20 +316,16 @@
 			<texture>particles/content_deferred/PFX_textures/eff_leaves.dds</texture>
 		</preload>
 		<preload>
+			<shader>\Data\Shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/251_sulfurFumes.dds</texture>
+		</preload>
+		<preload>
 			<shader>\data\shaders\ps_long.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/eff_tex.dds</texture>
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps_long.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/eff_tex_long.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_dirt.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_long.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_dirt.dds</texture>
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps.fx</shader>
@@ -364,12 +348,36 @@
 			<texture>particles/content_deferred/PFX_textures/eff_tex_distortion.dds</texture>
 		</preload>
 		<preload>
+			<shader>\data\shaders\ps_shimmer.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization_main.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/snow.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/snow.dds</texture>
+		</preload>
+		<preload>
 			<shader>\data\shaders\ps.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/eff_rocket_accelerator.dds</texture>
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps_long.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/eff_rocket_accelerator.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_water.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_dirt.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_dirt.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_dirt.dds</texture>
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps.fx</shader>

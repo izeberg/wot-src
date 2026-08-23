@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/german/G196_Versuchspanzer_57/normal/lod4/Gun_03</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-0.590095 -0.322239 -0.179453</min>
+		<max>0.589316 0.387487 6.139724</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G196_Versuchspanzer_57/normal/lod3/Gun_03</nodefullVisual>
+</root>

@@ -1,6 +1,6 @@
 import re, typing, operator, time, BigWorld
+from constants import EMAIL_CONFIRMATION_QUEST_ID, EVENT_TYPE
 from challenges_common import isChallengeQuest
-from constants import EVENT_TYPE, EMAIL_CONFIRMATION_QUEST_ID
 from customization_quests_common import deserializeToken, validateToken
 from gui import makeHtmlString
 from gui.Scaleform.genConsts.MISSIONS_STATES import MISSIONS_STATES
@@ -10,12 +10,13 @@ from gui.Scaleform.locale.RES_ICONS import RES_ICONS
 from gui.impl import backport
 from gui.impl.gen import R
 from gui.server_events import formatters
-from gui.server_events.finders import FINAL_PT_TOKEN_PREFIX, PT_TOKEN_PREFIX, PM3_MILESTONE_QUEST_PREFIX, PM3_MILESTONE_QUEST_POSTFIX, PM3_PERSONAL_MISSION_HONOR_POSTFIX, isPM3Points, isPM3Milestone, isPMQuestRegExp, PM3_QUEST_PREFIX
+from gui.server_events.finders import FINAL_PT_TOKEN_PREFIX, NO_AWARD_LIST_HONOR_POSTFIX, NO_AWARD_LIST_QUEST_PREFIXES, PT_TOKEN_PREFIX, isPMNoAwardListMilestone, isPMPoints, isPMQuestRegExp
 from gui.server_events.personal_missions_navigation import PersonalMissionsNavigation
 from gui.shared.gui_items.customization import C11nStyleProgressData
-from helpers import time_utils, i18n, dependency, isPlayerAccount
+from gui.shared.sort_key import SortKey
+from helpers import dependency, i18n, isPlayerAccount, time_utils
 from shared_utils import CONST_CONTAINER, findFirst, first
-from personal_missions import PM_BRANCH_TO_FREE_TOKEN_NAME
+from personal_missions import PM_BRANCH_TO_FREE_TOKEN_NAME, PMProgressKeys
 from skeletons.gui.customization import ICustomizationService
 from skeletons.gui.game_control import IMarathonEventsController
 from skeletons.gui.lobby_context import ILobbyContext
@@ -288,12 +289,11 @@ def isAllQuestsCompleted(quests):
 def isSuitableForPM(diff):
     if not diff:
         return (False, True)
-    pmQuestsSet = {
-     'potapovQuests', 'pm2_progress', 'pm3_progress'}
+    pmQuestsSet = set(PMProgressKeys)
     tokensSet = {'tokens'}
     excludedSet = {'prevRev', 'rev', 'quests'}
     diffKeys = set(diff.keys())
-    filteredPMTokenQuests = {qID for qID in diff.get('quests', {}).iterkeys() if qID.startswith(PM3_QUEST_PREFIX) and not isPM3Milestone(qID) or re.match(isPMQuestRegExp, qID) if qID.startswith(PM3_QUEST_PREFIX) and not isPM3Milestone(qID) or re.match(isPMQuestRegExp, qID)}
+    filteredPMTokenQuests = {qID for qID in diff.get('quests', {}).iterkeys() if any([ qID.startswith(prefix) for prefix in NO_AWARD_LIST_QUEST_PREFIXES ]) and not isPMNoAwardListMilestone(qID) or re.match(isPMQuestRegExp, qID) if any([ qID.startswith(prefix) for prefix in NO_AWARD_LIST_QUEST_PREFIXES ]) and not isPMNoAwardListMilestone(qID) or re.match(isPMQuestRegExp, qID)}
     otherKeys = bool(diffKeys - pmQuestsSet - tokensSet - excludedSet) or bool(set(diff.get('quests', {}).keys()) - filteredPMTokenQuests)
     hasPmQuests = bool(pmQuestsSet & diffKeys) or bool(filteredPMTokenQuests)
     hasPMTokens = False
@@ -301,7 +301,7 @@ def isSuitableForPM(diff):
     if 'tokens' in diff:
         tokens = set(diff['tokens'].keys())
         freeTokens = set(PM_BRANCH_TO_FREE_TOKEN_NAME.values())
-        pmTokens = {token for token in tokens if token.startswith(PT_TOKEN_PREFIX) or token.startswith(FINAL_PT_TOKEN_PREFIX) or isPM3Points(token) if token.startswith(PT_TOKEN_PREFIX) or token.startswith(FINAL_PT_TOKEN_PREFIX) or isPM3Points(token)}
+        pmTokens = {token for token in tokens if token.startswith(PT_TOKEN_PREFIX) or token.startswith(FINAL_PT_TOKEN_PREFIX) or isPMPoints(token) if token.startswith(PT_TOKEN_PREFIX) or token.startswith(FINAL_PT_TOKEN_PREFIX) or isPMPoints(token)}
         hasPMTokens = bool(pmTokens or freeTokens & tokens)
         hasOtherTokens = bool(tokens - freeTokens - pmTokens)
     return (hasPMTokens or hasPmQuests, hasOtherTokens or otherKeys)
@@ -327,15 +327,11 @@ def isMapsTrainingQuest(eventID):
 
 
 def isBattleMattersQuestID(questID):
-    if questID:
-        return questID.startswith(BATTLE_MATTERS_QUEST_ID)
-    return False
+    return questID and questID.startswith(BATTLE_MATTERS_QUEST_ID)
 
 
 def isPremium(eventID):
-    if eventID:
-        return eventID.startswith(PREMIUM_GROUP_PREFIX)
-    return False
+    return eventID and eventID.startswith(PREMIUM_GROUP_PREFIX)
 
 
 def isDailyEpicReward(eventID):
@@ -345,15 +341,11 @@ def isDailyEpicReward(eventID):
 
 
 def isDailyEpic(eventID):
-    if eventID:
-        return eventID.startswith(EPIC_BATTLE_GROUPS_ID)
-    return False
+    return eventID and eventID.startswith(EPIC_BATTLE_GROUPS_ID)
 
 
 def isBattleRoyale(eventID):
-    if eventID:
-        return eventID.startswith(BATTLE_ROYALE_GROUPS_ID)
-    return False
+    return eventID and eventID.startswith(BATTLE_ROYALE_GROUPS_ID)
 
 
 def isRankedDaily(eventID):
@@ -363,15 +355,11 @@ def isRankedDaily(eventID):
 
 
 def isRankedPlatform(eventID):
-    if eventID:
-        return eventID.startswith(RANKED_PLATFORM_GROUP_ID)
-    return False
+    return eventID and eventID.startswith(RANKED_PLATFORM_GROUP_ID)
 
 
 def isDailyQuest(eventID):
-    if eventID:
-        return eventID.startswith(DAILY_QUEST_ID_PREFIX)
-    return False
+    return eventID and eventID.startswith(DAILY_QUEST_ID_PREFIX)
 
 
 def isWeeklyQuest(eventID):
@@ -381,22 +369,17 @@ def isWeeklyQuest(eventID):
 
 
 def isACEmailConfirmationQuest(eventID):
-    if eventID:
-        return eventID == EMAIL_CONFIRMATION_QUEST_ID
-    return False
+    return eventID and eventID == EMAIL_CONFIRMATION_QUEST_ID
 
 
-def isPM30MilestoneQuest(eventID):
-    return eventID.startswith(PM3_MILESTONE_QUEST_PREFIX) and PM3_MILESTONE_QUEST_POSTFIX in eventID
+def isPMAdvancedOperationFinishedQuest(eventID):
+    return eventID.startswith(FINAL_PT_TOKEN_PREFIX) and eventID.endswith(NO_AWARD_LIST_HONOR_POSTFIX)
 
 
-def isPM30OperationFinishedQuest(eventID):
-    return eventID.startswith(FINAL_PT_TOKEN_PREFIX) and eventID.endswith(PM3_PERSONAL_MISSION_HONOR_POSTFIX)
-
-
-def isRegularQuest(eventID):
-    idGameModeEvent = isDailyEpic(eventID) or isRankedDaily(eventID) or isRankedPlatform(eventID)
-    return not (isMarathon(eventID) or isBattleMattersQuestID(eventID) or isPremium(eventID) or idGameModeEvent)
+def isRegularQuest(eventID, additionalCheckers):
+    if isMarathon(eventID) or isBattleMattersQuestID(eventID) or isPremium(eventID) or isDailyEpic(eventID) or isRankedDaily(eventID) or isRankedPlatform(eventID):
+        return False
+    return not any(func(eventID) for func in additionalCheckers)
 
 
 def isCommonBattleQuest(event):
@@ -454,7 +437,7 @@ def getLootboxesFromBonuses(bonuses, itemsCache=None):
             tokens = bonus.getTokens()
             boxes = itemsCache.items.tokens.getLootBoxes()
             for token in tokens.values():
-                if 'lootBox' in token.id:
+                if 'lootBox' in token.id and token.id in boxes:
                     lootboxType = boxes[token.id].getType()
                     if lootboxType not in lootboxes:
                         lootboxes[lootboxType] = {'count': token.count, 'isFree': boxes[token.id].isFree()}
@@ -603,3 +586,20 @@ class WeeklyQuestInfo(object):
     def _getCondition(token):
         valueStr = token[_WQ_CONDITION_HEAD_LEN:]
         return int(valueStr)
+
+
+class PremMissionsSortKey(SortKey):
+    __slots__ = ('item', )
+
+    def __init__(self, item):
+        super(PremMissionsSortKey, self).__init__()
+        self.item = item
+
+    def _cmp(self, other):
+
+        def isChild(a, b):
+            if not b.getParents():
+                return 0
+            return a.getID() in b.getParents().values()[0]
+
+        return isChild(self.item, other.item) - isChild(other.item, self.item)

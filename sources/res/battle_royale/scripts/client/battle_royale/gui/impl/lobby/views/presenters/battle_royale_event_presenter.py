@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from battle_royale.gui.impl.gen.view_models.views.lobby.views.battle_royale_event_model import BattleRoyaleEventModel
 from battle_royale.gui.impl.lobby.br_helpers.utils import setEventInfo
 from gui.impl.pub.view_component import ViewComponent

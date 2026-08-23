@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<CellMethods>
+		<spawnBot>
+			<Args>
+				<botName>STRING</botName>
+			</Args>
+			<Exposed/>
+		</spawnBot>
+	</CellMethods>
+	<ClientMethods/>
+	<Properties/>
+	<ofEntity>
+		<Vehicle/>
+	</ofEntity>
+	<DefaultKeyName>brCheats</DefaultKeyName>
+</root>

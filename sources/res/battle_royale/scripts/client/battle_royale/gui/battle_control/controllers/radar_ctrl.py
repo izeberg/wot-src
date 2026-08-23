@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, BigWorld
 from constants import ARENA_PERIOD
 from gui.battle_control.view_components import ViewComponentsController

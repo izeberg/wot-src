@@ -23,12 +23,19 @@
 					<materialKind>112</materialKind>
 					<fx>shaders/std_effects/glow.fx</fx>
 					<property>
+						g_enableEnvMultiplier
+						<Bool>true</Bool>
+					</property>
+					<property>
 						destBlend
 						<Int>2</Int>
 					</property>
 					<property>
 						selfIllumination
-						<Float>35.000000</Float>
+						<Float>
+							152.173913
+							<!--BW_String-->
+						</Float>
 					</property>
 					<property>
 						diffuseMap

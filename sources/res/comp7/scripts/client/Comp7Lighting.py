@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, AnimationSequence, BigWorld
 from enum import Enum
 import math_utils

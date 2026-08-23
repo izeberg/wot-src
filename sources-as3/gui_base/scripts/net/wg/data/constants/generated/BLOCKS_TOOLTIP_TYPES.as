@@ -23,7 +23,7 @@ package net.wg.data.constants.generated
       
       public static const TOOLTIP_TEXT_PARAMETER_BLOCK_TWO_COL_LINKAGE:String = "TextParameterBlockTwoColUI";
       
-      public static const TOOLTIP_TEXT_PARAMETER_BLOCK_TWO_COL_WITH_ICON_LINKAGE:String = "TextParameterBlockTwoColWithIconUI";
+      public static const TOOLTIP_TEXT_PARAMETER_BLOCK_TWO_COL_WITH_ICONS_LINKAGE:String = "TextParameterBlockTwoColWithIconsUI";
       
       public static const TOOLTIP_OPT_DEVICE_SLOT_BLOCK:String = "OptDeviceSlotBlockUI";
       

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.daapi.view.common.battle_royale.params import getModuleParameters, getVehicleParameters
 from gui.Scaleform.genConsts.ATLAS_CONSTANTS import ATLAS_CONSTANTS
 from gui.doc_loaders.battle_royale_settings_loader import getTreeModuleIcon, getTreeModuleHeader

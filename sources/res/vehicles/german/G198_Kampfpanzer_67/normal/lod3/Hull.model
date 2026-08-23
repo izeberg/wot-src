@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G198_Kampfpanzer_67/normal/lod3/Hull</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/german/G198_Kampfpanzer_67/normal/lod4/Hull</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.904135 -0.666500 -4.137993</min>
+		<max>1.904135 0.620901 4.049402</max>
+	</visibilityBox>
+</root>

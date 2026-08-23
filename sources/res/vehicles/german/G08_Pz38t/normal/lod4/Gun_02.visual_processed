@@ -37,8 +37,8 @@
 						<transform>
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
-							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>0.000150 -0.002528 -1.475644</row3>
+							<row2>-0.000000 0.000000 1.000000</row2>
+							<row3>0.000150 -0.002528 -1.367765</row3>
 						</transform>
 					</node>
 					<node>
@@ -47,7 +47,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 -1.000000</row2>
-							<row3>0.000000 0.000000 -3.000000</row3>
+							<row3>-0.000000 0.000000 -3.000000</row3>
 						</transform>
 					</node>
 				</node>
@@ -65,11 +65,11 @@
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
-		<node>G_BlendBone</node>
 		<node>Gun_BlendBone</node>
+		<node>G_BlendBone</node>
 		<geometry>
-			<vertices>gun_02Shape1.vertices</vertices>
-			<primitive>gun_02Shape1.indices</primitive>
+			<vertices>gun_02_Shape.vertices</vertices>
+			<primitive>gun_02_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -77,10 +77,6 @@
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
-					</property>
 					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/german/G08_Pz38t/Pz38t_guns_AO.dds</Texture>
@@ -101,19 +97,15 @@
 						diffuseMap
 						<Texture>vehicles/german/G08_Pz38t/Pz38t_guns_AM.dds</Texture>
 					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
 				</material>
-				<groupOrigin>0.000097 0.047638 -0.799301</groupOrigin>
+				<groupOrigin>0.000097 0.047638 -0.795392</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
 		<min>-0.084159 -0.064812 -0.041460</min>
-		<max>0.084353 0.160087 1.640061</max>
+		<max>0.084353 0.160087 1.632245</max>
 	</boundingBox>
 	<geometrySize>1636</geometrySize>
 </root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G198_Kampfpanzer_67/crash/lod3/Gun_01</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/german/G198_Kampfpanzer_67/crash/lod4/Gun_01</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.058205 -0.396448 -0.172747</min>
+		<max>1.060640 0.363610 6.628491</max>
+	</visibilityBox>
+</root>

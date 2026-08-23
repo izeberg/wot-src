@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.416111 -0.035358 -2.829488</min>
+		<max>1.421377 1.418452 1.719715</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G195_HWK_40/crash/lod2/Turret_01</nodefullVisual>
+	<parent>vehicles/german/G195_HWK_40/crash/lod3/Turret_01</parent>
+	<extent>96</extent>
+</root>

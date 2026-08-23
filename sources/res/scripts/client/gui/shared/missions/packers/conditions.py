@@ -179,16 +179,14 @@ class BonusConditionPacker(UIConditionPacker):
         if not bonusCondsModelList:
             _logger.debug('BonusConditions were not received for event %s.', event.getID())
             return
-        else:
-            for bonusCondModel in bonusCondsModelList:
-                if not bonusCondModel:
-                    continue
-                model.getItems().addViewModel(bonusCondModel)
-                isItemAddedToBonusCondModel = True
+        for bonusCondModel in bonusCondsModelList:
+            if not bonusCondModel:
+                continue
+            model.getItems().addViewModel(bonusCondModel)
+            isItemAddedToBonusCondModel = True
 
-            if isItemAddedToBonusCondModel:
-                model.setConditionType(typeOfBonusConditionGroup)
-            return
+        if isItemAddedToBonusCondModel:
+            model.setConditionType(typeOfBonusConditionGroup)
 
 
 class PostBattleConditionPacker(UIConditionPacker):
@@ -212,14 +210,12 @@ class PostBattleConditionPacker(UIConditionPacker):
         if not postBattleCondsModelList:
             _logger.debug('PostBattleConditions were not received for event %s.', event.getID())
             return
-        else:
-            for postBattleCondModel in postBattleCondsModelList:
-                if not postBattleCondModel:
-                    continue
-                model.getItems().addViewModel(postBattleCondModel)
+        for postBattleCondModel in postBattleCondsModelList:
+            if not postBattleCondModel:
+                continue
+            model.getItems().addViewModel(postBattleCondModel)
 
-            model.setConditionType(typeOfPostBattleConditionGroup)
-            return
+        model.setConditionType(typeOfPostBattleConditionGroup)
 
     @classmethod
     def packDefaultCondition(cls, event, model):

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from skeletons.gui.game_control import IBattleRoyaleController
 from gui.impl.lobby.page.platoon_presenter import PlatoonPresenter
 from helpers import dependency

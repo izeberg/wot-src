@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from account_helpers import AccountSettings
 from account_helpers.AccountSettings import BR_UI_SECTION, BR_PROGRESSION_SEEN_QUESTS
 

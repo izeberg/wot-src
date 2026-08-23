@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import weakref
 from account_helpers.AccountSettings import COMP7_BANNER_FIRST_APPEARANCE_TIMESTAMP
 from comp7_core.gui.impl.lobby.event_banner import Comp7CoreEventBanner

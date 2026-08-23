@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from battle_royale.gui.impl.gen.view_models.views.lobby.enums import CoinType
 from battle_royale.gui.impl.gen.view_models.views.lobby.tooltips.proxy_currency_tooltip_view_model import ProxyCurrencyTooltipViewModel
 from frameworks.wulf import ViewSettings

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from frameworks.wulf import ViewFlags, ViewSettings, WindowFlags
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
 from gui.Scaleform.daapi.view.common.battle_royale.br_helpers import currentHangarIsBattleRoyale

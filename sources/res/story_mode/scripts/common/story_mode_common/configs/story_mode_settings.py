@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from game_params_common.base_manager import GameParamsSchema
 from dict2model import models, fields, validate, schemas

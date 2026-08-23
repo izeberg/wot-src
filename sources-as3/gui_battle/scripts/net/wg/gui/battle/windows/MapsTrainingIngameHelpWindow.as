@@ -3,8 +3,6 @@ package net.wg.gui.battle.windows
    import flash.display.MovieClip;
    import flash.text.TextField;
    import net.wg.data.constants.InvalidationType;
-   import net.wg.data.constants.generated.BATTLEATLAS;
-   import net.wg.gui.battle.components.BattleAtlasSprite;
    import net.wg.gui.battle.eventBattle.views.loading.containers.LoadingPageContainer;
    import net.wg.gui.battle.eventBattle.views.loading.containers.StepperContainer;
    import net.wg.gui.battle.eventBattle.views.loading.data.EventLoadingPageVO;
@@ -38,10 +36,6 @@ package net.wg.gui.battle.windows
       
       public var stepperBar:StepperContainer = null;
       
-      public var bottomBg:BattleAtlasSprite = null;
-      
-      public var background:BattleAtlasSprite = null;
-      
       private var _tutorialPageList:Vector.<LoadingPageContainer>;
       
       private var _picIndex:int = 0;
@@ -62,8 +56,6 @@ package net.wg.gui.battle.windows
          this.closeBtn.label = INGAME_HELP.BATTLECONTROLS_CLOSEBTNLABEL;
          this.closeBtn.addEventListener(ButtonEvent.CLICK,this.onBtnCloseClickHandler);
          this.pageTitleTF.text = INGAME_HELP.DETAILSHELP_DEFAULT_TITLE;
-         this.bottomBg.imageName = BATTLEATLAS.HELP_WINDOW_BOTTOM_BG;
-         this.background.imageName = BATTLEATLAS.HELP_WINDOW_BG;
          updateStage(App.appWidth,App.appHeight);
          window.addEventListener(WindowEvent.SCALE_Y_CHANGED,this.onWindowScaleYChangedHandler);
          this.btnLeft.addEventListener(ButtonEvent.CLICK,this.onButtonsClickHandler);
@@ -83,6 +75,34 @@ package net.wg.gui.battle.windows
             this.createImagesList();
             this.updateBackgroundRenderer();
          }
+      }
+      
+      override protected function onDispose() : void
+      {
+         this.btnLeft.removeEventListener(ButtonEvent.CLICK,this.onButtonsClickHandler);
+         this.btnRight.removeEventListener(ButtonEvent.CLICK,this.onButtonsClickHandler);
+         window.removeEventListener(WindowEvent.SCALE_Y_CHANGED,this.onWindowScaleYChangedHandler);
+         this.closeBtn.removeEventListener(ButtonEvent.CLICK,this.onBtnCloseClickHandler);
+         this.closeBtn.dispose();
+         this.closeBtn = null;
+         this.pageTitleTF = null;
+         this.btnLeft.dispose();
+         this.btnLeft = null;
+         this.btnRight.dispose();
+         this.btnRight = null;
+         this.backgroundContainer = null;
+         this.stepperBar.dispose();
+         this.stepperBar = null;
+         this.disposeBackgroundRenderers();
+         this._tutorialPageList = null;
+         this._data = null;
+         super.onDispose();
+      }
+      
+      override protected function setData(param1:Vector.<EventLoadingPageVO>) : void
+      {
+         this._data = param1;
+         invalidateData();
       }
       
       private function disposeBackgroundRenderers() : void
@@ -126,46 +146,6 @@ package net.wg.gui.battle.windows
          }
       }
       
-      override protected function onDispose() : void
-      {
-         this.btnLeft.removeEventListener(ButtonEvent.CLICK,this.onButtonsClickHandler);
-         this.btnRight.removeEventListener(ButtonEvent.CLICK,this.onButtonsClickHandler);
-         window.removeEventListener(WindowEvent.SCALE_Y_CHANGED,this.onWindowScaleYChangedHandler);
-         this.closeBtn.removeEventListener(ButtonEvent.CLICK,this.onBtnCloseClickHandler);
-         this.closeBtn.dispose();
-         this.closeBtn = null;
-         this.pageTitleTF = null;
-         this.btnLeft.dispose();
-         this.btnLeft = null;
-         this.btnRight.dispose();
-         this.btnRight = null;
-         this.backgroundContainer = null;
-         this.stepperBar.dispose();
-         this.stepperBar = null;
-         this.bottomBg = null;
-         this.background = null;
-         this.disposeBackgroundRenderers();
-         this._tutorialPageList = null;
-         this._data = null;
-         super.onDispose();
-      }
-      
-      override protected function setData(param1:Vector.<EventLoadingPageVO>) : void
-      {
-         this._data = param1;
-         invalidateData();
-      }
-      
-      private function onWindowScaleYChangedHandler(param1:WindowEvent) : void
-      {
-         invalidate(WindowViewInvalidationType.POSITION_INVALID);
-      }
-      
-      private function onBtnCloseClickHandler(param1:ButtonEvent) : void
-      {
-         handleWindowClose();
-      }
-      
       private function updateBackgroundRenderer() : void
       {
          if(this._tutorialPageList.length)
@@ -177,6 +157,16 @@ package net.wg.gui.battle.windows
             this.backgroundContainer.addChild(this._tutorialPageList[this._picIndex]);
             this.stepperBar.selectItem(this._picIndex);
          }
+      }
+      
+      private function onWindowScaleYChangedHandler(param1:WindowEvent) : void
+      {
+         invalidate(WindowViewInvalidationType.POSITION_INVALID);
+      }
+      
+      private function onBtnCloseClickHandler(param1:ButtonEvent) : void
+      {
+         handleWindowClose();
       }
       
       private function onButtonsClickHandler(param1:ButtonEvent) : void

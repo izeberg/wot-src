@@ -137,7 +137,7 @@ package net.wg.gui.lobby.techtree.sub
             this.updateLayout();
             invalidate(INV_RENDERERS_LINES_STATE);
          }
-         if(isInvalid(InvalidationType.LAYOUT,InvalidationType.DATA))
+         if(isInvalidTypes(InvalidationType.LAYOUT,InvalidationType.DATA))
          {
             this.onDrawComplete();
          }

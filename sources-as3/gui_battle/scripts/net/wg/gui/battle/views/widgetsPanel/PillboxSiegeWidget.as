@@ -5,10 +5,10 @@ package net.wg.gui.battle.views.widgetsPanel
    import net.wg.data.constants.Values;
    import net.wg.data.constants.generated.MECHANIC_WIDGET_HOTKEY_CONST;
    import net.wg.data.constants.generated.PILLBOX_SIEGE_WIDGET_CONST;
+   import net.wg.gui.battle.views.widgetsPanel.common.DevicesHolder;
    import net.wg.gui.battle.views.widgetsPanel.common.HotkeySettings;
    import net.wg.gui.battle.views.widgetsPanel.pillbox.PillboxAnim;
    import net.wg.gui.battle.views.widgetsPanel.pillbox.PillboxAnimMgr;
-   import net.wg.gui.battle.views.widgetsPanel.pillbox.PillboxDevicesContainer;
    import net.wg.gui.battle.views.widgetsPanel.vo.DeviceStateInfo;
    import net.wg.infrastructure.base.meta.IPillboxSiegeWidgetMeta;
    import net.wg.infrastructure.base.meta.impl.PillboxSiegeWidgetMeta;
@@ -33,7 +33,7 @@ package net.wg.gui.battle.views.widgetsPanel
       
       public var animRed:PillboxAnim = null;
       
-      public var devices:PillboxDevicesContainer = null;
+      public var devices:DevicesHolder = null;
       
       private var _animMgr:PillboxAnimMgr = null;
       

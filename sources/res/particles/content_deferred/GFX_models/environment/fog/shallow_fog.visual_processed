@@ -22,6 +22,10 @@
 				<material>
 					<identifier>lambert1</identifier>
 					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
+					<property>
+						g_enableEnvMultiplier
+						<Bool>true</Bool>
+					</property>
 					<collisionFlags>255</collisionFlags>
 					<materialKind>0</materialKind>
 					<property>
@@ -63,6 +67,10 @@
 					<property>
 						FreshnelColor
 						<Vector4>1.000000 1.000000 1.000000 1.000000</Vector4>
+					</property>
+					<property>
+						lightMultipliers
+						<Vector4>3.523609 0.000000 0.000000 0.000000</Vector4>
 					</property>
 				</material>
 			</primitiveGroup>

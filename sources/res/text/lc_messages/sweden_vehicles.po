@@ -214,6 +214,9 @@ msgstr "Ambassador"
 msgid "Chassis_S39_Strv_m31"
 msgstr "Strv m/31"
 
+msgid "Chassis_S41_BV_111"
+msgstr "BV-111"
+
 msgid "DB_605"
 msgstr "DB 605"
 
@@ -276,6 +279,9 @@ msgstr "Ra 105"
 
 msgid "Ra_121"
 msgstr "Ra 121"
+
+msgid "Ra_122"
+msgstr "Ra 122"
 
 msgid "Ra_122_Ambassador"
 msgstr "Ra 122 (Ambassador)"
@@ -1077,6 +1083,30 @@ msgstr "Strv m/31"
 msgid "S39_Strv_m31_short_special"
 msgstr "Точное орудие, неплохая мобильность"
 
+msgid "S41_BV_111"
+msgstr "BV-111"
+
+msgid "S41_BV_111_descr"
+msgstr ""
+"В начале 1970-х годов управление оборонных закупок (FMV) исследовало "
+"возможность создания башенного танка, сочетающего низкий силуэт, вращающуюся"
+" башню, систему заряжания на базе шведских наработок и перспективное орудие "
+"12 cm StrvKan L/40. Проект получил рабочее название Projekt BV-111, однако "
+"после знакомства с предсерийными Leopard 2AV, на фоне которых BV-111 "
+"выглядел слишком лёгким, его отложили на неопределённый срок. Дальнейшая "
+"закупка Швецией Leopard 2 (Strv 121/122) привела к окончательному закрытию "
+"проекта."
+
+msgid "S41_BV_111_long_special"
+msgstr ""
+"BV-111 использует преимущества модуля внешней подачи боеприпасов, который "
+"позволяет заряжать усиленные снаряды при необходимости. В остальном машина "
+"сохраняет характерные черты шведских танков: гидропневматическую подвеску, "
+"большие углы наклона брони и низкий профиль."
+
+msgid "S41_BV_111_short"
+msgstr "BV-111"
+
 msgid "SFA_8_cyl_boxer"
 msgstr "SFA 8 cyl boxer"
 
@@ -1245,6 +1275,9 @@ msgstr "Ambassador"
 msgid "Turret_1_S39_Strv_m31"
 msgstr "Strv m/31"
 
+msgid "Turret_1_S41_BV_111"
+msgstr "BV-111"
+
 msgid "Turret_2_S02_Strv_M42"
 msgstr "Strv m/42"
 
@@ -1283,6 +1316,9 @@ msgstr "Volvo DC"
 
 msgid "Volvo_FE"
 msgstr "Volvo FE"
+
+msgid "Volvo_SFA_12B"
+msgstr "Volvo SFA 12B"
 
 msgid "Volvo_SFA_12_Ambassador"
 msgstr "Volvo SFA 12 (Ambassador)"
@@ -1647,6 +1683,9 @@ msgstr "psgr m/60"
 msgid "_120mm_psgr_m_ny"
 msgstr "psgr m/ny"
 
+msgid "_120mm_psgr_m_ny_hog_laddning"
+msgstr "psgr m/ny hög laddning"
+
 msgid "_120mm_sgr_b_51"
 msgstr "slpprj b/51"
 
@@ -1661,6 +1700,9 @@ msgstr "sgr m/60"
 
 msgid "_120mm_sgr_m_ny"
 msgstr "sgr m/ny"
+
+msgid "_120mm_sgr_m_ny_ord"
+msgstr "sgr m/ny ord"
 
 msgid "_120mm_slpprj_b"
 msgstr "slpprj b/68"
@@ -1680,8 +1722,14 @@ msgstr "slpprj m/60"
 msgid "_120mm_slpprj_m_ny"
 msgstr "slpprj m/ny"
 
+msgid "_120mm_slpprj_m_ny_hog_laddning"
+msgstr "slpprj m/ny hög laddning"
+
 msgid "_120mm_strvkan_L_40"
 msgstr "12 cm strvkan L/40"
+
+msgid "_12_cm_hogtrycksstrvkan_L_40"
+msgstr "12 cm högtrycksstrvkan L/40"
 
 msgid "_1_W_Sv"
 msgstr "1 W Sv"

@@ -15,7 +15,7 @@ from gui.server_events.modifiers import ACTION_MODIFIER_TYPE, ACTION_SECTION_TYP
 from gui.server_events.personal_missions_cache import PersonalMissionsCache
 from gui.server_events.prefetcher import Prefetcher
 from gui.shared.gui_items import ACTION_ENTITY_ITEM as aei, GUI_ITEM_TYPE
-from gui.shared.system_factory import collectQuestBuilders
+from gui.shared.system_factory import collectQuestBuilders, collectSpecialQuestsCheckers
 from gui.shared.utils.requesters.QuestsProgressRequester import QuestsProgressRequester
 from helpers import dependency, time_utils
 from items import getTypeOfCompactDescr
@@ -210,7 +210,7 @@ class EventsCache(IEventsCache):
         return result
 
     def getLockedPersonalMissions(self):
-        allQuests = self.getPersonalMissions().getAllQuests(PM_BRANCH.ALL)
+        allQuests = self.getPersonalMissions().getAllQuests(PM_BRANCH.ALL_NAMES)
         return {allQuests[lockedQuestID] for lockedList in self.__lockedQuestIds.values() for lockedQuestID in lockedList if lockedQuestID in allQuests}
 
     @wg_async
@@ -377,8 +377,8 @@ class EventsCache(IEventsCache):
 
         return self._getQuests(rankedFilterFunc)
 
-    def getAllQuests(self, filterFunc=None, includePersonalMissions=False):
-        return self._getQuests(filterFunc, includePersonalMissions)
+    def getAllQuests(self, filterFunc=None, includePersonalMissions=False, specialQuestsGroup=None):
+        return self._getQuests(filterFunc, includePersonalMissions, specialQuestsGroup=specialQuestsGroup)
 
     def getActions(self, filterFunc=None):
         filterFunc = filterFunc or (lambda a: True)
@@ -393,6 +393,43 @@ class EventsCache(IEventsCache):
 
     def getAnnouncedActions(self):
         return self.__getAnnouncedActions()
+
+    def getQuestByID(self, qID):
+        quest = self._getCachedQuest(qID)
+        if quest is not None:
+            return quest
+        else:
+            questsData = self.__getQuestsData()
+            questsData.update(self.__getPersonalQuestsData())
+            questsData.update(self.__getPersonalMissionsHiddenQuests())
+            if qID in questsData:
+                return self._makeQuest(qID, questsData[qID])
+            return
+
+    def requestQuestProgress(self, quest):
+        questProgress = self.__questsProgressRequester.getQuestProgress(quest)
+        if isinstance(questProgress, tuple):
+            return questProgress[0]
+        return questProgress
+
+    def getQuestsByIDs(self, qIDs):
+        result = {}
+        data = {}
+        for qID in qIDs:
+            quest = self._getCachedQuest(qID)
+            if quest is not None:
+                result[qID] = quest
+            else:
+                if not data:
+                    data = self.__getQuestsData()
+                    data.update(self.__getPersonalQuestsData())
+                    data.update(self.__getPersonalMissionsHiddenQuests())
+                if qID in data:
+                    result[qID] = self._makeQuest(qID, data[qID])
+                else:
+                    result[qID] = None
+
+        return result
 
     def getEvents(self, filterFunc=None):
         svrEvents = self.getQuests(filterFunc)
@@ -560,12 +597,18 @@ class EventsCache(IEventsCache):
             alias = first(m.getAlias() for m in action.getModifiers())
         return (alias, counterValue)
 
-    def _getQuests(self, filterFunc=None, includePersonalMissions=False, makeRelations=True):
+    def _getQuests(self, filterFunc=None, includePersonalMissions=False, makeRelations=True, specialQuestsGroup=None):
         result = {}
         groups = {}
         filterFunc = filterFunc or (lambda a: True)
         timeUTCNow = time_utils.getServerUTCTime()
+        specialQuestsCheckers = collectSpecialQuestsCheckers()
         for qID, q in self.__getCommonQuestsIterator():
+            if specialQuestsGroup is None:
+                if any([ specialQuestFunc(qID) for specialQuestFunc in specialQuestsCheckers.itervalues() ]):
+                    continue
+            elif not specialQuestsCheckers[specialQuestsGroup](qID):
+                continue
             if qID in self.__quests2actions:
                 q.linkedActions = self.__quests2actions[qID]
             if q.getType() == EVENT_TYPE.GROUP:
@@ -589,16 +632,17 @@ class EventsCache(IEventsCache):
 
         if not makeRelations:
             return result
-        children, parents, parentsName = self._makeQuestsRelations(result)
-        for qID, q in result.iteritems():
-            if qID in children:
-                q.setChildren(children[qID])
-            if qID in parents:
-                q.setParents(parents[qID])
-            if qID in parentsName:
-                q.setParentsName(parentsName[qID])
+        else:
+            children, parents, parentsName = self._makeQuestsRelations(result)
+            for qID, q in result.iteritems():
+                if qID in children:
+                    q.setChildren(children[qID])
+                if qID in parents:
+                    q.setParents(parents[qID])
+                if qID in parentsName:
+                    q.setParentsName(parentsName[qID])
 
-        return result
+            return result
 
     def _getQuestsGroups(self, filterFunc=None):
         filterFunc = filterFunc or (lambda a: True)
@@ -651,6 +695,13 @@ class EventsCache(IEventsCache):
                 result[a.getID()] = a
 
         return result
+
+    def _getCachedQuest(self, qID):
+        storage = self.__cache['quests']
+        if qID in storage:
+            return storage[qID]
+        else:
+            return
 
     def _makeQuest(self, qID, qData, maker=DefaultQuestMaker(), **kwargs):
         storage = self.__cache['quests']

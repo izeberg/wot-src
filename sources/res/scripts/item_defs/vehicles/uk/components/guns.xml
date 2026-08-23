@@ -8120,15 +8120,6 @@
 				0.48
 				<!--BW_String-->
 			</impulse>
-			<recoil>
-				<lodDist>MEDIUM</lodDist>
-				<amplitude>
-					0.36
-					<!--BW_String-->
-				</amplitude>
-				<recoilEffect>medium</recoilEffect>
-			</recoil>
-			<effects>shot_medium_mb</effects>
 			<reloadEffect>dualgun_reload85_107</reloadEffect>
 			<pitchLimits>
 				<minPitch>

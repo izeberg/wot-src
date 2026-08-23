@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from battle_royale.gui.impl.gen.view_models.views.lobby.enums import SubMode, CoinType
 from battle_royale.gui.impl.lobby.views.states import BattleRoyaleBattleResultsState
 from gui.Scaleform.lobby_entry import getLobbyStateMachine

@@ -1200,6 +1200,9 @@ msgstr ""
 msgid "crewBooksNotification/bookUsed"
 msgstr "%(name)s."
 
+msgid "crewBooksNotification/bookUsedOneOf"
+msgstr "%(name)s"
+
 msgid "crewBooksNotification/booksUsed"
 msgstr "%(name)s (x%(count)s)"
 
@@ -2385,10 +2388,10 @@ msgstr ""
 "для входа в World&nbsp;of&nbsp;Warships"
 
 msgid "lootboxes/open/server_error"
-msgstr "Ошибка получения подарка: серверный сбой."
+msgstr "Ошибка открытия коробки: серверный сбой."
 
 msgid "lootboxes/open/server_error/COOLDOWN"
-msgstr "Ошибка получения подарка: дождитесь завершения предыдущей операции."
+msgstr "Ошибка открытия коробки: дождитесь завершения предыдущей операции."
 
 msgid "lootboxes/open/server_error/DISABLED"
 msgstr "Операция временно недоступна. Попробуйте позже."
@@ -2790,32 +2793,6 @@ msgstr ""
 "Уникальный камуфляж для %(vehicleName)s доступен для всей техники нации "
 "%(nation)s."
 
-msgid "personalMissions/campaign12Paused/body"
-msgstr ""
-"Прогресс операции сохранён. Вы можете возобновить кампании в любое время."
-
-msgid "personalMissions/campaign12Paused/title"
-msgstr "Кампании «%(campaignName1)s» и «%(campaignName2)s» приостановлены"
-
-msgid "personalMissions/campaign12Resumed/body"
-msgstr "Приостановленные операции и задачи возобновлены."
-
-msgid "personalMissions/campaign12Resumed/title"
-msgstr "Кампании «%(campaignName1)s» и «%(campaignName2)s» снова доступны."
-
-msgid "personalMissions/campaign3Paused/body"
-msgstr ""
-"Прогресс операции сохранён. Вы можете возобновить кампанию в любое время."
-
-msgid "personalMissions/campaign3Paused/title"
-msgstr "Кампания «%(campaignName)s» приостановлена"
-
-msgid "personalMissions/campaign3Resumed/body"
-msgstr "Приостановленные операции возобновлены."
-
-msgid "personalMissions/campaign3Resumed/title"
-msgstr "Кампания «%(campaignName)s» возобновлена"
-
 msgid "personalMissions/detailInstalled/body"
 msgstr "Модуль «%(detailName)s» успешно установлен."
 
@@ -2908,6 +2885,12 @@ msgid "personalMissions/reward/pm3/server_error"
 msgstr "Ошибка получения наград. Попробуйте позже."
 
 msgid "personalMissions/reward/pm3/success"
+msgstr "Модуль «%(detail_name)s» успешно установлен."
+
+msgid "personalMissions/reward/pm4/server_error"
+msgstr "Ошибка получения наград. Попробуйте позже."
+
+msgid "personalMissions/reward/pm4/success"
 msgstr "Модуль «%(detail_name)s» успешно установлен."
 
 msgid "personalMissions/reward/regular/server_error"

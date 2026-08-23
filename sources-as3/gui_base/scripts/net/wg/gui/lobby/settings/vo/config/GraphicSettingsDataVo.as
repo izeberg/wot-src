@@ -81,6 +81,8 @@ package net.wg.gui.lobby.settings.vo.config
       
       public var OBJECT_LOD:SettingsControlProp = null;
       
+      public var VISIBILITY_TUNNEL:SettingsControlProp = null;
+      
       public var SNIPER_MODE_EFFECTS_QUALITY:SettingsControlProp = null;
       
       public var TRACK_PHYSICS_QUALITY:SettingsControlProp = null;
@@ -91,6 +93,8 @@ package net.wg.gui.lobby.settings.vo.config
       
       public var VEHICLE_TRACES_ENABLED:SettingsControlProp = null;
       
+      public var INCREASE_EFFECTS_CONTRAST_ENABLED:SettingsControlProp = null;
+      
       public var DRR_AUTOSCALER_ENABLED:SettingsControlProp = null;
       
       public var SEMITRANSPARENT_LEAVES_ENABLED:SettingsControlProp = null;
@@ -99,13 +103,13 @@ package net.wg.gui.lobby.settings.vo.config
       
       public var SNIPER_MODE_TERRAIN_TESSELLATION_ENABLED:SettingsControlProp = null;
       
-      public var VISIBILITY_TUNNEL_ENABLED:SettingsControlProp = null;
-      
       public var tessellationSupported:SettingsControlProp = null;
       
       public var isSDQuality:SettingsControlProp = null;
       
       public var nativeResolution:SettingsControlProp = null;
+      
+      public var showPrebattleHighlights:SettingsControlProp = null;
       
       public var presets:SettingsDataVo = null;
       
@@ -151,22 +155,24 @@ package net.wg.gui.lobby.settings.vo.config
             "MOTION_BLUR_QUALITY":createControl(ControlsFactory.TYPE_STEP_SLIDER).hasLabel(true).build(),
             "FAR_PLANE":createControl(ControlsFactory.TYPE_STEP_SLIDER).hasLabel(true).build(),
             "OBJECT_LOD":createControl(ControlsFactory.TYPE_STEP_SLIDER).hasLabel(true).build(),
+            "VISIBILITY_TUNNEL":createControl(ControlsFactory.TYPE_STEP_SLIDER).hasLabel(true).build(),
             "SNIPER_MODE_EFFECTS_QUALITY":createControl(ControlsFactory.TYPE_STEP_SLIDER).hasLabel(true).build(),
             "TRACK_PHYSICS_QUALITY":createControl(ControlsFactory.TYPE_STEP_SLIDER).hasLabel(true).build(),
             "SNIPER_MODE_GRASS_ENABLED":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
             "VEHICLE_DUST_ENABLED":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
             "HAVOK_ENABLED":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
             "VEHICLE_TRACES_ENABLED":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
+            "INCREASE_EFFECTS_CONTRAST_ENABLED":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
             "DRR_AUTOSCALER_ENABLED":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
             "SEMITRANSPARENT_LEAVES_ENABLED":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
             "TERRAIN_TESSELLATION_ENABLED":createControl(ControlsFactory.TYPE_CHECKBOX).isDependOn(SettingsConfigHelper.SNIPER_MODE_TERRAIN_TESSELLATION_ENABLED).build(),
             "SNIPER_MODE_TERRAIN_TESSELLATION_ENABLED":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
-            "VISIBILITY_TUNNEL_ENABLED":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
             "qualityOrder":new Vector.<String>(),
             "presets":null,
             "tessellationSupported":createControl(ControlsFactory.TYPE_CHECKBOX).readOnly(true).build(),
             "nativeResolution":createControl(ControlsFactory.TYPE_VALUE).readOnly(true).build(),
-            "isSDQuality":createControl(ControlsFactory.TYPE_CHECKBOX).readOnly(true).build()
+            "isSDQuality":createControl(ControlsFactory.TYPE_CHECKBOX).readOnly(true).build(),
+            "showPrebattleHighlights":createControl(ControlsFactory.TYPE_CHECKBOX).build()
          });
       }
       
@@ -209,22 +215,24 @@ package net.wg.gui.lobby.settings.vo.config
          this.MOTION_BLUR_QUALITY = null;
          this.FAR_PLANE = null;
          this.OBJECT_LOD = null;
+         this.VISIBILITY_TUNNEL = null;
          this.SNIPER_MODE_EFFECTS_QUALITY = null;
          this.TRACK_PHYSICS_QUALITY = null;
          this.SNIPER_MODE_GRASS_ENABLED = null;
          this.VEHICLE_DUST_ENABLED = null;
          this.HAVOK_ENABLED = null;
          this.VEHICLE_TRACES_ENABLED = null;
+         this.INCREASE_EFFECTS_CONTRAST_ENABLED = null;
          this.DRR_AUTOSCALER_ENABLED = null;
          this.SEMITRANSPARENT_LEAVES_ENABLED = null;
          this.TERRAIN_TESSELLATION_ENABLED = null;
          this.SNIPER_MODE_TERRAIN_TESSELLATION_ENABLED = null;
-         this.VISIBILITY_TUNNEL_ENABLED = null;
          this.qualityOrder = null;
          this.presets = null;
          this.tessellationSupported = null;
          this.nativeResolution = null;
          this.isSDQuality = null;
+         this.showPrebattleHighlights = null;
          super.onDispose();
       }
    }

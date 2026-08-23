@@ -50,19 +50,16 @@ package net.wg.gui.lobby.personalMissions.components.popupComponents
          if(param1)
          {
             gotoAndPlay(1);
-            mouseChildren = false;
          }
          else
          {
             gotoAndStop(this.hideFrameInd);
-            mouseChildren = true;
          }
          App.popoverMgr.hide();
       }
       
       private function onFadeOut() : void
       {
-         mouseChildren = true;
          stop();
       }
       

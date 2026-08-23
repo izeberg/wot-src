@@ -49,6 +49,9 @@ msgstr "Исследовать"
 msgid "buyingPanel/buyBtn/label/restore"
 msgstr "Восстановить"
 
+msgid "buyingPanel/buyBtn/label/toBoxes"
+msgstr "К Большим коробкам"
+
 msgid "buyingPanel/collectible/notResearchedVehiclesWarning"
 msgstr "Техника %(nation)s %(level)s уровня не исследована"
 
@@ -65,6 +68,16 @@ msgstr "Скидка на покупку:"
 
 msgid "buyingPanel/customOffer/research"
 msgstr "Скидка на исследование:"
+
+msgid "buyingPanel/fromBoxes/fullLabel"
+msgstr ""
+"Эта машина может выпасть из {{@ style (color $color)}}Больших коробок!{{/}}"
+
+msgid "buyingPanel/fromBoxes/highlightenLabel"
+msgstr "Больших коробок!"
+
+msgid "buyingPanel/fromBoxes/label"
+msgstr "Эту машину можно получить из"
 
 msgid "buyingPanel/frontlinePack/couponLabel"
 msgstr "Использовать купон на сумму: %(value)s"

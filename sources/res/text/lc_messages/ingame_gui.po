@@ -739,6 +739,9 @@ msgstr "Зона захвачена"
 msgid "efficiencyRibbons/fireDamageZone"
 msgstr "Урон от зоны пожара"
 
+msgid "efficiencyRibbons/heRocket"
+msgstr "Нанесённый урон"
+
 msgid "efficiencyRibbons/healthAdded"
 msgstr "Машина отремонтирована"
 
@@ -780,6 +783,9 @@ msgstr "Урон выстрелом"
 
 msgid "efficiencyRibbons/receivedDmgBySpawnedBot"
 msgstr "Урон брандером"
+
+msgid "efficiencyRibbons/receivedHERocket"
+msgstr "Урон выстрелом"
 
 msgid "efficiencyRibbons/receivedRam"
 msgstr "Урон тараном"
@@ -952,6 +958,9 @@ msgstr "Гусеница не пробита"
 msgid "hitMarker/wheelBlocked"
 msgstr "Колесо не пробито"
 
+msgid "intuition/timeRange"
+msgstr "%(left)s – %(right)s"
+
 msgid "levelProgress/maxLevel"
 msgstr "МАКСИМАЛЬНЫЙ УРОВЕНЬ МАШИНЫ"
 
@@ -1066,6 +1075,21 @@ msgstr "Все устройства в отличном состоянии, ре
 
 msgid "player_errors/equipment/repairkit/deviceIsNotDamaged"
 msgstr "[%(entity)s] в отличном состоянии, ремонт не требуется."
+
+msgid "player_errors/mechanics/autoreloaderSurge/clipFull"
+msgstr "Недоступно: магазин полон."
+
+msgid "player_errors/mechanics/autoreloaderSurge/noAmmo"
+msgstr "Недоступно: снаряды закончились."
+
+msgid "player_errors/mechanics/autoreloaderSurge/noCharges"
+msgstr "Недоступно: заряды закончились."
+
+msgid "player_errors/mechanics/autoreloaderSurge/reloadingSmall"
+msgstr "Недоступно: перезарядка почти завершена."
+
+msgid "player_errors/mechanics/auxiliaryRocketLauncher/cant_shoot"
+msgstr "Ракетный удар недоступен"
 
 msgid "player_errors/mechanics/supportWeapon/cant_shoot"
 msgstr "Не удалось активировать коаксиальное оружие."
@@ -2854,6 +2878,18 @@ msgstr "%(caliber)s мм осколочно-фугасный снаряд %(user
 msgid "shells_kinds/HOLLOW_CHARGE"
 msgstr "%(caliber)s мм кумулятивный снаряд %(userString)s"
 
+msgid "shells_kinds/params/criticalHitChance"
+msgstr "Вероятность критического попадания: %(value)s"
+
+msgid "shells_kinds/params/criticalHitChance/decreased"
+msgstr "Снижена"
+
+msgid "shells_kinds/params/criticalHitChance/increased"
+msgstr "Увеличена"
+
+msgid "shells_kinds/params/criticalHitChance/standard"
+msgstr "Стандартная"
+
 msgid "shells_kinds/params/damage"
 msgstr "Средний урон: %(value)s ед."
 
@@ -2863,17 +2899,41 @@ msgstr "Урон в секунду: %(value)s ед."
 msgid "shells_kinds/params/explosionRadius"
 msgstr "Радиус поражения: %(value)s м"
 
-msgid "shells_kinds/params/header"
-msgstr "Полный / одиночный заряд"
+msgid "shells_kinds/params/header/bustleFeed"
+msgstr "Стандартный / модифицированный:"
+
+msgid "shells_kinds/params/header/lowChargeShot"
+msgstr "Полный / одиночный заряд:"
+
+msgid "shells_kinds/params/header/shellCalibration"
+msgstr "Базовый / Отрегулированный:"
+
+msgid "shells_kinds/params/header/shellParamsSwitcher"
+msgstr "Базовый / Калиброванный:"
+
+msgid "shells_kinds/params/normalizationAngle"
+msgstr "Угол нормализации: %(value)s град"
+
+msgid "shells_kinds/params/penetrationLoss"
+msgstr "Снижение бронепробития: %(value)s на 100 мм"
+
+msgid "shells_kinds/params/penetrationLossValueTemplate"
+msgstr "%(value)s%%"
 
 msgid "shells_kinds/params/piercingPower"
 msgstr "Средняя бронепробиваемость: %(value)s мм"
+
+msgid "shells_kinds/params/ricochetAngle"
+msgstr "Угол рикошета: %(value)s град"
 
 msgid "shells_kinds/params/shotSpeed"
 msgstr "Скорость полёта:  %(value)s м/с"
 
 msgid "shells_kinds/params/stunDuration"
 msgstr "Время оглушения: %(minValue)s–%(maxValue)s с"
+
+msgid "siegeMode/hint/bustleFeed"
+msgstr "для включения режима ВПБ"
 
 msgid "siegeMode/hint/forMode/0"
 msgstr "для перехода в осадный режим"
@@ -2898,6 +2958,9 @@ msgstr ", чтобы активировать жидкотопливные ус�
 
 msgid "siegeMode/hint/rocketAcceleration"
 msgstr "для активации реактивных ускорителей"
+
+msgid "siegeMode/hint/shellParamsSwitcher"
+msgstr "для смены режимов стрельбы"
 
 msgid "siegeMode/hint/stagedJetBoosters"
 msgstr "чтобы активировать последовательные ракетные ускорители"

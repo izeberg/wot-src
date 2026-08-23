@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from comp7_core.gui.shared.tooltips.comp7_core_tooltips import getRoleEquipmentTooltipParts
 from gui.impl.battle.battle_page.ammunition_panel.prebattle_ammunition_panel_view import PrebattleAmmunitionPanelView, _R_SIMPLE_TOOLTIPS
 from gui.impl.pub import SimpleToolTipWindow

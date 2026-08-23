@@ -24,6 +24,8 @@ package net.wg.gui.components.advanced.collapsingBar
       
       protected var buttonGroup:CollapsingGroup = null;
       
+      protected var currentSelectedId:int = -1;
+      
       private var _tmpTF:TextField = null;
       
       private var _isBarCollapsed:Boolean = false;
@@ -35,8 +37,6 @@ package net.wg.gui.components.advanced.collapsingBar
       private var _collapseChecker:ICollapseChecker = null;
       
       private var _allowedKeyboard:Boolean;
-      
-      protected var currentSelectedId:int = -1;
       
       public function CollapsingBar()
       {
@@ -96,6 +96,12 @@ package net.wg.gui.components.advanced.collapsingBar
          return this.buttonGroup.getButtonAt(param1);
       }
       
+      public function getTextWidth(param1:ResizableButton) : int
+      {
+         this._tmpTF.text = CollapsingBarButtonVO(param1.data).label;
+         return this._tmpTF.textWidth;
+      }
+      
       public function setAutoCollapsed(param1:Boolean, param2:ICollapseChecker) : void
       {
          this._autoCollapsed = param1;
@@ -119,25 +125,6 @@ package net.wg.gui.components.advanced.collapsingBar
          this.buttonGroup.collapseAll(this._isBarCollapsed);
          invalidate(InvalidationType.LAYOUT,SELECT_INVALID);
          validateNow();
-      }
-      
-      public function updateStage(param1:int, param2:int) : void
-      {
-         var _loc3_:Boolean = false;
-         if(this._autoCollapsed)
-         {
-            _loc3_ = this._collapseChecker.checkCollapsing();
-            if(_loc3_ != this._isBarCollapsed)
-            {
-               this.collapseBar(_loc3_);
-            }
-         }
-      }
-      
-      public function getTextWidth(param1:ResizableButton) : int
-      {
-         this._tmpTF.text = CollapsingBarButtonVO(param1.data).label;
-         return this._tmpTF.textWidth;
       }
       
       protected function applyDataToButton(param1:ResizableButton, param2:CollapsingBarButtonVO) : void
@@ -170,22 +157,6 @@ package net.wg.gui.components.advanced.collapsingBar
       {
          removeAllChildren(true);
          this.buttonGroup.removeAllButtons();
-      }
-      
-      private function removeLustBtn() : void
-      {
-         var _loc1_:Button = this.getButtonAt(this.buttonGroup.length - 1);
-         this.buttonGroup.removeButton(_loc1_);
-         removeChild(_loc1_);
-      }
-      
-      private function addNewBtn() : void
-      {
-         var _loc1_:ResizableButton = null;
-         _loc1_ = App.utils.classFactory.getComponent(this._buttonLinkage,Button);
-         _loc1_.owner = this;
-         addChild(_loc1_);
-         this.buttonGroup.addButton(_loc1_);
       }
       
       protected function createTabs(param1:DataProvider) : void
@@ -239,23 +210,26 @@ package net.wg.gui.components.advanced.collapsingBar
          }
       }
       
+      private function removeLustBtn() : void
+      {
+         var _loc1_:Button = this.getButtonAt(this.buttonGroup.length - 1);
+         this.buttonGroup.removeButton(_loc1_);
+         removeChild(_loc1_);
+      }
+      
+      private function addNewBtn() : void
+      {
+         var _loc1_:ResizableButton = null;
+         _loc1_ = App.utils.classFactory.getComponent(this._buttonLinkage,Button);
+         _loc1_.owner = this;
+         addChild(_loc1_);
+         this.buttonGroup.addButton(_loc1_);
+      }
+      
       private function setTextFormat(param1:TextFormat) : void
       {
          this._tmpTF.setTextFormat(param1);
          this._tmpTF.defaultTextFormat = param1;
-      }
-      
-      protected function onStageResize() : void
-      {
-         var _loc1_:Boolean = false;
-         if(this._autoCollapsed)
-         {
-            _loc1_ = this._collapseChecker.checkCollapsing();
-            if(_loc1_ != this._isBarCollapsed)
-            {
-               this.collapseBar(_loc1_);
-            }
-         }
       }
       
       public function get selectedIndex() : int
@@ -263,19 +237,9 @@ package net.wg.gui.components.advanced.collapsingBar
          return this.buttonGroup.selectedIndex;
       }
       
-      public function get allowedKeyboard() : Boolean
-      {
-         return this._allowedKeyboard;
-      }
-      
       public function set allowedKeyboard(param1:Boolean) : void
       {
          this._allowedKeyboard = param1;
-      }
-      
-      public function get autoCollapsed() : Boolean
-      {
-         return this._autoCollapsed;
       }
       
       public function set buttonLinkage(param1:String) : void

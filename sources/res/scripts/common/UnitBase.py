@@ -614,7 +614,9 @@ class UnitBase(OpsUnpacker):
        UNIT_OP.REMOVE_SEARCH_FLAGS: ('H', 'removeAutoSearchFlags')})
     MAX_PLAYERS = 250
 
-    def __init__(self, limitsDefs={}, slotDefs={}, slotCount=0, packedRoster='', extrasInit=None, packedUnit='', rosterTypeID=ROSTER_TYPE.UNIT_ROSTER, extrasHandlerID=EXTRAS_HANDLER_TYPE.EMPTY, prebattleTypeID=PREBATTLE_TYPE.UNIT):
+    def __init__(self, limitsDefs=None, slotDefs=None, slotCount=0, packedRoster='', extrasInit=None, packedUnit='', rosterTypeID=ROSTER_TYPE.UNIT_ROSTER, extrasHandlerID=EXTRAS_HANDLER_TYPE.EMPTY, prebattleTypeID=PREBATTLE_TYPE.UNIT):
+        limitsDefs = limitsDefs or {}
+        slotDefs = slotDefs or {}
         if packedUnit:
             self.unpack(packedUnit)
         else:
@@ -987,8 +989,7 @@ class UnitBase(OpsUnpacker):
     def getPacked(self):
         if self._dirty:
             return self.pack()
-        else:
-            return self._packed
+        return self._packed
 
     def isReady(self):
         readyMask = self._readyMask
@@ -1351,7 +1352,7 @@ class UnitBase(OpsUnpacker):
     def _appendCmdrOp(self, op, packedArgs):
         pass
 
-    def _storeNotification(self, accountDBID, notifyCmd, argList=[]):
+    def _storeNotification(self, accountDBID, notifyCmd, argList=None):
         pass
 
     def _unpackRosterSlot(self, packedOps):
@@ -1361,7 +1362,8 @@ class UnitBase(OpsUnpacker):
         self._setRosterSlot(rosterSlotIdx, packedSlot)
         return packedOps[opLen:]
 
-    def _packVehicleDict(self, accountDBID, vehDict={}):
+    def _packVehicleDict(self, accountDBID, vehDict=None):
+        vehDict = vehDict or {}
         packedArgs = struct.pack(self._VEHICLE_DICT_HEADER, len(vehDict), accountDBID)
         for vehTypeCompDescr, vehInvID in viewitems(vehDict):
             packedArgs += struct.pack(self._VEHICLE_DICT_ITEM, vehTypeCompDescr, vehInvID)

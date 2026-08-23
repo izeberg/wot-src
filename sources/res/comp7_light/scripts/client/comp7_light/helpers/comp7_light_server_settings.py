@@ -11,14 +11,14 @@ _logger = logging.getLogger(__name__)
 
 class _Comp7LightConfig(namedtuple('_Comp7LightConfig', ('isEnabled', 'isTrainingEnabled', 'peripheryIDs',
                                  'primeTimes', 'seasons', 'cycleTimes', 'battleModifiersDescr',
-                                 'maps', 'levels', 'numPlayers', 'squadSizes', 'forbiddenClassTags',
-                                 'forbiddenVehTypes', 'roleEquipments', 'poiEquipments',
+                                 'maps', 'levels', 'numPlayers', 'squadSizes', 'allowedVehTypes',
+                                 'roleEquipments', 'roleEquipmentsByVehicle', 'poiEquipments',
                                  'createVivoxTeamChannels', 'tournaments', 'progression'))):
     __slots__ = ()
 
     def __new__(cls, **kwargs):
         defaults = dict(isEnabled=False, isTrainingEnabled=False, peripheryIDs={}, primeTimes={}, seasons={}, cycleTimes={}, battleModifiersDescr=(), maps=set(), levels=[], numPlayers=7, squadSizes=[
-         0, 0], forbiddenClassTags=set(), forbiddenVehTypes=set(), roleEquipments={}, poiEquipments={}, createVivoxTeamChannels=False, tournaments={}, progression={})
+         0, 0], allowedVehTypes=set(), roleEquipments={}, roleEquipmentsByVehicle={}, poiEquipments={}, createVivoxTeamChannels=False, tournaments={}, progression={})
         defaults.update(kwargs)
         return super(_Comp7LightConfig, cls).__new__(cls, **defaults)
 

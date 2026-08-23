@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>nodes_01</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>Gun</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>G</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 3.000000</row3>
+					</transform>
+					<node>
+						<identifier>HP_G183_Attachment_Gun_02</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>0.000000 0.000000 -3.000000</row3>
+						</transform>
+					</node>
+					<node>
+						<identifier>HP_gunFire</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>0.000331 0.000231 2.665267</row3>
+						</transform>
+					</node>
+					<node>
+						<identifier>G_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>0.000000 0.000000 -3.000000</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>gun_lower</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>-0.159793 0.308763 1.218742</row3>
+					</transform>
+					<node>
+						<identifier>gun_lower_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>0.159793 -0.308763 -1.218742</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>gun_upper</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>-0.159793 0.334556 1.266018</row3>
+					</transform>
+					<node>
+						<identifier>gun_upper_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>0.159793 -0.334556 -1.266018</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Gun_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>static_joint</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.013260 0.497013 -0.229131</row3>
+				</transform>
+				<node>
+					<identifier>static_joint_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.013260 -0.497013 0.229131</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>G_BlendBone</node>
+		<node>Gun_BlendBone</node>
+		<node>static_joint_BlendBone</node>
+		<node>gun_upper_BlendBone</node>
+		<node>gun_lower_BlendBone</node>
+		<geometry>
+			<vertices>gun_Shape2.vertices</vertices>
+			<primitive>gun_Shape2.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_guns_skinned</identifier>
+					<property>
+						colorIdMap
+						<Texture>vehicles/german/G183_Fossa_VM_68/Fossa_VM_68_guns_ID.dds</Texture>
+					</property>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						diffuseMap
+						<Texture>vehicles/german/G183_Fossa_VM_68/_skins/G183_Fossa_VM_68_3Dst/Fossa_VM_68_3Dst_guns_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/german/G183_Fossa_VM_68/_skins/G183_Fossa_VM_68_3Dst/Fossa_VM_68_3Dst_guns_AO.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/german/G183_Fossa_VM_68/_skins/G183_Fossa_VM_68_3Dst/Fossa_VM_68_3Dst_guns_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/german/G183_Fossa_VM_68/_skins/G183_Fossa_VM_68_3Dst/Fossa_VM_68_3Dst_guns_ANM.dds</Texture>
+					</property>
+					<property>
+						alphaReference
+						<Int>50</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_defaultDetail
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_detailParams
+						<matrix>
+							<element>56702689</element>
+							<element>1020081200</element>
+							<element>1003237376</element>
+							<element>1108279296</element>
+							<element>435952988</element>
+							<element>1006632960</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>469058826</element>
+							<element>1006648904</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>1073702185</element>
+							<element>1006632960</element>
+							<element>4261412864</element>
+							<element>0</element>
+						</matrix>
+					</property>
+					<property>
+						g_dirtLevel
+						<Float>0.190000</Float>
+					</property>
+					<property>
+						g_glossMax
+						<Float>0.771587</Float>
+					</property>
+					<property>
+						g_glossMin
+						<Float>0.450554</Float>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.000231 0.116897 -2.737387</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-0.503947 -0.263313 -0.193524</min>
+		<max>0.503486 0.497107 5.668297</max>
+	</boundingBox>
+	<geometrySize>247836</geometrySize>
+</root>

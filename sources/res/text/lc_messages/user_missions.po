@@ -132,7 +132,7 @@ msgstr ""
 
 msgid "hub/basic_missions/personal/description/inProgress"
 msgstr ""
-"Очки кампании можно заработать, выполняя ежедневные, еженедельные и личные "
+"Зарабатывайте очки кампании, выполняя ежедневные, еженедельные и личные "
 "боевые задачи."
 
 msgid "hub/basic_missions/personal/description/inProgressForHonors"
@@ -453,11 +453,60 @@ msgstr ""
 msgid "info_page/main/weekly/title"
 msgstr "Еженедельные задачи"
 
+msgid "pm/missionState/active"
+msgstr "Активна"
+
+msgid "pm/missionState/complete"
+msgstr "Задачи выполнены"
+
+msgid "pm/missionState/improve"
+msgstr "Улучшение результата"
+
+msgid "pm/missionState/wrongVehicle"
+msgstr "Смена техники"
+
+msgid "pm/no_missions"
+msgstr "Для выбранной машины нет подходящих задач"
+
+msgid "pm/tier"
+msgstr "Неподходящий уровень"
+
+msgid "pm/unavailable"
+msgstr "Задача временно недоступна"
+
+msgid "pm/warning/tooltip/body/no_missions_available"
+msgstr "Для выбранной машины нет активных задач. Выберите другую машину."
+
+msgid "pm/warning/tooltip/body/temporarily_unavailable"
+msgstr ""
+"По техническим причинам эта задача временно недоступна. Приносим свои "
+"извинения."
+
+msgid "pm/warning/tooltip/body/tier"
+msgstr ""
+"Выбранная техника не соответствует требованиям активной операции к уровню. "
+"Выберите другую машину."
+
+msgid "pm/warning/tooltip/header/no_missions_available"
+msgstr "Нет активных задач"
+
+msgid "pm/warning/tooltip/header/temporarily_unavailable"
+msgstr "Временно недоступна"
+
+msgid "pm/warning/tooltip/header/tier"
+msgstr "Неподходящий уровень"
+
 msgid "quests/daily_quests/all_completed"
 msgstr "Все задачи на сегодня выполнены"
 
 msgid "quests/daily_quests/completed"
 msgstr "Все ежедневные задачи выполнены"
+
+msgid "slider/title/missions"
+msgstr "Обычные боевые задачи"
+
+msgid "slider/title/personalMissions"
+msgstr "Личные боевые задачи"
 
 msgid "tooltip/common/timer"
 msgstr "Доступно через {{timeLeft}}"

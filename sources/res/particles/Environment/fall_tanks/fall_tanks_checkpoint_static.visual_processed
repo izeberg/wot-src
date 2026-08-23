@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<stream>colour</stream>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>standardSurface1</identifier>
+					<fx>shaders/custom/emissive_playground.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>106</materialKind>
+					<property>
+						angleFalloffParams
+						<Vector4>1.000000 0.300000 1.000000 0.000000</Vector4>
+					</property>
+					<property>
+						destBlend
+						<Int>2</Int>
+					</property>
+					<property>
+						emissionMap
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/140_fall_tanks_wall_flat_pixels.dds</Texture>
+					</property>
+					<property>
+						g_contrast
+						<Float>25.000000</Float>
+					</property>
+					<property>
+						g_deferredMult
+						<Float>20.760000</Float>
+					</property>
+					<property>
+						g_offsetBlack
+						<Float>0.520000</Float>
+					</property>
+					<property>
+						g_tint
+						<Vector4>1.000000 0.768627 0.098039 1.000000</Vector4>
+					</property>
+					<property>
+						g_zeroPhaseLum
+						<Float>0.530000</Float>
+					</property>
+					<property>
+						pattern
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/05_prohorovka_Smoke.dds</Texture>
+					</property>
+					<property>
+						phaseMap
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/105_germany_smokeLow_dark.dds</Texture>
+					</property>
+					<property>
+						speed
+						<Float>0.150000</Float>
+					</property>
+					<property>
+						usePhaseMap
+						<Bool>true</Bool>
+					</property>
+					<property>
+						waveLen
+						<Float>8.000000</Float>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_chromaOffsetBlue
+						<Float>1.000000</Float>
+					</property>
+					<property>
+						g_chromaOffsetGreen
+						<Float>0.110000</Float>
+					</property>
+				</material>
+				<groupOrigin>0.000000 0.000000 -0.004508</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-15.000000 -3.750000 -0.009016</min>
+		<max>15.000000 3.750000 0.000000</max>
+	</boundingBox>
+	<geometrySize>496</geometrySize>
+</root>

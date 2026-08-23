@@ -21,6 +21,10 @@
 				<material>
 					<identifier>water_02</identifier>
 					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
+					<property>
+						g_enableEnvMultiplier
+						<Bool>true</Bool>
+					</property>
 					<collisionFlags>255</collisionFlags>
 					<materialKind>0</materialKind>
 					<property>
@@ -34,7 +38,7 @@
 					<property>
 						lightMultipliers
 						<Vector4>
-							0.5 0.3 0.5 0.000000
+							0.354610 0.3 0.5 0.000000
 							<!--BW_String-->
 						</Vector4>
 					</property>
@@ -83,6 +87,10 @@
 				<material>
 					<identifier>water_01</identifier>
 					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
+					<property>
+						g_enableEnvMultiplier
+						<Bool>true</Bool>
+					</property>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
 					<property>
@@ -107,7 +115,7 @@
 					<property>
 						lightMultipliers
 						<Vector4>
-							0.25 0.35 0.5 0.000000
+							0.177305 0.35 0.5 0.000000
 							<!--BW_String-->
 						</Vector4>
 					</property>

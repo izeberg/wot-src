@@ -21,6 +21,10 @@
 				<material>
 					<identifier>water_1</identifier>
 					<fx>shaders/custom/vector_animation_2.fx</fx>
+					<property>
+						g_enableEnvMultiplier
+						<Bool>true</Bool>
+					</property>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
 					<property>
@@ -37,7 +41,10 @@
 					</property>
 					<property>
 						lightMultipliers
-						<Vector4>25.000000 0.000000 0.000000 0.000000</Vector4>
+						<Vector4>
+							17.006803 0.000000 0.000000 0.000000
+							<!--BW_String-->
+						</Vector4>
 					</property>
 					<property>
 						distortionMap

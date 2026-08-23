@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<Parent>VehicleRespawnComponent</Parent>
+	<Properties/>
+	<ofEntity>
+		<Vehicle/>
+	</ofEntity>
+	<DefaultKeyName>VehicleRespawnComponent</DefaultKeyName>
+</root>

@@ -63,9 +63,11 @@ package net.wg.data.constants.generated
       
       public static const COMP7_POINT_RECON_STATE:int = 29;
       
-      public static const CONFIRMED_STATE:int = 30;
+      public static const COMP7_ILLUMINATION_FLARE_MARKER:int = 30;
       
-      public static const TARGET_DESIGNATOR_SPOTTED_MARKER:int = 31;
+      public static const CONFIRMED_STATE:int = 31;
+      
+      public static const TARGET_DESIGNATOR_SPOTTED_MARKER:int = 32;
        
       
       public function BATTLE_MARKER_STATES()

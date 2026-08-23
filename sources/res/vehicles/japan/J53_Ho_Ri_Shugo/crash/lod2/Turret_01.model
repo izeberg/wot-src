@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/japan/J53_Ho_Ri_Shugo/crash/lod2/Turret_01</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/japan/J53_Ho_Ri_Shugo/crash/lod3/Turret_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.478742 -0.416768 -0.210728</min>
+		<max>0.430894 0.379084 0.230546</max>
+	</visibilityBox>
+</root>

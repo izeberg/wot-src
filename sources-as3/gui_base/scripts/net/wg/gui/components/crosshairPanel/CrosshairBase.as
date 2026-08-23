@@ -19,7 +19,9 @@ package net.wg.gui.components.crosshairPanel
    import net.wg.gui.components.crosshairPanel.components.controllableLoader.ControllableReloadCassette;
    import net.wg.gui.components.crosshairPanel.components.extraShotClip.ExtraShotClipPanel;
    import net.wg.gui.components.crosshairPanel.components.gunStack.ReloadBoostBorder;
+   import net.wg.gui.components.crosshairPanel.components.shellCalibrationClip.ShellCalibrationClipPanel;
    import net.wg.gui.components.crosshairPanel.constants.CrosshairConsts;
+   import org.idmedia.as3commons.util.StringUtils;
    
    public class CrosshairBase extends MovieClip implements ICrosshair
    {
@@ -85,6 +87,8 @@ package net.wg.gui.components.crosshairPanel
       
       public var controllableReloadCassette:ControllableReloadCassette = null;
       
+      public var shellCalibrationClipPanel:ShellCalibrationClipPanel = null;
+      
       public var reloadBoostBorder:ReloadBoostBorder = null;
       
       protected var health:Number = 0;
@@ -135,7 +139,7 @@ package net.wg.gui.components.crosshairPanel
       
       private var _visibleNetMask:int = 3;
       
-      private var _quickReloadingTime:Number = -1;
+      private var _intuitionCooldown:String = "";
       
       private var _quickReloadingTimerActive:Boolean = false;
       
@@ -261,6 +265,11 @@ package net.wg.gui.components.crosshairPanel
                break;
             case CLIP_RELOADING_TYPES.CONTROLLABLE_RELOAD:
                this.controllableReloadCassette.updateInfo(param2,param3);
+               break;
+            case CLIP_RELOADING_TYPES.SHELL_CALIBRATION_CLIP:
+               this.shellCalibrationClipPanel.totalAmmo = param1;
+               this.shellCalibrationClipPanel.shellCount = param2;
+               this.shellCalibrationClipPanel.clipState = param3;
          }
       }
       
@@ -303,12 +312,19 @@ package net.wg.gui.components.crosshairPanel
                break;
             case CLIP_RELOADING_TYPES.CONTROLLABLE_RELOAD:
                this.controllableReloadCassette.setClipsParam(param1);
+               break;
+            case CLIP_RELOADING_TYPES.SHELL_CALIBRATION_CLIP:
+               this.shellCalibrationClipPanel.clipCapacity = param1;
          }
          this.cassetteMC.visible = this.isCassette;
          this.autoloaderComponent.visible = this.isAutoloader;
          this.extraShotClipPanel.visible = this.isExtraShot;
          this.controllableReloadCassette.visible = this.isControllableReload;
          this.reloadSwitchIcon.visible = this.isUnlimitedClip;
+         if(this.shellCalibrationClipPanel)
+         {
+            this.shellCalibrationClipPanel.visible = this.isShellCalibration;
+         }
       }
       
       public function setComponentsAlpha(param1:Number, param2:Number, param3:Number, param4:Number, param5:Number, param6:Number, param7:Number) : void
@@ -340,6 +356,23 @@ package net.wg.gui.components.crosshairPanel
          }
       }
       
+      public function setShellCalibrationState(param1:uint) : void
+      {
+         if(this.shellCalibrationClipPanel)
+         {
+            this.shellCalibrationClipPanel.calibrationState = param1;
+         }
+      }
+      
+      public function setShellCalibrationClipReloading(param1:String, param2:Number, param3:Boolean = false) : void
+      {
+         this.shellCalibrationClipPanel.setReloading(param1,param2);
+         if(param3)
+         {
+            this.shellCalibrationClipPanel.applyNow();
+         }
+      }
+      
       public function setGunMarkersData(param1:Vector.<GunMarkerIndicatorVO>, param2:Boolean) : void
       {
       }
@@ -354,7 +387,7 @@ package net.wg.gui.components.crosshairPanel
          this.updateHealthBarMC();
       }
       
-      public function setInfo(param1:Number, param2:String, param3:String, param4:Boolean, param5:Boolean, param6:String, param7:String, param8:Number, param9:Number, param10:int, param11:String, param12:uint, param13:Number, param14:String, param15:String, param16:Boolean = false, param17:Boolean = false, param18:Boolean = false, param19:Boolean = false, param20:Boolean = false, param21:Boolean = false) : void
+      public function setInfo(param1:Number, param2:String, param3:String, param4:Boolean, param5:Boolean, param6:String, param7:String, param8:Number, param9:Number, param10:int, param11:String, param12:uint, param13:Number, param14:String, param15:String, param16:uint, param17:Boolean = false, param18:Boolean = false, param19:Boolean = false, param20:Boolean = false, param21:Boolean = false, param22:Boolean = false) : void
       {
          this.setClipsParam(param8,param9,param10);
          this.setHealth(param1);
@@ -365,18 +398,19 @@ package net.wg.gui.components.crosshairPanel
          this.setDistance(param6);
          this.setAverageDamage(param15);
          this.updatePlayerInfo(param7);
-         this.setAmmoStock(param12,param13,param14,param16);
+         this.setAmmoStock(param12,param13,param14,param17);
          this.updateAmmoState(param11);
          this.updateAutoloaderState(param8,param13);
-         this.reloadBoost = param18;
-         this.setReloadBoostBorderVisible(param19,param20,true);
-         this.isUseAlternateZoomPosition = param21;
-         this.setIsInControllableReload(param17);
+         this.reloadBoost = param19;
+         this.setReloadBoostBorderVisible(param20,param21,true);
+         this.isUseAlternateZoomPosition = param22;
+         this.setIsInControllableReload(param18);
+         this.setShellCalibrationState(param16);
       }
       
       public function setIsInControllableReload(param1:Boolean) : void
       {
-         if(this._clipReloadingType == CLIP_RELOADING_TYPES.CONTROLLABLE_RELOAD)
+         if(this.isControllableReload)
          {
             this.controllableReloadCassette.isReloading = param1;
          }
@@ -386,6 +420,14 @@ package net.wg.gui.components.crosshairPanel
       {
          this._netSeparatorType = param1;
          this.updateNetSeparatorType();
+      }
+      
+      public function setAutoreloaderSurgeState(param1:Boolean) : void
+      {
+         if(this._clipReloadingType == CLIP_RELOADING_TYPES.AUTO_LOADER_CLIP)
+         {
+            this.autoloaderComponent.setAutoreloaderSurgeState(param1);
+         }
       }
       
       public function setNetSeparatorVisible(param1:Boolean) : void
@@ -411,12 +453,12 @@ package net.wg.gui.components.crosshairPanel
          }
       }
       
-      public function setQuickReloadingTime(param1:Boolean, param2:Number) : void
+      public function setQuickReloadingTime(param1:Boolean, param2:String) : void
       {
-         if(this._quickReloadingTimerActive != param1 || this._quickReloadingTime != param2)
+         if(this._quickReloadingTimerActive != param1 || this._intuitionCooldown != param2)
          {
             this._quickReloadingTimerActive = param1;
-            this._quickReloadingTime = param2;
+            this._intuitionCooldown = param2;
             this.updateQuickReloadingTimer();
          }
       }
@@ -611,6 +653,11 @@ package net.wg.gui.components.crosshairPanel
          this.extraShotClipPanel = null;
          this.controllableReloadCassette.dispose();
          this.controllableReloadCassette = null;
+         if(this.shellCalibrationClipPanel)
+         {
+            this.shellCalibrationClipPanel.dispose();
+            this.shellCalibrationClipPanel = null;
+         }
          if(this.averageDamage)
          {
             this.averageDamage.dispose();
@@ -681,13 +728,11 @@ package net.wg.gui.components.crosshairPanel
       
       private function updateQuickReloadingTimer() : void
       {
-         var _loc1_:String = null;
          if(this.quickReloadingTimerTextField)
          {
-            if(this._quickReloadingTimerVisible && this._quickReloadingTimerActive && this._quickReloadingTime > 0)
+            if(this._quickReloadingTimerVisible && this._quickReloadingTimerActive && StringUtils.isNotEmpty(this._intuitionCooldown))
             {
-               _loc1_ = ExternalInterface.call.apply(this,[FRACTIONAL_FORMAT_CMD,this._quickReloadingTime]);
-               this.quickReloadingTimerTextField.text = _loc1_;
+               this.quickReloadingTimerTextField.text = this._intuitionCooldown;
                this.quickReloadingTimerTextField.visible = true;
             }
             else
@@ -776,6 +821,10 @@ package net.wg.gui.components.crosshairPanel
          this.autoloaderComponent.alpha = this.cassetteAlpha;
          this.extraShotClipPanel.alpha = this.cassetteAlpha;
          this.controllableReloadCassette.alpha = this.cassetteAlpha;
+         if(this.shellCalibrationClipPanel)
+         {
+            this.shellCalibrationClipPanel.alpha = this.cassetteAlpha;
+         }
       }
       
       private function updateNetSeparatorType() : void
@@ -835,6 +884,11 @@ package net.wg.gui.components.crosshairPanel
       protected function get isUnlimitedClip() : Boolean
       {
          return this._clipReloadingType == CLIP_RELOADING_TYPES.UNLIMITED_CLIP;
+      }
+      
+      protected function get isShellCalibration() : Boolean
+      {
+         return this._clipReloadingType == CLIP_RELOADING_TYPES.SHELL_CALIBRATION_CLIP;
       }
       
       private function onCrosshairPanelSoundHandler(param1:CrosshairPanelEvent) : void

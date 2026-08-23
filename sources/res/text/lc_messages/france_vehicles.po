@@ -497,6 +497,9 @@ msgstr "M47 Chevalier"
 msgid "Chassis_F143_Fauteur"
 msgstr "Fauteur"
 
+msgid "Chassis_F147_AMX29_Belier"
+msgstr "AMX 29 Bélier"
+
 msgid "Chassis_F14_AMX40"
 msgstr "AMX 40"
 
@@ -1879,6 +1882,35 @@ msgstr ""
 msgid "F143_Fauteur_short"
 msgstr "Fauteur"
 
+msgid "F147_AMX29_Belier"
+msgstr "AMX 29 Bélier"
+
+msgid "F147_AMX29_Belier_descr"
+msgstr ""
+"В 1963 году компания AMX получила задание разработать компактный средний "
+"танк с подвижностью на уровне BC-25t и более мощным вооружением. Проект "
+"получил обозначение AMX-29 «Bélier» («Овен»). Главной особенностью стало "
+"127-мм нарезное орудие CN-127-F1 с автоматом заряжания. Экипаж сократили до "
+"трёх человек. Испытания подтвердили высокую подвижность и значительную "
+"огневую мощь, однако выявили серьёзные недостатки: сильную отдачу орудия, "
+"ограниченный боекомплект, высокую стоимость и сложность автомата заряжания. "
+"В результате в 1969 году проект был закрыт."
+
+msgid "F147_AMX29_Belier_long_special"
+msgstr ""
+"AMX 29 Bélier — французский средний танк поддержки X уровня. Он может "
+"похвастаться низким силуэтом, отличной маскировкой и высокой мобильностью, "
+"что позволяет выполнять неожиданные манёвры и застигать противника врасплох."
+" Танк вооружён 127-мм орудием с улучшенным магазином заряжания на два "
+"снаряда, с помощью которого можно значительно ускорить перезарядку "
+"следующего снаряда, если совершить выстрел в определённый момент времени."
+
+msgid "F147_AMX29_Belier_short"
+msgstr "Bélier"
+
+msgid "F147_AMX29_Belier_short_special"
+msgstr "Улучшенный магазин заряжания, отличная мобильность"
+
 msgid "F14_AMX40"
 msgstr "AMX 40"
 
@@ -3016,6 +3048,9 @@ msgstr ""
 "Moteur E.P.C.\n"
 "version 4"
 
+msgid "Moteur_E_P_C_version_S6"
+msgstr "Moteur E.P.C. version S6"
+
 msgid "Moteur_moderne_3M_27_1_01"
 msgstr "Moteur moderne 3M.27.1.01"
 
@@ -3414,6 +3449,9 @@ msgstr "TRVP-13-A (Fantôme)"
 msgid "TRVP_13_A_LEOX"
 msgstr "TRVP-13-A L"
 
+msgid "TRVP_13_B"
+msgstr "TRVP-13-B"
+
 msgid "TRVP_13_SH"
 msgstr "TRVP-13"
 
@@ -3595,6 +3633,9 @@ msgstr "M47 Chevalier"
 
 msgid "Turret_1_F143_Fauteur"
 msgstr "Fauteur"
+
+msgid "Turret_1_F147_AMX29_Belier"
+msgstr "AMX 29 Bélier"
 
 msgid "Turret_1_F14_AMX40"
 msgstr "AMX 40"
@@ -4410,6 +4451,18 @@ msgstr "120 mm AC SA46"
 
 msgid "_120mm_SA_46_fallout"
 msgstr "120 mm SA46"
+
+msgid "_127_mm_CN_127_F1"
+msgstr "127 mm CN-127-F1"
+
+msgid "_127_mm_Obus_Explosif_Mle_58"
+msgstr "127 mm Obus Explosif Mle.58"
+
+msgid "_127_mm_Obus_Perforant_Mle_58"
+msgstr "127 mm Obus Perforant Mle.58"
+
+msgid "_127_mm_Obus_Sous_Calibre_Mle_58"
+msgstr "127 mm Obus Sous-Calibré Mle.58"
 
 msgid "_127mm_54_Model_1948"
 msgstr "127 mm/54 Model 1948"

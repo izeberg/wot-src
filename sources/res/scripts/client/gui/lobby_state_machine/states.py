@@ -2,9 +2,9 @@ from __future__ import absolute_import
 import itertools, logging, typing, weakref
 from enum import IntEnum
 from WeakMethod import WeakMethodProxy
-from frameworks.state_machine import State, StateFlags
-from frameworks.state_machine.transitions import TransitionType
-from frameworks.state_machine.visitor import isDescendantOf, getLCA
+from frameworks_common.state_machine import State, StateFlags
+from frameworks_common.state_machine.transitions import TransitionType
+from frameworks_common.state_machine.visitor import isDescendantOf, getLCA
 from frameworks.wulf import WindowStatus
 from gui.Scaleform.framework import ScopeTemplates
 from gui.Scaleform.framework.ScopeTemplates import SimpleScope
@@ -49,6 +49,7 @@ def isHangarState(state):
         return False
     if state:
         return state.getFlags() & LobbyStateFlags.HANGAR
+    return False
 
 
 class LobbyStateDescription(object):
@@ -59,6 +60,7 @@ class LobbyStateDescription(object):
             INFO = 0
             QUESTION = 1
             VIDEO = 2
+            DROP_LIST = 3
 
         def __init__(self, label='', tooltipHeader='', tooltipBody='', type=Type.INFO, onMoreInfoRequested=lambda : None):
             self.label = label
@@ -193,7 +195,8 @@ class ViewLobbyState(LobbyState):
 
     def _onEntered(self, event):
         super(ViewLobbyState, self)._onEntered(event)
-        g_eventBus.handleEvent(LoadViewEvent(SFViewLoadParams(self.getViewKey().alias, self.getViewKey().name), **self._getViewLoadCtx(event)), scope=EVENT_BUS_SCOPE.LOBBY)
+        viewKey = self.getViewKey()
+        g_eventBus.handleEvent(LoadViewEvent(SFViewLoadParams(viewKey.alias, viewKey.name), **self._getViewLoadCtx(event)), scope=EVENT_BUS_SCOPE.LOBBY)
 
 
 SFViewLobbyState = ViewLobbyState
@@ -405,3 +408,4 @@ def compareViewKeys(view, stateViewKey):
         return stateViewKey == view.key
     if hasattr(view, 'layoutID'):
         return stateViewKey.alias == view.layoutID
+    return False

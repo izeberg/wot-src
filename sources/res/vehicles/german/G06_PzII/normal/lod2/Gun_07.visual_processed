@@ -97,23 +97,15 @@
 						colorIdMap
 						<Texture>vehicles/german/G06_PzII/PzII_guns_ID.dds</Texture>
 					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
-					</property>
 				</material>
-				<groupOrigin>-0.109919 0.003940 -0.464597</groupOrigin>
+				<groupOrigin>-0.109919 0.003963 -0.464595</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-0.480973 -0.121498 -0.074293</min>
-		<max>0.261135 0.129378 1.003487</max>
+		<min>-0.480973 -0.121475 -0.074295</min>
+		<max>0.261135 0.129401 1.003485</max>
 	</boundingBox>
-	<geometrySize>26924</geometrySize>
+	<geometrySize>23456</geometrySize>
 </root>

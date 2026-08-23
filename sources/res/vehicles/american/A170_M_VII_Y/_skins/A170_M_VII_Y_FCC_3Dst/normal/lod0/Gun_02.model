@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A170_M_VII_Y/_skins/A170_M_VII_Y_FCC_3Dst/normal/lod0/Gun_02</nodefullVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.345329 -0.387567 -0.370723</min>
+		<max>0.345329 0.488864 5.238473</max>
+	</visibilityBox>
+	<parent>vehicles/american/A170_M_VII_Y/_skins/A170_M_VII_Y_FCC_3Dst/normal/lod1/Gun_02</parent>
+	<extent>32.000000</extent>
+</root>

@@ -44,7 +44,7 @@ class IPetSystemController(IGameController):
         raise NotImplementedError
 
     @property
-    def isInEventFulscreen(self):
+    def isInEventFullscreen(self):
         raise NotImplementedError
 
     @property

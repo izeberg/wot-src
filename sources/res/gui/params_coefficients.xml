@@ -289,6 +289,11 @@
 							<item>f136_node24</item>
 							<item>f136_node25</item>
 							<item>f143_node16</item>
+							<item>j53_node10</item>
+							<item>cz46_node10</item>
+							<item>cz46_node12</item>
+							<item>cz46_node16</item>
+							<item>s41_node26</item>
 						</value>
 					</item>
 				</value>
@@ -486,6 +491,7 @@
 							<item>f143_node16</item>
 							<item>r228_node14</item>
 							<item>gb147_node18</item>
+							<item>j53_node10</item>
 						</value>
 					</item>
 				</value>
@@ -593,6 +599,10 @@
 							<item>f135_node10</item>
 							<item>f135_node18</item>
 							<item>f135_node24</item>
+							<item>cz46_node10</item>
+							<item>cz46_node12</item>
+							<item>cz46_node16</item>
+							<item>s41_node26</item>
 						</value>
 					</item>
 				</value>
@@ -829,6 +839,7 @@
 							<item>role_mediumTank_base_3</item>
 							<item>role_MT_universal_base_4</item>
 							<item>role_MT_universal_base_5</item>
+							<item>role_LT_support_base_2</item>
 							<item>a183_node17</item>
 							<item>a191_node2</item>
 							<item>g189_node5</item>
@@ -850,6 +861,11 @@
 							<item>j52_node4</item>
 							<item>a195_node15</item>
 							<item>gb158_node17</item>
+							<item>j53_node22</item>
+							<item>cz46_node15</item>
+							<item>it43_node2</item>
+							<item>g197_node17</item>
+							<item>s41_node16</item>
 						</value>
 					</item>
 					<item>
@@ -1095,6 +1111,10 @@
 							<item>role_ATSPG_pair_3_2</item>
 							<item>role_LT_universal_pair_4_1</item>
 							<item>role_LT_universal_pair_4_2</item>
+							<item>role_LT_scout_pair_4_1</item>
+							<item>role_LT_scout_pair_4_2</item>
+							<item>role_LT_support_pair_4_1</item>
+							<item>role_LT_support_pair_4_2</item>
 						</value>
 					</item>
 					<item>
@@ -1105,6 +1125,7 @@
 							<item>s36_node23</item>
 							<item>f135_node4</item>
 							<item>gb158_node18</item>
+							<item>g197_node9</item>
 						</value>
 					</item>
 				</value>
@@ -1199,6 +1220,8 @@
 							<item>role_lightTank_base_3</item>
 							<item>role_LT_wheeled_base_4</item>
 							<item>role_LT_wheeled_base_5</item>
+							<item>role_LT_universal_base_3</item>
+							<item>role_LT_scout_base_1</item>
 							<item>a191_node5</item>
 							<item>g185_node5</item>
 							<item>a183_node20</item>
@@ -1217,6 +1240,11 @@
 							<item>j52_node5</item>
 							<item>a195_node3</item>
 							<item>gb158_node21</item>
+							<item>j53_node3</item>
+							<item>cz46_node2</item>
+							<item>it43_node5</item>
+							<item>g197_node5</item>
+							<item>s41_node19</item>
 						</value>
 					</item>
 					<item>
@@ -1323,10 +1351,12 @@
 						<name>postProgressionBaseModifications</name>
 						<type>list</type>
 						<value>
+							<item>role_LT_support_base_3</item>
 							<item>a191_node7</item>
 							<item>r230_node10</item>
 							<item>pl37_node15</item>
 							<item>g188_node8</item>
+							<item>ch71_node8</item>
 							<item>f136_node15</item>
 							<item>r228_node23</item>
 							<item>g189_node18</item>
@@ -1338,6 +1368,9 @@
 							<item>a182_node10</item>
 							<item>a179_node2</item>
 							<item>a195_node20</item>
+							<item>cz46_node14</item>
+							<item>it43_node10</item>
+							<item>s41_node20</item>
 						</value>
 					</item>
 				</value>
@@ -1531,6 +1564,7 @@
 							<item>role_HT_universal_base_4</item>
 							<item>a191_node17</item>
 							<item>a182_node4</item>
+							<item>ch71_node20</item>
 							<item>a183_node5</item>
 							<item>a179_node10</item>
 							<item>ch70_node15</item>
@@ -1546,6 +1580,10 @@
 							<item>a195_node5</item>
 							<item>gb158_node12</item>
 							<item>gb158_node14</item>
+							<item>j53_node5</item>
+							<item>cz46_node1</item>
+							<item>it43_node19</item>
+							<item>s41_node5</item>
 						</value>
 					</item>
 					<item>
@@ -1574,6 +1612,10 @@
 							<item>role_ATSPG_sniper_pair_5_2</item>
 							<item>role_SPG_pair_5_1</item>
 							<item>role_SPG_pair_5_2</item>
+							<item>role_LT_support_pair_4_1</item>
+							<item>role_LT_support_pair_4_2</item>
+							<item>role_LT_universal_pair_4_1</item>
+							<item>role_LT_universal_pair_4_2</item>
 						</value>
 					</item>
 				</value>
@@ -1659,15 +1701,21 @@
 							<item>s36_node4</item>
 							<item>g189_node2</item>
 							<item>f136_node16</item>
+							<item>ch71_node6</item>
 							<item>f143_node4</item>
 							<item>g187_node20</item>
 							<item>g188_node16</item>
+							<item>ch71_node16</item>
 							<item>gb147_node21</item>
 							<item>pl37_node1</item>
 							<item>a182_node12</item>
 							<item>ch67_node18</item>
 							<item>ch70_node4</item>
 							<item>a179_node15</item>
+							<item>j53_node19</item>
+							<item>cz46_node22</item>
+							<item>it43_node22</item>
+							<item>s41_node13</item>
 						</value>
 					</item>
 					<item>
@@ -1776,6 +1824,8 @@
 							<item>role_ATSPG_sniper_pair_4_2</item>
 							<item>role_lightTank_pair_2_1</item>
 							<item>role_lightTank_pair_2_2</item>
+							<item>role_LT_universal_pair_5_1</item>
+							<item>role_LT_universal_pair_5_2</item>
 							<item>role_LT_wheeled_pair_4_1</item>
 							<item>role_LT_wheeled_pair_4_2</item>
 							<item>role_SPG_pair_4_1</item>
@@ -1795,6 +1845,7 @@
 							<item>pl37_node8</item>
 							<item>g185_node16</item>
 							<item>g188_node11</item>
+							<item>ch71_node11</item>
 							<item>r230_node19</item>
 							<item>gb147_node23</item>
 							<item>g187_node19</item>
@@ -1819,6 +1870,18 @@
 							<item>j52_node1</item>
 							<item>j52_node9</item>
 							<item>ch70_node16</item>
+							<item>j53_node10</item>
+							<item>cz46_node10</item>
+							<item>cz46_node12</item>
+							<item>cz46_node16</item>
+							<item>cz46_node18</item>
+							<item>cz46_node20</item>
+							<item>it43_node25</item>
+							<item>g197_node12</item>
+							<item>g197_node16</item>
+							<item>s41_node14</item>
+							<item>s41_node22</item>
+							<item>s41_node26</item>
 						</value>
 					</item>
 				</value>
@@ -1868,6 +1931,7 @@
 							<item>role_mediumTank_base_3</item>
 							<item>role_MT_universal_base_4</item>
 							<item>role_MT_universal_base_5</item>
+							<item>role_LT_support_base_2</item>
 							<item>a183_node17</item>
 							<item>a191_node2</item>
 							<item>g189_node5</item>
@@ -1889,6 +1953,11 @@
 							<item>j52_node4</item>
 							<item>a195_node15</item>
 							<item>gb158_node17</item>
+							<item>j53_node22</item>
+							<item>cz46_node15</item>
+							<item>it43_node2</item>
+							<item>g197_node17</item>
+							<item>s41_node16</item>
 						</value>
 					</item>
 					<item>
@@ -1959,7 +2028,10 @@
 							<item>role_MT_support_base_5</item>
 							<item>role_ATSPG_sniper_base_4</item>
 							<item>role_ATSPG_sniper_base_5</item>
+							<item>role_LT_universal_base_5</item>
+							<item>role_LT_scout_base_4</item>
 							<item>g185_node17</item>
+							<item>ch71_node24</item>
 							<item>g188_node3</item>
 							<item>s36_node1</item>
 							<item>g188_node25</item>
@@ -1980,6 +2052,10 @@
 							<item>role_ATSPG_pair_3_2</item>
 							<item>role_SPG_pair_2_1</item>
 							<item>role_SPG_pair_2_2</item>
+							<item>role_LT_scout_pair_4_1</item>
+							<item>role_LT_scout_pair_4_2</item>
+							<item>role_LT_support_pair_5_1</item>
+							<item>role_LT_support_pair_5_2</item>
 						</value>
 					</item>
 				</value>
@@ -2033,7 +2109,10 @@
 							<item>role_MT_support_base_5</item>
 							<item>role_ATSPG_sniper_base_4</item>
 							<item>role_ATSPG_sniper_base_5</item>
+							<item>role_LT_universal_base_5</item>
+							<item>role_LT_scout_base_4</item>
 							<item>g185_node17</item>
+							<item>ch71_node24</item>
 							<item>g188_node3</item>
 							<item>s36_node1</item>
 							<item>g188_node25</item>
@@ -2054,6 +2133,10 @@
 							<item>role_ATSPG_pair_3_2</item>
 							<item>role_SPG_pair_2_1</item>
 							<item>role_SPG_pair_2_2</item>
+							<item>role_LT_scout_pair_4_1</item>
+							<item>role_LT_scout_pair_4_2</item>
+							<item>role_LT_support_pair_5_1</item>
+							<item>role_LT_support_pair_5_2</item>
 						</value>
 					</item>
 				</value>
@@ -2104,6 +2187,8 @@
 							<item>role_MT_support_base_5</item>
 							<item>role_ATSPG_sniper_base_4</item>
 							<item>role_ATSPG_sniper_base_5</item>
+							<item>role_LT_universal_base_5</item>
+							<item>role_LT_scout_base_4</item>
 						</value>
 					</item>
 					<item>
@@ -2173,6 +2258,8 @@
 							<item>role_MT_support_base_5</item>
 							<item>role_ATSPG_sniper_base_4</item>
 							<item>role_ATSPG_sniper_base_5</item>
+							<item>role_LT_universal_base_5</item>
+							<item>role_LT_scout_base_4</item>
 						</value>
 					</item>
 					<item>
@@ -2228,6 +2315,8 @@
 							<item>role_ATSPG_support_pair_5_2</item>
 							<item>role_SPG_pair_5_1</item>
 							<item>role_SPG_pair_5_2</item>
+							<item>role_LT_support_pair_5_1</item>
+							<item>role_LT_support_pair_5_2</item>
 						</value>
 					</item>
 					<item>
@@ -2243,8 +2332,7 @@
 							<item>role_MT_assault_base_5</item>
 							<item>role_ATSPG_assault_base_4</item>
 							<item>role_ATSPG_assault_base_5</item>
-							<item>role_LT_universal_base_4</item>
-							<item>role_LT_universal_base_5</item>
+							<item>role_LT_support_base_1</item>
 							<item>a179_node16</item>
 							<item>a182_node2</item>
 							<item>a183_node1</item>
@@ -2264,6 +2352,7 @@
 							<item>g187_node10</item>
 							<item>g187_node17</item>
 							<item>g188_node21</item>
+							<item>ch71_node21</item>
 							<item>g189_node10</item>
 							<item>gb147_node1</item>
 							<item>gb147_node11</item>
@@ -2278,6 +2367,13 @@
 							<item>s36_node17</item>
 							<item>a195_node13</item>
 							<item>gb158_node19</item>
+							<item>j53_node8</item>
+							<item>cz46_node3</item>
+							<item>cz46_node11</item>
+							<item>cz46_node26</item>
+							<item>it43_node9</item>
+							<item>g197_node6</item>
+							<item>s41_node1</item>
 						</value>
 					</item>
 				</value>
@@ -2358,6 +2454,7 @@
 							<item>gb147_node26</item>
 							<item>f136_node18</item>
 							<item>f135_node13</item>
+							<item>ch71_node9</item>
 							<item>f135_node19</item>
 							<item>f143_node23</item>
 							<item>ch67_node17</item>
@@ -2367,6 +2464,15 @@
 							<item>a195_node23</item>
 							<item>gb158_node5</item>
 							<item>gb158_node11</item>
+							<item>j53_node24</item>
+							<item>cz46_node23</item>
+							<item>it43_node14</item>
+							<item>it43_node17</item>
+							<item>g197_node21</item>
+							<item>g197_node23</item>
+							<item>s41_node9</item>
+							<item>s41_node11</item>
+							<item>s41_node24</item>
 						</value>
 					</item>
 				</value>
@@ -2841,6 +2947,7 @@
 						<value>
 							<item>gb152_node21</item>
 							<item>g188_node17</item>
+							<item>ch71_node17</item>
 							<item>g187_node23</item>
 							<item>ch67_node13</item>
 						</value>
@@ -3061,6 +3168,8 @@
 						<name>postProgressionBaseModifications</name>
 						<type>list</type>
 						<value>
+							<item>role_LT_scout_base_3</item>
+							<item>role_LT_support_base_5</item>
 							<item>s36_node20</item>
 							<item>gb147_node8</item>
 							<item>a183_node4</item>
@@ -3073,6 +3182,9 @@
 							<item>g187_node21</item>
 							<item>ch70_node11</item>
 							<item>a195_node2</item>
+							<item>cz46_node17</item>
+							<item>it43_node13</item>
+							<item>s41_node7</item>
 						</value>
 					</item>
 				</value>
@@ -3121,6 +3233,8 @@
 							<item>role_HT_assault_pair_5_2</item>
 							<item>role_LT_wheeled_pair_4_1</item>
 							<item>role_LT_wheeled_pair_4_2</item>
+							<item>role_LT_support_pair_5_1</item>
+							<item>role_LT_support_pair_5_2</item>
 						</value>
 					</item>
 				</value>
@@ -3158,6 +3272,11 @@
 							<item>pl37_node12</item>
 							<item>r230_node2</item>
 							<item>a195_node12</item>
+							<item>j53_node1</item>
+							<item>cz46_node8</item>
+							<item>it43_node15</item>
+							<item>g197_node1</item>
+							<item>s41_node6</item>
 						</value>
 					</item>
 				</value>
@@ -3203,11 +3322,13 @@
 						<value>
 							<item>pl37_node17</item>
 							<item>g188_node4</item>
+							<item>ch71_node4</item>
 							<item>g187_node1</item>
 							<item>gb152_node24</item>
 							<item>ch67_node8</item>
 							<item>ch70_node2</item>
 							<item>gb158_node16</item>
+							<item>s41_node3</item>
 						</value>
 					</item>
 				</value>
@@ -3249,6 +3370,7 @@
 							<item>ch67_node4</item>
 							<item>ch70_node3</item>
 							<item>gb158_node9</item>
+							<item>it43_node24</item>
 						</value>
 					</item>
 				</value>
@@ -3293,6 +3415,8 @@
 							<item>a179_node17</item>
 							<item>ch70_node10</item>
 							<item>a195_node10</item>
+							<item>g197_node25</item>
+							<item>s41_node2</item>
 						</value>
 					</item>
 					<item>
@@ -3345,6 +3469,13 @@
 							<item>role_heavyTank_pair_1_2</item>
 							<item>role_ATSPG_pair_1_1</item>
 							<item>role_ATSPG_pair_1_2</item>
+						</value>
+					</item>
+					<item>
+						<name>postProgressionBaseModifications</name>
+						<type>list</type>
+						<value>
+							<item>role_LT_scout_base_5</item>
 						</value>
 					</item>
 				</value>
@@ -3421,6 +3552,8 @@
 						<value>
 							<item>role_LT_universal_pair_5_1</item>
 							<item>role_LT_universal_pair_5_2</item>
+							<item>role_LT_scout_pair_5_1</item>
+							<item>role_LT_scout_pair_5_2</item>
 						</value>
 					</item>
 					<item>
@@ -3428,6 +3561,7 @@
 						<type>list</type>
 						<value>
 							<item>g188_node2</item>
+							<item>ch71_node2</item>
 						</value>
 					</item>
 				</value>
@@ -3449,6 +3583,8 @@
 						<value>
 							<item>role_LT_universal_pair_5_1</item>
 							<item>role_LT_universal_pair_5_2</item>
+							<item>role_LT_scout_pair_5_1</item>
+							<item>role_LT_scout_pair_5_2</item>
 						</value>
 					</item>
 					<item>
@@ -3456,6 +3592,7 @@
 						<type>list</type>
 						<value>
 							<item>g188_node10</item>
+							<item>ch71_node10</item>
 						</value>
 					</item>
 				</value>
@@ -3472,6 +3609,8 @@
 							<item>role_HT_support_base_5</item>
 							<item>role_MT_sniper_base_4</item>
 							<item>role_MT_sniper_base_5</item>
+							<item>role_LT_universal_base_1</item>
+							<item>role_LT_universal_base_4</item>
 							<item>role_ATSPG_base_1</item>
 							<item>role_ATSPG_base_2</item>
 							<item>role_ATSPG_base_3</item>
@@ -3493,6 +3632,10 @@
 							<item>r228_node26</item>
 							<item>a195_node4</item>
 							<item>gb158_node2</item>
+							<item>j53_node9</item>
+							<item>cz46_node13</item>
+							<item>it43_node12</item>
+							<item>g197_node20</item>
 						</value>
 					</item>
 					<item>
@@ -3523,7 +3666,9 @@
 							<item>role_HT_support_base_5</item>
 							<item>role_MT_sniper_base_4</item>
 							<item>role_MT_sniper_base_5</item>
+							<item>role_LT_scout_base_2</item>
 							<item>a191_node11</item>
+							<item>ch71_node3</item>
 							<item>g185_node2</item>
 							<item>f135_node11</item>
 							<item>f136_node12</item>
@@ -3539,6 +3684,11 @@
 							<item>j52_node26</item>
 							<item>a195_node22</item>
 							<item>gb158_node7</item>
+							<item>j53_node2</item>
+							<item>cz46_node13</item>
+							<item>it43_node12</item>
+							<item>g197_node26</item>
+							<item>s41_node17</item>
 						</value>
 					</item>
 					<item>
@@ -3596,6 +3746,8 @@
 							<item>ch67_node5</item>
 							<item>a179_node4</item>
 							<item>a195_node24</item>
+							<item>cz46_node25</item>
+							<item>it43_node7</item>
 						</value>
 					</item>
 					<item>
@@ -3608,6 +3760,8 @@
 							<item>role_SPG_pair_3_2</item>
 							<item>role_MT_assault_pair_5_1</item>
 							<item>role_MT_assault_pair_5_2</item>
+							<item>role_LT_universal_pair_4_1</item>
+							<item>role_LT_universal_pair_4_2</item>
 						</value>
 					</item>
 					<item>
@@ -3642,6 +3796,8 @@
 							<item>role_MT_support_temperatureGun_pair_4_2</item>
 							<item>role_ATSPG_support_pair_4_1</item>
 							<item>role_ATSPG_support_pair_4_2</item>
+							<item>role_LT_support_pair_4_1</item>
+							<item>role_LT_support_pair_4_2</item>
 						</value>
 					</item>
 					<item>
@@ -3689,6 +3845,11 @@
 							<item>j52_node23</item>
 							<item>a195_node1</item>
 							<item>gb158_node8</item>
+							<item>j53_node15</item>
+							<item>cz46_node5</item>
+							<item>it43_node1</item>
+							<item>g197_node18</item>
+							<item>s41_node25</item>
 						</value>
 					</item>
 				</value>
@@ -3716,6 +3877,14 @@
 						<value>
 							<item>gunner_armorer</item>
 							<item>loader_ammunitionImprove</item>
+						</value>
+					</item>
+					<item>
+						<name>postProgressionPairModifications</name>
+						<type>list</type>
+						<value>
+							<item>role_LT_universal_pair_5_1</item>
+							<item>role_LT_universal_pair_5_2</item>
 						</value>
 					</item>
 				</value>
@@ -3790,6 +3959,7 @@
 							<item>gb152_node23</item>
 							<item>g187_node12</item>
 							<item>g188_node5</item>
+							<item>ch71_node5</item>
 						</value>
 					</item>
 				</value>
@@ -3829,14 +3999,19 @@
 							<item>role_ATSPG_pair_3_2</item>
 							<item>role_SPG_pair_2_1</item>
 							<item>role_SPG_pair_2_2</item>
+							<item>role_LT_universal_pair_4_1</item>
+							<item>role_LT_universal_pair_4_2</item>
 						</value>
 					</item>
 					<item>
 						<name>postProgressionBaseModifications</name>
 						<type>list</type>
 						<value>
+							<item>role_LT_universal_base_5</item>
+							<item>role_LT_scout_base_4</item>
 							<item>g188_node3</item>
 							<item>g185_node17</item>
+							<item>ch71_node24</item>
 							<item>s36_node1</item>
 							<item>g188_node25</item>
 							<item>g189_node25</item>
@@ -3913,7 +4088,9 @@
 						<name>postProgressionBaseModifications</name>
 						<type>list</type>
 						<value>
+							<item>role_LT_universal_base_2</item>
 							<item>g188_node1</item>
+							<item>ch71_node1</item>
 							<item>a183_node4</item>
 							<item>gb152_node2</item>
 							<item>gb152_node4</item>
@@ -3927,6 +4104,12 @@
 							<item>a179_node12</item>
 							<item>a195_node25</item>
 							<item>f143_node21</item>
+							<item>j53_node12</item>
+							<item>cz46_node7</item>
+							<item>it43_node4</item>
+							<item>g197_node4</item>
+							<item>s41_node4</item>
+							<item>s41_node7</item>
 						</value>
 					</item>
 				</value>
@@ -4009,6 +4192,13 @@
 						<type>list</type>
 						<value>
 							<item>loader_perfectCharge</item>
+						</value>
+					</item>
+					<item>
+						<name>postProgressionBaseModifications</name>
+						<type>list</type>
+						<value>
+							<item>role_LT_support_base_4</item>
 						</value>
 					</item>
 				</value>

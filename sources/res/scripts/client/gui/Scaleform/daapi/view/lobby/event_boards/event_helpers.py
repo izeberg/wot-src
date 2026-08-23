@@ -549,10 +549,9 @@ class EventInfo(object):
             if bt == ARENA_GUI_TYPE.RANKED:
                 return RES_ICONS.MAPS_ICONS_EVENTBOARDS_LANDINGICONS_CONDITIONS_RANKED_BATTLE
             return RES_ICONS.MAPS_ICONS_EVENTBOARDS_LANDINGICONS_CONDITIONS_RANDOM_BATTLE
-        else:
-            if iconNum == 2:
-                return RES_ICONS.MAPS_ICONS_EVENTBOARDS_LANDINGICONS_CONDITIONS_SERVER
-            return RES_ICONS.MAPS_ICONS_EVENTBOARDS_LANDINGICONS_CONDITIONS_VEHICLE
+        if iconNum == 2:
+            return RES_ICONS.MAPS_ICONS_EVENTBOARDS_LANDINGICONS_CONDITIONS_SERVER
+        return RES_ICONS.MAPS_ICONS_EVENTBOARDS_LANDINGICONS_CONDITIONS_VEHICLE
 
     def __getPrimeTimesTooltip(self):
         primeTimes = self._event.getPrimeTimes().getPrimeTimes()

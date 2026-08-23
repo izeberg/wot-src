@@ -20,11 +20,11 @@ def getViewSettings():
 
 def getBusinessHandlers():
     return (
-     _ExchangeDialogBusinessHandler(),
+     ExchangeDialogBusinessHandler(),
      _ExchangeDialogModalBusinessHandler())
 
 
-class _ExchangeDialogBusinessHandler(PackageBusinessHandler):
+class ExchangeDialogBusinessHandler(PackageBusinessHandler):
     _ALIAS = VIEW_ALIAS.CONFIRM_EXCHANGE_DIALOG
     _EVENT = ShowDialogEvent.SHOW_EXCHANGE_DIALOG
     _LAYER = WindowLayer.WINDOW
@@ -33,7 +33,7 @@ class _ExchangeDialogBusinessHandler(PackageBusinessHandler):
         listeners = (
          (
           self._EVENT, self._exchangeDialogHandler),)
-        super(_ExchangeDialogBusinessHandler, self).__init__(listeners, app_settings.APP_NAME_SPACE.SF_LOBBY, EVENT_BUS_SCOPE.DEFAULT)
+        super(ExchangeDialogBusinessHandler, self).__init__(listeners, app_settings.APP_NAME_SPACE.SF_LOBBY, EVENT_BUS_SCOPE.DEFAULT)
 
     def _exchangeDialogHandler(self, event):
         name = 'exchange' + event.meta.getType()
@@ -49,7 +49,7 @@ class _ExchangeDialogBusinessHandler(PackageBusinessHandler):
         return
 
 
-class _ExchangeDialogModalBusinessHandler(_ExchangeDialogBusinessHandler):
+class _ExchangeDialogModalBusinessHandler(ExchangeDialogBusinessHandler):
     _ALIAS = VIEW_ALIAS.CONFIRM_EXCHANGE_DIALOG_MODAL
     _EVENT = ShowDialogEvent.SHOW_EXCHANGE_DIALOG_MODAL
     _LAYER = WindowLayer.TOP_WINDOW

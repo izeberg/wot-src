@@ -179,7 +179,7 @@ msgid "modifier/name/invisibilityOnMove"
 msgstr "Маскировка в движении"
 
 msgid "modifier/name/invisibilityOnStill"
-msgstr "Маскировка стоя"
+msgstr "Незаметность неподвижной машины"
 
 msgid "modifier/name/normalizationAngle"
 msgstr "Нормализация снарядов"
@@ -240,6 +240,9 @@ msgstr "Урон от давления"
 
 msgid "modifier/name/vehicleRammingDamage"
 msgstr "Урон от тарана"
+
+msgid "modifier/name/visionMaxRadius"
+msgstr "Максимальный обзор"
 
 msgid "modifier/name/visionMinRadius"
 msgstr "Радиус гарантированного обнаружения"
