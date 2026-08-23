@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>Cus_261_FCN_Tiger_01_anim</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>tails_root</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.150131 0.226513 -0.244592</row3>
+				</transform>
+				<node>
+					<identifier>tail_small_1</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>-0.000000 0.000000 1.000000</row2>
+						<row3>0.113691 -0.013648 -0.063183</row3>
+					</transform>
+					<node>
+						<identifier>tail_small_2</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>-0.000000 1.000000 -0.000000</row1>
+							<row2>0.000000 -0.000000 1.000000</row2>
+							<row3>0.063260 0.000000 -0.019206</row3>
+						</transform>
+						<node>
+							<identifier>tail_small_3</identifier>
+							<transform>
+								<row0>1.000000 -0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 1.000000</row2>
+								<row3>0.059373 0.005729 0.019972</row3>
+							</transform>
+							<node>
+								<identifier>tail_small_3_BlendBone</identifier>
+								<transform>
+									<row0>1.000000 0.000000 0.000000</row0>
+									<row1>0.000000 1.000000 0.000000</row1>
+									<row2>0.000000 0.000000 -1.000000</row2>
+									<row3>-0.086193 -0.218595 0.307009</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>tail_small_2_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>-0.026820 -0.212866 0.326981</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>tail_small_1_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>0.036440 -0.212866 0.307775</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>tails_root_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.150131 -0.226513 0.244592</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>tails_root1</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.240015 0.226513 -0.267679</row3>
+				</transform>
+				<node>
+					<identifier>tail_big_1</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 -0.000000 1.000000</row2>
+						<row3>0.036297 -0.009168 -0.041233</row3>
+					</transform>
+					<node>
+						<identifier>tail_big_2</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 0.974183 -0.225762</row1>
+							<row2>0.000000 0.225762 0.974183</row2>
+							<row3>0.096821 0.000194 -0.068164</row3>
+						</transform>
+						<node>
+							<identifier>tail_big_3</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 0.987070 -0.160292</row1>
+								<row2>-0.000000 0.160292 0.987070</row2>
+								<row3>0.078737 0.015166 -0.106797</row3>
+							</transform>
+							<node>
+								<identifier>tail_big_4</identifier>
+								<transform>
+									<row0>1.000000 0.000000 0.000000</row0>
+									<row1>0.000000 1.000000 0.000000</row1>
+									<row2>0.000000 0.000000 1.000000</row2>
+									<row3>0.063556 0.033634 -0.107598</row3>
+								</transform>
+								<node>
+									<identifier>tail_big_4_BlendBone</identifier>
+									<transform>
+										<row0>1.000000 0.000000 0.000000</row0>
+										<row1>0.000000 0.925398 0.378996</row1>
+										<row2>0.000000 0.378996 -0.925398</row2>
+										<row3>-0.035397 -0.409944 0.477082</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>tail_big_3_BlendBone</identifier>
+								<transform>
+									<row0>1.000000 0.000000 0.000000</row0>
+									<row1>0.000000 0.925398 0.378996</row1>
+									<row2>0.000000 0.378996 -0.925398</row2>
+									<row3>0.028160 -0.376310 0.369484</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>tail_big_2_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 0.974183 0.225762</row1>
+								<row2>0.000000 0.225762 -0.974183</row2>
+								<row3>0.106897 -0.297053 0.318228</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>tail_big_1_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>0.203718 -0.217346 0.308912</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>tails_root1_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.240015 -0.226513 0.267679</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>tails_root_BlendBone</node>
+		<node>tail_small_1_BlendBone</node>
+		<node>tail_small_3_BlendBone</node>
+		<node>tail_small_2_BlendBone</node>
+		<node>tails_root1_BlendBone</node>
+		<node>tail_big_2_BlendBone</node>
+		<node>tail_big_3_BlendBone</node>
+		<node>tail_big_1_BlendBone</node>
+		<node>tail_big_4_BlendBone</node>
+		<geometry>
+			<vertices>s0Shape.vertices</vertices>
+			<primitive>s0Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd1_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>112</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/3D_Customization/Cus_261_FCN_Tiger/Cus_261_FCN_Tiger_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>content/3D_Customization/Cus_261_FCN_Tiger/Cus_261_FCN_Tiger_AO.dds</Texture>
+					</property>
+					<property>
+						g_defaultDetail
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_detailMetallicCutoff
+						<Float>0.420000</Float>
+					</property>
+					<property>
+						g_detailParams
+						<matrix>
+							<element>544084244</element>
+							<element>1148731131</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>76287314</element>
+							<element>1142570694</element>
+						</matrix>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>3.500000 3.500000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_dirtLevel
+						<Float>0.170000</Float>
+					</property>
+					<property>
+						g_metallicDetailInfluence
+						<Float>0.600000</Float>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/3D_Customization/Cus_261_FCN_Tiger/Cus_261_FCN_Tiger_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/3D_Customization/Cus_261_FCN_Tiger/Cus_261_FCN_Tiger_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.194522 0.255295 0.114977</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-0.509897 -0.018268 -0.702760</min>
+		<max>0.120852 0.528859 0.472806</max>
+	</boundingBox>
+	<geometrySize>67058</geometrySize>
+</root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/chinese/Ch45_WZ_114/_skins/Ch45_WZ_114_KS_3Dst/normal/lod2/Gun_02</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.271720 -0.276250 0.114802</min>
+		<max>0.268705 0.303637 6.093965</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/chinese/Ch45_WZ_114/_skins/Ch45_WZ_114_KS_3Dst/normal/lod1/Gun_02</nodefullVisual>
+</root>

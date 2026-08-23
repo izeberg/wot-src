@@ -6803,5 +6803,105 @@
 				<_3354>tankmen_bp20_9.png</_3354>
 			</icons>
 		</tankmen_bp20_9>
+		<birthday16_crew_1>
+			<groupID>382</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>male</sex>
+			<notInShop>true</notInShop>
+			<tags>commander driver gunner loader radioman passportReplacementForbidden</tags>
+			<roles>commander driver gunner loader radioman</roles>
+			<firstNames>
+				<_3367>#poland_crew:names/birthday16_crew_1_n</_3367>
+			</firstNames>
+			<lastNames>
+				<_3367>#poland_crew:names/birthday16_crew_1</_3367>
+			</lastNames>
+			<icons>
+				<_3367>birthday16_crew_1.png</_3367>
+			</icons>
+		</birthday16_crew_1>
+		<birthday16_crew_2>
+			<groupID>383</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>male</sex>
+			<notInShop>true</notInShop>
+			<tags>commander driver gunner loader radioman passportReplacementForbidden</tags>
+			<roles>commander driver gunner loader radioman</roles>
+			<firstNames>
+				<_3368>#poland_crew:names/birthday16_crew_2_n</_3368>
+			</firstNames>
+			<lastNames>
+				<_3368>#poland_crew:names/birthday16_crew_2</_3368>
+			</lastNames>
+			<icons>
+				<_3368>birthday16_crew_2.png</_3368>
+			</icons>
+		</birthday16_crew_2>
+		<birthday16_crew_3>
+			<groupID>384</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>female</sex>
+			<notInShop>true</notInShop>
+			<tags>commander driver gunner loader radioman passportReplacementForbidden</tags>
+			<roles>commander driver gunner loader radioman</roles>
+			<firstNames>
+				<_3369>#poland_crew:names/birthday16_crew_3_n</_3369>
+			</firstNames>
+			<lastNames>
+				<_3369>#poland_crew:names/birthday16_crew_3</_3369>
+			</lastNames>
+			<icons>
+				<_3369>birthday16_crew_3.png</_3369>
+			</icons>
+		</birthday16_crew_3>
+		<jager_mailand>
+			<groupID>380</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>male</sex>
+			<notInShop>true</notInShop>
+			<tags>commander driver gunner loader radioman passportReplacementForbidden jager_mailand_SpecialVoice</tags>
+			<roles>commander driver gunner loader radioman</roles>
+			<firstNames>
+				<_3365>#poland_crew:names/jager_mailand_n</_3365>
+			</firstNames>
+			<lastNames>
+				<_3365>#poland_crew:names/jager_mailand</_3365>
+			</lastNames>
+			<icons>
+				<_3365>jager_mailand.png</_3365>
+			</icons>
+		</jager_mailand>
+		<jager_mouzakrobat>
+			<groupID>381</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>male</sex>
+			<notInShop>true</notInShop>
+			<tags>commander driver gunner loader radioman passportReplacementForbidden jager_mouzAkrobat_SpecialVoice</tags>
+			<roles>commander driver gunner loader radioman</roles>
+			<firstNames>
+				<_3366>#poland_crew:names/jager_mouzakrobat_n</_3366>
+			</firstNames>
+			<lastNames>
+				<_3366>#poland_crew:names/jager_mouzakrobat</_3366>
+			</lastNames>
+			<icons>
+				<_3366>jager_mouzakrobat.png</_3366>
+			</icons>
+		</jager_mouzakrobat>
 	</premiumGroups>
 </root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.428956 -0.309860 -0.316340</min>
+		<max>0.427106 0.325250 5.665370</max>
+	</visibilityBox>
+	<parent>vehicles/american/A168_XM_57/_skins/A168_XM_57_K_3Dst/normal/lod1/Gun_02</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/american/A168_XM_57/_skins/A168_XM_57_K_3Dst/normal/lod0/Gun_02</nodefullVisual>
+</root>

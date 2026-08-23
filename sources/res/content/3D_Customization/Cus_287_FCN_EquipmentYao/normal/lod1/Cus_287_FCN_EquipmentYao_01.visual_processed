@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd1</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>108</materialKind>
+					<property>
+						alphaReference
+						<Int>31</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/3D_Customization/Cus_287_FCN_EquipmentYao/Cus_287_FCN_EquipmentYao_01_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/3D_Customization/Cus_287_FCN_EquipmentYao/Cus_287_FCN_EquipmentYao_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/3D_Customization/Cus_287_FCN_EquipmentYao/Cus_287_FCN_EquipmentYao_01_ANM.dds</Texture>
+					</property>
+					<property>
+						g_applyScreenSpaceMorphing
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_enableTransmission
+						<Bool>true</Bool>
+					</property>
+				</material>
+				<groupOrigin>-0.426886 0.146941 0.259849</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>112</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/3D_Customization/Cus_287_FCN_EquipmentYao/Cus_287_FCN_EquipmentYao_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>content/3D_Customization/Cus_287_FCN_EquipmentYao/Cus_287_FCN_EquipmentYao_AO.dds</Texture>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/3D_Customization/Cus_287_FCN_EquipmentYao/Cus_287_FCN_EquipmentYao_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/3D_Customization/Cus_287_FCN_EquipmentYao/Cus_287_FCN_EquipmentYao_ANM.dds</Texture>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>3.000000 3.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_metallicDetailInfluence
+						<Float>0.330000</Float>
+					</property>
+					<property>
+						g_defaultDetail
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_detailMetallicCutoff
+						<Float>0.730000</Float>
+					</property>
+					<property>
+						g_detailParams
+						<matrix>
+							<element>56701184</element>
+							<element>1020081200</element>
+							<element>57023488</element>
+							<element>1006632960</element>
+							<element>157028352</element>
+							<element>1156644864</element>
+							<element>554506240</element>
+							<element>1015349248</element>
+							<element>557651968</element>
+							<element>1182269440</element>
+							<element>58732554</element>
+							<element>1089536000</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>4261412864</element>
+							<element>0</element>
+						</matrix>
+					</property>
+					<property>
+						g_dirtLevel
+						<Float>0.020000</Float>
+					</property>
+					<property>
+						g_glossMax
+						<Float>0.508582</Float>
+					</property>
+					<property>
+						g_glossMin
+						<Float>0.072015</Float>
+					</property>
+				</material>
+				<groupOrigin>-0.253649 0.127353 0.106269</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-0.552148 -0.003995 -0.776776</min>
+		<max>0.044851 0.279612 0.989314</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>80348</geometrySize>
+</root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_241_JM_SportInventory/normal/lod2/Cus_241_JM_SportInventory_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.479830 -0.006891 -0.661171</min>
+		<max>0.048298 0.346781 0.664686</max>
+	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/Cus_241_JM_SportInventory/normal/lod1/Cus_241_JM_SportInventory_01</nodefullVisual>
+	<tank>true</tank>
+</root>

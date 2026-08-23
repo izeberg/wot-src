@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_259_FCN_Drum/normal/lod3/Cus_259_FCN_Drum_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.137382 -0.070000 -0.077988</min>
+		<max>0.129666 0.515562 0.077988</max>
+	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/Cus_259_FCN_Drum/normal/lod2/Cus_259_FCN_Drum_01</nodefullVisual>
+	<tank>true</tank>
+</root>

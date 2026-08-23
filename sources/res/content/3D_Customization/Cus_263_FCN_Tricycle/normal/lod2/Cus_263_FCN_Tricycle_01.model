@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_263_FCN_Tricycle/normal/lod3/Cus_263_FCN_Tricycle_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.508737 -0.004839 -0.330844</min>
+		<max>0.067115 0.440204 0.726157</max>
+	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/Cus_263_FCN_Tricycle/normal/lod2/Cus_263_FCN_Tricycle_01</nodefullVisual>
+	<tank>true</tank>
+</root>
