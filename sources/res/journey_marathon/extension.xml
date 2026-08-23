@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<FeatureName>journey_marathon</FeatureName>
+	<IsEnabled>True</IsEnabled>
+	<Personality>JourneyMarathonPersonality</Personality>
+	<Components>
+		<StaticComponents>
+			<JourneyMarathonAccountComponent/>
+		</StaticComponents>
+		<DynamicComponents/>
+	</Components>
+</root>

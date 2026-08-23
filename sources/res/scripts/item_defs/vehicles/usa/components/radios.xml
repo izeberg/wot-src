@@ -69,6 +69,7 @@
 		<AN_VRC_12_9>108</AN_VRC_12_9>
 		<AN_ARC_27_RC_C>105</AN_ARC_27_RC_C>
 		<AN_VRC_3G>109</AN_VRC_3G>
+		<AN_VRC_3_XM_CFE_I>111</AN_VRC_3_XM_CFE_I>
 		<AN_GRC_8F>112</AN_GRC_8F>
 		<AN_GRC_6_XM94_Shadow>113</AN_GRC_6_XM94_Shadow>
 		<Radiostanice_R_113A>114</Radiostanice_R_113A>
@@ -456,6 +457,21 @@
 				<!--BW_String-->
 			</repairCost>
 		</AN_VRC_3_XM>
+		<AN_VRC_3_XM_CFE_I>
+			<userString>#usa_vehicles:AN_VRC_3_XM_CFE_I</userString>
+			<tags/>
+			<level>10</level>
+			<notInShop>true</notInShop>
+			<price>51600</price>
+			<weight>160</weight>
+			<distance>745</distance>
+			<maxHealth>250</maxHealth>
+			<maxRegenHealth>75</maxRegenHealth>
+			<repairCost>
+				3.5
+				<!--BW_String-->
+			</repairCost>
+		</AN_VRC_3_XM_CFE_I>
 		<AN_VRC-3_cl>
 			<userString>#usa_vehicles:AN_VRC-3</userString>
 			<tags/>

@@ -55,6 +55,9 @@ msgstr "战斗经验"
 msgid "breedName/dog_1"
 msgstr "黑贝"
 
+msgid "breedName/dog_2"
+msgstr "拉布拉多"
+
 msgid "eventView/button"
 msgstr "收到!"
 
@@ -91,6 +94,10 @@ msgstr "全新动画已开放"
 msgid "petDescription/dog_1"
 msgstr ""
 "黑贝如魅影般穿梭于战火硝烟中，感官敏锐如刃。当训导员被爆炸击倒时，这只军犬奋力将伤者拖至掩体后方，并守护在身旁，直到救援到来。它虽负伤但仍忠诚守护，寸步不离，堪称真正的战士守护者。"
+
+msgid "petDescription/dog_2"
+msgstr ""
+"这只活泼的拉布拉多犬总是渴望冒险，是一位忠诚的伙伴，听到人们的笑声时，它也会欢快地应和两声，结识新朋友时还会高兴地摇起尾巴。有传言说它曾同时出现在两个地方，但至今没人知道它是如何做到的。"
 
 msgid "petEventTooltip/body"
 msgstr "%(petName)s在您离开时发现了一些好物！快去查看！"
@@ -213,13 +220,19 @@ msgid "promotion/button/challenge"
 msgstr "任务"
 
 msgid "promotion/button/purchase"
-msgstr "购买"
+msgstr "前往军械库"
 
 msgid "promotion/challengeInfo/text_1"
 msgstr "任务信息"
 
+msgid "promotion/challengeInfo/text_2"
+msgstr "可通过购买军械库中的特殊活动礼包来获取。"
+
 msgid "promotion/challengeInfo/title_1"
 msgstr "任务"
+
+msgid "promotion/challengeInfo/title_2"
+msgstr "如何获取"
 
 msgid "synergyTooltip/description/done"
 msgstr "宠物的亲密度每提高一级，你们的关系就会更牢固。这位与您并肩作战的忠实战友是您最可靠的盟友。如果长期不活跃，该等级将会下降。"

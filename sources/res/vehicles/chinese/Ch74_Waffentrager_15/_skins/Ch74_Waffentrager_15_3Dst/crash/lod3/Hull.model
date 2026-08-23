@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/chinese/Ch74_Waffentrager_15/_skins/Ch74_Waffentrager_15_3Dst/crash/lod3/Hull</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/chinese/Ch74_Waffentrager_15/_skins/Ch74_Waffentrager_15_3Dst/crash/lod4/Hull</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.978791 -1.130876 -4.363424</min>
+		<max>1.978890 0.720242 4.532816</max>
+	</visibilityBox>
+</root>

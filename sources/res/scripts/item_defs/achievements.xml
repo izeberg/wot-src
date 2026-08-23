@@ -12712,5 +12712,29 @@
 				</item>
 			</value>
 		</achievement>
+		<achievement>
+			<name>singleAchievements:wot16thAnniversary</name>
+			<type>dict</type>
+			<value>
+				<item>
+					single
+					<name>type</name>
+				</item>
+				<item>
+					action
+					<name>section</name>
+				</item>
+				<item>
+					1470.3
+					<!--BW_String-->
+					<name>weight</name>
+					<type>float</type>
+				</item>
+				<item>
+					all
+					<name>mode</name>
+				</item>
+			</value>
+		</achievement>
 	</achievements>
 </root>

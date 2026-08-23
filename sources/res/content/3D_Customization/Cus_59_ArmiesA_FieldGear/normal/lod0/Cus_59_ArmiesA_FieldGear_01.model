@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>content/3D_Customization/Cus_59_ArmiesA_FieldGear/normal/lod0/Cus_59_ArmiesA_FieldGear_01</nodefullVisual>
+	<visibilityBox>
+		<min>-0.489902 -0.005651 -0.525950</min>
+		<max>0.071613 0.335922 0.571275</max>
+	</visibilityBox>
+	<parent>content/3D_Customization/Cus_59_ArmiesA_FieldGear/normal/lod1/Cus_59_ArmiesA_FieldGear_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+</root>

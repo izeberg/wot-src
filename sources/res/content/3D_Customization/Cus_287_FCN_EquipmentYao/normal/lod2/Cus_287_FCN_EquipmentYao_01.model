@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_287_FCN_EquipmentYao/normal/lod3/Cus_287_FCN_EquipmentYao_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.258156 -0.547287 -0.804472</min>
+		<max>0.002029 0.042089 0.922802</max>
+	</visibilityBox>
+	<nodelessVisual>content/3D_Customization/Cus_287_FCN_EquipmentYao/normal/lod2/Cus_287_FCN_EquipmentYao_01</nodelessVisual>
+	<tank>true</tank>
+</root>

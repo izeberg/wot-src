@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/Hangars/CharacterAnimations/Pet_system/normal/lod3/Dog_Labrador_01</parent>
+	<extent>12.000000</extent>
+	<visibilityBox>
+		<min>-0.837401 -0.068399 -1.028891</min>
+		<max>3.344166 1.832921 1.863779</max>
+	</visibilityBox>
+	<nodefullVisual>content/Hangars/CharacterAnimations/Pet_system/normal/lod2/Dog_Labrador_01</nodefullVisual>
+</root>

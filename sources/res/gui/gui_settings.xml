@@ -2808,6 +2808,16 @@
 							</item>
 						</value>
 					</item>
+					<item>
+						<name>retro</name>
+						<type>list</type>
+						<value>
+							<item>
+								<type>int</type>
+								<value>1</value>
+							</item>
+						</value>
+					</item>
 				</value>
 			</item>
 			<item>
@@ -2844,6 +2854,21 @@
 								<type>bool</type>
 								<value>False</value>
 							</item>
+							<item>
+								<name>retro</name>
+								<type>bool</type>
+								<value>False</value>
+							</item>
+							<item>
+								<name>anniversaryCN</name>
+								<type>bool</type>
+								<value>False</value>
+							</item>
+							<item>
+								<name>fractal_cn</name>
+								<type>bool</type>
+								<value>False</value>
+							</item>
 						</value>
 					</item>
 				</value>
@@ -2868,6 +2893,21 @@
 							</item>
 							<item>
 								<name>dragonboat</name>
+								<type>bool</type>
+								<value>False</value>
+							</item>
+							<item>
+								<name>retro</name>
+								<type>bool</type>
+								<value>False</value>
+							</item>
+							<item>
+								<name>anniversaryCN</name>
+								<type>bool</type>
+								<value>False</value>
+							</item>
+							<item>
+								<name>fractal_cn</name>
 								<type>bool</type>
 								<value>False</value>
 							</item>
@@ -2920,7 +2960,7 @@
 		<macros>AUTH_REALM</macros>
 		<value>
 			<item>
-				https://worldoftanks.asia/$LANGUAGE_CODE/news/specials/waffentrager-september-2025-bundles/
+				https://worldoftanks.asia/$LANGUAGE_CODE/news/specials/vault-of-whispers-2026/
 				<name>default</name>
 				<type>url</type>
 			</item>

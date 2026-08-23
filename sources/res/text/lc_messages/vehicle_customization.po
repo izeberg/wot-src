@@ -111,6 +111,27 @@ msgstr "精英纹章"
 msgid "attachment/Challenger_s_Bounty/Cus_233_Challenges_Armor"
 msgstr "炽烈之弹"
 
+msgid "attachment/Expedition_Essentials"
+msgstr "远征必备"
+
+msgid "attachment/Expedition_Essentials/Cus_239_JM_Camera"
+msgstr "长焦镜头"
+
+msgid "attachment/Expedition_Essentials/Cus_240_JM_Gramophone"
+msgstr "留声机"
+
+msgid "attachment/Expedition_Essentials/Cus_241_JM_SportInventory"
+msgstr "运动器材"
+
+msgid "attachment/Expedition_Essentials/Cus_242_JM_Lighting"
+msgstr "照明套件"
+
+msgid "attachment/Expedition_Essentials/Cus_243_JM_BBQ"
+msgstr "便携式烤架"
+
+msgid "attachment/Expedition_Essentials/Cus_243_JM_BBQ/description"
+msgstr "当您一辆接一辆地\"熏烤\"敌人时，这台移动烤架上香肠发出的滋滋声，便是最应景的战斗配乐。"
+
 msgid "attachment/Field_Salvage"
 msgstr "战地回收"
 
@@ -192,6 +213,45 @@ msgstr "家族补给"
 msgid "attachment/Mafia_Tommys_story/Cus_184_BP19_RacingKit"
 msgstr "表面公平"
 
+msgid "attachment/Quartermaster_s_Cache"
+msgstr "军需官的宝藏"
+
+msgid "attachment/Quartermaster_s_Cache/Cus_190_ArmiesA_SignalLamp"
+msgstr "信号灯"
+
+msgid "attachment/Quartermaster_s_Cache/Cus_191_ArmiesA_BrowningM1917"
+msgstr "勃朗宁M1917A1重机枪"
+
+msgid "attachment/Quartermaster_s_Cache/Cus_192_ArmiesA_Jerrycans"
+msgstr "油料桶"
+
+msgid "attachment/Quartermaster_s_Cache/Cus_193_ArmiesA_AirborneSet"
+msgstr "空降装备"
+
+msgid "attachment/Quartermaster_s_Cache/Cus_59_ArmiesA_FieldGear"
+msgstr "野战装备"
+
+msgid "attachment/Relics_of_Meishan"
+msgstr "梅山秘宝"
+
+msgid "attachment/Relics_of_Meishan/Cus_284_FCN_Totem"
+msgstr "神面护符"
+
+msgid "attachment/Relics_of_Meishan/Cus_284_FCN_Totem/description"
+msgstr "据说这枚护符曾见证昔日斩妖者的征战。它会在战斗中泛起幽光，双眼燃着绿色火焰，仿佛仍蕴藏着未散的力量。"
+
+msgid "attachment/Relics_of_Meishan/Cus_285_FCN_Helmet"
+msgstr "神将战盔"
+
+msgid "attachment/Relics_of_Meishan/Cus_286_FCN_EquipmentLi"
+msgstr "太尉武备"
+
+msgid "attachment/Relics_of_Meishan/Cus_287_FCN_EquipmentYao"
+msgstr "太尉兵械"
+
+msgid "attachment/Relics_of_Meishan/Cus_288_FCN_EquipmentGuo"
+msgstr "将军战具"
+
 msgid "attachment/River_Race_Revelry"
 msgstr "龙舟竞渡狂欢"
 
@@ -212,6 +272,27 @@ msgstr "节日船锚"
 
 msgid "attachment/River_Race_Revelry/Cus_228_DB_Boat"
 msgstr "贡船"
+
+msgid "attachment/Traditional_Toys"
+msgstr "传统玩具"
+
+msgid "attachment/Traditional_Toys/Cus_259_FCN_Drum"
+msgstr "拨浪鼓"
+
+msgid "attachment/Traditional_Toys/Cus_260_FCN_Whirligig"
+msgstr "陀螺"
+
+msgid "attachment/Traditional_Toys/Cus_261_FCN_Tiger"
+msgstr "布老虎"
+
+msgid "attachment/Traditional_Toys/Cus_261_FCN_Tiger/description"
+msgstr "目光炯炯，獠牙外露，这些色彩斑斓的猫科布偶看起来与其说是凶猛，不如说是喜庆。将它们置于您的坦克上，保您平安无虞、好运相随。"
+
+msgid "attachment/Traditional_Toys/Cus_262_FCN_Kite"
+msgstr "沙燕风筝"
+
+msgid "attachment/Traditional_Toys/Cus_263_FCN_Tricycle"
+msgstr "满载的三蹦子"
 
 msgid "attachment/Zero_Legacy"
 msgstr "重置者传承"
@@ -1376,6 +1457,18 @@ msgstr "烈焰渐燃"
 
 msgid "camouflage/2d_cust_challenges_2026_3/label"
 msgstr "荣耀之焰"
+
+msgid "camouflage/2d_cust_journey_marathon_1/label"
+msgstr "规划路线"
+
+msgid "camouflage/2d_cust_journey_marathon_2/label"
+msgstr "再度启程"
+
+msgid "camouflage/2d_cust_journey_marathon_3/label"
+msgstr "钢铁之根"
+
+msgid "camouflage/2d_cust_journey_marathon_4/label"
+msgstr "静默庆典"
 
 msgid "camouflage/360_anniversary/description"
 msgstr "?empty?"
@@ -4871,6 +4964,9 @@ msgstr "?empty?"
 
 msgid "camouflage/generic_custom_look_3_winter/label"
 msgstr "冬季游侠"
+
+msgid "camouflage/german_tanks_event/label"
+msgstr "D系匠心"
 
 msgid "camouflage/germany/DesertTiger/description"
 msgstr "在黄棕色基层上施加不均匀的灰色和沙色斑点。"
@@ -25506,6 +25602,53 @@ msgid "special_style/2d_cust_challenges_2026_3_desc/long"
 msgstr ""
 "历经逆境之火淬炼，您已无所畏惧。您曾直面足以击溃多数王牌高手的重重试炼，每一次试炼都在挑战极限。然而，您尽数承受，并以胜者之姿脱颖而出。在每一场战斗中，您锋芒毕露，炽烈如焰。履带所过之处焦土翻卷，敌人的意志随之崩解。您踏焰前行，为后来者照亮道路——他们试图复刻您的非凡壮举，却始终难以企及。您的胜利将被铭记，您的成就无可匹敌。那道炽焰之光，耀目而荣耀，将永不熄灭。"
 
+msgid "special_style/2d_cust_journey_marathon_1"
+msgstr "规划路线"
+
+msgid "special_style/2d_cust_journey_marathon_1_desc"
+msgstr "一款色彩缤纷的全地形风格，致敬您重游旧日足迹的生日之旅。"
+
+msgid "special_style/2d_cust_journey_marathon_1_desc/long"
+msgstr ""
+"桌上的地图虽已磨损、布满折痕，但色彩和细节依旧鲜活，描绘着前方的征程。西边的悬崖峭壁上矗立着一座灯塔，那是您征途的起点。北方的平原上，一座孤零零的风车伸向天际，叶片在微风中慵懒地转动着。向东，越过大河与云雾缭绕的山脉，一座优雅的宝塔矗立在葱郁的山谷之上。最后，在广袤的南部沙地，光塔高耸于黄沙之上，于干旱沙丘间宛如一座石筑绿洲。\n"
+"\n"
+"路线已经规划完毕，坦克也已准备就绪。现在就踏上征程，创造一些美好回忆吧。"
+
+msgid "special_style/2d_cust_journey_marathon_2"
+msgstr "再度启程"
+
+msgid "special_style/2d_cust_journey_marathon_2_desc"
+msgstr "一款有趣的全地形风格，拥有使这次生日公路之旅难以忘怀的必备元素。"
+
+msgid "special_style/2d_cust_journey_marathon_2_desc/long"
+msgstr ""
+"对一场成功的公路旅行来说，什么最为关键？当然是同行的伙伴。但除此之外呢？还要看您带了什么装备。有些必需品绝不能忘: "
+"炊具、一把劈柴用的斧头，还有一台有助于您保持清醒的收音机。接下来是锦上添花的物件: "
+"飞镖盘用于闲暇娱乐，一把吉他陪伴篝火夜晚。最后别忘了装饰——气球、彩旗，或许再来点烟花点亮夜空。毕竟这是生日之旅，您要像2010年那样尽情狂欢。"
+
+msgid "special_style/2d_cust_journey_marathon_3"
+msgstr "钢铁之根"
+
+msgid "special_style/2d_cust_journey_marathon_3_desc"
+msgstr "一款回归初心的全地形风格，让您以全新视角重游熟悉之地。"
+
+msgid "special_style/2d_cust_journey_marathon_3_desc/long"
+msgstr ""
+"公路旅行，说到底，是一场回归初心的旅程: "
+"暂别日常奔波的喧嚣，重温那些真正重要的事物与地点。这些地点，多年来您已造访无数次，或许自以为早已了如指掌。然而，当您一心追逐胜利时，往往会忽略身边的风景。即便是最资深的坦克手，熟悉的地形也可能藏着新的惊喜。这趟旅程，不妨放慢脚步，细细体会沿途的一切。别太在意终点，尽情享受这段旅程。"
+
+msgid "special_style/2d_cust_journey_marathon_4"
+msgstr "静默庆典"
+
+msgid "special_style/2d_cust_journey_marathon_4_desc"
+msgstr "一款多用途的全地形风格，让您在整个生日之旅中始终保持隐蔽。"
+
+msgid "special_style/2d_cust_journey_marathon_4_desc/long"
+msgstr ""
+"嶙峋的山脊、青翠的山谷、连绵的平原和流动的沙地。这次远征将穿越所有可能的地形，而每个转角处都有敌人在埋伏，准备给您一个\"热烈\"的欢迎。幸运的是，您拥有完美的涂装:"
+" "
+"一种适应性强的多色方案，无论是在密林深处，还是烈日炙烤的沙丘间，都能助您隐蔽行踪。若有敌人眼尖到发现您坦克上点缀的低调黄色\"16\"标记，那么祝他们好运，生日\"惊喜\"即将降临。"
+
 msgid "special_style/360_anniversary"
 msgstr "一周年锦鲤风格"
 
@@ -25729,6 +25872,13 @@ msgstr "Duke"
 msgid "special_style/A167_TS_6_G90_3Dst_desc/long"
 msgstr ""
 "\"这漂亮得有点过分了！哇哦，这辆坦克太带感了——这颜色，我会叫它'核爆黄'。当公爵开着它出现，那些猪头兵的末日就要到了。你再看看这门火炮？绝对比你的更有分量。这玩意儿，稳了。恕我失陪，我还有任务要完成，还有敌人要收割。我不在的时候，别太想我。不用着急，公爵有的是时间来陪你们玩！\""
+
+msgid "special_style/A168_XM_57_K_3Dst"
+msgstr "玄甲镇岳"
+
+msgid "special_style/A168_XM_57_K_3Dst_desc/long"
+msgstr ""
+"龙龟者，合四灵之精，融真龙之生机、灵龟之遐寿，乃智慧昌荣之瑞象也。自古便有镇宅御难、祈福迎祥之誉，其纹为珍，上镌青铜古器，下传今世。观其形，雕镂入微：厚重龟甲，寓守御之固；威严龙首，显磅礴之气；灵尾迤逦，劲爪生风，形神兼备，混元一体。灵石孕形，承天地重器，曾令九州立碑；背负苍山，稳若磐石，是为赑屃，志镇八荒。寻江河尽处，阅古今兴衰；世途崎岖，挺身担道，镇水安澜，赑屃镇川，守定四方。恒毅、厚德、守正、承乾，凌云巅，证玄黄，神州万里，莫不崇仰此灵瑞之盛名。"
 
 msgid "special_style/A170_M_VII_Y_FCC_3Dst"
 msgstr "扭曲之路"
@@ -26011,6 +26161,24 @@ msgstr ""
 "\"进攻是最好的防守？愚蠢！你在著名的寺庙里完成了数千次'精疲力竭'的训练后，只学会了如何攻击敌方，却没有学会最重要的东西。主动性！那才是制胜的关键。你一次又一次加入战斗，使用同样的战术，自欺欺人的认为自己掌握了某种秘诀。可笑。我在你还没有开始思考进攻招数的时候，就已经将其扼杀在摇篮里了。我在你的眼睛里依然能看到对猛虎利爪的敬畏。主动性不仅是熟练地掌握你最拿手的战术。你需要积极地行动，以力量对抗力量:"
 " 反击、横扫、冲锋，以及，我再说一遍，时刻向敌方施压。八百年来我一直在寻找能够与我一战的高手，然汝等并无此等人也...\""
 
+msgid "special_style/Ch45_WZ_114_KS_3Dst"
+msgstr "雄关演阵"
+
+msgid "special_style/Ch45_WZ_114_KS_3Dst_desc/long"
+msgstr ""
+"苍鹰盘空，下瞩远野，青草弥望，若碧浪起伏，延绵不绝。余按堞而立，极目天末。寒霜凝于边墙石甓，破晓熹微，泛泛清浅寒光。边墙延袤无极，石垣若凝流，随山脊萦曲起伏，越丘峦，渐没于远雾之中。寒风砭骨，戍卒私语，呵气成雾，袅袅散于其间。\n"
+"\n"
+"俄而战鼓骤震，众皆起。余辈奉令，集于关城校场。长枪队布鸳鸯之阵，官制长枪，尽端中平之势。枪尖森列，适承天际初来之晨光。步、合、刺 —— 与牌手、狼筅手、镋钯手、鸟铳手，戮力相协，屡练阵形攻防之契。直至朝阳跃于山巅，为校场之尘，镀以鎏金。\n"
+"\n"
+"我辈屹立于斯，边墙亦与吾辈并肩伫立。"
+
+msgid "special_style/Ch47_BZ_176_KS_3Dst"
+msgstr "平天大圣"
+
+msgid "special_style/Ch47_BZ_176_KS_3Dst_desc/long"
+msgstr ""
+"妖胎化形，洞悉混沌真章，威撼六合，震魄惊寰。横断幽冥，狂性烈烈，号曰平天，其志愈盛；踞火山之红焰地，拥雷岭之翠云堤，雄霸一方，气吞八荒。世途艰危，振威扬风，慑服群妖，莫敢不从；秉野性，重情契，性骄横，心自在，步入雷音，伏却尘缘。八荒之内，远近皆闻其名，平天大圣之威，震彻三界。"
+
 msgid "special_style/Ch48_BZ_75_BXI_3DSt"
 msgstr "锋芒毕露"
 
@@ -26070,6 +26238,13 @@ msgstr "第一勇士"
 msgid "special_style/Ch65_Type59_IC4_3Dst_desc/long"
 msgstr ""
 "他声名显赫、威震四方。他傲视群雄、智勇双全。但岁月不饶人。英雄迟暮，长江后浪推前浪，人们渐渐将其遗忘。但乌云焉能遮日？第一勇士誓将流芳百世。从竞争激烈的《坦克世界》国际冠军赛的灰烬中，他再次站了起来，身披黑金战甲，手捧冠军奖杯，身边还有一只忠诚的蝎狮。现在，没有什么能阻挡他创造新的传奇。"
+
+msgid "special_style/Ch74_Waffentrager_15_3Dst"
+msgstr "二郎真君"
+
+msgid "special_style/Ch74_Waffentrager_15_3Dst_desc/long"
+msgstr ""
+"仙凡毓秀，额绽金睛，丰神俊雅，气凌霄汉。玄功九转通变化，三尖两刃破万重，持弓挟弹，哮天随行，法天象地，勇冠诸天。劈桃山以救母，担日月而巡天，孝心动宸阙，英名满尘寰。守灌江灵境，统梅山六圣，听调不听宣，神威镇八荒。斩蛟治水，护佑生民，赐福护佑，去灾弥祸。秉刚直，怀忠义，性孤高，志凌云，不慕天廷爵，甘为守土神。九州万姓同奉祀，清源妙道，二郎显圣真君，威名永耀，万古长存。"
 
 msgid "special_style/Counterattack"
 msgstr "绝地反攻战役"
@@ -30403,6 +30578,30 @@ msgstr "一款全地形风格，尽显您对Y系的热爱。"
 msgid "special_style/gb_ht_line_desc/long"
 msgstr ""
 "联合杰克是Y系传承和传统的象征，代表着其地区联合的身份。尽管有人认为\"联合杰克\"这一名称仅在海上悬挂时用于指代其颜色，但自17世纪以来，这一名称已成为旗帜本身的代名词。其标志性的红、白、蓝三色，在全球范围内，成为了Y系自豪感、历史、团结的象征。"
+
+msgid "special_style/german_tanks_event"
+msgstr "D系匠心"
+
+msgid "special_style/german_tanks_event_desc"
+msgstr "一款造型优美的全地形风格，致敬享誉全球的D系工程技艺。"
+
+msgid "special_style/german_tanks_event_desc/long"
+msgstr ""
+"坦克的世界，系别角色纷繁。\n"
+"\n"
+"无论您是偏爱驾驶自行反坦克炮，\n"
+"\n"
+"以凌厉火力压制对手，\n"
+"\n"
+"还是钟情于其他类型的坦克，\n"
+"\n"
+"驰骋于苔原、草原与黄沙之间。\n"
+"\n"
+"发动机、火炮与操控系统皆值得信赖，您无需对座驾性能有半分迟疑。\n"
+"\n"
+"毕竟，当您驾驭D系工程技艺的杰作驶向战场时，\n"
+"\n"
+"自然信心十足！"
 
 msgid "special_style/gift_NY_2019"
 msgstr "沉重的礼物"

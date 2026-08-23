@@ -1055,6 +1055,23 @@ msgstr "出色的正面装甲，高额的平均单发损伤"
 msgid "A168_XM_57"
 msgstr "XM57"
 
+msgid "A168_XM_57_CFE_I"
+msgstr "玄甲镇岳"
+
+msgid "A168_XM_57_CFE_I_descr"
+msgstr ""
+"龙龟者，合四灵之精，融真龙之生机、灵龟之遐寿，乃智慧昌荣之瑞象也。自古便有镇宅御难、祈福迎祥之誉，其纹为珍，上镌青铜古器，下传今世。观其形，雕镂入微：厚重龟甲，寓守御之固；威严龙首，显磅礴之气；灵尾迤逦，劲爪生风，形神兼备，混元一体。灵石孕形，承天地重器，曾令九州立碑；背负苍山，稳若磐石，是为赑屃，志镇八荒。寻江河尽处，阅古今兴衰；世途崎岖，挺身担道，镇水安澜，赑屃镇川，守定四方。恒毅、厚德、守正、承乾，凌云巅，证玄黄，神州万里，莫不崇仰此灵瑞之盛名。"
+
+msgid "A168_XM_57_CFE_I_long_special"
+msgstr ""
+"玄甲镇岳是一辆具有独特设计的M系自行反坦克炮。可部分旋转的炮塔中安装有一门155毫米火炮，左右射界合计150度，坦克即使不转动车体也能控制大片战场区域。再加上堪比T95的坚固装甲，这头钢铁猛兽将非常适合用来击溃敌方的重装甲坦克。"
+
+msgid "A168_XM_57_CFE_I_short"
+msgstr "玄甲镇岳"
+
+msgid "A168_XM_57_CFE_I_short_special"
+msgstr "大口径火炮、可部分旋转炮塔"
+
 msgid "A168_XM_57_descr"
 msgstr ""
 "在可有限旋转的炮塔中安装火炮的设计理念出现在20世纪50年代中期，XM57正是这一理念指导下设计的坦克。其一大特点就是采用无人炮塔，乘员均位于炮塔后的战斗室中，使炮塔的尺寸得以缩小。火炮采用全自动装填，炮手利用炮塔中的摄像头进行间接瞄准。战斗室顶部配有可旋转的潜望镜，在车长观察塔位置则安装有遥控式高射机枪来对抗空中目标。该坦克仅存在于蓝图中。"
@@ -1934,6 +1951,9 @@ msgstr "AN/VRC-3"
 msgid "AN_VRC_3_XM"
 msgstr "AN/VRC-3XM"
 
+msgid "AN_VRC_3_XM_CFE_I"
+msgstr "AN/VRC-3XM"
+
 msgid "AN_VRC_46"
 msgstr "AN/VRC-46"
 
@@ -2276,6 +2296,9 @@ msgstr "TS-6"
 
 msgid "Chassis_A168_XM_57"
 msgstr "XM57"
+
+msgid "Chassis_A168_XM_57_CFE_I"
+msgstr "玄甲镇岳"
 
 msgid "Chassis_A169_PattonIII_120"
 msgstr "\"巴顿\"坦克"
@@ -3042,6 +3065,14 @@ msgstr ""
 
 msgid "Continental_AVI_1790_8XM"
 msgstr "大陆AVI-1790-8XM"
+
+msgid "Continental_AVI_1790_8XM_CFE_I"
+msgstr "大陆AVI-1790-8XM"
+
+msgid "Continental_AVI_1790_8XM_CFE_I_short"
+msgstr ""
+"大陆\n"
+"AVI-1790-8XM"
 
 msgid "Continental_AVI_1790_8XM_short"
 msgstr ""
@@ -4300,6 +4331,9 @@ msgstr "TS-6"
 
 msgid "Turret_1_A168_XM_57"
 msgstr "XM57"
+
+msgid "Turret_1_A168_XM_57_CFE_I"
+msgstr "玄甲镇岳"
 
 msgid "Turret_1_A169_PattonIII_120"
 msgstr "\"巴顿\"坦克"
@@ -5696,6 +5730,9 @@ msgstr "AP M111 (T95)"
 msgid "_155mm_AP_M111_XM57"
 msgstr "AP M111 XM57"
 
+msgid "_155mm_AP_M111_XM57_CFE_I"
+msgstr "AP M111 XM57"
+
 msgid "_155mm_AP_M112"
 msgstr "AP M112"
 
@@ -5718,6 +5755,9 @@ msgid "_155mm_AP_M112_M53"
 msgstr "AP M112 (M53)"
 
 msgid "_155mm_AP_M112_XM57"
+msgstr "APCR M112 XM57"
+
+msgid "_155mm_AP_M112_XM57_CFE_I"
 msgstr "APCR M112 XM57"
 
 msgid "_155mm_AP_MPCS"
@@ -5754,6 +5794,9 @@ msgid "_155mm_Gun_M46"
 msgstr "155mm M46炮"
 
 msgid "_155mm_Gun_T7XM"
+msgstr "155mm T7XM炮"
+
+msgid "_155mm_Gun_T7XM_CFE_I"
 msgstr "155mm T7XM炮"
 
 msgid "_155mm_HEAT_M167"
@@ -5808,6 +5851,9 @@ msgid "_155mm_HE_M101_T95"
 msgstr "HE M101 (T95)"
 
 msgid "_155mm_HE_M101_XM57"
+msgstr "HE M101 XM57"
+
+msgid "_155mm_HE_M101_XM57_CFE_I"
 msgstr "HE M101 XM57"
 
 msgid "_155mm_HE_M102"

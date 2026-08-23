@@ -28799,4 +28799,58 @@
 			</tilingSettings>
 		</camouflage>
 	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<include>
+				<nations>germany</nations>
+			</include>
+			<exclude>
+				<vehicles>germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF</vehicles>
+			</exclude>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
+		</vehicleFilter>
+		<camouflage>
+			<id>1159</id>
+			<texture>vehicles/russian/Camouflage/german_tanks_event.dds</texture>
+			<userString>#vehicle_customization:camouflage/german_tanks_event/label</userString>
+			<description>#vehicle_customization:camouflage/empty/description</description>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<tags>styleOnly fullRGB hiddenInUI</tags>
+			<invisibilityFactor>1</invisibilityFactor>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<rotation>
+				<HULL>1.405688</HULL>
+				<TURRET>1.405688</TURRET>
+				<GUN>1.405688</GUN>
+			</rotation>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>
+					1.8 1.8
+					<!--BW_String-->
+				</factor>
+				<offset>
+					2.92 0.7
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+			<glossMetallicMap>vehicles/russian/Camouflage/german_tanks_event_GMM.dds</glossMetallicMap>
+		</camouflage>
+	</itemGroup>
 </root>

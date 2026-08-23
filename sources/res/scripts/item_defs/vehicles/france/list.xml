@@ -1424,11 +1424,11 @@
 		<shortDescriptionSpecial>#france_vehicles:F142_M47_Chevalier_short_special</shortDescriptionSpecial>
 		<longDescriptionSpecial>#france_vehicles:F142_M47_Chevalier_long_special</longDescriptionSpecial>
 		<price>
-			100
+			10300
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
-		<tags>mediumTank role_MT_universal HD improvedVentilation_class2_user tankRammer_class2_user aimingStabilizer_class1_user extraHealthReserve_class2_user antifragmentationLining_medium_user earn_crystals patton secret testTank</tags>
+		<tags>mediumTank role_MT_universal HD improvedVentilation_class2_user tankRammer_class2_user aimingStabilizer_class1_user extraHealthReserve_class2_user antifragmentationLining_medium_user earn_crystals patton</tags>
 		<level>9</level>
 	</F142_M47_Chevalier>
 </root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>content/3D_Customization/Cus_192_ArmiesA_Jerrycans/normal/lod0/Cus_192_ArmiesA_Jerrycans_01</nodefullVisual>
+	<parent>content/3D_Customization/Cus_192_ArmiesA_Jerrycans/normal/lod1/Cus_192_ArmiesA_Jerrycans_01</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-0.434920 -0.007754 -0.613850</min>
+		<max>0.065528 0.448081 0.615059</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>
