@@ -64,7 +64,7 @@
 					</property>
 					<property>
 						g_horizontalFlip
-						<Float>1.000000</Float>
+						<Float>0.000000</Float>
 					</property>
 					<property>
 						g_secondLDir
@@ -76,6 +76,22 @@
 					</property>
 					<property>
 						g_toneMapBurnValueForward
+						<Float>1.000000</Float>
+					</property>
+					<property>
+						g_enableStars
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_starsMap
+						<Texture/>
+					</property>
+					<property>
+						g_starsTiling
+						<Float>4.000000</Float>
+					</property>
+					<property>
+						g_starsExposure
 						<Float>1.000000</Float>
 					</property>
 				</material>

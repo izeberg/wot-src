@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G194_E_50_GT_Alkett_Prod/_skins/G194_E_50_GT_Alkett_Prod_02_3Dst_Hertz/crash/lod3/Gun_01</nodefullVisual>
+	<parent>vehicles/german/G194_E_50_GT_Alkett_Prod/_skins/G194_E_50_GT_Alkett_Prod_02_3Dst_Hertz/crash/lod4/Gun_01</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-0.510181 -0.403079 -1.350952</min>
+		<max>0.258113 0.339053 4.895616</max>
+	</visibilityBox>
+</root>

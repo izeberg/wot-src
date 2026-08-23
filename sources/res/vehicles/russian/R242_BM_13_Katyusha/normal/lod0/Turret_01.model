@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/russian/R242_BM_13_Katyusha/normal/lod1/Turret_01</parent>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/russian/R242_BM_13_Katyusha/normal/lod0/Turret_01</nodefullVisual>
+	<visibilityBox>
+		<min>-0.504831 -0.175261 -0.254256</min>
+		<max>1.367418 0.425254 2.025311</max>
+	</visibilityBox>
+</root>

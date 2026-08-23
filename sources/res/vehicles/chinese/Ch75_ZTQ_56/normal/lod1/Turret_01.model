@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/chinese/Ch75_ZTQ_56/normal/lod1/Turret_01</nodefullVisual>
+	<parent>vehicles/chinese/Ch75_ZTQ_56/normal/lod2/Turret_01</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.158826 -0.001899 -2.713694</min>
+		<max>1.155339 1.896882 1.328314</max>
+	</visibilityBox>
+</root>

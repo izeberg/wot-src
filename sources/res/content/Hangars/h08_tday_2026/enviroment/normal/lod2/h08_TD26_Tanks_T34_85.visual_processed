@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s0Shape.vertices</vertices>
+			<primitive>s0Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<materialKind>112</materialKind>
+					<collisionFlags>0</collisionFlags>
+				</material>
+				<groupOrigin>0.000000 0.992997 -0.413216</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-1.965432 0.027214 -3.930538</min>
+		<max>1.965432 1.958780 3.104105</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>90</geometrySize>
+	<minUVDensity>0.016175</minUVDensity>
+</root>

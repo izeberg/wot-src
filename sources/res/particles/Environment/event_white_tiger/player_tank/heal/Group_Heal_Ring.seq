@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>1.600000</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Radius</name>
+		<type>model</type>
+		<resource>particles/Environment/event_white_tiger/player_tank/heal/Group_Heal_Ring.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.800000 1.800000 1.800000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd0</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.054902 1.000000 0.098039 0.000000</value>
+				<inTangent>5.176445 0.000000 6.941145 14.999928</inTangent>
+				<outTangent>5.176445 0.000000 6.941145 14.999928</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.066667</startTime>
+				<value>0.400000 1.000000 0.560784 1.000000</value>
+				<inTangent>5.176445 -0.000000 6.941140 14.999926</inTangent>
+				<outTangent>-0.651584 0.000000 -0.923077 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>0.117647 1.000000 0.160784 1.000000</value>
+				<inTangent>-0.651584 -0.000000 -0.923077 0.000000</inTangent>
+				<outTangent>-0.705881 -4.564695 -0.917646 -5.999989</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.666667</startTime>
+				<value>0.000000 0.239216 0.007843 0.000000</value>
+				<inTangent>-0.705881 -4.564695 -0.917646 -5.999989</inTangent>
+				<outTangent>-0.705881 -4.564695 -0.917646 -5.999989</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd1</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.282353 1.000000 0.188235 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 14.999928</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 14.999928</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.066667</startTime>
+				<value>0.282353 1.000000 0.188235 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 14.999926</inTangent>
+				<outTangent>-0.651584 0.000000 -0.271493 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>0.000000 1.000000 0.070588 1.000000</value>
+				<inTangent>-0.651584 -0.000000 -0.271493 0.000000</inTangent>
+				<outTangent>1.694115 0.000000 0.705879 -5.999989</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.666667</startTime>
+				<value>0.282353 1.000000 0.188235 0.000000</value>
+				<inTangent>1.694115 -0.000000 0.705879 -5.999989</inTangent>
+				<outTangent>1.694115 -0.000000 0.705879 -5.999989</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property vector4</name>
+			<type>vector4</type>
+			<identifier>s_nd0</identifier>
+			<property>opacity_UV_Speed_Scale</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 -2.055512 1.000000 2.000000</value>
+				<inTangent>0.000000 -2.288953 0.000000 0.403403</inTangent>
+				<outTangent>0.000000 -2.288953 0.000000 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.666667</startTime>
+				<value>0.000000 -2.627479 1.000000 2.000000</value>
+				<inTangent>-0.000000 -0.857950 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.000000 -0.857950 -0.000000 -0.000000</outTangent>
+				<tangentMode>65536</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property vector4</name>
+			<type>vector4</type>
+			<identifier>s_nd1</identifier>
+			<property>opacity_UV_Speed_Scale</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 2.000000 1.000000 0.890359</value>
+				<inTangent>0.000000 0.000000 0.000000 0.103270</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.103270</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.666667</startTime>
+				<value>0.000000 2.000000 1.000000 1.133562</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 0.157684</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 0.541225</outTangent>
+				<tangentMode>66307</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property vector4</name>
+			<type>vector4</type>
+			<identifier>s_nd1</identifier>
+			<property>diffuseUVSpeedAlphaOffset</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 -0.150000 1.000000 0.000000</value>
+				<inTangent>0.000000 -0.037549 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 -0.037549 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.666667</startTime>
+				<value>0.000000 -0.175033 1.000000 0.000000</value>
+				<inTangent>-0.000000 -0.037549 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.000000 -0.037549 -0.000000 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Light 0</name>
+		<type>light</type>
+		<lightType>omnilight</lightType>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 4.407882 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>multiplier</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>275012.562500</inTangent>
+				<outTangent>275012.562500</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.066667</startTime>
+				<value>18334.171875</value>
+				<inTangent>275012.562500</inTangent>
+				<outTangent>-30556.937500</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.666667</startTime>
+				<value>0.000000</value>
+				<inTangent>-30556.937500</inTangent>
+				<outTangent>-30556.937500</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>color</name>
+			<type>vector4</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.231373 1.000000 0.223529 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Particle</name>
+		<type>particle</type>
+		<resource>particles/Environment/event_white_tiger/player_tank/heal/Heal_sparks.eff</resource>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>29.250000</inTangent>
+				<outTangent>29.250000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.033333</startTime>
+				<value>0.975000</value>
+				<inTangent>0.365095</inTangent>
+				<outTangent>0.365095</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.666667</startTime>
+				<value>0.000000</value>
+				<inTangent>-1.907066</inTangent>
+				<outTangent>-1.907066</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>group_healing_circle_sound</name>
+		<type>sound</type>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>1.600000</duration>
+				<value>Root|</value>
+			</frame>
+		</track>
+		<track>
+			<name>Sound</name>
+			<type>sound</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>1.589292</duration>
+				<sequenceSound>ev_wt_ability_full_repair_circle</sequenceSound>
+				<type>one_shot</type>
+				<fade>0.000000</fade>
+			</frame>
+		</track>
+		<track>
+			<name>volume</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>29.999998</inTangent>
+				<outTangent>29.999998</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.033333</startTime>
+				<value>1.000000</value>
+				<inTangent>29.999998</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.600000</startTime>
+				<value>1.000000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>-0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

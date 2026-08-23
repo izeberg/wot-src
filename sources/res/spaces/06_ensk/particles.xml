@@ -145,6 +145,7 @@
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_env_uni_628_ventilationsys_06.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_env_uni_628_ventilationsys_tile.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_gaf010_fencetile1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_mle_uni_001_sdkfz.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_rw501_semaphore.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_rw_uni_008_semafor_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_rw_uni_008_semafor_02.vfx</fn_effect_bin>
@@ -259,11 +260,11 @@
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_mle006_wirebarricade1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_mle009_boxcamouflage1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_mle009_boxcamouflage_detonation.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_mle016_boxeshowitzer.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_mle019_gerboxes1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_mle019_gerboxes4.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_mle020_germotocycle.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_mle020_germotocycle_ram.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_mle025_bobbin.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_mle046_bag1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_mleaf_002_radiolocator.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_mlesu_05_02_45mm_1.vfx</fn_effect_bin>
@@ -357,6 +358,7 @@
 		<fn_effect_bin>particles/environment/objects/hd_env_uni_628_ventilationsys_06.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_uni_628_ventilationsys_tile.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_gaf010_fencetile1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/hd_mle_uni_001_sdkfz.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_rw501_semaphore.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_rw_uni_008_semafor_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_rw_uni_008_semafor_02.eff</fn_effect_bin>
@@ -471,11 +473,11 @@
 		<fn_effect_bin>particles/environment/objects/inf_mle009_boxcamouflage1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_mle009_boxcamouflage_detonation.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_mle014_shellsnumbers.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/inf_mle016_boxeshowitzer.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_mle019_gerboxes1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_mle019_gerboxes4.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_mle020_germotocycle.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_mle020_germotocycle_ram.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_mle025_bobbin.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_mle046_bag1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_mleaf_002_radiolocator.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_mlesu_05_02_45mm_1.eff</fn_effect_bin>
@@ -707,6 +709,7 @@
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_env_uni_628_ventilationsys_06.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_env_uni_628_ventilationsys_tile.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_gaf010_fencetile1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_mle_uni_001_sdkfz.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_rw501_semaphore.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_rw_uni_008_semafor_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_rw_uni_008_semafor_02.vfx</fn_effect_bin>
@@ -821,11 +824,11 @@
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_mle006_wirebarricade1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_mle009_boxcamouflage1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_mle009_boxcamouflage_detonation.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_mle016_boxeshowitzer.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_mle019_gerboxes1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_mle019_gerboxes4.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_mle020_germotocycle.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_mle020_germotocycle_ram.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_mle025_bobbin.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_mle046_bag1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_mleaf_002_radiolocator.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_mlesu_05_02_45mm_1.vfx</fn_effect_bin>
@@ -919,6 +922,7 @@
 		<fn_effect_bin>particles/environment/objects/hd_env_uni_628_ventilationsys_06.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_uni_628_ventilationsys_tile.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_gaf010_fencetile1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/hd_mle_uni_001_sdkfz.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_rw501_semaphore.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_rw_uni_008_semafor_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_rw_uni_008_semafor_02.eff</fn_effect_bin>
@@ -1033,11 +1037,11 @@
 		<fn_effect_bin>particles/environment/objects/inf_mle009_boxcamouflage1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_mle009_boxcamouflage_detonation.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_mle014_shellsnumbers.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/inf_mle016_boxeshowitzer.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_mle019_gerboxes1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_mle019_gerboxes4.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_mle020_germotocycle.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_mle020_germotocycle_ram.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_mle025_bobbin.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_mle046_bag1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_mleaf_002_radiolocator.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_mlesu_05_02_45mm_1.eff</fn_effect_bin>

@@ -58,128 +58,136 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<primitive>indices</primitive>
+			<vertices>hull_Shape.vertices</vertices>
+			<primitive>hull_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_mat_inside</identifier>
-					<fx>shaders/std_effects/PBS_tank.fx</fx>
-					<materialKind>0</materialKind>
-					<collisionFlags>0</collisionFlags>
-					<property>
-						diffuseMap
-						<Texture>vehicles/american/crash_inside/crash_inside_AM.dds</Texture>
-					</property>
-					<property>
-						excludeMaskAndAOMap
-						<Texture>vehicles/american/crash_inside/crash_inside_AO.dds</Texture>
-					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>true</Bool>
-					</property>
-					<property>
-						metallicGlossMap
-						<Texture>vehicles/american/crash_inside/crash_inside_GMM.dds</Texture>
-					</property>
-					<property>
-						normalMap
-						<Texture>vehicles/american/crash_inside/crash_inside_NM.dds</Texture>
-					</property>
-				</material>
-				<groupOrigin>0.033331 0.060385 0.484525</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
-				1
-				<material>
-					<identifier>tank_hull_01</identifier>
 					<fx>shaders/std_effects/PBS_tank_crash.fx</fx>
 					<materialKind>0</materialKind>
+					<identifier>tank_hull_01</identifier>
 					<collisionFlags>0</collisionFlags>
-					<property>
-						alphaReference
-						<Int>64</Int>
-					</property>
-					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
-					</property>
-					<property>
-						crashTileMap
-						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
-					</property>
 					<property>
 						diffuseMap
 						<Texture>vehicles/american/A157_M_VII_Y/M_VII_Y_hull_01_AM.dds</Texture>
 					</property>
 					<property>
-						excludeMaskAndAOMap
-						<Texture>vehicles/american/A157_M_VII_Y/M_VII_Y_hull_01_AO.dds</Texture>
-					</property>
-					<property>
-						g_crashUVTiling
-						<Vector4>2.000000 2.000000 0.000000 0.000000</Vector4>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<property>
 						metallicGlossMap
 						<Texture>vehicles/american/A157_M_VII_Y/M_VII_Y_hull_01_GMM.dds</Texture>
 					</property>
 					<property>
-						normalMap
-						<Texture>vehicles/american/A157_M_VII_Y/M_VII_Y_hull_01_ANM.dds</Texture>
-					</property>
-				</material>
-				<groupOrigin>-0.038381 0.073971 0.005051</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
-				2
-				<material>
-					<identifier>tank_chassis_01</identifier>
-					<fx>shaders/std_effects/PBS_tank_crash.fx</fx>
-					<materialKind>0</materialKind>
-					<collisionFlags>0</collisionFlags>
-					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+						g_crashUVTiling
+						<Vector4>4.000000 4.000000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						crashTileMap
 						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
 					</property>
 					<property>
+						normalMap
+						<Texture>vehicles/american/A157_M_VII_Y/M_VII_Y_hull_01_ANM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/american/A157_M_VII_Y/M_VII_Y_hull_01_AO.dds</Texture>
+					</property>
+					<property>
+						alphaReference
+						<Int>128</Int>
+					</property>
+				</material>
+				<groupOrigin>-0.038381 0.073971 0.005051</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<fx>shaders/std_effects/PBS_tank_crash.fx</fx>
+					<materialKind>0</materialKind>
+					<identifier>tank_chassis_01</identifier>
+					<collisionFlags>0</collisionFlags>
+					<property>
 						diffuseMap
 						<Texture>vehicles/american/A157_M_VII_Y/M_VII_Y_chassis_01_AM.dds</Texture>
 					</property>
 					<property>
-						excludeMaskAndAOMap
-						<Texture>vehicles/american/A157_M_VII_Y/M_VII_Y_chassis_01_AO.dds</Texture>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<property>
 						metallicGlossMap
 						<Texture>vehicles/american/A157_M_VII_Y/M_VII_Y_chassis_01_GMM.dds</Texture>
 					</property>
 					<property>
-						normalMap
-						<Texture>vehicles/american/A157_M_VII_Y/M_VII_Y_chassis_01_ANM.dds</Texture>
-					</property>
-					<property>
-						alphaReference
-						<Int>128</Int>
+						g_crashUVTiling
+						<Vector4>2.000000 2.000000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						alphaTestEnable
 						<Bool>true</Bool>
 					</property>
+					<property>
+						crashTileMap
+						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/american/A157_M_VII_Y/M_VII_Y_chassis_01_ANM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/american/A157_M_VII_Y/M_VII_Y_chassis_01_AO.dds</Texture>
+					</property>
+					<property>
+						alphaReference
+						<Int>128</Int>
+					</property>
 				</material>
-				<groupOrigin>-0.004190 -0.417901 0.054383</groupOrigin>
+				<groupOrigin>-0.004190 -0.415966 0.055704</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				2
+				<material>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<materialKind>0</materialKind>
+					<identifier>tank_mat_inside</identifier>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>vehicles/russian/Crash_inside/crash_inside_AM.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/russian/Crash_inside/crash_inside_GMM.dds</Texture>
+					</property>
+					<property>
+						g_useNormalPackDXT1
+						<Bool>true</Bool>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/russian/Crash_inside/crash_inside_NM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/russian/Crash_inside/crash_inside_AO.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.033331 0.060385 0.484525</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-1.923580 -1.005840 -2.973060</min>
-		<max>1.846818 0.697501 2.983162</max>
+		<min>-1.923580 -1.001969 -2.973060</min>
+		<max>1.846818 0.697502 2.983161</max>
 	</boundingBox>
-	<geometrySize>251386</geometrySize>
+	<geometrySize>253346</geometrySize>
 	<minUVDensity>0.002482</minUVDensity>
 </root>

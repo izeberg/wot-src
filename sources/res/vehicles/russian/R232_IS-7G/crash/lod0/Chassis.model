@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-2.460673 -0.004563 -4.615538</min>
+		<max>2.459784 1.397766 5.331373</max>
+	</visibilityBox>
+	<parent>vehicles/russian/R232_IS-7G/crash/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/russian/R232_IS-7G/crash/lod0/Chassis</nodefullVisual>
+</root>

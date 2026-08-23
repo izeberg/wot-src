@@ -1844,6 +1844,22 @@
 							0
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_4>
+						<armor_5>
+							60
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_5>
+						<armor_6>
+							50
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_6>
+						<armor_7>
+							115
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_7>
+						<armor_8>
+							110
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_8>
 						<gun>10</gun>
 					</armor>
 					<shotDispersionRadius>
@@ -2660,4 +2676,5 @@
 			<!--BW_String-->
 		</alpha>
 	</emblems>
+	<baseColorID>1</baseColorID>
 </root>

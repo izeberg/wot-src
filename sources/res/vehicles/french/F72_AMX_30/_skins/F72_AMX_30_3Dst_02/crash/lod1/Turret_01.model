@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F72_AMX_30/_skins/F72_AMX_30_3Dst_02/crash/lod1/Turret_01</nodefullVisual>
+	<parent>vehicles/french/F72_AMX_30/_skins/F72_AMX_30_3Dst_02/crash/lod2/Turret_01</parent>
+	<tank>true</tank>
+	<extent>
+		64.0
+		<!--BW_String-->
+	</extent>
+	<visibilityBox>
+		<min>-1.484870 -0.036218 -2.641269</min>
+		<max>1.452862 1.529828 1.393956</max>
+	</visibilityBox>
+</root>

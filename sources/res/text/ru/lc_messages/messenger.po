@@ -33,7 +33,7 @@ msgid "battle/receivers/common"
 msgstr "ВСЕМ"
 
 msgid "battle/receivers/squad"
-msgstr "ВЗВОДУ"
+msgstr "ГРУППЕ"
 
 msgid "battle/receivers/team"
 msgstr "КОМАНДЕ"
@@ -125,6 +125,9 @@ msgstr "Поиск игроков"
 msgid "chat_action/GET_VOIP_CREDENTIALS"
 msgstr "Настройки голосового чата"
 
+msgid "chat_action/REQUEST_ECHO_CHANNEL"
+msgstr "Проверка голосовой связи"
+
 msgid "chat_error/CANNOT_BAN_ONESELF"
 msgstr "нельзя забанить самого себя."
 
@@ -152,10 +155,10 @@ msgstr ""
 "чат (%(keyName)s)."
 
 msgid "client/dynSquad/created/allies"
-msgstr "Cоюзники сформировали взвод %(squadNum)s."
+msgstr "Cоюзники сформировали группу %(squadNum)s."
 
 msgid "client/dynSquad/created/enemies"
-msgstr "Противник сформировал взвод %(squadNum)s."
+msgstr "Противник сформировал группу %(squadNum)s."
 
 msgid "client/dynSquad/created/owner/disableVOIP"
 msgstr ""
@@ -173,7 +176,7 @@ msgstr ""
 "Необходимо назначить клавишу для включения/отключения голосовой связи."
 
 msgid "client/dynSquad/created/owner/withoutVOIP"
-msgstr "Взвод %(squadNum)s сформирован. Доступен взводный чат."
+msgstr "Группа %(squadNum)s сформирована. Доступен групповой чат."
 
 msgid "client/dynSquad/created/recruit/disableVOIP"
 msgstr ""
@@ -192,7 +195,7 @@ msgstr ""
 "связи."
 
 msgid "client/dynSquad/created/recruit/withoutVOIP"
-msgstr "Вы присоединились ко взводу %(squadNum)s. Доступен взводный чат."
+msgstr "Вы присоединились к группе %(squadNum)s. Доступен групповой чат."
 
 msgid "client/dynSquad/disableVOIP"
 msgstr ""
@@ -219,21 +222,21 @@ msgstr ""
 "связи."
 
 msgid "client/dynSquad/inviteAccepted/myself/withoutVOIP"
-msgstr "Вы присоединились ко взводу %(squadNum)s. Доступен взводный чат."
+msgstr "Вы присоединились к группе %(squadNum)s. Доступен групповой чат."
 
 msgid "client/dynSquad/inviteAccepted/user"
-msgstr "%(receiver)s присоединился ко взводу %(squadNum)s."
+msgstr "%(receiver)s присоединился к группе %(squadNum)s."
 
 msgid "client/dynSquad/inviteReceived"
-msgstr "%(creator)s пригласил вас во взвод."
+msgstr "%(creator)s пригласил вас в группу."
 
 msgid "client/dynSquad/inviteReceived/anonymized"
 msgstr ""
-"%(creator)s пригласил вас во взвод.\n"
-"Внимание! Совзводные будут видеть ваше настоящее игровое имя и тег клана."
+"%(creator)s пригласил вас в группу.\n"
+"Внимание! Игроки в группе будут видеть ваше настоящее игровое имя и тег клана."
 
 msgid "client/dynSquad/inviteSent"
-msgstr "%(receiver)s приглашён во взвод."
+msgstr "%(receiver)s приглашён в группу."
 
 msgid "client/error/broadcastInCooldown"
 msgstr "Отправка сообщений заморожена на %s с."
@@ -4113,6 +4116,12 @@ msgstr "Не в сети"
 
 msgid "status/online"
 msgstr "В сети"
+
+msgid "voip/initInProgress"
+msgstr "Инициализация голосовой связи..."
+
+msgid "voip/ready"
+msgstr "Голосовая связь активна."
 
 msgid "xmpp_error/action"
 msgstr "Невозможно выполнить «%(actionName)s». Попробуйте позже."

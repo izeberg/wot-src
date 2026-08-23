@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/sweden/S43_Armborst/normal/lod1/Turret_01</nodefullVisual>
+	<parent>vehicles/sweden/S43_Armborst/normal/lod2/Turret_01</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.176929 -0.000623 -2.100388</min>
+		<max>1.176932 1.898254 1.417470</max>
+	</visibilityBox>
+</root>

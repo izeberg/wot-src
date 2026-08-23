@@ -1,0 +1,75 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "event/wt/collection"
+msgstr ""
+"Прогрессия: %(whiteSpanish_Open)s%(current)d%(whiteSpanish_Close)s/%(total)d"
+
+msgid "event/wt/tickets"
+msgstr "Ключи:"
+
+msgid "mode/white_tiger/battlePassTooltip/body"
+msgstr ""
+"Выполняя боевые задачи в режиме {whiteSpanish_open}«Ваффентрагер: "
+"резонанс»{whiteSpanish_close}, вы будете зарабатывать очки для продвижения "
+"по прогрессии Боевого пропуска."
+
+msgid "mode/white_tiger/battlePassTooltip/header"
+msgstr "Ачкі Баявога пропуска"
+
+msgid "mode/white_tiger/description"
+msgstr "Асимметричный бой 1х6. Особая техника"
+
+msgid "mode/white_tiger/performanceRisk/high/description"
+msgstr ""
+"Производительности вашего компьютера недостаточно для данного режима. "
+"Вероятны проблемы с графикой и перемещением техники, возможно также "
+"аварийное закрытие клиента игры."
+
+msgid "mode/white_tiger/performanceRisk/high/header"
+msgstr "Нізкая прадукцыйнасць"
+
+msgid "mode/white_tiger/performanceRisk/high/headerIcon"
+msgstr "%(icon) Низкая производительность"
+
+msgid "mode/white_tiger/performanceRisk/medium/description"
+msgstr ""
+"Режим требователен к компьютеру.\n"
+"Карта может долго загружаться, возможны проблемы с графикой и перемещением техники в бою. В случае недостаточной производительности попробуйте понизить настройки графики."
+
+msgid "mode/white_tiger/performanceRisk/medium/header"
+msgstr "Зніжэнне прадукцыйнасці"
+
+msgid "mode/white_tiger/performanceRisk/medium/headerIcon"
+msgstr "%(icon) Снижение производительности"
+
+msgid "reward/wtBones/description"
+msgstr ""
+"Рэдкая спецыялізаваная валюта, за якую купляюцца ўнікальныя тавары, "
+"недаступныя за іншую валюту."
+
+msgid "reward/wtBones/name"
+msgstr "Боны"
+
+msgid "reward/wtCrew/description"
+msgstr ""
+"Макс фон Кригер и Арман Делавель в виде уникальных членов экипажа "
+"с озвучкой."
+
+msgid "reward/wtCrew/name"
+msgstr "Экипаж с озвучкой"
+
+msgid "reward/wtOther/description"
+msgstr ""
+"Получите их за этапы прогрессии. Стартеры позволяют запустить портал Гончих "
+"с ценными наградами."
+
+msgid "reward/wtOther/name"
+msgstr "Стартеры Гончих"

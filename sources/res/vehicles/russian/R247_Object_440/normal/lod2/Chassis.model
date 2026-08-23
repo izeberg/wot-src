@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/russian/R247_Object_440/normal/lod2/Chassis</nodefullVisual>
+	<parent>vehicles/russian/R247_Object_440/normal/lod3/Chassis</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.640479 0.000000 -3.009456</min>
+		<max>1.640486 1.017759 2.897459</max>
+	</visibilityBox>
+</root>

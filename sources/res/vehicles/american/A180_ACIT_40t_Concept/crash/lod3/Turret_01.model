@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A180_ACIT_40t_Concept/crash/lod3/Turret_01</nodefullVisual>
+	<parent>vehicles/american/A180_ACIT_40t_Concept/crash/lod4/Turret_01</parent>
+	<tank>true</tank>
+	<extent>
+		192.0
+		<!--BW_String-->
+	</extent>
+	<visibilityBox>
+		<min>-1.563736 -0.003426 -2.750840</min>
+		<max>1.571890 2.031775 1.543378</max>
+	</visibilityBox>
+</root>

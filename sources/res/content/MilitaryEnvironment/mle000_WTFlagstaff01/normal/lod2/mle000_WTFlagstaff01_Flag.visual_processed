@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s_nd0.vertices</vertices>
+			<stream>s_nd0.uv2</stream>
+			<primitive>s_nd0.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>108</materialKind>
+					<fx>shaders/controlPoint/controlPointFlag_VAT.fx</fx>
+					<property>
+						diffuseMap
+						<Texture>content/MilitaryEnvironment/mle000_WTFlagstaff01/mle000_WTFlagstaff01_Flag_02_AM.dds</Texture>
+					</property>
+					<property>
+						diffuseMap2
+						<Texture>content/MilitaryEnvironment/mle000_WTFlagstaff01/mle000_WTFlagstaff01_Flag_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_AnimationDuration
+						<Float>0.000000</Float>
+					</property>
+					<property>
+						g_AnimationTime
+						<Float>0.810000</Float>
+					</property>
+					<property>
+						g_posTexture
+						<Texture>content/MilitaryEnvironment/mle000_WTFlagstaff01/Flag_02_POS_VAT.dds</Texture>
+					</property>
+					<property>
+						g_rotTexture
+						<Texture>content/MilitaryEnvironment/mle000_WTFlagstaff01/Flag_02_ROT_VAT.dds</Texture>
+					</property>
+					<property>
+						g_timeMode
+						<Int>3</Int>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/MilitaryEnvironment/mle000_WTFlagstaff01/mle000_WTFlagstaff01_Flag_02_GMM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap2
+						<Texture>content/MilitaryEnvironment/mle000_WTFlagstaff01/mle000_WTFlagstaff01_Flag_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/MilitaryEnvironment/mle000_WTFlagstaff01/mle000_WTFlagstaff01_Flag_ANM.dds</Texture>
+					</property>
+					<property>
+						normalMap2
+						<Texture>content/MilitaryEnvironment/mle000_WTFlagstaff01/mle000_WTFlagstaff01_Flag_ANM.dds</Texture>
+					</property>
+					<property>
+						alphaReference
+						<Int>127</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_sequence_0
+						<Vector3>889.000000 25.000000 2.000000</Vector3>
+					</property>
+					<property>
+						g_sequence_1
+						<Vector3>889.000000 889.000000 2.000000</Vector3>
+					</property>
+					<property>
+						g_sequence_2
+						<Vector3>889.000000 889.000000 2.000000</Vector3>
+					</property>
+					<property>
+						g_sequence_3
+						<Vector3>300.000000 300.000000 2.000000</Vector3>
+					</property>
+					<property>
+						g_sequence_4
+						<Vector3>400.000000 499.000000 2.000000</Vector3>
+					</property>
+					<property>
+						g_sequence_5
+						<Vector3>500.000000 599.000000 2.000000</Vector3>
+					</property>
+					<property>
+						g_sequence_6
+						<Vector3>600.000000 699.000000 2.000000</Vector3>
+					</property>
+				</material>
+				<groupOrigin>0.814339 0.542892 0.000000</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-1.660000 -1.100000 -1.260000</min>
+		<max>
+			1.660000  1.100000  1.260000
+			<!--BW_String-->
+		</max>
+	</boundingBox>
+	<geometrySize>2656</geometrySize>
+	<minUVDensity>0.424113</minUVDensity>
+</root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/italy/It37_CAS_149/normal/lod1/Turret_01</parent>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.654289 -0.000000 -1.757750</min>
+		<max>1.626523 1.535465 1.795565</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/italy/It37_CAS_149/normal/lod0/Turret_01</nodefullVisual>
+</root>

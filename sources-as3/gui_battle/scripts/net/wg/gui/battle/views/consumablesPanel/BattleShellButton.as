@@ -80,6 +80,8 @@ package net.wg.gui.battle.views.consumablesPanel
       
       private var _isColorBlindMode:Boolean = false;
       
+      private var _isGlowWithHotkey:Boolean = true;
+      
       private var _colorSchemeMgr:IColorSchemeManager;
       
       public function BattleShellButton()
@@ -157,11 +159,17 @@ package net.wg.gui.battle.views.consumablesPanel
       
       public function hideGlow() : void
       {
-         this.glow.hideGlow();
+         this.glow.hideGlow(this._isGlowWithHotkey);
+         this._isGlowWithHotkey = true;
       }
       
       public function onCoolDownComplete() : void
       {
+      }
+      
+      public function setBindKeyTextVisibility(param1:Boolean) : void
+      {
+         this.glow.setBindKeyTextVisibility(param1);
       }
       
       public function setColorTransform(param1:ColorTransform) : void
@@ -322,7 +330,18 @@ package net.wg.gui.battle.views.consumablesPanel
       
       public function showGlow(param1:int) : void
       {
+         this._isGlowWithHotkey = true;
          this.glow.showGlow(param1);
+      }
+      
+      public function showGlowWithHotkey(param1:int, param2:Boolean = true) : void
+      {
+         if(this._isReloading || !enabled)
+         {
+            return;
+         }
+         this._isGlowWithHotkey = param2;
+         this.glow.showGlow(param1,this._isGlowWithHotkey);
       }
       
       public function updateLevelInformation(param1:int) : void

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>Root</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 -1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>HatchSleeve</identifier>
+				<transform>
+					<row0>0.674701 -0.555195 -0.486351</row0>
+					<row1>0.608421 0.791391 -0.059370</row1>
+					<row2>0.417855 -0.255849 0.871744</row2>
+					<row3>-1.476749 0.628209 -0.153327</row3>
+				</transform>
+				<node>
+					<identifier>HatchSleeve_BlendBone</identifier>
+					<transform>
+						<row0>0.674701 0.608421 0.417855</row0>
+						<row1>-0.555195 0.791391 -0.255849</row1>
+						<row2>0.486351 0.059370 -0.871744</row2>
+						<row3>1.270571 0.392223 0.911456</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>HatchSleeve_BlendBone</node>
+		<geometry>
+			<vertices>turret_anim_Shape.vertices</vertices>
+			<primitive>turret_anim_Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<materialKind>0</materialKind>
+					<identifier>tank_turret_01_skinned</identifier>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>vehicles/german/G180_Hauptpanzer_Gruppe_A/Hauptpanzer_Gruppe_A_turret_01_AM.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/german/G180_Hauptpanzer_Gruppe_A/Hauptpanzer_Gruppe_A_turret_01_GMM.dds</Texture>
+					</property>
+					<property>
+						g_detailPowerGloss
+						<Float>
+							0.35
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_maskBias
+						<Float>
+							0.18
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>3.507000 3.507000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/german/G180_Hauptpanzer_Gruppe_A/Hauptpanzer_Gruppe_A_turret_01_ANM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/german/G180_Hauptpanzer_Gruppe_A/Hauptpanzer_Gruppe_A_turret_01_AO.dds</Texture>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						alphaReference
+						<Int>128</Int>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
+					</property>
+				</material>
+				<groupOrigin>-1.471430 0.621148 0.278316</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-1.531421 0.544612 0.159541</min>
+		<max>-1.411440 0.697683 0.397090</max>
+	</boundingBox>
+	<geometrySize>1068</geometrySize>
+	<minUVDensity>10000.000000</minUVDensity>
+</root>

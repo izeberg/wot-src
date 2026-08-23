@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<FeatureName>museum_of_glory</FeatureName>
+	<IsEnabled>True</IsEnabled>
+	<Personality>museum_of_glory_personality</Personality>
+	<EditorPersonality/>
+	<Components>
+		<StaticComponents/>
+		<DynamicComponents/>
+	</Components>
+	<Entities/>
+	<ExternalComponents/>
+	<cgf>
+		<script>
+			<module>client.museum_of_glory.cgf.museum_components</module>
+			<module>client.museum_of_glory.cgf.museum_entry_manager</module>
+			<module>client.museum_of_glory.cgf.museum_rules</module>
+		</script>
+	</cgf>
+</root>

@@ -12,6 +12,7 @@ package net.wg.app.impl
    import net.wg.gui.battle.comp7.VO.daapi.Comp7DAAPIVehicleInfoVO;
    import net.wg.gui.battle.epicRandom.VO.daapi.EpicRandomDAAPIVehicleInfoVO;
    import net.wg.gui.battle.ranked.VO.daapi.RankedDAAPIVehicleInfoVO;
+   import net.wg.gui.battle.white_tiger.VO.daapi.DAAPIHunterVehicleInfoVO;
    import net.wg.gui.components.containers.CursorManagedContainer;
    import net.wg.gui.components.containers.HiddenServiceManagedContainer;
    import net.wg.gui.components.containers.MainViewContainer;
@@ -143,6 +144,7 @@ package net.wg.app.impl
          registerClassAlias("net.wg.gui.battle.views.questProgress.data.metrics.QPMetricsVehicleRangeVO",QPMetricsVehicleRangeVO);
          registerClassAlias("net.wg.gui.components.controls.VO.BadgeVisualVO",BadgeVisualVO);
          registerClassAlias("net.wg.gui.battle.comp7.VO.daapi.Comp7DAAPIVehicleInfoVO",Comp7DAAPIVehicleInfoVO);
+         registerClassAlias("net.wg.gui.battle.white_tiger.VO.daapi.DAAPIHunterVehicleInfoVO",DAAPIHunterVehicleInfoVO);
       }
       
       override protected function onPopUpManagerInit() : void

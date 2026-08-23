@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<effectMap>spaces/11_murovanka_wt/environments/E4621643-407BC00D-AD8D1EAA-55CA00DC/camera_effects_map.dds</effectMap>
+	<effect>
+		<id>1</id>
+		<name>particles/content_deferred/PFX/Environment/CameraEffects/winter_snow_heavy.vfx</name>
+		<alignToTerrain>true</alignToTerrain>
+		<useCameraTarget>true</useCameraTarget>
+	</effect>
+</root>

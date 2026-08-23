@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.102200 -0.001942 -2.324574</min>
+		<max>1.102154 0.926616 3.334936</max>
+	</visibilityBox>
+	<parent>vehicles/russian/R242_BM_13_Katyusha/normal/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/russian/R242_BM_13_Katyusha/normal/lod0/Chassis</nodefullVisual>
+</root>

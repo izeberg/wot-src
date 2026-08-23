@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>1.000000</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>shield</name>
+		<type>model</type>
+		<resource>particles/Environment/event_white_tiger/player_tank/energy_shield/wt_energy_shield.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>9.000000 9.000000 9.000000</value>
+				<inTangent>-0.436941 -0.258910 -0.451756</inTangent>
+				<outTangent>-0.436941 -0.258910 -0.451756</outTangent>
+				<tangentMode>66307</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd1</identifier>
+			<property>distortionAmount</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.200000</value>
+				<inTangent>0.461539</inTangent>
+				<outTangent>0.461539</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd0</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.129412 0.345098 1.000000 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 1.041998</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 0.068664</outTangent>
+				<tangentMode>66307</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd2</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.129412 0.345098 1.000000 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 2.307694</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 2.307694</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>glow</name>
+		<type>particle</type>
+		<resource>particles/environment/event_white_tiger/player_tank/energy_shield/wt_energy_shield.eff</resource>
+		<track>
+			<name>opacity</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.009600</inTangent>
+				<outTangent>0.009600</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.000000</startTime>
+				<value>1.000000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>-0.000000</outTangent>
+				<tangentMode>3</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

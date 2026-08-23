@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodelessVisual>vehicles/russian/R242_BM_13_Katyusha/normal/lod1/one_missile</nodelessVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.106444 -0.190347 -0.732754</min>
+		<max>0.106391 0.119355 0.725572</max>
+	</visibilityBox>
+</root>

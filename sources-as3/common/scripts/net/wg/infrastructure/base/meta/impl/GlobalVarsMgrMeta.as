@@ -39,8 +39,6 @@ package net.wg.infrastructure.base.meta.impl
       
       public var isTradeInEnabled:Function;
       
-      public var isBirthday:Function;
-      
       public function GlobalVarsMgrMeta()
       {
          super();
@@ -140,12 +138,6 @@ package net.wg.infrastructure.base.meta.impl
       {
          App.utils.asserter.assertNotNull(this.isTradeInEnabled,"isTradeInEnabled" + Errors.CANT_NULL);
          return this.isTradeInEnabled();
-      }
-      
-      public function isBirthdayS() : Boolean
-      {
-         App.utils.asserter.assertNotNull(this.isBirthday,"isBirthday" + Errors.CANT_NULL);
-         return this.isBirthday();
       }
    }
 }

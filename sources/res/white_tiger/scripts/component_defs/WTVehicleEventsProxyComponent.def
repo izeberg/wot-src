@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<Properties>
+		<_masterVehID>
+			<Type>OBJECT_ID</Type>
+			<Flags>CELL_PRIVATE</Flags>
+		</_masterVehID>
+	</Properties>
+	<ofEntity>
+		<Vehicle/>
+	</ofEntity>
+	<DefaultKeyName>wtVehicleEventsProxyComponent</DefaultKeyName>
+</root>

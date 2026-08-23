@@ -1,0 +1,831 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "aboutEvent"
+msgstr "О СОБЫТИИ"
+
+msgid "battleHints/wtAnomaly"
+msgstr "Перегрузка генератора вызвала аномалию!"
+
+msgid "battleHints/wtBattleStart_boss"
+msgstr ""
+"Выбейте Гончих из их нор!\n"
+"Чтобы победить, не ослабляйте напор до истечения времени боя."
+
+msgid "battleHints/wtBattleStart_hunters"
+msgstr ""
+"Уничтожьте {bossName}!\n"
+"Захватите генераторы, чтобы отключить щит противника."
+
+msgid "battleHints/wtBossHyperionReady"
+msgstr "Молот Карны заряжен!"
+
+msgid "battleHints/wtBossHyperionReady2025"
+msgstr "Колокола Карны заряжены!"
+
+msgid "battleHints/wtBossInvincible"
+msgstr "Щит противника снова включён!"
+
+msgid "battleHints/wtBossInvincibleNoSound"
+msgstr "Щит снова включён!"
+
+msgid "battleHints/wtBossInvisibilityActivated"
+msgstr "Ваффентрагер пропал с радаров!"
+
+msgid "battleHints/wtBossTeleport"
+msgstr "{bossName} телепортируется!"
+
+msgid "battleHints/wtCampKilled_boss"
+msgstr "Генератор уязвим!"
+
+msgid "battleHints/wtCampKilled_hunters"
+msgstr "Генератор можно перегружать!"
+
+msgid "battleHints/wtEndgameStart_boss"
+msgstr "Ваш щит разрушен и больше не восстановится!"
+
+msgid "battleHints/wtEndgameStart_hunters"
+msgstr "Щит противника окончательно разрушен!"
+
+msgid "battleHints/wtGeneratorCaptured_boss"
+msgstr "Ваш щит отключён!"
+
+msgid "battleHints/wtGeneratorCaptured_hunters"
+msgstr ""
+"Щит противника отключён!\n"
+"В атаку!"
+
+msgid "battleHints/wtGuardsInvisibilityActivated"
+msgstr "Алаид сделал часовых невидимыми!"
+
+msgid "battleHints/wtOvertime_boss"
+msgstr "Время остановлено, прервите перегрузку генератора!"
+
+msgid "battleHints/wtOvertime_header"
+msgstr "АВЕРТАЙМ"
+
+msgid "battleHints/wtOvertime_hunters"
+msgstr "Время остановлено, пока генератор перегружается!"
+
+msgid "battleHints/wtTimeRemaining_boss"
+msgstr ""
+"ПОЧТИ У ЦЕЛИ!\n"
+"Продолжайте наступать."
+
+msgid "battleHints/wtTimeRemaining_hunter"
+msgstr ""
+"ЗА НИМ!\n"
+"Время на исходе!"
+
+msgid "battleLoading/description/boss/G98_Waffentrager_E100_TLXXL"
+msgstr ""
+"Используйте способности, чтобы навязать Гончим свои правила боя: в вашем "
+"арсенале телепортация, невидимость, грозный Молот Карны и целый ворох "
+"электромагнитных сюрпризов."
+
+msgid "battleLoading/description/boss/R232_IS_7G"
+msgstr ""
+"Используйте броню и ракетные ускорители, чтобы повысить свою выживаемость "
+"до максимума. С помощью Электромагнитной стрелы забирайте плазму у Гончих, "
+"а также не забывайте прятать своих часовых, чтобы окончательно спутать карты"
+" противника."
+
+msgid "battleLoading/description/boss/R232_IS_7W"
+msgstr ""
+"Используйте броню и ракетные ускорители, чтобы повысить свою выживаемость "
+"до максимума. С помощью Электромагнитной стрелы забирайте плазму у Гончих, "
+"а также не забывайте прятать своих часовых, чтобы окончательно спутать карты"
+" противника."
+
+msgid "battleLoading/description/boss/common"
+msgstr ""
+"Защищайте генераторы и не дайте Гончим получить преимущество. При каждой "
+"перегрузке генератора вы временно теряете свой щит и способности. Заряжайте "
+"супероружие, нанося урон Гончим, и используйте его для атак по большой "
+"площади. Уничтожайте самых сильных Гончих, чтобы лишить их зарядов плазмы "
+"и бонусов к огневой мощи."
+
+msgid "battleLoading/description/hunter/A120_M48A5_hound_TLXXL"
+msgstr ""
+"Используйте прочную броню и Групповой ремонт, чтобы уверенно противостоять "
+"противнику и поддерживать союзников. Из-за невысокой мобильности держите "
+"комфортную дистанцию и тщательно выбирайте позицию."
+
+msgid "battleLoading/description/hunter/Cz04_T50_51_Waf_Hound_3DSt"
+msgstr ""
+"Держитесь на средней дистанции, где машина максимально эффективна и может "
+"безопасно наносить урон. Используйте моменты затишья, чтобы восстановить "
+"прочность и вернуться в бой."
+
+msgid "battleLoading/description/hunter/F18_Bat_Chatillon25t_hound_TLXXL"
+msgstr ""
+"Не вступайте в затяжные перестрелки с часовыми — это не ваша сильная "
+"сторона. Активно используйте Дымовую завесу и Баллистический отражатель, "
+"чтобы скрытно и безопасно наносить урон."
+
+msgid "battleLoading/description/hunter/R97_Object_140_hound_TLXXL"
+msgstr ""
+"Держитесь ближе к противнику — на короткой дистанции танк раскрывается лучше"
+" всего. Используйте рельеф и укрытия, чтобы внезапно атаковать противника "
+"Управляемыми молниями."
+
+msgid "battleLoading/description/hunter/common"
+msgstr ""
+"Для этого перегружайте генераторы: они временно снимают щит Ваффентрагера "
+"или Алаида, продлевают бой, чинят всех Гончих и ненадолго отключают "
+"способности противника. Генераторы охраняют часовые, которые становятся "
+"сильнее после его восстановления. Перегрузка генератора даёт живым Гончим "
+"плазменный заряд, повышающий урон."
+
+msgid "battleLoading/header/boss/G98_Waffentrager_E100_TLXXL"
+msgstr "Вафэнтрагер"
+
+msgid "battleLoading/header/boss/R232_IS_7G"
+msgstr "Алаид"
+
+msgid "battleLoading/header/boss/R232_IS_7W"
+msgstr "Алаид"
+
+msgid "battleLoading/header/boss/common"
+msgstr "Не дайте Гончим уничтожить вас"
+
+msgid "battleLoading/header/hunter/A120_M48A5_hound_TLXXL"
+msgstr "Thunderbolt"
+
+msgid "battleLoading/header/hunter/Cz04_T50_51_Waf_Hound_3DSt"
+msgstr "Jiskra"
+
+msgid "battleLoading/header/hunter/F18_Bat_Chatillon25t_hound_TLXXL"
+msgstr "Foudre"
+
+msgid "battleLoading/header/hunter/R97_Object_140_hound_TLXXL"
+msgstr "Рэзістар"
+
+msgid "battleLoading/header/hunter/common"
+msgstr "Уничтожьте противника до истечения времени"
+
+msgid "battleQueue/avgWaitTime/label"
+msgstr "Среднее время ожидания для %(vehName)s:"
+
+msgid "battleTimer/timeRemaining/boss/messageText"
+msgstr "Время на вашей стороне!"
+
+msgid "battleTimer/timeRemaining/hunter/messageText"
+msgstr "Время на исходе!"
+
+msgid "bossName/capital/boss"
+msgstr "Ваффентрагере"
+
+msgid "bossName/capital/boss_2025"
+msgstr "Алаиде"
+
+msgid "bossNameAlt/capital/boss"
+msgstr "Waffenträger"
+
+msgid "bossNameAlt/capital/boss_2025"
+msgstr "Алаиде"
+
+msgid "calendarDay/serverName"
+msgstr "%(server)s"
+
+msgid "calendarDay/time"
+msgstr "%(start)s — %(end)s"
+
+msgid "calendarDay/title"
+msgstr "Расклад"
+
+msgid "cinematicBtn/label/intro"
+msgstr "ПРОЛОГ"
+
+msgid "cinematicBtn/label/outro"
+msgstr "ЭПІЛОГ"
+
+msgid "cinematicBtn/tooltip/disabled"
+msgstr "Видео станет доступно после прохождения всех этапов."
+
+msgid "cinematicBtn/tooltip/intro"
+msgstr "Просмотреть вступительный ролик события."
+
+msgid "cinematicBtn/tooltip/outro"
+msgstr "Просмотреть заключительный ролик события."
+
+msgid "crewPanel/role/boss"
+msgstr "Камандзір"
+
+msgid "crewPanel/role/boss_2025"
+msgstr "Камандзір"
+
+msgid "crewPanel/role/hunter_1"
+msgstr "Камандзір"
+
+msgid "crewPanel/role/hunter_2"
+msgstr "Камандзір"
+
+msgid "crewPanel/role/hunter_3"
+msgstr "Камандзір"
+
+msgid "crewPanel/role/hunter_4"
+msgstr "Камандзір"
+
+msgid "crewPanel/slogan/boss"
+msgstr "«И чем вы провинились, что вас опять кидают против меня?»"
+
+msgid "crewPanel/slogan/boss_2025"
+msgstr "«Фон Кригер, не разнеси тут всё, я тебе обещал экскурсию»."
+
+msgid "crewPanel/slogan/hunter_1"
+msgstr "«А вот это всё на какой странице контракта было?»"
+
+msgid "crewPanel/slogan/hunter_2"
+msgstr "«Вымести всё это железо, засеять поле дикими розами»."
+
+msgid "crewPanel/slogan/hunter_3"
+msgstr "«Переговоры? Только после отстрела боекомплекта»."
+
+msgid "crewPanel/slogan/hunter_4"
+msgstr "«Надо было привлекать бомбардировщики»."
+
+msgid "detailsHelp/boss/page1/description"
+msgstr ""
+"Продержитесь как можно дольше любой ценой. Если Гончие не успеют вас "
+"уничтожить — победа."
+
+msgid "detailsHelp/boss/page1/title"
+msgstr "Не дайте Гончим уничтожить вас"
+
+msgid "detailsHelp/boss/page2/description"
+msgstr ""
+"Помогайте часовым и старайтесь оборонять все три генератора как можно "
+"дольше, чтобы не позволить Гончим получить преимущество."
+
+msgid "detailsHelp/boss/page2/title"
+msgstr "Защищайте генераторы и часовых"
+
+msgid "detailsHelp/boss/page3/description"
+msgstr ""
+"Заряжайте супероружие, нанося урон Гончим, и используйте его для атак "
+"по большой площади. Уничтожайте самых сильных Гончих, чтобы лишить их "
+"зарядов плазмы и бонусов к огневой мощи."
+
+msgid "detailsHelp/boss/page3/title"
+msgstr "Доминируйте на поле боя"
+
+msgid "detailsHelp/hunter/page1/description"
+msgstr ""
+"Уничтожьте фон Кригера или его напарника, пока не вышло время! Перегружайте "
+"генераторы: они временно снимают щит, продлевают бой, чинят всех Гончих "
+"и ненадолго отключают способности противника."
+
+msgid "detailsHelp/hunter/page1/title"
+msgstr "Ключ к победе"
+
+msgid "detailsHelp/hunter/page2/description"
+msgstr ""
+"Уничтожайте часовых, которые защищают три генератора. Часовые становятся "
+"сильнее после каждого восстановления генератора."
+
+msgid "detailsHelp/hunter/page2/title"
+msgstr "Уничтожайте часовых"
+
+msgid "detailsHelp/hunter/page3/description"
+msgstr ""
+"Перегрузив генератор, все живые Гончие получают заряд плазмы, который "
+"увеличивает урон. Личный бонус теряется при уничтожении машины."
+
+msgid "detailsHelp/hunter/page3/title"
+msgstr "Становитесь сильнее"
+
+msgid "detailsHelp/mainTitle"
+msgstr "Ваффентрагер: резонанс"
+
+msgid "entryPoint/battlesEnd"
+msgstr "Бои окончены"
+
+msgid "entryPoint/endUntil"
+msgstr "Да завяршэння: %(value)s"
+
+msgid "entryPoint/locked"
+msgstr "Баі хутка адновяцца"
+
+msgid "entryPoint/timeLeft/days"
+msgstr "{days} д {hours} ч"
+
+msgid "entryPoint/timeLeft/hours"
+msgstr "{hours} ч {minutes} мин"
+
+msgid "entryPoint/timeLeft/lessMinute"
+msgstr "менш за хвіліну"
+
+msgid "entryPoint/timeLeft/minutes"
+msgstr "{minutes} мин"
+
+msgid "entryPoint/title"
+msgstr "ВАФФЕНТРАГЕР: РЕЗОНАНС"
+
+msgid "exitMode"
+msgstr "ПАКІНУЦЬ РЭЖЫМ"
+
+msgid "fairPlayWarningWindow/body"
+msgstr ""
+"Боец! Ваше поведение нарушает баланс сторон в режиме {whiteSpanish_Open}«Ваффентрагер: резонанс»{whiteSpanish_Close}.\n"
+"Это совершенно недопустимо. При повторном нарушении вам ограничат доступ к участию в этом событии."
+
+msgid "fairPlayWarningWindow/button"
+msgstr "Азнаёміўся"
+
+msgid "fairPlayWarningWindow/header"
+msgstr "Недопустимое поведение!"
+
+msgid "fairPlayWarningWindow/reason/wt_afk"
+msgstr ""
+"%(icon)s{red_Open}Предупреждение! Причина: бездействие в бою.{red_Close}"
+
+msgid "fairPlayWarningWindow/reason/wt_deserter"
+msgstr "%(icon)s{red_Open}Предупреждение! Причина: дезертирство.{red_Close}"
+
+msgid "fairPlayWindow/ban/body"
+msgstr ""
+"Боец! За систематические нарушения в режиме "
+"{whiteSpanish_open}«Ваффентрагер: резонанс»{whiteSpanish_close} вам "
+"запрещено участвовать в боях события до {brown_Open}%(date)s{brown_Close}. "
+"Блокировка будет снята автоматически."
+
+msgid "fairPlayWindow/ban/button"
+msgstr "Азнаёміўся"
+
+msgid "fairPlayWindow/ban/header"
+msgstr "Отстранение!"
+
+msgid "fairPlayWindow/ban/reason/wt_afk"
+msgstr "%(icon)s{red_Open}Причина: бездействие в бою.{red_Close}"
+
+msgid "fairPlayWindow/ban/reason/wt_deserter"
+msgstr "%(icon)s{red_Open}Причина: дезертирство.{red_Close}"
+
+msgid "fairPlayWindow/punishment"
+msgstr ""
+"{redDark_Open}Полное лишение заработанного за бой опыта, кредитов "
+"и прогресса по задачам.{redDark_Close}"
+
+msgid "fairPlayWindow/unban/body"
+msgstr ""
+"Боец! Ваша временная блокировка снята. Вы можете продолжить играть в режиме "
+"{whiteSpanish_open}«Ваффентрагер: резонанс»{whiteSpanish_close}. Помните "
+"о нормах поведения и наказании за нарушения."
+
+msgid "fairPlayWindow/unban/button"
+msgstr "Азнаёміўся"
+
+msgid "fairPlayWindow/unban/header"
+msgstr "Блокировка снята"
+
+msgid "fullStats/title"
+msgstr "Состав команды"
+
+msgid "hangar/about"
+msgstr "О СОБЫТИИ"
+
+msgid "hangar/banner/banned/title"
+msgstr ""
+"Вы не можете участвовать в боях события «Ваффентрагер: резонанс» до %(time)s"
+" %(icon)s"
+
+msgid "hangar/close"
+msgstr "ПАКІНУЦЬ РЭЖЫМ"
+
+msgid "hangar/startBtn/banned/body"
+msgstr ""
+"Вы не можете участвовать в боях события «Ваффентрагер: резонанс» "
+"до %(time)s."
+
+msgid "hangar/startBtn/banned/header"
+msgstr "Вы отстранены"
+
+msgid "mainPrizeDiscount/description"
+msgstr ""
+"Проходите прогрессию и увеличивайте скидку на запуск портала с танком. "
+"Полученные скидки не суммируются, применяется максимальная из заработанных. "
+"Максимальная доступная скидка за прохождение прогрессии — %(percent)s."
+
+msgid "mainPrizeDiscount/descriptionHighlight"
+msgstr "запуск портала с танком."
+
+msgid "mainPrizeDiscount/discountActive"
+msgstr "Действующая скидка"
+
+msgid "mainPrizeDiscount/inactive"
+msgstr "Применяется более крупная скидка"
+
+msgid "mainPrizeDiscount/launchCost"
+msgstr "Стоимость запуска %(launchEnd)s"
+
+msgid "mainPrizeDiscount/launchCostEnd"
+msgstr "портала с танком:"
+
+msgid "mainPrizeDiscount/maxDiscountSize"
+msgstr "50%"
+
+msgid "mainPrizeDiscount/notAvailable"
+msgstr "Не получена: завершите определённый этап прогрессии"
+
+msgid "mainPrizeDiscount/receiveText"
+msgstr ""
+"Запуск портала позволяет гарантированно получить тяжёлый французский танк "
+"%(tankLvl)s уровня %(tankName)s."
+
+msgid "mainPrizeDiscount/receiveTitle"
+msgstr "Что в портале"
+
+msgid "mainPrizeDiscount/subTitle"
+msgstr "На запуск портала с танком"
+
+msgid "mainPrizeDiscount/tankLvl"
+msgstr "X"
+
+msgid "mainPrizeDiscount/tankName"
+msgstr "Projet 57"
+
+msgid "mainPrizeDiscount/title"
+msgstr "Скидка %(discount)s%"
+
+msgid "notification/afkWarning"
+msgstr ""
+"Боец! Бездействие во время боя расценивается как дезертирство, влечёт "
+"применение дисциплинарного взыскания и лишение прогресса по текущим задачам."
+
+msgid "notifications/battleResults/battle"
+msgstr "Бой"
+
+msgid "notifications/battleResults/buttonLabel"
+msgstr "Падрабязней"
+
+msgid "notifications/battleResults/defeat/header"
+msgstr "Паражэнне"
+
+msgid "notifications/battleResults/disableInQueue"
+msgstr "Вы в очереди в бой: послебоевая статистика недоступна."
+
+msgid "notifications/battleResults/disableNotInPrebattle"
+msgstr ""
+"Для просмотра послебоевой статистики перейдите в режим «Ваффентрагер: "
+"резонанс»."
+
+msgid "notifications/battleResults/event"
+msgstr "Событие"
+
+msgid "notifications/battleResults/eventName"
+msgstr "«Ваффентрагер: резонанс»"
+
+msgid "notifications/battleResults/lootboxes/wt_boss"
+msgstr "Получены стартеры Инженера: %(count)s"
+
+msgid "notifications/battleResults/lootboxes/wt_hunter"
+msgstr "Получены стартеры Гончих: %(count)s"
+
+msgid "notifications/battleResults/questCompleted"
+msgstr "Боевая задача выполнена! Награда:"
+
+msgid "notifications/battleResults/stamp"
+msgstr "Получены марки: %(count)s"
+
+msgid "notifications/battleResults/tanks"
+msgstr "Машына"
+
+msgid "notifications/battleResults/team"
+msgstr "Сторона"
+
+msgid "notifications/battleResults/team/boss"
+msgstr "Инженер"
+
+msgid "notifications/battleResults/team/hunters"
+msgstr "Ганчакі"
+
+msgid "notifications/battleResults/ticket"
+msgstr "Получены ключи Ваффентрагера: %(count)s"
+
+msgid "notifications/battleResults/victory/header"
+msgstr "Перамога!"
+
+msgid "notifications/boss_special/received/body"
+msgstr ""
+"Получен ключ управления Алаидом. Вы можете выйти в бой на этой машине в режиме «Ваффентрагер: резонанс».\n"
+"\n"
+"Ключей в наличии: %(ticketsCount)s"
+
+msgid "notifications/boss_special/received/header"
+msgstr "Получен ключ Инженера"
+
+msgid "notifications/eventEnd/body"
+msgstr ""
+"Событие «Ваффентрагер: резонанс» завершено.\n"
+"\n"
+"Cпециальные машины и их командиры списаны. Накопленный боевой опыт переведён на МС-1. Имеющиеся стартеры использованы, полученное из порталов имущество начислено на аккаунт."
+
+msgid "notifications/eventStart/body"
+msgstr ""
+"Событие «Ваффентрагер: резонанс» началось. История продолжает раскручиваться"
+" по спирали... не без вашего участия."
+
+msgid "notifications/eventStart/openBtnLabel"
+msgstr "К событию"
+
+msgid "notifications/lootBoxReRollPrice"
+msgstr ""
+"Дата: %(at)s\n"
+"Списано %(price)s"
+
+msgid "notifications/lootBoxes/compensation/header"
+msgstr "Кампенсацыя:"
+
+msgid "notifications/lootBoxes/rerollReward/title"
+msgstr "Гарантированная награда!"
+
+msgid "notifications/lootBoxes/rewardsReceived"
+msgstr "Атрымана маёмасць:"
+
+msgid "notifications/lootBoxes/title"
+msgstr "Портал  запущен!"
+
+msgid "notifications/lootBoxes/wt_boss"
+msgstr "Списано: стартер Инженера (x%(count)s)"
+
+msgid "notifications/lootBoxes/wt_hunter"
+msgstr "Списано: стартер Гончих (x%(count)s)"
+
+msgid "notifications/lootBoxes/wt_tank"
+msgstr "Списано: стартер Инженера (x%(count)s)"
+
+msgid "notifications/lootboxAutoOpen/wt_boss"
+msgstr "Инженера"
+
+msgid "notifications/lootboxAutoOpen/wt_hunter"
+msgstr "Гончих"
+
+msgid "notifications/lootboxes/header"
+msgstr "Адкрыццё парталаў"
+
+msgid "notifications/lootboxes/switchOff/body"
+msgstr ""
+"Операция временно недоступна: ведутся технические работы.\n"
+"\n"
+"Вы продолжите получать и накапливать стартеры."
+
+msgid "notifications/lootboxes/switchOn/body"
+msgstr "Функциональность восстановлена."
+
+msgid "notifications/lootboxes/switchOn/openBtnLabel"
+msgstr "К порталам"
+
+msgid "notifications/notSet"
+msgstr "Рэжым недаступны на гэтым серверы."
+
+msgid "notifications/primeTime/available/body"
+msgstr "Режим «Ваффентрагер: резонанс» снова доступен на текущем сервере."
+
+msgid "notifications/primeTime/available/header"
+msgstr "Фон Кригер снова в деле!"
+
+msgid "notifications/primeTime/notAvailable/body"
+msgstr ""
+"Бои в режиме «Ваффентрагер: резонанс» недоступны до окончания режима "
+"прекращения огня."
+
+msgid "notifications/primeTime/notAvailable/header"
+msgstr "Рэжым спынення агню"
+
+msgid "notifications/progression/completed"
+msgstr ""
+"Вы прошли всю прогрессию.\n"
+"Финальная награда:\n"
+"%(rewards)s\n"
+"\n"
+"Вы можете продолжать сражаться в боях режима, выполнять задачи и получать за них награды."
+
+msgid "notifications/progression/rentVehicleReceived"
+msgstr ""
+"Добавлена арендная техника: %(vehName)s (боёв в аренду: %(count)d; экипаж "
+"%(crew)d%%)"
+
+msgid "notifications/progression/rewardAdded"
+msgstr "Добавлено:"
+
+msgid "notifications/progression/stageAchieved"
+msgstr ""
+"Вы завершили %(stageIdx)s-й этап прогрессии. Получена награда:\n"
+"%(rewards)s"
+
+msgid "notifications/switchOff/body"
+msgstr ""
+"Событие «Ваффентрагер: резонанс» временно недоступно. Весь ваш прогресс "
+"будет сохранён, приносим извинения за неудобства."
+
+msgid "notifications/switchOff/header"
+msgstr "Технические проблемы"
+
+msgid "notifications/switchOn/body"
+msgstr "Событие «Ваффентрагер: резонанс» снова доступно."
+
+msgid "notifications/switchOn/header"
+msgstr "Проблемы решены"
+
+msgid "notifications/ticket/received/body"
+msgstr ""
+"Получен ключ управления Ваффентрагером и Алаидом. Вы можете выйти в бой на этих машинах в режиме «Ваффентрагер: резонанс».\n"
+"\n"
+"Ключей в наличии: %(ticketsCount)s"
+
+msgid "notifications/ticket/received/header"
+msgstr "Получен ключ Инженера"
+
+msgid "primeTime/endOfCycle"
+msgstr "Режим на сервере %(server)s завершился"
+
+msgid "primeTime/server"
+msgstr "Доступный для игры сервер: %(server)s."
+
+msgid "primeTime/serverTooltip"
+msgstr ""
+"Сервер %(server)s\n"
+"Баі будуць даступныя яшчэ %(time)s"
+
+msgid "primeTime/serverUnavailableTooltip"
+msgstr ""
+"Сервер %(server)s\n"
+"Баі стануць даступныя праз %(time)s"
+
+msgid "primeTime/servers"
+msgstr "Даступныя серверы:"
+
+msgid "primeTime/status/allServersDisabled"
+msgstr "Режим прекращения огня на всех серверах"
+
+msgid "primeTime/status/disableFirst"
+msgstr "Режим прекращения огня на %(server)s"
+
+msgid "primeTime/status/primeIsAvailable"
+msgstr "Баі на %(server)s будуць даступныя яшчэ %(time)s"
+
+msgid "primeTime/status/primeWillBeAvailable"
+msgstr "Начало боёв на %(server)s через %(time)s"
+
+msgid "primeTime/status/untill"
+msgstr "Комендантский час до %(startTime)s на сервере %(server)s"
+
+msgid "primeTime/title"
+msgstr "ВАФФЕНТРАГЕР: РЕЗОНАНС"
+
+msgid "selectorTooltip/header"
+msgstr "Ваффентрагер: резонанс"
+
+msgid "selectorTooltip/tillEnd"
+msgstr "До конца события: %(value)s"
+
+msgid "selectorTooltip/timeTable/title"
+msgstr "Расклад баёў"
+
+msgid "simpleSquad/selectRestriction"
+msgstr "Выберите машину Гончих"
+
+msgid "stamp/description"
+msgstr ""
+"Позволяют вам продвигаться по прогрессии в рамках события «Ваффентрагер: "
+"резонанс»."
+
+msgid "stamp/receiveAdditionalText"
+msgstr ""
+"%(stampsPerProgressionStage) марок = 1 разблокированный этап прогрессии"
+
+msgid "stamp/receiveText"
+msgstr "Выполняйте соответствующие боевые задачи события."
+
+msgid "stamp/receiveTitle"
+msgstr "Як атрымаць:"
+
+msgid "stamp/title"
+msgstr "Марки"
+
+msgid "status/timeLeft/days"
+msgstr "%(day)s д"
+
+msgid "status/timeLeft/hours"
+msgstr "%(hour)s ч"
+
+msgid "status/timeLeft/lessMin"
+msgstr "менш за хвіліну"
+
+msgid "status/timeLeft/min"
+msgstr "%(min)s мин"
+
+msgid "statusNotificationTimers/ExplosiveDamageShield"
+msgstr "Энергетический щит"
+
+msgid "statusNotificationTimers/domeProtectionBuff"
+msgstr "Статический купол"
+
+msgid "statusNotificationTimers/invisibility"
+msgstr "Машина невидима"
+
+msgid "statusNotificationTimers/silence"
+msgstr "Умения заблокированы"
+
+msgid "statusNotificationTimers/smoke/ally"
+msgstr "Маскировка в дымах"
+
+msgid "statusNotificationTimers/smoke/enemy"
+msgstr "В дымах: обзор уменьшен"
+
+msgid "statusNotificationTimers/stunArea"
+msgstr "Машина обесточена"
+
+msgid "statusNotificationTimers/stunAreaModA"
+msgstr "Машина обесточена"
+
+msgid "sysMessageFairPlayMsg/arenaBan/button"
+msgstr "Падрабязней"
+
+msgid "sysMessageFairPlayMsg/arenaBanStart/body"
+msgstr "Доступ к боям режима «Ваффентрагер: резонанс» временно закрыт."
+
+msgid "sysMessageFairPlayMsg/arenaBanStart/header"
+msgstr "Блокировка"
+
+msgid "sysMessageFairPlayMsg/arenaBanStop/body"
+msgstr ""
+"Истёк срок блокировки. \n"
+"Доступ к боям режима «Ваффентрагер: резонанс» возвращён."
+
+msgid "sysMessageFairPlayMsg/arenaBanStop/header"
+msgstr "Доступ к режиму"
+
+msgid "sysMessageFairPlayMsg/arenaWarning/body"
+msgstr ""
+"Вы получили предупреждение за бездействие или дезертирство с поля боя "
+"в режиме «Ваффентрагер: резонанс»."
+
+msgid "sysMessageFairPlayMsg/arenaWarning/button"
+msgstr "Падрабязней"
+
+msgid "sysMessageFairPlayMsg/arenaWarning/header"
+msgstr "Папярэджанне"
+
+msgid "teamBasePanel/capturing"
+msgstr "Перегрузка генератора %(num)s (%(percent)s%%)"
+
+msgid "teleportBossName/boss"
+msgstr "Вафэнтрагер"
+
+msgid "teleportBossName/boss_2025"
+msgstr "Алаид"
+
+msgid "teleportBossName/boss_special"
+msgstr "Алаид-Б"
+
+msgid "ticketTooltip/description"
+msgstr "Позволяет выходить в бой на машинах Инженера: Ваффентрагере и Алаиде."
+
+msgid "ticketTooltip/quantity"
+msgstr "%(number)s%(icon)sВ наличии"
+
+msgid "ticketTooltip/receiveAdditionalText"
+msgstr "1 ключ = 1 бой."
+
+msgid "ticketTooltip/receiveText"
+msgstr ""
+"• За выполнение тематических боевых задач в Случайных боях;\n"
+"• За выполнение некоторых задач в самом режиме;\n"
+"• В виде возможной награды из порталов Инженера и Гончих;\n"
+"• В составе определённых наборов в Магазине."
+
+msgid "ticketTooltip/receiveTitle"
+msgstr "Ключ выдается:"
+
+msgid "ticketTooltip/title"
+msgstr "Ключ Инженера"
+
+msgid "vehicle/tags/boss/name"
+msgstr "Инженеров"
+
+msgid "vehicle/tags/boss_2025/name"
+msgstr "Инженеров"
+
+msgid "vehicle/tags/boss_special/name"
+msgstr "Инженеров"
+
+msgid "vehicle/tags/hunter/name"
+msgstr "Гончих"
+
+msgid "vehicle_messages/STUN_AREA_APPLIED"
+msgstr "Машина обесточена способностью Ваффентрагера «Электромагнитная сеть»!"
+
+msgid "vehicle_messages/STUN_AREA_STOPPED"
+msgstr "Напряжение в машине восстановлено."
+
+msgid "window/unit/message/vehicleNotSelected"
+msgstr "Выберите машину Гончих"

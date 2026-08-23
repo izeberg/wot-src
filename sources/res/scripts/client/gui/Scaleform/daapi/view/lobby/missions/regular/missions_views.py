@@ -42,6 +42,7 @@ from skeletons.gui.game_control import IBrowserController, IDebutBoxesController
 from skeletons.gui.lobby_context import ILobbyContext
 from skeletons.gui.server_events import IEventsCache
 from th_async import th_async, th_await
+from uilogging.marathon.loggers import MarathonLogger, MarathonEvents
 
 class _GroupedMissionsView(MissionsGroupedViewMeta):
 
@@ -102,6 +103,7 @@ class MissionsMarathonView(MissionsMarathonViewMeta):
     _browserCtrl = dependency.descriptor(IBrowserController)
     _marathonsCtrl = dependency.descriptor(IMarathonEventsController)
     eventsCache = dependency.descriptor(IEventsCache)
+    __slots__ = ('__marathonLogger', )
 
     def __init__(self):
         super(MissionsMarathonView, self).__init__()
@@ -112,6 +114,7 @@ class MissionsMarathonView(MissionsMarathonViewMeta):
         self._builder = None
         self.__loadBrowserCallbackID = None
         self.__browserView = None
+        self.__marathonLogger = MarathonLogger()
         return
 
     def closeView(self):
@@ -128,6 +131,7 @@ class MissionsMarathonView(MissionsMarathonViewMeta):
             if url:
                 self.__browserView.showLoading(True)
                 browser.navigate(url)
+                self.__marathonLogger.logEnter(MarathonEvents.OPEN_PAGE)
         else:
             yield lambda callback: callback(True)
         return
@@ -177,6 +181,7 @@ class MissionsMarathonView(MissionsMarathonViewMeta):
         Waiting.hide('loadPage')
         self.__loadBrowserCallbackID = BigWorld.callback(0.01, self.__loadBrowser)
         g_eventBus.addListener(events.MissionsEvent.ON_TAB_CHANGED, self.__updateBrowserProperties, EVENT_BUS_SCOPE.LOBBY)
+        self.__marathonLogger.logEnter(MarathonEvents.OPEN_PAGE)
 
     def _dispose(self):
         g_eventBus.removeListener(events.MissionsEvent.ON_TAB_CHANGED, self.__updateBrowserProperties, EVENT_BUS_SCOPE.LOBBY)

@@ -34,6 +34,6 @@ class LobbyPageMeta(View):
         if self._isDAAPIInited():
             return self.flashObject.as_setSubContainerItemsVisibility(isVisible)
 
-    def as_setHeaderVisibleS(self, value, ignoreTopOffset):
+    def as_setInterfaceVisibleS(self, data):
         if self._isDAAPIInited():
-            return self.flashObject.as_setHeaderVisible(value, ignoreTopOffset)
+            return self.flashObject.as_setInterfaceVisible(data)

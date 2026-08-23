@@ -75,6 +75,16 @@ msgstr "%(start)s – %(end)s"
 msgid "calendarDay/title"
 msgstr "Расписание"
 
+msgid "consumables/largeMedkit"
+msgstr ""
+"При использовании: восстанавливает 20%% прочности машины "
+"за %(healDuration)s секунд."
+
+msgid "consumables/smallMedkit"
+msgstr ""
+"При использовании: восстанавливает 10%% прочности машины "
+"за %(healDuration)s секунд."
+
 msgid "domainTooltip/additionalFirst/repair_zone"
 msgstr ""
 "Выезд из зоны ремонта или получение урона прерывают процесс и отправляет "
@@ -151,7 +161,7 @@ msgid "headerButton/tooltips/funRandomSquad/header"
 msgstr "Взвод"
 
 msgid "invite/text/detailedTitle"
-msgstr "Приглашение войти в состав взвода для режима «%(detailedModeName)s»"
+msgstr "Приглашение войти в состав группы для режима «%(detailedModeName)s»"
 
 msgid "invite/tooltip/noVehicles"
 msgstr "Нужна хотя бы одна машина в Ангаре."
@@ -321,6 +331,73 @@ msgstr "?empty?"
 
 msgid "modes/development/userName"
 msgstr "?empty?"
+
+msgid "modes/fep145/capsUserName"
+msgstr "Осенняя Аркада"
+
+msgid "modes/fep145/detailedUserName"
+msgstr "%(modeName)s"
+
+msgid "modes/fep145/metaProgressionTooltip/header/active"
+msgstr "Задача Аркады. Этап: %(done)s{par_Open}/%(total)s{par_Close}"
+
+msgid "modes/fep145/metaProgressionTooltip/reward/tip"
+msgstr "Прогресс выполнения засчитывается в любом подрежиме Аркады."
+
+msgid "modes/fep145/metaProgressionTooltip/subheader"
+msgstr "Задача Аркады"
+
+msgid "modes/fep145/metaProgressionTooltip/timer/completedResettable"
+msgstr "до новой задачи Аркады"
+
+msgid "modes/fep145/modeSubSelector/progression/info"
+msgstr "Прогресс выполнения засчитывается в любом подрежиме Аркады."
+
+msgid "modes/fep145/modeSubSelector/progression/timer"
+msgstr "до новой задачи Аркады"
+
+msgid "modes/fep145/mode_selector/battleCondition"
+msgstr "15x15"
+
+msgid "modes/fep145/mode_selector/description"
+msgstr "Экспериментальные бои"
+
+msgid "modes/fep145/mode_selector/levelCondition"
+msgstr "{parSecondary_open}I{parSecondary_close} %(levels)s&nbsp;уровни"
+
+msgid "modes/fep145/mode_selector/progression/resettable"
+msgstr "До новой задачи Аркады"
+
+msgid "modes/fep145/notification/newSubModes/withProgression"
+msgstr "Доступны новые награды и подрежим %(subModeName)s."
+
+msgid "modes/fep145/notification/newSubModes/withoutProgression"
+msgstr "Доступен новый подрежим — %(subModeName)s."
+
+msgid "modes/fep145/progression/congratulation/descr"
+msgstr "Вы выполнили все задачи Аркады"
+
+msgid "modes/fep145/progression/info"
+msgstr "Задачу можно выполнять в любом подрежиме Аркады."
+
+msgid "modes/fep145/progression/title"
+msgstr "ЗАДАЧА АРКАДЫ"
+
+msgid "modes/fep145/scheduler/notification/available/title"
+msgstr "Режим прекращения огня"
+
+msgid "modes/fep145/scheduler/notification/primeTime/title"
+msgstr "Режим прекращения огня"
+
+msgid "modes/fep145/tooltip/filter/body"
+msgstr ""
+"Включить/отключить отображение подходящей техники для режима «Аркада»."
+
+msgid "modes/fep145/tooltip/filter/header"
+msgstr "Аркадная техника"
+
+msgid "modes/fep145/userName"
+msgstr "Осенняя Аркада"
 
 msgid "modes/undefined/capsUserName"
 msgstr "АРКАДА"
@@ -683,6 +760,40 @@ msgstr "?empty?"
 
 msgid "sub_modes/development/userName/quoted"
 msgstr "?empty?"
+
+msgid "sub_modes/fep145/capsUserName"
+msgstr "Осенняя Аркада"
+
+msgid "sub_modes/fep145/detailsHelp/page1/description"
+msgstr ""
+"В этом запуске аптечка при использовании будет восстанавливать прочность "
+"машины. При этом её стандартная функция также сохраняется."
+
+msgid "sub_modes/fep145/detailsHelp/page1/title"
+msgstr "Восстановление прочности в бою"
+
+msgid "sub_modes/fep145/detailsHelpHint/description"
+msgstr "для знакомства с особенностями режима"
+
+msgid "sub_modes/fep145/detailsHelpHint/press"
+msgstr "Нажмите"
+
+msgid "sub_modes/fep145/detailsHelpTitle"
+msgstr "Осенняя Аркада"
+
+msgid "sub_modes/fep145/tips/tip1/description"
+msgstr ""
+"Теперь аптечка при использовании будет восстанавливать прочность машины. "
+"При этом её стандартная функция также сохраняется."
+
+msgid "sub_modes/fep145/tips/tip1/title"
+msgstr "Восстановление прочности в бою"
+
+msgid "sub_modes/fep145/userName"
+msgstr "Осенняя Аркада"
+
+msgid "sub_modes/fep145/userName/quoted"
+msgstr "Осенняя Аркада"
 
 msgid "sub_modes/undefined/capsUserName"
 msgstr "UNKNOWN SUB MODE NAME"

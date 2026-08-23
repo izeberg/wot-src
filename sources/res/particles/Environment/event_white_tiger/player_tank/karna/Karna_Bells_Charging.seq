@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>10.000001</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>10.000001</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>ring</name>
+		<type>model</type>
+		<resource>particles/Environment/event_white_tiger/player_tank/karna/Karna_Bells_Ring.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd2</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 0.015686 0.007843 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.142857</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.000000</startTime>
+				<value>1.000000 0.015686 0.007843 1.500000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 0.500000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -0.125000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>7.000000</startTime>
+				<value>1.000000 0.015686 0.007843 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.125000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -1.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>8.000000</startTime>
+				<value>1.000000 0.015686 0.007843 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -1.000000</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -1.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>energy field</name>
+		<type>model</type>
+		<resource>particles/Environment/event_white_tiger/player_tank/karna/Karna_Bells_Charging.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd0</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 0.015686 0.007843 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.428571</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.428571</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>7.000000</startTime>
+				<value>1.000000 0.015686 0.007843 3.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 0.428571</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -3.000001</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>8.000000</startTime>
+				<value>1.000000 0.015686 0.007843 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -3.000001</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -3.000001</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd1</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 0.003922 0.003922 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.500000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 1.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.000000</startTime>
+				<value>1.000000 0.003922 0.003922 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 1.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>7.000000</startTime>
+				<value>1.000000 0.003922 0.003922 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -1.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>8.000000</startTime>
+				<value>1.000000 0.003922 0.003922 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -1.000000</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -1.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Dust</name>
+		<type>particle</type>
+		<resource>particles/Environment/event_white_tiger/player_tank/karna/karna_bells_charging_dust.eff</resource>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.006721</inTangent>
+				<outTangent>1.499999</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.666667</startTime>
+				<value>1.000000</value>
+				<inTangent>1.499999</inTangent>
+				<outTangent>0.750000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>2.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.033334</startTime>
+				<value>3.000000</value>
+				<inTangent>-0.500000</inTangent>
+				<outTangent>-0.500000</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.500000</startTime>
+				<value>0.000000</value>
+				<inTangent>-1.500000</inTangent>
+				<outTangent>-1.500000</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

@@ -148,7 +148,7 @@ package net.wg.gui.lobby.components
                this._hitMc.graphics.endFill();
                this._hitMc.x = this.vehicleImage.x;
                this._hitMc.y = this.vehicleImage.y;
-               this.subButtonsMode = !!this._vehData.isInInventory ? VehicleButton.COMPARE_ONLY_MODE : VehicleButton.NORMAL_MODE;
+               this.subButtonsMode = this._vehData.isInInventory || !this._vehData.goToVehicleViewBtnVisible ? VehicleButton.COMPARE_ONLY_MODE : VehicleButton.NORMAL_MODE;
                this.addToComparisonBtn.visible = this._vehData.compareBtnVisible;
                if(this._vehData.compareBtnVisible)
                {

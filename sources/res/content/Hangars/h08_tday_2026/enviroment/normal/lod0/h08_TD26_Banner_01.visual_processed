@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s0Shape.vertices</vertices>
+			<stream>s0Shape.colour</stream>
+			<primitive>s0Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>112</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h08_tday_2026/enviroment/h08_TD26_Banner_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_vertexColorMode
+						<Int>1</Int>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h08_tday_2026/enviroment/h08_TD26_Banner_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h08_tday_2026/enviroment/h08_TD26_Banner_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.001809 -0.142199 0.319184</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-21.426340 -1.553559 -0.175495</min>
+		<max>21.429958 1.269162 0.813862</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>5952</geometrySize>
+	<minUVDensity>0.006190</minUVDensity>
+</root>

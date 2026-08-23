@@ -11,7 +11,6 @@
 			<angleZ>95.309998</angleZ>
 		</deferred>
 		<sunScale>2.090000</sunScale>
-		<sunlightAngularSize>0.000000</sunlightAngularSize>
 		<sunColor>254.000000 244.000000 207.000000</sunColor>
 		<sunTexture>system/maps/sun_small.dds</sunTexture>
 		<sunLightColor>0.599999 0.558000 0.510000</sunLightColor>
@@ -41,8 +40,6 @@
 			<scatterColor>0.095000 0.089917 0.078057 0.860000</scatterColor>
 			<skyLow>-1.000000</skyLow>
 			<skyHigh>-1.000000</skyHigh>
-			<useCustomCenter>false</useCustomCenter>
-			<centerPosition>0.000000 0.000000 0.000000</centerPosition>
 		</deferred>
 		<forward>
 			<useEdgeFog>true</useEdgeFog>
@@ -53,8 +50,6 @@
 			<startDistance>27.000000</startDistance>
 			<skyLow>0.000000</skyLow>
 			<skyHigh>0.990000</skyHigh>
-			<useCustomCenter>false</useCustomCenter>
-			<centerPosition>0.000000 0.000000 0.000000</centerPosition>
 		</forward>
 	</Fog>
 	<HDR>
@@ -73,8 +68,8 @@
 			<ambientLumMultiplier>0.200000</ambientLumMultiplier>
 			<sunLumMultiplier>1.000000</sunLumMultiplier>
 			<skyLumMultiplier>25.000000</skyLumMultiplier>
-			<LDR2HDRsaturation>1.000000</LDR2HDRsaturation>
 			<LDR2HDRenableLumaMask>false</LDR2HDRenableLumaMask>
+			<LDR2HDRsaturation>1.000000</LDR2HDRsaturation>
 		</environment>
 		<tonemappings>
 			<tonemapping>
@@ -100,19 +95,6 @@
 		<colorCorrection>
 			<map>system/maps/post_processing/cube/wgr_film_a10_scontrol.dds</map>
 		</colorCorrection>
-		<rainDistortion>
-			<map>system/maps/void_cch.dds</map>
-			<enable>false</enable>
-			<dropsStrength>1.000000</dropsStrength>
-			<dripsStrength>1.000000</dripsStrength>
-			<dropsFrequency>0.250000</dropsFrequency>
-			<tileDrops>10.000000</tileDrops>
-			<textMip>1.000000</textMip>
-			<dripFrequency>2.000000</dripFrequency>
-			<dripTileMove>1.000000 1.000000 1.000000 1.000000</dripTileMove>
-			<dropsSize>0.700000 0.100000</dropsSize>
-			<tileNoise>1.000000 1.000000</tileNoise>
-		</rainDistortion>
 		<filmgrain>
 			<enable>false</enable>
 			<scale>0.250000</scale>
@@ -154,7 +136,7 @@
 		<color>0.891720 0.960656 1.000000 1.000000</color>
 	</GodRays>
 	<SSAO>
-		<enableFromPreset>2</enableFromPreset>
+		<enable>true</enable>
 		<radius>0.100000</radius>
 		<amplify>0.400000</amplify>
 		<fadeNear>1.200000</fadeNear>
@@ -167,7 +149,7 @@
 		</influences>
 	</SSAO>
 	<Shadow>
-		<maxShadowsSplitCount>4</maxShadowsSplitCount>
+		<maxShadowsSplitCount>5</maxShadowsSplitCount>
 		<maxDynamicViewDistance>100.000000</maxDynamicViewDistance>
 		<lightSize>100.000000</lightSize>
 		<dynamicShadowsLightSize>13.000000</dynamicShadowsLightSize>
@@ -205,30 +187,11 @@
 	</cloudsShadow>
 	<PBS>
 		<ForwardSHMultiplier>1.000000</ForwardSHMultiplier>
+		<flakesEnabled>false</flakesEnabled>
 		<flakesDensityThreshold>0.800000</flakesDensityThreshold>
 		<flakesUvScale>0.800000</flakesUvScale>
 		<flakesGloss>0.890000</flakesGloss>
 		<flakesSurfNormalNoiseWeight>0.100000</flakesSurfNormalNoiseWeight>
-		<flakesEnabled>false</flakesEnabled>
-		<useBC6PackingFormat>false</useBC6PackingFormat>
-		<mossDirectMult>1.000000</mossDirectMult>
-		<mossIndirectMult>1.000000</mossIndirectMult>
-		<mossSheenFactor>0.500000</mossSheenFactor>
-		<mossGrassSheenFactor>0.500000</mossGrassSheenFactor>
-		<mossAddColor>0.000000 0.000000 0.000000</mossAddColor>
-		<mossAddColorTint>0.000000</mossAddColorTint>
-		<mossIndirectBRDFFactor>0.800000</mossIndirectBRDFFactor>
-		<mossMinMaskMult>1.000000</mossMinMaskMult>
-		<mossMaxMaskMult>1.000000</mossMaxMaskMult>
-		<snowDirectMult>1.000000</snowDirectMult>
-		<snowScatterColor>0.000000 0.000000 0.000000</snowScatterColor>
-		<snowScatterColorTint>0.000000</snowScatterColorTint>
-		<snowIndirectMultShittySS>0.200000</snowIndirectMultShittySS>
-		<snowIndirectMultBase>1.000000</snowIndirectMultBase>
-		<snowIndirectBRDFFactor>0.800000</snowIndirectBRDFFactor>
-		<snowMinMaskMult>1.000000</snowMinMaskMult>
-		<snowMaxMaskMult>1.000000</snowMaxMaskMult>
-		<shadingModel>0</shadingModel>
 	</PBS>
 	<Weather>
 		<wind>
@@ -255,7 +218,6 @@
 		<enable>false</enable>
 		<applyOnVehicles>false</applyOnVehicles>
 		<colorTintMap/>
-		<layerMask/>
 		<layer>
 			<texture/>
 			<normalMap/>
@@ -290,8 +252,6 @@
 		<waveMaskTexture>system/maps/wetness_waves.dds</waveMaskTexture>
 		<waveMaskUVScale>0.250000</waveMaskUVScale>
 		<waveMaskSpeed>0.141320</waveMaskSpeed>
-		<waterGlossMultiplier>1.000000</waterGlossMultiplier>
-		<wetCoastGlossMultiplier>1.000000</wetCoastGlossMultiplier>
 	</Wetness>
 	<DOF>
 		<enable>false</enable>
@@ -301,39 +261,4 @@
 		<farDist>20.000000</farDist>
 		<blurRadius>0.006000</blurRadius>
 	</DOF>
-	<visibilityMask>4294967295</visibilityMask>
-	<VFXLighting>
-		<PsDirLightMultDeferred>1.000000</PsDirLightMultDeferred>
-		<PsIndirLightMultDeferred>1.000000</PsIndirLightMultDeferred>
-		<PsDirLightMultForward>1.000000</PsDirLightMultForward>
-		<PsIndirLightMultForward>1.000000</PsIndirLightMultForward>
-		<PsIllumMultDeferred>1.000000</PsIllumMultDeferred>
-		<PsIllumMultForward>1.000000</PsIllumMultForward>
-		<PsRibbonMultDeferred>1.000000</PsRibbonMultDeferred>
-		<PsRibbonMultForward>1.000000</PsRibbonMultForward>
-		<particleEnvironmentTintEnabledDeferred>false</particleEnvironmentTintEnabledDeferred>
-		<particleEnvironmentTintEnabledForward>false</particleEnvironmentTintEnabledForward>
-	</VFXLighting>
-	<WeatherDependentSettings>
-		<environment_dependent_emission>
-			<enabled>false</enabled>
-		</environment_dependent_emission>
-		<environment_dependent_lights>
-			<enabled>false</enabled>
-		</environment_dependent_lights>
-	</WeatherDependentSettings>
-	<AlbedoScaleSettings>
-		<deferred>
-			<enable>false</enable>
-			<baseColor>0.000000 0.000000 0.000000</baseColor>
-			<lerpCoeff>1.000000</lerpCoeff>
-			<contrast>1.000000</contrast>
-		</deferred>
-		<forward>
-			<enable>false</enable>
-			<baseColor>0.000000 0.000000 0.000000</baseColor>
-			<lerpCoeff>1.000000</lerpCoeff>
-			<contrast>1.000000</contrast>
-		</forward>
-	</AlbedoScaleSettings>
 </root>

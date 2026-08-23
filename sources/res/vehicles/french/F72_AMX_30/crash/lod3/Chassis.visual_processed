@@ -586,10 +586,6 @@
 						<Float>0.300000</Float>
 					</property>
 					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
-					</property>
-					<property>
 						metallicGlossMap
 						<Texture>vehicles/french/tracks/AMX_30_track_GMM.dds</Texture>
 					</property>
@@ -636,10 +632,6 @@
 					<property>
 						crash_coefficient
 						<Float>0.300000</Float>
-					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
 					</property>
 					<property>
 						metallicGlossMap

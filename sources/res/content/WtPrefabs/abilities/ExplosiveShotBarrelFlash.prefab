@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<version>3</version>
+	<GameObjects>
+		<GameObject>
+			<name>ExplosiveShotBarrelFlash</name>
+			<UUID>5cd0046e-2ee1-4a39-876c-500b9fccb3a0</UUID>
+			<flags>0</flags>
+		</GameObject>
+	</GameObjects>
+	<components>
+		<ComponentPool>
+			<type>Transform</type>
+			<version>1</version>
+			<component>
+				<objectIndex>0</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>Particle</type>
+			<version>1</version>
+			<component>
+				<objectIndex>0</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>effect</name>
+						<isAsset>true</isAsset>
+						<value>particles/Tank/shots/explosive_shot_wt.eff</value>
+					</property>
+					<property>
+						<name>oneTimeEffect</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>autoStart</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Override opacity</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Opacity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Rate</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Gravity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Wind weight</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Tangent Direction</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>FPS</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Start Speed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Particle Size</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>LifeTime</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Size Length</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Tangent Speed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Sprite Start Angle</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Sprite Start Angle Speed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Tint Color</name>
+						<value>1 1 1 1</value>
+					</property>
+					<property>
+						<name>Emitter size</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Epicenter offset</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Model Start Angle Min</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Model Start Angle Max</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Model Start Angle Speed Min</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Model Start Angle Speed Max</name>
+						<value>0 0 0</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>NodeFollower</type>
+			<version>1</version>
+			<component>
+				<objectIndex>0</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>NodeName</name>
+						<value>HP_gunFire</value>
+					</property>
+					<property>
+						<name>DeactivateIfInvalid</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>modelLink</name>
+						<link>00000000-0000-0000-0000-000000000001</link>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+	</components>
+</root>

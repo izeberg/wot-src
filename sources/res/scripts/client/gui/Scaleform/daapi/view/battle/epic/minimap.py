@@ -246,8 +246,8 @@ class EpicArenaVehiclesPlugin(ArenaVehiclesPlugin):
         return super(EpicArenaVehiclesPlugin, self)._getSpottedSoundName(entry)
 
     def _getDestroyNotPermanentParams(self, vehicleID):
-        vInfo = self.sessionProvider.getArenaDP().getVehicleInfo(vehicleID)
-        if Supply.isSupply(vInfo.vehicleType.tags):
+        vehTags = self.sessionProvider.getArenaDP().getVehicleInfo(vehicleID).vehicleType.tags
+        if Supply.isSupply(vehTags) and not Supply.isAirShip(vehTags):
             return (BATTLE_MINIMAP_CONSTS.STATE_DEAD_VISIBLE, True)
         return super(EpicArenaVehiclesPlugin, self)._getDestroyNotPermanentParams(vehicleID)
 

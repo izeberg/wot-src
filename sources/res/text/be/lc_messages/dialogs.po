@@ -3031,6 +3031,26 @@ msgstr "Працягнуць"
 msgid "reportBug/title"
 msgstr "Пераход на форум гульні"
 
+msgid "resetBattleContextHintsNotification/cancel"
+msgstr "Скасаваць"
+
+msgid "resetBattleContextHintsNotification/message"
+msgstr ""
+"%(icon)s%(alert)s Все подсказки в бою, в том\n"
+"числе и %(caption)s, будут воспроизведены заново."
+
+msgid "resetBattleContextHintsNotification/message/alert"
+msgstr "Увага!"
+
+msgid "resetBattleContextHintsNotification/message/caption"
+msgstr "подсказки для новых игроков"
+
+msgid "resetBattleContextHintsNotification/submit"
+msgstr "Перазапусціць"
+
+msgid "resetBattleContextHintsNotification/title"
+msgstr "Подсказки в бою"
+
 msgid "resetGraphics/cancel"
 msgstr "Працягнуць"
 
@@ -3270,7 +3290,9 @@ msgid "squad/goToAnother/cancel"
 msgstr "Скасаваць"
 
 msgid "squad/goToAnother/message"
-msgstr "Падчас пераходу ў іншы рэжым вы будзеце выключаны са звязу."
+msgstr ""
+"Вы состоите в группе. При переходе в другой режим вы будете исключены "
+"из группы."
 
 msgid "squad/goToAnother/submit"
 msgstr "Перайсці"
@@ -3294,7 +3316,7 @@ msgid "squad/leave/cancel"
 msgstr "Скасаваць"
 
 msgid "squad/leave/message"
-msgstr "Ці сапраўды хочаце пакінуць звяз?"
+msgstr "Вы действительно хотите покинуть группу?"
 
 msgid "squad/leave/submit"
 msgstr "Пацвердзіць"
@@ -3306,7 +3328,7 @@ msgid "squad/leaveDisabled/cancel"
 msgstr "Працягнуць"
 
 msgid "squad/leaveDisabled/message"
-msgstr "Нельга пакінуць звяз, бо вы ў асноўным складзе і гатовы да бою."
+msgstr "Невозможно покинуть группу: вы в основном составе и готовы к бою."
 
 msgid "squad/leaveDisabled/title"
 msgstr "Увага"
@@ -3821,6 +3843,17 @@ msgid "voiceChatInitFailed/message"
 msgstr "Памылка ініцыялізацыі галасавой сувязі: сэрвіс часова недаступны."
 
 msgid "voiceChatInitFailed/title"
+msgstr "Ініцыялізацыя галасавой сувязі"
+
+msgid "voiceChatInitFailedByOS/cancel"
+msgstr "Так!"
+
+msgid "voiceChatInitFailedByOS/message"
+msgstr ""
+"Ошибка инициализации голосовой связи: данная версия операционной системы "
+"не поддерживается."
+
+msgid "voiceChatInitFailedByOS/title"
 msgstr "Ініцыялізацыя галасавой сувязі"
 
 msgid "voiceChatInitSucceded/cancel"

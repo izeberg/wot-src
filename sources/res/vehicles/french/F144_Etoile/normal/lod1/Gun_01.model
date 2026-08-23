@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/french/F144_Etoile/normal/lod2/Gun_01</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<nodefullVisual>vehicles/french/F144_Etoile/normal/lod1/Gun_01</nodefullVisual>
+	<visibilityBox>
+		<min>-0.599999 -0.894308 -2.293232</min>
+		<max>0.737668 0.579753 7.011765</max>
+	</visibilityBox>
+</root>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<version>3</version>
+	<GameObjects>
+		<GameObject>
+			<name>h16_mt_museum_sound_vo_guide</name>
+			<UUID>a6abed82-7cba-455a-ac1b-abb9e7eeee0f</UUID>
+			<flags>0</flags>
+		</GameObject>
+	</GameObjects>
+	<components>
+		<ComponentPool>
+			<type>Transform</type>
+			<version>1</version>
+			<component>
+				<objectIndex>0</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>Sound3D</type>
+			<version>1</version>
+			<component>
+				<objectIndex>0</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Object name</name>
+						<value>h16_mt_museum_vo_guide</value>
+					</property>
+					<property>
+						<name>Event name</name>
+						<value/>
+					</property>
+					<property>
+						<name>AutoStart</name>
+						<value>0</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>TankObjectSoundComponent</type>
+			<version>1</version>
+			<component>
+				<objectIndex>0</objectIndex>
+				<flags>1</flags>
+			</component>
+		</ComponentPool>
+	</components>
+</root>

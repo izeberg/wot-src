@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F72_AMX_30/_skins/F72_AMX_30_3Dst_02/normal/lod1/Turret_01</nodefullVisual>
+	<parent>vehicles/french/F72_AMX_30/_skins/F72_AMX_30_3Dst_02/normal/lod2/Turret_01</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.553002 -0.010593 -2.680763</min>
+		<max>1.642669 1.422309 1.393956</max>
+	</visibilityBox>
+</root>

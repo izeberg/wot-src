@@ -21,13 +21,14 @@ package net.wg.gui.battle.views.vehicleMarkers.statusMarkers
       
       override public function showEffectTimer(param1:Number, param2:Boolean, param3:Boolean, param4:Boolean = true, param5:Boolean = true) : void
       {
-         var _loc6_:String = (!!param2 ? ATTACKER_PREFIX : DEFENDER_PREFIX) + color;
-         if(_loc6_ != this._iconFrame)
-         {
-            this._iconFrame = _loc6_;
-            this.iconMc.gotoAndStop(_loc6_);
-         }
+         this.updateIconColor();
          super.showEffectTimer(param1,param2,param3,param4,param5);
+      }
+      
+      override protected function updateColorSettings(param1:uint) : void
+      {
+         super.updateColorSettings(param1);
+         this.updateIconColor();
       }
       
       override protected function onDispose() : void
@@ -35,6 +36,16 @@ package net.wg.gui.battle.views.vehicleMarkers.statusMarkers
          stop();
          this.iconMc = null;
          super.onDispose();
+      }
+      
+      private function updateIconColor() : void
+      {
+         var _loc1_:String = (!!isSourceVehicle ? ATTACKER_PREFIX : DEFENDER_PREFIX) + color;
+         if(_loc1_ != this._iconFrame)
+         {
+            this._iconFrame = _loc1_;
+            this.iconMc.gotoAndStop(_loc1_);
+         }
       }
    }
 }

@@ -111,6 +111,8 @@ package
       
       public static const PLAYER_ERRORS_EQUIPMENT_MEDKIT_ALLTANKMENARESAFE:String = "#ingame_gui:player_errors/equipment/medkit/allTankmenAreSafe";
       
+      public static const PLAYER_ERRORS_EQUIPMENT_FEPMEDKIT_ALLTANKMENARESAFE:String = "#ingame_gui:player_errors/equipment/FEPmedkit/allTankmenAreSafe";
+      
       public static const PLAYER_ERRORS_EQUIPMENT_REPAIRKIT_DEVICEISNOTDAMAGED:String = "#ingame_gui:player_errors/equipment/repairkit/deviceIsNotDamaged";
       
       public static const PLAYER_ERRORS_EQUIPMENT_REPAIRKIT_ALLDEVICESARENOTDAMAGED:String = "#ingame_gui:player_errors/equipment/repairkit/allDevicesAreNotDamaged";
@@ -1943,12 +1945,6 @@ package
       
       public static const HELPSCREEN_MAPBOX_DESCRIPTION:String = "#ingame_gui:helpScreen/mapbox/description";
       
-      public static const COMMANDERCAM_HINT_DESCRIPTION:String = "#ingame_gui:commanderCam/hint/description";
-      
-      public static const BATTLECOMMUNICATION_HINT_PRESS:String = "#ingame_gui:battleCommunication/hint/press";
-      
-      public static const BATTLECOMMUNICATION_HINT_DESCRIPTION:String = "#ingame_gui:battleCommunication/hint/description";
-      
       public static const BURNOUT_HINT_ENGINEDAMAGEWARNING:String = "#ingame_gui:burnout/hint/engineDamageWarning";
       
       public static const BURNOUT_HINT_ENGINEDAMAGED:String = "#ingame_gui:burnout/hint/engineDamaged";
@@ -2123,10 +2119,6 @@ package
       
       public static const PREBATTLEAMMUNITIONPANEL_CURRENTSETUP:String = "#ingame_gui:prebattleAmmunitionPanel/currentSetup";
       
-      public static const PERSONAL_RESERVES_HINT_PRESS:String = "#ingame_gui:personal_reserves/hint/press";
-      
-      public static const PERSONAL_RESERVES_HINT_DESCRIPTION:String = "#ingame_gui:personal_reserves/hint/description";
-      
       public static const HINT_NOBINDINGKEY:String = "#ingame_gui:hint/noBindingKey";
       
       public static const DESTROYTIMER_LIFTOVER:String = "#ingame_gui:destroyTimer/liftOver";
@@ -2158,6 +2150,10 @@ package
       public static const PLAYER_ERRORS_THERMALVISION_ALREADYACTIVATED:String = "#ingame_gui:player_errors/thermalVision/alreadyActivated";
       
       public static const PLAYER_ERRORS_THERMALVISION_OVERTURNED:String = "#ingame_gui:player_errors/thermalVision/overturned";
+      
+      public static const DESTROYTIMER_MEDKITINUSE:String = "#ingame_gui:destroyTimer/medkitInUse";
+      
+      public static const CROSSHAIR_HINT_WTBARRIER:String = "#ingame_gui:crosshair/hint/wtBarrier";
        
       
       public function INGAME_GUI()

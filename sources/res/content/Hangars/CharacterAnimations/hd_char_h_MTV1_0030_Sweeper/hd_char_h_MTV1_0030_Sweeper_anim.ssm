@@ -7,36 +7,6 @@
 		</param>
 	</params>
 	<node>
-		<name>start</name>
-		<type>sleep</type>
-		<time>1.000000 1.000000</time>
-		<transition>
-			<to>1</to>
-			<blendDuration>0.000000</blendDuration>
-			<conditions>
-				<condition>
-					<type>random_float</type>
-					<name>choice</name>
-					<rangeStart>0.000000</rangeStart>
-					<rangeEnd>50.000000</rangeEnd>
-				</condition>
-			</conditions>
-		</transition>
-		<transition>
-			<to>2</to>
-			<blendDuration>0.000000</blendDuration>
-			<conditions>
-				<condition>
-					<type>random_float</type>
-					<name>choice</name>
-					<rangeStart>50.000000</rangeStart>
-					<rangeEnd>100.000000</rangeEnd>
-				</condition>
-			</conditions>
-		</transition>
-		<uiPosition>-30.000000 -143.000000 0.000000</uiPosition>
-	</node>
-	<node>
 		<name>idle_1</name>
 		<type>sequence</type>
 		<resource>content/Hangars/CharacterAnimations/hd_char_h_MTV1_0030_Sweeper/Sequence/Sweeper_idle.seq</resource>
@@ -50,9 +20,63 @@
 					<type>exit_time</type>
 					<exitOffset>1.000000</exitOffset>
 				</condition>
+				<condition>
+					<type>random_float</type>
+					<name>choice</name>
+					<rangeStart>50.000000</rangeStart>
+					<rangeEnd>75.000000</rangeEnd>
+				</condition>
 			</conditions>
 		</transition>
-		<uiPosition>-213.000000 -18.000000 0.000000</uiPosition>
+		<transition>
+			<to>idle_Sipping_01</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+				<condition>
+					<type>random_float</type>
+					<name>choice</name>
+					<rangeStart>25.000000</rangeStart>
+					<rangeEnd>50.000000</rangeEnd>
+				</condition>
+			</conditions>
+		</transition>
+		<transition>
+			<to>idle_Squats_01</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+				<condition>
+					<type>random_float</type>
+					<name>choice</name>
+					<rangeStart>75.000000</rangeStart>
+					<rangeEnd>100.000000</rangeEnd>
+				</condition>
+			</conditions>
+		</transition>
+		<transition>
+			<to>idle_1</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+				<condition>
+					<type>random_float</type>
+					<name>choice</name>
+					<rangeStart>0.000000</rangeStart>
+					<rangeEnd>25.000000</rangeEnd>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>-356.000000 -120.000000 0.000000</uiPosition>
 	</node>
 	<node>
 		<name>metett_1</name>
@@ -61,81 +85,95 @@
 		<isLoop>false</isLoop>
 		<loop>1</loop>
 		<transition>
-			<to>idle_1_looped</to>
-			<blendDuration>1.000000</blendDuration>
+			<to>idle_1</to>
+			<blendDuration>0.000000</blendDuration>
 			<conditions>
 				<condition>
 					<type>exit_time</type>
-					<exitOffset>0.000000</exitOffset>
+					<exitOffset>1.000000</exitOffset>
 				</condition>
 			</conditions>
 		</transition>
-		<uiPosition>-209.500000 41.500000 0.000000</uiPosition>
+		<uiPosition>-358.500000 106.500000 0.000000</uiPosition>
 	</node>
 	<node>
-		<name>idle_1_looped</name>
+		<name>idle_Squats_01</name>
 		<type>sequence</type>
-		<resource>content/Hangars/CharacterAnimations/hd_char_h_MTV1_0030_Sweeper/Sequence/Sweeper_idle.seq</resource>
-		<isLoop>true</isLoop>
-		<loop>-1</loop>
-		<uiPosition>-210.000000 98.500000 0.000000</uiPosition>
-	</node>
-	<node>
-		<name>1</name>
-		<type>sleep</type>
-		<time>1.000000 1.000000</time>
+		<resource>content/Hangars/CharacterAnimations/hd_char_h_MTV1_0030_Sweeper/Sequence/Sweeper_idle_Squats_01.seq</resource>
+		<isLoop>false</isLoop>
+		<loop>1</loop>
 		<transition>
 			<to>idle_1</to>
 			<blendDuration>0.000000</blendDuration>
-			<conditions/>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+				<condition>
+					<type>random_float</type>
+					<name>choice</name>
+					<rangeStart>0.000000</rangeStart>
+					<rangeEnd>50.000000</rangeEnd>
+				</condition>
+			</conditions>
 		</transition>
-		<uiPosition>-212.000000 -79.500000 0.000000</uiPosition>
-	</node>
-	<node>
-		<name>2</name>
-		<type>sleep</type>
-		<time>1.000000 1.000000</time>
 		<transition>
-			<to>idle_2</to>
-			<blendDuration>0.000000</blendDuration>
-			<conditions/>
-		</transition>
-		<uiPosition>151.000000 -77.000000 0.000000</uiPosition>
-	</node>
-	<node>
-		<name>idle_2</name>
-		<type>sequence</type>
-		<resource>content/Hangars/CharacterAnimations/hd_char_h_MTV1_0030_Sweeper/Sequence/Sweeper_idle.seq</resource>
-		<isLoop>false</isLoop>
-		<loop>1</loop>
-		<transition>
-			<to>metett_2</to>
+			<to>metett_1</to>
 			<blendDuration>0.000000</blendDuration>
 			<conditions>
 				<condition>
 					<type>exit_time</type>
 					<exitOffset>1.000000</exitOffset>
 				</condition>
+				<condition>
+					<type>random_float</type>
+					<name>choice</name>
+					<rangeStart>50.000000</rangeStart>
+					<rangeEnd>100.000000</rangeEnd>
+				</condition>
 			</conditions>
 		</transition>
-		<uiPosition>153.500000 -15.000000 0.000000</uiPosition>
+		<uiPosition>47.000000 -22.000000 0.000000</uiPosition>
 	</node>
 	<node>
-		<name>metett_2</name>
+		<name>idle_Sipping_01</name>
 		<type>sequence</type>
-		<resource>content/Hangars/CharacterAnimations/hd_char_h_MTV1_0030_Sweeper/Sequence/Sweeper_metett.seq</resource>
+		<resource>content/Hangars/CharacterAnimations/hd_char_h_MTV1_0030_Sweeper/Sequence/Sweeper_idle_Sipping_01.seq</resource>
 		<isLoop>false</isLoop>
 		<loop>1</loop>
 		<transition>
-			<to>idle_2</to>
+			<to>idle_1</to>
 			<blendDuration>0.000000</blendDuration>
 			<conditions>
 				<condition>
 					<type>exit_time</type>
 					<exitOffset>1.000000</exitOffset>
 				</condition>
+				<condition>
+					<type>random_float</type>
+					<name>choice</name>
+					<rangeStart>0.000000</rangeStart>
+					<rangeEnd>50.000000</rangeEnd>
+				</condition>
 			</conditions>
 		</transition>
-		<uiPosition>154.000000 45.500000 0.000000</uiPosition>
+		<transition>
+			<to>metett_1</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+				<condition>
+					<type>random_float</type>
+					<name>choice</name>
+					<rangeStart>50.000000</rangeStart>
+					<rangeEnd>100.000000</rangeEnd>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>-720.000000 -19.000000 0.000000</uiPosition>
 	</node>
 </root>

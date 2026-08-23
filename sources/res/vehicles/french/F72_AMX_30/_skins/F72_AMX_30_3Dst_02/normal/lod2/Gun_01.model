@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/french/F72_AMX_30/_skins/F72_AMX_30_3Dst_02/normal/lod3/Gun_01</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<nodefullVisual>vehicles/french/F72_AMX_30/_skins/F72_AMX_30_3Dst_02/normal/lod2/Gun_01</nodefullVisual>
+	<visibilityBox>
+		<min>-1.252954 -0.258411 -0.328759</min>
+		<max>1.148166 0.471195 4.388797</max>
+	</visibilityBox>
+</root>

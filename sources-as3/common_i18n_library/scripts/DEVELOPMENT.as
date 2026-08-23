@@ -13,8 +13,6 @@ package
       
       public static const BOTS_BUTTONS_ADD:String = "#development:bots/buttons/add";
       
-      public static const BOTS_BUTTONS_CLOSE:String = "#development:bots/buttons/close";
-      
       public static const MESSENGER_CONTACTS_SEARCHCONTACT_HEADER:String = "#development:messenger/contacts/searchContact/header";
       
       public static const MESSENGER_CONTACTS_SEARCHCONTACT_BODY:String = "#development:messenger/contacts/searchContact/body";

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/italy/It37_CAS_149/normal/lod2/Hull</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<nodefullVisual>vehicles/italy/It37_CAS_149/normal/lod1/Hull</nodefullVisual>
+	<visibilityBox>
+		<min>-1.692612 -0.771468 -4.059666</min>
+		<max>1.745803 0.553916 3.827801</max>
+	</visibilityBox>
+</root>

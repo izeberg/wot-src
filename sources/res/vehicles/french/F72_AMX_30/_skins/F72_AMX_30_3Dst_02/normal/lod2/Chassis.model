@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/french/F72_AMX_30/_skins/F72_AMX_30_3Dst_02/normal/lod3/Chassis</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.541203 0.008603 -3.301772</min>
+		<max>1.541203 1.179213 3.186424</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/french/F72_AMX_30/_skins/F72_AMX_30_3Dst_02/normal/lod2/Chassis</nodefullVisual>
+</root>

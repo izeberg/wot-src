@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/intunion/Un18_VT_49/normal/lod2/Gun_04</nodefullVisual>
+	<parent>vehicles/intunion/Un18_VT_49/normal/lod3/Gun_04</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.485249 -0.322372 0.094536</min>
+		<max>0.483069 0.315308 3.628854</max>
+	</visibilityBox>
+</root>

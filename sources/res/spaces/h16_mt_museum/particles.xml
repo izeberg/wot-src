@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<forward>
+		<name>default</name>
+		<preload>
+			<shader>/data/shaders/ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_tex_hangar_v3.dds</texture>
+		</preload>
+		<preloadTextures/>
+		<fn_effect_bin>particles/content_forward/pfx/null.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/environment/hangar/h16_ambient_dust.eff</fn_effect_bin>
+	</forward>
+	<deferred>
+		<name>default</name>
+		<preload>
+			<shader>/data/shaders/ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_tex_hangar_v3.dds</texture>
+		</preload>
+		<preloadTextures>
+			<path>
+				particles/content_deferred/pfx_textures/camera_dust.dds
+				<type>primary</type>
+			</path>
+		</preloadTextures>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/hangar/h16_ambient_dust.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/environment/hangar/h16_ambient_dust.eff</fn_effect_bin>
+	</deferred>
+</root>

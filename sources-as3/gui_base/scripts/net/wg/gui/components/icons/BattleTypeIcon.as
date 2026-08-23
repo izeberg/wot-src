@@ -39,10 +39,6 @@ package net.wg.gui.components.icons
             return;
          }
          this._type = param1;
-         if(param1 == "battle_royale" && App.globalVarsMgr.isBirthdayS())
-         {
-            this._type = "battle_royaleBirthday";
-         }
          invalidateState();
       }
       

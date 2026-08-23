@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/french/F144_Etoile/crash/lod2/Chassis</parent>
+	<tank>true</tank>
+	<extent>
+		64.0
+		<!--BW_String-->
+	</extent>
+	<nodefullVisual>vehicles/french/F144_Etoile/crash/lod1/Chassis</nodefullVisual>
+	<visibilityBox>
+		<min>-1.618656 -0.000416 -3.253532</min>
+		<max>1.613990 1.053828 3.269459</max>
+	</visibilityBox>
+</root>

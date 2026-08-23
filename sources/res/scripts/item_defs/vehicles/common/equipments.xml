@@ -11390,7 +11390,7 @@
 				<exports>vse tooltip</exports>
 			</duration>
 			<crewBuff>
-				10 15 20
+				15 20 25
 				<exports>vse tooltip</exports>
 			</crewBuff>
 		</script>
@@ -11543,7 +11543,7 @@
 				<exports>vse tooltip</exports>
 			</duration>
 			<crewBuff>
-				20 30 40
+				15 25 30
 				<exports>vse tooltip</exports>
 			</crewBuff>
 		</script>
@@ -11656,7 +11656,7 @@
 				</server>
 			</visualScript>
 			<cooldownSeconds>
-				15
+				20
 				<exports>vse tooltip</exports>
 			</cooldownSeconds>
 			<duration>
@@ -11701,7 +11701,7 @@
 				</server>
 			</visualScript>
 			<cooldownSeconds>
-				15
+				20
 				<exports>vse tooltip</exports>
 			</cooldownSeconds>
 			<duration>
@@ -11714,7 +11714,7 @@
 				<exports>vse</exports>
 			</shotDispersionFactors>
 			<slvl>
-				0.4 0.6 0.8
+				0.8 1 1.2
 				<!--BW_String-->
 				<exports>vse</exports>
 			</slvl>
@@ -11899,11 +11899,11 @@
 				</server>
 			</visualScript>
 			<cooldownSeconds>
-				20
+				30
 				<exports>vse tooltip</exports>
 			</cooldownSeconds>
 			<duration>
-				10 15 20
+				4 7 10
 				<exports>vse tooltip</exports>
 			</duration>
 			<enginePowerBuff>
@@ -11916,7 +11916,7 @@
 				<exports>vse tooltip</exports>
 			</fwdSpeedBoost>
 			<invisibilityFactor>
-				1.2
+				1.35
 				<!--BW_String-->
 				<exports>vse tooltip</exports>
 			</invisibilityFactor>

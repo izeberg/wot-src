@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/german/G180_Hauptpanzer_Gruppe_A/normal/lod4/Chassis</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.791652 -0.000000 -3.859400</min>
+		<max>1.791652 1.161579 3.675838</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G180_Hauptpanzer_Gruppe_A/normal/lod3/Chassis</nodefullVisual>
+</root>

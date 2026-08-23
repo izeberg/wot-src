@@ -17,8 +17,6 @@
 			<scatterColor>0.952941 0.847059 0.721569 10.000000</scatterColor>
 			<skyLow>0.400000</skyLow>
 			<skyHigh>2.000000</skyHigh>
-			<useCustomCenter>false</useCustomCenter>
-			<centerPosition>0.000000 0.000000 0.000000</centerPosition>
 		</deferred>
 		<forward>
 			<useEdgeFog>false</useEdgeFog>
@@ -29,8 +27,6 @@
 			<startDistance>15.000000</startDistance>
 			<skyLow>0.400000</skyLow>
 			<skyHigh>2.000000</skyHigh>
-			<useCustomCenter>false</useCustomCenter>
-			<centerPosition>0.000000 0.000000 0.000000</centerPosition>
 		</forward>
 	</Fog>
 	<HDR>
@@ -49,8 +45,8 @@
 			<ambientLumMultiplier>1.000000</ambientLumMultiplier>
 			<sunLumMultiplier>6.370000</sunLumMultiplier>
 			<skyLumMultiplier>5.600000</skyLumMultiplier>
-			<LDR2HDRsaturation>1.000000</LDR2HDRsaturation>
 			<LDR2HDRenableLumaMask>false</LDR2HDRenableLumaMask>
+			<LDR2HDRsaturation>1.000000</LDR2HDRsaturation>
 		</environment>
 		<tonemappings>
 			<tonemapping>
@@ -76,19 +72,6 @@
 		<colorCorrection>
 			<map>system/maps/post_processing/cube/lut_h31_br_battleroyale.dds</map>
 		</colorCorrection>
-		<rainDistortion>
-			<map>system/maps/void_cch.dds</map>
-			<enable>false</enable>
-			<dropsStrength>1.000000</dropsStrength>
-			<dripsStrength>1.000000</dripsStrength>
-			<dropsFrequency>0.250000</dropsFrequency>
-			<tileDrops>10.000000</tileDrops>
-			<textMip>1.000000</textMip>
-			<dripFrequency>2.000000</dripFrequency>
-			<dripTileMove>1.000000 1.000000 1.000000 1.000000</dripTileMove>
-			<dropsSize>0.700000 0.100000</dropsSize>
-			<tileNoise>1.000000 1.000000</tileNoise>
-		</rainDistortion>
 		<filmgrain>
 			<enable>true</enable>
 			<scale>0.120000</scale>
@@ -130,7 +113,7 @@
 		<color>1.000000 0.886334 0.845000 1.000000</color>
 	</GodRays>
 	<SSAO>
-		<enableFromPreset>2</enableFromPreset>
+		<enable>true</enable>
 		<radius>0.080000</radius>
 		<amplify>0.330000</amplify>
 		<fadeNear>2.230000</fadeNear>
@@ -143,13 +126,13 @@
 		</influences>
 	</SSAO>
 	<Shadow>
-		<maxShadowsSplitCount>4</maxShadowsSplitCount>
+		<maxShadowsSplitCount>5</maxShadowsSplitCount>
 		<maxDynamicViewDistance>16384.000000</maxDynamicViewDistance>
 		<lightSize>30.000000</lightSize>
 		<dynamicShadowsLightSize>30.000000</dynamicShadowsLightSize>
 	</Shadow>
 	<SSShadows>
-		<enableFromPreset>2</enableFromPreset>
+		<enable>true</enable>
 		<amplify>0.700000</amplify>
 	</SSShadows>
 	<VFX>
@@ -181,30 +164,11 @@
 	</cloudsShadow>
 	<PBS>
 		<ForwardSHMultiplier>1.000000</ForwardSHMultiplier>
+		<flakesEnabled>false</flakesEnabled>
 		<flakesDensityThreshold>0.800000</flakesDensityThreshold>
 		<flakesUvScale>0.800000</flakesUvScale>
 		<flakesGloss>0.890000</flakesGloss>
 		<flakesSurfNormalNoiseWeight>0.100000</flakesSurfNormalNoiseWeight>
-		<flakesEnabled>false</flakesEnabled>
-		<useBC6PackingFormat>false</useBC6PackingFormat>
-		<mossDirectMult>1.000000</mossDirectMult>
-		<mossIndirectMult>1.000000</mossIndirectMult>
-		<mossSheenFactor>0.500000</mossSheenFactor>
-		<mossGrassSheenFactor>0.500000</mossGrassSheenFactor>
-		<mossAddColor>0.000000 0.000000 0.000000</mossAddColor>
-		<mossAddColorTint>0.000000</mossAddColorTint>
-		<mossIndirectBRDFFactor>0.800000</mossIndirectBRDFFactor>
-		<mossMinMaskMult>1.000000</mossMinMaskMult>
-		<mossMaxMaskMult>1.000000</mossMaxMaskMult>
-		<snowDirectMult>1.000000</snowDirectMult>
-		<snowScatterColor>0.000000 0.000000 0.000000</snowScatterColor>
-		<snowScatterColorTint>0.000000</snowScatterColorTint>
-		<snowIndirectMultShittySS>0.200000</snowIndirectMultShittySS>
-		<snowIndirectMultBase>1.000000</snowIndirectMultBase>
-		<snowIndirectBRDFFactor>0.800000</snowIndirectBRDFFactor>
-		<snowMinMaskMult>1.000000</snowMinMaskMult>
-		<snowMaxMaskMult>1.000000</snowMaxMaskMult>
-		<shadingModel>0</shadingModel>
 	</PBS>
 	<Weather>
 		<wind>
@@ -216,7 +180,6 @@
 		<enable>true</enable>
 		<applyOnVehicles>false</applyOnVehicles>
 		<colorTintMap>spaces/h33_battle_royale_2021/overlay_tint_map.dds</colorTintMap>
-		<layerMask/>
 		<layer>
 			<texture>maps/overlay/snow_wall_4_temp.dds</texture>
 			<normalMap>maps/overlay/snow_wall_4_NM_temp.dds</normalMap>
@@ -274,7 +237,6 @@
 			<angleZ>270.000000</angleZ>
 		</deferred>
 		<sunScale>1.200000</sunScale>
-		<sunlightAngularSize>0.000000</sunlightAngularSize>
 		<sunColor>119.000000 158.000000 255.000000</sunColor>
 		<sunTexture>system/maps/sun_small.dds</sunTexture>
 		<sunLightColor>1.000000 0.580000 0.400000</sunLightColor>
@@ -319,8 +281,6 @@
 		<waveMaskTexture>system/maps/wetness_waves.dds</waveMaskTexture>
 		<waveMaskUVScale>0.250000</waveMaskUVScale>
 		<waveMaskSpeed>0.141320</waveMaskSpeed>
-		<waterGlossMultiplier>1.000000</waterGlossMultiplier>
-		<wetCoastGlossMultiplier>1.000000</wetCoastGlossMultiplier>
 	</Wetness>
 	<name>preset_h31</name>
 	<DOF>
@@ -331,39 +291,4 @@
 		<farDist>30.000000</farDist>
 		<blurRadius>0.000050</blurRadius>
 	</DOF>
-	<visibilityMask>4294967295</visibilityMask>
-	<VFXLighting>
-		<PsDirLightMultDeferred>1.000000</PsDirLightMultDeferred>
-		<PsIndirLightMultDeferred>1.000000</PsIndirLightMultDeferred>
-		<PsDirLightMultForward>1.000000</PsDirLightMultForward>
-		<PsIndirLightMultForward>1.000000</PsIndirLightMultForward>
-		<PsIllumMultDeferred>1.000000</PsIllumMultDeferred>
-		<PsIllumMultForward>1.000000</PsIllumMultForward>
-		<PsRibbonMultDeferred>1.000000</PsRibbonMultDeferred>
-		<PsRibbonMultForward>1.000000</PsRibbonMultForward>
-		<particleEnvironmentTintEnabledDeferred>false</particleEnvironmentTintEnabledDeferred>
-		<particleEnvironmentTintEnabledForward>false</particleEnvironmentTintEnabledForward>
-	</VFXLighting>
-	<WeatherDependentSettings>
-		<environment_dependent_emission>
-			<enabled>false</enabled>
-		</environment_dependent_emission>
-		<environment_dependent_lights>
-			<enabled>false</enabled>
-		</environment_dependent_lights>
-	</WeatherDependentSettings>
-	<AlbedoScaleSettings>
-		<deferred>
-			<enable>false</enable>
-			<baseColor>0.000000 0.000000 0.000000</baseColor>
-			<lerpCoeff>1.000000</lerpCoeff>
-			<contrast>1.000000</contrast>
-		</deferred>
-		<forward>
-			<enable>false</enable>
-			<baseColor>0.000000 0.000000 0.000000</baseColor>
-			<lerpCoeff>1.000000</lerpCoeff>
-			<contrast>1.000000</contrast>
-		</forward>
-	</AlbedoScaleSettings>
 </root>

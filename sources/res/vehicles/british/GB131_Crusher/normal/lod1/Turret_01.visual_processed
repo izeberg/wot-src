@@ -17,6 +17,15 @@
 				<row3>0.000000 0.000000 0.000000</row3>
 			</transform>
 			<node>
+				<identifier>HP_sleeveRoot</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 -1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+			</node>
+			<node>
 				<identifier>HP_gunJoint</identifier>
 				<transform>
 					<row0>1.000000 0.000000 0.000000</row0>
@@ -60,6 +69,10 @@
 						</Float>
 					</property>
 					<property>
+						alphaTestEnable
+						<Bool>false</Bool>
+					</property>
+					<property>
 						g_maskBias
 						<Float>
 							0.18
@@ -72,7 +85,10 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>7.013999 3.507000 0.000000 0.000000</Vector4>
+						<Vector4>
+							7.014 3.507 0.0 0.0
+							<!--BW_String-->
+						</Vector4>
 					</property>
 					<property>
 						g_detailPower
@@ -89,6 +105,10 @@
 					<property>
 						metallicDetailMap
 						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						alphaReference
+						<Int>0</Int>
 					</property>
 					<property>
 						g_detailPowerAlbedo

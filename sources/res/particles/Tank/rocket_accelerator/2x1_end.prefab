@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<version>3</version>
+	<GameObjects>
+		<GameObject>
+			<name>2x1_end</name>
+			<UUID>08ba5496-f61d-40e2-8c94-c13b9542652c</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>fire_1</name>
+			<UUID>f4e0d336-bd6d-4d90-b119-3a7232169dcd</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>fire_1</name>
+			<UUID>0cb08cf3-f32c-4bbf-84e8-c195f1041a6d</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>fire_2</name>
+			<UUID>fc46d068-6931-334c-8a4a-8f4fe482d48a</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>fire_2</name>
+			<UUID>3b1b9f97-b140-3445-b206-0317e66d7234</UUID>
+			<flags>0</flags>
+		</GameObject>
+	</GameObjects>
+	<components>
+		<ComponentPool>
+			<type>Hierarchy</type>
+			<version>2</version>
+			<component>
+				<objectIndex>1</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>08ba5496-f61d-40e2-8c94-c13b9542652c</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>2</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>f4e0d336-bd6d-4d90-b119-3a7232169dcd</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>3</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>08ba5496-f61d-40e2-8c94-c13b9542652c</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>4</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>fc46d068-6931-334c-8a4a-8f4fe482d48a</link>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>Transform</type>
+			<version>1</version>
+			<component>
+				<objectIndex>0</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>1</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>2</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							-0.18 0 0
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							-0 3.14159 0
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>3</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>4</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							0.18 0 0
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							-0 3.14159 0
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>Particle</type>
+			<version>1</version>
+			<component>
+				<objectIndex>2</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>effect</name>
+						<isAsset>true</isAsset>
+						<value>particles/Tank/customization/R253_Object_277_S_3Dst_01/r253_boost_end.eff</value>
+					</property>
+					<property>
+						<name>oneTimeEffect</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>autoStart</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Override opacity</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Opacity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Rate</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Gravity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Wind weight</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Tangent Direction</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>FPS</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Start Speed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Particle Size</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>LifeTime</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Size Length</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Tangent Speed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Sprite Start Angle</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Sprite Start Angle Speed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Tint Color</name>
+						<value>1 1 1 1</value>
+					</property>
+					<property>
+						<name>Emitter size</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Epicenter offset</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Model Start Angle Min</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Model Start Angle Max</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Model Start Angle Speed Min</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Model Start Angle Speed Max</name>
+						<value>0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>4</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>effect</name>
+						<isAsset>true</isAsset>
+						<value>particles/Tank/customization/R253_Object_277_S_3Dst_01/r253_boost_end.eff</value>
+					</property>
+					<property>
+						<name>oneTimeEffect</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>autoStart</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Override opacity</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Opacity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Rate</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Gravity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Wind weight</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Tangent Direction</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>FPS</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Start Speed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Particle Size</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>LifeTime</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Size Length</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Tangent Speed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Sprite Start Angle</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Sprite Start Angle Speed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Tint Color</name>
+						<value>1 1 1 1</value>
+					</property>
+					<property>
+						<name>Emitter size</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Epicenter offset</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Model Start Angle Min</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Model Start Angle Max</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Model Start Angle Speed Min</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Model Start Angle Speed Max</name>
+						<value>0 0 0</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>ComponentsVisibilityController</type>
+			<version>1</version>
+			<component>
+				<objectIndex>2</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Visible in ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SNIPER MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in ARTY MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in POSTMORTEM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in RESPAWN_DEATH MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DEATH_FREE_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DUAL_GUN MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>4</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Visible in ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SNIPER MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in ARTY MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in POSTMORTEM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in RESPAWN_DEATH MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DEATH_FREE_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DUAL_GUN MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>DynamicModel</type>
+			<version>1</version>
+			<component>
+				<objectIndex>0</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Model name</name>
+						<isAsset>true</isAsset>
+						<value/>
+					</property>
+					<property>
+						<name>Cast Shadows</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Parts</name>
+						<collection/>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+	</components>
+</root>

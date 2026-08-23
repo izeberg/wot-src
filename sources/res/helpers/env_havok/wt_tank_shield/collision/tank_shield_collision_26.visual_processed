@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s_nd0_0Shape.vertices</vertices>
+			<primitive>s_nd0_0Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/lightonly.fx</fx>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<materialKind>0</materialKind>
+				</material>
+				<groupOrigin>0.000000 0.977796 0.000000</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-6.185715 -2.395673 -6.185715</min>
+		<max>6.185715 4.351265 6.185715</max>
+	</boundingBox>
+	<geometrySize>45030</geometrySize>
+	<minUVDensity>0.000734</minUVDensity>
+</root>

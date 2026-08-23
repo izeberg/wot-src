@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>
+		30.066667
+		<!--BW_String-->
+	</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+		<track>
+			<name>animation</name>
+			<type>animation</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>
+					30.066667
+					<!--BW_String-->
+				</duration>
+				<resourceID>content/Hangars/CharacterAnimations/hd_char_h_MTV1_0044_Man/Animation/PRK_Stand_Talk_to_Bench_02.fbx</resourceID>
+				<clipName/>
+				<speed>1.000000</speed>
+				<layer>0</layer>
+				<blendIn>constant</blendIn>
+				<blendOut>constant</blendOut>
+				<blendInTime>0.000000</blendInTime>
+				<blendOutTime>0.000000</blendOutTime>
+				<clipStartTime>0.000000</clipStartTime>
+				<clipEndTime>
+					30.066667
+					<!--BW_String-->
+				</clipEndTime>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

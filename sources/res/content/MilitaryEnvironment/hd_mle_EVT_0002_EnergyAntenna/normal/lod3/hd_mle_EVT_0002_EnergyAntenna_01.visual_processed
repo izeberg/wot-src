@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>Root_jnt</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>Ball_jnt</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.004294 41.443863 0.004166</row3>
+				</transform>
+				<node>
+					<identifier>Rope01_01_jnt</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>6.398418 -8.898372 -3.305163</row3>
+					</transform>
+					<node>
+						<identifier>Rope01_01_jnt_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>-6.402712 -32.545490 3.300997</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Rope01_02_jnt</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>4.428157 -8.898374 5.676047</row3>
+					</transform>
+					<node>
+						<identifier>Rope01_02_jnt_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>-4.432450 -32.545486 -5.680213</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Rope01_03_jnt</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>-3.712344 -8.898376 6.137939</row3>
+					</transform>
+					<node>
+						<identifier>Rope01_03_jnt_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>3.708050 -32.545486 -6.142106</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Rope01_04_jnt</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>-7.066435 -8.898372 -1.462621</row3>
+					</transform>
+					<node>
+						<identifier>Rope01_04_jnt_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>7.062141 -32.545490 1.458455</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Rope01_05_jnt</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>-1.064862 -8.898369 -7.099800</row3>
+					</transform>
+					<node>
+						<identifier>Rope01_05_jnt_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>1.060568 -32.545494 7.095634</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Rope01_06_jnt</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.151578 -13.292155 -0.331346</row3>
+					</transform>
+					<node>
+						<identifier>Rope01_06_jnt_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>-0.155871 -28.151707 0.327180</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Rope01_07_jnt</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.355042 -13.264409 0.042976</row3>
+					</transform>
+					<node>
+						<identifier>Rope01_07_jnt_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>-0.359336 -28.179453 -0.047142</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Rope01_08_jnt</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.061918 -13.260110 0.352146</row3>
+					</transform>
+					<node>
+						<identifier>Rope01_08_jnt_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>-0.066212 -28.183752 -0.356312</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Rope01_09_jnt</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>-0.322705 -13.256476 0.168915</row3>
+					</transform>
+					<node>
+						<identifier>Rope01_09_jnt_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>0.318412 -28.187386 -0.173081</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Rope01_10_jnt</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>-0.267297 -13.292158 -0.253509</row3>
+					</transform>
+					<node>
+						<identifier>Rope01_10_jnt_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>0.263003 -28.151703 0.249343</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Ball_jnt_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-0.004294 -41.443863 -0.004166</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>Stand_jnt</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 13.513609 0.000001</row3>
+				</transform>
+				<node>
+					<identifier>Rope02_01_jnt</identifier>
+					<transform>
+						<row0>0.999851 0.011871 -0.012523</row0>
+						<row1>-0.011928 0.999919 -0.004492</row1>
+						<row2>0.012469 0.004641 0.999911</row2>
+						<row3>1.896960 0.181799 -0.968297</row3>
+					</transform>
+					<node>
+						<identifier>Rope02_01_jnt_BlendBone</identifier>
+						<transform>
+							<row0>0.999851 -0.011928 0.012469</row0>
+							<row1>0.011871 0.999919 0.004641</row1>
+							<row2>0.012523 0.004492 -0.999912</row2>
+							<row3>-2.071386 -13.676021 0.880994</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Rope02_02_jnt</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>1.506186 0.078409 1.516026</row3>
+					</transform>
+					<node>
+						<identifier>Rope02_02_jnt_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>-1.506186 -13.592019 -1.516028</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Rope02_03_jnt</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>-0.985301 0.181797 1.901351</row3>
+					</transform>
+					<node>
+						<identifier>Rope02_03_jnt_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>0.985301 -13.695406 -1.901353</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Rope02_04_jnt</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>-2.110546 0.181798 -0.335239</row3>
+					</transform>
+					<node>
+						<identifier>Rope02_04_jnt_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>2.110546 -13.695408 0.335237</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Rope02_05_jnt</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>-0.336882 0.182007 -2.102583</row3>
+					</transform>
+					<node>
+						<identifier>Rope02_05_jnt_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>0.336882 -13.695616 2.102582</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Rope02_06_jnt</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.763510 0.693265 -1.553428</row3>
+					</transform>
+					<node>
+						<identifier>Rope02_06_jnt_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>-0.763510 -14.206875 1.553427</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Rope02_07_jnt</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>1.713180 0.694126 0.246094</row3>
+					</transform>
+					<node>
+						<identifier>Rope02_07_jnt_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>-1.713180 -14.207735 -0.246095</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Rope02_08_jnt</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.295159 0.699097 1.704491</row3>
+					</transform>
+					<node>
+						<identifier>Rope02_08_jnt_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>-0.295159 -14.212706 -1.704492</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Rope02_09_jnt</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>-1.531377 0.689404 0.808331</row3>
+					</transform>
+					<node>
+						<identifier>Rope02_09_jnt_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>1.531377 -14.203013 -0.808333</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Rope02_10_jnt</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>-1.242235 0.687606 -1.206855</row3>
+					</transform>
+					<node>
+						<identifier>Rope02_10_jnt_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>1.242235 -14.201216 1.206854</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Stand_jnt_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.000000 -13.513609 -0.000001</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>Ball_jnt_BlendBone</node>
+		<geometry>
+			<vertices>s3_2Shape.vertices</vertices>
+			<stream>s3_2Shape.colour</stream>
+			<primitive>s3_2Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd2_skinned</identifier>
+					<fx>shaders/std_effects/glow_skinned.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/MilitaryEnvironment/hd_mle_EVT_0002_EnergyAntenna/hd_mle_EVT_0002_EnergyAntenna_glow_AM.dds</Texture>
+					</property>
+					<property>
+						selfIllumination
+						<Float>66.699997</Float>
+					</property>
+				</material>
+				<groupOrigin>0.033324 44.028511 -0.023904</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>Ball_jnt_BlendBone</node>
+		<node>Rope01_04_jnt_BlendBone</node>
+		<node>Rope02_04_jnt_BlendBone</node>
+		<node>Stand_jnt_BlendBone</node>
+		<node>Rope01_02_jnt_BlendBone</node>
+		<node>Rope02_02_jnt_BlendBone</node>
+		<node>Rope01_05_jnt_BlendBone</node>
+		<node>Rope02_05_jnt_BlendBone</node>
+		<node>Rope01_01_jnt_BlendBone</node>
+		<node>Rope02_01_jnt_BlendBone</node>
+		<node>Rope02_03_jnt_BlendBone</node>
+		<node>Rope01_03_jnt_BlendBone</node>
+		<node>Rope02_09_jnt_BlendBone</node>
+		<node>Rope02_10_jnt_BlendBone</node>
+		<node>Rope02_06_jnt_BlendBone</node>
+		<node>Rope02_07_jnt_BlendBone</node>
+		<node>Rope02_08_jnt_BlendBone</node>
+		<geometry>
+			<vertices>s3_1Shape.vertices</vertices>
+			<stream>s3_1Shape.colour</stream>
+			<primitive>s3_1Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd1_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/MilitaryEnvironment/hd_mle_EVT_0002_EnergyAntenna/hd_mle_EVT_0002_EnergyAntenna_01_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/MilitaryEnvironment/hd_mle_EVT_0002_EnergyAntenna/hd_mle_EVT_0002_EnergyAntenna_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/MilitaryEnvironment/hd_mle_EVT_0002_EnergyAntenna/hd_mle_EVT_0002_EnergyAntenna_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.057443 34.233315 -0.108397</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>Ball_jnt_BlendBone</node>
+		<node>Rope01_05_jnt_BlendBone</node>
+		<node>Rope01_01_jnt_BlendBone</node>
+		<node>Rope01_02_jnt_BlendBone</node>
+		<node>Rope01_03_jnt_BlendBone</node>
+		<geometry>
+			<vertices>s3_0Shape.vertices</vertices>
+			<stream>s3_0Shape.colour</stream>
+			<primitive>s3_0Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/MilitaryEnvironment/hd_mle_EVT_0002_EnergyAntenna/hd_mle_EVT_0002_EnergyAntenna_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/MilitaryEnvironment/hd_mle_EVT_0002_EnergyAntenna/hd_mle_EVT_0002_EnergyAntenna_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/MilitaryEnvironment/hd_mle_EVT_0002_EnergyAntenna/hd_mle_EVT_0002_EnergyAntenna_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.000000 41.457359 -0.000010</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-10.692385 13.640989 -10.692371</min>
+		<max>10.692385 54.825642 10.692391</max>
+	</boundingBox>
+	<geometrySize>221650</geometrySize>
+	<minUVDensity>0.000038</minUVDensity>
+</root>

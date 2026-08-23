@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<Properties>
+		<cloneVehicleInfos>
+			<Type>
+				ARRAY
+				<of>
+					FIXED_DICT
+					<Properties>
+						<vehicleId>
+							<Type>OBJECT_ID</Type>
+						</vehicleId>
+						<cloneSpawnTime>
+							<Type>FLOAT</Type>
+						</cloneSpawnTime>
+						<cloneLifeTime>
+							<Type>FLOAT</Type>
+						</cloneLifeTime>
+					</Properties>
+				</of>
+			</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</cloneVehicleInfos>
+	</Properties>
+	<ofEntity>
+		<TeamInfo/>
+	</ofEntity>
+	<DefaultKeyName>wtTeamInfoComponent</DefaultKeyName>
+</root>

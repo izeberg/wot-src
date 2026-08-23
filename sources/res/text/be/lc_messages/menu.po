@@ -715,6 +715,12 @@ msgstr "Адмысловы бой"
 msgid "bonusType/50"
 msgstr "Палігон"
 
+msgid "bonusType/52"
+msgstr "Ваффентрагер: резонанс"
+
+msgid "bonusType/53"
+msgstr "Ваффентрагер: резонанс"
+
 msgid "bonusType/6"
 msgstr "Баявое навучанне"
 
@@ -1094,31 +1100,31 @@ msgid "contextMenu/copyToClipBoard"
 msgstr "Скапіраваць імя"
 
 msgid "contextMenu/createBattleRoyaleSquad"
-msgstr "Создать взвод охотников"
+msgstr "Создать группу охотников"
 
 msgid "contextMenu/createComp7Squad"
-msgstr "Создать взвод для Натиска"
+msgstr "Создать группу для Натиска"
 
 msgid "contextMenu/createContactNote"
 msgstr "Стварыць нататку"
 
 msgid "contextMenu/createEpicSquad"
-msgstr "Создать взвод для Линии фронта"
+msgstr "Создать группу для Линии фронта"
 
 msgid "contextMenu/createEventSquad"
-msgstr "Создать взвод события"
+msgstr "Создать группу события"
 
 msgid "contextMenu/createMapboxSquad"
-msgstr "Разведка боем: создать взвод"
+msgstr "Разведка боем: создать группу"
 
 msgid "contextMenu/createPrivateChannel"
 msgstr "Адправіць паведамленне"
 
 msgid "contextMenu/createRankedSquad"
-msgstr "Создать взвод для Рангового боя"
+msgstr "Создать группу для Рангового боя"
 
 msgid "contextMenu/createSquad"
-msgstr "Создать взвод"
+msgstr "Создать группу"
 
 msgid "contextMenu/crewWidgetChangeCrewMember"
 msgstr "Змяніць члена экіпажа"
@@ -1309,6 +1315,9 @@ msgstr "Зняць з машыны"
 
 msgid "contextMenu/tankmanUnloadAll"
 msgstr "Зняць экіпаж"
+
+msgid "contextMenu/telecomAbout"
+msgstr "О тарифе «Игровой»"
 
 msgid "contextMenu/telecomRent"
 msgstr "Паказаць пракатную тэхніку"
@@ -2975,6 +2984,9 @@ msgstr "Лёгкі танк"
 msgid "header/wotPlusExclusiveVehicleType/mediumTank"
 msgstr "Сярэдні танк"
 
+msgid "headerButton/museum"
+msgstr "Музей"
+
 msgid "headerButtons/account/accountRefill"
 msgstr "Купіць золата"
 
@@ -3277,7 +3289,7 @@ msgid "headerButtons/battle/types/strongholds"
 msgstr "Умацаваны раён: бітвы"
 
 msgid "headerButtons/battle/types/training"
-msgstr "Тренировочный бой"
+msgstr "Товарищеский матч"
 
 msgid "headerButtons/battle/types/training/descr"
 msgstr "Вучэбны бой з ручным падборам хаўруснікаў і супраціўнікаў."
@@ -3985,7 +3997,7 @@ msgid "loading/battleTypes/19"
 msgstr "Выпадковы бой"
 
 msgid "loading/battleTypes/2"
-msgstr "Тренировочный бой"
+msgstr "Товарищеский матч"
 
 msgid "loading/battleTypes/20"
 msgstr "Супольныя вучэнні"
@@ -4436,9 +4448,7 @@ msgid "login/status/UNKNOWN_ERROR"
 msgstr "Невядомая памылка."
 
 msgid "login/status/accessForbiddenToPeriphery"
-msgstr ""
-"Выбраны сервер недаступны для вашага акаўнту. Даступныя серверы: "
-"%(peripheries)s."
+msgstr "Выбранный сервер недоступен для вашей учётной записи."
 
 msgid "login/status/accountNotReady"
 msgstr "Акаўнт не гатовы. Паспрабуйце ўвайсці ў гульню пазней."
@@ -7116,21 +7126,21 @@ msgid "training/create/privacy"
 msgstr "па запрашэннях"
 
 msgid "training/create/title"
-msgstr "Стварэнне вучэбнага палігона"
+msgstr "Создание Товарищеского матча"
 
 msgid "training/createButton"
-msgstr "Создать комнату"
+msgstr "Создать матч"
 
 msgid "training/description"
 msgstr ""
-"Опыт и серебро в Тренировочных боях не начисляются, однако всё обслуживание "
-"техники полностью бесплатное."
+"Опыт и серебро в Товарищеских матчах не начисляются, однако всё обслуживание"
+" техники полностью бесплатное."
 
 msgid "training/info/deleteButton"
-msgstr "Удалить комнату"
+msgstr "Отменить матч"
 
 msgid "training/info/exitButton"
-msgstr "Выйти из комнаты"
+msgstr "Покинуть матч"
 
 msgid "training/info/inviteButton"
 msgstr "Запрасіць..."
@@ -7160,7 +7170,7 @@ msgid "training/info/settings/title"
 msgstr "Налады вучэбнага палігона"
 
 msgid "training/info/settingsButton"
-msgstr "Настройки комнаты"
+msgstr "Настройка матча"
 
 msgid "training/info/startButton"
 msgstr "Пачаць бой"
@@ -7202,7 +7212,7 @@ msgid "training/info/timeout/value"
 msgstr "%d хвілін"
 
 msgid "training/info/title"
-msgstr "Тренировочная комната (%s)"
+msgstr "Товарищеский матч (%s)"
 
 msgid "training/info/useCommonVoiceChat"
 msgstr "агульная"
@@ -7223,7 +7233,7 @@ msgid "training/leaveButton"
 msgstr "Выйсці з рэжыму"
 
 msgid "training/listTitle"
-msgstr "Спіс вучэбных палігонаў"
+msgstr "Список Товарищеских матчей"
 
 msgid "training/ownerTitle"
 msgstr "Камандзір"
@@ -7235,10 +7245,10 @@ msgid "training/playersTitle"
 msgstr "Гульцы"
 
 msgid "training/roomsLabel"
-msgstr "Всего тренировочных комнат: %(roomsTotal)s"
+msgstr "Всего матчей: %(roomsTotal)s"
 
 msgid "training/title"
-msgstr "Тренировочные бои"
+msgstr "Товарищеские матчи"
 
 msgid "unlocks/exchangeButton"
 msgstr "Абмяняць"

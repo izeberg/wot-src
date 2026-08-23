@@ -108,6 +108,26 @@ package net.wg.data.constants.generated
       public static const DEALT_DMG_BY_THUNDER_STRIKE:String = "dealtDamageByThunderStrike";
       
       public static const RECEIVED_BY_THUNDER_STRIKE:String = "receivedByThunderStrike";
+      
+      public static const RECEIVED_BY_CIRCUIT_OVERLOAD:String = "wtReceivedCircuitOverload";
+      
+      public static const VEHICLE_HEALTH_ADDED:String = "healthAdded";
+      
+      public static const RECEIVED_BY_ENERGY_SHIELD:String = "wtReceivedByEnergyShield";
+      
+      public static const DEALT_BY_ENERGY_SHIELD:String = "wtDealtByEnergyShield";
+      
+      public static const DEALT_BY_MISSILE:String = "wtDealtByMissile";
+      
+      public static const RECEIVED_BY_MISSILE:String = "wtReceivedByMissile";
+      
+      public static const RECEIVED_BY_ANOMALY:String = "wtReceivedByAnomaly";
+      
+      public static const DEALT_BY_ANOMALY:String = "wtDealtByAnomaly";
+      
+      public static const RECEIVED_BY_STUN_AREA_MOD_A:String = "wtReceivedByStunAreaModA";
+      
+      public static const DEALT_BY_STUN_AREA_MOD_A:String = "wtDealtByStunAreaModA";
        
       
       public function BATTLE_EFFICIENCY_TYPES()

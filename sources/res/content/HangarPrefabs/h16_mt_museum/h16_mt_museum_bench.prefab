@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<version>3</version>
+	<GameObjects>
+		<GameObject>
+			<name>h16_mt_museum_Bench</name>
+			<UUID>4201c041-5b47-4991-a85c-f1e0c54008e5</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>h01_VD26_Bench</name>
+			<UUID>8ea6811b-1a03-45b5-8724-4f1eea7fc7af</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>h01_VD26_Bench</name>
+			<UUID>55247409-302b-499e-a1ec-8c3973f604e0</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>h01_VD26_Bench</name>
+			<UUID>6d6f03d3-2754-47ec-a791-688cb9fb0f4e</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>h01_VD26_Bench</name>
+			<UUID>37ddf934-2725-489d-a06a-20a957325e02</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>h01_VD26_Bench</name>
+			<UUID>98a8c16f-099a-4ed1-9a18-9b6db7210f17</UUID>
+			<flags>0</flags>
+		</GameObject>
+	</GameObjects>
+	<components>
+		<ComponentPool>
+			<type>Hierarchy</type>
+			<version>2</version>
+			<component>
+				<objectIndex>1</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>4201c041-5b47-4991-a85c-f1e0c54008e5</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>2</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>4201c041-5b47-4991-a85c-f1e0c54008e5</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>3</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>4201c041-5b47-4991-a85c-f1e0c54008e5</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>4</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>4201c041-5b47-4991-a85c-f1e0c54008e5</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>5</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>4201c041-5b47-4991-a85c-f1e0c54008e5</link>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>Transform</type>
+			<version>1</version>
+			<component>
+				<objectIndex>0</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>1</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							8.54652 -5.36442e-07 3.23125
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							1.19325e-07 -2.15253 9.97798e-08
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>2</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							9.35476 -1.19209e-07 -6.35054
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>
+							0.999999 1 0.999999
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							4.01071e-07 -1.13814 1.54003e-07
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>3</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							-9.68518 4.69387e-07 2.76009
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							2.13861e-07 2.06253 -4.26835e-07
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>4</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							-0.428152 1.15484e-06 8.49565
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							1.59021e-07 3.09234 8.13857e-08
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>5</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							-8.369 -8.71718e-07 -7.63317
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							-8.12683e-08 1.04559 -4.47554e-08
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>ModelDitheringComponent</type>
+			<version>1</version>
+			<component>
+				<objectIndex>1</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Force full dithering distance</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Start dithering distance</name>
+						<value>2</value>
+					</property>
+					<property>
+						<name>Dithering animation speed</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>2</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Force full dithering distance</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Start dithering distance</name>
+						<value>2</value>
+					</property>
+					<property>
+						<name>Dithering animation speed</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>3</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Force full dithering distance</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Start dithering distance</name>
+						<value>2</value>
+					</property>
+					<property>
+						<name>Dithering animation speed</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>4</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Force full dithering distance</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Start dithering distance</name>
+						<value>3</value>
+					</property>
+					<property>
+						<name>Dithering animation speed</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>5</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Force full dithering distance</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Start dithering distance</name>
+						<value>2</value>
+					</property>
+					<property>
+						<name>Dithering animation speed</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>DynamicModel</type>
+			<version>1</version>
+			<component>
+				<objectIndex>1</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Model name</name>
+						<isAsset>true</isAsset>
+						<value>content/Hangars/h16_mt_museum/environment/normal/lod0/h01_VD26_Bench.model</value>
+					</property>
+					<property>
+						<name>Cast Shadows</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Parts</name>
+						<collection/>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>2</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Model name</name>
+						<isAsset>true</isAsset>
+						<value>content/Hangars/h16_mt_museum/environment/normal/lod0/h01_VD26_Bench.model</value>
+					</property>
+					<property>
+						<name>Cast Shadows</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Parts</name>
+						<collection/>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>3</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Model name</name>
+						<isAsset>true</isAsset>
+						<value>content/Hangars/h16_mt_museum/environment/normal/lod0/h01_VD26_Bench.model</value>
+					</property>
+					<property>
+						<name>Cast Shadows</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Parts</name>
+						<collection/>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>4</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Model name</name>
+						<isAsset>true</isAsset>
+						<value>content/Hangars/h16_mt_museum/environment/normal/lod0/h01_VD26_Bench.model</value>
+					</property>
+					<property>
+						<name>Cast Shadows</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Parts</name>
+						<collection/>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>5</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Model name</name>
+						<isAsset>true</isAsset>
+						<value>content/Hangars/h16_mt_museum/environment/normal/lod0/h01_VD26_Bench.model</value>
+					</property>
+					<property>
+						<name>Cast Shadows</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Parts</name>
+						<collection/>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+	</components>
+</root>

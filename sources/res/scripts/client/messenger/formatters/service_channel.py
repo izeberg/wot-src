@@ -13,7 +13,7 @@ from blueprints.BlueprintTypes import BlueprintTypes
 from blueprints.FragmentTypes import getFragmentType
 from cache import cached_property, class_cached_property
 from chat_shared import MapRemovedFromBLReason, SYS_MESSAGE_TYPE, decompressSysMessage
-from constants import ARENA_BONUS_TYPE, ARENA_GUI_TYPE, AUTO_MAINTENANCE_RESULT, AUTO_MAINTENANCE_TYPE, FAIRPLAY_VIOLATIONS, FINISH_REASON, INVOICE_ASSET, KICK_REASON, KICK_REASON_NAMES, NC_MESSAGE_PRIORITY, NC_MESSAGE_TYPE, OFFER_TOKEN_PREFIX, PREBATTLE_TYPE, PREMIUM_ENTITLEMENTS, PREMIUM_TYPE, RESTRICTION_TYPE, SYS_MESSAGE_CLAN_EVENT, SYS_MESSAGE_CLAN_EVENT_NAMES, SYS_MESSAGE_FORT_EVENT_NAMES, SwitchState, SECONDS_IN_DAY, BattleRoyaleResult
+from constants import ARENA_BONUS_TYPE, ARENA_GUI_TYPE, AUTO_MAINTENANCE_RESULT, AUTO_MAINTENANCE_TYPE, FAIRPLAY_VIOLATIONS, FINISH_REASON, INVOICE_ASSET, KICK_REASON, KICK_REASON_NAMES, NC_MESSAGE_PRIORITY, NC_MESSAGE_TYPE, OFFER_TOKEN_PREFIX, PREBATTLE_TYPE, PREMIUM_ENTITLEMENTS, PREMIUM_TYPE, RESTRICTION_TYPE, SYS_MESSAGE_CLAN_EVENT, SYS_MESSAGE_CLAN_EVENT_NAMES, SYS_MESSAGE_FORT_EVENT_NAMES, SwitchState, SECONDS_IN_DAY, BattleRoyaleResult, LOOTBOX_TOKEN_PREFIX
 from gui.impl.lobby.stronghold.stronghold_helpers import CLAN_SEASON_PROGRESS_PREFIX
 from gui.server_events.formatters import formatGold
 from gui.shared.gui_items.customization.c11n_helpers import getProgressionStyleCamouflage
@@ -30,6 +30,7 @@ from gui.Scaleform.genConsts.CURRENCIES_CONSTANTS import CURRENCIES_CONSTANTS
 from gui.Scaleform.genConsts.RANKEDBATTLES_ALIASES import RANKEDBATTLES_ALIASES
 from gui.SystemMessages import SM_TYPE
 from gui.clans.formatters import getClanFullName
+from gui.clans.settings import CLANS_SELECTABLE_REWARD_PREFIX
 from gui.collection.collections_constants import COLLECTION_ITEM_PREFIX_NAME
 from gui.dog_tag_composer import dogTagComposer
 from gui.game_control.blueprints_convert_sale_controller import BCSActionState
@@ -45,7 +46,7 @@ from gui.ranked_battles.ranked_models import PostBattleRankInfo, RankChangeState
 from gui.resource_well.resource_well_constants import ServerResourceType
 from gui.achievements.achievements_constants import Achievements20SystemMessages
 from gui.server_events.awards_formatters import BATTLE_BONUS_X5_TOKEN, CompletionTokensBonusFormatter, CREW_BONUS_X3_TOKEN
-from gui.server_events.bonuses import DEFAULT_CREW_LVL, EntitlementBonus, MetaBonus, VehiclesBonus
+from gui.server_events.bonuses import DEFAULT_CREW_LVL, EntitlementBonus, MetaBonus, VehiclesBonus, getMergedBonusesFromDicts
 from gui.server_events.finders import PERSONAL_MISSION_TOKEN
 from gui.server_events.recruit_helper import getRecruitInfo
 from gui.shared import formatters as shared_fmts
@@ -60,6 +61,7 @@ from gui.shared.gui_items.dossier.achievements.abstract.class_progress import Cl
 from gui.shared.gui_items.dossier.factories import getAchievementFactory
 from gui.shared.gui_items.fitting_item import RentalInfoProvider
 from gui.shared.gui_items.loot_box import REFERRAL_PROGRAM_CATEGORY
+from gui.shared.gui_items.loot_box import EventLootBoxes
 from gui.shared.money import Currency, MONEY_UNDEFINED, Money, ZERO_MONEY
 from gui.shared.notifications import NotificationGuiSettings, NotificationPriorityLevel
 from gui.shared.system_factory import collectTokenQuestsSubFormatters, collectConvertersSubFormatter, collectServiceChannelSubformatter
@@ -85,7 +87,7 @@ from messenger.proto.bw.wrappers import ServiceChannelMessage
 from nations import NAMES
 from shared_utils import BoundMethodWeakref, first
 from skeletons.gui.battle_matters import IBattleMattersController
-from skeletons.gui.game_control import IBattlePassController, IBattleRoyaleController, ICollectionsSystemController, IEpicBattleMetaGameController, IFunRandomController, IMapboxController, IRankedBattlesController, IResourceWellController, IWinbackController, IWotPlusController, IBRProgressionOnTokensController, IEarlyAccessController, IGuiLootBoxesController, ILimitedUIController, ITankAcademyController
+from skeletons.gui.game_control import IBattlePassController, IBattleRoyaleController, ICollectionsSystemController, IEpicBattleMetaGameController, IFunRandomController, IMapboxController, IRankedBattlesController, IResourceWellController, IWinbackController, IWotPlusController, IBRProgressionOnTokensController, IEarlyAccessController, IGuiLootBoxesController, ILimitedUIController, ITankAcademyController, IWhiteTigerController
 from skeletons.gui.goodies import IGoodiesCache
 from skeletons.gui.lobby_context import ILobbyContext
 from skeletons.gui.offers import IOffersDataProvider
@@ -144,7 +146,9 @@ def _extendCustomizationData(newData, extendable, htmlTplPostfix):
             else:
                 operation = None
             if operation is not None:
-                guiItemType, itemUserName = getCustomizationItemData(customizationItem[b'id'], custType)
+                guiItemType, itemUserName, tags = getCustomizationItemData(customizationItem[b'id'], custType)
+                if b'hiddenInUI' in tags:
+                    continue
                 custValue = abs(custValue)
                 if custValue > 1:
                     extendable.append(backport.text(R.strings.system_messages.customization.dyn(operation).dyn((b'{}Value').format(guiItemType))(), itemUserName, custValue))
@@ -663,7 +667,7 @@ class BattleResultsFormatter(WaitItemsSyncFormatter):
                    Currency.CREDITS: b'0'}
                 templateName, formatData = self._prepareFormatData(message)
                 ctx.update(formatData)
-                bgIconSource = None
+                bgIconSource = self._getBackgroundIconSource(battleResults)
                 arenaUniqueID = battleResults.get(b'arenaUniqueID', 0)
                 formatted = g_settings.msgTemplates.format(templateName, ctx=ctx, data={b'timestamp': arenaCreateTime, 
                    b'savedData': arenaUniqueID}, bgIconSource=bgIconSource)
@@ -683,6 +687,9 @@ class BattleResultsFormatter(WaitItemsSyncFormatter):
                 callback([MessageData(None, None)])
         else:
             callback([MessageData(None, None)])
+        return
+
+    def _getBackgroundIconSource(self, battleResults):
         return
 
     def _prepareFormatData(self, message):
@@ -1361,6 +1368,7 @@ class InvoiceReceivedFormatter(WaitItemsSyncFormatter):
     __DESTROY_PAIR_MODIFICATIONS_MSG_TEMPLATE = b'DestroyAllPairsModifications'
     __goodiesCache = dependency.descriptor(IGoodiesCache)
     __eventsCache = dependency.descriptor(IEventsCache)
+    __gameEventCtrl = dependency.descriptor(IWhiteTigerController)
 
     @cached_property
     def dataSubformatters(self):
@@ -2067,17 +2075,24 @@ class InvoiceReceivedFormatter(WaitItemsSyncFormatter):
                 offerTokenResult = _processOfferToken(tokenName, count)
                 if offerTokenResult:
                     tokenStrings.append(offerTokenResult)
-            lbTokenResult = _processLootBoxKeyToken(tokenName, count)
-            if lbTokenResult:
-                tokenStrings.append(lbTokenResult)
-            if tokenName == constants.PERSONAL_MISSION_FREE_TOKEN_NAME:
-                awardListcount += count
-            else:
-                quests = self.__eventsCache.getQuestsByTokenRequirement(tokenName)
-                for quest in quests:
-                    text = quest.getNotificationText().format(count=count)
-                    if text:
-                        tokenStrings.append(g_settings.htmlTemplates.format(b'questTokenInvoiceReceived', {b'text': text}))
+                lbTokenResult = _processLootBoxKeyToken(tokenName, count)
+                if lbTokenResult:
+                    tokenStrings.append(lbTokenResult)
+                if tokenName == constants.PERSONAL_MISSION_FREE_TOKEN_NAME:
+                    awardListcount += count
+                else:
+                    quests = self.__eventsCache.getQuestsByTokenRequirement(tokenName)
+                    for quest in quests:
+                        text = quest.getNotificationText().format(count=count)
+                        if text:
+                            tokenStrings.append(g_settings.htmlTemplates.format(b'questTokenInvoiceReceived', {b'text': text}))
+
+            if tokenName.startswith(LOOTBOX_TOKEN_PREFIX):
+                lootBox = self._itemsCache.items.tokens.getLootBoxByTokenID(tokenName)
+                if lootBox is not None and lootBox.getType() in EventLootBoxes.ALL() and tokenData.get(b'count', 0) > 0:
+                    tokenStrings.append(g_settings.htmlTemplates.format(b'lootboxesReceived', {b'amount': tokenData[b'count']}))
+            if tokenName in self.__gameEventCtrl.getBossTokenIDList():
+                tokenStrings.append(g_settings.htmlTemplates.format(b'ticketsReceived', {b'amount': tokenData[b'count']}))
 
         if awardListcount != 0:
             template = b'awardListAccruedInvoiceReceived' if awardListcount > 0 else b'awardListDebitedInvoiceReceived'
@@ -3598,10 +3613,28 @@ class ClanSeasonProgressRewardsFormatter(QuestAchievesFormatter):
 
     @classmethod
     def formatQuestAchieves(cls, data, asBattleFormatter, processCustomizations=True, processTokens=True):
-        result = super(ClanSeasonProgressRewardsFormatter, cls).formatQuestAchieves(data, asBattleFormatter, processCustomizations, processTokens=False)
+        result = super(ClanSeasonProgressRewardsFormatter, cls).formatQuestAchieves(data, asBattleFormatter, processCustomizations, processTokens)
         if result:
             return cls._BULLET + result
         return result
+
+    @classmethod
+    def _processTokens(cls, awardsDict):
+        processedTokens = []
+        processedTokenIDs = []
+        tokens = awardsDict.get(b'tokens', {})
+        if tokens:
+            for tokenID, tokenData in tokens.iteritems():
+                count = backport.getIntegralFormat(tokenData.get(b'count', 1))
+                if tokenID.startswith(CLANS_SELECTABLE_REWARD_PREFIX):
+                    bonusType = tokenID.split(b':')[2]
+                    processedTokens.append(backport.text(R.strings.system_messages.clans.notifications.dyn(bonusType)(), selectableRewardCount=text_styles.stats(count)))
+                    processedTokenIDs.append(tokenID)
+
+            for tokenID in processedTokenIDs:
+                awardsDict[b'tokens'].pop(tokenID, None)
+
+        return EOL.join(processedTokens)
 
 
 class ClanSeasonQuestRewardsFormatter(QuestAchievesFormatter):
@@ -4178,6 +4211,55 @@ class CustomizationChangedFormatter(WaitItemsSyncFormatter):
         else:
             callback([MessageData(None, None)])
         return
+
+
+class LootBoxAutoOpenFormatter(WaitItemsSyncFormatter):
+    __MESSAGE_TEMPLATE = b'LootBoxRewardsSysMessage'
+
+    def __init__(self, subFormatters=()):
+        super(LootBoxAutoOpenFormatter, self).__init__()
+        self._achievesFormatter = LootBoxAchievesFormatter()
+        self.__subFormatters = subFormatters
+
+    @adisp_async
+    @adisp_process
+    def format(self, message, callback):
+        isSynced = yield self._waitForSyncItems()
+        messageDataList = []
+        if isSynced and message.data:
+            openedBoxesIDs = set(message.data.keys())
+            for subFormatter in self.__subFormatters:
+                subBoxesIDs = subFormatter.getBoxesOfThisGroup(openedBoxesIDs)
+                if subBoxesIDs:
+                    if subFormatter.isAsync():
+                        result = yield subFormatter.format(message)
+                    else:
+                        result = subFormatter.format(message)
+                    if result:
+                        messageDataList.extend(result)
+                    openedBoxesIDs.difference_update(subBoxesIDs)
+
+            if openedBoxesIDs:
+                messageData = self.__formatSimpleBoxes(message, openedBoxesIDs)
+                if messageData is not None:
+                    messageDataList.append(messageData)
+        if messageDataList:
+            callback(messageDataList)
+            return
+        else:
+            callback([MessageData(None, None)])
+            return
+
+    def __formatSimpleBoxes(self, message, openedBoxesIDs):
+        data = message.data
+        openedBoxesIDs.difference_update({b'rewards', b'boxIDs'})
+        oldRewards, _ = data.pop(b'rewards', {}), data.pop(b'boxIDs', None)
+        allRewards = getMergedBonusesFromDicts([ data[bID][b'rewards'] for bID in openedBoxesIDs ] + [oldRewards])
+        fmt = self._achievesFormatter.formatQuestAchieves(allRewards, asBattleFormatter=False, processTokens=False)
+        formattedRewards = g_settings.msgTemplates.format(self.__MESSAGE_TEMPLATE, ctx={b'text': fmt})
+        settingsRewards = self._getGuiSettings(message, self.__MESSAGE_TEMPLATE)
+        settingsRewards.showAt = BigWorld.time()
+        return MessageData(formattedRewards, settingsRewards)
 
 
 class ProgressiveRewardFormatter(WaitItemsSyncFormatter):
@@ -5077,7 +5159,7 @@ class CustomizationProgressionChangedFormatter(WaitItemsSyncFormatter):
         isSynced = yield self._waitForSyncItems()
         if isSynced and message.data and self.REQUIRED_KEYS == set(message.data.keys()):
             data = message.data
-            guiItemType, itemUserName = getCustomizationItemData(data[b'id'], data[b'custType'])
+            guiItemType, itemUserName, _ = getCustomizationItemData(data[b'id'], data[b'custType'])
             prevLevel = data[b'prevLevel']
             actualLevel = data[b'actualLevel']
             if actualLevel == 0:

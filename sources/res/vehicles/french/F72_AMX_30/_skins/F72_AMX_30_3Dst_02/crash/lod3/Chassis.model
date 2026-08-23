@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/french/F72_AMX_30/_skins/F72_AMX_30_3Dst_02/crash/lod4/Chassis</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.541067 0.001428 -3.330979</min>
+		<max>1.541067 1.181056 3.206857</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/french/F72_AMX_30/_skins/F72_AMX_30_3Dst_02/crash/lod3/Chassis</nodefullVisual>
+</root>

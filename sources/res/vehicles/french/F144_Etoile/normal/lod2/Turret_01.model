@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F144_Etoile/normal/lod2/Turret_01</nodefullVisual>
+	<parent>vehicles/french/F144_Etoile/normal/lod3/Turret_01</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.709902 -0.006016 -1.235976</min>
+		<max>1.608514 3.105946 1.263542</max>
+	</visibilityBox>
+</root>

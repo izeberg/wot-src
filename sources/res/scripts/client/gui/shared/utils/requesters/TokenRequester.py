@@ -1,6 +1,7 @@
 import logging, time, cPickle
 from functools import partial
 import BigWorld
+from shared_utils import awaitNextFrame
 from adisp import adisp_async, adisp_process
 from constants import REQUEST_COOLDOWN, TOKEN_TYPE
 from debug_utils import LOG_CURRENT_EXCEPTION
@@ -94,7 +95,7 @@ class TokenRequester(object):
         def wait(t, callback):
             BigWorld.callback(t, lambda : callback(None))
 
-        yield lambda callback: callback(True)
+        yield awaitNextFrame()
         requester = self._getRequester()
         if not requester or not callable(requester):
             if callback:

@@ -4,8 +4,8 @@
 	<parent>vehicles/russian/R213_TET_100/crash/lod2/Hull</parent>
 	<extent>64.000000</extent>
 	<visibilityBox>
-		<min>-2.038006 0.078994 -5.255614</min>
-		<max>2.037252 2.400701 5.266860</max>
+		<min>-2.038006 -1.327370 -5.255614</min>
+		<max>2.037252 0.994338 5.266860</max>
 	</visibilityBox>
 	<tank>true</tank>
 </root>

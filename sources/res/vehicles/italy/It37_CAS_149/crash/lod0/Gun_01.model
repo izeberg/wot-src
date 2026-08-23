@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-0.425000 -0.697810 -1.157091</min>
+		<max>0.425000 0.444575 5.171546</max>
+	</visibilityBox>
+	<parent>vehicles/italy/It37_CAS_149/crash/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/italy/It37_CAS_149/crash/lod0/Gun_01</nodefullVisual>
+</root>

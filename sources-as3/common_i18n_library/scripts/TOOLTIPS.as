@@ -317,6 +317,18 @@ package
       
       public static const LOBY_MESSENGER_LISTVIEW_NEWS_TOOLTIP:String = "#tooltips:loby_messenger/listView/news/tooltip";
       
+      public static const SETTINGS_RESETBATTLECONTEXTHINTS_ENABLED:String = "#tooltips:settings/resetBattleContextHints/enabled";
+      
+      public static const SETTINGS_RESETBATTLECONTEXTHINTS_DISABLED:String = "#tooltips:settings/resetBattleContextHints/disabled";
+      
+      public static const SETTINGS_BATTLECONTEXTHINTS_DISABLED:String = "#tooltips:settings/battleContextHints/disabled";
+      
+      public static const SETTTINGSDISABLEDNOTIFICATION:String = "#tooltips:setttingsDisabledNotification";
+      
+      public static const SETTTINGSDISABLEDNOTIFICATION_HEADER:String = "#tooltips:setttingsDisabledNotification/header";
+      
+      public static const SETTTINGSDISABLEDNOTIFICATION_BODY:String = "#tooltips:setttingsDisabledNotification/body";
+      
       public static const BADGEINFO_TITLE:String = "#tooltips:badgeinfo/title";
       
       public static const BADGEINFO_TEXT:String = "#tooltips:badgeinfo/text";
@@ -2372,6 +2384,8 @@ package
       public static const VEHICLE_RENTLEFTFUTURE_EPIC_BASE:String = "#tooltips:vehicle/rentLeftFuture/epic/base";
       
       public static const VEHICLE_RENTAVAILABLE:String = "#tooltips:vehicle/rentAvailable";
+      
+      public static const VEHICLE_TELECOMRENTING:String = "#tooltips:vehicle/telecomRenting";
       
       public static const VEHICLE_WOTPLUSRENTING:String = "#tooltips:vehicle/wotPlusRenting";
       
@@ -6641,6 +6655,8 @@ package
       
       public static const BATTLEPASSOFFER_FOOTER_DELUXE_GIFT:String = "#tooltips:battlePassOffer/footer/deluxe_gift";
       
+      public static const BATTLEPASSOFFER_TITLE_STYLE_GIFT:String = "#tooltips:battlePassOffer/title/style_gift";
+      
       public static const BATTLEPASSOFFER_TITLE_NEW_DEVICE_FV_GIFT:String = "#tooltips:battlePassOffer/title/new_device_fv_gift";
       
       public static const BATTLEPASSOFFER_FOOTER_NEW_DEVICE_FV_GIFT:String = "#tooltips:battlePassOffer/footer/new_device_fv_gift";
@@ -8205,9 +8221,47 @@ package
       
       public static const NOTRECRUITEDTANKMAN_TANKMEN_SUMMER26_4_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_Summer26_4/label";
       
+      public static const SETTINGS_RESETBATTLECONTEXTHINTS_ENABLED_BODY:String = "#tooltips:settings/resetBattleContextHints/enabled/body";
+      
+      public static const SETTINGS_RESETBATTLECONTEXTHINTS_DISABLED_BODY:String = "#tooltips:settings/resetBattleContextHints/disabled/body";
+      
+      public static const SETTINGS_BATTLECONTEXTHINTS_DISABLED_BODY:String = "#tooltips:settings/battleContextHints/disabled/body";
+      
       public static const AWARDITEM_GOLDENTICKET_HEADER:String = "#tooltips:awardItem/goldenticket/header";
       
       public static const AWARDITEM_GOLDENTICKET_BODY:String = "#tooltips:awardItem/goldenticket/body";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_WT2026_1_DESC:String = "#tooltips:notrecruitedtankman/tankmen_WT2026_1/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_WT2026_1_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_WT2026_1/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_WT2026_2_DESC:String = "#tooltips:notrecruitedtankman/tankmen_WT2026_2/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_WT2026_2_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_WT2026_2/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP21_1_DESC:String = "#tooltips:notrecruitedtankman/tankmen_BP21_1/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP21_1_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_BP21_1/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP21_2_DESC:String = "#tooltips:notrecruitedtankman/tankmen_BP21_2/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP21_2_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_BP21_2/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP21_3_DESC:String = "#tooltips:notrecruitedtankman/tankmen_BP21_3/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP21_3_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_BP21_3/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP21_4_DESC:String = "#tooltips:notrecruitedtankman/tankmen_BP21_4/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP21_4_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_BP21_4/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP21_5_DESC:String = "#tooltips:notrecruitedtankman/tankmen_BP21_5/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP21_5_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_BP21_5/label";
+      
+      public static const HEADER_BUTTONS_MUSEUM_HEADER:String = "#tooltips:header/buttons/museum/header";
+      
+      public static const HEADER_BUTTONS_MUSEUM_BODY:String = "#tooltips:header/buttons/museum/body";
       
       public static const ELEN_SUMMARY_RANK_ENUM:Array = [ELEN_SUMMARY_RANK_1,ELEN_SUMMARY_RANK_2,ELEN_SUMMARY_RANK_3,ELEN_SUMMARY_RANK_4,ELEN_SUMMARY_RANK_NORANK];
       

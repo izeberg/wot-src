@@ -13,6 +13,10 @@ package
       
       public static const CONTEXTHINT_CONSUMABLESPANEL_MEDKIT:String = "#battle_hints:contextHint/consumablesPanel/medkit";
       
+      public static const CONTEXTHINT_CONSUMABLESPANEL_AMMORELOADPREPARE:String = "#battle_hints:contextHint/consumablesPanel/ammoReloadPrepare";
+      
+      public static const CONTEXTHINT_CONSUMABLESPANEL_AMMORELOADCONFIRM:String = "#battle_hints:contextHint/consumablesPanel/ammoReloadConfirm";
+      
       public static const INFOBATTLECONTEXTHINT_KILLEDWHILEOBSERVED:String = "#battle_hints:infoBattleContextHint/KilledWhileObserved";
       
       public static const INFOBATTLECONTEXTHINT_AMMUNITIONCRIT:String = "#battle_hints:infoBattleContextHint/AmmunitionCrit";
@@ -22,6 +26,8 @@ package
       public static const INFOBATTLECONTEXTHINT_INSAFETYWHILENOTOBSERVED:String = "#battle_hints:infoBattleContextHint/InSafetyWhileNotObserved";
       
       public static const INFOBATTLECONTEXTHINT_MODULEDAMAGE:String = "#battle_hints:infoBattleContextHint/ModuleDamage";
+      
+      public static const INFOBATTLECONTEXTHINT_AMMOTYPEAVAILABLE:String = "#battle_hints:infoBattleContextHint/AmmoTypeAvailable";
       
       public static const SIXTHSENSECONTEXTHINT:String = "#battle_hints:sixthSenseContextHint";
        

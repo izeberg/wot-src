@@ -1,7 +1,6 @@
 package net.wg.infrastructure.base.meta.impl
 {
    import net.wg.data.constants.Errors;
-   import net.wg.gui.lobby.hangar.data.EconomyWidgetVO;
    import net.wg.gui.lobby.hangar.data.HangarHeaderVO;
    import net.wg.infrastructure.base.BaseDAAPIComponent;
    import net.wg.infrastructure.exceptions.AbstractException;
@@ -14,8 +13,6 @@ package net.wg.infrastructure.base.meta.impl
       
       private var _hangarHeaderVO:HangarHeaderVO;
       
-      private var _economyWidgetVO:EconomyWidgetVO;
-      
       public function HangarHeaderMeta()
       {
          super();
@@ -27,11 +24,6 @@ package net.wg.infrastructure.base.meta.impl
          {
             this._hangarHeaderVO.dispose();
             this._hangarHeaderVO = null;
-         }
-         if(this._economyWidgetVO)
-         {
-            this._economyWidgetVO.dispose();
-            this._economyWidgetVO = null;
          }
          super.onDispose();
       }
@@ -53,27 +45,9 @@ package net.wg.infrastructure.base.meta.impl
          }
       }
       
-      public final function as_updateEconomyWidget(param1:Object) : void
-      {
-         var _loc2_:EconomyWidgetVO = this._economyWidgetVO;
-         this._economyWidgetVO = new EconomyWidgetVO(param1);
-         this.updateEconomyWidget(this._economyWidgetVO);
-         if(_loc2_)
-         {
-            _loc2_.dispose();
-         }
-      }
-      
       protected function setData(param1:HangarHeaderVO) : void
       {
          var _loc2_:String = "as_setData" + Errors.ABSTRACT_INVOKE;
-         DebugUtils.LOG_ERROR(_loc2_);
-         throw new AbstractException(_loc2_);
-      }
-      
-      protected function updateEconomyWidget(param1:EconomyWidgetVO) : void
-      {
-         var _loc2_:String = "as_updateEconomyWidget" + Errors.ABSTRACT_INVOKE;
          DebugUtils.LOG_ERROR(_loc2_);
          throw new AbstractException(_loc2_);
       }

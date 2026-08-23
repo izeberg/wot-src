@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<settings/>
+	<styles/>
+	<messages>
+		<message>
+			<name>wt_barrier/cantShootGunLocked</name>
+			<type>list</type>
+			<value>
+				<item>_(#white_tiger.ingame_gui.extend:wt_barrier/cantShootGunLocked)</item>
+				<item>yellow</item>
+			</value>
+		</message>
+		<message>
+			<name>wt_missile/cantShootGunLocked</name>
+			<type>list</type>
+			<value>
+				<item>_(#white_tiger.ingame_gui.extend:wt_missile/cantShootGunLocked)</item>
+				<item>yellow</item>
+			</value>
+		</message>
+		<message>
+			<name>wtEventTankIsAtFullHP</name>
+			<type>list</type>
+			<value>
+				<item>_(#white_tiger.ingame_gui.extend:player_messages/equipment/wtEvent/healthAtFullHP)</item>
+				<item>yellow</item>
+			</value>
+		</message>
+		<message>
+			<name>wtHunterAbilitiesDisabled</name>
+			<type>list</type>
+			<value>
+				<item>_(#white_tiger.ingame_gui.extend:player_messages/equipment/wtEvent/hunterAbilitiesDisabled)</item>
+				<item>yellow</item>
+			</value>
+		</message>
+		<message>
+			<name>wtNoActiveShieldOnBoss</name>
+			<type>list</type>
+			<value>
+				<item>_(#white_tiger.ingame_gui.extend:player_messages/equipment/wtEvent/noActiveShieldOnBoss)</item>
+				<item>yellow</item>
+			</value>
+		</message>
+	</messages>
+</root>

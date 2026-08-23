@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-1.175770 -0.351074 -2.866502</min>
+		<max>1.236166 1.604456 3.860337</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/russian/R242_BM_13_Katyusha/crash/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/russian/R242_BM_13_Katyusha/crash/lod0/Hull</nodefullVisual>
+</root>

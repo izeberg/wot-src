@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/experimental/glow_spawn.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>101</materialKind>
+					<property>
+						alphaReference
+						<Int>1</Int>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/Hangar_v2_upper_lights.dds</Texture>
+					</property>
+					<property>
+						diffuseMap2
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/Hangar_v2_upper_lights.dds</Texture>
+					</property>
+					<property>
+						selfIllumination
+						<Float>-0.300000</Float>
+					</property>
+					<property>
+						selfIlluminationEnvDependent
+						<Float>-1.000000</Float>
+					</property>
+					<property>
+						spawnContourThickness
+						<Float>0.000000</Float>
+					</property>
+					<property>
+						srcBlend
+						<Int>2</Int>
+					</property>
+					<property>
+						tintColor
+						<Vector4>1.000000 0.768627 0.670588 1.000000</Vector4>
+					</property>
+					<property>
+						destBlend
+						<Int>5</Int>
+					</property>
+					<sortOrder>1</sortOrder>
+				</material>
+				<groupOrigin>0.040932 7.399332 0.523787</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-16.033415 6.312882 -15.141577</min>
+		<max>16.115278 8.485782 16.189152</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>8370</geometrySize>
+	<minUVDensity>0.097215</minUVDensity>
+</root>

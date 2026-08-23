@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>vehicles/american/A184_HTPC/crash/lod4/Hull</nodefullVisual>
 	<tank>true</tank>
 	<visibilityBox>
 		<min>-1.620000 -0.479182 -3.496553</min>
 		<max>1.620000 0.474398 2.998213</max>
 	</visibilityBox>
+	<nodefullVisual>vehicles/american/A184_HTPC/crash/lod4/Hull</nodefullVisual>
 </root>

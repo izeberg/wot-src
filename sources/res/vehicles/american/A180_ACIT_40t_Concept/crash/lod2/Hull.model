@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A180_ACIT_40t_Concept/crash/lod2/Hull</nodefullVisual>
+	<parent>vehicles/american/A180_ACIT_40t_Concept/crash/lod3/Hull</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.673825 -0.745973 -3.462221</min>
+		<max>1.695795 0.462172 3.332564</max>
+	</visibilityBox>
+</root>

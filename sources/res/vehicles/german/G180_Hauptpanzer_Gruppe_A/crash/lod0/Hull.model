@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<parent>vehicles/german/G180_Hauptpanzer_Gruppe_A/crash/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.972979 -0.888197 -4.134589</min>
+		<max>1.916300 0.710430 3.767202</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/german/G180_Hauptpanzer_Gruppe_A/crash/lod0/Hull</nodefullVisual>
+</root>

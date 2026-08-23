@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/intunion/Un16_TDM_54/crash/lod3/Hull</nodefullVisual>
+	<parent>vehicles/intunion/Un16_TDM_54/crash/lod4/Hull</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.839780 -0.857550 -3.396377</min>
+		<max>1.832522 0.595394 3.022323</max>
+	</visibilityBox>
+</root>

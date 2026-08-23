@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/russian/R240_Object_771/normal/lod0/Turret_luke_anim</nodefullVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.134459 0.138587 1.923512</min>
+		<max>0.134406 0.503055 2.194383</max>
+	</visibilityBox>
+	<parent>vehicles/russian/R240_Object_771/normal/lod1/Turret_luke_anim</parent>
+	<extent>32.000000</extent>
+</root>

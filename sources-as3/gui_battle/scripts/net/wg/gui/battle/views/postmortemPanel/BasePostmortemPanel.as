@@ -202,6 +202,7 @@ package net.wg.gui.battle.views.postmortemPanel
       {
          var _loc1_:int = App.appHeight >> 1;
          this.playerInfoTF.y = -PLAYER_INFO_DELTA_Y - _loc1_;
+         this.vehiclePanel.x = -this.vehiclePanel.width >> 1;
          this.vehiclePanel.y = -_loc1_ + VEHICLE_PANEL_OFFSET_Y;
          this.deadReasonTF.y = this.vehiclePanel.y - this.deadReasonGap - this.deadReasonTF.height;
          if(this._userName != null)

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<Properties>
+		<numberOfMarks>
+			<Type>INT8</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</numberOfMarks>
+	</Properties>
+	<ofEntity>
+		<Vehicle/>
+	</ofEntity>
+	<DefaultKeyName>wtUnionStrengthMark</DefaultKeyName>
+</root>

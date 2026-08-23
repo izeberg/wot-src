@@ -22,6 +22,11 @@
 			<UUID>d61a1d1e-80cc-4217-999b-bef47826fb14</UUID>
 			<flags>0</flags>
 		</GameObject>
+		<GameObject>
+			<name>SpawnPosition</name>
+			<UUID>363ec0df-e6d5-44af-aa9b-32374c2094e9</UUID>
+			<flags>0</flags>
+		</GameObject>
 	</GameObjects>
 	<components>
 		<ComponentPool>
@@ -43,12 +48,22 @@
 				<config>
 					<property>
 						<name>Parent</name>
-						<link>5f777a97-41db-4536-a098-90d116311426</link>
+						<link>f059a684-6588-4348-a016-26e98d5f7d2a</link>
 					</property>
 				</config>
 			</component>
 			<component>
 				<objectIndex>3</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>363ec0df-e6d5-44af-aa9b-32374c2094e9</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>4</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -103,14 +118,14 @@
 				<config>
 					<property>
 						<name>Position</name>
-						<value>
-							-1.13804 0.239601 -0.536953
-							<!--BW_String-->
-						</value>
+						<value>0 0 0</value>
 					</property>
 					<property>
 						<name>Scale</name>
-						<value>1 1 1</value>
+						<value>
+							0.999998 1 0.999998
+							<!--BW_String-->
+						</value>
 					</property>
 					<property>
 						<name>Rotation</name>
@@ -125,21 +140,39 @@
 					<property>
 						<name>Position</name>
 						<value>
-							0 -5.96046e-08 0
+							-1.26175 0.249244 0.580624
 							<!--BW_String-->
 						</value>
 					</property>
 					<property>
 						<name>Scale</name>
-						<value>
-							0.999997 0.999999 1
-							<!--BW_String-->
-						</value>
+						<value>0.999996 0.999999 0.999999</value>
 					</property>
 					<property>
 						<name>Rotation</name>
 						<value>
-							-2.2665e-06 -0.400103 -0.194306
+							-2.26311e-06 -2.79253 0.0872665
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>4</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							-0 -0.872665 0
 							<!--BW_String-->
 						</value>
 					</property>
@@ -330,11 +363,11 @@
 					</property>
 					<property>
 						<name>Angular velocity</name>
-						<value>5 2 0</value>
+						<value>1 5 5</value>
 					</property>
 					<property>
 						<name>Initial Speed</name>
-						<value>8</value>
+						<value>10</value>
 					</property>
 					<property>
 						<name>Stuck Body Timeout</name>
@@ -351,7 +384,7 @@
 					<property>
 						<name>Direction</name>
 						<value>
-							-0 0 1.5708
+							-0 0 -1.5708
 							<!--BW_String-->
 						</value>
 					</property>
@@ -438,7 +471,7 @@
 				<config>
 					<property>
 						<name>NodeName</name>
-						<value>turret</value>
+						<value>HP_sleeveRoot</value>
 					</property>
 					<property>
 						<name>DeactivateIfInvalid</name>
@@ -447,6 +480,24 @@
 					<property>
 						<name>modelLink</name>
 						<link>00000000-0000-0000-0000-000000000002</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>2</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>NodeName</name>
+						<value>turret</value>
+					</property>
+					<property>
+						<name>DeactivateIfInvalid</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>modelLink</name>
+						<link>00000000-0000-0000-0000-000000000001</link>
 					</property>
 				</config>
 			</component>

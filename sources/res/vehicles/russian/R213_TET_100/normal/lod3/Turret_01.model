@@ -3,8 +3,8 @@
 	<parent>vehicles/russian/R213_TET_100/normal/lod4/Turret_01</parent>
 	<extent>192.000000</extent>
 	<visibilityBox>
-		<min>-1.811037 -0.002887 -2.195919</min>
-		<max>1.827492 2.357681 2.599037</max>
+		<min>-1.811037 0.013613 -2.241267</min>
+		<max>1.827492 2.374181 2.553689</max>
 	</visibilityBox>
 	<tank>true</tank>
 	<nodefullVisual>vehicles/russian/R213_TET_100/normal/lod3/Turret_01</nodefullVisual>

@@ -94,7 +94,6 @@ package net.wg.gui.battle.views.postmortemPanel
          this.typeMC.x = this._vehicleMC.x + this._vehicleMC.width * this._vehicleMC.scaleX - ELEMENTS_GAP;
          this.nameTF.x = this.typeMC.x + this.typeMC.originalWidth + ELEMENTS_GAP;
          this.bgMC.width = this.nameTF.x + this.nameTF.width + HORIZONTAL_MARGIN;
-         this.x = -this.width >> 1;
       }
       
       private function onVehicleMCChangeHandler(param1:Event) : void

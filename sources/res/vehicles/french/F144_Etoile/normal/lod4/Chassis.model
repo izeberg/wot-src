@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.613990 0.000135 -3.234078</min>
+		<max>1.613990 0.947108 3.239920</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/french/F144_Etoile/normal/lod4/Chassis</nodefullVisual>
+</root>

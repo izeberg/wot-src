@@ -2602,7 +2602,7 @@
 						0.18
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>12</reloadTime>
+					<reloadTime>14</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
 							0.05
@@ -2627,7 +2627,7 @@
 					</aimingTime>
 					<clip>
 						<count>18</count>
-						<rate>220</rate>
+						<rate>240</rate>
 					</clip>
 					<autoShoot>
 						<shotDispersionPerSec>
@@ -2635,10 +2635,7 @@
 							<!--BW_String-->
 						</shotDispersionPerSec>
 						<maxShotDispersion>7</maxShotDispersion>
-						<rate>
-							3.67
-							<!--BW_String-->
-						</rate>
+						<rate>4</rate>
 						<rebuildShotDispersionDelay>
 							0.3
 							<!--BW_String-->
@@ -3377,4 +3374,5 @@
 			<attachmentId>31106</attachmentId>
 		</newAttachment0>
 	</prefabAttachments>
+	<baseColorID>1</baseColorID>
 </root>

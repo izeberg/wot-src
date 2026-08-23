@@ -46,7 +46,7 @@ class MarkOfMasteryAchievement(ClassProgressAchievement):
     def _getUserNameCtx(self):
         return {'name': i18n.makeString('#achievements:achievement/master%d' % (self._value or self.MIN_LVL))}
 
-    def _getIconName(self):
+    def getIconName(self):
         if self.__prevMarkOfMastery < self._value:
             return 'markOfMastery%drecord' % (self._value or self.MIN_LVL)
         return 'markOfMastery%d' % (self._value or self.MIN_LVL)

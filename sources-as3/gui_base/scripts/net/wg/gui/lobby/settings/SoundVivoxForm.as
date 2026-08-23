@@ -3,6 +3,7 @@ package net.wg.gui.lobby.settings
    import flash.text.TextField;
    import flash.text.TextFormatAlign;
    import net.wg.gui.components.advanced.FieldSet;
+   import net.wg.gui.components.advanced.InviteIndicator;
    import net.wg.gui.components.controls.CheckBox;
    import net.wg.gui.components.controls.DropdownMenu;
    import net.wg.gui.components.controls.LabelControl;
@@ -56,6 +57,8 @@ package net.wg.gui.lobby.settings
       
       public var voiceAnimation:SoundVoiceWaves = null;
       
+      public var voiceWaiting:InviteIndicator = null;
+      
       public function SoundVivoxForm()
       {
          super();
@@ -77,6 +80,7 @@ package net.wg.gui.lobby.settings
          this.micVivoxVolumeValue.textAlign = TextFormatAlign.RIGHT;
          this.masterVivoxVolumeValue.textAlign = TextFormatAlign.RIGHT;
          this.masterFadeVivoxVolumeValue.textAlign = TextFormatAlign.RIGHT;
+         this.voiceWaiting.visible = false;
          super.configUI();
       }
       
@@ -121,6 +125,8 @@ package net.wg.gui.lobby.settings
          this.masterFadeVivoxVolumeValue = null;
          this.voiceAnimation.dispose();
          this.voiceAnimation = null;
+         this.voiceWaiting.dispose();
+         this.voiceWaiting = null;
          super.onDispose();
       }
    }

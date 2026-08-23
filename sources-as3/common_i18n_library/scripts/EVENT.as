@@ -3,6 +3,44 @@ package
    public class EVENT
    {
       
+      public static const HUNTERRESPAWN_TIMERTEXT:String = "#event:hunterRespawn/timerText";
+      
+      public static const HUNTERRESPAWN_HINTTEXT:String = "#event:hunterRespawn/hintText";
+      
+      public static const MINIMAP_RESPAWNENTRY_HINTTEXT:String = "#event:minimap/respawnEntry/hintText";
+      
+      public static const PLAYERSPANEL_CAMPLABEL:String = "#event:playersPanel/campLabel";
+      
+      public static const PLAYERSPANEL_BOMBLABEL:String = "#event:playersPanel/bombLabel";
+      
+      public static const PLAYERSPANEL_BOTNAME:String = "#event:playersPanel/botName";
+      
+      public static const WTEVENTSCAROUSELVIEW_INBATTLETEXT:String = "#event:WTEventsCarouselView/inBattleText";
+      
+      public static const WTEVENTSCAROUSELVIEW_INPLATOONTEXT:String = "#event:WTEventsCarouselView/inPlatoonText";
+      
+      public static const WTEVENTSCAROUSELVIEW_UNSUITABLETEXT:String = "#event:WTEventsCarouselView/unsuitableText";
+      
+      public static const WTEVENTSCAROUSELVIEW_TICKETNEEDEDTEXT:String = "#event:WTEventsCarouselView/ticketNeededText";
+      
+      public static const WTEVENTSCAROUSELVIEW_NOBATTLESLEFT:String = "#event:WTEventsCarouselView/noBattlesLeft";
+      
+      public static const WTEVENTSCAROUSELVIEW_SPECIALBATTLESLEFT:String = "#event:WTEventsCarouselView/specialBattlesLeft";
+      
+      public static const BATTLEQUEUE_WIDGET_BTNLABEL:String = "#event:battleQueue/widget/btnLabel";
+      
+      public static const BATTLEQUEUE_WIDGET_CALCULATEDTEXT:String = "#event:battleQueue/widget/calculatedText";
+      
+      public static const BATTLEQUEUE_WIDGET_CHANGETITLE:String = "#event:battleQueue/widget/changeTitle";
+      
+      public static const BATTLEQUEUE_WIDGET_OFFERHUNTERTITLE:String = "#event:battleQueue/widget/offerHunterTitle";
+      
+      public static const BATTLEQUEUE_WIDGET_TICKETTEXT:String = "#event:battleQueue/widget/ticketText";
+      
+      public static const BATTLEQUEUE_WIDGET_BONUS:String = "#event:battleQueue/widget/bonus";
+      
+      public static const BATTLEQUEUE_WIDGET_BONUSDESCR:String = "#event:battleQueue/widget/bonusDescr";
+      
       public static const PUNISHMENTWINDOW_REASON_EVENT_DESERTER:String = "#event:punishmentWindow/reason/event_deserter";
       
       public static const PUNISHMENTWINDOW_REASON_EVENT_AFK:String = "#event:punishmentWindow/reason/event_afk";
@@ -176,6 +214,30 @@ package
       public static const SUMMERSALES_CONFIRM_CONTENT_PLACEHOLDER:String = "#event:summerSales/confirm/content/placeHolder";
       
       public static const SUMMERSALES_CONFIRM_FOOTER_PLACEHOLDER:String = "#event:summerSales/confirm/footer/placeHolder";
+      
+      public static const SUBTITLE_WT_INTRO_PHRASE_1:String = "#event:subtitle/wt_intro/phrase_1";
+      
+      public static const SUBTITLE_WT_INTRO_PHRASE_2:String = "#event:subtitle/wt_intro/phrase_2";
+      
+      public static const SUBTITLE_WT_INTRO_PHRASE_3:String = "#event:subtitle/wt_intro/phrase_3";
+      
+      public static const SUBTITLE_WT_INTRO_PHRASE_4:String = "#event:subtitle/wt_intro/phrase_4";
+      
+      public static const SUBTITLE_WT_INTRO_PHRASE_5:String = "#event:subtitle/wt_intro/phrase_5";
+      
+      public static const SUBTITLE_WT_INTRO_PHRASE_6:String = "#event:subtitle/wt_intro/phrase_6";
+      
+      public static const SUBTITLE_WT_INTRO_PHRASE_7:String = "#event:subtitle/wt_intro/phrase_7";
+      
+      public static const SUBTITLE_WT_OUTRO_PHRASE_1:String = "#event:subtitle/wt_outro/phrase_1";
+      
+      public static const SUBTITLE_WT_OUTRO_PHRASE_2:String = "#event:subtitle/wt_outro/phrase_2";
+      
+      public static const SUBTITLE_WT_OUTRO_PHRASE_3:String = "#event:subtitle/wt_outro/phrase_3";
+      
+      public static const SUBTITLE_WT_OUTRO_PHRASE_4:String = "#event:subtitle/wt_outro/phrase_4";
+      
+      public static const SUBTITLE_WT_OUTRO_PHRASE_5:String = "#event:subtitle/wt_outro/phrase_5";
        
       
       public function EVENT()

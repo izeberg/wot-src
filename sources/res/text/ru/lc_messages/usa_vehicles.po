@@ -26,6 +26,24 @@ msgstr "MT-58-105"
 msgid "A1001_OTAC_MT_58_T_short_special"
 msgstr "?empty?"
 
+msgid "A100_T49_02"
+msgstr "T49 02"
+
+msgid "A100_T49_02_descr"
+msgstr ""
+"Вариант лёгкого танка М41 с увеличенной башней, вооружённый 90-мм пушкой. Поступил на испытания 5 мая 1954 года. Испытания закончились успешно, однако серийное производство танка развёрнуто не было из-за его невостребованности.\n"
+"\n"
+"Характеристики машины могут быть изменены без компенсации."
+
+msgid "A100_T49_02_long_special"
+msgstr "?empty?"
+
+msgid "A100_T49_02_short"
+msgstr "T49 02"
+
+msgid "A100_T49_02_short_special"
+msgstr "?empty?"
+
 msgid "A101_M56"
 msgstr "M56 Scorpion"
 
@@ -1054,9 +1072,9 @@ msgstr "TS-60"
 
 msgid "A151_TS_60_descr"
 msgstr ""
-"В начале 1950-х годов американские военные инициировали работы по целому ряду перспективных проектов бронетехники. С 1946 года разработка истребителей танков прекратилась, однако среди проектов, предложенных в 1950-х годах, встречаются машины, представляющие собой классические штурмовые САУ с явной противотанковой ролью. Одним из таких проектов являлся проект TS-60. Машина отличалась нестандартной для американских машин компоновкой: силовое отделения размещалось в середине корпуса между отделением управления и боевым отделением. Боевое отдление размещалось в кормовой части машины. К концу 1950-х годов приоритетным стало ракетное вооружение, что привело к отказу от подобных проектов.\n"
+"В начале 1950-х годов американские военные инициировали работы по целому ряду перспективных проектов бронетехники. С 1946 года разработка истребителей танков прекратилась, однако среди проектов, предложенных в 1950-х годах, встречаются машины, представляющие собой классические штурмовые САУ с явной противотанковой ролью. Одним из таких проектов являлся TS-60. Машина отличалась нестандартной для американских самоходок компоновкой: силовое отделение размещалось в середине корпуса между отделением управления и боевым отделением. Боевое отделение размещалось в кормовой части машины. К концу 1950-х годов приоритетным стало ракетное вооружение, что привело к отказу от подобных проектов.\n"
 "\n"
-"Характеристики машины могут быть изменены без компенсации."
+"Характеристики машины могут быть изменены без компенсации."
 
 msgid "A151_TS_60_long_special"
 msgstr ""
@@ -1633,6 +1651,24 @@ msgstr "MBT-59"
 msgid "A179_MBT_59_short_special"
 msgstr "Механика охлаждения орудия, высокий разовый урон"
 
+msgid "A180_ACIT_40t_Concept"
+msgstr "ACIT 40t Concept"
+
+msgid "A180_ACIT_40t_Concept_descr"
+msgstr ""
+".\n"
+"\n"
+"Характеристики машины могут быть изменены без компенсации."
+
+msgid "A180_ACIT_40t_Concept_long_special"
+msgstr "?empty?"
+
+msgid "A180_ACIT_40t_Concept_short"
+msgstr "ACIT 40t"
+
+msgid "A180_ACIT_40t_Concept_short_special"
+msgstr "?empty?"
+
 msgid "A182_ALRS_M6"
 msgstr "ALRS M6"
 
@@ -1872,6 +1908,9 @@ msgstr "Отличная маскировка, комфортное орудие
 msgid "AN-ARC-27"
 msgstr "AN/GRC-7"
 
+msgid "AN-ARC-27_A100_02"
+msgstr "AN/GRC-7"
+
 msgid "AN-GRC-3"
 msgstr "AN/GRC-3"
 
@@ -1932,6 +1971,9 @@ msgstr "AN/GRC-8F"
 msgid "AN_GRC_8_59"
 msgstr "AN/GRC-8"
 
+msgid "AN_GRC_8_ACIT"
+msgstr "AN/GRC-8"
+
 msgid "AN_PRC_10"
 msgstr "AN/PRC-10"
 
@@ -1976,6 +2018,9 @@ msgstr "AOI-1490-1"
 msgid "AOI_695"
 msgstr "AOI-695"
 
+msgid "AOS_1195_6"
+msgstr "AOS-1195-6"
+
 msgid "AVI_1790_8"
 msgstr "Continental AVI-1790-8"
 
@@ -2012,6 +2057,9 @@ msgstr "MT-58"
 
 msgid "Chassis_A100_T49"
 msgstr "T49"
+
+msgid "Chassis_A100_T49_02"
+msgstr "XM551 test bed"
 
 msgid "Chassis_A100_T49_2"
 msgstr "XM551 test bed"
@@ -2264,6 +2312,9 @@ msgstr "LK-7605"
 
 msgid "Chassis_A179_MBT_59"
 msgstr "MBT-59"
+
+msgid "Chassis_A180_ACIT_40t_Concept"
+msgstr "ACIT 40t Concept"
 
 msgid "Chassis_A182_ALRS_M6"
 msgstr "ALRS"
@@ -2631,6 +2682,14 @@ msgstr ""
 
 msgid "Continental_AOSI-895-5B"
 msgstr "Continental AOSI-895-5B"
+
+msgid "Continental_AOSI-895-5B_A100_02"
+msgstr "Continental AOSI-895-5B"
+
+msgid "Continental_AOSI-895-5B_A100_02_short"
+msgstr ""
+"Continental\n"
+"AOSI-895-5B"
 
 msgid "Continental_AOSI-895-5B_short"
 msgstr ""
@@ -4386,6 +4445,18 @@ msgstr "T57"
 msgid "T57_58"
 msgstr "T57 Heavy Tank"
 
+msgid "T57_58_cl"
+msgstr "T57 Heavy Tank КЛ"
+
+msgid "T57_58_cl_long_special"
+msgstr "?empty?"
+
+msgid "T57_58_cl_short"
+msgstr "T57 Heavy КЛ"
+
+msgid "T57_58_cl_short_special"
+msgstr "?empty?"
+
 msgid "T57_58_descr"
 msgstr ""
 "Проект тяжёлого танка с качающейся башней и автоматом заряжания. "
@@ -4759,6 +4830,9 @@ msgstr "LK-7605"
 msgid "Turret_1_A179_MBT_59"
 msgstr "MBT-59"
 
+msgid "Turret_1_A180_ACIT_40t_Concept"
+msgstr "ACIT 40t Concept"
+
 msgid "Turret_1_A182_ALRS_M6"
 msgstr "ALRS"
 
@@ -4901,6 +4975,9 @@ msgid "Turret_1_T95_E6"
 msgstr "T95E6"
 
 msgid "Turret_2_A100_T49"
+msgstr "XM551 test bed"
+
+msgid "Turret_2_A100_T49_02"
 msgstr "XM551 test bed"
 
 msgid "Turret_2_A109_T56_GMC"
@@ -5223,6 +5300,9 @@ msgstr "APCR T29E3 M"
 msgid "_105mm_APDS_M392"
 msgstr "APDS М392"
 
+msgid "_105mm_APDS_M392A"
+msgstr "APDS М392"
+
 msgid "_105mm_APDS_M392_T"
 msgstr "APDS М392"
 
@@ -5319,6 +5399,9 @@ msgstr "AP-T T384E4"
 msgid "_105mm_HEAT_M456"
 msgstr "HEAT М456"
 
+msgid "_105mm_HEAT_M456A"
+msgstr "HEAT М456"
+
 msgid "_105mm_HEAT_M456_T"
 msgstr "HEAT М456"
 
@@ -5356,6 +5439,9 @@ msgid "_105mm_HE_M11_M"
 msgstr "HE M11 M"
 
 msgid "_105mm_HE_M393"
+msgstr "HE М393"
+
+msgid "_105mm_HE_M393A"
 msgstr "HE М393"
 
 msgid "_105mm_HE_M393_T"
@@ -5417,6 +5503,9 @@ msgstr "105 mm T254"
 
 msgid "_105mm_T254A"
 msgstr "105 mm T254A"
+
+msgid "_105mm_T254_ACIT"
+msgstr "105 mm T254"
 
 msgid "_105mm_T254_T"
 msgstr "105 mm T254"
@@ -5631,6 +5720,9 @@ msgstr "M409-1"
 msgid "_152mm_Gun_Launcher_M81"
 msgstr "152 mm Gun-Launcher XM81 (conventional)"
 
+msgid "_152mm_Gun_Launcher_M81_A100_02"
+msgstr "152 mm Gun-Launcher XM81 (conventional)"
+
 msgid "_152mm_HEAT_M409"
 msgstr "T13E1"
 
@@ -5643,6 +5735,9 @@ msgstr "M409"
 msgid "_152mm_HEAT_XM409"
 msgstr "HEAT XM409"
 
+msgid "_152mm_HEAT_XM409_A100_02"
+msgstr "HEAT XM409"
+
 msgid "_152mm_HE_XM657E2"
 msgstr "HE XM657E2"
 
@@ -5650,6 +5745,9 @@ msgid "_152mm_HE_XM657E2_2"
 msgstr "T13E2"
 
 msgid "_152mm_HE_XM657E2_59"
+msgstr "HE XM657E2"
+
+msgid "_152mm_HE_XM657E2_A100_02"
 msgstr "HE XM657E2"
 
 msgid "_152mm_HE_XM657E2_O"

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<Properties>
+		<index>
+			<Type>INT8</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<Default>0</Default>
+		</index>
+	</Properties>
+	<ofEntity>
+		<Entity/>
+	</ofEntity>
+	<DefaultKeyName>wtIndex</DefaultKeyName>
+</root>

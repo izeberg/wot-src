@@ -7,13 +7,13 @@ package net.wg.gui.battle.random.views
    import flash.geom.Rectangle;
    import net.wg.data.constants.generated.ATLAS_CONSTANTS;
    import net.wg.data.constants.generated.BATTLE_VIEW_ALIASES;
+   import net.wg.data.constants.generated.CONTEXT_HINT_PARAMS;
    import net.wg.data.constants.generated.CONTEXT_HINT_TYPES;
    import net.wg.data.constants.generated.DAMAGE_INFO_PANEL_CONSTS;
    import net.wg.data.constants.generated.PLAYERS_PANEL_STATE;
    import net.wg.gui.battle.components.TimersPanel;
    import net.wg.gui.battle.interfaces.IFullStats;
    import net.wg.gui.battle.interfaces.IReservesStats;
-   import net.wg.gui.battle.random.constants.CONTEXT_HINT_CONSTS;
    import net.wg.gui.battle.random.views.contextHint.InfoBattleContextHint;
    import net.wg.gui.battle.random.views.contextHint.SixthSenseContextHint;
    import net.wg.gui.battle.random.views.events.ContextHintEvent;
@@ -632,7 +632,7 @@ package net.wg.gui.battle.random.views
          var _loc4_:Object = {"ease":(!!param1.isVisible ? Linear.easeOut : Linear.easeIn)};
          if(ribbonsPanel.visible)
          {
-            this._contextHintTweens.push(new Tween(CONTEXT_HINT_CONSTS.INTERFERING_TWEEN_DURATION,ribbonsPanel,_loc3_,_loc4_));
+            this._contextHintTweens.push(new Tween(CONTEXT_HINT_PARAMS.INTERFERING_TWEEN_DURATION,ribbonsPanel,_loc3_,_loc4_));
          }
          else
          {
@@ -640,7 +640,7 @@ package net.wg.gui.battle.random.views
          }
          if(messagesContainer.visible)
          {
-            this._contextHintTweens.push(new Tween(CONTEXT_HINT_CONSTS.INTERFERING_TWEEN_DURATION,messagesContainer,_loc3_,_loc4_));
+            this._contextHintTweens.push(new Tween(CONTEXT_HINT_PARAMS.INTERFERING_TWEEN_DURATION,messagesContainer,_loc3_,_loc4_));
          }
          else
          {
@@ -651,7 +651,7 @@ package net.wg.gui.battle.random.views
          {
             if(this.battleDamageLogPanel.visible)
             {
-               this._contextHintTweens.push(new Tween(CONTEXT_HINT_CONSTS.INTERFERING_TWEEN_DURATION,this.battleDamageLogPanel,_loc3_,_loc4_));
+               this._contextHintTweens.push(new Tween(CONTEXT_HINT_PARAMS.INTERFERING_TWEEN_DURATION,this.battleDamageLogPanel,_loc3_,_loc4_));
             }
             else
             {

@@ -1,4 +1,5 @@
 import typing
+from adisp import adisp_process
 from gui.impl import backport
 from gui.impl.gen import R
 from gui.impl.gen.view_models.views.lobby.mode_selector.mode_selector_card_types import ModeSelectorCardTypes
@@ -89,8 +90,15 @@ class Comp7ModeSelectorItem(ModeSelectorLegacyItem):
             vm.setIsEnabled(self.__comp7Controller.isAvailable() and not self.__comp7Controller.isOffline)
             comp7_model_helpers.setDivisionInfo(model=vm.divisionInfo, division=division)
             comp7_model_helpers.setRanksInactivityInfo(vm)
-            comp7_model_helpers.setElitePercentage(vm)
             comp7_qualification_helpers.setQualificationInfo(vm.qualificationModel)
+            self.__updateLeaderboardData(vm)
 
-    def getLimitedUIRule(self):
+    @adisp_process
+    def __updateLeaderboardData(self, model):
+        isSuccessOwnData, myPosition, _, _ = yield self.__comp7Controller.leaderboard.getOwnData()
+        if isSuccessOwnData:
+            model.setMyPosition(myPosition or 0)
+
+    @staticmethod
+    def getLimitedUIRule():
         return LuiRules.COMP7_CONTENT

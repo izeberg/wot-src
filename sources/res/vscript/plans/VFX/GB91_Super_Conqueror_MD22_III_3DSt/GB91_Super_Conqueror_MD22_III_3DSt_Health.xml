@@ -70,11 +70,22 @@
 						<type>FloatT</type>
 					</param>
 				</params>
-				<slots/>
+				<slots>
+					<slot>
+						<name>default</name>
+						<const>\0.000000\</const>
+					</slot>
+				</slots>
 			</block>
 			<block>
 				<class>StartScript</class>
 				<id>StartScript_1</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_2</id>
 				<params/>
 				<slots/>
 			</block>
@@ -104,6 +115,30 @@
 				<slots/>
 			</block>
 			<block>
+				<class>IsVehicleValid</class>
+				<id>IsVehicleValid_1</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>StopPlan</class>
+				<id>StopPlan_1</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_3</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_1</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
 				<class>SetVariable</class>
 				<id>SetVariable_1</id>
 				<buddy>Variable_1</buddy>
@@ -117,8 +152,8 @@
 				<slots/>
 			</block>
 			<block>
-				<class>If</class>
-				<id>If_1</id>
+				<class>IsVehicleValid</class>
+				<id>IsVehicleValid_2</id>
 				<params/>
 				<slots/>
 			</block>
@@ -167,6 +202,17 @@
 				<slots/>
 			</block>
 			<block>
+				<class>LogicGate</class>
+				<id>LogicGate_1</id>
+				<params/>
+				<slots>
+					<slot>
+						<name>valueAtStart</name>
+						<const>\false\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
 				<class>FrameEvent</class>
 				<id>FrameEvent_1</id>
 				<params/>
@@ -178,15 +224,17 @@
 				</slots>
 			</block>
 			<block>
-				<class>LogicGate</class>
-				<id>LogicGate_1</id>
-				<params/>
-				<slots>
-					<slot>
-						<name>valueAtStart</name>
-						<const>\false\</const>
-					</slot>
-				</slots>
+				<class>GetVariable</class>
+				<id>GetVariable_4</id>
+				<buddy>Variable_4</buddy>
+				<params>
+					<param>
+						VehicleT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
 			</block>
 			<block>
 				<class>ComponentMethod</class>
@@ -279,8 +327,20 @@
 			<connection>
 				<from>StartScript_1</from>
 				<input>input</input>
-				<to>SetVariable_5</to>
+				<to>If_2</to>
 				<output>out</output>
+			</connection>
+			<connection>
+				<from>IsVehicleValid_1</from>
+				<input>value</input>
+				<to>If_2</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>If_2</from>
+				<input>input</input>
+				<to>SetVariable_5</to>
+				<output>true</output>
 			</connection>
 			<connection>
 				<from>GameObjectToVehicle_1</from>
@@ -301,6 +361,42 @@
 				<output>vehicleObject</output>
 			</connection>
 			<connection>
+				<from>GameObjectToVehicle_1</from>
+				<input>vehicle</input>
+				<to>IsVehicleValid_1</to>
+				<output>vehicle</output>
+			</connection>
+			<connection>
+				<from>If_2</from>
+				<input>input</input>
+				<to>StopPlan_1</to>
+				<output>false</output>
+			</connection>
+			<connection>
+				<from>FrameEvent_1</from>
+				<input>input</input>
+				<to>If_3</to>
+				<output>exec</output>
+			</connection>
+			<connection>
+				<from>IsVehicleValid_2</from>
+				<input>value</input>
+				<to>If_3</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>If_3</from>
+				<input>input</input>
+				<to>If_1</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>Not_1</from>
+				<input>value</input>
+				<to>If_1</to>
+				<output>res</output>
+			</connection>
+			<connection>
 				<from>If_1</from>
 				<input>input</input>
 				<to>SetVariable_1</to>
@@ -313,16 +409,10 @@
 				<output>health</output>
 			</connection>
 			<connection>
-				<from>FrameEvent_1</from>
-				<input>input</input>
-				<to>If_1</to>
-				<output>exec</output>
-			</connection>
-			<connection>
-				<from>Not_1</from>
-				<input>value</input>
-				<to>If_1</to>
-				<output>res</output>
+				<from>GetVariable_4</from>
+				<input>vehicle</input>
+				<to>IsVehicleValid_2</to>
+				<output>value</output>
 			</connection>
 			<connection>
 				<from>GetVariable_1</from>
@@ -349,16 +439,16 @@
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>LogicGate_1</from>
-				<input>active</input>
-				<to>FrameEvent_1</to>
-				<output>value</output>
-			</connection>
-			<connection>
 				<from>SetVariable_5</from>
 				<input>true</input>
 				<to>LogicGate_1</to>
 				<output>out</output>
+			</connection>
+			<connection>
+				<from>LogicGate_1</from>
+				<input>active</input>
+				<to>FrameEvent_1</to>
+				<output>value</output>
 			</connection>
 			<connection>
 				<from>SetVariable_1</from>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/sweden/S43_Armborst/crash/lod1/Turret_01</nodefullVisual>
+	<parent>vehicles/sweden/S43_Armborst/crash/lod2/Turret_01</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.176929 -0.125449 -2.214560</min>
+		<max>1.176932 1.898254 1.417470</max>
+	</visibilityBox>
+</root>

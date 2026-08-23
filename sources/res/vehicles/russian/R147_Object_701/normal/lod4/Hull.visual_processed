@@ -136,6 +136,10 @@
 						metallicDetailMap
 						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
+					<property>
+						alphaReference
+						<Int>0</Int>
+					</property>
 				</material>
 				<groupOrigin>0.016472 0.166058 -0.042219</groupOrigin>
 			</primitiveGroup>
@@ -145,6 +149,6 @@
 		<min>-1.763075 -0.538299 -3.555914</min>
 		<max>1.796019 0.870416 3.471476</max>
 	</boundingBox>
-	<geometrySize>7854</geometrySize>
-	<minUVDensity>0.000458</minUVDensity>
+	<geometrySize>6190</geometrySize>
+	<minUVDensity>0.001317</minUVDensity>
 </root>

@@ -81,6 +81,8 @@ package net.wg.gui.lobby.settings
       
       private var _isAcousticsAlertVisible:Boolean = false;
       
+      private var _isVOIPButtonForceDisabled:Boolean = false;
+      
       public function SoundSettings()
       {
          this._toolTipMgr = App.toolTipMgr;
@@ -138,6 +140,7 @@ package net.wg.gui.lobby.settings
       
       override protected function setData(param1:SettingsDataVo) : void
       {
+         var _loc3_:Boolean = false;
          var _loc9_:String = null;
          var _loc11_:String = null;
          var _loc12_:String = null;
@@ -147,7 +150,7 @@ package net.wg.gui.lobby.settings
          this.controlsUnsubscribe();
          super.setData(param1);
          var _loc2_:SettingsControlProp = SettingsControlProp(param1.getByKey(SettingsConfigHelper.VOICE_CHAT_SUPPORTED));
-         var _loc3_:Boolean = _loc2_.current;
+         _loc3_ = _loc2_.current;
          var _loc4_:Array = [{"label":SETTINGS.SOUNDS_TABCOMMON}];
          var _loc5_:Boolean = App.voiceChatMgr.getYY();
          if(_loc3_ || _loc5_)
@@ -309,17 +312,34 @@ package net.wg.gui.lobby.settings
          this.updateVoiceChatEnabled();
       }
       
-      public function setVoiceTestState(param1:Boolean) : void
+      public function setVoiceTestStarted(param1:Boolean) : void
       {
          if(this._isVoiceTestStarted == param1)
          {
             return;
          }
          this._isVoiceTestStarted = param1;
-         voiceAnimation.speak(this._isVoiceTestStarted);
-         btnVivoxTest.enabled = btnCaptureDevicesUpdate.enabled = !this._isVoiceTestStarted;
-         if(this._isVoiceTestStarted)
+         voiceWaiting.visible = this._isVoiceTestStarted;
+         if(!this._isVOIPButtonForceDisabled)
          {
+            btnVivoxTest.enabled = !this._isVoiceTestStarted;
+         }
+         btnCaptureDevicesUpdate.enabled = !this._isVoiceTestStarted;
+         btnVivoxTest.label = !!this._isVoiceTestStarted ? SETTINGS.SOUND_VIVOX_BUTTONS_TEST_INIT : SETTINGS.SOUND_VIVOX_BUTTONS_TEST_START;
+         if(!this._isVoiceTestStarted)
+         {
+            this.forceFinishVivoxTest();
+         }
+      }
+      
+      public function setVoiceTestReady(param1:Boolean) : void
+      {
+         voiceWaiting.visible = false;
+         btnVivoxTest.label = SETTINGS.SOUND_VIVOX_BUTTONS_TEST_START;
+         if(param1)
+         {
+            voiceAnimation.speak(true);
+            btnVivoxTest.enabled = btnCaptureDevicesUpdate.enabled = false;
             this._vivoxTestTimeLeft = VOICE_TEST_DURATION;
             App.utils.scheduler.scheduleRepeatableTask(this.voiceTimerTest,VOICE_TEST_UPDATE_RATE * Time.MILLISECOND_IN_SECOND,VOICE_TEST_DURATION / VOICE_TEST_UPDATE_RATE + 1);
          }
@@ -516,10 +536,22 @@ package net.wg.gui.lobby.settings
       private function forceFinishVivoxTest() : void
       {
          App.utils.scheduler.cancelTask(this.voiceTimerTest);
+         this._isVoiceTestStarted = false;
          this._vivoxTestTimeLeft = 0;
          voiceAnimationText.text = Values.EMPTY_STR;
-         btnVivoxTest.enabled = btnCaptureDevicesUpdate.enabled = !this._isVoiceTestStarted;
-         voiceAnimation.speak(this._isVoiceTestStarted);
+         if(!this._isVOIPButtonForceDisabled)
+         {
+            btnVivoxTest.enabled = true;
+         }
+         btnCaptureDevicesUpdate.enabled = true;
+         voiceAnimation.speak(false);
+         voiceWaiting.visible = false;
+      }
+      
+      public function setVOIPButtonState(param1:Boolean) : void
+      {
+         this._isVOIPButtonForceDisabled = !param1;
+         btnVivoxTest.enabled = param1;
       }
       
       private function updateMasterVolumeEnabled() : void
@@ -592,7 +624,10 @@ package net.wg.gui.lobby.settings
          captureDeviceDropDown.enabled = _loc2_;
          micVivoxVolumeLabel.enabled = _loc2_;
          micVivoxVolumeSlider.enabled = _loc2_;
-         btnVivoxTest.enabled = _loc2_;
+         if(!this._isVOIPButtonForceDisabled)
+         {
+            btnVivoxTest.enabled = _loc2_;
+         }
          micVivoxVolumeValue.enabled = _loc1_;
          masterFadeVivoxVolumeValue.enabled = _loc1_;
          masterVivoxVolumeValue.enabled = _loc1_;

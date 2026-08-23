@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/chinese/Ch75_ZTQ_56/crash/lod2/Chassis</nodefullVisual>
+	<parent>vehicles/chinese/Ch75_ZTQ_56/crash/lod3/Chassis</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.364967 -0.000001 -2.842637</min>
+		<max>1.364967 1.001302 2.733649</max>
+	</visibilityBox>
+</root>

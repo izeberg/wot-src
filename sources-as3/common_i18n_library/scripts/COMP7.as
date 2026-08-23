@@ -101,6 +101,8 @@ package
       
       public static const DIVISION_E:String = "#comp7:division/E";
       
+      public static const DIVISION_ELITE:String = "#comp7:division/elite";
+      
       public static const LISTSEPARATOR:String = "#comp7:listSeparator";
       
       public static const SIDEBAR_TABS_TOOLTIP_HEADER_PROGRESSION:String = "#comp7:sidebar/tabs/tooltip/header/progression";
@@ -243,23 +245,11 @@ package
       
       public static const RANKITEMSTATUS_FUTURE_DESCRIPTION_FOURTH:String = "#comp7:rankItemStatus/future/description/fourth";
       
-      public static const RANKITEMSTATUS_PREVIOUS_DESCRIPTION_FIFTH:String = "#comp7:rankItemStatus/previous/description/fifth";
-      
-      public static const RANKITEMSTATUS_CURRENT_DESCRIPTION_FIFTH:String = "#comp7:rankItemStatus/current/description/fifth";
-      
-      public static const RANKITEMSTATUS_CURRENT_EXTENDEDDESCRIPTION_FIFTH:String = "#comp7:rankItemStatus/current/extendedDescription/fifth";
-      
       public static const RANKITEMSTATUS_FUTURE_DESCRIPTION_FIFTH:String = "#comp7:rankItemStatus/future/description/fifth";
       
-      public static const RANKITEMSTATUS_CURRENT_DESCRIPTION_SIXTH:String = "#comp7:rankItemStatus/current/description/sixth";
-      
-      public static const RANKITEMSTATUS_CURRENT_EXTENDEDDESCRIPTION_SIXTH:String = "#comp7:rankItemStatus/current/extendedDescription/sixth";
-      
-      public static const RANKITEMSTATUS_FUTURE_DESCRIPTION_SIXTH:String = "#comp7:rankItemStatus/future/description/sixth";
-      
-      public static const RANKITEMSTATUS_FUTURE_EXTENDEDDESCRIPTION_SIXTH:String = "#comp7:rankItemStatus/future/extendedDescription/sixth";
-      
       public static const RATINGSCORE_TITLE:String = "#comp7:ratingScore/title";
+      
+      public static const RANKTRANSFERPROGRESSION_TRANSFERPOINT:String = "#comp7:rankTransferProgression/transferPoint";
       
       public static const WEEKLYQUESTS_RESETSTATUS_LASTWEEK:String = "#comp7:weeklyQuests/resetStatus/lastWeek";
       
@@ -499,13 +489,33 @@ package
       
       public static const GENERALRANKTOOLTIP_BODY_FOURTH:String = "#comp7:generalRankTooltip/body/fourth";
       
-      public static const FIFTHRANKTOOLTIP_DESCRIPTION:String = "#comp7:fifthRankTooltip/description";
+      public static const GENERALRANKTOOLTIP_BODY_FIFTH:String = "#comp7:generalRankTooltip/body/fifth";
       
-      public static const SIXTHRANKTOOLTIP_DESCRIPTION:String = "#comp7:sixthRankTooltip/description";
+      public static const GENERALRANKTOOLTIP_BODY_SIXTH:String = "#comp7:generalRankTooltip/body/sixth";
       
       public static const DIVISIONTOOLTIP_HEADING:String = "#comp7:divisionTooltip/heading";
       
-      public static const DIVISIONTOOLTIP_DESCRIPTION:String = "#comp7:divisionTooltip/description";
+      public static const DIVISIONTOOLTIP_DESCRIPTION_BASIC:String = "#comp7:divisionTooltip/description/basic";
+      
+      public static const DIVISIONTOOLTIP_DESCRIPTION_TRANSFER:String = "#comp7:divisionTooltip/description/transfer";
+      
+      public static const DIVISIONTOOLTIP_DESCRIPTION_ELITE:String = "#comp7:divisionTooltip/description/elite";
+      
+      public static const HONORSPLACE_DESCRIPTION_TITLE:String = "#comp7:honorsPlace/description/title";
+      
+      public static const HONORSPLACE_DESCRIPTION_RATINGCOUNT:String = "#comp7:honorsPlace/description/ratingCount";
+      
+      public static const HONORSPLACE_DESCRIPTION_TOOLTIP:String = "#comp7:honorsPlace/description/tooltip";
+      
+      public static const HONORSPLACE_FAILEDFETCHPOINTSTEXT:String = "#comp7:honorsPlace/failedFetchPointsText";
+      
+      public static const HONORSPLACE_TOOLTIP:String = "#comp7:honorsPlace/tooltip";
+      
+      public static const HONORRANKDESCRIPTION_TEXT:String = "#comp7:honorRankDescription/text";
+      
+      public static const HONORRANKDESCRIPTION_BUTTON:String = "#comp7:honorRankDescription/button";
+      
+      public static const HONORRANKDESCRIPTION_DOT:String = "#comp7:honorRankDescription/dot";
       
       public static const SCORETOOLTIP_HEADER:String = "#comp7:scoreTooltip/header";
       
@@ -546,6 +556,10 @@ package
       public static const MAINWIDGETTOOLTIP_DIVISION:String = "#comp7:mainWidgetTooltip/division";
       
       public static const MAINWIDGETTOOLTIP_DIVISIONDESCRIPTION:String = "#comp7:mainWidgetTooltip/divisionDescription";
+      
+      public static const MAINWIDGETTOOLTIP_HONORSPLACEDIVISIONDESCRIPTION:String = "#comp7:mainWidgetTooltip/honorsPlaceDivisionDescription";
+      
+      public static const MAINWIDGETTOOLTIP_HONORSPLACELEGENDDIVISIONDESCRIPTION:String = "#comp7:mainWidgetTooltip/honorsPlaceLegendDivisionDescription";
       
       public static const MAINWIDGETTOOLTIP_QUALIFICATIONNAME:String = "#comp7:mainWidgetTooltip/qualificationName";
       
@@ -771,6 +785,10 @@ package
       
       public static const DETAILSHELP_ROLESKILLS:String = "#comp7:detailsHelp/roleSkills";
       
+      public static const DETAILSHELP_RANKS_TITLE:String = "#comp7:detailsHelp/ranks/title";
+      
+      public static const DETAILSHELP_RANKS:String = "#comp7:detailsHelp/ranks";
+      
       public static const DETAILSHELP_POI_TITLE:String = "#comp7:detailsHelp/poi/title";
       
       public static const DETAILSHELP_POI:String = "#comp7:detailsHelp/poi";
@@ -977,6 +995,10 @@ package
       
       public static const WHATSNEWVIEW_SLIDES_DESCRIPTION_ROLESKILLS:String = "#comp7:whatsNewView/slides/description/roleSkills";
       
+      public static const WHATSNEWVIEW_SLIDES_TITLE_RANKS:String = "#comp7:whatsNewView/slides/title/ranks";
+      
+      public static const WHATSNEWVIEW_SLIDES_DESCRIPTION_RANKS:String = "#comp7:whatsNewView/slides/description/ranks";
+      
       public static const WHATSNEWVIEW_SLIDES_TITLE_NEWSEASON:String = "#comp7:whatsNewView/slides/title/newSeason";
       
       public static const WHATSNEWVIEW_SLIDES_DESCRIPTION_NEWSEASON:String = "#comp7:whatsNewView/slides/description/newSeason";
@@ -997,9 +1019,9 @@ package
       
       public static const WHATSNEWVIEW_SLIDES_DESCRIPTION_INTROQUALIFICATION:String = "#comp7:whatsNewView/slides/description/introQualification";
       
-      public static const WHATSNEWVIEW_SLIDES_TITLE_RANKS:String = "#comp7:whatsNewView/slides/title/ranks";
+      public static const WHATSNEWVIEW_SLIDES_TITLE_RANKSINTRO:String = "#comp7:whatsNewView/slides/title/ranksIntro";
       
-      public static const WHATSNEWVIEW_SLIDES_DESCRIPTION_RANKS:String = "#comp7:whatsNewView/slides/description/ranks";
+      public static const WHATSNEWVIEW_SLIDES_DESCRIPTION_RANKSINTRO:String = "#comp7:whatsNewView/slides/description/ranksIntro";
       
       public static const SKILLSELECTVIEW_HEADER_TITLE:String = "#comp7:skillSelectView/header/title";
       

@@ -41,5 +41,7 @@
 		<ApplicationPoint/>
 		<ApplicationPointWithProximity/>
 		<NetworkEntity/>
+		<EventVehicle/>
+		<EventPortal/>
 	</ClientServerEntities>
 </root>

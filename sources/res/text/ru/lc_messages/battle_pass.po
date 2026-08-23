@@ -386,9 +386,6 @@ msgstr "НАГРАДА ЗА ДОСТИЖЕНИЕ ЛИМИТА ОЧКОВ"
 msgid "battlePassVehicleAwardView/content/pointsSeparator"
 msgstr "%(currentPoints)s / %(maxPoints)s"
 
-msgid "battlePassVehicleAwardView/content/postTitle"
-msgstr "БОЕВОЙ ПРОПУСК. ЭЛИТНАЯ ЧАСТЬ"
-
 msgid "battlePassVehicleAwardView/content/subTitle"
 msgstr "Получены бонусные очки"
 
@@ -416,23 +413,20 @@ msgstr "Текущий этап:"
 msgid "chapter/fullName/1"
 msgstr "Задача без решения"
 
-msgid "chapter/fullName/185"
-msgstr "Артефакты прошлого"
-
 msgid "chapter/fullName/2"
 msgstr "В ад и обратно"
 
-msgid "chapter/fullName/201"
-msgstr "Горный серпантин"
+msgid "chapter/fullName/211"
+msgstr "Советская школа"
 
-msgid "chapter/fullName/202"
-msgstr "На гребне волны"
+msgid "chapter/fullName/212"
+msgstr "Бриллиант в короне"
 
-msgid "chapter/fullName/203"
-msgstr "Нехоженые тропы"
+msgid "chapter/fullName/213"
+msgstr "Окно возможностей"
 
-msgid "chapter/fullName/204"
-msgstr "Пляжная вечеринка"
+msgid "chapter/fullName/214"
+msgstr "Искусство кино"
 
 msgid "chapter/fullName/3"
 msgstr "Пепел на ветру"
@@ -443,50 +437,41 @@ msgstr "Лучик надежды"
 msgid "chapter/fullName/5"
 msgstr "Артефакты прошлого"
 
-msgid "chapter/fullName/quoted/185"
-msgstr "Артефакты прошлого"
+msgid "chapter/fullName/quoted/211"
+msgstr "Советская школа"
 
-msgid "chapter/fullName/quoted/201"
-msgstr "Горный серпантин"
+msgid "chapter/fullName/quoted/212"
+msgstr "Бриллиант в короне"
 
-msgid "chapter/fullName/quoted/202"
-msgstr "На гребне волны"
+msgid "chapter/fullName/quoted/213"
+msgstr "Окно возможностей"
 
-msgid "chapter/fullName/quoted/203"
-msgstr "Нехоженые тропы"
+msgid "chapter/fullName/quoted/214"
+msgstr "Искусство кино"
 
-msgid "chapter/fullName/quoted/204"
-msgstr "Пляжная вечеринка"
+msgid "chapter/fullNameUppercased/211"
+msgstr "СОВЕТСКАЯ ШКОЛА"
 
-msgid "chapter/fullNameUppercased/185"
-msgstr "АРТЕФАКТЫ ПРОШЛОГО"
+msgid "chapter/fullNameUppercased/212"
+msgstr "БРИЛЛИАНТ В КОРОНЕ"
 
-msgid "chapter/fullNameUppercased/201"
-msgstr "ГОРНЫЙ СЕРПАНТИН"
+msgid "chapter/fullNameUppercased/213"
+msgstr "ОКНО ВОЗМОЖНОСТЕЙ"
 
-msgid "chapter/fullNameUppercased/202"
-msgstr "НА ГРЕБНЕ ВОЛНЫ"
+msgid "chapter/fullNameUppercased/214"
+msgstr "ИСКУССТВО КИНО"
 
-msgid "chapter/fullNameUppercased/203"
-msgstr "НЕХОЖЕНЫЕ ТРОПЫ"
+msgid "chapter/fullNameUppercased/quoted/211"
+msgstr "СОВЕТСКАЯ ШКОЛА"
 
-msgid "chapter/fullNameUppercased/204"
-msgstr "ПЛЯЖНАЯ ВЕЧЕРИНКА"
+msgid "chapter/fullNameUppercased/quoted/212"
+msgstr "БРИЛЛИАНТ В КОРОНЕ"
 
-msgid "chapter/fullNameUppercased/quoted/185"
-msgstr "АРТЕФАКТЫ ПРОШЛОГО"
+msgid "chapter/fullNameUppercased/quoted/213"
+msgstr "ОКНО ВОЗМОЖНОСТЕЙ"
 
-msgid "chapter/fullNameUppercased/quoted/201"
-msgstr "ГОРНЫЙ СЕРПАНТИН"
-
-msgid "chapter/fullNameUppercased/quoted/202"
-msgstr "НА ГРЕБНЕ ВОЛНЫ"
-
-msgid "chapter/fullNameUppercased/quoted/203"
-msgstr "НЕХОЖЕНЫЕ ТРОПЫ"
-
-msgid "chapter/fullNameUppercased/quoted/204"
-msgstr "ПЛЯЖНАЯ ВЕЧЕРИНКА"
+msgid "chapter/fullNameUppercased/quoted/214"
+msgstr "ИСКУССТВО КИНО"
 
 msgid "chapter/title"
 msgstr "ГЛАВА %(chapter)s"
@@ -826,10 +811,10 @@ msgid "howToEarnPoints/singleLevel/29"
 msgstr "Место %(level)d"
 
 msgid "howToEarnPoints/solo/29"
-msgstr "Игра соло"
+msgstr "Соло"
 
 msgid "howToEarnPoints/squad/29"
-msgstr "Игра взводом"
+msgstr "Взвод"
 
 msgid "howToEarnPoints/text/1"
 msgstr "Играйте на технике %(startLevel)s – %(endLevel)s уровня"
@@ -958,17 +943,18 @@ msgstr "ДОСТУПНА СПЕЦИАЛЬНАЯ ГЛАВА"
 
 msgid "intro/subTitle"
 msgstr ""
-"Сезон посвящён лету, отдыху, путешествиям и безграничному витамину D, "
-"который дарит нам солнце. Вас ждёт прогулка на побережье, где набегающая "
-"тёплая волна смоет все тревоги и заботы рабочего года."
+"Сезон посвящён трём последовательным испытаниям новейших образцов техники, "
+"проходящих в традициях разных танковых школ. Подходы отличаются, условия "
+"разнятся, но есть кое-что общее: желание создать лучший образец и сохранить "
+"его в тайне от любопытных глаз четвёртой стороны."
 
 msgid "intro/title"
-msgstr "БОЕВОЙ ПРОПУСК: ВСЁ ВКЛЮЧЕНО!"
+msgstr "БОЕВОЙ ПРОПУСК: ПОЛОСА ПРЕПЯТСТВИЙ"
 
 msgid "intro/vehicles/text"
 msgstr ""
-"В этом сезоне представлена новая ключевая техника: Panhard EBR 105, Astron-"
-"FL и GPT-75. Играя на этой технике, вы сможете заработать больше бонусных "
+"В этом сезоне представлена новая ключевая техника: ТЭТ-100, FV242B Condor "
+"и AMX 30 B. Играя на этой технике, вы сможете заработать больше бонусных "
 "очков Боевого пропуска за достижение лимита очков."
 
 msgid "intro/vehicles/title"

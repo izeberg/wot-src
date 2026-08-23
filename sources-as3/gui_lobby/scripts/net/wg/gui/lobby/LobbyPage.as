@@ -18,6 +18,7 @@ package net.wg.gui.lobby
    import net.wg.gui.components.containers.ManagedContainer;
    import net.wg.gui.components.vehicleHitArea.VehicleHitAreaComponent;
    import net.wg.gui.events.LobbyEvent;
+   import net.wg.gui.lobby.hangar.data.LobbyVisibilityVO;
    import net.wg.gui.lobby.header.LobbyHeader;
    import net.wg.gui.lobby.header.headerButtonBar.HBC_Settings;
    import net.wg.gui.lobby.header.headerButtonBar.HeaderButton;
@@ -46,6 +47,8 @@ package net.wg.gui.lobby
       private static const TOP_SUB_VIEW_POSITION:Number = 51;
       
       private static const WARNING_EMPTY_HIT_AREA:String = "vehicleHitArea is null!";
+      
+      private static const HEADER_INVISIBLE_Y:int = -2000;
        
       
       public var vehicleHitArea:VehicleHitAreaComponent = null;
@@ -205,6 +208,23 @@ package net.wg.gui.lobby
          super.onDispose();
       }
       
+      override protected function setInterfaceVisible(param1:LobbyVisibilityVO) : void
+      {
+         var _loc2_:Boolean = param1.headerIsVisible;
+         var _loc3_:Boolean = param1.messengerBarVisible;
+         var _loc4_:Boolean = param1.ignoreTopOffset;
+         if(this.header.visible == _loc2_ && this.messengerBar.visible == _loc3_ && this._ignoreTopOffset == _loc4_)
+         {
+            return;
+         }
+         this._ignoreTopOffset = param1.ignoreTopOffset;
+         this.header.visible = _loc2_;
+         this.header.y = !!_loc2_ ? Number(0) : Number(HEADER_INVISIBLE_Y);
+         this.messengerBar.visible = _loc3_;
+         this.updateStage(App.appWidth,App.appHeight);
+         dispatchEvent(new Event(Event.RESIZE));
+      }
+      
       public function as_closeHelpLayout() : void
       {
          var _loc1_:InteractiveObject = InteractiveObject(this.subViewContainer.getTopmostView(true));
@@ -217,17 +237,6 @@ package net.wg.gui.lobby
       public function as_hideWaiting() : void
       {
          this.waiting.hide();
-      }
-      
-      public function as_showHelpLayout() : void
-      {
-      }
-      
-      public function as_showWaiting(param1:String) : void
-      {
-         this.waiting.setMessage(param1);
-         this.waiting.setSize(_width,_height);
-         this.waiting.show();
       }
       
       public function as_setSubContainerItemsVisibility(param1:Boolean) : void
@@ -255,15 +264,15 @@ package net.wg.gui.lobby
          }
       }
       
-      public function as_setHeaderVisible(param1:Boolean, param2:Boolean) : void
+      public function as_showHelpLayout() : void
       {
-         if(this.header.visible != param1 || this._ignoreTopOffset != param2)
-         {
-            this.header.visible = param1;
-            this._ignoreTopOffset = param2;
-            this.updateStage(App.appWidth,App.appHeight);
-            dispatchEvent(new Event(Event.RESIZE));
-         }
+      }
+      
+      public function as_showWaiting(param1:String) : void
+      {
+         this.waiting.setMessage(param1);
+         this.waiting.setSize(_width,_height);
+         this.waiting.show();
       }
       
       public function getDragType() : String

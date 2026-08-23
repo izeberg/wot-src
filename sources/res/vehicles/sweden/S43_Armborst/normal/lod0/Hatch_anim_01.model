@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/sweden/S43_Armborst/normal/lod0/Hatch_anim_01</nodefullVisual>
+	<visibilityBox>
+		<min>-0.112947 0.128920 1.766365</min>
+		<max>0.112944 0.362736 2.114686</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/sweden/S43_Armborst/normal/lod1/Hatch_anim_01</parent>
+	<extent>32.000000</extent>
+</root>

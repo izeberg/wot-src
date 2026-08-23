@@ -20,12 +20,6 @@ msgstr "Артобстрел"
 msgid "attackReason/bombers"
 msgstr "Авиаудар"
 
-msgid "battleCommunication/hint/description"
-msgstr ", чтобы отметить позицию или установить маркер"
-
-msgid "battleCommunication/hint/press"
-msgstr "Нажмите"
-
 msgid "battleEndWarning/comp7_1/text"
 msgstr "Защищайте обе базы! До конца боя:"
 
@@ -371,9 +365,6 @@ msgstr "%(target)s, назад!"
 msgid "colorSettingsTipPanel/btnLabel"
 msgstr "Перейти к настройкам"
 
-msgid "commanderCam/hint/description"
-msgstr "Крутите колесо мыши на себя, чтобы включить тактический обзор"
-
 msgid "consumables_panel/equipment/activeSeconds"
 msgstr "Время работы: %(activeSeconds)s с."
 
@@ -385,6 +376,9 @@ msgstr "Слот для снаряжения"
 
 msgid "countRibbons/multiSeparator"
 msgstr "x%(multiplier)d"
+
+msgid "crosshair/hint/wtBarrier"
+msgstr "УСТАНОВИТЬ"
 
 msgid "cruise_ctrl/speedMetric"
 msgstr "км/ч"
@@ -578,6 +572,9 @@ msgstr "Машина может быть уничтожена — срочно �
 msgid "destroyTimer/liftOver"
 msgstr "Машина возвращается в строй..."
 
+msgid "destroyTimer/medkitInUse"
+msgstr "?empty?"
+
 msgid "devMaps/hint/description"
 msgstr "для знакомства с особенностями карты"
 
@@ -658,8 +655,8 @@ msgstr "%(meters)d м"
 
 msgid "dynamicSquad/ally/add"
 msgstr ""
-"Нажмите, чтобы отправить приглашение во взвод,\n"
-"принять которое игрок сможет во время боя или после него.%(text)s"
+"Нажмите, чтобы отправить приглашение в группу,\n"
+"принять которое игрок сможет во время боя или после него.%(text)s"
 
 msgid "dynamicSquad/ally/anonymized/clan"
 msgstr ""
@@ -674,17 +671,17 @@ msgstr ""
 "Внимание! Совзводные будут видеть ваше настоящее игровое имя."
 
 msgid "dynamicSquad/ally/disabled"
-msgstr "Данного союзника нельзя пригласить во взвод."
+msgstr "Данного союзника нельзя пригласить в группу."
 
 msgid "dynamicSquad/ally/received"
 msgstr ""
-"Нажмите, чтобы принять приглашение во взвод,\n"
-"который сформируется во время боя."
+"Нажмите, чтобы принять приглашение в группу,\n"
+"которая сформируется во время боя."
 
 msgid "dynamicSquad/ally/wasSent"
 msgstr ""
 "Игроку отправлено приглашение, приняв которое он\n"
-"присоединится к вашему взводу во время боя или после него."
+"присоединится к вашей группе во время боя или после него."
 
 msgid "dynamicSquad/enemy/add"
 msgstr ""
@@ -977,12 +974,6 @@ msgstr "Для данного типа боя нет принятых к исп�
 msgid "personalMissions/tip/noQuests/vehicleType"
 msgstr "Для данного типа техники нет принятых к исполнению боевых задач."
 
-msgid "personal_reserves/hint/description"
-msgstr ", чтобы активировать личные резервы"
-
-msgid "personal_reserves/hint/press"
-msgstr "Нажмите"
-
 msgid "player_errors/cant_move/chassis_damaged"
 msgstr "Движение невозможно: повреждена ходовая."
 
@@ -1027,6 +1018,11 @@ msgstr "Орудие перегрето. Смена снарядов невоз�
 
 msgid "player_errors/cant_switch/engine_destroyed"
 msgstr "Смена режима недоступна: двигатель выведен из строя."
+
+msgid "player_errors/equipment/FEPmedkit/allTankmenAreSafe"
+msgstr ""
+"Экипаж не пострадал, медицинская помощь не требуется. Машина имеет полный "
+"запас прочности."
 
 msgid "player_errors/equipment/ability/alreadyActivated"
 msgstr "Модификация «%(name)s» уже активирована."

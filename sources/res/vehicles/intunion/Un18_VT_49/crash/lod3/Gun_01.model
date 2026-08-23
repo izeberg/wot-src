@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/intunion/Un18_VT_49/crash/lod3/Gun_01</nodefullVisual>
+	<parent>vehicles/intunion/Un18_VT_49/crash/lod4/Gun_01</parent>
+	<tank>true</tank>
+	<extent>
+		192.0
+		<!--BW_String-->
+	</extent>
+	<visibilityBox>
+		<min>-0.565716 -0.282419 -1.183287</min>
+		<max>0.566414 0.360783 3.572122</max>
+	</visibilityBox>
+</root>

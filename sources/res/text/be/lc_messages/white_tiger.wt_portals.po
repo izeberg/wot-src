@@ -1,0 +1,118 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "disabled/warning"
+msgstr "Открытие порталов и покупка стартеров временно недоступны"
+
+msgid "guaranteedProgressBar/left"
+msgstr ""
+"Запусков портала и замен наград до гарантированной премиум машины: %(count)s"
+
+msgid "guaranteedProgressBar/nextLaunch"
+msgstr "следующем запуске!"
+
+msgid "guaranteedProgressBar/oneLeft"
+msgstr "Премиум машина уже при %(text)s"
+
+msgid "insidePortal/allPossible"
+msgstr "Усе"
+
+msgid "insidePortal/backButton"
+msgstr "К ПОРТАЛАМ"
+
+msgid "insidePortal/count"
+msgstr "%(multi)s%(count)s"
+
+msgid "insidePortal/countMulti"
+msgstr "×"
+
+msgid "insidePortal/hunter/customization/description"
+msgstr "Элементы внешнего вида, в том числе с прошлых столкновений."
+
+msgid "insidePortal/probability/label"
+msgstr "%(probability)%"
+
+msgid "insidePortal/rewardTanks/separator"
+msgstr "%(tank), "
+
+msgid "insidePortal/rewardTanks/tanks"
+msgstr "%(tanks)."
+
+msgid "insidePortal/rewardTanks/tooltip/body"
+msgstr ""
+"Премиум машины позволяют зарабатывать больше кредитов, боевого опыта и опыта"
+" экипажа в боях. На премиум технику можно пересаживать экипаж той же нации "
+"и с того же типа техники бесплатно."
+
+msgid "insidePortal/rewardTanks/tooltip/header"
+msgstr "Прэміум тэхніка"
+
+msgid "insidePortal/tooltips/probability/body"
+msgstr "Шанс выпадения награды из указанной категории."
+
+msgid "insidePortal/tooltips/probability/header"
+msgstr "Імавернасць"
+
+msgid "insideVehiclePortal/buttonGetTank"
+msgstr "Забрать танк"
+
+msgid "insideVehiclePortal/description"
+msgstr ""
+"Достаточно динамичный тяжёлый танк поддержки с хорошей максимальной "
+"скоростью. Лобовое бронирование крепкое и зачастую прощает ошибки, однако "
+"следует помнить о нескольких уязвимых зонах во фронтальной проекции, которые"
+" по возможности стоит прятать от огня противника. Танк вооружён прекрасным "
+"120-мм орудием с магазином на 5 снарядов, удачная реализация которого "
+"не оставит цели шансов пережить эту дуэль."
+
+msgid "insideVehiclePortal/discount/title"
+msgstr "СКИДКА НА ЗАПУСК ПОРТАЛА"
+
+msgid "insideVehiclePortal/discount/tooltip"
+msgstr "Скидки не суммируются. Применяется максимальная из полученных скидок."
+
+msgid "insideVehiclePortal/redDiscount"
+msgstr "-%(discount)%"
+
+msgid "notGuaranteed/warning"
+msgstr ""
+"Механика гарантированной награды отключена: у вас есть вся премиум техника "
+"из списка."
+
+msgid "portalView/hoverDesc/boss"
+msgstr ""
+"Из портала выпадает премиум техника, наградные танки {cream_Open}Projet 57 Ampere {cream_Close} и {cream_Open}Czolg (P) wz.46 Wiedźmak{cream_Close}, 3D-стили и другие ценные награды.\n"
+"\n"
+"Если после {yellow_Open}39{yellow_Close} запусков, включая перезапуски портала, не выпадает премиум машина, вы гарантированно её получите на {yellow_Open}40-м запуске{yellow_Close}.\n"
+"\n"
+"{orange_Open}Обратите внимание:{orange_Close} {cream_Open}Projet 57 Ampere{cream_Close} и {cream_Open}Czolg (P) wz.46 Wiedźmak{cream_Close} не могут быть получены по механике гарантированной награды."
+
+msgid "portalView/hoverDesc/hunter"
+msgstr ""
+"Из портала выпадают как новые элементы внешнего вида, так и элементы "
+"с прошлых столкновений, а также другие ценные награды."
+
+msgid "portalView/hoverDesc/tank"
+msgstr ""
+"При запуске портала вы получите танк {brown_Open}X{brown_Close} уровня {brown_Open}Projet 57{brown_Close}.\n"
+"\n"
+"Чтобы уменьшить стоимость запуска портала, проходите прогрессию и зарабатывайте скидки. Максимальная скидка на запуск портала {cream_Open}50%{cream_Close}."
+
+msgid "portalView/toHangarButton/label"
+msgstr "В АНГАР"
+
+msgid "title/boss"
+msgstr "Портал Инженера (тестовый)"
+
+msgid "title/hunter"
+msgstr "Портал Гончих (тестовый)"
+
+msgid "title/tank"
+msgstr "ПОРТАЛ С ТАНКОМ"

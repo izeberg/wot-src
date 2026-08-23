@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/japan/J51_Naginata/crash/lod1/Hull</nodefullVisual>
+	<parent>vehicles/japan/J51_Naginata/crash/lod2/Hull</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.772299 -0.964570 -3.803065</min>
+		<max>1.741831 0.781029 3.613415</max>
+	</visibilityBox>
+</root>

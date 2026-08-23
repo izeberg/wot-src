@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<parent>vehicles/french/F144_Etoile/crash/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.776647 -0.891637 -3.773530</min>
+		<max>1.768732 1.073340 3.505658</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/french/F144_Etoile/crash/lod0/Hull</nodefullVisual>
+</root>

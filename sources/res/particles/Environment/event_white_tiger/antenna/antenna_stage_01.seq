@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>5.000001</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>ray_01</name>
+		<type>model</type>
+		<resource>content/Environment/env_null_model/null_model.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>3.025116 12.352428 -0.736786</value>
+				<inTangent>-0.183984 -0.270382 0.721643</inTangent>
+				<outTangent>-0.183984 -0.270382 0.721643</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.500000</startTime>
+				<value>2.565155 11.676474 1.067322</value>
+				<inTangent>-0.295703 -0.000005 0.709857</inTangent>
+				<outTangent>-0.295703 -0.000005 0.709857</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.000000</startTime>
+				<value>1.546600 12.352406 2.812500</value>
+				<inTangent>-0.407422 0.270373 0.698071</inTangent>
+				<outTangent>-0.407422 0.270373 0.698071</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 13.333332 0.000000</inTangent>
+				<outTangent>0.000000 13.333332 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.500000</startTime>
+				<value>0.000000 20.000000 0.000000</value>
+				<inTangent>0.000000 -1.666667 0.000000</inTangent>
+				<outTangent>0.000000 -1.666667 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.300000</startTime>
+				<value>0.000000 -10.000000 0.000000</value>
+				<inTangent>0.000000 -5.392157 0.000000</inTangent>
+				<outTangent>0.000000 -5.392157 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.000000 5.882352 -0.000000</inTangent>
+				<outTangent>-0.000000 5.882352 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.400000 0.400000 0.400000</value>
+				<inTangent>0.599999 0.599999 0.599999</inTangent>
+				<outTangent>0.080000 0.080000 0.080000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.000000</startTime>
+				<value>0.800000 0.800000 0.800000</value>
+				<inTangent>0.080000 0.080000 0.080000</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>sequence</name>
+			<type>sequence</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>0.700000</duration>
+				<value>particles/Environment/event_white_tiger/antenna/Antenna_rays/antenna_ray_01_4.seq</value>
+				<speed>1.000000</speed>
+			</frame>
+			<frame>
+				<startTime>0.766667</startTime>
+				<duration>0.700000</duration>
+				<value>particles/Environment/event_white_tiger/antenna/Antenna_rays/antenna_ray_01_4.seq</value>
+				<speed>1.000000</speed>
+			</frame>
+			<frame>
+				<startTime>1.733333</startTime>
+				<duration>0.700000</duration>
+				<value>particles/Environment/event_white_tiger/antenna/Antenna_rays/antenna_ray_01.seq</value>
+				<speed>1.000000</speed>
+			</frame>
+			<frame>
+				<startTime>2.666667</startTime>
+				<duration>1.333333</duration>
+				<value>particles/Environment/event_white_tiger/antenna/Antenna_rays/antenna_ray_01_4.seq</value>
+				<speed>1.000000</speed>
+			</frame>
+			<frame>
+				<startTime>4.266667</startTime>
+				<duration>0.700000</duration>
+				<value>particles/Environment/event_white_tiger/antenna/Antenna_rays/antenna_ray_01_4.seq</value>
+				<speed>1.000000</speed>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>ray_02</name>
+		<type>model</type>
+		<resource>content/Environment/env_null_model/null_model.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.676453 11.593237 -2.255890</value>
+				<inTangent>-1.021024 0.224032 -0.247164</inTangent>
+				<outTangent>-1.021024 0.224032 -0.247164</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.166667</startTime>
+				<value>-0.535767 12.078640 -2.791412</value>
+				<inTangent>-0.851180 0.274425 0.177093</inTangent>
+				<outTangent>-0.851180 0.274425 0.177093</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.000000</startTime>
+				<value>-2.466217 12.998955 -1.087585</value>
+				<inTangent>-0.681336 0.324817 0.601351</inTangent>
+				<outTangent>-0.681336 0.324817 0.601351</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 90.000000 70.000000</value>
+				<inTangent>0.000000 0.000000 -9.374999</inTangent>
+				<outTangent>0.000000 0.000000 -43.750000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.600000</startTime>
+				<value>0.000000 90.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -43.750000</inTangent>
+				<outTangent>0.000000 0.000000 63.157898</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.500000</startTime>
+				<value>0.000000 90.000000 120.000000</value>
+				<inTangent>-0.000000 -0.000000 63.157898</inTangent>
+				<outTangent>0.000000 0.000000 -97.297272</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.733334</startTime>
+				<value>0.000000 90.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -97.297272</inTangent>
+				<outTangent>-0.000000 -0.000000 -97.297272</outTangent>
+				<tangentMode>1</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.400000 0.400000 0.400000</value>
+				<inTangent>0.060000 0.060000 0.060000</inTangent>
+				<outTangent>0.060000 0.060000 0.060000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>sequence</name>
+			<type>sequence</type>
+			<frame>
+				<startTime>0.133333</startTime>
+				<duration>1.333333</duration>
+				<value>particles/Environment/event_white_tiger/antenna/Antenna_rays/antenna_ray_02.seq</value>
+				<speed>1.000000</speed>
+			</frame>
+			<frame>
+				<startTime>1.833333</startTime>
+				<duration>1.033333</duration>
+				<value>particles/Environment/event_white_tiger/antenna/Antenna_rays/antenna_ray_02.seq</value>
+				<speed>1.000000</speed>
+			</frame>
+			<frame>
+				<startTime>3.233334</startTime>
+				<duration>1.200000</duration>
+				<value>particles/Environment/event_white_tiger/antenna/Antenna_rays/antenna_ray_02.seq</value>
+				<speed>1.000000</speed>
+			</frame>
+			<frame>
+				<startTime>4.500000</startTime>
+				<duration>0.500000</duration>
+				<value>particles/Environment/event_white_tiger/antenna/Antenna_rays/antenna_ray_02.seq</value>
+				<speed>1.000000</speed>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>ray_04</name>
+		<type>model</type>
+		<resource>content/Environment/env_null_model/null_model.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-2.732635 12.305723 -0.786102</value>
+				<inTangent>0.095528 -0.012042 0.514062</inTangent>
+				<outTangent>0.095528 -0.012042 0.514062</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.433333</startTime>
+				<value>-2.500183 12.276421 0.464783</value>
+				<inTangent>0.191758 0.014928 0.559880</inTangent>
+				<outTangent>0.191758 0.014928 0.559880</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.000000</startTime>
+				<value>-1.761017 12.383957 2.019409</value>
+				<inTangent>0.287987 0.041897 0.605699</inTangent>
+				<outTangent>0.287987 0.041897 0.605699</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 -70.000000 37.000000</value>
+				<inTangent>0.000000 0.000000 -10.384614</inTangent>
+				<outTangent>0.000000 0.000000 -10.384614</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.733333</startTime>
+				<value>0.000000 -70.000000 19.000000</value>
+				<inTangent>-0.000000 -0.000000 -10.384618</inTangent>
+				<outTangent>0.000000 0.000000 11.249997</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.600000</startTime>
+				<value>0.000000 -70.000000 40.000000</value>
+				<inTangent>-0.000000 -0.000000 11.249997</inTangent>
+				<outTangent>-0.000000 -0.000000 11.454546</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.400000 0.400000 0.400000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.060000 0.060000 0.060000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>sequence</name>
+			<type>sequence</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>1.666667</duration>
+				<value>particles/Environment/event_white_tiger/antenna/Antenna_rays/antenna_ray_04.seq</value>
+				<speed>1.000000</speed>
+			</frame>
+			<frame>
+				<startTime>1.900000</startTime>
+				<duration>0.700000</duration>
+				<value>particles/Environment/event_white_tiger/antenna/Antenna_rays/antenna_ray_04.seq</value>
+				<speed>1.000000</speed>
+			</frame>
+			<frame>
+				<startTime>2.766667</startTime>
+				<duration>1.266667</duration>
+				<value>particles/Environment/event_white_tiger/antenna/Antenna_rays/antenna_ray_04.seq</value>
+				<speed>1.000000</speed>
+			</frame>
+			<frame>
+				<startTime>4.233334</startTime>
+				<duration>0.700000</duration>
+				<value>particles/Environment/event_white_tiger/antenna/Antenna_rays/antenna_ray_04.seq</value>
+				<speed>1.000000</speed>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>small_01</name>
+		<type>model</type>
+		<resource>content/Environment/env_null_model/null_model.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>2.028656 12.025198 1.556549</value>
+				<inTangent>0.050659 -0.000005 0.730743</inTangent>
+				<outTangent>0.050659 -0.000005 0.730743</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.300000 0.300000 0.300000</value>
+				<inTangent>0.060000 0.060000 0.060000</inTangent>
+				<outTangent>0.060000 0.060000 0.060000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>sequence</name>
+			<type>sequence</type>
+			<frame>
+				<startTime>0.066667</startTime>
+				<duration>0.600000</duration>
+				<value>particles/Environment/event_white_tiger/antenna/Antenna_rays/antenna_ray_01.seq</value>
+				<speed>1.000000</speed>
+			</frame>
+			<frame>
+				<startTime>0.966667</startTime>
+				<duration>0.700000</duration>
+				<value>particles/Environment/event_white_tiger/antenna/Antenna_rays/antenna_ray_01.seq</value>
+				<speed>1.000000</speed>
+			</frame>
+			<frame>
+				<startTime>1.900000</startTime>
+				<duration>0.700000</duration>
+				<value>particles/Environment/event_white_tiger/antenna/Antenna_rays/antenna_ray_01.seq</value>
+				<speed>1.000000</speed>
+			</frame>
+			<frame>
+				<startTime>2.666667</startTime>
+				<duration>1.300000</duration>
+				<value>particles/Environment/event_white_tiger/antenna/Antenna_rays/antenna_ray_01.seq</value>
+				<speed>1.000000</speed>
+			</frame>
+			<frame>
+				<startTime>4.133334</startTime>
+				<duration>0.866667</duration>
+				<value>particles/Environment/event_white_tiger/antenna/Antenna_rays/antenna_ray_01.seq</value>
+				<speed>1.000000</speed>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>small_02</name>
+		<type>model</type>
+		<resource>content/Environment/env_null_model/null_model.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-2.592255 11.690605 -0.585754</value>
+				<inTangent>-0.162299 -0.048914 0.041089</inTangent>
+				<outTangent>-0.162299 -0.048914 0.041089</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 200.000000 25.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.400000 0.400000 0.400000</value>
+				<inTangent>0.060000 0.060000 0.060000</inTangent>
+				<outTangent>0.060000 0.060000 0.060000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>sequence</name>
+			<type>sequence</type>
+			<frame>
+				<startTime>0.100000</startTime>
+				<duration>1.333333</duration>
+				<value>particles/Environment/event_white_tiger/antenna/Antenna_rays/antenna_ray_02.seq</value>
+				<speed>1.000000</speed>
+			</frame>
+			<frame>
+				<startTime>1.600000</startTime>
+				<duration>1.033333</duration>
+				<value>particles/Environment/event_white_tiger/antenna/Antenna_rays/antenna_ray_02.seq</value>
+				<speed>1.000000</speed>
+			</frame>
+			<frame>
+				<startTime>2.800000</startTime>
+				<duration>1.200000</duration>
+				<value>particles/Environment/event_white_tiger/antenna/Antenna_rays/antenna_ray_02.seq</value>
+				<speed>1.000000</speed>
+			</frame>
+			<frame>
+				<startTime>4.200000</startTime>
+				<duration>0.700000</duration>
+				<value>particles/Environment/event_white_tiger/antenna/Antenna_rays/antenna_ray_02.seq</value>
+				<speed>1.000000</speed>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>small_03</name>
+		<type>model</type>
+		<resource>content/Environment/env_null_model/null_model.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.729828 12.351641 2.947144</value>
+				<inTangent>0.147461 -0.000003 0.399792</inTangent>
+				<outTangent>0.147461 -0.000003 0.399792</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 260.000000 -30.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.400000 0.400000 0.400000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.040000 0.040000 0.040000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>sequence</name>
+			<type>sequence</type>
+			<frame>
+				<startTime>0.133333</startTime>
+				<duration>1.033333</duration>
+				<value>particles/Environment/event_white_tiger/antenna/Antenna_rays/antenna_ray_03.seq</value>
+				<speed>1.000000</speed>
+			</frame>
+			<frame>
+				<startTime>1.266667</startTime>
+				<duration>1.766667</duration>
+				<value>particles/Environment/event_white_tiger/antenna/Antenna_rays/antenna_ray_03.seq</value>
+				<speed>1.000000</speed>
+			</frame>
+			<frame>
+				<startTime>3.666667</startTime>
+				<duration>1.300000</duration>
+				<value>particles/Environment/event_white_tiger/antenna/Antenna_rays/antenna_ray_03.seq</value>
+				<speed>1.000000</speed>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>small_05</name>
+		<type>model</type>
+		<resource>content/Environment/env_null_model/null_model.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.596375 12.654165 2.508209</value>
+				<inTangent>-0.316400 -0.000003 0.297345</inTangent>
+				<outTangent>-0.316400 -0.000003 0.297345</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 -45.000000 -30.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.300000 0.300000 0.300000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.040000 0.040000 0.040000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>sequence</name>
+			<type>sequence</type>
+			<frame>
+				<startTime>0.366667</startTime>
+				<duration>2.466667</duration>
+				<value>particles/Environment/event_white_tiger/antenna/Antenna_rays/antenna_ray_05.seq</value>
+				<speed>1.000000</speed>
+			</frame>
+			<frame>
+				<startTime>3.100000</startTime>
+				<duration>0.966667</duration>
+				<value>particles/Environment/event_white_tiger/antenna/Antenna_rays/antenna_ray_05.seq</value>
+				<speed>1.000000</speed>
+			</frame>
+			<frame>
+				<startTime>4.300000</startTime>
+				<duration>0.700000</duration>
+				<value>particles/Environment/event_white_tiger/antenna/Antenna_rays/antenna_ray_05.seq</value>
+				<speed>1.000000</speed>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Particle 0</name>
+		<type>particle</type>
+		<resource>particles/Environment/event_white_tiger/antenna/Antenna_rays/antenna_sparks_red.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.400000 12.200000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Particle 1</name>
+		<type>particle</type>
+		<resource>particles/Environment/event_white_tiger/antenna/Antenna_rays/antenna_sparks_red.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 12.100000 -0.960000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 90.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

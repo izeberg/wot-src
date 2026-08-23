@@ -20,7 +20,7 @@ from gui.ClientUpdateManager import g_clientUpdateManager
 from gui.Scaleform.Waiting import Waiting
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
 from gui.Scaleform.daapi.view.lobby.header import battle_selector_items
-from gui.Scaleform.daapi.view.lobby.header.fight_btn_tooltips import getComp7BattlesOnlyVehicleTooltipData, getComp7FightBtnTooltipData, getEpicBattlesOnlyVehicleTooltipData, getEpicFightBtnTooltipData, getEventTooltipData, getFunRandomFightBtnTooltipData, getMapboxFightBtnTooltipData, getMapsTrainingTooltipData, getPreviewTooltipData, getRandomTooltipData, getRankedFightBtnTooltipData, getSquadFightBtnTooltipData, getVersusAIFightBtnTooltipData
+from gui.Scaleform.daapi.view.lobby.header.fight_btn_tooltips import getComp7BattlesOnlyVehicleTooltipData, getComp7FightBtnTooltipData, getEpicBattlesOnlyVehicleTooltipData, getEpicFightBtnTooltipData, getEventTooltipData, getFunRandomFightBtnTooltipData, getMapboxFightBtnTooltipData, getMapsTrainingTooltipData, getPreviewTooltipData, getRandomTooltipData, getRankedFightBtnTooltipData, getSquadFightBtnTooltipData, getVersusAIFightBtnTooltipData, getWtTooltipData
 from gui.Scaleform.daapi.view.lobby.hof.hof_helpers import getTabCounter
 from gui.Scaleform.daapi.view.lobby.store.browser.shop_helpers import getBuyGoldUrl, getBuyPremiumUrl, isSubscriptionEnabled, getShopRootUrl
 from gui.Scaleform.daapi.view.lobby.store.browser.shop_helpers import getWotPlusShopUrl
@@ -67,6 +67,7 @@ from gui.shop import showIngameShop, Origin
 from gui.techtree.go_back_helper import WulfPreviewAlias
 from gui.tournament.tournament_helpers import showTournaments, isTournamentEnabled
 from helpers import dependency, i18n, isPlayerAccount, time_utils
+from skeletons.gui.game_control import IMuseumOfGloryController
 from predefined_hosts import PING_STATUSES, g_preDefinedHosts
 from renewable_subscription_common.settings_constants import WotPlusState
 from shared_utils import CONST_CONTAINER, BitmaskHelper
@@ -90,6 +91,8 @@ from skeletons.tutorial import ITutorialLoader
 from uilogging.personal_reserves.loggers import PersonalReservesActivationScreenFlowLogger
 from uilogging.rename_testing.loggers import RenameTestingUILogger
 from uilogging.wot_plus.loggers import WotPlusHeaderLogger
+from skeletons.prebattle_vehicle import IPrebattleVehicle
+from skeletons.gui.game_control import IWhiteTigerController
 if typing.TYPE_CHECKING:
     from typing import Optional, Dict, Tuple
     from gui.platform.wgnp.steam_account.statuses import SteamAccEmailStatus
@@ -247,6 +250,7 @@ class LobbyHeader(LobbyHeaderMeta, ClanEmblemsHelper, IGlobalListener):
         STRONGHOLD = VIEW_ALIAS.LOBBY_STRONGHOLD
         PERSONAL_MISSIONS_PAGE = VIEW_ALIAS.PERSONAL_MISSIONS_PAGE
         TOURNAMENTS = VIEW_ALIAS.LOBBY_TOURNAMENTS
+        MUSEUM = VIEW_ALIAS.MUSEUM_VIEW
 
     ACCOUNT_SETTINGS_COUNTERS = (
      TABS.STORE,)
@@ -302,6 +306,9 @@ class LobbyHeader(LobbyHeaderMeta, ClanEmblemsHelper, IGlobalListener):
     __limitedUIController = dependency.descriptor(ILimitedUIController)
     __earlyAccessController = dependency.descriptor(IEarlyAccessController)
     __unseenEventsManager = dependency.descriptor(IUnseenEventsCounter)
+    __museumOfGloryCtrl = dependency.descriptor(IMuseumOfGloryController)
+    __wtController = dependency.descriptor(IWhiteTigerController)
+    prebattleVehicle = dependency.descriptor(IPrebattleVehicle)
     __SELECTOR_TOOLTIP_TYPE = TOOLTIPS.HEADER_BATTLETYPE
 
     def __init__(self):
@@ -583,6 +590,7 @@ class LobbyHeader(LobbyHeaderMeta, ClanEmblemsHelper, IGlobalListener):
         self.lobbyContext.getServerSettings().onServerSettingsChange += self.__onServerSettingChanged
         g_currentVehicle.onChanged += self.__onVehicleChanged
         g_currentPreviewVehicle.onChanged += self.__onVehicleChanged
+        self.prebattleVehicle.onChanged += self.__onVehicleChanged
         self.hangarSpace.onSpaceCreate += self.__onHangarSpaceCreated
         self.hangarSpace.onSpaceDestroy += self.__onHangarSpaceDestroy
         self.eventsCache.onSyncCompleted += self.__onEventsCacheResync
@@ -611,6 +619,8 @@ class LobbyHeader(LobbyHeaderMeta, ClanEmblemsHelper, IGlobalListener):
         self.__comp7Controller.onQualificationStateUpdated += self.__updateComp7
         self.__achievements20Controller.onUpdate += self.__onProfileVisited
         self.__earlyAccessController.onUpdated += self.__updateEarlyAccess
+        self.__museumOfGloryCtrl.onConfigUpdate += self._updateHangarMenuData
+        self.__wtController.onUpdated += self.__updateWhiteTiger
         g_playerEvents.onEnqueued += self._updatePrebattleControls
         g_playerEvents.onDequeued += self._updatePrebattleControls
         g_playerEvents.onArenaCreated += self._updatePrebattleControls
@@ -701,6 +711,7 @@ class LobbyHeader(LobbyHeaderMeta, ClanEmblemsHelper, IGlobalListener):
         self.lobbyContext.getServerSettings().onServerSettingsChange -= self.__onServerSettingChanged
         g_currentVehicle.onChanged -= self.__onVehicleChanged
         g_currentPreviewVehicle.onChanged -= self.__onVehicleChanged
+        self.prebattleVehicle.onChanged -= self.__onVehicleChanged
         self.hangarSpace.onSpaceCreate -= self.__onHangarSpaceCreated
         self.hangarSpace.onSpaceDestroy -= self.__onHangarSpaceDestroy
         self.eventsCache.onSyncCompleted -= self.__onEventsCacheResync
@@ -726,6 +737,8 @@ class LobbyHeader(LobbyHeaderMeta, ClanEmblemsHelper, IGlobalListener):
         self.__comp7Controller.onQualificationStateUpdated -= self.__updateComp7
         self.__achievements20Controller.onUpdate -= self.__onProfileVisited
         self.__earlyAccessController.onUpdated -= self.__updateEarlyAccess
+        self.__museumOfGloryCtrl.onConfigUpdate -= self._updateHangarMenuData
+        self.__wtController.onUpdated -= self.__updateWhiteTiger
         self.clanNotificationCtrl.onClanNotificationUpdated -= self.__updateStrongholdCounter
         self.__funRandomCtrl.subscription.removeSubModesWatcher(self._updatePrebattleControls, True)
         g_playerEvents.onEnqueued -= self._updatePrebattleControls
@@ -821,6 +834,9 @@ class LobbyHeader(LobbyHeaderMeta, ClanEmblemsHelper, IGlobalListener):
     def __updateComp7(self):
         self._updatePrebattleControls()
 
+    def __updateWhiteTiger(self):
+        self._updatePrebattleControls()
+
     def __onComp7MetaOpened(self, *_):
         for alias in self.TABS.ALL():
             self.as_doDeselectHeaderButtonS(alias)
@@ -906,7 +922,7 @@ class LobbyHeader(LobbyHeaderMeta, ClanEmblemsHelper, IGlobalListener):
         self.as_updateAnonymizedStateS(self.anonymizerController.isAnonymized)
 
     def __updateUiEffectsState(self, forceUIEffectDisable=False):
-        if self.__uiEffectsIsActive != self.hasUiEffects or forceUIEffectDisable and not self.__uiEffectsIsActive:
+        if self.__uiEffectsIsActive != self.hasUiEffects or forceUIEffectDisable and self.__uiEffectsIsActive:
             self.__uiEffectsIsActive = self.hasUiEffects and not forceUIEffectDisable
             self.as_updateUiEffectsStateS(self.__uiEffectsIsActive)
 
@@ -1087,6 +1103,9 @@ class LobbyHeader(LobbyHeaderMeta, ClanEmblemsHelper, IGlobalListener):
             showBarracks()
         elif alias == self.TABS.TECHTREE:
             showVehicleTechTreeView()
+        elif alias == self.TABS.MUSEUM:
+            from museum_of_glory.gui.window_events import showMuseumVehicleView
+            showMuseumVehicleView()
         else:
             event = g_entitiesFactories.makeLoadEvent(SFViewLoadParams(alias))
             if event is not None:
@@ -1182,6 +1201,7 @@ class LobbyHeader(LobbyHeaderMeta, ClanEmblemsHelper, IGlobalListener):
         brAvailable = isBrCycle and self.__battleRoyaleController.isEnabled()
         isEpicBattleAvailabe = self.epicController.isEnabled() and self.epicController.isCurrentCycleActive()
         isEventBattlesAvailable = self.__eventBattlesController.isEnabled()
+        isEventBattlesAvailable = isEventBattlesAvailable or self.__wtController.isEnabled()
         mapboxAvailable = self.__mapboxCtrl.isActive() and self.__mapboxCtrl.isInPrimeTime()
         return not self.bootcampController.isInBootcamp() and (self.rankedController.isAvailable() or self.__funRandomCtrl.subModesInfo.isAvailable() or isEpicBattleAvailabe or brAvailable or mapboxAvailable or isEventBattlesAvailable or self.__isCosmicEvtAvailable)
 
@@ -1220,6 +1240,7 @@ class LobbyHeader(LobbyHeaderMeta, ClanEmblemsHelper, IGlobalListener):
             isRandom = state.isInPreQueue(constants.QUEUE_TYPE.RANDOMS)
             isLegacyTraining = state.isInLegacy(PREBATTLE_TYPE.TRAINING)
             isComp7 = state.isInPreQueue(constants.QUEUE_TYPE.COMP7) or state.isInUnit(constants.PREBATTLE_TYPE.COMP7)
+            isWhiteTiger = state.isInPreQueue(constants.QUEUE_TYPE.WHITE_TIGER) or state.isInUnit(constants.PREBATTLE_TYPE.WHITE_TIGER)
             isVersusAI = state.isInPreQueue(constants.QUEUE_TYPE.VERSUS_AI) or state.isInUnit(constants.PREBATTLE_TYPE.VERSUS_AI)
 
             def isCosmic():
@@ -1252,6 +1273,8 @@ class LobbyHeader(LobbyHeaderMeta, ClanEmblemsHelper, IGlobalListener):
                         tooltip = PLATOON.HEADERBUTTON_TOOLTIPS_COMP7SQUAD
                     elif isVersusAI:
                         tooltip = PLATOON.HEADERBUTTON_TOOLTIPS_VERSUSAISQUAD
+                    elif isWhiteTiger:
+                        tooltip = makeTooltip(backport.text(R.strings.platoon.headerButton.tooltips.whiteTigerSquad.header()), backport.text(R.strings.platoon.headerButton.tooltips.whiteTigerSquad.body()))
                     else:
                         tooltip = PLATOON.HEADERBUTTON_TOOLTIPS_SQUAD
                 elif isRoyale:
@@ -1276,7 +1299,7 @@ class LobbyHeader(LobbyHeaderMeta, ClanEmblemsHelper, IGlobalListener):
             tooltipData, isSpecial = '', False
             if self.__isFightBtnDisabled and not state.hasLockedState:
                 if isEvent and state.isInUnit(constants.PREBATTLE_TYPE.EVENT):
-                    tooltipData = getEventTooltipData()
+                    tooltipData = getEventTooltipData(result)
                 elif g_currentVehicle.isOnlyForEpicBattles() and (g_currentVehicle.isUnsuitableToQueue() or g_currentVehicle.isDisabledInRent()):
                     tooltipData = getEpicBattlesOnlyVehicleTooltipData(result)
                 elif g_currentVehicle.isOnlyForComp7Battles() and (g_currentVehicle.isUnsuitableToQueue() or g_currentVehicle.isDisabledInRent()):
@@ -1301,6 +1324,8 @@ class LobbyHeader(LobbyHeaderMeta, ClanEmblemsHelper, IGlobalListener):
                     tooltipData = getComp7FightBtnTooltipData(result)
                 elif isVersusAI:
                     tooltipData = getVersusAIFightBtnTooltipData(result)
+                elif isWhiteTiger:
+                    tooltipData = getWtTooltipData(result)
             else:
                 if isRoyale and g_currentVehicle.isOnlyForBattleRoyaleBattles():
                     tooltipData = TOOLTIPS_CONSTANTS.BATTLE_ROYALE_PERF_ADVANCED
@@ -1373,6 +1398,8 @@ class LobbyHeader(LobbyHeaderMeta, ClanEmblemsHelper, IGlobalListener):
             self.__updateNewLobbyTabCounter(self.TABS.PERSONAL_MISSIONS)
         if isTournamentEnabled():
             self.__updateNewLobbyTabCounter(self.TABS.TOURNAMENTS)
+        if self.__museumOfGloryCtrl.isEnabled:
+            self.__updateMuseumOfGloryCounter()
 
     def _onPremiumTypeChanged(self, _):
         self.__unseenEventsManager.cleanUpPremium()
@@ -1498,6 +1525,11 @@ class LobbyHeader(LobbyHeaderMeta, ClanEmblemsHelper, IGlobalListener):
             highlightImage = backport.image(R.images.gui.maps.icons.lobby.header.highlight_early_access())
         self.as_setButtonHighlightS(self.TABS.TECHTREE, highlightImage)
 
+    def __updateMuseum(self, *_):
+        return {'label': MENU.HEADERBUTTON_MUSEUM, 
+           'value': self.TABS.MUSEUM, 
+           'tooltip': TOOLTIPS.HEADER_BUTTONS_MUSEUM}
+
     def _updateStrongholdsSelector(self):
         strongholdEnabled = isStrongholdsEnabled()
         clansTabReplaceStrongholds = isClansTabReplaceStrongholds()
@@ -1610,6 +1642,8 @@ class LobbyHeader(LobbyHeaderMeta, ClanEmblemsHelper, IGlobalListener):
         override = self._tutorialLoader.gui.lastHangarMenuButtonsOverride
         if override is not None:
             tabDataProvider[:] = filter(lambda item: item['value'] in override, tabDataProvider)
+        if self.__museumOfGloryCtrl.isEnabled:
+            tabDataProvider.append(self.__updateMuseum())
         return tabDataProvider
 
     def _updateHangarMenuData(self, *_):
@@ -1736,6 +1770,15 @@ class LobbyHeader(LobbyHeaderMeta, ClanEmblemsHelper, IGlobalListener):
 
     def __updateStrongholdCounter(self):
         self.__updateTabCounter(self.TABS.STRONGHOLD, self.clanNotificationCtrl.newsCounter)
+
+    def __updateMuseumOfGloryCounter(self):
+        from museum_of_glory_account_settings import getMuseumOfGlorySetting
+        from museum_of_glory.museum_of_glory_constants import NEW_CONTENT
+        counter = None
+        if getMuseumOfGlorySetting(NEW_CONTENT):
+            counter = ' '
+        self.__updateTabCounter(self.TABS.MUSEUM, counter)
+        return
 
     def __updateTabCounter(self, alias, counter=None):
         if alias not in self.TABS.ALL():

@@ -84,9 +84,10 @@ package net.wg.gui.lobby.components
       private function layout() : void
       {
          var _loc1_:int = 0;
+         var _loc3_:int = 0;
          _loc1_ = this.icon.width + this.abilityTF.width;
          var _loc2_:int = -(_loc1_ + ICON_RIGHT_PADDING) >> 1;
-         var _loc3_:int = this.abilityTF.height;
+         _loc3_ = this.abilityTF.height;
          var _loc4_:int = this.abilityTF.height;
          this.icon.x = _loc2_;
          this.abilityTF.x = _loc2_ + this.icon.width + ICON_RIGHT_PADDING;

@@ -106,6 +106,10 @@ package net.wg.gui.battle.battleRoyale.views.components.RespawnButton
          invalidate(GLOW_VALIDATION_FLAG);
       }
       
+      public function setBindKeyTextVisibility(param1:Boolean) : void
+      {
+      }
+      
       public function setColorTransform(param1:ColorTransform) : void
       {
       }
@@ -127,6 +131,10 @@ package net.wg.gui.battle.battleRoyale.views.components.RespawnButton
          this._glowId = param1;
          this._showGlow = true;
          invalidate(GLOW_VALIDATION_FLAG);
+      }
+      
+      public function showGlowWithHotkey(param1:int, param2:Boolean = true) : void
+      {
       }
       
       public function updateLevelInformation(param1:int) : void
@@ -201,6 +209,11 @@ package net.wg.gui.battle.battleRoyale.views.components.RespawnButton
          {
             this.status &= ~STATUS_AVAILABLE;
          }
+      }
+      
+      public function get bindSfKeyCode() : Number
+      {
+         return 0;
       }
       
       private function get status() : uint

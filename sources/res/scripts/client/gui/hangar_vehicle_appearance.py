@@ -45,6 +45,8 @@ _HANGAR_TURRET_SHIFT = math.pi / 8
 _CAMERA_CAPSULE_GUN_SCALE = Math.Vector3(1.0, 1.0, 1.1)
 _CAMERA_CAPSULE_SCALE = Math.Vector3(1.5, 1.5, 1.5)
 _CAMERA_MIN_DIST_FACTOR = 0.8
+SPG_TAGS = [
+ 'AT-SPG', 'SPG']
 AnchorLocation = namedtuple('AnchorLocation', ['position', 'normal', 'up'])
 AnchorId = namedtuple('AnchorId', ('slotType', 'areaId', 'regionIdx'))
 AnchorHelper = namedtuple('AnchorHelper', ['location', 'descriptor', 'turretYaw', 'partIdx', 'attachedPartIdx'])
@@ -120,6 +122,9 @@ class HangarVehicleAppearance(ScriptGameObject):
         return
 
     isVehicleDestroyed = property(lambda self: self.__isVehicleDestroyed)
+    typeDescriptor = property(lambda self: self.__vDesc if self.__vEntity is None else self.__vEntity.typeDescriptor)
+    attachments = property(lambda self: self.__attachments)
+    modelAnimators = property(lambda self: self.__modelAnimators)
 
     def __init__(self, spaceId, vEntity):
         ScriptGameObject.__init__(self, vEntity.spaceID, 'HangarVehicleAppearance')
@@ -277,10 +282,17 @@ class HangarVehicleAppearance(ScriptGameObject):
         hullBB = Math.Matrix(self.__vEntity.model.getBoundsForPart(TankPartIndexes.HULL))
         return hullBB.applyVector(Math.Vector3(0.0, 0.0, 1.0)).length
 
+    def __isSPG(self):
+        return self.__vDesc is not None and bool(self.__vDesc.type.tags.intersection(SPG_TAGS))
+
     def _getTurretYaw(self):
+        if self.__isSPG():
+            return self.__staticTurretYaw
         return self.turretAndGunAngles.getTurretYaw()
 
     def _getGunPitch(self):
+        if self.__isSPG():
+            return self.__staticGunPitch
         return self.turretAndGunAngles.getGunPitch()
 
     def __reload(self, vDesc, vState, outfit):
@@ -335,7 +347,11 @@ class HangarVehicleAppearance(ScriptGameObject):
            'intCD': self.__vDesc.type.compactDescr}), scope=EVENT_BUS_SCOPE.DEFAULT)
         cfg = hangarCFG()
         gunScale = cfg.get('cam_capsule_gun_scale', _CAMERA_CAPSULE_GUN_SCALE)
+        if self.__vDesc.type.camGunCapsuleScaleOverride:
+            gunScale = self.__vDesc.type.camGunCapsuleScaleOverride
         capsuleScale = cfg.get('cam_capsule_scale', _CAMERA_CAPSULE_SCALE)
+        if self.__vDesc.type.camCapsuleScaleOverride:
+            capsuleScale = self.__vDesc.type.camCapsuleScaleOverride
         hitTesterManagers = {TankPartNames.CHASSIS: vDesc.chassis.hitTesterManager, 
            TankPartNames.HULL: vDesc.hull.hitTesterManager, 
            TankPartNames.TURRET: vDesc.turret.hitTesterManager, 
@@ -473,6 +489,8 @@ class HangarVehicleAppearance(ScriptGameObject):
         for modelAnimator in self.__modelAnimators:
             modelAnimator.animator.start()
 
+        self._onOutfitReady()
+
     def __onSettingsChanged(self, diff):
         if 'showMarksOnGun' in diff:
             self.__showMarksOnGun = not diff['showMarksOnGun']
@@ -555,7 +573,7 @@ class HangarVehicleAppearance(ScriptGameObject):
             self.flagComponent = None
         self.__staticTurretYaw = self.__vDesc.gun.staticTurretYaw
         self.__staticGunPitch = self.__vDesc.gun.staticPitch
-        if not ('AT-SPG' in self.__vDesc.type.tags or 'SPG' in self.__vDesc.type.tags):
+        if self._applyGunAndTurretDir() or not self.__isSPG():
             if self.__staticTurretYaw is None:
                 self.__staticTurretYaw = self._getTurretYaw()
                 turretYawLimits = self.__vDesc.gun.turretYawLimits
@@ -580,7 +598,7 @@ class HangarVehicleAppearance(ScriptGameObject):
         return
 
     def getThisVehicleDossierInsigniaRank(self):
-        if self.__vDesc and self.__showMarksOnGun:
+        if self.__vDesc and self.isMarksOnGunVisible:
             vehicleDossier = self.itemsCache.items.getVehicleDossier(self.__vDesc.type.compactDescr)
             return vehicleDossier.getRandomStats().getAchievement(MARK_ON_GUN_RECORD).getValue()
         return 0
@@ -862,7 +880,7 @@ class HangarVehicleAppearance(ScriptGameObject):
         self.__vehicleStickers = VehicleStickers.VehicleStickers(self.__spaceId, self.__vDesc, self.getThisVehicleDossierInsigniaRank(), outfit)
         self.__vehicleStickers.alpha = self.__currentEmblemsAlpha
         self.__vehicleStickers.attach(self.__vEntity.model, self.__isVehicleDestroyed, False, self._modelCollisions)
-        if not outfit.style or not outfit.style.isClanHidden:
+        if not outfit.isClanHidden and (not outfit.style or not outfit.style.isClanHidden):
             self._requestClanDBIDForStickers(self.__onClanDBIDRetrieved)
         return
 
@@ -1098,6 +1116,10 @@ class HangarVehicleAppearance(ScriptGameObject):
     def outfit(self):
         return self.__outfit
 
+    @property
+    def isMarksOnGunVisible(self):
+        return self.__showMarksOnGun and self.__outfit is not None and not self.__outfit.isMarksOnGunHidden
+
     def __getStyleProgressionOutfitData(self, outfit):
         vehicle = None
         if g_currentVehicle.isPresent():
@@ -1121,3 +1143,9 @@ class HangarVehicleAppearance(ScriptGameObject):
         if vehicle.isOutfitLocked and styleId > 0:
             return self.customizationService.getOutfitByStyleId(styleId=styleId, vehicleCD=vehicleCD)
         return self.customizationService.getEmptyOutfitWithNationalEmblems(vehicleCD=vehicleCD)
+
+    def _onOutfitReady(self):
+        pass
+
+    def _applyGunAndTurretDir(self):
+        return False

@@ -42,6 +42,10 @@
 						normalMap
 						<Texture>content/Hangars/h08_mt_hangar/enviroment/hd_h08_MTV1_0094_ForgedFence_ANM.dds</Texture>
 					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
 				</material>
 				<groupOrigin>0.002743 0.602786 -2.332317</groupOrigin>
 			</primitiveGroup>

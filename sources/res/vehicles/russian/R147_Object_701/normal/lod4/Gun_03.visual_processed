@@ -92,10 +92,18 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_guns_skinned</identifier>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>0</materialKind>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<materialKind>0</materialKind>
+					<identifier>tank_proxy_skinned</identifier>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>vehicles/russian/R147_Object_701/Object_701_proxy_AM.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
 					<property>
 						metallicGlossMap
 						<Texture>vehicles/russian/R147_Object_701/Object_701_proxy_GMM.dds</Texture>
@@ -105,28 +113,12 @@
 						<Texture>vehicles/russian/R147_Object_701/Object_701_proxy_ANM.dds</Texture>
 					</property>
 					<property>
-						diffuseMap
-						<Texture>vehicles/russian/R147_Object_701/Object_701_proxy_AM.dds</Texture>
-					</property>
-					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/russian/R147_Object_701/Object_701_proxy_AO.dds</Texture>
 					</property>
 					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
-					</property>
-					<property>
 						alphaReference
-						<Int>128</Int>
-					</property>
-					<property>
-						g_detailUVTiling
-						<Vector4>14.028000 7.014000 0.000000 0.000000</Vector4>
-					</property>
-					<property>
-						metallicDetailMap
-						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+						<Int>0</Int>
 					</property>
 				</material>
 				<groupOrigin>-0.037459 0.052875 -2.219894</groupOrigin>

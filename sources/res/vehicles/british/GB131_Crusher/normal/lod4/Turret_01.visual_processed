@@ -17,6 +17,15 @@
 				<row3>0.000000 0.000000 0.000000</row3>
 			</transform>
 			<node>
+				<identifier>HP_sleeveRoot</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 -1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+			</node>
+			<node>
 				<identifier>HP_gunJoint</identifier>
 				<transform>
 					<row0>1.000000 0.000000 0.000000</row0>
@@ -60,6 +69,10 @@
 						excludeMaskAndAOMap
 						<Texture>vehicles/british/GB131_Crusher/Crusher_proxy_AO.dds</Texture>
 					</property>
+					<property>
+						alphaReference
+						<Int>0</Int>
+					</property>
 				</material>
 				<groupOrigin>0.018010 0.552133 0.050056</groupOrigin>
 			</primitiveGroup>
@@ -69,6 +82,6 @@
 		<min>-1.546806 0.010011 -1.559017</min>
 		<max>1.582825 1.094256 1.659128</max>
 	</boundingBox>
-	<geometrySize>8232</geometrySize>
+	<geometrySize>8632</geometrySize>
 	<minUVDensity>0.002403</minUVDensity>
 </root>

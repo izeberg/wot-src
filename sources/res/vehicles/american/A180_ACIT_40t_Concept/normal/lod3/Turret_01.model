@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/american/A180_ACIT_40t_Concept/normal/lod4/Turret_01</parent>
+	<tank>true</tank>
+	<extent>
+		192.0
+		<!--BW_String-->
+	</extent>
+	<visibilityBox>
+		<min>-1.561439 -0.002445 -2.822603</min>
+		<max>1.567739 2.138605 1.522652</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/american/A180_ACIT_40t_Concept/normal/lod3/Turret_01</nodefullVisual>
+</root>

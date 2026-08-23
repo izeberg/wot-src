@@ -5,13 +5,11 @@ package net.wg.gui.lobby.hangar
    import flash.geom.Rectangle;
    import net.wg.data.constants.Directions;
    import net.wg.data.constants.Linkages;
-   import net.wg.data.constants.Values;
    import net.wg.data.constants.generated.FUNRANDOM_ALIASES;
    import net.wg.data.constants.generated.HANGAR_ALIASES;
    import net.wg.gui.lobby.battleRoyale.widget.data.BattleRoyaleHangarWidget;
    import net.wg.gui.lobby.battleRoyale.widget.data.BattleRoyaleTournamentWidget;
    import net.wg.gui.lobby.epicBattles.components.EpicBattlesWidget;
-   import net.wg.gui.lobby.hangar.data.EconomyWidgetVO;
    import net.wg.gui.lobby.hangar.data.HangarHeaderVO;
    import net.wg.gui.lobby.hangar.interfaces.IHangarHeader;
    import net.wg.gui.lobby.hangar.interfaces.IHeaderQuestsContainer;
@@ -26,6 +24,7 @@ package net.wg.gui.lobby.hangar
    import net.wg.gui.lobby.hangar.quests.ResourceWellEntryPoint;
    import net.wg.gui.lobby.hangar.quests.SecondaryEntryPoint;
    import net.wg.gui.lobby.hangar.quests.StrongholdWidget;
+   import net.wg.gui.lobby.hangar.quests.WhiteTigerWidget;
    import net.wg.gui.lobby.hangar.quests.WinbackWidget;
    import net.wg.gui.lobby.rankedBattles19.components.widget.RankedBattlesHangarWidget;
    import net.wg.infrastructure.base.meta.IHangarHeaderMeta;
@@ -56,14 +55,6 @@ package net.wg.gui.lobby.hangar
       private static const FUN_RANDOM_FLAGS_OFFSET_Y:uint = 39;
       
       private static const REGISTER_WIDGET_DELAY:uint = 300;
-      
-      private static const ECONOMY_WIDGET_OFFSET_X:int = 0;
-      
-      private static const ECONOMY_WIDGET_OFFSET_Y:int = 0;
-      
-      private static const ECONOMY_WIDGET_MARGIN_X:int = 92;
-      
-      private static const ECONOMY_SMALL_WIDGET_MARGIN_X:int = 73;
        
       
       public var mcBackground:Sprite;
@@ -71,8 +62,6 @@ package net.wg.gui.lobby.hangar
       public var questsFlags:HeaderQuestsFlags;
       
       public var secondaryEntryPoint:SecondaryEntryPoint;
-      
-      public var economyWidget:EconomyWidget = null;
       
       private var _widget:IHeaderEntryPoint = null;
       
@@ -100,11 +89,9 @@ package net.wg.gui.lobby.hangar
          super.configUI();
          App.stageSizeMgr.register(this);
          mouseEnabled = false;
-         this.economyWidget.mouseEnabled = this.economyWidget.mouseChildren = false;
          this.mcBackground.mouseEnabled = this.mcBackground.mouseChildren = false;
          this.questsFlags.addEventListener(HeaderQuestsEvent.HEADER_QUEST_CLICK,this.onBtnHeaderQuestClickHandler);
          this.questsFlags.addEventListener(HeaderQuestsFlags.ENTRY_POINT_RESIZE,this.onEntryPointResizeHandler);
-         this.economyWidget.addEventListener(HeaderQuestsFlags.ENTRY_POINT_RESIZE,this.onEntryPointResizeHandler);
          App.utils.helpLayout.registerComponent(this);
       }
       
@@ -112,7 +99,6 @@ package net.wg.gui.lobby.hangar
       {
          this.questsFlags.removeEventListener(HeaderQuestsEvent.HEADER_QUEST_CLICK,this.onBtnHeaderQuestClickHandler);
          this.questsFlags.removeEventListener(HeaderQuestsFlags.ENTRY_POINT_RESIZE,this.onEntryPointResizeHandler);
-         this.economyWidget.removeEventListener(HeaderQuestsFlags.ENTRY_POINT_RESIZE,this.onEntryPointResizeHandler);
          App.stageSizeMgr.unregister(this);
          if(isFlashComponentRegisteredS(HANGAR_ALIASES.SECONDARY_ENTRY_POINT))
          {
@@ -129,8 +115,6 @@ package net.wg.gui.lobby.hangar
          this.secondaryEntryPoint = null;
          this.questsFlags.dispose();
          this.questsFlags = null;
-         this.economyWidget.dispose();
-         this.economyWidget = null;
          if(this._widget)
          {
             this._widget.removeEventListener(HeaderQuestsFlags.ENTRY_POINT_RESIZE,this.onEntryPointResizeHandler);
@@ -143,9 +127,6 @@ package net.wg.gui.lobby.hangar
       
       override protected function draw() : void
       {
-         var _loc1_:int = 0;
-         var _loc2_:Boolean = false;
-         var _loc3_:int = 0;
          super.draw();
          if(this._data && isInvalid(InvalidationType.DATA))
          {
@@ -157,58 +138,22 @@ package net.wg.gui.lobby.hangar
          }
          if(isInvalid(InvalidationType.LAYOUT))
          {
-            _loc1_ = 0;
-            _loc2_ = this.economyWidget.visible;
-            _loc3_ = Boolean(this._widget) ? int(this._widget.y + this._widget.visibleHeight) : int(0);
+            this.updateSecondaryOffsets();
+            this.secondaryEntryPoint.x = this._secondaryPointX;
+            this.secondaryEntryPoint.y = Boolean(this._widget) ? Number(this._widget.marginTop) : Number(0);
             if(this.secondaryEntryPoint.visible)
             {
-               if(this._widget)
-               {
-                  _loc1_ = (this._widget.width >> 1) + this._widget.marginRight + this._secondaryPointX;
-                  this.secondaryEntryPoint.x = _loc1_;
-                  this.secondaryEntryPoint.y = this._widget.marginTop;
-                  this.questsFlags.offsetRightSideX = _loc1_ + this.secondaryEntryPoint.width + SECONDARY_ENTRY_POINT_OFFSET >> 0;
-                  if(_loc2_)
-                  {
-                     this.economyWidget.x = ECONOMY_WIDGET_OFFSET_X;
-                     this.economyWidget.y = _loc3_;
-                  }
-               }
-               else
-               {
-                  this.secondaryEntryPoint.x = 0;
-                  this.questsFlags.offsetRightSideX = this.secondaryEntryPoint.width - SECONDARY_ENTRY_POINT_OFFSET;
-                  if(_loc2_)
-                  {
-                     this.economyWidget.x = ECONOMY_WIDGET_OFFSET_X;
-                     this.economyWidget.y = this.secondaryEntryPoint.y + this.secondaryEntryPoint.height;
-                  }
-               }
+               this.questsFlags.offsetRightSideX = this.secondaryEntryPoint.width + SECONDARY_ENTRY_POINT_OFFSET >> 0;
             }
             else
             {
                this.secondaryEntryPoint.x = 0;
                this.questsFlags.offsetRightSideX = 0;
-               if(_loc2_)
-               {
-                  this.economyWidget.x = ECONOMY_WIDGET_OFFSET_X;
-                  if(this._widget)
-                  {
-                     this.economyWidget.y = _loc3_;
-                  }
-                  else
-                  {
-                     this.economyWidget.x = ECONOMY_WIDGET_OFFSET_X;
-                     this.economyWidget.y = ECONOMY_WIDGET_OFFSET_Y;
-                     this.questsFlags.noEntryPointLeftMargin = this.questsFlags.noEntryPointRightMargin = !!this.economyWidget.isSmall ? int(ECONOMY_SMALL_WIDGET_MARGIN_X) : int(ECONOMY_WIDGET_MARGIN_X);
-                  }
-               }
             }
             if(this.hasWidget(FUNRANDOM_ALIASES.FUN_RANDOM_HANGAR_WIDGET,FUNRANDOM_ALIASES.FUN_RANDOM_HANGAR_WIDGET))
             {
                this._widget.x = -(this._widget.width >> 1);
                this.questsFlags.flagsOffsetY = FUN_RANDOM_FLAGS_OFFSET_Y;
-               this.economyWidget.y = FUN_RANDOM_FLAGS_OFFSET_Y;
             }
             else
             {
@@ -226,12 +171,6 @@ package net.wg.gui.lobby.hangar
          this._data = param1;
          invalidateState();
          invalidateData();
-      }
-      
-      override protected function updateEconomyWidget(param1:EconomyWidgetVO) : void
-      {
-         this.economyWidget.updateData(param1);
-         invalidateLayout();
       }
       
       public function as_addEntryPoint(param1:String, param2:String) : void
@@ -321,7 +260,7 @@ package net.wg.gui.lobby.hangar
       
       public function setStateSizeBoundaries(param1:int, param2:int) : void
       {
-         this.questsFlags.isSmall = this.economyWidget.isSmall = param1 < StageSizeBoundaries.WIDTH_1600 || param2 < StageSizeBoundaries.HEIGHT_900;
+         this.questsFlags.isSmall = param1 < StageSizeBoundaries.WIDTH_1600 || param2 < StageSizeBoundaries.HEIGHT_900;
          this.updateSecondaryOffsets();
          invalidateLayout();
       }
@@ -462,6 +401,8 @@ package net.wg.gui.lobby.hangar
                return App.instance.utils.classFactory.getComponent(Linkages.BATTLE_ROYALE_TOURNAMENT_WIDGET_UI,BattleRoyaleTournamentWidget);
             case HANGAR_ALIASES.COMP7_WIDGET:
                return new Comp7Widget();
+            case HANGAR_ALIASES.WT_HEADER_WIDGET:
+               return new WhiteTigerWidget();
             case HANGAR_ALIASES.EPIC_WIDGET:
                return App.instance.utils.classFactory.getComponent(Linkages.EPIC_WIDGET,EpicBattlesWidget);
             case FUNRANDOM_ALIASES.FUN_RANDOM_HANGAR_WIDGET:
@@ -498,14 +439,11 @@ package net.wg.gui.lobby.hangar
       private function updateSecondaryOffsets() : void
       {
          var _loc1_:Boolean = false;
-         if(this.hasWidget(HANGAR_ALIASES.EPIC_WIDGET,HANGAR_ALIASES.EPIC_WIDGET))
-         {
-            this._secondaryPointX = Values.ZERO;
-         }
-         else
+         this._secondaryPointX = Boolean(this._widget) ? int((this._widget.width >> 1) + this._widget.marginRight) : int(0);
+         if(!this.hasWidget(HANGAR_ALIASES.EPIC_WIDGET,HANGAR_ALIASES.EPIC_WIDGET))
          {
             _loc1_ = width <= StageSizeBoundaries.WIDTH_1024 || height <= StageSizeBoundaries.HEIGHT_800;
-            this._secondaryPointX = !!_loc1_ ? int(SECONDARY_ENTRY_POINT_X_COMPACT) : int(SECONDARY_ENTRY_POINT_X);
+            this._secondaryPointX += !!_loc1_ ? SECONDARY_ENTRY_POINT_X_COMPACT : SECONDARY_ENTRY_POINT_X;
          }
       }
       

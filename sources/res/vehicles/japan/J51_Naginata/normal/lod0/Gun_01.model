@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/japan/J51_Naginata/normal/lod1/Gun_01</parent>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-0.690000 -0.304667 -0.014927</min>
+		<max>0.590000 0.308614 4.008217</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/japan/J51_Naginata/normal/lod0/Gun_01</nodefullVisual>
+</root>

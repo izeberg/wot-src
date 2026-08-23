@@ -22,7 +22,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 1.000000 0.000000</row1>
 					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 0.421800 1.243629</row3>
+					<row3>-0.000000 0.421799 1.243629</row3>
 				</transform>
 			</node>
 		</node>
@@ -38,7 +38,7 @@
 				<material>
 					<fx>shaders/std_effects/PBS_tank_crash.fx</fx>
 					<materialKind>0</materialKind>
-					<identifier>tank_proxy</identifier>
+					<identifier>tank_turret_01</identifier>
 					<collisionFlags>0</collisionFlags>
 					<property>
 						diffuseMap
@@ -54,7 +54,10 @@
 					</property>
 					<property>
 						g_crashUVTiling
-						<Vector4>0.500000 0.500000 0.000000 0.000000</Vector4>
+						<Vector4>
+							0.5 0.5 0.0 0.0
+							<!--BW_String-->
+						</Vector4>
 					</property>
 					<property>
 						crashTileMap
@@ -67,6 +70,10 @@
 					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/american/A184_HTPC/HTPC_proxy_AO.dds</Texture>
+					</property>
+					<property>
+						alphaReference
+						<Int>0</Int>
 					</property>
 				</material>
 				<groupOrigin>0.002002 0.924201 -0.592304</groupOrigin>

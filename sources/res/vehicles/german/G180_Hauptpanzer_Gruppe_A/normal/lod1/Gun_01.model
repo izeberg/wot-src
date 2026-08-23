@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/german/G180_Hauptpanzer_Gruppe_A/normal/lod2/Gun_01</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.799265 -0.330786 -0.626732</min>
+		<max>0.500004 0.997186 6.706024</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G180_Hauptpanzer_Gruppe_A/normal/lod1/Gun_01</nodefullVisual>
+</root>

@@ -1,0 +1,1305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>8.833334</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Center_energy</name>
+		<type>model</type>
+		<resource>particles/Environment/event_white_tiger/enemies/Waffentrager_E100_teleport/Center_Energy.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 2.500000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.200000 0.200000 0.200000</value>
+				<inTangent>1.364055 1.456760 1.497002</inTangent>
+				<outTangent>1.364055 1.456760 1.497002</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>7.100000</startTime>
+				<value>1.267120 1.267120 1.267120</value>
+				<inTangent>-0.894622 -0.894622 -0.894622</inTangent>
+				<outTangent>-0.894622 -0.894622 -0.894622</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>7.300000</startTime>
+				<value>0.879212 0.879212 0.879212</value>
+				<inTangent>-1.170105 -1.170105 -1.170105</inTangent>
+				<outTangent>-1.170105 -1.170105 -1.170105</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>8.800000</startTime>
+				<value>0.278211 0.278211 0.278211</value>
+				<inTangent>-0.103255 -0.123444 -0.170529</inTangent>
+				<outTangent>-0.103255 -0.123444 -0.170529</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>visibility</name>
+			<type>bool</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>false</value>
+			</frame>
+			<frame>
+				<startTime>0.300000</startTime>
+				<value>true</value>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>GlowCenter</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.323329 0.674510 1.000000 0.000000</value>
+				<inTangent>0.167584 0.502674 0.000000 0.192601</inTangent>
+				<outTangent>0.008833 0.026915 0.000947 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>7.200000</startTime>
+				<value>0.386930 0.868297 1.006821 0.000000</value>
+				<inTangent>0.008833 0.026915 0.000947 -0.000000</inTangent>
+				<outTangent>0.006300 -0.023040 0.003480 10.071700</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>7.300000</startTime>
+				<value>0.387560 0.865993 1.007169 1.007169</value>
+				<inTangent>-0.021869 0.000058 0.000000 0.241988</inTangent>
+				<outTangent>-0.021869 0.000058 0.000000 0.241988</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>7.700000</startTime>
+				<value>0.377591 0.856023 0.997199 0.997199</value>
+				<inTangent>-0.123488 -0.212616 -0.064665 -0.465735</inTangent>
+				<outTangent>-0.123488 -0.212616 -0.064665 -0.465735</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>8.800000</startTime>
+				<value>0.133333 0.415686 0.882353 0.000000</value>
+				<inTangent>-0.222053 -0.400306 -0.104405 -0.906545</inTangent>
+				<outTangent>-0.222053 -0.400306 -0.104405 -0.906545</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Lightins</name>
+		<type>model</type>
+		<resource>particles/Environment/event_white_tiger/enemies/Waffentrager_E100_teleport/Lightins_source.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.000458 0.999987 -0.442596</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>135.966827 -249.530579 259.446472</inTangent>
+				<outTangent>-11.673141 63.286823 -77.844086</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 1.000000 -1.000000</value>
+				<inTangent>-0.115385 -0.115385 -0.115385</inTangent>
+				<outTangent>-0.115385 -0.115385 -0.115385</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>visibility</name>
+			<type>bool</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>false</value>
+			</frame>
+			<frame>
+				<startTime>0.300000</startTime>
+				<value>true</value>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>lighting_down1</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.623529 0.662745 1.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 1.299934</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 1.299934</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>7.700000</startTime>
+				<value>0.623529 0.662745 1.000000 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.028840</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -0.028840</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>7.800000</startTime>
+				<value>0.623529 0.662745 1.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -10.000010</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -9.999998</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Lighting_Mass</name>
+		<type>model</type>
+		<resource>particles/Environment/event_white_tiger/enemies/Waffentrager_E100_teleport/Lightins_mass_source.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.000061 1.479266 -1.035477</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 1.000000 -1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>visibility</name>
+			<type>bool</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>false</value>
+			</frame>
+			<frame>
+				<startTime>0.300000</startTime>
+				<value>true</value>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>Lighting</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>2.300000</startTime>
+				<value>1.000000 1.000000 1.000000 0.350031</value>
+				<inTangent>0.000000 0.000000 0.000000 0.781229</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.781229</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>7.766667</startTime>
+				<value>1.000000 1.000000 1.000000 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.041542</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -0.041542</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>7.833334</startTime>
+				<value>1.000000 1.000000 1.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -14.999907</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>glow</name>
+		<type>particle</type>
+		<resource>particles/Environment/event_white_tiger/enemies/Waffentrager_E100_teleport/Teleport_source_glow.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 2.500000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.400000</startTime>
+				<value>0.000000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>7.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.533333</startTime>
+				<value>1.000000</value>
+				<inTangent>7.500000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>8.800000</startTime>
+				<value>1.000000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>-29.999599</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>8.833334</startTime>
+				<value>0.000000</value>
+				<inTangent>-29.999599</inTangent>
+				<outTangent>-30.000029</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Flash</name>
+		<type>particle</type>
+		<resource>particles/Environment/event_white_tiger/enemies/Waffentrager_E100_teleport/Teleport_source_flash.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 2.500000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>7.200000</startTime>
+				<value>0.000000</value>
+				<inTangent>15.000229</inTangent>
+				<outTangent>15.000229</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>7.233334</startTime>
+				<value>1.000000</value>
+				<inTangent>30.000029</inTangent>
+				<outTangent>-5.999989</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>7.400001</startTime>
+				<value>0.000000</value>
+				<inTangent>-5.999989</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>8.333334</startTime>
+				<value>0.000000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>-0.000000</outTangent>
+				<tangentMode>1</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>LA_center_01</name>
+		<type>model</type>
+		<resource>content/Environment/env_null_model/null_model.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.000000</startTime>
+				<value>-0.000076 2.156350 0.000034</value>
+				<inTangent>0.000090 0.000001 0.000002</inTangent>
+				<outTangent>0.000090 0.000001 0.000002</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.000000</startTime>
+				<value>-22.700342 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.000000</startTime>
+				<value>0.800000 0.800000 0.800000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>sequence</name>
+			<type>sequence</type>
+			<frame>
+				<startTime>7.000000</startTime>
+				<duration>0.333333</duration>
+				<value>particles/Environment/event_white_tiger/enemies/Waffentrager_E100_teleport/Lighting_arc/Lighting_arc_01.seq</value>
+				<speed>0.750000</speed>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>LA_med_01</name>
+		<type>model</type>
+		<resource>content/Environment/env_null_model/null_model.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.200000</startTime>
+				<value>-0.064148 -0.000009 -5.434605</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.200000</startTime>
+				<value>-0.000013 218.045868 0.000028</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.200000</startTime>
+				<value>0.600000 0.600000 0.700017</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>sequence</name>
+			<type>sequence</type>
+			<frame>
+				<startTime>7.200000</startTime>
+				<duration>0.366667</duration>
+				<value>particles/Environment/event_white_tiger/enemies/Waffentrager_E100_teleport/Lighting_arc/Lighting_arc_02.seq</value>
+				<speed>1.000000</speed>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>LA_Small_01</name>
+		<type>model</type>
+		<resource>content/Environment/env_null_model/null_model.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.333333</startTime>
+				<value>2.925751 -0.000017 -1.537506</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.333333</startTime>
+				<value>0.000013 125.000427 0.000007</value>
+				<inTangent>0.000007 68.182053 0.000004</inTangent>
+				<outTangent>0.000007 68.182053 0.000004</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.333333</startTime>
+				<value>0.780019 0.780018 0.780019</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>sequence</name>
+			<type>sequence</type>
+			<frame>
+				<startTime>7.333333</startTime>
+				<duration>0.366667</duration>
+				<value>particles/Environment/event_white_tiger/enemies/Waffentrager_E100_teleport/Lighting_arc/Lighting_arc_small_01.seq</value>
+				<speed>1.000000</speed>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>LA_Small_01_01</name>
+		<type>model</type>
+		<resource>content/Environment/env_null_model/null_model.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.466667</startTime>
+				<value>0.563873 -0.000017 0.536198</value>
+				<inTangent>-3.894664 -0.000000 9.080912</inTangent>
+				<outTangent>-3.894664 -0.000000 9.080912</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.466667</startTime>
+				<value>0.000039 21.125154 -0.000004</value>
+				<inTangent>0.000416 309.960999 0.000155</inTangent>
+				<outTangent>0.000416 309.960999 0.000155</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.466667</startTime>
+				<value>0.800019 0.800019 0.800019</value>
+				<inTangent>4.500300 4.500297 4.500297</inTangent>
+				<outTangent>4.500300 4.500297 4.500297</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>sequence</name>
+			<type>sequence</type>
+			<frame>
+				<startTime>7.466667</startTime>
+				<duration>0.366667</duration>
+				<value>particles/Environment/event_white_tiger/enemies/Waffentrager_E100_teleport/Lighting_arc/Lighting_arc_small_02.seq</value>
+				<speed>1.000000</speed>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>LA_Small_01_02</name>
+		<type>model</type>
+		<resource>content/Environment/env_null_model/null_model.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.300000</startTime>
+				<value>-0.113220 -0.000017 -5.338470</value>
+				<inTangent>-2.978575 -0.000000 0.906097</inTangent>
+				<outTangent>-2.978575 -0.000000 0.906097</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.300000</startTime>
+				<value>-0.000000 -54.498116 0.000000</value>
+				<inTangent>-0.000001 -326.988525 0.000002</inTangent>
+				<outTangent>-0.000001 -326.988525 0.000002</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.300000</startTime>
+				<value>0.700012 0.500009 0.700012</value>
+				<inTangent>1.200020 -0.000000 1.200020</inTangent>
+				<outTangent>1.200020 -0.000000 1.200020</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>sequence</name>
+			<type>sequence</type>
+			<frame>
+				<startTime>7.300000</startTime>
+				<duration>0.700000</duration>
+				<value>particles/Environment/event_white_tiger/enemies/Waffentrager_E100_teleport/Lighting_arc/Lighting_arc_small_02.seq</value>
+				<speed>1.000000</speed>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>LA_center_02</name>
+		<type>model</type>
+		<resource>content/Environment/env_null_model/null_model.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.000000</startTime>
+				<value>-0.000076 2.156350 0.000034</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.000000</startTime>
+				<value>-22.700283 82.658783 0.000012</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.000000</startTime>
+				<value>0.800000 0.500000 0.800000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>sequence</name>
+			<type>sequence</type>
+			<frame>
+				<startTime>7.000000</startTime>
+				<duration>0.333333</duration>
+				<value>particles/Environment/event_white_tiger/enemies/Waffentrager_E100_teleport/Lighting_arc/Lighting_arc_02.seq</value>
+				<speed>0.750000</speed>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>LA_med_02</name>
+		<type>model</type>
+		<resource>content/Environment/env_null_model/null_model.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.133334</startTime>
+				<value>-4.990280 -0.000009 -0.677380</value>
+				<inTangent>0.000000 -0.000000 -0.000010</inTangent>
+				<outTangent>0.000000 -0.000000 -0.000010</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.133334</startTime>
+				<value>0.000006 96.743759 -0.000013</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.133334</startTime>
+				<value>0.591227 0.700010 0.591227</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>sequence</name>
+			<type>sequence</type>
+			<frame>
+				<startTime>7.133334</startTime>
+				<duration>0.266667</duration>
+				<value>particles/Environment/event_white_tiger/enemies/Waffentrager_E100_teleport/Lighting_arc/Lighting_arc_small_01.seq</value>
+				<speed>1.000000</speed>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>LA_med_02_01</name>
+		<type>model</type>
+		<resource>content/Environment/env_null_model/null_model.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.000000</startTime>
+				<value>-4.990280 -0.000009 -0.677380</value>
+				<inTangent>0.000000 -0.000000 -0.000015</inTangent>
+				<outTangent>0.000000 -0.000000 -0.000015</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.000000</startTime>
+				<value>-0.000004 130.647034 -0.000012</value>
+				<inTangent>0.000000 2868.598389 0.000000</inTangent>
+				<outTangent>0.000000 2868.598389 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>7.033334</startTime>
+				<value>-0.000004 226.266891 -0.000012</value>
+				<inTangent>-0.000000 2868.598389 -0.000000</inTangent>
+				<outTangent>-0.000000 2868.598389 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.000000</startTime>
+				<value>0.591227 0.700010 0.591227</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>sequence</name>
+			<type>sequence</type>
+			<frame>
+				<startTime>7.000000</startTime>
+				<duration>0.366667</duration>
+				<value>particles/Environment/event_white_tiger/enemies/Waffentrager_E100_teleport/Lighting_arc/Lighting_arc_01.seq</value>
+				<speed>1.000000</speed>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>LA_Small_02</name>
+		<type>model</type>
+		<resource>content/Environment/env_null_model/null_model.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.166667</startTime>
+				<value>-1.870926 -0.000017 2.011967</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.166667</startTime>
+				<value>-0.000005 -66.843620 0.000002</value>
+				<inTangent>0.000008 90.965904 0.000010</inTangent>
+				<outTangent>0.000008 90.965904 0.000010</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.166667</startTime>
+				<value>0.800000 0.800000 0.800019</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>sequence</name>
+			<type>sequence</type>
+			<frame>
+				<startTime>7.166667</startTime>
+				<duration>0.333333</duration>
+				<value>particles/Environment/event_white_tiger/enemies/Waffentrager_E100_teleport/Lighting_arc/Lighting_arc_small_02.seq</value>
+				<speed>1.000000</speed>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>LA_Small_02_01</name>
+		<type>model</type>
+		<resource>content/Environment/env_null_model/null_model.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.300000</startTime>
+				<value>-1.986588 -0.000017 1.955204</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.300000</startTime>
+				<value>0.000007 169.529999 0.000009</value>
+				<inTangent>0.000008 90.965904 0.000010</inTangent>
+				<outTangent>0.000008 90.965904 0.000010</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.300000</startTime>
+				<value>0.500009 0.500009 0.400006</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>sequence</name>
+			<type>sequence</type>
+			<frame>
+				<startTime>7.300000</startTime>
+				<duration>0.366667</duration>
+				<value>particles/Environment/event_white_tiger/enemies/Waffentrager_E100_teleport/Lighting_arc/Lighting_arc_small_01.seq</value>
+				<speed>1.000000</speed>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>LA_Small_02_02</name>
+		<type>model</type>
+		<resource>content/Environment/env_null_model/null_model.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.500000</startTime>
+				<value>-4.496292 -0.000019 2.761265</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.500000</startTime>
+				<value>0.000007 169.529999 0.000009</value>
+				<inTangent>0.000008 90.965904 0.000010</inTangent>
+				<outTangent>0.000008 90.965904 0.000010</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.500000</startTime>
+				<value>0.500009 0.500009 0.300000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>sequence</name>
+			<type>sequence</type>
+			<frame>
+				<startTime>7.500000</startTime>
+				<duration>0.400000</duration>
+				<value>particles/Environment/event_white_tiger/enemies/Waffentrager_E100_teleport/Lighting_arc/Lighting_arc_small_02.seq</value>
+				<speed>1.000000</speed>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>LA_center_03</name>
+		<type>model</type>
+		<resource>content/Environment/env_null_model/null_model.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.033334</startTime>
+				<value>-0.000076 2.156350 0.000034</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.033334</startTime>
+				<value>-22.700190 191.461166 0.000028</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.033334</startTime>
+				<value>0.500007 0.800011 0.500007</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>sequence</name>
+			<type>sequence</type>
+			<frame>
+				<startTime>7.000000</startTime>
+				<duration>0.400000</duration>
+				<value>particles/Environment/event_white_tiger/enemies/Waffentrager_E100_teleport/Lighting_arc/Lighting_arc_01.seq</value>
+				<speed>1.000000</speed>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>LA_med_03</name>
+		<type>model</type>
+		<resource>content/Environment/env_null_model/null_model.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.133334</startTime>
+				<value>1.501251 -0.000018 2.837864</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.133334</startTime>
+				<value>-0.000015 306.619995 0.000002</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.133334</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>sequence</name>
+			<type>sequence</type>
+			<frame>
+				<startTime>7.133334</startTime>
+				<duration>0.433333</duration>
+				<value>particles/Environment/event_white_tiger/enemies/Waffentrager_E100_teleport/Lighting_arc/Lighting_arc_small_01.seq</value>
+				<speed>1.000000</speed>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>LA_Small_03</name>
+		<type>model</type>
+		<resource>content/Environment/env_null_model/null_model.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.400001</startTime>
+				<value>4.555283 -0.000022 0.342018</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.400001</startTime>
+				<value>0.000007 26.908073 0.000009</value>
+				<inTangent>0.000008 90.965904 0.000010</inTangent>
+				<outTangent>0.000008 90.965904 0.000010</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.400001</startTime>
+				<value>0.800000 0.400007 0.600011</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>sequence</name>
+			<type>sequence</type>
+			<frame>
+				<startTime>7.400001</startTime>
+				<duration>0.400000</duration>
+				<value>particles/Environment/event_white_tiger/enemies/Waffentrager_E100_teleport/Lighting_arc/Lighting_arc_small_01.seq</value>
+				<speed>1.000000</speed>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>LA_Small_03_01</name>
+		<type>model</type>
+		<resource>content/Environment/env_null_model/null_model.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.333333</startTime>
+				<value>4.555283 -0.000022 0.342018</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.333333</startTime>
+				<value>0.000007 -185.624374 0.000009</value>
+				<inTangent>-0.000029 4.882605 0.000088</inTangent>
+				<outTangent>-0.000029 4.882605 0.000088</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.333333</startTime>
+				<value>0.800000 0.500000 0.800011</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>sequence</name>
+			<type>sequence</type>
+			<frame>
+				<startTime>7.333333</startTime>
+				<duration>0.366667</duration>
+				<value>particles/Environment/event_white_tiger/enemies/Waffentrager_E100_teleport/Lighting_arc/Lighting_arc_small_02.seq</value>
+				<speed>1.000000</speed>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>LA_Small_03_02</name>
+		<type>model</type>
+		<resource>content/Environment/env_null_model/null_model.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.633334</startTime>
+				<value>3.537933 -0.000029 -1.585800</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.633334</startTime>
+				<value>0.000029 -347.892914 0.000005</value>
+				<inTangent>-0.000029 4.882605 0.000088</inTangent>
+				<outTangent>-0.000029 4.882605 0.000088</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.633334</startTime>
+				<value>0.400007 0.400007 0.400007</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>sequence</name>
+			<type>sequence</type>
+			<frame>
+				<startTime>7.633334</startTime>
+				<duration>0.366666</duration>
+				<value>particles/Environment/event_white_tiger/enemies/Waffentrager_E100_teleport/Lighting_arc/Lighting_arc_small_02.seq</value>
+				<speed>1.000000</speed>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>LA_center_04</name>
+		<type>model</type>
+		<resource>content/Environment/env_null_model/null_model.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.033334</startTime>
+				<value>-0.000076 2.156350 0.000034</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.033334</startTime>
+				<value>-22.700190 191.461166 0.000028</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.033334</startTime>
+				<value>0.500007 0.800011 0.800014</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>sequence</name>
+			<type>sequence</type>
+			<frame>
+				<startTime>7.000000</startTime>
+				<duration>0.600000</duration>
+				<value>particles/Environment/event_white_tiger/enemies/Waffentrager_E100_teleport/Lighting_arc/Lighting_arc_02.seq</value>
+				<speed>1.000000</speed>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>LA_med_04</name>
+		<type>model</type>
+		<resource>content/Environment/env_null_model/null_model.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.300000</startTime>
+				<value>0.909561 -0.000009 5.192707</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.300000</startTime>
+				<value>0.000000 86.854980 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.300000</startTime>
+				<value>0.600000 0.600000 0.600000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>sequence</name>
+			<type>sequence</type>
+			<frame>
+				<startTime>7.300000</startTime>
+				<duration>0.500000</duration>
+				<value>particles/Environment/event_white_tiger/enemies/Waffentrager_E100_teleport/Lighting_arc/Lighting_arc_02.seq</value>
+				<speed>1.000000</speed>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>LA_Small_04_01</name>
+		<type>model</type>
+		<resource>content/Environment/env_null_model/null_model.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.533334</startTime>
+				<value>1.056427 -0.000026 5.191952</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.533334</startTime>
+				<value>0.000007 -72.311066 0.000009</value>
+				<inTangent>0.000008 90.965904 0.000010</inTangent>
+				<outTangent>0.000008 90.965904 0.000010</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.533334</startTime>
+				<value>0.800000 0.600000 0.800011</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>sequence</name>
+			<type>sequence</type>
+			<frame>
+				<startTime>7.533334</startTime>
+				<duration>0.400000</duration>
+				<value>particles/Environment/event_white_tiger/enemies/Waffentrager_E100_teleport/Lighting_arc/Lighting_arc_small_01.seq</value>
+				<speed>1.000000</speed>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

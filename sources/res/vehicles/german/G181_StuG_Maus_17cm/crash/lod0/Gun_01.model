@@ -6,7 +6,7 @@
 		<max>0.852492 0.679785 7.490001</max>
 	</visibilityBox>
 	<tank>true</tank>
-	<nodelessVisual>vehicles/german/G181_StuG_Maus_17cm/crash/lod0/Gun_01</nodelessVisual>
 	<parent>vehicles/german/G181_StuG_Maus_17cm/crash/lod1/Gun_01</parent>
 	<extent>32.000000</extent>
+	<nodelessVisual>vehicles/german/G181_StuG_Maus_17cm/crash/lod0/Gun_01</nodelessVisual>
 </root>

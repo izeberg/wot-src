@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/russian/R240_Object_771/crash/lod4/Turret_01</parent>
+	<tank>true</tank>
+	<extent>
+		192.0
+		<!--BW_String-->
+	</extent>
+	<nodefullVisual>vehicles/russian/R240_Object_771/crash/lod3/Turret_01</nodefullVisual>
+	<visibilityBox>
+		<min>-1.605701 -0.191245 -3.007413</min>
+		<max>1.606838 1.298691 1.919717</max>
+	</visibilityBox>
+</root>

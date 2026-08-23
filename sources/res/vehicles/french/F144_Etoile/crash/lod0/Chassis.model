@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-1.619551 -0.000002 -3.257667</min>
+		<max>1.615235 1.053828 3.273072</max>
+	</visibilityBox>
+	<parent>vehicles/french/F144_Etoile/crash/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/french/F144_Etoile/crash/lod0/Chassis</nodefullVisual>
+</root>

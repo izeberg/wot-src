@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.585080 -0.920701 -3.550343</min>
+		<max>1.574591 0.721622 3.231876</max>
+	</visibilityBox>
+	<parent>vehicles/french/F72_AMX_30/_skins/F72_AMX_30_3Dst_02/crash/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/french/F72_AMX_30/_skins/F72_AMX_30_3Dst_02/crash/lod0/Hull</nodefullVisual>
+</root>

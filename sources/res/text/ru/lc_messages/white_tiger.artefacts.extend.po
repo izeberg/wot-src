@@ -1,0 +1,863 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "antifragmentationLining_wt/name"
+msgstr "?empty?"
+
+msgid "builtinLargeMedkit_wt/always"
+msgstr "%(crewHitChance)s к защите экипажа от ранений"
+
+msgid "builtinLargeMedkit_wt/descr"
+msgstr "Лечение всех раненых членов экипажа и снятие эффекта оглушения."
+
+msgid "builtinLargeMedkit_wt/long_special"
+msgstr ""
+"Позволяет вернуть в строй всех раненых членов экипажа за раз. Также пассивно"
+" улучшает защиту экипажа от ранений. Требует ручной активации."
+
+msgid "builtinLargeMedkit_wt/name"
+msgstr "Большая аптечка"
+
+msgid "builtinLargeMedkit_wt/onUse"
+msgstr "Лечение всех раненых членов экипажа. Используется многократно за бой."
+
+msgid "builtinLargeMedkit_wt/restriction"
+msgstr "?empty?"
+
+msgid "builtinLargeMedkit_wt/short_special"
+msgstr "Лечит всех раненых членов экипажа"
+
+msgid "builtinLargeMedkit_wt/stunDisabled/descr"
+msgstr "Лечение всех раненых членов экипажа."
+
+msgid "builtinRepairkit_wt/always"
+msgstr "%(vehicleRepairSpeed)s к скорости ремонта модулей."
+
+msgid "builtinRepairkit_wt/descr"
+msgstr "Починка всех повреждённых модулей."
+
+msgid "builtinRepairkit_wt/long_special"
+msgstr ""
+"Позволяет восстановить все повреждённые модули за раз. Также пассивно "
+"увеличивает скорость ремонта. Требует ручной активации."
+
+msgid "builtinRepairkit_wt/name"
+msgstr "Большой ремкомплект"
+
+msgid "builtinRepairkit_wt/onUse"
+msgstr ""
+"Починка всех повреждённых модулей. Используется многократно за бой. "
+"Не расходуется."
+
+msgid "builtinRepairkit_wt/restriction"
+msgstr "?empty?"
+
+msgid "extraHealthReserve_wt/name"
+msgstr "?empty?"
+
+msgid "improvedRadioCommunication_wt/name"
+msgstr "?empty?"
+
+msgid "wt_barrier/always"
+msgstr "?empty?"
+
+msgid "wt_barrier/descr"
+msgstr "Активная способность"
+
+msgid "wt_barrier/features"
+msgstr ""
+"1. При активации барьера стрельба и применение активных способностей блокируются.\n"
+"2. После открепления барьер исчезает через определённое время.\n"
+"3. Барьер не защищает от урона способностей, действующих по области."
+
+msgid "wt_barrier/long_special"
+msgstr "?empty?"
+
+msgid "wt_barrier/name"
+msgstr "Энергетический барьер"
+
+msgid "wt_barrier/onUse"
+msgstr ""
+"Проецирует перед машиной барьер, который даёт неуязвимость от входящих "
+"снарядов. Барьер передвигается вместе с танком, но в любой момент может быть"
+" откреплён, превратившись в статичное укрытие."
+
+msgid "wt_barrier/restriction"
+msgstr "?empty?"
+
+msgid "wt_barrier/short_special"
+msgstr "?empty?"
+
+msgid "wt_charged_shot/always"
+msgstr "?empty?"
+
+msgid "wt_charged_shot/descr"
+msgstr "Активная способность"
+
+msgid "wt_charged_shot/features"
+msgstr ""
+"1. Бонус к урону от плазмы суммируется с уроном способности.\n"
+"2. Выстрел способностью накладывает эффект умения «Сила стаи»."
+
+msgid "wt_charged_shot/long_special"
+msgstr "?empty?"
+
+msgid "wt_charged_shot/name"
+msgstr "Урановый лом"
+
+msgid "wt_charged_shot/onUse"
+msgstr ""
+"Следующий снаряд полетит точнее и быстрее, а также нанесёт больший урон "
+"противнику и его модулям."
+
+msgid "wt_charged_shot/restriction"
+msgstr "?empty?"
+
+msgid "wt_charged_shot/short_special"
+msgstr "?empty?"
+
+msgid "wt_clone/always"
+msgstr "?empty?"
+
+msgid "wt_clone/descr"
+msgstr "Активная способность"
+
+msgid "wt_clone/features"
+msgstr ""
+"1. Копия не влияет на скорость перегрузки генераторов, но получает бонус к урону от зарядов плазмы после успешной перегрузки.\n"
+"2. Копия обладает всеми пассивными способностями, что и Jiskra.\n"
+"3. Для Инженера копия неотличима от настоящего танка."
+
+msgid "wt_clone/long_special"
+msgstr "?empty?"
+
+msgid "wt_clone/name"
+msgstr "Копия"
+
+msgid "wt_clone/onUse"
+msgstr ""
+"Вызывает копию своего танка под управлением ИИ. Копия сражается на стороне "
+"Гончих и сопровождает своего хозяина, хотя порой может действовать "
+"самостоятельно."
+
+msgid "wt_clone/restriction"
+msgstr "?empty?"
+
+msgid "wt_clone/short_special"
+msgstr "?empty?"
+
+msgid "wt_damage_shield/always"
+msgstr "?empty?"
+
+msgid "wt_damage_shield/descr"
+msgstr "Активная способность"
+
+msgid "wt_damage_shield/features"
+msgstr ""
+"1. Отражатель защищает только от урона снарядов и способностей Инженера, но не блокирует накладываемые ими негативные эффекты.\n"
+"2. Способность не защитит от тарана или падения."
+
+msgid "wt_damage_shield/long_special"
+msgstr "?empty?"
+
+msgid "wt_damage_shield/name"
+msgstr "Баллистический отражатель"
+
+msgid "wt_damage_shield/onUse"
+msgstr ""
+"На определённое время даёт неуязвимость к урону от попаданий снарядов "
+"и способностей Ваффентрагера и Алаида."
+
+msgid "wt_damage_shield/restriction"
+msgstr "?empty?"
+
+msgid "wt_damage_shield/short_special"
+msgstr "?empty?"
+
+msgid "wt_decrease_reload_time/always"
+msgstr ""
+"Каждый выстрел, наносящий урон, сокращает время перезарядки следующего "
+"снаряда. Эффект суммируется до 5 раз. Выстрел без урона сбрасывает все "
+"накопленные эффекты."
+
+msgid "wt_decrease_reload_time/descr"
+msgstr "Пассивная способность"
+
+msgid "wt_decrease_reload_time/features"
+msgstr ""
+"1. Способности «Разрывной выстрел» и «Управляемые молнии» не влияют на накопление и сброс эффектов.\n"
+"2. Попадания по щитам Ваффентрагера и Алаида не накапливают эффекты, но могут их сбросить."
+
+msgid "wt_decrease_reload_time/long_special"
+msgstr "?empty?"
+
+msgid "wt_decrease_reload_time/name"
+msgstr "Ускорение перезарядки"
+
+msgid "wt_decrease_reload_time/onUse"
+msgstr "?empty?"
+
+msgid "wt_decrease_reload_time/restriction"
+msgstr "?empty?"
+
+msgid "wt_decrease_reload_time/short_special"
+msgstr "?empty?"
+
+msgid "wt_dome/always"
+msgstr "?empty?"
+
+msgid "wt_dome/descr"
+msgstr "Активная способность"
+
+msgid "wt_dome/features"
+msgstr ""
+"1. Защищает от внешнего урона и негативных эффектов.\n"
+"2. Если противник находится внутри купола, его урон и негативные эффекты не блокируются.\n"
+"3. Купол не блокирует урон от тарана."
+
+msgid "wt_dome/long_special"
+msgstr "?empty?"
+
+msgid "wt_dome/name"
+msgstr "Статический купол"
+
+msgid "wt_dome/onUse"
+msgstr ""
+"Мгновенно устанавливает на месте машины временный неподвижный купол, внутри "
+"которого команда союзников защищена от входящего извне урона снарядов "
+"и умений."
+
+msgid "wt_dome/restriction"
+msgstr "?empty?"
+
+msgid "wt_dome/short_special"
+msgstr "?empty?"
+
+msgid "wt_explosive_damage_shield/always"
+msgstr "?empty?"
+
+msgid "wt_explosive_damage_shield/descr"
+msgstr "Активная способность"
+
+msgid "wt_explosive_damage_shield/features"
+msgstr ""
+"Используйте щит таким образом, чтобы взрыв от накопленного урона произошёл "
+"вблизи танков противника. Так вы сможете эффективно уничтожать целые группы "
+"часовых."
+
+msgid "wt_explosive_damage_shield/long_special"
+msgstr "?empty?"
+
+msgid "wt_explosive_damage_shield/name"
+msgstr "Энергетический щит"
+
+msgid "wt_explosive_damage_shield/onUse"
+msgstr ""
+"Временно даёт неуязвимость к урону от снарядов и способностей. Полученный "
+"урон накапливается, после чего щит взрывается и наносит урон по области. "
+"Если накопленного урона недостаточно, взрыв не произойдёт. Защищает "
+"от Молота Карны и Колоколов Карны."
+
+msgid "wt_explosive_damage_shield/restriction"
+msgstr "?empty?"
+
+msgid "wt_explosive_damage_shield/short_special"
+msgstr "?empty?"
+
+msgid "wt_explosive_shot/always"
+msgstr "?empty?"
+
+msgid "wt_explosive_shot/descr"
+msgstr "Активная способность"
+
+msgid "wt_explosive_shot/features"
+msgstr ""
+"1. Взрывная волна проходит сквозь стены и укрытия.\n"
+"2. Используйте способность, чтобы нанести урон сразу нескольким машинам противника."
+
+msgid "wt_explosive_shot/long_special"
+msgstr "?empty?"
+
+msgid "wt_explosive_shot/name"
+msgstr "Разрывной выстрел"
+
+msgid "wt_explosive_shot/onUse"
+msgstr ""
+"Следующий выстрел станет разрывным, нанеся урон по области в определённом "
+"радиусе от точки попадания."
+
+msgid "wt_explosive_shot/restriction"
+msgstr "?empty?"
+
+msgid "wt_explosive_shot/short_special"
+msgstr "?empty?"
+
+msgid "wt_extractor_shot/always"
+msgstr "?empty?"
+
+msgid "wt_extractor_shot/descr"
+msgstr "Активная способность"
+
+msgid "wt_extractor_shot/features"
+msgstr ""
+"1. Выстрел способностью не расходует стандартный снаряд.\n"
+"2. Заряды плазмы сохраняются на машине Инженера до момента захвата генератора и пока активен щит. При снятии щита заряды пропадают.\n"
+"3. После восстановления щита заряды плазмы не возвращаются — используйте способность повторно.\n"
+"4. Способность недоступна без активного щита."
+
+msgid "wt_extractor_shot/long_special"
+msgstr "?empty?"
+
+msgid "wt_extractor_shot/name"
+msgstr "Электромагнитная стрела"
+
+msgid "wt_extractor_shot/onUse"
+msgstr ""
+"Выстрел зарядом с радиусом поражения, который наносит небольшой урон "
+"и оглушает Гончих, а также отнимает один заряд плазмы у каждой из них "
+"и передаёт Алаиду. В случае прямого попадания по Гончей наносит урон "
+"и сбрасывает очки перегрузки генератора"
+
+msgid "wt_extractor_shot/restriction"
+msgstr "Способность недоступна без активного щита."
+
+msgid "wt_extractor_shot/short_special"
+msgstr "?empty?"
+
+msgid "wt_group_repair/always"
+msgstr "?empty?"
+
+msgid "wt_group_repair/descr"
+msgstr "Активная способность"
+
+msgid "wt_group_repair/features"
+msgstr ""
+"Получение урона или негативного эффекта от способностей противника прерывает"
+" восстановление."
+
+msgid "wt_group_repair/long_special"
+msgstr "?empty?"
+
+msgid "wt_group_repair/name"
+msgstr "Групповой ремонт"
+
+msgid "wt_group_repair/onUse"
+msgstr ""
+"Мгновенно восстанавливает определённое количество прочности себе и союзникам"
+" в заданном радиусе, а также продолжает постепенно восстанавливать прочность"
+" до максимума себе и союзникам, попавшим в зону действия умения в момент "
+"применения. Получение урона прерывает эффект восстановления."
+
+msgid "wt_group_repair/restriction"
+msgstr "?empty?"
+
+msgid "wt_group_repair/short_special"
+msgstr "?empty?"
+
+msgid "wt_hyperion_mod_a/always"
+msgstr "?empty?"
+
+msgid "wt_hyperion_mod_a/descr"
+msgstr "Супероружие"
+
+msgid "wt_hyperion_mod_a/features"
+msgstr ""
+"1. Супероружие заряжается при нанесении урона технике противника.\n"
+"2. Гончие узнают, когда вы активируете эту разрушительную способность.\n"
+"3. Ваши часовые и вы сами защищены от разрушительного воздействия.\n"
+"4. Способность недоступна без активного щита."
+
+msgid "wt_hyperion_mod_a/long_special"
+msgstr "?empty?"
+
+msgid "wt_hyperion_mod_a/name"
+msgstr "Молот Карны"
+
+msgid "wt_hyperion_mod_a/onUse"
+msgstr ""
+"С некоторой задержкой выпускает импульсы чистой энергии в выбранную область,"
+" не оставляя после себя ничего живого."
+
+msgid "wt_hyperion_mod_a/restriction"
+msgstr ""
+"Способность недоступна без активного щита.\n"
+"\n"
+"Способность заряжается путём нанесения урона по Гончим."
+
+msgid "wt_hyperion_mod_a/short_special"
+msgstr "?empty?"
+
+msgid "wt_hyperion_mod_b/always"
+msgstr "?empty?"
+
+msgid "wt_hyperion_mod_b/descr"
+msgstr "Супероружие"
+
+msgid "wt_hyperion_mod_b/features"
+msgstr ""
+"1. Супероружие заряжается при нанесении урона технике противника.\n"
+"2. Гончие узнают, когда вы активируете эту разрушительную способность.\n"
+"3. Ваши часовые и вы сами защищены от разрушительного воздействия.\n"
+"4. Способность недоступна без активного щита."
+
+msgid "wt_hyperion_mod_b/long_special"
+msgstr "?empty?"
+
+msgid "wt_hyperion_mod_b/name"
+msgstr "Колокола Карны"
+
+msgid "wt_hyperion_mod_b/onUse"
+msgstr ""
+"Спустя определённое время после применения в выбранную область в случайном "
+"порядке будут произведены залпы с ограниченной зоной поражения, которые "
+"уничтожат всё живое."
+
+msgid "wt_hyperion_mod_b/restriction"
+msgstr ""
+"Способность недоступна без активного щита.\n"
+"\n"
+"Способность заряжается путём нанесения урона по Гончим."
+
+msgid "wt_hyperion_mod_b/short_special"
+msgstr "?empty?"
+
+msgid "wt_impulse_mod_a/always"
+msgstr "?empty?"
+
+msgid "wt_impulse_mod_a/descr"
+msgstr "Активная способность"
+
+msgid "wt_impulse_mod_a/features"
+msgstr ""
+"1. Чем больше целей задевает импульс, тем быстрее перезаряжается способность.\n"
+"2. Круговой заряд проходит сквозь все препятствия и сбрасывает очки перегрузки генератора.\n"
+"3. Гончие смогут снять негативные эффекты от способности с помощью аптечки.\n"
+"4. Способность недоступна без активного щита."
+
+msgid "wt_impulse_mod_a/long_special"
+msgstr "?empty?"
+
+msgid "wt_impulse_mod_a/name"
+msgstr "Блокирующий импульс"
+
+msgid "wt_impulse_mod_a/onUse"
+msgstr ""
+"Выпускает круговой заряд энергии вокруг машины, оглушающий и блокирующий "
+"способности техники противника в радиусе поражения и наносящий небольшой "
+"урон. Проходит сквозь все препятствия и сбрасывает очки перегрузки "
+"генератора."
+
+msgid "wt_impulse_mod_a/restriction"
+msgstr "Способность недоступна без активного щита."
+
+msgid "wt_impulse_mod_a/short_special"
+msgstr "?empty?"
+
+msgid "wt_increase_damage/always"
+msgstr "?empty?"
+
+msgid "wt_increase_damage/descr"
+msgstr "Активная способность"
+
+msgid "wt_increase_damage/features"
+msgstr ""
+"1. Бонусы к урону от сбора плазмы и способности суммируются. \n"
+"2. Придержите активацию, пока машина Инженера не потеряет щит — и тогда умение можно будет реализовать с максимальной эффективностью."
+
+msgid "wt_increase_damage/long_special"
+msgstr "?empty?"
+
+msgid "wt_increase_damage/name"
+msgstr "Азарт"
+
+msgid "wt_increase_damage/onUse"
+msgstr ""
+"Каждое пробитие усиливает разовый урон следующего выстрела. Эффект "
+"суммируется до 5 раз. Достигнув предела, следующий выстрел наносит "
+"максимальный урон и завершает серию. Промах или выстрел без урона сбрасывает"
+" эффект и возвращает базовый урон."
+
+msgid "wt_increase_damage/restriction"
+msgstr "?empty?"
+
+msgid "wt_increase_damage/short_special"
+msgstr "?empty?"
+
+msgid "wt_invisibility_mod_a/always"
+msgstr "?empty?"
+
+msgid "wt_invisibility_mod_a/descr"
+msgstr "Активная способность"
+
+msgid "wt_invisibility_mod_a/features"
+msgstr ""
+"1. Гончие будут знать, когда вы применили способность и стали невидимыми. \n"
+"2. Невидимость не спасает от снарядов и способностей Гончих. \n"
+"3. Перегрузка генераторов рассеивает невидимость. \n"
+"4. Способность недоступна без активного щита."
+
+msgid "wt_invisibility_mod_a/long_special"
+msgstr "?empty?"
+
+msgid "wt_invisibility_mod_a/name"
+msgstr "Шаг за грань"
+
+msgid "wt_invisibility_mod_a/onUse"
+msgstr ""
+"Делает машину полностью невидимой для противника на определённое время. "
+"Действие эффекта прекращается при выстреле или использовании способности, "
+"а также при снятии щита."
+
+msgid "wt_invisibility_mod_a/restriction"
+msgstr "Способность недоступна без активного щита."
+
+msgid "wt_invisibility_mod_a/short_special"
+msgstr "?empty?"
+
+msgid "wt_invisibility_mod_b/always"
+msgstr "?empty?"
+
+msgid "wt_invisibility_mod_b/descr"
+msgstr "Активная способность"
+
+msgid "wt_invisibility_mod_b/features"
+msgstr ""
+"1. Гончие будут знать, когда вы применили способность.\n"
+"2. Перегрузка генераторов рассеивает невидимость.\n"
+"3. Невидимость не спасает от снарядов и способностей Гончих.\n"
+"4. Способность недоступна без активного щита."
+
+msgid "wt_invisibility_mod_b/long_special"
+msgstr "?empty?"
+
+msgid "wt_invisibility_mod_b/name"
+msgstr "Невидимый дозор"
+
+msgid "wt_invisibility_mod_b/onUse"
+msgstr ""
+"Все часовые становятся невидимыми на некоторое время, при этом стрельба "
+"по часовым и их собственные выстрелы не прерывают эффект."
+
+msgid "wt_invisibility_mod_b/restriction"
+msgstr "Способность недоступна без активного щита."
+
+msgid "wt_invisibility_mod_b/short_special"
+msgstr "?empty?"
+
+msgid "wt_missile/always"
+msgstr "?empty?"
+
+msgid "wt_missile/descr"
+msgstr "Активная способность"
+
+msgid "wt_missile/features"
+msgstr ""
+"1. Управление шаровыми молниями блокирует стрельбу и активацию других способностей.\n"
+"2. Молнии могут перелетать далеко за рельеф местности.\n"
+"3. Молнии сами взорвутся через определённое время, если до этого момента не было контакта с целью."
+
+msgid "wt_missile/long_special"
+msgstr "?empty?"
+
+msgid "wt_missile/name"
+msgstr "Управляемые молнии"
+
+msgid "wt_missile/onUse"
+msgstr ""
+"При активации формирует 3 заряда шаровых молний. После подготовки они "
+"становятся управляемыми и следуют по направлению взгляда камеры. "
+"При столкновении с поверхностью взрываются и наносят урон по области."
+
+msgid "wt_missile/restriction"
+msgstr "?empty?"
+
+msgid "wt_missile/short_special"
+msgstr "?empty?"
+
+msgid "wt_nitro/always"
+msgstr "?empty?"
+
+msgid "wt_nitro/descr"
+msgstr "Активная способность"
+
+msgid "wt_nitro/features"
+msgstr ""
+"1. Используйте форсаж, чтобы быстро перемещаться между генераторами или нагнать Инженера, когда он без щита.\n"
+"2. Способности «Электромагнитная сеть» и «Строгий ошейник» прерывают действие форсажа."
+
+msgid "wt_nitro/long_special"
+msgstr "?empty?"
+
+msgid "wt_nitro/name"
+msgstr "Форсаж"
+
+msgid "wt_nitro/onUse"
+msgstr "На определённое время повышает динамические характеристики танка."
+
+msgid "wt_nitro/restriction"
+msgstr "?empty?"
+
+msgid "wt_nitro/short_special"
+msgstr "?empty?"
+
+msgid "wt_passive_heal/always"
+msgstr ""
+"Прочность машины постепенно восстанавливается после получения урона. Эффект "
+"действует до полного восстановления или до уничтожения машины."
+
+msgid "wt_passive_heal/descr"
+msgstr "Пассивная способность"
+
+msgid "wt_passive_heal/features"
+msgstr ""
+"Действие способности нельзя прервать способностями или негативными "
+"эффектами."
+
+msgid "wt_passive_heal/long_special"
+msgstr "?empty?"
+
+msgid "wt_passive_heal/name"
+msgstr "Пассивное восстановление"
+
+msgid "wt_passive_heal/onUse"
+msgstr "?empty?"
+
+msgid "wt_passive_heal/restriction"
+msgstr "?empty?"
+
+msgid "wt_passive_heal/short_special"
+msgstr "+?empty?"
+
+msgid "wt_plasma_retention/always"
+msgstr "Часть накопленных зарядов плазмы сохраняется после уничтожения."
+
+msgid "wt_plasma_retention/descr"
+msgstr "Пассивная способность"
+
+msgid "wt_plasma_retention/features"
+msgstr ""
+"Попадание Алаида способностью «Электромагнитная стрела» может отнять "
+"сохранённый заряд."
+
+msgid "wt_plasma_retention/long_special"
+msgstr "?empty?"
+
+msgid "wt_plasma_retention/name"
+msgstr "Сохранение заряда"
+
+msgid "wt_plasma_retention/onUse"
+msgstr "?empty?"
+
+msgid "wt_plasma_retention/restriction"
+msgstr "?empty?"
+
+msgid "wt_plasma_retention/short_special"
+msgstr "?empty?"
+
+msgid "wt_smoke_screen/always"
+msgstr "?empty?"
+
+msgid "wt_smoke_screen/descr"
+msgstr "Активная способность"
+
+msgid "wt_smoke_screen/features"
+msgstr ""
+"1. Противник в зоне покрытия получает штраф к обзору и эффективности экипажа.\n"
+"2. Используйте способность, чтобы стрелять из-за завесы и оставаться замаскированным, а также для скрытной перегрузки генераторов."
+
+msgid "wt_smoke_screen/long_special"
+msgstr "?empty?"
+
+msgid "wt_smoke_screen/name"
+msgstr "Дымовая завеса"
+
+msgid "wt_smoke_screen/onUse"
+msgstr ""
+"Мгновенно устанавливает вокруг машины дымы, маскирующие союзников внутри "
+"зоны покрытия и за ней."
+
+msgid "wt_smoke_screen/restriction"
+msgstr "?empty?"
+
+msgid "wt_smoke_screen/short_special"
+msgstr "?empty?"
+
+msgid "wt_stun_area/always"
+msgstr "?empty?"
+
+msgid "wt_stun_area/descr"
+msgstr "Активная способность"
+
+msgid "wt_stun_area/features"
+msgstr ""
+"1. Под действием эффекта невозможно использовать снаряжение и способности.\n"
+"2. Выстрел способностью не расходует стандартный снаряд в магазине заряжания основного орудия.\n"
+"3. Успешное попадание электромагнитной сетью может сбросить очки перегрузки генератора.\n"
+"4. Способность недоступна без активного щита."
+
+msgid "wt_stun_area/long_special"
+msgstr "?empty?"
+
+msgid "wt_stun_area/name"
+msgstr "Электромагнитная сеть"
+
+msgid "wt_stun_area/onUse"
+msgstr ""
+"Выстрел специальным снарядом, который взрывается и раскидывает "
+"электромагнитное поле, внутри которого техника противника получает небольшой"
+" урон и эффект обесточивания: полная потеря управления, а также блокировка "
+"активных способностей и снаряжения."
+
+msgid "wt_stun_area/restriction"
+msgstr "Способность недоступна без активного щита."
+
+msgid "wt_stun_area/short_special"
+msgstr "?empty?"
+
+msgid "wt_stun_area_mod_a/always"
+msgstr "?empty?"
+
+msgid "wt_stun_area_mod_a/descr"
+msgstr "Активная способность"
+
+msgid "wt_stun_area_mod_a/features"
+msgstr ""
+"1. Под действием эффекта невозможно использовать снаряжение и способности.\n"
+"2. Прерывает действие способностей «Форсаж» и «Групповой ремонт», но не прерывает «Пассивное восстановление» и «Силу стаи».\n"
+"3. Всплеск не наносит урон сквозь защитные способности противника. \n"
+"4. Способность недоступна без активного щита."
+
+msgid "wt_stun_area_mod_a/long_special"
+msgstr "?empty?"
+
+msgid "wt_stun_area_mod_a/name"
+msgstr "Строгий ошейник"
+
+msgid "wt_stun_area_mod_a/onUse"
+msgstr ""
+"Мгновенно создаёт вокруг машины резкий электромагнитный всплеск, внутри "
+"которого противники получают небольшой урон и эффект обесточивания: полная "
+"потеря управления, а также блокировка активных способностей и снаряжения."
+
+msgid "wt_stun_area_mod_a/restriction"
+msgstr "Способность недоступна без активного щита."
+
+msgid "wt_stun_area_mod_a/short_special"
+msgstr "?empty?"
+
+msgid "wt_teleport_mod_a/always"
+msgstr "?empty?"
+
+msgid "wt_teleport_mod_a/descr"
+msgstr "Активная способность"
+
+msgid "wt_teleport_mod_a/features"
+msgstr ""
+"1. Гончие узнают, когда вы используете телепортацию, но не будут знать, где вы появитесь.\n"
+"2. Способность недоступна без активного щита."
+
+msgid "wt_teleport_mod_a/long_special"
+msgstr "?empty?"
+
+msgid "wt_teleport_mod_a/name"
+msgstr "Телепорт"
+
+msgid "wt_teleport_mod_a/onUse"
+msgstr ""
+"Позволяет телепортироваться в выбранную точку на карте. Активация занимает "
+"некоторое время."
+
+msgid "wt_teleport_mod_a/restriction"
+msgstr "Способность недоступна без активного щита."
+
+msgid "wt_teleport_mod_a/short_special"
+msgstr "?empty?"
+
+msgid "wt_teleport_mod_b/always"
+msgstr "?empty?"
+
+msgid "wt_teleport_mod_b/descr"
+msgstr "Активная способность"
+
+msgid "wt_teleport_mod_b/features"
+msgstr ""
+"1. Гончие узнают, когда вы используете телепортацию, но не будут знать, где вы появитесь.\n"
+"2. Способность недоступна без активного щита."
+
+msgid "wt_teleport_mod_b/long_special"
+msgstr "?empty?"
+
+msgid "wt_teleport_mod_b/name"
+msgstr "Телепорт"
+
+msgid "wt_teleport_mod_b/onUse"
+msgstr ""
+"Позволяет телепортироваться в выбранную точку на карте. Активация занимает "
+"некоторое время."
+
+msgid "wt_teleport_mod_b/restriction"
+msgstr "Способность недоступна без активного щита."
+
+msgid "wt_teleport_mod_b/short_special"
+msgstr "?empty?"
+
+msgid "wt_union_strength/always"
+msgstr ""
+"При нахождении рядом с союзником в определённом радиусе постепенно восстанавливает прочность до максимального значения. Количество союзников рядом не влияет на скорость восстановления.\n"
+"Также выстрел по цели накладывает метку, которая увеличивает входящий по этой цели урон на %(damageIncrease)s%(percent)s в течение %(time)s с. Метки от выстрелов разных игроков суммируются."
+
+msgid "wt_union_strength/descr"
+msgstr "Пассивная способность"
+
+msgid "wt_union_strength/features"
+msgstr ""
+"Действие способности нельзя прервать способностями или негативными "
+"эффектами."
+
+msgid "wt_union_strength/long_special"
+msgstr "?empty?"
+
+msgid "wt_union_strength/name"
+msgstr "Сила стаи"
+
+msgid "wt_union_strength/onUse"
+msgstr "?empty?"
+
+msgid "wt_union_strength/restriction"
+msgstr "?empty?"
+
+msgid "wt_union_strength/short_special"
+msgstr "?empty?"
+
+msgid "wt_vampirism/always"
+msgstr "Часть нанесённого урона переходит в очки прочности танка."
+
+msgid "wt_vampirism/descr"
+msgstr "Пассивная способность"
+
+msgid "wt_vampirism/features"
+msgstr ""
+"1. Накопленный бонус к урону от сбора плазмы и способности «Азарт» увеличивают восстановление.\n"
+"2. Попадания по щитам Ваффентрагера и Алаида не восстанавливают прочность."
+
+msgid "wt_vampirism/long_special"
+msgstr "?empty?"
+
+msgid "wt_vampirism/name"
+msgstr "Вампиризм"
+
+msgid "wt_vampirism/onUse"
+msgstr "?empty?"
+
+msgid "wt_vampirism/restriction"
+msgstr "?empty?"
+
+msgid "wt_vampirism/short_special"
+msgstr "?empty?"

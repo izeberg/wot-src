@@ -2,8 +2,7 @@
 <root>
 	<xmlns:xmlref>http://bwt/xmlref</xmlns:xmlref>
 	<crew>
-		<commander>radioman
-			loader</commander>
+		<commander>radioman</commander>
 		<gunner>loader</gunner>
 		<driver/>
 	</crew>
@@ -604,11 +603,11 @@
 			<userString>#intunion_vehicles:Chassis_Un15_SBM_44</userString>
 			<tags/>
 			<level>7</level>
-			<price>18000</price>
+			<price>20500</price>
 			<unlocks>
 				<chassis>
 					Chassis_Un15_SBM_44_2
-					<cost>15000</cost>
+					<cost>16100</cost>
 				</chassis>
 			</unlocks>
 			<armor>
@@ -1787,7 +1786,7 @@
 			<userString>#intunion_vehicles:Chassis_Un15_SBM_44_2</userString>
 			<tags/>
 			<level>8</level>
-			<price>32000</price>
+			<price>32800</price>
 			<armor>
 				<leftTrack>20</leftTrack>
 				<rightTrack>20</rightTrack>
@@ -2991,13 +2990,13 @@
 			<unlocks>
 				<turret>
 					Turret_2_Un15_SBM_44
-					<cost>16700</cost>
+					<cost>15900</cost>
 				</turret>
 			</unlocks>
 			<armor>
 				<armor_1>115</armor_1>
-				<armor_2>95</armor_2>
-				<armor_3>90</armor_3>
+				<armor_2>90</armor_2>
+				<armor_3>80</armor_3>
 				<armor_4>70</armor_4>
 				<armor_5>40</armor_5>
 				<armor_6>40</armor_6>
@@ -3016,7 +3015,7 @@
 					<!--BW_String-->
 				</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>370</circularVisionRadius>
+			<circularVisionRadius>380</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>100</maxHealth>
 				<maxRegenHealth>50</maxRegenHealth>
@@ -3028,7 +3027,7 @@
 			<guns>
 				<_30mm_vz_53>
 					shared
-					<maxAmmo>660</maxAmmo>
+					<maxAmmo>418</maxAmmo>
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
@@ -3047,7 +3046,7 @@
 						0.19
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>14</reloadTime>
+					<reloadTime>12</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
 							0.12
@@ -3071,21 +3070,18 @@
 						<!--BW_String-->
 					</aimingTime>
 					<clip>
-						<count>30</count>
-						<rate>280</rate>
+						<count>22</count>
+						<rate>240</rate>
 					</clip>
 					<autoShoot>
 						<shotDispersionPerSec>
-							1.5
+							1.3
 							<!--BW_String-->
 						</shotDispersionPerSec>
-						<maxShotDispersion>7</maxShotDispersion>
-						<rate>
-							4.66
-							<!--BW_String-->
-						</rate>
+						<maxShotDispersion>8</maxShotDispersion>
+						<rate>4</rate>
 						<rebuildShotDispersionDelay>
-							1.0
+							0.3
 							<!--BW_String-->
 						</rebuildShotDispersionDelay>
 					</autoShoot>
@@ -3945,16 +3941,16 @@
 			<userString>#intunion_vehicles:Turret_2_Un15_SBM_44</userString>
 			<tags/>
 			<level>8</level>
-			<price>34000</price>
+			<price>33400</price>
 			<unlocks>
 				<gun>
 					_37mm_N_37D
-					<cost>19000</cost>
+					<cost>22500</cost>
 				</gun>
 			</unlocks>
 			<armor>
 				<armor_1>160</armor_1>
-				<armor_2>100</armor_2>
+				<armor_2>115</armor_2>
 				<armor_3>90</armor_3>
 				<armor_4>70</armor_4>
 				<armor_5>40</armor_5>
@@ -3962,7 +3958,7 @@
 				<armor_7>90</armor_7>
 				<armor_8>0</armor_8>
 				<armor_9>80</armor_9>
-				<armor_10>115</armor_10>
+				<armor_10>120</armor_10>
 				<armor_11>90</armor_11>
 				<armor_12>90</armor_12>
 			</armor>
@@ -3978,7 +3974,7 @@
 					<!--BW_String-->
 				</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>380</circularVisionRadius>
+			<circularVisionRadius>390</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>100</maxHealth>
 				<maxRegenHealth>50</maxRegenHealth>
@@ -3994,7 +3990,7 @@
 			<guns>
 				<_30mm_vz_53>
 					shared
-					<maxAmmo>720</maxAmmo>
+					<maxAmmo>462</maxAmmo>
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
@@ -4019,6 +4015,22 @@
 							0
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_4>
+						<armor_5>
+							60
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_5>
+						<armor_6>
+							50
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_6>
+						<armor_7>
+							115
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_7>
+						<armor_8>
+							110
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_8>
 						<gun>10</gun>
 					</armor>
 					<shotDispersionRadius>
@@ -4049,21 +4061,18 @@
 						<!--BW_String-->
 					</aimingTime>
 					<clip>
-						<count>30</count>
-						<rate>280</rate>
+						<count>22</count>
+						<rate>240</rate>
 					</clip>
 					<autoShoot>
 						<shotDispersionPerSec>
-							1.5
+							1.0
 							<!--BW_String-->
 						</shotDispersionPerSec>
-						<maxShotDispersion>8</maxShotDispersion>
-						<rate>
-							4.66
-							<!--BW_String-->
-						</rate>
+						<maxShotDispersion>7</maxShotDispersion>
+						<rate>4</rate>
 						<rebuildShotDispersionDelay>
-							1.0
+							0.3
 							<!--BW_String-->
 						</rebuildShotDispersionDelay>
 					</autoShoot>
@@ -4171,7 +4180,13 @@
 				</_30mm_vz_53>
 				<_37mm_N_37D>
 					shared
-					<maxAmmo>672</maxAmmo>
+					<maxAmmo>460</maxAmmo>
+					<unlocks>
+						<vehicle>
+							Un16_TDM_54
+							<cost>160800</cost>
+						</vehicle>
+					</unlocks>
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
@@ -4196,13 +4211,29 @@
 							0
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_4>
+						<armor_5>
+							60
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_5>
+						<armor_6>
+							50
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_6>
+						<armor_7>
+							115
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_7>
+						<armor_8>
+							110
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_8>
 						<gun>10</gun>
 					</armor>
 					<shotDispersionRadius>
 						0.2
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>10</reloadTime>
+					<reloadTime>12</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
 							0.12
@@ -4222,25 +4253,22 @@
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<aimingTime>
-						1.5
+						1.1
 						<!--BW_String-->
 					</aimingTime>
 					<clip>
-						<count>28</count>
-						<rate>260</rate>
+						<count>20</count>
+						<rate>240</rate>
 					</clip>
 					<autoShoot>
 						<shotDispersionPerSec>
-							1.5
+							1.4
 							<!--BW_String-->
 						</shotDispersionPerSec>
-						<maxShotDispersion>8</maxShotDispersion>
-						<rate>
-							4.33
-							<!--BW_String-->
-						</rate>
+						<maxShotDispersion>7</maxShotDispersion>
+						<rate>4</rate>
 						<rebuildShotDispersionDelay>
-							1.0
+							0.3
 							<!--BW_String-->
 						</rebuildShotDispersionDelay>
 					</autoShoot>
@@ -4975,7 +5003,7 @@
 			<unlocks>
 				<engine>
 					V_44
-					<cost>18400</cost>
+					<cost>27200</cost>
 				</engine>
 			</unlocks>
 		</V_2_34>
@@ -4987,16 +5015,15 @@
 	<radios>
 		<R_113_44>shared</R_113_44>
 	</radios>
-	<clientAdjustmentFactors/>
 	<physics>
 		<detailed>
 			<engines>
 				<V_2_34>
-					<smplEnginePower>520</smplEnginePower>
+					<smplEnginePower>630</smplEnginePower>
 					<smplFwMaxSpeed>55</smplFwMaxSpeed>
 				</V_2_34>
 				<V_44>
-					<smplEnginePower>570</smplEnginePower>
+					<smplEnginePower>710</smplEnginePower>
 					<smplFwMaxSpeed>55</smplFwMaxSpeed>
 				</V_44>
 			</engines>
@@ -5050,6 +5077,12 @@
 			</chassis>
 		</detailed>
 	</physics>
+	<clientAdjustmentFactors>
+		<power>
+			0.35
+			<!--BW_String-->
+		</power>
+	</clientAdjustmentFactors>
 	<effects>
 		<collision/>
 		<damagedStateGroup>large</damagedStateGroup>
@@ -5062,4 +5095,5 @@
 			<!--BW_String-->
 		</alpha>
 	</emblems>
+	<baseColorID>1</baseColorID>
 </root>

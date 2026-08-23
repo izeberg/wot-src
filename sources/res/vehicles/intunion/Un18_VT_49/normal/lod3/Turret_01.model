@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/intunion/Un18_VT_49/normal/lod3/Turret_01</nodefullVisual>
+	<parent>vehicles/intunion/Un18_VT_49/normal/lod4/Turret_01</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.260646 0.003737 -2.548112</min>
+		<max>1.259775 1.874434 1.232837</max>
+	</visibilityBox>
+</root>

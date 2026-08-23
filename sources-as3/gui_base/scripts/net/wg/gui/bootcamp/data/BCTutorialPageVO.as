@@ -28,6 +28,10 @@ package net.wg.gui.bootcamp.data
       
       public var header4AutoSize:String = "";
       
+      public var header5Text:String = "";
+      
+      public var header5AutoSize:String = "";
+      
       public var description1Text:String = "";
       
       public var description1HtmlText:String = "";

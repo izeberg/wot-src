@@ -1,0 +1,3674 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>40.000004</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>rocket_01_up</name>
+		<type>model</type>
+		<resource>vehicles/russian/R242_BM_13_Katyusha/normal/lod0/one_missile.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-1.003021 1.028834 -0.756424</value>
+				<inTangent>0.000000 5.307409 157.928360</inTangent>
+				<outTangent>0.000000 2.653724 20.283718</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.133333</startTime>
+				<value>-1.003021 1.382663 1.948065</value>
+				<inTangent>-0.000000 2.653724 20.283718</inTangent>
+				<outTangent>-0.000004 4.010034 30.778868</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.200000</startTime>
+				<value>-1.003021 1.650000 4.000000</value>
+				<inTangent>-0.000004 4.010034 30.778868</inTangent>
+				<outTangent>-0.000000 5.307409 69.391769</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>-1.500000 -1.500000 -1.500000</inTangent>
+				<outTangent>-1.500000 -1.500000 -1.500000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.200000</startTime>
+				<value>0.700000 0.700000 0.700000</value>
+				<inTangent>-1.500000 -1.500000 -1.500000</inTangent>
+				<outTangent>-1.500000 -1.500000 -1.500000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>visibility</name>
+			<type>bool</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>true</value>
+			</frame>
+			<frame>
+				<startTime>0.200000</startTime>
+				<value>false</value>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>shot_01</name>
+		<type>particle</type>
+		<resource>particles/Tank/shots/shot_Katyusha.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.996964 0.700000 -3.850000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-7.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>4.285714</inTangent>
+				<outTangent>4.285714</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.066667</startTime>
+				<value>2.000000</value>
+				<inTangent>0.267857</inTangent>
+				<outTangent>0.267857</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.200000</startTime>
+				<value>0.000000</value>
+				<inTangent>-3.750000</inTangent>
+				<outTangent>-3.750000</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>trace_01</name>
+		<type>particle</type>
+		<resource>particles/shells_eff/trace_smoke_katyusha.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.996964 0.700000 -3.850000</value>
+				<inTangent>-0.030285 3.500000 29.250000</inTangent>
+				<outTangent>-0.030285 3.500000 29.250000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.200000</startTime>
+				<value>-1.003021 1.400000 2.000000</value>
+				<inTangent>-0.030285 3.500000 29.250000</inTangent>
+				<outTangent>-0.000000 5.307409 69.391769</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-7.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>4.285714</inTangent>
+				<outTangent>4.285714</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.066667</startTime>
+				<value>2.000000</value>
+				<inTangent>0.267857</inTangent>
+				<outTangent>0.267857</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.200000</startTime>
+				<value>0.000000</value>
+				<inTangent>-3.750000</inTangent>
+				<outTangent>-3.750000</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>opacity</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000</value>
+				<inTangent>-0.003478</inTangent>
+				<outTangent>-0.003478</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.266667</startTime>
+				<value>0.000000</value>
+				<inTangent>-3.750000</inTangent>
+				<outTangent>-3.750000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>rocket_02_up</name>
+		<type>model</type>
+		<resource>vehicles/russian/R242_BM_13_Katyusha/normal/lod0/one_missile.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>0.162216 1.028834 -0.756424</value>
+				<inTangent>0.000000 3.317144 25.354572</inTangent>
+				<outTangent>0.000000 3.317144 25.354572</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.633333</startTime>
+				<value>0.162216 1.471120 2.624187</value>
+				<inTangent>0.000000 3.000170 22.995872</inTangent>
+				<outTangent>0.000000 3.000170 22.995872</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.700000</startTime>
+				<value>0.162216 1.650000 4.000000</value>
+				<inTangent>-0.000000 2.683188 20.637104</inTangent>
+				<outTangent>-0.000000 2.683188 20.637104</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>-1.500000 -1.500000 -1.500000</inTangent>
+				<outTangent>-1.500000 -1.500000 -1.500000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.700000</startTime>
+				<value>0.700000 0.700000 0.700000</value>
+				<inTangent>-1.500000 -1.500000 -1.500000</inTangent>
+				<outTangent>-1.500000 -1.500000 -1.500000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>visibility</name>
+			<type>bool</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>true</value>
+			</frame>
+			<frame>
+				<startTime>0.700000</startTime>
+				<value>false</value>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>shot_02</name>
+		<type>particle</type>
+		<resource>particles/Tank/shots/shot_Katyusha.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.163345 0.700000 -3.850000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-7.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.366667</startTime>
+				<value>0.000000</value>
+				<inTangent>2.142857</inTangent>
+				<outTangent>2.142857</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.533333</startTime>
+				<value>1.000000</value>
+				<inTangent>0.267857</inTangent>
+				<outTangent>0.267857</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.700000</startTime>
+				<value>0.000000</value>
+				<inTangent>-3.750000</inTangent>
+				<outTangent>-3.750000</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>trace_02</name>
+		<type>particle</type>
+		<resource>particles/shells_eff/trace_smoke_katyusha.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>0.163345 0.700000 -3.850000</value>
+				<inTangent>-0.005645 3.499999 29.249994</inTangent>
+				<outTangent>-0.005645 3.499999 29.249994</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.700000</startTime>
+				<value>0.162216 1.400000 2.000000</value>
+				<inTangent>-0.005645 3.499999 29.249994</inTangent>
+				<outTangent>-0.005645 3.499999 29.249994</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-7.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.366667</startTime>
+				<value>0.000000</value>
+				<inTangent>2.142857</inTangent>
+				<outTangent>2.142857</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.533333</startTime>
+				<value>1.000000</value>
+				<inTangent>0.267857</inTangent>
+				<outTangent>0.267857</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.700000</startTime>
+				<value>0.000000</value>
+				<inTangent>-3.750000</inTangent>
+				<outTangent>-3.750000</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>opacity</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>1.000000</value>
+				<inTangent>-0.006650</inTangent>
+				<outTangent>-0.006650</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.766667</startTime>
+				<value>0.000000</value>
+				<inTangent>-4.908026</inTangent>
+				<outTangent>-4.908026</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>rocket_05_up</name>
+		<type>model</type>
+		<resource>vehicles/russian/R242_BM_13_Katyusha/normal/lod0/one_missile.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>1.966667</startTime>
+				<value>-0.735229 1.028834 -0.756424</value>
+				<inTangent>0.000000 2.653734 20.283764</inTangent>
+				<outTangent>0.000000 2.653734 20.283764</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.133333</startTime>
+				<value>-0.735229 1.471121 2.624188</value>
+				<inTangent>-0.000000 2.653734 20.283764</inTangent>
+				<outTangent>0.000000 2.683169 20.637054</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.200000</startTime>
+				<value>-0.735229 1.650000 4.000000</value>
+				<inTangent>-0.000000 2.683169 20.637054</inTangent>
+				<outTangent>-0.000000 2.683169 20.637054</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>1.966667</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>-1.285715 -1.285715 -1.285715</inTangent>
+				<outTangent>-1.285715 -1.285715 -1.285715</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.200000</startTime>
+				<value>0.700000 0.700000 0.700000</value>
+				<inTangent>-1.285715 -1.285715 -1.285715</inTangent>
+				<outTangent>-1.285715 -1.285715 -1.285715</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>visibility</name>
+			<type>bool</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>true</value>
+			</frame>
+			<frame>
+				<startTime>2.200000</startTime>
+				<value>false</value>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>shot_05</name>
+		<type>particle</type>
+		<resource>particles/Tank/shots/shot_Katyusha.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.699066 0.700000 -3.850000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-7.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.866667</startTime>
+				<value>0.000000</value>
+				<inTangent>2.142857</inTangent>
+				<outTangent>2.142857</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.033334</startTime>
+				<value>1.000000</value>
+				<inTangent>0.267858</inTangent>
+				<outTangent>0.267858</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.200000</startTime>
+				<value>0.000000</value>
+				<inTangent>-3.749999</inTangent>
+				<outTangent>-3.749999</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>trace_05</name>
+		<type>particle</type>
+		<resource>particles/shells_eff/trace_smoke_katyusha.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>1.966667</startTime>
+				<value>-0.699066 0.700000 -3.850000</value>
+				<inTangent>-0.154985 3.000004 25.071465</inTangent>
+				<outTangent>-0.154985 3.000004 25.071465</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.200000</startTime>
+				<value>-0.735229 1.400000 2.000000</value>
+				<inTangent>-0.154985 3.000004 25.071465</inTangent>
+				<outTangent>-0.154985 3.000004 25.071465</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-7.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.866667</startTime>
+				<value>0.000000</value>
+				<inTangent>2.142857</inTangent>
+				<outTangent>2.142857</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.033334</startTime>
+				<value>1.000000</value>
+				<inTangent>0.267858</inTangent>
+				<outTangent>0.267858</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.200000</startTime>
+				<value>0.000000</value>
+				<inTangent>-3.749999</inTangent>
+				<outTangent>-3.749999</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>opacity</name>
+			<type>float</type>
+			<frame>
+				<startTime>1.966667</startTime>
+				<value>1.000000</value>
+				<inTangent>-0.006650</inTangent>
+				<outTangent>-0.006650</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.266667</startTime>
+				<value>0.000000</value>
+				<inTangent>-8.096089</inTangent>
+				<outTangent>-8.096089</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>rocket_06_up</name>
+		<type>model</type>
+		<resource>vehicles/russian/R242_BM_13_Katyusha/normal/lod0/one_missile.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>2.466667</startTime>
+				<value>0.425858 1.028834 -0.756424</value>
+				<inTangent>0.000000 2.653738 20.283798</inTangent>
+				<outTangent>0.000000 2.653738 20.283798</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.633333</startTime>
+				<value>0.425858 1.471122 2.624196</value>
+				<inTangent>-0.000000 2.653738 20.283798</inTangent>
+				<outTangent>0.000000 2.683153 20.636932</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.700000</startTime>
+				<value>0.425858 1.650000 4.000000</value>
+				<inTangent>-0.000000 2.683153 20.636932</inTangent>
+				<outTangent>-0.000000 2.683153 20.636932</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>2.466667</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>-1.285714 -1.285714 -1.285714</inTangent>
+				<outTangent>-1.285714 -1.285714 -1.285714</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.700000</startTime>
+				<value>0.700000 0.700000 0.700000</value>
+				<inTangent>-1.285714 -1.285714 -1.285714</inTangent>
+				<outTangent>-1.285714 -1.285714 -1.285714</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>visibility</name>
+			<type>bool</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>true</value>
+			</frame>
+			<frame>
+				<startTime>2.700000</startTime>
+				<value>false</value>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>shot_06</name>
+		<type>particle</type>
+		<resource>particles/Tank/shots/shot_Katyusha.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.389511 0.700000 -3.850000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-7.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.366667</startTime>
+				<value>0.000000</value>
+				<inTangent>2.142857</inTangent>
+				<outTangent>2.142857</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.533334</startTime>
+				<value>1.000000</value>
+				<inTangent>0.267858</inTangent>
+				<outTangent>0.267858</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.700000</startTime>
+				<value>0.000000</value>
+				<inTangent>-3.749999</inTangent>
+				<outTangent>-3.749999</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>trace_06</name>
+		<type>particle</type>
+		<resource>particles/shells_eff/trace_smoke_katyusha.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>2.466667</startTime>
+				<value>0.389511 0.700000 -3.850000</value>
+				<inTangent>0.155773 3.000003 25.071453</inTangent>
+				<outTangent>0.155773 3.000003 25.071453</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.700000</startTime>
+				<value>0.425858 1.400000 2.000000</value>
+				<inTangent>0.155773 3.000003 25.071453</inTangent>
+				<outTangent>0.155773 3.000003 25.071453</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-7.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.366667</startTime>
+				<value>0.000000</value>
+				<inTangent>2.142857</inTangent>
+				<outTangent>2.142857</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.533334</startTime>
+				<value>1.000000</value>
+				<inTangent>0.267858</inTangent>
+				<outTangent>0.267858</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.700000</startTime>
+				<value>0.000000</value>
+				<inTangent>-3.749999</inTangent>
+				<outTangent>-3.749999</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>opacity</name>
+			<type>float</type>
+			<frame>
+				<startTime>2.500000</startTime>
+				<value>1.000000</value>
+				<inTangent>-0.008040</inTangent>
+				<outTangent>-0.008040</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.766667</startTime>
+				<value>0.000000</value>
+				<inTangent>-8.460896</inTangent>
+				<outTangent>-8.460896</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>rocket_09_up</name>
+		<type>model</type>
+		<resource>vehicles/russian/R242_BM_13_Katyusha/normal/lod0/one_missile.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>3.966667</startTime>
+				<value>-0.420654 1.028834 -0.756424</value>
+				<inTangent>0.000000 2.653702 20.283533</inTangent>
+				<outTangent>0.000000 2.653702 20.283533</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.133334</startTime>
+				<value>-0.420654 1.471119 2.624176</value>
+				<inTangent>-0.000000 2.653702 20.283533</inTangent>
+				<outTangent>0.000000 2.683255 20.637674</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.200000</startTime>
+				<value>-0.420654 1.650000 4.000000</value>
+				<inTangent>-0.000000 2.683255 20.637674</inTangent>
+				<outTangent>-0.000000 2.683255 20.637674</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>3.966667</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>-1.285714 -1.285714 -1.285714</inTangent>
+				<outTangent>-1.285714 -1.285714 -1.285714</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.200000</startTime>
+				<value>0.700000 0.700000 0.700000</value>
+				<inTangent>-1.285714 -1.285714 -1.285714</inTangent>
+				<outTangent>-1.285714 -1.285714 -1.285714</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>visibility</name>
+			<type>bool</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>true</value>
+			</frame>
+			<frame>
+				<startTime>4.200000</startTime>
+				<value>false</value>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>shot_09</name>
+		<type>particle</type>
+		<resource>particles/Tank/shots/shot_Katyusha.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.406479 0.700000 -3.850000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-7.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>512</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.866667</startTime>
+				<value>0.000000</value>
+				<inTangent>4.285714</inTangent>
+				<outTangent>4.285714</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.033334</startTime>
+				<value>1.000000</value>
+				<inTangent>0.267857</inTangent>
+				<outTangent>0.267857</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.200000</startTime>
+				<value>0.000000</value>
+				<inTangent>-3.750000</inTangent>
+				<outTangent>-3.750000</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>trace_09</name>
+		<type>particle</type>
+		<resource>particles/shells_eff/trace_smoke_katyusha.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>3.966667</startTime>
+				<value>-0.420654 0.700000 -3.850000</value>
+				<inTangent>0.000000 3.000006 25.071478</inTangent>
+				<outTangent>0.000000 3.000006 25.071478</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.200000</startTime>
+				<value>-0.420654 1.400000 2.000000</value>
+				<inTangent>-0.000000 3.000006 25.071478</inTangent>
+				<outTangent>-0.000000 3.000006 25.071478</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-7.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>512</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.866667</startTime>
+				<value>0.000000</value>
+				<inTangent>4.285714</inTangent>
+				<outTangent>4.285714</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.033334</startTime>
+				<value>1.000000</value>
+				<inTangent>0.267857</inTangent>
+				<outTangent>0.267857</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.200000</startTime>
+				<value>0.000000</value>
+				<inTangent>-3.750000</inTangent>
+				<outTangent>-3.750000</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>opacity</name>
+			<type>float</type>
+			<frame>
+				<startTime>4.000000</startTime>
+				<value>1.000000</value>
+				<inTangent>-0.006650</inTangent>
+				<outTangent>-0.006650</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.266667</startTime>
+				<value>0.000000</value>
+				<inTangent>-9.623685</inTangent>
+				<outTangent>-9.623685</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>rocket_10_up</name>
+		<type>model</type>
+		<resource>vehicles/russian/R242_BM_13_Katyusha/normal/lod0/one_missile.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>4.466667</startTime>
+				<value>0.743729 1.028834 -0.756424</value>
+				<inTangent>0.000000 2.653705 20.283562</inTangent>
+				<outTangent>0.000000 2.653705 20.283562</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.633334</startTime>
+				<value>0.743729 1.471119 2.624176</value>
+				<inTangent>0.000000 2.668480 20.460617</inTangent>
+				<outTangent>0.000000 2.668480 20.460617</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.700000</startTime>
+				<value>0.743729 1.650000 4.000000</value>
+				<inTangent>-0.000000 2.683255 20.637674</inTangent>
+				<outTangent>-0.000000 2.683255 20.637674</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>4.466667</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>-1.285713 -1.285713 -1.285713</inTangent>
+				<outTangent>-1.285713 -1.285713 -1.285713</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.700000</startTime>
+				<value>0.700000 0.700000 0.700000</value>
+				<inTangent>-1.285713 -1.285713 -1.285713</inTangent>
+				<outTangent>-1.285713 -1.285713 -1.285713</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>visibility</name>
+			<type>bool</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>true</value>
+			</frame>
+			<frame>
+				<startTime>4.700000</startTime>
+				<value>false</value>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>shot_10</name>
+		<type>particle</type>
+		<resource>particles/Tank/shots/shot_Katyusha.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.728897 0.700000 -3.850000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-7.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>512</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.366667</startTime>
+				<value>0.000000</value>
+				<inTangent>4.285714</inTangent>
+				<outTangent>4.285714</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.533334</startTime>
+				<value>1.000000</value>
+				<inTangent>0.267857</inTangent>
+				<outTangent>0.267857</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.700000</startTime>
+				<value>0.000000</value>
+				<inTangent>-3.750000</inTangent>
+				<outTangent>-3.750000</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>trace_10</name>
+		<type>particle</type>
+		<resource>particles/shells_eff/trace_smoke_katyusha.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>4.466667</startTime>
+				<value>0.743729 0.700000 -3.850000</value>
+				<inTangent>0.000000 3.000009 25.071503</inTangent>
+				<outTangent>0.000000 3.000009 25.071503</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.700000</startTime>
+				<value>0.743729 1.400000 2.000000</value>
+				<inTangent>-0.000000 3.000009 25.071503</inTangent>
+				<outTangent>-0.000000 3.000009 25.071503</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-7.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>512</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.366667</startTime>
+				<value>0.000000</value>
+				<inTangent>4.285714</inTangent>
+				<outTangent>4.285714</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.533334</startTime>
+				<value>1.000000</value>
+				<inTangent>0.267857</inTangent>
+				<outTangent>0.267857</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.700000</startTime>
+				<value>0.000000</value>
+				<inTangent>-3.750000</inTangent>
+				<outTangent>-3.750000</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>opacity</name>
+			<type>float</type>
+			<frame>
+				<startTime>4.500000</startTime>
+				<value>1.000000</value>
+				<inTangent>-0.006650</inTangent>
+				<outTangent>-0.006650</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.766667</startTime>
+				<value>0.000000</value>
+				<inTangent>-7.294141</inTangent>
+				<outTangent>-7.294141</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>rocket_13_up</name>
+		<type>model</type>
+		<resource>vehicles/russian/R242_BM_13_Katyusha/normal/lod0/one_missile.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>5.966667</startTime>
+				<value>-0.164825 1.028834 -0.756424</value>
+				<inTangent>0.000000 2.653713 20.283619</inTangent>
+				<outTangent>0.000000 2.653713 20.283619</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>6.133334</startTime>
+				<value>-0.164825 1.471119 2.624176</value>
+				<inTangent>0.000000 2.668480 20.460617</inTangent>
+				<outTangent>0.000000 2.668480 20.460617</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>6.200000</startTime>
+				<value>-0.164825 1.650000 4.000000</value>
+				<inTangent>-0.000000 2.683255 20.637674</inTangent>
+				<outTangent>-0.000000 2.683255 20.637674</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>5.966667</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>-1.285716 -1.285716 -1.285716</inTangent>
+				<outTangent>-1.285716 -1.285716 -1.285716</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>6.200000</startTime>
+				<value>0.700000 0.700000 0.700000</value>
+				<inTangent>-1.285716 -1.285716 -1.285716</inTangent>
+				<outTangent>-1.285716 -1.285716 -1.285716</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>visibility</name>
+			<type>bool</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>true</value>
+			</frame>
+			<frame>
+				<startTime>6.200000</startTime>
+				<value>false</value>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>shot_13</name>
+		<type>particle</type>
+		<resource>particles/Tank/shots/shot_Katyusha.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.135696 0.700000 -3.850000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-7.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.866667</startTime>
+				<value>0.000000</value>
+				<inTangent>2.142857</inTangent>
+				<outTangent>2.142857</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>6.033334</startTime>
+				<value>1.000000</value>
+				<inTangent>0.267858</inTangent>
+				<outTangent>0.267858</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>6.200000</startTime>
+				<value>0.000000</value>
+				<inTangent>-3.749999</inTangent>
+				<outTangent>-3.749999</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>trace_13</name>
+		<type>particle</type>
+		<resource>particles/shells_eff/trace_smoke_katyusha.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>5.966667</startTime>
+				<value>-0.164825 0.700000 -3.850000</value>
+				<inTangent>0.000000 3.000009 25.071503</inTangent>
+				<outTangent>0.000000 3.000009 25.071503</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>6.200000</startTime>
+				<value>-0.164825 1.400000 2.000000</value>
+				<inTangent>-0.000000 3.000009 25.071503</inTangent>
+				<outTangent>-0.000000 3.000009 25.071503</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-7.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.866667</startTime>
+				<value>0.000000</value>
+				<inTangent>2.142857</inTangent>
+				<outTangent>2.142857</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>6.033334</startTime>
+				<value>1.000000</value>
+				<inTangent>0.267858</inTangent>
+				<outTangent>0.267858</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>6.200000</startTime>
+				<value>0.000000</value>
+				<inTangent>-3.749999</inTangent>
+				<outTangent>-3.749999</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>opacity</name>
+			<type>float</type>
+			<frame>
+				<startTime>6.000000</startTime>
+				<value>1.000000</value>
+				<inTangent>-0.006650</inTangent>
+				<outTangent>-0.006650</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>6.266667</startTime>
+				<value>0.000000</value>
+				<inTangent>-8.270594</inTangent>
+				<outTangent>-8.270594</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>rocket_14_up</name>
+		<type>model</type>
+		<resource>vehicles/russian/R242_BM_13_Katyusha/normal/lod0/one_missile.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>6.466667</startTime>
+				<value>1.010696 1.028834 -0.756424</value>
+				<inTangent>0.000000 2.653713 20.283619</inTangent>
+				<outTangent>0.000000 2.653713 20.283619</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>6.633334</startTime>
+				<value>1.010696 1.471119 2.624176</value>
+				<inTangent>0.000000 2.668480 20.460617</inTangent>
+				<outTangent>0.000000 2.668480 20.460617</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>6.700000</startTime>
+				<value>1.010696 1.650000 4.000000</value>
+				<inTangent>-0.000000 2.683255 20.637674</inTangent>
+				<outTangent>-0.000000 2.683255 20.637674</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>6.466667</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>-1.285716 -1.285716 -1.285716</inTangent>
+				<outTangent>-1.285716 -1.285716 -1.285716</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>6.700000</startTime>
+				<value>0.700000 0.700000 0.700000</value>
+				<inTangent>-1.285716 -1.285716 -1.285716</inTangent>
+				<outTangent>-1.285716 -1.285716 -1.285716</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>visibility</name>
+			<type>bool</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>true</value>
+			</frame>
+			<frame>
+				<startTime>6.700000</startTime>
+				<value>false</value>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>shot_14</name>
+		<type>particle</type>
+		<resource>particles/Tank/shots/shot_Katyusha.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.979935 0.700000 -3.850000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-7.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>6.366667</startTime>
+				<value>0.000000</value>
+				<inTangent>2.142857</inTangent>
+				<outTangent>2.142857</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>6.533334</startTime>
+				<value>1.000000</value>
+				<inTangent>0.267858</inTangent>
+				<outTangent>0.267858</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>6.700000</startTime>
+				<value>0.000000</value>
+				<inTangent>-3.749999</inTangent>
+				<outTangent>-3.749999</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>trace_14</name>
+		<type>particle</type>
+		<resource>particles/shells_eff/trace_smoke_katyusha.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>6.466667</startTime>
+				<value>1.010696 0.700000 -3.850000</value>
+				<inTangent>0.000000 3.000009 25.071503</inTangent>
+				<outTangent>0.000000 3.000009 25.071503</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>6.700000</startTime>
+				<value>1.010696 1.400000 2.000000</value>
+				<inTangent>-0.000000 3.000009 25.071503</inTangent>
+				<outTangent>-0.000000 3.000009 25.071503</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-7.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>6.366667</startTime>
+				<value>0.000000</value>
+				<inTangent>2.142857</inTangent>
+				<outTangent>2.142857</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>6.533334</startTime>
+				<value>1.000000</value>
+				<inTangent>0.267858</inTangent>
+				<outTangent>0.267858</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>6.700000</startTime>
+				<value>0.000000</value>
+				<inTangent>-3.749999</inTangent>
+				<outTangent>-3.749999</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>opacity</name>
+			<type>float</type>
+			<frame>
+				<startTime>6.500000</startTime>
+				<value>1.000000</value>
+				<inTangent>-0.006650</inTangent>
+				<outTangent>-0.006650</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>6.766667</startTime>
+				<value>0.000000</value>
+				<inTangent>-8.270594</inTangent>
+				<outTangent>-8.270594</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>rocket_03_down</name>
+		<type>model</type>
+		<resource>vehicles/russian/R242_BM_13_Katyusha/normal/lod0/one_missile_lower.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.966667</startTime>
+				<value>-1.006958 0.703195 -0.756424</value>
+				<inTangent>0.000000 2.653715 20.283661</inTangent>
+				<outTangent>0.000000 2.653715 20.283661</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.133333</startTime>
+				<value>-1.006958 1.145481 2.624188</value>
+				<inTangent>0.000000 2.485749 20.460405</inTangent>
+				<outTangent>0.000000 2.485749 20.460405</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.200000</startTime>
+				<value>-1.006958 1.300000 4.000000</value>
+				<inTangent>-0.000000 2.317770 20.637054</inTangent>
+				<outTangent>-0.000000 2.317770 20.637054</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.966667</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>-1.285714 -1.285714 -1.285714</inTangent>
+				<outTangent>-1.285714 -1.285714 -1.285714</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.200000</startTime>
+				<value>0.700000 0.700000 0.700000</value>
+				<inTangent>-1.285714 -1.285714 -1.285714</inTangent>
+				<outTangent>-1.285714 -1.285714 -1.285714</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>visibility</name>
+			<type>bool</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>true</value>
+			</frame>
+			<frame>
+				<startTime>1.200000</startTime>
+				<value>false</value>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>shot_03</name>
+		<type>particle</type>
+		<resource>particles/Tank/shots/shot_Katyusha.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.996964 0.400000 -3.850000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-7.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.866667</startTime>
+				<value>0.000000</value>
+				<inTangent>2.142857</inTangent>
+				<outTangent>2.142857</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.033333</startTime>
+				<value>1.000000</value>
+				<inTangent>0.267858</inTangent>
+				<outTangent>0.267858</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.200000</startTime>
+				<value>0.000000</value>
+				<inTangent>-3.749999</inTangent>
+				<outTangent>-3.749999</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>trace_03</name>
+		<type>particle</type>
+		<resource>particles/shells_eff/trace_smoke_katyusha.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.966667</startTime>
+				<value>-0.996964 0.400000 -3.850000</value>
+				<inTangent>-0.042832 3.000000 25.071428</inTangent>
+				<outTangent>-0.042832 3.000000 25.071428</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.200000</startTime>
+				<value>-1.006958 1.100000 2.000000</value>
+				<inTangent>-0.042832 3.000000 25.071428</inTangent>
+				<outTangent>-0.042832 3.000000 25.071428</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-7.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.866667</startTime>
+				<value>0.000000</value>
+				<inTangent>2.142857</inTangent>
+				<outTangent>2.142857</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.033333</startTime>
+				<value>1.000000</value>
+				<inTangent>0.267858</inTangent>
+				<outTangent>0.267858</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.200000</startTime>
+				<value>0.000000</value>
+				<inTangent>-3.749999</inTangent>
+				<outTangent>-3.749999</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>opacity</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.966667</startTime>
+				<value>1.000000</value>
+				<inTangent>-0.006650</inTangent>
+				<outTangent>-0.006650</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.266667</startTime>
+				<value>0.000000</value>
+				<inTangent>-4.825400</inTangent>
+				<outTangent>-4.825400</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>rocket_04_down</name>
+		<type>model</type>
+		<resource>vehicles/russian/R242_BM_13_Katyusha/normal/lod0/one_missile_lower.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>1.466667</startTime>
+				<value>0.154297 0.703195 -0.756424</value>
+				<inTangent>0.000000 2.653721 20.283686</inTangent>
+				<outTangent>0.000000 2.653721 20.283686</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.633333</startTime>
+				<value>0.154297 1.145482 2.624192</value>
+				<inTangent>0.000000 2.485745 20.460390</inTangent>
+				<outTangent>0.000000 2.485745 20.460390</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.700000</startTime>
+				<value>0.154297 1.300000 4.000000</value>
+				<inTangent>-0.000000 2.317756 20.636993</inTangent>
+				<outTangent>-0.000000 2.317756 20.636993</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>1.466667</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>-1.285714 -1.285714 -1.285714</inTangent>
+				<outTangent>-1.285714 -1.285714 -1.285714</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.700000</startTime>
+				<value>0.700000 0.700000 0.700000</value>
+				<inTangent>-1.285714 -1.285714 -1.285714</inTangent>
+				<outTangent>-1.285714 -1.285714 -1.285714</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>visibility</name>
+			<type>bool</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>true</value>
+			</frame>
+			<frame>
+				<startTime>1.700000</startTime>
+				<value>false</value>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>shot_04</name>
+		<type>particle</type>
+		<resource>particles/Tank/shots/shot_Katyusha.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.135437 0.400000 -3.850000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-7.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.366667</startTime>
+				<value>0.000000</value>
+				<inTangent>2.142857</inTangent>
+				<outTangent>2.142857</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.533333</startTime>
+				<value>1.000000</value>
+				<inTangent>0.267858</inTangent>
+				<outTangent>0.267858</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.700000</startTime>
+				<value>0.000000</value>
+				<inTangent>-3.749999</inTangent>
+				<outTangent>-3.749999</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>trace_04</name>
+		<type>particle</type>
+		<resource>particles/shells_eff/trace_smoke_katyusha.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>1.466667</startTime>
+				<value>0.154297 0.400000 -3.850000</value>
+				<inTangent>0.000000 3.000005 25.071465</inTangent>
+				<outTangent>0.000000 3.000005 25.071465</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.700000</startTime>
+				<value>0.154297 1.100000 2.000000</value>
+				<inTangent>-0.000000 3.000005 25.071465</inTangent>
+				<outTangent>-0.000000 3.000005 25.071465</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-7.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.366667</startTime>
+				<value>0.000000</value>
+				<inTangent>2.142857</inTangent>
+				<outTangent>2.142857</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.533333</startTime>
+				<value>1.000000</value>
+				<inTangent>0.267858</inTangent>
+				<outTangent>0.267858</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.700000</startTime>
+				<value>0.000000</value>
+				<inTangent>-3.749999</inTangent>
+				<outTangent>-3.749999</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>opacity</name>
+			<type>float</type>
+			<frame>
+				<startTime>1.466667</startTime>
+				<value>1.000000</value>
+				<inTangent>-0.006650</inTangent>
+				<outTangent>-0.006650</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.766667</startTime>
+				<value>0.000000</value>
+				<inTangent>-5.062467</inTangent>
+				<outTangent>-5.062467</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>rocket_07_down</name>
+		<type>model</type>
+		<resource>vehicles/russian/R242_BM_13_Katyusha/normal/lod0/one_missile_lower.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>2.966667</startTime>
+				<value>-0.738388 0.703195 -0.756424</value>
+				<inTangent>0.000000 2.653724 20.283739</inTangent>
+				<outTangent>0.000000 2.653724 20.283739</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.133333</startTime>
+				<value>-0.738388 1.145482 2.624196</value>
+				<inTangent>0.000000 2.485744 20.460365</inTangent>
+				<outTangent>0.000000 2.485744 20.460365</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.200000</startTime>
+				<value>-0.738388 1.300000 4.000000</value>
+				<inTangent>-0.000000 2.317756 20.636932</inTangent>
+				<outTangent>-0.000000 2.317756 20.636932</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>2.966667</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>-1.285714 -1.285714 -1.285714</inTangent>
+				<outTangent>-1.285714 -1.285714 -1.285714</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.200000</startTime>
+				<value>0.700000 0.700000 0.700000</value>
+				<inTangent>-1.285714 -1.285714 -1.285714</inTangent>
+				<outTangent>-1.285714 -1.285714 -1.285714</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>visibility</name>
+			<type>bool</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>true</value>
+			</frame>
+			<frame>
+				<startTime>3.200000</startTime>
+				<value>false</value>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>shot_07</name>
+		<type>particle</type>
+		<resource>particles/Tank/shots/shot_Katyusha.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.699066 0.400000 -3.850000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-7.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.866667</startTime>
+				<value>0.000000</value>
+				<inTangent>2.142857</inTangent>
+				<outTangent>2.142857</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.033334</startTime>
+				<value>1.000000</value>
+				<inTangent>0.267858</inTangent>
+				<outTangent>0.267858</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.200000</startTime>
+				<value>0.000000</value>
+				<inTangent>-3.749999</inTangent>
+				<outTangent>-3.749999</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>trace_07</name>
+		<type>particle</type>
+		<resource>particles/shells_eff/trace_smoke_katyusha.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>2.966667</startTime>
+				<value>-0.699066 0.400000 -3.850000</value>
+				<inTangent>-0.168523 3.000003 25.071453</inTangent>
+				<outTangent>-0.168523 3.000003 25.071453</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.200000</startTime>
+				<value>-0.738388 1.100000 2.000000</value>
+				<inTangent>-0.168523 3.000003 25.071453</inTangent>
+				<outTangent>-0.168523 3.000003 25.071453</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-7.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.866667</startTime>
+				<value>0.000000</value>
+				<inTangent>2.142857</inTangent>
+				<outTangent>2.142857</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.033334</startTime>
+				<value>1.000000</value>
+				<inTangent>0.267858</inTangent>
+				<outTangent>0.267858</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.200000</startTime>
+				<value>0.000000</value>
+				<inTangent>-3.749999</inTangent>
+				<outTangent>-3.749999</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>opacity</name>
+			<type>float</type>
+			<frame>
+				<startTime>3.000000</startTime>
+				<value>1.000000</value>
+				<inTangent>-0.000030</inTangent>
+				<outTangent>-0.000030</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.266667</startTime>
+				<value>0.000000</value>
+				<inTangent>-8.394303</inTangent>
+				<outTangent>-8.394303</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>rocket_08_down</name>
+		<type>model</type>
+		<resource>vehicles/russian/R242_BM_13_Katyusha/normal/lod0/one_missile_lower.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>3.466667</startTime>
+				<value>0.433945 0.703195 -0.756424</value>
+				<inTangent>0.000000 2.653724 20.283739</inTangent>
+				<outTangent>0.000000 2.653724 20.283739</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.633333</startTime>
+				<value>0.433945 1.145482 2.624196</value>
+				<inTangent>0.000000 2.485744 20.460365</inTangent>
+				<outTangent>0.000000 2.485744 20.460365</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.700000</startTime>
+				<value>0.433945 1.300000 4.000000</value>
+				<inTangent>-0.000000 2.317756 20.636932</inTangent>
+				<outTangent>-0.000000 2.317756 20.636932</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>3.466667</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>-1.285714 -1.285714 -1.285714</inTangent>
+				<outTangent>-1.285714 -1.285714 -1.285714</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.700000</startTime>
+				<value>0.700000 0.700000 0.700000</value>
+				<inTangent>-1.285714 -1.285714 -1.285714</inTangent>
+				<outTangent>-1.285714 -1.285714 -1.285714</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>visibility</name>
+			<type>bool</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>true</value>
+			</frame>
+			<frame>
+				<startTime>3.700000</startTime>
+				<value>false</value>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>shot_08</name>
+		<type>particle</type>
+		<resource>particles/Tank/shots/shot_Katyusha.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.389511 0.400000 -3.850000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-7.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.366667</startTime>
+				<value>0.000000</value>
+				<inTangent>2.142857</inTangent>
+				<outTangent>2.142857</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.533334</startTime>
+				<value>1.000000</value>
+				<inTangent>0.267858</inTangent>
+				<outTangent>0.267858</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.700000</startTime>
+				<value>0.000000</value>
+				<inTangent>-3.749999</inTangent>
+				<outTangent>-3.749999</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>trace_08</name>
+		<type>particle</type>
+		<resource>particles/shells_eff/trace_smoke_katyusha.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>3.466667</startTime>
+				<value>0.389511 0.400000 -3.850000</value>
+				<inTangent>0.190432 3.000003 25.071453</inTangent>
+				<outTangent>0.190432 3.000003 25.071453</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.700000</startTime>
+				<value>0.433945 1.100000 2.000000</value>
+				<inTangent>0.190432 3.000003 25.071453</inTangent>
+				<outTangent>0.190432 3.000003 25.071453</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-7.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.366667</startTime>
+				<value>0.000000</value>
+				<inTangent>2.142857</inTangent>
+				<outTangent>2.142857</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.533334</startTime>
+				<value>1.000000</value>
+				<inTangent>0.267858</inTangent>
+				<outTangent>0.267858</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.700000</startTime>
+				<value>0.000000</value>
+				<inTangent>-3.749999</inTangent>
+				<outTangent>-3.749999</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>opacity</name>
+			<type>float</type>
+			<frame>
+				<startTime>3.500000</startTime>
+				<value>1.000000</value>
+				<inTangent>-0.006650</inTangent>
+				<outTangent>-0.006650</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.766667</startTime>
+				<value>0.000000</value>
+				<inTangent>-8.900282</inTangent>
+				<outTangent>-8.900282</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>rocket_11_down</name>
+		<type>model</type>
+		<resource>vehicles/russian/R242_BM_13_Katyusha/normal/lod0/one_missile_lower.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>4.966667</startTime>
+				<value>-0.432556 0.703195 -0.756424</value>
+				<inTangent>0.000000 2.653705 20.283562</inTangent>
+				<outTangent>0.000000 2.653705 20.283562</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.133334</startTime>
+				<value>-0.432556 1.145480 2.624176</value>
+				<inTangent>0.000000 2.485770 20.460617</inTangent>
+				<outTangent>0.000000 2.485770 20.460617</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.200000</startTime>
+				<value>-0.432556 1.300000 4.000000</value>
+				<inTangent>-0.000000 2.317834 20.637674</inTangent>
+				<outTangent>-0.000000 2.317834 20.637674</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>4.966667</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>-1.285713 -1.285713 -1.285713</inTangent>
+				<outTangent>-1.285713 -1.285713 -1.285713</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.200000</startTime>
+				<value>0.700000 0.700000 0.700000</value>
+				<inTangent>-1.285713 -1.285713 -1.285713</inTangent>
+				<outTangent>-1.285713 -1.285713 -1.285713</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>visibility</name>
+			<type>bool</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>true</value>
+			</frame>
+			<frame>
+				<startTime>5.200000</startTime>
+				<value>false</value>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>shot_11</name>
+		<type>particle</type>
+		<resource>particles/Tank/shots/shot_Katyusha.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.406479 0.400000 -3.850000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-7.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.866667</startTime>
+				<value>0.000000</value>
+				<inTangent>2.142857</inTangent>
+				<outTangent>2.142857</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.033334</startTime>
+				<value>1.000000</value>
+				<inTangent>0.267858</inTangent>
+				<outTangent>0.267858</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.200000</startTime>
+				<value>0.000000</value>
+				<inTangent>-3.749999</inTangent>
+				<outTangent>-3.749999</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>trace_11</name>
+		<type>particle</type>
+		<resource>particles/shells_eff/trace_smoke_katyusha.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>4.966667</startTime>
+				<value>-0.432556 0.400000 -3.850000</value>
+				<inTangent>0.000000 3.000009 25.071503</inTangent>
+				<outTangent>0.000000 3.000009 25.071503</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.200000</startTime>
+				<value>-0.432556 1.100000 2.000000</value>
+				<inTangent>-0.000000 3.000009 25.071503</inTangent>
+				<outTangent>-0.000000 3.000009 25.071503</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-7.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.866667</startTime>
+				<value>0.000000</value>
+				<inTangent>2.142857</inTangent>
+				<outTangent>2.142857</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.033334</startTime>
+				<value>1.000000</value>
+				<inTangent>0.267858</inTangent>
+				<outTangent>0.267858</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.200000</startTime>
+				<value>0.000000</value>
+				<inTangent>-3.749999</inTangent>
+				<outTangent>-3.749999</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>opacity</name>
+			<type>float</type>
+			<frame>
+				<startTime>4.966667</startTime>
+				<value>1.000000</value>
+				<inTangent>-0.006650</inTangent>
+				<outTangent>-0.006650</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.266667</startTime>
+				<value>0.000000</value>
+				<inTangent>-7.150412</inTangent>
+				<outTangent>-7.150412</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>rocket_12_down</name>
+		<type>model</type>
+		<resource>vehicles/russian/R242_BM_13_Katyusha/normal/lod0/one_missile_lower.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>5.466667</startTime>
+				<value>0.730927 0.703195 -0.756424</value>
+				<inTangent>0.000000 2.653713 20.283619</inTangent>
+				<outTangent>0.000000 2.653713 20.283619</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.633334</startTime>
+				<value>0.730927 1.145480 2.624176</value>
+				<inTangent>0.000000 2.485770 20.460617</inTangent>
+				<outTangent>0.000000 2.485770 20.460617</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.700000</startTime>
+				<value>0.730927 1.300000 4.000000</value>
+				<inTangent>-0.000000 2.317834 20.637674</inTangent>
+				<outTangent>-0.000000 2.317834 20.637674</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>5.466667</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>-1.285716 -1.285716 -1.285716</inTangent>
+				<outTangent>-1.285716 -1.285716 -1.285716</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.700000</startTime>
+				<value>0.700000 0.700000 0.700000</value>
+				<inTangent>-1.285716 -1.285716 -1.285716</inTangent>
+				<outTangent>-1.285716 -1.285716 -1.285716</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>visibility</name>
+			<type>bool</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>true</value>
+			</frame>
+			<frame>
+				<startTime>5.700000</startTime>
+				<value>false</value>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>shot_12</name>
+		<type>particle</type>
+		<resource>particles/Tank/shots/shot_Katyusha.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.728897 0.400000 -3.850000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-7.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.366667</startTime>
+				<value>0.000000</value>
+				<inTangent>2.142857</inTangent>
+				<outTangent>2.142857</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.533334</startTime>
+				<value>1.000000</value>
+				<inTangent>0.267858</inTangent>
+				<outTangent>0.267858</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.700000</startTime>
+				<value>0.000000</value>
+				<inTangent>-3.749999</inTangent>
+				<outTangent>-3.749999</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>trace_12</name>
+		<type>particle</type>
+		<resource>particles/shells_eff/trace_smoke_katyusha.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>5.466667</startTime>
+				<value>0.730927 0.400000 -3.850000</value>
+				<inTangent>0.000000 3.000009 25.071503</inTangent>
+				<outTangent>0.000000 3.000009 25.071503</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.700000</startTime>
+				<value>0.730927 1.100000 2.000000</value>
+				<inTangent>-0.000000 3.000009 25.071503</inTangent>
+				<outTangent>-0.000000 3.000009 25.071503</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-7.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.366667</startTime>
+				<value>0.000000</value>
+				<inTangent>2.142857</inTangent>
+				<outTangent>2.142857</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.533334</startTime>
+				<value>1.000000</value>
+				<inTangent>0.267858</inTangent>
+				<outTangent>0.267858</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.700000</startTime>
+				<value>0.000000</value>
+				<inTangent>-3.749999</inTangent>
+				<outTangent>-3.749999</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>opacity</name>
+			<type>float</type>
+			<frame>
+				<startTime>5.500000</startTime>
+				<value>1.000000</value>
+				<inTangent>-0.006650</inTangent>
+				<outTangent>-0.006650</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.766667</startTime>
+				<value>0.000000</value>
+				<inTangent>-8.270594</inTangent>
+				<outTangent>-8.270594</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>rocket_15_down</name>
+		<type>model</type>
+		<resource>vehicles/russian/R242_BM_13_Katyusha/normal/lod0/one_missile_lower.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>6.966667</startTime>
+				<value>-0.159576 0.703195 -0.756424</value>
+				<inTangent>0.000000 2.653713 20.283619</inTangent>
+				<outTangent>0.000000 2.653713 20.283619</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>7.133334</startTime>
+				<value>-0.159576 1.145480 2.624176</value>
+				<inTangent>0.000000 2.485770 20.460617</inTangent>
+				<outTangent>0.000000 2.485770 20.460617</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>7.200000</startTime>
+				<value>-0.159576 1.300000 4.000000</value>
+				<inTangent>-0.000000 2.317834 20.637674</inTangent>
+				<outTangent>-0.000000 2.317834 20.637674</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>6.966667</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>-1.285716 -1.285716 -1.285716</inTangent>
+				<outTangent>-1.285716 -1.285716 -1.285716</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>7.200000</startTime>
+				<value>0.700000 0.700000 0.700000</value>
+				<inTangent>-1.285716 -1.285716 -1.285716</inTangent>
+				<outTangent>-1.285716 -1.285716 -1.285716</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>visibility</name>
+			<type>bool</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>true</value>
+			</frame>
+			<frame>
+				<startTime>7.200000</startTime>
+				<value>false</value>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>shot_15</name>
+		<type>particle</type>
+		<resource>particles/Tank/shots/shot_Katyusha.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.135696 0.400000 -3.850000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-7.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>6.866667</startTime>
+				<value>0.000000</value>
+				<inTangent>2.142857</inTangent>
+				<outTangent>2.142857</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>7.033334</startTime>
+				<value>1.000000</value>
+				<inTangent>0.267858</inTangent>
+				<outTangent>0.267858</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>7.200000</startTime>
+				<value>0.000000</value>
+				<inTangent>-3.749999</inTangent>
+				<outTangent>-3.749999</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>trace_15</name>
+		<type>particle</type>
+		<resource>particles/shells_eff/trace_smoke_katyusha.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>6.966667</startTime>
+				<value>-0.159576 0.400000 -3.850000</value>
+				<inTangent>0.000000 3.000009 25.071503</inTangent>
+				<outTangent>0.000000 3.000009 25.071503</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>7.200000</startTime>
+				<value>-0.159576 1.100000 2.000000</value>
+				<inTangent>-0.000000 3.000009 25.071503</inTangent>
+				<outTangent>-0.000000 3.000009 25.071503</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-7.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>6.866667</startTime>
+				<value>0.000000</value>
+				<inTangent>2.142857</inTangent>
+				<outTangent>2.142857</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>7.033334</startTime>
+				<value>1.000000</value>
+				<inTangent>0.267858</inTangent>
+				<outTangent>0.267858</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>7.200000</startTime>
+				<value>0.000000</value>
+				<inTangent>-3.749999</inTangent>
+				<outTangent>-3.749999</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>opacity</name>
+			<type>float</type>
+			<frame>
+				<startTime>7.000000</startTime>
+				<value>1.000000</value>
+				<inTangent>-0.006650</inTangent>
+				<outTangent>-0.006650</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>7.266667</startTime>
+				<value>0.000000</value>
+				<inTangent>-8.270594</inTangent>
+				<outTangent>-8.270594</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>rocket_16_down</name>
+		<type>model</type>
+		<resource>vehicles/russian/R242_BM_13_Katyusha/normal/lod0/one_missile_lower.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.466667</startTime>
+				<value>1.011475 0.703195 -0.756424</value>
+				<inTangent>0.000000 2.653695 20.283524</inTangent>
+				<outTangent>0.000000 2.653695 20.283524</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>7.633334</startTime>
+				<value>1.011475 1.145477 2.624160</value>
+				<inTangent>0.000000 2.485783 20.460690</inTangent>
+				<outTangent>0.000000 2.485783 20.460690</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>7.700000</startTime>
+				<value>1.011475 1.300000 4.000000</value>
+				<inTangent>-0.000000 2.317879 20.637915</inTangent>
+				<outTangent>-0.000000 2.317879 20.637915</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.466667</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>-1.285716 -1.285716 -1.285716</inTangent>
+				<outTangent>-1.285716 -1.285716 -1.285716</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>7.700000</startTime>
+				<value>0.700000 0.700000 0.700000</value>
+				<inTangent>-1.285716 -1.285716 -1.285716</inTangent>
+				<outTangent>-1.285716 -1.285716 -1.285716</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>visibility</name>
+			<type>bool</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>true</value>
+			</frame>
+			<frame>
+				<startTime>7.700000</startTime>
+				<value>false</value>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>shot_16</name>
+		<type>particle</type>
+		<resource>particles/Tank/shots/shot_Katyusha.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.979935 0.400000 -3.850000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-7.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>7.366667</startTime>
+				<value>0.000000</value>
+				<inTangent>2.142857</inTangent>
+				<outTangent>2.142857</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>7.533334</startTime>
+				<value>1.000000</value>
+				<inTangent>0.267858</inTangent>
+				<outTangent>0.267858</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>7.700000</startTime>
+				<value>0.000000</value>
+				<inTangent>-3.749999</inTangent>
+				<outTangent>-3.749999</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>40.000004</startTime>
+				<value>0.000000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>-0.000000</outTangent>
+				<tangentMode>2</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>trace_16</name>
+		<type>particle</type>
+		<resource>particles/shells_eff/trace_smoke_katyusha.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>7.466667</startTime>
+				<value>0.979935 0.400000 -3.850000</value>
+				<inTangent>0.135172 3.000009 25.071503</inTangent>
+				<outTangent>0.135172 3.000009 25.071503</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>7.700000</startTime>
+				<value>1.011475 1.100000 2.000000</value>
+				<inTangent>0.135172 3.000009 25.071503</inTangent>
+				<outTangent>0.135172 3.000009 25.071503</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-7.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>7.366667</startTime>
+				<value>0.000000</value>
+				<inTangent>2.142857</inTangent>
+				<outTangent>2.142857</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>7.533334</startTime>
+				<value>1.000000</value>
+				<inTangent>0.267858</inTangent>
+				<outTangent>0.267858</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>7.700000</startTime>
+				<value>0.000000</value>
+				<inTangent>-3.749999</inTangent>
+				<outTangent>-3.749999</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>opacity</name>
+			<type>float</type>
+			<frame>
+				<startTime>7.500000</startTime>
+				<value>1.000000</value>
+				<inTangent>-0.006650</inTangent>
+				<outTangent>-0.006650</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>7.766667</startTime>
+				<value>0.000000</value>
+				<inTangent>-8.270594</inTangent>
+				<outTangent>-8.270594</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>flash</name>
+		<type>light</type>
+		<lightType>omnilight</lightType>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.125320 1.336914 0.843979</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>outerRadius</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>3.000000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>innerRadius</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>multiplier</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>256</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.100000</startTime>
+				<value>0.000000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>16711.265625</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.133333</startTime>
+				<value>557.042297</value>
+				<inTangent>16711.269531</inTangent>
+				<outTangent>-16711.269531</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.166667</startTime>
+				<value>0.000000</value>
+				<inTangent>-16718.738281</inTangent>
+				<outTangent>0.679068</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>0.000000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>16711.433594</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.533333</startTime>
+				<value>557.042297</value>
+				<inTangent>16711.255859</inTangent>
+				<outTangent>-16711.255859</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.566667</startTime>
+				<value>0.000000</value>
+				<inTangent>-16710.925781</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.933333</startTime>
+				<value>0.000000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>16711.285156</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.966667</startTime>
+				<value>557.042297</value>
+				<inTangent>16711.285156</inTangent>
+				<outTangent>-16711.285156</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>-16711.285156</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.500000</startTime>
+				<value>0.000000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>16711.464844</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.533333</startTime>
+				<value>557.042297</value>
+				<inTangent>16711.285156</inTangent>
+				<outTangent>-16711.285156</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.566667</startTime>
+				<value>0.000000</value>
+				<inTangent>-16710.925781</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.966667</startTime>
+				<value>0.000000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>16711.343750</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>557.042297</value>
+				<inTangent>16711.343750</inTangent>
+				<outTangent>-16711.166016</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.033334</startTime>
+				<value>0.000000</value>
+				<inTangent>-16711.166016</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.466667</startTime>
+				<value>0.000000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>16711.166016</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.500000</startTime>
+				<value>557.042297</value>
+				<inTangent>16711.166016</inTangent>
+				<outTangent>-16711.285156</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.533334</startTime>
+				<value>0.000000</value>
+				<inTangent>-16711.285156</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.966667</startTime>
+				<value>0.000000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>16711.285156</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.000000</startTime>
+				<value>557.042297</value>
+				<inTangent>16711.285156</inTangent>
+				<outTangent>-16711.285156</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.033334</startTime>
+				<value>0.000000</value>
+				<inTangent>-16711.285156</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.466667</startTime>
+				<value>0.000000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>16711.285156</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.500000</startTime>
+				<value>557.042297</value>
+				<inTangent>16711.285156</inTangent>
+				<outTangent>-16711.285156</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.533334</startTime>
+				<value>0.000000</value>
+				<inTangent>-16711.285156</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.966667</startTime>
+				<value>0.000000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>16711.404297</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.000000</startTime>
+				<value>557.042297</value>
+				<inTangent>16711.404297</inTangent>
+				<outTangent>-16711.044922</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.033334</startTime>
+				<value>0.000000</value>
+				<inTangent>-16711.044922</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.466667</startTime>
+				<value>0.000000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>16711.285156</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.500000</startTime>
+				<value>557.042297</value>
+				<inTangent>16711.285156</inTangent>
+				<outTangent>-16711.044922</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.533334</startTime>
+				<value>0.000000</value>
+				<inTangent>-16711.044922</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.966667</startTime>
+				<value>0.000000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>16711.044922</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.000000</startTime>
+				<value>557.042297</value>
+				<inTangent>16711.044922</inTangent>
+				<outTangent>-16711.285156</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.033334</startTime>
+				<value>0.000000</value>
+				<inTangent>-16711.285156</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.466667</startTime>
+				<value>0.000000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>16711.285156</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.500000</startTime>
+				<value>557.042297</value>
+				<inTangent>16711.285156</inTangent>
+				<outTangent>-16711.285156</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.533334</startTime>
+				<value>0.000000</value>
+				<inTangent>-16711.285156</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.966667</startTime>
+				<value>0.000000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>16711.285156</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>6.000000</startTime>
+				<value>557.042297</value>
+				<inTangent>16711.285156</inTangent>
+				<outTangent>-16711.285156</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>6.033334</startTime>
+				<value>0.000000</value>
+				<inTangent>-16711.285156</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>6.466667</startTime>
+				<value>0.000000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>16711.285156</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>6.500000</startTime>
+				<value>557.042297</value>
+				<inTangent>16711.285156</inTangent>
+				<outTangent>-16711.285156</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>6.533334</startTime>
+				<value>0.000000</value>
+				<inTangent>-16711.285156</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>6.966667</startTime>
+				<value>0.000000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>16711.285156</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>7.000000</startTime>
+				<value>557.042297</value>
+				<inTangent>16711.285156</inTangent>
+				<outTangent>-16711.285156</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>7.033334</startTime>
+				<value>0.000000</value>
+				<inTangent>-16711.285156</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>7.466667</startTime>
+				<value>0.000000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>16711.285156</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>7.500000</startTime>
+				<value>557.042297</value>
+				<inTangent>16711.285156</inTangent>
+				<outTangent>-16711.285156</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>7.533334</startTime>
+				<value>0.000000</value>
+				<inTangent>-16711.285156</inTangent>
+				<outTangent>-2387.319336</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>color</name>
+			<type>vector4</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 0.780392 0.521569 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>coneAngle</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>130.000000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>
