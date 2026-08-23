@@ -2901,7 +2901,7 @@
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						10.5
+						11.2
 						<!--BW_String-->
 					</reloadTime>
 					<shotDispersionFactors>
@@ -3781,13 +3781,13 @@
 		<reuseCount>6</reuseCount>
 		<duration>8</duration>
 		<impulse>
-			<magnitude>0</magnitude>
+			<magnitude>30</magnitude>
 			<applyPoint>
 				0.0 0.0 -1.5
 				<!--BW_String-->
 			</applyPoint>
 			<duration>
-				0.0
+				1.0
 				<!--BW_String-->
 			</duration>
 		</impulse>
@@ -3830,7 +3830,7 @@
 			<mul>
 				<name>dynAttrs/vehicle/rotationSpeed</name>
 				<value>
-					0.5
+					0.25
 					<!--BW_String-->
 				</value>
 			</mul>
@@ -3860,7 +3860,7 @@
 			<mul>
 				<name>vehicleAllGroundRotationSpeed</name>
 				<value>
-					0.5
+					0.25
 					<!--BW_String-->
 				</value>
 			</mul>

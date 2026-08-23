@@ -79,15 +79,15 @@
 	</camouflage>
 	<hull>
 		<armor>
-			<armor_1>203</armor_1>
+			<armor_1>230</armor_1>
 			<armor_2>203</armor_2>
 			<armor_3>76</armor_3>
 			<armor_4>76</armor_4>
-			<armor_5>17</armor_5>
+			<armor_5>40</armor_5>
 			<armor_6>158</armor_6>
 			<armor_7>140</armor_7>
 			<armor_8>0</armor_8>
-			<armor_9>25</armor_9>
+			<armor_9>40</armor_9>
 			<armor_10>20</armor_10>
 			<armor_11>54</armor_11>
 			<armor_12>45</armor_12>
@@ -113,7 +113,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>39190</weight>
-		<maxHealth>1200</maxHealth>
+		<maxHealth>1100</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>240</maxHealth>
 			<maxRegenHealth>160</maxRegenHealth>
@@ -3686,11 +3686,11 @@
 				<armor_20>100</armor_20>
 				<armor_21>245</armor_21>
 				<armor_22>150</armor_22>
-				<armor_23>60</armor_23>
-				<armor_24>69</armor_24>
-				<armor_25>69</armor_25>
-				<armor_26>69</armor_26>
-				<armor_27>69</armor_27>
+				<armor_23>127</armor_23>
+				<armor_24>152</armor_24>
+				<armor_25>152</armor_25>
+				<armor_26>152</armor_26>
+				<armor_27>152</armor_27>
 				<armor_28>200</armor_28>
 				<armor_29>150</armor_29>
 				<armor_30>150</armor_30>
@@ -3771,11 +3771,11 @@
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						11.8
+						12.4
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
-						2.5
+						2.7
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
