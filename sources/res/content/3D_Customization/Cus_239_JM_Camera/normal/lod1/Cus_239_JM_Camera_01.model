@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_239_JM_Camera/normal/lod2/Cus_239_JM_Camera_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.138107 -0.070000 -0.447292</min>
+		<max>0.100967 0.406449 0.460774</max>
+	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/Cus_239_JM_Camera/normal/lod1/Cus_239_JM_Camera_01</nodefullVisual>
+	<tank>true</tank>
+</root>

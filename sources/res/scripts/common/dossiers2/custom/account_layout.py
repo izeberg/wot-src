@@ -389,7 +389,7 @@ _SINGLE_ACHIEVEMENTS_VALUES = [
  'NY26_CelebChallenge', 'grinch_medal_2026', '15YearsOfService', 'LunarNY2026CN',
  'BPReserveAchievement_1', 'BPReserveAchievement_2', 'BPReserveAchievement_3',
  'BPReserveAchievement_4', 'BPReserveAchievement_5', 'BPReserveAchievement_6',
- 'BPReserveAchievement_7', 'BPReserveAchievement_9']
+ 'BPReserveAchievement_7', 'BPReserveAchievement_9', 'wot16thAnniversary']
 _singleAchievementsPopUps = [
  'titleSniper', 'invincible', 'diehard', 'handOfDeath',
  'armorPiercer', 'battleCitizen', 'WFC2014', 'tacticalBreakthrough', 'aimer',
@@ -469,7 +469,7 @@ _singleAchievementsPopUps = [
  'NY26_CelebChallenge', 'grinch_medal_2026', '15YearsOfService', 'LunarNY2026CN',
  'BPReserveAchievement_1', 'BPReserveAchievement_2', 'BPReserveAchievement_3',
  'BPReserveAchievement_4', 'BPReserveAchievement_5', 'BPReserveAchievement_6',
- 'BPReserveAchievement_7', 'BPReserveAchievement_9']
+ 'BPReserveAchievement_7', 'BPReserveAchievement_9', 'wot16thAnniversary']
 _singleAchievementsBlockBuilder = BinarySetDossierBlockBuilder('singleAchievements', _SINGLE_ACHIEVEMENTS_VALUES, SINGLE_ACHIEVEMENTS_DEPENDENCIES, _singleAchievementsPopUps)
 FORT_ACHIEVEMENTS_BLOCK_LAYOUT = [
  'conqueror', 'fireAndSword', 'crusher', 'counterblow', 'kampfer', 'soldierOfFortune']

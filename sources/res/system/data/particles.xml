@@ -3468,6 +3468,10 @@
 		<preloadVisual>particles/Tank/mechanics/ion_engine_flame.visual</preloadVisual>
 		<preloadVisual>particles/Tank/mechanics/ion_engine_glow.visual</preloadVisual>
 		<preloadVisual>particles/Tank/mechanics/ion_engine_glow_side.visual</preloadVisual>
+		<preloadVisual>particles/3D_Customization/Cus_261_FCN_Tiger/Cus_261_FCN_Tiger_eyes.visual</preloadVisual>
+		<preloadVisual>particles/3D_Customization/Cus_284_FCN_Totem/Cus_284_FCN_Totem_eyes.visual</preloadVisual>
+		<preloadVisual>particles/3D_Customization/Cus_284_FCN_Totem/Cus_284_FCN_Totem_smoke.visual</preloadVisual>
+		<preloadVisual>particles/3D_Customization/Cus_284_FCN_Totem/Cus_284_FCN_Totem_idle.visual</preloadVisual>
 		<fn_effect_bin>particles/Tank/exhaust/cs67_turbo.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/exhaust/cs67_turbo.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/exhaust/cs67_turbo_start.eff</fn_effect_bin>
@@ -3502,6 +3506,16 @@
 		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_229_Challenges_Insignia/Cus_229_Challenges_Insignia_fire.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/3D_Customization/Cus_233_Challenges_Armor/cus_233_challenges_armor_smoke.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_233_Challenges_Armor/cus_233_challenges_armor_smoke.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_243_JM_BBQ/Cus_243_CoalSmoke.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_243_JM_BBQ/Cus_243_CoalHeat.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/customization/Ch47_BZ_176_KS_3Dst/Ch47_BZ_176_KS_3Dst_smoke_idle.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/customization/Ch47_BZ_176_KS_3Dst/Ch47_BZ_176_KS_3Dst_smoke_idle.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/customization/Ch47_BZ_176_KS_3Dst/Ch47_BZ_176_KS_3Dst_smoke_trigger.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/customization/Ch47_BZ_176_KS_3Dst/Ch47_BZ_176_KS_3Dst_smoke_trigger.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/customization/Ch74_Waffentrager_15_3Dst/shot_lightning.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/customization/Ch74_Waffentrager_15_3Dst/shot_lightning.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/3D_Customization/Cus_284_FCN_Totem/Cus_284_glow.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_284_FCN_Totem/Cus_284_glow.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Battle_Royal/Afterburning/br_nitro_gearup.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Battle_Royal/Afterburning/br_nitro_idle.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Battle_Royal/Afterburning/br_nitro_load.vfx</fn_effect_bin>

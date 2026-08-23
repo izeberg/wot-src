@@ -1865,6 +1865,33 @@
 				<bank>BP20/BP20_en_US_tankmen_9/voiceover.bnk</bank>
 			</wwbanks>
 		</mode>
+		<mode>
+			<name>jager_mailand</name>
+			<wwise_language>Jager/jager_de_DE_mailand</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>Jager/jager_de_DE_mailand/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
+		<mode>
+			<name>jager_mouzAkrobat</name>
+			<wwise_language>Jager/jager_de_DE_mouzAkrobat</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>Jager/jager_de_DE_mouzAkrobat/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
+		<mode>
+			<name>tankmen_mtlb4_1</name>
+			<wwise_language>MTLB4/MTLB4_zh_CN_tankmen_1</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>MTLB4/MTLB4_zh_CN_tankmen_1/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
 	</modes>
 	<nationalPresets>
 		<preset>

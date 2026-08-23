@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_288_FCN_EquipmentGuo/normal/lod3/Cus_288_FCN_EquipmentGuo_01</parent>
+	<extent>96.000000</extent>
+	<nodefullVisual>content/3D_Customization/Cus_288_FCN_EquipmentGuo/normal/lod2/Cus_288_FCN_EquipmentGuo_01</nodefullVisual>
+	<visibilityBox>
+		<min>-0.595892 0.000087 -0.768174</min>
+		<max>0.124931 0.408526 0.588675</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

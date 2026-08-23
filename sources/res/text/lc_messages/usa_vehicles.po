@@ -1565,6 +1565,34 @@ msgstr "Excellent frontal armor, high alpha damage"
 msgid "A168_XM_57"
 msgstr "XM57"
 
+msgid "A168_XM_57_CFE_I"
+msgstr "Ironclad Guardian"
+
+msgid "A168_XM_57_CFE_I_descr"
+msgstr ""
+"A fusion of two of the four celestial animals of Chinese mythology, the "
+"Dragon Turtle unites the dragon's vitality with the turtle's longevity. "
+"Here, the intricately sculpted form melds the turtle's sturdy shell with the"
+" dragon's majestic head, flowing tail, and powerful paws. Born from sacred "
+"stone to shoulder the world’s weight, it has inspired monuments across the "
+"nine provinces. Revered in legend, this mythical being has long been "
+"associated with stability and good fortune. Throughout the vast realm, there"
+" is none who does not revere the glorious name of this divine guardian."
+
+msgid "A168_XM_57_CFE_I_long_special"
+msgstr ""
+"The Ironclad is an American tank destroyer with a unique design. A 155 mm "
+"gun was mounted in a partially rotating turret that covers around 150 "
+"degrees, allowing for control of a huge area without any hull movement. "
+"Combined with its thick armor like that of the formidable T95, this titan "
+"excels at destroying well-armored foes."
+
+msgid "A168_XM_57_CFE_I_short"
+msgstr "Ironclad"
+
+msgid "A168_XM_57_CFE_I_short_special"
+msgstr "Large caliber gun, partially rotating turret"
+
 msgid "A168_XM_57_descr"
 msgstr ""
 "By the mid-1950s, the idea of turret-mounting a partially rotating gun had "
@@ -2817,6 +2845,9 @@ msgstr "AN/VRC-3"
 msgid "AN_VRC_3_XM"
 msgstr "AN/VRC-3XM"
 
+msgid "AN_VRC_3_XM_CFE_I"
+msgstr "AN/VRC-3XM"
+
 msgid "AN_VRC_46"
 msgstr "AN/VRC-46"
 
@@ -3159,6 +3190,9 @@ msgstr "TS-6"
 
 msgid "Chassis_A168_XM_57"
 msgstr "XM57"
+
+msgid "Chassis_A168_XM_57_CFE_I"
+msgstr "Ironclad Guardian"
 
 msgid "Chassis_A169_PattonIII_120"
 msgstr "Patton the Tank"
@@ -3925,6 +3959,14 @@ msgstr ""
 
 msgid "Continental_AVI_1790_8XM"
 msgstr "Continental AVI-1790-8XM"
+
+msgid "Continental_AVI_1790_8XM_CFE_I"
+msgstr "Continental AVI-1790-8XM"
+
+msgid "Continental_AVI_1790_8XM_CFE_I_short"
+msgstr ""
+"Continental\n"
+"AVI-1790-8XM"
 
 msgid "Continental_AVI_1790_8XM_short"
 msgstr ""
@@ -5332,6 +5374,9 @@ msgstr "TS-6"
 msgid "Turret_1_A168_XM_57"
 msgstr "XM57"
 
+msgid "Turret_1_A168_XM_57_CFE_I"
+msgstr "Ironclad Guardian"
+
 msgid "Turret_1_A169_PattonIII_120"
 msgstr "Patton the Tank"
 
@@ -6725,6 +6770,9 @@ msgstr "AP M111 (T95)"
 msgid "_155mm_AP_M111_XM57"
 msgstr "AP M111 XM57"
 
+msgid "_155mm_AP_M111_XM57_CFE_I"
+msgstr "AP M111 XM57"
+
 msgid "_155mm_AP_M112"
 msgstr "AP M112"
 
@@ -6747,6 +6795,9 @@ msgid "_155mm_AP_M112_M53"
 msgstr "AP M112 (M53)"
 
 msgid "_155mm_AP_M112_XM57"
+msgstr "APCR M112 XM57"
+
+msgid "_155mm_AP_M112_XM57_CFE_I"
 msgstr "APCR M112 XM57"
 
 msgid "_155mm_AP_MPCS"
@@ -6783,6 +6834,9 @@ msgid "_155mm_Gun_M46"
 msgstr "155 mm Gun M46"
 
 msgid "_155mm_Gun_T7XM"
+msgstr "155 mm Gun T7XM"
+
+msgid "_155mm_Gun_T7XM_CFE_I"
 msgstr "155 mm Gun T7XM"
 
 msgid "_155mm_HEAT_M167"
@@ -6837,6 +6891,9 @@ msgid "_155mm_HE_M101_T95"
 msgstr "HE M101 (T95)"
 
 msgid "_155mm_HE_M101_XM57"
+msgstr "HE M101 XM57"
+
+msgid "_155mm_HE_M101_XM57_CFE_I"
 msgstr "HE M101 XM57"
 
 msgid "_155mm_HE_M102"

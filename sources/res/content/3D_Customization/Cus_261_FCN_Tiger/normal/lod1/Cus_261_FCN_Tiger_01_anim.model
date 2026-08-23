@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>content/3D_Customization/Cus_261_FCN_Tiger/normal/lod2/Cus_261_FCN_Tiger_01_anim</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.509897 -0.018268 -0.702766</min>
+		<max>0.120852 0.528859 0.472806</max>
+	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/Cus_261_FCN_Tiger/normal/lod1/Cus_261_FCN_Tiger_01_anim</nodefullVisual>
+</root>

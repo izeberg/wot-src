@@ -623,9 +623,13 @@ package net.wg.data.constants.generated
       
       public static const CHINA_CH45_WZ_114:String = "china-Ch45_WZ_114";
       
+      public static const CHINA_CH45_WZ_114_CFE_D:String = "china-Ch45_WZ_114_CFE_D";
+      
       public static const CHINA_CH46_113_140:String = "china-Ch46_113_140";
       
       public static const CHINA_CH47_BZ_176:String = "china-Ch47_BZ_176";
+      
+      public static const CHINA_CH47_BZ_176_CFE_B:String = "china-Ch47_BZ_176_CFE_B";
       
       public static const CHINA_CH48_BZ_75:String = "china-Ch48_BZ_75";
       
@@ -672,6 +676,8 @@ package net.wg.data.constants.generated
       public static const CHINA_CH70_PTZ_78:String = "china-Ch70_PTZ_78";
       
       public static const CHINA_CH72_YONGSHI:String = "china-Ch72_Yongshi";
+      
+      public static const CHINA_CH74_WAFFENTRAGER_15:String = "china-Ch74_Waffentrager_15";
       
       public static const CZECH_CZ01_SKODA_T40:String = "czech-Cz01_Skoda_T40";
       
@@ -2304,6 +2310,8 @@ package net.wg.data.constants.generated
       public static const USA_A167_TS_6:String = "usa-A167_TS_6";
       
       public static const USA_A168_XM_57:String = "usa-A168_XM_57";
+      
+      public static const USA_A168_XM_57_CFE_I:String = "usa-A168_XM_57_CFE_I";
       
       public static const USA_A169_PATTON_III_120:String = "usa-A169_PattonIII_120";
       

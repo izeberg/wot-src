@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.347384 -0.370186 -2.510851</min>
+		<max>0.347581 0.558249 3.407149</max>
+	</visibilityBox>
+	<parent>vehicles/chinese/Ch47_BZ_176/_skins/Ch47_BZ_176_KS_3Dst/normal/lod2/Gun_02</parent>
+	<extent>64.000000</extent>
+	<nodefullVisual>vehicles/chinese/Ch47_BZ_176/_skins/Ch47_BZ_176_KS_3Dst/normal/lod1/Gun_02</nodefullVisual>
+</root>

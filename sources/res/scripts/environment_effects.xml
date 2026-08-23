@@ -2386,6 +2386,26 @@
 			<offset>0.000000 1.000000 0.000000</offset>
 			<wwsound>ambient_trees_green_bush_few_foliage_01</wwsound>
 		</model>
+		<model>
+			<modelName>content/Hangars/hangar_anniversary/Environment/hv4_bday_26_PicnicStuff/normal/lod0/hv4_bday_26_PicnicStuff_014.model</modelName>
+			<offset>0.000000 0.000000 0.000000</offset>
+			<wwsound>barbeque_grill</wwsound>
+		</model>
+		<model>
+			<modelName>content/Hangars/hangar_v4/Environment/hv4_054_Projectors/normal/lod0/hv4_054_Projectors_03.model</modelName>
+			<offset>0.000000 0.000000 0.000000</offset>
+			<wwsound>projectors_03</wwsound>
+		</model>
+		<model>
+			<modelName>content/Hangars/hangar_v4/Environment/hv4_054_Projectors/normal/lod0/hv4_054_Projectors_01.model</modelName>
+			<offset>0.000000 0.000000 0.000000</offset>
+			<wwsound>projectors_01</wwsound>
+		</model>
+		<model>
+			<modelName>content/Hangars/hangar_v4/Environment/hv4_054_Projectors/normal/lod0/hv4_054_Projectors_02.model</modelName>
+			<offset>0.000000 0.000000 0.000000</offset>
+			<wwsound>projectors_02</wwsound>
+		</model>
 	</lightSounds>
 	<birds>
 		<dowe_light>

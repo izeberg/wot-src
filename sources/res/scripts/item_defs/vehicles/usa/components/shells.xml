@@ -10229,6 +10229,69 @@
 			</damage>
 		</armorSpalls>
 	</_155mm_HE_M101_XM57>
+	<_155mm_AP_M111_XM57_CFE_I>
+		<id>350</id>
+		<userString>#usa_vehicles:_155mm_AP_M111_XM57_CFE_I</userString>
+		<icon>ap</icon>
+		<price>1650</price>
+		<kind>ARMOR_PIERCING</kind>
+		<caliber>155</caliber>
+		<isTracer>true</isTracer>
+		<effects>hugeArmorPiercing</effects>
+		<damage>
+			<armor>630</armor>
+			<devices>210</devices>
+		</damage>
+		<normalizationAngle>5</normalizationAngle>
+		<ricochetAngle>70</ricochetAngle>
+	</_155mm_AP_M111_XM57_CFE_I>
+	<_155mm_AP_M112_XM57_CFE_I>
+		<id>351</id>
+		<userString>#usa_vehicles:_155mm_AP_M112_XM57_CFE_I</userString>
+		<icon>ap_cr_premium</icon>
+		<price>4800</price>
+		<improved>true</improved>
+		<kind>ARMOR_PIERCING_CR</kind>
+		<caliber>155</caliber>
+		<isTracer>true</isTracer>
+		<effects>hugeAPCR</effects>
+		<damage>
+			<armor>630</armor>
+			<devices>210</devices>
+		</damage>
+		<normalizationAngle>2</normalizationAngle>
+		<ricochetAngle>70</ricochetAngle>
+	</_155mm_AP_M112_XM57_CFE_I>
+	<_155mm_HE_M101_XM57_CFE_I>
+		<id>352</id>
+		<userString>#usa_vehicles:_155mm_HE_M101_XM57_CFE_I</userString>
+		<icon>he_modern</icon>
+		<price>1120</price>
+		<kind>HIGH_EXPLOSIVE</kind>
+		<mechanics>MODERN</mechanics>
+		<caliber>155</caliber>
+		<explosionRadius>
+			3.78
+			<!--BW_String-->
+		</explosionRadius>
+		<isTracer>true</isTracer>
+		<effects>hugeHighExplosive</effects>
+		<damage>
+			<armor>900</armor>
+			<devices>210</devices>
+		</damage>
+		<armorSpalls>
+			<impactRadius>
+				3.78
+				<!--BW_String-->
+			</impactRadius>
+			<coneAngle>90</coneAngle>
+			<damage>
+				<armor>450</armor>
+				<devices>105</devices>
+			</damage>
+		</armorSpalls>
+	</_155mm_HE_M101_XM57_CFE_I>
 	<_155mm_AP_M111_M12>
 		<id>71</id>
 		<userString>#usa_vehicles:_155mm_AP_M111_M12</userString>

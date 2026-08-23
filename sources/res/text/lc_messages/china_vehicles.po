@@ -55,6 +55,9 @@ msgstr "A-220A-DZT"
 msgid "A_220A_2"
 msgstr "A-220A-2"
 
+msgid "A_220A_CFE_D"
+msgstr "A-220A"
+
 msgid "A_220B_1_QL"
 msgstr "A-220B QL"
 
@@ -69,6 +72,9 @@ msgstr "A 220R"
 
 msgid "A_220_70"
 msgstr "A-220-70"
+
+msgid "A_220_CFE_B"
+msgstr "A-220"
 
 msgid "A_220_YB"
 msgstr "A-220YB"
@@ -930,6 +936,31 @@ msgstr "Decent damage per shot and good dynamics"
 msgid "Ch45_WZ_114"
 msgstr "WZ-114"
 
+msgid "Ch45_WZ_114_CFE_D"
+msgstr "Drills at the Pass"
+
+msgid "Ch45_WZ_114_CFE_D_descr"
+msgstr ""
+"Eagles circled above the endless wilds. I stood upon the battlements, gazing toward the horizon. Frost clung to the ancient stones as dawn cast a silver glow across the border wall that wound over the mountains before fading into the mist. Soldiers murmured, their breath drifting like smoke.\n"
+"\n"
+"Then the drums thundered. Spearmen formed ranks, their lances leveled in unison. Step, brace, thrust. Together with shield bearers, bamboo-brush fighters, polearm troops, and arquebusiers, we drilled. Only when the rising sun crowned the peaks did the dust finally settle.\n"
+"\n"
+"Here we stand, unyielding."
+
+msgid "Ch45_WZ_114_CFE_D_long_special"
+msgstr ""
+"A Tier IX Chinese heavy tank with good armor and an accurate gun. This "
+"vehicle can both efficiently destroy enemy vehicles at close range and "
+"defend effectively against advancing opponents with long-range fire. When "
+"playing this tank, choose your direction carefully, as its low speed will "
+"not always allow you to change it in time."
+
+msgid "Ch45_WZ_114_CFE_D_short"
+msgstr "Drills"
+
+msgid "Ch45_WZ_114_CFE_D_short_special"
+msgstr "An accurate gun and sturdy frontal armor"
+
 msgid "Ch45_WZ_114_descr"
 msgstr ""
 "As part of a program to create domestic vehicles, Chinese designers "
@@ -975,6 +1006,33 @@ msgstr "High rate of fire and reliable armor"
 
 msgid "Ch47_BZ_176"
 msgstr "BZ-176"
+
+msgid "Ch47_BZ_176_CFE_B"
+msgstr "Bull Demon King"
+
+msgid "Ch47_BZ_176_CFE_B_descr"
+msgstr ""
+"Born of demonic seed and schooled in primordial chaos, his power shakes "
+"heaven and earth. He cleaved through the nether realms with blazing fury, "
+"his ambition growing with every conquest. From the crimson flames of the "
+"Fiery Mountains to the emerald mists of the Thunder Ridge, he reigned "
+"supreme, his spirit overwhelming the eight reaches of the world. In a world "
+"of peril, he rose like a storm, subduing lesser demons to heel. Wild by "
+"nature yet bound by his word, arrogant in spirit yet free at heart, he "
+"eventually sought the way of the Thunder Monastery and turned from worldly "
+"ties."
+
+msgid "Ch47_BZ_176_CFE_B_long_special"
+msgstr ""
+"A Tier VIII Premium Chinese tank with jet boosters that allows you to "
+"increase mobility in battle. Its good armor and powerful gun make the Bull "
+"Demon King a formidable frontline assault vehicle."
+
+msgid "Ch47_BZ_176_CFE_B_short"
+msgstr "Bull Demon"
+
+msgid "Ch47_BZ_176_CFE_B_short_special"
+msgstr "Powerful gun, jet boosters"
 
 msgid "Ch47_BZ_176_descr"
 msgstr ""
@@ -1553,6 +1611,33 @@ msgstr "Yongshi"
 msgid "Ch72_Yongshi_short_special"
 msgstr "Easy to handle gun, high single shot damage"
 
+msgid "Ch74_Waffentrager_15"
+msgstr "Erlang Shen"
+
+msgid "Ch74_Waffentrager_15_descr"
+msgstr ""
+"Born of both mortal and celestial grace, Erlang Shen sought no glory in the "
+"Heavenly Court, devoting himself instead to the mortal realm. A master of "
+"endless transformations through divine arts, he split Mount Tao to save his "
+"mother, bore the sun and moon upon his shoulders to patrol the heavens, and "
+"won eternal renown through boundless devotion. He obeyed Heaven's call yet "
+"bowed to none. He slew flood dragons, tamed raging waters, and drove away "
+"calamity wherever his blessing reached. Thus do people of all lands worship "
+"Lord Erlang, whose name shines through the ages."
+
+msgid "Ch74_Waffentrager_15_long_special"
+msgstr ""
+"The Erlang Shen is a Tier X China tank destroyer. Unlike its predecessors, "
+"this vehicle uses an autoreloader instead of an autoloader, making gameplay "
+"more flexible. The Erlang Shen can almost always fight back since it doesn't"
+" have to reload a full clip every time."
+
+msgid "Ch74_Waffentrager_15_short"
+msgstr "Erlang Shen"
+
+msgid "Ch74_Waffentrager_15_short_special"
+msgstr "Autoreloader with huge damage, full rotating turret"
+
 msgid "Chassis_01_Ch24_Type64_SH"
 msgstr "Type 64BL"
 
@@ -1790,11 +1875,17 @@ msgstr "114 SP2"
 msgid "Chassis_Ch45_WZ_114"
 msgstr "WZ-114"
 
+msgid "Chassis_Ch45_WZ_114_CFE_D"
+msgstr "Drills at the Pass"
+
 msgid "Chassis_Ch46_113_140"
 msgstr "Mod. 1963"
 
 msgid "Chassis_Ch47_BZ_176_2"
 msgstr "BZ-176"
+
+msgid "Chassis_Ch47_BZ_176_CFE_B"
+msgstr "Bull Demon King"
 
 msgid "Chassis_Ch48_BZ_75"
 msgstr "BZ model 1975"
@@ -1868,6 +1959,9 @@ msgstr "PGZ-70"
 msgid "Chassis_Ch72_Yongshi"
 msgstr "Yongshi"
 
+msgid "Chassis_Ch74_Waffentrager_15"
+msgstr "Erlang Shen"
+
 msgid "Continental_AOSI_895_5_Prem"
 msgstr "Continental AOSI-895-5"
 
@@ -1911,8 +2005,17 @@ msgstr "HS 110DV"
 msgid "MTU_8V_331"
 msgstr "MTU 8V 331"
 
+msgid "MTU_8V_331_CFE_B"
+msgstr "MTU 8V 331"
+
 msgid "Marconi_G2A"
 msgstr "Marconi G2A"
+
+msgid "Maybach_HL_234P60"
+msgstr "Maybach Neues Projekt"
+
+msgid "Maybach_HL_234P60_short"
+msgstr "Maybach Neues Projekt"
 
 msgid "NORINCO_12150L7"
 msgstr "NORINCO 12150L"
@@ -2100,11 +2203,17 @@ msgstr "114 SP2"
 msgid "Turret_1_Ch45_WZ_114"
 msgstr "WZ-114"
 
+msgid "Turret_1_Ch45_WZ_114_CFE_D"
+msgstr "Drills at the Pass"
+
 msgid "Turret_1_Ch46_113_140"
 msgstr "Type 140"
 
 msgid "Turret_1_Ch47_BZ_176"
 msgstr "BZ-176"
+
+msgid "Turret_1_Ch47_BZ_176_CFE_B"
+msgstr "Bull Demon King"
 
 msgid "Turret_1_Ch48_BZ_75"
 msgstr "BZ model 1975"
@@ -2171,6 +2280,9 @@ msgstr "PTZ-78"
 
 msgid "Turret_1_Ch72_Yongshi"
 msgstr "Yongshi"
+
+msgid "Turret_1_Ch74_Waffentrager_15"
+msgstr "Erlang Shen"
 
 msgid "Turret_2_Ch04_T34_1"
 msgstr "T-34-1 model 2"
@@ -2291,6 +2403,9 @@ msgstr "V-2-54SCT"
 
 msgid "V_2_54SC_111_5A"
 msgstr "V-2-54SC (111 5A)"
+
+msgid "V_2_54SC_CFE_D"
+msgstr "V-2-54SC"
 
 msgid "V_2_54SC_QL"
 msgstr "V-2-54SC QL"
@@ -2540,6 +2655,9 @@ msgstr "Sha bao-81-I"
 
 msgid "_105mm_Type_81-I"
 msgstr "105 mm Type 81-I"
+
+msgid "_10WSc"
+msgstr "10WSc"
 
 msgid "_120mm_CB-472LY"
 msgstr "Chuan bei-472LY"
@@ -2892,6 +3010,9 @@ msgstr "130 mm 59-130JG FT A"
 msgid "_130mm_59_130M"
 msgstr "130 mm 59-130M"
 
+msgid "_130mm_59_130M_CFE_D"
+msgstr "130 mm 59-130M"
+
 msgid "_130mm_59_130T"
 msgstr "130 mm 59-130T"
 
@@ -2920,6 +3041,9 @@ msgid "_130mm_AP_QL"
 msgstr "Chuan bei-482 QL"
 
 msgid "_130mm_Chuan_bei_462G"
+msgstr "Chuan bei-462G"
+
+msgid "_130mm_Chuan_bei_462G_CFE_D"
 msgstr "Chuan bei-462G"
 
 msgid "_130mm_Chuan_bei_482G"
@@ -2967,6 +3091,9 @@ msgstr "130 mm M-65 Type 70"
 msgid "_130mm_Po_130F"
 msgstr "Po-130F"
 
+msgid "_130mm_Po_130F_CFE_D"
+msgstr "Po-130F"
+
 msgid "_130mm_Po_130G"
 msgstr "Po-130G"
 
@@ -2997,6 +3124,9 @@ msgstr "Sha bao-482G (111)"
 msgid "_130mm_Sha_bao_482G_111_1"
 msgstr "Sha bao-482G (111-1)"
 
+msgid "_130mm_Sha_bao_482G_CFE_D"
+msgstr "Sha bao-482G"
+
 msgid "_130mm_Sha_bao_482T"
 msgstr "Sha bao-482T"
 
@@ -3014,6 +3144,15 @@ msgstr "Sha bao M-65"
 
 msgid "_130mm_Type_62"
 msgstr "130 mm Type-62"
+
+msgid "_150mm_Gr_39_Hl_C_G_WT_IV"
+msgstr "Gr. 39 Hl/C G (WT IV)"
+
+msgid "_150mm_Pzgr_42_WT_IV"
+msgstr "Pzgr. 42 (WT IV)"
+
+msgid "_150mm_Sprgr_G_45_WT_IV"
+msgstr "Sprgr. G 45 (WT IV)"
 
 msgid "_152_mm_64_152T"
 msgstr "152 mm 64-152T"
@@ -3123,13 +3262,25 @@ msgstr "Sha bao-547"
 msgid "_152mm_Sha_bao_547_111"
 msgstr "Sha bao-547 (111)"
 
+msgid "_15cm_KwK44_L_38"
+msgstr "15 cm Pak L/38"
+
 msgid "_160mm_56_160_BZS"
+msgstr "160 mm 56-160 BZS"
+
+msgid "_160mm_56_160_BZS_CFE_B"
 msgstr "160 mm 56-160 BZS"
 
 msgid "_160mm_CB_76"
 msgstr "Chuan bei-76"
 
+msgid "_160mm_CB_76_CFE_B"
+msgstr "Chuan bei-76"
+
 msgid "_160mm_Sha_bao_76B"
+msgstr "Sha bao-76B"
+
+msgid "_160mm_Sha_bao_76B_CFE_B"
 msgstr "Sha bao-76B"
 
 msgid "_180_mm_ZPL_70_47"

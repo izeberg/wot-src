@@ -163,6 +163,7 @@
 		<Curtiss_Wright_RC2_350>186</Curtiss_Wright_RC2_350>
 		<Continental_AOSI_1195_5_Y_VI_RC_C>181</Continental_AOSI_1195_5_Y_VI_RC_C>
 		<Continental_AV_1790_5G>187</Continental_AV_1790_5G>
+		<Continental_AVI_1790_8XM_CFE_I>189</Continental_AVI_1790_8XM_CFE_I>
 		<Continental_AOSI_1195_5F>190</Continental_AOSI_1195_5F>
 		<Continental_AV_1790_3_XM94_Shadow>191</Continental_AV_1790_3_XM94_Shadow>
 		<B_58A>192</B_58A>
@@ -2140,7 +2141,7 @@
 			<notInShop>true</notInShop>
 			<wwsoundPC>eng_ContinentalR_pc</wwsoundPC>
 			<wwsoundNPC>eng_ContinentalR_npc</wwsoundNPC>
-			<power>960</power>
+			<power>1010</power>
 			<weight>1136</weight>
 			<maxHealth>310</maxHealth>
 			<maxRegenHealth>155</maxRegenHealth>
@@ -3620,6 +3621,27 @@
 			<rpm_min>416</rpm_min>
 			<rpm_max>2848</rpm_max>
 		</Continental_AVI_1790_8XM>
+		<Continental_AVI_1790_8XM_CFE_I>
+			<userString>#usa_vehicles:Continental_AVI_1790_8XM_CFE_I</userString>
+			<shortUserString>#usa_vehicles:Continental_AVI_1790_8XM_CFE_I_short</shortUserString>
+			<tags>gasoline</tags>
+			<level>8</level>
+			<price>60000</price>
+			<notInShop>true</notInShop>
+			<wwsoundPC>eng_Ford_GAA_pc</wwsoundPC>
+			<wwsoundNPC>eng_Ford_GAA_npc</wwsoundNPC>
+			<power>810</power>
+			<weight>1349</weight>
+			<maxHealth>285</maxHealth>
+			<maxRegenHealth>142</maxRegenHealth>
+			<repairCost>8</repairCost>
+			<fireStartingChance>
+				0.2
+				<!--BW_String-->
+			</fireStartingChance>
+			<rpm_min>416</rpm_min>
+			<rpm_max>2848</rpm_max>
+		</Continental_AVI_1790_8XM_CFE_I>
 		<AOI_1195D>
 			<userString>#usa_vehicles:AOI_1195D</userString>
 			<tags>diesel</tags>

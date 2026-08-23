@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<materialKind>112</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/3D_Customization/Cus_192_ArmiesA_Jerrycans/Cus_192_ArmiesA_Jerrycans_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>content/3D_Customization/Cus_192_ArmiesA_Jerrycans/Cus_192_ArmiesA_Jerrycans_AO.dds</Texture>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>6.000000 3.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/3D_Customization/Cus_192_ArmiesA_Jerrycans/Cus_192_ArmiesA_Jerrycans_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/3D_Customization/Cus_192_ArmiesA_Jerrycans/Cus_192_ArmiesA_Jerrycans_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.199571 0.215715 0.000604</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>s_nd1</identifier>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<materialKind>108</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						alphaReference
+						<Int>100</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/3D_Customization/Cus_192_ArmiesA_Jerrycans/Cus_192_ArmiesA_Jerrycans_01_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>content/3D_Customization/Cus_192_ArmiesA_Jerrycans/Cus_192_ArmiesA_Jerrycans_01_AO.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/3D_Customization/Cus_192_ArmiesA_Jerrycans/Cus_192_ArmiesA_Jerrycans_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/3D_Customization/Cus_192_ArmiesA_Jerrycans/Cus_192_ArmiesA_Jerrycans_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.112962 0.223819 -0.093385</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-0.434920 -0.007754 -0.613850</min>
+		<max>0.065528 0.448081 0.615059</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>264732</geometrySize>
+</root>
