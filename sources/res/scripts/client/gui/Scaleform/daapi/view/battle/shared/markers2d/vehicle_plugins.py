@@ -521,7 +521,7 @@ class VehicleMarkerPlugin(MarkerPlugin, ChatCommunicationComponent, IArenaVehicl
             return
 
     def __addMarkerToPool(self, vehicleID, vInfo, vProxy=None):
-        if not self.__needsMarker(vInfo):
+        if not self._needsMarker(vInfo):
             return
         else:
             if vProxy is not None:
@@ -565,8 +565,7 @@ class VehicleMarkerPlugin(MarkerPlugin, ChatCommunicationComponent, IArenaVehicl
         if marker.setSpeaking(speaking):
             self._invokeMarker(marker.getMarkerID(), 'setSpeaking', speaking)
 
-    @staticmethod
-    def __needsMarker(vInfo):
+    def _needsMarker(self, vInfo):
         return vInfo.isAlive() or not (isSpawnedBot(vInfo.vehicleType.tags) or isHunterBot(vInfo.vehicleType.tags))
 
     def __setEntityName(self, vInfo, arenaDP):
@@ -580,7 +579,7 @@ class VehicleMarkerPlugin(MarkerPlugin, ChatCommunicationComponent, IArenaVehicl
         self._onVehicleMarkerAdded(vProxy, vInfo, guiProps)
 
     def _onVehicleMarkerAdded(self, vProxy, vInfo, guiProps):
-        if not self.__needsMarker(vInfo):
+        if not self._needsMarker(vInfo):
             return
         else:
             vehicleID = vInfo.vehicleID

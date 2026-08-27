@@ -1105,31 +1105,31 @@ msgid "contextMenu/copyToClipBoard"
 msgstr "Копировать имя"
 
 msgid "contextMenu/createBattleRoyaleSquad"
-msgstr "Создать группу охотников"
+msgstr "Создать взвод охотников"
 
 msgid "contextMenu/createComp7Squad"
-msgstr "Создать группу для Натиска"
+msgstr "Создать взвод для Натиска"
 
 msgid "contextMenu/createContactNote"
 msgstr "Создать заметку"
 
 msgid "contextMenu/createEpicSquad"
-msgstr "Создать группу для Линии фронта"
+msgstr "Создать взвод для Линии фронта"
 
 msgid "contextMenu/createEventSquad"
-msgstr "Создать группу события"
+msgstr "Создать взвод события"
 
 msgid "contextMenu/createMapboxSquad"
-msgstr "Разведка боем: создать группу"
+msgstr "Разведка боем: создать взвод"
 
 msgid "contextMenu/createPrivateChannel"
 msgstr "Отправить сообщение"
 
 msgid "contextMenu/createRankedSquad"
-msgstr "Создать группу для Рангового боя"
+msgstr "Создать взвод для Рангового боя"
 
 msgid "contextMenu/createSquad"
-msgstr "Создать группу"
+msgstr "Создать взвод"
 
 msgid "contextMenu/crewWidgetChangeCrewMember"
 msgstr "Сменить члена экипажа"
@@ -3252,7 +3252,7 @@ msgid "headerButtons/battle/types/rankedLeave/descr"
 msgstr "Выйти из боя"
 
 msgid "headerButtons/battle/types/rankedSquad"
-msgstr "Создать взвод для Рангового боя"
+msgstr "Создать взвод для Рангового боя"
 
 msgid "headerButtons/battle/types/rts"
 msgstr "Искусство стратегии"
@@ -3303,7 +3303,7 @@ msgid "headerButtons/battle/types/strongholds"
 msgstr "Укрепрайон: сражения"
 
 msgid "headerButtons/battle/types/training"
-msgstr "Товарищеский матч"
+msgstr "Тренировочный бой"
 
 msgid "headerButtons/battle/types/training/descr"
 msgstr "Учебный бой с ручным подбором союзников и противника."
@@ -4011,7 +4011,7 @@ msgid "loading/battleTypes/19"
 msgstr "Случайный бой"
 
 msgid "loading/battleTypes/2"
-msgstr "Товарищеский матч"
+msgstr "Тренировочный бой"
 
 msgid "loading/battleTypes/20"
 msgstr "Тренировочный бой"
@@ -7146,21 +7146,21 @@ msgid "training/create/privacy"
 msgstr "по приглашениям"
 
 msgid "training/create/title"
-msgstr "Создание Товарищеского матча"
+msgstr "Создание тренировочной комнаты"
 
 msgid "training/createButton"
-msgstr "Создать матч"
+msgstr "Создать комнату"
 
 msgid "training/description"
 msgstr ""
-"Опыт и серебро в Товарищеских матчах не начисляются, однако всё обслуживание"
-" техники полностью бесплатное."
+"Опыт и серебро в Тренировочных боях не начисляются, однако всё обслуживание "
+"техники полностью бесплатное."
 
 msgid "training/info/deleteButton"
-msgstr "Отменить матч"
+msgstr "Удалить комнату"
 
 msgid "training/info/exitButton"
-msgstr "Покинуть матч"
+msgstr "Выйти из комнаты"
 
 msgid "training/info/inviteButton"
 msgstr "Пригласить..."
@@ -7190,7 +7190,7 @@ msgid "training/info/settings/title"
 msgstr "Настройки тренировочной комнаты"
 
 msgid "training/info/settingsButton"
-msgstr "Настройка матча"
+msgstr "Настройки комнаты"
 
 msgid "training/info/startButton"
 msgstr "Начать бой"
@@ -7232,7 +7232,7 @@ msgid "training/info/timeout/value"
 msgstr "%d минут"
 
 msgid "training/info/title"
-msgstr "Товарищеский матч (%s)"
+msgstr "Тренировочная комната (%s)"
 
 msgid "training/info/useCommonVoiceChat"
 msgstr "общая"
@@ -7253,7 +7253,7 @@ msgid "training/leaveButton"
 msgstr "Выйти из режима"
 
 msgid "training/listTitle"
-msgstr "Список Товарищеских матчей"
+msgstr "Список тренировочных комнат"
 
 msgid "training/ownerTitle"
 msgstr "Командир"
@@ -7265,10 +7265,10 @@ msgid "training/playersTitle"
 msgstr "Игроки"
 
 msgid "training/roomsLabel"
-msgstr "Всего матчей: %(roomsTotal)s"
+msgstr "Всего тренировочных комнат: %(roomsTotal)s"
 
 msgid "training/title"
-msgstr "Товарищеские матчи"
+msgstr "Тренировочные бои"
 
 msgid "unlocks/exchangeButton"
 msgstr "Перевести"

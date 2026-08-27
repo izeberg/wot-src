@@ -83,12 +83,6 @@ package
       
       public static const WHITE_TIGER_GUI_MAPS_ICONS_BACKGROUNDS_BATTLELOADING_S2560X1440_HUNTER_2:String = "img://white_tiger/gui/maps/icons/backgrounds/battleLoading/s2560x1440/hunter_2.png";
       
-      public static const WHITE_TIGER_GUI_MAPS_ICONS_BACKGROUNDS_INSIDEVEHICLEPORTAL_S1366X768:String = "img://white_tiger/gui/maps/icons/backgrounds/insideVehiclePortal/s1366x768.png";
-      
-      public static const WHITE_TIGER_GUI_MAPS_ICONS_BACKGROUNDS_INSIDEVEHICLEPORTAL_S1920X1080:String = "img://white_tiger/gui/maps/icons/backgrounds/insideVehiclePortal/s1920x1080.png";
-      
-      public static const WHITE_TIGER_GUI_MAPS_ICONS_BACKGROUNDS_INSIDEVEHICLEPORTAL_S2560X1440:String = "img://white_tiger/gui/maps/icons/backgrounds/insideVehiclePortal/s2560x1440.png";
-      
       public static const WHITE_TIGER_GUI_MAPS_ICONS_BATTLEHELP_BOSS:String = "img://white_tiger/gui/maps/icons/battleHelp/boss.png";
       
       public static const WHITE_TIGER_GUI_MAPS_ICONS_BATTLEHELP_HUNTER:String = "img://white_tiger/gui/maps/icons/battleHelp/hunter.png";
@@ -443,13 +437,11 @@ package
       
       public static const WHITE_TIGER_GUI_MAPS_ICONS_PORTALS_CUSTOMREWARD_S110X80_A145_TS_54:String = "img://white_tiger/gui/maps/icons/portals/customReward/s110x80/A145_TS_54.png";
       
-      public static const WHITE_TIGER_GUI_MAPS_ICONS_PORTALS_CUSTOMREWARD_S110X80_A157_M_VII_Y:String = "img://white_tiger/gui/maps/icons/portals/customReward/s110x80/A157_M_VII_Y.png";
-      
-      public static const WHITE_TIGER_GUI_MAPS_ICONS_PORTALS_CUSTOMREWARD_S110X80_CH25_121_MOD_1971B:String = "img://white_tiger/gui/maps/icons/portals/customReward/s110x80/Ch25_121_mod_1971B.png";
-      
       public static const WHITE_TIGER_GUI_MAPS_ICONS_PORTALS_CUSTOMREWARD_S110X80_CH45_WZ_114:String = "img://white_tiger/gui/maps/icons/portals/customReward/s110x80/Ch45_WZ_114.png";
       
-      public static const WHITE_TIGER_GUI_MAPS_ICONS_PORTALS_CUSTOMREWARD_S110X80_CZ20_SHPTK_TVP_100_MM:String = "img://white_tiger/gui/maps/icons/portals/customReward/s110x80/Cz20_ShPTK_TVP_100_mm.png";
+      public static const WHITE_TIGER_GUI_MAPS_ICONS_PORTALS_CUSTOMREWARD_S110X80_CH62_ZZT_58:String = "img://white_tiger/gui/maps/icons/portals/customReward/s110x80/Ch62_ZZT_58.png";
+      
+      public static const WHITE_TIGER_GUI_MAPS_ICONS_PORTALS_CUSTOMREWARD_S110X80_CZ30_TBT:String = "img://white_tiger/gui/maps/icons/portals/customReward/s110x80/Cz30_TBT.png";
       
       public static const WHITE_TIGER_GUI_MAPS_ICONS_PORTALS_CUSTOMREWARD_S110X80_CZ38_PROJEKT_SAT:String = "img://white_tiger/gui/maps/icons/portals/customReward/s110x80/Cz38_Projekt_SAT.png";
       
@@ -459,15 +451,17 @@ package
       
       public static const WHITE_TIGER_GUI_MAPS_ICONS_PORTALS_CUSTOMREWARD_S110X80_G154_KPZ_07:String = "img://white_tiger/gui/maps/icons/portals/customReward/s110x80/G154_Kpz_07.png";
       
+      public static const WHITE_TIGER_GUI_MAPS_ICONS_PORTALS_CUSTOMREWARD_S110X80_G194_E_50_GT_ALKETT_PROD_02:String = "img://white_tiger/gui/maps/icons/portals/customReward/s110x80/G194_E_50_GT_Alkett_Prod_02.png";
+      
       public static const WHITE_TIGER_GUI_MAPS_ICONS_PORTALS_CUSTOMREWARD_S110X80_GB115_GONSALO:String = "img://white_tiger/gui/maps/icons/portals/customReward/s110x80/GB115_Gonsalo.png";
       
       public static const WHITE_TIGER_GUI_MAPS_ICONS_PORTALS_CUSTOMREWARD_S110X80_GB137_CVT_SPIDER:String = "img://white_tiger/gui/maps/icons/portals/customReward/s110x80/GB137_CVT_Spider.png";
       
-      public static const WHITE_TIGER_GUI_MAPS_ICONS_PORTALS_CUSTOMREWARD_S110X80_J31_TYPE_5_KARI:String = "img://white_tiger/gui/maps/icons/portals/customReward/s110x80/J31_Type_5_KaRi.png";
-      
       public static const WHITE_TIGER_GUI_MAPS_ICONS_PORTALS_CUSTOMREWARD_S110X80_PL26_CZOLG_P_WZ_46_VERBESSERTER:String = "img://white_tiger/gui/maps/icons/portals/customReward/s110x80/Pl26_Czolg_P_Wz_46_Verbesserter.png";
       
-      public static const WHITE_TIGER_GUI_MAPS_ICONS_PORTALS_CUSTOMREWARD_S110X80_R200_KV_4_TURCHANINOV:String = "img://white_tiger/gui/maps/icons/portals/customReward/s110x80/R200_KV_4_Turchaninov.png";
+      public static const WHITE_TIGER_GUI_MAPS_ICONS_PORTALS_CUSTOMREWARD_S110X80_PL36_BOBR:String = "img://white_tiger/gui/maps/icons/portals/customReward/s110x80/Pl36_Bobr.png";
+      
+      public static const WHITE_TIGER_GUI_MAPS_ICONS_PORTALS_CUSTOMREWARD_S110X80_R236_KV_4_ZEITZ:String = "img://white_tiger/gui/maps/icons/portals/customReward/s110x80/R236_KV_4_Zeitz.png";
       
       public static const WHITE_TIGER_GUI_MAPS_ICONS_PORTALS_CUSTOMREWARD_S110X80_S33_LATT_STRIDSFORDON_120:String = "img://white_tiger/gui/maps/icons/portals/customReward/s110x80/S33_Latt_Stridsfordon_120.png";
       

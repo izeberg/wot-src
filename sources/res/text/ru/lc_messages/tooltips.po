@@ -12911,9 +12911,9 @@ msgstr "Играя взводом, вы можете получать допол
 
 msgid "squadBonus/complex/body"
 msgstr ""
-"Получайте дополнительные %(bonus)s к боевому опыту по итогам каждого боя, играя в группе с другими игроками.\n"
+"Получайте дополнительные %(bonus)s к боевому опыту по итогам каждого боя, играя во взводе с другими игроками.\n"
 "\n"
-"Бонус доступен только для постоянных формирований и недоступен при создании динамической группы."
+"Бонус доступен только для постоянных формирований и недоступен при создании динамического взвода."
 
 msgid "squadBonus/complex/bonusPercent"
 msgstr "%(value)s%%"
@@ -12922,36 +12922,36 @@ msgid "squadBonus/complex/comp7/body"
 msgstr "Играя взводом, вы будете получать дополнительное серебро и опыт."
 
 msgid "squadBonus/complex/comp7/header"
-msgstr "Бонусы за игру взводом"
+msgstr "Бонусы за игру взводом"
 
 msgid "squadBonus/complex/header"
-msgstr "Бонус за игру в группе"
+msgstr "Бонус за игру взводом"
 
 msgid "squadBonus/complex/ranked/body"
 msgstr "Играя взводом, вы можете получать дополнительные серебро и опыт."
 
 msgid "squadBonus/complex/ranked/header"
-msgstr "Бонусы за игру взводом"
+msgstr "Бонусы за игру взводом"
 
 msgid "squadBonus/credits/bonusWithPremium"
 msgstr "+{value}, если у вас есть Танковый премиум аккаунт;"
 
 msgid "squadBonus/credits/bonusWithoutPremium"
 msgstr ""
-"+{value}, если Танковый премиум аккаунт есть только у вашего друга. Если "
-"Танковый премиум есть у всех друзей, бонусы не суммируются."
+"+{value}, если Танковый премиум аккаунт есть только у вашего совзводного. "
+"Если Танковый премиум есть у всех совзводных, бонусы не суммируются."
 
 msgid "squadBonus/credits/header"
 msgstr "Дополнительное серебро"
 
 msgid "squadBonus/description"
 msgstr ""
-"Играя в группе, вы можете получать дополнительное серебро и опыт. Бонус "
-"недоступен для динамических групп."
+"Играя взводом, вы можете получать дополнительное серебро и опыт. Бонус "
+"недоступен для динамических взводов."
 
 msgid "squadBonus/experience/bonus"
 msgstr ""
-"+{value} за игру в группе, независимо от уровня техники, результата боя "
+"+{value} за игру во взводе, независимо от уровня техники, результата боя "
 "и наличия Премиум аккаунта."
 
 msgid "squadBonus/experience/header"
@@ -12961,7 +12961,7 @@ msgid "squadBonus/ranked/description"
 msgstr "Играя взводом, вы можете получать дополнительные серебро и опыт."
 
 msgid "squadBonus/title"
-msgstr "Бонусы за игру в группе"
+msgstr "Бонусы за игру взводом"
 
 msgid "statistics/tab/quests/status/onPause/body"
 msgstr ""

@@ -1,4 +1,4 @@
-import typing, BigWorld, SoundGroups, CGF
+import typing, functools, BigWorld, SoundGroups, CGF
 from GenericComponents import TransformComponent, RemoveGoDelayedComponent
 from cgf_network import NetworkEntity
 from Triggers import AreaTriggerComponent
@@ -27,6 +27,7 @@ class AnomalyManager(CGF.ComponentManager):
     __ANOMALY_STOP_3D_SOUND = 'ev_wt_gameplay_anomaly_stop'
     __ANOMALY_START_2D_SOUND = 'ev_wt_gameplay_anomaly_in'
     __ANOMALY_STOP_2D_SOUND = 'ev_wt_gameplay_anomaly_out'
+    __POSTPONED_DESTRUCTION_DELAY = 1.0
 
     def __init__(self):
         super(AnomalyManager, self).__init__()
@@ -66,7 +67,7 @@ class AnomalyManager(CGF.ComponentManager):
 
     def __onAnomalyZoneEntered(self, vehicleGO, anomalyGO):
         vehicle = getVehicleFromGO(vehicleGO, self.spaceID)
-        if not vehicle:
+        if not vehicle or vehicle.health <= 0:
             return
         alreadyInAnomaly = self.__isVehicleAlreadyInAnomaly(vehicle)
         if self.__affectedVehicles.get(vehicle.id):
@@ -201,9 +202,8 @@ class AnomalyManager(CGF.ComponentManager):
         soundObject = self.__anomaliesData.get(go.id, {}).get('soundObject')
         if soundObject:
             soundObject.play(self.__ANOMALY_STOP_3D_SOUND)
-            self.__removeSoundObject(soundObject)
-            del self.__anomaliesData[go.id]['soundObject']
+            BigWorld.callback(self.__POSTPONED_DESTRUCTION_DELAY, functools.partial(self.__postponedDestruction, go.id))
 
-    def __removeSoundObject(self, soundObject):
-        if soundObject.isPlaying:
-            soundObject.stopAll()
+    def __postponedDestruction(self, goID):
+        if goID in self.__anomaliesData:
+            del self.__anomaliesData[goID]['soundObject']

@@ -1976,6 +1976,24 @@
 			<!--BW_String-->
 		</hitCrewChanceMultiplier>
 	</_138mm_OFL_Mle1944>
+	<_138mm_OFL_Mle1944_02>
+		<id>31046</id>
+		<userString>#france_vehicles:_138mm_OFL_Mle1944</userString>
+		<icon>ap_cr_premium</icon>
+		<price>4800</price>
+		<improved>true</improved>
+		<kind>ARMOR_PIERCING_CR</kind>
+		<caliber>
+			138.6
+			<!--BW_String-->
+		</caliber>
+		<isTracer>true</isTracer>
+		<effects>largeAPCR</effects>
+		<damage>
+			<armor>560</armor>
+			<devices>180</devices>
+		</damage>
+	</_138mm_OFL_Mle1944_02>
 	<_138mm_OPS_Mle1952_F144>
 		<id>31038</id>
 		<userString>#france_vehicles:_138mm_OPS_Mle1952_F144</userString>

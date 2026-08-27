@@ -10,7 +10,7 @@ msgstr ""
 
 msgid "invites/note/change_and_leave/PREBATTLE_FUN_RANDOM"
 msgstr ""
-"Приняв приглашение, вы будете автоматически исключены из состава группы "
+"Приняв приглашение, вы будете автоматически исключены из состава взвода "
 "в режиме «%(modeName)s» и перемещены на сервер %(host)s."
 
 msgid "invites/note/change_and_leave/QUEUE_FUN_RANDOM"
@@ -20,14 +20,14 @@ msgstr ""
 
 msgid "invites/note/leave/PREBATTLE_FUN_RANDOM"
 msgstr ""
-"Приняв приглашение, вы будете автоматически исключены из состава группы "
+"Приняв приглашение, вы будете автоматически исключены из состава взвода "
 "в режиме «%(modeName)s»."
 
 msgid "invites/note/leave/QUEUE_FUN_RANDOM"
 msgstr "Приняв приглашение, вы покинете режим «%(modeName)s»."
 
 msgid "invites/prebattle/alreadyJoined/FUN_RANDOM"
-msgstr "Вы уже присоединились к этой группе."
+msgstr "Вы уже присоединились к этому взводу."
 
 msgid "invites/text/FUN_RANDOM"
-msgstr "Приглашение войти в состав группы для режима «%(modeName)s»"
+msgstr "Приглашение войти в состав взвода для режима «%(modeName)s»"

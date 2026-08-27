@@ -33,7 +33,7 @@ msgid "battle/receivers/common"
 msgstr "ВСЕМ"
 
 msgid "battle/receivers/squad"
-msgstr "ГРУППЕ"
+msgstr "ВЗВОДУ"
 
 msgid "battle/receivers/team"
 msgstr "КОМАНДЕ"
@@ -155,10 +155,10 @@ msgstr ""
 "чат (%(keyName)s)."
 
 msgid "client/dynSquad/created/allies"
-msgstr "Cоюзники сформировали группу %(squadNum)s."
+msgstr "Cоюзники сформировали взвод %(squadNum)s."
 
 msgid "client/dynSquad/created/enemies"
-msgstr "Противник сформировал группу %(squadNum)s."
+msgstr "Противник сформировал взвод %(squadNum)s."
 
 msgid "client/dynSquad/created/owner/disableVOIP"
 msgstr ""
@@ -176,7 +176,7 @@ msgstr ""
 "Необходимо назначить клавишу для включения/отключения голосовой связи."
 
 msgid "client/dynSquad/created/owner/withoutVOIP"
-msgstr "Группа %(squadNum)s сформирована. Доступен групповой чат."
+msgstr "Взвод %(squadNum)s сформирован. Доступен взводный чат."
 
 msgid "client/dynSquad/created/recruit/disableVOIP"
 msgstr ""
@@ -195,7 +195,7 @@ msgstr ""
 "связи."
 
 msgid "client/dynSquad/created/recruit/withoutVOIP"
-msgstr "Вы присоединились к группе %(squadNum)s. Доступен групповой чат."
+msgstr "Вы присоединились ко взводу %(squadNum)s. Доступен взводный чат."
 
 msgid "client/dynSquad/disableVOIP"
 msgstr ""
@@ -222,21 +222,21 @@ msgstr ""
 "связи."
 
 msgid "client/dynSquad/inviteAccepted/myself/withoutVOIP"
-msgstr "Вы присоединились к группе %(squadNum)s. Доступен групповой чат."
+msgstr "Вы присоединились ко взводу %(squadNum)s. Доступен взводный чат."
 
 msgid "client/dynSquad/inviteAccepted/user"
-msgstr "%(receiver)s присоединился к группе %(squadNum)s."
+msgstr "%(receiver)s присоединился ко взводу %(squadNum)s."
 
 msgid "client/dynSquad/inviteReceived"
-msgstr "%(creator)s пригласил вас в группу."
+msgstr "%(creator)s пригласил вас во взвод."
 
 msgid "client/dynSquad/inviteReceived/anonymized"
 msgstr ""
-"%(creator)s пригласил вас в группу.\n"
-"Внимание! Игроки в группе будут видеть ваше настоящее игровое имя и тег клана."
+"%(creator)s пригласил вас во взвод.\n"
+"Внимание! Совзводные будут видеть ваше настоящее игровое имя и тег клана."
 
 msgid "client/dynSquad/inviteSent"
-msgstr "%(receiver)s приглашён в группу."
+msgstr "%(receiver)s приглашён во взвод."
 
 msgid "client/error/broadcastInCooldown"
 msgstr "Отправка сообщений заморожена на %s с."

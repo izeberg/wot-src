@@ -1,7 +1,9 @@
 from collections import defaultdict
-import typing, logging, GenericComponents, BigWorld, CGF, Math, math_utils
+import cPickle, typing, logging, GenericComponents, zlib, BigWorld, CGF, Math, math_utils
 from arena_component_system.client_arena_component_system import ClientArenaComponent
+from constants import ARENA_UPDATE
 from gui.battle_control import avatar_getter
+from gui.battle_control.arena_info.arena_vos import Comp7Keys
 from gui.battle_control.battle_constants import FEEDBACK_EVENT_ID
 from helpers import dependency
 from items import vehicles
@@ -16,6 +18,7 @@ class Comp7EquipmentComponent(ClientArenaComponent):
     def __init__(self, componentSystem):
         super(Comp7EquipmentComponent, self).__init__(componentSystem)
         self.__effects = defaultdict(dict)
+        self._onUpdate = {ARENA_UPDATE.VEHICLE_UPDATED: self.__onVehicleUpdated}
 
     def activate(self):
         super(Comp7EquipmentComponent, self).activate()
@@ -60,6 +63,14 @@ class Comp7EquipmentComponent(ClientArenaComponent):
                 if effect is not None:
                     effect.destroy()
             return
+
+    def __onVehicleUpdated(self, argStr):
+        infoAsTuple = cPickle.loads(zlib.decompress(argStr))
+        arena = avatar_getter.getArena()
+        if arena and len(infoAsTuple) >= 30:
+            stats = dict()
+            stats[infoAsTuple[0]] = {Comp7Keys.ROLE_SKILL: infoAsTuple[29]}
+            arena.onGameModeSpecificStats(isStatic=True, stats=stats)
 
 
 class _Effect(object):

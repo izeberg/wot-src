@@ -60,7 +60,7 @@ class LootboxesEntrancePointWidget(ViewImpl):
 
     def __updateViewModel(self):
         hunterLootBoxes = self.__boxesCtrl.getLootBoxesCountByType(WhiteTigerLootBoxes.WT_HUNTER)
-        bossLootBoxes = self.__boxesCtrl.getLootBoxesCountByType(WhiteTigerLootBoxes.WT_BOSS)
+        bossLootBoxes = self.__boxesCtrl.getLootBoxesCountByType(WhiteTigerLootBoxes.WT_BOSS, excludePending=True)
         hunterLastViewed, bossLastViewed = self.__boxesCtrl.getLastViewedCount()
         with self.viewModel.transaction() as (model):
             model.setHunterLootBoxesCount(hunterLootBoxes)

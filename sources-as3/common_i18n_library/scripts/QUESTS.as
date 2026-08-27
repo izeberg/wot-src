@@ -3683,6 +3683,16 @@ package
       
       public static const BONUSNAME_GOLDENTICKET:String = "#quests:bonusName/goldenticket";
       
+      public static const DETAILS_CONDITIONS_CUMULATIVE_WTBOSSVULNERABLEDAMAGE:String = "#quests:details/conditions/cumulative/wtBossVulnerableDamage";
+      
+      public static const DETAILS_CONDITIONS_CUMULATIVE_MAXWTPLASMABONUS:String = "#quests:details/conditions/cumulative/maxWtPlasmaBonus";
+      
+      public static const DETAILS_CONDITIONS_CUMULATIVE_WTGENERATORSCAPTURED:String = "#quests:details/conditions/cumulative/wtGeneratorsCaptured";
+      
+      public static const DETAILS_CONDITIONS_CUMULATIVE_WTTOTALGENERATORSCAPTURED:String = "#quests:details/conditions/cumulative/wtTotalGeneratorsCaptured";
+      
+      public static const DETAILS_CONDITIONS_CUMULATIVE_WTDEATHCOUNT:String = "#quests:details/conditions/cumulative/wtDeathCount";
+      
       public static const BATTLECONDITION_STATE_ENUM:Array = [BATTLECONDITION_STATE_COMPLETED,BATTLECONDITION_STATE_COMPLETED_PERFECTLY,BATTLECONDITION_STATE_IN_PROGRESS,BATTLECONDITION_STATE_FAILED];
       
       public static const QUEST_FLAG_STATUS_ENUM:Array = [QUEST_FLAG_STATUS_NOT_STARTED,QUEST_FLAG_STATUS_LOCKED,QUEST_FLAG_STATUS_FAILED,QUEST_FLAG_STATUS_COMPLETED,QUEST_FLAG_STATUS_IN_PROGRESS,QUEST_FLAG_STATUS_COMPLETED_PERFECTLY];

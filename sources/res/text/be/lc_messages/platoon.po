@@ -12,10 +12,10 @@ msgid "buttons/cancelSearch/caption"
 msgstr "Адмена пошуку"
 
 msgid "buttons/cancelSearch/description"
-msgstr "Нажмите, чтобы отменить поиск игроков."
+msgstr "Нажмите, чтобы отменить поиск совзводных."
 
 msgid "buttons/createPlatoon/caption"
-msgstr "Сформировать группу"
+msgstr "Новый взвод"
 
 msgid "buttons/createPlatoon/comp7/forSeven/caption"
 msgstr "7 гульцоў"
@@ -36,13 +36,13 @@ msgid "buttons/createPlatoon/comp7/forTwo/text"
 msgstr "2 гульцы"
 
 msgid "buttons/createPlatoon/description"
-msgstr "Создайте группу и пригласите друзей для совместной игры."
+msgstr "Создайте взвод и пригласите друзей для совместной игры."
 
 msgid "buttons/createSuperPlatoon/caption"
 msgstr "Новы суперзвяз"
 
 msgid "buttons/findPlayers/caption"
-msgstr "Найти игроков"
+msgstr "Поиск игроков"
 
 msgid "buttons/findPlayers/descriptionDropdown"
 msgstr ""
@@ -51,7 +51,7 @@ msgstr ""
 msgid "buttons/findPlayers/descriptionMembers"
 msgstr ""
 "Начав поиск игроков, вы отмените все отправленные друзьям приглашения "
-"в группу."
+"во взвод."
 
 msgid "buttons/findPlayers/tooltip/header"
 msgstr "Пошук гульцоў"
@@ -63,7 +63,7 @@ msgid "buttons/findPlayers/tooltip/noSuitableTank/body"
 msgstr "Поиск игроков во взвод недоступен: нет подходящей техники."
 
 msgid "buttons/invite/fullSquad/description"
-msgstr "Группа сформирована"
+msgstr "Взвод заполнен"
 
 msgid "buttons/invite/player/caption"
 msgstr "Запрасіць гульца"
@@ -75,13 +75,13 @@ msgid "buttons/invite/players/caption"
 msgstr "Запрасіць гульцоў"
 
 msgid "buttons/invite/players/description"
-msgstr "Нажмите, чтобы пригласить игроков в группу."
+msgstr "Нажмите, чтобы пригласить игроков во взвод."
 
 msgid "buttons/leavePlatoon/caption"
-msgstr "Выйти"
+msgstr "Покинуть взвод"
 
 msgid "buttons/leavePlatoon/description"
-msgstr "Нажмите, чтобы выйти из группы."
+msgstr "Нажмите, чтобы выйти из состава взвода."
 
 msgid "buttons/mute/caption"
 msgstr "Адключыць галасавую сувязь"
@@ -133,7 +133,7 @@ msgid "headerButton/searching"
 msgstr "Шуканне..."
 
 msgid "headerButton/squad"
-msgstr "Игра с друзьями"
+msgstr "Взводная игра"
 
 msgid "headerButton/tooltips/battleRoyaleSquad/body"
 msgstr ""
@@ -181,16 +181,16 @@ msgid "headerButton/tooltips/eventSquad/header"
 msgstr "Взвод события"
 
 msgid "headerButton/tooltips/inMapboxSquad/body"
-msgstr "Нажмите, чтобы перейти в меню группы."
+msgstr "Нажмите, чтобы перейти в меню взвода."
 
 msgid "headerButton/tooltips/inMapboxSquad/header"
 msgstr "Разведка боем: взвод"
 
 msgid "headerButton/tooltips/inSquad/body"
-msgstr "Нажмите, чтобы перейти в меню группы."
+msgstr "Нажмите, чтобы перейти в меню взвода."
 
 msgid "headerButton/tooltips/inSquad/header"
-msgstr "Игра с друзьями"
+msgstr "Взвод"
 
 msgid "headerButton/tooltips/mapboxSquad/body"
 msgstr ""
@@ -219,7 +219,7 @@ msgstr ""
 "• Тыпы баёў: Стандартны бой, Штурм, Сустрэчны бой, Генеральная бітва, а таксама Лінія фронту (калі гэты рэжым даступны)."
 
 msgid "headerButton/tooltips/squad/header"
-msgstr "Игра с друзьями"
+msgstr "Взвод"
 
 msgid "headerButton/tooltips/versusAISquad/body"
 msgstr ""
@@ -335,7 +335,7 @@ msgstr ""
 "Нельга змяніць. Ліміт гульцоў не можа быць меншы за іх цяперашнюю колькасць."
 
 msgid "members/header/tooltip/comp7/header"
-msgstr "Правила формирования группы"
+msgstr "Правила формирования взвода"
 
 msgid "members/header/tooltip/epic/body"
 msgstr ""
@@ -343,16 +343,16 @@ msgstr ""
 "толькі для тэхнікі %(level)s узроўню."
 
 msgid "members/header/tooltip/epic/header"
-msgstr "Правила формирования группы"
+msgstr "Правила формирования взвода"
 
 msgid "members/header/tooltip/event/body"
-msgstr "Группа должна состоять из трёх специальных машин режима."
+msgstr "Взвод должен состоять из трёх специальных машин режима."
 
 msgid "members/header/tooltip/event/header"
-msgstr "Правила формирования группы"
+msgstr "Правила формирования взвода"
 
 msgid "members/header/tooltip/ranked/header"
-msgstr "Правила формирования группы"
+msgstr "Правила формирования взвода"
 
 msgid "members/header/tooltip/ranked/restriction"
 msgstr "Взвод не имеет ограничений по формированию."
@@ -369,10 +369,10 @@ msgstr ""
 "• Игроки должны находиться в одном дивизионе."
 
 msgid "members/header/tooltip/standard/body"
-msgstr "Группа должна состоять из машин одного уровня."
+msgstr "Взвод должен состоять из машин одного уровня."
 
 msgid "members/header/tooltip/standard/header"
-msgstr "Правила формирования группы"
+msgstr "Правила формирования взвода"
 
 msgid "searching/estimated/caption"
 msgstr "Разліковы час"
@@ -407,4 +407,4 @@ msgid "settings/voice"
 msgstr "Гульцы з галасавой сувяззю"
 
 msgid "squad"
-msgstr "Игра с друзьями"
+msgstr "Взвод"

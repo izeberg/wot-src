@@ -3193,6 +3193,8 @@ class IComp7Controller(IGameController, ISeasonProvider):
     onComp7RewardsConfigChanged = None
     onComp7BattleFinished = None
     onComp7SkillsConfigChanged = None
+    onLeaderboardDataRequested = None
+    onLeaderboardDataProvided = None
 
     @property
     def rating(self):

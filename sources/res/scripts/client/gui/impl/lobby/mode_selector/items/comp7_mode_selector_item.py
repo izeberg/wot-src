@@ -1,5 +1,4 @@
 import typing
-from adisp import adisp_process
 from gui.impl import backport
 from gui.impl.gen import R
 from gui.impl.gen.view_models.views.lobby.mode_selector.mode_selector_card_types import ModeSelectorCardTypes
@@ -44,12 +43,14 @@ class Comp7ModeSelectorItem(ModeSelectorLegacyItem):
 
     def _onInitializing(self):
         super(Comp7ModeSelectorItem, self)._onInitializing()
+        self.__comp7Controller.onLeaderboardDataProvided += self.__onLeaderboardDataReceived
         self.__updateComp7Data()
         setBattlePassState(self.viewModel)
         self.__comp7Controller.onStatusTick += self.__onTimerTick
 
     def _onDisposing(self):
         self.__comp7Controller.onStatusTick -= self.__onTimerTick
+        self.__comp7Controller.onLeaderboardDataProvided -= self.__onLeaderboardDataReceived
         super(Comp7ModeSelectorItem, self)._onDisposing()
 
     def __onTimerTick(self):
@@ -91,13 +92,11 @@ class Comp7ModeSelectorItem(ModeSelectorLegacyItem):
             comp7_model_helpers.setDivisionInfo(model=vm.divisionInfo, division=division)
             comp7_model_helpers.setRanksInactivityInfo(vm)
             comp7_qualification_helpers.setQualificationInfo(vm.qualificationModel)
-            self.__updateLeaderboardData(vm)
+            self.__comp7Controller.onLeaderboardDataRequested()
 
-    @adisp_process
-    def __updateLeaderboardData(self, model):
-        isSuccessOwnData, myPosition, _, _ = yield self.__comp7Controller.leaderboard.getOwnData()
-        if isSuccessOwnData:
-            model.setMyPosition(myPosition or 0)
+    def __onLeaderboardDataReceived(self, myPosition):
+        with self.viewModel.widget.transaction() as (vm):
+            vm.setMyPosition(myPosition)
 
     @staticmethod
     def getLimitedUIRule():

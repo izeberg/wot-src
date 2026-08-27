@@ -1,5 +1,6 @@
 import BigWorld, WWISE
 from aih_constants import CTRL_MODE_NAME
+from cgf_components import sound_helpers
 from shared_utils import CONST_CONTAINER
 from constants import ARENA_PERIOD
 from debug_utils import LOG_DEBUG
@@ -99,6 +100,7 @@ class WhiteTigerBattlePage(ClassicPage, ISpawnListener):
     __OPPONENT_SWITCH = 'SWITCH_ext_WT_vo_opponent_of_hunters'
     __OPPONENT_SWITCH_VALUES = {'boss': 'SWITCH_ext_WT_vo_opponent_of_hunters_krieger', 'boss_2025': 'SWITCH_ext_WT_vo_opponent_of_hunters_lemarten', 
        'boss_special': 'SWITCH_ext_WT_vo_opponent_of_hunters_lemarten'}
+    __GAMEPLAY_ENTER = 'ev_white_tiger_gameplay_enter'
 
     def __init__(self, components=None, external=_EVENT_EXTERNAL_COMPONENTS, fullStatsAlias=None):
         self._spawnType = None
@@ -255,6 +257,7 @@ class WhiteTigerBattlePage(ClassicPage, ISpawnListener):
 
     def _onBattleLoadingFinish(self):
         super(WhiteTigerBattlePage, self)._onBattleLoadingFinish()
+        sound_helpers.play2d(self.__GAMEPLAY_ENTER)
         self._setComponentsVisibility(hidden={BATTLE_VIEW_ALIASES.EVENT_STATS})
         if BigWorld.player().arena.period != ARENA_PERIOD.BATTLE:
             self._setComponentsVisibility(hidden={BATTLE_VIEW_ALIASES.PLAYERS_PANEL_EVENT})

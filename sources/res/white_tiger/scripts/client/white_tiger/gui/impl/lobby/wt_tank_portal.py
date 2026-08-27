@@ -141,7 +141,7 @@ class WtTankPortalView(WtEventBasePortalsView, CallbackDelayer):
     def __updatePortalInfo(self, model):
         lootBoxType = WhiteTigerLootBoxes.WT_TANK
         model.portalRun.setAttemptPrice(getPortalCost(lootBoxType))
-        lootBoxesCount = self._lootBoxesCtrl.getLootBoxesCountByType(lootBoxType)
+        lootBoxesCount = self._lootBoxesCtrl.getLootBoxesCountByType(lootBoxType, excludePending=True)
         model.portalRun.setLootBoxesCount(lootBoxesCount)
 
     def __updateBoxesConfig(self):

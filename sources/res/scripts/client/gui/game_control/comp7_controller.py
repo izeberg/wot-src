@@ -84,6 +84,8 @@ class Comp7Controller(Notifiable, SeasonProvider, IComp7Controller, IGlobalListe
         self.onComp7RewardsConfigChanged = Event.Event(em)
         self.onComp7BattleFinished = Event.Event(em)
         self.onComp7SkillsConfigChanged = Event.Event(em)
+        self.onLeaderboardDataRequested = Event.Event(em)
+        self.onLeaderboardDataProvided = Event.Event(em)
         return
 
     @property
@@ -198,6 +200,7 @@ class Comp7Controller(Notifiable, SeasonProvider, IComp7Controller, IGlobalListe
     def onConnected(self):
         self.__itemsCache.onSyncCompleted += self.__onItemsSyncCompleted
         self.__spaceSwitchController.onCheckSceneChange += self.__onCheckSceneChange
+        self.onLeaderboardDataRequested += self.__requestLeaderboardData
         if self.isEnabled():
             self.__entitlementsCache.makePreload()
 
@@ -206,6 +209,7 @@ class Comp7Controller(Notifiable, SeasonProvider, IComp7Controller, IGlobalListe
         self.__itemsCache.onSyncCompleted -= self.__onItemsSyncCompleted
         self.__lobbyContext.onServerSettingsChanged -= self.__onServerSettingsChanged
         self.__spaceSwitchController.onCheckSceneChange -= self.__onCheckSceneChange
+        self.onLeaderboardDataRequested -= self.__requestLeaderboardData
         self.__entitlementsCache.reset()
         if self.__serverSettings is not None:
             self.__serverSettings.onServerSettingsChange -= self.__onUpdateComp7Settings
@@ -535,6 +539,13 @@ class Comp7Controller(Notifiable, SeasonProvider, IComp7Controller, IGlobalListe
         self.__eliteDivisionIdx = COMP7_ELITE_ENT_TO_DIV_IDX.get(eliteDivisionEnt, None)
         return
 
+    @adisp.adisp_process
+    def __requestLeaderboardData(self):
+        isSuccessOwnData, myPosition, _, _ = yield self.leaderboard.getOwnData()
+        if isSuccessOwnData and myPosition is not None:
+            self.onLeaderboardDataProvided(myPosition)
+        return
+
     def isLocked(self):
         return not self.__limitedUIController.isRuleCompleted(LuiRules.COMP7_CONTENT)
 
@@ -599,6 +610,7 @@ class _LeaderboardDataProvider(object):
     @adisp.adisp_process
     def getOwnData(self, callback):
         if self.__nextUpdateTimestamp and self.__nextUpdateTimestamp >= getServerUTCTime() and self.__cachedOwnData:
+            print 'HERE CACHED OWN DATA', self.__cachedOwnData
             callback(self.__cachedOwnData)
         else:
             myInfo = yield self.__eventsController.getMyLeaderboardInfo(self.__EVENT_ID, self.__LEADERBOARD_ID, showNotification=False)

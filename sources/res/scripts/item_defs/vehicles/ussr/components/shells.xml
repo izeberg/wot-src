@@ -4919,6 +4919,25 @@
 			<!--BW_String-->
 		</hitCrewChanceMultiplier>
 	</_130mm_3VBK_279>
+	<_130mm_3VBK_279_02>
+		<id>31222</id>
+		<userString>#ussr_vehicles:_130mm_ZBK60M</userString>
+		<icon>hc_premium</icon>
+		<price>4800</price>
+		<improved>true</improved>
+		<kind>HOLLOW_CHARGE</kind>
+		<caliber>130</caliber>
+		<isTracer>true</isTracer>
+		<effects>largeHollowCharge</effects>
+		<damage>
+			<armor>560</armor>
+			<devices>180</devices>
+		</damage>
+		<piercingPowerLossFactorByDistance>
+			0.05
+			<!--BW_String-->
+		</piercingPowerLossFactorByDistance>
+	</_130mm_3VBK_279_02>
 	<_130mm_3VBK_279_T>
 		<id>31127</id>
 		<userString>#ussr_vehicles:_130mm_ZBK60M_T</userString>
@@ -5095,7 +5114,7 @@
 		<isTracer>true</isTracer>
 		<effects>largeArmorPiercing</effects>
 		<damage>
-			<armor>490</armor>
+			<armor>530</armor>
 			<devices>180</devices>
 		</damage>
 	</_130mm_53_BR_482_452>
@@ -5144,7 +5163,7 @@
 		<isTracer>true</isTracer>
 		<effects>largeHighExplosive</effects>
 		<damage>
-			<armor>640</armor>
+			<armor>670</armor>
 			<devices>180</devices>
 		</damage>
 		<armorSpalls>
@@ -5154,7 +5173,7 @@
 			</impactRadius>
 			<coneAngle>90</coneAngle>
 			<damage>
-				<armor>320</armor>
+				<armor>335</armor>
 				<devices>90</devices>
 			</damage>
 		</armorSpalls>
@@ -6127,7 +6146,7 @@
 		<isTracer>true</isTracer>
 		<effects>largeHollowCharge</effects>
 		<damage>
-			<armor>490</armor>
+			<armor>530</armor>
 			<devices>180</devices>
 		</damage>
 		<piercingPowerLossFactorByDistance>
@@ -6164,7 +6183,7 @@
 		<isTracer>true</isTracer>
 		<effects>largeHollowCharge</effects>
 		<damage>
-			<armor>700</armor>
+			<armor>650</armor>
 			<devices>203</devices>
 		</damage>
 		<piercingPowerLossFactorByDistance>
@@ -6182,7 +6201,7 @@
 		<isTracer>true</isTracer>
 		<effects>largeArmorPiercing</effects>
 		<damage>
-			<armor>700</armor>
+			<armor>650</armor>
 			<devices>203</devices>
 		</damage>
 	</_152mm_3BM8_R247>
@@ -6201,7 +6220,7 @@
 		<isTracer>true</isTracer>
 		<effects>largeHighExplosive</effects>
 		<damage>
-			<armor>900</armor>
+			<armor>840</armor>
 			<devices>203</devices>
 		</damage>
 		<armorSpalls>
@@ -6211,7 +6230,7 @@
 			</impactRadius>
 			<coneAngle>90</coneAngle>
 			<damage>
-				<armor>450</armor>
+				<armor>420</armor>
 				<devices>100</devices>
 			</damage>
 		</armorSpalls>

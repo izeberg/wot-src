@@ -1,16 +1,16 @@
-import logging, Windowing
+import Windowing
 from cgf_components import sound_helpers
 from frameworks.wulf import ViewSettings, WindowFlags, WindowLayer
 from gui.Scaleform.Waiting import Waiting
 from gui.impl.gen import R
 from gui.impl.pub.lobby_window import LobbyWindow
 from gui.shared import events, EVENT_BUS_SCOPE, g_eventBus
+from gui.server_events.bonuses import CustomizationsBonus
 from white_tiger.gui.impl.gen.view_models.views.lobby.portal_rewards.wt_portal_vehicle_reward_model import WtPortalVehicleRewardModel
 from white_tiger.gui.impl.lobby.wt_event_sound import playLootBoxPortalExit
 from white_tiger.gui.impl.lobby.wt_event_base_portal_awards_view import WtEventBasePortalAwards
 from white_tiger.gui.wt_event_models_helper import fillAdditionalAwards
 from white_tiger.gui.impl.lobby.wt_event_constants import WhiteTigerLootBoxes
-_logger = logging.getLogger(__name__)
 
 class WtPortalVehicleReward(WtEventBasePortalAwards):
 
@@ -138,11 +138,20 @@ class WtPortalVehicleReward(WtEventBasePortalAwards):
                     model.setVehicleVideoName(customData.get('video_idle', ''))
             self.__numberOfVideos -= 1
             isLastVideo = self.__numberOfVideos == 0
+            filteredAwards = []
+            for bonus in self._awards:
+                if isinstance(bonus, CustomizationsBonus):
+                    item = bonus.getCustomizations()[0]
+                    style = bonus.getC11nItem(item)
+                    if style.isHiddenInUI():
+                        continue
+                filteredAwards.append(bonus)
+
             if isLastVideo:
                 self._tooltipItems.clear()
                 tooltipItems = self._tooltipItems
                 awardList = self.__awardVehicles
-                awardList += self._awards
+                awardList += filteredAwards
                 fillAdditionalAwards(model.getRewards(), awardList, tooltipItems)
             model.setIsLastVideo(isLastVideo)
 

@@ -775,13 +775,13 @@
 		<id>35003</id>
 		<userString>#intunion_vehicles:_37mm_BR_169_T</userString>
 		<icon>ap_cr</icon>
-		<price>326</price>
+		<price>200</price>
 		<kind>ARMOR_PIERCING_CR</kind>
 		<caliber>37</caliber>
 		<isTracer>true</isTracer>
 		<effects>smallAPCR_autoshoot</effects>
 		<damage>
-			<armor>46</armor>
+			<armor>50</armor>
 			<devices>25</devices>
 		</damage>
 		<hitDeviceChanceMultiplier>
@@ -912,15 +912,15 @@
 		<id>35004</id>
 		<userString>#intunion_vehicles:_37mm_OF_169_T</userString>
 		<icon>ap_cr_premium</icon>
-		<price>364</price>
+		<price>4400</price>
 		<improved>true</improved>
 		<kind>ARMOR_PIERCING_CR</kind>
 		<caliber>37</caliber>
 		<isTracer>true</isTracer>
 		<effects>smallAPCR_autoshoot</effects>
 		<damage>
-			<armor>24</armor>
-			<devices>19</devices>
+			<armor>40</armor>
+			<devices>25</devices>
 		</damage>
 		<hitDeviceChanceMultiplier>
 			0.3
@@ -1142,7 +1142,7 @@
 		<isTracer>true</isTracer>
 		<effects>mediumAPCR_autoshoot</effects>
 		<damage>
-			<armor>43</armor>
+			<armor>70</armor>
 			<devices>35</devices>
 		</damage>
 		<hitDeviceChanceMultiplier>
@@ -1165,7 +1165,7 @@
 		<isTracer>true</isTracer>
 		<effects>mediumAPCR_autoshoot</effects>
 		<damage>
-			<armor>70</armor>
+			<armor>85</armor>
 			<devices>35</devices>
 		</damage>
 		<hitDeviceChanceMultiplier>

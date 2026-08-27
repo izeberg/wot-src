@@ -97,6 +97,7 @@ class WTEventPortalView(WtEventBasePortalsView, CallbackDelayer):
             self.delayCallback(_UNCLAIMED_RUN_DELAY, self.__openPortal)
 
     def _finalize(self):
+        self.stopCallback(self.__openPortal)
         self.__bonusesPacker = None
         super(WTEventPortalView, self)._finalize()
         return

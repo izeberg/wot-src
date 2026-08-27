@@ -6693,12 +6693,6 @@
 				<_75mm_Gun_Mk_V>
 					shared
 					<maxAmmo>64</maxAmmo>
-					<unlocks>
-						<vehicle>
-							Un18_VT_49
-							<cost>55250</cost>
-						</vehicle>
-					</unlocks>
 					<armor>
 						<gun>20</gun>
 					</armor>

@@ -41,7 +41,6 @@
 			<column>6</column>
 			<lines>
 				<Un03_Degem_Yud/>
-				<Un18_VT_49/>
 			</lines>
 		</Un01_Cromwell_VII>
 		<Un03_Degem_Yud>
@@ -51,13 +50,6 @@
 				<Un04_Vickers_MBT_EXP/>
 			</lines>
 		</Un03_Degem_Yud>
-		<Un18_VT_49>
-			<row>8</row>
-			<column>7</column>
-			<lines>
-				<Un15_SBM_44/>
-			</lines>
-		</Un18_VT_49>
 		<Un04_Vickers_MBT_EXP>
 			<row>6</row>
 			<column>8</column>
@@ -66,13 +58,6 @@
 				<Un05_Shot_Kal_Alef/>
 			</lines>
 		</Un04_Vickers_MBT_EXP>
-		<Un15_SBM_44>
-			<row>8</row>
-			<column>8</column>
-			<lines>
-				<Un16_TDM_54/>
-			</lines>
-		</Un15_SBM_44>
 		<Un13_T-54>
 			<row>4</row>
 			<column>9</column>
@@ -87,13 +72,6 @@
 				<Un02_Merkava_LP/>
 			</lines>
 		</Un05_Shot_Kal_Alef>
-		<Un16_TDM_54>
-			<row>8</row>
-			<column>9</column>
-			<lines>
-				<Un17_RDT_62/>
-			</lines>
-		</Un16_TDM_54>
 		<Un14_T54D>
 			<row>4</row>
 			<column>10</column>
@@ -102,9 +80,5 @@
 			<row>6</row>
 			<column>10</column>
 		</Un02_Merkava_LP>
-		<Un17_RDT_62>
-			<row>8</row>
-			<column>10</column>
-		</Un17_RDT_62>
 	</nodes>
 </root>

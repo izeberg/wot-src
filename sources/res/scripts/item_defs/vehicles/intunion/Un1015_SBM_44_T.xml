@@ -2,8 +2,7 @@
 <root>
 	<xmlns:xmlref>http://bwt/xmlref</xmlns:xmlref>
 	<crew>
-		<commander>radioman
-			loader</commander>
+		<commander>radioman</commander>
 		<gunner>loader</gunner>
 		<driver/>
 	</crew>
@@ -11,7 +10,7 @@
 	<postProgressionTree>role_MT_support</postProgressionTree>
 	<customRoleSlotOptions>3 5</customRoleSlotOptions>
 	<speedLimits>
-		<forward>55</forward>
+		<forward>51</forward>
 		<backward>18</backward>
 	</speedLimits>
 	<invisibility>
@@ -1794,7 +1793,7 @@
 			<primaryArmor>armor_10 armor_11 armor_4</primaryArmor>
 			<weight>4500</weight>
 			<maxHealth>360</maxHealth>
-			<rotationSpeed>52</rotationSpeed>
+			<rotationSpeed>46</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>140</maxHealth>
 				<maxRegenHealth>70</maxRegenHealth>
@@ -1819,7 +1818,7 @@
 			<guns>
 				<_37mm_N_37D_T>
 					shared
-					<maxAmmo>672</maxAmmo>
+					<maxAmmo>680</maxAmmo>
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
@@ -1863,10 +1862,10 @@
 						<gun>10</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.2
+						0.3
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>12</reloadTime>
+					<reloadTime>13</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
 							0.12
@@ -1886,20 +1885,20 @@
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<aimingTime>
-						1.5
+						2.4
 						<!--BW_String-->
 					</aimingTime>
 					<clip>
-						<count>20</count>
-						<rate>240</rate>
+						<count>10</count>
+						<rate>180</rate>
 					</clip>
 					<autoShoot>
 						<shotDispersionPerSec>
 							1.5
 							<!--BW_String-->
 						</shotDispersionPerSec>
-						<maxShotDispersion>8</maxShotDispersion>
-						<rate>4</rate>
+						<maxShotDispersion>2</maxShotDispersion>
+						<rate>3</rate>
 						<rebuildShotDispersionDelay>
 							0.3
 							<!--BW_String-->
@@ -2634,7 +2633,7 @@
 			<engines>
 				<V_44_T>
 					<smplEnginePower>710</smplEnginePower>
-					<smplFwMaxSpeed>55</smplFwMaxSpeed>
+					<smplFwMaxSpeed>51</smplFwMaxSpeed>
 				</V_44_T>
 			</engines>
 			<chassis>

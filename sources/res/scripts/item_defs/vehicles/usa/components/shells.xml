@@ -1942,6 +1942,25 @@
 			<!--BW_String-->
 		</hitCrewChanceMultiplier>
 	</_120mm_M820_HEAT_MBT>
+	<_120mm_M820_HEAT_MBT_02>
+		<id>31103</id>
+		<userString>#usa_vehicles:_120mm_M820_HEAT</userString>
+		<icon>hc_premium</icon>
+		<price>4800</price>
+		<improved>true</improved>
+		<kind>HOLLOW_CHARGE</kind>
+		<caliber>120</caliber>
+		<isTracer>true</isTracer>
+		<effects>largeHollowCharge</effects>
+		<damage>
+			<armor>420</armor>
+			<devices>160</devices>
+		</damage>
+		<piercingPowerLossFactorByDistance>
+			0.05
+			<!--BW_String-->
+		</piercingPowerLossFactorByDistance>
+	</_120mm_M820_HEAT_MBT_02>
 	<_120mm_M820_HEAT_MBT_T>
 		<id>31051</id>
 		<userString>#usa_vehicles:_120mm_M820_HEAT_T</userString>

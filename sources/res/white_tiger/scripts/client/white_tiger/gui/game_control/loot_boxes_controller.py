@@ -176,10 +176,10 @@ class _WTLootBoxRollProcessor(Processor):
     def _successHandler(self, code, ctx=None):
         if not ctx:
             ctx = {}
-        rewards = _preprocessAwards([ctx.get('rewards', {})], self.__lootBox)
+        rewards = _preprocessAwards([ctx.get('bonus', {})], self.__lootBox)
         isAutoClaimed = self.__lootBoxesController.isStopTokenAmongRewardList(rewards, self.__boxType)
         if isAutoClaimed:
-            _pushLootBoxOpenedSystemMessage(ctx['rewards'])
+            _pushLootBoxOpenedSystemMessage(ctx['bonus'])
         if ctx.get('extraRewards'):
             _pushLootBoxOpenedRerollRewardsSystemMessage(ctx.get('extraRewards'))
         return super(_WTLootBoxRollProcessor, self)._successHandler(code, ctx)
@@ -259,7 +259,7 @@ class LootBoxesController(ILootBoxesController):
             self.__hunterLastViewedCount = self.__settingsCore.serverSettings.getSectionSettings(SETTINGS_SECTIONS.LOOT_BOX_VIEWED, WTLootBoxesViewedKeys.HUNTER_LAST_VIEWED, 0)
             self.__bossLastViewedCount = self.__settingsCore.serverSettings.getSectionSettings(SETTINGS_SECTIONS.LOOT_BOX_VIEWED, WTLootBoxesViewedKeys.BOSS_LAST_VIEWED, 0)
             hunterCount = self.getLootBoxesCountByType(WhiteTigerLootBoxes.WT_HUNTER)
-            bossCount = self.getLootBoxesCountByType(WhiteTigerLootBoxes.WT_BOSS)
+            bossCount = self.getLootBoxesCountByType(WhiteTigerLootBoxes.WT_BOSS, excludePending=True)
             if self.__hunterLastViewedCount > hunterCount:
                 self.__hunterLastViewedCount = hunterCount
                 self.__saveHunterLastViewedCount()
@@ -271,7 +271,7 @@ class LootBoxesController(ILootBoxesController):
 
     def updateLastViewedCount(self):
         self.__hunterLastViewedCount = self.getLootBoxesCountByType(WhiteTigerLootBoxes.WT_HUNTER)
-        self.__bossLastViewedCount = self.getLootBoxesCountByType(WhiteTigerLootBoxes.WT_BOSS)
+        self.__bossLastViewedCount = self.getLootBoxesCountByType(WhiteTigerLootBoxes.WT_BOSS, excludePending=True)
         self.__saveHunterLastViewedCount()
         self.__saveBossLastViewedCount()
 
@@ -284,15 +284,18 @@ class LootBoxesController(ILootBoxesController):
              lootBoxType,)
         return [ lootBox for lootBox in self.__itemsCache.items.tokens.getLootBoxes().itervalues() if lootBox.getType() in lootBoxTypes ]
 
-    def getTankLootBoxesCount(self):
-        return self.getLootBoxesCountByType(WhiteTigerLootBoxes.WT_BOSS)
+    def getTankLootBoxesCount(self, excludePending):
+        return self.getLootBoxesCountByType(WhiteTigerLootBoxes.WT_BOSS, excludePending)
 
-    def getLootBoxesCountByType(self, lootBoxType):
+    def getLootBoxesCountByType(self, lootBoxType, excludePending=False):
         if lootBoxType == WhiteTigerLootBoxes.WT_TANK:
-            return self.getTankLootBoxesCount()
+            return self.getTankLootBoxesCount(excludePending)
         itemsByType = self.__itemsCache.items.tokens.getLootBoxesCountByType()
         lootBoxes = itemsByType.get(lootBoxType, {})
-        return lootBoxes.get(TOTAL_KEY, 0)
+        resultCount = lootBoxes.get(TOTAL_KEY, 0)
+        if excludePending:
+            return max(0, resultCount - self.getPendingBoxesCount(lootBoxType))
+        return resultCount
 
     def getLootBoxesCountByTypeForUI(self, lootBoxType, openedBoxes=1):
         count = self.getLootBoxesCountByType(lootBoxType)
@@ -394,6 +397,7 @@ class LootBoxesController(ILootBoxesController):
                 self.openTankLootBox(parentWindow)
             return
         bonus = result.auxData.get('bonus', {})
+        boxCount = result.auxData.get('boxCount', boxCount)
         if not bonus:
             _logger.error('LootBox is opened, but no rewards has been received.')
             return
@@ -495,6 +499,12 @@ class LootBoxesController(ILootBoxesController):
         boxID = lootBox.getID()
         pendingBoxes = BigWorld.player().whiteTiger.getPendingBoxesByBoxID(boxID)
         return len(pendingBoxes) > 0
+
+    def getPendingBoxesCount(self, boxType):
+        lootBox = self.getLootBoxByTypeInInventory(boxType)
+        boxID = lootBox.getID()
+        pendingBoxes = BigWorld.player().whiteTiger.getPendingBoxesByBoxID(boxID)
+        return pendingBoxes.get('count', 0)
 
     def getReRollAttemptsCount(self, boxType):
         lootBox = self.getLootBoxByTypeInInventory(boxType)

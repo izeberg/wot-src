@@ -31,6 +31,7 @@ class WhiteTigerVehicleMarkerPlugin(RespawnableVehicleMarkerPlugin):
         self.__cloneRemainingTimes = {}
         self.__cloneSpawnTimes = {}
         self.__cloneTimerCallbackID = None
+        self.__allCloneVehicleIDs = set()
         return
 
     def start(self):
@@ -40,6 +41,7 @@ class WhiteTigerVehicleMarkerPlugin(RespawnableVehicleMarkerPlugin):
     def stop(self):
         g_eventBus.removeListener(WTCloneInfoEvent.CLONE_VEHICLE_INFOS_UPDATED, self.__onCloneVehicleIDsUpdated, scope=EVENT_BUS_SCOPE.BATTLE)
         self.__cloneVehicleIDs = set()
+        self.__allCloneVehicleIDs = set()
         self.__cloneLifeTimes.clear()
         self.__cloneSpawnTimes.clear()
         self.__stopCloneTimer()
@@ -145,12 +147,18 @@ class WhiteTigerVehicleMarkerPlugin(RespawnableVehicleMarkerPlugin):
     def __isCloneVehicle(self, vehicleID):
         return vehicleID in self.__cloneVehicleIDs
 
-    def __onCloneVehicleIDsUpdated(self, _):
+    def _needsMarker(self, vInfo):
+        if vInfo.vehicleID in self.__allCloneVehicleIDs and not vInfo.isAlive():
+            return False
+        return super(WhiteTigerVehicleMarkerPlugin, self)._needsMarker(vInfo)
+
+    def __onCloneVehicleIDsUpdated(self, data):
         teamInfo = BigWorld.player().arena.teamInfo
         wtCloneInfo = getattr(teamInfo, 'wtTeamInfoComponent', None)
         if wtCloneInfo is None:
             return
         else:
+            self.__allCloneVehicleIDs.update(self.__cloneVehicleIDs)
             prevIDs = self.__cloneVehicleIDs
             newIDs = set()
             for vehInfo in wtCloneInfo.cloneVehicleInfos:
@@ -172,6 +180,7 @@ class WhiteTigerVehicleMarkerPlugin(RespawnableVehicleMarkerPlugin):
 
             for removedID in prevIDs.difference(newIDs):
                 self.__dropCloneTimer(removedID)
+                self._hideVehicleMarker(removedID)
 
             self.__ensureCloneTimer()
             return

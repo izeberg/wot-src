@@ -6,12 +6,11 @@ from white_tiger.gui.impl.lobby.wt_quests_view import HUNTER_QUEST_CHAINS
 from gui.server_events.event_items import WtQuest
 from gui.server_events.events_constants import WT_BOSS_GROUP_ID
 from gui.shared.missions.packers.bonus import packMissionsBonusModelAndTooltipData, BonusUIPacker
-from white_tiger.gui.impl.lobby.packers.wt_event_bonuses_packers import WtLootboxTokenBonusPacker, WtTicketTokenBonusPacker
+from white_tiger.gui.impl.lobby.packers.wt_event_bonuses_packers import WtLootboxTokenBonusPacker
 from helpers import dependency
 from gui.server_events.bonuses import mergeBonuses
 from skeletons.gui.game_control import IWhiteTigerController, ILootBoxesController, IQuestsController
 from white_tiger_common.wt_constants import WT_TEAMS
-from wt_settings import g_wt_config
 if typing.TYPE_CHECKING:
     from gui.server_events.bonuses import TokensBonus
     from gui.battle_results.reusable import _ReusableInfo
@@ -19,7 +18,6 @@ if typing.TYPE_CHECKING:
 
 def _getEventBonusWidgetsMap():
     return {'battleToken': _WtWidgetTokenBonusPacker(), 
-       'ticket': _WtWidgetTicketTokenBonusPacker(), 
        'lootBoxToken': _WtWidgetTokenBonusPacker()}
 
 
@@ -50,24 +48,8 @@ class _WtWidgetTokenBonusPacker(WtLootboxTokenBonusPacker):
         return
 
 
-class _WtWidgetTicketTokenBonusPacker(WtTicketTokenBonusPacker):
-    __gameEventCtrl = dependency.descriptor(IWhiteTigerController)
-
-    @classmethod
-    def _getBonusModel(cls):
-        return WidgetModel()
-
-    @classmethod
-    def _packToken(cls, token, model):
-        super(_WtWidgetTicketTokenBonusPacker, cls)._packToken(token, model)
-        model = typing.cast(WidgetModel, model)
-        model.setIsActionDisabled(not (cls.__gameEventCtrl.isModeActive() and g_wt_config.hasTokensByName('wt_boss')))
-
-
-@dependency.replace_none_kwargs(gameEventCtrl=IWhiteTigerController)
-def _sortMap(gameEventCtrl=None):
-    return {gameEventCtrl.getConfig().ticketToken: 1, 
-       WhiteTigerLootBoxes.WT_HUNTER: 2, 
+def _sortMap():
+    return {WhiteTigerLootBoxes.WT_HUNTER: 2, 
        WhiteTigerLootBoxes.WT_BOSS: 2}
 
 

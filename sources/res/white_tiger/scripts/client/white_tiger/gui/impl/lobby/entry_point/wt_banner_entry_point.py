@@ -91,7 +91,7 @@ class WTEventEntryPoint(ViewImpl, Notifiable):
                 secondsLeft = timeLeft
             with self.viewModel.transaction() as (tx):
                 tx.setHunterLootBoxesCount(self.__boxesCtrl.getLootBoxesCountByType(WhiteTigerLootBoxes.WT_HUNTER))
-                tx.setBossLootBoxesCount(self.__boxesCtrl.getLootBoxesCountByType(WhiteTigerLootBoxes.WT_BOSS))
+                tx.setBossLootBoxesCount(self.__boxesCtrl.getLootBoxesCountByType(WhiteTigerLootBoxes.WT_BOSS, excludePending=True))
                 tx.setState(self.__getState())
                 tx.setTimeLeft(secondsLeft)
         else:

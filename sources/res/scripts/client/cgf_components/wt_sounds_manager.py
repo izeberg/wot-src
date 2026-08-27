@@ -348,7 +348,6 @@ class RespawnSoundPlayer(ISpawnListener):
 
 
 class GameplayEnterSoundPlayer(CGF.ComponentManager, CallbackDelayer):
-    _GAMEPLAY_ENTER = 'ev_white_tiger_gameplay_enter'
     _WT23_VO_PREBATTLE_DIALOGUE = 'wt23_vo_dialogue_prebattle'
     _PREBATTLE_DIALOGUE_START_TIME = 23.0
 
@@ -380,8 +379,6 @@ class GameplayEnterSoundPlayer(CGF.ComponentManager, CallbackDelayer):
                 if timeToPeriodEnd > self._PREBATTLE_DIALOGUE_START_TIME:
                     notificationDelay = max(timeToPeriodEnd - self._PREBATTLE_DIALOGUE_START_TIME, 0.0)
                     self.delayCallback(notificationDelay, self.__playPrebattleDialogue)
-        if period != self.__prevPeriod and period == ARENA_PERIOD.BATTLE:
-            sound_helpers.play2d(self._GAMEPLAY_ENTER)
         self.__prevPeriod = period
 
     def __playPrebattleDialogue(self):

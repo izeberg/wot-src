@@ -91,8 +91,10 @@ class WtEventPortalAwards(WtEventBasePortalAwards, CallbackDelayer):
         super(WtEventPortalAwards, self)._finalize()
 
     def _updateBoxCount(self):
+        pendingBoxes = self._boxesCtrl.getPendingBoxesCount(self.__lootBoxType)
+        self._boxesCtrl.updateLastViewedCount()
         with self.viewModel.transaction() as (model):
-            setLootBoxesCount(model, self.__lootBoxType, self.__boxCount)
+            setLootBoxesCount(model, self.__lootBoxType, pendingBoxes)
 
     def _setSelectedBoxCount(self, boxCount):
         with self.viewModel.transaction() as (model):
@@ -301,6 +303,7 @@ class WtEventPortalAwards(WtEventBasePortalAwards, CallbackDelayer):
     def __onCacheResync(self, _, diff):
         self.__updateLimits()
         self._updateModel()
+        self._updateBoxCount()
 
     def __updateLimits(self):
         with self.viewModel.transaction() as (model):
