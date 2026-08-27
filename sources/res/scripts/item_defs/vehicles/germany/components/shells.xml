@@ -1633,6 +1633,25 @@
 			<!--BW_String-->
 		</hitCrewChanceMultiplier>
 	</_120mm_HlGr59>
+	<_120mm_HlGr59_02>
+		<id>31063</id>
+		<userString>#germany_vehicles:_120mm_HlGr59</userString>
+		<icon>hc_premium</icon>
+		<price>4800</price>
+		<improved>true</improved>
+		<kind>HOLLOW_CHARGE</kind>
+		<caliber>120</caliber>
+		<isTracer>true</isTracer>
+		<effects>largeHollowCharge</effects>
+		<damage>
+			<armor>400</armor>
+			<devices>165</devices>
+		</damage>
+		<piercingPowerLossFactorByDistance>
+			0.05
+			<!--BW_String-->
+		</piercingPowerLossFactorByDistance>
+	</_120mm_HlGr59_02>
 	<_120mm_M820>
 		<id>373</id>
 		<userString>#germany_vehicles:_120mm_M820</userString>
@@ -2064,6 +2083,21 @@
 			<!--BW_String-->
 		</hitCrewChanceMultiplier>
 	</_128mm_PzGr40D>
+	<_128mm_PzGr40D_02>
+		<id>31064</id>
+		<userString>#germany_vehicles:_128mm_PzGr40D</userString>
+		<icon>ap_cr_premium</icon>
+		<price>4800</price>
+		<improved>true</improved>
+		<kind>ARMOR_PIERCING_CR</kind>
+		<caliber>128</caliber>
+		<isTracer>true</isTracer>
+		<effects>largeAPCR</effects>
+		<damage>
+			<armor>490</armor>
+			<devices>180</devices>
+		</damage>
+	</_128mm_PzGr40D_02>
 	<_128mm_PzGr40E>
 		<id>31010</id>
 		<userString>#germany_vehicles:_128mm_PzGr40E</userString>

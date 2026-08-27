@@ -2307,6 +2307,25 @@
 			<!--BW_String-->
 		</hitCrewChanceMultiplier>
 	</_180mm_HEAT_F-572CH_70>
+	<_180mm_HEAT_F-572CH_70_02>
+		<id>31040</id>
+		<userString>#china_vehicles:_180mm_HEAT_F-572CH_70</userString>
+		<icon>hc_premium</icon>
+		<price>7200</price>
+		<improved>true</improved>
+		<kind>HOLLOW_CHARGE</kind>
+		<caliber>180</caliber>
+		<isTracer>true</isTracer>
+		<effects>hugeHollowCharge</effects>
+		<damage>
+			<armor>1050</armor>
+			<devices>240</devices>
+		</damage>
+		<piercingPowerLossFactorByDistance>
+			0.05
+			<!--BW_String-->
+		</piercingPowerLossFactorByDistance>
+	</_180mm_HEAT_F-572CH_70_02>
 	<_180mm_HEAT_F-572CH_70_T>
 		<id>31026</id>
 		<userString>#china_vehicles:_180mm_HEAT_F-572CH_70_T</userString>

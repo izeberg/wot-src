@@ -7378,19 +7378,19 @@
 					<maxDistance>720</maxDistance>
 					<piercingPower>263 250</piercingPower>
 				</_120mm_M820_MBT>
-				<_120mm_M820_HEAT_MBT>
+				<_120mm_M820_HEAT_MBT_02>
 					<defaultPortion>
 						0.0
 						<!--BW_String-->
 					</defaultPortion>
-					<speed>1700</speed>
+					<speed>900</speed>
 					<gravity>
 						9.81
 						<!--BW_String-->
 					</gravity>
 					<maxDistance>720</maxDistance>
-					<piercingPower>320 305</piercingPower>
-				</_120mm_M820_HEAT_MBT>
+					<piercingPower>340 340</piercingPower>
+				</_120mm_M820_HEAT_MBT_02>
 				<_120mm_SDRN1_MBT>
 					<defaultPortion>
 						0.05

@@ -4819,6 +4819,25 @@
 			<!--BW_String-->
 		</hitCrewChanceMultiplier>
 	</_130mm_3VBK_279>
+	<_130mm_3VBK_279_02>
+		<id>31222</id>
+		<userString>#ussr_vehicles:_130mm_ZBK60M</userString>
+		<icon>hc_premium</icon>
+		<price>4800</price>
+		<improved>true</improved>
+		<kind>HOLLOW_CHARGE</kind>
+		<caliber>130</caliber>
+		<isTracer>true</isTracer>
+		<effects>largeHollowCharge</effects>
+		<damage>
+			<armor>560</armor>
+			<devices>180</devices>
+		</damage>
+		<piercingPowerLossFactorByDistance>
+			0.05
+			<!--BW_String-->
+		</piercingPowerLossFactorByDistance>
+	</_130mm_3VBK_279_02>
 	<_130mm_3VBK_279_T>
 		<id>31127</id>
 		<userString>#ussr_vehicles:_130mm_ZBK60M_T</userString>

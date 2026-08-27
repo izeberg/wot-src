@@ -4796,19 +4796,19 @@
 					<maxDistance>720</maxDistance>
 					<piercingPower>274 256</piercingPower>
 				</_120mm_Pzgr59>
-				<_120mm_HlGr59>
+				<_120mm_HlGr59_02>
 					<defaultPortion>
 						0.0
 						<!--BW_String-->
 					</defaultPortion>
-					<speed>1790</speed>
+					<speed>850</speed>
 					<gravity>
 						9.81
 						<!--BW_String-->
 					</gravity>
 					<maxDistance>720</maxDistance>
-					<piercingPower>326 314</piercingPower>
-				</_120mm_HlGr59>
+					<piercingPower>330 330</piercingPower>
+				</_120mm_HlGr59_02>
 				<_120mm_Sprgr56>
 					<defaultPortion>
 						0.1
@@ -6204,7 +6204,7 @@
 						0.85
 						<!--BW_String-->
 					</defaultPortion>
-					<speed>1050</speed>
+					<speed>920</speed>
 					<gravity>
 						9.81
 						<!--BW_String-->
@@ -6212,19 +6212,19 @@
 					<maxDistance>720</maxDistance>
 					<piercingPower>258 252</piercingPower>
 				</_128mm_PzGr39D>
-				<_128mm_PzGr40D>
+				<_128mm_PzGr40D_02>
 					<defaultPortion>
 						0.0
 						<!--BW_String-->
 					</defaultPortion>
-					<speed>1580</speed>
+					<speed>1050</speed>
 					<gravity>
 						9.81
 						<!--BW_String-->
 					</gravity>
 					<maxDistance>720</maxDistance>
-					<piercingPower>324 312</piercingPower>
-				</_128mm_PzGr40D>
+					<piercingPower>318 302</piercingPower>
+				</_128mm_PzGr40D_02>
 				<_128mm_SprG18D>
 					<defaultPortion>
 						0.15
