@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<tank>true</tank>
-	<nodefullVisual>content/3D_Customization/Mounts/Mount_turret_05/normal/lod3/Mount_turret_05</nodefullVisual>
 	<visibilityBox>
 		<min>-0.100524 -0.227895 -0.109588</min>
 		<max>0.153386 0.022986 0.101857</max>
 	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/Mounts/Mount_turret_05/normal/lod3/Mount_turret_05</nodefullVisual>
 </root>

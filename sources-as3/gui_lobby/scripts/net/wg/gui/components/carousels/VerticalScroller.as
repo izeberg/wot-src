@@ -21,7 +21,7 @@ package net.wg.gui.components.carousels
          var _loc1_:int = 0;
          var _loc2_:int = 0;
          super.layoutChildren();
-         if(scrollbarRef != null && dataProvider != null && isInvalid(InvalidationType.DATA,InvalidationType.SIZE,INVALIDATION_TYPE_SCROLLBAR))
+         if(scrollbarRef != null && dataProvider != null && isInvalidTypes(InvalidationType.DATA,InvalidationType.SIZE,INVALIDATION_TYPE_SCROLLBAR))
          {
             _loc1_ = this._measuredTypicalItemRendererHeight + verticalGap;
             _loc2_ = Math.ceil(dataProvider.length / columnCount) * _loc1_ - height - verticalGap + paddingTop + paddingBottom;
@@ -81,7 +81,7 @@ package net.wg.gui.components.carousels
       {
          var _loc1_:Boolean = false;
          super.draw();
-         if(isInvalid(InvalidationType.SIZE,InvalidationType.DATA,INVALIDATION_TYPE_LAYOUT,INVALIDATION_TYPE_PENDING_SCROLL))
+         if(isInvalidTypes(InvalidationType.SIZE,InvalidationType.DATA,INVALIDATION_TYPE_LAYOUT,INVALIDATION_TYPE_PENDING_SCROLL))
          {
             _loc1_ = maxVerticalScrollPosition != minVerticalScrollPosition && dataProvider.length;
             cursorManager.enable = _loc1_;

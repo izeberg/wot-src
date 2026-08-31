@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/italy/It43_CAV_mod_71/normal/lod1/Hull</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/italy/It43_CAV_mod_71/normal/lod2/Hull</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.655039 -0.666998 -3.632198</min>
+		<max>1.655039 0.556877 3.669164</max>
+	</visibilityBox>
+</root>

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, typing, BigWorld, CGF
 from battleground.mines_object import loadMines
 from entity_world_object import EntityWorldObject
@@ -57,10 +58,10 @@ class Mine(EntityWorldObject):
     def _loadWorldObject(self):
         return loadMines(self.ownerVehicleID, self._registerWorldObject)
 
-    def _registerWorldObject(self, mines):
-        mines.setPosition(self.position)
-        mines.setIsEnemyMarkerEnabled(True)
-        super(Mine, self)._registerWorldObject(mines)
+    def _registerWorldObject(self, worldObject):
+        worldObject.setPosition(self.position)
+        worldObject.setIsEnemyMarkerEnabled(True)
+        super(Mine, self)._registerWorldObject(worldObject)
 
     def __onAvatarReady(self):
         self.__currentObservedVehicleID = avatar_getter.getVehicleIDAttached()

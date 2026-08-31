@@ -3,14 +3,8 @@
 	<tank>true</tank>
 	<materialNames/>
 	<visibilityBox>
-		<min>
-			-0.0841813 -0.0648608 -0.0414814
-			<!--BW_String-->
-		</min>
-		<max>
-			0.0843306 0.160038 1.64004
-			<!--BW_String-->
-		</max>
+		<min>-0.084159 -0.064812 -0.041460</min>
+		<max>0.084353 0.160087 1.632245</max>
 	</visibilityBox>
 	<nodelessVisual>vehicles/german/G08_Pz38t/crash/lod4/Gun_02</nodelessVisual>
 </root>

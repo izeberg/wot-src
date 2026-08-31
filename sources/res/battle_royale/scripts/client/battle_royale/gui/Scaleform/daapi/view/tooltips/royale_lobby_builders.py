@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from frameworks.wulf import WindowLayer
 from battle_royale.gui.Scaleform.daapi.view.lobby.tooltips import BattleProgressionTooltipData, BattleRoyaleCalendarExtendedTooltip
 from gui.Scaleform.framework.managers.containers import POP_UP_CRITERIA

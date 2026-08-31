@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>nodes_01</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>Gun</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>G</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 3.000000</row3>
+					</transform>
+					<node>
+						<identifier>HP_gunEffect_09</identifier>
+						<transform>
+							<row0>-0.970662 0.002263 0.240439</row0>
+							<row1>0.060277 0.970316 0.234207</row1>
+							<row2>-0.232772 0.241829 -0.941985</row2>
+							<row3>-0.134143 0.134144 -0.960347</row3>
+						</transform>
+					</node>
+					<node>
+						<identifier>HP_gunEffect_10</identifier>
+						<transform>
+							<row0>-0.988206 -0.024929 -0.151085</row0>
+							<row1>-0.060288 0.970312 0.234223</row1>
+							<row2>0.140761 0.240569 -0.960371</row2>
+							<row3>0.134143 0.134143 -0.960347</row3>
+						</transform>
+					</node>
+					<node>
+						<identifier>HP_gunEffect_11</identifier>
+						<transform>
+							<row0>-0.935780 0.026724 0.351572</row0>
+							<row1>-0.060279 0.970317 -0.234203</row1>
+							<row2>-0.347395 -0.240355 -0.906392</row2>
+							<row3>-0.134144 -0.134143 -0.960348</row3>
+						</transform>
+					</node>
+					<node>
+						<identifier>HP_gunEffect_12</identifier>
+						<transform>
+							<row0>-0.960911 -0.007115 -0.276765</row0>
+							<row1>0.060273 0.970316 -0.234208</row1>
+							<row2>0.270216 -0.241734 -0.931959</row2>
+							<row3>0.134143 -0.134143 -0.960347</row3>
+						</transform>
+					</node>
+					<node>
+						<identifier>HP_gunEffect_13</identifier>
+						<transform>
+							<row0>-0.932250 -0.029135 0.360641</row0>
+							<row1>0.060279 0.970316 0.234208</row1>
+							<row2>-0.356759 0.240080 -0.902820</row2>
+							<row3>-0.134143 0.134143 -1.620347</row3>
+						</transform>
+					</node>
+					<node>
+						<identifier>HP_gunEffect_14</identifier>
+						<transform>
+							<row0>-0.960059 0.007866 -0.279686</row0>
+							<row1>-0.060297 0.970300 0.234268</row1>
+							<row2>0.273222 0.241776 -0.931071</row2>
+							<row3>0.134143 0.134143 -1.620347</row3>
+						</transform>
+					</node>
+					<node>
+						<identifier>HP_gunEffect_15</identifier>
+						<transform>
+							<row0>-0.969178 -0.000755 0.246360</row0>
+							<row1>-0.060292 0.970313 -0.234215</row1>
+							<row2>-0.238869 -0.241849 -0.940452</row2>
+							<row3>-0.134143 -0.134143 -1.620347</row3>
+						</transform>
+					</node>
+					<node>
+						<identifier>HP_gunEffect_16</identifier>
+						<transform>
+							<row0>-0.948892 -0.017122 -0.315137</row0>
+							<row1>0.060286 0.970307 -0.234243</row1>
+							<row2>0.309790 -0.241269 -0.919684</row2>
+							<row3>0.134143 -0.134143 -1.620347</row3>
+						</transform>
+					</node>
+					<node>
+						<identifier>HP_gunFire</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>-0.000001 -0.000001 2.068528</row3>
+						</transform>
+					</node>
+					<node>
+						<identifier>valve_small_1_0</identifier>
+						<transform>
+							<row0>-0.241845 0.241845 -0.939693</row0>
+							<row1>0.060281 0.970315 0.234212</row1>
+							<row2>0.968441 -0.000003 -0.249244</row2>
+							<row3>-0.200422 0.059001 -0.941060</row3>
+						</transform>
+						<node>
+							<identifier>valve_1</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 -0.000000</row1>
+								<row2>0.000000 0.000000 1.000000</row2>
+								<row3>0.000000 0.000000 0.000000</row3>
+							</transform>
+							<node>
+								<identifier>valve_1_BlendBone</identifier>
+								<transform>
+									<row0>-0.241845 0.060281 0.968441</row0>
+									<row1>0.241845 0.970315 -0.000003</row1>
+									<row2>0.939693 -0.234212 0.249244</row2>
+									<row3>1.872031 -0.527396 0.707276</row3>
+								</transform>
+							</node>
+						</node>
+					</node>
+					<node>
+						<identifier>valve_small_2_0</identifier>
+						<transform>
+							<row0>0.241876 0.241860 -0.939681</row0>
+							<row1>-0.060287 0.970311 0.234225</row1>
+							<row2>0.968432 -0.000003 0.249276</row2>
+							<row3>0.200422 0.059001 -0.941060</row3>
+						</transform>
+						<node>
+							<identifier>valve_2</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>-0.000000 1.000000 -0.000000</row1>
+								<row2>0.000000 0.000000 1.000000</row2>
+								<row3>-0.000000 0.000000 0.000000</row3>
+							</transform>
+							<node>
+								<identifier>valve_2_BlendBone</identifier>
+								<transform>
+									<row0>0.241876 -0.060287 0.968432</row0>
+									<row1>0.241860 0.970311 -0.000003</row1>
+									<row2>0.939681 -0.234225 -0.249276</row2>
+									<row3>1.871999 -0.527423 -0.707340</row3>
+								</transform>
+							</node>
+						</node>
+					</node>
+					<node>
+						<identifier>valve_small_3_0</identifier>
+						<transform>
+							<row0>-0.241857 -0.241832 -0.939693</row0>
+							<row1>-0.060281 0.970318 -0.234199</row1>
+							<row2>0.968437 0.000003 -0.249257</row2>
+							<row3>-0.200423 -0.059001 -0.941060</row3>
+						</transform>
+						<node>
+							<identifier>valve_3</identifier>
+							<transform>
+								<row0>1.000000 -0.000000 0.000000</row0>
+								<row1>-0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 -0.000000 1.000000</row2>
+								<row3>0.000000 0.000000 0.000000</row3>
+							</transform>
+							<node>
+								<identifier>valve_3_BlendBone</identifier>
+								<transform>
+									<row0>-0.241857 -0.060281 0.968437</row0>
+									<row1>-0.241832 0.970318 0.000003</row1>
+									<row2>0.939693 0.234199 0.249257</row2>
+									<row3>1.872029 0.527369 0.707302</row3>
+								</transform>
+							</node>
+						</node>
+					</node>
+					<node>
+						<identifier>valve_small_4_0</identifier>
+						<transform>
+							<row0>0.241829 -0.241837 -0.939699</row0>
+							<row1>0.060278 0.970317 -0.234205</row1>
+							<row2>0.968445 -0.000006 0.249228</row2>
+							<row3>0.200422 -0.059001 -0.941060</row3>
+						</transform>
+						<node>
+							<identifier>valve_4</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>-0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 1.000000</row2>
+								<row3>0.000000 -0.000000 0.000000</row3>
+							</transform>
+							<node>
+								<identifier>valve_4_BlendBone</identifier>
+								<transform>
+									<row0>0.241829 0.060278 0.968445</row0>
+									<row1>-0.241837 0.970317 -0.000006</row1>
+									<row2>0.939699 0.234205 -0.249228</row2>
+									<row3>1.872047 0.527382 -0.707244</row3>
+								</transform>
+							</node>
+						</node>
+					</node>
+					<node>
+						<identifier>valve_small_5_0</identifier>
+						<transform>
+							<row0>-0.241849 0.241841 -0.939693</row0>
+							<row1>0.060281 0.970316 0.234207</row1>
+							<row2>0.968440 -0.000003 -0.249248</row2>
+							<row3>-0.200422 0.059001 -1.601060</row3>
+						</transform>
+						<node>
+							<identifier>valve_5</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>-0.000000 0.000000 1.000000</row2>
+								<row3>0.000000 -0.000000 0.000000</row3>
+							</transform>
+							<node>
+								<identifier>valve_5_BlendBone</identifier>
+								<transform>
+									<row0>-0.241849 0.060281 0.968440</row0>
+									<row1>0.241841 0.970316 -0.000003</row1>
+									<row2>0.939693 -0.234207 0.249248</row2>
+									<row3>1.251833 -0.372810 0.542781</row3>
+								</transform>
+							</node>
+						</node>
+					</node>
+					<node>
+						<identifier>valve_small_6_0</identifier>
+						<transform>
+							<row0>0.241858 0.241901 -0.939675</row0>
+							<row1>-0.060290 0.970301 0.234267</row1>
+							<row2>0.968437 -0.000006 0.249260</row2>
+							<row3>0.200422 0.059001 -1.601060</row3>
+						</transform>
+						<node>
+							<identifier>valve_6</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 -0.000000</row1>
+								<row2>0.000000 0.000000 1.000000</row2>
+								<row3>-0.000000 0.000000 0.000000</row3>
+							</transform>
+							<node>
+								<identifier>valve_6_BlendBone</identifier>
+								<transform>
+									<row0>0.241858 -0.060290 0.968437</row0>
+									<row1>0.241901 0.970301 -0.000006</row1>
+									<row2>0.939675 -0.234267 -0.249260</row2>
+									<row3>1.251802 -0.372891 -0.542795</row3>
+								</transform>
+							</node>
+						</node>
+					</node>
+					<node>
+						<identifier>valve_small_7_0</identifier>
+						<transform>
+							<row0>-0.241889 -0.241847 -0.939681</row0>
+							<row1>-0.060287 0.970314 -0.234212</row1>
+							<row2>0.968429 -0.000003 -0.249289</row2>
+							<row3>-0.200422 -0.059001 -1.601060</row3>
+						</transform>
+						<node>
+							<identifier>valve_7</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 1.000000</row2>
+								<row3>-0.000000 0.000000 -0.000000</row3>
+							</transform>
+							<node>
+								<identifier>valve_7_BlendBone</identifier>
+								<transform>
+									<row0>-0.241889 -0.060287 0.968429</row0>
+									<row1>-0.241847 0.970315 -0.000003</row1>
+									<row2>0.939681 0.234212 0.249289</row2>
+									<row3>1.251808 0.372816 0.542835</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>valve_small_7_0_BlendBone</identifier>
+							<transform>
+								<row0>-0.241889 -0.060287 0.968429</row0>
+								<row1>-0.241847 0.970315 -0.000003</row1>
+								<row2>0.939681 0.234212 0.249289</row2>
+								<row3>1.251808 0.372816 0.542835</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>valve_small_8_0</identifier>
+						<transform>
+							<row0>0.241839 -0.241873 -0.939687</row0>
+							<row1>0.060284 0.970308 -0.234240</row1>
+							<row2>0.968442 0.000000 0.249240</row2>
+							<row3>0.200422 -0.059001 -1.601060</row3>
+						</transform>
+						<node>
+							<identifier>valve_8</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 1.000000</row2>
+								<row3>-0.000000 0.000000 0.000000</row3>
+							</transform>
+							<node>
+								<identifier>valve_8_BlendBone</identifier>
+								<transform>
+									<row0>0.241839 0.060284 0.968442</row0>
+									<row1>-0.241873 0.970308 0.000000</row1>
+									<row2>0.939687 0.234240 -0.249240</row2>
+									<row3>1.251824 0.372855 -0.542769</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>valve_small_8_0_BlendBone</identifier>
+							<transform>
+								<row0>0.241839 0.060284 0.968442</row0>
+								<row1>-0.241873 0.970308 0.000000</row1>
+								<row2>0.939687 0.234240 -0.249240</row2>
+								<row3>1.251824 0.372855 -0.542769</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>G_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>0.000000 0.000000 -3.000000</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Gun_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>Gun_BlendBone</node>
+		<node>G_BlendBone</node>
+		<node>valve_5_BlendBone</node>
+		<node>valve_1_BlendBone</node>
+		<node>valve_3_BlendBone</node>
+		<node>valve_2_BlendBone</node>
+		<node>valve_4_BlendBone</node>
+		<node>valve_6_BlendBone</node>
+		<node>valve_8_BlendBone</node>
+		<node>valve_7_BlendBone</node>
+		<geometry>
+			<vertices>gun_02_Shape.vertices</vertices>
+			<primitive>gun_02_Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_guns_skinned</identifier>
+					<property>
+						g_detailPowerGloss
+						<Float>
+							0.35
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_maskBias
+						<Float>
+							0.18
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
+					</property>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/german/G193_Pz_Kpfw_55/Pz_Kpfw_55_guns_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/german/G193_Pz_Kpfw_55/Pz_Kpfw_55_guns_ANM.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/german/G193_Pz_Kpfw_55/Pz_Kpfw_55_guns_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/german/G193_Pz_Kpfw_55/Pz_Kpfw_55_guns_AO.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/german/G193_Pz_Kpfw_55/Pz_Kpfw_55_guns_ID.dds</Texture>
+					</property>
+					<property>
+						alphaReference
+						<Int>64</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+				</material>
+				<groupOrigin>0.001485 0.029487 -2.753420</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-0.459953 -0.311613 0.173923</min>
+		<max>0.462924 0.370586 5.332917</max>
+	</boundingBox>
+	<geometrySize>35306</geometrySize>
+</root>

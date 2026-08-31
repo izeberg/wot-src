@@ -47,6 +47,13 @@ class FunRandomBattleResultsView(ViewImpl):
         else:
             return super(FunRandomBattleResultsView, self).createToolTipContent(event, contentID)
 
+    def createToolTip(self, event):
+        content = self.__subPresenter.createToolTip(event)
+        if content is not None:
+            return content
+        else:
+            return super(FunRandomBattleResultsView, self).createToolTip(event)
+
     def getDynamicSoundEnv(self):
         statsController = self.__battleResults.getStatsCtrl(self.__arenaUniqueID)
         battleResults = statsController.getResults()

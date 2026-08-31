@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>content/3D_Customization/gun_slots/S41_gunsleeve_forestnymph/normal/lod3/attachment</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.215080 -0.296783 -1.295573</min>
+		<max>0.199888 0.213134 1.493944</max>
+	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/gun_slots/S41_gunsleeve_forestnymph/normal/lod2/attachment</nodefullVisual>
+</root>

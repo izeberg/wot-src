@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from battle_royale.gui.constants import BattleRoyalePerfProblems, BattleRoyaleModeState
 from battle_royale.gui.impl.gen.view_models.views.lobby.tooltips.banner_tooltip_view_model import BannerTooltipViewModel, PerformanceRisk
 from battle_royale.gui.impl.lobby.br_helpers.utils import setEventInfo

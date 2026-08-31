@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<settings/>
+	<messages>
+		<message>
+			<name>DEATH_FROM_FALL_TANKS_FALLING_SELF_SUICIDE</name>
+			<type>list</type>
+			<value>
+				<item>_(#fall_tanks.ingame_gui.extend:postmortem_messages/DEATH_FROM_FALL_TANKS_FALLING_SELF_SUICIDE)</item>
+				<item>#FF2717,#800080</item>
+			</value>
+		</message>
+		<message>
+			<name>DEATH_FROM_FALL_TANKS_FALLING_ENEMY_SELF</name>
+			<type>list</type>
+			<value>
+				<item>_(#fall_tanks.ingame_gui.extend:postmortem_messages/DEATH_FROM_FALL_TANKS_FALLING_ENEMY_SELF)</item>
+				<item>#FF2717,#800080</item>
+			</value>
+		</message>
+	</messages>
+</root>

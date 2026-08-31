@@ -1,7 +1,7 @@
 from __future__ import absolute_import
 import copy, random, time, typing
 from builtins import zip
-from future.utils import listitems, iteritems, itervalues
+from future.utils import listitems, iteritems, itervalues, viewitems
 from past.builtins import xrange, basestring
 from account_shared import getCustomizationItem
 from constants import LOOTBOX_TOKEN_PREFIX
@@ -345,6 +345,10 @@ DEEP_CHECKERS = {'groups': lambda nodeAcceptor, bonusNode, checkInventory, depth
    'oneof': lambda nodeAcceptor, bonusNode, checkInventory, depthLevel: any(nodeAcceptor.isAcceptable(subBonusNode[(-1)], checkInventory, depthLevel - 1) for subBonusNode in bonusNode[(-1)])}
 
 class BonusNodeAcceptor(object):
+    updateBonusCacheHandlers = {}
+    updateBonusesInSameGroupHandlers = {}
+    isBonusExistsCheckers = {}
+    isBonusesInSameGroupAlreadyPickedCheckers = {}
 
     def __init__(self, account, bonusConfig=None, counters=None, bonusCache=None, probabilityStage=0, logTracker=None, shouldResetUsedLimits=True, dropInGroupHistory=None, trackedByNameSections=None):
         self.__account = account
@@ -452,6 +456,10 @@ class BonusNodeAcceptor(object):
                 c11nItem = getCustomizationItem(customization['custType'], customization['id'])[0]
                 cache.onItemAccepted('customizations', c11nItem.compactDescr)
 
+        for bonusName, handler in viewitems(self.updateBonusCacheHandlers):
+            if bonusName in bonusNode:
+                handler(bonusNode, cache)
+
         return
 
     def isBonusExists(self, bonusNode):
@@ -471,6 +479,10 @@ class BonusNodeAcceptor(object):
                 c11nItem = getCustomizationItem(customization['custType'], customization['id'])[0]
                 if cache.isItemExists('customizations', c11nItem.compactDescr):
                     return True
+
+        for bonusName, checker in viewitems(self.isBonusExistsCheckers):
+            if bonusName in bonusNode and checker(bonusNode, cache) is True:
+                return True
 
         return False
 
@@ -496,6 +508,13 @@ class BonusNodeAcceptor(object):
                 if c11nItem.compactDescr in cache:
                     return True
 
+        for bonusName, checker in viewitems(self.isBonusesInSameGroupAlreadyPickedCheckers):
+            if bonusName not in bonusNode:
+                continue
+            cache = self.__dropInGroupsBonuses.setdefault(bonusName, set())
+            if checker(bonusNode, cache) is True:
+                return True
+
         return False
 
     def updateBonusesInSameGroup(self, bonusNode):
@@ -516,6 +535,12 @@ class BonusNodeAcceptor(object):
             for customization in bonusNode['customizations']:
                 c11nItem = getCustomizationItem(customization['custType'], customization['id'])[0]
                 cache.add(c11nItem.compactDescr)
+
+        for bonusName, handlers in viewitems(self.updateBonusesInSameGroupHandlers):
+            if bonusName not in bonusNode:
+                continue
+            cache = self.__dropInGroupsBonuses.setdefault(bonusName, set())
+            handlers(bonusNode, cache)
 
     def isSectionTrackedByNameLimitReached(self, bonusNodeProperties):
         if not self.__trackedByNameSections:

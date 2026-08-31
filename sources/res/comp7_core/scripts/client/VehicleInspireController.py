@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from helpers import fixed_dict
 from script_component.DynamicScriptComponent import DynamicScriptComponent

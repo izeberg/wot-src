@@ -6,25 +6,22 @@ from py2to3.utils import PY3
 def _joinseq(seq):
     if len(seq) == 1:
         return '(' + seq[0] + ',)'
-    else:
-        return '(' + (', ').join(seq) + ')'
+    return '(' + (', ').join(seq) + ')'
 
 
 def _strseq(obj, convert, join=_joinseq):
     if isinstance(obj, (list, tuple)):
         return join(lmap(lambda o, c=convert, j=join: _strseq(o, c, j), obj))
-    else:
-        return convert(obj)
+    return convert(obj)
 
 
 def getargspec(func):
     if PY3:
         return inspect.getfullargspec(func)
-    else:
-        return inspect.getargspec(func)
+    return inspect.getargspec(func)
 
 
-def formatargspec(args, varargs=None, varkw=None, defaults=None, kwonlyargs=(), kwonlydefaults={}, annotations={}, formatarg=str, formatvarargs=lambda name: '*' + name, formatvarkw=lambda name: '**' + name, formatvalue=lambda value: '=' + repr(value), join=_joinseq):
+def formatargspec(args, varargs=None, varkw=None, defaults=None, kwonlyargs=None, kwonlydefaults=None, annotations=None, formatarg=str, formatvarargs=lambda name: '*' + name, formatvarkw=lambda name: '**' + name, formatvalue=lambda value: '=' + repr(value), join=_joinseq):
     specs = []
     if defaults:
         firstdefault = len(args) - len(defaults)

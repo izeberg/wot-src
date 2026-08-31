@@ -37,6 +37,14 @@ package net.wg.data.constants.generated
       
       public static const LOW_CHARGE_SHOT_GUN_MARKER_LINKAGE:String = "LowChargeShotGunMarkerUI";
       
+      public static const AUXILIARY_ROCKET_LAUNCHER_GUN_MARKER_ARCADE_LINKAGE:String = "AuxiliaryRocketLauncherGunMarkerArcadeUI";
+      
+      public static const AUXILIARY_ROCKET_LAUNCHER_GUN_MARKER_SNIPER_LINKAGE:String = "AuxiliaryRocketLauncherGunMarkerSniperUI";
+      
+      public static const AUXILIARY_ROCKET_LAUNCHER_GUN_MARKER_ARCADE_DEBUG_LINKAGE:String = "AuxiliaryRocketLauncherGunMarkerArcadeDebugUI";
+      
+      public static const AUXILIARY_ROCKET_LAUNCHER_GUN_MARKER_SNIPER_DEBUG_LINKAGE:String = "AuxiliaryRocketLauncherGunMarkerSniperDebugUI";
+      
       public static const ARCADE_GUN_MARKER_NAME:String = "arcadeGunMarker";
       
       public static const SNIPER_GUN_MARKER_NAME:String = "sniperGunMarker";
@@ -96,6 +104,14 @@ package net.wg.data.constants.generated
       public static const DEBUG_LOW_CHARGE_SHOT_GUN_ARCADE_MARKER_NAME:String = "arcadeDebugLowChargeShotGunMarker";
       
       public static const DEBUG_LOW_CHARGE_SHOT_GUN_SNIPER_MARKER_NAME:String = "sniperDebugLowChargeShotGunMarker";
+      
+      public static const AUXILIARY_ROCKET_LAUNCHER_GUN_ARCADE_MARKER_NAME:String = "arcadeAuxiliaryRocketLauncherGunMarker";
+      
+      public static const AUXILIARY_ROCKET_LAUNCHER_GUN_SNIPER_MARKER_NAME:String = "sniperAuxiliaryRocketLauncherGunMarker";
+      
+      public static const DEBUG_AUXILIARY_ROCKET_LAUNCHER_GUN_ARCADE_MARKER_NAME:String = "arcadeDebugAuxiliaryRocketLauncherGunMarker";
+      
+      public static const DEBUG_AUXILIARY_ROCKET_LAUNCHER_GUN_SNIPER_MARKER_NAME:String = "sniperDebugAuxiliaryRocketLauncherGunMarker";
       
       public static const GUN_TAG_RELOADING_TYPES:Array = [1,4,7,10,13];
       

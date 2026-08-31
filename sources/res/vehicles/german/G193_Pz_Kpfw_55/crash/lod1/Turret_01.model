@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/german/G193_Pz_Kpfw_55/crash/lod2/Turret_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.317206 -0.091043 -2.220565</min>
+		<max>1.315810 1.142479 1.641421</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G193_Pz_Kpfw_55/crash/lod1/Turret_01</nodefullVisual>
+</root>

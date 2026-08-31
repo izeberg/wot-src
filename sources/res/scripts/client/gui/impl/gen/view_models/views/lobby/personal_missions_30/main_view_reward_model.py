@@ -1,6 +1,6 @@
 from enum import Enum
 from frameworks.wulf import Array, ViewModel
-from gui.impl.gen.view_models.common.missions.bonuses.icon_bonus_model import IconBonusModel
+from gui.impl.gen.view_models.views.lobby.personal_missions_30.style_bonus_model import StyleBonusModel
 
 class RewardsType(Enum):
     MAIN = 'main'
@@ -22,7 +22,7 @@ class MainViewRewardModel(ViewModel):
 
     @staticmethod
     def getItemsType():
-        return IconBonusModel
+        return StyleBonusModel
 
     def getRewardsType(self):
         return RewardsType(self._getString(1))

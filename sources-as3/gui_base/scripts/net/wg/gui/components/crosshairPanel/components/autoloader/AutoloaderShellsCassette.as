@@ -11,19 +11,25 @@ package net.wg.gui.components.crosshairPanel.components.autoloader
       
       private static const RELOADING_FRAMES:int = 100;
       
+      private static const AUTOLOADING_SURGE_START_FRAME:int = 98;
+      
       private static const AUTOLOADING_START_FRAME:int = 14;
       
       private static const AUTOLOADING_FRAMES:int = 83;
       
-      private static const STATUS_RELOAD_PROGRESS_FRAME:int = 1;
+      private static const STATUS_RELOAD_COMPLETED_FRAME_LABEL:String = "completed";
       
-      private static const STATUS_RELOAD_TRANSITION_FRAME:int = 2;
+      private static const STATUS_RELOAD_TRANSITION_FRAME_LABEL:String = "transition";
+      
+      private static const STATUS_RELOAD_RED_FRAME_LABEL:String = "red";
       
       private static const SHELL_STATE_COMEIN:String = "comeIn";
       
       private static const SHELL_STATE_READY:String = "ready";
       
       private static const SHELL_STATE_RELOADING:String = "reloading";
+      
+      private static const SHELL_STATE_RELOADING_SURGE:String = "reloading_surge";
       
       private static const SHELL_STATE_ON_READY:String = "onReady";
       
@@ -34,6 +40,8 @@ package net.wg.gui.components.crosshairPanel.components.autoloader
       private static const TIMER_STATE_INVALID:String = "TIMER_STATE_INVALID";
       
       private static const TIMER_COMPONENT_NAME:String = "timer";
+      
+      private static const AUTORELOADER_SURGE_TIMER_OFFSET_X:int = 4;
       
       private static const IDLE_STATE:int = 0;
        
@@ -71,6 +79,10 @@ package net.wg.gui.components.crosshairPanel.components.autoloader
       private var _isAnimationInProgress:Boolean = false;
       
       private var _isAutoloadInProgress:Boolean = false;
+      
+      private var _isSurge:Boolean = false;
+      
+      private var _hasAutoreloaderSurge:Boolean = false;
       
       private var _isCritical:Boolean = false;
       
@@ -122,13 +134,14 @@ package net.wg.gui.components.crosshairPanel.components.autoloader
          super.draw();
          if(isInvalid(TIMER_STATE_INVALID))
          {
-            this._timer.updateTimerColor(this._isTimerRed,this._isCritical,this._isAutoloadInProgress);
+            this._timer.updateTimerColor(this._isTimerRed,this._isCritical,this._isAutoloadInProgress,this._isSurge);
             this.updateStatusMC();
          }
       }
       
       public function autoloadProgress(param1:Number, param2:Number, param3:Boolean, param4:Boolean) : void
       {
+         var _loc5_:int = 0;
          if(!this._isAnimationInProgress && this._lastLoadedShell && param1 != this._currentAutoloadProgress)
          {
             this._currentAutoloadProgress = param1;
@@ -141,7 +154,8 @@ package net.wg.gui.components.crosshairPanel.components.autoloader
             {
                if(this._lastLoadedShell.currentFrame >= SHELL_STATE_CLEAR_FRAME)
                {
-                  this._lastLoadedShell.gotoAndStop(AUTOLOADING_START_FRAME + param1 * AUTOLOADING_FRAMES);
+                  _loc5_ = !!this._isSurge ? int(AUTOLOADING_SURGE_START_FRAME) : int(AUTOLOADING_START_FRAME);
+                  this._lastLoadedShell.gotoAndStop(_loc5_ + param1 * AUTOLOADING_FRAMES);
                }
             }
          }
@@ -208,7 +222,7 @@ package net.wg.gui.components.crosshairPanel.components.autoloader
          {
             _loc3_ = _loc2_ < param1 ? SHELL_STATE_READY : SHELL_STATE_CLEAR;
             _loc4_ = this._shells[_loc2_];
-            if(_loc4_.currentLabel == SHELL_STATE_RELOADING && _loc2_ < param1)
+            if((_loc4_.currentLabel == SHELL_STATE_RELOADING || _loc4_.currentLabel == SHELL_STATE_RELOADING_SURGE) && _loc2_ < param1)
             {
                _loc4_.gotoAndPlay(SHELL_STATE_ON_READY);
             }
@@ -264,11 +278,29 @@ package net.wg.gui.components.crosshairPanel.components.autoloader
          }
          if(this._isTimerRed)
          {
-            this.statusMc.gotoAndStop(STATUS_RELOAD_PROGRESS_FRAME);
+            this.statusMc.gotoAndStop(STATUS_RELOAD_RED_FRAME_LABEL);
          }
-         else if(this.statusMc.currentFrame == STATUS_RELOAD_PROGRESS_FRAME)
+         else if(this.statusMc.currentFrameLabel == STATUS_RELOAD_RED_FRAME_LABEL)
          {
-            this.statusMc.gotoAndPlay(STATUS_RELOAD_TRANSITION_FRAME);
+            this.statusMc.gotoAndPlay(STATUS_RELOAD_TRANSITION_FRAME_LABEL);
+         }
+         else if(!this._isAnimationInProgress && !this._isAutoloadInProgress)
+         {
+            this.statusMc.gotoAndStop(STATUS_RELOAD_COMPLETED_FRAME_LABEL);
+         }
+      }
+      
+      public function setAutoreloaderSurgeState(param1:Boolean) : void
+      {
+         if(!this._hasAutoreloaderSurge)
+         {
+            this._hasAutoreloaderSurge = true;
+            this.timerMc.x += AUTORELOADER_SURGE_TIMER_OFFSET_X;
+         }
+         if(this._isSurge != param1)
+         {
+            this._isSurge = param1;
+            invalidate(TIMER_STATE_INVALID);
          }
       }
       

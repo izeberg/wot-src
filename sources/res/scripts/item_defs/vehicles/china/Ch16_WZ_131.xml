@@ -1807,8 +1807,8 @@
 				</chassis>
 			</unlocks>
 			<armor>
-				<leftTrack>15</leftTrack>
-				<rightTrack>15</rightTrack>
+				<leftTrack>10</leftTrack>
+				<rightTrack>10</rightTrack>
 			</armor>
 			<weight>5500</weight>
 			<terrainResistance>
@@ -3470,8 +3470,8 @@
 			<level>7</level>
 			<price>18500</price>
 			<armor>
-				<leftTrack>15</leftTrack>
-				<rightTrack>15</rightTrack>
+				<leftTrack>10</leftTrack>
+				<rightTrack>10</rightTrack>
 			</armor>
 			<weight>5500</weight>
 			<terrainResistance>
@@ -6815,6 +6815,7 @@
 							<camouflage>GUN</camouflage>
 						</customizableVehicleAreas>
 					</customization>
+					<muzzleBrake>HORIZONTAL</muzzleBrake>
 					<camouflage>
 						<tiling>
 							1.12 1.12 0.000000 0.000000

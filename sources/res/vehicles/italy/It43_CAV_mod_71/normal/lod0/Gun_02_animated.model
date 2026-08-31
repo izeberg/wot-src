@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-0.374999 -0.311020 -1.305008</min>
+		<max>0.375001 0.226612 0.025107</max>
+	</visibilityBox>
+	<parent>vehicles/italy/It43_CAV_mod_71/normal/lod1/Gun_02_animated</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodelessVisual>vehicles/italy/It43_CAV_mod_71/normal/lod0/Gun_02_animated</nodelessVisual>
+</root>

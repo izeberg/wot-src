@@ -486,18 +486,18 @@ msgstr ""
 
 msgid "modes/fall_tanks/entryPoint/tooltip/performance/highRisk/description"
 msgstr ""
-"This mode demands high computer performance. You may experience issues with "
-"map loading, graphics, and vehicle movement. In case of insufficient "
-"performance, try selecting a lower graphics quality in Settings."
+"Your computer's performance is insufficient for this mode. You will "
+"experience issues with graphics and vehicle movement. Game client crashes "
+"are also probable."
 
 msgid "modes/fall_tanks/entryPoint/tooltip/performance/highRisk/header"
-msgstr "Possible Reduced Performance"
+msgstr "Low Performance"
 
 msgid "modes/fall_tanks/entryPoint/tooltip/performance/mediumRisk/description"
 msgstr ""
 "This mode demands high computer performance. You may experience issues with "
 "map loading, graphics, and vehicle movement. In case of insufficient "
-"performance, try selecting a lower graphics quality in Settings."
+"performance, try a lower graphics quality in Settings."
 
 msgid "modes/fall_tanks/entryPoint/tooltip/performance/mediumRisk/header"
 msgstr "Possible Reduced Performance"
@@ -543,31 +543,27 @@ msgstr "{parSecondary_open}I{parSecondary_close} All Tiers"
 
 msgid "modes/fall_tanks/mode_selector/performance/highRisk/description"
 msgstr ""
-"At low graphics settings, visual artifacts and issues may occur. We "
-"recommend selecting the highest graphics setting for the best experience "
-"possible, provided that your computer specs meet the requirements. The mode "
-"demands high computer performance. The FPS rate may decrease during "
-"intensive fighting."
+"Your computer's performance is insufficient for this mode. You will "
+"experience issues with graphics and vehicle movement. Game client crashes "
+"are also probable."
 
 msgid "modes/fall_tanks/mode_selector/performance/highRisk/header"
-msgstr "Highest graphics settings recommended"
+msgstr "Low Performance"
 
 msgid "modes/fall_tanks/mode_selector/performance/highRisk/headerIcon"
-msgstr "%(icon) Highest graphics settings recommended"
+msgstr "%(icon) Low Performance"
 
 msgid "modes/fall_tanks/mode_selector/performance/mediumRisk/description"
 msgstr ""
-"At low graphics settings, visual artifacts and issues may occur. We "
-"recommend selecting the highest graphics setting for the best experience "
-"possible, provided that your computer specs meet the requirements. The mode "
-"demands high computer performance. The FPS rate may decrease during "
-"intensive fighting."
+"This mode demands high computer performance. You may experience issues with "
+"map loading, graphics, and vehicle movement. In case of insufficient "
+"performance, try a lower graphics quality in Settings."
 
 msgid "modes/fall_tanks/mode_selector/performance/mediumRisk/header"
-msgstr "Highest graphics settings recommended"
+msgstr "Possible Reduced Performance"
 
 msgid "modes/fall_tanks/mode_selector/performance/mediumRisk/headerIcon"
-msgstr "%(icon) Highest graphics settings recommended"
+msgstr "%(icon) Possible Reduced Performance"
 
 msgid "modes/fall_tanks/mode_selector/progression/resettable"
 msgstr "A new Neon Dash mission is available in:"
@@ -603,13 +599,13 @@ msgid "modes/fall_tanks/progression/infinite/congratulations"
 msgstr "Congratulations!"
 
 msgid "modes/fall_tanks/progression/infinite/infinityStep"
-msgstr "Infinite Post-Progression"
+msgstr "Repeatable Stage"
 
 msgid "modes/fall_tanks/progression/infinite/mainProgressionFinished"
-msgstr "You completed the main progression"
+msgstr "You completed the Main Progression"
 
 msgid "modes/fall_tanks/progression/questsList/quest/infinityStageProgress"
-msgstr "Complete this stage as many times as you can."
+msgstr "Get as many rewards as you can:"
 
 msgid "modes/fall_tanks/progression/questsList/totalPointsEarned"
 msgstr "Points earned: {{progressionSteps}}"
@@ -629,13 +625,13 @@ msgstr "Repeatable"
 
 msgid ""
 "modes/fall_tanks/progressionQuests/quest/progressChangeLabel/forCompletion"
-msgstr "For completion:"
+msgstr "For completion"
 
 msgid "modes/fall_tanks/progressionQuests/quest/progressChangeLabel/forLoss"
-msgstr "For defeat:"
+msgstr "For defeat"
 
 msgid "modes/fall_tanks/progressionQuests/quest/progressChangeLabel/forWin"
-msgstr "For victory:"
+msgstr "For victory"
 
 msgid "modes/fall_tanks/progressionQuests/quest/progressChangeLabel/points"
 msgstr "Points:"
@@ -662,10 +658,10 @@ msgstr ""
 "next rotation."
 
 msgid "modes/fall_tanks/progressionQuests/tooltip/expiresCurrent"
-msgstr "Avaliable for {{timeLeft}}"
+msgstr "Expires in {{timeLeft}}"
 
 msgid "modes/fall_tanks/progressionQuests/tooltip/expiresInfinite"
-msgstr "Avaliable for {{timeLeft}}"
+msgstr "Event ends in {{timeLeft}}"
 
 msgid "modes/fall_tanks/progressionQuests/tooltip/newMissions"
 msgstr "New missions available in {{timeLeft}}"
@@ -1317,6 +1313,14 @@ msgstr "Dodge the lasers and carefully time the jumps to speed to the finish!"
 msgid "sub_modes/fall_tanks/detailsHelp/page2/title"
 msgstr "Caution: Lasers and Jumps"
 
+msgid "sub_modes/fall_tanks/detailsHelp/page3/description"
+msgstr ""
+"If your vehicle gets stuck, use \"Return to Checkpoint\" ability to teleport"
+" back to the latest checkpoint you reached."
+
+msgid "sub_modes/fall_tanks/detailsHelp/page3/title"
+msgstr "Return to Checkpoint"
+
 msgid "sub_modes/fall_tanks/detailsHelpHint/description"
 msgstr "to learn more about this mode"
 
@@ -1330,48 +1334,45 @@ msgid "sub_modes/fall_tanks/subModeCard/battleCondition"
 msgstr "15–30"
 
 msgid "sub_modes/fall_tanks/subModeCard/description"
-msgstr ""
-"Fight your way\n"
-"to the finish line"
+msgstr "Fight your way to the finish line"
 
 msgid "sub_modes/fall_tanks/subModeCard/levelCondition"
 msgstr "{parSecondary_open}I{parSecondary_close} All Tiers"
 
 msgid "sub_modes/fall_tanks/subModeCard/performance/highRisk/description"
 msgstr ""
-"At low graphics settings, visual artifacts and other issues may occur. We "
-"recommend selecting the highest graphics setting for the best experience "
-"possible, provided that your computer specs meet the requirements. This mode"
-" demands high performance, and the FPS rate may decrease at intense moments."
+"Your computer's performance is insufficient for this mode. You will "
+"experience issues with graphics and vehicle movement. Game client crashes "
+"are also probable."
 
 msgid "sub_modes/fall_tanks/subModeCard/performance/highRisk/header"
-msgstr "Highest Graphics Settings Recommended"
+msgstr "Low Performance"
 
 msgid "sub_modes/fall_tanks/subModeCard/performance/highRisk/headerIcon"
-msgstr "%(icon) Highest graphics settings recommended"
+msgstr "%(icon) Low Performance"
 
 msgid "sub_modes/fall_tanks/subModeCard/performance/mediumRisk/description"
 msgstr ""
-"At low graphics settings, visual artifacts and other issues may occur. We "
-"recommend selecting the highest graphics setting for the best experience "
-"possible, provided that your computer specs meet the requirements. This mode"
-" demands high computer performance. Your FPS rate may decrease at intense "
-"moments."
+"This mode demands high computer performance. You may experience issues with "
+"map loading, graphics, and vehicle movement. In case of insufficient "
+"performance, try a lower graphics quality in Settings."
 
 msgid "sub_modes/fall_tanks/subModeCard/performance/mediumRisk/header"
-msgstr "Highest Graphics Settings Recommended"
+msgstr "Possible Reduced Performance"
 
 msgid "sub_modes/fall_tanks/subModeCard/performance/mediumRisk/headerIcon"
-msgstr "%(icon) Highest graphics settings recommended"
+msgstr "%(icon) Possible Reduced Performance"
 
 msgid "sub_modes/fall_tanks/subModeCard/title"
 msgstr "Neon Dash"
 
 msgid "sub_modes/fall_tanks/tips/tip1/description"
-msgstr "?empty?"
+msgstr ""
+"Race and brawl through perilous courses, complete missions, and earn "
+"rewards."
 
 msgid "sub_modes/fall_tanks/tips/tip1/title"
-msgstr "?empty?"
+msgstr "Neon Dash"
 
 msgid "sub_modes/fall_tanks/userName"
 msgstr "Neon Dash"

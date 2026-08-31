@@ -271,6 +271,32 @@ msgstr ""
 msgid "detailsHelp/mechanics/autoShootGun_overheatGun/page1/title"
 msgstr "Thermal Overheat Control Autocannon"
 
+msgid "detailsHelp/mechanics/autoreloaderSurge/page1/description"
+msgstr ""
+"The mechanism instantly reduces shell reload to a short fixed time. Each use"
+" consumes one charge per shell, and charges replenish over time—faster when "
+"the clip is full. A set number of charges is available at the start of "
+"battle."
+
+msgid "detailsHelp/mechanics/autoreloaderSurge/page1/title"
+msgstr "Forced Loading Mechanism"
+
+msgid "detailsHelp/mechanics/auxiliaryRocketLauncher/page1/description"
+msgstr ""
+"This vehicle is equipped with a rocket launcher mounted in the gun mantlet. "
+"To switch to rocket aiming sight, press:"
+
+msgid "detailsHelp/mechanics/auxiliaryRocketLauncher/page1/title"
+msgstr "Coaxial Rocket Launcher"
+
+msgid "detailsHelp/mechanics/auxiliaryRocketLauncher/page2/description"
+msgstr ""
+"While aiming with the rocket sight, press the fire button to launch a "
+"rocket:"
+
+msgid "detailsHelp/mechanics/auxiliaryRocketLauncher/page2/title"
+msgstr "Coaxial Rocket Launcher"
+
 msgid "detailsHelp/mechanics/battleFury/page1/description"
 msgstr ""
 "Every time you hit an enemy with a shell, you gain a reload efficiency level, temporarily boosting your gun's reload speed. Levels accumulate with each hit.\n"
@@ -278,6 +304,15 @@ msgstr ""
 
 msgid "detailsHelp/mechanics/battleFury/page1/title"
 msgstr "Semi-Automatic Ammo Rack"
+
+msgid "detailsHelp/mechanics/bustleFeed/page1/description"
+msgstr ""
+"This vehicle's External Ammunition Supply Module allows it to fire powerful "
+"high-charge unitary rounds that cause increased damage. While active, the "
+"module also reduces mobility and fire rate."
+
+msgid "detailsHelp/mechanics/bustleFeed/page1/title"
+msgstr "External Ammunition Feed mode"
 
 msgid "detailsHelp/mechanics/chargeShot/page1/description"
 msgstr ""
@@ -438,6 +473,46 @@ msgstr ""
 
 msgid "detailsHelp/mechanics/rocketAcceleration/page2/title"
 msgstr "Advantages and Disadvantages"
+
+msgid "detailsHelp/mechanics/shellCalibration/page1/description"
+msgstr ""
+"When you hit a visible enemy vehicle with a shell, the fuze setter on the "
+"next shell is adjusted. If the initial shot penetrated enemy armor, the next"
+" shot's damage is increased. If it did not, the next shot's penetration is "
+"increased."
+
+msgid "detailsHelp/mechanics/shellCalibration/page1/title"
+msgstr "Adjustable Fuze Setter"
+
+msgid "detailsHelp/mechanics/shellParamsSwitcher/page1/description"
+msgstr ""
+"The vehicle's gun has special devices that allow some shell parameters to be"
+" modified before firing. Parameters for different shells vary based on the "
+"selected mode, and each mode lets you quickly adapt to different combat "
+"situations."
+
+msgid "detailsHelp/mechanics/shellParamsSwitcher/page1/title"
+msgstr "Shell Calibration System"
+
+msgid "detailsHelp/mechanics/sightPointer/page1/description"
+msgstr ""
+"An advanced optics device increases your view range and enhances detection "
+"of moving and foliage-hidden vehicles. When activated, it scans a narrow "
+"sector in front of your vehicle, revealing concealed targets before a "
+"cooldown period."
+
+msgid "detailsHelp/mechanics/sightPointer/page1/title"
+msgstr "Infrared Search and Track (IRST)"
+
+msgid "detailsHelp/mechanics/sightPointer/page2/description"
+msgstr ""
+"However, if it reveals an unspotted enemy, you also immediately become "
+"spotted for a set time, and both you and the enemies you spot are notified "
+"instantly. You can manually stop the scan and start the device's cooldown "
+"after a short delay."
+
+msgid "detailsHelp/mechanics/sightPointer/page2/title"
+msgstr "Infrared Search and Track (IRST)"
 
 msgid "detailsHelp/mechanics/stagedJetBoosters/page1/description"
 msgstr ""

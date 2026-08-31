@@ -22,6 +22,10 @@
 					<identifier>02 - Defau</identifier>
 					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
 					<property>
+						g_enableEnvMultiplier
+						<Bool>true</Bool>
+					</property>
+					<property>
 						diffuseMap
 						<Texture>particles/content_deferred/GFX_models/GFX_textures/clouds_map_02.dds</Texture>
 					</property>
@@ -34,7 +38,7 @@
 					<property>
 						lightMultipliers
 						<Vector4>
-							11 0.000000 1 0.000000
+							7.801418 0.000000 1 0.000000
 							<!--BW_String-->
 						</Vector4>
 					</property>

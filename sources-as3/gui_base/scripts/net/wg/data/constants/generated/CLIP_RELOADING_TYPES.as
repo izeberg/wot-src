@@ -12,6 +12,8 @@ package net.wg.data.constants.generated
       public static const CONTROLLABLE_RELOAD:int = 3;
       
       public static const UNLIMITED_CLIP:int = 4;
+      
+      public static const SHELL_CALIBRATION_CLIP:int = 5;
        
       
       public function CLIP_RELOADING_TYPES()

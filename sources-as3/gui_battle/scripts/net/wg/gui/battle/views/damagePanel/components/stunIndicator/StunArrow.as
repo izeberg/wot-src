@@ -30,18 +30,6 @@ package net.wg.gui.battle.views.damagePanel.components.stunIndicator
          stop();
       }
       
-      public function showStun(param1:Boolean = true) : void
-      {
-         if(param1)
-         {
-            gotoAndPlay(STATE_SHOW);
-         }
-         else
-         {
-            gotoAndStop(STATE_BASE);
-         }
-      }
-      
       public function hideStun(param1:Boolean = true) : void
       {
          stop();
@@ -55,14 +43,25 @@ package net.wg.gui.battle.views.damagePanel.components.stunIndicator
          }
       }
       
-      public function isVisible() : Boolean
-      {
-         return visible || currentFrameLabel != STATE_HIDDEN;
-      }
-      
       public function isDisposed() : Boolean
       {
          return this._disposed;
+      }
+      
+      public function showStun(param1:Boolean = true) : void
+      {
+         if(currentFrameLabel == STATE_BASE || currentFrameLabel == STATE_SHOW)
+         {
+            return;
+         }
+         if(param1)
+         {
+            gotoAndPlay(STATE_SHOW);
+         }
+         else
+         {
+            gotoAndStop(STATE_BASE);
+         }
       }
    }
 }

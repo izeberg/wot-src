@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_279_PM3_Locator/normal/lod2/Cus_279_PM3_Locator_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.247044 -0.070149 -0.220406</min>
+		<max>0.247654 0.717760 0.211803</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_279_PM3_Locator/normal/lod1/Cus_279_PM3_Locator_01</nodefullVisual>
+</root>

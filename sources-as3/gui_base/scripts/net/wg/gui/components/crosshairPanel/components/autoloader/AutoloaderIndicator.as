@@ -126,6 +126,11 @@ package net.wg.gui.components.crosshairPanel.components.autoloader
          }
       }
       
+      public function setAutoreloaderSurgeState(param1:Boolean) : void
+      {
+         this.cassette.setAutoreloaderSurgeState(param1);
+      }
+      
       public function get autoloaderBoostParams() : BoostIndicatorStateParamsVO
       {
          return this.boostIndicator.stateParams;

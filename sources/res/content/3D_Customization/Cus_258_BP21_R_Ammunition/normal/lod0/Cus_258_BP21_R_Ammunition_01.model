@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>content/3D_Customization/Cus_258_BP21_R_Ammunition/normal/lod0/Cus_258_BP21_R_Ammunition_01</nodefullVisual>
+	<visibilityBox>
+		<min>-0.566695 -0.015049 -0.784559</min>
+		<max>0.088345 0.310286 0.759672</max>
+	</visibilityBox>
+	<parent>content/3D_Customization/Cus_258_BP21_R_Ammunition/normal/lod1/Cus_258_BP21_R_Ammunition_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+</root>

@@ -3827,7 +3827,6 @@
 						<length>0.135979</length>
 					</mainSegment>
 					<collisionHull>
-						<bottom/>
 						<top>
 							<part>
 								<xStart>
@@ -4326,7 +4325,6 @@
 						<length>0.135886</length>
 					</mainSegment>
 					<collisionHull>
-						<bottom/>
 						<top>
 							<part>
 								<xStart>
@@ -5438,7 +5436,6 @@
 						<length>0.135979</length>
 					</mainSegment>
 					<collisionHull>
-						<bottom/>
 						<top>
 							<part>
 								<xStart>
@@ -5937,7 +5934,6 @@
 						<length>0.135886</length>
 					</mainSegment>
 					<collisionHull>
-						<bottom/>
 						<top>
 							<part>
 								<xStart>
@@ -6576,6 +6572,7 @@
 							<camouflage>GUN</camouflage>
 						</customizableVehicleAreas>
 					</customization>
+					<muzzleBrake>HORIZONTAL</muzzleBrake>
 					<camouflage>
 						<density>
 							85.4882 83.3526
@@ -6694,6 +6691,7 @@
 							<camouflage>GUN</camouflage>
 						</customizableVehicleAreas>
 					</customization>
+					<muzzleBrake>HORIZONTAL</muzzleBrake>
 					<camouflage>
 						<tiling>
 							0.97 0.97 0.000000 0.000000

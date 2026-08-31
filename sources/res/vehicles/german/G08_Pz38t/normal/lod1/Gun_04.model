@@ -2,17 +2,11 @@
 <root>
 	<tank>true</tank>
 	<parent>vehicles/german/G08_Pz38t/normal/lod2/Gun_04</parent>
-	<extent>64</extent>
+	<extent>64.000000</extent>
 	<materialNames/>
 	<visibilityBox>
-		<min>
-			-0.0891715 -0.148557 -0.115819
-			<!--BW_String-->
-		</min>
-		<max>
-			0.0890744 0.20573 1.588
-			<!--BW_String-->
-		</max>
+		<min>-0.089172 -0.149046 -0.115819</min>
+		<max>0.089074 0.206220 1.627166</max>
 	</visibilityBox>
 	<nodefullVisual>vehicles/german/G08_Pz38t/normal/lod1/Gun_04</nodefullVisual>
 </root>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<COMP7_ILLUMINATION_FLARE>
+		<visible>true</visible>
+		<components>
+			<MINIMAP_MARKER>
+				<item>
+					<class>comp7_core.gui.Scaleform.daapi.view.battle.markers_components.IlluminationFlareMinimapMarker</class>
+					<config>
+						<symbol>Comp7PointIlluminationFlareMinimapEntryUI</symbol>
+						<container>equipments</container>
+					</config>
+				</item>
+			</MINIMAP_MARKER>
+		</components>
+	</COMP7_ILLUMINATION_FLARE>
+	<COMP7_ILLUMINATION_FLARE_ENEMY>
+		<visible>true</visible>
+		<components>
+			<MINIMAP_MARKER>
+				<item>
+					<class>comp7_core.gui.Scaleform.daapi.view.battle.markers_components.IlluminationFlareMinimapMarker</class>
+					<config>
+						<symbol>Comp7PointIlluminationFlareEnemyMinimapEntryUI</symbol>
+						<container>equipments</container>
+					</config>
+				</item>
+			</MINIMAP_MARKER>
+		</components>
+	</COMP7_ILLUMINATION_FLARE_ENEMY>
+</root>

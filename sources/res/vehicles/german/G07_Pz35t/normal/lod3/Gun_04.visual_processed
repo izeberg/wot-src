@@ -38,7 +38,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>0.000245 -0.038283 -0.767831</row3>
+							<row3>0.000245 -0.038283 -1.413826</row3>
 						</transform>
 					</node>
 					<node>
@@ -65,11 +65,11 @@
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
-		<node>G_BlendBone</node>
 		<node>Gun_BlendBone</node>
+		<node>G_BlendBone</node>
 		<geometry>
-			<vertices>gun_04Shape12.vertices</vertices>
-			<primitive>gun_04Shape12.indices</primitive>
+			<vertices>gun_04_Shape.vertices</vertices>
+			<primitive>gun_04_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -106,14 +106,14 @@
 						<Bool>false</Bool>
 					</property>
 				</material>
-				<groupOrigin>0.001080 -0.009466 -1.058398</groupOrigin>
+				<groupOrigin>0.001080 -0.008567 -0.735448</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
 		<min>-0.109332 -0.207627 -0.115374</min>
-		<max>0.111492 0.188694 2.232169</max>
+		<max>0.111492 0.190494 1.586270</max>
 	</boundingBox>
-	<geometrySize>6016</geometrySize>
+	<geometrySize>6186</geometrySize>
 </root>

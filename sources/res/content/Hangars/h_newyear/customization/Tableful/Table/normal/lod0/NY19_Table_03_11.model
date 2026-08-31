@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>content/Hangars/h_newyear/customization/Tableful/Table/normal/lod0/NY19_Table_03_11</nodefullVisual>
+	<visibilityBox>
+		<min>
+			-0.660184 1.07334 -4.25582
+			<!--BW_String-->
+		</min>
+		<max>
+			0.617334 1.87155 4.30026
+			<!--BW_String-->
+		</max>
+	</visibilityBox>
+	<parent>content/Hangars/h_newyear/customization/Tableful/Table/normal/lod1/NY19_Table_03_11</parent>
+	<extent>25</extent>
+</root>

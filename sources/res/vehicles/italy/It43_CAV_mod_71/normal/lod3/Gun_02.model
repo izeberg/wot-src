@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/italy/It43_CAV_mod_71/normal/lod3/Gun_02</nodefullVisual>
+	<parent>vehicles/italy/It43_CAV_mod_71/normal/lod4/Gun_02</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-0.515614 -0.560276 -1.790023</min>
+		<max>0.515614 0.551539 4.375000</max>
+	</visibilityBox>
+</root>

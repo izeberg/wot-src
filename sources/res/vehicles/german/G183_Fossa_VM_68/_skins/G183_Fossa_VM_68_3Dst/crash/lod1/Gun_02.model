@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-0.503947 1.508509 0.319411</min>
+		<max>0.503486 2.344709 6.948822</max>
+	</visibilityBox>
+	<parent>vehicles/german/G183_Fossa_VM_68/_skins/G183_Fossa_VM_68_3Dst/crash/lod2/Gun_02</parent>
+	<extent>64.000000</extent>
+	<nodefullVisual>vehicles/german/G183_Fossa_VM_68/_skins/G183_Fossa_VM_68_3Dst/crash/lod1/Gun_02</nodefullVisual>
+	<tank>true</tank>
+</root>

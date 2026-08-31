@@ -24,6 +24,8 @@ package net.wg.gui.components.common.video
       private static const SUBTITLE_TRACK_PROP_NAME:String = "subtitleTrack";
       
       private static const INV_BUFFER_TIME:String = "invBufferTime";
+      
+      private static const LOOP_PROP_NAME:String = "loop";
        
       
       public var video:Video;
@@ -246,19 +248,11 @@ package net.wg.gui.components.common.video
       private function onPlaybackStopped() : void
       {
          DebugUtils.LOG_DEBUG("SimpleVideoPlayer | onPlaybackStopped() _isLoop = " + this._isLoop);
-         if(this._isLoop)
+         if(this._status == PlayerStatus.PLAYING || this._status == PlayerStatus.PAUSE)
          {
-            this.seek(0);
-            this.setStatus(PlayerStatus.PLAYING);
+            this.setStatus(PlayerStatus.STOP);
          }
-         else
-         {
-            if(this._status == PlayerStatus.PLAYING || this._status == PlayerStatus.PAUSE)
-            {
-               this.setStatus(PlayerStatus.STOP);
-            }
-            dispatchEvent(new VideoPlayerEvent(VideoPlayerEvent.PLAYBACK_STOPPED));
-         }
+         dispatchEvent(new VideoPlayerEvent(VideoPlayerEvent.PLAYBACK_STOPPED));
       }
       
       private function setPause() : void
@@ -335,6 +329,7 @@ package net.wg.gui.components.common.video
          if(this._isLoop != param1)
          {
             this._isLoop = param1;
+            this._nsStream[LOOP_PROP_NAME] = param1;
          }
       }
       

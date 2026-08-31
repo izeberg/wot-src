@@ -10,6 +10,7 @@ package net.wg.gui.components.tooltips.inblocks.blocks
    import net.wg.gui.components.controls.Image;
    import net.wg.gui.components.tooltips.inblocks.data.TitleDescParameterWithIconVO;
    import org.idmedia.as3commons.util.StringUtils;
+   import scaleform.gfx.TextFieldEx;
    
    public class TitleDescParameterWithIconBlock extends AbstractTextParameterBlock
    {
@@ -75,8 +76,10 @@ package net.wg.gui.components.tooltips.inblocks.blocks
       
       private function invalidateSize() : void
       {
-         var _loc1_:TitleDescParameterWithIconVO = null;
-         _loc1_ = TitleDescParameterWithIconVO(_data);
+         var _loc7_:int = 0;
+         var _loc8_:int = 0;
+         var _loc9_:int = 0;
+         var _loc1_:TitleDescParameterWithIconVO = TitleDescParameterWithIconVO(_data);
          var _loc2_:TextField = valueTF;
          var _loc3_:TextField = this.titleTF;
          var _loc4_:PaddingVO = _loc1_.valuePadding;
@@ -103,10 +106,21 @@ package net.wg.gui.components.tooltips.inblocks.blocks
             this.image.y = 0;
             this.image.alpha = _loc1_.iconAlpha;
             this.setPaddings(this.image,_loc1_.iconPadding);
+            if(_loc1_.verticalAlignment == TextFieldEx.VALIGN_CENTER)
+            {
+               _loc7_ = (_loc2_.height + _loc3_.height) / 2;
+               _loc8_ = this.image.height / 2;
+               _loc9_ = _loc8_ - _loc7_;
+               _loc2_.y = _loc9_;
+               _loc3_.y = _loc9_;
+            }
             _loc6_ = this.image.x + this.image.width ^ 0;
          }
          _loc3_.x = _loc6_;
-         _loc3_.y = 0;
+         if(_loc1_.verticalAlignment == TextFieldEx.VALIGN_TOP)
+         {
+            _loc3_.y = 0;
+         }
          this.setPaddings(_loc3_,_loc5_);
       }
       

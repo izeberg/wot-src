@@ -547,6 +547,24 @@ package net.wg.data.constants
       
       public static const WHEELED_DASH:String = "WheeledDashWidgetUI";
       
+      public static const AUXILIARY_ROCKET_LAUNCHER:String = "AuxiliaryRocketLauncherWidgetUI";
+      
+      public static const SHELL_PARAMS_SWITCHER:String = "ShellParamsSwitcherWidgetUI";
+      
+      public static const SHELL_CALIBRATION:String = "ShellCalibrationWidgetUI";
+      
+      public static const AUTORELOADER_SURGE:String = "AutoreloaderSurgeWidgetUI";
+      
+      public static const AUTORELOADER_SURGE_SECTOR_2:String = "AutoreloaderSurgeSector2UI";
+      
+      public static const AUTORELOADER_SURGE_SECTOR_3:String = "AutoreloaderSurgeSector3UI";
+      
+      public static const AUTORELOADER_SURGE_SECTOR_4:String = "AutoreloaderSurgeSector4UI";
+      
+      public static const BUSTLE_FEED:String = "BustleFeedWidgetUI";
+      
+      public static const SIGHT_POINTER_WIDGET:String = "SightPointerWidgetUI";
+      
       public static const CONCENTRATION_DECOR_CROSSHAIR:String = "ConcentrationCrosshairUI";
       
       public static const ACCURACY_DECOR_CROSSHAIR:String = "AccuracyCrosshairUI";

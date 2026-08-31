@@ -1,5 +1,5 @@
 from __future__ import absolute_import, division
-import random, math
+import random, math, typing
 from past.builtins import xrange
 import Math
 from Math import Vector2, Vector3
@@ -28,28 +28,15 @@ def setTranslation(matrix, translation):
     matrix.translation = translation
 
 
-clamp = --- This code section failed: ---
+T = typing.TypeVar('T', int, float)
 
- L.  48         0  LOAD_FAST             2  'val'
-                3  LOAD_FAST             0  'minVal'
-                6  COMPARE_OP            0  <
-                9  POP_JUMP_IF_FALSE    16  'to 16'
-               12  LOAD_FAST             0  'minVal'
-               15  RETURN_END_IF_LAMBDA
-             16_0  COME_FROM             9  '9'
-               16  LOAD_FAST             2  'val'
-               19  LOAD_FAST             1  'maxVal'
-               22  COMPARE_OP            4  >
-               25  POP_JUMP_IF_FALSE    32  'to 32'
-               28  LOAD_FAST             1  'maxVal'
-               31  RETURN_END_IF_LAMBDA
-             32_0  COME_FROM            25  '25'
-               32  LOAD_FAST             2  'val'
-               35  RETURN_VALUE_LAMBDA
-               -1  LAMBDA_MARKER    
+def clamp(minVal, maxVal, val):
+    return max(minVal, min(maxVal, val))
 
-Parse error at or near `None' instruction at offset -1
-clamp01 = lambda val: clamp(0.0, 1.0, val)
+
+def clamp01(val):
+    return max(0.0, min(1.0, val))
+
 
 def clampVector3(minVal, maxVal, val):
     return Math.clampVector3(minVal, maxVal, val)
@@ -420,4 +407,4 @@ def extendBoundingBox(a, b):
 
 def getCenterFromBox(aabb):
     centralPoint = Math.Vector3((aabb[1].x + aabb[0].x) / 2.0, (aabb[1].y + aabb[0].y) / 2.0, (aabb[1].z + aabb[0].z) / 2.0)
-    return centralPoint# Decompile failed :(
+    return centralPoint

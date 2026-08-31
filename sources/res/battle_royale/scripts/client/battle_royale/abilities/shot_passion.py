@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld, CGF, Math
 from typing import List, Any
 from battle_royale.gui.constants import BattleRoyaleEquipments

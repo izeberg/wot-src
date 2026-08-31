@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from gui.impl.lobby.user_missions.hangar_widget.utils import DailyMissionItemPacker
 from gui.impl.lobby.user_missions.hub.tabs.basic.daily_section.presenters.base_block_presenter import BaseBlockPresenter

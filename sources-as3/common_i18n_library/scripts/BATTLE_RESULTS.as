@@ -77,6 +77,8 @@ package
       
       public static const NODATA:String = "#battle_results:noData";
       
+      public static const RIGGEDBATTLE:String = "#battle_results:riggedBattle";
+      
       public static const COMMON_ARENA_FULLNAME:String = "#battle_results:common/arena/fullName";
       
       public static const COMMON_ARENA_NAMEANDMODE:String = "#battle_results:common/arena/nameAndMode";

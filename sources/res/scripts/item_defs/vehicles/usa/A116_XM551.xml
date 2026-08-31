@@ -8,11 +8,11 @@
 		<loader/>
 	</crew>
 	<supplySlots>3 1 1 6 6 6 7 8 8 8</supplySlots>
-	<postProgressionTree>role_LT_universal</postProgressionTree>
+	<postProgressionTree>role_LT_support</postProgressionTree>
 	<customRoleSlotOptions>2 4</customRoleSlotOptions>
 	<speedLimits>
 		<forward>65</forward>
-		<backward>25</backward>
+		<backward>30</backward>
 	</speedLimits>
 	<invisibility>
 		<moving>
@@ -138,7 +138,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>6250</weight>
-		<maxHealth>1480</maxHealth>
+		<maxHealth>1560</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>260</maxHealth>
 			<maxRegenHealth>180</maxRegenHealth>
@@ -2129,8 +2129,8 @@
 			<price>82500</price>
 			<notInShop>true</notInShop>
 			<armor>
-				<leftTrack>20</leftTrack>
-				<rightTrack>20</rightTrack>
+				<leftTrack>15</leftTrack>
+				<rightTrack>15</rightTrack>
 			</armor>
 			<weight>3500</weight>
 			<terrainResistance>
@@ -2139,14 +2139,14 @@
 			</terrainResistance>
 			<brakeForce>15000</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>55</rotationSpeed>
+			<rotationSpeed>57</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
-					0.12
+					0.1
 					<!--BW_String-->
 				</vehicleMovement>
 				<vehicleRotation>
-					0.12
+					0.1
 					<!--BW_String-->
 				</vehicleRotation>
 			</shotDispersionFactors>
@@ -4030,8 +4030,8 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>4000</weight>
-			<maxHealth>370</maxHealth>
-			<rotationSpeed>43</rotationSpeed>
+			<maxHealth>390</maxHealth>
+			<rotationSpeed>50</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>170</maxHealth>
 				<maxRegenHealth>85</maxRegenHealth>
@@ -4065,11 +4065,6 @@
 							<!--BW_String-->
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_1>
-						<armor_2>
-							19.1
-							<!--BW_String-->
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_2>
 						<armor_3>
 							19.1
 							<!--BW_String-->
@@ -4079,7 +4074,106 @@
 							0
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_4>
-						<gun>15</gun>
+						<armor_5>
+							12.7
+							<!--BW_String-->
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_5>
+						<armor_6>
+							31.8
+							<!--BW_String-->
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_6>
+						<armor_7>
+							50.8
+							<!--BW_String-->
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_7>
+						<armor_8>
+							0
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_8>
+						<armor_9>
+							31.8
+							<!--BW_String-->
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_9>
+						<armor_10>
+							38.1
+							<!--BW_String-->
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_10>
+						<armor_11>
+							50.8
+							<!--BW_String-->
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_11>
+						<armor_12>
+							6.4
+							<!--BW_String-->
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_12>
+						<armor_13>
+							12.7
+							<!--BW_String-->
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_13>
+						<armor_14>
+							19.1
+							<!--BW_String-->
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_14>
+						<armor_15>
+							38.1
+							<!--BW_String-->
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_15>
+						<armor_16>
+							25.4
+							<!--BW_String-->
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_16>
+						<armor_17>
+							38.1
+							<!--BW_String-->
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_17>
+						<armor_18>
+							6.4
+							<!--BW_String-->
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_18>
+						<armor_19>
+							50.8
+							<!--BW_String-->
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_19>
+						<armor_20>
+							19.1
+							<!--BW_String-->
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_20>
+						<armor_21>
+							12.7
+							<!--BW_String-->
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_21>
+						<armor_22>
+							38.1
+							<!--BW_String-->
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_22>
+						<armor_23>
+							38.1
+							<!--BW_String-->
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_23>
+						<armor_24>
+							19.1
+							<!--BW_String-->
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_24>
+						<gun>25</gun>
 					</armor>
 					<turretYawLimits>-180 180</turretYawLimits>
 					<pitchLimits>
@@ -4187,6 +4281,27 @@
 								<!--BW_String-->
 							</size>
 						</slot>
+						<slot>
+							<slotType>insigniaOnGun</slotType>
+							<slotId>49001</slotId>
+							<rayStart>
+								0.000001 -0.000041 1.85
+								<!--BW_String-->
+							</rayStart>
+							<rayEnd>
+								0.000001 -0.000041 2.28
+								<!--BW_String-->
+							</rayEnd>
+							<rayUp>
+								0.08 0 0
+								<!--BW_String-->
+							</rayUp>
+							<compatibleModels>A116_XM551_3DSt_MD_21_XXII</compatibleModels>
+							<size>
+								0.43
+								<!--BW_String-->
+							</size>
+						</slot>
 					</customizationSlots>
 					<customization>
 						<customizableVehicleAreas>
@@ -4194,6 +4309,7 @@
 							<camouflage>GUN</camouflage>
 						</customizableVehicleAreas>
 					</customization>
+					<edgeByVisualModel>false</edgeByVisualModel>
 					<camouflage>
 						<tiling>
 							1 0.5 0.000000 0.000000
@@ -4215,11 +4331,6 @@
 							<!--BW_String-->
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_1>
-						<armor_2>
-							19.1
-							<!--BW_String-->
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_2>
 						<armor_3>
 							19.1
 							<!--BW_String-->
@@ -4229,7 +4340,106 @@
 							0
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_4>
-						<gun>20</gun>
+						<armor_5>
+							12.7
+							<!--BW_String-->
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_5>
+						<armor_6>
+							31.8
+							<!--BW_String-->
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_6>
+						<armor_7>
+							50.8
+							<!--BW_String-->
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_7>
+						<armor_8>
+							0
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_8>
+						<armor_9>
+							31.8
+							<!--BW_String-->
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_9>
+						<armor_10>
+							38.1
+							<!--BW_String-->
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_10>
+						<armor_11>
+							50.8
+							<!--BW_String-->
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_11>
+						<armor_12>
+							6.4
+							<!--BW_String-->
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_12>
+						<armor_13>
+							12.7
+							<!--BW_String-->
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_13>
+						<armor_14>
+							19.1
+							<!--BW_String-->
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_14>
+						<armor_15>
+							38.1
+							<!--BW_String-->
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_15>
+						<armor_16>
+							25.4
+							<!--BW_String-->
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_16>
+						<armor_17>
+							38.1
+							<!--BW_String-->
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_17>
+						<armor_18>
+							6.4
+							<!--BW_String-->
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_18>
+						<armor_19>
+							50.8
+							<!--BW_String-->
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_19>
+						<armor_20>
+							19.1
+							<!--BW_String-->
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_20>
+						<armor_21>
+							12.7
+							<!--BW_String-->
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_21>
+						<armor_22>
+							38.1
+							<!--BW_String-->
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_22>
+						<armor_23>
+							38.1
+							<!--BW_String-->
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_23>
+						<armor_24>
+							19.1
+							<!--BW_String-->
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_24>
+						<gun>25</gun>
 					</armor>
 					<shotDispersionRadius>
 						0.48
@@ -4251,7 +4461,7 @@
 					<turretYawLimits>-180 180</turretYawLimits>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.2
+							0.17
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
@@ -4335,6 +4545,27 @@
 								<!--BW_String-->
 							</size>
 						</slot>
+						<slot>
+							<slotType>insigniaOnGun</slotType>
+							<slotId>49001</slotId>
+							<rayStart>
+								0 -0.000041 1.78
+								<!--BW_String-->
+							</rayStart>
+							<rayEnd>
+								0 -0.000041 2.21
+								<!--BW_String-->
+							</rayEnd>
+							<rayUp>
+								0.1 0 0
+								<!--BW_String-->
+							</rayUp>
+							<compatibleModels>A116_XM551_3DSt_MD_21_XXII</compatibleModels>
+							<size>
+								0.3
+								<!--BW_String-->
+							</size>
+						</slot>
 					</customizationSlots>
 					<customization>
 						<customizableVehicleAreas>
@@ -4342,6 +4573,7 @@
 							<camouflage>GUN</camouflage>
 						</customizableVehicleAreas>
 					</customization>
+					<edgeByVisualModel>false</edgeByVisualModel>
 					<camouflage>
 						<tiling>
 							1 0.5 0.000000 0.000000
@@ -4959,14 +5191,20 @@
 					<axleCount>5</axleCount>
 					<grounds>
 						<soft>
-							<rollingFriction>0.181125</rollingFriction>
+							<rollingFriction>
+								0.1449
+								<!--BW_String-->
+							</rollingFriction>
 						</soft>
 						<medium>
-							<rollingFriction>0.090562</rollingFriction>
+							<rollingFriction>
+								0.07245
+								<!--BW_String-->
+							</rollingFriction>
 						</medium>
 						<firm>
 							<rollingFriction>
-								0.0805
+								0.0644
 								<!--BW_String-->
 							</rollingFriction>
 						</firm>

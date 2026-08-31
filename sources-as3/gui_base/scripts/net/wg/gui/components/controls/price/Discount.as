@@ -41,7 +41,7 @@ package net.wg.gui.components.controls.price
       {
          var _loc1_:Boolean = false;
          super.draw();
-         if(isInvalid(InvalidationType.STATE,InvalidationType.DATA))
+         if(isInvalidTypes(InvalidationType.STATE,InvalidationType.DATA))
          {
             if(this._state != WITH_VALUE_STATE)
             {

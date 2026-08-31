@@ -556,7 +556,6 @@ class VehicleGunRotator(object):
                 return 0
             maxDiff = fmod(limits[0] - angle - dpi, dpi)
             return max(maxDiff, diff)
-            return
 
     def __getTurretYawWithSpeedLimit(self, angle, diff, limit):
         dpi = 2 * pi

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld
 from constants import AirdropType
 from debug_utils import LOG_DEBUG_DEV, LOG_ERROR

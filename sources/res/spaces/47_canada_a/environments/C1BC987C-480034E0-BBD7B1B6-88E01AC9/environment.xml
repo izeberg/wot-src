@@ -80,8 +80,9 @@
 		<enable>true</enable>
 		<adaptationSpeed>100.000000</adaptationSpeed>
 		<bloom>
+			<pbsBloom>true</pbsBloom>
 			<threshold>0.400000</threshold>
-			<amount>0.800000</amount>
+			<amount>0.880000</amount>
 			<dirtAmount>0.880000</dirtAmount>
 		</bloom>
 		<environment>
@@ -136,11 +137,11 @@
 		<sunBrightness>0.100000</sunBrightness>
 		<objectEnable>true</objectEnable>
 		<glareEnable>true</glareEnable>
-		<glareIntensity>0.800000</glareIntensity>
+		<glareIntensity>0.500000</glareIntensity>
 		<glareSize>0.010000</glareSize>
 		<flareIntensity>0.570000</flareIntensity>
-		<objectThreshold>3.169925</objectThreshold>
-		<objectFlareIntensity>0.620000</objectFlareIntensity>
+		<objectThreshold>3.584963</objectThreshold>
+		<objectFlareIntensity>0.300000</objectFlareIntensity>
 		<haloEnable>true</haloEnable>
 		<sunTexture1>system/maps/psf_rgbe.dds</sunTexture1>
 		<colorTexture>system/maps/lenscolorF.dds</colorTexture>
@@ -177,6 +178,10 @@
 		<amplify>0.700000</amplify>
 	</SSShadows>
 	<VFX>
+		<vfxModelsMultiplier>0.950000</vfxModelsMultiplier>
+		<cpuParticlesMultiplier>0.950000</cpuParticlesMultiplier>
+		<gpuParticlesMultiplier>0.950000</gpuParticlesMultiplier>
+		<emissiveMaterialsMultiplier>0.950000</emissiveMaterialsMultiplier>
 		<particlesConfigXml>system/data/particles.xml</particlesConfigXml>
 		<particlesSpaceConfigXml>spaces/47_canada_a/particles.xml</particlesSpaceConfigXml>
 	</VFX>

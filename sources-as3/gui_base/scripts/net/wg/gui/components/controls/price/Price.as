@@ -154,7 +154,7 @@ package net.wg.gui.components.controls.price
          {
             return;
          }
-         if(isInvalid(InvalidationType.DATA,InvalidationType.STATE))
+         if(isInvalidTypes(InvalidationType.DATA,InvalidationType.STATE))
          {
             if(this._actionMode != ACTION_MODE_DISABLED && this._actionData)
             {

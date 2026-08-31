@@ -4151,7 +4151,6 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>2</aimingTime>
-					<multiGunEffects>shot_dualgun1_main_mb_L shot_dualgun1_main_mb_R</multiGunEffects>
 					<dualGun>
 						<chargeTime>2</chargeTime>
 						<shootImpulse>200</shootImpulse>
@@ -4174,6 +4173,9 @@
 							<!--BW_String-->
 						</preChargeIndication>
 					</dualGun>
+					<prefabs>
+						<main>content/CGFPrefabs/Vehicle/guns/usa/gun_94mm_British_dualgun.prefab</main>
+					</prefabs>
 					<models>
 						<undamaged>vehicles/american/A145_TS_54/normal/lod0/Gun_01.model</undamaged>
 						<destroyed>vehicles/american/A145_TS_54/crash/lod0/Gun_01.model</destroyed>
@@ -4275,6 +4277,7 @@
 							<camouflage>GUN</camouflage>
 						</customizableVehicleAreas>
 					</customization>
+					<muzzleBrake>HORIZONTAL</muzzleBrake>
 					<camouflage>
 						<density>
 							94.6164 100.364

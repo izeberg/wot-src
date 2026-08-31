@@ -44,7 +44,7 @@ package net.wg.gui.lobby.components
       override protected function draw() : void
       {
          super.draw();
-         if(isInvalid(InvalidationType.LAYOUT,InvalidationType.SIZE))
+         if(isInvalidTypes(InvalidationType.LAYOUT,InvalidationType.SIZE))
          {
             this.updateLayout();
          }
@@ -151,9 +151,10 @@ package net.wg.gui.lobby.components
       private function updateLayout() : void
       {
          var _loc1_:int = 0;
+         var _loc2_:int = 0;
          var _loc3_:int = 0;
          _loc1_ = this.browserWidth;
-         var _loc2_:int = this.browserHeight;
+         _loc2_ = this.browserHeight;
          if(!this._isSizeInited && isDAAPIInited && _loc1_ > 0 && _loc2_ > 0)
          {
             if(this._isApplyPadding)

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld, CGF
 from typing import List
 from cgf_script.registration import ComponentProperty, registerComponent

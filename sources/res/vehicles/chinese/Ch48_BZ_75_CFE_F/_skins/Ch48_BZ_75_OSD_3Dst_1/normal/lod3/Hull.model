@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/chinese/Ch48_BZ_75_CFE_F/_skins/Ch48_BZ_75_OSD_3Dst_1/normal/lod3/Hull</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/chinese/Ch48_BZ_75_CFE_F/_skins/Ch48_BZ_75_OSD_3Dst_1/normal/lod4/Hull</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.796173 -0.504426 -3.560442</min>
+		<max>1.807108 0.739079 3.903677</max>
+	</visibilityBox>
+</root>

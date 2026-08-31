@@ -17,6 +17,8 @@ package net.wg.data.constants.generated
       
       public static const POI_TYPE_RECON:String = "recon";
       
+      public static const POI_TYPE_ILLUMINATION_FLARE:String = "illumination_flare";
+      
       public static const POI_TYPE_ARTY:String = "artillery";
       
       public static const COLOR_RED:String = "red";

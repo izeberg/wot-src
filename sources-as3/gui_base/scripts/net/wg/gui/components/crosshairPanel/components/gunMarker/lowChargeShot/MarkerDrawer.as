@@ -78,6 +78,12 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker.lowChargeShot
       
       private var _isDisposed:Boolean = false;
       
+      private var _gradientMatrix:Matrix;
+      
+      private var _gradientAlphas:Array;
+      
+      private var _gradientColors:Array = null;
+      
       private var _zoomFactor:Number = 1.0;
       
       private var _lowChargeCap:Number = 0;
@@ -95,9 +101,13 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker.lowChargeShot
       public function MarkerDrawer(param1:Shape, param2:Shape)
       {
          this._colors = new ColorsProvider();
+         this._gradientMatrix = new Matrix();
+         this._gradientAlphas = [0,0,0,0];
          super();
          this._commonLayer = param1;
          this._blendedLayer = param2;
+         var _loc3_:uint = this._colors.glowColor;
+         this._gradientColors = [_loc3_,_loc3_,_loc3_,_loc3_];
          this._colors.addEventListener(Event.RENDER,this.onColorsRenderHandler);
       }
       
@@ -278,27 +288,23 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker.lowChargeShot
       
       private function drawArcGradient(param1:Shape, param2:Number, param3:Number, param4:Number, param5:Number, param6:Number) : void
       {
-         var shape:Shape = param1;
-         var thicknessRatio:Number = param2;
-         var fromPercent:Number = param3;
-         var toPercent:Number = param4;
-         var alpha:Number = param5;
-         var radius:Number = param6;
-         var multiplyAlpha:Function = function(param1:Number):Number
+         var _loc7_:Number = param6 * param2;
+         param6 += _loc7_ >> 1;
+         var _loc8_:Number = param3 * PI_X2;
+         var _loc9_:Number = param4 * PI_X2;
+         var _loc10_:Number = -(_loc9_ - _loc8_);
+         var _loc11_:Number = param6 << 1;
+         this._gradientMatrix.createGradientBox(_loc11_,_loc11_,0,-param6,-param6);
+         var _loc12_:int = GRADIENT_ALPHAS.length;
+         var _loc13_:int = 0;
+         while(_loc13_ < _loc12_)
          {
-            return param1 * alpha;
-         };
-         var thickness:Number = radius * thicknessRatio;
-         radius += thickness >> 1;
-         var startAngle:Number = fromPercent * PI_X2;
-         var endAngle:Number = toPercent * PI_X2;
-         var arc:Number = -(endAngle - startAngle);
-         var m:Matrix = new Matrix();
-         var boxSize:Number = radius << 1;
-         m.createGradientBox(boxSize,boxSize,0,-radius,-radius);
-         shape.graphics.lineStyle(thickness,0,1,false,LINE_SCALE_NORMAL,LINE_NO_CAPS);
-         shape.graphics.lineGradientStyle(GradientType.RADIAL,[this._colors.glowColor,this._colors.glowColor,this._colors.glowColor,this._colors.glowColor],GRADIENT_ALPHAS.map(multiplyAlpha),GRADIENT_RATIOS,m,SpreadMethod.PAD);
-         GraphicsUtilities.drawArc(shape.graphics,0,0,-startAngle - PI_X2,arc,radius);
+            this._gradientAlphas[_loc13_] = GRADIENT_ALPHAS[_loc13_] * param5;
+            _loc13_++;
+         }
+         param1.graphics.lineStyle(_loc7_,0,1,false,LINE_SCALE_NORMAL,LINE_NO_CAPS);
+         param1.graphics.lineGradientStyle(GradientType.RADIAL,this._gradientColors,this._gradientAlphas,GRADIENT_RATIOS,this._gradientMatrix,SpreadMethod.PAD);
+         GraphicsUtilities.drawArc(param1.graphics,0,0,-_loc8_ - PI_X2,_loc10_,param6);
       }
       
       public function get zoomFactor() : Number
@@ -363,7 +369,7 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker.lowChargeShot
       
       private function get shotGap() : Number
       {
-         var _loc1_:Number = 0;
+         var _loc1_:Number = NaN;
          if(this._zoomFactor <= ZOOM_X4)
          {
             _loc1_ = SHOT_GAP_X4;

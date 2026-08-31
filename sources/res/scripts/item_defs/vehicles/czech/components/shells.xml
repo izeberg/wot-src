@@ -361,6 +361,7 @@
 				<minShotsCount>6</minShotsCount>
 			</effect>
 		</dynamicEffects>
+		<prefabEffects>ArmorPiercingHitAuto</prefabEffects>
 		<damage>
 			<armor>5</armor>
 			<devices>2</devices>
@@ -396,6 +397,7 @@
 				<minShotsCount>6</minShotsCount>
 			</effect>
 		</dynamicEffects>
+		<prefabEffects>ArmorPiercingCRHitAuto</prefabEffects>
 		<damage>
 			<armor>4</armor>
 			<devices>2</devices>
@@ -436,6 +438,7 @@
 				<minShotsCount>6</minShotsCount>
 			</effect>
 		</dynamicEffects>
+		<prefabEffects>HighExplosiveHitAuto</prefabEffects>
 		<damage>
 			<armor>9</armor>
 			<devices>4</devices>
@@ -476,6 +479,7 @@
 				<minShotsCount>6</minShotsCount>
 			</effect>
 		</dynamicEffects>
+		<prefabEffects>ArmorPiercingHitAuto</prefabEffects>
 		<damage>
 			<armor>9</armor>
 			<devices>4</devices>
@@ -511,6 +515,7 @@
 				<minShotsCount>6</minShotsCount>
 			</effect>
 		</dynamicEffects>
+		<prefabEffects>ArmorPiercingCRHitAuto</prefabEffects>
 		<damage>
 			<armor>6</armor>
 			<devices>3</devices>
@@ -536,6 +541,7 @@
 		</explosionRadius>
 		<isTracer>true</isTracer>
 		<effects>smallHighExplosive1</effects>
+		<prefabEffects>HighExplosiveHitAuto</prefabEffects>
 		<dynamicEffects>
 			<effect>
 				<name>smallHighExplosive1</name>
@@ -780,6 +786,7 @@
 				<minShotsCount>6</minShotsCount>
 			</effect>
 		</dynamicEffects>
+		<prefabEffects>ArmorPiercingHitAuto</prefabEffects>
 		<damage>
 			<armor>8</armor>
 			<devices>4</devices>
@@ -815,6 +822,7 @@
 				<minShotsCount>6</minShotsCount>
 			</effect>
 		</dynamicEffects>
+		<prefabEffects>ArmorPiercingCRHitAuto</prefabEffects>
 		<damage>
 			<armor>6</armor>
 			<devices>3</devices>
@@ -855,6 +863,7 @@
 				<minShotsCount>6</minShotsCount>
 			</effect>
 		</dynamicEffects>
+		<prefabEffects>HighExplosiveHitAuto</prefabEffects>
 		<damage>
 			<armor>16</armor>
 			<devices>8</devices>
@@ -895,6 +904,7 @@
 				<minShotsCount>6</minShotsCount>
 			</effect>
 		</dynamicEffects>
+		<prefabEffects>ArmorPiercingHitAuto</prefabEffects>
 		<damage>
 			<armor>11</armor>
 			<devices>5</devices>
@@ -930,6 +940,7 @@
 				<minShotsCount>6</minShotsCount>
 			</effect>
 		</dynamicEffects>
+		<prefabEffects>ArmorPiercingCRHitAuto</prefabEffects>
 		<damage>
 			<armor>9</armor>
 			<devices>4</devices>
@@ -970,6 +981,7 @@
 				<minShotsCount>6</minShotsCount>
 			</effect>
 		</dynamicEffects>
+		<prefabEffects>HighExplosiveHitAuto</prefabEffects>
 		<damage>
 			<armor>18</armor>
 			<devices>9</devices>
@@ -1010,6 +1022,7 @@
 				<minShotsCount>6</minShotsCount>
 			</effect>
 		</dynamicEffects>
+		<prefabEffects>ArmorPiercingHitAuto</prefabEffects>
 		<damage>
 			<armor>16</armor>
 			<devices>8</devices>
@@ -1045,6 +1058,7 @@
 				<minShotsCount>6</minShotsCount>
 			</effect>
 		</dynamicEffects>
+		<prefabEffects>ArmorPiercingCRHitAuto</prefabEffects>
 		<damage>
 			<armor>13</armor>
 			<devices>6</devices>
@@ -1082,6 +1096,7 @@
 				<minShotsCount>6</minShotsCount>
 			</effect>
 		</dynamicEffects>
+		<prefabEffects>HighExplosiveHitAuto</prefabEffects>
 		<damage>
 			<armor>28</armor>
 			<devices>14</devices>
@@ -1122,6 +1137,7 @@
 				<minShotsCount>6</minShotsCount>
 			</effect>
 		</dynamicEffects>
+		<prefabEffects>ArmorPiercingHitAuto</prefabEffects>
 		<damage>
 			<armor>16</armor>
 			<devices>8</devices>
@@ -1157,6 +1173,7 @@
 				<minShotsCount>6</minShotsCount>
 			</effect>
 		</dynamicEffects>
+		<prefabEffects>ArmorPiercingCRHitAuto</prefabEffects>
 		<damage>
 			<armor>13</armor>
 			<devices>6</devices>
@@ -1194,6 +1211,7 @@
 				<minShotsCount>6</minShotsCount>
 			</effect>
 		</dynamicEffects>
+		<prefabEffects>HighExplosiveHitAuto</prefabEffects>
 		<damage>
 			<armor>28</armor>
 			<devices>14</devices>
@@ -1220,7 +1238,7 @@
 		<isTracer>true</isTracer>
 		<effects>mediumArmorPiercing</effects>
 		<damage>
-			<armor>80</armor>
+			<armor>100</armor>
 			<devices>89</devices>
 		</damage>
 		<normalizationAngle>5</normalizationAngle>
@@ -1237,7 +1255,7 @@
 		<isTracer>true</isTracer>
 		<effects>mediumAPCR</effects>
 		<damage>
-			<armor>80</armor>
+			<armor>100</armor>
 			<devices>89</devices>
 		</damage>
 		<normalizationAngle>2</normalizationAngle>
@@ -1283,7 +1301,7 @@
 		<isTracer>true</isTracer>
 		<effects>mediumArmorPiercing</effects>
 		<damage>
-			<armor>100</armor>
+			<armor>115</armor>
 			<devices>100</devices>
 		</damage>
 		<normalizationAngle>5</normalizationAngle>
@@ -1300,7 +1318,7 @@
 		<isTracer>true</isTracer>
 		<effects>mediumAPCR</effects>
 		<damage>
-			<armor>100</armor>
+			<armor>115</armor>
 			<devices>100</devices>
 		</damage>
 		<normalizationAngle>2</normalizationAngle>
@@ -3823,6 +3841,69 @@
 			</damage>
 		</armorSpalls>
 	</_130mm_Narazovy_vz_51_54>
+	<_130mm_Prurazny_vz_63_NZ>
+		<id>149</id>
+		<userString>#czech_vehicles:_130mm_Prurazny_vz_63_NZ</userString>
+		<icon>ap</icon>
+		<price>1569</price>
+		<kind>ARMOR_PIERCING</kind>
+		<caliber>130</caliber>
+		<isTracer>true</isTracer>
+		<effects>largeArmorPiercing</effects>
+		<damage>
+			<armor>510</armor>
+			<devices>180</devices>
+		</damage>
+		<normalizationAngle>5</normalizationAngle>
+		<ricochetAngle>70</ricochetAngle>
+	</_130mm_Prurazny_vz_63_NZ>
+	<_130mm_Prurazny_vz_63_s_jadrem_NZ>
+		<id>150</id>
+		<userString>#czech_vehicles:_130mm_Prurazny_vz_63_s_jadrem_NZ</userString>
+		<icon>ap_cr_premium</icon>
+		<price>6000</price>
+		<improved>true</improved>
+		<kind>ARMOR_PIERCING_CR</kind>
+		<caliber>130</caliber>
+		<isTracer>true</isTracer>
+		<effects>largeAPCR</effects>
+		<damage>
+			<armor>510</armor>
+			<devices>180</devices>
+		</damage>
+		<normalizationAngle>2</normalizationAngle>
+		<ricochetAngle>70</ricochetAngle>
+	</_130mm_Prurazny_vz_63_s_jadrem_NZ>
+	<_130mm_Narazovy_vz_63_NZ>
+		<id>151</id>
+		<userString>#czech_vehicles:_130mm_Narazovy_vz_63_NZ</userString>
+		<icon>he_modern</icon>
+		<price>1095</price>
+		<kind>HIGH_EXPLOSIVE</kind>
+		<mechanics>MODERN</mechanics>
+		<caliber>130</caliber>
+		<explosionRadius>
+			2.78
+			<!--BW_String-->
+		</explosionRadius>
+		<isTracer>true</isTracer>
+		<effects>largeHighExplosive</effects>
+		<damage>
+			<armor>650</armor>
+			<devices>180</devices>
+		</damage>
+		<armorSpalls>
+			<impactRadius>
+				2.78
+				<!--BW_String-->
+			</impactRadius>
+			<coneAngle>90</coneAngle>
+			<damage>
+				<armor>325</armor>
+				<devices>90</devices>
+			</damage>
+		</armorSpalls>
+	</_130mm_Narazovy_vz_63_NZ>
 	<_152mm_Prurazny_vz_20SM>
 		<id>116</id>
 		<userString>#czech_vehicles:_152mm_Prurazny_vz_20SM</userString>

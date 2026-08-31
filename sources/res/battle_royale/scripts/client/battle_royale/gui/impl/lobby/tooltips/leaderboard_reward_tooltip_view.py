@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from battle_royale.gui.impl.gen.view_models.views.lobby.tooltips.leaderboard_reward_tooltip_model import LeaderboardRewardTooltipModel
 from battle_royale.gui.shared.tooltips.helper import fillProgressionPointsTableModel
 from frameworks.wulf import ViewSettings

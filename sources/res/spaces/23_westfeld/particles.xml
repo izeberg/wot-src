@@ -3,12 +3,28 @@
 	<forward>
 		<name>default</name>
 		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/Spark.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/Spark.dds</texture>
+		</preload>
+		<preload>
 			<shader>\data\shaders\ps_solid.fx</shader>
 			<texture>particles/content_forward/PFX_textures/eff_tex.dds</texture>
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps_water.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_tex_water.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_water.fx</shader>
 			<texture>particles/content_forward/PFX_textures/eff_tex.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_water.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_dirt.dds</texture>
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps.fx</shader>
@@ -24,6 +40,14 @@
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_dirt.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_dirt.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
 			<texture>particles/content_forward/PFX_textures/eff_tex.dds</texture>
 		</preload>
 		<preload>
@@ -41,6 +65,46 @@
 		<preload>
 			<shader>\data\shaders\ps_long.fx</shader>
 			<texture>particles/content_forward/PFX_textures/eff_rocket_accelerator.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_customization.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_customization.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_customization_2.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_customization_2.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_customization_main.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_customization_main.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/cus_14_sparks.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/cus_14_sparks.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/electric_engine.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_fireworks.dds</texture>
 		</preload>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/hd_bld_EU_249_Shed.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/hd_bld_UNI_006_KitCrashFactory_Roof_03.vfx</fn_effect_bin>
@@ -138,7 +202,6 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_rw007_Tupik.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_shells_detonation_medium.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_town_bench_des.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/smoke_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Trees/Broadleaves/inf_tree_bush_dry_fall.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Trees/Broadleaves/inf_tree_bush_dry_fall_big.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Trees/Broadleaves/inf_tree_bush_dry_fall_small.vfx</fn_effect_bin>
@@ -178,9 +241,9 @@
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_05.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/19_monastery_smoke_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/23_westfeld_petals.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/23_westfeld_sheeps_01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/23_westfeld_smoke_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env007_SnagHeap3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env_AM_055_DryRoots_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env_AM_055_DryRoots_2.eff</fn_effect_bin>
@@ -364,6 +427,10 @@
 			<texture>particles/content_deferred/PFX_textures/eff_tex_distortion.dds</texture>
 		</preload>
 		<preload>
+			<shader>\data\shaders\ps_shimmer.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization_main.dds</texture>
+		</preload>
+		<preload>
 			<shader>\data\shaders\ps.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/eff_rocket_accelerator.dds</texture>
 		</preload>
@@ -371,6 +438,75 @@
 			<shader>\data\shaders\ps_long.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/eff_rocket_accelerator.dds</texture>
 		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization_2.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization_2.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/Spark.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_water.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_dirt.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_dirt.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_dirt.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization_main.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization_main.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/cus_14_sparks.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/cus_14_sparks.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/FireTrunkAtlasLong_03.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/electric_engine.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_fireworks.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_fireworks.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_tex_h34.dds</texture>
+		</preload>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/23_westfeld_smoke_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/hd_bld_EU_249_Shed.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/hd_bld_UNI_006_KitCrashFactory_Roof_03.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/hd_bld_UNI_712_LittleWoodShed.vfx</fn_effect_bin>
@@ -468,7 +604,6 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_rw007_Tupik.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_shells_detonation_medium.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_town_bench_des.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/smoke_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Trees/Broadleaves/inf_tree_bush_dry_fall.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Trees/Broadleaves/inf_tree_bush_dry_fall_big.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Trees/Broadleaves/inf_tree_bush_dry_fall_small.vfx</fn_effect_bin>
@@ -508,9 +643,9 @@
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_05.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/19_monastery_smoke_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/23_westfeld_petals.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/23_westfeld_sheeps_01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/23_westfeld_smoke_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env007_SnagHeap3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env_AM_055_DryRoots_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env_AM_055_DryRoots_2.eff</fn_effect_bin>

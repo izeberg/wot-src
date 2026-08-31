@@ -5558,6 +5558,7 @@
 						</customizableVehicleAreas>
 					</customization>
 					<shotOffset>-0.020917 0.062003 0.000000</shotOffset>
+					<muzzleBrake>RADIAL</muzzleBrake>
 					<camouflage>
 						<density>0.000000 0.000000</density>
 						<aoTextureSize>0.000000 0.000000</aoTextureSize>
@@ -5734,6 +5735,7 @@
 					</customization>
 					<shotOffset>-0.018701 0.066774 -0.000000</shotOffset>
 					<effects>shot_main_mb</effects>
+					<muzzleBrake>HORIZONTAL</muzzleBrake>
 					<camouflage>
 						<density>0.000000 0.000000</density>
 						<aoTextureSize>0.000000 0.000000</aoTextureSize>
@@ -5988,6 +5990,7 @@
 						</customizableVehicleAreas>
 					</customization>
 					<shotOffset>0.038156 0.021462 0.000000</shotOffset>
+					<muzzleBrake>RADIAL</muzzleBrake>
 					<camouflage>
 						<density>0.000000 0.000000</density>
 						<aoTextureSize>0.000000 0.000000</aoTextureSize>
@@ -6118,6 +6121,7 @@
 					</customization>
 					<shotOffset>0.038784 0.023848 -0.000000</shotOffset>
 					<effects>shot_main_mb</effects>
+					<muzzleBrake>HORIZONTAL</muzzleBrake>
 					<camouflage>
 						<density>0.000000 0.000000</density>
 						<aoTextureSize>0.000000 0.000000</aoTextureSize>
@@ -6236,6 +6240,7 @@
 						</customizableVehicleAreas>
 					</customization>
 					<shotOffset>0.032229 0.026234 -0.000000</shotOffset>
+					<muzzleBrake>HORIZONTAL</muzzleBrake>
 					<camouflage>
 						<density>0.000000 0.000000</density>
 						<aoTextureSize>0.000000 0.000000</aoTextureSize>
@@ -6368,6 +6373,7 @@
 						</customizableVehicleAreas>
 					</customization>
 					<shotOffset>0.038379 0.023848 0.000000</shotOffset>
+					<muzzleBrake>RADIAL</muzzleBrake>
 					<camouflage>
 						<density>0.000000 0.000000</density>
 						<aoTextureSize>0.000000 0.000000</aoTextureSize>
@@ -6630,6 +6636,7 @@
 						</customizableVehicleAreas>
 					</customization>
 					<shotOffset>-0.000000 -0.028616 0.000000</shotOffset>
+					<muzzleBrake>RADIAL</muzzleBrake>
 					<camouflage>
 						<density>0.000000 0.000000</density>
 						<aoTextureSize>0.000000 0.000000</aoTextureSize>
@@ -6760,6 +6767,7 @@
 					</customization>
 					<shotOffset>-0.001073 -0.025005 -0.000000</shotOffset>
 					<effects>shot_main_mb</effects>
+					<muzzleBrake>HORIZONTAL</muzzleBrake>
 					<camouflage>
 						<density>0.000000 0.000000</density>
 						<aoTextureSize>0.000000 0.000000</aoTextureSize>
@@ -6879,6 +6887,7 @@
 					</customization>
 					<shotOffset>-0.000000 -0.026231 0.000000</shotOffset>
 					<effects>shot_mainext_mb</effects>
+					<muzzleBrake>HORIZONTAL</muzzleBrake>
 					<camouflage>
 						<density>0.000000 0.000000</density>
 						<aoTextureSize>0.000000 0.000000</aoTextureSize>
@@ -6994,6 +7003,7 @@
 						</customizableVehicleAreas>
 					</customization>
 					<shotOffset>-0.003403 -0.022622 -0.000000</shotOffset>
+					<muzzleBrake>HORIZONTAL</muzzleBrake>
 					<camouflage>
 						<density>0.000000 0.000000</density>
 						<aoTextureSize>0.000000 0.000000</aoTextureSize>

@@ -1,4 +1,6 @@
-import logging, plugins
+from __future__ import absolute_import
+import logging
+from battle_royale.gui.Scaleform.daapi.view.battle.minimap import plugins
 from gui.Scaleform.daapi.view.battle.epic.minimap import EpicMinimapComponent
 _logger = logging.getLogger(__name__)
 

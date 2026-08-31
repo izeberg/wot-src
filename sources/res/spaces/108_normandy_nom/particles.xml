@@ -55,6 +55,10 @@
 			<texture>particles/content_deferred/PFX_textures/eff_tex_distortion.dds</texture>
 		</preload>
 		<preload>
+			<shader>\data\shaders\ps_shimmer.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization_main.dds</texture>
+		</preload>
+		<preload>
 			<shader>\data\shaders\ps.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/eff_tex.dds</texture>
 		</preload>
@@ -73,6 +77,66 @@
 		<preload>
 			<shader>\data\shaders\ps_long.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/eff_tex_long.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_rocket_accelerator.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_rocket_accelerator.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization_2.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization_2.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization_main.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization_main.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/cus_14_sparks.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/cus_14_sparks.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/FireTrunkAtlasLong_03.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/electric_engine.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_fireworks.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_fireworks.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_tex_h34.dds</texture>
 		</preload>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Onboarding/108_normandy_84house_facade_desctruction.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Onboarding/108_normandy_84house_facade_desctruction_02.vfx</fn_effect_bin>
@@ -136,9 +200,9 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_mle002_KPP_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/CameraEffects/city_ash_slow.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/CameraEffects/fire_sparks.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/108_normandy_nom_smoke_thin.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/121_lost_paradise_horizont_flash.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/14_siegfried_line_smoke.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/14_siegfried_line_smoke_thin.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/250_br_battle_sparks.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/99_poland_smoke_FireGrass_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/99_poland_smoke_small.vfx</fn_effect_bin>
@@ -252,9 +316,9 @@
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_101_03_Vhouse03_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_mle002_KPP_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_mle002_KPP_02.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/108_normandy_nom_smoke_thin.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/121_lost_paradise_horizont_flash.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/14_siegfried_line_smoke.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/14_siegfried_line_smoke_thin.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/250_br_battle_sparks.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/99_poland_smoke_firegrass_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/99_poland_smoke_small.eff</fn_effect_bin>
@@ -386,8 +450,16 @@
 	<forward>
 		<name>default</name>
 		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_tex_108_normandy.dds</texture>
+		</preload>
+		<preload>
 			<shader>\data\shaders\ps_solid.fx</shader>
 			<texture>particles/content_forward/PFX_textures/eff_tex.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_water.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_tex_water.dds</texture>
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps_water.fx</shader>
@@ -402,8 +474,24 @@
 			<texture>particles/content_forward/PFX_textures/eff_leaves.dds</texture>
 		</preload>
 		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_tex.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_tex_long.dds</texture>
+		</preload>
+		<preload>
 			<shader>\data\shaders\ps.fx</shader>
 			<texture>particles/content_forward/PFX_textures/eff_dirt.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_dirt.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_tex.dds</texture>
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps_long.fx</shader>
@@ -414,24 +502,52 @@
 			<texture>particles/content_forward/PFX_textures/tracers.dds</texture>
 		</preload>
 		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_rocket_accelerator.dds</texture>
+		</preload>
+		<preload>
 			<shader>\data\shaders\ps_long.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_tex.dds</texture>
+			<texture>particles/content_forward/PFX_textures/eff_rocket_accelerator.dds</texture>
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_tex.dds</texture>
+			<texture>particles/content_forward/PFX_textures/eff_customization.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_customization.dds</texture>
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_tex_108_normandy.dds</texture>
+			<texture>particles/content_forward/PFX_textures/eff_customization_2.dds</texture>
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps_long.fx</shader>
-			<texture>particles/content_forward/PFX_textures/tracers.dds</texture>
+			<texture>particles/content_forward/PFX_textures/eff_customization_2.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_customization_main.dds</texture>
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps_long.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_tex_long.dds</texture>
+			<texture>particles/content_forward/PFX_textures/eff_customization_main.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/cus_14_sparks.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/cus_14_sparks.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/electric_engine.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_fireworks.dds</texture>
 		</preload>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Onboarding/108_normandy_84house_facade_desctruction.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Onboarding/108_normandy_84house_facade_desctruction_02.vfx</fn_effect_bin>
@@ -502,7 +618,6 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_mle002_KPP_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_mle002_KPP_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/14_siegfried_line_smoke.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/14_siegfried_line_smoke_thin.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/250_br_battle_sparks.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/99_poland_smoke_FireGrass_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/99_poland_smoke_small.vfx</fn_effect_bin>
@@ -614,9 +729,9 @@
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_101_03_Vhouse03_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_mle002_KPP_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_mle002_KPP_02.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/108_normandy_nom_smoke_thin.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/121_lost_paradise_horizont_flash.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/14_siegfried_line_smoke.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/14_siegfried_line_smoke_thin.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/250_br_battle_sparks.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/99_poland_smoke_firegrass_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/99_poland_smoke_small.eff</fn_effect_bin>

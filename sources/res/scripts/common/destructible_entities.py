@@ -114,8 +114,7 @@ def determineDestructibleEntityTypeID(validVehicleLevels, defaultTypeID):
      8, 9}
     if set(validVehicleLevels) == validVehicleLevelsType3:
         return 3
-    else:
-        return defaultTypeID
+    return defaultTypeID
 
 
 def _readType(xmlCtx, section):

@@ -24,6 +24,10 @@
 					<materialKind>0</materialKind>
 					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
 					<property>
+						g_enableEnvMultiplier
+						<Bool>true</Bool>
+					</property>
+					<property>
 						TintlColor
 						<Vector4>1.000000 0.352941 0.000000 0.270000</Vector4>
 					</property>
@@ -37,7 +41,7 @@
 					</property>
 					<property>
 						lightMultipliers
-						<Vector4>10.000000 0.000000 0.000000 0.000000</Vector4>
+						<Vector4>57.142857 0.000000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						alphaFadeAmountFresnel
@@ -78,6 +82,10 @@
 					<materialKind>0</materialKind>
 					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
 					<property>
+						g_enableEnvMultiplier
+						<Bool>true</Bool>
+					</property>
+					<property>
 						diffuseUVSpeedAlphaOffset
 						<Vector4>0.050000 0.180000 0.700000 0.000000</Vector4>
 					</property>
@@ -87,7 +95,10 @@
 					</property>
 					<property>
 						lightMultipliers
-						<Vector4>60.000000 0.000000 0.000000 0.000000</Vector4>
+						<Vector4>
+							342.857143 0.000000 0.000000 0.000000
+							<!--BW_String-->
+						</Vector4>
 					</property>
 					<property>
 						alphaFadeAmountFresnel
@@ -128,6 +139,10 @@
 					<materialKind>0</materialKind>
 					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
 					<property>
+						g_enableEnvMultiplier
+						<Bool>true</Bool>
+					</property>
+					<property>
 						diffuseUVSpeedAlphaOffset
 						<Vector4>0.040000 0.100000 0.000000 0.000000</Vector4>
 					</property>
@@ -137,7 +152,10 @@
 					</property>
 					<property>
 						lightMultipliers
-						<Vector4>20.000000 0.000000 0.000000 0.000000</Vector4>
+						<Vector4>
+							114.285714 0.000000 0.000000 0.000000
+							<!--BW_String-->
+						</Vector4>
 					</property>
 					<property>
 						FreshnelColor
@@ -190,6 +208,10 @@
 					<materialKind>0</materialKind>
 					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
 					<property>
+						g_enableEnvMultiplier
+						<Bool>true</Bool>
+					</property>
+					<property>
 						diffuseUVSpeedAlphaOffset
 						<Vector4>0.050000 0.165000 0.600000 0.000000</Vector4>
 					</property>
@@ -199,7 +221,10 @@
 					</property>
 					<property>
 						lightMultipliers
-						<Vector4>10.002000 0.000000 0.000000 0.000000</Vector4>
+						<Vector4>
+							57.154286 0.000000 0.000000 0.000000
+							<!--BW_String-->
+						</Vector4>
 					</property>
 					<property>
 						FreshnelColor

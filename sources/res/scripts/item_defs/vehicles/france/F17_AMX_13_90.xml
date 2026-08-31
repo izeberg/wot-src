@@ -97,13 +97,12 @@
 			<armor_6>10</armor_6>
 			<armor_7>30</armor_7>
 			<armor_8>0</armor_8>
-			<armor_9>25</armor_9>
 			<armor_10>50</armor_10>
 			<armor_11>40</armor_11>
 		</armor>
 		<primaryArmor>armor_10 armor_3 armor_4</primaryArmor>
 		<weight>7475</weight>
-		<maxHealth>1120</maxHealth>
+		<maxHealth>1200</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>200</maxHealth>
 			<maxRegenHealth>135</maxRegenHealth>
@@ -2171,8 +2170,8 @@
 				</chassis>
 			</unlocks>
 			<armor>
-				<leftTrack>20</leftTrack>
-				<rightTrack>20</rightTrack>
+				<leftTrack>10</leftTrack>
+				<rightTrack>10</rightTrack>
 			</armor>
 			<weight>1400</weight>
 			<terrainResistance>
@@ -2181,7 +2180,7 @@
 			</terrainResistance>
 			<brakeForce>35500</brakeForce>
 			<rotationIsAroundCenter>false</rotationIsAroundCenter>
-			<rotationSpeed>38</rotationSpeed>
+			<rotationSpeed>36</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.13
@@ -4183,8 +4182,8 @@
 			<level>9</level>
 			<price>52000</price>
 			<armor>
-				<leftTrack>20</leftTrack>
-				<rightTrack>20</rightTrack>
+				<leftTrack>10</leftTrack>
+				<rightTrack>10</rightTrack>
 			</armor>
 			<weight>1400</weight>
 			<terrainResistance>
@@ -4193,7 +4192,7 @@
 			</terrainResistance>
 			<brakeForce>35500</brakeForce>
 			<rotationIsAroundCenter>false</rotationIsAroundCenter>
-			<rotationSpeed>40</rotationSpeed>
+			<rotationSpeed>38</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.12
@@ -6199,7 +6198,6 @@
 			<notInShop>true</notInShop>
 			<armor>
 				<armor_1>30</armor_1>
-				<armor_2>20</armor_2>
 				<armor_3>20</armor_3>
 				<armor_4>20</armor_4>
 				<armor_5>10</armor_5>
@@ -6210,7 +6208,7 @@
 			</armor>
 			<primaryArmor>armor_9 armor_3 armor_4</primaryArmor>
 			<weight>2670</weight>
-			<maxHealth>280</maxHealth>
+			<maxHealth>300</maxHealth>
 			<rotationSpeed>46</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>150</maxHealth>
@@ -6258,7 +6256,7 @@
 						<armor_9>40</armor_9>
 						<gun>20</gun>
 					</armor>
-					<reloadTime>16</reloadTime>
+					<reloadTime>17</reloadTime>
 					<invisibilityFactorAtShot>
 						0.234
 						<!--BW_String-->
@@ -6269,7 +6267,7 @@
 					</clip>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.12
+							0.1
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>3</afterShot>
@@ -6279,7 +6277,7 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<shotDispersionRadius>
-						0.36
+						0.37
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<aimingTime>2</aimingTime>
@@ -7257,6 +7255,7 @@
 						</customizableVehicleAreas>
 					</customization>
 					<edgeByVisualModel>false</edgeByVisualModel>
+					<muzzleBrake>HORIZONTAL</muzzleBrake>
 					<camouflage>
 						<tiling>
 							1.78 1.78 0.000000 0.000000
@@ -7295,7 +7294,7 @@
 						<armor_7>40</armor_7>
 						<armor_8>0</armor_8>
 						<armor_9>40</armor_9>
-						<gun>35</gun>
+						<gun>20</gun>
 					</armor>
 					<reloadTime>22</reloadTime>
 					<invisibilityFactorAtShot>
@@ -7304,7 +7303,7 @@
 					</invisibilityFactorAtShot>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.12
+							0.11
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>4</afterShot>
@@ -7318,7 +7317,7 @@
 						<rate>24</rate>
 					</clip>
 					<aimingTime>
-						2.5
+						2.4
 						<!--BW_String-->
 					</aimingTime>
 					<shotDispersionRadius>
@@ -8299,6 +8298,7 @@
 						</customizableVehicleAreas>
 					</customization>
 					<edgeByVisualModel>false</edgeByVisualModel>
+					<muzzleBrake>HORIZONTAL</muzzleBrake>
 					<camouflage>
 						<tiling>
 							1.72 1.72 0.000000 0.000000
@@ -8451,6 +8451,7 @@
 			</engines>
 			<chassis>
 				<Chassis_F17_AMX_13_90>
+					<axleCount>5</axleCount>
 					<grounds>
 						<soft>
 							<rollingFriction>
@@ -8473,6 +8474,7 @@
 					</grounds>
 				</Chassis_F17_AMX_13_90>
 				<Chassis_F17_AMX_13_90_2>
+					<axleCount>5</axleCount>
 					<grounds>
 						<soft>
 							<rollingFriction>

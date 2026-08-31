@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from builtins import range
 import CGF, Math
 from death_zones_helpers import ZONE_STATE, DEATH_ZONE_IDS
 from script_component.DynamicScriptComponent import DynamicScriptComponent
@@ -14,9 +16,9 @@ class ArenaInfoDeathZonesComponent(DynamicScriptComponent):
     def _onAvatarReady(self):
         self.updatedZones = [ idx for idx, value in enumerate(self.activeZones) if value != ZONE_STATE.SAVE ]
 
-    def setNested_activeZones(self, changePath, oldValue):
+    def setNested_activeZones(self, changePath, _):
         self.updatedZones.extend(range(changePath[0], changePath[0] + 1))
 
-    def setSlice_activeZones(self, path, oldValue):
+    def setSlice_activeZones(self, path, _):
         startIdx, stopIdx = path[(-1)]
         self.updatedZones.extend(range(startIdx, stopIdx))

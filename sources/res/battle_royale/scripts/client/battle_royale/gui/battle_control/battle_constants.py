@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.battle_control.battle_constants import TIMER_VIEW_STATE
 from death_zones_helpers import ZONE_STATE
 

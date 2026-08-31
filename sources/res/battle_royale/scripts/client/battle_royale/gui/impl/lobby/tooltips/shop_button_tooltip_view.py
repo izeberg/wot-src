@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from battle_royale.gui.impl.gen.view_models.views.lobby.tooltips.shop_button_tooltip_view_model import ShopButtonTooltipViewModel
 from frameworks.wulf import ViewFlags, ViewSettings
 from battle_royale.gui.impl.lobby.br_helpers.utils import setEventInfo

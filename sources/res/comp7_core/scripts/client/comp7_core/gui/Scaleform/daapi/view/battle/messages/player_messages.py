@@ -1,6 +1,6 @@
 import typing
 from comp7_core_constants import ROLE_EQUIPMENT_TAG
-from constants import EQUIPMENT_STAGES, ROLE_TYPE_TO_LABEL
+from constants import EQUIPMENT_STAGES
 from gui.Scaleform.daapi.view.battle.shared.messages import PlayerMessages
 from points_of_interest_shared import ENEMY_VEHICLE_ID
 if typing.TYPE_CHECKING:
@@ -66,8 +66,8 @@ class Comp7CorePlayerMessages(PlayerMessages):
             vehicle = self.sessionProvider.shared.vehicleState.getControllingVehicle()
             if vehicle is None or not hasattr(vehicle, 'typeDescriptor'):
                 return
-            roleType = ROLE_TYPE_TO_LABEL.get(vehicle.typeDescriptor.role)
-            equipment = self._modeController.getRoleEquipment(roleType)
+            roleName = self._modeController.getRoleEquipmentKey(vehicle.typeDescriptor.type)
+            equipment = self._modeController.getRoleEquipment(roleName)
             if equipment is None:
                 return
             self.sessionProvider.shared.messages.showVehicleMessage(_ROLE_EQUIPMENT_PROMOTED, {'name': equipment.userString})

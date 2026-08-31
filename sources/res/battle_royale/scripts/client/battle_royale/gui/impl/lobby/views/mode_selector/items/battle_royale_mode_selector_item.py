@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from battle_royale.gui.impl.gen.view_models.views.lobby.mode_selector.mode_selector_battle_royale_model import ModeSelectorBattleRoyaleModel
 from battle_royale.gui.impl.gen.view_models.views.lobby.mode_selector.mode_selector_battle_royale_widget_model import BattleRoyaleProgressionStatus
 from battle_royale.gui.impl.lobby.br_helpers.utils import setEventInfo

@@ -2420,6 +2420,108 @@
 				</include>
 			</vehicleFilter>
 		</attachment>
+		<attachment>
+			<id>2026</id>
+			<name>J53_gunsleeve_skyfire</name>
+			<modelName>content/CGFPrefabs/3D_Customization/gun_slots/J53_gunsleeve_skyfire/attachment.prefab</modelName>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>gun</applyType>
+			<rarity>epic</rarity>
+			<priceGroup>attachments 1300g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/gunslot/J53_gunsleeve_skyfire</userString>
+			<shortDescriptionSpecial>#vehicle_customization:attachment/gunslot/shortDescriptionSpecial</shortDescriptionSpecial>
+			<tags>showDisabled</tags>
+			<vehicleFilter>
+				<include>
+					<vehicles>japan:J53_Ho_Ri_Shugo</vehicles>
+				</include>
+			</vehicleFilter>
+		</attachment>
+		<attachment>
+			<id>2038</id>
+			<name>G197_gunsleeve_doppelganger</name>
+			<modelName>content/CGFPrefabs/3D_Customization/gun_slots/G197_gunsleeve_doppelganger/attachment.prefab</modelName>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>gun</applyType>
+			<rarity>epic</rarity>
+			<priceGroup>attachments 1300g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/gunslot/G197_gunsleeve_doppelganger</userString>
+			<shortDescriptionSpecial>#vehicle_customization:attachment/gunslot/shortDescriptionSpecial</shortDescriptionSpecial>
+			<tags>showDisabled</tags>
+			<vehicleFilter>
+				<include>
+					<vehicles>germany:G197_Pz_Kpfw_Neu</vehicles>
+				</include>
+			</vehicleFilter>
+		</attachment>
+		<attachment>
+			<id>2039</id>
+			<name>Ch71_gunsleeve_inescapable</name>
+			<modelName>content/CGFPrefabs/3D_Customization/gun_slots/Ch71_gunsleeve_inescapable/attachment.prefab</modelName>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>gun</applyType>
+			<rarity>epic</rarity>
+			<priceGroup>attachments 1300g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/gunslot/Ch71_gunsleeve_inescapable</userString>
+			<shortDescriptionSpecial>#vehicle_customization:attachment/gunslot/shortDescriptionSpecial</shortDescriptionSpecial>
+			<tags>showDisabled</tags>
+			<vehicleFilter>
+				<include>
+					<vehicles>china:Ch71_WZ_219</vehicles>
+				</include>
+			</vehicleFilter>
+		</attachment>
+		<attachment>
+			<id>2040</id>
+			<name>It43_gunsleeve_ambush</name>
+			<modelName>content/CGFPrefabs/3D_Customization/gun_slots/It43_gunsleeve_ambush/attachment.prefab</modelName>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>gun</applyType>
+			<rarity>epic</rarity>
+			<priceGroup>attachments 1300g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/gunslot/It43_gunsleeve_ambush</userString>
+			<shortDescriptionSpecial>#vehicle_customization:attachment/gunslot/shortDescriptionSpecial</shortDescriptionSpecial>
+			<tags>showDisabled</tags>
+			<vehicleFilter>
+				<include>
+					<vehicles>italy:It43_CAV_mod_71</vehicles>
+				</include>
+			</vehicleFilter>
+		</attachment>
+		<attachment>
+			<id>2041</id>
+			<name>Cz46_gunsleeve_daring</name>
+			<modelName>content/CGFPrefabs/3D_Customization/gun_slots/Cz46_gunsleeve_daring/attachment.prefab</modelName>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>gun</applyType>
+			<rarity>epic</rarity>
+			<priceGroup>attachments 1300g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/gunslot/Cz46_gunsleeve_daring</userString>
+			<shortDescriptionSpecial>#vehicle_customization:attachment/gunslot/shortDescriptionSpecial</shortDescriptionSpecial>
+			<tags>showDisabled</tags>
+			<vehicleFilter>
+				<include>
+					<vehicles>czech:Cz46_Vz_63P</vehicles>
+				</include>
+			</vehicleFilter>
+		</attachment>
+		<attachment>
+			<id>2037</id>
+			<name>S41_gunsleeve_forestnymph</name>
+			<modelName>content/CGFPrefabs/3D_Customization/gun_slots/S41_gunsleeve_forestnymph/attachment.prefab</modelName>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>gun</applyType>
+			<rarity>epic</rarity>
+			<priceGroup>attachments 1300g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/gunslot/S41_gunsleeve_forestnymph</userString>
+			<shortDescriptionSpecial>#vehicle_customization:attachment/gunslot/shortDescriptionSpecial</shortDescriptionSpecial>
+			<tags>showDisabled</tags>
+			<vehicleFilter>
+				<include>
+					<vehicles>sweden:S41_BV_111</vehicles>
+				</include>
+			</vehicleFilter>
+		</attachment>
 	</itemGroup>
 	<itemGroup>
 		<name>Zero Legacy</name>
@@ -3036,6 +3138,74 @@
 		</attachment>
 	</itemGroup>
 	<itemGroup>
+		<name>Power Surge</name>
+		<userString>#vehicle_customization:attachment/Power_Surge</userString>
+		<season>ALL</season>
+		<historical>2</historical>
+		<attachment>
+			<id>1215</id>
+			<name>Cus_264_WT_Rangefinder</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_264_WT_Rangefinder/Cus_264_WT_Rangefinder.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_264_WT_Rangefinder/Cus_264_WT_Rangefinder.prefab</hangarModelName>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>gunMantlet</applyType>
+			<size>medium</size>
+			<rarity>rare</rarity>
+			<priceGroup>attachments 500g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/Power_Surge/Cus_264_WT_Rangefinder</userString>
+		</attachment>
+		<attachment>
+			<id>1216</id>
+			<name>Cus_265_WT_Gun</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_265_WT_Gun/Cus_265_WT_Gun.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_265_WT_Gun/Cus_265_WT_Gun.prefab</hangarModelName>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>turret</applyType>
+			<size>medium</size>
+			<rarity>epic</rarity>
+			<priceGroup>attachments 1000g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/Power_Surge/Cus_265_WT_Gun</userString>
+		</attachment>
+		<attachment>
+			<id>1217</id>
+			<name>Cus_266_WT_Battery</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_266_WT_Battery/Cus_266_WT_Battery.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_266_WT_Battery/Cus_266_WT_Battery.prefab</hangarModelName>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>universal</applyType>
+			<size>medium</size>
+			<rarity>rare</rarity>
+			<priceGroup>attachments 500g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/Power_Surge/Cus_266_WT_Battery</userString>
+		</attachment>
+		<attachment>
+			<id>1218</id>
+			<name>Cus_267_WT_Trap</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_267_WT_Trap/Cus_267_WT_Trap.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_267_WT_Trap/Cus_267_WT_Trap_hangar.prefab</hangarModelName>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>universal</applyType>
+			<size>medium</size>
+			<rarity>legendary</rarity>
+			<priceGroup>attachments 2150g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/Power_Surge/Cus_267_WT_Trap</userString>
+			<description>#vehicle_customization:attachment/Power_Surge/Cus_267_WT_Trap/description</description>
+			<tags>battleEffect</tags>
+		</attachment>
+		<attachment>
+			<id>1219</id>
+			<name>Cus_268_WT_Generator</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_268_WT_Generator/Cus_268_WT_Generator.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_268_WT_Generator/Cus_268_WT_Generator.prefab</hangarModelName>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>universal</applyType>
+			<size>medium</size>
+			<rarity>rare</rarity>
+			<priceGroup>attachments 500g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/Power_Surge/Cus_268_WT_Generator</userString>
+		</attachment>
+	</itemGroup>
+	<itemGroup>
 		<name>Traditional Toys</name>
 		<userString>#vehicle_customization:attachment/Traditional_Toys</userString>
 		<season>ALL</season>
@@ -3099,6 +3269,298 @@
 			<rarity>rare</rarity>
 			<priceGroup>attachments 500g notInShop</priceGroup>
 			<userString>#vehicle_customization:attachment/Traditional_Toys/Cus_263_FCN_Tricycle</userString>
+		</attachment>
+	</itemGroup>
+	<itemGroup>
+		<name>Covert Operations</name>
+		<userString>#vehicle_customization:attachment/covert_operations</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<attachment>
+			<id>1240</id>
+			<name>Cus_279_PM3_Locator</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_279_PM3_Locator/Cus_279_PM3_Locator.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_279_PM3_Locator/Cus_279_PM3_Locator_hangar.prefab</hangarModelName>
+			<crashModelName/>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>turret</applyType>
+			<size>medium</size>
+			<rarity>legendary</rarity>
+			<priceGroup>attachments 2795g notInShop</priceGroup>
+			<description>#vehicle_customization:attachment/covert_operations/Cus_279_PM3_Locator/description</description>
+			<userString>#vehicle_customization:attachment/covert_operations/Cus_279_PM3_Locator</userString>
+			<tags>battleEffect</tags>
+		</attachment>
+		<attachment>
+			<id>1241</id>
+			<name>Cus_280_PM3_Laser</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_280_PM3_Laser/Cus_280_PM3_Laser.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_280_PM3_Laser/Cus_280_PM3_Laser.prefab</hangarModelName>
+			<crashModelName/>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>gunMantlet</applyType>
+			<size>medium</size>
+			<rarity>epic</rarity>
+			<priceGroup>attachments 1300g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/covert_operations/Cus_280_PM3_Laser</userString>
+		</attachment>
+		<attachment>
+			<id>1242</id>
+			<name>Cus_281_PM3_Rifle</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_281_PM3_Rifle/Cus_281_PM3_Rifle.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_281_PM3_Rifle/Cus_281_PM3_Rifle.prefab</hangarModelName>
+			<crashModelName/>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>universal</applyType>
+			<size>medium</size>
+			<rarity>epic</rarity>
+			<priceGroup>attachments 1300g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/covert_operations/Cus_281_PM3_Rifle</userString>
+		</attachment>
+		<attachment>
+			<id>1243</id>
+			<name>Cus_282_PM3_ATGW</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_282_PM3_ATGW/Cus_282_PM3_ATGW.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_282_PM3_ATGW/Cus_282_PM3_ATGW.prefab</hangarModelName>
+			<crashModelName/>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>universal</applyType>
+			<size>medium</size>
+			<rarity>rare</rarity>
+			<priceGroup>attachments 650g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/covert_operations/Cus_282_PM3_ATGW</userString>
+		</attachment>
+		<attachment>
+			<id>1244</id>
+			<name>Cus_283_PM3_M47</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_283_PM3_M47/Cus_283_PM3_M47.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_283_PM3_M47/Cus_283_PM3_M47.prefab</hangarModelName>
+			<crashModelName/>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>universal</applyType>
+			<size>medium</size>
+			<rarity>rare</rarity>
+			<priceGroup>attachments 650g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/covert_operations/Cus_283_PM3_M47</userString>
+		</attachment>
+	</itemGroup>
+	<itemGroup>
+		<name>Search and Destroy</name>
+		<userString>#vehicle_customization:attachment/Search_and_Destroy</userString>
+		<season>ALL</season>
+		<historical>0</historical>
+		<attachment>
+			<id>1225</id>
+			<name>Cus_254_BP21_R_Machinegun</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_254_BP21_R_Machinegun/Cus_254_BP21_R_Machinegun.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_254_BP21_R_Machinegun/Cus_254_BP21_R_Machinegun_hangar.prefab</hangarModelName>
+			<crashModelName/>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>turret</applyType>
+			<size>medium</size>
+			<rarity>legendary</rarity>
+			<priceGroup>attachments 2150g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/Search_and_Destroy/Cus_254_BP21_R_Machinegun</userString>
+			<description>#vehicle_customization:attachment/Search_and_Destroy/Cus_254_BP21_R_Machinegun/description</description>
+			<tags>battleEffect</tags>
+		</attachment>
+		<attachment>
+			<id>1226</id>
+			<name>Cus_255_BP21_R_Locator</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_255_BP21_R_Locator/Cus_255_BP21_R_Locator.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_255_BP21_R_Locator/Cus_255_BP21_R_Locator.prefab</hangarModelName>
+			<crashModelName/>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>gunMantlet</applyType>
+			<size>medium</size>
+			<rarity>epic</rarity>
+			<priceGroup>attachments 1000g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/Search_and_Destroy/Cus_255_BP21_R_Locator</userString>
+		</attachment>
+		<attachment>
+			<id>1227</id>
+			<name>Cus_256_BP21_R_Machinegun</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_256_BP21_R_Machinegun/Cus_256_BP21_R_Machinegun.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_256_BP21_R_Machinegun/Cus_256_BP21_R_Machinegun.prefab</hangarModelName>
+			<crashModelName/>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>universal</applyType>
+			<size>medium</size>
+			<rarity>rare</rarity>
+			<priceGroup>attachments 500g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/Search_and_Destroy/Cus_256_BP21_R_Machinegun</userString>
+		</attachment>
+		<attachment>
+			<id>1228</id>
+			<name>Cus_257_BP21_R_Minethrower</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_257_BP21_R_Minethrower/Cus_257_BP21_R_Minethrower.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_257_BP21_R_Minethrower/Cus_257_BP21_R_Minethrower.prefab</hangarModelName>
+			<crashModelName/>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>universal</applyType>
+			<size>medium</size>
+			<rarity>rare</rarity>
+			<priceGroup>attachments 500g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/Search_and_Destroy/Cus_257_BP21_R_Minethrower</userString>
+		</attachment>
+		<attachment>
+			<id>1229</id>
+			<name>Cus_258_BP21_R_Ammunition</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_258_BP21_R_Ammunition/Cus_258_BP21_R_Ammunition.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_258_BP21_R_Ammunition/Cus_258_BP21_R_Ammunition.prefab</hangarModelName>
+			<crashModelName/>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>universal</applyType>
+			<size>medium</size>
+			<rarity>rare</rarity>
+			<priceGroup>attachments 500g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/Search_and_Destroy/Cus_258_BP21_R_Ammunition</userString>
+		</attachment>
+	</itemGroup>
+	<itemGroup>
+		<name>Air Defense Suite</name>
+		<userString>#vehicle_customization:attachment/Air_Defense_Suite</userString>
+		<season>ALL</season>
+		<historical>0</historical>
+		<attachment>
+			<id>1230</id>
+			<name>Cus_249_BP21_J_Machinegun</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_249_BP21_J_Machinegun/Cus_249_BP21_J_Machinegun.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_249_BP21_J_Machinegun/Cus_249_BP21_J_Machinegun_hangar.prefab</hangarModelName>
+			<crashModelName/>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>turret</applyType>
+			<size>medium</size>
+			<rarity>legendary</rarity>
+			<priceGroup>attachments 2150g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/Air_Defense_Suite/Cus_249_BP21_J_Machinegun</userString>
+			<description>#vehicle_customization:attachment/Air_Defense_Suite/Cus_249_BP21_J_Machinegun/description</description>
+			<tags>battleEffect</tags>
+		</attachment>
+		<attachment>
+			<id>1231</id>
+			<name>Cus_250_BP21_J_Searchlight</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_250_BP21_J_Searchlight/Cus_250_BP21_J_Searchlight.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_250_BP21_J_Searchlight/Cus_250_BP21_J_Searchlight.prefab</hangarModelName>
+			<crashModelName/>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>gunMantlet</applyType>
+			<size>medium</size>
+			<rarity>epic</rarity>
+			<priceGroup>attachments 1000g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/Air_Defense_Suite/Cus_250_BP21_J_Searchlight</userString>
+		</attachment>
+		<attachment>
+			<id>1232</id>
+			<name>Cus_251_BP21_J_Cannon</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_251_BP21_J_Cannon/Cus_251_BP21_J_Cannon.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_251_BP21_J_Cannon/Cus_251_BP21_J_Cannon.prefab</hangarModelName>
+			<crashModelName/>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>universal</applyType>
+			<size>medium</size>
+			<rarity>rare</rarity>
+			<priceGroup>attachments 500g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/Air_Defense_Suite/Cus_251_BP21_J_Cannon</userString>
+		</attachment>
+		<attachment>
+			<id>1233</id>
+			<name>Cus_252_BP21_J_Wire</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_252_BP21_J_Wire/Cus_252_BP21_J_Wire.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_252_BP21_J_Wire/Cus_252_BP21_J_Wire.prefab</hangarModelName>
+			<crashModelName/>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>universal</applyType>
+			<size>medium</size>
+			<rarity>rare</rarity>
+			<priceGroup>attachments 500g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/Air_Defense_Suite/Cus_252_BP21_J_Wire</userString>
+		</attachment>
+		<attachment>
+			<id>1234</id>
+			<name>Cus_253_BP21_J_Machinegun</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_253_BP21_J_Machinegun/Cus_253_BP21_J_Machinegun.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_253_BP21_J_Machinegun/Cus_253_BP21_J_Machinegun.prefab</hangarModelName>
+			<crashModelName/>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>universal</applyType>
+			<size>medium</size>
+			<rarity>rare</rarity>
+			<priceGroup>attachments 500g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/Air_Defense_Suite/Cus_253_BP21_J_Machinegun</userString>
+		</attachment>
+	</itemGroup>
+	<itemGroup>
+		<name>Aerial Advance</name>
+		<userString>#vehicle_customization:attachment/Aerial_Advance</userString>
+		<season>ALL</season>
+		<historical>0</historical>
+		<attachment>
+			<id>1235</id>
+			<name>Cus_244_BP21_GB_Browning</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_244_BP21_GB_Browning/Cus_244_BP21_GB_Browning.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_244_BP21_GB_Browning/Cus_244_BP21_GB_Browning_hangar.prefab</hangarModelName>
+			<crashModelName/>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>turret</applyType>
+			<size>medium</size>
+			<rarity>legendary</rarity>
+			<priceGroup>attachments 2150g notInShop</priceGroup>
+			<description>#vehicle_customization:attachment/Aerial_Advance/Cus_244_BP21_GB_Browning/description</description>
+			<userString>#vehicle_customization:attachment/Aerial_Advance/Cus_244_BP21_GB_Browning</userString>
+			<tags>battleEffect</tags>
+		</attachment>
+		<attachment>
+			<id>1236</id>
+			<name>Cus_245_BP21_GB_Radar</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_245_BP21_GB_Radar/Cus_245_BP21_GB_Radar.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_245_BP21_GB_Radar/Cus_245_BP21_GB_Radar.prefab</hangarModelName>
+			<crashModelName/>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>gunMantlet</applyType>
+			<size>medium</size>
+			<rarity>epic</rarity>
+			<priceGroup>attachments 1000g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/Aerial_Advance/Cus_245_BP21_GB_Radar</userString>
+		</attachment>
+		<attachment>
+			<id>1237</id>
+			<name>Cus_246_BP21_GB_TypeF</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_246_BP21_GB_TypeF/Cus_246_BP21_GB_TypeF.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_246_BP21_GB_TypeF/Cus_246_BP21_GB_TypeF.prefab</hangarModelName>
+			<crashModelName/>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>universal</applyType>
+			<size>medium</size>
+			<rarity>rare</rarity>
+			<priceGroup>attachments 500g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/Aerial_Advance/Cus_246_BP21_GB_TypeF</userString>
+		</attachment>
+		<attachment>
+			<id>1238</id>
+			<name>Cus_247_BP21_GB_MarkI</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_247_BP21_GB_MarkI/Cus_247_BP21_GB_MarkI.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_247_BP21_GB_MarkI/Cus_247_BP21_GB_MarkI.prefab</hangarModelName>
+			<crashModelName/>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>universal</applyType>
+			<size>medium</size>
+			<rarity>rare</rarity>
+			<priceGroup>attachments 500g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/Aerial_Advance/Cus_247_BP21_GB_MarkI</userString>
+		</attachment>
+		<attachment>
+			<id>1239</id>
+			<name>Cus_248_BP21_GB_MarkV</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_248_BP21_GB_MarkV/Cus_248_BP21_GB_MarkV.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_248_BP21_GB_MarkV/Cus_248_BP21_GB_MarkV.prefab</hangarModelName>
+			<crashModelName/>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>universal</applyType>
+			<size>medium</size>
+			<rarity>rare</rarity>
+			<priceGroup>attachments 500g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/Aerial_Advance/Cus_248_BP21_GB_MarkV</userString>
 		</attachment>
 	</itemGroup>
 	<itemGroup>

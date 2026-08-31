@@ -4,10 +4,12 @@ from future.utils import viewitems, viewvalues
 from past.builtins import xrange
 import BigWorld, WoT, CGF, GenericComponents, Triggers, Math, Vehicular, NetworkFilters, material_kinds
 from Event import SafeEvent, EventManager
-from cgf_client_common.game_object_holder import GameObjectHolder
+from cgf_client_common.prefab_loader import PrefabLoader
+from cgf_modules.variable_components import VariableStorageComponent
 from constants import IS_EDITOR, VEHICLE_SIEGE_STATE, UNKNOWN_RESPAWN_ID
 from CustomEffectManager import CustomEffectManager, EffectSettings
 from helpers.EffectMaterialCalculation import calcEffectMaterialIndex
+from helpers.prefab_effects import resolveGunPrefabEffects
 from VehicleStickers import VehicleStickers
 from items.components.component_constants import MAIN_TRACK_PAIR_IDX
 from items.vehicle_items import CHASSIS_ITEM_TYPE
@@ -68,9 +70,7 @@ class GunAnimators(object):
         if len(self._animatorsLinks) > index:
             self._animatorsLinks[index] = CGF.ComponentLink(gameObject, Vehicular.RecoilComponent)
             return
-        else:
-            _logger.error('Trying to set gun animator by index %i, but there are only %i gun animators', index, len(self._animatorsLinks))
-            return
+        _logger.error('Trying to set gun animator by index %i, but there are only %i gun animators', index, len(self._animatorsLinks))
 
 
 ActivateContext = typing.NamedTuple('ActivateContext', (
@@ -164,7 +164,7 @@ UpdateContext = typing.NamedTuple('UpdateContext', (
  (
   'siegeEffects', SiegeEffectsController)))
 
-class CommonTankAppearance(GameObjectHolder):
+class CommonTankAppearance(PrefabLoader):
     state = property(lambda self: self._state)
     isConstructed = property(lambda self: self._state >= AppearanceState.CONSTRUCTED)
     isComponentsCreated = property(lambda self: self._state >= AppearanceState.COMPONENTS_CREATED)
@@ -182,6 +182,9 @@ class CommonTankAppearance(GameObjectHolder):
     isObserver = property(lambda self: self.__isObserver)
     outfit = property(lambda self: self.__outfit)
     renderMode = property(lambda self: self.__renderMode)
+
+    def isReady(self):
+        return self.compoundModel is not None
 
     def _setFashions(self, fashions, isTurretDetached=False):
         if IS_EDITOR and self.__fashions:
@@ -287,7 +290,6 @@ class CommonTankAppearance(GameObjectHolder):
         self.__renderMode = None
         self.__forceDynAttachmentLoading = False
         self.customizationGameObjects = []
-        self._loadingQueue = []
         self.__customEffectsEnabled = True
         self.__useEngStartControlIdle = False
         self.__ignoreEngineStart = False
@@ -437,15 +439,12 @@ class CommonTankAppearance(GameObjectHolder):
         model_assembler.assembleWaterSensor(self.typeDescriptor, self, self._spaceID, cgfQueue)
         cgfQueue.createComponent(self._gameObject, Vehicular.FlyingInfoProvider)
         compoundModel.setPartBoundingBoxAttachNode(TankPartIndexes.GUN, TankNodeNames.GUN_INCLINATION)
-        self.__createVehicleComposition(cgfQueue)
+        self.createVehicleComposition(cgfQueue)
         camouflages.updateFashions(self, cgfQueue)
         if self.damageState.isCurrentModelUndamaged:
             model_assembler.assembleCustomLogicComponents(self, self.typeDescriptor, self.__attachments, self.__modelAnimators, cgfQueue)
         self._createStickers()
-        while self._loadingQueue:
-            prefab, go, vector, callback = self._loadingQueue.pop()
-            CGF.loadAndCreatePrefabWithParent(prefab, go, vector, callback)
-
+        self._flushLoadingQueue()
         self._state = AppearanceState.CONSTRUCTED
         return
 
@@ -458,6 +457,7 @@ class CommonTankAppearance(GameObjectHolder):
     def onDestroy(self, ctx):
         _logger.debug('Appearance onDestroy(%r)', self.id)
         self._vehicleInfo = {}
+        self._cancelPrefabLoadRequests()
         queue = CGF.CommandQueue(self._spaceID)
         queue.removeComponent(self._gameObject, Vehicular.FlagComponent)
         queue.removeComponent(self._gameObject, Vehicular.VehicleSoundTriggerTarget)
@@ -474,7 +474,7 @@ class CommonTankAppearance(GameObjectHolder):
         self._chassisDecal = None
         self._compoundModel = None
         self._destroyStickers()
-        self._loadingQueue = []
+        self._clearLoadingQueue()
         self.__eventManager.clear()
         self._state = AppearanceState.DESTROYED
         return
@@ -492,10 +492,10 @@ class CommonTankAppearance(GameObjectHolder):
             hierarchy.parent = parentUuid
         else:
             _logger.error('Unable to find appearance HierarchyComponent')
-        self._attachStickers()
 
     def onActivate(self, ctx):
         _logger.debug('Appearance onActivate(%r)', self.id)
+        self._attachStickers(ctx.collisions)
         if ctx.flyingInfoProvider:
             if self.modelsSetParams.state == 'undamaged':
                 self.__filter.setFlyingInfo(CGF.createBoolLink(ctx.flyingInfoProvider, 'isFlying'))
@@ -803,7 +803,7 @@ class CommonTankAppearance(GameObjectHolder):
         self._vehicleStickers = None
         return
 
-    def _attachStickers(self):
+    def _attachStickers(self, collisionComponent):
         _logger.debug('Attaching VehicleStickers for vehicle: %s', self._vehicle)
         isCurrentModelDamaged = self.damageState.isCurrentModelDamaged
         if self.vehicleStickers is None:
@@ -811,7 +811,7 @@ class CommonTankAppearance(GameObjectHolder):
                 _logger.error('Failed to attach VehicleStickers. Missing VehicleStickers. Vehicle: %s', self._vehicle)
             return
         self.vehicleStickers.alpha = DEFAULT_STICKERS_ALPHA
-        self.vehicleStickers.attach(compoundModel=self.compoundModel, isDamaged=isCurrentModelDamaged, showDamageStickers=not isCurrentModelDamaged, attachChildPart=True)
+        self.vehicleStickers.attach(compoundModel=self.compoundModel, isDamaged=isCurrentModelDamaged, showDamageStickers=not isCurrentModelDamaged, attachChildPart=True, collisionComponent=collisionComponent)
         return
 
     def _detachStickers(self):
@@ -873,7 +873,8 @@ class CommonTankAppearance(GameObjectHolder):
         self.filter.enableLagDetection(False)
         queue = CGF.CommandQueue(self.spaceID)
         for go in self.customizationGameObjects:
-            queue.removeGameObject(go)
+            if go.valid:
+                queue.removeGameObject(go)
 
         self.customizationGameObjects = []
         return
@@ -897,28 +898,33 @@ class CommonTankAppearance(GameObjectHolder):
         if self.engineAudition:
             self.engineAudition.onEngineStart()
 
+    @staticmethod
+    def _getShotEffectSlotName():
+        return VehicleSlots.GUN_FIRE.value + '_ShotEffectSlot'
+
     def _getShotEffectCompositionItems(self):
         prefabMapItems = []
         extraSlotMapItems = []
-        if self.damageState.isCurrentModelDamaged or self.typeDescriptor.gun.prefabBased or self.typeDescriptor.isDualgunVehicle:
+        gunDescr = self.typeDescriptor.gun
+        if self.damageState.isCurrentModelDamaged or gunDescr.prefabBased or self.typeDescriptor.isDualgunVehicle:
             return (prefabMapItems, extraSlotMapItems)
         else:
-            gunDescr = self.typeDescriptor.gun
-            explosionPrefab = gunDescr.prefabEffects.explosion.prefab if gunDescr.prefabEffects is not None else ''
-            groundwavePrefab = gunDescr.prefabEffects.groundwave.prefab if gunDescr.prefabEffects is not None else ''
+            gunPrefabEffects, _ = resolveGunPrefabEffects(gunDescr.prefabEffects)
+            explosionPrefab = gunPrefabEffects.explosion.prefab if gunPrefabEffects is not None else ''
+            groundwavePrefab = gunPrefabEffects.groundwave.prefab if gunPrefabEffects is not None else ''
             prefabs = [ prefab for prefab in (explosionPrefab, groundwavePrefab) if prefab ]
             if not prefabs:
                 return (prefabMapItems, extraSlotMapItems)
-            gunInclinationSlot = VehicleSlots.GUN_INCLINATION.value
-            gunInclinationMatrix = Math.Matrix(self.compoundModel.node(gunInclinationSlot))
-            gunInclinationMatrix.invert()
+            gunRecoilSlot = VehicleSlots.GUN_RECOIL.value
+            gunRecoilMatrix = Math.Matrix(self.compoundModel.node(gunRecoilSlot))
+            gunRecoilMatrix.invert()
             gunFireSlot = VehicleSlots.GUN_FIRE.value
             node = self.compoundModel.node(gunFireSlot)
             if node is not None:
-                shotEffectSlot = gunFireSlot + '_ShotEffectSlot'
+                shotEffectSlot = self._getShotEffectSlotName()
                 gunFireMatrix = Math.Matrix(node)
-                gunFireMatrix.postMultiply(gunInclinationMatrix)
-                extraSlotMapItems.append(ExtraSlotsMapItem(shotEffectSlot, gunInclinationSlot, gunFireMatrix))
+                gunFireMatrix.postMultiply(gunRecoilMatrix)
+                extraSlotMapItems.append(ExtraSlotsMapItem(shotEffectSlot, gunRecoilSlot, gunFireMatrix))
                 for prefab in prefabs:
                     prefabMapItems.append(PrefabsMapItem(shotEffectSlot, prefab))
 
@@ -926,7 +932,7 @@ class CommonTankAppearance(GameObjectHolder):
                 _logger.error('Failed to setup shot effect. Missing node %s for gun %s.', gunFireSlot, gunDescr.name)
             return (prefabMapItems, extraSlotMapItems)
 
-    def __createVehicleComposition(self, queue):
+    def createVehicleComposition(self, queue):
         prefabMap = [ PrefabsMapItem(attachment.slotName, attachment.modelName) for attachment in self.__attachments if not attachment.hidden
                     ]
         if IS_EDITOR or self.__forceDynAttachmentLoading:
@@ -945,9 +951,13 @@ class CommonTankAppearance(GameObjectHolder):
         dynSlots = None
         if self.typeDescriptor.type.isWheeledVehicle:
             dynSlots = self.typeDescriptor.chassis.generalWheelsAnimatorConfig.getNonTrackWheelNodeNames()
-        slotInfoMap = {attachment.slotName:attachment.enableVisTunnel for attachment in self.__attachments}
-        queue.createComponent(self._gameObject, GenericComponents.VisibilityTunnelVehicleMarkerComponent, slotInfoMap)
-        createVehicleComposition(gameObject=self._gameObject, vehicleGameObject=self._entityGameObject, prefabMap=prefabMap, followNodes=True, extraSlots=extraSlots, dynSlotNodes=dynSlots, queue=queue)
+        if not self._gameObject.hasComponent(GenericComponents.VisibilityTunnelVehicleMarkerComponent):
+            slotInfoMap = {attachment.slotName:attachment.enableVisTunnel for attachment in self.__attachments}
+            queue.createComponent(self._gameObject, GenericComponents.VisibilityTunnelVehicleMarkerComponent, slotInfoMap)
+        extraSlotComponents = [] if self.typeDescriptor.gun.prefabBased else [
+         (
+          VehicleSlots.GUN.value, [VariableStorageComponent])]
+        createVehicleComposition(gameObject=self._gameObject, vehicleGameObject=self._entityGameObject, prefabMap=prefabMap, followNodes=True, extraSlots=extraSlots, dynSlotNodes=dynSlots, extraSlotComponents=extraSlotComponents, queue=queue)
         return
 
     def __assembleNonDamagedOnly(self, resourceRefs, isPlayer, queue):
@@ -1113,9 +1123,6 @@ class CommonTankAppearance(GameObjectHolder):
     def maxTurretRotationSpeed(self):
         return 0
 
-    def pushToLoadingQueue(self, prefab, go, vector, callback):
-        self._loadingQueue.append((prefab, go, vector, callback))
-
     def _onCameraChanged(self, cameraName, currentVehicleId=None):
         if self.id != BigWorld.player().playerVehicleID:
             return
@@ -1202,7 +1209,7 @@ class CommonTankAppearance(GameObjectHolder):
                 if track.valid:
                     hasDebris = False
                     if self.crashedTracksController:
-                        hasDebris = self.crashedTracksController.hasDebris(isLeft, pairIndex)
+                        hasDebris = self.crashedTracksController.hasDebris(isLeft, idx)
                     if hasDebris:
                         track.removeComponent(DebrisCrashedTrackComponent)
                         foundCrashedTrackWithDebris = True

@@ -1,0 +1,110 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-01 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "ability/name"
+msgstr "Ability"
+
+msgid "arenaDescription/winText"
+msgstr "Mission: Try to reach the finish line!"
+
+msgid "battleLoading/description"
+msgstr "Use the Dash and Shield abilities to cause extra mayhem."
+
+msgid "battleLoading/header"
+msgstr "Race to the finish line and stop others from reaching it!"
+
+msgid "battleResults/battleStatus/finished"
+msgstr "FINISHED"
+
+msgid "battleResults/battleStatus/inTop"
+msgstr "PLACE"
+
+msgid "battleResults/battleStatus/notFinished"
+msgstr ""
+"DID NOT\n"
+"FINISH"
+
+msgid "battleResults/finishReason/finished"
+msgstr "Finish line reached"
+
+msgid "battleResults/finishReason/notFinished"
+msgstr "Finish line not reached"
+
+msgid "battleResults/footerSubtitle/finished"
+msgstr "Not bad!"
+
+msgid "battleResults/footerSubtitle/notFinished"
+msgstr "Better luck next time!"
+
+msgid "battleResults/footerSubtitle/top"
+msgstr "Top 3!"
+
+msgid "battleWidget/checkpoint"
+msgstr "CHECKPOINT"
+
+msgid "battleWidget/enemyPosition"
+msgstr "ENEMY POSITION"
+
+msgid "battleWidget/notFinished"
+msgstr ""
+"DID NOT\n"
+"FINISH"
+
+msgid "battleWidget/place"
+msgstr "PLACE"
+
+msgid "battleWidget/position"
+msgstr "POSITION"
+
+msgid "battleWidget/timeFormat"
+msgstr "{minutes}:{seconds}.{milliseconds}"
+
+msgid "buttonHint/evacuation/description"
+msgstr "to return to the latest checkpoint"
+
+msgid "buttonHint/evacuation/noBindingKey"
+msgstr "Key for teleport not assigned"
+
+msgid "buttonHint/evacuation/press"
+msgstr "Hold"
+
+msgid "efficiencyRibbons/fallTanksKill"
+msgstr "Disintegrated"
+
+msgid "evacuationAbilityTooltip/description"
+msgstr "If you get stuck, use this to teleport back to the latest checkpoint."
+
+msgid "evacuationAbilityTooltip/name"
+msgstr "Return to Checkpoint"
+
+msgid "serviceChannelMessages/battleResults/finishTime"
+msgstr "Time"
+
+msgid "serviceChannelMessages/battleResults/finished"
+msgstr "%(playerPlace)s Place"
+
+msgid "serviceChannelMessages/battleResults/notFinished"
+msgstr "Did Not Finish"
+
+msgid "shellTooltip/caliber"
+msgstr "Caliber: %(caliber)s mm"
+
+msgid "shellTooltip/description"
+msgstr ""
+"Instead of causing damage, creates a powerful impulse upon impact. The "
+"bigger your gun's caliber, the bigger the blast!"
+
+msgid "shellTooltip/header"
+msgstr "Pulse Shell"
+
+msgid "statusNotificationTimer/evacuation"
+msgstr "Teleporting to checkpoint..."

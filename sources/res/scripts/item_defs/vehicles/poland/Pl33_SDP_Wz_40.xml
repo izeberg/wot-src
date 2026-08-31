@@ -5632,6 +5632,7 @@
 						<collisionModelClient>vehicles/poland/Pl33_SDP_Wz_40/collision_client/Gun_02.model</collisionModelClient>
 					</hitTester>
 					<edgeByVisualModel>false</edgeByVisualModel>
+					<muzzleBrake>RADIAL</muzzleBrake>
 					<camouflage>
 						<density>
 							115.496 116.593

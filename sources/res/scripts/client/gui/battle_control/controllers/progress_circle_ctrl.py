@@ -368,3 +368,5 @@ class ProgressTimerController(IBattleController):
     def getPlayerCircleState(self, type_, idx):
         if type_ in self.__plugins:
             return self.__plugins[type_].getPlayerState(idx)
+        else:
+            return

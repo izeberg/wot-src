@@ -1,0 +1,3 @@
+from __future__ import absolute_import
+CMD_WT_ADD_QUEST_VEHICLE_KILLS_DEV = 21100
+CMD_WT_DISCARD_QUEST_PROGRESS_DEV = 21101

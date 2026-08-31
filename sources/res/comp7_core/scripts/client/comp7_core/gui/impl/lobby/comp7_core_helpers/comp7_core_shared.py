@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.impl.gen.view_models.views.lobby.user_missions.constants.event_banner_state import EventBannerState
 from gui.periodic_battles.models import PeriodType, PrimeTimeStatus
 from gui.shared.utils.SelectorBattleTypesUtils import isKnownBattleType

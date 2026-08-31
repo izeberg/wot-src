@@ -4011,6 +4011,7 @@
 						-0.001593 0.020715 0
 						<!--BW_String-->
 					</shotOffset>
+					<muzzleBrake>HORIZONTAL</muzzleBrake>
 					<camouflage>
 						<density>115.103462 109.974701</density>
 						<aoTextureSize>1024 512</aoTextureSize>
@@ -5292,6 +5293,7 @@
 						<collisionModelClient>vehicles/japan/J39_Type_57/collision_client/Gun_04.model</collisionModelClient>
 					</hitTester>
 					<edgeByVisualModel>false</edgeByVisualModel>
+					<muzzleBrake>HORIZONTAL</muzzleBrake>
 					<camouflage>
 						<density>114.052971 106.070206</density>
 						<aoTextureSize>1024 512</aoTextureSize>

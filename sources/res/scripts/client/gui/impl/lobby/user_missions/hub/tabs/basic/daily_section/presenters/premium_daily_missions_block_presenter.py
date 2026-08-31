@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from constants import PremiumConfigs
 from gui.Scaleform.daapi.view.lobby.store.browser.shop_helpers import getBuyPremiumUrl
 from gui.impl.gen.view_models.views.lobby.user_missions.hub.tabs.basic_missions.premium_daily.premium_daily_mission_model import PremiumDailyMissionModel
@@ -5,7 +6,7 @@ from gui.impl.gen.view_models.views.lobby.user_missions.hub.tabs.basic_missions.
 from gui.impl.lobby.missions.missions_helpers import isPremiumPlusAccount, markQuestProgressAsViewed
 from gui.impl.lobby.missions.missions_helpers import needToUpdateQuestsInModelByIds
 from gui.impl.lobby.user_missions.hub.tabs.basic.daily_section.presenters.base_missions_block_presenter import BaseMissionsBlockPresenter
-from gui.server_events.events_helpers import isPremiumQuestsEnable, premMissionsSortFunc
+from gui.server_events.events_helpers import isPremiumQuestsEnable, PremMissionsSortKey
 from gui.server_events.settings import visitEventsGUI
 from gui.shared.event_dispatcher import showShop
 from helpers import dependency
@@ -58,7 +59,7 @@ class PremiumDailyMissionsBlockPresenter(BaseMissionsBlockPresenter[PremiumDaily
         model.setIsAvailable(isPremAcc)
         if not isPremAcc or not self._isBlockEnabled:
             return
-        quests = sorted(self.eventsCache.getPremiumQuests().values(), cmp=premMissionsSortFunc)
+        quests = sorted(self.eventsCache.getPremiumQuests().values(), key=PremMissionsSortKey)
         missionsList = model.getMissionsList()
         questIdsInModel = [ m.getId() for m in missionsList ]
         if not needToUpdateQuestsInModelByIds(quests, questIdsInModel):

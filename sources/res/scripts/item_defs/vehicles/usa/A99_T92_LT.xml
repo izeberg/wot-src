@@ -8,7 +8,7 @@
 		<loader/>
 	</crew>
 	<supplySlots>3 1 1 6 6 6 7 8 8 8</supplySlots>
-	<postProgressionTree>role_LT_universal</postProgressionTree>
+	<postProgressionTree>role_LT_scout</postProgressionTree>
 	<customRoleSlotOptions>2 4</customRoleSlotOptions>
 	<speedLimits>
 		<forward>60</forward>
@@ -1316,6 +1316,49 @@
 					<!--BW_String-->
 				</clipAngle>
 				<anchorShift>0.603147</anchorShift>
+			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18000</slotId>
+				<position>-1.577709 0.280375 -0.383817</position>
+				<rotation>
+					0 0 1.570796
+					<!--BW_String-->
+				</rotation>
+				<scale>1 1 1</scale>
+				<applyType>universal</applyType>
+				<size>small</size>
+			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18001</slotId>
+				<position>
+					1.578 0.280375 -0.383817
+					<!--BW_String-->
+				</position>
+				<rotation>
+					0 3.141593 1.570796
+					<!--BW_String-->
+				</rotation>
+				<scale>1 1 1</scale>
+				<applyType>universal</applyType>
+				<size>small</size>
+			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18002</slotId>
+				<position>0.000003 0.326349 -2.353512</position>
+				<rotation>
+					-0 -1.570797 1.570796
+					<!--BW_String-->
+				</rotation>
+				<scale>
+					1 0.999999 1
+					<!--BW_String-->
+				</scale>
+				<applyType>universal</applyType>
+				<size>small</size>
+				<hangerId>12</hangerId>
 			</slot>
 		</customizationSlots>
 		<customization>
@@ -3936,6 +3979,17 @@
 							<anchorShift>0.506308</anchorShift>
 						</slot>
 						<slot>
+							<slotType>attachment</slotType>
+							<slotId>48000</slotId>
+							<size>small</size>
+							<position>0.000002 0.291618 0.471346</position>
+							<rotation>0 0 -0</rotation>
+							<scale>1 1 1</scale>
+							<enableVisTunnel>true</enableVisTunnel>
+							<applyType>gunMantlet</applyType>
+							<hangerId>2</hangerId>
+						</slot>
+						<slot>
 							<slotType>insigniaOnGun</slotType>
 							<slotId>49000</slotId>
 							<rayStart>
@@ -3963,6 +4017,7 @@
 						</customizableVehicleAreas>
 					</customization>
 					<edgeByVisualModel>false</edgeByVisualModel>
+					<muzzleBrake>HORIZONTAL</muzzleBrake>
 					<camouflage>
 						<tiling>
 							1 0.5 0.000000 0.000000
@@ -4197,6 +4252,17 @@
 						<!--BW_String-->
 					</clipAngle>
 					<anchorShift>0.039894</anchorShift>
+				</slot>
+				<slot>
+					<slotType>attachment</slotType>
+					<slotId>38000</slotId>
+					<position>0.818561 0.781305 -0.055452</position>
+					<rotation>0 0 -0</rotation>
+					<scale>1 1 1</scale>
+					<applyType>turret</applyType>
+					<size>small</size>
+					<hangerId>16</hangerId>
+					<enableVisTunnel>true</enableVisTunnel>
 				</slot>
 			</customizationSlots>
 			<customization>

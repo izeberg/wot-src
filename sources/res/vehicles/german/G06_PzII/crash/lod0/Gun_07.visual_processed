@@ -62,7 +62,7 @@
 						<Bool>false</Bool>
 					</property>
 				</material>
-				<groupOrigin>-0.109919 0.003940 0.113210</groupOrigin>
+				<groupOrigin>-0.109919 0.003940 0.464597</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -71,5 +71,5 @@
 		<max>0.261135 0.129378 1.003487</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>100132</geometrySize>
+	<geometrySize>91344</geometrySize>
 </root>

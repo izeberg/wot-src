@@ -6,8 +6,8 @@
 		<firstMip>0</firstMip>
 		<atlas>
 			<name>Albedo</name>
-			<width>8192</width>
-			<height>8192</height>
+			<width>4096</width>
+			<height>4096</height>
 			<format>BC7</format>
 			<constrains>
 				<minWidth>128</minWidth>
@@ -19,8 +19,8 @@
 		</atlas>
 		<atlas>
 			<name>Normal</name>
-			<width>8192</width>
-			<height>8192</height>
+			<width>4096</width>
+			<height>4096</height>
 			<format>BC7</format>
 			<constrains>
 				<minWidth>128</minWidth>
@@ -32,8 +32,8 @@
 		</atlas>
 		<atlas>
 			<name>GlossMetallic</name>
-			<width>8192</width>
-			<height>8192</height>
+			<width>4096</width>
+			<height>4096</height>
 			<format>BC7</format>
 			<constrains>
 				<minWidth>128</minWidth>

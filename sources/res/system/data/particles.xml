@@ -208,6 +208,7 @@
 		<fn_effect_bin>particles/content_forward/PFX/Tank/auto_shoot/shots/shot_50mb.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Tank/auto_shoot/shots/shot_50mb_end.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Tank/auto_shoot/shots/shot_50mb_start.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Tank/shots/shot_MTLS.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/customization/Ch62_BZ_75_M/Ch62_hull_hit.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/customization/Ch62_BZ_75_M/Ch62_steam.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/customization/Ch62_BZ_75_M/Ch62_steam_smoke.eff</fn_effect_bin>
@@ -754,8 +755,8 @@
 		<fn_effect_bin>particles/content_forward/PFX/Tank/auto_shoot/hits/dirtHit_AP_CR_2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Tank/auto_shoot/hits/dirtHit_AP_CR_2_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Tank/auto_shoot/hits/dirtHit_AP_CR_2_6.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Tank/auto_shoot/hits/dirtHit_AP_CR_2_add.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Tank/auto_shoot/hits/dirthit_ap_cr_2_add.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Tank/auto_shoot/hits/dirtHit_AP_CR_2_add.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Tank/auto_shoot/hits/dirtHit_AP_CR_2_trace_P_big.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Tank/auto_shoot/hits/dirtHit_AP_CR_2_trace_P_med.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Tank/auto_shoot/hits/dirtHit_AP_CR_2_trace_P_small.vfx</fn_effect_bin>
@@ -1660,7 +1661,6 @@
 		<fn_effect_bin>particles/content_forward/PFX/Tank/shots/shot_main_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Tank/shots/shot_medium_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Tank/shots/shot_medium_02.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Tank/shots/shot_MTSL.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Tank/shots/shot_small_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Tank/shots/shot_small_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Tank/shots/shot_small_auto_01.vfx</fn_effect_bin>
@@ -1951,6 +1951,7 @@
 		<fn_effect_bin>particles/Shells_Eff/trace_HE_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/trace_HE_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/trace_HE_4.eff</fn_effect_bin>
+		<fn_effect_bin>particles/shells_eff/trace_rocket_jp_td.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/trace_SA_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/trace_SA_4.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/trace_SC_3.eff</fn_effect_bin>
@@ -2103,8 +2104,8 @@
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/shellFall_AP_CR_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/shellFall_AP_CR_2_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/shellFall_AP_CR_2_6.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Tank/auto_shoot/hits/ShellFall_AP_CR_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/shellFall_AP_CR_3.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/hits/ShellFall_AP_CR_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/snowHit_AP_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/snowHit_AP_1_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/snowHit_AP_1_6.eff</fn_effect_bin>
@@ -2153,8 +2154,8 @@
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_AP_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_AP_2_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_AP_2_6.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_AP_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/WaterHit_AP_3.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_AP_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_AP_CR_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_AP_CR_1_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_AP_CR_1_6.eff</fn_effect_bin>
@@ -3089,6 +3090,30 @@
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/Rocket_end.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/Rocket_end.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/trails_long_01_6x1.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/trails_long_01_6x1.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/curly_loop_01.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/curly_loop_01.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/eff_customization.dds</texture>
 		</preload>
 		<preload>
@@ -3146,6 +3171,10 @@
 		<preload>
 			<shader>\data\shaders\ps.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/eff_tex_fog.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_tex_hangar_v4.dds</texture>
 		</preload>
 		<fn_effect_bin>particles/tank/customization/It36_Progetto_C45_mod_71_M/it36_movement_sand.eff</fn_effect_bin>
 		<fn_effect_bin>particles/tank/customization/It36_Progetto_C45_mod_71_M/it36_idle_sand.eff</fn_effect_bin>
@@ -3206,6 +3235,9 @@
 		<fn_effect_bin>particles/tank/rocket_accelerator/idle_rocket_ptz78.eff</fn_effect_bin>
 		<fn_effect_bin>particles/tank/rocket_accelerator/end_rocket_ptz78.eff</fn_effect_bin>
 		<fn_effect_bin>particles/tank/rocket_accelerator/fail_smoke_ptz78.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Shells_Eff/trace_rocket_jp_td.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/shots/shot_rocket_start.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/shots/shot_MTLS.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/shots/gw_90_ground_start.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/shots/gw_90_sand_start.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/shots/gw_90_snow_start.eff</fn_effect_bin>
@@ -3309,6 +3341,9 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/rocket_accelerator/idle_rocket_ptz78.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/rocket_accelerator/end_rocket_ptz78.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/rocket_accelerator/fail_smoke_ptz78.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/trace_rocket_jp_td.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/shots/shot_rocket_start.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/shots/shot_MTLS.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/shots/gw_90_ground_start.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/shots/gw_90_sand_start.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/shots/gw_90_snow_start.vfx</fn_effect_bin>
@@ -3362,6 +3397,16 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/mechanics/extinguisher_base_steam.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/mechanics/extinguisher_steam_single.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/mechanics/heat_coil.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/mechanics/chamber_shot_tiny.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/mechanics/chamber_shot_tiny.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/mechanics/chamber_shot.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/mechanics/chamber_shot.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/mechanics/chamber_shot_box.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/mechanics/chamber_shot_box.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/mechanics/chamber_shot_disc.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/mechanics/chamber_shot_disc.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/mechanics/chamber_shot_disc_big.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/mechanics/chamber_shot_disc_big.vfx</fn_effect_bin>
 		<preloadVisual>particles/mesh_particles/scale_golden_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/scale_golden_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/mushroom_01.visual</preloadVisual>
@@ -3469,9 +3514,8 @@
 		<preloadVisual>particles/Tank/mechanics/ion_engine_glow.visual</preloadVisual>
 		<preloadVisual>particles/Tank/mechanics/ion_engine_glow_side.visual</preloadVisual>
 		<preloadVisual>particles/3D_Customization/Cus_261_FCN_Tiger/Cus_261_FCN_Tiger_eyes.visual</preloadVisual>
-		<preloadVisual>particles/3D_Customization/Cus_284_FCN_Totem/Cus_284_FCN_Totem_eyes.visual</preloadVisual>
-		<preloadVisual>particles/3D_Customization/Cus_284_FCN_Totem/Cus_284_FCN_Totem_smoke.visual</preloadVisual>
-		<preloadVisual>particles/3D_Customization/Cus_284_FCN_Totem/Cus_284_FCN_Totem_idle.visual</preloadVisual>
+		<preloadVisual>particles/3D_Customization/Cus_280_PM3_Laser/Cus_280_PM3_lights.visual</preloadVisual>
+		<preloadVisual>particles/3D_Customization/Cus_281_PM3_Rifle/normal/lod0/Cus_281_PM3_Rifle_light.visual</preloadVisual>
 		<fn_effect_bin>particles/Tank/exhaust/cs67_turbo.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/exhaust/cs67_turbo.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/exhaust/cs67_turbo_start.eff</fn_effect_bin>
@@ -3506,14 +3550,215 @@
 		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_229_Challenges_Insignia/Cus_229_Challenges_Insignia_fire.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/3D_Customization/Cus_233_Challenges_Armor/cus_233_challenges_armor_smoke.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_233_Challenges_Armor/cus_233_challenges_armor_smoke.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_243_JM_BBQ/Cus_243_CoalSmoke.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_243_JM_BBQ/Cus_243_CoalHeat.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/customization/Ch47_BZ_176_KS_3Dst/Ch47_BZ_176_KS_3Dst_smoke_idle.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/customization/Ch47_BZ_176_KS_3Dst/Ch47_BZ_176_KS_3Dst_smoke_idle.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/customization/Ch47_BZ_176_KS_3Dst/Ch47_BZ_176_KS_3Dst_smoke_trigger.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/customization/Ch47_BZ_176_KS_3Dst/Ch47_BZ_176_KS_3Dst_smoke_trigger.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/customization/CH48_BZ_75_OSD_3DSt/CH48_BZ_75_OSD_fire.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/customization/Ch48_BZ_75_OSD_3Dst/CH48_BZ_75_OSD_fire.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_243_JM_BBQ/Cus_243_CoalSmoke.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_243_JM_BBQ/Cus_243_CoalHeat.vfx</fn_effect_bin>
+		<preloadVisual>particles/3D_Customization/Cus_265_WT_Gun/Cus_265_sparks.visual</preloadVisual>
+		<preloadVisual>particles/3D_Customization/Cus_267_WT_Trap/Cus_267_FX_mesh.visual</preloadVisual>
+		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_267_WT_Trap/cus_267_ElectroCharge.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/3D_Customization/Cus_249_BP21_J_Machinegun/cus_249_shot_12mm.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_249_BP21_J_Machinegun/cus_249_shot_12mm.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/customization/Ch74_Waffentrager_15_3Dst/shot_lightning.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/customization/Ch74_Waffentrager_15_3Dst/shot_lightning.vfx</fn_effect_bin>
+		<preloadVisual>particles/3D_Customization/Cus_250_BP21_J_Searchlight_01/Cus_250_BP21_Lenses.visual</preloadVisual>
+		<fn_effect_bin>particles/3D_Customization/Cus_254_BP21_R_Machinegun/Cus_254_shot_12mm.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_254_BP21_R_Machinegun/Cus_254_shot_12mm.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/3D_Customization/Cus_244_BP21_GB_Browning/Cus_244_BP21_shot_12mm.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_244_BP21_GB_Browning/Cus_244_BP21_shot_12mm.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/shot/sparks.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/shot/shot_impulses_vf.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/shot/powder_gases.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/shot/muzzle_flames_sniperscore.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/shot/muzzle_flames_low_caliber.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/shot/muzzle_flames.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/shot/heat_haze.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/shot/gas_burst.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/shot/cpu_force_fields.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/shot/bore_evacuator.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/shot/blast_wave.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/shot/auto/sparks_ac.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/shot/auto/shot_impulses_vf_start_ac.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/shot/auto/shot_impulses_vf_ac.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/shot/auto/powder_gases_stop_ac.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/shot/auto/powder_gases_start_ac.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/shot/auto/powder_gases_slow_mb_ac.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/shot/auto/powder_gases_slow_ac.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/shot/auto/powder_gases_ac_lfr.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/shot/auto/powder_gases_ac.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/shot/auto/muzzle_flames_start.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/shot/auto/muzzle_flames_long_directional_ac.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/shot/auto/muzzle_flames_directional_start.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/shot/auto/muzzle_flames_ac.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/shot/auto/gas_burst_mb_ac.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/shot/auto/gas_burst_ac.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/shot/auto/cpu_force_fields_continious_ac.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/shot/auto/cpu_force_fields.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/Sparks_p_Imposters_lfr.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/Sparks_p_Imposters.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/Ricochet_sparks.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/Ricochet_shell_explosion.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/Ricochet_2nd.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/Post_effect_p_smoke.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/Post_effect_nonp_smoke.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/HE_SPG_post_smoke_big.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/HE_SPG_non_p_sparks.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/HE_sparks_bursts.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/HE_post_smoke_big_lfr.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/HE_post_smoke_big.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/HE_non_p_sparks_lfr.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/HE_non_p_sparks.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/HE_HESH_SPG_splash_area.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/HE_HESH_SPG_post_smoke_big.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/he_hesh_spg_non_p_sparks.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/HC_sparks_bursts.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/HC_shell_explosion.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/HC_p_sparks.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/HC_nonp_shell_explosion.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/HC_non_p_sparks.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/HC_non_p_explosion_circle.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/HC_explosion_circle.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/GPU_tracer.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/auto/ricochet_sparks_ac.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/auto/Post_effect_p_smoke_ac.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/auto/HE_sparks_bursts_ac.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/auto/HE_shell_flashes_ac.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/auto/HE_non_p_sparks_ac.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/auto/HE_non_p_shell_explosion_ac.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/auto/APCR_sparks_bursts_ac.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/auto/APCR_p_sparks_ac.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/auto/APCR_p_shell_explosion_ac.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/auto/APCR_non_p_sparks_ac.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/auto/APCR_non_p_shell_flashes_ac.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/auto/APCR_non_p_shell_explosion_ac.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/auto/APCR_non_p_shell_explosion_02_ac.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/auto/AP_sparks_bursts_ac.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/auto/AP_p_sparks_ac.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/auto/AP_p_shell_explosion_ac.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/auto/AP_non_p_sparks_ac.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/auto/AP_non_p_shell_flashes_ac.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/auto/AP_non_p_shell_explosion_ac.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/auto/AP_non_p_shell_explosion_02_ac.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/APCR_sparks_bursts.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/APCR_shell_explosion_lfr.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/APCR_shell_explosion.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/APCR_p_sparks_lfr.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/APCR_p_sparks.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/APCR_non_p_sparks_lfr.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/APCR_non_p_sparks.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/APCR_non_p_shell_explosion_lfr.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/APCR_non_p_shell_explosion.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/AP_sparks_bursts.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/AP_shell_explosion_lfr.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/AP_shell_explosion.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/AP_p_sparks_lfr.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/AP_p_sparks.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/AP_non_p_sparks_lfr.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/AP_non_p_sparks.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/AP_non_p_shell_explosion_lfr.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/AP_non_p_shell_explosion.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/AP_APCR_non_p_trails.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/shot/sparks.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/shot/shot_impulses_vf.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/shot/powder_gases.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/shot/muzzle_flames_sniperscore.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/shot/muzzle_flames_low_caliber.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/shot/muzzle_flames.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/shot/heat_haze.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/shot/gas_burst.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/shot/cpu_force_fields.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/shot/bore_evacuator.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/shot/blast_wave.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/shot/auto/sparks_ac.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/shot/auto/shot_impulses_vf_start_ac.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/shot/auto/shot_impulses_vf_ac.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/shot/auto/powder_gases_stop_ac.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/shot/auto/powder_gases_start_ac.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/shot/auto/powder_gases_slow_mb_ac.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/shot/auto/powder_gases_slow_ac.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/shot/auto/powder_gases_ac_lfr.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/shot/auto/powder_gases_ac.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/shot/auto/muzzle_flames_start.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/shot/auto/muzzle_flames_long_directional_ac.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/shot/auto/muzzle_flames_directional_start.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/shot/auto/muzzle_flames_ac.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/shot/auto/gas_burst_mb_ac.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/shot/auto/gas_burst_ac.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/shot/auto/cpu_force_fields_continious_ac.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/shot/auto/cpu_force_fields.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/Sparks_p_Imposters_lfr.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/Sparks_p_Imposters.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/Ricochet_sparks.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/Ricochet_shell_explosion.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/Ricochet_2nd.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/Post_effect_p_smoke.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/Post_effect_nonp_smoke.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/HE_SPG_post_smoke_big.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/HE_SPG_non_p_sparks.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/HE_sparks_bursts.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/HE_post_smoke_big_lfr.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/HE_post_smoke_big.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/HE_non_p_sparks_lfr.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/HE_non_p_sparks.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/HE_HESH_SPG_splash_area.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/HE_HESH_SPG_post_smoke_big.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/HE_HESH_SPG_non_p_sparks.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/HC_sparks_bursts.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/HC_shell_explosion.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/HC_p_sparks.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/HC_nonp_shell_explosion.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/HC_non_p_sparks.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/HC_non_p_explosion_circle.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/HC_explosion_circle.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/GPU_tracer.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/auto/ricochet_sparks_ac.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/auto/Post_effect_p_smoke_ac.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/auto/HE_sparks_bursts_ac.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/auto/HE_shell_flashes_ac.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/auto/HE_non_p_sparks_ac.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/auto/HE_non_p_shell_explosion_ac.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/auto/APCR_sparks_bursts_ac.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/auto/APCR_p_sparks_ac.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/auto/APCR_p_shell_explosion_ac.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/auto/APCR_non_p_sparks_ac.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/auto/APCR_non_p_shell_flashes_ac.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/auto/APCR_non_p_shell_explosion_ac.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/auto/APCR_non_p_shell_explosion_02_ac.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/auto/AP_sparks_bursts_ac.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/auto/AP_p_sparks_ac.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/auto/AP_p_shell_explosion_ac.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/auto/AP_non_p_sparks_ac.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/auto/AP_non_p_shell_flashes_ac.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/auto/AP_non_p_shell_explosion_ac.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/auto/AP_non_p_shell_explosion_02_ac.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/APCR_sparks_bursts.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/APCR_shell_explosion_lfr.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/APCR_shell_explosion.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/APCR_p_sparks_lfr.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/APCR_p_sparks.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/APCR_non_p_sparks_lfr.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/APCR_non_p_sparks.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/APCR_non_p_shell_explosion_lfr.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/APCR_non_p_shell_explosion.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/AP_sparks_bursts.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/AP_shell_explosion_lfr.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/AP_shell_explosion.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/AP_p_sparks_lfr.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/AP_p_sparks.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/AP_non_p_sparks_lfr.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/AP_non_p_sparks.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/AP_non_p_shell_explosion_lfr.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/AP_non_p_shell_explosion.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/AP_APCR_non_p_trails.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/shots/fires_ch41.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/tank/shots/fires_ch41.eff</fn_effect_bin>
+		<preloadVisual>particles/3D_Customization/Cus_284_FCN_Totem/Cus_284_FCN_Totem_eyes.visual</preloadVisual>
+		<preloadVisual>particles/3D_Customization/Cus_284_FCN_Totem/Cus_284_FCN_Totem_smoke.visual</preloadVisual>
+		<preloadVisual>particles/3D_Customization/Cus_284_FCN_Totem/Cus_284_FCN_Totem_idle.visual</preloadVisual>
 		<fn_effect_bin>particles/3D_Customization/Cus_284_FCN_Totem/Cus_284_glow.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_284_FCN_Totem/Cus_284_glow.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Battle_Royal/Afterburning/br_nitro_gearup.vfx</fn_effect_bin>
@@ -4002,8 +4247,8 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/dirtHit_AP_CR_2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/dirtHit_AP_CR_2_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/dirtHit_AP_CR_2_6.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/dirthit_ap_cr_2_add.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/dirtHit_AP_CR_2_add.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/dirthit_ap_cr_2_add.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/dirtHit_AP_CR_2_trace_P_big.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/dirtHit_AP_CR_2_trace_P_med.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/dirtHit_AP_CR_2_trace_P_small.vfx</fn_effect_bin>
@@ -5022,7 +5267,6 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/shots/shot_main_medium_ForceField.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/shots/shot_medium_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/shots/shot_medium_02.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Tank/shots/shot_MTSL.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/shots/shot_small_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/shots/shot_small_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/shots/shot_small_auto_01.vfx</fn_effect_bin>
@@ -5316,6 +5560,7 @@
 		<fn_effect_bin>particles/Shells_Eff/trace_HE_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/trace_HE_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/trace_HE_4.eff</fn_effect_bin>
+		<fn_effect_bin>particles/shells_eff/trace_rocket_jp_td.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/trace_SA_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/trace_SA_4.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/trace_SC_3.eff</fn_effect_bin>
@@ -5468,8 +5713,8 @@
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/shellFall_AP_CR_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/shellFall_AP_CR_2_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/shellFall_AP_CR_2_6.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Tank/auto_shoot/hits/ShellFall_AP_CR_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/shellFall_AP_CR_3.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/hits/ShellFall_AP_CR_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/snowHit_AP_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/snowHit_AP_1_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/snowHit_AP_1_6.eff</fn_effect_bin>
@@ -5518,8 +5763,8 @@
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_AP_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_AP_2_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_AP_2_6.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_AP_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/WaterHit_AP_3.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_AP_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_AP_CR_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_AP_CR_1_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_AP_CR_1_6.eff</fn_effect_bin>
@@ -6337,7 +6582,6 @@
 		<fn_effect_bin>particles/Tank/shots/shot_main_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/shots/shot_medium_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/shots/shot_medium_02.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Tank/shots/shot_MTLS.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/shots/shot_small_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/shots/shot_small_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/shots/shot_small_auto_01.eff</fn_effect_bin>

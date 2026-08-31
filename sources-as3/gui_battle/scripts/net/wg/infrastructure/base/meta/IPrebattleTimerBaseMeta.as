@@ -13,5 +13,7 @@ package net.wg.infrastructure.base.meta
       function as_hideAll(param1:Boolean) : void;
       
       function as_setWinConditionText(param1:String) : void;
+      
+      function as_togglePreBattleHighlightsVisibility(param1:Boolean) : void;
    }
 }

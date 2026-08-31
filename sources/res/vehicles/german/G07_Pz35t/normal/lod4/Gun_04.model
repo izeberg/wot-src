@@ -4,13 +4,7 @@
 	<tank>true</tank>
 	<materialNames/>
 	<visibilityBox>
-		<min>
-			-0.0285009 -0.0670295 0.178735
-			<!--BW_String-->
-		</min>
-		<max>
-			0.0289924 -0.00953655 2.23217
-			<!--BW_String-->
-		</max>
+		<min>-0.109079 -0.240447 -0.116890</min>
+		<max>0.125185 0.192780 1.588050</max>
 	</visibilityBox>
 </root>

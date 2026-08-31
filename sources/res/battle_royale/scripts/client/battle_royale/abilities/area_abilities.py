@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import CGF, Math
 from battle_royale.abilities.adaptation_restore_health import AdaptationHealthRestoreEffectArea
 from cgf_script.registration import ComponentProperty, registerComponent

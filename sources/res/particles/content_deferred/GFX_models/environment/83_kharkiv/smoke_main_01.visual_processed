@@ -24,6 +24,10 @@
 					<materialKind>0</materialKind>
 					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
 					<property>
+						g_enableEnvMultiplier
+						<Bool>true</Bool>
+					</property>
+					<property>
 						diffuseMap
 						<Texture>particles/content_deferred/GFX_models/GFX_textures/83_main_smoke_01.dds</Texture>
 					</property>
@@ -41,7 +45,7 @@
 					</property>
 					<property>
 						lightMultipliers
-						<Vector4>2.400000 0.300000 0.100000 0.000000</Vector4>
+						<Vector4>1.804511 0.300000 0.100000 0.000000</Vector4>
 					</property>
 					<property>
 						FreshnelColor

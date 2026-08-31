@@ -21,6 +21,10 @@
 				<material>
 					<identifier>08 - Default</identifier>
 					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
+					<property>
+						g_enableEnvMultiplier
+						<Bool>true</Bool>
+					</property>
 					<collisionFlags>255</collisionFlags>
 					<materialKind>0</materialKind>
 					<property>
@@ -46,6 +50,10 @@
 					<property>
 						alphaFreshnelEnable
 						<Bool>true</Bool>
+					</property>
+					<property>
+						lightMultipliers
+						<Vector4>1.785714 0.000000 0.000000 0.000000</Vector4>
 					</property>
 				</material>
 				<groupOrigin>4.100574 13.257080 -0.742302</groupOrigin>

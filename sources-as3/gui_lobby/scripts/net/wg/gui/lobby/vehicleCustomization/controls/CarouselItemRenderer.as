@@ -115,6 +115,8 @@ package net.wg.gui.lobby.vehicleCustomization.controls
       
       private static const COUNTER_OFFSET:int = -20;
       
+      private static const COUNTER_TF_PADDING:int = 15;
+      
       private static const EDIT_BTN_COUNTER_OFFSET_X:int = -22;
       
       private static const EDIT_BTN_COUNTER_OFFSET_Y:int = -18;
@@ -331,6 +333,7 @@ package net.wg.gui.lobby.vehicleCustomization.controls
          this.editBtn.visible = this.editBtnSmall.visible = this.btnBackground.visible = this.editBtnHint.visible = this.editBtnCounter.visible = this.editableSlotHint.visible = false;
          this.editableSlotHint.mouseChildren = this.editBtnCounter.mouseChildren = this.editBtnHint.mouseChildren = this.editableSlotHint.mouseEnabled = this.editBtnCounter.mouseEnabled = this.editBtnHint.mouseEnabled = false;
          this.editableSlotHint.stop();
+         this.counter.tfPadding = COUNTER_TF_PADDING;
          this.storageIcon.visible = this.storageTF.visible = false;
          this.storageIcon.addEventListener(Event.CHANGE,this.onStorageIconChangeHandler);
          this.storageIcon.source = RES_ICONS.MAPS_ICONS_CUSTOMIZATION_STORAGE_ICON;

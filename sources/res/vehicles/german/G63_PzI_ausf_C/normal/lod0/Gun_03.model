@@ -3,16 +3,10 @@
 	<tank>true</tank>
 	<materialNames/>
 	<visibilityBox>
-		<min>
-			-0.207106 -0.154668 -0.0172783
-			<!--BW_String-->
-		</min>
-		<max>
-			0.191658 0.16122 2.25037
-			<!--BW_String-->
-		</max>
+		<min>-0.207105 -0.154667 -0.017610</min>
+		<max>0.191658 0.161220 1.533412</max>
 	</visibilityBox>
 	<nodefullVisual>vehicles/german/G63_PzI_ausf_C/normal/lod0/Gun_03</nodefullVisual>
 	<parent>vehicles/german/G63_PzI_ausf_C/normal/lod1/Gun_03</parent>
-	<extent>32</extent>
+	<extent>32.000000</extent>
 </root>

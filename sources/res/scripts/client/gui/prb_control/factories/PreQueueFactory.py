@@ -47,7 +47,6 @@ class PreQueueFactory(ControlFactory):
 
     def createEntry(self, ctx):
         LOG_ERROR('preQueue functional has not any entries')
-        return
 
     def createEntryByAction(self, action):
         result = collectEntryPoint(action.actionName)

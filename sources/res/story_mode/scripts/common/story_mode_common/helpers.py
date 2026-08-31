@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from external_strings_utils import strtobool
 from story_mode_common.story_mode_constants import LONG_INT_HALF_SHIFT, MissionType, DISABLE_REGULAR_OPERATIONS

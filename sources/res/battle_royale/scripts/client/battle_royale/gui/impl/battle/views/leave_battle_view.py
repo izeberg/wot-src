@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.impl.dialogs.dialog_template import DialogTemplateView
 from gui.impl.dialogs.dialog_template_button import ConfirmButton, CancelButton
 from gui.impl.gen import R

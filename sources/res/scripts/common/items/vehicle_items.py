@@ -437,7 +437,7 @@ class Shell(BasicItem):
                  'piercingPowerRandomizationType', 'icon', 'iconName', 'isGold',
                  'type', 'stun', 'effectsCaliber', 'effectsIndex', 'prefabEffectsIndex',
                  'secondaryAttackReason', 'isDamageMutable', 'maxDistance', 'dynamicEffectsIndexes',
-                 'obstaclesDamage', 'obstaclesPowerReduction')
+                 'obstaclesDamage', 'obstaclesPowerReduction', 'chanceToHitByProjectileModifier')
 
     def __init__(self, typeID, componentID, componentName, compactDescr):
         super(Shell, self).__init__(typeID, componentID, componentName, compactDescr)
@@ -463,6 +463,7 @@ class Shell(BasicItem):
         self.isDamageMutable = False
         self.obstaclesDamage = None
         self.obstaclesPowerReduction = None
+        self.chanceToHitByProjectileModifier = component_constants.ONE_FLOAT
         return
 
     def __repr__(self):

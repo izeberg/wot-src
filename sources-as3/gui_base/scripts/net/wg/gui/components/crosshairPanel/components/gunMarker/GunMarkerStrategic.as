@@ -89,6 +89,8 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker
       
       protected var _nodesTotal:int = 0;
       
+      private var _currentLabel:String = null;
+      
       public function GunMarkerStrategic()
       {
          this._nodes = new Vector.<MovieClip>();
@@ -173,6 +175,11 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker
       protected function setCurrentReloading(param1:Number) : void
       {
          var _loc2_:String = param1 < 1 ? NODE_TYPE_RED : NODE_TYPE_GREEN;
+         if(_loc2_ == this._currentLabel)
+         {
+            return;
+         }
+         this._currentLabel = _loc2_;
          var _loc3_:int = 0;
          while(_loc3_ < this._nodesTotal)
          {

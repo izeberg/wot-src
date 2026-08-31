@@ -36,12 +36,14 @@
 		<A_220B_78>32</A_220B_78>
 		<A_220R>33</A_220R>
 		<A_220_CFE_B>34</A_220_CFE_B>
+		<A_220C>35</A_220C>
 		<_10WSc>36</_10WSc>
 		<A-220B_1_MK>257</A-220B_1_MK>
 		<A_220_YB>258</A_220_YB>
 		<CWT_165_1>259</CWT_165_1>
 		<A_220A-DZT_CFE_A>260</A_220A-DZT_CFE_A>
 		<A_220A_2>262</A_220A_2>
+		<A_220B_1_F>263</A_220B_1_F>
 		<A_220A_CFE_D>264</A_220A_CFE_D>
 		<A-220B_FL>501</A-220B_FL>
 		<A-220B_1_7x7>502</A-220B_1_7x7>
@@ -218,6 +220,21 @@
 				<!--BW_String-->
 			</repairCost>
 		</A-220B_1>
+		<A_220B_1_F>
+			<userString>#china_vehicles:A_220B_1_F</userString>
+			<tags/>
+			<level>10</level>
+			<price>54000</price>
+			<notInShop>true</notInShop>
+			<weight>40</weight>
+			<distance>750</distance>
+			<maxHealth>180</maxHealth>
+			<maxRegenHealth>108</maxRegenHealth>
+			<repairCost>
+				3.5
+				<!--BW_String-->
+			</repairCost>
+		</A_220B_1_F>
 		<A-220B_1_MK>
 			<userString>#china_vehicles:A-220B_1_MK</userString>
 			<tags/>
@@ -639,6 +656,18 @@
 			<maxRegenHealth>125</maxRegenHealth>
 			<repairCost>4</repairCost>
 		</A_220B_78>
+		<A_220C>
+			<userString>#china_vehicles:A_220C</userString>
+			<tags/>
+			<level>11</level>
+			<notInShop>true</notInShop>
+			<price>80000</price>
+			<weight>100</weight>
+			<distance>800</distance>
+			<maxHealth>250</maxHealth>
+			<maxRegenHealth>125</maxRegenHealth>
+			<repairCost>4</repairCost>
+		</A_220C>
 		<_789T>
 			<userString>#china_vehicles:_789T</userString>
 			<tags/>

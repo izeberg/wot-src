@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.battle_results.composer import IBattleResultStatsCtrl
 from gui.battle_results.components import base
 from battle_royale.gui.battle_results import templates

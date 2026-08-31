@@ -445,7 +445,7 @@ package
       
       public static const CAROUSEL_TANK_FILTER_SUPPORT:String = "#menu:carousel_tank_filter/support";
       
-      public static const CAROUSEL_TANK_FILTER_WHEELED:String = "#menu:carousel_tank_filter/wheeled";
+      public static const CAROUSEL_TANK_FILTER_SCOUT:String = "#menu:carousel_tank_filter/scout";
       
       public static const CAROUSEL_TANK_FILTER_READY:String = "#menu:carousel_tank_filter/ready";
       
@@ -1087,6 +1087,10 @@ package
       
       public static const TANK_PARAMS_LOWCHARGESHOTBLOCKDURATION:String = "#menu:tank_params/lowChargeShotBlockDuration";
       
+      public static const TANK_PARAMS_SHELLCALIBRATIONAVGPENETRATION:String = "#menu:tank_params/shellCalibrationAvgPenetration";
+      
+      public static const TANK_PARAMS_SHELLCALIBRATIONAVGDAMAGE:String = "#menu:tank_params/shellCalibrationAvgDamage";
+      
       public static const TANK_PARAMS_MAXHEALTH:String = "#menu:tank_params/maxHealth";
       
       public static const TANK_PARAMS_VEHICLEWEIGHT:String = "#menu:tank_params/vehicleWeight";
@@ -1283,6 +1287,10 @@ package
       
       public static const TANK_PARAMS_EXTENDEDTITLE_DUALACCURACYCOOLINGDELAY:String = "#menu:tank_params/extendedTitle/dualAccuracyCoolingDelay";
       
+      public static const TANK_PARAMS_EXTENDEDTITLE_BUSTLEFEEDSWITCHINGTOBAF:String = "#menu:tank_params/extendedTitle/bustleFeedSwitchingToBAF";
+      
+      public static const TANK_PARAMS_EXTENDEDTITLE_BUSTLEFEEDMAXSPEED:String = "#menu:tank_params/extendedTitle/bustleFeedMaxSpeed";
+      
       public static const TANK_PARAMS_VALUES_PARAM12_VALUE0:String = "#menu:tank_params/values/param12/value0";
       
       public static const TANK_PARAMS_VALUES_PARAM12_VALUE1:String = "#menu:tank_params/values/param12/value1";
@@ -1340,6 +1348,8 @@ package
       public static const TANK_PARAMS_PROPELLANTPOSTLIMITAIMINGTIME:String = "#menu:tank_params/propellantPostLimitAimingTime";
       
       public static const TANK_PARAMS_PROPELLANTOVERCHARGESWITCHCOOLDOWN:String = "#menu:tank_params/propellantOverchargeSwitchCooldown";
+      
+      public static const TANK_PARAMS_SHELLPARAMSSWITCHINGTIME:String = "#menu:tank_params/shellParamsSwitchingTime";
       
       public static const TANK_PARAMS_T:String = "#menu:tank_params/t";
       
@@ -1405,7 +1415,7 @@ package
       
       public static const TANK_PARAMS_CHARGETIME:String = "#menu:tank_params/chargeTime";
       
-      public static const TANK_PARAMS_PENETRATIONLOSS:String = "#menu:tank_params/penetrationLoss";
+      public static const TANK_PARAMS_SHELLPENETRATIONLOSS:String = "#menu:tank_params/shellPenetrationLoss";
       
       public static const TANK_PARAMS_NO_BRACKETS_KG:String = "#menu:tank_params/no_brackets/kg";
       
@@ -1440,6 +1450,56 @@ package
       public static const TANK_PARAMS_WHEELEDDASHSPEEDLIMITS:String = "#menu:tank_params/wheeledDashSpeedLimits";
       
       public static const TANK_PARAMS_WHEELEDDASHREVERSESPEED:String = "#menu:tank_params/wheeledDashReverseSpeed";
+      
+      public static const TANK_PARAMS_AUXILIARYROCKETLAUNCHERRELOADTIME:String = "#menu:tank_params/auxiliaryRocketLauncherReloadTime";
+      
+      public static const TANK_PARAMS_AUXILIARYROCKETLAUNCHERAVGDAMAGE:String = "#menu:tank_params/auxiliaryRocketLauncherAvgDamage";
+      
+      public static const TANK_PARAMS_AUXILIARYROCKETLAUNCHERPENETRATION:String = "#menu:tank_params/auxiliaryRocketLauncherPenetration";
+      
+      public static const TANK_PARAMS_AUXILIARYROCKETLAUNCHERVELOCITY:String = "#menu:tank_params/auxiliaryRocketLauncherVelocity";
+      
+      public static const TANK_PARAMS_AUXILIARYROCKETLAUNCHERDISPERSION:String = "#menu:tank_params/auxiliaryRocketLauncherDispersion";
+      
+      public static const TANK_PARAMS_AUTORELOADERSURGEMAXCHARGES:String = "#menu:tank_params/autoreloaderSurgeMaxCharges";
+      
+      public static const TANK_PARAMS_AUTORELOADERSURGEINITCHARGES:String = "#menu:tank_params/autoreloaderSurgeInitCharges";
+      
+      public static const TANK_PARAMS_AUTORELOADERSURGECHARGETIMESLOW:String = "#menu:tank_params/autoreloaderSurgeChargeTimeSlow";
+      
+      public static const TANK_PARAMS_AUTORELOADERSURGECHARGETIMEFAST:String = "#menu:tank_params/autoreloaderSurgeChargeTimeFast";
+      
+      public static const TANK_PARAMS_AUTORELOADERSURGEBOOSTEDRELOADTIME:String = "#menu:tank_params/autoreloaderSurgeBoostedReloadTime";
+      
+      public static const TANK_PARAMS_BUSTLEFEEDDAMAGEPERSHOT:String = "#menu:tank_params/bustleFeedDamagePerShot";
+      
+      public static const TANK_PARAMS_BUSTLEFEEDRATEOFFIRE:String = "#menu:tank_params/bustleFeedRateOfFire";
+      
+      public static const TANK_PARAMS_BUSTLEFEEDSWITCHINGTOEASMMODE:String = "#menu:tank_params/bustleFeedSwitchingToEASMMode";
+      
+      public static const TANK_PARAMS_BUSTLEFEEDSWITCHINGTOSTANDARDMODE:String = "#menu:tank_params/bustleFeedSwitchingToStandardMode";
+      
+      public static const TANK_PARAMS_BUSTLEFEEDMAXSPEED:String = "#menu:tank_params/bustleFeedMaxSpeed";
+      
+      public static const TANK_PARAMS_SIGHTPOINTERDEPLOYTIME:String = "#menu:tank_params/sightPointerDeployTime";
+      
+      public static const TANK_PARAMS_SIGHTPOINTERRELOADTIME:String = "#menu:tank_params/sightPointerReloadTime";
+      
+      public static const TANK_PARAMS_SIGHTPOINTERDURATION:String = "#menu:tank_params/sightPointerDuration";
+      
+      public static const TANK_PARAMS_SIGHTPOINTERROTATIONSPEED:String = "#menu:tank_params/sightPointerRotationSpeed";
+      
+      public static const TANK_PARAMS_SIGHTPOINTERSECTORANGLESTART:String = "#menu:tank_params/sightPointerSectorAngleStart";
+      
+      public static const TANK_PARAMS_SIGHTPOINTERSECTORANGLEEND:String = "#menu:tank_params/sightPointerSectorAngleEnd";
+      
+      public static const TANK_PARAMS_SIGHTPOINTERSELFSPOTTINGTIME:String = "#menu:tank_params/sightPointerSelfSpottingTime";
+      
+      public static const TANK_PARAMS_SIGHTPOINTERVIEWRANGE:String = "#menu:tank_params/sightPointerViewRange";
+      
+      public static const TANK_PARAMS_SIGHTPOINTERCONSEALMENTFOLIAGE:String = "#menu:tank_params/sightPointerConsealmentFoliage";
+      
+      public static const TANK_PARAMS_SIGHTPOINTERCONSEALMENTMOVING:String = "#menu:tank_params/sightPointerConsealmentMoving";
       
       public static const EXTRAPARAMS_HEADER:String = "#menu:extraParams/header";
       
@@ -2483,6 +2543,8 @@ package
       
       public static const MODULEINFO_ROCKETACCELERATION:String = "#menu:moduleInfo/rocketAcceleration";
       
+      public static const MODULEINFO_SHELLPARAMSSWITCHER:String = "#menu:moduleInfo/shellParamsSwitcher";
+      
       public static const MODULEINFO_STAGEDJETBOOSTERS:String = "#menu:moduleInfo/stagedJetBoosters";
       
       public static const MODULEINFO_TRACKWITHINTRACK:String = "#menu:moduleInfo/trackWithinTrack";
@@ -2496,6 +2558,8 @@ package
       public static const MODULEINFO_LOWCHARGESHOT:String = "#menu:moduleInfo/lowChargeShot";
       
       public static const MODULEINFO_WHEELEDDASH:String = "#menu:moduleInfo/wheeledDash";
+      
+      public static const MODULEINFO_AUXILIARYROCKETLAUNCHER:String = "#menu:moduleInfo/auxiliaryRocketLauncher";
       
       public static const MODULEINFO_PARAMS_SHOTSPEED:String = "#menu:moduleInfo/params/shotSpeed";
       
@@ -2623,19 +2687,19 @@ package
       
       public static const MODULEINFO_PARAMS_MAXSHOTDISTANCE:String = "#menu:moduleInfo/params/maxShotDistance";
       
-      public static const MODULEINFO_PARAMS_MAXSHOTDISTANCE_FOOTNOTE:String = "#menu:moduleInfo/params/maxShotDistance/footnote";
+      public static const MODULEINFO_PARAMS_FOOTNOTE_MAXSHOTDISTANCE:String = "#menu:moduleInfo/params/footnote/maxShotDistance";
       
-      public static const MODULEINFO_PARAMS_NOPIERCINGDISTANCE_FOOTNOTE:String = "#menu:moduleInfo/params/noPiercingDistance/footnote";
+      public static const MODULEINFO_PARAMS_FOOTNOTE_NOPIERCINGDISTANCE:String = "#menu:moduleInfo/params/footnote/noPiercingDistance";
       
-      public static const MODULEINFO_PARAMS_PIERCINGDISTANCE_FOOTNOTE:String = "#menu:moduleInfo/params/piercingDistance/footnote";
+      public static const MODULEINFO_PARAMS_FOOTNOTE_PIERCINGDISTANCE:String = "#menu:moduleInfo/params/footnote/piercingDistance";
       
-      public static const MODULEINFO_PARAMS_NOPIERCINGDISTANCE_FOOTNOTE_MAXDISTANCE:String = "#menu:moduleInfo/params/noPiercingDistance/footnote/maxDistance";
+      public static const MODULEINFO_PARAMS_FOOTNOTE_NOPIERCINGDISTANCE_MAXDISTANCE:String = "#menu:moduleInfo/params/footnote/noPiercingDistance/maxDistance";
       
-      public static const MODULEINFO_PARAMS_GUARANTEEDDAMAGE_FOOTNOTE:String = "#menu:moduleInfo/params/guaranteedDamage/footnote";
+      public static const MODULEINFO_PARAMS_FOOTNOTE_GUARANTEEDDAMAGE:String = "#menu:moduleInfo/params/footnote/guaranteedDamage";
       
-      public static const MODULEINFO_PARAMS_PENETRATIONLOSS_FOOTNOTE:String = "#menu:moduleInfo/params/penetrationLoss/footnote";
+      public static const MODULEINFO_PARAMS_FOOTNOTE_PENETRATIONLOSS:String = "#menu:moduleInfo/params/footnote/penetrationLoss";
       
-      public static const MODULEINFO_PARAMS_SCREENSARMORMULTIPLIER_FOOTNOTE:String = "#menu:moduleInfo/params/screensArmorMultiplier/footnote";
+      public static const MODULEINFO_PARAMS_FOOTNOTE_SCREENSARMORMULTIPLIER:String = "#menu:moduleInfo/params/footnote/screensArmorMultiplier";
       
       public static const MODULEINFO_PARAMS_STUNMAXDURATION:String = "#menu:moduleInfo/params/stunMaxDuration";
       
@@ -2684,6 +2748,8 @@ package
       public static const MODULEINFO_PARAMS_SCREENSARMORMULTIPLIER:String = "#menu:moduleInfo/params/screensArmorMultiplier";
       
       public static const MODULEINFO_PARAMS_SCREENSARMORMULTIPLIER_VALUE:String = "#menu:moduleInfo/params/screensArmorMultiplier/value";
+      
+      public static const MODULEINFO_PARAMS_CRITICALHITCHANCE:String = "#menu:moduleInfo/params/criticalHitChance";
       
       public static const MODULEINFO_COMPATIBLE_TURRETS:String = "#menu:moduleInfo/compatible/turrets";
       
@@ -4707,9 +4773,13 @@ package
       
       public static const ROLEEXP_ROLEGROUPNAME_ROLE_LT_UNIVERSAL:String = "#menu:roleExp/roleGroupName/role_LT_universal";
       
-      public static const ROLEEXP_ROLENAME_ROLE_LT_WHEELED:String = "#menu:roleExp/roleName/role_LT_wheeled";
+      public static const ROLEEXP_ROLENAME_ROLE_LT_SCOUT:String = "#menu:roleExp/roleName/role_LT_scout";
       
-      public static const ROLEEXP_ROLEGROUPNAME_ROLE_LT_WHEELED:String = "#menu:roleExp/roleGroupName/role_LT_wheeled";
+      public static const ROLEEXP_ROLEGROUPNAME_ROLE_LT_SCOUT:String = "#menu:roleExp/roleGroupName/role_LT_scout";
+      
+      public static const ROLEEXP_ROLENAME_ROLE_LT_SUPPORT:String = "#menu:roleExp/roleName/role_LT_support";
+      
+      public static const ROLEEXP_ROLEGROUPNAME_ROLE_LT_SUPPORT:String = "#menu:roleExp/roleGroupName/role_LT_support";
       
       public static const ROLEEXP_ROLENAME_ROLE_SPG:String = "#menu:roleExp/roleName/role_SPG";
       
@@ -4741,7 +4811,9 @@ package
       
       public static const ROLEEXP_ROLEDESCR_ROLE_LT_UNIVERSAL:String = "#menu:roleExp/roleDescr/role_LT_universal";
       
-      public static const ROLEEXP_ROLEDESCR_ROLE_LT_WHEELED:String = "#menu:roleExp/roleDescr/role_LT_wheeled";
+      public static const ROLEEXP_ROLEDESCR_ROLE_LT_SCOUT:String = "#menu:roleExp/roleDescr/role_LT_scout";
+      
+      public static const ROLEEXP_ROLEDESCR_ROLE_LT_SUPPORT:String = "#menu:roleExp/roleDescr/role_LT_support";
       
       public static const ROLEEXP_ROLEDESCR_ROLE_SPG:String = "#menu:roleExp/roleDescr/role_SPG";
       

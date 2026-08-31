@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging
 from battle_royale.gui.impl.lobby.views.states import BattleRoyaleTournamentQueueState
 from constants import PREBATTLE_TYPE

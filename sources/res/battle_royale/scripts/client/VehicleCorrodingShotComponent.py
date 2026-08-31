@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.battle_control.battle_constants import VEHICLE_VIEW_STATE
 from VehicleAbilityBaseComponent import VehicleAbilityBaseComponent
 

@@ -74,7 +74,7 @@
 				0
 				<material>
 					<identifier>tank_guns_fabric_skinned</identifier>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>0</materialKind>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
 					<property>
@@ -104,7 +104,7 @@
 				1
 				<material>
 					<identifier>tank_guns_skinned</identifier>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>0</materialKind>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
 					<property>
@@ -133,7 +133,7 @@
 					</property>
 					<property>
 						g_heatEmissionCoefficient
-						<Float>1.500000</Float>
+						<Float>3.100000</Float>
 					</property>
 					<property>
 						g_heatMap

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, BigWorld, typing, SoundGroups
 from account_helpers import AccountSettings
 from account_helpers.AccountSettings import COMP7_UI_SECTION, COMP7_LAST_SEASON_WHERE_STATISTICS_SHOWN

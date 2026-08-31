@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F147_AMX29_Belier/crash/lod3/Gun_01</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/french/F147_AMX29_Belier/crash/lod4/Gun_01</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.021243 -0.236838 -1.400156</min>
+		<max>0.505745 0.365644 4.100778</max>
+	</visibilityBox>
+</root>

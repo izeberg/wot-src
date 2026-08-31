@@ -16,13 +16,14 @@ from messenger import g_settings
 from messenger.m_constants import PROTO_TYPE
 from messenger.proto import proto_getter
 from messenger.proto.events import g_messengerEvents
-from messenger.storage import storage_getter
+from messenger.storage import MessengerStorageDescriptor, UsersStorage
 from skeletons.gui.lobby_context import ILobbyContext
 from skeletons.gui.shared import IItemsCache
 
 class ProfileWindow(ProfileWindowMeta, ClanListener):
     itemsCache = dependency.descriptor(IItemsCache)
     lobbyContext = dependency.descriptor(ILobbyContext)
+    usersStorage = MessengerStorageDescriptor(UsersStorage)
 
     def __init__(self, ctx=None):
         super(ProfileWindow, self).__init__()
@@ -82,10 +83,6 @@ class ProfileWindow(ProfileWindowMeta, ClanListener):
         else:
             isEnabled = not roaming.isInRoaming() and not roaming.isPlayerInRoaming(dbID)
         return isEnabled
-
-    @storage_getter('users')
-    def usersStorage(self):
-        return
 
     @proto_getter(PROTO_TYPE.MIGRATION)
     def proto(self):

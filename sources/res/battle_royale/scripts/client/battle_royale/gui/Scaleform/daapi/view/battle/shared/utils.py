@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from items.vehicles import VehicleDescr
 
 def getVehicleLevel(vType):

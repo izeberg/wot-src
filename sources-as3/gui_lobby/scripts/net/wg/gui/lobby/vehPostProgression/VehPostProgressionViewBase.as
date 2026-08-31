@@ -214,12 +214,11 @@ package net.wg.gui.lobby.vehPostProgression
       
       private function updateComponentsLayout() : void
       {
-         var _loc2_:SizeSetting = null;
          var _loc4_:int = 0;
          var _loc6_:int = 0;
          var _loc11_:int = 0;
          var _loc1_:uint = _height - this._topOffset - this._bottomOffset | 0;
-         _loc2_ = SizeSettings.extraExtraSmall;
+         var _loc2_:SizeSetting = SizeSettings.extraExtraSmall;
          var _loc3_:int = App.appHeight;
          if(width >= SizeSettings.extraLarge.breakPointX && _loc3_ >= SizeSettings.extraLarge.breakPointY)
          {

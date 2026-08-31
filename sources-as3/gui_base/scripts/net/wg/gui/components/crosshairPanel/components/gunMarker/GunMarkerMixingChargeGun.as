@@ -145,7 +145,6 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker
       {
          super();
          rotation -= ROTATION_OFFSET;
-         addEventListener(Event.ENTER_FRAME,this.onEnterFrameHandler,false,0,true);
       }
       
       override protected function configUI() : void
@@ -199,7 +198,11 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker
          else
          {
             this._targetProgress = param1;
-            this._needUpdate = true;
+            if(!this._needUpdate)
+            {
+               this._needUpdate = true;
+               addEventListener(Event.ENTER_FRAME,this.onEnterFrameHandler,false,0,true);
+            }
          }
       }
       
@@ -215,10 +218,6 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker
       
       private function onEnterFrameHandler(param1:Event) : void
       {
-         if(!this._needUpdate)
-         {
-            return;
-         }
          var _loc2_:Number = this._targetProgress - this._currentProgress;
          if(Math.abs(_loc2_) >= DIRECT_THRESHOLD)
          {
@@ -240,6 +239,10 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker
          }
          this._chargeProgress = this._currentProgress;
          invalidate(MARKER_DRAW_INVALID);
+         if(!this._needUpdate)
+         {
+            removeEventListener(Event.ENTER_FRAME,this.onEnterFrameHandler);
+         }
       }
       
       private function drawMarker() : void

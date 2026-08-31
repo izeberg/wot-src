@@ -19,6 +19,8 @@ package net.wg.gui.battle.views.prebattleTimer
       
       private var _isInfoDisplayed:Boolean = false;
       
+      private var _isInfoShownExternally:Boolean = false;
+      
       public function PrebattleTimer()
       {
          super();
@@ -26,6 +28,7 @@ package net.wg.gui.battle.views.prebattleTimer
       
       override protected function onDispose() : void
       {
+         App.utils.scheduler.cancelTask(this.onHideInfoHandler);
          this.infoContainer.dispose();
          this.infoContainer = null;
          super.onDispose();
@@ -75,6 +78,22 @@ package net.wg.gui.battle.views.prebattleTimer
          }
       }
       
+      override protected function togglePreBattleHighlightsVisibility(param1:Boolean) : void
+      {
+         super.togglePreBattleHighlightsVisibility(param1);
+         if(param1)
+         {
+            this._isInfoDisplayed = false;
+            App.utils.scheduler.cancelTask(this.onHideInfoHandler);
+            this.infoContainer.hideByTimer();
+            if(this._isInfoShownExternally)
+            {
+               this._isInfoShownExternally = false;
+               onHideInfoS();
+            }
+         }
+      }
+      
       public function as_addInfo(param1:String, param2:Object) : void
       {
          this.infoContainer.addInfo(param1,param2);
@@ -87,11 +106,16 @@ package net.wg.gui.battle.views.prebattleTimer
       
       public function as_showInfo() : void
       {
+         if(isPBHVisible)
+         {
+            return;
+         }
          if(!this._isInfoDisplayed && componentVisibility)
          {
             this._isInfoDisplayed = true;
             if(this.infoContainer.showInfo() && this.infoContainer.isInfoHasAnimation)
             {
+               this._isInfoShownExternally = true;
                onShowInfoS();
                App.utils.scheduler.scheduleTask(this.onHideInfoHandler,HIDE_INFO_DELAY);
             }
@@ -112,7 +136,11 @@ package net.wg.gui.battle.views.prebattleTimer
       {
          this._isInfoDisplayed = false;
          this.infoContainer.hideInfo();
-         onHideInfoS();
+         if(this._isInfoShownExternally)
+         {
+            this._isInfoShownExternally = false;
+            onHideInfoS();
+         }
       }
       
       private function dispatchToShowQPAnim(param1:Boolean) : void

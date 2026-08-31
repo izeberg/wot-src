@@ -1,6 +1,6 @@
 from __future__ import absolute_import
 import typing
-from frameworks.state_machine import StateEvent, StringEvent
+from frameworks_common.state_machine import StateEvent, StringEvent
 
 class ToStateEvent(StringEvent):
 

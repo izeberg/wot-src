@@ -179,15 +179,6 @@ msgstr ""
 msgid "15YearsOfService_descr"
 msgstr "You have been in the game since %(regDate)s"
 
-msgid "BPReserveAchievement_1"
-msgstr "BP Reserve Achievement 1"
-
-msgid "BPReserveAchievement_1_condition"
-msgstr "• Awarded for completing the Progression."
-
-msgid "BPReserveAchievement_1_descr"
-msgstr "Awarded for your achievements during game"
-
 msgid "BPReserveAchievement_2"
 msgstr "BP Reserve Achievement 2"
 
@@ -472,6 +463,15 @@ msgstr "• Awarded for completing all three Chapters."
 
 msgid "BattlePassCommonPr_20_descr"
 msgstr "Awarded for your achievements during Battle Pass Season XX."
+
+msgid "BattlePassCommonPr_21"
+msgstr "Lowland Skirmish"
+
+msgid "BattlePassCommonPr_21_condition"
+msgstr "• Awarded for completing all three Chapters."
+
+msgid "BattlePassCommonPr_21_descr"
+msgstr "Awarded for your achievements during Battle Pass Season XXI."
 
 msgid "BattlePassCommonPr_2_condition"
 msgstr "• The Main Progression consists of 45 Stages."
@@ -2222,6 +2222,62 @@ msgstr ""
 "Awarded for collecting at least 9 Onslaught Colors in the Year of the Dragon"
 " in Onslaught mode."
 
+msgid "comp7_6_1"
+msgstr "Azure Spark"
+
+msgid "comp7_6_1_descr"
+msgstr ""
+"Awarded for completing a series of missions in Season of the Azure Phoenix "
+"in Onslaught mode."
+
+msgid "comp7_6_yearly_bronze"
+msgstr "Bronze Phoenix"
+
+msgid "comp7_6_yearly_bronze_descr"
+msgstr ""
+"Awarded for collecting at least 6 Onslaught Colors in the Year of the "
+"Phoenix in Onslaught mode."
+
+msgid "comp7_6_yearly_champion"
+msgstr "Year of the Phoenix Champion"
+
+msgid "comp7_6_yearly_champion_descr"
+msgstr ""
+"Awarded for collecting at least 15 Onslaught Colors in the Year of the "
+"Phoenix in Onslaught mode."
+
+msgid "comp7_6_yearly_gold"
+msgstr "Gold Phoenix"
+
+msgid "comp7_6_yearly_gold_descr"
+msgstr ""
+"Awarded for collecting at least 12 Onslaught Colors in the Year of the "
+"Phoenix in Onslaught mode."
+
+msgid "comp7_6_yearly_iron"
+msgstr "Iron Phoenix"
+
+msgid "comp7_6_yearly_iron_descr"
+msgstr ""
+"Awarded for collecting at least 3 Onslaught Colors in the Year of the "
+"Phoenix in Onslaught mode."
+
+msgid "comp7_6_yearly_legend"
+msgstr "Year of the Phoenix Legend"
+
+msgid "comp7_6_yearly_legend_descr"
+msgstr ""
+"Awarded for collecting at least 18 Onslaught Colors in the Year of the "
+"Phoenix in Onslaught mode."
+
+msgid "comp7_6_yearly_silver"
+msgstr "Silver Phoenix"
+
+msgid "comp7_6_yearly_silver_descr"
+msgstr ""
+"Awarded for collecting at least 9 Onslaught Colors in the Year of the "
+"Phoenix in Onslaught mode."
+
 msgid "conqueror"
 msgstr "Capturer %(rank)s"
 
@@ -2927,7 +2983,7 @@ msgstr "• Can be obtained in Random Battles only."
 
 msgid "huntsman_descr"
 msgstr ""
-"Destroy all enemy light tanks (at least 3) in the course of one battle."
+"Destroy all enemy light tanks (at least 2) in the course of one battle."
 
 msgid "huntsman_heroInfo"
 msgstr ""
@@ -4865,13 +4921,48 @@ msgstr ""
 "Performance: Union medal, Class III."
 
 msgid "readyForBattleAssault"
-msgstr "Exemplary Performance: Vanguard"
+msgstr "Exemplary Performance: Sector 3 Vanguard"
 
 msgid "readyForBattleAssault_condition"
 msgstr "?empty?"
 
 msgid "readyForBattleAssault_descr"
-msgstr "For completing all Vanguard missions in the Sector 3 campaign."
+msgstr ""
+"For completing all Vanguard missions in the main operations of the Sector 3 "
+"campaign."
+
+msgid "readyForBattleFossaAssault"
+msgstr "Exemplary Performance: Fossa Vanguard"
+
+msgid "readyForBattleFossaAssault_condition"
+msgstr "?empty?"
+
+msgid "readyForBattleFossaAssault_descr"
+msgstr ""
+"For completing all Vanguard missions in the Fossa operation in the Sector 3 "
+"campaign."
+
+msgid "readyForBattleFossaSniper"
+msgstr "Exemplary Performance: Fossa Ambush"
+
+msgid "readyForBattleFossaSniper_condition"
+msgstr "?empty?"
+
+msgid "readyForBattleFossaSniper_descr"
+msgstr ""
+"For completing all Ambush missions in the Fossa operation in the Sector 3 "
+"campaign."
+
+msgid "readyForBattleFossaSupport"
+msgstr "Exemplary Performance: Fossa Assistance"
+
+msgid "readyForBattleFossaSupport_condition"
+msgstr "?empty?"
+
+msgid "readyForBattleFossaSupport_descr"
+msgstr ""
+"For completing all Assistance missions in the Fossa operation in the Sector "
+"3 campaign."
 
 msgid "readyForBattleHT"
 msgstr "Exemplary Performance: Heavy Tanks"
@@ -4998,22 +5089,26 @@ msgstr ""
 "Performance: SPG medal, Class IV."
 
 msgid "readyForBattleSniper"
-msgstr "Exemplary Performance: Ambush"
+msgstr "Exemplary Performance: Sector 3 Ambush"
 
 msgid "readyForBattleSniper_condition"
 msgstr "?empty?"
 
 msgid "readyForBattleSniper_descr"
-msgstr "For completing all Ambush missions in the Sector 3 campaign."
+msgstr ""
+"For completing all Ambush missions in the main operations of the Sector 3 "
+"campaign."
 
 msgid "readyForBattleSupport"
-msgstr "Exemplary Performance: Assistance"
+msgstr "Exemplary Performance: Sector 3 Assistance"
 
 msgid "readyForBattleSupport_condition"
 msgstr "?empty?"
 
 msgid "readyForBattleSupport_descr"
-msgstr "For completing all Assistance missions in the Sector 3 campaign."
+msgstr ""
+"For completing all Assistance missions in the main operations of the Sector "
+"3 campaign."
 
 msgid "reliableComrade"
 msgstr "Battle Buddy"
@@ -5926,6 +6021,19 @@ msgstr ""
 
 msgid "wt2025progression_descr"
 msgstr "Complete the Waffenträger mode Progression."
+
+msgid "wt2026progression"
+msgstr "Stormrider"
+
+msgid "wt2026progression_condition"
+msgstr ""
+"Awarded for completing the Progression in Waffenträger: Genesis 2026. This "
+"honor is given to those who stood against von Krieger's first thinking "
+"machine, the Electric Intelligence, and severed every circuit through which "
+"it reached into our world."
+
+msgid "wt2026progression_descr"
+msgstr "Complete the Progression in Waffenträger: Genesis 2026."
 
 msgid "wtBossWins"
 msgstr "Master of Lightning"

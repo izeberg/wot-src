@@ -160,17 +160,21 @@ def getMaterialsAtCursor(vehicleEntity, collisions=None, shellParams=None):
             if (
              partID, matInfo.kind) not in ignoredMaterials:
                 if partID > vehicleEntity.appearance.collisions.maxStaticPartIndex:
-                    partName = VehicleArmorTags.SCREEN if isSpacedArmor else VehicleArmorTags.HULL
-                elif partID >= len(TankPartIndexes.ALL):
-                    partName = VehicleArmorTags.CHASSIS
-                elif partID > -1:
-                    name = TankPartIndexes.getName(partID)
-                    partName = VehicleArmorTags(name)
-                else:
-                    partName = VehicleArmorTags.WHEELS
-                if isSpacedArmor:
-                    if partName == VehicleArmorTags.GUN:
-                        if matInfo.extra is None:
+                    parentPartID = collisions.getParentPartIndex(partID)
+                    if parentPartID is not None:
+                        if 0 <= parentPartID < len(TankPartIndexes.ALL):
+                            partName = VehicleArmorTags(TankPartIndexes.getName(parentPartID))
+                        else:
+                            partName = VehicleArmorTags.SCREEN if isSpacedArmor else VehicleArmorTags.HULL
+                    elif partID >= len(TankPartIndexes.ALL):
+                        partName = VehicleArmorTags.CHASSIS
+                    elif partID > -1:
+                        name = TankPartIndexes.getName(partID)
+                        partName = VehicleArmorTags(name)
+                    else:
+                        partName = VehicleArmorTags.WHEELS
+                    if isSpacedArmor:
+                        if partName == VehicleArmorTags.GUN and matInfo.extra is None:
                             partName = VehicleArmorTags.GUN_MASK
                     if partName in NOMINAL_ARMOR_PARTS_LIST:
                         partName = VehicleArmorTags.SCREEN
@@ -245,17 +249,23 @@ def getModuleForTurretRotation(vehicleEntity):
     for distance, _, matInfo, partID in parts:
         if matInfo is not None:
             if partID > vehicleEntity.appearance.collisions.maxStaticPartIndex:
-                partName = VehicleArmorTags.HULL
-            elif partID >= len(TankPartIndexes.ALL):
-                partName = VehicleArmorTags.CHASSIS
-            elif partID > -1:
-                name = TankPartIndexes.getName(partID)
-                partName = VehicleArmorTags(name)
-            else:
-                partName = VehicleArmorTags.WHEELS
-            if partName == VehicleArmorTags.TURRET and matInfo.vehicleDamageFactor == SPACED_ARMOR_DAMAGE_FACTOR:
-                continue
-            return (partName, distance)
+                collisions = vehicleEntity.appearance.collisions
+                parentPartID = collisions.getParentPartIndex(partID)
+                if parentPartID is not None:
+                    if 0 <= parentPartID < len(TankPartIndexes.ALL):
+                        partName = VehicleArmorTags(TankPartIndexes.getName(parentPartID))
+                    else:
+                        partName = VehicleArmorTags.HULL
+                elif partID >= len(TankPartIndexes.ALL):
+                    partName = VehicleArmorTags.CHASSIS
+                elif partID > -1:
+                    name = TankPartIndexes.getName(partID)
+                    partName = VehicleArmorTags(name)
+                else:
+                    partName = VehicleArmorTags.WHEELS
+                if partName == VehicleArmorTags.TURRET and matInfo.vehicleDamageFactor == SPACED_ARMOR_DAMAGE_FACTOR:
+                    continue
+                return (partName, distance)
 
     return (None, None)
 

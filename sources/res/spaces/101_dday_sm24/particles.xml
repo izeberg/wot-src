@@ -3,16 +3,36 @@
 	<forward>
 		<name>default</name>
 		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_tex_101_dday_ext.dds</texture>
+		</preload>
+		<preload>
+			<shader>data/shaders/ps_water.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_tex_101_dday_ext.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/Spark.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/Spark.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_tex_108_normandy.dds</texture>
+		</preload>
+		<preload>
 			<shader>\data\shaders\ps_solid.fx</shader>
 			<texture>particles/content_forward/PFX_textures/eff_tex.dds</texture>
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps_water.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_tex.dds</texture>
+			<texture>particles/content_forward/PFX_textures/eff_tex_water.dds</texture>
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps_water.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_tex_water.dds</texture>
+			<texture>particles/content_forward/PFX_textures/eff_tex.dds</texture>
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps_water.fx</shader>
@@ -43,10 +63,6 @@
 			<texture>particles/content_forward/PFX_textures/eff_tex.dds</texture>
 		</preload>
 		<preload>
-			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_tex_101_dday_ext.dds</texture>
-		</preload>
-		<preload>
 			<shader>\data\shaders\ps_long.fx</shader>
 			<texture>particles/content_forward/PFX_textures/tracers.dds</texture>
 		</preload>
@@ -55,10 +71,6 @@
 			<texture>particles/content_forward/PFX_textures/tracers.dds</texture>
 		</preload>
 		<preload>
-			<shader>data/shaders/ps_water.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_tex_101_dday_ext.dds</texture>
-		</preload>
-		<preload>
 			<shader>\data\shaders\ps.fx</shader>
 			<texture>particles/content_forward/PFX_textures/eff_rocket_accelerator.dds</texture>
 		</preload>
@@ -84,15 +96,27 @@
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_forward/PFX_textures/Spark.dds</texture>
+			<texture>particles/content_forward/PFX_textures/eff_customization_main.dds</texture>
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps_long.fx</shader>
-			<texture>particles/content_forward/PFX_textures/Spark.dds</texture>
+			<texture>particles/content_forward/PFX_textures/eff_customization_main.dds</texture>
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_tex_108_normandy.dds</texture>
+			<texture>particles/content_forward/PFX_textures/cus_14_sparks.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/cus_14_sparks.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/electric_engine.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_fireworks.dds</texture>
 		</preload>
 		<fn_effect_bin>particles/environment/storymode/101_dday_ship_glare.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/storymode/101_dday_bunker_explosion_01.eff</fn_effect_bin>
@@ -141,20 +165,8 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/exterior/101_dday_shore_foam_s.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/02_malinovka_fire_small.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/08_ruinberg_fires_small.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/101_dday_ash_ember.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/101_dday_beach_sand_01.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/101_dday_fire_big.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/101_dday_fire_small.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/101_dday_smoke_dark_small.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/101_dday_smoke_ground_lg.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/101_dday_smoke_light_area.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/101_dday_smoke_light_medium.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/101_dday_smoke_plume_sm.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/101_dday_smoke_very_small.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/101_dday_tree_fire_small.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/105_germany_sparks.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/14_siegfried_line_smoke.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/17_munchen_firesmoke_thin.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/83_kharkiv_fire_gasoline_04.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_env007_SnagHeap3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_env_101_RoadPoles_01_fall.vfx</fn_effect_bin>
@@ -270,20 +282,20 @@
 		<fn_effect_bin>particles/environment/exterior/101_dday_shore_foam.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/02_malinovka_fire_small.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/08_ruinberg_fires_small.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/101_dday_ash_ember.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/101_dday_beach_sand_01.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/101_dday_fire_big.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/101_dday_fire_small.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/101_dday_smoke_dark_small.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/101_dday_smoke_ground_lg.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/101_dday_smoke_light_area.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/101_dday_smoke_light_medium.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/101_dday_smoke_plume_sm.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/101_dday_smoke_very_small.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/101_dday_tree_fire_small.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/101_dday_sm24_ash_ember.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/101_dday_sm24_beach_sand_01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/101_dday_sm24_fire_big.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/101_dday_sm24_firesmoke_thin.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/101_dday_sm24_smoke.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/101_dday_sm24_smoke_dark_small.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/101_dday_sm24_smoke_ground_lg.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/101_dday_sm24_smoke_light_area.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/101_dday_sm24_smoke_light_medium.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/101_dday_sm24_smoke_plume_sm.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/101_dday_sm24_smoke_very_small.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/101_dday_sm24_tree_fire_small.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/105_germany_sparks.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/14_siegfried_line_smoke.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/17_munchen_firesmoke_thin.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/83_kharkiv_fire_gasoline_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env007_SnagHeap3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env_101_RoadPoles_01_fall.eff</fn_effect_bin>
@@ -479,12 +491,24 @@
 			<texture>particles/content_deferred/PFX_textures/eff_tex_distortion.dds</texture>
 		</preload>
 		<preload>
+			<shader>\data\shaders\ps_shimmer.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization_main.dds</texture>
+		</preload>
+		<preload>
 			<shader>\data\shaders\ps.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/eff_tex_28_desert.dds</texture>
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/eff_tex_101_dday_ext.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_tex_95_lost_city_sand_storm.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_tex_83_kharkiv_fire.dds</texture>
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps_foam.fx</shader>
@@ -521,6 +545,42 @@
 		<preload>
 			<shader>\data\shaders\ps.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/eff_tex_108_normandy.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization_main.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization_main.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/cus_14_sparks.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/cus_14_sparks.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/FireTrunkAtlasLong_03.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/electric_engine.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_fireworks.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_fireworks.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_tex_h34.dds</texture>
 		</preload>
 		<fn_effect_bin>particles/environment/storymode/101_dday_ship_glare.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/storymode/101_dday_bunker_explosion_01.eff</fn_effect_bin>
@@ -576,26 +636,32 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Storymode/sherman_demining_sand_anim.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Storymode/sherman_mine_clearence_explosion.vfx</fn_effect_bin>
 		<preloadVisual>particles/content_deferred/GFX_models/environment/Storymode/Mines_Sign_red.visual</preloadVisual>
+		<preloadVisual>particles/mesh_particles/stone_brick_03.visual</preloadVisual>
+		<preloadVisual>particles/mesh_particles/stone_light.visual</preloadVisual>
+		<preloadVisual>particles/mesh_particles/stone_brick_02.visual</preloadVisual>
+		<preloadVisual>particles/mesh_particles/stone_concrete_03.visual</preloadVisual>
+		<preloadVisual>particles/mesh_particles/stone_concrete_02.visual</preloadVisual>
+		<preloadVisual>particles/mesh_particles/stone_concrete_01.visual</preloadVisual>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bld_101_03_Vhouse03_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bld_101_04_VShed01_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/exterior/101_dday_shore_foam.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/exterior/101_dday_shore_foam_s.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/02_malinovka_fire_small.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/08_ruinberg_fires_small.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/101_dday_ash_ember.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/101_dday_beach_sand_01.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/101_dday_fire_big.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/101_dday_fire_small.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/101_dday_smoke_dark_small.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/101_dday_smoke_ground_lg.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/101_dday_smoke_light_area.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/101_dday_smoke_light_medium.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/101_dday_smoke_plume_sm.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/101_dday_smoke_very_small.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/101_dday_tree_fire_small.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/101_dday_sm24_ash_ember.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/101_dday_sm24_beach_sand_01.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/101_dday_sm24_fire_big.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/101_dday_sm24_firesmoke_thin.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/101_dday_sm24_smoke.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/101_dday_sm24_smoke_dark_small.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/101_dday_sm24_smoke_ground_lg.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/101_dday_sm24_smoke_light_area.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/101_dday_sm24_smoke_light_medium.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/101_dday_sm24_smoke_plume_sm.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/101_dday_sm24_smoke_very_small.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/101_dday_sm24_tree_fire_small.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/105_germany_sparks.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/14_siegfried_line_smoke.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/17_munchen_firesmoke_thin.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/83_kharkiv_fire_gasoline_04.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_env007_SnagHeap3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_env_101_RoadPoles_01_fall.vfx</fn_effect_bin>
@@ -711,20 +777,20 @@
 		<fn_effect_bin>particles/environment/exterior/101_dday_shore_foam.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/02_malinovka_fire_small.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/08_ruinberg_fires_small.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/101_dday_ash_ember.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/101_dday_beach_sand_01.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/101_dday_fire_big.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/101_dday_fire_small.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/101_dday_smoke_dark_small.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/101_dday_smoke_ground_lg.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/101_dday_smoke_light_area.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/101_dday_smoke_light_medium.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/101_dday_smoke_plume_sm.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/101_dday_smoke_very_small.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/101_dday_tree_fire_small.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/101_dday_sm24_ash_ember.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/101_dday_sm24_beach_sand_01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/101_dday_sm24_fire_big.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/101_dday_sm24_firesmoke_thin.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/101_dday_sm24_smoke.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/101_dday_sm24_smoke_dark_small.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/101_dday_sm24_smoke_ground_lg.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/101_dday_sm24_smoke_light_area.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/101_dday_sm24_smoke_light_medium.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/101_dday_sm24_smoke_plume_sm.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/101_dday_sm24_smoke_very_small.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/101_dday_sm24_tree_fire_small.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/105_germany_sparks.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/14_siegfried_line_smoke.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/17_munchen_firesmoke_thin.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/83_kharkiv_fire_gasoline_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env007_SnagHeap3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env_101_RoadPoles_01_fall.eff</fn_effect_bin>
@@ -835,8 +901,6 @@
 		<fn_effect_bin>particles/Environment/trees/inf_sunflower_touchdown.eff</fn_effect_bin>
 		<preloadVisual>particles/mesh_particles/metal_stick.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/stone_brick_01.visual</preloadVisual>
-		<preloadVisual>particles/mesh_particles/stone_brick_02.visual</preloadVisual>
-		<preloadVisual>particles/mesh_particles/stone_concrete_03.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/stone_ground.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/tree_twig_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/tree_twig_02.visual</preloadVisual>

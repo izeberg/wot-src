@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>content/3D_Customization/Cus_251_BP21_J_Cannon/normal/lod2/Cus_251_BP21_J_Cannon_01</nodefullVisual>
+	<parent>content/3D_Customization/Cus_251_BP21_J_Cannon/normal/lod3/Cus_251_BP21_J_Cannon_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.584347 0.013475 -1.075308</min>
+		<max>0.136168 0.462349 1.046006</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

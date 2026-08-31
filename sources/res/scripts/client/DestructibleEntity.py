@@ -137,14 +137,14 @@ class DestructibleEntity(BigWorld.Entity):
                 if parsedHitPoint is None:
                     curr.discard(code)
                 else:
-                    stickerID, data = parsedHitPoint
+                    stickerID, prefabEffIndex, data = parsedHitPoint
                     if data.componentIdx not in self.__activeStateResource.damageStickers:
                         _logger.error('component is not available for damage sticker: %d', data.componentIdx)
                         continue
                     segStart, segEnd = self.__activeStateResource.reduceSegmentLength(data.componentIdx, data.segStart, data.segEnd)
                     data._replace(segStart=segStart, segEnd=segEnd)
                     stickers = self.__activeStateResource.damageStickers[data.componentIdx]
-                    stickers.addDamageSticker(code, stickerID, data, collisionComponent, isActive)
+                    stickers.addDamageSticker(code, stickerID, prefabEffIndex, data, collisionComponent, isActive)
 
             self.__prevDamageStickerCodes = frozenset(curr)
             return

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.207055 -0.037618 -1.769133</min>
+		<max>1.208231 1.259025 1.698746</max>
+	</visibilityBox>
+	<parent>vehicles/german/G183_Fossa_VM_68/_skins/G183_Fossa_VM_68_3Dst/crash/lod2/Turret_01</parent>
+	<extent>64.000000</extent>
+	<nodefullVisual>vehicles/german/G183_Fossa_VM_68/_skins/G183_Fossa_VM_68_3Dst/crash/lod1/Turret_01</nodefullVisual>
+	<tank>true</tank>
+</root>

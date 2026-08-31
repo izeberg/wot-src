@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>nodes_01</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>HP_Ch48_Attachment_Turret_01</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_gunJoint</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.316998 1.310000</row3>
+				</transform>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_turret_01</identifier>
+					<property>
+						g_detailPowerGloss
+						<Float>
+							0.35
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_maskBias
+						<Float>
+							0.18
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
+					</property>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/chinese/Ch48_BZ_75_CFE_F/_skins/Ch48_BZ_75_OSD_3Dst_4/BZ_75_OSD_3Dst_4_turret_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/chinese/Ch48_BZ_75_CFE_F/_skins/Ch48_BZ_75_OSD_3Dst_4/BZ_75_OSD_3Dst_4_turret_01_ANM.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/chinese/Ch48_BZ_75_CFE_F/_skins/Ch48_BZ_75_OSD_3Dst_4/BZ_75_OSD_3Dst_4_turret_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/chinese/Ch48_BZ_75_CFE_F/_skins/Ch48_BZ_75_OSD_3Dst_4/BZ_75_OSD_3Dst_4_turret_01_AO.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>7.013699 3.506849 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_defaultDetail
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_detailParams
+						<matrix>
+							<element>67059712</element>
+							<element>1040187392</element>
+							<element>395067392</element>
+							<element>1006632960</element>
+							<element>392577024</element>
+							<element>1006648904</element>
+							<element>426131456</element>
+							<element>1006632960</element>
+							<element>424296448</element>
+							<element>1006632960</element>
+							<element>426131456</element>
+							<element>1006632960</element>
+							<element>228147200</element>
+							<element>1006648238</element>
+							<element>93943808</element>
+							<element>1006632960</element>
+						</matrix>
+					</property>
+					<property>
+						g_dirtLevel
+						<Float>0.420000</Float>
+					</property>
+					<property>
+						g_glossMax
+						<Float>0.595165</Float>
+					</property>
+					<property>
+						g_glossMin
+						<Float>0.265455</Float>
+					</property>
+					<property>
+						g_metallicDetailInfluence
+						<Float>0.400000</Float>
+					</property>
+					<property>
+						g_tilingRatio
+						<Vector2>1.000000 0.500000</Vector2>
+					</property>
+				</material>
+				<groupOrigin>-0.000220 0.484781 -0.315982</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>tank_equipment_01</identifier>
+					<property>
+						g_detailUVTiling
+						<Vector4>3.506850 3.506850 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_detailPowerGloss
+						<Float>
+							0.35
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_maskBias
+						<Float>
+							0.18
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/chinese/Ch48_BZ_75_CFE_F/_skins/Ch48_BZ_75_OSD_3Dst_4/BZ_75_OSD_3Dst_4_equipment_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/chinese/Ch48_BZ_75_CFE_F/_skins/Ch48_BZ_75_OSD_3Dst_4/BZ_75_OSD_3Dst_4_equipment_01_ANM.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/chinese/Ch48_BZ_75_CFE_F/_skins/Ch48_BZ_75_OSD_3Dst_4/BZ_75_OSD_3Dst_4_equipment_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/chinese/Ch48_BZ_75_CFE_F/_skins/Ch48_BZ_75_OSD_3Dst_4/BZ_75_OSD_3Dst_4_equipment_01_AO.dds</Texture>
+					</property>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<property>
+						alphaReference
+						<Int>128</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_defaultDetail
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_detailMetallicCutoff
+						<Float>1.000000</Float>
+					</property>
+					<property>
+						g_detailParams
+						<matrix>
+							<element>67059712</element>
+							<element>1040200752</element>
+							<element>18104320</element>
+							<element>1006632960</element>
+							<element>1372536832</element>
+							<element>1006632960</element>
+							<element>427835392</element>
+							<element>1006632960</element>
+							<element>577135011</element>
+							<element>1006632960</element>
+							<element>427835392</element>
+							<element>1006632960</element>
+							<element>163725312</element>
+							<element>1006632960</element>
+							<element>92946432</element>
+							<element>1006632960</element>
+						</matrix>
+					</property>
+					<property>
+						g_dirtLevel
+						<Float>0.420000</Float>
+					</property>
+					<property>
+						g_glossMax
+						<Float>0.595165</Float>
+					</property>
+					<property>
+						g_glossMin
+						<Float>0.265455</Float>
+					</property>
+				</material>
+				<groupOrigin>-0.002849 0.809404 -1.343010</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-1.466926 -0.000002 -3.523663</min>
+		<max>1.461228 1.592530 1.753609</max>
+	</boundingBox>
+	<geometrySize>567170</geometrySize>
+</root>

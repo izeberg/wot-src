@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from battle_royale.gui.impl.gen.view_models.views.lobby.tooltips.reward_currency_tooltip_view_model import RewardCurrencyTooltipViewModel
 from battle_royale.gui.impl.lobby.br_helpers.utils import setEventInfo
 from frameworks.wulf import ViewSettings

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G193_Pz_Kpfw_55/crash/lod2/Gun_05</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/german/G193_Pz_Kpfw_55/crash/lod3/Gun_05</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.453328 -0.327355 -1.403929</min>
+		<max>0.452805 0.330210 5.320108</max>
+	</visibilityBox>
+</root>

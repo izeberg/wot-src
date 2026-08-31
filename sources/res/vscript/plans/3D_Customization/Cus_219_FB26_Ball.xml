@@ -221,6 +221,66 @@
 					</param>
 				</params>
 			</block>
+			<block>
+				<class>GameObjectToVehicle</class>
+				<id>GameObjectToVehicle_2</id>
+			</block>
+			<block>
+				<class>GetVehicleGameObject</class>
+				<id>GetVehicleGameObject_1</id>
+			</block>
+			<block>
+				<class>Macro</class>
+				<id>Macro_1</id>
+				<params>
+					<param>
+						CustomizationVehicleEvents
+						<name>Macro Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>ActivateGameObject</class>
+				<id>ActivateGameObject_2</id>
+			</block>
+			<block>
+				<class>Timer</class>
+				<id>Timer_8</id>
+				<params>
+					<param>
+						1
+						<name>Timer Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>time0</name>
+						<const>\7.000000\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>DeactivateGameObject</class>
+				<id>DeactivateGameObject_2</id>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_10</id>
+				<buddy>Variable_7</buddy>
+				<params>
+					<param>
+						GameObjectT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>DeactivateGameObject</class>
+				<id>DeactivateGameObject_3</id>
+			</block>
 		</blocks>
 		<connections>
 			<connection>
@@ -360,6 +420,72 @@
 				<input>time0</input>
 				<to>Timer_6</to>
 				<output>res</output>
+			</connection>
+			<connection>
+				<from>GetVehicleGameObject_1</from>
+				<input>gameObject</input>
+				<to>GameObjectToVehicle_2</to>
+				<output>vehicleObject</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>GetVehicleGameObject_1</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>GameObjectToVehicle_2</from>
+				<input>vehicle</input>
+				<to>Macro_1</to>
+				<output>vehicle</output>
+			</connection>
+			<connection>
+				<from>Macro_1</from>
+				<input>in</input>
+				<to>ActivateGameObject_2</to>
+				<output>PrebattleHighlightStart</output>
+			</connection>
+			<connection>
+				<from>GetVariable_10</from>
+				<input>gameObject</input>
+				<to>ActivateGameObject_2</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>ActivateGameObject_2</from>
+				<input>windup</input>
+				<to>Timer_8</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>DeactivateGameObject_3</from>
+				<input>cancel</input>
+				<to>Timer_8</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>Timer_8</from>
+				<input>in</input>
+				<to>DeactivateGameObject_2</to>
+				<output>event0</output>
+			</connection>
+			<connection>
+				<from>GetVariable_10</from>
+				<input>gameObject</input>
+				<to>DeactivateGameObject_2</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>Macro_1</from>
+				<input>in</input>
+				<to>DeactivateGameObject_3</to>
+				<output>PrebattleHighlightEnd</output>
+			</connection>
+			<connection>
+				<from>GetVariable_10</from>
+				<input>gameObject</input>
+				<to>DeactivateGameObject_3</to>
+				<output>value</output>
 			</connection>
 		</connections>
 		<macros/>

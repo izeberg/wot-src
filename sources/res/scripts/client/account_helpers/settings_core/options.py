@@ -1,3 +1,4 @@
+from config_schemas.prefab_effects_availability import prefabEffectsAvailabilitySchema
 from enum import Enum
 from typing import TYPE_CHECKING
 import Sound, base64, cPickle, random, sys, fractions, itertools, weakref
@@ -28,7 +29,7 @@ from gui.Scaleform.managers.windows_stored_data import g_windowsStoredData
 from messenger import g_settings as messenger_settings
 from account_helpers.AccountSettings import AccountSettings, SPEAKERS_DEVICE, COLOR_SETTINGS_TAB_IDX, APPLIED_COLOR_SETTINGS
 from account_helpers.settings_core.settings_constants import SOUND, SPGAimEntranceModeOptions, GRAPHICS, COLOR_GRADING_TECHNIQUE_DEFAULT, POST_PROCESSING_QUALITY, SoundPhysicsQuality
-from messenger.storage import storage_getter
+from messenger.storage import UsersStorage, MessengerStorageDescriptor
 from shared_utils import CONST_CONTAINER, forEach
 from gui import GUI_SETTINGS
 from gui.armor_flashlight.config import getConfig as getArmorFlashlightConfig, isFeatureEnabled as isArmorFlashlightEnabled
@@ -1064,6 +1065,24 @@ class ColorGradingSetting(GraphicSetting):
         super(ColorGradingSetting, self).refresh()
 
 
+class IncreaseEffectsContrastEnabledSetting(GraphicSetting):
+
+    def _get(self):
+        if BigWorld.getGraphicsSetting(GRAPHICS.RENDER_PIPELINE_QUALITY) == 1:
+            return 0
+        return super(IncreaseEffectsContrastEnabledSetting, self)._get()
+
+    @staticmethod
+    def _switchEnabled():
+        m = prefabEffectsAvailabilitySchema.getModel()
+        return m and m.switchEnabled
+
+    def pack(self):
+        return {'current': self._get(), 
+           'options': self._getOptions(), 
+           'extraData': {'enabled': self._switchEnabled()}}
+
+
 class IGBHardwareAccelerationSetting(UserPrefsBoolSetting):
 
     def __init__(self):
@@ -1169,10 +1188,7 @@ class WindowSizeSetting(PreferencesSetting):
     def __getSuitableWindowSizes(self):
         result = []
         for modes in graphics.getSuitableWindowSizes():
-            sizes = set()
-            for mode in modes:
-                sizes.add((mode.width, mode.height))
-
+            sizes = {(mode.width, mode.height) for mode in modes}
             result.append(sorted(tuple(sizes)))
 
         return result
@@ -1192,10 +1208,7 @@ class ResolutionSetting(PreferencesSetting):
     def _getSuitableResolutions(self):
         result = []
         for modes in graphics.getSuitableVideoModes():
-            resolutions = set()
-            for mode in modes:
-                resolutions.add((mode.width, mode.height))
-
+            resolutions = {(mode.width, mode.height) for mode in modes}
             result.append(sorted(tuple(resolutions)))
 
         return result
@@ -1280,10 +1293,7 @@ class BorderlessSizeSetting(ResolutionSetting):
     def _getSuitableResolutions(self):
         result = []
         for modes in graphics.getSuitableBorderlessSizes():
-            resolutions = set()
-            for mode in modes:
-                resolutions.add((mode.width, mode.height))
-
+            resolutions = {(mode.width, mode.height) for mode in modes}
             result.append(sorted(tuple(resolutions)))
 
         return result
@@ -1317,10 +1327,7 @@ class RefreshRateSetting(PreferencesSetting):
     def _getOptions(self):
         result = []
         for modes in graphics.getSuitableVideoModes():
-            resolutions = set()
-            for mode in modes:
-                resolutions.add((mode.width, mode.height))
-
+            resolutions = {(mode.width, mode.height) for mode in modes}
             ratesList = []
             for width, height in sorted(tuple(resolutions)):
                 rates = set()
@@ -3077,13 +3084,10 @@ class GraphicsQuality(SettingAbstract):
 
 class AnonymizerSetting(AccountDumpSetting):
     __ctrl = dependency.descriptor(IAnonymizerController)
+    usersStorage = MessengerStorageDescriptor(UsersStorage)
 
     def __init__(self, settingName):
         super(AnonymizerSetting, self).__init__(settingName, settingName, 'anonymized')
-
-    @storage_getter('users')
-    def usersStorage(self):
-        return
 
     def getExtraData(self):
         user = self.usersStorage.getUser(getPlayerDatabaseID())
@@ -3395,3 +3399,15 @@ class SwitchSetupsInLoadingSetting(AccountSetting):
         if write:
             AccountSettings.setSettings(self.key, enabledByDefault)
         return enabledByDefault
+
+
+class PBHSetting(UserPrefsBoolSetting):
+
+    def __init__(self):
+        super(PBHSetting, self).__init__(Settings.SHOW_PBH)
+
+    def getApplyMethod(self, value):
+        return APPLY_METHOD.NEXT_BATTLE
+
+    def getDefaultValue(self):
+        return True

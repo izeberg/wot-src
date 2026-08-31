@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_246_BP21_GB_TypeF/normal/lod3/Cus_246_BP21_GB_TypeF_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.401037 -0.005667 -0.843867</min>
+		<max>0.081002 0.398563 0.976843</max>
+	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/Cus_246_BP21_GB_TypeF/normal/lod2/Cus_246_BP21_GB_TypeF_01</nodefullVisual>
+	<tank>true</tank>
+</root>

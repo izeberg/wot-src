@@ -7,7 +7,7 @@ from gui import SystemMessages
 from gui.Scaleform.locale.MENU import MENU
 from gui.Scaleform.locale.SYSTEM_MESSAGES import SYSTEM_MESSAGES
 from messenger import MessengerEntry, g_settings
-from messenger.storage import storage_getter
+from messenger.storage import MessengerStorageDescriptor, PlayerCtxStorage
 from skeletons.gui.battle_session import IBattleSessionProvider
 from skeletons.gui.shared import IItemsCache
 
@@ -29,10 +29,7 @@ DENUNCIATIONS_MAP = {DENUNCIATIONS.INCORRECT_BEHAVIOR: constants.DENUNCIATION.IN
    DENUNCIATIONS.BOT: constants.DENUNCIATION.BOT}
 
 class Denunciator(object):
-
-    @storage_getter('playerCtx')
-    def playerCtx(self):
-        return
+    playerCtx = MessengerStorageDescriptor(PlayerCtxStorage)
 
     def makeAppeal(self, violatorID, userName, topic, arenaUniqueID):
         topicID = DENUNCIATIONS_MAP.get(topic)

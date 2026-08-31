@@ -90,6 +90,8 @@
 				<of>VEHICLE_HIT_POINT</of>
 			</Arg>
 			<Arg>UINT8</Arg>
+			<Arg>UINT8</Arg>
+			<Arg>FLOAT32</Arg>
 		</showDamageFromShot>
 	</ClientMethods>
 	<CellMethods>

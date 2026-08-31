@@ -37,6 +37,8 @@ def importClass(classPath, defaultMod):
         LOG_CURRENT_EXCEPTION()
         return
 
+    return
+
 
 class _MergeExtensionFile(object):
 

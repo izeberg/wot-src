@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>
+			-1.640288 -0.003371 -4.10636
+			<!--BW_String-->
+		</min>
+		<max>1.640287 1.196361 3.544873</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G197_Pz_Kpfw_Neu/normal/lod4/Chassis</nodefullVisual>
+</root>

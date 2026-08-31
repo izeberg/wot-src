@@ -3322,7 +3322,6 @@
 						2.5
 						<!--BW_String-->
 					</aimingTime>
-					<multiGunEffects>shot_dualgun1_mainext_mb_L shot_dualgun1_mainext_mb_R</multiGunEffects>
 					<dualGun>
 						<chargeTime>
 							2.5
@@ -3348,6 +3347,9 @@
 							<!--BW_String-->
 						</preChargeIndication>
 					</dualGun>
+					<prefabs>
+						<main>content/CGFPrefabs/Vehicle/guns/ussr/gun_100mm_S34_P_dualgun.prefab</main>
+					</prefabs>
 					<models>
 						<undamaged>vehicles/russian/R165_Object_703_II/normal/lod0/Gun_01.model</undamaged>
 						<destroyed>vehicles/russian/R165_Object_703_II/crash/lod0/Gun_01.model</destroyed>
@@ -3511,6 +3513,7 @@
 						</customizableVehicleAreas>
 					</customization>
 					<reloadEffect>dualgun_reload85_107</reloadEffect>
+					<muzzleBrake>HORIZONTAL</muzzleBrake>
 					<camouflage>
 						<density>
 							128.918 132.137

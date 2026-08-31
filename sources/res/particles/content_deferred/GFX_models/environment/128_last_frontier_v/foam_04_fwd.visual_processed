@@ -21,6 +21,10 @@
 				<material>
 					<identifier>lambert2</identifier>
 					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
+					<property>
+						g_enableEnvMultiplier
+						<Bool>true</Bool>
+					</property>
 					<collisionFlags>255</collisionFlags>
 					<materialKind>0</materialKind>
 					<property>
@@ -53,7 +57,7 @@
 					</property>
 					<property>
 						lightMultipliers
-						<Vector4>15.000000 0.100000 0.700000 0.000000</Vector4>
+						<Vector4>10.204082 0.100000 0.700000 0.000000</Vector4>
 					</property>
 					<property>
 						softFactor

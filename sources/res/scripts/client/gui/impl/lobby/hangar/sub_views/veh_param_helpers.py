@@ -128,7 +128,6 @@ def formatParameterValue(parameterName, paramValue, applyFormatting=True, parame
             parameterState = parameterState[0]
         extractedStates = ((state[0] if isinstance(state, tuple) else state) for state in parameterState)
         return json.dumps([ {'value': v, 'state': _mapStateToHighlight(s).value} for v, s in zip(paramValue, extractedStates) ])
-        return
 
 
 def formatAdditionalParameter(parameter, isApproximately=False):

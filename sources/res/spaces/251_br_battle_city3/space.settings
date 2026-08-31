@@ -173,4 +173,6 @@
 	</havok>
 	<enableClusteredShading>false</enableClusteredShading>
 	<NonChunkUDO>true</NonChunkUDO>
+	<isSHGridQualityOverridden>false</isSHGridQualityOverridden>
+	<overrideSHGridQuality>0</overrideSHGridQuality>
 </root>

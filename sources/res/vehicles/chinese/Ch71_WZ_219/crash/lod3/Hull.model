@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/chinese/Ch71_WZ_219/crash/lod3/Hull</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/chinese/Ch71_WZ_219/crash/lod4/Hull</parent>
+	<extent>192</extent>
+	<visibilityBox>
+		<min>-1.591857 -0.859133 -3.287359</min>
+		<max>1.591850 0.662835 2.939398</max>
+	</visibilityBox>
+</root>

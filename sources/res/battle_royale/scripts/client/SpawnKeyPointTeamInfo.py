@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld
 from script_component.DynamicScriptComponent import DynamicScriptComponent
 from shared_utils import nextTick

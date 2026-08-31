@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import CGF, GenericComponents, Math, Triggers
 from aih_constants import CTRL_MODE_NAME, CTRL_MODES
 from cgf_script.registration import ComponentProperty, registerComponent

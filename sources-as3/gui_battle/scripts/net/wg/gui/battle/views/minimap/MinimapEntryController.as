@@ -2,10 +2,13 @@ package net.wg.gui.battle.views.minimap
 {
    import flash.display.DisplayObject;
    import flash.display.DisplayObjectContainer;
+   import flash.events.TimerEvent;
    import flash.utils.Dictionary;
+   import flash.utils.Timer;
    import net.wg.data.constants.Errors;
    import net.wg.gui.battle.views.minimap.components.entries.interfaces.IMinimapEntryWithNonScaleContent;
    import net.wg.gui.battle.views.minimap.components.entries.interfaces.IVehicleMinimapEntry;
+   import net.wg.gui.battle.views.minimap.components.entries.vehicle.MinimapEntryLabelHelper;
    import net.wg.gui.battle.views.minimap.constants.MinimapSizeConst;
    import net.wg.infrastructure.interfaces.entity.IDisposable;
    import net.wg.utils.IAssertable;
@@ -14,6 +17,8 @@ package net.wg.gui.battle.views.minimap
    {
       
       private static var _instance:MinimapEntryController = null;
+      
+      private static const LABEL_TICK_INTERVAL:int = 330;
        
       
       private var _vehicleEntries:Vector.<IVehicleMinimapEntry>;
@@ -36,6 +41,10 @@ package net.wg.gui.battle.views.minimap
       
       private var _sizeIndexByContainer:Dictionary;
       
+      private var _labelTimer:Timer;
+      
+      private var _activeLabelHelpers:Vector.<MinimapEntryLabelHelper>;
+      
       public function MinimapEntryController()
       {
          this._vehicleEntries = new Vector.<IVehicleMinimapEntry>();
@@ -46,12 +55,15 @@ package net.wg.gui.battle.views.minimap
          this._scalableEntriesWithNonScaleContent = new Vector.<IMinimapEntryWithNonScaleContent>();
          this._nonScalableEntries = new Vector.<DisplayObject>();
          this._sizeIndexByContainer = new Dictionary();
+         this._activeLabelHelpers = new Vector.<MinimapEntryLabelHelper>();
          super();
          if(_instance)
          {
             App.utils.asserter.assertNotNull(_instance,"MinimapEntryController singleton... use get instance()");
          }
          _instance = this;
+         this._labelTimer = new Timer(LABEL_TICK_INTERVAL);
+         this._labelTimer.addEventListener(TimerEvent.TIMER,this.onLabelTimerHandler,false,0,true);
       }
       
       public static function get instance() : MinimapEntryController
@@ -81,6 +93,11 @@ package net.wg.gui.battle.views.minimap
          this._nonScalableEntries = null;
          this._highlightedEntries.length = 0;
          this._highlightedEntries = null;
+         this._labelTimer.removeEventListener(TimerEvent.TIMER,this.onLabelTimerHandler);
+         this._labelTimer.stop();
+         this._labelTimer = null;
+         this._activeLabelHelpers.length = 0;
+         this._activeLabelHelpers = null;
          App.utils.data.cleanupDynamicObject(this._sizeIndexByContainer);
          this._sizeIndexByContainer = null;
       }
@@ -114,6 +131,18 @@ package net.wg.gui.battle.views.minimap
          return this._isDisposed;
       }
       
+      public function registerActiveLabelHelper(param1:MinimapEntryLabelHelper) : void
+      {
+         if(this._activeLabelHelpers.indexOf(param1) == -1)
+         {
+            this._activeLabelHelpers.push(param1);
+            if(!this._labelTimer.running)
+            {
+               this._labelTimer.start();
+            }
+         }
+      }
+      
       public function registerNonScalableEntry(param1:DisplayObject) : void
       {
          if(param1.stage == null)
@@ -122,7 +151,7 @@ package net.wg.gui.battle.views.minimap
             return;
          }
          this._nonScalableEntries.push(param1);
-         param1.scaleX = param1.scaleY = MinimapSizeConst.ENTRY_CONTR_SCALES[this.getSizeIndex(param1 as DisplayObject)];
+         param1.scaleX = param1.scaleY = MinimapSizeConst.ENTRY_CONTR_SCALES[this.getSizeIndex(param1)];
       }
       
       public function registerScalableEntry(param1:DisplayObject, param2:Boolean = false) : void
@@ -133,7 +162,7 @@ package net.wg.gui.battle.views.minimap
             return;
          }
          this._scalableEntries.push(param1);
-         var _loc3_:int = this.getSizeIndex(param1 as DisplayObject);
+         var _loc3_:int = this.getSizeIndex(param1);
          var _loc4_:Number = MinimapSizeConst.ENTRY_SCALES[_loc3_];
          if(_loc4_ != param1.scaleX)
          {
@@ -204,6 +233,19 @@ package net.wg.gui.battle.views.minimap
          this._highlightedEntries.length = 0;
       }
       
+      public function unregisterActiveLabelHelper(param1:MinimapEntryLabelHelper) : void
+      {
+         var _loc2_:int = this._activeLabelHelpers.indexOf(param1);
+         if(_loc2_ != -1)
+         {
+            this._activeLabelHelpers.splice(_loc2_,1);
+            if(this._activeLabelHelpers.length == 0)
+            {
+               this._labelTimer.stop();
+            }
+         }
+      }
+      
       public function unregisterNonScalableEntry(param1:DisplayObject) : void
       {
          var _loc2_:int = this._nonScalableEntries.indexOf(param1);
@@ -252,42 +294,56 @@ package net.wg.gui.battle.views.minimap
       
       public function updateScale(param1:int, param2:DisplayObjectContainer) : void
       {
-         var _loc5_:IMinimapEntryWithNonScaleContent = null;
-         var _loc6_:IVehicleMinimapEntry = null;
+         var _loc4_:* = undefined;
+         var _loc5_:DisplayObject = null;
+         var _loc6_:Number = NaN;
+         var _loc7_:Boolean = false;
+         var _loc8_:IMinimapEntryWithNonScaleContent = null;
+         var _loc9_:IVehicleMinimapEntry = null;
          this._sizeIndexByContainer[param2] = param1;
-         var _loc3_:DisplayObject = null;
-         var _loc4_:Number = MinimapSizeConst.ENTRY_SCALES[param1];
-         for each(_loc3_ in this._scalableEntries)
+         var _loc3_:int = 0;
+         for(_loc4_ in this._sizeIndexByContainer)
          {
-            if(param2.contains(_loc3_))
+            _loc3_++;
+            if(_loc3_ > 1)
             {
-               if(_loc4_ != _loc3_.scaleX)
-               {
-                  _loc3_.scaleX = _loc3_.scaleY = _loc4_;
-               }
-            }
-         }
-         _loc4_ = MinimapSizeConst.ENTRY_CONTR_SCALES[param1];
-         for each(_loc3_ in this._nonScalableEntries)
-         {
-            if(param2.contains(_loc3_))
-            {
-               _loc3_.scaleX = _loc3_.scaleY = _loc4_;
+               break;
             }
          }
          _loc5_ = null;
-         for each(_loc5_ in this._scalableEntriesWithNonScaleContent)
+         _loc6_ = MinimapSizeConst.ENTRY_SCALES[param1];
+         _loc7_ = _loc3_ == 1;
+         for each(_loc5_ in this._scalableEntries)
          {
-            if(param2.contains(_loc5_ as DisplayObject))
+            if(_loc7_ || param2.contains(_loc5_))
             {
-               _loc5_.setContentNormalizedScale(MinimapSizeConst.ENTRY_INTERNAL_CONTENT_CONTR_SCALES[param1]);
+               if(_loc6_ != _loc5_.scaleX)
+               {
+                  _loc5_.scaleX = _loc5_.scaleY = _loc6_;
+               }
             }
          }
-         for each(_loc6_ in this._vehicleLabelsEntries)
+         _loc6_ = MinimapSizeConst.ENTRY_CONTR_SCALES[param1];
+         for each(_loc5_ in this._nonScalableEntries)
          {
-            if(param2.contains(_loc6_ as DisplayObject))
+            if(_loc7_ || param2.contains(_loc5_))
             {
-               _loc6_.updateSizeIndex(param1);
+               _loc5_.scaleX = _loc5_.scaleY = _loc6_;
+            }
+         }
+         _loc8_ = null;
+         for each(_loc8_ in this._scalableEntriesWithNonScaleContent)
+         {
+            if(_loc7_ || param2.contains(_loc8_ as DisplayObject))
+            {
+               _loc8_.setContentNormalizedScale(MinimapSizeConst.ENTRY_INTERNAL_CONTENT_CONTR_SCALES[param1]);
+            }
+         }
+         for each(_loc9_ in this._vehicleLabelsEntries)
+         {
+            if(_loc7_ || param2.contains(_loc9_ as DisplayObject))
+            {
+               _loc9_.updateSizeIndex(param1);
             }
          }
       }
@@ -299,17 +355,30 @@ package net.wg.gui.battle.views.minimap
       
       private function getSizeIndex(param1:DisplayObject) : int
       {
-         var _loc2_:* = undefined;
-         var _loc3_:DisplayObjectContainer = null;
-         for(_loc2_ in this._sizeIndexByContainer)
+         var _loc2_:DisplayObjectContainer = param1.parent;
+         while(_loc2_ != null)
          {
-            _loc3_ = _loc2_ as DisplayObjectContainer;
-            if(_loc3_ && _loc3_.contains(param1))
+            if(_loc2_ in this._sizeIndexByContainer)
             {
                return this._sizeIndexByContainer[_loc2_];
             }
+            _loc2_ = _loc2_.parent;
          }
          return MinimapSizeConst.MIN_SIZE_INDEX;
+      }
+      
+      public function get isShowVehicleNamesTurnedOn() : Boolean
+      {
+         return this._isShowVehicleNamesTurnedOn;
+      }
+      
+      private function onLabelTimerHandler(param1:TimerEvent) : void
+      {
+         var _loc2_:MinimapEntryLabelHelper = null;
+         for each(_loc2_ in this._activeLabelHelpers)
+         {
+            _loc2_.timerUpdate();
+         }
       }
    }
 }
@@ -322,6 +391,8 @@ import net.wg.gui.battle.views.minimap.components.entries.interfaces.IVehicleMin
 class PendingEntryData
 {
    
+   private static var _pendingItems:Vector.<PendingEntryData> = new Vector.<PendingEntryData>(0);
+   
    public static const NON_SCALABLE:int = 0;
    
    public static const SCALABLE:int = 1;
@@ -329,8 +400,6 @@ class PendingEntryData
    public static const SCALABLE_WITH_NON_SCALABLE_CONTENT:int = 3;
    
    public static const VEHICLE_LABEL:int = 4;
-   
-   private static var _pendingItems:Vector.<PendingEntryData> = new Vector.<PendingEntryData>(0);
     
    
    private var _entry:DisplayObject;
@@ -372,7 +441,7 @@ class PendingEntryData
       var _loc2_:int = _pendingItems.indexOf(this);
       if(_loc2_ != -1)
       {
-         _pendingItems.slice(_loc2_,1);
+         _pendingItems.splice(_loc2_,1);
       }
       switch(this._kind)
       {

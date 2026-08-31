@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from constants import ARENA_BONUS_TYPE
 from battle_royale.gui.battle_results.composer import BattleRoyaleStatsComposer
 

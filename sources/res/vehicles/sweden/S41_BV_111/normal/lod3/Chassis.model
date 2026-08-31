@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/sweden/S41_BV_111/normal/lod4/Chassis</parent>
+	<extent>192</extent>
+	<nodefullVisual>vehicles/sweden/S41_BV_111/normal/lod3/Chassis</nodefullVisual>
+	<visibilityBox>
+		<min>-1.637737 -0.004942 -3.041819</min>
+		<max>1.637736 1.076518 3.203477</max>
+	</visibilityBox>
+</root>

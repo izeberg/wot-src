@@ -20,8 +20,9 @@ def skipOnRewind(func):
     @functools.wraps(func)
     def wrapper(*args, **kwargs):
         if BattleReplay.isPlaying() and BattleReplay.g_replayCtrl.isTimeWarpInProgress:
-            return
-        return func(*args, **kwargs)
+            return None
+        else:
+            return func(*args, **kwargs)
 
     return wrapper
 

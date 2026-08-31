@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<CellMethods/>
+	<ClientMethods/>
+	<Properties>
+		<prefabPath>
+			<Type>STRING</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</prefabPath>
+		<vehiclePart>
+			<Type>STRING</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</vehiclePart>
+	</Properties>
+	<ofEntity>
+		<Vehicle/>
+	</ofEntity>
+	<DefaultKeyName>wtVFXComponent</DefaultKeyName>
+</root>

@@ -46,6 +46,8 @@ package net.wg.gui.lobby.vehiclePreview.bottomPanel
       
       private static const DISCOUNT_OVERLAY_OFFSET:int = 30;
       
+      private static const FROM_BOXES_TF_Y_OFFSET:int = 18;
+      
       private static const BUY_BUTTON_DEFAULT_OFFSET:int = 32;
       
       private static const ACTION_BUTTON_PADDING:int = 20;
@@ -98,6 +100,8 @@ package net.wg.gui.lobby.vehiclePreview.bottomPanel
       public var uniqueLabelTf:TextField;
       
       public var setTitleTF:TextField = null;
+      
+      public var fromBoxesTF:TextField = null;
       
       public var actionButton:UniversalBtn = null;
       
@@ -182,6 +186,8 @@ package net.wg.gui.lobby.vehiclePreview.bottomPanel
          this.uniqueLabelTf.autoSize = TextFieldAutoSize.LEFT;
          this.setTitleTF.mouseWheelEnabled = this.setTitleTF.mouseEnabled = false;
          this.setTitleTF.autoSize = TextFieldAutoSize.LEFT;
+         this.fromBoxesTF.mouseWheelEnabled = this.setTitleTF.mouseEnabled = false;
+         this.fromBoxesTF.autoSize = TextFieldAutoSize.LEFT;
          this.offersView.addEventListener(VehiclePreviewEvent.SELECT,this.onOffersViewSelectHandler);
          this.couponView.addEventListener(Event.SELECT,this.onCouponViewSelectHandler);
          this.setVehiclesView.addEventListener(VehiclePreviewEvent.SHOW,this.onSetVehiclesViewShowHandler);
@@ -255,6 +261,7 @@ package net.wg.gui.lobby.vehiclePreview.bottomPanel
          this.notResearchedLabelTf = null;
          this.uniqueLabelTf = null;
          this.setTitleTF = null;
+         this.fromBoxesTF = null;
          this.discountOverlay = null;
          this.discountValueOverlay = null;
          this.customOfferLabelTF = null;
@@ -410,6 +417,15 @@ package net.wg.gui.lobby.vehiclePreview.bottomPanel
             else
             {
                this.setTitleTF.visible = false;
+            }
+            if(this._data.fromBoxesText && this._data.isHeroTankFromBoxes)
+            {
+               this.fromBoxesTF.htmlText = this._data.fromBoxesText;
+               this.fromBoxesTF.visible = true;
+            }
+            else
+            {
+               this.fromBoxesTF.visible = false;
             }
             if(StringUtils.isNotEmpty(this._data.customOffer))
             {
@@ -617,6 +633,11 @@ package net.wg.gui.lobby.vehiclePreview.bottomPanel
                _loc5_ = this.setItemsView.x + this.actionButton.x + this.actionButton.width;
                this.setTitleTF.x = (_loc5_ >> 1) - (this.setTitleTF.textWidth >> 1);
             }
+         }
+         if(this.fromBoxesTF.visible)
+         {
+            this.fromBoxesTF.x = this.width - this.fromBoxesTF.width >> 1;
+            this.fromBoxesTF.y = this.actionButton.y - this.fromBoxesTF.height - FROM_BOXES_TF_Y_OFFSET;
          }
       }
       

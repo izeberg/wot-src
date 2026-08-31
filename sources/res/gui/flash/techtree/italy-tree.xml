@@ -4,7 +4,7 @@
 	<grid>
 		grid_1
 		<rows>10</rows>
-		<columns>10</columns>
+		<columns>11</columns>
 	</grid>
 	<nodes>
 		<It04_Fiat_3000>
@@ -135,10 +135,17 @@
 		<It08_Progetto_M40_mod_65>
 			<row>8</row>
 			<column>10</column>
+			<lines>
+				<It43_CAV_mod_71/>
+			</lines>
 		</It08_Progetto_M40_mod_65>
 		<It23_CC_3>
 			<row>4</row>
 			<column>10</column>
 		</It23_CC_3>
+		<It43_CAV_mod_71>
+			<row>8</row>
+			<column>11</column>
+		</It43_CAV_mod_71>
 	</nodes>
 </root>

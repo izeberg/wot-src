@@ -2072,8 +2072,8 @@ msgstr "Gold earned"
 msgid ""
 "serviceChannelMessages/battleResults/notification/personalMissions/3/description"
 msgstr ""
-"For joining the ranks of %(campaignName)s, you have been awarded the "
-"%(nameMedal)s medal."
+"For successfully completing a mission in the %(campaignName)s campaign, you "
+"have been awarded the %(nameMedal)s medal."
 
 msgid ""
 "serviceChannelMessages/battleResults/notification/personalMissions/3/header"
@@ -2099,6 +2099,36 @@ msgstr ""
 "For successfully completing 15 missions in the %(categoryName)s series in "
 "the %(campaignName)s campaign, you have been awarded the %(nameMedal)s "
 "medal."
+
+msgid ""
+"serviceChannelMessages/battleResults/notification/personalMissions/4/description"
+msgstr ""
+"For successfully completing a mission in the %(campaignName)s campaign, you "
+"have been awarded the %(nameMedal)s medal."
+
+msgid ""
+"serviceChannelMessages/battleResults/notification/personalMissions/4/header"
+msgstr "Congratulations!"
+
+msgid ""
+"serviceChannelMessages/battleResults/notification/personalMissions/4/stage/1/description"
+msgstr ""
+"For successfully completing 21 missions in the %(categoryName)s series in "
+"the %(operationName)s operation, you have been awarded the %(nameMedal)s "
+"medal."
+
+msgid ""
+"serviceChannelMessages/battleResults/notification/personalMissions/4/stage/2/description"
+msgstr ""
+"For successfully completing 14 missions in the %(categoryName)s series in "
+"the %(operationName)s operation, you have been awarded the %(nameMedal)s "
+"medal."
+
+msgid ""
+"serviceChannelMessages/battleResults/notification/personalMissions/4/stage/3/description"
+msgstr ""
+"For successfully completing 7 missions in the %(categoryName)s series in the"
+" %(operationName)s operation, you have been awarded the %(nameMedal)s medal."
 
 msgid "serviceChannelMessages/battleResults/penaltyForDamageAllies"
 msgstr "fine for damage caused to allies: %s"
@@ -3162,16 +3192,13 @@ msgid "serviceChannelMessages/lootBoxes/footer"
 msgstr "Click the button to view the content."
 
 msgid "serviceChannelMessages/lootBoxes/header"
-msgstr "You received a parcel:"
+msgstr "Parcel Received"
 
 msgid "serviceChannelMessages/lootBoxes/item/name"
-msgstr "%(name)s %(colorTagOpen)sx%(count)s%(colorTagClose)s"
+msgstr "%(name)s: %(colorTagOpen)s%(count)s%(colorTagClose)s"
 
 msgid "serviceChannelMessages/lootBoxesAutoOpen/button"
-msgstr "View"
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/counter"
-msgstr "x%(count)s"
+msgstr "To Rewards"
 
 msgid "serviceChannelMessages/lootBoxesAutoOpen/event/boxes"
 msgstr "Gates activated: %(boxes)s"
@@ -3192,9 +3219,6 @@ msgstr "We activated all your Gates and added their contents to your account:"
 
 msgid "serviceChannelMessages/lootBoxesAutoOpen/header"
 msgstr "Rewards Received"
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/text"
-msgstr "We opened all your boxes and added the rewards for Holiday Ops"
 
 msgid "serviceChannelMessages/lunarBoxesAutoOpen/body"
 msgstr "We opened all Lunar New Year Blessings Envelopes for you."
@@ -3715,6 +3739,22 @@ msgstr "Universal fragments"
 
 msgid "serviceChannelMessages/sysMsg/converter/nationalBlueprintReceived"
 msgstr "%(nationName)s national fragments"
+
+msgid "serviceChannelMessages/sysMsg/converter/postProgression/description"
+msgstr ""
+"The configuration of the following vehicles has been changed: \n"
+" • %(vehiclesList)s"
+
+msgid "serviceChannelMessages/sysMsg/converter/postProgression/header"
+msgstr "Attention!"
+
+msgid ""
+"serviceChannelMessages/sysMsg/converter/postProgression/vehiclesList/additionalCount"
+msgstr "<font color='#E9E2BF'>and %(vehiclesCount)s more</font>"
+
+msgid ""
+"serviceChannelMessages/sysMsg/converter/postProgression/vehiclesList/delimiter"
+msgstr " • "
 
 msgid "serviceChannelMessages/sysMsg/converter/projectionDecalsDemounted"
 msgstr ""

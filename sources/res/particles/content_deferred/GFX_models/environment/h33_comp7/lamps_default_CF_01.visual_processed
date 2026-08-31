@@ -21,6 +21,10 @@
 				<material>
 					<identifier>lambert3_0_ncl1_1</identifier>
 					<fx>shaders/custom/vector_animation_2.fx</fx>
+					<property>
+						g_enableEnvMultiplier
+						<Bool>true</Bool>
+					</property>
 					<collisionFlags>255</collisionFlags>
 					<materialKind>0</materialKind>
 					<property>
@@ -45,7 +49,10 @@
 					</property>
 					<property>
 						lightMultipliers
-						<Vector4>14.000000 1.000000 7.000000 0.000000</Vector4>
+						<Vector4>
+							42.424242 1.000000 7.000000 0.000000
+							<!--BW_String-->
+						</Vector4>
 					</property>
 					<property>
 						TintlColor

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/czech/Cz46_Vz_63P/normal/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.649607 -0.000093 -3.189848</min>
+		<max>1.649488 1.041184 3.367475</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/czech/Cz46_Vz_63P/normal/lod0/Chassis</nodefullVisual>
+</root>

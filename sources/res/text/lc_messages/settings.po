@@ -72,6 +72,19 @@ msgstr ""
 "The setting will be applied in the next battle, if it is disabled in the "
 "current battle."
 
+msgid "INCREASE_EFFECTS_CONTRAST_ENABLED"
+msgstr "Enhanced Visual Effects"
+
+msgid "INCREASE_EFFECTS_CONTRAST_ENABLED/description"
+msgstr ""
+"Enables enhanced visual effects. Disabling this option reverts to standard "
+"effects, which may improve game performance."
+
+msgid "INCREASE_EFFECTS_CONTRAST_ENABLED/warning"
+msgstr ""
+"The setting will be applied in the next battle, if it is disabled in the "
+"current battle."
+
 msgid "LANGUAGE_CODE"
 msgstr "en"
 
@@ -259,14 +272,14 @@ msgstr ""
 "\n"
 "Unavailable with Simplified Graphics and Low Decal Quality."
 
-msgid "VISIBILITY_TUNNEL_ENABLED"
-msgstr "Hide 3D attachments in Sniper mode"
+msgid "VISIBILITY_TUNNEL"
+msgstr "Effect and 3D Attachment Visibility"
 
-msgid "VISIBILITY_TUNNEL_ENABLED/description"
+msgid "VISIBILITY_TUNNEL/description"
 msgstr ""
-"Temporarily hides vehicle 3D attachments from the gun reticle in Sniper mode.\n"
+"Adjusts the visibility of effects and 3D attachments near the center of the screen to reduce visual obstruction while aiming. 3D attachment visibility is only adjusted in Sniper mode.\n"
 "\n"
-"Reduces visual clutter and improves aiming precision."
+"Lower values make effects and 3D attachments more transparent for increased aiming clarity"
 
 msgid "WATER_QUALITY"
 msgstr "Water Quality"
@@ -2198,6 +2211,20 @@ msgstr "Mode:"
 
 msgid "screenMode/windowed"
 msgstr "Windowed"
+
+msgid "showPrebattleHighlights"
+msgstr "Enable Spotlight"
+
+msgid "showPrebattleHighlights/description"
+msgstr ""
+"Displays a selection of visually striking tanks during the pre-battle countdown.\n"
+"\n"
+"Disabling this parameter can improve game performance."
+
+msgid "showPrebattleHighlights/warning"
+msgstr ""
+"If the setting is disabled for the current battle, it will be enabled for "
+"the next one."
 
 msgid "smoothing/description"
 msgstr ""

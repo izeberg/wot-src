@@ -1,6 +1,6 @@
 from __future__ import absolute_import
 from comp7.gui.impl.gen.view_models.views.lobby.season_modifier_model import SeasonModifierModel
-from comp7.gui.impl.lobby.tooltips.comp7_modifiers_domain_tooltip_view import Comp7ModifiersDomainTooltipView
+from comp7_core.gui.impl.lobby.tooltips.comp7_core_modifiers_tooltip_view import Comp7CoreModifiersTooltipView
 from gui.impl.pub.view_component import ViewComponent
 from helpers import dependency
 from gui.impl.gen import R
@@ -23,7 +23,7 @@ class SeasonModifierPresenter(ViewComponent[SeasonModifierModel]):
 
     def createToolTipContent(self, event, contentID):
         if contentID == R.views.battle_modifiers.lobby.tooltips.ModifiersDomainTooltipView():
-            return Comp7ModifiersDomainTooltipView(COMP7_SEASON_MODIFIERS_DOMAIN)
+            return Comp7CoreModifiersTooltipView(COMP7_SEASON_MODIFIERS_DOMAIN)
         return super(SeasonModifierPresenter, self).createToolTipContent(event, contentID)
 
     def _getEvents(self):

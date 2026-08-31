@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from CurrentVehicle import g_currentVehicle
 from gui.prb_control.entities.base.actions_validator import BaseActionsValidator, ActionsValidatorComposite
 from gui.prb_control.entities.base.pre_queue.actions_validator import PreQueueActionsValidator

@@ -138,7 +138,6 @@ class FunRandomLootboxAutoOpenFormatter(AsyncAutoLootBoxSubFormatter, FunAssetPa
             return {'mainReward': None, 
                'rewards': composer.getFormattedBonuses(rawBonuses, AWARDS_SIZES.SMALL), 
                'bgIcon': bgIcon}
-            return
 
     def __getRawBonuses(self, rewards):
         mergedRewards = getMergedCompensatedBonuses(rewards)

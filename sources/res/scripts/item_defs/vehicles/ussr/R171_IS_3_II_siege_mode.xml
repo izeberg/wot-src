@@ -5231,7 +5231,6 @@
 						0.095
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
-					<multiGunEffects>shot_dualgun_mainext_L shot_dualgun_mainext_R</multiGunEffects>
 					<dualGun>
 						<chargeTime>
 							2.5
@@ -5257,6 +5256,9 @@
 							<!--BW_String-->
 						</preChargeIndication>
 					</dualGun>
+					<prefabs>
+						<main>content/CGFPrefabs/Vehicle/guns/ussr/gun_100mm_S_34D.prefab</main>
+					</prefabs>
 					<models>
 						<undamaged>vehicles/russian/R171_IS_3_II/normal/lod0/Gun_01.model</undamaged>
 						<destroyed>vehicles/russian/R171_IS_3_II/crash/lod0/Gun_01.model</destroyed>
@@ -6674,7 +6676,6 @@
 						0.095
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
-					<multiGunEffects>shot_dualgun_mainext_L shot_dualgun_mainext_R</multiGunEffects>
 					<dualGun>
 						<chargeTime>2</chargeTime>
 						<shootImpulse>200</shootImpulse>
@@ -6697,6 +6698,9 @@
 							<!--BW_String-->
 						</preChargeIndication>
 					</dualGun>
+					<prefabs>
+						<main>content/CGFPrefabs/Vehicle/guns/ussr/gun_100mm_S_34D.prefab</main>
+					</prefabs>
 					<models>
 						<undamaged>vehicles/russian/R171_IS_3_II/normal/lod0/Gun_04.model</undamaged>
 						<destroyed>vehicles/russian/R171_IS_3_II/crash/lod0/Gun_04.model</destroyed>
@@ -7048,7 +7052,6 @@
 						0.095
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
-					<multiGunEffects>shot_dualgun_large_mb_L shot_dualgun_large_mb_R</multiGunEffects>
 					<dualGun>
 						<chargeTime>
 							2.5
@@ -7082,6 +7085,9 @@
 						</whileGunDamaged>
 						<afterShot>4</afterShot>
 					</shotDispersionFactors>
+					<prefabs>
+						<main>content/CGFPrefabs/Vehicle/guns/ussr/gun_122mm_BL_9D.prefab</main>
+					</prefabs>
 					<models>
 						<undamaged>vehicles/russian/R171_IS_3_II/normal/lod0/Gun_06.model</undamaged>
 						<destroyed>vehicles/russian/R171_IS_3_II/crash/lod0/Gun_06.model</destroyed>
@@ -7301,6 +7307,7 @@
 						</customizableVehicleAreas>
 					</customization>
 					<reloadEffect>dualgun_reload115_152</reloadEffect>
+					<muzzleBrake>HORIZONTAL</muzzleBrake>
 					<camouflage>
 						<density>
 							102.158 103.319

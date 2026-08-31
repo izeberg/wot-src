@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/italy/It43_CAV_mod_71/crash/lod2/Chassis</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/italy/It43_CAV_mod_71/crash/lod3/Chassis</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.542501 0.000005 -3.673332</min>
+		<max>1.542501 1.159251 3.689038</max>
+	</visibilityBox>
+</root>

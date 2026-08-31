@@ -1,4 +1,5 @@
-
+from __future__ import absolute_import
+from gui.impl.gen import R
 
 class CustomizationModes(object):
     CUSTOM = 1
@@ -20,3 +21,8 @@ class CustomizationModeSource(object):
     PROPERTIES_SHEET = 4
     NOTIFICATION = 5
     REWARD_WINDOW = 6
+
+
+C11N_VIEW_IDS_THAT_SUSPEND_HIGHLIGHTER = frozenset((
+ R.views.lobby.personal_exchange_rates.GoldExchangeView(),
+ R.views.lobby.personal_exchange_rates.ExperienceExchangeView()))

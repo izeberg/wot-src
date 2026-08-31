@@ -30,3 +30,6 @@ class Comp7BanNotificationWindow(AfkLeaverNotification):
         if not isinstance(other, Comp7BanNotificationWindow):
             return False
         return self.arenaTypeID == other.arenaTypeID and self.time == other.time and self.duration == other.duration and self.penalty == other.penalty and self.isQualification == other.isQualification
+
+    def __ne__(self, other):
+        return not self == other

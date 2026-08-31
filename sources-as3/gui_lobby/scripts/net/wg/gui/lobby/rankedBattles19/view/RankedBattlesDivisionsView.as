@@ -50,7 +50,7 @@ package net.wg.gui.lobby.rankedBattles19.view
          super.draw();
          if(this._data != null)
          {
-            if(isInvalid(InvalidationType.SIZE,INV_VIEW_PADDING))
+            if(isInvalidTypes(InvalidationType.SIZE,INV_VIEW_PADDING))
             {
                this.updateLayoutHorizontal();
                this.updateLayoutVertical();

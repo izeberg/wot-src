@@ -33,6 +33,26 @@ package net.wg.infrastructure.base
          dispatchEvent(new LifeCycleEvent(LifeCycleEvent.ON_AFTER_DISPOSE));
       }
       
+      public function invalidateData() : void
+      {
+         this.invalidate(InvalidationType.DATA);
+      }
+      
+      public function invalidateSize() : void
+      {
+         this.invalidate(InvalidationType.SIZE);
+      }
+      
+      public function invalidateState() : void
+      {
+         this.invalidate(InvalidationType.STATE);
+      }
+      
+      public function isDisposed() : Boolean
+      {
+         return this._disposed;
+      }
+      
       protected function onDispose() : void
       {
          removeEventListener(Event.ENTER_FRAME,this.handleEnterFrameValidation,false);
@@ -78,39 +98,26 @@ package net.wg.infrastructure.base
          }
       }
       
-      public function validateNow(param1:Event = null) : void
-      {
-         if(!this.initialized)
-         {
-            this.initialized = true;
-            this.configUI();
-         }
-         removeEventListener(Event.ENTER_FRAME,this.handleEnterFrameValidation,false);
-         removeEventListener(Event.RENDER,this.validateNow,false);
-         if(!this._invalid)
-         {
-            return;
-         }
-         this.draw();
-         this._invalidHash = {};
-         this._invalid = false;
-      }
-      
-      protected function isInvalid(... rest) : Boolean
+      protected function isInvalid(param1:*) : Boolean
       {
          if(!this._invalid)
          {
             return false;
          }
-         var _loc2_:uint = rest.length;
-         if(_loc2_ == 0)
+         return this._invalidHash[InvalidationType.ALL] || this._invalidHash[param1];
+      }
+      
+      protected function isInvalidTypes(... rest) : Boolean
+      {
+         if(!this._invalid)
          {
-            return this._invalid;
+            return false;
          }
          if(this._invalidHash[InvalidationType.ALL])
          {
             return true;
          }
+         var _loc2_:uint = rest.length;
          var _loc3_:uint = 0;
          while(_loc3_ < _loc2_)
          {
@@ -123,19 +130,34 @@ package net.wg.infrastructure.base
          return false;
       }
       
-      public function invalidateSize() : void
+      protected function draw() : void
       {
-         this.invalidate(InvalidationType.SIZE);
       }
       
-      public function invalidateData() : void
+      protected function configUI() : void
       {
-         this.invalidate(InvalidationType.DATA);
       }
       
-      public function invalidateState() : void
+      public function validateNow(param1:Event = null) : void
       {
-         this.invalidate(InvalidationType.STATE);
+         var _loc2_:* = null;
+         if(!this.initialized)
+         {
+            this.initialized = true;
+            this.configUI();
+         }
+         removeEventListener(Event.ENTER_FRAME,this.handleEnterFrameValidation,false);
+         removeEventListener(Event.RENDER,this.validateNow,false);
+         if(!this._invalid)
+         {
+            return;
+         }
+         this.draw();
+         for(_loc2_ in this._invalidHash)
+         {
+            delete this._invalidHash[_loc2_];
+         }
+         this._invalid = false;
       }
       
       protected function handleStageChange(param1:Event) : void
@@ -154,19 +176,6 @@ package net.wg.infrastructure.base
       protected function handleEnterFrameValidation(param1:Event) : void
       {
          this.validateNow();
-      }
-      
-      protected function draw() : void
-      {
-      }
-      
-      protected function configUI() : void
-      {
-      }
-      
-      public function isDisposed() : Boolean
-      {
-         return this._disposed;
       }
    }
 }

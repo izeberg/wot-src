@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.impl.pub.view_component import ViewComponent
 from gui.impl.pub.view_impl import TViewModel
 from gui.impl.gen import R
