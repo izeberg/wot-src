@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<battleHints>
+		<testMessage>&lt;font color=&quot;#FFFFFF&quot;&gt;_(#event:battleHints/testMessage)&lt;/font&gt;</testMessage>
+		<testMessageWithParams>&lt;font color=&quot;#FFFFFF&quot;&gt;_(#event:battleHints/testMessageWithParams)&lt;/font&gt;</testMessageWithParams>
+		<wtCampKilled_hunters>&lt;font size=&quot;24&quot; color=&quot;#FFFFFF&quot;&gt;_(#event:battleHints/wtCampKilled_hunters)&lt;/font&gt;</wtCampKilled_hunters>
+		<wtCampKilled_boss>&lt;font size=&quot;24&quot; color=&quot;#FFFFFF&quot;&gt;_(#event:battleHints/wtCampKilled_boss)&lt;/font&gt;</wtCampKilled_boss>
+		<wtGeneratorCaptured_hunters>&lt;font size=&quot;24&quot; color=&quot;#FFFFFF&quot;&gt;_(#event:battleHints/wtGeneratorCaptured_hunters)&lt;/font&gt;</wtGeneratorCaptured_hunters>
+		<wtGeneratorCaptured_boss>&lt;font size=&quot;24&quot; color=&quot;#FFFFFF&quot;&gt;_(#event:battleHints/wtGeneratorCaptured_boss)&lt;/font&gt;</wtGeneratorCaptured_boss>
+		<wtBossInvincible>&lt;font size=&quot;24&quot; color=&quot;#FFFFFF&quot;&gt;_(#event:battleHints/wtBossInvincible)&lt;/font&gt;</wtBossInvincible>
+		<wtHunterIsDead>&lt;font size=&quot;24&quot; color=&quot;#FFFFFF&quot;&gt;_(#event:battleHints/wtHunterIsDead)&lt;/font&gt;</wtHunterIsDead>
+		<wtEndgameStart_hunters>&lt;font size=&quot;24&quot; color=&quot;#FFFFFF&quot;&gt;_(#event:battleHints/wtEndgameStart_hunters)&lt;/font&gt;</wtEndgameStart_hunters>
+		<wtEndgameStart_boss>&lt;font size=&quot;24&quot; color=&quot;#FFFFFF&quot;&gt;_(#event:battleHints/wtEndgameStart_boss)&lt;/font&gt;</wtEndgameStart_boss>
+		<wtEndgameStartNoHarm_boss>&lt;font size=&quot;24&quot; color=&quot;#FFFFFF&quot;&gt;_(#event:battleHints/wtEndgameStartNoHarm_boss)&lt;/font&gt;</wtEndgameStartNoHarm_boss>
+		<wtTimeRemaining_hunter>&lt;font color=&quot;#FFFFFF&quot;&gt;_(#event:battleHints/wtTimeRemaining_hunter)&lt;/font&gt;</wtTimeRemaining_hunter>
+		<wtTimeRemaining_boss>&lt;font color=&quot;#FFFFFF&quot;&gt;_(#event:battleHints/wtTimeRemaining_boss)&lt;/font&gt;</wtTimeRemaining_boss>
+		<wtBossTeleport>&lt;font size=&quot;24&quot; color=&quot;#FFFFFF&quot;&gt;_(#event:battleHints/wtBossTeleport)&lt;/font&gt;</wtBossTeleport>
+		<wtBossHyperionReady>&lt;font size=&quot;24&quot; color=&quot;#FFFFFF&quot;&gt;_(#event:battleHints/wtBossHyperionReady)&lt;/font&gt;</wtBossHyperionReady>
+		<wtBossHyperionDeploy>&lt;font size=&quot;24&quot; color=&quot;#FFFFFF&quot;&gt;_(#event:battleHints/wtBossHyperionDeploy)&lt;/font&gt;</wtBossHyperionDeploy>
+	</battleHints>
+	<lobby>
+		<quests>
+			<bonuses>
+				<ticket>&lt;img src=&apos;img://white_tiger/gui/maps/icons/quests/bonuses/small/ticket.png&apos; width=&apos;16&apos; height=&apos;16&apos; vspace=&apos;-14&apos; /&gt; &lt;font color=&apos;#CED9D9&apos;&gt;x%(value)s&lt;/font&gt;</ticket>
+				<wtevent_lootBox>&lt;img src=&apos;img://white_tiger/gui/maps/icons/quests/bonuses/small/wtevent_lootBox.png&apos; width=&apos;16&apos; height=&apos;16&apos; vspace=&apos;-16&apos; /&gt; &lt;font color=&apos;#CED9D9&apos;&gt;x%(value)s&lt;/font&gt;</wtevent_lootBox>
+				<wt>&lt;img src=&apos;img://white_tiger/gui/maps/icons/quests/bonuses/small/wtevent_lootBox.png&apos; width=&apos;16&apos; height=&apos;16&apos; vspace=&apos;-16&apos; /&gt; &lt;font color=&apos;#CED9D9&apos;&gt;x%(value)s&lt;/font&gt;</wt>
+				<wt_common>&lt;img src=&apos;img://white_tiger/gui/maps/icons/quests/bonuses/small/lootBox_wt_common.png&apos; width=&apos;16&apos; height=&apos;16&apos; vspace=&apos;-16&apos; /&gt; &lt;font color=&apos;#CED9D9&apos;&gt;x%(value)s&lt;/font&gt;</wt_common>
+				<wt_epic>&lt;img src=&apos;img://white_tiger/gui/maps/icons/quests/bonuses/small/lootBox_wt_epic.png&apos; width=&apos;16&apos; height=&apos;16&apos; vspace=&apos;-16&apos; /&gt; &lt;font color=&apos;#CED9D9&apos;&gt;x%(value)s&lt;/font&gt;</wt_epic>
+				<wt_rare>&lt;img src=&apos;img://white_tiger/gui/maps/icons/quests/bonuses/small/lootBox_wt_rare.png&apos; width=&apos;16&apos; height=&apos;16&apos; vspace=&apos;-16&apos; /&gt; &lt;font color=&apos;#CED9D9&apos;&gt;x%(value)s&lt;/font&gt;</wt_rare>
+				<customizations>
+					<camouflage>&lt;img src=&apos;img://white_tiger/gui/maps/icons/quests/bonuses/tiny/camouflage.png&apos; width=&apos;16&apos; height=&apos;16&apos; vspace=&apos;-4&apos; /&gt; &lt;font color=&apos;#CED9D9&apos;&gt;x%(value)s&lt;/font&gt;</camouflage>
+					<decal>&lt;img src=&apos;img://white_tiger/gui/maps/icons/quests/bonuses/tiny/decal.png&apos; width=&apos;16&apos; height=&apos;16&apos; vspace=&apos;-4&apos; /&gt; &lt;font color=&apos;#CED9D9&apos;&gt;x%(value)s&lt;/font&gt;</decal>
+					<effect>&lt;img src=&apos;img://white_tiger/gui/maps/icons/quests/bonuses/tiny/effect.png&apos; width=&apos;16&apos; height=&apos;16&apos; vspace=&apos;-4&apos; /&gt; &lt;font color=&apos;#CED9D9&apos;&gt;x%(value)s&lt;/font&gt;</effect>
+					<emblem>&lt;img src=&apos;img://white_tiger/gui/maps/icons/quests/bonuses/tiny/emblem.png&apos; width=&apos;16&apos; height=&apos;16&apos; vspace=&apos;-4&apos; /&gt; &lt;font color=&apos;#CED9D9&apos;&gt;x%(value)s&lt;/font&gt;</emblem>
+					<inscription>&lt;img src=&apos;img://white_tiger/gui/maps/icons/quests/bonuses/tiny/inscription.png&apos; width=&apos;16&apos; height=&apos;16&apos; vspace=&apos;-4&apos; /&gt; &lt;font color=&apos;#CED9D9&apos;&gt;x%(value)s&lt;/font&gt;</inscription>
+					<paint>&lt;img src=&apos;img://white_tiger/gui/maps/icons/quests/bonuses/tiny/paint.png&apos; width=&apos;16&apos; height=&apos;16&apos; vspace=&apos;-4&apos; /&gt; &lt;font color=&apos;#CED9D9&apos;&gt;x%(value)s&lt;/font&gt;</paint>
+					<personalNumber>&lt;img src=&apos;img://white_tiger/gui/maps/icons/quests/bonuses/tiny/personalNumber.png&apos; width=&apos;16&apos; height=&apos;16&apos; vspace=&apos;-4&apos; /&gt; &lt;font color=&apos;#CED9D9&apos;&gt;x%(value)s&lt;/font&gt;</personalNumber>
+					<projectionDecal>&lt;img src=&apos;img://white_tiger/gui/maps/icons/quests/bonuses/tiny/decal.png&apos; width=&apos;16&apos; height=&apos;16&apos; vspace=&apos;-4&apos; /&gt; &lt;font color=&apos;#CED9D9&apos;&gt;x%(value)s&lt;/font&gt;</projectionDecal>
+					<style>&lt;img src=&apos;img://white_tiger/gui/maps/icons/quests/bonuses/tiny/style.png&apos; width=&apos;16&apos; height=&apos;16&apos; vspace=&apos;-4&apos; /&gt; &lt;font color=&apos;#CED9D9&apos;&gt;x%(value)s&lt;/font&gt;</style>
+				</customizations>
+				<equipCoin>&lt;font color=&apos;#95907F&apos;&gt;%(value)s &lt;/font&gt;&lt;img src=&apos;img://gui/maps/icons/quests/bonuses/small/equipCoin.png&apos; width=&apos;16&apos; height=&apos;16&apos; vspace=&apos;-14&apos; /&gt;</equipCoin>
+			</bonuses>
+		</quests>
+	</lobby>
+</root>

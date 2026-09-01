@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<settings/>
+	<messages>
+		<message>
+			<name>DEATH_FROM_SHOT_BUILTINIMPULSE</name>
+			<type>list</type>
+			<value>
+				<item>_(#ingame_gui:postmortem_messages/DEATH_FROM_SHOT)</item>
+				<item>#FF2717,#800080</item>
+			</value>
+		</message>
+		<message>
+			<name>DEATH_FROM_RAMMING_BUILTINHYPERION</name>
+			<type>list</type>
+			<value>
+				<item>_(#ingame_gui:postmortem_messages/DEATH_FROM_SHOT)</item>
+				<item>#FF2717,#800080</item>
+			</value>
+		</message>
+		<message>
+			<name>DEATH_FROM_SHOT_BUILTINEXPLOSIVESHOT</name>
+			<type>list</type>
+			<value>
+				<item>_(#ingame_gui:postmortem_messages/DEATH_FROM_SHOT)</item>
+				<item>#FF2717,#800080</item>
+			</value>
+		</message>
+	</messages>
+</root>

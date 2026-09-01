@@ -1,5 +1,7 @@
+from __future__ import absolute_import
 import logging
 from collections import defaultdict
+from future.utils import viewitems
 import BattleReplay
 from AvatarInputHandler import aih_global_binding
 from aih_constants import CTRL_MODE_NAME
@@ -101,12 +103,13 @@ class BattleRoyaleVehicleMarkerPlugin(VehicleMarkerPlugin):
             return settings.BRmarkersSymbolsNames.BOT_SYMBOL
         return settings.BRmarkersSymbolsNames.VEHICLE_MARKER
 
-    def _getMarkerStatusPriority(self, statusID):
+    def _getMarkerStatusPriority(self, markerState):
         try:
             for index, priorities in enumerate(_BATTLE_ROYALE_STATUS_EFFECTS_PRIORITY):
-                if statusID in priorities:
+                if markerState in priorities:
                     return index
 
+            return -1
         except ValueError:
             return -1
 
@@ -267,7 +270,7 @@ class BattleRoyaleVehicleMarkerPlugin(VehicleMarkerPlugin):
             return
 
     def _onUpdateObservedVehicleData(self, vehicleID, _):
-        for keyVehID, marker in self._markers.iteritems():
+        for keyVehID, marker in viewitems(self._markers):
             if keyVehID != vehicleID:
                 if self.__hasRepairingMarker(keyVehID):
                     self.__updateRepairingMarker(keyVehID)

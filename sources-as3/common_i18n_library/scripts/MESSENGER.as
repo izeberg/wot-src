@@ -711,6 +711,16 @@ package
       
       public static const SERVICECHANNELMESSAGES_BATTLERESULTS_NOTIFICATION_PERSONALMISSIONS_3_STAGE_1_DESCRIPTION:String = "#messenger:serviceChannelMessages/battleResults/notification/personalMissions/3/stage/1/description";
       
+      public static const SERVICECHANNELMESSAGES_BATTLERESULTS_NOTIFICATION_PERSONALMISSIONS_4_HEADER:String = "#messenger:serviceChannelMessages/battleResults/notification/personalMissions/4/header";
+      
+      public static const SERVICECHANNELMESSAGES_BATTLERESULTS_NOTIFICATION_PERSONALMISSIONS_4_DESCRIPTION:String = "#messenger:serviceChannelMessages/battleResults/notification/personalMissions/4/description";
+      
+      public static const SERVICECHANNELMESSAGES_BATTLERESULTS_NOTIFICATION_PERSONALMISSIONS_4_STAGE_3_DESCRIPTION:String = "#messenger:serviceChannelMessages/battleResults/notification/personalMissions/4/stage/3/description";
+      
+      public static const SERVICECHANNELMESSAGES_BATTLERESULTS_NOTIFICATION_PERSONALMISSIONS_4_STAGE_2_DESCRIPTION:String = "#messenger:serviceChannelMessages/battleResults/notification/personalMissions/4/stage/2/description";
+      
+      public static const SERVICECHANNELMESSAGES_BATTLERESULTS_NOTIFICATION_PERSONALMISSIONS_4_STAGE_1_DESCRIPTION:String = "#messenger:serviceChannelMessages/battleResults/notification/personalMissions/4/stage/1/description";
+      
       public static const SERVICECHANNELMESSAGES_BATTLERESULTS_PERSONALMISSIONS_BOTH:String = "#messenger:serviceChannelMessages/battleResults/personalMissions/both";
       
       public static const SERVICECHANNELMESSAGES_BATTLERESULTS_FORTRESOURCE:String = "#messenger:serviceChannelMessages/battleResults/fortResource";
@@ -1259,6 +1269,14 @@ package
       
       public static const SERVICECHANNELMESSAGES_SYSMSG_CONVERTER_PROJECTIONDECALSDEMOUNTED:String = "#messenger:serviceChannelMessages/sysMsg/converter/projectionDecalsDemounted";
       
+      public static const SERVICECHANNELMESSAGES_SYSMSG_CONVERTER_POSTPROGRESSION_HEADER:String = "#messenger:serviceChannelMessages/sysMsg/converter/postProgression/header";
+      
+      public static const SERVICECHANNELMESSAGES_SYSMSG_CONVERTER_POSTPROGRESSION_DESCRIPTION:String = "#messenger:serviceChannelMessages/sysMsg/converter/postProgression/description";
+      
+      public static const SERVICECHANNELMESSAGES_SYSMSG_CONVERTER_POSTPROGRESSION_VEHICLESLIST_DELIMITER:String = "#messenger:serviceChannelMessages/sysMsg/converter/postProgression/vehiclesList/delimiter";
+      
+      public static const SERVICECHANNELMESSAGES_SYSMSG_CONVERTER_POSTPROGRESSION_VEHICLESLIST_ADDITIONALCOUNT:String = "#messenger:serviceChannelMessages/sysMsg/converter/postProgression/vehiclesList/additionalCount";
+      
       public static const SERVICECHANNELMESSAGES_SYSMSG_REMOVECUSTOMIZATIONS:String = "#messenger:serviceChannelMessages/sysMsg/removeCustomizations";
       
       public static const SERVICECHANNELMESSAGES_SYSMSG_CUSTOMIZATIONS_MAP_SUMMER:String = "#messenger:serviceChannelMessages/sysMsg/customizations/map/summer";
@@ -1350,10 +1368,6 @@ package
       public static const SERVICECHANNELMESSAGES_LOOTBOXES_ITEM_NAME:String = "#messenger:serviceChannelMessages/lootBoxes/item/name";
       
       public static const SERVICECHANNELMESSAGES_LOOTBOXESAUTOOPEN_HEADER:String = "#messenger:serviceChannelMessages/lootBoxesAutoOpen/header";
-      
-      public static const SERVICECHANNELMESSAGES_LOOTBOXESAUTOOPEN_TEXT:String = "#messenger:serviceChannelMessages/lootBoxesAutoOpen/text";
-      
-      public static const SERVICECHANNELMESSAGES_LOOTBOXESAUTOOPEN_COUNTER:String = "#messenger:serviceChannelMessages/lootBoxesAutoOpen/counter";
       
       public static const SERVICECHANNELMESSAGES_LOOTBOXESAUTOOPEN_EVENT_HEADER:String = "#messenger:serviceChannelMessages/lootBoxesAutoOpen/event/header";
       

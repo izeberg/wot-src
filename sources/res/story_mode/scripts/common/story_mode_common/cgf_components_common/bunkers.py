@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import CGF
 from cgf_script.registration import ComponentProperty
 from constants import ATTACK_REASON

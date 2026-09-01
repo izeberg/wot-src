@@ -13,7 +13,7 @@ from messenger.proto.xmpp.errors import ServerActionError
 from messenger.proto.xmpp.jid import makeContactJID
 from messenger.proto.xmpp.messages.formatters import XmppLobbyMessageBuilder, XmppLobbyUsersChatBuilder
 from messenger.proto.xmpp.xmpp_constants import MESSAGE_LIMIT
-from messenger.storage import storage_getter
+from messenger.storage import MessengerStorageDescriptor, UsersStorage
 from skeletons.gui.game_control import IGameSessionController
 _LAZY_EXIT_DELAY = 10.0
 _BACK_OFF_MIN_DELAY = 60
@@ -99,14 +99,11 @@ class _ChannelController(LobbyLayout):
 
 class ChatSessionController(_ChannelController):
     __gameSession = dependency.descriptor(IGameSessionController)
+    usersStorage = MessengerStorageDescriptor(UsersStorage)
 
     def __init__(self, channel):
         super(ChatSessionController, self).__init__(channel, XmppLobbyUsersChatBuilder())
         self._isHistoryRqRequired = True
-
-    @storage_getter('users')
-    def usersStorage(self):
-        return
 
     def isJoined(self):
         return self._channel.isJoined() and not self._isHistoryRqRequired

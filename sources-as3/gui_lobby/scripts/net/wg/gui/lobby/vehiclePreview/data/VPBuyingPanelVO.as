@@ -31,6 +31,8 @@ package net.wg.gui.lobby.vehiclePreview.data
       
       public var isShowSpecialTooltip:Boolean = false;
       
+      public var isHeroTankFromBoxes:Boolean = false;
+      
       public var isBuyingAvailable:Boolean = false;
       
       public var isUnlock:Boolean = false;
@@ -52,6 +54,8 @@ package net.wg.gui.lobby.vehiclePreview.data
       public var vehicleId:Number = -1;
       
       public var customOffer:String = "";
+      
+      public var fromBoxesText:String = "";
       
       public function VPBuyingPanelVO(param1:Object)
       {

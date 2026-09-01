@@ -24,6 +24,10 @@
 					<materialKind>0</materialKind>
 					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
 					<property>
+						g_enableEnvMultiplier
+						<Bool>true</Bool>
+					</property>
+					<property>
 						diffuseUVSpeedAlphaOffset
 						<Vector4>-0.012000 0.480000 0.000000 0.000000</Vector4>
 					</property>
@@ -33,7 +37,7 @@
 					</property>
 					<property>
 						lightMultipliers
-						<Vector4>20.000000 0.000000 1.000000 0.000000</Vector4>
+						<Vector4>8.097166 0.000000 1.000000 0.000000</Vector4>
 					</property>
 					<property>
 						FreshnelColor
@@ -90,6 +94,10 @@
 					<materialKind>0</materialKind>
 					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
 					<property>
+						g_enableEnvMultiplier
+						<Bool>true</Bool>
+					</property>
+					<property>
 						TintlColor
 						<Vector4>0.282353 0.282353 0.282353 0.600000</Vector4>
 					</property>
@@ -103,7 +111,7 @@
 					</property>
 					<property>
 						lightMultipliers
-						<Vector4>1.000000 0.100000 1.000000 0.000000</Vector4>
+						<Vector4>0.404858 0.100000 1.000000 0.000000</Vector4>
 					</property>
 					<property>
 						alphaFadeAmountFresnel

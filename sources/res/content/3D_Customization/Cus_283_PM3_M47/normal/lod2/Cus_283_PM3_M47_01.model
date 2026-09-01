@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_283_PM3_M47/normal/lod3/Cus_283_PM3_M47_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.393685 0.000000 -0.527619</min>
+		<max>0.049864 0.375987 0.737481</max>
+	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/Cus_283_PM3_M47/normal/lod2/Cus_283_PM3_M47_01</nodefullVisual>
+	<tank>true</tank>
+</root>

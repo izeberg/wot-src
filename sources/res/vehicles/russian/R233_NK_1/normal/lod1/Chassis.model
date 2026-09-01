@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/russian/R233_NK_1/normal/lod1/Chassis</nodefullVisual>
+	<parent>vehicles/russian/R233_NK_1/normal/lod2/Chassis</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.689654 -0.010722 -3.570870</min>
+		<max>1.689654 1.041768 3.518795</max>
+	</visibilityBox>
+</root>

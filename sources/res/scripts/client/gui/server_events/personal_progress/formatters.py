@@ -1,6 +1,5 @@
 import typing
 from collections import namedtuple
-import personal_missions
 from constants import QUEST_PROGRESS_STATE
 from gui.Scaleform.genConsts.QUEST_PROGRESS_BASE import QUEST_PROGRESS_BASE
 from gui.Scaleform.locale.PERSONAL_MISSIONS import PERSONAL_MISSIONS
@@ -13,6 +12,7 @@ from gui.server_events.personal_progress.storage import PostBattleProgressStorag
 from gui.shared.formatters import text_styles
 from gui.shared.utils.functions import makeTooltip
 from helpers import i18n
+from personal_missions import PM_BRANCH
 from personal_missions_constants import DISPLAY_TYPE, MULTIPLIER_SCOPE
 from shared_utils import first, findFirst
 
@@ -29,7 +29,7 @@ class ProgressesFormatter(object):
         else:
             return self._bodyFormat(isMain)
 
-    def headerFormat(self, isMain=None, isCompleted=False, isPM3Quest=False):
+    def headerFormat(self, isMain=None, isCompleted=False, isBranchWithoutAwardListQuests=False):
         result = []
         if self._storage:
             if isMain is not None:
@@ -37,7 +37,7 @@ class ProgressesFormatter(object):
                 uniqueConditionHeader = self._storage.getUniqueCompletionRequirement()
                 if progresses:
                     result.append(first(progresses.values()).getHeaderData())
-                elif isPM3Quest:
+                elif isBranchWithoutAwardListQuests:
                     result.append(self.__addUniqueHeaderProgress(isCompleted, uniqueConditionHeader))
                 else:
                     result.append(self.__addDummyHeaderProgress(isMain))
@@ -212,9 +212,12 @@ class PMTooltipConditionsFormatters(object):
      'title',
      'isInOrGroup'])
 
-    def format(self, event, isMain=None):
+    def format(self, event, isMain=None, isForNewTooltip=False):
         storage = LobbyProgressStorage(event.getGeneralQuestID(), event.getConditionsConfig(), event.getConditionsProgress(), event.isOneBattleQuest())
-        if event.getPMType().branch in personal_missions.PM_BRANCH.V2_BRANCHES:
+        if isForNewTooltip:
+            return [ self._CONDITION(R.images.gui.maps.icons.personal_missions_30.missions_icons.c_90x90.dyn(('icon_battle_condition_{}_90x90').format(c.getIconID()))(), c.getDescription(isForNewTooltip), c.isInOrGroup()) for c in storage.sortProgresses(storage.getBodyProgresses(isMain).itervalues())
+                   ]
+        if event.getPMType().branchName not in PM_BRANCH.MUTUAL_EXCLUSION_BRANCHES[PM_BRANCH.QUEST_GROUPS.GROUP_1]:
             return [ self._CONDITION(RES_ICONS.get90ConditionIcon(c.getIconID()), c.getDescription(), c.isInOrGroup()) for c in storage.sortProgresses(storage.getBodyProgresses(isMain).itervalues())
                    ]
         return [ self._CONDITION(RES_ICONS.get90ConditionIcon(c.getIconID()), text_styles.main(c.getDescription()), c.isInOrGroup()) for c in storage.sortProgresses(storage.getBodyProgresses(isMain).itervalues())

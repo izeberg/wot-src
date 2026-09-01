@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G183_Fossa_VM_68/crash/lod2/Chassis</nodefullVisual>
+	<visibilityBox>
+		<min>-1.249389 -0.011605 -2.599959</min>
+		<max>1.247039 1.155997 3.047042</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/german/G183_Fossa_VM_68/crash/lod3/Chassis</parent>
+	<extent>96.000000</extent>
+</root>

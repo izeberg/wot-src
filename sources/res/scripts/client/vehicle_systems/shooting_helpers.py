@@ -1,4 +1,4 @@
-import typing
+import typing, BigWorld
 from cgf_events import gun_events
 from constants import IS_CLIENT, DEFAULT_GUN_INDEX
 from helpers import dependency
@@ -24,6 +24,8 @@ def processVehicleDiscreteShots(vehicle, gunInstallationSlot):
     if IS_CLIENT:
         vehicle.events.onDiscreteShotDone(gunInstallationSlot)
         notifyVehicleDiscreteShots(vehicle, gunInstallationSlot)
+        if gunInstallationSlot.isMainInstallation():
+            notifyArenaVehicleShot(vehicle)
 
 
 @dependency.replace_none_kwargs(sessionProvider=IBattleSessionProvider)
@@ -31,4 +33,11 @@ def notifyVehicleDiscreteShots(vehicle, gunInstallationSlot, sessionProvider=Non
     feedback = sessionProvider.shared.feedback
     if feedback is not None:
         feedback.onDiscreteShotsDone(vehicle.id, gunInstallationSlot)
+    return
+
+
+def notifyArenaVehicleShot(vehicle):
+    arena = getattr(BigWorld.player(), 'arena', None)
+    if arena is not None:
+        arena.onVehicleShot(vehicle.id)
     return

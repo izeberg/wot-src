@@ -24,6 +24,10 @@
 					<materialKind>0</materialKind>
 					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
 					<property>
+						g_enableEnvMultiplier
+						<Bool>true</Bool>
+					</property>
+					<property>
 						distortion_UV_Speed_Amount
 						<Vector4>-0.040000 0.010000 0.030000 0.100000</Vector4>
 					</property>
@@ -59,6 +63,10 @@
 					<property>
 						TintlColor
 						<Vector4>1.000000 1.000000 1.000000 0.340000</Vector4>
+					</property>
+					<property>
+						lightMultipliers
+						<Vector4>0.680272 0.000000 0.000000 0.000000</Vector4>
 					</property>
 				</material>
 				<groupOrigin>0.315873 0.084055 0.014928</groupOrigin>

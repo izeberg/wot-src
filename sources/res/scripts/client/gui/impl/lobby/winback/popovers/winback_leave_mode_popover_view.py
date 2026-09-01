@@ -16,7 +16,7 @@ class WinbackLeaveModePopoverView(PopOverViewImpl):
     _winbackController = dependency.descriptor(IWinbackController)
 
     def __init__(self):
-        settings = ViewSettings(R.views.lobby.winback.popovers.WinbackLeaveModePopoverView())
+        settings = ViewSettings(R.views.mono.winback.popovers.winback_leave_mode_popover_view())
         settings.flags = ViewFlags.VIEW
         settings.model = WinbackLeaveModePopoverViewModel()
         super(WinbackLeaveModePopoverView, self).__init__(settings)
@@ -26,7 +26,7 @@ class WinbackLeaveModePopoverView(PopOverViewImpl):
         return super(WinbackLeaveModePopoverView, self).getViewModel()
 
     def createToolTipContent(self, event, contentID):
-        if contentID == R.views.lobby.winback.tooltips.ModeInfoTooltip():
+        if contentID == R.views.mono.winback.tooltips.mode_info_tooltip():
             return ModeInfoTooltip()
         return super(WinbackLeaveModePopoverView, self).createToolTipContent(event, contentID)
 

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld
 from BattleReplay import g_replayEvents
 from battle_royale.gui.Scaleform.daapi.view.battle.respawn_message_panel import RespawnMessagePanel

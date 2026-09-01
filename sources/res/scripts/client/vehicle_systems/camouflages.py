@@ -188,9 +188,10 @@ def prepareBattleOutfit(outfitCD, vehicleDescriptor, vehicleId, isPlayerVehicle)
     vehicleCD = vehicleDescriptor.makeCompactDescr()
     outfitComponent = getOutfitComponent(outfitCD, vehicleDescriptor)
     outfit = Outfit(component=outfitComponent, vehicleCD=vehicleCD)
+    originalCustomizationDisplayType = outfit.originalCustomizationDisplayType
     player = BigWorld.player()
     if player is not None and hasattr(player, 'customizationDisplayType'):
-        localPlayerWantsHistoricallyAccurate = player.customizationDisplayType < outfit.customizationDisplayType()
+        localPlayerWantsHistoricallyAccurate = player.customizationDisplayType < originalCustomizationDisplayType
         isLocalVehicle = not isPlayerVehicle
     else:
         localPlayerWantsHistoricallyAccurate = False
@@ -201,7 +202,7 @@ def prepareBattleOutfit(outfitCD, vehicleDescriptor, vehicleId, isPlayerVehicle)
         if progressionOutfit is not None:
             outfit = progressionOutfit
     if forceHistorical:
-        return Outfit(vehicleCD=vehicleCD)
+        return Outfit(vehicleCD=vehicleCD, originalCDT=originalCustomizationDisplayType)
     else:
         return outfit
 

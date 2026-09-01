@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/chinese/Ch71_WZ_219/normal/lod2/Chassis</nodefullVisual>
+	<parent>vehicles/chinese/Ch71_WZ_219/normal/lod3/Chassis</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.478377 -0.001580 -2.717014</min>
+		<max>1.480250 1.099088 2.897083</max>
+	</visibilityBox>
+</root>

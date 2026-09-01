@@ -1717,6 +1717,10 @@ package
       
       public static const PERSONALMISSIONS_REWARD_PM3_SUCCESS:String = "#system_messages:personalMissions/reward/pm3/success";
       
+      public static const PERSONALMISSIONS_REWARD_PM4_SERVER_ERROR:String = "#system_messages:personalMissions/reward/pm4/server_error";
+      
+      public static const PERSONALMISSIONS_REWARD_PM4_SUCCESS:String = "#system_messages:personalMissions/reward/pm4/success";
+      
       public static const PERSONALMISSIONS_REWARD_TANKWOMAN_SERVER_ERROR:String = "#system_messages:personalMissions/reward/tankwoman/server_error";
       
       public static const PERSONALMISSIONS_REWARD_TANKWOMAN_SERVER_ERROR_WRONG_ARGS_TYPE:String = "#system_messages:personalMissions/reward/tankwoman/server_error/WRONG_ARGS_TYPE";
@@ -1758,22 +1762,6 @@ package
       public static const PERSONALMISSIONS_OPERATIONRESUMED_TITLE:String = "#system_messages:personalMissions/operationResumed/title";
       
       public static const PERSONALMISSIONS_OPERATIONRESUMED_BODY:String = "#system_messages:personalMissions/operationResumed/body";
-      
-      public static const PERSONALMISSIONS_CAMPAIGN3PAUSED_TITLE:String = "#system_messages:personalMissions/campaign3Paused/title";
-      
-      public static const PERSONALMISSIONS_CAMPAIGN3PAUSED_BODY:String = "#system_messages:personalMissions/campaign3Paused/body";
-      
-      public static const PERSONALMISSIONS_CAMPAIGN3RESUMED_TITLE:String = "#system_messages:personalMissions/campaign3Resumed/title";
-      
-      public static const PERSONALMISSIONS_CAMPAIGN3RESUMED_BODY:String = "#system_messages:personalMissions/campaign3Resumed/body";
-      
-      public static const PERSONALMISSIONS_CAMPAIGN12PAUSED_TITLE:String = "#system_messages:personalMissions/campaign12Paused/title";
-      
-      public static const PERSONALMISSIONS_CAMPAIGN12PAUSED_BODY:String = "#system_messages:personalMissions/campaign12Paused/body";
-      
-      public static const PERSONALMISSIONS_CAMPAIGN12RESUMED_TITLE:String = "#system_messages:personalMissions/campaign12Resumed/title";
-      
-      public static const PERSONALMISSIONS_CAMPAIGN12RESUMED_BODY:String = "#system_messages:personalMissions/campaign12Resumed/body";
       
       public static const PERSONALMISSIONS_OPERATIONCOMPLETE_TITLE:String = "#system_messages:personalMissions/operationComplete/title";
       
@@ -2470,6 +2458,8 @@ package
       public static const CREWBOOKSNOTIFICATION_SUCCESS:String = "#system_messages:crewBooksNotification/success";
       
       public static const CREWBOOKSNOTIFICATION_BOOKUSED:String = "#system_messages:crewBooksNotification/bookUsed";
+      
+      public static const CREWBOOKSNOTIFICATION_BOOKUSEDONEOF:String = "#system_messages:crewBooksNotification/bookUsedOneOf";
       
       public static const CREWBOOKSNOTIFICATION_BOOKSUSED:String = "#system_messages:crewBooksNotification/booksUsed";
       

@@ -125,7 +125,7 @@ package net.wg.gui.battle.views.widgetsPanel.chargeableBurst
          this.x = Values.ZERO;
          this.scaleX = this.scaleY = HIDE_SCALE;
          this.alpha = Values.ZERO;
-         this.resetShot(true);
+         this.anim(false,true,true);
       }
       
       public function isDisposed() : Boolean

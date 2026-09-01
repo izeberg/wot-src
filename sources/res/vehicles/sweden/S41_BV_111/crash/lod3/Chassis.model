@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/sweden/S41_BV_111/crash/lod3/Chassis</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/sweden/S41_BV_111/crash/lod4/Chassis</parent>
+	<extent>192</extent>
+	<visibilityBox>
+		<min>-1.637736 -0.004941 -3.191777</min>
+		<max>1.637736 1.067693 3.218925</max>
+	</visibilityBox>
+</root>

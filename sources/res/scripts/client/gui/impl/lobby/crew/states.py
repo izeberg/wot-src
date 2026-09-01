@@ -1,5 +1,5 @@
 import typing
-from frameworks.state_machine.transitions import TransitionType
+from frameworks_common.state_machine.transitions import TransitionType
 from gui.Scaleform.framework import ScopeTemplates
 from gui.Scaleform.framework.entities.View import ViewKey
 from gui.impl import backport

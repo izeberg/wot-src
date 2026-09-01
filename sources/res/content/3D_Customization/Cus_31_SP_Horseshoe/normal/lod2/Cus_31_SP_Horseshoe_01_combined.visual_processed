@@ -52,10 +52,6 @@
 						<Int>9</Int>
 					</property>
 					<property>
-						g_enableVisTunnel
-						<Bool>true</Bool>
-					</property>
-					<property>
 						g_visibilityTunnelCompensation
 						<Float>1.500000</Float>
 					</property>
@@ -96,10 +92,6 @@
 					<property>
 						normalMap
 						<Texture>content/3D_Customization/Cus_31_SP_Horseshoe/Cus_31_SP_Horseshoe_ANM.dds</Texture>
-					</property>
-					<property>
-						g_enableVisTunnel
-						<Bool>true</Bool>
 					</property>
 				</material>
 				<groupOrigin>-0.001971 0.324611 -0.006915</groupOrigin>

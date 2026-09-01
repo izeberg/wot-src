@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>pCube1</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+		</node>
+		<node>
+			<identifier>pCube2</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>pCube2</node>
+		<geometry>
+			<vertices>pCubeShape2.vertices</vertices>
+			<primitive>pCubeShape2.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>bottom</identifier>
+					<fx>shaders/custom/visibility_sector_plane.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						g_borderLineColor
+						<Vector4>1.000000 1.000000 1.000000 1.000000</Vector4>
+					</property>
+					<property>
+						g_lineParams
+						<Vector4>0.055000 0.014000 0.500000 0.500000</Vector4>
+					</property>
+					<property>
+						g_sectorParams
+						<Vector4>0.000000 60.000000 445.000000 100.000000</Vector4>
+					</property>
+					<property>
+						g_tintColor
+						<Vector4>1.000000 1.000000 1.000000 0.060000</Vector4>
+					</property>
+					<property>
+						g_alphaParams
+						<Vector4>0.500000 12.000000 8.000000 14.000000</Vector4>
+					</property>
+					<property>
+						g_enableStripes
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_enableRuler
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_rulerParams
+						<Vector4>10.000000 0.070000 0.014000 0.160000</Vector4>
+					</property>
+					<property>
+						g_overlayUV2
+						<Vector4>0.020000 0.020000 0.000000 -0.010000</Vector4>
+					</property>
+					<property>
+						g_excludeOpaque
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_quarterLineAlphaScale
+						<Float>0.100000</Float>
+					</property>
+					<property>
+						g_lateralFade
+						<Vector2>1.000000 1.000000</Vector2>
+					</property>
+					<property>
+						g_overlayTex
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/noise06.dds</Texture>
+					</property>
+					<property>
+						g_overlayUV
+						<Vector4>0.020000 0.020000 0.000000 -0.020000</Vector4>
+					</property>
+					<property>
+						g_opaqueHeightFade
+						<Vector2>-1.000000 -0.600000</Vector2>
+					</property>
+					<property>
+						g_enableOverlayTexture
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_enableOverlaySecondTap
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_borderLineColorMultiplier
+						<Float>6.000000</Float>
+					</property>
+					<property>
+						g_quarterLineHalfWidth
+						<Float>0.014000</Float>
+					</property>
+					<property>
+						g_tipFadeParams
+						<Vector2>-65.000000 150.000000</Vector2>
+					</property>
+					<property>
+						g_quarterLineFarOffset
+						<Float>10.000000</Float>
+					</property>
+				</material>
+				<groupOrigin>0.000000 0.500000 0.500000</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>pCube1</node>
+		<geometry>
+			<vertices>pCubeShape1.vertices</vertices>
+			<primitive>pCubeShape1.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>borders</identifier>
+					<fx>shaders/custom/sector_borders.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						g_sectorParams
+						<Vector4>0.000000 60.000000 445.000000 100.000000</Vector4>
+					</property>
+					<property>
+						g_tintColor
+						<Vector4>1.000000 1.000000 1.000000 0.498039</Vector4>
+					</property>
+					<property>
+						g_farPlaneTex
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/lines_horizontal.dds</Texture>
+					</property>
+					<property>
+						g_farPlaneUV
+						<Vector4>0.030000 0.050000 0.000000 -0.030000</Vector4>
+					</property>
+					<property>
+						g_fireNoiseTex
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/br_repairarea_2_wave.dds</Texture>
+					</property>
+					<property>
+						g_fireNoiseUV
+						<Vector4>0.050000 0.050000 0.000000 1.000000</Vector4>
+					</property>
+					<property>
+						g_alphaParams
+						<Vector4>0.400000 12.000000 8.000000 12.000000</Vector4>
+					</property>
+					<property>
+						g_fireColor
+						<Vector4>0.050980 0.780392 1.000000 1.000000</Vector4>
+					</property>
+					<property>
+						g_fireNoiseUV2
+						<Vector4>0.300000 0.700000 0.000000 0.080000</Vector4>
+					</property>
+					<property>
+						g_borderColor
+						<Vector4>1.000000 1.000000 1.000000 1.000000</Vector4>
+					</property>
+					<property>
+						g_borderNoiseTex
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/gradient_plane.dds</Texture>
+					</property>
+					<property>
+						g_borderTextureColor
+						<Vector4>1.000000 0.992157 0.945098 0.117647</Vector4>
+					</property>
+					<property>
+						g_borderParams
+						<Vector4>1.000000 12.000000 4.000000 4.000000</Vector4>
+					</property>
+					<property>
+						g_borderNoiseUV
+						<Vector4>0.010000 0.010000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_borderNoiseUV2
+						<Vector4>0.000000 0.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_verticalLineParams
+						<Vector4>0.270000 0.270000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_colorMultiplier
+						<Float>0.800000</Float>
+					</property>
+				</material>
+				<groupOrigin>0.000000 0.500000 0.500000</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-25.000000 0.000000 -25.000000</min>
+		<max>25.000000 50.000000 25.000000</max>
+	</boundingBox>
+	<geometrySize>1260</geometrySize>
+</root>

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import CommandMapping
 from gui.Scaleform.daapi.view.common.battle_royale.br_helpers import getHotKeyString
 from gui.Scaleform.genConsts.BLOCKS_TOOLTIP_TYPES import BLOCKS_TOOLTIP_TYPES

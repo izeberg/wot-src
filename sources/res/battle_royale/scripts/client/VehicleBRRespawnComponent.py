@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, BigWorld
 from helpers import dependency
 from script_component.DynamicScriptComponent import DynamicScriptComponent

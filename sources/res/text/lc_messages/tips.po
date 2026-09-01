@@ -231,6 +231,14 @@ msgstr ""
 msgid "comp7Light9Status"
 msgstr "Enlarge Garage"
 
+msgid "comp7NightMaps38"
+msgstr ""
+"Night Maps refresh familiar battlefields with nighttime conditions, new "
+"Observation Posts, updated POIs, and modified spotting mechanics."
+
+msgid "comp7NightMaps38Status"
+msgstr "Night Maps"
+
 msgid "comp7Ranked0"
 msgstr ""
 "Fight for Rating Points to reach the highest ranks and prove your "
@@ -1104,6 +1112,24 @@ msgstr ""
 
 msgid "tip211Status"
 msgstr "Vehicles With Jet Boosters"
+
+msgid "tip212"
+msgstr ""
+"The gun has special devices that allow some shell parameters to be modified "
+"before firing."
+
+msgid "tip212Status"
+msgstr "Shell Calibration System"
+
+msgid "tip213"
+msgstr ""
+"When you hit a visible enemy vehicle with a shell, the fuze setter on the "
+"next shell is adjusted. If the initial shot penetrated enemy armor, the next"
+" shot's damage is increased. If it did not, the next shot's penetration is "
+"increased."
+
+msgid "tip213Status"
+msgstr "Adjustable Fuze Setter"
 
 msgid "tip23"
 msgstr ""

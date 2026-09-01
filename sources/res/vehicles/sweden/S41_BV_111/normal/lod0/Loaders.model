@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-0.741971 -0.032135 -4.348897</min>
+		<max>0.744071 0.384392 -2.138955</max>
+	</visibilityBox>
+	<parent>vehicles/sweden/S41_BV_111/normal/lod1/Loaders</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/sweden/S41_BV_111/normal/lod0/Loaders</nodefullVisual>
+</root>

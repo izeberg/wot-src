@@ -325,9 +325,41 @@ package
       
       public static const DETAILSHELP_MECHANICS_LOWCHARGESHOT_PAGE1_DESCRIPTION:String = "#ingame_help:detailsHelp/mechanics/lowChargeShot/page1/description";
       
+      public static const DETAILSHELP_MECHANICS_AUTORELOADERSURGE_PAGE1_TITLE:String = "#ingame_help:detailsHelp/mechanics/autoreloaderSurge/page1/title";
+      
+      public static const DETAILSHELP_MECHANICS_AUTORELOADERSURGE_PAGE1_DESCRIPTION:String = "#ingame_help:detailsHelp/mechanics/autoreloaderSurge/page1/description";
+      
+      public static const DETAILSHELP_MECHANICS_SIGHTPOINTER_PAGE1_TITLE:String = "#ingame_help:detailsHelp/mechanics/sightPointer/page1/title";
+      
+      public static const DETAILSHELP_MECHANICS_SIGHTPOINTER_PAGE1_DESCRIPTION:String = "#ingame_help:detailsHelp/mechanics/sightPointer/page1/description";
+      
+      public static const DETAILSHELP_MECHANICS_SIGHTPOINTER_PAGE2_TITLE:String = "#ingame_help:detailsHelp/mechanics/sightPointer/page2/title";
+      
+      public static const DETAILSHELP_MECHANICS_SIGHTPOINTER_PAGE2_DESCRIPTION:String = "#ingame_help:detailsHelp/mechanics/sightPointer/page2/description";
+      
       public static const DETAILSHELP_MECHANICS_WHEELEDDASH_PAGE1_TITLE:String = "#ingame_help:detailsHelp/mechanics/wheeledDash/page1/title";
       
       public static const DETAILSHELP_MECHANICS_WHEELEDDASH_PAGE1_DESCRIPTION:String = "#ingame_help:detailsHelp/mechanics/wheeledDash/page1/description";
+      
+      public static const DETAILSHELP_MECHANICS_AUXILIARYROCKETLAUNCHER_PAGE1_TITLE:String = "#ingame_help:detailsHelp/mechanics/auxiliaryRocketLauncher/page1/title";
+      
+      public static const DETAILSHELP_MECHANICS_AUXILIARYROCKETLAUNCHER_PAGE1_DESCRIPTION:String = "#ingame_help:detailsHelp/mechanics/auxiliaryRocketLauncher/page1/description";
+      
+      public static const DETAILSHELP_MECHANICS_AUXILIARYROCKETLAUNCHER_PAGE2_TITLE:String = "#ingame_help:detailsHelp/mechanics/auxiliaryRocketLauncher/page2/title";
+      
+      public static const DETAILSHELP_MECHANICS_AUXILIARYROCKETLAUNCHER_PAGE2_DESCRIPTION:String = "#ingame_help:detailsHelp/mechanics/auxiliaryRocketLauncher/page2/description";
+      
+      public static const DETAILSHELP_MECHANICS_SHELLPARAMSSWITCHER_PAGE1_TITLE:String = "#ingame_help:detailsHelp/mechanics/shellParamsSwitcher/page1/title";
+      
+      public static const DETAILSHELP_MECHANICS_SHELLPARAMSSWITCHER_PAGE1_DESCRIPTION:String = "#ingame_help:detailsHelp/mechanics/shellParamsSwitcher/page1/description";
+      
+      public static const DETAILSHELP_MECHANICS_SHELLCALIBRATION_PAGE1_TITLE:String = "#ingame_help:detailsHelp/mechanics/shellCalibration/page1/title";
+      
+      public static const DETAILSHELP_MECHANICS_SHELLCALIBRATION_PAGE1_DESCRIPTION:String = "#ingame_help:detailsHelp/mechanics/shellCalibration/page1/description";
+      
+      public static const DETAILSHELP_MECHANICS_BUSTLEFEED_PAGE1_TITLE:String = "#ingame_help:detailsHelp/mechanics/bustleFeed/page1/title";
+      
+      public static const DETAILSHELP_MECHANICS_BUSTLEFEED_PAGE1_DESCRIPTION:String = "#ingame_help:detailsHelp/mechanics/bustleFeed/page1/description";
       
       public static const DETAILSHELP_NOKEYSWARNING:String = "#ingame_help:detailsHelp/noKeysWarning";
       

@@ -328,7 +328,7 @@ package net.wg.gui.battle.views.vehicleMarkers
          }
       }
       
-      private function setupMarker(param1:int, param2:VehicleAnimatedStatusBaseMarker) : void
+      public function setupMarker(param1:int, param2:VehicleAnimatedStatusBaseMarker) : void
       {
          this._statusEffectMarkers[param1] = param2;
          param2.setStatusID(param1);
@@ -344,7 +344,7 @@ package net.wg.gui.battle.views.vehicleMarkers
          return BASE_HEIGHT;
       }
       
-      private function onStatusAnimationEventHiddenHandler(param1:StatusAnimationEvent) : void
+      public function onStatusAnimationEventHiddenHandler(param1:StatusAnimationEvent) : void
       {
          var _loc2_:VehicleAnimatedStatusBaseMarker = null;
          if(param1.isOneShotAnimation)

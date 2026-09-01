@@ -2,7 +2,6 @@ package net.wg.gui.prebattle.controls
 {
    import flash.display.MovieClip;
    import flash.text.TextField;
-   import net.wg.data.constants.UserTags;
    import net.wg.data.constants.Values;
    import net.wg.gui.prebattle.constants.PrebattleStateString;
    import scaleform.clik.constants.InvalidationType;
@@ -37,10 +36,6 @@ package net.wg.gui.prebattle.controls
       public var vehicle_type_icon:UIComponent;
       
       public var boosterIcon:UIComponent;
-      
-      public var toolTipStr:String = "";
-      
-      private var _isVehicleValid:Boolean = true;
       
       public function TeamMemberRenderer()
       {
@@ -82,18 +77,10 @@ package net.wg.gui.prebattle.controls
       
       override protected function showToolTips() : void
       {
-         var _loc1_:String = Values.EMPTY_STR;
+         var _loc1_:String = null;
          if(model.accID == -1)
          {
             _loc1_ = MESSENGER.DIALOGS_TEAMCHANNEL_BUTTONS_INVITE;
-         }
-         else if(this.isVehicleValid)
-         {
-            _loc1_ = getToolTipData();
-         }
-         else if(UserTags.isCurrentPlayer(model.tags))
-         {
-            _loc1_ = this.toolTipStr;
          }
          else
          {
@@ -120,7 +107,6 @@ package net.wg.gui.prebattle.controls
       
       override protected function afterSetData() : void
       {
-         var _loc1_:String = null;
          var _loc3_:String = null;
          this.commander_icon.visible = this.status_icon.visible = this.vehicle_type_icon.visible = this.boosterIcon.visible = false;
          updatePlayerName();
@@ -128,7 +114,7 @@ package net.wg.gui.prebattle.controls
          {
             return;
          }
-         _loc1_ = model.getStateString();
+         var _loc1_:String = model.getStateString();
          if(_loc1_ != PrebattleStateString.UNKNOWN)
          {
             statusString = _loc1_;
@@ -184,7 +170,7 @@ package net.wg.gui.prebattle.controls
             vehicleLevelField.textColor = _loc2_;
          }
          vehicleNameField.htmlText = model.vShortName;
-         this.updateValidVehicleState(this.isVehicleValid);
+         this.updateValidVehicleState(true);
          if(isNaN(model.orderNumber))
          {
             this.numberField.visible = false;
@@ -236,7 +222,7 @@ package net.wg.gui.prebattle.controls
             this.numberField.textColor = _loc1_;
             vehicleLevelField.textColor = _loc1_;
          }
-         this.updateValidVehicleState(this._isVehicleValid && vehicleLevelField.text != null && this.visible);
+         this.updateValidVehicleState(vehicleLevelField.text != null && this.visible);
          constraints.updateElement("status",status);
          constraints.updateElement("vehicleNameField",vehicleNameField);
          constraints.updateElement(this.vehicle_type_icon.name,this.vehicle_type_icon);
@@ -272,17 +258,6 @@ package net.wg.gui.prebattle.controls
             vehicleLevelField.text = Values.EMPTY_STR;
             vehicleLevelField.htmlText = Boolean(model) ? "<font color=\"#ff0000\">" + model.vLevel + "</font>" : Values.EMPTY_STR;
          }
-      }
-      
-      public function get isVehicleValid() : Boolean
-      {
-         return this._isVehicleValid;
-      }
-      
-      public function set isVehicleValid(param1:Boolean) : void
-      {
-         this._isVehicleValid = param1;
-         this.updateValidVehicleState(param1);
       }
    }
 }

@@ -1266,6 +1266,7 @@ package net.wg.gui.battle.views.battleMessenger
          var _loc3_:int = 0;
          var _loc4_:int = 0;
          var _loc5_:int = 0;
+         var _loc6_:BattleMessage = null;
          this._scheduler.cancelTask(this.scrollMessages);
          if(this._wheelMessagesScroll == 0)
          {
@@ -1276,12 +1277,24 @@ package net.wg.gui.battle.views.battleMessenger
          if(_loc1_)
          {
             _loc4_ = Math.min(_loc2_ - 1,this._bottomMessageIndex + this._wheelMessagesScroll);
+            if(_loc4_ == _loc2_ - 1)
+            {
+               this.showLastIndexMessages();
+               this.hideToxicPanel();
+               this._wheelMessagesScroll = 0;
+               return;
+            }
             _loc5_ = _loc4_ - this._bottomMessageIndex;
             _loc3_ = 0;
             while(_loc3_ < _loc5_)
             {
-               this.hideMessageByIndex(this._topMessageIndex + _loc3_);
-               this.showMessageByIndex(this._bottomMessageIndex + _loc3_ + 1);
+               this._messages[this._topMessageIndex + _loc3_].setState(BattleMessage.STATE_HIDDEN_MES);
+               _loc6_ = this._messages[this._bottomMessageIndex + _loc3_ + 1];
+               _loc6_.setState(BattleMessage.STATE_VISIBLE_WHEEL_MES);
+               if(!this.userInteractsWithMessenger)
+               {
+                  _loc6_.isWaitingAutoHide = true;
+               }
                _loc3_++;
             }
             this._bottomMessageIndex = _loc4_;
@@ -1291,12 +1304,17 @@ package net.wg.gui.battle.views.battleMessenger
          {
             _loc4_ = Math.max(this._topMessageIndex + this._wheelMessagesScroll,0);
             _loc5_ = _loc4_ - this._topMessageIndex;
-            this._messages[this._topMessageIndex].setState(this._isFocused || this._isCtrlButtonPressed ? int(BattleMessage.STATE_VISIBLE_MES) : int(BattleMessage.STATE_RECOVERED_MES),true);
+            this._messages[this._topMessageIndex].setState(this._isFocused || this._isCtrlButtonPressed ? int(BattleMessage.STATE_VISIBLE_MES) : int(BattleMessage.STATE_RECOVERED_MES));
             _loc3_ = 0;
             while(_loc3_ > _loc5_)
             {
-               this.hideMessageByIndex(this._bottomMessageIndex + _loc3_);
-               this.showMessageByIndex(this._topMessageIndex + _loc3_ - 1);
+               this._messages[this._bottomMessageIndex + _loc3_].setState(BattleMessage.STATE_HIDDEN_MES);
+               _loc6_ = this._messages[this._topMessageIndex + _loc3_ - 1];
+               _loc6_.setState(BattleMessage.STATE_VISIBLE_WHEEL_MES);
+               if(!this.userInteractsWithMessenger)
+               {
+                  _loc6_.isWaitingAutoHide = true;
+               }
                _loc3_--;
             }
             this._topMessageIndex = _loc4_;

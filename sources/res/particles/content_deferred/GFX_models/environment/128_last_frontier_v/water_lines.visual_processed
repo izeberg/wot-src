@@ -21,6 +21,10 @@
 				<material>
 					<identifier>water</identifier>
 					<fx>shaders/custom/vector_animation_2.fx</fx>
+					<property>
+						g_enableEnvMultiplier
+						<Bool>true</Bool>
+					</property>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
 					<property>
@@ -34,6 +38,10 @@
 					<property>
 						TintlColor
 						<Vector4>1.000000 1.000000 1.000000 0.540000</Vector4>
+					</property>
+					<property>
+						lightMultipliers
+						<Vector4>0.680272 0.000000 0.000000 0.000000</Vector4>
 					</property>
 				</material>
 				<groupOrigin>0.000000 0.011461 0.000000</groupOrigin>

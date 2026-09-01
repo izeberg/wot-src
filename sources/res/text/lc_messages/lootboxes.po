@@ -10,9 +10,6 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "autoOpenView/bottomLabel"
-msgstr "We opened all your Holiday Ops boxes."
-
 msgid "autoOpenView/congratsLabel"
 msgstr "Congratulations!"
 
@@ -67,37 +64,11 @@ msgstr "x{count}"
 msgid "entryDesc/buySlot"
 msgstr "You can purchase Large Boxes in the Premium Shop"
 
-msgid "entryDesc/newYear_premium"
-msgstr "Large Boxes"
-
-msgid "entryDesc/newYear_usual"
-msgstr "Small Boxes"
-
-msgid "entryDesc/questSlot"
-msgstr "You receive Small Boxes for completing missions."
-
 msgid "entryDesc/restrictedMode"
 msgstr ""
 "This functionality is temporarily unavailable. Please try again later."
 
 msgid "entryPoint/header"
-msgstr "Boxes"
-
-msgid "entryTooltip/body/h1"
-msgstr "Purchase Large Boxes:"
-
-msgid "entryTooltip/body/h2"
-msgstr "Earn Small Boxes:"
-
-msgid "entryTooltip/body/p1"
-msgstr ""
-"Purchase boxes with New Year decorations for yourself and your friends in "
-"the Premium Shop."
-
-msgid "entryTooltip/body/p2"
-msgstr "Awarded for the completion of Holiday Ops missions."
-
-msgid "entryTooltip/header"
 msgstr "Boxes"
 
 msgid "entryView/boxesCount"
@@ -106,24 +77,8 @@ msgstr "{count} more boxes"
 msgid "entryView/buyLabel"
 msgstr "PURCHASE BOXES"
 
-msgid "entryView/ended/newYear_premium"
-msgstr ""
-"You have no Large Boxes in the Depot.\n"
-"Purchase more in the Premium Shop."
-
-msgid "entryView/ended/newYear_usual"
-msgstr ""
-"You have no Small Boxes.\n"
-"Earn more in battles."
-
 msgid "entryView/lootboxesCount"
 msgstr "x{count}"
-
-msgid "entryView/title"
-msgstr "Holiday Ops {year}"
-
-msgid "entryView/year"
-msgstr "2019"
 
 msgid "multiOpenView/applyLabel"
 msgstr "Affirmative!"
@@ -201,9 +156,6 @@ msgstr "Supplyboxes Opening"
 msgid "notification/lootBoxesReceived/invoice"
 msgstr "Added"
 
-msgid "notification/ny19man"
-msgstr "A unique crew member: %(count)s"
-
 msgid "notification/rewards"
 msgstr "You received the following rewards:"
 
@@ -268,37 +220,6 @@ msgstr "A Unique Style for"
 msgid "specialReward/vehicle/goToBtn"
 msgstr "View in Garage"
 
-msgid "tooltip/category/header/Christmas"
-msgstr "Christmas Boxes"
-
-msgid "tooltip/category/header/Fairytale"
-msgstr "Magic Boxes"
-
-msgid "tooltip/category/header/NewYear"
-msgstr "New Year Boxes"
-
-msgid "tooltip/category/header/Oriental"
-msgstr "Lunar Boxes"
-
-msgid "tooltip/category/rewards/Christmas"
-msgstr "Christmas Collection"
-
-msgid "tooltip/category/rewards/Fairytale"
-msgstr "Magic Collection"
-
-msgid "tooltip/category/rewards/NewYear"
-msgstr "New Year Collection"
-
-msgid "tooltip/category/rewards/Oriental"
-msgstr "Lunar Collection"
-
-msgid "tooltip/category/rewards/description"
-msgstr ""
-"Boxes contain decorations from the {category} and other valuable rewards."
-
-msgid "tooltip/category/rewards/header"
-msgstr "Awards:"
-
 msgid "tooltip/entryView/buyBoxes"
 msgstr "Purchase additional boxes in the Premium Shop."
 
@@ -310,12 +231,6 @@ msgstr "Action is temporarily unavailable. Try again later."
 
 msgid "type/event_premium"
 msgstr "Dawn Supply Box"
-
-msgid "type/newYear_premium"
-msgstr "LARGE BOXES"
-
-msgid "type/newYear_usual"
-msgstr "SMALL BOXES"
 
 msgid "type/wt_boss"
 msgstr "Engineer's Starter"

@@ -39,6 +39,7 @@
 		<_45mm_mod_1932>36</_45mm_mod_1932>
 		<_100mm_D10S>37</_100mm_D10S>
 		<_122-mm_D-25S_with_a_piston_shutter>38</_122-mm_D-25S_with_a_piston_shutter>
+		<_130mm_S_70_7x7>39</_130mm_S_70_7x7>
 		<_76mm_cannon_mod_1927>40</_76mm_cannon_mod_1927>
 		<_122mm_D_25_44T>41</_122mm_D_25_44T>
 		<_76mm_cannon_mod_1905_30>42</_76mm_cannon_mod_1905_30>
@@ -59,6 +60,7 @@
 		<_76mm_ZiS-3_mod_42>61</_76mm_ZiS-3_mod_42>
 		<_85mm_D-5S-85A>62</_85mm_D-5S-85A>
 		<_76mm_ZiS-96>65</_76mm_ZiS-96>
+		<_122mm_M62_T2U_7x7>66</_122mm_M62_T2U_7x7>
 		<_85mm_LB-2S>68</_85mm_LB-2S>
 		<QF_6_pounder_Mk_III>69</QF_6_pounder_Mk_III>
 		<_152mm_BL-10>70</_152mm_BL-10>
@@ -222,6 +224,7 @@
 		<_37mm_ZiS_19_T_60>276</_37mm_ZiS_19_T_60>
 		<_125mm_D_181>278</_125mm_D_181>
 		<_122mm_M62_CFE_T>281</_122mm_M62_CFE_T>
+		<_130mm_S_70B7>282</_130mm_S_70B7>
 		<_107mm_LP_21A>283</_107mm_LP_21A>
 		<_130mm_M_65_1476>284</_130mm_M_65_1476>
 		<_140mm_D_63Sh>286</_140mm_D_63Sh>
@@ -9061,15 +9064,6 @@
 				0.44
 				<!--BW_String-->
 			</impulse>
-			<recoil>
-				<lodDist>MEDIUM</lodDist>
-				<amplitude>
-					0.3
-					<!--BW_String-->
-				</amplitude>
-				<recoilEffect>main</recoilEffect>
-			</recoil>
-			<effects>shot_main</effects>
 			<reloadEffect>dualgun_reload85_107</reloadEffect>
 			<pitchLimits>
 				<minPitch>
@@ -12700,15 +12694,6 @@
 				0.44
 				<!--BW_String-->
 			</impulse>
-			<recoil>
-				<lodDist>MEDIUM</lodDist>
-				<amplitude>
-					0.26
-					<!--BW_String-->
-				</amplitude>
-				<recoilEffect>main</recoilEffect>
-			</recoil>
-			<effects>shot_mainext</effects>
 			<reloadEffect>dualgun_reload85_107</reloadEffect>
 			<pitchLimits>
 				<minPitch>
@@ -12811,15 +12796,6 @@
 				0.44
 				<!--BW_String-->
 			</impulse>
-			<recoil>
-				<lodDist>MEDIUM</lodDist>
-				<amplitude>
-					0.26
-					<!--BW_String-->
-				</amplitude>
-				<recoilEffect>main</recoilEffect>
-			</recoil>
-			<effects>shot_mainext</effects>
 			<reloadEffect>dualgun_reload85_107</reloadEffect>
 			<pitchLimits>
 				<minPitch>
@@ -12923,15 +12899,6 @@
 				0.44
 				<!--BW_String-->
 			</impulse>
-			<recoil>
-				<lodDist>MEDIUM</lodDist>
-				<amplitude>
-					0.26
-					<!--BW_String-->
-				</amplitude>
-				<recoilEffect>main</recoilEffect>
-			</recoil>
-			<effects>shot_mainext</effects>
 			<reloadEffect>dualgun_reload85_107</reloadEffect>
 			<pitchLimits>
 				<minPitch>
@@ -20820,15 +20787,6 @@
 				0.62
 				<!--BW_String-->
 			</impulse>
-			<recoil>
-				<lodDist>MEDIUM</lodDist>
-				<amplitude>
-					0.62
-					<!--BW_String-->
-				</amplitude>
-				<recoilEffect>large</recoilEffect>
-			</recoil>
-			<effects>shot_large_mb</effects>
 			<reloadEffect>dualgun_reload115_152</reloadEffect>
 			<pitchLimits>
 				<minPitch>
@@ -21343,15 +21301,6 @@
 				0.62
 				<!--BW_String-->
 			</impulse>
-			<recoil>
-				<lodDist>MEDIUM</lodDist>
-				<amplitude>
-					0.66
-					<!--BW_String-->
-				</amplitude>
-				<recoilEffect>large</recoilEffect>
-			</recoil>
-			<effects>shot_large_mb</effects>
 			<reloadEffect>dualgun_reload115_152</reloadEffect>
 			<pitchLimits>
 				<minPitch>
@@ -23758,15 +23707,6 @@
 				0.62
 				<!--BW_String-->
 			</impulse>
-			<recoil>
-				<lodDist>MEDIUM</lodDist>
-				<amplitude>
-					0.4
-					<!--BW_String-->
-				</amplitude>
-				<recoilEffect>large</recoilEffect>
-			</recoil>
-			<effects>shot_large_mb</effects>
 			<reloadEffect>dualgun_reload115_152</reloadEffect>
 			<pitchLimits>
 				<minPitch>
@@ -23870,15 +23810,6 @@
 				0.62
 				<!--BW_String-->
 			</impulse>
-			<recoil>
-				<lodDist>MEDIUM</lodDist>
-				<amplitude>
-					0.4
-					<!--BW_String-->
-				</amplitude>
-				<recoilEffect>large</recoilEffect>
-			</recoil>
-			<effects>shot_large_mb</effects>
 			<reloadEffect>dualgun_reload115_152</reloadEffect>
 			<pitchLimits>
 				<minPitch>
@@ -23982,15 +23913,6 @@
 				0.62
 				<!--BW_String-->
 			</impulse>
-			<recoil>
-				<lodDist>MEDIUM</lodDist>
-				<amplitude>
-					0.4
-					<!--BW_String-->
-				</amplitude>
-				<recoilEffect>large</recoilEffect>
-			</recoil>
-			<effects>shot_large_mb</effects>
 			<reloadEffect>dualgun_reload115_152</reloadEffect>
 			<pitchLimits>
 				<minPitch>
@@ -24088,15 +24010,6 @@
 				0.62
 				<!--BW_String-->
 			</impulse>
-			<recoil>
-				<lodDist>MEDIUM</lodDist>
-				<amplitude>
-					0.62
-					<!--BW_String-->
-				</amplitude>
-				<recoilEffect>large</recoilEffect>
-			</recoil>
-			<effects>shot_large</effects>
 			<reloadEffect>dualgun_reload115_152</reloadEffect>
 			<pitchLimits>
 				<minPitch>
@@ -24723,6 +24636,112 @@
 				</_122mm_UOF_472U_430U>
 			</shots>
 		</_122mm_M62_T2U>
+		<_122mm_M62_T2U_7x7>
+			<userString>#ussr_vehicles:_122mm_M62_T2U_7x7</userString>
+			<tags/>
+			<level>10</level>
+			<price>330000</price>
+			<notInShop>true</notInShop>
+			<impulse>
+				0.62
+				<!--BW_String-->
+			</impulse>
+			<recoil>
+				<lodDist>MEDIUM</lodDist>
+				<amplitude>
+					0.25
+					<!--BW_String-->
+				</amplitude>
+				<recoilEffect>large</recoilEffect>
+			</recoil>
+			<effects>shot_large_mb</effects>
+			<reloadEffect>reload115_152</reloadEffect>
+			<pitchLimits>
+				<minPitch>
+					0.0 -15.0 1.0 -15.0
+					<!--BW_String-->
+				</minPitch>
+				<maxPitch>
+					0.0 5.0 1.0 5.0
+					<!--BW_String-->
+				</maxPitch>
+			</pitchLimits>
+			<turretYawLimits>-180 180</turretYawLimits>
+			<rotationSpeed>
+				26.25
+				<!--BW_String-->
+			</rotationSpeed>
+			<reloadTime>12</reloadTime>
+			<maxAmmo>30</maxAmmo>
+			<aimingTime>3</aimingTime>
+			<weight>3397</weight>
+			<maxHealth>210</maxHealth>
+			<maxRegenHealth>105</maxRegenHealth>
+			<repairCost>8</repairCost>
+			<invisibilityFactorAtShot>
+				0.1
+				<!--BW_String-->
+			</invisibilityFactorAtShot>
+			<shotDispersionRadius>
+				0.4
+				<!--BW_String-->
+			</shotDispersionRadius>
+			<shotDispersionFactors>
+				<turretRotation>
+					0.08
+					<!--BW_String-->
+				</turretRotation>
+				<afterShot>
+					3.0
+					<!--BW_String-->
+				</afterShot>
+				<whileGunDamaged>
+					2.0
+					<!--BW_String-->
+				</whileGunDamaged>
+			</shotDispersionFactors>
+			<shots>
+				<_122mm_BR_472U_430U_7x7>
+					<defaultPortion>
+						0.9
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>940</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>252 238</piercingPower>
+				</_122mm_BR_472U_430U_7x7>
+				<_122mm_BK_9U_430U_7x7>
+					<defaultPortion>
+						0.0
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>920</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>340 340</piercingPower>
+				</_122mm_BK_9U_430U_7x7>
+				<_122mm_UOF_472U_430U_7x7>
+					<defaultPortion>
+						0.1
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>940</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>68 68</piercingPower>
+				</_122mm_UOF_472U_430U_7x7>
+			</shots>
+		</_122mm_M62_T2U_7x7>
 		<_125mm_D_181>
 			<userString>#ussr_vehicles:_125mm_D_181</userString>
 			<tags/>
@@ -26032,6 +26051,230 @@
 				</_130mm_UOF_482>
 			</shots>
 		</_130mm_S_70>
+		<_130mm_S_70B7>
+			<userString>#ussr_vehicles:_130mm_S_70B7</userString>
+			<tags/>
+			<level>9</level>
+			<price>200000</price>
+			<notInShop>true</notInShop>
+			<impulse>
+				0.62
+				<!--BW_String-->
+			</impulse>
+			<recoil>
+				<lodDist>MEDIUM</lodDist>
+				<amplitude>
+					0.43
+					<!--BW_String-->
+				</amplitude>
+				<recoilEffect>large</recoilEffect>
+			</recoil>
+			<effects>shot_largeext_mb</effects>
+			<reloadEffect>reload115_152</reloadEffect>
+			<turretYawLimits>-180 180</turretYawLimits>
+			<pitchLimits>
+				<minPitch>
+					0.0 -18.0 1.0 -18.0
+					<!--BW_String-->
+				</minPitch>
+				<maxPitch>
+					0.0 6.0 1.0 6.0
+					<!--BW_String-->
+				</maxPitch>
+			</pitchLimits>
+			<rotationSpeed>
+				26.25
+				<!--BW_String-->
+			</rotationSpeed>
+			<reloadTime>
+				15.4285714285714
+				<!--BW_String-->
+			</reloadTime>
+			<maxAmmo>28</maxAmmo>
+			<aimingTime>
+				3.42857142857143
+				<!--BW_String-->
+			</aimingTime>
+			<weight>2980</weight>
+			<maxHealth>200</maxHealth>
+			<maxRegenHealth>100</maxRegenHealth>
+			<repairCost>9</repairCost>
+			<invisibilityFactorAtShot>
+				0.153
+				<!--BW_String-->
+			</invisibilityFactorAtShot>
+			<shotDispersionRadius>
+				0.4
+				<!--BW_String-->
+			</shotDispersionRadius>
+			<shotDispersionFactors>
+				<turretRotation>
+					0.08
+					<!--BW_String-->
+				</turretRotation>
+				<afterShot>
+					4.0
+					<!--BW_String-->
+				</afterShot>
+				<whileGunDamaged>
+					2.0
+					<!--BW_String-->
+				</whileGunDamaged>
+			</shotDispersionFactors>
+			<shots>
+				<_130mm_UBR_482B7>
+					<defaultPortion>
+						0.9
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>900</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>244 231</piercingPower>
+				</_130mm_UBR_482B7>
+				<_130mm_UBR_482PB7>
+					<defaultPortion>
+						0.0
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>1125</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>303 280</piercingPower>
+				</_130mm_UBR_482PB7>
+				<_130mm_UOF_482B7>
+					<defaultPortion>
+						0.1
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>900</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>68 68</piercingPower>
+				</_130mm_UOF_482B7>
+			</shots>
+		</_130mm_S_70B7>
+		<_130mm_S_70_7x7>
+			<userString>#ussr_vehicles:_130mm_S_70_7x7</userString>
+			<tags/>
+			<level>10</level>
+			<price>297000</price>
+			<notInShop>true</notInShop>
+			<impulse>
+				0.62
+				<!--BW_String-->
+			</impulse>
+			<recoil>
+				<lodDist>MEDIUM</lodDist>
+				<amplitude>
+					0.43
+					<!--BW_String-->
+				</amplitude>
+				<recoilEffect>large</recoilEffect>
+			</recoil>
+			<effects>shot_largeext_mb</effects>
+			<reloadEffect>reload115_152</reloadEffect>
+			<turretYawLimits>-180 180</turretYawLimits>
+			<pitchLimits>
+				<minPitch>
+					0.0 -18.0 1.0 -18.0
+					<!--BW_String-->
+				</minPitch>
+				<maxPitch>
+					0.0 6.0 1.0 6.0
+					<!--BW_String-->
+				</maxPitch>
+			</pitchLimits>
+			<rotationSpeed>
+				26.25
+				<!--BW_String-->
+			</rotationSpeed>
+			<reloadTime>
+				15.4285714285714
+				<!--BW_String-->
+			</reloadTime>
+			<maxAmmo>28</maxAmmo>
+			<aimingTime>
+				3.42857142857143
+				<!--BW_String-->
+			</aimingTime>
+			<weight>2980</weight>
+			<maxHealth>210</maxHealth>
+			<maxRegenHealth>105</maxRegenHealth>
+			<repairCost>10</repairCost>
+			<invisibilityFactorAtShot>
+				0.1
+				<!--BW_String-->
+			</invisibilityFactorAtShot>
+			<shotDispersionRadius>
+				0.4
+				<!--BW_String-->
+			</shotDispersionRadius>
+			<shotDispersionFactors>
+				<turretRotation>
+					0.08
+					<!--BW_String-->
+				</turretRotation>
+				<afterShot>
+					4.0
+					<!--BW_String-->
+				</afterShot>
+				<whileGunDamaged>
+					2.0
+					<!--BW_String-->
+				</whileGunDamaged>
+			</shotDispersionFactors>
+			<shots>
+				<_130mm_UBR_482_7x7>
+					<defaultPortion>
+						0.9
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>900</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>250 240</piercingPower>
+				</_130mm_UBR_482_7x7>
+				<_130mm_UBR_482P_7x7>
+					<defaultPortion>
+						0.0
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>1125</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>310 295</piercingPower>
+				</_130mm_UBR_482P_7x7>
+				<_130mm_UOF_482_7x7>
+					<defaultPortion>
+						0.1
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>900</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>68 68</piercingPower>
+				</_130mm_UOF_482_7x7>
+			</shots>
+		</_130mm_S_70_7x7>
 		<_130mm_S_70_705>
 			<userString>#ussr_vehicles:_130mm_S_70_705</userString>
 			<tags/>
@@ -32476,15 +32719,6 @@
 				0.44
 				<!--BW_String-->
 			</impulse>
-			<recoil>
-				<lodDist>MEDIUM</lodDist>
-				<amplitude>
-					0.26
-					<!--BW_String-->
-				</amplitude>
-				<recoilEffect>main</recoilEffect>
-			</recoil>
-			<effects>shot_mainext</effects>
 			<reloadEffect>reload85_107</reloadEffect>
 			<pitchLimits>
 				<minPitch>
@@ -32764,15 +32998,6 @@
 				0.44
 				<!--BW_String-->
 			</impulse>
-			<recoil>
-				<lodDist>MEDIUM</lodDist>
-				<amplitude>
-					0.2
-					<!--BW_String-->
-				</amplitude>
-				<recoilEffect>main</recoilEffect>
-			</recoil>
-			<effects>shot_large</effects>
 			<reloadEffect>reload85_107</reloadEffect>
 			<pitchLimits>
 				<minPitch>

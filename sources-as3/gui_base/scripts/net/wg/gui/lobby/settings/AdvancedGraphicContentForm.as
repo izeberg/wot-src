@@ -107,6 +107,12 @@ package net.wg.gui.lobby.settings
       
       public var OBJECT_LODStepSlider:SettingsStepSlider = null;
       
+      public var VISIBILITY_TUNNELLabel:LabelControl = null;
+      
+      public var VISIBILITY_TUNNELValue:LabelControl = null;
+      
+      public var VISIBILITY_TUNNELStepSlider:SettingsStepSlider = null;
+      
       public var SNIPER_MODE_EFFECTS_QUALITYLabel:LabelControl = null;
       
       public var SNIPER_MODE_EFFECTS_QUALITYValue:LabelControl = null;
@@ -133,13 +139,15 @@ package net.wg.gui.lobby.settings
       
       public var VEHICLE_TRACES_ENABLEDCheckbox:CheckBox = null;
       
+      public var INCREASE_EFFECTS_CONTRAST_ENABLEDCheckbox:CheckBox = null;
+      
       public var SEMITRANSPARENT_LEAVES_ENABLEDCheckbox:CheckBox = null;
       
       public var TERRAIN_TESSELLATION_ENABLEDCheckbox:CheckBox = null;
       
       public var SNIPER_MODE_TERRAIN_TESSELLATION_ENABLEDCheckbox:CheckBox = null;
       
-      public var VISIBILITY_TUNNEL_ENABLEDCheckbox:CheckBox = null;
+      public var showPrebattleHighlightsCheckbox:CheckBox = null;
       
       public function AdvancedGraphicContentForm()
       {
@@ -206,6 +214,9 @@ package net.wg.gui.lobby.settings
          this.OBJECT_LODLabel.dispose();
          this.OBJECT_LODValue.dispose();
          this.OBJECT_LODStepSlider.dispose();
+         this.VISIBILITY_TUNNELLabel.dispose();
+         this.VISIBILITY_TUNNELValue.dispose();
+         this.VISIBILITY_TUNNELStepSlider.dispose();
          this.SNIPER_MODE_EFFECTS_QUALITYLabel.dispose();
          this.SNIPER_MODE_EFFECTS_QUALITYValue.dispose();
          this.SNIPER_MODE_EFFECTS_QUALITYStepSlider.dispose();
@@ -213,10 +224,11 @@ package net.wg.gui.lobby.settings
          this.HAVOK_ENABLEDCheckbox.dispose();
          this.VEHICLE_DUST_ENABLEDCheckbox.dispose();
          this.VEHICLE_TRACES_ENABLEDCheckbox.dispose();
+         this.INCREASE_EFFECTS_CONTRAST_ENABLEDCheckbox.dispose();
          this.SEMITRANSPARENT_LEAVES_ENABLEDCheckbox.dispose();
          this.TERRAIN_TESSELLATION_ENABLEDCheckbox.dispose();
          this.SNIPER_MODE_TERRAIN_TESSELLATION_ENABLEDCheckbox.dispose();
-         this.VISIBILITY_TUNNEL_ENABLEDCheckbox.dispose();
+         this.showPrebattleHighlightsCheckbox.dispose();
          this.CUSTOM_AA_MODELabel.dispose();
          this.CUSTOM_AA_MODEValue.dispose();
          this.CUSTOM_AA_MODEStepSlider.dispose();
@@ -264,6 +276,9 @@ package net.wg.gui.lobby.settings
          this.OBJECT_LODLabel = null;
          this.OBJECT_LODValue = null;
          this.OBJECT_LODStepSlider = null;
+         this.VISIBILITY_TUNNELLabel = null;
+         this.VISIBILITY_TUNNELValue = null;
+         this.VISIBILITY_TUNNELStepSlider = null;
          this.SNIPER_MODE_EFFECTS_QUALITYLabel = null;
          this.SNIPER_MODE_EFFECTS_QUALITYValue = null;
          this.SNIPER_MODE_EFFECTS_QUALITYStepSlider = null;
@@ -271,10 +286,11 @@ package net.wg.gui.lobby.settings
          this.HAVOK_ENABLEDCheckbox = null;
          this.VEHICLE_DUST_ENABLEDCheckbox = null;
          this.VEHICLE_TRACES_ENABLEDCheckbox = null;
+         this.INCREASE_EFFECTS_CONTRAST_ENABLEDCheckbox = null;
          this.SEMITRANSPARENT_LEAVES_ENABLEDCheckbox = null;
          this.TERRAIN_TESSELLATION_ENABLEDCheckbox = null;
          this.SNIPER_MODE_TERRAIN_TESSELLATION_ENABLEDCheckbox = null;
-         this.VISIBILITY_TUNNEL_ENABLEDCheckbox = null;
+         this.showPrebattleHighlightsCheckbox = null;
          this.CUSTOM_AA_MODELabel = null;
          this.CUSTOM_AA_MODEValue = null;
          this.CUSTOM_AA_MODEStepSlider = null;
@@ -312,15 +328,17 @@ package net.wg.gui.lobby.settings
          this.MOTION_BLUR_QUALITYLabel.text = Values.EMPTY_STR;
          this.FAR_PLANELabel.text = Values.EMPTY_STR;
          this.OBJECT_LODLabel.text = Values.EMPTY_STR;
+         this.VISIBILITY_TUNNELLabel.text = Values.EMPTY_STR;
          this.SNIPER_MODE_EFFECTS_QUALITYLabel.text = Values.EMPTY_STR;
          this.SNIPER_MODE_GRASS_ENABLEDCheckbox.label = Values.EMPTY_STR;
          this.HAVOK_ENABLEDCheckbox.label = Values.EMPTY_STR;
          this.VEHICLE_DUST_ENABLEDCheckbox.label = Values.EMPTY_STR;
          this.VEHICLE_TRACES_ENABLEDCheckbox.label = Values.EMPTY_STR;
+         this.INCREASE_EFFECTS_CONTRAST_ENABLEDCheckbox.label = Values.EMPTY_STR;
          this.SEMITRANSPARENT_LEAVES_ENABLEDCheckbox.label = Values.EMPTY_STR;
          this.TERRAIN_TESSELLATION_ENABLEDCheckbox.label = Values.EMPTY_STR;
          this.SNIPER_MODE_TERRAIN_TESSELLATION_ENABLEDCheckbox.label = Values.EMPTY_STR;
-         this.VISIBILITY_TUNNEL_ENABLEDCheckbox.label = Values.EMPTY_STR;
+         this.showPrebattleHighlightsCheckbox.label = Values.EMPTY_STR;
       }
    }
 }

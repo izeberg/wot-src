@@ -36,6 +36,7 @@ class ViewFlags(CONST_CONTAINER):
             return WindowLayer.SUB_VIEW
         if flags == ViewFlags.LOBBY_TOP_SUB_VIEW:
             return WindowLayer.TOP_SUB_VIEW
+        raise AssertionError('Unsupported ViewFlags value!')
 
 
 class ViewEventType(CONST_CONTAINER):

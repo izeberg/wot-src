@@ -49,6 +49,8 @@ package net.wg.gui.battle.views.consumablesPanel
       protected static const INVALIDATE_POSITION:uint = InvalidationType.SYSTEM_FLAGS_BORDER << 2;
       
       private static const OPTIONAL_DEVICE_BUTTON_EMPTY_MSG:String = "BattleOptionalDeviceButton empty at idx: ";
+      
+      private static const BR_RESPAWN_BTN_LINKAGE:String = "BattleRoyaleRespawnButtonUI";
        
       
       protected var renderers:Vector.<IConsumablesButton>;
@@ -64,6 +66,8 @@ package net.wg.gui.battle.views.consumablesPanel
       private var _shellCurrentIdx:int = -1;
       
       private var _shellNextIdx:int = -1;
+      
+      private var _isNextShellBlinkSuppressed:Boolean = false;
       
       private var _isReplay:Boolean = false;
       
@@ -258,7 +262,7 @@ package net.wg.gui.battle.views.consumablesPanel
          var _loc9_:ConsumablesVO = null;
          if(this.renderers[param1] == null)
          {
-            _loc8_ = this._classFactory.getComponent("BattleRoyaleRespawnButtonUI",BattleRoyaleRespawnButton);
+            _loc8_ = this._classFactory.getComponent(BR_RESPAWN_BTN_LINKAGE,BattleRoyaleRespawnButton);
             this.renderers[param1] = _loc8_;
             addChild(_loc8_);
          }
@@ -342,15 +346,10 @@ package net.wg.gui.battle.views.consumablesPanel
       
       public function as_setCoolDownPosAsPercent(param1:int, param2:Number) : void
       {
-         var _loc4_:Boolean = false;
          var _loc3_:IConsumablesButton = this.getRendererBySlotIdx(param1);
-         if(_loc3_)
+         if(_loc3_ && (!(_loc3_ is IBattleShellButton) || this._shellCurrentIdx >= 0 && this._shellCurrentIdx == param1))
          {
-            _loc4_ = _loc3_ is IBattleShellButton;
-            if(!_loc4_ || _loc4_ && this._shellCurrentIdx >= 0 && this._shellCurrentIdx == param1)
-            {
-               _loc3_.setCoolDownPosAsPercent(param2);
-            }
+            _loc3_.setCoolDownPosAsPercent(param2);
          }
       }
       
@@ -440,25 +439,7 @@ package net.wg.gui.battle.views.consumablesPanel
       
       public function as_setNextShell(param1:int) : void
       {
-         var _loc2_:IBattleShellButton = null;
-         if(param1 == this._shellNextIdx)
-         {
-            return;
-         }
-         if(this._shellNextIdx >= 0)
-         {
-            _loc2_ = this.getRendererBySlotIdx(this._shellNextIdx) as BattleShellButton;
-            if(_loc2_)
-            {
-               _loc2_.setNext(false,true);
-            }
-         }
-         _loc2_ = this.getRendererBySlotIdx(param1) as BattleShellButton;
-         if(_loc2_ && _loc2_.enabled && !_loc2_.empty)
-         {
-            this._shellNextIdx = param1;
-            _loc2_.setNext(true);
-         }
+         this._applyNextShell(param1,!this._isNextShellBlinkSuppressed);
       }
       
       public function as_setOptionalDeviceUsed(param1:int, param2:Boolean) : void
@@ -530,16 +511,25 @@ package net.wg.gui.battle.views.consumablesPanel
          }
       }
       
+      public function as_setShellMode(param1:int, param2:String, param3:Boolean) : void
+      {
+         var _loc4_:IBattleShellButton = this.getRendererBySlotIdx(param1) as IBattleShellButton;
+         if(_loc4_)
+         {
+            _loc4_.setShellMode(param2,param3);
+         }
+      }
+      
       public function as_showEquipmentSlots(param1:Boolean) : void
       {
          var _loc2_:Boolean = false;
-         var _loc4_:IConsumablesButton = null;
+         var _loc4_:BattleEquipmentButton = null;
          var _loc3_:int = this.renderers.length;
          var _loc5_:uint = 0;
          while(_loc5_ < _loc3_)
          {
-            _loc4_ = this.getRenderer(_loc5_);
-            if(_loc4_ is BattleEquipmentButton)
+            _loc4_ = this.getRendererBySlotIdx(_loc5_) as BattleEquipmentButton;
+            if(_loc4_)
             {
                _loc4_.visible = param1;
                _loc2_ = true;
@@ -549,6 +539,24 @@ package net.wg.gui.battle.views.consumablesPanel
          if(_loc2_)
          {
             invalidate();
+         }
+      }
+      
+      public function as_suppressNextShellBlink(param1:Boolean) : void
+      {
+         var _loc2_:IBattleShellButton = null;
+         if(this._isNextShellBlinkSuppressed == param1)
+         {
+            return;
+         }
+         this._isNextShellBlinkSuppressed = param1;
+         if(this._shellNextIdx >= 0)
+         {
+            _loc2_ = this.getRendererBySlotIdx(this._shellNextIdx) as BattleShellButton;
+            if(_loc2_)
+            {
+               _loc2_.setNext(true,true,!param1);
+            }
          }
       }
       
@@ -673,11 +681,6 @@ package net.wg.gui.battle.views.consumablesPanel
          this._basePanelWidth = _loc2_;
       }
       
-      protected function getRenderer(param1:int) : IConsumablesButton
-      {
-         return IConsumablesButton(this.renderers[param1]);
-      }
-      
       protected function updatePosition() : void
       {
          if(this._tween)
@@ -687,6 +690,29 @@ package net.wg.gui.battle.views.consumablesPanel
          x = this._basePanelPosX = this._stageWidth - this._basePanelWidth >> 1;
          y = this._stageHeight - this._bottomPadding;
          dispatchEvent(new ConsumablesPanelEvent(ConsumablesPanelEvent.UPDATE_POSITION));
+      }
+      
+      private function _applyNextShell(param1:int, param2:Boolean = true) : void
+      {
+         var _loc3_:IBattleShellButton = null;
+         if(param1 == this._shellNextIdx)
+         {
+            return;
+         }
+         if(this._shellNextIdx >= 0)
+         {
+            _loc3_ = this.getRendererBySlotIdx(this._shellNextIdx) as BattleShellButton;
+            if(_loc3_)
+            {
+               _loc3_.setNext(false,true);
+            }
+         }
+         _loc3_ = this.getRendererBySlotIdx(param1) as BattleShellButton;
+         if(_loc3_ && _loc3_.enabled && !_loc3_.empty)
+         {
+            this._shellNextIdx = param1;
+            _loc3_.setNext(true,false,param2);
+         }
       }
       
       private function clearTween() : void

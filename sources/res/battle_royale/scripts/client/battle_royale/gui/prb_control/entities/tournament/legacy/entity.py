@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from helpers import dependency
 from gui.prb_control import prb_getters
 from gui.prb_control.settings import FUNCTIONAL_FLAG

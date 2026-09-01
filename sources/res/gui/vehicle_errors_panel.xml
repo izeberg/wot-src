@@ -288,5 +288,45 @@
 				<item>yellow</item>
 			</value>
 		</message>
+		<message>
+			<name>auxiliaryRocketLauncherCantShoot</name>
+			<type>list</type>
+			<value>
+				<item>_(#ingame_gui:player_errors/mechanics/auxiliaryRocketLauncher/cant_shoot)</item>
+				<item>yellow</item>
+			</value>
+		</message>
+		<message>
+			<name>autoreloaderSurgeNoCharges</name>
+			<type>list</type>
+			<value>
+				<item>_(#ingame_gui:player_errors/mechanics/autoreloaderSurge/noCharges)</item>
+				<item>yellow</item>
+			</value>
+		</message>
+		<message>
+			<name>autoreloaderSurgeClipFull</name>
+			<type>list</type>
+			<value>
+				<item>_(#ingame_gui:player_errors/mechanics/autoreloaderSurge/clipFull)</item>
+				<item>yellow</item>
+			</value>
+		</message>
+		<message>
+			<name>autoreloaderSurgeNoAmmo</name>
+			<type>list</type>
+			<value>
+				<item>_(#ingame_gui:player_errors/mechanics/autoreloaderSurge/noAmmo)</item>
+				<item>yellow</item>
+			</value>
+		</message>
+		<message>
+			<name>autoreloaderSurgeReloadingSmall</name>
+			<type>list</type>
+			<value>
+				<item>_(#ingame_gui:player_errors/mechanics/autoreloaderSurge/reloadingSmall)</item>
+				<item>yellow</item>
+			</value>
+		</message>
 	</messages>
 </root>

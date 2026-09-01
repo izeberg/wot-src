@@ -17,26 +17,6 @@
 				<priority>317</priority>
 				<rarity>common</rarity>
 			</override>
-			<override>
-				<id>fractal_cn_fractal_cn_common</id>
-				<priority>317</priority>
-				<rarity>common</rarity>
-			</override>
-			<override>
-				<id>fractal_cn_fractal_cn_rare</id>
-				<priority>317</priority>
-				<rarity>rare</rarity>
-			</override>
-			<override>
-				<id>anniversaryCN_bronze</id>
-				<priority>317</priority>
-				<rarity>common</rarity>
-			</override>
-			<override>
-				<id>anniversaryCN_silver</id>
-				<priority>317</priority>
-				<rarity>rare</rarity>
-			</override>
 		</lootBox>
 		<lootboxCompensation>
 			<priority>450</priority>
@@ -254,18 +234,39 @@
 	</core>
 	<anniversaryCN>
 		<vehicles>
+			<locked3DStyle>
+				<override>
+					<id>57649 52081</id>
+					<rarity>epic</rarity>
+				</override>
+			</locked3DStyle>
 			<override>
-				<id>8305 53105 69377 33825 10545 68641</id>
+				<id>53105 30465 51329 27153 51793 44049 15185</id>
 				<rarity>epic</rarity>
 			</override>
 		</vehicles>
 	</anniversaryCN>
-	<fractal_cn>
+	<newYear_premium>
+		<customizations>
+			<style3D>
+				<rarity>rare</rarity>
+			</style3D>
+			<attachment>
+				<override>
+					<id>1096 1098 1100 1101 1107 1108</id>
+					<rarity>rare</rarity>
+				</override>
+			</attachment>
+		</customizations>
 		<vehicles>
+			<rarity>common</rarity>
 			<override>
-				<id>30209 8305 53665 53105 6513 33825</id>
+				<id>10545 6305 52593 59201 32785 55425</id>
 				<rarity>epic</rarity>
 			</override>
 		</vehicles>
-	</fractal_cn>
+		<ny26Toys>
+			<priority>30</priority>
+		</ny26Toys>
+	</newYear_premium>
 </root>

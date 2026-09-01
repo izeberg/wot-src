@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.261426 -0.555503 -1.915211</min>
+		<max>0.252033 0.260162 2.703266</max>
+	</visibilityBox>
+	<parent>content/3D_Customization/gun_slots/Cz46_gunsleeve_daring/normal/lod1/attachment</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>content/3D_Customization/gun_slots/Cz46_gunsleeve_daring/normal/lod0/attachment</nodefullVisual>
+</root>

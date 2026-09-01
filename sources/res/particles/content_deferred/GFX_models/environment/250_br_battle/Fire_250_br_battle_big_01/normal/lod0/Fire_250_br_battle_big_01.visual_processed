@@ -24,6 +24,10 @@
 					<materialKind>0</materialKind>
 					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
 					<property>
+						g_enableEnvMultiplier
+						<Bool>true</Bool>
+					</property>
+					<property>
 						diffuseMap
 						<Texture>particles/content_deferred/GFX_models/GFX_textures/FireCutout01.dds</Texture>
 					</property>
@@ -65,7 +69,10 @@
 					</property>
 					<property>
 						lightMultipliers
-						<Vector4>60.000000 0.000000 0.000000 0.000000</Vector4>
+						<Vector4>
+							86.956522 0.000000 0.000000 0.000000
+							<!--BW_String-->
+						</Vector4>
 					</property>
 					<property>
 						alphaFadeAmountFresnel
@@ -81,6 +88,10 @@
 					<collisionFlags>255</collisionFlags>
 					<materialKind>0</materialKind>
 					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
+					<property>
+						g_enableEnvMultiplier
+						<Bool>true</Bool>
+					</property>
 					<property>
 						diffuseMap
 						<Texture>particles/content_deferred/GFX_models/GFX_textures/Noise01.dds</Texture>
@@ -119,7 +130,7 @@
 					</property>
 					<property>
 						lightMultipliers
-						<Vector4>0.250000 0.010000 1.500000 0.000000</Vector4>
+						<Vector4>0.362319 0.010000 1.500000 0.000000</Vector4>
 					</property>
 					<property>
 						alphaFadeAmountFresnel
@@ -135,6 +146,10 @@
 					<collisionFlags>255</collisionFlags>
 					<materialKind>0</materialKind>
 					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
+					<property>
+						g_enableEnvMultiplier
+						<Bool>true</Bool>
+					</property>
 					<property>
 						diffuseMap
 						<Texture>particles/content_deferred/GFX_models/GFX_textures/FireCutout03.dds</Texture>
@@ -169,7 +184,10 @@
 					</property>
 					<property>
 						lightMultipliers
-						<Vector4>20.000000 0.000000 0.000000 0.000000</Vector4>
+						<Vector4>
+							28.985507 0.000000 0.000000 0.000000
+							<!--BW_String-->
+						</Vector4>
 					</property>
 					<property>
 						FreshnelColor
@@ -189,6 +207,10 @@
 					<collisionFlags>255</collisionFlags>
 					<materialKind>0</materialKind>
 					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
+					<property>
+						g_enableEnvMultiplier
+						<Bool>true</Bool>
+					</property>
 					<property>
 						diffuseMap
 						<Texture>particles/content_deferred/GFX_models/GFX_textures/FireCutout02_Long.dds</Texture>
@@ -223,7 +245,7 @@
 					</property>
 					<property>
 						lightMultipliers
-						<Vector4>10.002000 0.000000 0.000000 0.000000</Vector4>
+						<Vector4>14.495652 0.000000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						FreshnelColor

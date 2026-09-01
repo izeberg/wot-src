@@ -216,7 +216,7 @@ package net.wg.gui.components.windows
                this.windowContent.onSourceLoadedS();
             }
          }
-         if(isInvalid(INVALID_PADDING,INVALID_SRC_VIEW))
+         if(isInvalidTypes(INVALID_PADDING,INVALID_SRC_VIEW))
          {
             this.reflowContent();
          }

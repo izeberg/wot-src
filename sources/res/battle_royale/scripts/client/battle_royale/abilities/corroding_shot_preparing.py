@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import CGF
 from typing import List
 import math_utils

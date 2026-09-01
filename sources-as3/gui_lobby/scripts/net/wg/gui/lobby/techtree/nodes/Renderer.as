@@ -128,7 +128,7 @@ package net.wg.gui.lobby.techtree.nodes
             this.visible = false;
             return;
          }
-         if(isInvalid(InvalidationType.DATA,InvalidationType.SETTINGS))
+         if(isInvalidTypes(InvalidationType.DATA,InvalidationType.SETTINGS))
          {
             if(this._delegateToChildren)
             {

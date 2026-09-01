@@ -108,7 +108,7 @@ class HangarVideoCameraController(object):
 
     def handleKeyEvent(self, event):
         if self.__videoCamera is None:
-            return
+            return False
         else:
             if BigWorld.isKeyDown(Keys.KEY_CAPSLOCK) and event.isKeyDown() and event.key == Keys.KEY_F3:
                 self.__setEnabled(not self.isEnabled)
@@ -152,7 +152,7 @@ class HangarVideoCameraController(object):
 
     def handleMouseEvent(self, event):
         if self.__videoCamera is None:
-            return
+            return False
         else:
             if self.isEnabled:
                 return self.__videoCamera.handleMouseEvent(event.dx, event.dy, event.dz)
@@ -174,6 +174,7 @@ class HangarSpace(IHangarSpace):
         self.__isModelLoaded = False
         self.__isSpacePremium = False
         self.__igrSpaceType = constants.IGR_TYPE.NONE
+        self.__environment = ''
         self.__delayedIsPremium = False
         self.__delayedForceRefresh = False
         self.__delayedRefreshCallback = None
@@ -275,6 +276,9 @@ class HangarSpace(IHangarSpace):
         else:
             self.__isSelectionEnabledCounter -= 1
 
+    def setEnvironment(self, environment):
+        self.__environment = environment
+
     def __onNotifyCursorOver3dScene(self, event):
         self.__isCursorOver3DScene = event.ctx.get('isOver3dScene', False)
         self.onNotifyCursorOver3dScene(self.__isCursorOver3DScene)
@@ -293,7 +297,7 @@ class HangarSpace(IHangarSpace):
             self.__inited = True
             self.__isSpacePremium = isPremium
             self.__igrSpaceType = self.igrCtrl.getRoomType()
-            self.__space.create(isPremium, self.__spaceDone)
+            self.__space.create(isPremium, self.__spaceDone, self.__environment)
             self.onSpaceCreating()
             if self.__lastUpdatedVehicle is not None:
                 self.startToUpdateVehicle(self.__lastUpdatedVehicle)
@@ -391,17 +395,19 @@ class HangarSpace(IHangarSpace):
                 self.onMouseUp()
 
     @g_execute_after_hangar_space_inited
-    def updatePreviewVehicle(self, vehicle, outfit=None):
+    def updatePreviewVehicle(self, vehicle, outfit=None, showWaitingBg=True):
         if self.__inited:
             self.__isModelLoaded = False
             self.onVehicleChangeStarted()
-            Waiting.show('loadHangarSpaceVehicle', isSingle=True)
+            Waiting.show('loadHangarSpaceVehicle', isSingle=True, showBg=showWaitingBg)
             self.__space.recreateVehicle(vehicle.descriptor, vehicle.modelState, outfit=outfit)
             self.__lastUpdatedVehicle = vehicle
 
     def getVehicleEntity(self):
         if self.__inited:
             return self.__space.getVehicleEntity()
+        else:
+            return
 
     def getVehicleEntityAppearance(self):
         entity = self.getVehicleEntity()

@@ -59,8 +59,6 @@ package net.wg.gui.lobby.vehicleCustomization
       
       private static const MIN_RES_BOTTOM_OFFSET:int = 295;
       
-      private static const BOTTOM_PANEL_HEIGHT:int = 214;
-      
       private static const INV_FOCUS_CHAIN:String = "InvFocusChain";
       
       private static const INV_ENTRY_POINTS_SIZE:String = "InvEntryPointsSize";
@@ -207,7 +205,7 @@ package net.wg.gui.lobby.vehicleCustomization
             this.bottomPanel.y = this._actualHeight - this.bottomPanel.height + _loc2_ - this._bottomOffset ^ 0;
             this.bottomPanel.width = this._actualWidth;
             this.bottomPanel.bottomOffset = this._bottomOffset;
-            this.bottomPanel.setBackgroundHeight(BOTTOM_PANEL_HEIGHT);
+            this.bottomPanel.invalidateSize();
             this.background.y = 0;
             this.background.width = App.appWidth;
             this.background.height = App.appHeight;

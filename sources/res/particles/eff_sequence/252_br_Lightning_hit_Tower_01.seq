@@ -1238,7 +1238,7 @@
 	<sequenceObject>
 		<name>Delay</name>
 		<type>model</type>
-		<resource/>
+		<resource>content/Environment/env_null_model/null_model.model</resource>
 		<track>
 			<name>position</name>
 			<type>vector3</type>

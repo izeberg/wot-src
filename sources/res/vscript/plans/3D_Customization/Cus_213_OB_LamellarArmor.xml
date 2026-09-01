@@ -179,6 +179,17 @@
 			</block>
 			<block>
 				<class>ComponentMethod</class>
+				<id>ComponentMethod_2</id>
+				<params>
+					<param>
+						Sequence.pause
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>ComponentMethod</class>
 				<id>ComponentMethod_1</id>
 				<params>
 					<param>
@@ -189,15 +200,43 @@
 				</params>
 			</block>
 			<block>
-				<class>ComponentMethod</class>
-				<id>ComponentMethod_2</id>
+				<class>If</class>
+				<id>If_21</id>
+			</block>
+			<block>
+				<class>SetVariable</class>
+				<id>SetVariable_4</id>
+				<buddy>Variable_5</buddy>
 				<params>
 					<param>
-						Sequence.pause
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>value</name>
+						<const>\true\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>SetComponentProperty</class>
+				<id>SetComponentProperty_1</id>
+				<params>
+					<param>
+						Sequence.time
 						<name>Component Type</name>
 						<type>StringT</type>
 					</param>
 				</params>
+				<slots>
+					<slot>
+						<name>time</name>
+						<const>\0.000000\</const>
+					</slot>
+				</slots>
 			</block>
 			<block>
 				<class>SetVariable</class>
@@ -247,12 +286,8 @@
 				</params>
 			</block>
 			<block>
-				<class>If</class>
-				<id>If_22</id>
-			</block>
-			<block>
-				<class>SetVariable</class>
-				<id>SetVariable_4</id>
+				<class>GetVariable</class>
+				<id>GetVariable_5</id>
 				<buddy>Variable_5</buddy>
 				<params>
 					<param>
@@ -261,16 +296,55 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots>
-					<slot>
-						<name>value</name>
-						<const>\true\</const>
-					</slot>
-				</slots>
+			</block>
+			<block>
+				<class>Macro</class>
+				<id>Macro_1</id>
+				<params>
+					<param>
+						CustomizationVehicleEvents
+						<name>Macro Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_9</id>
+				<buddy>Variable_6</buddy>
+				<params>
+					<param>
+						VehicleT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>ComponentMethod</class>
+				<id>ComponentMethod_3</id>
+				<params>
+					<param>
+						Sequence.pause
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>ComponentMethod</class>
+				<id>ComponentMethod_4</id>
+				<params>
+					<param>
+						Sequence.start
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
 			</block>
 			<block>
 				<class>SetComponentProperty</class>
-				<id>SetComponentProperty_1</id>
+				<id>SetComponentProperty_2</id>
 				<params>
 					<param>
 						Sequence.time
@@ -286,51 +360,61 @@
 				</slots>
 			</block>
 			<block>
-				<class>Choice</class>
-				<id>Choice_1</id>
+				<class>Delay</class>
+				<id>Delay_2</id>
 				<params>
 					<param>
-						5
-						<name>Output Count</name>
-						<type>IntT</type>
+						FloatT
+						<name>Value Type</name>
+						<type>TypeT</type>
 					</param>
 				</params>
-			</block>
-			<block>
-				<class>OnVehicleShaked</class>
-				<id>OnVehicleShaked_1</id>
-			</block>
-			<block>
-				<class>CompareVehicles</class>
-				<id>CompareVehicles_1</id>
-			</block>
-			<block>
-				<class>If</class>
-				<id>If_21</id>
+				<slots>
+					<slot>
+						<name>stack</name>
+						<const>\false\</const>
+					</slot>
+				</slots>
 			</block>
 			<block>
 				<class>GetVariable</class>
-				<id>GetVariable_9</id>
-				<buddy>Variable_6</buddy>
+				<id>GetVariable_12</id>
+				<buddy>Variable_8</buddy>
 				<params>
 					<param>
-						VehicleT
+						FloatT
 						<name>Variable Type</name>
 						<type>TypeT</type>
 					</param>
 				</params>
 			</block>
 			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_5</id>
-				<buddy>Variable_5</buddy>
+				<class>ComponentMethod</class>
+				<id>ComponentMethod_5</id>
 				<params>
 					<param>
-						BoolT
-						<name>Variable Type</name>
-						<type>TypeT</type>
+						Sequence.pause
+						<name>Component Type</name>
+						<type>StringT</type>
 					</param>
 				</params>
+			</block>
+			<block>
+				<class>SetComponentProperty</class>
+				<id>SetComponentProperty_3</id>
+				<params>
+					<param>
+						Sequence.time
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>time</name>
+						<const>\10.000000\</const>
+					</slot>
+				</slots>
 			</block>
 		</blocks>
 		<connections>
@@ -383,6 +467,18 @@
 				<output>value</output>
 			</connection>
 			<connection>
+				<from>Delay_1</from>
+				<input>in</input>
+				<to>ComponentMethod_2</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>ComponentMethod_2</to>
+				<output>value</output>
+			</connection>
+			<connection>
 				<from>SetComponentProperty_1</from>
 				<input>in</input>
 				<to>ComponentMethod_1</to>
@@ -395,15 +491,33 @@
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>Delay_1</from>
+				<from>Macro_1</from>
+				<input>input</input>
+				<to>If_21</to>
+				<output>onHitDamage</output>
+			</connection>
+			<connection>
+				<from>GetVariable_5</from>
+				<input>value</input>
+				<to>If_21</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>If_21</from>
+				<input>input</input>
+				<to>SetVariable_4</to>
+				<output>false</output>
+			</connection>
+			<connection>
+				<from>SetVariable_4</from>
 				<input>in</input>
-				<to>ComponentMethod_2</to>
+				<to>SetComponentProperty_1</to>
 				<output>out</output>
 			</connection>
 			<connection>
 				<from>ContextGetSelf_1</from>
 				<input>gameObject</input>
-				<to>ComponentMethod_2</to>
+				<to>SetComponentProperty_1</to>
 				<output>value</output>
 			</connection>
 			<connection>
@@ -425,69 +539,87 @@
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>OnVehicleShaked_1</from>
-				<input>input</input>
-				<to>If_22</to>
-				<output>out</output>
+				<from>GetVariable_9</from>
+				<input>vehicle</input>
+				<to>Macro_1</to>
+				<output>value</output>
 			</connection>
 			<connection>
-				<from>CompareVehicles_1</from>
-				<input>value</input>
-				<to>If_22</to>
-				<output>res</output>
-			</connection>
-			<connection>
-				<from>If_21</from>
-				<input>input</input>
-				<to>SetVariable_4</to>
-				<output>false</output>
-			</connection>
-			<connection>
-				<from>SetVariable_4</from>
+				<from>Delay_2</from>
 				<input>in</input>
-				<to>SetComponentProperty_1</to>
+				<to>ComponentMethod_3</to>
 				<output>out</output>
 			</connection>
 			<connection>
 				<from>ContextGetSelf_1</from>
 				<input>gameObject</input>
-				<to>SetComponentProperty_1</to>
+				<to>ComponentMethod_3</to>
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>If_22</from>
-				<input>input</input>
-				<to>Choice_1</to>
-				<output>true</output>
+				<from>SetComponentProperty_2</from>
+				<input>in</input>
+				<to>ComponentMethod_4</to>
+				<output>out</output>
 			</connection>
 			<connection>
-				<from>OnVehicleShaked_1</from>
-				<input>index</input>
-				<to>Choice_1</to>
-				<output>shakeReason</output>
-			</connection>
-			<connection>
-				<from>OnVehicleShaked_1</from>
-				<input>a</input>
-				<to>CompareVehicles_1</to>
-				<output>vehicle</output>
-			</connection>
-			<connection>
-				<from>GetVariable_9</from>
-				<input>b</input>
-				<to>CompareVehicles_1</to>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>ComponentMethod_4</to>
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>Choice_1</from>
-				<input>input</input>
-				<to>If_21</to>
-				<output>o2</output>
+				<from>Macro_1</from>
+				<input>in</input>
+				<to>SetComponentProperty_2</to>
+				<output>PrebattleHighlightStart</output>
 			</connection>
 			<connection>
-				<from>GetVariable_5</from>
-				<input>value</input>
-				<to>If_21</to>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>SetComponentProperty_2</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>ComponentMethod_4</from>
+				<input>input</input>
+				<to>Delay_2</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>SetComponentProperty_3</from>
+				<input>cancel</input>
+				<to>Delay_2</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>GetVariable_12</from>
+				<input>time</input>
+				<to>Delay_2</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>Macro_1</from>
+				<input>in</input>
+				<to>ComponentMethod_5</to>
+				<output>PrebattleHighlightEnd</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>ComponentMethod_5</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>ComponentMethod_5</from>
+				<input>in</input>
+				<to>SetComponentProperty_3</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>SetComponentProperty_3</to>
 				<output>value</output>
 			</connection>
 		</connections>

@@ -14,8 +14,6 @@ package net.wg.gui.battle.views.widgetsPanel
       
       private static const INVALID_COOLDOWN:int = InvalidationType.SYSTEM_FLAGS_BORDER << 2;
       
-      private static const PROGRESSION_MAX_FRAME:int = 100;
-      
       private static const PROGRESS_ALPHA:Number = 0.5;
       
       private static const PROGRESS_ALPHA_REDUCE_ALPHA:Number = 0.8;
@@ -71,9 +69,8 @@ package net.wg.gui.battle.views.widgetsPanel
       
       override protected function applyState(param1:String, param2:Boolean) : void
       {
-         var _loc3_:Boolean = false;
          super.applyState(param1,param2);
-         _loc3_ = [MECHANICS_WIDGET_CONST.DEPLOYING,MECHANICS_WIDGET_CONST.PREPARING].indexOf(param1) != -1;
+         var _loc3_:Boolean = [MECHANICS_WIDGET_CONST.DEPLOYING,MECHANICS_WIDGET_CONST.PREPARING].indexOf(param1) != -1;
          this.forwardProgress.visible = _loc3_;
          this.preparingIcon.visible = _loc3_ || param1 == MECHANICS_WIDGET_CONST.IDLE;
       }
@@ -94,16 +91,6 @@ package net.wg.gui.battle.views.widgetsPanel
          return _loc1_ && this.state == MECHANICS_WIDGET_CONST.READY;
       }
       
-      public function as_setPreparingProgress(param1:Number) : void
-      {
-         this.forwardProgress.gotoAndStop(PROGRESSION_MAX_FRAME * param1);
-      }
-      
-      public function as_setActiveProgress(param1:Number) : void
-      {
-         this.reverseProgress.gotoAndStop(PROGRESSION_MAX_FRAME * param1);
-      }
-      
       public function as_isReducedCooldown(param1:Boolean) : void
       {
          if(param1)
@@ -119,6 +106,16 @@ package net.wg.gui.battle.views.widgetsPanel
          this.arrows.visible = param1;
          this._isHighlighted = param1;
          invalidate(INVALID_COOLDOWN);
+      }
+      
+      public function as_setActiveProgress(param1:Number) : void
+      {
+         this.reverseProgress.gotoAndStop(WidgetsPanel.REVERES_PROGRESSION_MAX_FRAME * param1);
+      }
+      
+      public function as_setPreparingProgress(param1:Number) : void
+      {
+         this.forwardProgress.gotoAndStop(WidgetsPanel.FORWARD_PROGRESSION_MAX_FRAME * param1);
       }
       
       private function updateArrowPosition() : void

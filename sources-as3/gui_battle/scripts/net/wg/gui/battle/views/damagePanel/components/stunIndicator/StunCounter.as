@@ -44,6 +44,8 @@ package net.wg.gui.battle.views.damagePanel.components.stunIndicator
       
       private var _disposed:Boolean = false;
       
+      private var _lastDisplayedTime:int = -1;
+      
       public function StunCounter()
       {
          this._scheduler = App.utils.scheduler;
@@ -81,11 +83,18 @@ package net.wg.gui.battle.views.damagePanel.components.stunIndicator
          }
       }
       
+      public function isDisposed() : Boolean
+      {
+         return this._disposed;
+      }
+      
       public function showStun(param1:Number, param2:Boolean = true) : void
       {
+         var _loc3_:Boolean = this._repeatCount > 0 && this._currentRepeatCount <= this._repeatCount;
          this.clearTimeout();
          this._stunTime = param1 * MS_IN_SEC;
          this._repeatCount = this._stunTime / REPEAT_INTERVAL;
+         this._lastDisplayedTime = -1;
          if(this._repeatCount <= 0)
          {
             gotoAndStop(STATE_HIDDEN);
@@ -93,13 +102,16 @@ package net.wg.gui.battle.views.damagePanel.components.stunIndicator
          else
          {
             this._currentRepeatCount = 0;
-            if(param2)
+            if(!_loc3_)
             {
-               gotoAndPlay(STATE_SHOW);
-            }
-            else
-            {
-               gotoAndStop(STATE_BASE);
+               if(param2)
+               {
+                  gotoAndPlay(STATE_SHOW);
+               }
+               else
+               {
+                  gotoAndStop(STATE_BASE);
+               }
             }
             this.runInterval();
          }
@@ -136,19 +148,19 @@ package net.wg.gui.battle.views.damagePanel.components.stunIndicator
          this._scheduler.cancelTask(this.onIntervalUpdateHandler);
       }
       
-      private function setStunText(param1:Number) : void
+      private function setStunText(param1:int) : void
       {
+         if(!this.timerMc || param1 == this._lastDisplayedTime)
+         {
+            return;
+         }
+         this._lastDisplayedTime = param1;
          if(!this._noTranslateEnabled)
          {
             this._noTranslateEnabled = true;
             TextFieldEx.setNoTranslate(TextField(this.timerMc.labelTf),true);
          }
          this.timerMc.labelTf.text = param1 + this._secString;
-      }
-      
-      public function isDisposed() : Boolean
-      {
-         return this._disposed;
       }
    }
 }

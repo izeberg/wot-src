@@ -113,6 +113,10 @@ package net.wg.data.constants.generated
       
       public static const POI_GREEN_RECON_SMALL_ICON:String = "PoIGreenReconSmallIconUI";
       
+      public static const POI_GREEN_ILLUMINATION_FLARE_ICON:String = "PoIGreenIlluminationFlareIconUI";
+      
+      public static const POI_GREEN_ILLUMINATION_FLARE_SMALL_ICON:String = "PoIGreenIlluminationFlareSmallIconUI";
+      
       public static const POI_ORANGE_ARTILLERY_ICON:String = "PoIOrangeArtilleryIconUI";
       
       public static const POI_ORANGE_ARTILLERY_SMALL_ICON:String = "PoIOrangeArtillerySmallIconUI";
@@ -120,6 +124,10 @@ package net.wg.data.constants.generated
       public static const POI_ORANGE_RECON_ICON:String = "PoIOrangeReconIconUI";
       
       public static const POI_ORANGE_RECON_SMALL_ICON:String = "PoIOrangeReconSmallIconUI";
+      
+      public static const POI_ORANGE_ILLUMINATION_FLARE_ICON:String = "PoIOrangeIlluminationFlareIconUI";
+      
+      public static const POI_ORANGE_ILLUMINATION_FLARE_SMALL_ICON:String = "PoIOrangeIlluminationFlareSmallIconUI";
       
       public static const POI_ORANGE_CROSS_ICON:String = "PoIOrangeCrossIconUI";
       
@@ -150,6 +158,8 @@ package net.wg.data.constants.generated
       public static const COMP7_MARCH_ICON:String = "Comp7MarchIconUI";
       
       public static const COMP7_AGGRESSIVE_DETECTION_ICON:String = "Comp7AggressiveDetectionIconUI";
+      
+      public static const COMP7_ILLUMINATION_FLARE_ICON:String = "Comp7IlluminationFlareIconUI";
        
       
       public function BATTLE_NOTIFICATIONS_TIMER_LINKAGES()

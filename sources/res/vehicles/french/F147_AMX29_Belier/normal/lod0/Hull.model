@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/french/F147_AMX29_Belier/normal/lod0/Hull</nodefullVisual>
+	<parent>vehicles/french/F147_AMX29_Belier/normal/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.695000 -0.561378 -3.406371</min>
+		<max>1.695000 0.410881 3.226627</max>
+	</visibilityBox>
+</root>

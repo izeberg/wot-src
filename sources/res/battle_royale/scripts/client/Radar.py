@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld, CGF
 from Math import Vector3
 import BattleReplay

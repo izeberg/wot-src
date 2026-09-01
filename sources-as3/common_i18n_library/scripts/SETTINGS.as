@@ -169,6 +169,12 @@ package
       
       public static const IGBHARDWAREACCELERATION_DESCRIPTION:String = "#settings:igbHardwareAcceleration/description";
       
+      public static const SHOWPREBATTLEHIGHLIGHTS:String = "#settings:showPrebattleHighlights";
+      
+      public static const SHOWPREBATTLEHIGHLIGHTS_DESCRIPTION:String = "#settings:showPrebattleHighlights/description";
+      
+      public static const SHOWPREBATTLEHIGHLIGHTS_WARNING:String = "#settings:showPrebattleHighlights/warning";
+      
       public static const RENDER_PIPELINE_QUALITY:String = "#settings:RENDER_PIPELINE_QUALITY";
       
       public static const RENDER_PIPELINE_QUALITY_LABEL:String = "#settings:RENDER_PIPELINE_QUALITY/label";
@@ -217,6 +223,10 @@ package
       
       public static const OBJECT_LOD_DESCRIPTION:String = "#settings:OBJECT_LOD/description";
       
+      public static const VISIBILITY_TUNNEL:String = "#settings:VISIBILITY_TUNNEL";
+      
+      public static const VISIBILITY_TUNNEL_DESCRIPTION:String = "#settings:VISIBILITY_TUNNEL/description";
+      
       public static const SHADER_VERSION_CAP:String = "#settings:SHADER_VERSION_CAP";
       
       public static const VEHICLE_DUST_ENABLED:String = "#settings:VEHICLE_DUST_ENABLED";
@@ -249,6 +259,12 @@ package
       
       public static const VEHICLE_TRACES_ENABLED_DESCRIPTION:String = "#settings:VEHICLE_TRACES_ENABLED/description";
       
+      public static const INCREASE_EFFECTS_CONTRAST_ENABLED:String = "#settings:INCREASE_EFFECTS_CONTRAST_ENABLED";
+      
+      public static const INCREASE_EFFECTS_CONTRAST_ENABLED_DESCRIPTION:String = "#settings:INCREASE_EFFECTS_CONTRAST_ENABLED/description";
+      
+      public static const INCREASE_EFFECTS_CONTRAST_ENABLED_WARNING:String = "#settings:INCREASE_EFFECTS_CONTRAST_ENABLED/warning";
+      
       public static const SEMITRANSPARENT_LEAVES_ENABLED:String = "#settings:SEMITRANSPARENT_LEAVES_ENABLED";
       
       public static const SEMITRANSPARENT_LEAVES_ENABLED_DESCRIPTION:String = "#settings:SEMITRANSPARENT_LEAVES_ENABLED/description";
@@ -260,10 +276,6 @@ package
       public static const SNIPER_MODE_TERRAIN_TESSELLATION_ENABLED:String = "#settings:SNIPER_MODE_TERRAIN_TESSELLATION_ENABLED";
       
       public static const SNIPER_MODE_TERRAIN_TESSELLATION_ENABLED_DESCRIPTION:String = "#settings:SNIPER_MODE_TERRAIN_TESSELLATION_ENABLED/description";
-      
-      public static const VISIBILITY_TUNNEL_ENABLED:String = "#settings:VISIBILITY_TUNNEL_ENABLED";
-      
-      public static const VISIBILITY_TUNNEL_ENABLED_DESCRIPTION:String = "#settings:VISIBILITY_TUNNEL_ENABLED/description";
       
       public static const DYNAMICCAMERA:String = "#settings:dynamicCamera";
       

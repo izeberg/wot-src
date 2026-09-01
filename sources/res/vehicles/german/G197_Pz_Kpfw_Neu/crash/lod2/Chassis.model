@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G197_Pz_Kpfw_Neu/crash/lod2/Chassis</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/german/G197_Pz_Kpfw_Neu/crash/lod3/Chassis</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>
+			-1.700812 -0 -4.11487
+			<!--BW_String-->
+		</min>
+		<max>1.700864 1.214516 3.311521</max>
+	</visibilityBox>
+</root>

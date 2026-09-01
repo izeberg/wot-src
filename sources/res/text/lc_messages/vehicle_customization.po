@@ -30,6 +30,53 @@ msgstr "?empty?"
 msgid "Maps_training_emblem"
 msgstr "?empty?"
 
+msgid "attachment/Aerial_Advance"
+msgstr "Aerial Advance"
+
+msgid "attachment/Aerial_Advance/Cus_244_BP21_GB_Browning"
+msgstr "Browning M1919"
+
+msgid "attachment/Aerial_Advance/Cus_244_BP21_GB_Browning/description"
+msgstr ""
+"A dependable workhorse, the M1919 could be turned skyward to fill the air "
+"with suppressive fire against low-flying aircraft."
+
+msgid "attachment/Aerial_Advance/Cus_245_BP21_GB_Radar"
+msgstr "Mounted Radar"
+
+msgid "attachment/Aerial_Advance/Cus_246_BP21_GB_TypeF"
+msgstr "Type F Container"
+
+msgid "attachment/Aerial_Advance/Cus_247_BP21_GB_MarkI"
+msgstr "Mark I Container"
+
+msgid "attachment/Aerial_Advance/Cus_248_BP21_GB_MarkV"
+msgstr "Sten SMG Mk. V"
+
+msgid "attachment/Air_Defense_Suite"
+msgstr "Air Defense Suite"
+
+msgid "attachment/Air_Defense_Suite/Cus_249_BP21_J_Machinegun"
+msgstr "Type 92 HMG"
+
+msgid "attachment/Air_Defense_Suite/Cus_249_BP21_J_Machinegun/description"
+msgstr ""
+"Reliable and hard-hitting, the Type 92 earned the nickname \"the "
+"woodpecker\" for its distinctive firing sound. Effective against both ground"
+" and air targets, it was a formidable support weapon."
+
+msgid "attachment/Air_Defense_Suite/Cus_250_BP21_J_Searchlight"
+msgstr "Searchlight Comparator"
+
+msgid "attachment/Air_Defense_Suite/Cus_251_BP21_J_Cannon"
+msgstr "Type 98 Machine Cannon"
+
+msgid "attachment/Air_Defense_Suite/Cus_252_BP21_J_Wire"
+msgstr "Fortification Kit"
+
+msgid "attachment/Air_Defense_Suite/Cus_253_BP21_J_Machinegun"
+msgstr "Type 11 LMG"
+
 msgid "attachment/ArmiesA"
 msgstr "2.0 Toolkit"
 
@@ -231,6 +278,29 @@ msgstr "Family Supplies"
 msgid "attachment/Mafia_Tommys_story/Cus_184_BP19_RacingKit"
 msgstr "Hard \"Fair Play\""
 
+msgid "attachment/Power_Surge"
+msgstr "Power Surge"
+
+msgid "attachment/Power_Surge/Cus_264_WT_Rangefinder"
+msgstr "Laser Rangefinder"
+
+msgid "attachment/Power_Surge/Cus_265_WT_Gun"
+msgstr "Plasma Launcher"
+
+msgid "attachment/Power_Surge/Cus_266_WT_Battery"
+msgstr "Power Blocks"
+
+msgid "attachment/Power_Surge/Cus_267_WT_Trap"
+msgstr "Plasma Trap"
+
+msgid "attachment/Power_Surge/Cus_267_WT_Trap/description"
+msgstr ""
+"This trap's plasma charge feeds off electromagnetic emissions from nearby "
+"systems, growing in intensity and lethality with every Sentinel destroyed."
+
+msgid "attachment/Power_Surge/Cus_268_WT_Generator"
+msgstr "Electric Generator"
+
 msgid "attachment/Quartermaster_s_Cache"
 msgstr "Quartermaster's Cache"
 
@@ -295,6 +365,29 @@ msgstr "Festival Anchor"
 
 msgid "attachment/River_Race_Revelry/Cus_228_DB_Boat"
 msgstr "Tribute Boat"
+
+msgid "attachment/Search_and_Destroy"
+msgstr "Search and Destroy"
+
+msgid "attachment/Search_and_Destroy/Cus_254_BP21_R_Machinegun"
+msgstr "SG-43 Goryunov"
+
+msgid "attachment/Search_and_Destroy/Cus_254_BP21_R_Machinegun/description"
+msgstr ""
+"A rugged workhorse that became a mainstay of mid-century fire support, this "
+"belt-fed machine gun delivered sustained fire with unfaltering reliability."
+
+msgid "attachment/Search_and_Destroy/Cus_255_BP21_R_Locator"
+msgstr "SON-4 Radar"
+
+msgid "attachment/Search_and_Destroy/Cus_256_BP21_R_Machinegun"
+msgstr "DShK obr.1938"
+
+msgid "attachment/Search_and_Destroy/Cus_257_BP21_R_Minethrower"
+msgstr "PM-43"
+
+msgid "attachment/Search_and_Destroy/Cus_258_BP21_R_Ammunition"
+msgstr "RPG-2"
 
 msgid "attachment/Traditional_Toys"
 msgstr "Traditional Toys"
@@ -516,6 +609,30 @@ msgstr "Parade Puppet"
 msgid "attachment/celestial_flame/Cus_174_Lunar_Tree"
 msgstr "Citrus Tree"
 
+msgid "attachment/covert_operations"
+msgstr "Covert Operations"
+
+msgid "attachment/covert_operations/Cus_279_PM3_Locator"
+msgstr "Tactical Field Antenna"
+
+msgid "attachment/covert_operations/Cus_279_PM3_Locator/description"
+msgstr ""
+"In hostile territory, isolation can be as dangerous as detection. This "
+"portable field antenna keeps operators connected when conventional "
+"infrastructure is not an option."
+
+msgid "attachment/covert_operations/Cus_280_PM3_Laser"
+msgstr "Laser Target Designator"
+
+msgid "attachment/covert_operations/Cus_281_PM3_Rifle"
+msgstr "Night Vision Rifle Kit"
+
+msgid "attachment/covert_operations/Cus_282_PM3_ATGW"
+msgstr "Vigilant Missile Loadout"
+
+msgid "attachment/covert_operations/Cus_283_PM3_M47"
+msgstr "M47 Dragon"
+
 msgid "attachment/dragon_vanguard"
 msgstr "Dragon Vanguard"
 
@@ -676,6 +793,12 @@ msgstr "Thunder and Lightning"
 msgid "attachment/gunslot/Ch70_gunsleeve_firegod"
 msgstr "Fire God"
 
+msgid "attachment/gunslot/Ch71_gunsleeve_inescapable"
+msgstr "Inescapable"
+
+msgid "attachment/gunslot/Cz46_gunsleeve_daring"
+msgstr "Daring"
+
 msgid "attachment/gunslot/F135_gunsleeve_woodpecker"
 msgstr "Woodpecker"
 
@@ -697,6 +820,9 @@ msgstr "Ghost"
 msgid "attachment/gunslot/G189_gunsleeve_killshot"
 msgstr "Kill Shot"
 
+msgid "attachment/gunslot/G197_gunsleeve_doppelganger"
+msgstr "Doppelgänger"
+
 msgid "attachment/gunslot/GB147_gunsleeve_concussion"
 msgstr "Concussion"
 
@@ -706,8 +832,14 @@ msgstr "Centipede"
 msgid "attachment/gunslot/GB158_gunsleeve_slipstream"
 msgstr "Slipstream"
 
+msgid "attachment/gunslot/It43_gunsleeve_ambush"
+msgstr "Ambush"
+
 msgid "attachment/gunslot/J52_gunsleeve_tempered"
 msgstr "Tempered"
+
+msgid "attachment/gunslot/J53_gunsleeve_skyfire"
+msgstr "Skyfire"
 
 msgid "attachment/gunslot/PL37_gunsleeve_knight"
 msgstr "Knight"
@@ -720,6 +852,9 @@ msgstr "Unstoppable"
 
 msgid "attachment/gunslot/S36_gunsleeve_nightmare"
 msgstr "Nightmare"
+
+msgid "attachment/gunslot/S41_gunsleeve_forestnymph"
+msgstr "Forest Nymph"
 
 msgid "attachment/gunslot/shortDescriptionSpecial"
 msgstr "Can be received as one of the vehicle's Elite Rewards."
@@ -3697,6 +3832,18 @@ msgstr "Fair Play"
 msgid "camouflage/bp2026_march_3/label"
 msgstr "Lost Heaven Noir"
 
+msgid "camouflage/bp2026_september_dune/label"
+msgstr "Dune Paint"
+
+msgid "camouflage/bp2026_september_lowland/label"
+msgstr "Lowland Veil"
+
+msgid "camouflage/bp2026_september_steppe/label"
+msgstr "Sand and Steppe"
+
+msgid "camouflage/bp2026_september_takir/label"
+msgstr "Takir"
+
 msgid "camouflage/bp8_auction_1_hull/description"
 msgstr "?empty?"
 
@@ -3927,6 +4074,9 @@ msgstr "?empty?"
 
 msgid "camouflage/bulat/label"
 msgstr "Damascus Steel"
+
+msgid "camouflage/bump_in_the_night/label"
+msgstr "Bump in the Night"
 
 msgid "camouflage/campeador/label"
 msgstr "Campeador"
@@ -4633,6 +4783,9 @@ msgstr "?empty?"
 
 msgid "camouflage/crimson_wind/label"
 msgstr "Crimson Wind"
+
+msgid "camouflage/cz_volumetric/label"
+msgstr "History's Forge"
 
 msgid "camouflage/czech/Cz_dust/description"
 msgstr ""
@@ -5670,6 +5823,9 @@ msgstr ""
 
 msgid "camouflage/hvoin/label"
 msgstr "Bad Ace Tanker"
+
+msgid "camouflage/it_volumetric/label"
+msgstr "Testudo"
 
 msgid "camouflage/italian_marathon_camo/description"
 msgstr ""
@@ -6745,6 +6901,9 @@ msgstr "?empty?"
 msgid "camouflage/onslaught_2025_azure_dragon_annual/label"
 msgstr "Rex Draconis"
 
+msgid "camouflage/onslaught_2026_phoenix/label"
+msgstr "Undying Flame"
+
 msgid "camouflage/onslaught_autumn_2025/description"
 msgstr "?empty?"
 
@@ -7001,6 +7160,9 @@ msgstr "Winter camouflage of a permanent style."
 
 msgid "camouflage/prem_camouflage_winter/label"
 msgstr "Black Widow winter"
+
+msgid "camouflage/pub_cn360_mid_autumn/label"
+msgstr "Rabbit and Goddess"
 
 msgid "camouflage/pub_cn360_welfare/label"
 msgstr "Champion's Laurels"
@@ -8911,6 +9073,12 @@ msgstr "Festival"
 msgid "camouflage/wot_heat_mission_reward/label"
 msgstr "HEAT of Battle"
 
+msgid "camouflage/wt26_ActionPotential/label"
+msgstr "Action Potential"
+
+msgid "camouflage/wt26_Unchained_Lightning/label"
+msgstr "Unchained Lightning"
+
 msgid "camouflage/yandex/description"
 msgstr "?empty?"
 
@@ -10342,6 +10510,30 @@ msgstr ""
 msgid "customization/tooltip/quests/comp7_5_3_ranks_65/condition"
 msgstr "Achieve the Iron rank in Season of the Jade Dragon in Onslaught mode."
 
+msgid "customization/tooltip/quests/comp7_6_1_ranks_11/condition"
+msgstr ""
+"Achieve the Legend rank in Season of the Azure Phoenix in Onslaught mode."
+
+msgid "customization/tooltip/quests/comp7_6_1_ranks_21/condition"
+msgstr ""
+"Achieve the Champion rank in Season of the Azure Phoenix in Onslaught mode."
+
+msgid "customization/tooltip/quests/comp7_6_1_ranks_35/condition"
+msgstr ""
+"Achieve the Gold rank in Season of the Azure Phoenix in Onslaught mode."
+
+msgid "customization/tooltip/quests/comp7_6_1_ranks_45/condition"
+msgstr ""
+"Achieve the Silver rank in Season of the Azure Phoenix in Onslaught mode."
+
+msgid "customization/tooltip/quests/comp7_6_1_ranks_55/condition"
+msgstr ""
+"Achieve the Bronze rank in Season of the Azure Phoenix in Onslaught mode."
+
+msgid "customization/tooltip/quests/comp7_6_1_ranks_65/condition"
+msgstr ""
+"Achieve the Iron rank in Season of the Azure Phoenix in Onslaught mode."
+
 msgid "customization/tooltip/quests/comp7_ranks_diamond_1/condition"
 msgstr "Achieve the Gold rank in Season of the Griffin in Onslaught mode."
 
@@ -10386,6 +10578,15 @@ msgstr "Cause 225,000 HP of damage in Onslaught."
 
 msgid "customization/tooltip/quests/crushing_damage_1120_3/condition"
 msgstr "Cause 550,000 HP of damage in Onslaught."
+
+msgid "customization/tooltip/quests/crushing_damage_1328_1/condition"
+msgstr "Cause 25 000 HP of damage in Onslaught."
+
+msgid "customization/tooltip/quests/crushing_damage_1328_2/condition"
+msgstr "Cause 225 000 HP of damage in Onslaught."
+
+msgid "customization/tooltip/quests/crushing_damage_1328_3/condition"
+msgstr "Cause 550 000 HP of damage in Onslaught."
 
 msgid "customization/tooltip/quests/crushing_damage_648_1/condition"
 msgstr "Cause 25,000 HP of damage in Onslaught."
@@ -10495,6 +10696,21 @@ msgstr ""
 "Fight 50 Onslaught battles in a vehicle with the \"Rex Draconis (Azure)\" "
 "style."
 
+msgid ""
+"customization/tooltip/quests/demonstration_performance_1328_1/condition"
+msgstr ""
+"Fight 10 Onslaught battles in a vehicle with the Phoenix (Azure) style."
+
+msgid ""
+"customization/tooltip/quests/demonstration_performance_1328_2/condition"
+msgstr ""
+"Fight 25 Onslaught battles in a vehicle with the Phoenix (Azure) style."
+
+msgid ""
+"customization/tooltip/quests/demonstration_performance_1328_3/condition"
+msgstr ""
+"Fight 50 Onslaught battles in a vehicle with the Phoenix (Azure) style."
+
 msgid "customization/tooltip/quests/demonstration_performance_648_1/condition"
 msgstr "Fight 10 Onslaught battles in a vehicle with the Wing and Claw style."
 
@@ -10603,6 +10819,15 @@ msgstr "Destroy 150 enemy vehicles in Onslaught."
 msgid "customization/tooltip/quests/destroyed_vehicles_1120_3/condition"
 msgstr "Destroy 350 enemy vehicles in Onslaught."
 
+msgid "customization/tooltip/quests/destroyed_vehicles_1328_1/condition"
+msgstr "Destroy 15 enemy vehicles in Onslaught."
+
+msgid "customization/tooltip/quests/destroyed_vehicles_1328_2/condition"
+msgstr "Destroy 150 enemy vehicles in Onslaught."
+
+msgid "customization/tooltip/quests/destroyed_vehicles_1328_3/condition"
+msgstr "Destroy 350 enemy vehicles in Onslaught."
+
 msgid "customization/tooltip/quests/destroyed_vehicles_648_1/condition"
 msgstr "Destroy 15 enemy vehicles in Onslaught."
 
@@ -10702,6 +10927,9 @@ msgstr "Win 25 battles in a 2-player Platoon in Onslaught."
 msgid "customization/tooltip/quests/early_bird_1120/condition"
 msgstr "Be the first to destroy an enemy vehicle in Onslaught 10 times."
 
+msgid "customization/tooltip/quests/early_bird_1328/condition"
+msgstr "Be the first to destroy an enemy vehicle in Onslaught 10 times."
+
 msgid "customization/tooltip/quests/exhibition_performance_1179_1/condition"
 msgstr ""
 "Fight 10 Onslaught battles in a vehicle with the \"Rex Draconis (Crimson)\" "
@@ -10741,7 +10969,13 @@ msgstr "Spot or destroy 500 enemy vehicles in Onslaught."
 msgid "customization/tooltip/quests/flaming_twins_1120/condition"
 msgstr "Win 25 battles in a 2-player Platoon in Onslaught."
 
+msgid "customization/tooltip/quests/flaming_twins_1328/condition"
+msgstr "Win 25 battles in a 2-player Platoon in Onslaught."
+
 msgid "customization/tooltip/quests/gimme_more_1120/condition"
+msgstr "Spot or destroy 500 enemy vehicles in Onslaught."
+
+msgid "customization/tooltip/quests/gimme_more_1328/condition"
 msgstr "Spot or destroy 500 enemy vehicles in Onslaught."
 
 msgid "customization/tooltip/quests/going_to_circle_1026_1/condition"
@@ -10769,6 +11003,15 @@ msgid "customization/tooltip/quests/going_to_circle_1120_2/condition"
 msgstr "Earn a total of 500 base capture/defense points in Onslaught."
 
 msgid "customization/tooltip/quests/going_to_circle_1120_3/condition"
+msgstr "Earn a total of 750 base capture/defense points in Onslaught."
+
+msgid "customization/tooltip/quests/going_to_circle_1328_1/condition"
+msgstr "Earn a total of 250 base capture/defense points in Onslaught."
+
+msgid "customization/tooltip/quests/going_to_circle_1328_2/condition"
+msgstr "Earn a total of 500 base capture/defense points in Onslaught."
+
+msgid "customization/tooltip/quests/going_to_circle_1328_3/condition"
 msgstr "Earn a total of 750 base capture/defense points in Onslaught."
 
 msgid "customization/tooltip/quests/going_to_circle_648_1/condition"
@@ -10889,6 +11132,9 @@ msgstr ""
 msgid "customization/tooltip/quests/one_man_army_1120/condition"
 msgstr "Stand alone against at least 3 enemy vehicles in Onslaught and win."
 
+msgid "customization/tooltip/quests/one_man_army_1328/condition"
+msgstr "Stand alone against at least 3 enemy vehicles in Onslaught and win."
+
 msgid "customization/tooltip/quests/or"
 msgstr "or"
 
@@ -10935,6 +11181,11 @@ msgstr ""
 "Be the top player on your team by Prestige Points earned in Onslaught 50 "
 "times."
 
+msgid "customization/tooltip/quests/prestige_7v7_1328/condition"
+msgstr ""
+"Be the top player on your team by Prestige Points earned in Onslaught 50 "
+"times."
+
 msgid "customization/tooltip/quests/prestige_7v7_836/condition"
 msgstr ""
 "Be the top player on your team by Prestige Points earned in Onslaught 50 "
@@ -10962,6 +11213,11 @@ msgid "customization/tooltip/quests/progressBig"
 msgstr "Completed: "
 
 msgid "customization/tooltip/quests/quicksilver_1120/condition"
+msgstr ""
+"Win an Onslaught battle by destroying all enemy vehicles in under 150 "
+"seconds."
+
+msgid "customization/tooltip/quests/quicksilver_1328/condition"
 msgstr ""
 "Win an Onslaught battle by destroying all enemy vehicles in under 150 "
 "seconds."
@@ -10994,6 +11250,9 @@ msgid "customization/tooltip/quests/rush_775/condition"
 msgstr "Destroy 5 enemy vehicles in one battle in Onslaught."
 
 msgid "customization/tooltip/quests/scorched_earth_1120/condition"
+msgstr "Destroy 5 enemy vehicles in one battle in Onslaught."
+
+msgid "customization/tooltip/quests/scorched_earth_1328/condition"
 msgstr "Destroy 5 enemy vehicles in one battle in Onslaught."
 
 msgid "customization/tooltip/quests/second_to_none_1179/condition"
@@ -11136,6 +11395,21 @@ msgstr ""
 "includes captures by both the player and their teammates."
 
 msgid "customization/tooltip/quests/tactical_advantage_1243_3/condition"
+msgstr ""
+"Capture a total of 375 Points of Interest as a team in Onslaught. This "
+"includes captures by both the player and their teammates."
+
+msgid "customization/tooltip/quests/tactical_advantage_1328_1/condition"
+msgstr ""
+"Capture a total of 15 Points of Interest as a team in Onslaught. This "
+"includes captures by both the player and their teammates."
+
+msgid "customization/tooltip/quests/tactical_advantage_1328_2/condition"
+msgstr ""
+"Capture a total of 150 Points of Interest as a team in Onslaught. This "
+"includes captures by both the player and their teammates."
+
+msgid "customization/tooltip/quests/tactical_advantage_1328_3/condition"
 msgstr ""
 "Capture a total of 375 Points of Interest as a team in Onslaught. This "
 "includes captures by both the player and their teammates."
@@ -17296,6 +17570,24 @@ msgstr "Welcome to Lost Heaven"
 msgid "inscription/special/special_867"
 msgstr "Bóbr, jakie bydlę!"
 
+msgid "inscription/special/special_868"
+msgstr "Perfect Partners"
+
+msgid "inscription/special/special_869"
+msgstr "Opening Gambit"
+
+msgid "inscription/special/special_870"
+msgstr "Ace High"
+
+msgid "inscription/special/special_871"
+msgstr "En Garde!"
+
+msgid "inscription/special/special_872"
+msgstr "Let It Burn"
+
+msgid "inscription/special/special_873"
+msgstr "Dust to Dust"
+
 msgid "inscription/special/special_874"
 msgstr "Crab Rangoon"
 
@@ -17308,8 +17600,17 @@ msgstr "\"Totally\" Safe"
 msgid "inscription/special/special_877"
 msgstr "Boomer"
 
+msgid "inscription/special/special_878"
+msgstr "You're in My Sights"
+
 msgid "inscription/special/special_880"
 msgstr "OLS Autumn 2026"
+
+msgid "inscription/special/special_884"
+msgstr "Danger! High Voltage"
+
+msgid "inscription/special/special_885"
+msgstr "Feel the Power"
 
 msgid "inscription/special/special_90"
 msgstr "Grand Finals 2017, Moscow"
@@ -21341,14 +21642,32 @@ msgstr "Gnasher"
 msgid "projection_decals/special/projection_decal_1082"
 msgstr "Jerboa Zone"
 
+msgid "projection_decals/special/projection_decal_1083"
+msgstr "Closer Than They Think"
+
+msgid "projection_decals/special/projection_decal_1084"
+msgstr "Predatory Nature"
+
+msgid "projection_decals/special/projection_decal_1085"
+msgstr "Lunar Hop"
+
 msgid "projection_decals/special/projection_decal_1086"
 msgstr "Tiger Stripes"
+
+msgid "projection_decals/special/projection_decal_1089"
+msgstr "Union Triwolf"
 
 msgid "projection_decals/special/projection_decal_109"
 msgstr "Global Map"
 
 msgid "projection_decals/special/projection_decal_109/description"
 msgstr "My plans for the evening: maps, landings, two provinces."
+
+msgid "projection_decals/special/projection_decal_1090"
+msgstr "Albion Triwolf"
+
+msgid "projection_decals/special/projection_decal_1091"
+msgstr "Dawn Triwolf"
 
 msgid "projection_decals/special/projection_decal_1092"
 msgstr "Fierce Firefly"
@@ -21395,6 +21714,21 @@ msgid "projection_decals/special/projection_decal_111/description"
 msgstr ""
 "Awarded to members of the top clan in the Metal Wars event on the Global "
 "Map."
+
+msgid "projection_decals/special/projection_decal_1110"
+msgstr "Cortex"
+
+msgid "projection_decals/special/projection_decal_1111"
+msgstr "Chaser"
+
+msgid "projection_decals/special/projection_decal_1112"
+msgstr "Grounding Fist"
+
+msgid "projection_decals/special/projection_decal_1113"
+msgstr "Electric Mind"
+
+msgid "projection_decals/special/projection_decal_1114"
+msgstr "Green Ghost"
 
 msgid "projection_decals/special/projection_decal_112"
 msgstr "Metal Wars Top 10"
@@ -24948,6 +25282,45 @@ msgstr "Pioneer of Destruction"
 msgid "questProgress/cust_progress_1243_9"
 msgstr "Still Alive"
 
+msgid "questProgress/cust_progress_1328_1"
+msgstr "?empty?"
+
+msgid "questProgress/cust_progress_1328_10"
+msgstr "En Garde!"
+
+msgid "questProgress/cust_progress_1328_11"
+msgstr "7v7"
+
+msgid "questProgress/cust_progress_1328_12"
+msgstr "Let It Burn"
+
+msgid "questProgress/cust_progress_1328_13"
+msgstr "Dust to Dust"
+
+msgid "questProgress/cust_progress_1328_2"
+msgstr "Devastating Damage"
+
+msgid "questProgress/cust_progress_1328_3"
+msgstr "Exhibition Performance"
+
+msgid "questProgress/cust_progress_1328_4"
+msgstr "Into the Cap Circle"
+
+msgid "questProgress/cust_progress_1328_5"
+msgstr "Tactical Advantage"
+
+msgid "questProgress/cust_progress_1328_6"
+msgstr "Till We Meet Again"
+
+msgid "questProgress/cust_progress_1328_7"
+msgstr "Perfect Partners"
+
+msgid "questProgress/cust_progress_1328_8"
+msgstr "Opening Gambit"
+
+msgid "questProgress/cust_progress_1328_9"
+msgstr "Ace High"
+
 msgid "questProgress/cust_progress_648_1"
 msgstr "?empty?"
 
@@ -25577,6 +25950,9 @@ msgstr "Order and Progress"
 
 msgid "repaint/bts_marathon_t9"
 msgstr "Plated Armor"
+
+msgid "repaint/bump_in_the_night"
+msgstr "Bump in the Night"
 
 msgid "repaint/campeador"
 msgstr "Campeador"
@@ -26600,6 +26976,12 @@ msgstr "Wormrider"
 
 msgid "repaint/wot_fest_2019"
 msgstr "Festival"
+
+msgid "repaint/wt26_ActionPotential"
+msgstr "Action Potential"
+
+msgid "repaint/wt26_Unchained_Lightning"
+msgstr "Unchained Lightning"
 
 msgid "repaint/yandex"
 msgstr "Snowfall"
@@ -28170,6 +28552,26 @@ msgstr ""
 "yet, ever since, my mind has kept wandering back to those long, harsh "
 "winters. You can leave the north, but the north never leaves you.\""
 
+msgid "special_style/Ch48_BZ_75_OSD_3Dst_1"
+msgstr "Fireborn: Silver"
+
+msgid "special_style/Ch48_BZ_75_OSD_3Dst_2"
+msgstr "Fireborn: Gold"
+
+msgid "special_style/Ch48_BZ_75_OSD_3Dst_3"
+msgstr "Fireborn: Champion"
+
+msgid "special_style/Ch48_BZ_75_OSD_3Dst_4"
+msgstr "Fireborn: Legend"
+
+msgid "special_style/Ch48_BZ_75_OSD_3Dst_desc/long"
+msgstr ""
+"\"I lay still, watching the plume of smoke rise far above. Black wisps wove higher than any salvo, embers threading the sky before fading. The only proof of my defeat was in the ashes that coated the battlefield—gray and formless, inert and final. Yet some still smoldered with a bright heat that defied their lifelessness. Even here, in the wake of destruction, a spark endured.\n"
+"\n"
+"I realized then that the end of me is where I begin.\n"
+"\n"
+"For how can you rise if you have not burned?\""
+
 msgid "special_style/Ch52_WZ_122_6_F3_GMIII_IV_3DSt"
 msgstr "Highlander"
 
@@ -29007,6 +29409,14 @@ msgstr ""
 "\"Alright, listen up. This here's Götterfaust—the so-called Fist of the Gods. Get a load of that reinforced armor, those twin guns that could drop a Panzerhund without breaking a sweat... the enemy built this monster to end anyone who dared stand up to 'em. 'Cept the Resistance tore it right out from under their boots. It was supposed to keep the people on their knees, but here's the funny thing about monsters: point 'em in the right direction, and they don't give a damn who built 'em.\n"
 "\n"
 "They're playin' with fire. And I intend to pour some gasoline.\""
+
+msgid "special_style/G183_Fossa_VM_68_3Dst"
+msgstr "The Professional"
+
+msgid "special_style/G183_Fossa_VM_68_3Dst_desc/long"
+msgstr ""
+"Raids, secret missions, operations that aren't talked about...it always comes back. Not always unscathed, but always with results. A clean job leaves no trace: no clues, no witnesses, no evidence. But the machine remembers. Its armor bears hundreds of scratches, chips, and marks from enemy shells, and only a few know where and when it got them.\n"
+"Reports don't mention the Fossa. Its operations vanish into the archives under the label \"Top Secret.\" All that remains are the bare statistics—failed missions: 0."
 
 msgid "special_style/G191_StuG_IIIF_AF_3Dst"
 msgstr "Team-Kabasan Friendly Match"
@@ -32306,6 +32716,69 @@ msgstr ""
 "\n"
 "Tommy Angelo never imagined himself living a life like this, but working for Don Salieri pays handsomely and promises a path out of obscurity. The only question is: what will it cost him in the end?"
 
+msgid "special_style/bp2026_september_dune"
+msgstr "Dune Paint"
+
+msgid "special_style/bp2026_september_dune_desc"
+msgstr "An improvised all-season style for blending into sandy flatlands."
+
+msgid "special_style/bp2026_september_dune_desc/long"
+msgstr ""
+"\"For an expedition across miles of nothing but salt flats and wind-blown "
+"dunes, our armour sticks out like a sore thumb. More like a brass band in a "
+"library, actually. Trouble is, me and the crew haven't exactly got much to "
+"work with out here in the \"field\"—if you can call it that. Still, if "
+"there's one thing life as a tanker has taught me, it's to keep calm, carry "
+"on, and make do. Well, that's three things, but never mind. Point is, I got "
+"hold of some leftover paint and did a halfway decent job, all things "
+"considered.\""
+
+msgid "special_style/bp2026_september_lowland"
+msgstr "Lowland Veil"
+
+msgid "special_style/bp2026_september_lowland_desc"
+msgstr "A rugged all-season style for effective cover in barren climes."
+
+msgid "special_style/bp2026_september_lowland_desc/long"
+msgstr ""
+"\"The biting sands stretch endlessly ahead, raw and alien. A world away from"
+" the powdery white beaches of my youth in Okinawa. Grains scrape against the"
+" hull with every gust, constantly abrading the hastily painted camouflage. "
+"Even sealed inside, I can taste the dust. We lurch over another unseen "
+"ridge, suspension groaning in protest. I glance at the map again, though it "
+"offers little guidance; the horizon remains stubbornly featureless, as if "
+"the land itself refuses to acknowledge our presence. Even so, I check the "
+"scope again. Empty. Always empty, until it isn't.\""
+
+msgid "special_style/bp2026_september_steppe"
+msgstr "Sand and Steppe"
+
+msgid "special_style/bp2026_september_steppe_desc"
+msgstr ""
+"An authentic all-season style for mimicking variable battlefield terrain."
+
+msgid "special_style/bp2026_september_steppe_desc/long"
+msgstr ""
+"\"The terrain here still confuses me. It feels strangely empty of water, even with the sea so near. One moment it is dry steppe, the next it breaks into saline flats and crusted ground. It could be quite beautiful under different circumstances, if I were not the one responsible for traversing it...\n"
+"\n"
+"With little time for thoughts of elegance, I brushed that notion aside and applied camouflage directly onto the starkly exposed hull of my armor: rough, patchy shapes meant to mimic the land's muted palette. It will have to do.\""
+
+msgid "special_style/bp2026_september_takir"
+msgstr "Takir"
+
+msgid "special_style/bp2026_september_takir_desc"
+msgstr "A tactical all-season style, well-suited to exposed plains."
+
+msgid "special_style/bp2026_september_takir_desc/long"
+msgstr ""
+"\"This land offers little cover. The sand stretches for kilometers, broken "
+"only by patches of takir. The ground here cannot be trusted; what appears "
+"solid often is not. Our convoy stands out, and camouflage intended for "
+"forests and fields has no place here. Without proper supplies, we must use "
+"what we have. Applied carefully, a small amount of paint is enough to dull "
+"our outline. It is not perfect, but it will be sufficient—it needs only to "
+"make us harder to see than those who are looking for us.\""
+
 msgid "special_style/bp8_auction_1"
 msgstr "Emperor's Wrath"
 
@@ -32747,6 +33220,23 @@ msgstr ""
 
 msgid "special_style/bulat"
 msgstr "Damascus Steel"
+
+msgid "special_style/bump_in_the_night"
+msgstr "Bump in the Night"
+
+msgid "special_style/bump_in_the_night_desc"
+msgstr "Embrace the Halloween spirit in this spectral all-season style."
+
+msgid "special_style/bump_in_the_night_desc/long"
+msgstr ""
+"Was that wind in the trees, or the clatter of steel?\n"
+"Could there be something... else out there?\n"
+"Each shadow conceals what I hope isn't real,\n"
+"As I peer through my sights with care.\n"
+"If a phantom appeared, I admit I'd be scared\n"
+"As it hovered 'neath the cold moon's light,\n"
+"But a tank in the dark is a terror compared\n"
+"To the things that go bump in the night!"
 
 msgid "special_style/campeador"
 msgstr "Campeador"
@@ -33527,6 +34017,26 @@ msgid "special_style/crimson_wind_desc/long"
 msgstr ""
 "They speak of a place where the wind turned red—where the earth drank deep, and the leaves became embers in the fading light. None saw the samurai pass. Yet when the wind stirs, the whisper of his blade still cuts the silence.\n"
 "So the elders murmur, and the scrolls recall—a silent warrior painted in fading ink, his armor dulled by time, his name lost to history. His battle lies buried, his tale near-forgotten... yet his vow endures. For not in the name of glory did he draw his sword, but of duty unspoken and honor undying. When the wind rises, heed it well—the crimson wind still bears his oath."
+
+msgid "special_style/cz_volumetric"
+msgstr "History's Forge"
+
+msgid "special_style/cz_volumetric_desc"
+msgstr ""
+"An all-season style honoring the age-old art of crafting iron ore into "
+"instruments of war."
+
+msgid "special_style/cz_volumetric_desc/long"
+msgstr ""
+"From the forests of Bohemia to the peaks of the Tatras, these lands have "
+"long been a crucible of craftsmanship. Centuries ago, the clank of hammers "
+"on anvils echoed through medieval streets as smiths wrought the swords, "
+"axes, and spears that would write the story of their age in battle. Now, the"
+" sounds of industry are the roar of furnaces and the whir of machines that "
+"forge the hulking tanks of modern battlefields. The artisans of that bygone "
+"era would hardly recognize these mechanized war horses. But it was their "
+"ingenuity and dedication to their craft that paved the way for their "
+"creation."
 
 msgid "special_style/czech_style"
 msgstr "Establishment of Czechoslovakia"
@@ -34794,6 +35304,23 @@ msgstr ""
 "An all-season style made of ice and molybdenum. It was supposed to "
 "significantly enhance the vehicle's armor, but has not yet passed any "
 "trials."
+
+msgid "special_style/it_volumetric"
+msgstr "Testudo"
+
+msgid "special_style/it_volumetric_desc"
+msgstr "An all-season style inspired by the ingenuity of ancient warriors."
+
+msgid "special_style/it_volumetric_desc/long"
+msgstr ""
+"In the battles of ancient times, Roman legionaries would bear down on enemy "
+"positions in a formation known as the \"testudo\" (Latin for \"tortoise\"): "
+"raising their shields in a near-impenetrable wall, they created a moving "
+"fortress that would repel the attacks of their besieged foes. Two millennia "
+"later, as Italian tankers forge forward in a new kind of moving fortress "
+"built for the rigors of modern warfare, their machines' latticed armor harks"
+" back to the interlocking shields of their forebears. The battles may have "
+"changed, but the spirit of the ancient warriors remains."
 
 msgid "special_style/italian_marathion_01"
 msgstr "Italian Challenge"
@@ -36717,6 +37244,19 @@ msgstr "Rex Draconis (Crimson)"
 msgid "special_style/onslaught_2025_jade_dragon"
 msgstr "Rex Draconis (Jade)"
 
+msgid "special_style/onslaught_2026_phoenix"
+msgstr "Undying Flame"
+
+msgid "special_style/onslaught_2026_phoenix_desc/long"
+msgstr ""
+"From darkness, light. From ruin, hope. From ashes, fire. As surely as night "
+"gives way to day, so the firebird is reborn once more. The dying embers of "
+"its funeral pyre breathe and swell into raging flame, and the immortal "
+"Phoenix, brilliant scarlet and gold, soars to the skies in a blaze of "
+"incandescent majesty. So it always was, and so it always will be. Mortal "
+"empires will fall, and civilizations thought eternal will turn to dust. And "
+"the bird that conquered death will rise to conquer again."
+
 msgid "special_style/onslaught_autumn_2025_blue"
 msgstr "Iron Resolve"
 
@@ -37039,6 +37579,22 @@ msgstr ""
 "Unlike flags that are produced in unlimited quantities, military colors always exist as one unique piece. The Red Army started using them back in 1918. They were given to military units created by a government order as a symbol of honor, valor, and glory. To this day, colors are considered a military relic and are always guarded by personnel. Additionally, they must be present on the battlefield during combat.\n"
 "\n"
 "During World War II, the ritual of keeping the military colors gained special significance. In harsh battle conditions, a special color unit was created from distinguished soldiers to guard the colors, and the military unit received a special order. Losing the military colors was considered a crime. In this case, all commanders and those directly responsible were court-martialed, and the military unit was disbanded."
+
+msgid "special_style/pub_cn360_mid_autumn"
+msgstr "Rabbit and Goddess"
+
+msgid "special_style/pub_cn360_mid_autumn_desc"
+msgstr "Leap for the moon in this celestial all-season style."
+
+msgid "special_style/pub_cn360_mid_autumn_desc/long"
+msgstr ""
+"Three sages once took the guise of starving old men and wandered the earth "
+"in search of kindness. They came upon a fox, a monkey, and a rabbit, and "
+"begged each in turn for food. The fox and the monkey offered what they "
+"could, but the rabbit, having nothing of her own to give, leapt into the "
+"fire as a willing offering. Moved by her sacrifice, the sages revealed their"
+" true nature and stayed the flames. They carried her to the Moon Palace, "
+"where, it is said, she dwells beside the Moon Goddess, ever at her side."
 
 msgid "special_style/pub_cn360_welfare"
 msgstr "Champion's Laurels"
@@ -39314,6 +39870,36 @@ msgid "special_style/wot_heat_mission_reward_desc"
 msgstr ""
 "An exclusive all-season style celebrating the release of World of Tanks: "
 "HEAT."
+
+msgid "special_style/wt26_ActionPotential"
+msgstr "Action Potential"
+
+msgid "special_style/wt26_ActionPotential_desc"
+msgstr "?empty?"
+
+msgid "special_style/wt26_ActionPotential_desc/long"
+msgstr ""
+"An all-season style that can be earned in Waffenträger: Genesis 2026. "
+"Unbound by either conventional physics or moral considerations, von "
+"Krieger's experiments with thinking machines threaten life as we know it. "
+"The storms of the human mind—imperfect, irrational, but alive—will be "
+"superseded by the cool, indifferent current of an omniscient Electric "
+"Intelligence...unless the Harriers can stop him."
+
+msgid "special_style/wt26_Unchained_Lightning"
+msgstr "Unchained Lightning"
+
+msgid "special_style/wt26_Unchained_Lightning_desc"
+msgstr "?empty?"
+
+msgid "special_style/wt26_Unchained_Lightning_desc/long"
+msgstr ""
+"An all-season style that can be earned in Waffenträger: Genesis 2026. "
+"Unbound by either conventional physics or moral considerations, von "
+"Krieger's experiments with thinking machines threaten life as we know it. "
+"The storms of the human mind—imperfect, irrational, but alive—will be "
+"superseded by the cool, indifferent current of an omniscient Electric "
+"Intelligence...unless the Harriers can stop him."
 
 msgid "special_style/yandex"
 msgstr "Snowfall"

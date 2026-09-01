@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from future.utils import viewitems
 from vehicle_systems.tankStructure import TankPartNames
 
 def _getVisibleGunLength(appearance):
@@ -7,6 +9,8 @@ def _getVisibleGunLength(appearance):
 
 def getEffectSuffixForGunLength(rangeMap, appearance):
     length = _getVisibleGunLength(appearance)
-    for name, (low, high) in rangeMap.iteritems():
+    for name, (low, high) in viewitems(rangeMap):
         if low < length <= high:
             return name
+
+    return

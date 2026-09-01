@@ -46,81 +46,16 @@
 				</slots>
 			</block>
 			<block>
-				<class>ContextGetSelf</class>
-				<id>ContextGetSelf_1</id>
-				<params>
-					<param>
-						CGFGameObjectContext
-						<name>Context Name</name>
-						<type>StringT</type>
-					</param>
-					<param>
-						getSelf
-						<name>Member Name</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots/>
+				<class>GameObjectToVehicle</class>
+				<id>GameObjectToVehicle_2</id>
 			</block>
 			<block>
-				<class>Macro</class>
-				<id>Macro_2</id>
-				<params>
-					<param>
-						CustomizationVehicleEvents
-						<name>Macro Name</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots/>
+				<class>GetVehicleGameObject</class>
+				<id>GetVehicleGameObject_1</id>
 			</block>
 			<block>
 				<class>If</class>
 				<id>If_13</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
-				<class>SetVariable</class>
-				<id>SetVariable_3</id>
-				<buddy>Variable_5</buddy>
-				<params>
-					<param>
-						BoolT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>value</name>
-						<const>\false\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>ComponentMethod</class>
-				<id>ComponentMethod_12</id>
-				<params>
-					<param>
-						Sequence.start
-						<name>Component Type</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>ComponentMethod</class>
-				<id>ComponentMethod_17</id>
-				<params>
-					<param>
-						Sequence.stop
-						<name>Component Type</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>SetVariable</class>
@@ -142,18 +77,6 @@
 			</block>
 			<block>
 				<class>ComponentMethod</class>
-				<id>ComponentMethod_13</id>
-				<params>
-					<param>
-						Sequence.start
-						<name>Component Type</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>ComponentMethod</class>
 				<id>ComponentMethod_15</id>
 				<params>
 					<param>
@@ -162,7 +85,17 @@
 						<type>StringT</type>
 					</param>
 				</params>
-				<slots/>
+			</block>
+			<block>
+				<class>ComponentMethod</class>
+				<id>ComponentMethod_13</id>
+				<params>
+					<param>
+						Sequence.start
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
 			</block>
 			<block>
 				<class>GetComponentProperty</class>
@@ -174,7 +107,6 @@
 						<type>StringT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>Timer</class>
@@ -186,7 +118,46 @@
 						<type>IntT</type>
 					</param>
 				</params>
-				<slots/>
+			</block>
+			<block>
+				<class>ComponentMethod</class>
+				<id>ComponentMethod_17</id>
+				<params>
+					<param>
+						Sequence.stop
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>ComponentMethod</class>
+				<id>ComponentMethod_12</id>
+				<params>
+					<param>
+						Sequence.start
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>SetVariable</class>
+				<id>SetVariable_3</id>
+				<buddy>Variable_5</buddy>
+				<params>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>value</name>
+						<const>\false\</const>
+					</slot>
+				</slots>
 			</block>
 			<block>
 				<class>GetVariable</class>
@@ -199,33 +170,37 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
-				<class>FindFirstNode</class>
-				<id>FindFirstNode_6</id>
-				<params/>
-				<slots>
-					<slot>
-						<name>name</name>
-						<const>\idle\</const>
-					</slot>
-					<slot>
-						<name>includingInactive</name>
-						<const>\false\</const>
-					</slot>
-				</slots>
+				<class>ContextGetSelf</class>
+				<id>ContextGetSelf_1</id>
+				<params>
+					<param>
+						CGFGameObjectContext
+						<name>Context Name</name>
+						<type>StringT</type>
+					</param>
+					<param>
+						getSelf
+						<name>Member Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
 			</block>
 			<block>
-				<class>GameObjectToVehicle</class>
-				<id>GameObjectToVehicle_2</id>
-				<params/>
-				<slots/>
+				<class>Macro</class>
+				<id>Macro_2</id>
+				<params>
+					<param>
+						CustomizationVehicleEvents
+						<name>Macro Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
 			</block>
 			<block>
 				<class>FindFirstNode</class>
 				<id>FindFirstNode_7</id>
-				<params/>
 				<slots>
 					<slot>
 						<name>name</name>
@@ -240,7 +215,20 @@
 			<block>
 				<class>FindFirstNode</class>
 				<id>FindFirstNode_8</id>
-				<params/>
+				<slots>
+					<slot>
+						<name>name</name>
+						<const>\idle\</const>
+					</slot>
+					<slot>
+						<name>includingInactive</name>
+						<const>\false\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>FindFirstNode</class>
+				<id>FindFirstNode_6</id>
 				<slots>
 					<slot>
 						<name>name</name>
@@ -255,7 +243,6 @@
 			<block>
 				<class>FindFirstNode</class>
 				<id>FindFirstNode_10</id>
-				<params/>
 				<slots>
 					<slot>
 						<name>name</name>
@@ -267,19 +254,19 @@
 					</slot>
 				</slots>
 			</block>
-			<block>
-				<class>GetVehicleGameObject</class>
-				<id>GetVehicleGameObject_1</id>
-				<params/>
-				<slots/>
-			</block>
 		</blocks>
 		<connections>
 			<connection>
-				<from>GameObjectToVehicle_2</from>
-				<input>vehicle</input>
-				<to>Macro_2</to>
-				<output>vehicle</output>
+				<from>GetVehicleGameObject_1</from>
+				<input>gameObject</input>
+				<to>GameObjectToVehicle_2</to>
+				<output>vehicleObject</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>GetVehicleGameObject_1</to>
+				<output>value</output>
 			</connection>
 			<connection>
 				<from>Macro_2</from>
@@ -294,58 +281,22 @@
 				<output>onHitNoDamage</output>
 			</connection>
 			<connection>
+				<from>Macro_2</from>
+				<input>input</input>
+				<to>If_13</to>
+				<output>PrebattleHighlightStart</output>
+			</connection>
+			<connection>
 				<from>GetVariable_2</from>
 				<input>value</input>
 				<to>If_13</to>
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>ComponentMethod_17</from>
-				<input>input</input>
-				<to>SetVariable_3</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>SetVariable_3</from>
-				<input>in</input>
-				<to>ComponentMethod_12</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>FindFirstNode_6</from>
-				<input>gameObject</input>
-				<to>ComponentMethod_12</to>
-				<output>node</output>
-			</connection>
-			<connection>
-				<from>Timer_3</from>
-				<input>in</input>
-				<to>ComponentMethod_17</to>
-				<output>event0</output>
-			</connection>
-			<connection>
-				<from>FindFirstNode_10</from>
-				<input>gameObject</input>
-				<to>ComponentMethod_17</to>
-				<output>node</output>
-			</connection>
-			<connection>
 				<from>If_13</from>
 				<input>input</input>
 				<to>SetVariable_1</to>
 				<output>false</output>
-			</connection>
-			<connection>
-				<from>ComponentMethod_15</from>
-				<input>in</input>
-				<to>ComponentMethod_13</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>FindFirstNode_7</from>
-				<input>gameObject</input>
-				<to>ComponentMethod_13</to>
-				<output>node</output>
 			</connection>
 			<connection>
 				<from>SetVariable_1</from>
@@ -357,6 +308,18 @@
 				<from>FindFirstNode_8</from>
 				<input>gameObject</input>
 				<to>ComponentMethod_15</to>
+				<output>node</output>
+			</connection>
+			<connection>
+				<from>ComponentMethod_15</from>
+				<input>in</input>
+				<to>ComponentMethod_13</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>FindFirstNode_7</from>
+				<input>gameObject</input>
+				<to>ComponentMethod_13</to>
 				<output>node</output>
 			</connection>
 			<connection>
@@ -384,16 +347,40 @@
 				<output>duration</output>
 			</connection>
 			<connection>
-				<from>ContextGetSelf_1</from>
-				<input>gameObject</input>
-				<to>FindFirstNode_6</to>
-				<output>value</output>
+				<from>Timer_3</from>
+				<input>in</input>
+				<to>ComponentMethod_17</to>
+				<output>event0</output>
 			</connection>
 			<connection>
-				<from>GetVehicleGameObject_1</from>
+				<from>FindFirstNode_10</from>
 				<input>gameObject</input>
-				<to>GameObjectToVehicle_2</to>
-				<output>vehicleObject</output>
+				<to>ComponentMethod_17</to>
+				<output>node</output>
+			</connection>
+			<connection>
+				<from>SetVariable_3</from>
+				<input>in</input>
+				<to>ComponentMethod_12</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>FindFirstNode_6</from>
+				<input>gameObject</input>
+				<to>ComponentMethod_12</to>
+				<output>node</output>
+			</connection>
+			<connection>
+				<from>ComponentMethod_17</from>
+				<input>input</input>
+				<to>SetVariable_3</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>GameObjectToVehicle_2</from>
+				<input>vehicle</input>
+				<to>Macro_2</to>
+				<output>vehicle</output>
 			</connection>
 			<connection>
 				<from>ContextGetSelf_1</from>
@@ -410,13 +397,13 @@
 			<connection>
 				<from>ContextGetSelf_1</from>
 				<input>gameObject</input>
-				<to>FindFirstNode_10</to>
+				<to>FindFirstNode_6</to>
 				<output>value</output>
 			</connection>
 			<connection>
 				<from>ContextGetSelf_1</from>
 				<input>gameObject</input>
-				<to>GetVehicleGameObject_1</to>
+				<to>FindFirstNode_10</to>
 				<output>value</output>
 			</connection>
 		</connections>

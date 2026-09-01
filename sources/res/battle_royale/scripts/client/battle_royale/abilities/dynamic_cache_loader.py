@@ -1,3 +1,4 @@
+from __future__ import absolute_import, division
 import logging, BigWorld, NetworkComponents, Math, CGF, ResMgr
 from constants import IS_CLIENT
 from helpers import dependency

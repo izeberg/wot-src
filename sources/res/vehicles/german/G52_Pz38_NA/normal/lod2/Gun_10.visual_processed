@@ -38,7 +38,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>-0.012718 -0.051112 -0.783170</row3>
+							<row3>-0.011949 -0.043350 -1.502199</row3>
 						</transform>
 					</node>
 					<node>
@@ -74,12 +74,20 @@
 				0
 				<material>
 					<identifier>tank_guns_skinned</identifier>
-					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
 					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
+						diffuseMap
+						<Texture>vehicles/german/G52_Pz38_NA/Pz38_NA_guns_AM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/german/G52_Pz38_NA/Pz38_NA_guns_ANM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/german/G52_Pz38_NA/Pz38_NA_guns_GMM.dds</Texture>
 					</property>
 					<property>
 						excludeMaskAndAOMap
@@ -89,31 +97,15 @@
 						colorIdMap
 						<Texture>vehicles/german/G52_Pz38_NA/Pz38_NA_guns_ID.dds</Texture>
 					</property>
-					<property>
-						metallicGlossMap
-						<Texture>vehicles/german/G52_Pz38_NA/Pz38_NA_guns_GMM.dds</Texture>
-					</property>
-					<property>
-						normalMap
-						<Texture>vehicles/german/G52_Pz38_NA/Pz38_NA_guns_ANM.dds</Texture>
-					</property>
-					<property>
-						diffuseMap
-						<Texture>vehicles/german/G52_Pz38_NA/Pz38_NA_guns_AM.dds</Texture>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
 				</material>
-				<groupOrigin>0.000661 0.016077 -1.114809</groupOrigin>
+				<groupOrigin>0.000720 0.021791 -0.820758</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-0.463468 -0.149027 0.012782</min>
-		<max>0.464789 0.181182 2.216836</max>
+		<min>-0.464689 -0.144255 0.015677</min>
+		<max>0.466130 0.187838 1.625839</max>
 	</boundingBox>
-	<geometrySize>24220</geometrySize>
+	<geometrySize>19560</geometrySize>
 </root>

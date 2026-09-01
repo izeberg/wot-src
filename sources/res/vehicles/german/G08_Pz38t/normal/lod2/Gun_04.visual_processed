@@ -37,8 +37,8 @@
 						<transform>
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
-							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>0.000054 -0.002528 -1.527985</row3>
+							<row2>-0.000000 0.000000 1.000000</row2>
+							<row3>0.000054 -0.002528 -1.498276</row3>
 						</transform>
 					</node>
 					<node>
@@ -47,7 +47,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 -1.000000</row2>
-							<row3>0.000000 0.000000 -3.000000</row3>
+							<row3>-0.000000 0.000000 -3.000000</row3>
 						</transform>
 					</node>
 				</node>
@@ -68,8 +68,8 @@
 		<node>G_BlendBone</node>
 		<node>Gun_BlendBone</node>
 		<geometry>
-			<vertices>gun_04Shape3.vertices</vertices>
-			<primitive>gun_04Shape3.indices</primitive>
+			<vertices>gun_04_Shape.vertices</vertices>
+			<primitive>gun_04_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -77,10 +77,6 @@
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
-					</property>
 					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/german/G08_Pz38t/Pz38t_guns_AO.dds</Texture>
@@ -101,19 +97,15 @@
 						diffuseMap
 						<Texture>vehicles/german/G08_Pz38t/Pz38t_guns_AM.dds</Texture>
 					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
 				</material>
-				<groupOrigin>-0.000049 0.028587 -0.736091</groupOrigin>
+				<groupOrigin>-0.000049 0.028587 -0.755673</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-0.089167 -0.148557 -0.115819</min>
-		<max>0.089070 0.205730 1.588001</max>
+		<min>-0.089172 -0.148988 -0.115819</min>
+		<max>0.089074 0.206161 1.627166</max>
 	</boundingBox>
-	<geometrySize>16092</geometrySize>
+	<geometrySize>10716</geometrySize>
 </root>

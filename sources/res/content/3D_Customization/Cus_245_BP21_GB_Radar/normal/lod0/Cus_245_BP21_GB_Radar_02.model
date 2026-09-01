@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-0.315206 -0.050513 -0.056748</min>
+		<max>0.315206 0.162472 0.162689</max>
+	</visibilityBox>
+	<parent>content/3D_Customization/Cus_245_BP21_GB_Radar/normal/lod1/Cus_245_BP21_GB_Radar_02</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>content/3D_Customization/Cus_245_BP21_GB_Radar/normal/lod0/Cus_245_BP21_GB_Radar_02</nodefullVisual>
+	<tank>true</tank>
+</root>

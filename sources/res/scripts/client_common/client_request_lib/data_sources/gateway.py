@@ -91,8 +91,7 @@ class GatewayDataAccessor(base.BaseDataAccessor):
                         data = func(data)
                     if converters:
                         self._apply_converters(data, converters)
-                    callback(data, response.responseCode, response_code, headers)
-                    return
+                    return callback(data, response.responseCode, response_code, headers)
 
             if not callable(something):
                 return wrapped(something, func=None)
@@ -660,6 +659,30 @@ class GatewayDataAccessor(base.BaseDataAccessor):
         post_data.update(meta_info)
         return self._request_data(callback, url, method='POST', post_data=post_data)
 
+    def get_friend_balance(self, callback, spa_id):
+        url = '/friend_service/api/v1/friend_balance/'
+        params = {'friend_spa_id': int(spa_id)}
+        return self._request_data(callback, url, params, method='GET')
+
+    def get_friend_list(self, callback):
+        url = '/friend_service/api/v1/friends/list/'
+        return self._request_data(callback, url, method='GET')
+
+    def put_best_friend(self, callback, spa_id):
+        url = '/friend_service/api/v1/best_friends/set/'
+        data = {'friend_spa_id': int(spa_id)}
+        return self._request_data(callback, url, post_data=data, method='PUT')
+
+    def delete_best_friend(self, callback, spa_id):
+        url = '/friend_service/api/v1/best_friends/delete/'
+        data = {'friend_spa_id': int(spa_id)}
+        return self._request_data(callback, url, post_data=data, method='DELETE')
+
+    def post_gather_friend_ny_resources(self, callback, spa_id):
+        url = '/friend_service/api/v1/best_friends/gather/'
+        data = {'friend_spa_id': int(spa_id)}
+        return self._request_data(callback, url, post_data=data, method='POST')
+
     def get_uilogging_session(self, callback):
         return self._request_data(callback, '/uilogging/session', method='GET')
 
@@ -716,6 +739,8 @@ class GatewayDataAccessor(base.BaseDataAccessor):
     def __prepare_jwt_header(self, jwt_token):
         if jwt_token:
             return {'Authorization': ('Bearer {}').format(jwt_token)}
+        else:
+            return
 
     def get_best_replays(self, callback, jwt_token, **kwargs):
         url = '/api/v1/replays'

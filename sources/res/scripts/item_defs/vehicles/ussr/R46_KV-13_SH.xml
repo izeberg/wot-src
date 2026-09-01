@@ -4880,7 +4880,6 @@
 							<!--BW_String-->
 						</whileGunDamaged>
 					</shotDispersionFactors>
-					<multiGunEffects>shot_dualgun1_mainext_L shot_dualgun1_mainext_R</multiGunEffects>
 					<dualGun>
 						<chargeTime>2</chargeTime>
 						<shootImpulse>300</shootImpulse>
@@ -4935,6 +4934,9 @@
 						</armor_8>
 						<gun>40</gun>
 					</armor>
+					<prefabs>
+						<main>content/CGFPrefabs/Vehicle/guns/ussr/gun_100mm_S34_dualgun_SH.prefab</main>
+					</prefabs>
 					<models>
 						<undamaged>vehicles/russian/R46_KV-13_SH/normal/lod0/Gun_02.model</undamaged>
 						<destroyed>vehicles/russian/R46_KV-13_SH/crash/lod0/Gun_02.model</destroyed>
@@ -5114,6 +5116,7 @@
 					<shotOffset>-0.190000 0.000000 0.000000</shotOffset>
 					<multiGunState/>
 					<edgeByVisualModel>false</edgeByVisualModel>
+					<muzzleBrake>ANGLED</muzzleBrake>
 					<camouflage>
 						<tiling>
 							0.4 0.4 0.000000 0.000000
@@ -5307,7 +5310,6 @@
 							<!--BW_String-->
 						</whileGunDamaged>
 					</shotDispersionFactors>
-					<multiGunEffects>shot_dualgun1_mainext_L shot_dualgun1_mainext_R</multiGunEffects>
 					<dualGun>
 						<chargeTime>2</chargeTime>
 						<shootImpulse>300</shootImpulse>
@@ -5398,6 +5400,9 @@
 						</armor_17>
 						<gun>40</gun>
 					</armor>
+					<prefabs>
+						<main>content/CGFPrefabs/Vehicle/guns/ussr/gun_100mm_S34_dualgun_SH.prefab</main>
+					</prefabs>
 					<models>
 						<undamaged>vehicles/russian/R46_KV-13_SH/normal/lod0/Gun_04.model</undamaged>
 						<destroyed>vehicles/russian/R46_KV-13_SH/crash/lod0/Gun_04.model</destroyed>
@@ -5606,6 +5611,7 @@
 					<shotOffset>-0.184236 0.000003 -0.000000</shotOffset>
 					<multiGunState/>
 					<edgeByVisualModel>false</edgeByVisualModel>
+					<muzzleBrake>ANGLED</muzzleBrake>
 					<camouflage>
 						<tiling>
 							0.4 0.4 0.000000 0.000000
@@ -5761,6 +5767,7 @@
 					<shotOffset>-0.184000 0.000000 0.000000</shotOffset>
 					<multiGunState/>
 					<edgeByVisualModel>false</edgeByVisualModel>
+					<muzzleBrake>HORIZONTAL</muzzleBrake>
 					<camouflage>
 						<tiling>
 							0.445 0.445 0.000000 0.000000
@@ -5805,7 +5812,6 @@
 							<!--BW_String-->
 						</whileGunDamaged>
 					</shotDispersionFactors>
-					<multiGunEffects>shot_dualgun1_large_mb_L shot_dualgun1_large_mb_R</multiGunEffects>
 					<dualGun>
 						<chargeTime>2</chargeTime>
 						<shootImpulse>300</shootImpulse>
@@ -5899,6 +5905,9 @@
 						</armor_17>
 						<gun>40</gun>
 					</armor>
+					<prefabs>
+						<main>content/CGFPrefabs/Vehicle/guns/ussr/gun_107mm_ZiS-6_dualgun_SH.prefab</main>
+					</prefabs>
 					<models>
 						<undamaged>vehicles/russian/R46_KV-13_SH/normal/lod0/Gun_07.model</undamaged>
 						<destroyed>vehicles/russian/R46_KV-13_SH/crash/lod0/Gun_07.model</destroyed>
@@ -5950,6 +5959,7 @@
 						</customizableVehicleAreas>
 					</customization>
 					<edgeByVisualModel>false</edgeByVisualModel>
+					<muzzleBrake>HORIZONTAL</muzzleBrake>
 					<camouflage>
 						<tiling>
 							0.46 0.46 0.000000 0.000000
@@ -6136,7 +6146,6 @@
 							<!--BW_String-->
 						</whileGunDamaged>
 					</shotDispersionFactors>
-					<multiGunEffects>shot_dualgun1_mainext_L shot_dualgun1_mainext_R</multiGunEffects>
 					<dualGun>
 						<chargeTime>2</chargeTime>
 						<shootImpulse>300</shootImpulse>
@@ -6187,6 +6196,9 @@
 						</armor_7>
 						<gun>40</gun>
 					</armor>
+					<prefabs>
+						<main>content/CGFPrefabs/Vehicle/guns/ussr/gun_100mm_S34_dualgun_SH.prefab</main>
+					</prefabs>
 					<models>
 						<undamaged>vehicles/russian/R46_KV-13_SH/normal/lod0/Gun_08.model</undamaged>
 						<destroyed>vehicles/russian/R46_KV-13_SH/crash/lod0/Gun_08.model</destroyed>
@@ -6355,6 +6367,7 @@
 					<shotOffset>-0.143934 0.000002 -0.000000</shotOffset>
 					<multiGunState/>
 					<edgeByVisualModel>false</edgeByVisualModel>
+					<muzzleBrake>ANGLED</muzzleBrake>
 					<camouflage>
 						<tiling>
 							0.4 0.4 0.000000 0.000000
@@ -6399,7 +6412,6 @@
 							<!--BW_String-->
 						</whileGunDamaged>
 					</shotDispersionFactors>
-					<multiGunEffects>shot_dualgun1_large_mb_L shot_dualgun1_large_mb_R</multiGunEffects>
 					<dualGun>
 						<chargeTime>2</chargeTime>
 						<shootImpulse>300</shootImpulse>
@@ -6453,6 +6465,9 @@
 						</armor_7>
 						<gun>40</gun>
 					</armor>
+					<prefabs>
+						<main>content/CGFPrefabs/Vehicle/guns/ussr/gun_107mm_ZiS-6_dualgun_SH.prefab</main>
+					</prefabs>
 					<models>
 						<undamaged>vehicles/russian/R46_KV-13_SH/normal/lod0/Gun_10.model</undamaged>
 						<destroyed>vehicles/russian/R46_KV-13_SH/crash/lod0/Gun_10.model</destroyed>
@@ -6504,6 +6519,7 @@
 						</customizableVehicleAreas>
 					</customization>
 					<edgeByVisualModel>false</edgeByVisualModel>
+					<muzzleBrake>HORIZONTAL</muzzleBrake>
 					<camouflage>
 						<tiling>
 							0.46 0.46 0.000000 0.000000
@@ -6629,6 +6645,7 @@
 					<shotOffset>-0.144000 0.000000 0.000000</shotOffset>
 					<multiGunState/>
 					<edgeByVisualModel>false</edgeByVisualModel>
+					<muzzleBrake>HORIZONTAL</muzzleBrake>
 					<camouflage>
 						<tiling>
 							0.52 0.25 0.000000 0.000000

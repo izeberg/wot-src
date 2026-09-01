@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import constants
 from battle_royale.gui.constants import BattleRoyaleSubMode
 from gui.Scaleform.daapi.view.lobby.battle_queue.battle_queue import RandomQueueProvider

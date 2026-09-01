@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from battle_royale.gui.battle_control.controllers.progression_ctrl import IProgressionListener
 from Event import EventsSubscriber
 from gui.battle_control.view_components import IViewComponentsCtrlListener

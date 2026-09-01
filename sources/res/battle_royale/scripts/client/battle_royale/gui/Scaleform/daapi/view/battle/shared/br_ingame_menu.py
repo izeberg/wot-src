@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld
 from BWUtil import AsyncReturn
 from gui.battle_control import avatar_getter

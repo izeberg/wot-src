@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/german/G196_Versuchspanzer_57/normal/lod4/Turret_01</parent>
+	<extent>192.000000</extent>
+	<nodefullVisual>vehicles/german/G196_Versuchspanzer_57/normal/lod3/Turret_01</nodefullVisual>
+	<visibilityBox>
+		<min>-1.399996 -0.003896 -2.599999</min>
+		<max>1.400147 1.342917 1.573736</max>
+	</visibilityBox>
+</root>

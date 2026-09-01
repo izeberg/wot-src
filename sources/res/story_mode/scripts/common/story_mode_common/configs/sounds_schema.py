@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from dict2model import models
 from dict2model.schemas import Schema

@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from future.utils import viewvalues
 import BigWorld
 from battle_royale.gui.Scaleform.daapi.view.battle.shared.utils import getVehicleLevel
 from Event import EventsSubscriber
@@ -39,24 +41,24 @@ class ObserverPlayersPanel(IBattleFieldListener, IArenaVehiclesController, Battl
                 self.__sessionProvider.shared.viewPoints.selectVehicle(vehicleID)
         return
 
-    def updateVehiclesStats(self, updatedItems, arenaDP):
-        updated = False
-        for _, vStatsVO in updatedItems:
-            updated |= self.__updateStats(vStatsVO)
+    def updateVehiclesStats(self, updated, arenaDP):
+        isUpdated = False
+        for _, vStatsVO in updated:
+            isUpdated |= self.__updateStats(vStatsVO)
 
-        if updated:
+        if isUpdated:
             self.__panelUpdate()
 
     def invalidateVehicleStatus(self, flags, vInfoVO, arenaDP):
         if self.__updateInfo(vInfoVO):
             self.__panelUpdate()
 
-    def updateVehiclesInfo(self, updatedItems, arenaDP):
-        updated = False
-        for _, vInfoVO in updatedItems:
-            updated |= self.__updateInfo(vInfoVO)
+    def updateVehiclesInfo(self, updated, arenaDP):
+        isUpdated = False
+        for _, vInfoVO in updated:
+            isUpdated |= self.__updateInfo(vInfoVO)
 
-        if updated:
+        if isUpdated:
             self.__panelUpdate()
 
     def _populate(self):
@@ -152,7 +154,7 @@ class ObserverPlayersPanel(IBattleFieldListener, IArenaVehiclesController, Battl
         return updated
 
     def __panelUpdate(self):
-        outList = [ ((p['rank'], p['teamIndex'], not p['isCommander'], p['playerName']), self.__convertToUIVo(p)) for p in self.__playerList.itervalues()
+        outList = [ ((p['rank'], p['teamIndex'], not p['isCommander'], p['playerName']), self.__convertToUIVo(p)) for p in viewvalues(self.__playerList)
                   ]
         outList.sort()
         deadsIdx = next((idx for idx, item in enumerate(outList) if item[0][0] > 0 and not item[1]['isAlive']), -1)
@@ -160,7 +162,7 @@ class ObserverPlayersPanel(IBattleFieldListener, IArenaVehiclesController, Battl
 
     def __updateRanks(self, defeatedTeams):
         ranks = {team:rank + 1 for rank, team in enumerate(defeatedTeams)}
-        for player in self.__playerList.itervalues():
+        for player in viewvalues(self.__playerList):
             player['rank'] = ranks.get(player['teamIndex'], 0)
 
     def __getInitialPlayersList(self):
@@ -204,5 +206,5 @@ class ObserverPlayersPanel(IBattleFieldListener, IArenaVehiclesController, Battl
         self.as_setRespawnVisibilityS(False)
 
     def __updateTeamRespawns(self, teamsWithRespawn):
-        for player in self.__playerList.itervalues():
+        for player in viewvalues(self.__playerList):
             player['hasRespawn'] = player['teamIndex'] in teamsWithRespawn

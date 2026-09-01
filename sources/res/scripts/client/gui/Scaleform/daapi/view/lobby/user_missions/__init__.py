@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
 from gui.Scaleform.daapi.view.lobby.user_missions.user_missions_hub_container_view import UserMissionsHubContainerView
 from gui.Scaleform.daapi.view.lobby.user_missions.user_missions_hub_content_inject import UserMissionsHubContentInject

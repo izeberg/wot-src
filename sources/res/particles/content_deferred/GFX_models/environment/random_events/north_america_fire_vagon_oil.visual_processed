@@ -21,6 +21,10 @@
 				<material>
 					<identifier>fire</identifier>
 					<fx>shaders/custom/vector_animation_2.fx</fx>
+					<property>
+						g_enableEnvMultiplier
+						<Bool>true</Bool>
+					</property>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
 					<property>
@@ -65,7 +69,7 @@
 					</property>
 					<property>
 						lightMultipliers
-						<Vector4>2.000000 4.000000 1.000000 0.000000</Vector4>
+						<Vector4>2.439024 4.000000 1.000000 0.000000</Vector4>
 					</property>
 					<property>
 						opacity_UV_Distortion_Amount

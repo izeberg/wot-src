@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from future.utils import viewitems
 from comp7.gui import comp7_constants
 from comp7_core.gui import initCoreGuiTypes
 from comp7.gui.Scaleform import registerComp7Scaleform
@@ -273,7 +275,7 @@ class ClientComp7BattleMode(Comp7BattleMode):
         from constants import ARENA_BONUS_TYPE
         from gui.battle_results.reusable import ReusableInfoFactory
         for bonusType in (ARENA_BONUS_TYPE.TOURNAMENT_COMP7, ARENA_BONUS_TYPE.TRAINING_COMP7):
-            for key, infoCls in self._client_battleResultsReusables.iteritems():
+            for key, infoCls in viewitems(self._client_battleResultsReusables):
                 ReusableInfoFactory.addForBonusType(bonusType, key, infoCls)
 
     def registerAdditionalDynamicCache(self):

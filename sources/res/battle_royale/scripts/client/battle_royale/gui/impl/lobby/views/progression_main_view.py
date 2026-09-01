@@ -1,4 +1,6 @@
+from __future__ import absolute_import
 import typing
+from future.utils import viewvalues
 from battle_royale.gui.impl.gen.view_models.views.lobby.views.progression.progression_main_view_model import ProgressionMainViewModel, MainViews
 from battle_royale.gui.impl.lobby.views.progression_view import ProgressionView
 from battle_royale.gui.sounds_constants import GENERAL_SOUND_SPACE
@@ -61,7 +63,7 @@ class BattleRoyaleProgressionMainView(ViewImpl):
     def _finalize(self):
         if self.__viewType is not None:
             self.currentPresenter.finalize()
-        for presenter in self.__contentPresentersMap.itervalues():
+        for presenter in viewvalues(self.__contentPresentersMap):
             presenter.clear()
 
         self.__contentPresentersMap = None

@@ -3595,7 +3595,6 @@
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<turretYawLimits>-8 8</turretYawLimits>
-					<multiGunEffects>shot_dualgun_large_L shot_dualgun_large_R</multiGunEffects>
 					<dualGun>
 						<chargeTime>3</chargeTime>
 						<shootImpulse>200</shootImpulse>
@@ -3612,6 +3611,9 @@
 							<!--BW_String-->
 						</preChargeIndication>
 					</dualGun>
+					<prefabs>
+						<main>content/CGFPrefabs/Vehicle/guns/ussr/gun_122mm_cannon_M-30_1938_dualgun.prefab</main>
+					</prefabs>
 					<customizationSlots>
 						<slot>
 							<slotType>paint</slotType>

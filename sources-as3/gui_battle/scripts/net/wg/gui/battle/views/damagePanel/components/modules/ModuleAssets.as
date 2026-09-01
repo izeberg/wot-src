@@ -1,7 +1,6 @@
 package net.wg.gui.battle.views.damagePanel.components.modules
 {
    import fl.motion.easing.Cubic;
-   import flash.display.Bitmap;
    import flash.display.DisplayObject;
    import flash.display.MovieClip;
    import flash.display.Sprite;
@@ -47,9 +46,9 @@ package net.wg.gui.battle.views.damagePanel.components.modules
       
       private var _warningAnim:ModuleWarningAnim;
       
-      private var _critical:Bitmap;
+      private var _critical:Sprite;
       
-      private var _destroyed:Bitmap;
+      private var _destroyed:Sprite;
       
       private var _iconHolder:Sprite;
       
@@ -77,8 +76,14 @@ package net.wg.gui.battle.views.damagePanel.components.modules
          this._repairAnim.addEventListener(RepairAnimEvent.ANIM_COMPLETE,this.onRepairAnimCompleteHandler);
          this._repairAnim.addEventListener(RepairAnimEvent.ANIM_HIDE,this.onRepairAnimHideHandler);
          this._warningAnim = _loc4_.getComponent(Linkages.MODULE_WARNING_ANIM,MovieClip);
-         this._critical = new Bitmap(_loc5_.getNewBitmapData(ATLAS_CONSTANTS.BATTLE_ATLAS,param1 + CRITICAL_POSTFIX));
-         this._destroyed = new Bitmap(_loc5_.getNewBitmapData(ATLAS_CONSTANTS.BATTLE_ATLAS,param1 + DESTROYED_POSTFIX));
+         this._critical = new Sprite();
+         this._critical.mouseEnabled = false;
+         _loc5_.drawGraphics(ATLAS_CONSTANTS.BATTLE_ATLAS,param1 + CRITICAL_POSTFIX,this._critical.graphics);
+         this._destroyed = new Sprite();
+         this._destroyed.mouseEnabled = false;
+         _loc5_.drawGraphics(ATLAS_CONSTANTS.BATTLE_ATLAS,param1 + DESTROYED_POSTFIX,this._destroyed.graphics);
+         this._iconHolder.mouseEnabled = false;
+         this._iconHolder.mouseChildren = false;
          this._iconHolder.addChild(this._critical);
          this._iconHolder.addChild(this._destroyed);
          this._iconHolder.visible = false;
@@ -122,9 +127,9 @@ package net.wg.gui.battle.views.damagePanel.components.modules
          this._repairAnim.removeEventListener(RepairAnimEvent.ANIM_HIDE,this.onRepairAnimHideHandler);
          this._modulesHit.dispose();
          this._modulesHit = null;
-         this._critical.bitmapData = null;
+         this._critical.graphics.clear();
          this._critical = null;
-         this._destroyed.bitmapData = null;
+         this._destroyed.graphics.clear();
          this._destroyed = null;
          this._repairAnim.dispose();
          this._repairAnim = null;

@@ -18,12 +18,10 @@ msgid "error/button"
 msgstr "Affirmative!"
 
 msgid "error/description"
-msgstr ""
-"Information is temporarily unavailable. We apologize for the inconvenience. "
-"Please try again later."
+msgstr "We apologize for the inconvenience. Please try again later."
 
 msgid "error/title"
-msgstr "Unable to Open Reward Selection"
+msgstr "This page is temporarily unavailable"
 
 msgid "footer/closeBtn/label"
 msgstr "Select Later"
@@ -35,7 +33,7 @@ msgstr[1] "Select rewards from the categories provided."
 msgstr[2] "Select rewards from the categories provided."
 
 msgid "footer/okBtn/label"
-msgstr "Claim"
+msgstr "Claim Rewards"
 
 msgid "footer/rewardsSelected"
 msgstr "Rewards selected:"
@@ -57,14 +55,14 @@ msgstr "Already received"
 
 msgid "reward/tooltip/state_limited/body"
 msgstr ""
-"The limit of the selected items in this category has been reached. You can "
-"cancel the selection of one item to add another."
+"You have reached the maximum number of items allowed in this category. "
+"Deselect one item to choose another."
 
 msgid "reward/tooltip/state_limited/header"
 msgstr "Limit Reached"
 
 msgid "tabs/counter"
-msgstr "%(count)s/%(limit)s"
+msgstr "%(count)s / %(limit)s"
 
 msgid "tabs/items/battleBooster"
 msgstr ""
@@ -111,6 +109,9 @@ msgstr "Standard Equipment"
 
 msgid "tabs/items/trophy"
 msgstr "Bounty Equipment"
+
+msgid "tooltips/footer/body"
+msgstr "Select rewards to claim them"
 
 msgid "tooltips/selectedRewards/description"
 msgstr "Click the Claim button to receive the selected rewards."

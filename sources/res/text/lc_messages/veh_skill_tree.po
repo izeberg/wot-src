@@ -371,8 +371,42 @@ msgstr ""
 "Increases the maximum number of times the thrusters can be used in a single "
 "battle by {colorTagOpen}{value}{colorTagClose}."
 
+msgid "tooltips/description/ch71_mechanic_0"
+msgstr ""
+"Reduces the initial cooldown before the IRST can be used by "
+"{colorTagOpen}{value} s{colorTagClose}."
+
+msgid "tooltips/description/ch71_mechanic_1"
+msgstr ""
+"Reduces the cooldown time before the IRST can be used again by "
+"{colorTagOpen}{value} s{colorTagClose}."
+
+msgid "tooltips/description/ch71_mechanic_2"
+msgstr ""
+"Reduces the amount of time your vehicle is revealed to enemies after "
+"spotting them with the IRST by {colorTagOpen}{value} s{colorTagClose}."
+
+msgid "tooltips/description/ch71_mechanic_3"
+msgstr ""
+"Extends IRST scan duration by {colorTagOpen}{value0} s{colorTagClose} and "
+"additionally narrows the scan sector by {colorTagOpen}{value1} "
+"deg{colorTagClose}, increases its view range by "
+"{colorTagOpen}{value2}%{colorTagClose}, and reduces concealment of moving "
+"vehicles by {colorTagOpen}{value3}%{colorTagClose} and foliage-hidden "
+"vehicles by {colorTagOpen}{value4}%{colorTagClose}."
+
 msgid "tooltips/description/crewProtection"
 msgstr "Reduces the chance of crew member injury when the vehicle is damaged."
+
+msgid "tooltips/description/cz46_mechanic_0"
+msgstr ""
+"Increases penetration power after a non-penetrating hit by "
+"{colorTagOpen}{value}%{colorTagClose}"
+
+msgid "tooltips/description/cz46_mechanic_1"
+msgstr ""
+"Increases damage after a penetrating hit by "
+"{colorTagOpen}{value}%{colorTagClose}"
 
 msgid "tooltips/description/damagedGunDispersion"
 msgstr "Reduces gun dispersion when your gun is damaged."
@@ -607,6 +641,26 @@ msgstr "Reduces the reload time between shells in your gun's clip."
 msgid "tooltips/description/invisibilityWhenShooting"
 msgstr "Reduces the chance of being spotted by enemy vehicles while firing."
 
+msgid "tooltips/description/it43_mechanic_0"
+msgstr ""
+"Reduces charge cooldown time when the clip is not full {colorTagOpen}by "
+"{value} s.{colorTagClose}"
+
+msgid "tooltips/description/it43_mechanic_1"
+msgstr ""
+"Reduces charge cooldown time when the clip is full {colorTagOpen}by {value} "
+"s.{colorTagClose}"
+
+msgid "tooltips/description/it43_mechanic_2"
+msgstr ""
+"Reduces accelerated shell loading time {colorTagOpen}by a further {value} "
+"s.{colorTagClose}"
+
+msgid "tooltips/description/it43_mechanic_3"
+msgstr ""
+"Increases the number of charges available at the start of battle "
+"{colorTagOpen}by {value}.{colorTagClose}"
+
 msgid "tooltips/description/j52_mechanic_0"
 msgstr ""
 "Reduces gun cooling delay time by {colorTagOpen}{value} s{colorTagClose}."
@@ -619,6 +673,24 @@ msgstr ""
 msgid "tooltips/description/j52_mechanic_2"
 msgstr ""
 "Increases heated gun cooling speed by {colorTagOpen}{value}%{colorTagClose}."
+
+msgid "tooltips/description/j53_mechanic_0"
+msgstr ""
+"Reduces Coaxial Rocket Launcher reload time by {colorTagOpen}{value} "
+"s{colorTagClose}."
+
+msgid "tooltips/description/j53_mechanic_1"
+msgstr ""
+"Reduces Coaxial Rocket Launcher reload time by {colorTagOpen}{value} "
+"s{colorTagClose}."
+
+msgid "tooltips/description/j53_mechanic_2"
+msgstr ""
+"Reduces Coaxial Rocket Launcher reload time by {colorTagOpen}{value} "
+"s{colorTagClose}."
+
+msgid "tooltips/description/j53_mechanic_3"
+msgstr "Increases rocket damage by {colorTagOpen}{value} HP{colorTagClose}."
 
 msgid "tooltips/description/nonHEShellDamage"
 msgstr "Increases the damage caused by non-HE shells."
@@ -737,6 +809,26 @@ msgstr ""
 "Reduces gun reload time by {colorTagOpen}{value}%{colorTagClose} in Pillbox "
 "mode."
 
+msgid "tooltips/description/s41_mechanic_0"
+msgstr ""
+"Increases maximum forward speed in EAF mode by "
+"{colorTagOpen}{value}%{colorTagClose}."
+
+msgid "tooltips/description/s41_mechanic_1"
+msgstr ""
+"Increases damage caused by special shells in EAF mode by "
+"{colorTagOpen}{value} HP{colorTagClose}."
+
+msgid "tooltips/description/s41_mechanic_2"
+msgstr ""
+"Increases damage caused by standard shells in EAF mode by "
+"{colorTagOpen}{value} HP{colorTagClose}."
+
+msgid "tooltips/description/s41_mechanic_3"
+msgstr ""
+"Reduces gun reload time in EAF mode by {colorTagOpen}{value}%{colorTagClose}"
+" (except HE)."
+
 msgid "tooltips/description/selectiveModuleHPBoost"
 msgstr ""
 "Increases the hit points of your vehicle's fuel tank and engine modules."
@@ -746,6 +838,11 @@ msgstr "Reduces the penalty to a damaged ammo rack and engine."
 
 msgid "tooltips/description/shellModuleDamage"
 msgstr "Increases the damage your shells cause to enemy vehicles' modules."
+
+msgid "tooltips/description/shellSwitchMechanic"
+msgstr ""
+"Reduces the time taken to switch between firing modes by "
+"{colorTagOpen}{value} s{colorTagClose}."
 
 msgid "tooltips/description/shells_consumables_switch"
 msgstr ""
@@ -935,6 +1032,18 @@ msgstr "Core Shape Optimization"
 msgid "tooltips/title/ch70_mechanic_3"
 msgstr "Expanded Booster Storage"
 
+msgid "tooltips/title/ch71_mechanic_0"
+msgstr "Modified Simmer Ignitor"
+
+msgid "tooltips/title/ch71_mechanic_1"
+msgstr "High-Performance Liquid Cooling"
+
+msgid "tooltips/title/ch71_mechanic_2"
+msgstr "Low-Divergence Optics"
+
+msgid "tooltips/title/ch71_mechanic_3"
+msgstr "Concurrent Liquid Cooling"
+
 msgid "tooltips/title/chassisHP"
 msgstr "Suspension HP"
 
@@ -943,6 +1052,12 @@ msgstr "Suspension Repair Speed"
 
 msgid "tooltips/title/crewProtection"
 msgstr "Crew Protection"
+
+msgid "tooltips/title/cz46_mechanic_0"
+msgstr "Adjustable Fuze Setter: Penetration"
+
+msgid "tooltips/title/cz46_mechanic_1"
+msgstr "Adjustable Fuze Setter: Damage"
 
 msgid "tooltips/title/damagedGunDispersion"
 msgstr "Situational Gun Dispersion"
@@ -1121,6 +1236,18 @@ msgstr "Inner Clip Reload Time"
 msgid "tooltips/title/invisibilityWhenShooting"
 msgstr "Concealment After Firing"
 
+msgid "tooltips/title/it43_mechanic_0"
+msgstr "High-Purity Rotor Winding"
+
+msgid "tooltips/title/it43_mechanic_1"
+msgstr "Active Rotor Cooling"
+
+msgid "tooltips/title/it43_mechanic_2"
+msgstr "High-Conductivity Stator Housing"
+
+msgid "tooltips/title/it43_mechanic_3"
+msgstr "Orthocyclic Winding"
+
 msgid "tooltips/title/j52_mechanic_0"
 msgstr "Low-Temperature Heat Transfer Fluid"
 
@@ -1129,6 +1256,18 @@ msgstr "High-Conductivity Thermal Housing"
 
 msgid "tooltips/title/j52_mechanic_2"
 msgstr "Heat Pipe Optimization"
+
+msgid "tooltips/title/j53_mechanic_0"
+msgstr "Loading Cycle Optimization"
+
+msgid "tooltips/title/j53_mechanic_1"
+msgstr "Loading Cycle Optimization"
+
+msgid "tooltips/title/j53_mechanic_2"
+msgstr "Loading Cycle Optimization"
+
+msgid "tooltips/title/j53_mechanic_3"
+msgstr "Improved Warhead Layout"
 
 msgid "tooltips/title/nonHEShellDamage"
 msgstr "Non-HE Shell Damage"
@@ -1211,6 +1350,18 @@ msgstr "Precision-Balanced Rotor"
 msgid "tooltips/title/s36_mechanic_3"
 msgstr "Hydraulic-Driven Rammer"
 
+msgid "tooltips/title/s41_mechanic_0"
+msgstr "Improved Suspension Dampers"
+
+msgid "tooltips/title/s41_mechanic_1"
+msgstr "Modified Special Unitary Rounds"
+
+msgid "tooltips/title/s41_mechanic_2"
+msgstr "Modified Standard Unitary Rounds"
+
+msgid "tooltips/title/s41_mechanic_3"
+msgstr "Optimized EAF Loading Cycle"
+
 msgid "tooltips/title/selectiveModuleHPBoost"
 msgstr "Selective Module HP Boost"
 
@@ -1219,6 +1370,9 @@ msgstr "Selective Module Protection"
 
 msgid "tooltips/title/shellModuleDamage"
 msgstr "Shell Module Damage"
+
+msgid "tooltips/title/shellSwitchMechanic"
+msgstr "Optimized Recalibration"
 
 msgid "tooltips/title/shells_consumables_switch"
 msgstr "Ammo and Consumables Loadout"

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import comp7_light_constants
 from constants import ARENA_BONUS_TYPE, QUEUE_TYPE
 from constants_utils import AbstractBattleMode

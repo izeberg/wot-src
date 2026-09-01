@@ -59,7 +59,7 @@ package net.wg.gui.components.tooltips.inblocks
          this.clearData();
          this.clearBlocks();
          visible = false;
-         App.utils.scheduler.scheduleOnNextFrame(this.scheduleValidation);
+         this.scheduleValidation();
       }
       
       override protected function updateSize() : void
@@ -328,9 +328,10 @@ package net.wg.gui.components.tooltips.inblocks
             {
                this.removeValidationRequesters();
                App.utils.asserter.assert(false,"Blocks data" + Errors.CANT_EMPTY + ", tooltipType: " + _type + ", component: " + _component);
+               return;
             }
          }
-         else if(!this.isBlocksBuilt())
+         if(!this.isBlocksBuilt())
          {
             this.buildBlocks();
          }

@@ -53,9 +53,13 @@ package net.wg.data.constants.generated
       
       public static const POI_MARKER_ICON_SMALL_2:String = "poiMarkerIconSmall_2";
       
+      public static const POI_MARKER_ICON_SMALL_3:String = "poiMarkerIconSmall_3";
+      
       public static const POI_MARKER_ICON_1:String = "poiMarkerIcon_1";
       
       public static const POI_MARKER_ICON_2:String = "poiMarkerIcon_2";
+      
+      public static const POI_MARKER_ICON_3:String = "poiMarkerIcon_3";
       
       public static const HIT_BLOCKED:String = "hit_blocked";
       
@@ -635,6 +639,8 @@ package net.wg.data.constants.generated
       
       public static const CHINA_CH48_BZ_75_7X7:String = "china-Ch48_BZ_75_7x7";
       
+      public static const CHINA_CH48_BZ_75_CFE_F:String = "china-Ch48_BZ_75_CFE_F";
+      
       public static const CHINA_CH49_BZ_68:String = "china-Ch49_BZ_68";
       
       public static const CHINA_CH50_BZ_166:String = "china-Ch50_BZ_166";
@@ -674,6 +680,8 @@ package net.wg.data.constants.generated
       public static const CHINA_CH68_PGZ_70:String = "china-Ch68_PGZ_70";
       
       public static const CHINA_CH70_PTZ_78:String = "china-Ch70_PTZ_78";
+      
+      public static const CHINA_CH71_WZ_219:String = "china-Ch71_WZ_219";
       
       public static const CHINA_CH72_YONGSHI:String = "china-Ch72_Yongshi";
       
@@ -758,6 +766,8 @@ package net.wg.data.constants.generated
       public static const CZECH_CZ40_DBV_152:String = "czech-Cz40_DBV_152";
       
       public static const CZECH_CZ43_OGAR:String = "czech-Cz43_Ogar";
+      
+      public static const CZECH_CZ46_VZ_63_P:String = "czech-Cz46_Vz_63P";
       
       public static const FRANCE_F01_RENAULT_FT:String = "france-F01_RenaultFT";
       
@@ -860,6 +870,8 @@ package net.wg.data.constants.generated
       public static const FRANCE_F142_M47_CHEVALIER:String = "france-F142_M47_Chevalier";
       
       public static const FRANCE_F143_FAUTEUR:String = "france-F143_Fauteur";
+      
+      public static const FRANCE_F147_AMX29_BELIER:String = "france-F147_AMX29_Belier";
       
       public static const FRANCE_F14_AMX40:String = "france-F14_AMX40";
       
@@ -1235,6 +1247,8 @@ package net.wg.data.constants.generated
       
       public static const GERMANY_G17_JAGD_PZ_IV:String = "germany-G17_JagdPzIV";
       
+      public static const GERMANY_G183_FOSSA_VM_68:String = "germany-G183_Fossa_VM_68";
+      
       public static const GERMANY_G183_RADKAMPFWAGEN:String = "germany-G183_Radkampfwagen";
       
       public static const GERMANY_G184_WINDHUND:String = "germany-G184_Windhund";
@@ -1253,9 +1267,21 @@ package net.wg.data.constants.generated
       
       public static const GERMANY_G191_STU_G_IIIF_CFE_A:String = "germany-G191_StuG_IIIF_CFE_A";
       
+      public static const GERMANY_G193_PZ_KPFW_55:String = "germany-G193_Pz_Kpfw_55";
+      
+      public static const GERMANY_G195_HWK_40:String = "germany-G195_HWK_40";
+      
+      public static const GERMANY_G196_VERSUCHSPANZER_57:String = "germany-G196_Versuchspanzer_57";
+      
+      public static const GERMANY_G197_PZ_KPFW_NEU:String = "germany-G197_Pz_Kpfw_Neu";
+      
+      public static const GERMANY_G198_KAMPFPANZER_67:String = "germany-G198_Kampfpanzer_67";
+      
       public static const GERMANY_G19_WESPE:String = "germany-G19_Wespe";
       
       public static const GERMANY_G200_CHI_GO:String = "germany-G200_Chi_Go";
+      
+      public static const GERMANY_G204_PZ_VI_TIGER_P_CFE_A:String = "germany-G204_PzVI_Tiger_P_CFE_A";
       
       public static const GERMANY_G20_MARDER_II:String = "germany-G20_Marder_II";
       
@@ -1354,6 +1380,8 @@ package net.wg.data.constants.generated
       public static const GERMANY_G55_E_75:String = "germany-G55_E-75";
       
       public static const GERMANY_G56_E_100:String = "germany-G56_E-100";
+      
+      public static const GERMANY_G56_E_100_7X7:String = "germany-G56_E-100_7x7";
       
       public static const GERMANY_G57_PZ_VI_TIGER_P:String = "germany-G57_PzVI_Tiger_P";
       
@@ -1531,6 +1559,8 @@ package net.wg.data.constants.generated
       
       public static const ITALY_IT41_CERBERO:String = "italy-It41_Cerbero";
       
+      public static const ITALY_IT43_CAV_MOD_71:String = "italy-It43_CAV_mod_71";
+      
       public static const JAPAN_J01_NC27:String = "japan-J01_NC27";
       
       public static const JAPAN_J02_TE_KE:String = "japan-J02_Te_Ke";
@@ -1644,6 +1674,8 @@ package net.wg.data.constants.generated
       public static const JAPAN_J51_ASHIGARU:String = "japan-J51_Ashigaru";
       
       public static const JAPAN_J52_STK_2:String = "japan-J52_STK_2";
+      
+      public static const JAPAN_J53_HO_RI_SHUGO:String = "japan-J53_Ho_Ri_Shugo";
       
       public static const NO_IMAGE:String = "noImage";
       
@@ -1820,6 +1852,8 @@ package net.wg.data.constants.generated
       public static const SWEDEN_S37_AMBASSADOR:String = "sweden-S37_Ambassador";
       
       public static const SWEDEN_S39_STRV_M31:String = "sweden-S39_Strv_m31";
+      
+      public static const SWEDEN_S41_BV_111:String = "sweden-S41_BV_111";
       
       public static const UK_GB01_MEDIUM_MARK_I:String = "uk-GB01_Medium_Mark_I";
       
@@ -2479,6 +2513,8 @@ package net.wg.data.constants.generated
       
       public static const USA_A85_T110_E3:String = "usa-A85_T110E3";
       
+      public static const USA_A85_T110_E3_7X7:String = "usa-A85_T110E3_7x7";
+      
       public static const USA_A86_T23_E3:String = "usa-A86_T23E3";
       
       public static const USA_A87_M44:String = "usa-A87_M44";
@@ -2645,6 +2681,8 @@ package net.wg.data.constants.generated
       
       public static const USSR_R148_OBJECT_430_U:String = "ussr-R148_Object_430_U";
       
+      public static const USSR_R148_OBJECT_430_U_7X7:String = "ussr-R148_Object_430_U_7x7";
+      
       public static const USSR_R149_OBJECT_268_4:String = "ussr-R149_Object_268_4";
       
       public static const USSR_R149_OBJECT_268_4_7X7:String = "ussr-R149_Object_268_4_7x7";
@@ -2787,6 +2825,8 @@ package net.wg.data.constants.generated
       
       public static const USSR_R231_BURYAN:String = "ussr-R231_Buryan";
       
+      public static const USSR_R233_NK_1:String = "ussr-R233_NK_1";
+      
       public static const USSR_R234_T_13:String = "ussr-R234_T_13";
       
       public static const USSR_R235_KB_52:String = "ussr-R235_KB_52";
@@ -2838,6 +2878,8 @@ package net.wg.data.constants.generated
       public static const USSR_R44_T80_MAPS_TRAINING_DUMMY_LT_1:String = "ussr-R44_T80_MapsTraining_Dummy_LT_1";
       
       public static const USSR_R45_IS_7:String = "ussr-R45_IS-7";
+      
+      public static const USSR_R45_IS_7_7X7:String = "ussr-R45_IS-7_7x7";
       
       public static const USSR_R45_IS_7_FALLOUT:String = "ussr-R45_IS-7_fallout";
       
@@ -2975,9 +3017,11 @@ package net.wg.data.constants.generated
       
       public static const ROLE_HT_UNIVERSAL:String = "role_HT_universal";
       
-      public static const ROLE_LT_UNIVERSAL:String = "role_LT_universal";
+      public static const ROLE_LT_SCOUT:String = "role_LT_scout";
       
-      public static const ROLE_LT_WHEELED:String = "role_LT_wheeled";
+      public static const ROLE_LT_SUPPORT:String = "role_LT_support";
+      
+      public static const ROLE_LT_UNIVERSAL:String = "role_LT_universal";
       
       public static const ROLE_MT_ASSAULT:String = "role_MT_assault";
       
@@ -3026,6 +3070,48 @@ package net.wg.data.constants.generated
       public static const USSR_R1230_OBJECT_432_U_ENEMY_SM_SCC:String = "ussr-R1230_Object_432U_enemy_SM_SCC";
       
       public static const USSR_R1230_OBJECT_432_U_SM_SCC:String = "ussr-R1230_Object_432U_SM_SCC";
+      
+      public static const GREEN_MINIBOSS:String = "green_miniboss";
+      
+      public static const PURPLE_MINIBOSS:String = "purple_miniboss";
+      
+      public static const PURPLE_WTBOSS:String = "purple_wtboss";
+      
+      public static const PURPLE_WT_SPECIAL_BOSS:String = "purple_wtSpecialBoss";
+      
+      public static const RED_MINIBOSS:String = "red_miniboss";
+      
+      public static const RED_WTBOSS:String = "red_wtboss";
+      
+      public static const RED_WT_SPECIAL_BOSS:String = "red_wtSpecialBoss";
+      
+      public static const CZECH_CZ04_T50_51_WAF_HOUND_3_D_ST:String = "czech-Cz04_T50_51_Waf_Hound_3DSt";
+      
+      public static const FRANCE_F18_BAT_CHATILLON25T_HOUND_TLXXL:String = "france-F18_Bat_Chatillon25t_hound_TLXXL";
+      
+      public static const GERMANY_G1016_PZ_VIB_TIGER_II_WT_BOT:String = "germany-G1016_PzVIB_Tiger_II_WT_bot";
+      
+      public static const GERMANY_G1054_E_50_WT_BOT:String = "germany-G1054_E-50_WT_bot";
+      
+      public static const GERMANY_G1055_E_75_WT_BOT:String = "germany-G1055_E-75_WT_bot";
+      
+      public static const GERMANY_G1064_PANTHER_II_WT_BOT:String = "germany-G1064_Panther_II_WT_bot";
+      
+      public static const GERMANY_G1073_E50_AUSF_M_WT_BOT:String = "germany-G1073_E50_Ausf_M_WT_bot";
+      
+      public static const GERMANY_G1103_RU_251_WT_BOT:String = "germany-G1103_RU_251_WT_bot";
+      
+      public static const GERMANY_G1134_PZ_KPFW_VII_WT_BOT:String = "germany-G1134_PzKpfw_VII_WT_bot";
+      
+      public static const GERMANY_G89_LEOPARD1_WT24_MINI_BOSS_3_DST:String = "germany-G89_Leopard1_WT24_Mini_Boss_3Dst";
+      
+      public static const GERMANY_G98_WAFFENTRAGER_E100_TLXXL:String = "germany-G98_Waffentrager_E100_TLXXL";
+      
+      public static const GERMANY_G98_WAFFENTRAGER_E100_TLXXL_S:String = "germany-G98_Waffentrager_E100_TLXXL_S";
+      
+      public static const USA_A120_M48_A5_HOUND_TLXXL:String = "usa-A120_M48A5_hound_TLXXL";
+      
+      public static const USSR_R97_OBJECT_140_HOUND_TLXXL:String = "ussr-R97_Object_140_hound_TLXXL";
       
       public static const LS_CRITICAL_HITS_PURPLE:String = "ls_critical_hits_purple";
       
@@ -3233,9 +3319,9 @@ package net.wg.data.constants.generated
       
       public static const DAMAGE_BAR_ENUM:Array = [DAMAGE_BAR_GOLD,DAMAGE_BAR_GREEN,DAMAGE_BAR_ORANGE,DAMAGE_BAR_PURPLE,DAMAGE_BAR_RED,DAMAGE_BAR_YELLOW];
       
-      public static const PURPLE_ENUM:Array = [PURPLE_EXPLOSION,PURPLE_FIRE,PURPLE_AT_SPG,PURPLE_AT_SPG_ELITE,PURPLE_AT_SPG_HUNTED,PURPLE_BOSS,PURPLE_HEAVY_AT_SPG,PURPLE_HEAVY_AT_SPG_HUNTED,PURPLE_HEAVY_SPG,PURPLE_HEAVY_SPG_HUNTED,PURPLE_HEAVY_TANK,PURPLE_HEAVY_TANK_ELITE,PURPLE_HEAVY_TANK_HUNTED,PURPLE_LIGHT_TANK,PURPLE_LIGHT_TANK_ELITE,PURPLE_LIGHT_TANK_HUNTED,PURPLE_MEDIUM_AT_SPG,PURPLE_MEDIUM_AT_SPG_HUNTED,PURPLE_MEDIUM_SPG,PURPLE_MEDIUM_SPG_HUNTED,PURPLE_MEDIUM_TANK,PURPLE_MEDIUM_TANK_ELITE,PURPLE_MEDIUM_TANK_HUNTED,PURPLE_SPG,PURPLE_SPG_ELITE,PURPLE_SPG_HUNTED,PURPLE_LS_ALPHA,PURPLE_LS_ARCHER,PURPLE_LS_BASTION,PURPLE_LS_BOMBER,PURPLE_LS_BOMBER_ALPHA,PURPLE_LS_BOSS,PURPLE_LS_CATCHER,PURPLE_LS_CHARGER,PURPLE_LS_DETONATOR,PURPLE_LS_HUNTER,PURPLE_LS_OBELISK,PURPLE_LS_RIPPER,PURPLE_LS_RUNNER,PURPLE_LS_SENTRY,PURPLE_LS_TURRET];
+      public static const PURPLE_ENUM:Array = [PURPLE_EXPLOSION,PURPLE_FIRE,PURPLE_AT_SPG,PURPLE_AT_SPG_ELITE,PURPLE_AT_SPG_HUNTED,PURPLE_BOSS,PURPLE_HEAVY_AT_SPG,PURPLE_HEAVY_AT_SPG_HUNTED,PURPLE_HEAVY_SPG,PURPLE_HEAVY_SPG_HUNTED,PURPLE_HEAVY_TANK,PURPLE_HEAVY_TANK_ELITE,PURPLE_HEAVY_TANK_HUNTED,PURPLE_LIGHT_TANK,PURPLE_LIGHT_TANK_ELITE,PURPLE_LIGHT_TANK_HUNTED,PURPLE_MEDIUM_AT_SPG,PURPLE_MEDIUM_AT_SPG_HUNTED,PURPLE_MEDIUM_SPG,PURPLE_MEDIUM_SPG_HUNTED,PURPLE_MEDIUM_TANK,PURPLE_MEDIUM_TANK_ELITE,PURPLE_MEDIUM_TANK_HUNTED,PURPLE_SPG,PURPLE_SPG_ELITE,PURPLE_SPG_HUNTED,PURPLE_MINIBOSS,PURPLE_WTBOSS,PURPLE_WT_SPECIAL_BOSS,PURPLE_LS_ALPHA,PURPLE_LS_ARCHER,PURPLE_LS_BASTION,PURPLE_LS_BOMBER,PURPLE_LS_BOMBER_ALPHA,PURPLE_LS_BOSS,PURPLE_LS_CATCHER,PURPLE_LS_CHARGER,PURPLE_LS_DETONATOR,PURPLE_LS_HUNTER,PURPLE_LS_OBELISK,PURPLE_LS_RIPPER,PURPLE_LS_RUNNER,PURPLE_LS_SENTRY,PURPLE_LS_TURRET];
       
-      public static const RED_ENUM:Array = [RED_EXPLOSION,RED_FIRE,RED_AT_SPG,RED_AT_SPG_ELITE,RED_AT_SPG_HUNTED,RED_BOSS,RED_HEAVY_AT_SPG,RED_HEAVY_AT_SPG_HUNTED,RED_HEAVY_SPG,RED_HEAVY_SPG_HUNTED,RED_HEAVY_TANK,RED_HEAVY_TANK_ELITE,RED_HEAVY_TANK_HUNTED,RED_LIGHT_TANK,RED_LIGHT_TANK_ELITE,RED_LIGHT_TANK_HUNTED,RED_MEDIUM_AT_SPG,RED_MEDIUM_AT_SPG_HUNTED,RED_MEDIUM_SPG,RED_MEDIUM_SPG_HUNTED,RED_MEDIUM_TANK,RED_MEDIUM_TANK_ELITE,RED_MEDIUM_TANK_HUNTED,RED_SPG,RED_SPG_ELITE,RED_SPG_HUNTED,RED_LS_ALPHA,RED_LS_ARCHER,RED_LS_BASTION,RED_LS_BOMBER,RED_LS_BOMBER_ALPHA,RED_LS_BOSS,RED_LS_CATCHER,RED_LS_CHARGER,RED_LS_DETONATOR,RED_LS_HUNTER,RED_LS_OBELISK,RED_LS_RIPPER,RED_LS_RUNNER,RED_LS_SENTRY,RED_LS_TURRET];
+      public static const RED_ENUM:Array = [RED_EXPLOSION,RED_FIRE,RED_AT_SPG,RED_AT_SPG_ELITE,RED_AT_SPG_HUNTED,RED_BOSS,RED_HEAVY_AT_SPG,RED_HEAVY_AT_SPG_HUNTED,RED_HEAVY_SPG,RED_HEAVY_SPG_HUNTED,RED_HEAVY_TANK,RED_HEAVY_TANK_ELITE,RED_HEAVY_TANK_HUNTED,RED_LIGHT_TANK,RED_LIGHT_TANK_ELITE,RED_LIGHT_TANK_HUNTED,RED_MEDIUM_AT_SPG,RED_MEDIUM_AT_SPG_HUNTED,RED_MEDIUM_SPG,RED_MEDIUM_SPG_HUNTED,RED_MEDIUM_TANK,RED_MEDIUM_TANK_ELITE,RED_MEDIUM_TANK_HUNTED,RED_SPG,RED_SPG_ELITE,RED_SPG_HUNTED,RED_MINIBOSS,RED_WTBOSS,RED_WT_SPECIAL_BOSS,RED_LS_ALPHA,RED_LS_ARCHER,RED_LS_BASTION,RED_LS_BOMBER,RED_LS_BOMBER_ALPHA,RED_LS_BOSS,RED_LS_CATCHER,RED_LS_CHARGER,RED_LS_DETONATOR,RED_LS_HUNTER,RED_LS_OBELISK,RED_LS_RIPPER,RED_LS_RUNNER,RED_LS_SENTRY,RED_LS_TURRET];
       
       public static const SQUAD_ICON_ALL_ENUM:Array = [SQUAD_ICON_GOLD1,SQUAD_ICON_GOLD2,SQUAD_ICON_GOLD3,SQUAD_ICON_GOLD4,SQUAD_ICON_GREEN1,SQUAD_ICON_GREEN2,SQUAD_ICON_GREEN3,SQUAD_ICON_GREEN4,SQUAD_ICON_PURPLE1,SQUAD_ICON_PURPLE2,SQUAD_ICON_PURPLE3,SQUAD_ICON_PURPLE4,SQUAD_ICON_RED1,SQUAD_ICON_RED2,SQUAD_ICON_RED3,SQUAD_ICON_RED4,SQUAD_ICON_YELLOW1,SQUAD_ICON_YELLOW2,SQUAD_ICON_YELLOW3,SQUAD_ICON_YELLOW4];
        

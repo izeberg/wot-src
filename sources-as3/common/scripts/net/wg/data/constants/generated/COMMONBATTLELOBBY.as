@@ -31,6 +31,8 @@ package net.wg.data.constants.generated
       
       public static const DAMAGE_LOG_BERSERKER_16X16:String = "damageLog_berserker_16x16";
       
+      public static const DAMAGE_LOG_BUSTLE_FEED_16X16:String = "damageLog_bustleFeed_16x16";
+      
       public static const DAMAGE_LOG_BY_MINE_FIELD_16X16:String = "damageLog_by_mine_field_16x16";
       
       public static const DAMAGE_LOG_BY_MINE_FIELD_16X16_BLIND:String = "damageLog_by_mine_field_16x16Blind";
@@ -89,6 +91,12 @@ package net.wg.data.constants.generated
       
       public static const DAMAGE_LOG_HEAVY_16X16:String = "damageLog_heavy_16x16";
       
+      public static const DAMAGE_LOG_HE_ROCKET_16X16:String = "damageLog_he_rocket_16x16";
+      
+      public static const DAMAGE_LOG_HE_ROCKET_ENEMY_16X16:String = "damageLog_he_rocket_enemy_16x16";
+      
+      public static const DAMAGE_LOG_HE_ROCKET_ENEMY_16X16_BLIND:String = "damageLog_he_rocket_enemy_16x16Blind";
+      
       public static const DAMAGE_LOG_IMMOBILIZED_16X16:String = "damageLog_immobilized_16x16";
       
       public static const DAMAGE_LOG_KILL_16X16:String = "damageLog_kill_16x16";
@@ -106,6 +114,10 @@ package net.wg.data.constants.generated
       public static const DAMAGE_LOG_RAM_ENEMY_16X16_BLIND:String = "damageLog_ram_enemy_16x16Blind";
       
       public static const DAMAGE_LOG_REFLECT_16X16:String = "damageLog_reflect_16x16";
+      
+      public static const DAMAGE_LOG_SHELL_SWITCHER_ALT_16X16:String = "damageLog_shellSwitcher_alt_16x16";
+      
+      public static const DAMAGE_LOG_SHELL_SWITCHER_DEF_16X16:String = "damageLog_shellSwitcher_def_16x16";
       
       public static const DAMAGE_LOG_SPAWNED_BOT_16X16:String = "damageLog_spawned_bot_16x16";
       

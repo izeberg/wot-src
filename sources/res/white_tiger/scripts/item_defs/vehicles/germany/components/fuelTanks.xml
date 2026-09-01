@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<ids>
+		<Large_Inv>206</Large_Inv>
+	</ids>
+	<shared>
+		<Large_Inv>
+			<tags/>
+			<price>100</price>
+			<weight>300</weight>
+			<maxHealth>200</maxHealth>
+			<maxRegenHealth>70</maxRegenHealth>
+			<repairCost>
+				1.0
+				<!--BW_String-->
+			</repairCost>
+			<invulnerable>True</invulnerable>
+		</Large_Inv>
+	</shared>
+</root>

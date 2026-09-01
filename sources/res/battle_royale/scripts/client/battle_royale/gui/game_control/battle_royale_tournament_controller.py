@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, calendar
 from collections import Counter
 import BigWorld
@@ -97,13 +98,13 @@ class BattleRoyaleTournamentController(IBattleRoyaleTournamentController):
     def notReady(self):
         self.__tournamentComponent.tournamentNotReady(str(self.__currentToken.tournamentID), self.__notReadyResult)
 
-    def leaveCurrentAndJoinToAnotherTournament(self, internalTournamentID):
+    def leaveCurrentAndJoinToAnotherTournament(self, tournamentID):
         if self.__isReady:
             self.__pushErrorSystemMessage('JOINING forbidden during READY')
             return
         self.__isReJoin = True
         self.__isChangingInternalState = True
-        self.__currentToken = self.__tokens.get(internalTournamentID)
+        self.__currentToken = self.__tokens.get(tournamentID)
         self.leave()
 
     def leaveBattleRoyaleTournament(self, isChangingToBattleRoyaleHangar=False):

@@ -48,36 +48,31 @@
 		<enable>true</enable>
 		<adaptationSpeed>100.000000</adaptationSpeed>
 		<bloom>
-			<enable>true</enable>
-			<threshold>0.330000</threshold>
-			<amount>0.670000</amount>
-			<tint>1.000000 1.000000 1.000000</tint>
+			<pbsBloom>true</pbsBloom>
+			<threshold>0.200000</threshold>
 			<dirtAmount>0.880000</dirtAmount>
 		</bloom>
 		<environment>
 			<sunlightLumMultiplier>26.000000</sunlightLumMultiplier>
-			<ambientLumMultiplier>1.000000</ambientLumMultiplier>
 			<sunLumMultiplier>50.000000</sunLumMultiplier>
 			<skyLumMultiplier>5.000000</skyLumMultiplier>
+			<skyLumMultiplierDeferred>1.000000</skyLumMultiplierDeferred>
 			<LDR2HDRenableLumaMask>false</LDR2HDRenableLumaMask>
 			<LDR2HDRsaturation>1.000000</LDR2HDRsaturation>
 		</environment>
 		<tonemappings>
 			<tonemapping>
 				<name>RexpTM</name>
-				<middleGray>0.190000</middleGray>
 				<whitePoint>1.000000</whitePoint>
 				<blackPoint>1.000000</blackPoint>
 			</tonemapping>
 			<tonemapping>
 				<name>FilmicTM</name>
-				<middleGray>0.194354</middleGray>
 				<whitePoint>12.790000</whitePoint>
 				<blackPoint>3.500000</blackPoint>
 			</tonemapping>
 			<tonemapping>
 				<name>LinearExpTM</name>
-				<middleGray>0.285637</middleGray>
 				<whitePoint>1.750000</whitePoint>
 				<blackPoint>1.300000</blackPoint>
 			</tonemapping>
@@ -109,11 +104,11 @@
 		<sunBrightness>0.200000</sunBrightness>
 		<objectEnable>true</objectEnable>
 		<glareEnable>true</glareEnable>
-		<glareIntensity>0.820000</glareIntensity>
-		<glareSize>0.020000</glareSize>
+		<glareIntensity>0.500000</glareIntensity>
+		<glareSize>0.010000</glareSize>
 		<flareIntensity>0.500000</flareIntensity>
-		<objectThreshold>4.727921</objectThreshold>
-		<objectFlareIntensity>0.570000</objectFlareIntensity>
+		<objectThreshold>3.584963</objectThreshold>
+		<objectFlareIntensity>0.300000</objectFlareIntensity>
 		<haloEnable>true</haloEnable>
 		<sunTexture1>system/maps/psf_rgbe.dds</sunTexture1>
 		<colorTexture>system/maps/lenscolorF.dds</colorTexture>
@@ -232,16 +227,16 @@
 	</dirt>
 	<SkyDome>
 		<worldMatrix>
-			<row0>-0.384779 0.000000 0.923009</row0>
+			<row0>-0.920505 0.000000 -0.390731</row0>
 			<row1>0.000000 1.000000 0.000000</row1>
-			<row2>-0.923009 0.000000 -0.384779</row2>
+			<row2>0.390731 0.000000 -0.920505</row2>
 			<row3>0.000000 -100.000000 0.000000</row3>
 		</worldMatrix>
 		<worldMatrixForward>
-			<row0>-0.384779 0.000000 0.923009</row0>
+			<row0>-0.629320 0.000000 -0.777146</row0>
 			<row1>0.000000 1.000000 0.000000</row1>
-			<row2>-0.923009 0.000000 -0.384779</row2>
-			<row3>0.000000 0.000000 0.000000</row3>
+			<row2>0.777146 0.000000 -0.629320</row2>
+			<row3>0.000000 590.000000 0.000000</row3>
 		</worldMatrixForward>
 	</SkyDome>
 	<Wetness>
@@ -292,4 +287,7 @@
 		<transmissionMult>0.350000</transmissionMult>
 		<waterReflectionAttenuation>1.000000</waterReflectionAttenuation>
 	</SimplifiedDeferred>
+	<VisibilityTunnel>
+		<shouldOverrideSettings>false</shouldOverrideSettings>
+	</VisibilityTunnel>
 </root>

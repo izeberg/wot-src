@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from constants import ARENA_BONUS_TYPE
 from helpers import dependency
 from skeletons.gui.game_control import IBattleRoyaleController
@@ -22,3 +23,5 @@ class RespawnAbility(object):
         config = cls.__brController.getModeSettings().respawns.get(battleType)
         if config:
             return config[key]
+        else:
+            return

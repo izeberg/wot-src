@@ -181,6 +181,7 @@
 			<column>7</column>
 			<lines>
 				<G16_PzVIB_Tiger_II/>
+				<G193_Pz_Kpfw_55/>
 			</lines>
 		</G04_PzVI_Tiger_I>
 		<G03_PzV_Panther>
@@ -246,6 +247,13 @@
 				<G55_E-75/>
 			</lines>
 		</G16_PzVIB_Tiger_II>
+		<G193_Pz_Kpfw_55>
+			<row>8</row>
+			<column>8</column>
+			<lines>
+				<G196_Versuchspanzer_57/>
+			</lines>
+		</G193_Pz_Kpfw_55>
 		<G64_Panther_II>
 			<row>9</row>
 			<column>8</column>
@@ -309,6 +317,13 @@
 				<G56_E-100/>
 			</lines>
 		</G55_E-75>
+		<G196_Versuchspanzer_57>
+			<row>8</row>
+			<column>9</column>
+			<lines>
+				<G198_Kampfpanzer_67/>
+			</lines>
+		</G196_Versuchspanzer_57>
 		<G54_E-50>
 			<row>9</row>
 			<column>9</column>
@@ -360,6 +375,13 @@
 			<row>7</row>
 			<column>10</column>
 		</G56_E-100>
+		<G198_Kampfpanzer_67>
+			<row>8</row>
+			<column>10</column>
+			<lines>
+				<G197_Pz_Kpfw_Neu/>
+			</lines>
+		</G198_Kampfpanzer_67>
 		<G73_E50_Ausf_M>
 			<row>9</row>
 			<column>10</column>
@@ -390,6 +412,10 @@
 			<row>3</row>
 			<column>11</column>
 		</G189_Hirschkafer>
+		<G197_Pz_Kpfw_Neu>
+			<row>8</row>
+			<column>11</column>
+		</G197_Pz_Kpfw_Neu>
 		<G188_LeKpz_Borkenkafer>
 			<row>11</row>
 			<column>11</column>

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld
 from constants import ARENA_BONUS_TYPE
 from gui.Scaleform.daapi.view.battle.shared.postmortem_panel import _ALLOWED_EQUIPMENT_DEATH_CODES

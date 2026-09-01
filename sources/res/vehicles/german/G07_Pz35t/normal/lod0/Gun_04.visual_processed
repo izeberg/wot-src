@@ -38,7 +38,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>0.000245 -0.038283 -0.767831</row3>
+							<row3>0.000245 -0.038283 -1.413826</row3>
 						</transform>
 					</node>
 					<node>
@@ -65,21 +65,18 @@
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
-		<node>G_BlendBone</node>
 		<node>Gun_BlendBone</node>
+		<node>G_BlendBone</node>
 		<geometry>
-			<vertices>gun_04Shape15.vertices</vertices>
-			<primitive>gun_04Shape15.indices</primitive>
+			<vertices>gun_04_Shape.vertices</vertices>
+			<primitive>gun_04_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
 					<identifier>tank_guns_skinned</identifier>
 					<property>
 						g_detailUVTiling
-						<Vector4>
-							1.75342 1.75342 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>1.753420 1.753420 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_detailPowerGloss
@@ -146,14 +143,14 @@
 						<Bool>false</Bool>
 					</property>
 				</material>
-				<groupOrigin>0.001080 -0.008566 -1.058398</groupOrigin>
+				<groupOrigin>0.001080 -0.008566 -0.735400</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
 		<min>-0.109333 -0.207627 -0.115374</min>
-		<max>0.111493 0.190495 2.232169</max>
+		<max>0.111493 0.190495 1.586174</max>
 	</boundingBox>
-	<geometrySize>53216</geometrySize>
+	<geometrySize>43256</geometrySize>
 </root>

@@ -1,6 +1,6 @@
 import typing
 from WeakMethod import WeakMethodProxy
-from frameworks.state_machine.transitions import TransitionType
+from frameworks_common.state_machine.transitions import TransitionType
 from gui.Scaleform.framework import ScopeTemplates
 from gui.Scaleform.framework.entities.View import ViewKey
 from gui.Scaleform.lobby_entry import getLobbyStateMachine
@@ -46,6 +46,9 @@ class DogTagConfirmState(LobbyState):
             self.__equipDogTag(dogTagState.selectedBackground, dogTagState.selectedEngraving)
             self.getMachine().post(event)
         else:
+            view = self.getMachine().getRelatedView(dogTagState)
+            if view:
+                view.setSelectedToEquippedDogTag()
             self.getMachine().post(event)
 
     @staticmethod

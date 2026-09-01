@@ -112,6 +112,16 @@ package net.wg.data.constants.generated
       public static const DAMAGELOG_ARTILLERY_EQ_ENEMY_16X16:String = "damageLog_artillery_eq_enemy_16x16";
       
       public static const DAMAGELOG_STATIC_DEATH_ZONE_16X16:String = "damageLog_death_zone_16x16";
+      
+      public static const DAMAGELOG_HE_ROCKET_16X16:String = "damageLog_he_rocket_16x16";
+      
+      public static const DAMAGELOG_HE_ROCKET_ENEMY_16X16:String = "damageLog_he_rocket_enemy_16x16";
+      
+      public static const DAMAGELOG_SHELL_SWITCHER_DEF_16X16:String = "damageLog_shellSwitcher_def_16x16";
+      
+      public static const DAMAGELOG_SHELL_SWITCHER_ALT_16X16:String = "damageLog_shellSwitcher_alt_16x16";
+      
+      public static const DAMAGELOG_BUSTLE_FEED_16X16:String = "damageLog_bustleFeed_16x16";
        
       
       public function BATTLEDAMAGELOG_IMAGES()

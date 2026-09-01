@@ -29,13 +29,11 @@
 							0.215 0.215 0.215 0.000000
 							<!--BW_String-->
 						</Vector4>
+						<Vector3>0.215000 0.215000 0.215000</Vector3>
 					</property>
 					<property>
 						lightMultipliers
-						<Vector4>
-							1.2 0.000000 0.000000 0.5
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>1.200000 0.000000 0.000000 0.500000</Vector4>
 					</property>
 					<property>
 						enableLighting
@@ -47,10 +45,7 @@
 					</property>
 					<property>
 						distortion_UV_Speed_Amount
-						<Vector4>
-							0.01 0.04 0.1 0.1
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.010000 0.040000 0.100000 0.100000</Vector4>
 					</property>
 					<property>
 						distortionMap
@@ -58,10 +53,7 @@
 					</property>
 					<property>
 						diffuseUVSpeedAlphaOffset
-						<Vector4>
-							0.000000 0.012 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.000000 0.012000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						diffuseMap
@@ -72,26 +64,16 @@
 						<Bool>true</Bool>
 					</property>
 					<property>
-						alphaFadeAmountFresnel
-						<Vector4>
-							1 0.000000 1 0.000000
-							<!--BW_String-->
-						</Vector4>
-					</property>
-					<property>
-						alphaAdditiveEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
 						TintlColor
-						<Vector4>
-							1 0.71635 0.535 1
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>1.000000 0.716350 0.535000 1.000000</Vector4>
 					</property>
 					<property>
 						softFactor
-						<Float>5</Float>
+						<Float>5.000000</Float>
+					</property>
+					<property>
+						g_enableEnvMultiplier
+						<Bool>true</Bool>
 					</property>
 				</material>
 				<groupOrigin>4.100574 16.120291 1.275796</groupOrigin>

@@ -37,8 +37,8 @@
 						<transform>
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
-							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>0.000054 -0.002528 -1.527985</row3>
+							<row2>-0.000000 0.000000 1.000000</row2>
+							<row3>0.000054 -0.002528 -1.498276</row3>
 						</transform>
 					</node>
 					<node>
@@ -47,7 +47,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 -1.000000</row2>
-							<row3>0.000000 0.000000 -3.000000</row3>
+							<row3>-0.000000 0.000000 -3.000000</row3>
 						</transform>
 					</node>
 				</node>
@@ -68,8 +68,8 @@
 		<node>G_BlendBone</node>
 		<node>Gun_BlendBone</node>
 		<geometry>
-			<vertices>gun_04Shape1.vertices</vertices>
-			<primitive>gun_04Shape1.indices</primitive>
+			<vertices>gun_04_Shape.vertices</vertices>
+			<primitive>gun_04_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -77,10 +77,6 @@
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
-					</property>
 					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/german/G08_Pz38t/Pz38t_guns_AO.dds</Texture>
@@ -101,19 +97,15 @@
 						diffuseMap
 						<Texture>vehicles/german/G08_Pz38t/Pz38t_guns_AM.dds</Texture>
 					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
 				</material>
-				<groupOrigin>0.002010 0.043044 -0.782997</groupOrigin>
+				<groupOrigin>-0.001883 0.032733 -0.760023</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-0.075695 -0.082564 -0.022007</min>
-		<max>0.079715 0.168652 1.588001</max>
+		<min>-0.094857 -0.138863 -0.110770</min>
+		<max>0.091090 0.204329 1.630816</max>
 	</boundingBox>
-	<geometrySize>1774</geometrySize>
+	<geometrySize>2040</geometrySize>
 </root>

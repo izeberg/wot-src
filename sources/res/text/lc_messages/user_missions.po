@@ -452,11 +452,62 @@ msgstr ""
 msgid "info_page/main/weekly/title"
 msgstr "Weekly Missions"
 
+msgid "pm/missionState/active"
+msgstr "Active"
+
+msgid "pm/missionState/complete"
+msgstr "Missions Complete"
+
+msgid "pm/missionState/improve"
+msgstr "Result Improvement"
+
+msgid "pm/missionState/wrongVehicle"
+msgstr "Change Vehicle"
+
+msgid "pm/no_missions"
+msgstr "No active missions for your selected vehicle"
+
+msgid "pm/tier"
+msgstr "Unsuitable tier"
+
+msgid "pm/unavailable"
+msgstr "Mission temporarily unavailable"
+
+msgid "pm/warning/tooltip/body/no_missions_available"
+msgstr ""
+"There are no active missions for your selected vehicle. Please choose "
+"another vehicle."
+
+msgid "pm/warning/tooltip/body/temporarily_unavailable"
+msgstr ""
+"This mission is temporarily unavailable for technical reasons. We apologize "
+"for the inconvenience."
+
+msgid "pm/warning/tooltip/body/tier"
+msgstr ""
+"Your selected vehicle does not meet the tier requirements for the active "
+"operations. Please choose another vehicle."
+
+msgid "pm/warning/tooltip/header/no_missions_available"
+msgstr "No Active Missions"
+
+msgid "pm/warning/tooltip/header/temporarily_unavailable"
+msgstr "Temporarily Unavailable"
+
+msgid "pm/warning/tooltip/header/tier"
+msgstr "Unsuitable Tier"
+
 msgid "quests/daily_quests/all_completed"
 msgstr "All regular missions completed for today"
 
 msgid "quests/daily_quests/completed"
 msgstr "All Daily Missions completed"
+
+msgid "slider/title/missions"
+msgstr "Regular Missions"
+
+msgid "slider/title/personalMissions"
+msgstr "Personal Missions"
 
 msgid "tooltip/common/timer"
 msgstr "Available in {{timeLeft}}"

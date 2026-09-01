@@ -24,18 +24,11 @@
 					<materialKind>0</materialKind>
 					<property>
 						g_crashUVTiling
-						<Vector4>
-							2 1 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>2.000000 1.000000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						crashTileMap
 						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
-					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
 					</property>
 					<property>
 						excludeMaskAndAOMap
@@ -57,27 +50,15 @@
 						diffuseMap
 						<Texture>vehicles/german/G08_Pz38t/Pz38t_guns_AM.dds</Texture>
 					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
 				</material>
-				<groupOrigin>-0.023353 0.024938 0.578917</groupOrigin>
+				<groupOrigin>-0.000049 0.024938 0.612146</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.143525 -0.152695 -0.482228</min>
-		<max>0.096819 0.202571 1.640062</max>
+		<min>-0.089172 -0.152695 -0.407943</min>
+		<max>0.089074 0.202571 1.632235</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>78644</geometrySize>
+	<geometrySize>43342</geometrySize>
 </root>

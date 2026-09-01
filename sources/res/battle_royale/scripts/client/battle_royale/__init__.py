@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from chat_shared import SYS_MESSAGE_TYPE
 from battle_royale_progression_common.battle_royale_progression_constants import SM_TYPES
 
@@ -7,9 +8,9 @@ def registerSystemMessagesTypes():
 
 def initProgression():
     registerSystemMessagesTypes()
-    from gui.game_control import registerBRProgressionAwardControllers
+    from battle_royale.gui.game_control import registerBRProgressionAwardControllers
     registerBRProgressionAwardControllers()
-    from notification import registerClientNotificationHandlers
+    from battle_royale.notification import registerClientNotificationHandlers
     registerClientNotificationHandlers()
-    from messenger.formatters import registerMessengerServerFormatters
+    from battle_royale.messenger.formatters import registerMessengerServerFormatters
     registerMessengerServerFormatters()

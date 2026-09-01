@@ -327,70 +327,70 @@
 			<property>g_emissiveParams</property>
 			<frame>
 				<startTime>0.000000</startTime>
-				<value>0.000000 0.000000 1.000000 4.000000</value>
+				<value>0.000000 0.000000 1.000000 8.285182</value>
 				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
 				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
 				<tangentMode>257</tangentMode>
 			</frame>
 			<frame>
 				<startTime>17.000000</startTime>
-				<value>0.000000 0.000000 1.000000 4.000000</value>
+				<value>0.000000 0.000000 1.000000 8.285182</value>
 				<inTangent>-0.000000 -0.000000 -0.000000 -0.000000</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 -44.999397</outTangent>
+				<outTangent>0.000000 0.000000 0.000000 -109.276268</outTangent>
 				<tangentMode>257</tangentMode>
 			</frame>
 			<frame>
 				<startTime>17.066668</startTime>
 				<value>0.000000 0.000000 1.000000 1.000000</value>
-				<inTangent>-0.000000 -0.000000 -0.000000 -44.999397</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 44.999397</outTangent>
+				<inTangent>-0.000000 -0.000000 -0.000000 -109.276268</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 109.276268</outTangent>
 				<tangentMode>257</tangentMode>
 			</frame>
 			<frame>
 				<startTime>17.133335</startTime>
-				<value>0.000000 0.000000 1.000000 4.000000</value>
-				<inTangent>-0.000000 -0.000000 -0.000000 44.999397</inTangent>
+				<value>0.000000 0.000000 1.000000 8.285182</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 109.276268</inTangent>
 				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
 				<tangentMode>257</tangentMode>
 			</frame>
 			<frame>
 				<startTime>42.400002</startTime>
-				<value>0.000000 0.000000 1.000000 4.000000</value>
+				<value>0.000000 0.000000 1.000000 8.285182</value>
 				<inTangent>-0.000000 -0.000000 -0.000000 -0.000000</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 -30.000458</outTangent>
+				<outTangent>0.000000 0.000000 0.000000 -30.000414</outTangent>
 				<tangentMode>257</tangentMode>
 			</frame>
 			<frame>
 				<startTime>42.466667</startTime>
-				<value>0.000000 0.000000 1.000000 2.000000</value>
-				<inTangent>-0.000000 -0.000000 -0.000000 -30.000458</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 29.998741</outTangent>
+				<value>0.000000 0.000000 1.000000 6.285185</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -30.000414</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 29.998699</outTangent>
 				<tangentMode>257</tangentMode>
 			</frame>
 			<frame>
 				<startTime>42.533337</startTime>
-				<value>0.000000 0.000000 1.000000 4.000000</value>
-				<inTangent>-0.000000 -0.000000 -0.000000 29.998741</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 -30.000458</outTangent>
+				<value>0.000000 0.000000 1.000000 8.285182</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 29.998699</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -62.139812</outTangent>
 				<tangentMode>257</tangentMode>
 			</frame>
 			<frame>
 				<startTime>42.666668</startTime>
 				<value>0.000000 0.000000 1.000000 0.000000</value>
-				<inTangent>-0.000000 -0.000000 -0.000000 -30.000458</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 39.999084</outTangent>
+				<inTangent>-0.000000 -0.000000 -0.000000 -62.139812</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 82.849922</outTangent>
 				<tangentMode>257</tangentMode>
 			</frame>
 			<frame>
 				<startTime>42.766670</startTime>
-				<value>0.000000 0.000000 1.000000 4.000000</value>
-				<inTangent>-0.000000 -0.000000 -0.000000 39.999084</inTangent>
+				<value>0.000000 0.000000 1.000000 8.285182</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 82.849922</inTangent>
 				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
 				<tangentMode>257</tangentMode>
 			</frame>
 			<frame>
 				<startTime>49.966671</startTime>
-				<value>0.000000 0.000000 1.000000 4.000000</value>
+				<value>0.000000 0.000000 1.000000 8.285182</value>
 				<inTangent>-0.000000 -0.000000 -0.000000 -0.000000</inTangent>
 				<outTangent>-0.000000 -0.000000 -0.000000 -0.000000</outTangent>
 				<tangentMode>257</tangentMode>

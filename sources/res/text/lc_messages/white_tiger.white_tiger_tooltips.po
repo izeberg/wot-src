@@ -1,0 +1,197 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-16 10:00+0300\n"
+"PO-Revision-Date: 2023-03-16 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "bannerTooltip/allStagesAreCompleted"
+msgstr "All stages are completed!"
+
+msgid "bannerTooltip/description"
+msgstr ""
+"The Blitzträger against the Harriers: asymmetrical 1v6 combat in modified "
+"vehicles. Earn unique customization elements and other valuable rewards."
+
+msgid "bannerTooltip/expiryDate/frozen"
+msgstr "Ceasefire"
+
+msgid "bannerTooltip/expiryDate/inAnnouncement"
+msgstr "Waffenträger will be energized on"
+
+msgid "bannerTooltip/expiryDate/technicalPause"
+msgstr "The Mode is not available at the moment"
+
+msgid "bannerTooltip/header"
+msgstr "Waffenträger: Genesis"
+
+msgid "bannerTooltip/mode"
+msgstr "MODE"
+
+msgid "bannerTooltip/modeHint"
+msgstr "— switching to another game mode"
+
+msgid "bannerTooltip/performanceRisk/text/highRisk"
+msgstr ""
+"Your computer's performance is insufficient for this mode. You will "
+"experience issues with graphics and vehicle movement. Game client crashes "
+"are also probable."
+
+msgid "bannerTooltip/performanceRisk/text/lowRisk"
+msgstr ""
+"In case of insufficient performance, try lowering the graphics settings."
+
+msgid "bannerTooltip/performanceRisk/text/mediumRisk"
+msgstr ""
+"This mode demands high computer performance. You will experience issues with"
+" map loading, graphics, and vehicle movement. In case of insufficient "
+"performance, try a lower graphics quality in Settings."
+
+msgid "bannerTooltip/performanceRisk/title/highRisk"
+msgstr "Low Performance"
+
+msgid "bannerTooltip/performanceRisk/title/lowRisk"
+msgstr "The mode is demanding on the computer"
+
+msgid "bannerTooltip/performanceRisk/title/mediumRisk"
+msgstr "Reduced Performance"
+
+msgid "bannerTooltip/year"
+msgstr "2026"
+
+msgid "battleResult/interaction/friend/friend"
+msgstr "You are already Friends."
+
+msgid "battleResult/interaction/friend/inviteSent"
+msgstr "Awaiting Friend request confirmation."
+
+msgid "battleResult/interaction/friend/removeFromBlacklist"
+msgstr "Remove player from your Blacklist."
+
+msgid "battleResult/interaction/friend/sendInvite"
+msgstr "Add to Friends list"
+
+msgid "battleResult/interaction/menu"
+msgstr "Click to open the interaction menu with this player."
+
+msgid "battleResult/interaction/platoon/platoonCanMade"
+msgstr "Add to Platoon"
+
+msgid "battleResult/interaction/platoon/platoonDone"
+msgstr "Player already in Platoon."
+
+msgid "battleResult/interaction/platoon/platoonSent"
+msgstr "Invitation already sent."
+
+msgid "battleResult/interaction/platoon/platoonUnavailable"
+msgstr "Only the Platoon Commander can invite players to join a Platoon."
+
+msgid "dailyQuests/badgeStatus"
+msgstr "%(icon) Available until %(date)s"
+
+msgid "dailyQuests/rewards"
+msgstr "Rewards:"
+
+msgid "dailyQuests/status"
+msgstr "New daily mission in %(icon) %(timer)"
+
+msgid "hangar/startBtn/lock/body"
+msgstr "Select an available vehicle to enter battle."
+
+msgid "hangar/startBtn/lock/header"
+msgstr "Unavailable"
+
+msgid "hangar/startBtn/offline/body"
+msgstr ""
+"Battles in the selected difficulty/mode are temporarily unavailable for "
+"technical reasons."
+
+msgid "hangar/startBtn/offline/header"
+msgstr "Unavailable"
+
+msgid "hangar/startBtn/squadInBattle/body"
+msgstr ""
+"Wait for the Platoon to return from the previous battle to enter a new "
+"battle."
+
+msgid "hangar/startBtn/squadInBattle/header"
+msgstr "Unavailable"
+
+msgid "hangar/startBtn/squadNotAvailableLevel/body"
+msgstr "Incompatible difficulty level for the Platoon."
+
+msgid "hangar/startBtn/squadNotAvailableLevel/header"
+msgstr "Unavailable"
+
+msgid "metaWidget/body"
+msgstr "Click to view all event Objectives and rewards."
+
+msgid "metaWidget/header"
+msgstr "Reward Path"
+
+msgid "shopWidget/body"
+msgstr ""
+"Click to open a special section of the in-game Store with exclusive event "
+"bundles."
+
+msgid "shopWidget/header"
+msgstr "Waffenträger Keys and more"
+
+msgid "teamList/actions/body"
+msgstr "Quick actions for creating a Platoon and adding / removing friends."
+
+msgid "teamList/actions/header"
+msgstr "Quick Actions"
+
+msgid "teamList/damage/body"
+msgstr "Sort by damage caused."
+
+msgid "teamList/damage/header"
+msgstr "Damage Caused"
+
+msgid "teamList/keys/body"
+msgstr ""
+"Sort by Keys earned (the value displayed does not count bonus Keys received "
+"for completing the corresponding daily mission)."
+
+msgid "teamList/keys/header"
+msgstr "Keys Earned"
+
+msgid "teamList/kills/body"
+msgstr "Sort by enemy vehicles destroyed."
+
+msgid "teamList/kills/header"
+msgstr "Enemy Vehicles Destroyed"
+
+msgid "teamList/name/header"
+msgstr "Player's name"
+
+msgid "teamList/place/body"
+msgstr "Sort by position on the team."
+
+msgid "teamList/place/header"
+msgstr "Position on the Team"
+
+msgid "teamList/squad/header"
+msgstr "A Platoon is a tactical unit for players to cooperate in battles."
+
+msgid "teamList/vehicle/body"
+msgstr "Sort by vehicle type and name."
+
+msgid "teamList/vehicle/header"
+msgstr "Vehicles"
+
+msgid "vehicle/eventBonus"
+msgstr ""
+"Bonus Keys are available for completing a daily mission in this vehicle"
+
+msgid "vehicle/lowEfficiency"
+msgstr "Low crew efficiency"
+
+msgid "vehicle/rentState"
+msgstr "Locked"

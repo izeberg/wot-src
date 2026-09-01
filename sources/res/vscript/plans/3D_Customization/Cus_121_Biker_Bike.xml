@@ -83,8 +83,8 @@
 				</slots>
 			</block>
 			<block>
-				<class>GetVehicleGameObject</class>
-				<id>GetVehicleGameObject_2</id>
+				<class>GameObjectToVehicle</class>
+				<id>GameObjectToVehicle_3</id>
 			</block>
 			<block>
 				<class>If</class>
@@ -109,8 +109,8 @@
 				</slots>
 			</block>
 			<block>
-				<class>GameObjectToVehicle</class>
-				<id>GameObjectToVehicle_3</id>
+				<class>GetVehicleGameObject</class>
+				<id>GetVehicleGameObject_2</id>
 			</block>
 			<block>
 				<class>Timer</class>
@@ -126,24 +126,6 @@
 					<slot>
 						<name>time0</name>
 						<const>\2.000000\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>SetVariable</class>
-				<id>SetVariable_2</id>
-				<buddy>Variable_5</buddy>
-				<params>
-					<param>
-						BoolT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>value</name>
-						<const>\false\</const>
 					</slot>
 				</slots>
 			</block>
@@ -173,6 +155,24 @@
 				</slots>
 			</block>
 			<block>
+				<class>SetVariable</class>
+				<id>SetVariable_2</id>
+				<buddy>Variable_5</buddy>
+				<params>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>value</name>
+						<const>\false\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
 				<class>GetVariable</class>
 				<id>GetVariable_4</id>
 				<buddy>Variable_5</buddy>
@@ -185,6 +185,10 @@
 				</params>
 			</block>
 			<block>
+				<class>If</class>
+				<id>If_19</id>
+			</block>
+			<block>
 				<class>Macro</class>
 				<id>Macro_1</id>
 				<params>
@@ -192,22 +196,6 @@
 						CustomizationVehicleEvents
 						<name>Macro Name</name>
 						<type>StringT</type>
-					</param>
-				</params>
-			</block>
-			<block>
-				<class>If</class>
-				<id>If_19</id>
-			</block>
-			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_6</id>
-				<buddy>Variable_6</buddy>
-				<params>
-					<param>
-						BoolT
-						<name>Variable Type</name>
-						<type>TypeT</type>
 					</param>
 				</params>
 			</block>
@@ -226,24 +214,6 @@
 					<slot>
 						<name>value</name>
 						<const>\true\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>SetVariable</class>
-				<id>SetVariable_6</id>
-				<buddy>Variable_6</buddy>
-				<params>
-					<param>
-						BoolT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>value</name>
-						<const>\false\</const>
 					</slot>
 				</slots>
 			</block>
@@ -290,6 +260,36 @@
 				</slots>
 			</block>
 			<block>
+				<class>SetVariable</class>
+				<id>SetVariable_6</id>
+				<buddy>Variable_6</buddy>
+				<params>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>value</name>
+						<const>\false\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_6</id>
+				<buddy>Variable_6</buddy>
+				<params>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+			</block>
+			<block>
 				<class>ContextGetSelf</class>
 				<id>ContextGetSelf_1</id>
 				<params>
@@ -308,10 +308,10 @@
 		</blocks>
 		<connections>
 			<connection>
-				<from>ContextGetSelf_1</from>
+				<from>GetVehicleGameObject_2</from>
 				<input>gameObject</input>
-				<to>GetVehicleGameObject_2</to>
-				<output>value</output>
+				<to>GameObjectToVehicle_3</to>
+				<output>vehicleObject</output>
 			</connection>
 			<connection>
 				<from>Macro_1</from>
@@ -338,22 +338,16 @@
 				<output>false</output>
 			</connection>
 			<connection>
-				<from>GetVehicleGameObject_2</from>
+				<from>ContextGetSelf_1</from>
 				<input>gameObject</input>
-				<to>GameObjectToVehicle_3</to>
-				<output>vehicleObject</output>
+				<to>GetVehicleGameObject_2</to>
+				<output>value</output>
 			</connection>
 			<connection>
 				<from>ComponentMethod_38</from>
 				<input>windup</input>
 				<to>Timer_2</to>
 				<output>out</output>
-			</connection>
-			<connection>
-				<from>Timer_2</from>
-				<input>input</input>
-				<to>SetVariable_2</to>
-				<output>event0</output>
 			</connection>
 			<connection>
 				<from>SetVariable_1</from>
@@ -368,10 +362,10 @@
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>GameObjectToVehicle_3</from>
-				<input>vehicle</input>
-				<to>Macro_1</to>
-				<output>vehicle</output>
+				<from>Timer_2</from>
+				<input>input</input>
+				<to>SetVariable_2</to>
+				<output>event0</output>
 			</connection>
 			<connection>
 				<from>Macro_1</from>
@@ -398,16 +392,22 @@
 				<output>value</output>
 			</connection>
 			<connection>
+				<from>GameObjectToVehicle_3</from>
+				<input>vehicle</input>
+				<to>Macro_1</to>
+				<output>vehicle</output>
+			</connection>
+			<connection>
 				<from>If_19</from>
 				<input>input</input>
 				<to>SetVariable_5</to>
 				<output>false</output>
 			</connection>
 			<connection>
-				<from>Timer_3</from>
+				<from>Macro_1</from>
 				<input>input</input>
-				<to>SetVariable_6</to>
-				<output>event0</output>
+				<to>SetVariable_5</to>
+				<output>PrebattleHighlightStart</output>
 			</connection>
 			<connection>
 				<from>ComponentMethod_39</from>
@@ -426,6 +426,12 @@
 				<input>gameObject</input>
 				<to>ComponentMethod_39</to>
 				<output>value</output>
+			</connection>
+			<connection>
+				<from>Timer_3</from>
+				<input>input</input>
+				<to>SetVariable_6</to>
+				<output>event0</output>
 			</connection>
 		</connections>
 		<macros>

@@ -24,6 +24,10 @@
 					<materialKind>0</materialKind>
 					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
 					<property>
+						g_enableEnvMultiplier
+						<Bool>true</Bool>
+					</property>
+					<property>
 						diffuseUVSpeedAlphaOffset
 						<Vector4>
 							0.000000 0.005 0.000000 0.000000
@@ -40,7 +44,7 @@
 					<property>
 						lightMultipliers
 						<Vector4>
-							1 0.105 0.6 0.000000
+							1.515152 0.105 0.6 0.000000
 							<!--BW_String-->
 						</Vector4>
 					</property>

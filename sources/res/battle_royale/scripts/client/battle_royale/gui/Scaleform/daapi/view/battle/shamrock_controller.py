@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BattleReplay, BigWorld
 from gui.Scaleform.daapi.view.meta.BRShamrockControllerMeta import BRShamrockControllerMeta
 from ReplayEvents import g_replayEvents

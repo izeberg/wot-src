@@ -29,10 +29,9 @@ class ClassProgressAchievement(SimpleProgressAchievement):
     def getProgressValue(self):
         if self._progressValue == 1:
             return 1.0
-        else:
-            if self._lvlUpTotalValue == 0:
-                return 1.0
-            return 1 - float(self._lvlUpValue) / float(self._lvlUpTotalValue)
+        if self._lvlUpTotalValue == 0:
+            return 1.0
+        return 1 - float(self._lvlUpValue) / float(self._lvlUpTotalValue)
 
     def isInNear(self):
         return self.getProgressValue() >= 0.95 or self._lvlUpValue == 1
@@ -52,23 +51,21 @@ class ClassProgressAchievement(SimpleProgressAchievement):
     def _readLevelUpTotalValue(self, dossier):
         if self._name not in RECORD_CONFIGS:
             return 0
-        else:
-            progressValue = self._progressValue or self.NO_LVL
-            medalCfg = RECORD_CONFIGS[self._name]
-            maxMedalClass = len(medalCfg)
-            nextMedalClass = progressValue - 1
-            nextMedalClassIndex = maxMedalClass - nextMedalClass
-            if nextMedalClass <= 0:
-                return 0.0
-            if nextMedalClass <= maxMedalClass:
-                return medalCfg[nextMedalClassIndex]
-            return 1.0
+        progressValue = self._progressValue or self.NO_LVL
+        medalCfg = RECORD_CONFIGS[self._name]
+        maxMedalClass = len(medalCfg)
+        nextMedalClass = progressValue - 1
+        nextMedalClassIndex = maxMedalClass - nextMedalClass
+        if nextMedalClass <= 0:
+            return 0.0
+        if nextMedalClass <= maxMedalClass:
+            return medalCfg[nextMedalClassIndex]
+        return 1.0
 
     def _readLevelUpValue(self, dossier):
         if self._progressValue == 1:
             return 0.0
-        else:
-            return max(float(self._lvlUpTotalValue) - float(self._currentProgressValue), 0.0)
+        return max(float(self._lvlUpTotalValue) - float(self._currentProgressValue), 0.0)
 
     def _readCurrentProgressValue(self, dossier):
         return 0

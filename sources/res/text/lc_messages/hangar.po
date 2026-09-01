@@ -149,6 +149,28 @@ msgstr[0] "{{count}} victory"
 msgstr[1] "{{count}} victories"
 msgstr[2] "{{count}} victories"
 
+msgid "restBonusWidget/tooltip/available"
+msgstr "Available for {{value}}"
+
+msgid "restBonusWidget/tooltip/battleExperience"
+msgstr "Combat Experience"
+
+msgid "restBonusWidget/tooltip/description/body"
+msgstr ""
+"To celebrate your return to action, we've got something special for you: {{@"
+" style (color #ede6d9e6)}}the daily Redeployment Bonus{{/}} boosts the "
+"Combat XP earned for your first victory of the day in each vehicle."
+
+msgid "restBonusWidget/tooltip/description/header"
+msgstr "Welcome back, Commander!"
+
+msgid "restBonusWidget/tooltip/reset"
+msgstr ""
+"The bonus is reset daily at {{@ style (color #ede6d9e6)}}{{value}}{{/}}."
+
+msgid "restBonusWidget/tooltip/title/available"
+msgstr "Redeployment Bonus: Available"
+
 msgid "tooltip/filters/myVehicle/body"
 msgstr "Click to go to your vehicle playlists"
 

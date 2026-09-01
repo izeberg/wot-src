@@ -10,7 +10,7 @@ package net.wg.gui.components.crosshairPanel.components.shared
       
       public static const READY_STATE:String = "ready";
       
-      private static const STATE_INSTANTLY_POSFIX:String = "_instantly";
+      protected static const STATE_INSTANTLY_POSTFIX:String = "_instantly";
       
       private static const ACTIVE_MC_STATE_NORMAL:String = "normal";
       
@@ -63,7 +63,7 @@ package net.wg.gui.components.crosshairPanel.components.shared
          this._state = param1;
          if(param2)
          {
-            this.gotoAndStop(param1 + STATE_INSTANTLY_POSFIX);
+            this.gotoAndStop(param1 + STATE_INSTANTLY_POSTFIX);
          }
          else
          {

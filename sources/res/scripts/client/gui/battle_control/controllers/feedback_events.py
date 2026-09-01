@@ -81,9 +81,9 @@ def _getShellType(shellTypeID):
 class _DamageExtra(object):
     __slots__ = ('__damage', '__attackReasonID', '__isBurst', '__shellType', '__isShellGold',
                  '__secondaryAttackReasonID', '__isRoleAction', '__isAutoShoot',
-                 '__attackReasonExtID')
+                 '__attackReasonExtID', '__attackerMechanicShotMode')
 
-    def __init__(self, damage=0, attackReasonID=0, isBurst=False, shellTypeID=NONE_SHELL_TYPE, shellIsGold=False, secondaryAttackReasonID=0, isRoleAction=False, isAutoShoot=False, attackReasonExtID=-1):
+    def __init__(self, damage=0, attackReasonID=0, isBurst=False, shellTypeID=NONE_SHELL_TYPE, shellIsGold=False, secondaryAttackReasonID=0, isRoleAction=False, isAutoShoot=False, attackReasonExtID=-1, attackerMechanicShotMode=0):
         super(_DamageExtra, self).__init__()
         self.__damage = damage
         self.__attackReasonID = attackReasonID
@@ -94,7 +94,11 @@ class _DamageExtra(object):
         self.__isRoleAction = bool(isRoleAction)
         self.__isAutoShoot = bool(isAutoShoot)
         self.__attackReasonExtID = attackReasonExtID
+        self.__attackerMechanicShotMode = attackerMechanicShotMode
         _logger.debug('_DamageExtra isRoleAction = %s', isRoleAction)
+
+    def getAttackerMechanicShotMode(self):
+        return self.__attackerMechanicShotMode
 
     def getDamage(self):
         return self.__damage
@@ -241,6 +245,11 @@ class _DamageExtra(object):
     def isAutoShoot(self):
         return self.__isAutoShoot
 
+    def isHERocket(self):
+        isShot = self.isAttackReason(ATTACK_REASON.SHOT)
+        isHERocket = self.isSecondaryAttackReason(ATTACK_REASON.HE_ROCKET)
+        return isShot and isHERocket
+
 
 class _VisibilityExtra(object):
     __slots__ = ('__isVisible', '__isDirect', '__isRoleAction')
@@ -280,9 +289,10 @@ class _MultiStunExtra(object):
 
 class _CritsExtra(object):
     __slots__ = ('__critsCount', '__shellType', '__isShellGold', '__attackReasonID',
-                 '__secondaryAttackReasonID', '__isAutoShoot', '__attackReasonExtID')
+                 '__secondaryAttackReasonID', '__isAutoShoot', '__attackReasonExtID',
+                 '__attackerMechanicShotMode')
 
-    def __init__(self, critsCount=0, attackReasonID=0, shellTypeID=NONE_SHELL_TYPE, shellIsGold=False, secondaryAttackReasonID=0, isAutoShoot=False, attackReasonExtID=-1):
+    def __init__(self, critsCount=0, attackReasonID=0, shellTypeID=NONE_SHELL_TYPE, shellIsGold=False, secondaryAttackReasonID=0, isAutoShoot=False, attackReasonExtID=-1, attackerMechanicShotMode=0):
         super(_CritsExtra, self).__init__()
         self.__critsCount = critsCount
         self.__attackReasonID = attackReasonID
@@ -291,6 +301,10 @@ class _CritsExtra(object):
         self.__secondaryAttackReasonID = secondaryAttackReasonID
         self.__isAutoShoot = isAutoShoot
         self.__attackReasonExtID = attackReasonExtID
+        self.__attackerMechanicShotMode = attackerMechanicShotMode
+
+    def getAttackerMechanicShotMode(self):
+        return self.__attackerMechanicShotMode
 
     def getCritsCount(self):
         return self.__critsCount

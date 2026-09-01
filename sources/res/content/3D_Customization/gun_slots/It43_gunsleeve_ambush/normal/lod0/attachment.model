@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>content/3D_Customization/gun_slots/It43_gunsleeve_ambush/normal/lod0/attachment</nodefullVisual>
+	<visibilityBox>
+		<min>-0.337977 -0.355890 -2.224982</min>
+		<max>0.249439 0.256963 0.962300</max>
+	</visibilityBox>
+	<parent>content/3D_Customization/gun_slots/It43_gunsleeve_ambush/normal/lod1/attachment</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+</root>

@@ -38,6 +38,30 @@ msgstr "RECEIVED REWARDS"
 msgid "awardViews/footer/backButton/"
 msgstr "Affirmative!"
 
+msgid "awardViews/footer/caption/attemptsLeft"
+msgstr "{{count}} left"
+
+msgid "awardViews/footer/caption/noAttempts"
+msgstr "No reopenings"
+
+msgid "awardViews/footer/caption/valuable"
+msgstr "Valuable reward"
+
+msgid "awardViews/footer/rerollButton/free"
+msgstr "Reopen for Free"
+
+msgid "awardViews/footer/rerollButton/notEnoughBons"
+msgstr "Not enough bonds"
+
+msgid "awardViews/footer/rerollButton/paid"
+msgstr "Reopen for {{count}}"
+
+msgid "awardViews/footer/rerollButton/reopen"
+msgstr "Reopen"
+
+msgid "awardViews/footer/tooltip/specialDropBody"
+msgstr "Dropped valuable rewards are not eligible for reopening."
+
 msgid "bonuses/description/battle_booster"
 msgstr "Directive"
 
@@ -131,6 +155,19 @@ msgstr "Boxes opened: %(count)"
 msgid "common/statsButton"
 msgstr "Statistics"
 
+msgid "confirmRerollLootBox/cancel"
+msgstr "Cancel"
+
+msgid "confirmRerollLootBox/description/default"
+msgstr ""
+"The box will be opened again for a chance to receive different rewards."
+
+msgid "confirmRerollLootBox/reopen"
+msgstr "Reopen"
+
+msgid "confirmRerollLootBox/title"
+msgstr "Reopen for {{cost}}?"
+
 msgid "confirmResetLootBoxStatistics/cancel"
 msgstr "Cancel"
 
@@ -217,33 +254,42 @@ msgstr "%(boxName)s: %(count)s"
 msgid "homeView/subtitle"
 msgstr "The event will end in %(time)"
 
-msgid "infoPage/footer/description/autoOpen"
+msgid "infoPage/footer/description/autoOpen/default"
 msgstr ""
 "If you do not open boxes before end of event, they will be opened "
 "automatically."
 
-msgid "infoPage/footer/description/compensation"
+msgid "infoPage/footer/description/compensation/default"
 msgstr ""
 "If you already own all vehicles from the list of possible box contents, then"
 " all subsequent vehicles you receive from boxes will be compensated in gold "
 "equal to their full value."
 
-msgid "infoPage/footer/description/guaranteed"
+msgid "infoPage/footer/description/guaranteed/default"
 msgstr ""
-"Every %(guaranteed0)s boxes are guaranteed to contain a Tier VIII–X vehicle."
-" If you open them without one dropping such a vehicle, then a Tier VIII–X "
+"Every %(guaranteed)s boxes are guaranteed to contain a Tier VIII–X vehicle. "
+"If you open them without one dropping such a vehicle, then a Tier VIII–X "
 "vehicle you do not already own will drop when you open the "
-"%(guaranteed0)s&zwnbsp;th box (depending on the box type). When it does, the"
-" counter is reset."
+"%(guaranteed)s&zwnbsp;th box (depending on the box type). When it does, the "
+"counter is reset."
 
-msgid "infoPage/footer/title/autoOpen"
+msgid "infoPage/footer/description/reroll/default"
+msgstr ""
+"If you aren't satisfied with the rewards from a box, you can reopen it for a"
+" chance to receive different items from the same list. Each box can only be "
+"reopened a limited number of times:"
+
+msgid "infoPage/footer/title/autoOpen/default"
 msgstr "Auto Open"
 
-msgid "infoPage/footer/title/compensation"
+msgid "infoPage/footer/title/compensation/default"
 msgstr "Compensation"
 
-msgid "infoPage/footer/title/guaranteed"
+msgid "infoPage/footer/title/guaranteed/default"
 msgstr "Guaranteed Reward"
+
+msgid "infoPage/footer/title/reroll/default"
+msgstr "Reopening"
 
 msgid "infoPage/header/lootListLink"
 msgstr "View list of items on the game portal"
@@ -301,6 +347,30 @@ msgstr "for %(vehicleInfo)"
 
 msgid "rareRewardOverlay/rewardDescription/style/text"
 msgstr "%(style) 3D style"
+
+msgid "reroll/free"
+msgstr "Free"
+
+msgid "reroll/singleStep"
+msgstr "{{step}}"
+
+msgid "reroll/template"
+msgstr "{{start}}–{{end}}"
+
+msgid "serviceChannelMessages/financialTransaction"
+msgstr "Financial Transaction"
+
+msgid "serviceChannelMessages/financialTransaction/credits"
+msgstr "Credits deducted: %(amount)s"
+
+msgid "serviceChannelMessages/financialTransaction/crystal"
+msgstr "Bonds deducted: %(amount)s"
+
+msgid "serviceChannelMessages/financialTransaction/date"
+msgstr "Date: %(date)s"
+
+msgid "serviceChannelMessages/financialTransaction/gold"
+msgstr "Gold deducted: %(amount)s"
 
 msgid "serviceChannelMessages/finish/header"
 msgstr "The «%(eventName)s» event has ended"
@@ -510,3 +580,17 @@ msgstr "Compensated vehicles: %(count)"
 
 msgid "tooltip/compensation/notification"
 msgstr "Compensation for a vehicle that is already in your Garage."
+
+msgid "tooltip/reroll/attempt"
+msgstr "Reopening"
+
+msgid "tooltip/reroll/price"
+msgstr "Cost"
+
+msgid "tooltip/reroll/text/default"
+msgstr ""
+"Reopening a box gives you a chance to receive different rewards from the "
+"same list."
+
+msgid "tooltip/reroll/title/default"
+msgstr "Reopening"

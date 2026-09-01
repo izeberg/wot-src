@@ -1,0 +1,8 @@
+from __future__ import absolute_import
+from gui.battle_control import battle_constants
+from constants_utils import ConstInjector
+
+class VEHICLE_VIEW_STATE(battle_constants.VEHICLE_VIEW_STATE, ConstInjector):
+    PLASMA = 19342813113834066795298816
+    WT_HYPERION_CHARGING = 38685626227668133590597632
+    WT_INSPIRE = 77371252455336267181195264

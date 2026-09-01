@@ -183,7 +183,7 @@ msgid "modifier/name/invisibilityOnMove"
 msgstr "Concealment on the move"
 
 msgid "modifier/name/invisibilityOnStill"
-msgstr "Concealment of a stationary vehicle"
+msgstr "Concealment of stationary vehicle"
 
 msgid "modifier/name/normalizationAngle"
 msgstr "Shell normalization"
@@ -246,6 +246,9 @@ msgstr "Damage from pressure"
 
 msgid "modifier/name/vehicleRammingDamage"
 msgstr "Damage from ramming"
+
+msgid "modifier/name/visionMaxRadius"
+msgstr "Maximum spotting range"
 
 msgid "modifier/name/visionMinRadius"
 msgstr "Proximity spotting radius"

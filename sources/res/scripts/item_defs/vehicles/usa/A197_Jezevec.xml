@@ -3791,9 +3791,10 @@
 					</hitTester>
 					<edgeByVisualModel>false</edgeByVisualModel>
 					<shotOffset>
-						0.00032 0.001701 1.897908
+						0.00032 0.001701 -0.151394
 						<!--BW_String-->
 					</shotOffset>
+					<muzzleBrake>HORIZONTAL</muzzleBrake>
 					<camouflage>
 						<density>142.811966 141.918961</density>
 						<aoTextureSize>1024 512</aoTextureSize>

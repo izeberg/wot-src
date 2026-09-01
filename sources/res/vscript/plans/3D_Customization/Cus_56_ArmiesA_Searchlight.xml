@@ -126,10 +126,6 @@
 				</slots>
 			</block>
 			<block>
-				<class>GameObjectToVehicle</class>
-				<id>GameObjectToVehicle_2</id>
-			</block>
-			<block>
 				<class>GetVariable</class>
 				<id>GetVariable_4</id>
 				<buddy>Variable_5</buddy>
@@ -167,10 +163,6 @@
 				</slots>
 			</block>
 			<block>
-				<class>GetVehicleGameObject</class>
-				<id>GetVehicleGameObject_1</id>
-			</block>
-			<block>
 				<class>CompareString</class>
 				<id>CompareString_1</id>
 				<slots>
@@ -185,15 +177,12 @@
 				</slots>
 			</block>
 			<block>
-				<class>Macro</class>
-				<id>Macro_2</id>
-				<params>
-					<param>
-						CustomizationVehicleEvents
-						<name>Macro Name</name>
-						<type>StringT</type>
-					</param>
-				</params>
+				<class>GameObjectToVehicle</class>
+				<id>GameObjectToVehicle_2</id>
+			</block>
+			<block>
+				<class>GetVehicleGameObject</class>
+				<id>GetVehicleGameObject_1</id>
 			</block>
 			<block>
 				<class>If</class>
@@ -267,6 +256,17 @@
 						<const>\0\</const>
 					</slot>
 				</slots>
+			</block>
+			<block>
+				<class>Macro</class>
+				<id>Macro_2</id>
+				<params>
+					<param>
+						CustomizationVehicleEvents
+						<name>Macro Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
 			</block>
 			<block>
 				<class>If</class>
@@ -535,6 +535,89 @@
 					</slot>
 				</slots>
 			</block>
+			<block>
+				<class>ComponentMethod</class>
+				<id>ComponentMethod_16</id>
+				<params>
+					<param>
+						Animator.stop
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>GSMState</class>
+				<id>GSMState_1</id>
+				<params>
+					<param>
+						PREBATTLE
+						<name>GSM State</name>
+						<type>GameplayStateIDT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>ComponentMethod</class>
+				<id>ComponentMethod_45</id>
+				<params>
+					<param>
+						Animator.start
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>arg#0</name>
+						<const>\0.000000\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_21</id>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_30</id>
+			</block>
+			<block>
+				<class>ComponentMethod</class>
+				<id>ComponentMethod_44</id>
+				<params>
+					<param>
+						Animator.setTrigger
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>arg#0</name>
+						<const>\t_green\</const>
+					</slot>
+					<slot>
+						<name>arg#1</name>
+						<const>\true\</const>
+					</slot>
+					<slot>
+						<name>arg#2</name>
+						<const>\0\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>GSMState</class>
+				<id>GSMState_2</id>
+				<params>
+					<param>
+						PREBATTLE_HIGHLIGHTS
+						<name>GSM State</name>
+						<type>GameplayStateIDT</type>
+					</param>
+				</params>
+			</block>
 		</blocks>
 		<connections>
 			<connection>
@@ -574,12 +657,6 @@
 				<output>out</output>
 			</connection>
 			<connection>
-				<from>GetVehicleGameObject_1</from>
-				<input>gameObject</input>
-				<to>GameObjectToVehicle_2</to>
-				<output>vehicleObject</output>
-			</connection>
-			<connection>
 				<from>If_27</from>
 				<input>in</input>
 				<to>ComponentMethod_38</to>
@@ -592,22 +669,22 @@
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>ContextGetSelf_1</from>
-				<input>gameObject</input>
-				<to>GetVehicleGameObject_1</to>
-				<output>value</output>
-			</connection>
-			<connection>
 				<from>GetVariable_4</from>
 				<input>a</input>
 				<to>CompareString_1</to>
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>GameObjectToVehicle_2</from>
-				<input>vehicle</input>
-				<to>Macro_2</to>
-				<output>vehicle</output>
+				<from>GetVehicleGameObject_1</from>
+				<input>gameObject</input>
+				<to>GameObjectToVehicle_2</to>
+				<output>vehicleObject</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>GetVehicleGameObject_1</to>
+				<output>value</output>
 			</connection>
 			<connection>
 				<from>Macro_2</from>
@@ -644,6 +721,12 @@
 				<input>gameObject</input>
 				<to>ComponentMethod_39</to>
 				<output>value</output>
+			</connection>
+			<connection>
+				<from>GameObjectToVehicle_2</from>
+				<input>vehicle</input>
+				<to>Macro_2</to>
+				<output>vehicle</output>
 			</connection>
 			<connection>
 				<from>Macro_2</from>
@@ -805,6 +888,72 @@
 				<from>ContextGetSelf_1</from>
 				<input>gameObject</input>
 				<to>ComponentMethod_43</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>If_21</from>
+				<input>in</input>
+				<to>ComponentMethod_16</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>GSMState_1</from>
+				<input>in</input>
+				<to>ComponentMethod_16</to>
+				<output>onEnterState</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>ComponentMethod_16</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>ComponentMethod_16</from>
+				<input>in</input>
+				<to>ComponentMethod_45</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>ComponentMethod_45</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>If_22</from>
+				<input>input</input>
+				<to>If_21</to>
+				<output>false</output>
+			</connection>
+			<connection>
+				<from>GSMState_1</from>
+				<input>value</input>
+				<to>If_21</to>
+				<output>isActive</output>
+			</connection>
+			<connection>
+				<from>If_21</from>
+				<input>input</input>
+				<to>If_30</to>
+				<output>false</output>
+			</connection>
+			<connection>
+				<from>GSMState_2</from>
+				<input>value</input>
+				<to>If_30</to>
+				<output>isActive</output>
+			</connection>
+			<connection>
+				<from>If_30</from>
+				<input>in</input>
+				<to>ComponentMethod_44</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>ComponentMethod_44</to>
 				<output>value</output>
 			</connection>
 		</connections>

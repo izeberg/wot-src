@@ -27,7 +27,7 @@ package
       
       public static const MAPS_ICONS_BATTLEPASS_WIDGET_BACKGROUND_DEFAULT_BG:String = "../maps/icons/battlePass/widget/background/default/bg.png";
       
-      public static const MAPS_ICONS_BATTLEPASS_WIDGET_BACKGROUND_SEASON_20_BG:String = "../maps/icons/battlePass/widget/background/season_20/bg.png";
+      public static const MAPS_ICONS_BATTLEPASS_WIDGET_BACKGROUND_SEASON_21_BG:String = "../maps/icons/battlePass/widget/background/season_21/bg.png";
       
       public static const MAPS_ICONS_BLUEPRINTS_FRAGMENT_CONVERSION_BG:String = "../maps/icons/blueprints/fragment/conversion/bg.png";
       
@@ -72,6 +72,8 @@ package
       public static const MAPS_ICONS_TANKMEN_SKILLS_BIG_NEW_SKILL:String = "../maps/icons/tankmen/skills/big/new_skill.png";
       
       public static const MAPS_ICONS_UI_POPOVER_BG:String = "../maps/icons/ui/popover/bg.png";
+      
+      public static const MAPS_ICONS_USERMISSIONS_SLIDER_BG:String = "../maps/icons/userMissions/slider/bg.png";
       
       public static const MAPS_UIKIT_DIALOG_TEMPLATES_SELECT_OPTION_BG:String = "../maps/uiKit/dialog_templates/select_option/bg.png";
        

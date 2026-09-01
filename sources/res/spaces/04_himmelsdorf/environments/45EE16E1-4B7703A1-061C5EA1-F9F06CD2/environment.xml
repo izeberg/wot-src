@@ -48,36 +48,32 @@
 		<enable>true</enable>
 		<adaptationSpeed>100.000000</adaptationSpeed>
 		<bloom>
-			<enable>true</enable>
+			<pbsBloom>true</pbsBloom>
 			<threshold>0.300000</threshold>
 			<amount>0.600000</amount>
-			<tint>1.000000 1.000000 1.000000</tint>
 			<dirtAmount>0.860000</dirtAmount>
 		</bloom>
 		<environment>
 			<sunlightLumMultiplier>13.000000</sunlightLumMultiplier>
-			<ambientLumMultiplier>1.000000</ambientLumMultiplier>
 			<sunLumMultiplier>50.000000</sunLumMultiplier>
 			<skyLumMultiplier>0.380000</skyLumMultiplier>
+			<skyLumMultiplierDeferred>1.000000</skyLumMultiplierDeferred>
 			<LDR2HDRenableLumaMask>false</LDR2HDRenableLumaMask>
 			<LDR2HDRsaturation>0.600000</LDR2HDRsaturation>
 		</environment>
 		<tonemappings>
 			<tonemapping>
 				<name>RexpTM</name>
-				<middleGray>0.150000</middleGray>
 				<whitePoint>1.000000</whitePoint>
 				<blackPoint>2.000000</blackPoint>
 			</tonemapping>
 			<tonemapping>
 				<name>FilmicTM</name>
-				<middleGray>0.140000</middleGray>
 				<whitePoint>12.790000</whitePoint>
 				<blackPoint>3.500000</blackPoint>
 			</tonemapping>
 			<tonemapping>
 				<name>LinearExpTM</name>
-				<middleGray>0.090000</middleGray>
 				<whitePoint>1.750000</whitePoint>
 				<blackPoint>0.010000</blackPoint>
 			</tonemapping>
@@ -109,11 +105,11 @@
 		<sunBrightness>0.020000</sunBrightness>
 		<objectEnable>true</objectEnable>
 		<glareEnable>true</glareEnable>
-		<glareIntensity>0.800000</glareIntensity>
-		<glareSize>0.015000</glareSize>
+		<glareIntensity>0.500000</glareIntensity>
+		<glareSize>0.010000</glareSize>
 		<flareIntensity>0.240000</flareIntensity>
-		<objectThreshold>2.000000</objectThreshold>
-		<objectFlareIntensity>0.550000</objectFlareIntensity>
+		<objectThreshold>3.584963</objectThreshold>
+		<objectFlareIntensity>0.300000</objectFlareIntensity>
 		<haloEnable>true</haloEnable>
 		<sunTexture1>system/maps/psf_rgbe.dds</sunTexture1>
 		<colorTexture>system/maps/lenscolorF.dds</colorTexture>
@@ -150,6 +146,10 @@
 		<amplify>0.700000</amplify>
 	</SSShadows>
 	<VFX>
+		<vfxModelsMultiplier>0.400000</vfxModelsMultiplier>
+		<cpuParticlesMultiplier>0.400000</cpuParticlesMultiplier>
+		<gpuParticlesMultiplier>0.400000</gpuParticlesMultiplier>
+		<emissiveMaterialsMultiplier>0.400000</emissiveMaterialsMultiplier>
 		<particlesConfigXml>system/data/particles.xml</particlesConfigXml>
 		<particlesSpaceConfigXml>spaces/04_himmelsdorf/particles.xml</particlesSpaceConfigXml>
 	</VFX>
@@ -292,4 +292,7 @@
 		<transmissionMult>0.650000</transmissionMult>
 		<waterReflectionAttenuation>1.000000</waterReflectionAttenuation>
 	</SimplifiedDeferred>
+	<VisibilityTunnel>
+		<shouldOverrideSettings>false</shouldOverrideSettings>
+	</VisibilityTunnel>
 </root>

@@ -3244,6 +3244,7 @@
 						<collisionModelClient>vehicles/russian/R199_SU_122V/collision_client/Gun_01.model</collisionModelClient>
 					</hitTester>
 					<edgeByVisualModel>false</edgeByVisualModel>
+					<muzzleBrake>HORIZONTAL</muzzleBrake>
 					<camouflage>
 						<density>
 							107.100731 107.47171

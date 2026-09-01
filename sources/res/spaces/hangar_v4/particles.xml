@@ -95,6 +95,10 @@
 			<shader>\data\shaders\ps.fx</shader>
 			<texture>particles/content_deferred/pfx_textures/smoke.dds</texture>
 		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_tex_long.dds</texture>
+		</preload>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/exterior/h_v4_CrowFlock.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/hangar/hangar_v4_dust_orient.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/hangar/hangar_v4_dust_roofset.vfx</fn_effect_bin>

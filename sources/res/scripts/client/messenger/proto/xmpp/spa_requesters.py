@@ -7,9 +7,10 @@ from messenger.proto.xmpp.extensions import spa_resolver
 from messenger.proto.xmpp.gloox_constants import GLOOX_EVENT as _EVENT, IQ_TYPE
 from messenger.proto.xmpp.gloox_wrapper import ClientEventsHandler
 from messenger.proto.xmpp.log_output import g_logOutput, CLIENT_LOG_AREA
-from messenger.storage import storage_getter
+from messenger.storage import MessengerStorageDescriptor, UsersStorage
 
 class NicknameResolver(ClientEventsHandler):
+    usersStorage = MessengerStorageDescriptor(UsersStorage)
 
     def __init__(self):
         super(NicknameResolver, self).__init__()
@@ -17,10 +18,6 @@ class NicknameResolver(ClientEventsHandler):
         self.__callback = None
         self.__iqID = ''
         self.__isRegistered = False
-        return
-
-    @storage_getter('users')
-    def usersStorage(self):
         return
 
     def clear(self):

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from constants import QUEUE_TYPE, ARENA_BONUS_TYPE
 from gui.hangar_presets.providers import DefaultHangarDynamicGuiProvider
 from helpers import dependency

@@ -104,7 +104,7 @@ package net.wg.gui.components.crosshairPanel
       
       private var _isQuickReloadingActive:Boolean = false;
       
-      private var _quickReloadingTime:Number = -1;
+      private var _intuitionCooldown:String = "";
       
       private var _autoloaderBaseTime:Number = 0;
       
@@ -136,6 +136,16 @@ package net.wg.gui.components.crosshairPanel
       
       private var _extraShotClipReloadingFinishTime:Number = 0;
       
+      private var _shellCalibrationState:uint = 0;
+      
+      private var _shellCalibrationClipReloadingState:String = "reloadingEnd";
+      
+      private var _shellCalibrationClipReloadingTimer:Number = 0;
+      
+      private var _shellCalibrationClipReloadingBaseTime:Number = 0;
+      
+      private var _shellCalibrationClipReloadingFinishTime:Number = 0;
+      
       private var _remainingTimeInSec:Number = 0;
       
       private var _baseReloadingTimeInSec:Number = 0;
@@ -155,6 +165,8 @@ package net.wg.gui.components.crosshairPanel
       private var _isAutoloaderCritical:Boolean = false;
       
       private var _isAlternateZoomPosition:Boolean = false;
+      
+      private var _autoreloaderSurgeActive:Boolean = false;
       
       private var _ammoClipState:String = "";
       
@@ -243,6 +255,15 @@ package net.wg.gui.components.crosshairPanel
          if(this._currentCrosshair)
          {
             this._currentCrosshair.isUseAlternateZoomPosition = this._isAlternateZoomPosition;
+         }
+      }
+      
+      public function as_setAutoreloaderSurgeState(param1:Boolean) : void
+      {
+         this._autoreloaderSurgeActive = param1;
+         if(this._currentCrosshair)
+         {
+            this._currentCrosshair.setAutoreloaderSurgeState(this._autoreloaderSurgeActive);
          }
       }
       
@@ -661,6 +682,15 @@ package net.wg.gui.components.crosshairPanel
          }
       }
       
+      public function as_setShellCalibrationState(param1:uint) : void
+      {
+         this._shellCalibrationState = param1;
+         if(this._currentCrosshair != null)
+         {
+            this._currentCrosshair.setShellCalibrationState(param1);
+         }
+      }
+      
       public function as_setNetSeparatorType(param1:String) : void
       {
          if(this._netSeparatorType != param1)
@@ -758,6 +788,10 @@ package net.wg.gui.components.crosshairPanel
          {
             this.setExtraShotClipReloading(param1,param2,param5);
          }
+         else if(this.isShellCalibration)
+         {
+            this.setShellCalibrationClipReloading(param1,param2);
+         }
       }
       
       public function as_setReloadingAsPercent(param1:Number, param2:Number, param3:Boolean, param4:Boolean) : void
@@ -785,6 +819,10 @@ package net.wg.gui.components.crosshairPanel
          if(this.isExtraShot)
          {
             this.setExtraShotClipReloadingAsPercent(this._remainingTimeInSec,this._currReloadingPercent,param4);
+         }
+         else if(this.isShellCalibration)
+         {
+            this.setShellCalibrationClipReloadingAsPercent(this._remainingTimeInSec,this._currReloadingPercent);
          }
       }
       
@@ -830,13 +868,13 @@ package net.wg.gui.components.crosshairPanel
          this.applySettings();
       }
       
-      public function as_setShellChangeTime(param1:Boolean, param2:Number) : void
+      public function as_setShellChangeTime(param1:Boolean, param2:String) : void
       {
          this._isQuickReloadingActive = param1;
-         this._quickReloadingTime = param2;
+         this._intuitionCooldown = param2;
          if(this._currentCrosshair != null)
          {
-            this._currentCrosshair.setQuickReloadingTime(this._isQuickReloadingActive,this._quickReloadingTime);
+            this._currentCrosshair.setQuickReloadingTime(this._isQuickReloadingActive,this._intuitionCooldown);
          }
       }
       
@@ -857,6 +895,14 @@ package net.wg.gui.components.crosshairPanel
          {
             this._speedMode = param1;
             this._speedometer.changeState(param1);
+         }
+      }
+      
+      public function as_setAuxiliaryRocketLauncherActive(param1:Boolean) : void
+      {
+         if(this._gunMarkersContainer != null)
+         {
+            this._gunMarkersContainer.setAuxiliaryRocketLauncherActive(param1);
          }
       }
       
@@ -1194,8 +1240,9 @@ package net.wg.gui.components.crosshairPanel
       {
          if(this._currentCrosshair != null)
          {
-            this._currentCrosshair.setInfo(this._healthInPercents,this._zoomStr,this._currReloadingState,this._isReloadingTimeFieldShown,this._isDistanceShown,this._distanceStr,this._playerInfoStr,this._clipCapacity,this._burst,this._clipReloadingType,this._ammoState,this._ammoQuantity,this._ammoQuantityInClip,this._ammoClipState,this._averageDamageStr,this._ammoClipReloaded,this._isInControllableReload,this._isReloadBoost,this._isReloadBoostBorder,this._isReloadBoostBorderActive,this._isAlternateZoomPosition);
-            this._currentCrosshair.setQuickReloadingTime(this._isQuickReloadingActive,this._quickReloadingTime);
+            this._currentCrosshair.setInfo(this._healthInPercents,this._zoomStr,this._currReloadingState,this._isReloadingTimeFieldShown,this._isDistanceShown,this._distanceStr,this._playerInfoStr,this._clipCapacity,this._burst,this._clipReloadingType,this._ammoState,this._ammoQuantity,this._ammoQuantityInClip,this._ammoClipState,this._averageDamageStr,this._shellCalibrationState,this._ammoClipReloaded,this._isInControllableReload,this._isReloadBoost,this._isReloadBoostBorder,this._isReloadBoostBorderActive,this._isAlternateZoomPosition);
+            this._currentCrosshair.setQuickReloadingTime(this._isQuickReloadingActive,this._intuitionCooldown);
+            this._currentCrosshair.setAutoreloaderSurgeState(this._autoreloaderSurgeActive);
             if(this._speedometer != null)
             {
                this._speedometer.changeState(this._speedMode);
@@ -1240,6 +1287,10 @@ package net.wg.gui.components.crosshairPanel
             {
                this.applyAutoloaderState(true);
             }
+            else if(this.isShellCalibration)
+            {
+               this.applyShellCalibrationClipReloadingState(true);
+            }
          }
          this.updateCurrentCrosshairReloadingParams();
       }
@@ -1269,7 +1320,7 @@ package net.wg.gui.components.crosshairPanel
             this._currReloadingState = CrosshairConsts.RELOADING_ENDED;
             this._remainingTimeInSec = this._baseReloadingTimeInSec;
          }
-         else if(this._isReloadingTimeFieldShown)
+         else
          {
             this._remainingTimeInSec = int(this._baseReloadingTimeInMsec * (1 - this._currReloadingPercent) * DIVIDE_10) * DIVIDE_100;
          }
@@ -1280,10 +1331,7 @@ package net.wg.gui.components.crosshairPanel
       {
          if(this._currentCrosshair != null)
          {
-            if(this._isReloadingTimeFieldShown)
-            {
-               this._currentCrosshair.setReloadingTime(this._remainingTimeInSec);
-            }
+            this._currentCrosshair.setReloadingTime(this._remainingTimeInSec);
             this._currentCrosshair.setReloadingAsPercent(this._currReloadingPercent);
             this._currentCrosshair.setReloadingState(this._currReloadingState);
          }
@@ -1361,6 +1409,68 @@ package net.wg.gui.components.crosshairPanel
          }
       }
       
+      private function setShellCalibrationClipReloading(param1:Number, param2:Number) : void
+      {
+         this.clearShellCalibrationClipTimer();
+         this._shellCalibrationClipReloadingBaseTime = param2;
+         this._shellCalibrationClipReloadingFinishTime = getTimer() + param1 * CrosshairConsts.MS_IN_SECOND;
+         if(param1 > 0)
+         {
+            this._shellCalibrationClipReloadingState = this._ammoQuantityInClip == 0 ? CrosshairConsts.CLIP_RELOADING : CrosshairConsts.GUN_RELOADING;
+            this._shellCalibrationClipReloadingTimer = setInterval(this.updateShellCalibrationClipTimer,CrosshairConsts.ANIMATION_UPDATE_TICK);
+         }
+         else
+         {
+            this._shellCalibrationClipReloadingState = CrosshairConsts.RELOADING_END;
+         }
+         this.applyShellCalibrationClipReloadingState();
+      }
+      
+      private function setShellCalibrationClipReloadingAsPercent(param1:Number, param2:Number) : void
+      {
+         if(param2 < 1)
+         {
+            this._shellCalibrationClipReloadingState = this._ammoQuantityInClip == 0 ? CrosshairConsts.CLIP_RELOADING : CrosshairConsts.GUN_RELOADING;
+         }
+         else
+         {
+            this._shellCalibrationClipReloadingState = CrosshairConsts.RELOADING_END;
+         }
+         if(this._currentCrosshair != null)
+         {
+            this._currentCrosshair.setShellCalibrationClipReloading(this._shellCalibrationClipReloadingState,param2);
+         }
+      }
+      
+      private function clearShellCalibrationClipTimer() : void
+      {
+         this._shellCalibrationClipReloadingTimer = this.clearTimer(this._shellCalibrationClipReloadingTimer);
+      }
+      
+      private function updateShellCalibrationClipTimer() : void
+      {
+         if(getTimer() >= this._shellCalibrationClipReloadingFinishTime)
+         {
+            this.clearShellCalibrationClipTimer();
+         }
+         this.applyShellCalibrationClipReloadingState();
+      }
+      
+      private function applyShellCalibrationClipReloadingState(param1:Boolean = false) : void
+      {
+         var _loc3_:Number = NaN;
+         var _loc2_:Number = 1;
+         if(this._shellCalibrationClipReloadingState != CrosshairConsts.RELOADING_END)
+         {
+            _loc3_ = (this._shellCalibrationClipReloadingFinishTime - getTimer()) / CrosshairConsts.MS_IN_SECOND;
+            _loc2_ -= _loc3_ / this._shellCalibrationClipReloadingBaseTime;
+         }
+         if(this._currentCrosshair != null)
+         {
+            this._currentCrosshair.setShellCalibrationClipReloading(this._shellCalibrationClipReloadingState,_loc2_,param1);
+         }
+      }
+      
       protected function get currentCrosshair() : ICrosshair
       {
          return this._currentCrosshair;
@@ -1399,6 +1509,11 @@ package net.wg.gui.components.crosshairPanel
       private function get isControllableReload() : Boolean
       {
          return this._clipReloadingType == CLIP_RELOADING_TYPES.CONTROLLABLE_RELOAD;
+      }
+      
+      private function get isShellCalibration() : Boolean
+      {
+         return this._clipReloadingType == CLIP_RELOADING_TYPES.SHELL_CALIBRATION_CLIP;
       }
       
       private function onCrosshairPanelSoundHandler(param1:CrosshairPanelEvent) : void

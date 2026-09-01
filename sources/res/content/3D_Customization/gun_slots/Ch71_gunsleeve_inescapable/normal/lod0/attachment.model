@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>content/3D_Customization/gun_slots/Ch71_gunsleeve_inescapable/normal/lod0/attachment</nodefullVisual>
+	<visibilityBox>
+		<min>-0.286198 -0.401771 -2.086487</min>
+		<max>0.276467 0.236216 1.620381</max>
+	</visibilityBox>
+	<parent>content/3D_Customization/gun_slots/Ch71_gunsleeve_inescapable/normal/lod1/attachment</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+</root>

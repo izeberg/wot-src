@@ -793,8 +793,8 @@ msgstr "Sector 3 Super Agent"
 
 msgid "badge_190_descr"
 msgstr ""
-"Can be received for completing all personal missions in the Sector 3 "
-"campaign."
+"Can be received for completing all personal missions in the main operations "
+"of the Sector 3 campaign."
 
 msgid "badge_191"
 msgstr "OLS Autumn'25 Supporter"
@@ -1036,7 +1036,7 @@ msgstr "Burning Oath"
 msgid "badge_225_descr"
 msgstr ""
 "Awarded for achieving the Champion rank in Season of the Crimson Dragon in "
-"Onslaught mode. This reward will be removed at the start of the next Season."
+"Onslaught mode."
 
 msgid "badge_226"
 msgstr "Crown of Flame"
@@ -1044,7 +1044,7 @@ msgstr "Crown of Flame"
 msgid "badge_226_descr"
 msgstr ""
 "Awarded for achieving the Legend rank in Season of the Crimson Dragon in "
-"Onslaught mode. This reward will be removed at the start of the next Season."
+"Onslaught mode."
 
 msgid "badge_227"
 msgstr "Supernova"
@@ -1052,7 +1052,7 @@ msgstr "Supernova"
 msgid "badge_227_descr"
 msgstr ""
 "Awarded for achieving the Legend rank in Season of the Crimson Dragon in "
-"Onslaught mode. This reward will be removed at the start of the next Season."
+"Onslaught mode."
 
 msgid "badge_228"
 msgstr "ATLAS Defender"
@@ -1081,7 +1081,7 @@ msgstr "Noxious Plague"
 msgid "badge_231_descr"
 msgstr ""
 "Awarded for achieving the Champion rank in Season of the Jade Dragon in "
-"Onslaught mode. This reward will be removed at the start of the next Season."
+"Onslaught mode."
 
 msgid "badge_232"
 msgstr "Poison Paradise"
@@ -1089,7 +1089,7 @@ msgstr "Poison Paradise"
 msgid "badge_232_descr"
 msgstr ""
 "Awarded for achieving the Legend rank in Season of the Jade Dragon in "
-"Onslaught mode. This reward will be removed at the start of the next Season."
+"Onslaught mode."
 
 msgid "badge_233"
 msgstr "Biohazard"
@@ -1097,7 +1097,7 @@ msgstr "Biohazard"
 msgid "badge_233_descr"
 msgstr ""
 "Awarded for achieving the Legend rank in Season of the Jade Dragon in "
-"Onslaught mode. This reward will be removed at the start of the next Season."
+"Onslaught mode."
 
 msgid "badge_234"
 msgstr "OLS Autumn'26 Supporter"
@@ -1115,6 +1115,32 @@ msgstr ""
 "Awarded to fans who predicted the winning team of OLS Autumn'26. Your "
 "foresight is legendary!"
 
+msgid "badge_236"
+msgstr "Sentinel Exterminator"
+
+msgid "badge_236_descr"
+msgstr "Awarded for eliminating 200 of von Krieger's Sentinels."
+
+msgid "badge_237"
+msgstr "Fossa VM 68 Badge Class II"
+
+msgid "badge_237_descr"
+msgstr "Can be received for assembling the Fossa VM 68 medium tank."
+
+msgid "badge_238"
+msgstr "Fossa VM 68 Badge Class I"
+
+msgid "badge_238_descr"
+msgstr "Can be received for completing all missions in the Fossa operation."
+
+msgid "badge_239"
+msgstr "Phoenix Champion"
+
+msgid "badge_239_descr"
+msgstr ""
+"Awarded for achieving the Champion rank in Season of the Azure Phoenix in "
+"Onslaught mode. This reward will be removed at the start of the next Season."
+
 msgid "badge_23_descr"
 msgstr ""
 "Be among the top 1000 of participants of the March of Nations event in Tier "
@@ -1122,6 +1148,42 @@ msgstr ""
 
 msgid "badge_24"
 msgstr "Tank Expert: Tier VIII"
+
+msgid "badge_240"
+msgstr "Phoenix Legend"
+
+msgid "badge_240_descr"
+msgstr ""
+"Awarded for achieving the Legend rank in Season of the Azure Phoenix in "
+"Onslaught mode. This reward will be removed at the start of the next Season."
+
+msgid "badge_241"
+msgstr "Legendary Phoenix"
+
+msgid "badge_241_descr"
+msgstr ""
+"Awarded for achieving the Legend rank in Season of the Azure Phoenix in "
+"Onslaught mode. This reward will be removed at the start of the next Season."
+
+msgid "badge_242"
+msgstr "Onslaught 2026–2027: Champion"
+
+msgid "badge_242_descr"
+msgstr "A commemorative badge awarded for collecting 15 Onslaught Colors."
+
+msgid "badge_243"
+msgstr "Onslaught 2026–2027: Legend"
+
+msgid "badge_243_descr"
+msgstr "A commemorative badge awarded for collecting 18 Onslaught Colors."
+
+msgid "badge_244"
+msgstr "Legend of the Phoenix"
+
+msgid "badge_244_descr"
+msgstr ""
+"A special nickname stripe awarded to the best players within the Year of the"
+" Phoenix in Onslaught."
 
 msgid "badge_24_descr"
 msgstr ""
@@ -1785,6 +1847,12 @@ msgstr "Supernova"
 
 msgid "suffix/badge_233"
 msgstr "Biohazard"
+
+msgid "suffix/badge_241"
+msgstr "Legendary Phoenix"
+
+msgid "suffix/badge_244"
+msgstr "Legend of the Phoenix"
 
 msgid "suffix/badge_56"
 msgstr "Alpha Tester"

@@ -76,12 +76,14 @@ class GameRestrictionsMessagesController(Notifiable, IBattleController):
         if priority == self.CURFEW:
             banTime = time.strftime('%H:%M', time.localtime(getArenaStartTime(getArenaUniqueID()) + timeLeft + self.TIME_RESERVE))
             return backport.text(R.strings.messenger.chat.koreaMessage.curfew(), curfewTime=banTime, timeLeft=self.__minutesCount)
-        if priority == self.WEEKLY:
-            return backport.text(R.strings.messenger.chat.koreaMessage.weeklyLimit(), timeLeft=self.__minutesCount)
-        if priority == self.DAILY:
-            return backport.text(R.strings.messenger.chat.koreaMessage.dailyLimit(), timeLeft=self.__minutesCount)
-        if priority == self.SESSION:
-            return backport.text(R.strings.messenger.chat.parentControlMessage.timeLimit(), timeLeft=self.__minutesCount)
+        else:
+            if priority == self.WEEKLY:
+                return backport.text(R.strings.messenger.chat.koreaMessage.weeklyLimit(), timeLeft=self.__minutesCount)
+            if priority == self.DAILY:
+                return backport.text(R.strings.messenger.chat.koreaMessage.dailyLimit(), timeLeft=self.__minutesCount)
+            if priority == self.SESSION:
+                return backport.text(R.strings.messenger.chat.parentControlMessage.timeLimit(), timeLeft=self.__minutesCount)
+            return
 
     def __onBanNotifyHandler(self):
         MessengerEntry.g_instance.gui.addClientMessage(g_settings.htmlTemplates.format('battleErrorMessage', ctx={'error': self.__getNotificationStr()}))
@@ -90,7 +92,7 @@ class GameRestrictionsMessagesController(Notifiable, IBattleController):
         timeOnArena = getTimeOnArena(getArenaUniqueID())
         timeLeft = self.__getTimeLeft() - timeOnArena
         if timeLeft < 0:
-            return
+            return 0
         banTimeLeft = 0
         self.__minutesCount = 1
         for timeNotify in (self.THREE_MIN, self.TWO_MIN, self.ONE_MIN):

@@ -160,6 +160,8 @@ class UnitClientAPI(object):
     def setDevMode(self, isDevMode=True):
         if IS_DEVELOPMENT:
             return self._doUnitCmd(CLIENT_UNIT_CMD.SET_UNIT_DEV_MODE, int(isDevMode))
+        else:
+            return
 
     def startBattle(self, vehInvID=0, gameplaysMask=None, arenaTypeID=0, randomFlags=None, stopAutoSearch=False, startBattleUnitCmd=CLIENT_UNIT_CMD.START_UNIT_BATTLE, extraModeData=''):
         if gameplaysMask is not None:

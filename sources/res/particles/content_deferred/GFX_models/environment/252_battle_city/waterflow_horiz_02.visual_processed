@@ -21,6 +21,10 @@
 				<material>
 					<identifier>water_01</identifier>
 					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
+					<property>
+						g_enableEnvMultiplier
+						<Bool>true</Bool>
+					</property>
 					<materialKind>0</materialKind>
 					<collisionFlags>0</collisionFlags>
 					<property>
@@ -53,7 +57,7 @@
 					</property>
 					<property>
 						lightMultipliers
-						<Vector4>0.800000 0.250000 0.500000 0.000000</Vector4>
+						<Vector4>2.285714 0.250000 0.500000 0.000000</Vector4>
 					</property>
 					<property>
 						TintlColor
@@ -75,6 +79,10 @@
 				<material>
 					<identifier>water_02</identifier>
 					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
+					<property>
+						g_enableEnvMultiplier
+						<Bool>true</Bool>
+					</property>
 					<materialKind>0</materialKind>
 					<collisionFlags>255</collisionFlags>
 					<property>
@@ -107,7 +115,7 @@
 					</property>
 					<property>
 						lightMultipliers
-						<Vector4>0.700000 0.200000 0.300000 0.000000</Vector4>
+						<Vector4>2.000000 0.200000 0.300000 0.000000</Vector4>
 					</property>
 					<property>
 						selfIllumLight

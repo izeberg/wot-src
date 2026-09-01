@@ -122,6 +122,10 @@
 				<lifeTime>100</lifeTime>
 				<trianglesCount>10000</trianglesCount>
 			</slow>
+			<slow_fl>
+				<lifeTime>100</lifeTime>
+				<trianglesCount>2500</trianglesCount>
+			</slow_fl>
 			<medium>
 				<lifeTime>50</lifeTime>
 				<trianglesCount>5000</trianglesCount>

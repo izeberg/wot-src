@@ -159,6 +159,8 @@ package net.wg.gui.lobby.storage.categories.cards
       
       private var _tooltipHitArea:Sprite = null;
       
+      private var _pendingRollOver:Boolean = false;
+      
       private var _index:uint;
       
       private var _stageSizeMgr:IStageSizeManager;
@@ -513,6 +515,11 @@ package net.wg.gui.lobby.storage.categories.cards
                this.renderEquipmentType();
                this.onImageComplete();
                this.drawTooltipHitArea();
+               if(this._pendingRollOver)
+               {
+                  this._pendingRollOver = false;
+                  this.onRollOver();
+               }
             }
          }
       }
@@ -793,6 +800,12 @@ package net.wg.gui.lobby.storage.categories.cards
       
       protected function setData(param1:BaseCardVO) : void
       {
+         if(this._isOver)
+         {
+            this._isOver = false;
+            this._pendingRollOver = true;
+            this.disposeTweens();
+         }
          if(this.extraParams)
          {
             this.updateExtraParamsLayout();

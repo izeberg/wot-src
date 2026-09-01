@@ -1,11 +1,10 @@
 package net.wg.gui.battle.windows
 {
+   import flash.display.MovieClip;
    import flash.geom.ColorTransform;
    import flash.text.TextField;
    import flash.utils.Dictionary;
-   import net.wg.data.constants.generated.BATTLEATLAS;
    import net.wg.data.constants.generated.KEYBOARD_KEYS;
-   import net.wg.gui.battle.components.BattleAtlasSprite;
    import net.wg.gui.components.controls.CloseButtonText;
    import net.wg.gui.components.windows.WindowEvent;
    import net.wg.infrastructure.base.meta.IIngameHelpWindowMeta;
@@ -26,7 +25,11 @@ package net.wg.gui.battle.windows
       
       private static const SCHEME_NAME:String = "vm_enemy";
       
-      private static const WINDOW_PADDING:Padding = new Padding(-25,0,0,0);
+      private static const WINDOW_PADDING:Padding = new Padding(47,0,0,0);
+      
+      private static const NORMAL_LBL:String = "normal";
+      
+      private static const COLOR_BLIND_LBL:String = "colorBlind";
        
       
       public var closeBtn:CloseButtonText = null;
@@ -221,9 +224,7 @@ package net.wg.gui.battle.windows
       
       public var highlightActiveTargetTF:TextField = null;
       
-      public var background:BattleAtlasSprite = null;
-      
-      public var bgInfo:BattleAtlasSprite = null;
+      public var bgInfo:MovieClip = null;
       
       private var _keysDictionary:Dictionary;
       
@@ -272,7 +273,6 @@ package net.wg.gui.battle.windows
       override protected function configUI() : void
       {
          super.configUI();
-         this.background.imageName = BATTLEATLAS.HELP_WINDOW_BG;
          this.closeBtn.label = INGAME_HELP.BATTLECONTROLS_CLOSEBTNLABEL;
          this.closeBtn.addEventListener(ButtonEvent.CLICK,this.onBtnCloseClickHandler);
          updateStage(App.appWidth,App.appHeight);
@@ -280,7 +280,7 @@ package net.wg.gui.battle.windows
          this.setTitleTexts();
          this.setDescriptionTexts();
          this.setCrossHairTexts();
-         this.setkeysTexts();
+         this.setKeysTexts();
          this.updateColorDependencies(this._colorMgr.getIsColorBlindS());
       }
       
@@ -302,7 +302,6 @@ package net.wg.gui.battle.windows
          window.removeEventListener(WindowEvent.SCALE_Y_CHANGED,this.onWindowScaleYChangedHandler);
          this.closeBtn.dispose();
          this.closeBtn = null;
-         this.background = null;
          this.bgInfo = null;
          this._keysDictionary = null;
          this.exampleTimeLeft = null;
@@ -502,7 +501,7 @@ package net.wg.gui.battle.windows
          this.exampleHit.text = INGAME_HELP.CROSSHAIRCONTROLS_EXAMPLE_DAMAGE;
       }
       
-      private function setkeysTexts() : void
+      private function setKeysTexts() : void
       {
          this.printscreenTF.text = CONTROLS.KEYBOARD_KEY_PRINT_SCREEN;
          this.enterTF.text = CONTROLS.KEYBOARD_KEY_ENTER;
@@ -514,7 +513,7 @@ package net.wg.gui.battle.windows
       
       private function updateColorDependencies(param1:Boolean) : void
       {
-         this.bgInfo.imageName = !!param1 ? BATTLEATLAS.HELP_WINDOW_INFO_BLIND : BATTLEATLAS.HELP_WINDOW_INFO;
+         this.bgInfo.gotoAndStop(!!param1 ? COLOR_BLIND_LBL : NORMAL_LBL);
          var _loc2_:uint = this._colorMgr.getRGB(SCHEME_NAME);
          var _loc3_:ColorTransform = this._colorMgr.getTransform(SCHEME_NAME);
          this.exampleName.textColor = _loc2_;

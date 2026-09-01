@@ -13,6 +13,12 @@ package net.wg.gui.battle.views.widgetsPanel
    public class WidgetsPanel extends WidgetsPanelMeta implements IWidgetsPanelMeta
    {
       
+      private static var _slotMap:Dictionary;
+      
+      public static const FORWARD_PROGRESSION_MAX_FRAME:uint = 101;
+      
+      public static const REVERES_PROGRESSION_MAX_FRAME:uint = 100;
+      
       private static const MECHANICS_SNIPER_RIGHT_X:int = 190;
       
       private static const MECHANICS_SNIPER_RIGHT_Y:int = 190;
@@ -30,6 +36,14 @@ package net.wg.gui.battle.views.widgetsPanel
       private static const MECHANICS_ARCADE_LEFT_Y:int = 100;
       
       private static const INFO_OFFSET:int = 47;
+      
+      private static const SLOT_RIGHT:String = "right";
+      
+      private static const SLOT_LEFT:String = "left";
+      
+      private static const SLOT_INFO:String = "info";
+      
+      private static const SLOT_CENTRAL:String = "central";
        
       
       public var mechanicsSlotLeft:Sprite;
@@ -58,6 +72,7 @@ package net.wg.gui.battle.views.widgetsPanel
          this.mechanicsSlotRight.visible = false;
          this.infoSlot.visible = false;
          this.centralSlot.visible = false;
+         this.initSlotMap();
       }
       
       override protected function draw() : void
@@ -108,45 +123,48 @@ package net.wg.gui.battle.views.widgetsPanel
          super.onDispose();
       }
       
+      override protected function updateVisibility() : void
+      {
+         this.visible = this._isVisible && _isCompVisible;
+      }
+      
       public function addWidget(param1:String) : void
       {
          var _loc2_:Sprite = null;
-         var _loc4_:BaseVehicleMechanicsWidget = null;
-         if(BATTLE_WIDGETS_CONSTS.MECHANICS_WIDGETS_RIGHT.indexOf(param1) > -1)
+         var _loc5_:BaseVehicleMechanicsWidget = null;
+         var _loc3_:String = _slotMap[param1];
+         switch(_loc3_)
          {
-            _loc2_ = this.mechanicsSlotRight;
+            case SLOT_RIGHT:
+               _loc2_ = this.mechanicsSlotRight;
+               break;
+            case SLOT_LEFT:
+               _loc2_ = this.mechanicsSlotLeft;
+               break;
+            case SLOT_INFO:
+               _loc2_ = this.infoSlot;
+               break;
+            case SLOT_CENTRAL:
+               _loc2_ = this.centralSlot;
+               break;
+            default:
+               DebugUtils.LOG_ERROR("Incorrect type of slot for " + param1 + " widget!");
+               _loc2_ = this.infoSlot;
          }
-         else if(BATTLE_WIDGETS_CONSTS.MECHANICS_WIDGETS_LEFT.indexOf(param1) > -1)
-         {
-            _loc2_ = this.mechanicsSlotLeft;
-         }
-         else if(BATTLE_WIDGETS_CONSTS.INFO_WIDGETS.indexOf(param1) > -1)
-         {
-            _loc2_ = this.infoSlot;
-         }
-         else if(BATTLE_WIDGETS_CONSTS.CENTRAL_WIDGETS.indexOf(param1) > -1)
-         {
-            _loc2_ = this.centralSlot;
-         }
-         else
-         {
-            DebugUtils.LOG_ERROR("Incorrect type of slot for " + param1 + " widget!");
-            _loc2_ = this.infoSlot;
-         }
-         var _loc3_:WidgetProperties = WidgetSettings.instance.getProperties(param1);
-         if(!_loc3_)
+         var _loc4_:WidgetProperties = WidgetSettings.instance.getProperties(param1);
+         if(!_loc4_)
          {
             return;
          }
-         if(!this._componentsStorage[_loc3_.alias])
+         if(!this._componentsStorage[_loc4_.alias])
          {
-            _loc4_ = App.utils.classFactory.getComponent(_loc3_.linkage,_loc3_.cls);
-            _loc2_.addChild(_loc4_);
+            _loc5_ = App.utils.classFactory.getComponent(_loc4_.linkage,_loc4_.cls);
+            _loc2_.addChild(_loc5_);
             _loc2_.visible = true;
-            this.registerComponent(_loc4_,_loc3_.alias);
-            _loc4_.isReplay = this._isReplay;
-            _loc4_.isPlayer = this._isPlayer;
-            _loc4_.crosshairType = this._crosshairType;
+            this.registerComponent(_loc5_,_loc4_.alias);
+            _loc5_.isReplay = this._isReplay;
+            _loc5_.isPlayer = this._isPlayer;
+            _loc5_.crosshairType = this._crosshairType;
          }
       }
       
@@ -187,12 +205,40 @@ package net.wg.gui.battle.views.widgetsPanel
       {
          this.x = param1;
          this.y = param2;
-         invalidateSize();
       }
       
-      override protected function updateVisibility() : void
+      private function initSlotMap() : void
       {
-         this.visible = this._isVisible && _isCompVisible;
+         var _loc1_:int = 0;
+         if(_slotMap != null)
+         {
+            return;
+         }
+         _slotMap = new Dictionary();
+         _loc1_ = 0;
+         while(_loc1_ < BATTLE_WIDGETS_CONSTS.MECHANICS_WIDGETS_RIGHT.length)
+         {
+            _slotMap[BATTLE_WIDGETS_CONSTS.MECHANICS_WIDGETS_RIGHT[_loc1_]] = SLOT_RIGHT;
+            _loc1_++;
+         }
+         _loc1_ = 0;
+         while(_loc1_ < BATTLE_WIDGETS_CONSTS.MECHANICS_WIDGETS_LEFT.length)
+         {
+            _slotMap[BATTLE_WIDGETS_CONSTS.MECHANICS_WIDGETS_LEFT[_loc1_]] = SLOT_LEFT;
+            _loc1_++;
+         }
+         _loc1_ = 0;
+         while(_loc1_ < BATTLE_WIDGETS_CONSTS.INFO_WIDGETS.length)
+         {
+            _slotMap[BATTLE_WIDGETS_CONSTS.INFO_WIDGETS[_loc1_]] = SLOT_INFO;
+            _loc1_++;
+         }
+         _loc1_ = 0;
+         while(_loc1_ < BATTLE_WIDGETS_CONSTS.CENTRAL_WIDGETS.length)
+         {
+            _slotMap[BATTLE_WIDGETS_CONSTS.CENTRAL_WIDGETS[_loc1_]] = SLOT_CENTRAL;
+            _loc1_++;
+         }
       }
       
       private function registerComponent(param1:BaseVehicleMechanicsWidget, param2:String) : void

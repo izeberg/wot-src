@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>nodes_01</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>hull_gutter</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.001000 0.104960 -2.782000</row3>
+				</transform>
+				<node>
+					<identifier>hull_gutter_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-0.001000 -0.104960 2.782000</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>hull_hatch</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.007000 0.344960 -2.885000</row3>
+				</transform>
+				<node>
+					<identifier>hull_hatch_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-0.007000 -0.344960 2.885000</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>loader_L_root</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.140000 0.053960 -3.780000</row3>
+				</transform>
+				<node>
+					<identifier>loader_L_chain</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 -0.000000 1.000000</row2>
+						<row3>-0.123755 0.159848 -0.388092</row3>
+					</transform>
+					<node>
+						<identifier>loader_L_chain_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>0.263755 -0.213808 4.168093</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>loader_L_chain_static</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 -0.000000 1.000000</row2>
+						<row3>-0.122000 0.159848 -0.416000</row3>
+					</transform>
+					<node>
+						<identifier>loader_L_chain_static_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>0.262000 -0.213808 4.196000</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>loader_L_holder_rotate</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 -0.000000 1.000000</row2>
+						<row3>-0.101000 0.067000 0.000000</row3>
+					</transform>
+					<node>
+						<identifier>loader_L_holder_rotate_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>0.241000 -0.120960 3.780000</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>loader_L_lever_01</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 -0.000000 1.000000</row2>
+						<row3>-0.057000 0.051000 -0.465000</row3>
+					</transform>
+					<node>
+						<identifier>loader_L_lever_02</identifier>
+						<transform>
+							<row0>1.000000 0.000000 -0.000002</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>-0.000000 -0.000000 1.000000</row2>
+							<row3>0.000000 -0.000000 0.920000</row3>
+						</transform>
+						<node>
+							<identifier>loader_L_lever_02_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>0.197000 -0.104960 3.325000</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>loader_L_lever_01_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>0.197000 -0.104960 4.245000</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>loader_L_lever_03</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 -0.000000 1.000000</row2>
+						<row3>-0.120000 0.056000 -0.370000</row3>
+					</transform>
+					<node>
+						<identifier>loader_L_lever_04</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 -0.000000 1.000000</row2>
+							<row3>-0.000000 0.000000 0.729000</row3>
+						</transform>
+						<node>
+							<identifier>loader_L_lever_04_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>0.260000 -0.109960 3.421000</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>loader_L_lever_03_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>0.260000 -0.109960 4.150000</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>loader_L_root_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.140000 -0.053960 3.780000</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>loader_R_root</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.140000 0.053960 -3.780000</row3>
+				</transform>
+				<node>
+					<identifier>loader_R_chain</identifier>
+					<transform>
+						<row0>1.000000 -0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>-0.000000 0.000000 1.000000</row2>
+						<row3>0.123755 0.159850 -0.388090</row3>
+					</transform>
+					<node>
+						<identifier>loader_R_chain_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>-0.263755 -0.213810 4.168090</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>loader_R_chain_static</identifier>
+					<transform>
+						<row0>1.000000 -0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>-0.000000 0.000000 1.000000</row2>
+						<row3>0.122000 0.159850 -0.416000</row3>
+					</transform>
+					<node>
+						<identifier>loader_R_chain_static_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>-0.262000 -0.213810 4.196000</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>loader_R_holder_rotate</identifier>
+					<transform>
+						<row0>1.000000 -0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>-0.000000 0.000000 1.000000</row2>
+						<row3>0.101000 0.067000 0.000000</row3>
+					</transform>
+					<node>
+						<identifier>loader_R_holder_rotate_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>-0.241000 -0.120960 3.780000</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>loader_R_lever_01</identifier>
+					<transform>
+						<row0>1.000000 -0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>-0.000000 0.000000 1.000000</row2>
+						<row3>0.057000 0.051000 -0.465000</row3>
+					</transform>
+					<node>
+						<identifier>loader_R_lever_02</identifier>
+						<transform>
+							<row0>1.000000 -0.000000 0.000002</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>-0.000000 -0.000000 0.920000</row3>
+						</transform>
+						<node>
+							<identifier>loader_R_lever_02_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>-0.197000 -0.104960 3.325000</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>loader_R_lever_01_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>-0.197000 -0.104960 4.245000</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>loader_R_lever_03</identifier>
+					<transform>
+						<row0>1.000000 -0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>-0.000000 0.000000 1.000000</row2>
+						<row3>0.120000 0.056000 -0.370000</row3>
+					</transform>
+					<node>
+						<identifier>loader_R_lever_04</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>-0.000000 -0.000000 1.000000</row2>
+							<row3>0.000000 0.000000 0.729000</row3>
+						</transform>
+						<node>
+							<identifier>loader_R_lever_04_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>-0.260000 -0.109960 3.421000</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>loader_R_lever_03_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>-0.260000 -0.109960 4.150000</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>loader_R_root_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-0.140000 -0.053960 3.780000</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>hull_gutter_BlendBone</node>
+		<node>hull_hatch_BlendBone</node>
+		<node>loader_L_root_BlendBone</node>
+		<node>loader_L_holder_rotate_BlendBone</node>
+		<node>loader_L_lever_01_BlendBone</node>
+		<node>loader_L_lever_03_BlendBone</node>
+		<node>loader_L_lever_04_BlendBone</node>
+		<node>loader_L_lever_02_BlendBone</node>
+		<node>loader_L_chain_BlendBone</node>
+		<node>loader_R_root_BlendBone</node>
+		<node>loader_R_holder_rotate_BlendBone</node>
+		<node>loader_R_lever_01_BlendBone</node>
+		<node>loader_R_lever_03_BlendBone</node>
+		<node>loader_R_lever_04_BlendBone</node>
+		<node>loader_R_lever_02_BlendBone</node>
+		<node>loader_R_chain_BlendBone</node>
+		<geometry>
+			<vertices>loaderShape.vertices</vertices>
+			<primitive>loaderShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>hull_loader_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						diffuseMap
+						<Texture>vehicles/sweden/S41_BV_111/BV_111_hull_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/sweden/S41_BV_111/BV_111_hull_01_AO.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/sweden/S41_BV_111/BV_111_hull_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/sweden/S41_BV_111/BV_111_hull_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.001050 0.211944 3.244871</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>loader_L_chain_BlendBone</node>
+		<node>loader_L_chain_static_BlendBone</node>
+		<node>loader_R_chain_BlendBone</node>
+		<node>loader_R_chain_static_BlendBone</node>
+		<geometry>
+			<vertices>chainShape.vertices</vertices>
+			<primitive>chainShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>hull_loader_chain_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skin_scroll.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						diffuseMap
+						<Texture>vehicles/sweden/S41_BV_111/BV_111_hull_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/sweden/S41_BV_111/BV_111_hull_01_AO.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/sweden/S41_BV_111/BV_111_hull_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/sweden/S41_BV_111/BV_111_hull_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.000000 0.213317 4.192942</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-0.741971 0.039443 -4.350973</min>
+		<max>0.744071 0.384445 -2.138768</max>
+	</boundingBox>
+	<geometrySize>43188</geometrySize>
+</root>

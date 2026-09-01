@@ -48,6 +48,8 @@ package net.wg.gui.lobby.personalMissions.components
       
       private static const SHADOWS_COEFF:int = 150;
       
+      private static const MAX_SHADOW_WIDTH:int = 380;
+      
       private static const HEIGHT_SCALE_DIV:int = 780;
       
       private static const BLUR_DISTANCE:int = 16;
@@ -456,10 +458,18 @@ package net.wg.gui.lobby.personalMissions.components
                this.leftShadow.x = this._nextMap.x;
                this.leftShadow.scaleX = _loc3_;
                this.leftShadow.height = _loc4_;
+               if(this.leftShadow.width > MAX_SHADOW_WIDTH)
+               {
+                  this.leftShadow.width = MAX_SHADOW_WIDTH;
+               }
                this.rightShadow.scaleX = _loc3_;
                this.rightShadow.x = this._nextMap.x + this._nextMap.width;
                this.rightShadow.y = _loc4_;
                this.rightShadow.height = _loc4_;
+               if(this.rightShadow.width > MAX_SHADOW_WIDTH)
+               {
+                  this.rightShadow.width = MAX_SHADOW_WIDTH;
+               }
                this.leftBG.x = 0;
                this.leftBG.y = 0;
                this.leftBG.width = this.leftShadow.x;

@@ -6327,6 +6327,7 @@
 						<collisionModelClient>vehicles/japan/J37_Type_3_Ho_Ni_III/collision_client/Gun_02.model</collisionModelClient>
 					</hitTester>
 					<edgeByVisualModel>false</edgeByVisualModel>
+					<muzzleBrake>HORIZONTAL</muzzleBrake>
 					<camouflage>
 						<tiling>
 							0.37 0.37 0.000000 0.000000

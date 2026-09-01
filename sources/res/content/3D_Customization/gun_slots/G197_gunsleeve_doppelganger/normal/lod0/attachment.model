@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>content/3D_Customization/gun_slots/G197_gunsleeve_doppelganger/normal/lod0/attachment</nodefullVisual>
+	<visibilityBox>
+		<min>-0.261716 -0.561320 -1.544080</min>
+		<max>0.248856 0.270981 1.980510</max>
+	</visibilityBox>
+	<parent>content/3D_Customization/gun_slots/G197_gunsleeve_doppelganger/normal/lod1/attachment</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+</root>

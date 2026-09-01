@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from constants import PremiumConfigs, DAILY_QUESTS_CONFIG
 from gui.impl import backport
 from gui.impl.gen import R

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from battle_royale.gui.constants import BattleRoyaleSubMode
 from battle_royale.gui.impl.gen.view_models.views.lobby.views.battle_type_selector_view_model import BattleTypeSelectorViewModel, BattleType
 from gui.impl.pub.view_component import ViewComponent

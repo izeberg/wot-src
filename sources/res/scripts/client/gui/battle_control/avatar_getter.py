@@ -487,6 +487,9 @@ def getInBattleVehicleSwitchComponent():
         return avatar.AvatarInBattleVehicleSwitch
     except AttributeError as error:
         _logger.exception('Static component "AvatarInBattleVehicleSwitch" not found, exception %s', error)
+        return
+
+    return
 
 
 def getSpaceID():

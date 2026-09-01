@@ -99,23 +99,8 @@
 				</params>
 			</block>
 			<block>
-				<class>GetVehicleGameObject</class>
-				<id>GetVehicleGameObject_2</id>
-			</block>
-			<block>
 				<class>GameObjectToVehicle</class>
 				<id>GameObjectToVehicle_3</id>
-			</block>
-			<block>
-				<class>Macro</class>
-				<id>Macro_1</id>
-				<params>
-					<param>
-						CustomizationVehicleEvents
-						<name>Macro Name</name>
-						<type>StringT</type>
-					</param>
-				</params>
 			</block>
 			<block>
 				<class>If</class>
@@ -140,51 +125,8 @@
 				</slots>
 			</block>
 			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_4</id>
-				<buddy>Variable_5</buddy>
-				<params>
-					<param>
-						BoolT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-			</block>
-			<block>
-				<class>SetVariable</class>
-				<id>SetVariable_2</id>
-				<buddy>Variable_5</buddy>
-				<params>
-					<param>
-						BoolT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>value</name>
-						<const>\false\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>ComponentMethod</class>
-				<id>ComponentMethod_41</id>
-				<params>
-					<param>
-						Animator.stopLayerByName
-						<name>Component Type</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>arg#0</name>
-						<const>\hit\</const>
-					</slot>
-				</slots>
+				<class>GetVehicleGameObject</class>
+				<id>GetVehicleGameObject_2</id>
 			</block>
 			<block>
 				<class>ComponentMethod</class>
@@ -235,25 +177,71 @@
 					</slot>
 				</slots>
 			</block>
+			<block>
+				<class>SetVariable</class>
+				<id>SetVariable_2</id>
+				<buddy>Variable_5</buddy>
+				<params>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>value</name>
+						<const>\false\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_4</id>
+				<buddy>Variable_5</buddy>
+				<params>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>ComponentMethod</class>
+				<id>ComponentMethod_41</id>
+				<params>
+					<param>
+						Animator.stopLayerByName
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>arg#0</name>
+						<const>\hit\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>Macro</class>
+				<id>Macro_1</id>
+				<params>
+					<param>
+						CustomizationVehicleEvents
+						<name>Macro Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
+			</block>
 		</blocks>
 		<connections>
-			<connection>
-				<from>ContextGetSelf_1</from>
-				<input>gameObject</input>
-				<to>GetVehicleGameObject_2</to>
-				<output>value</output>
-			</connection>
 			<connection>
 				<from>GetVehicleGameObject_2</from>
 				<input>gameObject</input>
 				<to>GameObjectToVehicle_3</to>
 				<output>vehicleObject</output>
-			</connection>
-			<connection>
-				<from>GameObjectToVehicle_3</from>
-				<input>vehicle</input>
-				<to>Macro_1</to>
-				<output>vehicle</output>
 			</connection>
 			<connection>
 				<from>Macro_1</from>
@@ -286,21 +274,15 @@
 				<output>false</output>
 			</connection>
 			<connection>
-				<from>ComponentMethod_41</from>
+				<from>Macro_1</from>
 				<input>input</input>
-				<to>SetVariable_2</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>Timer_4</from>
-				<input>in</input>
-				<to>ComponentMethod_41</to>
-				<output>event0</output>
+				<to>SetVariable_1</to>
+				<output>PrebattleHighlightStart</output>
 			</connection>
 			<connection>
 				<from>ContextGetSelf_1</from>
 				<input>gameObject</input>
-				<to>ComponentMethod_41</to>
+				<to>GetVehicleGameObject_2</to>
 				<output>value</output>
 			</connection>
 			<connection>
@@ -338,6 +320,36 @@
 				<input>gameObject</input>
 				<to>ComponentMethod_40</to>
 				<output>value</output>
+			</connection>
+			<connection>
+				<from>ComponentMethod_41</from>
+				<input>input</input>
+				<to>SetVariable_2</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>Timer_4</from>
+				<input>in</input>
+				<to>ComponentMethod_41</to>
+				<output>event0</output>
+			</connection>
+			<connection>
+				<from>Macro_1</from>
+				<input>in</input>
+				<to>ComponentMethod_41</to>
+				<output>PrebattleHighlightEnd</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>ComponentMethod_41</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>GameObjectToVehicle_3</from>
+				<input>vehicle</input>
+				<to>Macro_1</to>
+				<output>vehicle</output>
 			</connection>
 		</connections>
 		<macros>

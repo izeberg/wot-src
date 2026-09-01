@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/german/G197_Pz_Kpfw_Neu/normal/lod3/Chassis</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.700783 0.000000 -4.110542</min>
+		<max>1.700782 1.215242 3.555941</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G197_Pz_Kpfw_Neu/normal/lod2/Chassis</nodefullVisual>
+</root>

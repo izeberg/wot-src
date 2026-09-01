@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+import Event
 from PlayerEvents import g_playerEvents
 from config_schemas.umg_config import umgConfigSchema
 from gui.impl.lobby.user_missions.hangar_widget.services import IMissionsService
@@ -10,6 +12,7 @@ class MissionsService(IMissionsService, ServiceEvents):
 
     def __init__(self):
         super(MissionsService, self).__init__()
+        self.onMissionsChanged = Event.Event()
         self.startServiceEvents()
 
     def onPrbEntitySwitched(self):
@@ -31,6 +34,7 @@ class MissionsService(IMissionsService, ServiceEvents):
         self.stopListening()
         self.stopServiceEvents()
         self.stopListening()
+        self.onMissionsChanged.clear()
 
     def __onConfigModelUpdated(self, gpKey):
         if umgConfigSchema.gpKey == gpKey:

@@ -71,7 +71,7 @@ package net.wg.gui.components.advanced
       
       override protected function draw() : void
       {
-         var _loc1_:Boolean = isInvalid(InvalidationType.RENDERERS,InvalidationType.DATA,InvalidationType.SETTINGS,InvalidationType.SIZE,INVALID_LAYOUT);
+         var _loc1_:Boolean = isInvalidTypes(InvalidationType.RENDERERS,InvalidationType.DATA,InvalidationType.SETTINGS,InvalidationType.SIZE,INVALID_LAYOUT);
          super.draw();
          if(_loc1_)
          {

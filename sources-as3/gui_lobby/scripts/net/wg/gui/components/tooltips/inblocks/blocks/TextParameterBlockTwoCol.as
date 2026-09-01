@@ -36,20 +36,13 @@ package net.wg.gui.components.tooltips.inblocks.blocks
          super.onDispose();
       }
       
-      override protected function applyParamName() : void
+      override protected function applyParamValue() : void
       {
+         super.applyParamValue();
          var _loc1_:TextParameterTwoColVO = _data as TextParameterTwoColVO;
          if(!_loc1_)
          {
             return;
-         }
-         if(_loc1_.useHtmlName)
-         {
-            nameTF.htmlText = _loc1_.name;
-         }
-         else
-         {
-            nameTF.text = _loc1_.name;
          }
          if(_loc1_.useHtmlValue2)
          {
@@ -59,20 +52,24 @@ package net.wg.gui.components.tooltips.inblocks.blocks
          {
             this.value2TF.text = _loc1_.value2;
          }
-         if(_loc1_.value2Gap != Values.DEFAULT_INT)
+         if(_loc1_.valueGap != Values.DEFAULT_INT)
          {
-            this.value2TF.x = valueTF.x + valueTF.width + _loc1_.value2Gap;
+            this.value2TF.x = valueTF.x + valueTF.width + _loc1_.valueGap;
          }
          if(_loc1_.valueWidth != Values.DEFAULT_INT)
          {
             this.value2TF.width = _loc1_.valueWidth;
          }
-         if(_loc1_.gap != Values.DEFAULT_INT)
-         {
-            nameTF.x = this.value2TF.x + this.value2TF.width + _loc1_.gap;
-         }
-         updateTextFieldHeight(nameTF);
          updateTextFieldHeight(this.value2TF);
+      }
+      
+      override protected function applyParamName() : void
+      {
+         super.applyParamName();
+         if(_data.gap != Values.DEFAULT_INT)
+         {
+            nameTF.x = this.value2TF.x + this.value2TF.width + _data.gap;
+         }
       }
    }
 }

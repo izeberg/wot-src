@@ -1,0 +1,8 @@
+from __future__ import absolute_import
+from gui.Scaleform.daapi.view.battle.shared.hint_panel.component import BattleHintPanel
+from fall_tanks.gui.Scaleform.daapi.view.battle.hint_panel import plugins
+
+class FallTanksBattleHintPanel(BattleHintPanel):
+
+    def _createPlugins(self):
+        return plugins.createPlugins()

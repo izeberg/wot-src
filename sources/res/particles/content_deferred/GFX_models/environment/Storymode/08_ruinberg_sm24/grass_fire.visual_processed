@@ -21,6 +21,10 @@
 				<material>
 					<identifier>Coal</identifier>
 					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
+					<property>
+						g_enableEnvMultiplier
+						<Bool>true</Bool>
+					</property>
 					<collisionFlags>255</collisionFlags>
 					<materialKind>0</materialKind>
 					<property>
@@ -29,7 +33,10 @@
 					</property>
 					<property>
 						lightMultipliers
-						<Vector4>3.000000 0.000000 0.000000 0.000000</Vector4>
+						<Vector4>
+							17.045455 0.000000 0.000000 0.000000
+							<!--BW_String-->
+						</Vector4>
 					</property>
 					<property>
 						distortion_UV_Speed_Amount
@@ -59,6 +66,10 @@
 				<material>
 					<identifier>FireSmall</identifier>
 					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
+					<property>
+						g_enableEnvMultiplier
+						<Bool>true</Bool>
+					</property>
 					<collisionFlags>255</collisionFlags>
 					<materialKind>0</materialKind>
 					<property>
@@ -95,7 +106,10 @@
 					</property>
 					<property>
 						lightMultipliers
-						<Vector4>30.000000 0.000000 0.000000 0.000000</Vector4>
+						<Vector4>
+							170.454545 0.000000 0.000000 0.000000
+							<!--BW_String-->
+						</Vector4>
 					</property>
 					<property>
 						alphaFadeAmountFresnel

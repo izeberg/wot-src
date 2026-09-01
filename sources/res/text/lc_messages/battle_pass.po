@@ -270,24 +270,14 @@ msgstr ""
 "Purchasing a Progression Stage instantly unlocks and grants you all rewards "
 "included in that Stage."
 
-msgid "battlePassBuyView/reward/descriptionFutureRewards"
-msgstr ""
-"These rewards will be granted to you after completing the upcoming Stages."
-
-msgid "battlePassBuyView/reward/descriptionNowRewards"
-msgstr "The following rewards will be granted to you for Stages %(steps)s"
-
 msgid "battlePassBuyView/reward/descriptionNowRewardsCheckbox"
 msgstr "You will receive the following rewards immediately"
 
-msgid "battlePassBuyView/reward/descriptionNowRewardsSingle"
-msgstr "The following rewards will be granted to you for Stage %(steps)s"
-
 msgid "battlePassBuyView/reward/titleFutureRewards"
-msgstr "WILL BE UNLOCKED"
+msgstr "Unlocking in Uncompleted Stages"
 
 msgid "battlePassBuyView/reward/titleNowRewards"
-msgstr "WILL BE RECEIVED IMMEDIATELY"
+msgstr "Receiving Instantly"
 
 msgid "battlePassStatus/activateChapter"
 msgstr "Activate the Battle Pass Chapter"
@@ -319,20 +309,17 @@ msgstr "Carmen de Bisonte"
 msgid "chapter/fullName/1114"
 msgstr "Carmen de Bisonte"
 
-msgid "chapter/fullName/200"
+msgid "chapter/fullName/210"
 msgstr "Elite Circuit"
 
-msgid "chapter/fullName/201"
-msgstr "Buried Time"
+msgid "chapter/fullName/211"
+msgstr "Specialist"
 
-msgid "chapter/fullName/202"
-msgstr "C'est Notre Destin"
+msgid "chapter/fullName/212"
+msgstr "Stuntman"
 
-msgid "chapter/fullName/203"
-msgstr "Desert Command"
-
-msgid "chapter/fullName/205"
-msgstr "Far Cry"
+msgid "chapter/fullName/213"
+msgstr "Stoic"
 
 msgid "chapter/fullNameUppercased/10021"
 msgstr "CARMEN DE BISONTE"
@@ -340,17 +327,14 @@ msgstr "CARMEN DE BISONTE"
 msgid "chapter/fullNameUppercased/1114"
 msgstr "CARMEN DE BISONTE"
 
-msgid "chapter/fullNameUppercased/201"
-msgstr "BURIED TIME"
+msgid "chapter/fullNameUppercased/211"
+msgstr "SPECIALIST"
 
-msgid "chapter/fullNameUppercased/202"
-msgstr "C'EST NOTRE DESTIN"
+msgid "chapter/fullNameUppercased/212"
+msgstr "STUNTMAN"
 
-msgid "chapter/fullNameUppercased/203"
-msgstr "DESERT COMMAND"
-
-msgid "chapter/fullNameUppercased/205"
-msgstr "FAR CRY"
+msgid "chapter/fullNameUppercased/213"
+msgstr "STOIC"
 
 msgid "chapter/title"
 msgstr "CHAPTER %(chapter)s"
@@ -520,6 +504,9 @@ msgstr "Mission for ×3 Crew XP"
 
 msgid "equipCoinBonus"
 msgstr "Components: %(count)s"
+
+msgid "finalReward/attachmentsSet/title"
+msgstr "3D Attachment Set"
 
 msgid "finalReward/tankman/roles/commander"
 msgstr "Commander"
@@ -843,10 +830,10 @@ msgstr ""
 "%(completedChapters)/%(chaptersAmount)"
 
 msgid "postProgressionView/footer/extraChapter/description/text"
-msgstr "Grab a Premium vehicle and exclusive customization elements."
+msgstr "Dive into it for exclusive rewards and unique customization elements."
 
 msgid "postProgressionView/footer/extraChapter/title/text"
-msgstr "Battle Pass: Far Cry is here!"
+msgstr "The Special Chapter is here!"
 
 msgid "postProgressionView/footer/purchaseIP/banner/text"
 msgstr "Purchase the Improved Pass and get more rewards!"
@@ -1213,11 +1200,8 @@ msgstr "Stage %(level)d of the Elite Circuit"
 msgid "rewardChoice/crewBook/rewardDescription"
 msgstr "experience to each crew member of the selected %(nation)s vehicle"
 
-msgid "rewardChoice/subTitle"
-msgstr "SELECT YOUR REWARD"
-
 msgid "rewardChoice/title"
-msgstr "BATTLE PASS"
+msgstr "Select Your Rewards"
 
 msgid "rewardChoice/titleChapter"
 msgstr "BATTLE PASS: %(chapter)s CHAPTER"
@@ -1228,14 +1212,14 @@ msgstr "BATTLE PASS: %(chapter)s CHAPTER, STAGE %(level)s"
 msgid "season/fullName/1002"
 msgstr "Carmen de Bisonte"
 
-msgid "season/fullName/20"
-msgstr "Searching the Sands"
+msgid "season/fullName/21"
+msgstr "Grounded"
 
 msgid "season/fullNameUppercased/1002"
 msgstr "CARMEN DE BISONTE"
 
-msgid "season/fullNameUppercased/20"
-msgstr "SEARCHING THE SANDS"
+msgid "season/fullNameUppercased/21"
+msgstr "GROUNDED"
 
 msgid "selectBonus/battle_booster_gift"
 msgstr "Directives to Select From"

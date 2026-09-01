@@ -5328,6 +5328,7 @@
 							</slaves>
 						</master>
 					</drivenJoints>
+					<muzzleBrake>HORIZONTAL</muzzleBrake>
 					<camouflage>
 						<density>
 							96.9254 96.1486
@@ -6414,6 +6415,7 @@
 						<collisionModelClient>vehicles/chinese/Ch49_BZ_68/collision_client/Gun_03.model</collisionModelClient>
 					</hitTester>
 					<edgeByVisualModel>false</edgeByVisualModel>
+					<muzzleBrake>HORIZONTAL</muzzleBrake>
 					<camouflage>
 						<density>
 							96.9254 96.1486

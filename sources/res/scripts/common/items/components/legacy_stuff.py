@@ -1,7 +1,7 @@
 from __future__ import absolute_import
-from constants import IS_CLIENT, IS_CELLAPP, IS_BASEAPP
+from constants import IS_CLIENT, IS_CELLAPP, IS_BASEAPP, IS_COMMON_ENV
 from soft_exception import SoftException
-_IS_LEGACY_STUFF_SUPPORTED = not IS_CLIENT and not IS_CELLAPP and not IS_BASEAPP
+_IS_LEGACY_STUFF_SUPPORTED = not IS_CLIENT and not IS_CELLAPP and not IS_BASEAPP and not IS_COMMON_ENV
 
 class SupportedLegacyStuff(object):
     __slots__ = ()

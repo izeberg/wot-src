@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from comp7_core.gui import comp7_core_constants
 from gui.battle_control import battle_constants
 from gui.prb_control.prb_utils import initBattleCtrlIDs
