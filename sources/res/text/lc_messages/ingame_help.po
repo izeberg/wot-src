@@ -250,6 +250,25 @@ msgstr "该火炮可持续射击而无需重新装填。每次开火均会产生
 msgid "detailsHelp/mechanics/autoShootGun_overheatGun/page1/title"
 msgstr "速射过热调节自动炮"
 
+msgid "detailsHelp/mechanics/autoreloaderSurge/page1/description"
+msgstr ""
+"该机构可立刻将炮弹装填时间缩短至一个较短的固定值。每次使用会为每发炮弹消耗1次储能次数，并且储能次数会随时间补充——弹鼓装满时补充速度更快。战斗开始时提供固定数量的储能次数。"
+
+msgid "detailsHelp/mechanics/autoreloaderSurge/page1/title"
+msgstr "强制装填机构"
+
+msgid "detailsHelp/mechanics/auxiliaryRocketLauncher/page1/description"
+msgstr "该坦克在炮盾上安装了火箭发射器。按下以下按键即可切换至火箭瞄准镜:"
+
+msgid "detailsHelp/mechanics/auxiliaryRocketLauncher/page1/title"
+msgstr "同轴火箭发射器"
+
+msgid "detailsHelp/mechanics/auxiliaryRocketLauncher/page2/description"
+msgstr "使用火箭瞄准镜瞄准时，按下开火键即可发射火箭:"
+
+msgid "detailsHelp/mechanics/auxiliaryRocketLauncher/page2/title"
+msgstr "同轴火箭发射器"
+
 msgid "detailsHelp/mechanics/battleFury/page1/description"
 msgstr ""
 "每次击中敌方坦克时，您将获得装填效率加成，短暂提高火炮装填速度。每命中一次累积一个等级。\n"
@@ -257,6 +276,12 @@ msgstr ""
 
 msgid "detailsHelp/mechanics/battleFury/page1/title"
 msgstr "半自动弹药架"
+
+msgid "detailsHelp/mechanics/bustleFeed/page1/description"
+msgstr "该坦克的外部供弹模块使其能够射击威力强劲的高装药定装弹，造成更高损伤。激活时，该模块也会降低机动性和射速。"
+
+msgid "detailsHelp/mechanics/bustleFeed/page1/title"
+msgstr "外部供弹模式"
 
 msgid "detailsHelp/mechanics/chargeShot/page1/description"
 msgstr ""
@@ -377,6 +402,33 @@ msgstr "激活后，火箭助推器可提高发动机功率和最大速度。不
 
 msgid "detailsHelp/mechanics/rocketAcceleration/page2/title"
 msgstr "优缺点"
+
+msgid "detailsHelp/mechanics/shellCalibration/page1/description"
+msgstr ""
+"炮弹命中可见的敌方坦克后，下一发炮弹的引信装定器将进行调整。如果前一发炮弹击穿敌方装甲，下一发的平均损伤则会提高；如果前一发未能击穿，下一发的平均穿透力则会提高。"
+
+msgid "detailsHelp/mechanics/shellCalibration/page1/title"
+msgstr "可调式引信装定器"
+
+msgid "detailsHelp/mechanics/shellParamsSwitcher/page1/description"
+msgstr "该坦克的火炮配备特殊装置，可在开火前调整射击诸元。不同炮弹的参数会根据所选模式而变化，每种模式都能让您快速适应不同的战况。"
+
+msgid "detailsHelp/mechanics/shellParamsSwitcher/page1/title"
+msgstr "校炮系统"
+
+msgid "detailsHelp/mechanics/sightPointer/page1/description"
+msgstr ""
+"一种先进的观察镜，可提高自身坦克的观察范围，并增强对移动中和隐藏在植被后方坦克的侦测能力。激活后，它会扫描自身坦克前方的一个狭窄区域，发现隐蔽目标，随后进入冷却时间。"
+
+msgid "detailsHelp/mechanics/sightPointer/page1/title"
+msgstr "红外搜索与跟踪系统"
+
+msgid "detailsHelp/mechanics/sightPointer/page2/description"
+msgstr ""
+"但如果该设备发现了未被点亮的敌方坦克，自身坦克也会立即被点亮一段时间，且双方都会立即收到通知。您可以手动停止扫描，并在短暂延迟后使该设备进入冷却时间。"
+
+msgid "detailsHelp/mechanics/sightPointer/page2/title"
+msgstr "红外搜索与跟踪系统"
 
 msgid "detailsHelp/mechanics/stagedJetBoosters/page1/description"
 msgstr "固体燃料助推器可在数秒内提高加速能力、机动性和操控性。左右两侧的助推器可独立工作，助您更快地旋转车体，同时不限制倒车能力。"

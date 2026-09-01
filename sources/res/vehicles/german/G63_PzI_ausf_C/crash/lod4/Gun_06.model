@@ -2,11 +2,8 @@
 <root>
 	<materialNames/>
 	<visibilityBox>
-		<min>-0.404916 -0.132816 0.041533</min>
-		<max>
-			0.404916 0.144267 2.18256
-			<!--BW_String-->
-		</max>
+		<min>-0.405999 -0.132628 -0.025000</min>
+		<max>0.398350 0.147811 1.472364</max>
 	</visibilityBox>
 	<tank>true</tank>
 	<nodelessVisual>vehicles/german/G63_PzI_ausf_C/crash/lod4/Gun_06</nodelessVisual>

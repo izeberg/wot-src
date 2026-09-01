@@ -1,1 +1,2 @@
+from __future__ import absolute_import
 CMD_QUAL_COMPLETE_PRODUCT_DEV = 30001

@@ -28,6 +28,8 @@ package net.wg.gui.components.tooltips.inblocks.data
       
       public var titleWidth:int = -1;
       
+      public var verticalAlignment:String = "top";
+      
       public function TitleDescParameterWithIconVO(param1:Object)
       {
          super(param1);

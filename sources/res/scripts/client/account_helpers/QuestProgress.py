@@ -1,5 +1,6 @@
 from functools import partial
 import AccountCommands
+from personal_missions import PMProgressKeys
 from shared_utils.account_helpers.diff_utils import synchronizeDicts
 
 class QuestProgress(object):
@@ -23,7 +24,13 @@ class QuestProgress(object):
     def synchronize(self, isFullSync, diff):
         if isFullSync:
             self.__cache.clear()
-        for item in ('quests', 'potapovQuests', 'questsRewards', 'pm2_progress', 'pm3_progress'):
+        for item in (
+         'quests',
+         'questsRewards',
+         PMProgressKeys.REGULAR,
+         PMProgressKeys.PM2_PROGRESS,
+         PMProgressKeys.PM3_PROGRESS,
+         PMProgressKeys.PM4_PROGRESS):
             itemDiff = diff.get(item, None)
             if itemDiff is not None:
                 synchronizeDicts(itemDiff, self.__cache.setdefault(item, {}))

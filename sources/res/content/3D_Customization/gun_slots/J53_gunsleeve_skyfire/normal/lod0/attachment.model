@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-0.374610 -0.541983 -1.173827</min>
+		<max>0.450168 0.404164 3.848099</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>content/3D_Customization/gun_slots/J53_gunsleeve_skyfire/normal/lod1/attachment</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>content/3D_Customization/gun_slots/J53_gunsleeve_skyfire/normal/lod0/attachment</nodefullVisual>
+</root>

@@ -62,6 +62,10 @@
 				</params>
 			</block>
 			<block>
+				<class>If</class>
+				<id>If_19</id>
+			</block>
+			<block>
 				<class>SetVariable</class>
 				<id>SetVariable_9</id>
 				<buddy>Variable_8</buddy>
@@ -72,10 +76,6 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-			</block>
-			<block>
-				<class>If</class>
-				<id>If_19</id>
 			</block>
 			<block>
 				<class>If</class>
@@ -160,6 +160,16 @@
 				<id>DoOnce_2</id>
 			</block>
 			<block>
+				<class>CompareIntegers</class>
+				<id>CompareIntegers_6</id>
+				<slots>
+					<slot>
+						<name>b</name>
+						<const>\0\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
 				<class>ComponentMethod</class>
 				<id>ComponentMethod_42</id>
 				<params>
@@ -185,16 +195,8 @@
 				</slots>
 			</block>
 			<block>
-				<class>GetVehicleGameObject</class>
-				<id>GetVehicleGameObject_1</id>
-			</block>
-			<block>
-				<class>GameObjectToVehicle</class>
-				<id>GameObjectToVehicle_2</id>
-			</block>
-			<block>
-				<class>CompareVehicles</class>
-				<id>CompareVehicles_6</id>
+				<class>IsPlayerVehicle</class>
+				<id>IsPlayerVehicle_1</id>
 			</block>
 			<block>
 				<class>Or</class>
@@ -216,6 +218,17 @@
 						<const>\7000\</const>
 					</slot>
 				</slots>
+			</block>
+			<block>
+				<class>And</class>
+				<id>And_1</id>
+				<params>
+					<param>
+						3
+						<name>Input Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
 			</block>
 			<block>
 				<class>If</class>
@@ -251,6 +264,18 @@
 				</slots>
 			</block>
 			<block>
+				<class>CompareVehicles</class>
+				<id>CompareVehicles_6</id>
+			</block>
+			<block>
+				<class>GameObjectToVehicle</class>
+				<id>GameObjectToVehicle_2</id>
+			</block>
+			<block>
+				<class>GetVehicleGameObject</class>
+				<id>GetVehicleGameObject_1</id>
+			</block>
+			<block>
 				<class>GetVariable</class>
 				<id>GetVariable_7</id>
 				<buddy>Variable_8</buddy>
@@ -284,10 +309,6 @@
 				</params>
 			</block>
 			<block>
-				<class>StartScript</class>
-				<id>StartScript_1</id>
-			</block>
-			<block>
 				<class>CompareIntegers</class>
 				<id>CompareIntegers_5</id>
 				<slots>
@@ -308,20 +329,141 @@
 					</param>
 				</params>
 			</block>
+			<block>
+				<class>GSMState</class>
+				<id>GSMState_1</id>
+				<params>
+					<param>
+						PREBATTLE
+						<name>GSM State</name>
+						<type>GameplayStateIDT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>Delay</class>
+				<id>Delay_8</id>
+				<params>
+					<param>
+						IntT
+						<name>Value Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>time</name>
+						<const>\1.000000\</const>
+					</slot>
+					<slot>
+						<name>stack</name>
+						<const>\false\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>ComponentMethod</class>
+				<id>ComponentMethod_45</id>
+				<params>
+					<param>
+						Animator.setTrigger
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>arg#0</name>
+						<const>\low_dmg\</const>
+					</slot>
+					<slot>
+						<name>arg#1</name>
+						<const>\true\</const>
+					</slot>
+					<slot>
+						<name>arg#2</name>
+						<const>\0\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>Sequence</class>
+				<id>Sequence_2</id>
+				<params>
+					<param>
+						2
+						<name>Output Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_21</id>
+			</block>
+			<block>
+				<class>StartScript</class>
+				<id>StartScript_1</id>
+			</block>
+			<block>
+				<class>OnPrebattleHighlights</class>
+				<id>OnPrebattleHighlights_1</id>
+			</block>
+			<block>
+				<class>ComponentMethod</class>
+				<id>ComponentMethod_44</id>
+				<params>
+					<param>
+						Animator.setTrigger
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>arg#0</name>
+						<const>\hig_dmg\</const>
+					</slot>
+					<slot>
+						<name>arg#1</name>
+						<const>\true\</const>
+					</slot>
+					<slot>
+						<name>arg#2</name>
+						<const>\0\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>ComponentMethod</class>
+				<id>ComponentMethod_47</id>
+				<params>
+					<param>
+						Animator.stop
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>ComponentMethod</class>
+				<id>ComponentMethod_48</id>
+				<params>
+					<param>
+						Animator.start
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>arg#0</name>
+						<const>\0.000000\</const>
+					</slot>
+				</slots>
+			</block>
 		</blocks>
 		<connections>
-			<connection>
-				<from>If_18</from>
-				<input>input</input>
-				<to>SetVariable_9</to>
-				<output>true</output>
-			</connection>
-			<connection>
-				<from>AddInteger_1</from>
-				<input>value</input>
-				<to>SetVariable_9</to>
-				<output>res</output>
-			</connection>
 			<connection>
 				<from>OnAnyVehicleDamaged_1</from>
 				<input>input</input>
@@ -335,13 +477,25 @@
 				<output>res</output>
 			</connection>
 			<connection>
+				<from>If_18</from>
+				<input>input</input>
+				<to>SetVariable_9</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>AddInteger_1</from>
+				<input>value</input>
+				<to>SetVariable_9</to>
+				<output>res</output>
+			</connection>
+			<connection>
 				<from>If_19</from>
 				<input>input</input>
 				<to>If_18</to>
 				<output>true</output>
 			</connection>
 			<connection>
-				<from>CompareVehicles_6</from>
+				<from>And_1</from>
 				<input>value</input>
 				<to>If_18</to>
 				<output>res</output>
@@ -413,6 +567,12 @@
 				<output>true</output>
 			</connection>
 			<connection>
+				<from>OnAnyVehicleDamaged_1</from>
+				<input>a</input>
+				<to>CompareIntegers_6</to>
+				<output>damage</output>
+			</connection>
+			<connection>
 				<from>DoOnce_2</from>
 				<input>in</input>
 				<to>ComponentMethod_42</to>
@@ -425,27 +585,9 @@
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>ContextGetSelf_1</from>
-				<input>gameObject</input>
-				<to>GetVehicleGameObject_1</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>GetVehicleGameObject_1</from>
-				<input>gameObject</input>
-				<to>GameObjectToVehicle_2</to>
-				<output>vehicleObject</output>
-			</connection>
-			<connection>
-				<from>GameObjectToVehicle_2</from>
-				<input>a</input>
-				<to>CompareVehicles_6</to>
-				<output>vehicle</output>
-			</connection>
-			<connection>
 				<from>OnAnyVehicleDamaged_1</from>
-				<input>b</input>
-				<to>CompareVehicles_6</to>
+				<input>vehicle</input>
+				<to>IsPlayerVehicle_1</to>
 				<output>attacker</output>
 			</connection>
 			<connection>
@@ -465,6 +607,24 @@
 				<input>a</input>
 				<to>CompareIntegers_3</to>
 				<output>value</output>
+			</connection>
+			<connection>
+				<from>CompareIntegers_6</from>
+				<input>i1</input>
+				<to>And_1</to>
+				<output>greater</output>
+			</connection>
+			<connection>
+				<from>IsPlayerVehicle_1</from>
+				<input>i2</input>
+				<to>And_1</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>CompareVehicles_6</from>
+				<input>i3</input>
+				<to>And_1</to>
+				<output>res</output>
 			</connection>
 			<connection>
 				<from>If_16</from>
@@ -491,15 +651,33 @@
 				<output>completed</output>
 			</connection>
 			<connection>
-				<from>StartScript_1</from>
-				<input>in</input>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
 				<to>ComponentMethod_41</to>
-				<output>out</output>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>OnAnyVehicleDamaged_1</from>
+				<input>a</input>
+				<to>CompareVehicles_6</to>
+				<output>attacker</output>
+			</connection>
+			<connection>
+				<from>GameObjectToVehicle_2</from>
+				<input>b</input>
+				<to>CompareVehicles_6</to>
+				<output>vehicle</output>
+			</connection>
+			<connection>
+				<from>GetVehicleGameObject_1</from>
+				<input>gameObject</input>
+				<to>GameObjectToVehicle_2</to>
+				<output>vehicleObject</output>
 			</connection>
 			<connection>
 				<from>ContextGetSelf_1</from>
 				<input>gameObject</input>
-				<to>ComponentMethod_41</to>
+				<to>GetVehicleGameObject_1</to>
 				<output>value</output>
 			</connection>
 			<connection>
@@ -537,6 +715,96 @@
 				<input>i2</input>
 				<to>Or_3</to>
 				<output>equal</output>
+			</connection>
+			<connection>
+				<from>GSMState_1</from>
+				<input>input</input>
+				<to>Delay_8</to>
+				<output>onEnterState</output>
+			</connection>
+			<connection>
+				<from>Sequence_2</from>
+				<input>input</input>
+				<to>Delay_8</to>
+				<output>o0</output>
+			</connection>
+			<connection>
+				<from>Delay_8</from>
+				<input>in</input>
+				<to>ComponentMethod_45</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>ComponentMethod_45</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>If_21</from>
+				<input>input</input>
+				<to>Sequence_2</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>StartScript_1</from>
+				<input>input</input>
+				<to>If_21</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>GSMState_1</from>
+				<input>value</input>
+				<to>If_21</to>
+				<output>isActive</output>
+			</connection>
+			<connection>
+				<from>If_21</from>
+				<input>subscribe</input>
+				<to>OnPrebattleHighlights_1</to>
+				<output>false</output>
+			</connection>
+			<connection>
+				<from>Sequence_2</from>
+				<input>unsubscribe</input>
+				<to>OnPrebattleHighlights_1</to>
+				<output>o1</output>
+			</connection>
+			<connection>
+				<from>OnPrebattleHighlights_1</from>
+				<input>in</input>
+				<to>ComponentMethod_44</to>
+				<output>onStart</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>ComponentMethod_44</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>OnPrebattleHighlights_1</from>
+				<input>in</input>
+				<to>ComponentMethod_47</to>
+				<output>onEnded</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>ComponentMethod_47</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>ComponentMethod_47</from>
+				<input>in</input>
+				<to>ComponentMethod_48</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>ComponentMethod_48</to>
+				<output>value</output>
 			</connection>
 		</connections>
 		<macros>

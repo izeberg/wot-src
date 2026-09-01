@@ -153,7 +153,7 @@ package net.wg.gui.components.carousels
          {
             this.refreshDataViewPortProperties();
          }
-         if(isInvalid(INVALIDATION_TYPE_INTERACTION_MODE,InvalidationType.SIZE))
+         if(isInvalidTypes(INVALIDATION_TYPE_INTERACTION_MODE,InvalidationType.SIZE))
          {
             this.updateCursorManager();
          }

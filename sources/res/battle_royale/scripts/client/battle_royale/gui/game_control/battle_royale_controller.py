@@ -1,11 +1,12 @@
-import json, logging
+from __future__ import absolute_import
+import json, logging, typing
 from collections import namedtuple
 from functools import partial
+from future.utils import lzip, viewitems
 from itertools import groupby
-import BigWorld, typing
+import BigWorld, BattleReplay, Event, season_common
 from adisp import adisp_process
 from shared_utils import first, makeTupleByDict, nextTick
-import BattleReplay, Event, season_common
 from CurrentVehicle import g_currentVehicle
 from account_helpers import AccountSettings
 from account_helpers.AccountSettings import ROYALE_VEHICLE, CURRENT_VEHICLE, ROYALE_INTRO_VIDEO_SHOWN_FOR_SEASON
@@ -37,7 +38,7 @@ from gui.shared import events, g_eventBus, EVENT_BUS_SCOPE
 from gui.shared.event_dispatcher import getParentWindow, showBrowserOverlayView
 from gui.shared.events import ProfilePageEvent, ProfileStatisticEvent, ProfileTechniqueEvent
 from gui.shared.gui_items.Vehicle import VEHICLE_TAGS, VEHICLE_TYPES_ORDER_INDICES
-from gui.shared.items_parameters.params import ShellParams
+from gui.shared.items_parameters.shell_params import ShellParams
 from gui.shared.money import DynamicMoney
 from gui.shared.utils import SelectorBattleTypesUtils
 from gui.shared.utils.graphics import getGraphicsEngineValue
@@ -258,10 +259,10 @@ class BattleRoyaleController(Notifiable, SeasonProvider, IBattleRoyaleController
     def getCurrentSubModeID(self):
         return self.__currentSubModeID
 
-    def setCurrentSubModeID(self, currentSubModeID, updateNeeded=True):
-        if currentSubModeID not in BattleRoyaleSubMode.ALL_RANGE:
-            currentSubModeID = BattleRoyaleSubMode.SOLO_MODE_ID
-        self.__currentSubModeID = currentSubModeID
+    def setCurrentSubModeID(self, subModeID, updateNeeded=True):
+        if subModeID not in BattleRoyaleSubMode.ALL_RANGE:
+            subModeID = BattleRoyaleSubMode.SOLO_MODE_ID
+        self.__currentSubModeID = subModeID
         if updateNeeded:
             self.onSubModeUpdated()
 
@@ -485,7 +486,7 @@ class BattleRoyaleController(Notifiable, SeasonProvider, IBattleRoyaleController
         pointsList = self.__progressionPointsConfig().get(gameMode, [])
         if not pointsList:
             return []
-        pointList = [ (key, len(list(group))) for key, group in groupby(zip(*pointsList)[1]) ]
+        pointList = [ (key, len(list(group))) for key, group in groupby(lzip(*pointsList)[1]) ]
         result = []
         count = 0
         for points, pointsCount in pointList:
@@ -754,17 +755,17 @@ class BattleRoyaleController(Notifiable, SeasonProvider, IBattleRoyaleController
         stats = BigWorld.wg_getClientStatistics()
         stats['graphicsEngine'] = getGraphicsEngineValue()
         self.__performanceGroup = BattleRoyalePerfProblems.LOW_RISK
-        for groupName, conditions in PERFORMANCE_GROUP_LIMITS.iteritems():
+        for groupName, conditions in viewitems(PERFORMANCE_GROUP_LIMITS):
             for currentLimit in conditions:
                 condValid = True
                 systemStats = currentLimit.get(BATTLE_ROYALE_GAME_LIMIT_TYPE.SYSTEM_DATA, {})
-                for key, limit in systemStats.iteritems():
+                for key, limit in viewitems(systemStats):
                     currValue = stats.get(key, None)
                     if currValue is None or currValue != limit:
                         condValid = False
 
                 hardwareParams = currentLimit.get(BATTLE_ROYALE_GAME_LIMIT_TYPE.HARDWARE_PARAMS, {})
-                for key, limit in hardwareParams.iteritems():
+                for key, limit in viewitems(hardwareParams):
                     currValue = BigWorld.getAutoDetectGraphicsSettingsScore(key)
                     if currValue >= limit:
                         condValid = False

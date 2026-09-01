@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.prb_control.entities.base.pre_queue.permissions import PreQueuePermissions
 from helpers import time_utils, dependency
 from gui.periodic_battles.models import PrimeTimeStatus

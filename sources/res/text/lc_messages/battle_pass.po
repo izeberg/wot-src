@@ -249,23 +249,14 @@ msgstr "购买时:"
 msgid "battlePassBuyView/descr"
 msgstr "购买进度阶段后，将立即解锁并获得该阶段包含的所有奖励。"
 
-msgid "battlePassBuyView/reward/descriptionFutureRewards"
-msgstr "您在完成接下来的阶段后，即可获得这些奖励。"
-
-msgid "battlePassBuyView/reward/descriptionNowRewards"
-msgstr "阶段%(steps)s的以下奖励将发放给您"
-
 msgid "battlePassBuyView/reward/descriptionNowRewardsCheckbox"
 msgstr "您将立即获得下列奖励"
 
-msgid "battlePassBuyView/reward/descriptionNowRewardsSingle"
-msgstr "阶段%(steps)s的以下奖励将发放给您"
-
 msgid "battlePassBuyView/reward/titleFutureRewards"
-msgstr "将解锁"
+msgstr "可在未完成阶段中解锁"
 
 msgid "battlePassBuyView/reward/titleNowRewards"
-msgstr "将立即获得"
+msgstr "立即获得"
 
 msgid "battlePassStatus/activateChapter"
 msgstr "激活战斗通行证章节"
@@ -297,20 +288,17 @@ msgstr "猎牛之歌"
 msgid "chapter/fullName/1114"
 msgstr "猎牛之歌"
 
-msgid "chapter/fullName/200"
+msgid "chapter/fullName/210"
 msgstr "精英征程"
 
-msgid "chapter/fullName/201"
-msgstr "尘封时光"
+msgid "chapter/fullName/211"
+msgstr "专业人员"
 
-msgid "chapter/fullName/202"
-msgstr "宿命使然"
+msgid "chapter/fullName/212"
+msgstr "特技演员"
 
-msgid "chapter/fullName/203"
-msgstr "沙漠号令"
-
-msgid "chapter/fullName/205"
-msgstr "孤岛惊魂"
+msgid "chapter/fullName/213"
+msgstr "沉稳战士"
 
 msgid "chapter/fullNameUppercased/10021"
 msgstr "猎牛之歌"
@@ -318,17 +306,14 @@ msgstr "猎牛之歌"
 msgid "chapter/fullNameUppercased/1114"
 msgstr "猎牛之歌"
 
-msgid "chapter/fullNameUppercased/201"
-msgstr "尘封时光"
+msgid "chapter/fullNameUppercased/211"
+msgstr "专业人员"
 
-msgid "chapter/fullNameUppercased/202"
-msgstr "宿命使然"
+msgid "chapter/fullNameUppercased/212"
+msgstr "特技演员"
 
-msgid "chapter/fullNameUppercased/203"
-msgstr "沙漠号令"
-
-msgid "chapter/fullNameUppercased/205"
-msgstr "孤岛惊魂"
+msgid "chapter/fullNameUppercased/213"
+msgstr "沉稳战士"
 
 msgid "chapter/title"
 msgstr "章节%(chapter)s"
@@ -493,6 +478,9 @@ msgstr "3倍乘员经验任务"
 
 msgid "equipCoinBonus"
 msgstr "合金元件: %(count)s"
+
+msgid "finalReward/attachmentsSet/title"
+msgstr "3D附件套装"
 
 msgid "finalReward/tankman/roles/commander"
 msgstr "车长"
@@ -801,10 +789,10 @@ msgid "postProgressionView/footer/description/text"
 msgstr "完成所有章节后开放。已完成章节: %(completedChapters)/%(chaptersAmount)"
 
 msgid "postProgressionView/footer/extraChapter/description/text"
-msgstr "获取金币坦克和专属个性化元素。"
+msgstr "投身其中，获取专属奖励和独特个性化元素。"
 
 msgid "postProgressionView/footer/extraChapter/title/text"
-msgstr "战斗通行证:孤岛惊魂重磅来袭！"
+msgstr "特殊章节来了！"
 
 msgid "postProgressionView/footer/purchaseIP/banner/text"
 msgstr "购买高级通行证，获取更多奖励！"
@@ -1154,11 +1142,8 @@ msgstr "精英征程阶段%(level)d"
 msgid "rewardChoice/crewBook/rewardDescription"
 msgstr "赋予选定的%(nation)s坦克每名乘员的经验"
 
-msgid "rewardChoice/subTitle"
-msgstr "选择您的奖励"
-
 msgid "rewardChoice/title"
-msgstr "战斗通行证"
+msgstr "选择您的奖励"
 
 msgid "rewardChoice/titleChapter"
 msgstr "战斗通行证: \"%(chapter)s\"章节"
@@ -1169,14 +1154,14 @@ msgstr "战斗通行证: \"%(chapter)s\"章节，阶段%(level)s"
 msgid "season/fullName/1002"
 msgstr "猎牛之歌"
 
-msgid "season/fullName/20"
-msgstr "沙海寻踪"
+msgid "season/fullName/21"
+msgstr "稳扎稳打"
 
 msgid "season/fullNameUppercased/1002"
 msgstr "猎牛之歌"
 
-msgid "season/fullNameUppercased/20"
-msgstr "沙海寻踪"
+msgid "season/fullNameUppercased/21"
+msgstr "稳扎稳打"
 
 msgid "selectBonus/battle_booster_gift"
 msgstr "自选指令"

@@ -119,6 +119,8 @@ package net.wg.data.constants.generated
       
       public static const COMP7_AGGRESSIVE_DETECTION:String = "aggressiveDetection";
       
+      public static const COMP7_ILLUMINATION_FLARE:String = "illuminationFlare";
+      
       public static const COMP7_POINT_RECON:String = "pointRecon";
       
       public static const WARNING_VIEW:String = "warningView";

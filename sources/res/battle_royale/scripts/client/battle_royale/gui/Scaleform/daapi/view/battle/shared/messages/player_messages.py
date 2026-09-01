@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging
 from gui.Scaleform.daapi.view.battle.shared.messages import player_messages
 from items import vehicles

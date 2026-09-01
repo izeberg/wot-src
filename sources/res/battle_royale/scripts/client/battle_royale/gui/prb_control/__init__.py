@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from battle_royale.gui.impl.lobby.views.event_banner import BattleRoyaleEventBanner, isBattleRoyaleEntryPointAvailable
 from battle_royale.gui.impl.lobby.views.mode_selector.items.battle_royale_mode_selector_item import BattleRoyaleModeSelectorItem
 from battle_royale.gui.impl.lobby.views.st_patrick_banner import StPatrickEventBanner, isStPatrickEntryPointAvailable

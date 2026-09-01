@@ -1,4 +1,4 @@
-from frameworks.state_machine import StateFlags
+from frameworks_common.state_machine import StateFlags
 import game_loading_bindings
 from gui.game_loading import loggers
 from gui.game_loading.state_machine.states.base import BaseState

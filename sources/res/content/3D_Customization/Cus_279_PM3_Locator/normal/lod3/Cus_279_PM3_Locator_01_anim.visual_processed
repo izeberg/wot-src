@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>r_root</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>b_rotate</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 -0.000272</row3>
+				</transform>
+				<node>
+					<identifier>hanger_1</identifier>
+					<transform>
+						<row0>0.000000 0.731156 -0.682210</row0>
+						<row1>-0.000000 0.682210 0.731156</row1>
+						<row2>1.000000 0.000000 0.000000</row2>
+						<row3>0.000000 0.235861 0.001847</row3>
+					</transform>
+					<node>
+						<identifier>hanger_2</identifier>
+						<transform>
+							<row0>0.000000 -0.000000 1.000000</row0>
+							<row1>0.657399 0.753542 -0.000000</row1>
+							<row2>-0.753542 0.657399 0.000000</row2>
+							<row3>0.254613 0.000000 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>locator_root</identifier>
+							<transform>
+								<row0>1.000000 -0.000000 0.000000</row0>
+								<row1>0.000000 0.996613 -0.082236</row1>
+								<row2>0.000000 0.082236 0.996613</row2>
+								<row3>-0.000000 0.066408 0.245607</row3>
+							</transform>
+							<node>
+								<identifier>petal_01_jnt</identifier>
+								<transform>
+									<row0>0.979374 -0.195591 0.050708</row0>
+									<row1>0.202057 0.948032 -0.245780</row1>
+									<row2>-0.000000 0.250957 0.967998</row2>
+									<row3>0.000000 0.008083 0.024571</row3>
+								</transform>
+								<node>
+									<identifier>petal_01_jnt_1</identifier>
+									<transform>
+										<row0>0.151252 -0.988495 0.000000</row0>
+										<row1>0.000000 0.000000 -1.000000</row1>
+										<row2>0.988495 0.151252 -0.000000</row2>
+										<row3>0.037806 0.000000 0.000857</row3>
+									</transform>
+									<node>
+										<identifier>petal_01_jnt_1_BlendBone</identifier>
+										<transform>
+											<row0>-0.051600 0.000000 0.998668</row0>
+											<row1>-0.971602 -0.231233 -0.050202</row1>
+											<row2>-0.230925 0.972898 -0.011932</row2>
+											<row3>0.427463 0.210564 -0.014989</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>petal_01_jnt_BlendBone</identifier>
+									<transform>
+										<row0>0.979374 0.202057 -0.000000</row0>
+										<row1>-0.196581 0.952831 0.231233</row1>
+										<row2>-0.046722 0.226464 -0.972898</row2>
+										<row3>0.087644 -0.424812 -0.209707</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>petal_02_jnt</identifier>
+								<transform>
+									<row0>-0.999967 -0.007920 0.002053</row0>
+									<row1>0.008182 -0.967966 0.250948</row1>
+									<row2>0.000000 0.250957 0.967998</row2>
+									<row3>0.000000 0.008083 0.024571</row3>
+								</transform>
+								<node>
+									<identifier>petal_02_jnt_1</identifier>
+									<transform>
+										<row0>0.537268 0.843412 0.000000</row0>
+										<row1>-0.000000 -0.000000 -1.000000</row1>
+										<row2>-0.843412 0.537268 -0.000000</row2>
+										<row3>0.036701 -0.001213 0.000595</row3>
+									</transform>
+									<node>
+										<identifier>petal_02_jnt_1_BlendBone</identifier>
+										<transform>
+											<row0>-0.530349 0.000000 0.847779</row0>
+											<row1>-0.824803 -0.231233 -0.515976</row1>
+											<row2>-0.196035 0.972898 -0.122634</row2>
+											<row3>0.349037 0.210302 0.261650</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>petal_02_jnt_BlendBone</identifier>
+									<transform>
+										<row0>-0.999967 0.008182 0.000000</row0>
+										<row1>-0.007960 -0.972866 0.231233</row1>
+										<row2>-0.001892 -0.231225 -0.972898</row2>
+										<row3>0.003549 0.433745 -0.209707</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>petal_03_jnt</identifier>
+								<transform>
+									<row0>-0.778078 -0.608065 0.157643</row0>
+									<row1>0.628168 -0.753178 0.195264</row1>
+									<row2>-0.000000 0.250957 0.967998</row2>
+									<row3>0.000000 0.008083 0.024571</row3>
+								</transform>
+								<node>
+									<identifier>petal_03_jnt_1</identifier>
+									<transform>
+										<row0>0.898480 0.439015 0.000000</row0>
+										<row1>0.000000 0.000000 -1.000000</row1>
+										<row2>-0.439015 0.898480 0.000000</row2>
+										<row3>0.035299 -0.001213 0.000595</row3>
+									</transform>
+									<node>
+										<identifier>petal_03_jnt_1_BlendBone</identifier>
+										<transform>
+											<row0>-0.423312 0.000000 0.905984</row0>
+											<row1>-0.881430 -0.231233 -0.411839</row1>
+											<row2>-0.209493 0.972898 -0.097884</row2>
+											<row3>0.361796 0.210302 0.200203</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>petal_03_jnt_BlendBone</identifier>
+									<transform>
+										<row0>-0.778078 0.628168 0.000000</row0>
+										<row1>-0.611144 -0.756991 0.231233</row1>
+										<row2>-0.145253 -0.179917 -0.972898</row2>
+										<row3>0.272474 0.337498 -0.209707</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>petal_04_jnt</identifier>
+								<transform>
+									<row0>-0.349279 -0.907032 0.235151</row0>
+									<row1>0.937019 -0.338102 0.087654</row1>
+									<row2>-0.000000 0.250957 0.967998</row2>
+									<row3>0.000000 0.008083 0.024571</row3>
+								</transform>
+								<node>
+									<identifier>petal_04_jnt_1</identifier>
+									<transform>
+										<row0>0.999900 -0.014168 0.000000</row0>
+										<row1>0.000000 0.000000 -1.000000</row1>
+										<row2>0.014168 0.999900 0.000000</row2>
+										<row3>0.034599 0.000000 0.000595</row3>
+									</transform>
+									<node>
+										<identifier>petal_04_jnt_1_BlendBone</identifier>
+										<transform>
+											<row0>-0.362520 0.000000 0.931976</row0>
+											<row1>-0.906718 -0.231233 -0.352695</row1>
+											<row2>-0.215504 0.972898 -0.083827</row2>
+											<row3>0.369658 0.210302 0.156756</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>petal_04_jnt_BlendBone</identifier>
+									<transform>
+										<row0>-0.349279 0.937019 -0.000000</row0>
+										<row1>-0.911624 -0.339813 0.231233</row1>
+										<row2>-0.216670 -0.080765 -0.972898</row2>
+										<row3>0.406440 0.151503 -0.209707</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>petal_05_jnt</identifier>
+								<transform>
+									<row0>0.160375 -0.955469 0.247708</row0>
+									<row1>0.987056 0.155242 -0.040247</row1>
+									<row2>-0.000000 0.250957 0.967998</row2>
+									<row3>0.000000 0.008083 0.024571</row3>
+								</transform>
+								<node>
+									<identifier>petal_05_jnt_1</identifier>
+									<transform>
+										<row0>0.901804 -0.432146 0.000000</row0>
+										<row1>0.000000 0.000000 -1.000000</row1>
+										<row2>0.432146 0.901804 0.000000</row2>
+										<row3>0.035299 0.001213 0.000595</row3>
+									</transform>
+									<node>
+										<identifier>petal_05_jnt_1_BlendBone</identifier>
+										<transform>
+											<row0>-0.281926 0.000000 0.959436</row0>
+											<row1>-0.933434 -0.231233 -0.274286</row1>
+											<row2>-0.221853 0.972898 -0.065191</row2>
+											<row3>0.384855 0.210302 0.105939</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>petal_05_jnt_BlendBone</identifier>
+									<transform>
+										<row0>0.160375 0.987056 -0.000000</row0>
+										<row1>-0.960305 0.156028 0.231233</row1>
+										<row2>-0.228240 0.037084 -0.972898</row2>
+										<row3>0.428145 -0.069564 -0.209707</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>petal_06_jnt</identifier>
+								<transform>
+									<row0>0.688624 -0.701913 0.181973</row0>
+									<row1>0.725119 0.666587 -0.172815</row1>
+									<row2>-0.000000 0.250957 0.967998</row2>
+									<row3>0.000000 0.008083 0.024571</row3>
+								</transform>
+								<node>
+									<identifier>petal_06_jnt_1</identifier>
+									<transform>
+										<row0>0.563820 -0.825897 0.000000</row0>
+										<row1>0.000000 0.000000 -1.000000</row1>
+										<row2>0.825897 0.563820 -0.000000</row2>
+										<row3>0.036701 0.001213 0.000595</row3>
+									</transform>
+									<node>
+										<identifier>petal_06_jnt_1_BlendBone</identifier>
+										<transform>
+											<row0>-0.210613 0.000000 0.977570</row0>
+											<row1>-0.951076 -0.231233 -0.204905</row1>
+											<row2>-0.226046 0.972898 -0.048701</row2>
+											<row3>0.404339 0.210302 0.060360</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>petal_06_jnt_BlendBone</identifier>
+									<transform>
+										<row0>0.688624 0.725118 -0.000000</row0>
+										<row1>-0.705467 0.669961 0.231233</row1>
+										<row2>-0.167671 0.159233 -0.972898</row2>
+										<row3>0.314527 -0.298697 -0.209707</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>locator_root_BlendBone</identifier>
+								<transform>
+									<row0>1.000000 -0.000000 0.000000</row0>
+									<row1>0.000000 0.999793 -0.020322</row1>
+									<row2>0.000000 -0.020322 -0.999793</row2>
+									<row3>-0.000000 -0.464423 -0.069570</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>hanger_2_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 -0.000000 0.000000</row0>
+								<row1>0.000000 0.994736 -0.102473</row1>
+								<row2>0.000000 -0.102473 -0.994736</row2>
+								<row3>-0.000000 -0.402163 0.214464</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>hanger_1_BlendBone</identifier>
+						<transform>
+							<row0>0.000000 -0.000000 1.000000</row0>
+							<row1>0.731156 0.682210 0.000000</row1>
+							<row2>0.682210 -0.731156 -0.000000</row2>
+							<row3>-0.171377 -0.162058 -0.000000</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>b_rotate_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.000000 0.000000 0.000272</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>r_root_BlendBone</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 -1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>r_root_BlendBone</node>
+		<node>b_rotate_BlendBone</node>
+		<node>locator_root_BlendBone</node>
+		<node>hanger_1_BlendBone</node>
+		<node>petal_01_jnt_BlendBone</node>
+		<node>hanger_2_BlendBone</node>
+		<node>petal_01_jnt_1_BlendBone</node>
+		<node>petal_02_jnt_1_BlendBone</node>
+		<node>petal_06_jnt_1_BlendBone</node>
+		<node>petal_04_jnt_1_BlendBone</node>
+		<node>petal_05_jnt_1_BlendBone</node>
+		<node>petal_03_jnt_1_BlendBone</node>
+		<geometry>
+			<vertices>s0Shape.vertices</vertices>
+			<primitive>s0Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>112</materialKind>
+					<property>
+						camoEmissionMap
+						<Texture>content/3D_Customization/Cus_279_PM3_Locator/Cus_279_PM3_emission.dds</Texture>
+					</property>
+					<property>
+						camoEmissionParams
+						<Vector4>5.000000 10.000000 0.000000 1.000000</Vector4>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/3D_Customization/Cus_279_PM3_Locator/Cus_279_PM3_Locator_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>content/3D_Customization/Cus_279_PM3_Locator/Cus_279_PM3_Locator_AO.dds</Texture>
+					</property>
+					<property>
+						g_detailMetallicCutoff
+						<Float>0.150000</Float>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>3.500000 3.500000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_enabledProjectionDecalsCount
+						<Int>1</Int>
+					</property>
+					<property>
+						g_metallicDetailInfluence
+						<Float>0.050000</Float>
+					</property>
+					<property>
+						g_projectionDecal1EmissionMap
+						<Texture>content/3D_Customization/Cus_279_PM3_Locator/Cus_279_PM3_emission.dds</Texture>
+					</property>
+					<property>
+						g_projectionDecal1EmissionParams
+						<Vector4>10.000000 10.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_repaintColor1
+						<Vector4>1.000000 1.000000 1.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_repaintColor2
+						<Vector4>1.000000 1.000000 1.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_repaintColor3
+						<Vector4>1.000000 1.000000 1.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_repaintGloss
+						<Vector4>0.000000 0.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_repaintMetallic
+						<Vector4>255.000000 255.000000 255.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_useNewWear
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_useOldCamoDetail
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/3D_Customization/Cus_279_PM3_Locator/Cus_279_PM3_Locator_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/3D_Customization/Cus_279_PM3_Locator/Cus_279_PM3_Locator_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.014670 0.227407 -0.057079</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-0.089031 -0.070149 -0.177681</min>
+		<max>0.119728 0.527827 0.266155</max>
+	</boundingBox>
+	<geometrySize>12976</geometrySize>
+</root>

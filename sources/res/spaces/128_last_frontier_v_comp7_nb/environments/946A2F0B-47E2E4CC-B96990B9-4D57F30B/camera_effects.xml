@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<effectMap>spaces/128_last_frontier_v_comp7_nb/environments/946A2F0B-47E2E4CC-B96990B9-4D57F30B/camera_effects_map.dds</effectMap>
+	<effect>
+		<id>1</id>
+		<name>particles/content_deferred/PFX/Environment/CameraEffects/127_japort_leaves.vfx</name>
+		<alignToTerrain>false</alignToTerrain>
+		<useCameraTarget>false</useCameraTarget>
+	</effect>
+	<effect>
+		<id>2</id>
+		<name>particles/content_deferred/PFX/Environment/CameraEffects/127_japort_flower_field.vfx</name>
+		<alignToTerrain>true</alignToTerrain>
+		<useCameraTarget>false</useCameraTarget>
+	</effect>
+</root>

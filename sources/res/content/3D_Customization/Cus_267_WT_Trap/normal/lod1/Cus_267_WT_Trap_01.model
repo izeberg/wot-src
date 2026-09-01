@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_267_WT_Trap/normal/lod2/Cus_267_WT_Trap_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.457088 -0.000000 -0.704685</min>
+		<max>0.049315 0.411384 0.704688</max>
+	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/Cus_267_WT_Trap/normal/lod1/Cus_267_WT_Trap_01</nodefullVisual>
+	<tank>true</tank>
+</root>

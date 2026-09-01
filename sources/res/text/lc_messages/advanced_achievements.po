@@ -182,9 +182,6 @@ msgstr "拥有T-44-122(%(level)s级)"
 msgid "description/branch_china_Ch19_121"
 msgstr "研发C系121(%(level)s级)中型坦克研发分支中的所有坦克"
 
-msgid "description/branch_china_Ch29_Type_62C_prot"
-msgstr "研发C系WZ132-1(%(level)s级)轻型坦克研发分支中的所有坦克"
-
 msgid "description/branch_china_Ch38_WZ113G_FT"
 msgstr "研发C系WZ113G(%(level)s级)自行反坦克炮研发分支中的所有坦克"
 
@@ -200,14 +197,17 @@ msgstr "研发C系BZ-79(%(level)s级)重型坦克研发分支中的所有坦克"
 msgid "description/branch_china_Ch70_PTZ_78"
 msgstr "研发C系PTZ-78(%(level)s级)自行反坦克炮研发分支中的所有坦克"
 
+msgid "description/branch_china_Ch71_WZ_219"
+msgstr "研发C系WZ219(%(level)s级)轻型坦克研发分支中的所有坦克"
+
 msgid "description/branch_czech_Cz04_T50_51"
 msgstr "研发J系TVP&nbsp;T50(%(level)s级)中型坦克研发分支中的所有坦克"
 
-msgid "description/branch_czech_Cz17_Vz_55"
-msgstr "研发J系Vz.55(%(level)s级)重型坦克研发分支中的所有坦克"
-
 msgid "description/branch_czech_Cz34_Vz_71_Tesak"
 msgstr "研发J系Vz.71&nbsp;T(%(level)s级)轻型坦克研发分支中的所有坦克"
+
+msgid "description/branch_czech_Cz46_Vz_63P"
+msgstr "研发J系Vz.63P(%(level)s级)重型坦克研发分支中的所有坦克"
 
 msgid "description/branch_france_F108_Panhard_EBR_105"
 msgstr "研发F系潘哈德&nbsp;EBR&nbsp;105(%(level)s级)轻型坦克研发分支中的所有坦克"
@@ -257,6 +257,9 @@ msgstr "研发D系\"甲虫\"(%(level)s级)轻型坦克研发分支中的所有�
 msgid "description/branch_germany_G189_Hirschkafer"
 msgstr "研发D系\"鹿角虫\"(%(level)s级)自行反坦克炮研发分支中的所有坦克"
 
+msgid "description/branch_germany_G197_Pz_Kpfw_Neu"
+msgstr "研发D系Pz.70-120(%(level)s级)重型坦克研发分支中的所有坦克"
+
 msgid "description/branch_germany_G42_Maus"
 msgstr "研发D系\"鼠\"式(%(level)s级)重型坦克研发分支中的所有坦克"
 
@@ -284,20 +287,23 @@ msgstr "研发I系\"犀牛\"(%(level)s级)重型坦克研发分支中的所有�
 msgid "description/branch_italy_It23_CC_3"
 msgstr "研发I系CC&nbsp;3&nbsp;\"弥诺陶洛斯\"(%(level)s级)自行反坦克炮研发分支中的所有坦克"
 
+msgid "description/branch_italy_It43_CAV_mod_71"
+msgstr "研发I系CAV&nbsp;71(%(level)s级)中型坦克研发分支中的所有坦克"
+
 msgid "description/branch_japan_J16_ST_B1"
 msgstr "研发R系STB-1(%(level)s级)中型坦克研发分支中的所有坦克"
 
 msgid "description/branch_japan_J20_Type_2605"
 msgstr "研发R系五式重战(%(level)s级)重型坦克研发分支中的所有坦克"
 
-msgid "description/branch_japan_J35_Ho_Ri_3"
-msgstr "研发R系五式3型炮战车(%(level)s级)自行反坦克炮研发分支中的所有坦克"
-
 msgid "description/branch_japan_J40_Type_71"
 msgstr "研发R系试验型重战车(%(level)s级)重型坦克研发分支中的所有坦克"
 
 msgid "description/branch_japan_J52_STK_2"
 msgstr "研发R系STK-2(%(level)s级)重型坦克研发分支中的所有坦克"
+
+msgid "description/branch_japan_J53_Ho_Ri_Shugo"
+msgstr "研发R系五式4型炮战车(%(level)s级)自行反坦克炮研发分支中的所有坦克"
 
 msgid "description/branch_poland_Pl15_60TP_Lewandowskiego"
 msgstr "研发B系60TP&nbsp;L(%(level)s级)重型坦克研发分支中的所有坦克"
@@ -317,11 +323,11 @@ msgstr "研发V系Strv&nbsp;103B(%(level)s级)自行反坦克炮研发分支中�
 msgid "description/branch_sweden_S16_Kranvagn"
 msgstr "研发V系KRV(%(level)s级)重型坦克研发分支中的所有坦克"
 
-msgid "description/branch_sweden_S28_UDES_15_16"
-msgstr "研发V系UDES&nbsp;15/16(%(level)s级)中型坦克研发分支中的所有坦克"
-
 msgid "description/branch_sweden_S36_Strv_107_12"
 msgstr "研发V系Strv&nbsp;107-12(%(level)s级)自行反坦克炮研发分支中的所有坦克"
+
+msgid "description/branch_sweden_S41_BV_111"
+msgstr "研发V系BV-111(%(level)s级)中型坦克研发分支中的所有坦克"
 
 msgid "description/branch_uk_GB100_Manticore"
 msgstr "研发Y系曼蒂科尔(%(level)s级)轻型坦克研发分支中的所有坦克"
@@ -520,6 +526,9 @@ msgstr "拥有\"第三区\"个人任务中的全部坦克"
 
 msgid "description/third_campaign_first_operation"
 msgstr "完成第1个作战行动，并拥有风猎者(%(level)s级)"
+
+msgid "description/third_campaign_fourth_operation"
+msgstr "完成第4个作战行动，并拥有幽壑&nbsp;VM&nbsp;68(%(level)s级)"
 
 msgid "description/third_campaign_second_operation"
 msgstr "完成第2个作战行动，并拥有\"掠食者\"(%(level)s级)"
@@ -860,6 +869,9 @@ msgstr "BZ-79"
 msgid "name/Ch70_PTZ_78"
 msgstr "PTZ-78"
 
+msgid "name/Ch71_WZ_219"
+msgstr "WZ219"
+
 msgid "name/Cz02_TVP_T50"
 msgstr "斯柯达&nbsp;T50"
 
@@ -904,6 +916,9 @@ msgstr "Vz.71&nbsp;T"
 
 msgid "name/Cz40_DBV_152"
 msgstr "DBV-152"
+
+msgid "name/Cz46_Vz_63P"
+msgstr "Vz.63P"
 
 msgid "name/F06_ARL_44"
 msgstr "ARL&nbsp;44"
@@ -1084,6 +1099,18 @@ msgstr "\"鹿角虫\""
 
 msgid "name/G18_JagdPanther"
 msgstr "\"猎豹\""
+
+msgid "name/G193_Pz_Kpfw_55"
+msgstr "Pz.55"
+
+msgid "name/G196_Versuchspanzer_57"
+msgstr "VPz&nbsp;57"
+
+msgid "name/G197_Pz_Kpfw_Neu"
+msgstr "Pz.70-120"
+
+msgid "name/G198_Kampfpanzer_67"
+msgstr "67主战方案"
 
 msgid "name/G200_Chi_Go"
 msgstr "\"黑豹\"奇戈"
@@ -1388,6 +1415,9 @@ msgstr "巴索托&nbsp;M43"
 msgid "name/It31_CC_67_B"
 msgstr "SMV&nbsp;CC-67"
 
+msgid "name/It43_CAV_mod_71"
+msgstr "CAV 71"
+
 msgid "name/J10_Chi_To"
 msgstr "四式中战"
 
@@ -1453,6 +1483,9 @@ msgstr "RSFT"
 
 msgid "name/J52_STK_2"
 msgstr "STK-2"
+
+msgid "name/J53_Ho_Ri_Shugo"
+msgstr "五式4型炮战车"
 
 msgid "name/Pl05_50TP_Tyszkiewicza"
 msgstr "50TP T"
@@ -1745,11 +1778,11 @@ msgstr "UDES&nbsp;14 Alt&nbsp;5"
 msgid "name/S36_Strv_107_12"
 msgstr "Strv&nbsp;107-12"
 
+msgid "name/S41_BV_111"
+msgstr "BV-111"
+
 msgid "name/branch_china_Ch19_121"
 msgstr "C系:&nbsp;121"
-
-msgid "name/branch_china_Ch29_Type_62C_prot"
-msgstr "C系: WZ132-1"
 
 msgid "name/branch_china_Ch38_WZ113G_FT"
 msgstr "C系:&nbsp;WZ113G"
@@ -1766,14 +1799,17 @@ msgstr "C系: BZ-79"
 msgid "name/branch_china_Ch70_PTZ_78"
 msgstr "C系: PTZ-78"
 
+msgid "name/branch_china_Ch71_WZ_219"
+msgstr "C系: WZ219"
+
 msgid "name/branch_czech_Cz04_T50_51"
 msgstr "J系:&nbsp;TVP&nbsp;T50"
 
-msgid "name/branch_czech_Cz17_Vz_55"
-msgstr "J系:&nbsp;Vz.55"
-
 msgid "name/branch_czech_Cz34_Vz_71_Tesak"
 msgstr "J系: Vz.71&nbsp;T"
+
+msgid "name/branch_czech_Cz46_Vz_63P"
+msgstr "J系:&nbsp;Vz.63P"
 
 msgid "name/branch_france_F108_Panhard_EBR_105"
 msgstr "F系: 潘哈德 EBR&nbsp;105"
@@ -1823,6 +1859,9 @@ msgstr "D系:&nbsp;\"甲虫\""
 msgid "name/branch_germany_G189_Hirschkafer"
 msgstr "D系: \"鹿角虫\""
 
+msgid "name/branch_germany_G197_Pz_Kpfw_Neu"
+msgstr "D系:&nbsp;Pz.70-120"
+
 msgid "name/branch_germany_G42_Maus"
 msgstr "D系: \"鼠\"式"
 
@@ -1850,20 +1889,23 @@ msgstr "I系: \"犀牛\""
 msgid "name/branch_italy_It23_CC_3"
 msgstr "I系: CC 3&nbsp;\"弥诺陶洛斯\""
 
+msgid "name/branch_italy_It43_CAV_mod_71"
+msgstr "I系: CAV 71"
+
 msgid "name/branch_japan_J16_ST_B1"
 msgstr "R系: STB-1"
 
 msgid "name/branch_japan_J20_Type_2605"
 msgstr "R系:&nbsp;五式重战"
 
-msgid "name/branch_japan_J35_Ho_Ri_3"
-msgstr "R系:&nbsp;五式3型炮战车"
-
 msgid "name/branch_japan_J40_Type_71"
 msgstr "R系:&nbsp;试验型重战车"
 
 msgid "name/branch_japan_J52_STK_2"
 msgstr "R系: STK-2"
+
+msgid "name/branch_japan_J53_Ho_Ri_Shugo"
+msgstr "R系:&nbsp;五式4型炮战车"
 
 msgid "name/branch_poland_Pl15_60TP_Lewandowskiego"
 msgstr "B系: 60TP L"
@@ -1883,11 +1925,11 @@ msgstr "V系: Strv&nbsp;103B"
 msgid "name/branch_sweden_S16_Kranvagn"
 msgstr "V系: KRV"
 
-msgid "name/branch_sweden_S28_UDES_15_16"
-msgstr "V系: UDES&nbsp;15/16"
-
 msgid "name/branch_sweden_S36_Strv_107_12"
 msgstr "V系: Strv&nbsp;107-12"
+
+msgid "name/branch_sweden_S41_BV_111"
+msgstr "V系: BV-111"
 
 msgid "name/branch_uk_GB100_Manticore"
 msgstr "Y系: 曼蒂科尔"
@@ -2086,6 +2128,9 @@ msgstr "第三区"
 
 msgid "name/third_campaign_first_operation"
 msgstr "风猎者作战行动"
+
+msgid "name/third_campaign_fourth_operation"
+msgstr "作战行动: 幽壑"
 
 msgid "name/third_campaign_second_operation"
 msgstr "\"掠食者\"作战行动"

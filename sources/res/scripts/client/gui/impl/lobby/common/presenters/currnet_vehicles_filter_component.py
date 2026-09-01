@@ -17,7 +17,6 @@ class CurrentVehicleFilterComponent(IVehicleFilter):
     @property
     def criteria(self):
         _logger.warning('Tried to access filter criteria for a current vehicle')
-        return
 
     @property
     def vehicles(self):

@@ -1032,6 +1032,12 @@ msgstr "3级附加履带齿"
 msgid "gun_balancing_1/name"
 msgstr "火炮平衡(类型 1)"
 
+msgid "gun_balancing_2/name"
+msgstr "火炮平衡(类型2)"
+
+msgid "gun_barrel_modification_1/name"
+msgstr "炮管改装(类型1)"
+
 msgid "handExtinguishers/always"
 msgstr "?empty?"
 
@@ -1263,6 +1269,9 @@ msgstr "改进型悬挂装置(类型 1)"
 msgid "improved_suspension_2/name"
 msgstr "改进型悬挂装置(类型 2)"
 
+msgid "improved_turret_drive_1/name"
+msgstr "改进型炮塔驱动装置(类型1)"
+
 msgid "inspire/longDescr"
 msgstr "提升自身和一定半径范围内所有盟友的车组乘员表现，使每位车组乘员的主要专业熟练度提升一定百分比。使用该给养的玩家能够获得更多加成。"
 
@@ -1455,6 +1464,9 @@ msgstr "机动强化系统等级3"
 msgid "modernizedTurbochargerRotationMechanism3/short_special"
 msgstr "机动强化系统等级3"
 
+msgid "muzzle_flash_suppressor_1/name"
+msgstr "炮口消焰器(类型1)"
+
 msgid "nitro/battleDescr"
 msgstr ""
 "在%(consumeSeconds)s秒内，坦克的发动机功率提高%(enginePowerFactor)s，其最大速度提高至正常情况下的%(maxSpeedFactor)s倍。"
@@ -1513,6 +1525,14 @@ msgstr ""
 
 msgid "poi_artillery_aoe/name"
 msgstr "火炮支援"
+
+msgid "poi_illumination_flare/descr"
+msgstr ""
+"短暂延迟后，一枚照明弹将照亮指定区域。其半径范围内的敌方坦克将保持可见，并受到更高的损伤。\n"
+"观察哨可在数分钟后重新占领。"
+
+msgid "poi_illumination_flare/name"
+msgstr "照明弹"
 
 msgid "poi_radar/descr"
 msgstr "激活后，所有敌方坦克将在{colorTagOpen}%(duration)d秒{colorTagClose}内保持可见。"
@@ -2124,37 +2144,93 @@ msgstr "轻量化车体"
 msgid "role_HT_universal_pair_5_2/splitName"
 msgstr "轻量化车体"
 
-msgid "role_LT_universal_pair_4_1/name"
-msgstr "防反光观察镜涂层"
+msgid "role_LT_scout_pair_4_1/name"
+msgstr "防反光头灯涂层"
 
-msgid "role_LT_universal_pair_4_1/splitName"
+msgid "role_LT_scout_pair_4_1/splitName"
 msgstr ""
 "防反光\n"
-"观察镜涂层"
+"头灯涂层"
 
-msgid "role_LT_universal_pair_4_2/name"
-msgstr "外置视瞄系统"
+msgid "role_LT_scout_pair_4_2/name"
+msgstr "电动潜望镜"
 
-msgid "role_LT_universal_pair_4_2/splitName"
+msgid "role_LT_scout_pair_4_2/splitName"
 msgstr ""
-"外置视瞄\n"
-"系统"
+"电动\n"
+"潜望镜"
 
-msgid "role_LT_universal_pair_5_1/name"
+msgid "role_LT_scout_pair_5_1/name"
 msgstr "三层全景观瞄"
 
-msgid "role_LT_universal_pair_5_1/splitName"
-msgstr ""
-"三层\n"
-"全景观瞄"
+msgid "role_LT_scout_pair_5_1/splitName"
+msgstr "三层全景观瞄"
 
-msgid "role_LT_universal_pair_5_2/name"
+msgid "role_LT_scout_pair_5_2/name"
 msgstr "窄角观测装置"
 
-msgid "role_LT_universal_pair_5_2/splitName"
+msgid "role_LT_scout_pair_5_2/splitName"
 msgstr ""
 "窄角\n"
 "观测装置"
+
+msgid "role_LT_support_pair_4_1/name"
+msgstr "新型瞄准装置"
+
+msgid "role_LT_support_pair_4_1/splitName"
+msgstr "新型瞄准装置"
+
+msgid "role_LT_support_pair_4_2/name"
+msgstr "电动潜望镜"
+
+msgid "role_LT_support_pair_4_2/splitName"
+msgstr ""
+"电动\n"
+"潜望镜"
+
+msgid "role_LT_support_pair_5_1/name"
+msgstr "总体耐久度提高"
+
+msgid "role_LT_support_pair_5_1/splitName"
+msgstr ""
+"总体耐久度\n"
+"提高"
+
+msgid "role_LT_support_pair_5_2/name"
+msgstr "防反光头灯涂层"
+
+msgid "role_LT_support_pair_5_2/splitName"
+msgstr ""
+"防反光\n"
+"头灯涂层"
+
+msgid "role_LT_universal_pair_4_1/name"
+msgstr "制退器调整"
+
+msgid "role_LT_universal_pair_4_1/splitName"
+msgstr "制退器调整"
+
+msgid "role_LT_universal_pair_4_2/name"
+msgstr "电源重新布线"
+
+msgid "role_LT_universal_pair_4_2/splitName"
+msgstr ""
+"电源\n"
+"重新布线"
+
+msgid "role_LT_universal_pair_5_1/name"
+msgstr "炮弹弹带优化"
+
+msgid "role_LT_universal_pair_5_1/splitName"
+msgstr ""
+"炮弹弹带\n"
+"优化"
+
+msgid "role_LT_universal_pair_5_2/name"
+msgstr "高敏感度观察镜"
+
+msgid "role_LT_universal_pair_5_2/splitName"
+msgstr "高敏感度观察镜"
 
 msgid "role_LT_wheeled_pair_4_1/name"
 msgstr "强化型主要结构"
@@ -2818,6 +2894,9 @@ msgstr ""
 "生成一片会产生%(thunderCount)s次高频电击的区域。每次电击都会造成{whiteSpanish_Open}%(damage)s点损伤{whiteSpanish_Close}，并暂时降低能力效果范围内所有敌方坦克的机动性。\n"
 "\n"
 "*能力激活和首次电击之间存在%(delay)s秒的延迟。修理箱可以移除其减益效果。"
+
+msgid "torsion_bars_replace_1/name"
+msgstr "扭杆替换(类型 1)"
 
 msgid "trappoint/battleDescr"
 msgstr ""

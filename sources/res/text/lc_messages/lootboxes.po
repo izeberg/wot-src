@@ -10,9 +10,6 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "autoOpenView/bottomLabel"
-msgstr "我们为您开启了所有的假日行动补给品。"
-
 msgid "autoOpenView/congratsLabel"
 msgstr "恭喜！"
 
@@ -67,34 +64,10 @@ msgstr "x{count}"
 msgid "entryDesc/buySlot"
 msgstr "您可以在特惠商城中购买大型补给品"
 
-msgid "entryDesc/newYear_premium"
-msgstr "大型补给品"
-
-msgid "entryDesc/newYear_usual"
-msgstr "小型补给品"
-
-msgid "entryDesc/questSlot"
-msgstr "完成任务获得小型补给品。"
-
 msgid "entryDesc/restrictedMode"
 msgstr "此功能暂不可用。请稍后再试。"
 
 msgid "entryPoint/header"
-msgstr "补给品"
-
-msgid "entryTooltip/body/h1"
-msgstr "购买大型补给品礼包:"
-
-msgid "entryTooltip/body/h2"
-msgstr "获得小型补给品:"
-
-msgid "entryTooltip/body/p1"
-msgstr "您可在特惠商城中为自己和好友购买含有新年装饰物的补给品礼包。"
-
-msgid "entryTooltip/body/p2"
-msgstr "完成假日行动任务的奖励。"
-
-msgid "entryTooltip/header"
 msgstr "补给品"
 
 msgid "entryView/boxesCount"
@@ -103,24 +76,8 @@ msgstr "额外{count}个补给品"
 msgid "entryView/buyLabel"
 msgstr "购买补给品礼包"
 
-msgid "entryView/ended/newYear_premium"
-msgstr ""
-"您的仓库中已经没有大型补给品了。\n"
-"前往特惠商城购买更多礼包。"
-
-msgid "entryView/ended/newYear_usual"
-msgstr ""
-"您没有小型补给品了。\n"
-"您可在战斗中获得更多补给品。"
-
 msgid "entryView/lootboxesCount"
 msgstr "x{count}"
-
-msgid "entryView/title"
-msgstr "假日行动{year}"
-
-msgid "entryView/year"
-msgstr "2019"
 
 msgid "multiOpenView/applyLabel"
 msgstr "了解！"
@@ -193,9 +150,6 @@ msgstr "开启补给品"
 msgid "notification/lootBoxesReceived/invoice"
 msgstr "已添加"
 
-msgid "notification/ny19man"
-msgstr "一位新的特殊乘员：%(count)s"
-
 msgid "notification/rewards"
 msgstr "您获得了以下奖励："
 
@@ -259,36 +213,6 @@ msgstr "适用于以下坦克的独特风格"
 msgid "specialReward/vehicle/goToBtn"
 msgstr "车库中查看"
 
-msgid "tooltip/category/header/Christmas"
-msgstr "圣诞补给品"
-
-msgid "tooltip/category/header/Fairytale"
-msgstr "魔幻补给品"
-
-msgid "tooltip/category/header/NewYear"
-msgstr "新年补给品"
-
-msgid "tooltip/category/header/Oriental"
-msgstr "春节补给品"
-
-msgid "tooltip/category/rewards/Christmas"
-msgstr "圣诞收藏"
-
-msgid "tooltip/category/rewards/Fairytale"
-msgstr "魔幻收藏"
-
-msgid "tooltip/category/rewards/NewYear"
-msgstr "新年收藏"
-
-msgid "tooltip/category/rewards/Oriental"
-msgstr "春节收藏"
-
-msgid "tooltip/category/rewards/description"
-msgstr "补给品内含{category}装饰物及其他珍贵奖励。"
-
-msgid "tooltip/category/rewards/header"
-msgstr "勋章:"
-
 msgid "tooltip/entryView/buyBoxes"
 msgstr "在特惠商城中购买更多补给品礼包。"
 
@@ -300,12 +224,6 @@ msgstr "暂时无法操作。请稍后再试。"
 
 msgid "type/event_premium"
 msgstr "曙光补给品"
-
-msgid "type/newYear_premium"
-msgstr "大型补给品"
-
-msgid "type/newYear_usual"
-msgstr "小型补给品"
 
 msgid "type/wt_boss"
 msgstr "工程师放电管"

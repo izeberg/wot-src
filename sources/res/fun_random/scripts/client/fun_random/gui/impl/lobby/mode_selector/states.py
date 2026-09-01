@@ -1,5 +1,5 @@
 from __future__ import absolute_import
-from frameworks.state_machine import StateFlags
+from frameworks_common.state_machine import StateFlags
 from fun_random.gui.feature.util.fun_mixins import FunAssetPacksMixin
 from fun_random.gui.impl.lobby.mode_selector.fun_sub_selector_view import FunModeSubSelectorView
 from gui.impl.gen import R

@@ -1,9 +1,9 @@
 from __future__ import absolute_import
 import typing
-from constants import CONCENTRATION_MODE_STATE, OVERHEAT_GAIN_STATE, POWER_MODE_STATE, RECHARGEABLE_NITRO_STATE, SECONDARY_GUN_STATE, VEHICLE_SIEGE_STATE, TARGET_DESIGNATOR_STATE, STATIONARY_RELOAD_STATE, GUN_LOCK_REASONS, OVERHEAT_GUN_STATE, TEMPERATURE_GUN_STATE, HEATING_ZONES_GUN_STATE, PHASED_MECHANIC_STATE, AcceleratorStatus, PROPELLANT_GUN_STATE, LowChargeShotReloadingState, WheeledDashDirection
+from constants import BUSTLE_FEED_STATE, CONCENTRATION_MODE_STATE, OVERHEAT_GAIN_STATE, POWER_MODE_STATE, RECHARGEABLE_NITRO_STATE, SECONDARY_GUN_STATE, VEHICLE_SIEGE_STATE, TARGET_DESIGNATOR_STATE, STATIONARY_RELOAD_STATE, GUN_LOCK_REASONS, OVERHEAT_GUN_STATE, TEMPERATURE_GUN_STATE, HEATING_ZONES_GUN_STATE, PHASED_MECHANIC_STATE, AcceleratorStatus, PROPELLANT_GUN_STATE, LowChargeShotReloadingState, WheeledDashDirection, SHELL_PARAMS_SWITCHER_STATE, AUTORELOADER_SURGE_STATE, SIGHT_POINTER_STATE
 from visual_script.misc import ASPECT
-from visual_script.vehicle_blocks import VehicleMeta
 from visual_script.type import VScriptEnum
+from visual_script.vehicle_blocks import VehicleMeta
 if typing.TYPE_CHECKING:
     from typing import Type
 
@@ -267,3 +267,63 @@ class WheeledDashDirectionEnum(VScriptEnum):
     @classmethod
     def vs_aspects(cls):
         return [ASPECT.CLIENT]
+
+
+class ShellParamsSwitcherGunEnum(VScriptEnum):
+
+    @classmethod
+    def slotType(cls):
+        return 'EShellParamsSwitcherMechanicState'
+
+    @classmethod
+    def vs_enum(cls):
+        return SHELL_PARAMS_SWITCHER_STATE
+
+    @classmethod
+    def vs_aspects(cls):
+        return [ASPECT.CLIENT]
+
+
+class AutoreloaderSurgeStateEnum(VScriptEnum):
+
+    @classmethod
+    def slotType(cls):
+        return 'EAutoreloaderSurgeMechanicState'
+
+    @classmethod
+    def vs_enum(cls):
+        return AUTORELOADER_SURGE_STATE
+
+    @classmethod
+    def vs_aspects(cls):
+        return [ASPECT.CLIENT]
+
+
+class BustleFeedStateEnum(VScriptEnum):
+
+    @classmethod
+    def slotType(cls):
+        return 'EBustleFeedState'
+
+    @classmethod
+    def vs_enum(cls):
+        return BUSTLE_FEED_STATE
+
+    @classmethod
+    def vs_aspects(cls):
+        return [ASPECT.CLIENT]
+
+
+class SightPointerStateEnum(VScriptEnum):
+
+    @classmethod
+    def slotType(cls):
+        return 'ESightPointerState'
+
+    @classmethod
+    def vs_enum(cls):
+        return SIGHT_POINTER_STATE
+
+    @classmethod
+    def vs_aspects(cls):
+        return [ASPECT.CLIENT, ASPECT.SERVER]

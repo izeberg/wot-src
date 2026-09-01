@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_250_BP21_J_Searchlight/normal/lod2/Cus_250_BP21_J_Searchlight_01_anim</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.165307 -0.070000 -0.127187</min>
+		<max>0.164457 0.635565 0.106875</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_250_BP21_J_Searchlight/normal/lod1/Cus_250_BP21_J_Searchlight_01_anim</nodefullVisual>
+</root>

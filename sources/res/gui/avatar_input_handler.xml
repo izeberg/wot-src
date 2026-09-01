@@ -1624,6 +1624,20 @@
 						<!--BW_String-->
 					</acceleration>
 				</dynamicDistRange>
+				<dynamicDistRange>
+					<gameplayID>comp7</gameplayID>
+					<requiresPoiType>3</requiresPoiType>
+					<minArenaSize>0</minArenaSize>
+					<distRangeOverride>40 150</distRangeOverride>
+					<scrollMultiplier>
+						1.0
+						<!--BW_String-->
+					</scrollMultiplier>
+					<acceleration>
+						0.1
+						<!--BW_String-->
+					</acceleration>
+				</dynamicDistRange>
 			</dynamicDistRanges>
 			<dynamics>
 				<oscillator>

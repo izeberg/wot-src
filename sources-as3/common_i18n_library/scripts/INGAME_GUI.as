@@ -97,6 +97,16 @@ package
       
       public static const PLAYER_ERRORS_MECHANICS_SUPPORTWEAPON_CANT_SHOOT:String = "#ingame_gui:player_errors/mechanics/supportWeapon/cant_shoot";
       
+      public static const PLAYER_ERRORS_MECHANICS_AUXILIARYROCKETLAUNCHER_CANT_SHOOT:String = "#ingame_gui:player_errors/mechanics/auxiliaryRocketLauncher/cant_shoot";
+      
+      public static const PLAYER_ERRORS_MECHANICS_AUTORELOADERSURGE_NOCHARGES:String = "#ingame_gui:player_errors/mechanics/autoreloaderSurge/noCharges";
+      
+      public static const PLAYER_ERRORS_MECHANICS_AUTORELOADERSURGE_CLIPFULL:String = "#ingame_gui:player_errors/mechanics/autoreloaderSurge/clipFull";
+      
+      public static const PLAYER_ERRORS_MECHANICS_AUTORELOADERSURGE_NOAMMO:String = "#ingame_gui:player_errors/mechanics/autoreloaderSurge/noAmmo";
+      
+      public static const PLAYER_ERRORS_MECHANICS_AUTORELOADERSURGE_RELOADINGSMALL:String = "#ingame_gui:player_errors/mechanics/autoreloaderSurge/reloadingSmall";
+      
       public static const PLAYER_ERRORS_EQUIPMENT_ALREADYACTIVATED:String = "#ingame_gui:player_errors/equipment/alreadyActivated";
       
       public static const PLAYER_ERRORS_EQUIPMENT_ISINCOOLDOWN:String = "#ingame_gui:player_errors/equipment/isInCooldown";
@@ -493,7 +503,13 @@ package
       
       public static const SHELLS_KINDS_ARMOR_PIERCING_CR:String = "#ingame_gui:shells_kinds/ARMOR_PIERCING_CR";
       
-      public static const SHELLS_KINDS_PARAMS_HEADER:String = "#ingame_gui:shells_kinds/params/header";
+      public static const SHELLS_KINDS_PARAMS_HEADER_BUSTLEFEED:String = "#ingame_gui:shells_kinds/params/header/bustleFeed";
+      
+      public static const SHELLS_KINDS_PARAMS_HEADER_LOWCHARGESHOT:String = "#ingame_gui:shells_kinds/params/header/lowChargeShot";
+      
+      public static const SHELLS_KINDS_PARAMS_HEADER_SHELLCALIBRATION:String = "#ingame_gui:shells_kinds/params/header/shellCalibration";
+      
+      public static const SHELLS_KINDS_PARAMS_HEADER_SHELLPARAMSSWITCHER:String = "#ingame_gui:shells_kinds/params/header/shellParamsSwitcher";
       
       public static const SHELLS_KINDS_PARAMS_DAMAGE:String = "#ingame_gui:shells_kinds/params/damage";
       
@@ -506,6 +522,22 @@ package
       public static const SHELLS_KINDS_PARAMS_EXPLOSIONRADIUS:String = "#ingame_gui:shells_kinds/params/explosionRadius";
       
       public static const SHELLS_KINDS_PARAMS_STUNDURATION:String = "#ingame_gui:shells_kinds/params/stunDuration";
+      
+      public static const SHELLS_KINDS_PARAMS_NORMALIZATIONANGLE:String = "#ingame_gui:shells_kinds/params/normalizationAngle";
+      
+      public static const SHELLS_KINDS_PARAMS_RICOCHETANGLE:String = "#ingame_gui:shells_kinds/params/ricochetAngle";
+      
+      public static const SHELLS_KINDS_PARAMS_CRITICALHITCHANCE:String = "#ingame_gui:shells_kinds/params/criticalHitChance";
+      
+      public static const SHELLS_KINDS_PARAMS_CRITICALHITCHANCE_STANDARD:String = "#ingame_gui:shells_kinds/params/criticalHitChance/standard";
+      
+      public static const SHELLS_KINDS_PARAMS_CRITICALHITCHANCE_INCREASED:String = "#ingame_gui:shells_kinds/params/criticalHitChance/increased";
+      
+      public static const SHELLS_KINDS_PARAMS_CRITICALHITCHANCE_DECREASED:String = "#ingame_gui:shells_kinds/params/criticalHitChance/decreased";
+      
+      public static const SHELLS_KINDS_PARAMS_PENETRATIONLOSSVALUETEMPLATE:String = "#ingame_gui:shells_kinds/params/penetrationLossValueTemplate";
+      
+      public static const SHELLS_KINDS_PARAMS_PENETRATIONLOSS:String = "#ingame_gui:shells_kinds/params/penetrationLoss";
       
       public static const DAMAGE_PANEL_DEVICES_TURRETROTATOR_NORMAL:String = "#ingame_gui:damage_panel/devices/turretRotator/normal";
       
@@ -1335,6 +1367,10 @@ package
       
       public static const EFFICIENCYRIBBONS_FIREDAMAGEZONE:String = "#ingame_gui:efficiencyRibbons/fireDamageZone";
       
+      public static const EFFICIENCYRIBBONS_HEROCKET:String = "#ingame_gui:efficiencyRibbons/heRocket";
+      
+      public static const EFFICIENCYRIBBONS_RECEIVEDHEROCKET:String = "#ingame_gui:efficiencyRibbons/receivedHERocket";
+      
       public static const DAMAGELOG_SHELLTYPE_ARMOR_PIERCING:String = "#ingame_gui:damageLog/shellType/ARMOR_PIERCING";
       
       public static const DAMAGELOG_SHELLTYPE_HIGH_EXPLOSIVE:String = "#ingame_gui:damageLog/shellType/HIGH_EXPLOSIVE";
@@ -1425,6 +1461,8 @@ package
       
       public static const DISTANCE_METERS:String = "#ingame_gui:distance/meters";
       
+      public static const INTUITION_TIMERANGE:String = "#ingame_gui:intuition/timeRange";
+      
       public static const TABSTATSHINT:String = "#ingame_gui:tabStatsHint";
       
       public static const REPAIRPOINT_TITLE:String = "#ingame_gui:repairPoint/title";
@@ -1479,6 +1517,8 @@ package
       
       public static const SIEGEMODE_HINT_RECHARGEABLENITRO:String = "#ingame_gui:siegeMode/hint/rechargeableNitro";
       
+      public static const SIEGEMODE_HINT_SHELLPARAMSSWITCHER:String = "#ingame_gui:siegeMode/hint/shellParamsSwitcher";
+      
       public static const SIEGEMODE_HINT_TARGETDESIGNATOR:String = "#ingame_gui:siegeMode/hint/targetDesignator";
       
       public static const SIEGEMODE_HINT_TWINGUN:String = "#ingame_gui:siegeMode/hint/twinGun";
@@ -1486,6 +1526,8 @@ package
       public static const SIEGEMODE_HINT_STAGEDJETBOOSTERS:String = "#ingame_gui:siegeMode/hint/stagedJetBoosters";
       
       public static const SIEGEMODE_HINT_WHEELEDDASH:String = "#ingame_gui:siegeMode/hint/wheeledDash";
+      
+      public static const SIEGEMODE_HINT_BUSTLEFEED:String = "#ingame_gui:siegeMode/hint/bustleFeed";
       
       public static const EFFICIENCYRIBBONS_ENEMYSECTORCAPTURED:String = "#ingame_gui:efficiencyRibbons/enemySectorCaptured";
       

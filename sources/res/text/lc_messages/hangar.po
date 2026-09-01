@@ -146,6 +146,26 @@ msgstr[0] "{{count}}场胜利"
 msgstr[1] "{{count}}场胜利"
 msgstr[2] "{{count}}场胜利"
 
+msgid "restBonusWidget/tooltip/available"
+msgstr "有效期: {{value}}"
+
+msgid "restBonusWidget/tooltip/battleExperience"
+msgstr "战斗经验"
+
+msgid "restBonusWidget/tooltip/description/body"
+msgstr ""
+"为庆祝您重返战场，我们为您准备了一份特别奖励: {{@ style (color "
+"#ede6d9e6)}}每日回归加成{{/}}可提高您当天驾驶每辆坦克获得首胜时的战斗经验收益。"
+
+msgid "restBonusWidget/tooltip/description/header"
+msgstr "指挥官，欢迎回归！"
+
+msgid "restBonusWidget/tooltip/reset"
+msgstr "该加成将于每天{{@ style (color #ede6d9e6)}}{{value}}{{/}}重置。"
+
+msgid "restBonusWidget/tooltip/title/available"
+msgstr "回归加成: 可用"
+
 msgid "tooltip/filters/myVehicle/body"
 msgstr "点击前往您的坦克游玩列表"
 

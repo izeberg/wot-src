@@ -87,6 +87,8 @@ class BoosterTooltipData(BlocksTooltipData):
             blocks.append(dueDate)
         if blocks:
             return formatters.packBuildUpBlockData(blocks, padding=formatters.packPadding(bottom=-16))
+        else:
+            return
 
     def __getBonusBlocks(self, booster):
         return formatters.packMultipleText('', formatters.getImage(image(R.images.gui.maps.icons.personal_reserves.tooltips.lightening_icon()), width=10, height=16, vspace=-3), _ts.gold(text(R.strings.tooltips.boostersWindow.booster.activateInfo.bonus())), ' ', _ts.main(text(R.strings.tooltips.boostersWindow.booster.activateInfo.bonusValueTime.dyn(booster.boosterGuiType)(), effectValue=booster.getFormattedValue(), effectTime=booster.getEffectTimeStr(hoursOnly=True))))

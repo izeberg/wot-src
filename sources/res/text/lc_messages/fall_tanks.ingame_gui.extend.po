@@ -1,0 +1,29 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-24 10:00+0300\n"
+"PO-Revision-Date: 2023-03-24 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "player_messages/DEATH_FROM_FALL_TANKS_FALLING"
+msgstr "%(target)s已被%(attacker)s摧毁。"
+
+msgid "player_messages/DEATH_FROM_FALL_TANKS_FINISH"
+msgstr "%(target)s已抵达终点。"
+
+msgid "player_messages/DEATH_FROM_FALL_TANKS_LEAVER"
+msgstr "%(target)s已离开战斗。"
+
+msgid "player_messages/DEATH_FROM_FALL_TANKS_SUICIDE"
+msgstr "%(target)s已摧毁自身坦克。"
+
+msgid "postmortem_messages/DEATH_FROM_FALL_TANKS_FALLING_ENEMY_SELF"
+msgstr "坦克已被敌方摧毁"
+
+msgid "postmortem_messages/DEATH_FROM_FALL_TANKS_FALLING_SELF_SUICIDE"
+msgstr "坦克已被摧毁"

@@ -102,6 +102,10 @@
 				ARRAY
 				<of>BATTLE_EVENT</of>
 			</Arg>
+			<VariableLengthHeaderSize>
+				1
+				<WarnLevel>none</WarnLevel>
+			</VariableLengthHeaderSize>
 		</onBattleEvents>
 		<onObservedByEnemy>
 			<Arg>INT16</Arg>
@@ -109,6 +113,13 @@
 		<onSectorShooting>
 			<Arg>UINT8</Arg>
 		</onSectorShooting>
+		<onSightPointerInSectorChanged>
+			<Arg>BOOL</Arg>
+		</onSightPointerInSectorChanged>
+		<onSightPointerVehicleDetected/>
+		<onSightPointerEnemySpotted>
+			<Arg>OBJECT_ID</Arg>
+		</onSightPointerEnemySpotted>
 		<beforeRespawn>
 			<Arg>OBJECT_ID</Arg>
 			<Arg>INT16</Arg>

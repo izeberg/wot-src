@@ -29,11 +29,8 @@ class Comp7LightVehiclesWatcher(LimitedLevelVehiclesWatcher, RestrictedVehiclesW
          RestrictedVehiclesWatcher._getUnsuitableVehicles(self, onClear),
          self._getUnsuitableVehiclesBase()))
 
-    def _getForbiddenVehicleClasses(self):
-        return self.__comp7LightController.getModeSettings().forbiddenClassTags
-
-    def _getForbiddenVehicleTypes(self):
-        return self.__comp7LightController.getModeSettings().forbiddenVehTypes
+    def _getAllowedVehicleTypes(self):
+        return self.__comp7LightController.getModeSettings().allowedVehTypes
 
     def _getValidLevels(self):
         return self.__comp7LightController.getModeSettings().levels

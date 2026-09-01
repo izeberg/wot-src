@@ -21,6 +21,10 @@
 				<material>
 					<identifier>M_thunderstorm_precipation</identifier>
 					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
+					<property>
+						g_enableEnvMultiplier
+						<Bool>true</Bool>
+					</property>
 					<materialKind>0</materialKind>
 					<collisionFlags>0</collisionFlags>
 					<property>
@@ -45,7 +49,7 @@
 					</property>
 					<property>
 						lightMultipliers
-						<Vector4>1.200000 0.150000 0.100000 0.000000</Vector4>
+						<Vector4>3.428571 0.150000 0.100000 0.000000</Vector4>
 					</property>
 					<property>
 						TintlColor

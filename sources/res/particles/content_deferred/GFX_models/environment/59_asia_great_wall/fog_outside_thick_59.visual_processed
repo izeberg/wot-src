@@ -24,48 +24,36 @@
 					<materialKind>0</materialKind>
 					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
 					<property>
+						g_enableEnvMultiplier
+						<Bool>true</Bool>
+					</property>
+					<property>
 						TintlColor
-						<Vector4>
-							1 1 1 0.9
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>1.000000 1.000000 1.000000 0.900000</Vector4>
 					</property>
 					<property>
 						diffuseUVSpeedAlphaOffset
-						<Vector4>
-							0.01 0.000000 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.010000 0.000000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						lightMultipliers
-						<Vector4>
-							1 0.15 1 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>2.500000 0.150000 1.000000 0.000000</Vector4>
 					</property>
 					<property>
 						alphaFadeAmountFresnel
-						<Vector4>
-							0.000000 0.2 1 0.2
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.000000 0.200000 1.000000 0.200000</Vector4>
 					</property>
 					<property>
 						softFactor
-						<Float>20</Float>
+						<Float>20.000000</Float>
 					</property>
 					<property>
 						fadeMinDistance
-						<Float>100</Float>
+						<Float>100.000000</Float>
 					</property>
 					<property>
 						fadeMaxDistance
-						<Float>300</Float>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
+						<Float>300.000000</Float>
 					</property>
 					<property>
 						enableLighting

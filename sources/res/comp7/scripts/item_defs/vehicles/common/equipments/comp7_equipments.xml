@@ -94,7 +94,7 @@
 				</client>
 			</visualScript>
 			<cooldownSeconds>
-				30
+				20
 				<exports>vse</exports>
 			</cooldownSeconds>
 			<duration>
@@ -106,7 +106,7 @@
 				<exports>vse tooltip</exports>
 			</heal>
 			<gunReloadTimeBuff>
-				5.5
+				6.5
 				<!--BW_String-->
 				<exports>vse tooltip</exports>
 			</gunReloadTimeBuff>
@@ -134,7 +134,7 @@
 				</server>
 			</visualScript>
 			<cooldownSeconds>
-				18
+				15
 				<exports>vse</exports>
 			</cooldownSeconds>
 			<duration>
@@ -142,17 +142,17 @@
 				<exports>vse tooltip</exports>
 			</duration>
 			<aimingTimeBuff>
-				0.55 0.475 0.3
+				0.55 0.475 0.4
 				<!--BW_String-->
 				<exports>vse</exports>
 			</aimingTimeBuff>
 			<shotDispersionFactors>
-				0.55 0.475 0.3
+				0.55 0.475 0.4
 				<!--BW_String-->
 				<exports>vse tooltip</exports>
 			</shotDispersionFactors>
 			<clipReloadTimeBoost>
-				0.6 0.75 0.9
+				0.6 0.7 0.85
 				<!--BW_String-->
 				<exports>vse tooltip</exports>
 			</clipReloadTimeBoost>
@@ -183,7 +183,7 @@
 				<exports>vse tooltip</exports>
 			</duration>
 			<gunReloadTimeBuff>
-				0.75 0.725 0.7
+				0.8 0.75 0.7
 				<!--BW_String-->
 				<exports>vse tooltip</exports>
 			</gunReloadTimeBuff>
@@ -215,7 +215,7 @@
 				</server>
 			</visualScript>
 			<cooldownSeconds>
-				7
+				12
 				<exports>vse</exports>
 			</cooldownSeconds>
 			<duration>
@@ -255,7 +255,7 @@
 				<exports>vse tooltip</exports>
 			</delay>
 			<radius>
-				10 12.5 15
+				12.5 12.5 15
 				<!--BW_String-->
 				<exports>vse tooltip</exports>
 			</radius>
@@ -320,7 +320,8 @@
 				<exports>vse tooltip</exports>
 			</gunReloadTimeBuff>
 			<gunTemperatureBuff>
-				-15 -30 -50
+				-35 -47.5 -60
+				<!--BW_String-->
 				<exports>vse tooltip</exports>
 			</gunTemperatureBuff>
 		</script>
@@ -364,7 +365,7 @@
 				<exports>vse tooltip</exports>
 			</fwMaxSpeedBonus>
 			<bkMaxSpeedBonus>
-				7
+				2
 				<exports>vse tooltip</exports>
 			</bkMaxSpeedBonus>
 			<rammingDamageBonus>
@@ -404,7 +405,7 @@
 				<exports>vse tooltip</exports>
 			</duration>
 			<shotDispersionFactors>
-				0.8 0.7 0.6
+				0.6 0.5 0.4
 				<!--BW_String-->
 				<exports>vse tooltip</exports>
 			</shotDispersionFactors>
@@ -529,7 +530,7 @@
 				</server>
 			</visualScript>
 			<cooldownSeconds>
-				10
+				12
 				<exports>vse</exports>
 			</cooldownSeconds>
 			<duration>
@@ -576,7 +577,7 @@
 				<exports>vse tooltip</exports>
 			</duration>
 			<visionFactor>
-				1.15 1.2 1.25
+				1.20 1.275 1.35
 				<!--BW_String-->
 				<exports>vse tooltip</exports>
 			</visionFactor>

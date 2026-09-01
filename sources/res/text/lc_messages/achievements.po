@@ -149,15 +149,6 @@ msgstr "授予为《坦克世界》不断改进作出宝贵贡献的玩家们。
 msgid "15YearsOfService_descr"
 msgstr "从%(regDate)s开始一直在体验游戏"
 
-msgid "BPReserveAchievement_1"
-msgstr "战斗通行证储备成就1"
-
-msgid "BPReserveAchievement_1_condition"
-msgstr "• 授予完成进度的玩家。"
-
-msgid "BPReserveAchievement_1_descr"
-msgstr "授予在活动期间达成成就的玩家"
-
 msgid "BPReserveAchievement_2"
 msgstr "战斗通行证储备成就2"
 
@@ -439,6 +430,15 @@ msgstr "• 授予完成全部3个章节的玩家。"
 
 msgid "BattlePassCommonPr_20_descr"
 msgstr "授予在战斗通行证赛季XX期间达成成就的玩家。"
+
+msgid "BattlePassCommonPr_21"
+msgstr "低地交锋"
+
+msgid "BattlePassCommonPr_21_condition"
+msgstr "• 授予完成全部3个章节的玩家。"
+
+msgid "BattlePassCommonPr_21_descr"
+msgstr "授予在战斗通行证赛季XXI期间达成成就的玩家。"
 
 msgid "BattlePassCommonPr_2_condition"
 msgstr "• 主线进度包含45个阶段。"
@@ -1964,6 +1964,48 @@ msgstr "白银巨龙"
 msgid "comp7_5_yearly_silver_descr"
 msgstr "授予在天梯战模式巨龙赛年中收集至少9面天梯彩旗的玩家。"
 
+msgid "comp7_6_1"
+msgstr "苍蓝火花"
+
+msgid "comp7_6_1_descr"
+msgstr "授予在天梯战模式苍蓝凤凰赛季中完成一系列任务的玩家。"
+
+msgid "comp7_6_yearly_bronze"
+msgstr "青铜凤凰"
+
+msgid "comp7_6_yearly_bronze_descr"
+msgstr "授予在天梯战模式凤凰赛年中收集至少6面天梯彩旗的玩家。"
+
+msgid "comp7_6_yearly_champion"
+msgstr "凤凰赛年勇士"
+
+msgid "comp7_6_yearly_champion_descr"
+msgstr "授予在天梯战模式凤凰赛年中收集至少15面天梯彩旗的玩家。"
+
+msgid "comp7_6_yearly_gold"
+msgstr "黄金凤凰"
+
+msgid "comp7_6_yearly_gold_descr"
+msgstr "授予在天梯战模式凤凰赛年中收集至少12面天梯彩旗的玩家。"
+
+msgid "comp7_6_yearly_iron"
+msgstr "黑铁凤凰"
+
+msgid "comp7_6_yearly_iron_descr"
+msgstr "授予在天梯战模式凤凰赛年中收集至少3面天梯彩旗的玩家。"
+
+msgid "comp7_6_yearly_legend"
+msgstr "凤凰赛年传说"
+
+msgid "comp7_6_yearly_legend_descr"
+msgstr "授予在天梯战模式凤凰赛年中收集至少18面天梯彩旗的玩家。"
+
+msgid "comp7_6_yearly_silver"
+msgstr "白银凤凰"
+
+msgid "comp7_6_yearly_silver_descr"
+msgstr "授予在天梯战模式凤凰赛年中收集至少9面天梯彩旗的玩家。"
+
 msgid "conqueror"
 msgstr "占领者 %(rank)s"
 
@@ -2622,7 +2664,7 @@ msgid "huntsman_condition"
 msgstr "• 只能在标准模式中获得。"
 
 msgid "huntsman_descr"
-msgstr "一场战斗中击毁敌方所有轻型坦克(至少三辆)。"
+msgstr "一场战斗中击毁敌方所有轻型坦克(至少2辆)。"
 
 msgid "huntsman_heroInfo"
 msgstr ""
@@ -4286,13 +4328,40 @@ msgid "readyForBattleAllianceUSSR_notification3"
 msgstr "完美完成15个联合个人任务。奖励:优异成绩:联合勋章，三级。"
 
 msgid "readyForBattleAssault"
-msgstr "优异成绩: 先锋"
+msgstr "优异成绩: 第三区先锋"
 
 msgid "readyForBattleAssault_condition"
 msgstr "?empty?"
 
 msgid "readyForBattleAssault_descr"
-msgstr "在\"第三区\"个人任务中，完成全部\"先锋\"任务即可获得。"
+msgstr "在\"第三区\"个人任务的主要作战行动中，完成全部\"先锋\"任务即可获得。"
+
+msgid "readyForBattleFossaAssault"
+msgstr "优异成绩: 幽壑先锋"
+
+msgid "readyForBattleFossaAssault_condition"
+msgstr "?empty?"
+
+msgid "readyForBattleFossaAssault_descr"
+msgstr "在\"第三区\"个人任务的\"幽壑\"作战行动中，完成全部\"先锋\"任务即可获得。"
+
+msgid "readyForBattleFossaSniper"
+msgstr "优异成绩: 幽壑伏击"
+
+msgid "readyForBattleFossaSniper_condition"
+msgstr "?empty?"
+
+msgid "readyForBattleFossaSniper_descr"
+msgstr "在\"第三区\"个人任务的\"幽壑\"作战行动中，完成全部\"伏击\"任务即可获得。"
+
+msgid "readyForBattleFossaSupport"
+msgstr "优异成绩: 幽壑协助"
+
+msgid "readyForBattleFossaSupport_condition"
+msgstr "?empty?"
+
+msgid "readyForBattleFossaSupport_descr"
+msgstr "在\"第三区\"个人任务的\"幽壑\"作战行动中，完成全部\"协助\"任务即可获得。"
 
 msgid "readyForBattleHT"
 msgstr "优异成绩:重型坦克"
@@ -4379,22 +4448,22 @@ msgid "readyForBattleSPG_notification4"
 msgstr "完美完成15个自行火炮个人任务。奖励:优异成绩:自行火炮勋章，四级。"
 
 msgid "readyForBattleSniper"
-msgstr "优异成绩: 伏击"
+msgstr "优异成绩: 第三区伏击"
 
 msgid "readyForBattleSniper_condition"
 msgstr "?empty?"
 
 msgid "readyForBattleSniper_descr"
-msgstr "在\"第三区\"个人任务中，完成全部\"伏击\"任务即可获得。"
+msgstr "在\"第三区\"个人任务的主要作战行动中，完成全部\"伏击\"任务即可获得。"
 
 msgid "readyForBattleSupport"
-msgstr "优异成绩: 协助"
+msgstr "优异成绩: 第三区协助"
 
 msgid "readyForBattleSupport_condition"
 msgstr "?empty?"
 
 msgid "readyForBattleSupport_descr"
-msgstr "在\"第三区\"个人任务中，完成全部\"协助\"任务即可获得。"
+msgstr "在\"第三区\"个人任务的主要作战行动中，完成全部\"协助\"任务即可获得。"
 
 msgid "reliableComrade"
 msgstr "并肩作战"
@@ -5243,6 +5312,16 @@ msgstr "授予完成最终兵器:时空悖论进度的玩家。此殊荣仅授�
 
 msgid "wt2025progression_descr"
 msgstr "完成最终兵器模式进度。"
+
+msgid "wt2026progression"
+msgstr "风暴骑士"
+
+msgid "wt2026progression_condition"
+msgstr ""
+"授予完成最终兵器:启元2026进度的玩家。此殊荣授予那些对抗冯·克里格的第一台思维机器——电气智能的勇士，他们切断了它伸向现实世界的每一条电路。"
+
+msgid "wt2026progression_descr"
+msgstr "完成最终兵器:启元2026的进度。"
 
 msgid "wtBossWins"
 msgstr "闪电大师"

@@ -97,6 +97,7 @@ package net.wg.gui.lobby.profile.pages.awards
       override protected function configUI() : void
       {
          super.configUI();
+         this.txtLabel.autoSize = TextFieldAutoSize.LEFT;
          this._startMenuX = this.dropdownMenu.x;
          this._startScrollPaneY = this.mainScrollPane.y;
          var _loc1_:AwardsMainContainer = this.getMainContainer();
@@ -181,14 +182,12 @@ package net.wg.gui.lobby.profile.pages.awards
       
       override protected function applyResizing() : void
       {
-         var _loc2_:Boolean = false;
          var _loc13_:AwardsTileListBlock = null;
          var _loc1_:Number = Math.round(currentDimension.x / 2 - centerOffset);
-         _loc2_ = App.appWidth < StageSizeBoundaries.WIDTH_1280;
+         var _loc2_:Boolean = App.appWidth < StageSizeBoundaries.WIDTH_1280;
          var _loc3_:int = !!isWindowed ? int(DROP_DOWN_WINDOW_X) : int(0);
          var _loc4_:int = -this.txtLabel.width - TXT_LABEL_OFFSET_X + _loc3_;
          this.dropdownMenu.x = this._startMenuX + _loc1_ + (!!isWindowed ? DROP_DOWN_WINDOW_X : 0);
-         this.txtLabel.autoSize = TextFieldAutoSize.LEFT;
          this.txtLabel.x = this.dropdownMenu.x + _loc4_;
          y = !!isWindowed ? Number(0) : Number(Math.max(paddings.y - TOP_PADDING,0));
          var _loc5_:Number = Math.min(ProfileConstants.MIN_APP_WIDTH,currentDimension.x);

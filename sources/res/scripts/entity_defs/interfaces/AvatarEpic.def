@@ -45,6 +45,10 @@
 				ARRAY
 				<of>INT64</of>
 			</Arg>
+			<VariableLengthHeaderSize>
+				1
+				<WarnLevel>none</WarnLevel>
+			</VariableLengthHeaderSize>
 		</syncPurchasedAbilities>
 		<onRandomReserveOffer>
 			<Arg>

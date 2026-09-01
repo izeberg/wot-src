@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import comp7_light.gui.comp7_light_constants as gui_constants
 from comp7_core.gui import initCoreGuiTypes
 from comp7_light.gui.Scaleform import registerComp7LightScaleform

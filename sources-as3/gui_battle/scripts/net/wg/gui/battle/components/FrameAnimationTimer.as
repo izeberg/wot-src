@@ -20,6 +20,8 @@ package net.wg.gui.battle.components
       
       private static const DEFAULT_HIDE_TIMER_INTERVAL:int = 30;
       
+      private static const CURRENT_TIME_ENLARGE_THRESHOLD:Number = 0.2;
+      
       protected static const ICON_BTM_POSITION_VALIDATE:int = InvalidationType.SYSTEM_FLAGS_BORDER << 1;
        
       
@@ -128,7 +130,7 @@ package net.wg.gui.battle.components
          {
             param2 = 0;
          }
-         if(this._currentTime > param2)
+         if(this._currentTime - param2 > CURRENT_TIME_ENLARGE_THRESHOLD)
          {
             this.invokeCurrentTimeEnlargeUpdate();
          }

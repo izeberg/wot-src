@@ -1,0 +1,38 @@
+msgid ""
+msgstr ""
+
+msgid "battle_finish/reason/201lose"
+msgstr "战斗时间结束: 因存活坦克数量落后而失败 • {} 比 {}"
+
+msgid "battle_finish/reason/201win"
+msgstr "战斗时间结束: 因存活坦克数量领先而获胜 • {} 比 {}"
+
+msgid "battle_finish/reason/202lose"
+msgstr "战斗时间结束: 因造成的损伤落后而失败 • {} 比 {}"
+
+msgid "battle_finish/reason/202win"
+msgstr "战斗时间结束: 因造成的损伤领先而获胜 • {} 比 {}"
+
+msgid "battle_finish/reason/203lose"
+msgstr "战斗时间结束: 因敌方率先击毁己方坦克而失败"
+
+msgid "battle_finish/reason/203win"
+msgstr "战斗时间结束: 因己方率先击毁敌方坦克而获胜"
+
+msgid "finish/reason/201lose"
+msgstr "敌方存活坦克数量更多"
+
+msgid "finish/reason/201win"
+msgstr "己方存活坦克数量更多"
+
+msgid "finish/reason/202lose"
+msgstr "敌方造成的损伤更多"
+
+msgid "finish/reason/202win"
+msgstr "我方造成的损伤更多"
+
+msgid "finish/reason/203lose"
+msgstr "敌方率先击毁己方坦克"
+
+msgid "finish/reason/203win"
+msgstr "己方率先击毁敌方坦克"

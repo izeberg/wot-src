@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.prb_control.entities.base.actions_validator import ActionsValidatorComposite
 from gui.prb_control.entities.base.squad.actions_validator import SquadActionsValidator, SquadVehiclesValidator
 from gui.prb_control.entities.base.unit.actions_validator import UnitSlotsValidator, CommanderValidator
@@ -64,3 +65,5 @@ class BattleRoyalSquadSlotsValidator(CommanderValidator):
         pInfo = self._entity.getPlayerInfo()
         if stats.occupiedSlotsCount > 1 and not pInfo.isReady:
             return ValidationResult(False, UNIT_RESTRICTION.COMMANDER_VEHICLE_NOT_SELECTED)
+        else:
+            return

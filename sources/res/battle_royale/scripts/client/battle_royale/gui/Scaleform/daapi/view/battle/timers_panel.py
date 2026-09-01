@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import weakref, math, BigWorld
 from gui.Scaleform.daapi.view.meta.BattleRoyaleTimersPanelMeta import BattleRoyaleTimersPanelMeta
 from gui.battle_control.controllers.period_ctrl import IAbstractPeriodView

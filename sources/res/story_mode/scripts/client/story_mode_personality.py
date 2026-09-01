@@ -18,7 +18,6 @@ from story_mode.gui.battle_control.arena_info.arena_vos import getDisplayedClass
 from story_mode.gui.battle_control.controllers import equipments_items, equipment_ctrl
 from story_mode.gui.battle_control import battle_constant
 from story_mode.gui.battle_control.controllers.repository import OnboardingRepository, StoryModeRepository, StoryModeSharedRepository
-from story_mode.gui.game_control.story_mode_controller import eventEntryPointValidator, newbieEntryPointValidator
 from story_mode.gui.game_control.story_mode_fading_controller import StoryModeFadingController
 from story_mode.gui.impl.lobby.story_mode_event_banner import StoryModeNewbieBanner, StoryModeEventBanner
 from story_mode.skeletons.story_mode_fading_controller import IStoryModeFadingController
@@ -34,6 +33,7 @@ class ClientStoryModeBattleMode(battle_mode.StoryModeBattleMode):
 
     @property
     def _client_bannerEntryPointValidatorMethod(self):
+        from story_mode.gui.game_control.story_mode_controller import newbieEntryPointValidator
         return newbieEntryPointValidator
 
     @property
@@ -166,6 +166,7 @@ class ClientEventBattleMode(ClientStoryModeBattleMode):
 
     @property
     def _client_bannerEntryPointValidatorMethod(self):
+        from story_mode.gui.game_control.story_mode_controller import eventEntryPointValidator
         return eventEntryPointValidator
 
     @property

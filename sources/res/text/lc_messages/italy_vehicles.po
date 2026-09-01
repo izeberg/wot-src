@@ -34,6 +34,9 @@ msgstr "105mm L/51 M68炮"
 msgid "Cannone_da_105_55"
 msgstr "105mm L/55炮"
 
+msgid "Cannone_da_105_55_Sperimentale"
+msgstr "105mm L/55试验型炮"
+
 msgid "Cannone_da_105_Rh_V1"
 msgstr "105mm Rh V1炮"
 
@@ -267,6 +270,9 @@ msgstr "掠夺者"
 
 msgid "Chassis_It41_Cerbero"
 msgstr "冥犬"
+
+msgid "Chassis_It43_CAV_mod_71"
+msgstr "CAV 71型"
 
 msgid "Continental_AOI_1490_italy"
 msgstr "大陆 AOI-1490-I"
@@ -810,6 +816,23 @@ msgstr "冥犬"
 msgid "It41_Cerbero_short_special"
 msgstr "坚固的车体和炮塔装甲，逆向自动装填炮"
 
+msgid "It43_CAV_mod_71"
+msgstr "CAV 71型"
+
+msgid "It43_CAV_mod_71_descr"
+msgstr ""
+"20世纪70年代初，I系正在研发一项计划，旨在取代未获成功的PM40/65。这辆前景可观的新型坦克以精简的乘员配置、自动装填系统，以及配备顶置火炮的低矮炮塔而脱颖而出。该坦克被定位为灵活机动的\"反坦克猎手\":"
+" "
+"重量相对较轻、机动性能优秀，并配备一门强劲火炮。然而，该坦克最终因设计过于复杂且成本高昂而未能投入生产。自动装填系统和悬挂装置需要精心维护，因此降低了可靠性，而其成本则与结构更简单、实现标准化且已在盟友部队中服役的\"豹\"1A3相当。该计划于1974年被搁置，但所积累的经验后来被用于设计OF-40和\"公羊\"主战坦克。"
+
+msgid "It43_CAV_mod_71_long_special"
+msgstr ""
+"与其他I系中型坦克一样，CAV "
+"71也拥有优秀的机动性，亦能在短时间内造成大量损伤；但同时也存在不同之处，它无需经历漫长的装填过程。该坦克的强制装填机构可确保其时刻做好战斗准备。"
+
+msgid "It43_CAV_mod_71_short"
+msgstr "CAV 71"
+
 msgid "MB_822_Ka_500"
 msgstr "MB 822 Ka-500"
 
@@ -873,6 +896,9 @@ msgstr "20mm布雷达35型机炮"
 msgid "Mitsubishi_10ZF"
 msgstr "三菱10ZF"
 
+msgid "OM_Fiat_V12_TCA"
+msgstr "奥姆-菲亚特 V12 TCA"
+
 msgid "R300"
 msgstr "R300"
 
@@ -932,6 +958,9 @@ msgstr "SEM-24C"
 
 msgid "SEM_25"
 msgstr "SEM-25"
+
+msgid "SEM_25_71"
+msgstr "SEM-25/71"
 
 msgid "SEM_25_S"
 msgstr "SEM-25S"
@@ -1116,6 +1145,9 @@ msgstr "掠夺者"
 msgid "Turret_1_It41_Cerbero"
 msgstr "冥犬"
 
+msgid "Turret_1_It43_CAV_mod_71"
+msgstr "CAV 71型"
+
 msgid "Turret_2_It03_M15_42"
 msgstr "M15/42改进型"
 
@@ -1227,6 +1259,12 @@ msgstr "105mm L/58炮"
 msgid "_105mm_Cannone_da_105_58_Rh_V1"
 msgstr "105/58 Rh V1炮"
 
+msgid "_105mm_Gr_D_Sperimentale"
+msgstr "Gr D试验型"
+
+msgid "_105mm_Gr_EP_T_Sperimentale"
+msgstr "Gr EP-T试验型"
+
 msgid "_105mm_HE_M113"
 msgstr "c.g. 105/51 HE M113"
 
@@ -1250,6 +1288,9 @@ msgstr "奥托·梅莱拉 105mm L/51炮"
 
 msgid "_105mm_OTO_Melara_105_mod_57"
 msgstr "奥托·梅莱拉 105mm 57型炮"
+
+msgid "_105mm_PPS_T_Sperimentale"
+msgstr "PPS-T试验型"
 
 msgid "_105mm_c_g_105_51_HEAT_M456"
 msgstr "c.g.105/51 HEAT M456"

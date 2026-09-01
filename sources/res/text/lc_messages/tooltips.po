@@ -6433,6 +6433,18 @@ msgstr "由于该坦克的各名乘员均已超出6项主要专业特长上限�
 msgid "moduleFits/wrong_slot/body"
 msgstr "此模块已经被安装在坦克上。"
 
+msgid "moduleInfo/params/criticalHitChance"
+msgstr "对敌方模块和/或乘员造成严重损伤的几率。"
+
+msgid "moduleInfo/params/normalizationAngle"
+msgstr "炮弹击中敌方装甲时，其入射角度的减小幅度。"
+
+msgid "moduleInfo/params/penetrationLoss"
+msgstr "炮弹击穿敌方间隙装甲后，每前进100毫米所损失的平均穿透力。"
+
+msgid "moduleInfo/params/ricochetAngle"
+msgstr "炮弹从敌方装甲上自动跳弹的角度。"
+
 msgid "multiselection/alert/body"
 msgstr "选择坦克:您可以以队伍的形式加入战斗。"
 
@@ -8453,7 +8465,7 @@ msgstr "战斗通行证赛季XIII"
 
 msgid "notrecruitedtankman/tankmen_bp13_9/desc"
 msgstr ""
-"欢迎收看6频道新闻直播，市里最执著的记者总是会出现在事件附近。凭借一腔热血以及要报道头条的决心，艾蓓丽尔是货真价实的专业记者，而且还是她新朋友们的珍贵盟友。就连她也弄不明白自己是怎么和城市下水道中的侠客乌龟们混到一起的，但有一件事肯定错不了——这个新闻将成为年度头条！"
+"欢迎收看6频道新闻直播，市里最执着的记者总是会出现在事件附近。凭借一腔热血以及要报道头条的决心，艾蓓丽尔是货真价实的专业记者，而且还是她新朋友们的珍贵盟友。就连她也弄不明白自己是怎么和城市下水道中的侠客乌龟们混到一起的，但有一件事肯定错不了——这个新闻将成为年度头条！"
 
 msgid "notrecruitedtankman/tankmen_bp13_9/howToGetInfo"
 msgstr "?empty?"
@@ -9193,6 +9205,48 @@ msgstr "?empty?"
 msgid "notrecruitedtankman/tankmen_bp20_9/label"
 msgstr "战斗通行证:孤岛惊魂"
 
+msgid "notrecruitedtankman/tankmen_bp21_1/desc"
+msgstr ""
+"瓦迪姆·库普林对其当前任务中的贫瘠盐滩了如指掌，就像对自己饱经风霜的手背一样熟悉。对于各种高风险环境，他早已习以为常；早在登上坦克之前，他便是化学战防御领域的专业人员，并借此积累了丰富资历。二十年后，他发现自己距离当年以初级技术员身份开始军旅生涯的实验设施仅有数日路程。岁月与磨难会在所有人的身上留下痕迹，但正如瓦迪姆常对车组成员打趣的那样，至今仍没有人提交他的退伍手续。因此，在有人正式办妥相关文件之前，他还会继续坚守岗位。"
+
+msgid "notrecruitedtankman/tankmen_bp21_1/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp21_1/label"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp21_2/desc"
+msgstr ""
+"布林·鲍威尔童年时期生活在葱郁的山谷之中，与后来所熟悉的严酷环境判若云泥。他最新的任务简报细节少得惊人，\"不明化学制剂\"和\"危险等级: "
+"极高\"这样的字眼足以让许多指挥官祈求调离任务。但在布林看来，趋利避害向来是只属于别人的优秀品质。生性喜欢冒险的他，只要他想，完全可以成为一名前途无量的特技演员。至于让他坐进坦克、握住操纵装置，两者之间其实并没有什么区别。"
+
+msgid "notrecruitedtankman/tankmen_bp21_2/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp21_2/label"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp21_3/desc"
+msgstr ""
+"Nagai "
+"Sora是一名临危不乱的指挥官。作为曾在局势动荡地区执行维和任务的老兵，他早已学会在压力逼近时保持冷静。无论是在彻夜巡逻后拖着疲惫之躯继续行动，还是分析有关车组奉命调查的未知物质的情报，即便传来的情报愈发令人不安，他始终镇定如初。他总能适当地利用轻松玩笑与黑色幽默来鼓舞士气，始终保持神采奕奕、活力十足。"
+
+msgid "notrecruitedtankman/tankmen_bp21_3/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp21_3/label"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp21_4/desc"
+msgstr ""
+"没有什么能够逃过桑德琳·乌塞的眼睛。在被招募加入这项机密装甲侦察任务之前，她便已是一名屡获嘉奖的神枪手，而她敏锐的洞察力远不止于瞄准镜所及的方寸之间。哪怕只给她敌方情报中残缺失真的碎片，她也总能得出极为准确的判断，以至于连车组乘员起初都将她近乎不可思议的观察能力误认为某种预知天赋。在她的指挥下，秘密往往无所遁形。对车组而言万幸的是，她将最严苛的目光，全都留给了他们奉命调查的那种未知试剂的源头。"
+
+msgid "notrecruitedtankman/tankmen_bp21_4/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp21_4/label"
+msgstr "?empty?"
+
 msgid "notrecruitedtankman/tankmen_bp2_1/desc"
 msgstr ""
 "很多人都问我认不认识杰克·里德。在回答之前，我常常会闭上眼睛，深呼吸，因为当他的指挥官可一点都不轻松。里德是个叛逆的家伙，他总能以自己的方式完成命令，还能不违反军队规定。虽然在现实中他困在一个闷热的坦克里。但在内心世界中，他正骑着摩托，沿着高速公路前行，享受着清风吹拂脸颊的感觉。"
@@ -9636,6 +9690,19 @@ msgid "notrecruitedtankman/tankmen_pm3_3/howToGetInfo"
 msgstr "?empty?"
 
 msgid "notrecruitedtankman/tankmen_pm3_3/label"
+msgstr "\"第三区\"个人任务"
+
+msgid "notrecruitedtankman/tankmen_pm4_1/desc"
+msgstr ""
+"斯蒂芬出生于伯尔尼钟表匠世家，继承了一门讲求沉静、耐心和绝对精准的手艺。但对他而言，这些品质却成就了一条截然不同的职业道路。1940年，Y系情报部门给了他一个选择:"
+" "
+"继续留在中立地区，或投身另一种人生。在群山隘口间，他从间谍装置技师成长为神枪手。战后，他继续从事这项工作，追捕那些隐姓埋名逃脱审判的人。斯蒂芬总是独自行动，不留痕迹，至今依然如此:"
+" 第三区里没人见过他的真面目。"
+
+msgid "notrecruitedtankman/tankmen_pm4_1/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_pm4_1/label"
 msgstr "\"第三区\"个人任务"
 
 msgid "notrecruitedtankman/tankwoman/desc"
@@ -11716,6 +11783,15 @@ msgstr "%(bold)s—当前火炮的默认炮弹。用于计算火炮参数和火�
 msgid "shell/basic/description/bold"
 msgstr "默认炮弹"
 
+msgid "shell/mechanics/bustleFeed/description"
+msgstr "该坦克的外部供弹模式可使用损伤更高的炮弹。"
+
+msgid "shell/mechanics/bustleFeed/paramsHeader/basic"
+msgstr "基础"
+
+msgid "shell/mechanics/bustleFeed/paramsHeader/specific"
+msgstr "调整后:"
+
 msgid "shell/mechanics/lowChargeShot/description"
 msgstr "坦克火炮的一种特殊机制，可提前开火，炮弹参数也会发生改变。"
 
@@ -11733,6 +11809,21 @@ msgstr "基础:"
 
 msgid "shell/mechanics/lowChargeShot/paramsHeader/specific"
 msgstr "改变后:"
+
+msgid "shell/mechanics/shellCalibration/description"
+msgstr "可调式引信装定器可提高平均损伤或平均穿透力。"
+
+msgid "shell/mechanics/shellCalibration/paramsHeader"
+msgstr "可调整:"
+
+msgid "shell/mechanics/shellParamsSwitcher/description"
+msgstr "该坦克的火炮配备特殊装置，可在开火前调整射击诸元。"
+
+msgid "shell/mechanics/shellParamsSwitcher/paramsHeader/basic"
+msgstr "常规"
+
+msgid "shell/mechanics/shellParamsSwitcher/paramsHeader/specific"
+msgstr "校炮后"
 
 msgid "showArtyHitOnMap/body"
 msgstr "显示/隐藏小地图上敌方自行火炮的攻击覆盖区域。"
@@ -11924,6 +12015,12 @@ msgstr "在低端计算机上降低声音质量可以提高整体的游戏性能
 
 msgid "soundQualityOn/header"
 msgstr "低品质声音"
+
+msgid "specialMechanics/shellCalibration/avgDamage"
+msgstr "{{@ style (color #E9E2BF)}}平均单发损伤{{/}}在击穿敌方坦克后提高。"
+
+msgid "specialMechanics/shellCalibration/avgPiercingPower"
+msgstr "{{@ style (color #E9E2BF)}}平均穿透力{{/}}在未击穿敌方坦克后提高。"
 
 msgid "specializationWotPlus/content/header"
 msgstr "金币坦克上的乘员训练速度提高50%:"
@@ -12294,6 +12391,36 @@ msgstr "改进型自动装填系统可以缩短自动装填炮弹的标准时长
 msgid "tank_params/desc/autoShootClipFireRate"
 msgstr "射出弹夹(或两门火炮)中最后一发炮弹和重新装填完整弹匣的间隔时间。/火炮数量或弹匣中的炮弹数量。"
 
+msgid "tank_params/desc/autoreloaderSurgeBoostedReloadTime"
+msgstr "使用机制时，剩余装填时间将替换为该固定值。"
+
+msgid "tank_params/desc/autoreloaderSurgeChargeTimeFast"
+msgstr "在弹鼓满载的情况下，补充一次储能次数所需的时间。"
+
+msgid "tank_params/desc/autoreloaderSurgeChargeTimeSlow"
+msgstr "在弹鼓未满载的情况下，补充一次储能次数所需的时间。"
+
+msgid "tank_params/desc/autoreloaderSurgeInitCharges"
+msgstr "战斗开始时可用的储能次数。"
+
+msgid "tank_params/desc/autoreloaderSurgeMaxCharges"
+msgstr "用于加速炮弹装填的储能次数上限。"
+
+msgid "tank_params/desc/auxiliaryRocketLauncherAvgDamage"
+msgstr "火箭击穿后造成的平均损伤。损伤浮动范围为平均值的+/-25%。"
+
+msgid "tank_params/desc/auxiliaryRocketLauncherDispersion"
+msgstr "当瞄准圈缩小到最小时火箭在100米距离上的射击精度。"
+
+msgid "tank_params/desc/auxiliaryRocketLauncherPenetration"
+msgstr "火箭的平均穿透力。穿透力浮动范围为平均值的+/-25%。"
+
+msgid "tank_params/desc/auxiliaryRocketLauncherReloadTime"
+msgstr "火箭发射器装填时间"
+
+msgid "tank_params/desc/auxiliaryRocketLauncherVelocity"
+msgstr "决定无控火箭的飞行速度。"
+
 msgid "tank_params/desc/avgDamage"
 msgstr "标准炮弹击穿后所造成的平均损伤。损伤浮动范围为平均值的+/- 25%。"
 
@@ -12314,6 +12441,21 @@ msgstr "激活后，助推器效果的最大持续时间。"
 
 msgid "tank_params/desc/burstFireRate"
 msgstr "短弹夹炮弹的装填间隔时间。/弹夹中的短弹夹数量。/短弹夹中的炮弹数量"
+
+msgid "tank_params/desc/bustleFeedDamagePerShot"
+msgstr "高装药定装弹击穿后造成的平均损伤。损伤浮动范围为平均值的+/-25%。"
+
+msgid "tank_params/desc/bustleFeedMaxSpeed"
+msgstr "外部供弹模式下对标称前进速度的削弱。倒车速度不受影响。"
+
+msgid "tank_params/desc/bustleFeedRateOfFire"
+msgstr "外部供弹模式下每分钟射速的降低幅度。"
+
+msgid "tank_params/desc/bustleFeedSwitchingToEASMMode"
+msgstr "激活外部供弹模式后，准备火炮射击所需的最短时间。在此期间，您无法切换模式。"
+
+msgid "tank_params/desc/bustleFeedSwitchingToStandardMode"
+msgstr "返回常规模式后，准备火炮射击所需的最短时间。在此期间，您无法切换模式。"
 
 msgid "tank_params/desc/chargeTime"
 msgstr "同时发射双管炮所需的准备时间。/齐射的装填停滞时间。"
@@ -12480,7 +12622,7 @@ msgid "tank_params/desc/ionAfterburnerPassiveTurboCharge"
 msgstr "涡轮模式下，每秒生成的离子喷射加力装置充能数量。"
 
 msgid "tank_params/desc/lowChargeShotAvgDamage"
-msgstr "应急补能射击击穿后所造成的平均损伤。损伤浮动范围为平均值的±25%。"
+msgstr "应急补能射击击穿后所造成的平均损伤。损伤浮动范围为平均值的+/-25%。"
 
 msgid "tank_params/desc/lowChargeShotBlockDuration"
 msgstr "完全装填前无法进行应急补能射击的时间。"
@@ -12489,7 +12631,7 @@ msgid "tank_params/desc/lowChargeShotDispertion"
 msgstr "应急补能射击时的炮弹散布范围增加幅度，表现为100米距离时炮弹与瞄准点的最大偏差。"
 
 msgid "tank_params/desc/lowChargeShotPenetration"
-msgstr "应急补能射击的平均穿透力，已计入炮弹转正效应。穿透力浮动范围为平均值的±25%。"
+msgstr "应急补能射击的平均穿透力，已计入炮弹转正效应。穿透力浮动范围为平均值的+/-25%。"
 
 msgid "tank_params/desc/lowChargeShotRateOfFire"
 msgstr "应急补能射击时的射速提高幅度(与常规射击相比)。"
@@ -12637,10 +12779,10 @@ msgid "tank_params/desc/rocketAccelerationSpeedLimits"
 msgstr "激活火箭助推器后的坦克速度。"
 
 msgid "tank_params/desc/secondaryAvgDamage"
-msgstr "辅助武器炮弹击穿后造成的平均损伤。损伤浮动范围为平均值的±25%。"
+msgstr "辅助武器炮弹击穿后造成的平均损伤。损伤浮动范围为平均值的+/-25%。"
 
 msgid "tank_params/desc/secondaryAvgPiercingPower"
-msgstr "辅助武器炮弹的平均穿透力，已计入炮弹转正效应。穿透力浮动范围为平均值的±25%。"
+msgstr "辅助武器炮弹的平均穿透力，已计入炮弹转正效应。穿透力浮动范围为平均值的+/-25%。"
 
 msgid "tank_params/desc/secondaryReloadTimeSecs"
 msgstr "射击后的辅助武器装填时间。"
@@ -12648,8 +12790,17 @@ msgstr "射击后的辅助武器装填时间。"
 msgid "tank_params/desc/secondaryTotalBurstSize"
 msgstr "每次激活时，辅助武器可用的炮弹数量。"
 
+msgid "tank_params/desc/shellCalibrationAvgDamage"
+msgstr "击穿敌方坦克后获得的平均损伤加成。"
+
+msgid "tank_params/desc/shellCalibrationAvgPenetration"
+msgstr "未击穿敌方坦克后获得的平均穿透力加成。"
+
 msgid "tank_params/desc/shellLoadingTime"
 msgstr "战斗开始时装填炮弹及切换炮弹类型所需时间。"
+
+msgid "tank_params/desc/shellParamsSwitchingTime"
+msgstr "切换校炮模式和常规射击模式所需的时间。"
 
 msgid "tank_params/desc/shotDispersionAngle"
 msgstr "当瞄准圈缩小到最小时火炮在100米距离上的射击精度。"
@@ -12659,6 +12810,36 @@ msgstr "当瞄准圈缩小到最小时火炮在100米距离上的射击精度(�
 
 msgid "tank_params/desc/shotDispersionAngle/withDualAccuracy"
 msgstr "显示炮弹每100米可偏离瞄准点多少米。标准数值(第一个)适用于升温的火炮，强化数值(第二个)适用于冷却火炮。"
+
+msgid "tank_params/desc/sightPointerConsealmentFoliage"
+msgstr "在红外搜索与跟踪系统的扫描扇区内，植被后方敌方坦克的隐蔽系数逐步降低幅度。"
+
+msgid "tank_params/desc/sightPointerConsealmentMoving"
+msgstr "在红外搜索与跟踪系统的扫描扇区内，敌方坦克移动隐蔽系数逐步降低幅度。"
+
+msgid "tank_params/desc/sightPointerDeployTime"
+msgstr "战斗开始后，首次使用红外搜索与跟踪系统所需的时间。"
+
+msgid "tank_params/desc/sightPointerDuration"
+msgstr "红外搜索与跟踪系统扫描的持续时间。"
+
+msgid "tank_params/desc/sightPointerReloadTime"
+msgstr "激活后，再次使用红外搜索与跟踪系统所需的时间。"
+
+msgid "tank_params/desc/sightPointerRotationSpeed"
+msgstr "红外搜索与跟踪系统激活时，炮塔旋转速度的降低幅度。"
+
+msgid "tank_params/desc/sightPointerSectorAngleEnd"
+msgstr "红外搜索与跟踪系统扫描扇区在持续时间结束时的宽度。"
+
+msgid "tank_params/desc/sightPointerSectorAngleStart"
+msgstr "红外搜索与跟踪系统扫描扇区在持续时间开始时的宽度。"
+
+msgid "tank_params/desc/sightPointerSelfSpottingTime"
+msgstr "使用红外搜索与跟踪系统发现未被点亮的敌方坦克后，自身坦克的可见时长。"
+
+msgid "tank_params/desc/sightPointerViewRange"
+msgstr "红外搜索与跟踪系统扫描扇区内观察范围逐步提高幅度。"
 
 msgid "tank_params/desc/speedLimits"
 msgstr "坦克速度由它的参数决定。"

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.impl.battle.battle_page.ammunition_panel.prebattle_ammunition_panel_inject import PrebattleAmmunitionPanelInject
 from gui.impl.gen.view_models.views.battle.battle_page.prebattle_ammunition_panel_view_model import State
 from gui.shared import EVENT_BUS_SCOPE, events
@@ -113,7 +114,7 @@ class Comp7CorePrebattleAmmunitionPanelInject(PrebattleAmmunitionPanelInject):
         if vehicle is None:
             return False
         else:
-            for groupID in TANK_SETUP_GROUPS.iterkeys():
+            for groupID in TANK_SETUP_GROUPS:
                 if vehicle.isSetupSwitchActive(groupID) and not vehicle.postProgression.isPrebattleSwitchDisabled(groupID):
                     return True
 

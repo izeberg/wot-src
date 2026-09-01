@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, time, weakref
 from battle_royale.gui.battle_control.controllers.spawn_ctrl import ISpawnListener
 from frameworks.wulf import ViewFlags, ViewSettings
@@ -11,6 +12,7 @@ from gui.impl.gen.view_models.views.battle_royale.respawn_point_view_model impor
 from gui.impl.gen.view_models.views.battle_royale.select_respawn_view_model import SelectRespawnViewModel
 from gui.impl.pub import ViewImpl
 from helpers import dependency
+from math_common import round_py2_style
 from skeletons.gui.battle_session import IBattleSessionProvider
 _logger = logging.getLogger(__name__)
 
@@ -74,9 +76,10 @@ class BRPrebattleTimer(IAbstractPeriodView):
 
     def __updateTimer(self):
         with self._parentView.viewModel.transaction() as (vm):
-            vm.setLeftTime(time.strftime('%M:%S', time.gmtime(round(self.__timeLeft))))
+            timeLeft = round_py2_style(self.__timeLeft)
+            vm.setLeftTime(time.strftime('%M:%S', time.gmtime(timeLeft)))
             vm.setIsWaitingPlayers(False)
-            if round(self.__timeLeft) <= self.__endingTime:
+            if timeLeft <= self.__endingTime:
                 vm.setIsTimeRunningOut(True)
 
     @staticmethod

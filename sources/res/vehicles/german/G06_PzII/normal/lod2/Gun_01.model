@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<tank>true</tank>
-	<materialNames/>
-	<visibilityBox>
-		<min>
-			-0.47477 -0.121235 -0.0703973
-			<!--BW_String-->
-		</min>
-		<max>
-			0.267337 0.129641 1.00738
-			<!--BW_String-->
-		</max>
-	</visibilityBox>
-	<parent>vehicles/german/G06_PzII/normal/lod3/Gun_01</parent>
-	<extent>96</extent>
 	<nodefullVisual>vehicles/german/G06_PzII/normal/lod2/Gun_01</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/german/G06_PzII/normal/lod3/Gun_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.474770 -0.121212 -0.070399</min>
+		<max>0.267337 0.129664 1.007381</max>
+	</visibilityBox>
 </root>

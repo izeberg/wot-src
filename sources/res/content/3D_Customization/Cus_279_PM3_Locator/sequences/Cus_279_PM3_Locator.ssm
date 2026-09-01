@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<params>
+		<param>
+			<name>t_open</name>
+			<type>trigger</type>
+		</param>
+		<param>
+			<name>t_close</name>
+			<type>trigger</type>
+		</param>
+	</params>
+	<node>
+		<name>Sleep Node</name>
+		<type>sleep</type>
+		<time>1.000000 1.000000</time>
+		<transition>
+			<to>Open</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>trigger</type>
+					<name>t_open</name>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>27.000000 -2.000000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>Open</name>
+		<type>animation</type>
+		<resource>content/3D_Customization/Cus_279_PM3_Locator/animations/Cus_279_PM3_Locator_opening.fbx</resource>
+		<clipName/>
+		<isLoop>false</isLoop>
+		<transition>
+			<to>rotate</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>-103.000000 -73.000000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>Close</name>
+		<type>animation</type>
+		<resource>content/3D_Customization/Cus_279_PM3_Locator/animations/Cus_279_PM3_Locator_closing.fbx</resource>
+		<clipName/>
+		<isLoop>false</isLoop>
+		<transition>
+			<to>Sleep Node</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>175.000000 -74.000000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>rotate</name>
+		<type>sequence</type>
+		<resource>content/3D_Customization/Cus_279_PM3_Locator/sequences/Cus_279_PM3_Locator_rotate.seq</resource>
+		<isLoop>false</isLoop>
+		<loop>1</loop>
+		<transition>
+			<to>Close</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+				<condition>
+					<type>trigger</type>
+					<name>t_close</name>
+				</condition>
+			</conditions>
+		</transition>
+		<transition>
+			<to>rotate</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>23.000000 -145.000000 0.000000</uiPosition>
+	</node>
+</root>

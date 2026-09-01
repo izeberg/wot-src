@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<Properties>
-		<requiredVersion_2310>
+		<requiredVersion_2400>
 			<Type>STRING</Type>
 			<Flags>BASE_AND_CLIENT</Flags>
-			<Default>cn_2.3.1_5</Default>
-		</requiredVersion_2310>
+			<Default>cn_2.4.0</Default>
+		</requiredVersion_2400>
 	</Properties>
 </root>

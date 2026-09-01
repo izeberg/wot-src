@@ -265,14 +265,14 @@
 		<fn_effect_bin>particles/environment/interior/01_karelia_butterfly_red.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/01_karelia_butterfly_white.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/01_karelia_flies.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/01_karelia_flies.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/01_karelia_flies_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/01_karelia_flies_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/127_japort_water_splashes.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/33_fjord_waterfall_splash_sm.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/47_canada_a_particulates.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/60_asia_miao_river_foam.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/60_asia_miao_flies.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/60_asia_miao_river_foam.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/60_asia_miao_river_foam.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/60_asia_miao_water_displacement.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/60_asia_miao_waterfall_dust.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/60_asia_miao_waterfall_foam.eff</fn_effect_bin>
@@ -411,15 +411,15 @@
 		<name>default</name>
 		<preload>
 			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_fireworks.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/eff_tex_h07_new_year_2015.dds</texture>
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps_long.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/eff_fireworks.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/Spark.dds</texture>
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps_solid.fx</shader>
@@ -511,6 +511,10 @@
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/Spark.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/eff_customization_main.dds</texture>
 		</preload>
 		<preload>
@@ -532,14 +536,6 @@
 		<preload>
 			<shader>\data\shaders\ps_long.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/electric_engine.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_fireworks.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_long.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_fireworks.dds</texture>
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps.fx</shader>
@@ -572,6 +568,7 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/127_japort_water_splashes.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/33_fjord_waterfall_splash_sm.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/47_canada_a_particulates.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/60_asia_miao_flies.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/60_asia_miao_river_foam.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/60_asia_miao_water_displacement.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/60_asia_miao_waterfall_dust.vfx</fn_effect_bin>
@@ -707,14 +704,14 @@
 		<fn_effect_bin>particles/environment/interior/01_karelia_butterfly_red.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/01_karelia_butterfly_white.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/01_karelia_flies.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/01_karelia_flies.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/01_karelia_flies_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/01_karelia_flies_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/127_japort_water_splashes.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/33_fjord_waterfall_splash_sm.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/47_canada_a_particulates.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/60_asia_miao_river_foam.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/60_asia_miao_flies.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/60_asia_miao_river_foam.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/60_asia_miao_river_foam.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/60_asia_miao_water_displacement.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/60_asia_miao_waterfall_dust.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/60_asia_miao_waterfall_foam.eff</fn_effect_bin>

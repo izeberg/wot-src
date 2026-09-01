@@ -22,6 +22,10 @@
 					<identifier>01 - Default</identifier>
 					<fx>shaders/custom/volumetric_effect_layer_vtx.fx</fx>
 					<property>
+						g_enableEnvMultiplier
+						<Bool>true</Bool>
+					</property>
+					<property>
 						diffuseMap
 						<Texture>particles/content_deferred/GFX_models/GFX_textures/waterfall_parts_long.dds</Texture>
 					</property>
@@ -45,7 +49,7 @@
 					<property>
 						lightMultipliers
 						<Vector4>
-							0.25 1 1 0.000000
+							0.177305 1 1 0.000000
 							<!--BW_String-->
 						</Vector4>
 					</property>

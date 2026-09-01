@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<soundMgr>
+		<WWISE_adv_profile>
+			<SFX_soundbanks_hangar>
+				<bank>
+					<name>ev_fep_fall_music_hangar.bnk</name>
+					<extension>fall_tanks</extension>
+				</bank>
+				<bank>
+					<name>ev_fep_fall_music_hangar.pck</name>
+					<extension>fall_tanks</extension>
+				</bank>
+			</SFX_soundbanks_hangar>
+		</WWISE_adv_profile>
+	</soundMgr>
+</root>

@@ -7,7 +7,7 @@ from shared_utils import CONST_CONTAINER
 from gui.shared.utils.decorators import ReprInjector
 from gui.shared.utils.requesters import RequestCtx
 from gui.shared.utils.requesters.RequestsController import RequestsController
-from messenger.storage import storage_getter
+from messenger.storage import MessengerStorageDescriptor, UsersStorage
 from messenger.proto import proto_getter, PROTO_TYPE
 _GR_MAX_CHUNK_SIZE = 20
 _NAMES_MAX_CHUNK_SIZE = 50
@@ -52,6 +52,7 @@ class _GetNicknamesCtx(RequestCtx):
 
 
 class UsersInfoController(RequestsController):
+    usersStorage = MessengerStorageDescriptor(UsersStorage)
 
     def __init__(self):
         super(UsersInfoController, self).__init__(None)
@@ -67,10 +68,6 @@ class UsersInfoController(RequestsController):
     def proto(self):
         return
 
-    @storage_getter('users')
-    def users(self):
-        return
-
     def requestNicknames(self, accountDbIDs, callback):
         while accountDbIDs:
             self.request(_GetNicknamesCtx(accountDbIDs[:_NAMES_MAX_CHUNK_SIZE]), callback, allowDelay=True)
@@ -82,7 +79,7 @@ class UsersInfoController(RequestsController):
             del accountDbIDs[:_GR_MAX_CHUNK_SIZE]
 
     def _getGlobalRatings(self, ctx, callback=None):
-        getter = self.users.getUser
+        getter = self.usersStorage.getUser
 
         def _ratingsCallback(code, errStr, ratings):
             if isCodeValid(code):

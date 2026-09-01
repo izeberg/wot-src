@@ -217,10 +217,9 @@ class ModelHitTester(object):
     def __getBspModel(self, value):
         if value > 0.5 and self.__bspModelUp:
             return self.__bspModelUp
-        else:
-            if value < -0.5 and self.__bspModelDown:
-                return self.__bspModelDown
-            return self.__bspModel
+        if value < -0.5 and self.__bspModelDown:
+            return self.__bspModelDown
+        return self.__bspModel
 
     def getModel(self, value):
         return self.__getBspModel(value)

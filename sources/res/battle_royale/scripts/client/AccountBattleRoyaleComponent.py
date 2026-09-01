@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, BattleRoyaleConstants as brc, AccountCommands
 from BaseAccountExtensionComponent import BaseAccountExtensionComponent
 from battle_royale.gui.constants import BattleRoyaleSubMode

@@ -34,8 +34,6 @@ package net.wg.gui.components.paginator
       
       private static const PAGE_BUTTON_LEFT_X_SHIFT:int = 15;
       
-      private static const PAGINATOR_X_SHIFT:int = 9;
-      
       private static const AFTER_ARROW_CLICK_CALL_CALLBACK_DELAY:int = 300;
       
       private static const MIN_WIDTH:uint = 1200;
@@ -159,7 +157,7 @@ package net.wg.gui.components.paginator
       public function setPositions(param1:Point) : void
       {
          this._paginatorPos = param1;
-         this._pageButtons.x = this._paginatorPos.x - (this._pageButtons.width >> 1) + PAGINATOR_X_SHIFT;
+         this._pageButtons.x = this._paginatorPos.x - (this._pageButtons.width >> 1);
          this._pageButtons.y = this._paginatorPos.y;
          this.layoutPageBtns();
       }
@@ -284,7 +282,7 @@ package net.wg.gui.components.paginator
                {
                   _loc1_ += this._nextPageBtn.width + PAGE_BUTTON_RIGHT_X_SHIFT;
                }
-               this._pageButtons.x = this._paginatorPos.x - (this._pageButtons.actualWidth + _loc1_ >> 1) + PAGINATOR_X_SHIFT;
+               this._pageButtons.x = this._paginatorPos.x - (this._pageButtons.actualWidth + _loc1_ >> 1);
             }
             this._prevPageBtn.x = this._pageButtons.x - this._prevPageBtn.width - PAGE_BUTTON_LEFT_X_SHIFT | 0;
             this._nextPageBtn.x = this._pageButtons.x + this._pageButtons.width + PAGE_BUTTON_RIGHT_X_SHIFT | 0;

@@ -13,9 +13,10 @@ from messenger.gui.Scaleform.data.contacts_vo_converter import ContactConverter
 from messenger.gui.Scaleform.view.lobby.ContactsTreeComponent import ContactsTreeComponent
 from messenger.proto.events import g_messengerEvents
 from messenger.proto.interfaces import ISearchHandler
-from messenger.storage import storage_getter
+from messenger.storage import MessengerStorageDescriptor, UsersStorage
 
 class SendInvitesWindow(SendInvitesWindowMeta, ISearchHandler):
+    usersStorage = MessengerStorageDescriptor(UsersStorage)
 
     def __init__(self, ctx=None):
         super(SendInvitesWindow, self).__init__()
@@ -42,10 +43,6 @@ class SendInvitesWindow(SendInvitesWindowMeta, ISearchHandler):
 
     def getAllAvailableContacts(self):
         return self.pyTree.getMainDP().getContactsList()
-
-    @storage_getter('users')
-    def usersStorage(self):
-        return
 
     @prbDispatcherProperty
     def prbDispatcher(self):

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_255_BP21_R_Locator/normal/lod3/Cus_255_BP21_R_Locator_02</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.287012 -0.026434 -0.153961</min>
+		<max>0.287844 0.491652 0.261415</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_255_BP21_R_Locator/normal/lod2/Cus_255_BP21_R_Locator_02</nodefullVisual>
+</root>

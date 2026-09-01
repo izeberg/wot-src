@@ -1973,7 +1973,7 @@ msgstr "已获得金币"
 
 msgid ""
 "serviceChannelMessages/battleResults/notification/personalMissions/3/description"
-msgstr "加入\"%(campaignName)s\"的行列后，您获得了\"%(nameMedal)s\"勋章。"
+msgstr "在\"%(campaignName)s\"个人任务中成功完成任务后，您获得了\"%(nameMedal)s\"勋章。"
 
 msgid ""
 "serviceChannelMessages/battleResults/notification/personalMissions/3/header"
@@ -1993,6 +1993,29 @@ msgid ""
 "serviceChannelMessages/battleResults/notification/personalMissions/3/stage/3/description"
 msgstr ""
 "在\"%(campaignName)s\"个人任务中，成功完成\"%(categoryName)s\"系列的15个任务后，您获得了\"%(nameMedal)s\"勋章。"
+
+msgid ""
+"serviceChannelMessages/battleResults/notification/personalMissions/4/description"
+msgstr "在\"%(campaignName)s\"个人任务中成功完成任务后，您获得了\"%(nameMedal)s\"勋章。"
+
+msgid ""
+"serviceChannelMessages/battleResults/notification/personalMissions/4/header"
+msgstr "恭喜!"
+
+msgid ""
+"serviceChannelMessages/battleResults/notification/personalMissions/4/stage/1/description"
+msgstr ""
+"在\"%(operationName)s\"作战行动中，成功完成\"%(categoryName)s\"系列的21个任务后，您获得了\"%(nameMedal)s\"勋章。"
+
+msgid ""
+"serviceChannelMessages/battleResults/notification/personalMissions/4/stage/2/description"
+msgstr ""
+"在\"%(operationName)s\"作战行动中，成功完成\"%(categoryName)s\"系列的14个任务后，您获得了\"%(nameMedal)s\"勋章。"
+
+msgid ""
+"serviceChannelMessages/battleResults/notification/personalMissions/4/stage/3/description"
+msgstr ""
+"在\"%(operationName)s\"作战行动中，成功完成\"%(categoryName)s\"系列的7个任务后，您获得了\"%(nameMedal)s\"勋章。"
 
 msgid "serviceChannelMessages/battleResults/penaltyForDamageAllies"
 msgstr "因TK队友已被扣除:%s"
@@ -3015,16 +3038,13 @@ msgid "serviceChannelMessages/lootBoxes/footer"
 msgstr "点击按钮查看内容。"
 
 msgid "serviceChannelMessages/lootBoxes/header"
-msgstr "您收到了一个包裹:"
+msgstr "已收到包裹"
 
 msgid "serviceChannelMessages/lootBoxes/item/name"
-msgstr "%(name)s %(colorTagOpen)sx%(count)s%(colorTagClose)s"
+msgstr "%(name)s: %(colorTagOpen)s%(count)s%(colorTagClose)s"
 
 msgid "serviceChannelMessages/lootBoxesAutoOpen/button"
-msgstr "查看"
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/counter"
-msgstr "x%(count)s"
+msgstr "前往奖励"
 
 msgid "serviceChannelMessages/lootBoxesAutoOpen/event/boxes"
 msgstr "已激活次元之门:%(boxes)s"
@@ -3045,9 +3065,6 @@ msgstr "我们激活了您的所有次元之门，并将所有物品发送到了
 
 msgid "serviceChannelMessages/lootBoxesAutoOpen/header"
 msgstr "已获得奖励"
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/text"
-msgstr "我们开启了您全部的补给品，并把假日行动的奖励添加至您的账号"
 
 msgid "serviceChannelMessages/lunarBoxesAutoOpen/body"
 msgstr "我们为您开启了春节寄福活动中的所有红包。"
@@ -3555,6 +3572,22 @@ msgstr "通用碎片"
 
 msgid "serviceChannelMessages/sysMsg/converter/nationalBlueprintReceived"
 msgstr "%(nationName)s 系别碎片"
+
+msgid "serviceChannelMessages/sysMsg/converter/postProgression/description"
+msgstr ""
+"调整了以下坦克的配置: \n"
+" • %(vehiclesList)s‍"
+
+msgid "serviceChannelMessages/sysMsg/converter/postProgression/header"
+msgstr "注意!"
+
+msgid ""
+"serviceChannelMessages/sysMsg/converter/postProgression/vehiclesList/additionalCount"
+msgstr "‍<font color='#E9E2BF'>以及另外%(vehiclesCount)s辆</font>‍"
+
+msgid ""
+"serviceChannelMessages/sysMsg/converter/postProgression/vehiclesList/delimiter"
+msgstr "•"
 
 msgid "serviceChannelMessages/sysMsg/converter/projectionDecalsDemounted"
 msgstr "更新后，所有贴花均已从车辆上移除，并发送至外部车库。"

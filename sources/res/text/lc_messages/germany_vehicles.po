@@ -478,6 +478,9 @@ msgstr "IV号歼击车 (0批次)"
 msgid "Chassis_G17_JagdPzIV_2"
 msgstr "IV号坦克歼击车"
 
+msgid "Chassis_G183_Fossa_VM_68"
+msgstr "幽壑 VM 68"
+
 msgid "Chassis_G183_Radkampfwagen"
 msgstr "RKW"
 
@@ -508,8 +511,32 @@ msgstr "“猎豹”加强型"
 msgid "Chassis_G191_StuG_IIIF_CFE_A"
 msgstr "III号突击炮F型\"河马\""
 
+msgid "Chassis_G193_Pz_Kpfw_55"
+msgstr "Pz.54"
+
+msgid "Chassis_G193_Pz_Kpfw_55_2"
+msgstr "Pz.55"
+
+msgid "Chassis_G195_HWK_40"
+msgstr "HWK 40"
+
+msgid "Chassis_G196_Versuchspanzer_57"
+msgstr "VPz 56"
+
+msgid "Chassis_G196_Versuchspanzer_57_2"
+msgstr "VPz 57"
+
+msgid "Chassis_G197_Pz_Kpfw_Neu"
+msgstr "Pz.70-120"
+
+msgid "Chassis_G198_Kampfpanzer_67"
+msgstr "67主战方案"
+
 msgid "Chassis_G200_Chi_Go"
 msgstr "\"黑豹\"奇戈"
+
+msgid "Chassis_G204_PzVI_Tiger_P_CFE_A"
+msgstr "VK4501(P)"
 
 msgid "Chassis_G23_Grille"
 msgstr "“蟋蟀”"
@@ -620,6 +647,9 @@ msgid "Chassis_G55_E-75_2"
 msgstr "E-75加强型"
 
 msgid "Chassis_G56_E-100"
+msgstr "E-100"
+
+msgid "Chassis_G56_E-100_7x7"
 msgstr "E-100"
 
 msgid "Chassis_G57_PzVI_Tiger_P"
@@ -940,6 +970,12 @@ msgstr "戴姆勒-奔驰 MB880 Ea-500"
 msgid "Daimler_Benz_MB_8V837_Ba"
 msgstr "戴姆勒-奔驰 MB 8V837 Ba"
 
+msgid "Daimler_Benz_V12_56"
+msgstr "戴姆勒-奔驰 V12 56"
+
+msgid "Daimler_Benz_V12_57"
+msgstr "戴姆勒-奔驰 V12 57"
+
 msgid "DickerMax"
 msgstr "大麦克斯"
 
@@ -1063,6 +1099,9 @@ msgstr "Fu 8"
 msgid "FuG8f"
 msgstr "FuG 8 (f)"
 
+msgid "FuG_7_45_01"
+msgstr "FuG 7 (4501)"
+
 msgid "FuG_7_F"
 msgstr "FuG 7 (F)"
 
@@ -1080,6 +1119,12 @@ msgstr "FuG Spr.A"
 
 msgid "Fu_12"
 msgstr "Fu 12"
+
+msgid "Fu_55"
+msgstr "Fu 55"
+
+msgid "Fu_57"
+msgstr "Fu 57"
 
 msgid "Fu_7S"
 msgstr "Fu 7S"
@@ -2327,6 +2372,26 @@ msgstr "?empty?"
 msgid "G17_JagdPzIV_short"
 msgstr "IV号坦克歼击车"
 
+msgid "G183_Fossa_VM_68"
+msgstr "幽壑 VM 68"
+
+msgid "G183_Fossa_VM_68_descr"
+msgstr ""
+"幽壑 VM "
+"68是D系于20世纪60年代末研发的轮式坦克计划。该计划旨在打造一辆速度快、火力强的坦克，用于侦察和对抗敌方装甲车辆。该坦克计划配备动力强劲且结构紧凑的M系V型发动机、8x8轮式布局的底盘和独立悬挂，可实现坦克式的旋转。计划采用一门配有消声装置的105毫米火炮；然而，在设计阶段就发现了一些严重缺陷:"
+" 部件布局过于紧凑，导致维修和保养复杂；油箱容量和弹药架空间不足；重心过高，导致旋转时，尤其是在开火时稳定性不足。该计划在建造原型车之前被终止。 "
+
+msgid "G183_Fossa_VM_68_long_special"
+msgstr ""
+"幽壑 VM "
+"68是一辆D系X级轮式狙击型中型坦克。它凭借轮式底盘和强劲的发动机获得了出色的机动性，同时还配备一门非常精准的火炮。这些性能参数使其能够深入敌方战线，并从意想不到的角度发动突袭。"
+
+msgid "G183_Fossa_VM_68_short"
+msgstr "幽壑 VM 68"
+
+msgid "G183_Fossa_VM_68_short_special"
+msgstr "出色的机动性，精准的火炮"
+
 msgid "G183_Radkampfwagen"
 msgstr "RKW"
 
@@ -2468,6 +2533,74 @@ msgstr "III号突击炮F型\"河马\""
 msgid "G191_StuG_IIIF_CFE_A_short_special"
 msgstr "良好的机动性，较高的射速"
 
+msgid "G193_Pz_Kpfw_55"
+msgstr "Pz.55"
+
+msgid "G193_Pz_Kpfw_55_descr"
+msgstr ""
+"战事尾声，D系急需配备更强劲火炮的现代化重型坦克，以对抗盟军的新型坦克，因为当时的量产型坦克炮已无法确保有效毁伤后者。为在不研发新型火炮的前提下增强现有火炮的威力，工程师们提出了采用附加药室的方案。Pz.55便是其中之一。然而，即便是正在进行的多药室火炮实验，以及与其他重型坦克实现零部件通用化的方案，也未能挽救这一计划。工业体系不堪重负，加之D系战败，彻底终结了其发展前景，最终使其停留在蓝图阶段。"
+
+msgid "G193_Pz_Kpfw_55_short"
+msgstr "Pz.55"
+
+msgid "G195_HWK_40"
+msgstr "HWK 40"
+
+msgid "G195_HWK_40_descr"
+msgstr ""
+"20世纪60年代末的一项重型坦克计划，目标是成为\"豹\"I设计理念下防护更好、火力更强的\"重型方案\"，同时保留传统布局。该坦克将传统方案与新元素相结合:"
+" "
+"先进的稳定系统、现代化的传动系统和试验性装甲模块。研发工作于1967年至1971年间进行，并制造了一辆全尺寸模型。然而，由于多种原因(主要是因为重型坦克与D系军方的机动作战理念不兼容)，该计划未能继续推进。尽管如此，其中的一些技术方案后来被用于新一代坦克的前期研究，包括最终促成\"豹\"II坦克出现的相关研究工作。"
+
+msgid "G195_HWK_40_long_special"
+msgstr ""
+"HWK "
+"40是一辆D系IX级重型坦克。凭借良好的机动性、手感优秀的火炮和不俗的装甲，它拥有相对于其等级来说相当全面的性能。此外，它还配备可调整射击诸元的系统，进一步增强了其性能。"
+
+msgid "G195_HWK_40_short"
+msgstr "HWK 40"
+
+msgid "G195_HWK_40_short_special"
+msgstr "良好的机动性，手感优秀的火炮"
+
+msgid "G196_Versuchspanzer_57"
+msgstr "VPz 57"
+
+msgid "G196_Versuchspanzer_57_descr"
+msgstr ""
+"20世纪50年代，D系启动了VPz "
+"57计划。新组建的D系军方工程师们计划在该坦克上测试一种诞生于战事时期的火炮概念，即采用附加药室的火炮。为此，他们借鉴了早期坦克的部分技术方案和零部件。然而，研发工作遭遇严重困难:"
+" "
+"D系工业尚处于战后恢复阶段，而M47坦克的列装使军方高层倾向于压缩自有坦克研制项目的资源投入。最终，该计划被搁置，而随着西方通用坦克研发工作的展开，该计划被彻底终止。"
+
+msgid "G196_Versuchspanzer_57_short"
+msgstr "VPz 57"
+
+msgid "G197_Pz_Kpfw_Neu"
+msgstr "Pz.70-120"
+
+msgid "G197_Pz_Kpfw_Neu_descr"
+msgstr ""
+"Pz.70-120计划是一项旨在寻找\"豹\"I替代方案的预研计划，被设想为下一代主战坦克的一项兼具过渡性质和技术创新的方案。该坦克计划采用焊接式车体和炮塔，并强调通过先进的火控系统来提高首发命中率。D系坦克制造学派首次考虑采用配备引信装定装置的120毫米火炮，使其能够高效打击掩体后的目标。然而，计划分析发现了一些问题:"
+" 炮塔和底盘负荷过大、成本高昂，以及现代化改造潜力有限。此外，当时已经存在更为均衡的\"豹\"II项目，因此该计划被认为缺乏发展前景，最终遭到终止。"
+
+msgid "G197_Pz_Kpfw_Neu_long_special"
+msgstr ""
+"Pz.70-120的设计旨在追求最大的泛用性和适应性，而非在某项性能上做到极致。除了坚固的装甲、良好的机动性和手感优秀的火炮外，它还配备引信装定装置和附加药室，使其能够调整射击诸元并优化穿透力。"
+
+msgid "G197_Pz_Kpfw_Neu_short"
+msgstr "Pz.70-120"
+
+msgid "G198_Kampfpanzer_67"
+msgstr "67主战方案"
+
+msgid "G198_Kampfpanzer_67_descr"
+msgstr ""
+"20世纪60年代，D系正在研发一系列采用试验性火力增强系统的坦克计划。军事技术与采购局正在考虑重装甲的67主战方案计划，该计划采用引信装定装置和附加药室，并考虑将两者结合使用。当时，附加药室的研发已持续十余年，而引信装定装置也被视为极具前景的发展方向。然而，新型反坦克武器的出现，以及相较于\"豹\"I更高昂的研发成本，最终导致该计划在早期阶段便被终止。"
+
+msgid "G198_Kampfpanzer_67_short"
+msgstr "67主战方案"
+
 msgid "G200_Chi_Go"
 msgstr "\"黑豹\"奇戈"
 
@@ -2484,6 +2617,22 @@ msgstr "\"黑豹\"奇戈"
 
 msgid "G200_Chi_Go_short_special"
 msgstr "装甲防护不俗的炮塔，高额的平均单发损伤"
+
+msgid "G204_PzVI_Tiger_P_CFE_A"
+msgstr "VK4501(P)"
+
+msgid "G204_PzVI_Tiger_P_CFE_A_descr"
+msgstr "?empty?"
+
+msgid "G204_PzVI_Tiger_P_CFE_A_long_special"
+msgstr ""
+"VK4501(P)是一辆D系VI级重型坦克，其坚固的正面装甲能可靠地抵挡同等级中型和重型坦克的标准炮弹。它的火炮拥有良好的平均每分钟损伤，以及相当不错的穿透力和平均单发损伤。虽然速度较慢，但它配备了独特系统，可以暂时提高机动性，使其能够很快加速至最大速度。"
+
+msgid "G204_PzVI_Tiger_P_CFE_A_short"
+msgstr "VK4501(P)"
+
+msgid "G204_PzVI_Tiger_P_CFE_A_short_special"
+msgstr "坚固的正面装甲、机动增强系统"
 
 msgid "G20_Marder_II"
 msgstr "“黄鼠狼”II"
@@ -2685,6 +2834,15 @@ msgstr "E-75"
 
 msgid "G56_E-100"
 msgstr "E-100"
+
+msgid "G56_E-100_7x7"
+msgstr "E-100 7v7"
+
+msgid "G56_E-100_7x7_descr"
+msgstr "1943年6月，阿德勒工厂接到开发E-100的订单。然而，1944年，重型坦克研发被叫停。到战事结束时，仅完成了底盘，后来被Y系军队缴获。"
+
+msgid "G56_E-100_7x7_short"
+msgstr "E-100 7v7"
 
 msgid "G56_E-100_descr"
 msgstr "?empty?"
@@ -3036,6 +3194,12 @@ msgstr "38H735(f)"
 msgid "Hall_Scott_V12_RKW"
 msgstr "霍尔-斯科特 V12 RKW"
 
+msgid "Hall_Scott_V12_VM_68"
+msgstr "霍尔-斯科特 V12 VM 68"
+
+msgid "Henschel_MAN_V12_67"
+msgstr "亨舍尔-曼恩 V12 67"
+
 msgid "Hetzer"
 msgstr "\"追猎者\""
 
@@ -3160,6 +3324,18 @@ msgstr "拥有完美穿透力的优秀火炮，可靠的装甲。"
 
 msgid "MAN_D2840_LXE"
 msgstr "曼恩 D2840 LXE"
+
+msgid "MAN_H_40"
+msgstr "曼恩 H 40"
+
+msgid "MAN_Mehrstoff_Hochleistungsdiesel_70N"
+msgstr "曼恩 高性能多燃料柴油发动机 70N"
+
+msgid "MAN_V12_D_54"
+msgstr "曼恩 V12 D 54"
+
+msgid "MAN_V12_D_55"
+msgstr "曼恩 V12 D 55"
 
 msgid "MB-503"
 msgstr "戴姆勒-奔驰MB503"
@@ -3864,6 +4040,9 @@ msgstr "迈巴赫新型发动机 90"
 msgid "Maybach_Neues_Projekt_E_100"
 msgstr "迈巴赫新型发动机 (E-100)"
 
+msgid "Maybach_Neues_Projekt_E_100_7x7"
+msgstr "迈巴赫新型发动机 (E-100)"
+
 msgid "Maybach_Neues_Projekt_E_100_short"
 msgstr "迈巴赫新型发动机 (E-100)"
 
@@ -3973,6 +4152,9 @@ msgstr "2x保时捷 100/P型"
 
 msgid "Porsche_Typ_101_1_x2"
 msgstr "2x保时捷 101/1型"
+
+msgid "Porsche_Typ_101_45_01"
+msgstr "2x保时捷 101型 (4501)"
 
 msgid "Porsche_Typ_101_P"
 msgstr "2x保时捷 101/P型"
@@ -4378,6 +4560,15 @@ msgstr "S35 739(f)"
 msgid "S35_captured_short_special"
 msgstr "射速高，装甲良好"
 
+msgid "SEL_Bordfunkanlage_Neu"
+msgstr "SEL 新型无线电台"
+
+msgid "SEL_Panzerfunkanlage_67"
+msgstr "SEL 无线电台 67"
+
+msgid "SEL_Panzerfunkanlage_69A"
+msgstr "SEL 无线电台 69A"
+
 msgid "SEM25"
 msgstr "SEM 25"
 
@@ -4422,6 +4613,9 @@ msgstr "SEM 25"
 
 msgid "SEM_25_funkgerat_RKW"
 msgstr "SEM 25 RKW"
+
+msgid "SEM_25_funkgerat_VM_68"
+msgstr "SEM 25 无线电台 VM 68"
 
 msgid "SPA_19TB_mod_43_german"
 msgstr "SPA 19TBM42"
@@ -4805,6 +4999,9 @@ msgstr "V–4/40"
 msgid "Turret_1_G17_JagdPzIV"
 msgstr "IV号坦克歼击车"
 
+msgid "Turret_1_G183_Fossa_VM_68"
+msgstr "幽壑 VM 68"
+
 msgid "Turret_1_G183_Radkampfwagen"
 msgstr "RKW"
 
@@ -4832,8 +5029,26 @@ msgstr "“猎豹”"
 msgid "Turret_1_G191_StuG_IIIF_CFE_A"
 msgstr "III号突击炮F型\"河马\""
 
+msgid "Turret_1_G193_Pz_Kpfw_55"
+msgstr "Pz.54"
+
+msgid "Turret_1_G195_HWK_40"
+msgstr "HWK 40"
+
+msgid "Turret_1_G196_Versuchspanzer_57"
+msgstr "VPz 56"
+
+msgid "Turret_1_G197_Pz_Kpfw_Neu"
+msgstr "Pz.70-120"
+
+msgid "Turret_1_G198_Kampfpanzer_67"
+msgstr "67主战方案"
+
 msgid "Turret_1_G200_Chi_Go"
 msgstr "\"黑豹\"奇戈"
+
+msgid "Turret_1_G204_PzVI_Tiger_P_CFE_A"
+msgstr "VK4501(P)型"
 
 msgid "Turret_1_G23_Grille"
 msgstr "“蟋蟀”"
@@ -5097,6 +5312,12 @@ msgstr "“虎王”量产型"
 msgid "Turret_2_G16_PzVIB_Tiger_II_short"
 msgstr "“虎王”量产型"
 
+msgid "Turret_2_G193_Pz_Kpfw_55"
+msgstr "Pz.55"
+
+msgid "Turret_2_G196_Versuchspanzer_57"
+msgstr "VPz 57"
+
 msgid "Turret_2_G24_VK3002DB"
 msgstr "VK3002(DB)窄型"
 
@@ -5116,6 +5337,9 @@ msgid "Turret_2_G55_E-75"
 msgstr "E-75 B型"
 
 msgid "Turret_2_G56_E-100"
+msgstr "E-100"
+
+msgid "Turret_2_G56_E-100_7x7"
 msgstr "E-100"
 
 msgid "Turret_2_G57_PzVI_Tiger_P"
@@ -5326,6 +5550,9 @@ msgstr "DM11(短身管型)"
 msgid "_105mm_DM11_RKW"
 msgstr "DM11 RKW"
 
+msgid "_105mm_DM11_VM_68"
+msgstr "DM11 VM 68"
+
 msgid "_105mm_DM12"
 msgstr "DM12"
 
@@ -5337,6 +5564,9 @@ msgstr "DM12(短身管型)"
 
 msgid "_105mm_DM12_RKW"
 msgstr "DM12 RKW"
+
+msgid "_105mm_DM12_VM_68"
+msgstr "DM12 VM 68"
 
 msgid "_105mm_DM13"
 msgstr "DM13"
@@ -5358,6 +5588,9 @@ msgstr "DM13(短身管型)"
 
 msgid "_105mm_DM13_RKW"
 msgstr "DM13 RKW"
+
+msgid "_105mm_DM13_VM_68"
+msgstr "DM13 VM 68"
 
 msgid "_105mm_DM23"
 msgstr "DM23"
@@ -5432,6 +5665,9 @@ msgstr "10.5cm K 18 L/52炮"
 
 msgid "_105mm_Kanone_L7_RKW"
 msgstr "105mm L7 RKW炮"
+
+msgid "_105mm_Kanone_L7_VM_68"
+msgstr "105mm L7 VM 68炮"
 
 msgid "_105mm_KwK45_L52_N"
 msgstr "10.5cm KwK L/52炮 B型"
@@ -5631,6 +5867,9 @@ msgstr "Sprgr 18 K"
 msgid "_105mm_Sprgr_45"
 msgstr "Sprgr 45"
 
+msgid "_105mm_Sprgr_55"
+msgstr "Sprgr 55"
+
 msgid "_105mm_Sprgr_E"
 msgstr "Sprgr E"
 
@@ -5681,6 +5920,9 @@ msgstr "10.5cm L7A3 坦克炮"
 msgid "_10WSc"
 msgstr "10WSc"
 
+msgid "_10WSc_7x7_0"
+msgstr "10WSc"
+
 msgid "_10WSc_CFE_T"
 msgstr "10WSc T"
 
@@ -5696,8 +5938,50 @@ msgstr "10WSc"
 msgid "_10_5_cm_Bordkanone_L7W"
 msgstr "10.5cm L7W炮"
 
+msgid "_10_5_cm_Hochdruck_Panzerkanone_Muster_56_mit_Zusatzkammern"
+msgstr "10.5cm HPzK 56炮(带附加药室)"
+
+msgid "_10_5_cm_Hochdruck_Panzerkanone_Muster_56_mit_Zusatzkammern_short"
+msgstr "10.5cm HPzK 56炮(带附加药室)"
+
+msgid "_10_5_cm_Hochdruck_Panzerkanone_Muster_57_mit_Zusatzkammern"
+msgstr "10.5cm HPzK 57炮(带附加药室)"
+
+msgid "_10_5_cm_Hochdruck_Panzerkanone_Muster_57_mit_Zusatzkammern_short"
+msgstr "10.5cm HPzK 57炮(带附加药室)"
+
 msgid "_10_5_cm_Pak_L_52_JP"
 msgstr "10.5cm PaK 45 L/52 (JP)炮"
+
+msgid "_10_5_cm_Panzerkanone_Muster_55_mit_Zusatzkammern"
+msgstr "10.5cm PzK 55炮(带附加药室)"
+
+msgid "_10_5_cm_Panzerkanone_Muster_55_mit_Zusatzkammern_short"
+msgstr "10.5cm PzK 55炮(带附加药室)"
+
+msgid "_10_5_cm_Pzgr_55_Hartkern_fur_Zusatzkammerbetrieb"
+msgstr "Pzgr 55硬芯弹(附加药室型)"
+
+msgid "_10_5_cm_Pzgr_55_fur_Zusatzkammerbetrieb"
+msgstr "Pzgr 55(附加药室型)"
+
+msgid "_10_5_cm_Pzgr_56_Hartkern_fur_Zusatzkammerbetrieb"
+msgstr "Pzgr 56硬芯弹(附加药室型)"
+
+msgid "_10_5_cm_Pzgr_56_fur_Zusatzkammerbetrieb"
+msgstr "Pzgr 56(附加药室型)"
+
+msgid "_10_5_cm_Pzgr_57_Hartkern_fur_Zusatzkammerbetrieb"
+msgstr "Pzgr 57硬芯弹(附加药室型)"
+
+msgid "_10_5_cm_Pzgr_57_fur_Zusatzkammerbetrieb"
+msgstr "Pzgr 57(附加药室型)"
+
+msgid "_10_5_cm_Sprgr_56"
+msgstr "Sprgr 56"
+
+msgid "_10_5_cm_Sprgr_57"
+msgstr "Sprgr 57"
 
 msgid "_10_5_cm_Stu_H_42_L_28_B"
 msgstr "10.5cm StuH 42 L/28 (B)榴弹炮"
@@ -5729,8 +6013,59 @@ msgstr "114hkr 42/A-18/24-38 is 32-18/24"
 msgid "_114mm_hkr_42_C_18_24_38_is_32_18_24"
 msgstr "114hkr 42/C-18/24-38 is 32-18/24"
 
+msgid "_11_cm_Hl_Gr_67_mit_mundungsgestelltem_Zunder"
+msgstr "HlGr 67(炮口引信装定型)"
+
+msgid "_11_cm_Hl_Gr_69_mit_mundungsgestelltem_Zunder"
+msgstr "HlGr 69(炮口引信装定型)"
+
+msgid ""
+"_11_cm_Hochdruck_Panzerkanone_Muster_67_mit_Zusatzkammern_Mundungsgeschwindigkeitsmessbasis_und_Zunderstellgerat"
+msgstr "11cm HPzK 67炮(带附加药室、炮口测速装置及引信装定装置)"
+
+msgid ""
+"_11_cm_Hochdruck_Panzerkanone_Muster_67_mit_Zusatzkammern_Mundungsgeschwindigkeitsmessbasis_und_Zunderstellgerat_short"
+msgstr "11cm HPzK 67炮(带附加药室、炮口测速装置及引信装定装置)"
+
+msgid ""
+"_11_cm_Hochdruck_Panzerkanone_Muster_69_mit_Zusatzkammern_Mundungsgeschwindigkeitsmessbasis_und_Zunderstellgerat"
+msgstr "11cm HPzK 69炮(带附加药室、炮口测速装置及引信装定装置)"
+
+msgid ""
+"_11_cm_Hochdruck_Panzerkanone_Muster_69_mit_Zusatzkammern_Mundungsgeschwindigkeitsmessbasis_und_Zunderstellgerat_short"
+msgstr "11cm HPzK 69炮(带附加药室、炮口测速装置及引信装定装置)"
+
+msgid "_11_cm_Pzgr_67_Hartkern_fur_Zusatzkammerbetrieb"
+msgstr "Pzgr 67硬芯弹(附加药室型)"
+
+msgid "_11_cm_Pzgr_69_Hartkern_fur_Zusatzkammerbetrieb"
+msgstr "Pzgr 69硬芯弹(附加药室型)"
+
+msgid "_11_cm_Sprgr_67"
+msgstr "Sprgr 67"
+
+msgid "_11_cm_Sprgr_69"
+msgstr "Sprgr 69"
+
+msgid ""
+"_120_mm_Glattrohr_Panzerkanone_Muster_70_mit_Zusatzkammern_Mundungsgeschwindigkeitsmessbasis_und_Zunderstellgerat"
+msgstr "120mm 70滑膛坦克炮(带附加药室、炮口测速装置及引信装定装置)"
+
+msgid ""
+"_120_mm_Glattrohr_Panzerkanone_Muster_70_mit_Zusatzkammern_Mundungsgeschwindigkeitsmessbasis_und_Zunderstellgerat_short"
+msgstr "120mm 70滑膛坦克炮(带附加药室、炮口测速装置及引信装定装置)"
+
+msgid "_120_mm_Hartkern_Wuchtgeschoss_70_fur_Zusatzkammerbetrieb"
+msgstr "70硬芯动能弹(附加药室型)"
+
+msgid "_120_mm_Mehrzweck_Hl_Gr_70_mit_mundungsgestelltem_Zunder"
+msgstr "MHlGr 70(炮口引信装定型)"
+
 msgid "_120_mm_Rh2B"
 msgstr "12cm Rh2B坦克炮"
+
+msgid "_120_mm_Sprgr_70"
+msgstr "Sprgr 70"
 
 msgid "_120mm_APDS_DM14"
 msgstr "DM14"
@@ -5863,6 +6198,9 @@ msgstr "12.8cm KwK 44 L/55炮 (180B)"
 msgid "_128mm_Kw_K_44_L_55_Ausf_E"
 msgstr "12.8cm KwK 44 L/55炮 E型"
 
+msgid "_128mm_Kw_K_44_L_55_Ausf_E_7x7"
+msgstr "12.8cm KwK 44 L/55炮 E型"
+
 msgid "_128mm_Kw_K_L_50"
 msgstr "12.8cm KwK L/50炮"
 
@@ -5979,6 +6317,9 @@ msgstr "Pzgr 39 (180B)"
 msgid "_128mm_Pzgr_39_E"
 msgstr "Pzgr 39 E"
 
+msgid "_128mm_Pzgr_39_E_7x7"
+msgstr "Pzgr 39 E"
+
 msgid "_128mm_Pzgr_39_F"
 msgstr "Pzgr 39 (F)"
 
@@ -6013,6 +6354,9 @@ msgid "_128mm_Pzgr_40_180B"
 msgstr "Pzgr 40 (180B)"
 
 msgid "_128mm_Pzgr_40_E"
+msgstr "Pzgr 40 E"
+
+msgid "_128mm_Pzgr_40_E_7x7"
 msgstr "Pzgr 40 E"
 
 msgid "_128mm_Pzgr_40_F"
@@ -6085,6 +6429,9 @@ msgid "_128mm_Sprgr_18_180B"
 msgstr "Sprgr 18 (180B)"
 
 msgid "_128mm_Sprgr_18_E"
+msgstr "Sprgr 18 E"
+
+msgid "_128mm_Sprgr_18_E_7x7"
 msgstr "Sprgr 18 E"
 
 msgid "_128mm_Sprgr_18_F"
@@ -7258,6 +7605,9 @@ msgstr ""
 "8.8cm KwK 36\n"
 "L/56炮"
 
+msgid "_88mm_KwK_36_L_56_45_01"
+msgstr "8.8cm KwK 36 L/56炮 (4501)"
+
 msgid "_88mm_KwK_43_L71"
 msgstr "8.8cm KwK 43 L/71炮"
 
@@ -7443,6 +7793,9 @@ msgstr "Pzgr 39/43 101型"
 msgid "_88mm_Pzgr_39_43_ZK"
 msgstr "Pzgr 39/43 ZK"
 
+msgid "_88mm_Pzgr_39_45_01"
+msgstr "Pzgr 39 (4501)"
+
 msgid "_88mm_Pzgr_39_Ausf_E"
 msgstr "Pzgr 39 E型"
 
@@ -7497,6 +7850,9 @@ msgstr "Pzgr 40/43 101型"
 msgid "_88mm_Pzgr_40_43_ZK"
 msgstr "Pzgr 40/43 ZK"
 
+msgid "_88mm_Pzgr_40_45_01"
+msgstr "Pzgr 40 (4501)"
+
 msgid "_88mm_Pzgr_40_Ausf_E"
 msgstr "Pzgr 40 E型"
 
@@ -7538,6 +7894,9 @@ msgstr "Sprgr 18 (3002D)"
 
 msgid "_88mm_Sprgr_18_3601"
 msgstr "Sprgr 18 (3601)"
+
+msgid "_88mm_Sprgr_18_45_01"
+msgstr "Sprgr 18 (4501)"
 
 msgid "_88mm_Sprgr_18_Ausf_E"
 msgstr "Sprgr 18 E型"
@@ -7595,6 +7954,21 @@ msgstr "8.8cm Pak 43 L/71 (JP)炮"
 
 msgid "_8_8_cm_Pak_L_56_IV"
 msgstr "8.8cm Pak L/56 (IV)炮"
+
+msgid "_8_8_cm_Panzerkanone_Muster_55_mit_Zusatzkammern"
+msgstr "8.8cm PzK 55炮(带附加药室)"
+
+msgid "_8_8_cm_Panzerkanone_Muster_55_mit_Zusatzkammern_short"
+msgstr "8.8cm PzK 55炮(带附加药室)"
+
+msgid "_8_8_cm_Pzgr_55_Hartkern_fur_Zusatzkammerbetrieb"
+msgstr "Pzgr 55硬芯弹(附加药室型)"
+
+msgid "_8_8_cm_Pzgr_55_fur_Zusatzkammerbetrieb"
+msgstr "Pzgr 55(附加药室型)"
+
+msgid "_8_8_cm_Sprgr_55"
+msgstr "Sprgr 55"
 
 msgid "_8_cm_8H62_2"
 msgstr "8cm 8H62-2炮"

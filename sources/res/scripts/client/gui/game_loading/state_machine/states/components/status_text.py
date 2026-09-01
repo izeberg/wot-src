@@ -1,5 +1,5 @@
 import typing, game_loading_bindings
-from frameworks.state_machine import StateFlags, StateEvent
+from frameworks_common.state_machine import StateFlags, StateEvent
 from gui.game_loading import loggers
 from gui.game_loading.resources.consts import MilestonesTypes, Milestones
 from gui.game_loading.state_machine.const import TickingMode

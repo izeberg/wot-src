@@ -274,7 +274,6 @@ class TriggersManager(object):
             offset = targetMatrix.applyPoint(offset)
             originalSize = 5.0
             return -scale.x * originalSize < offset.x < scale.x * originalSize and -scale.z * originalSize < offset.z < scale.z * originalSize
-            return
 
     def __getAimTriggerActivationStatus(self, vehicle, camera, params):
         activationStatus = False

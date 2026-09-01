@@ -13,18 +13,19 @@ package net.wg.gui.messenger
       public function SmileyMap()
       {
          super();
-         var _loc1_:Number = 11;
-         var _loc2_:String = "smiley_happy";
-         var _loc3_:String = "smiley_hmm";
-         var _loc4_:String = "smiley_mad";
-         var _loc5_:String = "smiley_madah";
-         var _loc6_:String = "smiley_norm";
-         var _loc7_:String = "smiley_oh";
-         var _loc8_:String = "smiley_sad";
-         var _loc9_:String = "smiley_tongue";
-         var _loc10_:String = "smiley_wink";
-         var _loc11_:String = "smiley_kiss";
-         this.map = Vector.<ImageSubstitution>([new ImageSubstitution(":)",_loc2_,_loc1_,16,16,true),new ImageSubstitution("=)",_loc2_,_loc1_,16,16,true),new ImageSubstitution(":-)",_loc2_,_loc1_,16,16,true),new ImageSubstitution(":\\",_loc3_,_loc1_,16,16,true),new ImageSubstitution("=\\",_loc3_,_loc1_,16,16,true),new ImageSubstitution(":-\\",_loc3_,_loc1_,16,16,true),new ImageSubstitution("=/",_loc3_,_loc1_,16,16,true),new ImageSubstitution(":-/",_loc3_,_loc1_,16,16,true),new ImageSubstitution(">:|",_loc4_,_loc1_,16,16,true),new ImageSubstitution(">=|",_loc4_,_loc1_,16,16,true),new ImageSubstitution(">:-|",_loc4_,_loc1_,16,16,true),new ImageSubstitution(">:O",_loc5_,_loc1_,16,16,true),new ImageSubstitution(">=O",_loc5_,_loc1_,16,16,true),new ImageSubstitution(">:-O",_loc5_,_loc1_,16,16,true),new ImageSubstitution(">:o",_loc5_,_loc1_,16,16,true),new ImageSubstitution(">=o",_loc5_,_loc1_,16,16,true),new ImageSubstitution(">:-o",_loc5_,_loc1_,16,16,true),new ImageSubstitution(">:0",_loc5_,_loc1_,16,16,true),new ImageSubstitution(">=0",_loc5_,_loc1_,16,16,true),new ImageSubstitution(">:-0",_loc5_,_loc1_,16,16,true),new ImageSubstitution(":|",_loc6_,_loc1_,16,16,true),new ImageSubstitution("=|",_loc6_,_loc1_,16,16,true),new ImageSubstitution(":-|",_loc6_,_loc1_,16,16,true),new ImageSubstitution(":O",_loc7_,_loc1_,16,16,true),new ImageSubstitution("=O",_loc7_,_loc1_,16,16,true),new ImageSubstitution(":-O",_loc7_,_loc1_,16,16,true),new ImageSubstitution(":o",_loc7_,_loc1_,16,16,true),new ImageSubstitution("=o",_loc7_,_loc1_,16,16,true),new ImageSubstitution(":-o",_loc7_,_loc1_,16,16,true),new ImageSubstitution("=0",_loc7_,_loc1_,16,16,true),new ImageSubstitution(":-0",_loc7_,_loc1_,16,16,true),new ImageSubstitution(":(",_loc8_,_loc1_,16,16,true),new ImageSubstitution("=(",_loc8_,_loc1_,16,16,true),new ImageSubstitution(":-(",_loc8_,_loc1_,16,16,true),new ImageSubstitution(":P",_loc9_,_loc1_,16,16,true),new ImageSubstitution("=P",_loc9_,_loc1_,16,16,true),new ImageSubstitution(":-P",_loc9_,_loc1_,16,16,true),new ImageSubstitution(":*",_loc11_,_loc1_,16,16,true),new ImageSubstitution("=*",_loc11_,_loc1_,16,16,true),new ImageSubstitution(":-*",_loc11_,_loc1_,16,16,true),new ImageSubstitution(";)",_loc10_,_loc1_,16,16,true),new ImageSubstitution(";-)",_loc10_,_loc1_,16,16,true)]);
+         var _loc1_:Number = 9;
+         var _loc2_:Number = 4;
+         var _loc3_:String = "smiley_happy";
+         var _loc4_:String = "smiley_hmm";
+         var _loc5_:String = "smiley_mad";
+         var _loc6_:String = "smiley_madah";
+         var _loc7_:String = "smiley_norm";
+         var _loc8_:String = "smiley_oh";
+         var _loc9_:String = "smiley_sad";
+         var _loc10_:String = "smiley_tongue";
+         var _loc11_:String = "smiley_wink";
+         var _loc12_:String = "smiley_kiss";
+         this.map = Vector.<ImageSubstitution>([new ImageSubstitution(":)",_loc3_,_loc1_,16,16,true,_loc2_),new ImageSubstitution("=)",_loc3_,_loc1_,16,16,true,_loc2_),new ImageSubstitution(":-)",_loc3_,_loc1_,16,16,true,_loc2_),new ImageSubstitution(":\\",_loc4_,_loc1_,16,16,true,_loc2_),new ImageSubstitution("=\\",_loc4_,_loc1_,16,16,true,_loc2_),new ImageSubstitution(":-\\",_loc4_,_loc1_,16,16,true,_loc2_),new ImageSubstitution("=/",_loc4_,_loc1_,16,16,true,_loc2_),new ImageSubstitution(":-/",_loc4_,_loc1_,16,16,true,_loc2_),new ImageSubstitution(">:|",_loc5_,_loc1_,16,16,true,_loc2_),new ImageSubstitution(">=|",_loc5_,_loc1_,16,16,true,_loc2_),new ImageSubstitution(">:-|",_loc5_,_loc1_,16,16,true,_loc2_),new ImageSubstitution(">:O",_loc6_,_loc1_,16,16,true,_loc2_),new ImageSubstitution(">=O",_loc6_,_loc1_,16,16,true,_loc2_),new ImageSubstitution(">:-O",_loc6_,_loc1_,16,16,true,_loc2_),new ImageSubstitution(">:o",_loc6_,_loc1_,16,16,true,_loc2_),new ImageSubstitution(">=o",_loc6_,_loc1_,16,16,true,_loc2_),new ImageSubstitution(">:-o",_loc6_,_loc1_,16,16,true,_loc2_),new ImageSubstitution(">:0",_loc6_,_loc1_,16,16,true,_loc2_),new ImageSubstitution(">=0",_loc6_,_loc1_,16,16,true,_loc2_),new ImageSubstitution(">:-0",_loc6_,_loc1_,16,16,true,_loc2_),new ImageSubstitution(":|",_loc7_,_loc1_,16,16,true,_loc2_),new ImageSubstitution("=|",_loc7_,_loc1_,16,16,true,_loc2_),new ImageSubstitution(":-|",_loc7_,_loc1_,16,16,true,_loc2_),new ImageSubstitution(":O",_loc8_,_loc1_,16,16,true,_loc2_),new ImageSubstitution("=O",_loc8_,_loc1_,16,16,true,_loc2_),new ImageSubstitution(":-O",_loc8_,_loc1_,16,16,true,_loc2_),new ImageSubstitution(":o",_loc8_,_loc1_,16,16,true,_loc2_),new ImageSubstitution("=o",_loc8_,_loc1_,16,16,true,_loc2_),new ImageSubstitution(":-o",_loc8_,_loc1_,16,16,true,_loc2_),new ImageSubstitution("=0",_loc8_,_loc1_,16,16,true,_loc2_),new ImageSubstitution(":-0",_loc8_,_loc1_,16,16,true,_loc2_),new ImageSubstitution(":(",_loc9_,_loc1_,16,16,true,_loc2_),new ImageSubstitution("=(",_loc9_,_loc1_,16,16,true,_loc2_),new ImageSubstitution(":-(",_loc9_,_loc1_,16,16,true,_loc2_),new ImageSubstitution(":P",_loc10_,_loc1_,16,16,true,_loc2_),new ImageSubstitution("=P",_loc10_,_loc1_,16,16,true,_loc2_),new ImageSubstitution(":-P",_loc10_,_loc1_,16,16,true,_loc2_),new ImageSubstitution(":*",_loc12_,_loc1_,16,16,true,_loc2_),new ImageSubstitution("=*",_loc12_,_loc1_,16,16,true,_loc2_),new ImageSubstitution(":-*",_loc12_,_loc1_,16,16,true,_loc2_),new ImageSubstitution(";)",_loc11_,_loc1_,16,16,true,_loc2_),new ImageSubstitution(";-)",_loc11_,_loc1_,16,16,true,_loc2_)]);
       }
       
       public function mapText(param1:TextField) : void

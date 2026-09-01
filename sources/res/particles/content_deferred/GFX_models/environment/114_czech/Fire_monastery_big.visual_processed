@@ -21,14 +21,15 @@
 				<material>
 					<identifier>FireBig_Glow1</identifier>
 					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
+					<property>
+						g_enableEnvMultiplier
+						<Bool>true</Bool>
+					</property>
 					<collisionFlags>255</collisionFlags>
 					<materialKind>0</materialKind>
 					<property>
 						lightMultipliers
-						<Vector4>
-							10 0.000000 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>21.978022 0.000000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						doubleSided
@@ -86,12 +87,16 @@
 				<material>
 					<identifier>FireSmall2</identifier>
 					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
+					<property>
+						g_enableEnvMultiplier
+						<Bool>true</Bool>
+					</property>
 					<collisionFlags>255</collisionFlags>
 					<materialKind>0</materialKind>
 					<property>
 						lightMultipliers
 						<Vector4>
-							60 0.000000 0.000000 0.000000
+							131.868132 0.000000 0.000000 0.000000
 							<!--BW_String-->
 						</Vector4>
 					</property>
@@ -155,12 +160,16 @@
 				<material>
 					<identifier>Fire_Slow</identifier>
 					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
+					<property>
+						g_enableEnvMultiplier
+						<Bool>true</Bool>
+					</property>
 					<collisionFlags>255</collisionFlags>
 					<materialKind>0</materialKind>
 					<property>
 						lightMultipliers
 						<Vector4>
-							20 0.000000 0.000000 0.000000
+							43.956044 0.000000 0.000000 0.000000
 							<!--BW_String-->
 						</Vector4>
 					</property>
@@ -232,6 +241,10 @@
 				<material>
 					<identifier>Fire_Fast</identifier>
 					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
+					<property>
+						g_enableEnvMultiplier
+						<Bool>true</Bool>
+					</property>
 					<collisionFlags>255</collisionFlags>
 					<materialKind>0</materialKind>
 					<property>
@@ -240,10 +253,7 @@
 					</property>
 					<property>
 						lightMultipliers
-						<Vector4>
-							10.002 0.000000 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>21.982418 0.000000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						doubleSided

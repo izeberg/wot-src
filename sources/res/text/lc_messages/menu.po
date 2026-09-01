@@ -863,6 +863,9 @@ msgstr "3D风格"
 msgid "carousel_tank_filter/ready"
 msgstr "仅显示主力"
 
+msgid "carousel_tank_filter/scout"
+msgstr "侦察型"
+
 msgid "carousel_tank_filter/sniper"
 msgstr "狙击型"
 
@@ -871,9 +874,6 @@ msgstr "支援型"
 
 msgid "carousel_tank_filter/universal"
 msgstr "全能型"
-
-msgid "carousel_tank_filter/wheeled"
-msgstr "轮式"
 
 msgid "centerIsAvailable"
 msgstr "所有服务器重新可用。"
@@ -4249,6 +4249,9 @@ msgstr ""
 msgid "moduleInfo/autoShootGun"
 msgstr "具有连射系统的火炮"
 
+msgid "moduleInfo/auxiliaryRocketLauncher"
+msgstr "该坦克在炮盾上安装了火箭发射器。激活该能力即可切换至副武器瞄准镜，然后使用开火键发射一枚无控火箭。"
+
 msgid "moduleInfo/closeBtn"
 msgstr "关闭"
 
@@ -4402,6 +4405,9 @@ msgstr "冷却时间"
 msgid "moduleInfo/params/crewRolesFactor"
 msgstr "主要专业和乘员特长"
 
+msgid "moduleInfo/params/criticalHitChance"
+msgstr "造成关键一击几率"
+
 msgid "moduleInfo/params/damage"
 msgstr "损伤"
 
@@ -4432,11 +4438,29 @@ msgstr "中弹起火几率"
 msgid "moduleInfo/params/flyDelayRange"
 msgstr "飞行时间"
 
+msgid "moduleInfo/params/footnote/guaranteedDamage"
+msgstr "击中主装甲时必定造成损伤"
+
+msgid "moduleInfo/params/footnote/maxShotDistance"
+msgstr "* 该火炮炮弹的最大飞行距离"
+
+msgid "moduleInfo/params/footnote/noPiercingDistance"
+msgstr "这种炮弹的穿透力不受距离影响"
+
+msgid "moduleInfo/params/footnote/noPiercingDistance/maxDistance"
+msgstr "，最大飞行距离—400米"
+
+msgid "moduleInfo/params/footnote/penetrationLoss"
+msgstr "该类型炮弹在击穿第一层间隙装甲后，穿透力会开始随距离衰减"
+
+msgid "moduleInfo/params/footnote/piercingDistance"
+msgstr "穿透力受距离影响: %(minDist)s–%(maxDist)s米"
+
+msgid "moduleInfo/params/footnote/screensArmorMultiplier"
+msgstr "该类型炮弹可正常击穿间隙装甲，但之后会损失相当于间隙装甲厚度3倍的穿透力"
+
 msgid "moduleInfo/params/forwardMaxSpeed"
 msgstr "最大速度"
-
-msgid "moduleInfo/params/guaranteedDamage/footnote"
-msgstr "击中主装甲时必定造成损伤"
 
 msgid "moduleInfo/params/hullAndChassisWeight"
 msgstr "重量"
@@ -4468,20 +4492,11 @@ msgstr "生命值"
 msgid "moduleInfo/params/maxShotDistance"
 msgstr "射击范围"
 
-msgid "moduleInfo/params/maxShotDistance/footnote"
-msgstr "* 该火炮炮弹的最大飞行距离"
-
 msgid "moduleInfo/params/maxSteeringLockAngle"
 msgstr "最大车轮转向角度"
 
 msgid "moduleInfo/params/minAvgMutableDamageList"
 msgstr "%(dist)s米平均损伤"
-
-msgid "moduleInfo/params/noPiercingDistance/footnote"
-msgstr "这种炮弹的穿透力不受距离影响"
-
-msgid "moduleInfo/params/noPiercingDistance/footnote/maxDistance"
-msgstr ",最大飞行距离—400米"
 
 msgid "moduleInfo/params/normalizationAngle"
 msgstr "转正效应角度"
@@ -4489,14 +4504,8 @@ msgstr "转正效应角度"
 msgid "moduleInfo/params/penetrationLoss"
 msgstr "穿透力损失"
 
-msgid "moduleInfo/params/penetrationLoss/footnote"
-msgstr "该类型炮弹在击穿第一层间隙装甲后，穿透力会开始随距离衰减"
-
 msgid "moduleInfo/params/piercingDistance"
 msgstr "%(dist)s 米"
-
-msgid "moduleInfo/params/piercingDistance/footnote"
-msgstr "穿透力受距离影响: %(minDist)s–%(maxDist)s米"
 
 msgid "moduleInfo/params/piercingDistanceHeader"
 msgstr "平均穿透力(毫米)—距离"
@@ -4546,9 +4555,6 @@ msgstr "旋转速度"
 msgid "moduleInfo/params/screensArmorMultiplier"
 msgstr "间隙装甲系数"
 
-msgid "moduleInfo/params/screensArmorMultiplier/footnote"
-msgstr "该类型炮弹可正常击穿间隙装甲，但之后会损失相当于间隙装甲厚度3倍的穿透力"
-
 msgid "moduleInfo/params/screensArmorMultiplier/value"
 msgstr "x%(multiplier)s"
 
@@ -4596,6 +4602,9 @@ msgstr "感应式加力装置可提高平均损伤"
 
 msgid "moduleInfo/rocketAcceleration"
 msgstr "火箭助推器可提升坦克的机动性"
+
+msgid "moduleInfo/shellParamsSwitcher"
+msgstr "该坦克的火炮配备特殊装置，可在开火前调整射击诸元。"
 
 msgid "moduleInfo/stagedJetBoosters"
 msgstr "固体燃料助推器，可提高加速能力、机动性和操控性"
@@ -5379,11 +5388,17 @@ msgstr "拥有完美火炮的坦克，要想高效使用它们需要符合特定
 msgid "roleExp/roleDescr/role_HT_universal"
 msgstr "多功能坦克，能够轻松应对任何战斗情况"
 
-msgid "roleExp/roleDescr/role_LT_universal"
-msgstr "快速且机动性高的坦克，可进行侦察，也可以在侧翼进攻时造成损伤"
+msgid "roleExp/roleDescr/role_LT_scout"
+msgstr ""
+"侦察型轻型坦克是为点亮敌人而生的小尺寸灵活坦克。得益于低矮的外形、良好的隐蔽系数，以及出色的机动性和最大速度，它们擅长静默和主动侦察，但生存能力较差，火力也较弱，无法为盟友提供可观的火力支援。"
 
-msgid "roleExp/roleDescr/role_LT_wheeled"
-msgstr "机动性出色的坦克，战斗效率的高低取决于地图和战术"
+msgid "roleExp/roleDescr/role_LT_support"
+msgstr ""
+"支援型轻型坦克凭借高机动性、出色的操控性和强劲的火炮，能够快速变换侧翼，造成大量损伤，随后撤回安全区域。虽然它们在特定情况下可以执行侦察任务，但受限于较大的尺寸和较差的隐蔽能力，其侦察效率不及其他轻型坦克。"
+
+msgid "roleExp/roleDescr/role_LT_universal"
+msgstr ""
+"全能型轻型坦克性能全面，既可以侦察，也能为盟友提供火力支援。虽然它们的侦察效率不如侦察型轻型坦克，火力也不及支援型轻型坦克，但均衡的性能使其能够胜任这两种角色，并轻松适应多种战况。"
 
 msgid "roleExp/roleDescr/role_MT_assault"
 msgstr "拥有不错装甲的坦克，适合近距离作战以及抵御敌方重型坦克"
@@ -5424,11 +5439,14 @@ msgstr "支援型重型坦克"
 msgid "roleExp/roleGroupName/role_HT_universal"
 msgstr "全能型重型坦克"
 
+msgid "roleExp/roleGroupName/role_LT_scout"
+msgstr "侦察型轻型坦克"
+
+msgid "roleExp/roleGroupName/role_LT_support"
+msgstr "支援型轻型坦克"
+
 msgid "roleExp/roleGroupName/role_LT_universal"
 msgstr "全能型轻型坦克"
-
-msgid "roleExp/roleGroupName/role_LT_wheeled"
-msgstr "轮式轻型坦克"
 
 msgid "roleExp/roleGroupName/role_MT_assault"
 msgstr "突击型中型坦克"
@@ -5472,10 +5490,13 @@ msgstr "%(groupName)s"
 msgid "roleExp/roleName/role_HT_universal"
 msgstr "%(groupName)s"
 
-msgid "roleExp/roleName/role_LT_universal"
+msgid "roleExp/roleName/role_LT_scout"
 msgstr "%(groupName)s"
 
-msgid "roleExp/roleName/role_LT_wheeled"
+msgid "roleExp/roleName/role_LT_support"
+msgstr "%(groupName)s"
+
+msgid "roleExp/roleName/role_LT_universal"
 msgstr "%(groupName)s"
 
 msgid "roleExp/roleName/role_MT_assault"
@@ -6133,6 +6154,36 @@ msgstr "装填时间"
 msgid "tank_params/autoShootClipSec"
 msgstr "(弹匣/数量)"
 
+msgid "tank_params/autoreloaderSurgeBoostedReloadTime"
+msgstr "激活特殊机制后装填时间"
+
+msgid "tank_params/autoreloaderSurgeChargeTimeFast"
+msgstr "弹鼓满载时的储能冷却时间"
+
+msgid "tank_params/autoreloaderSurgeChargeTimeSlow"
+msgstr "储能基础冷却时间"
+
+msgid "tank_params/autoreloaderSurgeInitCharges"
+msgstr "战斗开始时的储能次数"
+
+msgid "tank_params/autoreloaderSurgeMaxCharges"
+msgstr "储能次数"
+
+msgid "tank_params/auxiliaryRocketLauncherAvgDamage"
+msgstr "平均损伤(点)"
+
+msgid "tank_params/auxiliaryRocketLauncherDispersion"
+msgstr "100米精度(米)"
+
+msgid "tank_params/auxiliaryRocketLauncherPenetration"
+msgstr "平均穿透力(毫米)"
+
+msgid "tank_params/auxiliaryRocketLauncherReloadTime"
+msgstr "冷却时间(秒)"
+
+msgid "tank_params/auxiliaryRocketLauncherVelocity"
+msgstr "火箭飞行速度(米/秒)"
+
 msgid "tank_params/avgDamage"
 msgstr "平均损伤"
 
@@ -6156,6 +6207,21 @@ msgstr "短弹夹"
 
 msgid "tank_params/burstSec"
 msgstr "(秒/个/发)"
+
+msgid "tank_params/bustleFeedDamagePerShot"
+msgstr "平均损伤(点)"
+
+msgid "tank_params/bustleFeedMaxSpeed"
+msgstr "最大速度(外部供弹模式)(千米/小时)"
+
+msgid "tank_params/bustleFeedRateOfFire"
+msgstr "射速(发/分钟)"
+
+msgid "tank_params/bustleFeedSwitchingToEASMMode"
+msgstr "外部供弹模式激活时间(秒)"
+
+msgid "tank_params/bustleFeedSwitchingToStandardMode"
+msgstr "外部供弹模式关闭时间(秒)"
 
 msgid "tank_params/chargeTime"
 msgstr "齐射准备"
@@ -6249,6 +6315,12 @@ msgstr "发动机功率(马力)(涡轮模式)"
 
 msgid "tank_params/explosionRadius"
 msgstr "损伤范围"
+
+msgid "tank_params/extendedTitle/bustleFeedMaxSpeed"
+msgstr "最大速度(外部供弹模式)(千米/小时)"
+
+msgid "tank_params/extendedTitle/bustleFeedSwitchingToBAF"
+msgstr "外部供弹模式激活时间(秒)"
 
 msgid "tank_params/extendedTitle/dualAccuracyCoolingDelay"
 msgstr "射击后的火炮冷却时间"
@@ -6424,9 +6496,6 @@ msgstr "越野能力"
 msgid "tank_params/passiveCoincideceShootingCharge"
 msgstr "重合式机电瞄准镜充能(%/秒)(交战模式，被动)"
 
-msgid "tank_params/penetrationLoss"
-msgstr "(%/100毫米)"
-
 msgid "tank_params/perActivation"
 msgstr "(每次激活)"
 
@@ -6583,8 +6652,20 @@ msgstr "辅助武器装填时间"
 msgid "tank_params/secondaryTotalBurstSize"
 msgstr "辅助武器炮弹"
 
+msgid "tank_params/shellCalibrationAvgDamage"
+msgstr "调整后炮弹平均损伤(%)"
+
+msgid "tank_params/shellCalibrationAvgPenetration"
+msgstr "调整后炮弹平均穿透力(%)"
+
 msgid "tank_params/shellLoadingTime"
 msgstr "弹链装填时间"
+
+msgid "tank_params/shellParamsSwitchingTime"
+msgstr "切换模式时间"
+
+msgid "tank_params/shellPenetrationLoss"
+msgstr "(%/100毫米)"
 
 msgid "tank_params/shortened/avgPiercingPower"
 msgstr "穿透力:"
@@ -6594,6 +6675,36 @@ msgstr "100米精度"
 
 msgid "tank_params/shotSpeed"
 msgstr "炮弹速度"
+
+msgid "tank_params/sightPointerConsealmentFoliage"
+msgstr "植被后敌方隐蔽系数(静止和移动)"
+
+msgid "tank_params/sightPointerConsealmentMoving"
+msgstr "敌方坦克移动隐蔽系数"
+
+msgid "tank_params/sightPointerDeployTime"
+msgstr "初始冷却时间"
+
+msgid "tank_params/sightPointerDuration"
+msgstr "持续时间"
+
+msgid "tank_params/sightPointerReloadTime"
+msgstr "冷却时间"
+
+msgid "tank_params/sightPointerRotationSpeed"
+msgstr "炮塔旋转速度"
+
+msgid "tank_params/sightPointerSectorAngleEnd"
+msgstr "最终扫描宽度"
+
+msgid "tank_params/sightPointerSectorAngleStart"
+msgstr "初始扫描宽度"
+
+msgid "tank_params/sightPointerSelfSpottingTime"
+msgstr "自身被点亮持续时间"
+
+msgid "tank_params/sightPointerViewRange"
+msgstr "观察范围"
 
 msgid "tank_params/speedLimits"
 msgstr "最大速度/倒车速度"

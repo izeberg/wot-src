@@ -1,0 +1,35 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-16 10:00+0300\n"
+"PO-Revision-Date: 2023-03-16 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "mode/whiteTiger/battlePassTooltip/body"
+msgstr ""
+"完成{whiteSpanish_open}最终兵器:启元{whiteSpanish_close}活动中的特殊任务后，您将获得可用来推动进度的点数。"
+
+msgid "mode/whiteTiger/battlePassTooltip/header"
+msgstr "战斗通行证点数"
+
+msgid "mode/whiteTiger/calendar"
+msgstr "活动将持续%(date)s。"
+
+msgid "mode/whiteTiger/calendarDay"
+msgstr "距活动结束还有%(date)s。"
+
+msgid "mode/whiteTiger/collection"
+msgstr "进度: %(current)/%(total)"
+
+msgid "mode/whiteTiger/description"
+msgstr ""
+"1对6非对称游戏模式。\n"
+"驾驶特殊坦克作战。"
+
+msgid "mode/whiteTiger/tickets"
+msgstr "钥匙: %(count)"

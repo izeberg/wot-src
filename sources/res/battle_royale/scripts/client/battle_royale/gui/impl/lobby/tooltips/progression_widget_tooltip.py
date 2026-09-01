@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from battle_royale.skeletons.game_controller import IBRProgressionOnTokensController
 from battle_royale.gui.impl.lobby.br_helpers.utils import setEventInfo
 from battle_royale.gui.impl.gen.view_models.views.lobby.views.widget.progression_model import ProgressionModel, ProgressionStatus

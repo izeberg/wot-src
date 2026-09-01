@@ -80,7 +80,7 @@
 					</property>
 					<property>
 						g_hdrWhitePoint
-						<Vector3>1.020000 1.060000 1.060000</Vector3>
+						<Vector3>1.000000 1.000000 1.000000</Vector3>
 					</property>
 					<property>
 						g_enableAnimatedSkybox
@@ -96,7 +96,11 @@
 					</property>
 					<property>
 						g_hdrBlackPoint
-						<Vector3>-0.050000 0.000000 0.000000</Vector3>
+						<Vector3>0.000000 0.000000 0.000000</Vector3>
+					</property>
+					<property>
+						g_hdrValueLimit
+						<Float>1000.000000</Float>
 					</property>
 				</material>
 				<groupOrigin>0.000000 0.000000 0.000000</groupOrigin>

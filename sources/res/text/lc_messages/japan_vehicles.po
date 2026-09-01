@@ -13,6 +13,9 @@ msgstr ""
 msgid "AN_GRC_3_8"
 msgstr "AN/GRC-3-8"
 
+msgid "Aichi_Ha_70S"
+msgstr "Ha-70S"
+
 msgid "BMW_IV"
 msgstr "宝马IV型"
 
@@ -249,6 +252,9 @@ msgstr "RSFT"
 
 msgid "Chassis_J52_STK_2"
 msgstr "STK-2"
+
+msgid "Chassis_J53_Ho_Ri_Shugo"
+msgstr "五式4型炮战车"
 
 msgid "Chassis_Ke_Ho"
 msgstr "五式轻战"
@@ -865,6 +871,20 @@ msgstr ""
 msgid "J52_STK_2_short"
 msgstr "STK-2"
 
+msgid "J53_Ho_Ri_Shugo"
+msgstr "五式4型炮战车"
+
+msgid "J53_Ho_Ri_Shugo_descr"
+msgstr ""
+"五式3型炮战车自行反坦克炮的后续研发计划。该设计旨在盟军掌握制空权之下，以及受大规模毁灭性武器影响地区的作战需求。相较于前身，其整体布局、武器配置和防护系统均进行了大幅调整。其中新增了一门用于对抗航空器和步兵的防空炮，以及一具作为辅助武器的无控火箭发射器。该计划最终停留在蓝图阶段。"
+
+msgid "J53_Ho_Ri_Shugo_long_special"
+msgstr ""
+"与五式3型炮战车一样，五式4型炮战车是一辆擅长中远距离作战的自行反坦克炮。其火炮拥有高穿透力的AP炮弹、可观的平均单发损伤和良好的精度。但与前置坦克不同的是，五式4型炮战车还配备了火箭发射器，来造成更多损伤。"
+
+msgid "J53_Ho_Ri_Shugo_short"
+msgstr "五式4型炮战车"
+
 msgid "JAN-GRC-3Z"
 msgstr "JAN/GRC-3Z"
 
@@ -1158,6 +1178,9 @@ msgstr "RSFT"
 msgid "Turret_1_J52_STK_2"
 msgstr "STK-2"
 
+msgid "Turret_1_J53_Ho_Ri_Shugo"
+msgstr "五式4型炮战车"
+
 msgid "Turret_1_Ke_Ho"
 msgstr "五式轻战"
 
@@ -1241,6 +1264,9 @@ msgstr "百式 V-12(水冷型) (新)"
 
 msgid "Type_67_DK"
 msgstr "六七式 DK"
+
+msgid "Type_Tokushu_Ko"
+msgstr "特殊甲型"
 
 msgid "V12_Kawasaki_Type_97"
 msgstr "川97 V-12改"
@@ -1632,6 +1658,12 @@ msgstr "八九式12.7cm炮A型"
 msgid "_127mm_Gun_Type_89_J"
 msgstr "12.7cm 八九式炮"
 
+msgid "_12_cm_Shisei_Funshinhou"
+msgstr "12cm 试制火箭炮"
+
+msgid "_12_cm_Shisei_HE_Funshindan"
+msgstr "12cm 试制HE火箭弹"
+
 msgid "_13.2mm_AP"
 msgstr "九二式"
 
@@ -1760,6 +1792,18 @@ msgstr "三式 (120吨I型)"
 
 msgid "_150mm_Type_96_O_I"
 msgstr "九六式 (120吨I型)"
+
+msgid "_15_5_cm_AP_Shin"
+msgstr "15.5cm AP(新)"
+
+msgid "_15_5_cm_AP_Shin_Toku_Kou"
+msgstr "15.5cm AP特(新)"
+
+msgid "_15_5_cm_Gun_Shin"
+msgstr "15.5cm新炮"
+
+msgid "_15_5_cm_HE_Shin"
+msgstr "15.5cm HE(新)"
 
 msgid "_20mm_AP"
 msgstr "20mm AP"

@@ -43,8 +43,8 @@
 						<node>
 							<identifier>HP_gunFire_L</identifier>
 							<transform>
-								<row0>1.000000 0.000000 0.000000</row0>
-								<row1>0.000000 1.000000 0.000000</row1>
+								<row0>-0.857930 0.513767 0.000000</row0>
+								<row1>-0.513767 -0.857930 -0.000000</row1>
 								<row2>-0.000000 0.000000 1.000000</row2>
 								<row3>0.000000 -0.001488 1.415259</row3>
 							</transform>
@@ -70,8 +70,8 @@
 						<node>
 							<identifier>HP_gunFire_R</identifier>
 							<transform>
-								<row0>1.000000 0.000000 0.000000</row0>
-								<row1>0.000000 1.000000 0.000000</row1>
+								<row0>0.878770 0.477246 0.000000</row0>
+								<row1>-0.477246 0.878770 -0.000000</row1>
 								<row2>-0.000000 -0.000000 1.000000</row2>
 								<row3>0.000000 -0.001488 1.450258</row3>
 							</transform>
@@ -227,8 +227,8 @@
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-0.968518 -0.602329 -1.469804</min>
-		<max>0.970034 0.708420 4.571592</max>
+		<min>-0.968518 -0.602333 -1.469805</min>
+		<max>0.970035 0.708420 4.571592</max>
 	</boundingBox>
 	<geometrySize>662296</geometrySize>
 </root>

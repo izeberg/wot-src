@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>nodes_01</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>Gun</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>G</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 3.000000</row3>
+					</transform>
+					<node>
+						<identifier>Chamber_1</identifier>
+						<transform>
+							<row0>0.500000 0.866025 0.000000</row0>
+							<row1>-0.866025 0.500000 0.000000</row1>
+							<row2>-0.000000 0.000000 1.000000</row2>
+							<row3>0.007695 0.041645 1.410945</row3>
+						</transform>
+						<node>
+							<identifier>breech_block_1</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>-0.000000 0.000000 1.000000</row2>
+								<row3>-0.037842 0.171692 -0.035869</row3>
+							</transform>
+							<node>
+								<identifier>locking_lug_1_L</identifier>
+								<transform>
+									<row0>1.000000 0.000000 0.000000</row0>
+									<row1>0.000000 1.000000 0.000000</row1>
+									<row2>-0.000000 0.000000 1.000000</row2>
+									<row3>-0.024724 -0.000635 0.234414</row3>
+								</transform>
+								<node>
+									<identifier>locking_lug_1_L_BlendBone</identifier>
+									<transform>
+										<row0>0.500000 -0.866025 0.000000</row0>
+										<row1>0.866025 0.500000 0.000000</row1>
+										<row2>0.000000 0.000000 -1.000000</row2>
+										<row3>0.022653 -0.185216 -4.609490</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>locking_lug_1_R</identifier>
+								<transform>
+									<row0>1.000000 0.000000 0.000000</row0>
+									<row1>0.000000 1.000000 0.000000</row1>
+									<row2>-0.000000 0.000000 1.000000</row2>
+									<row3>0.022187 -0.000635 0.234414</row3>
+								</transform>
+								<node>
+									<identifier>locking_lug_1_R_BlendBone</identifier>
+									<transform>
+										<row0>0.500000 -0.866025 0.000000</row0>
+										<row1>0.866025 0.500000 0.000000</row1>
+										<row2>0.000000 0.000000 -1.000000</row2>
+										<row3>-0.024258 -0.185216 -4.609489</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>breech_block_1_BlendBone</identifier>
+								<transform>
+									<row0>0.500000 -0.866025 0.000000</row0>
+									<row1>0.866025 0.500000 0.000000</row1>
+									<row2>0.000000 0.000000 -1.000000</row2>
+									<row3>-0.002071 -0.185851 -4.375076</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>flap_1_L</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>-0.000000 0.000000 1.000000</row2>
+								<row3>-0.112960 0.183392 0.183950</row3>
+							</transform>
+							<node>
+								<identifier>flap_1_L_BlendBone</identifier>
+								<transform>
+									<row0>0.500000 -0.866025 0.000000</row0>
+									<row1>0.866025 0.500000 0.000000</row1>
+									<row2>0.000000 0.000000 -1.000000</row2>
+									<row3>0.073046 -0.197551 -4.594895</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>flap_1_R</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>-0.000000 0.000000 1.000000</row2>
+								<row3>0.032748 0.183283 0.183950</row3>
+							</transform>
+							<node>
+								<identifier>flap_1_R_BlendBone</identifier>
+								<transform>
+									<row0>0.500000 -0.866025 0.000000</row0>
+									<row1>0.866025 0.500000 0.000000</row1>
+									<row2>0.000000 0.000000 -1.000000</row2>
+									<row3>-0.072662 -0.197442 -4.594895</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>locking_1</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>-0.000000 0.000000 1.000000</row2>
+								<row3>0.026153 0.215316 0.308457</row3>
+							</transform>
+							<node>
+								<identifier>locking_1_BlendBone</identifier>
+								<transform>
+									<row0>0.500000 -0.866025 0.000000</row0>
+									<row1>0.866025 0.500000 0.000000</row1>
+									<row2>0.000000 0.000000 -1.000000</row2>
+									<row3>-0.066066 -0.229474 -4.719402</row3>
+								</transform>
+							</node>
+						</node>
+					</node>
+					<node>
+						<identifier>Chamber_3</identifier>
+						<transform>
+							<row0>0.500000 -0.866025 0.000000</row0>
+							<row1>0.866025 0.500000 0.000000</row1>
+							<row2>-0.000000 0.000000 1.000000</row2>
+							<row3>0.046483 0.019966 -0.745818</row3>
+						</transform>
+						<node>
+							<identifier>breech_block_3</identifier>
+							<transform>
+								<row0>1.000000 0.000000 -0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 -0.000000 1.000000</row2>
+								<row3>-0.000122 0.148913 0.000807</row3>
+							</transform>
+							<node>
+								<identifier>locking_lug_3_L</identifier>
+								<transform>
+									<row0>1.000000 0.000000 0.000000</row0>
+									<row1>0.000000 1.000000 0.000000</row1>
+									<row2>0.000000 0.000000 1.000000</row2>
+									<row3>-0.026969 -0.008919 0.234413</row3>
+								</transform>
+								<node>
+									<identifier>locking_lug_3_L_BlendBone</identifier>
+									<transform>
+										<row0>0.500000 0.866025 0.000000</row0>
+										<row1>-0.866025 0.500000 0.000000</row1>
+										<row2>0.000000 0.000000 -1.000000</row2>
+										<row3>0.021141 -0.190232 -2.489402</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>locking_lug_3_R</identifier>
+								<transform>
+									<row0>1.000000 0.000000 0.000000</row0>
+									<row1>0.000000 1.000000 0.000000</row1>
+									<row2>0.000000 0.000000 1.000000</row2>
+									<row3>0.019941 -0.008919 0.234413</row3>
+								</transform>
+								<node>
+									<identifier>locking_lug_3_R_BlendBone</identifier>
+									<transform>
+										<row0>0.500000 0.866025 0.000000</row0>
+										<row1>-0.866025 0.500000 0.000000</row1>
+										<row2>0.000000 0.000000 -1.000000</row2>
+										<row3>-0.025770 -0.190232 -2.489402</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>breech_block_3_BlendBone</identifier>
+								<transform>
+									<row0>0.500000 0.866025 0.000000</row0>
+									<row1>-0.866025 0.500000 0.000000</row1>
+									<row2>0.000000 0.000000 -1.000000</row2>
+									<row3>-0.005829 -0.199152 -2.254988</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>flap_L</identifier>
+							<transform>
+								<row0>1.000000 0.000000 -0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 -0.000000 1.000000</row2>
+								<row3>-0.075750 0.152368 0.220625</row3>
+							</transform>
+							<node>
+								<identifier>flap_L_BlendBone</identifier>
+								<transform>
+									<row0>0.500000 0.866025 0.000000</row0>
+									<row1>-0.866025 0.500000 0.000000</row1>
+									<row2>0.000000 0.000000 -1.000000</row2>
+									<row3>0.069800 -0.202606 -2.474807</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>flap_R</identifier>
+							<transform>
+								<row0>1.000000 0.000000 -0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 -0.000000 1.000000</row2>
+								<row3>0.070173 0.152352 0.220625</row3>
+							</transform>
+							<node>
+								<identifier>flap_R_BlendBone</identifier>
+								<transform>
+									<row0>0.500000 0.866025 0.000000</row0>
+									<row1>-0.866025 0.500000 0.000000</row1>
+									<row2>0.000000 0.000000 -1.000000</row2>
+									<row3>-0.076123 -0.202591 -2.474807</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>locking_3</identifier>
+							<transform>
+								<row0>1.000000 0.000000 -0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 -0.000000 1.000000</row2>
+								<row3>0.061628 0.184253 0.345132</row3>
+							</transform>
+							<node>
+								<identifier>locking_3_BlendBone</identifier>
+								<transform>
+									<row0>0.500000 0.866025 0.000000</row0>
+									<row1>-0.866025 0.500000 0.000000</row1>
+									<row2>0.000000 0.000000 -1.000000</row2>
+									<row3>-0.067578 -0.234491 -2.599314</row3>
+								</transform>
+							</node>
+						</node>
+					</node>
+					<node>
+						<identifier>HP_gunEffect</identifier>
+						<transform>
+							<row0>0.500000 0.866025 0.000000</row0>
+							<row1>0.866025 -0.500000 -0.000000</row1>
+							<row2>-0.000000 0.000000 -1.000000</row2>
+							<row3>-0.170996 0.099252 1.561454</row3>
+						</transform>
+					</node>
+					<node>
+						<identifier>HP_gunEffect_02</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 -1.000000 -0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>0.007716 0.158352 0.502793</row3>
+						</transform>
+					</node>
+					<node>
+						<identifier>HP_gunEffect_03</identifier>
+						<transform>
+							<row0>0.500000 -0.866025 0.000000</row0>
+							<row1>-0.866025 -0.500000 -0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>0.191199 0.104073 -0.558634</row3>
+						</transform>
+					</node>
+					<node>
+						<identifier>HP_gunFire</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>-0.000000 0.000000 1.000000</row2>
+							<row3>0.002912 -0.000912 2.960227</row3>
+						</transform>
+					</node>
+					<node>
+						<identifier>breech_block_2</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>-0.000000 0.000000 1.000000</row2>
+							<row3>0.002912 0.192640 0.349669</row3>
+						</transform>
+						<node>
+							<identifier>locking_lug_2_L</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>-0.000000 -0.000000 1.000000</row2>
+								<row3>-0.023455 -0.005426 0.201161</row3>
+							</transform>
+							<node>
+								<identifier>locking_lug_2_L_BlendBone</identifier>
+								<transform>
+									<row0>1.000000 0.000000 0.000000</row0>
+									<row1>0.000000 1.000000 0.000000</row1>
+									<row2>0.000000 0.000000 -1.000000</row2>
+									<row3>0.020543 -0.187214 -3.550829</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>locking_lug_2_R</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>-0.000000 -0.000000 1.000000</row2>
+								<row3>0.023455 -0.005426 0.201161</row3>
+							</transform>
+							<node>
+								<identifier>locking_lug_2_R_BlendBone</identifier>
+								<transform>
+									<row0>1.000000 0.000000 0.000000</row0>
+									<row1>0.000000 1.000000 0.000000</row1>
+									<row2>0.000000 0.000000 -1.000000</row2>
+									<row3>-0.026367 -0.187214 -3.550829</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>breech_block_2_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>-0.002912 -0.192640 -3.349669</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>flap_2_L</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>-0.000000 0.000000 1.000000</row2>
+							<row3>-0.070036 0.200102 0.569489</row3>
+						</transform>
+						<node>
+							<identifier>flap_2_L_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>0.070036 -0.200102 -3.569489</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>flap_2_R</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>-0.000000 0.000000 1.000000</row2>
+							<row3>0.075861 0.200102 0.569489</row3>
+						</transform>
+						<node>
+							<identifier>flap_2_R_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>-0.075861 -0.200102 -3.569489</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>locking_2</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>-0.000000 0.000000 1.000000</row2>
+							<row3>0.068176 0.231473 0.660742</row3>
+						</transform>
+						<node>
+							<identifier>locking_2_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>-0.068176 -0.231473 -3.660742</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>G_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>-0.000000 0.000000 -3.000000</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Gun_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>static_joint</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.002456 0.412089 -0.464857</row3>
+				</transform>
+				<node>
+					<identifier>static_joint_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-0.002456 -0.412089 0.464857</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>Gun_BlendBone</node>
+		<node>static_joint_BlendBone</node>
+		<node>G_BlendBone</node>
+		<geometry>
+			<vertices>gun_01_Shape.vertices</vertices>
+			<primitive>gun_01_Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_guns_skinned</identifier>
+					<property>
+						g_detailPowerGloss
+						<Float>
+							0.35
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_maskBias
+						<Float>
+							0.18
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
+					</property>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/german/G198_Kampfpanzer_67/Kampfpanzer_67_guns_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/german/G198_Kampfpanzer_67/Kampfpanzer_67_guns_ANM.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/german/G198_Kampfpanzer_67/Kampfpanzer_67_guns_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/german/G198_Kampfpanzer_67/Kampfpanzer_67_guns_AO.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/german/G198_Kampfpanzer_67/Kampfpanzer_67_guns_ID.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.001218 0.192169 -3.045625</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>tank_guns_insignia_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						colorIdMap
+						<Texture>vehicles/german/G198_Kampfpanzer_67/Kampfpanzer_67_guns_ID.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/german/G198_Kampfpanzer_67/Kampfpanzer_67_guns_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/german/G198_Kampfpanzer_67/Kampfpanzer_67_guns_AO.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/german/G198_Kampfpanzer_67/Kampfpanzer_67_guns_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/german/G198_Kampfpanzer_67/Kampfpanzer_67_guns_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.005376 -0.000878 -5.192826</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-1.058205 -0.396448 -0.537100</min>
+		<max>1.060640 0.780787 6.628492</max>
+	</boundingBox>
+	<geometrySize>131800</geometrySize>
+</root>

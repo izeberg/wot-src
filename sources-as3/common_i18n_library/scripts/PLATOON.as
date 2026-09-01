@@ -45,6 +45,8 @@ package
       
       public static const HEADERBUTTON_TOOLTIPS_COMP7SQUAD_BODY:String = "#platoon:headerButton/tooltips/comp7Squad/body";
       
+      public static const HEADERBUTTON_TOOLTIPS_COMP7SQUAD_SUPERSQUADDISABLED_BODY:String = "#platoon:headerButton/tooltips/comp7Squad/superSquadDisabled/body";
+      
       public static const HEADERBUTTON_TOOLTIPS_COMP7RESTRICTION_HEADER:String = "#platoon:headerButton/tooltips/comp7Restriction/header";
       
       public static const HEADERBUTTON_TOOLTIPS_COMP7RESTRICTION_BODY:String = "#platoon:headerButton/tooltips/comp7Restriction/body";
@@ -52,6 +54,8 @@ package
       public static const HEADERBUTTON_TOOLTIPS_COMP7NOSUITABLEVEHICLES_BODY:String = "#platoon:headerButton/tooltips/comp7NoSuitableVehicles/body";
       
       public static const HEADERBUTTON_TOOLTIPS_COMP7QUALIFICATIONSQUAD_BODY:String = "#platoon:headerButton/tooltips/comp7QualificationSquad/body";
+      
+      public static const HEADERBUTTON_TOOLTIPS_COMP7QUALIFICATIONSQUAD_SUPERSQUADDISABLED_BODY:String = "#platoon:headerButton/tooltips/comp7QualificationSquad/superSquadDisabled/body";
       
       public static const HEADERBUTTON_TOOLTIPS_COMP7BANISSET_BODY:String = "#platoon:headerButton/tooltips/comp7BanIsSet/body";
       
@@ -202,10 +206,6 @@ package
       public static const MEMBERS_FOOTER_VEHICLESGROUPISFULL:String = "#platoon:members/footer/vehiclesGroupIsFull";
       
       public static const MEMBERS_FOOTER_VEHICLESGROUPISFULL_SCOUT:String = "#platoon:members/footer/vehiclesGroupIsFull/scout";
-      
-      public static const MEMBERS_FOOTER_VEHICLESGROUPISFULL_ROLE_LT_UNIVERSAL:String = "#platoon:members/footer/vehiclesGroupIsFull/role_LT_universal";
-      
-      public static const MEMBERS_FOOTER_VEHICLESGROUPISFULL_ROLE_LT_WHEELED:String = "#platoon:members/footer/vehiclesGroupIsFull/role_LT_wheeled";
       
       public static const MEMBERS_FOOTER_VEHICLESGROUPISFULL_MEDIUMTANK:String = "#platoon:members/footer/vehiclesGroupIsFull/mediumTank";
       

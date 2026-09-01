@@ -1,4 +1,6 @@
+from __future__ import absolute_import
 import typing
+from future.utils import viewvalues
 from helpers import fixed_dict
 from script_component.DynamicScriptComponent import DynamicScriptComponent
 from view_state_component import ViewStateComponentAdaptor
@@ -10,7 +12,7 @@ class VehicleHealController(DynamicScriptComponent):
         self.__adaptors = {}
 
     def onDestroy(self):
-        for adaptor in self.__adaptors.itervalues():
+        for adaptor in viewvalues(self.__adaptors):
             adaptor.destroy()
 
         self.__adaptors.clear()

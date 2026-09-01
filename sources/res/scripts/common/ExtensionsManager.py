@@ -20,7 +20,7 @@ def makeExtensionPath(extension, path):
 
 
 Extension = namedtuple('Extension', ('path', 'name', 'isEnabled', 'dirName', 'personality',
-                                     'editorPersonality'))
+                                     'commonPersonality', 'editorPersonality'))
 
 class ExtensionsManager(object):
     __slots__ = ('_extensions', )
@@ -71,7 +71,7 @@ class ExtensionsManager(object):
         if not section:
             return None
         else:
-            return Extension(root + '/', section.readString('FeatureName'), section.readBool('IsEnabled'), root.split('/')[(-1)], section.readString('Personality'), section.readString('EditorPersonality'))
+            return Extension(root + '/', section.readString('FeatureName'), section.readBool('IsEnabled'), root.split('/')[(-1)], section.readString('Personality'), section.readString('CommonPersonality'), section.readString('EditorPersonality'))
 
     @staticmethod
     def _getExtensionsDirList():

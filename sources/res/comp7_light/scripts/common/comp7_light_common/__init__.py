@@ -1,10 +1,13 @@
+from __future__ import absolute_import
 import constants, comp7_light_constants
+from comp7_core_constants import injectCommonConstants
 from constants_utils import addArenaGuiTypesFromExtension, addPrebattleTypesFromExtension, addRosterTypes, addInvitationTypes, addClientUnitCmd
 
 def injectConsts(personality):
     addArenaGuiTypesFromExtension(comp7_light_constants.ARENA_GUI_TYPE, personality)
     addPrebattleTypesFromExtension(comp7_light_constants.PREBATTLE_TYPE, personality)
     constants.INBATTLE_CONFIGS.extend(comp7_light_constants.COMP7_LIGHT_INBATTLE_CONFIGS)
+    injectCommonConstants(personality)
 
 
 def injectSquadConsts(personality):

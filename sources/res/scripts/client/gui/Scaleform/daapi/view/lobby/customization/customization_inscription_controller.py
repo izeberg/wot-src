@@ -179,6 +179,10 @@ class CustomizationInscriptionController(CustomizationInscriptionControllerMeta,
         if not self.visible:
             return
         else:
+            if self._currentNumber == EMPTY_PERSONAL_NUMBER:
+                self.hide()
+                self.__ctx.mode.removeItem(self.__slotId)
+                return
             newNumber = formatPersonalNumber(self._currentNumber, self._digitsCount)
             if isPersonalNumberAllowed(newNumber):
                 self._currentNumber = newNumber

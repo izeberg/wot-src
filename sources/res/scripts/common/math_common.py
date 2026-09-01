@@ -51,5 +51,4 @@ def decimal_round(number, precision=0, rounding=ROUND_HALF_UP):
     rounded = decimal_for_processing.quantize(Decimal(10) ** (-precision), rounding=rounding)
     if precision == 0:
         return int(rounded)
-    else:
-        return float(rounded)
+    return float(rounded)

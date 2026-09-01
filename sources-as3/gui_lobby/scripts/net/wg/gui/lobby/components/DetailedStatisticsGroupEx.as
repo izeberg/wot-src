@@ -28,7 +28,7 @@ package net.wg.gui.lobby.components
          var _loc1_:int = 0;
          var _loc2_:int = 0;
          super.commitProperties();
-         if(isInvalid(UNIT_RENDERER_INVALID,InvalidationType.DATA))
+         if(isInvalidTypes(UNIT_RENDERER_INVALID,InvalidationType.DATA))
          {
             _loc1_ = numRenderers();
             _loc2_ = 0;

@@ -1,9 +1,8 @@
-from abc import ABCMeta
+from __future__ import absolute_import
 from helpers import time_utils
 from gui.impl.gen.view_models.views.lobby.user_missions.constants.event_banner_state import EventBannerState
 
 class BaseEventBanner(object):
-    __metaclass__ = ABCMeta
     NAME = ''
 
     def __init__(self):

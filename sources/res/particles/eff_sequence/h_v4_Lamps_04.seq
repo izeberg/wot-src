@@ -12,51 +12,51 @@
 			<property>selfIllumination</property>
 			<frame>
 				<startTime>0.000000</startTime>
-				<value>10.000000</value>
-				<inTangent>-6.428571</inTangent>
-				<outTangent>-6.428571</outTangent>
+				<value>20.819231</value>
+				<inTangent>-6.428588</inTangent>
+				<outTangent>-6.428588</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 			<frame>
 				<startTime>0.233333</startTime>
-				<value>8.500000</value>
-				<inTangent>0.000000</inTangent>
-				<outTangent>0.000000</outTangent>
+				<value>19.319229</value>
+				<inTangent>-0.000013</inTangent>
+				<outTangent>-0.000013</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 			<frame>
 				<startTime>0.466667</startTime>
-				<value>10.000000</value>
-				<inTangent>0.401785</inTangent>
-				<outTangent>0.401785</outTangent>
+				<value>20.819231</value>
+				<inTangent>0.401770</inTangent>
+				<outTangent>0.401770</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 			<frame>
 				<startTime>0.733333</startTime>
-				<value>8.500000</value>
+				<value>19.319229</value>
+				<inTangent>-0.000011</inTangent>
+				<outTangent>-0.000011</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.000000</startTime>
+				<value>20.819231</value>
 				<inTangent>0.000000</inTangent>
 				<outTangent>0.000000</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 			<frame>
-				<startTime>1.000000</startTime>
-				<value>10.000000</value>
-				<inTangent>0.000001</inTangent>
-				<outTangent>0.000001</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
 				<startTime>1.266667</startTime>
-				<value>8.500000</value>
-				<inTangent>0.401787</inTangent>
-				<outTangent>0.401787</outTangent>
+				<value>19.319229</value>
+				<inTangent>0.401794</inTangent>
+				<outTangent>0.401794</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 			<frame>
 				<startTime>1.500000</startTime>
-				<value>10.000000</value>
-				<inTangent>6.428571</inTangent>
-				<outTangent>6.428571</outTangent>
+				<value>20.819231</value>
+				<inTangent>6.428589</inTangent>
+				<outTangent>6.428589</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 		</track>

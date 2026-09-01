@@ -24,12 +24,16 @@
 					<materialKind>0</materialKind>
 					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
 					<property>
+						g_enableEnvMultiplier
+						<Bool>true</Bool>
+					</property>
+					<property>
 						diffuseUVSpeedAlphaOffset
 						<Vector4>0.010000 0.050000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						lightMultipliers
-						<Vector4>1.000000 0.100000 10.000000 0.000000</Vector4>
+						<Vector4>1.030928 0.100000 10.000000 0.000000</Vector4>
 					</property>
 					<property>
 						alphaFadeAmountFresnel

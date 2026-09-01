@@ -2415,6 +2415,7 @@
 						<collisionModelClient>vehicles/czech/Cz30_TBT/collision_client/Gun_02.model</collisionModelClient>
 					</hitTester>
 					<edgeByVisualModel>false</edgeByVisualModel>
+					<muzzleBrake>RADIAL</muzzleBrake>
 					<camouflage>
 						<density>
 							106.102 109.339

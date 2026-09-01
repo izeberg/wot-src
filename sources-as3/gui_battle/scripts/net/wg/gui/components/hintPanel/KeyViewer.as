@@ -80,7 +80,8 @@ package net.wg.gui.components.hintPanel
       
       public function setKey(param1:IngameDetailsKeyVO) : void
       {
-         var _loc2_:Boolean = BUTTONS_WITH_CUSTOM_ICON.indexOf(param1.vKey) >= 0;
+         var _loc2_:Boolean = false;
+         _loc2_ = BUTTONS_WITH_CUSTOM_ICON.indexOf(param1.vKey) >= 0;
          this.customButtonIcon.visible = _loc2_;
          this.keyTF.visible = !_loc2_;
          this.buttonBgMc.visible = !_loc2_ && !param1.isLong;

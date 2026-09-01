@@ -56,6 +56,7 @@ class IngameSoundNotifications(CallbackDelayer, TimeDeltaMeter):
         self._vsePlan = VSE.Plan()
         self._vsePlan.load(planPath, '', 'CLIENT')
         self.__soundNotificationsContext = None
+        self.__delayedCallbacks = set()
         return
 
     def start(self):
@@ -67,6 +68,16 @@ class IngameSoundNotifications(CallbackDelayer, TimeDeltaMeter):
         self._vsePlan.start()
         self.measureDeltaTime()
         self.delayCallback(self.__TICK_DELAY, self.__tick)
+        BattleReplay.g_replayEvents.onTimeWarpStart += self.__onTimeWarpStart
+
+    def __onTimeWarpStart(self):
+        self.__resetDelayedCallbacks()
+
+    def __resetDelayedCallbacks(self):
+        for delayedCallbackID in self.__delayedCallbacks:
+            BigWorld.cancelCallback(delayedCallbackID)
+
+        self.__delayedCallbacks.clear()
 
     def destroy(self):
         CallbackDelayer.destroy(self)
@@ -84,6 +95,8 @@ class IngameSoundNotifications(CallbackDelayer, TimeDeltaMeter):
         self.__circumstancesWeights = {}
         self.__circumstancesGroupsWeights = {}
         self.__remappedNotifications = {}
+        self.__resetDelayedCallbacks()
+        BattleReplay.g_replayEvents.onTimeWarpStart -= self.__onTimeWarpStart
         return
 
     def isPlaying(self, eventName):
@@ -123,7 +136,10 @@ class IngameSoundNotifications(CallbackDelayer, TimeDeltaMeter):
                     LOG_VO(('Request "{}" is rejected. Reason: {}').format(vo, 'queue is not specified' if isQueueSpecified else 'voices are disabled'))
                 return
             predelay = float(event['predelay']) if 'predelay' in event else 0
-            BigWorld.callback(predelay, partial(self.__playDelayed, eventName, vehicleID, checkFn, position, boundVehicleID))
+            callbackIDHolder = []
+            callbackID = BigWorld.callback(predelay, partial(self.__playDelayed, eventName, vehicleID, checkFn, position, boundVehicleID, callbackIDHolder))
+            callbackIDHolder.append(callbackID)
+            self.__delayedCallbacks.add(callbackID)
             return
 
     @staticmethod
@@ -139,7 +155,8 @@ class IngameSoundNotifications(CallbackDelayer, TimeDeltaMeter):
 
         return getattr(python_module, class_name)
 
-    def __playDelayed(self, eventName, vehicleID=None, checkFn=None, position=None, boundVehicleID=None):
+    def __playDelayed(self, eventName, vehicleID=None, checkFn=None, position=None, boundVehicleID=None, callbackIDHolder=None):
+        self.__delayedCallbacks.discard(callbackIDHolder[0])
         event = self.__events.get(eventName, None)
         queueNum = int(event['queue'])
         priority = int(self.getEventInfo(eventName, 'priority'))

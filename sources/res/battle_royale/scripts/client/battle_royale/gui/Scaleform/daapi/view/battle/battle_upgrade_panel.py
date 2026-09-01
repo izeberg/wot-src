@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, weakref, BigWorld
 from ReplayEvents import g_replayEvents
 from battle_royale.gui.battle_control.controllers.notification_manager import INotificationManagerListener
@@ -108,11 +109,11 @@ class BattleUpgradePanel(BattleUpgradePanelMeta, IArenaVehiclesController, IProg
             self.as_showSelectAnimS(self.__upgrades.index(newModuleIntCD))
         self.__updateUpgrades()
 
-    def setVehicleChangeResponse(self, itemCD, success):
+    def setVehicleChangeResponse(self, intCD, success):
         if success:
             progressionCtrl = self.__getProgressionCtrl()
-            item = progressionCtrl.getModule(itemCD)
-            if isItemVehicleHull(itemCD, self._getVehicle()):
+            item = progressionCtrl.getModule(intCD)
+            if isItemVehicleHull(intCD, self._getVehicle()):
                 moduleKey = R.strings.battle_royale.player_messages.moduleType.hull
             else:
                 moduleKey = R.strings.battle_royale.player_messages.moduleType.dyn(item.itemTypeName, None)
@@ -205,7 +206,7 @@ class BattleUpgradePanel(BattleUpgradePanelMeta, IArenaVehiclesController, IProg
         battleVehicle = BigWorld.player().getVehicleAttached()
         guiVehicle = self._getVehicle()
         if not guiVehicle or not battleVehicle:
-            return
+            return None
         currentLevel = self.__getCurrentLvl()
         nextVehicleLevel = currentLevel + 1
         upgrades = []

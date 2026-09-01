@@ -18,10 +18,10 @@ msgid "error/button"
 msgstr "收到！"
 
 msgid "error/description"
-msgstr "信息暂时不可用。我们对造成的不便表示歉意。请稍后重试。"
+msgstr "我们对造成的不便深表歉意。请稍后再试。"
 
 msgid "error/title"
-msgstr "无法进行奖励选择"
+msgstr "该页面暂时不可用"
 
 msgid "footer/closeBtn/label"
 msgstr "稍后选择"
@@ -33,7 +33,7 @@ msgstr[1] "从所提供的类别中选择奖励。"
 msgstr[2] "从所提供的类别中选择奖励。"
 
 msgid "footer/okBtn/label"
-msgstr "领取"
+msgstr "领取奖励"
 
 msgid "footer/rewardsSelected"
 msgstr "已选择奖励:"
@@ -54,7 +54,7 @@ msgid "reward/state_received"
 msgstr "已获得"
 
 msgid "reward/tooltip/state_limited/body"
-msgstr "该类别中的所选物品已达到上限。您可以取消一个所选物品并添加另一个物品。"
+msgstr "您已达到该类别允许选择的物品数量上限。请取消选择一件物品后再选择其他物品。"
 
 msgid "reward/tooltip/state_limited/header"
 msgstr "已达到上限"
@@ -107,6 +107,9 @@ msgstr "标准配件"
 
 msgid "tabs/items/trophy"
 msgstr "赏金配件"
+
+msgid "tooltips/footer/body"
+msgstr "选择要领取的奖励"
 
 msgid "tooltips/selectedRewards/description"
 msgstr "点击领取按钮即可获得所选奖励。"

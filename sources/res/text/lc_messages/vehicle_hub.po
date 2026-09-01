@@ -42,6 +42,9 @@ msgstr "这门火炮可持续射击而无需重新装填。每次开火均会产
 msgid "abilities/common/description/rocketAcceleration"
 msgstr "提高发动机功率和最大速度，从而实现在战场上快速移动。激活后，火箭助推器会降低操控性，并且无法手动关闭。"
 
+msgid "abilities/common/description/shellParamsSwitcher"
+msgstr "该坦克的火炮配备特殊装置，可在开火前调整射击诸元。不同炮弹的参数会根据所选模式而变化，每种模式都能让您快速适应不同的战况。"
+
 msgid "abilities/common/description/siegeMode"
 msgstr "激活时，该特殊模式可强化和/或改变特定战斗参数。最适合在到达点位并准备与敌人交战时激活。"
 
@@ -91,6 +94,9 @@ msgstr "速射过热调节自动炮"
 msgid "abilities/common/name/rocketAcceleration"
 msgstr "火箭助推器"
 
+msgid "abilities/common/name/shellParamsSwitcher"
+msgstr "校炮系统"
+
 msgid "abilities/common/name/siegeMode"
 msgstr "攻城模式"
 
@@ -111,10 +117,21 @@ msgstr ""
 "保持静止不动或缓慢移动时可提高精度等级，从而提高下一次射击的命中率。\n"
 "达到最高精度等级时，您将获得相当不俗的火炮手感，即使在移动时，或炮塔/车体旋转时，炮弹散布范围也会有所降低。"
 
+msgid "abilities/special/description/autoreloaderSurge"
+msgstr ""
+"该机构可立刻将炮弹装填时间缩短至一个较短的固定值。每次使用会为每发炮弹消耗1次储能次数，并且储能次数会随时间补充——弹鼓装满时补充速度更快。战斗开始时提供固定数量的储能次数。"
+" "
+
+msgid "abilities/special/description/auxiliaryRocketLauncher"
+msgstr "该坦克在炮盾上安装了火箭发射器。激活该能力即可切换至副武器瞄准镜，然后使用开火键发射一枚无控火箭。"
+
 msgid "abilities/special/description/battleFury"
 msgstr ""
 "每次击中敌方坦克时，您将获得装填效率加成，短暂提高火炮装填速度。每命中一次累积一个等级。\n"
 "通过射击击毁一辆敌方坦克则能额外获得装填效率等级。"
+
+msgid "abilities/special/description/bustleFeed"
+msgstr "该坦克的外部供弹模块使其能够射击威力强劲的高装药定装弹，造成更高损伤。激活时，该模块也会降低机动性和射速。"
 
 msgid "abilities/special/description/chargeShot"
 msgstr ""
@@ -161,6 +178,17 @@ msgstr "该系统会随时间累积能量，能量越高，损伤加成越大。
 msgid "abilities/special/description/rechargeableNitro"
 msgstr "紧急时刻，随时激活液体燃料助推器，瞬间提高速度。助推器会升温，必须冷却后才能再次使用。超过临界热量等级将会暂时完全关闭助推器。"
 
+msgid "abilities/special/description/shellCalibration"
+msgstr ""
+"炮弹命中可见的敌方坦克后，下一发炮弹的引信装定器将进行调整。如果前一发炮弹击穿敌方装甲，下一发的平均损伤则会提高；如果前一发未能击穿，下一发的平均穿透力则会提高。"
+
+msgid "abilities/special/description/shellParamsSwitcher"
+msgstr "该坦克的火炮配备特殊装置，可在开火前调整射击诸元。不同炮弹的参数会根据所选模式而变化，每种模式都能让您快速适应不同的战况。"
+
+msgid "abilities/special/description/sightPointer"
+msgstr ""
+"激活后，该装置会扫描自身坦克前方的扇区，侦测隐蔽目标，随后进入冷却时间。如果该装置发现了未被点亮的敌方坦克，自身坦克也会立即被点亮。短暂延迟后，您可以手动停止扫描。"
+
 msgid "abilities/special/description/stagedJetBoosters"
 msgstr "固体燃料助推器可在数秒内提高加速能力、机动性和操控性。左右两侧的助推器可独立工作，助您更快地旋转车体，同时不限制倒车能力。"
 
@@ -190,8 +218,17 @@ msgstr ""
 msgid "abilities/special/name/accuracyStacks"
 msgstr "模拟弹道计算装置"
 
+msgid "abilities/special/name/autoreloaderSurge"
+msgstr "强制装填机构"
+
+msgid "abilities/special/name/auxiliaryRocketLauncher"
+msgstr "同轴火箭发射器"
+
 msgid "abilities/special/name/battleFury"
 msgstr "半自动弹药架"
+
+msgid "abilities/special/name/bustleFeed"
+msgstr "外部供弹模式"
 
 msgid "abilities/special/name/chargeShot"
 msgstr "热能弹道超载"
@@ -232,6 +269,15 @@ msgstr "感应式加力装置"
 msgid "abilities/special/name/rechargeableNitro"
 msgstr "液体燃料助推器"
 
+msgid "abilities/special/name/shellCalibration"
+msgstr "可调式引信装定器"
+
+msgid "abilities/special/name/shellParamsSwitcher"
+msgstr "校炮系统"
+
+msgid "abilities/special/name/sightPointer"
+msgstr "红外搜索与跟踪系统"
+
 msgid "abilities/special/name/stagedJetBoosters"
 msgstr "顺序火箭助推器"
 
@@ -256,8 +302,17 @@ msgstr "高压涡轮增压"
 msgid "abilities/special/shortDescription/accuracyStacks"
 msgstr "强化下一次射击的精度，在完全校准时具有相当不俗的稳定性。"
 
+msgid "abilities/special/shortDescription/autoreloaderSurge"
+msgstr "立即将炮弹装填时间缩短至一个较短的固定值。"
+
+msgid "abilities/special/shortDescription/auxiliaryRocketLauncher"
+msgstr "可使用独立于主炮的同轴发射器发射一枚无控火箭。"
+
 msgid "abilities/special/shortDescription/battleFury"
 msgstr "每次击中敌方坦克，均可在短时间内提高火炮装填速度。"
+
+msgid "abilities/special/shortDescription/bustleFeed"
+msgstr "以牺牲机动性和射速为代价，射击高损伤炮弹。"
 
 msgid "abilities/special/shortDescription/chargeShot"
 msgstr "提高热量等级，使下一次射击对敌方坦克造成更高损伤。"
@@ -298,6 +353,15 @@ msgstr "系统通过累积能量来提高损伤。能量越高，造成的损伤
 msgid "abilities/special/shortDescription/rechargeableNitro"
 msgstr "助推器可随时激活，能提供强劲的速度爆发。"
 
+msgid "abilities/special/shortDescription/shellCalibration"
+msgstr "击中一辆可见的敌方坦克，可提高下一发炮弹的平均损伤或平均穿透力。"
+
+msgid "abilities/special/shortDescription/shellParamsSwitcher"
+msgstr "该火炮配备特殊装置，可在开火前调整射击诸元。"
+
+msgid "abilities/special/shortDescription/sightPointer"
+msgstr "提高观察范围，探测狭窄扇形区域内移动中或植被后的目标。"
+
 msgid "abilities/special/shortDescription/stagedJetBoosters"
 msgstr "固体燃料助推器，可提高加速能力、机动性和操控性。"
 
@@ -323,9 +387,15 @@ msgid "characteristics/abilities/special/description/accuracyStacks"
 msgstr ""
 "当坦克静止不动或以低于特定速度移动时，模拟弹道计算装置将启动，并累积精度等级，从而提高下一次射击的命中率。若超过速度限制，精度累积进度将暂停，直至降低速度。当达到最大精度等级时，坦克将获得相当不俗的火炮稳定性，移动时及炮塔/车体旋转时的炮弹散布范围有所降低。该效果会在开火后被移除。"
 
+msgid "characteristics/abilities/special/description/auxiliaryRocketLauncher"
+msgstr "该坦克在炮盾上安装了火箭发射器。激活该能力即可切换至副武器瞄准镜，然后使用开火键发射一枚无控火箭。"
+
 msgid "characteristics/abilities/special/description/battleFury"
 msgstr ""
 "每次击中可见的对手后，您将获得装填效率等级，短暂提高火炮的装填速度。每命中一次累积一个等级。通过射击击毁敌方坦克，可获得额外的装填效率等级。"
+
+msgid "characteristics/abilities/special/description/bustleFeed"
+msgstr "该坦克的外部供弹模块使其能够射击威力强劲的高装药定装弹，造成更高损伤。激活时，该模块也会降低机动性和射速。"
 
 msgid "characteristics/abilities/special/description/chargeShot"
 msgstr ""
@@ -372,6 +442,17 @@ msgid "characteristics/abilities/special/description/rechargeableNitro"
 msgstr ""
 "液体燃料助推器可瞬间提高发动机功率，让您可以快速占据有利点位，取得优势——但会降低坦克的倒车和旋转速度。助推器可随时开关，但达到再激活限制后除外。激活时会升温，需冷却后才能再次使用，意味着它们无法持续开启——超过临界热量等级将会暂时完全关闭助推器。谨慎规划行动，避免陷入被动。"
 
+msgid "characteristics/abilities/special/description/shellCalibration"
+msgstr ""
+"炮弹命中可见的敌方坦克后，下一发炮弹的引信装定器将进行调整。如果前一发炮弹击穿敌方装甲，下一发的平均损伤则会提高；如果前一发未能击穿，下一发的平均穿透力则会提高。"
+
+msgid "characteristics/abilities/special/description/shellParamsSwitcher"
+msgstr "该坦克的火炮配备特殊装置，可在开火前调整射击诸元。弹药界面会显示切换射击模式后受到影响的参数。"
+
+msgid "characteristics/abilities/special/description/sightPointer"
+msgstr ""
+"一种先进的观察镜，可提高自身坦克的观察范围，并增强对移动中和隐藏在植被后方坦克的侦测能力。激活后，它会扫描自身坦克前方的一个狭窄扇区，侦测隐蔽目标，随后进入冷却时间。如果该装置发现了未被点亮的敌方坦克，自身坦克也会立即被点亮。短暂延迟后，您可以手动停止扫描。"
+
 msgid "characteristics/abilities/special/description/stagedJetBoosters"
 msgstr ""
 "固体燃料助推器可在数秒内提高坦克的加速能力、机动性和操控性。与普通火箭推进器不同，左右两侧的助推器可独立工作，助您更快地旋转车体，同时不限制倒车能力。每场战斗中可多次使用，但重新激活前需要冷却。"
@@ -402,6 +483,18 @@ msgstr ""
 
 msgid "characteristics/abilities/special/notes"
 msgstr "显示的所有数值均为该坦克能达到的参数上限。配件、指令和给养可能会影响这些数值，但此处未反映相关变化。"
+
+msgid "characteristics/shellParamsSwitcher/ARMOR_PIERCING"
+msgstr "可校炮AP炮弹"
+
+msgid "characteristics/shellParamsSwitcher/ARMOR_PIERCING_CR"
+msgstr "可校炮APCR炮弹"
+
+msgid "characteristics/shellParamsSwitcher/HIGH_EXPLOSIVE"
+msgstr "可校炮HE炮弹"
+
+msgid "characteristics/shellParamsSwitcher/HOLLOW_CHARGE"
+msgstr "可校炮HEAT炮弹"
 
 msgid "characteristics/templates/upTo"
 msgstr "最多%(value)%s"

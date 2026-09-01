@@ -25,9 +25,6 @@ class ObservedVehicleData(object):
 
 
 class AvatarObserver(CallbackDelayer):
-    observedVehicleID = property(lambda self: self.__observedVehicleID)
-    observedVehicleData = property(lambda self: self.__observedVehicleData)
-    isFPVModeSwitching = property(lambda self: self.__isFPVModeSwitching)
 
     def __init__(self):
         super(AvatarObserver, self).__init__()
@@ -37,6 +34,18 @@ class AvatarObserver(CallbackDelayer):
         self.__isFPVModeSwitching = False
         self.__observerFPVControlMode = CTRL_MODES.index(CTRL_MODE_NAME.ARCADE)
         return
+
+    @property
+    def observedVehicleID(self):
+        return self.__observedVehicleID
+
+    @property
+    def observedVehicleData(self):
+        return self.__observedVehicleData
+
+    @property
+    def isFPVModeSwitching(self):
+        return self.__isFPVModeSwitching
 
     def switchObserverFPV(self):
         if BattleReplay.isServerSideReplay():
@@ -48,10 +57,10 @@ class AvatarObserver(CallbackDelayer):
             _logger.warning('switchObserverFPV happened during switching cooldown! isFPVModeSwitching check missed!')
         self.__isFPVModeSwitching = True
         self.delayCallback(0.5, self.__resetFPVModeSwitching)
-        self.cell.switchObserverFPV(not BigWorld.player().isObserverFPV)
+        self.cell.switchObserverFPV(not BigWorld.player().isObserverFPV, self.__observedVehicleID or 0)
 
     def onBecomePlayer(self):
-        self.cell.switchObserverFPV(False)
+        self.cell.switchObserverFPV(False, 0)
 
     def onBecomeNonPlayer(self):
         CallbackDelayer.destroy(self)
@@ -71,7 +80,7 @@ class AvatarObserver(CallbackDelayer):
 
     def onVehicleChanged(self):
         _logger.debug('Avatar vehicle has changed to %r', self.vehicle)
-        if not self.vehicle and self.observerSeesAll():
+        if not self.vehicle and self.observerSeesAll() and not self.guiSessionProvider.shared.vehicleState.getControllingVehicleID():
             self.__observedVehicleID = 0
             return
         else:
@@ -143,24 +152,15 @@ class AvatarObserver(CallbackDelayer):
 
     def getObservedVehicleTurretMatrix(self):
         player = BigWorld.player()
-        if player.isObserver():
-            vehicle = player.getVehicleAttached()
-            if vehicle is not None:
-                if isinstance(vehicle.filter, BigWorld.WGVehicleFilter):
-                    return vehicle.filter.bodyMatrix
-                return vehicle.appearance.turretMatrix
-        return
-
-    def getVehicleAttached(self):
-        vehicle = self.vehicle
-        if vehicle is None:
-            vehicle = BigWorld.entity(self.__observedVehicleID if self.__observedVehicleID else self.playerVehicleID)
-        if vehicle is not None and vehicle.isHidden:
-            return vehicle
+        if not player.isObserver():
+            return
         else:
-            if vehicle is None or not vehicle.inWorld or not vehicle.isStarted or vehicle.isDestroyed:
+            vehicle = player.getVehicleAttached()
+            if vehicle is None:
                 return
-            return vehicle
+            if isinstance(vehicle.filter, BigWorld.WGVehicleFilter):
+                return vehicle.filter.turretMatrix
+            return vehicle.appearance.turretMatrix
 
     def clearObservedVehicleID(self):
         self.__observedVehicleID = None
@@ -215,7 +215,7 @@ class AvatarObserver(CallbackDelayer):
                     return
                 if eMode not in _OBSERVABLE_VIEWS:
                     _logger.warning("AvatarObserver.set_observerFPVControlMode() requested control mode '%r' is not supported, switching out of FPV", eMode)
-                    self.cell.switchObserverFPV(False)
+                    self.cell.switchObserverFPV(False, 0)
                 else:
                     self.__switchToObservedControlMode()
 

@@ -190,6 +190,9 @@ msgstr "完成指定战斗次数的主要条件: %(count)s"
 msgid "conditions/limiter/label"
 msgstr "限制！"
 
+msgid "conditions/limiter/new_label"
+msgstr "{EE7700_Start}限制!{EE7700_End}"
+
 msgid "conditions/orGroup"
 msgstr "或"
 
@@ -498,6 +501,9 @@ msgstr "IV号突击炮"
 
 msgid "operations/title10"
 msgstr "黑岩"
+
+msgid "operations/title11"
+msgstr "幽壑"
 
 msgid "operations/title2"
 msgstr "T28(概念车)"

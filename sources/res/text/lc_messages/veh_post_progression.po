@@ -528,22 +528,22 @@ msgid "vehPostProgressionView/persistentBonuses/bonusesSeparator"
 msgstr "， "
 
 msgid "vehPostProgressionView/persistentBonuses/nonZeroStepMultipleBonuses"
-msgstr "永久加成:%(bonuses)"
+msgstr "%(roleImage)永久加成: %(bonuses)"
 
 msgid "vehPostProgressionView/persistentBonuses/nonZeroStepOneBonus"
-msgstr "永久加成:%(bonus)"
+msgstr "%(roleImage)永久加成: %(bonus)"
 
 msgid "vehPostProgressionView/persistentBonuses/nonZeroStepTwoBonuses"
-msgstr "永久加成:%(bonus1)和%(bonus2)"
+msgstr "%(roleImage)永久加成: %(bonus1)和%(bonus2)"
 
 msgid "vehPostProgressionView/persistentBonuses/zeroStepMultipleBonuses"
-msgstr "提高等级获得永久加成:%(bonuses)"
+msgstr "%(roleImage)提高等级即可获得永久加成: %(bonuses)"
 
 msgid "vehPostProgressionView/persistentBonuses/zeroStepOneBonus"
-msgstr "提高等级获得永久加成:%(bonus)"
+msgstr "%(roleImage)提高等级即可获得永久加成: %(bonus)"
 
 msgid "vehPostProgressionView/persistentBonuses/zeroStepTwoBonuses"
-msgstr "提高等级获得永久加成%(bonus1)和%(bonus2)"
+msgstr "%(roleImage)提高等级即可获得永久加成: %(bonus1)和%(bonus2)"
 
 msgid ""
 "vehPostProgressionView/purchasePreview/mainContent/button/label/levelUp"

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from battle_royale.gui.shared.event_dispatcher import showAwardsView
 from chat_shared import SYS_MESSAGE_TYPE
 from gui.game_control.AwardController import ServiceChannelHandler

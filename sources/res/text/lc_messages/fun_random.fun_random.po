@@ -470,13 +470,13 @@ msgid "modes/fall_tanks/entryPoint/tooltip/description"
 msgstr "霓虹竞速是一项独特的限时活动，为您带来与众不同的体验！在险象环生的赛道上竞速格斗，完成任务，获取奖励。"
 
 msgid "modes/fall_tanks/entryPoint/tooltip/performance/highRisk/description"
-msgstr "该模式需要较高的计算机性能。您可能会遇到地图加载、图形和坦克移动方面的问题。如果性能不足，请在设置中尝试选择较低的图形质量。"
+msgstr "您的计算机性能不足以运行此模式。您可能会遇到图形和坦克移动方面的问题。游戏客户端也有可能崩溃。"
 
 msgid "modes/fall_tanks/entryPoint/tooltip/performance/highRisk/header"
-msgstr "可能会降低性能"
+msgstr "低性能"
 
 msgid "modes/fall_tanks/entryPoint/tooltip/performance/mediumRisk/description"
-msgstr "该模式需要较高的计算机性能。您可能会遇到地图加载、图形和坦克移动方面的问题。如果性能不足，请在设置中尝试选择较低的图形质量。"
+msgstr "该模式需要较高的计算机性能。您可能会遇到地图加载、图形和坦克移动方面的问题。如果性能不足，请在设置中尝试较低的图形质量。"
 
 msgid "modes/fall_tanks/entryPoint/tooltip/performance/mediumRisk/header"
 msgstr "可能会降低性能"
@@ -521,24 +521,22 @@ msgid "modes/fall_tanks/mode_selector/levelCondition"
 msgstr "{parSecondary_open}I{parSecondary_close} 所有等级"
 
 msgid "modes/fall_tanks/mode_selector/performance/highRisk/description"
-msgstr ""
-"在低图形质量设置下，可能会出现视觉伪影等问题。建议您在电脑配置允许的情况下，选择最高的图形质量设置以获得最佳体验。该模式对电脑性能要求较高，战况激烈时可能会发生掉帧问题。"
+msgstr "您的计算机性能不足以运行此模式。您可能会遇到图形和坦克移动方面的问题。游戏客户端也有可能崩溃。"
 
 msgid "modes/fall_tanks/mode_selector/performance/highRisk/header"
-msgstr "建议选择最高的图形质量设置"
+msgstr "低性能"
 
 msgid "modes/fall_tanks/mode_selector/performance/highRisk/headerIcon"
-msgstr "%(icon)建议选择最高的图形质量设置"
+msgstr "%(icon)低性能"
 
 msgid "modes/fall_tanks/mode_selector/performance/mediumRisk/description"
-msgstr ""
-"在低图形质量设置下，可能会出现视觉伪影等问题。建议您在电脑配置允许的情况下，选择最高的图形质量设置以获得最佳体验。该模式对电脑性能要求较高，战况激烈时可能会发生掉帧问题。"
+msgstr "该模式需要较高的计算机性能。您可能会遇到地图加载、图形和坦克移动方面的问题。如果性能不足，请在设置中尝试较低的图形质量。"
 
 msgid "modes/fall_tanks/mode_selector/performance/mediumRisk/header"
-msgstr "建议选择最高的图形质量设置"
+msgstr "可能会降低性能"
 
 msgid "modes/fall_tanks/mode_selector/performance/mediumRisk/headerIcon"
-msgstr "%(icon)建议选择最高的图形质量设置"
+msgstr "%(icon)可能会降低性能"
 
 msgid "modes/fall_tanks/mode_selector/progression/resettable"
 msgstr "距新的霓虹竞速任务开放还有:"
@@ -574,13 +572,13 @@ msgid "modes/fall_tanks/progression/infinite/congratulations"
 msgstr "恭喜!"
 
 msgid "modes/fall_tanks/progression/infinite/infinityStep"
-msgstr "无限额外进度"
+msgstr "可重复完成的阶段"
 
 msgid "modes/fall_tanks/progression/infinite/mainProgressionFinished"
 msgstr "您已完成主要进度"
 
 msgid "modes/fall_tanks/progression/questsList/quest/infinityStageProgress"
-msgstr "该阶段可重复完成，次数不限。"
+msgstr "尽可能获取更多奖励:"
 
 msgid "modes/fall_tanks/progression/questsList/totalPointsEarned"
 msgstr "获得点数: {{progressionSteps}}"
@@ -600,13 +598,13 @@ msgstr "可重复完成"
 
 msgid ""
 "modes/fall_tanks/progressionQuests/quest/progressChangeLabel/forCompletion"
-msgstr "完成:"
+msgstr "完成"
 
 msgid "modes/fall_tanks/progressionQuests/quest/progressChangeLabel/forLoss"
-msgstr "失败:"
+msgstr "失败"
 
 msgid "modes/fall_tanks/progressionQuests/quest/progressChangeLabel/forWin"
-msgstr "胜利:"
+msgstr "胜利"
 
 msgid "modes/fall_tanks/progressionQuests/quest/progressChangeLabel/points"
 msgstr "进度点数:"
@@ -631,10 +629,10 @@ msgid "modes/fall_tanks/progressionQuests/tooltip/allCompleted"
 msgstr "您已完成当前开放的所有任务。更多任务将在下一轮刷新时显示。"
 
 msgid "modes/fall_tanks/progressionQuests/tooltip/expiresCurrent"
-msgstr "开放{{timeLeft}}"
+msgstr "距过期还有{{timeLeft}}"
 
 msgid "modes/fall_tanks/progressionQuests/tooltip/expiresInfinite"
-msgstr "开放{{timeLeft}}"
+msgstr "距活动结束还有{{timeLeft}}"
 
 msgid "modes/fall_tanks/progressionQuests/tooltip/newMissions"
 msgstr "距新任务开放还有{{timeLeft}}"
@@ -1238,6 +1236,12 @@ msgstr "躲避激光，精准把握跳跃时机，飞速冲向终点！"
 msgid "sub_modes/fall_tanks/detailsHelp/page2/title"
 msgstr "注意: 激光和跳跃"
 
+msgid "sub_modes/fall_tanks/detailsHelp/page3/description"
+msgstr "如果您的坦克无法脱困，使用\"返回检查点\"能力，即可传送回您最后抵达的检查点。"
+
+msgid "sub_modes/fall_tanks/detailsHelp/page3/title"
+msgstr "返回检查点"
+
 msgid "sub_modes/fall_tanks/detailsHelpHint/description"
 msgstr "了解更多关于该模式的信息"
 
@@ -1251,41 +1255,37 @@ msgid "sub_modes/fall_tanks/subModeCard/battleCondition"
 msgstr "15–30"
 
 msgid "sub_modes/fall_tanks/subModeCard/description"
-msgstr ""
-"奋力冲向\n"
-"终点线"
+msgstr "奋力冲向终点线"
 
 msgid "sub_modes/fall_tanks/subModeCard/levelCondition"
 msgstr "{parSecondary_open}I{parSecondary_close} 所有等级"
 
 msgid "sub_modes/fall_tanks/subModeCard/performance/highRisk/description"
-msgstr ""
-"在低图形质量设置下，可能会出现视觉伪影及其他问题。建议您在电脑配置允许的情况下，选择最高的图形质量设置以获得最佳体验。该模式对性能要求较高，战况激烈时刻可能会发生掉帧问题。"
+msgstr "您的计算机性能不足以运行此模式。您可能会遇到图形和坦克移动方面的问题。游戏客户端也有可能崩溃。"
 
 msgid "sub_modes/fall_tanks/subModeCard/performance/highRisk/header"
-msgstr "建议选择最高的图形质量设置"
+msgstr "低性能"
 
 msgid "sub_modes/fall_tanks/subModeCard/performance/highRisk/headerIcon"
-msgstr "%(icon)建议选择最高的图形质量设置"
+msgstr "%(icon)低性能"
 
 msgid "sub_modes/fall_tanks/subModeCard/performance/mediumRisk/description"
-msgstr ""
-"在低图形质量设置下，可能会出现视觉伪影等问题。建议您在电脑配置允许的情况下，选择最高的图形质量设置以获得最佳体验。该模式对电脑性能要求较高，战况激烈时刻可能会发生掉帧问题。"
+msgstr "该模式需要较高的计算机性能。您可能会遇到地图加载、图形和坦克移动方面的问题。如果性能不足，请在设置中尝试较低的图形质量。"
 
 msgid "sub_modes/fall_tanks/subModeCard/performance/mediumRisk/header"
-msgstr "建议选择最高的图形质量设置"
+msgstr "可能会降低性能"
 
 msgid "sub_modes/fall_tanks/subModeCard/performance/mediumRisk/headerIcon"
-msgstr "%(icon)建议选择最高的图形质量设置"
+msgstr "%(icon)可能会降低性能"
 
 msgid "sub_modes/fall_tanks/subModeCard/title"
 msgstr "霓虹竞速"
 
 msgid "sub_modes/fall_tanks/tips/tip1/description"
-msgstr "?empty?"
+msgstr "在险象环生的赛道上竞速格斗，完成任务，获取奖励。"
 
 msgid "sub_modes/fall_tanks/tips/tip1/title"
-msgstr "?empty?"
+msgstr "霓虹竞速"
 
 msgid "sub_modes/fall_tanks/userName"
 msgstr "霓虹竞速"

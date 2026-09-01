@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<name>WT_OnMiniBossMoving</name>
+	<isDevelopment>false</isDevelopment>
+	<senderAspects>SERVER</senderAspects>
+	<receiverAspects>CLIENT;SERVER</receiverAspects>
+	<param>
+		<name>nextGeneratorID</name>
+		<typecode>IntT</typecode>
+	</param>
+</root>

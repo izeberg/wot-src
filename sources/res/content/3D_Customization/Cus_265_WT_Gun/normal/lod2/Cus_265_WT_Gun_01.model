@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_265_WT_Gun/normal/lod3/Cus_265_WT_Gun_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.130882 -0.070000 -0.389059</min>
+		<max>0.280090 0.561104 1.136196</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_265_WT_Gun/normal/lod2/Cus_265_WT_Gun_01</nodefullVisual>
+</root>

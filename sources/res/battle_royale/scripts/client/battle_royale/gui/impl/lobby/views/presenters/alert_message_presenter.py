@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import json
 from gui.impl.pub.view_component import ViewComponent
 from gui.prb_control.entities.listener import IGlobalListener

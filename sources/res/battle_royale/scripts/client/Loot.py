@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld, CGF, Math
 from battleground.loot_object import loadLootById
 from gui.shared import g_eventBus, EVENT_BUS_SCOPE

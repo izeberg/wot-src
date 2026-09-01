@@ -1,0 +1,960 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>Root_M</identifier>
+			<transform>
+				<row0>-0.000002 1.000000 -0.000000</row0>
+				<row1>0.000000 -0.000000 -1.000000</row1>
+				<row2>-1.000000 -0.000002 -0.000000</row2>
+				<row3>0.000001 0.154616 -0.000000</row3>
+			</transform>
+			<node>
+				<identifier>spine_M</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.502507 -0.000000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>tentacleA00_L</identifier>
+					<transform>
+						<row0>-0.441909 -0.776788 0.448683</row0>
+						<row1>-0.897060 0.382662 -0.221028</row1>
+						<row2>-0.000002 -0.500170 -0.865927</row2>
+						<row3>1.236814 0.928674 -0.535902</row3>
+					</transform>
+					<node>
+						<identifier>tentacleA01_L</identifier>
+						<transform>
+							<row0>0.993985 0.109518 0.000061</row0>
+							<row1>-0.109518 0.993985 -0.000044</row1>
+							<row2>-0.000066 0.000037 1.000000</row2>
+							<row3>-2.907723 0.000000 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>tentacleA02_L</identifier>
+							<transform>
+								<row0>-0.069097 -0.997599 -0.004592</row0>
+								<row1>0.997602 -0.069113 0.003582</row1>
+								<row2>-0.003891 -0.004334 0.999983</row2>
+								<row3>-2.383523 0.000000 -0.000000</row3>
+							</transform>
+							<node>
+								<identifier>tentacleA03_L</identifier>
+								<transform>
+									<row0>-0.944769 -0.326514 0.028301</row0>
+									<row1>-0.327359 0.944302 -0.033607</row1>
+									<row2>-0.015752 -0.041016 -0.999034</row2>
+									<row3>-1.708695 0.000000 -0.000000</row3>
+								</transform>
+								<node>
+									<identifier>tentacleA04_L</identifier>
+									<transform>
+										<row0>1.000000 0.000004 0.000004</row0>
+										<row1>-0.000004 1.000000 0.000004</row1>
+										<row2>-0.000004 -0.000004 1.000000</row2>
+										<row3>-0.313547 0.000000 -0.000000</row3>
+									</transform>
+									<node>
+										<identifier>tentacleA04_L_BlendBone</identifier>
+										<transform>
+											<row0>0.396510 -0.361471 -0.843871</row0>
+											<row1>-0.673658 -0.739043 0.000036</row1>
+											<row2>0.623671 -0.568466 0.536546</row2>
+											<row3>-2.497997 6.566790 -0.269680</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>tentacleA03_L_BlendBone</identifier>
+									<transform>
+										<row0>0.396514 -0.361466 -0.843871</row0>
+										<row1>-0.673655 -0.739046 0.000031</row1>
+										<row2>0.623671 -0.568466 0.536546</row2>
+										<row3>-2.811565 6.566782 -0.269662</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>tentacleA05_L</identifier>
+								<transform>
+									<row0>0.878377 -0.477935 0.005758</row0>
+									<row1>0.477930 0.878395 0.002271</row1>
+									<row2>-0.006144 0.000757 0.999981</row2>
+									<row3>-1.709601 0.210142 -0.010653</row3>
+								</transform>
+								<node>
+									<identifier>tentacleA06_L</identifier>
+									<transform>
+										<row0>1.000000 -0.000003 0.000006</row0>
+										<row1>0.000003 1.000000 0.000000</row1>
+										<row2>-0.000006 0.000000 1.000000</row2>
+										<row3>-2.386374 0.000000 0.000000</row3>
+									</transform>
+									<node>
+										<identifier>tentacleA06_L_BlendBone</identifier>
+										<transform>
+											<row0>0.000026 -0.497312 0.867572</row0>
+											<row1>1.000000 0.000013 -0.000023</row1>
+											<row2>0.000000 -0.867572 -0.497312</row2>
+											<row3>-0.471556 6.322985 -0.018107</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>tentacleA05_L_BlendBone</identifier>
+									<transform>
+										<row0>0.000020 -0.497312 0.867572</row0>
+										<row1>1.000000 0.000010 -0.000017</row1>
+										<row2>0.000000 -0.867572 -0.497312</row2>
+										<row3>-2.857909 6.322986 -0.018109</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>tentacleA02_L_BlendBone</identifier>
+								<transform>
+									<row0>-0.242993 -0.436188 0.866426</row0>
+									<row1>0.878381 -0.477926 0.005741</row1>
+									<row2>-0.411583 -0.762448 -0.499272</row2>
+									<row3>-1.197867 7.130101 -0.030860</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>tentacleA01_L_BlendBone</identifier>
+							<transform>
+								<row0>-0.421724 0.268801 0.865965</row0>
+								<row1>-0.537495 -0.843267 -0.000004</row1>
+								<row2>-0.730238 0.465454 -0.500105</row2>
+								<row3>4.812371 0.702341 0.000181</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>tentacleA00_L_BlendBone</identifier>
+						<transform>
+							<row0>-0.448682 0.221029 0.865927</row0>
+							<row1>-0.441909 -0.897060 -0.000000</row1>
+							<row2>-0.776789 0.382662 -0.500170</row2>
+							<row3>1.798781 1.225158 0.000445</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>tentacleA00_R</identifier>
+					<transform>
+						<row0>0.441910 0.776788 0.448682</row0>
+						<row1>0.897059 -0.382662 -0.221031</row1>
+						<row2>-0.000001 0.500170 -0.865927</row2>
+						<row3>1.236818 0.928674 0.535894</row3>
+					</transform>
+					<node>
+						<identifier>tentacleA01_R</identifier>
+						<transform>
+							<row0>0.993984 0.109522 0.000064</row0>
+							<row1>-0.109521 0.993984 -0.000039</row1>
+							<row2>-0.000068 0.000032 1.000000</row2>
+							<row3>2.907723 0.000000 0.000000</row3>
+						</transform>
+						<node>
+							<identifier>tentacleA02_R</identifier>
+							<transform>
+								<row0>-0.069093 -0.997600 -0.004597</row0>
+								<row1>0.997603 -0.069110 0.003585</row1>
+								<row2>-0.003894 -0.004338 0.999983</row2>
+								<row3>2.383523 0.000000 -0.000000</row3>
+							</transform>
+							<node>
+								<identifier>tentacleA03_R</identifier>
+								<transform>
+									<row0>-0.944767 -0.326517 0.028305</row0>
+									<row1>-0.327363 0.944301 -0.033603</row1>
+									<row2>-0.015756 -0.041013 -0.999034</row2>
+									<row3>1.708694 -0.000001 0.000000</row3>
+								</transform>
+								<node>
+									<identifier>tentacleA04_R</identifier>
+									<transform>
+										<row0>1.000000 0.000000 0.000000</row0>
+										<row1>0.000000 1.000000 0.000000</row1>
+										<row2>0.000000 0.000000 1.000000</row2>
+										<row3>0.313547 -0.000001 0.000000</row3>
+									</transform>
+									<node>
+										<identifier>tentacleA04_R_BlendBone</identifier>
+										<transform>
+											<row0>0.396528 -0.361451 -0.843871</row0>
+											<row1>0.673647 0.739053 -0.000014</row1>
+											<row2>-0.623671 0.568466 -0.536546</row2>
+											<row3>2.498079 -6.566768 0.269608</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>tentacleA03_R_BlendBone</identifier>
+									<transform>
+										<row0>0.396528 -0.361451 -0.843871</row0>
+										<row1>0.673647 0.739053 -0.000014</row1>
+										<row2>-0.623671 0.568466 -0.536546</row2>
+										<row3>2.811625 -6.566768 0.269608</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>tentacleA05_R</identifier>
+								<transform>
+									<row0>0.878378 -0.477932 0.005753</row0>
+									<row1>0.477927 0.878397 0.002271</row1>
+									<row2>-0.006139 0.000755 0.999981</row2>
+									<row3>1.709600 -0.210141 0.010653</row3>
+								</transform>
+								<node>
+									<identifier>tentacleA06_R</identifier>
+									<transform>
+										<row0>1.000000 -0.000000 -0.000000</row0>
+										<row1>0.000000 1.000000 0.000000</row1>
+										<row2>0.000000 -0.000000 1.000000</row2>
+										<row3>2.386374 0.000000 0.000000</row3>
+									</transform>
+									<node>
+										<identifier>tentacleA06_R_BlendBone</identifier>
+										<transform>
+											<row0>0.000000 -0.497311 0.867572</row0>
+											<row1>-1.000000 0.000000 0.000000</row1>
+											<row2>0.000000 0.867572 0.497311</row2>
+											<row3>0.471486 -6.323018 0.018166</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>tentacleA05_R_BlendBone</identifier>
+									<transform>
+										<row0>0.000000 -0.497311 0.867572</row0>
+										<row1>-1.000000 0.000000 0.000000</row1>
+										<row2>0.000000 0.867572 0.497311</row2>
+										<row3>2.857860 -6.323018 0.018166</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>tentacleA02_R_BlendBone</identifier>
+								<transform>
+									<row0>-0.243004 -0.436182 0.866426</row0>
+									<row1>-0.878378 0.477932 -0.005753</row1>
+									<row2>0.411583 0.762448 0.499272</row2>
+									<row3>1.197830 -7.130108 0.030899</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>tentacleA01_R_BlendBone</identifier>
+							<transform>
+								<row0>-0.421720 0.268806 0.865965</row0>
+								<row1>0.537498 0.843265 -0.000001</row1>
+								<row2>0.730238 -0.465454 0.500105</row2>
+								<row3>-4.812373 -0.702327 -0.000167</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>tentacleA00_R_BlendBone</identifier>
+						<transform>
+							<row0>-0.448682 0.221029 0.865927</row0>
+							<row1>0.441909 0.897060 0.000000</row1>
+							<row2>0.776788 -0.382662 0.500170</row2>
+							<row3>-1.798780 -1.225161 -0.000448</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>tentacleB00_L</identifier>
+					<transform>
+						<row0>-0.442578 -0.000205 0.896730</row0>
+						<row1>-0.896730 0.000101 -0.442578</row1>
+						<row2>-0.000000 -1.000000 -0.000229</row2>
+						<row3>1.236811 0.000244 -1.071716</row3>
+					</transform>
+					<node>
+						<identifier>tentacleB01_L</identifier>
+						<transform>
+							<row0>0.994053 0.108893 -0.000001</row0>
+							<row1>-0.108893 0.994053 0.000000</row1>
+							<row2>0.000001 0.000000 1.000000</row2>
+							<row3>-2.903318 0.000000 0.000000</row3>
+						</transform>
+						<node>
+							<identifier>tentacleB02_L</identifier>
+							<transform>
+								<row0>-0.069120 -0.997608 0.000003</row0>
+								<row1>0.997608 -0.069120 0.000003</row1>
+								<row2>-0.000003 0.000003 1.000000</row2>
+								<row3>-2.383066 -0.000000 -0.000000</row3>
+							</transform>
+							<node>
+								<identifier>tentacleB03_L</identifier>
+								<transform>
+									<row0>-0.949155 -0.314808 -0.000013</row0>
+									<row1>-0.314808 0.949155 0.000015</row1>
+									<row2>0.000008 0.000018 -1.000000</row2>
+									<row3>-1.708772 0.000001 -0.000000</row3>
+								</transform>
+								<node>
+									<identifier>tentacleB04_L</identifier>
+									<transform>
+										<row0>1.000000 0.000007 -0.000000</row0>
+										<row1>-0.000007 1.000000 0.000000</row1>
+										<row2>-0.000000 0.000000 1.000000</row2>
+										<row3>-0.309169 -0.000001 -0.000000</row3>
+									</transform>
+									<node>
+										<identifier>tentacleB04_L_BlendBone</identifier>
+										<transform>
+											<row0>0.730228 -0.683204 -0.000251</row0>
+											<row1>-0.683204 -0.730228 -0.000000</row1>
+											<row2>0.000184 -0.000172 1.000000</row2>
+											<row3>-2.416690 6.602648 0.000147</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>tentacleB03_L_BlendBone</identifier>
+									<transform>
+										<row0>0.730232 -0.683199 -0.000251</row0>
+										<row1>-0.683199 -0.730232 -0.000000</row1>
+										<row2>0.000184 -0.000172 1.000000</row2>
+										<row3>-2.725903 6.602633 0.000147</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>tentacleB05_L</identifier>
+								<transform>
+									<row0>0.878335 -0.478045 -0.000002</row0>
+									<row1>0.478045 0.878335 -0.000000</row1>
+									<row2>0.000002 -0.000000 1.000000</row2>
+									<row3>-1.712447 0.205134 0.000005</row3>
+								</transform>
+								<node>
+									<identifier>tentacleB06_L</identifier>
+									<transform>
+										<row0>1.000000 -0.000007 0.000000</row0>
+										<row1>0.000007 1.000000 -0.000000</row1>
+										<row2>0.000000 0.000000 1.000000</row2>
+										<row3>-2.378142 0.000001 0.000000</row3>
+									</transform>
+									<node>
+										<identifier>tentacleB06_L_BlendBone</identifier>
+										<transform>
+											<row0>0.000026 -1.000000 0.000231</row0>
+											<row1>1.000000 0.000026 -0.000000</row1>
+											<row2>0.000000 -0.000231 -1.000000</row2>
+											<row3>-0.479859 6.322972 -0.000018</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>tentacleB05_L_BlendBone</identifier>
+									<transform>
+										<row0>0.000020 -1.000000 0.000231</row0>
+										<row1>1.000000 0.000020 -0.000000</row1>
+										<row2>0.000000 -0.000231 -1.000000</row2>
+										<row3>-2.857960 6.322975 -0.000019</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>tentacleB02_L_BlendBone</identifier>
+								<transform>
+									<row0>-0.478028 -0.878345 0.000231</row0>
+									<row1>0.878345 -0.478028 -0.000002</row1>
+									<row2>-0.000112 -0.000203 -1.000000</row2>
+									<row3>-1.200027 7.125060 -0.000012</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>tentacleB01_L_BlendBone</identifier>
+							<transform>
+								<row0>-0.843203 0.537596 0.000228</row0>
+								<row1>-0.537596 -0.843203 -0.000001</row1>
+								<row2>-0.000192 0.000123 -1.000000</row2>
+								<row3>4.807898 0.704672 0.000005</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>tentacleB00_L_BlendBone</identifier>
+						<transform>
+							<row0>-0.896729 0.442580 0.000229</row0>
+							<row1>-0.442580 -0.896729 -0.000000</row1>
+							<row2>-0.000205 0.000101 -1.000000</row2>
+							<row3>1.799255 1.224029 -0.000001</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>tentacleB00_R</identifier>
+					<transform>
+						<row0>0.442581 0.000205 0.896728</row0>
+						<row1>0.896728 -0.000101 -0.442581</row1>
+						<row2>0.000000 1.000000 -0.000229</row2>
+						<row3>1.236818 0.000244 1.071708</row3>
+					</transform>
+					<node>
+						<identifier>tentacleB01_R</identifier>
+						<transform>
+							<row0>0.994053 0.108900 -0.000001</row0>
+							<row1>-0.108900 0.994053 0.000000</row1>
+							<row2>0.000001 0.000000 1.000000</row2>
+							<row3>2.903318 -0.000000 0.000000</row3>
+						</transform>
+						<node>
+							<identifier>tentacleB02_R</identifier>
+							<transform>
+								<row0>-0.069114 -0.997609 0.000003</row0>
+								<row1>0.997609 -0.069114 0.000003</row1>
+								<row2>-0.000003 0.000003 1.000000</row2>
+								<row3>2.383066 0.000000 0.000000</row3>
+							</transform>
+							<node>
+								<identifier>tentacleB03_R</identifier>
+								<transform>
+									<row0>-0.949153 -0.314814 -0.000013</row0>
+									<row1>-0.314814 0.949153 0.000015</row1>
+									<row2>0.000008 0.000018 -1.000000</row2>
+									<row3>1.708772 -0.000001 0.000000</row3>
+								</transform>
+								<node>
+									<identifier>tentacleB04_R</identifier>
+									<transform>
+										<row0>1.000000 -0.000000 0.000000</row0>
+										<row1>-0.000000 1.000000 -0.000000</row1>
+										<row2>0.000000 0.000000 1.000000</row2>
+										<row3>0.309170 -0.000001 0.000000</row3>
+									</transform>
+									<node>
+										<identifier>tentacleB04_R_BlendBone</identifier>
+										<transform>
+											<row0>0.730246 -0.683184 -0.000251</row0>
+											<row1>0.683184 0.730246 -0.000000</row1>
+											<row2>-0.000184 0.000172 -1.000000</row2>
+											<row3>2.416850 -6.602603 -0.000146</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>tentacleB03_R_BlendBone</identifier>
+									<transform>
+										<row0>0.730246 -0.683184 -0.000251</row0>
+										<row1>0.683184 0.730246 -0.000000</row1>
+										<row2>-0.000184 0.000172 -1.000000</row2>
+										<row3>2.726020 -6.602603 -0.000146</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>tentacleB05_R</identifier>
+								<transform>
+									<row0>0.878338 -0.478039 -0.000002</row0>
+									<row1>0.478039 0.878339 -0.000000</row1>
+									<row2>0.000002 -0.000000 1.000000</row2>
+									<row3>1.712447 -0.205134 -0.000005</row3>
+								</transform>
+								<node>
+									<identifier>tentacleB06_R</identifier>
+									<transform>
+										<row0>1.000000 0.000000 0.000000</row0>
+										<row1>0.000000 1.000000 0.000000</row1>
+										<row2>0.000000 0.000000 1.000000</row2>
+										<row3>2.378142 0.000000 0.000000</row3>
+									</transform>
+									<node>
+										<identifier>tentacleB06_R_BlendBone</identifier>
+										<transform>
+											<row0>-0.000000 -1.000000 0.000231</row0>
+											<row1>-1.000000 0.000000 0.000000</row1>
+											<row2>0.000000 0.000231 1.000000</row2>
+											<row3>0.479718 -6.323040 0.000019</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>tentacleB05_R_BlendBone</identifier>
+									<transform>
+										<row0>-0.000000 -1.000000 0.000231</row0>
+										<row1>-1.000000 0.000000 0.000000</row1>
+										<row2>0.000000 0.000231 1.000000</row2>
+										<row3>2.857860 -6.323040 0.000019</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>tentacleB02_R_BlendBone</identifier>
+								<transform>
+									<row0>-0.478039 -0.878338 0.000232</row0>
+									<row1>-0.878338 0.478039 0.000002</row1>
+									<row2>0.000112 0.000203 1.000000</row2>
+									<row3>1.199954 -7.125072 0.000012</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>tentacleB01_R_BlendBone</identifier>
+							<transform>
+								<row0>-0.843199 0.537601 0.000228</row0>
+								<row1>0.537601 0.843199 0.000001</row1>
+								<row2>0.000192 -0.000123 1.000000</row2>
+								<row3>-4.807901 -0.704645 -0.000005</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>tentacleB00_R_BlendBone</identifier>
+						<transform>
+							<row0>-0.896729 0.442580 0.000229</row0>
+							<row1>0.442580 0.896729 0.000000</row1>
+							<row2>0.000205 -0.000101 1.000000</row2>
+							<row3>-1.799253 -1.224034 0.000001</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>tentacleC00_L</identifier>
+					<transform>
+						<row0>-0.441910 0.776583 0.449038</row0>
+						<row1>-0.897059 -0.382561 -0.221204</row1>
+						<row2>0.000001 -0.500566 0.865699</row2>
+						<row3>1.236814 -0.928430 -0.536325</row3>
+					</transform>
+					<node>
+						<identifier>tentacleC01_L</identifier>
+						<transform>
+							<row0>0.993985 0.109514 -0.000062</row0>
+							<row1>-0.109514 0.993985 0.000046</row1>
+							<row2>0.000066 -0.000039 1.000000</row2>
+							<row3>-2.907714 -0.000000 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>tentacleC02_L</identifier>
+							<transform>
+								<row0>-0.069088 -0.997600 0.004596</row0>
+								<row1>0.997578 -0.069047 0.008460</row1>
+								<row2>-0.008122 0.005169 0.999954</row2>
+								<row3>-2.383533 0.000000 -0.000000</row3>
+							</transform>
+							<node>
+								<identifier>tentacleC03_L</identifier>
+								<transform>
+									<row0>-0.944767 -0.326838 -0.024357</row0>
+									<row1>-0.327366 0.944636 0.022228</row1>
+									<row2>0.015743 0.028974 -0.999456</row2>
+									<row3>-1.708700 0.000001 -0.000000</row3>
+								</transform>
+								<node>
+									<identifier>tentacleC04_L</identifier>
+									<transform>
+										<row0>1.000000 0.000004 -0.000004</row0>
+										<row1>-0.000004 1.000000 -0.000004</row1>
+										<row2>0.000004 0.000004 1.000000</row2>
+										<row3>-0.313552 0.000000 -0.000000</row3>
+									</transform>
+									<node>
+										<identifier>tentacleC04_L_BlendBone</identifier>
+										<transform>
+											<row0>0.396791 -0.361720 0.843632</row0>
+											<row1>-0.673648 -0.739052 -0.000038</row1>
+											<row2>-0.623502 0.568296 0.536921</row2>
+											<row3>-2.498091 6.566763 0.269610</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>tentacleC03_L_BlendBone</identifier>
+									<transform>
+										<row0>0.396796 -0.361715 0.843632</row0>
+										<row1>-0.673645 -0.739055 -0.000033</row1>
+										<row2>-0.623502 0.568296 0.536921</row2>
+										<row3>-2.811664 6.566756 0.269592</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>tentacleC05_L</identifier>
+								<transform>
+									<row0>0.878373 -0.477975 -0.000004</row0>
+									<row1>0.477975 0.878373 0.000001</row1>
+									<row2>0.000004 -0.000003 1.000000</row2>
+									<row3>-1.709596 0.210270 0.008123</row3>
+								</transform>
+								<node>
+									<identifier>tentacleC06_L</identifier>
+									<transform>
+										<row0>1.000000 -0.000003 -0.000006</row0>
+										<row1>0.000003 1.000000 0.000000</row1>
+										<row2>0.000006 0.000000 1.000000</row2>
+										<row3>-2.394324 0.000000 -0.000000</row3>
+									</transform>
+									<node>
+										<identifier>tentacleC06_L_BlendBone</identifier>
+										<transform>
+											<row0>0.000026 -0.508811 -0.860878</row0>
+											<row1>1.000000 0.000013 0.000023</row1>
+											<row2>0.000000 0.860878 -0.508811</row2>
+											<row3>-0.463606 6.322690 -0.063138</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>tentacleC05_L_BlendBone</identifier>
+									<transform>
+										<row0>0.000020 -0.508811 -0.860878</row0>
+										<row1>1.000000 0.000010 0.000017</row1>
+										<row2>0.000000 0.860878 -0.508811</row2>
+										<row3>-2.857910 6.322691 -0.063136</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>tentacleC02_L_BlendBone</identifier>
+								<transform>
+									<row0>-0.243185 -0.446933 -0.860878</row0>
+									<row1>0.878378 -0.477966 0.000013</row1>
+									<row2>0.411476 0.756174 -0.508811</row2>
+									<row3>-1.197820 7.129964 -0.054997</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>tentacleC01_L_BlendBone</identifier>
+							<transform>
+								<row0>-0.422058 0.269011 -0.865737</row0>
+								<row1>-0.537493 -0.843268 0.000006</row1>
+								<row2>0.730047 -0.465331 -0.500499</row2>
+								<row3>4.812360 0.702358 -0.000183</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>tentacleC00_L_BlendBone</identifier>
+						<transform>
+							<row0>-0.449037 0.221205 -0.865699</row0>
+							<row1>-0.441911 -0.897059 0.000000</row1>
+							<row2>0.776583 -0.382562 -0.500566</row2>
+							<row3>1.798783 1.225155 -0.000446</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>tentacleC00_R</identifier>
+					<transform>
+						<row0>0.441911 -0.776583 0.449036</row0>
+						<row1>0.897059 0.382561 -0.221207</row1>
+						<row2>0.000002 0.500566 0.865699</row2>
+						<row3>1.236817 -0.928430 0.536317</row3>
+					</transform>
+					<node>
+						<identifier>tentacleC01_R</identifier>
+						<transform>
+							<row0>0.993985 0.109518 -0.000065</row0>
+							<row1>-0.109517 0.993985 0.000042</row1>
+							<row2>0.000069 -0.000034 1.000000</row2>
+							<row3>2.907714 0.000000 0.000000</row3>
+						</transform>
+						<node>
+							<identifier>tentacleC02_R</identifier>
+							<transform>
+								<row0>-0.069084 -0.997600 0.004601</row0>
+								<row1>0.997578 -0.069044 0.008457</row1>
+								<row2>-0.008119 0.005174 0.999954</row2>
+								<row3>2.383533 0.000000 -0.000000</row3>
+							</transform>
+							<node>
+								<identifier>tentacleC03_R</identifier>
+								<transform>
+									<row0>-0.944765 -0.326841 -0.024360</row0>
+									<row1>-0.327369 0.944635 0.022224</row1>
+									<row2>0.015748 0.028971 -0.999456</row2>
+									<row3>1.708701 0.000000 0.000000</row3>
+								</transform>
+								<node>
+									<identifier>tentacleC04_R</identifier>
+									<transform>
+										<row0>1.000000 0.000000 0.000000</row0>
+										<row1>-0.000000 1.000000 0.000000</row1>
+										<row2>0.000000 -0.000000 1.000000</row2>
+										<row3>0.313551 -0.000001 0.000000</row3>
+									</transform>
+									<node>
+										<identifier>tentacleC04_R_BlendBone</identifier>
+										<transform>
+											<row0>0.396809 -0.361700 0.843632</row0>
+											<row1>0.673638 0.739062 0.000016</row1>
+											<row2>0.623502 -0.568296 -0.536921</row2>
+											<row3>2.498172 -6.566742 -0.269537</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>tentacleC03_R_BlendBone</identifier>
+									<transform>
+										<row0>0.396809 -0.361700 0.843632</row0>
+										<row1>0.673638 0.739062 0.000016</row1>
+										<row2>0.623502 -0.568296 -0.536921</row2>
+										<row3>2.811724 -6.566742 -0.269536</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>tentacleC05_R</identifier>
+								<transform>
+									<row0>0.878375 -0.477972 0.000001</row0>
+									<row1>0.477972 0.878375 0.000001</row1>
+									<row2>-0.000001 0.000000 1.000000</row2>
+									<row3>1.709596 -0.210270 -0.008122</row3>
+								</transform>
+								<node>
+									<identifier>tentacleC06_R</identifier>
+									<transform>
+										<row0>1.000000 0.000000 0.000000</row0>
+										<row1>0.000000 1.000000 0.000000</row1>
+										<row2>0.000000 0.000000 1.000000</row2>
+										<row3>2.394324 0.000000 -0.000000</row3>
+									</transform>
+									<node>
+										<identifier>tentacleC06_R_BlendBone</identifier>
+										<transform>
+											<row0>-0.000000 -0.508811 -0.860878</row0>
+											<row1>-1.000000 -0.000000 0.000000</row1>
+											<row2>0.000000 -0.860878 0.508811</row2>
+											<row3>0.463536 -6.322724 0.063080</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>tentacleC05_R_BlendBone</identifier>
+									<transform>
+										<row0>-0.000000 -0.508811 -0.860878</row0>
+										<row1>-1.000000 -0.000000 0.000000</row1>
+										<row2>0.000000 -0.860878 0.508811</row2>
+										<row3>2.857861 -6.322724 0.063080</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>tentacleC02_R_BlendBone</identifier>
+								<transform>
+									<row0>-0.243197 -0.446927 -0.860878</row0>
+									<row1>-0.878375 0.477972 -0.000001</row1>
+									<row2>-0.411476 -0.756174 0.508811</row2>
+									<row3>1.197783 -7.129971 0.054957</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>tentacleC01_R_BlendBone</identifier>
+							<transform>
+								<row0>-0.422054 0.269016 -0.865737</row0>
+								<row1>0.537496 0.843266 -0.000000</row1>
+								<row2>-0.730047 0.465331 0.500499</row2>
+								<row3>-4.812362 -0.702345 0.000168</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>tentacleC00_R_BlendBone</identifier>
+						<transform>
+							<row0>-0.449037 0.221205 -0.865699</row0>
+							<row1>0.441911 0.897059 0.000000</row1>
+							<row2>-0.776583 0.382561 0.500566</row2>
+							<row3>-1.798782 -1.225158 0.000450</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>spine_M_BlendBone</identifier>
+					<transform>
+						<row0>-0.000002 0.000000 -1.000000</row0>
+						<row1>1.000000 -0.000000 -0.000002</row1>
+						<row2>0.000000 1.000000 0.000000</row2>
+						<row3>-0.657123 0.000000 0.000001</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>Root_M_BlendBone</identifier>
+				<transform>
+					<row0>-0.000002 0.000000 -1.000000</row0>
+					<row1>1.000000 -0.000000 -0.000002</row1>
+					<row2>0.000000 1.000000 0.000000</row2>
+					<row3>-0.154616 0.000000 0.000001</row3>
+				</transform>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>tentacleB02_R_BlendBone</node>
+		<node>tentacleB03_R_BlendBone</node>
+		<node>tentacleB01_R_BlendBone</node>
+		<node>spine_M_BlendBone</node>
+		<node>tentacleB00_R_BlendBone</node>
+		<node>tentacleA02_R_BlendBone</node>
+		<node>tentacleA03_R_BlendBone</node>
+		<node>tentacleA01_R_BlendBone</node>
+		<node>tentacleA00_R_BlendBone</node>
+		<node>tentacleA02_L_BlendBone</node>
+		<node>tentacleA03_L_BlendBone</node>
+		<node>tentacleA01_L_BlendBone</node>
+		<node>tentacleA00_L_BlendBone</node>
+		<node>tentacleB02_L_BlendBone</node>
+		<node>tentacleB03_L_BlendBone</node>
+		<node>tentacleB01_L_BlendBone</node>
+		<node>tentacleB00_L_BlendBone</node>
+		<node>tentacleC02_L_BlendBone</node>
+		<node>tentacleC03_L_BlendBone</node>
+		<node>tentacleC01_L_BlendBone</node>
+		<node>tentacleC00_L_BlendBone</node>
+		<node>tentacleC02_R_BlendBone</node>
+		<node>tentacleC03_R_BlendBone</node>
+		<node>tentacleC01_R_BlendBone</node>
+		<node>tentacleC00_R_BlendBone</node>
+		<node>Root_M_BlendBone</node>
+		<geometry>
+			<vertices>s1Shape.vertices</vertices>
+			<stream>s1Shape.colour</stream>
+			<primitive>s1Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd1_skinned</identifier>
+					<fx>shaders/custom/emissive_playground_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>110</materialKind>
+					<property>
+						emissionMap
+						<Texture>content/Hangars/h_newyear/customization/Tableful/Attraction/NY25_Attraction_01_Garland_AM.dds</Texture>
+					</property>
+					<property>
+						g_contrast
+						<Float>3.000000</Float>
+					</property>
+					<property>
+						g_deferredMult
+						<Float>15.000000</Float>
+					</property>
+					<property>
+						g_offsetBlack
+						<Float>0.500000</Float>
+					</property>
+					<property>
+						pattern
+						<Texture>content/Hangars/h_newyear/customization/Tableful/Attraction/NY25_Attraction_01_Garland_AM.dds</Texture>
+					</property>
+					<property>
+						phaseMap
+						<Texture>content/Hangars/h_newyear/customization/Tableful/Attraction/NY25_Attraction_01_Garland_CM.dds</Texture>
+					</property>
+					<property>
+						speed
+						<Float>0.200000</Float>
+					</property>
+					<property>
+						usePhaseMap
+						<Bool>true</Bool>
+					</property>
+					<property>
+						waveLen
+						<Float>5.000000</Float>
+					</property>
+				</material>
+				<groupOrigin>0.000000 4.354312 0.000000</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>tentacleA05_L_BlendBone</node>
+		<node>tentacleA02_L_BlendBone</node>
+		<node>tentacleA03_L_BlendBone</node>
+		<node>tentacleC05_L_BlendBone</node>
+		<node>tentacleC02_L_BlendBone</node>
+		<node>tentacleC03_L_BlendBone</node>
+		<node>tentacleC05_R_BlendBone</node>
+		<node>tentacleB05_R_BlendBone</node>
+		<node>tentacleB02_R_BlendBone</node>
+		<node>tentacleB03_R_BlendBone</node>
+		<node>tentacleA05_R_BlendBone</node>
+		<node>tentacleA02_R_BlendBone</node>
+		<node>tentacleA03_R_BlendBone</node>
+		<node>tentacleC02_R_BlendBone</node>
+		<node>tentacleC03_R_BlendBone</node>
+		<node>tentacleB05_L_BlendBone</node>
+		<node>tentacleB02_L_BlendBone</node>
+		<node>tentacleB03_L_BlendBone</node>
+		<node>Root_M_BlendBone</node>
+		<node>spine_M_BlendBone</node>
+		<node>tentacleC01_R_BlendBone</node>
+		<node>tentacleC00_R_BlendBone</node>
+		<node>tentacleB01_R_BlendBone</node>
+		<node>tentacleB00_R_BlendBone</node>
+		<node>tentacleA01_R_BlendBone</node>
+		<node>tentacleA00_R_BlendBone</node>
+		<node>tentacleA01_L_BlendBone</node>
+		<node>tentacleA00_L_BlendBone</node>
+		<node>tentacleB01_L_BlendBone</node>
+		<node>tentacleB00_L_BlendBone</node>
+		<node>tentacleC01_L_BlendBone</node>
+		<node>tentacleC00_L_BlendBone</node>
+		<geometry>
+			<vertices>s0Shape.vertices</vertices>
+			<stream>s0Shape.colour</stream>
+			<primitive>s0Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>110</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h_newyear/customization/Tableful/Attraction/NY25_Attraction_01_AM.dds</Texture>
+					</property>
+					<property>
+						dynamicObject
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h_newyear/customization/Tableful/Attraction/NY25_Attraction_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h_newyear/customization/Tableful/Attraction/NY25_Attraction_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.017982 4.421601 0.007273</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-9.308585 -0.159667 -9.298635</min>
+		<max>9.272620 9.002869 9.284089</max>
+	</boundingBox>
+	<geometrySize>1014476</geometrySize>
+</root>

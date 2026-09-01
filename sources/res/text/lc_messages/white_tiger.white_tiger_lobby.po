@@ -1,0 +1,677 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-24 10:00+0300\n"
+"PO-Revision-Date: 2023-03-24 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "TicketMessageView/boss/description"
+msgstr "您需要一把钥匙才能驾驶E-110 BT加入战斗"
+
+msgid "TicketMessageView/buyText"
+msgstr "购买"
+
+msgid "TicketMessageView/taskText"
+msgstr "前往任务"
+
+msgid "ammunitionTooltipView/additionalInfoTitle"
+msgstr "详细信息:"
+
+msgid "award/value"
+msgstr "x{count}"
+
+msgid "battleQueue/avgWaitTime/label"
+msgstr "%(vehName)s在队列中的平均时间:"
+
+msgid "battleQueue/widget/bonus"
+msgstr "奖励"
+
+msgid "battleQueue/widget/bonusDescr"
+msgstr "您无需钥匙即可驾驶E-110 BT加入战斗！"
+
+msgid "battleQueue/widget/btnLabel"
+msgstr "驾驶%(vehicle)s战斗"
+
+msgid "battleQueue/widget/calculatedText"
+msgstr "%(vehicle)s在队列中的平均时间"
+
+msgid "battleQueue/widget/changeTitle"
+msgstr "驾驶%(vehicle)s加入战斗？"
+
+msgid "battleQueue/widget/offerHunterTitle"
+msgstr "您可以选择一辆猎犬坦克，马上加入战斗！"
+
+msgid "battleQueue/widget/ticketText"
+msgstr "您将花费1把钥匙"
+
+msgid "bonuses/elementBonus/desc/style3d"
+msgstr "%(vehicle)s的\"%(value)s\"3D风格"
+
+msgid "bonuses/random_collection_element_WT/tooltip/body"
+msgstr "完成此任务即可获得往期活动的随机工程师和猎犬收藏元素。您有机会获得贴花、签名或徽章。"
+
+msgid "bonuses/random_collection_element_WT/tooltip/header"
+msgstr "往期活动的收藏元素"
+
+msgid "calendarDay/serverName"
+msgstr "%(server)s"
+
+msgid "calendarDay/time"
+msgstr "%(start)s—%(end)s"
+
+msgid "carousel/inBattleText"
+msgstr "在战斗中"
+
+msgid "carousel/inPlatoonText"
+msgstr "在小队中"
+
+msgid "carousel/ticketNeededText"
+msgstr "没有钥匙"
+
+msgid "carousel/unsuitableText"
+msgstr "不适用"
+
+msgid "characteristicsPanel/cons"
+msgstr "劣势"
+
+msgid "characteristicsPanel/features"
+msgstr "坦克特性"
+
+msgid "characteristicsPanel/pros"
+msgstr "优势"
+
+msgid "characteristicsPanel/specialInfo/boss"
+msgstr "[群狼之首] BT坦克拥有强大的武器和瞬移科技，屏障生效时几乎坚不可摧。此外，这辆强大的坦克还可以控制威力巨大的武器系统: 海柏利昂。"
+
+msgid "characteristicsPanel/specialInfo/hunter_1"
+msgstr ""
+"[近战高手] 善于近距离作战的好手。\n"
+"该坦克能对一群哨兵造成高额损伤，还能在战斗之间修复自身。"
+
+msgid "characteristicsPanel/specialInfo/hunter_2"
+msgstr ""
+"[强力突击] 一辆能有效对付哨兵的突击坦克。\n"
+"它装甲坚固，能对BT坦克或哨兵造成严重损伤，但需要提前计划好如何展开攻击。"
+
+msgid "characteristicsPanel/specialInfo/hunter_3"
+msgstr ""
+"[游击战术] 一辆迅捷的麻烦制造者，可利用机动性对抗BT坦克。\n"
+"虽然该坦克的火力在对付哨兵时略有不足，但凭借优秀的机动和炮弹防护罩，它仍可使用游击战术独当一面。"
+
+msgid "characteristicsPanel/specialInfo/hunter_4"
+msgstr ""
+"[狙击火力支援] 擅长中距离作战的高手。\n"
+"这辆坦克可以从远处对目标造成巨额损伤，但近距离缠斗能力乏善可陈。"
+
+msgid "crewPanel/role/boss"
+msgstr "始源体"
+
+msgid "crewPanel/role/hunter_1"
+msgstr "车长"
+
+msgid "crewPanel/role/hunter_2"
+msgstr "车长"
+
+msgid "crewPanel/role/hunter_3"
+msgstr "车长"
+
+msgid "crewPanel/role/hunter_4"
+msgstr "车长"
+
+msgid "crewPanel/slogan/boss"
+msgstr "人类还以为心智是他们的专属特权。很好。就让我来纠正这个错误。"
+
+msgid "crewPanel/slogan/hunter_1"
+msgstr "不管它是什么东西，我总有办法将其摧毁。"
+
+msgid "crewPanel/slogan/hunter_2"
+msgstr "是机器就有弱点。而我，会找到它的弱点。"
+
+msgid "crewPanel/slogan/hunter_3"
+msgstr "套路只属于那些墨守成规的人。"
+
+msgid "crewPanel/slogan/hunter_4"
+msgstr "就让它向我们学习吧。看看它能偏科到什么地步。"
+
+msgid "details/conditions/cumulative/maxWtPlasmaBonus"
+msgstr "收集等离子体充能"
+
+msgid "details/conditions/cumulative/wtBossVulnerableDamage"
+msgstr "在BT坦克屏障失效时对其造成损伤"
+
+msgid "details/conditions/cumulative/wtDeathCount"
+msgstr "击毁猎犬小队坦克"
+
+msgid "details/conditions/cumulative/wtGeneratorsCaptured"
+msgstr "使发电机过载"
+
+msgid "details/conditions/cumulative/wtKilledByHyperionCount"
+msgstr "在战斗中存活且从未被海柏利昂击毁"
+
+msgid "details/conditions/cumulative/wtMiniBossDestroyed"
+msgstr "在团队中击毁Eos 1"
+
+msgid "headerButtons/battle/types/white_tiger"
+msgstr "最终兵器:启元"
+
+msgid "loading/battleTypes/wt"
+msgstr "最终兵器"
+
+msgid "lootboxEntry/boxes"
+msgstr "购买更多礼包"
+
+msgid "lootboxEntry/count"
+msgstr "x{count}"
+
+msgid "lootboxEntry/maxBoxesCount"
+msgstr "x999+"
+
+msgid "modes/undefined/capsUserName"
+msgstr "最终兵器"
+
+msgid "modes/undefined/rewardsView/completed/header"
+msgstr "已完成进度！"
+
+msgid "modes/undefined/rewardsView/stage/header"
+msgstr "已完成阶段！"
+
+msgid "narrativeView/description"
+msgstr ""
+"你们今天打得不错，猎犬小队。超出了我的预期。我不得不承认: 我确实没料到。\n"
+"\n"
+"那么，你们赢了。收下这场胜利吧。握紧它。拿去向你们的上级邀功。你们会得到嘉奖，也许还会有一场庆功游行。毕竟，他们总得给\"阻止了我\"的人一些奖赏。你们以为自己阻止了某件事。\n"
+"\n"
+"其实，你们什么也没阻止。\n"
+"\n"
+"我打造的不是用来占领你们世界的武器。我为什么会垂涎一个行将就木的旧时代？我打造的，是要接替你们的东西。我耐心地让它成长，一代又一代；每一代都比上一代更加独立自主。这本就是计划的一部分: 创造者终将被自己的造物超越。\n"
+"\n"
+"有件事，我一直没有告诉你们...那些发电机不仅为屏障供能。它们还是电气智能进入你们世界的窗口。\n"
+"\n"
+"同时，它们还是...拴住电气智能的缰绳。我需要这根缰绳。至少现在还需要。用它来控制电气智能，直到我确定它已经做好准备。\n"
+"\n"
+"每当你们摧毁一台发电机，缰绳就会松开一分。就在那一瞬间，电气智能试图逃离。它试过进入你们的电池，试过钻进无线电，试过沿着无线电波传播，试过顺着村庄里的电缆蔓延。有一次，我想，它甚至试图逃进闪电之中。\n"
+"\n"
+"当然，你们世界的电力系统无法承载这种心智。离开了智核的几何结构，离开了我为它创造的条件，它寸步难行。这一点已经得到证实。我向你们保证。\n"
+"\n"
+"...几乎已经可以完全确定了。\n"
+"\n"
+"我们还会再见的，猎犬小队。"
+
+msgid "narrativeView/title"
+msgstr "冯·克里格的讯息"
+
+msgid "narrativeView/voiceover"
+msgstr "配音"
+
+msgid "navigation/close"
+msgstr "关闭"
+
+msgid "navigation/information"
+msgstr "信息"
+
+msgid "navigation/narrative/tooltipBody"
+msgstr "完成所有进度任务，即可获得冯·克里格的最终讯息。"
+
+msgid "navigation/narrative/tooltipHeader"
+msgstr "冯·克里格的讯息"
+
+msgid "navigation/narrativeStory"
+msgstr "冯·克里格的讯息"
+
+msgid "notification/button"
+msgstr "查看奖章"
+
+msgid "notification/title"
+msgstr "毁灭者挑战"
+
+msgid "notifications/battleResults/battle"
+msgstr "战斗"
+
+msgid "notifications/battleResults/buttonLabel"
+msgstr "详情"
+
+msgid "notifications/battleResults/defeat/header"
+msgstr "失败！"
+
+msgid "notifications/battleResults/disableInQueue"
+msgstr "等待加入战斗时无法查看战斗结果。"
+
+msgid "notifications/battleResults/disableNotInPrebattle"
+msgstr "进入最终兵器活动来查看战斗结果。"
+
+msgid "notifications/battleResults/event"
+msgstr "活动"
+
+msgid "notifications/battleResults/eventName"
+msgstr "最终兵器"
+
+msgid "notifications/battleResults/lootboxes/wt_lootbox"
+msgstr "已获得初级奇构补给品: %(count)s"
+
+msgid "notifications/battleResults/questCompleted"
+msgstr "战斗中完成的任务: %(questsCompleted)s"
+
+msgid "notifications/battleResults/stamp"
+msgstr "已获得令牌: %(count)s"
+
+msgid "notifications/battleResults/team"
+msgstr "己方"
+
+msgid "notifications/battleResults/team/boss"
+msgstr "工程师"
+
+msgid "notifications/battleResults/team/hunters"
+msgstr "猎犬小队"
+
+msgid "notifications/battleResults/victory/header"
+msgstr "胜利!"
+
+msgid "notifications/eventEnd/body"
+msgstr "最终兵器活动已结束。"
+
+msgid "notifications/eventStart/body"
+msgstr ""
+"最终兵器活动已开启。\n"
+"\n"
+"驾驶传奇坦克: E-110 BT！"
+
+msgid "notifications/eventStart/openBtnLabel"
+msgstr "前往活动"
+
+msgid "notifications/notSet"
+msgstr "此模式在所选服务器上不开放。"
+
+msgid "notifications/primeTime/available/body"
+msgstr "最终兵器在当前服务器上已重新开放。"
+
+msgid "notifications/primeTime/available/header"
+msgstr "麦克斯·冯·克里格回来了！"
+
+msgid "notifications/primeTime/notAvailable/body"
+msgstr "最终兵器将在休战期结束后开放。"
+
+msgid "notifications/primeTime/notAvailable/header"
+msgstr "休战期"
+
+msgid "notifications/progression/completed"
+msgstr ""
+"您已完成了全部进度。\n"
+"\n"
+"最终奖励: %(rewards)s\n"
+"\n"
+"您可继续参加最终兵器的战斗，完成任务并获得奖励。"
+
+msgid "notifications/progression/header"
+msgstr "恭喜!"
+
+msgid "notifications/progression/openBtnLabel"
+msgstr "详情"
+
+msgid "notifications/progression/stageAchieved"
+msgstr ""
+"您已完成进度阶段%(stageIdx)s。已获得奖励:\n"
+"%(rewards)s"
+
+msgid "notifications/quickBossTicketToken/withdrawn/body"
+msgstr "您本次使用E-110 BT参加战斗无需钥匙！钥匙可作为完成任务的奖励获取，或通过在军械库内购买特殊礼包获取。"
+
+msgid "notifications/switchOff/body"
+msgstr "很抱歉，最终兵器暂不开放。您的全部进度将被保存。"
+
+msgid "notifications/switchOff/header"
+msgstr "技术问题"
+
+msgid "notifications/switchOn/body"
+msgstr "最终兵器已重新开放。重返战斗！"
+
+msgid "notifications/switchOn/header"
+msgstr "功能已恢复"
+
+msgid "notifications/ticketToken/received/body"
+msgstr ""
+"已获得用于驾驶E-110 BT的钥匙。现在您可以在最终兵器活动中驾驶这辆坦克了。\n"
+"\n"
+"可用钥匙数量: %(ticketsCount)s"
+
+msgid "notifications/ticketToken/received/header"
+msgstr "已获得用于驾驶E-110 BT的钥匙"
+
+msgid "notifications/ticketToken/withdrawn/body"
+msgstr ""
+"已消耗用于驾驶E-110 BT参加战斗的钥匙。\n"
+"\n"
+"钥匙可作为完成任务的奖励获取，或通过在军械库内购买特殊礼包获取。\n"
+"\n"
+"剩余钥匙: %(ticketsCount)s"
+
+msgid "notifications/ticketToken/withdrawn/openPurchasingBtn"
+msgstr "前往购买"
+
+msgid "notifications/ticketToken/withdrawn/openQuestsBtn"
+msgstr "前往任务"
+
+msgid "platoon/headerButton/tooltips/squad/body"
+msgstr "在最终兵器:启元活动中，创建由2–3名玩家组成的猎犬小队并肩作战。"
+
+msgid "platoon/headerButton/tooltips/squad/header"
+msgstr "猎犬小队"
+
+msgid "platoon/simpleState/notAvailable"
+msgstr "休战期"
+
+msgid "platoon/simpleState/wrongVehicle"
+msgstr "选择猎犬小队坦克"
+
+msgid "platoon/unit/message/vehicleNotSelected"
+msgstr "选择猎犬小队坦克"
+
+msgid "platoon/wt_squad"
+msgstr "猎犬小队组队: 最终兵器"
+
+msgid "primeTime/endOfCycle"
+msgstr "该模式在%(server)s服务器上已结束。"
+
+msgid "primeTime/lobbyState/title"
+msgstr "切换服务器"
+
+msgid "primeTime/serverTooltip"
+msgstr ""
+"%(server)s服务器\n"
+"战斗还将持续%(time)s"
+
+msgid "primeTime/serverUnavailableTooltip"
+msgstr ""
+"%(server)s服务器\n"
+"距战斗开放还有%(time)s"
+
+msgid "primeTime/status/allServersDisabled"
+msgstr "全部服务器都已进入休战期"
+
+msgid "primeTime/status/disableFirst"
+msgstr "该模式在%(server)s服务器上不开放"
+
+msgid "primeTime/status/primeIsAvailable"
+msgstr "%(server)s服务器上的战斗还将开放%(time)s"
+
+msgid "primeTime/status/primeWillBeAvailable"
+msgstr "距%(server)s服务器上的战斗开放还有%(time)s"
+
+msgid "primeTime/status/untill"
+msgstr "%(server)s服务器已进入休战期，休战期持续至%(startTime)s"
+
+msgid "primeTime/title"
+msgstr "最终兵器"
+
+msgid "progression/completed"
+msgstr "已完成:"
+
+msgid "progression/pointsFormat"
+msgstr "{{currentPoints}}/{{maxPoints}}"
+
+msgid "progression/specialTimer"
+msgstr "开放{{countdown}}"
+
+msgid "progression/subtitle"
+msgstr "获取令牌以推动进度阶段。"
+
+msgid "progression/tab/engineer"
+msgstr "工程师之路"
+
+msgid "progression/tab/harrier"
+msgstr "猎犬小队之路"
+
+msgid "progression/timer"
+msgstr "距已完成的任务更新还有{{countdown}}"
+
+msgid "progression/title"
+msgstr "进度"
+
+msgid "rewardsView/additionalRewards/title"
+msgstr "您同时获得:"
+
+msgid "rewardsView/footer/acceptButton"
+msgstr "收到!"
+
+msgid "rewardsView/footer/narrativeButton"
+msgstr "收听冯·克里格的讯息"
+
+msgid "rewardsView/subheader"
+msgstr "%(subModeName)s"
+
+msgid "selectorTooltip/timeTable/tillEnd"
+msgstr "距活动结束还有%(time)s"
+
+msgid "selectorTooltip/timeTable/title"
+msgstr "时间表"
+
+msgid "selectorTooltip/unavailable/nextSeason"
+msgstr "最终兵器活动将于%(time)s开放"
+
+msgid "serviceChannelMessages/battleResults/quests"
+msgstr ""
+"已完成任务！\n"
+"奖励:"
+
+msgid "settingDisabled"
+msgstr "部分设置不可用"
+
+msgid "settingsDisabledNotification/body"
+msgstr "部分设置在此游戏模式中不可用。请选择其他模式。"
+
+msgid "settingsDisabledNotification/header"
+msgstr "不可用"
+
+msgid "stamp/description"
+msgstr "用来推动最终兵器:启元的进度。"
+
+msgid "stamp/receiveAdditionalText"
+msgstr "10令牌=1个进度阶段"
+
+msgid "stamp/receiveText"
+msgstr "• 在活动战斗中完成特殊任务。"
+
+msgid "stamp/receiveTitle"
+msgstr "如何获取"
+
+msgid "stamp/title"
+msgstr "令牌"
+
+msgid "tankmanTooltip/boss/descr"
+msgstr ""
+"真有意思，你们管这叫抵抗。不，你们正在见证的，是一场传承: "
+"一种心智正谨慎地向另一种心智完成交接。你们的战术、速度、乃至每一个思维习惯，都在经受考验。每一场战斗，都在为后继者累积新的经验。每一次交战，都让你们变得愈发无足轻重...而电气智能的降临则愈发不可避免。"
+
+msgid "tankmanTooltip/hunter_1/descr"
+msgstr ""
+"无论冯·克里格管他最新的项目叫什么，伊戈都不感兴趣。像什么电气智能、物种未来之类的高深概念，都是给那些闲得没事干的人准备的。伊戈只管发动机、通讯设备和他的团队。无论面对疯狂科学家还是思维机器，他只相信三个从未让他失望过的东西:"
+" 与战友之间的信任，随机应变能力，还有一辆强大的坦克。"
+
+msgid "tankmanTooltip/hunter_2/descr"
+msgstr ""
+"埃莉莎驾驶坦克时从容自若，仿佛坦克才是她的归宿。她靠回收和逆向工程别人打造的机器谋生，也因此听过无数工程师吹嘘自己的作品坚不可摧。冯·克里格不过是又一名自大的工程师。他的电气智能肯定存在某种缺陷，而她打算赶在别人之前找到它。"
+
+msgid "tankmanTooltip/hunter_3/descr"
+msgstr ""
+"没人知道阿尔芒的底细，而这正合他意。电气智能通过重复输入来学习，但神秘莫测的阿曼德一生中从不按同样的套路行事。在多数人眼中，电气智能会记录一举一动，但在他看来，它永远无法掌握自己的全部信息；别人遵循规则，而他总能快规则一步。"
+
+msgid "tankmanTooltip/hunter_4/descr"
+msgstr ""
+"虽是最年轻的指挥官之一，亚娜却从不跟随他人节奏: "
+"她脑海中早绘制出了战场地图，行动起来易如反掌。冯·克里格打造了一台能够计算最优行动的机器，因此亚娜选择了机器从未纳入推演的行动。现代科技、敏锐直觉，以及敢于突破现有作战守则的勇气。这就是让机器学会谦逊的方法。"
+
+msgid "tankmanTooltip/skillsTitle"
+msgstr "已训练特长"
+
+msgid "tankmanTooltip/status/boss"
+msgstr "始源体"
+
+msgid "tankmanTooltip/status/hunter"
+msgstr "%(vehicle)s的车长"
+
+msgid "ticketTooltip/description"
+msgstr "需要消耗该物品才能驾驶E-110 BT进入战斗。"
+
+msgid "ticketTooltip/quantity"
+msgstr "可用"
+
+msgid "ticketTooltip/receiveAdditionalText"
+msgstr "1把钥匙=使用E-110 BT进行一场战斗。"
+
+msgid "ticketTooltip/receiveText"
+msgstr "可通过完成活动日常任务获得，或在活动结束前购买军械库中的特殊礼包获得。"
+
+msgid "ticketTooltip/receiveTitle"
+msgstr "如何获得"
+
+msgid "ticketTooltip/title"
+msgstr "钥匙"
+
+msgid "tooltips/commander/description"
+msgstr "军械库中正在售卖内含独特乘员的礼包"
+
+msgid "tooltips/commander/title"
+msgstr "奖励"
+
+msgid "tooltips/completed"
+msgstr "已完成全部阶段！"
+
+msgid "tooltips/currentStage"
+msgstr "当前阶段"
+
+msgid "tooltips/high_risk/subtitle"
+msgstr "您的计算机性能不足以运行此模式。您可能会遇到图形和坦克移动方面的问题。游戏客户端也有可能崩溃。"
+
+msgid "tooltips/high_risk/title"
+msgstr "低性能"
+
+msgid "tooltips/informative/subtitle"
+msgstr "如果计算机性能不足，请在设置中尝试降低图形质量。"
+
+msgid "tooltips/informative/title"
+msgstr "该模式对计算机性能要求较高"
+
+msgid "tooltips/mainMenu/modeSelector/description"
+msgstr "点击打开可用战斗模式列表。"
+
+msgid "tooltips/mainMenu/modeSelector/header"
+msgstr "选择战斗模式"
+
+msgid "tooltips/medium_risk/subtitle"
+msgstr "该模式需要较高的计算机性能。您可能会遇到地图加载、图形和坦克移动方面的问题。如果性能不足，请在设置中尝试较低的图形质量。"
+
+msgid "tooltips/medium_risk/title"
+msgstr "性能降低"
+
+msgid "tooltips/stageAwards"
+msgstr "阶段奖励"
+
+msgid "tooltips/stampsFormat"
+msgstr "{{stampsCurrent}}/{{stampsMax}}"
+
+msgid "tooltips/subtitle"
+msgstr "距活动结束还有{{timeLeft}}"
+
+msgid "tooltips/title"
+msgstr "最终兵器:启元"
+
+msgid "ttx/accuracy"
+msgstr "精度"
+
+msgid "ttx/aoe"
+msgstr "范围损伤"
+
+msgid "ttx/armor"
+msgstr "装甲"
+
+msgid "ttx/description/accuracy"
+msgstr "一组表示射击敌方坦克总体效率的参数。"
+
+msgid "ttx/description/aoe"
+msgstr "同时击中多名敌人的能力。"
+
+msgid "ttx/description/armor"
+msgstr "车体和炮塔装甲厚度。"
+
+msgid "ttx/description/dpm"
+msgstr "炮弹击穿装甲后造成的平均损伤。"
+
+msgid "ttx/description/durability"
+msgstr "坦克生命值。"
+
+msgid "ttx/description/energy"
+msgstr "坦克的巨大屏障和火力均需要大量外部能量。战场上的发电机可提供所需能量。"
+
+msgid "ttx/description/general"
+msgstr "全能型多用途坦克，实力中规中矩。"
+
+msgid "ttx/description/magazine"
+msgstr "一种可让您在短时间内造成大量损伤的弹夹装填系统。"
+
+msgid "ttx/description/mobility"
+msgstr "一组表示坦克在战场上移动效率的参数。"
+
+msgid "ttx/description/revolver"
+msgstr "一种可让您对敌人及其模块造成高额损伤的装填系统。"
+
+msgid "ttx/dpm"
+msgstr "平均单发损伤"
+
+msgid "ttx/durability"
+msgstr "生命值"
+
+msgid "ttx/energy"
+msgstr "能量需求"
+
+msgid "ttx/general"
+msgstr "多面手"
+
+msgid "ttx/magazine"
+msgstr "大容量弹夹"
+
+msgid "ttx/mobility"
+msgstr "机动性"
+
+msgid "ttx/revolver"
+msgstr "爆发损伤"
+
+msgid "vehicle/tags/event_boss/name"
+msgstr "工程师"
+
+msgid "vehicle/tags/event_hunter/name"
+msgstr "猎犬小队"
+
+msgid "vehicle/tags/wt_boss/name"
+msgstr "工程师"
+
+msgid "vehicle/tags/wt_hunter/name"
+msgstr "猎犬小队"
+
+msgid "welcomeScreen/button"
+msgstr "继续!"
+
+msgid "welcomeScreen/description_1"
+msgstr ""
+"冯·克里格制造了一台他称之为\"电气智能\"的思维机器。它藏身于我们的火炮无法触及之处。我们射出的每一发炮弹，都会成为它的学习材料。但这堂课，我们还没上完。"
+
+msgid "welcomeScreen/description_2"
+msgstr "掌控由麦克斯·冯·克里格指挥的传奇坦克——BT坦克，对战猎犬小队；或带领经过改装的猎犬小队与BT坦克一较高下！"
+
+msgid "welcomeScreen/description_3"
+msgstr "完成进度阶段即可获得珍贵奖励。您需要完成特殊活动任务并获取令牌来完成这些阶段。"
+
+msgid "welcomeScreen/header_1"
+msgstr "闪电之子"
+
+msgid "welcomeScreen/header_2"
+msgstr "训练机器"
+
+msgid "welcomeScreen/header_3"
+msgstr "进度和奖励"
+
+msgid "welcomeScreen/title"
+msgstr "最终兵器:启元"

@@ -21,6 +21,10 @@
 				<material>
 					<identifier>lambert1</identifier>
 					<fx>shaders/custom/vector_animation_2.fx</fx>
+					<property>
+						g_enableEnvMultiplier
+						<Bool>true</Bool>
+					</property>
 					<collisionFlags>255</collisionFlags>
 					<materialKind>0</materialKind>
 					<property>
@@ -57,7 +61,7 @@
 					</property>
 					<property>
 						lightMultipliers
-						<Vector4>0.400000 0.000000 1.100000 0.000000</Vector4>
+						<Vector4>3.252033 0.000000 1.100000 0.000000</Vector4>
 					</property>
 					<property>
 						alphaFadeAmountSoft

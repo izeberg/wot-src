@@ -1,6 +1,7 @@
 from __future__ import absolute_import, division, print_function
 import typing, logging
 from functools import partial
+import BattleReplay
 from future.utils import lrange, viewitems, viewvalues
 import AnimationSequence, BigWorld, Math, material_kinds
 from GenericComponents import findSlot
@@ -12,6 +13,7 @@ from gui.impl.gen import R
 from helpers import i18n
 from helpers.EffectsList import EffectsListPlayer
 from helpers.EntityExtra import EntityExtra
+from helpers.prefab_effects import resolveGunPrefabEffects
 from helpers.laser_sight_matrix_provider import LaserSightMatrixProvider
 from items import vehicles
 from items.components.component_constants import MAIN_TRACK_PAIR_IDX
@@ -48,10 +50,14 @@ class ShowShooting(EntityExtra):
         gunInstallationSlot = vehicle.typeDescriptor.gunInstallations[DEFAULT_GUN_INSTALLATION_INDEX]
         data['_gunInstallationSlot'] = gunInstallationSlot
         data['_effectsListPlayer'] = None
+        data['_skipLegacyGroundWave'] = False
         gunDescr = gunInstallationSlot.gun
+        gunPrefabEffects, excludeTags = resolveGunPrefabEffects(gunDescr.prefabEffects)
+        if gunPrefabEffects is not None and gunPrefabEffects.groundwave.prefab:
+            data['_skipLegacyGroundWave'] = True
         if gunDescr.effects is not None:
             stages, effects, _ = gunDescr.effects
-            data['_effectsListPlayer'] = EffectsListPlayer(effects, stages, **data)
+            data['_effectsListPlayer'] = EffectsListPlayer(effects, stages, excludeTags, **data)
         data['entity_id'] = vehicle.id
         data['_burst'] = (
          burstCount, gunDescr.burst[1])
@@ -77,7 +83,8 @@ class ShowShooting(EntityExtra):
                 self.stop(data)
                 return
             processVehicleSingleShot(vehicle, data['_gunInstallationSlot'])
-            self.__postVehicleShotEvent(vehicle, data['_shellType'])
+            if not data['_gunInstallationSlot'].gun.prefabBased:
+                self.__postVehicleShotEvent(vehicle, data['_shellType'])
             burstCount, burstInterval = data['_burst']
             gunModel = data['_gunModel']
             effPlayer = data['_effectsListPlayer']
@@ -100,7 +107,7 @@ class ShowShooting(EntityExtra):
                 avatar = BigWorld.player()
                 if data['entity'].isPlayerVehicle or vehicle is avatar.getVehicleAttached():
                     avatar.getOwnVehicleShotDispersionAngle(avatar.gunRotator.turretRotationSpeed, withShot)
-                if effPlayer is not None:
+                if effPlayer is not None and not data['_skipLegacyGroundWave']:
                     groundWaveEff = effPlayer.effectsList.relatedEffects.get('groundWave')
                     if groundWaveEff is not None:
                         self._doGroundWaveEffect(data['entity'], groundWaveEff, gunModel)
@@ -116,6 +123,8 @@ class ShowShooting(EntityExtra):
         return
 
     def __postVehicleShotEvent(self, vehicle, shellType):
+        if BattleReplay.g_replayCtrl.isTimeWarpInProgress:
+            return
         if not vehicle.appearance.isCompositionReady:
             _logger.debug('Composition is not ready to post VehicleShotEvent')
             return
@@ -167,7 +176,7 @@ class ShowShootingMultiGun(ShowShooting):
         data['_gunInstallationSlot'] = gunInstallationSlot
         gunDescr = vehicle.typeDescriptor.gun
         if currentGuns == self._SHOT_ALL_GUNS:
-            data['_gunIndex'] = lrange(0, len(gunDescr.effects))
+            data['_gunIndex'] = lrange(0, len(gunDescr.multiGun))
             data['_gunSequence'] = [data['_gunIndex']] * burstCount
         else:
             data['_gunIndex'] = [
@@ -180,9 +189,10 @@ class ShowShootingMultiGun(ShowShooting):
             positions = [ (multiGunInstance.gunFire,) for multiGunInstance in gunDescr.multiGun ]
         data['entity_id'] = vehicle.id
         effectPlayers = {}
-        for gunIndex in data['_gunIndex']:
-            stages, effects, _ = gunDescr.effects[gunIndex]
-            effectPlayers[gunIndex] = EffectsListPlayer(effects, stages, position=positions[gunIndex], **data)
+        if gunDescr.effects is not None:
+            for gunIndex in data['_gunIndex']:
+                stages, effects, _ = gunDescr.effects[gunIndex]
+                effectPlayers[gunIndex] = EffectsListPlayer(effects, stages, position=positions[gunIndex], **data)
 
         data['_effectsListPlayers'] = effectPlayers
         data['_burst'] = (
@@ -245,6 +255,8 @@ class ShowShootingMultiGun(ShowShooting):
 
         gunModel = data['_gunModel']
         for gunIndex in gunIndexes:
+            if gunIndex not in data['_effectsListPlayers']:
+                continue
             effPlayer = data['_effectsListPlayers'][gunIndex]
             if isLastEffect:
                 effPlayer.play(gunModel, None, partial(self.stop, data))

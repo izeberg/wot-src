@@ -21,18 +21,7 @@
 					<identifier>tank_guns</identifier>
 					<property>
 						g_crashUVTiling
-						<Vector4>
-							1 1 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
+						<Vector4>1.000000 1.000000 0.000000 0.000000</Vector4>
 					</property>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
@@ -61,23 +50,15 @@
 						crashTileMap
 						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
 					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
-					</property>
 				</material>
-				<groupOrigin>-0.007723 0.002431 1.115569</groupOrigin>
+				<groupOrigin>-0.009228 -0.000696 0.763772</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.207105 -0.154667 -0.025000</min>
-		<max>0.191658 0.159529 2.248749</max>
+		<min>-0.223603 -0.161030 -0.025000</min>
+		<max>0.205147 0.159637 1.541720</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>902</geometrySize>
+	<geometrySize>1764</geometrySize>
 </root>

@@ -10,38 +10,6 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "dailyQuestsIntroView/buttons/close"
-msgstr "关闭"
-
-msgid "dailyQuestsIntroView/buttons/confirm"
-msgstr "收到！"
-
-msgid "dailyQuestsIntroView/info/mode/description"
-msgstr "热身模式将让您重温游戏的基础知识。您将与AI控制的坦克展开对抗，战斗结果不会计入您的统计数据。您可以随时退出热身模式，继续参加标准模式。"
-
-msgid "dailyQuestsIntroView/info/mode/title"
-msgstr "热身模式"
-
-msgid "dailyQuestsIntroView/info/quests/description"
-msgstr ""
-"完成任务和厉兵秣马进度阶段来获得珍贵的游戏内奖励。每完成一个普通、高级或奖励任务都可以推进进度。您可通过参加热身和标准模式的战斗来完成任务。"
-
-msgid "dailyQuestsIntroView/info/quests/descriptionBP"
-msgstr ""
-"完成任务和厉兵秣马进度阶段来获得珍贵的游戏内奖励。战斗通行证期间还有机会获得战斗通行证点数奖励。您可通过参加热身和标准模式的战斗来完成任务。"
-
-msgid "dailyQuestsIntroView/info/quests/title"
-msgstr "厉兵秣马"
-
-msgid "dailyQuestsIntroView/info/rewards/description"
-msgstr "您可以获得VIII级租用金币坦克、VI级可研发坦克，以及坦克的研发及购买折扣奖励。完成进度后，您将获得主要奖励。"
-
-msgid "dailyQuestsIntroView/info/rewards/title"
-msgstr "奖励"
-
-msgid "dailyQuestsIntroView/title"
-msgstr "厉兵秣马"
-
 msgid "mainRewardTooltip/description"
 msgstr "完成厉兵秣马进度后，您将获得:"
 
@@ -49,7 +17,7 @@ msgid "mainRewardTooltip/title"
 msgstr "主要奖励"
 
 msgid "mainRewardTooltip/vehicleRewardLabel"
-msgstr "%(level)s级坦克的研发和购买折扣"
+msgstr "研发和购买{{level}}级坦克的折扣"
 
 msgid "modeInfoTooltip/description"
 msgstr ""
@@ -65,21 +33,51 @@ msgid "modeInfoTooltip/title"
 msgstr "热身模式"
 
 msgid "selectableRewardTooltip/basic/description"
-msgstr "可选择任意一辆%(level)s级可研发坦克。该坦克的模块均已研发，并附带乘员和车位。"
+msgstr "可选择任意一辆{{level}}级可研发坦克。该坦克的模块均已研发，并附带乘员和车位。"
 
 msgid "selectableRewardTooltip/basic/title"
-msgstr "%(level)s级坦克"
+msgstr "{{level}}级坦克"
 
 msgid "selectableRewardTooltip/discount/description"
 msgstr ""
-"%(level)s级坦克的%(researchDiscount)s研发折扣和%(purchaseDiscount)s购买折扣。可选择任意一辆可研发坦克。"
+"{{level}}级坦克的{{researchDiscount}}研发折扣和{{purchaseDiscount}}购买折扣。可选择任意一辆可研发坦克。"
 
 msgid "selectableRewardTooltip/discount/footer"
 msgstr ""
-"{whiteSpanish_Open}研发{whiteSpanish_Close}折扣已加到坦克蓝图碎片所提供的折扣上。可用的最大{whiteSpanish_Open}购买{whiteSpanish_Close}折扣也已应用。"
+"{{@ style (color $color)}}研发{{/}}折扣已添加到坦克蓝图碎片所提供的折扣上。可用的最大{{@ style (color "
+"$color)}}购买{{/}}折扣也已应用。"
 
 msgid "selectableRewardTooltip/discount/title"
-msgstr "%(level)s级坦克的折扣"
+msgstr "{{level}}级坦克的折扣"
+
+msgid "umgIntroView/buttons/confirm"
+msgstr "收到!"
+
+msgid "umgIntroView/info/mode/description"
+msgstr "热身模式将让您重温游戏的基础知识。您将与AI控制的坦克展开对抗，战斗结果不会计入您的统计数据。您可以随时退出热身模式，继续参加标准模式。"
+
+msgid "umgIntroView/info/mode/title"
+msgstr "热身模式"
+
+msgid "umgIntroView/info/quests/description/battlePass"
+msgstr ""
+"完成任务和厉兵秣马进度阶段来获得珍贵的游戏内奖励。战斗通行证期间还有机会获得战斗通行证点数奖励。您可通过参加热身和标准模式的战斗来完成任务。"
+
+msgid "umgIntroView/info/quests/description/default"
+msgstr ""
+"完成任务和厉兵秣马进度阶段来获得珍贵的游戏内奖励。每完成一个普通、高级或奖励任务都可以推进进度。您可通过参加热身和标准模式的战斗来完成任务。"
+
+msgid "umgIntroView/info/quests/title"
+msgstr "厉兵秣马"
+
+msgid "umgIntroView/info/rewards/description"
+msgstr "您可以获得VIII级租用金币坦克、VI级可研发坦克，以及坦克的研发及购买折扣奖励。完成进度后，您将获得主要奖励。"
+
+msgid "umgIntroView/info/rewards/title"
+msgstr "奖励"
+
+msgid "umgIntroView/title"
+msgstr "厉兵秣马"
 
 msgid "vehicleDiscountRewardTooltip/description"
 msgstr "%(research)s折扣已加到坦克蓝图碎片所提供的折扣上。可用的最大%(purchase)s折扣也已应用。"
@@ -118,7 +116,7 @@ msgid "winbackLeaveModeDialogView/title"
 msgstr "退出热身模式？"
 
 msgid "winbackPopover/battlesCount"
-msgstr "剩余场次: %(battlesCount)s"
+msgstr "剩余场次: {{battlesCount}}"
 
 msgid "winbackPopover/description"
 msgstr "与AI控制的坦克对抗的战斗不会计入您的统计数据。"
@@ -151,19 +149,15 @@ msgid "winbackRewardView/secondRowTitle"
 msgstr "您同时获得:"
 
 msgid "winbackRewardView/selectableReward/discount"
-msgstr "%(level)s级坦克的%(expDiscount)s研发折扣和%(priceDiscount)s购买折扣"
-
-msgid "winbackRewardView/selectableReward/expDiscount"
-msgstr "{white_Open}%(expDiscount)s%{white_Close}"
+msgstr ""
+"{{level}}级坦克的{{@ style (bold) (color $color1)}}{{expDiscount}}%{{/}}研发折扣和{{@"
+" style (bold) (color $color2)}}{{priceDiscount}}%{{/}}购买折扣"
 
 msgid "winbackRewardView/selectableReward/gift"
-msgstr "%(level)s级坦克"
-
-msgid "winbackRewardView/selectableReward/priceDiscount"
-msgstr "{cream_Open}%(priceDiscount)s%{cream_Close}"
+msgstr "{{level}}级坦克"
 
 msgid "winbackRewardView/selectableReward/reserveDiscount"
-msgstr "%(level)s级坦克的折扣"
+msgstr "{{level}}级坦克的折扣"
 
 msgid "winbackRewardView/subtitle/regularProgressionCompleted"
 msgstr "您已完成一系列日常任务"
@@ -188,26 +182,20 @@ msgstr "已完成进度"
 
 msgid "winbackRewardView/vehicleReward/discount"
 msgstr ""
-"%(expDiscount)s研发折扣\n"
-"和%(priceDiscount)s购买折扣"
-
-msgid "winbackRewardView/vehicleReward/expDiscount"
-msgstr "{white_Open}%(expDiscount)s%{white_Close}"
+"{{@ style (bold) (color $color1)}}{{expDiscount}}%{{/}}研发折扣和{{@ style (bold)"
+" (color $color2)}}{{priceDiscount}}%{{/}}购买折扣"
 
 msgid "winbackRewardView/vehicleReward/inHangar"
 msgstr "在车库中"
 
-msgid "winbackRewardView/vehicleReward/priceDiscount"
-msgstr "{cream_Open}%(priceDiscount)s%{cream_Close}"
-
 msgid "winbackRewardView/vehicleReward/rent"
-msgstr "剩余天数: %(days)s"
+msgstr "租用天数: {{days}}"
 
 msgid "winbackRewardView/vehicleReward/reserveDiscount"
 msgstr "研发和购买折扣"
 
 msgid "winbackSelectableRewardView/bluePrintReward/value"
-msgstr "x%(value)s"
+msgstr "x{{value}}"
 
 msgid "winbackSelectableRewardView/buttons/cancel"
 msgstr "稍后选择"
@@ -222,13 +210,13 @@ msgid "winbackSelectableRewardView/buttons/reset"
 msgstr "恢复默认"
 
 msgid "winbackSelectableRewardView/category/rewardsAvailabilityCounter"
-msgstr "%(rewardsSelected)s/%(rewardsAvailable)s"
+msgstr "{{rewardsSelected}}/{{rewardsAvailable}}"
 
 msgid "winbackSelectableRewardView/category/title"
 msgstr "坦克折扣"
 
 msgid "winbackSelectableRewardView/category/titleDiscount"
-msgstr "%(vehicleLevel)s级坦克"
+msgstr "{{vehicleLevel}}级坦克"
 
 msgid "winbackSelectableRewardView/error/button"
 msgstr "收到！"
@@ -240,13 +228,13 @@ msgid "winbackSelectableRewardView/error/title"
 msgstr "无法进行奖励选择"
 
 msgid "winbackSelectableRewardView/filter/allTheVehiclesHaveBeenExplored"
-msgstr "您已研发所有的%(vehicleLevel)s级坦克。现在您将获得系别蓝图碎片作为奖励。"
+msgstr "您已研发所有的{{vehicleLevel}}级坦克。现在您将获得系别蓝图碎片作为奖励。"
 
 msgid "winbackSelectableRewardView/filter/placeholder"
 msgstr "按名称搜索"
 
 msgid "winbackSelectableRewardView/filter/searchResult"
-msgstr "%(itemsShown)s {par_Open}/ %(itemsAvailable)s{par_Close}"
+msgstr "{{itemsShown}}{{@ style (color $color)}}/{{itemsAvailable}}{{/}}"
 
 msgid "winbackSelectableRewardView/filter/shown"
 msgstr "显示:"
@@ -258,7 +246,7 @@ msgid "winbackSelectableRewardView/filter/tooltip/header"
 msgstr "默认设置"
 
 msgid "winbackSelectableRewardView/footer/actionText/active"
-msgstr "已选择奖励: %(amountRewards)s%(infoIcon)s"
+msgstr "已选择奖励: {{amountRewards}}{{infoIcon}}"
 
 msgid "winbackSelectableRewardView/footer/actionText/disable"
 msgstr "从所提供的类别中选择奖励"
@@ -267,29 +255,31 @@ msgid "winbackSelectableRewardView/resetInf/text"
 msgstr "没有匹配结果。请修改或重置筛选条件。"
 
 msgid "winbackSelectableRewardView/selectedReward/tooltip/blueprint/subtitle"
-msgstr "{white_Open}系别蓝图碎片(%(countryName)s)x%(bluePrintsAmount)s{white_Close}"
+msgstr ""
+"{{@ style (color $color)}}{{bluePrintsAmount}}个系别蓝图碎片{{/}}({{countryName}})"
 
 msgid ""
 "winbackSelectableRewardView/selectedReward/tooltip/rewardDiscount/subtitle"
 msgstr ""
-"{white_Open}%(name)s{white_Close}(%(expDiscount)s%研发折扣和%(priceDiscount)s%购买折扣)"
+"{{@ style (color "
+"$color)}}{{name}}{{/}}({{expDiscount}}%研发折扣和{{priceDiscount}}%购买折扣)"
 
 msgid ""
 "winbackSelectableRewardView/selectedReward/tooltip/rewardDiscount/title"
-msgstr "%(level)s级坦克的折扣"
+msgstr "{{level}}级坦克的折扣"
 
 msgid ""
 "winbackSelectableRewardView/selectedReward/tooltip/rewardForGift/subtitle"
-msgstr "{white_Open}%(name)s{white_Close}(已研发所有模块、乘员和车位)"
+msgstr "{{@ style (color $color)}}{{name}}{{/}}(已研发所有模块、乘员和车位)"
 
 msgid "winbackSelectableRewardView/selectedReward/tooltip/rewardForGift/title"
-msgstr "%(level)s级坦克"
+msgstr "{{level}}级坦克"
 
 msgid "winbackSelectableRewardView/selectedReward/tooltip/subtitle"
 msgstr "点击\"领取\"按钮即可获得所选奖励。"
 
 msgid "winbackSelectableRewardView/selectedReward/tooltip/title"
-msgstr "已选择奖励: %(amountRewards)s"
+msgstr "已选择奖励: {{@ style (color $color)}}{{amountRewards}}{{/}}"
 
 msgid "winbackSelectableRewardView/tabs/buy"
 msgstr "购买"
@@ -304,7 +294,7 @@ msgid "winbackSelectableRewardView/title/text"
 msgstr "选择您的奖励"
 
 msgid "winbackSelectableRewardView/vehicleName"
-msgstr "%(type)s{cream_Open}%(level)s{cream_Close}%(name)s"
+msgstr "{{type}}{{@ style (color $color)}}{{level}}{{/}}{{name}}"
 
 msgid "winbackSelectableRewardView/vehicleType/AT-SPG"
 msgstr "自行反坦克炮"

@@ -743,106 +743,6 @@
 			</block>
 			<block>
 				<class>SendLocalEvent</class>
-				<id>SendLocalEvent_11</id>
-				<buddy>ListenLocalEvent_8</buddy>
-				<params>
-					<param>
-						ListenLocalEvent_8
-						<name>Event Name</name>
-						<type>StringT</type>
-					</param>
-				</params>
-			</block>
-			<block>
-				<class>If</class>
-				<id>If_20</id>
-			</block>
-			<block>
-				<class>If</class>
-				<id>If_1</id>
-			</block>
-			<block>
-				<class>If</class>
-				<id>If_12</id>
-			</block>
-			<block>
-				<class>OnAnyVehicleDestroyed</class>
-				<id>OnAnyVehicleDestroyed_1</id>
-				<slots>
-					<slot>
-						<name>active</name>
-						<const>\true\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>CompareVehicles</class>
-				<id>CompareVehicles_8</id>
-			</block>
-			<block>
-				<class>IsVehicleValid</class>
-				<id>IsVehicleValid_1</id>
-			</block>
-			<block>
-				<class>And</class>
-				<id>And_2</id>
-				<params>
-					<param>
-						2
-						<name>Input Count</name>
-						<type>IntT</type>
-					</param>
-				</params>
-			</block>
-			<block>
-				<class>IsVehicleValid</class>
-				<id>IsVehicleValid_2</id>
-			</block>
-			<block>
-				<class>CompareVehicles</class>
-				<id>CompareVehicles_3</id>
-			</block>
-			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_35</id>
-				<buddy>Variable_6</buddy>
-				<params>
-					<param>
-						VehicleT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-			</block>
-			<block>
-				<class>SendLocalEvent</class>
-				<id>SendLocalEvent_5</id>
-				<buddy>ListenLocalEvent_3</buddy>
-				<params>
-					<param>
-						ListenLocalEvent_3
-						<name>Event Name</name>
-						<type>StringT</type>
-					</param>
-				</params>
-			</block>
-			<block>
-				<class>If</class>
-				<id>If_24</id>
-			</block>
-			<block>
-				<class>Choice</class>
-				<id>Choice_2</id>
-				<params>
-					<param>
-						5
-						<name>Output Count</name>
-						<type>IntT</type>
-					</param>
-				</params>
-			</block>
-			<block>
-				<class>SendLocalEvent</class>
 				<id>SendLocalEvent_6</id>
 				<buddy>ListenLocalEvent_4</buddy>
 				<params>
@@ -854,8 +754,15 @@
 				</params>
 			</block>
 			<block>
-				<class>OnVehicleShaked</class>
-				<id>OnVehicleShaked_3</id>
+				<class>Macro</class>
+				<id>Macro_1</id>
+				<params>
+					<param>
+						CustomizationVehicleEvents
+						<name>Macro Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
 			</block>
 			<block>
 				<class>SendLocalEvent</class>
@@ -870,8 +777,16 @@
 				</params>
 			</block>
 			<block>
-				<class>CompareVehicles</class>
-				<id>CompareVehicles_9</id>
+				<class>SendLocalEvent</class>
+				<id>SendLocalEvent_5</id>
+				<buddy>ListenLocalEvent_3</buddy>
+				<params>
+					<param>
+						ListenLocalEvent_3
+						<name>Event Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
 			</block>
 			<block>
 				<class>GetVariable</class>
@@ -933,6 +848,79 @@
 			<block>
 				<class>GetVariable</class>
 				<id>GetVariable_34</id>
+				<buddy>Variable_6</buddy>
+				<params>
+					<param>
+						VehicleT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>SendLocalEvent</class>
+				<id>SendLocalEvent_11</id>
+				<buddy>ListenLocalEvent_8</buddy>
+				<params>
+					<param>
+						ListenLocalEvent_8
+						<name>Event Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_12</id>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_1</id>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_20</id>
+			</block>
+			<block>
+				<class>OnAnyVehicleDestroyed</class>
+				<id>OnAnyVehicleDestroyed_1</id>
+				<slots>
+					<slot>
+						<name>active</name>
+						<const>\true\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>CompareVehicles</class>
+				<id>CompareVehicles_8</id>
+			</block>
+			<block>
+				<class>IsVehicleValid</class>
+				<id>IsVehicleValid_1</id>
+			</block>
+			<block>
+				<class>And</class>
+				<id>And_2</id>
+				<params>
+					<param>
+						2
+						<name>Input Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>IsVehicleValid</class>
+				<id>IsVehicleValid_3</id>
+			</block>
+			<block>
+				<class>CompareVehicles</class>
+				<id>CompareVehicles_3</id>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_35</id>
 				<buddy>Variable_6</buddy>
 				<params>
 					<param>
@@ -1848,148 +1836,28 @@
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>If_1</from>
-				<input>input</input>
-				<to>SendLocalEvent_11</to>
-				<output>true</output>
-			</connection>
-			<connection>
-				<from>If_12</from>
-				<input>input</input>
-				<to>If_20</to>
-				<output>true</output>
-			</connection>
-			<connection>
-				<from>CompareVehicles_8</from>
-				<input>value</input>
-				<to>If_20</to>
-				<output>res</output>
-			</connection>
-			<connection>
-				<from>If_20</from>
-				<input>input</input>
-				<to>If_1</to>
-				<output>false</output>
-			</connection>
-			<connection>
-				<from>CompareVehicles_3</from>
-				<input>value</input>
-				<to>If_1</to>
-				<output>res</output>
-			</connection>
-			<connection>
-				<from>OnAnyVehicleDestroyed_1</from>
-				<input>input</input>
-				<to>If_12</to>
-				<output>onDestroyed</output>
-			</connection>
-			<connection>
-				<from>And_2</from>
-				<input>value</input>
-				<to>If_12</to>
-				<output>res</output>
-			</connection>
-			<connection>
-				<from>OnAnyVehicleDestroyed_1</from>
-				<input>a</input>
-				<to>CompareVehicles_8</to>
-				<output>target</output>
-			</connection>
-			<connection>
-				<from>GetVariable_35</from>
-				<input>b</input>
-				<to>CompareVehicles_8</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>OnAnyVehicleDestroyed_1</from>
-				<input>vehicle</input>
-				<to>IsVehicleValid_1</to>
-				<output>attacker</output>
-			</connection>
-			<connection>
-				<from>IsVehicleValid_1</from>
-				<input>i1</input>
-				<to>And_2</to>
-				<output>res</output>
-			</connection>
-			<connection>
-				<from>IsVehicleValid_2</from>
-				<input>i2</input>
-				<to>And_2</to>
-				<output>res</output>
-			</connection>
-			<connection>
-				<from>OnAnyVehicleDestroyed_1</from>
-				<input>vehicle</input>
-				<to>IsVehicleValid_2</to>
-				<output>target</output>
-			</connection>
-			<connection>
-				<from>OnAnyVehicleDestroyed_1</from>
-				<input>a</input>
-				<to>CompareVehicles_3</to>
-				<output>attacker</output>
-			</connection>
-			<connection>
-				<from>GetVariable_35</from>
-				<input>b</input>
-				<to>CompareVehicles_3</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>Choice_2</from>
-				<input>input</input>
-				<to>SendLocalEvent_5</to>
-				<output>o0</output>
-			</connection>
-			<connection>
-				<from>OnVehicleShaked_3</from>
-				<input>input</input>
-				<to>If_24</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>CompareVehicles_9</from>
-				<input>value</input>
-				<to>If_24</to>
-				<output>res</output>
-			</connection>
-			<connection>
-				<from>If_24</from>
-				<input>input</input>
-				<to>Choice_2</to>
-				<output>true</output>
-			</connection>
-			<connection>
-				<from>OnVehicleShaked_3</from>
-				<input>index</input>
-				<to>Choice_2</to>
-				<output>shakeReason</output>
-			</connection>
-			<connection>
-				<from>Choice_2</from>
+				<from>Macro_1</from>
 				<input>input</input>
 				<to>SendLocalEvent_6</to>
-				<output>o2</output>
-			</connection>
-			<connection>
-				<from>Choice_2</from>
-				<input>input</input>
-				<to>SendLocalEvent_8</to>
-				<output>o3</output>
-			</connection>
-			<connection>
-				<from>OnVehicleShaked_3</from>
-				<input>a</input>
-				<to>CompareVehicles_9</to>
-				<output>vehicle</output>
+				<output>onHitDamage</output>
 			</connection>
 			<connection>
 				<from>GetVariable_9</from>
-				<input>b</input>
-				<to>CompareVehicles_9</to>
+				<input>vehicle</input>
+				<to>Macro_1</to>
 				<output>value</output>
+			</connection>
+			<connection>
+				<from>Macro_1</from>
+				<input>input</input>
+				<to>SendLocalEvent_8</to>
+				<output>onHitNoDamage</output>
+			</connection>
+			<connection>
+				<from>Macro_1</from>
+				<input>input</input>
+				<to>SendLocalEvent_5</to>
+				<output>onOwnShot</output>
 			</connection>
 			<connection>
 				<from>If_11</from>
@@ -2037,6 +1905,96 @@
 				<from>GetVariable_34</from>
 				<input>b</input>
 				<to>CompareVehicles_5</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>If_1</from>
+				<input>input</input>
+				<to>SendLocalEvent_11</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>OnAnyVehicleDestroyed_1</from>
+				<input>input</input>
+				<to>If_12</to>
+				<output>onDestroyed</output>
+			</connection>
+			<connection>
+				<from>And_2</from>
+				<input>value</input>
+				<to>If_12</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>If_20</from>
+				<input>input</input>
+				<to>If_1</to>
+				<output>false</output>
+			</connection>
+			<connection>
+				<from>CompareVehicles_3</from>
+				<input>value</input>
+				<to>If_1</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>If_12</from>
+				<input>input</input>
+				<to>If_20</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>CompareVehicles_8</from>
+				<input>value</input>
+				<to>If_20</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>OnAnyVehicleDestroyed_1</from>
+				<input>a</input>
+				<to>CompareVehicles_8</to>
+				<output>target</output>
+			</connection>
+			<connection>
+				<from>GetVariable_35</from>
+				<input>b</input>
+				<to>CompareVehicles_8</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>OnAnyVehicleDestroyed_1</from>
+				<input>vehicle</input>
+				<to>IsVehicleValid_1</to>
+				<output>attacker</output>
+			</connection>
+			<connection>
+				<from>IsVehicleValid_1</from>
+				<input>i1</input>
+				<to>And_2</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>IsVehicleValid_3</from>
+				<input>i2</input>
+				<to>And_2</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>OnAnyVehicleDestroyed_1</from>
+				<input>vehicle</input>
+				<to>IsVehicleValid_3</to>
+				<output>target</output>
+			</connection>
+			<connection>
+				<from>OnAnyVehicleDestroyed_1</from>
+				<input>a</input>
+				<to>CompareVehicles_3</to>
+				<output>attacker</output>
+			</connection>
+			<connection>
+				<from>GetVariable_35</from>
+				<input>b</input>
+				<to>CompareVehicles_3</to>
 				<output>value</output>
 			</connection>
 			<connection>

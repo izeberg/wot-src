@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G196_Versuchspanzer_57/crash/lod3/Chassis</nodefullVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.768159 0.031691 -4.121568</min>
+		<max>1.769211 1.299096 3.346609</max>
+	</visibilityBox>
+	<parent>vehicles/german/G196_Versuchspanzer_57/crash/lod4/Chassis</parent>
+	<extent>192.000000</extent>
+</root>

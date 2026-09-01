@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+import Event
 from gui.impl.lobby.user_missions.hangar_widget.services import IBattlePassService
 from gui.impl.lobby.user_missions.hangar_widget.services.service_events import ServiceEvents
 from gui.prb_control.dispatcher import g_prbLoader
@@ -9,6 +11,7 @@ class BattlePassService(IBattlePassService, ServiceEvents):
 
     def __init__(self):
         super(BattlePassService, self).__init__()
+        self.onBattlePassChanged = Event.Event()
         self.startServiceEvents()
 
     def onPrbEntitySwitched(self):
@@ -32,6 +35,7 @@ class BattlePassService(IBattlePassService, ServiceEvents):
     def finalize(self):
         self.stopListening()
         self.stopServiceEvents()
+        self.onBattlePassChanged.clear()
 
     def _isValidBattleTypeForBattlePass(self):
         prbDispatcher = g_prbLoader.getDispatcher()

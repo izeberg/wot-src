@@ -26,3 +26,7 @@ class PerkMasks(object):
 
 class StubPerkIDs(object):
     COMMANDER_TUTOR = 103
+
+
+class PerkIDs(object):
+    LOADER_INTUITION = 403

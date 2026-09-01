@@ -38,6 +38,30 @@ msgstr "已获得奖励"
 msgid "awardViews/footer/backButton/"
 msgstr "收到!"
 
+msgid "awardViews/footer/caption/attemptsLeft"
+msgstr "剩余重新开启次数: {{count}}"
+
+msgid "awardViews/footer/caption/noAttempts"
+msgstr "无剩余重新开启次数"
+
+msgid "awardViews/footer/caption/valuable"
+msgstr "珍贵奖励"
+
+msgid "awardViews/footer/rerollButton/free"
+msgstr "免费重新开启"
+
+msgid "awardViews/footer/rerollButton/notEnoughBons"
+msgstr "战争债券不足"
+
+msgid "awardViews/footer/rerollButton/paid"
+msgstr "花费{{count}}重新开启"
+
+msgid "awardViews/footer/rerollButton/reopen"
+msgstr "重新开启"
+
+msgid "awardViews/footer/tooltip/specialDropBody"
+msgstr "已掉落珍贵奖励的补给品无法重新开启。"
+
 msgid "bonuses/description/battle_booster"
 msgstr "指令"
 
@@ -130,6 +154,18 @@ msgstr "已开启的补给品数量: %(count)"
 msgid "common/statsButton"
 msgstr "统计数据"
 
+msgid "confirmRerollLootBox/cancel"
+msgstr "取消"
+
+msgid "confirmRerollLootBox/description/default"
+msgstr "补给品将再次开启，并有机会掉落不同的奖励。"
+
+msgid "confirmRerollLootBox/reopen"
+msgstr "重新开启"
+
+msgid "confirmRerollLootBox/title"
+msgstr "花费{{cost}}重新开启？"
+
 msgid "confirmResetLootBoxStatistics/cancel"
 msgstr "取消"
 
@@ -211,24 +247,30 @@ msgstr "%(boxName)s: %(count)s"
 msgid "homeView/subtitle"
 msgstr "距活动结束还有%(time)"
 
-msgid "infoPage/footer/description/autoOpen"
-msgstr "如果您在活动结束前没有开启全部补给品，那么系统稍后会自动开启这些补给品。"
+msgid "infoPage/footer/description/autoOpen/default"
+msgstr "如果您在活动结束前没有开启补给品，那么系统将会自动开启这些补给品。"
 
-msgid "infoPage/footer/description/compensation"
-msgstr "如果您已拥有补给品内容列表中的全部坦克，之后从开启补给品掉落的所有坦克都将转换为其当前价格对应的金币补偿。"
+msgid "infoPage/footer/description/compensation/default"
+msgstr "如果您车库中已拥有补给品内容列表中的全部坦克，对于之后从补给品中获得的每辆坦克，您都将获得坦克当前价格所对应的金币补偿。"
 
-msgid "infoPage/footer/description/guaranteed"
+msgid "infoPage/footer/description/guaranteed/default"
 msgstr ""
-"每%(guaranteed0)s个补给品都保底内含1辆VIII–X级坦克。如果这些补给品始终未掉落保底坦克，那么当您开启第%(guaranteed0)s个补给品(取决于补给品类型)时，必定会掉落1辆您车库中尚未拥有的VIII–X级坦克。补给品掉落坦克后，计数器将重置。"
+"每%(guaranteed)s个补给品都保底内含1辆VIII–X级坦克。如果这些补给品始终未掉落保底坦克，那么当您开启第%(guaranteed)s个补给品(取决于补给品类型)时，必定会掉落1辆您车库中尚未拥有的VIII–X级坦克。补给品掉落坦克后，计数器将重置。"
 
-msgid "infoPage/footer/title/autoOpen"
+msgid "infoPage/footer/description/reroll/default"
+msgstr "如果您对补给品的奖励不满意，可以重新开启它，并有机会从同一奖励列表中获得不同的物品。每个补给品的重新开启次数有限:"
+
+msgid "infoPage/footer/title/autoOpen/default"
 msgstr "自动开启"
 
-msgid "infoPage/footer/title/compensation"
+msgid "infoPage/footer/title/compensation/default"
 msgstr "补偿"
 
-msgid "infoPage/footer/title/guaranteed"
+msgid "infoPage/footer/title/guaranteed/default"
 msgstr "保底奖励"
+
+msgid "infoPage/footer/title/reroll/default"
+msgstr "重新开启"
 
 msgid "infoPage/header/lootListLink"
 msgstr "在官网上查看物品列表"
@@ -240,7 +282,7 @@ msgid "infoPage/header/probability/title"
 msgstr "奖励组"
 
 msgid "infoPage/header/rewards/description"
-msgstr "每个组别的奖励最多掉落1个。"
+msgstr "每个组别的奖励最多掉落1个"
 
 msgid "infoPage/header/rewards/title"
 msgstr "奖励"
@@ -286,6 +328,30 @@ msgstr "适用于%(vehicleInfo)"
 
 msgid "rareRewardOverlay/rewardDescription/style/text"
 msgstr "\"%(style)\"3D风格"
+
+msgid "reroll/free"
+msgstr "免费"
+
+msgid "reroll/singleStep"
+msgstr "{{step}}"
+
+msgid "reroll/template"
+msgstr "{{start}}–{{end}}"
+
+msgid "serviceChannelMessages/financialTransaction"
+msgstr "交易"
+
+msgid "serviceChannelMessages/financialTransaction/credits"
+msgstr "扣除银币: %(amount)s"
+
+msgid "serviceChannelMessages/financialTransaction/crystal"
+msgstr "扣除战争债券: %(amount)s"
+
+msgid "serviceChannelMessages/financialTransaction/date"
+msgstr "日期: %(date)s"
+
+msgid "serviceChannelMessages/financialTransaction/gold"
+msgstr "扣除金币: %(amount)s"
 
 msgid "serviceChannelMessages/finish/header"
 msgstr "%(eventName)s活动已结束"
@@ -493,3 +559,15 @@ msgstr "获得补偿的坦克数量: %(count)"
 
 msgid "tooltip/compensation/notification"
 msgstr "您车库中已拥有坦克的补偿。"
+
+msgid "tooltip/reroll/attempt"
+msgstr "重新开启次数"
+
+msgid "tooltip/reroll/price"
+msgstr "花费"
+
+msgid "tooltip/reroll/text/default"
+msgstr "重新开启补给品可让您有机会从同一列表中获得不同的奖励。"
+
+msgid "tooltip/reroll/title/default"
+msgstr "重新开启"

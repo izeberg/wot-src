@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from battle_royale.gui.constants import STP_COIN
 from battle_royale.skeletons.game_controller import IBRProgressionOnTokensController
@@ -102,7 +103,7 @@ class BRTokenBonusUIPacker(TokenBonusUIPacker):
     def _getTokenBonusType(cls, tokenID, complexToken):
         if tokenID.startswith(cls._brProgressionController.progressionToken):
             return BR_PROGRESSION_TOKEN
-        super(BRTokenBonusUIPacker, cls)._getTokenBonusType(tokenID, complexToken)
+        return super(BRTokenBonusUIPacker, cls)._getTokenBonusType(tokenID, complexToken)
 
     @classmethod
     def _getTooltipsPackers(cls):

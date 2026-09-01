@@ -1,14 +1,14 @@
-import logging
+from __future__ import absolute_import
+import logging, typing
 from collections import namedtuple
 from copy import copy
-import Windowing, typing
+import Windowing
 from shared_utils import first, findFirst
 import SoundGroups
 from account_helpers import AccountSettings
 from account_helpers.AccountSettings import COMP7_LAST_SEASON_WITH_SEEN_REWARD, COMP7_LAST_MASKOT_WITH_SEEN_REWARD
 from comp7.gui.game_control.comp7_shop_controller import ShopControllerStatus
-from comp7.gui.impl.gen.view_models.views.lobby.enums import MetaRootViews, Rank
-from comp7.gui.impl.gen.view_models.views.lobby.enums import SeasonName
+from comp7.gui.impl.gen.view_models.views.lobby.enums import MetaRootViews, SeasonName
 from comp7.gui.impl.gen.view_models.views.lobby.rewards_screen_model import Type, RewardsScreenModel, ShopInfoType, VideoState
 from comp7.gui.impl.gen.view_models.views.lobby.season_result import SeasonResult
 from comp7.gui.impl.lobby.comp7_helpers import comp7_shared, comp7_qualification_helpers
@@ -270,7 +270,7 @@ class TokensRewardsView(_QuestRewardsView):
         for bonus in quest.getBonuses():
             if bonus.getName() == SELECTABLE_BONUS_NAME:
                 tokens = bonus.getTokens()
-                if findFirst(Comp7SelectableRewardManager.isFeatureReward, tokens.iterkeys()) is not None:
+                if findFirst(Comp7SelectableRewardManager.isFeatureReward, tokens) is not None:
                     return True
 
         return False
@@ -468,7 +468,7 @@ class YearlyRewardsView(_BaseRewardsView):
             Windowing.addWindowAccessibilitynHandler(self.__onWindowAccessibilityChanged)
             switchVideoOverlaySoundFilter(on=True)
             SoundGroups.g_instance.playSound2D(VehicleVideoSounds.START)
-        elif state == VideoState.PAUSED or state == VideoState.RESUMED:
+        elif state in (VideoState.PAUSED, VideoState.RESUMED):
             soundName = VehicleVideoSounds.RESUME if Windowing.isWindowAccessible() else VehicleVideoSounds.PAUSE
             SoundGroups.g_instance.playSound2D(soundName)
         elif state == VideoState.ENDED:

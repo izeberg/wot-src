@@ -9,15 +9,16 @@ from gui.shared.view_helpers.UsersInfoController import UsersInfoController
 from helpers import dependency
 from messenger import g_settings
 from messenger.m_constants import USER_GUI_TYPE, UserEntityScope, USER_TAG
-from messenger.storage import storage_getter
 from messenger.proto import proto_getter, PROTO_TYPE
 from messenger.proto.entities import SharedUserEntity
+from messenger.storage import MessengerStorageDescriptor, UsersStorage
 from skeletons.gui.lobby_context import ILobbyContext
 _logger = logging.getLogger(__name__)
 
 class UsersInfoHelper(object):
     lobbyContext = dependency.descriptor(ILobbyContext)
     _rqCtrl = UsersInfoController()
+    usersStorage = MessengerStorageDescriptor(UsersStorage)
 
     def __init__(self):
         self._invalid = defaultdict(set)
@@ -47,19 +48,15 @@ class UsersInfoHelper(object):
     def onUserClanAbbrevsReceived(self, abbrevs):
         pass
 
-    @storage_getter('users')
-    def users(self):
-        return
-
     @proto_getter(PROTO_TYPE.XMPP)
     def proto(self):
         return
 
     def getContact(self, userID, scope=UserEntityScope.LOBBY):
-        user = self.users.getUser(userID, scope=scope)
+        user = self.usersStorage.getUser(userID, scope=scope)
         if not user:
             user = SharedUserEntity(userID)
-            self.users.addUser(user)
+            self.usersStorage.addUser(user)
         return user
 
     def getUserName(self, userID, scope=UserEntityScope.LOBBY):
@@ -113,7 +110,7 @@ class UsersInfoHelper(object):
         return '-1'
 
     def getUserTags(self, userID, igrType):
-        contact = self.users.getUser(userID, scope=UserEntityScope.BATTLE)
+        contact = self.usersStorage.getUser(userID, scope=UserEntityScope.BATTLE)
         if contact is not None:
             userTags = contact.getTags()
         else:

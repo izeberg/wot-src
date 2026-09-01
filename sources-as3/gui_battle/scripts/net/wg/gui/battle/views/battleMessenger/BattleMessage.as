@@ -136,6 +136,8 @@ package net.wg.gui.battle.views.battleMessenger
       
       private var _availableWidth:int = 360;
       
+      private var _hasListeners:Boolean = false;
+      
       public function BattleMessage(param1:int, param2:int, param3:Number, param4:Number, param5:int, param6:Function, param7:Function = null, param8:int = 360)
       {
          this.messageField = new TextField();
@@ -188,6 +190,10 @@ package net.wg.gui.battle.views.battleMessenger
       
       public function clearAnim() : void
       {
+         if(!this._isWaitingAutoHide && !this._isEnterFrameEnable)
+         {
+            return;
+         }
          this._scheduler.cancelTask(this.fadeInAnimation);
          this.isWaitingAutoHide = false;
          this._scheduler.cancelTask(this.onEnterFrameHandler);
@@ -352,15 +358,23 @@ package net.wg.gui.battle.views.battleMessenger
          {
             this._timerID = setTimeout(this.updateUserInteraction,USER_INTERACTION_TIMER_BY_MILLISECONDS);
          }
-         this.background.addEventListener(MouseEvent.ROLL_OVER,this.onBackgroundRollOverHandler);
-         this.background.addEventListener(MouseEvent.ROLL_OUT,this.onBackgroundRollOutHandler);
+         if(!this._hasListeners)
+         {
+            this.background.addEventListener(MouseEvent.ROLL_OVER,this.onBackgroundRollOverHandler);
+            this.background.addEventListener(MouseEvent.ROLL_OUT,this.onBackgroundRollOutHandler);
+            this._hasListeners = true;
+         }
       }
       
       private function backgroundRemoveListeners() : void
       {
          clearInterval(this._timerID);
-         this.background.removeEventListener(MouseEvent.ROLL_OVER,this.onBackgroundRollOverHandler);
-         this.background.removeEventListener(MouseEvent.ROLL_OUT,this.onBackgroundRollOutHandler);
+         if(this._hasListeners)
+         {
+            this.background.removeEventListener(MouseEvent.ROLL_OVER,this.onBackgroundRollOverHandler);
+            this.background.removeEventListener(MouseEvent.ROLL_OUT,this.onBackgroundRollOutHandler);
+            this._hasListeners = false;
+         }
       }
       
       private function updateUserInteraction() : void

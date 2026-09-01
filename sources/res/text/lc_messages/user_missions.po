@@ -266,13 +266,13 @@ msgid "hub/challenge_missions/notification/mission_complete/button"
 msgstr "前往熔炉试炼"
 
 msgid "hub/challenge_missions/notification/mission_complete/title"
-msgstr "{{ mission }}任务已完成！"
+msgstr "任务{{ mission }}已完成！"
 
 msgid "hub/challenge_missions/notification/shield/button"
 msgstr "前往熔炉试炼"
 
 msgid "hub/challenge_missions/notification/shield/text"
-msgstr "{{ mission }}任务失败"
+msgstr "任务{{ mission }}失败"
 
 msgid "hub/challenge_missions/notification/shield/title"
 msgstr "剩余护盾"
@@ -402,11 +402,56 @@ msgstr ""
 msgid "info_page/main/weekly/title"
 msgstr "每周任务"
 
+msgid "pm/missionState/active"
+msgstr "已开放"
+
+msgid "pm/missionState/complete"
+msgstr "已完成任务"
+
+msgid "pm/missionState/improve"
+msgstr "优化结果"
+
+msgid "pm/missionState/wrongVehicle"
+msgstr "更换坦克"
+
+msgid "pm/no_missions"
+msgstr "没有向所选坦克开放的任务"
+
+msgid "pm/tier"
+msgstr "等级不适合"
+
+msgid "pm/unavailable"
+msgstr "任务暂不开放"
+
+msgid "pm/warning/tooltip/body/no_missions_available"
+msgstr "没有向所选坦克开放的任务。请选择另一辆坦克。"
+
+msgid "pm/warning/tooltip/body/temporarily_unavailable"
+msgstr "由于技术原因，该任务暂不开放。我们对造成的不便深表歉意。"
+
+msgid "pm/warning/tooltip/body/tier"
+msgstr "所选坦克不符合当前作战行动的等级要求。请选择另一辆坦克。"
+
+msgid "pm/warning/tooltip/header/no_missions_available"
+msgstr "没有开放的任务"
+
+msgid "pm/warning/tooltip/header/temporarily_unavailable"
+msgstr "暂不开放"
+
+msgid "pm/warning/tooltip/header/tier"
+msgstr "等级不适合"
+
 msgid "quests/daily_quests/all_completed"
 msgstr "已完成今天的全部常规任务"
 
 msgid "quests/daily_quests/completed"
 msgstr "已完成全部日常任务"
+
+msgid "slider/title/missions"
+msgstr "常规任务"
+
+msgid "slider/title/personalMissions"
+msgstr "个人任务"
 
 msgid "tooltip/common/timer"
 msgstr "距开放还有{{timeLeft}}"

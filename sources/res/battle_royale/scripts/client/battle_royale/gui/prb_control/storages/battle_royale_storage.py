@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.prb_control.storages.local_storage import SessionStorage
 
 class BattleRoyaleStorage(SessionStorage):

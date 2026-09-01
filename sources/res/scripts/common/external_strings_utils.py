@@ -300,7 +300,7 @@ def _decode_utf8_len_byte(byte):
         return 3
     if v >= 192:
         return 2
-    if v < 127:
+    if v <= 127:
         return 1
     return 0
 

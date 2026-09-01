@@ -1,12 +1,11 @@
 package net.wg.gui.battle.windows
 {
+   import flash.display.Sprite;
    import flash.events.Event;
    import flash.geom.Point;
    import flash.text.TextField;
    import net.wg.data.constants.InvalidationType;
    import net.wg.data.constants.Values;
-   import net.wg.data.constants.generated.BATTLEATLAS;
-   import net.wg.gui.battle.components.BattleAtlasSprite;
    import net.wg.gui.battle.windows.components.IngameDetailsRoleActionContainer;
    import net.wg.gui.battle.windows.vo.IngameDetailsPageVO;
    import net.wg.gui.battle.windows.vo.IngameDetailsRoleActionVO;
@@ -24,11 +23,9 @@ package net.wg.gui.battle.windows
    import net.wg.infrastructure.base.meta.IIngameDetailsHelpWindowMeta;
    import net.wg.infrastructure.base.meta.impl.IngameDetailsHelpWindowMeta;
    import net.wg.infrastructure.constants.WindowViewInvalidationType;
-   import net.wg.infrastructure.interfaces.IWindow;
    import org.idmedia.as3commons.util.StringUtils;
    import scaleform.clik.data.DataProvider;
    import scaleform.clik.events.ButtonEvent;
-   import scaleform.clik.utils.Padding;
    
    public class IngameDetailsHelpWindow extends IngameDetailsHelpWindowMeta implements IIngameDetailsHelpWindowMeta
    {
@@ -41,7 +38,7 @@ package net.wg.gui.battle.windows
       
       private static const MIN_PAGES:int = 1;
       
-      private static const WINDOW_HEIGHT:int = 720;
+      private static const WINDOW_HEIGHT:int = 732;
       
       private static const FOOTER_HEIGHT:int = 60;
       
@@ -53,7 +50,7 @@ package net.wg.gui.battle.windows
       
       private static const WARNING_MARGIN_TOP:int = 27;
       
-      private static const KEY_BOTTOM:int = 25;
+      private static const KEY_BOTTOM:int = 65;
       
       private static const PAGE_TITLE_BOTTOM:int = 15;
       
@@ -61,9 +58,9 @@ package net.wg.gui.battle.windows
       
       private static const PAGINATOR_HEIGHT:int = 20;
       
-      private static const WINDOW_PADDING:Padding = new Padding(-140,0,0,0);
+      private static const ARROW_HORIZONTAL_LEFT_PADDING:int = 66;
       
-      private static const ARROW_HORIZONTAL_GAP:int = 80;
+      private static const ARROW_HORIZONTAL_RIGHT_PADDING:int = 91;
       
       private static const ROLE_ACTION_BOTTOM:int = 139;
       
@@ -74,9 +71,9 @@ package net.wg.gui.battle.windows
       private static const ROLE_PADDING_BOTTOM:int = 22;
        
       
-      public var background:BattleAtlasSprite = null;
+      public var pgBackground:Sprite = null;
       
-      public var pgBackground:BattleAtlasSprite = null;
+      public var background:Sprite = null;
       
       public var arrowLeftBtn:PaginatorArrowBtn = null;
       
@@ -110,27 +107,19 @@ package net.wg.gui.battle.windows
       
       private var _roleActionContainer:IngameDetailsRoleActionContainer = null;
       
+      private var _paginatorPos:Point;
+      
       public function IngameDetailsHelpWindow()
       {
+         this._paginatorPos = new Point();
          super();
          showWindowBgForm = false;
          showWindowBg = false;
       }
       
-      override public function setWindow(param1:IWindow) : void
-      {
-         super.setWindow(param1);
-         if(window)
-         {
-            window.contentPadding = WINDOW_PADDING;
-         }
-      }
-      
       override protected function configUI() : void
       {
          super.configUI();
-         this.background.imageName = BATTLEATLAS.HELP_WINDOW_BG;
-         this.pgBackground.imageName = BATTLEATLAS.HELP_WINDOW_BOTTOM_BG;
          updateStage(App.appWidth,App.appHeight);
          window.addEventListener(WindowEvent.SCALE_Y_CHANGED,this.onWindowScaleYChangedHandler);
          this.btnClose.label = INGAME_HELP.BATTLECONTROLS_CLOSEBTNLABEL;
@@ -146,7 +135,7 @@ package net.wg.gui.battle.windows
          this.roleImage.addEventListener(Event.CHANGE,this.onRoleImageChangeHandler);
          this._keyViewersList = new KeyViewersList();
          addChild(this._keyViewersList);
-         this._keyViewersList.y = height - KEY_BOTTOM >> 0;
+         this._keyViewersList.y = this.background.height - KEY_BOTTOM - KEYS_PADDING >> 0;
       }
       
       override protected function draw() : void
@@ -200,8 +189,9 @@ package net.wg.gui.battle.windows
          this.btnClose.removeEventListener(ButtonEvent.CLICK,this.onBtnCloseClickHandler);
          this._pageController.removeEventListener(Event.CHANGE,this.onPageControllerChangeHandler);
          window.removeEventListener(WindowEvent.SCALE_Y_CHANGED,this.onWindowScaleYChangedHandler);
-         this.background = null;
          this.pgBackground = null;
+         this.background = null;
+         this._paginatorPos = null;
          this.pageBg.dispose();
          this.pageBg = null;
          this.btnClose.dispose();
@@ -259,14 +249,14 @@ package net.wg.gui.battle.windows
       
       private function updateLayout() : void
       {
-         var _loc1_:Number = NaN;
-         this.arrowLeftBtn.x = x - this.arrowLeftBtn.width + ARROW_HORIZONTAL_GAP >> 0;
-         this.arrowRightBtn.x = x + width + this.arrowLeftBtn.width - ARROW_HORIZONTAL_GAP >> 0;
+         this.arrowLeftBtn.x = x - this.arrowLeftBtn.width + ARROW_HORIZONTAL_LEFT_PADDING >> 0;
+         this.arrowRightBtn.x = x + width + this.arrowRightBtn.width - ARROW_HORIZONTAL_RIGHT_PADDING >> 0;
          this.arrowLeftBtn.y = this.arrowRightBtn.y = this.background.y + ARROWS_PADDING_TOP;
-         _loc1_ = this.pgBackground.height;
+         var _loc1_:Number = this.pgBackground.height;
          this.pgBackground.y = this.background.height - _loc1_;
-         var _loc2_:Point = new Point(x + (width >> 1),this.pgBackground.y + (_loc1_ - PAGINATOR_HEIGHT >> 1));
-         this._pageController.setPositions(_loc2_);
+         this._paginatorPos.x = x + (this.background.width >> 1);
+         this._paginatorPos.y = this.pgBackground.y + (_loc1_ - PAGINATOR_HEIGHT >> 1);
+         this._pageController.setPositions(this._paginatorPos);
       }
       
       private function updatePageLayout() : void

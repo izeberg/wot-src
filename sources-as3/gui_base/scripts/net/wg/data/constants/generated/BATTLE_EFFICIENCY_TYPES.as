@@ -57,6 +57,10 @@ package net.wg.data.constants.generated
       
       public static const FIRE_DAMAGE_ZONE:String = "fireDamageZone";
       
+      public static const HE_ROCKET:String = "heRocket";
+      
+      public static const RECEIVED_HE_ROCKET:String = "receivedHERocket";
+      
       public static const COMMANDER_EAGLE_EYE:String = "commander_eagleEye";
       
       public static const COMMANDER_EMERGENCY:String = "commander_emergency";

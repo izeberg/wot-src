@@ -1,9 +1,11 @@
+from __future__ import absolute_import
 import logging
 from comp7_core.gui.impl.lobby.comp7_core_helpers.comp7_core_model_helpers import setSeasonInfo
 from frameworks.wulf.view.array import fillIntsArray
 from gui.impl.gen.view_models.views.lobby.user_missions.constants.event_banner_state import EventBannerState
 from gui.impl.pub import ViewImpl
 from helpers.time_utils import getServerUTCTime
+from math_common import round_py2_style_int
 _logger = logging.getLogger(__name__)
 
 class Comp7CoreEntryPointTooltip(ViewImpl):
@@ -69,4 +71,4 @@ class Comp7CoreEntryPointTooltip(ViewImpl):
 
     def __onPollServerTime(self):
         with self.viewModel.transaction() as (tx):
-            tx.season.setServerTimestamp(round(getServerUTCTime()))
+            tx.season.setServerTimestamp(round_py2_style_int(getServerUTCTime()))

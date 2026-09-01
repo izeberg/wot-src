@@ -2568,7 +2568,6 @@
 						2.3
 						<!--BW_String-->
 					</aimingTime>
-					<multiGunEffects>shot_dualgun1_large_L shot_dualgun1_large_R</multiGunEffects>
 					<dualGun>
 						<chargeTime>3</chargeTime>
 						<shootImpulse>200</shootImpulse>
@@ -2588,6 +2587,9 @@
 							<!--BW_String-->
 						</preChargeIndication>
 					</dualGun>
+					<prefabs>
+						<main>content/CGFPrefabs/Vehicle/guns/japan/gun_Rensouhou_127_mm_Type_89.prefab</main>
+					</prefabs>
 					<customizationSlots>
 						<slot>
 							<slotType>paint</slotType>

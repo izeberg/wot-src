@@ -48,36 +48,32 @@
 		<enable>true</enable>
 		<adaptationSpeed>100.000000</adaptationSpeed>
 		<bloom>
-			<enable>true</enable>
+			<pbsBloom>true</pbsBloom>
 			<threshold>0.450000</threshold>
-			<amount>0.469388</amount>
-			<tint>1.000000 1.000000 1.000000</tint>
+			<amount>0.220000</amount>
 			<dirtAmount>0.452381</dirtAmount>
 		</bloom>
 		<environment>
 			<sunlightLumMultiplier>25.000000</sunlightLumMultiplier>
-			<ambientLumMultiplier>1.000000</ambientLumMultiplier>
-			<sunLumMultiplier>1.000000</sunLumMultiplier>
+			<sunLumMultiplier>50.000000</sunLumMultiplier>
 			<skyLumMultiplier>5.000000</skyLumMultiplier>
+			<skyLumMultiplierDeferred>1.000000</skyLumMultiplierDeferred>
 			<LDR2HDRenableLumaMask>false</LDR2HDRenableLumaMask>
 			<LDR2HDRsaturation>1.000000</LDR2HDRsaturation>
 		</environment>
 		<tonemappings>
 			<tonemapping>
 				<name>RexpTM</name>
-				<middleGray>0.190000</middleGray>
 				<whitePoint>9.070000</whitePoint>
 				<blackPoint>9.310000</blackPoint>
 			</tonemapping>
 			<tonemapping>
 				<name>FilmicTM</name>
-				<middleGray>0.194354</middleGray>
 				<whitePoint>12.790000</whitePoint>
 				<blackPoint>3.500000</blackPoint>
 			</tonemapping>
 			<tonemapping>
 				<name>LinearExpTM</name>
-				<middleGray>0.285637</middleGray>
 				<whitePoint>1.750000</whitePoint>
 				<blackPoint>1.300000</blackPoint>
 			</tonemapping>
@@ -109,11 +105,11 @@
 		<sunBrightness>0.200000</sunBrightness>
 		<objectEnable>true</objectEnable>
 		<glareEnable>true</glareEnable>
-		<glareIntensity>0.820000</glareIntensity>
-		<glareSize>0.020000</glareSize>
+		<glareIntensity>0.500000</glareIntensity>
+		<glareSize>0.010000</glareSize>
 		<flareIntensity>0.420000</flareIntensity>
-		<objectThreshold>4.727921</objectThreshold>
-		<objectFlareIntensity>0.570000</objectFlareIntensity>
+		<objectThreshold>3.584963</objectThreshold>
+		<objectFlareIntensity>0.350000</objectFlareIntensity>
 		<haloEnable>true</haloEnable>
 		<sunTexture1>system/maps/psf_rgbe.dds</sunTexture1>
 		<colorTexture>system/maps/lenscolorF.dds</colorTexture>
@@ -124,7 +120,7 @@
 		<enable>true</enable>
 		<attenuationPower>27.000000</attenuationPower>
 		<decay>0.450000</decay>
-		<color>1.000000 0.985803 0.974522 3000.000000</color>
+		<color>1.000000 0.985803 0.974522 60.000000</color>
 	</GodRays>
 	<SSAO>
 		<enable>true</enable>
@@ -150,6 +146,10 @@
 		<amplify>2.000000</amplify>
 	</SSShadows>
 	<VFX>
+		<vfxModelsMultiplier>1.100000</vfxModelsMultiplier>
+		<cpuParticlesMultiplier>1.100000</cpuParticlesMultiplier>
+		<gpuParticlesMultiplier>1.100000</gpuParticlesMultiplier>
+		<emissiveMaterialsMultiplier>1.100000</emissiveMaterialsMultiplier>
 		<particlesConfigXml>system/data/particles.xml</particlesConfigXml>
 		<particlesSpaceConfigXml>spaces/29_el_hallouf/particles.xml</particlesSpaceConfigXml>
 	</VFX>
@@ -208,7 +208,7 @@
 		<simplified_deferred>
 			<angle>34.580002</angle>
 		</simplified_deferred>
-		<sunScale>5.000000</sunScale>
+		<sunScale>4.500000</sunScale>
 		<sunColor>255.000000 200.000000 163.000000</sunColor>
 		<sunTexture/>
 		<sunLightColor>1.000000 0.784314 0.639216</sunLightColor>
@@ -238,9 +238,9 @@
 			<row3>0.000000 6445.419922 0.000000</row3>
 		</worldMatrix>
 		<worldMatrixForward>
-			<row0>-0.999832 0.000000 0.018325</row0>
+			<row0>1.000000 0.000000 -0.000000</row0>
 			<row1>0.000000 1.000000 0.000000</row1>
-			<row2>-0.018325 0.000000 -0.999832</row2>
+			<row2>0.000000 0.000000 1.000000</row2>
 			<row3>0.000000 -5469.330078 0.000000</row3>
 		</worldMatrixForward>
 	</SkyDome>
@@ -267,6 +267,7 @@
 	</DOF>
 	<VolumetricFog>
 		<enabled>false</enabled>
+		<enableGameplay>false</enableGameplay>
 		<sampleShadows>true</sampleShadows>
 		<temporalReprojection>true</temporalReprojection>
 		<fogDistance>500.000000</fogDistance>
@@ -289,5 +290,9 @@
 		<bakedAOPower>0.500000</bakedAOPower>
 		<vegetationMetallicMult>0.500000</vegetationMetallicMult>
 		<transmissionMult>0.650000</transmissionMult>
+		<waterReflectionAttenuation>1.000000</waterReflectionAttenuation>
 	</SimplifiedDeferred>
+	<VisibilityTunnel>
+		<shouldOverrideSettings>false</shouldOverrideSettings>
+	</VisibilityTunnel>
 </root>

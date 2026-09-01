@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.849586 -0.268303 -0.080939</min>
+		<max>0.824990 0.286320 4.091815</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G204_PzVI_Tiger_P_CFE_A/normal/lod4/Gun_01</nodefullVisual>
+</root>

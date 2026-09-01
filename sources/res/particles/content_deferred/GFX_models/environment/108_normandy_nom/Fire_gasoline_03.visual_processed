@@ -24,6 +24,10 @@
 					<materialKind>0</materialKind>
 					<fx>shaders/custom/vector_animation_2.fx</fx>
 					<property>
+						g_enableEnvMultiplier
+						<Bool>true</Bool>
+					</property>
+					<property>
 						destBlend
 						<Int>2</Int>
 					</property>
@@ -53,7 +57,10 @@
 					</property>
 					<property>
 						lightMultipliers
-						<Vector4>120.000000 0.000000 0.800000 0.000000</Vector4>
+						<Vector4>
+							164.383562 0.000000 0.800000 0.000000
+							<!--BW_String-->
+						</Vector4>
 					</property>
 					<property>
 						opacity_UV_Speed_Scale

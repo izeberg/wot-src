@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_282_PM3_ATGW/normal/lod2/Cus_282_PM3_ATGW_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.547528 -0.000000 -0.952770</min>
+		<max>0.048716 0.327641 0.973398</max>
+	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/Cus_282_PM3_ATGW/normal/lod1/Cus_282_PM3_ATGW_01</nodefullVisual>
+	<tank>true</tank>
+</root>

@@ -39,7 +39,19 @@ class MechanicWidgetsPanel(WidgetsPanelMeta, VehiclePassengerInfoWatcher):
        VehicleMechanic.PROPELLANT_GUN: (
                                       BATTLE_WIDGETS_CONSTS.PROPELLANT_GUN,), 
        VehicleMechanic.WHEELED_DASH: (
-                                    BATTLE_WIDGETS_CONSTS.WHEELED_DASH,)}
+                                    BATTLE_WIDGETS_CONSTS.WHEELED_DASH,), 
+       VehicleMechanic.AUXILIARY_ROCKET_LAUNCHER: (
+                                                 BATTLE_WIDGETS_CONSTS.AUXILIARY_ROCKET_LAUNCHER,), 
+       VehicleMechanic.SHELL_PARAMS_SWITCHER: (
+                                             BATTLE_WIDGETS_CONSTS.SHELL_PARAMS_SWITCHER,), 
+       VehicleMechanic.SHELL_CALIBRATION: (
+                                         BATTLE_WIDGETS_CONSTS.SHELL_CALIBRATION,), 
+       VehicleMechanic.AUTORELOADER_SURGE: (
+                                          BATTLE_WIDGETS_CONSTS.AUTORELOADER_SURGE,), 
+       VehicleMechanic.BUSTLE_FEED: (
+                                   BATTLE_WIDGETS_CONSTS.BUSTLE_FEED,), 
+       VehicleMechanic.SIGHT_POINTER: (
+                                     BATTLE_WIDGETS_CONSTS.SIGHT_POINTER_WIDGET,)}
 
     def _populate(self):
         super(MechanicWidgetsPanel, self)._populate()

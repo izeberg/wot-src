@@ -22,8 +22,6 @@ package net.wg.infrastructure.base.meta
       
       function switchModeS(param1:int) : void;
       
-      function returnToStyledModeS() : void;
-      
       function onItemIsNewAnimationShownS(param1:int) : void;
       
       function showVideoS() : void;

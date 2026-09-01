@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld
 from debug_utils import LOG_DEBUG, LOG_WARNING
 import BattleReplay

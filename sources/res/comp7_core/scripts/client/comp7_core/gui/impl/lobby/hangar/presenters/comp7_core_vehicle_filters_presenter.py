@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from gui.filters.carousel_filter import FILTER_KEYS
 from gui.impl.lobby.hangar.presenters.vehicle_filters_presenter import VehicleFiltersDataProvider

@@ -170,7 +170,7 @@ msgid "modifier/name/invisibilityOnMove"
 msgstr "移动时的隐蔽系数"
 
 msgid "modifier/name/invisibilityOnStill"
-msgstr "坦克静止时的隐蔽系数"
+msgstr "坦克静止隐蔽系数"
 
 msgid "modifier/name/normalizationAngle"
 msgstr "炮弹转正效应"
@@ -231,6 +231,9 @@ msgstr "承压造成的损伤"
 
 msgid "modifier/name/vehicleRammingDamage"
 msgstr "撞击损伤"
+
+msgid "modifier/name/visionMaxRadius"
+msgstr "最大点亮范围"
 
 msgid "modifier/name/visionMinRadius"
 msgstr "强制点亮范围"

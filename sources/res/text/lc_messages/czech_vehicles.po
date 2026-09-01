@@ -31,6 +31,9 @@ msgstr "CKD AXL"
 msgid "CKD_AXL_CN"
 msgstr "CKD AXL (GW)"
 
+msgid "CKD_AXL_P"
+msgstr "CKD AXL-P"
+
 msgid "Chassis_Cz01_Skoda_T40"
 msgstr "斯柯达 T40"
 
@@ -192,6 +195,9 @@ msgstr "DBV-152"
 
 msgid "Chassis_Cz43_Ogar"
 msgstr "\"猎犬\""
+
+msgid "Chassis_Cz46_Vz_63P"
+msgstr "Vz.63P"
 
 msgid "Cz01_Skoda_T40"
 msgstr "斯柯达 T40"
@@ -758,6 +764,20 @@ msgstr "\"猎犬\""
 msgid "Cz43_Ogar_short_special"
 msgstr "燃气轮机，优秀的火炮手感"
 
+msgid "Cz46_Vz_63P"
+msgstr "Vz.63P"
+
+msgid "Cz46_Vz_63P_descr"
+msgstr ""
+"20世纪60年代，尽管全球坦克工业的发展重心已转向设计主战坦克，但重型坦克的研发工作仍在继续。J系的Vz.63P便是其中一例。其设计追求极致的防护能力与强劲的火力，并配备了一种可配套的火炮装填机构，因此需要改进炮塔通风系统以排出火药燃气。由于实施难度较高，包括资源消耗巨大、研发周期漫长，以及生产基础需要大规模改造，再加上重型坦克时代已接近尾声，该计划最终被终止。"
+
+msgid "Cz46_Vz_63P_long_special"
+msgstr ""
+"Vz.63P堪称J系重型坦克工程的杰作，配备一门强劲的2连发弹夹炮，同时兼具不俗的装甲和机动性。其先进的引信装定系统可确保任何对手都无法全身而退，而较短的弹夹完整装填时间，则使其能够持续发起猛烈攻势。"
+
+msgid "Cz46_Vz_63P_short"
+msgstr "Vz.63P"
+
 msgid "DG_TK_61"
 msgstr "DG-TK-61"
 
@@ -829,6 +849,9 @@ msgstr "R-113S"
 
 msgid "Radiostanice_RM_31T"
 msgstr "RM-31T"
+
+msgid "Radiostanice_RM_31TP"
+msgstr "RM-31TP"
 
 msgid "Radiostanice_RM_31T_56G"
 msgstr "RM-31T-130M"
@@ -1075,6 +1098,9 @@ msgstr "DBV-152"
 
 msgid "Turret_1_Cz43_Ogar"
 msgstr "\"猎犬\""
+
+msgid "Turret_1_Cz46_Vz_63P"
+msgstr "Vz.63P"
 
 msgid "Turret_2_Cz02_TVP_T50"
 msgstr "斯柯达 T50(50型)"
@@ -1408,6 +1434,9 @@ msgstr "HE vz.51 (A)"
 msgid "_130mm_Narazovy_vz_55"
 msgstr "HE vz.51"
 
+msgid "_130mm_Narazovy_vz_63_NZ"
+msgstr "HE vz.63 NZ"
+
 msgid "_130mm_Prurazny_59-56G"
 msgstr "AP vz.130M"
 
@@ -1444,6 +1473,12 @@ msgstr "APCR vz.55"
 msgid "_130mm_Prurazny_vz_56"
 msgstr "AP vz.56"
 
+msgid "_130mm_Prurazny_vz_63_NZ"
+msgstr "AP vz.63 NZ"
+
+msgid "_130mm_Prurazny_vz_63_s_jadrem_NZ"
+msgstr "APCR vz.63 NZ"
+
 msgid "_130mm_Skoda_R_14"
 msgstr "130mm 斯柯达 R14炮"
 
@@ -1458,6 +1493,9 @@ msgstr "130mm vz.54 2A炮(GW)"
 
 msgid "_130mm_vz_57"
 msgstr "130mm vz.57炮"
+
+msgid "_130mm_vz_63_s_ANZ"
+msgstr "130mm vz.63 s ANZ炮"
 
 msgid "_152_mm_D_20SM"
 msgstr "152mm D-20SM炮"

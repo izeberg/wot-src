@@ -58,6 +58,9 @@ msgstr "A-220A-2"
 msgid "A_220A_CFE_D"
 msgstr "A-220A"
 
+msgid "A_220B_1_F"
+msgstr "A-220B"
+
 msgid "A_220B_1_QL"
 msgstr "A-220B(QL)"
 
@@ -66,6 +69,9 @@ msgstr "A-220B/78"
 
 msgid "A_220B_79"
 msgstr "A-220B/79"
+
+msgid "A_220C"
+msgstr "A-220C"
 
 msgid "A_220R"
 msgstr "A 220R"
@@ -755,6 +761,27 @@ msgstr "BZ-75 7x7"
 msgid "Ch48_BZ_75_7x7_short"
 msgstr "BZ-75 7x7"
 
+msgid "Ch48_BZ_75_CFE_F"
+msgstr "烈焰使者"
+
+msgid "Ch48_BZ_75_CFE_F_descr"
+msgstr ""
+"\"我静卧于废墟之间，凝视着浓烟升向高空。黑色的飞灰交织盘旋，甚至超过了炮火齐射的高度，火星穿过天际，留下渐渐暗淡的轨迹。我失败的唯一证据，唯有这铺满战场的灰烬——灰蒙蒙的、无形的、沉寂的，决绝的。然而其中，仍有几缕炽热的余火在隐隐燃烧，仿佛在抗拒着那份死寂。即便在此处，毁灭过后，火种依然存续。\n"
+"\n"
+"那一刻，我终于明白，我的终点，正是我的起点。\n"
+"\n"
+"若不曾浴火，又怎能重生？\""
+
+msgid "Ch48_BZ_75_CFE_F_long_special"
+msgstr ""
+"烈焰使者横扫战场，令无数敌人闻风丧胆，也令所有人肃然起敬。其强大武器能对任意目标造成可观损伤；火箭助推器与可靠装甲相结合，则提供了出类拔萃的机动性与防护。出其不意地打击对手，让凤凰振翅高飞！"
+
+msgid "Ch48_BZ_75_CFE_F_short"
+msgstr "烈焰使者"
+
+msgid "Ch48_BZ_75_CFE_F_short_special"
+msgstr "火箭助推器，强劲的火炮"
+
 msgid "Ch48_BZ_75_descr"
 msgstr ""
 "20世纪60年代，因与S系关系不再牢靠，C系提出了成立\"边防部队\"的概念。该部的主要火力计划由现役的\"边防坦克\"组成。BZ-75是此类坦克的计划之一，于1975年利用开发WZ111重型坦克所获得的经验进行研发。在设计炮塔期间，工程师们将WZ1224计划的设计特色融入其中。没有建造BZ-75原型车。"
@@ -1083,6 +1110,20 @@ msgstr ""
 msgid "Ch70_PTZ_78_short"
 msgstr "PTZ-78"
 
+msgid "Ch71_WZ_219"
+msgstr "WZ219"
+
+msgid "Ch71_WZ_219_descr"
+msgstr ""
+"20世纪70年代初，C系开始研发一辆新型轻型坦克，以取代过时的62式。这辆尺寸紧凑、快速的坦克在火力方面应与主战坦克相当。其设计包括一套多功能瞄准测距系统；然而，该系统过于笨重，需要独立的供电装置。由于技术难度大且研发成本高昂，该计划最终被终止。"
+
+msgid "Ch71_WZ_219_long_special"
+msgstr ""
+"WZ219继承了C系轻型坦克一贯强劲的火力优势。其独特之处在于配备了先进的测距装置，可高效侦测隐蔽目标的位置，使毫无防备的敌人暴露在火力之下。"
+
+msgid "Ch71_WZ_219_short"
+msgstr "WZ219"
+
 msgid "Ch72_Yongshi"
 msgstr "骁悍"
 
@@ -1369,6 +1410,9 @@ msgstr "平天大圣"
 msgid "Chassis_Ch48_BZ_75"
 msgstr "BZ 1975型"
 
+msgid "Chassis_Ch48_BZ_75_CFE_F"
+msgstr "烈焰使者"
+
 msgid "Chassis_Ch49_BZ_68"
 msgstr "BZ-68"
 
@@ -1435,6 +1479,9 @@ msgstr "BZ-79"
 msgid "Chassis_Ch68_PGZ_70"
 msgstr "PGZ-70"
 
+msgid "Chassis_Ch71_WZ_219"
+msgstr "WZ219"
+
 msgid "Chassis_Ch72_Yongshi"
 msgstr "骁悍"
 
@@ -1476,6 +1523,9 @@ msgid "Gun_Ch00_ClingeBot_SH"
 msgstr "智械模块"
 
 msgid "HS_110F"
+msgstr "HS 110F"
+
+msgid "HS_110F_F"
 msgstr "HS 110F"
 
 msgid "HS_110F_M"
@@ -1697,6 +1747,9 @@ msgstr "平天大圣"
 msgid "Turret_1_Ch48_BZ_75"
 msgstr "BZ 1975型"
 
+msgid "Turret_1_Ch48_BZ_75_CFE_F"
+msgstr "烈焰使者"
+
 msgid "Turret_1_Ch49_BZ_68"
 msgstr "BZ-68"
 
@@ -1756,6 +1809,9 @@ msgstr "PGZ-70"
 
 msgid "Turret_1_Ch70_PTZ_78"
 msgstr "PTZ-78"
+
+msgid "Turret_1_Ch71_WZ_219"
+msgstr "WZ219"
 
 msgid "Turret_1_Ch72_Yongshi"
 msgstr "骁悍"
@@ -2142,6 +2198,18 @@ msgstr "105mm 81-I式炮"
 msgid "_10WSc"
 msgstr "10WSc"
 
+msgid "_115mm_69_115T"
+msgstr "115mm 69-115T炮"
+
+msgid "_115mm_Po_115G"
+msgstr "破-115G"
+
+msgid "_115mm_Sha_bao_115G"
+msgstr "高爆-115G"
+
+msgid "_115mm_Tuo_chuan_115G"
+msgstr "穿被-115G"
+
 msgid "_120mm_CB-472LY"
 msgstr "穿被-472LY"
 
@@ -2279,6 +2347,9 @@ msgstr "12150L (34-1)"
 
 msgid "_12150L_70"
 msgstr "12150L-70"
+
+msgid "_12150ZL"
+msgstr "12150ZL"
 
 msgid "_122-mm_37-122JT"
 msgstr "122mm 37-122JT炮"
@@ -2640,6 +2711,9 @@ msgstr "Sprgr G 45 (IV WT)"
 msgid "_152_mm_64_152T"
 msgstr "152mm 64-152T炮"
 
+msgid "_152_mm_64_152T_F"
+msgstr "152mm 64-152T炮"
+
 msgid "_152_mm_64_152T_M"
 msgstr "152mm 64-152DV炮"
 
@@ -2668,6 +2742,9 @@ msgid "_152mm_59_152JG_FT_HE_G6_SH"
 msgstr "59-152JG HE"
 
 msgid "_152mm_AP_T"
+msgstr "穿被-152T"
+
+msgid "_152mm_AP_T_F"
 msgstr "穿被-152T"
 
 msgid "_152mm_Chuan_bei_152T_DV"
@@ -2712,7 +2789,13 @@ msgstr "GM 45HE B"
 msgid "_152mm_HEAT_T"
 msgstr "破-152T"
 
+msgid "_152mm_HEAT_T_F"
+msgstr "破-152T"
+
 msgid "_152mm_HE_T"
+msgstr "高爆-152T"
+
+msgid "_152mm_HE_T_F"
 msgstr "高爆-152T"
 
 msgid "_152mm_Po_152"

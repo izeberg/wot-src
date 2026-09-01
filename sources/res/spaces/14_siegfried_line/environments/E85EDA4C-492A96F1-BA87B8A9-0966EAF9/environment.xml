@@ -76,36 +76,31 @@
 		<enable>true</enable>
 		<adaptationSpeed>100.000000</adaptationSpeed>
 		<bloom>
-			<enable>true</enable>
 			<threshold>0.200000</threshold>
 			<amount>0.550000</amount>
-			<tint>1.000000 1.000000 1.000000</tint>
 			<dirtAmount>0.780000</dirtAmount>
 		</bloom>
 		<environment>
 			<sunlightLumMultiplier>6.000000</sunlightLumMultiplier>
-			<ambientLumMultiplier>1.000000</ambientLumMultiplier>
 			<sunLumMultiplier>19.000000</sunLumMultiplier>
 			<skyLumMultiplier>5.000000</skyLumMultiplier>
+			<skyLumMultiplierDeferred>1.000000</skyLumMultiplierDeferred>
 			<LDR2HDRenableLumaMask>false</LDR2HDRenableLumaMask>
 			<LDR2HDRsaturation>1.000000</LDR2HDRsaturation>
 		</environment>
 		<tonemappings>
 			<tonemapping>
 				<name>RexpTM</name>
-				<middleGray>0.190000</middleGray>
 				<whitePoint>1.000000</whitePoint>
 				<blackPoint>3.000000</blackPoint>
 			</tonemapping>
 			<tonemapping>
 				<name>FilmicTM</name>
-				<middleGray>0.194354</middleGray>
 				<whitePoint>12.790000</whitePoint>
 				<blackPoint>3.500000</blackPoint>
 			</tonemapping>
 			<tonemapping>
 				<name>LinearExpTM</name>
-				<middleGray>0.285637</middleGray>
 				<whitePoint>1.750000</whitePoint>
 				<blackPoint>1.500000</blackPoint>
 			</tonemapping>
@@ -178,6 +173,10 @@
 		<amplify>1.000000</amplify>
 	</SSShadows>
 	<VFX>
+		<vfxModelsMultiplier>0.305000</vfxModelsMultiplier>
+		<cpuParticlesMultiplier>0.305000</cpuParticlesMultiplier>
+		<gpuParticlesMultiplier>0.305000</gpuParticlesMultiplier>
+		<emissiveMaterialsMultiplier>0.305000</emissiveMaterialsMultiplier>
 		<particlesConfigXml>system/data/particles.xml</particlesConfigXml>
 		<particlesSpaceConfigXml>spaces/14_siegfried_line/particles.xml</particlesSpaceConfigXml>
 	</VFX>
@@ -292,4 +291,7 @@
 		<transmissionMult>0.450000</transmissionMult>
 		<waterReflectionAttenuation>0.600000</waterReflectionAttenuation>
 	</SimplifiedDeferred>
+	<VisibilityTunnel>
+		<shouldOverrideSettings>false</shouldOverrideSettings>
+	</VisibilityTunnel>
 </root>

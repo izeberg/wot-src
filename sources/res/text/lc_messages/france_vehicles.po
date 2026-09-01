@@ -472,6 +472,9 @@ msgstr "M47 \"谢瓦利埃\""
 msgid "Chassis_F143_Fauteur"
 msgstr "庇护者"
 
+msgid "Chassis_F147_AMX29_Belier"
+msgstr "AMX 29 \"攻城槌\""
+
 msgid "Chassis_F14_AMX40"
 msgstr "AMX 40"
 
@@ -1519,6 +1522,27 @@ msgstr ""
 msgid "F143_Fauteur_short"
 msgstr "庇护者"
 
+msgid "F147_AMX29_Belier"
+msgstr "AMX 29 \"攻城槌\""
+
+msgid "F147_AMX29_Belier_descr"
+msgstr ""
+"1963年，AMX公司接到任务，要求研发一辆机动性媲美查狄伦 25t、武器更强劲的紧凑型中型坦克。该坦克被命名为AMX 29 "
+"\"攻城槌\"。其主要特点是一门配备自动装填系统的127mm "
+"CN-127-F1线膛炮。它计划配备3名乘员。测试证实了其高机动性和强劲火力；但也暴露了严重的缺陷: "
+"火炮后坐力过大、载弹量有限、成本高昂，以及自动装填系统过于复杂。最终，该计划于1969年被终止。"
+
+msgid "F147_AMX29_Belier_long_special"
+msgstr ""
+"AMX 29 "
+"\"攻城槌\"是一辆F系X级支援型中型坦克。凭借低矮的外形、出色的隐蔽能力和优秀的机动性，它能出其不意地展开战术机动，并高效发动攻击。它拥有一门127毫米火炮，配备2连发改进型自动装填系统，若开火时机得当，该系统可大幅缩短下一发炮弹的装填时间。"
+
+msgid "F147_AMX29_Belier_short"
+msgstr "AMX 29 \"攻城槌\""
+
+msgid "F147_AMX29_Belier_short_special"
+msgstr "改进型自动装填炮，出色的机动性"
+
 msgid "F14_AMX40"
 msgstr "AMX 40"
 
@@ -2396,6 +2420,9 @@ msgstr ""
 "E.P.C.\n"
 "4型"
 
+msgid "Moteur_E_P_C_version_S6"
+msgstr "E.P.C. S6型"
+
 msgid "Moteur_moderne_3M_27_1_01"
 msgstr "新型引擎 3M.27.1.01"
 
@@ -2763,6 +2790,9 @@ msgstr "TRVP-13-A(幻影)"
 msgid "TRVP_13_A_LEOX"
 msgstr "TRVP-13-A L"
 
+msgid "TRVP_13_B"
+msgstr "TRVP-13-B"
+
 msgid "TRVP_13_SH"
 msgstr "TRVP-13"
 
@@ -2944,6 +2974,9 @@ msgstr "M47 \"谢瓦利埃\""
 
 msgid "Turret_1_F143_Fauteur"
 msgstr "庇护者"
+
+msgid "Turret_1_F147_AMX29_Belier"
+msgstr "AMX 29 \"攻城槌\""
 
 msgid "Turret_1_F14_AMX40"
 msgstr "AMX 40"
@@ -3752,6 +3785,18 @@ msgstr "120mm SA46 AC炮"
 
 msgid "_120mm_SA_46_fallout"
 msgstr "120mm SA46 F炮"
+
+msgid "_127_mm_CN_127_F1"
+msgstr "127mm CN-127-F1炮"
+
+msgid "_127_mm_Obus_Explosif_Mle_58"
+msgstr "127mm OE Mle.58"
+
+msgid "_127_mm_Obus_Perforant_Mle_58"
+msgstr "127mm Prf. Mle.58"
+
+msgid "_127_mm_Obus_Sous_Calibre_Mle_58"
+msgstr "127mm OCO Mle.58"
 
 msgid "_127mm_54_Model_1948"
 msgstr "127mm mle.48 L/54炮"

@@ -209,6 +209,62 @@
 					</param>
 				</params>
 			</block>
+			<block>
+				<class>GSMState</class>
+				<id>GSMState_1</id>
+				<params>
+					<param>
+						PREBATTLE
+						<name>GSM State</name>
+						<type>GameplayStateIDT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>ComponentMethod</class>
+				<id>ComponentMethod_16</id>
+				<params>
+					<param>
+						Sequence.stop
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>Sequence</class>
+				<id>Sequence_1</id>
+				<params>
+					<param>
+						2
+						<name>Output Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_21</id>
+			</block>
+			<block>
+				<class>StartScript</class>
+				<id>StartScript_1</id>
+			</block>
+			<block>
+				<class>ComponentMethod</class>
+				<id>ComponentMethod_17</id>
+				<params>
+					<param>
+						Sequence.start
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>OnPrebattleHighlights</class>
+				<id>OnPrebattleHighlights_1</id>
+			</block>
 		</blocks>
 		<connections>
 			<connection>
@@ -330,6 +386,66 @@
 				<input>vehicle</input>
 				<to>IsVehicleBurning_2</to>
 				<output>vehicle</output>
+			</connection>
+			<connection>
+				<from>GSMState_1</from>
+				<input>in</input>
+				<to>ComponentMethod_16</to>
+				<output>onEnterState</output>
+			</connection>
+			<connection>
+				<from>Sequence_1</from>
+				<input>in</input>
+				<to>ComponentMethod_16</to>
+				<output>o0</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>ComponentMethod_16</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>If_21</from>
+				<input>input</input>
+				<to>Sequence_1</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>StartScript_1</from>
+				<input>input</input>
+				<to>If_21</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>GSMState_1</from>
+				<input>value</input>
+				<to>If_21</to>
+				<output>isActive</output>
+			</connection>
+			<connection>
+				<from>OnPrebattleHighlights_1</from>
+				<input>in</input>
+				<to>ComponentMethod_17</to>
+				<output>onStart</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>ComponentMethod_17</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>If_21</from>
+				<input>subscribe</input>
+				<to>OnPrebattleHighlights_1</to>
+				<output>false</output>
+			</connection>
+			<connection>
+				<from>Sequence_1</from>
+				<input>unsubscribe</input>
+				<to>OnPrebattleHighlights_1</to>
+				<output>o1</output>
 			</connection>
 		</connections>
 		<macros/>

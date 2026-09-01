@@ -35,6 +35,7 @@ _comp7Season3BlockBuilder = StaticSizeBlockBuilder('comp7Season3', COMP7_BLOCK_L
 _comp7ArchiveGriffinBlockBuilder = StaticSizeBlockBuilder('comp7ArchiveGriffin', COMP7_BLOCK_LAYOUT, {}, [])
 _comp7ArchivePegasusBlockBuilder = StaticSizeBlockBuilder('comp7ArchivePegasus', COMP7_BLOCK_LAYOUT, {}, [])
 _comp7ArchiveManticoreBlockBuilder = StaticSizeBlockBuilder('comp7ArchiveManticore', COMP7_BLOCK_LAYOUT, {}, [])
+_comp7ArchiveDragonBlockBuilder = StaticSizeBlockBuilder('comp7ArchiveDragon', COMP7_BLOCK_LAYOUT, {}, [])
 _maxPopUps = [
  'maxXP', 'maxFrags', 'maxDamage']
 _maxFalloutPopUps = _maxPopUps + ['maxWinPoints', 'maxCoins']
@@ -56,6 +57,7 @@ _maxComp7Season3BlockBuilder = StaticSizeBlockBuilder('maxComp7Season3', MAX_COM
 _maxComp7ArchiveGriffinBlockBuilder = StaticSizeBlockBuilder('maxComp7ArchiveGriffin', MAX_COMP7_BLOCK_LAYOUT, {}, [])
 _maxComp7ArchivePegasusBlockBuilder = StaticSizeBlockBuilder('maxComp7ArchivePegasus', MAX_COMP7_BLOCK_LAYOUT, {}, [])
 _maxComp7ArchiveManticoreBlockBuilder = StaticSizeBlockBuilder('maxComp7ArchiveManticore', MAX_COMP7_BLOCK_LAYOUT, {}, [])
+_maxComp7ArchiveDragonBlockBuilder = StaticSizeBlockBuilder('maxComp7ArchiveDragon', MAX_COMP7_BLOCK_LAYOUT, {}, [])
 _vehTypeFragsBlockBuilder = DictBlockBuilder('vehTypeFrags', 'I', 'H', VEH_TYPE_FRAGS_DEPENDENCIES)
 _rankedSeasonsBlockBuilder = DictBlockBuilder('rankedSeasons', 'II', 'BB', {})
 _maxRankedSeason1BlockBuilder = StaticSizeBlockBuilder('maxRankedSeason1', MAX_BLOCK_LAYOUT, {}, _maxPopUps)
@@ -253,5 +255,6 @@ vehicleDossierLayout = (
  _comp7Season3BlockBuilder, _maxComp7Season3BlockBuilder,
  _comp7ArchiveGriffinBlockBuilder, _maxComp7ArchiveGriffinBlockBuilder,
  _comp7ArchivePegasusBlockBuilder, _maxComp7ArchivePegasusBlockBuilder,
- _comp7ArchiveManticoreBlockBuilder, _maxComp7ArchiveManticoreBlockBuilder)
+ _comp7ArchiveManticoreBlockBuilder, _maxComp7ArchiveManticoreBlockBuilder,
+ _comp7ArchiveDragonBlockBuilder, _maxComp7ArchiveDragonBlockBuilder)
 VEHICLE_DOSSIER_BLOCKS = {b.name:b for b in vehicleDossierLayout}

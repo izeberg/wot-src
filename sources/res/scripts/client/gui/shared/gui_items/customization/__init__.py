@@ -23,8 +23,9 @@ CustomizationTooltipContext = namedtuple('CustomizationTooltipContext', ('itemCD
                                                                          'showInventoryBlock',
                                                                          'level',
                                                                          'showOnlyProgressBlock',
-                                                                         'skipQuestValidation'))
+                                                                         'skipQuestValidation',
+                                                                         'context'))
 CustomizationTooltipContext.__new__.__defaults__ = (
- -1, -1, False, -1, False, False)
+ -1, -1, False, -1, False, False, None)
 C11nStyleProgressData = namedtuple('C11nStyleProgressData', ('styleID', 'branch', 'level'))
 C11nStyleProgressData.__new__.__defaults__ = (-1, -1, -1)

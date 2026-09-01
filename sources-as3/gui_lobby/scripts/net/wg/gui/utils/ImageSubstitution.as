@@ -1,6 +1,8 @@
 package net.wg.gui.utils
 {
    import flash.display.BitmapData;
+   import flash.geom.Point;
+   import flash.geom.Rectangle;
    import net.wg.data.constants.Errors;
    import net.wg.infrastructure.interfaces.entity.IDisposable;
    import org.idmedia.as3commons.util.StringUtils;
@@ -27,15 +29,18 @@ package net.wg.gui.utils
       
       public var height:Number = 16;
       
+      private var _lPadPixels:int = 0;
+      
       private var _disposed:Boolean = false;
       
-      public function ImageSubstitution(param1:String, param2:String, param3:Number = 0, param4:Number = 16, param5:Number = 16, param6:Boolean = false)
+      public function ImageSubstitution(param1:String, param2:String, param3:Number = 0, param4:Number = 16, param5:Number = 16, param6:Boolean = false, param7:int = 0)
       {
          super();
          this.subString = param1;
          this.source = param2;
          this.baseLineY = param3;
-         this.width = param4;
+         this._lPadPixels = param7;
+         this.width = param4 + param7;
          this.height = param5;
          if(param6)
          {
@@ -51,12 +56,23 @@ package net.wg.gui.utils
       public function loadImage() : Boolean
       {
          var _loc2_:Class = null;
+         var _loc3_:BitmapData = null;
          var _loc1_:Boolean = false;
          if(StringUtils.isNotEmpty(this.source))
          {
             _loc2_ = App.utils.classFactory.getClass(this.source);
-            this.image = new _loc2_() as BitmapData;
-            App.utils.asserter.assertNotNull(this.image,IMAGE + Errors.CANT_NULL);
+            _loc3_ = new _loc2_() as BitmapData;
+            App.utils.asserter.assertNotNull(_loc3_,IMAGE + Errors.CANT_NULL);
+            if(this._lPadPixels > 0)
+            {
+               this.image = new BitmapData(_loc3_.width + this._lPadPixels,_loc3_.height,true,0);
+               this.image.copyPixels(_loc3_,new Rectangle(0,0,_loc3_.width,_loc3_.height),new Point(this._lPadPixels,0));
+               _loc3_.dispose();
+            }
+            else
+            {
+               this.image = _loc3_;
+            }
             _loc1_ = true;
          }
          return _loc1_;

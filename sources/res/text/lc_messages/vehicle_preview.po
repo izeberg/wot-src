@@ -49,6 +49,9 @@ msgstr "研发"
 msgid "buyingPanel/buyBtn/label/restore"
 msgstr "恢复"
 
+msgid "buyingPanel/buyBtn/label/toBoxes"
+msgstr "前往大型补给品"
+
 msgid "buyingPanel/collectible/notResearchedVehiclesWarning"
 msgstr "尚未研发%(level)s级%(nation)s坦克"
 
@@ -63,6 +66,15 @@ msgstr "购买折扣:"
 
 msgid "buyingPanel/customOffer/research"
 msgstr "研发折扣:"
+
+msgid "buyingPanel/fromBoxes/fullLabel"
+msgstr "该坦克有机会从{{@ style (color $color)}}大型补给品{{/}}中掉落！"
+
+msgid "buyingPanel/fromBoxes/highlightenLabel"
+msgstr "大型补给品！"
+
+msgid "buyingPanel/fromBoxes/label"
+msgstr "该坦克有机会掉落自"
 
 msgid "buyingPanel/frontlinePack/couponLabel"
 msgstr "申请优惠券折扣:%(value)s"

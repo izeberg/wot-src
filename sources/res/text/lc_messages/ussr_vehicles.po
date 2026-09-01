@@ -55,6 +55,9 @@ msgstr ""
 msgid "Bedford_Twin-Six"
 msgstr "贝德福德双六缸"
 
+msgid "Chassis_1_R233_NK_1"
+msgstr "NK-1"
+
 msgid "Chassis_IS-6"
 msgstr "IS-6"
 
@@ -346,6 +349,9 @@ msgstr "701工程"
 msgid "Chassis_R148_Object_430_U"
 msgstr "430工程U"
 
+msgid "Chassis_R148_Object_430_U_7x7"
+msgstr "430工程U"
+
 msgid "Chassis_R149_Object_268_4"
 msgstr "268工程IV型"
 
@@ -623,6 +629,9 @@ msgid "Chassis_R43_T-70_2"
 msgstr "T-70加强型"
 
 msgid "Chassis_R45_IS-7"
+msgstr "IS-7"
+
+msgid "Chassis_R45_IS-7_7x7"
 msgstr "IS-7"
 
 msgid "Chassis_R47_ISU-152"
@@ -1169,6 +1178,9 @@ msgstr "M-50T"
 msgid "M_50TI"
 msgstr "M-50TI"
 
+msgid "M_50TI_7x7"
+msgstr "M-50TI"
+
 msgid "M_50TS"
 msgstr "M-50TS"
 
@@ -1192,6 +1204,9 @@ msgstr "M-80 (T-70)"
 
 msgid "M_850"
 msgstr "M-850"
+
+msgid "M_850B7"
+msgstr "M-850B7"
 
 msgid "M_850_7x7"
 msgstr "M-850"
@@ -1456,6 +1471,9 @@ msgid "R113M_140_7x7"
 msgstr "R-113"
 
 msgid "R113M_7x7"
+msgstr "R-113"
+
+msgid "R113M_7x7_0"
 msgstr "R-113"
 
 msgid "R113M_DR"
@@ -2083,6 +2101,16 @@ msgstr "全方位装甲，大口径火炮"
 
 msgid "R148_Object_430_U"
 msgstr "430工程U"
+
+msgid "R148_Object_430_U_7x7"
+msgstr "430工程U 7v7"
+
+msgid "R148_Object_430_U_7x7_descr"
+msgstr ""
+"430工程U是中型坦克430工程的其中一个版本，采用了动力传动舱后置的布局。该版本计划采用横置发动机和两个行星齿轮传动装置。这项技术方案能够扩大内部空间并减轻坦克重量。该坦克于1953年至1957年间研发，旨在替换T-54，但为了让位432工程，该计划的相关研发工作于1961年被终止。"
+
+msgid "R148_Object_430_U_7x7_short"
+msgstr "430工程U 7v7"
 
 msgid "R148_Object_430_U_descr"
 msgstr ""
@@ -3015,6 +3043,23 @@ msgstr "布雷扬"
 msgid "R231_Buryan_short_special"
 msgstr "高额的平均单发损伤和平均每分钟损伤。"
 
+msgid "R233_NK_1"
+msgstr "NK-1"
+
+msgid "R233_NK_1_desc"
+msgstr ""
+"一项重型坦克计划，诞生于20世纪50年代末至60年代初。当时，坦克制造研究突飞猛进，新型号层出不穷，对现有坦克的改进尝试也在不断推进。该坦克结合了IS-7和277工程重型坦克的设计元素。然而，随着坦克制造理念发生转变，坦克的发展开始更多取决于其作战定位，而非战斗全重，重型坦克的研发工作最终被叫停。"
+
+msgid "R233_NK_1_long_special"
+msgstr ""
+"NK-1是一辆S系IX级突破型重型坦克。作为擅长突破的重坦，它拥有优秀的最大前进速度、强劲的火炮和坚固的装甲。尽管火炮精度有所欠缺，但移动时出色的火炮手感弥补了该不足，让您能够持续发起攻势，不断突破敌方防线。"
+
+msgid "R233_NK_1_short"
+msgstr "NK-1"
+
+msgid "R233_NK_1_short_special"
+msgstr "出色的火炮手感，坚固的正面装甲"
+
 msgid "R234_T_13"
 msgstr "T-13"
 
@@ -3147,6 +3192,15 @@ msgstr "?empty?"
 
 msgid "R45_IS-7"
 msgstr "IS-7"
+
+msgid "R45_IS-7_7x7"
+msgstr "IS-7 7v7"
+
+msgid "R45_IS-7_7x7_descr"
+msgstr "1945年春，IS-7开始研发，1946-1947年间，原型车通过全部测试。然而，IS-7最终未能投入量产。"
+
+msgid "R45_IS-7_7x7_short"
+msgstr "IS-7 7v7"
 
 msgid "R45_IS-7_descr"
 msgstr "1945年春，IS-7开始研发，1946-1947年间，原型车通过全部测试。然而，IS-7最终未能投入量产。"
@@ -3950,6 +4004,9 @@ msgstr "701工程"
 msgid "Turret_1_R148_Object_430_U"
 msgstr "430工程U"
 
+msgid "Turret_1_R148_Object_430_U_7x7"
+msgstr "430工程U"
+
 msgid "Turret_1_R149_Object_268_4"
 msgstr "268工程IV型"
 
@@ -4136,6 +4193,9 @@ msgstr "432工程U"
 msgid "Turret_1_R231_Buryan"
 msgstr "布雷扬"
 
+msgid "Turret_1_R233_NK_1"
+msgstr "NK-1"
+
 msgid "Turret_1_R234_T_13"
 msgstr "T-13"
 
@@ -4173,6 +4233,9 @@ msgid "Turret_1_R43_T-70"
 msgstr "T-70"
 
 msgid "Turret_1_R45_IS-7"
+msgstr "IS-7"
+
+msgid "Turret_1_R45_IS-7_7x7"
 msgstr "IS-7"
 
 msgid "Turret_1_R47_ISU-152"
@@ -5468,6 +5531,9 @@ msgstr "10RK-26"
 msgid "_10RK-26M"
 msgstr "10RK-26B"
 
+msgid "_10RK-26_7x7_0"
+msgstr "10RK-26"
+
 msgid "_10RK-26_CN"
 msgstr "10RK-26M"
 
@@ -5485,6 +5551,9 @@ msgstr "10RKM"
 
 msgid "_10RK_2"
 msgstr "10RK-2"
+
+msgid "_10RK_26B7"
+msgstr "10RK-26B7"
 
 msgid "_10RK_SH"
 msgstr "10RK-DV"
@@ -5627,6 +5696,9 @@ msgstr "BK-9U"
 msgid "_122mm_BK_9U_430U"
 msgstr "BK-9U (430U)"
 
+msgid "_122mm_BK_9U_430U_7x7"
+msgstr "BK-9U (430U)"
+
 msgid "_122mm_BK_9_263"
 msgstr "BK-9 (263)"
 
@@ -5756,6 +5828,9 @@ msgstr "BR-472U"
 msgid "_122mm_BR_472U_430U"
 msgstr "BR-472U (430U)"
 
+msgid "_122mm_BR_472U_430U_7x7"
+msgstr "BR-472U (430U)"
+
 msgid "_122mm_BR_472VA"
 msgstr "BR-472VA"
 
@@ -5862,6 +5937,9 @@ msgid "_122mm_M62_T2D"
 msgstr "122mm M62-T2D炮"
 
 msgid "_122mm_M62_T2U"
+msgstr "122mm M62-T2U炮"
+
+msgid "_122mm_M62_T2U_7x7"
 msgstr "122mm M62-T2U炮"
 
 msgid "_122mm_M62_T2_A"
@@ -6119,6 +6197,9 @@ msgstr "UOF-472U"
 msgid "_122mm_UOF_472U_430U"
 msgstr "UOF-472U (430U)"
 
+msgid "_122mm_UOF_472U_430U_7x7"
+msgstr "UOF-472U (430U)"
+
 msgid "_122mm_UOF_472VA"
 msgstr "UOF-472VA"
 
@@ -6311,8 +6392,14 @@ msgstr "130mm S-70炮"
 msgid "_130mm_S_70A"
 msgstr "130mm S-70A炮"
 
+msgid "_130mm_S_70B7"
+msgstr "130mm S-70B7炮"
+
 msgid "_130mm_S_70_705"
 msgstr "130mm S-70炮 (705)"
+
+msgid "_130mm_S_70_7x7"
+msgstr "130mm S-70炮"
 
 msgid "_130mm_UBR-482P_fallout"
 msgstr "UBR-482P R"
@@ -6323,11 +6410,17 @@ msgstr "UBR-482 R"
 msgid "_130mm_UBR_482"
 msgstr "UBR-482"
 
+msgid "_130mm_UBR_482B7"
+msgstr "UBR-482B7"
+
 msgid "_130mm_UBR_482M"
 msgstr "UBR-482M"
 
 msgid "_130mm_UBR_482P"
 msgstr "UBR-482P"
+
+msgid "_130mm_UBR_482PB7"
+msgstr "UBR-482PB7"
 
 msgid "_130mm_UBR_482PM"
 msgstr "UBR-482PM"
@@ -6335,8 +6428,14 @@ msgstr "UBR-482PM"
 msgid "_130mm_UBR_482P_705"
 msgstr "UBR-482P (705)"
 
+msgid "_130mm_UBR_482P_7x7"
+msgstr "UBR-482P"
+
 msgid "_130mm_UBR_482_705"
 msgstr "UBR-482 (705)"
+
+msgid "_130mm_UBR_482_7x7"
+msgstr "UBR-482"
 
 msgid "_130mm_UOF-482_fallout"
 msgstr "UOF-482 R"
@@ -6344,11 +6443,17 @@ msgstr "UOF-482 R"
 msgid "_130mm_UOF_482"
 msgstr "UOF-482"
 
+msgid "_130mm_UOF_482B7"
+msgstr "UOF-482B7"
+
 msgid "_130mm_UOF_482M"
 msgstr "UOF-482M"
 
 msgid "_130mm_UOF_482_705"
 msgstr "UOF-482 (705)"
+
+msgid "_130mm_UOF_482_7x7"
+msgstr "UOF-482"
 
 msgid "_130mm_ZBK60M"
 msgstr "ZBK60M"
@@ -7047,6 +7152,9 @@ msgid "_4TDF"
 msgstr "4TDF"
 
 msgid "_4TPD"
+msgstr "4TPD"
+
+msgid "_4TPD_7x7"
 msgstr "4TPD"
 
 msgid "_53-BR-471-DG"

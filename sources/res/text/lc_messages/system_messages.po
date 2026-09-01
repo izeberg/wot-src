@@ -1048,6 +1048,9 @@ msgstr "服务器错误导致乘员训练失败。请稍后再试。"
 msgid "crewBooksNotification/bookUsed"
 msgstr "%(name)s"
 
+msgid "crewBooksNotification/bookUsedOneOf"
+msgstr "%(name)s"
+
 msgid "crewBooksNotification/booksUsed"
 msgstr "%(name)s(x%(count)s)"
 
@@ -2112,10 +2115,10 @@ msgid "login_to_other_game_wows"
 msgstr "该账号被用来登录《战舰世界》。"
 
 msgid "lootboxes/open/server_error"
-msgstr "领取礼物时发生错误: 服务器错误。"
+msgstr "开启补给品时发生错误: 服务器出错。"
 
 msgid "lootboxes/open/server_error/COOLDOWN"
-msgstr "领取礼物时发生错误。请等待上个操作完成。"
+msgstr "开启补给品时发生错误: 请等待上个操作完成。"
 
 msgid "lootboxes/open/server_error/DISABLED"
 msgstr "暂时无法操作。请稍后再试。"
@@ -2456,30 +2459,6 @@ msgstr "%(vehicleName)s的独特涂装已获得。"
 msgid "personalMissions/camouflageUnlocked"
 msgstr "%(vehicleName)s的独特涂装可用于该国的所有坦克:%(nation)s。"
 
-msgid "personalMissions/campaign12Paused/body"
-msgstr "全部作战行动进度已保存。您可随时继续进行个人任务。"
-
-msgid "personalMissions/campaign12Paused/title"
-msgstr "\"%(campaignName1)s\"和\"%(campaignName2)s\"个人任务已暂停"
-
-msgid "personalMissions/campaign12Resumed/body"
-msgstr "暂停的作战行动及其任务已恢复。"
-
-msgid "personalMissions/campaign12Resumed/title"
-msgstr "\"%(campaignName1)s\"和\"%(campaignName2)s\"个人任务已恢复"
-
-msgid "personalMissions/campaign3Paused/body"
-msgstr "全部作战行动进度已保存。您可随时继续进行个人任务。"
-
-msgid "personalMissions/campaign3Paused/title"
-msgstr "\"%(campaignName)s\"个人任务已暂停"
-
-msgid "personalMissions/campaign3Resumed/body"
-msgstr "暂停的作战行动已恢复。"
-
-msgid "personalMissions/campaign3Resumed/title"
-msgstr "\"%(campaignName)s\"个人任务已恢复"
-
 msgid "personalMissions/detailInstalled/body"
 msgstr "已成功安装%(detailName)s。"
 
@@ -2566,6 +2545,12 @@ msgid "personalMissions/reward/pm3/server_error"
 msgstr "获得奖励时出错。请稍后再试。"
 
 msgid "personalMissions/reward/pm3/success"
+msgstr "已成功安装%(detail_name)s。"
+
+msgid "personalMissions/reward/pm4/server_error"
+msgstr "获得奖励时出错。请稍后再试。"
+
+msgid "personalMissions/reward/pm4/success"
 msgstr "已成功安装%(detail_name)s。"
 
 msgid "personalMissions/reward/regular/server_error"

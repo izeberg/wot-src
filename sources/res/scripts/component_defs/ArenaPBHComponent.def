@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<BaseMethods/>
+	<CellMethods>
+		<setupArena>
+			<Args>
+				<config>PYTHON</config>
+			</Args>
+		</setupArena>
+	</CellMethods>
+	<ClientMethods/>
+	<Properties/>
+	<ofEntity>
+		<Arena/>
+	</ofEntity>
+	<DefaultKeyName>pbh</DefaultKeyName>
+</root>

@@ -1165,7 +1165,7 @@ msgid "kpi/bonus/negative/vehicleStrength"
 msgstr "坦克生命值"
 
 msgid "kpi/bonus/negative/vehicleTurretOrCuttingRotationSpeed"
-msgstr "炮塔旋转速度，或无炮塔坦克的火炮旋转速度"
+msgstr "火炮旋转速度"
 
 msgid "kpi/bonus/negative/vehicleTurretRotationSpeed"
 msgstr "炮塔旋转速度"
@@ -1512,7 +1512,7 @@ msgid "kpi/bonus/positive/vehicleStrength"
 msgstr "坦克生命值"
 
 msgid "kpi/bonus/positive/vehicleTurretOrCuttingRotationSpeed"
-msgstr "炮塔旋转速度或无炮塔坦克的火炮旋转速度"
+msgstr "火炮旋转速度"
 
 msgid "kpi/bonus/positive/vehicleTurretRotationSpeed"
 msgstr "炮塔旋转速度"
@@ -2277,6 +2277,51 @@ msgstr " 和 "
 
 msgid "tooltips/separator/other"
 msgstr "， "
+
+msgid "tooltips/shellMechanics/bustleFeed/description"
+msgstr "该坦克的外部供弹模式可使用损伤更高的炮弹。"
+
+msgid "tooltips/shellMechanics/bustleFeed/off"
+msgstr "常规模式下的基础参数。"
+
+msgid "tooltips/shellMechanics/bustleFeed/on"
+msgstr "外部供弹模式下的调整后参数。"
+
+msgid "tooltips/shellMechanics/lowChargeShot/basic/description"
+msgstr "完全补能炮弹基础参数"
+
+msgid "tooltips/shellMechanics/lowChargeShot/modified/description"
+msgstr "应急补能炮弹参数"
+
+msgid "tooltips/shellMechanics/lowChargeShot/off"
+msgstr "完全补能炮弹基础参数"
+
+msgid "tooltips/shellMechanics/lowChargeShot/offLabel"
+msgstr "基础"
+
+msgid "tooltips/shellMechanics/lowChargeShot/on"
+msgstr "应急补能炮弹参数"
+
+msgid "tooltips/shellMechanics/shellParamsSwitcher/angled_armor/description"
+msgstr "在校炮模式下，该炮弹类型可高效应对倾斜装甲。"
+
+msgid "tooltips/shellMechanics/shellParamsSwitcher/description"
+msgstr "该坦克的火炮配备特殊装置，可在开火前调整射击诸元。"
+
+msgid "tooltips/shellMechanics/shellParamsSwitcher/noscreen/description"
+msgstr "在常规模式下，该炮弹类型可有效应对未配备间隙装甲的目标。"
+
+msgid "tooltips/shellMechanics/shellParamsSwitcher/off"
+msgstr "常规模式"
+
+msgid "tooltips/shellMechanics/shellParamsSwitcher/on"
+msgstr "校炮模式"
+
+msgid "tooltips/shellMechanics/shellParamsSwitcher/screen/description"
+msgstr "在校炮模式下，该类型炮弹可击穿间隙装甲。"
+
+msgid "tooltips/shellMechanics/shellParamsSwitcher/straight_armor/description"
+msgstr "在常规模式下，该类型炮弹能有效应对垂直装甲。"
 
 msgid "tooltips/specializationDesc"
 msgstr "%(spec)s类别的标准配件在这个栏位中更加有效。其他类别的配件在这个栏位中只能提供标准加成效果。"

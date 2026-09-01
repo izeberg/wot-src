@@ -863,6 +863,12 @@ msgstr "可控经验加成"
 msgid "bonusName/attachment"
 msgstr "3D附件"
 
+msgid "bonusName/attachments_set/aerialAdvance"
+msgstr "空中突袭"
+
+msgid "bonusName/attachments_set/airDefenseSuite"
+msgstr "防空套件"
+
 msgid "bonusName/attachments_set/challengersBounty"
 msgstr "挑战者奖励"
 
@@ -871,6 +877,9 @@ msgstr "3D附件套装"
 
 msgid "bonusName/attachments_set/oceanicSentinel"
 msgstr "碧海守卫"
+
+msgid "bonusName/attachments_set/searchAndDestroy"
+msgstr "搜索并摧毁"
 
 msgid "bonusName/attendance_reward"
 msgstr "签到奖励"
@@ -4217,6 +4226,12 @@ msgstr "战略任务"
 
 msgid "item/type/specialMission"
 msgstr "要塞:特殊任务"
+
+msgid "lockedForRerollTooltip/body"
+msgstr "该任务在活动期间每天都可完成，且不可重置。"
+
+msgid "lockedForRerollTooltip/header"
+msgstr "固定任务"
 
 msgid "metrics/state/done"
 msgstr "已完成"

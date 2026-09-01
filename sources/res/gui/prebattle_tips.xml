@@ -209,6 +209,24 @@
 				<showTimes>5</showTimes>
 			</preceding>
 		</filter>
+		<filter>
+			<id>only_shellParamsSwitcher_first_5_times</id>
+			<mechanics>
+				<include>shellParamsSwitcher</include>
+			</mechanics>
+			<preceding>
+				<showTimes>5</showTimes>
+			</preceding>
+		</filter>
+		<filter>
+			<id>only_shellCalibration_first_5_times</id>
+			<mechanics>
+				<include>shellCalibration</include>
+			</mechanics>
+			<preceding>
+				<showTimes>5</showTimes>
+			</preceding>
+		</filter>
 	</filters>
 	<tips>
 		<tip>
@@ -1045,6 +1063,16 @@
 			<filter>only_stagedJetBoosters_first_5_times</filter>
 		</tip>
 		<tip>
+			<id>tip212</id>
+			<status>tip212Status</status>
+			<filter>only_shellParamsSwitcher_first_5_times</filter>
+		</tip>
+		<tip>
+			<id>tip213</id>
+			<status>tip213Status</status>
+			<filter>only_shellCalibration_first_5_times</filter>
+		</tip>
+		<tip>
 			<id>epicTip1</id>
 			<status>epicModeIntroduction</status>
 			<filter>max_15_battles</filter>
@@ -1431,6 +1459,10 @@
 		<tip>
 			<id>comp7Core37</id>
 			<status>comp7Core37Status</status>
+		</tip>
+		<tip>
+			<id>comp7NightMaps38</id>
+			<status>comp7NightMaps38Status</status>
 		</tip>
 		<tip>
 			<id>winback1</id>

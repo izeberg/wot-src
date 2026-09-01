@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BattleReplay, CommandMapping
 from constants import ARENA_PERIOD
 from gui.Scaleform.daapi.view.meta.RadarButtonMeta import RadarButtonMeta

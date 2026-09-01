@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from comp7_light.gui.Scaleform.genConsts.COMP7_LIGHT_HANGAR_ALIASES import COMP7_LIGHT_HANGAR_ALIASES
 from constants_utils import ConstInjector
 from gui.prb_control import settings

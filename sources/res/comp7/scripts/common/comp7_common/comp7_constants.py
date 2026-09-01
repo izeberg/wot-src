@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import enum, UnitBase, constants
 from constants_utils import ConstInjector
 DEFAULT_ASSETS_PACK = 'undefined'

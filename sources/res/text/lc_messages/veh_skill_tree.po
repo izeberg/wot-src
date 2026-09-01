@@ -308,8 +308,27 @@ msgstr "助推器提供的发动机功率加成提高{colorTagOpen}{value}%{colo
 msgid "tooltips/description/ch70_mechanic_3"
 msgstr "单场战斗中助推器可使用最大次数提高{colorTagOpen}{value}{colorTagClose}。"
 
+msgid "tooltips/description/ch71_mechanic_0"
+msgstr "红外搜索与跟踪系统可使用前的初始冷却时间缩短{colorTagOpen}{value}秒{colorTagClose}。"
+
+msgid "tooltips/description/ch71_mechanic_1"
+msgstr "红外搜索与跟踪系统可再次使用前的冷却时间缩短{colorTagOpen}{value}秒{colorTagClose}。"
+
+msgid "tooltips/description/ch71_mechanic_2"
+msgstr "使用红外搜索与跟踪系统点亮敌方坦克后，自身坦克对其可见时长缩短{colorTagOpen}{value}秒{colorTagClose}。"
+
+msgid "tooltips/description/ch71_mechanic_3"
+msgstr ""
+"红外搜索与跟踪系统扫描持续时间延长{colorTagOpen}{value0}秒{colorTagClose}，扫描扇区额外缩小{colorTagOpen}{value1}度{colorTagClose}，观察范围提高{colorTagOpen}{value2}%{colorTagClose}，敌方坦克移动中的隐蔽系数降低{colorTagOpen}{value3}%{colorTagClose}、植被后敌方坦克的隐蔽系数降低{colorTagOpen}{value4}%{colorTagClose}。"
+
 msgid "tooltips/description/crewProtection"
 msgstr "降低坦克受到损伤时乘员受伤的几率。"
+
+msgid "tooltips/description/cz46_mechanic_0"
+msgstr "未击穿后，平均穿透力提高{colorTagOpen}{value}%{colorTagClose}"
+
+msgid "tooltips/description/cz46_mechanic_1"
+msgstr "击穿后，平均损伤提高{colorTagOpen}{value}%{colorTagClose}"
 
 msgid "tooltips/description/damagedGunDispersion"
 msgstr "降低火炮受损时的炮弹散布范围。"
@@ -472,6 +491,18 @@ msgstr "缩短火炮弹夹中两次射击之间的装填时间。"
 msgid "tooltips/description/invisibilityWhenShooting"
 msgstr "降低射击时被敌方坦克点亮的几率。"
 
+msgid "tooltips/description/it43_mechanic_0"
+msgstr "弹鼓未满载时，储能冷却时间{colorTagOpen}缩短{value}秒。{colorTagClose}"
+
+msgid "tooltips/description/it43_mechanic_1"
+msgstr "弹鼓满载时，储能冷却时间{colorTagOpen}缩短{value}秒。{colorTagClose}"
+
+msgid "tooltips/description/it43_mechanic_2"
+msgstr "激活特殊机制后装填时间{colorTagOpen}额外缩短{value}秒。{colorTagClose}"
+
+msgid "tooltips/description/it43_mechanic_3"
+msgstr "战斗开始时的可用储能次数{colorTagOpen}提高{value}次。{colorTagClose}"
+
 msgid "tooltips/description/j52_mechanic_0"
 msgstr "火炮冷却延迟时间缩短{colorTagOpen}{value}秒{colorTagClose}。"
 
@@ -480,6 +511,18 @@ msgstr "火炮单发射击产生的热量降低{colorTagOpen}{value}%{colorTagCl
 
 msgid "tooltips/description/j52_mechanic_2"
 msgstr "升温火炮的冷却速度提高{colorTagOpen}{value}%{colorTagClose}。"
+
+msgid "tooltips/description/j53_mechanic_0"
+msgstr "同轴火箭发射器装填时间{colorTagOpen}缩短{value}秒{colorTagClose}。"
+
+msgid "tooltips/description/j53_mechanic_1"
+msgstr "同轴火箭发射器装填时间{colorTagOpen}缩短{value}秒{colorTagClose}。"
+
+msgid "tooltips/description/j53_mechanic_2"
+msgstr "同轴火箭发射器装填时间{colorTagOpen}缩短{value}秒{colorTagClose}。"
+
+msgid "tooltips/description/j53_mechanic_3"
+msgstr "火箭平均损伤{colorTagOpen}提高{value}点{colorTagClose}。"
 
 msgid "tooltips/description/nonHEShellDamage"
 msgstr "提高非HE炮弹造成的损伤。"
@@ -560,6 +603,18 @@ msgstr "堡垒模式下的炮弹散布范围降低{colorTagOpen}{value}%{colorTa
 msgid "tooltips/description/s36_mechanic_3"
 msgstr "堡垒模式下的装填时间缩短{colorTagOpen}{value}%{colorTagClose}。"
 
+msgid "tooltips/description/s41_mechanic_0"
+msgstr "外部供弹模式下，最大前进速度{colorTagOpen}提高{value}%{colorTagClose}。"
+
+msgid "tooltips/description/s41_mechanic_1"
+msgstr "外部供弹模式下，特殊炮弹造成的平均损伤{colorTagOpen}提高{value}点{colorTagClose}。"
+
+msgid "tooltips/description/s41_mechanic_2"
+msgstr "外部供弹模式下，标准炮弹造成的平均损伤提高{colorTagOpen}{value}点{colorTagClose}。"
+
+msgid "tooltips/description/s41_mechanic_3"
+msgstr "外部供弹模式下，火炮装填时间缩短{colorTagOpen}{value}%{colorTagClose}(HE炮弹除外)。"
+
 msgid "tooltips/description/selectiveModuleHPBoost"
 msgstr "提高坦克油箱和发动机模块的耐久度。"
 
@@ -568,6 +623,9 @@ msgstr "降低受损弹药架和发动机的惩罚。"
 
 msgid "tooltips/description/shellModuleDamage"
 msgstr "提高炮弹对敌方坦克模块造成的损伤。"
+
+msgid "tooltips/description/shellSwitchMechanic"
+msgstr "切换射击模式所需的时间缩短{colorTagOpen}{value}秒{colorTagClose}。"
 
 msgid "tooltips/description/shells_consumables_switch"
 msgstr "让您可以设置弹药和给养的备用武装。"
@@ -755,6 +813,18 @@ msgstr "核心形状优化"
 msgid "tooltips/title/ch70_mechanic_3"
 msgstr "助推器存储扩容"
 
+msgid "tooltips/title/ch71_mechanic_0"
+msgstr "改良式闷燃点火器"
+
+msgid "tooltips/title/ch71_mechanic_1"
+msgstr "高性能液体冷却系统"
+
+msgid "tooltips/title/ch71_mechanic_2"
+msgstr "低发散光学组件"
+
+msgid "tooltips/title/ch71_mechanic_3"
+msgstr "并联式液体冷却系统"
+
 msgid "tooltips/title/chassisHP"
 msgstr "悬挂装置耐久度"
 
@@ -763,6 +833,12 @@ msgstr "悬挂装置维修速度"
 
 msgid "tooltips/title/crewProtection"
 msgstr "乘员防护"
+
+msgid "tooltips/title/cz46_mechanic_0"
+msgstr "可调式引信装定器: 平均穿透力"
+
+msgid "tooltips/title/cz46_mechanic_1"
+msgstr "可调式引信装定器: 平均损伤"
 
 msgid "tooltips/title/damagedGunDispersion"
 msgstr "触发式炮弹散布范围"
@@ -941,6 +1017,18 @@ msgstr "弹夹短装填时间"
 msgid "tooltips/title/invisibilityWhenShooting"
 msgstr "射击后的隐蔽系数"
 
+msgid "tooltips/title/it43_mechanic_0"
+msgstr "高纯度转子绕组"
+
+msgid "tooltips/title/it43_mechanic_1"
+msgstr "主动式转子冷却"
+
+msgid "tooltips/title/it43_mechanic_2"
+msgstr "高导热性定子壳体"
+
+msgid "tooltips/title/it43_mechanic_3"
+msgstr "正交绕组"
+
 msgid "tooltips/title/j52_mechanic_0"
 msgstr "低温传热液"
 
@@ -949,6 +1037,18 @@ msgstr "高导热性热护套"
 
 msgid "tooltips/title/j52_mechanic_2"
 msgstr "热导管优化"
+
+msgid "tooltips/title/j53_mechanic_0"
+msgstr "装填循环优化"
+
+msgid "tooltips/title/j53_mechanic_1"
+msgstr "装填循环优化"
+
+msgid "tooltips/title/j53_mechanic_2"
+msgstr "装填循环优化"
+
+msgid "tooltips/title/j53_mechanic_3"
+msgstr "战斗部构型优化"
 
 msgid "tooltips/title/nonHEShellDamage"
 msgstr "非HE炮弹损伤"
@@ -1031,6 +1131,18 @@ msgstr "精校平衡转子"
 msgid "tooltips/title/s36_mechanic_3"
 msgstr "液压驱动输弹机"
 
+msgid "tooltips/title/s41_mechanic_0"
+msgstr "改进型悬挂减震器"
+
+msgid "tooltips/title/s41_mechanic_1"
+msgstr "改进型特殊定装弹"
+
+msgid "tooltips/title/s41_mechanic_2"
+msgstr "改进型标准定装弹"
+
+msgid "tooltips/title/s41_mechanic_3"
+msgstr "外部供弹装填循环优化"
+
 msgid "tooltips/title/selectiveModuleHPBoost"
 msgstr "局部模块耐久度强化"
 
@@ -1039,6 +1151,9 @@ msgstr "局部模块防护"
 
 msgid "tooltips/title/shellModuleDamage"
 msgstr "炮弹模块损伤"
+
+msgid "tooltips/title/shellSwitchMechanic"
+msgstr "校炮优化"
 
 msgid "tooltips/title/shells_consumables_switch"
 msgstr "弹药与给养武装"

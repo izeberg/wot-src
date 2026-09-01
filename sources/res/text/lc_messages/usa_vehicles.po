@@ -1747,6 +1747,16 @@ msgstr "T110E4"
 msgid "A85_T110E3"
 msgstr "T110E3"
 
+msgid "A85_T110E3_7x7"
+msgstr "T110E3 7v7"
+
+msgid "A85_T110E3_7x7_descr"
+msgstr ""
+"1954年，汽车城举办了一场关于重型坦克研发前景的研讨会。除开其它的先进项目，克莱斯勒公司还以TS-31为基础提出了一种新型坦克设计，主要目的是确保其尺寸能够通过特定隧道。该计划下包含多种方案，但最终被取消。"
+
+msgid "A85_T110E3_7x7_short"
+msgstr "T110E3 7v7"
+
 msgid "A85_T110E3_descr"
 msgstr ""
 "1954年，汽车城举办了一场关于重型坦克研发前景的研讨会。除开其它的先进项目，克莱斯勒公司还以TS-31为基础提出了一种新型坦克设计，主要目的是确保其尺寸能够通过特定隧道。该计划下包含多种方案，但最终被取消。"
@@ -1907,6 +1917,9 @@ msgid "AN_VRC-24"
 msgstr "AN/VRC-24"
 
 msgid "AN_VRC-3"
+msgstr "AN/VRC-3"
+
+msgid "AN_VRC-3_7x7_0"
 msgstr "AN/VRC-3"
 
 msgid "AN_VRC-3_Rush_Ep1"
@@ -2510,6 +2523,9 @@ msgstr "T110E4"
 msgid "Chassis_A85_T110E3"
 msgstr "T110E3"
 
+msgid "Chassis_A85_T110E3_7x7"
+msgstr "T110E3"
+
 msgid "Chassis_A87_M44"
 msgstr "T99E1"
 
@@ -2690,6 +2706,9 @@ msgstr ""
 "AOI-628-2"
 
 msgid "Continental_AOI_1490E3"
+msgstr "大陆 AOI-1490E3"
+
+msgid "Continental_AOI_1490E3_7x7"
 msgstr "大陆 AOI-1490E3"
 
 msgid "Continental_AOI_1490E3_short"
@@ -4479,6 +4498,9 @@ msgstr "T110E4"
 msgid "Turret_1_A85_T110E3"
 msgstr "T110E3"
 
+msgid "Turret_1_A85_T110E3_7x7"
+msgstr "T110E3"
+
 msgid "Turret_1_A87_M44"
 msgstr "M44"
 
@@ -5679,14 +5701,14 @@ msgstr "152mm XM81两用火炮(常规弹药 T49)"
 msgid "_152mm_HEAT_XM409"
 msgstr "HEAT XM409"
 
-msgid "_152mm_HEAT_XM409E1"
-msgstr "HEAT XM409E1"
-
-msgid "_152mm_HEAT_XM409E1_T49"
-msgstr "HEAT XM409E1 (T49)"
-
 msgid "_152mm_HEAT_XM409_T49"
 msgstr "HEAT XM409 (T49)"
+
+msgid "_152mm_HESH_XM657E3"
+msgstr "HESH XM657E3"
+
+msgid "_152mm_HESH_XM657E3_T49"
+msgstr "HESH XM657E3 (T49)"
 
 msgid "_152mm_HE_XM657E2"
 msgstr "HE XM657E2"
@@ -5698,6 +5720,9 @@ msgid "_152mm_HE_XM657E3"
 msgstr "HE XM657E3"
 
 msgid "_155mm_APCR_M112E3"
+msgstr "APCR M112E3"
+
+msgid "_155mm_APCR_M112E3_7x7"
 msgstr "APCR M112E3"
 
 msgid "_155mm_APCR_M112_T95"
@@ -5713,6 +5738,9 @@ msgid "_155mm_AP_M111E1"
 msgstr "AP M111E1"
 
 msgid "_155mm_AP_M111E3"
+msgstr "AP M111E3"
+
+msgid "_155mm_AP_M111E3_7x7"
 msgstr "AP M111E3"
 
 msgid "_155mm_AP_M111E4"
@@ -5772,6 +5800,9 @@ msgstr "155mm T7E2 AT炮"
 msgid "_155mm_AT_Gun_T7E3"
 msgstr "155mm T7E3 AT炮"
 
+msgid "_155mm_AT_Gun_T7E3_7x7"
+msgstr "155mm T7E3 AT炮"
+
 msgid "_155mm_AT_Gun_T7E4"
 msgstr "155mm T7E4 AT炮"
 
@@ -5818,6 +5849,9 @@ msgid "_155mm_HE_M101E1"
 msgstr "HE M101E1"
 
 msgid "_155mm_HE_M101E3"
+msgstr "HE M101E3"
+
+msgid "_155mm_HE_M101E3_7x7"
 msgstr "HE M101E3"
 
 msgid "_155mm_HE_M101E4"

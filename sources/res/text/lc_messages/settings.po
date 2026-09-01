@@ -68,6 +68,15 @@ msgstr ""
 msgid "HAVOK_ENABLED/warning"
 msgstr "如果在当前战斗中被禁用，该设置将在下一次战斗中应用。"
 
+msgid "INCREASE_EFFECTS_CONTRAST_ENABLED"
+msgstr "增强视觉效果"
+
+msgid "INCREASE_EFFECTS_CONTRAST_ENABLED/description"
+msgstr "开启增强视觉效果。关闭该选项将恢复为标准效果，并可能提高游戏性能。"
+
+msgid "INCREASE_EFFECTS_CONTRAST_ENABLED/warning"
+msgstr "如果在当前战斗中此设置为禁用状态，它将在下一场战斗中应用。"
+
 msgid "LANGUAGE_CODE"
 msgstr "zh_cn"
 
@@ -253,14 +262,14 @@ msgstr ""
 "\n"
 "在标准图像预设和低贴图质量下不可用。"
 
-msgid "VISIBILITY_TUNNEL_ENABLED"
-msgstr "在狙击模式下隐藏3D附件"
+msgid "VISIBILITY_TUNNEL"
+msgstr "效果和3D附件显示"
 
-msgid "VISIBILITY_TUNNEL_ENABLED/description"
+msgid "VISIBILITY_TUNNEL/description"
 msgstr ""
-"在狙击模式下，火炮准星中暂时隐藏坦克3D附件。\n"
+"调整屏幕中心附近的效果和3D附件的显示程度，以降低瞄准时的视觉干扰。3D附件显示仅会在狙击模式下变化。\n"
 "\n"
-"减少视觉干扰，提高瞄准效率。"
+"调低数值可使效果和3D附件更加透明，从而提高瞄准清晰度。"
 
 msgid "WATER_QUALITY"
 msgstr "水的画质"
@@ -2164,6 +2173,18 @@ msgstr "模式："
 
 msgid "screenMode/windowed"
 msgstr "窗口"
+
+msgid "showPrebattleHighlights"
+msgstr "开启特别展示"
+
+msgid "showPrebattleHighlights/description"
+msgstr ""
+"在战前倒计时期间，展示一系列外观酷炫的坦克。\n"
+"\n"
+"关闭该选项可提高游戏性能。"
+
+msgid "showPrebattleHighlights/warning"
+msgstr "如果在当前战斗中此设置为禁用状态，它将在下一场战斗中开启。"
 
 msgid "smoothing/description"
 msgstr "启用此设置可使物体的边缘及表面看起来更流畅。"

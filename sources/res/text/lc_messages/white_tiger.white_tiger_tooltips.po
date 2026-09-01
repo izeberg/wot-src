@@ -1,0 +1,179 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-16 10:00+0300\n"
+"PO-Revision-Date: 2023-03-16 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "bannerTooltip/allStagesAreCompleted"
+msgstr "已完成所有阶段！"
+
+msgid "bannerTooltip/description"
+msgstr "BT坦克对战猎犬小队: 使用经过改装的坦克，以1对6的形式进行非对称战斗。获取独特个性化元素及其他珍贵奖励。"
+
+msgid "bannerTooltip/expiryDate/frozen"
+msgstr "休战期"
+
+msgid "bannerTooltip/expiryDate/inAnnouncement"
+msgstr "距最终兵器启动还有"
+
+msgid "bannerTooltip/expiryDate/technicalPause"
+msgstr "该模式暂不开放"
+
+msgid "bannerTooltip/header"
+msgstr "最终兵器:启元"
+
+msgid "bannerTooltip/mode"
+msgstr "模式"
+
+msgid "bannerTooltip/modeHint"
+msgstr "—— 正在切换至其他游戏模式"
+
+msgid "bannerTooltip/performanceRisk/text/highRisk"
+msgstr "您的计算机性能不足以运行此模式。您可能会遇到图形和坦克移动方面的问题。游戏客户端也有可能崩溃。"
+
+msgid "bannerTooltip/performanceRisk/text/lowRisk"
+msgstr "如果计算机性能不足，请在设置中尝试降低图形质量。"
+
+msgid "bannerTooltip/performanceRisk/text/mediumRisk"
+msgstr "该模式需要较高的计算机性能。您可能会遇到地图加载、图形和坦克移动方面的问题。如果性能不足，请在设置中尝试较低的图形质量。"
+
+msgid "bannerTooltip/performanceRisk/title/highRisk"
+msgstr "低性能"
+
+msgid "bannerTooltip/performanceRisk/title/lowRisk"
+msgstr "该模式对计算机的要求较高"
+
+msgid "bannerTooltip/performanceRisk/title/mediumRisk"
+msgstr "性能降低"
+
+msgid "bannerTooltip/year"
+msgstr "2026"
+
+msgid "battleResult/interaction/friend/friend"
+msgstr "对方已是您的好友。"
+
+msgid "battleResult/interaction/friend/inviteSent"
+msgstr "等待对方确认好友请求。"
+
+msgid "battleResult/interaction/friend/removeFromBlacklist"
+msgstr "从您的黑名单中移除玩家。"
+
+msgid "battleResult/interaction/friend/sendInvite"
+msgstr "把玩家加为好友"
+
+msgid "battleResult/interaction/menu"
+msgstr "点击打开与该玩家的互动菜单。"
+
+msgid "battleResult/interaction/platoon/platoonCanMade"
+msgstr "邀请组队"
+
+msgid "battleResult/interaction/platoon/platoonDone"
+msgstr "玩家已在小队中。"
+
+msgid "battleResult/interaction/platoon/platoonSent"
+msgstr "已发送邀请。"
+
+msgid "battleResult/interaction/platoon/platoonUnavailable"
+msgstr "只有小队指挥官才能邀请玩家加入小队。"
+
+msgid "dailyQuests/badgeStatus"
+msgstr "%(icon)开放至%(date)s"
+
+msgid "dailyQuests/rewards"
+msgstr "奖励:"
+
+msgid "dailyQuests/status"
+msgstr "距新的每日任务开放还有%(icon)%(timer)"
+
+msgid "hangar/startBtn/lock/body"
+msgstr "请选择合适的坦克加入战斗。"
+
+msgid "hangar/startBtn/lock/header"
+msgstr "无法加入战斗"
+
+msgid "hangar/startBtn/offline/body"
+msgstr "由于技术原因，所选难度/模式的战斗暂不开放。"
+
+msgid "hangar/startBtn/offline/header"
+msgstr "无法加入战斗"
+
+msgid "hangar/startBtn/squadInBattle/body"
+msgstr "小队从上一场战斗中返回后，才能加入新的战斗。"
+
+msgid "hangar/startBtn/squadInBattle/header"
+msgstr "无法加入战斗"
+
+msgid "hangar/startBtn/squadNotAvailableLevel/body"
+msgstr "小队的难度等级不匹配。"
+
+msgid "hangar/startBtn/squadNotAvailableLevel/header"
+msgstr "无法加入战斗"
+
+msgid "metaWidget/body"
+msgstr "点击即可查看全部活动目标和奖励。"
+
+msgid "metaWidget/header"
+msgstr "探秘之旅"
+
+msgid "shopWidget/body"
+msgstr "点击打开军械库内的特殊版块，内含专属活动礼包。"
+
+msgid "shopWidget/header"
+msgstr "最终兵器钥匙及其他好物"
+
+msgid "teamList/actions/body"
+msgstr "创建小队和添加/删除好友的快捷操作。"
+
+msgid "teamList/actions/header"
+msgstr "快捷操作"
+
+msgid "teamList/damage/body"
+msgstr "按造成的损伤排序。"
+
+msgid "teamList/damage/header"
+msgstr "造成损伤"
+
+msgid "teamList/keys/body"
+msgstr "按获得的密钥数量(不包括因完成每日任务所奖励的密钥)排序。"
+
+msgid "teamList/keys/header"
+msgstr "获得密钥"
+
+msgid "teamList/kills/body"
+msgstr "按击毁敌方坦克数排序。"
+
+msgid "teamList/kills/header"
+msgstr "击毁敌方坦克"
+
+msgid "teamList/name/header"
+msgstr "昵称"
+
+msgid "teamList/place/body"
+msgstr "按团队中的排名排序。"
+
+msgid "teamList/place/header"
+msgstr "在团队中的排名"
+
+msgid "teamList/squad/header"
+msgstr "小队是一个战术单位，组队玩家可在战斗中协同配合。"
+
+msgid "teamList/vehicle/body"
+msgstr "按坦克类型和名称排序。"
+
+msgid "teamList/vehicle/header"
+msgstr "坦克"
+
+msgid "vehicle/eventBonus"
+msgstr "驾驶该坦克完成每日任务即可获得额外密钥"
+
+msgid "vehicle/lowEfficiency"
+msgstr "低乘员效率"
+
+msgid "vehicle/rentState"
+msgstr "坦克被锁定"

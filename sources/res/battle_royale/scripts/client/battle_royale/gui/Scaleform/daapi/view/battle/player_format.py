@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, BigWorld
 from gui.battle_control.arena_info.arena_vos import VehicleArenaInfoVO
 from gui.battle_control.arena_info.player_format import PlayerFullNameFormatter

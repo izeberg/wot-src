@@ -1,8 +1,9 @@
 from __future__ import absolute_import, print_function
-import operator
+import logging, operator
 from gui.shared import g_eventBus, events
 from shared_utils import safeForEach
 from skeletons.gui.game_control import IGameStateTracker, IGameController
+_logger = logging.getLogger(__name__)
 
 class GameStateTracker(IGameStateTracker):
 
@@ -49,8 +50,13 @@ class GameStateTracker(IGameStateTracker):
 
     def addController(self, controller):
         if not isinstance(controller, IGameController):
-            print('Controller should implements IGameController')
+            _logger.error('Controller should implements IGameController')
         self._controllers.append(controller)
+
+    def removeController(self, controller):
+        if not isinstance(controller, IGameController):
+            _logger.error('Controller should implements IGameController')
+        self._controllers.remove(controller)
 
     def _invoke(self, method, *args):
         safeForEach(operator.methodcaller(method, *args), self._controllers)

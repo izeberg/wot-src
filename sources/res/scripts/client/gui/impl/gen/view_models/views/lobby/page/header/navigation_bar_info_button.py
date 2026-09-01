@@ -5,6 +5,7 @@ class ButtonType(Enum):
     INFO = 'Info'
     QUESTION = 'Question'
     VIDEO = 'Video'
+    DROP_LIST = 'Drop_List'
 
 
 class NavigationBarInfoButton(ViewModel):

@@ -70,7 +70,7 @@ package net.wg.gui.components.controls
       override protected function draw() : void
       {
          super.draw();
-         if(isInvalid(InvalidationType.SIZE,InvalidationType.LAYOUT))
+         if(isInvalidTypes(InvalidationType.SIZE,InvalidationType.LAYOUT))
          {
             this.updateLayout();
          }

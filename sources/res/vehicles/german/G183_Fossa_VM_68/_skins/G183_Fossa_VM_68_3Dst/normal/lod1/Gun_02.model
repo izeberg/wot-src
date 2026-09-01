@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-0.503947 -0.263313 -0.193524</min>
+		<max>0.503486 0.497107 5.668297</max>
+	</visibilityBox>
+	<parent>vehicles/german/G183_Fossa_VM_68/_skins/G183_Fossa_VM_68_3Dst/normal/lod2/Gun_02</parent>
+	<extent>64.000000</extent>
+	<nodefullVisual>vehicles/german/G183_Fossa_VM_68/_skins/G183_Fossa_VM_68_3Dst/normal/lod1/Gun_02</nodefullVisual>
+	<tank>true</tank>
+</root>

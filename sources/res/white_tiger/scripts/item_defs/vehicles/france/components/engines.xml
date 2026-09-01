@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<ids>
+		<Hispano-Suiza_HS110_WT>1001</Hispano-Suiza_HS110_WT>
+	</ids>
+	<shared>
+		<Hispano-Suiza_HS110_WT>
+			<userString>#white_tiger.france_vehicles.extend:Hispano-Suiza_HS110_WT</userString>
+			<tags>diesel</tags>
+			<level>10</level>
+			<price>94250</price>
+			<notInShop>true</notInShop>
+			<wwsoundPC>eng_v55_pc</wwsoundPC>
+			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<power>1140</power>
+			<weight>1426</weight>
+			<maxHealth>360</maxHealth>
+			<maxRegenHealth>170</maxRegenHealth>
+			<repairCost>9</repairCost>
+			<fireStartingChance>
+				0.0
+				<!--BW_String-->
+			</fireStartingChance>
+			<rpm_min>328</rpm_min>
+			<rpm_max>2216</rpm_max>
+		</Hispano-Suiza_HS110_WT>
+	</shared>
+</root>

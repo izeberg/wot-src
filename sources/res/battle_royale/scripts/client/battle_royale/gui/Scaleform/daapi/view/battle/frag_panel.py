@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.daapi.view.meta.FragPanelMeta import FragPanelMeta
 from battle_royale.gui.battle_control.controllers.vehicles_count_ctrl import IVehicleCountListener
 from gui.battle_control.avatar_getter import getArena

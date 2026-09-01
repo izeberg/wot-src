@@ -1,10 +1,10 @@
 import time, typing, wg_async
 from gui.game_loading import loggers
 from helpers.CallbackDelayer import CallbackDelayer
-from frameworks.state_machine import State, StateFlags, StateEvent
+from frameworks_common.state_machine import State, StateFlags, StateEvent
 from gui.game_loading.state_machine.const import TickingMode
 if typing.TYPE_CHECKING:
-    from frameworks.state_machine import StateMachine
+    from frameworks_common.state_machine import StateMachine
     from gui.game_loading.resources.base import BaseResources
     from gui.game_loading.resources.models import BaseResourceModel
 _logger = loggers.getStatesLogger()

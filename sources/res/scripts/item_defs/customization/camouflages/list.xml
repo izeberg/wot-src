@@ -366570,6 +366570,56 @@
 		</camouflage>
 	</itemGroup>
 	<itemGroup>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
+		</vehicleFilter>
+		<camouflage>
+			<id>1140</id>
+			<texture>vehicles/russian/Camouflage/pub_cn360_mid_autumn.dds</texture>
+			<description>#vehicle_customization:camouflage/empty/description</description>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<userString>#vehicle_customization:camouflage/pub_cn360_mid_autumn/label</userString>
+			<tags>fullRGB hiddenInUI</tags>
+			<invisibilityFactor>1</invisibilityFactor>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>
+					2.11 2.11
+					<!--BW_String-->
+				</factor>
+				<offset>
+					0.44 -0.18
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+			<rotation>
+				<HULL>0.130376</HULL>
+				<TURRET>0.130376</TURRET>
+				<GUN>0.130376</GUN>
+			</rotation>
+		</camouflage>
+	</itemGroup>
+	<itemGroup>
 		<season>ALL</season>
 		<historical>1</historical>
 		<userString>#vehicle_customization:camouflage/opaque</userString>
@@ -367364,7 +367414,7 @@
 	<itemGroup>
 		<userString>#vehicle_customization:camouflage/opaque</userString>
 		<season>ALL</season>
-		<historical>1</historical>
+		<historical>0</historical>
 		<priceGroup>camouflages 50g notInShop</priceGroup>
 		<vehicleFilter>
 			<exclude>
@@ -367375,15 +367425,15 @@
 			</exclude>
 		</vehicleFilter>
 		<camouflage>
-			<id>1163</id>
-			<texture>vehicles/russian/Camouflage/ols_2026_1_silver.dds</texture>
-			<userString>#vehicle_customization:camouflage/ols_2026_1_silver/label</userString>
+			<id>1148</id>
+			<texture>vehicles/russian/Camouflage/bp2026_september_takir.dds</texture>
+			<userString>#vehicle_customization:camouflage/bp2026_september_takir/label</userString>
 			<description>#vehicle_customization:camouflage/empty/description</description>
 			<scales>
 				1.2 1 0.7
 				<!--BW_String-->
 			</scales>
-			<tags>fullRGB styleOnly questsProgression</tags>
+			<tags>fullRGB hiddenInUI</tags>
 			<invisibilityFactor>1</invisibilityFactor>
 			<palettes>
 				<palette>
@@ -367393,35 +367443,33 @@
 					<c3>0 0 0 255</c3>
 				</palette>
 			</palettes>
-			<rotation>
-				<HULL>-0.506145</HULL>
-				<TURRET>-0.506145</TURRET>
-				<GUN>-0.506145</GUN>
-			</rotation>
 			<tilingSettings>
 				<type>relativewithfactor</type>
 				<factor>
-					2.5 2.5
+					3.02 3.02
 					<!--BW_String-->
 				</factor>
 				<offset>
-					0 -0.2
+					-1.24 0
 					<!--BW_String-->
 				</offset>
 			</tilingSettings>
-			<glossMetallicMap>vehicles/russian/Camouflage/ols_2026_1_GMM.dds</glossMetallicMap>
-			<style>1377</style>
+			<rotation>
+				<HULL>-2.284811</HULL>
+				<TURRET>-2.284811</TURRET>
+				<GUN>-2.284811</GUN>
+			</rotation>
 		</camouflage>
 		<camouflage>
-			<id>1164</id>
-			<texture>vehicles/russian/Camouflage/ols_2026_1_gold.dds</texture>
-			<userString>#vehicle_customization:camouflage/ols_2026_1_gold/label</userString>
+			<id>1149</id>
+			<texture>vehicles/russian/Camouflage/bp2026_september_dune.dds</texture>
+			<userString>#vehicle_customization:camouflage/bp2026_september_dune/label</userString>
 			<description>#vehicle_customization:camouflage/empty/description</description>
 			<scales>
 				1.2 1 0.7
 				<!--BW_String-->
 			</scales>
-			<tags>fullRGB styleOnly questsProgression</tags>
+			<tags>fullRGB hiddenInUI</tags>
 			<invisibilityFactor>1</invisibilityFactor>
 			<palettes>
 				<palette>
@@ -367431,24 +367479,80 @@
 					<c3>0 0 0 255</c3>
 				</palette>
 			</palettes>
-			<rotation>
-				<HULL>-0.506145</HULL>
-				<TURRET>-0.506145</TURRET>
-				<GUN>-0.506145</GUN>
-			</rotation>
 			<tilingSettings>
 				<type>relativewithfactor</type>
 				<factor>
-					2.5 2.5
+					2.15 2.15
 					<!--BW_String-->
 				</factor>
-				<offset>
-					0 -0.2
-					<!--BW_String-->
-				</offset>
+				<offset>0 0</offset>
 			</tilingSettings>
-			<glossMetallicMap>vehicles/russian/Camouflage/ols_2026_1_GMM.dds</glossMetallicMap>
-			<style>1378</style>
+		</camouflage>
+		<camouflage>
+			<id>1150</id>
+			<texture>vehicles/russian/Camouflage/bp2026_september_lowland.dds</texture>
+			<userString>#vehicle_customization:camouflage/bp2026_september_lowland/label</userString>
+			<description>#vehicle_customization:camouflage/empty/description</description>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<tags>fullRGB hiddenInUI</tags>
+			<invisibilityFactor>1</invisibilityFactor>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>
+					2.69 2.69
+					<!--BW_String-->
+				</factor>
+				<offset>0 0</offset>
+			</tilingSettings>
+			<rotation>
+				<HULL>0.675093</HULL>
+				<TURRET>0.675093</TURRET>
+				<GUN>0.675093</GUN>
+			</rotation>
+		</camouflage>
+		<camouflage>
+			<id>1151</id>
+			<texture>vehicles/russian/Camouflage/bp2026_september_steppe.dds</texture>
+			<userString>#vehicle_customization:camouflage/bp2026_september_steppe/label</userString>
+			<description>#vehicle_customization:camouflage/empty/description</description>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<tags>fullRGB hiddenInUI</tags>
+			<invisibilityFactor>1</invisibilityFactor>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>
+					1.94 1.94
+					<!--BW_String-->
+				</factor>
+				<offset>0 0</offset>
+			</tilingSettings>
+			<rotation>
+				<HULL>-0.675093</HULL>
+				<TURRET>-0.675093</TURRET>
+				<GUN>-0.675093</GUN>
+			</rotation>
 		</camouflage>
 	</itemGroup>
 	<itemGroup>
@@ -367634,6 +367738,1075 @@
 					<!--BW_String-->
 				</offset>
 			</tilingSettings>
+		</camouflage>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
+		</vehicleFilter>
+		<camouflage>
+			<id>1163</id>
+			<texture>vehicles/russian/Camouflage/ols_2026_1_silver.dds</texture>
+			<userString>#vehicle_customization:camouflage/ols_2026_1_silver/label</userString>
+			<description>#vehicle_customization:camouflage/empty/description</description>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<tags>fullRGB styleOnly questsProgression</tags>
+			<invisibilityFactor>1</invisibilityFactor>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<rotation>
+				<HULL>-0.506145</HULL>
+				<TURRET>-0.506145</TURRET>
+				<GUN>-0.506145</GUN>
+			</rotation>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>
+					2.5 2.5
+					<!--BW_String-->
+				</factor>
+				<offset>
+					0 -0.2
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+			<glossMetallicMap>vehicles/russian/Camouflage/ols_2026_1_GMM.dds</glossMetallicMap>
+			<style>1377</style>
+		</camouflage>
+		<camouflage>
+			<id>1164</id>
+			<texture>vehicles/russian/Camouflage/ols_2026_1_gold.dds</texture>
+			<userString>#vehicle_customization:camouflage/ols_2026_1_gold/label</userString>
+			<description>#vehicle_customization:camouflage/empty/description</description>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<tags>fullRGB styleOnly questsProgression</tags>
+			<invisibilityFactor>1</invisibilityFactor>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<rotation>
+				<HULL>-0.506145</HULL>
+				<TURRET>-0.506145</TURRET>
+				<GUN>-0.506145</GUN>
+			</rotation>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>
+					2.5 2.5
+					<!--BW_String-->
+				</factor>
+				<offset>
+					0 -0.2
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+			<glossMetallicMap>vehicles/russian/Camouflage/ols_2026_1_GMM.dds</glossMetallicMap>
+			<style>1378</style>
+		</camouflage>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
+		</vehicleFilter>
+		<camouflage>
+			<id>1169</id>
+			<scales>
+				1.3 1 0.7
+				<!--BW_String-->
+			</scales>
+			<tags>fullRGB styleOnly hiddenInUI</tags>
+			<invisibilityFactor>1</invisibilityFactor>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<texture>vehicles/russian/Camouflage/wt26_ActionPotential.dds</texture>
+			<userString>#vehicle_customization:camouflage/wt26_ActionPotential/label</userString>
+			<description>#vehicle_customization:camouflage/empty/description</description>
+			<rotation>
+				<HULL>-0.939511</HULL>
+				<TURRET>-0.939511</TURRET>
+				<GUN>-0.939511</GUN>
+			</rotation>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>
+					2.1 2.1
+					<!--BW_String-->
+				</factor>
+				<offset>
+					-0.05 -2.32
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+		</camouflage>
+		<priceGroup>camouflages 50g notInShop</priceGroup>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
+		</vehicleFilter>
+		<camouflage>
+			<id>1170</id>
+			<scales>
+				1.3 1 0.7
+				<!--BW_String-->
+			</scales>
+			<tags>styleOnly hiddenInUI</tags>
+			<invisibilityFactor>1</invisibilityFactor>
+			<palettes>
+				<palette>
+					<c0>39 59 76 255</c0>
+					<c1>25 36 48 255</c1>
+					<c2>28 45 56 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<texture>vehicles/russian/Camouflage/wt26_Unchained_Lightning.dds</texture>
+			<userString>#vehicle_customization:camouflage/wt26_Unchained_Lightning/label</userString>
+			<description>#vehicle_customization:camouflage/empty/description</description>
+			<rotation>
+				<HULL>-0.334056</HULL>
+				<TURRET>-0.334056</TURRET>
+				<GUN>-0.334056</GUN>
+			</rotation>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>
+					2.8 2.8
+					<!--BW_String-->
+				</factor>
+				<offset>
+					-0.91 0.56
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+			<gloss>
+				0.509 0.509 0.776 0.509
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.23 0.23 0.57 0.23
+				<!--BW_String-->
+			</metallic>
+		</camouflage>
+		<priceGroup>camouflages 50g notInShop</priceGroup>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
+		</vehicleFilter>
+		<camouflage>
+			<id>1128</id>
+			<texture>vehicles/russian/Camouflage/onslaught_2026_phoenix_1.dds</texture>
+			<userString>#vehicle_customization:camouflage/onslaught_season_2023-2024_1/label</userString>
+			<description>#vehicle_customization:camouflage/onslaught_season_2023-2024/description</description>
+			<invisibilityFactor>1</invisibilityFactor>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<tags>styleOnly fullRGB</tags>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<rotation>
+				<HULL>
+					-0.20944
+					<!--BW_String-->
+				</HULL>
+				<TURRET>
+					-0.20944
+					<!--BW_String-->
+				</TURRET>
+				<GUN>
+					-0.20944
+					<!--BW_String-->
+				</GUN>
+			</rotation>
+			<tiling>
+				<china:Ch01_Type59>
+					1.11 1.11 -0.26 -0.15
+					<!--BW_String-->
+				</china:Ch01_Type59>
+				<china:Ch70_PTZ_78>
+					2.66 2.66 0.76 0.28
+					<!--BW_String-->
+				</china:Ch70_PTZ_78>
+				<germany:G121_Grille_15_L63>
+					6.72 6.72 -0.13 -0.06
+					<!--BW_String-->
+				</germany:G121_Grille_15_L63>
+				<germany:G56_E-100>
+					3.2 3.2 -0.43 -0.15
+					<!--BW_String-->
+				</germany:G56_E-100>
+				<germany:G89_Leopard1>
+					3 3 0.11 1.71
+					<!--BW_String-->
+				</germany:G89_Leopard1>
+				<france:F10_AMX_50B>
+					1.2 1.2 -0.43 0.18
+					<!--BW_String-->
+				</france:F10_AMX_50B>
+				<france:F114_Projet_4_1>
+					1.2 1.2 0.6 0.05
+					<!--BW_String-->
+				</france:F114_Projet_4_1>
+				<france:F116_Bat_Chatillon_Bourrasque>
+					1.54 1.54 0.87 -1.76
+					<!--BW_String-->
+				</france:F116_Bat_Chatillon_Bourrasque>
+				<japan:J16_ST_B1>
+					2.15 2.15 -0.36 0.33
+					<!--BW_String-->
+				</japan:J16_ST_B1>
+				<japan:J16_ST_B1_7x7>
+					2.15 2.15 -0.36 0.33
+					<!--BW_String-->
+				</japan:J16_ST_B1_7x7>
+				<sweden:S36_Strv_107_12>
+					2 2 2 -0.15
+					<!--BW_String-->
+				</sweden:S36_Strv_107_12>
+				<uk:GB83_FV4005>
+					3 3 -0.24 1.56
+					<!--BW_String-->
+				</uk:GB83_FV4005>
+				<uk:GB86_Centurion_Action_X>
+					1.28 1.28 -2.35 -0.09
+					<!--BW_String-->
+				</uk:GB86_Centurion_Action_X>
+				<uk:GB91_Super_Conqueror>
+					1.49 1.49 -0.17 0.0
+					<!--BW_String-->
+				</uk:GB91_Super_Conqueror>
+				<uk:GB91_Super_Conqueror_7x7>
+					1.49 1.49 -0.17 0.0
+					<!--BW_String-->
+				</uk:GB91_Super_Conqueror_7x7>
+				<usa:A87_M44>
+					3.01 3.01 1.13 -0.26
+					<!--BW_String-->
+				</usa:A87_M44>
+				<ussr:R19_IS-3>
+					2.84 2.84 -0.1 -0.4
+					<!--BW_String-->
+				</ussr:R19_IS-3>
+				<ussr:R45_IS-7>
+					2.45 2.45 -0.16 0.0
+					<!--BW_String-->
+				</ussr:R45_IS-7>
+				<ussr:R77_KV2>
+					2.41 2.41 -0.7 0.0
+					<!--BW_String-->
+				</ussr:R77_KV2>
+				<ussr:R80_KV1>
+					3 3 -0.01 0.26
+					<!--BW_String-->
+				</ussr:R80_KV1>
+			</tiling>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>2 2</factor>
+				<offset>0 0</offset>
+			</tilingSettings>
+			<style>1329</style>
+		</camouflage>
+		<camouflage>
+			<id>1129</id>
+			<texture>vehicles/russian/Camouflage/onslaught_2026_phoenix_2.dds</texture>
+			<userString>#vehicle_customization:camouflage/onslaught_season_2023-2024_2/label</userString>
+			<description>#vehicle_customization:camouflage/onslaught_season_2023-2024/description</description>
+			<invisibilityFactor>1</invisibilityFactor>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<tags>styleOnly fullRGB</tags>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<rotation>
+				<HULL>
+					-0.20944
+					<!--BW_String-->
+				</HULL>
+				<TURRET>
+					-0.20944
+					<!--BW_String-->
+				</TURRET>
+				<GUN>
+					-0.20944
+					<!--BW_String-->
+				</GUN>
+			</rotation>
+			<tiling>
+				<china:Ch01_Type59>
+					1.11 1.11 -0.26 -0.15
+					<!--BW_String-->
+				</china:Ch01_Type59>
+				<china:Ch70_PTZ_78>
+					2.66 2.66 0.76 0.28
+					<!--BW_String-->
+				</china:Ch70_PTZ_78>
+				<germany:G121_Grille_15_L63>
+					6.72 6.72 -0.13 -0.06
+					<!--BW_String-->
+				</germany:G121_Grille_15_L63>
+				<germany:G56_E-100>
+					3.2 3.2 -0.43 -0.15
+					<!--BW_String-->
+				</germany:G56_E-100>
+				<germany:G89_Leopard1>
+					3 3 0.11 1.71
+					<!--BW_String-->
+				</germany:G89_Leopard1>
+				<france:F10_AMX_50B>
+					1.2 1.2 -0.43 0.18
+					<!--BW_String-->
+				</france:F10_AMX_50B>
+				<france:F114_Projet_4_1>
+					1.2 1.2 0.6 0.05
+					<!--BW_String-->
+				</france:F114_Projet_4_1>
+				<france:F116_Bat_Chatillon_Bourrasque>
+					1.54 1.54 0.87 -1.76
+					<!--BW_String-->
+				</france:F116_Bat_Chatillon_Bourrasque>
+				<japan:J16_ST_B1>
+					2.15 2.15 -0.36 0.33
+					<!--BW_String-->
+				</japan:J16_ST_B1>
+				<japan:J16_ST_B1_7x7>
+					2.15 2.15 -0.36 0.33
+					<!--BW_String-->
+				</japan:J16_ST_B1_7x7>
+				<sweden:S36_Strv_107_12>
+					2 2 2 -0.15
+					<!--BW_String-->
+				</sweden:S36_Strv_107_12>
+				<uk:GB83_FV4005>
+					3 3 -0.24 1.56
+					<!--BW_String-->
+				</uk:GB83_FV4005>
+				<uk:GB86_Centurion_Action_X>
+					1.28 1.28 -2.35 -0.09
+					<!--BW_String-->
+				</uk:GB86_Centurion_Action_X>
+				<uk:GB91_Super_Conqueror>
+					1.49 1.49 -0.17 0.0
+					<!--BW_String-->
+				</uk:GB91_Super_Conqueror>
+				<uk:GB91_Super_Conqueror_7x7>
+					1.49 1.49 -0.17 0.0
+					<!--BW_String-->
+				</uk:GB91_Super_Conqueror_7x7>
+				<usa:A87_M44>
+					3.01 3.01 1.13 -0.26
+					<!--BW_String-->
+				</usa:A87_M44>
+				<ussr:R19_IS-3>
+					2.84 2.84 -0.1 -0.4
+					<!--BW_String-->
+				</ussr:R19_IS-3>
+				<ussr:R45_IS-7>
+					2.45 2.45 -0.16 0.0
+					<!--BW_String-->
+				</ussr:R45_IS-7>
+				<ussr:R77_KV2>
+					2.41 2.41 -0.7 0.0
+					<!--BW_String-->
+				</ussr:R77_KV2>
+				<ussr:R80_KV1>
+					3 3 -0.01 0.26
+					<!--BW_String-->
+				</ussr:R80_KV1>
+			</tiling>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>2 2</factor>
+				<offset>0 0</offset>
+			</tilingSettings>
+			<style>1330</style>
+		</camouflage>
+		<camouflage>
+			<id>1130</id>
+			<texture>vehicles/russian/Camouflage/onslaught_2026_phoenix_3.dds</texture>
+			<userString>#vehicle_customization:camouflage/onslaught_season_2023-2024_3/label</userString>
+			<description>#vehicle_customization:camouflage/onslaught_season_2023-2024/description</description>
+			<invisibilityFactor>1</invisibilityFactor>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<tags>styleOnly fullRGB</tags>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<rotation>
+				<HULL>
+					-0.20944
+					<!--BW_String-->
+				</HULL>
+				<TURRET>
+					-0.20944
+					<!--BW_String-->
+				</TURRET>
+				<GUN>
+					-0.20944
+					<!--BW_String-->
+				</GUN>
+			</rotation>
+			<tiling>
+				<china:Ch01_Type59>
+					1.11 1.11 -0.26 -0.15
+					<!--BW_String-->
+				</china:Ch01_Type59>
+				<china:Ch70_PTZ_78>
+					2.66 2.66 0.76 0.28
+					<!--BW_String-->
+				</china:Ch70_PTZ_78>
+				<germany:G121_Grille_15_L63>
+					6.72 6.72 -0.13 -0.06
+					<!--BW_String-->
+				</germany:G121_Grille_15_L63>
+				<germany:G56_E-100>
+					3.2 3.2 -0.43 -0.15
+					<!--BW_String-->
+				</germany:G56_E-100>
+				<germany:G89_Leopard1>
+					3 3 0.11 1.71
+					<!--BW_String-->
+				</germany:G89_Leopard1>
+				<france:F10_AMX_50B>
+					1.2 1.2 -0.43 0.18
+					<!--BW_String-->
+				</france:F10_AMX_50B>
+				<france:F114_Projet_4_1>
+					1.2 1.2 0.6 0.05
+					<!--BW_String-->
+				</france:F114_Projet_4_1>
+				<france:F116_Bat_Chatillon_Bourrasque>
+					1.54 1.54 0.87 -1.76
+					<!--BW_String-->
+				</france:F116_Bat_Chatillon_Bourrasque>
+				<japan:J16_ST_B1>
+					2.15 2.15 -0.36 0.33
+					<!--BW_String-->
+				</japan:J16_ST_B1>
+				<japan:J16_ST_B1_7x7>
+					2.15 2.15 -0.36 0.33
+					<!--BW_String-->
+				</japan:J16_ST_B1_7x7>
+				<sweden:S36_Strv_107_12>
+					2 2 2 -0.15
+					<!--BW_String-->
+				</sweden:S36_Strv_107_12>
+				<uk:GB83_FV4005>
+					3 3 -0.24 1.56
+					<!--BW_String-->
+				</uk:GB83_FV4005>
+				<uk:GB86_Centurion_Action_X>
+					1.28 1.28 -2.35 -0.09
+					<!--BW_String-->
+				</uk:GB86_Centurion_Action_X>
+				<uk:GB91_Super_Conqueror>
+					1.49 1.49 -0.17 0.0
+					<!--BW_String-->
+				</uk:GB91_Super_Conqueror>
+				<uk:GB91_Super_Conqueror_7x7>
+					1.49 1.49 -0.17 0.0
+					<!--BW_String-->
+				</uk:GB91_Super_Conqueror_7x7>
+				<usa:A87_M44>
+					3.01 3.01 1.13 -0.26
+					<!--BW_String-->
+				</usa:A87_M44>
+				<ussr:R19_IS-3>
+					2.84 2.84 -0.1 -0.4
+					<!--BW_String-->
+				</ussr:R19_IS-3>
+				<ussr:R45_IS-7>
+					2.45 2.45 -0.16 0.0
+					<!--BW_String-->
+				</ussr:R45_IS-7>
+				<ussr:R77_KV2>
+					2.41 2.41 -0.7 0.0
+					<!--BW_String-->
+				</ussr:R77_KV2>
+				<ussr:R80_KV1>
+					3 3 -0.01 0.26
+					<!--BW_String-->
+				</ussr:R80_KV1>
+			</tiling>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>2 2</factor>
+				<offset>0 0</offset>
+			</tilingSettings>
+			<style>1331</style>
+		</camouflage>
+		<camouflage>
+			<id>1131</id>
+			<texture>vehicles/russian/Camouflage/onslaught_2026_phoenix_4.dds</texture>
+			<userString>#vehicle_customization:camouflage/onslaught_season_2023-2024_4/label</userString>
+			<description>#vehicle_customization:camouflage/onslaught_season_2023-2024/description</description>
+			<invisibilityFactor>1</invisibilityFactor>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<tags>styleOnly fullRGB</tags>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<rotation>
+				<HULL>
+					-0.20944
+					<!--BW_String-->
+				</HULL>
+				<TURRET>
+					-0.20944
+					<!--BW_String-->
+				</TURRET>
+				<GUN>
+					-0.20944
+					<!--BW_String-->
+				</GUN>
+			</rotation>
+			<tiling>
+				<china:Ch01_Type59>
+					1.11 1.11 -0.26 -0.15
+					<!--BW_String-->
+				</china:Ch01_Type59>
+				<china:Ch70_PTZ_78>
+					2.66 2.66 0.76 0.28
+					<!--BW_String-->
+				</china:Ch70_PTZ_78>
+				<germany:G121_Grille_15_L63>
+					6.72 6.72 -0.13 -0.06
+					<!--BW_String-->
+				</germany:G121_Grille_15_L63>
+				<germany:G56_E-100>
+					3.2 3.2 -0.43 -0.15
+					<!--BW_String-->
+				</germany:G56_E-100>
+				<germany:G89_Leopard1>
+					3 3 0.11 1.71
+					<!--BW_String-->
+				</germany:G89_Leopard1>
+				<france:F10_AMX_50B>
+					1.2 1.2 -0.43 0.18
+					<!--BW_String-->
+				</france:F10_AMX_50B>
+				<france:F114_Projet_4_1>
+					1.2 1.2 0.6 0.05
+					<!--BW_String-->
+				</france:F114_Projet_4_1>
+				<france:F116_Bat_Chatillon_Bourrasque>
+					1.54 1.54 0.87 -1.76
+					<!--BW_String-->
+				</france:F116_Bat_Chatillon_Bourrasque>
+				<japan:J16_ST_B1>
+					2.15 2.15 -0.36 0.33
+					<!--BW_String-->
+				</japan:J16_ST_B1>
+				<japan:J16_ST_B1_7x7>
+					2.15 2.15 -0.36 0.33
+					<!--BW_String-->
+				</japan:J16_ST_B1_7x7>
+				<sweden:S36_Strv_107_12>
+					2 2 2 -0.15
+					<!--BW_String-->
+				</sweden:S36_Strv_107_12>
+				<uk:GB83_FV4005>
+					3 3 -0.24 1.56
+					<!--BW_String-->
+				</uk:GB83_FV4005>
+				<uk:GB86_Centurion_Action_X>
+					1.28 1.28 -2.35 -0.09
+					<!--BW_String-->
+				</uk:GB86_Centurion_Action_X>
+				<uk:GB91_Super_Conqueror>
+					1.49 1.49 -0.17 0.0
+					<!--BW_String-->
+				</uk:GB91_Super_Conqueror>
+				<uk:GB91_Super_Conqueror_7x7>
+					1.49 1.49 -0.17 0.0
+					<!--BW_String-->
+				</uk:GB91_Super_Conqueror_7x7>
+				<usa:A87_M44>
+					3.01 3.01 1.13 -0.26
+					<!--BW_String-->
+				</usa:A87_M44>
+				<ussr:R19_IS-3>
+					2.84 2.84 -0.1 -0.4
+					<!--BW_String-->
+				</ussr:R19_IS-3>
+				<ussr:R45_IS-7>
+					2.45 2.45 -0.16 0.0
+					<!--BW_String-->
+				</ussr:R45_IS-7>
+				<ussr:R77_KV2>
+					2.41 2.41 -0.7 0.0
+					<!--BW_String-->
+				</ussr:R77_KV2>
+				<ussr:R80_KV1>
+					3 3 -0.01 0.26
+					<!--BW_String-->
+				</ussr:R80_KV1>
+			</tiling>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>2 2</factor>
+				<offset>0 0</offset>
+			</tilingSettings>
+			<glossMetallicMap>vehicles/russian/Camouflage/onslaught_2026_phoenix_4_GMM.dds</glossMetallicMap>
+			<style>1332</style>
+		</camouflage>
+		<camouflage>
+			<id>1132</id>
+			<texture>vehicles/russian/Camouflage/onslaught_2026_phoenix_5.dds</texture>
+			<userString>#vehicle_customization:camouflage/onslaught_season_2023-2024_5/label</userString>
+			<description>#vehicle_customization:camouflage/onslaught_season_2023-2024/description</description>
+			<invisibilityFactor>1</invisibilityFactor>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<tags>styleOnly fullRGB</tags>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<rotation>
+				<HULL>
+					-0.20944
+					<!--BW_String-->
+				</HULL>
+				<TURRET>
+					-0.20944
+					<!--BW_String-->
+				</TURRET>
+				<GUN>
+					-0.20944
+					<!--BW_String-->
+				</GUN>
+			</rotation>
+			<tiling>
+				<china:Ch01_Type59>
+					1.11 1.11 -0.26 -0.15
+					<!--BW_String-->
+				</china:Ch01_Type59>
+				<china:Ch70_PTZ_78>
+					2.66 2.66 0.76 0.28
+					<!--BW_String-->
+				</china:Ch70_PTZ_78>
+				<germany:G121_Grille_15_L63>
+					6.72 6.72 -0.13 -0.06
+					<!--BW_String-->
+				</germany:G121_Grille_15_L63>
+				<germany:G56_E-100>
+					3.2 3.2 -0.43 -0.15
+					<!--BW_String-->
+				</germany:G56_E-100>
+				<germany:G89_Leopard1>
+					3 3 0.11 1.71
+					<!--BW_String-->
+				</germany:G89_Leopard1>
+				<france:F10_AMX_50B>
+					1.2 1.2 -0.43 0.18
+					<!--BW_String-->
+				</france:F10_AMX_50B>
+				<france:F114_Projet_4_1>
+					1.2 1.2 0.6 0.05
+					<!--BW_String-->
+				</france:F114_Projet_4_1>
+				<france:F116_Bat_Chatillon_Bourrasque>
+					1.54 1.54 0.87 -1.76
+					<!--BW_String-->
+				</france:F116_Bat_Chatillon_Bourrasque>
+				<japan:J16_ST_B1>
+					2.15 2.15 -0.36 0.33
+					<!--BW_String-->
+				</japan:J16_ST_B1>
+				<japan:J16_ST_B1_7x7>
+					2.15 2.15 -0.36 0.33
+					<!--BW_String-->
+				</japan:J16_ST_B1_7x7>
+				<sweden:S36_Strv_107_12>
+					2 2 2 -0.15
+					<!--BW_String-->
+				</sweden:S36_Strv_107_12>
+				<uk:GB83_FV4005>
+					3 3 -0.24 1.56
+					<!--BW_String-->
+				</uk:GB83_FV4005>
+				<uk:GB86_Centurion_Action_X>
+					1.28 1.28 -2.35 -0.09
+					<!--BW_String-->
+				</uk:GB86_Centurion_Action_X>
+				<uk:GB91_Super_Conqueror>
+					1.49 1.49 -0.17 0.0
+					<!--BW_String-->
+				</uk:GB91_Super_Conqueror>
+				<uk:GB91_Super_Conqueror_7x7>
+					1.49 1.49 -0.17 0.0
+					<!--BW_String-->
+				</uk:GB91_Super_Conqueror_7x7>
+				<usa:A87_M44>
+					3.01 3.01 1.13 -0.26
+					<!--BW_String-->
+				</usa:A87_M44>
+				<ussr:R19_IS-3>
+					2.84 2.84 -0.1 -0.4
+					<!--BW_String-->
+				</ussr:R19_IS-3>
+				<ussr:R45_IS-7>
+					2.45 2.45 -0.16 0.0
+					<!--BW_String-->
+				</ussr:R45_IS-7>
+				<ussr:R77_KV2>
+					2.41 2.41 -0.7 0.0
+					<!--BW_String-->
+				</ussr:R77_KV2>
+				<ussr:R80_KV1>
+					3 3 -0.01 0.26
+					<!--BW_String-->
+				</ussr:R80_KV1>
+			</tiling>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>2 2</factor>
+				<offset>0 0</offset>
+			</tilingSettings>
+			<glossMetallicMap>vehicles/russian/Camouflage/onslaught_2026_phoenix_5_GMM.dds</glossMetallicMap>
+			<style>1333</style>
+		</camouflage>
+		<camouflage>
+			<id>1133</id>
+			<texture>vehicles/russian/Camouflage/onslaught_2026_phoenix_6.dds</texture>
+			<userString>#vehicle_customization:camouflage/onslaught_season_2023-2024_6/label</userString>
+			<description>#vehicle_customization:camouflage/onslaught_season_2023-2024/description</description>
+			<invisibilityFactor>1</invisibilityFactor>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<tags>styleOnly fullRGB</tags>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<rotation>
+				<HULL>
+					-0.20944
+					<!--BW_String-->
+				</HULL>
+				<TURRET>
+					-0.20944
+					<!--BW_String-->
+				</TURRET>
+				<GUN>
+					-0.20944
+					<!--BW_String-->
+				</GUN>
+			</rotation>
+			<tiling>
+				<china:Ch01_Type59>
+					1.11 1.11 -0.26 -0.15
+					<!--BW_String-->
+				</china:Ch01_Type59>
+				<china:Ch70_PTZ_78>
+					2.66 2.66 0.76 0.28
+					<!--BW_String-->
+				</china:Ch70_PTZ_78>
+				<germany:G121_Grille_15_L63>
+					6.72 6.72 -0.13 -0.06
+					<!--BW_String-->
+				</germany:G121_Grille_15_L63>
+				<germany:G56_E-100>
+					3.2 3.2 -0.43 -0.15
+					<!--BW_String-->
+				</germany:G56_E-100>
+				<germany:G89_Leopard1>
+					3 3 0.11 1.71
+					<!--BW_String-->
+				</germany:G89_Leopard1>
+				<france:F10_AMX_50B>
+					1.2 1.2 -0.43 0.18
+					<!--BW_String-->
+				</france:F10_AMX_50B>
+				<france:F114_Projet_4_1>
+					1.2 1.2 0.6 0.05
+					<!--BW_String-->
+				</france:F114_Projet_4_1>
+				<france:F116_Bat_Chatillon_Bourrasque>
+					1.54 1.54 0.87 -1.76
+					<!--BW_String-->
+				</france:F116_Bat_Chatillon_Bourrasque>
+				<japan:J16_ST_B1>
+					2.15 2.15 -0.36 0.33
+					<!--BW_String-->
+				</japan:J16_ST_B1>
+				<japan:J16_ST_B1_7x7>
+					2.15 2.15 -0.36 0.33
+					<!--BW_String-->
+				</japan:J16_ST_B1_7x7>
+				<sweden:S36_Strv_107_12>
+					2 2 2 -0.15
+					<!--BW_String-->
+				</sweden:S36_Strv_107_12>
+				<uk:GB83_FV4005>
+					3 3 -0.24 1.56
+					<!--BW_String-->
+				</uk:GB83_FV4005>
+				<uk:GB86_Centurion_Action_X>
+					1.28 1.28 -2.35 -0.09
+					<!--BW_String-->
+				</uk:GB86_Centurion_Action_X>
+				<uk:GB91_Super_Conqueror>
+					1.49 1.49 -0.17 0.0
+					<!--BW_String-->
+				</uk:GB91_Super_Conqueror>
+				<uk:GB91_Super_Conqueror_7x7>
+					1.49 1.49 -0.17 0.0
+					<!--BW_String-->
+				</uk:GB91_Super_Conqueror_7x7>
+				<usa:A87_M44>
+					3.01 3.01 1.13 -0.26
+					<!--BW_String-->
+				</usa:A87_M44>
+				<ussr:R19_IS-3>
+					2.84 2.84 -0.1 -0.4
+					<!--BW_String-->
+				</ussr:R19_IS-3>
+				<ussr:R45_IS-7>
+					2.45 2.45 -0.16 0.0
+					<!--BW_String-->
+				</ussr:R45_IS-7>
+				<ussr:R77_KV2>
+					2.41 2.41 -0.7 0.0
+					<!--BW_String-->
+				</ussr:R77_KV2>
+				<ussr:R80_KV1>
+					3 3 -0.01 0.26
+					<!--BW_String-->
+				</ussr:R80_KV1>
+			</tiling>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>2 2</factor>
+				<offset>0 0</offset>
+			</tilingSettings>
+			<glossMetallicMap>vehicles/russian/Camouflage/onslaught_2026_phoenix_6_GMM.dds</glossMetallicMap>
+			<style>1334</style>
+		</camouflage>
+		<camouflage>
+			<id>1134</id>
+			<texture>vehicles/russian/Camouflage/onslaught_2026_phoenix_annual.dds</texture>
+			<userString>#vehicle_customization:camouflage/onslaught_2026_phoenix/label</userString>
+			<description>#vehicle_customization:camouflage/empty/description</description>
+			<invisibilityFactor>1</invisibilityFactor>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<tags>styleOnly fullRGB</tags>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<rotation>
+				<HULL>
+					-0.20944
+					<!--BW_String-->
+				</HULL>
+				<TURRET>
+					-0.20944
+					<!--BW_String-->
+				</TURRET>
+				<GUN>
+					-0.20944
+					<!--BW_String-->
+				</GUN>
+			</rotation>
+			<tiling>
+				<china:Ch01_Type59>
+					1.11 1.11 -0.26 -0.15
+					<!--BW_String-->
+				</china:Ch01_Type59>
+				<china:Ch70_PTZ_78>
+					2.66 2.66 0.76 0.28
+					<!--BW_String-->
+				</china:Ch70_PTZ_78>
+				<germany:G121_Grille_15_L63>
+					6.72 6.72 -0.13 -0.06
+					<!--BW_String-->
+				</germany:G121_Grille_15_L63>
+				<germany:G56_E-100>
+					3.2 3.2 -0.43 -0.15
+					<!--BW_String-->
+				</germany:G56_E-100>
+				<germany:G89_Leopard1>
+					3 3 0.11 1.71
+					<!--BW_String-->
+				</germany:G89_Leopard1>
+				<france:F10_AMX_50B>
+					1.2 1.2 -0.43 0.18
+					<!--BW_String-->
+				</france:F10_AMX_50B>
+				<france:F114_Projet_4_1>
+					1.2 1.2 0.6 0.05
+					<!--BW_String-->
+				</france:F114_Projet_4_1>
+				<france:F116_Bat_Chatillon_Bourrasque>
+					1.54 1.54 0.87 -1.76
+					<!--BW_String-->
+				</france:F116_Bat_Chatillon_Bourrasque>
+				<japan:J16_ST_B1>
+					2.15 2.15 -0.36 0.33
+					<!--BW_String-->
+				</japan:J16_ST_B1>
+				<japan:J16_ST_B1_7x7>
+					2.15 2.15 -0.36 0.33
+					<!--BW_String-->
+				</japan:J16_ST_B1_7x7>
+				<sweden:S36_Strv_107_12>
+					2 2 2 -0.15
+					<!--BW_String-->
+				</sweden:S36_Strv_107_12>
+				<uk:GB83_FV4005>
+					3 3 -0.24 1.56
+					<!--BW_String-->
+				</uk:GB83_FV4005>
+				<uk:GB86_Centurion_Action_X>
+					1.28 1.28 -2.35 -0.09
+					<!--BW_String-->
+				</uk:GB86_Centurion_Action_X>
+				<uk:GB91_Super_Conqueror>
+					1.49 1.49 -0.17 0.0
+					<!--BW_String-->
+				</uk:GB91_Super_Conqueror>
+				<uk:GB91_Super_Conqueror_7x7>
+					1.49 1.49 -0.17 0.0
+					<!--BW_String-->
+				</uk:GB91_Super_Conqueror_7x7>
+				<usa:A87_M44>
+					3.01 3.01 1.13 -0.26
+					<!--BW_String-->
+				</usa:A87_M44>
+				<ussr:R19_IS-3>
+					2.84 2.84 -0.1 -0.4
+					<!--BW_String-->
+				</ussr:R19_IS-3>
+				<ussr:R45_IS-7>
+					2.45 2.45 -0.16 0.0
+					<!--BW_String-->
+				</ussr:R45_IS-7>
+				<ussr:R77_KV2>
+					2.41 2.41 -0.7 0.0
+					<!--BW_String-->
+				</ussr:R77_KV2>
+				<ussr:R80_KV1>
+					3 3 -0.01 0.26
+					<!--BW_String-->
+				</ussr:R80_KV1>
+			</tiling>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>2 2</factor>
+				<offset>0 0</offset>
+			</tilingSettings>
+			<glossMetallicMap>vehicles/russian/Camouflage/onslaught_2026_phoenix_annual_GMM.dds</glossMetallicMap>
 		</camouflage>
 	</itemGroup>
 	<itemGroup>
@@ -378078,7 +379251,7 @@
 		<priceGroup>camouflages 50g notInShop</priceGroup>
 		<vehicleFilter>
 			<include>
-				<vehicles>china:Ch67_BZ_79 china:Ch70_PTZ_78</vehicles>
+				<vehicles>china:Ch67_BZ_79 china:Ch70_PTZ_78 china:Ch71_WZ_219</vehicles>
 			</include>
 		</vehicleFilter>
 		<camouflage>
@@ -381098,6 +382271,89 @@
 				0.25 0.34 0.17 0.16
 				<!--BW_String-->
 			</metallic>
+		</camouflage>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<include>
+				<vehicles>czech:Cz46_Vz_63P</vehicles>
+			</include>
+		</vehicleFilter>
+		<camouflage>
+			<id>1141</id>
+			<texture>vehicles/czech/Camouflage/cz_volumetric.dds</texture>
+			<description>#vehicle_customization:camouflage/empty/description</description>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<userString>#vehicle_customization:camouflage/cz_volumetric/label</userString>
+			<tags>fullRGB hiddenInUI</tags>
+			<invisibilityFactor>1</invisibilityFactor>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>
+					3.34 3.34
+					<!--BW_String-->
+				</factor>
+				<offset>
+					0.26 -0.12
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+			<glossMetallicMap>vehicles/czech/Camouflage/cz_volumetric_GMM.dds</glossMetallicMap>
+			<normal>
+				<normalMap>vehicles/czech/Camouflage/cz_volumetric_NM.dds</normalMap>
+				<normalStrength>1</normalStrength>
+			</normal>
+		</camouflage>
+		<camouflage>
+			<id>1142</id>
+			<texture>vehicles/czech/Camouflage/cz_volumetric_gun.dds</texture>
+			<description>#vehicle_customization:camouflage/empty/description</description>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<userString>#vehicle_customization:camouflage/cz_volumetric/label</userString>
+			<tags>fullRGB hiddenInUI</tags>
+			<invisibilityFactor>1</invisibilityFactor>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<rotation>
+				<HULL>-0.254993</HULL>
+				<TURRET>-0.254993</TURRET>
+				<GUN>-0.254993</GUN>
+			</rotation>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>
+					2.2 2.2
+					<!--BW_String-->
+				</factor>
+				<offset>
+					0 -0.07
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
 		</camouflage>
 	</itemGroup>
 	<itemGroup>
@@ -397092,6 +398348,10 @@
 					3.3 3.3 0.000000 0.000000
 					<!--BW_String-->
 				</G56_E-100>
+				<G56_E-100_7x7>
+					3.3 3.3 0.000000 0.000000
+					<!--BW_String-->
+				</G56_E-100_7x7>
 				<G57_PzVI_Tiger_P>
 					2.7 2.7 0.2 0.55
 					<!--BW_String-->
@@ -397742,6 +399002,10 @@
 					4 4 0.14 0.000000
 					<!--BW_String-->
 				</G56_E-100>
+				<G56_E-100_7x7>
+					4 4 0.14 0.000000
+					<!--BW_String-->
+				</G56_E-100_7x7>
 				<G57_PzVI_Tiger_P>
 					3.3 3.4 0.36 0.000000
 					<!--BW_String-->
@@ -398396,6 +399660,10 @@
 					3.4 3.4 0.42 0.43
 					<!--BW_String-->
 				</G56_E-100>
+				<G56_E-100_7x7>
+					3.4 3.4 0.42 0.43
+					<!--BW_String-->
+				</G56_E-100_7x7>
 				<G57_PzVI_Tiger_P>
 					4 4 0.000000 0.32
 					<!--BW_String-->
@@ -399046,6 +400314,10 @@
 					2.7 2.7 0.000000 0.04
 					<!--BW_String-->
 				</G56_E-100>
+				<G56_E-100_7x7>
+					2.7 2.7 0.000000 0.04
+					<!--BW_String-->
+				</G56_E-100_7x7>
 				<G57_PzVI_Tiger_P>
 					2.9 2.9 0.1 0.000000
 					<!--BW_String-->
@@ -399692,6 +400964,10 @@
 					5.7 5.7 0.000000 0.000000
 					<!--BW_String-->
 				</G56_E-100>
+				<G56_E-100_7x7>
+					5.7 5.7 0.000000 0.000000
+					<!--BW_String-->
+				</G56_E-100_7x7>
 				<G57_PzVI_Tiger_P>
 					6.4 6.5 0.000000 0.000000
 					<!--BW_String-->
@@ -400342,6 +401618,10 @@
 					2.8 2.8 0.58 0.37
 					<!--BW_String-->
 				</G56_E-100>
+				<G56_E-100_7x7>
+					2.8 2.8 0.58 0.37
+					<!--BW_String-->
+				</G56_E-100_7x7>
 				<G57_PzVI_Tiger_P>
 					3.9 4 0.72 0.74
 					<!--BW_String-->
@@ -401008,6 +402288,10 @@
 					3.2 3.2 0.34 0.000000
 					<!--BW_String-->
 				</G56_E-100>
+				<G56_E-100_7x7>
+					3.2 3.2 0.34 0.000000
+					<!--BW_String-->
+				</G56_E-100_7x7>
 				<G57_PzVI_Tiger_P>
 					4.8 4.8 0.000000 0.000000
 					<!--BW_String-->
@@ -401662,6 +402946,10 @@
 					2 2 0.08 0.59
 					<!--BW_String-->
 				</G56_E-100>
+				<G56_E-100_7x7>
+					2 2 0.08 0.59
+					<!--BW_String-->
+				</G56_E-100_7x7>
 				<G57_PzVI_Tiger_P>
 					2.5 2.5 0.000000 0.000000
 					<!--BW_String-->
@@ -402286,6 +403574,10 @@
 					3.2 3.2 0.000000 0.000000
 					<!--BW_String-->
 				</G56_E-100>
+				<G56_E-100_7x7>
+					3.2 3.2 0.000000 0.000000
+					<!--BW_String-->
+				</G56_E-100_7x7>
 				<G57_PzVI_Tiger_P>
 					2.2 2.2 0.5 0.4
 					<!--BW_String-->
@@ -402932,6 +404224,10 @@
 					2.3 2.3 0.58 0.26
 					<!--BW_String-->
 				</G56_E-100>
+				<G56_E-100_7x7>
+					2.3 2.3 0.58 0.26
+					<!--BW_String-->
+				</G56_E-100_7x7>
 				<G57_PzVI_Tiger_P>
 					2.8 2.6 0.17 0.4
 					<!--BW_String-->
@@ -403534,6 +404830,10 @@
 					3.5 3.7 0.23 0.13
 					<!--BW_String-->
 				</G56_E-100>
+				<G56_E-100_7x7>
+					3.5 3.7 0.23 0.13
+					<!--BW_String-->
+				</G56_E-100_7x7>
 				<G57_PzVI_Tiger_P>
 					2.8 2.9 0.23 0.000000
 					<!--BW_String-->
@@ -404150,6 +405450,10 @@
 					3.2 3.2 0.000000 0.3
 					<!--BW_String-->
 				</G56_E-100>
+				<G56_E-100_7x7>
+					3.2 3.2 0.000000 0.3
+					<!--BW_String-->
+				</G56_E-100_7x7>
 				<G57_PzVI_Tiger_P>
 					2.2 2.2 0.5 0.4
 					<!--BW_String-->
@@ -404804,6 +406108,10 @@
 					2.5 2.5 0.52 0.62
 					<!--BW_String-->
 				</G56_E-100>
+				<G56_E-100_7x7>
+					2.5 2.5 0.52 0.62
+					<!--BW_String-->
+				</G56_E-100_7x7>
 				<G57_PzVI_Tiger_P>
 					3.9 3.9 0.2 0.24
 					<!--BW_String-->
@@ -405454,6 +406762,10 @@
 					3.9 3.9 0.000000 0.000000
 					<!--BW_String-->
 				</G56_E-100>
+				<G56_E-100_7x7>
+					3.9 3.9 0.000000 0.000000
+					<!--BW_String-->
+				</G56_E-100_7x7>
 				<G57_PzVI_Tiger_P>
 					3.9 4.1 0.000000 0.000000
 					<!--BW_String-->
@@ -406108,6 +407420,10 @@
 					3.2 3.2 0.21 0.65
 					<!--BW_String-->
 				</G56_E-100>
+				<G56_E-100_7x7>
+					3.2 3.2 0.21 0.65
+					<!--BW_String-->
+				</G56_E-100_7x7>
 				<G57_PzVI_Tiger_P>
 					2.9 3.1 0.21 0.03
 					<!--BW_String-->
@@ -406746,6 +408062,10 @@
 					2.6 2.6 0.31 0.000000
 					<!--BW_String-->
 				</G56_E-100>
+				<G56_E-100_7x7>
+					2.6 2.6 0.31 0.000000
+					<!--BW_String-->
+				</G56_E-100_7x7>
 				<G57_PzVI_Tiger_P>
 					3.2 3.3 0.000000 0.000000
 					<!--BW_String-->
@@ -407392,6 +408712,10 @@
 					3.9 4.9 0.36 0.17
 					<!--BW_String-->
 				</G56_E-100>
+				<G56_E-100_7x7>
+					3.9 4.9 0.36 0.17
+					<!--BW_String-->
+				</G56_E-100_7x7>
 				<G57_PzVI_Tiger_P>
 					5.5 5.4 0.000000 0.000000
 					<!--BW_String-->
@@ -408028,6 +409352,10 @@
 					3.2 3.2 0.000000 0.000000
 					<!--BW_String-->
 				</G56_E-100>
+				<G56_E-100_7x7>
+					3.2 3.2 0.000000 0.000000
+					<!--BW_String-->
+				</G56_E-100_7x7>
 				<G57_PzVI_Tiger_P>
 					2.2 2.2 0.5 0.4
 					<!--BW_String-->
@@ -408650,6 +409978,10 @@
 					2.1 2.1 0.000000 0.000000
 					<!--BW_String-->
 				</G56_E-100>
+				<G56_E-100_7x7>
+					2.1 2.1 0.000000 0.000000
+					<!--BW_String-->
+				</G56_E-100_7x7>
 				<G57_PzVI_Tiger_P>
 					3 3 0.000000 0.000000
 					<!--BW_String-->
@@ -409284,6 +410616,10 @@
 					2 2 0.000000 0.000000
 					<!--BW_String-->
 				</G56_E-100>
+				<G56_E-100_7x7>
+					2 2 0.000000 0.000000
+					<!--BW_String-->
+				</G56_E-100_7x7>
 				<G57_PzVI_Tiger_P>
 					3 3 0.000000 0.000000
 					<!--BW_String-->
@@ -409914,6 +411250,10 @@
 					2 2 0.000000 0.000000
 					<!--BW_String-->
 				</G56_E-100>
+				<G56_E-100_7x7>
+					2 2 0.000000 0.000000
+					<!--BW_String-->
+				</G56_E-100_7x7>
 				<G57_PzVI_Tiger_P>
 					3 3 0.000000 0.000000
 					<!--BW_String-->
@@ -410548,6 +411888,10 @@
 					2 2 0.000000 0.000000
 					<!--BW_String-->
 				</G56_E-100>
+				<G56_E-100_7x7>
+					2 2 0.000000 0.000000
+					<!--BW_String-->
+				</G56_E-100_7x7>
 				<G57_PzVI_Tiger_P>
 					3.7 3.7 0.13 0.000000
 					<!--BW_String-->
@@ -411199,6 +412543,10 @@
 					4.3 4.3 0.33 0.67
 					<!--BW_String-->
 				</G56_E-100>
+				<G56_E-100_7x7>
+					4.3 4.3 0.33 0.67
+					<!--BW_String-->
+				</G56_E-100_7x7>
 				<G57_PzVI_Tiger_P>
 					5.1 5 0.000000 0.000000
 					<!--BW_String-->
@@ -411834,6 +413182,10 @@
 					2.3 2.3 0.36 0.2
 					<!--BW_String-->
 				</G56_E-100>
+				<G56_E-100_7x7>
+					2.3 2.3 0.36 0.2
+					<!--BW_String-->
+				</G56_E-100_7x7>
 				<G57_PzVI_Tiger_P>
 					3 3 0.000000 0.000000
 					<!--BW_String-->
@@ -412481,6 +413833,10 @@
 					2.4 2.4 0.000000 0.000000
 					<!--BW_String-->
 				</G56_E-100>
+				<G56_E-100_7x7>
+					2.4 2.4 0.000000 0.000000
+					<!--BW_String-->
+				</G56_E-100_7x7>
 				<G57_PzVI_Tiger_P>
 					3 3 0.2 0.000000
 					<!--BW_String-->
@@ -413124,6 +414480,10 @@
 					2.6 2.6 0.000000 0.000000
 					<!--BW_String-->
 				</G56_E-100>
+				<G56_E-100_7x7>
+					2.6 2.6 0.000000 0.000000
+					<!--BW_String-->
+				</G56_E-100_7x7>
 				<G57_PzVI_Tiger_P>
 					4.1 4.3 0.000000 0.000000
 					<!--BW_String-->
@@ -413808,6 +415168,10 @@
 					2 2 0.000000 0.000000
 					<!--BW_String-->
 				</G56_E-100>
+				<G56_E-100_7x7>
+					2 2 0.000000 0.000000
+					<!--BW_String-->
+				</G56_E-100_7x7>
 				<G57_PzVI_Tiger_P>
 					2.2 2.2 0.19 0.000000
 					<!--BW_String-->
@@ -414463,6 +415827,10 @@
 					4.4 4.4 0.83 1
 					<!--BW_String-->
 				</G56_E-100>
+				<G56_E-100_7x7>
+					4.4 4.4 0.83 1
+					<!--BW_String-->
+				</G56_E-100_7x7>
 				<G57_PzVI_Tiger_P>
 					5 5 0.72 0.26
 					<!--BW_String-->
@@ -415110,6 +416478,10 @@
 					2.74 2.74 0.000000 0.000000
 					<!--BW_String-->
 				</G56_E-100>
+				<G56_E-100_7x7>
+					2.74 2.74 0.000000 0.000000
+					<!--BW_String-->
+				</G56_E-100_7x7>
 				<G57_PzVI_Tiger_P>
 					3 2.7 0.000000 0.000000
 					<!--BW_String-->
@@ -415749,6 +417121,10 @@
 					3 3 0.17 0.18
 					<!--BW_String-->
 				</G56_E-100>
+				<G56_E-100_7x7>
+					3 3 0.17 0.18
+					<!--BW_String-->
+				</G56_E-100_7x7>
 				<G57_PzVI_Tiger_P>
 					2.4 2.3 0.76 0.35
 					<!--BW_String-->
@@ -416396,6 +417772,10 @@
 					2.74 2.74 0.000000 0.000000
 					<!--BW_String-->
 				</G56_E-100>
+				<G56_E-100_7x7>
+					2.74 2.74 0.000000 0.000000
+					<!--BW_String-->
+				</G56_E-100_7x7>
 				<G57_PzVI_Tiger_P>
 					3 2.7 0.000000 0.000000
 					<!--BW_String-->
@@ -417019,6 +418399,10 @@
 					2.4 2.4 0.43 0.35
 					<!--BW_String-->
 				</G56_E-100>
+				<G56_E-100_7x7>
+					2.4 2.4 0.43 0.35
+					<!--BW_String-->
+				</G56_E-100_7x7>
 				<G57_PzVI_Tiger_P>
 					2 2 0.17 0.37
 					<!--BW_String-->
@@ -417670,6 +419054,10 @@
 					6.4 6.4 0.2 0.12
 					<!--BW_String-->
 				</G56_E-100>
+				<G56_E-100_7x7>
+					6.4 6.4 0.2 0.12
+					<!--BW_String-->
+				</G56_E-100_7x7>
 				<G57_PzVI_Tiger_P>
 					5.8 5.8 0.02 0.26
 					<!--BW_String-->
@@ -418317,6 +419705,10 @@
 					2.74 2.74 0.000000 0.000000
 					<!--BW_String-->
 				</G56_E-100>
+				<G56_E-100_7x7>
+					2.74 2.74 0.000000 0.000000
+					<!--BW_String-->
+				</G56_E-100_7x7>
 				<G57_PzVI_Tiger_P>
 					3 2.7 0.000000 0.000000
 					<!--BW_String-->
@@ -419170,6 +420562,10 @@
 					2 2 0.8 0.2
 					<!--BW_String-->
 				</G56_E-100>
+				<G56_E-100_7x7>
+					2 2 0.8 0.2
+					<!--BW_String-->
+				</G56_E-100_7x7>
 				<G57_PzVI_Tiger_P>
 					1.8 1.8 3.6 3.5
 					<!--BW_String-->
@@ -419754,6 +421150,10 @@
 					2 2 0.8 0.2
 					<!--BW_String-->
 				</G56_E-100>
+				<G56_E-100_7x7>
+					2 2 0.8 0.2
+					<!--BW_String-->
+				</G56_E-100_7x7>
 				<G57_PzVI_Tiger_P>
 					1.8 1.8 3.6 3.8
 					<!--BW_String-->
@@ -420350,6 +421750,10 @@
 					2 2 0.8 0.2
 					<!--BW_String-->
 				</G56_E-100>
+				<G56_E-100_7x7>
+					2 2 0.8 0.2
+					<!--BW_String-->
+				</G56_E-100_7x7>
 				<G57_PzVI_Tiger_P>
 					1.8 1.8 3.6 3.8
 					<!--BW_String-->
@@ -421135,6 +422539,10 @@
 					3.18 3.18 1.64 1.25
 					<!--BW_String-->
 				</germany:G56_E-100>
+				<germany:G56_E-100_7x7>
+					3.18 3.18 1.64 1.25
+					<!--BW_String-->
+				</germany:G56_E-100_7x7>
 				<germany:G57_PzVI_Tiger_P>
 					3 3 4.76 1.91
 					<!--BW_String-->
@@ -421766,6 +423174,10 @@
 					3.18 3.18 1.64 1.25
 					<!--BW_String-->
 				</germany:G56_E-100>
+				<germany:G56_E-100_7x7>
+					3.18 3.18 1.64 1.25
+					<!--BW_String-->
+				</germany:G56_E-100_7x7>
 				<germany:G57_PzVI_Tiger_P>
 					3 3 4.76 1.91
 					<!--BW_String-->
@@ -422397,6 +423809,10 @@
 					3.18 3.18 1.64 1.25
 					<!--BW_String-->
 				</germany:G56_E-100>
+				<germany:G56_E-100_7x7>
+					3.18 3.18 1.64 1.25
+					<!--BW_String-->
+				</germany:G56_E-100_7x7>
 				<germany:G57_PzVI_Tiger_P>
 					3 3 4.76 1.91
 					<!--BW_String-->
@@ -423004,6 +424420,10 @@
 					3.4 3.4 0.000000 0.000000
 					<!--BW_String-->
 				</G56_E-100>
+				<G56_E-100_7x7>
+					3.4 3.4 0.000000 0.000000
+					<!--BW_String-->
+				</G56_E-100_7x7>
 				<G57_PzVI_Tiger_P>
 					3 3 0.000000 0.000000
 					<!--BW_String-->
@@ -423667,6 +425087,10 @@
 					7 7 0.58 0.37
 					<!--BW_String-->
 				</G56_E-100>
+				<G56_E-100_7x7>
+					7 7 0.58 0.37
+					<!--BW_String-->
+				</G56_E-100_7x7>
 				<G57_PzVI_Tiger_P>
 					8.5 8.5 0.72 0.74
 					<!--BW_String-->
@@ -424338,6 +425762,10 @@
 					3.9 3.9 0.36 0.17
 					<!--BW_String-->
 				</G56_E-100>
+				<G56_E-100_7x7>
+					3.9 3.9 0.36 0.17
+					<!--BW_String-->
+				</G56_E-100_7x7>
 				<G57_PzVI_Tiger_P>
 					4 4 0.000000 0.000000
 					<!--BW_String-->
@@ -425388,7 +426816,7 @@
 		<priceGroup>camouflages 50g notInShop</priceGroup>
 		<vehicleFilter>
 			<include>
-				<vehicles>germany:G185_Leopard_120_Verbessert germany:G187_Taschenratte germany:G188_LeKpz_Borkenkafer germany:G189_Hirschkafer</vehicles>
+				<vehicles>germany:G185_Leopard_120_Verbessert germany:G187_Taschenratte germany:G188_LeKpz_Borkenkafer germany:G189_Hirschkafer germany:G197_Pz_Kpfw_Neu</vehicles>
 			</include>
 		</vehicleFilter>
 		<camouflage>
@@ -430773,7 +432201,7 @@
 		<priceGroup>camouflages 50g notInShop</priceGroup>
 		<vehicleFilter>
 			<include>
-				<vehicles>japan:J52_STK_2</vehicles>
+				<vehicles>japan:J52_STK_2 japan:J53_Ho_Ri_Shugo</vehicles>
 			</include>
 		</vehicleFilter>
 		<camouflage>
@@ -434433,6 +435861,81 @@
 					<!--BW_String-->
 				</factor>
 				<offset>0.000000 0.000000</offset>
+			</tilingSettings>
+		</camouflage>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<include>
+				<vehicles>italy:It43_CAV_mod_71</vehicles>
+			</include>
+		</vehicleFilter>
+		<camouflage>
+			<id>1143</id>
+			<texture>vehicles/italy/Camouflage/it_volumetric.dds</texture>
+			<description>#vehicle_customization:camouflage/empty/description</description>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<userString>#vehicle_customization:camouflage/it_volumetric/label</userString>
+			<tags>fullRGB hiddenInUI</tags>
+			<invisibilityFactor>1</invisibilityFactor>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>
+					4.23 4.23
+					<!--BW_String-->
+				</factor>
+				<offset>
+					1.17 -0.42
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+			<glossMetallicMap>vehicles/italy/Camouflage/it_volumetric_GMM.dds</glossMetallicMap>
+			<normal>
+				<normalMap>vehicles/italy/Camouflage/it_volumetric_NM.dds</normalMap>
+				<normalStrength>1</normalStrength>
+			</normal>
+		</camouflage>
+		<camouflage>
+			<id>1144</id>
+			<texture>vehicles/italy/Camouflage/it_volumetric_gun.dds</texture>
+			<description>#vehicle_customization:camouflage/empty/description</description>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<userString>#vehicle_customization:camouflage/it_volumetric/label</userString>
+			<tags>fullRGB hiddenInUI</tags>
+			<invisibilityFactor>1</invisibilityFactor>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>
+					2.84 2.84
+					<!--BW_String-->
+				</factor>
+				<offset>0 0</offset>
 			</tilingSettings>
 		</camouflage>
 	</itemGroup>
@@ -443342,7 +444845,7 @@
 		<priceGroup>camouflages 50g notInShop</priceGroup>
 		<vehicleFilter>
 			<include>
-				<vehicles>sweden:S36_Strv_107_12</vehicles>
+				<vehicles>sweden:S36_Strv_107_12 sweden:S41_BV_111</vehicles>
 			</include>
 		</vehicleFilter>
 		<camouflage>
@@ -463810,6 +465313,10 @@
 					5 5 0.54 0.46
 					<!--BW_String-->
 				</A85_T110E3>
+				<A85_T110E3_7x7>
+					5 5 0.54 0.46
+					<!--BW_String-->
+				</A85_T110E3_7x7>
 				<A86_T23E3>
 					4.3 4.3 0.42 0.48
 					<!--BW_String-->
@@ -464380,6 +465887,10 @@
 					4.8 4.8 0.000000 0.24
 					<!--BW_String-->
 				</A85_T110E3>
+				<A85_T110E3_7x7>
+					4.8 4.8 0.000000 0.24
+					<!--BW_String-->
+				</A85_T110E3_7x7>
 				<A86_T23E3>
 					3.7 3.7 0.27 0.36
 					<!--BW_String-->
@@ -464958,6 +466469,10 @@
 					4.8 4.9 0.27 0.02
 					<!--BW_String-->
 				</A85_T110E3>
+				<A85_T110E3_7x7>
+					4.8 4.9 0.27 0.02
+					<!--BW_String-->
+				</A85_T110E3_7x7>
 				<A86_T23E3>
 					3.4 3.4 0.2 0.51
 					<!--BW_String-->
@@ -465528,6 +467043,10 @@
 					6.4 6.5 0.000000 0.000000
 					<!--BW_String-->
 				</A85_T110E3>
+				<A85_T110E3_7x7>
+					6.4 6.5 0.000000 0.000000
+					<!--BW_String-->
+				</A85_T110E3_7x7>
 				<A86_T23E3>
 					3.6 3.6 0.19 0.02
 					<!--BW_String-->
@@ -466098,6 +467617,10 @@
 					6.8 6.8 0.14 0.000000
 					<!--BW_String-->
 				</A85_T110E3>
+				<A85_T110E3_7x7>
+					6.8 6.8 0.14 0.000000
+					<!--BW_String-->
+				</A85_T110E3_7x7>
 				<A86_T23E3>
 					3.2 3.2 0.000000 0.000000
 					<!--BW_String-->
@@ -466644,6 +468167,10 @@
 					2 2 0.000000 0.000000
 					<!--BW_String-->
 				</A85_T110E3>
+				<A85_T110E3_7x7>
+					2 2 0.000000 0.000000
+					<!--BW_String-->
+				</A85_T110E3_7x7>
 				<A86_T23E3>
 					1 1 0.15 0.000000
 					<!--BW_String-->
@@ -467214,6 +468741,10 @@
 					3.9 3.9 0.26 0.000000
 					<!--BW_String-->
 				</A85_T110E3>
+				<A85_T110E3_7x7>
+					3.9 3.9 0.26 0.000000
+					<!--BW_String-->
+				</A85_T110E3_7x7>
 				<A86_T23E3>
 					3.2 3.2 0.18 0.35
 					<!--BW_String-->
@@ -467793,6 +469324,10 @@
 					7.2 7.3 0.34 0.67
 					<!--BW_String-->
 				</A85_T110E3>
+				<A85_T110E3_7x7>
+					7.2 7.3 0.34 0.67
+					<!--BW_String-->
+				</A85_T110E3_7x7>
 				<A86_T23E3>
 					4.1 4.1 0.46 0.53
 					<!--BW_String-->
@@ -468363,6 +469898,10 @@
 					4.8 4.8 0.71 0.86
 					<!--BW_String-->
 				</A85_T110E3>
+				<A85_T110E3_7x7>
+					4.8 4.8 0.71 0.86
+					<!--BW_String-->
+				</A85_T110E3_7x7>
 				<A86_T23E3>
 					3.4 3.4 0.27 0.28
 					<!--BW_String-->
@@ -468933,6 +470472,10 @@
 					3.4 3.3 0.05 0.18
 					<!--BW_String-->
 				</A85_T110E3>
+				<A85_T110E3_7x7>
+					3.4 3.3 0.05 0.18
+					<!--BW_String-->
+				</A85_T110E3_7x7>
 				<A86_T23E3>
 					2.6 2.6 0.1 0.000000
 					<!--BW_String-->
@@ -469515,6 +471058,10 @@
 					7.8 7.9 0.46 0.000000
 					<!--BW_String-->
 				</A85_T110E3>
+				<A85_T110E3_7x7>
+					7.8 7.9 0.46 0.000000
+					<!--BW_String-->
+				</A85_T110E3_7x7>
 				<A86_T23E3>
 					3.4 3.4 0.000000 0.000000
 					<!--BW_String-->
@@ -470049,6 +471596,10 @@
 					4 3.1 0.38 0.64
 					<!--BW_String-->
 				</A85_T110E3>
+				<A85_T110E3_7x7>
+					4 3.1 0.38 0.64
+					<!--BW_String-->
+				</A85_T110E3_7x7>
 				<A86_T23E3>
 					3.8 3.8 0.7 0.41
 					<!--BW_String-->
@@ -470603,6 +472154,10 @@
 					3 5 0.000000 0.000000
 					<!--BW_String-->
 				</A85_T110E3>
+				<A85_T110E3_7x7>
+					3 5 0.000000 0.000000
+					<!--BW_String-->
+				</A85_T110E3_7x7>
 				<A86_T23E3>
 					2.1 2.1 0.000000 0.000000
 					<!--BW_String-->
@@ -471169,6 +472724,10 @@
 					3 4.6 0.000000 0.000000
 					<!--BW_String-->
 				</A85_T110E3>
+				<A85_T110E3_7x7>
+					3 4.6 0.000000 0.000000
+					<!--BW_String-->
+				</A85_T110E3_7x7>
 				<A86_T23E3>
 					2.5 2.9 0.000000 0.000000
 					<!--BW_String-->
@@ -471735,6 +473294,10 @@
 					4 4.2 0.000000 0.000000
 					<!--BW_String-->
 				</A85_T110E3>
+				<A85_T110E3_7x7>
+					4 4.2 0.000000 0.000000
+					<!--BW_String-->
+				</A85_T110E3_7x7>
 				<A86_T23E3>
 					3 3 0.000000 0.000000
 					<!--BW_String-->
@@ -472301,6 +473864,10 @@
 					4 4 0.000000 0.000000
 					<!--BW_String-->
 				</A85_T110E3>
+				<A85_T110E3_7x7>
+					4 4 0.000000 0.000000
+					<!--BW_String-->
+				</A85_T110E3_7x7>
 				<A86_T23E3>
 					2.3 2.3 0.000000 0.000000
 					<!--BW_String-->
@@ -473011,6 +474578,10 @@
 					3.8 3.7 0.24 0.77
 					<!--BW_String-->
 				</A85_T110E3>
+				<A85_T110E3_7x7>
+					3.8 3.7 0.24 0.77
+					<!--BW_String-->
+				</A85_T110E3_7x7>
 				<A86_T23E3>
 					1.8 1.8 0.000000 0.000000
 					<!--BW_String-->
@@ -473582,6 +475153,10 @@
 					4.8 4.8 0.2 0.000000
 					<!--BW_String-->
 				</A85_T110E3>
+				<A85_T110E3_7x7>
+					4.8 4.8 0.2 0.000000
+					<!--BW_String-->
+				</A85_T110E3_7x7>
 				<A86_T23E3>
 					2.4 2.4 0.35 0.42
 					<!--BW_String-->
@@ -474137,6 +475712,10 @@
 					4 4 0.13 0.18
 					<!--BW_String-->
 				</A85_T110E3>
+				<A85_T110E3_7x7>
+					4 4 0.13 0.18
+					<!--BW_String-->
+				</A85_T110E3_7x7>
 				<A86_T23E3>
 					2.1 2.1 0.85 0.46
 					<!--BW_String-->
@@ -474708,6 +476287,10 @@
 					3 3 0.000000 0.000000
 					<!--BW_String-->
 				</A85_T110E3>
+				<A85_T110E3_7x7>
+					3 3 0.000000 0.000000
+					<!--BW_String-->
+				</A85_T110E3_7x7>
 				<A86_T23E3>
 					1.8 1.8 0.000000 0.000000
 					<!--BW_String-->
@@ -475259,6 +476842,10 @@
 					3 3 0.000000 0.000000
 					<!--BW_String-->
 				</A85_T110E3>
+				<A85_T110E3_7x7>
+					3 3 0.000000 0.000000
+					<!--BW_String-->
+				</A85_T110E3_7x7>
 				<A86_T23E3>
 					3 3 0.000000 0.000000
 					<!--BW_String-->
@@ -475830,6 +477417,10 @@
 					5 5 0.000000 0.000000
 					<!--BW_String-->
 				</A85_T110E3>
+				<A85_T110E3_7x7>
+					5 5 0.000000 0.000000
+					<!--BW_String-->
+				</A85_T110E3_7x7>
 				<A86_T23E3>
 					1.2 1.2 0.000000 0.000000
 					<!--BW_String-->
@@ -476389,6 +477980,10 @@
 					6.2 4.6 0.000000 0.000000
 					<!--BW_String-->
 				</A85_T110E3>
+				<A85_T110E3_7x7>
+					6.2 4.6 0.000000 0.000000
+					<!--BW_String-->
+				</A85_T110E3_7x7>
 				<A86_T23E3>
 					2.3 2.3 0.000000 0.000000
 					<!--BW_String-->
@@ -476937,6 +478532,10 @@
 					2.2 2.2 0.23 0.000000
 					<!--BW_String-->
 				</A85_T110E3>
+				<A85_T110E3_7x7>
+					2.2 2.2 0.23 0.000000
+					<!--BW_String-->
+				</A85_T110E3_7x7>
 				<A86_T23E3>
 					1 1 0.000000 0.000000
 					<!--BW_String-->
@@ -477492,6 +479091,10 @@
 					4 4 0.13 0.18
 					<!--BW_String-->
 				</A85_T110E3>
+				<A85_T110E3_7x7>
+					4 4 0.13 0.18
+					<!--BW_String-->
+				</A85_T110E3_7x7>
 				<A86_T23E3>
 					2.1 2.1 0.85 0.46
 					<!--BW_String-->
@@ -478051,6 +479654,10 @@
 					1.9 1.9 0.89 0.2
 					<!--BW_String-->
 				</A85_T110E3>
+				<A85_T110E3_7x7>
+					1.9 1.9 0.89 0.2
+					<!--BW_String-->
+				</A85_T110E3_7x7>
 				<A86_T23E3>
 					1.5 1.5 0.39 0.62
 					<!--BW_String-->
@@ -478781,6 +480388,10 @@
 					9.4 9.4 0.62 0.5
 					<!--BW_String-->
 				</A85_T110E3>
+				<A85_T110E3_7x7>
+					9.4 9.4 0.62 0.5
+					<!--BW_String-->
+				</A85_T110E3_7x7>
 				<A86_T23E3>
 					5.3 5.3 0.41 0.2
 					<!--BW_String-->
@@ -479491,6 +481102,10 @@
 					4 4 0.13 0.18
 					<!--BW_String-->
 				</A85_T110E3>
+				<A85_T110E3_7x7>
+					4 4 0.13 0.18
+					<!--BW_String-->
+				</A85_T110E3_7x7>
 				<A86_T23E3>
 					2.1 2.1 0.85 0.46
 					<!--BW_String-->
@@ -480000,6 +481615,10 @@
 					2 2 0.000000 0.000000
 					<!--BW_String-->
 				</A85_T110E3>
+				<A85_T110E3_7x7>
+					2 2 0.000000 0.000000
+					<!--BW_String-->
+				</A85_T110E3_7x7>
 				<A86_T23E3>
 					1.2 1.2 0.2 0.28
 					<!--BW_String-->
@@ -480484,6 +482103,10 @@
 					2 2 0.000000 0.000000
 					<!--BW_String-->
 				</A85_T110E3>
+				<A85_T110E3_7x7>
+					2 2 0.000000 0.000000
+					<!--BW_String-->
+				</A85_T110E3_7x7>
 				<A86_T23E3>
 					1.2 1.2 0.2 0.28
 					<!--BW_String-->
@@ -480968,6 +482591,10 @@
 					2 2 0.000000 0.000000
 					<!--BW_String-->
 				</A85_T110E3>
+				<A85_T110E3_7x7>
+					2 2 0.000000 0.000000
+					<!--BW_String-->
+				</A85_T110E3_7x7>
 				<A86_T23E3>
 					1.2 1.2 0.2 0.3
 					<!--BW_String-->
@@ -481668,6 +483295,10 @@
 					3.45 3.45 1.6 0.77
 					<!--BW_String-->
 				</usa:A85_T110E3>
+				<usa:A85_T110E3_7x7>
+					3.45 3.45 1.6 0.77
+					<!--BW_String-->
+				</usa:A85_T110E3_7x7>
 				<usa:A86_T23E3>
 					2 2 10.59 2.74
 					<!--BW_String-->
@@ -482191,6 +483822,10 @@
 					3.42 3.42 0.83 0.92
 					<!--BW_String-->
 				</usa:A85_T110E3>
+				<usa:A85_T110E3_7x7>
+					3.42 3.42 0.83 0.92
+					<!--BW_String-->
+				</usa:A85_T110E3_7x7>
 				<usa:A86_T23E3>
 					2.22 2.22 9.45 0.63
 					<!--BW_String-->
@@ -482722,6 +484357,10 @@
 					1.95 1.95 2.38 1.84
 					<!--BW_String-->
 				</usa:A85_T110E3>
+				<usa:A85_T110E3_7x7>
+					1.95 1.95 2.38 1.84
+					<!--BW_String-->
+				</usa:A85_T110E3_7x7>
 				<usa:A86_T23E3>
 					1.17 1.17 5.39 6.34
 					<!--BW_String-->
@@ -483254,6 +484893,10 @@
 					5.85 5.85 0.91 0.92
 					<!--BW_String-->
 				</usa:A85_T110E3>
+				<usa:A85_T110E3_7x7>
+					5.85 5.85 0.91 0.92
+					<!--BW_String-->
+				</usa:A85_T110E3_7x7>
 				<usa:A86_T23E3>
 					3.37 3.37 9.45 0.63
 					<!--BW_String-->
@@ -483773,6 +485416,10 @@
 					2.42 2.42 0.14 0.000000
 					<!--BW_String-->
 				</A85_T110E3>
+				<A85_T110E3_7x7>
+					2.42 2.42 0.14 0.000000
+					<!--BW_String-->
+				</A85_T110E3_7x7>
 				<A86_T23E3>
 					1.14 1.14 0.000000 0.000000
 					<!--BW_String-->
@@ -484348,6 +485995,10 @@
 					5 5 0.05 0.18
 					<!--BW_String-->
 				</A85_T110E3>
+				<A85_T110E3_7x7>
+					5 5 0.05 0.18
+					<!--BW_String-->
+				</A85_T110E3_7x7>
 				<A86_T23E3>
 					3 3 0.1 0.000000
 					<!--BW_String-->
@@ -484919,6 +486570,10 @@
 					10.2 10.4 0.34 0.67
 					<!--BW_String-->
 				</A85_T110E3>
+				<A85_T110E3_7x7>
+					10.2 10.4 0.34 0.67
+					<!--BW_String-->
+				</A85_T110E3_7x7>
 				<A86_T23E3>
 					5.85 5.85 0.46 0.53
 					<!--BW_String-->
@@ -485496,6 +487151,10 @@
 					2.8 2.8 2.04 1.78
 					<!--BW_String-->
 				</usa:A85_T110E3>
+				<usa:A85_T110E3_7x7>
+					2.8 2.8 2.04 1.78
+					<!--BW_String-->
+				</usa:A85_T110E3_7x7>
 				<usa:A86_T23E3>
 					1.4 1.4 6.48 1.93
 					<!--BW_String-->
@@ -485813,7 +487472,7 @@
 		<priceGroup>camouflages 50g notInShop</priceGroup>
 		<vehicleFilter>
 			<include>
-				<vehicles>usa:A85_T110E3</vehicles>
+				<vehicles>usa:A85_T110E3 usa:A85_T110E3_7x7</vehicles>
 			</include>
 		</vehicleFilter>
 		<camouflage>
@@ -485844,6 +487503,10 @@
 					3.0 3.0 0.04 3.01
 					<!--BW_String-->
 				</usa:A85_T110E3>
+				<usa:A85_T110E3_7x7>
+					3.0 3.0 0.04 3.01
+					<!--BW_String-->
+				</usa:A85_T110E3_7x7>
 			</tiling>
 			<tilingSettings>
 				<type>relative</type>
@@ -486620,6 +488283,10 @@
 					3.42 3.42 0.83 0.92
 					<!--BW_String-->
 				</usa:A85_T110E3>
+				<usa:A85_T110E3_7x7>
+					3.42 3.42 0.83 0.92
+					<!--BW_String-->
+				</usa:A85_T110E3_7x7>
 				<usa:A86_T23E3>
 					2.22 2.22 9.45 0.63
 					<!--BW_String-->
@@ -487104,6 +488771,10 @@
 					1.1 1.1 0.000000 0.000000
 					<!--BW_String-->
 				</R148_Object_430_U>
+				<R148_Object_430_U_7x7>
+					1.1 1.1 0.000000 0.000000
+					<!--BW_String-->
+				</R148_Object_430_U_7x7>
 				<R149_Object_268_4>
 					4.2 4.2 0.7 0.5
 					<!--BW_String-->
@@ -487272,6 +488943,10 @@
 					3.5 2.8 0.38 0.09
 					<!--BW_String-->
 				</R45_IS-7>
+				<R45_IS-7_7x7>
+					3.5 2.8 0.38 0.09
+					<!--BW_String-->
+				</R45_IS-7_7x7>
 				<R45_IS-7_IGR>
 					3.5 2.8 0.38 0.09
 					<!--BW_String-->
@@ -487862,6 +489537,10 @@
 					1.5 1.5 5.3 4.4
 					<!--BW_String-->
 				</R148_Object_430_U>
+				<R148_Object_430_U_7x7>
+					1.5 1.5 5.3 4.4
+					<!--BW_String-->
+				</R148_Object_430_U_7x7>
 				<R149_Object_268_4>
 					7.3 7.3 3.8 5.9
 					<!--BW_String-->
@@ -488030,6 +489709,10 @@
 					5.4 3.5 0.4 0.000000
 					<!--BW_String-->
 				</R45_IS-7>
+				<R45_IS-7_7x7>
+					5.4 3.5 0.4 0.000000
+					<!--BW_String-->
+				</R45_IS-7_7x7>
 				<R45_IS-7_IGR>
 					5.4 3.5 0.4 0.000000
 					<!--BW_String-->
@@ -488776,6 +490459,10 @@
 					6.4 5.7 0.000000 0.000000
 					<!--BW_String-->
 				</R45_IS-7>
+				<R45_IS-7_7x7>
+					6.4 5.7 0.000000 0.000000
+					<!--BW_String-->
+				</R45_IS-7_7x7>
 				<R45_IS-7_IGR>
 					6.4 5.7 0.000000 0.000000
 					<!--BW_String-->
@@ -489302,6 +490989,10 @@
 					1.1 1.1 0.000000 0.000000
 					<!--BW_String-->
 				</R148_Object_430_U>
+				<R148_Object_430_U_7x7>
+					1.1 1.1 0.000000 0.000000
+					<!--BW_String-->
+				</R148_Object_430_U_7x7>
 				<R149_Object_268_4>
 					4.4 4.4 0.22 0.4
 					<!--BW_String-->
@@ -489466,6 +491157,10 @@
 					4.4 4.6 0.000000 0.37
 					<!--BW_String-->
 				</R45_IS-7>
+				<R45_IS-7_7x7>
+					4.4 4.6 0.000000 0.37
+					<!--BW_String-->
+				</R45_IS-7_7x7>
 				<R45_IS-7_IGR>
 					4.4 4.6 0.000000 0.37
 					<!--BW_String-->
@@ -490024,6 +491719,10 @@
 					1.1 1.1 0.000000 0.000000
 					<!--BW_String-->
 				</R148_Object_430_U>
+				<R148_Object_430_U_7x7>
+					1.1 1.1 0.000000 0.000000
+					<!--BW_String-->
+				</R148_Object_430_U_7x7>
 				<R149_Object_268_4>
 					5.3 5.3 2.7 0.37
 					<!--BW_String-->
@@ -490192,6 +491891,10 @@
 					6.3 3.9 0.4 0.000000
 					<!--BW_String-->
 				</R45_IS-7>
+				<R45_IS-7_7x7>
+					6.3 3.9 0.4 0.000000
+					<!--BW_String-->
+				</R45_IS-7_7x7>
 				<R45_IS-7_IGR>
 					6.3 3.9 0.4 0.000000
 					<!--BW_String-->
@@ -490778,6 +492481,10 @@
 					1.6 1.6 0.000000 0.000000
 					<!--BW_String-->
 				</R148_Object_430_U>
+				<R148_Object_430_U_7x7>
+					1.6 1.6 0.000000 0.000000
+					<!--BW_String-->
+				</R148_Object_430_U_7x7>
 				<R149_Object_268_4>
 					6.5 5.3 9.5 2.8
 					<!--BW_String-->
@@ -490946,6 +492653,10 @@
 					7.3 6.8 0.48 0.28
 					<!--BW_String-->
 				</R45_IS-7>
+				<R45_IS-7_7x7>
+					7.3 6.8 0.48 0.28
+					<!--BW_String-->
+				</R45_IS-7_7x7>
 				<R45_IS-7_IGR>
 					7.3 6.8 0.48 0.28
 					<!--BW_String-->
@@ -491532,6 +493243,10 @@
 					1.1 1.1 0.000000 0.000000
 					<!--BW_String-->
 				</R148_Object_430_U>
+				<R148_Object_430_U_7x7>
+					1.1 1.1 0.000000 0.000000
+					<!--BW_String-->
+				</R148_Object_430_U_7x7>
 				<R149_Object_268_4>
 					5.1 5.1 0.8 3.6
 					<!--BW_String-->
@@ -491700,6 +493415,10 @@
 					5.6 4.5 0.2 0.5
 					<!--BW_String-->
 				</R45_IS-7>
+				<R45_IS-7_7x7>
+					5.6 4.5 0.2 0.5
+					<!--BW_String-->
+				</R45_IS-7_7x7>
 				<R45_IS-7_IGR>
 					5.6 4.5 0.2 0.5
 					<!--BW_String-->
@@ -492294,6 +494013,10 @@
 					1.2 1.2 0.000000 0.000000
 					<!--BW_String-->
 				</R148_Object_430_U>
+				<R148_Object_430_U_7x7>
+					1.2 1.2 0.000000 0.000000
+					<!--BW_String-->
+				</R148_Object_430_U_7x7>
 				<R149_Object_268_4>
 					4.5 5.2 5.7 0.19
 					<!--BW_String-->
@@ -492462,6 +494185,10 @@
 					5.7 7.2 0.58 0.44
 					<!--BW_String-->
 				</R45_IS-7>
+				<R45_IS-7_7x7>
+					5.7 7.2 0.58 0.44
+					<!--BW_String-->
+				</R45_IS-7_7x7>
 				<R45_IS-7_IGR>
 					5.7 7.2 0.58 0.44
 					<!--BW_String-->
@@ -493048,6 +494775,10 @@
 					1.2 1.2 0.000000 0.000000
 					<!--BW_String-->
 				</R148_Object_430_U>
+				<R148_Object_430_U_7x7>
+					1.2 1.2 0.000000 0.000000
+					<!--BW_String-->
+				</R148_Object_430_U_7x7>
 				<R149_Object_268_4>
 					6.2 6.2 0.54 2.5
 					<!--BW_String-->
@@ -493212,6 +494943,10 @@
 					5.6 5.7 1 0.54
 					<!--BW_String-->
 				</R45_IS-7>
+				<R45_IS-7_7x7>
+					5.6 5.7 1 0.54
+					<!--BW_String-->
+				</R45_IS-7_7x7>
 				<R45_IS-7_IGR>
 					5.6 5.7 1 0.54
 					<!--BW_String-->
@@ -493794,6 +495529,10 @@
 					1.5 1.5 0.2 0.000000
 					<!--BW_String-->
 				</R148_Object_430_U>
+				<R148_Object_430_U_7x7>
+					1.5 1.5 0.2 0.000000
+					<!--BW_String-->
+				</R148_Object_430_U_7x7>
 				<R149_Object_268_4>
 					6.2 6.2 6.4 0.74
 					<!--BW_String-->
@@ -493962,6 +495701,10 @@
 					7.7 7.4 0.4 0.48
 					<!--BW_String-->
 				</R45_IS-7>
+				<R45_IS-7_7x7>
+					7.7 7.4 0.4 0.48
+					<!--BW_String-->
+				</R45_IS-7_7x7>
 				<R45_IS-7_IGR>
 					7.7 7.4 0.4 0.48
 					<!--BW_String-->
@@ -494548,6 +496291,10 @@
 					1.1 1.1 0.000000 0.000000
 					<!--BW_String-->
 				</R148_Object_430_U>
+				<R148_Object_430_U_7x7>
+					1.1 1.1 0.000000 0.000000
+					<!--BW_String-->
+				</R148_Object_430_U_7x7>
 				<R149_Object_268_4>
 					5.2 5.2 1.4 0.000000
 					<!--BW_String-->
@@ -494716,6 +496463,10 @@
 					8 6.2 0.52 0.000000
 					<!--BW_String-->
 				</R45_IS-7>
+				<R45_IS-7_7x7>
+					8 6.2 0.52 0.000000
+					<!--BW_String-->
+				</R45_IS-7_7x7>
 				<R45_IS-7_IGR>
 					8 6.2 0.52 0.000000
 					<!--BW_String-->
@@ -495302,6 +497053,10 @@
 					1.5 1.5 0.000000 0.000000
 					<!--BW_String-->
 				</R148_Object_430_U>
+				<R148_Object_430_U_7x7>
+					1.5 1.5 0.000000 0.000000
+					<!--BW_String-->
+				</R148_Object_430_U_7x7>
 				<R149_Object_268_4>
 					4.2 4.2 0.4 1.8
 					<!--BW_String-->
@@ -495470,6 +497225,10 @@
 					6.5 6.2 0.000000 0.000000
 					<!--BW_String-->
 				</R45_IS-7>
+				<R45_IS-7_7x7>
+					3.7 3.7 4.35 2.3
+					<!--BW_String-->
+				</R45_IS-7_7x7>
 				<R45_IS-7_IGR>
 					6.5 6.2 0.000000 0.000000
 					<!--BW_String-->
@@ -496048,6 +497807,10 @@
 					1.1 1.1 2.7 1.2
 					<!--BW_String-->
 				</R148_Object_430_U>
+				<R148_Object_430_U_7x7>
+					1.1 1.1 2.7 1.2
+					<!--BW_String-->
+				</R148_Object_430_U_7x7>
 				<R149_Object_268_4>
 					6.3 6.3 0.7 3.6
 					<!--BW_String-->
@@ -496216,6 +497979,10 @@
 					7.3 7.7 0.000000 0.000000
 					<!--BW_String-->
 				</R45_IS-7>
+				<R45_IS-7_7x7>
+					7.3 7.7 0.000000 0.000000
+					<!--BW_String-->
+				</R45_IS-7_7x7>
 				<R45_IS-7_IGR>
 					7.3 7.7 0.000000 0.000000
 					<!--BW_String-->
@@ -496822,6 +498589,10 @@
 					1.2 1.2 0.000000 0.000000
 					<!--BW_String-->
 				</R148_Object_430_U>
+				<R148_Object_430_U_7x7>
+					1.2 1.2 0.000000 0.000000
+					<!--BW_String-->
+				</R148_Object_430_U_7x7>
 				<R149_Object_268_4>
 					5.5 5.5 5.1 4.9
 					<!--BW_String-->
@@ -496990,6 +498761,10 @@
 					4 3.9 0.57 0.2
 					<!--BW_String-->
 				</R45_IS-7>
+				<R45_IS-7_7x7>
+					4 3.9 0.57 0.2
+					<!--BW_String-->
+				</R45_IS-7_7x7>
 				<R45_IS-7_IGR>
 					4 3.9 0.57 0.2
 					<!--BW_String-->
@@ -497580,6 +499355,10 @@
 					1.5 1.5 0.000000 0.000000
 					<!--BW_String-->
 				</R148_Object_430_U>
+				<R148_Object_430_U_7x7>
+					1.5 1.5 0.000000 0.000000
+					<!--BW_String-->
+				</R148_Object_430_U_7x7>
 				<R149_Object_268_4>
 					5.5 5.5 0.000000 4.2
 					<!--BW_String-->
@@ -497748,6 +499527,10 @@
 					5.8 5.7 0.37 0.000000
 					<!--BW_String-->
 				</R45_IS-7>
+				<R45_IS-7_7x7>
+					5.8 5.7 0.37 0.000000
+					<!--BW_String-->
+				</R45_IS-7_7x7>
 				<R45_IS-7_IGR>
 					5.8 5.7 0.37 0.000000
 					<!--BW_String-->
@@ -498330,6 +500113,10 @@
 					1.5 1.5 0.000000 0.000000
 					<!--BW_String-->
 				</R148_Object_430_U>
+				<R148_Object_430_U_7x7>
+					1.5 1.5 0.000000 0.000000
+					<!--BW_String-->
+				</R148_Object_430_U_7x7>
 				<R149_Object_268_4>
 					5.5 5.5 4.3 0.000000
 					<!--BW_String-->
@@ -498498,6 +500285,10 @@
 					6.3 6.4 0.000000 0.000000
 					<!--BW_String-->
 				</R45_IS-7>
+				<R45_IS-7_7x7>
+					6.3 6.4 0.000000 0.000000
+					<!--BW_String-->
+				</R45_IS-7_7x7>
 				<R45_IS-7_IGR>
 					6.3 6.4 0.000000 0.000000
 					<!--BW_String-->
@@ -499084,6 +500875,10 @@
 					1.5 1.5 0.000000 0.000000
 					<!--BW_String-->
 				</R148_Object_430_U>
+				<R148_Object_430_U_7x7>
+					1.5 1.5 0.000000 0.000000
+					<!--BW_String-->
+				</R148_Object_430_U_7x7>
 				<R149_Object_268_4>
 					5.5 5.5 4.3 0.000000
 					<!--BW_String-->
@@ -499252,6 +501047,10 @@
 					6.9 6.9 0.000000 0.000000
 					<!--BW_String-->
 				</R45_IS-7>
+				<R45_IS-7_7x7>
+					6.9 6.9 0.000000 0.000000
+					<!--BW_String-->
+				</R45_IS-7_7x7>
 				<R45_IS-7_IGR>
 					6.9 6.9 0.000000 0.000000
 					<!--BW_String-->
@@ -499830,6 +501629,10 @@
 					1.5 1.5 0.000000 0.000000
 					<!--BW_String-->
 				</R148_Object_430_U>
+				<R148_Object_430_U_7x7>
+					1.5 1.5 0.000000 0.000000
+					<!--BW_String-->
+				</R148_Object_430_U_7x7>
 				<R149_Object_268_4>
 					5.5 5.5 4.3 0.000000
 					<!--BW_String-->
@@ -499998,6 +501801,10 @@
 					6.5 6.3 0.24 0.000000
 					<!--BW_String-->
 				</R45_IS-7>
+				<R45_IS-7_7x7>
+					6.5 6.3 0.24 0.000000
+					<!--BW_String-->
+				</R45_IS-7_7x7>
 				<R45_IS-7_IGR>
 					6.5 6.3 0.24 0.000000
 					<!--BW_String-->
@@ -500573,6 +502380,10 @@
 					1.1 1.1 0.000000 0.000000
 					<!--BW_String-->
 				</R148_Object_430_U>
+				<R148_Object_430_U_7x7>
+					1.1 1.1 0.000000 0.000000
+					<!--BW_String-->
+				</R148_Object_430_U_7x7>
 				<R149_Object_268_4>
 					6.5 6.5 0.000000 0.28
 					<!--BW_String-->
@@ -500741,6 +502552,10 @@
 					6.9 4.2 0.4 0.16
 					<!--BW_String-->
 				</R45_IS-7>
+				<R45_IS-7_7x7>
+					6.9 4.2 0.4 0.16
+					<!--BW_String-->
+				</R45_IS-7_7x7>
 				<R45_IS-7_IGR>
 					6.9 4.2 0.4 0.16
 					<!--BW_String-->
@@ -501328,6 +503143,10 @@
 					0.7 0.7 0.000000 0.000000
 					<!--BW_String-->
 				</R148_Object_430_U>
+				<R148_Object_430_U_7x7>
+					0.7 0.7 0.000000 0.000000
+					<!--BW_String-->
+				</R148_Object_430_U_7x7>
 				<R149_Object_268_4>
 					2.6 2.6 0.3 4
 					<!--BW_String-->
@@ -501492,6 +503311,10 @@
 					3.9 2.2 0.12 0.24
 					<!--BW_String-->
 				</R45_IS-7>
+				<R45_IS-7_7x7>
+					3.9 2.2 0.12 0.24
+					<!--BW_String-->
+				</R45_IS-7_7x7>
 				<R45_IS-7_IGR>
 					3.9 2.2 0.12 0.24
 					<!--BW_String-->
@@ -502075,6 +503898,10 @@
 					0.7 0.7 0.000000 0.000000
 					<!--BW_String-->
 				</R148_Object_430_U>
+				<R148_Object_430_U_7x7>
+					0.7 0.7 0.000000 0.000000
+					<!--BW_String-->
+				</R148_Object_430_U_7x7>
 				<R149_Object_268_4>
 					3.7 3.7 0.17 2.5
 					<!--BW_String-->
@@ -502243,6 +504070,10 @@
 					4.28 4.28 0.000000 0.000000
 					<!--BW_String-->
 				</R45_IS-7>
+				<R45_IS-7_7x7>
+					4.28 4.28 0.000000 0.000000
+					<!--BW_String-->
+				</R45_IS-7_7x7>
 				<R45_IS-7_IGR>
 					4.1 1.9 0.000000 0.000000
 					<!--BW_String-->
@@ -502926,6 +504757,10 @@
 					0.9 0.9 0.000000 0.000000
 					<!--BW_String-->
 				</R148_Object_430_U>
+				<R148_Object_430_U_7x7>
+					0.9 0.9 0.000000 0.000000
+					<!--BW_String-->
+				</R148_Object_430_U_7x7>
 				<R149_Object_268_4>
 					3 3 0.74 5.6
 					<!--BW_String-->
@@ -503094,6 +504929,10 @@
 					2.3 2.3 0.000000 0.000000
 					<!--BW_String-->
 				</R45_IS-7>
+				<R45_IS-7_7x7>
+					2.3 2.3 0.000000 0.000000
+					<!--BW_String-->
+				</R45_IS-7_7x7>
 				<R45_IS-7_IGR>
 					2.3 2.3 0.000000 0.000000
 					<!--BW_String-->
@@ -503837,6 +505676,10 @@
 					0.7 0.7 0.000000 0.000000
 					<!--BW_String-->
 				</R148_Object_430_U>
+				<R148_Object_430_U_7x7>
+					0.7 0.7 0.000000 0.000000
+					<!--BW_String-->
+				</R148_Object_430_U_7x7>
 				<R149_Object_268_4>
 					2.8 2.8 0.000000 7.1
 					<!--BW_String-->
@@ -503997,6 +505840,10 @@
 					4.2 3 0.000000 0.000000
 					<!--BW_String-->
 				</R45_IS-7>
+				<R45_IS-7_7x7>
+					4.2 3 0.000000 0.000000
+					<!--BW_String-->
+				</R45_IS-7_7x7>
 				<R45_IS-7_IGR>
 					4.2 3 0.000000 0.000000
 					<!--BW_String-->
@@ -504572,6 +506419,10 @@
 					0.7 0.7 0.000000 0.000000
 					<!--BW_String-->
 				</R148_Object_430_U>
+				<R148_Object_430_U_7x7>
+					0.7 0.7 0.000000 0.000000
+					<!--BW_String-->
+				</R148_Object_430_U_7x7>
 				<R149_Object_268_4>
 					3.9 3.9 0.000000 4.8
 					<!--BW_String-->
@@ -504736,6 +506587,10 @@
 					3.7 3 0.000000 0.000000
 					<!--BW_String-->
 				</R45_IS-7>
+				<R45_IS-7_7x7>
+					3.7 3 0.000000 0.000000
+					<!--BW_String-->
+				</R45_IS-7_7x7>
 				<R45_IS-7_IGR>
 					3.7 3 0.000000 0.000000
 					<!--BW_String-->
@@ -505483,6 +507338,10 @@
 					5.5 5 0.000000 0.000000
 					<!--BW_String-->
 				</R45_IS-7>
+				<R45_IS-7_7x7>
+					5.5 5 0.000000 0.000000
+					<!--BW_String-->
+				</R45_IS-7_7x7>
 				<R45_IS-7_IGR>
 					5.5 5 0.000000 0.000000
 					<!--BW_String-->
@@ -506074,6 +507933,10 @@
 					0.6 0.6 0.000000 0.000000
 					<!--BW_String-->
 				</R148_Object_430_U>
+				<R148_Object_430_U_7x7>
+					0.6 0.6 0.000000 0.000000
+					<!--BW_String-->
+				</R148_Object_430_U_7x7>
 				<R149_Object_268_4>
 					4.6 4.6 0.45 4.2
 					<!--BW_String-->
@@ -506242,6 +508105,10 @@
 					3.8 2.4 0.3 0.25
 					<!--BW_String-->
 				</R45_IS-7>
+				<R45_IS-7_7x7>
+					3.8 2.4 0.3 0.25
+					<!--BW_String-->
+				</R45_IS-7_7x7>
 				<R45_IS-7_IGR>
 					3.8 2.4 0.3 0.25
 					<!--BW_String-->
@@ -506813,6 +508680,10 @@
 					1.1 1.1 0.000000 0.000000
 					<!--BW_String-->
 				</R148_Object_430_U>
+				<R148_Object_430_U_7x7>
+					1.1 1.1 0.000000 0.000000
+					<!--BW_String-->
+				</R148_Object_430_U_7x7>
 				<R149_Object_268_4>
 					4.6 4.6 8.9 0.000000
 					<!--BW_String-->
@@ -506981,6 +508852,10 @@
 					4.2 4.2 0.92 0.000000
 					<!--BW_String-->
 				</R45_IS-7>
+				<R45_IS-7_7x7>
+					4.2 4.2 0.92 0.000000
+					<!--BW_String-->
+				</R45_IS-7_7x7>
 				<R45_IS-7_IGR>
 					4.2 4.2 0.92 0.000000
 					<!--BW_String-->
@@ -507564,6 +509439,10 @@
 					0.7 0.7 0.000000 0.000000
 					<!--BW_String-->
 				</R148_Object_430_U>
+				<R148_Object_430_U_7x7>
+					0.7 0.7 0.000000 0.000000
+					<!--BW_String-->
+				</R148_Object_430_U_7x7>
 				<R149_Object_268_4>
 					3.7 3.7 0.17 2.5
 					<!--BW_String-->
@@ -507732,6 +509611,10 @@
 					4.28 4.28 0.000000 0.000000
 					<!--BW_String-->
 				</R45_IS-7>
+				<R45_IS-7_7x7>
+					4.28 4.28 0.000000 0.000000
+					<!--BW_String-->
+				</R45_IS-7_7x7>
 				<R45_IS-7_IGR>
 					4.1 1.9 0.000000 0.000000
 					<!--BW_String-->
@@ -508827,6 +510710,10 @@
 					0.7 0.7 0.000000 0.000000
 					<!--BW_String-->
 				</R148_Object_430_U>
+				<R148_Object_430_U_7x7>
+					0.7 0.7 0.000000 0.000000
+					<!--BW_String-->
+				</R148_Object_430_U_7x7>
 				<R149_Object_268_4>
 					3.7 3.7 0.17 2.5
 					<!--BW_String-->
@@ -508995,6 +510882,10 @@
 					4.28 4.28 0.000000 0.000000
 					<!--BW_String-->
 				</R45_IS-7>
+				<R45_IS-7_7x7>
+					4.28 4.28 0.000000 0.000000
+					<!--BW_String-->
+				</R45_IS-7_7x7>
 				<R45_IS-7_IGR>
 					4.1 4.1 0.000000 0.000000
 					<!--BW_String-->
@@ -509594,6 +511485,10 @@
 					1.3 1.3 0.000000 0.000000
 					<!--BW_String-->
 				</R148_Object_430_U>
+				<R148_Object_430_U_7x7>
+					1.3 1.3 0.000000 0.000000
+					<!--BW_String-->
+				</R148_Object_430_U_7x7>
 				<R149_Object_268_4>
 					8.2 8.2 0.000000 0.000000
 					<!--BW_String-->
@@ -509762,6 +511657,10 @@
 					9.8 6.8 0.95 0.88
 					<!--BW_String-->
 				</R45_IS-7>
+				<R45_IS-7_7x7>
+					9.8 6.8 0.95 0.88
+					<!--BW_String-->
+				</R45_IS-7_7x7>
 				<R45_IS-7_IGR>
 					9.8 6.8 0.95 0.88
 					<!--BW_String-->
@@ -510338,6 +512237,10 @@
 					0.3 0.3 0.2 0.000000
 					<!--BW_String-->
 				</R148_Object_430_U>
+				<R148_Object_430_U_7x7>
+					0.3 0.3 0.2 0.000000
+					<!--BW_String-->
+				</R148_Object_430_U_7x7>
 				<R149_Object_268_4>
 					2 2 2.3 4.1
 					<!--BW_String-->
@@ -510494,6 +512397,10 @@
 					1.2 1.2 3.7 5.1
 					<!--BW_String-->
 				</R45_IS-7>
+				<R45_IS-7_7x7>
+					1.2 1.2 3.7 5.1
+					<!--BW_String-->
+				</R45_IS-7_7x7>
 				<R45_IS-7_IGR>
 					1.2 1.2 3.7 5.1
 					<!--BW_String-->
@@ -511058,6 +512965,10 @@
 					0.5 0.5 0.000000 0.000000
 					<!--BW_String-->
 				</R148_Object_430_U>
+				<R148_Object_430_U_7x7>
+					0.5 0.5 0.000000 0.000000
+					<!--BW_String-->
+				</R148_Object_430_U_7x7>
 				<R149_Object_268_4>
 					2 2 2.4 4.1
 					<!--BW_String-->
@@ -511214,6 +513125,10 @@
 					1.2 1.2 3.7 5.1
 					<!--BW_String-->
 				</R45_IS-7>
+				<R45_IS-7_7x7>
+					1.2 1.2 3.7 5.1
+					<!--BW_String-->
+				</R45_IS-7_7x7>
 				<R45_IS-7_IGR>
 					1.2 1.2 3.7 5.1
 					<!--BW_String-->
@@ -511782,6 +513697,10 @@
 					0.5 0.5 0.3 0.000000
 					<!--BW_String-->
 				</R148_Object_430_U>
+				<R148_Object_430_U_7x7>
+					0.5 0.5 0.3 0.000000
+					<!--BW_String-->
+				</R148_Object_430_U_7x7>
 				<R149_Object_268_4>
 					2 2 2.6 4.1
 					<!--BW_String-->
@@ -511942,6 +513861,10 @@
 					1.2 1.2 3.7 5.1
 					<!--BW_String-->
 				</R45_IS-7>
+				<R45_IS-7_7x7>
+					1.2 1.2 3.7 5.1
+					<!--BW_String-->
+				</R45_IS-7_7x7>
 				<R45_IS-7_IGR>
 					1.2 1.2 3.7 5.1
 					<!--BW_String-->
@@ -512745,6 +514668,10 @@
 					0.33 0.33 0.000000 0.000000
 					<!--BW_String-->
 				</ussr:R148_Object_430_U>
+				<ussr:R148_Object_430_U_7x7>
+					0.33 0.33 0.000000 0.000000
+					<!--BW_String-->
+				</ussr:R148_Object_430_U_7x7>
 				<ussr:R149_Object_268_4>
 					1.5 1.5 1.04 0.000000
 					<!--BW_String-->
@@ -512953,6 +514880,10 @@
 					1.69 1.69 1.19 0.000000
 					<!--BW_String-->
 				</ussr:R45_IS-7>
+				<ussr:R45_IS-7_7x7>
+					1.69 1.69 1.19 0.000000
+					<!--BW_String-->
+				</ussr:R45_IS-7_7x7>
 				<ussr:R46_KV-13>
 					1.96 1.96 1.39 2.16
 					<!--BW_String-->
@@ -513441,6 +515372,10 @@
 					0.33 0.33 0.000000 0.000000
 					<!--BW_String-->
 				</ussr:R148_Object_430_U>
+				<ussr:R148_Object_430_U_7x7>
+					0.33 0.33 0.000000 0.000000
+					<!--BW_String-->
+				</ussr:R148_Object_430_U_7x7>
 				<ussr:R149_Object_268_4>
 					1.5 1.5 1.04 0.000000
 					<!--BW_String-->
@@ -513653,6 +515588,10 @@
 					1.69 1.69 1.19 0.000000
 					<!--BW_String-->
 				</ussr:R45_IS-7>
+				<ussr:R45_IS-7_7x7>
+					1.69 1.69 1.19 0.000000
+					<!--BW_String-->
+				</ussr:R45_IS-7_7x7>
 				<ussr:R46_KV-13>
 					1.96 1.96 1.39 2.16
 					<!--BW_String-->
@@ -514141,6 +516080,10 @@
 					0.33 0.33 0.000000 0.000000
 					<!--BW_String-->
 				</ussr:R148_Object_430_U>
+				<ussr:R148_Object_430_U_7x7>
+					0.33 0.33 0.000000 0.000000
+					<!--BW_String-->
+				</ussr:R148_Object_430_U_7x7>
 				<ussr:R149_Object_268_4>
 					1.5 1.5 1.04 0.000000
 					<!--BW_String-->
@@ -514349,6 +516292,10 @@
 					1.69 1.69 1.19 0.000000
 					<!--BW_String-->
 				</ussr:R45_IS-7>
+				<ussr:R45_IS-7_7x7>
+					1.69 1.69 1.19 0.000000
+					<!--BW_String-->
+				</ussr:R45_IS-7_7x7>
 				<ussr:R46_KV-13>
 					1.96 1.96 1.39 2.16
 					<!--BW_String-->
@@ -514861,6 +516808,10 @@
 					0.46 0.46 6.68 6.36
 					<!--BW_String-->
 				</ussr:R148_Object_430_U>
+				<ussr:R148_Object_430_U_7x7>
+					0.46 0.46 6.68 6.36
+					<!--BW_String-->
+				</ussr:R148_Object_430_U_7x7>
 				<ussr:R149_Object_268_4>
 					2.28 2.28 5.68 1.81
 					<!--BW_String-->
@@ -515085,6 +517036,10 @@
 					1.95 1.95 11.11 7.02
 					<!--BW_String-->
 				</ussr:R45_IS-7>
+				<ussr:R45_IS-7_7x7>
+					1.95 1.95 11.11 7.02
+					<!--BW_String-->
+				</ussr:R45_IS-7_7x7>
 				<ussr:R46_KV-13>
 					2.68 2.68 1.73 5.06
 					<!--BW_String-->
@@ -515531,6 +517486,10 @@
 					0.74 0.74 0.000000 0.000000
 					<!--BW_String-->
 				</R148_Object_430_U>
+				<R148_Object_430_U_7x7>
+					0.74 0.74 0.000000 0.000000
+					<!--BW_String-->
+				</R148_Object_430_U_7x7>
 				<R149_Object_268_4>
 					3.36 3.36 0.22 0.4
 					<!--BW_String-->
@@ -515695,6 +517654,10 @@
 					3.91 3.91 0.000000 0.37
 					<!--BW_String-->
 				</R45_IS-7>
+				<R45_IS-7_7x7>
+					3.91 3.91 0.000000 0.37
+					<!--BW_String-->
+				</R45_IS-7_7x7>
 				<R45_IS-7_IGR>
 					4.4 4.6 0.000000 0.37
 					<!--BW_String-->
@@ -516361,6 +518324,10 @@
 					1.2 1.2 0.48 0.52
 					<!--BW_String-->
 				</R148_Object_430_U>
+				<R148_Object_430_U_7x7>
+					1.2 1.2 0.48 0.52
+					<!--BW_String-->
+				</R148_Object_430_U_7x7>
 				<R149_Object_268_4>
 					5.2 5.2 1.4 0.000000
 					<!--BW_String-->
@@ -516529,6 +518496,10 @@
 					6 6 0.25 0.07
 					<!--BW_String-->
 				</R45_IS-7>
+				<R45_IS-7_7x7>
+					6 6 0.25 0.07
+					<!--BW_String-->
+				</R45_IS-7_7x7>
 				<R45_IS-7_IGR>
 					8 6.2 0.52 0.000000
 					<!--BW_String-->
@@ -517127,6 +519098,10 @@
 					0.71 0.71 2.32 1.83
 					<!--BW_String-->
 				</R148_Object_430_U>
+				<R148_Object_430_U_7x7>
+					0.71 0.71 2.32 1.83
+					<!--BW_String-->
+				</R148_Object_430_U_7x7>
 				<R149_Object_268_4>
 					3.77 3.77 0.4 1.8
 					<!--BW_String-->
@@ -517295,6 +519270,10 @@
 					3.47 3.47 0.3 0.24
 					<!--BW_String-->
 				</R45_IS-7>
+				<R45_IS-7_7x7>
+					3.47 3.47 0.3 0.24
+					<!--BW_String-->
+				</R45_IS-7_7x7>
 				<R45_IS-7_IGR>
 					6.5 6.2 0.000000 0.000000
 					<!--BW_String-->
@@ -517889,6 +519868,10 @@
 					0.83 0.83 0.1 0.27
 					<!--BW_String-->
 				</R148_Object_430_U>
+				<R148_Object_430_U_7x7>
+					0.83 0.83 0.1 0.27
+					<!--BW_String-->
+				</R148_Object_430_U_7x7>
 				<R149_Object_268_4>
 					2.92 2.92 0.8 0.21
 					<!--BW_String-->
@@ -518057,6 +520040,10 @@
 					3.1 3.1 1 0.54
 					<!--BW_String-->
 				</R45_IS-7>
+				<R45_IS-7_7x7>
+					3.1 3.1 1 0.54
+					<!--BW_String-->
+				</R45_IS-7_7x7>
 				<R45_IS-7_IGR>
 					6.5 6.2 0.000000 0.000000
 					<!--BW_String-->
@@ -518827,6 +520814,10 @@
 					3 3 0.000000 0.000000
 					<!--BW_String-->
 				</R45_IS-7>
+				<R45_IS-7_7x7>
+					3 3 0.000000 0.000000
+					<!--BW_String-->
+				</R45_IS-7_7x7>
 				<R45_IS-7_IGR>
 					6.4 5.7 0.000000 0.000000
 					<!--BW_String-->
@@ -519051,6 +521042,10 @@
 					0.6 0.6 0.94 0.97
 					<!--BW_String-->
 				</ussr:R148_Object_430_U>
+				<ussr:R148_Object_430_U_7x7>
+					0.6 0.6 0.94 0.97
+					<!--BW_String-->
+				</ussr:R148_Object_430_U_7x7>
 				<ussr:R158_LT_432>
 					1.5 1.5 0.29 0.24
 					<!--BW_String-->
@@ -519437,6 +521432,10 @@
 					0.5 0.5 0.92 0.28
 					<!--BW_String-->
 				</R148_Object_430_U>
+				<R148_Object_430_U_7x7>
+					0.5 0.5 0.92 0.28
+					<!--BW_String-->
+				</R148_Object_430_U_7x7>
 				<R149_Object_268_4>
 					3 3 5.1 5.17
 					<!--BW_String-->
@@ -519605,6 +521604,10 @@
 					2.8 2.8 0.57 0.2
 					<!--BW_String-->
 				</R45_IS-7>
+				<R45_IS-7_7x7>
+					2.8 2.8 0.57 0.2
+					<!--BW_String-->
+				</R45_IS-7_7x7>
 				<R45_IS-7_IGR>
 					4 3.9 0.57 0.2
 					<!--BW_String-->

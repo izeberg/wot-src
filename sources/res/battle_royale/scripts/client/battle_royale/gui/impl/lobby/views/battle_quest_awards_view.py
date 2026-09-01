@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from future.utils import viewitems
 from battle_royale.gui.impl.gen.view_models.views.lobby.views.battle_quest_awards_model import BattleQuestAwardsModel, BattleStatus
 from battle_royale.gui.impl.lobby.br_helpers.utils import setEventInfo
 from battle_royale.gui.impl.lobby.tooltips.proxy_currency_tooltip_view import ProxyCurrencyTooltipView
@@ -13,7 +15,7 @@ from gui.server_events.bonuses import getNonQuestBonuses
 
 def awardsFactory(items, ctx=None):
     bonuses = []
-    for key, value in items.iteritems():
+    for key, value in viewitems(items):
         bonuses.extend(getNonQuestBonuses(key, value, ctx))
 
     return bonuses

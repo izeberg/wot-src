@@ -24,13 +24,11 @@ class TokensRequester(AbstractSyncDataRequester, ITokensRequester):
 
     def __init__(self):
         self.__lootBoxCache = {}
-        self.__lootBoxTotalCount = 0
         self.__tokensProgressDelta = TokensProgressDelta(functools.partial(QuestDeltasSettings, QUEST_DELTAS_TOKENS_PROGRESS))
         super(TokensRequester, self).__init__()
 
     def clear(self):
         self.__lootBoxCache.clear()
-        self.__lootBoxTotalCount = 0
         super(TokensRequester, self).clear()
 
     def onDisconnected(self):
@@ -70,9 +68,6 @@ class TokensRequester(AbstractSyncDataRequester, ITokensRequester):
 
         return result
 
-    def getLootBoxesTotalCount(self):
-        return self.__lootBoxTotalCount
-
     def getLootBoxesCountByType(self):
         result = {}
         for box in viewvalues(self.__lootBoxCache):
@@ -89,7 +84,7 @@ class TokensRequester(AbstractSyncDataRequester, ITokensRequester):
     def updateAllLootBoxes(self, data):
         lootBoxTokensList = self.__createLootBoxes(data)
         self.__clearLootBoxes(lootBoxTokensList, isRemove=True)
-        self.__updateLootBoxes(self.getTokens())
+        self.__updateLootBoxes(self.getTokens(), self.getLootBoxRerollHistory())
 
     def getLootBoxByTokenID(self, tokenID):
         return self.__lootBoxCache.get(tokenID)
@@ -98,7 +93,7 @@ class TokensRequester(AbstractSyncDataRequester, ITokensRequester):
         return self.__lootBoxCache.get(LOOTBOX_TOKEN_PREFIX + str(boxID))
 
     def getAttemptsAfterGuaranteedRewards(self, box):
-        boxesHistory = self.getCacheValue('lootBoxes').get('history', {})
+        boxesHistory = self.getCacheValue('lootBoxes', {}).get('history', {})
         historyName, guaranteedFrequencyName = box.getHistoryName(), box.getGuaranteedFrequencyName()
         if historyName not in boxesHistory:
             return 0
@@ -111,6 +106,9 @@ class TokensRequester(AbstractSyncDataRequester, ITokensRequester):
     def getLootBoxesStats(self):
         return self.getCacheValue('lootBoxes', {}).get('stats')
 
+    def getLootBoxRerollHistory(self):
+        return self.getCacheValue('lootBoxes', {}).get('rerollHistory', {})
+
     def getAttemptsAfterRewardsWithBonusProbability(self, box):
         boxesHistory = self.getCacheValue('lootBoxes').get('history', {})
         historyName, probabilityBonusLimitName = box.getHistoryName(), box.getProbabilityBonusLimitName()
@@ -121,6 +119,15 @@ class TokensRequester(AbstractSyncDataRequester, ITokensRequester):
             if limits is None or probabilityBonusLimitName not in limits:
                 return 0
             return limits[probabilityBonusLimitName][2]
+
+    def getRerollState(self, boxID):
+        rerollHistory = self.getLootBoxRerollHistory()
+        history = rerollHistory.get(boxID)
+        if history is None:
+            return (0, None)
+        else:
+            attempts = len(history)
+            return (attempts, history[(attempts - 1)].get('rewards', {}))
 
     def getLastViewedProgress(self, tokenId):
         return self.__tokensProgressDelta.getPrevValue(tokenId)
@@ -145,7 +152,7 @@ class TokensRequester(AbstractSyncDataRequester, ITokensRequester):
         if 'tokens' in result:
             if not self.__lootBoxCache:
                 self.__createLootBoxes(self.lobbyContext.getServerSettings().getLootBoxConfig())
-            self.__updateLootBoxes(result['tokens'])
+            self.__updateLootBoxes(result['tokens'], result.get('lootBoxes', {}).get('rerollHistory', {}))
         callback(result)
 
     def __requestTokensCache(self, callback=None):
@@ -164,11 +171,12 @@ class TokensRequester(AbstractSyncDataRequester, ITokensRequester):
 
         return lootBoxTokensList
 
-    def __updateLootBoxes(self, tokensCache):
+    def __updateLootBoxes(self, tokensCache, rerollHistory):
         for lootBoxTokenID, (_, count) in tokensCache.items():
             if lootBoxTokenID in self.__lootBoxCache:
                 item = self.__lootBoxCache[lootBoxTokenID]
-                self.__lootBoxTotalCount += count - item.getInventoryCount()
+                if item.isRerollable() and item.getID() in rerollHistory:
+                    count -= 1
                 item.updateCount(count)
 
         self.__clearLootBoxes(tokensCache)
@@ -177,7 +185,6 @@ class TokensRequester(AbstractSyncDataRequester, ITokensRequester):
         for lootBoxID in list(self.__lootBoxCache):
             if lootBoxID not in data:
                 item = self.__lootBoxCache[lootBoxID]
-                self.__lootBoxTotalCount -= item.getInventoryCount()
                 if not isRemove:
                     item.updateCount(invCount=0)
                 else:

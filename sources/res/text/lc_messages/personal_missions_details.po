@@ -5868,6 +5868,979 @@ msgstr "损伤"
 msgid "pm3_9_3_9_title_kills"
 msgstr "击毁"
 
+msgid "pm4_11_1_1"
+msgstr "先锋-1"
+
+msgid "pm4_11_1_10"
+msgstr "先锋-10"
+
+msgid "pm4_11_1_10_description_counterAttack"
+msgstr "对通过射击对自身坦克造成损伤的敌方坦克造成%(goal)s点损伤"
+
+msgid "pm4_11_1_10_short"
+msgstr "先锋-10"
+
+msgid "pm4_11_1_10_title_counterAttack"
+msgstr "损伤"
+
+msgid "pm4_11_1_11"
+msgstr "先锋-11"
+
+msgid "pm4_11_1_11_description_damage"
+msgstr "对距离%(distanceShortOrEqual)s米或更近的敌方坦克造成%(goal)s点损伤"
+
+msgid "pm4_11_1_11_description_kills"
+msgstr "通过撞击摧毁敌方坦克，且在撞击中幸存"
+
+msgid "pm4_11_1_11_short"
+msgstr "先锋-11"
+
+msgid "pm4_11_1_11_title_damage"
+msgstr "损伤"
+
+msgid "pm4_11_1_11_title_kills"
+msgstr "击毁"
+
+msgid "pm4_11_1_12"
+msgstr "先锋-12"
+
+msgid "pm4_11_1_12_description_kills"
+msgstr "击毁%(goal)s辆距离%(distanceShortOrEqual)s米或更近的敌方坦克"
+
+msgid "pm4_11_1_12_short"
+msgstr "先锋-12"
+
+msgid "pm4_11_1_12_title_kills"
+msgstr "击毁"
+
+msgid "pm4_11_1_13"
+msgstr "先锋-13"
+
+msgid "pm4_11_1_13_description_medal"
+msgstr "获得\"大口径\"勋章"
+
+msgid "pm4_11_1_13_short"
+msgstr "先锋-13"
+
+msgid "pm4_11_1_13_title_medal"
+msgstr "战斗英雄"
+
+msgid "pm4_11_1_14"
+msgstr "先锋-14"
+
+msgid "pm4_11_1_14_description_damageDealtReceivedAndBlocked"
+msgstr "造成、受到、抵挡总计%(goal)s点损伤"
+
+msgid "pm4_11_1_14_short"
+msgstr "先锋-14"
+
+msgid "pm4_11_1_14_title_damageDealtReceivedAndBlocked"
+msgstr "复杂条件"
+
+msgid "pm4_11_1_15"
+msgstr "先锋-15"
+
+msgid "pm4_11_1_15_description_kills"
+msgstr "击毁自身坦克观察范围内的%(goal)s辆敌方坦克"
+
+msgid "pm4_11_1_15_short"
+msgstr "先锋-15"
+
+msgid "pm4_11_1_15_title_kills"
+msgstr "击毁"
+
+msgid "pm4_11_1_16"
+msgstr "先锋-16"
+
+msgid "pm4_11_1_16_description_medal"
+msgstr "获得\"菲尼克斯\"勋章"
+
+msgid "pm4_11_1_16_description_topByDamage"
+msgstr "造成的损伤排名本队第1"
+
+msgid "pm4_11_1_16_short"
+msgstr "先锋-16"
+
+msgid "pm4_11_1_16_title_medal"
+msgstr "战斗英雄"
+
+msgid "pm4_11_1_16_title_topByDamage"
+msgstr "排名靠前"
+
+msgid "pm4_11_1_17"
+msgstr "先锋-17"
+
+msgid "pm4_11_1_17_description_damageandBlock"
+msgstr "造成损伤和抵挡损伤的总和不低于自身坦克生命值的%(vehicleHealthFactor)s倍"
+
+msgid "pm4_11_1_17_short"
+msgstr "先锋-17"
+
+msgid "pm4_11_1_17_title_damageandBlock"
+msgstr "造成和抵挡损伤"
+
+msgid "pm4_11_1_18"
+msgstr "先锋-18"
+
+msgid "pm4_11_1_18_description_damage"
+msgstr "对无法移动的敌方坦克造成%(goal)s点损伤"
+
+msgid "pm4_11_1_18_description_damageAlt"
+msgstr "对敌方坦克造成%(goal)s点损伤"
+
+msgid "pm4_11_1_18_short"
+msgstr "先锋-18"
+
+msgid "pm4_11_1_18_title_damage"
+msgstr "损伤"
+
+msgid "pm4_11_1_18_title_damageAlt"
+msgstr "损伤"
+
+msgid "pm4_11_1_19"
+msgstr "先锋-19"
+
+msgid "pm4_11_1_19_description_damage"
+msgstr "通过射击，对距离%(distanceShortOrEqual)s米或更近的同等级或更高等级的敌方坦克造成%(goal)s点损伤"
+
+msgid "pm4_11_1_19_description_kills"
+msgstr "击毁%(goal)s辆距离%(distanceShortOrEqual)s米或更近的同等级或更高等级的敌方坦克"
+
+msgid "pm4_11_1_19_short"
+msgstr "先锋-19"
+
+msgid "pm4_11_1_19_title_damage"
+msgstr "损伤"
+
+msgid "pm4_11_1_19_title_kills"
+msgstr "击毁"
+
+msgid "pm4_11_1_1_description_damage"
+msgstr "对敌方重型坦克造成%(goal)s点损伤"
+
+msgid "pm4_11_1_1_description_hits"
+msgstr "通过射击对敌方重型坦克造成%(goal)s次损伤"
+
+msgid "pm4_11_1_1_short"
+msgstr "先锋-1"
+
+msgid "pm4_11_1_1_title_damage"
+msgstr "损伤"
+
+msgid "pm4_11_1_1_title_hits"
+msgstr "损伤"
+
+msgid "pm4_11_1_2"
+msgstr "先锋-2"
+
+msgid "pm4_11_1_20"
+msgstr "先锋-20"
+
+msgid "pm4_11_1_20_description_killsDiversity"
+msgstr "击毁%(goal)s辆%(uniqueGoal)s种不同类型的敌方坦克"
+
+msgid "pm4_11_1_20_short"
+msgstr "先锋-20"
+
+msgid "pm4_11_1_20_title_killsDiversity"
+msgstr "击毁"
+
+msgid "pm4_11_1_21"
+msgstr "先锋-21"
+
+msgid "pm4_11_1_21_description_damageDealtReceivedAndBlocked"
+msgstr "造成、受到、抵挡总计%(goal)s点损伤"
+
+msgid "pm4_11_1_21_description_totalDamagePercent"
+msgstr "造成的损伤占己方团队造成损伤总量的25%%"
+
+msgid "pm4_11_1_21_short"
+msgstr "先锋-21"
+
+msgid "pm4_11_1_21_title_damageDealtReceivedAndBlocked"
+msgstr "复杂条件"
+
+msgid "pm4_11_1_21_title_totalDamagePercent"
+msgstr "损伤"
+
+msgid "pm4_11_1_2_description_killsDiversity"
+msgstr "击毁%(goal)s辆%(uniqueGoal)s种不同类型的敌方坦克"
+
+msgid "pm4_11_1_2_short"
+msgstr "先锋-2"
+
+msgid "pm4_11_1_2_title_killsDiversity"
+msgstr "击毁"
+
+msgid "pm4_11_1_3"
+msgstr "先锋-3"
+
+msgid "pm4_11_1_3_description_topByDamage"
+msgstr "造成的损伤排名本队第1"
+
+msgid "pm4_11_1_3_short"
+msgstr "先锋-3"
+
+msgid "pm4_11_1_3_title_topByDamage"
+msgstr "排名靠前"
+
+msgid "pm4_11_1_4"
+msgstr "先锋-4"
+
+msgid "pm4_11_1_4_description_blockedDamage"
+msgstr "自身坦克静止不动时，抵挡%(goal)s点损伤"
+
+msgid "pm4_11_1_4_description_damage"
+msgstr "对敌方坦克造成%(goal)s点损伤"
+
+msgid "pm4_11_1_4_short"
+msgstr "先锋-4"
+
+msgid "pm4_11_1_4_title_blockedDamage"
+msgstr "抵挡"
+
+msgid "pm4_11_1_4_title_damage"
+msgstr "损伤"
+
+msgid "pm4_11_1_5"
+msgstr "先锋-5"
+
+msgid "pm4_11_1_5_description_damage"
+msgstr "对自身坦克观察范围内的敌方坦克造成%(goal)s点损伤"
+
+msgid "pm4_11_1_5_short"
+msgstr "先锋-5"
+
+msgid "pm4_11_1_5_title_damage"
+msgstr "损伤"
+
+msgid "pm4_11_1_6"
+msgstr "先锋-6"
+
+msgid "pm4_11_1_6_description_damageandBlock"
+msgstr "造成损伤和抵挡损伤的总和不低于自身坦克生命值的%(vehicleHealthFactor)s倍"
+
+msgid "pm4_11_1_6_short"
+msgstr "先锋-6"
+
+msgid "pm4_11_1_6_title_damageandBlock"
+msgstr "造成和抵挡损伤"
+
+msgid "pm4_11_1_7"
+msgstr "先锋-7"
+
+msgid "pm4_11_1_7_description_damage"
+msgstr "对距离%(distanceShortOrEqual)s米或更近的敌方坦克造成%(goal)s点损伤"
+
+msgid "pm4_11_1_7_description_damageAlt"
+msgstr "对距离%(distanceGreatOrEqual)s米或更远的敌方坦克造成%(goal)s点损伤"
+
+msgid "pm4_11_1_7_short"
+msgstr "先锋-7"
+
+msgid "pm4_11_1_7_title_damage"
+msgstr "损伤"
+
+msgid "pm4_11_1_7_title_damageAlt"
+msgstr "损伤"
+
+msgid "pm4_11_1_8"
+msgstr "先锋-8"
+
+msgid "pm4_11_1_8_description_damage"
+msgstr "对敌方重型坦克造成%(goal)s点损伤"
+
+msgid "pm4_11_1_8_description_topByDamage"
+msgstr "造成的损伤排名本队第1"
+
+msgid "pm4_11_1_8_short"
+msgstr "先锋-8"
+
+msgid "pm4_11_1_8_title_damage"
+msgstr "损伤"
+
+msgid "pm4_11_1_8_title_topByDamage"
+msgstr "排名靠前"
+
+msgid "pm4_11_1_9"
+msgstr "先锋-9"
+
+msgid "pm4_11_1_9_description_damage"
+msgstr "对无法移动的敌方坦克造成%(goal)s点损伤"
+
+msgid "pm4_11_1_9_description_damageAlt"
+msgstr "对敌方坦克造成%(goal)s点损伤"
+
+msgid "pm4_11_1_9_short"
+msgstr "先锋-9"
+
+msgid "pm4_11_1_9_title_damage"
+msgstr "损伤"
+
+msgid "pm4_11_1_9_title_damageAlt"
+msgstr "损伤"
+
+msgid "pm4_11_2_1"
+msgstr "伏击-1"
+
+msgid "pm4_11_2_10"
+msgstr "伏击-10"
+
+msgid "pm4_11_2_10_description_damage"
+msgstr "对敌方坦克造成%(goal)s点损伤"
+
+msgid "pm4_11_2_10_description_topByExp"
+msgstr "所获经验排名本队第1"
+
+msgid "pm4_11_2_10_short"
+msgstr "伏击-10"
+
+msgid "pm4_11_2_10_title_damage"
+msgstr "损伤"
+
+msgid "pm4_11_2_10_title_topByExp"
+msgstr "排名靠前"
+
+msgid "pm4_11_2_11"
+msgstr "伏击-11"
+
+msgid "pm4_11_2_11_description_damage"
+msgstr "通过射击，对移动中的敌方坦克造成%(goal)s点损伤"
+
+msgid "pm4_11_2_11_short"
+msgstr "伏击-11"
+
+msgid "pm4_11_2_11_title_damage"
+msgstr "损伤"
+
+msgid "pm4_11_2_12"
+msgstr "伏击-12"
+
+msgid "pm4_11_2_12_description_damage"
+msgstr "对敌方坦克造成%(goal)s点损伤"
+
+msgid "pm4_11_2_12_description_kills"
+msgstr "击毁%(goal)s辆敌方坦克"
+
+msgid "pm4_11_2_12_short"
+msgstr "伏击-12"
+
+msgid "pm4_11_2_12_title_damage"
+msgstr "损伤"
+
+msgid "pm4_11_2_12_title_kills"
+msgstr "击毁"
+
+msgid "pm4_11_2_13"
+msgstr "伏击-13"
+
+msgid "pm4_11_2_13_description_damage"
+msgstr "对敌方坦克造成%(goal)s点损伤"
+
+msgid "pm4_11_2_13_description_totalDamagePercent"
+msgstr "造成的损伤占己方团队造成损伤总量的25%%"
+
+msgid "pm4_11_2_13_short"
+msgstr "伏击-13"
+
+msgid "pm4_11_2_13_title_damage"
+msgstr "损伤"
+
+msgid "pm4_11_2_13_title_totalDamagePercent"
+msgstr "损伤"
+
+msgid "pm4_11_2_14"
+msgstr "伏击-14"
+
+msgid "pm4_11_2_14_description_medal"
+msgstr "获得\"大口径\"勋章"
+
+msgid "pm4_11_2_14_short"
+msgstr "伏击-14"
+
+msgid "pm4_11_2_14_title_medal"
+msgstr "战斗英雄"
+
+msgid "pm4_11_2_15"
+msgstr "伏击-15"
+
+msgid "pm4_11_2_15_description_damage"
+msgstr "对敌方坦克造成%(vehicleHealthFactor)s倍于自身坦克生命值的损伤"
+
+msgid "pm4_11_2_15_short"
+msgstr "伏击-15"
+
+msgid "pm4_11_2_15_title_damage"
+msgstr "损伤"
+
+msgid "pm4_11_2_16"
+msgstr "伏击-16"
+
+msgid "pm4_11_2_16_description_killWithCausingDamage"
+msgstr "击毁%(goal)s辆敌方坦克，且对其中每一辆造成至少%(damageDealt)s点损伤"
+
+msgid "pm4_11_2_16_short"
+msgstr "伏击-16"
+
+msgid "pm4_11_2_16_title_killWithCausingDamage"
+msgstr "击毁"
+
+msgid "pm4_11_2_17"
+msgstr "伏击-17"
+
+msgid "pm4_11_2_17_description_damage"
+msgstr "对敌方坦克造成%(goal)s点损伤"
+
+msgid "pm4_11_2_17_description_kills"
+msgstr "击毁%(goal)s辆敌方坦克"
+
+msgid "pm4_11_2_17_short"
+msgstr "伏击-17"
+
+msgid "pm4_11_2_17_title_damage"
+msgstr "损伤"
+
+msgid "pm4_11_2_17_title_kills"
+msgstr "击毁"
+
+msgid "pm4_11_2_18"
+msgstr "伏击-18"
+
+msgid "pm4_11_2_18_description_damage"
+msgstr "对距离%(distanceGreatOrEqual)s米或更远的敌方坦克造成%(goal)s点损伤"
+
+msgid "pm4_11_2_18_description_topByExp"
+msgstr "所获经验排名本队第1"
+
+msgid "pm4_11_2_18_short"
+msgstr "伏击-18"
+
+msgid "pm4_11_2_18_title_damage"
+msgstr "损伤"
+
+msgid "pm4_11_2_18_title_topByExp"
+msgstr "排名靠前"
+
+msgid "pm4_11_2_19"
+msgstr "伏击-19"
+
+msgid "pm4_11_2_19_description_kills"
+msgstr "在自身坦克受到任何损伤前，击毁%(goal)s辆敌方坦克"
+
+msgid "pm4_11_2_19_short"
+msgstr "伏击-19"
+
+msgid "pm4_11_2_19_title_kills"
+msgstr "击毁"
+
+msgid "pm4_11_2_1_description_damage"
+msgstr "对敌方坦克造成%(goal)s点损伤"
+
+msgid "pm4_11_2_1_description_piercings"
+msgstr "击穿敌方坦克装甲%(goal)s次"
+
+msgid "pm4_11_2_1_short"
+msgstr "伏击-1"
+
+msgid "pm4_11_2_1_title_damage"
+msgstr "损伤"
+
+msgid "pm4_11_2_1_title_piercings"
+msgstr "击穿"
+
+msgid "pm4_11_2_2"
+msgstr "伏击-2"
+
+msgid "pm4_11_2_20"
+msgstr "伏击-20"
+
+msgid "pm4_11_2_20_description_totalDamagePercent"
+msgstr "造成的损伤占己方团队造成损伤总量的30%%"
+
+msgid "pm4_11_2_20_description_win"
+msgstr "击毁所有敌方坦克/占领或防御基地"
+
+msgid "pm4_11_2_20_short"
+msgstr "伏击-20"
+
+msgid "pm4_11_2_20_title_totalDamagePercent"
+msgstr "损伤"
+
+msgid "pm4_11_2_20_title_win"
+msgstr "获得1场胜利"
+
+msgid "pm4_11_2_21"
+msgstr "伏击-21"
+
+msgid "pm4_11_2_21_description_damage"
+msgstr "对敌方坦克造成%(goal)s点损伤"
+
+msgid "pm4_11_2_21_short"
+msgstr "伏击-21"
+
+msgid "pm4_11_2_21_title_damage"
+msgstr "损伤"
+
+msgid "pm4_11_2_2_description_damage"
+msgstr "在战斗的前%(timeLimit)s分钟内，对敌方坦克造成%(goal)s点损伤"
+
+msgid "pm4_11_2_2_description_killsDiversity"
+msgstr "击毁%(goal)s辆%(uniqueGoal)s种不同类型的敌方坦克"
+
+msgid "pm4_11_2_2_short"
+msgstr "伏击-2"
+
+msgid "pm4_11_2_2_title_damage"
+msgstr "损伤"
+
+msgid "pm4_11_2_2_title_killsDiversity"
+msgstr "击毁"
+
+msgid "pm4_11_2_3"
+msgstr "伏击-3"
+
+msgid "pm4_11_2_3_description_topByExp"
+msgstr "所获经验排名本队第1"
+
+msgid "pm4_11_2_3_short"
+msgstr "伏击-3"
+
+msgid "pm4_11_2_3_title_topByExp"
+msgstr "排名靠前"
+
+msgid "pm4_11_2_4"
+msgstr "伏击-4"
+
+msgid "pm4_11_2_4_description_damage"
+msgstr "对敌方中型坦克造成%(goal)s点损伤"
+
+msgid "pm4_11_2_4_description_kills"
+msgstr "击毁在自身坦克观察范围外的%(goal)s辆敌方坦克"
+
+msgid "pm4_11_2_4_short"
+msgstr "伏击-4"
+
+msgid "pm4_11_2_4_title_damage"
+msgstr "损伤"
+
+msgid "pm4_11_2_4_title_kills"
+msgstr "击毁"
+
+msgid "pm4_11_2_5"
+msgstr "伏击-5"
+
+msgid "pm4_11_2_5_description_damage"
+msgstr "对敌方坦克造成%(goal)s点损伤，且在造成损伤时保持不被点亮"
+
+msgid "pm4_11_2_5_short"
+msgstr "伏击-5"
+
+msgid "pm4_11_2_5_title_damage"
+msgstr "损伤"
+
+msgid "pm4_11_2_6"
+msgstr "伏击-6"
+
+msgid "pm4_11_2_6_description_damageAndAssist"
+msgstr "造成、协助造成总计%(goal)s点损伤"
+
+msgid "pm4_11_2_6_short"
+msgstr "伏击-6"
+
+msgid "pm4_11_2_6_title_damageAndAssist"
+msgstr "复杂条件"
+
+msgid "pm4_11_2_7"
+msgstr "伏击-7"
+
+msgid "pm4_11_2_7_description_medal"
+msgstr "获得\"狙击手\"勋章"
+
+msgid "pm4_11_2_7_short"
+msgstr "伏击-7"
+
+msgid "pm4_11_2_7_title_medal"
+msgstr "战斗英雄"
+
+msgid "pm4_11_2_8"
+msgstr "伏击-8"
+
+msgid "pm4_11_2_8_description_kills"
+msgstr "击毁%(goal)s辆距离%(distanceGreatOrEqual)s米或更远的敌方坦克"
+
+msgid "pm4_11_2_8_short"
+msgstr "伏击-8"
+
+msgid "pm4_11_2_8_title_kills"
+msgstr "击毁"
+
+msgid "pm4_11_2_9"
+msgstr "伏击-9"
+
+msgid "pm4_11_2_9_description_damage"
+msgstr "对无法移动的敌方坦克造成%(goal)s点损伤"
+
+msgid "pm4_11_2_9_description_damageAlt"
+msgstr "对敌方坦克造成%(goal)s点损伤"
+
+msgid "pm4_11_2_9_short"
+msgstr "伏击-9"
+
+msgid "pm4_11_2_9_title_damage"
+msgstr "损伤"
+
+msgid "pm4_11_2_9_title_damageAlt"
+msgstr "损伤"
+
+msgid "pm4_11_3_1"
+msgstr "协助-1"
+
+msgid "pm4_11_3_10"
+msgstr "协助-10"
+
+msgid "pm4_11_3_10_description_assist"
+msgstr "通过点亮或使其无法移动，协助盟友对敌方坦克造成%(goal)s点损伤，且在造成损伤时保持不被点亮"
+
+msgid "pm4_11_3_10_description_stunTime"
+msgstr "对敌方中型坦克和自行反坦克炮造成总计%(goal)s秒弹震。潜在的弹震持续时间也计入"
+
+msgid "pm4_11_3_10_short"
+msgstr "协助-10"
+
+msgid "pm4_11_3_10_title_assist"
+msgstr "协助"
+
+msgid "pm4_11_3_10_title_stunTime"
+msgstr "弹震"
+
+msgid "pm4_11_3_11"
+msgstr "协助-11"
+
+msgid "pm4_11_3_11_description_assist"
+msgstr "通过点亮、使其无法移动或造成弹震，协助盟友对敌方坦克造成%(goal)s点损伤"
+
+msgid "pm4_11_3_11_short"
+msgstr "协助-11"
+
+msgid "pm4_11_3_11_title_assist"
+msgstr "协助"
+
+msgid "pm4_11_3_12"
+msgstr "协助-12"
+
+msgid "pm4_11_3_12_description_assistedKills"
+msgstr "通过点亮、使其无法移动或造成弹震，协助盟友击毁%(goal)s辆敌方坦克"
+
+msgid "pm4_11_3_12_short"
+msgstr "协助-12"
+
+msgid "pm4_11_3_12_title_assistedKills"
+msgstr "协助"
+
+msgid "pm4_11_3_13"
+msgstr "协助-13"
+
+msgid "pm4_11_3_13_description_medal"
+msgstr "获得一级或更高等级的战斗嘉奖"
+
+msgid "pm4_11_3_13_short"
+msgstr "协助-13"
+
+msgid "pm4_11_3_13_title_medal"
+msgstr "战斗嘉奖"
+
+msgid "pm4_11_3_14"
+msgstr "协助-14"
+
+msgid "pm4_11_3_14_description_alive"
+msgstr "在战斗中幸存"
+
+msgid "pm4_11_3_14_description_topByExp"
+msgstr "所获经验排名双方团队第1"
+
+msgid "pm4_11_3_14_short"
+msgstr "协助-14"
+
+msgid "pm4_11_3_14_title_alive"
+msgstr "幸存"
+
+msgid "pm4_11_3_14_title_topByExp"
+msgstr "排名靠前"
+
+msgid "pm4_11_3_15"
+msgstr "协助-15"
+
+msgid "pm4_11_3_15_description_assistedKills"
+msgstr "通过点亮、使其无法移动或造成弹震，协助盟友击毁%(goal)s辆敌方坦克"
+
+msgid "pm4_11_3_15_short"
+msgstr "协助-15"
+
+msgid "pm4_11_3_15_title_assistedKills"
+msgstr "协助"
+
+msgid "pm4_11_3_16"
+msgstr "协助-16"
+
+msgid "pm4_11_3_16_description_damageCausedAtMovementSpeed"
+msgstr ""
+"在以至少%(attackerMovingSpeedGreaterOrEqual)s千米/小时的速度移动时，对敌方坦克造成%(goal)s点损伤"
+
+msgid "pm4_11_3_16_description_kills"
+msgstr "通过射击，击毁%(goal)s辆移动中的敌方坦克"
+
+msgid "pm4_11_3_16_short"
+msgstr "协助-16"
+
+msgid "pm4_11_3_16_title_damageCausedAtMovementSpeed"
+msgstr "损伤"
+
+msgid "pm4_11_3_16_title_kills"
+msgstr "击毁"
+
+msgid "pm4_11_3_17"
+msgstr "协助-17"
+
+msgid "pm4_11_3_17_description_alive"
+msgstr "在战斗中幸存"
+
+msgid "pm4_11_3_17_description_assist"
+msgstr "通过造成弹震或使其无法移动，协助盟友对敌方坦克造成%(goal)s点损伤，且在战斗中幸存"
+
+msgid "pm4_11_3_17_description_damageAndAssist"
+msgstr "造成总计至少%(goal)s点的损伤和协助损伤，且在战斗中幸存"
+
+msgid "pm4_11_3_17_short"
+msgstr "协助-17"
+
+msgid "pm4_11_3_17_title_alive"
+msgstr "幸存"
+
+msgid "pm4_11_3_17_title_assist"
+msgstr "协助"
+
+msgid "pm4_11_3_17_title_damageAndAssist"
+msgstr "复杂条件"
+
+msgid "pm4_11_3_18"
+msgstr "协助-18"
+
+msgid "pm4_11_3_18_description_kills"
+msgstr "击毁%(goal)s辆距离%(distanceShortOrEqual)s米或更近的敌方坦克"
+
+msgid "pm4_11_3_18_description_killsAlt"
+msgstr "击毁%(goal)s辆距离%(distanceGreatOrEqual)s米或更远的敌方坦克"
+
+msgid "pm4_11_3_18_short"
+msgstr "协助-18"
+
+msgid "pm4_11_3_18_title_kills"
+msgstr "击毁"
+
+msgid "pm4_11_3_18_title_killsAlt"
+msgstr "击毁"
+
+msgid "pm4_11_3_19"
+msgstr "协助-19"
+
+msgid "pm4_11_3_19_description_medal"
+msgstr "获得特级战斗嘉奖"
+
+msgid "pm4_11_3_19_short"
+msgstr "协助-19"
+
+msgid "pm4_11_3_19_title_medal"
+msgstr "战斗嘉奖"
+
+msgid "pm4_11_3_1_description_alive"
+msgstr "在战斗中幸存"
+
+msgid "pm4_11_3_1_description_kills"
+msgstr "击毁1辆敌方自行火炮，且在战斗中幸存"
+
+msgid "pm4_11_3_1_description_stunNumber"
+msgstr "对敌方坦克造成%(goal)s次弹震，且在战斗中幸存"
+
+msgid "pm4_11_3_1_short"
+msgstr "协助-1"
+
+msgid "pm4_11_3_1_title_alive"
+msgstr "幸存"
+
+msgid "pm4_11_3_1_title_kills"
+msgstr "击毁"
+
+msgid "pm4_11_3_1_title_stunNumber"
+msgstr "弹震"
+
+msgid "pm4_11_3_2"
+msgstr "协助-2"
+
+msgid "pm4_11_3_20"
+msgstr "协助-20"
+
+msgid "pm4_11_3_20_description_assist"
+msgstr "通过点亮，协助盟友对敌方坦克造成%(goal)s点损伤，且在造成损伤时保持不被点亮。并且取得战斗胜利"
+
+msgid "pm4_11_3_20_description_stunNumber"
+msgstr "对敌方重型坦克造成%(goal)s次弹震，且取得战斗胜利"
+
+msgid "pm4_11_3_20_description_win"
+msgstr "击毁所有敌方坦克/占领或防御基地"
+
+msgid "pm4_11_3_20_short"
+msgstr "协助-20"
+
+msgid "pm4_11_3_20_title_assist"
+msgstr "协助"
+
+msgid "pm4_11_3_20_title_stunNumber"
+msgstr "弹震"
+
+msgid "pm4_11_3_20_title_win"
+msgstr "获得1场胜利"
+
+msgid "pm4_11_3_21"
+msgstr "协助-21"
+
+msgid "pm4_11_3_21_description_alive"
+msgstr "在战斗中幸存"
+
+msgid "pm4_11_3_21_description_damageAndAssist"
+msgstr "造成总计至少%(goal)s点的损伤和协助损伤"
+
+msgid "pm4_11_3_21_short"
+msgstr "协助-21"
+
+msgid "pm4_11_3_21_title_alive"
+msgstr "幸存"
+
+msgid "pm4_11_3_21_title_damageAndAssist"
+msgstr "复杂条件"
+
+msgid "pm4_11_3_2_description_kills"
+msgstr "击毁1辆敌方轻型坦克"
+
+msgid "pm4_11_3_2_description_stunTime"
+msgstr "对敌方坦克造成总计%(goal)s秒弹震。潜在的弹震持续时间也计入"
+
+msgid "pm4_11_3_2_short"
+msgstr "协助-2"
+
+msgid "pm4_11_3_2_title_kills"
+msgstr "击毁"
+
+msgid "pm4_11_3_2_title_stunTime"
+msgstr "弹震"
+
+msgid "pm4_11_3_3"
+msgstr "协助-3"
+
+msgid "pm4_11_3_3_description_assistedHits"
+msgstr "通过点亮、使其无法移动或造成弹震，协助盟友对%(goal)s辆敌方坦克造成损伤"
+
+msgid "pm4_11_3_3_short"
+msgstr "协助-3"
+
+msgid "pm4_11_3_3_title_assistedHits"
+msgstr "协助"
+
+msgid "pm4_11_3_4"
+msgstr "协助-4"
+
+msgid "pm4_11_3_4_description_alive"
+msgstr "在战斗中幸存"
+
+msgid "pm4_11_3_4_description_spotNumber"
+msgstr "点亮%(goal)s辆敌方坦克，且在战斗中幸存"
+
+msgid "pm4_11_3_4_description_stunNumber"
+msgstr "以单发炮弹，对%(stunSeveralTargets)s辆敌方坦克造成弹震，完成%(goal)s次，且在战斗中幸存"
+
+msgid "pm4_11_3_4_short"
+msgstr "协助-4"
+
+msgid "pm4_11_3_4_title_alive"
+msgstr "幸存"
+
+msgid "pm4_11_3_4_title_spotNumber"
+msgstr "点亮"
+
+msgid "pm4_11_3_4_title_stunNumber"
+msgstr "弹震"
+
+msgid "pm4_11_3_5"
+msgstr "协助-5"
+
+msgid "pm4_11_3_5_description_medal"
+msgstr "获得二级或更高等级的战斗嘉奖"
+
+msgid "pm4_11_3_5_short"
+msgstr "协助-5"
+
+msgid "pm4_11_3_5_title_medal"
+msgstr "战斗嘉奖"
+
+msgid "pm4_11_3_6"
+msgstr "协助-6"
+
+msgid "pm4_11_3_6_description_damageAndAssist"
+msgstr "造成总计至少%(goal)s点的损伤和协助损伤"
+
+msgid "pm4_11_3_6_short"
+msgstr "协助-6"
+
+msgid "pm4_11_3_6_title_damageAndAssist"
+msgstr "复杂条件"
+
+msgid "pm4_11_3_7"
+msgstr "协助-7"
+
+msgid "pm4_11_3_7_description_assist"
+msgstr "通过点亮、造成弹震或使其无法移动，协助盟友对敌方坦克造成%(goal)s点损伤"
+
+msgid "pm4_11_3_7_description_kills"
+msgstr "击毁1辆敌方自行火炮"
+
+msgid "pm4_11_3_7_short"
+msgstr "协助-7"
+
+msgid "pm4_11_3_7_title_assist"
+msgstr "协助"
+
+msgid "pm4_11_3_7_title_kills"
+msgstr "击毁"
+
+msgid "pm4_11_3_8"
+msgstr "协助-8"
+
+msgid "pm4_11_3_8_description_kills"
+msgstr "击毁%(goal)s辆敌方坦克"
+
+msgid "pm4_11_3_8_short"
+msgstr "协助-8"
+
+msgid "pm4_11_3_8_title_kills"
+msgstr "击毁"
+
+msgid "pm4_11_3_9"
+msgstr "协助-9"
+
+msgid "pm4_11_3_9_description_kills"
+msgstr "击毁%(goal)s辆距离%(distanceShortOrEqual)s米或更近的敌方坦克"
+
+msgid "pm4_11_3_9_description_stunNumber"
+msgstr "对敌方中型坦克或自行反坦克炮造成%(goal)s次弹震"
+
+msgid "pm4_11_3_9_short"
+msgstr "协助-9"
+
+msgid "pm4_11_3_9_title_kills"
+msgstr "击毁"
+
+msgid "pm4_11_3_9_title_stunNumber"
+msgstr "弹震"
+
 msgid "quest/advice/biathlon/description"
 msgstr "此类任务中的某些条件有尝试次数的限制。"
 
@@ -10408,6 +11381,9 @@ msgstr "第二战线"
 msgid "season_3"
 msgstr "第三区"
 
+msgid "season_4"
+msgstr "第三区"
+
 msgid "tile_1"
 msgstr "IV号突击炮"
 
@@ -10416,6 +11392,12 @@ msgstr "黑岩"
 
 msgid "tile_10_descr"
 msgstr "适用所有类型坦克的一组任务，完成后可获得M系重型坦克黑岩。"
+
+msgid "tile_11"
+msgstr "幽壑"
+
+msgid "tile_11_descr"
+msgstr "适用所有类型坦克的一组任务，完成后可获得D系中型坦克幽壑 VM 68。"
 
 msgid "tile_1_descr"
 msgstr "适用所有类型坦克的一组任务，完成后可获得D系自行反坦克炮IV号突击炮。"

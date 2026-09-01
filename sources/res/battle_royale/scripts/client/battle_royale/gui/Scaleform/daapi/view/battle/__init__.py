@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from battle_royale.gui.Scaleform.daapi.view.battle.page import BattleRoyalePage
 from battle_royale.gui.Scaleform.daapi.view.battle.player_stats_in_battle import BattleRoyalePlayerStats
 from battle_royale.gui.Scaleform.daapi.view.battle.radar import RadarButton
@@ -42,7 +43,7 @@ def getViewSettings(battleRoyaleController=None):
     from battle_royale.gui.Scaleform.daapi.view.battle.frag_panel import FragPanel
     from battle_royale.gui.Scaleform.daapi.view.battle.full_stats import FullStatsComponent
     from battle_royale.gui.Scaleform.daapi.view.battle.select_respawn import SelectRespawnComponent
-    import battle_royale.gui.Scaleform.daapi.view.battle.observer_players_panel as observer_players_panel
+    from battle_royale.gui.Scaleform.daapi.view.battle import observer_players_panel
     from battle_royale.gui.Scaleform.daapi.view.battle.abilities.corroding_shot_indicator import CorrodingShotIndicator
     from battle_royale.gui.Scaleform.daapi.view.battle.postmortem_panel import BattleRoyalePostmortemPanel
     from battle_royale.gui.Scaleform.daapi.view.battle.respawn_message_panel import RespawnMessagePanel

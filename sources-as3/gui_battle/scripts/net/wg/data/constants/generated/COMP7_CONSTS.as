@@ -41,8 +41,6 @@ package net.wg.data.constants.generated
       
       public static const ROLE_SKILL_POINT_RECON:String = "pointRecon";
       
-      public static const MINIMAP_ROLE_SKILL_POINT_RECON:String = "Comp7PointReconMinimapEntryUI";
-      
       public static const COMP7_RANK_SUB_TASK_UI:String = "Comp7RankSubTaskUI";
       
       public static const COMP7_QUALIFICATION_SUB_TASK_UI:String = "Comp7QualificationSubTaskUI";
@@ -50,6 +48,10 @@ package net.wg.data.constants.generated
       public static const STATUS_MARKER_CONFIRMED_STATE:String = "confirmed";
       
       public static const COMP7_SHOP_ID:String = "comp7Shop";
+      
+      public static const RECON_FLIGHT:String = "reconFlight";
+      
+      public static const ILLUMINATION_FLARE:String = "illuminationFlare";
        
       
       public function COMP7_CONSTS()

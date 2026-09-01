@@ -21,6 +21,10 @@
 				<material>
 					<identifier>smoke</identifier>
 					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
+					<property>
+						g_enableEnvMultiplier
+						<Bool>true</Bool>
+					</property>
 					<collisionFlags>255</collisionFlags>
 					<materialKind>0</materialKind>
 					<property>
@@ -57,7 +61,7 @@
 					</property>
 					<property>
 						lightMultipliers
-						<Vector4>0.700000 0.120000 1.000000 0.000000</Vector4>
+						<Vector4>4.000000 0.120000 1.000000 0.000000</Vector4>
 					</property>
 					<property>
 						alphaFadeAmountFresnel

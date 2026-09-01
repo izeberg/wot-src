@@ -317,18 +317,15 @@ class BaseRallyRoomView(BaseRallyRoomViewMeta):
         else:
             if item.selectedVehicle > 0:
                 return RosterSlotCtx(item.selectedVehicle)
-            else:
-                settings = self.prbEntity.getRosterSettings()
-                levels = (settings.getMinLevel(), settings.getMaxLevel())
-                if len(item.vLevelRange) == 2:
-                    i0 = int(item.vLevelRange[0])
-                    i1 = int(item.vLevelRange[1])
-                    levels = (i0, i1) if i0 != i1 else i0
-                elif len(item.vLevelRange) == 1:
-                    levels = int(item.vLevelRange[0])
-                return RosterSlotCtx(nationNames=item.nationIDRange, levels=levels, vehClassNames=item.vTypeRange)
-
-            return
+            settings = self.prbEntity.getRosterSettings()
+            levels = (settings.getMinLevel(), settings.getMaxLevel())
+            if len(item.vLevelRange) == 2:
+                i0 = int(item.vLevelRange[0])
+                i1 = int(item.vLevelRange[1])
+                levels = (i0, i1) if i0 != i1 else i0
+            elif len(item.vLevelRange) == 1:
+                levels = int(item.vLevelRange[0])
+            return RosterSlotCtx(nationNames=item.nationIDRange, levels=levels, vehClassNames=item.vTypeRange)
 
     def __setMemberStatus(self, pInfo):
         if pInfo.isInSlot:

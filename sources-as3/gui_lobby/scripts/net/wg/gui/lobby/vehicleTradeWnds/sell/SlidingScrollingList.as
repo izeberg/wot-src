@@ -140,7 +140,7 @@ package net.wg.gui.lobby.vehicleTradeWnds.sell
             this.lowerContainer.addChild(container);
             invalidateData();
          }
-         if(!_usingExternalRenderers && isInvalid(InvalidationType.RENDERERS,InvalidationType.SIZE))
+         if(!_usingExternalRenderers && isInvalidTypes(InvalidationType.RENDERERS,InvalidationType.SIZE))
          {
             drawRenderers(_totalRenderers);
          }
