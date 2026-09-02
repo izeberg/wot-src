@@ -24,7 +24,11 @@ def passCensor(text):
         return ''
     else:
         if not isinstance(text, types.UnicodeType):
-            text = unicode(text, 'utf-8')
+            try:
+                text = text.decode('utf-8', 'replace')
+            except UnicodeDecodeError:
+                text = ''
+
         if g_settings.userPrefs.enableOlFilter:
             return g_olDictionary.searchAndReplace(text)
         return text
