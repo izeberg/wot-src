@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/japan/J51_Naginata/crash/lod1/Turret_01</nodefullVisual>
+	<parent>vehicles/japan/J51_Naginata/crash/lod2/Turret_01</parent>
+	<tank>true</tank>
+	<extent>
+		64.0
+		<!--BW_String-->
+	</extent>
+	<visibilityBox>
+		<min>-1.632861 -0.360607 -2.294634</min>
+		<max>1.370430 2.845018 1.378366</max>
+	</visibilityBox>
+</root>

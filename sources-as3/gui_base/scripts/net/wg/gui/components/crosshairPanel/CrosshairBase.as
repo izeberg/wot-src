@@ -1,5 +1,6 @@
 package net.wg.gui.components.crosshairPanel
 {
+   import flash.display.DisplayObject;
    import flash.display.MovieClip;
    import flash.display.Sprite;
    import flash.events.Event;
@@ -561,11 +562,11 @@ package net.wg.gui.components.crosshairPanel
          this._isReloadInProgress = _loc1_;
          if(this._currentTimerTextField)
          {
-            this.timerProgressTextField.visible = false;
-            this.timerCompleteTextField.visible = false;
+            this.setComponentVisibility(this.timerProgressTextField,false);
+            this.setComponentVisibility(this.timerCompleteTextField,false);
          }
          this._currentTimerTextField = !!this._isReloadInProgress ? this.timerProgressTextField : this.timerCompleteTextField;
-         this._currentTimerTextField.visible = true;
+         this.setComponentVisibility(this._currentTimerTextField,true);
          this.applyReloadingData();
          this.applyReloadingAlpha();
       }
@@ -587,20 +588,20 @@ package net.wg.gui.components.crosshairPanel
          {
             if(this._currentTimerTextField)
             {
-               this.timerCompleteTextField.visible = this.timerCompleteTextField == this._currentTimerTextField;
-               this.timerProgressTextField.visible = this.timerProgressTextField == this._currentTimerTextField;
+               this.setComponentVisibility(this.timerCompleteTextField,this.timerCompleteTextField == this._currentTimerTextField);
+               this.setComponentVisibility(this.timerProgressTextField,this.timerProgressTextField == this._currentTimerTextField);
             }
             else
             {
-               this.timerCompleteTextField.visible = true;
-               this.timerProgressTextField.visible = false;
+               this.setComponentVisibility(this.timerCompleteTextField,true);
+               this.setComponentVisibility(this.timerProgressTextField,false);
             }
             this._quickReloadingTimerVisible = true;
          }
          else
          {
-            this.timerCompleteTextField.visible = false;
-            this.timerProgressTextField.visible = false;
+            this.setComponentVisibility(this.timerCompleteTextField,false);
+            this.setComponentVisibility(this.timerProgressTextField,false);
             this._quickReloadingTimerVisible = false;
          }
          this.updateQuickReloadingTimer();
@@ -753,17 +754,17 @@ package net.wg.gui.components.crosshairPanel
          this.setTimerReloadingState();
          if(this.reloadingState == CrosshairConsts.RELOADING_END)
          {
-            this.reloadingAnimationMC.visible = true;
+            this.setComponentVisibility(this.reloadingAnimationMC,true);
             this.reloadingAnimationMC.play();
          }
          else if(this.reloadingState == CrosshairConsts.RELOADING_ENDED)
          {
-            this.reloadingAnimationMC.visible = true;
+            this.setComponentVisibility(this.reloadingAnimationMC,true);
             this.reloadingAnimationMC.gotoAndStop(1);
          }
          else
          {
-            this.reloadingAnimationMC.visible = false;
+            this.setComponentVisibility(this.reloadingAnimationMC,false);
          }
          if(this._coolantAbilityIndicator && (this.reloadingState == CrosshairConsts.RELOADING_PROGRESS && this._prevReloadingState == CrosshairConsts.RELOADING_ENDED || this.reloadingState == CrosshairConsts.RELOADING_IMPOSSIBLE_AMMO_ENDED))
          {
@@ -808,13 +809,13 @@ package net.wg.gui.components.crosshairPanel
       {
          if(this.netSeparator)
          {
-            this.netSeparator.visible = !this.isAutoloader && this._netSeparatorVisible;
+            this.setComponentVisibility(this.netSeparator,!this.isAutoloader && this._netSeparatorVisible);
          }
       }
       
       private function updateNetVisibility() : void
       {
-         this.netMC.visible = (this._visibleNetMask & CROSSHAIR_CONSTANTS.VISIBLE_NET) != 0;
+         this.setComponentVisibility(this.netMC,(this._visibleNetMask & CROSSHAIR_CONSTANTS.VISIBLE_NET) != 0);
       }
       
       private function setReloadingAlpha(param1:Number) : void
@@ -932,6 +933,11 @@ package net.wg.gui.components.crosshairPanel
       public function get isAutoloader() : Boolean
       {
          return this._clipType == CROSSHAIR_CASSETTE_TYPES.AUTOLOADER || this._clipType == CROSSHAIR_CASSETTE_TYPES.MULTIPLE_BARREL_AUTOLOADER;
+      }
+      
+      protected function setComponentVisibility(param1:DisplayObject, param2:Boolean) : void
+      {
+         param1.visible = param2;
       }
    }
 }

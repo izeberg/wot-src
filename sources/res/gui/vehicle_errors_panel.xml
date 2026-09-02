@@ -199,6 +199,14 @@
 			</value>
 		</message>
 		<message>
+			<name>FEPmedkitAllTankmenAreSafe</name>
+			<type>list</type>
+			<value>
+				<item>_(#ingame_gui:player_errors/equipment/FEPmedkit/allTankmenAreSafe)</item>
+				<item>yellow</item>
+			</value>
+		</message>
+		<message>
 			<name>crewAndDevicesAreOk</name>
 			<type>list</type>
 			<value>

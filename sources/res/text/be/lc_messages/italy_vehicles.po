@@ -221,6 +221,9 @@ msgstr "Gladiatore"
 msgid "Chassis_It36_Gasta"
 msgstr "Gasta"
 
+msgid "Chassis_It37_CAS_149"
+msgstr "CAS 149"
+
 msgid "Continental_AOI_1490_italy"
 msgstr "Continental AOI-1490-I"
 
@@ -856,6 +859,28 @@ msgstr "Gasta"
 msgid "It36_Gasta_short_special"
 msgstr "Выдатная гармата, прыстойная мабільнасць"
 
+msgid "It37_CAS_149"
+msgstr "CAS 149"
+
+msgid "It37_CAS_149_descr"
+msgstr ""
+"Проект противотанковой САУ, получивший название Cannone Anticarro Semovente 149, создавался с использованием наработок по тяжёлому танку Carro Armato P 43. Дальнейшее его развитие должно было получить новую ходовую часть с подвеской по типу Carro Celere Sahariano. Предполагалось вооружить CAS 149 пушкой калибра 149 мм — такой же, какая устанавливалась на Semovente Da 149/40. Разница заключалась в том, что САУ проектировалась как тяжёлая противотанковая система. За счёт более крупного шасси удалось разместить башню с ограниченным сектором горизонтальной наводки. САУ также получила массивный сошник. Вместе с тем боевая машина обладала неплохой подвижностью и мощным орудием, что позволило бы ей стать аналогом немецких «ваффентрагеров». Однако проект CAS 149 был закрыт на ранней стадии разработки одновременно с Carro Armato P 43 bis.\n"
+"\n"
+"Характеристики машины могут быть изменены без компенсации."
+
+msgid "It37_CAS_149_long_special"
+msgstr ""
+"Машина располагает мощным 149-мм орудием и системой дозарядки, которая "
+"позволяет играть с одним снарядом либо использовать сразу два снаряда "
+"для нанесения огромного урона противнику и последующего отступления "
+"на долгую перезарядку."
+
+msgid "It37_CAS_149_short"
+msgstr "CAS 149"
+
+msgid "It37_CAS_149_short_special"
+msgstr "Высокий разовый урон, система дозарядки на 2 снаряда"
+
 msgid "MB_822_Ka_500"
 msgstr "MB 822 Ka-500"
 
@@ -937,6 +962,9 @@ msgstr "R 19"
 msgid "R_F_1_C_A"
 msgstr "R.F. 1 C.A."
 
+msgid "R_F_1_C_A_It37"
+msgstr "R.F. 1 C.A."
+
 msgid "R_F_2_C_A"
 msgstr "R.F. 2 C.A."
 
@@ -996,6 +1024,9 @@ msgstr "SPA 343"
 
 msgid "SPA_343_4"
 msgstr "SPA 343/4"
+
+msgid "SPA_343_It37"
+msgstr "SPA 343"
 
 msgid "SPA_344"
 msgstr "SPA 344"
@@ -1113,6 +1144,9 @@ msgstr "Gladiatore"
 
 msgid "Turret_1_It36_Gasta"
 msgstr "Gasta"
+
+msgid "Turret_1_It37_CAS_149"
+msgstr "CAS 149"
 
 msgid "Turret_2_It03_M15_42"
 msgstr "M15/42 modificata"
@@ -1359,6 +1393,18 @@ msgstr "c.c. 130/45 Mk. 71"
 
 msgid "_130mm_HE_Mark_80"
 msgstr "a.e. 130/45 Mk. 80"
+
+msgid "_149mm_Cannone_da_149_40_It37"
+msgstr "149 mm Cannone Da 149/40"
+
+msgid "_149mm_GEF32_It37"
+msgstr "G.E.F. 32"
+
+msgid "_149mm_GEP39A_It37"
+msgstr "G.E.P. 39A"
+
+msgid "_149mm_GP35_It37"
+msgstr "G.P. 35"
 
 msgid "_20mm_c_p_20_138_B"
 msgstr "c.p. 20/138 B"

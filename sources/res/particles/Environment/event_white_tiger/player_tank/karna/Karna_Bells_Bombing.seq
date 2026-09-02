@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>11.000001</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>floor</name>
+		<type>model</type>
+		<resource>particles/Environment/event_white_tiger/player_tank/karna/Karna_Bells_Ring.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>sequence</name>
+			<type>sequence</type>
+			<frame>
+				<startTime>1.133333</startTime>
+				<duration>9.266667</duration>
+				<value>particles/Environment/event_white_tiger/player_tank/karna/Karna_Bells_Blast.seq</value>
+				<speed>1.000000</speed>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd2</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 0.015686 0.007843 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 1.500002</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 1.500002</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.333333</startTime>
+				<value>1.000000 0.015686 0.007843 0.500000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 1.500002</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>10.000001</startTime>
+				<value>1.000000 0.015686 0.007843 0.500000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>11.000001</startTime>
+				<value>1.000000 0.015686 0.007843 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.500000</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -0.500000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

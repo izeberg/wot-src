@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/experimental/glow_spawn.fx</fx>
+					<materialKind>112</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						destBlend
+						<Int>5</Int>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h16_mt_museum/environment/h01_VD26_Lamp_AM.dds</Texture>
+					</property>
+					<property>
+						diffuseMap2
+						<Texture>content/Hangars/h16_mt_museum/environment/h01_VD26_Lamp_AM.dds</Texture>
+					</property>
+					<property>
+						selfIllumination
+						<Float>6.000000</Float>
+					</property>
+					<property>
+						selfIlluminationEnvDependent
+						<Float>-1.000000</Float>
+					</property>
+					<property>
+						srcBlend
+						<Int>3</Int>
+					</property>
+					<property>
+						tintColor
+						<Vector4>1.000000 0.854902 0.749020 1.000000</Vector4>
+					</property>
+				</material>
+				<groupOrigin>-0.188044 0.527898 0.000000</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-0.237597 0.376829 -0.281936</min>
+		<max>0.276324 0.678967 0.219117</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>532</geometrySize>
+	<minUVDensity>0.685946</minUVDensity>
+</root>

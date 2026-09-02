@@ -1316,7 +1316,7 @@
 			<userString>#intunion_vehicles:Chassis_Un17_RDT_62</userString>
 			<tags/>
 			<level>10</level>
-			<price>68200</price>
+			<price>82500</price>
 			<armor>
 				<leftTrack>15</leftTrack>
 				<rightTrack>15</rightTrack>
@@ -1331,11 +1331,11 @@
 			<rotationSpeed>42</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
-					0.12
+					0.18
 					<!--BW_String-->
 				</vehicleMovement>
 				<vehicleRotation>
-					0.12
+					0.18
 					<!--BW_String-->
 				</vehicleRotation>
 			</shotDispersionFactors>
@@ -2579,7 +2579,7 @@
 			<guns>
 				<_57mm_RShR_57>
 					shared
-					<maxAmmo>792</maxAmmo>
+					<maxAmmo>560</maxAmmo>
 					<armor>
 						<armor_1>200</armor_1>
 						<armor_2>80</armor_2>
@@ -2594,15 +2594,15 @@
 					<pitchLimits>
 						<minPitch>0 -30 1 -30</minPitch>
 						<maxPitch>
-							0 12 0.05 12 0.0556 8 0.1 8 0.117 12 0.36 12 0.42 7 0.58 7 0.64 12 0.85 12 0.92 8 0.944 8 0.95 12 1 12
+							0 9 0.05 9 0.0556 8 0.1 8 0.117 9 0.36 9 0.42 7 0.58 7 0.64 9 0.85 9 0.92 8 0.944 8 0.95 9 1 9
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
 					<shotDispersionRadius>
-						0.15
+						0.2
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>10</reloadTime>
+					<reloadTime>15</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
 							0.05
@@ -2622,22 +2622,25 @@
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<aimingTime>
-						1.0
+						0.8
 						<!--BW_String-->
 					</aimingTime>
 					<clip>
-						<count>24</count>
-						<rate>240</rate>
+						<count>20</count>
+						<rate>260</rate>
 					</clip>
 					<autoShoot>
 						<shotDispersionPerSec>
-							1.0
+							1.7
 							<!--BW_String-->
 						</shotDispersionPerSec>
 						<maxShotDispersion>7</maxShotDispersion>
-						<rate>4</rate>
+						<rate>
+							4.333
+							<!--BW_String-->
+						</rate>
 						<rebuildShotDispersionDelay>
-							1.0
+							0.3
 							<!--BW_String-->
 						</rebuildShotDispersionDelay>
 					</autoShoot>
@@ -3336,12 +3339,6 @@
 			</chassis>
 		</detailed>
 	</physics>
-	<siege_mode>
-		<switchOnTime>0</switchOnTime>
-		<switchOffTime>0</switchOffTime>
-		<engineDamageCoeff>1</engineDamageCoeff>
-		<switchCancelEnabled>true</switchCancelEnabled>
-	</siege_mode>
 	<clientAdjustmentFactors>
 		<guns>
 			<_57mm_RShR_57>
@@ -3369,4 +3366,5 @@
 			<attachmentId>31106</attachmentId>
 		</newAttachment0>
 	</prefabAttachments>
+	<baseColorID>1</baseColorID>
 </root>

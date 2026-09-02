@@ -101,8 +101,20 @@ msgstr "SBM-44-1"
 msgid "Chassis_Un15_SBM_44_2"
 msgstr "SBM-44-2"
 
+msgid "Chassis_Un16_TDM_54"
+msgstr "T-54 v. 1949"
+
+msgid "Chassis_Un16_TDM_54_2"
+msgstr "T-54 v. 1951"
+
 msgid "Chassis_Un17_RDT_62"
 msgstr "RDT-62"
+
+msgid "Chassis_Un18_VT_49"
+msgstr "VT-49 vz. 48"
+
+msgid "Chassis_Un18_VT_49_2"
+msgstr "VT-49 vz. 49"
 
 msgid "Chassis_Un24_Vz_68_2_Britva"
 msgstr "Vz. 68-2"
@@ -236,6 +248,9 @@ msgstr "R-123"
 msgid "R_123_T"
 msgstr "R-123 T"
 
+msgid "R_123_Un16"
+msgstr "R-123"
+
 msgid "Renault_22_CV"
 msgstr "Renault 22 CV"
 
@@ -262,6 +277,12 @@ msgstr "SCR 510 M2"
 
 msgid "SCR_538"
 msgstr "SCR 538"
+
+msgid "Skoda_16_ADH_140"
+msgstr "Škoda 16ADH140"
+
+msgid "Skoda_16_ADH_145"
+msgstr "Škoda 16ADH145"
 
 msgid "Turret_1_Un01_Cromwell_VII"
 msgstr "Mk I"
@@ -311,8 +332,14 @@ msgstr "T-54D"
 msgid "Turret_1_Un15_SBM_44"
 msgstr "SBM-44-1"
 
+msgid "Turret_1_Un16_TDM_54"
+msgstr "Vz. 67"
+
 msgid "Turret_1_Un17_RDT_62"
 msgstr "RDT-62"
+
+msgid "Turret_1_Un18_VT_49"
+msgstr "VT-49"
 
 msgid "Turret_1_Un24_Vz_68_2_Britva"
 msgstr "Vz. 68-2"
@@ -349,6 +376,12 @@ msgstr "Т-54 обр. 1949 г."
 
 msgid "Turret_2_Un15_SBM_44"
 msgstr "SBM-44-2"
+
+msgid "Turret_2_Un16_TDM_54"
+msgstr "PT. 67"
+
+msgid "Turret_2_Un18_VT_49"
+msgstr "T-17"
 
 msgid "Un01_Cromwell_VII"
 msgstr "Cromwell VII"
@@ -699,6 +732,27 @@ msgstr ""
 msgid "Un15_SBM_44_short"
 msgstr "SBM-44"
 
+msgid "Un16_TDM_54"
+msgstr "TDM-54"
+
+msgid "Un16_TDM_54_descr"
+msgstr ""
+"Танк ТДМ-54 (сокращение от «тяжёлая дозорная машина») проектировался "
+"совместно чехословацкими и советскими конструкторами. В Чехословакии "
+"разворачивалось лицензионное производство среднего танка Т-54, и именно его "
+"шасси планировалось использовать в качестве базы. Вооружить новую машину "
+"собирались автоматическими пушками — спаркой чехословацких 50-мм орудий "
+"ZK-500 либо 57-мм автоматов на основе советской авиапушки РШР-57. Наряду "
+"с эффективным огнём (в том числе по средним и тяжёлым танкам) предполагалось"
+" обеспечить защиту от выстрелов как минимум лёгкой бронетехники противника, "
+"заодно повысив манёвренность машины за счёт уменьшения массы башни. Однако "
+"из-за ряда сложностей с компоновкой ещё на этапе проектирования работа "
+"по ТДМ-54 затянулась и в итоге была прекращена. Фактическая необходимость "
+"в таких машинах отпала."
+
+msgid "Un16_TDM_54_short"
+msgstr "TDM-54"
+
 msgid "Un17_RDT_62"
 msgstr "RDT-62 Řezačka"
 
@@ -719,6 +773,25 @@ msgstr ""
 
 msgid "Un17_RDT_62_short"
 msgstr "Řezačka"
+
+msgid "Un18_VT_49"
+msgstr "VT-49"
+
+msgid "Un18_VT_49_descr"
+msgstr ""
+"После окончания Второй мировой войны чехословацкое танкостроение пыталось "
+"снова выйти на рынок экспортных танков. Одним из предложений того периода "
+"стал средний танк VT-49. В основу этой разработки фирмы Škoda легла идея "
+"создания быстроходного танка с механизацией заряжания. Новая машина должна "
+"была стать крупнее и быстрее разработанного ранее танка T-17. В качестве "
+"вооружения предполагались орудия с револьверным или кассетным боепитанием — "
+"это позволило бы повысить их скорострельность. Однако по ряду причин VT-49 "
+"так и остался проектной разработкой: в конце 1940-х годов имелось большое "
+"количество серийных танков, сполна закрывавших потребности армий "
+"потенциальных импортёров в средних машинах."
+
+msgid "Un18_VT_49_short"
+msgstr "VT-49"
 
 msgid "Un24_Vz_68_2_Britva"
 msgstr "Vz. 68-2 Britva"
@@ -762,11 +835,17 @@ msgstr "V-44 T"
 msgid "V_54B"
 msgstr "V-54B"
 
+msgid "V_54_Un16"
+msgstr "V-54"
+
 msgid "V_55"
 msgstr "V-55"
 
 msgid "V_55_T"
 msgstr "V-55 T"
+
+msgid "V_55_Un16"
+msgstr "V-55"
 
 msgid "_100mm_3UBK4"
 msgstr "3УБК4"
@@ -975,6 +1054,12 @@ msgstr "OP mle. 1938"
 msgid "_3_7inch_QF_Heavy_Gun"
 msgstr "QF 3,7 in Heavy Gun Long"
 
+msgid "_50mm_50_JOSv"
+msgstr "50-JOSv"
+
+msgid "_50mm_50_JOSvP"
+msgstr "50-JOSvP"
+
 msgid "_50mm_JOSv"
 msgstr "50-JOSv"
 
@@ -983,6 +1068,9 @@ msgstr "50-JOSvP"
 
 msgid "_50mm_ZK_500"
 msgstr "50 mm ZK 500"
+
+msgid "_50mm_ZK_500_Un16"
+msgstr "50 mm ZK-500"
 
 msgid "_57mm_53_BR_279"
 msgstr "53-BR-279"
@@ -996,14 +1084,35 @@ msgstr "53-BR-279P T"
 msgid "_57mm_53_BR_279_T"
 msgstr "53-BR-279 T"
 
+msgid "_57mm_57_JOSv"
+msgstr "57-JOSv"
+
+msgid "_57mm_57_JOSvP"
+msgstr "57-JOSvP"
+
 msgid "_57mm_RShR_57"
 msgstr "57 mm RShR-57"
 
 msgid "_57mm_RShR_57_T"
 msgstr "57 mm RShR-57 T"
 
+msgid "_57mm_R_10_Un16"
+msgstr "57 mm R-10"
+
 msgid "_5TD"
 msgstr "5TD"
+
+msgid "_66mm_PaK_5_800"
+msgstr "66 mm PaK 5/800"
+
+msgid "_66mm_PzGr_vz36"
+msgstr "Pz.Gr. vz. 36"
+
+msgid "_66mm_PzGr_vz40"
+msgstr "Pz.Gr. vz. 40"
+
+msgid "_66mm_SprGr_vz36"
+msgstr "Spr.Gr. vz. 36"
 
 msgid "_6pdr_APCR_MK_1T"
 msgstr "APDS Mk.I BT"
@@ -1013,6 +1122,9 @@ msgstr "AP Mk.I T"
 
 msgid "_6pdr_HE_MK_10T"
 msgstr "HE Mk.X T"
+
+msgid "_75mm_A26"
+msgstr "75 mm A26"
 
 msgid "_75mm_APCBC"
 msgstr "APCBC"
@@ -1071,6 +1183,15 @@ msgstr "M72"
 msgid "_75mm_M72M3"
 msgstr "M72"
 
+msgid "_75mm_PzGr_vz36"
+msgstr "Pz.Gr. vz. 36"
+
+msgid "_75mm_PzGr_vz40"
+msgstr "Pz.Gr. vz. 40"
+
+msgid "_75mm_SprGr_vz36"
+msgstr "Spr.Gr. vz. 36"
+
 msgid "_75mm_Sprg_18"
 msgstr "Sprgr 18"
 
@@ -1120,6 +1241,9 @@ msgid "_94mm_HE_MkIII"
 msgstr "НЕ Mk. III"
 
 msgid "_9RM"
+msgstr "9РМ"
+
+msgid "_9RM_49"
 msgstr "9РМ"
 
 msgid "_QF_20pdr_APCBC_Mk1"

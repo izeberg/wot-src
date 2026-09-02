@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>20.000002</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Tank_shiled</name>
+		<type>model</type>
+		<resource>particles/Environment/event_white_tiger/player_tank/shield/wt_energy_static_cupola.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>20.000002</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.100000 0.100000 0.100000</value>
+				<inTangent>2.250000 2.250000 2.250000</inTangent>
+				<outTangent>2.250000 2.250000 2.250000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.400000</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>2.250000 2.250000 2.250000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>19.500002</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>1.000000 1.000000 1.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>20.000002</startTime>
+				<value>1.500000 1.500000 1.500000</value>
+				<inTangent>1.000000 1.000000 1.000000</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd0</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.098039 0.588235 1.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 2.500000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 2.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.400000</startTime>
+				<value>0.098039 0.588235 1.000000 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 2.500000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>18.166668</startTime>
+				<value>0.098039 0.588235 1.000000 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -2.699995</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>18.500002</startTime>
+				<value>0.098039 0.588235 1.000000 0.100000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -2.699995</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 2.700010</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>18.833334</startTime>
+				<value>0.098039 0.588235 1.000000 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 2.700010</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -2.699995</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>19.166668</startTime>
+				<value>0.098039 0.588235 1.000000 0.100000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -2.699995</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 2.699995</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>19.500002</startTime>
+				<value>0.098039 0.588235 1.000000 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 2.699995</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -2.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>20.000002</startTime>
+				<value>0.098039 0.588235 1.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -2.000000</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -1.666666</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd1</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.098039 0.588235 1.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 2.500000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 2.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.400000</startTime>
+				<value>0.098039 0.588235 1.000000 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 2.500000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>19.500002</startTime>
+				<value>0.098039 0.588235 1.000000 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -2.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>20.000002</startTime>
+				<value>0.098039 0.588235 1.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -2.000000</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -1.578943</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Sound 0</name>
+		<type>sound</type>
+		<track>
+			<name>Sound</name>
+			<type>sound</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>20.000000</duration>
+				<sequenceSound>ev_wt_ability_dome_start</sequenceSound>
+				<type>play_till_end</type>
+				<fade>0.000000</fade>
+			</frame>
+			<frame>
+				<startTime>18.500002</startTime>
+				<duration>1.500000</duration>
+				<sequenceSound>ev_wt_ability_dome_stop</sequenceSound>
+				<type>play_till_end</type>
+				<fade>0.000000</fade>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

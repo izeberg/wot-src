@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/japan/J51_Naginata/normal/lod4/Turret_01</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<nodefullVisual>vehicles/japan/J51_Naginata/normal/lod3/Turret_01</nodefullVisual>
+	<visibilityBox>
+		<min>-1.627973 -0.000610 -2.317114</min>
+		<max>1.363121 2.845017 1.363063</max>
+	</visibilityBox>
+</root>

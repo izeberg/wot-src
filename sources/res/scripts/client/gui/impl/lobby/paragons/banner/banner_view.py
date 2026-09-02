@@ -5,9 +5,12 @@ from gui.impl.pub import ViewImpl
 from gui.impl.lobby.common.view_wrappers import createBackportTooltipDecorator
 from gui.impl.lobby.paragons.paragons_window_events import showParagonsNavigationView
 from gui.impl.gen import R
+from helpers import dependency
+from skeletons.gui.game_control import IParagonsController
 
 class ParagonsBannerView(ViewImpl):
     __slots__ = ()
+    __paragonsController = dependency.descriptor(IParagonsController)
 
     def __init__(self, flags=ViewFlags.VIEW):
         settings = ViewSettings(R.views.lobby.paragons.banner.BannerView())
@@ -19,6 +22,10 @@ class ParagonsBannerView(ViewImpl):
     def viewModel(self):
         return super(ParagonsBannerView, self).getViewModel()
 
+    def _onLoading(self, *args, **kwargs):
+        super(ParagonsBannerView, self)._onLoading(*args, **kwargs)
+        self.__updateCloseoutTimer()
+
     @staticmethod
     def __onClick():
         showParagonsNavigationView(tabId=TabId.CHAPTERS)
@@ -26,8 +33,18 @@ class ParagonsBannerView(ViewImpl):
     def _getEvents(self):
         return (
          (
-          self.viewModel.onClick, self.__onClick),)
+          self.viewModel.onClick, self.__onClick),
+         (
+          self.__paragonsController.onSettingsChanged, self.__updateCloseoutTimer),
+         (
+          self.__paragonsController.onParagonsStateChanged, self.__updateCloseoutTimer),
+         (
+          self.__paragonsController.onFeatureStateChanged, self.__updateCloseoutTimer))
 
     @createBackportTooltipDecorator()
     def createToolTip(self, event):
         return super(ParagonsBannerView, self).createToolTip(event)
+
+    def __updateCloseoutTimer(self, *args, **kwargs):
+        with self.viewModel.transaction() as (tx):
+            tx.setCloseoutTimeStamp(self.__paragonsController.getClosestChapterCloseoutTimeStamp())

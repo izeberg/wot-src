@@ -36,7 +36,10 @@
 					</property>
 					<property>
 						g_crashUVTiling
-						<Vector4>0.500000 0.500000 0.000000 0.000000</Vector4>
+						<Vector4>
+							0.5 0.5 0.0 0.0
+							<!--BW_String-->
+						</Vector4>
 					</property>
 					<property>
 						crashTileMap
@@ -49,6 +52,10 @@
 					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/british/GB131_Crusher/Crusher_proxy_AO.dds</Texture>
+					</property>
+					<property>
+						alphaReference
+						<Int>0</Int>
 					</property>
 				</material>
 				<groupOrigin>0.000039 -0.022967 2.084666</groupOrigin>

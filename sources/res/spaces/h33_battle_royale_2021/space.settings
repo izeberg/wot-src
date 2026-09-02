@@ -142,8 +142,6 @@
 	<navmeshGenerator>navgen</navmeshGenerator>
 	<enableClusteredShading>false</enableClusteredShading>
 	<nearPlane>0.250000</nearPlane>
-	<isSHGridQualityOverridden>true</isSHGridQualityOverridden>
-	<overrideSHGridQuality>0</overrideSHGridQuality>
 	<hangarSettings>
 		<customizationHangarSettings>
 			<v_start_pos>1.110000 206.300003 -0.852000</v_start_pos>

@@ -10,8 +10,8 @@ msgstr ""
 
 msgid "invites/note/change_and_leave/PREBATTLE_VERSUS_AI"
 msgstr ""
-"Прыняўшы запрашэнне, вы аўтаматычна пакінеце звяз у рэжыме «Палігон» і "
-"пяройдзеце на сервер %(host)s."
+"Приняв приглашение, вы будете автоматически исключены из состава взвода "
+"в режиме «Полигон» и перемещены на сервер %(host)s."
 
 msgid "invites/note/change_and_leave/QUEUE_VERSUS_AI"
 msgstr ""
@@ -19,13 +19,15 @@ msgstr ""
 "%(host)s."
 
 msgid "invites/note/leave/PREBATTLE_VERSUS_AI"
-msgstr "Прыняўшы запрашэнне, вы аўтаматычна пакінеце звяз у рэжыме «Палігон»."
+msgstr ""
+"Приняв приглашение, вы будете автоматически исключены из состава взвода "
+"в режиме «Полигон»."
 
 msgid "invites/note/leave/QUEUE_VERSUS_AI"
 msgstr "Прыняўшы запрашэнне, вы пакінеце рэжым «Палiгон»"
 
 msgid "invites/prebattle/alreadyJoined/VERSUS_AI"
-msgstr "Вы ўжо ўступілі ў гэты звяз."
+msgstr "Вы уже присоединились к этому взводу."
 
 msgid "invites/text/VERSUS_AI"
-msgstr "Запрашэнне ўступіць у звяз для рэжыму «Палігон»."
+msgstr "Приглашение войти в состав взвода для режима «Полигон»"

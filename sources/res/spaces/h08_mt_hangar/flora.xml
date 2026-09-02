@@ -330,7 +330,112 @@
 				</layer>
 			</grassType>
 		</population>
+		<population>
+			<name>Outland_trees</name>
+			<slopeMin>
+				0.00
+				<!--BW_String-->
+			</slopeMin>
+			<slopeMax>
+				30.00
+				<!--BW_String-->
+			</slopeMax>
+			<enableSlopeMin>true</enableSlopeMin>
+			<sizeLimit>
+				0.00
+				<!--BW_String-->
+			</sizeLimit>
+			<enableSizeLimit>true</enableSizeLimit>
+			<tileType>maps/landscape/00_All_Outland_Tiles/Green_Ground_05.dds</tileType>
+			<grassType>
+				<name>bb_tree_broadleaves_autumn_claster_b_lod0</name>
+				<tintWeight>
+					0.69 0.22
+					<!--BW_String-->
+				</tintWeight>
+				<waving>
+					1.00 1.00 2.00 1.00
+					<!--BW_String-->
+				</waving>
+				<slopeMin>
+					0.00
+					<!--BW_String-->
+				</slopeMin>
+				<slopeMax>
+					50.00
+					<!--BW_String-->
+				</slopeMax>
+				<enableSlopeMin>true</enableSlopeMin>
+				<sniperModeBhvr>3</sniperModeBhvr>
+				<scaleFromMap>
+					3 1.00 1.00
+					<!--BW_String-->
+				</scaleFromMap>
+				<sizeLimit>
+					0.30
+					<!--BW_String-->
+				</sizeLimit>
+				<enableSizeLimit>true</enableSizeLimit>
+				<oscillation>
+					0.5 0.5
+					<!--BW_String-->
+				</oscillation>
+				<unique_random_seed>true</unique_random_seed>
+				<layer>
+					<name>bb_tree_broadleaves_autumn_claster_b_lod0.srt</name>
+					<comment>comment</comment>
+					<model>vegetation/Outland/bb_tree_broadleaves_autumn/bb_tree_broadleaves_autumn_claster_b_lod0.srt</model>
+					<castShadow>false</castShadow>
+					<densityMin>
+						0.0010
+						<!--BW_String-->
+					</densityMin>
+					<density>
+						0.0000
+						<!--BW_String-->
+					</density>
+					<scale>
+						0.90
+						<!--BW_String-->
+					</scale>
+					<scaleDeviation>
+						0.23
+						<!--BW_String-->
+					</scaleDeviation>
+					<fadeout>
+						0.00
+						<!--BW_String-->
+					</fadeout>
+					<range>
+						3200.00
+						<!--BW_String-->
+					</range>
+					<startat>
+						0.00
+						<!--BW_String-->
+					</startat>
+					<seed>3</seed>
+					<alignToSurface>false</alignToSurface>
+					<tintWeight>
+						0.69 0.22
+						<!--BW_String-->
+					</tintWeight>
+					<waving>
+						1.00 1.00 2.00 1.00
+						<!--BW_String-->
+					</waving>
+					<scaleFromMap>
+						3 1.00 1.00
+						<!--BW_String-->
+					</scaleFromMap>
+					<sizeLimit>
+						0.00
+						<!--BW_String-->
+					</sizeLimit>
+					<enableSizeLimit>true</enableSizeLimit>
+				</layer>
+			</grassType>
+		</population>
 	</speedgrass>
-	<tintMap>trees_tint_map.dds</tintMap>
-	<scaleMap/>
+	<tintMap>global_AM.dds</tintMap>
 </root>

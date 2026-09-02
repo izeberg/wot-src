@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/german/G180_Hauptpanzer_Gruppe_A/normal/lod4/Hull</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.840952 -0.622351 -4.180907</min>
+		<max>1.842366 0.679254 3.763031</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G180_Hauptpanzer_Gruppe_A/normal/lod3/Hull</nodefullVisual>
+</root>

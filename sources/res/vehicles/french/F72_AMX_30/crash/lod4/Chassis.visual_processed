@@ -22,7 +22,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 0.000000 -1.000000</row1>
 					<row2>0.000000 1.000000 0.000000</row2>
-					<row3>0.000000 4.432490 0.000000</row3>
+					<row3>0.000000 4.432486 0.000000</row3>
 				</transform>
 			</node>
 			<node>
@@ -587,10 +587,6 @@
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
 					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
-					</property>
-					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/french/F72_AMX_30/AMX_30_chassis_01_AO.dds</Texture>
 					</property>
@@ -625,10 +621,6 @@
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
-					</property>
 					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/french/F72_AMX_30/AMX_30_chassis_01_AO.dds</Texture>

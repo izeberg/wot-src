@@ -1587,6 +1587,8 @@ package
       
       public static const CHAT_ACTION_GET_VOIP_CREDENTIALS:String = "#messenger:chat_action/GET_VOIP_CREDENTIALS";
       
+      public static const CHAT_ACTION_REQUEST_ECHO_CHANNEL:String = "#messenger:chat_action/REQUEST_ECHO_CHANNEL";
+      
       public static const CLIENT_ACTION_ADD_FRIEND:String = "#messenger:client_action/ADD_FRIEND";
       
       public static const CLIENT_ACTION_REMOVE_FRIEND:String = "#messenger:client_action/REMOVE_FRIEND";
@@ -2538,6 +2540,10 @@ package
       public static const SERVICECHANNELMESSAGES_STALLPURCHASERECEIPT_TITLE:String = "#messenger:serviceChannelMessages/stallPurchaseReceipt/title";
       
       public static const SERVICECHANNELMESSAGES_STALLPURCHASERECEIPT_BODY:String = "#messenger:serviceChannelMessages/stallPurchaseReceipt/body";
+      
+      public static const VOIP_INITINPROGRESS:String = "#messenger:voip/initInProgress";
+      
+      public static const VOIP_READY:String = "#messenger:voip/ready";
       
       public static const DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_ENUM:Array = [DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_OFFLINE,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_NOTREADY,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_READY,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_INBATTLE,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_AFK];
        

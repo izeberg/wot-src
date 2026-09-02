@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/experimental/glow_spawn.fx</fx>
+					<materialKind>112</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						destBlend
+						<Int>5</Int>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h16_mt_museum/environment/h01_VD26_Exit_AM.dds</Texture>
+					</property>
+					<property>
+						diffuseMap2
+						<Texture>content/Hangars/h16_mt_museum/environment/h01_VD26_Exit_AM.dds</Texture>
+					</property>
+					<property>
+						selfIllumination
+						<Float>5.000000</Float>
+					</property>
+					<property>
+						selfIlluminationEnvDependent
+						<Float>-1.000000</Float>
+					</property>
+					<property>
+						spawnContourThickness
+						<Float>0.150000</Float>
+					</property>
+					<property>
+						srcBlend
+						<Int>3</Int>
+					</property>
+				</material>
+				<groupOrigin>0.000000 0.000000 0.000000</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-0.417114 -0.208101 -0.022817</min>
+		<max>0.417114 0.208102 0.022817</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>620</geometrySize>
+	<minUVDensity>1.179587</minUVDensity>
+</root>

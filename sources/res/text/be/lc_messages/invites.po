@@ -185,8 +185,8 @@ msgstr ""
 
 msgid "invites/note/change_and_leave/PREBATTLE_FALLOUT"
 msgstr ""
-"Калі прымеце запрашэнне, вы будзеце аўтаматычна выключаны са звязу і "
-"перамешчаны на сервер %(host)s."
+"Приняв приглашение, вы будете автоматически исключены из состава взвода "
+"и перемещены на сервер %(host)s."
 
 msgid "invites/note/change_and_leave/PREBATTLE_FORT_BATTLE"
 msgstr ""
@@ -220,8 +220,8 @@ msgstr ""
 
 msgid "invites/note/change_and_leave/PREBATTLE_SQUAD"
 msgstr ""
-"Калі прымеце запрашэнне, вы будзеце аўтаматычна выключаны са звязу і "
-"перамешчаны на сервер %(host)s."
+"Приняв приглашение, вы будете автоматически исключены из состава взвода "
+"и перемещены на сервер %(host)s."
 
 msgid "invites/note/change_and_leave/PREBATTLE_STRONGHOLD"
 msgstr ""
@@ -328,7 +328,8 @@ msgid "invites/note/leave/PREBATTLE_E_SPORT_COMMON"
 msgstr "Калі прымеце запрашэнне, вы пакінеце рэжым «Камандны бой»."
 
 msgid "invites/note/leave/PREBATTLE_FALLOUT"
-msgstr "Калі прымеце запрашэнне, вы будзеце аўтаматычна выключаны са звязу."
+msgstr ""
+"Приняв приглашение, вы будете автоматически исключены из состава взвода."
 
 msgid "invites/note/leave/PREBATTLE_FORT_BATTLE"
 msgstr "Калі прымеце запрашэнне, вы пакінеце «Умацаваны раён: бітвы»."
@@ -353,7 +354,8 @@ msgid "invites/note/leave/PREBATTLE_SORTIE"
 msgstr "Калі прымеце запрашэнне, вы пакінеце «Умацаваны раён: бітвы»."
 
 msgid "invites/note/leave/PREBATTLE_SQUAD"
-msgstr "Калі прымеце запрашэнне, вы будзеце аўтаматычна выключаны са звязу."
+msgstr ""
+"Приняв приглашение, вы будете автоматически исключены из состава взвода."
 
 msgid "invites/note/leave/PREBATTLE_STRONGHOLD"
 msgstr "Калі прымеце запрашэнне, вы пакінеце цяперашні атрад."
@@ -427,16 +429,16 @@ msgid "invites/prebattle/alreadyJoined/EPIC_TRAINING"
 msgstr "Вы ўжо далучыліся да гэтых супольных вучэнняў."
 
 msgid "invites/prebattle/alreadyJoined/FALLOUT"
-msgstr "Вы ўжо ўступілі ў гэты звяз."
+msgstr "Вы уже присоединились к этому взводу."
 
 msgid "invites/prebattle/alreadyJoined/MAPBOX"
-msgstr "Вы ўжо ўступілі ў гэты звяз."
+msgstr "Вы уже присоединились к этому взводу."
 
 msgid "invites/prebattle/alreadyJoined/SORTIE"
 msgstr "Вы ўжо ўступілі ў гэты атрад."
 
 msgid "invites/prebattle/alreadyJoined/SQUAD"
-msgstr "Вы ўжо ўступілі ў гэты звяз."
+msgstr "Вы уже присоединились к этому взводу."
 
 msgid "invites/prebattle/alreadyJoined/TOURNAMENT"
 msgstr "Вы ўжо далучыліся да гэтага турніру."
@@ -466,22 +468,22 @@ msgid "invites/state/REVOKED"
 msgstr "Запрашэнне адклікана."
 
 msgid "invites/text/BATTLE_ROYALE"
-msgstr "Запрашэнне далучыцца да звязу Сталёвых паляўнічых"
+msgstr "Приглашение войти в состав взвода Стальных охотников"
 
 msgid "invites/text/COMP7"
-msgstr "Запрашэнне ўступіць у звяз рэжыму «Націск»"
+msgstr "Приглашение войти в состав взвода режима «Натиск»"
 
 msgid "invites/text/EPIC"
-msgstr "Запрашэнне далучыцца да звязу «Лінія фронту»"
+msgstr "Приглашение войти в состав взвода «Линия фронта»"
 
 msgid "invites/text/EPIC_TRAINING"
 msgstr "Запрашэнне ўзяць удзел у каманднай трэніроўцы рэжыму «Лінія фронту»"
 
 msgid "invites/text/EVENT"
-msgstr "Запрашэнне далучыцца да звязу"
+msgstr "Приглашение войти в состав взвода"
 
 msgid "invites/text/FALLOUT"
-msgstr "Запрашэнне далучыцца да звязу %(battleType)s"
+msgstr "Приглашение войти в состав взвода %(battleType)s"
 
 msgid "invites/text/FALLOUT/FALLOUT_CLASSIC"
 msgstr "«Перавага»"
@@ -493,19 +495,19 @@ msgid "invites/text/FORT_BATTLE"
 msgstr "Запрашэнне на бітву"
 
 msgid "invites/text/MAPBOX"
-msgstr "Запрашэнне далучыцца да звязу «Разведка боем»"
+msgstr "Приглашение войти в состав взвода «Разведка боем»"
 
 msgid "invites/text/MAPS_TRAINING"
 msgstr "Запрашэнне ўзяць удзел у вывучэнні мапаў"
 
 msgid "invites/text/RANKED"
-msgstr "Запрашэнне ўступіць у звяз рэжыму «Рангавы бой»"
+msgstr "Приглашение войти в состав взвода режима «Ранговый бой»"
 
 msgid "invites/text/SORTIE"
 msgstr "Запрашэнне ў атрад"
 
 msgid "invites/text/SQUAD"
-msgstr "Запрашэнне далучыцца да звязу"
+msgstr "Приглашение войти в состав взвода"
 
 msgid "invites/text/STRONGHOLD"
 msgstr "Запрашэнне ў атрад"

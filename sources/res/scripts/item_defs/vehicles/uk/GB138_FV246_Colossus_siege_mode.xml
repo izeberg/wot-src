@@ -2631,7 +2631,7 @@
 						<gun>45</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.34
+						0.36
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
@@ -2644,7 +2644,7 @@
 					</aimingTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.08
+							0.12
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>

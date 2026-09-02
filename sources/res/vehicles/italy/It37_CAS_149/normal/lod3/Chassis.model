@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/italy/It37_CAS_149/normal/lod4/Chassis</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.621489 0.019077 -3.560386</min>
+		<max>1.618599 1.137092 3.706866</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/italy/It37_CAS_149/normal/lod3/Chassis</nodefullVisual>
+</root>

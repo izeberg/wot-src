@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/german/G194_E_50_GT_Alkett_Prod/_skins/G194_E_50_GT_Alkett_Prod_02_3Dst_Hertz/normal/lod3/Hull</parent>
+	<tank>true</tank>
+	<extent>
+		96.0
+		<!--BW_String-->
+	</extent>
+	<nodefullVisual>vehicles/german/G194_E_50_GT_Alkett_Prod/_skins/G194_E_50_GT_Alkett_Prod_02_3Dst_Hertz/normal/lod2/Hull</nodefullVisual>
+	<visibilityBox>
+		<min>-1.977716 -0.690936 -3.955778</min>
+		<max>1.979122 0.914336 3.453090</max>
+	</visibilityBox>
+</root>

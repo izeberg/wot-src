@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/russian/R213_TET_100/_skins/R213_TET_100_3Dst_02/crash/lod3/Turret_01</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.870357 -0.007370 -2.412802</min>
+		<max>1.844698 1.917608 2.505495</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/russian/R213_TET_100/_skins/R213_TET_100_3Dst_02/crash/lod2/Turret_01</nodefullVisual>
+</root>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodelessVisual>content/Environment/hd_env_UNI_0082_IceFloe/normal/lod3/hd_env_UNI_0082_IceFloe_01</nodelessVisual>
+	<visibilityBox>
+		<min>-1.430533 -0.229687 -1.532848</min>
+		<max>1.619887 8.055222 1.395052</max>
+	</visibilityBox>
+	<parent>content/Environment/hd_env_UNI_0082_IceFloe/normal/lod4/hd_env_UNI_0082_IceFloe_01</parent>
+	<extent>200.000000</extent>
+	<havok>
+		<damagedState>true</damagedState>
+	</havok>
+</root>

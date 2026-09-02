@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/french/F144_Etoile/crash/lod3/Gun_01</parent>
+	<tank>true</tank>
+	<extent>
+		96.0
+		<!--BW_String-->
+	</extent>
+	<nodelessVisual>vehicles/french/F144_Etoile/crash/lod2/Gun_01</nodelessVisual>
+	<visibilityBox>
+		<min>-0.600057 -0.761593 -2.295945</min>
+		<max>0.600001 0.577674 7.012346</max>
+	</visibilityBox>
+</root>

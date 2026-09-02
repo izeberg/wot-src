@@ -19,7 +19,7 @@
 				<name>hangar_h08_mt_hangar_outside_sequences.bnk</name>
 			</bank>
 			<bank>
-				<name>hangar_h08_mt_hangar_outside_summer.bnk</name>
+				<name>hangar_h08_mt_hangar_outside_autumn.bnk</name>
 			</bank>
 			<bank>
 				<name>hangar_h08_mt_hangar_music.bnk</name>
@@ -35,7 +35,6 @@
 			<event>
 				<name>tabs_music</name>
 				<mod>tabs_music</mod>
-				<modAUX>hangar_h08_mt_music</modAUX>
 			</event>
 		</events>
 	</soundRemapping>

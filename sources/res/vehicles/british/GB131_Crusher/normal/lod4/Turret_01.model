@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>vehicles/british/GB131_Crusher/normal/lod4/Turret_01</nodefullVisual>
 	<tank>true</tank>
 	<visibilityBox>
 		<min>-1.546806 0.010011 -1.559017</min>
 		<max>1.582825 1.094256 1.659128</max>
 	</visibilityBox>
+	<nodefullVisual>vehicles/british/GB131_Crusher/normal/lod4/Turret_01</nodefullVisual>
 </root>

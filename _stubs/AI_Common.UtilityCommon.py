@@ -5592,6 +5592,7 @@ class TankDefaultMaterials(pybind11_object):
 	def __str__(*args, **kwargs): pass
 	def __subclasshook__(*args, **kwargs): pass
 	def addDefaultMaterial(*args, **kwargs): pass
+	def clearDefaultMaterials(*args, **kwargs): pass
 	def getDefault(*args, **kwargs): pass
 
 

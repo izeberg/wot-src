@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/italy/It37_CAS_149/crash/lod2/Hull</parent>
+	<tank>true</tank>
+	<extent>
+		64.0
+		<!--BW_String-->
+	</extent>
+	<visibilityBox>
+		<min>-1.913017 -0.944373 -4.495551</min>
+		<max>1.830631 0.809351 3.827801</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/italy/It37_CAS_149/crash/lod1/Hull</nodefullVisual>
+</root>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<stream>uv2</stream>
+			<stream>colour</stream>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/experimental/glow_spawn.fx</fx>
+					<materialKind>112</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h16_mt_museum/environment/h01_VD26_Diorama_1_AM.dds</Texture>
+					</property>
+					<property>
+						diffuseMap2
+						<Texture>content/Hangars/h16_mt_museum/environment/h01_VD26_Diorama_1_AM.dds</Texture>
+					</property>
+					<property>
+						noiseScale
+						<Vector2>0.400000 0.100000</Vector2>
+					</property>
+					<property>
+						spawnNoiseTexture
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/thundercloud_00_bottom.dds</Texture>
+					</property>
+					<property>
+						spawnStage
+						<Float>0.000000</Float>
+					</property>
+					<property>
+						srcBlend
+						<Int>2</Int>
+					</property>
+					<property>
+						destBlend
+						<Int>5</Int>
+					</property>
+				</material>
+				<groupOrigin>0.000000 4.903941 0.601999</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-16.077984 1.025167 -14.874008</min>
+		<max>16.077984 8.782715 16.384613</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>4776</geometrySize>
+	<minUVDensity>0.001440</minUVDensity>
+</root>

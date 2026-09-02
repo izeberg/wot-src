@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/russian/R253_Object_277_S/_skins/R253_Object_277_S_3Dst_01/crash/lod3/Gun_01</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.403307 -0.267794 -1.763207</min>
+		<max>0.448474 0.280799 6.103397</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/russian/R253_Object_277_S/_skins/R253_Object_277_S_3Dst_01/crash/lod2/Gun_01</nodefullVisual>
+</root>

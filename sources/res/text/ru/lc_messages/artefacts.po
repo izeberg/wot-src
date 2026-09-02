@@ -1079,7 +1079,7 @@ msgid "comp7_skillDescription/staticParams/descr/cooldownSeconds/default"
 msgstr "Время перезарядки навыка"
 
 msgid "comp7_skillDescription/staticParams/descr/damageDistance/default"
-msgstr "Дистанция для нанесения урона для перезапуска навыка"
+msgstr "Дистанция нанесения урона для перезапуска навыка"
 
 msgid "comp7_skillDescription/staticParams/descr/delay/comp7_recon"
 msgstr "Задержка перед обнаружением техники"
@@ -1125,7 +1125,7 @@ msgid "comp7_skillDescription/staticParams/descr/skillChargeLevel"
 msgstr "Уровень заряда навыка в начале боя"
 
 msgid "comp7_skillDescription/staticParams/descr/stunDurationResist/default"
-msgstr "Уменьшение длительности оглушения машины игрока"
+msgstr "Уменьшение длительности оглушения экипажа машины игрока"
 
 msgid "comp7_skillDescription/staticParams/value/baseHeal/default"
 msgstr "{value}"

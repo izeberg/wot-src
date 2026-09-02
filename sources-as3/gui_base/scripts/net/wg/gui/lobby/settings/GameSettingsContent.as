@@ -10,9 +10,12 @@ package net.wg.gui.lobby.settings
    import net.wg.gui.components.controls.InfoIcon;
    import net.wg.gui.components.controls.LabelControl;
    import net.wg.gui.components.controls.Slider;
+   import net.wg.gui.components.controls.SoundButtonEx;
    import net.wg.gui.components.controls.constants.ToolTipShowType;
    import net.wg.gui.lobby.settings.components.RadioButtonBar;
+   import net.wg.gui.lobby.settings.events.BattleContextHintSettingsEvent;
    import net.wg.infrastructure.base.UIComponentEx;
+   import scaleform.clik.events.ButtonEvent;
    
    public class GameSettingsContent extends UIComponentEx
    {
@@ -20,6 +23,8 @@ package net.wg.gui.lobby.settings
       private static const OFFSET_CB_DISABLED:int = -26;
       
       private static const NEVER_INDEX:int = 0;
+      
+      private static const BATTLE_HINTS_INVALID:String = "battleHintsInvalid";
        
       
       public var fieldSetChat:FieldSet = null;
@@ -162,6 +167,12 @@ package net.wg.gui.lobby.settings
       
       public var fieldSetMinimap:FieldSet = null;
       
+      public var fieldSetBattleContextHints:FieldSet = null;
+      
+      public var enableBattleContextHintsCheckbox:CheckBox = null;
+      
+      public var resetBattleContextHintsButton:SoundButtonEx = null;
+      
       public var hangarCamPeriodDropDown:DropdownMenu = null;
       
       public var hangarCamLabelControl:LabelControl = null;
@@ -234,6 +245,10 @@ package net.wg.gui.lobby.settings
       
       private var _initYGameplayOnly10ModeCheckbox:int;
       
+      private var _battleContextHintsEnabled:Boolean = false;
+      
+      private var _resetBattleContextHintsButtonEnabled:Boolean = false;
+      
       public function GameSettingsContent()
       {
          super();
@@ -245,6 +260,7 @@ package net.wg.gui.lobby.settings
          this.fieldSetChat.label = SETTINGS.GAME_FIELDSET_HEADERCHAT;
          this.fieldSetBattlePanel.label = SETTINGS.GAME_BATTLEPANELSETTINGS;
          this.fieldSetBattleTypes.label = SETTINGS.GAME_FIELDSET_HEADERGAMEPLAY;
+         this.fieldSetBattleContextHints.label = SETTINGS.GAME_ENABLEBATTLECONTEXTHINTS_LABEL;
          this.fieldSetMinimap.label = SETTINGS.GAME_MINIMAPGROUPTITLE;
          this.fieldSetBattleCommunication.label = SETTINGS.GAME_FIELDSET_HEADERBATTLECOMMUNICATION;
          this.customizationDisplayTypeFieldSet.label = SETTINGS.GAME_CUSTOMIZATIONDISPLAYTYPE;
@@ -304,6 +320,10 @@ package net.wg.gui.lobby.settings
          this.switchEquipmentCheckbox.infoIcoType = InfoIcon.TYPE_INFO;
          this.switchEquipmentCheckbox.toolTip = TOOLTIPS_CONSTANTS.SETTINGS_SWITCH_EQUIPMENT;
          this.switchEquipmentCheckbox.tooltipType = ToolTipShowType.SPECIAL;
+         this.enableBattleContextHintsCheckbox.label = SETTINGS.GAME_ENABLEBATTLECONTEXTHINTS_CHECKBOX;
+         this.resetBattleContextHintsButton.label = SETTINGS.GAME_RESETBATTLECONTEXTHINTS_BUTTON;
+         this.resetBattleContextHintsButton.addEventListener(ButtonEvent.CLICK,this.onResetBattleContextHintsButtonClick);
+         this.resetBattleContextHintsButton.mouseEnabledOnDisabled = true;
          this.enableOpticalSnpEffectCheckbox.label = SETTINGS.GAME_ENABLEOPTICALSNPEFFECT;
          this.enablePostMortemDelayCheckbox.label = SETTINGS.GAME_ENABLEDELAYPOSTEFFECT;
          this.dynamicCameraCheckbox.label = SETTINGS.GAME_DYNAMICCAMERA;
@@ -400,6 +420,8 @@ package net.wg.gui.lobby.settings
          this.fieldSetBattlePanel = null;
          this.fieldSetBattleTypes.dispose();
          this.fieldSetBattleTypes = null;
+         this.fieldSetBattleContextHints.dispose();
+         this.fieldSetBattleContextHints = null;
          this.fieldSetMinimap.dispose();
          this.fieldSetMinimap = null;
          this.fieldSetBattleCommunication.dispose();
@@ -462,6 +484,11 @@ package net.wg.gui.lobby.settings
          this.battleLoadingRankedInfoDropDown = null;
          this.switchEquipmentCheckbox.dispose();
          this.switchEquipmentCheckbox = null;
+         this.enableBattleContextHintsCheckbox.dispose();
+         this.enableBattleContextHintsCheckbox = null;
+         this.resetBattleContextHintsButton.removeEventListener(ButtonEvent.CLICK,this.onResetBattleContextHintsButtonClick);
+         this.resetBattleContextHintsButton.dispose();
+         this.resetBattleContextHintsButton = null;
          this.minimapAlphaSlider.dispose();
          this.minimapAlphaSlider = null;
          this.enableOpticalSnpEffectCheckbox.dispose();
@@ -575,6 +602,29 @@ package net.wg.gui.lobby.settings
          super.onDispose();
       }
       
+      override protected function draw() : void
+      {
+         if(isInvalid(BATTLE_HINTS_INVALID))
+         {
+            if(this._battleContextHintsEnabled)
+            {
+               this.enableBattleContextHintsCheckbox.enabled = true;
+               this.enableBattleContextHintsCheckbox.toolTip = this.enableBattleContextHintsCheckbox.infoIcoType = Values.EMPTY_STR;
+               this.resetBattleContextHintsButton.enabled = this._resetBattleContextHintsButtonEnabled;
+               this.resetBattleContextHintsButton.tooltip = !!this._resetBattleContextHintsButtonEnabled ? TOOLTIPS.SETTINGS_RESETBATTLECONTEXTHINTS_ENABLED : TOOLTIPS.SETTINGS_RESETBATTLECONTEXTHINTS_DISABLED;
+            }
+            else
+            {
+               this.enableBattleContextHintsCheckbox.selected = false;
+               this.enableBattleContextHintsCheckbox.enabled = false;
+               this.resetBattleContextHintsButton.enabled = false;
+               this.resetBattleContextHintsButton.tooltip = this.enableBattleContextHintsCheckbox.toolTip = TOOLTIPS.SETTINGS_BATTLECONTEXTHINTS_DISABLED;
+               this.enableBattleContextHintsCheckbox.infoIcoType = InfoIcon.TYPE_WARNING;
+            }
+         }
+         super.draw();
+      }
+      
       public function updateDependentVisibleControls(param1:Boolean, param2:Boolean, param3:Number) : void
       {
          var _loc4_:int = !!param1 ? int(Values.ZERO) : int(OFFSET_CB_DISABLED);
@@ -601,6 +651,18 @@ package net.wg.gui.lobby.settings
          this.anonymizerCheckbox.y = this._initYAnonymizerCheckbox + _loc4_;
       }
       
+      public function setBattleContextHintsEnabled(param1:Boolean) : void
+      {
+         this._battleContextHintsEnabled = param1;
+         invalidate(BATTLE_HINTS_INVALID);
+      }
+      
+      public function setBattleContextHintsResetEnabled(param1:Boolean) : void
+      {
+         this._resetBattleContextHintsButtonEnabled = param1;
+         invalidate(BATTLE_HINTS_INVALID);
+      }
+      
       private function setDependentVisibleControlsY() : void
       {
          this._initYGameplayOnly10ModeCheckbox = this.gameplay_only10ModeCheckbox.y;
@@ -624,6 +686,11 @@ package net.wg.gui.lobby.settings
       private function onGuiGraphicsOptimizationCheckboxSelectHandler(param1:Event) : void
       {
          this.minimapAlphaSlider.enabled = this.minimapAlphaEnabledCheckbox.selected;
+      }
+      
+      private function onResetBattleContextHintsButtonClick(param1:ButtonEvent) : void
+      {
+         dispatchEvent(new BattleContextHintSettingsEvent(BattleContextHintSettingsEvent.RESET));
       }
    }
 }

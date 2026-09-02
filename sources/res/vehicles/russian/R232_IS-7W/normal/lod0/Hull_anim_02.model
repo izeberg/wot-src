@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-0.565108 -0.174360 -3.258604</min>
+		<max>0.565107 0.955855 -2.237548</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/russian/R232_IS-7W/normal/lod0/Hull_anim_02</nodefullVisual>
+	<parent>vehicles/russian/R232_IS-7W/normal/lod1/Hull_anim_02</parent>
+	<extent>32.000000</extent>
+</root>

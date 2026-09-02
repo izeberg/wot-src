@@ -3039,6 +3039,26 @@ msgstr "Продолжить"
 msgid "reportBug/title"
 msgstr "Переход на форум игры"
 
+msgid "resetBattleContextHintsNotification/cancel"
+msgstr "Отменить"
+
+msgid "resetBattleContextHintsNotification/message"
+msgstr ""
+"%(icon)s%(alert)s Все подсказки в бою, в том\n"
+"числе и %(caption)s, будут воспроизведены заново."
+
+msgid "resetBattleContextHintsNotification/message/alert"
+msgstr "Внимание!"
+
+msgid "resetBattleContextHintsNotification/message/caption"
+msgstr "подсказки для новых игроков"
+
+msgid "resetBattleContextHintsNotification/submit"
+msgstr "Перезапустить"
+
+msgid "resetBattleContextHintsNotification/title"
+msgstr "Подсказки в бою"
+
 msgid "resetGraphics/cancel"
 msgstr "Продолжить"
 
@@ -3280,8 +3300,8 @@ msgstr "Отменить"
 
 msgid "squad/goToAnother/message"
 msgstr ""
-"Вы состоите во взводе. При переходе в другой режим вы будете исключены из "
-"взвода."
+"Вы состоите во взводе. При переходе в другой режим вы будете исключены "
+"из взвода."
 
 msgid "squad/goToAnother/submit"
 msgstr "Перейти"
@@ -3317,7 +3337,7 @@ msgid "squad/leaveDisabled/cancel"
 msgstr "Продолжить"
 
 msgid "squad/leaveDisabled/message"
-msgstr "Невозможно покинуть взвод: вы в основном составе и готовы к бою."
+msgstr "Невозможно покинуть взвод: вы в основном составе и готовы к бою."
 
 msgid "squad/leaveDisabled/title"
 msgstr "Внимание"
@@ -3832,6 +3852,17 @@ msgid "voiceChatInitFailed/message"
 msgstr "Ошибка инициализации голосовой связи: сервис временно недоступен."
 
 msgid "voiceChatInitFailed/title"
+msgstr "Инициализация голосовой связи"
+
+msgid "voiceChatInitFailedByOS/cancel"
+msgstr "Так точно!"
+
+msgid "voiceChatInitFailedByOS/message"
+msgstr ""
+"Ошибка инициализации голосовой связи: данная версия операционной системы "
+"не поддерживается."
+
+msgid "voiceChatInitFailedByOS/title"
 msgstr "Инициализация голосовой связи"
 
 msgid "voiceChatInitSucceded/cancel"

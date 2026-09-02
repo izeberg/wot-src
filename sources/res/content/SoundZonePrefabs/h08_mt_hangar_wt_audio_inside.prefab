@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<version>3</version>
+	<GameObjects>
+		<GameObject>
+			<name>h08_mt_hangar_wt_audio_inside</name>
+			<UUID>20481251-c5fb-4f25-be8c-e3747b84e693</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>Hangar_zone</name>
+			<UUID>1d27cbf9-bf8e-3f2f-acae-92193345029e</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>audio_hangar_additionals_01</name>
+			<UUID>93c4e1a9-8793-4a0a-95d6-23b02cd63f8b</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>audio_hangar_additionals_02</name>
+			<UUID>47e75031-c4e0-343a-a4f1-9784bd8da338</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>audio_hangar_additionals_03</name>
+			<UUID>d5a894d3-8753-3950-85d5-c592f3978603</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>audio_hangar_additionals_04</name>
+			<UUID>341a7967-b4ba-315c-93ee-d26933874451</UUID>
+			<flags>0</flags>
+		</GameObject>
+	</GameObjects>
+	<components>
+		<ComponentPool>
+			<type>Hierarchy</type>
+			<version>2</version>
+			<component>
+				<objectIndex>1</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>20481251-c5fb-4f25-be8c-e3747b84e693</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>2</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>20481251-c5fb-4f25-be8c-e3747b84e693</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>3</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>20481251-c5fb-4f25-be8c-e3747b84e693</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>4</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>20481251-c5fb-4f25-be8c-e3747b84e693</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>5</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>20481251-c5fb-4f25-be8c-e3747b84e693</link>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>Transform</type>
+			<version>1</version>
+			<component>
+				<objectIndex>0</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>1</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							52.6524 -1.5 -476.004
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>2</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							61.4122 2.36602 -202.742
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>30 30 30</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>3</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							126.417 6.30918 -180.814
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>50 50 50</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>4</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							120.286 2.02655 -424.075
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>50 50 50</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>5</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							76.1577 3.90733 -400.03
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>50 50 50</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							1.87159e-06 0 0
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>PrismArea</type>
+			<version>1</version>
+			<component>
+				<objectIndex>1</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Curvature</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Tesselation Step</name>
+						<value>20</value>
+					</property>
+					<property>
+						<name>Height</name>
+						<value>30</value>
+					</property>
+					<property>
+						<name>Points</name>
+						<collection>
+							<item>
+								<value>0 0</value>
+							</item>
+							<item>
+								<value>
+									-0.00177002 1.78238
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									1.7688 362.385
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									79.4238 358.096
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									79.4225 0.1539
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									1.9975 -0.00630188
+									<!--BW_String-->
+								</value>
+							</item>
+						</collection>
+					</property>
+					<property>
+						<name>Douglas-Peucker Epsilon</name>
+						<value>
+							0.2
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>SoundZone</type>
+			<version>1</version>
+			<component>
+				<objectIndex>1</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Zone Enter Event</name>
+						<value>hangar_h08_amb_hangar_enter</value>
+					</property>
+					<property>
+						<name>Zone Exit Event</name>
+						<value>hangar_h08_amb_hangar_exit</value>
+					</property>
+					<property>
+						<name>Emitter Event</name>
+						<value>hangar_h08_amb_hangar</value>
+					</property>
+					<property>
+						<name>Reverb</name>
+						<value>AUX_reverb_hangar_2025</value>
+					</property>
+					<property>
+						<name>Reverb Level</name>
+						<value>100</value>
+					</property>
+					<property>
+						<name>Volume Deviation</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Color</name>
+						<value>0.992157 0.415686 0.243137 0.494118</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>Sound3D</type>
+			<version>1</version>
+			<component>
+				<objectIndex>2</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Object name</name>
+						<value/>
+					</property>
+					<property>
+						<name>Event name</name>
+						<value>hangar_h08_hangar_additionals_01</value>
+					</property>
+					<property>
+						<name>AutoStart</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>3</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Object name</name>
+						<value/>
+					</property>
+					<property>
+						<name>Event name</name>
+						<value>hangar_h08_hangar_additionals_02</value>
+					</property>
+					<property>
+						<name>AutoStart</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>4</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Object name</name>
+						<value/>
+					</property>
+					<property>
+						<name>Event name</name>
+						<value>hangar_h08_hangar_additionals_03</value>
+					</property>
+					<property>
+						<name>AutoStart</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>5</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Object name</name>
+						<value/>
+					</property>
+					<property>
+						<name>Event name</name>
+						<value>hangar_h08_hangar_additionals_04</value>
+					</property>
+					<property>
+						<name>AutoStart</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+	</components>
+</root>

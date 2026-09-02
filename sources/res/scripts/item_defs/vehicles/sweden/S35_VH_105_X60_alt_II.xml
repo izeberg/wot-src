@@ -2863,7 +2863,7 @@
 						0.6
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>18</reloadTime>
+					<reloadTime>19</reloadTime>
 					<aimingTime>
 						5.0
 						<!--BW_String-->
@@ -2887,7 +2887,10 @@
 						<rate>120</rate>
 					</clip>
 					<autoreload>
-						<reloadTime>12 15 18</reloadTime>
+						<reloadTime>
+							16 17.5 19
+							<!--BW_String-->
+						</reloadTime>
 					</autoreload>
 					<burst>
 						<count>3</count>

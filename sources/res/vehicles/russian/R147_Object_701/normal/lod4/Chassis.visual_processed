@@ -993,12 +993,11 @@
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
 		<node>V_BlendBone</node>
-		<node>Track_VT_L0_BlendBone</node>
-		<node>Track_VD_L0_BlendBone</node>
+		<node>W_L0_BlendBone</node>
 		<node>Track_L0_BlendBone</node>
-		<node>Track_VT_L3_BlendBone</node>
+		<node>Track_VD_L0_BlendBone</node>
 		<node>Track_L6_BlendBone</node>
-		<node>Track_L5_BlendBone</node>
+		<node>Track_VT_L3_BlendBone</node>
 		<geometry>
 			<vertices>chassis_L_Shape.vertices</vertices>
 			<primitive>chassis_L_Shape.indices</primitive>
@@ -1029,6 +1028,10 @@
 						excludeMaskAndAOMap
 						<Texture>vehicles/russian/R147_Object_701/Object_701_proxy_AO.dds</Texture>
 					</property>
+					<property>
+						alphaReference
+						<Int>0</Int>
+					</property>
 				</material>
 				<groupOrigin>-1.245517 0.523710 0.013994</groupOrigin>
 			</primitiveGroup>
@@ -1037,14 +1040,12 @@
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
 		<node>V_BlendBone</node>
-		<node>Track_VT_R0_BlendBone</node>
-		<node>Track_VD_R0_BlendBone</node>
+		<node>W_R0_BlendBone</node>
 		<node>Track_R0_BlendBone</node>
-		<node>Track_R1_BlendBone</node>
-		<node>Track_VT_R3_BlendBone</node>
+		<node>Track_VD_R0_BlendBone</node>
 		<node>Track_R6_BlendBone</node>
-		<node>Track_R5_BlendBone</node>
 		<node>Track_VD_R1_BlendBone</node>
+		<node>Track_VT_R3_BlendBone</node>
 		<geometry>
 			<vertices>chassis_R_Shape.vertices</vertices>
 			<primitive>chassis_R_Shape.indices</primitive>
@@ -1075,6 +1076,10 @@
 						excludeMaskAndAOMap
 						<Texture>vehicles/russian/R147_Object_701/Object_701_proxy_AO.dds</Texture>
 					</property>
+					<property>
+						alphaReference
+						<Int>0</Int>
+					</property>
 				</material>
 				<groupOrigin>1.245517 0.523710 0.013994</groupOrigin>
 			</primitiveGroup>
@@ -1085,6 +1090,6 @@
 		<min>-1.621030 0.007847 -3.300072</min>
 		<max>1.621030 1.039573 3.272085</max>
 	</boundingBox>
-	<geometrySize>7268</geometrySize>
-	<minUVDensity>0.001782</minUVDensity>
+	<geometrySize>4136</geometrySize>
+	<minUVDensity>0.001589</minUVDensity>
 </root>

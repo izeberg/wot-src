@@ -374,6 +374,11 @@ class ClanInfo(object):
         self.abbrev = abbrev
         self.role = role
 
+    def __eq__(self, other):
+        if not isinstance(other, ClanInfo):
+            return False
+        return self.dbID == other.dbID and self.abbrev == other.abbrev and self.role == other.role
+
     def clear(self):
         self.dbID = 0
         self.abbrev = ''

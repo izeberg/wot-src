@@ -8,6 +8,12 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "decorator/style2D"
+msgstr "2D-стиль «%(value)s»"
+
+msgid "decorator/style3D"
+msgstr "3D-стиль «%(value)s»"
+
 msgid "error/button"
 msgstr "Так точно!"
 
@@ -84,6 +90,9 @@ msgid "tabs/items/new_device_pm3"
 msgstr ""
 "Штатное\n"
 "оборудование"
+
+msgid "tabs/items/style"
+msgstr "Кастомизация"
 
 msgid "tabs/items/trophy"
 msgstr "Трофейное оборудование"

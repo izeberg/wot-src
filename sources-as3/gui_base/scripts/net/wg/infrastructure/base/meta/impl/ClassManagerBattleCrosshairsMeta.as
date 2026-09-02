@@ -63,7 +63,22 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.components.crosshairPanel.components.overheatBar.OverheatMarkersDrawer;
    import net.wg.gui.components.crosshairPanel.components.speedometer.Speedometer;
    import net.wg.gui.components.crosshairPanel.components.speedometer.SpeedometerWarningAnim;
+   import net.wg.gui.components.crosshairPanel.components.wt.BarrierHint;
+   import net.wg.gui.components.crosshairPanel.components.wt.IncreaseDamage;
+   import net.wg.gui.components.crosshairPanel.components.wt.PlasmaExtraDamage;
+   import net.wg.gui.components.crosshairPanel.components.wt.PlasmaIndicator;
+   import net.wg.gui.components.crosshairPanel.components.wt.ReloadBoost;
+   import net.wg.gui.components.crosshairPanel.components.wt.ReloadBoostChargeBar;
+   import net.wg.gui.components.crosshairPanel.components.wt.components.IncreaseDamageIndicator;
+   import net.wg.gui.components.crosshairPanel.components.wt.components.IncreaseDamageProgress;
+   import net.wg.gui.components.crosshairPanel.components.wt.components.PlasmaExtraDamageBraces;
+   import net.wg.gui.components.crosshairPanel.components.wt.events.IncreaseDamageEvent;
    import net.wg.gui.components.crosshairPanel.constants.CrosshairConsts;
+   import net.wg.gui.components.crosshairPanel.constants.WT_CROSSHAIR_CHILDREN_NAMES;
+   import net.wg.gui.components.crosshairPanel.constants.WT_CROSSHAIR_LINKAGES;
+   import net.wg.gui.components.crosshairPanel.wt.WTCrosshairArcade;
+   import net.wg.gui.components.crosshairPanel.wt.WTCrosshairBase;
+   import net.wg.gui.components.crosshairPanel.wt.WTCrosshairPanelContainer;
    
    public class ClassManagerBattleCrosshairsMeta
    {
@@ -188,13 +203,43 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_SPEEDOMETER_SPEEDOMETERWARNINGANIM:Class = SpeedometerWarningAnim;
       
+      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_WT_BARRIERHINT:Class = BarrierHint;
+      
+      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_WT_INCREASEDAMAGE:Class = IncreaseDamage;
+      
+      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_WT_PLASMAEXTRADAMAGE:Class = PlasmaExtraDamage;
+      
+      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_WT_PLASMAINDICATOR:Class = PlasmaIndicator;
+      
+      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_WT_RELOADBOOST:Class = ReloadBoost;
+      
+      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_WT_RELOADBOOSTCHARGEBAR:Class = ReloadBoostChargeBar;
+      
+      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_WT_COMPONENTS_INCREASEDAMAGEINDICATOR:Class = IncreaseDamageIndicator;
+      
+      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_WT_COMPONENTS_INCREASEDAMAGEPROGRESS:Class = IncreaseDamageProgress;
+      
+      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_WT_COMPONENTS_PLASMAEXTRADAMAGEBRACES:Class = PlasmaExtraDamageBraces;
+      
+      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_WT_EVENTS_INCREASEDAMAGEEVENT:Class = IncreaseDamageEvent;
+      
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_CONSTANTS_CROSSHAIRCONSTS:Class = CrosshairConsts;
+      
+      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_CONSTANTS_WT_CROSSHAIR_CHILDREN_NAMES:Class = WT_CROSSHAIR_CHILDREN_NAMES;
+      
+      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_CONSTANTS_WT_CROSSHAIR_LINKAGES:Class = WT_CROSSHAIR_LINKAGES;
       
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_VO_CROSSHAIRSETTINGSVO:Class = CrosshairSettingsVO;
       
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_VO_GUNMARKERINDICATORVO:Class = GunMarkerIndicatorVO;
       
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_VO_SHOTFLYTIMEVO:Class = ShotFlyTimeVO;
+      
+      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_WT_WTCROSSHAIRARCADE:Class = WTCrosshairArcade;
+      
+      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_WT_WTCROSSHAIRBASE:Class = WTCrosshairBase;
+      
+      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_WT_WTCROSSHAIRPANELCONTAINER:Class = WTCrosshairPanelContainer;
        
       
       public function ClassManagerBattleCrosshairsMeta()

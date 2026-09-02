@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<Properties>
+		<affectedTeam>
+			<Type>INT32</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<Default>-1</Default>
+		</affectedTeam>
+	</Properties>
+	<DefaultKeyName>wtDomeComponent</DefaultKeyName>
+</root>

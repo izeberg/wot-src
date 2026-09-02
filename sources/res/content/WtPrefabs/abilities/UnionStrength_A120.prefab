@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<version>3</version>
+	<GameObjects>
+		<GameObject>
+			<name>UnionStrength_Thunderbolt</name>
+			<UUID>7e932491-189b-4770-87e1-6d1361391280</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>Turret</name>
+			<UUID>041f4372-3fd2-4b4d-89ff-f1d6116d5cae</UUID>
+			<flags>0</flags>
+		</GameObject>
+	</GameObjects>
+	<components>
+		<ComponentPool>
+			<type>Hierarchy</type>
+			<version>2</version>
+			<component>
+				<objectIndex>1</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>7e932491-189b-4770-87e1-6d1361391280</link>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>Transform</type>
+			<version>1</version>
+			<component>
+				<objectIndex>0</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>1</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>0 0 0</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>Particle</type>
+			<version>1</version>
+			<component>
+				<objectIndex>1</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>effect</name>
+						<isAsset>true</isAsset>
+						<value>particles/Environment/event_white_tiger/player_tank/heal/wt_A120_power_of_flock.eff</value>
+					</property>
+					<property>
+						<name>oneTimeEffect</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>autoStart</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Override opacity</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Opacity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Rate</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Gravity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Wind weight</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Tangent Direction</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>FPS</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Start Speed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Particle Size</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>LifeTime</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Size Length</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Tangent Speed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Sprite Start Angle</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Sprite Start Angle Speed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Tint Color</name>
+						<value>1 1 1 1</value>
+					</property>
+					<property>
+						<name>Emitter size</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Epicenter offset</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Model Start Angle Min</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Model Start Angle Max</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Model Start Angle Speed Min</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Model Start Angle Speed Max</name>
+						<value>0 0 0</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>ComponentsVisibilityController</type>
+			<version>1</version>
+			<component>
+				<objectIndex>1</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Visible in ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SNIPER MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in ARTY MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in POSTMORTEM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in RESPAWN_DEATH MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DEATH_FREE_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DUAL_GUN MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
+						<value>0</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>DynamicModel</type>
+			<version>1</version>
+			<component>
+				<objectIndex>0</objectIndex>
+				<flags>2</flags>
+				<config>
+					<property>
+						<name>Model name</name>
+						<isAsset>true</isAsset>
+						<value>vehicles/american/A120_M48A5/_skins/A120_M48A5_3DSt_TLXXL/normal/lod0/Turret_01.model</value>
+					</property>
+					<property>
+						<name>Cast Shadows</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Parts</name>
+						<collection/>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>NodeFollower</type>
+			<version>1</version>
+			<component>
+				<objectIndex>1</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>NodeName</name>
+						<value>turret</value>
+					</property>
+					<property>
+						<name>DeactivateIfInvalid</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>modelLink</name>
+						<link>7e932491-189b-4770-87e1-6d1361391280</link>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>VehicleSound</type>
+			<version>1</version>
+			<component>
+				<objectIndex>0</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>onEnterSound</name>
+						<value>ev_wt_ability_union_strength_start</value>
+					</property>
+					<property>
+						<name>onExitSound</name>
+						<value>ev_wt_ability_union_strength_stop</value>
+					</property>
+					<property>
+						<name>conditions</name>
+						<value>only_for_player</value>
+					</property>
+					<property>
+						<name>onEnterSoundNPC</name>
+						<value/>
+					</property>
+					<property>
+						<name>onExitSoundNPC</name>
+						<value/>
+					</property>
+					<property>
+						<name>soundObjectName</name>
+						<value/>
+					</property>
+					<property>
+						<name>useNPCEvents</name>
+						<value>0</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+	</components>
+</root>

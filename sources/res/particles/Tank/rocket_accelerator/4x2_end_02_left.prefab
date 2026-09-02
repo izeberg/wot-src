@@ -750,7 +750,7 @@
 						<value>particles/Tank/rocket_accelerator/end_fire.eff</value>
 					</property>
 					<property>
-						<name>Rate</name>
+						<name>oneTimeEffect</name>
 						<value>1</value>
 					</property>
 					<property>
@@ -758,8 +758,88 @@
 						<value>1</value>
 					</property>
 					<property>
-						<name>oneTimeEffect</name>
+						<name>Override opacity</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Opacity</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>Rate</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Gravity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Wind weight</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Tangent Direction</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>FPS</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Start Speed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Particle Size</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>LifeTime</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Size Length</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Tangent Speed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Sprite Start Angle</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Sprite Start Angle Speed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Tint Color</name>
+						<value>1 1 1 1</value>
+					</property>
+					<property>
+						<name>Emitter size</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Epicenter offset</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Model Start Angle Min</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Model Start Angle Max</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Model Start Angle Speed Min</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Model Start Angle Speed Max</name>
+						<value>0 0 0</value>
 					</property>
 				</config>
 			</component>
@@ -773,7 +853,7 @@
 						<value>particles/Tank/rocket_accelerator/end_fire.eff</value>
 					</property>
 					<property>
-						<name>Rate</name>
+						<name>oneTimeEffect</name>
 						<value>1</value>
 					</property>
 					<property>
@@ -781,8 +861,88 @@
 						<value>1</value>
 					</property>
 					<property>
-						<name>oneTimeEffect</name>
+						<name>Override opacity</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Opacity</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>Rate</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Gravity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Wind weight</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Tangent Direction</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>FPS</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Start Speed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Particle Size</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>LifeTime</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Size Length</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Tangent Speed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Sprite Start Angle</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Sprite Start Angle Speed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Tint Color</name>
+						<value>1 1 1 1</value>
+					</property>
+					<property>
+						<name>Emitter size</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Epicenter offset</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Model Start Angle Min</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Model Start Angle Max</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Model Start Angle Speed Min</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Model Start Angle Speed Max</name>
+						<value>0 0 0</value>
 					</property>
 				</config>
 			</component>
@@ -796,7 +956,7 @@
 						<value>particles/Tank/rocket_accelerator/end_fire.eff</value>
 					</property>
 					<property>
-						<name>Rate</name>
+						<name>oneTimeEffect</name>
 						<value>1</value>
 					</property>
 					<property>
@@ -804,8 +964,88 @@
 						<value>1</value>
 					</property>
 					<property>
-						<name>oneTimeEffect</name>
+						<name>Override opacity</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Opacity</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>Rate</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Gravity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Wind weight</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Tangent Direction</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>FPS</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Start Speed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Particle Size</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>LifeTime</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Size Length</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Tangent Speed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Sprite Start Angle</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Sprite Start Angle Speed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Tint Color</name>
+						<value>1 1 1 1</value>
+					</property>
+					<property>
+						<name>Emitter size</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Epicenter offset</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Model Start Angle Min</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Model Start Angle Max</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Model Start Angle Speed Min</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Model Start Angle Speed Max</name>
+						<value>0 0 0</value>
 					</property>
 				</config>
 			</component>
@@ -819,7 +1059,7 @@
 						<value>particles/Tank/rocket_accelerator/end_fire.eff</value>
 					</property>
 					<property>
-						<name>Rate</name>
+						<name>oneTimeEffect</name>
 						<value>1</value>
 					</property>
 					<property>
@@ -827,8 +1067,88 @@
 						<value>1</value>
 					</property>
 					<property>
-						<name>oneTimeEffect</name>
+						<name>Override opacity</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Opacity</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>Rate</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Gravity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Wind weight</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Tangent Direction</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>FPS</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Start Speed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Particle Size</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>LifeTime</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Size Length</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Tangent Speed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Sprite Start Angle</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Sprite Start Angle Speed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Tint Color</name>
+						<value>1 1 1 1</value>
+					</property>
+					<property>
+						<name>Emitter size</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Epicenter offset</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Model Start Angle Min</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Model Start Angle Max</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Model Start Angle Speed Min</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Model Start Angle Speed Max</name>
+						<value>0 0 0</value>
 					</property>
 				</config>
 			</component>
@@ -842,7 +1162,7 @@
 						<value>particles/Tank/rocket_accelerator/end_fire.eff</value>
 					</property>
 					<property>
-						<name>Rate</name>
+						<name>oneTimeEffect</name>
 						<value>1</value>
 					</property>
 					<property>
@@ -850,8 +1170,88 @@
 						<value>1</value>
 					</property>
 					<property>
-						<name>oneTimeEffect</name>
+						<name>Override opacity</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Opacity</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>Rate</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Gravity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Wind weight</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Tangent Direction</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>FPS</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Start Speed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Particle Size</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>LifeTime</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Size Length</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Tangent Speed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Sprite Start Angle</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Sprite Start Angle Speed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Tint Color</name>
+						<value>1 1 1 1</value>
+					</property>
+					<property>
+						<name>Emitter size</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Epicenter offset</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Model Start Angle Min</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Model Start Angle Max</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Model Start Angle Speed Min</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Model Start Angle Speed Max</name>
+						<value>0 0 0</value>
 					</property>
 				</config>
 			</component>
@@ -865,7 +1265,7 @@
 						<value>particles/Tank/rocket_accelerator/end_fire.eff</value>
 					</property>
 					<property>
-						<name>Rate</name>
+						<name>oneTimeEffect</name>
 						<value>1</value>
 					</property>
 					<property>
@@ -873,8 +1273,88 @@
 						<value>1</value>
 					</property>
 					<property>
-						<name>oneTimeEffect</name>
+						<name>Override opacity</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Opacity</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>Rate</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Gravity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Wind weight</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Tangent Direction</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>FPS</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Start Speed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Particle Size</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>LifeTime</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Size Length</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Tangent Speed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Sprite Start Angle</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Sprite Start Angle Speed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Tint Color</name>
+						<value>1 1 1 1</value>
+					</property>
+					<property>
+						<name>Emitter size</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Epicenter offset</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Model Start Angle Min</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Model Start Angle Max</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Model Start Angle Speed Min</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Model Start Angle Speed Max</name>
+						<value>0 0 0</value>
 					</property>
 				</config>
 			</component>
@@ -888,7 +1368,7 @@
 						<value>particles/Tank/rocket_accelerator/end_fire.eff</value>
 					</property>
 					<property>
-						<name>Rate</name>
+						<name>oneTimeEffect</name>
 						<value>1</value>
 					</property>
 					<property>
@@ -896,8 +1376,88 @@
 						<value>1</value>
 					</property>
 					<property>
-						<name>oneTimeEffect</name>
+						<name>Override opacity</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Opacity</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>Rate</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Gravity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Wind weight</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Tangent Direction</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>FPS</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Start Speed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Particle Size</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>LifeTime</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Size Length</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Tangent Speed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Sprite Start Angle</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Sprite Start Angle Speed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Tint Color</name>
+						<value>1 1 1 1</value>
+					</property>
+					<property>
+						<name>Emitter size</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Epicenter offset</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Model Start Angle Min</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Model Start Angle Max</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Model Start Angle Speed Min</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Model Start Angle Speed Max</name>
+						<value>0 0 0</value>
 					</property>
 				</config>
 			</component>
@@ -911,7 +1471,7 @@
 						<value>particles/Tank/rocket_accelerator/end_fire.eff</value>
 					</property>
 					<property>
-						<name>Rate</name>
+						<name>oneTimeEffect</name>
 						<value>1</value>
 					</property>
 					<property>
@@ -919,8 +1479,88 @@
 						<value>1</value>
 					</property>
 					<property>
-						<name>oneTimeEffect</name>
+						<name>Override opacity</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Opacity</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>Rate</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Gravity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Wind weight</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Tangent Direction</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>FPS</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Start Speed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Particle Size</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>LifeTime</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Size Length</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Tangent Speed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Sprite Start Angle</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Sprite Start Angle Speed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>Tint Color</name>
+						<value>1 1 1 1</value>
+					</property>
+					<property>
+						<name>Emitter size</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Epicenter offset</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Model Start Angle Min</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Model Start Angle Max</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Model Start Angle Speed Min</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Model Start Angle Speed Max</name>
+						<value>0 0 0</value>
 					</property>
 				</config>
 			</component>
@@ -944,7 +1584,7 @@
 									<property>
 										<name>Path</name>
 										<isAsset>true</isAsset>
-										<value>particles/Tank/rocket_accelerator/light_start_02.seq</value>
+										<value>particles/Tank/rocket_accelerator/light_end_02.seq</value>
 									</property>
 									<property>
 										<name>Properties</name>
@@ -959,7 +1599,7 @@
 											</property>
 											<property>
 												<name>loop</name>
-												<value>1</value>
+												<value>0</value>
 											</property>
 											<property>
 												<name>loopCount</name>
@@ -998,7 +1638,7 @@
 					<property>
 						<name>Path</name>
 						<isAsset>true</isAsset>
-						<value>particles/Tank/rocket_accelerator/light_start_02.seq</value>
+						<value>particles/Tank/rocket_accelerator/light_end_02.seq</value>
 					</property>
 					<property>
 						<name>Delay</name>
@@ -1010,7 +1650,7 @@
 					</property>
 					<property>
 						<name>Loop</name>
-						<value>1</value>
+						<value>0</value>
 					</property>
 					<property>
 						<name>Loop Count</name>
@@ -1034,7 +1674,7 @@
 									<property>
 										<name>Path</name>
 										<isAsset>true</isAsset>
-										<value>particles/Tank/rocket_accelerator/light_start_02.seq</value>
+										<value>particles/Tank/rocket_accelerator/light_end_02.seq</value>
 									</property>
 									<property>
 										<name>Properties</name>
@@ -1049,7 +1689,7 @@
 											</property>
 											<property>
 												<name>loop</name>
-												<value>1</value>
+												<value>0</value>
 											</property>
 											<property>
 												<name>loopCount</name>
@@ -1088,7 +1728,7 @@
 					<property>
 						<name>Path</name>
 						<isAsset>true</isAsset>
-						<value>particles/Tank/rocket_accelerator/light_start_02.seq</value>
+						<value>particles/Tank/rocket_accelerator/light_end_02.seq</value>
 					</property>
 					<property>
 						<name>Delay</name>
@@ -1100,7 +1740,7 @@
 					</property>
 					<property>
 						<name>Loop</name>
-						<value>1</value>
+						<value>0</value>
 					</property>
 					<property>
 						<name>Loop Count</name>
@@ -1124,7 +1764,7 @@
 									<property>
 										<name>Path</name>
 										<isAsset>true</isAsset>
-										<value>particles/Tank/rocket_accelerator/light_start_02.seq</value>
+										<value>particles/Tank/rocket_accelerator/light_end_02.seq</value>
 									</property>
 									<property>
 										<name>Properties</name>
@@ -1139,7 +1779,7 @@
 											</property>
 											<property>
 												<name>loop</name>
-												<value>1</value>
+												<value>0</value>
 											</property>
 											<property>
 												<name>loopCount</name>
@@ -1178,7 +1818,7 @@
 					<property>
 						<name>Path</name>
 						<isAsset>true</isAsset>
-						<value>particles/Tank/rocket_accelerator/light_start_02.seq</value>
+						<value>particles/Tank/rocket_accelerator/light_end_02.seq</value>
 					</property>
 					<property>
 						<name>Delay</name>
@@ -1190,7 +1830,7 @@
 					</property>
 					<property>
 						<name>Loop</name>
-						<value>1</value>
+						<value>0</value>
 					</property>
 					<property>
 						<name>Loop Count</name>
@@ -1214,7 +1854,7 @@
 									<property>
 										<name>Path</name>
 										<isAsset>true</isAsset>
-										<value>particles/Tank/rocket_accelerator/light_start_02.seq</value>
+										<value>particles/Tank/rocket_accelerator/light_end_02.seq</value>
 									</property>
 									<property>
 										<name>Properties</name>
@@ -1229,7 +1869,7 @@
 											</property>
 											<property>
 												<name>loop</name>
-												<value>1</value>
+												<value>0</value>
 											</property>
 											<property>
 												<name>loopCount</name>
@@ -1268,7 +1908,7 @@
 					<property>
 						<name>Path</name>
 						<isAsset>true</isAsset>
-						<value>particles/Tank/rocket_accelerator/light_start_02.seq</value>
+						<value>particles/Tank/rocket_accelerator/light_end_02.seq</value>
 					</property>
 					<property>
 						<name>Delay</name>
@@ -1280,7 +1920,7 @@
 					</property>
 					<property>
 						<name>Loop</name>
-						<value>1</value>
+						<value>0</value>
 					</property>
 					<property>
 						<name>Loop Count</name>
@@ -1304,7 +1944,7 @@
 									<property>
 										<name>Path</name>
 										<isAsset>true</isAsset>
-										<value>particles/Tank/rocket_accelerator/light_start_02.seq</value>
+										<value>particles/Tank/rocket_accelerator/light_end_02.seq</value>
 									</property>
 									<property>
 										<name>Properties</name>
@@ -1319,7 +1959,7 @@
 											</property>
 											<property>
 												<name>loop</name>
-												<value>1</value>
+												<value>0</value>
 											</property>
 											<property>
 												<name>loopCount</name>
@@ -1358,7 +1998,7 @@
 					<property>
 						<name>Path</name>
 						<isAsset>true</isAsset>
-						<value>particles/Tank/rocket_accelerator/light_start_02.seq</value>
+						<value>particles/Tank/rocket_accelerator/light_end_02.seq</value>
 					</property>
 					<property>
 						<name>Delay</name>
@@ -1370,7 +2010,7 @@
 					</property>
 					<property>
 						<name>Loop</name>
-						<value>1</value>
+						<value>0</value>
 					</property>
 					<property>
 						<name>Loop Count</name>
@@ -1394,7 +2034,7 @@
 									<property>
 										<name>Path</name>
 										<isAsset>true</isAsset>
-										<value>particles/Tank/rocket_accelerator/light_start_02.seq</value>
+										<value>particles/Tank/rocket_accelerator/light_end_02.seq</value>
 									</property>
 									<property>
 										<name>Properties</name>
@@ -1409,7 +2049,7 @@
 											</property>
 											<property>
 												<name>loop</name>
-												<value>1</value>
+												<value>0</value>
 											</property>
 											<property>
 												<name>loopCount</name>
@@ -1448,7 +2088,7 @@
 					<property>
 						<name>Path</name>
 						<isAsset>true</isAsset>
-						<value>particles/Tank/rocket_accelerator/light_start_02.seq</value>
+						<value>particles/Tank/rocket_accelerator/light_end_02.seq</value>
 					</property>
 					<property>
 						<name>Delay</name>
@@ -1460,7 +2100,7 @@
 					</property>
 					<property>
 						<name>Loop</name>
-						<value>1</value>
+						<value>0</value>
 					</property>
 					<property>
 						<name>Loop Count</name>
@@ -1484,7 +2124,7 @@
 									<property>
 										<name>Path</name>
 										<isAsset>true</isAsset>
-										<value>particles/Tank/rocket_accelerator/light_start_02.seq</value>
+										<value>particles/Tank/rocket_accelerator/light_end_02.seq</value>
 									</property>
 									<property>
 										<name>Properties</name>
@@ -1499,7 +2139,7 @@
 											</property>
 											<property>
 												<name>loop</name>
-												<value>1</value>
+												<value>0</value>
 											</property>
 											<property>
 												<name>loopCount</name>
@@ -1538,7 +2178,7 @@
 					<property>
 						<name>Path</name>
 						<isAsset>true</isAsset>
-						<value>particles/Tank/rocket_accelerator/light_start_02.seq</value>
+						<value>particles/Tank/rocket_accelerator/light_end_02.seq</value>
 					</property>
 					<property>
 						<name>Delay</name>
@@ -1550,7 +2190,7 @@
 					</property>
 					<property>
 						<name>Loop</name>
-						<value>1</value>
+						<value>0</value>
 					</property>
 					<property>
 						<name>Loop Count</name>
@@ -1574,7 +2214,7 @@
 									<property>
 										<name>Path</name>
 										<isAsset>true</isAsset>
-										<value>particles/Tank/rocket_accelerator/light_start_02.seq</value>
+										<value>particles/Tank/rocket_accelerator/light_end_02.seq</value>
 									</property>
 									<property>
 										<name>Properties</name>
@@ -1589,7 +2229,7 @@
 											</property>
 											<property>
 												<name>loop</name>
-												<value>1</value>
+												<value>0</value>
 											</property>
 											<property>
 												<name>loopCount</name>
@@ -1628,7 +2268,7 @@
 					<property>
 						<name>Path</name>
 						<isAsset>true</isAsset>
-						<value>particles/Tank/rocket_accelerator/light_start_02.seq</value>
+						<value>particles/Tank/rocket_accelerator/light_end_02.seq</value>
 					</property>
 					<property>
 						<name>Delay</name>
@@ -1640,7 +2280,7 @@
 					</property>
 					<property>
 						<name>Loop</name>
-						<value>1</value>
+						<value>0</value>
 					</property>
 					<property>
 						<name>Loop Count</name>

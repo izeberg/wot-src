@@ -83,7 +83,10 @@ class MissionsPage(LobbySubView, MissionsPageMeta):
                       backport.sound(R.sounds.black_market_exit())), 
        'silver_hunt': (
                      backport.sound(R.sounds.silver_hunt_enter()),
-                     backport.sound(R.sounds.silver_hunt_exit()))}
+                     backport.sound(R.sounds.silver_hunt_exit())), 
+       'events': (
+                backport.sound(R.sounds.events_enter()),
+                backport.sound(R.sounds.events_exit()))}
     eventsCache = dependency.descriptor(IEventsCache)
     lobbyContext = dependency.descriptor(ILobbyContext)
     eventsController = dependency.descriptor(IEventBoardController)

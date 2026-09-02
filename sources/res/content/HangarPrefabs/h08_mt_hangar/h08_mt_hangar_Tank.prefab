@@ -161,7 +161,7 @@
 					<property>
 						<name>Position</name>
 						<value>
-							-4.57764e-05 0.500301 4.57764e-05
+							-5.34058e-05 0.5 3.05176e-05
 							<!--BW_String-->
 						</value>
 					</property>
@@ -175,7 +175,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							3.16102e-08 -5.96039e-08 -7.37574e-08
+							3.16102e-08 -5.96036e-08 -7.37575e-08
 							<!--BW_String-->
 						</value>
 					</property>
@@ -188,7 +188,7 @@
 					<property>
 						<name>Position</name>
 						<value>
-							-10.3113 2.49494 -5.60814
+							-1.33643 0.863053 10.8843
 							<!--BW_String-->
 						</value>
 					</property>
@@ -202,7 +202,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							0.20944 1.07266 -1.36483e-07
+							0.0785401 3.01942 -1.09793e-07
 							<!--BW_String-->
 						</value>
 					</property>
@@ -215,7 +215,7 @@
 					<property>
 						<name>Position</name>
 						<value>
-							-19.6325 3.81618 -1.52588e-05
+							-2.9353 4.52933 16.6469
 							<!--BW_String-->
 						</value>
 					</property>
@@ -229,7 +229,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							0.191986 1.5708 -2.10983e-07
+							0.2618 2.96706 4.7079e-13
 							<!--BW_String-->
 						</value>
 					</property>
@@ -253,7 +253,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							-7.13335e-08 0 -2.46496e-07
+							-7.13335e-08 6.56667e-13 -2.46496e-07
 							<!--BW_String-->
 						</value>
 					</property>
@@ -290,7 +290,7 @@
 					<property>
 						<name>Position</name>
 						<value>
-							-2.25719 0.196204 -12.801
+							-12.3087 0.18866 2.17036
 							<!--BW_String-->
 						</value>
 					</property>
@@ -301,7 +301,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							0.0150932 0.174533 4.87563e-08
+							0.0150934 1.74533 -2.18882e-07
 							<!--BW_String-->
 						</value>
 					</property>
@@ -314,7 +314,7 @@
 					<property>
 						<name>Position</name>
 						<value>
-							-4.57764e-05 1.6 4.57764e-05
+							-4.57764e-05 1.6 3.8147e-05
 							<!--BW_String-->
 						</value>
 					</property>
@@ -328,7 +328,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							2.41319e-06 -2.39416 -1.05368e-06
+							1.05367e-06 -0.823364 4.13192e-07
 							<!--BW_String-->
 						</value>
 					</property>
@@ -341,7 +341,7 @@
 					<property>
 						<name>Position</name>
 						<value>
-							-7.04138 0.196253 10.9261
+							-6.77058 0.188703 10.5059
 							<!--BW_String-->
 						</value>
 					</property>
@@ -352,7 +352,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							0.015097 2.56912 -1.86848e-07
+							0.0150968 2.56912 -5.58807e-08
 							<!--BW_String-->
 						</value>
 					</property>
@@ -505,25 +505,28 @@
 					<property>
 						<name>PitchLimits</name>
 						<value>
-							-80 -6.5
+							-89 -4.5
 							<!--BW_String-->
 						</value>
 					</property>
 					<property>
 						<name>DistLimits</name>
-						<value>6 11</value>
+						<value>6 13</value>
 					</property>
 					<property>
 						<name>StartYaw</name>
-						<value>-100</value>
+						<value>-7</value>
 					</property>
 					<property>
 						<name>StartPitch</name>
-						<value>-15</value>
+						<value>
+							-4.5
+							<!--BW_String-->
+						</value>
 					</property>
 					<property>
 						<name>StartDist</name>
-						<value>9</value>
+						<value>11</value>
 					</property>
 				</config>
 			</component>
@@ -541,23 +544,26 @@
 					</property>
 					<property>
 						<name>PitchLimits</name>
-						<value>-80 -8</value>
+						<value>-88 -13</value>
 					</property>
 					<property>
 						<name>DistLimits</name>
-						<value>12 15</value>
+						<value>12 22</value>
 					</property>
 					<property>
 						<name>StartYaw</name>
-						<value>-90</value>
+						<value>-10</value>
 					</property>
 					<property>
 						<name>StartPitch</name>
-						<value>-11</value>
+						<value>-15</value>
 					</property>
 					<property>
 						<name>StartDist</name>
-						<value>15</value>
+						<value>
+							17.5
+							<!--BW_String-->
+						</value>
 					</property>
 				</config>
 			</component>
@@ -579,11 +585,11 @@
 					</property>
 					<property>
 						<name>DistLimits</name>
-						<value>12 13</value>
+						<value>12 15</value>
 					</property>
 					<property>
 						<name>StartYaw</name>
-						<value>-170</value>
+						<value>-80</value>
 					</property>
 					<property>
 						<name>StartPitch</name>
@@ -591,7 +597,10 @@
 					</property>
 					<property>
 						<name>StartDist</name>
-						<value>13</value>
+						<value>
+							12.5
+							<!--BW_String-->
+						</value>
 					</property>
 				</config>
 			</component>
@@ -613,7 +622,7 @@
 					</property>
 					<property>
 						<name>DistLimits</name>
-						<value>12 18</value>
+						<value>12 19</value>
 					</property>
 					<property>
 						<name>StartYaw</name>
@@ -631,7 +640,10 @@
 					</property>
 					<property>
 						<name>StartDist</name>
-						<value>13</value>
+						<value>
+							12.5
+							<!--BW_String-->
+						</value>
 					</property>
 				</config>
 			</component>

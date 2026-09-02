@@ -278,6 +278,10 @@ package net.wg.gui.battle.battleRoyale.views.components
          this.clearCoolDownTime();
       }
       
+      public function setBindKeyTextVisibility(param1:Boolean) : void
+      {
+      }
+      
       public function setColorTransform(param1:ColorTransform) : void
       {
          this.iconLoader.transform.colorTransform = param1;
@@ -367,6 +371,18 @@ package net.wg.gui.battle.battleRoyale.views.components
          this._glowId = param1;
          this._showGlow = true;
          invalidate(GLOW_VALIDATION_FLAG);
+      }
+      
+      public function showGlowWithHotkey(param1:int, param2:Boolean = true) : void
+      {
+      }
+      
+      public function updateLevelInformation(param1:int) : void
+      {
+      }
+      
+      public function updateLockedInformation(param1:int, param2:String) : void
+      {
       }
       
       private function onCooldownTick() : void
@@ -468,12 +484,9 @@ package net.wg.gui.battle.battleRoyale.views.components
          invalidate(ACTIVATED_VALIDATION_FLAG);
       }
       
-      public function updateLockedInformation(param1:int, param2:String) : void
+      public function get bindSfKeyCode() : Number
       {
-      }
-      
-      public function updateLevelInformation(param1:int) : void
-      {
+         return 0;
       }
       
       private function get status() : uint

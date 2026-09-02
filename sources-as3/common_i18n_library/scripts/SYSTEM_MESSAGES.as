@@ -1591,6 +1591,8 @@ package
       
       public static const CLANS_NOTIFICATIONS_INVITEDECLINED:String = "#system_messages:clans/notifications/inviteDeclined";
       
+      public static const CLANS_NOTIFICATIONS_STYLE_GIFT:String = "#system_messages:clans/notifications/style_gift";
+      
       public static const EXCHANGE_SUCCESS:String = "#system_messages:exchange/success";
       
       public static const EXCHANGE_NOT_ENOUGH_GOLD:String = "#system_messages:exchange/not_enough_gold";

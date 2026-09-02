@@ -597,7 +597,7 @@ package net.wg.gui.battle.views
          return param1 && param1.visible && param1.parent != this && this.isElementVisible(param1.parent);
       }
       
-      private function showComponent(param1:String, param2:Boolean) : void
+      protected function showComponent(param1:String, param2:Boolean) : void
       {
          var _loc3_:IDisplayableComponent = null;
          _loc3_ = this._componentsStorage[param1];

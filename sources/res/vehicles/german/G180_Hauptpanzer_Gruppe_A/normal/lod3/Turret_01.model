@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/german/G180_Hauptpanzer_Gruppe_A/normal/lod4/Turret_01</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.714128 -0.002051 -2.559327</min>
+		<max>1.715254 1.173424 1.992457</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G180_Hauptpanzer_Gruppe_A/normal/lod3/Turret_01</nodefullVisual>
+</root>

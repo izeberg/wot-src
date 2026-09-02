@@ -92,14 +92,10 @@
 					</property>
 					<property>
 						alphaReference
-						<Int>64</Int>
+						<Int>128</Int>
 					</property>
 					<property>
 						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
-						doubleSided
 						<Bool>true</Bool>
 					</property>
 				</material>
@@ -136,14 +132,10 @@
 					</property>
 					<property>
 						alphaReference
-						<Int>64</Int>
+						<Int>128</Int>
 					</property>
 					<property>
 						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
-						doubleSided
 						<Bool>true</Bool>
 					</property>
 				</material>

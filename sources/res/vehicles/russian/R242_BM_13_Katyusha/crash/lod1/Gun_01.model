@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/russian/R242_BM_13_Katyusha/crash/lod2/Gun_01</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.194645 -0.091852 -1.342052</min>
+		<max>0.958464 1.653991 3.675491</max>
+	</visibilityBox>
+	<nodelessVisual>vehicles/russian/R242_BM_13_Katyusha/crash/lod1/Gun_01</nodelessVisual>
+</root>

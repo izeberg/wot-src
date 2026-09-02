@@ -24,6 +24,6 @@ package net.wg.infrastructure.base.meta
       
       function as_setSubContainerItemsVisibility(param1:Boolean) : void;
       
-      function as_setHeaderVisible(param1:Boolean, param2:Boolean) : void;
+      function as_setInterfaceVisible(param1:Object) : void;
    }
 }

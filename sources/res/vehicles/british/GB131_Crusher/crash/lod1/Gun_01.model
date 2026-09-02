@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>vehicles/british/GB131_Crusher/crash/lod1/Gun_01</nodefullVisual>
 	<parent>vehicles/british/GB131_Crusher/crash/lod2/Gun_01</parent>
 	<tank>true</tank>
 	<extent>64.000000</extent>
@@ -8,4 +7,5 @@
 		<min>-0.600379 -0.384251 -1.250453</min>
 		<max>0.606000 0.429330 4.215000</max>
 	</visibilityBox>
+	<nodefullVisual>vehicles/british/GB131_Crusher/crash/lod1/Gun_01</nodefullVisual>
 </root>

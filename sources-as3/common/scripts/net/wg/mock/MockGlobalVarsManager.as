@@ -114,10 +114,5 @@ package net.wg.mock
       {
          return false;
       }
-      
-      public function isBirthdayS() : Boolean
-      {
-         return false;
-      }
    }
 }

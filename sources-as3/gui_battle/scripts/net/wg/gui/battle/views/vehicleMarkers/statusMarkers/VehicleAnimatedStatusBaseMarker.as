@@ -27,13 +27,13 @@ package net.wg.gui.battle.views.vehicleMarkers.statusMarkers
       
       protected var color:String = "";
       
+      protected var isSourceVehicle:Boolean = false;
+      
       private var _altasIconAlias:String = "";
       
       private var _atlasSrcMode:Boolean;
       
       private var _statusID:int = -1;
-      
-      private var _isSourceVehicle:Boolean = false;
       
       public function VehicleAnimatedStatusBaseMarker()
       {
@@ -129,7 +129,7 @@ package net.wg.gui.battle.views.vehicleMarkers.statusMarkers
          this.oneShotAnimation = param3;
          visible = true;
          gotoAndPlay(!!param4 ? STATE_SHOW : STATE_BASE);
-         this._isSourceVehicle = param2;
+         this.isSourceVehicle = param2;
          this.updateSourceVehicle();
       }
       
@@ -195,7 +195,7 @@ package net.wg.gui.battle.views.vehicleMarkers.statusMarkers
       
       public function get arrowColorFrame() : String
       {
-         return !!this._isSourceVehicle ? this.color + LABEL_SOURCE : this.color;
+         return !!this.isSourceVehicle ? this.color + LABEL_SOURCE : this.color;
       }
    }
 }

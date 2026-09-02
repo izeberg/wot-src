@@ -24,5 +24,29 @@
 			</frame>
 		</track>
 	</sequenceObject>
+	<sequenceObject>
+		<name>Sound 0</name>
+		<type>sound</type>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>14.566668</startTime>
+				<duration>13.233334</duration>
+				<value>Root|</value>
+			</frame>
+		</track>
+		<track>
+			<name>Sound</name>
+			<type>sound</type>
+			<frame>
+				<startTime>14.600000</startTime>
+				<duration>13.197687</duration>
+				<sequenceSound>hangar_h08_dvornik</sequenceSound>
+				<type>play_till_end</type>
+				<fade>0.000000</fade>
+			</frame>
+		</track>
+	</sequenceObject>
 	<events/>
 </root>

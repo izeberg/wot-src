@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<itemGroup>
+		<name>BP21_01_Paint_145</name>
+		<userString>#vehicle_customization:repaint/color_group_04</userString>
+		<season>ALL</season>
+		<historical>0</historical>
+		<tags>hiddenInUI</tags>
+		<priceGroup>paints 20g notInShop</priceGroup>
+		<paint>
+			<id>31540</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_DEV.png</texture>
+			<userString>#vehicle_customization:Placeholder/name</userString>
+			<description>#vehicle_customization:Placeholder/description</description>
+			<color>76 76 60 255</color>
+			<gloss>
+				0.5
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.2
+				<!--BW_String-->
+			</metallic>
+		</paint>
+	</itemGroup>
+</root>

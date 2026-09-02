@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/intunion/Un18_VT_49/normal/lod3/Hull</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<nodefullVisual>vehicles/intunion/Un18_VT_49/normal/lod2/Hull</nodefullVisual>
+	<visibilityBox>
+		<min>-1.629050 -0.890156 -3.623307</min>
+		<max>1.582370 0.576678 3.476613</max>
+	</visibilityBox>
+</root>

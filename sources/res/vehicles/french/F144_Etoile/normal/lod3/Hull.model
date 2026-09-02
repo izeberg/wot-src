@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/french/F144_Etoile/normal/lod4/Hull</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.665763 -0.566926 -3.637695</min>
+		<max>1.665881 1.016522 3.502505</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/french/F144_Etoile/normal/lod3/Hull</nodefullVisual>
+</root>

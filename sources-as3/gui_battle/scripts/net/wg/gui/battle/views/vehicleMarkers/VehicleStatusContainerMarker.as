@@ -419,7 +419,7 @@ package net.wg.gui.battle.views.vehicleMarkers
          }
       }
       
-      private function updateMarkersPositions(param1:DisplayObject = null) : void
+      protected function updateMarkersPositions(param1:DisplayObject = null) : void
       {
          var _loc2_:* = undefined;
          var _loc5_:VehicleAnimatedStatusBaseMarker = null;
@@ -457,13 +457,13 @@ package net.wg.gui.battle.views.vehicleMarkers
          }
       }
       
-      private function setupMarker(param1:int, param2:VehicleAnimatedStatusBaseMarker) : void
+      protected function setupMarker(param1:int, param2:VehicleAnimatedStatusBaseMarker) : void
       {
          this._statusEffectMarkers[param1] = param2;
          param2.setStatusID(param1);
       }
       
-      private function getMarker(param1:int) : VehicleAnimatedStatusBaseMarker
+      protected function getMarker(param1:int) : VehicleAnimatedStatusBaseMarker
       {
          return this._statusEffectMarkers[param1];
       }
@@ -542,6 +542,21 @@ package net.wg.gui.battle.views.vehicleMarkers
             }
             this._markerTweens.splice(0,_loc2_);
          }
+      }
+      
+      public function get activeEffectID() : int
+      {
+         return this._activeEffectID;
+      }
+      
+      public function set oneShotStatusID(param1:int) : void
+      {
+         this._oneShotStatusID = param1;
+      }
+      
+      public function set oneShotStatusPriority(param1:int) : void
+      {
+         this._oneShotStatusPriority = param1;
       }
    }
 }

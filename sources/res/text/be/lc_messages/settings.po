@@ -738,6 +738,9 @@ msgstr ""
 msgid "edgeDetectAA"
 msgstr "Edge detect AA"
 
+msgid "eventSettingDisabled"
+msgstr "Часть настроек недоступна"
+
 msgid "feedBack"
 msgstr "Інфармаванне ў баі"
 
@@ -1224,6 +1227,12 @@ msgstr "Мінімалістычная"
 msgid "game/dynamicCamera"
 msgstr "Уключыць дынамічную камеру"
 
+msgid "game/enableBattleContextHints/checkbox"
+msgstr "Показывать подсказки в бою"
+
+msgid "game/enableBattleContextHints/label"
+msgstr "Подсказки в бою"
+
 msgid "game/enableBattleNotifier"
 msgstr "Паказваць вынікі папярэдняга бою ў чаце"
 
@@ -1361,6 +1370,9 @@ msgstr "Толькі апошні"
 
 msgid "game/replayEnabled/none"
 msgstr "Не"
+
+msgid "game/resetBattleContextHints/button"
+msgstr "Перезапустить подсказки в бою"
 
 msgid "game/showArtyHitOnMap"
 msgstr "Паказваць зону абстрэлу САУ праціўніка"
@@ -2195,6 +2207,9 @@ msgstr "Абнавіць прылады"
 
 msgid "sound/vivox/buttons/test_finish"
 msgstr "Скончыць праверку"
+
+msgid "sound/vivox/buttons/test_init"
+msgstr "Инициализация..."
 
 msgid "sound/vivox/buttons/test_start"
 msgstr "Пачаць праверку"

@@ -97,6 +97,10 @@ package
       
       public static const MAPS_ICONS_TANKMEN_SKILLS_BIG_NEW_SKILL:String = "../maps/icons/tankmen/skills/big/new_skill.png";
       
+      public static const MAPS_ICONS_TELECOM_BG:String = "../maps/icons/telecom/bg.png";
+      
+      public static const MAPS_ICONS_TELECOM_SHARED_HERO_BG:String = "../maps/icons/telecom/shared/hero/bg.png";
+      
       public static const MAPS_UIKIT_DIALOG_TEMPLATES_SELECT_OPTION_BG:String = "../maps/uiKit/dialog_templates/select_option/bg.png";
        
       

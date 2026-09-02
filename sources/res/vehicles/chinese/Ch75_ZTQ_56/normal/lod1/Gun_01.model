@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/chinese/Ch75_ZTQ_56/normal/lod2/Gun_01</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.238995 -0.242245 0.137431</min>
+		<max>0.371698 0.295283 5.291356</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/chinese/Ch75_ZTQ_56/normal/lod1/Gun_01</nodefullVisual>
+</root>

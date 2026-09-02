@@ -14,6 +14,11 @@ msgstr "Кошт у базавай камплектацыі"
 msgid "buyingPanel/alertLabel"
 msgstr "Унікальная машына — узнагарода за пэўныя гульнявыя падзеі"
 
+msgid "buyingPanel/availableForTelecom"
+msgstr ""
+"Покупка невозможна, так как танк является эксклюзивным для пользователей "
+"с активной подпиской от Ростелекома."
+
 msgid "buyingPanel/availableForWotPlus"
 msgstr "Купля недаступная: гэтая машына даступная толькі з падпіскай."
 
@@ -237,7 +242,7 @@ msgid "header/backBtn/descrLabel/collections"
 msgstr "ДА КАЛЕКЦЫІ"
 
 msgid "header/backBtn/descrLabel/eventProgression"
-msgstr "?empty?"
+msgstr "К СОБЫТИЮ"
 
 msgid "header/backBtn/descrLabel/frontline"
 msgstr "ДА ЛІНІІ ФРОНТУ"

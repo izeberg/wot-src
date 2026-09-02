@@ -95,11 +95,11 @@
 				<type>primary</type>
 			</path>
 			<path>
-				particles/content_forward/pfx_textures/eff_tex_split_splash_4.dds
+				particles/content_forward/pfx_textures/eff_tex_split_sparks.dds
 				<type>primary</type>
 			</path>
 			<path>
-				particles/content_forward/pfx_textures/eff_tex_split_sparks.dds
+				particles/content_forward/pfx_textures/eff_tex_split_splash_4.dds
 				<type>primary</type>
 			</path>
 		</preloadTextures>
@@ -144,6 +144,7 @@
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_env_uni_663_factoryfurniture_04.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_env_uni_663_factoryfurniture_06.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_env_uni_663_factoryfurniture_09.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_mle_uni_001_sdkfz.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_rw501_semaphore.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_rw_uni_008_semafor_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_rw_uni_008_semafor_02.vfx</fn_effect_bin>
@@ -178,6 +179,8 @@
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_gaf003_rabitzfence_end.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_gaf004_factoryfencetile.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_mle001_fuel.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_mle009_boxcamouflage1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_mle009_boxcamouflage_detonation.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_mle010_littlebobbin1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_mle016_boxeshowitzer.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_mle019_gerboxes1.vfx</fn_effect_bin>
@@ -197,7 +200,6 @@
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_rw404_canister2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_rw_uni_012_railwaysection_arrow.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_rw_uni_613_railwaybarrier_01.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_shells_detonation_medium.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/trees/broadleaves/inf_tree_birch_fall_big.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/trees/broadleaves/inf_tree_birch_fall_med.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/trees/broadleaves/inf_tree_birch_touchdown_big.vfx</fn_effect_bin>
@@ -277,6 +279,7 @@
 		<fn_effect_bin>particles/environment/objects/hd_env_uni_663_factoryfurniture_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_uni_663_factoryfurniture_06.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_uni_663_factoryfurniture_09.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/hd_mle_uni_001_sdkfz.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_rw501_semaphore.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_rw_uni_008_semafor_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_rw_uni_008_semafor_02.eff</fn_effect_bin>
@@ -311,6 +314,8 @@
 		<fn_effect_bin>particles/environment/objects/inf_gaf003_rabitzfence_end.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_gaf004_factoryfencetile.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_mle001_fuel.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_mle009_boxcamouflage1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_mle009_boxcamouflage_detonation.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_mle010_littlebobbin1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_mle016_boxeshowitzer.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_mle019_gerboxes1.eff</fn_effect_bin>
@@ -330,7 +335,6 @@
 		<fn_effect_bin>particles/environment/objects/inf_rw404_canister2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_rw_uni_012_railwaysection_arrow.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_rw_uni_613_railwaybarrier_01.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/inf_shells_detonation_medium.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/trees/broadleaves/inf_tree_birch_fall_big.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/trees/broadleaves/inf_tree_birch_fall_med.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/trees/broadleaves/inf_tree_birch_touchdown_big.eff</fn_effect_bin>
@@ -473,15 +477,15 @@
 				<type>primary</type>
 			</path>
 			<path>
+				particles/content_deferred/pfx_textures/eff_tex_split_sparks.dds
+				<type>primary</type>
+			</path>
+			<path>
 				particles/content_deferred/pfx_textures/eff_tex_split_splash_4.dds
 				<type>primary</type>
 			</path>
 			<path>
 				particles/content_deferred/pfx_textures/eff_tex_split_fire_5.dds
-				<type>primary</type>
-			</path>
-			<path>
-				particles/content_deferred/pfx_textures/eff_tex_split_sparks.dds
 				<type>primary</type>
 			</path>
 			<path>
@@ -551,6 +555,7 @@
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_env_uni_663_factoryfurniture_04.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_env_uni_663_factoryfurniture_06.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_env_uni_663_factoryfurniture_09.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_mle_uni_001_sdkfz.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_rw501_semaphore.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_rw_uni_008_semafor_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_rw_uni_008_semafor_02.vfx</fn_effect_bin>
@@ -585,6 +590,8 @@
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_gaf003_rabitzfence_end.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_gaf004_factoryfencetile.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_mle001_fuel.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_mle009_boxcamouflage1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_mle009_boxcamouflage_detonation.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_mle010_littlebobbin1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_mle016_boxeshowitzer.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_mle019_gerboxes1.vfx</fn_effect_bin>
@@ -604,7 +611,6 @@
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_rw404_canister2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_rw_uni_012_railwaysection_arrow.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_rw_uni_613_railwaybarrier_01.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_shells_detonation_medium.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/trees/broadleaves/inf_tree_birch_fall_big.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/trees/broadleaves/inf_tree_birch_fall_med.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/trees/broadleaves/inf_tree_birch_touchdown_big.vfx</fn_effect_bin>
@@ -684,6 +690,7 @@
 		<fn_effect_bin>particles/environment/objects/hd_env_uni_663_factoryfurniture_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_uni_663_factoryfurniture_06.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_uni_663_factoryfurniture_09.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/hd_mle_uni_001_sdkfz.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_rw501_semaphore.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_rw_uni_008_semafor_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_rw_uni_008_semafor_02.eff</fn_effect_bin>
@@ -718,6 +725,8 @@
 		<fn_effect_bin>particles/environment/objects/inf_gaf003_rabitzfence_end.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_gaf004_factoryfencetile.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_mle001_fuel.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_mle009_boxcamouflage1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_mle009_boxcamouflage_detonation.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_mle010_littlebobbin1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_mle016_boxeshowitzer.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_mle019_gerboxes1.eff</fn_effect_bin>
@@ -737,7 +746,6 @@
 		<fn_effect_bin>particles/environment/objects/inf_rw404_canister2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_rw_uni_012_railwaysection_arrow.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_rw_uni_613_railwaybarrier_01.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/inf_shells_detonation_medium.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/trees/broadleaves/inf_tree_birch_fall_big.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/trees/broadleaves/inf_tree_birch_fall_med.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/trees/broadleaves/inf_tree_birch_touchdown_big.eff</fn_effect_bin>

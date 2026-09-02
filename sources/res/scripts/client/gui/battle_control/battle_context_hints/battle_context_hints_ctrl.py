@@ -12,7 +12,8 @@ from gui.battle_control import event_dispatcher
 from gui.shared import g_eventBus, events, EVENT_BUS_SCOPE
 from helpers import dependency
 from shared_utils import findFirst
-from skeletons.account_helpers.settings_core import ISettingsCache
+from skeletons.account_helpers.settings_core import ISettingsCache, ISettingsCore
+from account_helpers.settings_core.settings_constants import GAME
 from skeletons.gui.battle_session import IBattleSessionProvider
 from skeletons.gui.lobby_context import ILobbyContext
 from uilogging.battle_context_hints.loggers import BattleContextHintsLogger
@@ -110,6 +111,7 @@ class _HintDataProcessor(object):
 class BattleContextHintsController(ViewComponentsController):
     MAX_HINT_DURATION = 60
     __settingsCache = dependency.descriptor(ISettingsCache)
+    __settingsCore = dependency.descriptor(ISettingsCore)
     __lobbyContext = dependency.descriptor(ILobbyContext)
     __sessionProvider = dependency.descriptor(IBattleSessionProvider)
 
@@ -134,8 +136,14 @@ class BattleContextHintsController(ViewComponentsController):
     def getHintsData(self):
         return self.__hintsData
 
+    def getHintsConfig(self):
+        return self.__hintsConfig
+
     def getControllerID(self):
         return BATTLE_CTRL_ID.BATTLE_CONTEXT_HINTS
+
+    def areHintsEnabled(self):
+        return self.__settingsCore.getSetting(GAME.ENABLE_BATTLE_CONTEXT_HINTS)
 
     def startControl(self):
         if self.__isStarted:
@@ -167,8 +175,10 @@ class BattleContextHintsController(ViewComponentsController):
         _logger.info('[BATTLE_CONTEXT_INTS] BattleContextHintsController.activateHint hintId=%s, isDisplay=%s, force=%s, forceDelay=%s', hintId, isDisplay, force, forceDelay)
         if not force and not self.__isStarted:
             return False
+        if not force and self.__isPlayerObserver():
+            return False
         else:
-            if not force and self.__isPlayerObserver():
+            if not force and not self.areHintsEnabled():
                 return False
             if not force and not self.__isHintAvailable(hintId):
                 return False

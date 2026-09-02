@@ -1,0 +1,1088 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "ExpBonusTooltip/countLeft"
+msgstr "Осталось применений:"
+
+msgid "ExpBonusTooltip/description"
+msgstr ""
+"Управляемый бонус х{bonus} можно применить к последнему победному бою, "
+"проведённому на данной машине, до {count} раз в сутки. На следующий день "
+"количество применений обновится."
+
+msgid "ExpBonusTooltip/noUsagesRemaining"
+msgstr "Не осталось применений"
+
+msgid "ExpBonusTooltip/restriction/0"
+msgstr "Доступен бонус х{bonus}"
+
+msgid "ExpBonusTooltip/restriction/1"
+msgstr "Бонус был успешно применён"
+
+msgid "ExpBonusTooltip/restriction/2"
+msgstr "Бонус можно применить только в победном бою."
+
+msgid "ExpBonusTooltip/restriction/3"
+msgstr "Для гэтай машыны ёсць свежыя вынікі бою."
+
+msgid "ExpBonusTooltip/restriction/4"
+msgstr ""
+"Бонус невозможно применить к этой машине.\n"
+"\n"
+"Возможные причины:\n"
+"• машина продана;\n"
+"• истёк срок аренды;\n"
+"• машина сдана по программе обмена;\n"
+"• произведена смена нации."
+
+msgid "ExpBonusTooltip/restriction/5"
+msgstr ""
+"Бонус невозможно применить к экипажу этой машины.\n"
+"\n"
+"Возможные причины:\n"
+"• экипаж заменён на другой;\n"
+"• экипаж полностью или частично демобилизован."
+
+msgid "ExpBonusTooltip/restriction/6"
+msgstr "Нельзя применить бонус: ускоренное обучение экипажа отключено."
+
+msgid "ExpBonusTooltip/restriction/7"
+msgstr "Нельзя применить бонус: активно ускоренное обучение экипажа."
+
+msgid "ExpBonusTooltip/restriction/cannotApply"
+msgstr "Невозможно применить бонус"
+
+msgid "ExpBonusTooltip/restriction/finished"
+msgstr "Закончились применения"
+
+msgid "ExpBonusTooltip/title"
+msgstr "Кіравальны бонус да досведу"
+
+msgid "GeneralBattleInfo/battleFinished"
+msgstr "{time} мин назад"
+
+msgid "GeneralBattleInfo/finishReason/lose"
+msgstr "НИЧЕГО, ВЫ ЕЩЁ ПОСЧИТАЕТЕСЬ С НИМИ"
+
+msgid "GeneralBattleInfo/finishReason/lose_hunter"
+msgstr "ВЫ НЕ УСПЕЛИ УНИЧТОЖИТЬ ПРОТИВНИКА"
+
+msgid "GeneralBattleInfo/finishReason/win"
+msgstr "ХА! ОНИ НЕ ОТБИЛИСЬ, КАК ПРЕДСКАЗУЕМО"
+
+msgid "GeneralBattleInfo/finishReason/win_hunter"
+msgstr "ПРОТИВНИК ПОЗОРНО БЕЖАЛ"
+
+msgid "GeneralBattleInfo/winStatus/lose"
+msgstr "ПАРАЖЭННЕ"
+
+msgid "GeneralBattleInfo/winStatus/tie"
+msgstr "НІЧЫЯ"
+
+msgid "GeneralBattleInfo/winStatus/win"
+msgstr "ПЕРАМОГА"
+
+msgid "PostbattleScreenApp/close"
+msgstr "ЗАКРЫТЬ"
+
+msgid "TeamStats/arenaCreateTime"
+msgstr "Бой пачаўся"
+
+msgid "TeamStats/baseCapture"
+msgstr "Ачкі за захоп/абарону базы"
+
+msgid "TeamStats/damageAssisted"
+msgstr "Пашкоджанні, прычыненыя з дапамогай гэтага гульца"
+
+msgid "TeamStats/damageAssistedSelf"
+msgstr "Пашкоджанні з вашай дапамогай"
+
+msgid "TeamStats/damageAssistedStun"
+msgstr "Урон по целям, оглушённым данным игроком"
+
+msgid "TeamStats/damageAssistedStunSelf"
+msgstr "Урон по оглушённым вами целям"
+
+msgid "TeamStats/damageBlockedByArmor"
+msgstr "Пашкоджанні, заблакаваныя бранёй"
+
+msgid "TeamStats/damageDealt"
+msgstr "Всего нанесено урона"
+
+msgid "TeamStats/damageToAllies"
+msgstr "Урон союзникам (уничтожено/нанесено урона)"
+
+msgid "TeamStats/damageToEnemies"
+msgstr "Пашкоджаныя/знішчаныя машыны супраціўніка"
+
+msgid "TeamStats/directHitsReceived"
+msgstr "Атрыманыя траплянні"
+
+msgid "TeamStats/duration"
+msgstr "Працягласць бою"
+
+msgid "TeamStats/explosionHits"
+msgstr "осколочно-фугасных повреждений"
+
+msgid "TeamStats/explosionHitsReceived"
+msgstr "Получено попаданий осколками"
+
+msgid "TeamStats/hitsPiercings"
+msgstr "прямых попаданий/пробитий"
+
+msgid "TeamStats/lifetime"
+msgstr "Да свайго знішчэння вёў бой на працягу"
+
+msgid "TeamStats/mileage"
+msgstr "Прабег"
+
+msgid "TeamStats/noDamageDirectHitsReceived"
+msgstr "не нанёсших урон"
+
+msgid "TeamStats/piercingsReceived"
+msgstr "пробитий"
+
+msgid "TeamStats/shots"
+msgstr "Стрэлаў"
+
+msgid "TeamStats/sniperDamageDealt"
+msgstr "с дистанции свыше 300 м"
+
+msgid "TeamStats/spotted"
+msgstr "Выяўлена машын праціўніка"
+
+msgid "TeamStats/stunDuration"
+msgstr "Суммарное время нанесённого оглушения (с)"
+
+msgid "TeamStats/stunNum"
+msgstr "Нанесено оглушений"
+
+msgid "TeamStats/tooltip/body/xpForAssist"
+msgstr "?empty?"
+
+msgid "TeamStats/tooltip/body/xpForAttack"
+msgstr "?empty?"
+
+msgid "TeamStats/tooltip/body/xpOther"
+msgstr "?empty?"
+
+msgid "TeamStats/tooltip/header/xpForAssist"
+msgstr "?empty?"
+
+msgid "TeamStats/tooltip/header/xpForAttack"
+msgstr "?empty?"
+
+msgid "TeamStats/tooltip/header/xpOther"
+msgstr "?empty?"
+
+msgid "TeamStats/xpForAssist"
+msgstr "?empty?"
+
+msgid "TeamStats/xpForAttack"
+msgstr "?empty?"
+
+msgid "TeamStats/xpOther"
+msgstr "?empty?"
+
+msgid "TeamStats/xpTotal"
+msgstr "?empty?"
+
+msgid "TeamTable/damageHeader/body"
+msgstr ""
+"Сортировать по нанесённому урону, включая урон от боевых способностей."
+
+msgid "TeamTable/damageHeader/header"
+msgstr "Прычыненыя пашкоджанні"
+
+msgid "TeamTable/fragHeader/body"
+msgstr "Сортировать по количеству уничтоженных машин противника."
+
+msgid "TeamTable/fragHeader/header"
+msgstr "Знішчаная тэхніка праціўніка"
+
+msgid "TeamTable/medalHeader/body"
+msgstr "Упарадкаваць паводле колькасці атрыманых узнагарод."
+
+msgid "TeamTable/medalHeader/header"
+msgstr "Узнагароды"
+
+msgid "TeamTable/playerHeader/body"
+msgstr "Упарадкаваць паводле імя гульца."
+
+msgid "TeamTable/playerHeader/header"
+msgstr "Імя"
+
+msgid "TeamTable/squadHeader/body"
+msgstr "Сортировать по взводам."
+
+msgid "TeamTable/squadHeader/header"
+msgstr "Взвод"
+
+msgid "TeamTable/stats/bossTeam"
+msgstr "Инженер"
+
+msgid "TeamTable/stats/enemyTeam"
+msgstr "Праціўнік"
+
+msgid "TeamTable/stats/hunterTeam"
+msgstr "Ганчакі"
+
+msgid "TeamTable/stats/ownTeam"
+msgstr "Хаўруснікі"
+
+msgid "TeamTable/tankHeader/body"
+msgstr "Сортировать по названиям машин."
+
+msgid "TeamTable/tankHeader/header"
+msgstr "Тэхніка"
+
+msgid "TeamTable/xpHeader/body"
+msgstr "Сортировать по количеству заработанного опыта."
+
+msgid "TeamTable/xpHeader/header"
+msgstr "Досвед"
+
+msgid "UserStatus/vehicleState/alive"
+msgstr "Ацалеў"
+
+msgid "UserStatus/vehicleState/dead/0"
+msgstr "Падбіты"
+
+msgid "UserStatus/vehicleState/dead/1"
+msgstr "Уничтожен поджогом"
+
+msgid "UserStatus/vehicleState/dead/2"
+msgstr "Знішчаны таранам"
+
+msgid "UserStatus/vehicleState/dead/3"
+msgstr "Разбіты"
+
+msgid "UserStatus/vehicleState/dead/4"
+msgstr "Знішчаны забароненай зонай"
+
+msgid "UserStatus/vehicleState/dead/5"
+msgstr "Потоплен"
+
+msgid "UserStatus/vehicleState/dead/6"
+msgstr "Знішчаны вогненным валам"
+
+msgid "UserStatus/vehicleState/dead/7"
+msgstr "Уничтожен переворотом"
+
+msgid "UserStatus/vehicleState/dead/self/3"
+msgstr "Разбился"
+
+msgid "UserStatus/vehicleState/dead/self/5"
+msgstr "Патануў"
+
+msgid "UserStatus/vehicleState/dead/self/7"
+msgstr "Перевернулся"
+
+msgid "UserStatus/vehicleState/prematureLeave"
+msgstr "Пакінуў бой да яго сканчэння"
+
+msgid "bonus/status"
+msgstr "Опыт увеличен"
+
+msgid "button/bonus"
+msgstr "бонус опыта"
+
+msgid "common/efficiencyParameter/damageAssisted"
+msgstr "Падтрымка"
+
+msgid "common/efficiencyParameter/damageBeatenByArmor"
+msgstr "Отбито бронёй"
+
+msgid "common/efficiencyParameter/damageBlockedByArmor"
+msgstr "Заблакавана"
+
+msgid "common/efficiencyParameter/damageDealt"
+msgstr "Пашкоджанні"
+
+msgid "common/efficiencyParameter/kills"
+msgstr "Знішчана"
+
+msgid "common/efficiencyParameter/spotted"
+msgstr "Выяўленне"
+
+msgid "common/premiumBonuses/label"
+msgstr "Бонус с танковым премиумом"
+
+msgid "detailedStats/backwardButton/allies"
+msgstr "Показать союзников"
+
+msgid "detailedStats/backwardButton/enemies"
+msgstr "Показать противников"
+
+msgid "detailedStats/basePoints"
+msgstr "Очки базы"
+
+msgid "detailedStats/button/hide"
+msgstr "НАЗАД К ЛИЧНЫМ РЕЗУЛЬТАТАМ"
+
+msgid "detailedStats/button/noResults"
+msgstr "ВЫ СЕБЯ НИКАК НЕ ПРОЯВИЛИ"
+
+msgid "detailedStats/button/show"
+msgstr "ПОДРОБНАЯ СТАТИСТИКА"
+
+msgid "detailedStats/statistics/battleDuration"
+msgstr "%M мин %S c"
+
+msgid "detailedStats/statistics/battleFinished"
+msgstr "Бой завершился:"
+
+msgid "detailedStats/statistics/title"
+msgstr "Статыстыка"
+
+msgid "details/noPrem"
+msgstr "БАЗОВЫЙ АККАУНТ"
+
+msgid "details/prem"
+msgstr "ОБЩИЙ ПРЕМИУМ"
+
+msgid "details/premPlus"
+msgstr "ТАНКОВЫЙ ПРЕМИУМ"
+
+msgid "detailsStats/buyPremiumBtn"
+msgstr "?empty?"
+
+msgid "detailsStats/buyPremiumLabel"
+msgstr "?empty?"
+
+msgid "detailsStats/credits/bonuses/battlePayments"
+msgstr "Баявыя выплаты"
+
+msgid "detailsStats/credits/bonuses/battlePayments/descr"
+msgstr "Сумма кредитов, начисленная в качестве надбавки от клановых резервов."
+
+msgid "detailsStats/credits/bonuses/boosters"
+msgstr "Эфект ад асабістых рэзерваў"
+
+msgid "detailsStats/credits/bonuses/boosters/descr"
+msgstr "Сумма кредитов, начисленная в качестве надбавки от личных резервов."
+
+msgid "detailsStats/credits/bonuses/event"
+msgstr "Бонус за баявыя задачы і падзеі"
+
+msgid "detailsStats/credits/bonuses/event/descr"
+msgstr "Сумма кредитов, начисленная за задачи, выполненные в данном бою."
+
+msgid "detailsStats/credits/bonuses/friendlyFireCompensation"
+msgstr "Кампенсацыя за пашкоджанні ад хаўруснікаў"
+
+msgid "detailsStats/credits/bonuses/friendlyFireCompensation/descr"
+msgstr ""
+"Сумма кредитов, начисленная в качестве компенсации за урон, полученный "
+"от союзников."
+
+msgid "detailsStats/credits/bonuses/noBonuses"
+msgstr "В данном режиме боя бонусы не начисляются."
+
+msgid "detailsStats/credits/bonuses/noPenalty"
+msgstr "За адважны супраціў"
+
+msgid "detailsStats/credits/bonuses/noPenalty/descr"
+msgstr ""
+"Сумма кредитов, начисленная за достойное сопротивление, оказанное команде "
+"противника."
+
+msgid "detailsStats/credits/bonuses/premiumAccount"
+msgstr "Надбавка за премиум аккаунт"
+
+msgid "detailsStats/credits/bonuses/premiumAccount/descr"
+msgstr "Сумма кредитов, начисленная в качестве надбавки за Премиум аккаунт."
+
+msgid "detailsStats/credits/bonuses/referralBonus"
+msgstr "Реферальный бонус"
+
+msgid "detailsStats/credits/bonuses/referralBonus/descr"
+msgstr "Сумма кредитов, начисленная в качестве реферальной надбавки."
+
+msgid "detailsStats/credits/bonuses/squad"
+msgstr "Бонус за гульню ў звязе"
+
+msgid "detailsStats/credits/bonuses/squad/descr"
+msgstr "Сумма кредитов, начисленная в качестве надбавки за игру во взводе."
+
+msgid "detailsStats/credits/bonuses/title"
+msgstr "Бонусы"
+
+msgid "detailsStats/credits/bonuses/total"
+msgstr "Бонусы"
+
+msgid "detailsStats/credits/earned"
+msgstr "Налічана за бой"
+
+msgid "detailsStats/credits/earned/descr"
+msgstr "Сумма кредитов, начисленная за действия в бою."
+
+msgid "detailsStats/credits/expenses/autoBoosters"
+msgstr "Аўтапапаўненне настаўленняў"
+
+msgid "detailsStats/credits/expenses/autoBoosters/descr"
+msgstr ""
+"Сумма кредитов, списанная за автоматическое пополнение предбоевых "
+"инструкций."
+
+msgid "detailsStats/credits/expenses/autoEquip"
+msgstr "Аўтапапаўненне рыштунку"
+
+msgid "detailsStats/credits/expenses/autoEquip/descr"
+msgstr "Сумма кредитов, списанная за автоматическое пополнение снаряжения."
+
+msgid "detailsStats/credits/expenses/autoLoad"
+msgstr "Аўтапапаўненне боезапасу"
+
+msgid "detailsStats/credits/expenses/autoLoad/descr"
+msgstr "Сумма кредитов, списанная за автоматическое пополнение боекомплекта."
+
+msgid "detailsStats/credits/expenses/autoRepair"
+msgstr "Аўтаматычны рамонт тэхнікі"
+
+msgid "detailsStats/credits/expenses/autoRepair/descr"
+msgstr "Сумма кредитов, списанная за автоматический ремонт техники."
+
+msgid "detailsStats/credits/expenses/total"
+msgstr "Всего затрачено"
+
+msgid "detailsStats/credits/expenses/total/descr"
+msgstr ""
+"Итоговая сумма кредитов, списанная за автоматический ремонт техники, "
+"пополнение боекомплекта, снаряжения и предбоевых инструкций."
+
+msgid "detailsStats/credits/fines/afk"
+msgstr "Штраф за бяздзейнасць у баі"
+
+msgid "detailsStats/credits/fines/afk/descr"
+msgstr "Сумма кредитов, списанная в качестве штрафа за бездействие в бою."
+
+msgid "detailsStats/credits/fines/aogasFactor"
+msgstr "AOGAS штраф"
+
+msgid "detailsStats/credits/fines/aogasFactor/descr"
+msgstr ""
+"Сумма кредитов, списанная в качестве штрафа за избыточное время, проведённое"
+" в игре."
+
+msgid "detailsStats/credits/fines/deserter"
+msgstr "Штраф за дэзерцірства"
+
+msgid "detailsStats/credits/fines/deserter/descr"
+msgstr "Сумма кредитов, списанная в качестве штрафа за дезертирство."
+
+msgid "detailsStats/credits/fines/friendlyFirePenalty"
+msgstr "Штраф за прычыненне пашкоджанняў хаўруснікам"
+
+msgid "detailsStats/credits/fines/friendlyFirePenalty/descr"
+msgstr "Сумма кредитов, списанная в качестве штрафа за урон союзникам."
+
+msgid "detailsStats/credits/fines/friendlyFireSPGPenalty"
+msgstr "Штраф за оглушение и урон союзникам"
+
+msgid "detailsStats/credits/fines/friendlyFireSPGPenalty/descr"
+msgstr ""
+"Сумма кредитов, списанная в качестве штрафа за оглушение и урон союзникам."
+
+msgid "detailsStats/credits/fines/suicide"
+msgstr "Штраф за наўмыснае самазнішчэнне"
+
+msgid "detailsStats/credits/fines/suicide/descr"
+msgstr ""
+"Сумма кредитов, списанная в качестве штрафа за умышленное самоуничтожение "
+"в бою."
+
+msgid "detailsStats/credits/fines/title"
+msgstr "Штрафы"
+
+msgid "detailsStats/credits/piggyBankInfo"
+msgstr "Добавлено в хранилище кредитов"
+
+msgid "detailsStats/credits/piggyBankInfo/descr"
+msgstr "Сумма кредитов, начисленная в хранилище кредитов по результатам боя."
+
+msgid "detailsStats/credits/total"
+msgstr "Агулам"
+
+msgid "detailsStats/credits/total/descr"
+msgstr ""
+"Итоговая сумма кредитов, начисленная за бой с учётом автоматических затрат."
+
+msgid "detailsStats/credits/totalEarnings"
+msgstr "Всего за бой"
+
+msgid "detailsStats/credits/totalEarnings/descr"
+msgstr "Сумма кредитов, начисленная за бой без учёта автоматических затрат."
+
+msgid "detailsStats/crystals/achievement"
+msgstr "За полученные награды"
+
+msgid "detailsStats/crystals/achievement/descr"
+msgstr "Сумма бон, начисленная за награды, полученные по результатам боя."
+
+msgid "detailsStats/crystals/earned"
+msgstr "Налічана за бой"
+
+msgid "detailsStats/crystals/earned/descr"
+msgstr "Сумма бон, начисленная за действия в бою."
+
+msgid "detailsStats/crystals/expenses/autoBooster"
+msgstr "Аўтапапаўненне настаўленняў"
+
+msgid "detailsStats/crystals/expenses/autoBooster/descr"
+msgstr ""
+"Сумма бон, списанная за автоматическое пополнение предбоевых инструкций."
+
+msgid "detailsStats/crystals/expenses/total"
+msgstr "Всего затрачено"
+
+msgid "detailsStats/crystals/expenses/total/descr"
+msgstr "Сумма бон, списанная на автоматические действия после боя."
+
+msgid "detailsStats/crystals/total"
+msgstr "Агулам"
+
+msgid "detailsStats/crystals/total/descr"
+msgstr "Итоговая сумма бон, начисленная за бой с учётом автоматических трат."
+
+msgid "detailsStats/crystals/totalEarnings"
+msgstr "Всего за бой"
+
+msgid "detailsStats/crystals/totalEarnings/descr"
+msgstr "Сумма бон, начисленная за бой без учёта автоматических трат."
+
+msgid "detailsStats/factors/record"
+msgstr "рекорд"
+
+msgid "detailsStats/noRecords/earningsSubgroup"
+msgstr ""
+"Бонусов не начислено. Купите Танковый премиум аккаунт, чтобы получать бонусы"
+" по результатам боёв."
+
+msgid "detailsStats/noRecords/expensesSubgroup"
+msgstr "Затрат не начислено."
+
+msgid "detailsStats/noRecords/trainingBattle"
+msgstr "В данном режиме боя бонусы не начисляются."
+
+msgid "detailsStats/premiumCurrency"
+msgstr "?empty?"
+
+msgid "detailsStats/premiumEarnings"
+msgstr "Итоговые значения по валютам с Танковым премиум аккаунтом"
+
+msgid "detailsStats/sectionTitle/creditsGroup"
+msgstr "КРЕДИТЫ"
+
+msgid "detailsStats/sectionTitle/crystalsGroup"
+msgstr "БОНЫ"
+
+msgid "detailsStats/sectionTitle/xpGroup"
+msgstr "ОПЫТ"
+
+msgid "detailsStats/xp/bonuses/boosters"
+msgstr "Эфект ад асабістых рэзерваў"
+
+msgid "detailsStats/xp/bonuses/boosters/descr"
+msgstr "Сумма опыта, начисленная в качестве надбавки от личных резервов."
+
+msgid "detailsStats/xp/bonuses/events"
+msgstr "Бонус за баявыя задачы і падзеі"
+
+msgid "detailsStats/xp/bonuses/events/descr"
+msgstr ""
+"Сумма опыта, начисленная за задачи и события, выполненные в данном бою."
+
+msgid "detailsStats/xp/bonuses/firstBattleBonus"
+msgstr "Узнагарода за першую перамогу за дзень"
+
+msgid "detailsStats/xp/bonuses/firstBattleBonus/descr"
+msgstr ""
+"Сумма опыта, начисленная в виде надбавки за первую победу в день на данной "
+"машине."
+
+msgid "detailsStats/xp/bonuses/igrBonus"
+msgstr "Надбавка за IGR"
+
+msgid "detailsStats/xp/bonuses/igrBonus/descr"
+msgstr "Сумма опыта, начисленная в виде надбавки за игру в IGR."
+
+msgid "detailsStats/xp/bonuses/militaryManeuvers"
+msgstr "За вайсковыя вучэнні"
+
+msgid "detailsStats/xp/bonuses/militaryManeuvers/descr"
+msgstr ""
+"Сумма свободного опыта, начисленная в качестве надбавки от клановых "
+"резервов."
+
+msgid "detailsStats/xp/bonuses/noPenalty"
+msgstr "За адважны супраціў"
+
+msgid "detailsStats/xp/bonuses/noPenalty/descr"
+msgstr ""
+"Сумма опыта, начисленная за достойное сопротивление, оказанное команде "
+"противника."
+
+msgid "detailsStats/xp/bonuses/playerRankXP"
+msgstr "Надбавка за звание"
+
+msgid "detailsStats/xp/bonuses/premVehicle"
+msgstr "Надбаўка за ўзровень прэміум машыны"
+
+msgid "detailsStats/xp/bonuses/premVehicle/descr"
+msgstr ""
+"Сумма опыта, начисленная в качестве надбавки за уровень премиум машины."
+
+msgid "detailsStats/xp/bonuses/premiumAcc"
+msgstr "Надбавка за премиум аккаунт"
+
+msgid "detailsStats/xp/bonuses/premiumAcc/descr"
+msgstr "Сумма опыта, начисленная в виде надбавки за премиум аккаунт."
+
+msgid "detailsStats/xp/bonuses/referralBonus"
+msgstr "Реферальный бонус"
+
+msgid "detailsStats/xp/bonuses/referralBonus/descr"
+msgstr "Сумма опыта, начисленная в качестве реферальной надбавки."
+
+msgid "detailsStats/xp/bonuses/squadBonus"
+msgstr "Бонус за гульню ў звязе"
+
+msgid "detailsStats/xp/bonuses/squadBonus/descr"
+msgstr ""
+"Сумма опыта, начисленная в виде надбавки за игру во взводе при наличии "
+"Танкового премиум аккаунта у одного из участников."
+
+msgid "detailsStats/xp/bonuses/tacticalTraining"
+msgstr "За тактычную падрыхтоўку"
+
+msgid "detailsStats/xp/bonuses/tacticalTraining/descr"
+msgstr "Сумма опыта, начисленная в качестве надбавки от клановых резервов."
+
+msgid "detailsStats/xp/bonuses/xpBonus"
+msgstr "Кіравальны бонус да досведу"
+
+msgid "detailsStats/xp/bonuses/xpBonus/descr"
+msgstr ""
+"Сумма опыта, начисленная в виде надбавки за применение управляемого бонуса."
+
+msgid "detailsStats/xp/earned"
+msgstr "Налічана за бой"
+
+msgid "detailsStats/xp/earned/descr"
+msgstr "Сумма опыта, начисленная за действия в бою."
+
+msgid "detailsStats/xp/fines/afk"
+msgstr "Штраф за бяздзейнасць у баі"
+
+msgid "detailsStats/xp/fines/afk/descr"
+msgstr "Сумма опыта, списанная в качестве штрафа за бездействие в бою."
+
+msgid "detailsStats/xp/fines/aogasFactor"
+msgstr "AOGAS штраф"
+
+msgid "detailsStats/xp/fines/aogasFactor/descr"
+msgstr ""
+"Сумма опыта, списанная в качестве штрафа за избыточное время, проведённое "
+"в игре."
+
+msgid "detailsStats/xp/fines/deserter"
+msgstr "Штраф за дэзерцірства"
+
+msgid "detailsStats/xp/fines/deserter/descr"
+msgstr "Сумма опыта, списанная в качестве штрафа за дезертирство."
+
+msgid "detailsStats/xp/fines/friendlyFirePenalty"
+msgstr "Штраф за прычыненне пашкоджанняў хаўруснікам"
+
+msgid "detailsStats/xp/fines/friendlyFirePenalty/descr"
+msgstr "Сумма опыта, списанная в качестве штрафа за урон союзникам."
+
+msgid "detailsStats/xp/fines/friendlyFireSPGPenalty"
+msgstr "Штраф за оглушение и урон союзникам"
+
+msgid "detailsStats/xp/fines/friendlyFireSPGPenalty/descr"
+msgstr ""
+"Сумма опыта, списанная в качестве штрафа за оглушение и урон союзникам."
+
+msgid "detailsStats/xp/fines/suicide"
+msgstr "Штраф за наўмыснае самазнішчэнне"
+
+msgid "detailsStats/xp/fines/suicide/descr"
+msgstr ""
+"Сумма опыта, списанная в качестве штрафа за умышленное самоуничтожение "
+"в бою."
+
+msgid "detailsStats/xp/total"
+msgstr "Агулам"
+
+msgid "detailsStats/xp/total/descr"
+msgstr "Итоговая сумма опыта, начисленная за бой."
+
+msgid "discrete/label"
+msgstr "Осталось применений"
+
+msgid "efficiencyTable/capturePoints"
+msgstr "Очки базы"
+
+msgid "efficiencyTable/emptyMessage"
+msgstr ""
+"Количество получаемых кредитов и опыта\n"
+"зависит от активных действий в бою"
+
+msgid "eventTitle/ranked"
+msgstr "?empty?"
+
+msgid "personalResultTab/questsCompleted/hunter"
+msgstr "Все задачи на сегодня выполнены. Новые будут доступны завтра."
+
+msgid "personalStatistics/yourEfficiency"
+msgstr "Ваша эффективность"
+
+msgid "premiumBenefits/additionalBonus"
+msgstr ""
+"Управляемый бонус x{multiplier} к опыту за бой на {count} применений в день"
+
+msgid "premiumBenefits/bonusesTitle"
+msgstr "Все бонусы:"
+
+msgid "premiumBenefits/creditsBonus"
+msgstr "+{multiplier_percent}% бонус к кредитам"
+
+msgid "premiumBenefits/description"
+msgstr ""
+"Танковый премиум аккаунт — гарант вашей комфортной игры. Получайте бонусы "
+"за игру взводом, применяйте управляемый бонус к опыту, исключайте карты, "
+"выполняйте ежедневные премиум задачи, наполняйте хранилище кредитов."
+
+msgid "premiumBenefits/piggyBank"
+msgstr "+{multiplier_percent}% к кредитам, которые идут в хранилище кредитов"
+
+msgid "premiumBenefits/preferredMaps"
+msgstr "+{count} слот для исключения нежелательной карты"
+
+msgid "premiumBenefits/premQuests"
+msgstr "{count} премиум задачи в сутки"
+
+msgid "premiumBenefits/squadBonus"
+msgstr "+{multiplier_percent}% к кредитам за игру во взводе"
+
+msgid "premiumBenefits/title"
+msgstr "Танкавы прэміум"
+
+msgid "premiumBenefits/tmenXpBonus"
+msgstr "+{multiplier_percent}% бонус к опыту экипажа"
+
+msgid "premiumBenefits/xpBonus"
+msgstr "+{multiplier_percent}% бонус к опыту"
+
+msgid "questProgressState/completed"
+msgstr "Выканана"
+
+msgid "questProgressState/completedWithHonours"
+msgstr "Выканана з адзнакай"
+
+msgid "questProgressState/inProgress"
+msgstr "Выконваецца"
+
+msgid "questsTab/questsCompleted/boss"
+msgstr "Все задачи Инженера выполнены"
+
+msgid "questsTab/questsCompleted/hunter"
+msgstr "На сегодня все задачи выполнены, приходите через"
+
+msgid "questsTab/questsUpdateTimeLeft/days"
+msgstr "{days} д {hours} ч"
+
+msgid "questsTab/questsUpdateTimeLeft/hours"
+msgstr "{hours} ч {minutes} мин"
+
+msgid "questsTab/questsUpdateTimeLeft/lessMinute"
+msgstr "менш за хвіліну"
+
+msgid "questsTab/questsUpdateTimeLeft/minutes"
+msgstr "{minutes} мин"
+
+msgid "rankBattles/accruedPrizeBattles"
+msgstr "Начислено призовых боёв"
+
+msgid "tabName/detailsTab"
+msgstr "Финансовый отчет"
+
+msgid "tabName/personalTab"
+msgstr "Вынікі бою"
+
+msgid "tabName/questsTab"
+msgstr "Задачи"
+
+msgid "tabName/teamTab"
+msgstr "Камандны вынік"
+
+msgid "tabTooltip/questsTab/disabled/description"
+msgstr "?empty?"
+
+msgid "tooltip/armor/description"
+msgstr ""
+"Засчитывается:\n"
+"• Рикошет от выстрелов противника\n"
+"• Непробитие\n"
+"\n"
+"Попадания осколочно-фугасными и HESH-снарядами не учитываются."
+
+msgid "tooltip/armor/header"
+msgstr "Всего заблокировано урона"
+
+msgid "tooltip/armor/totalBlockedDamage"
+msgstr "Пашкоджанняў, заблакіраваных бранёй %(vals)s"
+
+msgid "tooltip/armor/totalNotPierced"
+msgstr "Непрабіццяў"
+
+msgid "tooltip/armor/totalRicochets"
+msgstr "Рыкашэтаў"
+
+msgid "tooltip/assist/damageAssistedRadio"
+msgstr "Пашкодж. выяўленага вамі супраціўніка %(vals)s"
+
+msgid "tooltip/assist/damageAssistedTrack"
+msgstr "После попадания, сбившего гусеницу %(vals)s"
+
+msgid "tooltip/assist/description"
+msgstr ""
+"Засчитывается урон союзников по противнику:\n"
+"• По вашим разведданным\n"
+"• После попадания, сбившего гусеницу"
+
+msgid "tooltip/assist/header"
+msgstr ""
+"Всего оказано помощи \n"
+"в уничтожении"
+
+msgid "tooltip/assist/totalDamageAssisted"
+msgstr "Усяго пашкоджанняў, якія прычынілі хаўруснікі %(vals)s"
+
+msgid "tooltip/crits/criticalDevices"
+msgstr "Вывядзення са строю:"
+
+msgid "tooltip/crits/description"
+msgstr ""
+"Засчитывается:\n"
+"• Повреждение внешних и внутренних модулей\n"
+"• Выведение из строя внешних и внутренних модулей\n"
+"• Ранение членов экипажа"
+
+msgid "tooltip/crits/destroyedDevices"
+msgstr "Пашкоджанні:"
+
+msgid "tooltip/crits/destroyedTankmen"
+msgstr "Раненні экіпажу:"
+
+msgid "tooltip/crits/header"
+msgstr "Всего совершено критических попаданий"
+
+msgid "tooltip/damage/description"
+msgstr ""
+"Залічваюцца пашкоджанні:\n"
+"• ад стрэлу\n"
+"• ад тарана\n"
+"• ад пажару\n"
+"• у выніку моцнага ўдару"
+
+msgid "tooltip/damage/header"
+msgstr "Всего нанесено урона"
+
+msgid "tooltip/damage/totalDamage"
+msgstr "Агулам пашкоджанняў %(vals)s"
+
+msgid "tooltip/damage/totalPierced"
+msgstr "Усяго прабіццяў"
+
+msgid "tooltip/financeDetails/accountType/premiumNone"
+msgstr "Звычайны акаўнт"
+
+msgid "tooltip/financeDetails/accountType/premiumPlus"
+msgstr "Танкавы прэміум"
+
+msgid "tooltip/financeDetails/alternativeTotal/credits"
+msgstr "Всего по кредитам"
+
+msgid "tooltip/financeDetails/alternativeTotal/xp"
+msgstr "Всего по опыту"
+
+msgid "tooltip/financeDetails/bonuses"
+msgstr "Бонусы за бой"
+
+msgid "tooltip/financeDetails/earned"
+msgstr "Налічана за бой"
+
+msgid "tooltip/financeDetails/earned/descr"
+msgstr "Сумма кредитов, начисленная за действия в бою."
+
+msgid "tooltip/financeDetails/expenses"
+msgstr "Всего затрачено"
+
+msgid "tooltip/financeDetails/piggyBank"
+msgstr "Добавлено в хранилище кредитов"
+
+msgid "tooltip/financeDetails/title/credits"
+msgstr "Кредиты за бой"
+
+msgid "tooltip/financeDetails/title/crystal"
+msgstr "Боны за бой"
+
+msgid "tooltip/financeDetails/title/xp"
+msgstr "Досвед за бой"
+
+msgid "tooltip/financeDetails/total/credits"
+msgstr "Всего по кредитам"
+
+msgid "tooltip/financeDetails/total/crystals"
+msgstr "Всего по бонам"
+
+msgid "tooltip/financeDetails/total/xp"
+msgstr "Всего по опыту"
+
+msgid "tooltip/kill-1/description"
+msgstr ""
+"Залічваецца знішчэнне:\n"
+"• Стрэлам\n"
+"• Падпалам\n"
+"• Таранам\n"
+"• Патапленнем\n"
+"• У выніку моцнага ўдару\n"
+"• Перакульваннем"
+
+msgid "tooltip/kill-2/description"
+msgstr ""
+"Засчитывается уничтожение:\n"
+"• Выстрелом\n"
+"• Поджогом\n"
+"• Тараном\n"
+"• Потоплением\n"
+"• В результате сильного удара"
+
+msgid "tooltip/kill/0"
+msgstr "Ед. техники противника уничтожено выстрелом"
+
+msgid "tooltip/kill/1"
+msgstr "Ед. техники противника уничтожено пожаром"
+
+msgid "tooltip/kill/2"
+msgstr "Ед. техники противника уничтожено тараном"
+
+msgid "tooltip/kill/3"
+msgstr "Ед. техники противника разбито"
+
+msgid "tooltip/kill/5"
+msgstr "Ед. техники противника потоплено"
+
+msgid "tooltip/kill/7"
+msgstr "Ед. техники противника перевёрнуто"
+
+msgid "tooltip/kill/header"
+msgstr "Уничтожено техники противника"
+
+msgid "tooltip/kill/totalKilled"
+msgstr "Всего уничтожено %(vals)s"
+
+msgid "tooltip/personalEfficiency/damageAssisted/list"
+msgstr ""
+"• По вашим разведданным\n"
+"• После попадания, сбившего гусеницу"
+
+msgid "tooltip/personalEfficiency/damageAssisted/title"
+msgstr "Засчитывается урон союзников по противнику:"
+
+msgid "tooltip/personalEfficiency/damageBlockedByArmor/extraDescription"
+msgstr "Попадания осколочно-фугасными и HESH-снарядами не учитываются."
+
+msgid "tooltip/personalEfficiency/damageBlockedByArmor/list"
+msgstr ""
+"• Рикошет от выстрелов противника\n"
+"• Непробитие"
+
+msgid "tooltip/personalEfficiency/damageBlockedByArmor/title"
+msgstr "Засчитывается:"
+
+msgid "tooltip/personalEfficiency/damageDealt/list"
+msgstr ""
+"• Нанесённый выстрелом\n"
+"• Нанесённый тараном\n"
+"• Причинённый пожаром\n"
+"• В результате сильного удара"
+
+msgid "tooltip/personalEfficiency/damageDealt/title"
+msgstr "Засчитывается урон:"
+
+msgid "tooltip/personalEfficiency/enemyTanks"
+msgstr "Техника противника"
+
+msgid "tooltip/personalEfficiency/extraEnemiesMessage"
+msgstr "... и еще {value}"
+
+msgid "tooltip/personalEfficiency/kills/list"
+msgstr ""
+"• Выстрелом\n"
+"• Поджогом\n"
+"• Тараном\n"
+"• Потоплением\n"
+"• В результате сильного удара\n"
+"• Переворотом"
+
+msgid "tooltip/personalEfficiency/kills/title"
+msgstr "Засчитывается уничтожение:"
+
+msgid "tooltip/personalEfficiency/subtitle/rank"
+msgstr "Топ-{rank}"
+
+msgid "tooltip/personalEfficiency/subtitle/text"
+msgstr "в своей команде"
+
+msgid "tooltip/premiumRewards/disabledBtn/basic/body"
+msgstr ""
+"Все преимущества Танкового премиум аккаунта доступны только для боёв, "
+"которые были проведены после его приобретения."
+
+msgid "tooltip/premiumRewards/disabledBtn/basic/header"
+msgstr "У вас уже есть Танковый премиум аккаунт"
+
+msgid "tooltip/premiumRewards/disabledBtn/plus/body"
+msgstr ""
+"Все преимущества Танкового премиум аккаунта доступны только для боёв, "
+"которые были проведены после его приобретения."
+
+msgid "tooltip/premiumRewards/disabledBtn/plus/header"
+msgstr "У вас уже есть Танковый премиум аккаунт"
+
+msgid "tooltip/spotted/description"
+msgstr "Залічваецца першае выяўленне машыны супраціўніка."
+
+msgid "tooltip/spotted/header"
+msgstr "Всего обнаружено"
+
+msgid "tooltip/spotted/totalTanks"
+msgstr "ед. техники обнаружено"
+
+msgid "tooltip/stun/description"
+msgstr ""
+"Засчитывается урон:\n"
+"• Нанесённый союзниками по цели, оглушённой вашим снарядом."
+
+msgid "tooltip/stun/header"
+msgstr "Суммарное оглушение"
+
+msgid "tooltip/stun/totalCount"
+msgstr "Аглушэнні"
+
+msgid "tooltip/stun/totalDamage"
+msgstr "Агулам пашкоджанняў %(vals)s"
+
+msgid "tooltip/stun/totalTime"
+msgstr "Суммарное время нанесённого оглушения %(vals)s"

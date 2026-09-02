@@ -668,14 +668,30 @@ class BinocularsProxy(pybind11_object):
 	def __str__(*args, **kwargs): pass
 	def __subclasshook__(*args, **kwargs): pass
 	def getEnabled(self, *args, **kwargs): pass
+	def getFlamesFadeTime(self, *args, **kwargs): pass
+	def getIsDistortion(self, *args, **kwargs): pass
+	def getIsFlame(self, *args, **kwargs): pass
+	def getIsNeuronsBoost(self, *args, **kwargs): pass
+	def getIsPTUR(self, *args, **kwargs): pass
+	def getIsPossession(self, *args, **kwargs): pass
 	def getIsPyrometer(self, *args, **kwargs): pass
+	def getIsTiles(self, *args, **kwargs): pass
+	def getPTURFadeTime(self, *args, **kwargs): pass
+	def getPossessionFadeTime(self, *args, **kwargs): pass
+	def loadConfig(self, *args, **kwargs): pass
 	def resetTextures(self, *args, **kwargs): pass
 	def setBackgroundTexture(self, *args, **kwargs): pass
 	def setColorGradingTexture(self, *args, **kwargs): pass
 	def setDistortionTexture(self, *args, **kwargs): pass
 	def setEnableLensEffects(self, *args, **kwargs): pass
 	def setEnabled(self, *args, **kwargs): pass
+	def setIsDistortion(self, *args, **kwargs): pass
+	def setIsFlame(self, *args, **kwargs): pass
+	def setIsNeuronsBoost(self, *args, **kwargs): pass
+	def setIsPTUR(self, *args, **kwargs): pass
+	def setIsPossession(self, *args, **kwargs): pass
 	def setIsPyrometer(self, *args, **kwargs): pass
+	def setIsTiles(self, *args, **kwargs): pass
 	def setMaskCenter(self, *args, **kwargs): pass
 	def setParams(self, *args, **kwargs): pass
 	def setPyrometerColour(self, *args, **kwargs): pass

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/japan/J51_Naginata/crash/lod3/Chassis</nodefullVisual>
+	<parent>vehicles/japan/J51_Naginata/crash/lod4/Chassis</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.602335 -0.005185 -3.873524</min>
+		<max>1.600710 1.203657 3.585187</max>
+	</visibilityBox>
+</root>

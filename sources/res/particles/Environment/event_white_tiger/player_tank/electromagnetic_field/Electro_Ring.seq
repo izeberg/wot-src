@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>1.433333</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Radius</name>
+		<type>model</type>
+		<resource>particles/Environment/event_white_tiger/player_tank/electromagnetic_field/Electro_Ring.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>2.100000 2.100000 2.100000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd1</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 0.031373 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 6.000000</inTangent>
+				<outTangent>0.000000 3.647082 2.000020 30.000303</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.033333</startTime>
+				<value>1.000000 0.152941 0.066667 1.000000</value>
+				<inTangent>-0.000000 3.647082 2.000020 30.000303</inTangent>
+				<outTangent>0.000000 -0.453780 -0.218487 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.266667</startTime>
+				<value>1.000000 0.047059 0.015686 1.000000</value>
+				<inTangent>-0.000000 -0.453780 -0.218487 -0.000000</inTangent>
+				<outTangent>0.000000 -0.052286 -0.052288 -3.333334</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.566667</startTime>
+				<value>1.000000 0.031373 0.000000 0.000000</value>
+				<inTangent>-0.000000 -0.052286 -0.052288 -3.333334</inTangent>
+				<outTangent>-0.000000 -0.052286 -0.052288 -3.333334</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd0</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 0.019608 0.000000 0.000000</value>
+				<inTangent>0.000000 0.705885 0.705889 30.000303</inTangent>
+				<outTangent>0.000000 0.705885 0.705889 30.000303</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.033333</startTime>
+				<value>1.000000 0.043137 0.023529 1.000000</value>
+				<inTangent>-0.000000 0.705885 0.705889 30.000303</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 8.785424</outTangent>
+				<tangentMode>66305</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.333333</startTime>
+				<value>1.000000 0.019608 0.000000 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -13.564265</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -4.285701</outTangent>
+				<tangentMode>65795</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.566667</startTime>
+				<value>1.000000 0.019608 0.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -4.285714</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -4.285714</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property vector4</name>
+			<type>vector4</type>
+			<identifier>s_nd1</identifier>
+			<property>diffuseUVSpeedAlphaOffset</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 -0.769146 1.000000 0.000000</value>
+				<inTangent>0.000000 -0.915252 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 -0.915252 0.000000 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.266667</startTime>
+				<value>0.000000 -1.086107 1.000000 0.000000</value>
+				<inTangent>0.000000 -0.799841 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 -0.831645 0.000000 0.000000</outTangent>
+				<tangentMode>66307</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.566667</startTime>
+				<value>0.000000 -1.524669 1.000000 0.000000</value>
+				<inTangent>-0.000000 -0.140809 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.000000 -0.140809 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Light</name>
+		<type>light</type>
+		<lightType>omnilight</lightType>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 10.171470 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>multiplier</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>318623.406250</inTangent>
+				<outTangent>318623.406250</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.100000</startTime>
+				<value>31862.341797</value>
+				<inTangent>318623.406250</inTangent>
+				<outTangent>-73528.476562</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.533333</startTime>
+				<value>0.000000</value>
+				<inTangent>-73528.476562</inTangent>
+				<outTangent>-73528.476562</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>color</name>
+			<type>vector4</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 0.090196 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Particle</name>
+		<type>particle</type>
+		<resource>particles/Environment/event_white_tiger/player_tank/electromagnetic_field/Electro_sparks.eff</resource>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>30.000299</inTangent>
+				<outTangent>30.000299</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.033333</startTime>
+				<value>1.000000</value>
+				<inTangent>30.000299</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.166667</startTime>
+				<value>1.000000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>-29.999413</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.200000</startTime>
+				<value>0.000000</value>
+				<inTangent>-14.999994</inTangent>
+				<outTangent>-14.999994</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.566667</startTime>
+				<value>0.000000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>-0.000000</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Tank_Orb</name>
+		<type>model</type>
+		<resource>particles/Environment/event_white_tiger/player_tank/electromagnetic_field/Electro_Ring_3.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.100000 0.100000 0.100000</value>
+				<inTangent>0.428571 0.428571 0.428571</inTangent>
+				<outTangent>0.428571 0.428571 0.428571</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd0</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 0.043137 0.000000 0.000000</value>
+				<inTangent>0.000000 2.470621 2.588261 30.000303</inTangent>
+				<outTangent>0.000000 2.470621 2.588261 30.000303</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.033333</startTime>
+				<value>1.000000 0.125490 0.086275 1.000000</value>
+				<inTangent>-1.647060 -0.588241 -0.000000 9.815447</inTangent>
+				<outTangent>0.000000 0.058825 0.000000 9.815447</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.266667</startTime>
+				<value>1.000000 0.090196 0.050980 1.000000</value>
+				<inTangent>0.248367 0.454249 0.000000 -5.385839</inTangent>
+				<outTangent>0.248367 0.454249 0.000000 -10.188098</outTangent>
+				<tangentMode>66307</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.566667</startTime>
+				<value>1.000000 0.043137 0.000000 0.000000</value>
+				<inTangent>0.496733 0.849673 -0.000000 0.007618</inTangent>
+				<outTangent>0.496733 0.849673 -0.000000 0.007618</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property vector4</name>
+			<type>vector4</type>
+			<identifier>s_nd0</identifier>
+			<property>diffuseUVSpeedAlphaOffset</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.100000 0.204916 1.000000 0.000000</value>
+				<inTangent>0.187500 -1.005569 0.000000 0.000000</inTangent>
+				<outTangent>0.176471 -1.490278 0.000000 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.566667</startTime>
+				<value>0.200000 -0.639575 1.000000 0.000000</value>
+				<inTangent>0.187500 -0.133506 -0.000000 -0.000000</inTangent>
+				<outTangent>0.218182 -0.133506 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>wt_stun_area_sound</name>
+		<type>sound</type>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>1.433333</duration>
+				<value>Root|</value>
+			</frame>
+		</track>
+		<track>
+			<name>Sound</name>
+			<type>sound</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>1.418254</duration>
+				<sequenceSound>ev_wt_ability_stun_area</sequenceSound>
+				<type>one_shot</type>
+				<fade>0.000000</fade>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

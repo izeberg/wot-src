@@ -1455,7 +1455,6 @@ class DualGunAimingSystem(IAimingSystem):
 	matrix = property(lambda self: None)
 	matrixProvider = property(lambda self: None)
 	def onActiveGunChanged(self, *args, **kwargs): pass
-	def onSiegeStateChanged(self, *args, **kwargs): pass
 	def overrideZoom(self, *args, **kwargs): pass
 	def resetIdealDirection(self, *args, **kwargs): pass
 	def setAimingLimits(self, *args, **kwargs): pass
@@ -1498,7 +1497,6 @@ class DualGunAimingSystemRemote(DualGunAimingSystem):
 	matrix = property(lambda self: None)
 	matrixProvider = property(lambda self: None)
 	def onActiveGunChanged(self, *args, **kwargs): pass
-	def onSiegeStateChanged(self, *args, **kwargs): pass
 	def overrideZoom(self, *args, **kwargs): pass
 	def resetIdealDirection(self, *args, **kwargs): pass
 	def setAimingLimits(self, *args, **kwargs): pass
@@ -4327,11 +4325,14 @@ class PyVOIP(pybind11_object):
 	def __subclasshook__(*args, **kwargs): pass
 	def command(self, *args, **kwargs): pass
 	def disableMicrophone(self, *args, **kwargs): pass
+	def disableVOIP(self, *args, **kwargs): pass
 	def enableMicrophone(self, *args, **kwargs): pass
+	def enableVOIP(self, *args, **kwargs): pass
 	def finalise(self, *args, **kwargs): pass
 	def getAPI(self, *args, **kwargs): pass
 	def getCaptureDevices(self, *args, **kwargs): pass
 	def initialise(self, *args, **kwargs): pass
+	def isOSSupported(self, *args, **kwargs): pass
 	def joinChannel(self, *args, **kwargs): pass
 	def leaveChannel(self, *args, **kwargs): pass
 	def login(self, *args, **kwargs): pass
@@ -4836,7 +4837,6 @@ class SniperAimingSystem(IAimingSystem):
 	def handleMovement(self, *args, **kwargs): pass
 	matrix = property(lambda self: None)
 	matrixProvider = property(lambda self: None)
-	def onSiegeStateChanged(self, *args, **kwargs): pass
 	def overrideZoom(self, *args, **kwargs): pass
 	def resetIdealDirection(self, *args, **kwargs): pass
 	def setAimingLimits(self, *args, **kwargs): pass
@@ -4882,7 +4882,6 @@ class SniperAimingSystemRemote(SniperAimingSystem):
 	def handleMovement(self, *args, **kwargs): pass
 	matrix = property(lambda self: None)
 	matrixProvider = property(lambda self: None)
-	def onSiegeStateChanged(self, *args, **kwargs): pass
 	def overrideZoom(self, *args, **kwargs): pass
 	def resetIdealDirection(self, *args, **kwargs): pass
 	def setAimingLimits(self, *args, **kwargs): pass

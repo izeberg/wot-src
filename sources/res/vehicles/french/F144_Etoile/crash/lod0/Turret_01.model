@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-1.667603 -0.644561 -1.248378</min>
+		<max>1.613988 1.998340 1.260463</max>
+	</visibilityBox>
+	<parent>vehicles/french/F144_Etoile/crash/lod1/Turret_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/french/F144_Etoile/crash/lod0/Turret_01</nodefullVisual>
+</root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/american/A180_ACIT_40t_Concept/normal/lod1/Chassis</parent>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.543265 -0.000078 -3.151754</min>
+		<max>1.543326 0.968621 3.299313</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/american/A180_ACIT_40t_Concept/normal/lod0/Chassis</nodefullVisual>
+</root>

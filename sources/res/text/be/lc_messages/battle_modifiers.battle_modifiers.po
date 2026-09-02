@@ -33,19 +33,19 @@ msgstr "Параметры бою"
 
 msgid "domain/battleSeasonModifiers/description"
 msgstr ""
-"Змяняе пэўныя параметры ўсёй тэхнікі, якая бярэ ўдзел у баях Умацаванага "
-"раёна."
+"Изменяют некоторые параметры всей техники, участвующей в сражениях "
+"Укрепрайона."
 
 msgid "domain/battleSeasonModifiers/name"
-msgstr "Мадыфікатар Умацаванага раёна"
+msgstr "Модификаторы Укрепрайона"
 
 msgid "domain/battleSeasonModifiersGM/description"
 msgstr ""
-"Змяняе пэўныя параметры ўсёй тэхнікі, якая бярэ ўдзел у баях на Глабальнай "
-"карце."
+"Изменяют некоторые параметры всей техники, участвующей в сражениях на "
+"Глобальной карте."
 
 msgid "domain/battleSeasonModifiersGM/name"
-msgstr "Мадыфікатар Глабальнай карты"
+msgstr "Модификаторы Глобальной карты"
 
 msgid "domain/comp7SeasonModifiers/description"
 msgstr ""
@@ -196,17 +196,103 @@ msgstr ""
 msgid "modifier/name/fakeComp7VisionWheelLightTank"
 msgstr "Радыус агляду (лёгкія колавыя танкі)"
 
+msgid "modifier/name/fakeEnginePowerATSPGTanks"
+msgstr "Мощность двигателя (ПТ-САУ)"
+
+msgid "modifier/name/fakeEnginePowerHeavyTanks"
+msgstr "Мощность двигателя (тяжёлые танки)"
+
+msgid "modifier/name/fakeEnginePowerLightTanks"
+msgstr "Мощность двигателя (лёгкие танки)"
+
+msgid "modifier/name/fakeEnginePowerMediumTanks"
+msgstr "Мощность двигателя (средние танки)"
+
+msgid "modifier/name/fakeEnginePowerSPGTanks"
+msgstr "Мощность двигателя (САУ)"
+
+msgid "modifier/name/fakeForwardSpeedATSPGTanks"
+msgstr "Максимальная скорость движения вперёд (ПТ-САУ)"
+
+msgid "modifier/name/fakeForwardSpeedHeavyTanks"
+msgstr "Максимальная скорость движения вперёд (тяжёлые танки)"
+
+msgid "modifier/name/fakeForwardSpeedLightTanks"
+msgstr "Максимальная скорость движения вперёд (лёгкие танки)"
+
+msgid "modifier/name/fakeForwardSpeedMediumTanks"
+msgstr "Максимальная скорость движения вперёд (средние танки)"
+
+msgid "modifier/name/fakeForwardSpeedSPGTanks"
+msgstr "Максимальная скорость движения вперёд (САУ)"
+
 msgid "modifier/name/fakeModifierRepairCooldown"
 msgstr "Мінімальны час перанабівання зоны рамонту пасля выкарыстання."
 
 msgid "modifier/name/fakeModifierRepairSpeed"
 msgstr "Хуткасць аднаўлення ачкоў трываласці машыны."
 
+msgid "modifier/name/fakeSHDeviceDamage"
+msgstr "Павелічэнне трываласці модуляў тэхнікі"
+
+msgid "modifier/name/fakeSHEnginePowerATSPG"
+msgstr "Мощность двигателя (ПТ-САУ)"
+
+msgid "modifier/name/fakeSHEnginePowerHeavy"
+msgstr "Мощность двигателя (тяжёлые танки)"
+
+msgid "modifier/name/fakeSHEnginePowerLight"
+msgstr "Мощность двигателя (лёгкие танки)"
+
+msgid "modifier/name/fakeSHEnginePowerLight_ATSPG_SPG"
+msgstr "Мощность двигателя (лёгкие танки, ПТ-САУ, САУ)"
+
+msgid "modifier/name/fakeSHEnginePowerMedium"
+msgstr "Мощность двигателя (средние танки)"
+
+msgid "modifier/name/fakeSHEnginePowerMediumLight_ATSPG_SPG"
+msgstr "Мощность двигателя (средние танки, лёгкие танки, ПТ-САУ, САУ)"
+
+msgid "modifier/name/fakeSHEnginePowerMedium_ATSPG_SPG"
+msgstr "Мощность двигателя (средние танки, ПТ-САУ, САУ)"
+
+msgid "modifier/name/fakeSHEnginePowerSPG"
+msgstr "Мощность двигателя (САУ)"
+
+msgid "modifier/name/fakeSHForwardSpeedATSPG"
+msgstr "Максимальная скорость движения вперёд (ПТ-САУ)"
+
+msgid "modifier/name/fakeSHForwardSpeedHeavy"
+msgstr "Максимальная скорость движения вперёд (тяжёлые танки)"
+
+msgid "modifier/name/fakeSHForwardSpeedLight"
+msgstr "Максимальная скорость движения вперёд (лёгкие танки)"
+
+msgid "modifier/name/fakeSHForwardSpeedLight_ATSPG_SPG"
+msgstr "Максимальная скорость движения вперёд (лёгкие танки, ПТ-САУ, САУ)"
+
+msgid "modifier/name/fakeSHForwardSpeedMedium"
+msgstr "Максимальная скорость движения вперёд (средние танки)"
+
+msgid "modifier/name/fakeSHForwardSpeedMediumLight_ATSPG_SPG"
+msgstr ""
+"Максимальная скорость движения вперёд (средние танки, лёгкие танки, ПТ-САУ, "
+"САУ)"
+
+msgid "modifier/name/fakeSHForwardSpeedMedium_ATSPG_SPG"
+msgstr "Максимальная скорость движения вперёд (средние танки, ПТ-САУ, САУ)"
+
+msgid "modifier/name/fakeSHForwardSpeedSPG"
+msgstr "Максимальная скорость движения вперёд (САУ)"
+
 msgid "modifier/name/fakeSHVisionLightTank"
 msgstr "Радыус агляду (лёгкія гусенічныя танкі)"
 
 msgid "modifier/name/fakeSHVisionOtherTank"
 msgstr "Радыус агляду (сярэднія і цяжкія танкі, а таксама СТ-САУ)"
+
+msgid "modifier/name/fakeSHVisionWheelLightTank"
+msgstr "Радыус агляду (лёгкія колавыя танкі)"
 
 msgid "modifier/name/fwMaxSpeed"
 msgstr "Максімальная хуткасць руху наперад"
@@ -306,10 +392,10 @@ msgid "modifiersDomainTooltip/restrict/twoRestriction"
 msgstr "(але {min}, {max})"
 
 msgid "modifiersDomainTooltip/subtitle/plural"
-msgstr "Мадыфікатар уплывае на параметры:"
+msgstr "Модификатор влияет на параметры:"
 
 msgid "modifiersDomainTooltip/subtitle/short"
 msgstr "Параметры:"
 
 msgid "modifiersDomainTooltip/subtitle/single"
-msgstr "Мадыфікатар уплывае на параметр:"
+msgstr "В боях на Глобальной карте действуют следующие модификаторы:"

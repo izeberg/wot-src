@@ -8,11 +8,17 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "button/accept"
+msgstr "Так точно!"
+
 msgid "personalProgress/level"
 msgstr "%(level)s уровень личной прогрессии"
 
 msgid "personalProgress/need_clan"
 msgstr "Для прохождения прогрессии необходимо состоять в клане."
+
+msgid "season/info_text"
+msgstr "Этап %(stage)s: %(stageType)s %(stageName)s"
 
 msgid "season/loading/text"
 msgstr "Данные обновляются..."
@@ -21,7 +27,7 @@ msgid "season/loading/title"
 msgstr "Клановый сезон"
 
 msgid "season/name"
-msgstr "Сезон «Рождение бури»"
+msgstr "Сила времени"
 
 msgid "season/over"
 msgstr "Сезон завершён"
@@ -36,19 +42,28 @@ msgid "season/stage/text"
 msgstr "Этап %(stage)s: "
 
 msgid "season/stage_1"
-msgstr "Штормовое предупреждение"
+msgstr "Закатное безмолвие"
 
 msgid "season/stage_2"
-msgstr "Грозовые тучи"
+msgstr "Сумерки мира"
 
 msgid "season/stage_3"
-msgstr "Шквалистый ветер"
+msgstr "Молчание ночи"
 
 msgid "season/stage_4"
-msgstr "И грянул гром"
+msgstr "Предрассветная мгла"
 
 msgid "season/stage_5"
-msgstr "Стена дождя"
+msgstr "Лучи надежды"
 
-msgid "season/stage_6"
-msgstr "Вечная гроза"
+msgid "season/title"
+msgstr "Сезон «%(seasonName)s»"
+
+msgid "selectableReward/subTitle"
+msgstr "ВЫБЕРИТЕ НАГРАДУ"
+
+msgid "selectableReward/title"
+msgstr "КЛАНОВЫЙ СЕЗОН «%(season)s»"
+
+msgid "selectedReward/subTitle"
+msgstr "Стиль получен"

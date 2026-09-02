@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodelessVisual>content/Hangars/h08_tday_2026/enviroment/normal/lod0/h08_TD26_LeavesAutumnDark_Wide</nodelessVisual>
+	<visibilityBox>
+		<min>
+			-3.3718 -0.0612499 -2.67493
+			<!--BW_String-->
+		</min>
+		<max>
+			2.98215 0.172446 0.509447
+			<!--BW_String-->
+		</max>
+	</visibilityBox>
+	<parent>content/Hangars/h08_tday_2026/enviroment/normal/lod1/h08_TD26_LeavesAutumnDark_Wide</parent>
+	<extent>40.000000</extent>
+</root>

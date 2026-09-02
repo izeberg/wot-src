@@ -41,7 +41,7 @@ class EventCategories(CONST_CONTAINER):
 class WTLootBoxes(CONST_CONTAINER):
     WT_HUNTER = 'wt_hunter'
     WT_BOSS = 'wt_boss'
-    WT_SPECIAL = 'wt_special'
+    WT_TANK = 'wt_tank'
 
 
 class LunarNYLootBoxTypes(Enum):
@@ -118,13 +118,14 @@ class LootBox(GUIItem):
                  '__bonusGroups', '__autoOpenTime', '__rotationLists', '__config',
                  '__rotationStage', '__tags', '__unlockKeys', '__manualMaxOpenCount',
                  '__lootBoxInfoPageURL', '__lootBoxShopURL', '__isStatCollected',
-                 '__immediatelyOpen')
+                 '__immediatelyOpen', '__customBonusData')
 
     def __init__(self, lootBoxID, lootBoxConfig, invCount):
         super(LootBox, self).__init__()
         self.__id = lootBoxID
         self.__invCount = invCount
         self.__rotationStage = 0
+        self.__customBonusData = {}
         self.__updateByConfig(lootBoxConfig)
 
     def __repr__(self):
@@ -328,6 +329,9 @@ class LootBox(GUIItem):
     def _getRotationStage(self):
         return self.__rotationStage
 
+    def getCustomBonusData(self):
+        return self.__customBonusData
+
     def isMultipleStage(self):
         return len(self.__rotationLists) > 1
 
@@ -353,6 +357,7 @@ class LootBox(GUIItem):
         self.__tier = LootBoxTiers(lootBoxConfig.get('tier', 1))
         self.__historyName = lootBoxConfig.get('historyName', '')
         self.__config = lootBoxConfig.get('config', {})
+        self.__customBonusData = lootBoxConfig.get('customBonusData', {})
         self.__rotationLists = []
         if self.hasLootLists():
             self.__rotationLists, self.__slotBonuses = parseBonusSection(lootBoxConfig['bonus'], self.__config['rotationLevelCount'])

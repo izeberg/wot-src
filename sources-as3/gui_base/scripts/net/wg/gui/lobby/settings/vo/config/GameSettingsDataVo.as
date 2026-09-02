@@ -54,6 +54,8 @@ package net.wg.gui.lobby.settings.vo.config
       
       public var gameplay_devMaps:SettingsControlProp = null;
       
+      public var enableBattleContextHints:SettingsControlProp = null;
+      
       public var minimapAlpha:SettingsControlProp = null;
       
       public var enablePostMortemDelay:SettingsControlProp = null;
@@ -181,6 +183,7 @@ package net.wg.gui.lobby.settings.vo.config
             "gameplay_only10Mode":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
             "gameplay_epicDomination":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
             "gameplay_devMaps":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
+            "enableBattleContextHints":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
             "minimapAlpha":createControl(ControlsFactory.TYPE_SLIDER).build(),
             "enablePostMortemDelay":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
             "enableOpticalSnpEffect":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
@@ -278,6 +281,8 @@ package net.wg.gui.lobby.settings.vo.config
          this.gameplay_epicDomination = null;
          this.gameplay_devMaps.dispose();
          this.gameplay_devMaps = null;
+         this.enableBattleContextHints.dispose();
+         this.enableBattleContextHints = null;
          this.minimapAlpha.dispose();
          this.minimapAlpha = null;
          this.enablePostMortemDelay.dispose();

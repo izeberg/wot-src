@@ -51,6 +51,10 @@ package net.wg.data.constants.generated
       
       public static const HEALING_CD:String = "healingCoolDown";
       
+      public static const HEALING_CD_S:String = "healingCoolDownS";
+      
+      public static const HEALING_CD_L:String = "healingCoolDownL";
+      
       public static const ORANGE_ZONE:String = "orangeZone";
       
       public static const DAMAGING_ZONE:String = "damagingZone";
@@ -130,6 +134,12 @@ package net.wg.data.constants.generated
       public static const ABILITY:String = "ability";
       
       public static const THERMAL_VISION_WARNING:String = "thermalVisionWarning";
+      
+      public static const WT_BOMB_CAPTURE:String = "wtBombCapture";
+      
+      public static const WT_BOMB_DEPLOY:String = "wtBombDeploy";
+      
+      public static const WT_BOMB_ABSORB:String = "wtBombAbsorb";
        
       
       public function BATTLE_NOTIFICATIONS_TIMER_TYPES()

@@ -132,6 +132,8 @@ package net.wg.gui.lobby.vehiclePreview
       
       override public function updateStage(param1:Number, param2:Number) : void
       {
+         _originalWidth = param1;
+         _originalHeight = param2;
          setSize(param1,param2);
       }
       

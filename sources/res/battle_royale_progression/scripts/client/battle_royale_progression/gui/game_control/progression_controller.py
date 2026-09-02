@@ -1,5 +1,4 @@
 import logging, typing, Event
-from constants import ARENA_BONUS_TYPE
 from PlayerEvents import g_playerEvents
 from account_helpers import AccountSettings
 from account_helpers.AccountSettings import BR_PROGRESSION_POINTS_SEEN
@@ -8,14 +7,12 @@ from helpers import dependency
 from skeletons.gui.game_control import IBRProgressionOnTokensController
 from skeletons.gui.lobby_context import ILobbyContext
 from skeletons.gui.server_events import IEventsCache
-from mt_birthday.skeletons.mt_birthday_controller import ITanksBirthdayController
 _logger = logging.getLogger(__name__)
 
 class ProgressionOnTokensController(IBRProgressionOnTokensController):
     PREV_POINTS_ACC_SETTINGS_KEY = 'exampleLastPointsSeen'
     eventsCache = dependency.descriptor(IEventsCache)
     lobbyContext = dependency.descriptor(ILobbyContext)
-    tankBirthdayController = dependency.descriptor(ITanksBirthdayController)
     progressionToken = ''
 
     def __init__(self):
@@ -192,19 +189,6 @@ class BRProgressionController(BaseProgressionWithBattleQuests):
     PREV_POINTS_ACC_SETTINGS_KEY = BR_PROGRESSION_POINTS_SEEN
     progressionToken = 'img:battle_royale:progression'
     PROGRESSION_QUEST_PREFIX = 'battle_royale:ticket:progression:'
-    BIRTHDAY_ICON_POSTFIX = 'Birthday'
-    BATTLE_ROYALE_SOLO_ICON = 291
-
-    def getBirthdayIconPostfix(self):
-        isBirthdayAvailable = dependency.hasInstance(ITanksBirthdayController) and self.tankBirthdayController.isEnabled()
-        if isBirthdayAvailable:
-            return self.BIRTHDAY_ICON_POSTFIX
-        return ''
-
-    def checkBRBattleTypeForIcon(self, battleType):
-        if battleType != ARENA_BONUS_TYPE.BATTLE_ROYALE_SOLO or self.getBirthdayIconPostfix() == '':
-            return battleType
-        return self.BATTLE_ROYALE_SOLO_ICON
 
     def _getQuestContainer(self):
         return BRQuests()

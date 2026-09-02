@@ -34,6 +34,8 @@ from gui.server_events.events_dispatcher import showPersonalMission, showMission
 from gui.server_events.events_helpers import isRankedDaily, isDailyEpic
 from gui.shared import events
 from gui.shared.event_bus import EVENT_BUS_SCOPE
+from white_tiger.gui.shared.event_dispatcher import showEventProgressionWindow
+from white_tiger.gui.Scaleform.genConsts.WHITE_TIGER_HANGAR_HEADER_QUESTS import WHITE_TIGER_HANGAR_HEADER_QUESTS
 from gui.shared.formatters import icons
 from gui.shared.personality import ServicesLocator
 from gui.shared.utils.functions import makeTooltip
@@ -48,7 +50,7 @@ from shared_utils import first
 from skeletons.connection_mgr import IConnectionManager
 from skeletons.gui.battle_matters import IBattleMattersController
 from skeletons.gui.event_boards_controllers import IEventBoardController
-from skeletons.gui.game_control import IBattlePassController, IBootcampController, ICollectiveGoalEntryPointController, IResourceWellController, IMarathonEventsController, IFestivityController, IRankedBattlesController, IQuestsController, IBattleRoyaleController, IMapboxController, IEpicBattleMetaGameController, IFunRandomController, IComp7Controller, ILimitedUIController, IArmoryYardController, IEarlyAccessController, IVersusAIController, IWinbackController, IUniversalFlagEntryPointController, ITankAcademyController
+from skeletons.gui.game_control import IBattlePassController, IBootcampController, ICollectiveGoalEntryPointController, IResourceWellController, IMarathonEventsController, IFestivityController, IRankedBattlesController, IQuestsController, IBattleRoyaleController, IMapboxController, IEpicBattleMetaGameController, IFunRandomController, IComp7Controller, ILimitedUIController, IArmoryYardController, IEarlyAccessController, IVersusAIController, IWinbackController, IUniversalFlagEntryPointController, ITankAcademyController, IWhiteTigerController
 from skeletons.gui.lobby_context import ILobbyContext
 from skeletons.gui.server_events import IEventsCache
 from skeletons.gui.shared import IItemsCache
@@ -103,41 +105,8 @@ class ActiveWidgets(object):
         return False
 
 
-class EconomyWidgetContent(object):
-
-    @classmethod
-    def isEconomyWidgetVisible(cls):
-        raise NotImplementedError
-
-    @classmethod
-    def backportEconomyWidgetText(cls):
-        raise NotImplementedError
-
-
-class EconomyWidgetHandler(object):
-    __widgetContent = None
-
-    @classmethod
-    def overrideWidgetContent(cls, widgetContent):
-        if not issubclass(widgetContent, EconomyWidgetContent):
-            _logger.error('Parameter is not a subclass of EconomyWidgetContent %s', widgetContent)
-            return
-        cls.__widgetContent = widgetContent
-
-    @classmethod
-    def isEconomyWidgetVisible(cls):
-        if cls.__widgetContent:
-            return cls.__widgetContent.isEconomyWidgetVisible()
-        return False
-
-    @classmethod
-    def backportEconomyWidgetText(cls):
-        if cls.__widgetContent:
-            return cls.__widgetContent.backportEconomyWidgetText()
-        return ''
-
-
-QUEST_TYPE_BY_PM_BRANCH = {PM_BRANCH.REGULAR: HANGAR_HEADER_QUESTS.QUEST_TYPE_PERSONAL_REGULAR, PM_BRANCH.PERSONAL_MISSION_2: HANGAR_HEADER_QUESTS.QUEST_TYPE_PERSONAL_PM2, 
+QUEST_TYPE_BY_PM_BRANCH = {PM_BRANCH.REGULAR: HANGAR_HEADER_QUESTS.QUEST_TYPE_PERSONAL_REGULAR, 
+   PM_BRANCH.PERSONAL_MISSION_2: HANGAR_HEADER_QUESTS.QUEST_TYPE_PERSONAL_PM2, 
    PM_BRANCH.PERSONAL_MISSION_3: HANGAR_HEADER_QUESTS.QUEST_TYPE_PERSONAL_PM3}
 HANGAR_HEADER_QUESTS_TO_PM_BRANCH = {value:key for key, value in QUEST_TYPE_BY_PM_BRANCH.iteritems()}
 FLAG_BY_QUEST_TYPE = {HANGAR_HEADER_QUESTS.QUEST_TYPE_PERSONAL_REGULAR: RES_ICONS.MAPS_ICONS_LIBRARY_HANGARFLAG_FLAG_VINOUS, 
@@ -393,6 +362,7 @@ class HangarHeader(HangarHeaderMeta, IGlobalListener, IEventBoardsListener):
     __earlyAccessCtrl = dependency.descriptor(IEarlyAccessController)
     __limitedUIController = dependency.descriptor(ILimitedUIController)
     __tankAcademyController = dependency.descriptor(ITankAcademyController)
+    __wtController = dependency.descriptor(IWhiteTigerController)
     __externalWidgets = {}
 
     def __init__(self):
@@ -414,6 +384,8 @@ class HangarHeader(HangarHeaderMeta, IGlobalListener, IEventBoardsListener):
             showMissionsBattlePass()
         elif questType == HANGAR_HEADER_QUESTS.QUEST_TYPE_MAPBOX:
             showMissionsMapboxProgression()
+        elif questType == WHITE_TIGER_HANGAR_HEADER_QUESTS.QUEST_TYPE_WHITE_TIGER:
+            showEventProgressionWindow()
         elif questType in QUEST_TYPE_BY_PM_BRANCH.itervalues():
             if questID:
                 showPersonalMission(missionID=int(questID))
@@ -452,8 +424,7 @@ class HangarHeader(HangarHeaderMeta, IGlobalListener, IEventBoardsListener):
         self.__updateCollectiveGoalEntryPoint()
         self.__updateUniversalFlagEntryPoint()
         self.__updateBattleMattersEntryPoint()
-        self.as_updateEconomyWidgetS({'isVisible': EconomyWidgetHandler.isEconomyWidgetVisible(), 
-           'bonusValue': EconomyWidgetHandler.backportEconomyWidgetText()})
+        self.__updateEventWidget()
 
     def updateRankedHeader(self, *_):
         self.__updateWidget()
@@ -473,6 +444,9 @@ class HangarHeader(HangarHeaderMeta, IGlobalListener, IEventBoardsListener):
                 isSortie = self.prbEntity.isSortie()
         return getSupportedArenaBonusTypeFor(queueType, isInUnit, isSortie)
 
+    def updateEventHeader(self):
+        self.__updateEventWidget()
+
     def _populate(self):
         super(HangarHeader, self)._populate()
         self._currentVehicle = g_currentVehicle
@@ -489,6 +463,7 @@ class HangarHeader(HangarHeaderMeta, IGlobalListener, IEventBoardsListener):
         self.__resourceWell.onEventUpdated += self.update
         self.__collectiveGoalEntryPointController.onEventUpdated += self.__updateCollectiveGoalEntryPoint
         self.__universalFlagEntryPointController.onDataUpdated += self.__updateUniversalFlagEntryPoint
+        self.__wtController.onPrimeTimeStatusUpdated += self.update
         self.__battleMattersController.onStateChanged += self.__onBattleMattersStateChanged
         self.__battleMattersController.onFinish += self.__onBattleMattersStateChanged
         self.__limitedUIController.startObserve(LuiRules.BP_ENTRY, self.__updateBattlePassWidgetVisibility)
@@ -529,6 +504,7 @@ class HangarHeader(HangarHeaderMeta, IGlobalListener, IEventBoardsListener):
         self.__resourceWell.onEventUpdated -= self.update
         self.__collectiveGoalEntryPointController.onEventUpdated -= self.__updateCollectiveGoalEntryPoint
         self.__universalFlagEntryPointController.onDataUpdated -= self.__updateUniversalFlagEntryPoint
+        self.__wtController.onPrimeTimeStatusUpdated -= self.update
         self.__battleMattersController.onStateChanged -= self.__onBattleMattersStateChanged
         self.__battleMattersController.onFinish -= self.__onBattleMattersStateChanged
         self.__limitedUIController.stopObserve(LuiRules.BP_ENTRY, self.__updateBattlePassWidgetVisibility)
@@ -573,6 +549,8 @@ class HangarHeader(HangarHeaderMeta, IGlobalListener, IEventBoardsListener):
             return {'isVisible': True, 'quests': []}
         if self.prbEntity.getQueueType() == constants.QUEUE_TYPE.STRONGHOLD_UNITS:
             return {'isVisible': True, 'quests': self._getCommonQuestsToHeaderVO(self._currentVehicle.item)}
+        if self.__wtController.isEventPrbActive():
+            return {'isVisible': True, 'quests': []}
         if self._currentVehicle.isPresent():
             return {'isVisible': True, 'quests': self._getCommonQuestsToHeaderVO(self._currentVehicle.item)}
         if self.__comp7Controller.isComp7PrbActive():
@@ -733,6 +711,8 @@ class HangarHeader(HangarHeaderMeta, IGlobalListener, IEventBoardsListener):
 
     def __getWidgetAlias(self):
         enabledWidgetAliases = []
+        if self.__wtController.isEventPrbActive():
+            return HANGAR_ALIASES.WT_HEADER_WIDGET
         for alias, widgetGetter in self.__widgets.iteritems():
             if widgetGetter(self):
                 enabledWidgetAliases.append(alias)
@@ -748,6 +728,10 @@ class HangarHeader(HangarHeaderMeta, IGlobalListener, IEventBoardsListener):
 
     def __updateBattlePassWidgetVisibility(self, *_):
         self.__updateWidget()
+
+    def __updateEventWidget(self):
+        if self.__wtController.isEventPrbActive():
+            self.as_addEntryPointS(HANGAR_ALIASES.WT_HEADER_WIDGET)
 
     def __showAvailablePMOperation(self, branch):
         for operationID in finders.BRANCH_TO_OPERATION_IDS[branch]:

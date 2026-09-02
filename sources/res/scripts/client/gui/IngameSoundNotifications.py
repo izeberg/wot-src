@@ -1,9 +1,8 @@
 from random import randrange
 from functools import partial
 from collections import namedtuple
-from debug_utils import LOG_WARNING
-import Math, BigWorld, ResMgr, BattleReplay, Event, SoundGroups, VSE
-from visual_script_client.contexts.sound_notifications_context import SoundNotificationsContext
+from debug_utils import LOG_WARNING, LOG_ERROR
+import Math, BigWorld, ResMgr, BattleReplay, Event, SoundGroups, VSE, importlib
 from helpers.CallbackDelayer import CallbackDelayer, TimeDeltaMeter
 
 class IngameSoundNotifications(CallbackDelayer, TimeDeltaMeter):
@@ -16,7 +15,7 @@ class IngameSoundNotifications(CallbackDelayer, TimeDeltaMeter):
     PlayingEvent = namedtuple('PlayingEvent', ('eventName', 'vehicle', 'position',
                                                'boundVehicle', 'is2D'))
 
-    def __init__(self):
+    def __init__(self, arenaType):
         CallbackDelayer.__init__(self)
         TimeDeltaMeter.__init__(self)
         self.__isEnabled = False
@@ -34,15 +33,18 @@ class IngameSoundNotifications(CallbackDelayer, TimeDeltaMeter):
         self.onPlayEvent = Event.Event()
         self.onAddEvent = Event.Event()
         self.__readConfigs()
+        planPath = arenaType.soundNotificationsPlan
+        planContextPath = arenaType.soundNotificationsContext
+        self.__vseContextClass = self.__importVSEContextClass(planContextPath)
         self._vsePlan = VSE.Plan()
-        self._vsePlan.load('soundNotifications', 'CLIENT')
+        self._vsePlan.load(planPath, 'CLIENT')
         self.__soundNotificationsContext = None
         return
 
     def start(self):
         self.__enabledSoundCategories = set(('fx', 'voice'))
         self.__isEnabled = True
-        self.__soundNotificationsContext = SoundNotificationsContext()
+        self.__soundNotificationsContext = self.__vseContextClass()
         self._vsePlan.setContext(self.__soundNotificationsContext)
         self._vsePlan.start()
         self.measureDeltaTime()
@@ -131,6 +133,19 @@ class IngameSoundNotifications(CallbackDelayer, TimeDeltaMeter):
             else:
                 SoundGroups.g_instance.playSound2D(event['fxEvent'])
             return
+
+    @staticmethod
+    def __importVSEContextClass(contextPath):
+        classPathParts = contextPath.split('.')
+        class_name = classPathParts[(-1)]
+        python_module_path = ('.').join(classPathParts[:-1])
+        try:
+            python_module = importlib.import_module(python_module_path)
+        except ImportError:
+            LOG_ERROR('Failed to load Module ', contextPath)
+            raise
+
+        return getattr(python_module, class_name)
 
     def playNextQueueEvent(self, queueNum):
         if self.__checkPause():
@@ -222,6 +237,9 @@ class IngameSoundNotifications(CallbackDelayer, TimeDeltaMeter):
     def setEventPriority(self, eventName, priority, hold):
         if eventName in self.__events:
             self.__eventsPriorities[eventName] = {'priority': priority, 'time': hold}
+
+    def hasEvent(self, eventName):
+        return eventName in self.__events
 
     def setCircumstanceWeight(self, circIndex, weight, hold):
         if circIndex in self.__circumstances:

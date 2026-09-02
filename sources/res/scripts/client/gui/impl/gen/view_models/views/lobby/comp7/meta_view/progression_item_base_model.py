@@ -1,7 +1,7 @@
 from enum import IntEnum
 from frameworks.wulf import Array
 from frameworks.wulf import ViewModel
-from gui.impl.gen.view_models.views.lobby.comp7.meta_view.progression_division import ProgressionDivision
+from gui.impl.gen.view_models.views.lobby.comp7.division_info_model import DivisionInfoModel
 
 class Rank(IntEnum):
     FIRST = 6
@@ -44,7 +44,7 @@ class ProgressionItemBaseModel(ViewModel):
 
     @staticmethod
     def getDivisionsType():
-        return ProgressionDivision
+        return DivisionInfoModel
 
     def _initialize(self):
         super(ProgressionItemBaseModel, self)._initialize()

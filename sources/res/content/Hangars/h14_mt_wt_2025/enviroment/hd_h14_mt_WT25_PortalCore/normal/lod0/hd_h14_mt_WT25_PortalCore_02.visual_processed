@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s0Shape.vertices</vertices>
+			<primitive>s0Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/Portal.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						g_clampThresholdGlowDepthSettings
+						<Vector4>1.000000 160.000000 4.000000 4.000000</Vector4>
+					</property>
+					<property>
+						PortalMap
+						<Texture>content/Hangars/h14_mt_wt_2025/enviroment/hd_h14_mt_WT25_PortalCore/hd_h08_mt_WT26_PortalCore_01.dds</Texture>
+					</property>
+					<property>
+						g_clampXYLocalCoords
+						<Vector4>-10.000000 5.000000 2.000000 8.000000</Vector4>
+					</property>
+					<property>
+						g_distortionParams
+						<Vector4>0.003000 2.000000 2.000000 0.700000</Vector4>
+					</property>
+					<property>
+						g_substrateAlphaThreshold
+						<Float>0.300000</Float>
+					</property>
+				</material>
+				<groupOrigin>0.152383 10.182692 -1.628475</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-0.538940 0.729324 -41.595493</min>
+		<max>0.000000 19.636059 38.338543</max>
+	</boundingBox>
+	<geometrySize>1494</geometrySize>
+	<minUVDensity>0.000449</minUVDensity>
+</root>

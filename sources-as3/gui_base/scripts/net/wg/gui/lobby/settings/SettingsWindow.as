@@ -23,6 +23,7 @@ package net.wg.gui.lobby.settings
    import net.wg.gui.components.windows.WindowEvent;
    import net.wg.gui.events.ViewStackEvent;
    import net.wg.gui.interfaces.ISettingsBase;
+   import net.wg.gui.lobby.settings.components.EventSettingLabel;
    import net.wg.gui.lobby.settings.components.evnts.LimitedUIEvent;
    import net.wg.gui.lobby.settings.config.SettingsConfigHelper;
    import net.wg.gui.lobby.settings.events.AlternativeVoiceEvent;
@@ -116,6 +117,8 @@ package net.wg.gui.lobby.settings
       
       public var applyBtn:SoundButtonEx = null;
       
+      public var eventDisableLabel:EventSettingLabel = null;
+      
       private var _invalidTabs:Object;
       
       private var _invalidTabsNewCounterData:Object;
@@ -133,6 +136,8 @@ package net.wg.gui.lobby.settings
       private var _tabToSelect:int = -1;
       
       private var _graphicsPresetToSelect:int = -1;
+      
+      private var _isEvent:Boolean = false;
       
       private var _disabledTabsOverlay:DisabledTabsOverlay = null;
       
@@ -199,6 +204,7 @@ package net.wg.gui.lobby.settings
          addEventListener(AlternativeVoiceEvent.ON_TEST_BULB_VOICES,this.onOnTestBulbVoicesHandler);
          addEventListener(SettingViewEvent.ON_GAMMA_SETTING_OPEN,this.onOnGammaSettingOpenHandler);
          addEventListener(SettingViewEvent.ON_COLOR_SETTING_OPEN,this.onOnColorSettingOpenHandler);
+         addEventListener(SettingViewEvent.ON_RESET_BATTLE_CONTEXT_HINTS,this.onBattleContextHintResetHandler);
          updateStage(App.appWidth,App.appHeight);
          window.addEventListener(WindowEvent.SCALE_Y_CHANGED,this.onWindowScaleYChangedHandler);
       }
@@ -236,6 +242,8 @@ package net.wg.gui.lobby.settings
          this.tabLine = null;
          this.applyBtn.dispose();
          this.applyBtn = null;
+         this.eventDisableLabel.dispose();
+         this.eventDisableLabel = null;
          if(this.view)
          {
             this.view.removeEventListener(ViewStackEvent.NEED_UPDATE,this.onViewNeedUpdateHandler);
@@ -267,6 +275,7 @@ package net.wg.gui.lobby.settings
          removeEventListener(AlternativeVoiceEvent.ON_TEST_BULB_VOICES,this.onOnTestBulbVoicesHandler);
          removeEventListener(SettingViewEvent.ON_GAMMA_SETTING_OPEN,this.onOnGammaSettingOpenHandler);
          removeEventListener(SettingViewEvent.ON_COLOR_SETTING_OPEN,this.onOnColorSettingOpenHandler);
+         removeEventListener(SettingViewEvent.ON_RESET_BATTLE_CONTEXT_HINTS,this.onBattleContextHintResetHandler);
          this._settingsConfigHelper.changesData.clear();
          this._settingsConfigHelper = null;
          this._invalidTabs = App.utils.data.cleanupDynamicObject(this._invalidTabs);
@@ -454,6 +463,16 @@ package net.wg.gui.lobby.settings
          }
       }
       
+      public function as_setTigerEvent(param1:Boolean) : void
+      {
+         this.eventDisableLabel.visible = param1;
+         this._isEvent = param1;
+         if(this.view && this.view.currentView is FeedbackSettings)
+         {
+            FeedbackSettings(this.view.currentView).setIsEvent(this._isEvent);
+         }
+      }
+      
       public function as_showLimitedUISetting(param1:Boolean) : void
       {
          this._limitedUISettingVisible = param1;
@@ -528,6 +547,45 @@ package net.wg.gui.lobby.settings
          else
          {
             this._needToUpdateGraphicSettings = true;
+         }
+      }
+      
+      public function as_setVOIPButtonState(param1:Boolean) : void
+      {
+         var _loc2_:SoundSettings = this.getSoundSettings();
+         if(_loc2_)
+         {
+            _loc2_.setVOIPButtonState(param1);
+         }
+      }
+      
+      public function as_setBattleContextHintsEnabled(param1:Boolean) : void
+      {
+         var _loc3_:SettingsControlProp = null;
+         var _loc2_:GameSettings = this.getGameSettings();
+         if(_loc2_)
+         {
+            _loc2_.setBattleContextHintsEnabled(param1);
+            _loc3_ = SettingsControlProp(this._settingsConfigHelper.settingsData[GameSettings.LINKAGE][GameSettings.ENABLE_BATTLE_CONTEXT_HINTS]);
+            _loc3_.readOnly = !param1;
+         }
+      }
+      
+      public function as_setBattleContextHintsResetEnabled(param1:Boolean) : void
+      {
+         var _loc2_:GameSettings = this.getGameSettings();
+         if(_loc2_)
+         {
+            _loc2_.setBattleContextHintsResetEnabled(param1);
+         }
+      }
+      
+      public function as_setVOIPTestReady(param1:Boolean) : void
+      {
+         var _loc2_:SoundSettings = this.getSoundSettings();
+         if(_loc2_)
+         {
+            _loc2_.setVoiceTestReady(param1);
          }
       }
       
@@ -718,6 +776,10 @@ package net.wg.gui.lobby.settings
             {
                this._isFeedbackDPInstalled = true;
                FeedbackSettings(_loc4_).setDataProvider(this._feedbackDataProvider);
+            }
+            if(_loc4_ is FeedbackSettings)
+            {
+               FeedbackSettings(_loc4_).setIsEvent(this._isEvent);
             }
          }
       }
@@ -1217,6 +1279,7 @@ package net.wg.gui.lobby.settings
          {
             this._isFeedbackDPInstalled = true;
             FeedbackSettings(_loc2_).setDataProvider(this._feedbackDataProvider);
+            FeedbackSettings(_loc2_).setIsEvent(this._isEvent);
          }
       }
       
@@ -1274,12 +1337,15 @@ package net.wg.gui.lobby.settings
       
       private function onOnVivoxTestHandler(param1:SettingViewEvent) : void
       {
-         var _loc2_:Boolean = Boolean(param1.controlValue);
-         var _loc3_:Boolean = startVOIPTestS(_loc2_);
-         var _loc4_:SoundSettings = this.getSoundSettings();
-         if(_loc4_)
+         var _loc2_:Boolean = false;
+         var _loc3_:Boolean = false;
+         _loc2_ = Boolean(param1.controlValue);
+         _loc3_ = startVOIPTestS(_loc2_);
+         var _loc4_:Boolean = !(_loc3_ || !_loc2_);
+         var _loc5_:SoundSettings = this.getSoundSettings();
+         if(_loc5_)
          {
-            _loc4_.setVoiceTestState(!(_loc3_ || !_loc2_));
+            _loc5_.setVoiceTestStarted(_loc4_);
          }
       }
       
@@ -1402,6 +1468,11 @@ package net.wg.gui.lobby.settings
       {
          var _loc2_:Object = this._settingsConfigHelper.changesData.getChanges();
          showWarningDialogS(SETTINGS_DIALOGS.LIMITED_UI_OFF_NOTIFICATION,_loc2_,true);
+      }
+      
+      private function onBattleContextHintResetHandler(param1:SettingViewEvent) : void
+      {
+         showWarningDialogS(SETTINGS_DIALOGS.RESET_BATTLE_CONTEXT_HINTS_NOTIFICATION,null,false);
       }
    }
 }

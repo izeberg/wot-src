@@ -22,6 +22,7 @@ from VehicleEffects import DamageFromShotDecoder
 from common_tank_appearance import CommonTankAppearance
 import CGF, GenericComponents
 from Health import UnderWaterComponent
+from cgf_components import PlayerVehicleTag
 _ROOT_NODE_NAME = 'V'
 _GUN_RECOIL_NODE_NAME = 'G'
 _PERIODIC_TIME_ENGINE = 0.1
@@ -79,6 +80,7 @@ class CompoundAppearance(CommonTankAppearance, CallbackDelayer):
     wheelsScroll = property(lambda self: self._vehicle.wheelsScrollSmoothed if self._vehicle is not None else None)
     burnoutLevel = property(lambda self: self._vehicle.burnoutLevel / 255.0 if self._vehicle is not None else 0.0)
     isConstructed = property(lambda self: self.__isConstructed)
+    vehicleHealth = property(lambda self: self._vehicle.health if self._vehicle else 0.0)
     highlighter = ComponentDescriptor()
     compoundHolder = ComponentDescriptor()
     partsGameObjects = ComponentDescriptor()
@@ -111,8 +113,12 @@ class CompoundAppearance(CommonTankAppearance, CallbackDelayer):
             self.crashedTracksController.setVehicle(vehicle)
         if self.frictionAudition is not None:
             self.frictionAudition.setVehicleMatrix(vehicle.matrix)
-        self.highlighter.setVehicle(vehicle)
-        self.__applyVehicleOutfit()
+        if self.highlighter is not None:
+            self.highlighter.setVehicle(vehicle)
+        if self.fashions is not None:
+            self.__applyVehicleOutfit()
+        if vehicle.isPlayerVehicle:
+            self.createComponent(PlayerVehicleTag)
         fstList = vehicle.wheelsScrollFilters if vehicle.wheelsScrollFilters else []
         scndList = vehicle.wheelsSteeringFilters if vehicle.wheelsSteeringFilters else []
         for retriever, floatFilter in zip(self.filterRetrievers, fstList + scndList):
@@ -259,7 +265,7 @@ class CompoundAppearance(CommonTankAppearance, CallbackDelayer):
         self.burnoutProcessor = None
         self.gunRecoil = None
         self.gunAnimators = []
-        self.gunLinkedNodesAnimator = None
+        self.linkedNodesAnimator = None
         self.crashedTracksController = None
         if self.suspension is not None and not self.suspension.activePostmortem:
             self.suspension = None
@@ -750,6 +756,10 @@ class CompoundAppearance(CommonTankAppearance, CallbackDelayer):
     def setupGunMatrixTargets(self, target):
         self.turretMatrix.target = target.turretMatrix
         self.gunMatrix.target = target.gunMatrix
+
+    def getGunMatrix(self):
+        return (
+         self.turretMatrix.target, self.gunMatrix.target)
 
     def onFriction(self, otherID, frictionPoint, state):
         if self.frictionAudition is not None:

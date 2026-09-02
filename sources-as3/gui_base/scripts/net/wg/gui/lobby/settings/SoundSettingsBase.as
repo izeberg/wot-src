@@ -4,6 +4,7 @@ package net.wg.gui.lobby.settings
    import flash.text.TextFormatAlign;
    import net.wg.gui.components.advanced.ContentTabBar;
    import net.wg.gui.components.advanced.FieldSet;
+   import net.wg.gui.components.advanced.InviteIndicator;
    import net.wg.gui.components.controls.CheckBox;
    import net.wg.gui.components.controls.DropdownMenu;
    import net.wg.gui.components.controls.IconTextButton;
@@ -193,6 +194,8 @@ package net.wg.gui.lobby.settings
       
       public var voiceAnimation:SoundVoiceWaves = null;
       
+      public var voiceWaiting:InviteIndicator = null;
+      
       public var tabs:ContentTabBar = null;
       
       public var commonForm:SoundCommonForm = null;
@@ -289,6 +292,7 @@ package net.wg.gui.lobby.settings
          this.specialMusicVolumeSlider = this.specialForm.specialMusicVolumeSlider;
          this.specialMusicVolumeValue = this.specialForm.specialMusicVolumeValue;
          this.voiceAnimation = this.vivoxForm.voiceAnimation;
+         this.voiceWaiting = this.vivoxForm.voiceWaiting;
          super.initialize();
       }
       
@@ -397,6 +401,7 @@ package net.wg.gui.lobby.settings
          this.specialMusicVolumeSlider = null;
          this.specialMusicVolumeValue = null;
          this.voiceAnimation = null;
+         this.voiceWaiting = null;
          this.masterVolumeToggleCheckbox.dispose();
          this.masterVolumeToggleCheckbox = null;
          this.masterVolumeLabel.dispose();

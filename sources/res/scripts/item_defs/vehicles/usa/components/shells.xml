@@ -63,6 +63,24 @@
 			<devices>150</devices>
 		</damage>
 	</_105mm_APCR_M68M2>
+	<_105mm_APCR_M68M2_WT>
+		<id>1001</id>
+		<userString>#white_tiger.usa_vehicles.extend:_105mm_APCR_M68M2_WT</userString>
+		<description>#white_tiger.usa_vehicles.extend:_105mm_APCR_M68M2_WT_descr</description>
+		<shortDescriptionSpecial>#white_tiger.usa_vehicles.extend:_105mm_APCR_M68M2_WT_short_special</shortDescriptionSpecial>
+		<longDescriptionSpecial>#white_tiger.usa_vehicles.extend:_105mm_APCR_M68M2_WT_long_special</longDescriptionSpecial>
+		<icon>ap_wt</icon>
+		<price>1000</price>
+		<notInShop>true</notInShop>
+		<kind>ARMOR_PIERCING_CR</kind>
+		<caliber>105</caliber>
+		<isTracer>true</isTracer>
+		<effects>hunterAP_wt</effects>
+		<damage>
+			<armor>370</armor>
+			<devices>180</devices>
+		</damage>
+	</_105mm_APCR_M68M2_WT>
 	<_105mm_APCR_M735>
 		<id>174</id>
 		<userString>#usa_vehicles:_105mm_APCR_M735</userString>
@@ -182,6 +200,20 @@
 			<devices>150</devices>
 		</damage>
 	</_105mm_APDS_M392>
+	<_105mm_APDS_M392A>
+		<id>31068</id>
+		<userString>#usa_vehicles:_105mm_APDS_M392A</userString>
+		<icon>ap_cr</icon>
+		<price>1005</price>
+		<kind>ARMOR_PIERCING_CR</kind>
+		<caliber>105</caliber>
+		<isTracer>true</isTracer>
+		<effects>mainAPCR</effects>
+		<damage>
+			<armor>360</armor>
+			<devices>150</devices>
+		</damage>
+	</_105mm_APDS_M392A>
 	<_105mm_APDS_M392_T>
 		<id>35001</id>
 		<userString>#usa_vehicles:_105mm_APDS_M392_T</userString>
@@ -397,6 +429,25 @@
 			<!--BW_String-->
 		</piercingPowerLossFactorByDistance>
 	</_105mm_HEAT_M456>
+	<_105mm_HEAT_M456A>
+		<id>31069</id>
+		<userString>#usa_vehicles:_105mm_HEAT_M456A</userString>
+		<icon>hc_premium</icon>
+		<price>4800</price>
+		<improved>true</improved>
+		<kind>HOLLOW_CHARGE</kind>
+		<caliber>105</caliber>
+		<isTracer>true</isTracer>
+		<effects>mainHollowCharge</effects>
+		<damage>
+			<armor>360</armor>
+			<devices>150</devices>
+		</damage>
+		<piercingPowerLossFactorByDistance>
+			0.05
+			<!--BW_String-->
+		</piercingPowerLossFactorByDistance>
+	</_105mm_HEAT_M456A>
 	<_105mm_HEAT_M456_T>
 		<id>35002</id>
 		<userString>#usa_vehicles:_105mm_HEAT_M456_T</userString>
@@ -739,6 +790,36 @@
 			</damage>
 		</armorSpalls>
 	</_105mm_HE_M393>
+	<_105mm_HE_M393A>
+		<id>31070</id>
+		<userString>#usa_vehicles:_105mm_HE_M393A</userString>
+		<icon>he_modern</icon>
+		<price>680</price>
+		<kind>HIGH_EXPLOSIVE</kind>
+		<mechanics>MODERN</mechanics>
+		<caliber>105</caliber>
+		<explosionRadius>
+			1.91
+			<!--BW_String-->
+		</explosionRadius>
+		<isTracer>true</isTracer>
+		<effects>mainHighExplosive</effects>
+		<damage>
+			<armor>440</armor>
+			<devices>150</devices>
+		</damage>
+		<armorSpalls>
+			<impactRadius>
+				1.91
+				<!--BW_String-->
+			</impactRadius>
+			<coneAngle>90</coneAngle>
+			<damage>
+				<armor>220</armor>
+				<devices>75</devices>
+			</damage>
+		</armorSpalls>
+	</_105mm_HE_M393A>
 	<_105mm_HE_M393_T>
 		<id>35003</id>
 		<userString>#usa_vehicles:_105mm_HE_M393_T</userString>
@@ -1142,7 +1223,7 @@
 		<isTracer>true</isTracer>
 		<effects>largeArmorPiercing</effects>
 		<damage>
-			<armor>400</armor>
+			<armor>440</armor>
 			<devices>165</devices>
 		</damage>
 	</_120mm_AP_M355>
@@ -1429,7 +1510,7 @@
 		<isTracer>true</isTracer>
 		<effects>largeHollowCharge</effects>
 		<damage>
-			<armor>400</armor>
+			<armor>440</armor>
 			<devices>165</devices>
 		</damage>
 		<piercingPowerLossFactorByDistance>
@@ -1583,7 +1664,7 @@
 		<isTracer>true</isTracer>
 		<effects>largeHighExplosive</effects>
 		<damage>
-			<armor>515</armor>
+			<armor>530</armor>
 			<devices>165</devices>
 		</damage>
 		<armorSpalls>
@@ -1593,7 +1674,7 @@
 			</impactRadius>
 			<coneAngle>90</coneAngle>
 			<damage>
-				<armor>260</armor>
+				<armor>265</armor>
 				<devices>85</devices>
 			</damage>
 		</armorSpalls>
@@ -4367,6 +4448,20 @@
 			<devices>105</devices>
 		</damage>
 	</_76mm_APDS_M331A3>
+	<_76mm_APDS_M331A3_A100_02>
+		<id>31090</id>
+		<userString>#usa_vehicles:_76mm_APDS_M331A3_A100_02</userString>
+		<icon>ap_cr</icon>
+		<price>600</price>
+		<kind>ARMOR_PIERCING_CR</kind>
+		<caliber>76</caliber>
+		<isTracer>true</isTracer>
+		<effects>mediumAPCR</effects>
+		<damage>
+			<armor>170</armor>
+			<devices>105</devices>
+		</damage>
+	</_76mm_APDS_M331A3_A100_02>
 	<_76mm_AP_M339>
 		<id>63</id>
 		<userString>#usa_vehicles:_76mm_AP_M339</userString>
@@ -4495,6 +4590,25 @@
 			<!--BW_String-->
 		</piercingPowerLossFactorByDistance>
 	</_76mm_HEAT_M496A1>
+	<_76mm_HEAT_M496A1_A100_02>
+		<id>31092</id>
+		<userString>#usa_vehicles:_76mm_HEAT_M496A1_A100_02</userString>
+		<icon>hc_premium</icon>
+		<price>4400</price>
+		<improved>true</improved>
+		<kind>HOLLOW_CHARGE</kind>
+		<caliber>76</caliber>
+		<isTracer>true</isTracer>
+		<effects>mediumHollowCharge</effects>
+		<damage>
+			<armor>170</armor>
+			<devices>105</devices>
+		</damage>
+		<piercingPowerLossFactorByDistance>
+			0.05
+			<!--BW_String-->
+		</piercingPowerLossFactorByDistance>
+	</_76mm_HEAT_M496A1_A100_02>
 	<_76mm_HEAT_M496_SH>
 		<id>328</id>
 		<userString>#usa_vehicles:_76mm_HEAT_M496_SH</userString>
@@ -4620,6 +4734,36 @@
 			</damage>
 		</armorSpalls>
 	</_76mm_HE_M352A1>
+	<_76mm_HE_M352A1_A100_02>
+		<id>31091</id>
+		<userString>#usa_vehicles:_76mm_HE_M352A1_A100_02</userString>
+		<icon>he_modern</icon>
+		<price>300</price>
+		<kind>HIGH_EXPLOSIVE</kind>
+		<mechanics>MODERN</mechanics>
+		<caliber>76</caliber>
+		<explosionRadius>
+			1.09
+			<!--BW_String-->
+		</explosionRadius>
+		<isTracer>true</isTracer>
+		<effects>mediumHighExplosive</effects>
+		<damage>
+			<armor>260</armor>
+			<devices>105</devices>
+		</damage>
+		<armorSpalls>
+			<impactRadius>
+				1.09
+				<!--BW_String-->
+			</impactRadius>
+			<coneAngle>90</coneAngle>
+			<damage>
+				<armor>130</armor>
+				<devices>55</devices>
+			</damage>
+		</armorSpalls>
+	</_76mm_HE_M352A1_A100_02>
 	<_76mm_HE_M42A1>
 		<id>19</id>
 		<userString>#usa_vehicles:_76mm_HE_M42A1</userString>
@@ -5663,5 +5807,6 @@
 		<he_spg_stun>HIGH_EXPLOSIVE_SPG_STUN.png 0 0</he_spg_stun>
 		<flame>FLAME.png 0 0</flame>
 		<flame_alternative>FLAME_ALTERNATIVE.png 0 0</flame_alternative>
+		<ap_wt>WT_ARMOR_PIERCING.png 0 0</ap_wt>
 	</icons>
 </root>

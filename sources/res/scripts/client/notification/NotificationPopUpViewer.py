@@ -79,6 +79,7 @@ class NotificationPopUpViewer(NotificationPopUpViewerMeta, BaseNotificationView)
         g_messengerEvents.onLockPopUpMessages -= self.__onLockPopUpMassages
         g_messengerEvents.onUnlockPopUpMessages -= self.__onUnlockPopUpMessages
         g_playerEvents.onLoadingMilestoneReached -= self._onLoadingMilestoneReached
+        g_messengerEvents.onNotificationsClear -= self.__onNotificationsClear
         self.cleanUp()
         mvcInstance.cleanUp(resetCounter=self.__connectionMgr.isDisconnected())
         super(NotificationPopUpViewer, self)._dispose()
@@ -146,8 +147,11 @@ class NotificationPopUpViewer(NotificationPopUpViewerMeta, BaseNotificationView)
 
     def __displayStateChangeHandler(self, oldState, newState, data):
         if newState == NOTIFICATION_STATE.LIST:
-            self.as_removeAllMessagesS()
-            self.__pendingMessagesQueue = []
+            self.__clear()
+
+    def __clear(self):
+        self.as_removeAllMessagesS()
+        self.__pendingMessagesQueue = []
 
     def __getPopUpVO(self, notificaton):
         flashId = self._getFlashID(notificaton.getCounterInfo())
@@ -165,6 +169,9 @@ class NotificationPopUpViewer(NotificationPopUpViewerMeta, BaseNotificationView)
         self.__lockedNotificationPriority = []
         self.__showMessagesFromQueue()
 
+    def __onNotificationsClear(self):
+        self.__clear()
+
     def __startNotifications(self):
         if self.__hangarSpace.spaceInited:
             self._model.onNotificationReceived += self.__onNotificationReceived
@@ -175,6 +182,7 @@ class NotificationPopUpViewer(NotificationPopUpViewerMeta, BaseNotificationView)
             mvcInstance.getAlertController().onAllAlertsClosed += self.__allAlertsMessageCloseHandler
             g_messengerEvents.onLockPopUpMessages += self.__onLockPopUpMassages
             g_messengerEvents.onUnlockPopUpMessages += self.__onUnlockPopUpMessages
+            g_messengerEvents.onNotificationsClear += self.__onNotificationsClear
             self._model.setup()
         else:
             g_playerEvents.onLoadingMilestoneReached += self._onLoadingMilestoneReached

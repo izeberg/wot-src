@@ -36,25 +36,17 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_mat</identifier>
 					<fx>shaders/std_effects/PBS_tank.fx</fx>
 					<materialKind>0</materialKind>
+					<identifier>tank_proxy</identifier>
 					<collisionFlags>0</collisionFlags>
-					<property>
-						alphaReference
-						<Int>64</Int>
-					</property>
-					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
-					</property>
 					<property>
 						diffuseMap
 						<Texture>vehicles/russian/R147_Object_701/Object_701_proxy_AM.dds</Texture>
 					</property>
 					<property>
-						excludeMaskAndAOMap
-						<Texture>vehicles/russian/R147_Object_701/Object_701_proxy_AO.dds</Texture>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<property>
 						metallicGlossMap
@@ -63,6 +55,14 @@
 					<property>
 						normalMap
 						<Texture>vehicles/russian/R147_Object_701/Object_701_proxy_ANM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/russian/R147_Object_701/Object_701_proxy_AO.dds</Texture>
+					</property>
+					<property>
+						alphaReference
+						<Int>0</Int>
 					</property>
 				</material>
 				<groupOrigin>0.091688 0.767153 -0.258244</groupOrigin>
@@ -73,6 +73,6 @@
 		<min>-1.196944 0.020515 -2.069572</min>
 		<max>1.380319 1.513792 1.553084</max>
 	</boundingBox>
-	<geometrySize>11776</geometrySize>
+	<geometrySize>9472</geometrySize>
 	<minUVDensity>0.001800</minUVDensity>
 </root>

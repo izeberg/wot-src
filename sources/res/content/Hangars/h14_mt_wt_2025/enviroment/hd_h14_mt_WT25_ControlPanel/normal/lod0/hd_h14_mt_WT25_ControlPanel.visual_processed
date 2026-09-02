@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<stream>uv2</stream>
+			<stream>colour</stream>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/PBS_tiled.fx</fx>
+					<materialKind>112</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						albedoHeightTile0
+						<Texture>content/Buildings/00_Tiles/dds/Painted_Steel_05_AM.dds</Texture>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/Hangars/h14_mt_wt_2025/enviroment/hd_h14_mt_WT25_ControlPanel/hd_h14_mt_WT25_ControlPanel_blend.png</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/Hangars/h14_mt_wt_2025/enviroment/hd_h14_mt_WT25_ControlPanel/hd_h14_mt_WT25_ControlPanel_GCM.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Buildings/00_Tiles/dds/Painted_Steel_05_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Buildings/00_Tiles/dds/Painted_Steel_05_GBMT.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Buildings/00_Tiles/dds/Painted_Steel_05_AM.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Buildings/00_Tiles/dds/Painted_Steel_05_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Buildings/00_Tiles/dds/Painted_Steel_05_GBMT.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/Buildings/00_Tiles/dds/Painted_Steel_04_AM.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Buildings/00_Tiles/dds/Painted_Steel_04_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Buildings/00_Tiles/dds/Painted_Steel_04_GBMT.dds</Texture>
+					</property>
+					<property>
+						g_dirtColorParams
+						<Vector4>0.100000 1.000000 1.000000 1.000000</Vector4>
+					</property>
+					<property>
+						g_tile1Tint
+						<Vector4>0.858824 0.858824 0.858824 1.000000</Vector4>
+					</property>
+					<property>
+						dirtMap
+						<Texture>content/Buildings/00_Tiles/dds/Dirt_ClayWall_Painted01_DM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.000641 1.373376 0.408904</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>s_nd1</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<materialKind>112</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h14_mt_wt_2025/enviroment/hd_h14_mt_WT25_ControlPanel/hd_h14_mt_WT25_ControlPanel_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_tintColor
+						<Vector4>0.490196 0.490196 0.490196 1.000000</Vector4>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h14_mt_wt_2025/enviroment/hd_h14_mt_WT25_ControlPanel/hd_h14_mt_WT25_ControlPanel_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h14_mt_wt_2025/enviroment/hd_h14_mt_WT25_ControlPanel/hd_h14_mt_WT25_ControlPanel_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.000000 1.749820 0.307819</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				2
+				<material>
+					<identifier>s_nd3</identifier>
+					<fx>shaders/std_effects/glow.fx</fx>
+					<materialKind>112</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h14_mt_wt_2025/enviroment/hd_h14_mt_WT25_ControlPanel/hd_h14_mt_WT25_ControlPanel_Glow_AM.dds</Texture>
+					</property>
+					<property>
+						selfIllumination
+						<Float>10.000000</Float>
+					</property>
+					<property>
+						g_tintColor
+						<Vector4>0.976471 0.976471 0.976471 1.000000</Vector4>
+					</property>
+				</material>
+				<groupOrigin>-0.153939 1.751491 0.335948</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				3
+				<material>
+					<identifier>n_glass0</identifier>
+					<fx>shaders/std_effects/PBS_glass.fx</fx>
+					<materialKind>112</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						alphaReference
+						<Int>220</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						dirtAlbedoMap
+						<Texture>particles/Environment/event_white_tiger/screen/Screen_glass_AM.dds</Texture>
+					</property>
+					<property>
+						glassMap
+						<Texture>particles/Environment/event_white_tiger/screen/Screen_glass_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>particles/Environment/event_white_tiger/screen/Screen_glass_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.003199 1.932382 0.981646</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				4
+				<material>
+					<identifier>lambert</identifier>
+					<fx>shaders/custom/vector_animation.fx</fx>
+					<materialKind>112</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						destBlend
+						<Int>2</Int>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h14_mt_wt_2025/enviroment/hd_h14_mt_WT25_ControlPanel/Screens.dds</Texture>
+					</property>
+					<property>
+						diffuseUVSpeedAlphaOffset
+						<Vector4>0.100000 0.000000 3.000000 -0.040000</Vector4>
+					</property>
+					<property>
+						distortion_UV_Speed_Amount
+						<Vector4>0.000000 -0.200000 0.004000 0.003000</Vector4>
+					</property>
+					<property>
+						distortionFrames
+						<Vector4>0.100000 0.200000 0.200000 0.340000</Vector4>
+					</property>
+					<property>
+						distortionFrequency
+						<Float>0.300000</Float>
+					</property>
+					<property>
+						distortionMap
+						<Texture>particles/Environment/event_white_tiger/screen/Screen_mask.dds</Texture>
+					</property>
+					<property>
+						lightMultipliers
+						<Vector4>20.000000 0.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						opacity_UV_Speed_Scale
+						<Vector4>0.000000 -0.100000 1.000000 0.800000</Vector4>
+					</property>
+					<property>
+						opacityMap
+						<Texture>particles/Environment/event_white_tiger/screen/Screen_mask.dds</Texture>
+					</property>
+					<property>
+						softFactor
+						<Float>0.000000</Float>
+					</property>
+					<property>
+						TintlColor
+						<Vector4>0.243137 0.525490 0.274510 1.000000</Vector4>
+					</property>
+				</material>
+				<groupOrigin>0.000777 1.932382 0.992178</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-6.977899 -0.002093 -0.947631</min>
+		<max>6.976617 2.748845 1.730508</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>3634848</geometrySize>
+	<minUVDensity>0.000373</minUVDensity>
+</root>

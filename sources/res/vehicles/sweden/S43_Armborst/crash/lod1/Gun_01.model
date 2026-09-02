@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/sweden/S43_Armborst/crash/lod1/Gun_01</nodefullVisual>
+	<parent>vehicles/sweden/S43_Armborst/crash/lod2/Gun_01</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.300745 -0.288490 -1.340168</min>
+		<max>0.300723 0.201968 5.232395</max>
+	</visibilityBox>
+</root>

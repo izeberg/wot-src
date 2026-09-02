@@ -127,9 +127,7 @@ class CustomizationMainView(ViewImpl, EventSystemEntity, CustomizationSettingsSe
         self.__closeConfirmationsHelper = _CustomizationCloseConfirmationsHelper()
         self.__isOnLoading = False
         self.__forceClose = False
-        environmentSwitcher = BigWorld.EnvironmentSwitcher.instance()
-        if environmentSwitcher is not None:
-            environmentSwitcher.activateTempEnvironment('Customization')
+        BigWorld.EnvironmentSwitcher.instance().activateTempEnvironment('Customization')
         super(CustomizationMainView, self).__init__(settings)
         return
 
@@ -205,7 +203,7 @@ class CustomizationMainView(ViewImpl, EventSystemEntity, CustomizationSettingsSe
         self.__closeConfirmationsHelper.start(self.__closeConfirmator)
         self.fireEvent(CameraRelatedEvents(CameraRelatedEvents.FORCE_DISABLE_IDLE_PARALAX_MOVEMENT, ctx={'isDisable': True, 'setIdle': True, 'setParallax': True}), scope=EVENT_BUS_SCOPE.LOBBY)
         self.fireEvent(events.LobbyHeaderMenuEvent(events.LobbyHeaderMenuEvent.TOGGLE_VISIBILITY, ctx={'state': HeaderMenuVisibilityState.ONLINE_COUNTER}), EVENT_BUS_SCOPE.LOBBY)
-        self.fireEvent(events.LobbyHeaderEvent(events.LobbyHeaderEvent.TOGGLE_VISIBILITY, ctx={'visible': True, 'ignoreTopOffset': True}), EVENT_BUS_SCOPE.LOBBY)
+        self.fireEvent(events.LobbyInterfaceEvent(events.LobbyInterfaceEvent.TOGGLE_VISIBILITY, ctx={'headerIsVisible': True, 'ignoreTopOffset': True}), EVENT_BUS_SCOPE.LOBBY)
         BigWorld.callback(0.0, self.__initAnchorsPositions)
 
     def _finalize(self):
@@ -213,11 +211,9 @@ class CustomizationMainView(ViewImpl, EventSystemEntity, CustomizationSettingsSe
         self.soundManager.setState(SOUNDS.STATE_PLACE, SOUNDS.STATE_PLACE_GARAGE)
         self.fireEvent(events.HangarCustomizationEvent(events.HangarCustomizationEvent.RESET_VEHICLE_MODEL_TRANSFORM), scope=EVENT_BUS_SCOPE.LOBBY)
         self.fireEvent(events.LobbyHeaderMenuEvent(events.LobbyHeaderMenuEvent.TOGGLE_VISIBILITY, ctx={'state': HeaderMenuVisibilityState.ALL}), EVENT_BUS_SCOPE.LOBBY)
-        self.fireEvent(events.LobbyHeaderEvent(events.LobbyHeaderEvent.TOGGLE_VISIBILITY, ctx={'visible': True}), EVENT_BUS_SCOPE.LOBBY)
+        self.fireEvent(events.LobbyInterfaceEvent(events.LobbyInterfaceEvent.TOGGLE_VISIBILITY, ctx={'headerIsVisible': True}), EVENT_BUS_SCOPE.LOBBY)
         self.fireEvent(CameraRelatedEvents(CameraRelatedEvents.FORCE_DISABLE_IDLE_PARALAX_MOVEMENT, ctx={'isDisable': False, 'setIdle': True, 'setParallax': True}), scope=EVENT_BUS_SCOPE.LOBBY)
-        environmentSwitcher = BigWorld.EnvironmentSwitcher.instance()
-        if environmentSwitcher is not None:
-            environmentSwitcher.activateMainEnvironment()
+        BigWorld.EnvironmentSwitcher.instance().activateMainEnvironment()
         self.__service.stopHighlighter()
         self.__toolbarProvider.fini()
         if self.__initAnchorsPositionsCallback is not None:
@@ -1054,7 +1050,7 @@ class CustomizationMainView(ViewImpl, EventSystemEntity, CustomizationSettingsSe
             self.soundManager.playInstantSound(SOUNDS.EDIT_MODE_SWITCH_OFF)
             self.soundManager.setState(SOUNDS.STATE_STYLEINFO, SOUNDS.STATE_STYLEINFO_HIDE)
             self.soundManager.setRTPC(SOUNDS.RTPC_STYLEINFO, 0)
-        self.fireEvent(events.LobbyHeaderEvent(events.LobbyHeaderEvent.TOGGLE_VISIBILITY, ctx={'visible': not isExpanded, 'ignoreTopOffset': True}), EVENT_BUS_SCOPE.LOBBY)
+        self.fireEvent(events.LobbyInterfaceEvent(events.LobbyInterfaceEvent.TOGGLE_VISIBILITY, ctx={'headerIsVisible': not isExpanded, 'ignoreTopOffset': True}), EVENT_BUS_SCOPE.LOBBY)
 
     @th_async
     def __closeConfirmator(self):

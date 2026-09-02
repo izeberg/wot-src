@@ -1,0 +1,90 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "efficiencyRibbons/healthAdded"
+msgstr "Машина отремонтирована"
+
+msgid "efficiencyRibbons/wtDealtByAnomaly"
+msgstr "?empty?"
+
+msgid "efficiencyRibbons/wtDealtByEnergyShield"
+msgstr "Энергетический щит"
+
+msgid "efficiencyRibbons/wtDealtByStunAreaModA"
+msgstr "Строгий ошейник"
+
+msgid "efficiencyRibbons/wtDealtDamageByMissile"
+msgstr "Управляемые молнии"
+
+msgid "efficiencyRibbons/wtReceivedByAnomaly"
+msgstr "Стихийный урон"
+
+msgid "efficiencyRibbons/wtReceivedByEnergyShield"
+msgstr "Энергетический щит"
+
+msgid "efficiencyRibbons/wtReceivedByMissile"
+msgstr "Управляемые молнии"
+
+msgid "efficiencyRibbons/wtReceivedByStunAreaModA"
+msgstr "Строгий ошейник"
+
+msgid "efficiencyRibbons/wtReceivedCircuitOverload"
+msgstr "Урон электричеством"
+
+msgid "player_messages/equipment/wtEvent/healthAtFullHP"
+msgstr "[%(name)s] Ремонт не требуется: повреждений нет."
+
+msgid "player_messages/equipment/wtEvent/hunterAbilitiesDisabled"
+msgstr "Способность недоступна"
+
+msgid "player_messages/equipment/wtEvent/noActiveShieldOnBoss"
+msgstr "Способность недоступна без активного щита."
+
+msgid "statusNotificationTimers/anomaly"
+msgstr "Покиньте аномалию!"
+
+msgid "wt_barrier/cantShootGunLocked"
+msgstr "Стрельба невозможна: активен энергетический барьер."
+
+msgid "wt_clone/clonePlayerName"
+msgstr "• Копия •"
+
+msgid "wt_clone/cloneRemainingTime"
+msgstr "Время жизни: %(remainingTime)s"
+
+msgid "wt_missile/cantShootGunLocked"
+msgstr "Стрельба невозможна, пока вы управляете молниями."
+
+msgid "wt_vehicle_messages/DECREASE_PLASMA_COUNT"
+msgstr "Заряд плазмы утерян."
+
+msgid "wt_vehicle_messages/INCREASE_PLASMA_COUNT"
+msgstr "Плазма получена способностью «Электромагнитная стрела»."
+
+msgid "wt_vehicle_messages/SILENCE_END"
+msgstr "Напряжение в сети восстановлено. Способности машины снова доступны."
+
+msgid "wt_vehicle_messages/SILENCE_START"
+msgstr "Машина обесточена способностью Ваффентрагера «Электромагнитная сеть»!"
+
+msgid "wt_vehicle_messages/STUN_AREA_APPLIED"
+msgstr "Машина обесточена способностью Ваффентрагера «Электромагнитная сеть»!"
+
+msgid "wt_vehicle_messages/STUN_AREA_MOD_A_APPLIED"
+msgstr "Машина обесточена способностью Алаида «Строгий ошейник»!"
+
+msgid "wt_vehicle_messages/STUN_AREA_MOD_A_STOPPED"
+msgstr "Напряжение в сети восстановлено."
+
+msgid "wt_vehicle_messages/STUN_AREA_STOPPED"
+msgstr "Напряжение в машине восстановлено."
+
+msgid "wt_vehicle_messages/WT_PASSIVE_HEAL_ACTIVATE"
+msgstr "Восстановление прочности активированно."

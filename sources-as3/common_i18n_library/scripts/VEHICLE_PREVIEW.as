@@ -69,6 +69,8 @@ package
       
       public static const BUYINGPANEL_AVAILABLEFORWOTPLUS:String = "#vehicle_preview:buyingPanel/availableForWotPlus";
       
+      public static const BUYINGPANEL_AVAILABLEFORTELECOM:String = "#vehicle_preview:buyingPanel/availableForTelecom";
+      
       public static const BUYINGPANEL_TRADEINLABEL:String = "#vehicle_preview:buyingPanel/tradeInLabel";
       
       public static const BUYINGPANEL_OFFER_RENT_TITLE_FRONTLINE_ORDINAL:String = "#vehicle_preview:buyingPanel/offer/rent/title/frontline/ordinal";

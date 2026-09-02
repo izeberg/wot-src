@@ -190,6 +190,9 @@ class SettingsCore(ISettingsCore):
           GAME.ENABLE_BATTLE_NOTIFIER,
           options.StorageAccountSetting(GAME.ENABLE_BATTLE_NOTIFIER, storage=EXTENDED_GAME_SETTINGS_STORAGE)),
          (
+          GAME.ENABLE_BATTLE_CONTEXT_HINTS,
+          options.StorageAccountSetting(GAME.ENABLE_BATTLE_CONTEXT_HINTS, storage=EXTENDED_GAME_2_SETTINGS_STORAGE)),
+         (
           GAME.ENABLE_THERMAL_VISION_EFFECT,
           options.StorageAccountSetting(GAME.ENABLE_THERMAL_VISION_EFFECT, storage=EXTENDED_GAME_2_SETTINGS_STORAGE)),
          (
@@ -628,6 +631,9 @@ class SettingsCore(ISettingsCore):
          (
           BATTLE_EVENTS.ENEMIES_STUN,
           options.SettingTrueByDefault(BATTLE_EVENTS.ENEMIES_STUN, storage=BATTLE_EVENTS_SETTINGS_STORAGE)),
+         (
+          BATTLE_EVENTS.HEALTH_ADDED,
+          options.SettingFalseByDefault(BATTLE_EVENTS.HEALTH_ADDED, storage=BATTLE_EVENTS_SETTINGS_STORAGE)),
          (
           BATTLE_BORDER_MAP.MODE_SHOW_BORDER,
           options.BattleBorderMapModeShow(BATTLE_BORDER_MAP.MODE_SHOW_BORDER, storage=BATTLE_BORDER_MAP_SETTINGS_STORAGE)),

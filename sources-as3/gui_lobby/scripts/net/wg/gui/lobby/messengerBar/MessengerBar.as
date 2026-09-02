@@ -421,6 +421,23 @@ package net.wg.gui.lobby.messengerBar
          this._anim.play();
       }
       
+      override public function set visible(param1:Boolean) : void
+      {
+         super.visible = param1;
+         if(!this.isDAAPIInited)
+         {
+            return;
+         }
+         if(param1)
+         {
+            App.graphicsOptimizationMgr.register(this);
+         }
+         else
+         {
+            App.graphicsOptimizationMgr.unregister(this);
+         }
+      }
+      
       public function as_openVehicleCompareCartPopover(param1:Boolean) : void
       {
          if(param1)

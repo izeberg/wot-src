@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<effectMap>spaces/217_er_alaska_wt/environments/D9E27F19-40160122-8DE4888E-19CB1BC5/camera_effects_map.dds</effectMap>
+	<effect>
+		<id>1</id>
+		<name>particles/content_deferred/PFX/Environment/CameraEffects/winter_snow_heavy.vfx</name>
+		<alignToTerrain>true</alignToTerrain>
+		<useCameraTarget>true</useCameraTarget>
+	</effect>
+</root>

@@ -2220,6 +2220,10 @@ msgstr "Получить отличительную отметку на оруд
 msgid "details/conditions/cumulative/maxDamage"
 msgstr "Максимальный урон"
 
+msgid "details/conditions/cumulative/maxWtPlasmaBonus"
+msgstr ""
+"Получить определённый уровень усиления огневой мощи в рамках одного боя"
+
 msgid "details/conditions/cumulative/mileage"
 msgstr "Пройденное расстояние, не менее (м)"
 
@@ -2298,6 +2302,18 @@ msgstr "Параметр для команды: %(param)s"
 
 msgid "details/conditions/cumulative/tkills"
 msgstr "Уничтоженные машины союзников"
+
+msgid "details/conditions/cumulative/wtBossVulnerableDamage"
+msgstr "Нанести урон машине Инженера, пока она без щита"
+
+msgid "details/conditions/cumulative/wtDeathCount"
+msgstr "Количество возрождений"
+
+msgid "details/conditions/cumulative/wtGeneratorsCaptured"
+msgstr "Принять участие в перегрузке указанного количества генераторов"
+
+msgid "details/conditions/cumulative/wtTotalGeneratorsCaptured"
+msgstr "Количество перегруженных генераторов"
 
 msgid "details/conditions/cumulative/xp"
 msgstr "Заработанный опыт"

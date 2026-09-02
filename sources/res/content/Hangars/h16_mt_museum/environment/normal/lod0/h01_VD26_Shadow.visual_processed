@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/glow.fx</fx>
+					<materialKind>108</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h16_mt_museum/environment/h01_VD26_Glory_Shadow_AM.dds</Texture>
+					</property>
+					<property>
+						g_tintColor
+						<Vector4>0.164706 0.164706 0.164706 1.000000</Vector4>
+					</property>
+				</material>
+				<groupOrigin>0.000001 -0.006456 0.000000</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-0.542308 -0.011211 -0.542307</min>
+		<max>0.542309 -0.001701 0.542307</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>300</geometrySize>
+	<minUVDensity>0.079112</minUVDensity>
+</root>

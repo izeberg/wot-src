@@ -1505,7 +1505,6 @@ class SniperControlMode(_GunControlMode):
     def __siegeModeStateChanged(self, newState, timeToNewMode):
         if newState == VEHICLE_SIEGE_STATE.ENABLED or newState == VEHICLE_SIEGE_STATE.DISABLED:
             self._cam.aimingSystem.forceFullStabilization(self.__isFullStabilizationRequired())
-            self._cam.aimingSystem.onSiegeStateChanged(newState)
 
     def __isFullStabilizationRequired(self):
         descriptor = self.playerCache.vehicleTypeDescriptor

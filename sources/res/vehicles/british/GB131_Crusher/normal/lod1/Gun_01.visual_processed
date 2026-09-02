@@ -113,10 +113,7 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>
-							3.507 1.507 0.0 0.0
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>3.507000 1.753500 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_detailPower
@@ -153,7 +150,7 @@
 	<constraints/>
 	<boundingBox>
 		<min>-0.603389 -0.384252 -0.175445</min>
-		<max>0.603376 0.429799 4.215001</max>
+		<max>0.603377 0.429799 4.215001</max>
 	</boundingBox>
 	<geometrySize>20996</geometrySize>
 	<minUVDensity>0.035051</minUVDensity>

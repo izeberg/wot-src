@@ -22,7 +22,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 1.000000 0.000000</row1>
 					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 0.421800 1.243629</row3>
+					<row3>-0.000000 0.421799 1.243629</row3>
 				</transform>
 			</node>
 		</node>
@@ -54,7 +54,14 @@
 					</property>
 					<property>
 						g_crashUVTiling
-						<Vector4>4.000000 2.000000 0.000000 0.000000</Vector4>
+						<Vector4>
+							4.0 2.0 0.0 0.0
+							<!--BW_String-->
+						</Vector4>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
 					</property>
 					<property>
 						crashTileMap
@@ -65,6 +72,10 @@
 						<Texture>vehicles/american/A184_HTPC/HTPC_turret_01_ANM.dds</Texture>
 					</property>
 					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/american/A184_HTPC/HTPC_turret_01_AO.dds</Texture>
 					</property>
@@ -73,14 +84,14 @@
 						<Int>128</Int>
 					</property>
 				</material>
-				<groupOrigin>0.000008 0.908701 -0.734043</groupOrigin>
+				<groupOrigin>0.000000 0.908701 -0.734043</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-1.360868 -0.068831 -2.983165</min>
-		<max>1.360885 1.886233 1.515079</max>
+		<min>-1.360876 -0.068831 -2.983165</min>
+		<max>1.360876 1.886233 1.515079</max>
 	</boundingBox>
 	<geometrySize>247418</geometrySize>
-	<minUVDensity>0.002279</minUVDensity>
+	<minUVDensity>0.002408</minUVDensity>
 </root>

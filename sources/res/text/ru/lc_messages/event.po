@@ -8,11 +8,50 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "WTEventsCarouselView/inBattleText"
+msgstr "В бою"
+
+msgid "WTEventsCarouselView/inPlatoonText"
+msgstr "В формировании"
+
+msgid "WTEventsCarouselView/noBattlesLeft"
+msgstr "Бои исчерпаны"
+
+msgid "WTEventsCarouselView/specialBattlesLeft"
+msgstr "Боёв доступно: %(count)s"
+
+msgid "WTEventsCarouselView/ticketNeededText"
+msgstr "Нужен ключ"
+
+msgid "WTEventsCarouselView/unsuitableText"
+msgstr "Не подходит"
+
 msgid "battleHints/testMessage"
 msgstr "testMessage"
 
 msgid "battleHints/testMessageWithParams"
 msgstr "testMessageWithParams {param1}"
+
+msgid "battleQueue/widget/bonus"
+msgstr "БОНУС"
+
+msgid "battleQueue/widget/bonusDescr"
+msgstr "Вы можете выйти в бой без ключа Инженера."
+
+msgid "battleQueue/widget/btnLabel"
+msgstr "В бой на %(vehicle)s"
+
+msgid "battleQueue/widget/calculatedText"
+msgstr "Среднее время ожидания для %(vehicle)s"
+
+msgid "battleQueue/widget/changeTitle"
+msgstr "Выйти в бой на %(vehicle)s?"
+
+msgid "battleQueue/widget/offerHunterTitle"
+msgstr "Вы можете выбрать одну из Гончих для незамедлительного выхода в бой!"
+
+msgid "battleQueue/widget/ticketText"
+msgstr "Будет потрачен один ключ"
 
 msgid "craftMachine/endDateText"
 msgstr "До {day} {month}"
@@ -22,6 +61,24 @@ msgstr "На Глобальной карте"
 
 msgid "craftMachine/title"
 msgstr "Летняя экспедиция"
+
+msgid "hunterRespawn/hintText"
+msgstr "Выберите точку возрождения, или она будет выбрана автоматически"
+
+msgid "hunterRespawn/timerText"
+msgstr "До возвращения в бой..."
+
+msgid "minimap/respawnEntry/hintText"
+msgstr "Вы начнёте тут"
+
+msgid "playersPanel/bombLabel"
+msgstr "Плазма %(id)s"
+
+msgid "playersPanel/botName"
+msgstr "Часовой"
+
+msgid "playersPanel/campLabel"
+msgstr "Генератор %(index)s"
 
 msgid "punishmentWindow/reason/event_afk"
 msgstr "Бездействие в бою"
@@ -40,6 +97,44 @@ msgstr "До начала: %(timerText)"
 
 msgid "shopSales/title"
 msgstr "ТОРГОВЫЙ КАРАВАН"
+
+msgid "subtitle/wt_intro/phrase_1"
+msgstr "Я был частью этой системы."
+
+msgid "subtitle/wt_intro/phrase_2"
+msgstr "Видел её взлёт и падение."
+
+msgid "subtitle/wt_intro/phrase_3"
+msgstr "Я пытался принять новые правила игры,"
+
+msgid "subtitle/wt_intro/phrase_4"
+msgstr "но терпение кончилось, когда чистые идеалы обернули в грязные деньги."
+
+msgid "subtitle/wt_intro/phrase_5"
+msgstr ""
+"Я пытался решить это мирно, но с бешеным псом невозможно договориться."
+
+msgid "subtitle/wt_intro/phrase_6"
+msgstr ""
+"Альянс не боится меня, но боится этой машины. И скоро я пойму, почему."
+
+msgid "subtitle/wt_intro/phrase_7"
+msgstr "Ну наконец-то! Долго же ты меня искал..."
+
+msgid "subtitle/wt_outro/phrase_1"
+msgstr "Всего две машины, а какой переполох."
+
+msgid "subtitle/wt_outro/phrase_2"
+msgstr "Но я подумал: а не пора ли уже..."
+
+msgid "subtitle/wt_outro/phrase_3"
+msgstr "...несколько..."
+
+msgid "subtitle/wt_outro/phrase_4"
+msgstr "...поднять..."
+
+msgid "subtitle/wt_outro/phrase_5"
+msgstr "...ставки?"
 
 msgid "summerSales/confirm/content/placeHolder"
 msgstr ""

@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>0.666667</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Gun</name>
+		<type>model</type>
+		<resource>particles/Environment/event_white_tiger/player_tank/azart/Azart_end_gun.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd1</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 0.294118 0.039216 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.013458</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.013458</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.666667</startTime>
+				<value>1.000000 0.294118 0.039216 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.099166</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -0.099166</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>glow</name>
+		<type>particle</type>
+		<resource>particles/Environment/event_white_tiger/player_tank/azart/wt_azart_flash.eff</resource>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000</value>
+				<inTangent>-0.008611</inTangent>
+				<outTangent>-0.008611</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>0.000000</value>
+				<inTangent>-3.056568</inTangent>
+				<outTangent>-3.056568</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Ring_1</name>
+		<type>model</type>
+		<resource>particles/Environment/event_white_tiger/player_tank/azart/Azart_end_ring.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.022818 4.926758</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.300000 1.300000 1.300000</value>
+				<inTangent>4.200000 4.200000 4.200000</inTangent>
+				<outTangent>4.200000 4.200000 4.200000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.166667</startTime>
+				<value>2.000000 2.000000 2.000000</value>
+				<inTangent>4.200000 4.200000 4.200000</inTangent>
+				<outTangent>4.200000 4.200000 4.200000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd0</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 0.294118 0.039216 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 -20.154522</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -20.154522</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.166667</startTime>
+				<value>1.000000 0.294118 0.039216 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.332053</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -0.332053</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Ring_2</name>
+		<type>model</type>
+		<resource>particles/Environment/event_white_tiger/player_tank/azart/Azart_end_ring.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.166667</startTime>
+				<value>0.000000 0.014481 4.585205</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.166667</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>6.000000 6.000000 6.000000</inTangent>
+				<outTangent>6.000000 6.000000 6.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.333333</startTime>
+				<value>2.000000 2.000000 2.000000</value>
+				<inTangent>6.000000 6.000000 6.000000</inTangent>
+				<outTangent>6.000000 6.000000 6.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd0</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.166667</startTime>
+				<value>1.000000 0.294118 0.039216 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 -20.154522</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -20.154522</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.333333</startTime>
+				<value>1.000000 0.294118 0.039216 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.332053</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -0.332053</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Ring_3</name>
+		<type>model</type>
+		<resource>particles/Environment/event_white_tiger/player_tank/azart/Azart_end_ring.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.333333</startTime>
+				<value>0.000000 0.014481 4.198029</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.333333</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>6.000000 6.000000 6.000000</inTangent>
+				<outTangent>6.000000 6.000000 6.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>2.000000 2.000000 2.000000</value>
+				<inTangent>6.000000 6.000000 6.000000</inTangent>
+				<outTangent>6.000000 6.000000 6.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd0</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.333333</startTime>
+				<value>1.000000 0.294118 0.039216 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 -20.154522</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -20.154522</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>1.000000 0.294118 0.039216 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.332053</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -0.332053</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Ring_4</name>
+		<type>model</type>
+		<resource>particles/Environment/event_white_tiger/player_tank/azart/Azart_end_ring.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>0.000000 0.014481 3.826965</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>6.000000 6.000000 6.000000</inTangent>
+				<outTangent>6.000000 6.000000 6.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.666667</startTime>
+				<value>2.000000 2.000000 2.000000</value>
+				<inTangent>6.000000 6.000000 6.000000</inTangent>
+				<outTangent>6.000000 6.000000 6.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd0</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>1.000000 0.294118 0.039216 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 -20.154522</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -20.154522</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.666667</startTime>
+				<value>1.000000 0.294118 0.039216 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.332053</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -0.332053</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

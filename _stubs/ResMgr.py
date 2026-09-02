@@ -258,6 +258,7 @@ def getFilename(*args, **kwargs): pass
 def isDir(*args, **kwargs): pass
 def isFile(*args, **kwargs): pass
 def localise(*args, **kwargs): pass
+def mainAppDirectory(*args, **kwargs): pass
 def openSection(*args, **kwargs): pass
 def purge(*args, **kwargs): pass
 def readDirectory(*args, **kwargs): pass

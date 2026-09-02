@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/american/A180_ACIT_40t_Concept/normal/lod1/Gun_01</parent>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.101380 -0.319156 -0.698787</min>
+		<max>0.251745 0.625351 4.810390</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/american/A180_ACIT_40t_Concept/normal/lod0/Gun_01</nodefullVisual>
+</root>

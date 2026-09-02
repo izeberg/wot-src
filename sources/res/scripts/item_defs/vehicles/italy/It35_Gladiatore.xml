@@ -11,8 +11,8 @@
 	<postProgressionTree>role_HT_support</postProgressionTree>
 	<customRoleSlotOptions>2 4</customRoleSlotOptions>
 	<speedLimits>
-		<forward>40</forward>
-		<backward>15</backward>
+		<forward>37</forward>
+		<backward>14</backward>
 	</speedLimits>
 	<invisibility>
 		<moving>
@@ -3710,7 +3710,7 @@
 			<engines>
 				<MB_880_It35>
 					<smplEnginePower>960</smplEnginePower>
-					<smplFwMaxSpeed>40</smplFwMaxSpeed>
+					<smplFwMaxSpeed>37</smplFwMaxSpeed>
 				</MB_880_It35>
 			</engines>
 			<chassis>

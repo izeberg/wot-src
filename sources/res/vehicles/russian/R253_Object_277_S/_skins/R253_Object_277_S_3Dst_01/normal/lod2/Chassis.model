@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/russian/R253_Object_277_S/_skins/R253_Object_277_S_3Dst_01/normal/lod2/Chassis</nodefullVisual>
+	<parent>vehicles/russian/R253_Object_277_S/_skins/R253_Object_277_S_3Dst_01/normal/lod3/Chassis</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.687886 -0.007235 -3.582400</min>
+		<max>1.687886 1.035560 3.497216</max>
+	</visibilityBox>
+</root>

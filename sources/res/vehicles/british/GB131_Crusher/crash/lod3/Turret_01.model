@@ -3,9 +3,9 @@
 	<parent>vehicles/british/GB131_Crusher/crash/lod4/Turret_01</parent>
 	<tank>true</tank>
 	<extent>192.000000</extent>
-	<nodefullVisual>vehicles/british/GB131_Crusher/crash/lod3/Turret_01</nodefullVisual>
 	<visibilityBox>
 		<min>-1.554355 -0.036905 -1.531027</min>
 		<max>1.544150 1.440397 1.728437</max>
 	</visibilityBox>
+	<nodefullVisual>vehicles/british/GB131_Crusher/crash/lod3/Turret_01</nodefullVisual>
 </root>

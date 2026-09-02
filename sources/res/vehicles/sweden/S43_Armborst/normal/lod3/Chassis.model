@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/sweden/S43_Armborst/normal/lod3/Chassis</nodefullVisual>
+	<parent>vehicles/sweden/S43_Armborst/normal/lod4/Chassis</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.642566 -0.000010 -2.825619</min>
+		<max>1.640536 0.935852 2.929076</max>
+	</visibilityBox>
+</root>

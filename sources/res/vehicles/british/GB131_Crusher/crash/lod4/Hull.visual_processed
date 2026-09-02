@@ -22,7 +22,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 1.000000 0.000000</row1>
 					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>-0.562836 0.235143 -3.110094</row3>
+					<row3>-0.562836 0.235144 -3.110094</row3>
 				</transform>
 			</node>
 			<node>
@@ -40,7 +40,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 1.000000 0.000000</row1>
 					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>-0.000099 0.613786 0.893185</row3>
+					<row3>-0.000099 0.613787 0.893185</row3>
 				</transform>
 			</node>
 		</node>
@@ -72,7 +72,10 @@
 					</property>
 					<property>
 						g_crashUVTiling
-						<Vector4>0.500000 0.500000 0.000000 0.000000</Vector4>
+						<Vector4>
+							0.5 0.5 0.0 0.0
+							<!--BW_String-->
+						</Vector4>
 					</property>
 					<property>
 						crashTileMap
@@ -86,14 +89,18 @@
 						excludeMaskAndAOMap
 						<Texture>vehicles/british/GB131_Crusher/Crusher_proxy_AO.dds</Texture>
 					</property>
+					<property>
+						alphaReference
+						<Int>0</Int>
+					</property>
 				</material>
-				<groupOrigin>0.005747 -0.181733 0.336959</groupOrigin>
+				<groupOrigin>0.005747 -0.181732 0.336959</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-1.848564 -0.945909 -3.639610</min>
-		<max>1.860058 0.582443 4.313529</max>
+		<min>-1.848564 -0.945908 -3.639610</min>
+		<max>1.860058 0.582444 4.313529</max>
 	</boundingBox>
 	<geometrySize>5504</geometrySize>
 	<minUVDensity>0.002351</minUVDensity>

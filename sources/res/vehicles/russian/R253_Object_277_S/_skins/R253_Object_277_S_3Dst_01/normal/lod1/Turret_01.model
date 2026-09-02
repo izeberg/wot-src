@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/russian/R253_Object_277_S/_skins/R253_Object_277_S_3Dst_01/normal/lod1/Turret_01</nodefullVisual>
+	<parent>vehicles/russian/R253_Object_277_S/_skins/R253_Object_277_S_3Dst_01/normal/lod2/Turret_01</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.469414 -0.026426 -2.015592</min>
+		<max>1.466516 1.568421 1.543305</max>
+	</visibilityBox>
+</root>

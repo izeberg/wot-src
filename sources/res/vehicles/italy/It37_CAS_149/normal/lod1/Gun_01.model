@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/italy/It37_CAS_149/normal/lod2/Gun_01</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<nodefullVisual>vehicles/italy/It37_CAS_149/normal/lod1/Gun_01</nodefullVisual>
+	<visibilityBox>
+		<min>-0.425000 -0.697810 -0.105470</min>
+		<max>0.425000 0.444851 5.171641</max>
+	</visibilityBox>
+</root>

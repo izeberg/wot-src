@@ -85,54 +85,9 @@
 	<slideDuration>86400</slideDuration>
 	<defaultSlideList>
 		<slide>
-			<image>gui/maps/loading/defaults/loading_03.jpg</image>
-			<title>#game_loading:defaultSlide/3/title</title>
-			<description>#game_loading:defaultSlide/3/description</description>
-		</slide>
-		<slide>
-			<image>gui/maps/loading/defaults/loading_04.jpg</image>
-			<title>#game_loading:defaultSlide/4/title</title>
-			<description>#game_loading:defaultSlide/4/description</description>
-		</slide>
-		<slide>
-			<image>gui/maps/loading/defaults/loading_05.jpg</image>
-			<title>#game_loading:defaultSlide/5/title</title>
-			<description>#game_loading:defaultSlide/5/description</description>
-		</slide>
-		<slide>
-			<image>gui/maps/loading/defaults/loading_06.jpg</image>
-			<title>#game_loading:defaultSlide/6/title</title>
-			<description>#game_loading:defaultSlide/6/description</description>
-		</slide>
-		<slide>
-			<image>gui/maps/loading/defaults/loading_08.jpg</image>
-			<title>#game_loading:defaultSlide/8/title</title>
-			<description>#game_loading:defaultSlide/8/description</description>
-		</slide>
-		<slide>
-			<image>gui/maps/loading/defaults/loading_09.jpg</image>
-			<title>#game_loading:defaultSlide/9/title</title>
-			<description>#game_loading:defaultSlide/9/description</description>
-		</slide>
-		<slide>
-			<image>gui/maps/loading/defaults/loading_10.jpg</image>
-			<title>#game_loading:defaultSlide/10/title</title>
-			<description>#game_loading:defaultSlide/10/description</description>
-		</slide>
-		<slide>
-			<image>gui/maps/loading/defaults/loading_11.jpg</image>
-			<title>#game_loading:defaultSlide/11/title</title>
-			<description>#game_loading:defaultSlide/11/description</description>
-		</slide>
-		<slide>
-			<image>gui/maps/loading/defaults/loading_12.jpg</image>
-			<title>#game_loading:defaultSlide/12/title</title>
-			<description>#game_loading:defaultSlide/12/description</description>
-		</slide>
-		<slide>
-			<image>gui/maps/loading/defaults/loading_13.jpg</image>
-			<title>#game_loading:defaultSlide/13/title</title>
-			<description>#game_loading:defaultSlide/13/description</description>
+			<image>gui/maps/loading/defaults/loading_welcome.jpg</image>
+			<title>#game_loading:defaultSlide/welcome/title</title>
+			<description>#game_loading:defaultSlide/welcome/description</description>
 		</slide>
 	</defaultSlideList>
 	<statusTextDuration>13</statusTextDuration>

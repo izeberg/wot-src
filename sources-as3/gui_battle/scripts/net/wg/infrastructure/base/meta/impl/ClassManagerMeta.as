@@ -47,6 +47,8 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.data.constants.generated.COMMON_INDICATOR_CONSTS;
    import net.wg.data.constants.generated.COMP7_CONSTS;
    import net.wg.data.constants.generated.CONSUMABLES_PANEL_SETTINGS;
+   import net.wg.data.constants.generated.CONTEXT_HINT_PARAMS;
+   import net.wg.data.constants.generated.CONTEXT_HINT_STATE;
    import net.wg.data.constants.generated.CONTEXT_HINT_TYPES;
    import net.wg.data.constants.generated.CROSSHAIR_VIEW_ID;
    import net.wg.data.constants.generated.DAMAGE_INFO_PANEL_CONSTS;
@@ -411,7 +413,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.battle.mapsTraining.views.prebattleTimer.MapsTrainingTextFieldContainer;
    import net.wg.gui.battle.random.battleloading.renderers.RandomPlayerItemRenderer;
    import net.wg.gui.battle.random.battleloading.renderers.RandomRendererContainer;
-   import net.wg.gui.battle.random.constants.CONTEXT_HINT_CONSTS;
    import net.wg.gui.battle.random.views.BattlePage;
    import net.wg.gui.battle.random.views.contextHint.InfoBattleContextHint;
    import net.wg.gui.battle.random.views.contextHint.SixthSenseContextHint;
@@ -522,6 +523,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.battle.views.battleTankCarousel.data.BattleVehicleCarouselVO;
    import net.wg.gui.battle.views.battleTankCarousel.renderers.BaseBattleTankIcon;
    import net.wg.gui.battle.views.battleTankCarousel.renderers.BattleTankCarouselItemRenderer;
+   import net.wg.gui.battle.views.battleTimer.BaseBattleTimer;
    import net.wg.gui.battle.views.battleTimer.BattleAnimationTimer;
    import net.wg.gui.battle.views.battleTimer.BattleTimer;
    import net.wg.gui.battle.views.battleTimer.EpicBattleTimer;
@@ -989,6 +991,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.battle.views.vehicleMessages.VehicleMessagesPool;
    import net.wg.gui.battle.views.vehicleMessages.VehicleMessagesVoQueue;
    import net.wg.gui.battle.views.vehicleMessages.vo.VehicleMessageVO;
+   import net.wg.gui.battle.white_tiger.VO.daapi.DAAPIHunterVehicleInfoVO;
    import net.wg.gui.battle.windows.IngameDetailsHelpWindow;
    import net.wg.gui.battle.windows.IngameHelpWindow;
    import net.wg.gui.battle.windows.IngameMenu;
@@ -1083,6 +1086,10 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_DATA_CONSTANTS_GENERATED_COMP7_CONSTS:Class = COMP7_CONSTS;
       
       public static const NET_WG_DATA_CONSTANTS_GENERATED_CONSUMABLES_PANEL_SETTINGS:Class = CONSUMABLES_PANEL_SETTINGS;
+      
+      public static const NET_WG_DATA_CONSTANTS_GENERATED_CONTEXT_HINT_PARAMS:Class = CONTEXT_HINT_PARAMS;
+      
+      public static const NET_WG_DATA_CONSTANTS_GENERATED_CONTEXT_HINT_STATE:Class = CONTEXT_HINT_STATE;
       
       public static const NET_WG_DATA_CONSTANTS_GENERATED_CONTEXT_HINT_TYPES:Class = CONTEXT_HINT_TYPES;
       
@@ -1846,8 +1853,6 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_BATTLE_RANDOM_BATTLELOADING_RENDERERS_RANDOMRENDERERCONTAINER:Class = RandomRendererContainer;
       
-      public static const NET_WG_GUI_BATTLE_RANDOM_CONSTANTS_CONTEXT_HINT_CONSTS:Class = CONTEXT_HINT_CONSTS;
-      
       public static const NET_WG_GUI_BATTLE_RANDOM_VIEWS_BATTLEPAGE:Class = BattlePage;
       
       public static const NET_WG_GUI_BATTLE_RANDOM_VIEWS_CONTEXTHINT_INFOBATTLECONTEXTHINT:Class = InfoBattleContextHint;
@@ -2067,6 +2072,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_BATTLE_VIEWS_BATTLETANKCAROUSEL_RENDERERS_BASEBATTLETANKICON:Class = BaseBattleTankIcon;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_BATTLETANKCAROUSEL_RENDERERS_BATTLETANKCAROUSELITEMRENDERER:Class = BattleTankCarouselItemRenderer;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_BATTLETIMER_BASEBATTLETIMER:Class = BaseBattleTimer;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_BATTLETIMER_BATTLEANIMATIONTIMER:Class = BattleAnimationTimer;
       
@@ -3001,6 +3008,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_BATTLE_VIEWS_VEHICLEMESSAGES_VEHICLEMESSAGESVOQUEUE:Class = VehicleMessagesVoQueue;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_VEHICLEMESSAGES_VO_VEHICLEMESSAGEVO:Class = VehicleMessageVO;
+      
+      public static const NET_WG_GUI_BATTLE_WHITE_TIGER_VO_DAAPI_DAAPIHUNTERVEHICLEINFOVO:Class = DAAPIHunterVehicleInfoVO;
       
       public static const NET_WG_GUI_BATTLE_WINDOWS_INGAMEDETAILSHELPWINDOW:Class = IngameDetailsHelpWindow;
       

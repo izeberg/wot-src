@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodelessVisual>content/Hangars/h08_tday_2026/enviroment/normal/lod0/h08_TD26_LeavesAutumnDark_Norrow</nodelessVisual>
+	<visibilityBox>
+		<min>
+			-2.73759 0.000000 -0.876938
+			<!--BW_String-->
+		</min>
+		<max>
+			2.58245 0.233695 0.290588
+			<!--BW_String-->
+		</max>
+	</visibilityBox>
+	<parent>content/Hangars/h08_tday_2026/enviroment/normal/lod1/h08_TD26_LeavesAutumnDark_Norrow</parent>
+	<extent>40.000000</extent>
+</root>

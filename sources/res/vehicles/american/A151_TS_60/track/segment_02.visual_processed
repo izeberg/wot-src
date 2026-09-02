@@ -13,13 +13,13 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<stream>colour</stream>
-			<primitive>indices</primitive>
+			<vertices>TS_60_track_segment_1Shape.vertices</vertices>
+			<stream>TS_60_track_segment_1Shape.colour</stream>
+			<primitive>TS_60_track_segment_1Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>track_segment_mat</identifier>
+					<identifier>track_mat</identifier>
 					<fx>shaders/std_effects/PBS_tank_tracks.fx</fx>
 					<materialKind>0</materialKind>
 					<collisionFlags>0</collisionFlags>
@@ -60,13 +60,13 @@
 						<Texture>vehicles/american/tracks/TS_60_track_segment_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.000000 -0.022485 0.000000</groupOrigin>
+				<groupOrigin>0.000000 -0.023073 -0.001255</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.266495 -0.104795 -0.070655</min>
-		<max>0.266495 0.059825 0.070655</max>
+		<min>-0.266495 -0.105383 -0.071910</min>
+		<max>0.266495 0.059237 0.069399</max>
 	</boundingBox>
 	<geometrySize>3864</geometrySize>
 	<minUVDensity>1.860278</minUVDensity>

@@ -1745,13 +1745,8 @@
 		<macros>AUTH_REALM</macros>
 		<value>
 			<item>
-				https://webbrg.tanki.su/ru/promocontent/wt-revenge/
+				https://webbrg.tanki.su/ru/promocontent/wt-26/
 				<name>default</name>
-				<type>url</type>
-			</item>
-			<item>
-				https://webbrg-rpt.tanki.su/ru/promocontent/wt-revenge/
-				<name>CT</name>
 				<type>url</type>
 			</item>
 		</value>
@@ -1874,6 +1869,11 @@
 							<item>
 								<name>page</name>
 								<type>string</type>
+								<value>ranks</value>
+							</item>
+							<item>
+								<name>page</name>
+								<type>string</type>
 								<value>poi</value>
 							</item>
 						</value>
@@ -1944,13 +1944,13 @@
 						<type>list</type>
 						<value>
 							<item>
-								<name>roleSkills</name>
+								<name>rework</name>
 								<type>list</type>
 								<value>
 									<item>
 										<name>name</name>
 										<type>string</type>
-										<value>roleSkills</value>
+										<value>ranks</value>
 									</item>
 									<item>
 										<name>type</name>
@@ -2043,13 +2043,13 @@
 								</value>
 							</item>
 							<item>
-								<name>ranks</name>
+								<name>ranksIntro</name>
 								<type>list</type>
 								<value>
 									<item>
 										<name>name</name>
 										<type>string</type>
-										<value>ranks</value>
+										<value>ranksIntro</value>
 									</item>
 									<item>
 										<name>type</name>
@@ -2066,22 +2066,6 @@
 										<name>name</name>
 										<type>string</type>
 										<value>pointsOfInterest</value>
-									</item>
-									<item>
-										<name>type</name>
-										<type>string</type>
-										<value>page</value>
-									</item>
-								</value>
-							</item>
-							<item>
-								<name>shop</name>
-								<type>list</type>
-								<value>
-									<item>
-										<name>name</name>
-										<type>string</type>
-										<value>shop</value>
 									</item>
 									<item>
 										<name>type</name>

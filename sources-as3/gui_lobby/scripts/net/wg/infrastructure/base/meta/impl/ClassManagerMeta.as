@@ -1177,7 +1177,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.hangar.CrewDropDownEvent;
    import net.wg.gui.lobby.hangar.CrewPanelInject;
    import net.wg.gui.lobby.hangar.DailyQuestWidget;
-   import net.wg.gui.lobby.hangar.EconomyWidget;
    import net.wg.gui.lobby.hangar.GFHeaderWidget;
    import net.wg.gui.lobby.hangar.Hangar;
    import net.wg.gui.lobby.hangar.HangarAmunitionSwitchAnimator;
@@ -1197,10 +1196,10 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.hangar.ammunitionPanelInject.data.HelpLayoutDataVO;
    import net.wg.gui.lobby.hangar.ammunitionPanelInject.events.AmmunitionPanelInjectEvents;
    import net.wg.gui.lobby.hangar.data.AlertMessageBlockVO;
-   import net.wg.gui.lobby.hangar.data.EconomyWidgetVO;
    import net.wg.gui.lobby.hangar.data.HangarHeaderVO;
    import net.wg.gui.lobby.hangar.data.HeaderQuestGroupVO;
    import net.wg.gui.lobby.hangar.data.HeaderQuestsVO;
+   import net.wg.gui.lobby.hangar.data.LobbyVisibilityVO;
    import net.wg.gui.lobby.hangar.data.ResearchPanelVO;
    import net.wg.gui.lobby.hangar.data.SecondaryEntryPointVO;
    import net.wg.gui.lobby.hangar.data.SwitchModePanelVO;
@@ -1229,6 +1228,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.ShopSalesEntryPoint;
    import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.StrongholdEntryPoint;
    import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.SummerSaleEntryPoint;
+   import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.WTEventEntryPoint;
    import net.wg.gui.lobby.hangar.interfaces.IHangar;
    import net.wg.gui.lobby.hangar.interfaces.IHangarHeader;
    import net.wg.gui.lobby.hangar.interfaces.IHeaderQuestsContainer;
@@ -1263,6 +1263,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.hangar.quests.SecondaryEntryPointContent;
    import net.wg.gui.lobby.hangar.quests.StrongholdWidget;
    import net.wg.gui.lobby.hangar.quests.UniversalFlagEntryPoint;
+   import net.wg.gui.lobby.hangar.quests.WhiteTigerWidget;
    import net.wg.gui.lobby.hangar.quests.WinbackWidget;
    import net.wg.gui.lobby.hangar.tcarousel.BaseTankIcon;
    import net.wg.gui.lobby.hangar.tcarousel.CarouselProgressionPoints;
@@ -2599,6 +2600,8 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.vehicleTradeWnds.sell.vo.SellOnVehicleShellVo;
    import net.wg.gui.lobby.vehicleTradeWnds.sell.vo.SellVehicleItemBaseVo;
    import net.wg.gui.lobby.vehicleTradeWnds.sell.vo.SellVehicleVo;
+   import net.wg.gui.lobby.whiteTiger.WtHangarBaseWidget;
+   import net.wg.gui.lobby.whiteTiger.WtHangarComponentsContainer;
    import net.wg.gui.lobby.window.AwardWindow;
    import net.wg.gui.lobby.window.BaseExchangeWindow;
    import net.wg.gui.lobby.window.BaseExchangeWindowRateVO;
@@ -5280,8 +5283,6 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_LOBBY_HANGAR_DAILYQUESTWIDGET:Class = DailyQuestWidget;
       
-      public static const NET_WG_GUI_LOBBY_HANGAR_ECONOMYWIDGET:Class = EconomyWidget;
-      
       public static const NET_WG_GUI_LOBBY_HANGAR_GFHEADERWIDGET:Class = GFHeaderWidget;
       
       public static const NET_WG_GUI_LOBBY_HANGAR_HANGAR:Class = Hangar;
@@ -5320,13 +5321,13 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_LOBBY_HANGAR_DATA_ALERTMESSAGEBLOCKVO:Class = AlertMessageBlockVO;
       
-      public static const NET_WG_GUI_LOBBY_HANGAR_DATA_ECONOMYWIDGETVO:Class = EconomyWidgetVO;
-      
       public static const NET_WG_GUI_LOBBY_HANGAR_DATA_HANGARHEADERVO:Class = HangarHeaderVO;
       
       public static const NET_WG_GUI_LOBBY_HANGAR_DATA_HEADERQUESTGROUPVO:Class = HeaderQuestGroupVO;
       
       public static const NET_WG_GUI_LOBBY_HANGAR_DATA_HEADERQUESTSVO:Class = HeaderQuestsVO;
+      
+      public static const NET_WG_GUI_LOBBY_HANGAR_DATA_LOBBYVISIBILITYVO:Class = LobbyVisibilityVO;
       
       public static const NET_WG_GUI_LOBBY_HANGAR_DATA_RESEARCHPANELVO:Class = ResearchPanelVO;
       
@@ -5383,6 +5384,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_HANGAR_EVENTENTRYPOINT_GFWRAPPER_STRONGHOLDENTRYPOINT:Class = StrongholdEntryPoint;
       
       public static const NET_WG_GUI_LOBBY_HANGAR_EVENTENTRYPOINT_GFWRAPPER_SUMMERSALEENTRYPOINT:Class = SummerSaleEntryPoint;
+      
+      public static const NET_WG_GUI_LOBBY_HANGAR_EVENTENTRYPOINT_GFWRAPPER_WTEVENTENTRYPOINT:Class = WTEventEntryPoint;
       
       public static const NET_WG_GUI_LOBBY_HANGAR_INTERFACES_IHANGAR:Class = IHangar;
       
@@ -5451,6 +5454,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_HANGAR_QUESTS_STRONGHOLDWIDGET:Class = StrongholdWidget;
       
       public static const NET_WG_GUI_LOBBY_HANGAR_QUESTS_UNIVERSALFLAGENTRYPOINT:Class = UniversalFlagEntryPoint;
+      
+      public static const NET_WG_GUI_LOBBY_HANGAR_QUESTS_WHITETIGERWIDGET:Class = WhiteTigerWidget;
       
       public static const NET_WG_GUI_LOBBY_HANGAR_QUESTS_WINBACKWIDGET:Class = WinbackWidget;
       
@@ -8123,6 +8128,10 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_VEHPOSTPROGRESSION_DATA_VEHPOSTPROGRESSIONVIEWVO:Class = VehPostProgressionViewVO;
       
       public static const NET_WG_GUI_LOBBY_VEHPOSTPROGRESSION_EVENTS_DEMOUNTALLBTNEVENT:Class = DemountAllBtnEvent;
+      
+      public static const NET_WG_GUI_LOBBY_WHITETIGER_WTHANGARBASEWIDGET:Class = WtHangarBaseWidget;
+      
+      public static const NET_WG_GUI_LOBBY_WHITETIGER_WTHANGARCOMPONENTSCONTAINER:Class = WtHangarComponentsContainer;
       
       public static const NET_WG_GUI_LOBBY_WINDOW_AWARDWINDOW:Class = AwardWindow;
       

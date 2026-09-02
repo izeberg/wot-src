@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<ClientMethods>
+		<onHeal/>
+	</ClientMethods>
+	<Properties>
+		<equipmentID>
+			<Type>UINT16</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<Default>0</Default>
+		</equipmentID>
+	</Properties>
+	<ofEntity>
+		<Vehicle/>
+	</ofEntity>
+	<DefaultKeyName>wtVampirism</DefaultKeyName>
+</root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G180_Hauptpanzer_Gruppe_A/normal/lod0/HatchSleeve</nodefullVisual>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<parent>vehicles/german/G180_Hauptpanzer_Gruppe_A/normal/lod1/HatchSleeve</parent>
+	<visibilityBox>
+		<min>-1.531608 0.507274 0.143824</min>
+		<max>-1.346142 0.700074 0.399601</max>
+	</visibilityBox>
+</root>

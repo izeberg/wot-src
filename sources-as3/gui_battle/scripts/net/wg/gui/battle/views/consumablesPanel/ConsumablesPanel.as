@@ -4,16 +4,15 @@ package net.wg.gui.battle.views.consumablesPanel
    import flash.display.DisplayObject;
    import flash.events.MouseEvent;
    import flash.geom.ColorTransform;
-   import net.wg.data.constants.Errors;
    import net.wg.data.constants.InvalidationType;
    import net.wg.data.constants.Linkages;
    import net.wg.data.constants.Values;
    import net.wg.data.constants.generated.CONSUMABLES_PANEL_SETTINGS;
+   import net.wg.data.constants.generated.CONTEXT_HINT_PARAMS;
    import net.wg.data.constants.generated.CONTEXT_HINT_TYPES;
    import net.wg.gui.battle.battleRoyale.views.components.RespawnButton.BattleRoyaleRespawnButton;
    import net.wg.gui.battle.comp7.views.consumablesPanel.Comp7ConsumableButton;
    import net.wg.gui.battle.components.buttons.BattleButton;
-   import net.wg.gui.battle.random.constants.CONTEXT_HINT_CONSTS;
    import net.wg.gui.battle.random.views.events.ContextHintEvent;
    import net.wg.gui.battle.views.consumablesPanel.VO.ConsumablesVO;
    import net.wg.gui.battle.views.consumablesPanel.constants.COLOR_STATES;
@@ -72,7 +71,7 @@ package net.wg.gui.battle.views.consumablesPanel
       
       private static const CONTEXT_HINT_LINKAGE:String = "ContextHintUI";
       
-      private static const CONTEXT_HINT_KEYS:Vector.<String> = new <String>["4","5","6"];
+      private static const CONTEXT_HINT_KEYS:Vector.<String> = new <String>["1","2","3","4","5","6"];
        
       
       private var _stageWidth:int = 0;
@@ -127,9 +126,9 @@ package net.wg.gui.battle.views.consumablesPanel
       
       private var _keyName:String = null;
       
-      private var _isKeyVisible:Boolean = true;
+      private var _isContextHintAnimatedKeyVisible:Boolean = true;
       
-      private var _eqButtonHintTarget:BattleEquipmentButton = null;
+      private var _buttonHintTarget:IConsumablesButton = null;
       
       private var _scheduler:IScheduler;
       
@@ -298,13 +297,6 @@ package net.wg.gui.battle.views.consumablesPanel
          }
       }
       
-      public function as_addEquipmentSlot(param1:int, param2:Number, param3:Number, param4:int, param5:Number, param6:Number, param7:String, param8:String, param9:int) : void
-      {
-         this._equipmentButtonLinkage = this._settings[this._settingsId].equipmentButtonLinkage;
-         this.addEquipmentSlot(param1,param2,param3,param4,param5,param6,param7,param8,param9);
-         invalidate(INVALIDATE_DRAW_LAYOUT);
-      }
-      
       public function as_addAbilityEquipmentSlot(param1:int, param2:Number, param3:Number, param4:int, param5:Number, param6:Number, param7:String, param8:String, param9:int) : void
       {
          this._equipmentButtonLinkage = Linkages.ABILITY_EQUIPMENT_BUTTON;
@@ -312,29 +304,11 @@ package net.wg.gui.battle.views.consumablesPanel
          invalidate(INVALIDATE_DRAW_LAYOUT);
       }
       
-      public function as_setAbilityModifier(param1:int, param2:Boolean) : void
+      public function as_addEquipmentSlot(param1:int, param2:Number, param3:Number, param4:int, param5:Number, param6:Number, param7:String, param8:String, param9:int, param10:String) : void
       {
-         if(this._abilityModifier == null)
-         {
-            this._abilityModifier = this._classFactory.getComponent(Linkages.ABILITY_MODIFIER_INDICATOR,BattleAbilityModifierIndicator);
-            addChildAt(this._abilityModifier,Values.ZERO);
-         }
-         this._abilityModifier.visible = this._shellSlots > Values.ZERO;
-         if(this._abilityModifier.visible)
-         {
-            this._abilityModifier.shellSlots = this._shellSlots;
-            this._abilityModifier.shellPadding = this._itemsPadding;
-            this._abilityModifier.isSmall = this._itemsPadding == ITEM_WIDTH_SHORT_PADDING;
-            this._abilityModifier.updateAnimationsSettings(this._isExtendedAnim);
-            if(param1 > Values.ZERO)
-            {
-               this._abilityModifier.show(param1,param2);
-            }
-            else
-            {
-               this._abilityModifier.hide(param2);
-            }
-         }
+         this._equipmentButtonLinkage = this._settings[this._settingsId].equipmentButtonLinkage;
+         this.addEquipmentSlot(param1,param2,param3,param4,param5,param6,param7,param8,param9,param10);
+         invalidate(INVALIDATE_DRAW_LAYOUT);
       }
       
       public function as_addOptionalDeviceSlot(param1:int, param2:Number, param3:String, param4:String, param5:Boolean, param6:int, param7:Boolean) : void
@@ -443,6 +417,11 @@ package net.wg.gui.battle.views.consumablesPanel
          this._isReplay = true;
       }
       
+      public function as_hideContextHint(param1:int) : void
+      {
+         this._contextHint.hide(param1);
+      }
+      
       public function as_hideGlow(param1:int) : void
       {
          var _loc2_:IConsumablesButton = this.getRendererBySlotIdx(param1);
@@ -455,6 +434,39 @@ package net.wg.gui.battle.views.consumablesPanel
       public function as_isVisible() : Boolean
       {
          return visible;
+      }
+      
+      public function as_setAbilityModifier(param1:int, param2:Boolean) : void
+      {
+         if(this._abilityModifier == null)
+         {
+            this._abilityModifier = this._classFactory.getComponent(Linkages.ABILITY_MODIFIER_INDICATOR,BattleAbilityModifierIndicator);
+            addChildAt(this._abilityModifier,Values.ZERO);
+         }
+         this._abilityModifier.visible = this._shellSlots > Values.ZERO;
+         if(this._abilityModifier.visible)
+         {
+            this._abilityModifier.shellSlots = this._shellSlots;
+            this._abilityModifier.shellPadding = this._itemsPadding;
+            this._abilityModifier.isSmall = this._itemsPadding == ITEM_WIDTH_SHORT_PADDING;
+            this._abilityModifier.updateAnimationsSettings(this._isExtendedAnim);
+            if(param1 > Values.ZERO)
+            {
+               this._abilityModifier.show(param1,param2);
+            }
+            else
+            {
+               this._abilityModifier.hide(param2);
+            }
+         }
+      }
+      
+      public function as_setContextHintState(param1:int, param2:String, param3:String) : void
+      {
+         if(this._contextHint)
+         {
+            this._contextHint.setStateAndLabel(param3,param2);
+         }
       }
       
       public function as_setCoolDownPosAsPercent(param1:int, param2:Number) : void
@@ -650,6 +662,37 @@ package net.wg.gui.battle.views.consumablesPanel
          }
       }
       
+      public function as_showContextHint(param1:int, param2:String) : void
+      {
+         var _loc4_:Number = NaN;
+         this._buttonHintTarget = this.getRendererBySlotIdx(param1);
+         if(this._buttonHintTarget)
+         {
+            _loc4_ = this._buttonHintTarget.bindSfKeyCode;
+            this._keyName = App.utils.commons.keyToString(_loc4_).keyName;
+            this._isContextHintAnimatedKeyVisible = CONTEXT_HINT_KEYS.indexOf(this._keyName) != -1;
+         }
+         if(this._contextHint == null)
+         {
+            this._contextHint = this._classFactory.getComponent(CONTEXT_HINT_LINKAGE,ContextHint);
+            this._contextHint.addEventListener(ComponentEvent.HIDE,this.onContextHintHideHandler);
+            addChildAt(this._contextHint,Values.ZERO);
+            this._contextHint.y = CONSUMABLES_PANEL_Y_OFFSET;
+         }
+         var _loc3_:Boolean = this._buttonHintTarget is BattleShellButton;
+         this._contextHint.x = this._buttonHintTarget.x + (CONSUMABLES_PANEL_Y_OFFSET >> 1);
+         this._contextHint.setAnimatedKeyParams(this._isContextHintAnimatedKeyVisible,!this._isContextHintAnimatedKeyVisible && _loc3_,this._keyName);
+         this._contextHint.usePulseAnimation = _loc3_;
+         this._buttonHintTarget.setBindKeyTextVisibility(!this._isContextHintAnimatedKeyVisible && !_loc3_);
+         dispatchEvent(new ContextHintEvent(ContextHintEvent.VISIBILITY_CHANGE,CONTEXT_HINT_TYPES.CONSUMABLES_HINT,true));
+         this._contextHint.setLabel(param2);
+         if(this._isContextHintAnimatedKeyVisible)
+         {
+            this._buttonHintTarget.showGlowWithHotkey(CONSUMABLES_PANEL_SETTINGS.GLOW_ID_ORANGE,false);
+         }
+         this._scheduler.scheduleTask(this.showContextHint,CONTEXT_HINT_PARAMS.INTERFERING_TWEEN_DURATION);
+      }
+      
       public function as_showEquipmentSlots(param1:Boolean) : void
       {
          var _loc2_:Boolean = false;
@@ -710,44 +753,6 @@ package net.wg.gui.battle.views.consumablesPanel
          }
       }
       
-      public function as_showContextHint(param1:int, param2:String) : void
-      {
-         var _loc3_:Number = NaN;
-         this._eqButtonHintTarget = this.getRendererBySlotIdx(param1) as BattleEquipmentButton;
-         if(this._eqButtonHintTarget)
-         {
-            _loc3_ = this._eqButtonHintTarget.bindSfKeyCode;
-            this._keyName = App.utils.commons.keyToString(_loc3_).keyName;
-            this._isKeyVisible = CONTEXT_HINT_KEYS.indexOf(this._keyName) != -1;
-         }
-         else
-         {
-            App.utils.asserter.assert(false,Errors.INVALID_TYPE + BattleEquipmentButton);
-         }
-         if(this._contextHint == null)
-         {
-            this._contextHint = this._classFactory.getComponent(CONTEXT_HINT_LINKAGE,ContextHint);
-            this._contextHint.addEventListener(ComponentEvent.HIDE,this.onContextHintHideHandler);
-            addChildAt(this._contextHint,Values.ZERO);
-            this._contextHint.y = CONSUMABLES_PANEL_Y_OFFSET;
-         }
-         this._contextHint.x = this._eqButtonHintTarget.x + (CONSUMABLES_PANEL_Y_OFFSET >> 1);
-         this._contextHint.setLabel(param2);
-         this._contextHint.setKeyParams(this._isKeyVisible,this._keyName);
-         this._eqButtonHintTarget.setBindKeyTextVisibility(!this._isKeyVisible);
-         if(this._isKeyVisible)
-         {
-            this._eqButtonHintTarget.showGlowWithHotkey(CONSUMABLES_PANEL_SETTINGS.GLOW_ID_ORANGE,false);
-         }
-         dispatchEvent(new ContextHintEvent(ContextHintEvent.VISIBILITY_CHANGE,CONTEXT_HINT_TYPES.CONSUMABLES_HINT,true));
-         this._scheduler.scheduleTask(this.showContextHint,CONTEXT_HINT_CONSTS.INTERFERING_TWEEN_DURATION);
-      }
-      
-      public function as_hideContextHint(param1:int) : void
-      {
-         this._contextHint.hide(param1);
-      }
-      
       public function getRendererBySlotIdx(param1:int) : IConsumablesButton
       {
          return this._renderers[param1];
@@ -785,19 +790,19 @@ package net.wg.gui.battle.views.consumablesPanel
          }
       }
       
-      public function onButtonRollOver(param1:Object) : void
-      {
-         if(this._abilityModifier)
-         {
-            this._abilityModifier.hasHover = true;
-         }
-      }
-      
       public function onButtonRollOut(param1:Object) : void
       {
          if(this._abilityModifier)
          {
             this._abilityModifier.hasHover = false;
+         }
+      }
+      
+      public function onButtonRollOver(param1:Object) : void
+      {
+         if(this._abilityModifier)
+         {
+            this._abilityModifier.hasHover = true;
          }
       }
       
@@ -927,30 +932,31 @@ package net.wg.gui.battle.views.consumablesPanel
          alpha = 0;
       }
       
-      private function addEquipmentSlot(param1:int, param2:Number, param3:Number, param4:int, param5:Number, param6:Number, param7:String, param8:String, param9:int) : void
+      private function addEquipmentSlot(param1:int, param2:Number, param3:Number, param4:int, param5:Number, param6:Number, param7:String, param8:String, param9:int, param10:String = null) : void
       {
-         var _loc10_:IConsumablesButton = null;
+         var _loc11_:IConsumablesButton = null;
          if(this._renderers[param1] == null)
          {
-            _loc10_ = this.createEquipmentButton();
-            this._renderers[param1] = _loc10_;
-            addChild(DisplayObject(_loc10_));
+            _loc11_ = this.createEquipmentButton();
+            this._renderers[param1] = _loc11_;
+            addChild(DisplayObject(_loc11_));
          }
          else
          {
-            _loc10_ = this.getRendererBySlotIdx(param1);
+            _loc11_ = this.getRendererBySlotIdx(param1);
          }
-         var _loc11_:ConsumablesVO = _loc10_.consumablesVO;
-         _loc11_.keyCode = param2;
-         _loc11_.idx = param1;
-         _loc10_.isReplay = this._isReplay;
-         _loc10_.icon = param7;
-         _loc10_.tooltipStr = param8;
-         _loc10_.key = param3;
-         _loc10_.addClickCallBack(this);
-         _loc10_.setCoolDownTime(param5,param6,param6 - param5,param9);
-         _loc10_.quantity = param4;
-         _loc10_.visible = true;
+         var _loc12_:ConsumablesVO = _loc11_.consumablesVO;
+         _loc12_.keyCode = param2;
+         _loc12_.idx = param1;
+         _loc12_.tag = param10;
+         _loc11_.isReplay = this._isReplay;
+         _loc11_.icon = param7;
+         _loc11_.tooltipStr = param8;
+         _loc11_.key = param3;
+         _loc11_.addClickCallBack(this);
+         _loc11_.setCoolDownTime(param5,param6,param6 - param5,param9);
+         _loc11_.quantity = param4;
+         _loc11_.visible = true;
       }
       
       private function expandPopup(param1:int, param2:Array) : void
@@ -1041,6 +1047,16 @@ package net.wg.gui.battle.views.consumablesPanel
          return this.x + this._basePanelWidth;
       }
       
+      protected function get renderers() : Vector.<IConsumablesButton>
+      {
+         return this._renderers;
+      }
+      
+      protected function set basePanelWidth(param1:Number) : void
+      {
+         this._basePanelWidth = param1;
+      }
+      
       private function onStageMouseDownHandler(param1:MouseEvent) : void
       {
          var _loc2_:MouseEventEx = param1 as MouseEventEx;
@@ -1058,10 +1074,11 @@ package net.wg.gui.battle.views.consumablesPanel
       private function onContextHintHideHandler(param1:ComponentEvent) : void
       {
          dispatchEvent(new ContextHintEvent(ContextHintEvent.VISIBILITY_CHANGE,CONTEXT_HINT_TYPES.CONSUMABLES_HINT,false));
-         if(this._isKeyVisible)
+         this._buttonHintTarget.setBindKeyTextVisibility(true);
+         var _loc2_:Boolean = this._buttonHintTarget is BattleShellButton;
+         if(this._isContextHintAnimatedKeyVisible && !_loc2_)
          {
-            this._eqButtonHintTarget.setBindKeyTextVisibility(true);
-            this._eqButtonHintTarget.hideGlow();
+            this._buttonHintTarget.hideGlow();
          }
       }
    }

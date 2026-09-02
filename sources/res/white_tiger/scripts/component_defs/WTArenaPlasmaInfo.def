@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<CellMethods/>
+	<ClientMethods/>
+	<Properties>
+		<plasmaInfoList>
+			<Type>
+				ARRAY
+				<of>
+					FIXED_DICT
+					<Properties>
+						<vehicleId>
+							<Type>OBJECT_ID</Type>
+						</vehicleId>
+						<plasmaCounter>
+							<Type>UINT8</Type>
+						</plasmaCounter>
+					</Properties>
+				</of>
+			</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<AllowUnsafeData>true</AllowUnsafeData>
+		</plasmaInfoList>
+		<bossPlasmaCounter>
+			<Type>INT8</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<Default>0</Default>
+		</bossPlasmaCounter>
+	</Properties>
+	<ofEntity>
+		<ArenaInfo/>
+	</ofEntity>
+	<DefaultKeyName>plasmaInfo</DefaultKeyName>
+</root>

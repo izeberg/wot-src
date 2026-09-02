@@ -8,19 +8,10 @@
 			<row2>0.000000 0.000000 1.000000</row2>
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
-		<node>
-			<identifier>segment_02</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
-		<node>segment_02</node>
+		<node>Scene Root</node>
 		<geometry>
 			<vertices>segment_02Shape.vertices</vertices>
 			<primitive>segment_02Shape.indices</primitive>
@@ -28,36 +19,32 @@
 				0
 				<material>
 					<identifier>track_mat</identifier>
-					<property>
-						selfIllumination
-						<Float>0.000000</Float>
-					</property>
-					<property>
-						diffuseMap
-						<Texture>vehicles/russian/tracks/TET_100_track_segment_AM.dds</Texture>
-					</property>
 					<fx>shaders/std_effects/PBS_tank_tracks.fx</fx>
-					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
+					<collisionFlags>0</collisionFlags>
 					<property>
 						alphaReference
-						<Int>128</Int>
+						<Int>64</Int>
 					</property>
 					<property>
 						alphaTestEnable
 						<Bool>true</Bool>
 					</property>
 					<property>
-						doubleSided
-						<Bool>true</Bool>
+						diffuseMap
+						<Texture>vehicles/russian/tracks/TET_100_track_segment_AM.dds</Texture>
 					</property>
 					<property>
-						g_useDetailMetallic
+						doubleSided
 						<Bool>true</Bool>
 					</property>
 					<property>
 						g_detailUVTiling
 						<Vector4>1.753425 1.753425 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
 					</property>
 					<property>
 						metallicDetailMap
@@ -76,7 +63,6 @@
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
-	<constraints/>
 	<boundingBox>
 		<min>-0.314174 -0.101629 -0.114616</min>
 		<max>0.314151 0.078101 0.114577</max>

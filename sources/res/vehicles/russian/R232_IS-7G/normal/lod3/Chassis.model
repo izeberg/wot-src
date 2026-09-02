@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/russian/R232_IS-7G/normal/lod3/Chassis</nodefullVisual>
+	<parent>vehicles/russian/R232_IS-7G/normal/lod4/Chassis</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-2.460494 0.019683 -4.502243</min>
+		<max>2.460494 1.316142 4.820567</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

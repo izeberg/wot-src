@@ -1,16 +1,16 @@
 <version.xml>
 	<appname>	#menu:login/version	</appname>
-	<version> v.1.44.0.0 #2262 </version>
+	<version> v.1.45.0.0 #2268 </version>
 	<showLicense> 42 </showLicense>
 	<ingameHelpVersion>	1	</ingameHelpVersion>
 	<meta>
-		<client> 2354176 </client>
+		<client> 2356937 </client>
 		<overrides> 3028 RU </overrides>
-		<localization> 27336 </localization>
+		<localization> 27338 </localization>
 		<target_region> RU </target_region>
 		<realm> RU </realm>
 		<build_profile> RU </build_profile>
-		<branch> 1.44 </branch>
-		<buildScriptsRevision> 2324931 </buildScriptsRevision>
+		<branch> 1.45 </branch>
+		<buildScriptsRevision> 2355138 </buildScriptsRevision>
 	</meta>
 </version.xml>

@@ -477,9 +477,9 @@ BATTLE_RESULTS = [
  (
   'winnerIfDraw', int, 0, None, 'skip', ENTRY_TYPE.ACCOUNT_SELF),
  (
-  'isAbsoluteNoviceBattle', bool, False, None, 'skip', ENTRY_TYPE.ACCOUNT_SELF),
+  'isAbsoluteNoviceBattle', bool, False, None, 'skip', ENTRY_TYPE.SERVER),
  (
-  'isNoviceBattle', bool, False, None, 'skip', ENTRY_TYPE.ACCOUNT_SELF),
+  'isNoviceBattle', bool, False, None, 'skip', ENTRY_TYPE.SERVER),
  (
   'isPrematureLeave', bool, False, None, 'skip', ENTRY_TYPE.ACCOUNT_SELF),
  (

@@ -629,7 +629,7 @@ class LeveredSuspension(PyComponentWrapperBase):
 	def valid(self, *args, **kwargs): pass
 
 
-class LinkedNodesPitchAnimator(PyComponentWrapperBase):
+class LinkedNodesAnimator(PyComponentWrapperBase):
 	def __cmp__(self, *args, **kwargs): pass
 	def __delattr__(*args, **kwargs): pass
 	__doc__ = None
@@ -639,7 +639,7 @@ class LinkedNodesPitchAnimator(PyComponentWrapperBase):
 	def __init__(self, *args, **kwargs): pass
 	__module__ = 'Vehicular'
 	def __new__(*args, **kwargs): pass
-	__qualname__ = 'LinkedNodesPitchAnimator'
+	__qualname__ = 'LinkedNodesAnimator'
 	def __reduce__(*args, **kwargs): pass
 	def __reduce_ex__(*args, **kwargs): pass
 	def __repr__(*args, **kwargs): pass
@@ -1067,9 +1067,9 @@ class SuspensionSound(PyComponentWrapperBase):
 	lodSetting = property(lambda self: None)
 	def setSoundObject(self, *args, **kwargs): pass
 	def setSoundsForState(self, *args, **kwargs): pass
+	def setState(self, *args, **kwargs): pass
 	def valid(self, *args, **kwargs): pass
 	vehicleMatrix = property(lambda self: None)
-	vehicleState = property(lambda self: None)
 
 
 class SwingingAnimator(PyComponentWrapperBase):

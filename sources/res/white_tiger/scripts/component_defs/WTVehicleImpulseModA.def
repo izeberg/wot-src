@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<Properties>
+		<isImpulseActive>
+			<Type>BOOL</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<Default>0</Default>
+		</isImpulseActive>
+		<isSomeoneStuned>
+			<Type>BOOL</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<Default>0</Default>
+		</isSomeoneStuned>
+	</Properties>
+	<ofEntity>
+		<Vehicle/>
+	</ofEntity>
+	<DefaultKeyName>wtImpulseModA</DefaultKeyName>
+</root>

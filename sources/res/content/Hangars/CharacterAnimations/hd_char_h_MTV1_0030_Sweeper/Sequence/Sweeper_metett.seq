@@ -151,5 +151,29 @@
 			</frame>
 		</track>
 	</sequenceObject>
+	<sequenceObject>
+		<name>Sound 0</name>
+		<type>sound</type>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>13.200001</startTime>
+				<duration>51.866673</duration>
+				<value>Root|</value>
+			</frame>
+		</track>
+		<track>
+			<name>Sound</name>
+			<type>sound</type>
+			<frame>
+				<startTime>13.100000</startTime>
+				<duration>51.933342</duration>
+				<sequenceSound>hangar_h08_dvornik_sweep_melett</sequenceSound>
+				<type>play_till_end</type>
+				<fade>0.000000</fade>
+			</frame>
+		</track>
+	</sequenceObject>
 	<events/>
 </root>

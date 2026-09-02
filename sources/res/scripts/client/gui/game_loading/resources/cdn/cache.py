@@ -1,8 +1,9 @@
 import os, random, itertools, typing, urlparse
+from constants import MAX_VEHICLE_LEVEL, BATTLE_MODE_VEHICLE_TAGS
 from helpers import dependency, isPlayerAccount
 from gui.game_loading import loggers
 from gui.game_loading.resources.cdn import history
-from gui.game_loading.resources.cdn.consts import CDN_CACHE_SYNC_TIMEOUT, DOWNLOAD_SLIDES_MULTIPLAYER, NEWBIES_BATTLES_LIMIT, SequenceOrders, SequenceCohorts
+from gui.game_loading.resources.cdn.consts import CDN_CACHE_SYNC_TIMEOUT, DOWNLOAD_SLIDES_MULTIPLAYER, SequenceOrders, SequenceCohorts
 from gui.game_loading.resources.cdn.models import LocalSlideModel, CdnCacheParams
 from gui.game_loading.resources.cdn.config import createConfigModel
 from PlayerEvents import g_playerEvents as playerEvents
@@ -12,7 +13,18 @@ from skeletons.gui.lobby_context import ILobbyContext
 from web.cache.web_cache import BaseExternalCache, BaseExternalCacheManager, createManifestRecord, CachePrefetchResult
 if typing.TYPE_CHECKING:
     from gui.game_loading.resources.cdn.types import SequenceType
-    from gui.game_loading.resources.cdn.models import CdnCacheDefaultsModel, ConfigSlideModel, ConfigSequenceModel
+    from gui.game_loading.resources.cdn.models import CdnCacheDefaultsModel, ConfigSlideModel, ConfigSequenceModel, NewbiesCohortSettingsModel
+
+def _getNewbieVehicleCriteria(level):
+    from gui.shared.utils.requesters import REQ_CRITERIA
+    criteria = REQ_CRITERIA.INVENTORY
+    criteria |= REQ_CRITERIA.VEHICLE.LEVELS(range(level, MAX_VEHICLE_LEVEL + 1))
+    criteria |= ~REQ_CRITERIA.VEHICLE.RENT
+    criteria |= ~REQ_CRITERIA.SECRET
+    criteria |= ~REQ_CRITERIA.VEHICLE.HAS_ANY_TAG(BATTLE_MODE_VEHICLE_TAGS)
+    return criteria
+
+
 _logger = loggers.getCdnCacheLogger()
 
 class GameLoadingCdnCache(BaseExternalCache):
@@ -21,12 +33,12 @@ class GameLoadingCdnCache(BaseExternalCache):
     _WORKERS_LIMIT = 2
     _CONFIGS_DIR_NAME = None
 
-    def __init__(self, defaults, externalConfigUrl=None, cohort=None):
+    def __init__(self, defaults, externalConfigUrl=None, itemsCache=None):
         super(GameLoadingCdnCache, self).__init__(os.path.join(self._CACHE_DIR_NAME, self._RESOURCES_SUB_DIR_NAME), self._WORKERS_LIMIT)
         self.defaults = defaults
         self._EXTERNAL_CONFIG_URL = externalConfigUrl
         self._historyDirPath = os.path.normpath(os.path.join(self.rootDirPath, self._CACHE_DIR_NAME))
-        self._cohort = cohort or SequenceCohorts.DEFAULT
+        self._itemsCache = itemsCache
         self._isLoaded = False
 
     def load(self):
@@ -100,10 +112,12 @@ class GameLoadingCdnCache(BaseExternalCache):
         config = createConfigModel(config)
         if config is None:
             return
-        if not config.enabled:
-            self._history.delete()
-            return []
         else:
+            if not config.enabled:
+                self._history.delete()
+                return []
+            cohort = self._resolveCohort(config.newbiesCohort)
+            _logger.debug('Resolved player cohort: %s.', cohort)
             urlsToKeepInCache = []
             prioritizedSequences = {}
             for sequence in config.sequences:
@@ -115,8 +129,8 @@ class GameLoadingCdnCache(BaseExternalCache):
                         if _slide.isDownloaded(self):
                             urlsToKeepInCache += _slide.urls
 
-                    if sequence.cohorts != SequenceCohorts.getDefaults() and self._cohort not in sequence.cohorts:
-                        _logger.debug('Sequence [%s] skipped be cohort: %s.', sequence.name, self._cohort)
+                    if sequence.cohorts != SequenceCohorts.getDefaults() and cohort not in sequence.cohorts:
+                        _logger.debug('Sequence [%s] skipped be cohort: %s.', sequence.name, cohort)
                         continue
                     prioritizedSequences.setdefault(sequence.priority, []).append(sequence)
                 else:
@@ -155,6 +169,42 @@ class GameLoadingCdnCache(BaseExternalCache):
 
             return [ createManifestRecord(appName='slides', host=host, files=relativeUrls) for host, relativeUrls in toDownloadByHosts.iteritems()
                    ]
+
+    def _resolveCohort(self, newbiesSettings):
+        if self._itemsCache is None or not self._itemsCache.isSynced():
+            _logger.debug('ItemsCache service not synced, fallback to default cohort.')
+            return SequenceCohorts.DEFAULT
+        else:
+            if self._isNewbie(newbiesSettings):
+                return SequenceCohorts.NEWBIES
+            return SequenceCohorts.DEFAULT
+
+    def _isNewbie(self, newbiesSettings):
+        items = self._itemsCache.items
+        battlesCount = self._getNewbieBattlesCount(items.getAccountDossier())
+        if battlesCount >= newbiesSettings.battlesCount:
+            return False
+        criteria = _getNewbieVehicleCriteria(newbiesSettings.vehicleLevel)
+        if items.getVehicles(criteria):
+            return False
+        return True
+
+    @staticmethod
+    def _getNewbieBattlesCount(dossier):
+        from comp7_common import COMP7_ARCHIVE_NAMES, COMP7_SEASON_NUMBERS
+        battleStats = [
+         dossier.getRandomStats(),
+         dossier.getEpicRandomStats(),
+         dossier.getFortBattlesStats(),
+         dossier.getFortSortiesStats(),
+         dossier.getRankedStats(),
+         dossier.getRanked10x10Stats(),
+         dossier.getVersusAIStats(),
+         dossier.getBattleRoyaleSoloStats(),
+         dossier.getBattleRoyaleSquadStats()]
+        battleStats.extend(dossier.getComp7Stats(season=seasonID) for seasonID in COMP7_SEASON_NUMBERS)
+        battleStats.extend(dossier.getComp7Stats(archive=archiveName) for archiveName in COMP7_ARCHIVE_NAMES)
+        return sum(stats.getBattlesCount() for stats in battleStats)
 
 
 class GameLoadingCdnCacheMgr(BaseExternalCacheManager):
@@ -226,10 +276,10 @@ class GameLoadingCdnCacheMgr(BaseExternalCacheManager):
     def _createCache(self):
         if self._cacheParams.isReady:
             _logger.debug('Selecting web cache.')
-            return GameLoadingCdnCache(self._defaults, externalConfigUrl=self._cacheParams.configUrl, cohort=self._cacheParams.cohort)
+            return GameLoadingCdnCache(self._defaults, externalConfigUrl=self._cacheParams.configUrl, itemsCache=self._itemsCache)
         else:
             _logger.debug('Selecting static cache.')
-            return GameLoadingCdnCache(self._defaults, externalConfigUrl=None, cohort=None)
+            return GameLoadingCdnCache(self._defaults, externalConfigUrl=None, itemsCache=None)
 
     def _onSynced(self, result):
         self._downloadResult = result
@@ -238,11 +288,12 @@ class GameLoadingCdnCacheMgr(BaseExternalCacheManager):
     def _onItemsCacheUpdated(self, *args, **kwargs):
         if self._cacheParams.isItemsCacheParamsReady:
             return
-        cohort = self._getCohort()
-        if cohort:
-            self._cacheParams.cohort = cohort
-            _logger.debug('[ItemsCache] Cohort: %s selected.', cohort)
-            self._tryToDownload()
+        else:
+            if self._itemsCache is not None and self._itemsCache.isSynced():
+                self._cacheParams.itemsCacheSynced = True
+                _logger.debug('[ItemsCache] synced, ready to resolve cohort.')
+                self._tryToDownload()
+            return
 
     def _onServerSettingsChanged(self, *args, **kwargs):
         self._getExternalConfigURLParam()
@@ -259,16 +310,6 @@ class GameLoadingCdnCacheMgr(BaseExternalCacheManager):
             self._cacheParams.configUrl = configUrl
             _logger.debug('[ServerSettings] config url: %s selected.', configUrl)
             self._tryToDownload()
-
-    def _getCohort(self):
-        if self._itemsCache is None or not self._itemsCache.isSynced():
-            _logger.debug('ItemCache service not synced.')
-            return
-        else:
-            battlesCount = self._itemsCache.items.getAccountDossier().getTotalStats().getBattlesCount()
-            if battlesCount < NEWBIES_BATTLES_LIMIT:
-                return SequenceCohorts.NEWBIES
-            return SequenceCohorts.DEFAULT
 
     def _getExternalConfigUrl(self):
         if self._lobbyCtx is None:

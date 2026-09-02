@@ -16,6 +16,7 @@ package net.wg.gui.lobby.settings
    import net.wg.gui.lobby.settings.components.LimitedUISettingBlock;
    import net.wg.gui.lobby.settings.components.evnts.LimitedUIEvent;
    import net.wg.gui.lobby.settings.config.SettingsConfigHelper;
+   import net.wg.gui.lobby.settings.events.BattleContextHintSettingsEvent;
    import net.wg.gui.lobby.settings.events.SettingViewEvent;
    import net.wg.gui.lobby.settings.vo.AnonymizerExtraVO;
    import net.wg.gui.lobby.settings.vo.CheckboxVo;
@@ -53,6 +54,8 @@ package net.wg.gui.lobby.settings
       private static const SHOW_VEHICLE_HP_IN_MINIMAP:String = "showVehicleHPinMinimap";
       
       private static const SWITCH_EQUIPMENT:String = "switchEquipment";
+      
+      public static const ENABLE_BATTLE_CONTEXT_HINTS:String = "enableBattleContextHints";
       
       private static const TO_STRING_MSG:String = "WG GameSettings: ";
       
@@ -105,6 +108,7 @@ package net.wg.gui.lobby.settings
          this.scrollPane.topShadow.height = this.scrollPane.bottomShadow.height = SHADOW_HEIGHT;
          this.scrollPane.setSize(PANE_WIDTH,PANE_HEIGHT);
          App.utils.asserter.assertNotNull(this.getContent(),Errors.CANT_NULL);
+         addEventListener(BattleContextHintSettingsEvent.RESET,this.onBattleContextHintResetHandler);
       }
       
       override protected function getControl(param1:String, param2:String) : DisplayObject
@@ -187,6 +191,14 @@ package net.wg.gui.lobby.settings
                         _loc18_ = new DevMapsVO(_loc6_.extraData);
                         _loc9_.visible = _loc18_.enabled;
                         _loc12_ = _loc18_.enabled;
+                     }
+                     else if(_loc5_ == ENABLE_BATTLE_CONTEXT_HINTS)
+                     {
+                        if(!_loc10_)
+                        {
+                           _loc9_.enabled = false;
+                           _loc9_.selected = false;
+                        }
                      }
                      break;
                   case SettingsConfigHelper.TYPE_DROPDOWN:
@@ -277,6 +289,7 @@ package net.wg.gui.lobby.settings
             this._limitedUISettingBlock.dispose();
             this._limitedUISettingBlock = null;
          }
+         removeEventListener(BattleContextHintSettingsEvent.RESET,this.onBattleContextHintResetHandler);
          this.scrollPane.dispose();
          this.scrollPane = null;
          super.onDispose();
@@ -327,6 +340,16 @@ package net.wg.gui.lobby.settings
          this.scrollPane.y = !!param1 ? Number(LIMITED_UI_SETTING_BLOCK_PADDING) : Number(0);
          this.scrollPane.setSize(PANE_WIDTH,!!param1 ? Number(PANE_HEIGHT_WITH_LIMITED_UI_SETTING_BLOCK) : Number(PANE_HEIGHT));
          invalidateCounter();
+      }
+      
+      public function setBattleContextHintsEnabled(param1:Boolean) : void
+      {
+         this.getContent().setBattleContextHintsEnabled(param1);
+      }
+      
+      public function setBattleContextHintsResetEnabled(param1:Boolean) : void
+      {
+         this.getContent().setBattleContextHintsResetEnabled(param1);
       }
       
       private function setupLabel(param1:LabelControl, param2:String) : void
@@ -419,6 +442,11 @@ package net.wg.gui.lobby.settings
          var _loc2_:String = SettingsConfigHelper.instance.getControlIdByControlNameAndType(CheckBox(param1.target).name,SettingsConfigHelper.TYPE_CHECKBOX);
          var _loc3_:Boolean = CheckBox(param1.target).selected;
          dispatchEvent(new SettingViewEvent(SettingViewEvent.ON_CONTROL_CHANGED,viewId,null,_loc2_,_loc3_));
+      }
+      
+      private function onBattleContextHintResetHandler(param1:BattleContextHintSettingsEvent) : void
+      {
+         dispatchEvent(new SettingViewEvent(SettingViewEvent.ON_RESET_BATTLE_CONTEXT_HINTS,viewId,null));
       }
    }
 }

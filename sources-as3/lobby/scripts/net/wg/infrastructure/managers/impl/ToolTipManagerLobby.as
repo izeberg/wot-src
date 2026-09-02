@@ -36,6 +36,8 @@ package net.wg.infrastructure.managers.impl
       
       private static const NUM_COMPOUND_PRICE_BLOCK_POOL_ITEMS:int = 4;
       
+      private static const NUM_BUILD_UP_BLOCK_WT_RENT_POOL_ITEMS:int = 1;
+      
       private static const REQUIRED_LIB:String = "guiControlsLobbyBattleDynamic.swf";
        
       
@@ -81,6 +83,7 @@ package net.wg.infrastructure.managers.impl
          this.addTooltipBlocksPool(_loc1_,BLOCKS_TOOLTIP_TYPES.TOOLTIP_STATUS_DELTA_PARAMETER_BLOCK_LINKAGE,NUM_STATUS_DELTA_BLOCK_POOL_ITEMS);
          this.addTooltipBlocksPool(_loc1_,BLOCKS_TOOLTIP_TYPES.TOOLTIP_META_LEVEL_PROGRESS_BLOCK_LINKAGE,NUM_META_LEVEL_PROGRESS_BLOCK_POOL_ITEMS);
          this.addTooltipBlocksPool(_loc1_,BLOCKS_TOOLTIP_TYPES.TOOLTIP_COMPOUND_PRICE_BLOCK_LINKAGE,NUM_COMPOUND_PRICE_BLOCK_POOL_ITEMS);
+         this.addTooltipBlocksPool(_loc1_,BLOCKS_TOOLTIP_TYPES.TOOLTIP_BUILD_BLOCK_WT_RENT_LINKAGE,NUM_BUILD_UP_BLOCK_WT_RENT_POOL_ITEMS);
          _loc1_.addPool(Linkages.TOOLTIP_SEPARATOR_UI,new ComponentsPool(NUM_SEPARATOR_POOL_ITEMS,Linkages.TOOLTIP_SEPARATOR_UI,Separator));
       }
       

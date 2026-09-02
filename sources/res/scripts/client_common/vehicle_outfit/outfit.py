@@ -83,12 +83,15 @@ REGIONS_BY_SLOT_TYPE = {container.getAreaID():{slotType:slot.getRegions() for sl
 
 class Outfit(HasStrCD):
     __slots__ = ('_id', '_styleDescr', '_containers', '_vehicleCD', '__itemsCounter',
-                 '__styleProgressionLevel', '__styleSerialNumber')
+                 '__styleProgressionLevel', '__styleSerialNumber', '__isClanHidden',
+                 '__isMarksOnGunHidden')
 
-    def __init__(self, strCompactDescr=None, component=None, vehicleCD='', vehicleType=None):
+    def __init__(self, strCompactDescr=None, component=None, vehicleCD='', vehicleType=None, isClanHidden=False, isMarksOnGunHidden=False):
         super(Outfit, self).__init__(strCompactDescr)
         self._containers = {}
         self._vehicleCD = vehicleCD
+        self.__isClanHidden = isClanHidden
+        self.__isMarksOnGunHidden = isMarksOnGunHidden
         if strCompactDescr is not None and component is not None:
             raise SoftException("'strCompactDescr' and 'component' arguments are mutually exclusive!")
         if strCompactDescr:
@@ -216,6 +219,14 @@ class Outfit(HasStrCD):
     @property
     def vehicleCD(self):
         return self._vehicleCD
+
+    @property
+    def isClanHidden(self):
+        return self.__isClanHidden
+
+    @property
+    def isMarksOnGunHidden(self):
+        return self.__isMarksOnGunHidden
 
     @property
     def id(self):

@@ -1091,6 +1091,24 @@
 				<bank>DR26_Timurka/voiceover.bnk</bank>
 			</wwbanks>
 		</mode>
+		<mode>
+			<name>WT26_commander_Tapok</name>
+			<wwise_language>WT26/WT26_Radio_Tapok</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>WT26/WT26_Radio_Tapok/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
+		<mode>
+			<name>WT26_commander_Krieger</name>
+			<wwise_language>WT26/WT26_Krieger</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>WT26/WT26_Krieger/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
 	</modes>
 	<nationalPresets>
 		<preset>

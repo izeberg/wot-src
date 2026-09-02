@@ -9,17 +9,17 @@
 		<deferred>
 			<useEdgeFog>false</useEdgeFog>
 			<color>0.074510 0.086275 0.121569 1.129110</color>
-			<density>0.080000</density>
+			<density>0.100000</density>
 			<height>350.000000</height>
-			<heightFalloff>0.004000</heightFalloff>
+			<heightFalloff>0.006000</heightFalloff>
 			<startDistance>6.000000</startDistance>
-			<scatterStart>0.000000</scatterStart>
+			<scatterStart>10.000000</scatterStart>
 			<scatterExponent>7.010000</scatterExponent>
 			<scatterColor>0.074510 0.086275 0.121569 1.129110</scatterColor>
 			<skyLow>1.000000</skyLow>
 			<skyHigh>8.380000</skyHigh>
 			<useCustomCenter>true</useCustomCenter>
-			<centerPosition>-189.554001 -0.050000 6.000000</centerPosition>
+			<centerPosition>-107.000000 0.000000 6.539230</centerPosition>
 		</deferred>
 		<forward>
 			<useEdgeFog>true</useEdgeFog>
@@ -31,11 +31,11 @@
 			<skyLow>0.930000</skyLow>
 			<skyHigh>0.990000</skyHigh>
 			<useCustomCenter>true</useCustomCenter>
-			<centerPosition>-189.554001 -0.050000 6.000000</centerPosition>
+			<centerPosition>-107.000000 0.000000 6.539230</centerPosition>
 		</forward>
 	</Fog>
 	<HDR>
-		<version>2</version>
+		<version>3</version>
 		<enable>true</enable>
 		<adaptationSpeed>100.000000</adaptationSpeed>
 		<bloom>
@@ -48,8 +48,8 @@
 		<environment>
 			<sunlightLumMultiplier>0.000000</sunlightLumMultiplier>
 			<ambientLumMultiplier>0.200000</ambientLumMultiplier>
-			<sunLumMultiplier>6.200000</sunLumMultiplier>
-			<skyLumMultiplier>25.000000</skyLumMultiplier>
+			<sunDiskLumMultiplier>161.199997</sunDiskLumMultiplier>
+			<skyExpositionOffset>0.000000</skyExpositionOffset>
 			<LDR2HDRsaturation>1.000000</LDR2HDRsaturation>
 			<LDR2HDRenableLumaMask>false</LDR2HDRenableLumaMask>
 		</environment>
@@ -59,18 +59,28 @@
 				<middleGray>0.190000</middleGray>
 				<whitePoint>0.000000</whitePoint>
 				<blackPoint>7.000000</blackPoint>
+				<contrast>1.000000</contrast>
 			</tonemapping>
 			<tonemapping>
 				<name>FilmicTM</name>
 				<middleGray>0.190000</middleGray>
 				<whitePoint>5.000000</whitePoint>
 				<blackPoint>0.150000</blackPoint>
+				<contrast>1.000000</contrast>
 			</tonemapping>
 			<tonemapping>
 				<name>LinearExpTM</name>
 				<middleGray>0.190000</middleGray>
 				<whitePoint>5.000000</whitePoint>
 				<blackPoint>0.150000</blackPoint>
+				<contrast>1.000000</contrast>
+			</tonemapping>
+			<tonemapping>
+				<name>GTTM</name>
+				<middleGray>0.220000</middleGray>
+				<whitePoint>0.400000</whitePoint>
+				<blackPoint>1.330000</blackPoint>
+				<contrast>1.000000</contrast>
 			</tonemapping>
 			<active>0</active>
 		</tonemappings>
@@ -78,7 +88,7 @@
 			<map>system/maps/post_processing/cube/lut_default.dds</map>
 		</colorCorrection>
 		<rainDistortion>
-			<map>system/maps/void_cch.dds</map>
+			<map/>
 			<enable>false</enable>
 			<dropsStrength>1.000000</dropsStrength>
 			<dripsStrength>1.000000</dripsStrength>
@@ -95,10 +105,14 @@
 			<scale>0.250000</scale>
 		</filmgrain>
 		<camera>
+			<usePhysicalCamera>true</usePhysicalCamera>
 			<fnumberDown>14.300000</fnumberDown>
 			<fnumberUp>21.000000</fnumberUp>
 			<shutterSpeed>4.169925</shutterSpeed>
-			<keyValue>0.160000</keyValue>
+			<cameraKeyValue>0.160000</cameraKeyValue>
+			<lightLimit>1000.000000</lightLimit>
+			<darkLimit>0.001000</darkLimit>
+			<eyeKeyValue>0.200000</eyeKeyValue>
 		</camera>
 	</HDR>
 	<DOF>
@@ -119,15 +133,15 @@
 		<sunTintColor>1.000000 0.858824 0.541176 1.000000</sunTintColor>
 		<sunSize>0.500000</sunSize>
 		<sunBrightness>1.000000</sunBrightness>
-		<objectEnable>true</objectEnable>
-		<glareEnable>true</glareEnable>
+		<objectEnable>false</objectEnable>
+		<glareEnable>false</glareEnable>
 		<glareIntensity>0.360000</glareIntensity>
 		<glareSize>0.010000</glareSize>
 		<flareIntensity>0.000960</flareIntensity>
 		<objectThreshold>1.584962</objectThreshold>
 		<objectFlareIntensity>0.350000</objectFlareIntensity>
-		<haloEnable>true</haloEnable>
-		<sunTexture1>system/maps/PSF_ldr.dds</sunTexture1>
+		<haloEnable>false</haloEnable>
+		<sunTexture1/>
 		<colorTexture>system/maps/lenscolorF.dds</colorTexture>
 		<starTexture>system/maps/lensDiffract.dds</starTexture>
 		<dirtTexture>system/maps/LensDirtCaptured.dds</dirtTexture>
@@ -136,7 +150,7 @@
 		<enable>false</enable>
 		<attenuationPower>33.000000</attenuationPower>
 		<decay>1.000000</decay>
-		<color>0.891720 0.960656 1.000000 1.000000</color>
+		<color>0.891720 0.960656 1.000000 0.038462</color>
 	</GodRays>
 	<SSAO>
 		<enableFromPreset>2</enableFromPreset>
@@ -152,7 +166,7 @@
 		</influences>
 	</SSAO>
 	<Shadow>
-		<maxShadowsSplitCount>5</maxShadowsSplitCount>
+		<maxShadowsSplitCount>4</maxShadowsSplitCount>
 		<maxDynamicViewDistance>100.000000</maxDynamicViewDistance>
 		<lightSize>100.000000</lightSize>
 		<dynamicShadowsLightSize>13.000000</dynamicShadowsLightSize>
@@ -230,12 +244,12 @@
 	<day_night_cycle>
 		<forward>
 			<angle>109.000000</angle>
-			<angleZ>138.000000</angleZ>
+			<angleZ>228.000000</angleZ>
 			<angleShadow>239.000000</angleShadow>
 		</forward>
 		<deferred>
 			<angle>36.000000</angle>
-			<angleZ>181.000000</angleZ>
+			<angleZ>260.000000</angleZ>
 		</deferred>
 		<sunScale>0.000000</sunScale>
 		<sunlightAngularSize>0.000000</sunlightAngularSize>
@@ -249,19 +263,11 @@
 		<sunTextureForward>system/maps/PSF_ldr.dds</sunTextureForward>
 		<sunLightColorForward>1.000000 0.917647 0.839216</sunLightColorForward>
 		<ambientColorForward>1.000000 0.917647 0.839216</ambientColorForward>
-		<lightsLodFactorUltra>1.000000</lightsLodFactorUltra>
-		<lightsLodFactorMax>1.000000</lightsLodFactorMax>
-		<lightsLodFactorHigh>1.000000</lightsLodFactorHigh>
-		<lightsLodFactorMedium>1.000000</lightsLodFactorMedium>
-		<lightsRadiusFactorUltra>1.500000</lightsRadiusFactorUltra>
-		<lightsRadiusFactorMax>1.500000</lightsRadiusFactorMax>
-		<lightsRadiusFactorHigh>1.500000</lightsRadiusFactorHigh>
-		<lightsRadiusFactorMedium>1.500000</lightsRadiusFactorMedium>
 		<starttime>11.350000</starttime>
 	</day_night_cycle>
 	<dirt>
-		<normal>vehicles/russian/Tank_detail/Dirt2NM.dds</normal>
-		<configFile>maps/dirt_presets/dirt_preset_hangar_V3.xml</configFile>
+		<normal/>
+		<configFile/>
 		<color>0.490000 0.440000 0.380000 0.000000</color>
 		<enabled>false</enabled>
 	</dirt>

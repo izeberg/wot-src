@@ -1,4 +1,5 @@
 import logging
+from sys import maxsize as maxSizeValue
 from gui.Scaleform.genConsts.BATTLE_NOTIFICATIONS_TIMER_TYPES import BATTLE_NOTIFICATIONS_TIMER_TYPES
 _logger = logging.getLogger(__name__)
 
@@ -144,6 +145,20 @@ class StatusNotificationsGroup(StatusNotificationItem):
             return super(StatusNotificationsGroup, self).getVO()
         else:
             return self.__visibleItem.getVO()
+
+    def getVisibleItemsInGroup(self, maxReturnedCount=maxSizeValue):
+        result = []
+        if maxReturnedCount < 0:
+            _logger.error('getVisibleItemsInGroup negative maxReturnedCount %r', maxReturnedCount)
+            return result
+        for itm in self.__items:
+            if len(result) >= maxReturnedCount:
+                break
+            if not itm.isVisible():
+                continue
+            result.append(itm.getVO())
+
+        return result
 
     def __onItemUpdated(self):
         for itm in self.__items:

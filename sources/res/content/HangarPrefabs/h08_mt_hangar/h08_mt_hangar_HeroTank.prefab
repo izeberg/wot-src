@@ -110,7 +110,7 @@
 					<property>
 						<name>Position</name>
 						<value>
-							4.981 0.871559 -8.62735
+							-6.42763 -0.0872652 -7.66027
 							<!--BW_String-->
 						</value>
 					</property>
@@ -124,7 +124,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							0.0872661 -0.523599 -3.73957e-09
+							-0.00872659 0.698124 3.63809e-10
 							<!--BW_String-->
 						</value>
 					</property>
@@ -250,7 +250,7 @@
 					<property>
 						<name>PitchLimits</name>
 						<value>
-							-80.21 -5
+							-80.21 2
 							<!--BW_String-->
 						</value>
 					</property>
@@ -260,11 +260,14 @@
 					</property>
 					<property>
 						<name>StartYaw</name>
-						<value>150</value>
+						<value>-140</value>
 					</property>
 					<property>
 						<name>StartPitch</name>
-						<value>-5</value>
+						<value>
+							0.5
+							<!--BW_String-->
+						</value>
 					</property>
 					<property>
 						<name>StartDist</name>

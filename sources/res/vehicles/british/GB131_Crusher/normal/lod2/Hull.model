@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>vehicles/british/GB131_Crusher/normal/lod2/Hull</nodefullVisual>
 	<parent>vehicles/british/GB131_Crusher/normal/lod3/Hull</parent>
 	<tank>true</tank>
 	<extent>96.000000</extent>
@@ -8,4 +7,5 @@
 		<min>-1.918791 -1.055486 -3.883313</min>
 		<max>1.918791 0.627116 4.517481</max>
 	</visibilityBox>
+	<nodefullVisual>vehicles/british/GB131_Crusher/normal/lod2/Hull</nodefullVisual>
 </root>

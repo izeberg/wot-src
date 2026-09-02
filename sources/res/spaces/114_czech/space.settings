@@ -158,5 +158,10 @@
 			<tag>domination3</tag>
 			<bitIndex>4</bitIndex>
 		</type>
+		<type>
+			<tag>assault2</tag>
+			<bitIndex>5</bitIndex>
+		</type>
 	</spaceVisibilityFlags>
+	<texturesMipShift>0</texturesMipShift>
 </root>

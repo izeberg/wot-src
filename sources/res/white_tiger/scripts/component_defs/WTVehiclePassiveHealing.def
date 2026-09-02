@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<Properties>
+		<isHealActive>
+			<Type>BOOL</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<Default>0</Default>
+		</isHealActive>
+		<usagePrefab>
+			<Type>STRING</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</usagePrefab>
+	</Properties>
+	<ofEntity>
+		<Vehicle/>
+	</ofEntity>
+	<DefaultKeyName>wtPassiveHealing</DefaultKeyName>
+</root>

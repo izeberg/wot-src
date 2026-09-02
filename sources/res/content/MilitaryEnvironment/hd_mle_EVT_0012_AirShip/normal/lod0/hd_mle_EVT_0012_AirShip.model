@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>
+			-23.916 -24.5817 -270.519
+			<!--BW_String-->
+		</min>
+		<max>
+			23.916 23.916 0.000000
+			<!--BW_String-->
+		</max>
+	</visibilityBox>
+	<parent>content/MilitaryEnvironment/hd_mle_EVT_0012_AirShip/normal/lod1/hd_mle_EVT_0012_AirShip</parent>
+	<extent>1000.000000</extent>
+	<nodelessVisual>content/MilitaryEnvironment/hd_mle_EVT_0012_AirShip/normal/lod0/hd_mle_EVT_0012_AirShip</nodelessVisual>
+</root>

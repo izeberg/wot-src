@@ -13,7 +13,7 @@
 	<postProgressionTree>role_HT_assault</postProgressionTree>
 	<customRoleSlotOptions>2 4</customRoleSlotOptions>
 	<speedLimits>
-		<forward>37</forward>
+		<forward>34</forward>
 		<backward>15</backward>
 	</speedLimits>
 	<invisibility>
@@ -80,11 +80,11 @@
 		<armor>
 			<armor_1>210</armor_1>
 			<armor_2>150</armor_2>
-			<armor_3>100</armor_3>
+			<armor_3>120</armor_3>
 			<armor_4>100</armor_4>
 			<armor_5>40</armor_5>
 			<armor_6>170</armor_6>
-			<armor_7>100</armor_7>
+			<armor_7>120</armor_7>
 			<armor_8>0</armor_8>
 			<armor_9>40</armor_9>
 			<armor_10>40</armor_10>
@@ -1392,8 +1392,8 @@
 		</customization>
 		<hangarShadowTexture>vehicles/german/G197_E_94_Fechter/G197_E_94_Fechter_HangarShadowMap.dds</hangarShadowTexture>
 		<camouflage>
-			<density>102.865387 103.241325</density>
-			<aoTextureSize>1024 512</aoTextureSize>
+			<density>94.799438 94.786385</density>
+			<aoTextureSize>1024 1024</aoTextureSize>
 		</camouflage>
 	</hull>
 	<chassis>
@@ -2845,8 +2845,8 @@
 			<price>60000</price>
 			<notInShop>true</notInShop>
 			<armor>
-				<armor_1>310</armor_1>
-				<armor_2>240</armor_2>
+				<armor_1>330</armor_1>
+				<armor_2>260</armor_2>
 				<armor_3>200</armor_3>
 				<armor_4>160</armor_4>
 				<armor_5>50</armor_5>
@@ -3571,7 +3571,7 @@
 			<engines>
 				<Maybach_HL230x2>
 					<smplEnginePower>1300</smplEnginePower>
-					<smplFwMaxSpeed>37</smplFwMaxSpeed>
+					<smplFwMaxSpeed>34</smplFwMaxSpeed>
 				</Maybach_HL230x2>
 			</engines>
 			<chassis>

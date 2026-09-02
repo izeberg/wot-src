@@ -2221,6 +2221,10 @@ msgstr "Атрымаць адметную адзнаку на гармату"
 msgid "details/conditions/cumulative/maxDamage"
 msgstr "Найбольшыя пашкоджанні"
 
+msgid "details/conditions/cumulative/maxWtPlasmaBonus"
+msgstr ""
+"Получить определённый уровень усиления огневой мощи в рамках одного боя"
+
 msgid "details/conditions/cumulative/mileage"
 msgstr "Прабег за бой, не менш за (м)"
 
@@ -2302,6 +2306,18 @@ msgstr "Параметр для каманды: %(param)s"
 
 msgid "details/conditions/cumulative/tkills"
 msgstr "Знішчаныя машыны хаўруснікаў"
+
+msgid "details/conditions/cumulative/wtBossVulnerableDamage"
+msgstr "Нанести урон машине Инженера, пока она без щита"
+
+msgid "details/conditions/cumulative/wtDeathCount"
+msgstr "Количество возрождений"
+
+msgid "details/conditions/cumulative/wtGeneratorsCaptured"
+msgstr "Принять участие в перегрузке указанного количества генераторов"
+
+msgid "details/conditions/cumulative/wtTotalGeneratorsCaptured"
+msgstr "Количество перегруженных генераторов"
 
 msgid "details/conditions/cumulative/xp"
 msgstr "Здабыты досвед"

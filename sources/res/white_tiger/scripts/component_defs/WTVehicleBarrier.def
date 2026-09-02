@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<Properties>
+		<abilityMode>
+			<Type>UINT8</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<Default>0</Default>
+		</abilityMode>
+		<gunLockFlag>
+			<Type>UINT8</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<Default>0</Default>
+			<DetailLevel>MY_VEHICLE</DetailLevel>
+		</gunLockFlag>
+	</Properties>
+	<ofEntity>
+		<Vehicle/>
+	</ofEntity>
+	<DefaultKeyName>wt_barrier</DefaultKeyName>
+</root>

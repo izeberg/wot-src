@@ -22,7 +22,7 @@ msgstr "За неделю"
 
 msgid "battleModifiers/body"
 msgstr ""
-"Изменяет некоторые параметры всей техники, участвующей в сражениях Укрепрайона. Работает в следующих режимах: %(battleModifiersQueue)s.\n"
+"Изменяют некоторые параметры всей техники, участвующей в сражениях Укрепрайона. Работают в следующих режимах: %(battleModifiersQueue)s.\n"
 "\n"
 "Чтобы увидеть актуальные значения, вступите в соответствующий отряд или создайте его."
 
@@ -33,10 +33,10 @@ msgid "battleModifiers/sortie"
 msgstr "Вылазки %(level)s"
 
 msgid "battleModifiers/title"
-msgstr "Модификатор Укрепрайона"
+msgstr "Модификаторы Укрепрайона"
 
 msgid "battleModifiersGM/title"
-msgstr "Модификатор Глобальной карты"
+msgstr "Модификаторы Глобальной карты"
 
 msgid "battleQueue/clanPosition"
 msgstr "Позиция: %(position)s"

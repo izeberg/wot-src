@@ -1,7 +1,9 @@
 package net.wg.infrastructure.base.meta.impl
 {
    import net.wg.data.constants.Errors;
+   import net.wg.gui.lobby.hangar.data.LobbyVisibilityVO;
    import net.wg.infrastructure.base.AbstractView;
+   import net.wg.infrastructure.exceptions.AbstractException;
    
    public class LobbyPageMeta extends AbstractView
    {
@@ -15,9 +17,21 @@ package net.wg.infrastructure.base.meta.impl
       
       public var notifyCursorDragging:Function;
       
+      private var _lobbyVisibilityVO:LobbyVisibilityVO;
+      
       public function LobbyPageMeta()
       {
          super();
+      }
+      
+      override protected function onDispose() : void
+      {
+         if(this._lobbyVisibilityVO)
+         {
+            this._lobbyVisibilityVO.dispose();
+            this._lobbyVisibilityVO = null;
+         }
+         super.onDispose();
       }
       
       public function moveSpaceS(param1:Number, param2:Number, param3:Number) : void
@@ -42,6 +56,24 @@ package net.wg.infrastructure.base.meta.impl
       {
          App.utils.asserter.assertNotNull(this.notifyCursorDragging,"notifyCursorDragging" + Errors.CANT_NULL);
          this.notifyCursorDragging(param1);
+      }
+      
+      public final function as_setInterfaceVisible(param1:Object) : void
+      {
+         var _loc2_:LobbyVisibilityVO = this._lobbyVisibilityVO;
+         this._lobbyVisibilityVO = new LobbyVisibilityVO(param1);
+         this.setInterfaceVisible(this._lobbyVisibilityVO);
+         if(_loc2_)
+         {
+            _loc2_.dispose();
+         }
+      }
+      
+      protected function setInterfaceVisible(param1:LobbyVisibilityVO) : void
+      {
+         var _loc2_:String = "as_setInterfaceVisible" + Errors.ABSTRACT_INVOKE;
+         DebugUtils.LOG_ERROR(_loc2_);
+         throw new AbstractException(_loc2_);
       }
    }
 }

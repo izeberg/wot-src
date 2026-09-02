@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/russian/R213_TET_100/_skins/R213_TET_100_3Dst_02/normal/lod1/Gun_01</parent>
+	<extent>
+		32.0
+		<!--BW_String-->
+	</extent>
+	<visibilityBox>
+		<min>-0.470875 -0.649242 0.020429</min>
+		<max>0.841960 0.598940 5.803583</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/russian/R213_TET_100/_skins/R213_TET_100_3Dst_02/normal/lod0/Gun_01</nodefullVisual>
+</root>

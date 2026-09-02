@@ -56,7 +56,7 @@
 				0
 				<material>
 					<identifier>tank_hull_skeleton_01</identifier>
-					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<fx>shaders/std_effects/PBS_ext_dissolve.fx</fx>
 					<materialKind>0</materialKind>
 					<collisionFlags>0</collisionFlags>
 					<property>
@@ -183,7 +183,7 @@
 			<primitiveGroup>
 				2
 				<material>
-					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<fx>shaders/std_effects/PBS_ext_dissolve.fx</fx>
 					<materialKind>0</materialKind>
 					<identifier>tank_hull_01</identifier>
 					<collisionFlags>0</collisionFlags>

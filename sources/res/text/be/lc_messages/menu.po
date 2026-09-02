@@ -715,6 +715,12 @@ msgstr "Адмысловы бой"
 msgid "bonusType/50"
 msgstr "Палігон"
 
+msgid "bonusType/52"
+msgstr "Ваффентрагер: резонанс"
+
+msgid "bonusType/53"
+msgstr "Ваффентрагер: резонанс"
+
 msgid "bonusType/6"
 msgstr "Баявое навучанне"
 
@@ -1097,7 +1103,7 @@ msgid "contextMenu/createBattleRoyaleSquad"
 msgstr "Создать взвод охотников"
 
 msgid "contextMenu/createComp7Squad"
-msgstr "Создать взвод для Натиска"
+msgstr "Создать взвод для Натиска"
 
 msgid "contextMenu/createContactNote"
 msgstr "Стварыць нататку"
@@ -1115,7 +1121,7 @@ msgid "contextMenu/createPrivateChannel"
 msgstr "Адправіць паведамленне"
 
 msgid "contextMenu/createRankedSquad"
-msgstr "Создать взвод для Рангового боя"
+msgstr "Создать взвод для Рангового боя"
 
 msgid "contextMenu/createSquad"
 msgstr "Создать взвод"
@@ -1309,6 +1315,9 @@ msgstr "Зняць з машыны"
 
 msgid "contextMenu/tankmanUnloadAll"
 msgstr "Зняць экіпаж"
+
+msgid "contextMenu/telecomAbout"
+msgstr "О тарифе «Игровой»"
 
 msgid "contextMenu/telecomRent"
 msgstr "Паказаць пракатную тэхніку"
@@ -2975,6 +2984,9 @@ msgstr "Лёгкі танк"
 msgid "header/wotPlusExclusiveVehicleType/mediumTank"
 msgstr "Сярэдні танк"
 
+msgid "headerButton/museum"
+msgstr "Музей"
+
 msgid "headerButtons/account/accountRefill"
 msgstr "Купіць золата"
 
@@ -4436,9 +4448,7 @@ msgid "login/status/UNKNOWN_ERROR"
 msgstr "Невядомая памылка."
 
 msgid "login/status/accessForbiddenToPeriphery"
-msgstr ""
-"Выбраны сервер недаступны для вашага акаўнту. Даступныя серверы: "
-"%(peripheries)s."
+msgstr "Выбранный сервер недоступен для вашей учётной записи."
 
 msgid "login/status/accountNotReady"
 msgstr "Акаўнт не гатовы. Паспрабуйце ўвайсці ў гульню пазней."
@@ -7116,14 +7126,14 @@ msgid "training/create/privacy"
 msgstr "па запрашэннях"
 
 msgid "training/create/title"
-msgstr "Стварэнне вучэбнага палігона"
+msgstr "Создание тренировочной комнаты"
 
 msgid "training/createButton"
 msgstr "Создать комнату"
 
 msgid "training/description"
 msgstr ""
-"Опыт и серебро в Тренировочных боях не начисляются, однако всё обслуживание "
+"Опыт и серебро в Тренировочных боях не начисляются, однако всё обслуживание "
 "техники полностью бесплатное."
 
 msgid "training/info/deleteButton"
@@ -7223,7 +7233,7 @@ msgid "training/leaveButton"
 msgstr "Выйсці з рэжыму"
 
 msgid "training/listTitle"
-msgstr "Спіс вучэбных палігонаў"
+msgstr "Список тренировочных комнат"
 
 msgid "training/ownerTitle"
 msgstr "Камандзір"

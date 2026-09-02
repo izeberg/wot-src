@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.487166 -0.331145 -0.013938</min>
+		<max>0.491382 0.366118 6.705658</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G180_Hauptpanzer_Gruppe_A/crash/lod4/Gun_01</nodefullVisual>
+</root>
