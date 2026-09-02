@@ -21,6 +21,10 @@
 				<material>
 					<identifier>lambert2</identifier>
 					<fx>shaders/custom/emissive.fx</fx>
+					<property>
+						g_enableEnvMultiplier
+						<Bool>true</Bool>
+					</property>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
 					<property>
@@ -33,7 +37,7 @@
 					</property>
 					<property>
 						g_emissiveParams
-						<Vector4>0.000000 0.000000 1.000000 1.000000</Vector4>
+						<Vector4>0.000000 0.000000 1.000000 4.347826</Vector4>
 					</property>
 					<property>
 						g_hotColor

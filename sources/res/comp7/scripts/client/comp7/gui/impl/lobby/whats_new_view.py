@@ -1,10 +1,10 @@
+from __future__ import absolute_import
 import typing, SoundGroups
 from comp7.gui.Scaleform.genConsts.TOOLTIPS_CONSTANTS import TOOLTIPS_CONSTANTS as COMP7_TOOLTIPS
 from comp7.gui.impl.gen.view_models.views.lobby.enums import SeasonName
 from comp7.gui.impl.gen.view_models.views.lobby.season_model import SeasonState
 from comp7.gui.impl.gen.view_models.views.lobby.whats_new_view_model import WhatsNewViewModel
 from comp7.gui.impl.gen.view_models.views.lobby.year_model import YearState
-from comp7.gui.impl.lobby.comp7_helpers import comp7_model_helpers
 from comp7.gui.impl.lobby.comp7_helpers.comp7_gui_helpers import updateComp7LastSeason
 from comp7_core.gui.impl.lobby.comp7_core_helpers import comp7_core_model_helpers
 from frameworks.wulf import ViewSettings, WindowFlags, WindowLayer
@@ -29,9 +29,7 @@ from skeletons.gui.shared import IItemsCache
 if typing.TYPE_CHECKING:
     from gui.shared.gui_items.Vehicle import Vehicle
 SOUND_NAME = 'comp_7_whatsnew_appear'
-VEHICLES_CDS = [22049]
-NEW_AVAILABLE_VEHICLES_CDS = [7281, 50849]
-RENTAL_VEHICLES_CDS = [70433, 69633, 58689]
+RENTAL_VEHICLES_CDS = [22097, 68625, 71457]
 
 class WhatsNewView(ViewImpl, IGlobalListener):
     __slots__ = ()
@@ -123,8 +121,6 @@ class WhatsNewView(ViewImpl, IGlobalListener):
 
     def __onEventsSyncCompleted(self):
         with self.viewModel.transaction() as (vm):
-            self.__setVehicles(vm)
-            self.__setNewAvailableVehicles(vm)
             self.__setRentalVehicles(vm)
 
     def __onPollServerTime(self):
@@ -132,33 +128,8 @@ class WhatsNewView(ViewImpl, IGlobalListener):
 
     def __updateData(self):
         with self.viewModel.transaction() as (vm):
-            comp7_model_helpers.setElitePercentage(vm)
             comp7_core_model_helpers.setScheduleInfo(vm.scheduleInfo, self.__comp7Controller, self._calendarDayTooltipID, SeasonState, YearState, SeasonName)
-            self.__setVehicles(vm)
-            self.__setNewAvailableVehicles(vm)
             self.__setRentalVehicles(vm)
-
-    def __setVehicles(self, viewModel):
-        vehiclesList = viewModel.getVehicles()
-        vehiclesList.clear()
-        for vehicleCD in VEHICLES_CDS:
-            vehicleItem = self.__itemsCache.items.getItemByCD(vehicleCD)
-            vehicleModel = VehicleModel()
-            fillVehicleModel(vehicleModel, vehicleItem)
-            vehiclesList.addViewModel(vehicleModel)
-
-        vehiclesList.invalidate()
-
-    def __setNewAvailableVehicles(self, viewModel):
-        newAvailableVehiclesList = viewModel.getNewAvailableVehicles()
-        newAvailableVehiclesList.clear()
-        for vehicleCD in NEW_AVAILABLE_VEHICLES_CDS:
-            newAvailableVehicleItem = self.__itemsCache.items.getItemByCD(vehicleCD)
-            newAvailableVehicleModel = VehicleModel()
-            fillVehicleModel(newAvailableVehicleModel, newAvailableVehicleItem)
-            newAvailableVehiclesList.addViewModel(newAvailableVehicleModel)
-
-        newAvailableVehiclesList.invalidate()
 
     def __setRentalVehicles(self, viewModel):
         rentalVehiclesList = viewModel.getRentalVehicles()

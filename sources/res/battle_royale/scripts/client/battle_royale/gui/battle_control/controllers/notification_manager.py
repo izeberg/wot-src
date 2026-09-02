@@ -1,7 +1,10 @@
-import logging, BigWorld, typing
+from __future__ import absolute_import
+import logging, typing
 from enum import IntEnum
+import BigWorld
 from Event import Event
 from helpers.CallbackDelayer import CallbackDelayer
+from math_common import round_py2_style_int
 if typing.TYPE_CHECKING:
     from battle_royale.gui.Scaleform.daapi.view.battle.respawn_message_panel import RespawnMessagePanel
 logger = logging.getLogger(__name__)
@@ -31,6 +34,10 @@ class RespawnMessage(CallbackDelayer):
         self.__panel = None
         self.__hiddenFromPanel = False
         return
+
+    def __repr__(self):
+        return 'RespawnMessage(msgType: %s, messageVO: %s, delay: %s, time: %s, showBefore: %s)' % (
+         self.msgType, self.messageVO, self.delay, self.time, self.showBefore)
 
     def setHideCallback(self, hideCallback):
         self.hideCallback = hideCallback
@@ -117,17 +124,9 @@ class RespawnMessage(CallbackDelayer):
         floatLength = self._calculate()
         if not floatLength:
             return 0
-        intLength = max(int(round(floatLength)), 0)
+        intLength = max(round_py2_style_int(floatLength), 0)
         self.__panel.sendMessageTime(intLength)
         return floatLength
-
-    def __repr__(self):
-        return 'RespawnMessage(msgType: %s, messageVO: %s, delay: %s, time: %s, showBefore: %s)' % (
-         self.msgType, self.messageVO, self.delay, self.time, self.showBefore)
-
-    def __cmp__(self, other):
-        return cmp((self.msgType, self.messageVO, self.delay, self.time, self.showBefore), (
-         other.msgType, other.messageVO, other.delay, other.time, other.showBefore))
 
 
 class MessageType(IntEnum):
@@ -177,7 +176,7 @@ class INotificationHandler(object):
     def tryToProceed(self):
         raise NotImplementedError
 
-    def checkOtherHandlers(self, handlerList):
+    def checkOtherHandlers(self, handlers):
         pass
 
 

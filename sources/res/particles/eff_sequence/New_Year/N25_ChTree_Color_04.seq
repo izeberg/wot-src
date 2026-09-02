@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>0.000000</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>bottom</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/environment/h38_newyear_2025/N25_ChTree_Color_04_bottom.model</resource>
+		<castsShadow>false</castsShadow>
+	</sequenceObject>
+	<sequenceObject>
+		<name>top</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/environment/h38_newyear_2025/N25_ChTree_Color_04_top.model</resource>
+		<castsShadow>false</castsShadow>
+	</sequenceObject>
+	<events/>
+</root>

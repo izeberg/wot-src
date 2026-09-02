@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld, WWISE, nations
 from constants import CURRENT_REALM, IS_CHINA
 from gui.battle_control import avatar_getter

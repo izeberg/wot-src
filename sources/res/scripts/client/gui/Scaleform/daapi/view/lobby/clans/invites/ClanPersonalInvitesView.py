@@ -255,10 +255,12 @@ class PersonalInvitesDataProvider(ClanInvitesAbstractDataProvider):
     def _makeRequestTooltip(self, status, date, user=None):
         if status == CLAN_INVITE_STATES.ACCEPTED:
             return text_styles.concatStylesToMultiLine(text_styles.standard(_ms(CLANS.CLANINVITESWINDOW_TOOLTIPS_INVITE_INVITEACCEPTED)), text_styles.main(date), text_styles.main(''), text_styles.standard(_ms(CLANS.CLANINVITESWINDOW_TOOLTIPS_INVITE_BYUSER)), text_styles.stats(user))
-        if status in (CLAN_INVITE_STATES.DECLINED, CLAN_INVITE_STATES.DECLINED_RESENT):
-            return text_styles.concatStylesToMultiLine(text_styles.standard(_ms(CLANS.CLANINVITESWINDOW_TOOLTIPS_INVITE_INVITEDECLINED)), text_styles.main(date), text_styles.main(''), text_styles.standard(_ms(CLANS.CLANINVITESWINDOW_TOOLTIPS_INVITE_BYUSER)), text_styles.stats(user))
-        if status in (CLAN_INVITE_STATES.ACTIVE, CLAN_INVITE_STATES.EXPIRED, CLAN_INVITE_STATES.EXPIRED_RESENT):
-            return text_styles.concatStylesToMultiLine(text_styles.standard(_ms(CLANS.CLANINVITESWINDOW_TOOLTIPS_INVITE_INVITESENT)), text_styles.main(date), text_styles.main(''), text_styles.standard(_ms(CLANS.CLANINVITESWINDOW_TOOLTIPS_INVITE_SENDER)), text_styles.stats(user))
+        else:
+            if status in (CLAN_INVITE_STATES.DECLINED, CLAN_INVITE_STATES.DECLINED_RESENT):
+                return text_styles.concatStylesToMultiLine(text_styles.standard(_ms(CLANS.CLANINVITESWINDOW_TOOLTIPS_INVITE_INVITEDECLINED)), text_styles.main(date), text_styles.main(''), text_styles.standard(_ms(CLANS.CLANINVITESWINDOW_TOOLTIPS_INVITE_BYUSER)), text_styles.stats(user))
+            if status in (CLAN_INVITE_STATES.ACTIVE, CLAN_INVITE_STATES.EXPIRED, CLAN_INVITE_STATES.EXPIRED_RESENT):
+                return text_styles.concatStylesToMultiLine(text_styles.standard(_ms(CLANS.CLANINVITESWINDOW_TOOLTIPS_INVITE_INVITESENT)), text_styles.main(date), text_styles.main(''), text_styles.standard(_ms(CLANS.CLANINVITESWINDOW_TOOLTIPS_INVITE_SENDER)), text_styles.stats(user))
+            return
 
     def __buildActionsSection(self, inviteStatus):
         acceptButtonEnabled = False

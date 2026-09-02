@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import enum, constants
 from constants import ARENA_BONUS_TYPE, ARENA_GUI_TYPE
 from constants_utils import ConstInjector

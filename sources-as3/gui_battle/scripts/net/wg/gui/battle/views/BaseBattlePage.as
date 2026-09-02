@@ -74,6 +74,10 @@ package net.wg.gui.battle.views
       
       public var sixthSense:SixthSense = null;
       
+      public var sightPointerUnderScanningIndicator:SixthSense = null;
+      
+      public var sightPointerSpottedIndicator:SixthSense = null;
+      
       public var battleLoading:BaseBattleLoading = null;
       
       public var prebattleTimer:IPrebattleTimerBase = null;
@@ -149,12 +153,13 @@ package net.wg.gui.battle.views
       
       override public function updateStage(param1:Number, param2:Number) : void
       {
+         var _loc4_:int = 0;
          var _loc5_:int = 0;
          var _loc6_:Number = NaN;
          var _loc7_:int = 0;
          super.updateStage(param1,param2);
          var _loc3_:int = param1 >> 1;
-         var _loc4_:int = param2 >> 1;
+         _loc4_ = param2 >> 1;
          _originalWidth = param1;
          _originalHeight = param2;
          setSize(param1,param2);
@@ -207,6 +212,16 @@ package net.wg.gui.battle.views
          {
             this.unspotted.x = _loc3_;
             this.unspotted.y = param2 >> 2;
+         }
+         if(this.sightPointerUnderScanningIndicator)
+         {
+            this.sightPointerUnderScanningIndicator.x = _loc3_;
+            this.sightPointerUnderScanningIndicator.y = param2 >> 2;
+         }
+         if(this.sightPointerSpottedIndicator)
+         {
+            this.sightPointerSpottedIndicator.x = _loc3_;
+            this.sightPointerSpottedIndicator.y = param2 >> 2;
          }
          if(this.battleLoading)
          {
@@ -304,6 +319,14 @@ package net.wg.gui.battle.views
          {
             this.registerComponent(this.unspotted,BATTLE_VIEW_ALIASES.TARGET_DESIGNATOR_UNSPOTTED_MARKER);
          }
+         if(this.sightPointerUnderScanningIndicator)
+         {
+            this.registerComponent(this.sightPointerUnderScanningIndicator,BATTLE_VIEW_ALIASES.SIGHT_POINTER_UNDER_SCANNING_INDICATOR);
+         }
+         if(this.sightPointerSpottedIndicator)
+         {
+            this.registerComponent(this.sightPointerSpottedIndicator,BATTLE_VIEW_ALIASES.SIGHT_POINTER_SPOTTED_INDICATOR);
+         }
          if(this.gameMessagesPanel)
          {
             this.registerComponent(this.gameMessagesPanel,BATTLE_VIEW_ALIASES.GAME_MESSAGES_PANEL);
@@ -378,6 +401,8 @@ package net.wg.gui.battle.views
       {
          this.sixthSense = null;
          this.unspotted = null;
+         this.sightPointerUnderScanningIndicator = null;
+         this.sightPointerSpottedIndicator = null;
          this.battleLoading = null;
          this.prebattleTimer = null;
          this.damagePanel = null;

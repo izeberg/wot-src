@@ -1215,6 +1215,12 @@ msgstr "Additional Grousers Class 3"
 msgid "gun_balancing_1/name"
 msgstr "Gun Balancing (Type 1)"
 
+msgid "gun_balancing_2/name"
+msgstr "Gun Balancing (Type 2)"
+
+msgid "gun_barrel_modification_1/name"
+msgstr "Gun Barrel Modification (Type 1)"
+
 msgid "handExtinguishers/always"
 msgstr "?empty?"
 
@@ -1510,6 +1516,9 @@ msgstr "Improved Suspension (Type 1)"
 msgid "improved_suspension_2/name"
 msgstr "Improved Suspension (Type 2)"
 
+msgid "improved_turret_drive_1/name"
+msgstr "Improved Turret Drive (Type 1)"
+
 msgid "inspire/longDescr"
 msgstr ""
 "Improves the crew performance of the vehicle and of all allies within a "
@@ -1725,6 +1734,9 @@ msgstr "Mobility Improvement System T3"
 msgid "modernizedTurbochargerRotationMechanism3/short_special"
 msgstr "Mobility Improvement System T3"
 
+msgid "muzzle_flash_suppressor_1/name"
+msgstr "Muzzle Flash Suppressor (Type 1)"
+
 msgid "nitro/battleDescr"
 msgstr ""
 "Temporarily increases your vehicle's engine power by %(enginePowerFactor)s "
@@ -1802,6 +1814,14 @@ msgstr ""
 
 msgid "poi_artillery_aoe/name"
 msgstr "Artillery Strike"
+
+msgid "poi_illumination_flare/descr"
+msgstr ""
+"After a brief delay, an Illumination Flare lights up the selected area. Enemy vehicles caught within its radius remain Spotted and take increased damage.\n"
+"The Observation Post can be recaptured after a few minutes."
+
+msgid "poi_illumination_flare/name"
+msgstr "Illumination Flare"
 
 msgid "poi_radar/descr"
 msgstr ""
@@ -2476,37 +2496,93 @@ msgstr ""
 "Lightweight\n"
 "Hull"
 
-msgid "role_LT_universal_pair_4_1/name"
-msgstr "Anti-Reflective Optics Coating"
+msgid "role_LT_scout_pair_4_1/name"
+msgstr "Anti-Reflective Headlights Coating"
 
-msgid "role_LT_universal_pair_4_1/splitName"
+msgid "role_LT_scout_pair_4_1/splitName"
 msgstr ""
 "Anti-Reflective\n"
-"Optics Coating"
+"Headlights Coating"
 
-msgid "role_LT_universal_pair_4_2/name"
-msgstr "External Vision System"
+msgid "role_LT_scout_pair_4_2/name"
+msgstr "Periscope Electric Drive"
 
-msgid "role_LT_universal_pair_4_2/splitName"
+msgid "role_LT_scout_pair_4_2/splitName"
 msgstr ""
-"External Vision\n"
-"System"
+"Periscope\n"
+"Electric Drive"
 
-msgid "role_LT_universal_pair_5_1/name"
+msgid "role_LT_scout_pair_5_1/name"
 msgstr "Panoramic Triplex"
 
-msgid "role_LT_universal_pair_5_1/splitName"
-msgstr ""
-"Panoramic\n"
-"Triplex"
+msgid "role_LT_scout_pair_5_1/splitName"
+msgstr "Panoramic Triplex"
 
-msgid "role_LT_universal_pair_5_2/name"
+msgid "role_LT_scout_pair_5_2/name"
 msgstr "Narrow-Angle Observation Device"
 
-msgid "role_LT_universal_pair_5_2/splitName"
+msgid "role_LT_scout_pair_5_2/splitName"
 msgstr ""
 "Narrow-Angle\n"
 "Observation Device"
+
+msgid "role_LT_support_pair_4_1/name"
+msgstr "New Aiming Gears"
+
+msgid "role_LT_support_pair_4_1/splitName"
+msgstr "New Aiming Gears"
+
+msgid "role_LT_support_pair_4_2/name"
+msgstr "Periscope Electric Drive"
+
+msgid "role_LT_support_pair_4_2/splitName"
+msgstr ""
+"Periscope\n"
+"Electric Drive"
+
+msgid "role_LT_support_pair_5_1/name"
+msgstr "General Durability Increase"
+
+msgid "role_LT_support_pair_5_1/splitName"
+msgstr ""
+"General Durability\n"
+"Increase"
+
+msgid "role_LT_support_pair_5_2/name"
+msgstr "Anti-Reflective Headlights Coating"
+
+msgid "role_LT_support_pair_5_2/splitName"
+msgstr ""
+"Anti-Reflective\n"
+"Headlights Coating"
+
+msgid "role_LT_universal_pair_4_1/name"
+msgstr "Ejector Tuning"
+
+msgid "role_LT_universal_pair_4_1/splitName"
+msgstr "Ejector Tuning"
+
+msgid "role_LT_universal_pair_4_2/name"
+msgstr "Power Supply Rewiring"
+
+msgid "role_LT_universal_pair_4_2/splitName"
+msgstr ""
+"Power Supply\n"
+"Rewiring"
+
+msgid "role_LT_universal_pair_5_1/name"
+msgstr "Improved Projectile Rifling"
+
+msgid "role_LT_universal_pair_5_1/splitName"
+msgstr ""
+"Improved\n"
+"Projectile Rifling"
+
+msgid "role_LT_universal_pair_5_2/name"
+msgstr "Sensitive Optics"
+
+msgid "role_LT_universal_pair_5_2/splitName"
+msgstr "Sensitive Optics"
 
 msgid "role_LT_wheeled_pair_4_1/name"
 msgstr "Reinforced Primary Structure"
@@ -3221,6 +3297,9 @@ msgstr ""
 "Creates a zone where a series of %(thunderCount)s electric discharges strike with high frequency. Each discharge causes {whiteSpanish_Open}%(damage)s HP of damage{whiteSpanish_Close} and temporarily reduces every enemy vehicle's mobility within the ability's area of effect.\n"
 "\n"
 "*There is a %(delay)s s delay between the ability's activation and the first discharge. The negative effect can be removed by a Repair Kit."
+
+msgid "torsion_bars_replace_1/name"
+msgstr "Torsion Bars Replacement (Type 1)"
 
 msgid "trappoint/battleDescr"
 msgstr ""

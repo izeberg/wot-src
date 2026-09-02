@@ -24,6 +24,10 @@
 					<materialKind>0</materialKind>
 					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
 					<property>
+						g_enableEnvMultiplier
+						<Bool>true</Bool>
+					</property>
+					<property>
 						doubleSided
 						<Bool>true</Bool>
 					</property>
@@ -66,10 +70,7 @@
 					</property>
 					<property>
 						lightMultipliers
-						<Vector4>
-							3 0.000000 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>6.593407 0.000000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						softFactor

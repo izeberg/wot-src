@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing, BigWorld
 from account_helpers.settings_core import settings_constants
 from battle_royale.gui.impl.gen.view_models.views.lobby.views.vehicles_filter_model import VehiclesFilterModel

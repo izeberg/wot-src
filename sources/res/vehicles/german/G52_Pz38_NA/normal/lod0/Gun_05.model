@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<tank>true</tank>
-	<parent>vehicles/german/G52_Pz38_NA/normal/lod1/Gun_05</parent>
-	<extent>32</extent>
 	<materialNames/>
 	<visibilityBox>
-		<min>
-			-0.0955755 -0.17749 -0.0227056
-			<!--BW_String-->
-		</min>
-		<max>
-			0.0998134 0.152504 2.23787
-			<!--BW_String-->
-		</max>
+		<min>-0.095576 -0.171319 -0.022707</min>
+		<max>0.099813 0.158675 1.640249</max>
 	</visibilityBox>
+	<parent>vehicles/german/G52_Pz38_NA/normal/lod1/Gun_05</parent>
+	<extent>32.000000</extent>
 	<nodefullVisual>vehicles/german/G52_Pz38_NA/normal/lod0/Gun_05</nodefullVisual>
 </root>

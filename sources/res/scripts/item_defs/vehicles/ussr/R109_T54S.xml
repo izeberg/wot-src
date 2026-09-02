@@ -8,19 +8,19 @@
 		<loader>radioman</loader>
 	</crew>
 	<supplySlots>3 1 1 6 6 6 7 8 8 8</supplySlots>
-	<postProgressionTree>role_LT_universal</postProgressionTree>
+	<postProgressionTree>role_LT_scout</postProgressionTree>
 	<customRoleSlotOptions>2 4</customRoleSlotOptions>
 	<speedLimits>
-		<forward>69</forward>
-		<backward>23</backward>
+		<forward>75</forward>
+		<backward>27</backward>
 	</speedLimits>
 	<invisibility>
 		<moving>
-			0.286
+			0.302
 			<!--BW_String-->
 		</moving>
 		<still>
-			0.286
+			0.302
 			<!--BW_String-->
 		</still>
 		<camouflageBonus>
@@ -28,7 +28,7 @@
 			<!--BW_String-->
 		</camouflageBonus>
 		<firePenalty>
-			0.429
+			0.453
 			<!--BW_String-->
 		</firePenalty>
 	</invisibility>
@@ -2009,7 +2009,7 @@
 			</terrainResistance>
 			<brakeForce>31000</brakeForce>
 			<rotationIsAroundCenter>false</rotationIsAroundCenter>
-			<rotationSpeed>48</rotationSpeed>
+			<rotationSpeed>46</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.1
@@ -3815,7 +3815,7 @@
 			</terrainResistance>
 			<brakeForce>31000</brakeForce>
 			<rotationIsAroundCenter>false</rotationIsAroundCenter>
-			<rotationSpeed>50</rotationSpeed>
+			<rotationSpeed>48</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.08
@@ -5645,7 +5645,7 @@
 					<!--BW_String-->
 				</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>390</circularVisionRadius>
+			<circularVisionRadius>400</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>110</maxHealth>
 				<maxRegenHealth>55</maxRegenHealth>
@@ -5845,6 +5845,7 @@
 							<camouflage>GUN</camouflage>
 						</customizableVehicleAreas>
 					</customization>
+					<edgeByVisualModel>false</edgeByVisualModel>
 					<camouflage>
 						<tiling>
 							0.4 0.4 0.000000 0.000000
@@ -5913,7 +5914,7 @@
 						</maxPitch>
 					</pitchLimits>
 					<shotDispersionRadius>
-						0.42
+						0.41
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<aimingTime>
@@ -6047,6 +6048,7 @@
 							<camouflage>GUN</camouflage>
 						</customizableVehicleAreas>
 					</customization>
+					<edgeByVisualModel>false</edgeByVisualModel>
 					<camouflage>
 						<tiling>
 							0.4 0.4 0.000000 0.000000
@@ -7176,16 +7178,17 @@
 		<detailed>
 			<engines>
 				<V_54>
-					<smplEnginePower>850</smplEnginePower>
-					<smplFwMaxSpeed>69</smplFwMaxSpeed>
+					<smplEnginePower>1200</smplEnginePower>
+					<smplFwMaxSpeed>75</smplFwMaxSpeed>
 				</V_54>
 				<V_14UM>
-					<smplEnginePower>1000</smplEnginePower>
-					<smplFwMaxSpeed>69</smplFwMaxSpeed>
+					<smplEnginePower>1300</smplEnginePower>
+					<smplFwMaxSpeed>75</smplFwMaxSpeed>
 				</V_14UM>
 			</engines>
 			<chassis>
 				<Chassis_R109_T54S>
+					<axleCount>5</axleCount>
 					<grounds>
 						<soft>
 							<rollingFriction>
@@ -7208,6 +7211,7 @@
 					</grounds>
 				</Chassis_R109_T54S>
 				<Chassis_R109_T54S_2>
+					<axleCount>5</axleCount>
 					<grounds>
 						<soft>
 							<rollingFriction>

@@ -1,62 +1,50 @@
-import itertools
+from __future__ import absolute_import
+from future.utils import listvalues
+import itertools, typing
 from collections import OrderedDict, namedtuple
-import typing, SoundGroups
-from account_helpers.AccountSettings import AccountSettings, PERSONAL_MISSION_3
+import SoundGroups
+from account_helpers.AccountSettings import PERSONAL_MISSION_3, PERSONAL_MISSION_4, AccountSettings
+from account_helpers.settings_core.settings_constants import PersonalMission4, PersonalMission3
 from adisp import adisp_process
 from gui import GUI_SETTINGS
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
+from gui.Scaleform.daapi.view.lobby.missions.missions_helper import isBranchesStarted, getSuitableVehicles
 from gui.game_control.links import URLMacros
 from gui.impl.gen.view_models.views.lobby.personal_missions_30.additional_mission_model import AdditionalMissionType
 from gui.impl.gen.view_models.views.lobby.personal_missions_30.common.enums import OperationState
 from gui.impl.gen.view_models.views.lobby.personal_missions_30.main_view_reward_model import RewardsType
+from gui.impl.gen.view_models.views.lobby.personal_missions_30.new_operation_banner import BannerState
 from gui.impl.gen.view_models.views.lobby.personal_missions_30.operation_status_model import OperationStatus
-from gui.impl.lobby.personal_missions_30.personal_mission_constants import MISSIONS_ROLES_TO_CATEGORIES, STAGES_CONFIG, AssemblingType, MAX_NEWBIE_DAILY_QUESTS_PM_POINTS, MAX_DAILY_QUESTS_PM_POINTS, MAX_DETAIL_ID
-from gui.server_events.awards_formatters import PM_POINTS_TOKEN
+from gui.impl.lobby.personal_missions_30.personal_mission_constants import MAX_DAILY_QUESTS_PM_POINTS, MAX_DETAIL_ID, MAX_NEWBIE_DAILY_QUESTS_PM_POINTS, MISSIONS_ROLES_TO_CATEGORIES, STAGES_CONFIG, AssemblingType
 from gui.server_events.bonuses import PersonalMissionsPointsTokensBonus
 from gui.server_events.event_items import NEWBIES_QUESTS_PASS_TOKEN
-from gui.server_events.finders import BRANCH_TO_OPERATION_IDS
+from gui.server_events.finders import getBranchByOperationId, PM_POINTS_TOKEN
 from gui.server_events.personal_progress.formatters import PMCardConditionsFormatter
 from gui.shared import event_dispatcher as shared_events
 from gui.shared.event_dispatcher import showBrowserOverlayView, showPM30OperationAssemblingVideoWindow
-from gui.sounds.filters import StatesGroup, States
+from gui.sounds.filters import States, StatesGroup
 from helpers import dependency
 from personal_missions import PM_BRANCH
-from shared_utils import findFirst
+from shared_utils import findFirst, first
 from skeletons.account_helpers.settings_core import ISettingsCore
+from skeletons.gui.game_control import IHangarGuiController
 from skeletons.gui.server_events import IEventsCache
 from skeletons.gui.shared import IItemsCache
 if typing.TYPE_CHECKING:
-    from typing import List, Tuple
+    from typing import Any, Callable, Dict, List, Tuple, Optional
     from gui.impl.lobby.personal_missions_30.personal_mission_constants import StageInfo
     from gui.server_events.event_items import PMOperation
 ConditionsConfig = namedtuple('ConditionsConfig', 'maxProgressValue, allQuestsRequired, questsDetails')
 
-def isIntroShown(intro):
-    serverSettings = dependency.instance(ISettingsCore).serverSettings
-    return serverSettings.getPersonalMission3Data().get(intro, False)
+def isIntroShown(intro, branchID):
+    return getPersonalMissionData(branchID).get(intro, False)
 
 
-def markIntroShown(introKey):
-    serverSettings = dependency.instance(ISettingsCore).serverSettings
-    defaults = AccountSettings.getSettingsDefault(PERSONAL_MISSION_3)
-    settings = serverSettings.getPersonalMission3Data(defaults)
+def markIntroShown(introKey, branchID):
+    settings = getPersonalMissionData(branchID, withDefaults=True)
     if not settings.get(introKey):
         settings[introKey] = True
-        serverSettings.setPersonalMission3Data(settings)
-
-
-def isBannerAnimationShown(animationKey):
-    serverSettings = dependency.instance(ISettingsCore).serverSettings
-    return serverSettings.getPersonalMission3Data().get(animationKey, False)
-
-
-@dependency.replace_none_kwargs(settingsCore=ISettingsCore)
-def markBannerAnimationShown(animationKey, reset=False, settingsCore=None):
-    serverSettings = settingsCore.serverSettings
-    defaults = AccountSettings.getSettingsDefault(PERSONAL_MISSION_3)
-    settings = serverSettings.getPersonalMission3Data(defaults)
-    settings[animationKey] = not reset
-    serverSettings.setPersonalMission3Data(settings)
+        setPersonalMissionData(branchID, settings)
 
 
 def isVehDetailInstalled(lastInstalledDetail, detail):
@@ -104,12 +92,17 @@ def getBranchSortedPmOperations(branchID, eventsCache=None):
 
 
 @dependency.replace_none_kwargs(eventsCache=IEventsCache)
-def getSortedPm3Operations(eventsCache=None):
-    return OrderedDict(sorted(eventsCache.getPersonalMissions().getAllOperations(PM_BRANCH.V2_BRANCHES).items()))
+def getBranchesSortedPmOperations(branches, eventsCache=None):
+    return OrderedDict(sorted(eventsCache.getPersonalMissions().getAllOperations(branches).items()))
 
 
-def getOperationStatus(operation, allOperations):
-    unclaimedOperation = firstUnclaimedOperation(allOperations.values())
+@dependency.replace_none_kwargs(eventsCache=IEventsCache)
+def getOperationStatus(operation, branchOperations=None, eventsCache=None):
+    personalMissions = eventsCache.getPersonalMissions()
+    if not branchOperations:
+        branchOperations = getBranchSortedPmOperations(operation.getBranch())
+    unclaimedOperation = firstUnclaimedOperation(listvalues(branchOperations))
+    lastActiveOperationID = personalMissions.getLastActiveOperationID()
     state = OperationState.UNAVAILABLE
     if operation.isDisabled():
         state = OperationState.LOCKED
@@ -117,79 +110,92 @@ def getOperationStatus(operation, allOperations):
         state = OperationState.COMPLETED_WITH_HONORS
     elif operation.isAwardAchieved():
         state = OperationState.COMPLETED
-    elif operation.isInProgress() or wasOperationActivatedBefore(operation, unclaimedOperation):
+    elif operation.isWithAwardListBranch() and operation.isInProgress() or personalMissions.isBranchWithAwardListActive() and lastActiveOperationID == operation.getID() or operation.isWithoutAwardListBranch() and (operation.isActive() or operation.isFullCompleted(isFinalRewardReceived=False)):
         state = OperationState.ACTIVE
     elif not operation.isDisabled() and isOperationAvailableByVehicles(operation) and operation.isUnlocked() and (unclaimedOperation is None or unclaimedOperation.getID() == operation.getID()):
         state = OperationState.AVAILABLE
     return state
 
 
-@dependency.replace_none_kwargs(eventsCache=IEventsCache)
-def getQuestsByOperationsChains(eventsCache=None):
-    operations = eventsCache.getPersonalMissions().getOperationsForBranch(PM_BRANCH.PERSONAL_MISSION_3)
+def getQuestsByOperationsChains(branchNames):
+    operations = getBranchesSortedPmOperations(branchNames)
     allMissions = OrderedDict()
-    for operation in sorted(operations.values(), key=lambda o: o.getID()):
-        allMissions[operation.getID()] = OrderedDict()
+    for operationID, operation in operations.items():
+        allMissions[operationID] = OrderedDict()
         for missionsType in operation.getIterationChain():
             missionsForChain = sorted(operation.getChainByClassifierAttr(missionsType)[1].values(), key=lambda q: q.getID())
-            allMissions[operation.getID()][MISSIONS_ROLES_TO_CATEGORIES[missionsType].value] = OrderedDict([ (missionData.getID(), missionData) for missionData in missionsForChain ])
+            allMissions[operationID][MISSIONS_ROLES_TO_CATEGORIES[missionsType].value] = OrderedDict([ (missionData.getID(), missionData) for missionData in missionsForChain ])
 
     return allMissions
 
 
-@dependency.replace_none_kwargs(eventsCache=IEventsCache, settingsCore=ISettingsCore)
-def getDetailedOperationStatus(operation, eventsCache=None, settingsCore=None):
-    operations = OrderedDict(sorted(eventsCache.getPersonalMissions().getAllOperations(PM_BRANCH.V2_BRANCHES).items())).values()
-    notCurrentOperations = [ pm3Operation for pm3Operation in operations if pm3Operation.getID() != operation.getID() ]
+@dependency.replace_none_kwargs(eventsCache=IEventsCache)
+def getDetailedOperationStatus(operation, sortedOps=None, eventsCache=None):
+    if not sortedOps:
+        sortedOps = getBranchSortedPmOperations(operation.getBranch())
+    isAdditionalOperation = operation.getBranch() == PM_BRANCH.PERSONAL_MISSION_4
+    operations = listvalues(sortedOps)
+    notCurrentOperations = [ pmOperation for pmOperation in operations if pmOperation.getID() != operation.getID() ]
     isAnotherOperationInProgress = any(operation.isInProgress() for operation in notCurrentOperations)
-    nextNotStartedOperation = getNextNotStartedOperation(operation, notCurrentOperations)
+    nextNotStartedOperation = getNextNotStartedOperation(operation, isAdditionalOperation, notCurrentOperations)
     unclaimedOperation = firstUnclaimedOperation(operations)
     state = OperationStatus.AVAILABLE
-    nextOperationID = operation.getID()
+    nextOperation = operation
     operationIsFullCompleted = operation.isFullCompleted()
     operationIsCompleted = operation.isCompleted()
     operationIsActive = operation.isActive()
     operationWasStarted = wasOperationActivatedBefore(operation, unclaimedOperation)
     operationIsPaused = operation.isPaused()
     operationIsInProgress = operation.isInProgress()
-    isAnotherOperationActive = any(operation.isActive() for operation in notCurrentOperations)
+    anotherActiveOperation = first(operation for operation in notCurrentOperations if operation.isActive())
+    isCurrentOpAndAnotherEqual = anotherActiveOperation and anotherActiveOperation.getBranch() == operation.getBranch()
+    isAllOpQuestsCompleted = isAllOperationQuestsCompleted(operation)
     selectedQuests = eventsCache.getPersonalMissions().getSelectedQuestsForBranch(operation.getBranch()).values()
     if all(operation.isFullCompleted() for operation in operations):
         state = OperationStatus.CAMPAIGN_FINISHED
-    elif unclaimedOperation is not None and unclaimedOperation.getID() < operation.getID():
+    elif not isAdditionalOperation and unclaimedOperation is not None and unclaimedOperation.getID() < operation.getID():
         state = OperationStatus.PRECEDING_OPERATION_NOT_COMPLETED
-        nextOperationID = unclaimedOperation.getID()
+        nextOperation = unclaimedOperation
     elif operationIsFullCompleted:
         nextNotCompletedWithHonor = findFirst(lambda o: o.isCompleted and not o.isFullCompleted(), operations)
         if nextNotStartedOperation:
             state = OperationStatus.NOT_ALL_COMPLETED
-            nextOperationID = nextNotStartedOperation.getID()
+            nextOperation = nextNotStartedOperation
         elif isAnotherOperationInProgress:
             state = OperationStatus.NOT_ALL_COMPLETED
             inProgressOperation = findFirst(lambda o: o.isInProgress(), operations)
-            nextOperationID = inProgressOperation.getID()
-        elif nextNotCompletedWithHonor and all([ o.isCompleted() for o in operations ]):
+            nextOperation = inProgressOperation
+        elif nextNotCompletedWithHonor and all(o.isCompleted() for o in operations):
             state = OperationStatus.NOT_ALL_COMPLETED_WITH_HONOR
-            nextOperationID = nextNotCompletedWithHonor.getID()
+            nextOperation = nextNotCompletedWithHonor
     elif not isOperationAvailableByVehicles(operation):
         state = OperationStatus.REQUIRES_VEHICLE
     elif eventsCache.getLockedPersonalMissions() and (operationIsPaused or not operationIsActive):
         state = OperationStatus.VEHICLE_IS_IN_BATTLE
     elif operationIsCompleted:
-        if operationIsPaused and operationIsActive:
-            state = OperationStatus.PAUSED
-        elif not operationIsActive:
+        if operationIsPaused or not operationIsActive:
             state = OperationStatus.COMPLETED
-        elif nextNotStartedOperation and settingsCore.serverSettings.getPM3InstalledVehDetails() == MAX_DETAIL_ID:
+        elif nextNotStartedOperation and getPMInstalledVehDetails(operation.getBranch()) == MAX_DETAIL_ID:
             state = OperationStatus.NEXT_OPERATION_AVAILABLE
-            nextOperationID = nextNotStartedOperation.getID()
+            nextOperation = nextNotStartedOperation
         elif operationIsInProgress:
             state = OperationStatus.ACTIVE
-    elif operationIsPaused or operationWasStarted and (isAnotherOperationActive or not selectedQuests and not isAllOperationQuestsCompleted(operation)):
+    elif operation.isFullCompleted(isFinalRewardReceived=False):
+        state = OperationStatus.ACTIVE
+    elif operationIsPaused or operationWasStarted and (isCurrentOpAndAnotherEqual or not selectedQuests and not isAllOpQuestsCompleted):
         state = OperationStatus.PAUSED
     elif operationIsInProgress:
         state = OperationStatus.ACTIVE
-    return (state, nextOperationID)
+    return (state, nextOperation)
+
+
+def getOperationBannerState(operation):
+    state = BannerState.DEFAULT
+    if operation.isFullCompleted():
+        state = BannerState.COMPLETED_WITH_HONOR
+    elif operation.isCompleted():
+        state = BannerState.COMPLETED
+    return state
 
 
 def getMainRewardInfo(operation, allOperations, rewardType):
@@ -199,7 +205,7 @@ def getMainRewardInfo(operation, allOperations, rewardType):
         tasksNumber = 1
         completedTasks = int(operation.isCompleted())
     elif rewardType == RewardsType.CAMPAIGN:
-        completedTasks = len([ operation for operation in allOperations.values() if operation.isFullCompleted() ])
+        completedTasks = len([ op for op in allOperations.values() if op.isFullCompleted() ])
         tasksNumber = len(allOperations)
     elif rewardType == RewardsType.OPERATION:
         completedTasks = len(operation.getCompletedQuests())
@@ -208,11 +214,11 @@ def getMainRewardInfo(operation, allOperations, rewardType):
      completedTasks, tasksNumber)
 
 
-def getNextNotStartedOperation(currentOperation, operations):
+def getNextNotStartedOperation(currentOperation, isAdditionalOperation, operations):
     notStartedOperation = None
     unclaimedOperation = firstUnclaimedOperation(operations)
     for operation in operations:
-        if not operation.isStarted() and operation.getID() > currentOperation.getID() and unclaimedOperation is not None and unclaimedOperation.getID() == operation.getID():
+        if not operation.isStarted() and (isAdditionalOperation or operation.getID() > currentOperation.getID()) and unclaimedOperation is not None and unclaimedOperation.getID() == operation.getID():
             notStartedOperation = operation
             break
 
@@ -232,7 +238,7 @@ def setForceLeavePM3State():
 
 @dependency.replace_none_kwargs(itemsCache=IItemsCache)
 def showRewardVehicleInHangar(operation, itemsCache=None):
-    vehicleBonus = operation.getPM3VehicleBonus()
+    vehicleBonus = operation.getPMAwardListVehicleBonus()
     if vehicleBonus:
         itemCD = vehicleBonus.compactDescr
         vehicle = itemsCache.items.getItemByCD(itemCD)
@@ -241,7 +247,7 @@ def showRewardVehicleInHangar(operation, itemsCache=None):
 
 
 @dependency.replace_none_kwargs(eventsCache=IEventsCache)
-def isPMCampaignsStarted(branches=PM_BRANCH.V1_BRANCHES, eventsCache=None):
+def isPMCampaignsStarted(branches, eventsCache=None):
     return any(operation for operation in eventsCache.getPersonalMissions().getAllOperations(branches=branches).values() if operation.isStarted())
 
 
@@ -255,30 +261,27 @@ def setVideoOverlayOff():
 
 def isOperationAvailableByVehicles--- This code section failed: ---
 
- L. 320         0  LOAD_FAST             0  'operation'
-                3  LOAD_ATTR             0  'getBranch'
+ L. 334         0  LOAD_FAST             0  'operation'
+                3  LOAD_ATTR             0  'isWithoutAwardListBranch'
                 6  CALL_FUNCTION_0       0  None
-                9  LOAD_GLOBAL           1  'PM_BRANCH'
-               12  LOAD_ATTR             2  'PERSONAL_MISSION_3'
-               15  COMPARE_OP            2  ==
-               18  POP_JUMP_IF_FALSE    49  'to 49'
-               21  LOAD_GLOBAL           3  'isPMCampaignsStarted'
-               24  LOAD_CONST               'branches'
-               27  LOAD_GLOBAL           1  'PM_BRANCH'
-               30  LOAD_ATTR             4  'ALL'
-               33  CALL_FUNCTION_256   256  None
-               36  JUMP_IF_TRUE_OR_POP    58  'to 58'
-               39  LOAD_FAST             0  'operation'
-               42  LOAD_ATTR             5  'hasRequiredVehicles'
-               45  CALL_FUNCTION_0       0  None
-               48  RETURN_END_IF    
-             49_0  COME_FROM            36  '36'
-             49_1  COME_FROM            18  '18'
+                9  POP_JUMP_IF_FALSE    40  'to 40'
+               12  LOAD_GLOBAL           1  'isPMCampaignsStarted'
+               15  LOAD_CONST               'branches'
+               18  LOAD_GLOBAL           2  'PM_BRANCH'
+               21  LOAD_ATTR             3  'ALL_NAMES'
+               24  CALL_FUNCTION_256   256  None
+               27  JUMP_IF_TRUE_OR_POP    49  'to 49'
+               30  LOAD_FAST             0  'operation'
+               33  LOAD_ATTR             4  'hasRequiredVehicles'
+               36  CALL_FUNCTION_0       0  None
+               39  RETURN_END_IF    
+             40_0  COME_FROM            27  '27'
+             40_1  COME_FROM             9  '9'
 
- L. 321        49  LOAD_FAST             0  'operation'
-               52  LOAD_ATTR             5  'hasRequiredVehicles'
-               55  CALL_FUNCTION_0       0  None
-               58  RETURN_VALUE     
+ L. 335        40  LOAD_FAST             0  'operation'
+               43  LOAD_ATTR             4  'hasRequiredVehicles'
+               46  CALL_FUNCTION_0       0  None
+               49  RETURN_VALUE     
                -1  RETURN_LAST      
 
 Parse error at or near `None' instruction at offset -1
@@ -298,23 +301,82 @@ def showStageAssemblingVideo(operationID, stageNumber):
         showPM30OperationAssemblingVideoWindow(operationID, stageNumber)
 
 
-def getPersonalMissions3URL():
+def getPersonalMissionsURL():
     return GUI_SETTINGS.personalMissions3.get('infoPage', {}).get('url')
 
 
 @adisp_process
 def openInfoPageScreen():
     urlParser = URLMacros()
-    url = yield urlParser.parse(getPersonalMissions3URL())
+    url = yield urlParser.parse(getPersonalMissionsURL())
     showBrowserOverlayView(url, VIEW_ALIAS.BROWSER_OVERLAY)
 
 
-@dependency.replace_none_kwargs(settingsCore=ISettingsCore)
-def wasOperationActivatedBefore(operation, unclaimedOperation=None, settingsCore=None):
+def wasOperationActivatedBefore(operation, unclaimedOperation=None):
+    branchID = operation.getBranch()
     if unclaimedOperation is None:
-        unclaimedOperation = firstUnclaimedOperation(getSortedPm3Operations().values())
-    wasPM3OperationActivated = operation.getID() in BRANCH_TO_OPERATION_IDS[PM_BRANCH.PERSONAL_MISSION_3][1:] and (unclaimedOperation is None or unclaimedOperation.getID() == operation.getID()) and settingsCore.serverSettings.getPM3InstalledVehDetails() == 0
-    return operation.isStarted() or wasPM3OperationActivated
+        unclaimedOperation = firstUnclaimedOperation(listvalues(getBranchSortedPmOperations(branchID)))
+    operationIDs = PM_BRANCH.BRANCH_TO_OPERATION_IDS[PM_BRANCH.PERSONAL_MISSION_3][1:]
+    wasBranchOperationActivated = operation.getID() in operationIDs and (unclaimedOperation is None or unclaimedOperation.getID() == operation.getID()) and getPMInstalledVehDetails(branchID) == 0
+    return operation.isStarted() or wasBranchOperationActivated
+
+
+@dependency.replace_none_kwargs(settingsCore=ISettingsCore)
+def getPMInstalledVehDetails(branchID, settingsCore=None):
+    branchIDToFunction = {PM_BRANCH.PERSONAL_MISSION_3: settingsCore.serverSettings.getPM3InstalledVehDetails, 
+       PM_BRANCH.PERSONAL_MISSION_4: settingsCore.serverSettings.getPM4InstalledVehDetails}
+    getInstalledVehDetails = branchIDToFunction.get(branchID)
+    if getInstalledVehDetails is not None:
+        return getInstalledVehDetails()
+    else:
+        return 0
+
+
+@dependency.replace_none_kwargs(settingsCore=ISettingsCore)
+def setPMInstalledVehDetails(branchID, vehDetailNumber=0, settingsCore=None):
+    branchIDToFunction = {PM_BRANCH.PERSONAL_MISSION_3: settingsCore.serverSettings.setPM3VehDetailInstalled, 
+       PM_BRANCH.PERSONAL_MISSION_4: settingsCore.serverSettings.setPM4VehDetailInstalled}
+    setVehDetailInstalled = branchIDToFunction.get(branchID)
+    if setVehDetailInstalled is not None:
+        setVehDetailInstalled(vehDetailNumber)
+    return
+
+
+@dependency.replace_none_kwargs(settingsCore=ISettingsCore)
+def getPersonalMissionData(branchID, withDefaults=False, settingsCore=None):
+    branchIDToFunction = {PM_BRANCH.PERSONAL_MISSION_3: settingsCore.serverSettings.getPersonalMission3Data, 
+       PM_BRANCH.PERSONAL_MISSION_4: settingsCore.serverSettings.getPersonalMission4Data}
+    defaults = None
+    if withDefaults:
+        branchIDToDefaults = {PM_BRANCH.PERSONAL_MISSION_3: AccountSettings.getSettingsDefault(PERSONAL_MISSION_3), PM_BRANCH.PERSONAL_MISSION_4: AccountSettings.getSettingsDefault(PERSONAL_MISSION_4)}
+        defaults = branchIDToDefaults.get(branchID)
+    getPMData = branchIDToFunction.get(branchID)
+    if getPMData is not None:
+        return getPMData(defaults)
+    else:
+        return {}
+
+
+@dependency.replace_none_kwargs(settingsCore=ISettingsCore)
+def setPersonalMissionData(branchID, data, settingsCore=None):
+    branchIDToFunction = {PM_BRANCH.PERSONAL_MISSION_3: settingsCore.serverSettings.setPersonalMission3Data, 
+       PM_BRANCH.PERSONAL_MISSION_4: settingsCore.serverSettings.setPersonalMission4Data}
+    setPMData = branchIDToFunction.get(branchID)
+    if setPMData is not None:
+        setPMData(data)
+    return
+
+
+def checkPM4FirstEntrance(operation):
+    branchID = operation.getBranch()
+    if operation.getID() in PM_BRANCH.BRANCH_TO_OPERATION_IDS[PM_BRANCH.PERSONAL_MISSION_4] and not getPersonalMissionData(branchID).get(PersonalMission4.OPERATION_SHOWN, False):
+        setPersonalMissionData(branchID, {PersonalMission4.OPERATION_SHOWN: True})
+
+
+def getCheckedPMPointsKey(branchID):
+    branchIDToConst = {PM_BRANCH.PERSONAL_MISSION_3: PersonalMission3.CHECKED_PM3_POINTS, 
+       PM_BRANCH.PERSONAL_MISSION_4: PersonalMission4.CHECKED_PM4_POINTS}
+    return branchIDToConst.get(branchID)
 
 
 @dependency.replace_none_kwargs(eventsCache=IEventsCache)
@@ -336,4 +398,51 @@ def getRegularQuestsPMPoints(missionType, eventsCache=None):
                     earnedPoints += points
 
     return (
-     earnedPoints, totalPoints)# Decompile failed :(
+     earnedPoints, totalPoints)
+
+
+@dependency.replace_none_kwargs(eventsCache=IEventsCache, hangarGuiCtrl=IHangarGuiController)
+def isPM4BannerAvailable(eventsCache=None, hangarGuiCtrl=None):
+    personalMissions = eventsCache.getPersonalMissions()
+    helper = hangarGuiCtrl.currentGuiProvider.getMissionsHelper()
+    if helper is None or not helper.isPM3MissionsSupported():
+        return False
+    pm4Operations = personalMissions.getOperationsForBranch(PM_BRANCH.PERSONAL_MISSION_4)
+    if all(operation.isFullCompleted() for operation in pm4Operations.values()):
+        return False
+    else:
+        isGroup12Started = isBranchesStarted(*(PM_BRANCH.MUTUAL_EXCLUSION_BRANCHES[PM_BRANCH.QUEST_GROUPS.GROUP_1] + PM_BRANCH.MUTUAL_EXCLUSION_BRANCHES[PM_BRANCH.QUEST_GROUPS.GROUP_2]))
+        if not isGroup12Started and not bool(getSuitableVehicles()):
+            return False
+        disabledPMOperations = personalMissions.getDisabledPMOperations(PM_BRANCH.MUTUAL_EXCLUSION_BRANCHES[PM_BRANCH.QUEST_GROUPS.GROUP_3])
+        if any(operationID for operationID in pm4Operations if operationID in disabledPMOperations):
+            return False
+        return True
+
+
+def isPM4BannerAnimationShown():
+    serverSettings = dependency.instance(ISettingsCore).serverSettings
+    return serverSettings.getPersonalMission4Data().get(PersonalMission4.PM_BANNER_ANIMATION_KEY, False)
+
+
+@dependency.replace_none_kwargs(settingsCore=ISettingsCore)
+def markPM4BannerAnimationShown(reset=False, settingsCore=None):
+    serverSettings = settingsCore.serverSettings
+    defaults = AccountSettings.getSettingsDefault(PERSONAL_MISSION_4)
+    settings = serverSettings.getPersonalMission4Data(defaults)
+    settings[PersonalMission4.PM_BANNER_ANIMATION_KEY] = not reset
+    serverSettings.setPersonalMission4Data(settings)
+
+
+def getCurrentOperationLastInstalledDetail(operation):
+    if operation.isCompleted():
+        return MAX_DETAIL_ID
+    if operation.isStarted():
+        return getPMInstalledVehDetails(operation.getBranch())
+    return 0
+
+
+@dependency.replace_none_kwargs(eventsCache=IEventsCache)
+def canOpenOperationPage(operationID, eventsCache=None):
+    branchName = PM_BRANCH.TYPE_TO_NAME[getBranchByOperationId(operationID)]
+    return operationID not in eventsCache.getPersonalMissions().getDisabledPMOperations((branchName,))# Decompile failed :(

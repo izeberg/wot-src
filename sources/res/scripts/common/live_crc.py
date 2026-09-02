@@ -308,7 +308,7 @@ def gen_livehash_fn(use={}):
             return lambda data: livehash_combine(*([ livehash(data[k]) if k in data else livehash_emptyVal for k in includeThisLevel ] + [ fn(data[k]) if k in data else livehash_emptyVal for k, fn in useNextLevel ])) if __is_iterable(data) else livehash(data)
         return --- This code section failed: ---
 
- L. 507         0  LOAD_GLOBAL           0  '__is_iterable'
+ L. 508         0  LOAD_GLOBAL           0  '__is_iterable'
                 3  LOAD_FAST             0  'data'
                 6  CALL_FUNCTION_1       1  None
                 9  POP_JUMP_IF_FALSE    69  'to 69'
@@ -342,11 +342,11 @@ def gen_livehash_fn(use={}):
                -1  LAMBDA_MARKER    
 
 Parse error at or near `None' instruction at offset -1
-    elif excludeThisLevel:
+    if excludeThisLevel:
         if useNextLevel:
             return --- This code section failed: ---
 
- L. 515         0  LOAD_GLOBAL           0  '__is_iterable'
+ L. 517         0  LOAD_GLOBAL           0  '__is_iterable'
                 3  LOAD_FAST             0  'data'
                 6  CALL_FUNCTION_1       1  None
                 9  POP_JUMP_IF_FALSE    87  'to 87'
@@ -386,11 +386,8 @@ Parse error at or near `None' instruction at offset -1
                -1  LAMBDA_MARKER    
 
 Parse error at or near `None' instruction at offset -1
-        else:
-            return lambda data: livehash__skip(data, excludeThisLevel)
-
-    else:
-        return livehash
+        return lambda data: livehash__skip(data, excludeThisLevel)
+    return livehash
 
 
 def gen_delSubkeys_fn(use={}):
@@ -417,21 +414,19 @@ def gen_delSubkeys_fn(use={}):
                 return data
 
             return func
-        else:
 
-            def func(data):
-                if isinstance(data, dict):
-                    data = copy(data)
-                    for k in includeThisLevel:
-                        data.pop(k, None)
-                        data.pop((k, '_r'), None)
-                        data.pop((k, '_d'), None)
+        def func(data):
+            if isinstance(data, dict):
+                data = copy(data)
+                for k in includeThisLevel:
+                    data.pop(k, None)
+                    data.pop((k, '_r'), None)
+                    data.pop((k, '_d'), None)
 
-                return data
+            return data
 
-            return func
-
-    elif excludeThisLevel:
+        return func
+    if excludeThisLevel:
         if useNextLevel:
 
             def func(data):
@@ -449,23 +444,20 @@ def gen_delSubkeys_fn(use={}):
                 return data
 
             return func
-        else:
 
-            def func(data):
-                if isinstance(data, dict):
-                    data = copy(data)
-                    for k in list(data):
-                        if k not in excludeThisLevel:
-                            data.pop(k, None)
-                            data.pop((k, '_r'), None)
-                            data.pop((k, '_d'), None)
+        def func(data):
+            if isinstance(data, dict):
+                data = copy(data)
+                for k in data.keys():
+                    if k not in excludeThisLevel:
+                        data.pop(k, None)
+                        data.pop((k, '_r'), None)
+                        data.pop((k, '_d'), None)
 
-                return data
+            return data
 
-            return func
-
-    else:
-        return lambda data: data
+        return func
+    return lambda data: data
 
 
 def gen_mergeCache_fn(overwrite=False):
@@ -490,25 +482,24 @@ def gen_mergeCache_fn(overwrite=False):
             return data
 
         return _mergeAll_overwrite
-    else:
 
-        def _mergeAll_nooverwrite(data, cache):
-            if isinstance(data, set) and isinstance(data, set):
-                data.update(cache)
-                return data
-            if not isinstance(data, dict) or not isinstance(cache, dict):
-                return data
-            for k, v in cache.items():
-                if k in data:
-                    d = data[k]
-                    if __is_iterable(v) and __is_iterable(d):
-                        _mergeAll_nooverwrite(d, v)
-                else:
-                    data[k] = v
-
+    def _mergeAll_nooverwrite(data, cache):
+        if isinstance(data, set) and isinstance(data, set):
+            data.update(cache)
             return data
+        if not isinstance(data, dict) or not isinstance(cache, dict):
+            return data
+        for k, v in cache.items():
+            if k in data:
+                d = data[k]
+                if __is_iterable(v) and __is_iterable(d):
+                    _mergeAll_nooverwrite(d, v)
+            else:
+                data[k] = v
 
-        return _mergeAll_nooverwrite
+        return data
+
+    return _mergeAll_nooverwrite
 
 
 def gen_extract_fn(use={}):
@@ -535,20 +526,18 @@ def gen_extract_fn(use={}):
                 return ret
 
             return func
-        else:
 
-            def func(data):
-                if not isinstance(data, dict):
-                    return data
-                ret = {}
-                for k in includeThisLevel:
-                    __addIfPresent(data, k, ret)
+        def func(data):
+            if not isinstance(data, dict):
+                return data
+            ret = {}
+            for k in includeThisLevel:
+                __addIfPresent(data, k, ret)
 
-                return ret
+            return ret
 
-            return func
-
-    elif excludeThisLevel:
+        return func
+    if excludeThisLevel:
         if useNextLevel:
 
             def func(data):
@@ -566,19 +555,16 @@ def gen_extract_fn(use={}):
                 return ret
 
             return func
-        else:
 
-            def func(data):
-                if not isinstance(data, dict):
-                    return data
-                ret = {}
-                for k, v in data.items():
-                    if k not in excludeThisLevel:
-                        ret[k] = v
+        def func(data):
+            if not isinstance(data, dict):
+                return data
+            ret = {}
+            for k, v in data.items():
+                if k not in excludeThisLevel:
+                    ret[k] = v
 
-                return ret
+            return ret
 
-            return func
-
-    else:
-        return lambda data: data# Decompile failed :(
+        return func
+    return lambda data: data# Decompile failed :(

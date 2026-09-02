@@ -172,6 +172,17 @@
 				</slots>
 			</block>
 			<block>
+				<class>GSMState</class>
+				<id>GSMState_1</id>
+				<params>
+					<param>
+						PREBATTLE
+						<name>GSM State</name>
+						<type>GameplayStateIDT</type>
+					</param>
+				</params>
+			</block>
+			<block>
 				<class>Delay</class>
 				<id>Delay_4</id>
 				<params>
@@ -379,6 +390,10 @@
 						<const>\6.500000\</const>
 					</slot>
 				</slots>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_28</id>
 			</block>
 			<block>
 				<class>StartScript</class>
@@ -591,10 +606,10 @@
 				<output>res</output>
 			</connection>
 			<connection>
-				<from>SetVariable_3</from>
+				<from>If_28</from>
 				<input>input</input>
 				<to>If_27</to>
-				<output>out</output>
+				<output>true</output>
 			</connection>
 			<connection>
 				<from>ArenaPeriod_2</from>
@@ -721,6 +736,24 @@
 				<input>a</input>
 				<to>CompareFloats_12</to>
 				<output>timeToEnd</output>
+			</connection>
+			<connection>
+				<from>SetVariable_3</from>
+				<input>input</input>
+				<to>If_28</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>GSMState_1</from>
+				<input>input</input>
+				<to>If_28</to>
+				<output>onEnterState</output>
+			</connection>
+			<connection>
+				<from>GSMState_1</from>
+				<input>value</input>
+				<to>If_28</to>
+				<output>isActive</output>
 			</connection>
 			<connection>
 				<from>StartScript_1</from>

@@ -7220,6 +7220,22 @@ msgstr ""
 msgid "moduleFits/wrong_slot/body"
 msgstr "The module is already in another slot."
 
+msgid "moduleInfo/params/criticalHitChance"
+msgstr "The chance of causing critical damage to enemy modules and/or crew."
+
+msgid "moduleInfo/params/normalizationAngle"
+msgstr ""
+"The amount by which the shell's impact angle is reduced when it hits enemy "
+"armor."
+
+msgid "moduleInfo/params/penetrationLoss"
+msgstr ""
+"The amount of penetration power the shell loses every 100 mm after hitting "
+"an enemy screen."
+
+msgid "moduleInfo/params/ricochetAngle"
+msgstr "The angle at which the shell automatically ricochets off enemy armor."
+
 msgid "multiselection/alert/body"
 msgstr "Select vehicles: you can only join the battle with a complete group."
 
@@ -11239,6 +11255,73 @@ msgstr "?empty?"
 msgid "notrecruitedtankman/tankmen_bp20_9/label"
 msgstr "Battle Pass: Far Cry"
 
+msgid "notrecruitedtankman/tankmen_bp21_1/desc"
+msgstr ""
+"Vadim Kuprin knew the barren salt flats of his current mission like the back"
+" of his equally weather-beaten hand. No stranger to volatile environments, "
+"he had earned his stripes specializing in chemical warfare defense long "
+"before he ever boarded a tank. Twenty years later, he found himself a mere "
+"few days' trek from the lab compound where he had begun his military service"
+" as a junior technician. Time and tribulation leave no man unscathed, but, "
+"as Vadim joked to his crew, no paperwork had been filed for his discharge—so"
+" until someone submitted it properly, he was here to stay."
+
+msgid "notrecruitedtankman/tankmen_bp21_1/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp21_1/label"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp21_2/desc"
+msgstr ""
+"The lush valleys of Bryn Powell's boyhood were a world away from the harsh "
+"climes that he came to know. His latest briefing was remarkably short on "
+"details, and the phrases \"unidentified chemical agent\" and \"risk of "
+"mortal danger: extreme\" would have many commanders praying for "
+"reassignment. But Bryn always regarded self-preservation as an admirable "
+"quality in other people. A daredevil by nature, he could have had a "
+"glittering career as a stuntman if he'd ever felt the urge. Put him behind "
+"the controls of a tank, and the difference was negligible."
+
+msgid "notrecruitedtankman/tankmen_bp21_2/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp21_2/label"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp21_3/desc"
+msgstr ""
+"Nagai Sora was an unflappable commander. A veteran of peacekeeping missions "
+"in unstable regions, he had learned how to hold his nerve as pressure closed"
+" in. Whether running on the edge of exhaustion after a long night's patrol, "
+"or parsing increasingly unsettling intelligence about the unknown substance "
+"his crew had been sent to uncover, his composure never faltered. He "
+"sustained morale with jokes that toed the line between levity and gallows "
+"humor, refusing to surrender the spark in his eye or the spring in his step."
+
+msgid "notrecruitedtankman/tankmen_bp21_3/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp21_3/label"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp21_4/desc"
+msgstr ""
+"Nothing got past Sandrine Ousset. A decorated sharpshooter before being "
+"recruited for a secretive armored reconnaissance mission, her eagle eye "
+"extended beyond the scope of her rifle. Show her a distorted fragment of "
+"enemy intelligence, and she could draw conclusions so consistently accurate "
+"that even her own crew initially mistook her uncanny observational skills "
+"for clairvoyance. Under her command, secrets rarely stayed buried for long. "
+"Fortunately for her team, she reserved her most relentless scrutiny for the "
+"source of the unknown reagent they had been sent to investigate."
+
+msgid "notrecruitedtankman/tankmen_bp21_4/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp21_4/label"
+msgstr "?empty?"
+
 msgid "notrecruitedtankman/tankmen_bp2_1/desc"
 msgstr ""
 "People are always asking if I know Jack Reed. Before I answer, I usually "
@@ -11908,6 +11991,24 @@ msgid "notrecruitedtankman/tankmen_pm3_3/howToGetInfo"
 msgstr "?empty?"
 
 msgid "notrecruitedtankman/tankmen_pm3_3/label"
+msgstr "Sector 3 campaign"
+
+msgid "notrecruitedtankman/tankmen_pm4_1/desc"
+msgstr ""
+"Raised in a family of Bernese watchmakers, Stefan inherited a craft that "
+"demanded silence, patience, and absolute control. But for him, those "
+"qualities would define a very different career. In 1940, British "
+"intelligence offered him a choice: neutral Switzerland on one side of the "
+"border, him on the other. In the Alpine passes, he grew from espionage "
+"device mechanic to marksman. After the war, he continued that work, "
+"eliminating those who had escaped justice under false names. Stefan always "
+"worked alone, without leaving a trace, and still does: no one in Sector 3 "
+"has ever seen his face."
+
+msgid "notrecruitedtankman/tankmen_pm4_1/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_pm4_1/label"
 msgstr "Sector 3 campaign"
 
 msgid "notrecruitedtankman/tankwoman/desc"
@@ -14311,6 +14412,17 @@ msgstr ""
 msgid "shell/basic/description/bold"
 msgstr "Default shell"
 
+msgid "shell/mechanics/bustleFeed/description"
+msgstr ""
+"The vehicle's External Ammunition Feed mode allows the use of shells with "
+"increased damage."
+
+msgid "shell/mechanics/bustleFeed/paramsHeader/basic"
+msgstr "Basic"
+
+msgid "shell/mechanics/bustleFeed/paramsHeader/specific"
+msgstr "Modified"
+
 msgid "shell/mechanics/lowChargeShot/description"
 msgstr ""
 "A special mechanic for the vehicle's gun allows for earlier firing with "
@@ -14330,6 +14442,23 @@ msgstr "Basic:"
 
 msgid "shell/mechanics/lowChargeShot/paramsHeader/specific"
 msgstr "Altered:"
+
+msgid "shell/mechanics/shellCalibration/description"
+msgstr "Adjustable Fuze Setter increases average damage or penetration."
+
+msgid "shell/mechanics/shellCalibration/paramsHeader"
+msgstr "Adjustable:"
+
+msgid "shell/mechanics/shellParamsSwitcher/description"
+msgstr ""
+"The vehicle's gun has special devices that allow some shell parameters to be"
+" modified before firing."
+
+msgid "shell/mechanics/shellParamsSwitcher/paramsHeader/basic"
+msgstr "Standard"
+
+msgid "shell/mechanics/shellParamsSwitcher/paramsHeader/specific"
+msgstr "Calibrated"
 
 msgid "showArtyHitOnMap/body"
 msgstr "Show/hide the area under enemy SPG fire on the minimap."
@@ -14549,6 +14678,16 @@ msgstr ""
 
 msgid "soundQualityOn/header"
 msgstr "LQ Sound"
+
+msgid "specialMechanics/shellCalibration/avgDamage"
+msgstr ""
+"{{@ style (color #E9E2BF)}}Average Damage{{/}} is increased after a "
+"penetrating hit on an enemy vehicle."
+
+msgid "specialMechanics/shellCalibration/avgPiercingPower"
+msgstr ""
+"{{@ style (color #E9E2BF)}}Average Penetration{{/}} is increased after a "
+"non-penetrating hit on an enemy vehicle."
 
 msgid "specializationWotPlus/content/header"
 msgstr "Crew members in Premium vehicles are trained 50% faster:"
@@ -14957,6 +15096,45 @@ msgstr ""
 "Time between firing the last shell in the magazine (or both guns) and "
 "loading the new magazine. / Number of guns or shells in the magazine."
 
+msgid "tank_params/desc/autoreloaderSurgeBoostedReloadTime"
+msgstr ""
+"The time that replaces remaining reload time when the mechanism is used."
+
+msgid "tank_params/desc/autoreloaderSurgeChargeTimeFast"
+msgstr "The time taken to replenish one charge if the clip is full."
+
+msgid "tank_params/desc/autoreloaderSurgeChargeTimeSlow"
+msgstr "The time taken to replenish one charge if the clip is not full."
+
+msgid "tank_params/desc/autoreloaderSurgeInitCharges"
+msgstr "The amount of charges available at the start of battle."
+
+msgid "tank_params/desc/autoreloaderSurgeMaxCharges"
+msgstr ""
+"The maximum number of charges for accelerating shell loading that can be "
+"held at one time."
+
+msgid "tank_params/desc/auxiliaryRocketLauncherAvgDamage"
+msgstr ""
+"Average damage caused by a rocket launcher shell after an armor-penetrating "
+"hit. The potential damage dispersion is +/- 25% of the average value."
+
+msgid "tank_params/desc/auxiliaryRocketLauncherDispersion"
+msgstr ""
+"Dispersion characterized by the maximum shell deviation from the aiming "
+"point at a distance of 100m."
+
+msgid "tank_params/desc/auxiliaryRocketLauncherPenetration"
+msgstr ""
+"Average armor thickness penetrated by a rocket shell. The dispersion is +/- "
+"25% of the average value."
+
+msgid "tank_params/desc/auxiliaryRocketLauncherReloadTime"
+msgstr "Time required to reload the rocket launcher"
+
+msgid "tank_params/desc/auxiliaryRocketLauncherVelocity"
+msgstr "Determines the unguided rocket's travel speed."
+
 msgid "tank_params/desc/avgDamage"
 msgstr ""
 "Average damage caused by a standard shell after an armor-penetrating hit. "
@@ -14989,6 +15167,31 @@ msgid "tank_params/desc/burstFireRate"
 msgstr ""
 "Loading time between shells in the container. / Number of containers in the "
 "magazine. / Number of shells in the container."
+
+msgid "tank_params/desc/bustleFeedDamagePerShot"
+msgstr ""
+"Average damage caused by a high-charge unitary round after an armor-"
+"penetrating hit. The potential damage dispersion is ±25% of the average "
+"value."
+
+msgid "tank_params/desc/bustleFeedMaxSpeed"
+msgstr ""
+"Reduction to nominal vehicle forward speed in External Ammunition Feed mode."
+" Reverse speed is not affected."
+
+msgid "tank_params/desc/bustleFeedRateOfFire"
+msgstr ""
+"Reduction in number of rounds per minute in External Ammunition Feed mode."
+
+msgid "tank_params/desc/bustleFeedSwitchingToEASMMode"
+msgstr ""
+"Minimum time required to prepare the gun for firing after activating "
+"External Ammunition Feed mode. During this time, you cannot switch modes."
+
+msgid "tank_params/desc/bustleFeedSwitchingToStandardMode"
+msgstr ""
+"Minimum time required to prepare the gun for firing after returning to "
+"Standard mode. During this time, you cannot switch modes."
 
 msgid "tank_params/desc/chargeTime"
 msgstr ""
@@ -15460,10 +15663,22 @@ msgid "tank_params/desc/secondaryTotalBurstSize"
 msgstr ""
 "Number of shells available for the auxiliary weapons during each activation."
 
+msgid "tank_params/desc/shellCalibrationAvgDamage"
+msgstr ""
+"The bonus to damage granted after a penetrating hit on an enemy vehicle."
+
+msgid "tank_params/desc/shellCalibrationAvgPenetration"
+msgstr ""
+"The bonus to penetration granted after a non-penetrating hit on an enemy "
+"vehicle."
+
 msgid "tank_params/desc/shellLoadingTime"
 msgstr ""
 "Time taken to load shells at the start of battle and switch between "
 "different shell types."
+
+msgid "tank_params/desc/shellParamsSwitchingTime"
+msgstr "Time taken to switch between Calibrated and Standard firing modes."
 
 msgid "tank_params/desc/shotDispersionAngle"
 msgstr ""
@@ -15480,6 +15695,44 @@ msgstr ""
 "Shows how much the shell can deviate from the aiming point in meters per 100"
 " meters to target. The standard value (the first one) is for a heated gun, "
 "the improved value (the second one) is for the cooled gun."
+
+msgid "tank_params/desc/sightPointerConsealmentFoliage"
+msgstr ""
+"Progressive reduction in concealment of enemy vehicles behind foliage in the"
+" IRST's scanning sector."
+
+msgid "tank_params/desc/sightPointerConsealmentMoving"
+msgstr ""
+"Progressive reduction in concealment of moving enemy vehicles in the IRST's "
+"scanning sector."
+
+msgid "tank_params/desc/sightPointerDeployTime"
+msgstr ""
+"Time required after the start of the battle before the IRST can be used for "
+"the first time."
+
+msgid "tank_params/desc/sightPointerDuration"
+msgstr "Duration of the IRST's scan."
+
+msgid "tank_params/desc/sightPointerReloadTime"
+msgstr "Time required before the IRST can be used again after activation."
+
+msgid "tank_params/desc/sightPointerRotationSpeed"
+msgstr "Reduction in turret traverse speed while the IRST is active."
+
+msgid "tank_params/desc/sightPointerSectorAngleEnd"
+msgstr "Width of the IRST's scanning sector at the end of its duration."
+
+msgid "tank_params/desc/sightPointerSectorAngleStart"
+msgstr "Width of the IRST's scanning sector at the start of its duration."
+
+msgid "tank_params/desc/sightPointerSelfSpottingTime"
+msgstr ""
+"Time your vehicle is spotted after you detect an unspotted enemy with the "
+"IRST."
+
+msgid "tank_params/desc/sightPointerViewRange"
+msgstr "Progressive increase in view range in the IRST's scanning sector."
 
 msgid "tank_params/desc/speedLimits"
 msgstr "Vehicle speed as it is defined in its technical characteristics."

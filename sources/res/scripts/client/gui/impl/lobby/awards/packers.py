@@ -1,17 +1,17 @@
 import logging, typing
 from adisp import adisp_async, adisp_process
-from constants import OFFER_TOKEN_PREFIX, RentType
+from constants import RentType, OFFER_TOKEN_PREFIX
 from gui.Scaleform.genConsts.TOOLTIPS_CONSTANTS import TOOLTIPS_CONSTANTS
 from gui.impl import backport
-from gui.impl.backport import TooltipData, createTooltipData
+from gui.impl.backport import createTooltipData, TooltipData
 from gui.impl.gen import R
-from gui.impl.gen.view_models.views.lobby.awards.reward_model import RentTypeEnum, RewardModel
+from gui.impl.gen.view_models.views.lobby.awards.reward_model import RewardModel, RentTypeEnum
 from gui.impl.lobby.awards import SupportedTokenTypes
 from gui.impl.lobby.awards.prefetch import TokenDataPrefetcher
 from gui.impl.lobby.awards.tooltip import VEH_FOR_CHOOSE_ID
 from gui.server_events.recruit_helper import getRecruitInfo
-from gui.shared.gui_items.Vehicle import getIconResourceName, getNationLessName
-from gui.shared.missions.packers.bonus import BACKPORT_TOOLTIP_CONTENT_ID, AsyncBonusUIPacker, BaseBonusUIPacker, BonusUIPacker, Customization3Dand2DbonusUIPacker, CustomizationBonusUIPacker, VehiclesBonusUIPacker, getDefaultBonusPackersMap
+from gui.shared.gui_items.Vehicle import getNationLessName, getIconResourceName
+from gui.shared.missions.packers.bonus import VehiclesBonusUIPacker, getDefaultBonusPackersMap, BaseBonusUIPacker, AsyncBonusUIPacker, BACKPORT_TOOLTIP_CONTENT_ID, Customization3Dand2DbonusUIPacker, CustomizationBonusUIPacker, BonusUIPacker
 from gui.shared.utils.functions import makeTooltip
 from helpers import dependency, int2roman
 from items import tankmen

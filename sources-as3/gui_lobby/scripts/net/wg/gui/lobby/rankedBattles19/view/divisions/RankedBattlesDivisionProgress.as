@@ -116,7 +116,7 @@ package net.wg.gui.lobby.rankedBattles19.view.divisions
                this.bonusBattles.setText(this._bonusBattlesLabel);
             }
          }
-         if(isInvalid(InvalidationType.SIZE,INV_VIEW_PADDING))
+         if(isInvalidTypes(InvalidationType.SIZE,INV_VIEW_PADDING))
          {
             if(this._statsAreSmall)
             {

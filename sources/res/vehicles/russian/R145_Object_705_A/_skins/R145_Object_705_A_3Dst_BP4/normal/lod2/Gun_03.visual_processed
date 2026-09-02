@@ -106,8 +106,8 @@
 		<node>static_joint_BlendBone</node>
 		<node>joint1_BlendBone</node>
 		<geometry>
-			<vertices>gun_03_Shape.vertices</vertices>
-			<primitive>gun_03_Shape.indices</primitive>
+			<vertices>gun_Shape3.vertices</vertices>
+			<primitive>gun_Shape3.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -132,12 +132,38 @@
 						<Texture>vehicles/russian/R145_Object_705_A/_skins/R145_Object_705_A_3Dst_BP4/Object_705_A_3Dst_BP4_guns_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.001400 0.085321 -3.278312</groupOrigin>
+				<groupOrigin>0.150310 0.036790 -3.278312</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				1
 				<material>
-					<identifier>tank_upgrade_02_skinned</identifier>
+					<identifier>tank_upgrade_01_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>vehicles/russian/R145_Object_705_A/_skins/R145_Object_705_A_3Dst_BP4/Object_705_A_3Dst_BP4_guns_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/russian/R145_Object_705_A/_skins/R145_Object_705_A_3Dst_BP4/Object_705_A_3Dst_BP4_guns_AO.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/russian/R145_Object_705_A/_skins/R145_Object_705_A_3Dst_BP4/Object_705_A_3Dst_BP4_guns_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/russian/R145_Object_705_A/_skins/R145_Object_705_A_3Dst_BP4/Object_705_A_3Dst_BP4_guns_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.001400 0.095047 -0.192971</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				2
+				<material>
+					<identifier>tank_upgrade_02_03_04_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
 					<materialKind>0</materialKind>
 					<collisionFlags>0</collisionFlags>
@@ -161,7 +187,7 @@
 				<groupOrigin>-1.318041 -0.002473 0.004953</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				2
+				3
 				<material>
 					<identifier>tank_upgrade_04_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
@@ -193,5 +219,5 @@
 		<min>-1.653690 -0.298750 -0.233544</min>
 		<max>0.507852 0.484966 6.713290</max>
 	</boundingBox>
-	<geometrySize>71966</geometrySize>
+	<geometrySize>70806</geometrySize>
 </root>

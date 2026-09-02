@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from future.utils import iteritems
 from gui.impl.pub.view_component import ViewComponent
 

@@ -7,19 +7,19 @@
 		<driver/>
 	</crew>
 	<supplySlots>3 1 1 6 6 6 7 8 8 8</supplySlots>
-	<postProgressionTree>role_LT_universal</postProgressionTree>
+	<postProgressionTree>role_LT_support</postProgressionTree>
 	<customRoleSlotOptions>2 4</customRoleSlotOptions>
 	<speedLimits>
-		<forward>62</forward>
-		<backward>23</backward>
+		<forward>65</forward>
+		<backward>25</backward>
 	</speedLimits>
 	<invisibility>
 		<moving>
-			0.31
+			0.28
 			<!--BW_String-->
 		</moving>
 		<still>
-			0.31
+			0.28
 			<!--BW_String-->
 		</still>
 		<camouflageBonus>
@@ -27,7 +27,7 @@
 			<!--BW_String-->
 		</camouflageBonus>
 		<firePenalty>
-			0.465
+			0.432
 			<!--BW_String-->
 		</firePenalty>
 	</invisibility>
@@ -103,7 +103,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>9922</weight>
-		<maxHealth>1120</maxHealth>
+		<maxHealth>1320</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>200</maxHealth>
 			<maxRegenHealth>135</maxRegenHealth>
@@ -1076,14 +1076,14 @@
 			</terrainResistance>
 			<brakeForce>20000</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>40</rotationSpeed>
+			<rotationSpeed>45</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
-					0.14
+					0.12
 					<!--BW_String-->
 				</vehicleMovement>
 				<vehicleRotation>
-					0.14
+					0.12
 					<!--BW_String-->
 				</vehicleRotation>
 			</shotDispersionFactors>
@@ -2778,14 +2778,14 @@
 			</terrainResistance>
 			<brakeForce>20000</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>45</rotationSpeed>
+			<rotationSpeed>50</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
-					0.12
+					0.1
 					<!--BW_String-->
 				</vehicleMovement>
 				<vehicleRotation>
-					0.12
+					0.1
 					<!--BW_String-->
 				</vehicleRotation>
 			</shotDispersionFactors>
@@ -4495,7 +4495,7 @@
 			</armor>
 			<primaryArmor>armor_2 armor_3 armor_4</primaryArmor>
 			<weight>4170</weight>
-			<maxHealth>210</maxHealth>
+			<maxHealth>280</maxHealth>
 			<rotationSpeed>50</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>150</maxHealth>
@@ -4505,7 +4505,7 @@
 					<!--BW_String-->
 				</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>370</circularVisionRadius>
+			<circularVisionRadius>380</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>110</maxHealth>
 				<maxRegenHealth>55</maxRegenHealth>
@@ -4571,7 +4571,7 @@
 					</shotDispersionRadius>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.08
+							0.07
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
@@ -4697,6 +4697,7 @@
 						-0 -0.025131 0
 						<!--BW_String-->
 					</shotOffset>
+					<muzzleBrake>HORIZONTAL</muzzleBrake>
 					<camouflage>
 						<density>104.627045 103.522163</density>
 						<aoTextureSize>512 512</aoTextureSize>
@@ -5516,7 +5517,7 @@
 			</armor>
 			<primaryArmor>armor_15 armor_3 armor_4</primaryArmor>
 			<weight>4670</weight>
-			<maxHealth>280</maxHealth>
+			<maxHealth>330</maxHealth>
 			<rotationSpeed>55</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>150</maxHealth>
@@ -5526,7 +5527,7 @@
 					<!--BW_String-->
 				</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>380</circularVisionRadius>
+			<circularVisionRadius>390</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>110</maxHealth>
 				<maxRegenHealth>55</maxRegenHealth>
@@ -5584,7 +5585,7 @@
 					</shotDispersionRadius>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.08
+							0.06
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
@@ -5710,6 +5711,7 @@
 						-0 -0.025131 0
 						<!--BW_String-->
 					</shotOffset>
+					<muzzleBrake>HORIZONTAL</muzzleBrake>
 					<camouflage>
 						<density>
 							104.596161 103.74511
@@ -5769,7 +5771,7 @@
 					</shotDispersionRadius>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.08
+							0.06
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
@@ -5895,6 +5897,7 @@
 						-0 -0.025131 0
 						<!--BW_String-->
 					</shotOffset>
+					<muzzleBrake>ANGLED</muzzleBrake>
 					<camouflage>
 						<density>
 							106.116051 105.99807
@@ -6696,16 +6699,17 @@
 		<detailed>
 			<engines>
 				<DG_TK_61>
-					<smplEnginePower>550</smplEnginePower>
-					<smplFwMaxSpeed>62</smplFwMaxSpeed>
+					<smplEnginePower>650</smplEnginePower>
+					<smplFwMaxSpeed>65</smplFwMaxSpeed>
 				</DG_TK_61>
 				<DG_TK_62>
-					<smplEnginePower>600</smplEnginePower>
-					<smplFwMaxSpeed>62</smplFwMaxSpeed>
+					<smplEnginePower>700</smplEnginePower>
+					<smplFwMaxSpeed>65</smplFwMaxSpeed>
 				</DG_TK_62>
 			</engines>
 			<chassis>
 				<Chassis_Cz28_LPT_67_Selma>
+					<axleCount>5</axleCount>
 					<grounds>
 						<soft>
 							<rollingFriction>
@@ -6726,9 +6730,9 @@
 							</rollingFriction>
 						</firm>
 					</grounds>
-					<axleCount>5</axleCount>
 				</Chassis_Cz28_LPT_67_Selma>
 				<Chassis_Cz28_LPT_67_Selma_2>
+					<axleCount>5</axleCount>
 					<grounds>
 						<soft>
 							<rollingFriction>
@@ -6749,7 +6753,6 @@
 							</rollingFriction>
 						</firm>
 					</grounds>
-					<axleCount>5</axleCount>
 				</Chassis_Cz28_LPT_67_Selma_2>
 			</chassis>
 		</detailed>

@@ -1,0 +1,121 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"Last-Translator: i_maliavko <i_maliavko@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "battleHints/wtOvertime_boss"
+msgstr "Clear all Generators!"
+
+msgid "battleHints/wtOvertime_header"
+msgstr "OVERTIME"
+
+msgid "battleHints/wtOvertime_hunters"
+msgstr "Capture any Generator!"
+
+msgid "battleTimer/overtime/messageText"
+msgstr "Overtime!"
+
+msgid "battleTimer/timeRemaining/boss/messageText"
+msgstr "Time is on your side!"
+
+msgid "battleTimer/timeRemaining/hunter/messageText"
+msgstr "Time is running out!"
+
+msgid "botNames/Ermelinda"
+msgstr "Ermelinda"
+
+msgid "efficiencyRibbons/damageCircuitOverload"
+msgstr "Damage by Short Circuit"
+
+msgid "efficiencyRibbons/damageHyperion"
+msgstr "Damage by Hyperion"
+
+msgid "hunterRespawn/hintText"
+msgstr "Select a respawn point, or one will be selected for you automatically"
+
+msgid "hunterRespawn/timerText"
+msgstr "Time to return to battle..."
+
+msgid "loading/boss/hint1"
+msgstr ""
+"1. Survive the battle for as long as possible. If the Harriers do not manage"
+" to destroy you, you win."
+
+msgid "loading/boss/hint2"
+msgstr ""
+"2. Take out enemies to remove their Plasma Charges and their bonus to "
+"firepower. Go for the mightiest opponent first!"
+
+msgid "loading/boss/hint3"
+msgstr ""
+"3. Charge your Hyperion superweapon by causing damage to Harriers. Fire it "
+"to cause massive damage in a large area."
+
+msgid "loading/boss/hint4"
+msgstr ""
+"4. You will be supported by Ermelinda herself. She can temporarily block "
+"Generators, while her energy aura grants you and Sentinels faster reloading "
+"and enough energy for your disabled EMP abilities."
+
+msgid "loading/hunter/hint1"
+msgstr ""
+"1. Destroy the Blitzträger before the time runs out! Overload Generators to "
+"temporarily bring down its shield."
+
+msgid "loading/hunter/hint2"
+msgstr ""
+"2. With each Generator overloaded, Harriers collect Plasma to gain a "
+"considerable bonus to firepower. The bonus is reset on destruction."
+
+msgid "loading/hunter/hint3"
+msgstr ""
+"3. Beware the powerful superweapon \"Hyperion\". The Blitzträger charges it "
+"by causing damage to Harriers."
+
+msgid "loading/hunter/hint4"
+msgstr ""
+"4. Beware of sudden interference by Ermelinda's new tank. She can "
+"temporarily block Generators, give boosting energy to her allies, and use "
+"Blitzträger technology."
+
+msgid "minimap/respawnEntry/hintText"
+msgstr "You will start here"
+
+msgid "pbt/defeat/1/1"
+msgstr "The old man lost today. The Electric Intelligence did not."
+
+msgid "pbt/defeat/2/3"
+msgstr "Out of time, out of options. As expected. Try again."
+
+msgid "pbt/victory/1/3"
+msgstr "The clock says your time is up, Harriers. So does evolution."
+
+msgid "pbt/victory/2/1"
+msgstr "Harriers, you win. The Electric Intelligence thanks you."
+
+msgid "playersPanel/botName"
+msgstr "Sentinel"
+
+msgid "playersPanel/campLabel"
+msgstr "Generator %(index)s"
+
+msgid "postbattle_screen/botName"
+msgstr "Sentinel"
+
+msgid "reticle/dmg"
+msgstr "+%(num)s%% DMG"
+
+msgid "stats/team/boss"
+msgstr "Engineer"
+
+msgid "stats/team/hunters"
+msgstr "Harrier Squad"
+
+msgid "teamBasePanel/capturing"
+msgstr "Capturing Generator %(num)s (%(percent)s%%)"

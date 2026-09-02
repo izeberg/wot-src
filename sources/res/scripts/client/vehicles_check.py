@@ -62,3 +62,5 @@ def _findNodeSec(sec, nodeName):
     for nodeSec in sec.values():
         if nodeSec.readString('identifier') == nodeName:
             return nodeSec
+
+    return

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G196_Versuchspanzer_57/crash/lod2/Gun_03</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/german/G196_Versuchspanzer_57/crash/lod3/Gun_03</parent>
+	<extent>96</extent>
+	<visibilityBox>
+		<min>-0.545121 -0.343661 -1.416249</min>
+		<max>0.545118 0.397166 6.143741</max>
+	</visibilityBox>
+</root>

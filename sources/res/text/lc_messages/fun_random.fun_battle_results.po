@@ -10,9 +10,6 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "closeBtn"
-msgstr "CLOSE"
-
 msgid "continueBtn"
 msgstr "Continue"
 
@@ -202,7 +199,7 @@ msgid "sub_modes/fall_tanks/efficiencyTooltip/description/deathCount"
 msgstr "Times you respawned after your vehicle was disintegrated"
 
 msgid "sub_modes/fall_tanks/efficiencyTooltip/description/destroyed"
-msgstr "The number of enemy vehicles you disintegrated"
+msgstr "Number of enemy vehicles you disintegrated"
 
 msgid "sub_modes/fall_tanks/efficiencyTooltip/description/finishPosition"
 msgstr "Your final position in the race standings"

@@ -48,6 +48,7 @@ class PersonalFileView(ContainerBase, IPersonalTab, ViewImpl):
           g_playerEvents.onDisconnected, self.__onDisconnected),)
 
     def onStopAnimations(self):
+        BigWorld.player().crewAccountController.setTankmanVeteranAnimanionPlayed(self.context.tankman.invID)
         if hasattr(self, 'interactionCtrl'):
             self.interactionCtrl.onStopAnimations()
 

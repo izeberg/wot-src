@@ -24,6 +24,10 @@
 					<materialKind>0</materialKind>
 					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
 					<property>
+						g_enableEnvMultiplier
+						<Bool>true</Bool>
+					</property>
+					<property>
 						TintlColor
 						<Vector4>0.725490 0.407843 0.235294 0.200000</Vector4>
 					</property>
@@ -37,7 +41,7 @@
 					</property>
 					<property>
 						lightMultipliers
-						<Vector4>2.000000 0.000000 0.000000 0.000000</Vector4>
+						<Vector4>0.809717 0.000000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						alphaFadeAmountFresnel
@@ -74,6 +78,10 @@
 					<materialKind>0</materialKind>
 					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
 					<property>
+						g_enableEnvMultiplier
+						<Bool>true</Bool>
+					</property>
+					<property>
 						diffuseUVSpeedAlphaOffset
 						<Vector4>0.100000 0.350000 0.700000 0.000000</Vector4>
 					</property>
@@ -83,7 +91,7 @@
 					</property>
 					<property>
 						lightMultipliers
-						<Vector4>60.000000 0.000000 0.000000 0.000000</Vector4>
+						<Vector4>24.291498 0.000000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						alphaFadeAmountFresnel
@@ -124,6 +132,10 @@
 					<materialKind>0</materialKind>
 					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
 					<property>
+						g_enableEnvMultiplier
+						<Bool>true</Bool>
+					</property>
+					<property>
 						diffuseUVSpeedAlphaOffset
 						<Vector4>0.100000 0.300000 0.000000 0.000000</Vector4>
 					</property>
@@ -133,7 +145,7 @@
 					</property>
 					<property>
 						lightMultipliers
-						<Vector4>20.000000 0.000000 0.000000 0.000000</Vector4>
+						<Vector4>8.097166 0.000000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						FreshnelColor
@@ -182,6 +194,10 @@
 					<materialKind>0</materialKind>
 					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
 					<property>
+						g_enableEnvMultiplier
+						<Bool>true</Bool>
+					</property>
+					<property>
 						diffuseUVSpeedAlphaOffset
 						<Vector4>0.100000 0.350000 0.600000 0.000000</Vector4>
 					</property>
@@ -191,7 +207,7 @@
 					</property>
 					<property>
 						lightMultipliers
-						<Vector4>10.002000 0.000000 0.000000 0.000000</Vector4>
+						<Vector4>4.049393 0.000000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						FreshnelColor

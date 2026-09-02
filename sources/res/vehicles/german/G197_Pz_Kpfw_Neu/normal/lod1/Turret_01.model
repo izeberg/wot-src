@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/german/G197_Pz_Kpfw_Neu/normal/lod1/Turret_01</nodefullVisual>
+	<visibilityBox>
+		<min>-1.728881 0.010386 -2.235294</min>
+		<max>1.728881 2.590992 1.965062</max>
+	</visibilityBox>
+	<parent>vehicles/german/G197_Pz_Kpfw_Neu/normal/lod2/Turret_01</parent>
+	<extent>64.000000</extent>
+</root>

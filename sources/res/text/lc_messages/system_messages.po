@@ -1179,6 +1179,9 @@ msgstr ""
 msgid "crewBooksNotification/bookUsed"
 msgstr "%(name)s."
 
+msgid "crewBooksNotification/bookUsedOneOf"
+msgstr "%(name)s"
+
 msgid "crewBooksNotification/booksUsed"
 msgstr "%(name)s (x%(count)s)"
 
@@ -2349,12 +2352,11 @@ msgstr ""
 " log into World&nbsp;of&nbsp;Warships"
 
 msgid "lootboxes/open/server_error"
-msgstr "Error receiving the gift: server error."
+msgstr "Error opening the box: Server error."
 
 msgid "lootboxes/open/server_error/COOLDOWN"
 msgstr ""
-"Error receiving the gift. Please wait until the previous operation is "
-"complete."
+"Error opening the box: Please wait until the previous operation is complete."
 
 msgid "lootboxes/open/server_error/DISABLED"
 msgstr "Action is temporarily unavailable. Try again later."
@@ -2752,34 +2754,6 @@ msgstr ""
 "Unique Camouflage for %(vehicleName)s is available for all vehicles of "
 "nation: %(nation)s."
 
-msgid "personalMissions/campaign12Paused/body"
-msgstr ""
-"All operation progress has been saved. You can resume the campaigns at any "
-"time."
-
-msgid "personalMissions/campaign12Paused/title"
-msgstr "%(campaignName1)s and %(campaignName2)s campaigns paused"
-
-msgid "personalMissions/campaign12Resumed/body"
-msgstr "Paused operations and their missions have been resumed."
-
-msgid "personalMissions/campaign12Resumed/title"
-msgstr "%(campaignName1)s and %(campaignName2)s campaigns resumed"
-
-msgid "personalMissions/campaign3Paused/body"
-msgstr ""
-"All operation progress has been saved. You can resume the campaign at any "
-"time."
-
-msgid "personalMissions/campaign3Paused/title"
-msgstr "%(campaignName)s campaign paused"
-
-msgid "personalMissions/campaign3Resumed/body"
-msgstr "Paused operations have been resumed."
-
-msgid "personalMissions/campaign3Resumed/title"
-msgstr "%(campaignName)s campaign resumed"
-
 msgid "personalMissions/detailInstalled/body"
 msgstr "The %(detailName)s has been successfully mounted."
 
@@ -2875,6 +2849,12 @@ msgid "personalMissions/reward/pm3/server_error"
 msgstr "Error receiving rewards. Please try again later."
 
 msgid "personalMissions/reward/pm3/success"
+msgstr "The %(detail_name)s has been successfully mounted."
+
+msgid "personalMissions/reward/pm4/server_error"
+msgstr "Error receiving rewards. Please try again later."
+
+msgid "personalMissions/reward/pm4/success"
 msgstr "The %(detail_name)s has been successfully mounted."
 
 msgid "personalMissions/reward/regular/server_error"

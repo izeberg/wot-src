@@ -13,6 +13,10 @@
 				<id>GameObjectToVehicle_2</id>
 			</block>
 			<block>
+				<class>GetVehicleGameObject</class>
+				<id>GetVehicleGameObject_1</id>
+			</block>
+			<block>
 				<class>ComponentMethod</class>
 				<id>ComponentMethod_1</id>
 				<params>
@@ -38,8 +42,15 @@
 				</slots>
 			</block>
 			<block>
-				<class>GetVehicleGameObject</class>
-				<id>GetVehicleGameObject_1</id>
+				<class>Macro</class>
+				<id>Macro_2</id>
+				<params>
+					<param>
+						CustomizationVehicleEvents
+						<name>Macro Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
 			</block>
 			<block>
 				<class>ContextGetSelf</class>
@@ -53,17 +64,6 @@
 					<param>
 						getSelf
 						<name>Member Name</name>
-						<type>StringT</type>
-					</param>
-				</params>
-			</block>
-			<block>
-				<class>Macro</class>
-				<id>Macro_2</id>
-				<params>
-					<param>
-						CustomizationVehicleEvents
-						<name>Macro Name</name>
 						<type>StringT</type>
 					</param>
 				</params>
@@ -102,6 +102,12 @@
 				<output>vehicleObject</output>
 			</connection>
 			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>GetVehicleGameObject_1</to>
+				<output>value</output>
+			</connection>
+			<connection>
 				<from>Macro_2</from>
 				<input>in</input>
 				<to>ComponentMethod_1</to>
@@ -114,15 +120,15 @@
 				<output>onKill</output>
 			</connection>
 			<connection>
-				<from>ContextGetSelf_1</from>
-				<input>gameObject</input>
+				<from>Macro_2</from>
+				<input>in</input>
 				<to>ComponentMethod_1</to>
-				<output>value</output>
+				<output>PrebattleHighlightStart</output>
 			</connection>
 			<connection>
 				<from>ContextGetSelf_1</from>
 				<input>gameObject</input>
-				<to>GetVehicleGameObject_1</to>
+				<to>ComponentMethod_1</to>
 				<output>value</output>
 			</connection>
 			<connection>

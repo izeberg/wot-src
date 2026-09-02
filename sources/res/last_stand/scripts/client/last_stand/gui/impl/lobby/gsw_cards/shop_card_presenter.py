@@ -1,11 +1,12 @@
 from __future__ import absolute_import
+from gui.impl.lobby.user_missions.hangar_widget.presenters.base_child_presenter import UserMissionChildPresenter
 from gui.impl.lobby.user_missions.hangar_widget.tooltip_positioner import TooltipPositionerMixin
 from gui.impl.pub.view_component import ViewComponent
 from last_stand.gui.impl.gen.view_models.views.lobby.widgets.shop_card_view_model import ShopCardViewModel
 from last_stand.gui.impl.lobby.user_missions.hangar_widget.overlap_ctrl import LastStandOverlapCtrlMixin
 from last_stand.gui.shared.event_dispatcher import showLSShopAll
 
-class ShopCardPresenter(TooltipPositionerMixin, LastStandOverlapCtrlMixin, ViewComponent[ShopCardViewModel]):
+class ShopCardPresenter(UserMissionChildPresenter, TooltipPositionerMixin, LastStandOverlapCtrlMixin, ViewComponent[ShopCardViewModel]):
 
     def __init__(self):
         super(ShopCardPresenter, self).__init__(model=ShopCardViewModel)

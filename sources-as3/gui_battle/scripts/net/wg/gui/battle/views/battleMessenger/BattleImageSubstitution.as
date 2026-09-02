@@ -11,7 +11,7 @@ package net.wg.gui.battle.views.battleMessenger
       
       public var image:BitmapData;
       
-      public var baseLineY:int = 11;
+      public var baseLineY:int = 13;
       
       private var _disposed:Boolean = false;
       

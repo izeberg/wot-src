@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/german/G193_Pz_Kpfw_55/crash/lod3/Chassis</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.810049 0.034000 -3.199557</min>
+		<max>1.810000 1.237101 3.299866</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G193_Pz_Kpfw_55/crash/lod2/Chassis</nodefullVisual>
+</root>

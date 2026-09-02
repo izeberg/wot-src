@@ -109,7 +109,7 @@ package net.wg.gui.battle.views.widgetsPanel
          this.bullets.setShellsQuantityLeft(param1,this._isInBurst);
          if(this._isInBurst)
          {
-            this.decorations.hasBurstBullets(!this.bullets.isAllMadeShot());
+            this.decorations.setBurstBullets(!this.bullets.isAllMadeShot());
          }
       }
       
@@ -148,7 +148,10 @@ package net.wg.gui.battle.views.widgetsPanel
       
       private function clearCommands() : void
       {
-         App.utils.data.cleanupDynamicObject(this._commandsQueue);
+         if(this._commandsQueue)
+         {
+            this._commandsQueue.splice(0,this._commandsQueue.length);
+         }
       }
       
       private function updateBurstMode(param1:Boolean, param2:Boolean) : void
@@ -157,7 +160,7 @@ package net.wg.gui.battle.views.widgetsPanel
          this.bullets.updateMode(param1,param2);
          this.shadows.updateMode(param1,param2);
          this.decorations.updateMode(param1,param2);
-         this.decorations.hasBurstBullets(!this.bullets.isAllMadeShot());
+         this.decorations.setBurstBullets(!this.bullets.isAllMadeShot());
          this._isInBurst = param1;
       }
       
@@ -165,7 +168,7 @@ package net.wg.gui.battle.views.widgetsPanel
       {
          this.penetrations.update(param2,this._isInBurst,param4);
          this.bullets.update(param3,this._isInBurst,param4);
-         this.decorations.hasBurstBullets(!this.bullets.isAllMadeShot());
+         this.decorations.setBurstBullets(!this.bullets.isAllMadeShot());
       }
       
       private function storeCommand(param1:String, param2:Boolean, param3:Number, param4:Number, param5:Boolean) : void

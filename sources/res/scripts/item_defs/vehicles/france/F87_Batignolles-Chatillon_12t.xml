@@ -103,7 +103,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>4045</weight>
-		<maxHealth>920</maxHealth>
+		<maxHealth>1000</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>220</maxHealth>
 			<maxRegenHealth>150</maxRegenHealth>
@@ -1786,8 +1786,8 @@
 				</chassis>
 			</unlocks>
 			<armor>
-				<leftTrack>20</leftTrack>
-				<rightTrack>20</rightTrack>
+				<leftTrack>10</leftTrack>
+				<rightTrack>10</rightTrack>
 			</armor>
 			<weight>3000</weight>
 			<terrainResistance>
@@ -3803,8 +3803,8 @@
 			<level>8</level>
 			<price>29000</price>
 			<armor>
-				<leftTrack>20</leftTrack>
-				<rightTrack>20</rightTrack>
+				<leftTrack>10</leftTrack>
+				<rightTrack>10</rightTrack>
 			</armor>
 			<weight>3000</weight>
 			<terrainResistance>
@@ -5833,7 +5833,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>2500</weight>
-			<maxHealth>230</maxHealth>
+			<maxHealth>250</maxHealth>
 			<rotationSpeed>46</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>140</maxHealth>
@@ -5885,7 +5885,7 @@
 						<maxPitch>0 6 1 6</maxPitch>
 					</pitchLimits>
 					<reloadTime>
-						19.5
+						17.5
 						<!--BW_String-->
 					</reloadTime>
 					<invisibilityFactorAtShot>
@@ -6690,6 +6690,7 @@
 						</customizableVehicleAreas>
 					</customization>
 					<edgeByVisualModel>false</edgeByVisualModel>
+					<muzzleBrake>HORIZONTAL</muzzleBrake>
 					<camouflage>
 						<tiling>
 							1.4 1.4 0.000000 0.000000
@@ -6747,7 +6748,7 @@
 						<rate>30</rate>
 					</clip>
 					<shotDispersionRadius>
-						0.38
+						0.39
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<shotDispersionFactors>
@@ -7537,6 +7538,7 @@
 						</customizableVehicleAreas>
 					</customization>
 					<edgeByVisualModel>false</edgeByVisualModel>
+					<muzzleBrake>HORIZONTAL</muzzleBrake>
 					<camouflage>
 						<tiling>
 							1.4 1.4 0.000000 0.000000
@@ -7987,16 +7989,22 @@
 					<axleCount>5</axleCount>
 					<grounds>
 						<soft>
-							<rollingFriction>0.140875</rollingFriction>
+							<rollingFriction>
+								0.1127
+								<!--BW_String-->
+							</rollingFriction>
 						</soft>
 						<medium>
 							<rollingFriction>
-								0.0805
+								0.0644
 								<!--BW_String-->
 							</rollingFriction>
 						</medium>
 						<firm>
-							<rollingFriction>0.070438</rollingFriction>
+							<rollingFriction>
+								0.05635
+								<!--BW_String-->
+							</rollingFriction>
 						</firm>
 					</grounds>
 				</Chassis_F87_Batignolles-Chatillon_12t>
@@ -8004,16 +8012,22 @@
 					<axleCount>5</axleCount>
 					<grounds>
 						<soft>
-							<rollingFriction>0.140875</rollingFriction>
+							<rollingFriction>
+								0.1127
+								<!--BW_String-->
+							</rollingFriction>
 						</soft>
 						<medium>
 							<rollingFriction>
-								0.0805
+								0.0644
 								<!--BW_String-->
 							</rollingFriction>
 						</medium>
 						<firm>
-							<rollingFriction>0.070438</rollingFriction>
+							<rollingFriction>
+								0.05635
+								<!--BW_String-->
+							</rollingFriction>
 						</firm>
 					</grounds>
 				</Chassis_F87_Batignolles-Chatillon_12t_2>

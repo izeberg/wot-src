@@ -6266,6 +6266,1050 @@ msgstr "Damage"
 msgid "pm3_9_3_9_title_kills"
 msgstr "Destroy"
 
+msgid "pm4_11_1_1"
+msgstr "Vanguard-1"
+
+msgid "pm4_11_1_10"
+msgstr "Vanguard-10"
+
+msgid "pm4_11_1_10_description_counterAttack"
+msgstr ""
+"Cause %(goal)s HP of damage to enemy vehicles that damage your vehicle by "
+"shooting"
+
+msgid "pm4_11_1_10_short"
+msgstr "Vanguard-10"
+
+msgid "pm4_11_1_10_title_counterAttack"
+msgstr "Damage"
+
+msgid "pm4_11_1_11"
+msgstr "Vanguard-11"
+
+msgid "pm4_11_1_11_description_damage"
+msgstr ""
+"Cause %(goal)s HP of damage to enemy vehicles from a distance of "
+"%(distanceShortOrEqual)s m or less"
+
+msgid "pm4_11_1_11_description_kills"
+msgstr "Destroy an enemy vehicle by ramming and survive the impact"
+
+msgid "pm4_11_1_11_short"
+msgstr "Vanguard-11"
+
+msgid "pm4_11_1_11_title_damage"
+msgstr "Damage"
+
+msgid "pm4_11_1_11_title_kills"
+msgstr "Destroy"
+
+msgid "pm4_11_1_12"
+msgstr "Vanguard-12"
+
+msgid "pm4_11_1_12_description_kills"
+msgstr ""
+"Destroy %(goal)s enemy vehicles from a distance of %(distanceShortOrEqual)s "
+"m or less"
+
+msgid "pm4_11_1_12_short"
+msgstr "Vanguard-12"
+
+msgid "pm4_11_1_12_title_kills"
+msgstr "Destroy"
+
+msgid "pm4_11_1_13"
+msgstr "Vanguard-13"
+
+msgid "pm4_11_1_13_description_medal"
+msgstr "Earn the High Caliber award"
+
+msgid "pm4_11_1_13_short"
+msgstr "Vanguard-13"
+
+msgid "pm4_11_1_13_title_medal"
+msgstr "Battle Heroes"
+
+msgid "pm4_11_1_14"
+msgstr "Vanguard-14"
+
+msgid "pm4_11_1_14_description_damageDealtReceivedAndBlocked"
+msgstr "Cause, receive, and block a total of %(goal)s HP of damage"
+
+msgid "pm4_11_1_14_short"
+msgstr "Vanguard-14"
+
+msgid "pm4_11_1_14_title_damageDealtReceivedAndBlocked"
+msgstr "Complex Condition"
+
+msgid "pm4_11_1_15"
+msgstr "Vanguard-15"
+
+msgid "pm4_11_1_15_description_kills"
+msgstr "Destroy %(goal)s enemy vehicles within the view range of your vehicle"
+
+msgid "pm4_11_1_15_short"
+msgstr "Vanguard-15"
+
+msgid "pm4_11_1_15_title_kills"
+msgstr "Destroy"
+
+msgid "pm4_11_1_16"
+msgstr "Vanguard-16"
+
+msgid "pm4_11_1_16_description_medal"
+msgstr "Earn the Steel Wall award"
+
+msgid "pm4_11_1_16_description_topByDamage"
+msgstr "Be the top player on your team by damage caused"
+
+msgid "pm4_11_1_16_short"
+msgstr "Vanguard-16"
+
+msgid "pm4_11_1_16_title_medal"
+msgstr "Battle Heroes"
+
+msgid "pm4_11_1_16_title_topByDamage"
+msgstr "Top Player"
+
+msgid "pm4_11_1_17"
+msgstr "Vanguard-17"
+
+msgid "pm4_11_1_17_description_damageandBlock"
+msgstr ""
+"Have total damage caused and damage blocked by armor equal to or exceeding "
+"%(vehicleHealthFactor)s times the hit points of your vehicle"
+
+msgid "pm4_11_1_17_short"
+msgstr "Vanguard-17"
+
+msgid "pm4_11_1_17_title_damageandBlock"
+msgstr "Damage and Block"
+
+msgid "pm4_11_1_18"
+msgstr "Vanguard-18"
+
+msgid "pm4_11_1_18_description_damage"
+msgstr "Cause %(goal)s HP of damage to immobilized enemy vehicles"
+
+msgid "pm4_11_1_18_description_damageAlt"
+msgstr "Cause %(goal)s HP of damage to enemy vehicles"
+
+msgid "pm4_11_1_18_short"
+msgstr "Vanguard-18"
+
+msgid "pm4_11_1_18_title_damage"
+msgstr "Damage"
+
+msgid "pm4_11_1_18_title_damageAlt"
+msgstr "Damage"
+
+msgid "pm4_11_1_19"
+msgstr "Vanguard-19"
+
+msgid "pm4_11_1_19_description_damage"
+msgstr ""
+"Cause %(goal)s HP of damage to enemy vehicles of the same tier or higher by "
+"shooting them from a distance of %(distanceShortOrEqual)s m or less"
+
+msgid "pm4_11_1_19_description_kills"
+msgstr ""
+"Destroy %(goal)s enemy vehicles of the same tier or higher from a distance "
+"of %(distanceShortOrEqual)s m or less"
+
+msgid "pm4_11_1_19_short"
+msgstr "Vanguard-19"
+
+msgid "pm4_11_1_19_title_damage"
+msgstr "Damage"
+
+msgid "pm4_11_1_19_title_kills"
+msgstr "Destroy"
+
+msgid "pm4_11_1_1_description_damage"
+msgstr "Cause %(goal)s HP of damage to enemy heavy tanks"
+
+msgid "pm4_11_1_1_description_hits"
+msgstr "Cause damage to enemy heavy tanks by shooting them %(goal)s times"
+
+msgid "pm4_11_1_1_short"
+msgstr "Vanguard-1"
+
+msgid "pm4_11_1_1_title_damage"
+msgstr "Damage"
+
+msgid "pm4_11_1_1_title_hits"
+msgstr "Damage"
+
+msgid "pm4_11_1_2"
+msgstr "Vanguard-2"
+
+msgid "pm4_11_1_20"
+msgstr "Vanguard-20"
+
+msgid "pm4_11_1_20_description_killsDiversity"
+msgstr "Destroy %(goal)s enemy vehicles of %(uniqueGoal)s different types"
+
+msgid "pm4_11_1_20_short"
+msgstr "Vanguard-20"
+
+msgid "pm4_11_1_20_title_killsDiversity"
+msgstr "Destroy"
+
+msgid "pm4_11_1_21"
+msgstr "Vanguard-21"
+
+msgid "pm4_11_1_21_description_damageDealtReceivedAndBlocked"
+msgstr "Cause, receive, and block a total of %(goal)s HP of damage"
+
+msgid "pm4_11_1_21_description_totalDamagePercent"
+msgstr "Cause 25%% of the total amount of damage caused by your team"
+
+msgid "pm4_11_1_21_short"
+msgstr "Vanguard-21"
+
+msgid "pm4_11_1_21_title_damageDealtReceivedAndBlocked"
+msgstr "Complex Condition"
+
+msgid "pm4_11_1_21_title_totalDamagePercent"
+msgstr "Damage"
+
+msgid "pm4_11_1_2_description_killsDiversity"
+msgstr "Destroy %(goal)s enemy vehicles of %(uniqueGoal)s different types"
+
+msgid "pm4_11_1_2_short"
+msgstr "Vanguard-2"
+
+msgid "pm4_11_1_2_title_killsDiversity"
+msgstr "Destroy"
+
+msgid "pm4_11_1_3"
+msgstr "Vanguard-3"
+
+msgid "pm4_11_1_3_description_topByDamage"
+msgstr "Be the top player on your team by damage caused"
+
+msgid "pm4_11_1_3_short"
+msgstr "Vanguard-3"
+
+msgid "pm4_11_1_3_title_topByDamage"
+msgstr "Top Player"
+
+msgid "pm4_11_1_4"
+msgstr "Vanguard-4"
+
+msgid "pm4_11_1_4_description_blockedDamage"
+msgstr "Block %(goal)s HP of damage while your vehicle is stationary"
+
+msgid "pm4_11_1_4_description_damage"
+msgstr "Cause %(goal)s HP of damage to enemy vehicles"
+
+msgid "pm4_11_1_4_short"
+msgstr "Vanguard-4"
+
+msgid "pm4_11_1_4_title_blockedDamage"
+msgstr "Block"
+
+msgid "pm4_11_1_4_title_damage"
+msgstr "Damage"
+
+msgid "pm4_11_1_5"
+msgstr "Vanguard-5"
+
+msgid "pm4_11_1_5_description_damage"
+msgstr ""
+"Cause %(goal)s HP of damage to enemy vehicles within the view range of your "
+"vehicle"
+
+msgid "pm4_11_1_5_short"
+msgstr "Vanguard-5"
+
+msgid "pm4_11_1_5_title_damage"
+msgstr "Damage"
+
+msgid "pm4_11_1_6"
+msgstr "Vanguard-6"
+
+msgid "pm4_11_1_6_description_damageandBlock"
+msgstr ""
+"Have total damage caused and damage blocked by armor equal to or exceeding "
+"%(vehicleHealthFactor)s times the hit points of your vehicle"
+
+msgid "pm4_11_1_6_short"
+msgstr "Vanguard-6"
+
+msgid "pm4_11_1_6_title_damageandBlock"
+msgstr "Damage and Block"
+
+msgid "pm4_11_1_7"
+msgstr "Vanguard-7"
+
+msgid "pm4_11_1_7_description_damage"
+msgstr ""
+"Cause %(goal)s HP of damage to enemy vehicles from a distance of "
+"%(distanceShortOrEqual)s m or less"
+
+msgid "pm4_11_1_7_description_damageAlt"
+msgstr ""
+"Cause %(goal)s HP of damage to enemy vehicles from a distance of "
+"%(distanceGreatOrEqual)s m or more"
+
+msgid "pm4_11_1_7_short"
+msgstr "Vanguard-7"
+
+msgid "pm4_11_1_7_title_damage"
+msgstr "Damage"
+
+msgid "pm4_11_1_7_title_damageAlt"
+msgstr "Damage"
+
+msgid "pm4_11_1_8"
+msgstr "Vanguard-8"
+
+msgid "pm4_11_1_8_description_damage"
+msgstr "Cause %(goal)s HP of damage to enemy heavy tanks"
+
+msgid "pm4_11_1_8_description_topByDamage"
+msgstr "Be the top player on your team by damage caused"
+
+msgid "pm4_11_1_8_short"
+msgstr "Vanguard-8"
+
+msgid "pm4_11_1_8_title_damage"
+msgstr "Damage"
+
+msgid "pm4_11_1_8_title_topByDamage"
+msgstr "Top Player"
+
+msgid "pm4_11_1_9"
+msgstr "Vanguard-9"
+
+msgid "pm4_11_1_9_description_damage"
+msgstr "Cause %(goal)s HP of damage to immobilized enemy vehicles"
+
+msgid "pm4_11_1_9_description_damageAlt"
+msgstr "Cause %(goal)s HP of damage to enemy vehicles"
+
+msgid "pm4_11_1_9_short"
+msgstr "Vanguard-9"
+
+msgid "pm4_11_1_9_title_damage"
+msgstr "Damage"
+
+msgid "pm4_11_1_9_title_damageAlt"
+msgstr "Damage"
+
+msgid "pm4_11_2_1"
+msgstr "Ambush-1"
+
+msgid "pm4_11_2_10"
+msgstr "Ambush-10"
+
+msgid "pm4_11_2_10_description_damage"
+msgstr "Cause %(goal)s HP of damage"
+
+msgid "pm4_11_2_10_description_topByExp"
+msgstr "Be the top player on your team by experience earned"
+
+msgid "pm4_11_2_10_short"
+msgstr "Ambush-10"
+
+msgid "pm4_11_2_10_title_damage"
+msgstr "Damage"
+
+msgid "pm4_11_2_10_title_topByExp"
+msgstr "Top Player"
+
+msgid "pm4_11_2_11"
+msgstr "Ambush-11"
+
+msgid "pm4_11_2_11_description_damage"
+msgstr ""
+"Cause %(goal)s HP of damage to enemy vehicles that are moving by shooting "
+"them"
+
+msgid "pm4_11_2_11_short"
+msgstr "Ambush-11"
+
+msgid "pm4_11_2_11_title_damage"
+msgstr "Damage"
+
+msgid "pm4_11_2_12"
+msgstr "Ambush-12"
+
+msgid "pm4_11_2_12_description_damage"
+msgstr "Cause %(goal)s HP of damage"
+
+msgid "pm4_11_2_12_description_kills"
+msgstr "Destroy %(goal)s enemy vehicles"
+
+msgid "pm4_11_2_12_short"
+msgstr "Ambush-12"
+
+msgid "pm4_11_2_12_title_damage"
+msgstr "Damage"
+
+msgid "pm4_11_2_12_title_kills"
+msgstr "Destroy"
+
+msgid "pm4_11_2_13"
+msgstr "Ambush-13"
+
+msgid "pm4_11_2_13_description_damage"
+msgstr "Cause %(goal)s HP of damage to enemy vehicles"
+
+msgid "pm4_11_2_13_description_totalDamagePercent"
+msgstr "Cause 25%% of the total amount of damage caused by your team"
+
+msgid "pm4_11_2_13_short"
+msgstr "Ambush-13"
+
+msgid "pm4_11_2_13_title_damage"
+msgstr "Damage"
+
+msgid "pm4_11_2_13_title_totalDamagePercent"
+msgstr "Damage"
+
+msgid "pm4_11_2_14"
+msgstr "Ambush-14"
+
+msgid "pm4_11_2_14_description_medal"
+msgstr "Earn the High Caliber award"
+
+msgid "pm4_11_2_14_short"
+msgstr "Ambush-14"
+
+msgid "pm4_11_2_14_title_medal"
+msgstr "Battle Heroes"
+
+msgid "pm4_11_2_15"
+msgstr "Ambush-15"
+
+msgid "pm4_11_2_15_description_damage"
+msgstr ""
+"Cause %(vehicleHealthFactor)s times more damage than the hit points of your "
+"vehicle"
+
+msgid "pm4_11_2_15_short"
+msgstr "Ambush-15"
+
+msgid "pm4_11_2_15_title_damage"
+msgstr "Damage"
+
+msgid "pm4_11_2_16"
+msgstr "Ambush-16"
+
+msgid "pm4_11_2_16_description_killWithCausingDamage"
+msgstr ""
+"Destroy %(goal)s enemy vehicles, causing at least %(damageDealt)s HP of "
+"damage to it"
+
+msgid "pm4_11_2_16_short"
+msgstr "Ambush-16"
+
+msgid "pm4_11_2_16_title_killWithCausingDamage"
+msgstr "Destroy"
+
+msgid "pm4_11_2_17"
+msgstr "Ambush-17"
+
+msgid "pm4_11_2_17_description_damage"
+msgstr "Cause %(goal)s HP of damage"
+
+msgid "pm4_11_2_17_description_kills"
+msgstr "Destroy %(goal)s enemy vehicles"
+
+msgid "pm4_11_2_17_short"
+msgstr "Ambush-17"
+
+msgid "pm4_11_2_17_title_damage"
+msgstr "Damage"
+
+msgid "pm4_11_2_17_title_kills"
+msgstr "Destroy"
+
+msgid "pm4_11_2_18"
+msgstr "Ambush-18"
+
+msgid "pm4_11_2_18_description_damage"
+msgstr ""
+"Cause %(goal)s HP of damage to enemy vehicles from a distance of "
+"%(distanceGreatOrEqual)s m or more"
+
+msgid "pm4_11_2_18_description_topByExp"
+msgstr "Be the top player on your team by experience earned"
+
+msgid "pm4_11_2_18_short"
+msgstr "Ambush-18"
+
+msgid "pm4_11_2_18_title_damage"
+msgstr "Damage"
+
+msgid "pm4_11_2_18_title_topByExp"
+msgstr "Top Player"
+
+msgid "pm4_11_2_19"
+msgstr "Ambush-19"
+
+msgid "pm4_11_2_19_description_kills"
+msgstr ""
+"Destroy %(goal)s enemy vehicles before receiving any damage to your vehicle"
+
+msgid "pm4_11_2_19_short"
+msgstr "Ambush-19"
+
+msgid "pm4_11_2_19_title_kills"
+msgstr "Destroy"
+
+msgid "pm4_11_2_1_description_damage"
+msgstr "Cause %(goal)s HP of damage"
+
+msgid "pm4_11_2_1_description_piercings"
+msgstr "Score %(goal)s armor-penetrating hits"
+
+msgid "pm4_11_2_1_short"
+msgstr "Ambush-1"
+
+msgid "pm4_11_2_1_title_damage"
+msgstr "Damage"
+
+msgid "pm4_11_2_1_title_piercings"
+msgstr "Penetration"
+
+msgid "pm4_11_2_2"
+msgstr "Ambush-2"
+
+msgid "pm4_11_2_20"
+msgstr "Ambush-20"
+
+msgid "pm4_11_2_20_description_totalDamagePercent"
+msgstr "Cause 30%% of the total amount of damage caused by your team"
+
+msgid "pm4_11_2_20_description_win"
+msgstr "Destroy all enemy vehicles / capture or defend the base"
+
+msgid "pm4_11_2_20_short"
+msgstr "Ambush-20"
+
+msgid "pm4_11_2_20_title_totalDamagePercent"
+msgstr "Damage"
+
+msgid "pm4_11_2_20_title_win"
+msgstr "Win a battle"
+
+msgid "pm4_11_2_21"
+msgstr "Ambush-21"
+
+msgid "pm4_11_2_21_description_damage"
+msgstr "Cause %(goal)s HP of damage to enemy vehicles"
+
+msgid "pm4_11_2_21_short"
+msgstr "Ambush-21"
+
+msgid "pm4_11_2_21_title_damage"
+msgstr "Damage"
+
+msgid "pm4_11_2_2_description_damage"
+msgstr ""
+"Cause %(goal)s HP of damage during the first %(timeLimit)s minutes of the "
+"battle"
+
+msgid "pm4_11_2_2_description_killsDiversity"
+msgstr "Destroy %(goal)s enemy vehicles of %(uniqueGoal)s different types"
+
+msgid "pm4_11_2_2_short"
+msgstr "Ambush-2"
+
+msgid "pm4_11_2_2_title_damage"
+msgstr "Damage"
+
+msgid "pm4_11_2_2_title_killsDiversity"
+msgstr "Destroy"
+
+msgid "pm4_11_2_3"
+msgstr "Ambush-3"
+
+msgid "pm4_11_2_3_description_topByExp"
+msgstr "Be the top player on your team by experience earned"
+
+msgid "pm4_11_2_3_short"
+msgstr "Ambush-3"
+
+msgid "pm4_11_2_3_title_topByExp"
+msgstr "Top Player"
+
+msgid "pm4_11_2_4"
+msgstr "Ambush-4"
+
+msgid "pm4_11_2_4_description_damage"
+msgstr "Cause %(goal)s HP of damage to enemy medium tanks"
+
+msgid "pm4_11_2_4_description_kills"
+msgstr ""
+"Destroy %(goal)s enemy vehicles outside the view range of your vehicle"
+
+msgid "pm4_11_2_4_short"
+msgstr "Ambush-4"
+
+msgid "pm4_11_2_4_title_damage"
+msgstr "Damage"
+
+msgid "pm4_11_2_4_title_kills"
+msgstr "Destroy"
+
+msgid "pm4_11_2_5"
+msgstr "Ambush-5"
+
+msgid "pm4_11_2_5_description_damage"
+msgstr ""
+"Cause %(goal)s HP of damage while remaining unseen by enemies at the moment "
+"the damage is caused"
+
+msgid "pm4_11_2_5_short"
+msgstr "Ambush-5"
+
+msgid "pm4_11_2_5_title_damage"
+msgstr "Damage"
+
+msgid "pm4_11_2_6"
+msgstr "Ambush-6"
+
+msgid "pm4_11_2_6_description_damageAndAssist"
+msgstr "Cause and assist a total of %(goal)s HP of damage"
+
+msgid "pm4_11_2_6_short"
+msgstr "Ambush-6"
+
+msgid "pm4_11_2_6_title_damageAndAssist"
+msgstr "Complex Condition"
+
+msgid "pm4_11_2_7"
+msgstr "Ambush-7"
+
+msgid "pm4_11_2_7_description_medal"
+msgstr "Earn the Tank Sniper award"
+
+msgid "pm4_11_2_7_short"
+msgstr "Ambush-7"
+
+msgid "pm4_11_2_7_title_medal"
+msgstr "Battle Heroes"
+
+msgid "pm4_11_2_8"
+msgstr "Ambush-8"
+
+msgid "pm4_11_2_8_description_kills"
+msgstr ""
+"Destroy %(goal)s enemy vehicles from a distance of %(distanceGreatOrEqual)s "
+"m or more"
+
+msgid "pm4_11_2_8_short"
+msgstr "Ambush-8"
+
+msgid "pm4_11_2_8_title_kills"
+msgstr "Destroy"
+
+msgid "pm4_11_2_9"
+msgstr "Ambush-9"
+
+msgid "pm4_11_2_9_description_damage"
+msgstr "Cause %(goal)s HP of damage to immobilized enemy vehicles"
+
+msgid "pm4_11_2_9_description_damageAlt"
+msgstr "Cause %(goal)s HP of damage"
+
+msgid "pm4_11_2_9_short"
+msgstr "Ambush-9"
+
+msgid "pm4_11_2_9_title_damage"
+msgstr "Damage"
+
+msgid "pm4_11_2_9_title_damageAlt"
+msgstr "Damage"
+
+msgid "pm4_11_3_1"
+msgstr "Assistance-1"
+
+msgid "pm4_11_3_10"
+msgstr "Assistance-10"
+
+msgid "pm4_11_3_10_description_assist"
+msgstr ""
+"Enable your allies to cause %(goal)s HP of damage by spotting or "
+"immobilizing enemy vehicles while you are unseen"
+
+msgid "pm4_11_3_10_description_stunTime"
+msgstr ""
+"Stun enemy medium tanks and tank destroyers for %(goal)s seconds in total. "
+"Potential stun duration is counted"
+
+msgid "pm4_11_3_10_short"
+msgstr "Assistance-10"
+
+msgid "pm4_11_3_10_title_assist"
+msgstr "Assistance"
+
+msgid "pm4_11_3_10_title_stunTime"
+msgstr "Stun"
+
+msgid "pm4_11_3_11"
+msgstr "Assistance-11"
+
+msgid "pm4_11_3_11_description_assist"
+msgstr ""
+"Enable your allies to cause %(goal)s HP of damage to enemy vehicles by "
+"spotting, immobilizing, or stunning them"
+
+msgid "pm4_11_3_11_short"
+msgstr "Assistance-11"
+
+msgid "pm4_11_3_11_title_assist"
+msgstr "Assistance"
+
+msgid "pm4_11_3_12"
+msgstr "Assistance-12"
+
+msgid "pm4_11_3_12_description_assistedKills"
+msgstr ""
+"Enable your allies to destroy %(goal)s enemy vehicles by spotting, "
+"immobilizing, or stunning them"
+
+msgid "pm4_11_3_12_short"
+msgstr "Assistance-12"
+
+msgid "pm4_11_3_12_title_assistedKills"
+msgstr "Assistance"
+
+msgid "pm4_11_3_13"
+msgstr "Assistance-13"
+
+msgid "pm4_11_3_13_description_medal"
+msgstr "Receive the Mastery Badge Class I or higher"
+
+msgid "pm4_11_3_13_short"
+msgstr "Assistance-13"
+
+msgid "pm4_11_3_13_title_medal"
+msgstr "Mastery Badge"
+
+msgid "pm4_11_3_14"
+msgstr "Assistance-14"
+
+msgid "pm4_11_3_14_description_alive"
+msgstr "Survive the battle"
+
+msgid "pm4_11_3_14_description_topByExp"
+msgstr "Be the top player on both teams by experience earned"
+
+msgid "pm4_11_3_14_short"
+msgstr "Assistance-14"
+
+msgid "pm4_11_3_14_title_alive"
+msgstr "Survive"
+
+msgid "pm4_11_3_14_title_topByExp"
+msgstr "Top Player"
+
+msgid "pm4_11_3_15"
+msgstr "Assistance-15"
+
+msgid "pm4_11_3_15_description_assistedKills"
+msgstr ""
+"Enable your allies to destroy %(goal)s enemy vehicles by spotting, "
+"immobilizing, or stunning them"
+
+msgid "pm4_11_3_15_short"
+msgstr "Assistance-15"
+
+msgid "pm4_11_3_15_title_assistedKills"
+msgstr "Assistance"
+
+msgid "pm4_11_3_16"
+msgstr "Assistance-16"
+
+msgid "pm4_11_3_16_description_damageCausedAtMovementSpeed"
+msgstr ""
+"Cause %(goal)s HP of damage to enemy vehicles while moving at a speed of at "
+"least %(attackerMovingSpeedGreaterOrEqual)s km/h"
+
+msgid "pm4_11_3_16_description_kills"
+msgstr "Destroy %(goal)s moving enemy vehicles by shooting them"
+
+msgid "pm4_11_3_16_short"
+msgstr "Assistance-16"
+
+msgid "pm4_11_3_16_title_damageCausedAtMovementSpeed"
+msgstr "Damage"
+
+msgid "pm4_11_3_16_title_kills"
+msgstr "Destroy"
+
+msgid "pm4_11_3_17"
+msgstr "Assistance-17"
+
+msgid "pm4_11_3_17_description_alive"
+msgstr "Survive the battle"
+
+msgid "pm4_11_3_17_description_assist"
+msgstr ""
+"Enable your allies to cause %(goal)s HP of damage to enemy vehicles by "
+"stunning or immobilizing them and survive the battle"
+
+msgid "pm4_11_3_17_description_damageAndAssist"
+msgstr ""
+"Damage caused (including damage caused with your assistance) must total "
+"%(goal)s HP and survive the battle"
+
+msgid "pm4_11_3_17_short"
+msgstr "Assistance-17"
+
+msgid "pm4_11_3_17_title_alive"
+msgstr "Survive"
+
+msgid "pm4_11_3_17_title_assist"
+msgstr "Assistance"
+
+msgid "pm4_11_3_17_title_damageAndAssist"
+msgstr "Complex Condition"
+
+msgid "pm4_11_3_18"
+msgstr "Assistance-18"
+
+msgid "pm4_11_3_18_description_kills"
+msgstr ""
+"Destroy %(goal)s enemy vehicles from a distance of %(distanceShortOrEqual)s "
+"m or less"
+
+msgid "pm4_11_3_18_description_killsAlt"
+msgstr ""
+"Destroy %(goal)s enemy vehicles from a distance of %(distanceGreatOrEqual)s "
+"m or more"
+
+msgid "pm4_11_3_18_short"
+msgstr "Assistance-18"
+
+msgid "pm4_11_3_18_title_kills"
+msgstr "Destroy"
+
+msgid "pm4_11_3_18_title_killsAlt"
+msgstr "Destroy"
+
+msgid "pm4_11_3_19"
+msgstr "Assistance-19"
+
+msgid "pm4_11_3_19_description_medal"
+msgstr "Receive the Ace Tanker Mastery Badge"
+
+msgid "pm4_11_3_19_short"
+msgstr "Assistance-19"
+
+msgid "pm4_11_3_19_title_medal"
+msgstr "Mastery Badge"
+
+msgid "pm4_11_3_1_description_alive"
+msgstr "Survive the battle"
+
+msgid "pm4_11_3_1_description_kills"
+msgstr "Destroy an enemy SPG and survive the battle"
+
+msgid "pm4_11_3_1_description_stunNumber"
+msgstr "Stun enemy vehicles %(goal)s times and survive the battle"
+
+msgid "pm4_11_3_1_short"
+msgstr "Assistance-1"
+
+msgid "pm4_11_3_1_title_alive"
+msgstr "Survive"
+
+msgid "pm4_11_3_1_title_kills"
+msgstr "Destroy"
+
+msgid "pm4_11_3_1_title_stunNumber"
+msgstr "Stun"
+
+msgid "pm4_11_3_2"
+msgstr "Assistance-2"
+
+msgid "pm4_11_3_20"
+msgstr "Assistance-20"
+
+msgid "pm4_11_3_20_description_assist"
+msgstr ""
+"Enable your allies to cause %(goal)s HP of damage to enemy vehicles you "
+"spotted while unseen and win a battle"
+
+msgid "pm4_11_3_20_description_stunNumber"
+msgstr "Stun enemy heavy tanks %(goal)s times and win a battle"
+
+msgid "pm4_11_3_20_description_win"
+msgstr "Destroy all enemy vehicles / capture or defend the base"
+
+msgid "pm4_11_3_20_short"
+msgstr "Assistance-20"
+
+msgid "pm4_11_3_20_title_assist"
+msgstr "Assistance"
+
+msgid "pm4_11_3_20_title_stunNumber"
+msgstr "Stun"
+
+msgid "pm4_11_3_20_title_win"
+msgstr "Win a battle"
+
+msgid "pm4_11_3_21"
+msgstr "Assistance-21"
+
+msgid "pm4_11_3_21_description_alive"
+msgstr "Survive the battle"
+
+msgid "pm4_11_3_21_description_damageAndAssist"
+msgstr ""
+"Damage caused (including damage caused with your assistance) must total "
+"%(goal)s HP"
+
+msgid "pm4_11_3_21_short"
+msgstr "Assistance-21"
+
+msgid "pm4_11_3_21_title_alive"
+msgstr "Survive"
+
+msgid "pm4_11_3_21_title_damageAndAssist"
+msgstr "Complex Condition"
+
+msgid "pm4_11_3_2_description_kills"
+msgstr "Destroy an enemy light tank"
+
+msgid "pm4_11_3_2_description_stunTime"
+msgstr ""
+"Stun enemy vehicles for %(goal)s seconds in total. Potential stun duration "
+"is counted"
+
+msgid "pm4_11_3_2_short"
+msgstr "Assistance-2"
+
+msgid "pm4_11_3_2_title_kills"
+msgstr "Destroy"
+
+msgid "pm4_11_3_2_title_stunTime"
+msgstr "Stun"
+
+msgid "pm4_11_3_3"
+msgstr "Assistance-3"
+
+msgid "pm4_11_3_3_description_assistedHits"
+msgstr ""
+"Enable your allies to cause damage to %(goal)s enemy vehicles by spotting, "
+"immobilizing, or stunning them"
+
+msgid "pm4_11_3_3_short"
+msgstr "Assistance-3"
+
+msgid "pm4_11_3_3_title_assistedHits"
+msgstr "Assistance"
+
+msgid "pm4_11_3_4"
+msgstr "Assistance-4"
+
+msgid "pm4_11_3_4_description_alive"
+msgstr "Survive the battle"
+
+msgid "pm4_11_3_4_description_spotNumber"
+msgstr "Spot %(goal)s enemy vehicles and survive the battle"
+
+msgid "pm4_11_3_4_description_stunNumber"
+msgstr ""
+"Stun %(stunSeveralTargets)s enemy vehicles with a single shot %(goal)s times"
+" and survive the battle"
+
+msgid "pm4_11_3_4_short"
+msgstr "Assistance-4"
+
+msgid "pm4_11_3_4_title_alive"
+msgstr "Survive"
+
+msgid "pm4_11_3_4_title_spotNumber"
+msgstr "Spot"
+
+msgid "pm4_11_3_4_title_stunNumber"
+msgstr "Stun"
+
+msgid "pm4_11_3_5"
+msgstr "Assistance-5"
+
+msgid "pm4_11_3_5_description_medal"
+msgstr "Receive the Mastery Badge Class II or higher"
+
+msgid "pm4_11_3_5_short"
+msgstr "Assistance-5"
+
+msgid "pm4_11_3_5_title_medal"
+msgstr "Mastery Badge"
+
+msgid "pm4_11_3_6"
+msgstr "Assistance-6"
+
+msgid "pm4_11_3_6_description_damageAndAssist"
+msgstr ""
+"Damage caused (including damage caused with your assistance) must total "
+"%(goal)s HP"
+
+msgid "pm4_11_3_6_short"
+msgstr "Assistance-6"
+
+msgid "pm4_11_3_6_title_damageAndAssist"
+msgstr "Complex Condition"
+
+msgid "pm4_11_3_7"
+msgstr "Assistance-7"
+
+msgid "pm4_11_3_7_description_assist"
+msgstr ""
+"Enable your allies to cause %(goal)s HP of damage to enemy vehicles by "
+"spotting, stunning, or immobilizing them"
+
+msgid "pm4_11_3_7_description_kills"
+msgstr "Destroy an enemy SPG"
+
+msgid "pm4_11_3_7_short"
+msgstr "Assistance-7"
+
+msgid "pm4_11_3_7_title_assist"
+msgstr "Assistance"
+
+msgid "pm4_11_3_7_title_kills"
+msgstr "Destroy"
+
+msgid "pm4_11_3_8"
+msgstr "Assistance-8"
+
+msgid "pm4_11_3_8_description_kills"
+msgstr "Destroy %(goal)s enemy vehicles"
+
+msgid "pm4_11_3_8_short"
+msgstr "Assistance-8"
+
+msgid "pm4_11_3_8_title_kills"
+msgstr "Destroy"
+
+msgid "pm4_11_3_9"
+msgstr "Assistance-9"
+
+msgid "pm4_11_3_9_description_kills"
+msgstr ""
+"Destroy %(goal)s enemy vehicles from a distance of %(distanceShortOrEqual)s "
+"m or less"
+
+msgid "pm4_11_3_9_description_stunNumber"
+msgstr "Stun enemy medium tanks or tank destroyers %(goal)s times"
+
+msgid "pm4_11_3_9_short"
+msgstr "Assistance-9"
+
+msgid "pm4_11_3_9_title_kills"
+msgstr "Destroy"
+
+msgid "pm4_11_3_9_title_stunNumber"
+msgstr "Stun"
+
 msgid "quest/advice/biathlon/description"
 msgstr ""
 "Each mission of this type has a limited number of attempts to complete the "
@@ -11633,6 +12677,9 @@ msgstr "Second Front"
 msgid "season_3"
 msgstr "Sector 3"
 
+msgid "season_4"
+msgstr "Sector 3"
+
 msgid "tile_1"
 msgstr "StuG IV"
 
@@ -11643,6 +12690,14 @@ msgid "tile_10_descr"
 msgstr ""
 "A set of missions for all vehicle types to receive the American Black Rock "
 "heavy tank."
+
+msgid "tile_11"
+msgstr "Fossa"
+
+msgid "tile_11_descr"
+msgstr ""
+"A set of missions for all vehicle types to receive the German Fossa VM 68 "
+"medium tank."
 
 msgid "tile_1_descr"
 msgstr ""

@@ -1240,6 +1240,15 @@ class ReferralModifier(ActionModifier):
         super(ReferralModifier, self).__init__('referralDisabled', params, modType=ACTION_MODIFIER_TYPE.AVAILABILITY)
 
 
+class EventStateModifier(ActionModifier):
+
+    def __init__(self, name, params):
+        super(EventStateModifier, self).__init__(name, params, modType=ACTION_MODIFIER_TYPE.AVAILABILITY)
+
+    def getState(self):
+        return self.getParams().get('state')
+
+
 class TradeInModifier(ActionModifier):
 
     def __init__(self, name, params):
@@ -1333,6 +1342,8 @@ _MODIFIERS = (
   'set_MarathonFinished', MarathonEventModifier),
  (
   'ReferralProgramDisabled', ReferralModifier),
+ (
+  'EventState', EventStateModifier),
  (
   'LobbyHeaderTabCounterModification', LobbyHeaderTabCounterModifier))
 _MODIFIERS_DICT = dict(_MODIFIERS)

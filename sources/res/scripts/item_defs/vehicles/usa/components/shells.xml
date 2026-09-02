@@ -1619,6 +1619,7 @@
 		<isTracer>true</isTracer>
 		<effectsCaliber>85</effectsCaliber>
 		<effects>mainSH</effects>
+		<prefabEffects>HighExplosiveHitSPG</prefabEffects>
 		<damage>
 			<armor>175</armor>
 			<devices>100</devices>
@@ -1707,6 +1708,7 @@
 		<caliber>75</caliber>
 		<isTracer>true</isTracer>
 		<effects>mediumArmorPiercing1</effects>
+		<prefabEffects>ArmorPiercingHitAutoLowFireRate</prefabEffects>
 		<damage>
 			<armor>56</armor>
 			<devices>2</devices>
@@ -1728,6 +1730,7 @@
 		<caliber>75</caliber>
 		<isTracer>true</isTracer>
 		<effects>mediumAPCR1</effects>
+		<prefabEffects>ArmorPiercingCRHitAutoLowFireRate</prefabEffects>
 		<damage>
 			<armor>56</armor>
 			<devices>2</devices>
@@ -1750,6 +1753,7 @@
 		<explosionRadius>0</explosionRadius>
 		<isTracer>true</isTracer>
 		<effects>mediumHighExplosive1</effects>
+		<prefabEffects>HighExplosiveHitAutoLowFireRate</prefabEffects>
 		<damage>
 			<armor>110</armor>
 			<devices>2</devices>
@@ -1872,7 +1876,7 @@
 		<isTracer>true</isTracer>
 		<effects>mediumArmorPiercing</effects>
 		<damage>
-			<armor>135</armor>
+			<armor>120</armor>
 			<devices>105</devices>
 		</damage>
 		<normalizationAngle>5</normalizationAngle>
@@ -2103,7 +2107,7 @@
 		<isTracer>true</isTracer>
 		<effects>mediumAPCR</effects>
 		<damage>
-			<armor>135</armor>
+			<armor>120</armor>
 			<devices>105</devices>
 		</damage>
 		<normalizationAngle>2</normalizationAngle>
@@ -2423,7 +2427,7 @@
 		<isTracer>true</isTracer>
 		<effects>mediumHighExplosive</effects>
 		<damage>
-			<armor>185</armor>
+			<armor>175</armor>
 			<devices>105</devices>
 		</damage>
 		<armorSpalls>
@@ -2433,7 +2437,7 @@
 			</impactRadius>
 			<coneAngle>90</coneAngle>
 			<damage>
-				<armor>95</armor>
+				<armor>90</armor>
 				<devices>55</devices>
 			</damage>
 		</armorSpalls>
@@ -2645,7 +2649,7 @@
 		<isTracer>true</isTracer>
 		<effects>mediumArmorPiercing</effects>
 		<damage>
-			<armor>125</armor>
+			<armor>120</armor>
 			<devices>105</devices>
 		</damage>
 		<normalizationAngle>5</normalizationAngle>
@@ -2696,7 +2700,7 @@
 		<isTracer>true</isTracer>
 		<effects>mediumAPCR</effects>
 		<damage>
-			<armor>125</armor>
+			<armor>120</armor>
 			<devices>105</devices>
 		</damage>
 		<normalizationAngle>2</normalizationAngle>
@@ -2745,7 +2749,7 @@
 		<isTracer>true</isTracer>
 		<effects>mediumAPCR</effects>
 		<damage>
-			<armor>150</armor>
+			<armor>135</armor>
 			<devices>105</devices>
 		</damage>
 		<normalizationAngle>2</normalizationAngle>
@@ -2777,7 +2781,7 @@
 		<isTracer>true</isTracer>
 		<effects>mediumAPCR</effects>
 		<damage>
-			<armor>175</armor>
+			<armor>150</armor>
 			<devices>105</devices>
 		</damage>
 		<normalizationAngle>2</normalizationAngle>
@@ -2793,7 +2797,7 @@
 		<isTracer>true</isTracer>
 		<effects>mediumAPCR</effects>
 		<damage>
-			<armor>170</armor>
+			<armor>135</armor>
 			<devices>105</devices>
 		</damage>
 		<normalizationAngle>2</normalizationAngle>
@@ -2874,7 +2878,7 @@
 		<isTracer>true</isTracer>
 		<effects>mediumHighExplosive</effects>
 		<damage>
-			<armor>185</armor>
+			<armor>175</armor>
 			<devices>105</devices>
 		</damage>
 		<armorSpalls>
@@ -2884,7 +2888,7 @@
 			</impactRadius>
 			<coneAngle>90</coneAngle>
 			<damage>
-				<armor>95</armor>
+				<armor>90</armor>
 				<devices>55</devices>
 			</damage>
 		</armorSpalls>
@@ -2904,7 +2908,7 @@
 		<isTracer>true</isTracer>
 		<effects>mediumHighExplosive</effects>
 		<damage>
-			<armor>185</armor>
+			<armor>175</armor>
 			<devices>105</devices>
 		</damage>
 		<armorSpalls>
@@ -2914,7 +2918,7 @@
 			</impactRadius>
 			<coneAngle>90</coneAngle>
 			<damage>
-				<armor>95</armor>
+				<armor>90</armor>
 				<devices>55</devices>
 			</damage>
 		</armorSpalls>
@@ -2964,7 +2968,7 @@
 		<isTracer>true</isTracer>
 		<effects>mediumHighExplosive</effects>
 		<damage>
-			<armor>260</armor>
+			<armor>230</armor>
 			<devices>105</devices>
 		</damage>
 		<armorSpalls>
@@ -2974,7 +2978,7 @@
 			</impactRadius>
 			<coneAngle>90</coneAngle>
 			<damage>
-				<armor>130</armor>
+				<armor>115</armor>
 				<devices>55</devices>
 			</damage>
 		</armorSpalls>
@@ -2994,7 +2998,7 @@
 		<isTracer>true</isTracer>
 		<effects>mediumHighExplosive</effects>
 		<damage>
-			<armor>260</armor>
+			<armor>210</armor>
 			<devices>105</devices>
 		</damage>
 		<armorSpalls>
@@ -3004,7 +3008,7 @@
 			</impactRadius>
 			<coneAngle>90</coneAngle>
 			<damage>
-				<armor>130</armor>
+				<armor>105</armor>
 				<devices>55</devices>
 			</damage>
 		</armorSpalls>
@@ -3090,7 +3094,7 @@
 		<isTracer>true</isTracer>
 		<effects>mediumHollowCharge</effects>
 		<damage>
-			<armor>150</armor>
+			<armor>135</armor>
 			<devices>105</devices>
 		</damage>
 		<ricochetAngle>85</ricochetAngle>
@@ -3130,7 +3134,7 @@
 		<isTracer>true</isTracer>
 		<effects>mediumHollowCharge</effects>
 		<damage>
-			<armor>175</armor>
+			<armor>150</armor>
 			<devices>105</devices>
 		</damage>
 		<ricochetAngle>85</ricochetAngle>
@@ -3150,7 +3154,7 @@
 		<isTracer>true</isTracer>
 		<effects>mediumHollowCharge</effects>
 		<damage>
-			<armor>170</armor>
+			<armor>135</armor>
 			<devices>105</devices>
 		</damage>
 		<ricochetAngle>85</ricochetAngle>
@@ -3861,8 +3865,9 @@
 		<caliber>85</caliber>
 		<isTracer>true</isTracer>
 		<effects>mainArmorPiercing1</effects>
+		<prefabEffects>ArmorPiercingHitAutoLowFireRate</prefabEffects>
 		<damage>
-			<armor>75</armor>
+			<armor>80</armor>
 			<devices>3</devices>
 		</damage>
 		<normalizationAngle>5</normalizationAngle>
@@ -3882,8 +3887,9 @@
 		<caliber>85</caliber>
 		<isTracer>true</isTracer>
 		<effects>mainAPCR1</effects>
+		<prefabEffects>ArmorPiercingCRHitAutoLowFireRate</prefabEffects>
 		<damage>
-			<armor>75</armor>
+			<armor>80</armor>
 			<devices>3</devices>
 		</damage>
 		<normalizationAngle>2</normalizationAngle>
@@ -3904,15 +3910,16 @@
 		<explosionRadius>0</explosionRadius>
 		<isTracer>true</isTracer>
 		<effects>mainHighExplosive1</effects>
+		<prefabEffects>HighExplosiveHitAutoLowFireRate</prefabEffects>
 		<damage>
-			<armor>140</armor>
+			<armor>160</armor>
 			<devices>3</devices>
 		</damage>
 		<armorSpalls>
 			<impactRadius>0</impactRadius>
 			<coneAngle>90</coneAngle>
 			<damage>
-				<armor>140</armor>
+				<armor>160</armor>
 				<devices>3</devices>
 			</damage>
 		</armorSpalls>
@@ -3929,6 +3936,7 @@
 		<caliber>85</caliber>
 		<isTracer>true</isTracer>
 		<effects>mainArmorPiercing1</effects>
+		<prefabEffects>ArmorPiercingHitAutoLowFireRate</prefabEffects>
 		<damage>
 			<armor>75</armor>
 			<devices>3</devices>
@@ -3950,6 +3958,7 @@
 		<caliber>85</caliber>
 		<isTracer>true</isTracer>
 		<effects>mainAPCR1</effects>
+		<prefabEffects>ArmorPiercingCRHitAutoLowFireRate</prefabEffects>
 		<damage>
 			<armor>75</armor>
 			<devices>3</devices>
@@ -3972,6 +3981,7 @@
 		<explosionRadius>0</explosionRadius>
 		<isTracer>true</isTracer>
 		<effects>mainHighExplosive1</effects>
+		<prefabEffects>HighExplosiveHitAutoLowFireRate</prefabEffects>
 		<damage>
 			<armor>140</armor>
 			<devices>3</devices>
@@ -5558,6 +5568,7 @@
 		<caliber>75</caliber>
 		<isTracer>true</isTracer>
 		<effects>mediumArmorPiercing1</effects>
+		<prefabEffects>ArmorPiercingHitAutoLowFireRate</prefabEffects>
 		<damage>
 			<armor>56</armor>
 			<devices>2</devices>
@@ -5579,6 +5590,7 @@
 		<caliber>75</caliber>
 		<isTracer>true</isTracer>
 		<effects>mediumAPCR1</effects>
+		<prefabEffects>ArmorPiercingCRHitAutoLowFireRate</prefabEffects>
 		<damage>
 			<armor>56</armor>
 			<devices>2</devices>
@@ -5601,6 +5613,7 @@
 		<explosionRadius>0</explosionRadius>
 		<isTracer>true</isTracer>
 		<effects>mediumHighExplosive1</effects>
+		<prefabEffects>HighExplosiveHitAutoLowFireRate</prefabEffects>
 		<damage>
 			<armor>110</armor>
 			<devices>2</devices>
@@ -5626,6 +5639,7 @@
 		<caliber>75</caliber>
 		<isTracer>true</isTracer>
 		<effects>mediumArmorPiercing1</effects>
+		<prefabEffects>ArmorPiercingHitAutoLowFireRate</prefabEffects>
 		<damage>
 			<armor>56</armor>
 			<devices>2</devices>
@@ -5647,6 +5661,7 @@
 		<caliber>75</caliber>
 		<isTracer>true</isTracer>
 		<effects>mediumAPCR1</effects>
+		<prefabEffects>ArmorPiercingCRHitAutoLowFireRate</prefabEffects>
 		<damage>
 			<armor>56</armor>
 			<devices>2</devices>
@@ -5669,6 +5684,7 @@
 		<explosionRadius>0</explosionRadius>
 		<isTracer>true</isTracer>
 		<effects>mediumHighExplosive1</effects>
+		<prefabEffects>HighExplosiveHitAutoLowFireRate</prefabEffects>
 		<damage>
 			<armor>110</armor>
 			<devices>2</devices>
@@ -5694,6 +5710,7 @@
 		<caliber>90</caliber>
 		<isTracer>true</isTracer>
 		<effects>mainArmorPiercing1</effects>
+		<prefabEffects>ArmorPiercingHitAutoLowFireRate</prefabEffects>
 		<damage>
 			<armor>105</armor>
 			<devices>4</devices>
@@ -5715,6 +5732,7 @@
 		<caliber>90</caliber>
 		<isTracer>true</isTracer>
 		<effects>mainAPCR1</effects>
+		<prefabEffects>ArmorPiercingCRHitAutoLowFireRate</prefabEffects>
 		<damage>
 			<armor>105</armor>
 			<devices>4</devices>
@@ -5737,6 +5755,7 @@
 		<explosionRadius>0</explosionRadius>
 		<isTracer>true</isTracer>
 		<effects>mainHighExplosive1</effects>
+		<prefabEffects>HighExplosiveHitAutoLowFireRate</prefabEffects>
 		<damage>
 			<armor>180</armor>
 			<devices>4</devices>
@@ -5762,6 +5781,7 @@
 		<caliber>90</caliber>
 		<isTracer>true</isTracer>
 		<effects>mainArmorPiercing1</effects>
+		<prefabEffects>ArmorPiercingHitAutoLowFireRate</prefabEffects>
 		<damage>
 			<armor>105</armor>
 			<devices>4</devices>
@@ -5783,6 +5803,7 @@
 		<caliber>90</caliber>
 		<isTracer>true</isTracer>
 		<effects>mainAPCR1</effects>
+		<prefabEffects>ArmorPiercingCRHitAutoLowFireRate</prefabEffects>
 		<damage>
 			<armor>105</armor>
 			<devices>4</devices>
@@ -5805,6 +5826,7 @@
 		<explosionRadius>0</explosionRadius>
 		<isTracer>true</isTracer>
 		<effects>mainHighExplosive1</effects>
+		<prefabEffects>HighExplosiveHitAutoLowFireRate</prefabEffects>
 		<damage>
 			<armor>180</armor>
 			<devices>4</devices>
@@ -6023,6 +6045,7 @@
 		</explosionRadius>
 		<isTracer>true</isTracer>
 		<effects>mainSH</effects>
+		<prefabEffects>HighExplosiveHitSPG</prefabEffects>
 		<damage>
 			<armor>410</armor>
 			<devices>150</devices>
@@ -9503,7 +9526,7 @@
 		<isTracer>true</isTracer>
 		<effects>largeHighExplosive</effects>
 		<damage>
-			<armor>910</armor>
+			<armor>950</armor>
 			<devices>203</devices>
 		</damage>
 		<armorSpalls>
@@ -9513,7 +9536,7 @@
 			</impactRadius>
 			<coneAngle>90</coneAngle>
 			<damage>
-				<armor>455</armor>
+				<armor>475</armor>
 				<devices>100</devices>
 			</damage>
 		</armorSpalls>
@@ -9584,13 +9607,13 @@
 		<id>111</id>
 		<userString>#usa_vehicles:_152mm_HEAT_XM409</userString>
 		<icon>hc</icon>
-		<price>770</price>
+		<price>1200</price>
 		<kind>HOLLOW_CHARGE</kind>
 		<caliber>152</caliber>
 		<isTracer>true</isTracer>
 		<effects>largeHollowCharge</effects>
 		<damage>
-			<armor>700</armor>
+			<armor>600</armor>
 			<devices>203</devices>
 		</damage>
 		<ricochetAngle>85</ricochetAngle>
@@ -9603,13 +9626,13 @@
 		<id>2167</id>
 		<userString>#usa_vehicles:_152mm_HEAT_XM409_T49</userString>
 		<icon>hc</icon>
-		<price>770</price>
+		<price>1200</price>
 		<kind>HOLLOW_CHARGE</kind>
 		<caliber>152</caliber>
 		<isTracer>true</isTracer>
 		<effects>largeHollowCharge</effects>
 		<damage>
-			<armor>700</armor>
+			<armor>600</armor>
 			<devices>203</devices>
 		</damage>
 		<ricochetAngle>85</ricochetAngle>
@@ -9618,46 +9641,68 @@
 			<!--BW_String-->
 		</piercingPowerLossFactorByDistance>
 	</_152mm_HEAT_XM409_T49>
-	<_152mm_HEAT_XM409E1>
+	<_152mm_HESH_XM657E3>
 		<id>2169</id>
-		<userString>#usa_vehicles:_152mm_HEAT_XM409E1</userString>
-		<icon>hc_premium</icon>
-		<price>6400</price>
-		<improved>true</improved>
-		<kind>HOLLOW_CHARGE</kind>
-		<caliber>152</caliber>
-		<isTracer>true</isTracer>
-		<effects>largeHollowCharge</effects>
-		<damage>
-			<armor>700</armor>
-			<devices>203</devices>
-		</damage>
-		<ricochetAngle>85</ricochetAngle>
-		<piercingPowerLossFactorByDistance>
-			0.05
-			<!--BW_String-->
-		</piercingPowerLossFactorByDistance>
-	</_152mm_HEAT_XM409E1>
-	<_152mm_HEAT_XM409E1_T49>
-		<id>2170</id>
-		<userString>#usa_vehicles:_152mm_HEAT_XM409E1_T49</userString>
-		<icon>hc_premium</icon>
+		<userString>#usa_vehicles:_152mm_HESH_XM657E3</userString>
+		<icon>he_modern_premium</icon>
 		<price>6000</price>
 		<improved>true</improved>
-		<kind>HOLLOW_CHARGE</kind>
+		<kind>HIGH_EXPLOSIVE</kind>
+		<mechanics>MODERN</mechanics>
 		<caliber>152</caliber>
+		<explosionRadius>
+			3.66
+			<!--BW_String-->
+		</explosionRadius>
 		<isTracer>true</isTracer>
-		<effects>largeHollowCharge</effects>
+		<effects>largeHighExplosive</effects>
 		<damage>
-			<armor>700</armor>
+			<armor>750</armor>
 			<devices>203</devices>
 		</damage>
-		<ricochetAngle>85</ricochetAngle>
-		<piercingPowerLossFactorByDistance>
-			0.05
+		<armorSpalls>
+			<impactRadius>
+				3.66
+				<!--BW_String-->
+			</impactRadius>
+			<coneAngle>90</coneAngle>
+			<damage>
+				<armor>375</armor>
+				<devices>100</devices>
+			</damage>
+		</armorSpalls>
+	</_152mm_HESH_XM657E3>
+	<_152mm_HESH_XM657E3_T49>
+		<id>2170</id>
+		<userString>#usa_vehicles:_152mm_HESH_XM657E3_T49</userString>
+		<icon>he_modern_premium</icon>
+		<price>6000</price>
+		<improved>true</improved>
+		<kind>HIGH_EXPLOSIVE</kind>
+		<mechanics>MODERN</mechanics>
+		<caliber>152</caliber>
+		<explosionRadius>
+			3.66
 			<!--BW_String-->
-		</piercingPowerLossFactorByDistance>
-	</_152mm_HEAT_XM409E1_T49>
+		</explosionRadius>
+		<isTracer>true</isTracer>
+		<effects>largeHighExplosive</effects>
+		<damage>
+			<armor>750</armor>
+			<devices>203</devices>
+		</damage>
+		<armorSpalls>
+			<impactRadius>
+				3.66
+				<!--BW_String-->
+			</impactRadius>
+			<coneAngle>90</coneAngle>
+			<damage>
+				<armor>375</armor>
+				<devices>100</devices>
+			</damage>
+		</armorSpalls>
+	</_152mm_HESH_XM657E3_T49>
 	<_155mm_AP_M111>
 		<id>33</id>
 		<userString>#usa_vehicles:_155mm_AP_M111</userString>
@@ -9724,6 +9769,22 @@
 		<normalizationAngle>5</normalizationAngle>
 		<ricochetAngle>70</ricochetAngle>
 	</_155mm_AP_M111E3>
+	<_155mm_AP_M111E3_7x7>
+		<id>120</id>
+		<userString>#usa_vehicles:_155mm_AP_M111E3_7x7</userString>
+		<icon>ap</icon>
+		<price>1650</price>
+		<kind>ARMOR_PIERCING</kind>
+		<caliber>155</caliber>
+		<isTracer>true</isTracer>
+		<effects>hugeArmorPiercing</effects>
+		<damage>
+			<armor>750</armor>
+			<devices>210</devices>
+		</damage>
+		<normalizationAngle>5</normalizationAngle>
+		<ricochetAngle>70</ricochetAngle>
+	</_155mm_AP_M111E3_7x7>
 	<_155mm_AP_M112>
 		<id>34</id>
 		<userString>#usa_vehicles:_155mm_AP_M112</userString>
@@ -9794,6 +9855,23 @@
 		<normalizationAngle>2</normalizationAngle>
 		<ricochetAngle>70</ricochetAngle>
 	</_155mm_APCR_M112E3>
+	<_155mm_APCR_M112E3_7x7>
+		<id>126</id>
+		<userString>#usa_vehicles:_155mm_APCR_M112E3_7x7</userString>
+		<icon>ap_cr_premium</icon>
+		<price>5200</price>
+		<improved>true</improved>
+		<kind>ARMOR_PIERCING_CR</kind>
+		<caliber>155</caliber>
+		<isTracer>true</isTracer>
+		<effects>hugeAPCR</effects>
+		<damage>
+			<armor>750</armor>
+			<devices>210</devices>
+		</damage>
+		<normalizationAngle>2</normalizationAngle>
+		<ricochetAngle>70</ricochetAngle>
+	</_155mm_APCR_M112E3_7x7>
 	<_155mm_HE_M101>
 		<id>35</id>
 		<userString>#usa_vehicles:_155mm_HE_M101</userString>
@@ -9878,6 +9956,7 @@
 		</damageDurationCoeff>
 		<isTracer>true</isTracer>
 		<effects>hugeSH</effects>
+		<prefabEffects>HighExplosiveHitSPG</prefabEffects>
 		<damage>
 			<armor>600</armor>
 			<devices>105</devices>
@@ -9947,6 +10026,36 @@
 			</damage>
 		</armorSpalls>
 	</_155mm_HE_M101E3>
+	<_155mm_HE_M101E3_7x7>
+		<id>127</id>
+		<userString>#usa_vehicles:_155mm_HE_M101E3_7x7</userString>
+		<icon>he_modern</icon>
+		<price>1120</price>
+		<kind>HIGH_EXPLOSIVE</kind>
+		<mechanics>MODERN</mechanics>
+		<caliber>155</caliber>
+		<explosionRadius>
+			3.78
+			<!--BW_String-->
+		</explosionRadius>
+		<isTracer>true</isTracer>
+		<effects>hugeHighExplosive</effects>
+		<damage>
+			<armor>1100</armor>
+			<devices>210</devices>
+		</damage>
+		<armorSpalls>
+			<impactRadius>
+				3.78
+				<!--BW_String-->
+			</impactRadius>
+			<coneAngle>90</coneAngle>
+			<damage>
+				<armor>550</armor>
+				<devices>105</devices>
+			</damage>
+		</armorSpalls>
+	</_155mm_HE_M101E3_7x7>
 	<_155mm_HE_M102>
 		<id>36</id>
 		<userString>#usa_vehicles:_155mm_HE_M102</userString>
@@ -9973,6 +10082,7 @@
 		</damageDurationCoeff>
 		<isTracer>true</isTracer>
 		<effects>hugeSH</effects>
+		<prefabEffects>HighExplosiveHitSPG</prefabEffects>
 		<damage>
 			<armor>500</armor>
 			<devices>105</devices>
@@ -10007,6 +10117,7 @@
 		</damageDurationCoeff>
 		<isTracer>true</isTracer>
 		<effects>hugeSH</effects>
+		<prefabEffects>HighExplosiveHitSPG</prefabEffects>
 		<damage>
 			<armor>500</armor>
 			<devices>105</devices>
@@ -10041,6 +10152,7 @@
 		</damageDurationCoeff>
 		<isTracer>true</isTracer>
 		<effects>hugeSH</effects>
+		<prefabEffects>HighExplosiveHitSPG</prefabEffects>
 		<damage>
 			<armor>500</armor>
 			<devices>105</devices>
@@ -10059,6 +10171,7 @@
 		<explosionRadius>4</explosionRadius>
 		<isTracer>true</isTracer>
 		<effects>hugeSF</effects>
+		<prefabEffects>HighExplosiveSFHitSPG</prefabEffects>
 		<damage>
 			<armor>600</armor>
 			<devices>105</devices>
@@ -10074,6 +10187,7 @@
 		<explosionRadius>4</explosionRadius>
 		<isTracer>true</isTracer>
 		<effects>hugeSF</effects>
+		<prefabEffects>HighExplosiveSFHitSPG</prefabEffects>
 		<damage>
 			<armor>600</armor>
 			<devices>105</devices>
@@ -10089,6 +10203,7 @@
 		<explosionRadius>4</explosionRadius>
 		<isTracer>true</isTracer>
 		<effects>hugeSF</effects>
+		<prefabEffects>HighExplosiveSFHitSPG</prefabEffects>
 		<damage>
 			<armor>600</armor>
 			<devices>105</devices>
@@ -10103,6 +10218,7 @@
 		<caliber>155</caliber>
 		<isTracer>true</isTracer>
 		<effects>hugeSC</effects>
+		<prefabEffects>HollowChargeHitSPG</prefabEffects>
 		<damage>
 			<armor>360</armor>
 			<devices>100</devices>
@@ -10122,6 +10238,7 @@
 		<caliber>155</caliber>
 		<isTracer>true</isTracer>
 		<effects>hugeSC</effects>
+		<prefabEffects>HollowChargeHitSPG</prefabEffects>
 		<damage>
 			<armor>360</armor>
 			<devices>100</devices>
@@ -10141,6 +10258,7 @@
 		<caliber>155</caliber>
 		<isTracer>true</isTracer>
 		<effects>hugeSC</effects>
+		<prefabEffects>HollowChargeHitSPG</prefabEffects>
 		<damage>
 			<armor>360</armor>
 			<devices>100</devices>
@@ -10161,6 +10279,7 @@
 		<explosionRadius>3</explosionRadius>
 		<isTracer>true</isTracer>
 		<effects>hugeSF</effects>
+		<prefabEffects>HighExplosiveSFHitSPG</prefabEffects>
 		<damage>
 			<armor>750</armor>
 			<devices>105</devices>
@@ -10301,6 +10420,7 @@
 		<caliber>155</caliber>
 		<isTracer>true</isTracer>
 		<effects>hugeSA</effects>
+		<prefabEffects>ArmorPiercingHitSPG</prefabEffects>
 		<damage>
 			<armor>420</armor>
 			<devices>100</devices>
@@ -10331,6 +10451,7 @@
 		</damageDurationCoeff>
 		<isTracer>true</isTracer>
 		<effects>hugeSH</effects>
+		<prefabEffects>HighExplosiveHitSPG</prefabEffects>
 		<damage>
 			<armor>600</armor>
 			<devices>105</devices>
@@ -10362,6 +10483,7 @@
 		</damageDurationCoeff>
 		<isTracer>true</isTracer>
 		<effects>hugeSH</effects>
+		<prefabEffects>HighExplosiveHitSPG</prefabEffects>
 		<damage>
 			<armor>600</armor>
 			<devices>105</devices>
@@ -10393,6 +10515,7 @@
 		</damageDurationCoeff>
 		<isTracer>true</isTracer>
 		<effects>hugeSH</effects>
+		<prefabEffects>HighExplosiveHitSPG</prefabEffects>
 		<damage>
 			<armor>600</armor>
 			<devices>105</devices>
@@ -10411,6 +10534,7 @@
 		<explosionRadius>4</explosionRadius>
 		<isTracer>true</isTracer>
 		<effects>hugeSF</effects>
+		<prefabEffects>HighExplosiveSFHitSPG</prefabEffects>
 		<damage>
 			<armor>750</armor>
 			<devices>105</devices>
@@ -10426,6 +10550,7 @@
 		<explosionRadius>4</explosionRadius>
 		<isTracer>true</isTracer>
 		<effects>hugeSF</effects>
+		<prefabEffects>HighExplosiveSFHitSPG</prefabEffects>
 		<damage>
 			<armor>750</armor>
 			<devices>105</devices>
@@ -10441,6 +10566,7 @@
 		<explosionRadius>4</explosionRadius>
 		<isTracer>true</isTracer>
 		<effects>hugeSF</effects>
+		<prefabEffects>HighExplosiveSFHitSPG</prefabEffects>
 		<damage>
 			<armor>750</armor>
 			<devices>105</devices>
@@ -10455,6 +10581,7 @@
 		<caliber>155</caliber>
 		<isTracer>true</isTracer>
 		<effects>hugeSA</effects>
+		<prefabEffects>ArmorPiercingHitSPG</prefabEffects>
 		<damage>
 			<armor>420</armor>
 			<devices>100</devices>
@@ -10471,6 +10598,7 @@
 		<caliber>155</caliber>
 		<isTracer>true</isTracer>
 		<effects>hugeSA</effects>
+		<prefabEffects>ArmorPiercingHitSPG</prefabEffects>
 		<damage>
 			<armor>420</armor>
 			<devices>100</devices>
@@ -10487,6 +10615,7 @@
 		<caliber>155</caliber>
 		<isTracer>true</isTracer>
 		<effects>hugeSA</effects>
+		<prefabEffects>ArmorPiercingHitSPG</prefabEffects>
 		<damage>
 			<armor>420</armor>
 			<devices>100</devices>
@@ -10506,6 +10635,7 @@
 		</caliber>
 		<isTracer>true</isTracer>
 		<effects>hugeSC</effects>
+		<prefabEffects>HollowChargeHitSPG</prefabEffects>
 		<damage>
 			<armor>900</armor>
 			<devices>223</devices>
@@ -10606,6 +10736,7 @@
 		</damageDurationCoeff>
 		<isTracer>true</isTracer>
 		<effects>hugeSH</effects>
+		<prefabEffects>HighExplosiveHitSPG</prefabEffects>
 		<damage>
 			<armor>850</armor>
 			<devices>130</devices>
@@ -10637,6 +10768,7 @@
 		</damageDurationCoeff>
 		<isTracer>true</isTracer>
 		<effects>hugeSH</effects>
+		<prefabEffects>HighExplosiveHitSPG</prefabEffects>
 		<damage>
 			<armor>900</armor>
 			<devices>130</devices>
@@ -10655,6 +10787,7 @@
 		<explosionRadius>6</explosionRadius>
 		<isTracer>true</isTracer>
 		<effects>hugeSF</effects>
+		<prefabEffects>HighExplosiveSFHitSPG</prefabEffects>
 		<damage>
 			<armor>1100</armor>
 			<devices>130</devices>
@@ -10670,6 +10803,7 @@
 		<explosionRadius>6</explosionRadius>
 		<isTracer>true</isTracer>
 		<effects>hugeSF</effects>
+		<prefabEffects>HighExplosiveSFHitSPG</prefabEffects>
 		<damage>
 			<armor>1100</armor>
 			<devices>130</devices>
@@ -10684,6 +10818,7 @@
 		<caliber>203</caliber>
 		<isTracer>true</isTracer>
 		<effects>hugeSA</effects>
+		<prefabEffects>ArmorPiercingHitSPG</prefabEffects>
 		<damage>
 			<armor>600</armor>
 			<devices>135</devices>
@@ -10700,6 +10835,7 @@
 		<caliber>203</caliber>
 		<isTracer>true</isTracer>
 		<effects>hugeSA</effects>
+		<prefabEffects>ArmorPiercingHitSPG</prefabEffects>
 		<damage>
 			<armor>600</armor>
 			<devices>135</devices>
@@ -10730,6 +10866,7 @@
 		</damageDurationCoeff>
 		<isTracer>true</isTracer>
 		<effects>hugeSH</effects>
+		<prefabEffects>HighExplosiveHitSPG</prefabEffects>
 		<damage>
 			<armor>1100</armor>
 			<devices>160</devices>
@@ -10748,6 +10885,7 @@
 		<explosionRadius>7</explosionRadius>
 		<isTracer>true</isTracer>
 		<effects>hugeSF</effects>
+		<prefabEffects>HighExplosiveSFHitSPG</prefabEffects>
 		<damage>
 			<armor>1420</armor>
 			<devices>160</devices>
@@ -10762,6 +10900,7 @@
 		<caliber>240</caliber>
 		<isTracer>true</isTracer>
 		<effects>hugeSA</effects>
+		<prefabEffects>ArmorPiercingHitSPG</prefabEffects>
 		<damage>
 			<armor>750</armor>
 			<devices>160</devices>

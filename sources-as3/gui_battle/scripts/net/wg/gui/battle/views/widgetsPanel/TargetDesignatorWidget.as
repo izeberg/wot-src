@@ -13,8 +13,6 @@ package net.wg.gui.battle.views.widgetsPanel
    public class TargetDesignatorWidget extends TargetDesignatorWidgetMeta implements ITargetDesignatorWidgetMeta
    {
       
-      private static const PROGRESSION_MAX_FRAME:int = 100;
-      
       private static const INSTANT_TRANSITION_STATES:Array = [MECHANICS_WIDGET_CONST.DISABLE,MECHANICS_WIDGET_CONST.IDLE];
       
       private static const HOT_KEY_START_POS_X:int = 0;
@@ -63,7 +61,7 @@ package net.wg.gui.battle.views.widgetsPanel
       
       public function as_setPreparingProgress(param1:Number) : void
       {
-         this.forwardProgress.gotoAndStop(PROGRESSION_MAX_FRAME * param1);
+         this.forwardProgress.gotoAndStop(WidgetsPanel.FORWARD_PROGRESSION_MAX_FRAME * param1);
       }
    }
 }

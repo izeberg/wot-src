@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
+	<Implements>
+		<Interface>SecondaryGunActivatorInterface</Interface>
+	</Implements>
 	<DetailLevel>MY_VEHICLE</DetailLevel>
 	<Properties>
 		<status>
@@ -7,16 +10,6 @@
 			<Flags>ALL_CLIENTS</Flags>
 		</status>
 	</Properties>
-	<CellMethods>
-		<onSecondaryGunUpdate>
-			<Arg>UINT8</Arg>
-			<Arg>FLOAT32</Arg>
-			<Arg>FLOAT32</Arg>
-		</onSecondaryGunUpdate>
-		<tryActivate>
-			<Exposed>OWN_CLIENT</Exposed>
-		</tryActivate>
-	</CellMethods>
 	<ClientMethods/>
 	<DefaultKeyName>supportWeaponComponent</DefaultKeyName>
 </root>

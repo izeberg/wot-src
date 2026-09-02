@@ -44,6 +44,7 @@ package net.wg.gui.battle.views.widgetsPanel.chargeableBurst
       {
          this.penetrationsShadow.setup(param1);
          this.bulletsShadow.setup(param2);
+         this.updateMode(false,true);
       }
       
       public function updateMode(param1:Boolean, param2:Boolean) : void

@@ -103,7 +103,7 @@ package net.wg.gui.lobby.vehicleCompare.controls.view
          {
             this._paramsDelta.setData(this._deltaData);
          }
-         if(isInvalid(INV_HEIGHT,INV_BOTTOM_LINE,INV_HOR_POS))
+         if(isInvalidTypes(INV_HEIGHT,INV_BOTTOM_LINE,INV_HOR_POS))
          {
             _loc2_ = activeRenderers.concat(inactiveRenderers);
          }

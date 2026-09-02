@@ -1,7 +1,7 @@
 import weakref, BigWorld
 from PlayerEvents import g_playerEvents
 from constants import ARENA_GUI_TYPE
-from frameworks.state_machine.events import StringEvent
+from frameworks_common.state_machine.events import StringEvent
 from skeletons.gameplay import PlayerEventID, ReplayEventID
 
 class PlayerEventsAdaptor(object):

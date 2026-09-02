@@ -20,6 +20,10 @@
 				<material>
 					<identifier>s_nd1</identifier>
 					<fx>shaders/std_effects/glow.fx</fx>
+					<property>
+						g_enableEnvMultiplier
+						<Bool>true</Bool>
+					</property>
 					<collisionFlags>255</collisionFlags>
 					<materialKind>112</materialKind>
 					<property>
@@ -32,7 +36,7 @@
 					</property>
 					<property>
 						selfIllumination
-						<Float>10.000000</Float>
+						<Float>20.799999</Float>
 					</property>
 					<property>
 						destBlend

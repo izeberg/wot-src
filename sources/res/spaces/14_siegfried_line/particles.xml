@@ -516,6 +516,14 @@
 			<shader>\data\shaders\ps.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/eff_fireworks.dds</texture>
 		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_fireworks.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_tex_h34.dds</texture>
+		</preload>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/random_events/05_prohorovka_antiaircraft_attack_big_area_s2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/random_events/05_prohorovka_antiaircraft_attack_big_area_s.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/random_events/08_ruinberg_bomb_explosion_tracers.vfx</fn_effect_bin>

@@ -60,7 +60,14 @@
 						<type>StringT</type>
 					</param>
 				</params>
-				<slots/>
+			</block>
+			<block>
+				<class>GameObjectToVehicle</class>
+				<id>GameObjectToVehicle_1</id>
+			</block>
+			<block>
+				<class>GetVehicleGameObject</class>
+				<id>GetVehicleGameObject_1</id>
 			</block>
 			<block>
 				<class>Macro</class>
@@ -72,19 +79,69 @@
 						<type>StringT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
-				<class>GameObjectToVehicle</class>
-				<id>GameObjectToVehicle_1</id>
-				<params/>
-				<slots/>
+				<class>ComponentMethod</class>
+				<id>ComponentMethod_5</id>
+				<params>
+					<param>
+						Animator.startLayerByName
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>arg#0</name>
+						<const>\battleStart\</const>
+					</slot>
+					<slot>
+						<name>arg#1</name>
+						<const>\0.000000\</const>
+					</slot>
+				</slots>
 			</block>
 			<block>
-				<class>GetVehicleGameObject</class>
-				<id>GetVehicleGameObject_1</id>
-				<params/>
-				<slots/>
+				<class>ComponentMethod</class>
+				<id>ComponentMethod_10</id>
+				<params>
+					<param>
+						Animator.stopLayerByName
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>arg#0</name>
+						<const>\battleStart\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>Timer</class>
+				<id>Timer_6</id>
+				<params>
+					<param>
+						1
+						<name>Timer Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>time0</name>
+						<const>\0.010000\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>StartScript</class>
+				<id>StartScript_1</id>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_13</id>
 			</block>
 			<block>
 				<class>ComponentMethod</class>
@@ -108,18 +165,6 @@
 				</slots>
 			</block>
 			<block>
-				<class>StartScript</class>
-				<id>StartScript_1</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
-				<class>If</class>
-				<id>If_13</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
 				<class>ArenaPeriod</class>
 				<id>ArenaPeriod_1</id>
 				<params>
@@ -129,16 +174,9 @@
 						<type>EArenaPeriodT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 		</blocks>
 		<connections>
-			<connection>
-				<from>GameObjectToVehicle_1</from>
-				<input>vehicle</input>
-				<to>Macro_1</to>
-				<output>vehicle</output>
-			</connection>
 			<connection>
 				<from>GetVehicleGameObject_1</from>
 				<input>gameObject</input>
@@ -150,6 +188,54 @@
 				<input>gameObject</input>
 				<to>GetVehicleGameObject_1</to>
 				<output>value</output>
+			</connection>
+			<connection>
+				<from>GameObjectToVehicle_1</from>
+				<input>vehicle</input>
+				<to>Macro_1</to>
+				<output>vehicle</output>
+			</connection>
+			<connection>
+				<from>Macro_1</from>
+				<input>in</input>
+				<to>ComponentMethod_5</to>
+				<output>PrebattleHighlightEnd</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>ComponentMethod_5</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>Timer_6</from>
+				<input>in</input>
+				<to>ComponentMethod_10</to>
+				<output>event0</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>ComponentMethod_10</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>ComponentMethod_5</from>
+				<input>windup</input>
+				<to>Timer_6</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>StartScript_1</from>
+				<input>input</input>
+				<to>If_13</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>ArenaPeriod_1</from>
+				<input>value</input>
+				<to>If_13</to>
+				<output>isActive</output>
 			</connection>
 			<connection>
 				<from>If_13</from>
@@ -164,22 +250,16 @@
 				<output>onBattleStart</output>
 			</connection>
 			<connection>
+				<from>Macro_1</from>
+				<input>in</input>
+				<to>ComponentMethod_4</to>
+				<output>PrebattleHighlightStart</output>
+			</connection>
+			<connection>
 				<from>ContextGetSelf_1</from>
 				<input>gameObject</input>
 				<to>ComponentMethod_4</to>
 				<output>value</output>
-			</connection>
-			<connection>
-				<from>StartScript_1</from>
-				<input>input</input>
-				<to>If_13</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>ArenaPeriod_1</from>
-				<input>value</input>
-				<to>If_13</to>
-				<output>isActive</output>
 			</connection>
 		</connections>
 		<macros/>

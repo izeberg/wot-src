@@ -24,6 +24,10 @@
 					<materialKind>0</materialKind>
 					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
 					<property>
+						g_enableEnvMultiplier
+						<Bool>true</Bool>
+					</property>
+					<property>
 						diffuseMap
 						<Texture>particles/content_deferred/GFX_models/GFX_textures/smoke_07_steam.dds</Texture>
 					</property>
@@ -57,7 +61,7 @@
 					</property>
 					<property>
 						lightMultipliers
-						<Vector4>1.000000 0.200000 1.000000 0.000000</Vector4>
+						<Vector4>5.000000 0.200000 1.000000 0.000000</Vector4>
 					</property>
 					<property>
 						alphaFadeAmountFresnel

@@ -1,9 +1,5 @@
-from gui.app_loader import settings
-from gui.app_loader.decorators import app_getter
-from gui.app_loader.decorators import def_lobby
-from gui.app_loader.decorators import def_battle
-from gui.app_loader.decorators import sf_lobby
-from gui.app_loader.decorators import sf_battle
+from gui.app_loader import settings, decorators
+from gui.app_loader.decorators import app_getter, def_lobby, def_battle, sf_lobby, sf_battle
 __all__ = ('getAppLoaderConfig', 'decorators', 'settings', 'app_getter', 'def_lobby',
            'def_battle', 'sf_lobby', 'sf_battle')
 

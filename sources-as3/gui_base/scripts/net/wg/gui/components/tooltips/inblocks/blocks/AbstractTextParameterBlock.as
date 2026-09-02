@@ -72,6 +72,23 @@ package net.wg.gui.components.tooltips.inblocks.blocks
          throw new AbstractException("AbstractTextParameterBlock.applyParamName" + Errors.ABSTRACT_INVOKE);
       }
       
+      protected function applyParamValue() : void
+      {
+         if(this._data.useHtmlValue)
+         {
+            this.valueTF.htmlText = this._data.value;
+         }
+         else
+         {
+            this.valueTF.text = this._data.value;
+         }
+         if(this._data.valueWidth != -1)
+         {
+            this.valueTF.width = this._data.valueWidth;
+         }
+         updateTextFieldHeight(this.valueTF);
+      }
+      
       protected function clearData() : void
       {
          if(this._data != null)
@@ -88,21 +105,9 @@ package net.wg.gui.components.tooltips.inblocks.blocks
       
       private function applyData() : void
       {
-         if(this._data.useHtmlValue)
-         {
-            this.valueTF.htmlText = this._data.value;
-         }
-         else
-         {
-            this.valueTF.text = this._data.value;
-         }
-         if(this._data.valueWidth != -1)
-         {
-            this.valueTF.width = this._data.valueWidth;
-         }
+         this.applyParamValue();
          this.applyParamName();
          this.onSetBlockWidth(this._blockWidth);
-         updateTextFieldHeight(this.valueTF);
       }
    }
 }

@@ -52,9 +52,9 @@
 		<enable>true</enable>
 		<adaptationSpeed>150.000000</adaptationSpeed>
 		<bloom>
-			<enable>true</enable>
+			<pbsBloom>true</pbsBloom>
 			<threshold>0.510000</threshold>
-			<amount>0.280000</amount>
+			<amount>0.200000</amount>
 			<tint>0.905882 0.937255 1.000000</tint>
 			<dirtAmount>0.320000</dirtAmount>
 		</bloom>
@@ -110,11 +110,11 @@
 		<sunBrightness>0.100000</sunBrightness>
 		<objectEnable>true</objectEnable>
 		<glareEnable>true</glareEnable>
-		<glareIntensity>0.730000</glareIntensity>
+		<glareIntensity>0.500000</glareIntensity>
 		<glareSize>0.010000</glareSize>
 		<flareIntensity>0.050000</flareIntensity>
-		<objectThreshold>3.169925</objectThreshold>
-		<objectFlareIntensity>0.570000</objectFlareIntensity>
+		<objectThreshold>3.584963</objectThreshold>
+		<objectFlareIntensity>0.300000</objectFlareIntensity>
 		<haloEnable>true</haloEnable>
 		<sunTexture1>system/maps/psf_rgbe.dds</sunTexture1>
 		<colorTexture>system/maps/lenscolorF.dds</colorTexture>
@@ -151,6 +151,10 @@
 		<amplify>0.700000</amplify>
 	</SSShadows>
 	<VFX>
+		<vfxModelsMultiplier>0.330000</vfxModelsMultiplier>
+		<cpuParticlesMultiplier>0.330000</cpuParticlesMultiplier>
+		<gpuParticlesMultiplier>0.330000</gpuParticlesMultiplier>
+		<emissiveMaterialsMultiplier>0.330000</emissiveMaterialsMultiplier>
 		<particlesConfigXml/>
 		<particlesSpaceConfigXml>spaces/h33_comp7/particles.xml</particlesSpaceConfigXml>
 	</VFX>

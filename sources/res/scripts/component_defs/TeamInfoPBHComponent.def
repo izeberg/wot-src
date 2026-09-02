@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<CellMethods>
+		<setWinners>
+			<Args>
+				<teamID>INT32</teamID>
+				<winners>PBH_WINNER</winners>
+			</Args>
+		</setWinners>
+	</CellMethods>
+	<ClientMethods/>
+	<Properties>
+		<winners>
+			<Type>
+				ARRAY
+				<of>PBH_WINNER</of>
+			</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</winners>
+	</Properties>
+	<ofEntity>
+		<TeamInfo/>
+	</ofEntity>
+	<DefaultKeyName>pbh</DefaultKeyName>
+</root>

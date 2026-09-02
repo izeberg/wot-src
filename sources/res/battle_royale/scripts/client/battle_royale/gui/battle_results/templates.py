@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.battle_results.components import base
 from battle_royale.gui.battle_results import components
 from gui.battle_results.settings import BATTLE_RESULTS_RECORD as _RECORD

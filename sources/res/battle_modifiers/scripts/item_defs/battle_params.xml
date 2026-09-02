@@ -526,7 +526,8 @@
 		<domain>vehType</domain>
 		<client>
 			<domain>concealment</domain>
-			<useTypes>mul</useTypes>
+			<useTypes>mul add</useTypes>
+			<physicalType>probability</physicalType>
 		</client>
 		<restrictions>
 			<min>
@@ -545,7 +546,8 @@
 		<domain>vehType</domain>
 		<client>
 			<domain>concealment</domain>
-			<useTypes>mul</useTypes>
+			<useTypes>mul add</useTypes>
+			<physicalType>probability</physicalType>
 		</client>
 		<restrictions>
 			<min>
@@ -921,7 +923,7 @@
 		<domain>shellType</domain>
 		<restrictions>
 			<min>
-				0.01
+				0.0
 				<!--BW_String-->
 			</min>
 		</restrictions>

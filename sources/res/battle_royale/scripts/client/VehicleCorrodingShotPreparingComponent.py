@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld
 from battle_royale.gui.constants import BattleRoyaleEquipments
 

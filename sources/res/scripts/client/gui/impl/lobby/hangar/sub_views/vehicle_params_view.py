@@ -210,10 +210,12 @@ class _VehicleParamsPresenterBase(ViewComponent[VehicleParamsViewModel]):
             else:
                 name = R.strings.menu.tank_params.dyn(param.name)()
             return backport.text(name)
-        if KPI.Name.hasValue(param.name):
-            key = 'positive' if param.value >= 0 else 'negative'
-            name = VEHICLE_ATTR_TO_KPI_NAME_MAP.get(param.name, param.name)
-            return json.dumps({'key': key, 'name': name})
+        else:
+            if KPI.Name.hasValue(param.name):
+                key = 'positive' if param.value >= 0 else 'negative'
+                name = VEHICLE_ATTR_TO_KPI_NAME_MAP.get(param.name, param.name)
+                return json.dumps({'key': key, 'name': name})
+            return
 
     def _createGroupViewModel(self, groupName, comparator):
         param = comparator.getExtendedData(groupName)
@@ -262,7 +264,7 @@ class _VehicleParamsPresenterBase(ViewComponent[VehicleParamsViewModel]):
         else:
             diffParams = diffParams if diffParams is not None else {}
             steeringAnglesEmpty = params_helper.lackVehicleSteeringAngles(vehicle)
-            for _, groupName in enumerate(RELATIVE_PARAMS):
+            for groupName in RELATIVE_PARAMS:
                 if concreteGroup is not None and concreteGroup != groupName:
                     continue
                 group = self._createGroupViewModel(groupName=groupName, comparator=self.comparator)

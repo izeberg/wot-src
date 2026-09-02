@@ -125,7 +125,7 @@ package net.wg.gui.battle.views.widgetsPanel.chargeableBurst
          this._angle = param1;
          this._isLast = param2;
          rotation = param1;
-         this.resetCharge();
+         this.anim(false,true);
       }
       
       public function isDisposed() : Boolean
@@ -148,6 +148,7 @@ package net.wg.gui.battle.views.widgetsPanel.chargeableBurst
          gotoAndStop(STATE_IDLE);
          this._isActive = false;
          this._isActivated = false;
+         this.alpha = Values.DEFAULT_ALPHA;
       }
       
       private function removeTween() : void

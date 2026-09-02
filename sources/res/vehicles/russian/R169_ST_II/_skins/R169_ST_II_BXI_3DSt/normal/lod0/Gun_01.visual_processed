@@ -86,6 +86,15 @@
 							</transform>
 						</node>
 					</node>
+					<node>
+						<identifier>HP_gunFire</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>0.048811 0.003020 1.553843</row3>
+						</transform>
+					</node>
 				</node>
 				<node>
 					<identifier>Joint_02</identifier>

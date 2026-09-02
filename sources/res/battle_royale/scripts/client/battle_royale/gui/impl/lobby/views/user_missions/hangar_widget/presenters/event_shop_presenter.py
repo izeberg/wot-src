@@ -1,4 +1,6 @@
+from __future__ import absolute_import
 from gui.Scaleform.daapi.view.lobby.store.browser.shop_helpers import getSteelHunterProductsUrl
+from gui.impl.lobby.user_missions.hangar_widget.presenters.base_child_presenter import UserMissionChildPresenter
 from gui.shared.event_dispatcher import showShop
 from helpers import dependency
 from gui.impl.gen import R
@@ -10,12 +12,18 @@ from skeletons.gui.shared import IItemsCache
 from battle_royale.gui.impl.lobby.tooltips.shop_button_tooltip_view import ShopButtonTooltipView
 from battle_royale.gui.impl.gen.view_models.views.lobby.views.widget.event_shop_model import EventShopModel
 
-class BattleRoyaleEventShopPresenter(TooltipPositionerMixin, BattleRoyaleOverlapCtrlMixin, ViewComponent[EventShopModel]):
+class BattleRoyaleEventShopPresenter(UserMissionChildPresenter, TooltipPositionerMixin, BattleRoyaleOverlapCtrlMixin, ViewComponent[EventShopModel]):
+    GROUP = 'shopEntryPoint'
     __battleRoyaleController = dependency.descriptor(IBattleRoyaleController)
     __itemsCache = dependency.descriptor(IItemsCache)
 
     def __init__(self):
         super(BattleRoyaleEventShopPresenter, self).__init__(model=EventShopModel)
+
+    def createToolTipContent(self, event, contentID):
+        if contentID == R.views.battle_royale.mono.lobby.tooltips.shop_button():
+            return ShopButtonTooltipView()
+        return super(BattleRoyaleEventShopPresenter, self).createToolTipContent(event, contentID)
 
     def _getEvents(self):
         return super(BattleRoyaleEventShopPresenter, self)._getEvents() + (
@@ -27,11 +35,6 @@ class BattleRoyaleEventShopPresenter(TooltipPositionerMixin, BattleRoyaleOverlap
           self.__battleRoyaleController.onPrimeTimeStatusUpdated, self.__update),
          (
           self.getViewModel().openShop, self.__onOpenShop))
-
-    def createToolTipContent(self, event, contentID):
-        if contentID == R.views.battle_royale.mono.lobby.tooltips.shop_button():
-            return ShopButtonTooltipView()
-        return super(BattleRoyaleEventShopPresenter, self).createToolTipContent(event, contentID)
 
     def _getCallbacks(self):
         return super(BattleRoyaleEventShopPresenter, self)._getCallbacks() + (

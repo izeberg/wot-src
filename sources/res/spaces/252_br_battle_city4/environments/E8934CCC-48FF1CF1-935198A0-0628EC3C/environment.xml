@@ -52,36 +52,33 @@
 		<enable>true</enable>
 		<adaptationSpeed>100.000000</adaptationSpeed>
 		<bloom>
-			<enable>true</enable>
+			<pbsBloom>true</pbsBloom>
 			<threshold>0.160000</threshold>
-			<amount>0.390000</amount>
+			<amount>0.330000</amount>
 			<tint>0.419608 0.478431 0.568627</tint>
 			<dirtAmount>0.460000</dirtAmount>
 		</bloom>
 		<environment>
 			<sunlightLumMultiplier>3.100000</sunlightLumMultiplier>
-			<ambientLumMultiplier>1.000000</ambientLumMultiplier>
 			<sunLumMultiplier>1.000000</sunLumMultiplier>
 			<skyLumMultiplier>4.500000</skyLumMultiplier>
+			<skyLumMultiplierDeferred>1.000000</skyLumMultiplierDeferred>
 			<LDR2HDRenableLumaMask>false</LDR2HDRenableLumaMask>
 			<LDR2HDRsaturation>1.000000</LDR2HDRsaturation>
 		</environment>
 		<tonemappings>
 			<tonemapping>
 				<name>RexpTM</name>
-				<middleGray>0.190000</middleGray>
 				<whitePoint>2.800000</whitePoint>
 				<blackPoint>4.364000</blackPoint>
 			</tonemapping>
 			<tonemapping>
 				<name>FilmicTM</name>
-				<middleGray>0.310000</middleGray>
 				<whitePoint>12.790000</whitePoint>
 				<blackPoint>3.500000</blackPoint>
 			</tonemapping>
 			<tonemapping>
 				<name>LinearExpTM</name>
-				<middleGray>0.350000</middleGray>
 				<whitePoint>1.750000</whitePoint>
 				<blackPoint>0.320000</blackPoint>
 			</tonemapping>
@@ -162,6 +159,10 @@
 		<amplify>0.500000</amplify>
 	</SSShadows>
 	<VFX>
+		<vfxModelsMultiplier>0.350000</vfxModelsMultiplier>
+		<cpuParticlesMultiplier>0.350000</cpuParticlesMultiplier>
+		<gpuParticlesMultiplier>0.350000</gpuParticlesMultiplier>
+		<emissiveMaterialsMultiplier>0.350000</emissiveMaterialsMultiplier>
 		<particlesConfigXml>system/data/particles.xml</particlesConfigXml>
 		<particlesSpaceConfigXml>spaces/252_br_battle_city4/particles.xml</particlesSpaceConfigXml>
 	</VFX>
@@ -326,4 +327,7 @@
 		<transmissionMult>0.600000</transmissionMult>
 		<waterReflectionAttenuation>1.000000</waterReflectionAttenuation>
 	</SimplifiedDeferred>
+	<VisibilityTunnel>
+		<shouldOverrideSettings>false</shouldOverrideSettings>
+	</VisibilityTunnel>
 </root>

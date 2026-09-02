@@ -5,7 +5,7 @@ from gui.shared.utils import getPlayerDatabaseID, getPlayerName
 from helpers import dependency
 from messenger.m_constants import USER_TAG
 from messenger.proto.entities import ClanInfo, CurrentLobbyUserEntity
-from messenger.storage import storage_getter
+from messenger.storage import MessengerStorageDescriptor, PlayerCtxStorage, UsersStorage
 from skeletons.gui.shared import IItemsCache
 _logger = logging.getLogger(__name__)
 _CLAN_INFO_ABBREV_INDEX = 1
@@ -37,14 +37,8 @@ def isCurrentPlayer(userID):
 
 class CurrentPlayerHelper(object):
     itemsCache = dependency.descriptor(IItemsCache)
-
-    @storage_getter('playerCtx')
-    def playerCtx(self):
-        return
-
-    @storage_getter('users')
-    def usersStorage(self):
-        return
+    usersStorage = MessengerStorageDescriptor(UsersStorage)
+    playerCtx = MessengerStorageDescriptor(PlayerCtxStorage)
 
     def clear(self):
         g_clientUpdateManager.removeObjectCallbacks(self)

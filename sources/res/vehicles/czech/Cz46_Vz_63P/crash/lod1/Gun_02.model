@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/czech/Cz46_Vz_63P/crash/lod1/Gun_02</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/czech/Cz46_Vz_63P/crash/lod2/Gun_02</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.250000 -0.514953 -1.267620</min>
+		<max>0.505000 0.280762 6.363273</max>
+	</visibilityBox>
+</root>

@@ -326,6 +326,34 @@ package net.wg.gui.lobby.settings
          return super.isCounterCanMarkAsVisited(param1,param2);
       }
       
+      override protected function updateDependedControl(param1:String) : void
+      {
+         var _loc6_:Boolean = false;
+         var _loc7_:SoundButtonEx = null;
+         var _loc2_:GameSettingsContent = this.getContent();
+         var _loc3_:SettingsControlProp = null;
+         var _loc4_:CheckBox = null;
+         var _loc5_:CheckBox = _loc2_[param1 + SettingsConfigHelper.TYPE_CHECKBOX];
+         if(param1 == SettingsConfigHelper.W2GT_ENABLE)
+         {
+            _loc3_ = data[param1];
+            _loc4_ = _loc2_[_loc3_.isDependOn + SettingsConfigHelper.TYPE_CHECKBOX];
+            _loc6_ = _loc5_.enabled && Boolean(_loc3_.changedVal);
+            if(!_loc6_ && _loc4_.selected)
+            {
+               _loc4_.selected = false;
+            }
+            _loc4_.enabled = _loc6_;
+         }
+         else if(param1 == SettingsConfigHelper.NEWBIE_BATTLE_HINTS)
+         {
+            _loc3_ = data[param1];
+            _loc7_ = _loc2_[_loc3_.isDependOn];
+            _loc7_.enabled = _loc5_.enabled;
+         }
+         super.updateDependedControl(param1);
+      }
+      
       public function getContent() : GameSettingsContent
       {
          return GameSettingsContent(this.scrollPane.target);
@@ -453,34 +481,6 @@ package net.wg.gui.lobby.settings
             this._restartNewbieBattleHints.enabled = false;
          }
          dispatchEvent(new SettingViewEvent(SettingViewEvent.ON_RESTART_NEWBIE_BATTLE_HINTS,viewId));
-      }
-      
-      override protected function updateDependedControl(param1:String) : void
-      {
-         var _loc6_:Boolean = false;
-         var _loc7_:SoundButtonEx = null;
-         var _loc2_:GameSettingsContent = this.getContent();
-         var _loc3_:SettingsControlProp = null;
-         var _loc4_:CheckBox = null;
-         var _loc5_:CheckBox = _loc2_[param1 + SettingsConfigHelper.TYPE_CHECKBOX];
-         if(param1 == SettingsConfigHelper.W2GT_ENABLE)
-         {
-            _loc3_ = data[param1];
-            _loc4_ = _loc2_[_loc3_.isDependOn + SettingsConfigHelper.TYPE_CHECKBOX];
-            _loc6_ = _loc5_.enabled && Boolean(_loc3_.changedVal);
-            if(!_loc6_ && _loc4_.selected)
-            {
-               _loc4_.selected = false;
-            }
-            _loc4_.enabled = _loc6_;
-         }
-         else if(param1 == SettingsConfigHelper.NEWBIE_BATTLE_HINTS)
-         {
-            _loc3_ = data[param1];
-            _loc7_ = _loc2_[_loc3_.isDependOn];
-            _loc7_.enabled = _loc5_.enabled;
-         }
-         super.updateDependedControl(param1);
       }
    }
 }

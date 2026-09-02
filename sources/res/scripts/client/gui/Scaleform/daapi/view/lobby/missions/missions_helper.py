@@ -6,7 +6,6 @@ from future.utils import lrange, viewitems
 import constants
 from debug_utils import LOG_WARNING
 from gui import SystemMessages
-from gui.impl.lobby.personal_missions_30.personal_mission_constants import MAX_DETAIL_ID
 from gui.ranked_battles.ranked_helpers import isRankedQuestID
 from gui.Scaleform.daapi.view.lobby.missions import cards_formatters
 from gui.Scaleform.daapi.view.lobby.missions.awards_formatters import CurtailingAwardsComposer, AwardsWindowComposer, DetailedCardAwardComposer, PersonalMissionsAwardComposer
@@ -34,7 +33,7 @@ from gui.server_events.formatters import DECORATION_SIZES
 from gui.server_events.personal_progress import formatters
 from gui.server_events.pm_constants import PAUSABLE_OPERATIONS_IDS, DISCARDABLE_OPERATIONS_IDS
 from gui.shared.formatters import text_styles, icons, time_formatters
-from gui.shared.gui_items.processors.quests import PMActivateSeason, PM3OperationSelect, PMQuestSelect
+from gui.shared.gui_items.processors.quests import PMActivateSeason, PMOperationSelect, PMQuestSelect
 from gui.shared.system_factory import collectModeHiddenVehiclesCriteria
 from gui.shared.utils.functions import makeTooltip
 from gui.shared.utils.requesters.ItemsRequester import REQ_CRITERIA
@@ -43,7 +42,6 @@ from helpers.i18n import makeString as _ms
 from personal_missions import PM_BRANCH, PM_BRANCH_TO_FREE_TOKEN_NAME, PERSONAL_MISSION_REGULAR_MIN_LEVEL
 from quest_xml_source import MAX_BONUS_LIMIT
 from shared_utils import first
-from skeletons.account_helpers.settings_core import ISettingsCore
 from skeletons.gui.server_events import IEventsCache
 from skeletons.gui.shared import IItemsCache
 from skeletons.gui.game_control import IRankedBattlesController, IBattleRoyaleController, IEpicBattleMetaGameController
@@ -216,7 +214,7 @@ def getOperations(branch, currOperationID):
 
 def getPostponedOperationState(operationID):
     _eventsCache = dependency.instance(IEventsCache)
-    disabledOperations = _eventsCache.getPersonalMissions().getDisabledPMOperations(branches=PM_BRANCH.ALL)
+    disabledOperations = _eventsCache.getPersonalMissions().getDisabledPMOperations(branches=PM_BRANCH.ALL_NAMES)
     state = None
     postponeTime = ''
     if operationID in disabledOperations:
@@ -279,7 +277,7 @@ class _MissionInfo(QuestInfoModel):
 
     def _getInfo(self, statusData, isAvailable, errorMsg, mainQuest=None):
         status = statusData['status']
-        if isinstance(self.event, PersonalMission) and self.event.getQuestBranch() == PM_BRANCH.PERSONAL_MISSION_3:
+        if isinstance(self.event, PersonalMission) and self.event.getQuestBranchName() in PM_BRANCH.WITHOUT_AWARD_LIST_BRANCHES:
             title = self._getEventTitle()
         else:
             title = self._getTitle(self._getEventTitle())
@@ -474,7 +472,6 @@ class _MissionInfo(QuestInfoModel):
 
                 return resultBonus
             return bonuses
-            return
 
 
 class _EventDailyMissionInfo(_MissionInfo):
@@ -1053,8 +1050,8 @@ class _DetailedPersonalMissionInfo(_MissionInfo):
     def getInfo(self, mainQuest=None):
         isAvailable, errorMsg = self.event.isAvailable()
         branchName = self.event.getQuestBranchName()
-        isBranchStarted = isBranchesStarted(*PM_BRANCH.V1_BRANCHES)
-        if errorMsg != 'isLocked' and self.event.getQuestBranch() in PM_BRANCH.V1_BRANCHES:
+        isBranchStarted = isBranchesStarted(*PM_BRANCH.MUTUAL_EXCLUSION_BRANCHES[PM_BRANCH.QUEST_GROUPS.GROUP_1])
+        if errorMsg != 'isLocked' and branchName in PM_BRANCH.MUTUAL_EXCLUSION_BRANCHES[PM_BRANCH.QUEST_GROUPS.GROUP_1]:
             if not isBranchStarted and not getSuitableVehicles():
                 isAvailable = False
                 errorMsg = 'branchNotStarted'
@@ -1065,9 +1062,11 @@ class _DetailedPersonalMissionInfo(_MissionInfo):
         return self._getInfo(statusData, isAvailable, errorMsg, mainQuest)
 
     def _getStatusFields(self, isAvailable, errorMsg):
-        if not isAvailable:
-            return self._getUnavailableStatusFields(errorMsg)
+        if self.event.isFullCompleted():
+            return self._getFullCompleteStatusFields()
         else:
+            if not isAvailable:
+                return self._getUnavailableStatusFields(errorMsg)
             statusData = self._getQuestCompletionStatusFields()
             if statusData:
                 return statusData
@@ -1277,7 +1276,7 @@ class _DetailedPersonalMissionInfo(_MissionInfo):
            'completeBtnLabel': _ms(PERSONAL_MISSIONS.DETAILEDVIEW_COMPLETEBTNLABEL, count=self.event.getPawnCost(), icon=getHtmlAwardSheetIcon(self.event.getQuestBranch())), 
            'titleTooltip': self.__getDescription(), 
            'holdAwardSheetBtnTooltipData': self.__getHoldAwardSheetBtnTooltipData()})
-        data.update({'buttonState': self.__getBtnStates(isAvailable, errorMsg)})
+        data.update({'buttonState': self.__getBtnStates(isAvailable)})
         data.update({'onPauseBtnIcon': self.__getPauseBtnIcon()})
         return data
 
@@ -1337,22 +1336,21 @@ class _DetailedPersonalMissionInfo(_MissionInfo):
         else:
             return makeTooltip(PERSONAL_MISSIONS.DETAILEDVIEW_INFOPANEL_HEADER, description)
 
-    def __getBtnStates(self, isAvailable, errorMsg):
+    def __getBtnStates(self, isAvailable):
         quest = self.event
         isPawnAvailable = self.__isPawnAvailable(quest)
         states = PERSONAL_MISSIONS_BUTTONS.NO_BUTTONS
-        namePM3 = PM_BRANCH.TYPE_TO_NAME[PM_BRANCH.PERSONAL_MISSION_3]
-        isPM3Active = namePM3 in self.eventsCache.getPersonalMissions().getActiveCampaigns()
+        isBranchWithoutAwardListActive = self.eventsCache.getPersonalMissions().isBranchWithoutAwardListActive()
         if not quest.isUnlocked():
             states |= PERSONAL_MISSIONS_BUTTONS.START_BTN_VISIBLE
         elif quest.isInProgress() and isAvailable:
-            if quest.getOperationID() in PAUSABLE_OPERATIONS_IDS and not isPM3Active:
+            if quest.getOperationID() in PAUSABLE_OPERATIONS_IDS and not isBranchWithoutAwardListActive:
                 states |= PERSONAL_MISSIONS_BUTTONS.PAUSE_BTN_VISIBLE
-            if quest.getOperationID() in DISCARDABLE_OPERATIONS_IDS and not isPM3Active:
+            if quest.getOperationID() in DISCARDABLE_OPERATIONS_IDS and not isBranchWithoutAwardListActive:
                 states |= PERSONAL_MISSIONS_BUTTONS.DISCARD_BTN_VISIBLE
                 if self.__anyProgress:
                     states |= PERSONAL_MISSIONS_BUTTONS.DISCARD_BTN_ENABLED
-            if not quest.isMainCompleted() and not isPM3Active:
+            if not quest.isMainCompleted() and not isBranchWithoutAwardListActive:
                 states |= PERSONAL_MISSIONS_BUTTONS.HOLD_AWARD_SHEET_BTN_VISIBLE
                 if not quest.areTokensPawned() and isPawnAvailable:
                     states |= PERSONAL_MISSIONS_BUTTONS.HOLD_AWARD_SHEET_BTN_ENABLED
@@ -1368,8 +1366,7 @@ class _DetailedPersonalMissionInfo(_MissionInfo):
                 states |= PERSONAL_MISSIONS_BUTTONS.START_BTN_ENABLED
         if quest.canBePawned():
             states |= PERSONAL_MISSIONS_BUTTONS.HOLD_AWARD_SHEET_BTN_VISIBLE
-            isSuitableBranch = errorMsg not in ('branchNotStarted', 'branchInactive') and not isPM3Active
-            if isPawnAvailable and isSuitableBranch:
+            if isPawnAvailable and isSuitableBranchForPawn():
                 states |= PERSONAL_MISSIONS_BUTTONS.HOLD_AWARD_SHEET_BTN_ENABLED
         return states
 
@@ -1382,7 +1379,7 @@ class _DetailedPersonalMissionInfo(_MissionInfo):
         return ''
 
     def __isPawnAvailable(self, quest):
-        return self.eventsCache.getPersonalMissions().getFreeTokensCount(quest.getPMType().branch) >= quest.getPawnCost()
+        return self.eventsCache.getPersonalMissions().getFreeTokensCount(quest.getQuestBranch()) >= quest.getPawnCost()
 
 
 def getMissionInfoData(event):
@@ -1479,28 +1476,32 @@ def getSuitableVehicles(itemsCache=None):
 def getStartedBranches(eventsCache=None):
     startedBranches = set()
     personalMissions = eventsCache.getPersonalMissions()
-    for branch in PM_BRANCH.ALL:
-        if branch in startedBranches:
-            continue
-        operations = personalMissions.getAllOperations((branch,))
+    for branches in PM_BRANCH.MUTUAL_EXCLUSION_BRANCHES.values():
+        operations = personalMissions.getAllOperations(branches)
         for operation in operations.values():
             if operation.isStarted():
-                startedBranches.add(branch)
+                startedBranches.update(PM_BRANCH.convertNameToType(branches))
+                break
 
     return startedBranches
 
 
 def isBranchesStarted(*branches):
+    branches = PM_BRANCH.convertNameToType(branches)
     startedBranches = getStartedBranches()
     return bool(startedBranches.intersection(branches))
 
 
+@dependency.replace_none_kwargs(eventsCache=IEventsCache)
+def isSuitableBranchForPawn(eventsCache=None):
+    return eventsCache.getPersonalMissions().isBranchWithAwardListActive()
+
+
 @adisp_async
 @adisp_process
-def switchCampaign(campaignToActive, isFirstTimeEntrance=False, callback=None):
-    eventsCache = dependency.instance(IEventsCache)
-    result = yield PMActivateSeason(eventsCache.getPersonalMissions(), campaignToActive, isFirstTimeEntrance=isFirstTimeEntrance).request()
-    if result.userMsg:
+def switchCampaign(campaignToActive, callback=None):
+    result = yield PMActivateSeason(campaignToActive).request()
+    if result and result.userMsg:
         SystemMessages.pushMessage(result.userMsg, type=result.sysMsgType)
     if callback is not None:
         callback(result)
@@ -1510,7 +1511,7 @@ def switchCampaign(campaignToActive, isFirstTimeEntrance=False, callback=None):
 @adisp_async
 @adisp_process
 def processOperation(branch, mission, callback=None):
-    result = yield PMQuestSelect(branch, mission).request()
+    result = yield PMQuestSelect(branch, mission, isOperationActivation=True).request()
     if result and result.userMsg:
         SystemMessages.pushMessage(result.userMsg, type=result.sysMsgType)
     if callback is not None:
@@ -1520,19 +1521,10 @@ def processOperation(branch, mission, callback=None):
 
 @adisp_async
 @adisp_process
-def processPM3Operation(branch, operation, isFirstTimeEntrance=False, callback=None):
-    result = yield PM3OperationSelect(branch, operation, isFirstTimeEntrance=isFirstTimeEntrance).request()
+def processPMOperation(branch, operation, isFirstTimeEntrance=False, callback=None):
+    result = yield PMOperationSelect(branch, operation, isFirstTimeEntrance=isFirstTimeEntrance).request()
     if result and result.userMsg:
         SystemMessages.pushMessage(result.userMsg, type=result.sysMsgType)
     if callback is not None:
         callback(result)
     return
-
-
-@dependency.replace_none_kwargs(settings=ISettingsCore)
-def getCurrentOperationLastInstalledDetail(operation, settings=None):
-    if operation.isCompleted():
-        return MAX_DETAIL_ID
-    if not operation.isStarted():
-        return 0
-    return settings.serverSettings.getPM3InstalledVehDetails()

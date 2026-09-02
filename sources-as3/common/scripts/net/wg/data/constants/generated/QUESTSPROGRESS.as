@@ -9,6 +9,8 @@ package net.wg.data.constants.generated
       
       public static const C_183X63_OPERATION_10:String = "183x63_operation_10";
       
+      public static const C_183X63_OPERATION_11:String = "183x63_operation_11";
+      
       public static const C_183X63_OPERATION_2:String = "183x63_operation_2";
       
       public static const C_183X63_OPERATION_3:String = "183x63_operation_3";

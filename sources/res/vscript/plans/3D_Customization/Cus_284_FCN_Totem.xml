@@ -130,6 +130,12 @@
 				<output>event0</output>
 			</connection>
 			<connection>
+				<from>Macro_1</from>
+				<input>in</input>
+				<to>ComponentMethod_4</to>
+				<output>PrebattleHighlightEnd</output>
+			</connection>
+			<connection>
 				<from>ContextGetSelf_1</from>
 				<input>gameObject</input>
 				<to>ComponentMethod_4</to>
@@ -158,6 +164,12 @@
 				<input>in</input>
 				<to>ComponentMethod_3</to>
 				<output>onKill</output>
+			</connection>
+			<connection>
+				<from>Macro_1</from>
+				<input>in</input>
+				<to>ComponentMethod_3</to>
+				<output>PrebattleHighlightStart</output>
 			</connection>
 			<connection>
 				<from>ContextGetSelf_1</from>

@@ -226,54 +226,6 @@
 					<!--BW_String-->
 				</anchorShift>
 			</slot>
-			<slot>
-				<slotType>attachment</slotType>
-				<slotId>18000</slotId>
-				<position>0.000002 0.380633 -3.137151</position>
-				<rotation>
-					-0 -1.570796 1.570796
-					<!--BW_String-->
-				</rotation>
-				<scale>
-					0.999999 0.999999 1
-					<!--BW_String-->
-				</scale>
-				<applyType>universal</applyType>
-				<size>medium</size>
-				<hangerId>12</hangerId>
-			</slot>
-			<slot>
-				<slotType>attachment</slotType>
-				<slotId>18001</slotId>
-				<position>-1.750253 0.387185 -0.467819</position>
-				<rotation>
-					-0 0 1.570796
-					<!--BW_String-->
-				</rotation>
-				<scale>
-					0.999999 0.999999 1
-					<!--BW_String-->
-				</scale>
-				<applyType>universal</applyType>
-				<size>medium</size>
-				<hangerId>9</hangerId>
-			</slot>
-			<slot>
-				<slotType>attachment</slotType>
-				<slotId>18002</slotId>
-				<position>
-					1.75 0.387185 -0.467819
-					<!--BW_String-->
-				</position>
-				<rotation>
-					3.141593 0 -1.570796
-					<!--BW_String-->
-				</rotation>
-				<scale>1 1 1</scale>
-				<applyType>universal</applyType>
-				<size>medium</size>
-				<hangerId>9</hangerId>
-			</slot>
 		</customizationSlots>
 		<customization>
 			<customizableVehicleAreas>
@@ -2220,17 +2172,6 @@
 							<applyTo>4096</applyTo>
 						</slot>
 						<slot>
-							<slotType>attachment</slotType>
-							<slotId>48000</slotId>
-							<size>medium</size>
-							<position>0.000001 0.344079 0.619852</position>
-							<rotation>-0 0 0</rotation>
-							<scale>1 1 1</scale>
-							<applyType>gunMantlet</applyType>
-							<hangerId>2</hangerId>
-							<enableVisTunnel>true</enableVisTunnel>
-						</slot>
-						<slot>
 							<slotType>insigniaOnGun</slotType>
 							<slotId>49000</slotId>
 							<rayStart>
@@ -2258,6 +2199,7 @@
 						</customizableVehicleAreas>
 					</customization>
 					<edgeByVisualModel>false</edgeByVisualModel>
+					<muzzleBrake>HORIZONTAL</muzzleBrake>
 					<camouflage>
 						<density>
 							142.568 152.634
@@ -2380,24 +2322,6 @@
 					<showOn>256</showOn>
 					<clipAngle>0.647504</clipAngle>
 					<anchorShift>-0.051138</anchorShift>
-				</slot>
-				<slot>
-					<slotType>attachment</slotType>
-					<slotId>38000</slotId>
-					<position>
-						1.201 0.961 0.97
-						<!--BW_String-->
-					</position>
-					<rotation>-0 0 0</rotation>
-					<scale>1 1 1</scale>
-					<enableVisTunnel>true</enableVisTunnel>
-					<applyType>turret</applyType>
-					<size>medium</size>
-					<hangerId>2</hangerId>
-					<hangerRotation>
-						-0 0.610865 0
-						<!--BW_String-->
-					</hangerRotation>
 				</slot>
 			</customizationSlots>
 			<customization>

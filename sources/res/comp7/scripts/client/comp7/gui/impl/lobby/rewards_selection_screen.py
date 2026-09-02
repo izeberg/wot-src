@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from enum import Enum
 import typing
 from comp7.gui.impl.gen.view_models.views.lobby.enums import MetaRootViews

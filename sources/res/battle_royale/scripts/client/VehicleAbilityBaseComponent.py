@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld
 from gui.battle_control.battle_constants import FEEDBACK_EVENT_ID
 from Event import EventsSubscriber

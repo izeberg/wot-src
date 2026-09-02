@@ -65,8 +65,8 @@
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
-		<node>G_BlendBone</node>
 		<node>Gun_BlendBone</node>
+		<node>G_BlendBone</node>
 		<geometry>
 			<vertices>gun_01_Shape.vertices</vertices>
 			<primitive>gun_01_Shape.indices</primitive>
@@ -97,23 +97,15 @@
 						colorIdMap
 						<Texture>vehicles/german/G06_PzII/PzII_guns_ID.dds</Texture>
 					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
-					</property>
 				</material>
-				<groupOrigin>-0.103716 0.004203 -0.468493</groupOrigin>
+				<groupOrigin>-0.100084 -0.000451 -0.466998</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-0.474770 -0.108194 -0.070397</min>
-		<max>0.267337 0.116600 1.007383</max>
+		<min>-0.476823 -0.125720 -0.075682</min>
+		<max>0.276654 0.124817 1.009678</max>
 	</boundingBox>
-	<geometrySize>2238</geometrySize>
+	<geometrySize>3300</geometrySize>
 </root>

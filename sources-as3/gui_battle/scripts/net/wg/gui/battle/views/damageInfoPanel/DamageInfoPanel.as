@@ -182,7 +182,7 @@ package net.wg.gui.battle.views.damageInfoPanel
          }
          if(param2 == DAMAGE_INFO_PANEL_CONSTS.HIDE_FIRE)
          {
-            this.as_hideFire();
+            this.fire.hideFireImmediately();
          }
          else if(param2 == DAMAGE_INFO_PANEL_CONSTS.SHOW_FIRE)
          {
@@ -306,128 +306,110 @@ package net.wg.gui.battle.views.damageInfoPanel
       public function as_updateAmmoBay(param1:int, param2:Boolean) : void
       {
          this.setActiveState();
-         this.ammoBay.updateItem(param1,param2);
-         this.updateDevicesPosition();
+         this.updateDeviceItem(this.ammoBay,param1,param2);
       }
       
       public function as_updateCommander(param1:int, param2:Boolean) : void
       {
          this.setActiveState();
-         this.commander.updateItem(param1,param2);
-         this.updateTankmenPosition();
+         this.updateTankmanItem(this.commander,param1,param2);
       }
       
       public function as_updateDriver(param1:int, param2:Boolean) : void
       {
          this.setActiveState();
-         this.driver.updateItem(param1,param2);
-         this.updateTankmenPosition();
+         this.updateTankmanItem(this.driver,param1,param2);
       }
       
       public function as_updateEngine(param1:int, param2:Boolean) : void
       {
          this.setActiveState();
-         this.engine.updateItem(param1,param2);
-         this.updateDevicesPosition();
+         this.updateDeviceItem(this.engine,param1,param2);
       }
       
       public function as_updateFirstGunner(param1:int, param2:Boolean) : void
       {
          this.setActiveState();
-         this.firstGunner.updateItem(param1,param2);
-         this.updateTankmenPosition();
+         this.updateTankmanItem(this.firstGunner,param1,param2);
       }
       
       public function as_updateFirstLoader(param1:int, param2:Boolean) : void
       {
          this.setActiveState();
-         this.firstLoader.updateItem(param1,param2);
-         this.updateTankmenPosition();
+         this.updateTankmanItem(this.firstLoader,param1,param2);
       }
       
       public function as_updateFirstRadioman(param1:int, param2:Boolean) : void
       {
          this.setActiveState();
-         this.firstRadioman.updateItem(param1,param2);
-         this.updateTankmenPosition();
+         this.updateTankmanItem(this.firstRadioman,param1,param2);
       }
       
       public function as_updateFuelTank(param1:int, param2:Boolean) : void
       {
          this.setActiveState();
-         this.fuelTank.updateItem(param1,param2);
-         this.updateDevicesPosition();
+         this.updateDeviceItem(this.fuelTank,param1,param2);
       }
       
       public function as_updateGun(param1:int, param2:Boolean) : void
       {
          this.setActiveState();
-         this.gun.updateItem(param1,param2);
-         this.updateDevicesPosition();
+         this.updateDeviceItem(this.gun,param1,param2);
       }
       
       public function as_updateLeftTrack(param1:int, param2:Boolean) : void
       {
          this.setActiveState();
-         this.leftTrack.updateItem(param1,param2);
-         this.updateDevicesPosition();
+         this.updateDeviceItem(this.leftTrack,param1,param2);
       }
       
       public function as_updateRadio(param1:int, param2:Boolean) : void
       {
          this.setActiveState();
-         this.radio.updateItem(param1,param2);
-         this.updateDevicesPosition();
+         this.updateDeviceItem(this.radio,param1,param2);
       }
       
       public function as_updateRightTrack(param1:int, param2:Boolean) : void
       {
          this.setActiveState();
-         this.rightTrack.updateItem(param1,param2);
-         this.updateDevicesPosition();
+         this.updateDeviceItem(this.rightTrack,param1,param2);
       }
       
       public function as_updateSecondGunner(param1:int, param2:Boolean) : void
       {
          this.setActiveState();
-         this.secondGunner.updateItem(param1,param2);
-         this.updateTankmenPosition();
+         this.updateTankmanItem(this.secondGunner,param1,param2);
       }
       
       public function as_updateSecondLoader(param1:int, param2:Boolean) : void
       {
          this.setActiveState();
-         this.secondLoader.updateItem(param1,param2);
-         this.updateTankmenPosition();
+         this.updateTankmanItem(this.secondLoader,param1,param2);
       }
       
       public function as_updateSecondRadioman(param1:int, param2:Boolean) : void
       {
          this.setActiveState();
-         this.secondRadioman.updateItem(param1,param2);
-         this.updateTankmenPosition();
+         this.updateTankmanItem(this.secondRadioman,param1,param2);
       }
       
       public function as_updateSurveyingDevice(param1:int, param2:Boolean) : void
       {
          this.setActiveState();
-         this.surveyingDevice.updateItem(param1,param2);
-         this.updateDevicesPosition();
+         this.updateDeviceItem(this.surveyingDevice,param1,param2);
       }
       
       public function as_updateTurretRotator(param1:int, param2:Boolean) : void
       {
          this.setActiveState();
-         this.turretRotator.updateItem(param1,param2);
-         this.updateDevicesPosition();
+         this.updateDeviceItem(this.turretRotator,param1,param2);
       }
       
       public function as_updateWheel(param1:int, param2:Boolean) : void
       {
          this.setActiveState();
          var _loc3_:int = param1 == DAMAGE_INFO_PANEL_CONSTS.DAMAGED ? int(DAMAGE_INFO_PANEL_CONSTS.NORMAL) : int(param1);
-         this.wheel.updateItem(_loc3_,param2);
-         this.updateDevicesPosition();
+         this.updateDeviceItem(this.wheel,_loc3_,param2);
       }
       
       private function hidePanel() : void
@@ -436,6 +418,26 @@ package net.wg.gui.battle.views.damageInfoPanel
          if(alpha <= 0)
          {
             this.setInActiveState();
+         }
+      }
+      
+      private function updateDeviceItem(param1:DamageItem, param2:int, param3:Boolean) : void
+      {
+         var _loc4_:Boolean = param1.stateId != 0;
+         param1.updateItem(param2,param3);
+         if(_loc4_ != (param2 != 0))
+         {
+            this.updateDevicesPosition();
+         }
+      }
+      
+      private function updateTankmanItem(param1:DamageItem, param2:int, param3:Boolean) : void
+      {
+         var _loc4_:Boolean = param1.stateId != 0;
+         param1.updateItem(param2,param3);
+         if(_loc4_ != (param2 != 0))
+         {
+            this.updateTankmenPosition();
          }
       }
       

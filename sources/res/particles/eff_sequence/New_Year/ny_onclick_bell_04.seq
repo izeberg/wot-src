@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>2.666667</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 -0.075000 0.000000</inTangent>
+				<outTangent>0.000000 -0.075000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.466667</startTime>
+				<value>0.000000 -0.035000 0.000000</value>
+				<inTangent>0.000000 0.008333 0.000000</inTangent>
+				<outTangent>0.000000 0.008333 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.066667</startTime>
+				<value>0.000000 0.020000 0.000000</value>
+				<inTangent>0.000000 0.010833 0.000000</inTangent>
+				<outTangent>0.000000 0.010833 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.566667</startTime>
+				<value>0.000000 -0.015000 0.000000</value>
+				<inTangent>0.000000 -0.000350 0.000000</inTangent>
+				<outTangent>0.000000 -0.000350 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.900000</startTime>
+				<value>0.000000 0.008100 0.000000</value>
+				<inTangent>0.000000 0.015900 0.000000</inTangent>
+				<outTangent>0.000000 0.015900 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.233333</startTime>
+				<value>0.000000 -0.004400 0.000000</value>
+				<inTangent>0.000000 -0.009107 0.000000</inTangent>
+				<outTangent>0.000000 -0.009107 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.466667</startTime>
+				<value>0.000000 0.000100 0.000000</value>
+				<inTangent>0.000000 0.009143 0.000000</inTangent>
+				<outTangent>0.000000 0.009143 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.566667</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.000000 -0.001000 -0.000000</inTangent>
+				<outTangent>-0.000000 -0.001000 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>20.000000 10.368759 0.000000</inTangent>
+				<outTangent>20.000000 10.368759 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>10.000000 5.184380 0.000000</value>
+				<inTangent>-10.759516 -4.893350 0.000000</inTangent>
+				<outTangent>-10.759516 -4.893350 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.966667</startTime>
+				<value>-9.375550 -4.221501 0.000000</value>
+				<inTangent>-3.512117 -3.708604 0.000000</inTangent>
+				<outTangent>-3.512117 -3.708604 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.433333</startTime>
+				<value>6.722023 1.723015 0.000000</value>
+				<inTangent>9.560479 4.407106 -0.102974</inTangent>
+				<outTangent>9.560479 4.407106 -0.102974</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>-1.989818 -0.500606 -0.116704</value>
+				<inTangent>9.624430 0.000000 0.089953</inTangent>
+				<outTangent>9.624430 0.000000 0.089953</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.333333</startTime>
+				<value>0.278925 -0.277427 -0.058753</value>
+				<inTangent>-2.962785 0.406298 -0.169555</inTangent>
+				<outTangent>-2.962785 0.406298 -0.169555</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.666667</startTime>
+				<value>-0.229741 -0.229741 -0.229741</value>
+				<inTangent>-1.525997 0.143061 -0.512964</inTangent>
+				<outTangent>-1.525997 0.143061 -0.512964</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>sparks</name>
+		<type>particle</type>
+		<resource>particles/Environment/hangar/ny_onclick_bell_fairytale.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 -0.436611 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.500000</startTime>
+				<value>1.000000</value>
+				<inTangent>-1.666667</inTangent>
+				<outTangent>-1.666667</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.800000</startTime>
+				<value>0.000000</value>
+				<inTangent>-3.333334</inTangent>
+				<outTangent>-3.333334</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>tintColor</name>
+			<type>vector4</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.666667 1.000000 0.588235 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

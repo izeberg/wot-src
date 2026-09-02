@@ -68,6 +68,9 @@ msgstr ""
 msgid "Bedford_Twin-Six"
 msgstr "Bedford Twin-Six"
 
+msgid "Chassis_1_R233_NK_1"
+msgstr "NK-1"
+
 msgid "Chassis_IS-6"
 msgstr "IS-6"
 
@@ -359,6 +362,9 @@ msgstr "Object 701"
 msgid "Chassis_R148_Object_430_U"
 msgstr "Object 430U"
 
+msgid "Chassis_R148_Object_430_U_7x7"
+msgstr "Object 430U"
+
 msgid "Chassis_R149_Object_268_4"
 msgstr "Object 268 Version 4"
 
@@ -636,6 +642,9 @@ msgid "Chassis_R43_T-70_2"
 msgstr "T-70 enhanced"
 
 msgid "Chassis_R45_IS-7"
+msgstr "IS-7"
+
+msgid "Chassis_R45_IS-7_7x7"
 msgstr "IS-7"
 
 msgid "Chassis_R47_ISU-152"
@@ -1253,6 +1262,9 @@ msgstr "M-50T"
 msgid "M_50TI"
 msgstr "M-50TI"
 
+msgid "M_50TI_7x7"
+msgstr "M-50TI"
+
 msgid "M_50TS"
 msgstr "M-50TS"
 
@@ -1276,6 +1288,9 @@ msgstr "M-80 (T-70)"
 
 msgid "M_850"
 msgstr "M-850"
+
+msgid "M_850B7"
+msgstr "M-850B7"
 
 msgid "M_850_7x7"
 msgstr "M-850"
@@ -1660,6 +1675,9 @@ msgid "R113M_140_7x7"
 msgstr "R-113"
 
 msgid "R113M_7x7"
+msgstr "R-113"
+
+msgid "R113M_7x7_0"
 msgstr "R-113"
 
 msgid "R113M_DR"
@@ -2557,6 +2575,22 @@ msgstr "All-around armor, high caliber"
 
 msgid "R148_Object_430_U"
 msgstr "Object 430U"
+
+msgid "R148_Object_430_U_7x7"
+msgstr "Object 430U 7x7"
+
+msgid "R148_Object_430_U_7x7_descr"
+msgstr ""
+"The Object 430U is one of the versions of the Object 430 medium tank with "
+"rear placement of the engine-transmission compartment. This version was to "
+"feature a transverse placement of the engine and two planetary "
+"transmissions. This technical solution allowed for extending the interior "
+"space and decreasing the vehicle's weight. This vehicle was developed from "
+"1953 through 1957 to replace the T-54, but the work was discontinued in "
+"favor of the Object 432 in 1961."
+
+msgid "R148_Object_430_U_7x7_short"
+msgstr "Obj. 430U 7x7"
 
 msgid "R148_Object_430_U_descr"
 msgstr ""
@@ -3994,6 +4028,32 @@ msgstr "Buryan"
 msgid "R231_Buryan_short_special"
 msgstr "High single damage, high DPM"
 
+msgid "R233_NK_1"
+msgstr "NK-1"
+
+msgid "R233_NK_1_desc"
+msgstr ""
+"A project for a heavy tank that arose at cusp of the 1950s and 1960s—a "
+"period of headlong growth in tank-building research, active development of "
+"new models, and attempts to improve existing vehicles. This vehicle combined"
+" elements of the IS-7 and Object 277 heavy tanks. However, as the approach "
+"to tank-building changed—with role becoming a decisive factor rather than "
+"combat weight—development of heavy tanks was stopped."
+
+msgid "R233_NK_1_long_special"
+msgstr ""
+"The NK-1 is a Soviet Tier IX breakthrough heavy tank. Extremely proficient "
+"in its role, it boasts an exceptional maximum forward speed, powerful gun, "
+"and sturdy armor. What this vehicle lacks in accuracy, it compensates with "
+"impressive gun handling during movement, allowing you to stay active as you "
+"relentlessly push through enemy lines."
+
+msgid "R233_NK_1_short"
+msgstr "NK-1"
+
+msgid "R233_NK_1_short_special"
+msgstr "Excellent handling, solid frontal armor"
+
 msgid "R234_T_13"
 msgstr "T-13"
 
@@ -4195,6 +4255,18 @@ msgstr ""
 
 msgid "R45_IS-7"
 msgstr "IS-7"
+
+msgid "R45_IS-7_7x7"
+msgstr "IS-7 7x7"
+
+msgid "R45_IS-7_7x7_descr"
+msgstr ""
+"Development of the IS-7 started in the spring of 1945. Prototypes "
+"successfully underwent trials in 1946 and 1947. However, the IS-7 never saw "
+"mass production."
+
+msgid "R45_IS-7_7x7_short"
+msgstr "IS-7 7x7"
 
 msgid "R45_IS-7_descr"
 msgstr ""
@@ -5255,6 +5327,9 @@ msgstr "Object 701"
 msgid "Turret_1_R148_Object_430_U"
 msgstr "Object 430U"
 
+msgid "Turret_1_R148_Object_430_U_7x7"
+msgstr "Object 430U"
+
 msgid "Turret_1_R149_Object_268_4"
 msgstr "Object 268 Version 4"
 
@@ -5441,6 +5516,9 @@ msgstr "Object 432U"
 msgid "Turret_1_R231_Buryan"
 msgstr "Buryan"
 
+msgid "Turret_1_R233_NK_1"
+msgstr "NK-1"
+
 msgid "Turret_1_R234_T_13"
 msgstr "T-13"
 
@@ -5478,6 +5556,9 @@ msgid "Turret_1_R43_T-70"
 msgstr "T-70"
 
 msgid "Turret_1_R45_IS-7"
+msgstr "IS-7"
+
+msgid "Turret_1_R45_IS-7_7x7"
 msgstr "IS-7"
 
 msgid "Turret_1_R47_ISU-152"
@@ -6780,6 +6861,9 @@ msgstr "10RK-26"
 msgid "_10RK-26M"
 msgstr "10RK-26B"
 
+msgid "_10RK-26_7x7_0"
+msgstr "10RK-26"
+
 msgid "_10RK-26_CN"
 msgstr "10RK-26M"
 
@@ -6797,6 +6881,9 @@ msgstr "10RKM"
 
 msgid "_10RK_2"
 msgstr "10RK-2"
+
+msgid "_10RK_26B7"
+msgstr "10RK-26B7"
 
 msgid "_10RK_SH"
 msgstr "10RK-DV"
@@ -6939,6 +7026,9 @@ msgstr "BK-9U"
 msgid "_122mm_BK_9U_430U"
 msgstr "BK-9U (430U)"
 
+msgid "_122mm_BK_9U_430U_7x7"
+msgstr "BK-9U (430U)"
+
 msgid "_122mm_BK_9_263"
 msgstr "BK-9 (263)"
 
@@ -7068,6 +7158,9 @@ msgstr "BR-472U"
 msgid "_122mm_BR_472U_430U"
 msgstr "BR-472U (430U)"
 
+msgid "_122mm_BR_472U_430U_7x7"
+msgstr "BR-472U (430U)"
+
 msgid "_122mm_BR_472VA"
 msgstr "BR-472VA"
 
@@ -7174,6 +7267,9 @@ msgid "_122mm_M62_T2D"
 msgstr "122 mm M62-T2D"
 
 msgid "_122mm_M62_T2U"
+msgstr "122 mm M62-T2U"
+
+msgid "_122mm_M62_T2U_7x7"
 msgstr "122 mm M62-T2U"
 
 msgid "_122mm_M62_T2_A"
@@ -7431,6 +7527,9 @@ msgstr "UOF-472U"
 msgid "_122mm_UOF_472U_430U"
 msgstr "UOF-472U (430U)"
 
+msgid "_122mm_UOF_472U_430U_7x7"
+msgstr "UOF-472U (430U)"
+
 msgid "_122mm_UOF_472VA"
 msgstr "UOF-472VA"
 
@@ -7623,8 +7722,14 @@ msgstr "130 mm S-70"
 msgid "_130mm_S_70A"
 msgstr "130 mm S-70A"
 
+msgid "_130mm_S_70B7"
+msgstr "130 mm S-70B7"
+
 msgid "_130mm_S_70_705"
 msgstr "130 mm S-70 (705)"
+
+msgid "_130mm_S_70_7x7"
+msgstr "130 mm S-70"
 
 msgid "_130mm_UBR-482P_fallout"
 msgstr "UBR-482P R"
@@ -7635,11 +7740,17 @@ msgstr "UBR-482 R"
 msgid "_130mm_UBR_482"
 msgstr "UBR-482"
 
+msgid "_130mm_UBR_482B7"
+msgstr "UBR-482B7"
+
 msgid "_130mm_UBR_482M"
 msgstr "UBR-482M"
 
 msgid "_130mm_UBR_482P"
 msgstr "UBR-482P"
+
+msgid "_130mm_UBR_482PB7"
+msgstr "UBR-482PB7"
 
 msgid "_130mm_UBR_482PM"
 msgstr "UBR-482PM"
@@ -7647,8 +7758,14 @@ msgstr "UBR-482PM"
 msgid "_130mm_UBR_482P_705"
 msgstr "UBR-482P (705)"
 
+msgid "_130mm_UBR_482P_7x7"
+msgstr "UBR-482P"
+
 msgid "_130mm_UBR_482_705"
 msgstr "UBR-482 (705)"
+
+msgid "_130mm_UBR_482_7x7"
+msgstr "UBR-482"
 
 msgid "_130mm_UOF-482_fallout"
 msgstr "UOF-482 R"
@@ -7656,11 +7773,17 @@ msgstr "UOF-482 R"
 msgid "_130mm_UOF_482"
 msgstr "UOF-482"
 
+msgid "_130mm_UOF_482B7"
+msgstr "UOF-482B7"
+
 msgid "_130mm_UOF_482M"
 msgstr "UOF-482M"
 
 msgid "_130mm_UOF_482_705"
 msgstr "UOF-482 (705)"
+
+msgid "_130mm_UOF_482_7x7"
+msgstr "UOF-482"
 
 msgid "_130mm_ZBK60M"
 msgstr "ZBK60M"
@@ -8359,6 +8482,9 @@ msgid "_4TDF"
 msgstr "4TDF"
 
 msgid "_4TPD"
+msgstr "4TPD"
+
+msgid "_4TPD_7x7"
 msgstr "4TPD"
 
 msgid "_53-BR-471-DG"

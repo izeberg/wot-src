@@ -22,7 +22,7 @@ GUI_ITEM_TYPE_NAMES += ('dossierAccount', 'dossierVehicle', 'dossierTankman', 'a
                         'mentoringLicense', 'paint', 'camouflage', 'modification',
                         'outfit', 'style', 'decal', 'emblem', 'inscription', 'projectionDecal',
                         'insignia', 'personalNumber', 'sequence', 'attachment', 'statTracker',
-                        'vehicleMechanic', 'moduleMechanic')
+                        'vehicleMechanic', 'moduleMechanic', 'shellMechanic')
 GUI_ITEM_TYPE_INDICES = {n:idx for idx, n in enumerate(GUI_ITEM_TYPE_NAMES)}
 
 class GUI_ITEM_TYPE(CONST_CONTAINER):
@@ -390,6 +390,7 @@ class KPI(object):
         HP_RECOVER = 'hpRecover'
         COOLING_PER_SEC = 'coolingPerSec'
         HE_SHELL_VELOCITY = 'HEshellVelocity'
+        MINIMUM_DAMAGE_AND_PIERCING_POWER = 'minimumDamageAndPiercingPower'
         VEHICLE_CAMOUFLAGE_GROUP = 'vehicleCamouflageGroup'
         VEHICLE_STILL_CAMOUFLAGE_GROUP = 'vehicleStillCamouflageGroup'
         VEHICLE_STILL_CAMOUFLAGE_GROUP_DELUXE = 'vehicleStillCamouflageGroupDeluxe'

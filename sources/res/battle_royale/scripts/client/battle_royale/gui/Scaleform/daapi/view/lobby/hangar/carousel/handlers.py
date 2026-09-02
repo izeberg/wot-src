@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from stats_params import BATTLE_ROYALE_STATS_ENABLED
 from gui.shared import event_dispatcher as shared_events
 from gui.Scaleform.locale.MENU import MENU

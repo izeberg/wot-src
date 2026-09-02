@@ -151,7 +151,7 @@ class PopoverTooltip(SimpleCustomizationTooltip):
 
 
 class ElementTooltip(BlocksTooltipData):
-    __itemsCache = dependency.descriptor(IItemsCache)
+    _itemsCache = dependency.descriptor(IItemsCache)
     __settingsCore = dependency.descriptor(ISettingsCore)
     __service = dependency.descriptor(ICustomizationService)
     __eventsCache = dependency.descriptor(IEventsCache)
@@ -197,7 +197,7 @@ class ElementTooltip(BlocksTooltipData):
 
     def _packBlocks(self, *args):
         config = CustomizationTooltipContext(*args)
-        self._item = self.__itemsCache.items.getItemByCD(config.itemCD)
+        self._item = self._itemsCache.items.getItemByCD(config.itemCD)
         statsConfig = self.context.getStatsConfiguration(self._item)
         self.__ctx = self.__service.getCtx()
         if config.vehicleIntCD == 0:
@@ -205,7 +205,7 @@ class ElementTooltip(BlocksTooltipData):
         elif config.vehicleIntCD == -1:
             self.__vehicle = g_currentVehicle.item or g_currentPreviewVehicle.item
         else:
-            self.__vehicle = self.__itemsCache.items.getItemByCD(config.vehicleIntCD)
+            self.__vehicle = self._itemsCache.items.getItemByCD(config.vehicleIntCD)
         showInventoryBlock = config.showInventoryBlock
         statsConfig.buyPrice = showInventoryBlock
         statsConfig.sellPrice = showInventoryBlock
@@ -340,7 +340,7 @@ class ElementTooltip(BlocksTooltipData):
             blocks.append(formatters.packImageTextBlockData(desc=text_styles.bonusAppliedText(backport.text(rStatus.completed(), level=int2roman(level))), img=backport.image(R.images.gui.maps.icons.library.ConfirmIcon_1()), imgPadding=formatters.packPadding(top=2)))
         else:
             quests = self._item.getUnlockingQuests()
-            tokenCount = self.__itemsCache.items.tokens.getTokenCount(self._item.requiredToken)
+            tokenCount = self._itemsCache.items.tokens.getTokenCount(self._item.requiredToken)
             isCompleted = any(quest.isCompleted() for quest in quests) if quests else False
             if isCompleted or tokenCount >= self._item.descriptor.requiredTokenCount:
                 if level < 1:
@@ -368,7 +368,7 @@ class ElementTooltip(BlocksTooltipData):
     def _packQuestsBlock(self):
         blocks = []
         quests = self._item.getUnlockingQuests()
-        tokenCount = self.__itemsCache.items.tokens.getTokenCount(self._item.requiredToken)
+        tokenCount = self._itemsCache.items.tokens.getTokenCount(self._item.requiredToken)
         if not self._item.requiredToken or self._item.requiredToken and (self._item.isUnlockingExpired() or tokenCount >= self._item.descriptor.requiredTokenCount):
             return
         blocks.append(formatters.packTitleDescBlock(title=text_styles.middleTitle(backport.text(R.strings.vehicle_customization.customization.tooltip.quests.title()))))
@@ -532,7 +532,7 @@ class ElementTooltip(BlocksTooltipData):
             mustNotHave = self._item.itemTypeID in customizationTypes
             mayHave = self._item.itemTypeID in GUI_ITEM_TYPE.CUSTOMIZATIONS and self._item.itemTypeID not in customizationTypes
             if mustNotHave and (isItemHidden or isItemInStyle) or mayHave and isItemHidden and isItemInStyle and not self._item.isQuestsProgression:
-                return None
+                return
             defaultTitleText = backport.text(R.strings.vehicle_customization.customization.tooltip.suitable.title())
             if self._item.isProgressive and self._item.isProgressionAutoBound or ItemTags.NATIONAL_EMBLEM in self._item.tags:
                 return formatters.packTitleDescBlock(title=text_styles.middleTitle(defaultTitleText), desc=text_styles.main(self.__vehicle.shortUserName), padding=formatters.packPadding(top=-2))
@@ -543,11 +543,18 @@ class ElementTooltip(BlocksTooltipData):
                 if self._item.itemTypeID == GUI_ITEM_TYPE.ATTACHMENT and not self._item.isVehicleBound:
                     return formatters.packTitleDescBlock(title=text_styles.middleTitle(defaultTitleText), desc=text_styles.main(backport.text(R.strings.vehicle_customization.customization.tooltip.attachmentEarn())), padding=formatters.packPadding(top=-2))
                 return formatters.packTitleDescBlock(title=text_styles.middleTitle(defaultTitleText), desc=text_styles.main(backport.text(R.strings.vehicle_customization.customization.tooltip.suitable.text.allVehicle())), padding=formatters.packPadding(top=-2))
-            blocks = []
-            icn = getSuitableText(self._item, self.__vehicle)
-            blocks.append(formatters.packTextBlockData(text=icn, padding=formatters.packPadding(top=-2)))
-            blocks.insert(0, formatters.packTitleDescBlock(title=text_styles.middleTitle(defaultTitleText)))
-            return formatters.packBuildUpBlockData(blocks=blocks, padding=formatters.packPadding(top=-8, bottom=-18))
+            blocks = self._getSuitableBlocks()
+            if blocks:
+                return formatters.packBuildUpBlockData(blocks=blocks, padding=formatters.packPadding(top=-8, bottom=-18))
+            return
+
+    def _getSuitableBlocks(self):
+        blocks = []
+        icn = getSuitableText(self._item, self.__vehicle)
+        blocks.append(formatters.packTextBlockData(text=icn, padding=formatters.packPadding(top=-2)))
+        defaultTitleText = backport.text(R.strings.vehicle_customization.customization.tooltip.suitable.title())
+        blocks.insert(0, formatters.packTitleDescBlock(title=text_styles.middleTitle(defaultTitleText)))
+        return blocks
 
     def _packAppliedBlock(self):
         if self.__ctx is not None and self.__ctx.modeId in CustomizationModes.BASE_STYLES:
@@ -631,7 +638,7 @@ class ElementTooltip(BlocksTooltipData):
 
     def _packInventoryBlock(self, showBuyPrice, showSellPrice, showInventoryCount):
         subBlocks = []
-        money = self.__itemsCache.items.stats.money
+        money = self._itemsCache.items.stats.money
         if showBuyPrice and not self._item.isHidden:
             for itemPrice in self._item.buyPrices:
                 currency = itemPrice.getCurrency()
@@ -846,7 +853,7 @@ class ElementTooltip(BlocksTooltipData):
         return formatters.packBuildUpBlockData(blocks, linkage=BLOCKS_TOOLTIP_TYPES.TOOLTIP_BUILDUP_BLOCK_WHITE_BG_LINKAGE)
 
     def __packInheritorBlock(self, ancestors):
-        getItemByCD = self.__itemsCache.items.getItemByCD
+        getItemByCD = self._itemsCache.items.getItemByCD
         quotedText = R.strings.vehicle_customization.quotedText
         blocks = [
          self.__packChainedBlockTitle(R.strings.vehicle_customization.customization.tooltip.chained.suitable()),
@@ -856,7 +863,7 @@ class ElementTooltip(BlocksTooltipData):
     def __packAncestorBlock(self, dependentItems):
         blocks = [
          self.__packChainedBlockTitle(R.strings.vehicle_customization.customization.tooltip.chained.default())]
-        getItemByCD = self.__itemsCache.items.getItemByCD
+        getItemByCD = self._itemsCache.items.getItemByCD
         quotedText = R.strings.vehicle_customization.quotedText
         itemsBySlot = {}
         for intCD in dependentItems:

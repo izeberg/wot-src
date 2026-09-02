@@ -443,7 +443,7 @@ package scaleform.clik.controls
             this._totalRenderers = this.calculateRendererTotal(this.availableWidth,this.availableHeight);
             invalidateData();
          }
-         if(!this._usingExternalRenderers && isInvalid(InvalidationType.RENDERERS,InvalidationType.SIZE))
+         if(!this._usingExternalRenderers && isInvalidTypes(InvalidationType.RENDERERS,InvalidationType.SIZE))
          {
             this.drawRenderers(this._totalRenderers);
             this.drawLayout();

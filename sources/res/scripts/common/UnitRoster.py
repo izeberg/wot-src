@@ -21,7 +21,9 @@ class BaseUnitRoster:
     MIN_VEHICLES = 1
     MAX_VEHICLES = 1
 
-    def __init__(self, limitsDefs={}, slotDefs={}, slotCount=None, packedRoster=''):
+    def __init__(self, limitsDefs=None, slotDefs=None, slotCount=None, packedRoster=''):
+        if limitsDefs is None:
+            limitsDefs = {}
         if self.SLOT_TYPE is None and self.LIMITS_TYPE is None:
             raise NotImplementedError()
         if packedRoster:
@@ -101,7 +103,7 @@ class BaseUnitRoster:
 
         return matchList
 
-    def matchVehicleListToSlotList(self, vehTypeCompDescrList, unitSlotIdxList=[]):
+    def matchVehicleListToSlotList(self, vehTypeCompDescrList, unitSlotIdxList=()):
         matchDict = {}
         for vehTypeCompDescr in vehTypeCompDescrList:
             if not self.limits.checkVehicle(vehTypeCompDescr):
@@ -382,7 +384,6 @@ class BaseUnitRosterLimits(object):
                 return packed
             isTuple = limitName in ('totalLevelLimits', 'vehicleLevelLimits')
             return struct.pack(packFormat[0], *(limitValue if isTuple else (limitValue,)))
-            return
 
     def pack(self):
         mask = self.mask
@@ -430,17 +431,17 @@ class BaseUnitRosterLimits(object):
 
     def checkVehicleLevel--- This code section failed: ---
 
- L. 544         0  LOAD_FAST             0  'self'
+ L. 547         0  LOAD_FAST             0  'self'
                 3  LOAD_ATTR             0  'mask'
                 6  LOAD_CONST               0
                 9  COMPARE_OP            2  ==
                12  POP_JUMP_IF_FALSE    19  'to 19'
 
- L. 545        15  LOAD_GLOBAL           1  'True'
+ L. 548        15  LOAD_GLOBAL           1  'True'
                18  RETURN_END_IF    
              19_0  COME_FROM            12  '12'
 
- L. 546        19  LOAD_FAST             0  'self'
+ L. 549        19  LOAD_FAST             0  'self'
                22  LOAD_ATTR             2  'limits'
                25  LOAD_ATTR             3  'get'
                28  LOAD_CONST               'vehicleLevelLimitsByClass'
@@ -448,24 +449,24 @@ class BaseUnitRosterLimits(object):
                34  CALL_FUNCTION_2       2  None
                37  STORE_FAST            3  'vehicleLevelLimitsByClass'
 
- L. 547        40  LOAD_FAST             3  'vehicleLevelLimitsByClass'
+ L. 550        40  LOAD_FAST             3  'vehicleLevelLimitsByClass'
                43  LOAD_CONST               None
                46  COMPARE_OP            9  is-not
                49  POP_JUMP_IF_FALSE   117  'to 117'
 
- L. 548        52  LOAD_FAST             3  'vehicleLevelLimitsByClass'
+ L. 551        52  LOAD_FAST             3  'vehicleLevelLimitsByClass'
                55  LOAD_ATTR             3  'get'
                58  LOAD_FAST             1  'vehicleClassIdx'
                61  LOAD_CONST               None
                64  CALL_FUNCTION_2       2  None
                67  STORE_FAST            4  'vehicleLevelClassLimits'
 
- L. 549        70  LOAD_FAST             4  'vehicleLevelClassLimits'
+ L. 552        70  LOAD_FAST             4  'vehicleLevelClassLimits'
                73  LOAD_CONST               None
                76  COMPARE_OP            9  is-not
                79  POP_JUMP_IF_FALSE   117  'to 117'
 
- L. 550        82  LOAD_FAST             4  'vehicleLevelClassLimits'
+ L. 553        82  LOAD_FAST             4  'vehicleLevelClassLimits'
                85  LOAD_CONST               0
                88  BINARY_SUBSCR    
                89  LOAD_FAST             2  'vehicleLevel'
@@ -486,7 +487,7 @@ class BaseUnitRosterLimits(object):
               114  JUMP_FORWARD          0  'to 117'
             117_0  COME_FROM           114  '114'
 
- L. 551       117  LOAD_FAST             0  'self'
+ L. 554       117  LOAD_FAST             0  'self'
               120  LOAD_ATTR             2  'limits'
               123  LOAD_ATTR             3  'get'
               126  LOAD_CONST               'vehicleLevelLimits'
@@ -494,7 +495,7 @@ class BaseUnitRosterLimits(object):
               132  CALL_FUNCTION_2       2  None
               135  STORE_FAST            5  'vehicleLevelLimits'
 
- L. 553       138  LOAD_FAST             5  'vehicleLevelLimits'
+ L. 556       138  LOAD_FAST             5  'vehicleLevelLimits'
               141  LOAD_CONST               None
               144  COMPARE_OP            9  is-not
               147  POP_JUMP_IF_FALSE   184  'to 184'

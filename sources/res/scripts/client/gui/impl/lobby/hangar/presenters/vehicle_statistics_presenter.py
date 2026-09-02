@@ -6,6 +6,7 @@ from gui.impl.gen import R
 from gui.impl.gen.view_models.views.lobby.hangar.sub_views.vehicle_statistic_model import VehicleStatisticModel
 from gui.impl.gen.view_models.views.lobby.hangar.sub_views.vehicle_statistics_model import VehicleStatisticsModel
 from gui.impl.lobby.battle_pass.tooltips.vehicle_points_tooltip_view import VehiclePointsTooltipView
+from gui.impl.lobby.tooltips.rest_bonus_tooltip import RestBonusTooltip
 from gui.impl.pub.tooltip_window import SimpleTooltipContent
 from gui.impl.pub.view_component import ViewComponent
 from gui.prb_control.ctrl_events import g_prbCtrlEvents
@@ -14,7 +15,7 @@ from gui.shared import g_eventBus, events, EVENT_BUS_SCOPE
 from gui.shared.gui_items.Vehicle import Vehicle
 from helpers import dependency
 from renewable_subscription_common.settings_constants import PRO_BOOST_PDATA_KEY, PRO_BOOSTED_VEHICLE
-from skeletons.gui.game_control import IPlatoonController, IBattlePassController, IRentalsController, IWotPlusController
+from skeletons.gui.game_control import IPlatoonController, IBattlePassController, IRentalsController, IWotPlusController, IRestBonusController
 from skeletons.gui.shared import IItemsCache
 if typing.TYPE_CHECKING:
     from gui.impl.lobby.hangar.base.hangar_interfaces import IVehicleFilter, IAccountStyles
@@ -27,6 +28,7 @@ class VehiclesStatisticsPresenter(ViewComponent[VehicleStatisticsModel]):
     __battlePass = dependency.descriptor(IBattlePassController)
     __rentalsCtrl = dependency.descriptor(IRentalsController)
     __wotPlusCtrl = dependency.descriptor(IWotPlusController)
+    __restBonusCtrl = dependency.descriptor(IRestBonusController)
 
     def __init__(self, vehiclesComponent, accountStyles):
         super(VehiclesStatisticsPresenter, self).__init__(model=VehicleStatisticsModel)
@@ -42,6 +44,8 @@ class VehiclesStatisticsPresenter(ViewComponent[VehicleStatisticsModel]):
             return VehiclePointsTooltipView(int(event.getArgument('intCD')))
         if contentID == R.views.mono.battle_pass.tooltips.on_pause():
             return SimpleTooltipContent(R.views.mono.battle_pass.tooltips.on_pause())
+        if contentID == R.views.mono.rest_bonus.tooltips.rest_bonus_tooltip():
+            return RestBonusTooltip(int(event.getArgument('intCD')))
         return super(VehiclesStatisticsPresenter, self).createToolTipContent(event=event, contentID=contentID)
 
     def _getEvents(self):
@@ -59,7 +63,9 @@ class VehiclesStatisticsPresenter(ViewComponent[VehicleStatisticsModel]):
          (
           self.__battlePass.onVehiclesPointsUpdated, self.__onBPVehiclesPointsUpdated),
          (
-          self.__wotPlusCtrl.onDataChanged, self.__onWotPlusDataChanged))
+          self.__wotPlusCtrl.onDataChanged, self.__onWotPlusDataChanged),
+         (
+          self.__restBonusCtrl.onUpdated, self.__onRestBonusUpdated))
 
     def _onLoading(self, *args, **kwargs):
         super(VehiclesStatisticsPresenter, self)._onLoading(*args, **kwargs)
@@ -94,11 +100,14 @@ class VehiclesStatisticsPresenter(ViewComponent[VehicleStatisticsModel]):
     def __onPlatoonMembersUpdate(self):
         self.__updateVehicles(self._vehiclesComponent.vehicles)
 
+    def __onRestBonusUpdated(self):
+        self.__updateVehicles(self._vehiclesComponent.vehicles)
+
     def _getMaxBpScore(self, vehicle):
         return self.__battlePass.getVehicleProgression(vehicle.intCD)
 
     def _getDailyXPFactor(self, vehicle):
-        return vehicle.dailyXPFactor
+        return self.__restBonusCtrl.getActualXPFactor(vehicle)
 
     def __onUpdateVehicles(self, diff):
         with self.viewModel.transaction() as (model):
@@ -145,6 +154,7 @@ class VehiclesStatisticsPresenter(ViewComponent[VehicleStatisticsModel]):
         model.setBpProgress(bpProgress)
         model.setOwn3DStyle(vehicle.intCD in self.__accountStyles.vehiclesWith3DStyles and not vehicle.isOutfitLocked)
         model.setProBoostActive(isProBoosted)
+        model.setRestBonusEnabled(self.__restBonusCtrl.hasActiveBattleQuest(vehicle) and vehicle.dailyXPFactor)
         if vehicle.isEarnCrystals:
             numberOfCrystalEarned = model.getNumberOfCrystalEarned()
             for numberOfCrystals in vehicle.getCrystalsEarnedInfo():

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G196_Versuchspanzer_57/crash/lod1/Hull</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/german/G196_Versuchspanzer_57/crash/lod2/Hull</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.807978 -1.054286 -4.307644</min>
+		<max>1.850124 0.706645 3.472116</max>
+	</visibilityBox>
+</root>

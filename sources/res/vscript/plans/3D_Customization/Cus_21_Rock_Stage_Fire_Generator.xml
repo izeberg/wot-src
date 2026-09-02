@@ -23,7 +23,14 @@
 						<type>StringT</type>
 					</param>
 				</params>
-				<slots/>
+			</block>
+			<block>
+				<class>GameObjectToVehicle</class>
+				<id>GameObjectToVehicle_1</id>
+			</block>
+			<block>
+				<class>GetVehicleGameObject</class>
+				<id>GetVehicleGameObject_1</id>
 			</block>
 			<block>
 				<class>ComponentMethod</class>
@@ -56,22 +63,21 @@
 						<type>StringT</type>
 					</param>
 				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>GameObjectToVehicle</class>
-				<id>GameObjectToVehicle_1</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
-				<class>GetVehicleGameObject</class>
-				<id>GetVehicleGameObject_1</id>
-				<params/>
-				<slots/>
 			</block>
 		</blocks>
 		<connections>
+			<connection>
+				<from>GetVehicleGameObject_1</from>
+				<input>gameObject</input>
+				<to>GameObjectToVehicle_1</to>
+				<output>vehicleObject</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>GetVehicleGameObject_1</to>
+				<output>value</output>
+			</connection>
 			<connection>
 				<from>Macro_1</from>
 				<input>in</input>
@@ -89,18 +95,6 @@
 				<input>vehicle</input>
 				<to>Macro_1</to>
 				<output>vehicle</output>
-			</connection>
-			<connection>
-				<from>GetVehicleGameObject_1</from>
-				<input>gameObject</input>
-				<to>GameObjectToVehicle_1</to>
-				<output>vehicleObject</output>
-			</connection>
-			<connection>
-				<from>ContextGetSelf_1</from>
-				<input>gameObject</input>
-				<to>GetVehicleGameObject_1</to>
-				<output>value</output>
 			</connection>
 		</connections>
 		<macros/>

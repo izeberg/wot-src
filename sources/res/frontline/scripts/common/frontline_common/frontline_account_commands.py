@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 CMD_FL_SET_FPR = 900
 CMD_FL_GET_FPR = 901
 CMD_CREATE_PREBATTLE_EPIC_TRAINING = 902

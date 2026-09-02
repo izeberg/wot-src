@@ -1,0 +1,20 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-01 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "player_errors/equipment/wtEvent/restriction"
+msgstr "The ability is only available with an active shield."
+
+msgid "player_messages/DEVICE_STARTED_FIRE_AT_CIRCUIT_OVERLOAD"
+msgstr "The (%(name)s) was damaged by a short circuit!"
+
+msgid "player_messages/equipment/wtEvent/healthAtFullHP"
+msgstr "[%(name)s] Unable to repair. The vehicle is intact."

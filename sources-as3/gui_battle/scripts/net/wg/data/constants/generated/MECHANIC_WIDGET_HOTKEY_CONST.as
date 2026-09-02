@@ -23,7 +23,9 @@ package net.wg.data.constants.generated
       
       public static const CANCELLED:String = "cancelled";
       
-      public static const COMMANDS:Array = [COMMAND_ACTIVATE,ALTERNATIVE_ACTIVATE,PREPARING,CANCELLED];
+      public static const SWITCH:String = "switch";
+      
+      public static const COMMANDS:Array = [COMMAND_ACTIVATE,ALTERNATIVE_ACTIVATE,PREPARING,CANCELLED,SWITCH];
        
       
       public function MECHANIC_WIDGET_HOTKEY_CONST()

@@ -60,13 +60,41 @@
 						<type>StringT</type>
 					</param>
 				</params>
-				<slots/>
+			</block>
+			<block>
+				<class>GameObjectToVehicle</class>
+				<id>GameObjectToVehicle_2</id>
+			</block>
+			<block>
+				<class>GetVehicleGameObject</class>
+				<id>GetVehicleGameObject_2</id>
+			</block>
+			<block>
+				<class>SetVariable</class>
+				<id>SetVariable_3</id>
+				<buddy>Variable_10</buddy>
+				<params>
+					<param>
+						IntT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
 			</block>
 			<block>
 				<class>If</class>
 				<id>If_20</id>
-				<params/>
-				<slots/>
+			</block>
+			<block>
+				<class>Sequence</class>
+				<id>Sequence_3</id>
+				<params>
+					<param>
+						3
+						<name>Output Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
 			</block>
 			<block>
 				<class>ComponentMethod</class>
@@ -92,71 +120,10 @@
 			<block>
 				<class>CompareIntegers</class>
 				<id>CompareIntegers_4</id>
-				<params/>
 				<slots>
 					<slot>
 						<name>b</name>
 						<const>\1\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>SetVariable</class>
-				<id>SetVariable_3</id>
-				<buddy>Variable_10</buddy>
-				<params>
-					<param>
-						IntT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>Sequence</class>
-				<id>Sequence_3</id>
-				<params>
-					<param>
-						3
-						<name>Output Count</name>
-						<type>IntT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>Macro</class>
-				<id>Macro_2</id>
-				<params>
-					<param>
-						CustomizationVehicleEvents
-						<name>Macro Name</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>If</class>
-				<id>If_22</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
-				<class>ComponentMethod</class>
-				<id>ComponentMethod_49</id>
-				<params>
-					<param>
-						Animator.stopLayerByName
-						<name>Component Type</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>arg#0</name>
-						<const>\killed1\</const>
 					</slot>
 				</slots>
 			</block>
@@ -174,6 +141,50 @@
 					<slot>
 						<name>i1</name>
 						<const>\1\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>Macro</class>
+				<id>Macro_2</id>
+				<params>
+					<param>
+						CustomizationVehicleEvents
+						<name>Macro Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_11</id>
+				<buddy>Variable_10</buddy>
+				<params>
+					<param>
+						IntT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_22</id>
+			</block>
+			<block>
+				<class>ComponentMethod</class>
+				<id>ComponentMethod_49</id>
+				<params>
+					<param>
+						Animator.stopLayerByName
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>arg#0</name>
+						<const>\killed1\</const>
 					</slot>
 				</slots>
 			</block>
@@ -199,17 +210,6 @@
 				</slots>
 			</block>
 			<block>
-				<class>CompareIntegers</class>
-				<id>CompareIntegers_5</id>
-				<params/>
-				<slots>
-					<slot>
-						<name>b</name>
-						<const>\3\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
 				<class>GetVariable</class>
 				<id>GetVariable_9</id>
 				<buddy>Variable_10</buddy>
@@ -220,38 +220,20 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_11</id>
-				<buddy>Variable_10</buddy>
-				<params>
-					<param>
-						IntT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>GameObjectToVehicle</class>
-				<id>GameObjectToVehicle_2</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
-				<class>GetVehicleGameObject</class>
-				<id>GetVehicleGameObject_2</id>
-				<params/>
-				<slots/>
+				<class>CompareIntegers</class>
+				<id>CompareIntegers_5</id>
+				<slots>
+					<slot>
+						<name>b</name>
+						<const>\3\</const>
+					</slot>
+				</slots>
 			</block>
 			<block>
 				<class>If</class>
 				<id>If_23</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>ComponentMethod</class>
@@ -294,7 +276,6 @@
 			<block>
 				<class>CompareIntegers</class>
 				<id>CompareIntegers_6</id>
-				<params/>
 				<slots>
 					<slot>
 						<name>b</name>
@@ -302,36 +283,29 @@
 					</slot>
 				</slots>
 			</block>
+			<block>
+				<class>ComponentMethod</class>
+				<id>ComponentMethod_53</id>
+				<params>
+					<param>
+						Animator.stop
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+			</block>
 		</blocks>
 		<connections>
 			<connection>
-				<from>Sequence_3</from>
-				<input>input</input>
-				<to>If_20</to>
-				<output>o0</output>
-			</connection>
-			<connection>
-				<from>CompareIntegers_4</from>
-				<input>value</input>
-				<to>If_20</to>
-				<output>equal</output>
-			</connection>
-			<connection>
-				<from>If_20</from>
-				<input>in</input>
-				<to>ComponentMethod_52</to>
-				<output>true</output>
+				<from>GetVehicleGameObject_2</from>
+				<input>gameObject</input>
+				<to>GameObjectToVehicle_2</to>
+				<output>vehicleObject</output>
 			</connection>
 			<connection>
 				<from>ContextGetSelf_1</from>
 				<input>gameObject</input>
-				<to>ComponentMethod_52</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>GetVariable_9</from>
-				<input>a</input>
-				<to>CompareIntegers_4</to>
+				<to>GetVehicleGameObject_2</to>
 				<output>value</output>
 			</connection>
 			<connection>
@@ -353,10 +327,46 @@
 				<output>res</output>
 			</connection>
 			<connection>
+				<from>Sequence_3</from>
+				<input>input</input>
+				<to>If_20</to>
+				<output>o0</output>
+			</connection>
+			<connection>
+				<from>CompareIntegers_4</from>
+				<input>value</input>
+				<to>If_20</to>
+				<output>equal</output>
+			</connection>
+			<connection>
 				<from>SetVariable_3</from>
 				<input>input</input>
 				<to>Sequence_3</to>
 				<output>out</output>
+			</connection>
+			<connection>
+				<from>If_20</from>
+				<input>in</input>
+				<to>ComponentMethod_52</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>ComponentMethod_52</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>GetVariable_9</from>
+				<input>a</input>
+				<to>CompareIntegers_4</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>GetVariable_11</from>
+				<input>i0</input>
+				<to>AddInteger_1</to>
+				<output>value</output>
 			</connection>
 			<connection>
 				<from>GameObjectToVehicle_2</from>
@@ -389,12 +399,6 @@
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>GetVariable_11</from>
-				<input>i0</input>
-				<to>AddInteger_1</to>
-				<output>value</output>
-			</connection>
-			<connection>
 				<from>ComponentMethod_49</from>
 				<input>in</input>
 				<to>ComponentMethod_48</to>
@@ -410,18 +414,6 @@
 				<from>GetVariable_9</from>
 				<input>a</input>
 				<to>CompareIntegers_5</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>GetVehicleGameObject_2</from>
-				<input>gameObject</input>
-				<to>GameObjectToVehicle_2</to>
-				<output>vehicleObject</output>
-			</connection>
-			<connection>
-				<from>ContextGetSelf_1</from>
-				<input>gameObject</input>
-				<to>GetVehicleGameObject_2</to>
 				<output>value</output>
 			</connection>
 			<connection>
@@ -455,6 +447,12 @@
 				<output>out</output>
 			</connection>
 			<connection>
+				<from>Macro_2</from>
+				<input>in</input>
+				<to>ComponentMethod_51</to>
+				<output>PrebattleHighlightStart</output>
+			</connection>
+			<connection>
 				<from>ContextGetSelf_1</from>
 				<input>gameObject</input>
 				<to>ComponentMethod_51</to>
@@ -464,6 +462,18 @@
 				<from>GetVariable_9</from>
 				<input>a</input>
 				<to>CompareIntegers_6</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>Macro_2</from>
+				<input>in</input>
+				<to>ComponentMethod_53</to>
+				<output>PrebattleHighlightEnd</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>ComponentMethod_53</to>
 				<output>value</output>
 			</connection>
 		</connections>
@@ -512,7 +522,6 @@
 								<type>StringT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>MacroInput</class>
@@ -533,7 +542,6 @@
 								<type>StringT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>Timer</class>
@@ -562,7 +570,6 @@
 								<type>StringT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>Sequence</class>
@@ -574,7 +581,6 @@
 								<type>IntT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>ComponentMethod</class>
@@ -603,7 +609,6 @@
 								<type>StringT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>Delay</class>
@@ -637,7 +642,6 @@
 								<type>StringT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>ComponentMethod</class>
@@ -649,7 +653,6 @@
 								<type>StringT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>MacroInput</class>
@@ -726,7 +729,6 @@
 								<type>StringT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 				</blocks>
 				<connections>
@@ -894,20 +896,14 @@
 					<block>
 						<class>DeactivateGameObject</class>
 						<id>DeactivateGameObject_1</id>
-						<params/>
-						<slots/>
 					</block>
 					<block>
 						<class>If</class>
 						<id>If_17</id>
-						<params/>
-						<slots/>
 					</block>
 					<block>
 						<class>If</class>
 						<id>If_19</id>
-						<params/>
-						<slots/>
 					</block>
 					<block>
 						<class>MacroInput</class>
@@ -929,7 +925,6 @@
 								<type>StringT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>GetVariable</class>
@@ -942,13 +937,10 @@
 								<type>TypeT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>IsActive</class>
 						<id>IsActive_1</id>
-						<params/>
-						<slots/>
 					</block>
 					<block>
 						<class>GetVariable</class>
@@ -961,7 +953,6 @@
 								<type>TypeT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>ContextGetSelf</class>
@@ -978,7 +969,6 @@
 								<type>StringT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>PrintToGameLogs</class>
@@ -1016,7 +1006,6 @@
 								<type>StringT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>Sequence</class>
@@ -1028,7 +1017,6 @@
 								<type>IntT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>MacroOutput</class>
@@ -1045,7 +1033,6 @@
 								<type>TypeT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>SetVariable</class>
@@ -1058,18 +1045,14 @@
 								<type>TypeT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>ActivateGameObject</class>
 						<id>ActivateGameObject_2</id>
-						<params/>
-						<slots/>
 					</block>
 					<block>
 						<class>FindFirstNode</class>
 						<id>FindFirstNode_2</id>
-						<params/>
 						<slots>
 							<slot>
 								<name>includingInactive</name>
@@ -1097,7 +1080,6 @@
 								<type>StringT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 				</blocks>
 				<connections>

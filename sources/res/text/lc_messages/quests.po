@@ -989,6 +989,12 @@ msgstr "Manageable XP Multiplier"
 msgid "bonusName/attachment"
 msgstr "3D Attachment"
 
+msgid "bonusName/attachments_set/aerialAdvance"
+msgstr "Aerial Advance"
+
+msgid "bonusName/attachments_set/airDefenseSuite"
+msgstr "Air Defense Suite"
+
 msgid "bonusName/attachments_set/challengersBounty"
 msgstr "Challenger's Bounty"
 
@@ -997,6 +1003,9 @@ msgstr "3D Attachment Set"
 
 msgid "bonusName/attachments_set/oceanicSentinel"
 msgstr "Oceanic Sentinel"
+
+msgid "bonusName/attachments_set/searchAndDestroy"
+msgstr "Search and Destroy"
 
 msgid "bonusName/attendance_reward"
 msgstr "Attendance Rewards"
@@ -4717,6 +4726,14 @@ msgstr "Strategic mission"
 
 msgid "item/type/specialMission"
 msgstr "Stronghold: Special Instructions"
+
+msgid "lockedForRerollTooltip/body"
+msgstr ""
+"This mission will be available for completion every day during the event and"
+" cannot be re-rolled."
+
+msgid "lockedForRerollTooltip/header"
+msgstr "Fixed mission"
 
 msgid "metrics/state/done"
 msgstr "Completed"

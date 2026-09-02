@@ -296,6 +296,12 @@ class SubscriptionSettingsStorage(object):
             return 0.0
         return tierSettings.passiveCrewXPFeature.xpPerMinute
 
+    def getDefCrewXPPerMinute(self):
+        settingsModel = self._modelProvider.getModelRef()
+        if not settingsModel:
+            return False
+        return settingsModel.passiveCrewXPFeature.xpPerMinute
+
     def isBattleBonusesEnabled(self):
         settingsModel = self._modelProvider.getModelRef()
         if not settingsModel:

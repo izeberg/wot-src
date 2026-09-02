@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F147_AMX29_Belier/normal/lod1/Turret_01</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/french/F147_AMX29_Belier/normal/lod2/Turret_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.632119 -0.002848 -1.979862</min>
+		<max>1.631423 3.479126 1.733761</max>
+	</visibilityBox>
+</root>

@@ -110,15 +110,7 @@ def getPassiveCrewXPPerMinuteFromAllTiers(wotPlusController=None):
     storage = wotPlusController.getSettingsStorage()
     if not storage.isPassiveCrewXPEnabled():
         return 0.0
-    xpPerMinute = storage.getCrewXPPerMinute()
-    if xpPerMinute and storage.isPassiveCrewXPAvailable():
-        return xpPerMinute
-    maxXP = 0.0
-    for _, tierSettings in storage.iterTier():
-        if tierSettings.passiveCrewXPFeature.available:
-            maxXP = max(maxXP, tierSettings.passiveCrewXPFeature.xpPerMinute)
-
-    return maxXP
+    return storage.getDefCrewXPPerMinute()
 
 
 class ProBoostUtils(object):

@@ -70,6 +70,66 @@
 			<shader>\data\shaders\ps.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/eff_dirt.dds</texture>
 		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_rocket_accelerator.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_rocket_accelerator.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization_2.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization_2.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization_main.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization_main.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/cus_14_sparks.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/cus_14_sparks.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/FireTrunkAtlasLong_03.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/electric_engine.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_fireworks.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_fireworks.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_tex_h34.dds</texture>
+		</preload>
 		<fn_effect_bin>particles/environment/storymode/105_germany_plane_bomb_explosion.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/storymode/105_germany_explosion_dust_directional.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/storymode/105_germany_dust_trail.eff</fn_effect_bin>
@@ -111,23 +171,22 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bld4502_fountainsmall.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/02_malinovka_fire_small.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/101_dday_fire_small.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/105_firesmoke_thick.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/105_germany_ambient_smoke.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/105_germany_ambient_wide_smoke.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/105_germany_fire_large.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/105_germany_fire_large_s.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/105_germany_fire_large_ss.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/105_germany_ground_white_smokethin.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/105_germany_sm24_firesmoke_thick.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/105_germany_sm24_ground_white_smokethin.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/105_germany_sm24_smoke.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/105_germany_sm24_smoke_light.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/105_germany_smoke_dark.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/105_germany_smoke_fillhole.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/105_germany_smoke_light.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/105_germany_smokefire_big.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/105_germany_smokewall.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/105_germany_sparks.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/105_germany_window_smoke.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/105_germany_window_smoke_light.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/105_germany_window_smokefire.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/14_siegfried_line_smoke.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/99_poland_smoke_FireGrass_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/env_105_01_BerlinFountain01_0.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/env_105_01_BerlinFountain01_1.vfx</fn_effect_bin>
@@ -234,16 +293,15 @@
 		<fn_effect_bin>particles/Environment/buildings/inf_bld4502_fountainsmall.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/02_malinovka_fire_small.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/101_dday_fire_small.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/105_firesmoke_thick.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/105_germany_ambient_smoke.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/105_germany_ambient_wide_smoke.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/105_germany_fire_large.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/105_germany_ground_white_smokethin.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/105_germany_ground_white_smokethin.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/105_germany_sm24_firesmoke_thick.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/105_germany_sm24_ground_white_smokethin.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/105_germany_sm24_smoke.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/105_germany_sm24_smoke_light.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/105_germany_smoke_dark.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/105_germany_smoke_dark.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/105_germany_smoke_fillhole.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/105_germany_smoke_light.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/105_germany_smokefire_big.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/105_germany_smokewall.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/105_germany_smokewall.eff</fn_effect_bin>
@@ -251,8 +309,6 @@
 		<fn_effect_bin>particles/Environment/interior/105_germany_window_smoke.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/105_germany_window_smoke_light.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/105_germany_window_smokefire.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/14_siegfried_line_smoke.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/14_siegfried_line_smoke.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/99_poland_smoke_firegrass_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/env_105_01_BerlinFountain01_0.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/env_105_01_BerlinFountain01_1.eff</fn_effect_bin>
@@ -366,12 +422,28 @@
 	</deferred>
 	<forward>
 		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_tex_108_normandy.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/105_contrail.dds</texture>
+		</preload>
+		<preload>
 			<shader>\data\shaders\ps_solid.fx</shader>
 			<texture>particles/content_forward/PFX_textures/eff_tex.dds</texture>
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps_water.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_tex_water.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_water.fx</shader>
 			<texture>particles/content_forward/PFX_textures/eff_tex.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_water.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_dirt.dds</texture>
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps.fx</shader>
@@ -387,6 +459,14 @@
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_dirt.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_dirt.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
 			<texture>particles/content_forward/PFX_textures/eff_tex.dds</texture>
 		</preload>
 		<preload>
@@ -399,15 +479,51 @@
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_tex_108_normandy.dds</texture>
+			<texture>particles/content_forward/PFX_textures/eff_rocket_accelerator.dds</texture>
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps_long.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/105_contrail.dds</texture>
+			<texture>particles/content_forward/PFX_textures/eff_rocket_accelerator.dds</texture>
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_dirt.dds</texture>
+			<texture>particles/content_forward/PFX_textures/eff_customization.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_customization.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_customization_2.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_customization_2.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_customization_main.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_customization_main.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/cus_14_sparks.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/cus_14_sparks.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/electric_engine.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_fireworks.dds</texture>
 		</preload>
 		<fn_effect_bin>particles/environment/storymode/105_germany_plane_bomb_explosion.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/storymode/105_germany_explosion_dust_directional.eff</fn_effect_bin>
@@ -450,21 +566,16 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bld4502_fountainsmall.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/02_malinovka_fire_small.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/101_dday_fire_small.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/105_firesmoke_thick.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/105_germany_ambient_smoke.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/105_germany_ambient_wide_smoke.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/105_germany_fire_large.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/105_germany_ground_white_smokethin.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/105_germany_smoke_dark.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/105_germany_smoke_fillhole.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/105_germany_smoke_light.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/105_germany_smokefire_big.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/105_germany_smokewall.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/105_germany_sparks.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/105_germany_window_smoke.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/105_germany_window_smoke_light.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/105_germany_window_smokefire.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/14_siegfried_line_smoke.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/99_poland_smoke_FireGrass_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/env_105_01_BerlinFountain01_0.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/env_105_01_BerlinFountain01_1.vfx</fn_effect_bin>
@@ -568,16 +679,15 @@
 		<fn_effect_bin>particles/Environment/buildings/inf_bld4502_fountainsmall.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/02_malinovka_fire_small.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/101_dday_fire_small.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/105_firesmoke_thick.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/105_germany_ambient_smoke.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/105_germany_ambient_wide_smoke.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/105_germany_fire_large.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/105_germany_ground_white_smokethin.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/105_germany_ground_white_smokethin.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/105_germany_sm24_firesmoke_thick.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/105_germany_sm24_ground_white_smokethin.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/105_germany_sm24_smoke.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/105_germany_sm24_smoke_light.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/105_germany_smoke_dark.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/105_germany_smoke_dark.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/105_germany_smoke_fillhole.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/105_germany_smoke_light.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/105_germany_smokefire_big.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/105_germany_smokewall.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/105_germany_smokewall.eff</fn_effect_bin>
@@ -585,8 +695,6 @@
 		<fn_effect_bin>particles/Environment/interior/105_germany_window_smoke.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/105_germany_window_smoke_light.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/105_germany_window_smokefire.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/14_siegfried_line_smoke.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/14_siegfried_line_smoke.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/99_poland_smoke_firegrass_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/env_105_01_BerlinFountain01_0.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/env_105_01_BerlinFountain01_1.eff</fn_effect_bin>

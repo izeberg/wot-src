@@ -195,26 +195,6 @@
 			</block>
 			<block>
 				<class>MacroOutput</class>
-				<id>MacroOutput_8</id>
-				<params>
-					<param>
-						onOwnShot
-						<name>Output Name</name>
-						<type>StringT</type>
-					</param>
-					<param>
-						EventT
-						<name>Output Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-			</block>
-			<block>
-				<class>If</class>
-				<id>If_3</id>
-			</block>
-			<block>
-				<class>MacroOutput</class>
 				<id>MacroOutput_10</id>
 				<params>
 					<param>
@@ -230,19 +210,22 @@
 				</params>
 			</block>
 			<block>
-				<class>Choice</class>
-				<id>Choice_1</id>
-				<params>
-					<param>
-						5
-						<name>Output Count</name>
-						<type>IntT</type>
-					</param>
-				</params>
+				<class>If</class>
+				<id>If_22</id>
 			</block>
 			<block>
-				<class>OnVehicleShaked</class>
-				<id>OnVehicleShaked_1</id>
+				<class>OnVehicleHit</class>
+				<id>OnVehicleHit_1</id>
+				<slots>
+					<slot>
+						<name>active</name>
+						<const>\true\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_23</id>
 			</block>
 			<block>
 				<class>MacroOutput</class>
@@ -262,7 +245,41 @@
 			</block>
 			<block>
 				<class>CompareVehicles</class>
-				<id>CompareVehicles_4</id>
+				<id>CompareVehicles_9</id>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_24</id>
+			</block>
+			<block>
+				<class>OnVehicleShot</class>
+				<id>OnVehicleShot_1</id>
+				<slots>
+					<slot>
+						<name>active</name>
+						<const>\true\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>MacroOutput</class>
+				<id>MacroOutput_8</id>
+				<params>
+					<param>
+						onOwnShot
+						<name>Output Name</name>
+						<type>StringT</type>
+					</param>
+					<param>
+						EventT
+						<name>Output Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>CompareVehicles</class>
+				<id>CompareVehicles_10</id>
 			</block>
 			<block>
 				<class>MacroOutput</class>
@@ -331,15 +348,25 @@
 			</block>
 			<block>
 				<class>If</class>
-				<id>If_4</id>
+				<id>If_12</id>
 			</block>
 			<block>
 				<class>If</class>
 				<id>If_20</id>
 			</block>
 			<block>
+				<class>OnAnyVehicleDestroyed</class>
+				<id>OnAnyVehicleDestroyed_1</id>
+				<slots>
+					<slot>
+						<name>active</name>
+						<const>\true\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
 				<class>If</class>
-				<id>If_12</id>
+				<id>If_4</id>
 			</block>
 			<block>
 				<class>IntVariableAdd</class>
@@ -364,16 +391,6 @@
 				<id>If_1</id>
 			</block>
 			<block>
-				<class>OnAnyVehicleDestroyed</class>
-				<id>OnAnyVehicleDestroyed_1</id>
-				<slots>
-					<slot>
-						<name>active</name>
-						<const>\true\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
 				<class>MacroOutput</class>
 				<id>MacroOutput_3</id>
 				<params>
@@ -386,6 +403,21 @@
 						EventT
 						<name>Output Type</name>
 						<type>TypeT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>IsVehicleValid</class>
+				<id>IsVehicleValid_2</id>
+			</block>
+			<block>
+				<class>And</class>
+				<id>And_2</id>
+				<params>
+					<param>
+						2
+						<name>Input Count</name>
+						<type>IntT</type>
 					</param>
 				</params>
 			</block>
@@ -405,22 +437,7 @@
 			</block>
 			<block>
 				<class>CompareVehicles</class>
-				<id>CompareVehicles_8</id>
-			</block>
-			<block>
-				<class>CompareVehicles</class>
 				<id>CompareVehicles_3</id>
-			</block>
-			<block>
-				<class>And</class>
-				<id>And_2</id>
-				<params>
-					<param>
-						2
-						<name>Input Count</name>
-						<type>IntT</type>
-					</param>
-				</params>
 			</block>
 			<block>
 				<class>MacroOutput</class>
@@ -439,8 +456,8 @@
 				</params>
 			</block>
 			<block>
-				<class>IsVehicleValid</class>
-				<id>IsVehicleValid_2</id>
+				<class>CompareVehicles</class>
+				<id>CompareVehicles_8</id>
 			</block>
 			<block>
 				<class>GetVariable</class>
@@ -616,20 +633,30 @@
 				</params>
 			</block>
 			<block>
+				<class>OnVehicleHit</class>
+				<id>OnVehicleHit_2</id>
+				<slots>
+					<slot>
+						<name>active</name>
+						<const>\true\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
 				<class>If</class>
 				<id>If_14</id>
 			</block>
 			<block>
 				<class>If</class>
-				<id>If_15</id>
-			</block>
-			<block>
-				<class>OnVehicleShaked</class>
-				<id>OnVehicleShaked_2</id>
+				<id>If_25</id>
 			</block>
 			<block>
 				<class>CompareFloats</class>
 				<id>CompareFloats_6</id>
+			</block>
+			<block>
+				<class>CompareVehicles</class>
+				<id>CompareVehicles_11</id>
 			</block>
 			<block>
 				<class>If</class>
@@ -650,10 +677,6 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-			</block>
-			<block>
-				<class>CompareVehicles</class>
-				<id>CompareVehicles_6</id>
 			</block>
 			<block>
 				<class>MultiplyFloat</class>
@@ -872,60 +895,150 @@
 					</slot>
 				</slots>
 			</block>
+			<block>
+				<class>StartScript</class>
+				<id>StartScript_1</id>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_26</id>
+			</block>
+			<block>
+				<class>MacroOutput</class>
+				<id>MacroOutput_23</id>
+				<params>
+					<param>
+						PrebattleHighlightStart
+						<name>Output Name</name>
+						<type>StringT</type>
+					</param>
+					<param>
+						EventT
+						<name>Output Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>OnPrebattleHighlights</class>
+				<id>OnPrebattleHighlights_1</id>
+			</block>
+			<block>
+				<class>ArenaPeriod</class>
+				<id>ArenaPeriod_1</id>
+				<params>
+					<param>
+						Battle
+						<name>Period</name>
+						<type>EArenaPeriodT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>MacroOutput</class>
+				<id>MacroOutput_24</id>
+				<params>
+					<param>
+						PrebattleHighlightEnd
+						<name>Output Name</name>
+						<type>StringT</type>
+					</param>
+					<param>
+						EventT
+						<name>Output Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>ArenaPeriodStartEvent</class>
+				<id>ArenaPeriodStartEvent_4</id>
+				<params>
+					<param>
+						Battle
+						<name>Period</name>
+						<type>EArenaPeriodT</type>
+					</param>
+				</params>
+			</block>
 		</blocks>
 		<connections>
 			<connection>
-				<from>Choice_1</from>
-				<input>onOwnShot</input>
-				<to>MacroOutput_8</to>
-				<output>o0</output>
-			</connection>
-			<connection>
-				<from>OnVehicleShaked_1</from>
-				<input>input</input>
-				<to>If_3</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>CompareVehicles_4</from>
-				<input>value</input>
-				<to>If_3</to>
-				<output>res</output>
-			</connection>
-			<connection>
-				<from>Choice_1</from>
+				<from>If_23</from>
 				<input>onHitDamage</input>
 				<to>MacroOutput_10</to>
-				<output>o2</output>
-			</connection>
-			<connection>
-				<from>If_3</from>
-				<input>input</input>
-				<to>Choice_1</to>
 				<output>true</output>
 			</connection>
 			<connection>
-				<from>OnVehicleShaked_1</from>
-				<input>index</input>
-				<to>Choice_1</to>
-				<output>shakeReason</output>
+				<from>OnVehicleHit_1</from>
+				<input>input</input>
+				<to>If_22</to>
+				<output>onHit</output>
 			</connection>
 			<connection>
-				<from>Choice_1</from>
+				<from>CompareVehicles_9</from>
+				<input>value</input>
+				<to>If_22</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>If_22</from>
+				<input>input</input>
+				<to>If_23</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>OnVehicleHit_1</from>
+				<input>value</input>
+				<to>If_23</to>
+				<output>withDamage</output>
+			</connection>
+			<connection>
+				<from>If_23</from>
 				<input>onHitNoDamage</input>
 				<to>MacroOutput_2</to>
-				<output>o3</output>
+				<output>false</output>
 			</connection>
 			<connection>
 				<from>MacroInput_1</from>
 				<input>a</input>
-				<to>CompareVehicles_4</to>
+				<to>CompareVehicles_9</to>
 				<output>vehicle</output>
 			</connection>
 			<connection>
-				<from>OnVehicleShaked_1</from>
+				<from>OnVehicleHit_1</from>
 				<input>b</input>
-				<to>CompareVehicles_4</to>
+				<to>CompareVehicles_9</to>
+				<output>vehicle</output>
+			</connection>
+			<connection>
+				<from>OnVehicleShot_1</from>
+				<input>input</input>
+				<to>If_24</to>
+				<output>onShot</output>
+			</connection>
+			<connection>
+				<from>CompareVehicles_10</from>
+				<input>value</input>
+				<to>If_24</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>If_24</from>
+				<input>onOwnShot</input>
+				<to>MacroOutput_8</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>MacroInput_1</from>
+				<input>a</input>
+				<to>CompareVehicles_10</to>
+				<output>vehicle</output>
+			</connection>
+			<connection>
+				<from>OnVehicleShot_1</from>
+				<input>b</input>
+				<to>CompareVehicles_10</to>
 				<output>vehicle</output>
 			</connection>
 			<connection>
@@ -983,16 +1096,16 @@
 				<output>true</output>
 			</connection>
 			<connection>
-				<from>IntVariableAdd_1</from>
+				<from>OnAnyVehicleDestroyed_1</from>
 				<input>input</input>
-				<to>If_4</to>
-				<output>out</output>
+				<to>If_12</to>
+				<output>onDestroyed</output>
 			</connection>
 			<connection>
-				<from>CompareIntegers_2</from>
+				<from>And_2</from>
 				<input>value</input>
-				<to>If_4</to>
-				<output>greater</output>
+				<to>If_12</to>
+				<output>res</output>
 			</connection>
 			<connection>
 				<from>If_12</from>
@@ -1007,16 +1120,16 @@
 				<output>res</output>
 			</connection>
 			<connection>
-				<from>OnAnyVehicleDestroyed_1</from>
+				<from>IntVariableAdd_1</from>
 				<input>input</input>
-				<to>If_12</to>
-				<output>onDestroyed</output>
+				<to>If_4</to>
+				<output>out</output>
 			</connection>
 			<connection>
-				<from>And_2</from>
+				<from>CompareIntegers_2</from>
 				<input>value</input>
-				<to>If_12</to>
-				<output>res</output>
+				<to>If_4</to>
+				<output>greater</output>
 			</connection>
 			<connection>
 				<from>If_1</from>
@@ -1043,6 +1156,24 @@
 				<output>false</output>
 			</connection>
 			<connection>
+				<from>OnAnyVehicleDestroyed_1</from>
+				<input>vehicle</input>
+				<to>IsVehicleValid_2</to>
+				<output>target</output>
+			</connection>
+			<connection>
+				<from>IsVehicleValid_2</from>
+				<input>i1</input>
+				<to>And_2</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>IsVehicleValid_1</from>
+				<input>i2</input>
+				<to>And_2</to>
+				<output>res</output>
+			</connection>
+			<connection>
 				<from>GetVariable_1</from>
 				<input>a</input>
 				<to>CompareIntegers_2</to>
@@ -1052,19 +1183,7 @@
 				<from>OnAnyVehicleDestroyed_1</from>
 				<input>vehicle</input>
 				<to>IsVehicleValid_1</to>
-				<output>target</output>
-			</connection>
-			<connection>
-				<from>OnAnyVehicleDestroyed_1</from>
-				<input>a</input>
-				<to>CompareVehicles_8</to>
-				<output>target</output>
-			</connection>
-			<connection>
-				<from>MacroInput_1</from>
-				<input>b</input>
-				<to>CompareVehicles_8</to>
-				<output>vehicle</output>
+				<output>attacker</output>
 			</connection>
 			<connection>
 				<from>OnAnyVehicleDestroyed_1</from>
@@ -1077,18 +1196,6 @@
 				<input>b</input>
 				<to>CompareVehicles_3</to>
 				<output>vehicle</output>
-			</connection>
-			<connection>
-				<from>IsVehicleValid_1</from>
-				<input>i1</input>
-				<to>And_2</to>
-				<output>res</output>
-			</connection>
-			<connection>
-				<from>IsVehicleValid_2</from>
-				<input>i2</input>
-				<to>And_2</to>
-				<output>res</output>
 			</connection>
 			<connection>
 				<from>If_12</from>
@@ -1104,9 +1211,15 @@
 			</connection>
 			<connection>
 				<from>OnAnyVehicleDestroyed_1</from>
-				<input>vehicle</input>
-				<to>IsVehicleValid_2</to>
-				<output>attacker</output>
+				<input>a</input>
+				<to>CompareVehicles_8</to>
+				<output>target</output>
+			</connection>
+			<connection>
+				<from>MacroInput_1</from>
+				<input>b</input>
+				<to>CompareVehicles_8</to>
+				<output>vehicle</output>
 			</connection>
 			<connection>
 				<from>ArenaPeriodStartEvent_1</from>
@@ -1181,15 +1294,15 @@
 				<output>less</output>
 			</connection>
 			<connection>
-				<from>OnVehicleShaked_2</from>
+				<from>OnVehicleHit_2</from>
 				<input>input</input>
-				<to>If_15</to>
-				<output>out</output>
+				<to>If_25</to>
+				<output>onHit</output>
 			</connection>
 			<connection>
-				<from>CompareVehicles_6</from>
+				<from>CompareVehicles_11</from>
 				<input>value</input>
-				<to>If_15</to>
+				<to>If_25</to>
 				<output>res</output>
 			</connection>
 			<connection>
@@ -1205,7 +1318,19 @@
 				<output>res</output>
 			</connection>
 			<connection>
-				<from>If_15</from>
+				<from>MacroInput_1</from>
+				<input>a</input>
+				<to>CompareVehicles_11</to>
+				<output>vehicle</output>
+			</connection>
+			<connection>
+				<from>OnVehicleHit_2</from>
+				<input>b</input>
+				<to>CompareVehicles_11</to>
+				<output>vehicle</output>
+			</connection>
+			<connection>
+				<from>If_25</from>
 				<input>input</input>
 				<to>If_13</to>
 				<output>true</output>
@@ -1221,18 +1346,6 @@
 				<input>HP_20_output</input>
 				<to>MacroOutput_16</to>
 				<output>false</output>
-			</connection>
-			<connection>
-				<from>OnVehicleShaked_2</from>
-				<input>a</input>
-				<to>CompareVehicles_6</to>
-				<output>vehicle</output>
-			</connection>
-			<connection>
-				<from>MacroInput_1</from>
-				<input>b</input>
-				<to>CompareVehicles_6</to>
-				<output>vehicle</output>
 			</connection>
 			<connection>
 				<from>GetVehicleMaxHealth_1</from>
@@ -1413,6 +1526,42 @@
 				<input>i0</input>
 				<to>MultiplyFloat_3</to>
 				<output>res</output>
+			</connection>
+			<connection>
+				<from>StartScript_1</from>
+				<input>input</input>
+				<to>If_26</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>ArenaPeriod_1</from>
+				<input>value</input>
+				<to>If_26</to>
+				<output>isActive</output>
+			</connection>
+			<connection>
+				<from>OnPrebattleHighlights_1</from>
+				<input>PrebattleHighlightStart</input>
+				<to>MacroOutput_23</to>
+				<output>onStart</output>
+			</connection>
+			<connection>
+				<from>If_26</from>
+				<input>subscribe</input>
+				<to>OnPrebattleHighlights_1</to>
+				<output>false</output>
+			</connection>
+			<connection>
+				<from>ArenaPeriodStartEvent_4</from>
+				<input>unsubscribe</input>
+				<to>OnPrebattleHighlights_1</to>
+				<output>start</output>
+			</connection>
+			<connection>
+				<from>OnPrebattleHighlights_1</from>
+				<input>PrebattleHighlightEnd</input>
+				<to>MacroOutput_24</to>
+				<output>onEnded</output>
 			</connection>
 		</connections>
 		<macros/>

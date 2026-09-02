@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/czech/Cz46_Vz_63P/crash/lod4/Hull</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.706871 -0.809606 -3.411582</min>
+		<max>1.704228 0.655383 3.366310</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/czech/Cz46_Vz_63P/crash/lod3/Hull</nodefullVisual>
+</root>

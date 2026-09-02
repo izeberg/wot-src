@@ -199,11 +199,6 @@ msgstr ""
 "Research all vehicles in the Chinese medium branch that leads to "
 "the&nbsp;121 (Tier&nbsp;%(level)s)"
 
-msgid "description/branch_china_Ch29_Type_62C_prot"
-msgstr ""
-"Research all vehicles in the Chinese light branch that leads to "
-"the&nbsp;WZ-132-1 (Tier&nbsp;%(level)s)"
-
 msgid "description/branch_china_Ch38_WZ113G_FT"
 msgstr ""
 "Research all vehicles in the Chinese TD branch that leads to "
@@ -229,20 +224,25 @@ msgstr ""
 "Research all vehicles in the Chinese TD branch that leads to the&nbsp;PTZ-78"
 " (Tier&nbsp;%(level)s)"
 
+msgid "description/branch_china_Ch71_WZ_219"
+msgstr ""
+"Research all vehicles in the Chinese light branch that leads to "
+"the&nbsp;WZ-219 (Tier&nbsp;%(level)s)"
+
 msgid "description/branch_czech_Cz04_T50_51"
 msgstr ""
 "Research all vehicles in the Czechoslovakian medium branch that leads to "
 "the&nbsp;TVP&nbsp;T&nbsp;50/51 (Tier&nbsp;%(level)s)"
 
-msgid "description/branch_czech_Cz17_Vz_55"
-msgstr ""
-"Research all vehicles in the Czechoslovakian heavy branch that leads to "
-"the&nbsp;Vz.&nbsp;55 (Tier&nbsp;%(level)s)"
-
 msgid "description/branch_czech_Cz34_Vz_71_Tesak"
 msgstr ""
 "Research all vehicles in the Czechoslovakian light branch that leads to "
 "the&nbsp;Vz.&nbsp;71&nbsp;Tesák (Tier&nbsp;%(level)s)"
+
+msgid "description/branch_czech_Cz46_Vz_63P"
+msgstr ""
+"Research all vehicles in the Czechoslovakian heavy branch that leads to "
+"the&nbsp;Vz.&nbsp;63P (Tier&nbsp;%(level)s)"
 
 msgid "description/branch_france_F108_Panhard_EBR_105"
 msgstr ""
@@ -324,6 +324,11 @@ msgstr ""
 "Research all vehicles in the German TD branch that leads to "
 "the&nbsp;Hirschkäfer (Tier&nbsp;%(level)s)"
 
+msgid "description/branch_germany_G197_Pz_Kpfw_Neu"
+msgstr ""
+"Research all vehicles in the German heavy branch that leads to "
+"the&nbsp;Pz.Kpfw.&nbsp;Neu (Tier&nbsp;%(level)s)"
+
 msgid "description/branch_germany_G42_Maus"
 msgstr ""
 "Research all vehicles in the German heavy branch that leads to the&nbsp;Maus"
@@ -369,6 +374,11 @@ msgstr ""
 "Research all vehicles in the Italian TD branch that leads to the "
 "Controcarro&nbsp;3 Minotauro (Tier&nbsp;%(level)s)"
 
+msgid "description/branch_italy_It43_CAV_mod_71"
+msgstr ""
+"Research all vehicles in the Italy medium branch that leads to the&nbsp;CAV "
+"71 (Tier&nbsp;%(level)s)"
+
 msgid "description/branch_japan_J16_ST_B1"
 msgstr ""
 "Research all vehicles in the Japanese medium branch that leads to "
@@ -379,11 +389,6 @@ msgstr ""
 "Research all vehicles in the Japanese heavy branch that leads to the Type 5 "
 "Heavy (Tier&nbsp;%(level)s)"
 
-msgid "description/branch_japan_J35_Ho_Ri_3"
-msgstr ""
-"Research all vehicles in the Japanese TD branch that leads to the&nbsp;Ho-"
-"Ri&nbsp;3 (Tier&nbsp;%(level)s)"
-
 msgid "description/branch_japan_J40_Type_71"
 msgstr ""
 "Research all vehicles in the Japanese heavy branch that leads to the "
@@ -393,6 +398,11 @@ msgid "description/branch_japan_J52_STK_2"
 msgstr ""
 "Research all vehicles in the Japanese heavy branch that leads to "
 "the&nbsp;STK-2 (Tier&nbsp;%(level)s)"
+
+msgid "description/branch_japan_J53_Ho_Ri_Shugo"
+msgstr ""
+"Research all vehicles in the Japan TD branch that leads to the Shugo "
+"(Tier&nbsp;%(level)s)"
 
 msgid "description/branch_poland_Pl15_60TP_Lewandowskiego"
 msgstr ""
@@ -424,15 +434,15 @@ msgstr ""
 "Research all vehicles in the Swedish heavy branch that leads to the Kranvagn"
 " (Tier&nbsp;%(level)s)"
 
-msgid "description/branch_sweden_S28_UDES_15_16"
-msgstr ""
-"Research all vehicles in the Swedish medium branch that leads to the "
-"UDES&nbsp;15/16 (Tier&nbsp;%(level)s)"
-
 msgid "description/branch_sweden_S36_Strv_107_12"
 msgstr ""
 "Research all vehicles in the Swedish TD branch that leads to "
 "the&nbsp;Strv&nbsp;107-12 (Tier&nbsp;%(level)s)"
+
+msgid "description/branch_sweden_S41_BV_111"
+msgstr ""
+"Research all vehicles in the Swedish medium branch that leads to the "
+"BV-111&nbsp;(Tier&nbsp;%(level)s)"
 
 msgid "description/branch_uk_GB100_Manticore"
 msgstr ""
@@ -712,6 +722,10 @@ msgstr "Own all vehicles in the Sector 3 campaign"
 msgid "description/third_campaign_first_operation"
 msgstr ""
 "Complete the first Operation and own the&nbsp;Windhund (Tier&nbsp;%(level)s)"
+
+msgid "description/third_campaign_fourth_operation"
+msgstr ""
+"Complete the fourth Operation and own the&nbsp;Fossa (Tier&nbsp;%(level)s)"
 
 msgid "description/third_campaign_second_operation"
 msgstr ""
@@ -1073,6 +1087,9 @@ msgstr "BZ-79"
 msgid "name/Ch70_PTZ_78"
 msgstr "PTZ-78"
 
+msgid "name/Ch71_WZ_219"
+msgstr "WZ-219"
+
 msgid "name/Cz02_TVP_T50"
 msgstr "Škoda T&nbsp;50"
 
@@ -1117,6 +1134,9 @@ msgstr "Vz.&nbsp;71&nbsp;Tesák"
 
 msgid "name/Cz40_DBV_152"
 msgstr "DBV-152"
+
+msgid "name/Cz46_Vz_63P"
+msgstr "Vz.&nbsp;63P"
 
 msgid "name/F06_ARL_44"
 msgstr "ARL&nbsp;44"
@@ -1297,6 +1317,18 @@ msgstr "Hirschkäfer"
 
 msgid "name/G18_JagdPanther"
 msgstr "Jagdpanther"
+
+msgid "name/G193_Pz_Kpfw_55"
+msgstr "Pz.Kpfw.&nbsp;55"
+
+msgid "name/G196_Versuchspanzer_57"
+msgstr "Versuchspanzer&nbsp;57"
+
+msgid "name/G197_Pz_Kpfw_Neu"
+msgstr "Pz.Kpfw.&nbsp;Neu"
+
+msgid "name/G198_Kampfpanzer_67"
+msgstr "Kampfpanzer&nbsp;67"
 
 msgid "name/G200_Chi_Go"
 msgstr "Chi-Go"
@@ -1601,6 +1633,9 @@ msgstr "Semovente&nbsp;M43 Bassotto"
 msgid "name/It31_CC_67_B"
 msgstr "SMV&nbsp;CC-67"
 
+msgid "name/It43_CAV_mod_71"
+msgstr "CAV 71"
+
 msgid "name/J10_Chi_To"
 msgstr "Type&nbsp;4 Chi-To"
 
@@ -1666,6 +1701,9 @@ msgstr "Ashigaru"
 
 msgid "name/J52_STK_2"
 msgstr "STK-2"
+
+msgid "name/J53_Ho_Ri_Shugo"
+msgstr "Shugo"
 
 msgid "name/Pl05_50TP_Tyszkiewicza"
 msgstr "50TP Tyszkiewicza"
@@ -1958,11 +1996,11 @@ msgstr "UDES&nbsp;14 Alt&nbsp;5"
 msgid "name/S36_Strv_107_12"
 msgstr "Strv&nbsp;107-12"
 
+msgid "name/S41_BV_111"
+msgstr "BV-111"
+
 msgid "name/branch_china_Ch19_121"
 msgstr "China:&nbsp;121"
-
-msgid "name/branch_china_Ch29_Type_62C_prot"
-msgstr "China: WZ-132-1"
 
 msgid "name/branch_china_Ch38_WZ113G_FT"
 msgstr "China: WZ-113G&nbsp;FT"
@@ -1979,14 +2017,17 @@ msgstr "China: BZ-79"
 msgid "name/branch_china_Ch70_PTZ_78"
 msgstr "China: PTZ-78"
 
+msgid "name/branch_china_Ch71_WZ_219"
+msgstr "China: WZ-219"
+
 msgid "name/branch_czech_Cz04_T50_51"
 msgstr "Czechoslovakia: TVP&nbsp;T&nbsp;50/51"
 
-msgid "name/branch_czech_Cz17_Vz_55"
-msgstr "Czechoslovakia: Vz.&nbsp;55"
-
 msgid "name/branch_czech_Cz34_Vz_71_Tesak"
 msgstr "Czechoslovakia: Vz.&nbsp;71&nbsp;Tesák"
+
+msgid "name/branch_czech_Cz46_Vz_63P"
+msgstr "Czechoslovakia: Vz.&nbsp;63P"
 
 msgid "name/branch_france_F108_Panhard_EBR_105"
 msgstr "France: Panhard EBR&nbsp;105"
@@ -2036,6 +2077,9 @@ msgstr "Germany: leKpz&nbsp;Borkenkäfer"
 msgid "name/branch_germany_G189_Hirschkafer"
 msgstr "Germany: Hirschkäfer"
 
+msgid "name/branch_germany_G197_Pz_Kpfw_Neu"
+msgstr "Germany: Pz.Kpfw.&nbsp;Neu"
+
 msgid "name/branch_germany_G42_Maus"
 msgstr "Germany: Maus"
 
@@ -2063,20 +2107,23 @@ msgstr "Italy: Rinoceronte"
 msgid "name/branch_italy_It23_CC_3"
 msgstr "Italy: Controcarro&nbsp;3 Minotauro"
 
+msgid "name/branch_italy_It43_CAV_mod_71"
+msgstr "Italy: CAV 71"
+
 msgid "name/branch_japan_J16_ST_B1"
 msgstr "Japan: STB-1"
 
 msgid "name/branch_japan_J20_Type_2605"
 msgstr "Japan: Type&nbsp;5 Heavy"
 
-msgid "name/branch_japan_J35_Ho_Ri_3"
-msgstr "Japan: Ho-Ri&nbsp;3"
-
 msgid "name/branch_japan_J40_Type_71"
 msgstr "Japan: Type&nbsp;71"
 
 msgid "name/branch_japan_J52_STK_2"
 msgstr "Japan: STK-2"
+
+msgid "name/branch_japan_J53_Ho_Ri_Shugo"
+msgstr "Japan: Ho-Ri&nbsp;4"
 
 msgid "name/branch_poland_Pl15_60TP_Lewandowskiego"
 msgstr "Poland: 60TP Lewandowskiego"
@@ -2096,11 +2143,11 @@ msgstr "Sweden: Strv&nbsp;103B"
 msgid "name/branch_sweden_S16_Kranvagn"
 msgstr "Sweden: Kranvagn"
 
-msgid "name/branch_sweden_S28_UDES_15_16"
-msgstr "Sweden: UDES&nbsp;15/16"
-
 msgid "name/branch_sweden_S36_Strv_107_12"
 msgstr "Sweden: Strv&nbsp;107-12"
+
+msgid "name/branch_sweden_S41_BV_111"
+msgstr "Sweden: BV-111"
 
 msgid "name/branch_uk_GB100_Manticore"
 msgstr "U.K.: Manticore"
@@ -2299,6 +2346,9 @@ msgstr "Sector 3"
 
 msgid "name/third_campaign_first_operation"
 msgstr "Operation: Windhund"
+
+msgid "name/third_campaign_fourth_operation"
+msgstr "Operation: Fossa"
 
 msgid "name/third_campaign_second_operation"
 msgstr "Operation: Dravec"

@@ -65,7 +65,7 @@ package net.wg.gui.battle.views.destroyTimers
       private static const DESC_TEXT_COLORS:Object = {
          "red":15626240,
          "orange":16689972,
-         "gray":15626240,
+         "gray":16777215,
          "green":8041216,
          "yellow":16689972,
          "orange_warning":16689972,

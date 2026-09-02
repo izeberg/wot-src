@@ -43,7 +43,7 @@ package net.wg.gui.lobby.personalMissions.components.statusFooter
       
       private static const TUTORIAL_TEXT_STYLE_FILTER:DropShadowFilter = new DropShadowFilter(0,0,16711680,1,16,16,2,2);
       
-      private static const STATUS_TEXT_WIDTH:int = 600;
+      private static const STATUS_TEXT_WIDTH:int = 515;
        
       
       public var statusText:TextField = null;

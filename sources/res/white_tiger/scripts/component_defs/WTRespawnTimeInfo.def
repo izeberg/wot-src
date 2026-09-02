@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<CellMethods/>
+	<ClientMethods/>
+	<Properties>
+		<respawnInfo>
+			<Type>
+				ARRAY
+				<of>
+					FIXED_DICT
+					<Properties>
+						<vehicleID>
+							<Type>OBJECT_ID</Type>
+						</vehicleID>
+						<spawnTime>
+							<Type>FLOAT32</Type>
+						</spawnTime>
+						<delay>
+							<Type>FLOAT32</Type>
+						</delay>
+					</Properties>
+				</of>
+			</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</respawnInfo>
+	</Properties>
+	<ofEntity>
+		<TeamInfo/>
+		<ArenaInfo/>
+	</ofEntity>
+	<DefaultKeyName>wtRespawnTimeInfo</DefaultKeyName>
+</root>

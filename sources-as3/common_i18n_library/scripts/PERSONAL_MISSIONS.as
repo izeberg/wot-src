@@ -49,6 +49,8 @@ package
       
       public static const OPERATIONS_TITLE10:String = "#personal_missions:operations/title10";
       
+      public static const OPERATIONS_TITLE11:String = "#personal_missions:operations/title11";
+      
       public static const OPERATIONS_CURRENT_DESC:String = "#personal_missions:operations/current/desc";
       
       public static const OPERATIONS_COMPLETED_DESC:String = "#personal_missions:operations/completed/desc";
@@ -464,6 +466,8 @@ package
       public static const CONDITIONS_COMPLETED_BOTTOMLABEL:String = "#personal_missions:conditions/completed/bottomLabel";
       
       public static const CONDITIONS_LIMITER_LABEL:String = "#personal_missions:conditions/limiter/label";
+      
+      public static const CONDITIONS_LIMITER_NEW_LABEL:String = "#personal_missions:conditions/limiter/new_label";
       
       public static const QUESTPROGRESSTRACKING_TRACKINGSTATUS:String = "#personal_missions:questProgressTracking/trackingStatus";
       

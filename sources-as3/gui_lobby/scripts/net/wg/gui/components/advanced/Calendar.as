@@ -244,7 +244,7 @@ package net.wg.gui.components.advanced
       {
          var _loc1_:Number = NaN;
          super.draw();
-         if(isInvalid(INVALID_DISPLAY_DATE,INVALID_HEADER))
+         if(isInvalidTypes(INVALID_DISPLAY_DATE,INVALID_HEADER))
          {
             if(this._showYear)
             {
@@ -260,11 +260,11 @@ package net.wg.gui.components.advanced
          {
             this.redrawWeekDays();
          }
-         if(isInvalid(INVALID_WEEK_START_DAY,INVALID_DAYS_LAYOUT))
+         if(isInvalidTypes(INVALID_WEEK_START_DAY,INVALID_DAYS_LAYOUT))
          {
             this.updateWeekDays();
          }
-         if(this._highlightCurrentWeekDay && isInvalid(INVALID_WEEK_DAY_HIGHLIGHT) || isInvalid(INVALID_DISPLAY_DATE,INVALID_WEEK_START_DAY,INVALID_WEEK_DAY_RENDERER))
+         if(this._highlightCurrentWeekDay && isInvalid(INVALID_WEEK_DAY_HIGHLIGHT) || isInvalidTypes(INVALID_DISPLAY_DATE,INVALID_WEEK_START_DAY,INVALID_WEEK_DAY_RENDERER))
          {
             this.updateHighlightedWeekDay();
          }
@@ -291,12 +291,12 @@ package net.wg.gui.components.advanced
          {
             this.updateMonthDays();
          }
-         if(isInvalid(INVALID_AVAILABLE_RANGE,INVALID_DISPLAY_DATE))
+         if(isInvalidTypes(INVALID_AVAILABLE_RANGE,INVALID_DISPLAY_DATE))
          {
             this.updateAvailableRange();
             this.updateNavigationButtons();
          }
-         if(isInvalid(INVALID_SELECTED_DATE,INVALID_DISPLAY_DATE,INVALID_DAY_RENDERER))
+         if(isInvalidTypes(INVALID_SELECTED_DATE,INVALID_DISPLAY_DATE,INVALID_DAY_RENDERER))
          {
             this.updateSelectedRenderer();
          }

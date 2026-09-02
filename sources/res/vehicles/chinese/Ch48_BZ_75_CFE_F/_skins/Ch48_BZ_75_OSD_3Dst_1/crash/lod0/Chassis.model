@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/chinese/Ch48_BZ_75_CFE_F/_skins/Ch48_BZ_75_OSD_3Dst_1/crash/lod0/Chassis</nodefullVisual>
+	<parent>vehicles/chinese/Ch48_BZ_75_CFE_F/_skins/Ch48_BZ_75_OSD_3Dst_1/crash/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.662852 0.000419 -3.343398</min>
+		<max>1.660684 1.022431 3.917070</max>
+	</visibilityBox>
+</root>

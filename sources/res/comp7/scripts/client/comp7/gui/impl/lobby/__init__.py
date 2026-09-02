@@ -1,4 +1,4 @@
-
+from __future__ import absolute_import
 
 def registerComp7Lobby():
     from comp7_common.comp7_constants import ARENA_GUI_TYPE, PREBATTLE_TYPE, Configs

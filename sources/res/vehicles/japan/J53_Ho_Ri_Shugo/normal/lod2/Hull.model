@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/japan/J53_Ho_Ri_Shugo/normal/lod2/Hull</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/japan/J53_Ho_Ri_Shugo/normal/lod3/Hull</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.782525 -0.609579 -4.026611</min>
+		<max>1.785464 3.170673 4.199039</max>
+	</visibilityBox>
+</root>

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import enum
 from dict2model import fields
 from visual_script.slot_types import SLOT_TYPE

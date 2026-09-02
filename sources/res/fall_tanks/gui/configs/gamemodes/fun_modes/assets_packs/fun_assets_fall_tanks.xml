@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<hangarEventBanner>
+		<borderColor>#BC47FF</borderColor>
+	</hangarEventBanner>
+	<progressionView>
+		<pointsTitleFontColors>
+			<ordinary>#f9d7c8</ordinary>
+			<unusual>#f9d7c8</unusual>
+			<rare>#f9d7c8</rare>
+			<epic>#f9d7c8</epic>
+			<legendary>#f9d7c8</legendary>
+		</pointsTitleFontColors>
+		<pointsValueFontColor>#f9d7c8</pointsValueFontColor>
+		<stagesFontColors>
+			<ordinary>#b1bdf3</ordinary>
+			<unusual>#b1bdf3</unusual>
+			<rare>#b1bdf3</rare>
+			<epic>#b1bdf3</epic>
+			<legendary>#b1bdf3</legendary>
+		</stagesFontColors>
+		<rewardCounterFontColor>#c5cccc</rewardCounterFontColor>
+	</progressionView>
+</root>

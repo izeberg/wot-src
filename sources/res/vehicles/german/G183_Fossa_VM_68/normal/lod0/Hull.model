@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.394344 -0.741250 -3.018827</min>
+		<max>1.351983 0.412452 3.420433</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G183_Fossa_VM_68/normal/lod0/Hull</nodefullVisual>
+	<parent>vehicles/german/G183_Fossa_VM_68/normal/lod1/Hull</parent>
+	<extent>32</extent>
+</root>

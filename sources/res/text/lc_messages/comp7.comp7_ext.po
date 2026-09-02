@@ -62,25 +62,25 @@ msgid "alertMessage/notSet"
 msgstr "This mode is not available on the %(serverName)s server"
 
 msgid "alertMessage/preannounce/first"
-msgstr "Season of the Azure Dragon starts: %(date)s"
+msgstr "Season of the Azure Phoenix starts: %(date)s"
 
 msgid "alertMessage/preannounce/second"
-msgstr "Season of the Crimson Dragon starts: %(date)s"
+msgstr "Season of the Crimson Phoenix starts: %(date)s"
 
 msgid "alertMessage/preannounce/third"
-msgstr "Season of the Jade Dragon starts: %(date)s"
+msgstr "Season of the Jade Phoenix starts: %(date)s"
 
 msgid "alertMessage/qualification"
 msgstr "Waiting for Qualification results to receive your rank"
 
 msgid "alertMessage/seasonEnd/first"
-msgstr "Season of the Azure Dragon has ended"
+msgstr "Season of the Azure Phoenix has ended"
 
 msgid "alertMessage/seasonEnd/second"
-msgstr "Season of the Crimson Dragon has ended"
+msgstr "Season of the Crimson Phoenix has ended"
 
 msgid "alertMessage/seasonEnd/third"
-msgstr "Season of the Jade Dragon has ended"
+msgstr "Season of the Jade Phoenix has ended"
 
 msgid "alertMessage/standaloneNotAvailable"
 msgstr "Battles on this server will be available in %(primeDelta)s"
@@ -288,6 +288,9 @@ msgstr "Vehicle characteristics improved"
 msgid "battlePage/statusNotificationTimers/hunter"
 msgstr "Restoring hit points"
 
+msgid "battlePage/statusNotificationTimers/illuminationFlare"
+msgstr "Incoming damage increased"
+
 msgid "battlePage/statusNotificationTimers/juggernaut"
 msgstr "Vehicle characteristics improved"
 
@@ -420,21 +423,21 @@ msgstr "%(start)s–%(end)s"
 
 msgid "calendarDay/timeLeft/first"
 msgid_plural "plural/calendarDay/timeLeft/first"
-msgstr[0] "Season of the Azure Dragon will last for %(days)d day"
-msgstr[1] "Season of the Azure Dragon will last for %(days)d days"
-msgstr[2] "Season of the Azure Dragon will last for %(days)d days"
+msgstr[0] "Season of the Azure Phoenix will last for %(days)d day"
+msgstr[1] "Season of the Azure Phoenix will last for %(days)d days"
+msgstr[2] "Season of the Azure Phoenix will last for %(days)d days"
 
 msgid "calendarDay/timeLeft/second"
 msgid_plural "plural/calendarDay/timeLeft/second"
-msgstr[0] "Season of the Crimson Dragon will last for %(days)d day"
-msgstr[1] "Season of the Crimson Dragon will last for %(days)d days"
-msgstr[2] "Season of the Crimson Dragon will last for %(days)d days"
+msgstr[0] "Season of the Crimson Phoenix will last for %(days)d day"
+msgstr[1] "Season of the Crimson Phoenix will last for %(days)d days"
+msgstr[2] "Season of the Crimson Phoenix will last for %(days)d days"
 
 msgid "calendarDay/timeLeft/third"
 msgid_plural "plural/calendarDay/timeLeft/third"
-msgstr[0] "Season of the Jade Dragon will last for %(days)d day"
-msgstr[1] "Season of the Jade Dragon will last for %(days)d days"
-msgstr[2] "Season of the Jade Dragon will last for %(days)d days"
+msgstr[0] "Season of the Jade Phoenix will last for %(days)d day"
+msgstr[1] "Season of the Jade Phoenix will last for %(days)d days"
+msgstr[2] "Season of the Jade Phoenix will last for %(days)d days"
 
 msgid "calendarDay/title"
 msgstr "Schedule"
@@ -479,7 +482,7 @@ msgid "crewMembersTooltip/perks"
 msgstr "Perks"
 
 msgid "crewMembersTooltip/subHeading"
-msgstr "Onslaught. Year of the Dragon"
+msgstr "Onslaught: Year of the Phoenix"
 
 msgid "crewMembersTooltip/zeroPerks"
 msgstr "Zero perks"
@@ -665,6 +668,19 @@ msgstr ""
 "lineup for enemies. If your vehicle is banned, you can choose from several "
 "pre-configured rentals instead."
 
+msgid "intro/description/draw"
+msgstr ""
+"When the timer expires and no team has achieved a clear victory, the battle "
+"outcome is decided by tiebreakers in this order: surviving vehicles, damage "
+"dealt, and the first vehicle defeated. If no damage is dealt by either team,"
+" the battle is declared a draw."
+
+msgid "intro/description/nightMaps"
+msgstr ""
+"Night Maps refresh familiar battlefields with nighttime conditions, new "
+"Observation Posts, updated POIs, and modified spotting mechanics. The "
+"current lineup includes Glacier, Sand River, Outpost, and Steppes."
+
 msgid "intro/description/onslaughtModifiers"
 msgstr ""
 "The mode has modifiers that change certain parameters of the vehicle, such "
@@ -673,11 +689,11 @@ msgstr ""
 
 msgid "intro/description/pointsOfInterest"
 msgstr ""
-"Once you capture certain areas of the map, you will be able to use Tactical "
-"Skills. There are two types of Points of Interest: the Artillery "
-"Headquarters will allow you to direct an artillery strike on a certain "
-"position, and the Comms Center will spot all enemy vehicles. Depending on "
-"the map, the presence and location of these Points of Interest can change."
+"Once you capture certain areas of the map, you'll gain access to Tactical "
+"Skills. There are two types of points of interest: Artillery Headquarters, "
+"which let you call in a targeted strike, and Comms Centers, which reveal all"
+" enemy vehicles. The number and location of these sites vary from map to "
+"map."
 
 msgid "intro/description/qualification"
 msgid_plural "plural/intro/description/qualification"
@@ -696,9 +712,8 @@ msgstr[2] ""
 
 msgid "intro/description/ranks"
 msgstr ""
-"A system that reflects the player's skill. Progress through the ranks from "
-"Iron to Legend and earn valuable prizes. Fight throughout the Year of the "
-"Dragon to receive unique Annual Rewards."
+"Progress through the ranks from Iron to Legend and earn valuable prizes. "
+"Fight throughout the Year of the Phoenix to receive unique Annual Rewards."
 
 msgid "intro/description/roleSkills"
 msgstr ""
@@ -716,6 +731,12 @@ msgstr ""
 
 msgid "intro/title/banPhase"
 msgstr "VEHICLE BANS"
+
+msgid "intro/title/draw"
+msgstr "DRAW RULES"
+
+msgid "intro/title/nightMaps"
+msgstr "NIGHT MAPS"
 
 msgid "intro/title/onslaughtModifiers"
 msgstr "ONSLAUGHT MODIFIERS"
@@ -905,16 +926,19 @@ msgid "pbs/overview/extraLeaveStatus/win"
 msgstr "VICTORY, BUT YOU"
 
 msgid "pbs/overview/highRank/promoted"
-msgstr "Promoted to %(rank)s"
+msgstr "Promoted to {{rank}}"
+
+msgid "pbs/overview/highRank/rating"
+msgstr "Rating: {{score}}"
 
 msgid "pbs/overview/lowRank/default"
-msgstr "%(rank)s, %(division)s"
+msgstr "{{rank}}, {{division}}"
 
 msgid "pbs/overview/lowRank/demoted"
-msgstr "Demoted to %(rank)s, %(division)s"
+msgstr "Demoted to {{rank}}, {{division}}"
 
 msgid "pbs/overview/lowRank/promoted"
-msgstr "Promoted to %(rank)s, %(division)s"
+msgstr "Promoted to {{rank}}, {{division}}"
 
 msgid "pbs/overview/qualification/description"
 msgstr "Battles fought"
@@ -987,13 +1011,13 @@ msgid "prestigeIndicatorTooltip/prestigeRecord/season/heading"
 msgstr "Seasonal Prestige Points record: %(recordPrestige)s"
 
 msgid "primeTimeView/status/seasonDisabled/first"
-msgstr "Season of the Azure Dragon has ended on the %(server)s server."
+msgstr "Season of the Azure Phoenix has ended on the %(server)s server."
 
 msgid "primeTimeView/status/seasonDisabled/second"
-msgstr "Season of the Crimson Dragon has ended on the %(server)s server."
+msgstr "Season of the Crimson Phoenix has ended on the %(server)s server."
 
 msgid "primeTimeView/status/seasonDisabled/third"
-msgstr "Season of the Jade Dragon has ended on the %(server)s server."
+msgstr "Season of the Jade Phoenix has ended on the %(server)s server."
 
 msgid "products/actions/buy"
 msgstr "Purchase"
@@ -1617,16 +1641,16 @@ msgid "rewardsScreen/description/qualificationEnded"
 msgstr "ONSLAUGHT. QUALIFICATION COMPLETED"
 
 msgid "rewardsScreen/description/season/first"
-msgstr "ONSLAUGHT. SEASON OF THE AZURE DRAGON"
+msgstr "ONSLAUGHT: SEASON OF THE AZURE PHOENIX"
 
 msgid "rewardsScreen/description/season/second"
-msgstr "ONSLAUGHT. SEASON OF THE CRIMSON DRAGON"
+msgstr "ONSLAUGHT: SEASON OF THE CRIMSON PHOENIX"
 
 msgid "rewardsScreen/description/season/third"
-msgstr "ONSLAUGHT. SEASON OF THE JADE DRAGON"
+msgstr "ONSLAUGHT: SEASON OF THE JADE PHOENIX"
 
 msgid "rewardsScreen/description/year"
-msgstr "ONSLAUGHT. YEAR OF THE DRAGON"
+msgstr "ONSLAUGHT. YEAR OF THE PHOENIX"
 
 msgid "rewardsScreen/goToVehicle"
 msgstr "Where's My Ashbringer?!"
@@ -1763,13 +1787,13 @@ msgid "season/secondsLeft"
 msgstr "Ends in %(seconds)s s"
 
 msgid "seasonName/first"
-msgstr "Season of the Azure Dragon"
+msgstr "Season of the Azure Phoenix"
 
 msgid "seasonName/second"
-msgstr "Season of the Crimson Dragon"
+msgstr "Season of the Crimson Phoenix"
 
 msgid "seasonName/third"
-msgstr "Season of the Jade Dragon"
+msgstr "Season of the Jade Phoenix"
 
 msgid "seasonPointTooltip/header"
 msgstr "Onslaught Colors"
@@ -1824,7 +1848,7 @@ msgid "seasonStatistics/description/leaderboardPosition"
 msgstr "Position on Leaderboard: %(position)s"
 
 msgid "seasonStatistics/description/season"
-msgstr "ONSLAUGHT. %(seasonNameUpper)s"
+msgstr "ONSLAUGHT %(seasonNameUpper)s"
 
 msgid "seasonStatistics/description/seasonPoint"
 msgid_plural "plural/seasonStatistics/description/seasonPoint"
@@ -1833,13 +1857,13 @@ msgstr[1] "Received %(points)s Onslaught Colors"
 msgstr[2] "Received %(points)s Onslaught Colors"
 
 msgid "seasonStatistics/seasonNameUpper/first"
-msgstr "SEASON I. AZURE DRAGON"
+msgstr "SEASON I: AZURE PHOENIX"
 
 msgid "seasonStatistics/seasonNameUpper/second"
-msgstr "SEASON II. CRIMSON DRAGON"
+msgstr "SEASON II: CRIMSON PHOENIX"
 
 msgid "seasonStatistics/seasonNameUpper/third"
-msgstr "SEASON III. JADE DRAGON"
+msgstr "SEASON III: JADE PHOENIX"
 
 msgid "seasonStatistics/section/statistics/battles/additional"
 msgstr "Victories: %(additional)s"
@@ -1938,13 +1962,13 @@ msgid "selectorTooltip/unavailable/nextSeason"
 msgstr "This mode will become available on %(time)s"
 
 msgid "shortSeasonName/first"
-msgstr "Azure Dragon"
+msgstr "Azure Phoenix"
 
 msgid "shortSeasonName/second"
-msgstr "Crimson Dragon"
+msgstr "Crimson Phoenix"
 
 msgid "shortSeasonName/third"
-msgstr "Jade Dragon"
+msgstr "Jade Phoenix"
 
 msgid "sidebar/tabs/tooltip/body/leaderboard"
 msgstr ""
@@ -2272,8 +2296,8 @@ msgstr "View All"
 
 msgid "tournament/visitShop/description/ols"
 msgstr ""
-"Support the Onslaught Legends Series while boosting the prize pool with "
-"tournament bundles!"
+"If the team you chose wins, you will receive a unique golden OLS 2026 badge."
+" Cheer for your favorites!"
 
 msgid "tournament/visitShop/description/wci"
 msgstr ""
@@ -2316,7 +2340,7 @@ msgstr ""
 "born on the battlefield!"
 
 msgid "tournamentsEntryPointTooltip/heading/ols"
-msgstr "OLS Season 6"
+msgstr "OLS Season 7"
 
 msgid "tournamentsEntryPointTooltip/heading/wci"
 msgstr "WCI'25"
@@ -2459,66 +2483,67 @@ msgstr ""
 "style, and more. Don't miss out—your victory awaits on the battlefield!"
 
 msgid "whatsNewView/banner/heading"
-msgstr "Seize the final moments of the Year of the Dragon!"
+msgstr "Seize the final moments of the Year of the Phoenix!"
 
 msgid "whatsNewView/banner/title/large"
-msgstr "SEASON OF THE JADE DRAGON"
+msgstr "SEASON OF THE AZURE PHOENIX"
 
 msgid "whatsNewView/banner/title/small"
 msgstr "ONSLAUGHT. WHAT'S NEW?"
 
 msgid "whatsNewView/button/ok"
-msgstr "Ban-tastic!"
+msgstr "Unleash your Flames!"
 
-msgid "whatsNewView/detailedBattleResults/description"
+msgid "whatsNewView/drawConditions/description"
 msgstr ""
-"The improved post-battle results screen with its fresh Update 2.0 design "
-"will now give you additional mode-related information after every battle."
+"When the timer expires and no team has achieved a clear victory, the battle "
+"outcome is decided by tiebreakers in this order: surviving vehicles, damage "
+"dealt, and the first vehicle defeated. If no damage is dealt by either team,"
+" the battle is declared a draw."
 
-msgid "whatsNewView/detailedBattleResults/heading"
-msgstr "Detailed Battle Results"
-
-msgid "whatsNewView/equippedRentals/description"
-msgstr ""
-"Have no fear if your favorite vehicle was excluded. Rentals now come with "
-"pre-configured crew, equipment, shells, and consumables."
-
-msgid "whatsNewView/equippedRentals/heading"
-msgstr "Ready-to-Go Rentals %(tag)s"
-
-msgid "whatsNewView/intro/description"
-msgstr ""
-"This season, each team can completely ban a vehicle from a battle. "
-"Coordinate votes with allies to exclude your most feared machine or to "
-"prepare an unexpected lineup for enemies."
-
-msgid "whatsNewView/intro/heading"
-msgstr "Vehicle Bans %(tag)s"
+msgid "whatsNewView/drawConditions/heading"
+msgstr "Draw conditions updated {{tag}}"
 
 msgid "whatsNewView/mapChanges/heading"
 msgstr "Maps"
 
-msgid "whatsNewView/newAvailableVehicles/heading"
-msgstr "New Vehicles Available in Onslaught"
+msgid "whatsNewView/newLTRoles/description"
+msgstr ""
+"Version 2.4 introduces new light tank roles and a rebalance of vehicle "
+"characteristics. Try them in battle!"
+
+msgid "whatsNewView/newLTRoles/heading"
+msgstr "New roles for light tanks {{tag}}"
+
+msgid "whatsNewView/nightMaps/description"
+msgstr ""
+"Fresh gameplay on familiar maps. Changes include night conditions, new "
+"Observation Posts, new POI locations, and modified spotting mechanics. All "
+"of this reshapes the flow of battle, making awareness, timing, and tactical "
+"movement matter more than ever."
+
+msgid "whatsNewView/nightMaps/heading"
+msgstr "Night maps are here! {{tag}}"
+
+msgid "whatsNewView/noSuperPlatoons/description"
+msgstr ""
+"Due to low player population in battles, Super Platoons have been disabled. "
+"We are working on alternative team-based ways to play Onslaught. In the "
+"meantime, 7v7 tournaments are available on a regular basis."
+
+msgid "whatsNewView/noSuperPlatoons/heading"
+msgstr "No more super platoons {{tag}}"
 
 msgid "whatsNewView/rentalVehicles/heading"
 msgstr "Rental Vehicles"
 
-msgid "whatsNewView/roleSkillUpdate/description"
+msgid "whatsNewView/seasonalBalanceChanges/description"
 msgstr ""
-"The recently released Ares 90 Tier X American medium tank is now available "
-"in the mode with an adjusted Role Skill."
+"• Maps: Erlenberg has been removed. POIs on Airfield have been repositioned. Minor tweaks to Pilsen.\n"
+"• Vehicles: Vz. 60S Dravec has been removed. New German heavy tank Kampfpanzer 67 has been added."
 
-msgid "whatsNewView/roleSkillUpdate/heading"
-msgstr "Role Skill Update %(tag)s"
-
-msgid "whatsNewView/shopUpdates/description"
-msgstr ""
-"The 114 SP2 is now available for purchase at the Silver rank in the "
-"Onslaught Shop."
-
-msgid "whatsNewView/shopUpdates/heading"
-msgstr "Shop Updates %(tag)s"
+msgid "whatsNewView/seasonalBalanceChanges/heading"
+msgstr "Seasonal balance changes {{tag}}"
 
 msgid "whatsNewView/stamp/removed"
 msgstr "EXCLUDED"
@@ -2679,13 +2704,13 @@ msgid "yearlyStatistics/seasonDateInterval"
 msgstr "%(start)s–%(end)s"
 
 msgid "yearlyStatistics/seasonName/0"
-msgstr "Season I. Azure Dragon"
+msgstr "Season I: Azure Phoenix"
 
 msgid "yearlyStatistics/seasonName/1"
-msgstr "Season II. Crimson Dragon"
+msgstr "Season II: Crimson Phoenix"
 
 msgid "yearlyStatistics/seasonName/2"
-msgstr "Season III. Jade Dragon"
+msgstr "Season III: Jade Phoenix"
 
 msgid "yearlyStatistics/seasonStatus/active"
 msgstr "Current"

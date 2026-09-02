@@ -516,6 +516,84 @@
 					</param>
 				</params>
 			</block>
+			<block>
+				<class>ComponentMethod</class>
+				<id>ComponentMethod_18</id>
+				<params>
+					<param>
+						Sequence.start
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>GetComponentProperty</class>
+				<id>GetComponentProperty_4</id>
+				<params>
+					<param>
+						Sequence.duration
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>Macro</class>
+				<id>Macro_1</id>
+				<params>
+					<param>
+						CustomizationVehicleEvents
+						<name>Macro Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>Timer</class>
+				<id>Timer_6</id>
+				<params>
+					<param>
+						1
+						<name>Timer Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>ComponentMethod</class>
+				<id>ComponentMethod_20</id>
+				<params>
+					<param>
+						Sequence.stop
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>ComponentMethod</class>
+				<id>ComponentMethod_19</id>
+				<params>
+					<param>
+						Sequence.stop
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_7</id>
+				<buddy>Variable_8</buddy>
+				<params>
+					<param>
+						GameObjectT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+			</block>
 		</blocks>
 		<connections>
 			<connection>
@@ -775,6 +853,72 @@
 				<input>input</input>
 				<to>SetVariable_3</to>
 				<output>event0</output>
+			</connection>
+			<connection>
+				<from>Macro_1</from>
+				<input>in</input>
+				<to>ComponentMethod_18</to>
+				<output>PrebattleHighlightStart</output>
+			</connection>
+			<connection>
+				<from>GetVariable_7</from>
+				<input>gameObject</input>
+				<to>ComponentMethod_18</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>ComponentMethod_18</from>
+				<input>in</input>
+				<to>GetComponentProperty_4</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>GetVariable_7</from>
+				<input>gameObject</input>
+				<to>GetComponentProperty_4</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>GameObjectToVehicle_2</from>
+				<input>vehicle</input>
+				<to>Macro_1</to>
+				<output>vehicle</output>
+			</connection>
+			<connection>
+				<from>GetComponentProperty_4</from>
+				<input>windup</input>
+				<to>Timer_6</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>GetComponentProperty_4</from>
+				<input>time0</input>
+				<to>Timer_6</to>
+				<output>duration</output>
+			</connection>
+			<connection>
+				<from>Timer_6</from>
+				<input>in</input>
+				<to>ComponentMethod_20</to>
+				<output>event0</output>
+			</connection>
+			<connection>
+				<from>GetVariable_7</from>
+				<input>gameObject</input>
+				<to>ComponentMethod_20</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>Macro_1</from>
+				<input>in</input>
+				<to>ComponentMethod_19</to>
+				<output>PrebattleHighlightEnd</output>
+			</connection>
+			<connection>
+				<from>GetVariable_7</from>
+				<input>gameObject</input>
+				<to>ComponentMethod_19</to>
+				<output>value</output>
 			</connection>
 		</connections>
 		<macros/>

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from skeletons.gui.impl import IGuiLoader
 from gui.impl.pub.notification_commands import WindowNotificationCommand
 from helpers import dependency

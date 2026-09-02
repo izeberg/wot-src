@@ -1,0 +1,38 @@
+msgid ""
+msgstr ""
+
+msgid "battle_finish/reason/201lose"
+msgstr "Battle time expired: loss by survivors • {} vs {}"
+
+msgid "battle_finish/reason/201win"
+msgstr "Battle time expired: win by survivors • {} vs {}"
+
+msgid "battle_finish/reason/202lose"
+msgstr "Battle time expired: loss by damage • {} vs {}"
+
+msgid "battle_finish/reason/202win"
+msgstr "Battle time expired: win by damage • {} vs {}"
+
+msgid "battle_finish/reason/203lose"
+msgstr "Battle time expired: loss by first enemy defeated"
+
+msgid "battle_finish/reason/203win"
+msgstr "Battle time expired: win by first enemy defeated"
+
+msgid "finish/reason/201lose"
+msgstr "The enemy has more vehicles left"
+
+msgid "finish/reason/201win"
+msgstr "Allies have more vehicles left"
+
+msgid "finish/reason/202lose"
+msgstr "The enemy dealt more damage"
+
+msgid "finish/reason/202win"
+msgstr "Allies dealt more damage"
+
+msgid "finish/reason/203lose"
+msgstr "Enemy destroyed first ally"
+
+msgid "finish/reason/203win"
+msgstr "Allies destroyed first enemy"

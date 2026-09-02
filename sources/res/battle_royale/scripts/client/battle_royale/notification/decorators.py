@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from helpers import dependency
 from notification.decorators import MessageDecorator
 from notification.settings import NOTIFICATION_BUTTON_STATE

@@ -3,14 +3,20 @@ import logging, time
 from functools import update_wrapper, wraps
 from typing import TypeVar, Type, Generic, Callable, Any
 import time_tracking
-from constants import IS_CLIENT, IS_BOT, IS_CGF_DUMP, IS_VS_EDITOR, IS_UE_EDITOR, IS_BASEAPP, IS_CELLAPP, IS_DEVELOPMENT, SERVER_TICK_LENGTH, IS_PROCESS_REPLAY
+from constants import IS_BASEAPP, IS_CELLAPP, IS_DEVELOPMENT, SERVER_TICK_LENGTH
 from debug_utils import LOG_CURRENT_EXCEPTION, CRITICAL_ERROR, LOG_ERROR
 from py2to3.backport import inspect
 from soft_exception import SoftException
 from time_tracking import LOG_TIME_WARNING
 CLASS = TypeVar('CLASS')
-if not IS_CLIENT and not IS_BOT and not IS_CGF_DUMP and not IS_VS_EDITOR and not IS_UE_EDITOR and not IS_PROCESS_REPLAY:
+if IS_BASEAPP or IS_CELLAPP:
     from insights.measurements import incrTickOverspends
+else:
+
+    def incrTickOverspends():
+        pass
+
+
 logger = logging.getLogger(__name__)
 
 def _argsToLogID(args):
@@ -40,6 +46,9 @@ def noexcept(func):
         except:
             _logErrorMessageFromArgs('Exception in noexcept', args)
             LOG_CURRENT_EXCEPTION()
+            return
+
+        return
 
     return noexceptWrapper
 
@@ -72,6 +81,9 @@ def nofail(func):
         except:
             LOG_CURRENT_EXCEPTION()
             CRITICAL_ERROR('Exception in no-fail code')
+            return
+
+        return
 
     return nofailWrapper
 
@@ -86,12 +98,14 @@ def exposedtoclient(func):
             timeSinceLastTick = time.time() - lastTick
             if timeSinceLastTick > time_tracking.DEFAULT_TIME_LIMIT:
                 LOG_TIME_WARNING(timeSinceLastTick, context=(getattr(args[0], 'id', 0), func.__name__, args, kwArgs))
-                if not IS_CLIENT and not IS_BOT:
-                    incrTickOverspends()
+                incrTickOverspends()
             return result
         except:
             _logErrorMessageFromArgs('Exception in exposedtoclient', args)
             LOG_CURRENT_EXCEPTION()
+            return
+
+        return
 
     return exposedtoclientWrapper
 
@@ -129,7 +143,7 @@ def condition(attributeName, logFunc=None, logStack=True):
             if not bool(attribute):
                 if logFunc:
                     logFunc('Method condition failed', func, args, kwargs, stack=logStack)
-                return
+                return None
             return func(*args, **kwargs)
 
         return decorate(func, wrapper)

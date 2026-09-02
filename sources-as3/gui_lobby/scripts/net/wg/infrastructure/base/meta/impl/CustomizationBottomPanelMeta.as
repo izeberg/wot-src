@@ -32,8 +32,6 @@ package net.wg.infrastructure.base.meta.impl
       
       public var switchMode:Function;
       
-      public var returnToStyledMode:Function;
-      
       public var onItemIsNewAnimationShown:Function;
       
       public var showVideo:Function;
@@ -152,12 +150,6 @@ package net.wg.infrastructure.base.meta.impl
       {
          App.utils.asserter.assertNotNull(this.switchMode,"switchMode" + Errors.CANT_NULL);
          this.switchMode(param1);
-      }
-      
-      public function returnToStyledModeS() : void
-      {
-         App.utils.asserter.assertNotNull(this.returnToStyledMode,"returnToStyledMode" + Errors.CANT_NULL);
-         this.returnToStyledMode();
       }
       
       public function onItemIsNewAnimationShownS(param1:int) : void

@@ -163,6 +163,12 @@ package net.wg.gui.lobby.settings
       
       public var OBJECT_LODStepSlider:SettingsStepSlider = null;
       
+      public var VISIBILITY_TUNNELLabel:LabelControl = null;
+      
+      public var VISIBILITY_TUNNELValue:LabelControl = null;
+      
+      public var VISIBILITY_TUNNELStepSlider:SettingsStepSlider = null;
+      
       public var SNIPER_MODE_EFFECTS_QUALITYLabel:LabelControl = null;
       
       public var SNIPER_MODE_EFFECTS_QUALITYValue:LabelControl = null;
@@ -195,6 +201,8 @@ package net.wg.gui.lobby.settings
       
       public var VEHICLE_TRACES_ENABLEDCheckbox:CheckBox = null;
       
+      public var INCREASE_EFFECTS_CONTRAST_ENABLEDCheckbox:CheckBox = null;
+      
       public var SEMITRANSPARENT_LEAVES_ENABLEDCheckbox:CheckBox = null;
       
       public var TERRAIN_TESSELLATION_ENABLEDCheckbox:CheckBox = null;
@@ -203,7 +211,7 @@ package net.wg.gui.lobby.settings
       
       public var DRR_AUTOSCALER_ENABLEDCheckbox:CheckBox = null;
       
-      public var VISIBILITY_TUNNEL_ENABLEDCheckbox:CheckBox = null;
+      public var showPrebattleHighlightsCheckbox:CheckBox = null;
       
       protected var currentScreenModeId:String = "";
       
@@ -300,6 +308,9 @@ package net.wg.gui.lobby.settings
          this.OBJECT_LODLabel = null;
          this.OBJECT_LODValue = null;
          this.OBJECT_LODStepSlider = null;
+         this.VISIBILITY_TUNNELLabel = null;
+         this.VISIBILITY_TUNNELValue = null;
+         this.VISIBILITY_TUNNELStepSlider = null;
          this.SNIPER_MODE_EFFECTS_QUALITYLabel = null;
          this.SNIPER_MODE_EFFECTS_QUALITYValue = null;
          this.SNIPER_MODE_EFFECTS_QUALITYStepSlider = null;
@@ -310,10 +321,11 @@ package net.wg.gui.lobby.settings
          this.HAVOK_ENABLEDCheckbox = null;
          this.VEHICLE_DUST_ENABLEDCheckbox = null;
          this.VEHICLE_TRACES_ENABLEDCheckbox = null;
+         this.INCREASE_EFFECTS_CONTRAST_ENABLEDCheckbox = null;
          this.SEMITRANSPARENT_LEAVES_ENABLEDCheckbox = null;
          this.TERRAIN_TESSELLATION_ENABLEDCheckbox = null;
          this.SNIPER_MODE_TERRAIN_TESSELLATION_ENABLEDCheckbox = null;
-         this.VISIBILITY_TUNNEL_ENABLEDCheckbox = null;
+         this.showPrebattleHighlightsCheckbox = null;
          this.tabs.dispose();
          this.tabs = null;
          this.screenForm.dispose();
@@ -389,6 +401,8 @@ package net.wg.gui.lobby.settings
          registerToolTip(this.FAR_PLANEValue,SettingsConfigHelper.FAR_PLANE);
          registerToolTip(this.OBJECT_LODLabel,SettingsConfigHelper.OBJECT_LOD);
          registerToolTip(this.OBJECT_LODValue,SettingsConfigHelper.OBJECT_LOD);
+         registerToolTip(this.VISIBILITY_TUNNELLabel,SettingsConfigHelper.VISIBILITY_TUNNEL);
+         registerToolTip(this.VISIBILITY_TUNNELValue,SettingsConfigHelper.VISIBILITY_TUNNEL);
          registerToolTip(this.SNIPER_MODE_EFFECTS_QUALITYLabel,SettingsConfigHelper.SNIPER_MODE_EFFECTS_QUALITY);
          registerToolTip(this.SNIPER_MODE_EFFECTS_QUALITYValue,SettingsConfigHelper.SNIPER_MODE_EFFECTS_QUALITY);
          registerToolTip(this.TRACK_PHYSICS_QUALITYLabel,SettingsConfigHelper.TRACK_PHYSICS_QUALITY);
@@ -397,10 +411,11 @@ package net.wg.gui.lobby.settings
          registerToolTip(this.HAVOK_ENABLEDCheckbox,SettingsConfigHelper.HAVOK_ENABLED);
          registerToolTip(this.VEHICLE_DUST_ENABLEDCheckbox,SettingsConfigHelper.VEHICLE_DUST_ENABLED);
          registerToolTip(this.VEHICLE_TRACES_ENABLEDCheckbox,SettingsConfigHelper.VEHICLE_TRACES_ENABLED);
+         registerToolTip(this.showPrebattleHighlightsCheckbox,SettingsConfigHelper.SHOW_PBH);
+         registerToolTip(this.INCREASE_EFFECTS_CONTRAST_ENABLEDCheckbox,SettingsConfigHelper.INCREASE_EFFECTS_CONTRAST_ENABLED);
          registerToolTip(this.SEMITRANSPARENT_LEAVES_ENABLEDCheckbox,SettingsConfigHelper.SEMITRANSPARENT_LEAVES_ENABLED);
          registerToolTip(this.TERRAIN_TESSELLATION_ENABLEDCheckbox,SettingsConfigHelper.TERRAIN_TESSELLATION_ENABLED);
          registerToolTip(this.SNIPER_MODE_TERRAIN_TESSELLATION_ENABLEDCheckbox,SettingsConfigHelper.SNIPER_MODE_TERRAIN_TESSELLATION_ENABLED);
-         registerToolTip(this.VISIBILITY_TUNNEL_ENABLEDCheckbox,SettingsConfigHelper.VISIBILITY_TUNNEL_ENABLED);
          registerToolTip(this.graphicsQualityHDSD,SettingsConfigHelper.GRAPHIC_QUALITY_HDSD);
          registerToolTip(this.graphicsQualityHDSDHigh,SettingsConfigHelper.GRAPHIC_QUALITY_HDSD_HIGH);
          registerToolTip(this.CUSTOM_AA_MODELabel,SettingsConfigHelper.CUSTOM_AA_MODE);
@@ -473,6 +488,9 @@ package net.wg.gui.lobby.settings
          this.OBJECT_LODLabel = _loc1_.OBJECT_LODLabel;
          this.OBJECT_LODValue = _loc1_.OBJECT_LODValue;
          this.OBJECT_LODStepSlider = _loc1_.OBJECT_LODStepSlider;
+         this.VISIBILITY_TUNNELLabel = _loc1_.VISIBILITY_TUNNELLabel;
+         this.VISIBILITY_TUNNELValue = _loc1_.VISIBILITY_TUNNELValue;
+         this.VISIBILITY_TUNNELStepSlider = _loc1_.VISIBILITY_TUNNELStepSlider;
          this.SNIPER_MODE_EFFECTS_QUALITYLabel = _loc1_.SNIPER_MODE_EFFECTS_QUALITYLabel;
          this.SNIPER_MODE_EFFECTS_QUALITYValue = _loc1_.SNIPER_MODE_EFFECTS_QUALITYValue;
          this.SNIPER_MODE_EFFECTS_QUALITYStepSlider = _loc1_.SNIPER_MODE_EFFECTS_QUALITYStepSlider;
@@ -489,10 +507,11 @@ package net.wg.gui.lobby.settings
          this.HAVOK_ENABLEDCheckbox = _loc1_.HAVOK_ENABLEDCheckbox;
          this.VEHICLE_DUST_ENABLEDCheckbox = _loc1_.VEHICLE_DUST_ENABLEDCheckbox;
          this.VEHICLE_TRACES_ENABLEDCheckbox = _loc1_.VEHICLE_TRACES_ENABLEDCheckbox;
+         this.INCREASE_EFFECTS_CONTRAST_ENABLEDCheckbox = _loc1_.INCREASE_EFFECTS_CONTRAST_ENABLEDCheckbox;
          this.SEMITRANSPARENT_LEAVES_ENABLEDCheckbox = _loc1_.SEMITRANSPARENT_LEAVES_ENABLEDCheckbox;
          this.TERRAIN_TESSELLATION_ENABLEDCheckbox = _loc1_.TERRAIN_TESSELLATION_ENABLEDCheckbox;
          this.SNIPER_MODE_TERRAIN_TESSELLATION_ENABLEDCheckbox = _loc1_.SNIPER_MODE_TERRAIN_TESSELLATION_ENABLEDCheckbox;
-         this.VISIBILITY_TUNNEL_ENABLEDCheckbox = _loc1_.VISIBILITY_TUNNEL_ENABLEDCheckbox;
+         this.showPrebattleHighlightsCheckbox = _loc1_.showPrebattleHighlightsCheckbox;
       }
    }
 }

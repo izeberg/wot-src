@@ -582,24 +582,26 @@ def isPurchaseItemLocked(item, style):
 
 
 @dependency.replace_none_kwargs(service=ICustomizationService)
-def isItemUsedUp(item, service=None):
+def isItemUsedUp(item, appliedItems=None, service=None):
     ctx = service.getCtx()
     if ctx is None:
         _logger.warning('Customization helper function "isItemUsedUp" is used out of customization context')
         return False
     else:
+        mode = ctx.mode
+        if mode.getItemInventoryCount(item) > 0:
+            return False
+        if mode.getPurchaseLimit(item) > 0:
+            return False
         if item.itemTypeID == GUI_ITEM_TYPE.STYLE:
             isApplied = ctx.modeId in (
-             CustomizationModes.STYLE_2D, CustomizationModes.STYLE_3D) and ctx.mode.modifiedStyle == item
+             CustomizationModes.STYLE_2D, CustomizationModes.STYLE_3D) and mode.modifiedStyle == item
+        elif appliedItems is not None:
+            isApplied = item.intCD in appliedItems
         else:
-            isApplied = any(ctx.mode.outfits[s].has(item) for s in SeasonType.REGULAR)
-        if isApplied:
-            return False
-        if ctx.mode.getItemInventoryCount(item) > 0:
-            return False
-        if ctx.mode.getPurchaseLimit(item) > 0:
-            return False
-        return True
+            outfits = mode.outfits
+            isApplied = any(outfits[s].has(item) for s in SeasonType.REGULAR)
+        return not isApplied
 
 
 def getItemInventoryCount(item, outfits=None):

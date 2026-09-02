@@ -112,13 +112,13 @@
 						<Texture>content/3D_Customization/gun_slots/GB147_gunsleeve_concussion/GB147_gun_slot_03_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.246808 -0.051745 0.733181</groupOrigin>
+				<groupOrigin>-0.246808 -0.051746 0.733182</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.506862 -0.363970 -1.649579</min>
-		<max>0.220417 0.260480 3.719180</max>
+		<min>-0.506862 -0.363970 -1.649578</min>
+		<max>0.220417 0.260479 3.719180</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
 	<geometrySize>4800</geometrySize>

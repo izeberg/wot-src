@@ -56,10 +56,6 @@
 						<Vector4>1.000000 0.792157 0.431373 1.000000</Vector4>
 					</property>
 					<property>
-						g_enableVisTunnel
-						<Bool>true</Bool>
-					</property>
-					<property>
 						g_visibilityTunnelCompensation
 						<Float>12.000000</Float>
 					</property>

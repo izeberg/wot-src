@@ -34,7 +34,7 @@ class LinkDescriptor(AutoProperty):
         setattr(instance, self.fieldName, value)
 
     def __call__(self, *args, **kwargs):
-        pass
+        raise AssertionError('Never execute this, it is only for autocompletion support')
 
 
 class AutoPropertyInitMetaclass(type):

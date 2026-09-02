@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld, BattleReplay
 from helpers import int2roman
 import WWISE

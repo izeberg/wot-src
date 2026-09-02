@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import CGF, Event
 from helpers import dependency
 from script_component.DynamicScriptComponent import DynamicScriptComponent

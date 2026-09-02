@@ -377,7 +377,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.components.tooltips.inblocks.blocks.StatusDeltaParameterBlock;
    import net.wg.gui.components.tooltips.inblocks.blocks.TextBetweenLineBlock;
    import net.wg.gui.components.tooltips.inblocks.blocks.TextParameterBlockTwoCol;
-   import net.wg.gui.components.tooltips.inblocks.blocks.TextParameterBlockTwoColWithIcon;
+   import net.wg.gui.components.tooltips.inblocks.blocks.TextParameterBlockTwoColWithIcons;
    import net.wg.gui.components.tooltips.inblocks.blocks.TextParameterWithIconBlock;
    import net.wg.gui.components.tooltips.inblocks.blocks.TitleBlock;
    import net.wg.gui.components.tooltips.inblocks.blocks.TitleDescParameterWithIconBlock;
@@ -400,6 +400,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.components.tooltips.inblocks.data.StatusDeltaParameterBlockVO;
    import net.wg.gui.components.tooltips.inblocks.data.TextBetweenLineVO;
    import net.wg.gui.components.tooltips.inblocks.data.TextParameterTwoColVO;
+   import net.wg.gui.components.tooltips.inblocks.data.TextParameterTwoColWithIconsVO;
    import net.wg.gui.components.tooltips.inblocks.data.TextParameterWithIconVO;
    import net.wg.gui.components.tooltips.inblocks.data.TitleBlockVO;
    import net.wg.gui.components.tooltips.inblocks.data.TitleDescParameterWithIconVO;
@@ -3458,7 +3459,7 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_COMPONENTS_TOOLTIPS_INBLOCKS_BLOCKS_TEXTPARAMETERBLOCKTWOCOL:Class = TextParameterBlockTwoCol;
       
-      public static const NET_WG_GUI_COMPONENTS_TOOLTIPS_INBLOCKS_BLOCKS_TEXTPARAMETERBLOCKTWOCOLWITHICON:Class = TextParameterBlockTwoColWithIcon;
+      public static const NET_WG_GUI_COMPONENTS_TOOLTIPS_INBLOCKS_BLOCKS_TEXTPARAMETERBLOCKTWOCOLWITHICONS:Class = TextParameterBlockTwoColWithIcons;
       
       public static const NET_WG_GUI_COMPONENTS_TOOLTIPS_INBLOCKS_BLOCKS_TEXTPARAMETERWITHICONBLOCK:Class = TextParameterWithIconBlock;
       
@@ -3503,6 +3504,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_COMPONENTS_TOOLTIPS_INBLOCKS_DATA_TEXTBETWEENLINEVO:Class = TextBetweenLineVO;
       
       public static const NET_WG_GUI_COMPONENTS_TOOLTIPS_INBLOCKS_DATA_TEXTPARAMETERTWOCOLVO:Class = TextParameterTwoColVO;
+      
+      public static const NET_WG_GUI_COMPONENTS_TOOLTIPS_INBLOCKS_DATA_TEXTPARAMETERTWOCOLWITHICONSVO:Class = TextParameterTwoColWithIconsVO;
       
       public static const NET_WG_GUI_COMPONENTS_TOOLTIPS_INBLOCKS_DATA_TEXTPARAMETERWITHICONVO:Class = TextParameterWithIconVO;
       

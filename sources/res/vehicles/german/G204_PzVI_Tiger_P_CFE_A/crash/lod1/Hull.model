@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G204_PzVI_Tiger_P_CFE_A/crash/lod1/Hull</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/german/G204_PzVI_Tiger_P_CFE_A/crash/lod2/Hull</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.721581 -1.087082 -3.401266</min>
+		<max>1.720414 0.836784 3.521311</max>
+	</visibilityBox>
+</root>

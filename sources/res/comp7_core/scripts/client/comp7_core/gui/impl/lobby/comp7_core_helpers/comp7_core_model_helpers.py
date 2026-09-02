@@ -1,6 +1,8 @@
+from __future__ import absolute_import
 from comp7_core.gui.impl.lobby.comp7_core_helpers import comp7_core_shared
 from gui.periodic_battles.models import PrimeTimeStatus
 from helpers.time_utils import getServerUTCTime
+from math_common import round_py2_style_int
 
 def isModeForcedDisabled(status, modeController):
     return not modeController.isAvailable() and status == PrimeTimeStatus.AVAILABLE
@@ -55,7 +57,7 @@ class _SeasonPresenter(object):
 
     @classmethod
     def setSeasonInfo(cls, model, modeController, seasonStateClazz, seasonNameClazz, season):
-        formattedServerTimestamp = round(getServerUTCTime())
+        formattedServerTimestamp = round_py2_style_int(getServerUTCTime())
         if season is not None:
             model.setName(getSeasonNameEnum(modeController, seasonNameClazz, season))
             model.setStartTimestamp(season.getStartDate())

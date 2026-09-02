@@ -250,7 +250,6 @@ def getActiveSeasonCycleID(config, now):
     else:
         _, _, seasonID, cycleID = cycleInfo
         return (seasonID, cycleID)
-        return
 
 
 def getActiveCycleConfig(config, now):

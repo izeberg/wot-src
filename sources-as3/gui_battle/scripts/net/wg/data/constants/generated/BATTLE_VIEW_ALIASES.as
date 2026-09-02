@@ -173,7 +173,7 @@ package net.wg.data.constants.generated
       
       public static const COMP7_TANK_CAROUSEL_FILTER_POPOVER:String = "comp7TankCarouselFilterPopover";
       
-      public static const COMP7_RECON_FLIGHT:String = "comp7ReconFlight";
+      public static const COMP7_SIXTH_SENSE_INDICATOR:String = "comp7SixthSenseIndicator";
       
       public static const COMP7_BANS_WIDGET:String = "comp7BansWidget";
       
@@ -217,6 +217,18 @@ package net.wg.data.constants.generated
       
       public static const WHEELED_DASH_WIDGET:String = "wheeledDashWidget";
       
+      public static const AUXILIARY_ROCKET_LAUNCHER_WIDGET:String = "auxiliaryRocketLauncherWidget";
+      
+      public static const SHELL_PARAMS_SWITCHER_WIDGET:String = "shellParamsSwitcherWidget";
+      
+      public static const SHELL_CALIBRATION_WIDGET:String = "shellCalibrationWidget";
+      
+      public static const AUTORELOADER_SURGE_WIDGET:String = "autoreloaderSurgeWidget";
+      
+      public static const BUSTLE_FEED_WIDGET:String = "bustleFeedWidget";
+      
+      public static const SIGHT_POINTER_WIDGET:String = "sightPointerWidget";
+      
       public static const DECORATIVE_CROSSHAIR_PANEL:String = "decorativeCrosshairPanel";
       
       public static const CONCENTRATION_DECORATIVE_CROSSHAIR:String = "concentrationDecorativeCrosshair";
@@ -232,6 +244,10 @@ package net.wg.data.constants.generated
       public static const TEMPERATURE_GUN_OVERHEAT_DECORATIVE_CROSSHAIR:String = "temperatureGunOverheatDecorativeCrosshair";
       
       public static const TARGET_DESIGNATOR_UNSPOTTED_MARKER:String = "targetDesignatorUnspottedMarker";
+      
+      public static const SIGHT_POINTER_UNDER_SCANNING_INDICATOR:String = "sightPointerUnderScanningIndicator";
+      
+      public static const SIGHT_POINTER_SPOTTED_INDICATOR:String = "sightPointerSpottedIndicator";
       
       public static const VEHICLE_MECHANICS_PANELS:Array = [WIDGETS_PANEL,DECORATIVE_CROSSHAIR_PANEL];
       

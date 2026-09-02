@@ -16,11 +16,11 @@
 	</speedLimits>
 	<invisibility>
 		<moving>
-			0.305
+			0.295
 			<!--BW_String-->
 		</moving>
 		<still>
-			0.305
+			0.295
 			<!--BW_String-->
 		</still>
 		<camouflageBonus>
@@ -28,7 +28,7 @@
 			<!--BW_String-->
 		</camouflageBonus>
 		<firePenalty>
-			0.458
+			0.443
 			<!--BW_String-->
 		</firePenalty>
 	</invisibility>
@@ -1915,8 +1915,8 @@
 				</chassis>
 			</unlocks>
 			<armor>
-				<leftTrack>20</leftTrack>
-				<rightTrack>20</rightTrack>
+				<leftTrack>10</leftTrack>
+				<rightTrack>10</rightTrack>
 			</armor>
 			<weight>6500</weight>
 			<terrainResistance>
@@ -1925,14 +1925,14 @@
 			</terrainResistance>
 			<brakeForce>25000</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>53</rotationSpeed>
+			<rotationSpeed>45</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
-					0.14
+					0.13
 					<!--BW_String-->
 				</vehicleMovement>
 				<vehicleRotation>
-					0.14
+					0.13
 					<!--BW_String-->
 				</vehicleRotation>
 			</shotDispersionFactors>
@@ -4692,8 +4692,8 @@
 			<level>9</level>
 			<price>61500</price>
 			<armor>
-				<leftTrack>20</leftTrack>
-				<rightTrack>20</rightTrack>
+				<leftTrack>10</leftTrack>
+				<rightTrack>10</rightTrack>
 			</armor>
 			<weight>6500</weight>
 			<terrainResistance>
@@ -4702,14 +4702,14 @@
 			</terrainResistance>
 			<brakeForce>28000</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>58</rotationSpeed>
+			<rotationSpeed>47</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
-					0.12
+					0.11
 					<!--BW_String-->
 				</vehicleMovement>
 				<vehicleRotation>
-					0.12
+					0.11
 					<!--BW_String-->
 				</vehicleRotation>
 			</shotDispersionFactors>
@@ -7483,7 +7483,6 @@
 				<armor_10>8</armor_10>
 				<armor_11>20</armor_11>
 				<armor_12>20</armor_12>
-				<armor_13>8</armor_13>
 				<armor_14>8</armor_14>
 				<armor_15>8</armor_15>
 			</armor>
@@ -7499,7 +7498,7 @@
 					<!--BW_String-->
 				</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>410</circularVisionRadius>
+			<circularVisionRadius>400</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>110</maxHealth>
 				<maxRegenHealth>55</maxRegenHealth>
@@ -7511,31 +7510,71 @@
 			<guns>
 				<_90mm_Rheinmetall_DM1>
 					shared
-					<maxAmmo>41</maxAmmo>
+					<maxAmmo>45</maxAmmo>
 					<armor>
 						<armor_1>
 							30
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_1>
 						<armor_2>
-							15
+							20
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_2>
 						<armor_3>
-							0
+							30
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_3>
 						<armor_4>
-							30
+							5
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_4>
 						<armor_5>
-							15
+							10
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_5>
-						<gun>35</gun>
+						<gun>15</gun>
+						<armor_6>
+							10
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_6>
+						<armor_7>
+							30
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_7>
+						<armor_8>
+							10
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_8>
+						<armor_9>
+							20
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_9>
+						<armor_10>
+							20
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_10>
+						<armor_11>
+							30
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_11>
+						<armor_12>
+							20
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_12>
+						<armor_13>
+							20
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_13>
+						<armor_14>
+							20
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_14>
+						<armor_15>
+							15
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_15>
 					</armor>
-					<reloadTime>7</reloadTime>
+					<reloadTime>8</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
 							0.08
@@ -7551,10 +7590,13 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<shotDispersionRadius>
-						0.36
+						0.34
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<aimingTime>2</aimingTime>
+					<aimingTime>
+						1.6
+						<!--BW_String-->
+					</aimingTime>
 					<pitchLimits>
 						<minPitch>0 -18 1 -18</minPitch>
 						<maxPitch>
@@ -7640,6 +7682,8 @@
 							<camouflage>GUN</camouflage>
 						</customizableVehicleAreas>
 					</customization>
+					<edgeByVisualModel>false</edgeByVisualModel>
+					<muzzleBrake>HORIZONTAL</muzzleBrake>
 					<camouflage>
 						<tiling>
 							0.625 0.625 0.000000 0.000000
@@ -8900,7 +8944,7 @@
 		<detailed>
 			<engines>
 				<MTU_MB_837_Aa>
-					<smplEnginePower>700</smplEnginePower>
+					<smplEnginePower>850</smplEnginePower>
 					<smplFwMaxSpeed>70</smplFwMaxSpeed>
 				</MTU_MB_837_Aa>
 				<MTU_MB_837_Ea_600>
@@ -8910,6 +8954,7 @@
 			</engines>
 			<chassis>
 				<Chassis_G103_RU_251>
+					<axleCount>5</axleCount>
 					<grounds>
 						<soft>
 							<rollingFriction>
@@ -8932,6 +8977,7 @@
 					</grounds>
 				</Chassis_G103_RU_251>
 				<Chassis_G103_RU_251_2>
+					<axleCount>5</axleCount>
 					<grounds>
 						<soft>
 							<rollingFriction>

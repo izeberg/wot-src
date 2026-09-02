@@ -4,6 +4,7 @@ from functools import partial
 from enum import Enum
 import BigWorld, GUI, Keys, Math, ResMgr, BattleReplay, CommandMapping, SoundGroups, TriggersManager, VideoCamera, cameras, math_utils, constants
 from AvatarInputHandler.DynamicCameras.free_camera import FreeVideoCamera
+from AvatarInputHandler.DynamicCameras.prebattle_highlights_camera import PrebattleHighlightsCamera
 from constants import POSTMORTEM_MODIFIERS
 from AimingSystems import getShotTargetInfo
 from AimingSystems.magnetic_aim import magneticAimProcessor, MagneticAimSettings
@@ -323,6 +324,8 @@ class VideoCameraControlMode(_GunControlMode):
                 self._cam.setViewMatrix(point.matrix)
                 return
 
+        raise AssertionError(('Location with name %s not found').format(name))
+
     def handleMouseEvent(self, dx, dy, dz):
         self._cam.handleMouseEvent(dx, dy, dz)
         return True
@@ -400,6 +403,25 @@ class DebugControlMode(IControlMode):
         return True
 
 
+class PrebattleHighlightsControlMode(IControlMode):
+
+    def __init__(self, dataSection, avatarInputHandler):
+        self.__aih = weakref.proxy(avatarInputHandler)
+        self._cam = PrebattleHighlightsCamera(dataSection)
+
+    @property
+    def camera(self):
+        return self._cam
+
+    def enable(self, **args):
+        super(PrebattleHighlightsControlMode, self).enable(**args)
+        self._cam.enable()
+
+    def disable(self):
+        super(PrebattleHighlightsControlMode, self).disable()
+        self._cam.disable()
+
+
 class ArcadeControlMode(_GunControlMode):
     __settingsCore = dependency.descriptor(ISettingsCore)
     postmortemCamParams = property(lambda self: (self._cam.angles, self._cam.camera.pivotMaxDist))
@@ -448,9 +470,6 @@ class ArcadeControlMode(_GunControlMode):
         if self._cam.handleKeyEvent(isDown, key, mods, event):
             return True
         else:
-            if BigWorld.isKeyDown(Keys.KEY_CAPSLOCK) and constants.HAS_DEV_RESOURCES and isDown and key == Keys.KEY_F2:
-                self._aih.onControlModeChanged(CTRL_MODE_NAME.DEBUG, camMatrix=self._cam.camera.matrix)
-                return True
             if BigWorld.isKeyDown(Keys.KEY_CAPSLOCK) and isDown and key == Keys.KEY_F3 and self.__videoControlModeAvailable:
                 if not self._aih.isControlModeChangeAllowed():
                     return
@@ -774,7 +793,10 @@ class _TrajectoryControlMode(_GunControlMode):
                 pos = self._gunMarker.getPosition()
             source = self._cam.camera
             sourceFov = BigWorld.projection().fov
+            prevCtrlMode = self._aih.ctrlModeName
             self._aih.onControlModeChanged(self._nextControlMode, preferredPos=pos, aimingMode=self._aimingMode, saveDist=True, switchToPos=switchToPos, switchToPlace=switchToPlace)
+            if self._aih.ctrlModeName == prevCtrlMode:
+                return True
             self.__interpolator.enable(source, self._aih.ctrl.camera.camera, sourceFov, BigWorld.projection().fov)
             AccountSettings.setSettings(LAST_ARTY_CTRL_MODE, self._nextControlMode)
             isStrategicMode = self._nextControlMode == CTRL_MODE_NAME.STRATEGIC

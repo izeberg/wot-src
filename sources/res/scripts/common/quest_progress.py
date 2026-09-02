@@ -737,8 +737,7 @@ class BaseQuestProgress(object):
         progress = self._progressStorage.getProgress(progressID)
         if progress.isAward():
             return self._wasFailed
-        else:
-            return False
+        return False
 
     def getProgressBeforeFailed(self):
         return self._progressBeforeFailed
@@ -752,8 +751,7 @@ class BaseQuestProgress(object):
         progress = self._progressStorage.getProgress(progressID)
         if progress.isAward() and progress.isMain():
             return self._wasCompleted
-        else:
-            return False
+        return False
 
 
 def hasCorrespondedCamouflage(vehDescr, outfit):

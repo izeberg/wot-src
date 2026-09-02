@@ -1,4 +1,4 @@
-
+from __future__ import absolute_import
 
 class AccountSettingsKeys(object):
     EVENT_KEY = 'frontline_keys'

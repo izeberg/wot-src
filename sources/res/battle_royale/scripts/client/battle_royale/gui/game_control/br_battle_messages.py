@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld
 from helpers import dependency, int2roman
 from battle_royale.gui.battle_control.controllers.progression_ctrl import IProgressionListener

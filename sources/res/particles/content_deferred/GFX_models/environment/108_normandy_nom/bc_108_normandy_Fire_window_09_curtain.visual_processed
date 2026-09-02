@@ -24,6 +24,10 @@
 					<materialKind>0</materialKind>
 					<fx>shaders/custom/vector_animation.fx</fx>
 					<property>
+						g_enableEnvMultiplier
+						<Bool>true</Bool>
+					</property>
+					<property>
 						alphaFadeAmountFresnel
 						<Vector4>1.000000 0.500000 0.400000 0.000000</Vector4>
 					</property>
@@ -61,7 +65,7 @@
 					</property>
 					<property>
 						lightMultipliers
-						<Vector4>70.000000 0.000000 1.000000 0.000000</Vector4>
+						<Vector4>95.890411 0.000000 1.000000 0.000000</Vector4>
 					</property>
 					<property>
 						opacity_UV_Distortion_Amount

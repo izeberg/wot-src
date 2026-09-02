@@ -1,5 +1,6 @@
 package net.wg.gui.battle.views.minimap
 {
+   import flash.display.DisplayObject;
    import flash.display.MovieClip;
    import flash.display.Sprite;
    import flash.events.MouseEvent;
@@ -75,6 +76,8 @@ package net.wg.gui.battle.views.minimap
       private var _hoverableActive:Boolean = false;
       
       private var _hoveredEntity:IHoverableEntity = null;
+      
+      private var _lastContainerChildCount:int = -1;
       
       public function Minimap()
       {
@@ -362,6 +365,60 @@ package net.wg.gui.battle.views.minimap
          this.minimapHint.setRightMinimapHintIconType(MinimapIconCollection.ICON_WAYPOINT);
       }
       
+      private function quitHover(param1:Point) : void
+      {
+         if(this._hoveredEntity && !this._hoveredEntity.isDisposed())
+         {
+            this._hoveredEntity.onRollOut(param1);
+            this._hoveredEntity = null;
+         }
+      }
+      
+      private function invalidateHoverableEntities() : void
+      {
+         var _loc2_:Sprite = null;
+         var _loc5_:Sprite = null;
+         var _loc6_:int = 0;
+         var _loc1_:int = 0;
+         for each(_loc2_ in this._containers)
+         {
+            _loc1_ += _loc2_.numChildren;
+         }
+         if(_loc1_ == this._lastContainerChildCount && this._hoverableEntities.length > 0)
+         {
+            return;
+         }
+         this._lastContainerChildCount = _loc1_;
+         this.clearHoverableEntities();
+         var _loc3_:IHoverableEntity = null;
+         var _loc4_:int = Values.ZERO;
+         for each(_loc5_ in this._containers)
+         {
+            _loc4_ = _loc5_.numChildren;
+            _loc6_ = 0;
+            while(_loc6_ < _loc4_)
+            {
+               _loc3_ = _loc5_.getChildAt(_loc6_) as IHoverableEntity;
+               if(_loc3_)
+               {
+                  _loc3_.addEventListener(LifeCycleEvent.ON_DISPOSE,this.onEntityDisposeHandler);
+                  this._hoverableEntities.push(_loc3_);
+               }
+               _loc6_++;
+            }
+         }
+      }
+      
+      private function clearHoverableEntities() : void
+      {
+         var _loc1_:IHoverableEntity = null;
+         for each(_loc1_ in this._hoverableEntities)
+         {
+            _loc1_.removeEventListener(LifeCycleEvent.ON_DISPOSE,this.onEntityDisposeHandler);
+         }
+         this._hoverableEntities.length = 0;
+      }
+      
       override public function set visible(param1:Boolean) : void
       {
          if(super.visible == param1)
@@ -421,8 +478,9 @@ package net.wg.gui.battle.views.minimap
       
       private function onMouseMoveHandler(param1:MouseEvent) : void
       {
-         var _loc4_:IHoverableEntity = null;
-         if(this._hoverableActive == false)
+         var _loc4_:DisplayObject = null;
+         var _loc5_:IHoverableEntity = null;
+         if(!this._hoverableActive)
          {
             return;
          }
@@ -430,18 +488,19 @@ package net.wg.gui.battle.views.minimap
          _loc2_.x = _loc2_.x / App.appScale >> 0;
          _loc2_.y = _loc2_.y / App.appScale >> 0;
          var _loc3_:Boolean = false;
-         for each(_loc4_ in this._hoverableEntities)
+         for each(_loc5_ in this._hoverableEntities)
          {
-            if(_loc4_.hitTestTarget.hitTestPoint(_loc2_.x,_loc2_.y,true))
+            _loc4_ = _loc5_.hitTestTarget;
+            if(_loc4_.hitTestPoint(_loc2_.x,_loc2_.y,false) && _loc4_.hitTestPoint(_loc2_.x,_loc2_.y,true))
             {
-               if(this._hoveredEntity != _loc4_)
+               if(this._hoveredEntity != _loc5_)
                {
                   if(this._hoveredEntity != null)
                   {
                      this._hoveredEntity.onRollOut(this._hoveredEntity.globalToLocal(_loc2_));
                   }
-                  _loc4_.onRollOver(_loc4_.globalToLocal(_loc2_));
-                  this._hoveredEntity = _loc4_;
+                  _loc5_.onRollOver(_loc5_.globalToLocal(_loc2_));
+                  this._hoveredEntity = _loc5_;
                }
                _loc3_ = true;
                continue;
@@ -455,39 +514,6 @@ package net.wg.gui.battle.views.minimap
          }
       }
       
-      private function quitHover(param1:Point) : void
-      {
-         if(this._hoveredEntity && !this._hoveredEntity.isDisposed())
-         {
-            this._hoveredEntity.onRollOut(param1);
-            this._hoveredEntity = null;
-         }
-      }
-      
-      private function invalidateHoverableEntities() : void
-      {
-         var _loc3_:Sprite = null;
-         var _loc4_:int = 0;
-         this.clearHoverableEntities();
-         var _loc1_:IHoverableEntity = null;
-         var _loc2_:int = Values.ZERO;
-         for each(_loc3_ in this._containers)
-         {
-            _loc2_ = _loc3_.numChildren;
-            _loc4_ = 0;
-            while(_loc4_ < _loc2_)
-            {
-               _loc1_ = _loc3_.getChildAt(_loc4_) as IHoverableEntity;
-               if(_loc1_)
-               {
-                  _loc1_.addEventListener(LifeCycleEvent.ON_DISPOSE,this.onEntityDisposeHandler);
-                  this._hoverableEntities.push(_loc1_);
-               }
-               _loc4_++;
-            }
-         }
-      }
-      
       private function onEntityDisposeHandler(param1:LifeCycleEvent) : void
       {
          var _loc2_:IHoverableEntity = param1.currentTarget as IHoverableEntity;
@@ -496,17 +522,8 @@ package net.wg.gui.battle.views.minimap
          {
             _loc2_.removeEventListener(LifeCycleEvent.ON_DISPOSE,this.onEntityDisposeHandler);
             this._hoverableEntities.splice(_loc3_,1);
+            this._lastContainerChildCount = -1;
          }
-      }
-      
-      private function clearHoverableEntities() : void
-      {
-         var _loc1_:IHoverableEntity = null;
-         for each(_loc1_ in this._hoverableEntities)
-         {
-            _loc1_.removeEventListener(LifeCycleEvent.ON_DISPOSE,this.onEntityDisposeHandler);
-         }
-         this._hoverableEntities.length = 0;
       }
    }
 }

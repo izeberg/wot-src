@@ -442,7 +442,7 @@ package scaleform.clik.controls
       
       override protected function draw() : void
       {
-         if(isInvalid(InvalidationType.RENDERERS,InvalidationType.DATA,InvalidationType.SETTINGS,InvalidationType.SIZE))
+         if(isInvalidTypes(InvalidationType.RENDERERS,InvalidationType.DATA,InvalidationType.SETTINGS,InvalidationType.SIZE))
          {
             this.rescaleContainer();
             this.updateRenderers();

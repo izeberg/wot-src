@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld
 from gui.shared import EVENT_BUS_SCOPE, g_eventBus
 from battle_royale.gui.shared.events import AirDropEvent

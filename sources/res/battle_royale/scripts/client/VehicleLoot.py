@@ -1,6 +1,7 @@
+from __future__ import absolute_import
 import BigWorld
-from gui.battle_control.battle_constants import VEHICLE_VIEW_STATE
 from constants import LootAction
+from gui.battle_control.battle_constants import VEHICLE_VIEW_STATE
 from debug_utils import LOG_DEBUG_DEV
 
 class VehicleLoot(BigWorld.DynamicScriptComponent):

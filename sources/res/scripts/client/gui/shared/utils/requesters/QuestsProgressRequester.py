@@ -1,10 +1,11 @@
 from __future__ import absolute_import
-import functools
-from collections import namedtuple
-import copy, logging, typing
+import functools, copy, logging, typing
 from future.utils import iteritems
+from collections import namedtuple
 import BigWorld, personal_missions
-from account_helpers.AccountSettings import QUEST_DELTAS_PROGRESS, QUEST_DELTAS_COMPLETION
+from wg_async import wg_async
+from account_helpers.AccountSettings import QUEST_DELTAS_COMPLETION, QUEST_DELTAS_PROGRESS
+from personal_missions import PM_BRANCH_TO_PM_PROGRESS_KEY, PMProgressKeys
 from gui.server_events import events_helpers
 from gui.shared.utils.requesters.quest_deltas_settings import QuestDeltasSettings
 from gui.shared.utils.requesters.token import Token
@@ -95,10 +96,11 @@ class PersonalMissionsProgressRequester(_QuestsProgressRequester):
      'pawned'])
     _DefaultLastWomanIDs = (-1, -1, -1)
 
-    def __init__(self, questsType):
+    def __init__(self, branchName):
         super(PersonalMissionsProgressRequester, self).__init__()
         self.__pmStorage = None
-        self._questsType = questsType
+        self._branchName = branchName
+        self._progressName = PM_BRANCH_TO_PM_PROGRESS_KEY.get(branchName, PMProgressKeys.REGULAR)
         return
 
     def getPersonalMissionProgress(self, pqType, personalMissionID):
@@ -108,11 +110,8 @@ class PersonalMissionsProgressRequester(_QuestsProgressRequester):
             return self.PersonalMissionProgress(state, flags, personalMissionID in personalMissionsProgress['selected'], pqType.maySelectQuest(self.__pmStorage.unlockedPQIDs()), self.getTokenCount(pqType.mainAwardListQuestID) > 0)
         return self.PersonalMissionProgress(personal_missions.PM_STATE.NONE, (), 0, False, False)
 
-    def getConditionsProgress(self, conditionsProgressID, pmName='pm2_progress'):
-        return self.__getPersonalMissionsData(pmName).get(conditionsProgressID, {})
-
-    def getPersonalMissionsStorage(self):
-        return self.__pmStorage
+    def getConditionsProgressByID(self, conditionsProgressID):
+        return self.getCacheValue(self._progressName, {}).get(conditionsProgressID, {})
 
     def getPersonalMissionsFreeSlots(self, removedCount=0):
         pqProgress = self.__getQuestsData()
@@ -126,23 +125,36 @@ class PersonalMissionsProgressRequester(_QuestsProgressRequester):
             return self.__getQuestsData()['selected']
         return []
 
+    def clear(self):
+        self.__pmStorage = None
+        super(PersonalMissionsProgressRequester, self).clear()
+        return
+
     def getTankmanLastIDs(self, nationID):
         pqProgress = self.__getQuestsData()
         if pqProgress:
             return self.__getQuestsData()['lastIDs'].get(nationID, self._DefaultLastWomanIDs)
         return self._DefaultLastWomanIDs
 
-    def _response(self, resID, value, callback=None):
-        if value is not None:
-            self.__pmStorage = personal_missions.PMStorage(value['potapovQuests']['compDescr'])
-        super(_QuestsProgressRequester, self)._response(resID, value, callback)
+    def getActiveCampaigns(self):
+        return self.__getReqularProgress().get('activeCampaigns', [])
+
+    def isCampaignActive(self):
+        return self._branchName in self.getActiveCampaigns()
+
+    @wg_async
+    def request(self):
+        yield super(PersonalMissionsProgressRequester, self).request()
+        self.__pmStorage = None
+        if self.isSynced():
+            self.__pmStorage = personal_missions.PMStorage(self.__getReqularProgress()['compDescr'])
         return
 
-    def __getPersonalMissionsData(self, pmName='potapovQuests'):
-        return self.getCacheValue(pmName, {})
+    def __getReqularProgress(self):
+        return self.getCacheValue(PMProgressKeys.REGULAR, {})
 
     def __getQuestsData(self):
-        return self.__getPersonalMissionsData().get(self._questsType, {})
+        return self.__getReqularProgress().get(self._branchName, {})
 
 
 class _QuestProgressDelta(BaseDelta):

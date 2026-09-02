@@ -25,6 +25,7 @@
 				ARRAY
 				<of>RESPAWN_AVAILABLE_VEHICLE</of>
 			</Arg>
+			<VariableLengthHeaderSize>2</VariableLengthHeaderSize>
 		</updateRespawnVehicles>
 		<updateRespawnCooldowns>
 			<Arg>
@@ -34,6 +35,7 @@
 		</updateRespawnCooldowns>
 		<updateRespawnInfo>
 			<Arg>RESPAWN_INFO</Arg>
+			<VariableLengthHeaderSize>2</VariableLengthHeaderSize>
 		</updateRespawnInfo>
 		<updateVehicleLimits>
 			<Arg>

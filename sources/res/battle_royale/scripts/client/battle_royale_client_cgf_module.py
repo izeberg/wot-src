@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import CGF
 from battleground.berserker_effect import BerserkerEffectObjectsSystem
 from battleground.components import BattlegroundSequenceSystem

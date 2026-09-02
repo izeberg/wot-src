@@ -2695,6 +2695,12 @@ package
       
       public static const BONUSNAME_ATTACHMENTS_SET_CHALLENGERSBOUNTY:String = "#quests:bonusName/attachments_set/challengersBounty";
       
+      public static const BONUSNAME_ATTACHMENTS_SET_SEARCHANDDESTROY:String = "#quests:bonusName/attachments_set/searchAndDestroy";
+      
+      public static const BONUSNAME_ATTACHMENTS_SET_AERIALADVANCE:String = "#quests:bonusName/attachments_set/aerialAdvance";
+      
+      public static const BONUSNAME_ATTACHMENTS_SET_AIRDEFENSESUITE:String = "#quests:bonusName/attachments_set/airDefenseSuite";
+      
       public static const ACTION_AUTO_CALENDAR:String = "#quests:action/auto/calendar";
       
       public static const ACTION_FULL_CALENDAR:String = "#quests:action/full/calendar";
@@ -3426,6 +3432,10 @@ package
       public static const DETAILS_CONDITIONS_CUMULATIVE_DAMAGEDHP:String = "#quests:details/conditions/cumulative/damagedHp";
       
       public static const DETAILS_CONDITIONS_CUMULATIVE_COMP7PRESTIGEPOINTS:String = "#quests:details/conditions/cumulative/comp7PrestigePoints";
+      
+      public static const LOCKEDFORREROLLTOOLTIP_HEADER:String = "#quests:lockedForRerollTooltip/header";
+      
+      public static const LOCKEDFORREROLLTOOLTIP_BODY:String = "#quests:lockedForRerollTooltip/body";
       
       public static const QUEST_FLAG_STATUS_ENUM:Array = [QUEST_FLAG_STATUS_NOT_STARTED,QUEST_FLAG_STATUS_LOCKED,QUEST_FLAG_STATUS_FAILED,QUEST_FLAG_STATUS_COMPLETED,QUEST_FLAG_STATUS_IN_PROGRESS,QUEST_FLAG_STATUS_COMPLETED_PERFECTLY];
        

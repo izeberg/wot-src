@@ -1,4 +1,5 @@
-import itertools
+from __future__ import absolute_import
+from future.moves import itertools
 from frameworks.wulf import ViewSettings, WindowFlags
 from gui.Scaleform.genConsts.BATTLEROYALE_ALIASES import BATTLEROYALE_ALIASES
 from gui.impl.gen import R
@@ -72,8 +73,8 @@ class InfoPage(ViewImpl):
     @staticmethod
     def __fillPlatoonTooltipData(viewModel):
         platoonTimeToResurrect = RespawnAbility.getPlatoonTimeToResurrect()
-        platoonRespawnPeriod = RespawnAbility.getPlatoonRespawnPeriod() / ONE_MINUTE
-        soloRespawnPeriod = RespawnAbility.getSoloRespawnPeriod() / ONE_MINUTE
+        platoonRespawnPeriod = RespawnAbility.getPlatoonRespawnPeriod() // ONE_MINUTE
+        soloRespawnPeriod = RespawnAbility.getSoloRespawnPeriod() // ONE_MINUTE
         viewModel.setPlatoonTimeToResurrect(platoonTimeToResurrect)
         viewModel.setPlatoonRespawnPeriod(platoonRespawnPeriod)
         viewModel.setSoloRespawnPeriod(soloRespawnPeriod)
@@ -83,7 +84,7 @@ class InfoPage(ViewImpl):
         self.__createTableHeader(viewModel)
         previousLevelSolo = 1
         previousLevelSquad = 1
-        for pointsSolo, pointsSquad in itertools.izip_longest(self.__battlePassCtrl.getPerBattleRoyalePoints(gameMode=ARENA_BONUS_TYPE.BATTLE_ROYALE_SOLO, needPlacesWithoutPoints=True), self.__battlePassCtrl.getPerBattleRoyalePoints(gameMode=ARENA_BONUS_TYPE.BATTLE_ROYALE_SQUAD, needPlacesWithoutPoints=True), fillvalue=0):
+        for pointsSolo, pointsSquad in itertools.zip_longest(self.__battlePassCtrl.getPerBattleRoyalePoints(gameMode=ARENA_BONUS_TYPE.BATTLE_ROYALE_SOLO, needPlacesWithoutPoints=True), self.__battlePassCtrl.getPerBattleRoyalePoints(gameMode=ARENA_BONUS_TYPE.BATTLE_ROYALE_SQUAD, needPlacesWithoutPoints=True), fillvalue=0):
             cellSoloPoints = GameModeCellModel()
             if pointsSolo == 0:
                 cellLabelSolo, cellSoloPoints = self.__createEmptyCell()

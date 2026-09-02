@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from gui.impl.lobby.common.presenters.vehicles_info_presenter import VehiclesInfoPresenter
 if typing.TYPE_CHECKING:

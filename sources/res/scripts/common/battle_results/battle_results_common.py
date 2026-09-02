@@ -793,6 +793,8 @@ BATTLE_RESULTS = [
  (
   'prestigeResults', dict, {}, None, 'skip', ENTRY_TYPE.VEHICLE_SELF),
  (
+  'pbhResults', dict, {}, None, 'skip', ENTRY_TYPE.SERVER),
+ (
   'finalVehInfo', dict, {}, None, 'skip', ENTRY_TYPE.SERVER),
  (
   'commendationsReceived', int, 0, None, 'skip', ENTRY_TYPE.ACCOUNT_SELF),
@@ -801,7 +803,9 @@ BATTLE_RESULTS = [
  (
   'petSystemCredits', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_SELF),
  (
-  'petSystemCreditsFactor100', int, 0, None, 'skip', ENTRY_TYPE.VEHICLE_SELF)]
+  'petSystemCreditsFactor100', int, 0, None, 'skip', ENTRY_TYPE.VEHICLE_SELF),
+ (
+  'isBattleRigged', bool, False, None, 'skip', ENTRY_TYPE.SERVER)]
 BATTLE_PASS_RESULTS = [
  (
   'bpChaptersInfo', dict, {}, None, 'skip', ENTRY_TYPE.ACCOUNT_ALL),

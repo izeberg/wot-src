@@ -902,6 +902,9 @@ msgstr "3D styles"
 msgid "carousel_tank_filter/ready"
 msgstr "Primary only"
 
+msgid "carousel_tank_filter/scout"
+msgstr "Scout"
+
 msgid "carousel_tank_filter/sniper"
 msgstr "Sniper"
 
@@ -910,9 +913,6 @@ msgstr "Support"
 
 msgid "carousel_tank_filter/universal"
 msgstr "Versatile"
-
-msgid "carousel_tank_filter/wheeled"
-msgstr "Wheeled"
 
 msgid "centerIsAvailable"
 msgstr "All servers are available again."
@@ -4443,6 +4443,12 @@ msgstr ""
 msgid "moduleInfo/autoShootGun"
 msgstr "Gun with continuous fire system"
 
+msgid "moduleInfo/auxiliaryRocketLauncher"
+msgstr ""
+"This vehicle is equipped with a rocket launcher mounted in the gun mantlet. "
+"Activate the ability to switch to the secondary weapon aiming sight, and "
+"then launch an unguided HE rocket with the fire button."
+
 msgid "moduleInfo/closeBtn"
 msgstr "Close"
 
@@ -4602,6 +4608,9 @@ msgstr "Cooldown time"
 msgid "moduleInfo/params/crewRolesFactor"
 msgstr "to major qualifications and crew perks"
 
+msgid "moduleInfo/params/criticalHitChance"
+msgstr "Critical Hit Chance"
+
 msgid "moduleInfo/params/damage"
 msgstr "Damage"
 
@@ -4632,11 +4641,33 @@ msgstr "Chance of Fire on Impact"
 msgid "moduleInfo/params/flyDelayRange"
 msgstr "Flight Time"
 
+msgid "moduleInfo/params/footnote/guaranteedDamage"
+msgstr "Always causes damage if the main armor is hit"
+
+msgid "moduleInfo/params/footnote/maxShotDistance"
+msgstr "* maximum shell flying range for this gun"
+
+msgid "moduleInfo/params/footnote/noPiercingDistance"
+msgstr " does not depend on the distance for this type of shell"
+
+msgid "moduleInfo/params/footnote/noPiercingDistance/maxDistance"
+msgstr ", maximum flying range—400 m"
+
+msgid "moduleInfo/params/footnote/penetrationLoss"
+msgstr ""
+" this shell type starts losing penetration power over distance after passing"
+" through the first screen"
+
+msgid "moduleInfo/params/footnote/piercingDistance"
+msgstr " depends on the distance: %(minDist)s–%(maxDist)s m"
+
+msgid "moduleInfo/params/footnote/screensArmorMultiplier"
+msgstr ""
+" this shell type penetrates screens as usual, but then loses penetration "
+"power equal to three times the screen armor thickness"
+
 msgid "moduleInfo/params/forwardMaxSpeed"
 msgstr "Top Speed"
-
-msgid "moduleInfo/params/guaranteedDamage/footnote"
-msgstr "Always causes damage if the main armor is hit"
 
 msgid "moduleInfo/params/hullAndChassisWeight"
 msgstr "Weight"
@@ -4668,20 +4699,11 @@ msgstr "Hit Points"
 msgid "moduleInfo/params/maxShotDistance"
 msgstr "Firing Range"
 
-msgid "moduleInfo/params/maxShotDistance/footnote"
-msgstr "* maximum shell flying range for this gun"
-
 msgid "moduleInfo/params/maxSteeringLockAngle"
 msgstr "Maximum Wheel Turning Angle"
 
 msgid "moduleInfo/params/minAvgMutableDamageList"
 msgstr "Average Damage at %(dist)s m"
-
-msgid "moduleInfo/params/noPiercingDistance/footnote"
-msgstr " does not depend on the distance for this type of shell"
-
-msgid "moduleInfo/params/noPiercingDistance/footnote/maxDistance"
-msgstr ", maximum flying range—400 m"
 
 msgid "moduleInfo/params/normalizationAngle"
 msgstr "Normalization Angle"
@@ -4689,16 +4711,8 @@ msgstr "Normalization Angle"
 msgid "moduleInfo/params/penetrationLoss"
 msgstr "Penetration Loss"
 
-msgid "moduleInfo/params/penetrationLoss/footnote"
-msgstr ""
-" this shell type starts losing penetration power over distance after passing"
-" through the first screen"
-
 msgid "moduleInfo/params/piercingDistance"
 msgstr "%(dist)s m"
-
-msgid "moduleInfo/params/piercingDistance/footnote"
-msgstr " depends on the distance: %(minDist)s–%(maxDist)s m"
 
 msgid "moduleInfo/params/piercingDistanceHeader"
 msgstr "Average Penetration (mm)—Distance"
@@ -4748,11 +4762,6 @@ msgstr "Traverse Speed"
 msgid "moduleInfo/params/screensArmorMultiplier"
 msgstr "Spaced Armor Multiplier"
 
-msgid "moduleInfo/params/screensArmorMultiplier/footnote"
-msgstr ""
-" this shell type penetrates screens as usual, but then loses penetration "
-"power equal to three times the screen armor thickness"
-
 msgid "moduleInfo/params/screensArmorMultiplier/value"
 msgstr "x%(multiplier)s"
 
@@ -4800,6 +4809,11 @@ msgstr "Induction Propellant Afterburner that increases average damage"
 
 msgid "moduleInfo/rocketAcceleration"
 msgstr "Jet boosters increasing the vehicle mobility"
+
+msgid "moduleInfo/shellParamsSwitcher"
+msgstr ""
+"The vehicle's gun has special devices that allow some shell parameters to be"
+" modified before firing."
 
 msgid "moduleInfo/stagedJetBoosters"
 msgstr ""
@@ -5614,15 +5628,29 @@ msgstr ""
 msgid "roleExp/roleDescr/role_HT_universal"
 msgstr "Multipurpose tanks that can easily adapt to any combat situation."
 
+msgid "roleExp/roleDescr/role_LT_scout"
+msgstr ""
+"Scout light tanks are small, agile vehicles built for spotting enemies. "
+"Their low silhouettes and strong concealment, as well as excellent "
+"maneuverability and high top speed, make them adept at both passive and "
+"active scouting, but poor durability and low firepower prevent them from "
+"offering substantial fire support to allies."
+
+msgid "roleExp/roleDescr/role_LT_support"
+msgstr ""
+"Support light tanks use their high mobility, excellent maneuverability, and "
+"powerful guns to quickly switch flanks and cause significant damage before "
+"retreating to safety. While they can carry out reconnaissance in certain "
+"situations, their large size and poor concealment make them less effective "
+"scouts than other light tanks."
+
 msgid "roleExp/roleDescr/role_LT_universal"
 msgstr ""
-"Fast and maneuverable vehicles that can both scout and cause damage when "
-"performing flanking maneuvers."
-
-msgid "roleExp/roleDescr/role_LT_wheeled"
-msgstr ""
-"Vehicles with outstanding dynamic characteristics, the effective "
-"implementation of which depends on the map or tactical situation."
+"Versatile light tanks are well-rounded vehicles capable of both scouting and"
+" providing fire support to allies. While they are less effective at "
+"reconnaissance than scouts and have less firepower than support light tanks,"
+" versatiles' balanced profiles allow them to perform both roles capably and "
+"easily adapt to a wide range of combat situations."
 
 msgid "roleExp/roleDescr/role_MT_assault"
 msgstr ""
@@ -5675,11 +5703,14 @@ msgstr "Support Heavy Tank"
 msgid "roleExp/roleGroupName/role_HT_universal"
 msgstr "Versatile Heavy Tank"
 
+msgid "roleExp/roleGroupName/role_LT_scout"
+msgstr "Scout Light Tank"
+
+msgid "roleExp/roleGroupName/role_LT_support"
+msgstr "Support Light Tank"
+
 msgid "roleExp/roleGroupName/role_LT_universal"
 msgstr "Versatile Light Tank"
-
-msgid "roleExp/roleGroupName/role_LT_wheeled"
-msgstr "Wheeled Light Tank"
 
 msgid "roleExp/roleGroupName/role_MT_assault"
 msgstr "Assault Medium Tank"
@@ -5723,10 +5754,13 @@ msgstr "%(groupName)s"
 msgid "roleExp/roleName/role_HT_universal"
 msgstr "%(groupName)s"
 
-msgid "roleExp/roleName/role_LT_universal"
+msgid "roleExp/roleName/role_LT_scout"
 msgstr "%(groupName)s"
 
-msgid "roleExp/roleName/role_LT_wheeled"
+msgid "roleExp/roleName/role_LT_support"
+msgstr "%(groupName)s"
+
+msgid "roleExp/roleName/role_LT_universal"
 msgstr "%(groupName)s"
 
 msgid "roleExp/roleName/role_MT_assault"
@@ -6386,6 +6420,36 @@ msgstr "Reload"
 msgid "tank_params/autoShootClipSec"
 msgstr "(magazine/quantity)"
 
+msgid "tank_params/autoreloaderSurgeBoostedReloadTime"
+msgstr "Accelerated Shell Loading Time"
+
+msgid "tank_params/autoreloaderSurgeChargeTimeFast"
+msgstr "Charge Cooldown at Full Clip"
+
+msgid "tank_params/autoreloaderSurgeChargeTimeSlow"
+msgstr "Base Charge Cooldown"
+
+msgid "tank_params/autoreloaderSurgeInitCharges"
+msgstr "Charges at Start of Battle"
+
+msgid "tank_params/autoreloaderSurgeMaxCharges"
+msgstr "Charges"
+
+msgid "tank_params/auxiliaryRocketLauncherAvgDamage"
+msgstr "Average Damage (HP)"
+
+msgid "tank_params/auxiliaryRocketLauncherDispersion"
+msgstr "Dispersion at 100m (m)"
+
+msgid "tank_params/auxiliaryRocketLauncherPenetration"
+msgstr "Average Penetration (mm)"
+
+msgid "tank_params/auxiliaryRocketLauncherReloadTime"
+msgstr "Cooldown (s)"
+
+msgid "tank_params/auxiliaryRocketLauncherVelocity"
+msgstr "Rocket shell velocity (m/s)"
+
 msgid "tank_params/avgDamage"
 msgstr "Average Damage"
 
@@ -6409,6 +6473,21 @@ msgstr "Shell Container"
 
 msgid "tank_params/burstSec"
 msgstr "(s/quantity/quantity)"
+
+msgid "tank_params/bustleFeedDamagePerShot"
+msgstr "Average Damage (HP)"
+
+msgid "tank_params/bustleFeedMaxSpeed"
+msgstr "Top Speed (EAF mode) (km/h)"
+
+msgid "tank_params/bustleFeedRateOfFire"
+msgstr "Rate of Fire (rounds/min)"
+
+msgid "tank_params/bustleFeedSwitchingToEASMMode"
+msgstr "EAF Mode Activation (s)"
+
+msgid "tank_params/bustleFeedSwitchingToStandardMode"
+msgstr "EAF Mode Deactivation (s)"
 
 msgid "tank_params/chargeTime"
 msgstr "Salvo Preparation"
@@ -6502,6 +6581,12 @@ msgstr "Engine Power (h.p.) (Turbo mode)"
 
 msgid "tank_params/explosionRadius"
 msgstr "Damage Radius"
+
+msgid "tank_params/extendedTitle/bustleFeedMaxSpeed"
+msgstr "Top Speed (EAF mode) (km/h)"
+
+msgid "tank_params/extendedTitle/bustleFeedSwitchingToBAF"
+msgstr "EAF Mode Activation (s)"
 
 msgid "tank_params/extendedTitle/dualAccuracyCoolingDelay"
 msgstr "Gun cooling time after firing"
@@ -6679,9 +6764,6 @@ msgstr ""
 "Coincidence Electromechanical Sight Charge (% per s) (Engagement mode, "
 "passive)"
 
-msgid "tank_params/penetrationLoss"
-msgstr "(%/100 mm)"
-
 msgid "tank_params/perActivation"
 msgstr "(per activation)"
 
@@ -6838,8 +6920,20 @@ msgstr "Auxiliary Weapon Loading"
 msgid "tank_params/secondaryTotalBurstSize"
 msgstr "Auxiliary Weapon Shells"
 
+msgid "tank_params/shellCalibrationAvgDamage"
+msgstr "Adjusted Shell Average Damage (%)"
+
+msgid "tank_params/shellCalibrationAvgPenetration"
+msgstr "Adjusted Shell Average Penetration (%)"
+
 msgid "tank_params/shellLoadingTime"
 msgstr "Ammunition Belt Loading"
+
+msgid "tank_params/shellParamsSwitchingTime"
+msgstr "Time to Switch Modes"
+
+msgid "tank_params/shellPenetrationLoss"
+msgstr "(%/100 mm)"
 
 msgid "tank_params/shortened/avgPiercingPower"
 msgstr "Penetration:"
@@ -6849,6 +6943,36 @@ msgstr "Dispersion at 100 m"
 
 msgid "tank_params/shotSpeed"
 msgstr "Shell Velocity"
+
+msgid "tank_params/sightPointerConsealmentFoliage"
+msgstr "Enemy Concealment Behind Foliage (Stationary and Moving)"
+
+msgid "tank_params/sightPointerConsealmentMoving"
+msgstr "Moving Enemy Concealment"
+
+msgid "tank_params/sightPointerDeployTime"
+msgstr "Initial Cooldown"
+
+msgid "tank_params/sightPointerDuration"
+msgstr "Duration"
+
+msgid "tank_params/sightPointerReloadTime"
+msgstr "Cooldown"
+
+msgid "tank_params/sightPointerRotationSpeed"
+msgstr "Turret Traverse Speed"
+
+msgid "tank_params/sightPointerSectorAngleEnd"
+msgstr "Final Scan Width"
+
+msgid "tank_params/sightPointerSectorAngleStart"
+msgstr "Initial Scan Width"
+
+msgid "tank_params/sightPointerSelfSpottingTime"
+msgstr "Self-Spotting Duration"
+
+msgid "tank_params/sightPointerViewRange"
+msgstr "View Range"
 
 msgid "tank_params/speedLimits"
 msgstr "Top Speed/Reverse Speed"

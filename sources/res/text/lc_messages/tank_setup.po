@@ -1275,9 +1275,7 @@ msgid "kpi/bonus/negative/vehicleStrength"
 msgstr "to vehicle hit points"
 
 msgid "kpi/bonus/negative/vehicleTurretOrCuttingRotationSpeed"
-msgstr ""
-"to turret traverse speed or gun traverse speed for vehicles with stationary "
-"cabins"
+msgstr "to gun traverse speed"
 
 msgid "kpi/bonus/negative/vehicleTurretRotationSpeed"
 msgstr "to turret traverse speed"
@@ -1554,7 +1552,7 @@ msgid "kpi/bonus/positive/vehicleGunShotDispersion"
 msgstr "to dispersion during vehicle movement and traverse"
 
 msgid "kpi/bonus/positive/vehicleGunShotDispersionAfterShot"
-msgstr "to aiming circle size after firing"
+msgstr "to the aiming circle size after firing"
 
 msgid "kpi/bonus/positive/vehicleGunShotDispersionChassisMovement"
 msgstr "to dispersion during movement"
@@ -1624,9 +1622,7 @@ msgid "kpi/bonus/positive/vehicleStrength"
 msgstr "to vehicle hit points"
 
 msgid "kpi/bonus/positive/vehicleTurretOrCuttingRotationSpeed"
-msgstr ""
-"to turret traverse speed or gun traverse speed for vehicles with stationary "
-"cabins"
+msgstr "to gun traverse speed"
 
 msgid "kpi/bonus/positive/vehicleTurretRotationSpeed"
 msgstr "to turret traverse speed"
@@ -2440,6 +2436,59 @@ msgstr " and "
 
 msgid "tooltips/separator/other"
 msgstr ", "
+
+msgid "tooltips/shellMechanics/bustleFeed/description"
+msgstr ""
+"The vehicle's External Ammunition Feed mode allows the use of shells with "
+"increased damage."
+
+msgid "tooltips/shellMechanics/bustleFeed/off"
+msgstr "Basic values in Standard mode."
+
+msgid "tooltips/shellMechanics/bustleFeed/on"
+msgstr "Modified values in External Ammunition Feed mode."
+
+msgid "tooltips/shellMechanics/lowChargeShot/basic/description"
+msgstr "Basic parameters for full-charge shots"
+
+msgid "tooltips/shellMechanics/lowChargeShot/modified/description"
+msgstr "Parameters for single-charge shots"
+
+msgid "tooltips/shellMechanics/lowChargeShot/off"
+msgstr "Basic parameters for full-charge shots"
+
+msgid "tooltips/shellMechanics/lowChargeShot/offLabel"
+msgstr "Basic"
+
+msgid "tooltips/shellMechanics/lowChargeShot/on"
+msgstr "Parameters for single-charge shots"
+
+msgid "tooltips/shellMechanics/shellParamsSwitcher/angled_armor/description"
+msgstr ""
+"In Calibrated mode, this shell type is effective against sloped armor."
+
+msgid "tooltips/shellMechanics/shellParamsSwitcher/description"
+msgstr ""
+"The vehicle's gun has special devices that allow some shell parameters to be"
+" modified before firing."
+
+msgid "tooltips/shellMechanics/shellParamsSwitcher/noscreen/description"
+msgstr ""
+"In Standard mode, this shell type is effective against armor without "
+"screens."
+
+msgid "tooltips/shellMechanics/shellParamsSwitcher/off"
+msgstr "Standard Mode"
+
+msgid "tooltips/shellMechanics/shellParamsSwitcher/on"
+msgstr "Calibrated Mode"
+
+msgid "tooltips/shellMechanics/shellParamsSwitcher/screen/description"
+msgstr "In Calibrated mode, this shell type can penetrate screens."
+
+msgid "tooltips/shellMechanics/shellParamsSwitcher/straight_armor/description"
+msgstr ""
+"In Standard mode, this shell type is effective against vertical armor."
 
 msgid "tooltips/specializationDesc"
 msgstr ""

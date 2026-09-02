@@ -21,6 +21,10 @@
 				<material>
 					<identifier>Burning_Plane</identifier>
 					<fx>shaders/custom/vector_animation_2.fx</fx>
+					<property>
+						g_enableEnvMultiplier
+						<Bool>true</Bool>
+					</property>
 					<materialKind>0</materialKind>
 					<collisionFlags>255</collisionFlags>
 					<property>
@@ -33,7 +37,7 @@
 					</property>
 					<property>
 						lightMultipliers
-						<Vector4>20.000000 0.090000 0.100000 0.000000</Vector4>
+						<Vector4>24.390244 0.090000 0.100000 0.000000</Vector4>
 					</property>
 					<property>
 						TintlColor

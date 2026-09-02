@@ -281,8 +281,6 @@ package net.wg.gui.login.impl.components
             this._moveTween = null;
          }
          this._rssItemsVo = null;
-         this.container = null;
-         this.bg = null;
          var _loc1_:RssNewsFeedRenderer = null;
          while(this._rssItems.length > 0)
          {
@@ -291,6 +289,8 @@ package net.wg.gui.login.impl.components
          }
          this._rssItems = null;
          this._padding = null;
+         this.container = null;
+         this.bg = null;
          super.onDispose();
       }
       

@@ -58,6 +58,9 @@ msgstr "A-220A-2"
 msgid "A_220A_CFE_D"
 msgstr "A-220A"
 
+msgid "A_220B_1_F"
+msgstr "A-220B"
+
 msgid "A_220B_1_QL"
 msgstr "A-220B QL"
 
@@ -66,6 +69,9 @@ msgstr "A-220B/78"
 
 msgid "A_220B_79"
 msgstr "A-220B/79"
+
+msgid "A_220C"
+msgstr "A-220C"
 
 msgid "A_220R"
 msgstr "A 220R"
@@ -1063,6 +1069,30 @@ msgstr "BZ-75 7x7"
 msgid "Ch48_BZ_75_7x7_short"
 msgstr "BZ-75 7x7"
 
+msgid "Ch48_BZ_75_CFE_F"
+msgstr "Fireborn"
+
+msgid "Ch48_BZ_75_CFE_F_descr"
+msgstr ""
+"\"I lay still, watching the plume of smoke rise far above. Black wisps wove higher than any salvo, embers threading the sky before fading. The only proof of my defeat was in the ashes that coated the battlefield—gray and formless, inert and final. Yet some still smoldered with a bright heat that defied their lifelessness. Even here, in the wake of destruction, a spark endured.\n"
+"\n"
+"I realized then that the end of me is where I begin.\n"
+"\n"
+"For how can you rise if you have not burned?\""
+
+msgid "Ch48_BZ_75_CFE_F_long_special"
+msgstr ""
+"The Fireborn sweeps through the battlefield, feared by many and respected by"
+" all. Its powerful armament can inflict significant damage on any target, "
+"while the combination of jet boosters and reliable armor provides unmatched "
+"mobility and protection. Surprise your adversaries and let the phoenix soar!"
+
+msgid "Ch48_BZ_75_CFE_F_short"
+msgstr "Fireborn"
+
+msgid "Ch48_BZ_75_CFE_F_short_special"
+msgstr "Jet boosters, powerful gun"
+
 msgid "Ch48_BZ_75_descr"
 msgstr ""
 "In the 1960s, amid tense relations with the U.S.S.R., China came up with the"
@@ -1585,6 +1615,28 @@ msgstr ""
 msgid "Ch70_PTZ_78_short"
 msgstr "PTZ-78"
 
+msgid "Ch71_WZ_219"
+msgstr "WZ-219"
+
+msgid "Ch71_WZ_219_descr"
+msgstr ""
+"In the early 1970s, China started developing a light tank to replace the "
+"outdated Type 62. The compact, fast vehicle was supposed to equal main "
+"battle tanks in terms of firepower. The design included a multifunctional "
+"aiming and rangefinding system; however, this turned out too bulky and "
+"required a separate power unit. Due to the difficulties and high costs, the "
+"project was closed."
+
+msgid "Ch71_WZ_219_long_special"
+msgstr ""
+"The WZ-219 is like other Chinese light tanks in terms of its impressive "
+"armament. Its uniqueness lies in its sophisticated rangefinder device, "
+"allowing the vehicle to effectively reveal the positions of unsuspecting "
+"concealed targets and thus render them vulnerable."
+
+msgid "Ch71_WZ_219_short"
+msgstr "WZ-219"
+
 msgid "Ch72_Yongshi"
 msgstr "Yongshi"
 
@@ -1890,6 +1942,9 @@ msgstr "Bull Demon King"
 msgid "Chassis_Ch48_BZ_75"
 msgstr "BZ model 1975"
 
+msgid "Chassis_Ch48_BZ_75_CFE_F"
+msgstr "Fireborn"
+
 msgid "Chassis_Ch49_BZ_68"
 msgstr "BZ-68"
 
@@ -1956,6 +2011,9 @@ msgstr "BZ-79"
 msgid "Chassis_Ch68_PGZ_70"
 msgstr "PGZ-70"
 
+msgid "Chassis_Ch71_WZ_219"
+msgstr "WZ-219"
+
 msgid "Chassis_Ch72_Yongshi"
 msgstr "Yongshi"
 
@@ -1997,6 +2055,9 @@ msgid "Gun_Ch00_ClingeBot_SH"
 msgstr "Clinger"
 
 msgid "HS_110F"
+msgstr "HS 110F"
+
+msgid "HS_110F_F"
 msgstr "HS 110F"
 
 msgid "HS_110F_M"
@@ -2218,6 +2279,9 @@ msgstr "Bull Demon King"
 msgid "Turret_1_Ch48_BZ_75"
 msgstr "BZ model 1975"
 
+msgid "Turret_1_Ch48_BZ_75_CFE_F"
+msgstr "Fireborn"
+
 msgid "Turret_1_Ch49_BZ_68"
 msgstr "BZ-68"
 
@@ -2277,6 +2341,9 @@ msgstr "PGZ-70"
 
 msgid "Turret_1_Ch70_PTZ_78"
 msgstr "PTZ-78"
+
+msgid "Turret_1_Ch71_WZ_219"
+msgstr "WZ-219"
 
 msgid "Turret_1_Ch72_Yongshi"
 msgstr "Yongshi"
@@ -2659,6 +2726,18 @@ msgstr "105 mm Type 81-I"
 msgid "_10WSc"
 msgstr "10WSc"
 
+msgid "_115mm_69_115T"
+msgstr "115 mm 69-115T"
+
+msgid "_115mm_Po_115G"
+msgstr "Po-115G"
+
+msgid "_115mm_Sha_bao_115G"
+msgstr "Sha bao-115G"
+
+msgid "_115mm_Tuo_chuan_115G"
+msgstr "Tuo chuan-115G"
+
 msgid "_120mm_CB-472LY"
 msgstr "Chuan bei-472LY"
 
@@ -2796,6 +2875,9 @@ msgstr "12150L (34-1)"
 
 msgid "_12150L_70"
 msgstr "12150L-70"
+
+msgid "_12150ZL"
+msgstr "12150ZL"
 
 msgid "_122-mm_37-122JT"
 msgstr "122 mm 37-122JT"
@@ -3157,6 +3239,9 @@ msgstr "Sprgr. G 45 (WT IV)"
 msgid "_152_mm_64_152T"
 msgstr "152 mm 64-152T"
 
+msgid "_152_mm_64_152T_F"
+msgstr "152 mm 64-152T"
+
 msgid "_152_mm_64_152T_M"
 msgstr "152 mm 64-152DV"
 
@@ -3185,6 +3270,9 @@ msgid "_152mm_59_152JG_FT_HE_G6_SH"
 msgstr "59-152JG HE"
 
 msgid "_152mm_AP_T"
+msgstr "Chuan bei-152T"
+
+msgid "_152mm_AP_T_F"
 msgstr "Chuan bei-152T"
 
 msgid "_152mm_Chuan_bei_152T_DV"
@@ -3229,7 +3317,13 @@ msgstr "GM 45HE B"
 msgid "_152mm_HEAT_T"
 msgstr "Po-152T"
 
+msgid "_152mm_HEAT_T_F"
+msgstr "Po-152T"
+
 msgid "_152mm_HE_T"
+msgstr "Sha bao-152T"
+
+msgid "_152mm_HE_T_F"
 msgstr "Sha bao-152T"
 
 msgid "_152mm_Po_152"

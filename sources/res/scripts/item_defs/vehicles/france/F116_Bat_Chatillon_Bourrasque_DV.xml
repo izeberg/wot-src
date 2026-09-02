@@ -2287,6 +2287,7 @@
 						</customizableVehicleAreas>
 					</customization>
 					<edgeByVisualModel>false</edgeByVisualModel>
+					<muzzleBrake>HORIZONTAL</muzzleBrake>
 					<camouflage>
 						<density>
 							149.999 148.327
@@ -2406,9 +2407,7 @@
 						<!--BW_String-->
 					</rotation>
 					<scale>0.320037 0.114313 0.320035</scale>
-					<doubleSided>false</doubleSided>
 					<showOn>256</showOn>
-					<clipAngle>0.000000</clipAngle>
 					<anchorShift>0.080002</anchorShift>
 				</slot>
 				<slot>
@@ -2425,9 +2424,7 @@
 						<!--BW_String-->
 					</rotation>
 					<scale>0.320037 0.114313 0.320035</scale>
-					<doubleSided>false</doubleSided>
 					<showOn>256</showOn>
-					<clipAngle>0.000000</clipAngle>
 					<anchorShift>0.080002</anchorShift>
 				</slot>
 				<slot>
@@ -2447,7 +2444,6 @@
 						0.33119 0.108525 0.33119
 						<!--BW_String-->
 					</scale>
-					<doubleSided>false</doubleSided>
 					<showOn>256</showOn>
 					<clipAngle>
 						1.01249
@@ -2472,7 +2468,6 @@
 						0.33119 0.108524 0.33119
 						<!--BW_String-->
 					</scale>
-					<doubleSided>false</doubleSided>
 					<showOn>256</showOn>
 					<clipAngle>
 						1.01249
@@ -2490,11 +2485,10 @@
 						<!--BW_String-->
 					</position>
 					<rotation>
-						0.14089 0.000000 3.14157
+						0.14089 0 3.14157
 						<!--BW_String-->
 					</rotation>
 					<scale>0.371383 0.371394 0.371395</scale>
-					<doubleSided>false</doubleSided>
 					<showOn>256</showOn>
 					<clipAngle>
 						1.3737
@@ -2519,9 +2513,7 @@
 						0.38726 0.387258 0.387258
 						<!--BW_String-->
 					</scale>
-					<doubleSided>false</doubleSided>
 					<showOn>256</showOn>
-					<clipAngle>0.000000</clipAngle>
 					<anchorShift>
 						0.02
 						<!--BW_String-->

@@ -48,10 +48,8 @@
 		<enable>true</enable>
 		<adaptationSpeed>100.000000</adaptationSpeed>
 		<bloom>
-			<enable>true</enable>
+			<pbsBloom>true</pbsBloom>
 			<threshold>0.330000</threshold>
-			<amount>0.330000</amount>
-			<tint>1.000000 1.000000 1.000000</tint>
 			<dirtAmount>0.880000</dirtAmount>
 		</bloom>
 		<environment>
@@ -106,11 +104,11 @@
 		<sunBrightness>0.200000</sunBrightness>
 		<objectEnable>true</objectEnable>
 		<glareEnable>true</glareEnable>
-		<glareIntensity>0.760000</glareIntensity>
+		<glareIntensity>0.500000</glareIntensity>
 		<glareSize>0.010000</glareSize>
 		<flareIntensity>0.330000</flareIntensity>
-		<objectThreshold>4.666757</objectThreshold>
-		<objectFlareIntensity>0.520000</objectFlareIntensity>
+		<objectThreshold>3.584963</objectThreshold>
+		<objectFlareIntensity>0.300000</objectFlareIntensity>
 		<haloEnable>true</haloEnable>
 		<sunTexture1>system/maps/psf_rgbe.dds</sunTexture1>
 		<colorTexture>system/maps/lenscolorF.dds</colorTexture>
@@ -147,6 +145,10 @@
 		<amplify>0.700000</amplify>
 	</SSShadows>
 	<VFX>
+		<vfxModelsMultiplier>1.110000</vfxModelsMultiplier>
+		<cpuParticlesMultiplier>1.110000</cpuParticlesMultiplier>
+		<gpuParticlesMultiplier>1.110000</gpuParticlesMultiplier>
+		<emissiveMaterialsMultiplier>1.110000</emissiveMaterialsMultiplier>
 		<particlesConfigXml>system/data/particles.xml</particlesConfigXml>
 		<particlesSpaceConfigXml>spaces/13_erlenberg/particles.xml</particlesSpaceConfigXml>
 	</VFX>
@@ -334,4 +336,7 @@
 		<transmissionMult>0.600000</transmissionMult>
 		<waterReflectionAttenuation>1.000000</waterReflectionAttenuation>
 	</SimplifiedDeferred>
+	<VisibilityTunnel>
+		<shouldOverrideSettings>false</shouldOverrideSettings>
+	</VisibilityTunnel>
 </root>

@@ -167,9 +167,9 @@ package net.wg.gui.battle.components
          this._isStateRequested = false;
          if(this.expandState != PLAYERS_PANEL_STATE.NONE)
          {
-            this.expandState = param1;
+            this.expandState = PLAYERS_PANEL_STATE.NONE;
          }
-         else if(this._state != param1)
+         if(this._state != param1)
          {
             this.setListsState(param1);
          }

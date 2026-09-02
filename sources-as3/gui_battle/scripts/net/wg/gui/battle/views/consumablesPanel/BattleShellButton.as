@@ -7,6 +7,7 @@ package net.wg.gui.battle.views.consumablesPanel
    import net.wg.data.constants.InvalidationType;
    import net.wg.data.constants.KeyProps;
    import net.wg.data.constants.generated.BATTLE_ITEM_STATES;
+   import net.wg.data.constants.generated.MECHANIC_SHELL_MODE_CONSTS;
    import net.wg.gui.battle.components.CoolDownTimer;
    import net.wg.gui.battle.components.buttons.BattleToolTipButton;
    import net.wg.gui.battle.views.consumablesPanel.VO.ConsumablesVO;
@@ -14,6 +15,7 @@ package net.wg.gui.battle.views.consumablesPanel
    import net.wg.gui.battle.views.consumablesPanel.interfaces.IBattleEquipmentButtonGlow;
    import net.wg.gui.battle.views.consumablesPanel.interfaces.IBattleShellButton;
    import net.wg.gui.components.controls.UILoaderAlt;
+   import net.wg.gui.utils.FramesCollection;
    import net.wg.infrastructure.events.ColorSchemeEvent;
    import net.wg.infrastructure.managers.IColorSchemeManager;
    import scaleform.gfx.TextFieldEx;
@@ -48,7 +50,13 @@ package net.wg.gui.battle.views.consumablesPanel
       private static const CRITICAL_QUANTITY_ANIMATION_RATE:int = 200;
       
       private static const CRITICAL_QUANTITY_ICON_ALPHA:Number = 0.5;
+      
+      private static const SHELL_MODE_ON:String = "_on";
+      
+      private static const SHELL_MODE_OFF:String = "_off";
        
+      
+      public var shellModeIndicator:MovieClip = null;
       
       public var spgShotResultIndicator:MovieClip = null;
       
@@ -94,6 +102,12 @@ package net.wg.gui.battle.views.consumablesPanel
       
       private var _colorSchemeMgr:IColorSchemeManager;
       
+      private var _shellMode:String = null;
+      
+      private var _shellModeIsActive:Boolean = false;
+      
+      private var _shellModeFrameHelper:FramesCollection = null;
+      
       public function BattleShellButton()
       {
          this._consumablesVO = new ConsumablesVO();
@@ -102,6 +116,7 @@ package net.wg.gui.battle.views.consumablesPanel
          this._coolDownTimer = new CoolDownTimer(this);
          this._coolDownTimer.setFrames(START_FRAME,END_FRAME);
          this._isColorBlindMode = this._colorSchemeMgr.getIsColorBlindS();
+         this.shellModeIndicator.visible = false;
          this.spgShotResultIndicator.visible = false;
          isAllowedToShowToolTipOnDisabledState = true;
          hideToolTipOnClickActions = false;
@@ -114,6 +129,7 @@ package net.wg.gui.battle.views.consumablesPanel
          {
             this.infinity.visible = false;
          }
+         this._shellModeFrameHelper = new FramesCollection(this.shellModeIndicator);
       }
       
       override protected function configUI() : void
@@ -163,7 +179,10 @@ package net.wg.gui.battle.views.consumablesPanel
          this.nextIndicator = null;
          this.quantityField = null;
          this.spgShotResultIndicator = null;
+         this.shellModeIndicator = null;
          this._consumablesVO = null;
+         this._shellModeFrameHelper.dispose();
+         this._shellModeFrameHelper = null;
          super.onDispose();
       }
       
@@ -298,10 +317,13 @@ package net.wg.gui.battle.views.consumablesPanel
          }
       }
       
-      public function setNext(param1:Boolean, param2:Boolean = false) : void
+      public function setNext(param1:Boolean, param2:Boolean = false, param3:Boolean = true) : void
       {
+         var _loc4_:Boolean = false;
+         var _loc5_:Boolean = false;
          if(param2 || param1 != this._isNext)
          {
+            _loc4_ = param1 == this._isNext;
             this._isNext = param1;
             if(this.nextIndicator && !this._isCurrent)
             {
@@ -313,7 +335,18 @@ package net.wg.gui.battle.views.consumablesPanel
                else
                {
                   this.nextIndicator.visible = true;
-                  this.nextIndicator.gotoAndPlay(BATTLE_ITEM_STATES.SHOW);
+                  _loc5_ = param3 && !(this._shellModeIsActive && MECHANIC_SHELL_MODE_CONSTS.SUPPRESS_NEXT_SHELL_ANIMATION.indexOf(this._shellMode) != -1);
+                  if(_loc5_)
+                  {
+                     if(!_loc4_ || this.nextIndicator.currentFrameLabel == BATTLE_ITEM_STATES.NORMAL)
+                     {
+                        this.nextIndicator.gotoAndPlay(BATTLE_ITEM_STATES.SHOW);
+                     }
+                  }
+                  else
+                  {
+                     this.nextIndicator.gotoAndStop(BATTLE_ITEM_STATES.NORMAL);
+                  }
                }
             }
          }
@@ -335,6 +368,34 @@ package net.wg.gui.battle.views.consumablesPanel
             this.setEmpty(true,param2);
          }
          invalidate(QUANTITY_VALIDATION);
+      }
+      
+      public function setShellMode(param1:String, param2:Boolean) : void
+      {
+         var _loc3_:String = null;
+         this._shellMode = param1;
+         this._shellModeIsActive = param2;
+         if(this._isNext)
+         {
+            this.setNext(this._isNext,true,!this._shellModeIsActive);
+         }
+         if(param1)
+         {
+            _loc3_ = this.getShellModeFrame(param1,param2);
+            if(this._shellModeFrameHelper.hasFrameLabel(_loc3_))
+            {
+               this.shellModeIndicator.visible = true;
+               this.shellModeIndicator.gotoAndStop(_loc3_);
+            }
+            else
+            {
+               this.shellModeIndicator.visible = false;
+            }
+         }
+         else
+         {
+            this.shellModeIndicator.visible = false;
+         }
       }
       
       public function setSpgShotResult(param1:int) : void
@@ -389,6 +450,11 @@ package net.wg.gui.battle.views.consumablesPanel
       protected function getCoolDownTimer() : CoolDownTimer
       {
          return this._coolDownTimer;
+      }
+      
+      private function getShellModeFrame(param1:String, param2:Boolean) : String
+      {
+         return param1 + (!!param2 ? SHELL_MODE_ON : SHELL_MODE_OFF);
       }
       
       private function startCriticalAnimation() : void

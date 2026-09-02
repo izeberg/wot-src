@@ -3,16 +3,18 @@ import logging
 from collections import deque
 import ArenaType
 from constants import ARENA_BONUS_TYPE
+from helpers import dependency
 from items.vehicles import getVehicleType, getVehicleClassFromVehicleType
 from frameworks.wulf import ViewFlags, ViewSettings
 from gui.impl.gen import R
 from gui.impl.gen.view_models.views.battle.battle_notifier.battle_notifier_view_model import BattleNotifierViewModel, ResultEnum
 from gui.impl.pub import ViewImpl
 from gui.shared.money import Currency
+from skeletons.gameplay import IGameplayLogic
 _logger = logging.getLogger(__name__)
 
 class BattleNotifierView(ViewImpl):
-    __slots__ = ('__resultsQueue', '__uiReadyForData', '__arenaLoaded')
+    __slots__ = ('__resultsQueue', '__uiReadyForData', '__arenaLoaded', '__prebattleStateReached')
 
     def __init__(self):
         settings = ViewSettings(R.views.battle.battle_notifier.BattleNotifierView(), ViewFlags.VIEW, BattleNotifierViewModel())
@@ -20,6 +22,7 @@ class BattleNotifierView(ViewImpl):
         self.__resultsQueue = deque()
         self.__uiReadyForData = True
         self.__arenaLoaded = False
+        self.__prebattleStateReached = False
 
     @property
     def viewModel(self):
@@ -40,12 +43,16 @@ class BattleNotifierView(ViewImpl):
 
     def _initialize(self, *args, **kwargs):
         self.viewModel.onResultShown += self.__onResultShown
+        from skeletons.gameplay import GameplayStateID
+        gameplayLogic = dependency.instance(IGameplayLogic)
+        gameplayLogic.addOneshotObserver([
+         GameplayStateID.PREBATTLE], self, enterFn=BattleNotifierView.__onPrebattleStateReached)
 
     def _finalize(self):
         self.viewModel.onResultShown -= self.__onResultShown
 
     def _sendNotificationData(self):
-        if self.__arenaLoaded and self.__uiReadyForData:
+        if self.__arenaLoaded and self.__uiReadyForData and self.__prebattleStateReached:
             self._fillComponentModel()
 
     def _fillComponentModel(self):
@@ -62,6 +69,10 @@ class BattleNotifierView(ViewImpl):
                 tr.setExperienceAmount(battleResult['xp'])
                 tr.setCrystalAmount(battleResult[Currency.CRYSTAL])
             self.__uiReadyForData = False
+
+    def __onPrebattleStateReached(self, _=None, __=None):
+        self.__prebattleStateReached = True
+        self._sendNotificationData()
 
     def __onResultShown(self):
         self.__uiReadyForData = True
@@ -101,7 +112,6 @@ def _randomBattleResults(message):
             results[Currency.CRYSTAL] = int(crystal)
         return results
     _logger.warning('Could not format message, no arena createTime or arenaType found in message.')
-    return
     return
 
 

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_257_BP21_R_Minethrower/normal/lod2/Cus_257_BP21_R_Minethrower_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.563777 -0.008526 -0.802101</min>
+		<max>0.125248 0.434780 0.844837</max>
+	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/Cus_257_BP21_R_Minethrower/normal/lod1/Cus_257_BP21_R_Minethrower_01</nodefullVisual>
+	<tank>true</tank>
+</root>

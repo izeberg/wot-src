@@ -8,6 +8,7 @@ package net.wg.gui.lobby.vehicleCustomization
    import flash.events.Event;
    import flash.events.MouseEvent;
    import flash.geom.Point;
+   import net.wg.data.ListDAAPIDataProvider;
    import net.wg.data.VO.TankCarouselFilterSelectedVO;
    import net.wg.data.constants.SoundTypes;
    import net.wg.data.constants.UniversalBtnStylesConst;
@@ -26,7 +27,6 @@ package net.wg.gui.lobby.vehicleCustomization
    import net.wg.gui.lobby.vehicleCustomization.data.FilterFallbackDataVO;
    import net.wg.gui.lobby.vehicleCustomization.data.customizationPanel.CustomizationCarouselDataVO;
    import net.wg.gui.lobby.vehicleCustomization.data.customizationPanel.CustomizationCarouselFilterVO;
-   import net.wg.gui.lobby.vehicleCustomization.data.customizationPanel.CustomizationCarouselRendererVO;
    import net.wg.gui.lobby.vehicleCustomization.events.CustomizationEvent;
    import net.wg.gui.lobby.vehicleCustomization.events.CustomizationItemEvent;
    import net.wg.gui.lobby.vehicleCustomization.events.CustomizationTabEvent;
@@ -127,8 +127,6 @@ package net.wg.gui.lobby.vehicleCustomization
       private var _popoverBtnDisabledTooltip:String = "";
       
       private var _smPadding:int = 0;
-      
-      private var _backgroundHeight:uint = 0;
       
       private var _bottomOffset:uint = 0;
       
@@ -275,6 +273,7 @@ package net.wg.gui.lobby.vehicleCustomization
          this._popoverMgr = null;
          this._tooltipMgr = null;
          this._systemMessages = null;
+         this.tabGlow = null;
          super.onDispose();
       }
       
@@ -283,7 +282,10 @@ package net.wg.gui.lobby.vehicleCustomization
          var _loc2_:int = 0;
          var _loc3_:int = 0;
          var _loc4_:int = 0;
-         var _loc5_:UniversalBtn = null;
+         var _loc5_:int = 0;
+         var _loc6_:int = 0;
+         var _loc7_:int = 0;
+         var _loc8_:UniversalBtn = null;
          super.draw();
          var _loc1_:Boolean = App.appHeight < StageSizeBoundaries.HEIGHT_1080;
          if(isInvalid(InvalidationType.SIZE))
@@ -329,12 +331,15 @@ package net.wg.gui.lobby.vehicleCustomization
          if(isInvalid(InvalidationType.LAYOUT))
          {
             _loc3_ = !!_loc1_ ? int(TOP_SMALL_OFFSET) : int(0);
-            this.buyBtn.x = App.appWidth - this.buyBtn.width - BUY_OFFSET_VERTICAL ^ 0;
-            this.buyBackground.x = this.buyBtn.x - BUY_OFFSET_HORIZONTAL ^ 0;
+            _loc4_ = App.appWidth - this.buyBtn.width - BUY_OFFSET_VERTICAL ^ 0;
+            this.buyBtn.x = _loc4_;
+            this.buyBackground.x = _loc4_ - BUY_OFFSET_HORIZONTAL ^ 0;
             this.buyBackground.y = BUY_BACKGROUND_Y + _loc3_;
-            this.itemsPopoverBtn.x = this.buyBtn.x - ITEMS_BUTTON_OFFSET - this.itemsPopoverBtn.width ^ 0;
-            this.customizationContentTypeIcon.x = this.itemsPopoverBtn.x + this.itemsPopoverBtn.width - (NON_HISTORIC_FIX_ICON_WIDTH >> 1) + NON_HISTORIC_ICON_OFFSET_X ^ 0;
-            this.vehiclesSidebarBtn.x = this.itemsPopoverBtn.x - ITEMS_BUTTON_OFFSET - this.vehiclesSidebarBtn.width ^ 0;
+            _loc5_ = this.itemsPopoverBtn.width;
+            _loc6_ = _loc4_ - ITEMS_BUTTON_OFFSET - _loc5_ ^ 0;
+            this.itemsPopoverBtn.x = _loc6_;
+            this.customizationContentTypeIcon.x = _loc6_ + _loc5_ - (NON_HISTORIC_FIX_ICON_WIDTH >> 1) + NON_HISTORIC_ICON_OFFSET_X ^ 0;
+            this.vehiclesSidebarBtn.x = _loc6_ - ITEMS_BUTTON_OFFSET - this.vehiclesSidebarBtn.width ^ 0;
             this.customizationContentTypeIcon.y = NON_HISTORIC_ICON_Y + _loc3_;
             this.bill.x = _width - this.bill.width - PRICE_OFFSET_HORIZONTAL ^ 0;
             this.bill.y = -this.bill.height + _loc3_ + PRICE_OFFSET_VERTICAL;
@@ -349,15 +354,15 @@ package net.wg.gui.lobby.vehicleCustomization
          }
          if(isInvalid(RIGHT_BTNS_VISIBILITY_INVALID))
          {
-            _loc4_ = App.appWidth;
-            for each(_loc5_ in this._rightSideBtns)
+            _loc7_ = App.appWidth;
+            for each(_loc8_ in this._rightSideBtns)
             {
-               if(_loc5_.visible && _loc5_.x < _loc4_)
+               if(_loc8_.visible && _loc8_.x < _loc7_)
                {
-                  _loc4_ = _loc5_.x;
+                  _loc7_ = _loc8_.x;
                }
             }
-            this.tabNavigator.updateBorders(Values.ZERO,_loc4_);
+            this.tabNavigator.updateBorders(Values.ZERO,_loc7_);
          }
       }
       
@@ -523,19 +528,8 @@ package net.wg.gui.lobby.vehicleCustomization
       
       public function getItemIndexByIndCD(param1:int) : int
       {
-         var _loc3_:CustomizationCarouselRendererVO = null;
-         var _loc2_:int = this.carousel.dataProvider.length;
-         var _loc4_:int = 0;
-         while(_loc4_ < _loc2_)
-         {
-            _loc3_ = CustomizationCarouselRendererVO(this.carousel.dataProvider.requestItemAt(_loc4_));
-            if(_loc3_.intCD == param1)
-            {
-               return _loc4_;
-            }
-            _loc4_++;
-         }
-         return Values.DEFAULT_INT;
+         var _loc2_:ListDAAPIDataProvider = this.carousel.dataProvider as ListDAAPIDataProvider;
+         return Boolean(_loc2_) ? int(_loc2_.getItemIndex("intCD",param1)) : int(Values.DEFAULT_INT);
       }
       
       public function getTargetButton() : DisplayObject
@@ -546,18 +540,6 @@ package net.wg.gui.lobby.vehicleCustomization
       public function hideOverlay() : void
       {
          this.overlay.hide();
-      }
-      
-      public function returnToCompleteStyles() : void
-      {
-         returnToStyledModeS();
-         this.carousel.playFilterBlink();
-      }
-      
-      public function setBackgroundHeight(param1:uint) : void
-      {
-         this._backgroundHeight = param1;
-         invalidateSize();
       }
       
       public function setCarouselNotificationsVisibility(param1:Boolean) : void
@@ -607,11 +589,6 @@ package net.wg.gui.lobby.vehicleCustomization
          this.carousel.projectionDecalHint.visible = !!param1 ? Boolean(false) : Boolean(this._projectionDecalNotificationShow);
       }
       
-      public function get bottomOffset() : uint
-      {
-         return this._bottomOffset;
-      }
-      
       public function set bottomOffset(param1:uint) : void
       {
          this._bottomOffset = param1;
@@ -651,7 +628,6 @@ package net.wg.gui.lobby.vehicleCustomization
          this.carousel.playFilterBlink();
          if(param1.groupId != Values.DEFAULT_INT)
          {
-            this.carousel.setCurrentGroupId(param1.groupId);
             showGroupFromTabS(param1.groupId);
          }
       }

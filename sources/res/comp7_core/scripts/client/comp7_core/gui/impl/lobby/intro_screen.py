@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, typing
 from comp7_core.gui.impl.lobby.comp7_core_helpers import comp7_core_model_helpers
 from frameworks.wulf import ViewSettings, ViewFlags

@@ -51,7 +51,7 @@
 						<Texture>vehicles/german/G06_PzII/PzII_guns_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.110136 0.005827 0.575233</groupOrigin>
+				<groupOrigin>-0.113455 0.004484 0.575034</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -60,5 +60,5 @@
 		<max>0.260918 0.116342 1.224232</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>1588</geometrySize>
+	<geometrySize>2376</geometrySize>
 </root>

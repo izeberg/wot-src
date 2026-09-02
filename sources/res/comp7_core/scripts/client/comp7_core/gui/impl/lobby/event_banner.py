@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from account_helpers.AccountSettings import AccountSettings
 from comp7_core.gui.impl.lobby.comp7_core_helpers import comp7_core_shared
 from gui.impl.gen.view_models.views.lobby.user_missions.constants.event_banner_state import EventBannerState

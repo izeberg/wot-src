@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/japan/J53_Ho_Ri_Shugo/crash/lod4/Chassis</parent>
+	<extent>192.000000</extent>
+	<nodefullVisual>vehicles/japan/J53_Ho_Ri_Shugo/crash/lod3/Chassis</nodefullVisual>
+	<visibilityBox>
+		<min>-1.747926 -0.002152 -3.943663</min>
+		<max>1.755109 1.321291 4.110317</max>
+	</visibilityBox>
+</root>

@@ -4,12 +4,9 @@
 	<tank>true</tank>
 	<materialNames/>
 	<visibilityBox>
-		<min>-0.109332 -0.207627 -0.115374</min>
-		<max>
-			0.111492 0.188694 2.23217
-			<!--BW_String-->
-		</max>
+		<min>-0.109333 -0.207627 -0.115374</min>
+		<max>0.111492 0.190494 1.586271</max>
 	</visibilityBox>
 	<parent>vehicles/german/G07_Pz35t/normal/lod3/Gun_04</parent>
-	<extent>96</extent>
+	<extent>96.000000</extent>
 </root>
