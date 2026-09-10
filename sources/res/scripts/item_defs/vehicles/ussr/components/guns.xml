@@ -20429,7 +20429,7 @@
 				</whileGunDamaged>
 			</shotDispersionFactors>
 			<shots>
-				<_152mm_3OF12_R247>
+				<_152mm_3BM8_R247>
 					<defaultPortion>
 						0.85
 						<!--BW_String-->
@@ -20440,8 +20440,8 @@
 						<!--BW_String-->
 					</gravity>
 					<maxDistance>720</maxDistance>
-					<piercingPower>218 218</piercingPower>
-				</_152mm_3OF12_R247>
+					<piercingPower>248 230</piercingPower>
+				</_152mm_3BM8_R247>
 				<_152mm_3BK1_R247>
 					<defaultPortion>
 						0.00
@@ -20453,9 +20453,9 @@
 						<!--BW_String-->
 					</gravity>
 					<maxDistance>720</maxDistance>
-					<piercingPower>320 320</piercingPower>
+					<piercingPower>325 325</piercingPower>
 				</_152mm_3BK1_R247>
-				<_152mm_3BM8_R247>
+				<_152mm_3OF12_R247>
 					<defaultPortion>
 						0.15
 						<!--BW_String-->
@@ -20466,8 +20466,8 @@
 						<!--BW_String-->
 					</gravity>
 					<maxDistance>720</maxDistance>
-					<piercingPower>244 220</piercingPower>
-				</_152mm_3BM8_R247>
+					<piercingPower>80 80</piercingPower>
+				</_152mm_3OF12_R247>
 			</shots>
 		</_152mm_D317_R247>
 		<_152mm_D_4S>

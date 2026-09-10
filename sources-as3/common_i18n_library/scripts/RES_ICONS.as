@@ -18079,13 +18079,13 @@ package
       
       public static const MAPS_ICONS_LIBRARY_HANGARENTRYPOINTS_BATTLEPASS_EXTRA_FLAGS_MINI:String = "../maps/icons/library/hangarEntryPoints/battlePass/extra_flags_mini.png";
       
-      public static const MAPS_ICONS_LIBRARY_HANGARENTRYPOINTS_BATTLEPASS_FLAG_CHAPTER_201:String = "../maps/icons/library/hangarEntryPoints/battlePass/flag_chapter_201.png";
+      public static const MAPS_ICONS_LIBRARY_HANGARENTRYPOINTS_BATTLEPASS_FLAG_CHAPTER_211:String = "../maps/icons/library/hangarEntryPoints/battlePass/flag_chapter_211.png";
       
-      public static const MAPS_ICONS_LIBRARY_HANGARENTRYPOINTS_BATTLEPASS_FLAG_CHAPTER_202:String = "../maps/icons/library/hangarEntryPoints/battlePass/flag_chapter_202.png";
+      public static const MAPS_ICONS_LIBRARY_HANGARENTRYPOINTS_BATTLEPASS_FLAG_CHAPTER_212:String = "../maps/icons/library/hangarEntryPoints/battlePass/flag_chapter_212.png";
       
-      public static const MAPS_ICONS_LIBRARY_HANGARENTRYPOINTS_BATTLEPASS_FLAG_CHAPTER_203:String = "../maps/icons/library/hangarEntryPoints/battlePass/flag_chapter_203.png";
+      public static const MAPS_ICONS_LIBRARY_HANGARENTRYPOINTS_BATTLEPASS_FLAG_CHAPTER_213:String = "../maps/icons/library/hangarEntryPoints/battlePass/flag_chapter_213.png";
       
-      public static const MAPS_ICONS_LIBRARY_HANGARENTRYPOINTS_BATTLEPASS_FLAG_CHAPTER_204:String = "../maps/icons/library/hangarEntryPoints/battlePass/flag_chapter_204.png";
+      public static const MAPS_ICONS_LIBRARY_HANGARENTRYPOINTS_BATTLEPASS_FLAG_CHAPTER_214:String = "../maps/icons/library/hangarEntryPoints/battlePass/flag_chapter_214.png";
       
       public static const MAPS_ICONS_LIBRARY_HANGARENTRYPOINTS_BATTLEPASS_FLAG_DEFAULT:String = "../maps/icons/library/hangarEntryPoints/battlePass/flag_default.png";
       
@@ -18097,21 +18097,21 @@ package
       
       public static const MAPS_ICONS_LIBRARY_HANGARENTRYPOINTS_BATTLEPASS_ICON_DEFAULT:String = "../maps/icons/library/hangarEntryPoints/battlePass/icon_default.png";
       
-      public static const MAPS_ICONS_LIBRARY_HANGARENTRYPOINTS_BATTLEPASS_ICON_GOLD_CHAPTER_201:String = "../maps/icons/library/hangarEntryPoints/battlePass/icon_gold_chapter_201.png";
+      public static const MAPS_ICONS_LIBRARY_HANGARENTRYPOINTS_BATTLEPASS_ICON_GOLD_CHAPTER_211:String = "../maps/icons/library/hangarEntryPoints/battlePass/icon_gold_chapter_211.png";
       
-      public static const MAPS_ICONS_LIBRARY_HANGARENTRYPOINTS_BATTLEPASS_ICON_GOLD_CHAPTER_202:String = "../maps/icons/library/hangarEntryPoints/battlePass/icon_gold_chapter_202.png";
+      public static const MAPS_ICONS_LIBRARY_HANGARENTRYPOINTS_BATTLEPASS_ICON_GOLD_CHAPTER_212:String = "../maps/icons/library/hangarEntryPoints/battlePass/icon_gold_chapter_212.png";
       
-      public static const MAPS_ICONS_LIBRARY_HANGARENTRYPOINTS_BATTLEPASS_ICON_GOLD_CHAPTER_203:String = "../maps/icons/library/hangarEntryPoints/battlePass/icon_gold_chapter_203.png";
+      public static const MAPS_ICONS_LIBRARY_HANGARENTRYPOINTS_BATTLEPASS_ICON_GOLD_CHAPTER_213:String = "../maps/icons/library/hangarEntryPoints/battlePass/icon_gold_chapter_213.png";
       
-      public static const MAPS_ICONS_LIBRARY_HANGARENTRYPOINTS_BATTLEPASS_ICON_GOLD_CHAPTER_204:String = "../maps/icons/library/hangarEntryPoints/battlePass/icon_gold_chapter_204.png";
+      public static const MAPS_ICONS_LIBRARY_HANGARENTRYPOINTS_BATTLEPASS_ICON_GOLD_CHAPTER_214:String = "../maps/icons/library/hangarEntryPoints/battlePass/icon_gold_chapter_214.png";
       
-      public static const MAPS_ICONS_LIBRARY_HANGARENTRYPOINTS_BATTLEPASS_ICON_SILVER_CHAPTER_201:String = "../maps/icons/library/hangarEntryPoints/battlePass/icon_silver_chapter_201.png";
+      public static const MAPS_ICONS_LIBRARY_HANGARENTRYPOINTS_BATTLEPASS_ICON_SILVER_CHAPTER_211:String = "../maps/icons/library/hangarEntryPoints/battlePass/icon_silver_chapter_211.png";
       
-      public static const MAPS_ICONS_LIBRARY_HANGARENTRYPOINTS_BATTLEPASS_ICON_SILVER_CHAPTER_202:String = "../maps/icons/library/hangarEntryPoints/battlePass/icon_silver_chapter_202.png";
+      public static const MAPS_ICONS_LIBRARY_HANGARENTRYPOINTS_BATTLEPASS_ICON_SILVER_CHAPTER_212:String = "../maps/icons/library/hangarEntryPoints/battlePass/icon_silver_chapter_212.png";
       
-      public static const MAPS_ICONS_LIBRARY_HANGARENTRYPOINTS_BATTLEPASS_ICON_SILVER_CHAPTER_203:String = "../maps/icons/library/hangarEntryPoints/battlePass/icon_silver_chapter_203.png";
+      public static const MAPS_ICONS_LIBRARY_HANGARENTRYPOINTS_BATTLEPASS_ICON_SILVER_CHAPTER_213:String = "../maps/icons/library/hangarEntryPoints/battlePass/icon_silver_chapter_213.png";
       
-      public static const MAPS_ICONS_LIBRARY_HANGARENTRYPOINTS_BATTLEPASS_ICON_SILVER_CHAPTER_204:String = "../maps/icons/library/hangarEntryPoints/battlePass/icon_silver_chapter_204.png";
+      public static const MAPS_ICONS_LIBRARY_HANGARENTRYPOINTS_BATTLEPASS_ICON_SILVER_CHAPTER_214:String = "../maps/icons/library/hangarEntryPoints/battlePass/icon_silver_chapter_214.png";
       
       public static const MAPS_ICONS_LIBRARY_HANGARENTRYPOINTS_BATTLEPASS_RESOURCE_DECOR:String = "../maps/icons/library/hangarEntryPoints/battlePass/resource_decor.png";
       

@@ -3603,9 +3603,9 @@
 		<queueClearAtStart>1</queueClearAtStart>
 	</event>
 	<event>
-		<name>vo_contextHints_04_02</name>
+		<name>vo_contextHints_InSafetyWhileNotObserved</name>
 		<chance>100</chance>
-		<infEvent>vo_contextHints_04_02</infEvent>
+		<infEvent>vo_contextHints_InSafetyWhileNotObserved</infEvent>
 		<infChance>100</infChance>
 		<cooldownEvent>0</cooldownEvent>
 		<queue>1</queue>
@@ -3616,9 +3616,9 @@
 		<queueClearAtStart>0</queueClearAtStart>
 	</event>
 	<event>
-		<name>vo_contextHints_InSafetyWhileNotObserved</name>
+		<name>vo_contextHints_04_03</name>
 		<chance>100</chance>
-		<infEvent>vo_contextHints_InSafetyWhileNotObserved</infEvent>
+		<infEvent>vo_contextHints_04_03</infEvent>
 		<infChance>100</infChance>
 		<cooldownEvent>0</cooldownEvent>
 		<queue>1</queue>
