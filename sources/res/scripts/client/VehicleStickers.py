@@ -809,8 +809,9 @@ class VehicleStickers(object):
             dmgSticker.handle = None
 
         for sticker in viewvalues(self.__parametrizedDamageStickers):
-            self.__delParametrizedDamageSticker(sticker.handle)
-            sticker.handle = None
+            if sticker is not None and sticker.handle is not None:
+                self.__delParametrizedDamageSticker(sticker.handle)
+                sticker.handle = None
 
         return
 
