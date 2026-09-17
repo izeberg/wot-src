@@ -31675,6 +31675,30 @@ package
       
       public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_NEWYEAR_PREMIUM_AUTOOPENVIEW_BACKGROUND:String = "../maps/icons/lootBoxSystem/customizable/newYear_premium/autoOpenView/background.png";
       
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_WT_AUTOOPENVIEW_BACKGROUND:String = "../maps/icons/lootBoxSystem/customizable/wt/autoOpenView/background.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_WT_AWARDVIEWS_OPENINGBOX_WT_COMMON:String = "../maps/icons/lootBoxSystem/customizable/wt/awardViews/openingBox/wt_common.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_WT_AWARDVIEWS_OPENINGBOX_WT_RARE:String = "../maps/icons/lootBoxSystem/customizable/wt/awardViews/openingBox/wt_rare.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_WT_ENTRY_POINT_GLOW:String = "../maps/icons/lootBoxSystem/customizable/wt/entry_point/glow.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_WT_ENTRY_POINT_LOOTBOXEMPTY:String = "../maps/icons/lootBoxSystem/customizable/wt/entry_point/lootboxEmpty.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_WT_ENTRY_POINT_LOOTBOXGOLD:String = "../maps/icons/lootBoxSystem/customizable/wt/entry_point/lootboxGold.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_WT_HASBOXESVIEW_LAYERS_BACKGROUND_WT:String = "../maps/icons/lootBoxSystem/customizable/wt/hasBoxesView/layers/background/wt.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_WT_HASBOXESVIEW_LAYERS_BOX_WT:String = "../maps/icons/lootBoxSystem/customizable/wt/hasBoxesView/layers/box/wt.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_WT_HASBOXESVIEW_LAYERS_HOVER_WT:String = "../maps/icons/lootBoxSystem/customizable/wt/hasBoxesView/layers/hover/wt.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_WT_INFOPAGE_BACKGROUND:String = "../maps/icons/lootBoxSystem/customizable/wt/infopage/background.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_WT_NOBOXESVIEW_BACKGROUND:String = "../maps/icons/lootBoxSystem/customizable/wt/noBoxesView/background.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_WT_NOBOXESVIEW_NOBOXESART:String = "../maps/icons/lootBoxSystem/customizable/wt/noBoxesView/noBoxesArt.png";
+      
       public static const MAPS_ICONS_LOOTBOXSYSTEM_EVENTS_ANNIVERSARYCN_RARITYOVERLAY_LOOTBOX_24040101:String = "../maps/icons/lootBoxSystem/events/anniversaryCN/rarityOverlay/lootBox_24040101.png";
       
       public static const MAPS_ICONS_LOOTBOXSYSTEM_EVENTS_ANNIVERSARYCN_RARITYOVERLAY_VEHICLES_29969:String = "../maps/icons/lootBoxSystem/events/anniversaryCN/rarityOverlay/vehicles_29969.png";
@@ -40571,6 +40595,8 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_LOOTBOX_SILVER:String = "../maps/icons/quests/bonuses/big/lootBox_silver.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_LOOTBOX_WT:String = "../maps/icons/quests/bonuses/big/lootBox_wt.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_MENTORINGLICENSE:String = "../maps/icons/quests/bonuses/big/mentoringLicense.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_MILITARYEXERCISES:String = "../maps/icons/quests/bonuses/big/militaryExercises.png";
@@ -41061,6 +41087,8 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_LOOTBOX_SILVER:String = "../maps/icons/quests/bonuses/s180x135/lootBox_silver.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_LOOTBOX_WT:String = "../maps/icons/quests/bonuses/s180x135/lootBox_wt.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_MENTORINGLICENSE:String = "../maps/icons/quests/bonuses/s180x135/mentoringLicense.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_MODERNIZEDAIMDRIVESAIMINGSTABILIZER:String = "../maps/icons/quests/bonuses/s180x135/modernizedAimDrivesAimingStabilizer.png";
@@ -41452,6 +41480,8 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_LOOTBOX_GOLD:String = "../maps/icons/quests/bonuses/s232x174/lootBox_gold.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_LOOTBOX_SILVER:String = "../maps/icons/quests/bonuses/s232x174/lootBox_silver.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_LOOTBOX_WT:String = "../maps/icons/quests/bonuses/s232x174/lootBox_wt.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_MENTORINGLICENSE:String = "../maps/icons/quests/bonuses/s232x174/mentoringLicense.png";
       
@@ -41970,6 +42000,8 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_LOOTBOX_GOLD:String = "../maps/icons/quests/bonuses/s296x222/lootBox_gold.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_LOOTBOX_SILVER:String = "../maps/icons/quests/bonuses/s296x222/lootBox_silver.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_LOOTBOX_WT:String = "../maps/icons/quests/bonuses/s296x222/lootBox_wt.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_MENTORINGLICENSE:String = "../maps/icons/quests/bonuses/s296x222/mentoringLicense.png";
       
@@ -43267,6 +43299,8 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_LOOTBOX_SILVER:String = "../maps/icons/quests/bonuses/s600x450/lootBox_silver.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_LOOTBOX_WT:String = "../maps/icons/quests/bonuses/s600x450/lootBox_wt.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_MENTORINGLICENSE:String = "../maps/icons/quests/bonuses/s600x450/mentoringLicense.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_MENTORING_LICENSE:String = "../maps/icons/quests/bonuses/s600x450/mentoring_license.png";
@@ -44022,6 +44056,8 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_LOOTBOX_GOLD:String = "../maps/icons/quests/bonuses/small/lootBox_gold.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_LOOTBOX_SILVER:String = "../maps/icons/quests/bonuses/small/lootBox_silver.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_LOOTBOX_WT:String = "../maps/icons/quests/bonuses/small/lootBox_wt.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_MENTORINGLICENSE:String = "../maps/icons/quests/bonuses/small/mentoringLicense.png";
       

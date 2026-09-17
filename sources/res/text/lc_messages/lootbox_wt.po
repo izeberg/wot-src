@@ -24,7 +24,7 @@ msgid "boxTooltip/description/text/wt"
 msgstr "开启后，您将有机会从这些补给品中获得金币坦克、游戏内货币，以及其他珍贵奖励。"
 
 msgid "boxTooltip/howGet/text/wt"
-msgstr "您可在军械库或特惠商城中购买奇构补给品礼包。"
+msgstr "您可在军械库中购买奇构补给品礼包。"
 
 msgid "common/boxCategory/lowerCase/wt"
 msgstr "奇构补给品"
@@ -41,11 +41,17 @@ msgstr "购买补给品礼包"
 msgid "common/loader"
 msgstr "正在开启补给品..."
 
+msgid "common/selectTooltip"
+msgstr "奇构补给品不足，无法一次性开启5个"
+
 msgid "common/statistics/emptyHeader"
 msgstr "开启补给品即可查看统计数据。"
 
 msgid "common/statistics/header"
-msgstr "已开启补给品: %(count)"
+msgstr "已开启奇构补给品:"
+
+msgid "confirmRerollLootBox/description/wt"
+msgstr "奇构补给品将再次开启，并有机会掉落不同的奖励。"
 
 msgid "confirmResetLootBoxStatistics/description"
 msgstr "已开启补给品的所有信息都将被删除。"
@@ -54,9 +60,7 @@ msgid "entryPoint/boxes"
 msgstr "前往补给品"
 
 msgid "entryPoint/tooltip/description"
-msgstr ""
-"这些特殊补给品内含全新且独特的物品，包括金币坦克、个性化元素、游戏内货币，以及其他珍贵奖励。\n"
-"该补给品可通过在军械库或特惠商城中购买相应礼包来获取。"
+msgstr "这些特殊奇构补给品内含全新且独特的物品。您可在军械库中购买奇构补给品礼包。"
 
 msgid "entryPoint/tooltip/warningDescription"
 msgstr "由于技术原因，目前无法开启补给品，或购买补给品礼包。我们对造成的不便深表歉意。"
@@ -65,10 +69,10 @@ msgid "entryPoint/tooltip/warningTitle"
 msgstr "补给品暂不可用"
 
 msgid "eventName/lowerCase"
-msgstr "打破时空悖论"
+msgstr "力挽狂澜"
 
 msgid "eventName/upperCase"
-msgstr "打破时空悖论"
+msgstr "力挽狂澜"
 
 msgid "guaranteedTitle/nextBox"
 msgstr "下个补给品将掉落保底奖励！"
@@ -76,15 +80,24 @@ msgstr "下个补给品将掉落保底奖励！"
 msgid "guaranteedTitle/text"
 msgstr "保底奖励掉落前还需开启的最大补给品数量: %(count)"
 
-msgid "infoPage/footer/description/autoOpen"
-msgstr "如果您在活动结束前没有开启全部补给品，那么系统会自动开启这些补给品。"
+msgid "infoPage/footer/description/autoOpen/wt"
+msgstr "如果您在活动结束前没有开启奇构补给品，那么系统将会自动开启这些补给品。"
 
-msgid "infoPage/footer/description/compensation"
-msgstr "如果您车库中已拥有补给品内容列表中的全部坦克，对于之后从补给品中获得的每辆坦克，您都将获得坦克当前价格所对应的金币补偿。"
+msgid "infoPage/footer/description/compensation/wt"
+msgstr "如果您车库中已拥有奇构补给品内容列表中的全部坦克，对于之后从补给品中获得的每辆坦克，您都将获得坦克当前价格所对应的金币补偿。"
 
-msgid "infoPage/footer/description/guaranteed"
+msgid "infoPage/footer/description/guaranteed/wt"
 msgstr ""
-"每%(guaranteed0)s个补给品都保底内含1辆金币坦克。如果这些补给品始终未掉落保底坦克，那么当您开启第%(guaranteed0)s个补给品时，必定会掉落1辆您车库中尚未拥有的金币坦克。补给品掉落坦克后，计数器将重置。"
+"每%(guaranteed)s个奇构补给品都保底内含1辆坦克。如果这些补给品始终未掉落保底坦克，那么当您开启第%(guaranteed)s个补给品时，必定会掉落1辆您车库中尚未拥有的坦克。补给品掉落坦克后，计数器将重置。"
+
+msgid "infoPage/footer/description/reroll/wt"
+msgstr "如果您对奇构补给品的奖励不满意，可以重新开启，并有机会从同一奖励列表中获得不同的物品。每个奇构补给品的重新开启次数有限:"
+
+msgid "infoPage/footer/title/autoOpen"
+msgstr "自动开启"
+
+msgid "infoPage/footer/title/compensation"
+msgstr "补偿"
 
 msgid "infoPage/header/description"
 msgstr "开启补给品就有机会获得珍贵的游戏内物品！详情见下文。"
@@ -93,9 +106,10 @@ msgid "multipleRewardView/header/subTitle/"
 msgstr "从%(name)中获得的奖励(已开启%(boxesCount)个补给品)"
 
 msgid "noBoxesView/description/"
-msgstr ""
-"您没有任何补给品。您可在军械库或特惠商城中\n"
-"购买补给品礼包。"
+msgstr "您可在军械库中购买奇构补给品礼包"
+
+msgid "noBoxesView/goToButton/"
+msgstr "前往可用的奇构补给品"
 
 msgid "preview/backLabel"
 msgstr "补给品"
@@ -104,7 +118,7 @@ msgid "quantityTitle/boxesAvailable"
 msgstr "可用的补给品: %(boxesCount)"
 
 msgid "quantityTitle/noBoxes"
-msgstr "没有可用的补给品"
+msgstr "没有可用的奇构补给品"
 
 msgid "singleRewardView/tooltip/description/"
 msgstr "如果您车库中已拥有补给品内容列表中的所有坦克，那么对于之后掉落的每辆坦克，您都将获得坦克当前价格对应的金币补偿。"
@@ -119,3 +133,6 @@ msgid "singleRewardView/tooltip/subtitle/"
 msgstr ""
 "保底奖励是补给品内容列表中的坦克。\n"
 "如果开启%(remainingCount)后仍未掉落保底坦克，那么开启第%(count)个补给品时必定掉落您车库中尚未拥有的坦克。补给品掉落坦克后，计数器将重置。"
+
+msgid "tooltip/reroll/text/wt"
+msgstr "重新开启奇构补给品可让您有机会从同一列表中获得不同的奖励。"

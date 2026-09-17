@@ -2812,6 +2812,16 @@
 							</item>
 						</value>
 					</item>
+					<item>
+						<name>wt</name>
+						<type>list</type>
+						<value>
+							<item>
+								<type>int</type>
+								<value>1</value>
+							</item>
+						</value>
+					</item>
 				</value>
 			</item>
 			<item>
@@ -2825,6 +2835,11 @@
 							<item>
 								/$LANGUAGE_CODE/promocontent/lootBoxIntro/
 								<name>default</name>
+								<type>url</type>
+							</item>
+							<item>
+								/$LANGUAGE_CODE/promocontent/waffentrager-september-2026-Video/
+								<name>wt</name>
 								<type>url</type>
 							</item>
 						</value>
@@ -2929,7 +2944,7 @@
 		<macros>AUTH_REALM</macros>
 		<value>
 			<item>
-				https://worldoftanks.asia/ko/news/general-news/holiday-ops-2026-large-boxes/
+				https://worldoftanks.asia/ko/news/specials/waffentrager-2026-bundles/
 				<name>default</name>
 				<type>url</type>
 			</item>

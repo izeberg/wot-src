@@ -5,35 +5,35 @@ class battle_modifiers(DynAccessor):
 
     class _shared(DynAccessor):
         __slots__ = ()
-        Modifiers = DynAccessor(135377)
+        Modifiers = DynAccessor(135415)
 
-    shared = _shared(135378)
+    shared = _shared(135416)
 
 
 class battle_pass(DynAccessor):
     __slots__ = ()
-    ChapterChoice = DynAccessor(135380)
-    Progression = DynAccessor(135381)
-    PostProgression = DynAccessor(135382)
-    BuyPass = DynAccessor(135383)
-    BuyPassRewards = DynAccessor(135384)
-    BuyLevels = DynAccessor(135385)
-    BuyLevelsRewards = DynAccessor(135386)
-    HolidayFinal = DynAccessor(135387)
-    FinalRewardPreview = DynAccessor(135388)
-    TankmenScreen = DynAccessor(135389)
+    ChapterChoice = DynAccessor(135418)
+    Progression = DynAccessor(135419)
+    PostProgression = DynAccessor(135420)
+    BuyPass = DynAccessor(135421)
+    BuyPassRewards = DynAccessor(135422)
+    BuyLevels = DynAccessor(135423)
+    BuyLevelsRewards = DynAccessor(135424)
+    HolidayFinal = DynAccessor(135425)
+    FinalRewardPreview = DynAccessor(135426)
+    TankmenScreen = DynAccessor(135427)
 
 
 class battle_result(DynAccessor):
     __slots__ = ()
-    none = DynAccessor(135391)
+    none = DynAccessor(135429)
 
     class _contextMenu(DynAccessor):
         __slots__ = ()
-        User = DynAccessor(135392)
-        Vehicle = DynAccessor(135393)
+        User = DynAccessor(135430)
+        Vehicle = DynAccessor(135431)
 
-    contextMenu = _contextMenu(135394)
+    contextMenu = _contextMenu(135432)
 
 
 class battle_results(DynAccessor):
@@ -41,48 +41,48 @@ class battle_results(DynAccessor):
 
     class _progression(DynAccessor):
         __slots__ = ()
-        DailyMissions = DynAccessor(135396)
-        WeeklyMissions = DynAccessor(135397)
-        PersonalMissions = DynAccessor(135398)
-        BattlePass = DynAccessor(135399)
-        Prestige = DynAccessor(135400)
-        BattleMatters = DynAccessor(135401)
-        ModuleVehicleUnlocks = DynAccessor(135402)
-        CommonQuests = DynAccessor(135403)
-        Challenges = DynAccessor(135404)
+        DailyMissions = DynAccessor(135434)
+        WeeklyMissions = DynAccessor(135435)
+        PersonalMissions = DynAccessor(135436)
+        BattlePass = DynAccessor(135437)
+        Prestige = DynAccessor(135438)
+        BattleMatters = DynAccessor(135439)
+        ModuleVehicleUnlocks = DynAccessor(135440)
+        CommonQuests = DynAccessor(135441)
+        Challenges = DynAccessor(135442)
 
-    progression = _progression(135405)
+    progression = _progression(135443)
 
 
 class common(DynAccessor):
     __slots__ = ()
-    none = DynAccessor(135407)
+    none = DynAccessor(135445)
 
     class _contextMenu(DynAccessor):
         __slots__ = ()
-        Backport = DynAccessor(135408)
+        Backport = DynAccessor(135446)
 
-    contextMenu = _contextMenu(135409)
+    contextMenu = _contextMenu(135447)
 
     class _tooltip(DynAccessor):
         __slots__ = ()
-        Backport = DynAccessor(135410)
-        Wulf = DynAccessor(135411)
-        Param = DynAccessor(135412)
+        Backport = DynAccessor(135448)
+        Wulf = DynAccessor(135449)
+        Param = DynAccessor(135450)
 
-    tooltip = _tooltip(135413)
+    tooltip = _tooltip(135451)
 
     class _popOver(DynAccessor):
         __slots__ = ()
-        Backport = DynAccessor(135414)
+        Backport = DynAccessor(135452)
 
-    popOver = _popOver(135415)
+    popOver = _popOver(135453)
 
     class _shared(DynAccessor):
         __slots__ = ()
-        DynamicEconomics = DynAccessor(135416)
+        DynamicEconomics = DynAccessor(135454)
 
-    shared = _shared(135417)
+    shared = _shared(135455)
 
 
 class hangar(DynAccessor):
@@ -90,38 +90,38 @@ class hangar(DynAccessor):
 
     class _shared(DynAccessor):
         __slots__ = ()
-        VehiclesInfo = DynAccessor(135419)
-        VehiclesStatistics = DynAccessor(135420)
-        Consumables = DynAccessor(135421)
-        Equipments = DynAccessor(135422)
-        Instructions = DynAccessor(135423)
-        Shells = DynAccessor(135424)
-        Loadout = DynAccessor(135425)
-        Crew = DynAccessor(135426)
-        VehicleParams = DynAccessor(135427)
-        ETEVehicleParams = DynAccessor(135428)
-        CurrentVehicle = DynAccessor(135429)
-        VehiclesInventory = DynAccessor(135430)
-        MainMenu = DynAccessor(135431)
-        VehicleMenu = DynAccessor(135432)
-        LootboxEntryPoint = DynAccessor(135433)
-        VehicleFilters = DynAccessor(135434)
-        VehiclePlaylists = DynAccessor(135435)
-        Teaser = DynAccessor(135436)
-        OptionalDevicesAssistant = DynAccessor(135437)
-        SpaceInteraction = DynAccessor(135438)
-        HeroTank = DynAccessor(135439)
-        UserMissions = DynAccessor(135440)
-        ModeState = DynAccessor(135441)
-        EasyTankEquip = DynAccessor(135442)
-        PetEvent = DynAccessor(135443)
-        PetObjectTooltip = DynAccessor(135444)
-        Settings = DynAccessor(135445)
-        KeyBindings = DynAccessor(135446)
-        ManageableVehiclePlaylists = DynAccessor(135447)
-        MainPlugins = DynAccessor(135448)
+        VehiclesInfo = DynAccessor(135457)
+        VehiclesStatistics = DynAccessor(135458)
+        Consumables = DynAccessor(135459)
+        Equipments = DynAccessor(135460)
+        Instructions = DynAccessor(135461)
+        Shells = DynAccessor(135462)
+        Loadout = DynAccessor(135463)
+        Crew = DynAccessor(135464)
+        VehicleParams = DynAccessor(135465)
+        ETEVehicleParams = DynAccessor(135466)
+        CurrentVehicle = DynAccessor(135467)
+        VehiclesInventory = DynAccessor(135468)
+        MainMenu = DynAccessor(135469)
+        VehicleMenu = DynAccessor(135470)
+        LootboxEntryPoint = DynAccessor(135471)
+        VehicleFilters = DynAccessor(135472)
+        VehiclePlaylists = DynAccessor(135473)
+        Teaser = DynAccessor(135474)
+        OptionalDevicesAssistant = DynAccessor(135475)
+        SpaceInteraction = DynAccessor(135476)
+        HeroTank = DynAccessor(135477)
+        UserMissions = DynAccessor(135478)
+        ModeState = DynAccessor(135479)
+        EasyTankEquip = DynAccessor(135480)
+        PetEvent = DynAccessor(135481)
+        PetObjectTooltip = DynAccessor(135482)
+        Settings = DynAccessor(135483)
+        KeyBindings = DynAccessor(135484)
+        ManageableVehiclePlaylists = DynAccessor(135485)
+        MainPlugins = DynAccessor(135486)
 
-    shared = _shared(135449)
+    shared = _shared(135487)
 
 
 class lobby_footer(DynAccessor):
@@ -129,16 +129,16 @@ class lobby_footer(DynAccessor):
 
     class _default(DynAccessor):
         __slots__ = ()
-        Platoon = DynAccessor(135451)
-        ContactsList = DynAccessor(135452)
-        SessionStats = DynAccessor(135453)
-        VehicleCompare = DynAccessor(135454)
-        NotificationsCenter = DynAccessor(135455)
-        Chats = DynAccessor(135456)
-        ReferralProgram = DynAccessor(135457)
-        ServerInfo = DynAccessor(135458)
+        Platoon = DynAccessor(135489)
+        ContactsList = DynAccessor(135490)
+        SessionStats = DynAccessor(135491)
+        VehicleCompare = DynAccessor(135492)
+        NotificationsCenter = DynAccessor(135493)
+        Chats = DynAccessor(135494)
+        ReferralProgram = DynAccessor(135495)
+        ServerInfo = DynAccessor(135496)
 
-    default = _default(135459)
+    default = _default(135497)
 
 
 class lobby_header(DynAccessor):
@@ -146,18 +146,18 @@ class lobby_header(DynAccessor):
 
     class _default(DynAccessor):
         __slots__ = ()
-        FightStart = DynAccessor(135461)
-        NavigationBar = DynAccessor(135462)
-        Prebattle = DynAccessor(135463)
-        Wallet = DynAccessor(135464)
-        AccountDashboard = DynAccessor(135465)
-        HeaderState = DynAccessor(135466)
-        UserAccount = DynAccessor(135467)
-        ReservesEntryPoint = DynAccessor(135468)
-        PremShop = DynAccessor(135469)
-        CurrentVehicle = DynAccessor(135470)
+        FightStart = DynAccessor(135499)
+        NavigationBar = DynAccessor(135500)
+        Prebattle = DynAccessor(135501)
+        Wallet = DynAccessor(135502)
+        AccountDashboard = DynAccessor(135503)
+        HeaderState = DynAccessor(135504)
+        UserAccount = DynAccessor(135505)
+        ReservesEntryPoint = DynAccessor(135506)
+        PremShop = DynAccessor(135507)
+        CurrentVehicle = DynAccessor(135508)
 
-    default = _default(135471)
+    default = _default(135509)
 
 
 class select_vehicle(DynAccessor):
@@ -165,13 +165,13 @@ class select_vehicle(DynAccessor):
 
     class _select_vehicle(DynAccessor):
         __slots__ = ()
-        VehiclesInfo = DynAccessor(135473)
-        VehiclesInventory = DynAccessor(135474)
-        VehiclesStatistics = DynAccessor(135475)
-        VehicleFilters = DynAccessor(135476)
-        VehiclePlaylists = DynAccessor(135477)
+        VehiclesInfo = DynAccessor(135511)
+        VehiclesInventory = DynAccessor(135512)
+        VehiclesStatistics = DynAccessor(135513)
+        VehicleFilters = DynAccessor(135514)
+        VehiclePlaylists = DynAccessor(135515)
 
-    select_vehicle = _select_vehicle(135478)
+    select_vehicle = _select_vehicle(135516)
 
 
 class states(DynAccessor):
@@ -182,15 +182,15 @@ class states(DynAccessor):
 
         class _Loadout(DynAccessor):
             __slots__ = ()
-            Equipment = DynAccessor(135480)
-            Instructions = DynAccessor(135481)
-            Shells = DynAccessor(135482)
-            Consumables = DynAccessor(135483)
+            Equipment = DynAccessor(135518)
+            Instructions = DynAccessor(135519)
+            Shells = DynAccessor(135520)
+            Consumables = DynAccessor(135521)
 
-        Loadout = _Loadout(135484)
-        Vehicles = DynAccessor(135485)
+        Loadout = _Loadout(135522)
+        Vehicles = DynAccessor(135523)
 
-    Hangar = _Hangar(135486)
+    Hangar = _Hangar(135524)
 
 
 class user_missions(DynAccessor):
@@ -198,41 +198,41 @@ class user_missions(DynAccessor):
 
     class _hangarWidget(DynAccessor):
         __slots__ = ()
-        BattlePass = DynAccessor(135488)
-        Events = DynAccessor(135489)
-        Quests = DynAccessor(135490)
-        PersonalMissions = DynAccessor(135491)
-        EventMainInfoTip = DynAccessor(135492)
+        BattlePass = DynAccessor(135526)
+        Events = DynAccessor(135527)
+        Quests = DynAccessor(135528)
+        PersonalMissions = DynAccessor(135529)
+        EventMainInfoTip = DynAccessor(135530)
 
-    hangarWidget = _hangarWidget(135493)
+    hangarWidget = _hangarWidget(135531)
 
     class _hub(DynAccessor):
         __slots__ = ()
 
         class _basicMissions(DynAccessor):
             __slots__ = ()
-            MainView = DynAccessor(135494)
+            MainView = DynAccessor(135532)
 
             class _DailyMissionsSection(DynAccessor):
                 __slots__ = ()
-                MainView = DynAccessor(135495)
-                DailyBlock = DynAccessor(135496)
-                PremiumBlock = DynAccessor(135497)
-                RewardProgressBlock = DynAccessor(135498)
+                MainView = DynAccessor(135533)
+                DailyBlock = DynAccessor(135534)
+                PremiumBlock = DynAccessor(135535)
+                RewardProgressBlock = DynAccessor(135536)
 
-            DailyMissionsSection = _DailyMissionsSection(135499)
-            WeeklyMissions = DynAccessor(135500)
-            PersonalMissions = DynAccessor(135501)
+            DailyMissionsSection = _DailyMissionsSection(135537)
+            WeeklyMissions = DynAccessor(135538)
+            PersonalMissions = DynAccessor(135539)
 
-        basicMissions = _basicMissions(135502)
+        basicMissions = _basicMissions(135540)
 
         class _challengeMissions(DynAccessor):
             __slots__ = ()
-            MainView = DynAccessor(135503)
+            MainView = DynAccessor(135541)
 
-        challengeMissions = _challengeMissions(135504)
+        challengeMissions = _challengeMissions(135542)
 
-    hub = _hub(135505)
+    hub = _hub(135543)
 
 
 class vehicle_hub(DynAccessor):
@@ -240,17 +240,17 @@ class vehicle_hub(DynAccessor):
 
     class _default(DynAccessor):
         __slots__ = ()
-        VehicleParams = DynAccessor(135507)
-        Wallet = DynAccessor(135508)
-        VehicleInfo = DynAccessor(135509)
-        ManageableVehiclePlaylists = DynAccessor(135510)
-        VehiclesInfo = DynAccessor(135511)
-        VehiclesStatistics = DynAccessor(135512)
-        VehicleFilters = DynAccessor(135513)
-        VehiclePlaylists = DynAccessor(135514)
-        VehiclesInventory = DynAccessor(135515)
+        VehicleParams = DynAccessor(135545)
+        Wallet = DynAccessor(135546)
+        VehicleInfo = DynAccessor(135547)
+        ManageableVehiclePlaylists = DynAccessor(135548)
+        VehiclesInfo = DynAccessor(135549)
+        VehiclesStatistics = DynAccessor(135550)
+        VehicleFilters = DynAccessor(135551)
+        VehiclePlaylists = DynAccessor(135552)
+        VehiclesInventory = DynAccessor(135553)
 
-    default = _default(135516)
+    default = _default(135554)
 
 
 class vehicle_menu(DynAccessor):
@@ -258,24 +258,24 @@ class vehicle_menu(DynAccessor):
 
     class _default(DynAccessor):
         __slots__ = ()
-        Customization = DynAccessor(135518)
-        CrewAutoReturn = DynAccessor(135519)
-        CrewRetrain = DynAccessor(135520)
-        QuickTraining = DynAccessor(135521)
-        CrewOut = DynAccessor(135522)
-        CrewBack = DynAccessor(135523)
-        EasyEquip = DynAccessor(135524)
-        ArmorInspector = DynAccessor(135525)
-        FieldModification = DynAccessor(135526)
-        NationChange = DynAccessor(135527)
-        Research = DynAccessor(135528)
-        AboutVehicle = DynAccessor(135529)
-        Compare = DynAccessor(135530)
-        Repairs = DynAccessor(135531)
-        VehSkillTree = DynAccessor(135532)
-        ProBoost = DynAccessor(135533)
+        Customization = DynAccessor(135556)
+        CrewAutoReturn = DynAccessor(135557)
+        CrewRetrain = DynAccessor(135558)
+        QuickTraining = DynAccessor(135559)
+        CrewOut = DynAccessor(135560)
+        CrewBack = DynAccessor(135561)
+        EasyEquip = DynAccessor(135562)
+        ArmorInspector = DynAccessor(135563)
+        FieldModification = DynAccessor(135564)
+        NationChange = DynAccessor(135565)
+        Research = DynAccessor(135566)
+        AboutVehicle = DynAccessor(135567)
+        Compare = DynAccessor(135568)
+        Repairs = DynAccessor(135569)
+        VehSkillTree = DynAccessor(135570)
+        ProBoost = DynAccessor(135571)
 
-    default = _default(135534)
+    default = _default(135572)
 
 
 class white_tiger(DynAccessor):
@@ -283,42 +283,42 @@ class white_tiger(DynAccessor):
 
     class _shared(DynAccessor):
         __slots__ = ()
-        Carousel = DynAccessor(135536)
-        ConsumablesPanel = DynAccessor(135537)
-        Progression = DynAccessor(135538)
-        Crewman = DynAccessor(135539)
-        VehicleStats = DynAccessor(135540)
-        ProgressionContent = DynAccessor(135541)
-        ProgressionQuests = DynAccessor(135542)
-        LootboxEntryPoint = DynAccessor(135543)
+        Carousel = DynAccessor(135574)
+        ConsumablesPanel = DynAccessor(135575)
+        Progression = DynAccessor(135576)
+        Crewman = DynAccessor(135577)
+        VehicleStats = DynAccessor(135578)
+        ProgressionContent = DynAccessor(135579)
+        ProgressionQuests = DynAccessor(135580)
+        LootboxEntryPoint = DynAccessor(135581)
 
-    shared = _shared(135544)
+    shared = _shared(135582)
 
 
 class battle_royale(DynAccessor):
     __slots__ = ()
-    BattleSelector = DynAccessor(135546)
-    UserMissions = DynAccessor(135547)
-    VehiclesInventory = DynAccessor(135548)
-    VehiclesFilter = DynAccessor(135549)
-    AlertMessage = DynAccessor(135550)
-    Header = DynAccessor(135551)
-    LoadoutPanelContainer = DynAccessor(135552)
-    Events = DynAccessor(135553)
+    BattleSelector = DynAccessor(135584)
+    UserMissions = DynAccessor(135585)
+    VehiclesInventory = DynAccessor(135586)
+    VehiclesFilter = DynAccessor(135587)
+    AlertMessage = DynAccessor(135588)
+    Header = DynAccessor(135589)
+    LoadoutPanelContainer = DynAccessor(135590)
+    Events = DynAccessor(135591)
 
     class _hangarWidget(DynAccessor):
         __slots__ = ()
-        Progression = DynAccessor(135554)
-        EventShop = DynAccessor(135555)
+        Progression = DynAccessor(135592)
+        EventShop = DynAccessor(135593)
 
-    hangarWidget = _hangarWidget(135556)
+    hangarWidget = _hangarWidget(135594)
 
     class _loadoutPanelContainer(DynAccessor):
         __slots__ = ()
-        Loadout = DynAccessor(135557)
-        Commander = DynAccessor(135558)
+        Loadout = DynAccessor(135595)
+        Commander = DynAccessor(135596)
 
-    loadoutPanelContainer = _loadoutPanelContainer(135559)
+    loadoutPanelContainer = _loadoutPanelContainer(135597)
 
 
 class comp7(DynAccessor):
@@ -326,17 +326,17 @@ class comp7(DynAccessor):
 
     class _shared(DynAccessor):
         __slots__ = ()
-        AlertMessage = DynAccessor(135561)
-        Schedule = DynAccessor(135562)
-        SeasonModifier = DynAccessor(135563)
-        RoleSkillSlot = DynAccessor(135564)
-        UserMissions = DynAccessor(135565)
-        EntryPoint = DynAccessor(135566)
-        WeeklyQuestsWidget = DynAccessor(135567)
-        BattleResultsWeeklyQuests = DynAccessor(135568)
-        BattleResultsCustomizationQuests = DynAccessor(135569)
+        AlertMessage = DynAccessor(135599)
+        Schedule = DynAccessor(135600)
+        SeasonModifier = DynAccessor(135601)
+        RoleSkillSlot = DynAccessor(135602)
+        UserMissions = DynAccessor(135603)
+        EntryPoint = DynAccessor(135604)
+        WeeklyQuestsWidget = DynAccessor(135605)
+        BattleResultsWeeklyQuests = DynAccessor(135606)
+        BattleResultsCustomizationQuests = DynAccessor(135607)
 
-    shared = _shared(135570)
+    shared = _shared(135608)
 
 
 class comp7_light(DynAccessor):
@@ -344,15 +344,15 @@ class comp7_light(DynAccessor):
 
     class _shared(DynAccessor):
         __slots__ = ()
-        AlertMessage = DynAccessor(135572)
-        SeasonModifier = DynAccessor(135573)
-        RoleSkillSlot = DynAccessor(135574)
-        UserMissions = DynAccessor(135575)
-        EntryPoint = DynAccessor(135576)
-        Quests = DynAccessor(135577)
-        BattleResultsProgressionQuests = DynAccessor(135578)
+        AlertMessage = DynAccessor(135610)
+        SeasonModifier = DynAccessor(135611)
+        RoleSkillSlot = DynAccessor(135612)
+        UserMissions = DynAccessor(135613)
+        EntryPoint = DynAccessor(135614)
+        Quests = DynAccessor(135615)
+        BattleResultsProgressionQuests = DynAccessor(135616)
 
-    shared = _shared(135579)
+    shared = _shared(135617)
 
 
 class frontline(DynAccessor):
@@ -360,16 +360,16 @@ class frontline(DynAccessor):
 
     class _loadout(DynAccessor):
         __slots__ = ()
-        BattleAbilities = DynAccessor(135581)
+        BattleAbilities = DynAccessor(135619)
 
-    loadout = _loadout(135582)
+    loadout = _loadout(135620)
 
     class _shared(DynAccessor):
         __slots__ = ()
-        UserMissions = DynAccessor(135583)
-        AlertMessage = DynAccessor(135584)
+        UserMissions = DynAccessor(135621)
+        AlertMessage = DynAccessor(135622)
 
-    shared = _shared(135585)
+    shared = _shared(135623)
 
 
 class fun_random(DynAccessor):
@@ -377,11 +377,11 @@ class fun_random(DynAccessor):
 
     class _shared(DynAccessor):
         __slots__ = ()
-        UserMissions = DynAccessor(135587)
-        ProgressionEntryPoint = DynAccessor(135588)
-        ProgressionQuests = DynAccessor(135589)
+        UserMissions = DynAccessor(135625)
+        ProgressionEntryPoint = DynAccessor(135626)
+        ProgressionQuests = DynAccessor(135627)
 
-    shared = _shared(135590)
+    shared = _shared(135628)
 
 
 class last_stand(DynAccessor):
@@ -389,24 +389,24 @@ class last_stand(DynAccessor):
 
     class _shared(DynAccessor):
         __slots__ = ()
-        Carousel = DynAccessor(135592)
-        Difficulty = DynAccessor(135593)
-        MoneyBalance = DynAccessor(135594)
-        TeamStats = DynAccessor(135595)
-        Meta = DynAccessor(135596)
-        Keys = DynAccessor(135597)
-        Quests = DynAccessor(135598)
-        RewardPath = DynAccessor(135599)
-        Shop = DynAccessor(135600)
-        Gsw = DynAccessor(135601)
-        Switcher = DynAccessor(135602)
-        PresetsSwitcher = DynAccessor(135603)
-        VehiclesDaily = DynAccessor(135604)
-        BundleCard = DynAccessor(135605)
-        DailyCard = DynAccessor(135606)
-        Parallax = DynAccessor(135607)
+        Carousel = DynAccessor(135630)
+        Difficulty = DynAccessor(135631)
+        MoneyBalance = DynAccessor(135632)
+        TeamStats = DynAccessor(135633)
+        Meta = DynAccessor(135634)
+        Keys = DynAccessor(135635)
+        Quests = DynAccessor(135636)
+        RewardPath = DynAccessor(135637)
+        Shop = DynAccessor(135638)
+        Gsw = DynAccessor(135639)
+        Switcher = DynAccessor(135640)
+        PresetsSwitcher = DynAccessor(135641)
+        VehiclesDaily = DynAccessor(135642)
+        BundleCard = DynAccessor(135643)
+        DailyCard = DynAccessor(135644)
+        Parallax = DynAccessor(135645)
 
-    shared = _shared(135608)
+    shared = _shared(135646)
 
 
 class Aliases(DynAccessor):
