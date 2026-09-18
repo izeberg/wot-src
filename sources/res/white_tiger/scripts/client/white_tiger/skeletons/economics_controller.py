@@ -3,7 +3,7 @@ from skeletons.gui.game_control import IGameController, ISeasonProvider
 from Event import Event
 from typing import TYPE_CHECKING
 if TYPE_CHECKING:
-    from typing import Iterator
+    from typing import Iterator, Set
     from gui.server_events.bonuses import SimpleBonus
 
 class IEconomicsController(IGameController, ISeasonProvider):
@@ -57,6 +57,9 @@ class IEconomicsController(IGameController, ISeasonProvider):
         raise NotImplementedError
 
     def getQuickHunterTicketTokenName(self):
+        raise NotImplementedError
+
+    def getLootboxTokenKeys(self):
         raise NotImplementedError
 
     def hasEnoughTickets(self):
