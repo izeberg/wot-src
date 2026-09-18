@@ -1282,7 +1282,6 @@
 		<file>
 			python.log
 			<enabled>true</enabled>
-			<severity>TRACE</severity>
 			<severity>DEBUG</severity>
 			<severity>INFO</severity>
 			<severity>NOTICE</severity>
@@ -1292,7 +1291,6 @@
 			<severity>HACK</severity>
 			<source>SCRIPT</source>
 			<source>UI</source>
-			<source>CPP</source>
 			<openMode>a</openMode>
 			<maxSizeKB>2048</maxSizeKB>
 			<trimToKB>512</trimToKB>

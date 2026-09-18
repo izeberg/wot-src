@@ -7,7 +7,9 @@ import logging
 from aih_constants import CTRL_MODE_NAME
 import GUI
 from AvatarInputHandler.cameras import FovExtended
-import BigWorld, ResMgr, Keys, BattleReplay, VOIP, Settings, SoundGroups, ArenaType, WWISE
+import BigWorld, ResMgr, Keys, BattleReplay, VOIP
+from VOIP.voip_constants import VOIP_SUPPORTED_API
+import Settings, SoundGroups, ArenaType, WWISE
 from constants import CONTENT_TYPE, IS_CHINA
 from gui.Scaleform.genConsts.ACOUSTICS import ACOUSTICS
 from gui.app_loader import app_getter
@@ -389,6 +391,9 @@ class VOIPMasterSoundSetting(SoundSetting):
 
 
 class VOIPMicSoundSetting(SoundSetting):
+    MIC_MIN = 0
+    VIVOX_MAX = 100
+    WEBRTC_MAX = 100
 
     def __init__(self, isPreview=False):
         voip = VOIP.getVOIPManager()
@@ -396,6 +401,11 @@ class VOIPMicSoundSetting(SoundSetting):
         voip.onInitialized += self.__changeGroup
         soundGroup = ('mic{}').format(activeProfile.capitalize())
         super(VOIPMicSoundSetting, self).__init__(soundGroup, isPreview)
+
+    def _getOptions(self):
+        if VOIP.getVOIPManager().getAPI() == VOIP_SUPPORTED_API.WebRTC:
+            return (self.MIC_MIN, self.WEBRTC_MAX)
+        return (self.MIC_MIN, self.VIVOX_MAX)
 
     def fini(self):
         voip = VOIP.getVOIPManager()

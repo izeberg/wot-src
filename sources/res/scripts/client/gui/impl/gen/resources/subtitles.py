@@ -5,13 +5,13 @@ class Subtitles(DynAccessor):
 
     class _development(DynAccessor):
         __slots__ = ()
-        cosmic_intro_vp8_8_128 = DynAccessor(114197)
+        cosmic_intro_vp8_8_128 = DynAccessor(114194)
 
     development = _development()
 
     class _white_tiger(DynAccessor):
         __slots__ = ()
-        wt_intro = DynAccessor(114198)
-        wt_outro = DynAccessor(114199)
+        wt_intro = DynAccessor(114195)
+        wt_outro = DynAccessor(114196)
 
     white_tiger = _white_tiger()
