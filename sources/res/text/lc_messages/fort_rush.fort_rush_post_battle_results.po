@@ -1,0 +1,97 @@
+msgid ""
+msgstr ""
+
+msgid "battleInfo/all_from_battle"
+msgstr "Вся техника в последнем бою"
+
+msgid "battleInfo/arena"
+msgstr "{{arenaName}}, «Есть сигнал» – {{finishReason}}"
+
+msgid "battleInfo/finishReason/10lose"
+msgstr "цели не были уничтожены"
+
+msgid "battleInfo/finishReason/10win"
+msgstr "цели уничтожены"
+
+msgid "battleInfo/finishReason/1lose"
+msgstr "вся техника союзников уничтожена"
+
+msgid "battleInfo/finishReason/1tie"
+msgstr "вся техника уничтожена"
+
+msgid "battleInfo/finishReason/1win"
+msgstr "вся техника противника уничтожена"
+
+msgid "battleInfo/finishReason/2"
+msgstr "база захвачена"
+
+msgid "battleInfo/finishReason/3"
+msgstr "время боя истекло"
+
+msgid "battleInfo/finishReason/4"
+msgstr "бой прекращён из-за сбоя"
+
+msgid "battleInfo/finishReason/5"
+msgstr "техническое поражение"
+
+msgid "battleInfo/finishReason/8"
+msgstr "уничтожение союзника"
+
+msgid "battleInfo/finishReason/9"
+msgstr "ваша машина уничтожена"
+
+msgid "battleInfo/labels_objectivesDestroyed"
+msgstr "Цели уничтожены"
+
+msgid "battleInfo/labels_objectivesReached"
+msgstr "Вы подобрались к орудийным башням"
+
+msgid "battleInfo/labels_zoneCaptured"
+msgstr "Зоны захвачены"
+
+msgid "battleInfo/leaver/body"
+msgstr ""
+"Прогресс по задаче, полученный после выхода из боя, не засчитан. Пакеты "
+"данных по результатам боя не начислены."
+
+msgid "battleInfo/leaver/header"
+msgstr "Недопустимое поведение: бездействие/дезертирство"
+
+msgid "battleInfo/no"
+msgstr "Нет"
+
+msgid "battleInfo/time"
+msgstr "{{date}}, {{time}} (продолжительность боя: {{duration}})"
+
+msgid "battleInfo/timeLeft/minutesAndSeconds"
+msgstr "{{minutes}} мин {{seconds}} с"
+
+msgid "battleInfo/timeLeft/minutesOnly"
+msgstr "{{minutes}} мин"
+
+msgid "battleInfo/timeLeft/secondsOnly"
+msgstr "{{seconds}} с"
+
+msgid "battleInfo/yes"
+msgstr "Да"
+
+msgid "currencies/credits/body"
+msgstr ""
+"Основная игровая валюта.\n"
+"Зарабатывается в боях или\n"
+"приобретается за золото."
+
+msgid "currencies/credits/header"
+msgstr "Кредиты"
+
+msgid "detailedPersonalEfficiency/fortRushScore/body"
+msgstr ""
+"Очки начисляются за захват антенн, нейтрализацию антенн противника, "
+"оспаривание захвата антенн противником, нанесение урона и уничтожение "
+"техники противника возле антенн."
+
+msgid "detailedPersonalEfficiency/fortRushScore/header"
+msgstr "Очки службы"
+
+msgid "state/title"
+msgstr "РЕЗУЛЬТАТЫ БОЯ"

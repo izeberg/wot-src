@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import ResMgr, section2dict, typing
 from dict2model import models, schemas, fields, validate
 from story_mode_common.configs.sounds_schema import SoundModel, SoundSchema

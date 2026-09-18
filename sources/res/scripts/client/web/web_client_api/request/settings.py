@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import helpers
 from gui.limited_ui.lui_rules_storage import LUI_RULES
 from helpers import dependency

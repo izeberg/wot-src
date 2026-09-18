@@ -21,6 +21,7 @@ from .auxiliary_rocket_launcher_widget import AuxiliaryRocketLauncherWidget
 from .shell_params_switcher_widget import ShellParamsSwitcherWidget
 from .autoreloader_surge_widget import AutoreloaderSurgeMechanicWidget
 from .bustle_feed_widget import BustleFeedMechanicWidget
+from .spec_boost_mode_widget import SpecBoostModeWidget
 __all__ = ('ChargeShotMechanicWidget', 'ChargeableBurstMechanicWidget', 'ConcentrationMechanicWidget',
            'PowerModeMechanicWidget', 'PillboxSiegeMechanicWidget', 'StanceDanceFightMechanicWidget',
            'StanceDanceTurboMechanicWidget', 'StationaryReloadingMechanicWidget',
@@ -28,4 +29,4 @@ __all__ = ('ChargeShotMechanicWidget', 'ChargeableBurstMechanicWidget', 'Concent
            'TemperatureHeatingZonesGunWidget', 'LowChargeShotMechanicWidget', 'StagedJetBoostersMechanicWidget',
            'PropellantGunMechanicWidget', 'WheeledDashMechanicWidget', 'AuxiliaryRocketLauncherWidget',
            'ShellParamsSwitcherWidget', 'ShellCalibrationMechanicWidget', 'AutoreloaderSurgeMechanicWidget',
-           'BustleFeedMechanicWidget', 'SightPointerMechanicWidget')
+           'BustleFeedMechanicWidget', 'SightPointerMechanicWidget', 'SpecBoostModeWidget')

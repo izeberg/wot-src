@@ -10,24 +10,24 @@
 	<postProgressionTree>Ch71_WZ_219</postProgressionTree>
 	<customRoleSlotOptions>2 4</customRoleSlotOptions>
 	<speedLimits>
-		<forward>10</forward>
-		<backward>10</backward>
+		<forward>70</forward>
+		<backward>23</backward>
 	</speedLimits>
 	<invisibility>
 		<moving>
-			0.01
+			0.288
 			<!--BW_String-->
 		</moving>
 		<still>
-			0.01
+			0.288
 			<!--BW_String-->
 		</still>
 		<camouflageBonus>
-			0.0
+			0.03
 			<!--BW_String-->
 		</camouflageBonus>
 		<firePenalty>
-			0.1
+			0.432
 			<!--BW_String-->
 		</firePenalty>
 	</invisibility>
@@ -86,17 +86,17 @@
 	</camouflage>
 	<hull>
 		<armor>
-			<armor_1>10</armor_1>
-			<armor_2>10</armor_2>
-			<armor_3>10</armor_3>
-			<armor_4>10</armor_4>
-			<armor_5>10</armor_5>
-			<armor_6>10</armor_6>
+			<armor_1>80</armor_1>
+			<armor_2>40</armor_2>
+			<armor_3>30</armor_3>
+			<armor_4>20</armor_4>
+			<armor_5>20</armor_5>
+			<armor_6>15</armor_6>
 			<armor_7>10</armor_7>
-			<armor_8>10</armor_8>
-			<armor_9>10</armor_9>
-			<armor_10>10</armor_10>
-			<armor_11>10</armor_11>
+			<armor_8>0</armor_8>
+			<armor_9>20</armor_9>
+			<armor_10>15</armor_10>
+			<armor_11>20</armor_11>
 			<armor_12>
 				10
 				<vehicleDamageFactor>0</vehicleDamageFactor>
@@ -106,16 +106,16 @@
 				<vehicleDamageFactor>0</vehicleDamageFactor>
 			</armor_13>
 			<armor_14>10</armor_14>
-			<armor_15>10</armor_15>
+			<armor_15>15</armor_15>
 			<armor_17>
-				10
+				5
 				<vehicleDamageFactor>0</vehicleDamageFactor>
 			</armor_17>
-			<armor_16>10</armor_16>
+			<armor_16>30</armor_16>
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
-		<weight>9400</weight>
-		<maxHealth>10</maxHealth>
+		<weight>12350</weight>
+		<maxHealth>1520</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>270</maxHealth>
 			<maxRegenHealth>203</maxRegenHealth>
@@ -996,17 +996,17 @@
 			<price>100000</price>
 			<notInShop>true</notInShop>
 			<armor>
-				<leftTrack>10</leftTrack>
-				<rightTrack>10</rightTrack>
+				<leftTrack>15</leftTrack>
+				<rightTrack>15</rightTrack>
 			</armor>
-			<weight>100</weight>
+			<weight>8750</weight>
 			<terrainResistance>
 				0.7 0.8 1.6
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>32000</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>10</rotationSpeed>
+			<rotationSpeed>45</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.12
@@ -2530,7 +2530,7 @@
 				</right>
 			</physicalTracks>
 			<repairTime>
-				0.649999976
+				4.56140327
 				<!--BW_String-->
 			</repairTime>
 		</Chassis_Ch71_WZ_219>
@@ -2544,69 +2544,66 @@
 			<notInShop>true</notInShop>
 			<armor>
 				<armor_1>
-					10
+					200
 					<tags>gunMask</tags>
 				</armor_1>
 				<armor_2>
-					10
+					120
 					<tags>gunMask</tags>
 				</armor_2>
-				<armor_3>10</armor_3>
-				<armor_4>10</armor_4>
-				<armor_5>10</armor_5>
-				<armor_6>10</armor_6>
-				<armor_7>10</armor_7>
-				<armor_8>10</armor_8>
-				<armor_9>10</armor_9>
-				<armor_10>10</armor_10>
-				<armor_11>10</armor_11>
-				<armor_12>10</armor_12>
-				<armor_13>10</armor_13>
-				<armor_14>10</armor_14>
-				<armor_15>10</armor_15>
-				<armor_16>10</armor_16>
-				<armor_17>10</armor_17>
-				<armor_18>10</armor_18>
-				<armor_19>10</armor_19>
-				<armor_20>10</armor_20>
-				<armor_21>10</armor_21>
-				<armor_22>10</armor_22>
-				<armor_23>10</armor_23>
+				<armor_3>60</armor_3>
+				<armor_4>30</armor_4>
+				<armor_5>30</armor_5>
+				<armor_6>15</armor_6>
+				<armor_7>230</armor_7>
+				<armor_8>0</armor_8>
+				<armor_9>100</armor_9>
+				<armor_10>140</armor_10>
+				<armor_11>100</armor_11>
+				<armor_12>45</armor_12>
+				<armor_13>135</armor_13>
+				<armor_14>170</armor_14>
+				<armor_15>130</armor_15>
+				<armor_16>120</armor_16>
+				<armor_17>70</armor_17>
+				<armor_18>40</armor_18>
+				<armor_19>200</armor_19>
+				<armor_20>200</armor_20>
+				<armor_21>30</armor_21>
+				<armor_22>30</armor_22>
+				<armor_23>120</armor_23>
 				<armor_24>
-					10
+					90
 					<tags>gunMask</tags>
 				</armor_24>
-				<armor_25>10</armor_25>
-				<armor_26>10</armor_26>
-				<armor_27>10</armor_27>
+				<armor_25>190</armor_25>
+				<armor_26>140</armor_26>
+				<armor_27>120</armor_27>
 				<armor_28>
-					10
+					200
 					<tags>gunMask</tags>
 				</armor_28>
 				<armor_29>
-					10
+					60
 					<tags>gunMask</tags>
 				</armor_29>
 				<armor_30>
-					10
+					30
 					<tags>gunMask</tags>
 				</armor_30>
-				<armor_31>10</armor_31>
-				<armor_32>10</armor_32>
+				<armor_31>210</armor_31>
+				<armor_32>170</armor_32>
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
-			<weight>100</weight>
-			<maxHealth>10</maxHealth>
-			<rotationSpeed>
-				0.96
-				<!--BW_String-->
-			</rotationSpeed>
+			<weight>7000</weight>
+			<maxHealth>380</maxHealth>
+			<rotationSpeed>43</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>200</maxHealth>
 				<maxRegenHealth>100</maxRegenHealth>
 				<repairCost>11</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>100</circularVisionRadius>
+			<circularVisionRadius>410</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>130</maxHealth>
 				<maxRegenHealth>65</maxRegenHealth>
@@ -2617,21 +2614,18 @@
 					shared
 					<maxAmmo>40</maxAmmo>
 					<armor>
-						<gun>10</gun>
+						<gun>40</gun>
 					</armor>
 					<turretYawLimits>-180 180</turretYawLimits>
 					<pitchLimits>
-						<minPitch>
-							0.0 -10 1.0 -10
-							<!--BW_String-->
-						</minPitch>
+						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
-							0.0 10 1.0 10
+							0 6 0.375 6 0.40833 0 0.59167 0 0.625 6 1 6
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
 					<aimingTime>
-						10.43
+						1.8
 						<!--BW_String-->
 					</aimingTime>
 					<shotDispersionFactors>
@@ -2649,15 +2643,15 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<shotDispersionRadius>
-						1.04
+						0.39
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						62.58
+						9.2
 						<!--BW_String-->
 					</reloadTime>
 					<invisibilityFactorAtShot>
-						0.1
+						0.19
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<models>
@@ -2774,22 +2768,6 @@
 						<density>234.913696 240.267319</density>
 						<aoTextureSize>1024 512</aoTextureSize>
 					</camouflage>
-					<rotationSpeed>
-						0.96
-						<!--BW_String-->
-					</rotationSpeed>
-					<weight>100</weight>
-					<shots>
-						<_115mm_Tuo_chuan_115G>
-							<piercingPower>100</piercingPower>
-						</_115mm_Tuo_chuan_115G>
-						<_115mm_Po_115G>
-							<piercingPower>100</piercingPower>
-						</_115mm_Po_115G>
-						<_115mm_Sha_bao_115G>
-							<piercingPower>100</piercingPower>
-						</_115mm_Sha_bao_115G>
-					</shots>
 				</_115mm_69_115T>
 			</guns>
 			<models>
@@ -3139,8 +3117,8 @@
 		<detailed>
 			<engines>
 				<_12150ZL>
-					<smplEnginePower>10</smplEnginePower>
-					<smplFwMaxSpeed>10</smplFwMaxSpeed>
+					<smplEnginePower>1280</smplEnginePower>
+					<smplFwMaxSpeed>70</smplFwMaxSpeed>
 				</_12150ZL>
 			</engines>
 			<chassis>
@@ -3172,84 +3150,144 @@
 	</physics>
 	<mechanics>
 		<sightPointer>
-			<initialDeployTime>1000</initialDeployTime>
-			<reloadTime>1000</reloadTime>
-			<activeStages>1</activeStages>
+			<initialDeployTime>
+				40.
+				<!--BW_String-->
+			</initialDeployTime>
+			<reloadTime>
+				40.
+				<!--BW_String-->
+			</reloadTime>
+			<activeStages>5</activeStages>
 			<selfReveal>true</selfReveal>
-			<selfRevealVisionTime>1000</selfRevealVisionTime>
+			<selfRevealVisionTime>
+				6.
+				<!--BW_String-->
+			</selfRevealVisionTime>
 			<sightPointerStages>
 				<stage>
 					<id>0</id>
-					<duration>1000</duration>
-					<angle>1</angle>
+					<duration>
+						1.
+						<!--BW_String-->
+					</duration>
+					<angle>15</angle>
 					<vision_modifiers>
 						<mul>
 							<name>dynAttrs/inConeVision/circularVisionRadiusFactor</name>
-							<value>1</value>
+							<value>
+								1.010
+								<!--BW_String-->
+							</value>
 						</mul>
 						<mul>
 							<name>dynAttrs/inConeVision/demaskFoliageFactor</name>
-							<value>1</value>
+							<value>
+								0.990
+								<!--BW_String-->
+							</value>
 						</mul>
 						<mul>
 							<name>dynAttrs/inConeVision/demaskMovingFactor</name>
-							<value>1</value>
+							<value>
+								0.990
+								<!--BW_String-->
+							</value>
 						</mul>
 					</vision_modifiers>
 					<vehicle_modifiers>
 						<mul>
 							<name>dynAttrs/turret/rotationSpeed</name>
-							<value>1</value>
+							<value>
+								0.5
+								<!--BW_String-->
+							</value>
 						</mul>
 					</vehicle_modifiers>
 				</stage>
 				<stage>
 					<id>1</id>
-					<duration>1000</duration>
-					<angle>1</angle>
+					<duration>
+						1.
+						<!--BW_String-->
+					</duration>
+					<angle>
+						12.4
+						<!--BW_String-->
+					</angle>
 					<vision_modifiers>
 						<mul>
 							<name>dynAttrs/inConeVision/circularVisionRadiusFactor</name>
-							<value>1</value>
+							<value>
+								1.020
+								<!--BW_String-->
+							</value>
 						</mul>
 						<mul>
 							<name>dynAttrs/inConeVision/demaskFoliageFactor</name>
-							<value>1</value>
+							<value>
+								0.980
+								<!--BW_String-->
+							</value>
 						</mul>
 						<mul>
 							<name>dynAttrs/inConeVision/demaskMovingFactor</name>
-							<value>1</value>
+							<value>
+								0.980
+								<!--BW_String-->
+							</value>
 						</mul>
 					</vision_modifiers>
 					<vehicle_modifiers>
 						<mul>
 							<name>dynAttrs/turret/rotationSpeed</name>
-							<value>1</value>
+							<value>
+								0.5
+								<!--BW_String-->
+							</value>
 						</mul>
 					</vehicle_modifiers>
 				</stage>
 				<stage>
 					<id>2</id>
-					<duration>1000</duration>
-					<angle>1</angle>
+					<duration>
+						1.
+						<!--BW_String-->
+					</duration>
+					<angle>
+						10.4
+						<!--BW_String-->
+					</angle>
 					<vision_modifiers>
 						<mul>
 							<name>dynAttrs/inConeVision/circularVisionRadiusFactor</name>
-							<value>1</value>
+							<value>
+								1.220
+								<!--BW_String-->
+							</value>
 						</mul>
 						<mul>
 							<name>dynAttrs/inConeVision/demaskFoliageFactor</name>
-							<value>1</value>
+							<value>
+								0.700
+								<!--BW_String-->
+							</value>
 						</mul>
 						<mul>
 							<name>dynAttrs/inConeVision/demaskMovingFactor</name>
-							<value>1</value>
+							<value>
+								0.885
+								<!--BW_String-->
+							</value>
 						</mul>
 					</vision_modifiers>
 					<vehicle_modifiers>
 						<mul>
 							<name>dynAttrs/turret/rotationSpeed</name>
-							<value>1</value>
+							<value>
+								0.5
+								<!--BW_String-->
+							</value>
 						</mul>
 					</vehicle_modifiers>
 				</stage>
@@ -3430,7 +3468,7 @@
 	</mechanics>
 	<clientAdjustmentFactors>
 		<armour>
-			1.0
+			1.05
 			<!--BW_String-->
 		</armour>
 	</clientAdjustmentFactors>

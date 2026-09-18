@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from comp7_core.gui.Scaleform.daapi.view.battle.markers2d import plugins
 from gui.Scaleform.daapi.view.battle.shared.markers2d.manager import MarkersManager
 from gui.Scaleform.daapi.view.battle.shared.points_of_interest import markers2d as poi_plugins

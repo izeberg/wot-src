@@ -15,6 +15,8 @@ package net.wg.gui.components.ribbon.constants
       
       public static const PURPLE:String = "purple";
       
+      public static const BLUE:String = "blue";
+      
       public static const PERK:String = "perk";
       
       public static const WEATHER_ZONE:String = "weatherZone";

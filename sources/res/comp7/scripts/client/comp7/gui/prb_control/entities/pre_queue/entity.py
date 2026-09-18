@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld, typing
 from CurrentVehicle import g_currentVehicle
 from comp7.gui.comp7_constants import FUNCTIONAL_FLAG, PREBATTLE_ACTION_NAME

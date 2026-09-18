@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/czech/Cz41_Petra/crash/lod1/Turret_01</nodefullVisual>
+	<parent>vehicles/czech/Cz41_Petra/crash/lod2/Turret_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.442985 -0.036938 -1.842678</min>
+		<max>1.754874 1.510923 1.608902</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

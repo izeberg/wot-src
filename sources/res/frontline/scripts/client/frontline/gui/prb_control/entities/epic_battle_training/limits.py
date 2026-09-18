@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from future.utils import viewvalues
 from CurrentVehicle import g_currentVehicle
 from constants import PREBATTLE_ACCOUNT_STATE, PREBATTLE_TYPE
 from gui.Scaleform.daapi.view.lobby.epicBattle.epic_helpers import isVehLevelUnlockableInBattle
@@ -23,7 +25,7 @@ class ObserverInTeamIsValid(AbstractTeamIsValid):
     def __isAllObservers(cls, accountsInfo):
         if not accountsInfo:
             return False
-        for accInfo in accountsInfo.itervalues():
+        for accInfo in viewvalues(accountsInfo):
             if not accInfo['state'] & PREBATTLE_ACCOUNT_STATE.READY:
                 continue
             if 'vehTypeCompDescr' not in accInfo or 'vehLevel' not in accInfo:

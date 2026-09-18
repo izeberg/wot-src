@@ -1,9 +1,11 @@
+from __future__ import absolute_import
 import logging, typing
+from future.utils import viewitems
+import BigWorld
 from uilogging.base.logger import _BaseLogger as Logger, createPartnerID
 from uilogging.constants import DEFAULT_LOGGER_NAME
 from uilogging.performance.hangar.constants import Features, Groups, LogActions
 from uilogging.helpers import getClientSessionID
-import BigWorld
 from wotdecorators import noexcept
 if typing.TYPE_CHECKING:
     from uilogging.types import GroupType, PartnerIdType
@@ -79,5 +81,5 @@ class HangarMetricsLogger(object):
             return
         partnerID = createPartnerID()
         clientSessionID = getClientSessionID()
-        for group, stats in data.iteritems():
+        for group, stats in viewitems(data):
             self._loggers[group].log(stats, partnerID=partnerID, sessionID=clientSessionID)

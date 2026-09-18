@@ -16,6 +16,7 @@ package
    import net.wg.infrastructure.managers.IGraphicsOptimizationManager;
    import net.wg.infrastructure.managers.IImageManager;
    import net.wg.infrastructure.managers.IPopoverManager;
+   import net.wg.infrastructure.managers.ISharedLayoutManager;
    import net.wg.infrastructure.managers.ISoundManager;
    import net.wg.infrastructure.managers.IStageSizeManager;
    import net.wg.infrastructure.managers.ITooltipMgr;
@@ -54,6 +55,7 @@ package
       {
          if(ms_instance == null)
          {
+            CoreApp.instance = param1;
             ms_instance = param1;
          }
          else
@@ -180,6 +182,11 @@ package
       public static function get stageSizeMgr() : IStageSizeManager
       {
          return instance.stageSizeMgr;
+      }
+      
+      public static function get sharedLayoutMgr() : ISharedLayoutManager
+      {
+         return CoreApp.sharedLayoutMgr;
       }
       
       public static function get appWidth() : Number

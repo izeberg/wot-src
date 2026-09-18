@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld, Math
 from PlayerEvents import g_playerEvents
 from Account import PlayerAccount
@@ -14,7 +15,7 @@ class EdgeDetectColorController(object):
     settingsCore = dependency.descriptor(ISettingsCore)
 
     def __init__(self, dataSec):
-        self.__colors = {'common': dict(), 'colorBlind': dict()}
+        self.__colors = {'common': {}, 'colorBlind': {}}
         self.__readColors(self.__colors, 'common', dataSec)
         self.__readColors(self.__colors, 'colorBlind', dataSec)
 
@@ -70,6 +71,6 @@ class EdgeDetectColorController(object):
             BigWorld.wgSetEdgeDetectEdgeColor(i, c)
             i += 1
 
-        for target, idx in _OVERLAY_TARGET_INDEXES.iteritems():
+        for target, idx in _OVERLAY_TARGET_INDEXES.items():
             BigWorld.wgSetEdgeDetectSolidColors(idx, *colors['overlaySolidColors'][target]['packed'])
             BigWorld.wgSetEdgeDetectPatternColors(idx, *colors['overlayPatternColors'][target]['packed'])

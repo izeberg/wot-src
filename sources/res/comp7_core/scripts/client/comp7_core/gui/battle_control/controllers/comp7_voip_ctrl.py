@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, BigWorld, Keys, typing, CommandMapping, SoundGroups, VOIP
 from account_helpers import AccountSettings
 from account_helpers.AccountSettings import COMP7_IS_VOIP_IN_BATTLE_ACTIVATED

@@ -1,3 +1,4 @@
+from __future__ import absolute_import, division
 import BigWorld
 from chat_commands_consts import INVALID_TARGET_ID
 from gui.Scaleform.daapi.view.battle.shared.component_marker.markers_components import MinimapMarkerComponent

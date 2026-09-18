@@ -4,6 +4,7 @@ package net.wg.gui.lobby.fortifications.popovers
    import net.wg.gui.components.controls.events.RendererEvent;
    import net.wg.gui.components.popovers.interfaces.IVehicleSelectPopoverVO;
    import net.wg.gui.interfaces.ISoundButtonEx;
+   import net.wg.gui.lobby.fortifications.cmp.events.FortVehicleSelectorFilterEvent;
    import net.wg.gui.lobby.fortifications.cmp.selector.FortVehicleSelector;
    import net.wg.gui.lobby.fortifications.data.popover.FortVehicleSelectPopoverVO;
    import net.wg.infrastructure.base.meta.IFortVehicleSelectPopoverMeta;
@@ -36,6 +37,7 @@ package net.wg.gui.lobby.fortifications.popovers
       {
          super.configUI();
          selector.addEventListener(RendererEvent.ITEM_CLICK,this.onVehicleTypeItemClickHandler);
+         selector.addEventListener(FortVehicleSelectorFilterEvent.FORT_FILTER_CHANGE,this.onSelectorFortFiltersChangedHandler);
       }
       
       override protected function configAddButton() : void
@@ -78,6 +80,7 @@ package net.wg.gui.lobby.fortifications.popovers
       override protected function onDispose() : void
       {
          selector.removeEventListener(RendererEvent.ITEM_CLICK,this.onVehicleTypeItemClickHandler);
+         selector.removeEventListener(FortVehicleSelectorFilterEvent.FORT_FILTER_CHANGE,this.onSelectorFortFiltersChangedHandler);
          super.onDispose();
       }
       
@@ -99,6 +102,11 @@ package net.wg.gui.lobby.fortifications.popovers
             }
          }
          param1.stopPropagation();
+      }
+      
+      private function onSelectorFortFiltersChangedHandler(param1:FortVehicleSelectorFilterEvent) : void
+      {
+         onFrozenChangeS(param1.isHideFrozen);
       }
    }
 }

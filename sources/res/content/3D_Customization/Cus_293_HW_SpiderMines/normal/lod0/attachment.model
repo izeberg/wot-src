@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_293_HW_SpiderMines/normal/lod1/attachment</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.467102 -0.000044 -0.707909</min>
+		<max>0.047941 0.396560 0.707909</max>
+	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/Cus_293_HW_SpiderMines/normal/lod0/attachment</nodefullVisual>
+</root>

@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from future.utils import viewitems
 from constants import PLAYER_RANK
 from frameworks.wulf import ViewFlags, ViewSettings, WindowFlags, WindowLayer
 from frontline.gui.frontline_skill_packer import packBaseSkills
@@ -55,7 +57,7 @@ class InfoView(ViewImpl):
             ranksInfo = self.__epicController.getPlayerRanksWithBonusInfo()
             ranks = vm.getRanksWithPoints()
             ranks.clear()
-            for rankLvl, (points, xpBonus, effectivenessBonus) in sorted(ranksInfo.iteritems()):
+            for rankLvl, (points, xpBonus, effectivenessBonus) in sorted(viewitems(ranksInfo)):
                 rankItem = RankItemModel()
                 rankItem.setRankName(PLAYER_RANK.NAMES[rankLvl])
                 rankItemPoints = rankItem.getRankPoints()

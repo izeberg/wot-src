@@ -1,6 +1,8 @@
-import logging
+from __future__ import absolute_import
+import logging, typing
 from functools import partial
-import typing, BigWorld, AccountCommands
+from future.utils import iteritems
+import BigWorld, AccountCommands
 from Event import Event
 from account_helpers.AccountSyncData import AccountSyncData
 from dog_tags_common.components_config import componentConfigAdapter
@@ -88,7 +90,7 @@ class DogTags(object):
 
     def getUnseenCoupledComps(self):
         allComponents = componentConfigAdapter.getAllComponents()
-        coupledComps = {compId for compId, comp in allComponents.iteritems() if comp.coupledComponentId is not None if comp.coupledComponentId is not None}
+        coupledComps = {compId for compId, comp in iteritems(allComponents) if comp.coupledComponentId is not None if comp.coupledComponentId is not None}
         allUnlockedComps = self.getUnlockedComps()
         unlockedCoupledComps = coupledComps.intersection(allUnlockedComps)
         seenComps = userSettings.getDogTagsSettings().seenComps

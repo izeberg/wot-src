@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld, Math
 from constants import VEHICLE_SIEGE_STATE
 from vehicle_systems.tankStructure import TankNodeNames

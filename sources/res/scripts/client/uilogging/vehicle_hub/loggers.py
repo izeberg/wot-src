@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from uilogging.base.logger import MetricsLogger, createPartnerID
 from uilogging.vehicle_hub.constants import LogActions, Features, Tabs, TIME_LIMIT

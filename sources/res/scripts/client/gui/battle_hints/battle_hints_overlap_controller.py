@@ -76,6 +76,11 @@ class BattleHintsOverlapController(IBattleHintsOverlapController):
         if scopeSettings is None:
             return
         else:
+            if battleHint.model.props.skipOverlay:
+                viewsToShow = scopeSettings.intersection(self._hiddenViews)
+                page.setComponentsVisibilityWithFade(visible=viewsToShow)
+                self._hiddenViews = self._hiddenViews.difference(viewsToShow)
+                return
             viewsToHide = scopeSettings.difference(self._hiddenViews)
             if page and viewsToHide:
                 self._hiddenViews.update(viewsToHide)

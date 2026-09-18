@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BattleReplay, BigWorld
 from comp7_core_constants import ArenaPrebattlePhase
 from comp7_core.gui.Scaleform.daapi.view.meta.Comp7PrebattleTimerMeta import Comp7PrebattleTimerMeta
@@ -12,6 +13,7 @@ from gui.shared import g_eventBus, EVENT_BUS_SCOPE
 from gui.shared.events import GameEvent
 from gui.shared.utils.functions import makeTooltip
 from helpers import dependency, i18n
+from math_common import round_py2_style_int
 from skeletons.gui.battle_session import IBattleSessionProvider
 
 class Comp7PrebattleTimer(Comp7PrebattleTimerMeta):
@@ -169,7 +171,7 @@ class Comp7PrebattleTimer(Comp7PrebattleTimerMeta):
             elif banPhase == ArenaPrebattlePhase.PREPICK:
                 header = backport.text(self.__RES_ROOT.prepick.header())
                 info = backport.text(self.__RES_ROOT.prepick.additionalInfo())
-                timeLeft = round(vehicleBanCtrl.vehiclePrepickEndTime - BigWorld.serverTime())
+                timeLeft = round_py2_style_int(vehicleBanCtrl.vehiclePrepickEndTime - BigWorld.serverTime())
             elif banPhase == ArenaPrebattlePhase.VOTING:
                 header = backport.text(self.__RES_ROOT.ban.header())
                 info = backport.text(self.__RES_ROOT.ban.additionalInfo())

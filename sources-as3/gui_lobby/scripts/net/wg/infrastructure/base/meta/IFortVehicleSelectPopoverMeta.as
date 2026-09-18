@@ -7,5 +7,7 @@ package net.wg.infrastructure.base.meta
        
       
       function onFilterChangeS(param1:int, param2:Boolean) : void;
+      
+      function onFrozenChangeS(param1:Boolean) : void;
    }
 }

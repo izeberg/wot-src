@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, typing, ArenaType
 from chat_shared import SYS_MESSAGE_TYPE
 from comp7.gui.impl.lobby.comp7_helpers.comp7_quest_helpers import isComp7VisibleQuest, getComp7QuestType, parseComp7RanksQuestID, getRequiredTokensCountToComplete
@@ -67,7 +68,7 @@ class Comp7QuestRewardHandler(MultiTypeServiceChannelHandler):
         periodicQuests = []
         isQualification = False
         if not self.__completedQuestIDs:
-            return (ranksQuests, tokensQuests, periodicQuests)
+            return (ranksQuests, tokensQuests, periodicQuests, isQualification)
         else:
             allQuests = self.eventsCache.getAllQuests(lambda q: isComp7VisibleQuest(q.getID()))
             actualSeasonNumber = self.__comp7Ctrl.getActualSeasonNumber()

@@ -1,6 +1,6 @@
-import calendar
+from __future__ import absolute_import
+import calendar, json, time
 from datetime import datetime
-import json, time
 from debug_utils import LOG_CURRENT_EXCEPTION
 from messenger.proto.xmpp.extensions import PyExtension, PyHandler, PyQuery
 from messenger.proto.xmpp.extensions.dataform import DataForm, Field

@@ -396,6 +396,7 @@
 			<module>script::ClientBattleRoyaleAbilitiesModule</module>
 			<module>script::ClientBattleRoyaleSteelHunterModule</module>
 			<module>script::DeathZonesModule</module>
+			<module>BW::CGF::CGFBWCompatibilityModule</module>
 		</common>
 	</modules>
 </root>

@@ -1,3 +1,4 @@
+from __future__ import absolute_import, division
 from datetime import datetime
 from comp7.gui.Scaleform.daapi.view.lobby.tooltips.comp7_calendar_day_tooltip import Comp7CalendarDayTooltip
 from comp7.gui.comp7_constants import SELECTOR_BATTLE_TYPES

@@ -1,0 +1,5 @@
+from __future__ import absolute_import
+from BaseAccountExtensionComponent import BaseAccountExtensionComponent
+
+class FortRushAccountComponent(BaseAccountExtensionComponent):
+    pass

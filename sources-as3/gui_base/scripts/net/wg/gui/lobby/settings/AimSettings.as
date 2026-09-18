@@ -191,7 +191,6 @@ package net.wg.gui.lobby.settings
       
       override protected function onDispose() : void
       {
-         bg = null;
          this._aimData = null;
          this._dynamicCursorsData = null;
          this._cursorTabsDataProvider = null;

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from constants import IS_CHINA
 from account_helpers.settings_core.ServerSettingsManager import SETTINGS_SECTIONS
 from account_helpers.settings_core.settings_constants import CONTACTS
@@ -8,7 +9,7 @@ _isClosed = False
 
 def isShown--- This code section failed: ---
 
- L.  19         0  LOAD_GLOBAL           0  'IS_CHINA'
+ L.  21         0  LOAD_GLOBAL           0  'IS_CHINA'
                 3  POP_JUMP_IF_TRUE     26  'to 26'
                 6  LOAD_GLOBAL           1  '_getCounter'
                 9  CALL_FUNCTION_0       0  None

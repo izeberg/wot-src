@@ -85,9 +85,9 @@ class VehicleArtefact(FittingItem):
         return False
 
     def getShopIcon(self, size=STORE_CONSTANTS.ICON_SIZE_MEDIUM):
-        resID = R.images.gui.maps.shop.artefacts.num(size).dyn(replaceHyphenToUnderscore(self.descriptor.iconName))()
-        if resID != -1:
-            return backport.image(resID)
+        res = R.images.gui.maps.shop.artefacts.num(size).dyn(replaceHyphenToUnderscore(self.descriptor.iconName))
+        if res.exists():
+            return backport.image(res())
         return ''
 
     def getVehicleLevelRange(self):

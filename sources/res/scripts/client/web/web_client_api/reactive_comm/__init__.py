@@ -1,3 +1,6 @@
+from __future__ import absolute_import
+from future.utils import listvalues
+from past.builtins import basestring
 import adisp, wg_async
 from gui.game_control.reactive_comm import Subscription, SubscriptionClientStatus, SubscriptionServerStatus
 from helpers import dependency
@@ -54,7 +57,7 @@ class ReactiveCommunicationWebApi(object):
 
     def _finiSubscriptionsHandler(self):
         self.__service.onSubscriptionClosed -= self.__onSubscriptionClosed
-        for subscription in self.__subscriptions.values():
+        for subscription in listvalues(self.__subscriptions):
             self.__service.unsubscribeFromChannel(subscription)
 
         self.__subscriptions.clear()

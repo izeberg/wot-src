@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from helpers.tutorial.stubs import StubTutorialLoader
 from skeletons.tutorial import ITutorialLoader
 

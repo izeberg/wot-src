@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from random import uniform
 import BigWorld
 from constants import ARENA_PERIOD
@@ -19,7 +20,8 @@ class EngineLoad(object):
     _HIGH = 3
 
 
-_StateConvertor = {'destroyed': EngineState.DESTROYED, 'critical': EngineState.CRITICAL, 
+_StateConvertor = {'destroyed': EngineState.DESTROYED, 
+   'critical': EngineState.CRITICAL, 
    'repaired': EngineState.REPAIRED, 
    'normal': EngineState.NORMAL}
 
@@ -66,7 +68,14 @@ def _delayEngineStart(detailedEngineState, _=None, __=None):
     if arena.period == ARENA_PERIOD.BATTLE:
         detailedEngineState.startEngineWithDelay(0.1, False)
         return
-    maxTime = arena.periodEndTime - BigWorld.serverTime()
+    maxTime = _getTimeToBattleStart(arena)
     maxTime = maxTime * 0.7 if maxTime > 0.0 else 1.0
     startEnginesIn = uniform(0.0, maxTime)
     detailedEngineState.startEngineWithDelay(startEnginesIn, True)
+
+
+def _getTimeToBattleStart(arena):
+    serverTime = BigWorld.serverTime()
+    if serverTime <= 0.0:
+        return arena.periodLength
+    return min(arena.periodEndTime - serverTime, arena.periodLength)

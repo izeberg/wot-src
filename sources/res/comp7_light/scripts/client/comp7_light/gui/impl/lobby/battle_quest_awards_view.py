@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from future.utils import viewitems
 from comp7_light.gui.impl.gen.view_models.views.lobby.battle_quest_awards_model import BattleQuestAwardsModel, BattleStatus
 from comp7_light.gui.impl.lobby.comp7_light_helpers.comp7_light_packers import getComp7LightBonusPacker
 from comp7_light.gui.sounds_constants import GENERAL_SOUND_SPACE
@@ -73,7 +75,7 @@ class BattleQuestAwardsView(ViewImpl):
     @staticmethod
     def __awardsFactory(items, ctx=None):
         bonuses = []
-        for key, value in items.iteritems():
+        for key, value in viewitems(items):
             bonuses.extend(getNonQuestBonuses(key, value, ctx))
 
         return bonuses

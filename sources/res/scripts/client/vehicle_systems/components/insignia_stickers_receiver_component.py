@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import CGF, GenericComponents, GpuDecals, Math
 from VehicleStickers import Insignia
 from cgf_script.registration import ComponentProperty, registerComponent

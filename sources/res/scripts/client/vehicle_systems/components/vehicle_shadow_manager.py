@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld, CGF
 from aih_constants import CTRL_MODE_NAME
 from cgf_script.registration import registerComponent
@@ -28,10 +29,10 @@ class VehicleShadowManager(object):
     def changeCameraMode(self, cameraMode, currentVehicleId=None):
         vehicle = BigWorld.player().getVehicleAttached()
         self.__prevCameraMode = cameraMode
-        isValidMode = cameraMode == CTRL_MODE_NAME.VIDEO or cameraMode == CTRL_MODE_NAME.DEBUG
+        isValidMode = cameraMode in (CTRL_MODE_NAME.VIDEO, CTRL_MODE_NAME.DEBUG)
         if isValidMode:
             self.updatePlayerTarget(None)
-        elif not isValidMode and vehicle is not None and vehicle.appearance is not None:
+        elif vehicle is not None and vehicle.appearance is not None:
             self.updatePlayerTarget(vehicle.appearance.compoundModel)
         return
 

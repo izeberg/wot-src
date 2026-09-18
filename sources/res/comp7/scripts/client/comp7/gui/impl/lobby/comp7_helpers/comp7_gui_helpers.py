@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from account_helpers import AccountSettings
 from account_helpers.AccountSettings import GUI_START_BEHAVIOR, COMP7_UI_SECTION, COMP7_LAST_SEASON, COMP7_LAST_SEASON_WHERE_STATISTICS_SHOWN
 from comp7_common_const import seasonNameBySeasonNumber

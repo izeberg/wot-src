@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from helpers import dependency
 from skeletons.gui.game_control import IReferralProgramController
 from web.web_client_api import w2c, W2CSchema

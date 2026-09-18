@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing, AccountCommands
 if typing.TYPE_CHECKING:
     from typing import Callable, Optional

@@ -1,5 +1,7 @@
+from __future__ import absolute_import
+import typing, logging
 from collections import namedtuple
-import typing, logging, CGF, GenericComponents, GpuDecals, Vehicular, Compound
+import CGF, GenericComponents, GpuDecals, Vehicular, Compound
 from cgf_components.client_worlds_helpers import ClientWorld, getClientWorld
 from cgf_modules.variable_components import VariableStorageComponent
 from constants import IS_UE_EDITOR

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from constants import TOKEN_TYPE
 from gui.shared.utils.requesters import getTokenRequester
 from web.web_client_api import w2c, W2CSchema

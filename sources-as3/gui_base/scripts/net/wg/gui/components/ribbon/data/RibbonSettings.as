@@ -220,6 +220,7 @@ package net.wg.gui.components.ribbon.data
          BACKGROUNDS[RibbonColors.ORANGE] = new BackgroundAtlasNames(RibbonColors.ORANGE);
          BACKGROUNDS[RibbonColors.YELLOW] = new BackgroundAtlasNames(RibbonColors.YELLOW);
          BACKGROUNDS[_loc3_] = new BackgroundAtlasNames(_loc3_);
+         BACKGROUNDS[RibbonColors.BLUE] = new BackgroundAtlasNames(RibbonColors.BLUE);
          BACKGROUNDS[_loc5_] = new BackgroundAtlasNames(_loc5_);
          BACKGROUNDS[_loc6_] = new BackgroundAtlasNames(_loc6_);
          DAMAGE_SOURCE_MAP[DAMAGE_SOURCE_TYPES.LIGHT_TANK] = new DamageSourceSetting(BATTLEATLAS.WHITE_ICON_LIGHT_TANK16X16);
@@ -276,6 +277,7 @@ package net.wg.gui.components.ribbon.data
             TEXT_SETTINGS[RibbonColors.ORANGE] = new RibbonTextSettings(RibbonColors.ORANGE);
             TEXT_SETTINGS[RibbonColors.YELLOW] = new RibbonTextSettings(RibbonColors.YELLOW);
             TEXT_SETTINGS[RibbonColors.PURPLE] = new RibbonTextSettings(RibbonColors.PURPLE);
+            TEXT_SETTINGS[RibbonColors.BLUE] = new RibbonTextSettings(RibbonColors.BLUE);
             TEXT_SETTINGS[RibbonColors.PERK] = new RibbonTextSettings(RibbonColors.PERK);
             TEXT_SETTINGS[RibbonColors.WEATHER_ZONE] = new RibbonTextSettings(RibbonColors.WEATHER_ZONE);
             PADDINGS_X[WITH_NAME_WITH_TANKNAME_PADDINGS] = new PaddingSettings(-156,10,0,7,26);

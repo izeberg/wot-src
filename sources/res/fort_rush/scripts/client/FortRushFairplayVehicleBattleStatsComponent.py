@@ -1,0 +1,5 @@
+from __future__ import absolute_import
+from FairplayVehicleBattleStatsComponent import FairplayVehicleBattleStatsComponent
+
+class FortRushFairplayVehicleBattleStatsComponent(FairplayVehicleBattleStatsComponent):
+    pass

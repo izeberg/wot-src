@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from gui.Scaleform.daapi.view.lobby.shared.web_view import WebViewTransparent
 from story_mode.uilogging.story_mode.consts import LogWindows

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from account_helpers.AccountSettings import COMP7_LIGHT_CAROUSEL_FILTER_1, COMP7_LIGHT_CAROUSEL_FILTER_2
 from account_helpers.AccountSettings import COMP7_LIGHT_CAROUSEL_FILTER_CLIENT_1
 from comp7_core.gui.Scaleform.daapi.view.battle.battle_carousel import PrebattleTankCarousel

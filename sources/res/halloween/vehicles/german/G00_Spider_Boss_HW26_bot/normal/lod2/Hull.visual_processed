@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>nodes_01</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>HP_Fire_1</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 2.116142 -2.296000</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Fire_2</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 2.116142 -0.518000</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_LFront</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.768805 0.639483</row1>
+					<row2>0.000000 -0.639483 0.768805</row2>
+					<row3>-3.201865 0.068317 8.184072</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_LRear</identifier>
+				<transform>
+					<row0>-0.980856 0.193498 -0.021911</row0>
+					<row1>0.170896 0.801375 -0.573231</row1>
+					<row2>-0.093360 -0.566001 -0.819101</row2>
+					<row3>-3.201865 -0.439973 -7.024530</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_RFront</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.768805 0.639483</row1>
+					<row2>0.000000 -0.639483 0.768805</row2>
+					<row3>3.201865 0.068317 8.184072</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_RRear</identifier>
+				<transform>
+					<row0>-0.980856 0.193498 -0.021911</row0>
+					<row1>0.170896 0.801375 -0.573231</row1>
+					<row2>-0.093360 -0.566001 -0.819101</row2>
+					<row3>3.201865 -0.439973 -7.024530</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Track_Exhaus_1</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 -0.992714 -0.120497</row1>
+					<row2>0.000000 0.120497 -0.992714</row2>
+					<row3>-1.616810 1.575872 -7.882802</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Track_Exhaus_2</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 -0.992714 -0.120497</row1>
+					<row2>0.000000 0.120497 -0.992714</row2>
+					<row3>-0.828981 1.380883 -8.184382</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Track_Exhaus_3</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 -0.992714 -0.120497</row1>
+					<row2>0.000000 0.120497 -0.992714</row2>
+					<row3>-0.000001 1.362883 -8.226908</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Track_Exhaus_4</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 -0.992714 -0.120497</row1>
+					<row2>0.000000 0.120497 -0.992714</row2>
+					<row3>0.828981 1.380883 -8.184382</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Track_Exhaus_5</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 -0.992714 -0.120497</row1>
+					<row2>0.000000 0.120497 -0.992714</row2>
+					<row3>1.616810 1.575872 -7.882802</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_turretJoint</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 1.784700 0.000000</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_wp_09</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 -2.320000 -1.419000</row3>
+				</transform>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_hull_01</identifier>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						diffuseMap
+						<Texture>halloween/vehicles/german/G00_Spider_Boss_HW26_bot/Spider_Boss_HW26_bot_hull_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>halloween/vehicles/german/G00_Spider_Boss_HW26_bot/Spider_Boss_HW26_bot_hull_01_AO.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>halloween/vehicles/german/G00_Spider_Boss_HW26_bot/Spider_Boss_HW26_bot_hull_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>halloween/vehicles/german/G00_Spider_Boss_HW26_bot/Spider_Boss_HW26_bot_hull_01_ANM.dds</Texture>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>6.000000 6.000000 0.000000 0.000000</Vector4>
+					</property>
+				</material>
+				<groupOrigin>-0.002196 0.726161 -1.191887</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-6.019123 -1.386977 -8.307622</min>
+		<max>6.014730 2.839298 5.923849</max>
+	</boundingBox>
+	<geometrySize>35160</geometrySize>
+</root>

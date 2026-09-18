@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from comp7.gui.shared.tooltips import TOOLTIP_TYPE
 from gui.impl import backport
 from gui.impl.gen import R

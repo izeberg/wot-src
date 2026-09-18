@@ -127,6 +127,9 @@ msgstr "SR C45"
 msgid "C45_CFE_A"
 msgstr "SR C45"
 
+msgid "C45_FR"
+msgstr "SR C45"
+
 msgid "C45_c_7x7"
 msgstr "SR C45"
 
@@ -388,6 +391,9 @@ msgstr "Gabler’s Destroyer"
 msgid "Chassis_GB147_FV4025_Contriver"
 msgstr "FV4025 Contriver"
 
+msgid "Chassis_GB147_FV4025_Contriver_7x7"
+msgstr "FV4025 Contriver"
+
 msgid "Chassis_GB148_FV227_Conceiver"
 msgstr "FV227 Conceiver"
 
@@ -428,6 +434,9 @@ msgstr "FV214t"
 
 msgid "Chassis_GB158_Executor"
 msgstr "Executor"
+
+msgid "Chassis_GB159_FV4602_Victorious"
+msgstr "Victorious"
 
 msgid "Chassis_GB15_Stuart_I"
 msgstr "Stuart I"
@@ -696,6 +705,9 @@ msgstr "Centurion Action X"
 msgid "Chassis_GB86_Centurion_Action_X_CFE_A"
 msgstr "Triumphant"
 
+msgid "Chassis_GB86_Centurion_Action_X_FR"
+msgstr "Centurion Action X BS"
+
 msgid "Chassis_GB87_Chieftain_T95_turret"
 msgstr "Chieftain/T95"
 
@@ -760,7 +772,7 @@ msgstr ""
 "Continental\n"
 "AOI-1195-5A"
 
-msgid "Continental_W-670-9A"
+msgid "Continental_W_670_9A1"
 msgstr "Continental W-670-9A"
 
 msgid "Crysler_A57"
@@ -1599,17 +1611,18 @@ msgstr ""
 
 msgid "GB132_Taurus_CAT_long_special"
 msgstr ""
-"Taurus CAT — британская ПТ-САУ VIII уровня. Это первая британская машина с "
-"гидропневматической подвеской, а также первая самоходка этой нации с "
-"магазином заряжания вместо обычного циклического орудия. Она быстрая и "
-"манёвренная, что в совокупности со скорострельным барабаном позволяет "
-"действовать активнее и агрессивнее."
+"Taurus CAT — британская ПТ-САУ IX уровня с осадным режимом в шведском стиле "
+"и орудием с магазином заряжания. Ключевая особенность машины — гораздо более"
+" быстрая перезарядка барабана в походном режиме по сравнению с осадным. "
+"Орудие позволяет вести плотный огонь благодаря быстрой перезарядке между "
+"выстрелами, а наклонная лобовая броня способствует рикошетам и обеспечивает "
+"некоторую защиту."
 
 msgid "GB132_Taurus_CAT_short"
 msgstr "Taurus CAT"
 
 msgid "GB132_Taurus_CAT_short_special"
-msgstr "Магазин заряжания, гидропневматическая подвеска"
+msgstr "Гидропневматическая подвеска, магазин заряжания"
 
 msgid "GB133_Charioteer_MkVII"
 msgstr "Charioteer Nomad"
@@ -1912,6 +1925,34 @@ msgstr "Магазинная система заряжания, отличная
 msgid "GB147_FV4025_Contriver"
 msgstr "FV4025 Contriver"
 
+msgid "GB147_FV4025_Contriver_7x7"
+msgstr "FV4025 Contriver 7x7"
+
+msgid "GB147_FV4025_Contriver_7x7_descr"
+msgstr ""
+"В конце 1950-х – начале 1960-х годов в Великобритании активно велись работы "
+"по созданию двухорудийных танков береговой обороны. В процессе выяснилось, "
+"что из-за большой массы эти машины обладали очень высоким удельным "
+"давлением, которое требовалось существенно снизить. Так появилась идея танка"
+" с четырьмя гусеницами. В проектировании использовались данные разведки по "
+"Объекту 279, полученные в СССР, но концепция немного изменилась: внешние "
+"гусеницы стали легче внутренних, а подвеска была заменена на британскую, с "
+"вертикальными пружинами. Вся ходовая часть монтировалась на пространственной"
+" клёпанной раме из швеллеров, однако конструкция была настолько сложной, что"
+" проект закрыли ещё до начала строительства."
+
+msgid "GB147_FV4025_Contriver_7x7_long_special"
+msgstr ""
+"FV4025 Contriver — это хорошо сбалансированный тяжёлый танк без явных "
+"недостатков. Он способен подстроиться под большинство ситуаций в бою: от "
+"позиционных перестрелок с другими «тяжами» до сдерживания наступающих сил "
+"противника. Спаренная орудийная установка обеспечивает универсальность, "
+"позволяя с одинаковым успехом вести одиночный огонь или совершать "
+"разрушительные залпы."
+
+msgid "GB147_FV4025_Contriver_7x7_short"
+msgstr "Contriver 7x7"
+
 msgid "GB147_FV4025_Contriver_descr"
 msgstr ""
 "В конце 1950-х – начале 1960-х годов в Великобритании активно велись работы "
@@ -2158,6 +2199,32 @@ msgstr ""
 
 msgid "GB158_Executor_short"
 msgstr "Executor"
+
+msgid "GB159_FV4602_Victorious"
+msgstr "FV4602 Victorious"
+
+msgid "GB159_FV4602_Victorious_descr"
+msgstr ""
+"Во второй половине 1970-х годов британская компания Leyland предложила свой "
+"вариант перспективного танка на замену Chieftain. Основная ставка была "
+"сделана на мобильность и огневую мощь, однако машина оказалась слишком "
+"сложной и дорогой, поэтому военные не приняли проект, сделав выбор в пользу "
+"будущего Challenger."
+
+msgid "GB159_FV4602_Victorious_long_special"
+msgstr ""
+"FV4602 Victorious — британский тяжёлый танк X уровня. Его мощное орудие "
+"позволит справиться с любым противником, а надёжная лобовая броня способна "
+"выдержать даже самые мощные попадания. Кроме того, особая механика позволяет"
+" этой машине временно получать значительные бонусы к скорости, мобильности и"
+" стабилизации орудия."
+
+msgid "GB159_FV4602_Victorious_short"
+msgstr "Victorious"
+
+msgid "GB159_FV4602_Victorious_short_special"
+msgstr ""
+"Временное повышение мобильности и стабилизации орудия, высокий разовый урон"
 
 msgid "GB15_Stuart_I"
 msgstr "Stuart I-IV"
@@ -3013,6 +3080,19 @@ msgstr ""
 "\n"
 "Его героическое имя навсегда вписано в историю."
 
+msgid "GB86_Centurion_Action_X_FR"
+msgstr "Centurion Action X BS"
+
+msgid "GB86_Centurion_Action_X_FR_descr"
+msgstr ""
+"Башню Action X предполагалось использовать на более поздних модификациях "
+"танка Centurion. Один прототип был установлен на шасси танка Centurion Mark "
+"7, ещё один использовался для баллистических испытаний. Машины с башней "
+"Action X серийно не выпускались и не поступали на вооружение."
+
+msgid "GB86_Centurion_Action_X_FR_short"
+msgstr "Cent. AX BS"
+
 msgid "GB86_Centurion_Action_X_descr"
 msgstr ""
 "Башню Action X предполагалось использовать на танках Centurion более поздних"
@@ -3624,6 +3704,12 @@ msgstr "PRC 352"
 msgid "Parson_s_Turbine_No_2983"
 msgstr "Parson's Turbine No. 2983"
 
+msgid "Parson_s_Turbine_No_2983_7x7"
+msgstr "Parson's Turbine No. 2983"
+
+msgid "Parson_s_Turbine_No_2985"
+msgstr "Parson's Turbine No. 2985"
+
 msgid "Paxman_Ricardo"
 msgstr "Paxman 12TP"
 
@@ -3945,6 +4031,9 @@ msgstr "Rolls-Royce Meteor TTSC"
 msgid "Rolls_Royce_Meteor_with_twin_turbo_supercharges_CFE_A"
 msgstr "Rolls-Royce Meteor TTSC"
 
+msgid "Rolls_Royce_Meteor_with_twin_turbo_supercharges_FR"
+msgstr "Rolls-Royce Meteor TTSC"
+
 msgid "Rolls_Royce_Meteorite_202"
 msgstr "Rolls-Royce Meteorite Mk. 202"
 
@@ -4007,6 +4096,12 @@ msgstr "SR C42I"
 
 msgid "SR_C42O"
 msgstr "SR C42O"
+
+msgid "SR_C42O_7x7"
+msgstr "SR C42O"
+
+msgid "SR_C42V"
+msgstr "SR C42V"
 
 msgid "SR_C42_B"
 msgstr "SR C42 B"
@@ -4188,6 +4283,9 @@ msgstr "Gabler’s Destroyer"
 msgid "Turret_1_GB147_FV4025_Contriver"
 msgstr "FV4025 Contriver"
 
+msgid "Turret_1_GB147_FV4025_Contriver_7x7"
+msgstr "FV4025 Contriver"
+
 msgid "Turret_1_GB148_FV227_Conceiver"
 msgstr "FV227 Conceiver"
 
@@ -4217,6 +4315,9 @@ msgstr "FV214t"
 
 msgid "Turret_1_GB158_Executor"
 msgstr "Executor"
+
+msgid "Turret_1_GB159_FV4602_Victorious"
+msgstr "Victorious"
 
 msgid "Turret_1_GB15_Stuart_I"
 msgstr "Stuart I"
@@ -4370,6 +4471,9 @@ msgstr "Centurion Action X"
 
 msgid "Turret_1_GB86_Centurion_Action_X_CFE_A"
 msgstr "Triumphant"
+
+msgid "Turret_1_GB86_Centurion_Action_X_FR"
+msgstr "Centurion Action X BS"
 
 msgid "Turret_1_GB87_Chieftain_T95_turret"
 msgstr "Chieftain/T95"
@@ -4576,6 +4680,9 @@ msgstr "Twin 32-pdr Gun MBC Mk. 2"
 msgid "Twin_4_5_in_Gun_MBC"
 msgstr "Twin 4.5-in. Gun MBC"
 
+msgid "Twin_4_5_in_Gun_MBC_7x7"
+msgstr "Twin 4.5-in. Gun MBC"
+
 msgid "Twin_OQF_77mm_Gun_Mk_II"
 msgstr "Twin OQF 77 mm Gun Mk. II"
 
@@ -4688,6 +4795,9 @@ msgstr "APDS L-28 (5321)"
 msgid "_105mm_APDS_L_28_5321_CFE_A"
 msgstr "APDS L-28"
 
+msgid "_105mm_APDS_L_28_5321_FR"
+msgstr "APDS L-28 (5321)"
+
 msgid "_105mm_AP_EX20"
 msgstr "105 mm AP EX20"
 
@@ -4727,6 +4837,9 @@ msgstr "105 mm Gun L7A2"
 msgid "_105mm_Gun_L7_HEAT_CFE_A"
 msgstr "105 mm Gun L7A2"
 
+msgid "_105mm_Gun_L7_HEAT_FR"
+msgstr "105 mm Gun L7A2"
+
 msgid "_105mm_Gun_L7_HEAT_SH"
 msgstr "105 mm Gun L7A2"
 
@@ -4737,6 +4850,9 @@ msgid "_105mm_HEAT_L7"
 msgstr "US HEAT M456"
 
 msgid "_105mm_HEAT_L7_CFE_A"
+msgstr "US HEAT M456"
+
+msgid "_105mm_HEAT_L7_FR"
 msgstr "US HEAT M456"
 
 msgid "_105mm_HEAT_L7_SH"
@@ -4771,6 +4887,9 @@ msgstr "HESH L-35 (5321)"
 
 msgid "_105mm_HESH_L_35_5321_CFE_A"
 msgstr "HESH-T L-35"
+
+msgid "_105mm_HESH_L_35_5321_FR"
+msgstr "HESH L-35 (5321)"
 
 msgid "_105mm_HESH_L_37_4015"
 msgstr "HESH L-37 (4015)"
@@ -5110,6 +5229,18 @@ msgstr "Q.F. 13-Pr. Mk. III"
 
 msgid "_13pdr_HE"
 msgstr "HE Mk. III"
+
+msgid "_140_mm_L33A1"
+msgstr "140 mm L33A1"
+
+msgid "_140mm_APDS_Mk_2"
+msgstr "140 mm APDS Mk. 2"
+
+msgid "_140mm_AP_Mk_1"
+msgstr "140 mm AP Mk. 1"
+
+msgid "_140mm_HESH_Mk_1"
+msgstr "140 mm HESH Mk. 1"
 
 msgid "_150mm_AP_Mk_1"
 msgstr "6-inch S.A.P."
@@ -5783,10 +5914,19 @@ msgstr "QF HE Mk. IT"
 msgid "_4_5_in_APDS_MBC"
 msgstr "APDS MBC"
 
+msgid "_4_5_in_APDS_MBC_7x7"
+msgstr "APDS MBC"
+
 msgid "_4_5_in_AP_MBC"
 msgstr "AP MBC"
 
+msgid "_4_5_in_AP_MBC_7x7"
+msgstr "AP MBC"
+
 msgid "_4_5_in_HE_MBC"
+msgstr "HE MBC"
+
+msgid "_4_5_in_HE_MBC_7x7"
 msgstr "HE MBC"
 
 msgid "_4_5_in_HE_Mk_XIII"

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/sweden/S42_Strv_T_fm_53/normal/lod3/Turret_01</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/sweden/S42_Strv_T_fm_53/normal/lod4/Turret_01</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.249550 -0.050001 -1.733587</min>
+		<max>1.250432 1.008653 2.091195</max>
+	</visibilityBox>
+</root>

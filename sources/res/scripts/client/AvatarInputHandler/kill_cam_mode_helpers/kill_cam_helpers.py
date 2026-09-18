@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import Math
 from projectile_trajectory import computeProjectileTrajectoryWithEnd
 _SHELL_TRAJECTORY_EPSILON_CAMERA = 0.03

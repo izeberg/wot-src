@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<xmlns:xmlref>http://bwt/xmlref</xmlns:xmlref>
 	<ids>
 		<ID36S_6V_CA>0</ID36S_6V_CA>
 		<FIAT_604>1</FIAT_604>
@@ -605,7 +604,7 @@
 			<notInShop>true</notInShop>
 			<wwsoundPC>eng_mtu_mb_838_PC</wwsoundPC>
 			<wwsoundNPC>eng_mtu_mb_838_NPC</wwsoundNPC>
-			<power>750</power>
+			<power>700</power>
 			<weight>1800</weight>
 			<maxHealth>310</maxHealth>
 			<maxRegenHealth>155</maxRegenHealth>
@@ -614,8 +613,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>275</rpm_min>
-			<rpm_max>2375</rpm_max>
+			<rpm_min>300</rpm_min>
+			<rpm_max>2300</rpm_max>
 		</MTU_870_B>
 		<MTU_873>
 			<userString>#italy_vehicles:MTU_873</userString>
@@ -1077,8 +1076,8 @@
 			<notInShop>true</notInShop>
 			<wwsoundPC>eng_v55_pc</wwsoundPC>
 			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
-			<power>10</power>
-			<weight>100</weight>
+			<power>750</power>
+			<weight>1550</weight>
 			<maxHealth>380</maxHealth>
 			<maxRegenHealth>190</maxRegenHealth>
 			<repairCost>11</repairCost>

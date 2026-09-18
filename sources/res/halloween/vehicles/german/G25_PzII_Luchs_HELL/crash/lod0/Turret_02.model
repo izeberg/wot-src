@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>halloween/vehicles/german/G25_PzII_Luchs_HELL/crash/lod1/Turret_02</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<materialNames/>
+	<visibilityBox>
+		<min>-0.860125 -0.004272 -1.038730</min>
+		<max>0.858882 1.079180 0.903001</max>
+	</visibilityBox>
+	<nodefullVisual>halloween/vehicles/german/G25_PzII_Luchs_HELL/crash/lod0/Turret_02</nodefullVisual>
+</root>

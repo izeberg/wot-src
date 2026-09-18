@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, BigWorld
 from account_helpers.telecom_rentals import TelecomRentals
 from gui import SystemMessages

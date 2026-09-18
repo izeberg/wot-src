@@ -1600,11 +1600,6 @@ msgstr "Доступен управляемый бонус к опыту от Wo
 msgid "serviceChannelMessages/additionalXP/unavailable/title"
 msgstr "Управляемый бонус к опыту от WoT Plus недоступен"
 
-msgid "serviceChannelMessages/autoBoosterErrorNoWallet"
-msgstr ""
-"Не удалось пополнить снаряжение на %s. Всё ваше золото станет доступно после"
-" автоматического восстановления работоспособности Единого кошелька."
-
 msgid "serviceChannelMessages/autoEquipBoosterDisabledOption"
 msgstr ""
 "Не удалось пополнить инструкции для %s. Операция временно недоступна: "
@@ -1628,11 +1623,6 @@ msgstr "Не удалось пополнить снаряжение на %s. К�
 msgid "serviceChannelMessages/autoEquipError"
 msgstr "Не удалось пополнить снаряжение на %s. Недостаточно средств."
 
-msgid "serviceChannelMessages/autoEquipErrorNoWallet"
-msgstr ""
-"Не удалось пополнить снаряжение на %s. Всё ваше золото станет доступно после"
-" автоматического восстановления работоспособности Единого кошелька."
-
 msgid "serviceChannelMessages/autoEquipSkipped"
 msgstr ""
 "Не выполнено автоматическое пополнение снаряжения на %s. Загрузите "
@@ -1647,11 +1637,6 @@ msgstr "Не удалось пополнить боекомплект на %s. �
 msgid "serviceChannelMessages/autoLoadError"
 msgstr "Не удалось пополнить боекомплект на %s. Недостаточно средств."
 
-msgid "serviceChannelMessages/autoLoadErrorNoWallet"
-msgstr ""
-"Не удалось пополнить боекомплект на %s. Всё ваше золото станет доступно "
-"после автоматического восстановления работоспособности Единого кошелька."
-
 msgid "serviceChannelMessages/autoLoadSkipped"
 msgstr ""
 "Не выполнено автоматическое пополнение боекомплекта на %s. Загрузите "
@@ -1665,11 +1650,6 @@ msgstr "Не удалось продлить аренду стиля на %s. К
 
 msgid "serviceChannelMessages/autoRentStyleError"
 msgstr "Не удалось продлить аренду стиля на %s. Недостаточно средств."
-
-msgid "serviceChannelMessages/autoRentStyleErrorNoWallet"
-msgstr ""
-"Не удалось продлить аренду стиля на %s. Всё ваше золото станет доступно "
-"после автоматического восстановления работоспособности Единого кошелька."
 
 msgid "serviceChannelMessages/autoRentStyleRentIsAlmostOver/button"
 msgstr "Продлить аренду"
@@ -1706,11 +1686,6 @@ msgstr "Не удалось отремонтировать %s."
 
 msgid "serviceChannelMessages/autoRepairError"
 msgstr "Не удалось отремонтировать %s. Недостаточно средств."
-
-msgid "serviceChannelMessages/autoRepairErrorNoWallet"
-msgstr ""
-"Не удалось отремонтировать %s. Всё ваше золото станет доступно после "
-"автоматического восстановления работоспособности Единого кошелька."
 
 msgid "serviceChannelMessages/autoRepairSkipped"
 msgstr "Не выполнен автоматический ремонт %s. Отремонтируйте машину вручную."

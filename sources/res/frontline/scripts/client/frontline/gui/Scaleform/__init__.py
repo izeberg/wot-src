@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from frontline.constants.aliases import FrontlineHangarAliases
 from gui.shared.system_factory import registerBattleTooltipsBuilders, registerLobbyTooltipsBuilders, registerLifecycleHandledSubViews
 from gui.Scaleform.genConsts.TOOLTIPS_CONSTANTS import TOOLTIPS_CONSTANTS as _TOOLTIPS

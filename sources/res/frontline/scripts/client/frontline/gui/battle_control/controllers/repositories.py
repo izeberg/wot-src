@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from frontline.gui.battle_control.controllers import frontline_respawn_ctrl
 from frontline.gui.battle_control.controllers.appearance_cache_ctrls.frontline_appearance_cache_ctrl import FLAppearanceCacheController
 from gui.battle_control.controllers import battle_field_ctrl, debug_ctrl, dyn_squad_functional, progress_circle_ctrl, epic_maps_ctrl, epic_missions_ctrl, game_notification_ctrl, epic_team_bases_ctrl, perk_ctrl

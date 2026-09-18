@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from skeletons.gui.game_control import IGameController
 if typing.TYPE_CHECKING:
@@ -23,7 +24,7 @@ class IComp7ShopController(IGameController):
     def hasNewProducts(self, rank):
         raise NotImplementedError
 
-    def hasNewDiscounts(self, rank):
+    def hasNewDiscounts(self, newRank):
         raise NotImplementedError
 
     def validateCachedProducts(self):

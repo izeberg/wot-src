@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from pve_battle_hud import getPveHudLogger, WidgetType
 from visual_script.slot_types import SLOT_TYPE, arrayOf
 from visual_script.dependency import dependencyImporter

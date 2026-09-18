@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from BWUtil import AsyncReturn
 from adisp import adisp_process
 from gui.impl.gen.view_models.views.lobby.tank_setup.sub_views.base_setup_model import BaseSetupModel

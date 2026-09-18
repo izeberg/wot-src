@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from past.builtins import unicode
 from helpers import dependency
 from messenger import g_settings
 from messenger.ext.player_helpers import isCurrentPlayer
@@ -26,7 +28,7 @@ class _BattleMessageBuilder(object):
     def setName(self, avatarSessionID, pName=None, suffix='', vehID=None):
         name = self.sessionProvider.getCtx().getPlayerFullName(avatarSessionID=avatarSessionID, pName=pName, vID=vehID)
         name = name + suffix
-        if isinstance(name, str):
+        if isinstance(name, bytes):
             name = unicode(name, 'utf-8')
         self._ctx['playerName'] = name
         return self

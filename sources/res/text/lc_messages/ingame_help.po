@@ -307,7 +307,7 @@ msgstr "Полуавтоматическая боеукладка"
 
 msgid "detailsHelp/mechanics/bustleFeed/page1/description"
 msgstr ""
-"Модуль внешней подачи боеприпасов позволяет выстрелить единичным снарядом "
+"Модуль внешней подачи боеприпасов позволяет выстрелить унитарным снарядом "
 "повышенной мощности, который наносит увеличенный урон. Активация модуля "
 "снижает мобильность и скорострельность."
 
@@ -339,6 +339,15 @@ msgstr ""
 
 msgid "detailsHelp/mechanics/chargeableBurst/page1/title"
 msgstr "Режим очереди"
+
+msgid "detailsHelp/mechanics/combatThrottle/page1/description"
+msgstr ""
+"Активация форсажа временно повышает мощность двигателя, скорость и "
+"манёвренность, сохраняя при этом комфорт управления орудием. Это позволяет "
+"вести динамичные сражения без ущерба для боевой эффективности."
+
+msgid "detailsHelp/mechanics/combatThrottle/page1/title"
+msgstr "Боевой форсаж"
 
 msgid "detailsHelp/mechanics/concentrationMode/page1/description"
 msgstr ""

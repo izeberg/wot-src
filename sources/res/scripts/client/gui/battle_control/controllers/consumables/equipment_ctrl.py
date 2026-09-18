@@ -923,10 +923,10 @@ class _RegenerationKitItem(_EquipmentItem):
         return super(_RegenerationKitItem, self).getAnimationType()
 
 
-class DynComponentsGroupItem(_TriggerItem):
+class BaseAbilityItem(_TriggerItem):
 
     def update(self, quantity, stage, timeRemaining, totalTime):
-        super(DynComponentsGroupItem, self).update(quantity, stage, timeRemaining, totalTime)
+        super(BaseAbilityItem, self).update(quantity, stage, timeRemaining, totalTime)
         if stage in (EQUIPMENT_STAGES.COOLDOWN, EQUIPMENT_STAGES.READY):
             self._totalTime = self._getCooldownSeconds()
         elif stage == EQUIPMENT_STAGES.ACTIVE:
@@ -943,10 +943,26 @@ class DynComponentsGroupItem(_TriggerItem):
         return self._descriptor.cooldownSeconds
 
 
-class DynComponentsGroupPassiveItem(DynComponentsGroupItem):
+class BasePassiveAbilityItem(BaseAbilityItem):
 
     def canActivate(self, entityName=None, avatar=None):
         return (False, None)
+
+
+class DynComponentsGroupItem(BaseAbilityItem):
+    pass
+
+
+class DynComponentsGroupPassiveItem(BasePassiveAbilityItem):
+    pass
+
+
+class CGFAbilityItem(BaseAbilityItem):
+    pass
+
+
+class CGFPassiveAbilityItem(BasePassiveAbilityItem):
+    pass
 
 
 class _VisualScriptItem(_TriggerItem):
@@ -1164,6 +1180,8 @@ _EQUIPMENT_TAG_TO_ITEM = {('fuel',): _AutoItem,
    ('medkit', 'repairkit'): _RepairCrewAndModules, 
    ('dynComponentsGroup',): DynComponentsGroupItem, 
    ('dynComponentsGroup', 'passive'): DynComponentsGroupPassiveItem, 
+   ('CGFAbility',): CGFAbilityItem, 
+   ('CGFAbility', 'passive'): CGFPassiveAbilityItem, 
    (POI_EQUIPMENT_TAG,): _poiItemFactory}
 
 class _DAMAGE_PANEL_EQUIPMENT(CONST_CONTAINER):
@@ -1765,15 +1783,15 @@ class _ReplayRegenerationKitBattleRoyaleItem(_ReplayItem):
         self._totalTime = totalTime
 
 
-class DynComponentsGroupReplayItem(DynComponentsGroupItem):
+class BaseReplayAbilityItem(BaseAbilityItem):
     __slots__ = ('__cooldownTime', )
 
     def __init__(self, descriptor, quantity, stage, timeRemaining, totalTime, tags=None):
-        super(DynComponentsGroupReplayItem, self).__init__(descriptor, quantity, stage, timeRemaining, totalTime, tags)
+        super(BaseReplayAbilityItem, self).__init__(descriptor, quantity, stage, timeRemaining, totalTime, tags)
         self.__cooldownTime = BigWorld.serverTime() + timeRemaining
 
     def update(self, quantity, stage, timeRemaining, totalTime):
-        super(DynComponentsGroupReplayItem, self).update(quantity, stage, timeRemaining, totalTime)
+        super(BaseReplayAbilityItem, self).update(quantity, stage, timeRemaining, totalTime)
         self.__cooldownTime = BigWorld.serverTime() + timeRemaining
 
     def getReplayTimeRemaining(self):
@@ -1787,7 +1805,19 @@ class DynComponentsGroupReplayItem(DynComponentsGroupItem):
         return 0.0
 
 
+class DynComponentsGroupReplayItem(BaseReplayAbilityItem):
+    pass
+
+
 class DynComponentsGroupPassiveReplayItem(_ReplayItem):
+    pass
+
+
+class CGFReplayAbilityItem(BaseReplayAbilityItem):
+    pass
+
+
+class CGFReplayPassiveAbilityItem(_ReplayItem):
     pass
 
 
@@ -1875,6 +1905,8 @@ _REPLAY_EQUIPMENT_TAG_TO_ITEM = {('fuel',): _ReplayItem,
    ('medkit', 'repairkit'): _replayTriggerItemFactory, 
    ('dynComponentsGroup',): DynComponentsGroupReplayItem, 
    ('dynComponentsGroup', 'passive'): DynComponentsGroupPassiveReplayItem, 
+   ('CGFAbility',): CGFReplayAbilityItem, 
+   ('CGFAbility', 'passive'): CGFReplayPassiveAbilityItem, 
    (POI_EQUIPMENT_TAG,): _replayPoiItemFactory}
 
 class EquipmentsReplayPlayer(EquipmentsController):

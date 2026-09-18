@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<ClientMethods>
+		<onBossDamageReceived>
+			<Arg>OBJECT_ID</Arg>
+			<Arg>UINT8</Arg>
+			<Arg>INT16</Arg>
+		</onBossDamageReceived>
+	</ClientMethods>
+	<Properties/>
+	<ofEntity>
+		<Vehicle/>
+	</ofEntity>
+</root>

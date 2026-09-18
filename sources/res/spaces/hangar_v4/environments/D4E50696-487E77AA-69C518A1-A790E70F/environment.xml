@@ -293,7 +293,7 @@
 		<waterReflectionAttenuation>1.000000</waterReflectionAttenuation>
 	</SimplifiedDeferred>
 	<VisibilityTunnel>
-		<shouldOverrideSettings>false</shouldOverrideSettings>
+		<overrideMode>none</overrideMode>
 	</VisibilityTunnel>
 	<GPUWind>
 		<enabled>false</enabled>

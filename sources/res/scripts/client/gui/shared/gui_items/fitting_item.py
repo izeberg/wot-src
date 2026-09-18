@@ -22,8 +22,8 @@ from items import vehicles, getTypeInfoByName
 from rent_common import SeasonRentDuration
 from telecom_rentals_common import TELECOM_RENTALS_RENT_KEY
 if typing.TYPE_CHECKING:
+    from items.vehicle_mechanics_types import VehicleMechanicKey
     from items.vehicles import VehicleDescr
-    from vehicles.mechanics.mechanic_constants import VehicleMechanic
 ICONS_MASK = '../maps/icons/%(type)s/%(subtype)s%(unicName)s.png'
 _RentalInfoProvider = namedtuple('RentalInfoProvider', ('rentExpiryTime', 'compensations',
                                                         'battlesLeft', 'winsLeft',
@@ -199,7 +199,7 @@ class FittingItem(GUIItem):
         self._restoreInfo = None
         self._descriptor = self._getDescriptor()
         if proxy is not None and proxy.inventory.isSynced() and proxy.stats.isSynced() and proxy.shop.isSynced():
-            self._mayConsumeWalletResources = proxy.stats.mayConsumeWalletResources
+            self._mayConsumeWalletResources = proxy.stats.isResourcesConsumptionAllowed
             defaultPrice = proxy.shop.defaults.getItemPrice(self.intCD)
             if defaultPrice is None:
                 defaultPrice = MONEY_UNDEFINED

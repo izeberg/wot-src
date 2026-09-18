@@ -893,6 +893,25 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.infrastructure.base.ViewPrototype;
    import net.wg.infrastructure.base.interfaces.IAbstractPopOverView;
    import net.wg.infrastructure.base.interfaces.IWaiting;
+   import net.wg.infrastructure.base.meta.IAcousticPopoverMeta;
+   import net.wg.infrastructure.base.meta.IBattleDamageLogPanelMeta;
+   import net.wg.infrastructure.base.meta.ICarouselEnvironmentMeta;
+   import net.wg.infrastructure.base.meta.IColorSettingsViewMeta;
+   import net.wg.infrastructure.base.meta.ICrosshairPanelContainerMeta;
+   import net.wg.infrastructure.base.meta.IDAAPISimpleContainerMeta;
+   import net.wg.infrastructure.base.meta.IGammaWizardViewMeta;
+   import net.wg.infrastructure.base.meta.IInjectComponentMeta;
+   import net.wg.infrastructure.base.meta.IMinimapEntityMeta;
+   import net.wg.infrastructure.base.meta.IMinimapGridMeta;
+   import net.wg.infrastructure.base.meta.IMinimapPresentationMeta;
+   import net.wg.infrastructure.base.meta.IPopOverViewMeta;
+   import net.wg.infrastructure.base.meta.IReportBugPanelMeta;
+   import net.wg.infrastructure.base.meta.IServerStatsMeta;
+   import net.wg.infrastructure.base.meta.ISettingsWindowMeta;
+   import net.wg.infrastructure.base.meta.ISimpleDialogMeta;
+   import net.wg.infrastructure.base.meta.ISmartPopOverViewMeta;
+   import net.wg.infrastructure.base.meta.ITankCarouselFilterPopoverMeta;
+   import net.wg.infrastructure.base.meta.IVehModulesConfiguratorCmpMeta;
    import net.wg.infrastructure.base.meta.IWaitingTransitionMeta;
    import net.wg.infrastructure.constants.WindowViewInvalidationType;
    import net.wg.infrastructure.events.ColorSchemeEvent;
@@ -2706,9 +2725,93 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_INFRASTRUCTURE_BASE_INTERFACES_IWAITING:Class = IWaiting;
       
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IACOUSTICPOPOVERMETA:Class = IAcousticPopoverMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IBATTLEDAMAGELOGPANELMETA:Class = IBattleDamageLogPanelMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ICAROUSELENVIRONMENTMETA:Class = ICarouselEnvironmentMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ICOLORSETTINGSVIEWMETA:Class = IColorSettingsViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ICROSSHAIRPANELCONTAINERMETA:Class = ICrosshairPanelContainerMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IDAAPISIMPLECONTAINERMETA:Class = IDAAPISimpleContainerMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IGAMMAWIZARDVIEWMETA:Class = IGammaWizardViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IINJECTCOMPONENTMETA:Class = IInjectComponentMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMINIMAPENTITYMETA:Class = IMinimapEntityMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMINIMAPGRIDMETA:Class = IMinimapGridMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMINIMAPPRESENTATIONMETA:Class = IMinimapPresentationMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IPOPOVERVIEWMETA:Class = IPopOverViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IREPORTBUGPANELMETA:Class = IReportBugPanelMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ISERVERSTATSMETA:Class = IServerStatsMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ISETTINGSWINDOWMETA:Class = ISettingsWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ISIMPLEDIALOGMETA:Class = ISimpleDialogMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ISMARTPOPOVERVIEWMETA:Class = ISmartPopOverViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ITANKCAROUSELFILTERPOPOVERMETA:Class = ITankCarouselFilterPopoverMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IVEHMODULESCONFIGURATORCMPMETA:Class = IVehModulesConfiguratorCmpMeta;
+      
       public static const NET_WG_INFRASTRUCTURE_BASE_META_IWAITINGTRANSITIONMETA:Class = IWaitingTransitionMeta;
       
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_ACOUSTICPOPOVERMETA:Class = AcousticPopoverMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_BATTLEDAMAGELOGPANELMETA:Class = BattleDamageLogPanelMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_CAROUSELENVIRONMENTMETA:Class = CarouselEnvironmentMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_CLASSMANAGERBATTLECROSSHAIRSMETA:Class = ClassManagerBattleCrosshairsMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_COLORSETTINGSVIEWMETA:Class = ColorSettingsViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_CROSSHAIRPANELCONTAINERMETA:Class = CrosshairPanelContainerMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_DAAPISIMPLECONTAINERMETA:Class = DAAPISimpleContainerMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_GAMMAWIZARDVIEWMETA:Class = GammaWizardViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_INJECTCOMPONENTMETA:Class = InjectComponentMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_MINIMAPENTITYMETA:Class = MinimapEntityMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_MINIMAPGRIDMETA:Class = MinimapGridMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_MINIMAPPRESENTATIONMETA:Class = MinimapPresentationMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_POPOVERVIEWMETA:Class = PopOverViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_REPORTBUGPANELMETA:Class = ReportBugPanelMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_SERVERSTATSMETA:Class = ServerStatsMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_SETTINGSWINDOWMETA:Class = SettingsWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_SIMPLEDIALOGMETA:Class = SimpleDialogMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_SMARTPOPOVERVIEWMETA:Class = SmartPopOverViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_TANKCAROUSELFILTERPOPOVERMETA:Class = TankCarouselFilterPopoverMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_VEHMODULESCONFIGURATORCMPMETA:Class = VehModulesConfiguratorCmpMeta;
+      
       public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_WAITINGTRANSITIONMETA:Class = WaitingTransitionMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_WAITINGVIEWMETA:Class = WaitingViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_WINDOWVIEWMETA:Class = WindowViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_WRAPPERVIEWMETA:Class = WrapperViewMeta;
       
       public static const NET_WG_INFRASTRUCTURE_CONSTANTS_WINDOWVIEWINVALIDATIONTYPE:Class = WindowViewInvalidationType;
       

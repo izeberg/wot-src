@@ -32,6 +32,11 @@ package net.wg.gui.battle.eventBattle.views.radialMenu.components
          this.bg = null;
       }
       
+      public function isDisposed() : Boolean
+      {
+         return this._disposed;
+      }
+      
       public function setTitleText(param1:String, param2:String) : void
       {
          var _loc3_:Boolean = false;
@@ -55,11 +60,6 @@ package net.wg.gui.battle.eventBattle.views.radialMenu.components
          param2.text = param1;
          this.bg.width = Math.ceil(param2.textWidth) + BG_OFFSET;
          this.bg.x = -this.bg.width >> 1;
-      }
-      
-      public function isDisposed() : Boolean
-      {
-         return this._disposed;
       }
    }
 }

@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from past.builtins import basestring
 from gui.Scaleform.Waiting import Waiting
 from web.web_client_api import w2c, W2CSchema, Field
 

@@ -45,11 +45,6 @@ package net.wg.mock
          return false;
       }
       
-      public function isYYS() : Boolean
-      {
-         return false;
-      }
-      
       public function removeEventListener(param1:String, param2:Function, param3:Boolean = false) : void
       {
       }
@@ -60,11 +55,6 @@ package net.wg.mock
       }
       
       public function dispatchEvent(param1:Event) : Boolean
-      {
-         return false;
-      }
-      
-      public function getYY() : Boolean
       {
          return false;
       }

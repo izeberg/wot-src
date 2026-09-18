@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from comp7_light.gui.comp7_light_constants import SCH_CLIENT_MSG_TYPE
 from comp7_light.gui.shared.event_dispatcher import showBattleQuestAwardsWindow
 from chat_shared import SYS_MESSAGE_TYPE

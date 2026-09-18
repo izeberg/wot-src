@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.locale.MESSENGER import MESSENGER
 from helpers import i18n
 from messenger.gui.Scaleform.meta.BaseManageContactViewMeta import BaseManageContactViewMeta
@@ -21,8 +22,8 @@ class GroupManageView(BaseManageContactViewMeta):
     def proto(self):
         return
 
-    def checkText(self, name):
-        name = name.strip()
+    def checkText(self, txt):
+        name = txt.strip()
         if self._currentName != name:
             self._currentName = name
             isAllowedResult, errorMsg = False, ''

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from ChatManager import chatManager
 from debug_utils import LOG_ERROR
 

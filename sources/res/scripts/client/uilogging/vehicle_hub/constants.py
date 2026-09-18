@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from enum import Enum
 TIME_LIMIT = 2
 

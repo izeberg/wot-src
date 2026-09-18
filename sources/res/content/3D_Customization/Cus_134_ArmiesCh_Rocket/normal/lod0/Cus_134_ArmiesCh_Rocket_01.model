@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-0.411312 -0.293205 -0.625852</min>
+		<max>0.000000 0.207374 0.840108</max>
+	</visibilityBox>
+	<parent>content/3D_Customization/Cus_134_ArmiesCh_Rocket/normal/lod1/Cus_134_ArmiesCh_Rocket_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_134_ArmiesCh_Rocket/normal/lod0/Cus_134_ArmiesCh_Rocket_01</nodefullVisual>
+</root>

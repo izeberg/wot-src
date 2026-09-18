@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import re, sre_compile, BigWorld
 from debug_utils import LOG_CURRENT_EXCEPTION
 from constants import IS_CHINA
@@ -157,6 +158,6 @@ class PostBattleLinksFilter(IIncomingMessageFilter):
 
 class NormalizeMessageFilter(IOutgoingMessageFilter):
 
-    def filter(self, message, limits):
-        truncated = normalized_unicode_trim(message.strip(), limits.getMessageMaxLength())
+    def filter(self, text, limits):
+        truncated = normalized_unicode_trim(text.strip(), limits.getMessageMaxLength())
         return (' ').join(truncated.split())

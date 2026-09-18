@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.daapi.view.lobby.store.actions_formatters import getAllActionsInfoIterator
 from helpers import dependency
 from web.web_client_api import w2c, W2CSchema

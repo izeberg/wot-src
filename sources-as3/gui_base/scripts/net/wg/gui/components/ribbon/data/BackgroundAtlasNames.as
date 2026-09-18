@@ -54,6 +54,11 @@ package net.wg.gui.components.ribbon.data
                this._medium = BATTLEATLAS.RIBBONS_BG_PURPLE_MEDIUM;
                this._large = BATTLEATLAS.RIBBONS_BG_PURPLE_LARGE;
                break;
+            case RibbonColors.BLUE:
+               this._small = BATTLEATLAS.RIBBONS_BG_BLUE_SMALL;
+               this._medium = BATTLEATLAS.RIBBONS_BG_BLUE_MEDIUM;
+               this._large = BATTLEATLAS.RIBBONS_BG_BLUE_LARGE;
+               break;
             case RibbonColors.PERK:
                this._small = COMMONBATTLELOBBY.RIBBONS_BG_PERK_SMALL;
                this._medium = COMMONBATTLELOBBY.RIBBONS_BG_PERK_MEDIUM;

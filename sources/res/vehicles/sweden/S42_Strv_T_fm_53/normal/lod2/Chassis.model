@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/sweden/S42_Strv_T_fm_53/normal/lod3/Chassis</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.556359 0.000000 -2.849071</min>
+		<max>1.556359 1.105530 3.220073</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/sweden/S42_Strv_T_fm_53/normal/lod2/Chassis</nodefullVisual>
+</root>

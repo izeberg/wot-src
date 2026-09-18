@@ -10,7 +10,7 @@ from gui.battle_control.battle_constants import DEVICE_STATE_CRITICAL, DEVICE_ST
 from gui.veh_mechanics.battle.updaters.mechanics.mechanic_passenger_updater import VehicleMechanicPassengerUpdater
 from gui.veh_mechanics.battle.updaters.mechanics.mechanic_states_updater import VehicleMechanicStatesUpdater
 from gui.veh_mechanics.battle.updaters.vehicle_device_view_updater import VehicleDeviceStatusUpdater
-from vehicles.mechanics.mechanic_constants import VehicleMechanic
+from items.vehicle_mechanics_types import VehicleMechanicKeys
 from vehicles.mechanics.mechanic_states import IMechanicStatesListenerLogic
 if typing.TYPE_CHECKING:
     from StationaryReloadController import StationaryReloadModeState
@@ -47,8 +47,8 @@ class StationaryReloadingMechanicWidget(StationaryReloadWidgetMeta, ContainersLi
 
     def _getViewUpdaters(self):
         return [
-         VehicleMechanicPassengerUpdater(VehicleMechanic.STATIONARY_RELOAD, self),
-         VehicleMechanicStatesUpdater(VehicleMechanic.STATIONARY_RELOAD, self),
+         VehicleMechanicPassengerUpdater(VehicleMechanicKeys.STATIONARY_RELOAD, self),
+         VehicleMechanicStatesUpdater(VehicleMechanicKeys.STATIONARY_RELOAD, self),
          VehicleDeviceStatusUpdater({'turretRotator': (DEVICE_STATE_NORMAL, DEVICE_STATE_CRITICAL)}, self)]
 
     def __invalidateState(self, state, isInstantly=False):

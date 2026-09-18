@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from messenger.m_constants import USER_ACTION_ID, USER_TAG, PROTO_TYPE, CLIENT_ACTION_ID
 from messenger.proto.events import g_messengerEvents
 from messenger.proto.xmpp import entities, errors

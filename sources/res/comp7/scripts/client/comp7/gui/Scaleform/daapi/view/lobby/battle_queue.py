@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import constants
 from comp7.gui.impl.gen.view_models.views.lobby.enums import SeasonName
 from comp7.gui.impl.lobby.comp7_helpers import comp7_shared, comp7_i18n_helpers
@@ -33,7 +34,7 @@ class Comp7QueueProvider(RandomQueueProvider):
     def getLayoutStr(self):
         return 'comp7'
 
-    def getIconPath(self, iconlabel):
+    def getIconPath(self, iconLabel):
         return backport.image(R.images.comp7.gui.maps.icons.battleTypes.c_136x136.comp7())
 
     def getTankInfoLabel(self):

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_290_HW_MagneticHarpoon/normal/lod3/attachment</parent>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.143737 -0.100000 -0.635644</min>
+		<max>0.398746 0.752545 0.794856</max>
+	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/Cus_290_HW_MagneticHarpoon/normal/lod2/attachment</nodefullVisual>
+</root>

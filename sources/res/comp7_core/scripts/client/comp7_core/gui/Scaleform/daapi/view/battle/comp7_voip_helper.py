@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import enum, typing, VOIP
 from comp7_core.gui.comp7_core_constants import BATTLE_CTRL_ID
 from gui import makeHtmlString

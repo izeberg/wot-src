@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.battle_control.arena_info.interfaces import IArenaLoadController
 
 class IComp7VOIPController(IArenaLoadController):

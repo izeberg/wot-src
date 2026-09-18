@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import Event
 from notification.NotificationsCollection import NotificationsCollection
 from notification.listeners import NotificationsListeners

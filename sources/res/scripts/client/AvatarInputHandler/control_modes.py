@@ -1,19 +1,21 @@
+from __future__ import absolute_import, division
 import logging, time, weakref
 from collections import namedtuple
 from functools import partial
 from enum import Enum
-import BigWorld, GUI, Keys, Math, ResMgr, BattleReplay, CommandMapping, SoundGroups, TriggersManager, VideoCamera, cameras, math_utils, constants
+import BigWorld, GUI, Keys, Math, ResMgr, BattleReplay, CommandMapping, SoundGroups, TriggersManager, math_utils, constants
+from AvatarInputHandler import VideoCamera, cameras
 from AvatarInputHandler.DynamicCameras.free_camera import FreeVideoCamera
 from AvatarInputHandler.DynamicCameras.prebattle_highlights_camera import PrebattleHighlightsCamera
-from constants import POSTMORTEM_MODIFIERS
-from AimingSystems import getShotTargetInfo
-from AimingSystems.magnetic_aim import magneticAimProcessor, MagneticAimSettings
+from AvatarInputHandler.AimingSystems import getShotTargetInfo
+from AvatarInputHandler.AimingSystems.magnetic_aim import magneticAimProcessor, MagneticAimSettings
 from AvatarInputHandler import AimingSystems, aih_global_binding, gun_marker_ctrl
 from AvatarInputHandler.DynamicCameras.camera_switcher import SwitchToPlaces
 from AvatarInputHandler.StrategicCamerasInterpolator import StrategicCamerasInterpolator
 from AvatarInputHandler.spg_marker_helpers.spg_marker_helpers import getSPGShotResult, getSPGShotFlyTime
-from DynamicCameras import SniperCamera, StrategicCamera, ArcadeCamera, ArtyCamera, DualGunCamera, twin_gun_camera
-from PostmortemDelay import PostmortemDelay
+from AvatarInputHandler.DynamicCameras import SniperCamera, StrategicCamera, ArcadeCamera, ArtyCamera, DualGunCamera, twin_gun_camera
+from AvatarInputHandler.PostmortemDelay import PostmortemDelay
+from constants import POSTMORTEM_MODIFIERS
 from ProjectileMover import collideDynamicAndStatic
 from TriggersManager import TRIGGER_TYPE
 from Vehicle import Vehicle
@@ -230,8 +232,8 @@ class _GunControlMode(IControlMode):
     def onRecreateDevice(self):
         self._gunMarker.onRecreateDevice()
 
-    def updateShootingStatus(self, canShot):
-        self._canShot = canShot
+    def updateShootingStatus(self, canShoot):
+        self._canShot = canShoot
 
     def _handleShootCmd(self):
         player = BigWorld.player()
@@ -324,7 +326,7 @@ class VideoCameraControlMode(_GunControlMode):
                 self._cam.setViewMatrix(point.matrix)
                 return
 
-        raise AssertionError(('Location with name %s not found').format(name))
+        raise AssertionError(('Location with name {} not found').format(name))
 
     def handleMouseEvent(self, dx, dy, dz):
         self._cam.handleMouseEvent(dx, dy, dz)
@@ -1219,7 +1221,9 @@ class DualGunControlMode(MultiGunGunControlMode):
     def handleKeyEvent(self, isDown, key, mods, event=None):
         if self._aih.dualGunControl and self._aih.dualGunControl.handleKeyEvent(isDown, key, mods, event):
             return True
-        super(DualGunControlMode, self).handleKeyEvent(isDown, key, mods, event)
+        else:
+            super(DualGunControlMode, self).handleKeyEvent(isDown, key, mods, event)
+            return
 
     def _onActiveGunsChanged(self, activeGuns, switchDelay):
         self._cam.aimingSystem.onActiveGunChanged(activeGuns[0], switchDelay)
@@ -1433,54 +1437,55 @@ class PostMortemControlMode(IControlMode, CallbackDelayer):
 
     def handleKeyEvent(self, isDown, key, mods, event=None):
         if self.__transitionCamera.isInTransition():
-            return
-        cmdMap = CommandMapping.g_instance
-        guiCtrlEnabled = BigWorld.player().isForcedGuiControlMode()
-        if BigWorld.isKeyDown(Keys.KEY_CAPSLOCK) and isDown and key == Keys.KEY_F3 and (self.__videoControlModeAvailable or self.guiSessionProvider.getCtx().isPlayerObserver()):
-            if not self.__aih.isControlModeChangeAllowed():
-                return
-            self.__aih.onControlModeChanged(CTRL_MODE_NAME.VIDEO, prevModeName=CTRL_MODE_NAME.POSTMORTEM, camMatrix=self.__cam.camera.matrix, curVehicleID=self.__curVehicleID)
-            return True
-        if not guiCtrlEnabled and isDown:
-            if cmdMap.isFired(CommandMapping.CMD_CM_POSTMORTEM_SELF_VEHICLE, key) and BigWorld.player().isPostmortemFeatureEnabled(CTRL_MODE_NAME.DEATH_FREE_CAM):
-                if self.__canSwitchVehicle(checkArcadeCamTransition=True):
-                    self._switchToCtrlMode(CTRL_MODE_NAME.DEATH_FREE_CAM)
-                    return True
-            if not (BigWorld.player().isPostmortemModificationActive(CTRL_MODE_NAME.POSTMORTEM, POSTMORTEM_MODIFIERS.DISABLE_TANK_TARGET_FOLLOW) and self.__canSwitchVehicle(checkArcadeCamTransition=True)):
-                if cmdMap.isFired(CommandMapping.CMD_CM_POSTMORTEM_TARGET_VEHICLE, key):
-                    hasValidTarget, targetID = DeathFreeCamMode.getVehicleFollowTarget()
-                    if hasValidTarget:
-                        self.__switchToVehicle(targetID)
+            return None
+        else:
+            cmdMap = CommandMapping.g_instance
+            guiCtrlEnabled = BigWorld.player().isForcedGuiControlMode()
+            if BigWorld.isKeyDown(Keys.KEY_CAPSLOCK) and isDown and key == Keys.KEY_F3 and (self.__videoControlModeAvailable or self.guiSessionProvider.getCtx().isPlayerObserver()):
+                if not self.__aih.isControlModeChangeAllowed():
+                    return None
+                self.__aih.onControlModeChanged(CTRL_MODE_NAME.VIDEO, prevModeName=CTRL_MODE_NAME.POSTMORTEM, camMatrix=self.__cam.camera.matrix, curVehicleID=self.__curVehicleID)
+                return True
+            if not guiCtrlEnabled and isDown:
+                if cmdMap.isFired(CommandMapping.CMD_CM_POSTMORTEM_SELF_VEHICLE, key) and BigWorld.player().isPostmortemFeatureEnabled(CTRL_MODE_NAME.DEATH_FREE_CAM):
+                    if self.__canSwitchVehicle(checkArcadeCamTransition=True):
+                        self._switchToCtrlMode(CTRL_MODE_NAME.DEATH_FREE_CAM)
                         return True
-            if not BigWorld.player().isPostmortemModificationActive(CTRL_MODE_NAME.POSTMORTEM, POSTMORTEM_MODIFIERS.DISABLE_TANK_CYCLE):
-                if cmdMap.isFired(CommandMapping.CMD_CM_POSTMORTEM_NEXT_VEHICLE, key):
-                    self.__switch()
-                    return True
-                if cmdMap.isFired(CommandMapping.CMD_CM_POSTMORTEM_PREV_VEHICLE, key):
-                    self.__switch(False)
-                    return True
-        if cmdMap.isFiredList((CommandMapping.CMD_CM_CAMERA_ROTATE_LEFT,
-         CommandMapping.CMD_CM_CAMERA_ROTATE_RIGHT,
-         CommandMapping.CMD_CM_CAMERA_ROTATE_UP,
-         CommandMapping.CMD_CM_CAMERA_ROTATE_DOWN,
-         CommandMapping.CMD_CM_INCREASE_ZOOM,
-         CommandMapping.CMD_CM_DECREASE_ZOOM), key):
-            dx = dy = dz = 0.0
-            if cmdMap.isActive(CommandMapping.CMD_CM_CAMERA_ROTATE_LEFT):
-                dx = -1.0
-            if cmdMap.isActive(CommandMapping.CMD_CM_CAMERA_ROTATE_RIGHT):
-                dx = 1.0
-            if cmdMap.isActive(CommandMapping.CMD_CM_CAMERA_ROTATE_UP):
-                dy = -1.0
-            if cmdMap.isActive(CommandMapping.CMD_CM_CAMERA_ROTATE_DOWN):
-                dy = 1.0
-            if cmdMap.isActive(CommandMapping.CMD_CM_INCREASE_ZOOM):
-                dz = 1.0
-            if cmdMap.isActive(CommandMapping.CMD_CM_DECREASE_ZOOM):
-                dz = -1.0
-            self.__cam.update(dx, dy, dz, True, True, not dx == dy == dz == 0.0)
-            return True
-        return False
+                if not (BigWorld.player().isPostmortemModificationActive(CTRL_MODE_NAME.POSTMORTEM, POSTMORTEM_MODIFIERS.DISABLE_TANK_TARGET_FOLLOW) and self.__canSwitchVehicle(checkArcadeCamTransition=True)):
+                    if cmdMap.isFired(CommandMapping.CMD_CM_POSTMORTEM_TARGET_VEHICLE, key):
+                        hasValidTarget, targetID = DeathFreeCamMode.getVehicleFollowTarget()
+                        if hasValidTarget:
+                            self.__switchToVehicle(targetID)
+                            return True
+                if not BigWorld.player().isPostmortemModificationActive(CTRL_MODE_NAME.POSTMORTEM, POSTMORTEM_MODIFIERS.DISABLE_TANK_CYCLE):
+                    if cmdMap.isFired(CommandMapping.CMD_CM_POSTMORTEM_NEXT_VEHICLE, key):
+                        self.__switch()
+                        return True
+                    if cmdMap.isFired(CommandMapping.CMD_CM_POSTMORTEM_PREV_VEHICLE, key):
+                        self.__switch(False)
+                        return True
+            if cmdMap.isFiredList((CommandMapping.CMD_CM_CAMERA_ROTATE_LEFT,
+             CommandMapping.CMD_CM_CAMERA_ROTATE_RIGHT,
+             CommandMapping.CMD_CM_CAMERA_ROTATE_UP,
+             CommandMapping.CMD_CM_CAMERA_ROTATE_DOWN,
+             CommandMapping.CMD_CM_INCREASE_ZOOM,
+             CommandMapping.CMD_CM_DECREASE_ZOOM), key):
+                dx = dy = dz = 0.0
+                if cmdMap.isActive(CommandMapping.CMD_CM_CAMERA_ROTATE_LEFT):
+                    dx = -1.0
+                if cmdMap.isActive(CommandMapping.CMD_CM_CAMERA_ROTATE_RIGHT):
+                    dx = 1.0
+                if cmdMap.isActive(CommandMapping.CMD_CM_CAMERA_ROTATE_UP):
+                    dy = -1.0
+                if cmdMap.isActive(CommandMapping.CMD_CM_CAMERA_ROTATE_DOWN):
+                    dy = 1.0
+                if cmdMap.isActive(CommandMapping.CMD_CM_INCREASE_ZOOM):
+                    dz = 1.0
+                if cmdMap.isActive(CommandMapping.CMD_CM_DECREASE_ZOOM):
+                    dz = -1.0
+                self.__cam.update(dx, dy, dz, True, True, not dx == dy == dz == 0.0)
+                return True
+            return False
 
     def handleMouseEvent(self, dx, dy, dz):
         if self.__transitionCamera.isInTransition():
@@ -1661,8 +1666,10 @@ class PostMortemControlMode(IControlMode, CallbackDelayer):
     def __finishCameraTransition(self):
         if self.__transitionCamera.isInTransition():
             return 0.1
-        BigWorld.camera(self.__cam.camera)
-        self.__aih.notifyCameraChanged()
+        else:
+            BigWorld.camera(self.__cam.camera)
+            self.__aih.notifyCameraChanged()
+            return
 
     def __getValidVehicleID(self, vehicleID):
         if vehicleID is None or vehicleID == -1:

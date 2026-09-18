@@ -1,5 +1,0 @@
-from __future__ import absolute_import
-from white_tiger_common.wt_constants import ARENA_BONUS_TYPE
-from account_helpers.AccountSettings import STATS_REGULAR_SORTING
-from gui.shared.system_factory import registerBattleResultsStatsSorting
-registerBattleResultsStatsSorting(ARENA_BONUS_TYPE.WHITE_TIGER, STATS_REGULAR_SORTING)

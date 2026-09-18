@@ -10,7 +10,9 @@ def registerBRBattlePackages():
     registerScaleformBattlePackages(ARENA_GUI_TYPE.BATTLE_ROYALE, ('battle_royale.gui.Scaleform.daapi.view.battle',
                                                                    'battle_royale.gui.Scaleform.daapi.view.battle.shared',
                                                                    'messenger.gui.Scaleform.view.battle',
-                                                                   'gui.Scaleform.daapi.view.battle.shared.vehicle_mechanics'))
+                                                                   'gui.Scaleform.daapi.view.battle.shared.vehicle_mechanics',
+                                                                   'gui.impl.battle.random',
+                                                                   'gui.impl.battle.shared'))
 
 
 def registerBRLobbyPackages():

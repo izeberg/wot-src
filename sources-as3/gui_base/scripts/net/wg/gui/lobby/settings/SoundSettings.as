@@ -135,7 +135,6 @@ package net.wg.gui.lobby.settings
          artyBulbVoicesButton.addEventListener(ButtonEvent.CLICK,this.onArtyBulbVoicesButtonClickHandler);
          artyBulbVoicesButton.addEventListener(MouseEvent.MOUSE_OVER,this.onArtyBulbVoicesButtonMouseOverHandler);
          artyBulbVoicesButton.addEventListener(MouseEvent.MOUSE_OUT,this.onArtyBulbVoicesButtonMouseOutHandler);
-         enableVoIPCheckbox.enabled = App.voiceChatMgr.getYY();
          tabs.addEventListener(IndexEvent.INDEX_CHANGE,this.onTabsIndexChangeHandler);
          physicsQualityRecommendedBtn.addEventListener(ButtonEvent.CLICK,this.onPhysicsQualityRecommendedBtnClickHandler);
          super.configUI();
@@ -144,19 +143,18 @@ package net.wg.gui.lobby.settings
       override protected function setData(param1:SettingsDataVo) : void
       {
          var _loc3_:Boolean = false;
-         var _loc9_:String = null;
+         var _loc8_:String = null;
+         var _loc10_:String = null;
          var _loc11_:String = null;
-         var _loc12_:String = null;
-         var _loc13_:DisplayObject = null;
-         var _loc15_:Boolean = false;
-         var _loc16_:KeyInput = null;
+         var _loc12_:DisplayObject = null;
+         var _loc14_:Boolean = false;
+         var _loc15_:KeyInput = null;
          this.controlsUnsubscribe();
          super.setData(param1);
          var _loc2_:SettingsControlProp = SettingsControlProp(param1.getByKey(SettingsConfigHelper.VOICE_CHAT_SUPPORTED));
          _loc3_ = _loc2_.current;
          var _loc4_:Array = [{"label":SETTINGS.SOUNDS_TABCOMMON}];
-         var _loc5_:Boolean = App.voiceChatMgr.getYY();
-         if(_loc3_ || _loc5_)
+         if(_loc3_)
          {
             _loc4_.push({"label":SETTINGS.SOUNDS_TABVIVOX});
             enableVoIPCheckbox.visible = true;
@@ -164,60 +162,60 @@ package net.wg.gui.lobby.settings
          }
          tabs.dataProvider = new DataProvider(_loc4_);
          tabs.visible = _loc4_.length > 1;
-         var _loc6_:Vector.<String> = param1.keys;
-         var _loc7_:Vector.<Object> = param1.values;
-         var _loc8_:int = _loc6_.length;
-         var _loc10_:SettingsControlProp = null;
-         var _loc14_:int = 0;
-         while(_loc14_ < _loc8_)
+         var _loc5_:Vector.<String> = param1.keys;
+         var _loc6_:Vector.<Object> = param1.values;
+         var _loc7_:int = _loc5_.length;
+         var _loc9_:SettingsControlProp = null;
+         var _loc13_:int = 0;
+         while(_loc13_ < _loc7_)
          {
-            _loc9_ = _loc6_[_loc14_];
-            _loc10_ = SettingsControlProp(_loc7_[_loc14_]);
-            _loc11_ = _loc10_.type;
-            _loc12_ = _loc9_ + _loc11_;
-            _loc13_ = this[_loc12_] as DisplayObject;
-            if(_loc13_)
+            _loc8_ = _loc5_[_loc13_];
+            _loc9_ = SettingsControlProp(_loc6_[_loc13_]);
+            _loc10_ = _loc9_.type;
+            _loc11_ = _loc8_ + _loc10_;
+            _loc12_ = this[_loc11_] as DisplayObject;
+            if(_loc12_)
             {
-               _loc15_ = _loc10_.current != null;
-               if(SettingsConfigHelper.TYPE_CHECKBOX == _loc11_)
+               _loc14_ = _loc9_.current != null;
+               if(SettingsConfigHelper.TYPE_CHECKBOX == _loc10_)
                {
-                  this.prepareCheckbox(CheckBox(_loc13_),_loc9_,_loc15_,_loc10_);
+                  this.prepareCheckbox(CheckBox(_loc12_),_loc8_,_loc14_,_loc9_);
                }
-               else if(SettingsConfigHelper.TYPE_SLIDER == _loc11_)
+               else if(SettingsConfigHelper.TYPE_SLIDER == _loc10_)
                {
-                  this.prepareSlider(Slider(_loc13_),_loc9_,_loc15_,_loc10_);
+                  this.prepareSlider(Slider(_loc12_),_loc8_,_loc14_,_loc9_);
                }
-               else if(SettingsConfigHelper.TYPE_DROPDOWN == _loc11_)
+               else if(SettingsConfigHelper.TYPE_DROPDOWN == _loc10_)
                {
-                  if(_loc9_ == SettingsConfigHelper.BULB_VOICES)
+                  if(_loc8_ == SettingsConfigHelper.BULB_VOICES)
                   {
-                     this._existsBulbVoices = _loc10_.extraData as Array;
+                     this._existsBulbVoices = _loc9_.extraData as Array;
                      App.utils.asserter.assertNotNull(this._existsBulbVoices,BULB_VOICES_NULL_ERROR + Errors.CANT_NULL);
                   }
-                  else if(_loc9_ == SettingsConfigHelper.ARTY_BULB_VOICES)
+                  else if(_loc8_ == SettingsConfigHelper.ARTY_BULB_VOICES)
                   {
-                     this._existsArtyBulbVoices = _loc10_.extraData as Array;
+                     this._existsArtyBulbVoices = _loc9_.extraData as Array;
                      App.utils.asserter.assertNotNull(this._existsArtyBulbVoices,ARTY_BULB_VOICES_NULL_ERROR + Errors.CANT_NULL);
                   }
-                  this.prepareDropdown(DropdownMenu(_loc13_),_loc15_,_loc10_);
+                  this.prepareDropdown(DropdownMenu(_loc12_),_loc14_,_loc9_);
                }
-               else if(SettingsConfigHelper.TYPE_KEYINPUT == _loc11_)
+               else if(SettingsConfigHelper.TYPE_KEYINPUT == _loc10_)
                {
-                  _loc16_ = KeyInput(_loc13_);
-                  _loc16_.key = Number(_loc10_.current);
-                  _loc16_.validateNow();
+                  _loc15_ = KeyInput(_loc12_);
+                  _loc15_.key = Number(_loc9_.current);
+                  _loc15_.validateNow();
                }
-               else if(SettingsConfigHelper.TYPE_BUTTON_BAR == _loc11_)
+               else if(SettingsConfigHelper.TYPE_BUTTON_BAR == _loc10_)
                {
-                  this.prepareButtonBar(ButtonBarEx(_loc13_),_loc9_,_loc15_,_loc10_);
+                  this.prepareButtonBar(ButtonBarEx(_loc12_),_loc8_,_loc14_,_loc9_);
                }
-               trySetLabel(_loc9_,_loc10_);
+               trySetLabel(_loc8_,_loc9_);
             }
-            else if(!_loc10_.readOnly)
+            else if(!_loc9_.readOnly)
             {
-               App.utils.asserter.assert(false,_loc12_ + Errors.WASNT_FOUND);
+               App.utils.asserter.assert(false,_loc11_ + Errors.WASNT_FOUND);
             }
-            _loc14_++;
+            _loc13_++;
          }
          this.updateMasterVolumeEnabled();
          this.updateVoiceChatEnabled();

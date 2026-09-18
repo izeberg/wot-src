@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld
 from skeletons.gui.battle_session import IBattleSessionProvider
 from visual_script import ASPECT
@@ -30,7 +31,9 @@ class BattleHUDMeta(Meta):
     def _avatar(self):
         if helpers.isPlayerAvatar():
             return BigWorld.player()
-        errorVScript(self, 'BigWorld.player is not player avatar.')
+        else:
+            errorVScript(self, 'BigWorld.player is not player avatar.')
+            return
 
 
 class BattleHUDEventMeta(BattleHUDMeta):

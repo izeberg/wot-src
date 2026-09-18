@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.battle_results.reusable.shared import VehicleDetailedInfo, VehicleSummarizeInfo, no_key_error
 from constants import DEATH_REASON_ALIVE
 

@@ -3,12 +3,6 @@ package net.wg.data.constants.generated
    public class BATTLEATLAS
    {
       
-      public static const BATTLE_LOADING_FORM_BG_TABLE:String = "battleLoadingFormBgTable";
-      
-      public static const BATTLE_LOADING_FORM_BG_TIPS:String = "battleLoadingFormBgTips";
-      
-      public static const BATTLE_LOADING_FORM_BG_TIPS_7X7:String = "battleLoadingFormBgTips_7x7";
-      
       public static const BATTLE_LOADING_FORM_MAP_BACKGROUND:String = "battleLoadingFormMapBackground";
       
       public static const BATTLE_LOADING_FORM_TIP_BACKGROUND:String = "battleLoadingFormTipBackground";
@@ -1051,12 +1045,6 @@ package net.wg.data.constants.generated
       
       public static const WAVE:String = "wave";
       
-      public static const RADIAL_MENU_BACKGROUND:String = "RadialMenu_background";
-      
-      public static const RADIAL_MENU_HOLE:String = "RadialMenu_hole";
-      
-      public static const RADIAL_MENU_LIGHT:String = "RadialMenu_light";
-      
       public static const RADIAL_EVENT_HOLE:String = "RadialEvent_hole";
       
       public static const RADIAL_SINGLE_BG:String = "radialSingleBg";
@@ -1278,6 +1266,12 @@ package net.wg.data.constants.generated
       public static const RIBBONS_ASSIST_TRACK:String = "ribbonsAssistTrack";
       
       public static const RIBBONS_BERSERKER:String = "ribbonsBerserker";
+      
+      public static const RIBBONS_BG_BLUE_LARGE:String = "ribbonsBgBlueLarge";
+      
+      public static const RIBBONS_BG_BLUE_MEDIUM:String = "ribbonsBgBlueMedium";
+      
+      public static const RIBBONS_BG_BLUE_SMALL:String = "ribbonsBgBlueSmall";
       
       public static const RIBBONS_BG_GREEN_LARGE:String = "ribbonsBgGreenLarge";
       
@@ -2123,6 +2117,8 @@ package net.wg.data.constants.generated
       
       public static const CZECH_CZ40_DBV_152:String = "czech-Cz40_DBV_152";
       
+      public static const CZECH_CZ41_PETRA:String = "czech-Cz41_Petra";
+      
       public static const CZECH_CZ43_OGAR:String = "czech-Cz43_Ogar";
       
       public static const CZECH_CZ46_VZ_63_P:String = "czech-Cz46_Vz_63P";
@@ -2228,6 +2224,8 @@ package net.wg.data.constants.generated
       public static const FRANCE_F142_M47_CHEVALIER:String = "france-F142_M47_Chevalier";
       
       public static const FRANCE_F143_FAUTEUR:String = "france-F143_Fauteur";
+      
+      public static const FRANCE_F145_SCARABEE:String = "france-F145_Scarabee";
       
       public static const FRANCE_F147_AMX29_BELIER:String = "france-F147_AMX29_Belier";
       
@@ -2506,6 +2504,8 @@ package net.wg.data.constants.generated
       public static const GERMANY_G120_M41_90_GRAND_FINAL:String = "germany-G120_M41_90_GrandFinal";
       
       public static const GERMANY_G121_GRILLE_15_L63:String = "germany-G121_Grille_15_L63";
+      
+      public static const GERMANY_G121_GRILLE_15_L63_FR:String = "germany-G121_Grille_15_L63_FR";
       
       public static const GERMANY_G122_VK6501_H:String = "germany-G122_VK6501H";
       
@@ -2809,6 +2809,8 @@ package net.wg.data.constants.generated
       
       public static const GERMANY_G89_LEOPARD1_BOB:String = "germany-G89_Leopard1_bob";
       
+      public static const GERMANY_G89_LEOPARD1_CFE_A:String = "germany-G89_Leopard1_CFE_A";
+      
       public static const GERMANY_G90_DW_II:String = "germany-G90_DW_II";
       
       public static const GERMANY_G90_DW_II_MAPS_TRAINING_DUMMY_HT_1:String = "germany-G90_DW_II_MapsTraining_Dummy_HT_1";
@@ -3097,6 +3099,8 @@ package net.wg.data.constants.generated
       
       public static const POLAND_PL27_SDP_WZ_66_T:String = "poland-Pl27_SDP_Wz_66T";
       
+      public static const POLAND_PL27_SDP_WZ_66_T_CFE_D:String = "poland-Pl27_SDP_Wz_66T_CFE_D";
+      
       public static const POLAND_PL28_SDP_WZ_60:String = "poland-Pl28_SDP_Wz_60";
       
       public static const POLAND_PL29_NC_WZ_70_T:String = "poland-Pl29_NC_Wz_70T";
@@ -3122,6 +3126,8 @@ package net.wg.data.constants.generated
       public static const POLAND_PL39_HUSARZ:String = "poland-Pl39_Husarz";
       
       public static const POLAND_PL40_KRAZOWNIK:String = "poland-Pl40_Krazownik";
+      
+      public static const POLAND_PL43_KRUK:String = "poland-Pl43_Kruk";
       
       public static const POLAND_PL44_KOLCZATKA:String = "poland-Pl44_Kolczatka";
       
@@ -3209,9 +3215,13 @@ package net.wg.data.constants.generated
       
       public static const SWEDEN_S37_AMBASSADOR:String = "sweden-S37_Ambassador";
       
+      public static const SWEDEN_S38_HUGGORM:String = "sweden-S38_Huggorm";
+      
       public static const SWEDEN_S39_STRV_M31:String = "sweden-S39_Strv_m31";
       
       public static const SWEDEN_S41_BV_111:String = "sweden-S41_BV_111";
+      
+      public static const SWEDEN_S42_STRV_T_FM_53:String = "sweden-S42_Strv_T_fm_53";
       
       public static const UK_GB01_MEDIUM_MARK_I:String = "uk-GB01_Medium_Mark_I";
       
@@ -3339,6 +3349,8 @@ package net.wg.data.constants.generated
       
       public static const UK_GB147_FV4025_CONTRIVER:String = "uk-GB147_FV4025_Contriver";
       
+      public static const UK_GB147_FV4025_CONTRIVER_7X7:String = "uk-GB147_FV4025_Contriver_7x7";
+      
       public static const UK_GB148_FV227_CONCEIVER:String = "uk-GB148_FV227_Conceiver";
       
       public static const UK_GB149_CENTURION_MK_I_A:String = "uk-GB149_Centurion_MkI_A";
@@ -3358,6 +3370,8 @@ package net.wg.data.constants.generated
       public static const UK_GB157_FV214T:String = "uk-GB157_FV214t";
       
       public static const UK_GB158_EXECUTOR:String = "uk-GB158_Executor";
+      
+      public static const UK_GB159_FV4602_VICTORIOUS:String = "uk-GB159_FV4602_Victorious";
       
       public static const UK_GB15_STUART_I:String = "uk-GB15_Stuart_I";
       
@@ -3480,6 +3494,8 @@ package net.wg.data.constants.generated
       public static const UK_GB86_CENTURION_ACTION_X_7X7:String = "uk-GB86_Centurion_Action_X_7x7";
       
       public static const UK_GB86_CENTURION_ACTION_X_CFE_A:String = "uk-GB86_Centurion_Action_X_CFE_A";
+      
+      public static const UK_GB86_CENTURION_ACTION_X_FR:String = "uk-GB86_Centurion_Action_X_FR";
       
       public static const UK_GB87_CHIEFTAIN_T95_TURRET:String = "uk-GB87_Chieftain_T95_turret";
       
@@ -3735,6 +3751,8 @@ package net.wg.data.constants.generated
       
       public static const USA_A183_XM69_HACKER:String = "usa-A183_XM69_Hacker";
       
+      public static const USA_A183_XM69_HACKER_7X7:String = "usa-A183_XM69_Hacker_7x7";
+      
       public static const USA_A186_XM94_SHADOW:String = "usa-A186_XM94_Shadow";
       
       public static const USA_A187_ARES_75:String = "usa-A187_Ares_75";
@@ -3754,6 +3772,8 @@ package net.wg.data.constants.generated
       public static const USA_A194_AHT_7:String = "usa-A194_AHT_7";
       
       public static const USA_A195_GORILLA:String = "usa-A195_Gorilla";
+      
+      public static const USA_A195_GORILLA_7X7:String = "usa-A195_Gorilla_7x7";
       
       public static const USA_A197_JEZEVEC:String = "usa-A197_Jezevec";
       
@@ -3844,6 +3864,8 @@ package net.wg.data.constants.generated
       public static const USA_A69_T110_E5_7X7:String = "usa-A69_T110E5_7x7";
       
       public static const USA_A69_T110_E5_CL:String = "usa-A69_T110E5_cl";
+      
+      public static const USA_A69_T110_E5_FR:String = "usa-A69_T110E5_FR";
       
       public static const USA_A71_T21:String = "usa-A71_T21";
       
@@ -4006,6 +4028,8 @@ package net.wg.data.constants.generated
       public static const USSR_R131_TANK_GAVALOV:String = "ussr-R131_Tank_Gavalov";
       
       public static const USSR_R132_VNII_100_LT:String = "ussr-R132_VNII_100LT";
+      
+      public static const USSR_R132_VNII_100_LT_FR:String = "ussr-R132_VNII_100LT_FR";
       
       public static const USSR_R133_KV_122:String = "ussr-R133_KV_122";
       
@@ -4177,9 +4201,13 @@ package net.wg.data.constants.generated
       
       public static const USSR_R228_KR_1:String = "ussr-R228_KR_1";
       
+      public static const USSR_R228_KR_1_7X7:String = "ussr-R228_KR_1_7x7";
+      
       public static const USSR_R22_T_46:String = "ussr-R22_T-46";
       
       public static const USSR_R230_OBJECT_432_U:String = "ussr-R230_Object_432U";
+      
+      public static const USSR_R230_OBJECT_432_U_7X7:String = "ussr-R230_Object_432U_7x7";
       
       public static const USSR_R231_BURYAN:String = "ussr-R231_Buryan";
       
@@ -4669,6 +4697,16 @@ package net.wg.data.constants.generated
       
       public static const BADGE_244:String = "badge_244";
       
+      public static const BADGE_245:String = "badge_245";
+      
+      public static const BADGE_246:String = "badge_246";
+      
+      public static const BADGE_247:String = "badge_247";
+      
+      public static const BADGE_248:String = "badge_248";
+      
+      public static const BADGE_249:String = "badge_249";
+      
       public static const BADGE_25:String = "badge_25";
       
       public static const BADGE_26:String = "badge_26";
@@ -5049,40 +5087,6 @@ package net.wg.data.constants.generated
       
       public static const COMP7_POINT_RECON_MINIMAP_ENTRY_UI:String = "Comp7PointReconMinimapEntryUI";
       
-      public static const FALL_TANKS_MINIMAP_B1:String = "fallTanks_minimap_b1";
-      
-      public static const FALL_TANKS_MINIMAP_B2:String = "fallTanks_minimap_b2";
-      
-      public static const FALL_TANKS_MINIMAP_B3:String = "fallTanks_minimap_b3";
-      
-      public static const FALL_TANKS_MINIMAP_B4:String = "fallTanks_minimap_b4";
-      
-      public static const FALL_TANKS_MINIMAP_B5:String = "fallTanks_minimap_b5";
-      
-      public static const FALL_TANKS_MINIMAP_B6:String = "fallTanks_minimap_b6";
-      
-      public static const AT_SPG_DEAD_WHITE:String = "AT-SPG_dead_white";
-      
-      public static const AT_SPG_WHITE:String = "AT-SPG_white";
-      
-      public static const HEAVY_TANK_DEAD_WHITE:String = "heavyTank_dead_white";
-      
-      public static const HEAVY_TANK_WHITE:String = "heavyTank_white";
-      
-      public static const LIGHT_TANK_DEAD_WHITE:String = "lightTank_dead_white";
-      
-      public static const LIGHT_TANK_WHITE:String = "lightTank_white";
-      
-      public static const MEDIUM_TANK_DEAD_WHITE:String = "mediumTank_dead_white";
-      
-      public static const MEDIUM_TANK_WHITE:String = "mediumTank_white";
-      
-      public static const SPG_DEAD_WHITE:String = "SPG_dead_white";
-      
-      public static const SPG_WHITE:String = "SPG_white";
-      
-      public static const RIBBONS_DISINTEGRATED:String = "ribbonsDisintegrated";
-      
       public static const SM_MINIMAP_FOG_1:String = "sm_minimap_fog_1";
       
       public static const SM_MINIMAP_FOG_2:String = "sm_minimap_fog_2";
@@ -5105,89 +5109,551 @@ package net.wg.data.constants.generated
       
       public static const BUNKER_ENEMY_DEAD:String = "BunkerEnemyDead";
       
-      public static const WT_MINIMAP_B1:String = "wt_minimap_b1";
+      public static const BATTLE_LOADING_FORM_BG_TABLE:String = "battleLoadingFormBgTable";
       
-      public static const WT_MINIMAP_B2:String = "wt_minimap_b2";
+      public static const BATTLE_LOADING_FORM_BG_TIPS:String = "battleLoadingFormBgTips";
       
-      public static const WT_MINIMAP_B3:String = "wt_minimap_b3";
+      public static const BATTLE_LOADING_FORM_BG_TIPS_7X7:String = "battleLoadingFormBgTips_7x7";
       
-      public static const WT_MINIMAP_B4:String = "wt_minimap_b4";
+      public static const FALLOUT_SCORE_PANEL_DIVIDER:String = "falloutScorePanelDivider";
       
-      public static const WT_MINIMAP_B5:String = "wt_minimap_b5";
+      public static const GREEN_FALLOUT_SCORE_PANEL_ARROW:String = "greenFalloutScorePanelArrow";
       
-      public static const WT_MINIMAP_B6:String = "wt_minimap_b6";
+      public static const PURPLE_FALLOUT_SCORE_PANEL_ARROW:String = "purpleFalloutScorePanelArrow";
       
-      public static const MINIBOSS_ALLY_DEAD_GREEN:String = "miniboss_ally_dead_green";
+      public static const RED_FALLOUT_SCORE_PANEL_ARROW:String = "redFalloutScorePanelArrow";
       
-      public static const MINIBOSS_ALLY_GREEN:String = "miniboss_ally_green";
+      public static const HELP_WINDOW_BG:String = "helpWindow_bg";
       
-      public static const MINIBOSS_ENEMY_DEAD_PURPLE:String = "miniboss_enemy_dead_purple";
+      public static const HELP_WINDOW_BOTTOM_BG:String = "helpWindow_bottom_bg";
       
-      public static const MINIBOSS_ENEMY_DEAD_RED:String = "miniboss_enemy_dead_red";
+      public static const HELP_WINDOW_INFO:String = "helpWindow_info";
       
-      public static const MINIBOSS_ENEMY_PURPLE:String = "miniboss_enemy_purple";
+      public static const HELP_WINDOW_INFO_BLIND:String = "helpWindow_info_blind";
       
-      public static const MINIBOSS_ENEMY_RED:String = "miniboss_enemy_red";
+      public static const RADIAL_MENU_BACKGROUND:String = "RadialMenu_background";
       
-      public static const WTBOSS_ENEMY_DEAD_PURPLE:String = "wtboss_enemy_dead_purple";
+      public static const RADIAL_MENU_HOLE:String = "RadialMenu_hole";
       
-      public static const WTBOSS_ENEMY_DEAD_RED:String = "wtboss_enemy_dead_red";
+      public static const RADIAL_MENU_LIGHT:String = "RadialMenu_light";
       
-      public static const WTBOSS_ENEMY_PURPLE:String = "wtboss_enemy_purple";
+      public static const EXT_ENTRY:String = "extEntry";
       
-      public static const WTBOSS_ENEMY_RED:String = "wtboss_enemy_red";
+      public static const ALPHA_EXT_RED:String = "alpha_ext_red";
       
-      public static const WT_SPECIAL_BOSS_ENEMY_DEAD_PURPLE:String = "wtSpecialBoss_enemy_dead_purple";
+      public static const AT_SPG_EXT_ALLY_GREEN:String = "AT-SPG_ext_ally_green";
       
-      public static const WT_SPECIAL_BOSS_ENEMY_DEAD_RED:String = "wtSpecialBoss_enemy_dead_red";
+      public static const HEAVY_TANK_EXT_ALLY_GREEN:String = "heavyTank_ext_ally_green";
       
-      public static const WT_SPECIAL_BOSS_ENEMY_PURPLE:String = "wtSpecialBoss_enemy_purple";
+      public static const LIGHT_TANK_EXT_ALLY_GREEN:String = "lightTank_ext_ally_green";
       
-      public static const WT_SPECIAL_BOSS_ENEMY_RED:String = "wtSpecialBoss_enemy_red";
+      public static const MEDIUM_TANK_EXT_ALLY_GREEN:String = "mediumTank_ext_ally_green";
       
-      public static const RIBBONS_DAMAGE_BY_CIRCUIT_OVERLOAD:String = "ribbonsDamageByCircuitOverload";
+      public static const SPG_EXT_ALLY_GREEN:String = "SPG_ext_ally_green";
       
-      public static const EVENT_STATS_SELF_BG:String = "eventStats_selfBg";
+      public static const AT_SPG_EXT_ALLY_DEAD_GREEN:String = "AT-SPG_ext_ally_dead_green";
       
-      public static const EVENT_STATS_TABLE_BG:String = "eventStats_tableBg";
+      public static const HEAVY_TANK_EXT_ALLY_DEAD_GREEN:String = "heavyTank_ext_ally_dead_green";
       
-      public static const EVENT_STATS_TABLE_FRAGS:String = "eventStats_tableFrags";
+      public static const LIGHT_TANK_EXT_ALLY_DEAD_GREEN:String = "lightTank_ext_ally_dead_green";
       
-      public static const FULL_STATS_VEHICLE_TYPE_WT_BOSS:String = "fullStatsVehicleType_wt_boss";
+      public static const MEDIUM_TANK_EXT_ALLY_DEAD_GREEN:String = "mediumTank_ext_ally_dead_green";
       
-      public static const FULL_STATS_VEHICLE_TYPE_WT_MEDIUM_TANK:String = "fullStatsVehicleType_wt_mediumTank";
+      public static const SPG_EXT_ALLY_DEAD_GREEN:String = "SPG_ext_ally_dead_green";
       
-      public static const WHITE_TIGER_PLAYERS_PANEL_BG:String = "whiteTigerPlayersPanel_bg";
+      public static const AT_SPG_EXT_ENEMY_DEAD_PURPLE:String = "AT-SPG_ext_enemy_dead_purple";
       
-      public static const WHITE_TIGER_PLAYERS_PANEL_DEAD_BG:String = "whiteTigerPlayersPanel_deadBg";
+      public static const HEAVY_TANK_EXT_ENEMY_DEAD_PURPLE:String = "heavyTank_ext_enemy_dead_purple";
       
-      public static const CZECH_CZ04_T50_51_WAF_HOUND_3_D_ST:String = "czech-Cz04_T50_51_Waf_Hound_3DSt";
+      public static const LIGHT_TANK_EXT_ENEMY_DEAD_PURPLE:String = "lightTank_ext_enemy_dead_purple";
       
-      public static const FRANCE_F18_BAT_CHATILLON25T_HOUND_TLXXL:String = "france-F18_Bat_Chatillon25t_hound_TLXXL";
+      public static const MEDIUM_TANK_EXT_ENEMY_DEAD_PURPLE:String = "mediumTank_ext_enemy_dead_purple";
       
-      public static const GERMANY_G1016_PZ_VIB_TIGER_II_WT_BOT:String = "germany-G1016_PzVIB_Tiger_II_WT_bot";
+      public static const SPG_EXT_ENEMY_DEAD_PURPLE:String = "SPG_ext_enemy_dead_purple";
       
-      public static const GERMANY_G1054_E_50_WT_BOT:String = "germany-G1054_E-50_WT_bot";
+      public static const AT_SPG_EXT_ENEMY_DEAD_RED:String = "AT-SPG_ext_enemy_dead_red";
       
-      public static const GERMANY_G1055_E_75_WT_BOT:String = "germany-G1055_E-75_WT_bot";
+      public static const HEAVY_TANK_EXT_ENEMY_DEAD_RED:String = "heavyTank_ext_enemy_dead_red";
       
-      public static const GERMANY_G1064_PANTHER_II_WT_BOT:String = "germany-G1064_Panther_II_WT_bot";
+      public static const LIGHT_TANK_EXT_ENEMY_DEAD_RED:String = "lightTank_ext_enemy_dead_red";
       
-      public static const GERMANY_G1073_E50_AUSF_M_WT_BOT:String = "germany-G1073_E50_Ausf_M_WT_bot";
+      public static const MEDIUM_TANK_EXT_ENEMY_DEAD_RED:String = "mediumTank_ext_enemy_dead_red";
       
-      public static const GERMANY_G1103_RU_251_WT_BOT:String = "germany-G1103_RU_251_WT_bot";
+      public static const SPG_EXT_ENEMY_DEAD_RED:String = "SPG_ext_enemy_dead_red";
       
-      public static const GERMANY_G1134_PZ_KPFW_VII_WT_BOT:String = "germany-G1134_PzKpfw_VII_WT_bot";
+      public static const AT_SPG_EXT_SQUADMAN_DEAD_YELLOW:String = "AT-SPG_ext_squadman_dead_yellow";
       
-      public static const GERMANY_G89_LEOPARD1_WT24_MINI_BOSS_3_DST:String = "germany-G89_Leopard1_WT24_Mini_Boss_3Dst";
+      public static const HEAVY_TANK_EXT_SQUADMAN_DEAD_YELLOW:String = "heavyTank_ext_squadman_dead_yellow";
       
-      public static const GERMANY_G98_WAFFENTRAGER_E100_TLXXL:String = "germany-G98_Waffentrager_E100_TLXXL";
+      public static const LIGHT_TANK_EXT_SQUADMAN_DEAD_YELLOW:String = "lightTank_ext_squadman_dead_yellow";
       
-      public static const GERMANY_G98_WAFFENTRAGER_E100_TLXXL_S:String = "germany-G98_Waffentrager_E100_TLXXL_S";
+      public static const MEDIUM_TANK_EXT_SQUADMAN_DEAD_YELLOW:String = "mediumTank_ext_squadman_dead_yellow";
       
-      public static const USA_A120_M48_A5_HOUND_TLXXL:String = "usa-A120_M48A5_hound_TLXXL";
+      public static const SPG_EXT_SQUADMAN_DEAD_YELLOW:String = "SPG_ext_squadman_dead_yellow";
       
-      public static const USSR_R97_OBJECT_140_HOUND_TLXXL:String = "ussr-R97_Object_140_hound_TLXXL";
+      public static const AT_SPG_EXT_SQUADMAN_DEAD_GOLD:String = "AT-SPG_ext_squadman_dead_gold";
+      
+      public static const HEAVY_TANK_EXT_SQUADMAN_DEAD_GOLD:String = "heavyTank_ext_squadman_dead_gold";
+      
+      public static const LIGHT_TANK_EXT_SQUADMAN_DEAD_GOLD:String = "lightTank_ext_squadman_dead_gold";
+      
+      public static const MEDIUM_TANK_EXT_SQUADMAN_DEAD_GOLD:String = "mediumTank_ext_squadman_dead_gold";
+      
+      public static const SPG_EXT_SQUADMAN_DEAD_GOLD:String = "SPG_ext_squadman_dead_gold";
+      
+      public static const AT_SPG_EXT_TEAM_KILLER_DEAD_BLUE:String = "AT-SPG_ext_teamKiller_dead_blue";
+      
+      public static const HEAVY_TANK_EXT_TEAM_KILLER_DEAD_BLUE:String = "heavyTank_ext_teamKiller_dead_blue";
+      
+      public static const LIGHT_TANK_EXT_TEAM_KILLER_DEAD_BLUE:String = "lightTank_ext_teamKiller_dead_blue";
+      
+      public static const MEDIUM_TANK_EXT_TEAM_KILLER_DEAD_BLUE:String = "mediumTank_ext_teamKiller_dead_blue";
+      
+      public static const SPG_EXT_TEAM_KILLER_DEAD_BLUE:String = "SPG_ext_teamKiller_dead_blue";
+      
+      public static const AT_SPG_EXT_ENEMY_RED:String = "AT-SPG_ext_enemy_red";
+      
+      public static const HEAVY_TANK_EXT_ENEMY_RED:String = "heavyTank_ext_enemy_red";
+      
+      public static const LIGHT_TANK_EXT_ENEMY_RED:String = "lightTank_ext_enemy_red";
+      
+      public static const MEDIUM_TANK_EXT_ENEMY_RED:String = "mediumTank_ext_enemy_red";
+      
+      public static const SPG_EXT_ENEMY_RED:String = "SPG_ext_enemy_red";
+      
+      public static const AT_SPG_EXT_ENEMY_PURPLE:String = "AT-SPG_ext_enemy_purple";
+      
+      public static const HEAVY_TANK_EXT_ENEMY_PURPLE:String = "heavyTank_ext_enemy_purple";
+      
+      public static const LIGHT_TANK_EXT_ENEMY_PURPLE:String = "lightTank_ext_enemy_purple";
+      
+      public static const MEDIUM_TANK_EXT_ENEMY_PURPLE:String = "mediumTank_ext_enemy_purple";
+      
+      public static const SPG_EXT_ENEMY_PURPLE:String = "SPG_ext_enemy_purple";
+      
+      public static const LASTLIT_EXT_ALLY_GREEN:String = "lastlit_ext_ally_green";
+      
+      public static const LASTLIT_EXT_ENEMY_PURPLE:String = "lastlit_ext_enemy_purple";
+      
+      public static const LASTLIT_EXT_ENEMY_RED:String = "lastlit_ext_enemy_red";
+      
+      public static const LASTLIT_EXT_SQUADMAN_GOLD:String = "lastlit_ext_squadman_gold";
+      
+      public static const LASTLIT_EXT_SQUADMAN_YELLOW:String = "lastlit_ext_squadman_yellow";
+      
+      public static const LASTLIT_EXT_TEAM_KILLER_BLUE:String = "lastlit_ext_teamKiller_blue";
+      
+      public static const AT_SPG_EXT_SQUADMAN_GOLD:String = "AT-SPG_ext_squadman_gold";
+      
+      public static const HEAVY_TANK_EXT_SQUADMAN_GOLD:String = "heavyTank_ext_squadman_gold";
+      
+      public static const LIGHT_TANK_EXT_SQUADMAN_GOLD:String = "lightTank_ext_squadman_gold";
+      
+      public static const MEDIUM_TANK_EXT_SQUADMAN_GOLD:String = "mediumTank_ext_squadman_gold";
+      
+      public static const SPG_EXT_SQUADMAN_GOLD:String = "SPG_ext_squadman_gold";
+      
+      public static const AT_SPG_EXT_SQUADMAN_YELLOW:String = "AT-SPG_ext_squadman_yellow";
+      
+      public static const HEAVY_TANK_EXT_SQUADMAN_YELLOW:String = "heavyTank_ext_squadman_yellow";
+      
+      public static const LIGHT_TANK_EXT_SQUADMAN_YELLOW:String = "lightTank_ext_squadman_yellow";
+      
+      public static const MEDIUM_TANK_EXT_SQUADMAN_YELLOW:String = "mediumTank_ext_squadman_yellow";
+      
+      public static const SPG_EXT_SQUADMAN_YELLOW:String = "SPG_ext_squadman_yellow";
+      
+      public static const AT_SPG_EXT_TEAM_KILLER_BLUE:String = "AT-SPG_ext_teamKiller_blue";
+      
+      public static const HEAVY_TANK_EXT_TEAM_KILLER_BLUE:String = "heavyTank_ext_teamKiller_blue";
+      
+      public static const LIGHT_TANK_EXT_TEAM_KILLER_BLUE:String = "lightTank_ext_teamKiller_blue";
+      
+      public static const MEDIUM_TANK_EXT_TEAM_KILLER_BLUE:String = "mediumTank_ext_teamKiller_blue";
+      
+      public static const SPG_EXT_TEAM_KILLER_BLUE:String = "SPG_ext_teamKiller_blue";
+      
+      public static const EXAMPLE_EVENT:String = "example_event";
+      
+      public static const LIGHTNING:String = "lightning";
+      
+      public static const FORT_RUSH_LOADING_BG:String = "fort_rush_loading_bg";
+      
+      public static const FORT_RUSH_POINTS:String = "fort_rush_points";
+      
+      public static const FORT_RUSH_BASE_CAPTURE_HEAL:String = "fort_rush_base_capture_heal";
+      
+      public static const FORT_RUSH_POINTS_RIBBON:String = "fort_rush_points_ribbon";
+      
+      public static const DAMAGE_LOG_ALPHA_16X16:String = "damageLog_alpha_16x16";
+      
+      public static const DAMAGE_LOG_BOMBER_16X16:String = "damageLog_bomber_16x16";
+      
+      public static const DAMAGE_LOG_BOMBER_ALPHA_16X16:String = "damageLog_bomber_alpha_16x16";
+      
+      public static const DAMAGE_LOG_BOSS_16X16:String = "damageLog_boss_16x16";
+      
+      public static const DAMAGE_LOG_CATCHER_16X16:String = "damageLog_catcher_16x16";
+      
+      public static const DAMAGE_LOG_CHARGER_16X16:String = "damageLog_charger_16x16";
+      
+      public static const DAMAGE_LOG_CORROSION_16X16:String = "damageLog_corrosion_16x16";
+      
+      public static const DAMAGE_LOG_CORROSION_16X16_BLIND:String = "damageLog_corrosion_16x16Blind";
+      
+      public static const DAMAGE_LOG_DAMAGE_OVERTIME_ZONE_16X16:String = "damageLog_damage_overtime_zone_16x16";
+      
+      public static const DAMAGE_LOG_DAMAGE_OVERTIME_ZONE_16X16_BLIND:String = "damageLog_damage_overtime_zone_16x16Blind";
+      
+      public static const DAMAGE_LOG_DETONATOR_16X16:String = "damageLog_detonator_16x16";
+      
+      public static const DAMAGE_LOG_HIVE_16X16:String = "damageLog_hive_16x16";
+      
+      public static const DAMAGE_LOG_HUNTER_16X16:String = "damageLog_hunter_16x16";
+      
+      public static const DAMAGE_LOG_IGNITE_ZONE_16X16:String = "damageLog_ignite_zone_16x16";
+      
+      public static const DAMAGE_LOG_IGNITE_ZONE_DAMAGE_16X16:String = "damageLog_ignite_zone_damage_16x16";
+      
+      public static const DAMAGE_LOG_IGNITE_ZONE_DAMAGE_16X16_BLIND:String = "damageLog_ignite_zone_damage_16x16Blind";
+      
+      public static const DAMAGE_LOG_RIPPER_16X16:String = "damageLog_ripper_16x16";
+      
+      public static const DAMAGE_LOG_RUNNER_16X16:String = "damageLog_runner_16x16";
+      
+      public static const DAMAGE_LOG_SENTRY_16X16:String = "damageLog_sentry_16x16";
+      
+      public static const DAMAGE_LOG_STUN_ZONE_DAMAGE_16X16:String = "damageLog_stun_zone_damage_16x16";
+      
+      public static const DAMAGE_LOG_STUN_ZONE_DAMAGE_16X16_BLIND:String = "damageLog_stun_zone_damage_16x16Blind";
+      
+      public static const DAMAGE_LOG_TURRET_16X16:String = "damageLog_turret_16x16";
+      
+      public static const EVENT_DAMAGE_OVERTIME_ZONE:String = "eventDamageOvertimeZone";
+      
+      public static const EVENT_DEATH_ZONE:String = "eventDeathZone";
+      
+      public static const EVENT_IGNITE_ZONE:String = "eventIgniteZone";
+      
+      public static const EVENT_STUN_ZONE:String = "eventStunZone";
+      
+      public static const EVENT_VOLOT_REPLIED:String = "eventVolotReplied";
+      
+      public static const MAP_ICON_SHELLS:String = "mapIconShells";
+      
+      public static const MAP_ICON_SOUL:String = "mapIconSoul";
+      
+      public static const MAP_VOLOT_DISABLED:String = "mapVolotDisabled";
+      
+      public static const MAP_VOLOT_DISABLED_CAMP:String = "mapVolotDisabledCamp";
+      
+      public static const MAP_VOLOT_READY:String = "mapVolotReady";
+      
+      public static const MAP_VOLOT_READY_CAMP:String = "mapVolotReadyCamp";
+      
+      public static const HW_ENEMY_CAMP:String = "HWEnemyCamp";
+      
+      public static const HW_ENEMY_CAMP_REPLIED:String = "HWEnemyCampReplied";
+      
+      public static const HW_CAMP_1:String = "hw_camp_1";
+      
+      public static const ALPHA_ENEMY_DEAD_PURPLE:String = "alpha_enemy_dead_purple";
+      
+      public static const ALPHA_ENEMY_DEAD_RED:String = "alpha_enemy_dead_red";
+      
+      public static const ALPHA_ENEMY_PURPLE:String = "alpha_enemy_purple";
+      
+      public static const ALPHA_ENEMY_RED:String = "alpha_enemy_red";
+      
+      public static const BOMBER_ALPHA_ENEMY_DEAD_PURPLE:String = "bomber_alpha_enemy_dead_purple";
+      
+      public static const BOMBER_ALPHA_ENEMY_DEAD_RED:String = "bomber_alpha_enemy_dead_red";
+      
+      public static const BOMBER_ALPHA_ENEMY_PURPLE:String = "bomber_alpha_enemy_purple";
+      
+      public static const BOMBER_ALPHA_ENEMY_RED:String = "bomber_alpha_enemy_red";
+      
+      public static const BOMBER_ENEMY_DEAD_PURPLE:String = "bomber_enemy_dead_purple";
+      
+      public static const BOMBER_ENEMY_DEAD_RED:String = "bomber_enemy_dead_red";
+      
+      public static const BOMBER_ENEMY_PURPLE:String = "bomber_enemy_purple";
+      
+      public static const BOMBER_ENEMY_RED:String = "bomber_enemy_red";
+      
+      public static const CATCHER_ENEMY_DEAD_PURPLE:String = "catcher_enemy_dead_purple";
+      
+      public static const CATCHER_ENEMY_DEAD_RED:String = "catcher_enemy_dead_red";
+      
+      public static const CATCHER_ENEMY_PURPLE:String = "catcher_enemy_purple";
+      
+      public static const CATCHER_ENEMY_RED:String = "catcher_enemy_red";
+      
+      public static const CHARGER_ENEMY_DEAD_PURPLE:String = "charger_enemy_dead_purple";
+      
+      public static const CHARGER_ENEMY_DEAD_RED:String = "charger_enemy_dead_red";
+      
+      public static const CHARGER_ENEMY_PURPLE:String = "charger_enemy_purple";
+      
+      public static const CHARGER_ENEMY_RED:String = "charger_enemy_red";
+      
+      public static const DETONATOR_ENEMY_DEAD_PURPLE:String = "detonator_enemy_dead_purple";
+      
+      public static const DETONATOR_ENEMY_DEAD_RED:String = "detonator_enemy_dead_red";
+      
+      public static const DETONATOR_ENEMY_PURPLE:String = "detonator_enemy_purple";
+      
+      public static const DETONATOR_ENEMY_RED:String = "detonator_enemy_red";
+      
+      public static const HIVE_ENEMY_DEAD_PURPLE:String = "hive_enemy_dead_purple";
+      
+      public static const HIVE_ENEMY_DEAD_RED:String = "hive_enemy_dead_red";
+      
+      public static const HIVE_ENEMY_PURPLE:String = "hive_enemy_purple";
+      
+      public static const HIVE_ENEMY_RED:String = "hive_enemy_red";
+      
+      public static const HUNTER_ENEMY_DEAD_PURPLE:String = "hunter_enemy_dead_purple";
+      
+      public static const HUNTER_ENEMY_DEAD_RED:String = "hunter_enemy_dead_red";
+      
+      public static const HUNTER_ENEMY_PURPLE:String = "hunter_enemy_purple";
+      
+      public static const HUNTER_ENEMY_RED:String = "hunter_enemy_red";
+      
+      public static const HWBOSS_ENEMY_DEAD_PURPLE:String = "hwboss_enemy_dead_purple";
+      
+      public static const HWBOSS_ENEMY_DEAD_RED:String = "hwboss_enemy_dead_red";
+      
+      public static const HWBOSS_ENEMY_PURPLE:String = "hwboss_enemy_purple";
+      
+      public static const HWBOSS_ENEMY_RED:String = "hwboss_enemy_red";
+      
+      public static const LASTLIT_ALLY_DEAD_GREEN:String = "lastlit_ally_dead_green";
+      
+      public static const LASTLIT_ENEMY_DEAD_PURPLE:String = "lastlit_enemy_dead_purple";
+      
+      public static const LASTLIT_ENEMY_DEAD_RED:String = "lastlit_enemy_dead_red";
+      
+      public static const LASTLIT_SQUADMAN_DEAD_GOLD:String = "lastlit_squadman_dead_gold";
+      
+      public static const LASTLIT_SQUADMAN_DEAD_YELLOW:String = "lastlit_squadman_dead_yellow";
+      
+      public static const RIPPER_ENEMY_DEAD_PURPLE:String = "ripper_enemy_dead_purple";
+      
+      public static const RIPPER_ENEMY_DEAD_RED:String = "ripper_enemy_dead_red";
+      
+      public static const RIPPER_ENEMY_PURPLE:String = "ripper_enemy_purple";
+      
+      public static const RIPPER_ENEMY_RED:String = "ripper_enemy_red";
+      
+      public static const RUNNER_ENEMY_DEAD_PURPLE:String = "runner_enemy_dead_purple";
+      
+      public static const RUNNER_ENEMY_DEAD_RED:String = "runner_enemy_dead_red";
+      
+      public static const RUNNER_ENEMY_PURPLE:String = "runner_enemy_purple";
+      
+      public static const RUNNER_ENEMY_RED:String = "runner_enemy_red";
+      
+      public static const SENTRY_ENEMY_DEAD_PURPLE:String = "sentry_enemy_dead_purple";
+      
+      public static const SENTRY_ENEMY_DEAD_RED:String = "sentry_enemy_dead_red";
+      
+      public static const SENTRY_ENEMY_PURPLE:String = "sentry_enemy_purple";
+      
+      public static const SENTRY_ENEMY_RED:String = "sentry_enemy_red";
+      
+      public static const TURRET_ENEMY_DEAD_PURPLE:String = "turret_enemy_dead_purple";
+      
+      public static const TURRET_ENEMY_DEAD_RED:String = "turret_enemy_dead_red";
+      
+      public static const TURRET_ENEMY_PURPLE:String = "turret_enemy_purple";
+      
+      public static const TURRET_ENEMY_RED:String = "turret_enemy_red";
+      
+      public static const CHAT_MUTE_ICON:String = "chat_mute_icon";
+      
+      public static const HW_CHAT_MUTE_ICON:String = "hw_chat_mute_icon";
+      
+      public static const HW_ICON_TOXIC_CHAT_OFF:String = "hw_icon_toxic_chat_off";
+      
+      public static const HW_LEFT_STATS_MUTE:String = "hw_left_stats_mute";
+      
+      public static const HW_PLAYERS_PANEL_SELF_BG:String = "hw_playersPanel_selfBg";
+      
+      public static const HW_SQUAD_INVITE_RECEIVED:String = "hw_squad_inviteReceived";
+      
+      public static const HW_SQUAD_INVITE_RECEIVED_FROM_SQUAD:String = "hw_squad_inviteReceivedFromSquad";
+      
+      public static const VOICE_MUTE_ICON:String = "voice_mute_icon";
+      
+      public static const HW_POSTMORTEM_VEHICLE_PANEL_BG:String = "hw_postmortem_vehicle_panel_bg";
+      
+      public static const POSTMORTEM_TIPS_HINTBG:String = "postmortemTips_hintbg";
+      
+      public static const BOMBER_RESIST:String = "bomber_resist";
+      
+      public static const BULLET_IGNITE:String = "bullet_ignite";
+      
+      public static const BULLET_VAMPIRE:String = "bullet_vampire";
+      
+      public static const CRIT_DEFENCE:String = "crit_defence";
+      
+      public static const HW_ANOMALY:String = "hw_anomaly";
+      
+      public static const HW_RIBBON_CORROSION:String = "hw_ribbonCorrosion";
+      
+      public static const HW_RIBBON_CORROSION_BLIND:String = "hw_ribbonCorrosionBlind";
+      
+      public static const HW_RIBBONS_DAMAGE_IGNITE:String = "hw_ribbonsDamageIgnite";
+      
+      public static const HW_RIBBONS_DAMAGE_IGNITE_BLIND:String = "hw_ribbonsDamageIgniteBlind";
+      
+      public static const HW_RIBBONS_DAMAGE_OVERTIME:String = "hw_ribbonsDamageOvertime";
+      
+      public static const HW_RIBBONS_DAMAGE_OVERTIME_BLIND:String = "hw_ribbonsDamageOvertimeBlind";
+      
+      public static const HW_RIBBONS_DAMAGE_STUN:String = "hw_ribbonsDamageStun";
+      
+      public static const HW_RIBBONS_DAMAGE_STUN_BLIND:String = "hw_ribbonsDamageStunBlind";
+      
+      public static const HW_RIBBON_PBS_REWARD:String = "hw_ribbon_pbs_reward";
+      
+      public static const INSTANT_KILL:String = "instant_kill";
+      
+      public static const SHELLS_PICKUP:String = "shells_pickup";
+      
+      public static const SOULS_PICKUP:String = "souls_pickup";
+      
+      public static const CZECH_CZ34_VZ_71_TESAK_HW_BOT:String = "czech-Cz34_Vz_71_Tesak_HW_BOT";
+      
+      public static const FRANCE_F110_LYNX_6X6_HW_BOT:String = "france-F110_Lynx_6x6_HW_BOT";
+      
+      public static const FRANCE_F17_AMX_13_90_HALLOWEEN_EVENT:String = "france-F17_AMX_13_90_Halloween_event";
+      
+      public static const FRANCE_F17_AMX_13_90_HW_BOT:String = "france-F17_AMX_13_90_HW_BOT";
+      
+      public static const FRANCE_F71_AMX_30_PROTOTYPE_HW_BOT:String = "france-F71_AMX_30_prototype_HW_BOT";
+      
+      public static const FRANCE_F73_M4_A1_REVALORISE_HW_BOT:String = "france-F73_M4A1_Revalorise_HW_BOT";
+      
+      public static const FRANCE_F74_AMX_M4_1949_HW_BOT:String = "france-F74_AMX_M4_1949_HW_BOT";
+      
+      public static const FRANCE_F82_AMX_M4_MLE1949_TER_HW_BOT:String = "france-F82_AMX_M4_Mle1949_Ter_HW_BOT";
+      
+      public static const FRANCE_F83_AMX_M4_MLE1949_BIS_HW_BOT:String = "france-F83_AMX_M4_Mle1949_Bis_HW_BOT";
+      
+      public static const GERMANY_G00_BOMBER_HELL:String = "germany-G00_Bomber_Hell";
+      
+      public static const GERMANY_G00_K_BOMBER_HW_21_AI:String = "germany-G00_K_bomber__HW_21_AI";
+      
+      public static const GERMANY_G00_SPIDER_BOSS_HW26_BOT:String = "germany-G00_Spider_Boss_HW26_bot";
+      
+      public static const GERMANY_G113_SP_I_C_HW_BOT:String = "germany-G113_SP_I_C_HW_BOT";
+      
+      public static const GERMANY_G114_RHEINMETALL_SKORPIAN_HW_BOT:String = "germany-G114_Rheinmetall_Skorpian_HW_BOT";
+      
+      public static const GERMANY_G142_M48_R_PZ_HW_BOT:String = "germany-G142_M48RPz_HW_BOT";
+      
+      public static const GERMANY_G146_E100_HELL_BOSS:String = "germany-G146_E100_Hell_Boss";
+      
+      public static const GERMANY_G171_E77_HW_BOT:String = "germany-G171_E77_HW_BOT";
+      
+      public static const GERMANY_G180_E100_HELL_BOSS_HW24:String = "germany-G180_E100_Hell_Boss_HW24";
+      
+      public static const GERMANY_G181_E100_AUTOCANNON_BOSS_HW25_BOT:String = "germany-G181_E100_Autocannon_Boss_HW25_bot";
+      
+      public static const GERMANY_G181_E100_CANNON_BOSS_HW24:String = "germany-G181_E100_Cannon_Boss_HW24";
+      
+      public static const GERMANY_G25_PZ_II_LUCHS_HELL:String = "germany-G25_PzII_Luchs_HELL";
+      
+      public static const GERMANY_G25_PZ_II_LUCHS_HELL_HALL:String = "germany-G25_PzII_Luchs_HELL_HALL";
+      
+      public static const GERMANY_G54_E_50_HALL_MINION:String = "germany-G54_E-50_Hall_minion";
+      
+      public static const GERMANY_G57_PZ_VI_TIGER_P_HW_BOT:String = "germany-G57_PzVI_Tiger_P_HW_BOT";
+      
+      public static const GERMANY_G58_VK4502_P_HW_BOT:String = "germany-G58_VK4502P_HW_BOT";
+      
+      public static const GERMANY_G64_PANTHER_II_HALL_MINION:String = "germany-G64_Panther_II_Hall_minion";
+      
+      public static const GERMANY_G67_VK4502_A_HW_BOT:String = "germany-G67_VK4502A_HW_BOT";
+      
+      public static const GERMANY_G73_E50_AUSF_M_HALL_MINION:String = "germany-G73_E50_Ausf_M_Hall_minion";
+      
+      public static const GERMANY_G88_INDIEN_PANZER_HW_BOT:String = "germany-G88_Indien_Panzer_HW_BOT";
+      
+      public static const GERMANY_G97_WAFFENTRAGER_IV_HW_BOT:String = "germany-G97_Waffentrager_IV_HW_BOT";
+      
+      public static const GERMANY_G99_RH_B_WAFFENTRAGER_HW_BOT:String = "germany-G99_RhB_Waffentrager_HW_BOT";
+      
+      public static const ITALY_IT09_P43_TER_HW_BOT:String = "italy-It09_P43_ter_HW_BOT";
+      
+      public static const ITALY_IT14_P44_PANTERA_HW_BOT:String = "italy-It14_P44_Pantera_HW_BOT";
+      
+      public static const ITALY_IT19_PROGETTO_C50_MOD_66_HW21:String = "italy-It19_Progetto_C50_mod_66_hw21";
+      
+      public static const ITALY_IT19_PROGETTO_C50_MOD_66_HW_BOT:String = "italy-It19_Progetto_C50_mod_66_HW_BOT";
+      
+      public static const POLAND_PL05_50_TP_TYSZKIEWICZA_HW_BOT:String = "poland-Pl05_50TP_Tyszkiewicza_HW_BOT";
+      
+      public static const POLAND_PL11_45_TP_HABICHA_HW_BOT:String = "poland-Pl11_45TP_Habicha_HW_BOT";
+      
+      public static const POLAND_PL13_53_TP_MARKOWSKIEGO_HW_BOT:String = "poland-Pl13_53TP_Markowskiego_HW_BOT";
+      
+      public static const POLAND_PL18_BUGI_HW_BOT:String = "poland-Pl18_BUGI_HW_BOT";
+      
+      public static const POLAND_PL20_CS_44_HW_BOT:String = "poland-Pl20_CS_44_HW_BOT";
+      
+      public static const POLAND_PL23_CS_53_HW_BOT:String = "poland-Pl23_CS_53_HW_BOT";
+      
+      public static const POLAND_PL23_CS_53_HW_BOT_ALPHA:String = "poland-Pl23_CS_53_HW_BOT_ALPHA";
+      
+      public static const SWEDEN_S27_UDES_16_HW_BOT:String = "sweden-S27_UDES_16_HW_BOT";
+      
+      public static const SWEDEN_S29_UDES_14_5_HW_BOT:String = "sweden-S29_UDES_14_5_HW_BOT";
+      
+      public static const UK_GB100_MANTICORE_HW_BOT:String = "uk-GB100_Manticore_HW_BOT";
+      
+      public static const UK_GB123_GSOR_1006_V7_HALLOWEEN_EVENT:String = "uk-GB123_GSOR_1006_v7_Halloween_event";
+      
+      public static const UK_GB125_SALADIN_HW_BOT:String = "uk-GB125_Saladin_HW_BOT";
+      
+      public static const UK_GB24_CENTURION_MK3_HALLOWEEN_EVENT:String = "uk-GB24_Centurion_Mk3_Halloween_event";
+      
+      public static const UK_GB24_CENTURION_MK3_HW_BOT:String = "uk-GB24_Centurion_Mk3_HW_BOT";
+      
+      public static const UK_GB81_FV4004_HW_BOT:String = "uk-GB81_FV4004_HW_BOT";
+      
+      public static const UK_GB83_FV4005_HELL:String = "uk-GB83_FV4005_HELL";
+      
+      public static const USA_A100_T49_HALLOWEEN_EVENT:String = "usa-A100_T49_Halloween_event";
+      
+      public static const USA_A100_T49_HW_BOT:String = "usa-A100_T49_HW_BOT";
+      
+      public static const USA_A12_T32_HW_BOT:String = "usa-A12_T32_HW_BOT";
+      
+      public static const USA_A35_PERSHING_HW_BOT:String = "usa-A35_Pershing_HW_BOT";
+      
+      public static const USA_A63_M46_PATTON_HW_BOT:String = "usa-A63_M46_Patton_HW_BOT";
+      
+      public static const USA_A66_M103_BOSS_HW23:String = "usa-A66_M103_Boss_HW23";
+      
+      public static const USA_A66_M103_HW_BOT:String = "usa-A66_M103_HW_BOT";
+      
+      public static const USA_A69_T110_E5_HW_BOT:String = "usa-A69_T110E5_HW_BOT";
+      
+      public static const USSR_R171_IS_3_II_HW21:String = "ussr-R171_IS_3_II_hw21";
+      
+      public static const USSR_R171_IS_3_II_HW_BOT:String = "ussr-R171_IS_3_II_HW_BOT";
+      
+      public static const USSR_R205_ROZANOV_BOSS_HW23:String = "ussr-R205_Rozanov_Boss_HW23";
+      
+      public static const USSR_R40_T_54_HALLOWEEN_EVENT:String = "ussr-R40_T-54_Halloween_event";
+      
+      public static const USSR_R40_T_54_HW_BOT:String = "ussr-R40_T-54_HW_BOT";
+      
+      public static const USSR_R77_KV2_TURRET_2:String = "ussr-R77_KV2_turret_2";
       
       public static const LS_DAMAGE_LOG_ALPHA_16X16:String = "ls_damageLog_alpha_16x16";
       
@@ -5723,7 +6189,7 @@ package net.wg.data.constants.generated
       
       public static const SQUAD_SILVER_ENUM:Array = [SQUAD_SILVER_1,SQUAD_SILVER_10,SQUAD_SILVER_11,SQUAD_SILVER_12,SQUAD_SILVER_13,SQUAD_SILVER_14,SQUAD_SILVER_2,SQUAD_SILVER_3,SQUAD_SILVER_4,SQUAD_SILVER_5,SQUAD_SILVER_6,SQUAD_SILVER_7,SQUAD_SILVER_8,SQUAD_SILVER_9];
       
-      public static const FULL_STATS_VEHICLE_TYPE_ENUM:Array = [FULL_STATS_VEHICLE_TYPE_GREEN_AT_SPG,FULL_STATS_VEHICLE_TYPE_GREEN_AT_SPG_ELITE,FULL_STATS_VEHICLE_TYPE_GREEN_BOSS,FULL_STATS_VEHICLE_TYPE_GREEN_HEAVY_TANK,FULL_STATS_VEHICLE_TYPE_GREEN_HEAVY_TANK_ELITE,FULL_STATS_VEHICLE_TYPE_GREEN_LIGHT_TANK,FULL_STATS_VEHICLE_TYPE_GREEN_LIGHT_TANK_ELITE,FULL_STATS_VEHICLE_TYPE_GREEN_MEDIUM_TANK,FULL_STATS_VEHICLE_TYPE_GREEN_MEDIUM_TANK_ELITE,FULL_STATS_VEHICLE_TYPE_GREEN_SPG,FULL_STATS_VEHICLE_TYPE_GREEN_SPG_ELITE,FULL_STATS_VEHICLE_TYPE_PURPLE_AT_SPG,FULL_STATS_VEHICLE_TYPE_PURPLE_AT_SPG_ELITE,FULL_STATS_VEHICLE_TYPE_PURPLE_BOSS,FULL_STATS_VEHICLE_TYPE_PURPLE_HEAVY_TANK,FULL_STATS_VEHICLE_TYPE_PURPLE_HEAVY_TANK_ELITE,FULL_STATS_VEHICLE_TYPE_PURPLE_LIGHT_TANK,FULL_STATS_VEHICLE_TYPE_PURPLE_LIGHT_TANK_ELITE,FULL_STATS_VEHICLE_TYPE_PURPLE_MEDIUM_TANK,FULL_STATS_VEHICLE_TYPE_PURPLE_MEDIUM_TANK_ELITE,FULL_STATS_VEHICLE_TYPE_PURPLE_SPG,FULL_STATS_VEHICLE_TYPE_PURPLE_SPG_ELITE,FULL_STATS_VEHICLE_TYPE_RED_AT_SPG,FULL_STATS_VEHICLE_TYPE_RED_AT_SPG_ELITE,FULL_STATS_VEHICLE_TYPE_RED_BOSS,FULL_STATS_VEHICLE_TYPE_RED_HEAVY_TANK,FULL_STATS_VEHICLE_TYPE_RED_HEAVY_TANK_ELITE,FULL_STATS_VEHICLE_TYPE_RED_LIGHT_TANK,FULL_STATS_VEHICLE_TYPE_RED_LIGHT_TANK_ELITE,FULL_STATS_VEHICLE_TYPE_RED_MEDIUM_TANK,FULL_STATS_VEHICLE_TYPE_RED_MEDIUM_TANK_ELITE,FULL_STATS_VEHICLE_TYPE_RED_SPG,FULL_STATS_VEHICLE_TYPE_RED_SPG_ELITE,FULL_STATS_VEHICLE_TYPE_WT_BOSS,FULL_STATS_VEHICLE_TYPE_WT_MEDIUM_TANK];
+      public static const FULL_STATS_VEHICLE_TYPE_ENUM:Array = [FULL_STATS_VEHICLE_TYPE_GREEN_AT_SPG,FULL_STATS_VEHICLE_TYPE_GREEN_AT_SPG_ELITE,FULL_STATS_VEHICLE_TYPE_GREEN_BOSS,FULL_STATS_VEHICLE_TYPE_GREEN_HEAVY_TANK,FULL_STATS_VEHICLE_TYPE_GREEN_HEAVY_TANK_ELITE,FULL_STATS_VEHICLE_TYPE_GREEN_LIGHT_TANK,FULL_STATS_VEHICLE_TYPE_GREEN_LIGHT_TANK_ELITE,FULL_STATS_VEHICLE_TYPE_GREEN_MEDIUM_TANK,FULL_STATS_VEHICLE_TYPE_GREEN_MEDIUM_TANK_ELITE,FULL_STATS_VEHICLE_TYPE_GREEN_SPG,FULL_STATS_VEHICLE_TYPE_GREEN_SPG_ELITE,FULL_STATS_VEHICLE_TYPE_PURPLE_AT_SPG,FULL_STATS_VEHICLE_TYPE_PURPLE_AT_SPG_ELITE,FULL_STATS_VEHICLE_TYPE_PURPLE_BOSS,FULL_STATS_VEHICLE_TYPE_PURPLE_HEAVY_TANK,FULL_STATS_VEHICLE_TYPE_PURPLE_HEAVY_TANK_ELITE,FULL_STATS_VEHICLE_TYPE_PURPLE_LIGHT_TANK,FULL_STATS_VEHICLE_TYPE_PURPLE_LIGHT_TANK_ELITE,FULL_STATS_VEHICLE_TYPE_PURPLE_MEDIUM_TANK,FULL_STATS_VEHICLE_TYPE_PURPLE_MEDIUM_TANK_ELITE,FULL_STATS_VEHICLE_TYPE_PURPLE_SPG,FULL_STATS_VEHICLE_TYPE_PURPLE_SPG_ELITE,FULL_STATS_VEHICLE_TYPE_RED_AT_SPG,FULL_STATS_VEHICLE_TYPE_RED_AT_SPG_ELITE,FULL_STATS_VEHICLE_TYPE_RED_BOSS,FULL_STATS_VEHICLE_TYPE_RED_HEAVY_TANK,FULL_STATS_VEHICLE_TYPE_RED_HEAVY_TANK_ELITE,FULL_STATS_VEHICLE_TYPE_RED_LIGHT_TANK,FULL_STATS_VEHICLE_TYPE_RED_LIGHT_TANK_ELITE,FULL_STATS_VEHICLE_TYPE_RED_MEDIUM_TANK,FULL_STATS_VEHICLE_TYPE_RED_MEDIUM_TANK_ELITE,FULL_STATS_VEHICLE_TYPE_RED_SPG,FULL_STATS_VEHICLE_TYPE_RED_SPG_ELITE];
       
       public static const VEHICLE_ACTION_MARKER_ENUM:Array = [VEHICLE_ACTION_MARKER_HUNTING];
       
@@ -5739,7 +6205,7 @@ package net.wg.data.constants.generated
       
       public static const PRESTIGE_MARK_ALL_ENUM:Array = [PRESTIGE_MARK_10_1,PRESTIGE_MARK_10_2,PRESTIGE_MARK_10_3,PRESTIGE_MARK_11_1,PRESTIGE_MARK_11_2,PRESTIGE_MARK_11_3,PRESTIGE_MARK_12_1,PRESTIGE_MARK_12_2,PRESTIGE_MARK_12_3,PRESTIGE_MARK_13_1,PRESTIGE_MARK_13_2,PRESTIGE_MARK_13_3,PRESTIGE_MARK_14_1,PRESTIGE_MARK_14_2,PRESTIGE_MARK_14_3,PRESTIGE_MARK_15_1,PRESTIGE_MARK_15_2,PRESTIGE_MARK_15_3,PRESTIGE_MARK_16_1,PRESTIGE_MARK_16_2,PRESTIGE_MARK_16_3,PRESTIGE_MARK_17_1,PRESTIGE_MARK_17_2,PRESTIGE_MARK_17_3,PRESTIGE_MARK_18_1,PRESTIGE_MARK_18_2,PRESTIGE_MARK_18_3,PRESTIGE_MARK_19_1,PRESTIGE_MARK_19_2,PRESTIGE_MARK_19_3,PRESTIGE_MARK_1_1,PRESTIGE_MARK_1_2,PRESTIGE_MARK_1_3,PRESTIGE_MARK_20_1,PRESTIGE_MARK_20_2,PRESTIGE_MARK_20_3,PRESTIGE_MARK_21_1,PRESTIGE_MARK_21_2,PRESTIGE_MARK_21_3,PRESTIGE_MARK_2_1,PRESTIGE_MARK_2_2,PRESTIGE_MARK_2_3,PRESTIGE_MARK_3_1,PRESTIGE_MARK_3_2,PRESTIGE_MARK_3_3,PRESTIGE_MARK_4_1,PRESTIGE_MARK_4_2,PRESTIGE_MARK_4_3,PRESTIGE_MARK_5_1,PRESTIGE_MARK_5_2,PRESTIGE_MARK_5_3,PRESTIGE_MARK_6_1,PRESTIGE_MARK_6_2,PRESTIGE_MARK_6_3,PRESTIGE_MARK_7_1,PRESTIGE_MARK_7_2,PRESTIGE_MARK_7_3,PRESTIGE_MARK_8_1,PRESTIGE_MARK_8_2,PRESTIGE_MARK_8_3,PRESTIGE_MARK_9_1,PRESTIGE_MARK_9_2,PRESTIGE_MARK_9_3];
       
-      public static const DAMAGE_LOG_ALL_16X16_BLIND_ENUM:Array = [DAMAGE_LOG_AIRSTRIKE_ENEMY_16X16_BLIND,DAMAGE_LOG_AIRSTRIKE_EQ_ENEMY_16X16_BLIND,DAMAGE_LOG_ARTILLERY_ENEMY_16X16_BLIND,DAMAGE_LOG_ARTILLERY_EQ_ENEMY_16X16_BLIND,DAMAGE_LOG_BY_MINE_FIELD_16X16_BLIND,DAMAGE_LOG_CRITICAL_ENEMY_16X16_BLIND,DAMAGE_LOG_DAMAGE_ENEMY_16X16_BLIND,DAMAGE_LOG_FIRE_ENEMY_16X16_BLIND,DAMAGE_LOG_HE_ROCKET_ENEMY_16X16_BLIND,DAMAGE_LOG_RAM_ENEMY_16X16_BLIND];
+      public static const DAMAGE_LOG_ALL_16X16_BLIND_ENUM:Array = [DAMAGE_LOG_AIRSTRIKE_ENEMY_16X16_BLIND,DAMAGE_LOG_AIRSTRIKE_EQ_ENEMY_16X16_BLIND,DAMAGE_LOG_ARTILLERY_ENEMY_16X16_BLIND,DAMAGE_LOG_ARTILLERY_EQ_ENEMY_16X16_BLIND,DAMAGE_LOG_BY_MINE_FIELD_16X16_BLIND,DAMAGE_LOG_CRITICAL_ENEMY_16X16_BLIND,DAMAGE_LOG_DAMAGE_ENEMY_16X16_BLIND,DAMAGE_LOG_FIRE_ENEMY_16X16_BLIND,DAMAGE_LOG_HE_ROCKET_ENEMY_16X16_BLIND,DAMAGE_LOG_RAM_ENEMY_16X16_BLIND,DAMAGE_LOG_CORROSION_16X16_BLIND,DAMAGE_LOG_DAMAGE_OVERTIME_ZONE_16X16_BLIND,DAMAGE_LOG_IGNITE_ZONE_DAMAGE_16X16_BLIND,DAMAGE_LOG_STUN_ZONE_DAMAGE_16X16_BLIND];
        
       
       public function BATTLEATLAS()

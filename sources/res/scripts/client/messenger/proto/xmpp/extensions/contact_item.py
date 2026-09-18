@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from messenger.proto.xmpp.extensions import PyExtension
 from messenger.proto.xmpp.extensions.ext_constants import XML_TAG_NAME as _TAG
 from messenger.proto.xmpp.extensions.wg_items import WgSharedExtension

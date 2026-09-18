@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/poland/Pl43_Kruk/normal/lod3/Hull</nodefullVisual>
+	<parent>vehicles/poland/Pl43_Kruk/normal/lod4/Hull</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.797258 -0.586803 -3.274582</min>
+		<max>1.799532 0.520689 3.964171</max>
+	</visibilityBox>
+</root>

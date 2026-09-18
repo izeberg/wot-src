@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing, BattleReplay
 from gui.shared.utils import getPlayerDatabaseID
 from helpers import dependency

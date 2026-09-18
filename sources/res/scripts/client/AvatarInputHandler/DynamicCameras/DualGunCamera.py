@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld
 from BigWorld import DualGunAimingSystem, DualGunAimingSystemRemote
 from AvatarInputHandler.DynamicCameras.SniperCamera import SniperCamera

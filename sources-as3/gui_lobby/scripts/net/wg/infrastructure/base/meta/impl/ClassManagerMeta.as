@@ -1045,6 +1045,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.fortifications.cmp.battleRoom.SortieSimpleSlot;
    import net.wg.gui.lobby.fortifications.cmp.battleRoom.SortieSlot;
    import net.wg.gui.lobby.fortifications.cmp.drctn.impl.ConnectedDirects;
+   import net.wg.gui.lobby.fortifications.cmp.events.FortVehicleSelectorFilterEvent;
    import net.wg.gui.lobby.fortifications.cmp.impl.FortDisconnectView;
    import net.wg.gui.lobby.fortifications.cmp.selector.FortVehicleSelector;
    import net.wg.gui.lobby.fortifications.cmp.selector.FortVehicleSelectorFilter;
@@ -2572,6 +2573,32 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.messenger.forms.ChannelsCreateForm;
    import net.wg.gui.messenger.forms.ChannelsSearchForm;
    import net.wg.gui.messenger.forms.ContactsSearchForm;
+   import net.wg.gui.messenger.meta.IBaseContactViewMeta;
+   import net.wg.gui.messenger.meta.IBaseManageContactViewMeta;
+   import net.wg.gui.messenger.meta.IChannelComponentMeta;
+   import net.wg.gui.messenger.meta.IChannelWindowMeta;
+   import net.wg.gui.messenger.meta.IChannelsManagementWindowMeta;
+   import net.wg.gui.messenger.meta.IConnectToSecureChannelWindowMeta;
+   import net.wg.gui.messenger.meta.IContactNoteManageViewMeta;
+   import net.wg.gui.messenger.meta.IContactsListPopoverMeta;
+   import net.wg.gui.messenger.meta.IContactsSettingsViewMeta;
+   import net.wg.gui.messenger.meta.IFAQWindowMeta;
+   import net.wg.gui.messenger.meta.IGroupDeleteViewMeta;
+   import net.wg.gui.messenger.meta.ILobbyChannelWindowMeta;
+   import net.wg.gui.messenger.meta.ISearchContactViewMeta;
+   import net.wg.gui.messenger.meta.impl.BaseContactViewMeta;
+   import net.wg.gui.messenger.meta.impl.BaseManageContactViewMeta;
+   import net.wg.gui.messenger.meta.impl.ChannelComponentMeta;
+   import net.wg.gui.messenger.meta.impl.ChannelWindowMeta;
+   import net.wg.gui.messenger.meta.impl.ChannelsManagementWindowMeta;
+   import net.wg.gui.messenger.meta.impl.ConnectToSecureChannelWindowMeta;
+   import net.wg.gui.messenger.meta.impl.ContactNoteManageViewMeta;
+   import net.wg.gui.messenger.meta.impl.ContactsListPopoverMeta;
+   import net.wg.gui.messenger.meta.impl.ContactsSettingsViewMeta;
+   import net.wg.gui.messenger.meta.impl.FAQWindowMeta;
+   import net.wg.gui.messenger.meta.impl.GroupDeleteViewMeta;
+   import net.wg.gui.messenger.meta.impl.LobbyChannelWindowMeta;
+   import net.wg.gui.messenger.meta.impl.SearchContactViewMeta;
    import net.wg.gui.messenger.views.BaseContactView;
    import net.wg.gui.messenger.views.BaseManageContactView;
    import net.wg.gui.messenger.views.ContactNoteManageView;
@@ -2684,6 +2711,16 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.prebattle.invites.SendInvitesEvent;
    import net.wg.gui.prebattle.invites.UserRosterItemRenderer;
    import net.wg.gui.prebattle.invites.UserRosterView;
+   import net.wg.gui.prebattle.meta.IBattleSessionListMeta;
+   import net.wg.gui.prebattle.meta.IBattleSessionWindowMeta;
+   import net.wg.gui.prebattle.meta.IPrebattleWindowMeta;
+   import net.wg.gui.prebattle.meta.IPrequeueWindowMeta;
+   import net.wg.gui.prebattle.meta.IReceivedInviteWindowMeta;
+   import net.wg.gui.prebattle.meta.impl.BattleSessionListMeta;
+   import net.wg.gui.prebattle.meta.impl.BattleSessionWindowMeta;
+   import net.wg.gui.prebattle.meta.impl.PrebattleWindowMeta;
+   import net.wg.gui.prebattle.meta.impl.PrequeueWindowMeta;
+   import net.wg.gui.prebattle.meta.impl.ReceivedInviteWindowMeta;
    import net.wg.gui.rally.AbstractRallyView;
    import net.wg.gui.rally.AbstractRallyWindow;
    import net.wg.gui.rally.BaseRallyMainWindow;
@@ -2744,6 +2781,268 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.utils.VO.PriceVO;
    import net.wg.gui.utils.VO.UnitSlotProperties;
    import net.wg.infrastructure.base.AbstractConfirmItemDialog;
+   import net.wg.infrastructure.base.meta.IAbstractRallyViewMeta;
+   import net.wg.infrastructure.base.meta.IAbstractRallyWindowMeta;
+   import net.wg.infrastructure.base.meta.IAlertMessageBlockMeta;
+   import net.wg.infrastructure.base.meta.IAllVehiclesTabViewMeta;
+   import net.wg.infrastructure.base.meta.IAmmunitionPanelInjectMeta;
+   import net.wg.infrastructure.base.meta.IAmmunitionPanelMeta;
+   import net.wg.infrastructure.base.meta.IAmmunitionSetupViewMeta;
+   import net.wg.infrastructure.base.meta.IAwardGroupsMeta;
+   import net.wg.infrastructure.base.meta.IAwardWindowMeta;
+   import net.wg.infrastructure.base.meta.IAwardWindowsBaseMeta;
+   import net.wg.infrastructure.base.meta.IBadgesPageMeta;
+   import net.wg.infrastructure.base.meta.IBaseMissionDetailsContainerViewMeta;
+   import net.wg.infrastructure.base.meta.IBasePrebattleListViewMeta;
+   import net.wg.infrastructure.base.meta.IBasePrebattleRoomViewMeta;
+   import net.wg.infrastructure.base.meta.IBaseRallyIntroViewMeta;
+   import net.wg.infrastructure.base.meta.IBaseRallyListViewMeta;
+   import net.wg.infrastructure.base.meta.IBaseRallyMainWindowMeta;
+   import net.wg.infrastructure.base.meta.IBaseRallyRoomViewMeta;
+   import net.wg.infrastructure.base.meta.IBaseRallyViewMeta;
+   import net.wg.infrastructure.base.meta.IBaseStorageCategoryViewMeta;
+   import net.wg.infrastructure.base.meta.IBattleMattersViewMeta;
+   import net.wg.infrastructure.base.meta.IBattlePassBadgesDemoWindowMeta;
+   import net.wg.infrastructure.base.meta.IBattleQueueMeta;
+   import net.wg.infrastructure.base.meta.IBattleResultsMeta;
+   import net.wg.infrastructure.base.meta.IBattleRoyaleTournamentWidgetMeta;
+   import net.wg.infrastructure.base.meta.IBattleRoyaleVehicleInfoMeta;
+   import net.wg.infrastructure.base.meta.IBattleStrongholdsQueueMeta;
+   import net.wg.infrastructure.base.meta.IBoosterInfoMeta;
+   import net.wg.infrastructure.base.meta.IBrowserInViewComponentMeta;
+   import net.wg.infrastructure.base.meta.IBrowserMeta;
+   import net.wg.infrastructure.base.meta.IBrowserScreenMeta;
+   import net.wg.infrastructure.base.meta.IBrowserViewStackExPaddingMeta;
+   import net.wg.infrastructure.base.meta.IBrowserWindowMeta;
+   import net.wg.infrastructure.base.meta.ICalendarMeta;
+   import net.wg.infrastructure.base.meta.ICarouselEventEntryMeta;
+   import net.wg.infrastructure.base.meta.ICheckBoxDialogMeta;
+   import net.wg.infrastructure.base.meta.IClanInvitesViewMeta;
+   import net.wg.infrastructure.base.meta.IClanInvitesViewWithTableMeta;
+   import net.wg.infrastructure.base.meta.IClanInvitesWindowAbstractTabViewMeta;
+   import net.wg.infrastructure.base.meta.IClanInvitesWindowMeta;
+   import net.wg.infrastructure.base.meta.IClanPersonalInvitesViewMeta;
+   import net.wg.infrastructure.base.meta.IClanPersonalInvitesWindowMeta;
+   import net.wg.infrastructure.base.meta.IClanProfileBaseViewMeta;
+   import net.wg.infrastructure.base.meta.IClanProfileGlobalMapInfoViewMeta;
+   import net.wg.infrastructure.base.meta.IClanProfileGlobalMapPromoViewMeta;
+   import net.wg.infrastructure.base.meta.IClanProfileMainWindowMeta;
+   import net.wg.infrastructure.base.meta.IClanProfilePersonnelViewMeta;
+   import net.wg.infrastructure.base.meta.IClanProfileSummaryViewMeta;
+   import net.wg.infrastructure.base.meta.IClanProfileTableStatisticsViewMeta;
+   import net.wg.infrastructure.base.meta.IClanRequestsViewMeta;
+   import net.wg.infrastructure.base.meta.IClanSearchInfoMeta;
+   import net.wg.infrastructure.base.meta.IClanSearchWindowMeta;
+   import net.wg.infrastructure.base.meta.IConfirmDialogMeta;
+   import net.wg.infrastructure.base.meta.IConfirmExchangeDialogMeta;
+   import net.wg.infrastructure.base.meta.IConfirmItemWindowMeta;
+   import net.wg.infrastructure.base.meta.IContactsTreeComponentMeta;
+   import net.wg.infrastructure.base.meta.ICrewOperationsPopOverMeta;
+   import net.wg.infrastructure.base.meta.ICrewPanelInjectMeta;
+   import net.wg.infrastructure.base.meta.ICurrentVehicleMissionsViewMeta;
+   import net.wg.infrastructure.base.meta.ICustomizationBottomPanelMeta;
+   import net.wg.infrastructure.base.meta.ICustomizationConfigurationWindowMeta;
+   import net.wg.infrastructure.base.meta.ICustomizationEditedKitPopoverMeta;
+   import net.wg.infrastructure.base.meta.ICustomizationFiltersPopoverMeta;
+   import net.wg.infrastructure.base.meta.ICustomizationInscriptionControllerMeta;
+   import net.wg.infrastructure.base.meta.ICustomizationItemsPopoverMeta;
+   import net.wg.infrastructure.base.meta.ICustomizationKitPopoverMeta;
+   import net.wg.infrastructure.base.meta.ICustomizationMainViewMeta;
+   import net.wg.infrastructure.base.meta.ICustomizationNonHistoricPopoverMeta;
+   import net.wg.infrastructure.base.meta.ICustomizationProgressiveKitPopoverMeta;
+   import net.wg.infrastructure.base.meta.ICustomizationPropertiesSheetMeta;
+   import net.wg.infrastructure.base.meta.ICustomizationStyleInfoMeta;
+   import net.wg.infrastructure.base.meta.ICyberSportIntroMeta;
+   import net.wg.infrastructure.base.meta.ICyberSportMainWindowMeta;
+   import net.wg.infrastructure.base.meta.ICyberSportUnitMeta;
+   import net.wg.infrastructure.base.meta.ICyberSportUnitsListMeta;
+   import net.wg.infrastructure.base.meta.IDemoPageMeta;
+   import net.wg.infrastructure.base.meta.IDemonstratorWindowMeta;
+   import net.wg.infrastructure.base.meta.IEULAMeta;
+   import net.wg.infrastructure.base.meta.IEarningPopUpViewMeta;
+   import net.wg.infrastructure.base.meta.IEpicBattleTrainingRoomMeta;
+   import net.wg.infrastructure.base.meta.IEpicBattlesWidgetMeta;
+   import net.wg.infrastructure.base.meta.IEpicPrimeTimeMeta;
+   import net.wg.infrastructure.base.meta.IEpicQuestProgressInfoMeta;
+   import net.wg.infrastructure.base.meta.IEventBoardsAwardsOverlayMeta;
+   import net.wg.infrastructure.base.meta.IEventBoardsBattleOverlayMeta;
+   import net.wg.infrastructure.base.meta.IEventBoardsDetailsContainerViewMeta;
+   import net.wg.infrastructure.base.meta.IEventBoardsResultFilterPopoverViewMeta;
+   import net.wg.infrastructure.base.meta.IEventBoardsResultFilterVehiclesPopoverViewMeta;
+   import net.wg.infrastructure.base.meta.IEventBoardsTableViewMeta;
+   import net.wg.infrastructure.base.meta.IEventBoardsVehiclesOverlayMeta;
+   import net.wg.infrastructure.base.meta.IEventTournamentBannerInjectMeta;
+   import net.wg.infrastructure.base.meta.IFittingSelectPopoverMeta;
+   import net.wg.infrastructure.base.meta.IFortBattleRoomWindowMeta;
+   import net.wg.infrastructure.base.meta.IFortClanBattleRoomMeta;
+   import net.wg.infrastructure.base.meta.IFortDisconnectViewMeta;
+   import net.wg.infrastructure.base.meta.IFortVehicleSelectPopoverMeta;
+   import net.wg.infrastructure.base.meta.IFreeSheetPopoverMeta;
+   import net.wg.infrastructure.base.meta.IFreeXPInfoWindowMeta;
+   import net.wg.infrastructure.base.meta.IGoodieInfoMeta;
+   import net.wg.infrastructure.base.meta.IHangarHeaderMeta;
+   import net.wg.infrastructure.base.meta.IHangarMeta;
+   import net.wg.infrastructure.base.meta.IIconDialogMeta;
+   import net.wg.infrastructure.base.meta.IIconPriceDialogMeta;
+   import net.wg.infrastructure.base.meta.IImageViewMeta;
+   import net.wg.infrastructure.base.meta.IItemsWithTypeAndNationFilterTabViewMeta;
+   import net.wg.infrastructure.base.meta.IItemsWithTypeFilterTabViewMeta;
+   import net.wg.infrastructure.base.meta.IItemsWithVehicleFilterTabViewMeta;
+   import net.wg.infrastructure.base.meta.ILegalInfoWindowMeta;
+   import net.wg.infrastructure.base.meta.ILiveOpsWebEventsEntryPointInjectMeta;
+   import net.wg.infrastructure.base.meta.ILiveOpsWebEventsViewMeta;
+   import net.wg.infrastructure.base.meta.ILobbyMenuMeta;
+   import net.wg.infrastructure.base.meta.ILobbyPageMeta;
+   import net.wg.infrastructure.base.meta.ILobbyVehicleMarkerViewMeta;
+   import net.wg.infrastructure.base.meta.ILoginPageMeta;
+   import net.wg.infrastructure.base.meta.ILoginQueueWindowMeta;
+   import net.wg.infrastructure.base.meta.IMaintenanceComponentMeta;
+   import net.wg.infrastructure.base.meta.IManualChapterViewMeta;
+   import net.wg.infrastructure.base.meta.IManualMainViewMeta;
+   import net.wg.infrastructure.base.meta.IMissionAwardWindowMeta;
+   import net.wg.infrastructure.base.meta.IMissionDetailsContainerViewMeta;
+   import net.wg.infrastructure.base.meta.IMissionsEventBoardsViewMeta;
+   import net.wg.infrastructure.base.meta.IMissionsFilterPopoverViewMeta;
+   import net.wg.infrastructure.base.meta.IMissionsGroupedViewMeta;
+   import net.wg.infrastructure.base.meta.IMissionsListViewBaseMeta;
+   import net.wg.infrastructure.base.meta.IMissionsMapboxViewMeta;
+   import net.wg.infrastructure.base.meta.IMissionsMarathonViewMeta;
+   import net.wg.infrastructure.base.meta.IMissionsPageMeta;
+   import net.wg.infrastructure.base.meta.IMissionsTokenPopoverMeta;
+   import net.wg.infrastructure.base.meta.IMissionsVehicleSelectorMeta;
+   import net.wg.infrastructure.base.meta.IMissionsViewBaseMeta;
+   import net.wg.infrastructure.base.meta.IModuleInfoMeta;
+   import net.wg.infrastructure.base.meta.IModulesPanelMeta;
+   import net.wg.infrastructure.base.meta.INotificationPopUpViewerMeta;
+   import net.wg.infrastructure.base.meta.INotificationsListMeta;
+   import net.wg.infrastructure.base.meta.IPackItemsPopoverMeta;
+   import net.wg.infrastructure.base.meta.IPaginationMeta;
+   import net.wg.infrastructure.base.meta.IPersonalMissionDetailsContainerViewMeta;
+   import net.wg.infrastructure.base.meta.IPersonalMissionFirstEntryAwardViewMeta;
+   import net.wg.infrastructure.base.meta.IPersonalMissionOperationsMeta;
+   import net.wg.infrastructure.base.meta.IPersonalMissionsAbstractInfoViewMeta;
+   import net.wg.infrastructure.base.meta.IPersonalMissionsAwardsViewMeta;
+   import net.wg.infrastructure.base.meta.IPersonalMissionsMapViewMeta;
+   import net.wg.infrastructure.base.meta.IPersonalMissionsOperationAwardsScreenMeta;
+   import net.wg.infrastructure.base.meta.IPersonalMissionsPageMeta;
+   import net.wg.infrastructure.base.meta.IPersonalMissionsQuestAwardScreenMeta;
+   import net.wg.infrastructure.base.meta.IPlayerSatisfactionWidgetMeta;
+   import net.wg.infrastructure.base.meta.IPrestigeProgressInjectMeta;
+   import net.wg.infrastructure.base.meta.IPrimeTimeMeta;
+   import net.wg.infrastructure.base.meta.IProfileAchievementSectionMeta;
+   import net.wg.infrastructure.base.meta.IProfileAwardsMeta;
+   import net.wg.infrastructure.base.meta.IProfileFormationsPageMeta;
+   import net.wg.infrastructure.base.meta.IProfileHofMeta;
+   import net.wg.infrastructure.base.meta.IProfileMeta;
+   import net.wg.infrastructure.base.meta.IProfileSectionMeta;
+   import net.wg.infrastructure.base.meta.IProfileStatisticsMeta;
+   import net.wg.infrastructure.base.meta.IProfileSummaryMeta;
+   import net.wg.infrastructure.base.meta.IProfileSummaryWindowMeta;
+   import net.wg.infrastructure.base.meta.IProfileTabNavigatorMeta;
+   import net.wg.infrastructure.base.meta.IProfileTechniqueMeta;
+   import net.wg.infrastructure.base.meta.IProfileTechniquePageMeta;
+   import net.wg.infrastructure.base.meta.IProfileWindowMeta;
+   import net.wg.infrastructure.base.meta.IProgressionViewMeta;
+   import net.wg.infrastructure.base.meta.IProgressiveRewardWidgetMeta;
+   import net.wg.infrastructure.base.meta.IPromoPremiumIgrWindowMeta;
+   import net.wg.infrastructure.base.meta.IQuestsContentTabsMeta;
+   import net.wg.infrastructure.base.meta.IRallyMainWindowWithSearchMeta;
+   import net.wg.infrastructure.base.meta.IRankedBattlesAwardsViewMeta;
+   import net.wg.infrastructure.base.meta.IRankedBattlesBattleResultsMeta;
+   import net.wg.infrastructure.base.meta.IRankedBattlesDivisionProgressMeta;
+   import net.wg.infrastructure.base.meta.IRankedBattlesDivisionQualificationMeta;
+   import net.wg.infrastructure.base.meta.IRankedBattlesDivisionsViewMeta;
+   import net.wg.infrastructure.base.meta.IRankedBattlesHangarWidgetMeta;
+   import net.wg.infrastructure.base.meta.IRankedBattlesIntroMeta;
+   import net.wg.infrastructure.base.meta.IRankedBattlesLeaguesViewMeta;
+   import net.wg.infrastructure.base.meta.IRankedBattlesPageMeta;
+   import net.wg.infrastructure.base.meta.IRankedBattlesRewardsLeaguesMeta;
+   import net.wg.infrastructure.base.meta.IRankedBattlesRewardsMeta;
+   import net.wg.infrastructure.base.meta.IRankedBattlesRewardsRanksMeta;
+   import net.wg.infrastructure.base.meta.IRankedBattlesRewardsYearMeta;
+   import net.wg.infrastructure.base.meta.IRankedBattlesSeasonCompleteViewMeta;
+   import net.wg.infrastructure.base.meta.IRankedBattlesSeasonGapViewMeta;
+   import net.wg.infrastructure.base.meta.IRankedBattlesUnreachableViewMeta;
+   import net.wg.infrastructure.base.meta.IRankedPrimeTimeMeta;
+   import net.wg.infrastructure.base.meta.IRecruitParametersMeta;
+   import net.wg.infrastructure.base.meta.IRegularItemsTabViewMeta;
+   import net.wg.infrastructure.base.meta.IRentVehiclesTabViewMeta;
+   import net.wg.infrastructure.base.meta.IRentalTermSelectionPopoverMeta;
+   import net.wg.infrastructure.base.meta.IResearchPanelMeta;
+   import net.wg.infrastructure.base.meta.IRestoreVehiclesTabViewMeta;
+   import net.wg.infrastructure.base.meta.IRosterSlotSettingsWindowMeta;
+   import net.wg.infrastructure.base.meta.IRssNewsFeedMeta;
+   import net.wg.infrastructure.base.meta.ISendInvitesWindowMeta;
+   import net.wg.infrastructure.base.meta.ISessionBattleStatsViewMeta;
+   import net.wg.infrastructure.base.meta.ISessionStatsOverviewMeta;
+   import net.wg.infrastructure.base.meta.ISessionStatsPopoverMeta;
+   import net.wg.infrastructure.base.meta.ISessionStatsSettingsMeta;
+   import net.wg.infrastructure.base.meta.ISessionVehicleStatsViewMeta;
+   import net.wg.infrastructure.base.meta.ISimpleWindowMeta;
+   import net.wg.infrastructure.base.meta.ISlotsPanelMeta;
+   import net.wg.infrastructure.base.meta.ISquadWindowMeta;
+   import net.wg.infrastructure.base.meta.IStageSwitcherMeta;
+   import net.wg.infrastructure.base.meta.IStorageCarouselEnvironmentMeta;
+   import net.wg.infrastructure.base.meta.IStorageCategoryBlueprintsViewMeta;
+   import net.wg.infrastructure.base.meta.IStorageCategoryCustomizationViewMeta;
+   import net.wg.infrastructure.base.meta.IStorageCategoryForSellViewMeta;
+   import net.wg.infrastructure.base.meta.IStorageCategoryInHangarViewMeta;
+   import net.wg.infrastructure.base.meta.IStorageCategoryOffersViewMeta;
+   import net.wg.infrastructure.base.meta.IStorageCategoryPersonalReservesViewMeta;
+   import net.wg.infrastructure.base.meta.IStorageCategoryStorageViewMeta;
+   import net.wg.infrastructure.base.meta.IStorageDevicesTabViewMeta;
+   import net.wg.infrastructure.base.meta.IStorageVehicleSelectPopoverMeta;
+   import net.wg.infrastructure.base.meta.IStorageViewMeta;
+   import net.wg.infrastructure.base.meta.IStrongholdBattlesListViewMeta;
+   import net.wg.infrastructure.base.meta.IStrongholdViewMeta;
+   import net.wg.infrastructure.base.meta.ISwitchModePanelMeta;
+   import net.wg.infrastructure.base.meta.ISwitchPeripheryWindowMeta;
+   import net.wg.infrastructure.base.meta.ISystemMessageDialogMeta;
+   import net.wg.infrastructure.base.meta.ITankCarouselMeta;
+   import net.wg.infrastructure.base.meta.ITankgirlsPopoverMeta;
+   import net.wg.infrastructure.base.meta.ITradeInPopupMeta;
+   import net.wg.infrastructure.base.meta.ITradeOffWidgetMeta;
+   import net.wg.infrastructure.base.meta.ITrainingFormMeta;
+   import net.wg.infrastructure.base.meta.ITrainingRoomBaseMeta;
+   import net.wg.infrastructure.base.meta.ITrainingWindowMeta;
+   import net.wg.infrastructure.base.meta.IUnboundInjectWindowMeta;
+   import net.wg.infrastructure.base.meta.IUseAwardSheetWindowMeta;
+   import net.wg.infrastructure.base.meta.IUserMissionsHubContainerViewMeta;
+   import net.wg.infrastructure.base.meta.IUserMissionsHubContentInjectMeta;
+   import net.wg.infrastructure.base.meta.IVehicleBasePreviewMeta;
+   import net.wg.infrastructure.base.meta.IVehicleBuyWindowMeta;
+   import net.wg.infrastructure.base.meta.IVehicleCompareCartPopoverMeta;
+   import net.wg.infrastructure.base.meta.IVehicleCompareCommonViewMeta;
+   import net.wg.infrastructure.base.meta.IVehicleCompareConfiguratorBaseViewMeta;
+   import net.wg.infrastructure.base.meta.IVehicleCompareConfiguratorMainMeta;
+   import net.wg.infrastructure.base.meta.IVehicleCompareConfiguratorViewMeta;
+   import net.wg.infrastructure.base.meta.IVehicleCompareViewMeta;
+   import net.wg.infrastructure.base.meta.IVehicleInfoMeta;
+   import net.wg.infrastructure.base.meta.IVehicleModulesViewMeta;
+   import net.wg.infrastructure.base.meta.IVehicleParametersMeta;
+   import net.wg.infrastructure.base.meta.IVehicleParametersWithHighlightMeta;
+   import net.wg.infrastructure.base.meta.IVehiclePostProgressionViewBaseMeta;
+   import net.wg.infrastructure.base.meta.IVehiclePostProgressionViewMeta;
+   import net.wg.infrastructure.base.meta.IVehiclePreviewBottomPanelMeta;
+   import net.wg.infrastructure.base.meta.IVehiclePreviewBottomPanelOfferGiftMeta;
+   import net.wg.infrastructure.base.meta.IVehiclePreviewBottomPanelShowcaseStyleBuyingMeta;
+   import net.wg.infrastructure.base.meta.IVehiclePreviewBottomPanelStyleBuyingMeta;
+   import net.wg.infrastructure.base.meta.IVehiclePreviewBottomPanelStyleProgressionMeta;
+   import net.wg.infrastructure.base.meta.IVehiclePreviewBottomPanelTradeInMeta;
+   import net.wg.infrastructure.base.meta.IVehiclePreviewBottomPanelWellMeta;
+   import net.wg.infrastructure.base.meta.IVehiclePreviewBottomPanelWotPlusMeta;
+   import net.wg.infrastructure.base.meta.IVehiclePreviewBrowseTabMeta;
+   import net.wg.infrastructure.base.meta.IVehiclePreviewCrewTabInjectMeta;
+   import net.wg.infrastructure.base.meta.IVehiclePreviewMeta;
+   import net.wg.infrastructure.base.meta.IVehiclePreviewModulesTabMeta;
+   import net.wg.infrastructure.base.meta.IVehiclePreviewTopPanelTabsMeta;
+   import net.wg.infrastructure.base.meta.IVehicleSelectPopoverMeta;
+   import net.wg.infrastructure.base.meta.IVehicleSelectorCarouselMeta;
+   import net.wg.infrastructure.base.meta.IVehicleSelectorPopupMeta;
+   import net.wg.infrastructure.base.meta.IVehicleSellConfirmationPopoverMeta;
+   import net.wg.infrastructure.base.meta.IVehicleSellDialogMeta;
+   import net.wg.infrastructure.base.meta.IWGNCDialogMeta;
+   import net.wg.infrastructure.base.meta.IWGNCPollWindowMeta;
    import net.wg.infrastructure.events.DragEvent;
    import net.wg.infrastructure.events.DropEvent;
    import net.wg.infrastructure.events.FocusChainChangeEvent;
@@ -4856,6 +5155,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_FORTIFICATIONS_CMP_BATTLEROOM_SORTIESLOT:Class = SortieSlot;
       
       public static const NET_WG_GUI_LOBBY_FORTIFICATIONS_CMP_DRCTN_IMPL_CONNECTEDDIRECTS:Class = ConnectedDirects;
+      
+      public static const NET_WG_GUI_LOBBY_FORTIFICATIONS_CMP_EVENTS_FORTVEHICLESELECTORFILTEREVENT:Class = FortVehicleSelectorFilterEvent;
       
       public static const NET_WG_GUI_LOBBY_FORTIFICATIONS_CMP_IMPL_FORTDISCONNECTVIEW:Class = FortDisconnectView;
       
@@ -7911,6 +8212,58 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_MESSENGER_FORMS_CONTACTSSEARCHFORM:Class = ContactsSearchForm;
       
+      public static const NET_WG_GUI_MESSENGER_META_IBASECONTACTVIEWMETA:Class = IBaseContactViewMeta;
+      
+      public static const NET_WG_GUI_MESSENGER_META_IBASEMANAGECONTACTVIEWMETA:Class = IBaseManageContactViewMeta;
+      
+      public static const NET_WG_GUI_MESSENGER_META_ICHANNELCOMPONENTMETA:Class = IChannelComponentMeta;
+      
+      public static const NET_WG_GUI_MESSENGER_META_ICHANNELSMANAGEMENTWINDOWMETA:Class = IChannelsManagementWindowMeta;
+      
+      public static const NET_WG_GUI_MESSENGER_META_ICHANNELWINDOWMETA:Class = IChannelWindowMeta;
+      
+      public static const NET_WG_GUI_MESSENGER_META_ICONNECTTOSECURECHANNELWINDOWMETA:Class = IConnectToSecureChannelWindowMeta;
+      
+      public static const NET_WG_GUI_MESSENGER_META_ICONTACTNOTEMANAGEVIEWMETA:Class = IContactNoteManageViewMeta;
+      
+      public static const NET_WG_GUI_MESSENGER_META_ICONTACTSLISTPOPOVERMETA:Class = IContactsListPopoverMeta;
+      
+      public static const NET_WG_GUI_MESSENGER_META_ICONTACTSSETTINGSVIEWMETA:Class = IContactsSettingsViewMeta;
+      
+      public static const NET_WG_GUI_MESSENGER_META_IFAQWINDOWMETA:Class = IFAQWindowMeta;
+      
+      public static const NET_WG_GUI_MESSENGER_META_IGROUPDELETEVIEWMETA:Class = IGroupDeleteViewMeta;
+      
+      public static const NET_WG_GUI_MESSENGER_META_ILOBBYCHANNELWINDOWMETA:Class = ILobbyChannelWindowMeta;
+      
+      public static const NET_WG_GUI_MESSENGER_META_ISEARCHCONTACTVIEWMETA:Class = ISearchContactViewMeta;
+      
+      public static const NET_WG_GUI_MESSENGER_META_IMPL_BASECONTACTVIEWMETA:Class = BaseContactViewMeta;
+      
+      public static const NET_WG_GUI_MESSENGER_META_IMPL_BASEMANAGECONTACTVIEWMETA:Class = BaseManageContactViewMeta;
+      
+      public static const NET_WG_GUI_MESSENGER_META_IMPL_CHANNELCOMPONENTMETA:Class = ChannelComponentMeta;
+      
+      public static const NET_WG_GUI_MESSENGER_META_IMPL_CHANNELSMANAGEMENTWINDOWMETA:Class = ChannelsManagementWindowMeta;
+      
+      public static const NET_WG_GUI_MESSENGER_META_IMPL_CHANNELWINDOWMETA:Class = ChannelWindowMeta;
+      
+      public static const NET_WG_GUI_MESSENGER_META_IMPL_CONNECTTOSECURECHANNELWINDOWMETA:Class = ConnectToSecureChannelWindowMeta;
+      
+      public static const NET_WG_GUI_MESSENGER_META_IMPL_CONTACTNOTEMANAGEVIEWMETA:Class = ContactNoteManageViewMeta;
+      
+      public static const NET_WG_GUI_MESSENGER_META_IMPL_CONTACTSLISTPOPOVERMETA:Class = ContactsListPopoverMeta;
+      
+      public static const NET_WG_GUI_MESSENGER_META_IMPL_CONTACTSSETTINGSVIEWMETA:Class = ContactsSettingsViewMeta;
+      
+      public static const NET_WG_GUI_MESSENGER_META_IMPL_FAQWINDOWMETA:Class = FAQWindowMeta;
+      
+      public static const NET_WG_GUI_MESSENGER_META_IMPL_GROUPDELETEVIEWMETA:Class = GroupDeleteViewMeta;
+      
+      public static const NET_WG_GUI_MESSENGER_META_IMPL_LOBBYCHANNELWINDOWMETA:Class = LobbyChannelWindowMeta;
+      
+      public static const NET_WG_GUI_MESSENGER_META_IMPL_SEARCHCONTACTVIEWMETA:Class = SearchContactViewMeta;
+      
       public static const NET_WG_GUI_MESSENGER_VIEWS_BASECONTACTVIEW:Class = BaseContactView;
       
       public static const NET_WG_GUI_MESSENGER_VIEWS_BASEMANAGECONTACTVIEW:Class = BaseManageContactView;
@@ -8135,6 +8488,26 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_PREBATTLE_INVITES_USERROSTERVIEW:Class = UserRosterView;
       
+      public static const NET_WG_GUI_PREBATTLE_META_IBATTLESESSIONLISTMETA:Class = IBattleSessionListMeta;
+      
+      public static const NET_WG_GUI_PREBATTLE_META_IBATTLESESSIONWINDOWMETA:Class = IBattleSessionWindowMeta;
+      
+      public static const NET_WG_GUI_PREBATTLE_META_IPREBATTLEWINDOWMETA:Class = IPrebattleWindowMeta;
+      
+      public static const NET_WG_GUI_PREBATTLE_META_IPREQUEUEWINDOWMETA:Class = IPrequeueWindowMeta;
+      
+      public static const NET_WG_GUI_PREBATTLE_META_IRECEIVEDINVITEWINDOWMETA:Class = IReceivedInviteWindowMeta;
+      
+      public static const NET_WG_GUI_PREBATTLE_META_IMPL_BATTLESESSIONLISTMETA:Class = BattleSessionListMeta;
+      
+      public static const NET_WG_GUI_PREBATTLE_META_IMPL_BATTLESESSIONWINDOWMETA:Class = BattleSessionWindowMeta;
+      
+      public static const NET_WG_GUI_PREBATTLE_META_IMPL_PREBATTLEWINDOWMETA:Class = PrebattleWindowMeta;
+      
+      public static const NET_WG_GUI_PREBATTLE_META_IMPL_PREQUEUEWINDOWMETA:Class = PrequeueWindowMeta;
+      
+      public static const NET_WG_GUI_PREBATTLE_META_IMPL_RECEIVEDINVITEWINDOWMETA:Class = ReceivedInviteWindowMeta;
+      
       public static const NET_WG_GUI_RALLY_ABSTRACTRALLYVIEW:Class = AbstractRallyView;
       
       public static const NET_WG_GUI_RALLY_ABSTRACTRALLYWINDOW:Class = AbstractRallyWindow;
@@ -8254,6 +8627,1054 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_UTILS_VO_UNITSLOTPROPERTIES:Class = UnitSlotProperties;
       
       public static const NET_WG_INFRASTRUCTURE_BASE_ABSTRACTCONFIRMITEMDIALOG:Class = AbstractConfirmItemDialog;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IABSTRACTRALLYVIEWMETA:Class = IAbstractRallyViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IABSTRACTRALLYWINDOWMETA:Class = IAbstractRallyWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IALERTMESSAGEBLOCKMETA:Class = IAlertMessageBlockMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IALLVEHICLESTABVIEWMETA:Class = IAllVehiclesTabViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IAMMUNITIONPANELINJECTMETA:Class = IAmmunitionPanelInjectMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IAMMUNITIONPANELMETA:Class = IAmmunitionPanelMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IAMMUNITIONSETUPVIEWMETA:Class = IAmmunitionSetupViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IAWARDGROUPSMETA:Class = IAwardGroupsMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IAWARDWINDOWMETA:Class = IAwardWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IAWARDWINDOWSBASEMETA:Class = IAwardWindowsBaseMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IBADGESPAGEMETA:Class = IBadgesPageMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IBASEMISSIONDETAILSCONTAINERVIEWMETA:Class = IBaseMissionDetailsContainerViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IBASEPREBATTLELISTVIEWMETA:Class = IBasePrebattleListViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IBASEPREBATTLEROOMVIEWMETA:Class = IBasePrebattleRoomViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IBASERALLYINTROVIEWMETA:Class = IBaseRallyIntroViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IBASERALLYLISTVIEWMETA:Class = IBaseRallyListViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IBASERALLYMAINWINDOWMETA:Class = IBaseRallyMainWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IBASERALLYROOMVIEWMETA:Class = IBaseRallyRoomViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IBASERALLYVIEWMETA:Class = IBaseRallyViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IBASESTORAGECATEGORYVIEWMETA:Class = IBaseStorageCategoryViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IBATTLEMATTERSVIEWMETA:Class = IBattleMattersViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IBATTLEPASSBADGESDEMOWINDOWMETA:Class = IBattlePassBadgesDemoWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IBATTLEQUEUEMETA:Class = IBattleQueueMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IBATTLERESULTSMETA:Class = IBattleResultsMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IBATTLEROYALETOURNAMENTWIDGETMETA:Class = IBattleRoyaleTournamentWidgetMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IBATTLEROYALEVEHICLEINFOMETA:Class = IBattleRoyaleVehicleInfoMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IBATTLESTRONGHOLDSQUEUEMETA:Class = IBattleStrongholdsQueueMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IBOOSTERINFOMETA:Class = IBoosterInfoMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IBROWSERINVIEWCOMPONENTMETA:Class = IBrowserInViewComponentMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IBROWSERMETA:Class = IBrowserMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IBROWSERSCREENMETA:Class = IBrowserScreenMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IBROWSERVIEWSTACKEXPADDINGMETA:Class = IBrowserViewStackExPaddingMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IBROWSERWINDOWMETA:Class = IBrowserWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ICALENDARMETA:Class = ICalendarMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ICAROUSELEVENTENTRYMETA:Class = ICarouselEventEntryMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ICHECKBOXDIALOGMETA:Class = ICheckBoxDialogMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ICLANINVITESVIEWMETA:Class = IClanInvitesViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ICLANINVITESVIEWWITHTABLEMETA:Class = IClanInvitesViewWithTableMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ICLANINVITESWINDOWABSTRACTTABVIEWMETA:Class = IClanInvitesWindowAbstractTabViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ICLANINVITESWINDOWMETA:Class = IClanInvitesWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ICLANPERSONALINVITESVIEWMETA:Class = IClanPersonalInvitesViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ICLANPERSONALINVITESWINDOWMETA:Class = IClanPersonalInvitesWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ICLANPROFILEBASEVIEWMETA:Class = IClanProfileBaseViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ICLANPROFILEGLOBALMAPINFOVIEWMETA:Class = IClanProfileGlobalMapInfoViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ICLANPROFILEGLOBALMAPPROMOVIEWMETA:Class = IClanProfileGlobalMapPromoViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ICLANPROFILEMAINWINDOWMETA:Class = IClanProfileMainWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ICLANPROFILEPERSONNELVIEWMETA:Class = IClanProfilePersonnelViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ICLANPROFILESUMMARYVIEWMETA:Class = IClanProfileSummaryViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ICLANPROFILETABLESTATISTICSVIEWMETA:Class = IClanProfileTableStatisticsViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ICLANREQUESTSVIEWMETA:Class = IClanRequestsViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ICLANSEARCHINFOMETA:Class = IClanSearchInfoMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ICLANSEARCHWINDOWMETA:Class = IClanSearchWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ICONFIRMDIALOGMETA:Class = IConfirmDialogMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ICONFIRMEXCHANGEDIALOGMETA:Class = IConfirmExchangeDialogMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ICONFIRMITEMWINDOWMETA:Class = IConfirmItemWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ICONTACTSTREECOMPONENTMETA:Class = IContactsTreeComponentMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ICREWOPERATIONSPOPOVERMETA:Class = ICrewOperationsPopOverMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ICREWPANELINJECTMETA:Class = ICrewPanelInjectMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ICURRENTVEHICLEMISSIONSVIEWMETA:Class = ICurrentVehicleMissionsViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ICUSTOMIZATIONBOTTOMPANELMETA:Class = ICustomizationBottomPanelMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ICUSTOMIZATIONCONFIGURATIONWINDOWMETA:Class = ICustomizationConfigurationWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ICUSTOMIZATIONEDITEDKITPOPOVERMETA:Class = ICustomizationEditedKitPopoverMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ICUSTOMIZATIONFILTERSPOPOVERMETA:Class = ICustomizationFiltersPopoverMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ICUSTOMIZATIONINSCRIPTIONCONTROLLERMETA:Class = ICustomizationInscriptionControllerMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ICUSTOMIZATIONITEMSPOPOVERMETA:Class = ICustomizationItemsPopoverMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ICUSTOMIZATIONKITPOPOVERMETA:Class = ICustomizationKitPopoverMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ICUSTOMIZATIONMAINVIEWMETA:Class = ICustomizationMainViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ICUSTOMIZATIONNONHISTORICPOPOVERMETA:Class = ICustomizationNonHistoricPopoverMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ICUSTOMIZATIONPROGRESSIVEKITPOPOVERMETA:Class = ICustomizationProgressiveKitPopoverMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ICUSTOMIZATIONPROPERTIESSHEETMETA:Class = ICustomizationPropertiesSheetMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ICUSTOMIZATIONSTYLEINFOMETA:Class = ICustomizationStyleInfoMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ICYBERSPORTINTROMETA:Class = ICyberSportIntroMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ICYBERSPORTMAINWINDOWMETA:Class = ICyberSportMainWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ICYBERSPORTUNITMETA:Class = ICyberSportUnitMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ICYBERSPORTUNITSLISTMETA:Class = ICyberSportUnitsListMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IDEMONSTRATORWINDOWMETA:Class = IDemonstratorWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IDEMOPAGEMETA:Class = IDemoPageMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IEARNINGPOPUPVIEWMETA:Class = IEarningPopUpViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IEPICBATTLESWIDGETMETA:Class = IEpicBattlesWidgetMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IEPICBATTLETRAININGROOMMETA:Class = IEpicBattleTrainingRoomMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IEPICPRIMETIMEMETA:Class = IEpicPrimeTimeMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IEPICQUESTPROGRESSINFOMETA:Class = IEpicQuestProgressInfoMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IEULAMETA:Class = IEULAMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IEVENTBOARDSAWARDSOVERLAYMETA:Class = IEventBoardsAwardsOverlayMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IEVENTBOARDSBATTLEOVERLAYMETA:Class = IEventBoardsBattleOverlayMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IEVENTBOARDSDETAILSCONTAINERVIEWMETA:Class = IEventBoardsDetailsContainerViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IEVENTBOARDSRESULTFILTERPOPOVERVIEWMETA:Class = IEventBoardsResultFilterPopoverViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IEVENTBOARDSRESULTFILTERVEHICLESPOPOVERVIEWMETA:Class = IEventBoardsResultFilterVehiclesPopoverViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IEVENTBOARDSTABLEVIEWMETA:Class = IEventBoardsTableViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IEVENTBOARDSVEHICLESOVERLAYMETA:Class = IEventBoardsVehiclesOverlayMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IEVENTTOURNAMENTBANNERINJECTMETA:Class = IEventTournamentBannerInjectMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IFITTINGSELECTPOPOVERMETA:Class = IFittingSelectPopoverMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IFORTBATTLEROOMWINDOWMETA:Class = IFortBattleRoomWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IFORTCLANBATTLEROOMMETA:Class = IFortClanBattleRoomMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IFORTDISCONNECTVIEWMETA:Class = IFortDisconnectViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IFORTVEHICLESELECTPOPOVERMETA:Class = IFortVehicleSelectPopoverMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IFREESHEETPOPOVERMETA:Class = IFreeSheetPopoverMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IFREEXPINFOWINDOWMETA:Class = IFreeXPInfoWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IGOODIEINFOMETA:Class = IGoodieInfoMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IHANGARHEADERMETA:Class = IHangarHeaderMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IHANGARMETA:Class = IHangarMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IICONDIALOGMETA:Class = IIconDialogMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IICONPRICEDIALOGMETA:Class = IIconPriceDialogMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IIMAGEVIEWMETA:Class = IImageViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IITEMSWITHTYPEANDNATIONFILTERTABVIEWMETA:Class = IItemsWithTypeAndNationFilterTabViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IITEMSWITHTYPEFILTERTABVIEWMETA:Class = IItemsWithTypeFilterTabViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IITEMSWITHVEHICLEFILTERTABVIEWMETA:Class = IItemsWithVehicleFilterTabViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ILEGALINFOWINDOWMETA:Class = ILegalInfoWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ILIVEOPSWEBEVENTSENTRYPOINTINJECTMETA:Class = ILiveOpsWebEventsEntryPointInjectMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ILIVEOPSWEBEVENTSVIEWMETA:Class = ILiveOpsWebEventsViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ILOBBYMENUMETA:Class = ILobbyMenuMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ILOBBYPAGEMETA:Class = ILobbyPageMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ILOBBYVEHICLEMARKERVIEWMETA:Class = ILobbyVehicleMarkerViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ILOGINPAGEMETA:Class = ILoginPageMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ILOGINQUEUEWINDOWMETA:Class = ILoginQueueWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMAINTENANCECOMPONENTMETA:Class = IMaintenanceComponentMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMANUALCHAPTERVIEWMETA:Class = IManualChapterViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMANUALMAINVIEWMETA:Class = IManualMainViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMISSIONAWARDWINDOWMETA:Class = IMissionAwardWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMISSIONDETAILSCONTAINERVIEWMETA:Class = IMissionDetailsContainerViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMISSIONSEVENTBOARDSVIEWMETA:Class = IMissionsEventBoardsViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMISSIONSFILTERPOPOVERVIEWMETA:Class = IMissionsFilterPopoverViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMISSIONSGROUPEDVIEWMETA:Class = IMissionsGroupedViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMISSIONSLISTVIEWBASEMETA:Class = IMissionsListViewBaseMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMISSIONSMAPBOXVIEWMETA:Class = IMissionsMapboxViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMISSIONSMARATHONVIEWMETA:Class = IMissionsMarathonViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMISSIONSPAGEMETA:Class = IMissionsPageMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMISSIONSTOKENPOPOVERMETA:Class = IMissionsTokenPopoverMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMISSIONSVEHICLESELECTORMETA:Class = IMissionsVehicleSelectorMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMISSIONSVIEWBASEMETA:Class = IMissionsViewBaseMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMODULEINFOMETA:Class = IModuleInfoMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMODULESPANELMETA:Class = IModulesPanelMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_INOTIFICATIONPOPUPVIEWERMETA:Class = INotificationPopUpViewerMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_INOTIFICATIONSLISTMETA:Class = INotificationsListMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IPACKITEMSPOPOVERMETA:Class = IPackItemsPopoverMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IPAGINATIONMETA:Class = IPaginationMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IPERSONALMISSIONDETAILSCONTAINERVIEWMETA:Class = IPersonalMissionDetailsContainerViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IPERSONALMISSIONFIRSTENTRYAWARDVIEWMETA:Class = IPersonalMissionFirstEntryAwardViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IPERSONALMISSIONOPERATIONSMETA:Class = IPersonalMissionOperationsMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IPERSONALMISSIONSABSTRACTINFOVIEWMETA:Class = IPersonalMissionsAbstractInfoViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IPERSONALMISSIONSAWARDSVIEWMETA:Class = IPersonalMissionsAwardsViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IPERSONALMISSIONSMAPVIEWMETA:Class = IPersonalMissionsMapViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IPERSONALMISSIONSOPERATIONAWARDSSCREENMETA:Class = IPersonalMissionsOperationAwardsScreenMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IPERSONALMISSIONSPAGEMETA:Class = IPersonalMissionsPageMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IPERSONALMISSIONSQUESTAWARDSCREENMETA:Class = IPersonalMissionsQuestAwardScreenMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IPLAYERSATISFACTIONWIDGETMETA:Class = IPlayerSatisfactionWidgetMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IPRESTIGEPROGRESSINJECTMETA:Class = IPrestigeProgressInjectMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IPRIMETIMEMETA:Class = IPrimeTimeMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IPROFILEACHIEVEMENTSECTIONMETA:Class = IProfileAchievementSectionMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IPROFILEAWARDSMETA:Class = IProfileAwardsMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IPROFILEFORMATIONSPAGEMETA:Class = IProfileFormationsPageMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IPROFILEHOFMETA:Class = IProfileHofMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IPROFILEMETA:Class = IProfileMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IPROFILESECTIONMETA:Class = IProfileSectionMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IPROFILESTATISTICSMETA:Class = IProfileStatisticsMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IPROFILESUMMARYMETA:Class = IProfileSummaryMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IPROFILESUMMARYWINDOWMETA:Class = IProfileSummaryWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IPROFILETABNAVIGATORMETA:Class = IProfileTabNavigatorMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IPROFILETECHNIQUEMETA:Class = IProfileTechniqueMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IPROFILETECHNIQUEPAGEMETA:Class = IProfileTechniquePageMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IPROFILEWINDOWMETA:Class = IProfileWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IPROGRESSIONVIEWMETA:Class = IProgressionViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IPROGRESSIVEREWARDWIDGETMETA:Class = IProgressiveRewardWidgetMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IPROMOPREMIUMIGRWINDOWMETA:Class = IPromoPremiumIgrWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IQUESTSCONTENTTABSMETA:Class = IQuestsContentTabsMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IRALLYMAINWINDOWWITHSEARCHMETA:Class = IRallyMainWindowWithSearchMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IRANKEDBATTLESAWARDSVIEWMETA:Class = IRankedBattlesAwardsViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IRANKEDBATTLESBATTLERESULTSMETA:Class = IRankedBattlesBattleResultsMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IRANKEDBATTLESDIVISIONPROGRESSMETA:Class = IRankedBattlesDivisionProgressMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IRANKEDBATTLESDIVISIONQUALIFICATIONMETA:Class = IRankedBattlesDivisionQualificationMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IRANKEDBATTLESDIVISIONSVIEWMETA:Class = IRankedBattlesDivisionsViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IRANKEDBATTLESHANGARWIDGETMETA:Class = IRankedBattlesHangarWidgetMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IRANKEDBATTLESINTROMETA:Class = IRankedBattlesIntroMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IRANKEDBATTLESLEAGUESVIEWMETA:Class = IRankedBattlesLeaguesViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IRANKEDBATTLESPAGEMETA:Class = IRankedBattlesPageMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IRANKEDBATTLESREWARDSLEAGUESMETA:Class = IRankedBattlesRewardsLeaguesMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IRANKEDBATTLESREWARDSMETA:Class = IRankedBattlesRewardsMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IRANKEDBATTLESREWARDSRANKSMETA:Class = IRankedBattlesRewardsRanksMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IRANKEDBATTLESREWARDSYEARMETA:Class = IRankedBattlesRewardsYearMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IRANKEDBATTLESSEASONCOMPLETEVIEWMETA:Class = IRankedBattlesSeasonCompleteViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IRANKEDBATTLESSEASONGAPVIEWMETA:Class = IRankedBattlesSeasonGapViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IRANKEDBATTLESUNREACHABLEVIEWMETA:Class = IRankedBattlesUnreachableViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IRANKEDPRIMETIMEMETA:Class = IRankedPrimeTimeMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IRECRUITPARAMETERSMETA:Class = IRecruitParametersMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IREGULARITEMSTABVIEWMETA:Class = IRegularItemsTabViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IRENTALTERMSELECTIONPOPOVERMETA:Class = IRentalTermSelectionPopoverMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IRENTVEHICLESTABVIEWMETA:Class = IRentVehiclesTabViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IRESEARCHPANELMETA:Class = IResearchPanelMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IRESTOREVEHICLESTABVIEWMETA:Class = IRestoreVehiclesTabViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IROSTERSLOTSETTINGSWINDOWMETA:Class = IRosterSlotSettingsWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IRSSNEWSFEEDMETA:Class = IRssNewsFeedMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ISENDINVITESWINDOWMETA:Class = ISendInvitesWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ISESSIONBATTLESTATSVIEWMETA:Class = ISessionBattleStatsViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ISESSIONSTATSOVERVIEWMETA:Class = ISessionStatsOverviewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ISESSIONSTATSPOPOVERMETA:Class = ISessionStatsPopoverMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ISESSIONSTATSSETTINGSMETA:Class = ISessionStatsSettingsMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ISESSIONVEHICLESTATSVIEWMETA:Class = ISessionVehicleStatsViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ISIMPLEWINDOWMETA:Class = ISimpleWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ISLOTSPANELMETA:Class = ISlotsPanelMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ISQUADWINDOWMETA:Class = ISquadWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ISTAGESWITCHERMETA:Class = IStageSwitcherMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ISTORAGECAROUSELENVIRONMENTMETA:Class = IStorageCarouselEnvironmentMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ISTORAGECATEGORYBLUEPRINTSVIEWMETA:Class = IStorageCategoryBlueprintsViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ISTORAGECATEGORYCUSTOMIZATIONVIEWMETA:Class = IStorageCategoryCustomizationViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ISTORAGECATEGORYFORSELLVIEWMETA:Class = IStorageCategoryForSellViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ISTORAGECATEGORYINHANGARVIEWMETA:Class = IStorageCategoryInHangarViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ISTORAGECATEGORYOFFERSVIEWMETA:Class = IStorageCategoryOffersViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ISTORAGECATEGORYPERSONALRESERVESVIEWMETA:Class = IStorageCategoryPersonalReservesViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ISTORAGECATEGORYSTORAGEVIEWMETA:Class = IStorageCategoryStorageViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ISTORAGEDEVICESTABVIEWMETA:Class = IStorageDevicesTabViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ISTORAGEVEHICLESELECTPOPOVERMETA:Class = IStorageVehicleSelectPopoverMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ISTORAGEVIEWMETA:Class = IStorageViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ISTRONGHOLDBATTLESLISTVIEWMETA:Class = IStrongholdBattlesListViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ISTRONGHOLDVIEWMETA:Class = IStrongholdViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ISWITCHMODEPANELMETA:Class = ISwitchModePanelMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ISWITCHPERIPHERYWINDOWMETA:Class = ISwitchPeripheryWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ISYSTEMMESSAGEDIALOGMETA:Class = ISystemMessageDialogMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ITANKCAROUSELMETA:Class = ITankCarouselMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ITANKGIRLSPOPOVERMETA:Class = ITankgirlsPopoverMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ITRADEINPOPUPMETA:Class = ITradeInPopupMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ITRADEOFFWIDGETMETA:Class = ITradeOffWidgetMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ITRAININGFORMMETA:Class = ITrainingFormMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ITRAININGROOMBASEMETA:Class = ITrainingRoomBaseMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_ITRAININGWINDOWMETA:Class = ITrainingWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IUNBOUNDINJECTWINDOWMETA:Class = IUnboundInjectWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IUSEAWARDSHEETWINDOWMETA:Class = IUseAwardSheetWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IUSERMISSIONSHUBCONTAINERVIEWMETA:Class = IUserMissionsHubContainerViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IUSERMISSIONSHUBCONTENTINJECTMETA:Class = IUserMissionsHubContentInjectMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IVEHICLEBASEPREVIEWMETA:Class = IVehicleBasePreviewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IVEHICLEBUYWINDOWMETA:Class = IVehicleBuyWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IVEHICLECOMPARECARTPOPOVERMETA:Class = IVehicleCompareCartPopoverMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IVEHICLECOMPARECOMMONVIEWMETA:Class = IVehicleCompareCommonViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IVEHICLECOMPARECONFIGURATORBASEVIEWMETA:Class = IVehicleCompareConfiguratorBaseViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IVEHICLECOMPARECONFIGURATORMAINMETA:Class = IVehicleCompareConfiguratorMainMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IVEHICLECOMPARECONFIGURATORVIEWMETA:Class = IVehicleCompareConfiguratorViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IVEHICLECOMPAREVIEWMETA:Class = IVehicleCompareViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IVEHICLEINFOMETA:Class = IVehicleInfoMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IVEHICLEMODULESVIEWMETA:Class = IVehicleModulesViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IVEHICLEPARAMETERSMETA:Class = IVehicleParametersMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IVEHICLEPARAMETERSWITHHIGHLIGHTMETA:Class = IVehicleParametersWithHighlightMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IVEHICLEPOSTPROGRESSIONVIEWBASEMETA:Class = IVehiclePostProgressionViewBaseMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IVEHICLEPOSTPROGRESSIONVIEWMETA:Class = IVehiclePostProgressionViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IVEHICLEPREVIEWBOTTOMPANELMETA:Class = IVehiclePreviewBottomPanelMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IVEHICLEPREVIEWBOTTOMPANELOFFERGIFTMETA:Class = IVehiclePreviewBottomPanelOfferGiftMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IVEHICLEPREVIEWBOTTOMPANELSHOWCASESTYLEBUYINGMETA:Class = IVehiclePreviewBottomPanelShowcaseStyleBuyingMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IVEHICLEPREVIEWBOTTOMPANELSTYLEBUYINGMETA:Class = IVehiclePreviewBottomPanelStyleBuyingMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IVEHICLEPREVIEWBOTTOMPANELSTYLEPROGRESSIONMETA:Class = IVehiclePreviewBottomPanelStyleProgressionMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IVEHICLEPREVIEWBOTTOMPANELTRADEINMETA:Class = IVehiclePreviewBottomPanelTradeInMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IVEHICLEPREVIEWBOTTOMPANELWELLMETA:Class = IVehiclePreviewBottomPanelWellMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IVEHICLEPREVIEWBOTTOMPANELWOTPLUSMETA:Class = IVehiclePreviewBottomPanelWotPlusMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IVEHICLEPREVIEWBROWSETABMETA:Class = IVehiclePreviewBrowseTabMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IVEHICLEPREVIEWCREWTABINJECTMETA:Class = IVehiclePreviewCrewTabInjectMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IVEHICLEPREVIEWMETA:Class = IVehiclePreviewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IVEHICLEPREVIEWMODULESTABMETA:Class = IVehiclePreviewModulesTabMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IVEHICLEPREVIEWTOPPANELTABSMETA:Class = IVehiclePreviewTopPanelTabsMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IVEHICLESELECTORCAROUSELMETA:Class = IVehicleSelectorCarouselMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IVEHICLESELECTORPOPUPMETA:Class = IVehicleSelectorPopupMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IVEHICLESELECTPOPOVERMETA:Class = IVehicleSelectPopoverMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IVEHICLESELLCONFIRMATIONPOPOVERMETA:Class = IVehicleSellConfirmationPopoverMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IVEHICLESELLDIALOGMETA:Class = IVehicleSellDialogMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IWGNCDIALOGMETA:Class = IWGNCDialogMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IWGNCPOLLWINDOWMETA:Class = IWGNCPollWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_ABSTRACTRALLYVIEWMETA:Class = AbstractRallyViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_ABSTRACTRALLYWINDOWMETA:Class = AbstractRallyWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_ALERTMESSAGEBLOCKMETA:Class = AlertMessageBlockMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_ALLVEHICLESTABVIEWMETA:Class = AllVehiclesTabViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_AMMUNITIONPANELINJECTMETA:Class = AmmunitionPanelInjectMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_AMMUNITIONPANELMETA:Class = AmmunitionPanelMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_AMMUNITIONSETUPVIEWMETA:Class = AmmunitionSetupViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_AWARDGROUPSMETA:Class = AwardGroupsMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_AWARDWINDOWMETA:Class = AwardWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_AWARDWINDOWSBASEMETA:Class = AwardWindowsBaseMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_BADGESPAGEMETA:Class = BadgesPageMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_BASEMISSIONDETAILSCONTAINERVIEWMETA:Class = BaseMissionDetailsContainerViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_BASEPREBATTLELISTVIEWMETA:Class = BasePrebattleListViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_BASEPREBATTLEROOMVIEWMETA:Class = BasePrebattleRoomViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_BASERALLYINTROVIEWMETA:Class = BaseRallyIntroViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_BASERALLYLISTVIEWMETA:Class = BaseRallyListViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_BASERALLYMAINWINDOWMETA:Class = BaseRallyMainWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_BASERALLYROOMVIEWMETA:Class = BaseRallyRoomViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_BASERALLYVIEWMETA:Class = BaseRallyViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_BASESTORAGECATEGORYVIEWMETA:Class = BaseStorageCategoryViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_BATTLEMATTERSVIEWMETA:Class = BattleMattersViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_BATTLEPASSBADGESDEMOWINDOWMETA:Class = BattlePassBadgesDemoWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_BATTLEQUEUEMETA:Class = BattleQueueMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_BATTLERESULTSMETA:Class = BattleResultsMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_BATTLEROYALETOURNAMENTWIDGETMETA:Class = BattleRoyaleTournamentWidgetMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_BATTLEROYALEVEHICLEINFOMETA:Class = BattleRoyaleVehicleInfoMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_BATTLESTRONGHOLDSQUEUEMETA:Class = BattleStrongholdsQueueMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_BOOSTERINFOMETA:Class = BoosterInfoMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_BROWSERINVIEWCOMPONENTMETA:Class = BrowserInViewComponentMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_BROWSERMETA:Class = BrowserMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_BROWSERSCREENMETA:Class = BrowserScreenMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_BROWSERVIEWSTACKEXPADDINGMETA:Class = BrowserViewStackExPaddingMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_BROWSERWINDOWMETA:Class = BrowserWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_CALENDARMETA:Class = CalendarMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_CAROUSELEVENTENTRYMETA:Class = CarouselEventEntryMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_CHECKBOXDIALOGMETA:Class = CheckBoxDialogMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_CLANINVITESVIEWMETA:Class = ClanInvitesViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_CLANINVITESVIEWWITHTABLEMETA:Class = ClanInvitesViewWithTableMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_CLANINVITESWINDOWABSTRACTTABVIEWMETA:Class = ClanInvitesWindowAbstractTabViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_CLANINVITESWINDOWMETA:Class = ClanInvitesWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_CLANPERSONALINVITESVIEWMETA:Class = ClanPersonalInvitesViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_CLANPERSONALINVITESWINDOWMETA:Class = ClanPersonalInvitesWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_CLANPROFILEBASEVIEWMETA:Class = ClanProfileBaseViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_CLANPROFILEGLOBALMAPINFOVIEWMETA:Class = ClanProfileGlobalMapInfoViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_CLANPROFILEGLOBALMAPPROMOVIEWMETA:Class = ClanProfileGlobalMapPromoViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_CLANPROFILEMAINWINDOWMETA:Class = ClanProfileMainWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_CLANPROFILEPERSONNELVIEWMETA:Class = ClanProfilePersonnelViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_CLANPROFILESUMMARYVIEWMETA:Class = ClanProfileSummaryViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_CLANPROFILETABLESTATISTICSVIEWMETA:Class = ClanProfileTableStatisticsViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_CLANREQUESTSVIEWMETA:Class = ClanRequestsViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_CLANSEARCHINFOMETA:Class = ClanSearchInfoMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_CLANSEARCHWINDOWMETA:Class = ClanSearchWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_CONFIRMDIALOGMETA:Class = ConfirmDialogMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_CONFIRMEXCHANGEDIALOGMETA:Class = ConfirmExchangeDialogMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_CONFIRMITEMWINDOWMETA:Class = ConfirmItemWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_CONTACTSTREECOMPONENTMETA:Class = ContactsTreeComponentMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_CREWOPERATIONSPOPOVERMETA:Class = CrewOperationsPopOverMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_CREWPANELINJECTMETA:Class = CrewPanelInjectMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_CURRENTVEHICLEMISSIONSVIEWMETA:Class = CurrentVehicleMissionsViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_CUSTOMIZATIONBOTTOMPANELMETA:Class = CustomizationBottomPanelMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_CUSTOMIZATIONCONFIGURATIONWINDOWMETA:Class = CustomizationConfigurationWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_CUSTOMIZATIONEDITEDKITPOPOVERMETA:Class = CustomizationEditedKitPopoverMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_CUSTOMIZATIONFILTERSPOPOVERMETA:Class = CustomizationFiltersPopoverMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_CUSTOMIZATIONINSCRIPTIONCONTROLLERMETA:Class = CustomizationInscriptionControllerMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_CUSTOMIZATIONITEMSPOPOVERMETA:Class = CustomizationItemsPopoverMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_CUSTOMIZATIONKITPOPOVERMETA:Class = CustomizationKitPopoverMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_CUSTOMIZATIONMAINVIEWMETA:Class = CustomizationMainViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_CUSTOMIZATIONNONHISTORICPOPOVERMETA:Class = CustomizationNonHistoricPopoverMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_CUSTOMIZATIONPROGRESSIVEKITPOPOVERMETA:Class = CustomizationProgressiveKitPopoverMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_CUSTOMIZATIONPROPERTIESSHEETMETA:Class = CustomizationPropertiesSheetMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_CUSTOMIZATIONSTYLEINFOMETA:Class = CustomizationStyleInfoMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_CYBERSPORTINTROMETA:Class = CyberSportIntroMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_CYBERSPORTMAINWINDOWMETA:Class = CyberSportMainWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_CYBERSPORTUNITMETA:Class = CyberSportUnitMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_CYBERSPORTUNITSLISTMETA:Class = CyberSportUnitsListMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_DEMONSTRATORWINDOWMETA:Class = DemonstratorWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_DEMOPAGEMETA:Class = DemoPageMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_EARNINGPOPUPVIEWMETA:Class = EarningPopUpViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_EPICBATTLESWIDGETMETA:Class = EpicBattlesWidgetMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_EPICBATTLETRAININGROOMMETA:Class = EpicBattleTrainingRoomMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_EPICPRIMETIMEMETA:Class = EpicPrimeTimeMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_EPICQUESTPROGRESSINFOMETA:Class = EpicQuestProgressInfoMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_EULAMETA:Class = EULAMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_EVENTBOARDSAWARDSOVERLAYMETA:Class = EventBoardsAwardsOverlayMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_EVENTBOARDSBATTLEOVERLAYMETA:Class = EventBoardsBattleOverlayMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_EVENTBOARDSDETAILSCONTAINERVIEWMETA:Class = EventBoardsDetailsContainerViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_EVENTBOARDSRESULTFILTERPOPOVERVIEWMETA:Class = EventBoardsResultFilterPopoverViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_EVENTBOARDSRESULTFILTERVEHICLESPOPOVERVIEWMETA:Class = EventBoardsResultFilterVehiclesPopoverViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_EVENTBOARDSTABLEVIEWMETA:Class = EventBoardsTableViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_EVENTBOARDSVEHICLESOVERLAYMETA:Class = EventBoardsVehiclesOverlayMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_EVENTTOURNAMENTBANNERINJECTMETA:Class = EventTournamentBannerInjectMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_FITTINGSELECTPOPOVERMETA:Class = FittingSelectPopoverMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_FORTBATTLEROOMWINDOWMETA:Class = FortBattleRoomWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_FORTCLANBATTLEROOMMETA:Class = FortClanBattleRoomMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_FORTDISCONNECTVIEWMETA:Class = FortDisconnectViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_FORTVEHICLESELECTPOPOVERMETA:Class = FortVehicleSelectPopoverMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_FREESHEETPOPOVERMETA:Class = FreeSheetPopoverMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_FREEXPINFOWINDOWMETA:Class = FreeXPInfoWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_GOODIEINFOMETA:Class = GoodieInfoMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_HANGARHEADERMETA:Class = HangarHeaderMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_HANGARMETA:Class = HangarMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_ICONDIALOGMETA:Class = IconDialogMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_ICONPRICEDIALOGMETA:Class = IconPriceDialogMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_IMAGEVIEWMETA:Class = ImageViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_ITEMSWITHTYPEANDNATIONFILTERTABVIEWMETA:Class = ItemsWithTypeAndNationFilterTabViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_ITEMSWITHTYPEFILTERTABVIEWMETA:Class = ItemsWithTypeFilterTabViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_ITEMSWITHVEHICLEFILTERTABVIEWMETA:Class = ItemsWithVehicleFilterTabViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_LEGALINFOWINDOWMETA:Class = LegalInfoWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_LIVEOPSWEBEVENTSENTRYPOINTINJECTMETA:Class = LiveOpsWebEventsEntryPointInjectMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_LIVEOPSWEBEVENTSVIEWMETA:Class = LiveOpsWebEventsViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_LOBBYMENUMETA:Class = LobbyMenuMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_LOBBYPAGEMETA:Class = LobbyPageMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_LOBBYVEHICLEMARKERVIEWMETA:Class = LobbyVehicleMarkerViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_LOGINPAGEMETA:Class = LoginPageMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_LOGINQUEUEWINDOWMETA:Class = LoginQueueWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_MAINTENANCECOMPONENTMETA:Class = MaintenanceComponentMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_MANUALCHAPTERVIEWMETA:Class = ManualChapterViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_MANUALMAINVIEWMETA:Class = ManualMainViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_MISSIONAWARDWINDOWMETA:Class = MissionAwardWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_MISSIONDETAILSCONTAINERVIEWMETA:Class = MissionDetailsContainerViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_MISSIONSEVENTBOARDSVIEWMETA:Class = MissionsEventBoardsViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_MISSIONSFILTERPOPOVERVIEWMETA:Class = MissionsFilterPopoverViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_MISSIONSGROUPEDVIEWMETA:Class = MissionsGroupedViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_MISSIONSLISTVIEWBASEMETA:Class = MissionsListViewBaseMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_MISSIONSMAPBOXVIEWMETA:Class = MissionsMapboxViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_MISSIONSMARATHONVIEWMETA:Class = MissionsMarathonViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_MISSIONSPAGEMETA:Class = MissionsPageMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_MISSIONSTOKENPOPOVERMETA:Class = MissionsTokenPopoverMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_MISSIONSVEHICLESELECTORMETA:Class = MissionsVehicleSelectorMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_MISSIONSVIEWBASEMETA:Class = MissionsViewBaseMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_MODULEINFOMETA:Class = ModuleInfoMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_MODULESPANELMETA:Class = ModulesPanelMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_NOTIFICATIONPOPUPVIEWERMETA:Class = NotificationPopUpViewerMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_NOTIFICATIONSLISTMETA:Class = NotificationsListMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_PACKITEMSPOPOVERMETA:Class = PackItemsPopoverMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_PAGINATIONMETA:Class = PaginationMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_PERSONALMISSIONDETAILSCONTAINERVIEWMETA:Class = PersonalMissionDetailsContainerViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_PERSONALMISSIONFIRSTENTRYAWARDVIEWMETA:Class = PersonalMissionFirstEntryAwardViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_PERSONALMISSIONOPERATIONSMETA:Class = PersonalMissionOperationsMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_PERSONALMISSIONSABSTRACTINFOVIEWMETA:Class = PersonalMissionsAbstractInfoViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_PERSONALMISSIONSAWARDSVIEWMETA:Class = PersonalMissionsAwardsViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_PERSONALMISSIONSMAPVIEWMETA:Class = PersonalMissionsMapViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_PERSONALMISSIONSOPERATIONAWARDSSCREENMETA:Class = PersonalMissionsOperationAwardsScreenMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_PERSONALMISSIONSPAGEMETA:Class = PersonalMissionsPageMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_PERSONALMISSIONSQUESTAWARDSCREENMETA:Class = PersonalMissionsQuestAwardScreenMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_PLAYERSATISFACTIONWIDGETMETA:Class = PlayerSatisfactionWidgetMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_PRESTIGEPROGRESSINJECTMETA:Class = PrestigeProgressInjectMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_PRIMETIMEMETA:Class = PrimeTimeMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_PROFILEACHIEVEMENTSECTIONMETA:Class = ProfileAchievementSectionMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_PROFILEAWARDSMETA:Class = ProfileAwardsMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_PROFILEFORMATIONSPAGEMETA:Class = ProfileFormationsPageMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_PROFILEHOFMETA:Class = ProfileHofMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_PROFILEMETA:Class = ProfileMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_PROFILESECTIONMETA:Class = ProfileSectionMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_PROFILESTATISTICSMETA:Class = ProfileStatisticsMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_PROFILESUMMARYMETA:Class = ProfileSummaryMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_PROFILESUMMARYWINDOWMETA:Class = ProfileSummaryWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_PROFILETABNAVIGATORMETA:Class = ProfileTabNavigatorMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_PROFILETECHNIQUEMETA:Class = ProfileTechniqueMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_PROFILETECHNIQUEPAGEMETA:Class = ProfileTechniquePageMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_PROFILEWINDOWMETA:Class = ProfileWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_PROGRESSIONVIEWMETA:Class = ProgressionViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_PROGRESSIVEREWARDWIDGETMETA:Class = ProgressiveRewardWidgetMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_PROMOPREMIUMIGRWINDOWMETA:Class = PromoPremiumIgrWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_QUESTSCONTENTTABSMETA:Class = QuestsContentTabsMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_RALLYMAINWINDOWWITHSEARCHMETA:Class = RallyMainWindowWithSearchMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_RANKEDBATTLESAWARDSVIEWMETA:Class = RankedBattlesAwardsViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_RANKEDBATTLESBATTLERESULTSMETA:Class = RankedBattlesBattleResultsMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_RANKEDBATTLESDIVISIONPROGRESSMETA:Class = RankedBattlesDivisionProgressMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_RANKEDBATTLESDIVISIONQUALIFICATIONMETA:Class = RankedBattlesDivisionQualificationMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_RANKEDBATTLESDIVISIONSVIEWMETA:Class = RankedBattlesDivisionsViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_RANKEDBATTLESHANGARWIDGETMETA:Class = RankedBattlesHangarWidgetMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_RANKEDBATTLESINTROMETA:Class = RankedBattlesIntroMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_RANKEDBATTLESLEAGUESVIEWMETA:Class = RankedBattlesLeaguesViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_RANKEDBATTLESPAGEMETA:Class = RankedBattlesPageMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_RANKEDBATTLESREWARDSLEAGUESMETA:Class = RankedBattlesRewardsLeaguesMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_RANKEDBATTLESREWARDSMETA:Class = RankedBattlesRewardsMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_RANKEDBATTLESREWARDSRANKSMETA:Class = RankedBattlesRewardsRanksMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_RANKEDBATTLESREWARDSYEARMETA:Class = RankedBattlesRewardsYearMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_RANKEDBATTLESSEASONCOMPLETEVIEWMETA:Class = RankedBattlesSeasonCompleteViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_RANKEDBATTLESSEASONGAPVIEWMETA:Class = RankedBattlesSeasonGapViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_RANKEDBATTLESUNREACHABLEVIEWMETA:Class = RankedBattlesUnreachableViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_RANKEDPRIMETIMEMETA:Class = RankedPrimeTimeMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_RECRUITPARAMETERSMETA:Class = RecruitParametersMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_REGULARITEMSTABVIEWMETA:Class = RegularItemsTabViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_RENTALTERMSELECTIONPOPOVERMETA:Class = RentalTermSelectionPopoverMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_RENTVEHICLESTABVIEWMETA:Class = RentVehiclesTabViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_RESEARCHPANELMETA:Class = ResearchPanelMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_RESTOREVEHICLESTABVIEWMETA:Class = RestoreVehiclesTabViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_ROSTERSLOTSETTINGSWINDOWMETA:Class = RosterSlotSettingsWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_RSSNEWSFEEDMETA:Class = RssNewsFeedMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_SENDINVITESWINDOWMETA:Class = SendInvitesWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_SESSIONBATTLESTATSVIEWMETA:Class = SessionBattleStatsViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_SESSIONSTATSOVERVIEWMETA:Class = SessionStatsOverviewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_SESSIONSTATSPOPOVERMETA:Class = SessionStatsPopoverMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_SESSIONSTATSSETTINGSMETA:Class = SessionStatsSettingsMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_SESSIONVEHICLESTATSVIEWMETA:Class = SessionVehicleStatsViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_SIMPLEWINDOWMETA:Class = SimpleWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_SLOTSPANELMETA:Class = SlotsPanelMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_SQUADWINDOWMETA:Class = SquadWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_STAGESWITCHERMETA:Class = StageSwitcherMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_STORAGECAROUSELENVIRONMENTMETA:Class = StorageCarouselEnvironmentMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_STORAGECATEGORYBLUEPRINTSVIEWMETA:Class = StorageCategoryBlueprintsViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_STORAGECATEGORYCUSTOMIZATIONVIEWMETA:Class = StorageCategoryCustomizationViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_STORAGECATEGORYFORSELLVIEWMETA:Class = StorageCategoryForSellViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_STORAGECATEGORYINHANGARVIEWMETA:Class = StorageCategoryInHangarViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_STORAGECATEGORYOFFERSVIEWMETA:Class = StorageCategoryOffersViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_STORAGECATEGORYPERSONALRESERVESVIEWMETA:Class = StorageCategoryPersonalReservesViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_STORAGECATEGORYSTORAGEVIEWMETA:Class = StorageCategoryStorageViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_STORAGEDEVICESTABVIEWMETA:Class = StorageDevicesTabViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_STORAGEVEHICLESELECTPOPOVERMETA:Class = StorageVehicleSelectPopoverMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_STORAGEVIEWMETA:Class = StorageViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_STRONGHOLDBATTLESLISTVIEWMETA:Class = StrongholdBattlesListViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_STRONGHOLDVIEWMETA:Class = StrongholdViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_SWITCHMODEPANELMETA:Class = SwitchModePanelMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_SWITCHPERIPHERYWINDOWMETA:Class = SwitchPeripheryWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_SYSTEMMESSAGEDIALOGMETA:Class = SystemMessageDialogMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_TANKCAROUSELMETA:Class = TankCarouselMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_TANKGIRLSPOPOVERMETA:Class = TankgirlsPopoverMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_TRADEINPOPUPMETA:Class = TradeInPopupMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_TRADEOFFWIDGETMETA:Class = TradeOffWidgetMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_TRAININGFORMMETA:Class = TrainingFormMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_TRAININGROOMBASEMETA:Class = TrainingRoomBaseMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_TRAININGWINDOWMETA:Class = TrainingWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_UNBOUNDINJECTWINDOWMETA:Class = UnboundInjectWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_USEAWARDSHEETWINDOWMETA:Class = UseAwardSheetWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_USERMISSIONSHUBCONTAINERVIEWMETA:Class = UserMissionsHubContainerViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_USERMISSIONSHUBCONTENTINJECTMETA:Class = UserMissionsHubContentInjectMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_VEHICLEBASEPREVIEWMETA:Class = VehicleBasePreviewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_VEHICLEBUYWINDOWMETA:Class = VehicleBuyWindowMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_VEHICLECOMPARECARTPOPOVERMETA:Class = VehicleCompareCartPopoverMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_VEHICLECOMPARECOMMONVIEWMETA:Class = VehicleCompareCommonViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_VEHICLECOMPARECONFIGURATORBASEVIEWMETA:Class = VehicleCompareConfiguratorBaseViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_VEHICLECOMPARECONFIGURATORMAINMETA:Class = VehicleCompareConfiguratorMainMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_VEHICLECOMPARECONFIGURATORVIEWMETA:Class = VehicleCompareConfiguratorViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_VEHICLECOMPAREVIEWMETA:Class = VehicleCompareViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_VEHICLEINFOMETA:Class = VehicleInfoMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_VEHICLEMODULESVIEWMETA:Class = VehicleModulesViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_VEHICLEPARAMETERSMETA:Class = VehicleParametersMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_VEHICLEPARAMETERSWITHHIGHLIGHTMETA:Class = VehicleParametersWithHighlightMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_VEHICLEPOSTPROGRESSIONVIEWBASEMETA:Class = VehiclePostProgressionViewBaseMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_VEHICLEPOSTPROGRESSIONVIEWMETA:Class = VehiclePostProgressionViewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_VEHICLEPREVIEWBOTTOMPANELMETA:Class = VehiclePreviewBottomPanelMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_VEHICLEPREVIEWBOTTOMPANELOFFERGIFTMETA:Class = VehiclePreviewBottomPanelOfferGiftMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_VEHICLEPREVIEWBOTTOMPANELSHOWCASESTYLEBUYINGMETA:Class = VehiclePreviewBottomPanelShowcaseStyleBuyingMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_VEHICLEPREVIEWBOTTOMPANELSTYLEBUYINGMETA:Class = VehiclePreviewBottomPanelStyleBuyingMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_VEHICLEPREVIEWBOTTOMPANELSTYLEPROGRESSIONMETA:Class = VehiclePreviewBottomPanelStyleProgressionMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_VEHICLEPREVIEWBOTTOMPANELTRADEINMETA:Class = VehiclePreviewBottomPanelTradeInMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_VEHICLEPREVIEWBOTTOMPANELWELLMETA:Class = VehiclePreviewBottomPanelWellMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_VEHICLEPREVIEWBOTTOMPANELWOTPLUSMETA:Class = VehiclePreviewBottomPanelWotPlusMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_VEHICLEPREVIEWBROWSETABMETA:Class = VehiclePreviewBrowseTabMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_VEHICLEPREVIEWCREWTABINJECTMETA:Class = VehiclePreviewCrewTabInjectMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_VEHICLEPREVIEWMETA:Class = VehiclePreviewMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_VEHICLEPREVIEWMODULESTABMETA:Class = VehiclePreviewModulesTabMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_VEHICLEPREVIEWTOPPANELTABSMETA:Class = VehiclePreviewTopPanelTabsMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_VEHICLESELECTORCAROUSELMETA:Class = VehicleSelectorCarouselMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_VEHICLESELECTORPOPUPMETA:Class = VehicleSelectorPopupMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_VEHICLESELECTPOPOVERMETA:Class = VehicleSelectPopoverMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_VEHICLESELLCONFIRMATIONPOPOVERMETA:Class = VehicleSellConfirmationPopoverMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_VEHICLESELLDIALOGMETA:Class = VehicleSellDialogMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_WGNCDIALOGMETA:Class = WGNCDialogMeta;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_WGNCPOLLWINDOWMETA:Class = WGNCPollWindowMeta;
       
       public static const NET_WG_INFRASTRUCTURE_EVENTS_DRAGEVENT:Class = DragEvent;
       

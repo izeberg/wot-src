@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-0.499863 0.002218 -0.701763</min>
+		<max>0.061241 0.481621 0.603690</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_314_Telemetry_Plotter/normal/lod0/Cus_314_Telemetry_Plotter</nodefullVisual>
+	<parent>content/3D_Customization/Cus_314_Telemetry_Plotter/normal/lod1/Cus_314_Telemetry_Plotter</parent>
+	<extent>32.000000</extent>
+</root>

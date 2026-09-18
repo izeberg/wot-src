@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from comp7_light.notification.decorators import Comp7LightProgressionLockButtonDecorator
 from constants import SCENARIO_RESULT
 from gui.impl import backport

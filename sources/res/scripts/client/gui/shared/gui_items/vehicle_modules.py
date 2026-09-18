@@ -7,11 +7,11 @@ from gui.Scaleform.genConsts.FITTING_TYPES import FITTING_TYPES
 from gui.Scaleform.genConsts.STORE_CONSTANTS import STORE_CONSTANTS
 from gui.impl import backport
 from gui.impl.gen import R
-from gui.shared.items_parameters import isDualAccuracy
 from gui.shared.items_parameters.params_cache import g_paramsCache
 from gui.shared.utils.functions import replaceHyphenToUnderscore
 from gui.shared.gui_items import GUI_ITEM_TYPE
 from gui.shared.gui_items.fitting_item import FittingItem, ICONS_MASK
+from gui.shared.gui_items.vehicle_mechanics.mechanic_detectors import ENGINE_MECHANIC_DETECTORS, GUN_MECHANIC_DETECTORS, ChassisTypes
 from gui.shared.gui_items.vehicle_mechanics.factories import GunMechanicFactory, ChassisMechanicFactory, EngineMechanicFactory, ShellMechanicFactory
 from gui.shared.utils import GUN_CLIP, GUN_CAN_BE_CLIP, GUN_AUTO_RELOAD, GUN_CAN_BE_AUTO_RELOAD, GUN_DUAL_GUN, GUN_CAN_BE_DUAL_GUN, GUN_AUTO_SHOOT, GUN_CAN_BE_AUTO_SHOOT, GUN_CAN_BE_TWIN_GUN, GUN_TWIN_GUN, GUN_CAN_BE_LOW_CHARGE_SHOT, LOW_CHARGE_SHOT
 from gui.shared.money import Currency
@@ -73,9 +73,9 @@ class VehicleModule(FittingItem):
         return self.itemTypeName
 
     def getShopIcon(self, size=STORE_CONSTANTS.ICON_SIZE_MEDIUM):
-        resID = R.images.gui.maps.shop.modules.num(size).dyn(replaceHyphenToUnderscore(self.itemTypeName))()
-        if resID != -1:
-            return backport.image(resID)
+        res = R.images.gui.maps.shop.modules.num(size).dyn(replaceHyphenToUnderscore(self.itemTypeName))
+        if res.exists():
+            return backport.image(res())
         return ''
 
     def getModuleMechanicItems(self, vehDescr):
@@ -109,23 +109,17 @@ class VehicleChassis(VehicleModule):
 
         return result
 
-    def isHydraulicChassis(self):
-        return g_paramsCache.isChassisHydraulic(self.intCD)
-
     def isWheeledChassis(self):
-        return g_paramsCache.isChassisWheeled(self.intCD)
-
-    def isHydraulicWheeledChassis(self):
-        return g_paramsCache.isChassisHydraulic(self.intCD) and g_paramsCache.isChassisWheeled(self.intCD)
+        return g_paramsCache.hasChassisMechanic(self.intCD, ChassisTypes.WHEELED)
 
     def isWheeledOnSpotRotationChassis(self):
-        return g_paramsCache.isChassisWheeledOnSpotRotation(self.intCD)
+        return g_paramsCache.hasChassisMechanic(self.intCD, ChassisTypes.ON_SPOT_ROTATION_WHEELED)
 
     def hasAutoSiege(self):
-        return g_paramsCache.isChassisAutoSiege(self.intCD)
+        return g_paramsCache.hasChassisMechanic(self.intCD, ChassisTypes.AUTO_SIEGE)
 
-    def isTrackWithinTrack(self):
-        return g_paramsCache.isTrackWithinTrack(self.intCD)
+    def hasMechanic(self, mechanic):
+        return g_paramsCache.hasChassisMechanic(self.intCD, mechanic)
 
     @property
     def iconName(self):
@@ -140,9 +134,9 @@ class VehicleChassis(VehicleModule):
 
     def getShopIcon(self, size=STORE_CONSTANTS.ICON_SIZE_MEDIUM):
         if self.isWheeledChassis():
-            resID = R.images.gui.maps.shop.modules.num(size).dyn(FITTING_TYPES.VEHICLE_WHEELED_CHASSIS)()
-            if resID != -1:
-                return backport.image(resID)
+            res = R.images.gui.maps.shop.modules.num(size).dyn(FITTING_TYPES.VEHICLE_WHEELED_CHASSIS)
+            if res.exists():
+                return backport.image(res())
             return ''
         return super(VehicleChassis, self).getShopIcon(size)
 
@@ -250,12 +244,6 @@ class VehicleGun(VehicleModule):
     def isNonPiercingDamage(self):
         return any(shell.isNonPiercingDamageMechanics for shell in self.defaultAmmo)
 
-    def hasDualAccuracy(self, vehicleDescr=None):
-        if vehicleDescr is not None:
-            return g_paramsCache.hasDualAccuracy(self.intCD, vehicleDescr.type.compactDescr)
-        else:
-            return isDualAccuracy(self.descriptor)
-
     def getInstalledVehicles(self, vehicles):
         result = set()
         for vehicle in vehicles:
@@ -294,6 +282,14 @@ class VehicleGun(VehicleModule):
         vehicleGuns = vehDescr.type.getGuns() if vehDescr is not None else ()
         descriptor = findFirst(lambda gun: gun.compactDescr == self.intCD, vehicleGuns)
         return descriptor or self.descriptor
+
+    def hasMechanic(self, mechanic, vehDescr=None):
+        if vehDescr is not None:
+            detector = GUN_MECHANIC_DETECTORS.get(mechanic)
+            if detector is not None:
+                return detector(self.getDescriptor(vehDescr), vehDescr)
+            return False
+        return g_paramsCache.hasGunMechanic(self.intCD, mechanic)
 
     def _getMaxAmmo(self):
         return self.descriptor.maxAmmo
@@ -346,32 +342,13 @@ class VehicleEngine(VehicleModule):
         vehicle.descriptor.installComponent(oldModuleId)
         return conflictEqs
 
-    def hasTurboshaftEngine(self, vehDescr=None):
+    def hasMechanic(self, mechanic, vehDescr=None):
         if vehDescr is not None:
-            return vehDescr.hasTurboshaftEngine
-        else:
-            return g_paramsCache.hasTurboshaftEngine(self.intCD)
-
-    def hasRocketAcceleration(self, vehDescr=None):
-        if vehDescr is not None:
-            return vehDescr.hasRocketAcceleration
-        else:
-            return g_paramsCache.hasRocketAcceleration(self.intCD)
-
-    def hasRechargeableNitro(self):
-        return g_paramsCache.hasRechargeableNitro(self.intCD)
-
-    def hasWheeledDash(self, vehDescr=None):
-        if vehDescr is not None:
-            return vehDescr.hasWheeledDash
-        else:
-            return g_paramsCache.hasWheeledDash(self.intCD)
-
-    def hasStagedJetBoosters(self, vehDescr=None):
-        if vehDescr is not None:
-            return vehDescr.hasStagedJetBoosters
-        else:
-            return g_paramsCache.hasStagedJetBoosters(self.intCD)
+            _, detector = ENGINE_MECHANIC_DETECTORS.get(mechanic, (0, None))
+            if detector is not None:
+                return detector(vehDescr)
+            return False
+        return g_paramsCache.hasEngineMechanic(self.intCD, mechanic)
 
     @property
     def iconName(self):
@@ -490,9 +467,9 @@ class Shell(FittingItem):
                ]
 
     def getShopIcon(self, size=STORE_CONSTANTS.ICON_SIZE_MEDIUM):
-        resID = R.images.gui.maps.shop.shells.num(size).dyn(replaceHyphenToUnderscore(self.descriptor.iconName))()
-        if resID != -1:
-            return backport.image(resID)
+        res = R.images.gui.maps.shop.shells.num(size).dyn(replaceHyphenToUnderscore(self.descriptor.iconName))
+        if res.exists():
+            return backport.image(res())
         return ''
 
     def isInstalled(self, vehicle, slotIdx=None):

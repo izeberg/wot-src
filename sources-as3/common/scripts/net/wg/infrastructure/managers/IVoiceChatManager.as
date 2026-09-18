@@ -5,7 +5,5 @@ package net.wg.infrastructure.managers
    public interface IVoiceChatManager extends IVoiceChatManagerMeta
    {
        
-      
-      function getYY() : Boolean;
    }
 }

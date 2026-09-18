@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from comp7_core.gui.Scaleform.daapi.view.battle.messages.player_messages import Comp7CorePlayerMessages
 from helpers import dependency
 from skeletons.gui.game_control import IComp7Controller

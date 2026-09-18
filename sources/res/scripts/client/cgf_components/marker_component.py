@@ -1,5 +1,5 @@
 from __future__ import absolute_import
-import importlib, logging, typing, CGF, Event, GenericComponents, Math, math_utils
+import importlib, logging, typing, CGF, EntitySync, Event, Math, math_utils
 from cgf_script.registration import ComponentProperty, registerComponent
 from constants import IS_CLIENT, IS_CGF_DUMP
 from helpers import dependency
@@ -74,7 +74,7 @@ class LobbyMarkersSystem(CGF.System):
         __appLoader = dependency.descriptor(IAppLoader)
     MarkerActivated = CGF.ActivateReaction(CGF.GameObject, CGF.ReactRo(LobbyFlashMarker), CGF.Ro(CGF.TransformComponent))
     MarkerDeactivated = CGF.DeactivateReaction(CGF.GameObject, CGF.ReactRo(LobbyFlashMarker), CGF.Has(CGF.TransformComponent))
-    EntitySyncAccess = CGF.AccessReaction(CGF.Ro(GenericComponents.EntityGOSync))
+    EntitySyncAccess = CGF.AccessReaction(CGF.Ro(EntitySync.EntityGOSync))
     Reactions = CGF.Reactions(MarkerActivated, MarkerDeactivated, EntitySyncAccess)
 
     def __init__(self, *args):

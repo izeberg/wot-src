@@ -497,9 +497,9 @@ class Booster(BoosterUICommon):
         return RES_ICONS.boosterQualitySourcePath(self.quality)
 
     def getShopIcon(self, size=STORE_CONSTANTS.ICON_SIZE_MEDIUM):
-        resID = R.images.gui.maps.shop.boosters.num(size).dyn(replaceHyphenToUnderscore(self.getFullNameForResource()))()
-        if resID != -1:
-            return backport.image(resID)
+        res = R.images.gui.maps.shop.boosters.num(size).dyn(replaceHyphenToUnderscore(self.getFullNameForResource()))
+        if res.exists():
+            return backport.image(res())
         return ''
 
     def getExpiryDate(self):

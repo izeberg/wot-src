@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from past.builtins import long
 import nations
 from gui.shared.gui_items.processors.vehicle import SetEnhancementProcessor, DismountEnhancementProcessor
 from gui.shared.items_parameters import params

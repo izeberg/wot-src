@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.battle_control.arena_info.arena_descrs import ArenaDescriptionWithInvitation
 from gui.impl import backport
 from gui.impl.gen import R

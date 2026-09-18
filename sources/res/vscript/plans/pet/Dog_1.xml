@@ -10,84 +10,6 @@
 		<blocks>
 			<block>
 				<class>Variable</class>
-				<id>Variable_12</id>
-				<params>
-					<param>
-						BagGO
-						<name>Variable Name</name>
-						<type>StringT</type>
-					</param>
-					<param>
-						GameObjectT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-					<param>
-						false
-						<name>External Init</name>
-						<type>BoolT</type>
-					</param>
-					<param>
-						false
-						<name>Is Const</name>
-						<type>BoolT</type>
-					</param>
-				</params>
-			</block>
-			<block>
-				<class>Variable</class>
-				<id>Variable_13</id>
-				<params>
-					<param>
-						BagLightGO
-						<name>Variable Name</name>
-						<type>StringT</type>
-					</param>
-					<param>
-						GameObjectT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-					<param>
-						false
-						<name>External Init</name>
-						<type>BoolT</type>
-					</param>
-					<param>
-						false
-						<name>Is Const</name>
-						<type>BoolT</type>
-					</param>
-				</params>
-			</block>
-			<block>
-				<class>Variable</class>
-				<id>Variable_14</id>
-				<params>
-					<param>
-						DogLightGO
-						<name>Variable Name</name>
-						<type>StringT</type>
-					</param>
-					<param>
-						GameObjectT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-					<param>
-						false
-						<name>External Init</name>
-						<type>BoolT</type>
-					</param>
-					<param>
-						false
-						<name>Is Const</name>
-						<type>BoolT</type>
-					</param>
-				</params>
-			</block>
-			<block>
-				<class>Variable</class>
 				<id>Variable_8</id>
 				<params>
 					<param>
@@ -907,98 +829,6 @@
 				<id>IsInPetStorageView_1</id>
 			</block>
 			<block>
-				<class>SetVariable</class>
-				<id>SetVariable_30</id>
-				<buddy>Variable_14</buddy>
-				<params>
-					<param>
-						GameObjectT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-			</block>
-			<block>
-				<class>SetVariable</class>
-				<id>SetVariable_28</id>
-				<buddy>Variable_13</buddy>
-				<params>
-					<param>
-						GameObjectT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-			</block>
-			<block>
-				<class>SetVariable</class>
-				<id>SetVariable_29</id>
-				<buddy>Variable_12</buddy>
-				<params>
-					<param>
-						GameObjectT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-			</block>
-			<block>
-				<class>FindFirstNode</class>
-				<id>FindFirstNode_13</id>
-				<slots>
-					<slot>
-						<name>name</name>
-						<const>\Lighting_Dog\</const>
-					</slot>
-					<slot>
-						<name>includingInactive</name>
-						<const>\true\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>FindFirstNode</class>
-				<id>FindFirstNode_15</id>
-				<slots>
-					<slot>
-						<name>name</name>
-						<const>\Beg\</const>
-					</slot>
-					<slot>
-						<name>includingInactive</name>
-						<const>\true\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>FindFirstNode</class>
-				<id>FindFirstNode_14</id>
-				<slots>
-					<slot>
-						<name>name</name>
-						<const>\Lighting_Bag\</const>
-					</slot>
-					<slot>
-						<name>includingInactive</name>
-						<const>\true\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>FindFirstNode</class>
-				<id>FindFirstNode_12</id>
-				<slots>
-					<slot>
-						<name>name</name>
-						<const>\Event\</const>
-					</slot>
-					<slot>
-						<name>includingInactive</name>
-						<const>\true\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
 				<class>Delay</class>
 				<id>Delay_4</id>
 				<params>
@@ -1423,36 +1253,6 @@
 				</slots>
 			</block>
 			<block>
-				<class>ActivateGameObject</class>
-				<id>ActivateGameObject_6</id>
-			</block>
-			<block>
-				<class>If</class>
-				<id>If_52</id>
-			</block>
-			<block>
-				<class>SetVariable</class>
-				<id>SetVariable_26</id>
-				<buddy>Variable_10</buddy>
-				<params>
-					<param>
-						BoolT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>value</name>
-						<const>\true\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>ActivateGameObject</class>
-				<id>ActivateGameObject_5</id>
-			</block>
-			<block>
 				<class>If</class>
 				<id>If_48</id>
 			</block>
@@ -1461,8 +1261,20 @@
 				<id>If_47</id>
 			</block>
 			<block>
-				<class>If</class>
-				<id>If_39</id>
+				<class>ListenLocalEvent</class>
+				<id>ListenLocalEvent_2</id>
+				<params>
+					<param>
+						onStaticTriggerSet
+						<name>Event Name</name>
+						<type>StringT</type>
+					</param>
+					<param>
+						PetStaticTriggerT
+						<name>trigger</name>
+						<type>TypeT</type>
+					</param>
+				</params>
 			</block>
 			<block>
 				<class>SendLocalEvent</class>
@@ -1473,42 +1285,6 @@
 						ListenLocalEvent_3
 						<name>Event Name</name>
 						<type>StringT</type>
-					</param>
-				</params>
-			</block>
-			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_32</id>
-				<buddy>Variable_12</buddy>
-				<params>
-					<param>
-						GameObjectT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-			</block>
-			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_33</id>
-				<buddy>Variable_13</buddy>
-				<params>
-					<param>
-						GameObjectT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-			</block>
-			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_30</id>
-				<buddy>Variable_10</buddy>
-				<params>
-					<param>
-						BoolT
-						<name>Variable Type</name>
-						<type>TypeT</type>
 					</param>
 				</params>
 			</block>
@@ -1550,36 +1326,6 @@
 				<id>PetStaticTriggerToInt_5</id>
 			</block>
 			<block>
-				<class>SetVariable</class>
-				<id>SetVariable_23</id>
-				<buddy>Variable_10</buddy>
-				<params>
-					<param>
-						BoolT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>value</name>
-						<const>\false\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>DeactivateGameObject</class>
-				<id>DeactivateGameObject_5</id>
-			</block>
-			<block>
-				<class>If</class>
-				<id>If_41</id>
-			</block>
-			<block>
-				<class>DeactivateGameObject</class>
-				<id>DeactivateGameObject_1</id>
-			</block>
-			<block>
 				<class>CompareEnum</class>
 				<id>CompareEnum_9</id>
 				<params>
@@ -1595,39 +1341,6 @@
 						<const>\AFK\</const>
 					</slot>
 				</slots>
-			</block>
-			<block>
-				<class>CompareEnum</class>
-				<id>CompareEnum_3</id>
-				<params>
-					<param>
-						PetStaticTriggerT
-						<name>Enum Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>a</name>
-						<const>\EVENT\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>ListenLocalEvent</class>
-				<id>ListenLocalEvent_2</id>
-				<params>
-					<param>
-						onStaticTriggerSet
-						<name>Event Name</name>
-						<type>StringT</type>
-					</param>
-					<param>
-						PetStaticTriggerT
-						<name>trigger</name>
-						<type>TypeT</type>
-					</param>
-				</params>
 			</block>
 			<block>
 				<class>SendLocalEvent</class>
@@ -1679,10 +1392,6 @@
 						<const>\t_first_click\</const>
 					</slot>
 				</slots>
-			</block>
-			<block>
-				<class>ActivateGameObject</class>
-				<id>ActivateGameObject_4</id>
 			</block>
 			<block>
 				<class>SendLocalEvent</class>
@@ -1837,30 +1546,6 @@
 				</params>
 			</block>
 			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_31</id>
-				<buddy>Variable_14</buddy>
-				<params>
-					<param>
-						GameObjectT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-			</block>
-			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_34</id>
-				<buddy>Variable_12</buddy>
-				<params>
-					<param>
-						GameObjectT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-			</block>
-			<block>
 				<class>FindInArray</class>
 				<id>FindInArray_1</id>
 				<params>
@@ -1898,14 +1583,6 @@
 						<type>StringT</type>
 					</param>
 				</params>
-			</block>
-			<block>
-				<class>DeactivateGameObject</class>
-				<id>DeactivateGameObject_6</id>
-			</block>
-			<block>
-				<class>DeactivateGameObject</class>
-				<id>DeactivateGameObject_4</id>
 			</block>
 			<block>
 				<class>ComponentMethod</class>
@@ -2512,24 +2189,6 @@
 		</blocks>
 		<connections>
 			<connection>
-				<from>ContextGetSelf_1</from>
-				<input>default</input>
-				<to>Variable_12</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>ContextGetSelf_1</from>
-				<input>default</input>
-				<to>Variable_13</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>ContextGetSelf_1</from>
-				<input>default</input>
-				<to>Variable_14</to>
-				<output>value</output>
-			</connection>
-			<connection>
 				<from>GetVariable_21</from>
 				<input>a</input>
 				<to>CompareEnum_6</to>
@@ -2802,66 +2461,6 @@
 			<connection>
 				<from>Sequence_3</from>
 				<input>input</input>
-				<to>SetVariable_30</to>
-				<output>o1</output>
-			</connection>
-			<connection>
-				<from>FindFirstNode_13</from>
-				<input>value</input>
-				<to>SetVariable_30</to>
-				<output>node</output>
-			</connection>
-			<connection>
-				<from>SetVariable_29</from>
-				<input>input</input>
-				<to>SetVariable_28</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>FindFirstNode_14</from>
-				<input>value</input>
-				<to>SetVariable_28</to>
-				<output>node</output>
-			</connection>
-			<connection>
-				<from>SetVariable_30</from>
-				<input>input</input>
-				<to>SetVariable_29</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>FindFirstNode_15</from>
-				<input>value</input>
-				<to>SetVariable_29</to>
-				<output>node</output>
-			</connection>
-			<connection>
-				<from>FindFirstNode_12</from>
-				<input>gameObject</input>
-				<to>FindFirstNode_13</to>
-				<output>node</output>
-			</connection>
-			<connection>
-				<from>FindFirstNode_12</from>
-				<input>gameObject</input>
-				<to>FindFirstNode_15</to>
-				<output>node</output>
-			</connection>
-			<connection>
-				<from>FindFirstNode_12</from>
-				<input>gameObject</input>
-				<to>FindFirstNode_14</to>
-				<output>node</output>
-			</connection>
-			<connection>
-				<from>ContextGetSelf_1</from>
-				<input>gameObject</input>
-				<to>FindFirstNode_12</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>Sequence_3</from>
-				<input>input</input>
 				<to>Delay_4</to>
 				<output>o2</output>
 			</connection>
@@ -3124,48 +2723,6 @@
 				<output>index</output>
 			</connection>
 			<connection>
-				<from>If_39</from>
-				<input>in</input>
-				<to>ActivateGameObject_6</to>
-				<output>true</output>
-			</connection>
-			<connection>
-				<from>GetVariable_33</from>
-				<input>gameObject</input>
-				<to>ActivateGameObject_6</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>ActivateGameObject_6</from>
-				<input>input</input>
-				<to>If_52</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>GetVariable_30</from>
-				<input>value</input>
-				<to>If_52</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>ActivateGameObject_5</from>
-				<input>input</input>
-				<to>SetVariable_26</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>If_52</from>
-				<input>in</input>
-				<to>ActivateGameObject_5</to>
-				<output>false</output>
-			</connection>
-			<connection>
-				<from>GetVariable_32</from>
-				<input>gameObject</input>
-				<to>ActivateGameObject_5</to>
-				<output>value</output>
-			</connection>
-			<connection>
 				<from>If_47</from>
 				<input>input</input>
 				<to>If_48</to>
@@ -3187,18 +2744,6 @@
 				<from>CompareEnum_9</from>
 				<input>value</input>
 				<to>If_47</to>
-				<output>res</output>
-			</connection>
-			<connection>
-				<from>ComponentMethod_19</from>
-				<input>input</input>
-				<to>If_39</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>CompareEnum_3</from>
-				<input>value</input>
-				<to>If_39</to>
 				<output>res</output>
 			</connection>
 			<connection>
@@ -3250,57 +2795,9 @@
 				<output>trigger</output>
 			</connection>
 			<connection>
-				<from>DeactivateGameObject_1</from>
-				<input>input</input>
-				<to>SetVariable_23</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>If_39</from>
-				<input>in</input>
-				<to>DeactivateGameObject_5</to>
-				<output>false</output>
-			</connection>
-			<connection>
-				<from>GetVariable_33</from>
-				<input>gameObject</input>
-				<to>DeactivateGameObject_5</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>DeactivateGameObject_5</from>
-				<input>input</input>
-				<to>If_41</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>GetVariable_30</from>
-				<input>value</input>
-				<to>If_41</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>If_41</from>
-				<input>in</input>
-				<to>DeactivateGameObject_1</to>
-				<output>true</output>
-			</connection>
-			<connection>
-				<from>GetVariable_32</from>
-				<input>gameObject</input>
-				<to>DeactivateGameObject_1</to>
-				<output>value</output>
-			</connection>
-			<connection>
 				<from>ListenLocalEvent_2</from>
 				<input>b</input>
 				<to>CompareEnum_9</to>
-				<output>trigger</output>
-			</connection>
-			<connection>
-				<from>ListenLocalEvent_2</from>
-				<input>b</input>
-				<to>CompareEnum_3</to>
 				<output>trigger</output>
 			</connection>
 			<connection>
@@ -3326,18 +2823,6 @@
 				<input>input</input>
 				<to>SendLocalEvent_22</to>
 				<output>firstClick</output>
-			</connection>
-			<connection>
-				<from>ComponentMethod_35</from>
-				<input>in</input>
-				<to>ActivateGameObject_4</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>GetVariable_31</from>
-				<input>gameObject</input>
-				<to>ActivateGameObject_4</to>
-				<output>value</output>
 			</connection>
 			<connection>
 				<from>SwitchOnEnum_1</from>
@@ -3446,30 +2931,6 @@
 				<input>input</input>
 				<to>SendLocalEvent_27</to>
 				<output>fromEventScreen</output>
-			</connection>
-			<connection>
-				<from>DeactivateGameObject_4</from>
-				<input>in</input>
-				<to>DeactivateGameObject_6</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>GetVariable_34</from>
-				<input>gameObject</input>
-				<to>DeactivateGameObject_6</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>ComponentMethod_34</from>
-				<input>in</input>
-				<to>DeactivateGameObject_4</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>GetVariable_31</from>
-				<input>gameObject</input>
-				<to>DeactivateGameObject_4</to>
-				<output>value</output>
 			</connection>
 			<connection>
 				<from>SendLocalEvent_27</from>

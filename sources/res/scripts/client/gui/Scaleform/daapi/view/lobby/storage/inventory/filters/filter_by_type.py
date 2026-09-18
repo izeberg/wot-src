@@ -2,6 +2,7 @@ from __future__ import absolute_import
 import copy, typing
 from builtins import filter
 from future.utils import viewvalues
+from frameworks.wulf import PyResAccessor
 from helpers import dependency
 from constants import SwitchState
 from account_helpers import AccountSettings
@@ -12,7 +13,6 @@ from gui.Scaleform.daapi.view.lobby.storage.inventory.inventory_view import TABS
 from gui.Scaleform.daapi.view.meta.ItemsWithTypeFilterTabViewMeta import ItemsWithTypeFilterTabViewMeta
 from gui.impl import backport
 from gui.impl.gen import R
-from gui.impl.gen_utils import DynAccessor
 from gui.shared.event_dispatcher import showBattleBoosterSellDialog
 from gui.shared.gui_items import GUI_ITEM_TYPE
 from gui.shared.utils.functions import makeTooltip
@@ -25,7 +25,7 @@ if typing.TYPE_CHECKING:
 
 def processFilterEntry(item, field, calculator):
     entry = item.get(field, '')
-    if isinstance(entry, DynAccessor):
+    if isinstance(entry, PyResAccessor):
         item[field] = calculator(entry)
 
 

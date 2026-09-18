@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.ClientUpdateManager import g_clientUpdateManager
 from gui.Scaleform.framework.entities.EventSystemEntity import EventSystemEntity
 from gui.shared import events

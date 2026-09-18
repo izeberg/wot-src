@@ -1,4 +1,4 @@
-
+from __future__ import absolute_import
 
 def getStateMachineRegistrators():
     from story_mode.gui.impl.lobby.states import registerStates

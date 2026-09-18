@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld
 from frontline.gui.Scaleform.daapi.view.meta.FrontlineFullStatsMeta import FrontlineFullStatsMeta
 from gui.Scaleform.locale.EPIC_BATTLE import EPIC_BATTLE

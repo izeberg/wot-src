@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from enum import Enum
 from account_helpers.settings_core.options import AimSetting
 from account_helpers.settings_core import settings_constants

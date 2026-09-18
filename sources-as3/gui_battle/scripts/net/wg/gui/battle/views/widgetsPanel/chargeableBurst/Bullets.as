@@ -247,11 +247,9 @@ package net.wg.gui.battle.views.widgetsPanel.chargeableBurst
       private function layout() : void
       {
          var _loc1_:BulletItem = null;
-         var _loc3_:int = 0;
-         var _loc4_:int = 0;
          var _loc2_:int = this._items.length - 1;
-         _loc3_ = -(STEP * _loc2_ >> 1);
-         _loc4_ = _loc2_;
+         var _loc3_:int = -(STEP * _loc2_ >> 1);
+         var _loc4_:int = _loc2_;
          while(_loc4_ >= 0)
          {
             _loc1_ = this._items[_loc4_];

@@ -991,7 +991,7 @@ class PlayerAccount(BigWorld.Entity, ClientChat):
         if events.isPlayerEntityChanging:
             return
         proxy = lambda requestID, resultID, errorStr, ext={}: callback(resultID, errorStr, ext)
-        self._doCmdStr(AccountCommands.CMD_QUERY_BALANCE_INFO, '', proxy)
+        self._doCmdNoArgs(AccountCommands.CMD_QUERY_BALANCE_INFO, proxy)
 
     def runQuest(self, questType, questIDs, callback):
         self._doCmdIntStrArr(AccountCommands.CMD_RUN_QUEST, questType, questIDs, lambda requestID, resultID, errorStr: callback(resultID))

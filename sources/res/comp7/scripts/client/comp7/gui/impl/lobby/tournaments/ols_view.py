@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from comp7.gui.impl.gen.view_models.views.lobby.tournaments.match_model import MatchStage
 from comp7.gui.impl.lobby.tournaments.tournament_view import TournamentView
 from helpers.ingame_tournament_helper import IngameTournamentType

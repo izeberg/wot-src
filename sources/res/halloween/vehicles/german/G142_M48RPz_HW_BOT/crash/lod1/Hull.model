@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>halloween/vehicles/german/G142_M48RPz_HW_BOT/crash/lod1/Hull</nodefullVisual>
+	<parent>halloween/vehicles/german/G142_M48RPz_HW_BOT/crash/lod2/Hull</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.921379 -1.249625 -4.094868</min>
+		<max>1.919853 0.665701 4.371593</max>
+	</visibilityBox>
+</root>

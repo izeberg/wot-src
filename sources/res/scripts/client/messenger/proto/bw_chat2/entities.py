@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from constants import PREBATTLE_TYPE_NAMES
 from messenger.ext import channel_num_gen
 from messenger.m_constants import PROTO_TYPE

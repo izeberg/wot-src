@@ -15,10 +15,10 @@ from helpers import dependency
 from items import utils, tankmen, getTypeOfCompactDescr
 from items.attributes_helpers import AggregatedCollectorHelper
 from items.components.shared_components import LowChargeShotParams, ShellCalibrationParams
+from items.vehicle_mechanics_types import VehicleMechanicKeys
 from items.vehicles import vehicleAttributeFactors
 from items.params_utils import getHeatedShotDispersion, convertModifiersList, extractModifier
 from skeletons.gui.lobby_context import ILobbyContext
-from vehicles.mechanics.mechanic_constants import VehicleMechanic
 from vehicles.mechanics.mechanic_helpers import getVehicleDescrMechanicParams
 if typing.TYPE_CHECKING:
     from gui.shared.gui_items.Vehicle import Vehicle
@@ -310,7 +310,7 @@ def getTurboshaftEnginePower(vehicleDescr, _):
 
 
 def getShellParamsSwitcherModifiedShells(vehDescr):
-    mechanicParams = getVehicleDescrMechanicParams(vehDescr, VehicleMechanic.SHELL_PARAMS_SWITCHER)
+    mechanicParams = getVehicleDescrMechanicParams(vehDescr, VehicleMechanicKeys.SHELL_PARAMS_SWITCHER)
     if mechanicParams is None:
         return ()
     else:
@@ -318,14 +318,14 @@ def getShellParamsSwitcherModifiedShells(vehDescr):
 
 
 def getBustleFeedModifiedShells(vehDescr):
-    params = getVehicleDescrMechanicParams(vehDescr, VehicleMechanic.BUSTLE_FEED)
+    params = getVehicleDescrMechanicParams(vehDescr, VehicleMechanicKeys.BUSTLE_FEED)
     if params:
         return tuple(shot.shell.compactDescr for idx, shot in enumerate(vehDescr.gun.shots) if idx in params.bustleShotsIndices)
     return ()
 
 
 def getBustleFeedDamage(vehDescr, shellDescr, baseDamage):
-    params = getVehicleDescrMechanicParams(vehDescr, VehicleMechanic.BUSTLE_FEED)
+    params = getVehicleDescrMechanicParams(vehDescr, VehicleMechanicKeys.BUSTLE_FEED)
     if params:
         shells = [ shot.shell.compactDescr for shot in vehDescr.gun.shots ]
         if shellDescr.compactDescr in shells:
@@ -360,7 +360,7 @@ def getShellCalibrationDamage(vehDescr, shellDescr):
     if shotParams is None:
         return damage
     else:
-        mechanicParams = getVehicleDescrMechanicParams(vehDescr, VehicleMechanic.SHELL_CALIBRATION)
+        mechanicParams = getVehicleDescrMechanicParams(vehDescr, VehicleMechanicKeys.SHELL_CALIBRATION)
         isForbiddenShell = shotParams.shell.compactDescr in mechanicParams.forbiddenShells
         if shotParams is None or isForbiddenShell:
             return damage
@@ -377,7 +377,7 @@ def getPiercingCoefficientFromModifiers(modifiers):
 
 def getShellCalibrationPiercingPower(vehDescr, shellDescr, basePiercingPower):
     shotParams, _ = _getShellCalibrationParams(vehDescr.gun, shellDescr)
-    mechanicParams = getVehicleDescrMechanicParams(vehDescr, VehicleMechanic.SHELL_CALIBRATION)
+    mechanicParams = getVehicleDescrMechanicParams(vehDescr, VehicleMechanicKeys.SHELL_CALIBRATION)
     isForbiddenShell = shotParams.shell.compactDescr in mechanicParams.forbiddenShells
     if shotParams is None or isForbiddenShell:
         return basePiercingPower
@@ -390,7 +390,7 @@ def getShellCalibrationPiercingPower(vehDescr, shellDescr, basePiercingPower):
 
 
 def getShellCalibrationShells(vehDescr):
-    mechanicParams = getVehicleDescrMechanicParams(vehDescr, VehicleMechanic.SHELL_CALIBRATION)
+    mechanicParams = getVehicleDescrMechanicParams(vehDescr, VehicleMechanicKeys.SHELL_CALIBRATION)
     if mechanicParams is None:
         return ()
     else:

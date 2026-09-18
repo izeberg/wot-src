@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, BigWorld
 from arena_bonus_type_caps import ARENA_BONUS_TYPE_CAPS
 from frontline.gui.Scaleform.daapi.view.battle.status_notifications import sn_items as frontline_sn_items

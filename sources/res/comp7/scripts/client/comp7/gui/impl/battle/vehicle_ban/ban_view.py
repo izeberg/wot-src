@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing, BattleReplay, SoundGroups
 from ReplayEvents import g_replayEvents
 from comp7.gui.battle_control.arena_info.arena_vos import Comp7Keys

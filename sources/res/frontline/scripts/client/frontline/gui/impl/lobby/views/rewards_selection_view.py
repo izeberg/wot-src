@@ -1,4 +1,6 @@
+from __future__ import absolute_import
 from functools import partial
+from future.utils import viewitems
 from AccountCommands import RES_SUCCESS
 from epic_constants import EPIC_OFFER_TYPES
 from frameworks.wulf import WindowFlags
@@ -90,7 +92,7 @@ class RewardsSelectionView(SelectableRewardBase):
         if result.success and result.auxData:
             successRewards = result.auxData.get(RES_SUCCESS, {})
             if successRewards:
-                rewardsGenerator = ({group: rewards} for group, rewards in successRewards.iteritems())
+                rewardsGenerator = ({group: rewards} for group, rewards in viewitems(successRewards))
                 self.__safeCall(self.__onRewardsReceivedCallback, rewardsGenerator)
         else:
             SystemMessages.pushI18nMessage(backport.text(R.strings.system_messages.epicBattles.rewardChoice.error()), type=SystemMessages.SM_TYPE.Error)

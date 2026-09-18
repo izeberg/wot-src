@@ -1,6 +1,7 @@
+from __future__ import absolute_import
 from .gui_application import GuiApplication
 from .gui_constants import CaseType, DateFormatType, NumberFormatType, PositionAnchor, RealFormatType, TimeFormatType, ViewEventType, ViewFlags, ViewStatus, WindowFlags, WindowLayer, WindowStatus
-from .py_object_wrappers import Resource, ValueType, caseMap, getDateFormat, getImagePath, getLayoutPath, getNumberFormat, getRealFormat, getSoundEffectId, getTimeFormat, getTranslatedKey, getTranslatedPluralText, getTranslatedPluralTextByResId, getTranslatedText, getTranslatedTextByResId, isTranslatedKeyValid, isTranslatedTextExisted
+from .py_object_wrappers import Resource, ValueType, caseMap, getDateFormat, getImagePath, getLayoutPath, getNumberFormat, getRealFormat, getSoundEffectId, getTimeFormat, getTranslatedKey, getTranslatedPluralText, getTranslatedPluralTextByResId, getTranslatedText, getTranslatedTextByResId, isTranslatedKeyValid, isTranslatedTextExisted, PyResAccessor
 from .view.array import Array
 from .view.map import Map
 from .view.command import Command
@@ -17,4 +18,4 @@ __all__ = ('GuiApplication', 'PositionAnchor', 'ViewFlags', 'ViewStatus', 'ViewE
            'getTranslatedText', 'getTranslatedPluralText', 'getImagePath', 'getSoundEffectId',
            'getLayoutPath', 'getTranslatedTextByResId', 'getTranslatedPluralTextByResId',
            'getTranslatedKey', 'getNumberFormat', 'getRealFormat', 'getTimeFormat',
-           'getDateFormat', 'caseMap', 'Resource', 'ValueType')
+           'getDateFormat', 'caseMap', 'Resource', 'ValueType', 'PyResAccessor')

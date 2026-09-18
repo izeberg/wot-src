@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from story_mode_common.story_mode_constants import MissionId, MissionsDifficulty
 from visual_script import ASPECT
 from visual_script.arena_blocks import ArenaMeta

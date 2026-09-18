@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from helpers import dependency
 from skeletons.gui.game_control import ISeniorityAwardsController
 from web.client_web_api.api import C2WHandler, c2w

@@ -1,8 +1,10 @@
+from __future__ import absolute_import
 from gui.ClientUpdateManager import g_clientUpdateManager
 from gui.shared import g_eventBus
 from web.client_web_api.api import C2WHandler, c2w
 from web.web_client_api.ranked_battles import BROWSER_BRIDGE_EVENT
-_ALLOWED_TOKENS = {'ranked_shop_no_log'}
+_ALLOWED_TOKENS = {
+ 'ranked_shop_no_log'}
 
 class RankedEventHandler(C2WHandler):
 

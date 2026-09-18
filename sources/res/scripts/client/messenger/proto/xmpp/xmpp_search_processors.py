@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from debug_utils import LOG_WARNING
 from messenger import g_settings
 from messenger.m_constants import PROTO_TYPE, CLIENT_ACTION_ID, CLIENT_ERROR_ID, USER_TAG

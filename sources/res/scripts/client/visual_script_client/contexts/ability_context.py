@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from visual_script_client.contexts.vehicle_context import VehicleContextClient
 from visual_script.context import vse_event_out, vse_set_property, vse_get_property
 from visual_script.misc import ASPECT

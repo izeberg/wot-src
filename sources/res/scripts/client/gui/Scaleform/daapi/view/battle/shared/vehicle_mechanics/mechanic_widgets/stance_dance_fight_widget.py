@@ -12,7 +12,8 @@ from gui.veh_mechanics.battle.updaters.hotkey_updaters import HotKeysViewUpdater
 from gui.veh_mechanics.battle.updaters.mechanics.mechanic_passenger_updater import VehicleMechanicPassengerUpdater
 from gui.veh_mechanics.battle.updaters.mechanics.mechanic_states_updater import VehicleMechanicStatesUpdater
 from gui.veh_mechanics.battle.updaters.replay_paused_view_updater import ReplayPausedViewUpdater
-from vehicles.mechanics.mechanic_constants import VehicleMechanicCommand, VehicleMechanic
+from items.vehicle_mechanics_types import VehicleMechanicKeys
+from vehicles.mechanics.mechanic_constants import VehicleMechanicCommand
 from vehicles.mechanics.mechanic_states import IMechanicStatesListenerLogic
 from skeletons.gui.battle_session import IBattleSessionProvider
 if typing.TYPE_CHECKING:
@@ -83,8 +84,8 @@ class StanceDanceFightMechanicWidget(StanceDanceFightWidgetMeta, ContainersListe
 
     def _getViewUpdaters(self):
         return [
-         VehicleMechanicStatesUpdater(VehicleMechanic.STANCE_DANCE, self),
-         VehicleMechanicPassengerUpdater(VehicleMechanic.STANCE_DANCE, self),
+         VehicleMechanicStatesUpdater(VehicleMechanicKeys.STANCE_DANCE, self),
+         VehicleMechanicPassengerUpdater(VehicleMechanicKeys.STANCE_DANCE, self),
          HotKeysViewUpdater(list(self._HOT_KEY_MAP.keys()), self),
          CrosshairTypeUpdater(self),
          ReplayPausedViewUpdater(self)]

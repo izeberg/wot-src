@@ -135,7 +135,7 @@ class ResearchPurchaseSubPresenter(SubPresenterBase):
             currency = 'tankXP'
             _, isXpEnough = g_techTreeDP.isVehicleAvailableToUnlock(veh.intCD, veh.level)
             isNext2Unlock, unlockProps = g_techTreeDP.isNext2Unlock(veh.intCD, unlocked=set(stats.unlocks), xps=stats.vehiclesXPs, freeXP=stats.freeXP, level=veh.level)
-            isFreeXpAvailable = self.__walletAvailableForCurrency(Currency.FREE_XP)
+            isFreeXpAvailable = self._wallet.isAvailable
             vehPrice = unlockProps.xpCost
             if unlockProps.discount:
                 oldPrice = unlockProps.xpFullCost
@@ -183,8 +183,7 @@ class ResearchPurchaseSubPresenter(SubPresenterBase):
         return
 
     def __setActionState(self, actionState, actionStateReason, veh, vehPrice, currency, money, shop, info):
-        isCurrencyAvailable = self.__walletAvailableForCurrency(currency)
-        isGoldAvailable = self.__walletAvailableForCurrency(Currency.GOLD)
+        isCurrencyAvailable = self._wallet.isAvailable
         mayObtainForMoney, _ = veh.mayObtainForMoney(money)
         mayObtainWithExchange = veh.mayObtainWithMoneyExchange(money, proxy=shop)
         isBuyingAvailable = not veh.isHidden or veh.isRentable or veh.isRestorePossible()
@@ -195,9 +194,6 @@ class ResearchPurchaseSubPresenter(SubPresenterBase):
              ResearchPurchaseModel.ACTION_DESC_WALLET_UNAVAILABLE)
         if mayObtainForMoney:
             return (actionState, actionStateReason)
-        if not isGoldAvailable:
-            return (ResearchPurchaseModel.ACTION_STATE_DISABLED,
-             ResearchPurchaseModel.ACTION_DESC_WALLET_UNAVAILABLE)
         if mayObtainWithExchange:
             return (actionState, actionStateReason)
         if currency == Currency.GOLD and isBuyingAvailable:
@@ -207,9 +203,6 @@ class ResearchPurchaseSubPresenter(SubPresenterBase):
              ResearchPurchaseModel.ACTION_DESC_RESTORE_REQUESTED)
         return (ResearchPurchaseModel.ACTION_STATE_DISABLED,
          ResearchPurchaseModel.ACTION_DESC_NOT_ENOUGH_CREDITS)
-
-    def __walletAvailableForCurrency(self, currency):
-        return self._wallet.componentsStatuses.get(currency) == self._wallet.STATUS.AVAILABLE
 
     @property
     def __isHeroTank(self):

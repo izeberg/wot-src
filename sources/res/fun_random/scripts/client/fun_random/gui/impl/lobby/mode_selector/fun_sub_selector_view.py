@@ -90,7 +90,7 @@ class FunModeSubSelectorView(ViewImpl, FunAssetPacksMixin, FunSubModesWatcher, F
             if contentID == R.views.battle_modifiers.lobby.tooltips.ModifiersDomainTooltipView():
                 subModeID = int(event.getArgument('subModeId', UNKNOWN_EVENT_ID))
                 modifiersDomain = event.getArgument('modifiersDomain', ClientDomain.UNDEFINED)
-                return FunRandomDomainTooltipView(modifiersDomain, subModeID)
+                return FunRandomDomainTooltipView(modifiersDomain, subModeID=subModeID)
             if contentID == R.views.fun_random.mono.lobby.tooltips.loot_box_tooltip():
                 tooltipId = event.getArgument('tooltipId')
                 tooltipData = None if tooltipId is None else self.__tooltips.get(tooltipId)

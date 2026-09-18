@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.336419 -0.254714 -0.198679</min>
+		<max>0.311466 0.521567 6.926603</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/british/GB159_FV4602_Victorious/normal/lod4/Gun_02</nodefullVisual>
+</root>

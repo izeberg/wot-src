@@ -1,6 +1,7 @@
+from __future__ import absolute_import
 import weakref, BigWorld
-from interfaces import ISearchHandler, ISearchProcessor
 from debug_utils import LOG_DEBUG, LOG_ERROR
+from messenger.proto.interfaces import ISearchHandler, ISearchProcessor
 from soft_exception import SoftException
 
 class SearchProcessor(ISearchProcessor):

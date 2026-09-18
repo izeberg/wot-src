@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/poland/Pl43_Kruk/normal/lod3/Gun_02</nodefullVisual>
+	<parent>vehicles/poland/Pl43_Kruk/normal/lod4/Gun_02</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-0.271450 -0.321592 -0.259112</min>
+		<max>0.481967 0.707329 6.056080</max>
+	</visibilityBox>
+</root>

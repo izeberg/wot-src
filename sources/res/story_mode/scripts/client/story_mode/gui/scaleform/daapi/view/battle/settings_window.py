@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from account_helpers.settings_core.settings_constants import SETTINGS_GROUP
 from gui.Scaleform.daapi.view.common.settings import SettingsWindow
 from gui.impl import backport

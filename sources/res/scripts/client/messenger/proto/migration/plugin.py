@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import weakref
 from messenger import g_settings
 from messenger.m_constants import PROTO_TYPE

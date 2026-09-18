@@ -2,10 +2,12 @@ package net.wg.gui.components.crosshairPanel.components.shellCalibrationClip
 {
    import com.gskinner.motion.GTweener;
    import com.gskinner.motion.easing.Cubic;
+   import flash.geom.Rectangle;
    import net.wg.gui.components.crosshairPanel.constants.CrosshairConsts;
    import net.wg.infrastructure.base.SimpleContainer;
+   import net.wg.infrastructure.layoutPart.ILayoutPositionable;
    
-   public class ShellCalibrationClipPanel extends SimpleContainer
+   public class ShellCalibrationClipPanel extends SimpleContainer implements ILayoutPositionable
    {
       
       private static const CLIP_STATE_CRITICAL:String = "critical";
@@ -170,6 +172,10 @@ package net.wg.gui.components.crosshairPanel.components.shellCalibrationClip
       private function get targetRotationAngle() : int
       {
          return this._currentShellIdx * SHELL_ANGLE_GAP;
+      }
+      
+      public function applyLayoutPosition(param1:Rectangle) : void
+      {
       }
    }
 }

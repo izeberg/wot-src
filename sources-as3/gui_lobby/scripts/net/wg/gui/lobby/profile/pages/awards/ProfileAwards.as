@@ -182,9 +182,10 @@ package net.wg.gui.lobby.profile.pages.awards
       
       override protected function applyResizing() : void
       {
+         var _loc2_:Boolean = false;
          var _loc13_:AwardsTileListBlock = null;
          var _loc1_:Number = Math.round(currentDimension.x / 2 - centerOffset);
-         var _loc2_:Boolean = App.appWidth < StageSizeBoundaries.WIDTH_1280;
+         _loc2_ = App.appWidth < StageSizeBoundaries.WIDTH_1280;
          var _loc3_:int = !!isWindowed ? int(DROP_DOWN_WINDOW_X) : int(0);
          var _loc4_:int = -this.txtLabel.width - TXT_LABEL_OFFSET_X + _loc3_;
          this.dropdownMenu.x = this._startMenuX + _loc1_ + (!!isWindowed ? DROP_DOWN_WINDOW_X : 0);

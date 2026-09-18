@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.shared.event_bus import EVENT_BUS_SCOPE
 from items import _xml
 from tutorial.control.sales import triggers

@@ -12,6 +12,7 @@ from items import ITEM_TYPES, _xml
 from items.components import component_constants, c11n_constants, path_builder
 from items.components.component_constants import KMH_TO_MS
 from items.components.c11n_constants import AttachmentSize
+from items.vehicle_mechanics_types import readMechanicVariant, VehicleMechanic
 from items.attributes_helpers import ALLOWED_STATIC_ATTRS, isclose
 from py2to3.patched_future import with_metaclass
 from soft_exception import SoftException
@@ -46,7 +47,7 @@ __all__ = ('MaterialInfo', 'DEFAULT_MATERIAL_INFO', 'EmblemSlot', 'LodSettings',
            'StagedJetBoostersParams', 'LowChargeShotParams', 'PropellantGunParams',
            'WheeledDashParams', 'AuxiliaryRocketLauncherParams', 'ShellSwitcherParams',
            'ShellCalibrationParams', 'AutoreloaderSurgeParams', 'BustleFeedParams',
-           'SightPointerParams')
+           'SightPointerParams', 'SpecBoostModeParams')
 MaterialInfo = reflectedNamedTuple('MaterialInfo', ('kind', 'armor', 'extra', 'multipleExtra',
                                                     'vehicleDamageFactor', 'useArmorHomogenization',
                                                     'useHitAngle', 'useAntifragmentationLining',
@@ -401,12 +402,13 @@ class RocketAccelerationParams(object):
 
 
 class MechanicsParams(object):
-    __slots__ = ('__origin', 'modifiers')
+    __slots__ = ('__origin', 'modifiers', 'mechanicVariant')
     MECHANICS_NAME = None
     COMPONENT_TYPE_ID = None
 
-    def __init__(self, modifiers=None):
+    def __init__(self, modifiers=None, mechanicVariant=None):
         self.__origin = None
+        self.mechanicVariant = mechanicVariant
         self.modifiers = modifiers
         return
 
@@ -502,7 +504,7 @@ class GunMechanicsParams(MechanicsParams):
 class RechargeableNitroParams(MechanicsParams):
     __slots__ = ('deployTime', 'reloadTime', 'duration', 'threshold', 'cooldown', 'addMaxSpeedForwardBonus',
                  'addRotationSpeedBonus', 'impulse')
-    MECHANICS_NAME = 'rechargeableNitro'
+    MECHANICS_NAME = VehicleMechanic.RECHARGEABLE_NITRO.value
 
     def __init__(self, deployTime, reloadTime, duration, cooldown, addMaxSpeedForwardBonus, addRotationSpeedBonus, impulse, modifiers, threshold=0):
         super(RechargeableNitroParams, self).__init__(modifiers)
@@ -564,7 +566,7 @@ class RechargeableNitroParams(MechanicsParams):
 
 class ConcentrationModeParams(MechanicsParams):
     __slots__ = ('deployTime', 'reloadTime', 'duration')
-    MECHANICS_NAME = 'concentrationMode'
+    MECHANICS_NAME = VehicleMechanic.CONCENTRATION_MODE.value
 
     def __init__(self, deployTime, reloadTime, duration, modifiers):
         super(ConcentrationModeParams, self).__init__(modifiers)
@@ -599,7 +601,7 @@ class ImprovedRammingParams(MechanicsParams):
                  'reductionDamageBonusStageSize', 'reductionDamageBonusBasicFactor',
                  'reductionDamageBonusChangeFactor', 'damageValueToShowAnimation',
                  'effectSpeedThreshold')
-    MECHANICS_NAME = 'improvedRamming'
+    MECHANICS_NAME = VehicleMechanic.IMPROVED_RAMMING.value
 
     def __init__(self, damageBonusStageSize, damageBonusBasicFactor, damageBonusChangeFactor, trackDamageBonusStageSize, trackDamageBonusBasicFactor, trackDamageBonusChangeFactor, reductionDamageBonusStageSize, reductionDamageBonusBasicFactor, reductionDamageBonusChangeFactor, damageValueToShowAnimation, effectSpeedThreshold):
         super(ImprovedRammingParams, self).__init__()
@@ -652,7 +654,7 @@ class ImprovedRammingParams(MechanicsParams):
 class PowerModeParams(MechanicsParams):
     __slots__ = ('modeThreshold', 'modeDuration', 'accelerationFactor', 'attenuationFactor',
                  'speedThreshold', 'gracePeriod', 'vehicleParams')
-    MECHANICS_NAME = 'powerMode'
+    MECHANICS_NAME = VehicleMechanic.POWER_MODE.value
     DEFAULT_VEHICLE_PARAMS = {'vehicleSpeed': 1.0, 
        'dispersion': 1.0, 
        'rotationSpeed': 1.0, 
@@ -722,7 +724,7 @@ class PowerModeParams(MechanicsParams):
 
 class BattleFuryParams(MechanicsParams):
     __slots__ = ('maxLevel', 'duration', 'reloadSpdBonus', 'gainPerHit', 'gainPerKill')
-    MECHANICS_NAME = 'battleFury'
+    MECHANICS_NAME = VehicleMechanic.BATTLE_FURY.value
 
     def __init__(self, maxLevel, duration, reloadSpdBonus, gainPerHit, gainPerKill):
         super(BattleFuryParams, self).__init__()
@@ -760,7 +762,7 @@ class BattleFuryParams(MechanicsParams):
 class PillboxSiegeModeParams(MechanicsParams):
     __slots__ = ('switchDriveToPillboxTime', 'switchSiegeToPillboxTime', 'switchPillboxToSiegeTime',
                  'switchPillboxToDriveTime')
-    MECHANICS_NAME = 'pillboxSiegeMode'
+    MECHANICS_NAME = VehicleMechanic.PILLBOX_SIEGE_MODE.value
 
     def __init__(self, switchDriveToPillboxTime, switchSiegeToPillboxTime, switchPillboxToSiegeTime, switchPillboxToDriveTime, modifiers):
         super(PillboxSiegeModeParams, self).__init__(modifiers)
@@ -801,7 +803,7 @@ class PillboxSiegeModeParams(MechanicsParams):
 class StationaryReloadParams(GunMechanicsParams):
     __slots__ = ('preparingSpeedFactor', 'finishingSpeedFactor', 'preparingDelay',
                  'finishingDelay', 'fixAngles')
-    MECHANICS_NAME = 'stationaryReload'
+    MECHANICS_NAME = VehicleMechanic.STATIONARY_RELOAD.value
 
     def __init__(self, preparingSpeedFactor, finishingSpeedFactor, preparingDelay, finishingDelay, fixAngles):
         super(StationaryReloadParams, self).__init__()
@@ -832,7 +834,7 @@ class StationaryReloadParams(GunMechanicsParams):
 
 class ExtraShotClipParams(GunMechanicsParams):
     __slots__ = ('extraReloadTime', )
-    MECHANICS_NAME = 'extraShotClip'
+    MECHANICS_NAME = VehicleMechanic.EXTRA_SHOT_CLIP.value
 
     def __init__(self, extraReloadTime):
         super(ExtraShotClipParams, self).__init__()
@@ -862,7 +864,7 @@ class ExtraShotClipParams(GunMechanicsParams):
 class AccuracyStacksParams(MechanicsParams):
     __slots__ = ('levelMax', 'levelInitial', 'levelAfterShot', 'aimLevelBonus', 'aimBonusCap',
                  'gainMaxSpd', 'gainTime', 'stabilizeBonus')
-    MECHANICS_NAME = 'accuracyStacks'
+    MECHANICS_NAME = VehicleMechanic.ACCURACY_STACKS.value
 
     def __init__(self, levelMax, levelInitial, levelAfterShot, aimLevelBonus, aimBonusCap, gainMaxSpd, gainTime, stabilizeBonus):
         super(AccuracyStacksParams, self).__init__()
@@ -951,7 +953,7 @@ class SecondaryGunParams(with_metaclass(ReflectionMetaclass, GunMechanicsParams)
 
 class SupportWeaponParams(MechanicsParams):
     __slots__ = ()
-    MECHANICS_NAME = 'supportWeapon'
+    MECHANICS_NAME = VehicleMechanic.SUPPORT_WEAPON.value
 
     def __init__(self):
         super(SupportWeaponParams, self).__init__()
@@ -968,7 +970,7 @@ class SupportWeaponParams(MechanicsParams):
 
 class ChargeableBurstParams(GunMechanicsParams):
     __slots__ = ('penetrationCount', 'burstDispersionFactor')
-    MECHANICS_NAME = 'chargeableBurst'
+    MECHANICS_NAME = VehicleMechanic.CHARGEABLE_BURST.value
 
     def __init__(self, penetrationCount, burstDispersionFactor, modifiers):
         super(ChargeableBurstParams, self).__init__(modifiers)
@@ -1000,7 +1002,7 @@ class ChargeableBurstParams(GunMechanicsParams):
 
 class LowChargeShotParams(GunMechanicsParams):
     __slots__ = ('almostFinishedTime', 'reloadTimeCoefficient')
-    MECHANICS_NAME = 'lowChargeShot'
+    MECHANICS_NAME = VehicleMechanic.LOW_CHARGE_SHOT.value
 
     def __init__(self, almostFinishedTime, reloadTimeCoefficient, modifiers):
         super(LowChargeShotParams, self).__init__(modifiers)
@@ -1026,7 +1028,7 @@ class LowChargeShotParams(GunMechanicsParams):
 
 class ChargeShotParams(MechanicsParams):
     __slots__ = ('timePerLevel', 'damageFactorsPerLevel', 'maxLevel', 'shotBlockTime')
-    MECHANICS_NAME = 'chargeShot'
+    MECHANICS_NAME = VehicleMechanic.CHARGE_SHOT.value
 
     def __init__(self, timePerLevel, damageFactorsPerLevel, shotBlockTime):
         super(ChargeShotParams, self).__init__()
@@ -1068,7 +1070,7 @@ class OverheatStacksParams(MechanicsParams):
     __slots__ = ('levelMax', 'levelInc', 'levelDec', 'aimLevelBonus', 'dmgLevelBonus',
                  'gainMaxSpd', 'gainTime', 'delayTimerDuration', 'heatingTime', 'coolingTime',
                  'dmgBonus', 'aimBonus')
-    MECHANICS_NAME = 'overheatStacks'
+    MECHANICS_NAME = VehicleMechanic.OVERHEAT_STACKS.value
 
     def __init__(self, heatingTime, coolingTime, dmgBonus, aimBonus, gainMaxSpd, delayTimerDuration):
         super(OverheatStacksParams, self).__init__()
@@ -1132,7 +1134,7 @@ class OverheatStacksParams(MechanicsParams):
 class TargetDesignatorParams(MechanicsParams):
     __slots__ = MechanicsParams.__slots__ + ('damageIncomeFactor', 'cooldownTime',
                                              'deployTime', 'spottedMarkedTime', 'unspottedMarkedTime')
-    MECHANICS_NAME = 'targetDesignator'
+    MECHANICS_NAME = VehicleMechanic.TARGET_DESIGNATOR.value
 
     def __init__(self, damageIncomeFactor, cooldownTime, deployTime, spottedMarkedTime, unspottedMarkedTime):
         super(TargetDesignatorParams, self).__init__()
@@ -1169,7 +1171,7 @@ class TargetDesignatorParams(MechanicsParams):
 class AutoreloaderSurgeParams(MechanicsParams):
     __slots__ = ('maxCharges', 'startCharges', 'chargeTimeSRegular', 'chargeTimeSFullClip',
                  'reloadTime')
-    MECHANICS_NAME = 'autoreloaderSurge'
+    MECHANICS_NAME = VehicleMechanic.AUTORELOADER_SURGE.value
 
     def __init__(self, maxCharges, startCharges, chargeTimeSRegular, chargeTimeSFullClip, reloadTime):
         super(AutoreloaderSurgeParams, self).__init__()
@@ -1227,7 +1229,7 @@ class StanceDanceParams(MechanicsParams):
                  'activeTurboFwdSpdBonusKmh', 'activeTurboBkwdSpdBonusKmh', 'activeTurboEnginePowerBonus',
                  'activeTurboRotationSpeedDebuff', 'activeTurboRammingDmgBonus',
                  'impulse')
-    MECHANICS_NAME = 'stanceDance'
+    MECHANICS_NAME = VehicleMechanic.STANCE_DANCE.value
 
     def __init__(self, timeSwitchStance, maxEnergy, gainFightEnergyPoints, gainTurboEnergyPoints, gainEnergyTime, gainTurboEnergyBonusPoints, gainTurboEnergySpdLimitKmh, passiveFightEnergyBonusPerHit, passiveTurboFwdSpdBonusKmh, passiveTurboBkwdSpdBonusKmh, passiveTurboEnginePowerBonus, passiveTurboAccuracyDebuff, passiveTurboAimSpeedDebuff, passiveTurboStabilizeDebuff, passiveTurboAfterShotDispersionDebuff, activeFightCost, activeFightDuration, activeFightAccuracyBonus, activeFightAimSpeedBonus, activeFightStabilizeBonus, activeFightAfterShotDispersionBonus, activeFightReloadSpdBonus, activeTurboCost, activeTurboDuration, activeTurboFwdSpdBonusKmh, activeTurboBkwdSpdBonusKmh, activeTurboEnginePowerBonus, activeTurboRotationSpeedDebuff, activeTurboRammingDmgBonus, impulse):
         super(StanceDanceParams, self).__init__()
@@ -1392,7 +1394,7 @@ class TemperatureGunThermalStates(object):
 
 class TemperatureGunParams(GunMechanicsParams):
     __slots__ = ('thermalStates', 'heatingPerShot', 'coolingDelay', 'coolingPerSec')
-    MECHANICS_NAME = 'temperatureGun'
+    MECHANICS_NAME = VehicleMechanic.TEMPERATURE_GUN.value
 
     def __init__(self, thermalStates, heatingPerShot, coolingDelay, coolingPerSec):
         super(TemperatureGunParams, self).__init__()
@@ -1432,7 +1434,7 @@ class TemperatureGunParams(GunMechanicsParams):
 class OverheatGunParams(GunMechanicsParams):
     __slots__ = ('coolingPerSecFactor', 'tempOverheatOnThreshold', 'tempOverheatOffThreshold',
                  'tempOverheatWarnThreshold')
-    MECHANICS_NAME = 'overheatGun'
+    MECHANICS_NAME = VehicleMechanic.OVERHEAT_GUN.value
 
     def __init__(self, coolingPerSecFactor, tempOverheatOnThreshold, tempOverheatOffThreshold, tempOverheatWarnThreshold):
         super(OverheatGunParams, self).__init__()
@@ -1476,7 +1478,7 @@ class OverheatGunParams(GunMechanicsParams):
 
 class HeatingZonesGunParams(GunMechanicsParams):
     __slots__ = ('zones', )
-    MECHANICS_NAME = 'heatingZonesGun'
+    MECHANICS_NAME = VehicleMechanic.HEATING_ZONES_GUN.value
     ZONE_STATE = HEATING_ZONES_GUN_STATE
 
     def __init__(self, zones):
@@ -1505,7 +1507,7 @@ class HeatingZonesGunParams(GunMechanicsParams):
 class StagedJetBoostersParams(MechanicsParams):
     __slots__ = ('deployTime', 'reloadTime', 'reuseCount', 'duration', 'impulse', 'impulseSpeedLimits',
                  'modifiers', 'customRotationPoints')
-    MECHANICS_NAME = 'stagedJetBoosters'
+    MECHANICS_NAME = VehicleMechanic.STAGED_JET_BOOSTERS.value
 
     def __init__(self, deployTime, reloadTime, reuseCount, duration, impulse, impulseSpeedLimits, modifiers, customRotationPoints):
         super(StagedJetBoostersParams, self).__init__(modifiers)
@@ -1588,7 +1590,7 @@ class PropellantGunDamageFactors(object):
 class PropellantGunParams(GunMechanicsParams):
     __slots__ = ('chargeStages', 'chargingPerSec', 'chargeSpendingAfterShot', 'forbiddenShells',
                  'shouldPauseOnReload', 'chargeDelay', 'dischargingPerSec', 'overchargeSwitchCooldown')
-    MECHANICS_NAME = 'propellantAfterburnerGun'
+    MECHANICS_NAME = VehicleMechanic.PROPELLANT_GUN.value
     _MAX_STAGES = 10
 
     def __init__(self, chargeStages, chargingPerSec, chargeSpendingAfterShot, forbiddenShells, shouldPauseOnReload, chargeDelay, dischargingPerSec, overchargeSwitchCooldown):
@@ -1719,7 +1721,7 @@ class PropellantGunParams(GunMechanicsParams):
 class WheeledDashParams(MechanicsParams):
     __slots__ = ('deployTime', 'reloadTime', 'duration', 'speedTrigger', 'speedReloadTimeFactor',
                  'tickedImpulse')
-    MECHANICS_NAME = 'wheeledDash'
+    MECHANICS_NAME = VehicleMechanic.WHEELED_DASH.value
 
     def __init__(self, deployTime, reloadTime, duration, modifiers, speedTrigger, speedReloadTimeFactor, tickedImpulse):
         super(WheeledDashParams, self).__init__(modifiers)
@@ -1760,7 +1762,7 @@ class WheeledDashParams(MechanicsParams):
 
 
 class AuxiliaryRocketLauncherParams(GunMechanicsParams):
-    MECHANICS_NAME = 'auxiliaryRocketLauncher'
+    MECHANICS_NAME = VehicleMechanic.AUXILIARY_ROCKET_LAUNCHER.value
 
     def __init__(self):
         super(AuxiliaryRocketLauncherParams, self).__init__()
@@ -1777,7 +1779,7 @@ class AuxiliaryRocketLauncherParams(GunMechanicsParams):
 
 class ShellSwitcherParams(GunMechanicsParams):
     __slots__ = ('modifiedShells', )
-    MECHANICS_NAME = 'shellParamsSwitcher'
+    MECHANICS_NAME = VehicleMechanic.SHELL_PARAMS_SWITCHER.value
 
     def __init__(self, modifiedShells):
         super(ShellSwitcherParams, self).__init__()
@@ -1815,7 +1817,7 @@ class ShellCalibrationBonus(object):
 
 class ShellCalibrationParams(GunMechanicsParams):
     __slots__ = ('penBonuses', 'nonPenBonuses', 'forbiddenShells')
-    MECHANICS_NAME = 'shellCalibration'
+    MECHANICS_NAME = VehicleMechanic.SHELL_CALIBRATION.value
 
     def __init__(self, penBonuses, nonPenBonuses, forbiddenShells):
         super(ShellCalibrationParams, self).__init__()
@@ -1868,14 +1870,14 @@ class ShellCalibrationParams(GunMechanicsParams):
 
 
 class CrestMovingParams(MechanicsParams):
-    MECHANICS_NAME = 'crestMoving'
+    MECHANICS_NAME = VehicleMechanic.CREST_MOVING.value
 
 
 class BustleFeedParams(MechanicsParams):
     __slots__ = ('activationTime', 'deactivationTime', 'modifiers', 'bustleShotReloadFactor',
                  'bustleShotDamageBonusShell0', 'bustleShotDamageBonusShell1', 'bustleShotsIndices',
                  'animationTime')
-    MECHANICS_NAME = 'bustleFeed'
+    MECHANICS_NAME = VehicleMechanic.BUSTLE_FEED.value
 
     def __init__(self, activationTime, deactivationTime, modifiers, bustleShotReloadFactor, bustleShotDamageBonusShell0, bustleShotDamageBonusShell1):
         super(BustleFeedParams, self).__init__(modifiers)
@@ -1930,7 +1932,7 @@ SightPointerAbilityStage = typing.NamedTuple('SightPointerAbilityStage', (
 class SightPointerParams(MechanicsParams):
     __slots__ = ('initialDeployTime', 'reloadTime', 'activeStages', 'selfReveal', 'selfRevealVisionTime',
                  'sightPointerStages')
-    MECHANICS_NAME = 'sightPointer'
+    MECHANICS_NAME = VehicleMechanic.SIGHT_POINTER.value
     _MAX_STAGES = 10
     _MIN_DURATION = 1
 
@@ -2015,6 +2017,27 @@ class SightPointerParams(MechanicsParams):
             _xml.raiseWrongXml(ctx, '', ('[{}] Section sightPointerStages should not have number of stages > {}!').format(cls.MECHANICS_NAME, cls._MAX_STAGES))
         stages.sort(key=lambda stage: stage.id)
         return stages
+
+
+class SpecBoostModeParams(MechanicsParams):
+    __slots__ = ('deployTime', 'reloadTime', 'duration')
+    MECHANICS_NAME = VehicleMechanic.SPEC_BOOST_MODE.value
+
+    def __init__(self, deployTime, cooldown, duration, modifiers, mechanicVariant):
+        super(SpecBoostModeParams, self).__init__(modifiers, mechanicVariant)
+        self.deployTime = deployTime
+        self.reloadTime = cooldown
+        self.duration = duration
+        self._saveOrigin()
+
+    def __repr__(self):
+        return ('{}(mechanicVariant={}, deployTime={}, reloadTime={}, duration={})').format(self.__class__.__name__, self.mechanicVariant, self.deployTime, self.reloadTime, self.duration)
+
+    @classmethod
+    def _readMechanicsParams(cls, ctx, section, readModifiers):
+        mechanicVariant = readMechanicVariant(ctx, section, cls.MECHANICS_NAME)
+        modifiers = readModifiers(ctx, _xml.getSubsection(ctx, section, 'modifiers'))
+        return cls(deployTime=_xml.readPositiveFloat(ctx, section, 'deployTime'), cooldown=_xml.readPositiveFloat(ctx, section, 'cooldown'), duration=_xml.readPositiveFloat(ctx, section, 'duration'), modifiers=modifiers, mechanicVariant=mechanicVariant)
 
 
 def addMechanicsParamsAttrs(attrsSet):

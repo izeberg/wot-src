@@ -1,0 +1,41 @@
+msgid ""
+msgstr ""
+
+msgid "common/toEvent"
+msgstr "К событию"
+
+msgid "serviceChannelMessages/battleResults/battleMapName"
+msgstr "Карта:"
+
+msgid "serviceChannelMessages/battleResults/battleTypeName"
+msgstr "Событие: «Есть сигнал»"
+
+msgid "serviceChannelMessages/battleResults/credits"
+msgstr "Начислено кредитов:"
+
+msgid "serviceChannelMessages/battleResults/progression"
+msgstr "Получено пакетов данных:"
+
+msgid "serviceChannelMessages/battleResults/tanks"
+msgstr "Техника:"
+
+msgid "serviceChannelMessages/eventName"
+msgstr "Есть сигнал"
+
+msgid "serviceChannelMessages/fortRushBattlesFinishMessage/body"
+msgstr "Благодарим вас за участие!"
+
+msgid "serviceChannelMessages/fortRushBattlesFinishMessage/header"
+msgstr "Событие «Есть сигнал» завершено."
+
+msgid "serviceChannelMessages/fortRushEventResumedMessage/body"
+msgstr "Событие снова доступно."
+
+msgid "serviceChannelMessages/fortRushEventStartMessage/body"
+msgstr "Захватите антенны. Удерживайте сеть. Обеспечьте передачу."
+
+msgid "serviceChannelMessages/fortRushEventStartMessage/header"
+msgstr "Событие «Есть сигнал» началось"
+
+msgid "serviceChannelMessages/fortRushEventSuspendedMessage/body"
+msgstr "Событие «Есть сигнал» недоступно по техническим причинам."

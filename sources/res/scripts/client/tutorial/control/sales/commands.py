@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from account_helpers.AccountSettings import AccountSettings
 from gui.Scaleform.daapi.view.lobby.store.browser import shop_helpers
 from gui.Scaleform.genConsts.STORE_CONSTANTS import STORE_CONSTANTS

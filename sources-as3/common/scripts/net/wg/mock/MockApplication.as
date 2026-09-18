@@ -23,6 +23,7 @@ package net.wg.mock
    import net.wg.infrastructure.managers.IImageManager;
    import net.wg.infrastructure.managers.ILoaderManager;
    import net.wg.infrastructure.managers.IPopoverManager;
+   import net.wg.infrastructure.managers.ISharedLayoutManager;
    import net.wg.infrastructure.managers.ISoundManager;
    import net.wg.infrastructure.managers.IStageSizeManager;
    import net.wg.infrastructure.managers.ITooltipMgr;
@@ -75,6 +76,8 @@ package net.wg.mock
       
       private var _imageMgr:IImageManager;
       
+      private var _sharedLayoutMgr:ISharedLayoutManager;
+      
       public function MockApplication()
       {
          super();
@@ -96,6 +99,7 @@ package net.wg.mock
          this._utils = new MockUtils();
          this._tweenMgr = new MockTweenManager();
          this._imageMgr = new MockImageManager();
+         this._sharedLayoutMgr = new MockSharedLayoutManager();
       }
       
       public function as_blurBackgroundViews(param1:int, param2:Number, param3:Number) : void
@@ -123,11 +127,11 @@ package net.wg.mock
       {
       }
       
-      public function as_unblurBackgroundViews() : void
+      public function as_setMouseEventsEnabled(param1:Boolean) : void
       {
       }
       
-      public function as_setMouseEventsEnabled(param1:Boolean) : void
+      public function as_unblurBackgroundViews() : void
       {
       }
       
@@ -234,6 +238,11 @@ package net.wg.mock
       public function get imageMgr() : IImageManager
       {
          return this._imageMgr;
+      }
+      
+      public function get sharedLayoutMgr() : ISharedLayoutManager
+      {
+         return this._sharedLayoutMgr;
       }
       
       public function get appWidth() : Number

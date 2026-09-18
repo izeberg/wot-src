@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>halloween/vehicles/british/GB123_GSOR_1006_v7_Halloween_event/normal/lod3/Hull</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.705994 -0.754400 -3.591871</min>
+		<max>1.705994 0.550597 3.046729</max>
+	</visibilityBox>
+	<nodefullVisual>halloween/vehicles/british/GB123_GSOR_1006_v7_Halloween_event/normal/lod2/Hull</nodefullVisual>
+</root>

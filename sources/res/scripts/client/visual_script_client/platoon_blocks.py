@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from skeletons.gui.game_control import IPlatoonController
 from visual_script.block import Meta, Block
 from visual_script.dependency import dependencyImporter

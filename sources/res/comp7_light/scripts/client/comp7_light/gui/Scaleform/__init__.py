@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from comp7_light.gui.Scaleform.genConsts.TOOLTIPS_BATTLE_CONSTANTS import TOOLTIPS_BATTLE_CONSTANTS as COMP7_LIGHT_BATTLE_TOOLTIPS
 from comp7_light.gui.Scaleform.genConsts.TOOLTIPS_CONSTANTS import TOOLTIPS_CONSTANTS as COMP7_LIGHT_TOOLTIPS
 from comp7_light_constants import ARENA_GUI_TYPE

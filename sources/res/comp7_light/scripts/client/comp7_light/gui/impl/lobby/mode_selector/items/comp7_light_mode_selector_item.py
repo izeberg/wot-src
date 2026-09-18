@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from comp7_light.gui.impl.gen.view_models.views.lobby.mode_selector.mode_selector_comp7_light_model import ModeSelectorComp7LightModel
 from comp7_light.gui.impl.gen.view_models.views.lobby.mode_selector.mode_selector_comp7_light_widget_model import Comp7LightProgressionStatus
 from comp7_light.skeletons.gui.game_control import IComp7LightProgressionController

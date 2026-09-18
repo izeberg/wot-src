@@ -1,4 +1,5 @@
-import logging, enum, typing, BattleReplay, BigWorld, persistent_data_cache as pdc, wg_async
+from __future__ import absolute_import
+import logging, enum, typing, BigWorld, BattleReplay, persistent_data_cache as pdc, wg_async
 from gameplay.blockers import BlockableTransition, BlockingState
 from PlayerEvents import g_playerEvents
 from constants import IS_DEVELOPMENT

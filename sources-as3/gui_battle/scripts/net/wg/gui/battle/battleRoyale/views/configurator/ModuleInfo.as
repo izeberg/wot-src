@@ -157,7 +157,7 @@ package net.wg.gui.battle.battleRoyale.views.configurator
          this._moduleHitArea = null;
       }
       
-      private function updateParamData(param1:TextField, param2:ModuleParameterVO) : void
+      protected function updateParamData(param1:TextField, param2:ModuleParameterVO) : void
       {
          param1.htmlText = param2.value + PARAMETER_DELIMITER + param2.description;
          param1.width = PARAMETER_TEXT_TEST_WIDTH;

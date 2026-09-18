@@ -1,7 +1,8 @@
+from __future__ import absolute_import
 import weakref, BigWorld, GUI, SoundGroups, BattleReplay
 from AvatarInputHandler import aih_global_binding
-from DynamicCameras.ArcadeCamera import ArcadeCamera
-from control_modes import IControlMode
+from AvatarInputHandler.DynamicCameras.ArcadeCamera import ArcadeCamera
+from AvatarInputHandler.control_modes import IControlMode
 from math_utils import clamp
 from helpers import dependency
 from skeletons.gui.battle_session import IBattleSessionProvider

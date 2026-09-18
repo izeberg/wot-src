@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from battle_modifiers.gui.feature.modifiers_data_provider import ModifiersDataProvider
 from battle_modifiers_ext.constants_ext import GameplayImpact
 from battle_modifiers.gui.impl.lobby.tooltips.modifiers_domain_tooltip_view import ModifiersDomainTooltipView

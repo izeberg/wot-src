@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from messenger.gui.Scaleform import FILL_COLORS
 
 class IGUIEntry(object):
@@ -51,7 +52,7 @@ class IControllerFactory(object):
     def clear(self):
         pass
 
-    def factory(self, entity):
+    def factory(self, channel):
         pass
 
 

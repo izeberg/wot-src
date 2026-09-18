@@ -1,4 +1,7 @@
-import math, functools, GUI, constants
+from __future__ import absolute_import, division
+import math, functools
+from future.utils import viewitems
+import GUI, constants
 from helpers.CallbackDelayer import CallbackDelayer
 
 class ValueTracker(CallbackDelayer):
@@ -54,14 +57,13 @@ class ValueTracker(CallbackDelayer):
         self.__updateText()
 
     def addValueAverage(self, name, value, maxAmount=100):
-        curSum, curAm = self.__avgInfo.get(name, (None, 0))
+        curSum, curAm = self.__avgInfo.get(name, (0.0, 0))
         if curAm < maxAmount:
-            curSum = curSum + value if curSum is not None else value
-            self.__avgInfo[name] = (curSum, curAm + 1)
+            self.__avgInfo[name] = (
+             curSum + value, curAm + 1)
         else:
             self.addValue(name, curSum / curAm)
             self.__avgInfo[name] = (value, 1)
-        return
 
     def addValueTick(self, name, callback, period):
         func = functools.partial(self.__tickFunc, name, callback, period)
@@ -83,7 +85,7 @@ class ValueTracker(CallbackDelayer):
 
     def __updateText(self):
         text = ''
-        for n, v in self.__items.iteritems():
+        for n, v in viewitems(self.__items):
             text += '%s: %s\n' % (n, str(v))
 
         self.__textGui.text = text

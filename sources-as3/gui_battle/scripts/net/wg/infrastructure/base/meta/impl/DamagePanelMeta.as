@@ -1,10 +1,10 @@
 package net.wg.infrastructure.base.meta.impl
 {
    import net.wg.data.constants.Errors;
-   import net.wg.gui.battle.components.BattleDisplayable;
+   import net.wg.gui.battle.components.BattleLayoutComponent;
    import net.wg.infrastructure.exceptions.AbstractException;
    
-   public class DamagePanelMeta extends BattleDisplayable
+   public class DamagePanelMeta extends BattleLayoutComponent
    {
        
       

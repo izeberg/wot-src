@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld, CommandMapping
 from constants import ARENA_PERIOD
 from frontline.gui.Scaleform.daapi.view.battle.frontline_crosshair import FrontlineCrosshairPanelContainer
@@ -16,8 +17,8 @@ from gui.Scaleform.managers.battle_input import BattleGUIKeyHandler
 from gui.battle_control.battle_constants import BATTLE_CTRL_ID
 from gui.battle_control.controllers.sound_ctrls.epic_battle_sounds import EpicBattleSoundController
 from gui.shared import EVENT_BUS_SCOPE, events
+from items.vehicle_mechanics_types import VehicleMechanicKeys
 from shared_utils import CONST_CONTAINER
-from vehicles.mechanics.mechanic_constants import VehicleMechanic
 from vehicles.mechanics.mechanic_helpers import hasVehicleDescrMechanic
 
 class DynamicAliases(CONST_CONTAINER):
@@ -261,52 +262,53 @@ class FrontlineBattlePage(FrontlineBattlePageMeta, BattleGUIKeyHandler):
             targetState = self.__topState
         else:
             targetState = self.__pageState
-        if targetState == PageStates.NONE or self.__activeState == targetState:
+        if targetState in (PageStates.NONE, self.__activeState):
             return
-        controlKey = (
-         self.__activeState, self.sessionProvider.isReplayPlaying)
-        if self.__activeState in _ENABLE_CONTROL_MODE and controlKey in _PAGE_STATE_TO_CONTROL_PARAMS:
-            alias, _, _ = _PAGE_STATE_TO_CONTROL_PARAMS[controlKey]
-            self.app.leaveGuiControlMode(alias)
-        self.__activeState = targetState
-        controlKey = (
-         self.__activeState, self.sessionProvider.isReplayPlaying)
-        if self.__activeState in _ENABLE_CONTROL_MODE and controlKey in _PAGE_STATE_TO_CONTROL_PARAMS:
-            alias, p1, p2 = _PAGE_STATE_TO_CONTROL_PARAMS[controlKey]
-            self.app.enterGuiControlMode(alias, cursorVisible=p1, enableAiming=p2)
-        visibleUI = _STATE_TO_UI[targetState].copy()
-        currVis = set(self.as_getComponentsVisibilityS())
-        hiddenUI = currVis.difference(visibleUI)
-        hiddenUI.difference_update(_NEVER_HIDE)
-        visibleUI.update(_NEVER_HIDE)
-        ctrl = self.sessionProvider.shared.vehicleState
-        vehicle = ctrl.getControllingVehicle()
-        if vehicle is not None:
-            hasPillboxMode = hasVehicleDescrMechanic(vehicle.typeDescriptor, VehicleMechanic.PILLBOX_SIEGE_MODE)
-            if (vehicle.typeDescriptor.hasSiegeMode or vehicle.isTrackWithinTrack) and not hasPillboxMode:
-                self._swapVisibleStates(visibleUI, hiddenUI, BATTLE_VIEW_ALIASES.SIEGE_MODE_INDICATOR)
-            else:
-                self._swapVisibleStates(visibleUI, hiddenUI, BATTLE_VIEW_ALIASES.SIEGE_MODE_INDICATOR, True)
-            if vehicle.typeDescriptor.isDualgunVehicle:
-                self._swapVisibleStates(visibleUI, hiddenUI, BATTLE_VIEW_ALIASES.DUAL_GUN_PANEL)
-            else:
-                self._swapVisibleStates(visibleUI, hiddenUI, BATTLE_VIEW_ALIASES.DUAL_GUN_PANEL, True)
-            for alias in BATTLE_VIEW_ALIASES.VEHICLE_MECHANICS_PANELS:
-                self._swapVisibleStates(visibleUI, hiddenUI, alias)
+        else:
+            controlKey = (
+             self.__activeState, self.sessionProvider.isReplayPlaying)
+            if self.__activeState in _ENABLE_CONTROL_MODE and controlKey in _PAGE_STATE_TO_CONTROL_PARAMS:
+                alias, _, _ = _PAGE_STATE_TO_CONTROL_PARAMS[controlKey]
+                self.app.leaveGuiControlMode(alias)
+            self.__activeState = targetState
+            controlKey = (
+             self.__activeState, self.sessionProvider.isReplayPlaying)
+            if self.__activeState in _ENABLE_CONTROL_MODE and controlKey in _PAGE_STATE_TO_CONTROL_PARAMS:
+                alias, p1, p2 = _PAGE_STATE_TO_CONTROL_PARAMS[controlKey]
+                self.app.enterGuiControlMode(alias, cursorVisible=p1, enableAiming=p2)
+            visibleUI = _STATE_TO_UI[targetState].copy()
+            currVis = set(self.as_getComponentsVisibilityS())
+            hiddenUI = currVis.difference(visibleUI)
+            hiddenUI.difference_update(_NEVER_HIDE)
+            visibleUI.update(_NEVER_HIDE)
+            ctrl = self.sessionProvider.shared.vehicleState
+            vehicle = ctrl.getControllingVehicle()
+            if vehicle is not None:
+                hasPillboxMode = hasVehicleDescrMechanic(vehicle.typeDescriptor, VehicleMechanicKeys.PILLBOX_SIEGE_MODE)
+                if (vehicle.typeDescriptor.hasSiegeMode or vehicle.isTrackWithinTrack) and not hasPillboxMode:
+                    self._swapVisibleStates(visibleUI, hiddenUI, BATTLE_VIEW_ALIASES.SIEGE_MODE_INDICATOR)
+                else:
+                    self._swapVisibleStates(visibleUI, hiddenUI, BATTLE_VIEW_ALIASES.SIEGE_MODE_INDICATOR, True)
+                if vehicle.typeDescriptor.isDualgunVehicle:
+                    self._swapVisibleStates(visibleUI, hiddenUI, BATTLE_VIEW_ALIASES.DUAL_GUN_PANEL)
+                else:
+                    self._swapVisibleStates(visibleUI, hiddenUI, BATTLE_VIEW_ALIASES.DUAL_GUN_PANEL, True)
+                for alias in BATTLE_VIEW_ALIASES.VEHICLE_MECHANICS_PANELS:
+                    self._swapVisibleStates(visibleUI, hiddenUI, alias)
 
-        ctrl = self.sessionProvider.dynamic.maps
-        if ctrl:
-            ctrl.setOverviewMapScreenVisibility(FRONTLINE_BATTLE_VIEW_ALIASES.FRONTLINE_OVERVIEW_MAP_SCREEN in visibleUI)
-        ctrl = self.sessionProvider.shared.prebattleSetups
-        if self.__activeState == PageStates.COUNTDOWN and ctrl and ctrl.isSelectionStarted():
-            self._swapVisibleStates(visibleUI, hiddenUI, BATTLE_VIEW_ALIASES.CONSUMABLES_PANEL, True)
-        if self.__respawnAvailable and self.as_isComponentVisibleS(BATTLE_VIEW_ALIASES.POSTMORTEM_PANEL):
-            self._swapVisibleStates(visibleUI, hiddenUI, BATTLE_VIEW_ALIASES.POSTMORTEM_PANEL, True)
-        if targetState == PageStates.RESPAWN or targetState == PageStates.LOADING:
-            visibleUI.difference_update(_NEVER_HIDE)
-            hiddenUI.update(_NEVER_HIDE)
-        self._setComponentsVisibility(visible=visibleUI, hidden=hiddenUI)
-        return
+            ctrl = self.sessionProvider.dynamic.maps
+            if ctrl:
+                ctrl.setOverviewMapScreenVisibility(FRONTLINE_BATTLE_VIEW_ALIASES.FRONTLINE_OVERVIEW_MAP_SCREEN in visibleUI)
+            ctrl = self.sessionProvider.shared.prebattleSetups
+            if self.__activeState == PageStates.COUNTDOWN and ctrl and ctrl.isSelectionStarted():
+                self._swapVisibleStates(visibleUI, hiddenUI, BATTLE_VIEW_ALIASES.CONSUMABLES_PANEL, True)
+            if self.__respawnAvailable and self.as_isComponentVisibleS(BATTLE_VIEW_ALIASES.POSTMORTEM_PANEL):
+                self._swapVisibleStates(visibleUI, hiddenUI, BATTLE_VIEW_ALIASES.POSTMORTEM_PANEL, True)
+            if targetState in (PageStates.RESPAWN, PageStates.LOADING):
+                visibleUI.difference_update(_NEVER_HIDE)
+                hiddenUI.update(_NEVER_HIDE)
+            self._setComponentsVisibility(visible=visibleUI, hidden=hiddenUI)
+            return
 
     def _populate(self):
         super(FrontlineBattlePage, self)._populate()

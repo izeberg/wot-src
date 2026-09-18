@@ -1,9 +1,11 @@
+from __future__ import absolute_import, division
+import logging, math, typing
+from Compound import AppearanceDeactivatedEvent
+from builtins import range
 from functools import partial
-import logging, math
 from math import tan
-import typing
 from enum import IntEnum
-import BigWorld, CGF, GenericComponents, Math, constants, items.vehicles, BattleReplay, SoundGroups, Vehicular, Compound
+import BigWorld, CGF, GenericComponents, Math, Vehicular, constants, items.vehicles, BattleReplay, SoundGroups, Compound
 from CustomEffect import EffectSettings
 from CustomEffectManager import CustomEffectManager
 from Event import Event
@@ -211,6 +213,7 @@ class CompoundAppearance(CommonTankAppearance):
 
     def deactivate(self):
         super(CompoundAppearance, self).deactivate()
+        CGF.postEvent(self._spaceID, AppearanceDeactivatedEvent(self._entityGameObject, self._gameObject))
         if self.highlighter:
             if self._isPlayerVehicle:
                 self.highlighter.highlight(False)
@@ -236,6 +239,7 @@ class CompoundAppearance(CommonTankAppearance):
         else:
             if self.__resourceLoadID is not None:
                 BigWorld.stopLoadResourceListBGTask(self.__resourceLoadID)
+                self.__resourceLoadID = None
             self.__engineStarted = False
             self.__engineStartScheduled = False
             self.__activationState = _ActivationState.DEACTIVATED
@@ -424,8 +428,9 @@ class CompoundAppearance(CommonTankAppearance):
             return
 
     def hideTerrainCircle(self):
-        self.__terrainCircle.setVisible(False)
         self.__showCircleDelayed = None
+        if self.__terrainCircle is not None:
+            self.__terrainCircle.setVisible(False)
         return
 
     @property
@@ -578,8 +583,8 @@ class CompoundAppearance(CommonTankAppearance):
         outfit = camouflages.prepareBattleOutfit(outfitCD, self.typeDescriptor, self.id, isPlayerVehicle)
         return outfit
 
-    def _initiateRecoil(self, gunNodeName, gunFireNodeName, gunAnimator):
-        impulseDir = super(CompoundAppearance, self)._initiateRecoil(gunNodeName, gunFireNodeName, gunAnimator)
+    def _initiateRecoil(self, gunNodeName, gunFireNodeName, gunRecoil):
+        impulseDir = super(CompoundAppearance, self)._initiateRecoil(gunNodeName, gunFireNodeName, gunRecoil)
         node = self.compoundModel.node(gunFireNodeName)
         gunPos = Math.Matrix(node).translation
         BigWorld.player().inputHandler.onVehicleShaken(self._vehicle, ShakeReason.OWN_SHOT_DELAYED, gunPos, impulseDir, self.typeDescriptor.gun.effectsCaliber)
@@ -610,7 +615,6 @@ class CompoundAppearance(CommonTankAppearance):
          assembler, collisionAssembler), makeCallbackWeak(self.__onModelsRefresh, modelsSetParams.state), loadingPriority(self._vehicle.id))
         CGF.postEvent(self.spaceID, Compound.AppearanceRefreshRequestedEvent(self._entityGameObject))
         self.__reparentEffects()
-        self.__deactivateShotEffect()
 
     def __onModelsRefresh(self, modelState, resourceList):
         _logger.debug('CompoundAppearance.__onModelsRefresh (%r)', self.id)
@@ -684,14 +688,6 @@ class CompoundAppearance(CommonTankAppearance):
             newLocal.postMultiply(appWorldTransform)
             transformComponent.transform = newLocal
             hierarchyComponent.parent = self._entityGameObject.uuid
-
-    def __deactivateShotEffect(self):
-        if self.typeDescriptor.gun.prefabBased:
-            return
-        shotEffectGo = GenericComponents.findSlot(self._entityGameObject, self._getShotEffectSlotName())
-        if shotEffectGo.valid:
-            queue = CGF.CommandQueue(self._spaceID)
-            queue.deactivateGameObject(shotEffectGo)
 
     def __activateOnModelUpdate(self, ctx):
         self._calcWeaponEnergy(ctx.collisions)
@@ -786,8 +782,8 @@ class CompoundAppearance(CommonTankAppearance):
         self.filter.vehicleCollisionCallback = player.handleVehicleCollidedVehicle
         return
 
-    def _attachStickers(self):
-        super(CompoundAppearance, self)._attachStickers()
+    def _attachStickers(self, collisionComponent):
+        super(CompoundAppearance, self)._attachStickers(collisionComponent)
         self.__updateStickers()
 
     def __updateStickers(self):
@@ -856,7 +852,7 @@ class CompoundAppearance(CommonTankAppearance):
             wheelsSpeed = wheelsAnimator.getWheelsSpeed()
             wheelCount = len(wheelsSpeed)
             skippedWheelsCount = 0
-            for wheelIndex in xrange(0, wheelCount):
+            for wheelIndex in range(0, wheelCount):
                 flying = wheelIsFlying(wheelIndex)
                 if not flying:
                     self._commonScroll += wheelsSpeed[wheelIndex]

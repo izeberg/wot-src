@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, BigWorld
 from Math import Vector2
 from AvatarInputHandler.MapCaseMode import _ArenaBoundArtilleryStrikeSelector, _DEFAULT_STRIKE_DIRECTION

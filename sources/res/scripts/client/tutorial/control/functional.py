@@ -1,4 +1,7 @@
-import re, Event
+from __future__ import absolute_import
+import re
+from future.utils import lfilter
+import Event
 from helpers import dependency
 from tutorial.control import TutorialProxyHolder, game_vars
 from tutorial.control.context import GlobalStorage
@@ -93,14 +96,14 @@ class FunctionalConnectedItemCondition(FunctionalCondition):
 
 class FunctionalComplexConditionAnd(FunctionalCondition):
 
-    def isConditionOk(self, conditions):
-        return FunctionalConditions(conditions.getConditionList()).evaluateWithAND()
+    def isConditionOk(self, condition):
+        return FunctionalConditions(condition.getConditionList()).evaluateWithAND()
 
 
 class FunctionalComplexConditionOr(FunctionalCondition):
 
-    def isConditionOk(self, conditions):
-        return FunctionalConditions(conditions.getConditionList()).evaluateWithOR()
+    def isConditionOk(self, condition):
+        return FunctionalConditions(condition.getConditionList()).evaluateWithOR()
 
 
 class FunctionalVarDefinedCondition(FunctionalCondition):
@@ -354,7 +357,7 @@ class FunctionalEffect(TutorialProxyHolder):
 class FunctionalEffectsGroup(FunctionalEffect):
 
     def triggerEffect(self):
-        effects = filter(_areAllConditionsOk, self._effect.getEffects())
+        effects = lfilter(_areAllConditionsOk, self._effect.getEffects())
         if effects:
             self._tutorial.storeEffectsInQueue(effects, benefit=True, isGlobal=self.isGlobal())
         return True
@@ -661,7 +664,7 @@ class FunctionalChapterContext(TutorialProxyHolder):
 
     def _updateGlobalRuntimeEffects(self, isPostScene):
         LOG_DEBUG('updating global runtime effects', '(post-scene)' if isPostScene else '(pre-scene)')
-        effects = filter(_areAllConditionsOk, self._data.getGlobalEffects(isPostScene))
+        effects = lfilter(_areAllConditionsOk, self._data.getGlobalEffects(isPostScene))
         if effects:
             self._tutorial.storeEffectsInQueue(effects, isGlobal=True)
 
@@ -724,7 +727,7 @@ class FunctionalScene(TutorialProxyHolder):
                 return
             LOG_DEBUG('GUI item has been added to scene.', itemID)
             self._itemsOnScene.add(itemID)
-            effects = filter(_areAllConditionsOk, item.getOnSceneEffects())
+            effects = lfilter(_areAllConditionsOk, item.getOnSceneEffects())
             if effects:
                 if self._isUpdatedOnce:
                     self._tutorial.storeEffectsInQueue(effects, benefit=True)
@@ -741,7 +744,7 @@ class FunctionalScene(TutorialProxyHolder):
             if item is None:
                 return
             LOG_DEBUG('GUI item has been removed from scene.', itemID)
-            effects = filter(_areAllConditionsOk, item.getNotOnSceneEffects())
+            effects = lfilter(_areAllConditionsOk, item.getNotOnSceneEffects())
             if effects:
                 self._tutorial.storeEffectsInQueue(effects)
             return
@@ -761,7 +764,7 @@ class FunctionalScene(TutorialProxyHolder):
 
     def _updateScene(self):
         LOG_DEBUG('Update scene.')
-        effects = filter(_areAllConditionsOk, self._scene.getEffects())
+        effects = lfilter(_areAllConditionsOk, self._scene.getEffects())
         if self._pending:
             effects.extend(self._pending)
             self._pending = []

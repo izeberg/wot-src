@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>halloween/vehicles/british/GB123_GSOR_1006_v7_Halloween_event/normal/lod2/Gun_04</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.376949 -0.275347 -0.295802</min>
+		<max>0.606693 0.240737 2.836299</max>
+	</visibilityBox>
+	<nodefullVisual>halloween/vehicles/british/GB123_GSOR_1006_v7_Halloween_event/normal/lod1/Gun_04</nodefullVisual>
+</root>

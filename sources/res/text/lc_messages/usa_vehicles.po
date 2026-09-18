@@ -1934,6 +1934,33 @@ msgstr "T803"
 msgid "A183_XM69_Hacker"
 msgstr "XM69 Hacker"
 
+msgid "A183_XM69_Hacker_7x7"
+msgstr "XM69 Hacker 7x7"
+
+msgid "A183_XM69_Hacker_7x7_descr"
+msgstr ""
+"Проект модернизации танка М60, основанный на полученном боевом опыте и "
+"направленный на устранение выявленных проблем. Предполагалась более "
+"защищённая башня, а также корпус из катаных броневых деталей, что в свою "
+"очередь требовало установки новой подвески. Огневую мощь обеспечивала "
+"усовершенствованная 110-мм пушка, а система стабилизации с оптическими "
+"датчиками для учёта положения ствола стала новаторской. Стоимость "
+"модернизации оказалась на 40% выше цены серийного М60А1 и могла сравниться с"
+" затратами на производство новой машины. Несмотря на все преимущества, "
+"проект не решал некоторых проблем компоновки, и от него отказались."
+
+msgid "A183_XM69_Hacker_7x7_long_special"
+msgstr ""
+"XM69 Hacker стал логичным развитием концепции M48 Patton. Это универсальный,"
+" многоцелевой средний танк без серьёзных недостатков. Сочетание достойной "
+"подвижности, неплохой брони и отличного орудия делает его одной из самых "
+"гибких машин на своём уровне. Нет такой боевой задачи, с которой Hacker не "
+"справился бы. А если обстановка накалится, огневую мощь машины можно "
+"дополнительно улучшить."
+
+msgid "A183_XM69_Hacker_7x7_short"
+msgstr "Hacker 7x7"
+
 msgid "A183_XM69_Hacker_descr"
 msgstr ""
 "Проект модернизации танка М60, основанный на полученном боевом опыте и "
@@ -2146,6 +2173,32 @@ msgstr "Огромный урон за выстрел, резервная гус
 
 msgid "A195_Gorilla"
 msgstr "Gorilla"
+
+msgid "A195_Gorilla_7x7"
+msgstr "Gorilla 7x7"
+
+msgid "A195_Gorilla_7x7_descr"
+msgstr ""
+"В конце 1960-х годов в США работали над созданием защищённой противотанковой"
+" САУ с орудиями повышенной энергетики для борьбы с перспективными танками "
+"противника. В качестве основного вооружения рассматривались "
+"высокоэнергетические пушки калибра 155 и 165 мм, а для повышения точности "
+"стрельбы предполагалась установка радиолокационного и дублирующего его "
+"оптического дальномера. Для лучшей защиты от кумулятивных боеприпасов на "
+"корпусе и башне машины должны были быть сварные решётки. В результате "
+"перспективный проект оказался слишком сложным и дорогим, поэтому от него "
+"отказались."
+
+msgid "A195_Gorilla_7x7_long_special"
+msgstr ""
+"У Gorilla такая же определяющая черта, как и у предшественников: вращающаяся"
+" башня с неплохим бронированием. Это делает ПТ-САУ более универсальной и "
+"позволяет эффективно действовать на разных позициях и дистанциях, а "
+"новаторский механизм частичной зарядки не даёт ей остаться без выстрела в "
+"нужный момент."
+
+msgid "A195_Gorilla_7x7_short"
+msgstr "Gorilla 7x7"
 
 msgid "A195_Gorilla_descr"
 msgstr ""
@@ -2524,6 +2577,20 @@ msgstr "T110E5 7x7"
 msgid "A69_T110E5_7x7_short"
 msgstr "T110E5 7x7"
 
+msgid "A69_T110E5_FR"
+msgstr "T110E5 BS"
+
+msgid "A69_T110E5_FR_descr"
+msgstr ""
+"Разрабатывался с 1952 года как тяжёлый танк с более мощным вооружением, чем "
+"у Т-43 (М103). На машину накладывались существенные ограничения по "
+"габаритам, так как она должна была проходить через туннели Бернских Альп. "
+"После проработки различных компоновочных решений работы были свёрнуты. Не "
+"было построено ни одного экземпляра."
+
+msgid "A69_T110E5_FR_short"
+msgstr "T110E5 BS"
+
 msgid "A69_T110E5_descr"
 msgstr ""
 "Разрабатывался с 1952 года как тяжёлый танк с более мощным, чем у Т-43 "
@@ -2779,9 +2846,6 @@ msgstr "AN/GRC-3"
 msgid "AN-GRC-3RMT"
 msgstr "AN/GRC-3 RMT"
 
-msgid "AN-VRC-12"
-msgstr "AN/GRC-6"
-
 msgid "AN-VRC-7"
 msgstr "AN/VRC-7"
 
@@ -2848,6 +2912,9 @@ msgstr "AN/VRC-3"
 msgid "AN_VRC-3_7x7_0"
 msgstr "AN/VRC-3"
 
+msgid "AN_VRC-3_FR"
+msgstr "AN/VRC-3"
+
 msgid "AN_VRC-3_Rush_Ep1"
 msgstr "AN/VRC-3S"
 
@@ -2872,10 +2939,16 @@ msgstr "AN/VRC-12/9"
 msgid "AN_VRC_12_9B"
 msgstr "AN/VRC-12/9B"
 
+msgid "AN_VRC_12_A"
+msgstr "AN/GRC-6"
+
 msgid "AN_VRC_3B"
 msgstr "AN/VRC-3B"
 
 msgid "AN_VRC_3G"
+msgstr "AN/VRC-3G"
+
+msgid "AN_VRC_3G_7x7"
 msgstr "AN/VRC-3G"
 
 msgid "AN_VRC_3H"
@@ -2899,7 +2972,13 @@ msgstr "AN/VRC-46"
 msgid "AN_VRC_47"
 msgstr "AN/VRC-47"
 
+msgid "AN_VRC_47_7x7"
+msgstr "AN/VRC-47"
+
 msgid "AOI-1490"
+msgstr "Continental AOI-1490"
+
+msgid "AOI-1490_FR"
 msgstr "Continental AOI-1490"
 
 msgid "AOI-1490_short"
@@ -3275,6 +3354,9 @@ msgstr "T803"
 msgid "Chassis_A183_XM69_Hacker"
 msgstr "XM69 Hacker"
 
+msgid "Chassis_A183_XM69_Hacker_7x7"
+msgstr "XM69 Hacker"
+
 msgid "Chassis_A186_XM94_Shadow"
 msgstr "XM94 Shadow"
 
@@ -3312,6 +3394,9 @@ msgid "Chassis_A194_AHT_7"
 msgstr "AHT-7"
 
 msgid "Chassis_A195_Gorilla"
+msgstr "Gorilla"
+
+msgid "Chassis_A195_Gorilla_7x7"
 msgstr "Gorilla"
 
 msgid "Chassis_A197_Jezevec"
@@ -3514,6 +3599,9 @@ msgstr "VVSST48E2"
 
 msgid "Chassis_Sherman_Jumbo_2"
 msgstr "VVSST51E2"
+
+msgid "Chassis_T110_FR"
+msgstr "T110E5 BS"
 
 msgid "Chassis_T18"
 msgstr "T18E1"
@@ -3935,9 +4023,6 @@ msgstr ""
 msgid "Continental_AVCR_1100_3"
 msgstr "Continental AVCR-1100-3"
 
-msgid "Continental_AVDS-1790-2"
-msgstr "Continental AVDS-1790-2"
-
 msgid "Continental_AVDS-1790-2_short"
 msgstr ""
 "Continental\n"
@@ -3954,6 +4039,12 @@ msgstr ""
 "Continental\n"
 "AVDS-1790-2D"
 
+msgid "Continental_AVDS_1790_2_1"
+msgstr "Continental AVDS-1790-2"
+
+msgid "Continental_AVDS_1790_2_7x7"
+msgstr "Continental AVDS-1790-2"
+
 msgid "Continental_AVDS_1790_2_SPHT"
 msgstr "Continental AVDS-1790-2 SPHT"
 
@@ -3964,14 +4055,6 @@ msgstr ""
 
 msgid "Continental_AVDS_1790_8BR"
 msgstr "Continental AVDS-1790-8BR"
-
-msgid "Continental_AVI-1790-8"
-msgstr "Continental AVI-1790-8"
-
-msgid "Continental_AVI-1790-8_short"
-msgstr ""
-"Continental\n"
-"AVI-1790-8"
 
 msgid "Continental_AVI_1790I"
 msgstr "Continental AVI-1790I"
@@ -4023,6 +4106,14 @@ msgid "Continental_AVI_1790_8XM_short"
 msgstr ""
 "Continental\n"
 "AVI-1790-8XM"
+
+msgid "Continental_AVI_1790_8_1"
+msgstr "Continental AVI-1790-8"
+
+msgid "Continental_AVI_1790_8_1_short"
+msgstr ""
+"Continental\n"
+"AVI-1790-8"
 
 msgid "Continental_AVI_1790_8_short"
 msgstr ""
@@ -4163,6 +4254,9 @@ msgstr ""
 msgid "Continental_AV_1790_5G"
 msgstr "Continental AV-1790-5G"
 
+msgid "Continental_AV_1790_5G_7x7"
+msgstr "Continental AV-1790-5G"
+
 msgid "Continental_AV_1790_5G_short"
 msgstr ""
 "Continental\n"
@@ -4246,14 +4340,6 @@ msgstr ""
 "Continental\n"
 "W-670 Series 12"
 
-msgid "Continental_W-670-9A"
-msgstr "Continental W-670"
-
-msgid "Continental_W-670-9A_short"
-msgstr ""
-"Continental\n"
-"W-670"
-
 msgid "Continental_W-670_short"
 msgstr ""
 "Continental\n"
@@ -4269,6 +4355,14 @@ msgstr ""
 
 msgid "Continental_W_670_9A"
 msgstr "Continental W-670-9A"
+
+msgid "Continental_W_670_9A1"
+msgstr "Continental W-670"
+
+msgid "Continental_W_670_9A1_short"
+msgstr ""
+"Continental\n"
+"W-670"
 
 msgid "Continental_W_670_9A_short"
 msgstr ""
@@ -5472,6 +5566,9 @@ msgstr "T803"
 msgid "Turret_1_A183_XM69_Hacker"
 msgstr "XM69 Hacker"
 
+msgid "Turret_1_A183_XM69_Hacker_7x7"
+msgstr "XM69 Hacker"
+
 msgid "Turret_1_A186_XM94_Shadow"
 msgstr "XM94 Shadow"
 
@@ -5500,6 +5597,9 @@ msgid "Turret_1_A194_AHT_7"
 msgstr "AHT-7"
 
 msgid "Turret_1_A195_Gorilla"
+msgstr "Gorilla"
+
+msgid "Turret_1_A195_Gorilla_7x7"
 msgstr "Gorilla"
 
 msgid "Turret_1_A197_Jezevec"
@@ -5756,6 +5856,9 @@ msgstr "M46T119"
 
 msgid "Turret_2_Sherman_Jumbo"
 msgstr "M4A2E2D51080"
+
+msgid "Turret_2_T110_FR"
+msgstr "T110E5 BS"
 
 msgid "Turret_2_T21"
 msgstr "T21"
@@ -6376,13 +6479,25 @@ msgstr "105 mm T254A"
 msgid "_110mm_EXP_S"
 msgstr "110 mm EXP-S"
 
+msgid "_110mm_EXP_S_7x7"
+msgstr "110 mm EXP-S"
+
 msgid "_110mm_EXP_S_APDS"
+msgstr "EXP-S APDS"
+
+msgid "_110mm_EXP_S_APDS_7x7"
 msgstr "EXP-S APDS"
 
 msgid "_110mm_EXP_S_HEAT"
 msgstr "EXP-S HEAT"
 
+msgid "_110mm_EXP_S_HEAT_7x7"
+msgstr "EXP-S HEAT"
+
 msgid "_110mm_EXP_S_HEP"
+msgstr "EXP-S HEP"
+
+msgid "_110mm_EXP_S_HEP_7x7"
 msgstr "EXP-S HEP"
 
 msgid "_110mm_Gun_EXP_7"
@@ -6429,9 +6544,6 @@ msgstr "Browning MG caliber .50 HB, M2"
 
 msgid "_120mm_2B_British_gun"
 msgstr "120 mm 2B British Gun"
-
-msgid "_120mm_AP-T_M358"
-msgstr "AP-T M358"
 
 msgid "_120mm_AP-T_M358C"
 msgstr "AP-T M358C"
@@ -6484,6 +6596,9 @@ msgstr "AP M358"
 msgid "_120mm_AP_M358E5"
 msgstr "AP M358E5"
 
+msgid "_120mm_AP_M358E5_FR"
+msgstr "AP M358E5"
+
 msgid "_120mm_AP_M358_M103"
 msgstr "AP M358 (M103)"
 
@@ -6529,6 +6644,9 @@ msgstr "AP-T M358E1"
 msgid "_120mm_AP_T_M358R"
 msgstr "AP-T M358R"
 
+msgid "_120mm_AP_T_M358_A"
+msgstr "AP-T M358"
+
 msgid "_120mm_AP_T_M360"
 msgstr "AP-T M360"
 
@@ -6567,6 +6685,9 @@ msgstr "120 mm Gun M58"
 
 msgid "_120mm_Gun_M58A"
 msgstr "120 mm Gun M58A"
+
+msgid "_120mm_Gun_M58_FR"
+msgstr "120 mm Gun M58"
 
 msgid "_120mm_Gun_M58_M103"
 msgstr "120 mm Gun M58 (M103)"
@@ -6613,9 +6734,6 @@ msgstr "120 mm Gun T53E1"
 msgid "_120mm_HE-T67"
 msgstr "HE T67"
 
-msgid "_120mm_HEAT-T_M469"
-msgstr "HEAT-T M469"
-
 msgid "_120mm_HEAT-T_M469C"
 msgstr "HEAT-T M469C"
 
@@ -6626,6 +6744,9 @@ msgid "_120mm_HEATFS_M469_SPHT"
 msgstr "M469 SPHT"
 
 msgid "_120mm_HEAT_M469E5"
+msgstr "HEAT M469E5"
+
+msgid "_120mm_HEAT_M469E5_FR"
 msgstr "HEAT M469E5"
 
 msgid "_120mm_HEAT_M469R"
@@ -6670,6 +6791,9 @@ msgstr "HEAT-T M469E1"
 msgid "_120mm_HEAT_T_M469E1_TS6"
 msgstr "HEAT-T M469E1"
 
+msgid "_120mm_HEAT_T_M469_A"
+msgstr "HEAT-T M469"
+
 msgid "_120mm_HE_M356"
 msgstr "HE M356"
 
@@ -6677,6 +6801,9 @@ msgid "_120mm_HE_M356E1_M_V_Y"
 msgstr "HE M356E1 (M-V-Y)"
 
 msgid "_120mm_HE_M356E5"
+msgstr "HE M356E5"
+
+msgid "_120mm_HE_M356E5_FR"
 msgstr "HE M356E5"
 
 msgid "_120mm_HE_M356_M103"
@@ -6811,6 +6938,9 @@ msgstr "APCR M112 (T95)"
 msgid "_155mm_APCR_MPCS"
 msgstr "APCR MPCS"
 
+msgid "_155mm_APCR_MPCS_7x7"
+msgstr "APCR MPCS"
+
 msgid "_155mm_AP_M111"
 msgstr "AP M111"
 
@@ -6869,6 +6999,9 @@ msgid "_155mm_AP_M112_XM57_CFE_I"
 msgstr "APCR M112 XM57"
 
 msgid "_155mm_AP_MPCS"
+msgstr "AP MPCS"
+
+msgid "_155mm_AP_MPCS_7x7"
 msgstr "AP MPCS"
 
 msgid "_155mm_AT_Gun_T7"
@@ -6991,6 +7124,9 @@ msgstr "HE M107 (M41)"
 msgid "_155mm_HE_MPCS"
 msgstr "HE MPCS"
 
+msgid "_155mm_HE_MPCS_7x7"
+msgstr "HE MPCS"
+
 msgid "_155mm_Howitzer_M1"
 msgstr "155 mm Howitzer M1"
 
@@ -7001,6 +7137,9 @@ msgid "_155mm_Howitzer_M45"
 msgstr "155 mm Howitzer M45"
 
 msgid "_155mm_MPCS_SEG"
+msgstr "155 mm MPCS SEG"
+
+msgid "_155mm_MPCS_SEG_7x7"
 msgstr "155 mm MPCS SEG"
 
 msgid "_165_1mm_HEAT_M623E1"

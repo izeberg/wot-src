@@ -39,7 +39,8 @@ _LOBBY_RELEASE_PACKAGES = ('gui.Scaleform.daapi.view.lobby', 'gui.Scaleform.daap
 _LOBBY_DEBUG_PACKAGES = ('gui.development.ui.messenger.view.lobby', 'gui.development.ui.demo',
                          'gui.development.ui.gf_viewer')
 _BATTLE_RELEASE_PACKAGES = ('gui.Scaleform.daapi.view.battle.shared', 'gui.Scaleform.daapi.view.battle.shared.vehicle_mechanics',
-                            'messenger.gui.Scaleform.view.battle')
+                            'messenger.gui.Scaleform.view.battle', 'gui.impl.battle.random',
+                            'gui.impl.battle.shared')
 _BATTLE_DEBUG_PACKAGES = ('gui.development.ui.battle', )
 _LOBBY_TOOLTIPS_BUILDERS_PATHS = [
  (
@@ -148,7 +149,9 @@ registerScaleformBattlePackages(ARENA_GUI_TYPE.SORTIE_2, BATTLE_PACKAGES + ('gui
 registerScaleformBattlePackages(ARENA_GUI_TYPE.FORT_BATTLE_2, BATTLE_PACKAGES + ('gui.Scaleform.daapi.view.battle.stronghold', ))
 registerScaleformBattlePackages(ARENA_GUI_TYPE.MAPS_TRAINING, ('messenger.gui.Scaleform.view.battle',
                                                                'gui.Scaleform.daapi.view.battle.shared.vehicle_mechanics',
-                                                               'gui.Scaleform.daapi.view.battle.maps_training') + (_BATTLE_DEBUG_PACKAGES if HAS_DEV_RESOURCES else ()))
+                                                               'gui.Scaleform.daapi.view.battle.maps_training',
+                                                               'gui.impl.battle.random',
+                                                               'gui.impl.battle.shared') + (_BATTLE_DEBUG_PACKAGES if HAS_DEV_RESOURCES else ()))
 registerScaleformBattlePackages(ARENA_GUI_TYPE.WINBACK, BATTLE_PACKAGES + ('gui.Scaleform.daapi.view.battle.winback', ))
 registerBattleTooltipsBuilders(_BATTLE_TOOLTIPS_BUILDERS_PATHS)
 registerLobbyTooltipsBuilders(_LOBBY_TOOLTIPS_BUILDERS_PATHS)

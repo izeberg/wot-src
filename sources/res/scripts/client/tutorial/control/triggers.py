@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from tutorial.control import TutorialProxyHolder
 from tutorial.data.has_id import IHasID
 from tutorial.logger import LOG_ERROR, LOG_DEBUG

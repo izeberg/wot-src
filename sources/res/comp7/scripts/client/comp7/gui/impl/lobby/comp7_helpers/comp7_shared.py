@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from gui.shared.utils.requesters import REQ_CRITERIA
 from shared_utils import findFirst

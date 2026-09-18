@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/german/G89_Leopard1/_skins/G89_Leopard1_KS_3Dst/crash/lod3/Hull</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.885025 -0.990056 -3.613950</min>
+		<max>1.854256 0.888345 3.523700</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G89_Leopard1/_skins/G89_Leopard1_KS_3Dst/crash/lod2/Hull</nodefullVisual>
+</root>

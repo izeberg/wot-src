@@ -1,4 +1,4 @@
-
+from __future__ import absolute_import
 
 def registerComp7LightOthersPrbParams():
     from comp7_light.gui.prb_control.storages.comp7_light_storage import Comp7LightStorage

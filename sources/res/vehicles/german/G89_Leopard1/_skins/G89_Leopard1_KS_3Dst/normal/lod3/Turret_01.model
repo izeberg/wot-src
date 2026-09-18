@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G89_Leopard1/_skins/G89_Leopard1_KS_3Dst/normal/lod3/Turret_01</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/german/G89_Leopard1/_skins/G89_Leopard1_KS_3Dst/normal/lod4/Turret_01</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.374507 0.065269 -2.289808</min>
+		<max>1.379825 1.672323 1.274024</max>
+	</visibilityBox>
+</root>

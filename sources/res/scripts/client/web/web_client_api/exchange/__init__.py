@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from exchange.personal_discounts_constants import ExchangeDiscountType, EXCHANGE_RATE_GOLD_NAME, EXCHANGE_RATE_FREE_XP_NAME
 from gui.impl.lobby.exchange.exchange_rates_helper import convertToGuiLimit, getShowFormatRate
 from helpers import dependency

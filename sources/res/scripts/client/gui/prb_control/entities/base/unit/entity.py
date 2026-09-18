@@ -880,7 +880,7 @@ class UnitEntity(_UnitEntity):
             return
         if isReady:
             vehInfos = self.getVehiclesInfo()
-            if vehInfos:
+            if vehInfos and not vehInfos[0].isEmpty():
                 g_currentVehicle.selectVehicle(vehInfos[0].vehInvID)
         if self._isInCoolDown(settings.REQUEST_TYPE.SET_PLAYER_STATE, coolDown=ctx.getCooldown()):
             return
@@ -1052,7 +1052,7 @@ class UnitEntity(_UnitEntity):
                     callback(False)
                 return
             vehInfos = self.getVehiclesInfo()
-            if vehInfos:
+            if vehInfos and not vehInfos[0].isEmpty():
                 g_currentVehicle.selectVehicle(vehInfos[0].vehInvID)
             roster = self.getRosterSettings()
             stats = self.getStats()

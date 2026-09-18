@@ -1,10 +1,11 @@
 package net.wg.gui.battle.eventBattle.views.radialMenu.components
 {
-   import net.wg.data.constants.generated.BATTLEATLAS;
    import net.wg.gui.battle.views.radialMenu.components.BackGround;
    
    public class EventBackGround extends BackGround
    {
+      
+      private static const HOLE_HALF_SIZE:int = 225;
        
       
       public function EventBackGround()
@@ -12,9 +13,9 @@ package net.wg.gui.battle.eventBattle.views.radialMenu.components
          super();
       }
       
-      protected function getBackGroundName() : String
+      override protected function get holeHalfSize() : int
       {
-         return BATTLEATLAS.RADIAL_EVENT_HOLE;
+         return HOLE_HALF_SIZE;
       }
    }
 }

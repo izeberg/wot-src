@@ -211,11 +211,17 @@ msgstr "Strv 107-12"
 msgid "Chassis_S37_Ambassador"
 msgstr "Ambassador"
 
+msgid "Chassis_S38_Huggorm"
+msgstr "Huggorm"
+
 msgid "Chassis_S39_Strv_m31"
 msgstr "Strv m/31"
 
 msgid "Chassis_S41_BV_111"
 msgstr "BV-111"
+
+msgid "Chassis_S42_Strv_T_fm_53"
+msgstr "Strv T fm/53"
 
 msgid "DB_605"
 msgstr "DB 605"
@@ -240,6 +246,9 @@ msgstr "Leyland L60"
 
 msgid "MTU_837_Ea_500"
 msgstr "MTU 837 Ea-500"
+
+msgid "MTU_MB_833_Huggorm"
+msgstr "MTU MB 833 (Huggorm)"
 
 msgid "Maybach_DSO"
 msgstr "Maybach DSO"
@@ -286,6 +295,9 @@ msgstr "Ra 122"
 msgid "Ra_122_Ambassador"
 msgstr "Ra 122 (Ambassador)"
 
+msgid "Ra_122_m_53"
+msgstr "Ra 122 m/53"
+
 msgid "Ra_146"
 msgstr "Ra 146"
 
@@ -297,6 +309,9 @@ msgstr "Ra 400"
 
 msgid "Ra_400_P"
 msgstr "Ra 400 P"
+
+msgid "Ra_400_P_Huggorm"
+msgstr "Ra 400 P (Huggorm)"
 
 msgid "Ra_400_P_SH"
 msgstr "Ra 400P"
@@ -1057,6 +1072,34 @@ msgstr "Ambassador"
 msgid "S37_Ambassador_short_special"
 msgstr "Хорошая динамика, магазин заряжания с высокой скорострельностью"
 
+msgid "S38_Huggorm"
+msgstr "Huggorm"
+
+msgid "S38_Huggorm_descr"
+msgstr ""
+"В середине 1960-х годов компания Bofors разработала концепцию универсального"
+" среднего танка, предназначенного как для использования в роли штурмового "
+"орудия в пехотных подразделениях, так и в качестве высокомобильного средства"
+" береговой обороны. Однако после закупки танков Strv 81 и начала "
+"производства Strv 103 от планов по выпуску ещё одной машины отказались. В "
+"качестве штурмовых орудий в пехотных подразделениях остались средние танки "
+"Strv 74, ранее состоявшие на вооружении бронетанковых бригад."
+
+msgid "S38_Huggorm_long_special"
+msgstr ""
+"Huggorm — шведский средний танк X уровня. Это по-настоящему универсальная "
+"машина. Хорошо бронированная башня, низкий разброс и гидропневматическая "
+"подвеска делают его очень эффективным в позиционных боях «от рельефа» в "
+"осадном режиме. Неплохая мобильность и комфортное орудие дают возможность "
+"совершать быстрые манёвры в походном режиме. Осадный режим можно включать на"
+" ходу."
+
+msgid "S38_Huggorm_short"
+msgstr "Huggorm"
+
+msgid "S38_Huggorm_short_special"
+msgstr "Гидропневматическая подвеска, хорошо бронированная башня"
+
 msgid "S39_Strv_m31"
 msgstr "Strv m/31"
 
@@ -1106,6 +1149,34 @@ msgstr ""
 
 msgid "S41_BV_111_short"
 msgstr "BV-111"
+
+msgid "S42_Strv_T_fm_53"
+msgstr "Strv T fm/53"
+
+msgid "S42_Strv_T_fm_53_descr"
+msgstr ""
+"В начале 1950-х годов, на фоне неопределённости с закупками зарубежной "
+"техники и неудачных попыток создать собственный современный танк, "
+"Департамент вооружений шведской армии (KATF) инициировал разработку "
+"альтернативной машины параллельно с проектом EMIL. Новый танк должен был "
+"обладать высоким уровнем бронирования и мощным вооружением, достаточным для "
+"борьбы с советскими тяжёлыми танками ИС-3. Однако уже в конце 1952 года была"
+" достигнута договорённость о поставках британских танков Centurion, после "
+"чего проект потерял актуальность и был свёрнут."
+
+msgid "S42_Strv_T_fm_53_long_special"
+msgstr ""
+"Strv T fm/53 — шведский тяжёлый танк IX уровня, сочетающий в себе сильные "
+"стороны шведских и французских тяжёлых танков с магазином заряжания. У него "
+"отличные УВН и прочная броня башни, хотя она и не неуязвима. Подвижность "
+"достойная, но уступает французским «тяжам». Орудие комфортное для шведского "
+"тяжёлого танка, но требует особого контроля прицела."
+
+msgid "S42_Strv_T_fm_53_short"
+msgstr "Strv T"
+
+msgid "S42_Strv_T_fm_53_short_special"
+msgstr "Магазин заряжания, отличные УВН и достойная броня башни"
 
 msgid "SFA_8_cyl_boxer"
 msgstr "SFA 8 cyl boxer"
@@ -1272,11 +1343,17 @@ msgstr "Strv 107-12"
 msgid "Turret_1_S37_Ambassador"
 msgstr "Ambassador"
 
+msgid "Turret_1_S38_Huggorm"
+msgstr "Huggorm"
+
 msgid "Turret_1_S39_Strv_m31"
 msgstr "Strv m/31"
 
 msgid "Turret_1_S41_BV_111"
 msgstr "BV-111"
+
+msgid "Turret_1_S42_Strv_T_fm_53"
+msgstr "Strv T fm/53"
 
 msgid "Turret_2_S02_Strv_M42"
 msgstr "Strv m/42"
@@ -1317,6 +1394,9 @@ msgstr "Volvo DC"
 msgid "Volvo_FE"
 msgstr "Volvo FE"
 
+msgid "Volvo_SFA_12A"
+msgstr "Volvo SFA 12A"
+
 msgid "Volvo_SFA_12B"
 msgstr "Volvo SFA 12B"
 
@@ -1346,6 +1426,9 @@ msgstr "slpprj D/5"
 
 msgid "_105mm_Bofors_D_G5_SH"
 msgstr "10.5 cm Bofors D/5"
+
+msgid "_105mm_Bofors_L_62_Huggorm"
+msgstr "10,5 cm Bofors L/62 (Huggorm)"
 
 msgid "_105mm_L_7_Gun_Ambassador"
 msgstr "105 mm L7 Gun (Ambassador)"
@@ -1430,6 +1513,9 @@ msgstr "10,5 cm lvkan m/42"
 
 msgid "_105mm_psgr_m_49"
 msgstr "psgr m/49"
+
+msgid "_105mm_psgr_m_66_Huggorm"
+msgstr "psgr m/66 (Huggorm)"
 
 msgid "_105mm_sgr_LS_50_S"
 msgstr "slsgr L/50 S"
@@ -1521,6 +1607,9 @@ msgstr "slpprj m/61 (03)"
 msgid "_105mm_slpprj_m_61_16"
 msgstr "slpprj m/61 (16)"
 
+msgid "_105mm_slpprj_m_61_Huggorm"
+msgstr "slpprj m/61 (Huggorm)"
+
 msgid "_105mm_slpprj_m_61_L62_103B"
 msgstr "slpprj m/61 L/62 (103B)"
 
@@ -1589,6 +1678,9 @@ msgstr "slsgr m/61A (03)"
 
 msgid "_105mm_slsgr_m_61A_16"
 msgstr "slsgr m/61A (16)"
+
+msgid "_105mm_slsgr_m_61A_Huggorm"
+msgstr "slsgr m/61A (Huggorm)"
 
 msgid "_105mm_slsgr_m_61A_L62_103B"
 msgstr "slsgr m/61A L/62 (103B)"
@@ -1695,6 +1787,9 @@ msgstr "sgr m/51"
 msgid "_120mm_sgr_m_51_52E2"
 msgstr "sgr m/51 (52E2)"
 
+msgid "_120mm_sgr_m_53"
+msgstr "sgr m/53"
+
 msgid "_120mm_sgr_m_60"
 msgstr "sgr m/60"
 
@@ -1703,6 +1798,9 @@ msgstr "sgr m/ny"
 
 msgid "_120mm_sgr_m_ny_ord"
 msgstr "sgr m/ny ord"
+
+msgid "_120mm_slpgr_m_53"
+msgstr "slpgr m/53"
 
 msgid "_120mm_slpprj_b"
 msgstr "slpprj b/68"
@@ -1716,6 +1814,9 @@ msgstr "slpprj m/51"
 msgid "_120mm_slpprj_m_51_52E2"
 msgstr "slpprj m/51 (52E2)"
 
+msgid "_120mm_slpprj_m_53"
+msgstr "slpprj m/53"
+
 msgid "_120mm_slpprj_m_60"
 msgstr "slpprj m/60"
 
@@ -1724,6 +1825,9 @@ msgstr "slpprj m/ny"
 
 msgid "_120mm_slpprj_m_ny_hog_laddning"
 msgstr "slpprj m/ny hög laddning"
+
+msgid "_120mm_stk_m_55"
+msgstr "120 mm stk m/55"
 
 msgid "_120mm_strvkan_L_40"
 msgstr "12 cm strvkan L/40"

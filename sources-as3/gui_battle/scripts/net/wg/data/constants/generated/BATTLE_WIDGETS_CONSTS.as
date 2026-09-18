@@ -43,17 +43,19 @@ package net.wg.data.constants.generated
       
       public static const SHELL_PARAMS_SWITCHER:String = "shellParamsSwitcherWidget";
       
+      public static const SHELL_CALIBRATION:String = "shellCalibrationWidget";
+      
       public static const AUTORELOADER_SURGE:String = "autoreloaderSurgeWidget";
       
       public static const BUSTLE_FEED:String = "bustleFeed";
       
       public static const SIGHT_POINTER_WIDGET:String = "SightPointerWidget";
       
+      public static const SPEC_BOOST_MODE:String = "specBoostModeWidget";
+      
       public static const DUMMY:String = "dummy";
       
-      public static const SHELL_CALIBRATION:String = "shellCalibrationWidget";
-      
-      public static const MECHANICS_WIDGETS_RIGHT:Array = [ROCKET_ACCELERATOR,RECHARGEABLE_NITRO,CONCENTRATION,POWER,CHARGE_SHOT,SUPPORT_WEAPON,PILLBOX_SIEGE,STANCE_DANCE_TURBO,TARGET_DESIGNATOR_WIDGET,STAGED_JET_BOOSTERS,SIGHT_POINTER_WIDGET,WHEELED_DASH,AUXILIARY_ROCKET_LAUNCHER,SHELL_PARAMS_SWITCHER,BUSTLE_FEED];
+      public static const MECHANICS_WIDGETS_RIGHT:Array = [ROCKET_ACCELERATOR,RECHARGEABLE_NITRO,CONCENTRATION,POWER,CHARGE_SHOT,SUPPORT_WEAPON,PILLBOX_SIEGE,STANCE_DANCE_TURBO,TARGET_DESIGNATOR_WIDGET,STAGED_JET_BOOSTERS,SIGHT_POINTER_WIDGET,WHEELED_DASH,AUXILIARY_ROCKET_LAUNCHER,SHELL_PARAMS_SWITCHER,BUSTLE_FEED,SPEC_BOOST_MODE];
       
       public static const MECHANICS_WIDGETS_LEFT:Array = [STANCE_DANCE_FIGHT];
       

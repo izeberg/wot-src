@@ -1,4 +1,7 @@
-import logging, BigWorld, CommandMapping, Event, constants
+from __future__ import absolute_import
+import logging
+from future.utils import viewitems
+import BigWorld, CommandMapping, Event, constants
 from ReservesEvents import randomReservesEvents
 from aih_constants import CTRL_MODE_NAME
 from arena_component_system.sector_base_arena_component import ID_TO_BASENAME, _MISSION_SECTOR_ID_MAPPING
@@ -92,7 +95,7 @@ class AvatarEpicData(object):
         diffTime = actionTime - BigWorld.serverTime()
         playerUnderFire = False
         state = 'critical'
-        if (groupState == SECTOR_STATE.TRANSITION or groupState == SECTOR_STATE.BOMBING) and not goodGroup:
+        if groupState in (SECTOR_STATE.TRANSITION, SECTOR_STATE.BOMBING) and not goodGroup:
             deathZoneTimerType = DEATH_ZONES.SECTOR_AIRSTRIKE
             if groupState == SECTOR_STATE.BOMBING:
                 diffTime = actionDuration
@@ -196,15 +199,14 @@ class AvatarEpicData(object):
             chatCommandName = None
             cmdMap = CommandMapping.g_instance
             isAttacker = BigWorld.player().team == EPIC_BATTLE_TEAM_ID.TEAM_ATTACKER
-            for chatCmd, keyboardCmd in _KB_MAPPING.iteritems():
+            for chatCmd, keyboardCmd in viewitems(_KB_MAPPING):
                 if cmdMap.isFired(keyboardCmd, key):
                     if chatCmd in _COMMAND_TO_LANE_MAPPING:
                         lane = _COMMAND_TO_LANE_MAPPING[chatCmd]
                         chatCommandName = chatCmd
                         break
-                    else:
-                        chatCommandName = chatCmd + (_ATTACKER_POSTFIX if isAttacker else _DEFENDER_POSTFIX)
-                        break
+                    chatCommandName = chatCmd + (_ATTACKER_POSTFIX if isAttacker else _DEFENDER_POSTFIX)
+                    break
 
             commands = self.guiSessionProvider.shared.chatCommands
             if chatCommandName is not None and commands is not None:

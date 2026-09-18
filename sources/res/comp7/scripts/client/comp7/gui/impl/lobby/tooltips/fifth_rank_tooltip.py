@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from comp7.gui.impl.gen.view_models.views.lobby.tooltips.fifth_rank_tooltip_model import FifthRankTooltipModel
 from comp7.gui.impl.lobby.meta_view.meta_view_helper import getRankDivisions
 from frameworks.wulf import ViewSettings

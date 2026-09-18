@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from skeletons.tutorial import ITutorialLoader, IGuiController
 
 class StubGuiController(IGuiController):

@@ -4679,6 +4679,10 @@ package
       
       public static const TANK_PARAMS_DESC_SIGHTPOINTERCONSEALMENTMOVING:String = "#tooltips:tank_params/desc/sightPointerConsealmentMoving";
       
+      public static const TANK_PARAMS_DESC_COMBATTHROTTLEDURATION:String = "#tooltips:tank_params/desc/combatThrottleDuration";
+      
+      public static const TANK_PARAMS_DESC_COMBATTHROTTLECOOLDOWN:String = "#tooltips:tank_params/desc/combatThrottleCooldown";
+      
       public static const VEHICLEPARAMS_TITLE_VALUETEMPLATE:String = "#tooltips:vehicleParams/title/valueTemplate";
       
       public static const VEHICLEPARAMS_POSSIBLEBONUSES_DESC:String = "#tooltips:vehicleParams/possibleBonuses/desc";
@@ -9187,24 +9191,6 @@ package
       
       public static const NOTRECRUITEDTANKMAN_JAGER_MOUZAKROBAT_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/jager_mouzakrobat/howToGetInfo";
       
-      public static const NOTRECRUITEDTANKMAN_BIRTHDAY16_CREW_1_LABEL:String = "#tooltips:notrecruitedtankman/birthday16_crew_1/label";
-      
-      public static const NOTRECRUITEDTANKMAN_BIRTHDAY16_CREW_1_DESC:String = "#tooltips:notrecruitedtankman/birthday16_crew_1/desc";
-      
-      public static const NOTRECRUITEDTANKMAN_BIRTHDAY16_CREW_1_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/birthday16_crew_1/howToGetInfo";
-      
-      public static const NOTRECRUITEDTANKMAN_BIRTHDAY16_CREW_2_LABEL:String = "#tooltips:notrecruitedtankman/birthday16_crew_2/label";
-      
-      public static const NOTRECRUITEDTANKMAN_BIRTHDAY16_CREW_2_DESC:String = "#tooltips:notrecruitedtankman/birthday16_crew_2/desc";
-      
-      public static const NOTRECRUITEDTANKMAN_BIRTHDAY16_CREW_2_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/birthday16_crew_2/howToGetInfo";
-      
-      public static const NOTRECRUITEDTANKMAN_BIRTHDAY16_CREW_3_LABEL:String = "#tooltips:notrecruitedtankman/birthday16_crew_3/label";
-      
-      public static const NOTRECRUITEDTANKMAN_BIRTHDAY16_CREW_3_DESC:String = "#tooltips:notrecruitedtankman/birthday16_crew_3/desc";
-      
-      public static const NOTRECRUITEDTANKMAN_BIRTHDAY16_CREW_3_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/birthday16_crew_3/howToGetInfo";
-      
       public static const NOTRECRUITEDTANKMAN_TANKMEN_MTLB4_1_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_mtlb4_1/label";
       
       public static const NOTRECRUITEDTANKMAN_TANKMEN_MTLB4_1_DESC:String = "#tooltips:notrecruitedtankman/tankmen_mtlb4_1/desc";
@@ -9240,6 +9226,36 @@ package
       public static const NOTRECRUITEDTANKMAN_TANKMEN_MTLB4_6_DESC:String = "#tooltips:notrecruitedtankman/tankmen_mtlb4_6/desc";
       
       public static const NOTRECRUITEDTANKMAN_TANKMEN_MTLB4_6_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_mtlb4_6/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_BIRTHDAY16_CREW_1_LABEL:String = "#tooltips:notrecruitedtankman/birthday16_crew_1/label";
+      
+      public static const NOTRECRUITEDTANKMAN_BIRTHDAY16_CREW_1_DESC:String = "#tooltips:notrecruitedtankman/birthday16_crew_1/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_BIRTHDAY16_CREW_1_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/birthday16_crew_1/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_BIRTHDAY16_CREW_2_LABEL:String = "#tooltips:notrecruitedtankman/birthday16_crew_2/label";
+      
+      public static const NOTRECRUITEDTANKMAN_BIRTHDAY16_CREW_2_DESC:String = "#tooltips:notrecruitedtankman/birthday16_crew_2/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_BIRTHDAY16_CREW_2_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/birthday16_crew_2/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_BIRTHDAY16_CREW_3_LABEL:String = "#tooltips:notrecruitedtankman/birthday16_crew_3/label";
+      
+      public static const NOTRECRUITEDTANKMAN_BIRTHDAY16_CREW_3_DESC:String = "#tooltips:notrecruitedtankman/birthday16_crew_3/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_BIRTHDAY16_CREW_3_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/birthday16_crew_3/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_MUSTACHED_ENGINEER_LABEL:String = "#tooltips:notrecruitedtankman/mustached_engineer/label";
+      
+      public static const NOTRECRUITEDTANKMAN_MUSTACHED_ENGINEER_DESC:String = "#tooltips:notrecruitedtankman/mustached_engineer/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_MUSTACHED_ENGINEER_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/mustached_engineer/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_FR_SPARK_LABEL:String = "#tooltips:notrecruitedtankman/fr_spark/label";
+      
+      public static const NOTRECRUITEDTANKMAN_FR_SPARK_DESC:String = "#tooltips:notrecruitedtankman/fr_spark/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_FR_SPARK_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/fr_spark/howToGetInfo";
       
       public static const ELEN_SUMMARY_RANK_ENUM:Array = [ELEN_SUMMARY_RANK_1,ELEN_SUMMARY_RANK_2,ELEN_SUMMARY_RANK_3,ELEN_SUMMARY_RANK_4,ELEN_SUMMARY_RANK_NORANK];
       

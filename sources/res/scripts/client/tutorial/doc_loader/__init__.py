@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import ResMgr
 from tutorial import settings
 from tutorial.doc_loader import gui_config

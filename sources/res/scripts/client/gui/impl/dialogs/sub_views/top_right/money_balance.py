@@ -14,6 +14,7 @@ from gui.impl.pub import ViewImpl
 from gui.impl.pub.tooltip_window import SimpleTooltipContent
 from gui.shared.money import Currency
 from helpers import dependency
+from skeletons.gui.game_control import IWalletController
 from skeletons.gui.shared import IItemsCache
 if typing.TYPE_CHECKING:
     from frameworks.wulf import View
@@ -31,6 +32,7 @@ NO_WGM_TOOLTIP_DATA = {CurrencyType.GOLD: {'header': R.strings.tooltips.header.b
 class MoneyBalance(ViewImpl):
     __slots__ = ('_stats', '_tooltips', '_currenciesList')
     _itemsCache = dependency.descriptor(IItemsCache)
+    _wallet = dependency.descriptor(IWalletController)
 
     def __init__(self, layoutID=None, viewModel=None, currenciesList=None):
         self._currenciesList = [CurrencyType.GOLD, CurrencyType.CREDITS, CurrencyType.CRYSTAL, CurrencyType.FREEXP] if currenciesList is None else currenciesList
@@ -65,10 +67,12 @@ class MoneyBalance(ViewImpl):
         super(MoneyBalance, self)._onLoading(*args, **kwargs)
         g_clientUpdateManager.addMoneyCallback(self._moneyChangeHandler)
         g_clientUpdateManager.addCallback('stats.freeXP', self._moneyChangeHandler)
+        self._wallet.onWalletStatusChanged += self._moneyChangeHandler
         self.__setStats(self.viewModel)
 
     def _finalize(self):
         g_clientUpdateManager.removeObjectCallbacks(self)
+        self._wallet.onWalletStatusChanged -= self._moneyChangeHandler
         for tooltip in self._tooltips.values():
             tooltip.dispose()
 
@@ -79,7 +83,7 @@ class MoneyBalance(ViewImpl):
             self.__setStats(model)
 
     def _updateModel(self, model):
-        isWGMAvailable = self._stats.mayConsumeWalletResources
+        isWGMAvailable = self._wallet.isAvailable
         model.setIsWGMAvailable(isWGMAvailable)
         if CurrencyType.CREDITS in self._currenciesList:
             model.setCredits(int(self._stats.money.getSignValue(Currency.CREDITS)))
@@ -93,7 +97,7 @@ class MoneyBalance(ViewImpl):
             model.setEquipCoin(self._stats.equipCoin)
 
     def __setStats(self, model):
-        isWGMAvailable = self._stats.mayConsumeWalletResources
+        isWGMAvailable = self._wallet.isAvailable
         self._updateModel(model)
         for currency, tooltip in self._tooltips.items():
             tooltip.isBackportTooltip = isWGMAvailable

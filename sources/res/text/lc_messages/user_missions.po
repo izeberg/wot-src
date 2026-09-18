@@ -367,6 +367,9 @@ msgstr "Получить награду"
 msgid "hub/reward_progress/win_back_quest_progress/claim_main"
 msgstr "Забрать награды"
 
+msgid "hub/reward_progress/win_back_quest_progress/progress"
+msgstr "{{current}}{{@ style (color #ede6d998)}}/{{total}}{{/}}"
+
 msgid "hub/reward_progress/win_back_quest_progress/sub_title"
 msgstr "В зачёт пойдёт выполнение стандартных, премиум и бонусных задач."
 
@@ -375,7 +378,8 @@ msgstr "Доступно"
 
 msgid "hub/reward_progress/win_back_quest_progress/title"
 msgstr ""
-"Снова в строю! Выполняйте ежедневные задачи и получайте награды: {progres}"
+"Снова в строй! Выполняйте ежедневные задачи и получайте награды: "
+"{{progress}}"
 
 msgid "info_page/additional/bonus/description"
 msgstr ""
@@ -594,7 +598,7 @@ msgid "tooltip/hub/shields/title"
 msgstr "Щиты"
 
 msgid "tooltip/vehicle_restrictions"
-msgstr "Ограничения по технике:"
+msgstr "Выполняется на"
 
 msgid "tooltip/weekly_mission"
 msgstr "Еженедельная задача"

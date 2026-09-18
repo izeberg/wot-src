@@ -1,9 +1,11 @@
+from __future__ import absolute_import
 import logging, typing, BigWorld
 from constants import AUTORELOADER_SURGE_RESTRICTION, BUSTLE_FEED_SWITCH_ACCESS, OVERHEAT_GAIN_STATE, SIGHT_POINTER_COMMON_CONSTANTS, TARGET_DESIGNATOR_STATE
 from events_handler import eventHandler
+from items.vehicle_mechanics_types import VehicleMechanicKeys
 from vehicles.mechanics.generic_mechanics.wheeled_dash import IWheeledDashListenerLogic
 from vehicles.mechanics.mechanic_commands import IMechanicCommandsListenerLogic
-from vehicles.mechanics.mechanic_constants import VEHICLE_MECHANIC_USED_COMMANDS, VehicleMechanic
+from vehicles.mechanics.mechanic_constants import VEHICLE_MECHANIC_USED_COMMANDS
 from visual_script.block import Block
 from visual_script.dependency import dependencyImporter
 from visual_script.misc import ASPECT
@@ -13,6 +15,7 @@ from visual_script_client.vehicle_mechanics_common import VehicleMechanicEventsB
 cgf_helpers, = dependencyImporter('cgf_common.cgf_helpers')
 if typing.TYPE_CHECKING:
     from typing import Any, List
+    from items.vehicle_mechanics_types import VehicleMechanicKey
     from AccuracyStacksController import AccuracyStacksState
     from BattleFuryController import BattleFuryState
     from ChargeShotComponent import ChargeShotState
@@ -37,6 +40,7 @@ if typing.TYPE_CHECKING:
     from vehicles.mechanics.mechanic_constants import VehicleMechanicCommand
     from WheeledDashController import WheeledDashState
     from vehicles.mechanics.gun_mechanics.auxiliary_rocket_launcher import AuxiliaryRocketLauncherState
+    from vehicles.mechanics.generic_mechanics.spec_boost_mode import SpecBoostModeMechanicState
     from ShellCalibrationController import ShellCalibrationModeState
     from AutoreloaderSurgeController import AutoreloaderSurgeState
 _logger = logging.getLogger(__name__)
@@ -68,7 +72,7 @@ class OnVehicleMechanicCommand(VehicleSelectableMechanicEventsBlock, IMechanicCo
 
     def __init__(self, *args, **kwargs):
         super(OnVehicleMechanicCommand, self).__init__(*args, **kwargs)
-        self._commands = {command:self._makeEventOutputSlot(command.value) for command in VEHICLE_MECHANIC_USED_COMMANDS[self._vehicleMechanic]}
+        self._commands = {command:self._makeEventOutputSlot(command.value) for command in VEHICLE_MECHANIC_USED_COMMANDS[self._vehicleMechanicKey]}
 
     @eventHandler
     def onMechanicComponentCatching(self, component):
@@ -84,7 +88,7 @@ class OnVehicleMechanicCommand(VehicleSelectableMechanicEventsBlock, IMechanicCo
 
     @classmethod
     def _getInitParamMechanics(cls):
-        return sorted(mechanic.value for mechanic in VEHICLE_MECHANIC_USED_COMMANDS)
+        return sorted(mechanic.uniqueName for mechanic in VEHICLE_MECHANIC_USED_COMMANDS)
 
 
 class OnConcentrationModeState(VehicleMechanicStateEventsBlock):
@@ -95,8 +99,8 @@ class OnConcentrationModeState(VehicleMechanicStateEventsBlock):
         return
 
     @classmethod
-    def _getVehicleMechanic(cls, initParams):
-        return VehicleMechanic.CONCENTRATION_MODE
+    def _getVehicleMechanicKey(cls, initParams):
+        return VehicleMechanicKeys.CONCENTRATION_MODE
 
     def _onStatePrepared(self, state):
         self._state.setValue(state.state)
@@ -116,8 +120,8 @@ class OnPowerModeState(VehicleMechanicStateEventsBlock):
         return
 
     @classmethod
-    def _getVehicleMechanic(cls, initParams):
-        return VehicleMechanic.POWER_MODE
+    def _getVehicleMechanicKey(cls, initParams):
+        return VehicleMechanicKeys.POWER_MODE
 
     def _onStatePrepared(self, state):
         self._state.setValue(state.state)
@@ -138,8 +142,8 @@ class OnPillboxSiegeModeState(VehicleMechanicStateEventsBlock):
         return
 
     @classmethod
-    def _getVehicleMechanic(cls, initParams):
-        return VehicleMechanic.PILLBOX_SIEGE_MODE
+    def _getVehicleMechanicKey(cls, initParams):
+        return VehicleMechanicKeys.PILLBOX_SIEGE_MODE
 
     def _onStatePrepared(self, state):
         self._state.setValue(state.state)
@@ -164,8 +168,8 @@ class OnRechargeableNitroState(VehicleMechanicStateEventsBlock):
         return
 
     @classmethod
-    def _getVehicleMechanic(cls, initParams):
-        return VehicleMechanic.RECHARGEABLE_NITRO
+    def _getVehicleMechanicKey(cls, initParams):
+        return VehicleMechanicKeys.RECHARGEABLE_NITRO
 
     def __forwardStateToVSE(self, state):
         self._state.setValue(state.state)
@@ -198,8 +202,8 @@ class OnBattleFuryState(VehicleMechanicStateEventsBlock):
         return
 
     @classmethod
-    def _getVehicleMechanic(cls, initParams):
-        return VehicleMechanic.BATTLE_FURY
+    def _getVehicleMechanicKey(cls, initParams):
+        return VehicleMechanicKeys.BATTLE_FURY
 
     def __recacheState(self, newState):
         self._prevLevel = self._level
@@ -244,8 +248,8 @@ class OnOverheatStacksState(VehicleMechanicStateEventsBlock):
         return
 
     @classmethod
-    def _getVehicleMechanic(cls, initParams):
-        return VehicleMechanic.OVERHEAT_STACKS
+    def _getVehicleMechanicKey(cls, initParams):
+        return VehicleMechanicKeys.OVERHEAT_STACKS
 
     def _onStatePrepared(self, state):
         self._gainState.setValue(state.gainState)
@@ -275,8 +279,8 @@ class OnAccuracyStacksState(VehicleMechanicStateEventsBlock):
         return
 
     @classmethod
-    def _getVehicleMechanic(cls, initParams):
-        return VehicleMechanic.ACCURACY_STACKS
+    def _getVehicleMechanicKey(cls, initParams):
+        return VehicleMechanicKeys.ACCURACY_STACKS
 
     def _onStatePrepared(self, state):
         self._prevIsGainingActive.setValue(False)
@@ -309,8 +313,8 @@ class OnSupportWeaponState(VehicleMechanicStateEventsBlock):
         return
 
     @classmethod
-    def _getVehicleMechanic(cls, initParams):
-        return VehicleMechanic.SUPPORT_WEAPON
+    def _getVehicleMechanicKey(cls, initParams):
+        return VehicleMechanicKeys.SUPPORT_WEAPON
 
     def _onStatePrepared(self, state):
         self._state.setValue(state.state)
@@ -362,8 +366,8 @@ class OnStanceDanceState(VehicleMechanicStateEventsBlock):
         return
 
     @classmethod
-    def _getVehicleMechanic(cls, initParams):
-        return VehicleMechanic.STANCE_DANCE
+    def _getVehicleMechanicKey(cls, initParams):
+        return VehicleMechanicKeys.STANCE_DANCE
 
     def _onStatePrepared(self, state):
         self.__updateCurrentState(state)
@@ -420,8 +424,8 @@ class OnChargeShotState(VehicleMechanicStateEventsBlock):
         return
 
     @classmethod
-    def _getVehicleMechanic(cls, initParams):
-        return VehicleMechanic.CHARGE_SHOT
+    def _getVehicleMechanicKey(cls, initParams):
+        return VehicleMechanicKeys.CHARGE_SHOT
 
     def _onStatePrepared(self, state):
         self.__updateStateParams(state)
@@ -453,12 +457,12 @@ class OnChargeShotParams(VehicleMechanicLifeCycleEventsBlock):
         return
 
     @classmethod
-    def _getVehicleMechanic(cls, initParams):
-        return VehicleMechanic.CHARGE_SHOT
+    def _getVehicleMechanicKey(cls, initParams):
+        return VehicleMechanicKeys.CHARGE_SHOT
 
     @eventHandler
-    def _onComponentParamsCollected(self, component):
-        self._maxLevel.setValue(component.maxLevel)
+    def _onComponentParamsCollected(self, params):
+        self._maxLevel.setValue(params.maxLevel)
 
 
 class OnTargetDesignatorState(VehicleMechanicStateEventsBlock):
@@ -474,8 +478,8 @@ class OnTargetDesignatorState(VehicleMechanicStateEventsBlock):
         return
 
     @classmethod
-    def _getVehicleMechanic(cls, initParams):
-        return VehicleMechanic.TARGET_DESIGNATOR
+    def _getVehicleMechanicKey(cls, initParams):
+        return VehicleMechanicKeys.TARGET_DESIGNATOR
 
     def _onStatePrepared(self, state):
         self.__updateState(state)
@@ -501,8 +505,8 @@ class OnStationaryReloadState(VehicleMechanicStateEventsBlock):
         return
 
     @classmethod
-    def _getVehicleMechanic(cls, initParams):
-        return VehicleMechanic.STATIONARY_RELOAD
+    def _getVehicleMechanicKey(cls, initParams):
+        return VehicleMechanicKeys.STATIONARY_RELOAD
 
     def _onStatePrepared(self, state):
         self._state.setValue(state.state)
@@ -532,7 +536,7 @@ class GetTemperatureTimeLeft(Block, VehicleMechanicsMeta):
         vehicleGameObject = self._object.getValue()
         if vehicleGameObject is not None:
             vehicle = cgf_helpers.getVehicleEntityByVehicleGameObject(vehicleGameObject)
-            controller = vehicle.getVehicleMechanicComponent(VehicleMechanic.TEMPERATURE_GUN)
+            controller = vehicle.getVehicleMechanicComponent(VehicleMechanicKeys.TEMPERATURE_GUN)
             if controller is not None:
                 targetTemp = self._targetTemp.getValue()
                 cdTime = controller.getMechanicState().getCoolingTime(targetTemp)
@@ -559,8 +563,8 @@ class OnTemperatureGunState(VehicleMechanicStateEventsBlock):
         return
 
     @classmethod
-    def _getVehicleMechanic(cls, initParams):
-        return VehicleMechanic.TEMPERATURE_GUN
+    def _getVehicleMechanicKey(cls, initParams):
+        return VehicleMechanicKeys.TEMPERATURE_GUN
 
     def _onStatePrepared(self, state):
         self._state.setValue(state.state)
@@ -578,8 +582,8 @@ class OnOverheatGunState(VehicleMechanicStateEventsBlock):
         return
 
     @classmethod
-    def _getVehicleMechanic(cls, initParams):
-        return VehicleMechanic.OVERHEAT_GUN
+    def _getVehicleMechanicKey(cls, initParams):
+        return VehicleMechanicKeys.OVERHEAT_GUN
 
     def _onStatePrepared(self, state):
         self._state.setValue(state.overheatState)
@@ -598,12 +602,12 @@ class OnOverheatGunParams(VehicleMechanicLifeCycleEventsBlock):
         return
 
     @classmethod
-    def _getVehicleMechanic(cls, initParams):
-        return VehicleMechanic.OVERHEAT_GUN
+    def _getVehicleMechanicKey(cls, initParams):
+        return VehicleMechanicKeys.OVERHEAT_GUN
 
     @eventHandler
-    def _onComponentParamsCollected(self, component):
-        self._overheatOffThreshold.setValue(component.overheatOffThreshold)
+    def _onComponentParamsCollected(self, params):
+        self._overheatOffThreshold.setValue(params.overheatOffThreshold)
 
 
 class OnHeatingZonesGunState(VehicleMechanicStateEventsBlock):
@@ -614,8 +618,8 @@ class OnHeatingZonesGunState(VehicleMechanicStateEventsBlock):
         return
 
     @classmethod
-    def _getVehicleMechanic(cls, initParams):
-        return VehicleMechanic.HEATING_ZONES_GUN
+    def _getVehicleMechanicKey(cls, initParams):
+        return VehicleMechanicKeys.HEATING_ZONES_GUN
 
     def _onStatePrepared(self, state):
         self._state.setValue(state.heatingZoneState)
@@ -634,8 +638,8 @@ class OnStagedJetBoostersState(VehicleMechanicStateEventsBlock):
         return
 
     @classmethod
-    def _getVehicleMechanic(cls, initParams):
-        return VehicleMechanic.STAGED_JET_BOOSTERS
+    def _getVehicleMechanicKey(cls, initParams):
+        return VehicleMechanicKeys.STAGED_JET_BOOSTERS
 
     def _onStatePrepared(self, state):
         self.__forwardStateToVSE(state)
@@ -661,8 +665,8 @@ class OnLowChargeShotState(VehicleMechanicStateEventsBlock):
         return
 
     @classmethod
-    def _getVehicleMechanic(cls, initParams):
-        return VehicleMechanic.LOW_CHARGE_SHOT
+    def _getVehicleMechanicKey(cls, initParams):
+        return VehicleMechanicKeys.LOW_CHARGE_SHOT
 
     def _onStatePrepared(self, state):
         self.__forwardStateToVSE(state)
@@ -695,8 +699,8 @@ class OnPropellantGunState(VehicleMechanicStateEventsBlock):
         return
 
     @classmethod
-    def _getVehicleMechanic(cls, initParams):
-        return VehicleMechanic.PROPELLANT_GUN
+    def _getVehicleMechanicKey(cls, initParams):
+        return VehicleMechanicKeys.PROPELLANT_GUN
 
     def _onStatePrepared(self, state):
         self._state.setValue(state.state)
@@ -733,8 +737,8 @@ class OnWheeledDashState(VehicleMechanicStateEventsBlock):
         return
 
     @classmethod
-    def _getVehicleMechanic(cls, _):
-        return VehicleMechanic.WHEELED_DASH
+    def _getVehicleMechanicKey(cls, _):
+        return VehicleMechanicKeys.WHEELED_DASH
 
     def _onStatePrepared(self, state):
         self.__forwardStateToVSE(state)
@@ -759,8 +763,8 @@ class OnWheeledDashImpulse(VehicleMechanicEventsBlock, IWheeledDashListenerLogic
         return
 
     @classmethod
-    def _getVehicleMechanic(cls, _):
-        return VehicleMechanic.WHEELED_DASH
+    def _getVehicleMechanicKey(cls, _):
+        return VehicleMechanicKeys.WHEELED_DASH
 
     @eventHandler
     def onMechanicComponentCatching(self, component):
@@ -786,8 +790,8 @@ class OnAuxiliaryRocketLauncherState(VehicleMechanicStateEventsBlock):
         return
 
     @classmethod
-    def _getVehicleMechanic(cls, _):
-        return VehicleMechanic.AUXILIARY_ROCKET_LAUNCHER
+    def _getVehicleMechanicKey(cls, _):
+        return VehicleMechanicKeys.AUXILIARY_ROCKET_LAUNCHER
 
     def _onStatePrepared(self, state):
         self.__forwardStateToVSE(state)
@@ -814,8 +818,8 @@ class OnShellParamsSwitcherGunState(VehicleMechanicStateEventsBlock):
         return
 
     @classmethod
-    def _getVehicleMechanic(cls, initParams):
-        return VehicleMechanic.SHELL_PARAMS_SWITCHER
+    def _getVehicleMechanicKey(cls, initParams):
+        return VehicleMechanicKeys.SHELL_PARAMS_SWITCHER
 
     def _onStatePrepared(self, state):
         self.__setState(state)
@@ -838,8 +842,8 @@ class OnShellCalibrationState(VehicleMechanicStateEventsBlock):
         return
 
     @classmethod
-    def _getVehicleMechanic(cls, initParams):
-        return VehicleMechanic.SHELL_CALIBRATION
+    def _getVehicleMechanicKey(cls, initParams):
+        return VehicleMechanicKeys.SHELL_CALIBRATION
 
     def _onStateTransition(self, prevState, newState):
         self._isPenBonusActive.setValue(bool(newState.isPenBonusActive))
@@ -862,8 +866,8 @@ class OnAutoreloaderSurgeState(VehicleMechanicStateEventsBlock):
         return
 
     @classmethod
-    def _getVehicleMechanic(cls, initParams):
-        return VehicleMechanic.AUTORELOADER_SURGE
+    def _getVehicleMechanicKey(cls, initParams):
+        return VehicleMechanicKeys.AUTORELOADER_SURGE
 
     @eventHandler
     def onMechanicComponentCatching(self, component):
@@ -896,8 +900,8 @@ class OnBustleFeedState(VehicleMechanicStateEventsBlock):
         return
 
     @classmethod
-    def _getVehicleMechanic(cls, initParams):
-        return VehicleMechanic.BUSTLE_FEED
+    def _getVehicleMechanicKey(cls, initParams):
+        return VehicleMechanicKeys.BUSTLE_FEED
 
     def _onStatePrepared(self, state):
         self.__forwardStateToVSE(state)
@@ -927,8 +931,8 @@ class OnSightPointerState(VehicleMechanicStateEventsBlock):
         return
 
     @classmethod
-    def _getVehicleMechanic(cls, initParams):
-        return VehicleMechanic.SIGHT_POINTER
+    def _getVehicleMechanicKey(cls, initParams):
+        return VehicleMechanicKeys.SIGHT_POINTER
 
     def __forwardStateToVSE(self, state):
         self._state.setValue(state.state)
@@ -944,3 +948,26 @@ class OnSightPointerState(VehicleMechanicStateEventsBlock):
 
     def _onStateTransition(self, _, newState):
         self.__forwardStateToVSE(newState)
+
+
+class OnCombatThrottleState(VehicleMechanicStateEventsBlock):
+
+    def __init__(self, *args, **kwargs):
+        super(OnCombatThrottleState, self).__init__(*args, **kwargs)
+        self._state = self._makeDataOutputSlot('state', PhasedMechanicStateEnum.slotType(), None)
+        self._prevState = self._makeDataOutputSlot('prevState', PhasedMechanicStateEnum.slotType(), None)
+        return
+
+    @classmethod
+    def _getVehicleMechanicKey(cls, initParams):
+        return VehicleMechanicKeys.COMBAT_THROTTLE
+
+    def _onStatePrepared(self, state):
+        self._state.setValue(state.state)
+
+    def _onStateObservation(self, state):
+        self._state.setValue(state.state)
+
+    def _onStateTransition(self, prevState, newState):
+        self._prevState.setValue(prevState.state)
+        self._state.setValue(newState.state)

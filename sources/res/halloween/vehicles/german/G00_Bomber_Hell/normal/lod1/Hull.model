@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>halloween/vehicles/german/G00_Bomber_Hell/normal/lod2/Hull</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.466225 0.526600 -0.550088</min>
+		<max>0.466225 0.842602 0.550088</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>halloween/vehicles/german/G00_Bomber_Hell/normal/lod1/Hull</nodefullVisual>
+</root>

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from epic_constants import FRONTLINE_BONUSES_ORDER, EPIC_SKILL_TOKEN_NAME, EPIC_SELECT_BONUS_NAME
 from frontline.gui.bonus import FrontlineSkillBonus

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/german/G89_Leopard1/_skins/G89_Leopard1_KS_3Dst/crash/lod4/Gun_01</parent>
+	<extent>192.000000</extent>
+	<nodelessVisual>vehicles/german/G89_Leopard1/_skins/G89_Leopard1_KS_3Dst/crash/lod3/Gun_01</nodelessVisual>
+	<visibilityBox>
+		<min>-0.730965 -0.355305 -1.709873</min>
+		<max>0.700683 0.359280 4.190197</max>
+	</visibilityBox>
+</root>

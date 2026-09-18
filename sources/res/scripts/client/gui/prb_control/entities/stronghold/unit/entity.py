@@ -689,6 +689,9 @@ class StrongholdEntity(UnitEntity):
         else:
             return
 
+    def getIsStrongholdEventEnabled(self):
+        return self.__isStrongholdEventEnabled()
+
     def hasEventFrozenVehicles(self):
         if not self.__isStrongholdEventEnabled():
             return False

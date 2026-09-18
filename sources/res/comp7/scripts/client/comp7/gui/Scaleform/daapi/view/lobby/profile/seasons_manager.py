@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from comp7.gui.Scaleform.daapi.view.lobby.profile.comp7_profile_helper import getDropdownKeyBySeason, getSeasonName, COMP7_ARCHIVE_NAMES, COMP7_SEASON_NUMBERS, getDropdownKeyByArchiveName, isComp7Archive, getArchiveName
 from comp7.gui.shared.gui_items.dossier.stats import getComp7DossierStats
 from gui.Scaleform.daapi.view.lobby.profile.ProfileSection import BattleTypesDropDownItems

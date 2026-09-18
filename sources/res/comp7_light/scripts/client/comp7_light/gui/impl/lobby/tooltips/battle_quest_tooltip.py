@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from comp7.gui.impl.lobby.comp7_helpers.comp7_bonus_packer import packQuestBonuses
 from comp7_light.gui.impl.lobby.comp7_light_helpers.comp7_light_mission_packer import packMissionItem
 from comp7_light.gui.impl.lobby.comp7_light_helpers.comp7_light_packers import getComp7LightBonusPacker

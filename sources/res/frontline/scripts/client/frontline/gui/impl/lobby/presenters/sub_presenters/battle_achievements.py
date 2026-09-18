@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing, json
 from frameworks.wulf import Array
 from frameworks.wulf.view.array import fillViewModelsArray

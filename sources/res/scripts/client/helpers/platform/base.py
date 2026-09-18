@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from Event import EventManager, Event
 from skeletons.helpers.platform import IPublishPlatform
 

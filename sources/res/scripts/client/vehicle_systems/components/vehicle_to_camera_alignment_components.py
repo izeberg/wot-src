@@ -1,4 +1,5 @@
-import BigWorld, CGF, DebugDrawer, Math, logging, math_utils
+from __future__ import absolute_import, division
+import logging, BigWorld, CGF, DebugDrawer, Math, math_utils
 from WeakMethod import WeakMethodProxy
 from CameraComponents import CameraComponent
 from constants import IS_CLIENT

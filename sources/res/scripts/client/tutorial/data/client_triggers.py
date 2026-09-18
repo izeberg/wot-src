@@ -1,4 +1,6 @@
+from __future__ import absolute_import
 import logging
+from future.utils import viewitems
 from gui.Scaleform.genConsts.TUTORIAL_TRIGGER_TYPES import TUTORIAL_TRIGGER_TYPES
 _logger = logging.getLogger(__name__)
 _COMPONENT_STATE_TRIGGERS = {'visible': TUTORIAL_TRIGGER_TYPES.VISIBLE_CHANGE, 
@@ -43,7 +45,7 @@ class ClientTriggers(object):
                     states = {trigger.state:trigger.value for trigger in triggers}
                     self.__hintNeededStates[itemID] = states
 
-        for itemID, realStates in self.__hintNeededStates.iteritems():
+        for itemID, realStates in viewitems(self.__hintNeededStates):
             defaultStates = {state:_ComponentState() for state in realStates.keys()}
             self.__hintRealStates[itemID] = defaultStates
 
@@ -86,7 +88,7 @@ class ClientTriggers(object):
     def checkState(self, itemID):
         if itemID not in self.__hintNeededStates:
             return True
-        for state, value in self.__hintNeededStates[itemID].iteritems():
+        for state, value in viewitems(self.__hintNeededStates[itemID]):
             if value != self.__hintRealStates[itemID][state].getActualState():
                 return False
 

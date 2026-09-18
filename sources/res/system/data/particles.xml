@@ -3176,6 +3176,14 @@
 			<shader>\data\shaders\ps.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/eff_tex_hangar_v4.dds</texture>
 		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/flare_01.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/Glow_white.dds</texture>
+		</preload>
 		<fn_effect_bin>particles/tank/customization/It36_Progetto_C45_mod_71_M/it36_movement_sand.eff</fn_effect_bin>
 		<fn_effect_bin>particles/tank/customization/It36_Progetto_C45_mod_71_M/it36_idle_sand.eff</fn_effect_bin>
 		<fn_effect_bin>particles/tank/customization/It36_Progetto_C45_mod_71_M/it36_idle_sand_2_EE.eff</fn_effect_bin>
@@ -3561,11 +3569,18 @@
 		<preloadVisual>particles/3D_Customization/Cus_265_WT_Gun/Cus_265_sparks.visual</preloadVisual>
 		<preloadVisual>particles/3D_Customization/Cus_267_WT_Trap/Cus_267_FX_mesh.visual</preloadVisual>
 		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_267_WT_Trap/cus_267_ElectroCharge.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/customization/G89_Leopard1_KS_3Dst/G89_Leopard1_KS_3Dst_steam.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/customization/G89_Leopard1_KS_3Dst/G89_Leopard1_KS_3Dst_steam.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/3D_Customization/Cus_249_BP21_J_Machinegun/cus_249_shot_12mm.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_249_BP21_J_Machinegun/cus_249_shot_12mm.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/customization/Ch74_Waffentrager_15_3Dst/shot_lightning.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/customization/Ch74_Waffentrager_15_3Dst/shot_lightning.vfx</fn_effect_bin>
 		<preloadVisual>particles/3D_Customization/Cus_250_BP21_J_Searchlight_01/Cus_250_BP21_Lenses.visual</preloadVisual>
+		<preloadVisual>particles/3D_Customization/Cus_284_FCN_Totem/Cus_284_FCN_Totem_eyes.visual</preloadVisual>
+		<preloadVisual>particles/3D_Customization/Cus_284_FCN_Totem/Cus_284_FCN_Totem_smoke.visual</preloadVisual>
+		<preloadVisual>particles/3D_Customization/Cus_284_FCN_Totem/Cus_284_FCN_Totem_idle.visual</preloadVisual>
+		<fn_effect_bin>particles/3D_Customization/Cus_284_FCN_Totem/Cus_284_glow.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_284_FCN_Totem/Cus_284_glow.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/3D_Customization/Cus_254_BP21_R_Machinegun/Cus_254_shot_12mm.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_254_BP21_R_Machinegun/Cus_254_shot_12mm.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/3D_Customization/Cus_244_BP21_GB_Browning/Cus_244_BP21_shot_12mm.eff</fn_effect_bin>
@@ -3662,6 +3677,7 @@
 		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/AP_non_p_shell_explosion_lfr.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/AP_non_p_shell_explosion.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/AP_APCR_non_p_trails.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank_2.0/hits_to_tank/Post_effect_p_smoke_lfr.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/shot/sparks.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/shot/shot_impulses_vf.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/shot/powder_gases.vfx</fn_effect_bin>
@@ -3754,13 +3770,13 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/AP_non_p_shell_explosion_lfr.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/AP_non_p_shell_explosion.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/AP_APCR_non_p_trails.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank_2.0/hits_to_tank/Post_effect_p_smoke_lfr.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/shots/fires_ch41.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/tank/shots/fires_ch41.eff</fn_effect_bin>
-		<preloadVisual>particles/3D_Customization/Cus_284_FCN_Totem/Cus_284_FCN_Totem_eyes.visual</preloadVisual>
-		<preloadVisual>particles/3D_Customization/Cus_284_FCN_Totem/Cus_284_FCN_Totem_smoke.visual</preloadVisual>
-		<preloadVisual>particles/3D_Customization/Cus_284_FCN_Totem/Cus_284_FCN_Totem_idle.visual</preloadVisual>
-		<fn_effect_bin>particles/3D_Customization/Cus_284_FCN_Totem/Cus_284_glow.eff</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_284_FCN_Totem/Cus_284_glow.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/fort_rush/flare_red_03.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/fort_rush/Flare_red_03.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/fort_rush/flare_green_03.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/fort_rush/Flare_green_03.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Battle_Royal/Afterburning/br_nitro_gearup.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Battle_Royal/Afterburning/br_nitro_idle.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Battle_Royal/Afterburning/br_nitro_load.vfx</fn_effect_bin>

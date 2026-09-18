@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from CurrentVehicle import g_currentVehicle
 from frameworks.wulf.view.view import ViewSettings
 from gui.impl import backport

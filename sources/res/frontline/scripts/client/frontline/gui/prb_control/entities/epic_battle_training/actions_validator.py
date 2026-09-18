@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.prb_control.entities.base.actions_validator import ActionsValidatorComposite, BaseActionsValidator
 from gui.prb_control.entities.base.legacy.actions_validator import LegacyVehicleValid
 from gui.prb_control.events_dispatcher import g_eventDispatcher

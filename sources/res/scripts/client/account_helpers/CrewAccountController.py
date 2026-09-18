@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from CurrentVehicle import g_currentVehicle
 from gui import SystemMessages
 from gui.shared.gui_items.processors.tankman import TankmanAutoReturn
@@ -84,7 +85,7 @@ class CrewAccountController(IGameController):
         if isFullSync:
             return
         descriptors = diff.get('inventory', {}).get(GUI_ITEM_TYPE.TANKMAN, {}).get('compDescr', {})
-        for invID in descriptors.iterkeys():
+        for invID in descriptors:
             tankman = self.__itemsCache.items.getTankman(invID)
             if tankman:
                 self.tankmanIdxSkillsUnlockAnimation.setdefault(invID, 0)

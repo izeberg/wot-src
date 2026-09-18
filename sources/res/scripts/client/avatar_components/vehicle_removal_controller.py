@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld
 from helpers import dependency
 from skeletons.gui.battle_session import IBattleSessionProvider

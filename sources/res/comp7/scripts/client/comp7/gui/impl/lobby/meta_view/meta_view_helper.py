@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, typing
 from comp7.gui.impl.gen.view_models.views.lobby.enums import Division, Rank
 from comp7.gui.impl.gen.view_models.views.lobby.progression_division import ProgressionDivision, State

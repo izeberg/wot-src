@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from messenger import g_settings
 from messenger.m_constants import MESSENGER_SCOPE, PROTO_TYPE
 from messenger.proto.bw_chat2 import chat_handlers

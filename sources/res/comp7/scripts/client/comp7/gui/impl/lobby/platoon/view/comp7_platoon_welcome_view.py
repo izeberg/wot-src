@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging
 from comp7.gui.comp7_constants import SELECTOR_BATTLE_TYPES
 from comp7.gui.prb_control.entities import comp7_prb_helpers

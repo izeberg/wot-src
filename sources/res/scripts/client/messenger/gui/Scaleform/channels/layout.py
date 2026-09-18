@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BattleReplay
 from debug_utils import LOG_DEBUG, LOG_ERROR
 from gui import SystemMessages

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from logging import getLogger
 import typing, BigWorld, SoundGroups
 from constants import DEATH_REASON_ALIVE

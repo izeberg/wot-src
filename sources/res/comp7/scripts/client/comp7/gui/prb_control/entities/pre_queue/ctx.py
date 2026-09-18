@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.prb_control.entities.base.pre_queue.ctx import QueueCtx
 from gui.shared.utils.decorators import ReprInjector
 

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import CGF, Vehicular
 from cgf_script.registration import ComponentProperty, registerComponent
 from constants import IS_CGF_DUMP

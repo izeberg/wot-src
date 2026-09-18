@@ -1,8 +1,10 @@
 from __future__ import absolute_import
+import typing
 from constants import NULL_ENTITY_ID
-from visual_script.block import Block, Meta
-from visual_script.misc import errorVScript
+from visual_script.block import Block, Meta, InitParam
+from visual_script.misc import errorVScript, ASPECT, EDITOR_TYPE
 from visual_script.slot_types import SLOT_TYPE
+from vehicle_filters import getVehicleFilters
 
 class VehicleMeta(Meta):
 
@@ -74,3 +76,27 @@ class GetVehicleOutfitLevel(Block, VehicleMeta):
         vehicle = self._vehicle.getValue()
         level = vehicle.publicInfo['outfitLevel']
         self._level.setValue(level)
+
+
+class GetVehicleFilterName(Block, VehicleMeta):
+
+    def __init__(self, *args, **kwargs):
+        super(GetVehicleFilterName, self).__init__(*args, **kwargs)
+        self._filterName, = self._getInitParams()
+        nameSlot = self._makeDataOutputSlot('name', SLOT_TYPE.STR, None)
+        nameSlot.setValue(self._filterName)
+        return
+
+    @classmethod
+    def initParams(cls):
+        filterNames = getVehicleFilters().getFilterNames()
+        default = filterNames[0] if filterNames else ''
+        return [InitParam('Filter name', SLOT_TYPE.STR, default, EDITOR_TYPE.ENUM_SELECTOR, filterNames)]
+
+    @classmethod
+    def blockAspects(cls):
+        return [
+         ASPECT.CLIENT, ASPECT.SERVER]
+
+    def captionText(self):
+        return ('Vehicle filter: {}').format(self._filterName)

@@ -4,4 +4,8 @@
 	<extent>96.000000</extent>
 	<tank>true</tank>
 	<nodelessVisual>vehicles/german/G06_PzII/crash/lod2/Gun_03</nodelessVisual>
+	<visibilityBox>
+		<min>-0.481281 -0.121500 -0.073298</min>
+		<max>0.260826 0.129376 1.225689</max>
+	</visibilityBox>
 </root>

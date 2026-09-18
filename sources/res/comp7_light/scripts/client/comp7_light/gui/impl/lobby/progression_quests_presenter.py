@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from comp7.gui.impl.lobby.comp7_helpers.comp7_bonus_packer import packQuestBonuses
 from comp7_light.gui.impl.gen.view_models.views.lobby.progression_quests_model import ProgressionQuestsModel
 from comp7_light.gui.impl.lobby.comp7_light_helpers.account_settings import getLastSeenQuestData, setLastSeenQuestData

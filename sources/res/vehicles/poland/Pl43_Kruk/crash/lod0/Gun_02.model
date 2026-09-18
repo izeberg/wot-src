@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/poland/Pl43_Kruk/crash/lod0/Gun_02</nodefullVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.421286 -0.300000 -1.255975</min>
+		<max>0.254000 0.683684 6.051002</max>
+	</visibilityBox>
+	<parent>vehicles/poland/Pl43_Kruk/crash/lod1/Gun_02</parent>
+	<extent>32.000000</extent>
+</root>

@@ -45,12 +45,33 @@ package net.wg.gui.battle.eventBattle.views.radialMenu.components
          this.keyTF = null;
       }
       
+      public function isDisposed() : Boolean
+      {
+         return this._disposed;
+      }
+      
+      public function setAlign(param1:String) : void
+      {
+         this._align = param1;
+         setTFAlign(this.titleEnemyTF,param1);
+         setTFAlign(this.titleAllyTF,param1);
+         setTFAlign(this.titleNormalTF,param1);
+         setTFAlign(this.keyTF,param1);
+      }
+      
+      public function setKeyText(param1:String) : void
+      {
+         this.keyTF.text = param1;
+         setTFAlign(this.keyTF,this._align);
+      }
+      
       public function setTitleText(param1:String, param2:String) : void
       {
          var _loc3_:Boolean = false;
+         var _loc4_:Boolean = false;
          var _loc5_:Boolean = false;
          _loc3_ = param2 == EventRadialMenu.DEFAULT_STATE;
-         var _loc4_:Boolean = param2 == EventRadialMenu.ALLY_STATE;
+         _loc4_ = param2 == EventRadialMenu.ALLY_STATE;
          _loc5_ = param2 == EventRadialMenu.ENEMY_STATE;
          this.titleNormalTF.visible = _loc3_;
          this.titleAllyTF.visible = _loc4_;
@@ -70,26 +91,6 @@ package net.wg.gui.battle.eventBattle.views.radialMenu.components
             this.titleEnemyTF.text = param1;
             setTFAlign(this.titleEnemyTF,this._align);
          }
-      }
-      
-      public function setKeyText(param1:String) : void
-      {
-         this.keyTF.text = param1;
-         setTFAlign(this.keyTF,this._align);
-      }
-      
-      public function setAlign(param1:String) : void
-      {
-         this._align = param1;
-         setTFAlign(this.titleEnemyTF,param1);
-         setTFAlign(this.titleAllyTF,param1);
-         setTFAlign(this.titleNormalTF,param1);
-         setTFAlign(this.keyTF,param1);
-      }
-      
-      public function isDisposed() : Boolean
-      {
-         return this._disposed;
       }
    }
 }

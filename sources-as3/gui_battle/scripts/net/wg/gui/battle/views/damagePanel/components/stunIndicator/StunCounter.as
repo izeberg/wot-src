@@ -69,6 +69,9 @@ package net.wg.gui.battle.views.damagePanel.components.stunIndicator
       {
          stop();
          this.clearTimeout();
+         this._repeatCount = Values.DEFAULT_INT;
+         this._currentRepeatCount = Values.DEFAULT_INT;
+         this._lastDisplayedTime = -1;
          if(this.timerMc)
          {
             this.timerMc.labelTf.text = Values.EMPTY_STR;

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/sweden/S42_Strv_T_fm_53/normal/lod1/Hull</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/sweden/S42_Strv_T_fm_53/normal/lod2/Hull</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.688110 -0.554103 -3.218883</min>
+		<max>1.570450 0.615696 3.316364</max>
+	</visibilityBox>
+</root>

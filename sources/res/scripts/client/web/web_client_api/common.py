@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from past.builtins import long
 import itertools
 from collections import namedtuple
 from enum import Enum, unique

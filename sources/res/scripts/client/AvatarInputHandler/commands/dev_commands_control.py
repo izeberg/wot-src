@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld, Keys
 from constants import HAS_DEV_RESOURCES, IS_DEVELOPMENT
 from AvatarInputHandler.commands.input_handler_command import InputHandlerCommand

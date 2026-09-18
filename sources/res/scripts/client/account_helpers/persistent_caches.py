@@ -1,6 +1,10 @@
-import weakref, cPickle, os, base64, BigWorld, constants
-from soft_exception import SoftException
+from __future__ import absolute_import
+import weakref, os
+from future.moves import pickle
+import BigWorld, constants
 from external_strings_utils import unicode_from_utf8
+from py2to3.compat import base64compat
+from soft_exception import SoftException
 
 class SimpleCache(object):
 
@@ -49,8 +53,8 @@ class SimpleCache(object):
                 return mcacheData
             try:
                 with open(fileName, 'rb') as (f):
-                    descr = cPickle.load(f)
-                    data = cPickle.load(f)
+                    descr = pickle.load(f)
+                    data = pickle.load(f)
                     self.__memcache[fileName] = (descr, data)
                     return (descr, data)
             except IOError:
@@ -68,8 +72,8 @@ class SimpleCache(object):
                 fileName = self.getFileName()
                 self.__memcache[fileName] = (descr, data)
                 with open(fileName, 'wb') as (f):
-                    cPickle.dump(descr, f, -1)
-                    cPickle.dump(data, f, -1)
+                    pickle.dump(descr, f, -1)
+                    pickle.dump(data, f, -1)
                     return True
             except IOError:
                 pass
@@ -83,11 +87,8 @@ def cacheFileName(account, cacheType, cacheName):
     cacheDir = p.join(p.dirname(prefsFilePath), cacheType)
     if not os.path.isdir(cacheDir):
         os.makedirs(cacheDir)
-    cache = p.join(cacheDir, base64.b32encode('%s_%s_%s_%s' % (
-     constants.AUTH_REALM,
-     account.name,
-     account.__class__.__name__,
-     cacheName)) + '.dat')
+    uniquePath = '%s_%s_%s_%s' % (constants.AUTH_REALM, account.name, account.__class__.__name__, cacheName)
+    cache = p.join(cacheDir, base64compat.b32encode(uniquePath) + '.dat')
     return cache
 
 

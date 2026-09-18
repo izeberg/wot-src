@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.daapi.view.lobby.epicBattle.after_battle_reward_view_helpers import getProgressionIconVODict
 from gui.Scaleform.daapi.view.lobby.epicBattle.epic_helpers import getTimeToEndStr
 from .common_blocks import packEpicBattleInfoBlock, packEpicBattleSeasonBlock

@@ -1,0 +1,283 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-19 10:00+0100\n"
+"PO-Revision-Date: 2026-03-19 10:00+0100\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+
+msgid "bannerTooltip/allStagesAreCompleted"
+msgstr "Все блоки данных заполнены!"
+
+msgid "bannerTooltip/dataBlock"
+msgstr "Блок данных {{level}}"
+
+msgid "bannerTooltip/description"
+msgstr "Захватите антенны. Удерживайте сеть. Обеспечьте передачу."
+
+msgid "bannerTooltip/expiryDate/timerText"
+msgstr "Режим будет доступен"
+
+msgid "bannerTooltip/header"
+msgstr "Есть сигнал"
+
+msgid "bannerTooltip/mode"
+msgstr "РЕЖИМ"
+
+msgid "bannerTooltip/modeHint"
+msgstr "— переход в другой режим"
+
+msgid "bannerTooltip/performanceRisk/text/highRisk"
+msgstr ""
+"Производительности вашего компьютера недостаточно для данного режима. Будут "
+"наблюдаться проблемы с графикой и перемещением техники, возможно также "
+"аварийное закрытие клиента игры."
+
+msgid "bannerTooltip/performanceRisk/text/lowRisk"
+msgstr ""
+"В случае недостаточной производительности попробуйте понизить настройки "
+"графики."
+
+msgid "bannerTooltip/performanceRisk/text/mediumRisk"
+msgstr ""
+"Режим требователен к компьютеру. Карта может долго загружаться, возможны "
+"проблемы с графикой и перемещением техники в бою. В случае недостаточной "
+"производительности попробуйте понизить настройки графики."
+
+msgid "bannerTooltip/performanceRisk/title/highRisk"
+msgstr "Низкая производительность"
+
+msgid "bannerTooltip/performanceRisk/title/lowRisk"
+msgstr "Режим требователен к компьютеру"
+
+msgid "bannerTooltip/performanceRisk/title/mediumRisk"
+msgstr "Снижение производительности"
+
+msgid "battleEfficiency/baseHeal"
+msgstr "Восстановлено очков прочности"
+
+msgid "battleEfficiency/personalPoints"
+msgstr "Очки службы"
+
+msgid "battleLoading/description"
+msgstr "Захватите антенны. Удерживайте сеть. Обеспечьте передачу."
+
+msgid "battleLoading/header"
+msgstr "Есть сигнал"
+
+msgid "battleLoading/tips/tip01/description"
+msgstr ""
+"Захват антенны восстанавливает небольшое количество очков прочности вашей "
+"машины. Используйте это, чтобы удержать позицию и подготовиться к "
+"контратаке."
+
+msgid "battleLoading/tips/tip01/title"
+msgstr "Защита и восстановление"
+
+msgid "battleLoading/tips/tip02/description"
+msgstr ""
+"Антенны невозможно захватить, пока рядом находится техника противника. "
+"Уничтожьте всех соперников поблизости, чтобы продолжить захват."
+
+msgid "battleLoading/tips/tip02/title"
+msgstr "Оспаривание захвата"
+
+msgid "battleLoading/tips/tip03/description"
+msgstr ""
+"После возрождения ваша машина не получает урон в течение 10 секунд. За это "
+"время вы можете вернуться в бой или занять укрытие."
+
+msgid "battleLoading/tips/tip03/title"
+msgstr "Неуязвимость после возрождения"
+
+msgid "battleQueue/title"
+msgstr "Есть сигнал"
+
+msgid "capturingIndicator/captured"
+msgstr "Антенна захвачена"
+
+msgid "capturingIndicator/capturing"
+msgstr "Захват антенны"
+
+msgid "capturingIndicator/contesting"
+msgstr "Антенна оспаривается"
+
+msgid "capturingIndicator/neutralizing"
+msgstr "Нейтрализация антенны"
+
+msgid "endGame/reason/210"
+msgstr "Обе команды достигли лимита сигнальных очков"
+
+msgid "endGame/reason/3"
+msgstr "Время вышло"
+
+msgid "endGame/reason/6/lose"
+msgstr "Противник достиг лимита сигнальных очков"
+
+msgid "endGame/reason/6/win"
+msgstr "Ваша команда достигла лимита сигнальных очков"
+
+msgid "endGame/reason/7"
+msgstr "Время вышло"
+
+msgid "notifications/progression/header"
+msgstr "Поздравляем!"
+
+msgid "notifications/progression/openBtnLabel"
+msgstr "Подробнее"
+
+msgid "notifications/progression/stageAchieved"
+msgstr ""
+"Награды за прохождение этапа прогрессии&nbsp;%(stageIdx)s: %(rewards)s"
+
+msgid "progression/completedDescription"
+msgstr "Все блоки данных заполнены."
+
+msgid "progression/completedTitle"
+msgstr "Прогрессия пройдена!"
+
+msgid "progression/dailyMissions/timerLabel"
+msgstr "Осталось времени:"
+
+msgid "progression/dailyMissions/title"
+msgstr "Полевые приказы"
+
+msgid "progression/description"
+msgstr ""
+"Выполняйте ежедневные задачи в боях режима «Есть сигнал», чтобы продвигаться"
+" по прогрессии."
+
+msgid "progression/info_button/body"
+msgstr "Нажмите, чтобы узнать подробности"
+
+msgid "progression/info_button/header"
+msgstr "О режиме «Есть сигнал»"
+
+msgid "progression/widget/stageLabel"
+msgstr "Блок данных %(stage)s"
+
+msgid "progression/widget/stageProgress"
+msgstr "%(current)s / %(total)s"
+
+msgid "progression/widget/tooltip/allStagesCompleted"
+msgstr "Вы заполнили все блоки данных!"
+
+msgid "progression/widget/tooltip/completedLabel"
+msgstr "Выполнено"
+
+msgid "progression/widget/tooltip/rewardsHeader"
+msgstr "Награды блока данных"
+
+msgid "progression/widget/tooltip/subtitle"
+msgstr "Текущий блок данных"
+
+msgid "progression/widget/tooltip/timerLabel"
+msgstr "Ежедневные задачи обновятся через:"
+
+msgid "progression/widget/tooltip/title"
+msgstr "Есть сигнал"
+
+msgid "progression/widget/tooltip/titleSubtitle"
+msgstr "Текущий прогресс"
+
+msgid "progression/widget/tooltip/unavailable"
+msgstr "Прогрессия временно недоступна."
+
+msgid "progression/widget/unavailable"
+msgstr "Прогрессия недоступна"
+
+msgid "progressionView/stateHeader"
+msgstr "Прогрессия события «Есть сигнал»"
+
+msgid "quitBattle/leaver/cancel"
+msgstr "Отменить"
+
+msgid "quitBattle/leaver/descriptionAlive"
+msgstr ""
+"Вы нужны своей команде! Если выйдете из боя сейчас, то подставите свою "
+"команду, не получите никаких бонусов и не продвинетесь в выполнении задачи."
+
+msgid "quitBattle/leaver/submit"
+msgstr "Выйти"
+
+msgid "quitBattle/leaver/title"
+msgstr "Вы покидаете бой"
+
+msgid "respawnTimer/description"
+msgstr ""
+"Другая позиция для возрождения может дать вам стратегическое преимущество."
+
+msgid "respawnTimer/title"
+msgstr "Возрождение через:"
+
+msgid "rewardScreen/button"
+msgstr "Так точно!"
+
+msgid "rewardScreen/title"
+msgstr "Награды за блок данных получены"
+
+msgid "timersPanel/invulnerable"
+msgstr "Неуязвимость"
+
+msgid "tooltips/eventPoints/body"
+msgstr ""
+"Добывайте пакеты данных, чтобы заполнять блоки данных и получать ценные "
+"ресурсы, включая значительную награду. Пакеты данных можно получить за "
+"нанесение урона, уничтожение техники противника, захват точек и выполнение "
+"ежедневных задач."
+
+msgid "tooltips/eventPoints/header"
+msgstr "Пакет данных"
+
+msgid "vehicleSelector/allVehicles"
+msgstr "Вся техника"
+
+msgid "vehicleSelector/noVehiclesAction"
+msgstr "Сбросить фильтры"
+
+msgid "vehicleSelector/noVehiclesDescription"
+msgstr "Сбросьте фильтры, чтобы увидеть доступную технику"
+
+msgid "vehicleSelector/noVehiclesInPlaylistTooltipBody"
+msgstr "В этом плейлисте нет подходящей техники для этого режима."
+
+msgid "vehicleSelector/noVehiclesInPlaylistTooltipHeading"
+msgstr "Нет подходящей техники"
+
+msgid "vehicleSelector/noVehiclesTitle"
+msgstr "Не найдено подходящей техники"
+
+msgid "welcomeScreen/button"
+msgstr "Продолжить"
+
+msgid "welcomeScreen/description1"
+msgstr ""
+"Вы входите в состав бронетанковой оперативной группы, которой приказано "
+"захватить и удерживать секретную сеть на оспариваемой территории. Обеспечьте"
+" контроль над сетью любой ценой."
+
+msgid "welcomeScreen/description2"
+msgstr ""
+"Кто-то приложил немало усилий, чтобы скрыть эти разведданные. Выполняйте "
+"задачи, чтобы восстановить зашифрованные фрагменты."
+
+msgid "welcomeScreen/description3"
+msgstr ""
+"Заполняйте блоки данных, чтобы получать ценные награды за задачи события."
+
+msgid "welcomeScreen/header1"
+msgstr "Захватите антенны"
+
+msgid "welcomeScreen/header2"
+msgstr "Расшифруйте передачу"
+
+msgid "welcomeScreen/header3"
+msgstr "Прогрессия и награды"
+
+msgid "welcomeScreen/title"
+msgstr "Есть сигнал"

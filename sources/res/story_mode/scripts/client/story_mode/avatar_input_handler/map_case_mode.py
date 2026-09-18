@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld
 from typing import Optional, Any
 from story_mode.cgf_components.bunkers import BunkersSystem
@@ -61,9 +62,9 @@ class NavMeshCheckingSelector(MapCaseMode._ArenaBoundsAreaStrikeSelector):
         self._enableWaterCollision(True)
         return
 
-    def processHover(self, position, reset=False):
+    def processHover(self, position, force=False):
         self._checkPosition = position
-        super(NavMeshCheckingSelector, self).processHover(position, reset)
+        super(NavMeshCheckingSelector, self).processHover(position, force)
         self._updateOutFromBoundsPosition(position)
 
     def processSelection(self, position, reset=False):

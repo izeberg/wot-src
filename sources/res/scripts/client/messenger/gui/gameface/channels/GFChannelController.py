@@ -1,4 +1,6 @@
+from __future__ import absolute_import
 import copy, logging, typing
+from past.builtins import basestring
 from gui import SystemMessages
 from gui.shared import g_eventBus, EVENT_BUS_SCOPE
 from gui.shared.events import MessengerEvent
@@ -22,7 +24,7 @@ class GFChannelController(IChannelController):
         self.__mBuilder = LobbyMessageBuilder()
         self._isNotifyInit = False
         self.__channel = channel
-        self.__subscribedViews = list()
+        self.__subscribedViews = []
         self._addListeners()
         self.fireInitEvent()
         return
@@ -40,7 +42,7 @@ class GFChannelController(IChannelController):
         self.removeView()
 
     def removeView(self):
-        self.__subscribedViews = list()
+        self.__subscribedViews = []
 
     def fireInitEvent(self):
         if not self._isNotifyInit:
@@ -92,7 +94,7 @@ class GFChannelController(IChannelController):
 
     def addMessage(self, message, doFormatting=True, isHistoryMessage=False):
         if self.__channel:
-            if isinstance(message, (str, unicode)):
+            if isinstance(message, basestring):
                 message = UnitMessageVO(0, -1, message, '')
             if doFormatting:
                 message = copy.copy(message)

@@ -1,14 +1,18 @@
-from config_schemas.prefab_effects_availability import prefabEffectsAvailabilitySchema
-from enum import Enum
-from typing import TYPE_CHECKING
-import Sound, base64, cPickle, random, sys, fractions, itertools, weakref
+from __future__ import absolute_import, division
+import random, sys, itertools, weakref, logging
 from collections import namedtuple, OrderedDict
+from enum import Enum
+from future.moves import pickle
+from future.utils import lmap, viewitems
+from past.builtins import long, xrange
 from operator import itemgetter
-import logging, AvatarInputHandler.control_modes
+from typing import TYPE_CHECKING
+import BigWorld, Sound, AvatarInputHandler.control_modes
 from aih_constants import CTRL_MODE_NAME
 import GUI
 from AvatarInputHandler.cameras import FovExtended
-import BigWorld, ResMgr, Keys, BattleReplay, VOIP, Settings, SoundGroups, ArenaType, WWISE
+import ResMgr, Keys, BattleReplay, VOIP, Settings, SoundGroups, ArenaType, WWISE
+from config_schemas.prefab_effects_availability import prefabEffectsAvailabilitySchema
 from constants import CONTENT_TYPE, IS_CHINA
 from gui.Scaleform.genConsts.ACOUSTICS import ACOUSTICS
 from gui.app_loader import app_getter
@@ -28,7 +32,8 @@ from debug_utils import LOG_NOTE, LOG_DEBUG, LOG_ERROR, LOG_CURRENT_EXCEPTION, L
 from gui.Scaleform.managers.windows_stored_data import g_windowsStoredData
 from messenger import g_settings as messenger_settings
 from account_helpers.AccountSettings import AccountSettings, SPEAKERS_DEVICE, COLOR_SETTINGS_TAB_IDX, APPLIED_COLOR_SETTINGS
-from account_helpers.settings_core.settings_constants import SOUND, SPGAimEntranceModeOptions, GRAPHICS, COLOR_GRADING_TECHNIQUE_DEFAULT, POST_PROCESSING_QUALITY, SoundPhysicsQuality
+from account_helpers.settings_core.settings_constants import SOUND, SPGAimEntranceModeOptions, GRAPHICS, COLOR_GRADING_TECHNIQUE_DEFAULT, POST_PROCESSING_QUALITY, SoundPhysicsQuality, CONTROLS
+from math_common import decimal_round, round_py2_style
 from messenger.storage import UsersStorage, MessengerStorageDescriptor
 from shared_utils import CONST_CONTAINER, forEach
 from gui import GUI_SETTINGS
@@ -42,6 +47,8 @@ from gui.shared.formatters import icons, text_styles
 from gui.shared.utils.functions import makeTooltip, clamp
 from messenger.m_constants import PROTO_TYPE
 from messenger.proto import proto_getter
+from py2to3.compat import base64compat
+from py2to3.moves import math
 from skeletons.account_helpers.settings_core import ISettingsCore
 from skeletons.connection_mgr import IConnectionManager
 from skeletons.gui.lobby_context import ILobbyContext
@@ -211,9 +218,9 @@ class SettingsContainer(ISetting):
         else:
             return settings
 
-    def getApplyMethod(self, diff=None):
-        settings = self.__filter(self.indices.keys(), diff.keys())
-        methods = [ m for m in self.__forEach(settings, lambda n, p: p.getApplyMethod(diff[n])) ]
+    def getApplyMethod(self, value=None):
+        settings = self.__filter(self.indices.keys(), value.keys())
+        methods = list(self.__forEach(settings, lambda n, p: p.getApplyMethod(value[n])))
         return highestPriorityMethod(methods)
 
     def getSetting(self, name):
@@ -299,7 +306,7 @@ class SoundSetting(SettingAbstract):
         self.group = soundGroup
 
     def __toGuiVolume(self, volume):
-        return round(volume * self.VOLUME_MULT)
+        return round_py2_style(volume * self.VOLUME_MULT)
 
     def __toSysVolume(self, volume):
         return float(volume) / self.VOLUME_MULT
@@ -333,7 +340,7 @@ class SoundEnableSetting(SettingAbstract):
 
 class VOIPMasterSoundSetting(SoundSetting):
 
-    def __init__(self, isPreview=False):
+    def __init__(self, isPreview=True):
         super(VOIPMasterSoundSetting, self).__init__('masterVivox', isPreview)
 
     def _set(self, value):
@@ -673,6 +680,8 @@ class MinimapSizeSetting(AccountDumpSetting):
             if currentWindowHeight >= monitorHeightDeps:
                 return minimapSizeStorage[monitorHeightDeps]
 
+        return
+
 
 class VOIPSetting(AccountSetting):
 
@@ -686,14 +695,14 @@ class VOIPSetting(AccountSetting):
     def _get(self):
         return VOIP.getVOIPManager().isEnabled()
 
-    def _set(self, isEnable):
-        if isEnable is None:
+    def _set(self, value):
+        if value is None:
             return
         else:
             prevVoIP = self._get()
-            if prevVoIP != isEnable:
-                VOIP.getVOIPManager().enable(isEnable)
-                LOG_NOTE('Change state of voip:', isEnable)
+            if prevVoIP != value:
+                VOIP.getVOIPManager().enable(value)
+                LOG_NOTE('Change state of voip:', value)
             return
 
 
@@ -729,7 +738,7 @@ class VOIPChannelSetting(UserPrefsInt64Setting):
 class VOIPCaptureDevicesSetting(UserPrefsStringSetting):
 
     def __init__(self, isPreview=False):
-        super(VOIPCaptureDevicesSetting, self).__init__(Settings.KEY_VOIP_DEVICE, isPreview)
+        super(VOIPCaptureDevicesSetting, self).__init__(Settings.KEY_VOIP_CAPTURE_DEVICE, isPreview)
 
     def _get(self):
         currentDevice = super(VOIPCaptureDevicesSetting, self)._get()
@@ -752,11 +761,15 @@ class VOIPCaptureDevicesSetting(UserPrefsStringSetting):
             super(VOIPCaptureDevicesSetting, self)._set(device)
 
     def _save(self, value):
-        super(VOIPCaptureDevicesSetting, self)._save(self.__getDeviceByIdx(value))
+        device = self.__getDeviceByIdx(value)
+        if device:
+            super(VOIPCaptureDevicesSetting, self)._save(device)
 
     @classmethod
     def __getDeviceByIdx(cls, idx):
         devices = VOIP.getVOIPManager().getCaptureDevices()
+        if not devices:
+            return ''
         if len(devices) > idx:
             return devices[int(idx)]
         return devices[0]
@@ -781,7 +794,7 @@ class VOIPSupportSetting(ReadOnlySetting):
         return self.bwProto.voipController.isReady()
 
     def __isSupported(self):
-        return VOIP.getVOIPManager().getVOIPDomain() != '' and self.__isVoiceChatReady()
+        return VOIP.getVOIPManager().isVoiceSupported() and self.__isVoiceChatReady()
 
 
 class MessengerSetting(StorageDumpSetting):
@@ -849,12 +862,13 @@ class GameplaySetting(StorageAccountSetting):
     def _set(self, value):
         if not self.__callable():
             LOG_WARNING('GameplaySetting is disabled', self.gameplayName)
-            return
-        settingValue = super(GameplaySetting, self)._get()
-        settingValue ^= self.bit
-        if value:
-            settingValue |= self.bit
-        return super(GameplaySetting, self)._set(settingValue)
+            return None
+        else:
+            settingValue = super(GameplaySetting, self)._get()
+            settingValue ^= self.bit
+            if value:
+                settingValue |= self.bit
+            return super(GameplaySetting, self)._set(settingValue)
 
     def getDumpValue(self):
         return super(GameplaySetting, self)._get()
@@ -891,7 +905,7 @@ class VerticalSyncSetting(SettingAbstract):
 class DynamicRendererSetting(SettingAbstract):
 
     def _get(self):
-        return round(BigWorld.getDRRAutoscalerBaseScale(), 2) * 100
+        return decimal_round(BigWorld.getDRRAutoscalerBaseScale(), 2) * 100
 
     def _set(self, value):
         value = float(value) / 100
@@ -909,7 +923,7 @@ class ColorFilterIntensitySetting(_AdjustValueSetting):
     DEFAULT_FILTER_INTENSITY = 0.25
 
     def _get(self):
-        value = round(BigWorld.getColorGradingStrength(), 2) * 100
+        value = decimal_round(BigWorld.getColorGradingStrength(), 2) * 100
         return self._adjustValue(value)
 
     def _set(self, value):
@@ -928,7 +942,7 @@ class BrightnessCorrectionSetting(_AdjustValueSetting):
     DEFAULT_BRIGHTNESS = 0.5
 
     def _get(self):
-        value = round(BigWorld.getColorBrightness(), 2) * 100
+        value = decimal_round(BigWorld.getColorBrightness(), 2) * 100
         return self._adjustValue(value)
 
     def _set(self, value):
@@ -943,7 +957,7 @@ class ContrastCorrectionSetting(_AdjustValueSetting):
     DEFAULT_CONTRAST = 0.5
 
     def _get(self):
-        value = round(BigWorld.getColorContrast(), 2) * 100
+        value = decimal_round(BigWorld.getColorContrast(), 2) * 100
         return self._adjustValue(value)
 
     def _set(self, value):
@@ -958,7 +972,7 @@ class SaturationCorrectionSetting(_AdjustValueSetting):
     DEFAULT_SATURATION = 1
 
     def _get(self):
-        value = round(BigWorld.getColorSaturation(), 2) * 100
+        value = decimal_round(BigWorld.getColorSaturation(), 2) * 100
         return self._adjustValue(value)
 
     def _set(self, value):
@@ -1254,9 +1268,9 @@ class ResolutionSetting(PreferencesSetting):
         for resolutions in self._getSuitableResolutions():
             formatedRes = []
             for width, height in resolutions:
-                gcd = fractions.gcd(width, height)
-                widthOpt = width / gcd
-                heightOpt = height / gcd
+                gcd = math.gcd(width, height)
+                widthOpt = width // gcd
+                heightOpt = height // gcd
                 if widthOpt > 64:
                     p = self._findBestAspect(float(widthOpt) / heightOpt, 64)
                     widthOpt = p[0]
@@ -1509,7 +1523,7 @@ class AimSetting(StorageAccountSetting):
 
     def pack(self):
         result = self._get()
-        for vname, (name, optsLen) in self.VIRTUAL_OPTIONS.iteritems():
+        for vname, (name, optsLen) in viewitems(self.VIRTUAL_OPTIONS):
             if vname in result:
                 types = [ {'loc': makeString('#settings:aim/%s/type%d' % (name, i)), 'label': '#settings:aim/%s/type%d' % (name, i), 'index': i} for i in xrange(int(optsLen))
                         ]
@@ -1716,7 +1730,7 @@ class MinimapHPSettings(StorageDumpSetting):
 
     def _getOptions(self):
         settingsKey = '#settings:game/%s/%s'
-        return [ settingsKey % (self.settingName, mType.lower()) for mType in self.Options.__members__.keys() ]
+        return [ settingsKey % (self.settingName, mType.lower()) for mType in self.Options.__members__ ]
 
     def getDefaultValue(self):
         return self.Options.ALT.value
@@ -1940,9 +1954,35 @@ class MouseSetting(ControlSetting):
 
 
 class MouseSensitivitySetting(MouseSetting):
+    __ACCOUNT_KEYS = {CTRL_MODE_NAME.ARCADE: CONTROLS.MOUSE_ARCADE_SENS, 
+       CTRL_MODE_NAME.SNIPER: CONTROLS.MOUSE_SNIPER_SENS, 
+       CTRL_MODE_NAME.DUAL_GUN: CONTROLS.MOUSE_SNIPER_SENS, 
+       CTRL_MODE_NAME.TWIN_GUN: CONTROLS.MOUSE_SNIPER_SENS, 
+       CTRL_MODE_NAME.STRATEGIC: CONTROLS.MOUSE_STRATEGIC_SENS, 
+       CTRL_MODE_NAME.ARTY: CONTROLS.MOUSE_ASSIST_AIM_SENS, 
+       CTRL_MODE_NAME.DEATH_FREE_CAM: CONTROLS.MOUSE_FREECAM_SENS}
 
     def __init__(self, mode, masterSwitch=''):
-        super(MouseSensitivitySetting, self).__init__(mode, 'sensitivity', 1.0, masterSwitch=masterSwitch)
+        self.__accountKey = self.__ACCOUNT_KEYS[mode]
+        default = AccountSettings.getSettingsDefault(self.__accountKey)
+        super(MouseSensitivitySetting, self).__init__(mode, 'sensitivity', default, masterSwitch=masterSwitch)
+
+    def _get(self):
+        if self._isDisabledByMasterSwitch():
+            return None
+        else:
+            return AccountSettings.getSettings(self.__accountKey)
+
+    def _set(self, value):
+        if self._isDisabledByMasterSwitch():
+            LOG_WARNING('Mouse setting is disabled', self.mode, self.setting)
+            return
+        else:
+            AccountSettings.setSettings(self.__accountKey, value)
+            camera = self.getCamera()
+            if camera is not None:
+                camera.setUserConfigValue(self.setting, value)
+            return
 
 
 class DynamicFOVMultiplierSetting(MouseSetting):
@@ -2010,16 +2050,16 @@ class DynamicFOVSetting(UserPrefsStringSetting):
 
     def _get(self):
         try:
-            return cPickle.loads(base64.b64decode(super(DynamicFOVSetting, self)._get()))
+            return pickle.loads(base64compat.b64decode(super(DynamicFOVSetting, self)._get()))
         except Exception:
             LOG_ERROR('Could not load dynamic fov setting')
             return self.DEFAULT
 
     def _save(self, value):
-        super(DynamicFOVSetting, self)._save(base64.b64encode(cPickle.dumps(value)))
+        super(DynamicFOVSetting, self)._save(base64compat.b64encode(pickle.dumps(value)))
 
     def getDefaultValue(self):
-        return base64.b64encode(cPickle.dumps(self.DEFAULT))
+        return base64compat.b64encode(pickle.dumps(self.DEFAULT))
 
 
 class DynamicFOVEnabledSetting(UserPrefsBoolSetting):
@@ -2543,12 +2583,12 @@ class SoundQualitySetting(AccountSetting):
     def isAvailable(cls):
         return False
 
-    def _set(self, isEnabled):
-        self.setSystemValue(isEnabled)
-        super(SoundQualitySetting, self)._set(isEnabled)
+    def _set(self, value):
+        self.setSystemValue(value)
+        super(SoundQualitySetting, self)._set(value)
 
-    def setSystemValue(self, isEnabled):
-        WWISE.WW_setLowQuality(isEnabled)
+    def setSystemValue(self, value):
+        WWISE.WW_setLowQuality(value)
 
 
 class PhysicsQualitySoundSettings(UserPrefsStringSetting):
@@ -2557,10 +2597,10 @@ class PhysicsQualitySoundSettings(UserPrefsStringSetting):
     def __init__(self):
         super(PhysicsQualitySoundSettings, self).__init__(SOUND.PHYSICS_QUALITY)
 
-    def _set(self, presetID):
-        if self._get() != presetID:
-            Sound.setSpatialAudioPreset(self._SETTINGS[presetID])
-        super(PhysicsQualitySoundSettings, self)._set(presetID)
+    def _set(self, value):
+        if self._get() != value:
+            Sound.setSpatialAudioPreset(self._SETTINGS[value])
+        super(PhysicsQualitySoundSettings, self)._set(value)
 
     def _getString(self):
         presetName = self._readValue(Settings.g_instance.userPrefs['soundPrefs'])
@@ -2574,14 +2614,15 @@ class PhysicsQualitySoundSettings(UserPrefsStringSetting):
     def _get(self):
         return self._SETTINGS.index(self._getString())
 
-    def _save(self, presetID):
-        return self._writeValue(Settings.g_instance.userPrefs['soundPrefs'], self._SETTINGS[presetID])
+    def _save(self, value):
+        return self._writeValue(Settings.g_instance.userPrefs['soundPrefs'], self._SETTINGS[value])
 
     def isPresetSupportedByIdx(self, optionIdx):
         if optionIdx < len(self._SETTINGS):
             optionID = self._SETTINGS[optionIdx]
             recommendedQuality = Sound.getRecommendedPreset()
             return self._SETTINGS.index(optionID) >= self._SETTINGS.index(recommendedQuality)
+        return False
 
     def _getOptions(self):
         options = []
@@ -2599,12 +2640,12 @@ class BassBoostSetting(AccountSetting):
     def __init__(self):
         super(BassBoostSetting, self).__init__(SOUND.BASS_BOOST)
 
-    def _set(self, isEnabled):
-        self.setSystemValue(isEnabled)
-        super(BassBoostSetting, self)._set(isEnabled)
+    def _set(self, value):
+        self.setSystemValue(value)
+        super(BassBoostSetting, self)._set(value)
 
-    def setSystemValue(self, isEnabled):
-        self.soundsCtrl.system.setBassBoost(isEnabled)
+    def setSystemValue(self, value):
+        self.soundsCtrl.system.setBassBoost(value)
 
 
 class NightModeSetting(AccountSetting):
@@ -2613,15 +2654,15 @@ class NightModeSetting(AccountSetting):
     def __init__(self):
         super(NightModeSetting, self).__init__(SOUND.NIGHT_MODE)
 
-    def setSystemValue(self, isEnabled):
-        if isEnabled:
+    def setSystemValue(self, value):
+        if value:
             self.soundsCtrl.system.disableDynamicPreset()
         else:
             self.soundsCtrl.system.enableDynamicPreset()
 
-    def _set(self, isEnabled):
-        self.setSystemValue(isEnabled)
-        super(NightModeSetting, self)._set(isEnabled)
+    def _set(self, value):
+        self.setSystemValue(value)
+        super(NightModeSetting, self)._set(value)
 
 
 class PreviewSoundSetting(AccountSetting):
@@ -2687,8 +2728,8 @@ class PreviewSoundSetting(AccountSetting):
     def _get(self):
         return self._WWISE_EVENTS.index(super(PreviewSoundSetting, self)._get())
 
-    def _save(self, eventIdx):
-        super(PreviewSoundSetting, self)._save(self._WWISE_EVENTS[eventIdx])
+    def _save(self, value):
+        super(PreviewSoundSetting, self)._save(self._WWISE_EVENTS[value])
 
     def __playSound(self):
         if self.__previewSound.name in SoundGroups.CUSTOM_MP3_EVENTS:
@@ -2952,7 +2993,7 @@ class VehicleHPInPlayersPanelSetting(StorageAccountSetting):
 
     def _getOptions(self):
         settingsKey = '#settings:game/%s/%s'
-        return [ settingsKey % (self.settingName, mType.lower()) for mType in self.Options.__members__.keys() ]
+        return [ settingsKey % (self.settingName, mType.lower()) for mType in self.Options.__members__ ]
 
     def getDefaultValue(self):
         return self.Options.ALT.value
@@ -3023,10 +3064,10 @@ class InterfaceScaleSetting(UserPrefsFloatSetting):
     def __getScales(self, modesVariety, additionalSize=None):
         result = []
         for i in xrange(len(modesVariety)):
-            modes = sorted(set([ (mode.width, mode.height) for mode in modesVariety[i] ]))
+            modes = sorted({(mode.width, mode.height) for mode in modesVariety[i]})
             if additionalSize is not None:
                 modes.append(additionalSize[0:2])
-            result.append(map(graphics.getInterfaceScalesList, modes))
+            result.append(lmap(graphics.getInterfaceScalesList, modes))
 
         return result
 
@@ -3211,7 +3252,7 @@ class GroupSetting(StorageDumpSetting):
         return [ self._getOptionData(key) for key in self._visibleOrder ]
 
     def _getVisibleOrder(self):
-        return sorted(self._options.iterkeys())
+        return sorted(self._options)
 
     def _getOptionData(self, key):
         return {'label': self._getOptionLabel(key), 

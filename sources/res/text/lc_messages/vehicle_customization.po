@@ -167,6 +167,12 @@ msgstr "Элитный герб"
 msgid "attachment/Challenger_s_Bounty/Cus_233_Challenges_Armor"
 msgstr "Раскалённый снаряд"
 
+msgid "attachment/Dark_Tower_Trophies"
+msgstr "Трофеи Тёмной башни"
+
+msgid "attachment/Dark_Tower_Trophies/Cus_290_HW_MagneticHarpoon"
+msgstr "Гарпун стазиса"
+
 msgid "attachment/Expedition_Essentials"
 msgstr "Экспедиционное снаряжение"
 
@@ -207,6 +213,18 @@ msgstr "Трофейная башня"
 
 msgid "attachment/Field_Salvage/Cus_238_LS_TrophyWheels"
 msgstr "Трофейные катки"
+
+msgid "attachment/Field_Salvage/Cus_289_HW_SpiderSpotlight"
+msgstr "Эхо-оптика"
+
+msgid "attachment/Field_Salvage/Cus_291_HW_SpareBatteries"
+msgstr "Аккумулятор гарпуна"
+
+msgid "attachment/Field_Salvage/Cus_292_HW_PowerCollector"
+msgstr "Коллектор мириума повышенной плотности"
+
+msgid "attachment/Field_Salvage/Cus_293_HW_SpiderMines"
+msgstr "Мины Монарха"
 
 msgid "attachment/Football_Fever"
 msgstr "Футбольная лихорадка"
@@ -414,6 +432,24 @@ msgstr "Воздушный змей"
 
 msgid "attachment/Traditional_Toys/Cus_263_FCN_Tricycle"
 msgstr "Набитый трицикл"
+
+msgid "attachment/Transmission_Tech"
+msgstr "Технологии передачи данных"
+
+msgid "attachment/Transmission_Tech/Cus_314_Telemetry_Plotter"
+msgstr "Телеметрический плоттер"
+
+msgid "attachment/Transmission_Tech/Cus_315_Orbiter_Prototype"
+msgstr "Орбитальный зонд"
+
+msgid "attachment/Transmission_Tech/Cus_316_EMP_Jammer"
+msgstr "ЭМИ-глушилка"
+
+msgid "attachment/Transmission_Tech/Cus_317_Satellite_Tracker"
+msgstr "Спутниковая система слежения"
+
+msgid "attachment/Transmission_Tech/Cus_318_Encryption_Station"
+msgstr "Станция шифрования"
 
 msgid "attachment/Zero_Legacy"
 msgstr "Наследие Зеро"
@@ -5207,6 +5243,9 @@ msgstr "?empty?"
 msgid "camouflage/fort/label"
 msgstr "Промресурс"
 
+msgid "camouflage/fr26_style1/label"
+msgstr "Перехватчик сигнала"
+
 msgid "camouflage/france/bicolor/Winter/description"
 msgstr ""
 "Зимняя защитная окраска наносилась на трофейные французские танки, "
@@ -6436,6 +6475,18 @@ msgstr "?empty?"
 
 msgid "camouflage/lunar_ny_ox/label"
 msgstr "Бычья кавалерия"
+
+msgid "camouflage/maneuvers_2026_1/label"
+msgstr "Панцирь Атланта"
+
+msgid "camouflage/maneuvers_2026_2/label"
+msgstr "Рог вестника войны"
+
+msgid "camouflage/maneuvers_2026_3/label"
+msgstr "Жало скорпиона"
+
+msgid "camouflage/maneuvers_2026_4/label"
+msgstr "Покров хамелеона"
 
 msgid "camouflage/manners/description"
 msgstr "?empty?"
@@ -8894,6 +8945,31 @@ msgstr "Генеральские указания"
 
 msgid "camouflage/wci2025_progressive_st3/label"
 msgstr "Победный штрих"
+
+msgid "camouflage/wci2026_progressive_st1/description"
+msgstr ""
+"Тёмный силуэт феникса едва проступает сквозь броню — знак того, что путь к "
+"турниру только начался. Базовый этап, доступный всем, кто приобрёл этот "
+"стиль."
+
+msgid "camouflage/wci2026_progressive_st1/label"
+msgstr "Пробуждение феникса"
+
+msgid "camouflage/wci2026_progressive_st2/description"
+msgstr ""
+"На тёмном металле проступают серебряные линии, и феникс расправляет свои "
+"крылья."
+
+msgid "camouflage/wci2026_progressive_st2/label"
+msgstr "Взлёт феникса"
+
+msgid "camouflage/wci2026_progressive_st3/description"
+msgstr ""
+"Феникс восстаёт в золотом и фиолетовом пламени — облик, достойный чемпиона. "
+"Последний этап стиля для тех, кто прошёл весь путь и одержал победу."
+
+msgid "camouflage/wci2026_progressive_st3/label"
+msgstr "Триумф феникса"
 
 msgid "camouflage/wci_2024_1/description"
 msgstr "?empty?"
@@ -14787,6 +14863,12 @@ msgstr "День игры"
 msgid "emblem/special/sticker_884"
 msgstr "Ка-муу-фляж"
 
+msgid "emblem/special/sticker_886"
+msgstr "Перехватчик сигнала"
+
+msgid "emblem/special/sticker_888"
+msgstr "WCI 2026"
+
 msgid "filter/popover/bonusType/title"
 msgstr "Типы бонусов"
 
@@ -17773,6 +17855,12 @@ msgstr "Осторожно! Высокое напряжение"
 
 msgid "inscription/special/special_885"
 msgstr "Почувствуй мощь"
+
+msgid "inscription/special/special_886"
+msgstr "Защищённая трансляция"
+
+msgid "inscription/special/special_887"
+msgstr "Проверка связи"
 
 msgid "inscription/special/special_90"
 msgstr "Гранд-финал 2017 Москва"
@@ -21865,6 +21953,9 @@ msgstr "Электрический разум"
 msgid "projection_decals/special/projection_decal_1114"
 msgstr "Зелёный призрак"
 
+msgid "projection_decals/special/projection_decal_1119"
+msgstr "Спутник"
+
 msgid "projection_decals/special/projection_decal_112"
 msgstr "Топ-10 события «Битва за металл»"
 
@@ -21873,6 +21964,25 @@ msgstr ""
 "Награда бойцу клана, попавшего в 10 лучших кланов в событии «Битва за "
 "металл» на Глобальной карте."
 
+msgid "projection_decals/special/projection_decal_1120"
+msgstr "Выкидной нож"
+
+msgid "projection_decals/special/projection_decal_1122"
+msgstr "Речная канатная дорога"
+
+msgid "projection_decals/special/projection_decal_1122/description"
+msgstr ""
+"Знаменитая канатная дорога города-организатора, протянувшаяся над рекой. "
+"Отсылка к месту проведения события и восхождению на вершину."
+
+msgid "projection_decals/special/projection_decal_1123"
+msgstr "Огненный котёл"
+
+msgid "projection_decals/special/projection_decal_1123/description"
+msgstr ""
+"Бурлящий огненный хого и палочки наготове. Самое время попробовать "
+"знаменитое блюдо города-организатора."
+
 msgid "projection_decals/special/projection_decal_113"
 msgstr "Топ-100 события «Битва за металл»"
 
@@ -21880,6 +21990,9 @@ msgid "projection_decals/special/projection_decal_113/description"
 msgstr ""
 "Награда бойцу клана, попавшего в 100 лучших кланов в событии «Битва за "
 "металл» на Глобальной карте."
+
+msgid "projection_decals/special/projection_decal_1135"
+msgstr "Рывок"
 
 msgid "projection_decals/special/projection_decal_114"
 msgstr "Участник события «Битва за металл»"
@@ -26407,6 +26520,9 @@ msgstr "Аэрозоль"
 msgid "repaint/forged_flame"
 msgstr "Выкованный в пламени"
 
+msgid "repaint/fr26_style1"
+msgstr "Перехватчик сигнала"
+
 msgid "repaint/france_base_color"
 msgstr "Французский базовый"
 
@@ -29451,6 +29567,17 @@ msgstr ""
 "\n"
 "Есть ли у нас план \"Б\"? У нас даже плана \"А\" нет...»"
 
+msgid "special_style/G171_E77_HW26_3Dst"
+msgstr "Монарх"
+
+msgid "special_style/G171_E77_HW26_3Dst_desc/long"
+msgstr ""
+"«Эта чёртова железяка смотрит на меня!\n"
+"\n"
+"Оптика блестит, словно глаза. Кажется, под бронёй дышит монстр, а мины на корпусе как будто перебирают лапками и готовятся спрыгнуть. Какие мины, откуда мины — не спрашивайте. Ребята достали этот танк из какой-то глубокой трещины в реальности. Говорят, что он вполне безопасен и замечательно управляется. Ну-ну…\n"
+"\n"
+"Но я не могу отделаться от ощущения, что эта машина живая. И, чёрт возьми, я хочу испытать её в бою!»"
+
 msgid "special_style/G172_PzVIB_Tiger_II_DIT_3DSt"
 msgstr "Эрика"
 
@@ -29662,6 +29789,19 @@ msgstr ""
 "\n"
 "Эр айнц-нойн-зибен-нойн, конец сообщения»."
 
+msgid "special_style/G89_Leopard1_KS_3Dst"
+msgstr "The Automaton"
+
+msgid "special_style/G89_Leopard1_KS_3Dst_desc/long"
+msgstr ""
+"При всём желании Automaton нельзя назвать изящным. Это настоящий левиафан и "
+"воплощение грубой силы: его поршни стучат, как заводские прессы, а выхлопные"
+" трубы выпускают больше дыма, чем литейный цех. Рождённый в великую эпоху "
+"пара, он пережил своих создателей и затмил стальные громады современной "
+"войны своим механическим великолепием. Он с грохотом вступает в бой наравне "
+"с новыми машинами, и когда дизельная какофония битвы наконец стихает, "
+"остаётся лишь равномерный гул его работающих механизмов."
+
 msgid "special_style/G89_Leopard1_WT24_Mini_Boss_3Dst"
 msgstr "EOS 1"
 
@@ -29838,6 +29978,15 @@ msgstr ""
 "время — когда начнётся война, — мне придётся в ней участвовать. Король, "
 "страна, долг, честь — так меня воспитали, меня учили их защищать. Любой "
 "ценой»."
+
+msgid "special_style/GB142_FV230_Canopener_HW26_3Dst"
+msgstr "Гарпунщик"
+
+msgid "special_style/GB142_FV230_Canopener_HW26_3Dst_desc/long"
+msgstr ""
+"«Внутри каждого эхо-танка находится своеобразный мириумный реактор. Он удерживает материю в форме танка. Когда машина получает достаточно повреждений, ядро уже неспособно держать форму и мириум переходит в жидкое состояние. И изучать уже нечего.\n"
+"\n"
+"Но мне удалось разработать специальный боеприпас. Принцип его действия простой: как только мы выводим танк из строя, мы стреляем в него специальным заряженным гравитационным якорем, который берёт на себя роль мириумного реактора. Он удерживает форму эхо-танка, пока эвакуационная команда не заберёт образец в стазис-камеру. Капитан Смит пока не очень доверяет этой технологии. Каждое утро он спускается в ангар, обходит коллекцию, стучит костяшками по корпусам. Проверяет. Опасается, что однажды один из них проснётся и устроит нам весёлое утро. Я его понимаю. Но я уверен в своих расчётах, а он — в своём чутье. Так и живём»."
 
 msgid "special_style/GB142_FV230_Canopener_KS_3Dst"
 msgstr "Стражи-близнецы"
@@ -30392,6 +30541,17 @@ msgstr ""
 "Зевс не в силах укротить его, и только избранным будет позволено считать его"
 " верным боевым товарищем, способным домчать до края земли и поразить любого,"
 " кто встанет на пути."
+
+msgid "special_style/Pl27_SDP_Wz_66T_WCI_3Dst"
+msgstr "Dream Chaser"
+
+msgid "special_style/Pl27_SDP_Wz_66T_WCI_3Dst_desc/long"
+msgstr ""
+"Dream Chaser создан для тех, кто никогда не останавливается на пути к цели. "
+"Каждый рывок — это свидетельство безграничной страсти и упорства. Чёрные и "
+"золотые перья феникса украшают его стальной корпус, словно несгибаемая вера,"
+" горящая в вашем сердце. Каким бы трудным ни был путь, вы преодолеете все "
+"невзгоды и однажды достигнете своего звёздного часа."
 
 msgid "special_style/Pl29_NC_Wz_70T_BPXVI_3Dst"
 msgstr "Зной"
@@ -34790,6 +34950,23 @@ msgstr ""
 "Всесезонный стиль Укрепрайона, посвящённый кланам, которые строят и "
 "побеждают вместе."
 
+msgid "special_style/fr26_style1"
+msgstr "Перехватчик сигнала"
+
+msgid "special_style/fr26_style1_desc"
+msgstr ""
+"С этим тактическим всесезонным стилем ваш сигнал будет невозможно заглушить."
+
+msgid "special_style/fr26_style1_desc/long"
+msgstr ""
+"Журнал командира:\n"
+"\n"
+"«Там кто-то есть, и наша задача — выяснить, кто именно. Пока у нас есть только странная радиопередача, зашифрованная сложным кодом и разбитая на фрагменты. Тот, кто её отправил, приложил немало усилий, чтобы скрыть... что-то. Но что бы это ни было, вряд ли это что-то хорошее.\n"
+"\n"
+"Чтобы восстановить сообщение, нам придётся захватить и удерживать ретрансляционные антенны достаточно долго, чтобы записать его целиком. Жаль, что охотимся за ним не только мы. Противник приближается, и он настроен заполучить эти разведданные.\n"
+"\n"
+"Гонка началась»."
+
 msgid "special_style/frontline_alliance"
 msgstr "Западный фронт"
 
@@ -36131,6 +36308,63 @@ msgstr ""
 " от злых духов. В Лунный Новый год семьи украшают свои двери яркими "
 "изображениями Мэнь-шэнь, чтобы те даровали защиту от злых сил и "
 "благословение мира, безопасности и процветания в наступающем году."
+
+msgid "special_style/maneuvers_2026_1"
+msgstr "Панцирь Атланта"
+
+msgid "special_style/maneuvers_2026_1_desc"
+msgstr ""
+"Словно древний страж, сдерживайте любой натиск в этом суровом всесезонном "
+"стиле."
+
+msgid "special_style/maneuvers_2026_1_desc/long"
+msgstr ""
+"Черепаха — мифический колосс, что несёт на своей спине целый мир и "
+"олицетворяет вечную стойкость. Её многослойная броня поглощает бесконечный "
+"град ударов, и каждый шрам на ней — мазок на огромном полотне мифической "
+"истории. Этот страж, которому суждено выдержать невозможное, никогда не "
+"отступает от своего долга."
+
+msgid "special_style/maneuvers_2026_2"
+msgstr "Рог вестника войны"
+
+msgid "special_style/maneuvers_2026_2_desc"
+msgstr ""
+"Подобно землетрясению сотрясайте ряды противника с этим всесезонным стилем."
+
+msgid "special_style/maneuvers_2026_2_desc/long"
+msgstr ""
+"Неудержимый и сокрушительный, этот зверь бросается в атаку, с рёвом прорывая"
+" сопротивление. Словно живая лавина, рогатый исполин сметает всё на своём "
+"пути, источая первобытную ярость. За собой он оставляет шлейф разрушений, "
+"отголоски которых ещё долго слышатся после окончания боя."
+
+msgid "special_style/maneuvers_2026_3"
+msgstr "Жало скорпиона"
+
+msgid "special_style/maneuvers_2026_3_desc"
+msgstr "Наносите удары без предупреждения с этим коварным всесезонным стилем."
+
+msgid "special_style/maneuvers_2026_3_desc/long"
+msgstr ""
+"Безмолвный и расчётливый, скорпион — это воплощение смертоносной эффективности. Его сила не в грубой мощи, а в изогнутом хвосте. Его яд подобен едкому жалу судьбы. Затаившись под песком, этот хищник ждёт...\n"
+"\n"
+"И вот, в одно мгновение, бой уже выигран."
+
+msgid "special_style/maneuvers_2026_4"
+msgstr "Покров хамелеона"
+
+msgid "special_style/maneuvers_2026_4_desc"
+msgstr ""
+"С этим неприметным всесезонным стилем вы сможете полностью слиться с "
+"окружением и нанести удар из ниоткуда."
+
+msgid "special_style/maneuvers_2026_4_desc/long"
+msgstr ""
+"Хамелеон — мастер маскировки и адаптации. Постоянно меняясь, он ускользает "
+"от взгляда, исчезая на самом видном месте, словно лишайник на коре дерева. "
+"Для этого неуловимого охотника искусство маскировки неотделимо от искусства "
+"войны, ведь самое смертоносное оружие — то, которое остаётся невидимым."
 
 msgid "special_style/manners"
 msgstr "О человеке судят по манерам"
@@ -39559,6 +39793,22 @@ msgstr ""
 "ловушку вражеского коня или защищая генерала, ваши решения на поле боя "
 "определяют исход битвы. Этот стиль развивается в рамках трёх уровней по мере"
 " того, как растёт ваше мастерство."
+
+msgid "special_style/wci2026_progressive"
+msgstr "Взлетающий феникс"
+
+msgid "special_style/wci2026_progressive_desc"
+msgstr ""
+"Стиль, развивающийся в три этапа: мотив феникса меняется от едва заметного "
+"силуэта к выразительным линиям, а затем вспыхивает ярким пламенем."
+
+msgid "special_style/wci2026_progressive_desc/long"
+msgstr ""
+"Этот стиль, посвящённый турниру, отражает три этапа преображения феникса. "
+"Сначала это едва заметный силуэт, в котором угадываются очертания птицы. "
+"Затем по броне расходятся золотые линии, делая его ярче. И, наконец, он "
+"расцветает золотым и фиолетовым пламенем. Каждый этап — это самостоятельный "
+"образ, а вместе они составляют единую непрерывную эволюцию."
 
 msgid "special_style/wci_2024_1"
 msgstr "Упорство"

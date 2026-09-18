@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from comp7.gui.impl.gen.view_models.views.lobby.base_product_model import ProductState, ProductTypes
 from comp7.gui.impl.gen.view_models.views.lobby.reward_product_model import RewardProductModel

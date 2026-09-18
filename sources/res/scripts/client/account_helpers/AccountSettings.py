@@ -1,9 +1,12 @@
-import base64, cPickle as pickle, copy, logging, typing
+from __future__ import absolute_import
+import copy, logging, typing
 from collections import namedtuple
 from copy import deepcopy
+from future.moves import pickle
+from future.utils import viewitems
 import BigWorld, CommandMapping, Event, Keys, Settings, WWISE, constants, nations
 from account_helpers import gameplay_ctx
-from account_helpers.settings_core.settings_constants import AIM, BATTLE_EVENTS, CONTOUR, GAME, SITUATIONAL_PERKS, SOUND, ArmorFlashlight, ArmorInspector, BattleCommStorageKeys, GuiSettingsBehavior, PersonalMission3, PersonalMission4, ScorePanelStorageKeys, SPGAim, GRAPHICS
+from account_helpers.settings_core.settings_constants import AIM, BATTLE_EVENTS, CONTOUR, CONTROLS, GAME, SITUATIONAL_PERKS, SOUND, ArmorFlashlight, ArmorInspector, BattleCommStorageKeys, GuiSettingsBehavior, PersonalMission3, PersonalMission4, ScorePanelStorageKeys, SPGAim, GRAPHICS
 from aih_constants import CTRL_MODE_NAME
 from constants import MAX_VEHICLE_LEVEL, VEHICLE_CLASSES
 from debug_utils import LOG_CURRENT_EXCEPTION
@@ -15,6 +18,7 @@ from gui.integrated_auction.constants import AUCTION_FINISH_STAGE_SEEN, AUCTION_
 from gui.prb_control.settings import SELECTOR_BATTLE_TYPES
 from helpers import dependency, getClientVersion
 from items.components.crew_books_constants import CREW_BOOK_RARITY
+from py2to3.compat import base64compat
 from skeletons.account_helpers.settings_core import ISettingsCore
 from soft_exception import SoftException
 if typing.TYPE_CHECKING:
@@ -79,6 +83,7 @@ COMP7_LIGHT_CAROUSEL_FILTER_1 = 'COMP7_LIGHT_CAROUSEL_FILTER_1'
 COMP7_LIGHT_CAROUSEL_FILTER_2 = 'COMP7_LIGHT_CAROUSEL_FILTER_2'
 COMP7_LIGHT_CAROUSEL_FILTER_3 = 'COMP7_LIGHT_CAROUSEL_FILTER_3'
 COMP7_LIGHT_CAROUSEL_FILTER_CLIENT_1 = 'COMP7_LIGHT_CAROUSEL_FILTER_CLIENT_1'
+FORT_RUSH_CAROUSEL_FILTER_1 = 'FORT_RUSH_CAROUSEL_FILTER_1'
 ORDERS_FILTER = 'ORDERS_FILTER'
 CURRENT_VEHICLE = 'current'
 ROYALE_VEHICLE = 'ROYALE_VEHICLE'
@@ -412,6 +417,8 @@ class HolidayOps(object):
     HO_LAST_SEEN_COLLECTING_NOTIFY_TIME = 'lastSeenCollectingNotifyTime'
     HO_LAST_SEEN_FRIENDS_NOTIFY_TIME = 'lastSeenFriendsNotifyTime'
     HO_LAST_SEEN_NO_FRIENDS_NOTIFY_TIME = 'lastSeenNoFriendsNotifyTime'
+    HO_BANNER_FIRST_APPEARANCE_TIMESTAMP = 'bannerFirstAppearanceTimestamp'
+    HO_SOMETHING_VISITED_TIMESTAMP = 'somethingVisitedTimestamp'
 
 
 class StrongholdEvent(object):
@@ -1008,11 +1015,16 @@ DEFAULT_VALUES = {KEY_FILTERS: {STORE_TAB: 0,
                   'contour': {CONTOUR.ENHANCED_CONTOUR: False, 
                               CONTOUR.CONTOUR_PENETRABLE_ZONE: 0, 
                               CONTOUR.CONTOUR_IMPENETRABLE_ZONE: 0}, 
-                  ArmorFlashlight.ENABLED: False, 
+                  ArmorFlashlight.ENABLED: True, 
                   ArmorFlashlight.COLOR_SCHEMA: 0, 
                   ArmorFlashlight.FILL: 0, 
                   ArmorFlashlight.OPACITY: 1, 
                   ArmorFlashlight.RESOLUTION: None, 
+                  CONTROLS.MOUSE_ARCADE_SENS: 0.6, 
+                  CONTROLS.MOUSE_SNIPER_SENS: 0.3, 
+                  CONTROLS.MOUSE_STRATEGIC_SENS: 0.6, 
+                  CONTROLS.MOUSE_ASSIST_AIM_SENS: 0.6, 
+                  CONTROLS.MOUSE_FREECAM_SENS: 0.6, 
                   LAST_ARTY_CTRL_MODE: CTRL_MODE_NAME.STRATEGIC, 
                   'markers': {'ally': {'markerBaseIcon': False, 
                                        'markerBaseLevel': False, 
@@ -1126,9 +1138,7 @@ DEFAULT_VALUES = {KEY_FILTERS: {STORE_TAB: 0,
                                            'seenCompleted': False, 
                                            'visitedBonus': False, 
                                            'premMissionsTabDiscovered': False}, 
-                           QUEST_DELTAS: {QUEST_DELTAS_COMPLETION: dict(), 
-                                          QUEST_DELTAS_PROGRESS: dict(), 
-                                          QUEST_DELTAS_TOKENS_PROGRESS: dict()}}, 
+                           QUEST_DELTAS: {QUEST_DELTAS_COMPLETION: {}, QUEST_DELTAS_PROGRESS: {}, QUEST_DELTAS_TOKENS_PROGRESS: {}}}, 
                   'checkBoxConfirmator': {'questsConfirmDialogShow': True, 
                                           'questsConfirmDialogShowPM2': True}, 
                   DOG_TAGS: {'lastVisitedDogTagsTabIdx': None, 
@@ -1442,7 +1452,9 @@ DEFAULT_VALUES = {KEY_FILTERS: {STORE_TAB: 0,
                                         HolidayOps.HO_CHALLENGE_LAST_QUEST_COMPLETION_COUNT: 0, 
                                         HolidayOps.HO_LAST_SEEN_COLLECTING_NOTIFY_TIME: -1, 
                                         HolidayOps.HO_LAST_SEEN_FRIENDS_NOTIFY_TIME: -1, 
-                                        HolidayOps.HO_LAST_SEEN_NO_FRIENDS_NOTIFY_TIME: -1}, 
+                                        HolidayOps.HO_LAST_SEEN_NO_FRIENDS_NOTIFY_TIME: -1, 
+                                        HolidayOps.HO_BANNER_FIRST_APPEARANCE_TIMESTAMP: 0, 
+                                        HolidayOps.HO_SOMETHING_VISITED_TIMESTAMP: 0}, 
                   ResourceWell.SETTINGS: {ResourceWell.FIRST_BANNER_ENTERING_MADE: set(), 
                                           ResourceWell.IS_BANNER_FIRST_APPEARANCE_SEEN: set()}, 
                   PERSONAL_MISSION_3: {PersonalMission3.INTRO: False, 
@@ -1640,6 +1652,61 @@ DEFAULT_VALUES = {KEY_FILTERS: {STORE_TAB: 0,
                                                               'searchNameVehicle': ''}, 
                           SELECT_VEHICLES_PLAYLIST: '', 
                           SELECT_VEHICLES_IS_ALL_VEHICLES: True, 
+                          FORT_RUSH_CAROUSEL_FILTER_1: {'ussr': False, 
+                                                        'germany': False, 
+                                                        'usa': False, 
+                                                        'china': False, 
+                                                        'france': False, 
+                                                        'uk': False, 
+                                                        'japan': False, 
+                                                        'czech': False, 
+                                                        'sweden': False, 
+                                                        'poland': False, 
+                                                        'italy': False, 
+                                                        'lightTank': False, 
+                                                        'mediumTank': False, 
+                                                        'heavyTank': False, 
+                                                        'SPG': False, 
+                                                        'AT-SPG': False, 
+                                                        'level_1': False, 
+                                                        'level_2': False, 
+                                                        'level_3': False, 
+                                                        'level_4': False, 
+                                                        'level_5': False, 
+                                                        'level_6': False, 
+                                                        'level_7': False, 
+                                                        'level_8': False, 
+                                                        'level_9': False, 
+                                                        'level_10': False, 
+                                                        'level_11': False, 
+                                                        'favorite': False, 
+                                                        'rented': True, 
+                                                        'elite': False, 
+                                                        'premium': False, 
+                                                        'igr': False, 
+                                                        'bonus': False, 
+                                                        'crystals': False, 
+                                                        'event': True, 
+                                                        'own3DStyle': False, 
+                                                        'canInstallAttachments': False, 
+                                                        'clanRented': False, 
+                                                        'searchNameVehicle': '', 
+                                                        'role_HT_assault': False, 
+                                                        'role_HT_break': False, 
+                                                        'role_HT_universal': False, 
+                                                        'role_HT_support': False, 
+                                                        'role_MT_assault': False, 
+                                                        'role_MT_universal': False, 
+                                                        'role_MT_sniper': False, 
+                                                        'role_MT_support': False, 
+                                                        'role_ATSPG_assault': False, 
+                                                        'role_ATSPG_universal': False, 
+                                                        'role_ATSPG_sniper': False, 
+                                                        'role_ATSPG_support': False, 
+                                                        'role_LT_universal': False, 
+                                                        'role_LT_scout': False, 
+                                                        'role_LT_support': False, 
+                                                        'role_SPG': False}, 
                           ArmorInspector.SESSION_ATTACKING_VEHICLES: {}}, 
    KEY_UI_FLAGS: {COMP7_UI_SECTION: {COMP7_WEEKLY_QUESTS_PAGE_TOKENS_COUNT: 0, 
                                      COMP7_SHOP_SEEN_PRODUCTS: set(), 
@@ -1687,6 +1754,11 @@ DEFAULT_VALUES = {KEY_FILTERS: {STORE_TAB: 0,
                   VEH_SKILL_TREE_RECORDED_NOFITICATION_NODE: {}, VEH_SKILL_TREE_PRESTIGE_GLARE_SHOWN: set(), 
                   VEH_SKILL_TREE_INTRO_SHOWN: False}, 
    KEY_BATTLE_HINTS: {}, KEY_NEWBIE_HINTS: {}}
+MOUSE_SENSITIVITY_CONTROL_MODE_PATHS = {CONTROLS.MOUSE_ARCADE_SENS: 'arcadeMode/camera/sensitivity', 
+   CONTROLS.MOUSE_SNIPER_SENS: 'sniperMode/camera/sensitivity', 
+   CONTROLS.MOUSE_STRATEGIC_SENS: 'strategicMode/camera/sensitivity', 
+   CONTROLS.MOUSE_ASSIST_AIM_SENS: 'artyMode/camera/sensitivity', 
+   CONTROLS.MOUSE_FREECAM_SENS: 'freeVideoMode/camera/sensitivity'}
 
 def _filterAccountSection(dataSec):
     for key, section in dataSec.items()[:]:
@@ -1696,12 +1768,12 @@ def _filterAccountSection(dataSec):
 
 
 def _pack(value):
-    return base64.b64encode(pickle.dumps(value))
+    return base64compat.b64encode(pickle.dumps(value))
 
 
 def _unpack(value):
     if value:
-        return pickle.loads(base64.b64decode(value))
+        return pickle.loads(base64compat.b64decode(value))
     else:
         return
 
@@ -1712,7 +1784,7 @@ def _recursiveStep(defaultDict, savedDict, finalDict):
         savedElement = savedDict.get(key, None)
         if type(defaultElement) == dict:
             if savedElement is not None and type(savedElement) == dict:
-                finalDict[key] = dict()
+                finalDict[key] = {}
                 _recursiveStep(defaultElement, savedElement, finalDict[key])
             else:
                 finalDict[key] = deepcopy(defaultElement)
@@ -1726,7 +1798,7 @@ def _recursiveStep(defaultDict, savedDict, finalDict):
 
 class AccountSettings(object):
     onSettingsChanging = Event.Event()
-    version = 103
+    version = 107
     settingsCore = dependency.descriptor(ISettingsCore)
     __cache = {'login': None, 'section': None}
     __sessionSettings = {'login': None, 'section': None}
@@ -1804,12 +1876,12 @@ class AccountSettings(object):
                         needUpdate = False
                         for key1, section1 in accSettings.items()[:]:
                             if key1 in MARKER_SETTINGS_MAP:
-                                defaultMarker[MARKER_SETTINGS_MAP[key1]] = pickle.loads(base64.b64decode(accSettings.readString(key1)))
+                                defaultMarker[MARKER_SETTINGS_MAP[key1]] = pickle.loads(base64compat.b64decode(accSettings.readString(key1)))
                                 accSettings.deleteSection(key1)
                                 needUpdate = True
 
                         if needUpdate:
-                            accSettings.write('markers', base64.b64encode(pickle.dumps(defaultMarker)))
+                            accSettings.write('markers', base64compat.b64encode(pickle.dumps(defaultMarker)))
 
             if currVersion < 3:
                 for key, section in ads.items()[:]:
@@ -1819,12 +1891,12 @@ class AccountSettings(object):
                         cassetteDefValues = DEFAULT_VALUES[KEY_SETTINGS]['arcade'].copy()['cassette']
                         for key1, section1 in accSettings.items()[:]:
                             if key1 == 'cursors':
-                                defaultCursor = pickle.loads(base64.b64decode(section1.asString))
+                                defaultCursor = pickle.loads(base64compat.b64decode(section1.asString))
                                 defaultCursor['cassette'] = cassetteDefValues
                                 accSettings.deleteSection(key1)
                                 break
 
-                        accSettings.write('cursors', base64.b64encode(pickle.dumps(defaultCursor)))
+                        accSettings.write('cursors', base64compat.b64encode(pickle.dumps(defaultCursor)))
 
             if currVersion < 4:
                 for key, section in ads.items()[:]:
@@ -1833,11 +1905,11 @@ class AccountSettings(object):
                         defaultCursor = DEFAULT_VALUES[KEY_SETTINGS]['arcade'].copy()
                         for key1, section1 in accSettings.items()[:]:
                             if key1 == 'cursors':
-                                defaultCursor = pickle.loads(base64.b64decode(section1.asString))
+                                defaultCursor = pickle.loads(base64compat.b64decode(section1.asString))
                                 accSettings.deleteSection(key1)
                                 break
 
-                        accSettings.write('arcade', base64.b64encode(pickle.dumps(defaultCursor)))
+                        accSettings.write('arcade', base64compat.b64encode(pickle.dumps(defaultCursor)))
 
             if currVersion < 5:
                 for key, section in ads.items()[:]:
@@ -1852,7 +1924,7 @@ class AccountSettings(object):
                     if key == 'account':
                         accSettings = AccountSettings._readSection(section, KEY_SETTINGS)
                         defaultSorting = DEFAULT_VALUES[KEY_SETTINGS]['statsSorting'].copy()
-                        accSettings.write('statsSorting', base64.b64encode(pickle.dumps(defaultSorting)))
+                        accSettings.write('statsSorting', base64compat.b64encode(pickle.dumps(defaultSorting)))
 
             if currVersion < 7:
                 for key, section in ads.items()[:]:
@@ -1861,10 +1933,10 @@ class AccountSettings(object):
                         result = DEFAULT_VALUES[KEY_SETTINGS]['sniper'].copy()
                         for settingName, settingPickle in accSettings.items()[:]:
                             if settingName == 'sniper':
-                                settingValues = pickle.loads(base64.b64decode(settingPickle.asString))
+                                settingValues = pickle.loads(base64compat.b64decode(settingPickle.asString))
                                 accSettings.deleteSection(settingName)
                                 try:
-                                    for k, v in settingValues.iteritems():
+                                    for k, v in viewitems(settingValues):
                                         newName = k[3].lower() + k[4:]
                                         result[newName] = v
 
@@ -1873,7 +1945,7 @@ class AccountSettings(object):
 
                             break
 
-                        accSettings.write('sniper', base64.b64encode(pickle.dumps(result)))
+                        accSettings.write('sniper', base64compat.b64encode(pickle.dumps(result)))
 
             if currVersion < 8:
                 for key, section in ads.items()[:]:
@@ -1883,9 +1955,9 @@ class AccountSettings(object):
                             if filterName in ('cs_intro_view_vehicle', 'cs_list_view_vehicle',
                                               'cs_unit_view_vehicle', 'cs_unit_view_settings'):
                                 result = DEFAULT_VALUES[KEY_FILTERS][filterName].copy()
-                                value = pickle.loads(base64.b64decode(filterPickle.asString))
+                                value = pickle.loads(base64compat.b64decode(filterPickle.asString))
                                 result.update(value)
-                                accFilters.write(filterName, base64.b64encode(pickle.dumps(result)))
+                                accFilters.write(filterName, base64compat.b64encode(pickle.dumps(result)))
 
             if currVersion < 9:
                 for key, section in ads.items()[:]:
@@ -1895,9 +1967,9 @@ class AccountSettings(object):
                             if filterName in ('cs_intro_view_vehicle', 'cs_list_view_vehicle',
                                               'cs_unit_view_vehicle', 'cs_unit_view_settings'):
                                 defaults = DEFAULT_VALUES[KEY_FILTERS][filterName].copy()
-                                userValue = pickle.loads(base64.b64decode(filterPickle.asString))
+                                userValue = pickle.loads(base64compat.b64decode(filterPickle.asString))
                                 userValue['compatibleOnly'] = defaults['compatibleOnly']
-                                accFilters.write(filterName, base64.b64encode(pickle.dumps(userValue)))
+                                accFilters.write(filterName, base64compat.b64encode(pickle.dumps(userValue)))
 
             if currVersion < 10:
                 for key, section in ads.items()[:]:
@@ -1906,11 +1978,11 @@ class AccountSettings(object):
                         result = set(DEFAULT_VALUES[KEY_SETTINGS][KNOWN_SELECTOR_BATTLES]).copy()
                         for key1, section1 in accSettings.items()[:]:
                             if key1 == 'unitWindow':
-                                unitWindowVal = pickle.loads(base64.b64decode(section1.asString))
+                                unitWindowVal = pickle.loads(base64compat.b64decode(section1.asString))
                                 if 'isOpened' in unitWindowVal:
                                     if unitWindowVal['isOpened']:
                                         result.add(SELECTOR_BATTLE_TYPES.UNIT)
-                                        accSettings.write(KNOWN_SELECTOR_BATTLES, base64.b64encode(pickle.dumps(result)))
+                                        accSettings.write(KNOWN_SELECTOR_BATTLES, base64compat.b64encode(pickle.dumps(result)))
                                     section1.deleteSection('isOpened')
                                     break
 
@@ -1919,7 +1991,7 @@ class AccountSettings(object):
                     if key == 'account':
                         accSettings = AccountSettings._readSection(section, KEY_SETTINGS)
                         defaultSorting = DEFAULT_VALUES[KEY_SETTINGS]['statsSortingSortie'].copy()
-                        accSettings.write('statsSortingSortie', base64.b64encode(pickle.dumps(defaultSorting)))
+                        accSettings.write('statsSortingSortie', base64compat.b64encode(pickle.dumps(defaultSorting)))
 
             if currVersion < 12:
                 for key, section in _filterAccountSection(ads):
@@ -1973,7 +2045,7 @@ class AccountSettings(object):
             if currVersion < 20:
                 for key, section in _filterAccountSection(ads):
                     accSettings = AccountSettings._readSection(section, KEY_SETTINGS)
-                    accSettings.write('battleLoadingInfo', base64.b64encode(pickle.dumps(0)))
+                    accSettings.write('battleLoadingInfo', base64compat.b64encode(pickle.dumps(0)))
                     AccountSettings._readSection(section, KEY_FILTERS).deleteSection('joinCommandPressed')
 
             if currVersion < 21:
@@ -2015,7 +2087,7 @@ class AccountSettings(object):
                                           'inventory_module', 'inventory_shell',
                                           'inventory_optionalDevice', 'inventory_equipment'):
                             defaults = DEFAULT_VALUES[KEY_FILTERS][filterName].copy()
-                            accFilters.write(filterName, base64.b64encode(pickle.dumps(defaults)))
+                            accFilters.write(filterName, base64compat.b64encode(pickle.dumps(defaults)))
 
             if currVersion < 26:
                 for key, section in _filterAccountSection(ads):
@@ -2077,7 +2149,7 @@ class AccountSettings(object):
                         if filterName in ('inventory_vehicle', 'shop_current', 'inventory_current',
                                           'shop_tradeInVehicle', 'shop_restoreVehicle'):
                             defaults = DEFAULT_VALUES[KEY_FILTERS][filterName]
-                            accFilters.write(filterName, base64.b64encode(pickle.dumps(defaults)))
+                            accFilters.write(filterName, base64compat.b64encode(pickle.dumps(defaults)))
 
             if currVersion < 32:
                 for _, section in _filterAccountSection(ads):
@@ -2383,7 +2455,7 @@ class AccountSettings(object):
             if currVersion < 70:
                 pass
             if currVersion < 71:
-                isZeroVersion = currVersion is 0
+                isZeroVersion = currVersion == 0
                 for key, section in _filterAccountSection(ads):
                     accSettings = AccountSettings._readSection(section, KEY_SETTINGS)
                     panelSettingsExist = 'players_panel' in accSettings.keys()
@@ -2453,7 +2525,7 @@ class AccountSettings(object):
                     if 'lastDisplayTime' in hintsSection.keys():
                         displayHistory = {'lastDisplayTime': {}, 'totalDisplayCount': {}}
                         hintsDisplayTime = _unpack(hintsSection['lastDisplayTime'].asString)
-                        for hintID, lastDisplayTime in hintsDisplayTime.iteritems():
+                        for hintID, lastDisplayTime in viewitems(hintsDisplayTime):
                             displayHistory['lastDisplayTime'][hintID] = lastDisplayTime
 
                         hintsSection.write('displayHistory', _pack(displayHistory))
@@ -2515,9 +2587,8 @@ class AccountSettings(object):
                 commandName = instance.getName(CommandMapping.CMD_TOGGLE_ARMOR_FLASHLIGHT)
                 defaultKeyCode = instance.getDefaults().get(CommandMapping.CMD_TOGGLE_ARMOR_FLASHLIGHT, Keys.KEY_NONE)
                 if defaultKeyCode != Keys.KEY_NONE:
-                    keyValues = Keys.__dict__.values()
-                    if defaultKeyCode in keyValues:
-                        defaultKeyName = Keys.__dict__.keys()[keyValues.index(defaultKeyCode)]
+                    defaultKeyName = next((k for k, v in viewitems(Keys.__dict__) if v == defaultKeyCode), None)
+                    if defaultKeyName is not None:
                         AccountSettings.rebindKey(defaultKeyName, commandName)
                         instance.restoreUserConfig()
                 for _, section in _filterAccountSection(ads):
@@ -2665,10 +2736,43 @@ class AccountSettings(object):
                             data['role_LT_support'] = False
                             filtersSection.write(filterKey, _pack(data))
 
-            if currVersion < 103:
+            if currVersion < 104:
                 for key, section in _filterAccountSection(ads):
                     accSettings = AccountSettings._readSection(section, KEY_SETTINGS)
                     accSettings.deleteSection('wt_keys')
+
+            if currVersion < 105:
+                for key, section in _filterAccountSection(ads):
+                    accSettings = AccountSettings._readSection(section, KEY_SETTINGS)
+                    if not accSettings.has_key(ArmorFlashlight.ENABLED):
+                        accSettings.write(ArmorFlashlight.ENABLED, _pack(False))
+
+            if currVersion < 106:
+                userPrefs = Settings.g_instance.userPrefs
+                controlMode = userPrefs[Settings.KEY_CONTROL_MODE] if userPrefs.has_key(Settings.KEY_CONTROL_MODE) else None
+                for key, section in _filterAccountSection(ads):
+                    accSettings = AccountSettings._readSection(section, KEY_SETTINGS)
+                    for settingKey, path in MOUSE_SENSITIVITY_CONTROL_MODE_PATHS.items():
+                        if not accSettings.has_key(settingKey):
+                            value = controlMode.readFloat(path, 1.0) if controlMode is not None else 1.0
+                            accSettings.write(settingKey, _pack(value))
+
+                if controlMode is not None:
+                    for path in MOUSE_SENSITIVITY_CONTROL_MODE_PATHS.values():
+                        parentPath, _, name = path.rpartition('/')
+                        parent = controlMode[parentPath] if parentPath else controlMode
+                        if parent is not None and parent.has_key(name):
+                            parent.deleteSection(name)
+
+            if currVersion < 107:
+                for _, section in _filterAccountSection(ads):
+                    accSettings = AccountSettings._readSection(section, KEY_SETTINGS)
+                    fortRushKeysSection = AccountSettings._readSection(accSettings, 'fort_rush_keys')
+                    missingKeys = ('fort_rush_event_start_notification_shown', 'fort_rush_event_end_notification_shown',
+                                   'fort_rush_pause_notification_shown', 'fort_rush_resume_notification_shown')
+                    for missingKey in missingKeys:
+                        if not fortRushKeysSection.has_key(missingKey):
+                            fortRushKeysSection.writeBool(missingKey, False)
 
             ads.writeInt('version', AccountSettings.version)
         return
@@ -2718,11 +2822,10 @@ class AccountSettings(object):
             if fireKey == expectedKey:
                 if command == expectedCommand:
                     break
-                else:
-                    cmSection.deleteSection(expectedCommand)
-                    newSection = cmSection.createSection(expectedCommand)
-                    newSection.writeString('fireKey', 'KEY_NONE')
-                    break
+                cmSection.deleteSection(expectedCommand)
+                newSection = cmSection.createSection(expectedCommand)
+                newSection.writeString('fireKey', 'KEY_NONE')
+                break
 
     @staticmethod
     def clearKeyAndSetNewCommand(newCommand, commandKey):
@@ -2937,7 +3040,7 @@ class AccountSettings(object):
         fds = AccountSettings._readSection(AccountSettings._readUserSection(), setting)
         try:
             if fds.has_key(name):
-                return pickle.loads(base64.b64decode(fds.readString(name)))
+                return pickle.loads(base64compat.b64decode(fds.readString(name)))
         except Exception:
             if constants.IS_DEVELOPMENT:
                 LOG_CURRENT_EXCEPTION()
@@ -2955,7 +3058,7 @@ class AccountSettings(object):
             if name in DEFAULT_VALUES[setting] and DEFAULT_VALUES[setting][name] == value:
                 fds.deleteSection(name)
             else:
-                fds.write(name, base64.b64encode(pickle.dumps(value)))
+                fds.write(name, base64compat.b64encode(pickle.dumps(value)))
             AccountSettings.onSettingsChanging(name, value)
 
     @staticmethod
@@ -2984,9 +3087,9 @@ class AccountSettings(object):
     def __getUserSessionSettings():
         userLogin = AccountSettings.__getPlayerName()
         if AccountSettings.__sessionSettings['section'] is None:
-            AccountSettings.__sessionSettings['section'] = dict()
-        if AccountSettings.__sessionSettings['login'] != userLogin and userLogin != '':
-            AccountSettings.__sessionSettings['section'] = dict()
+            AccountSettings.__sessionSettings['section'] = {}
+        if userLogin not in (AccountSettings.__sessionSettings['login'], ''):
+            AccountSettings.__sessionSettings['section'] = {}
             AccountSettings.__sessionSettings['login'] = userLogin
         return AccountSettings.__sessionSettings['section']
 

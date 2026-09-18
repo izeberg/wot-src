@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from messenger.m_constants import PROTO_TYPE
 from messenger.proto.entities import OutChatCommand, ReceivedUnitChatCommand
 from messenger.proto.interfaces import IUnitCommandFactory

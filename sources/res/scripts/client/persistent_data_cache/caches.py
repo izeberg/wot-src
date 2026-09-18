@@ -1,5 +1,7 @@
+from __future__ import absolute_import
+import typing
 from functools import partial
-import typing, BigWorld, wg_async
+import BigWorld, wg_async
 from helpers.threads import ThreadPool, Job
 from persistent_data_cache_common.caches import DefaultPDCache
 from persistent_data_cache_common.common import getLogger, DEFAULT_SAVING_TIMEOUT

@@ -1,4 +1,6 @@
+from __future__ import absolute_import
 import typing
+from future.utils import viewvalues
 from debug_utils import LOG_ERROR
 from frameworks.wulf import WindowLayer
 from gui.Scaleform.framework.managers.containers import ExternalCriteria
@@ -320,7 +322,7 @@ class ChannelsCarouselHandler(object):
             return
 
     def __handlerMinimizeAll(self, _):
-        for criteria, _, layer in self.__handlers.itervalues():
+        for criteria, _, layer in viewvalues(self.__handlers):
             viewContainer = self.app.containerManager
             if isinstance(criteria, ChannelFindCriteria):
                 window = viewContainer.getView(layer, criteria)
@@ -333,7 +335,7 @@ class ChannelsCarouselHandler(object):
         self.__closeExcept(event.clientID)
 
     def __closeExcept(self, clientID):
-        clientIDs = self.__handlers.keys()
+        clientIDs = list(self.__handlers)
         for key in clientIDs:
             if key != clientID:
                 cntrler = self.__guiEntry.channelsCtrl.getController(key)

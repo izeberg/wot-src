@@ -10,24 +10,24 @@
 	<postProgressionTree>S41_BV_111</postProgressionTree>
 	<customRoleSlotOptions>3 5</customRoleSlotOptions>
 	<speedLimits>
-		<forward>10</forward>
-		<backward>10</backward>
+		<forward>50</forward>
+		<backward>24</backward>
 	</speedLimits>
 	<invisibility>
 		<moving>
-			0.01
+			0.218
 			<!--BW_String-->
 		</moving>
 		<still>
-			0.01
+			0.291
 			<!--BW_String-->
 		</still>
 		<camouflageBonus>
-			0.0
+			0.03
 			<!--BW_String-->
 		</camouflageBonus>
 		<firePenalty>
-			0.1
+			0.437
 			<!--BW_String-->
 		</firePenalty>
 	</invisibility>
@@ -86,44 +86,44 @@
 	</camouflage>
 	<hull>
 		<armor>
-			<armor_1>10</armor_1>
-			<armor_3>10</armor_3>
-			<armor_4>10</armor_4>
-			<armor_2>10</armor_2>
-			<armor_5>10</armor_5>
-			<armor_6>10</armor_6>
-			<armor_7>10</armor_7>
-			<armor_8>10</armor_8>
-			<armor_9>10</armor_9>
-			<armor_10>10</armor_10>
-			<armor_11>10</armor_11>
-			<armor_12>10</armor_12>
-			<armor_13>10</armor_13>
-			<armor_14>10</armor_14>
-			<armor_15>10</armor_15>
-			<armor_16>10</armor_16>
-			<armor_17>10</armor_17>
-			<armor_18>10</armor_18>
-			<armor_19>10</armor_19>
-			<armor_20>10</armor_20>
-			<armor_21>10</armor_21>
-			<armor_22>10</armor_22>
-			<armor_23>10</armor_23>
-			<armor_24>10</armor_24>
+			<armor_1>55</armor_1>
+			<armor_3>60</armor_3>
+			<armor_4>40</armor_4>
+			<armor_2>90</armor_2>
+			<armor_5>20</armor_5>
+			<armor_6>20</armor_6>
+			<armor_7>40</armor_7>
+			<armor_8>0</armor_8>
+			<armor_9>200</armor_9>
+			<armor_10>55</armor_10>
+			<armor_11>60</armor_11>
+			<armor_12>30</armor_12>
+			<armor_13>20</armor_13>
+			<armor_14>20</armor_14>
+			<armor_15>30</armor_15>
+			<armor_16>40</armor_16>
+			<armor_17>30</armor_17>
+			<armor_18>20</armor_18>
+			<armor_19>40</armor_19>
+			<armor_20>20</armor_20>
+			<armor_21>20</armor_21>
+			<armor_22>30</armor_22>
+			<armor_23>20</armor_23>
+			<armor_24>20</armor_24>
 			<armor_25>
-				10
+				20
 				<vehicleDamageFactor>0</vehicleDamageFactor>
 			</armor_25>
 			<armor_26>
-				10
+				5
 				<vehicleDamageFactor>0</vehicleDamageFactor>
 			</armor_26>
-			<leftTrack>10</leftTrack>
-			<rightTrack>10</rightTrack>
+			<leftTrack>20</leftTrack>
+			<rightTrack>20</rightTrack>
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
-		<weight>9400</weight>
-		<maxHealth>10</maxHealth>
+		<weight>14350</weight>
+		<maxHealth>1720</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>270</maxHealth>
 			<maxRegenHealth>203</maxRegenHealth>
@@ -1070,17 +1070,17 @@
 			<price>100000</price>
 			<notInShop>true</notInShop>
 			<armor>
-				<leftTrack>10</leftTrack>
-				<rightTrack>10</rightTrack>
+				<leftTrack>20</leftTrack>
+				<rightTrack>20</rightTrack>
 			</armor>
-			<weight>100</weight>
+			<weight>9250</weight>
 			<terrainResistance>
 				0.8 0.9 1.8
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>35000</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>10</rotationSpeed>
+			<rotationSpeed>50</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.13
@@ -3086,7 +3086,7 @@
 				</right>
 			</physicalTracks>
 			<repairTime>
-				0.649999976
+				6.66666651
 				<!--BW_String-->
 			</repairTime>
 		</Chassis_S41_BV_111>
@@ -3099,52 +3099,49 @@
 			<price>100000</price>
 			<notInShop>true</notInShop>
 			<armor>
-				<armor_1>10</armor_1>
-				<armor_2>10</armor_2>
-				<armor_3>10</armor_3>
-				<armor_4>10</armor_4>
-				<armor_5>10</armor_5>
-				<armor_6>10</armor_6>
-				<armor_7>10</armor_7>
+				<armor_1>320</armor_1>
+				<armor_2>330</armor_2>
+				<armor_3>50</armor_3>
+				<armor_4>40</armor_4>
+				<armor_5>20</armor_5>
+				<armor_6>20</armor_6>
+				<armor_7>30</armor_7>
 				<armor_8>0</armor_8>
-				<armor_9>10</armor_9>
-				<armor_10>10</armor_10>
-				<armor_11>10</armor_11>
-				<armor_12>10</armor_12>
-				<armor_13>10</armor_13>
-				<armor_14>10</armor_14>
-				<armor_15>10</armor_15>
-				<armor_16>10</armor_16>
-				<armor_17>10</armor_17>
-				<armor_18>10</armor_18>
-				<armor_19>10</armor_19>
-				<armor_20>10</armor_20>
-				<armor_21>10</armor_21>
-				<armor_22>10</armor_22>
-				<armor_23>10</armor_23>
-				<armor_24>10</armor_24>
-				<armor_25>10</armor_25>
-				<armor_26>10</armor_26>
-				<armor_27>10</armor_27>
-				<armor_28>10</armor_28>
-				<armor_29>10</armor_29>
-				<armor_30>10</armor_30>
-				<armor_31>10</armor_31>
-				<armor_32>10</armor_32>
+				<armor_9>160</armor_9>
+				<armor_10>85</armor_10>
+				<armor_11>100</armor_11>
+				<armor_12>20</armor_12>
+				<armor_13>320</armor_13>
+				<armor_14>50</armor_14>
+				<armor_15>140</armor_15>
+				<armor_16>270</armor_16>
+				<armor_17>300</armor_17>
+				<armor_18>280</armor_18>
+				<armor_19>30</armor_19>
+				<armor_20>250</armor_20>
+				<armor_21>90</armor_21>
+				<armor_22>100</armor_22>
+				<armor_23>85</armor_23>
+				<armor_24>75</armor_24>
+				<armor_25>200</armor_25>
+				<armor_26>190</armor_26>
+				<armor_27>175</armor_27>
+				<armor_28>155</armor_28>
+				<armor_29>130</armor_29>
+				<armor_30>105</armor_30>
+				<armor_31>80</armor_31>
+				<armor_32>200</armor_32>
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
-			<weight>100</weight>
-			<maxHealth>10</maxHealth>
-			<rotationSpeed>
-				0.96
-				<!--BW_String-->
-			</rotationSpeed>
+			<weight>7400</weight>
+			<maxHealth>430</maxHealth>
+			<rotationSpeed>40</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>200</maxHealth>
 				<maxRegenHealth>100</maxRegenHealth>
 				<repairCost>11</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>100</circularVisionRadius>
+			<circularVisionRadius>390</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>130</maxHealth>
 				<maxRegenHealth>65</maxRegenHealth>
@@ -3156,58 +3153,52 @@
 					<maxAmmo>40</maxAmmo>
 					<armor>
 						<armor_1>
-							10
+							330
 							<tags>gunMask</tags>
 						</armor_1>
-						<gun>10</gun>
+						<gun>50</gun>
 						<armor_2>
-							10
+							100
 							<tags>gunMask</tags>
 						</armor_2>
-						<armor_3>10</armor_3>
-						<armor_4>10</armor_4>
-						<armor_5>10</armor_5>
-						<armor_6>10</armor_6>
-						<armor_7>10</armor_7>
-						<armor_8>10</armor_8>
+						<armor_3>60</armor_3>
+						<armor_4>30</armor_4>
+						<armor_5>20</armor_5>
+						<armor_6>30</armor_6>
+						<armor_7>175</armor_7>
+						<armor_8>0</armor_8>
 						<armor_9>
-							10
+							100
 							<tags>gunMask</tags>
 						</armor_9>
 						<armor_10>
-							10
+							60
 							<tags>gunMask</tags>
 						</armor_10>
 						<armor_11>
-							10
+							60
 							<tags>gunMask</tags>
 						</armor_11>
 					</armor>
 					<turretYawLimits>-180 180</turretYawLimits>
 					<pitchLimits>
-						<minPitch>
-							0.0 -10 1.0 -10
-							<!--BW_String-->
-						</minPitch>
-						<maxPitch>
-							0.0 10 1.0 10
-							<!--BW_String-->
-						</maxPitch>
+						<minPitch>0 -15 1 -15</minPitch>
+						<maxPitch>0 6 1 6</maxPitch>
 					</pitchLimits>
 					<invisibilityFactorAtShot>
-						0.1
+						0.18
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<reloadTime>
-						62.58
+						9.2
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
-						10.43
+						2.1
 						<!--BW_String-->
 					</aimingTime>
 					<shotDispersionRadius>
-						1.04
+						0.35
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<shotDispersionFactors>
@@ -3416,22 +3407,6 @@
 						<density>245.870239 245.558319</density>
 						<aoTextureSize>1024 1024</aoTextureSize>
 					</camouflage>
-					<rotationSpeed>
-						0.96
-						<!--BW_String-->
-					</rotationSpeed>
-					<weight>100</weight>
-					<shots>
-						<_120mm_slpprj_m_ny_hog_laddning>
-							<piercingPower>100</piercingPower>
-						</_120mm_slpprj_m_ny_hog_laddning>
-						<_120mm_psgr_m_ny_hog_laddning>
-							<piercingPower>100</piercingPower>
-						</_120mm_psgr_m_ny_hog_laddning>
-						<_120mm_sgr_m_ny_ord>
-							<piercingPower>100</piercingPower>
-						</_120mm_sgr_m_ny_ord>
-					</shots>
 				</_12_cm_hogtrycksstrvkan_L_40>
 			</guns>
 			<models>
@@ -4008,8 +3983,8 @@
 		<detailed>
 			<engines>
 				<Volvo_SFA_12B>
-					<smplEnginePower>10</smplEnginePower>
-					<smplFwMaxSpeed>10</smplFwMaxSpeed>
+					<smplEnginePower>670</smplEnginePower>
+					<smplFwMaxSpeed>50</smplFwMaxSpeed>
 				</Volvo_SFA_12B>
 			</engines>
 			<chassis>
@@ -4059,8 +4034,8 @@
 			</wheelCorrectionCenterZ>
 			<wheelsCorrectionSpeed>10</wheelsCorrectionSpeed>
 			<wheelsCorrectionAngles>
-				<pitchMin>-10</pitchMin>
-				<pitchMax>10</pitchMax>
+				<pitchMin>-5</pitchMin>
+				<pitchMax>7</pitchMax>
 			</wheelsCorrectionAngles>
 		</pitch>
 		<yawDisabled/>
@@ -4069,16 +4044,22 @@
 	<useHullZOffset>True</useHullZOffset>
 	<mechanics>
 		<bustleFeed>
-			<activationTime>1000</activationTime>
-			<deactivationTime>1000</deactivationTime>
-			<bustleShotReloadFactor>1</bustleShotReloadFactor>
-			<bustleShotDamageBonusShell0>1</bustleShotDamageBonusShell0>
-			<bustleShotDamageBonusShell1>1</bustleShotDamageBonusShell1>
+			<activationTime>5</activationTime>
+			<deactivationTime>
+				2.5
+				<!--BW_String-->
+			</deactivationTime>
+			<bustleShotReloadFactor>
+				1.5
+				<!--BW_String-->
+			</bustleShotReloadFactor>
+			<bustleShotDamageBonusShell0>90</bustleShotDamageBonusShell0>
+			<bustleShotDamageBonusShell1>90</bustleShotDamageBonusShell1>
 			<modifiers>
 				<mul>
 					<name>dynAttrs/vehicle/maxSpeed/forward</name>
 					<value>
-						1.0
+						0.5
 						<!--BW_String-->
 					</value>
 				</mul>

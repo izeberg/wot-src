@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.285235 0.000001 -2.817322</min>
+		<max>1.354689 1.592048 1.311768</max>
+	</visibilityBox>
+	<parent>halloween/vehicles/british/GB123_GSOR_1006_v7_Halloween_event/crash/lod1/Turret_02</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>halloween/vehicles/british/GB123_GSOR_1006_v7_Halloween_event/crash/lod0/Turret_02</nodefullVisual>
+</root>

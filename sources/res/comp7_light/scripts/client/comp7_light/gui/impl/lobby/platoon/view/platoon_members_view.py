@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from comp7_light.gui.impl.gen.view_models.views.lobby.platoon.comp7_light_slot_model import Comp7LightSlotModel
 from comp7_light.gui.impl.gen.view_models.views.lobby.platoon.comp7_light_window_model import Comp7LightWindowModel
 from comp7_light_constants import CLIENT_UNIT_CMD

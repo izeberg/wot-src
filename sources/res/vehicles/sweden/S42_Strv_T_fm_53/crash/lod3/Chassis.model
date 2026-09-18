@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/sweden/S42_Strv_T_fm_53/crash/lod3/Chassis</nodefullVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.556359 0.000000 -2.856743</min>
+		<max>1.556517 1.098213 3.220073</max>
+	</visibilityBox>
+	<parent>vehicles/sweden/S42_Strv_T_fm_53/crash/lod4/Chassis</parent>
+	<extent>192.000000</extent>
+</root>

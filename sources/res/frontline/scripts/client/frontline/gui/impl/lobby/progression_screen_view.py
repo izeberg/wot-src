@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import SoundGroups
 from frameworks.wulf import ViewFlags, ViewSettings
 from frontline.frontline_account_settings import getReceivedRewardTokens, setReceivedRewardTokens

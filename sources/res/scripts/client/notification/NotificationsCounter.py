@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.prb_control import prbInvitesProperty
 from messenger.m_constants import PROTO_TYPE
 from messenger.proto import proto_getter

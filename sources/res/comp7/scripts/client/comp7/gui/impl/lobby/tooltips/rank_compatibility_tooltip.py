@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from typing import Optional
 from comp7.gui.impl.gen.view_models.views.lobby.tooltips.rank_compatibility_tooltip_model import RankCompatibilityTooltipModel
 from comp7.gui.impl.gen.view_models.views.lobby.enums import SeasonName

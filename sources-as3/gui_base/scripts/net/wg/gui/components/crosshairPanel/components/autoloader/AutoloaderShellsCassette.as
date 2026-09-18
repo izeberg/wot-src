@@ -98,6 +98,8 @@ package net.wg.gui.components.crosshairPanel.components.autoloader
       
       private var _currentAutoloadProgress:Number = -1;
       
+      private var _isTimerOn:Boolean = false;
+      
       public function AutoloaderShellsCassette()
       {
          super();
@@ -134,7 +136,7 @@ package net.wg.gui.components.crosshairPanel.components.autoloader
          super.draw();
          if(isInvalid(TIMER_STATE_INVALID))
          {
-            this._timer.updateTimerColor(this._isTimerRed,this._isCritical,this._isAutoloadInProgress,this._isSurge);
+            this._timer.updateTimerColor(this._isTimerRed,this._isCritical,this._isAutoloadInProgress,this._isSurge,this._isTimerOn);
             this.updateStatusMC();
          }
       }
@@ -142,6 +144,11 @@ package net.wg.gui.components.crosshairPanel.components.autoloader
       public function autoloadProgress(param1:Number, param2:Number, param3:Boolean, param4:Boolean) : void
       {
          var _loc5_:int = 0;
+         if(this._isTimerOn != param3)
+         {
+            this._isTimerOn = param3;
+            invalidate(TIMER_STATE_INVALID);
+         }
          if(!this._isAnimationInProgress && this._lastLoadedShell && param1 != this._currentAutoloadProgress)
          {
             this._currentAutoloadProgress = param1;
@@ -186,6 +193,20 @@ package net.wg.gui.components.crosshairPanel.components.autoloader
                this.reloadingComplete();
                this.setTimerRed(false);
             }
+         }
+      }
+      
+      public function setAutoreloaderSurgeState(param1:Boolean) : void
+      {
+         if(param1 && !this._hasAutoreloaderSurge)
+         {
+            this._hasAutoreloaderSurge = true;
+            this.timerMc.x += AUTORELOADER_SURGE_TIMER_OFFSET_X;
+         }
+         if(this._isSurge != param1)
+         {
+            this._isSurge = param1;
+            invalidate(TIMER_STATE_INVALID);
          }
       }
       
@@ -287,20 +308,6 @@ package net.wg.gui.components.crosshairPanel.components.autoloader
          else if(!this._isAnimationInProgress && !this._isAutoloadInProgress)
          {
             this.statusMc.gotoAndStop(STATUS_RELOAD_COMPLETED_FRAME_LABEL);
-         }
-      }
-      
-      public function setAutoreloaderSurgeState(param1:Boolean) : void
-      {
-         if(!this._hasAutoreloaderSurge)
-         {
-            this._hasAutoreloaderSurge = true;
-            this.timerMc.x += AUTORELOADER_SURGE_TIMER_OFFSET_X;
-         }
-         if(this._isSurge != param1)
-         {
-            this._isSurge = param1;
-            invalidate(TIMER_STATE_INVALID);
          }
       }
       

@@ -16,7 +16,6 @@
 						</vehicleDamage>
 						<vehicleDamage>
 							<classes>heavyTank</classes>
-							<attackReason>0</attackReason>
 							<greaterOrEqual>2000</greaterOrEqual>
 						</vehicleDamage>
 					</and>
@@ -69,7 +68,6 @@
 						</vehicleDamage>
 						<vehicleDamage>
 							<classes>heavyTank</classes>
-							<attackReason>0</attackReason>
 							<greaterOrEqual>2000</greaterOrEqual>
 						</vehicleDamage>
 					</and>

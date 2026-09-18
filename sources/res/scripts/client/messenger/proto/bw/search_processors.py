@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import chat_shared
 from constants import CHANNEL_SEARCH_RESULTS_LIMIT
 from messenger.m_constants import PROTO_TYPE

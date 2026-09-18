@@ -37,7 +37,7 @@ msgstr "Так точно!"
 msgid "autoOpenView/title"
 msgstr "ПОЛУЧЕННЫЕ НАГРАДЫ"
 
-msgid "awardViews/footer/backButton/"
+msgid "awardViews/footer/backButton"
 msgstr "Так точно!"
 
 msgid "awardViews/footer/caption/attemptsLeft"
@@ -82,7 +82,7 @@ msgstr "2D-стиль"
 msgid "bonuses/description/style3D"
 msgstr "3D-стиль"
 
-msgid "bonuses/label/blueprints/nationalFragment/"
+msgid "bonuses/label/blueprints/nationalFragment"
 msgstr "Фрагмент чертежа (%(nation)s)"
 
 msgid "bonuses/label/blueprints/universalFragment"
@@ -221,18 +221,18 @@ msgstr "%(count)-е"
 msgid "guaranteed/tooltip/count/third"
 msgstr "%(count)-е"
 
-msgid "guaranteed/tooltip/description/count/"
-msgstr "каждое %(count) открытие"
+msgid "guaranteed/tooltip/description/count"
+msgstr "каждом %(count)-м открытии"
 
-msgid "guaranteed/tooltip/description/item/"
+msgid "guaranteed/tooltip/description/item"
 msgstr "Машина"
 
-msgid "guaranteed/tooltip/description0/"
+msgid "guaranteed/tooltip/description0"
 msgstr ""
-"%(item) гарантированно выпадает %(count). Счётчик сбрасывается, если техника"
-" будет получена раньше."
+"%(item) гарантированно выпадает при %(count). Счётчик сбрасывается, если "
+"техника будет получена раньше."
 
-msgid "guaranteed/tooltip/description1/"
+msgid "guaranteed/tooltip/description1"
 msgstr "Если у вас уже есть все машины, вы получите компенсацию золотом."
 
 msgid "guaranteedTitle/text"
@@ -311,22 +311,22 @@ msgstr "|"
 msgid "infoPage/rewards/percent"
 msgstr "%"
 
-msgid "multipleRewardView/footer/openNextButton/"
+msgid "multipleRewardView/footer/openNextButton"
 msgstr "Открыть больше"
 
-msgid "multipleRewardView/header/subTitle/"
-msgstr "Из %(name) (открыто %(boxesCount) коробок)"
+msgid "multipleRewardView/header/subTitle"
+msgstr "Из %(name) (открыто %(boxesCount) Коробок)"
 
-msgid "multipleRewardView/header/title/"
+msgid "multipleRewardView/header/title"
 msgstr "ПОЛУЧЕННЫЕ НАГРАДЫ"
 
-msgid "noBoxesView/description/"
+msgid "noBoxesView/description"
 msgstr "Коробки доступны во внутриигровом Магазине"
 
-msgid "noBoxesView/getBoxes/"
+msgid "noBoxesView/getBoxes"
 msgstr "В Магазин"
 
-msgid "noBoxesView/goToButton/"
+msgid "noBoxesView/goToButton"
 msgstr "К доступным Коробкам"
 
 msgid "preview/backLabel"
@@ -430,13 +430,13 @@ msgstr "Только до %(date)s: премиум техника и ценно�
 msgid "serviceChannelMessages/statisticReset/server_error/text"
 msgstr "Не удалось сбросить статистику. Попробуйте позже."
 
-msgid "singleRewardView/extraReward/text/"
+msgid "singleRewardView/extraReward/text"
 msgstr "И ещё"
 
-msgid "singleRewardView/footer/openNextButton/"
+msgid "singleRewardView/footer/openNextButton"
 msgstr "Открыть больше"
 
-msgid "singleRewardView/header/title/"
+msgid "singleRewardView/header/title"
 msgstr "ПОЛУЧЕННЫЕ НАГРАДЫ"
 
 msgid "singleRewardView/uniqueTankman"

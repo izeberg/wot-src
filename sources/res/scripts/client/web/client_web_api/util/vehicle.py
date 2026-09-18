@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from web.client_web_api.api import C2WHandler, c2w
 from gui.shared.gui_items import GUI_ITEM_TYPE
 from gui.shared.items_cache import CACHE_SYNC_REASON

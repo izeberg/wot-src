@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing, json
 from epic_constants import EPIC_BATTLE_TEAM_ID
 from frameworks.wulf.view.array import fillViewModelsArray

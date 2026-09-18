@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F145_Scarabee/crash/lod1/Hull</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/french/F145_Scarabee/crash/lod2/Hull</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.726270 -0.933181 -3.809317</min>
+		<max>1.725362 0.829238 3.185249</max>
+	</visibilityBox>
+</root>

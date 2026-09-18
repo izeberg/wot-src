@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/british/GB159_FV4602_Victorious/normal/lod4/Turret_01</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.484637 -0.011019 -2.757997</min>
+		<max>1.471920 2.312141 1.702591</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/british/GB159_FV4602_Victorious/normal/lod3/Turret_01</nodefullVisual>
+</root>

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from logging import getLogger
 import BigWorld
 from aih_constants import CTRL_MODE_NAME

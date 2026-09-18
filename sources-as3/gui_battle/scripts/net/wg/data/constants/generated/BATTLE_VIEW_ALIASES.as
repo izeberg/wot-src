@@ -229,6 +229,8 @@ package net.wg.data.constants.generated
       
       public static const SIGHT_POINTER_WIDGET:String = "sightPointerWidget";
       
+      public static const SPEC_BOOST_MODE_WIDGET:String = "specBoostModeWidget";
+      
       public static const DECORATIVE_CROSSHAIR_PANEL:String = "decorativeCrosshairPanel";
       
       public static const CONCENTRATION_DECORATIVE_CROSSHAIR:String = "concentrationDecorativeCrosshair";

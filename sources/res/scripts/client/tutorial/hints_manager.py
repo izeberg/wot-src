@@ -1,4 +1,6 @@
+from __future__ import absolute_import
 import logging
+from future.utils import listitems, viewitems, viewkeys
 from account_helpers.settings_core.settings_constants import OnceOnlyHints
 from helpers import dependency
 from skeletons.account_helpers.settings_core import ISettingsCore
@@ -54,7 +56,7 @@ class HintsManager(object):
         if self._data is not None:
             self._data = None
         self.__postponedHints = []
-        hintsIDs = self.__activeHints.keys()
+        hintsIDs = list(self.__activeHints)
         for itemID in hintsIDs:
             self.__hideHint(itemID)
 
@@ -69,7 +71,7 @@ class HintsManager(object):
     def __loadHintsData(self):
         _logger.debug('Hints are loading')
         shownHints = self.__settingsCore.serverSettings.getOnceOnlyHintsSettings()
-        shownHints = [ key for key, value in shownHints.iteritems() if value == HINT_SHOWN_STATUS ]
+        shownHints = [ key for key, value in viewitems(shownHints) if value == HINT_SHOWN_STATUS ]
         self._data = HintsParser.parse(_DESCRIPTOR_PATH, shownHints)
 
     def __setTriggeredComponents(self):
@@ -189,10 +191,10 @@ class HintsManager(object):
         self.__settingsCore.onOnceOnlyHintsChanged -= self.__onSettingsChanged
 
     def __onSettingsChanged(self, diff):
-        diffKeys = diff.viewkeys()
+        diffKeys = viewkeys(diff)
         if diffKeys & set(OnceOnlyHints.ALL()):
             self._data.markHintsAsShown(diffKeys)
-            for itemID, hint in self.__activeHints.items():
+            for itemID, hint in listitems(self.__activeHints):
                 hintID = hint['hintID']
                 if hintID in diffKeys:
                     self.__hideHint(itemID, hintID)
@@ -203,7 +205,7 @@ class HintsManager(object):
 
     def __onGlobalConditionValueChanged(self, conditionId, value):
         filteredHints = set()
-        for itemID, hints in self._data.getHints().iteritems():
+        for itemID, hints in viewitems(self._data.getHints()):
             for hint in hints:
                 condition = self.__filterConditions(hint.get('conditions'), self.__filterByConditionId, conditionId)
                 if condition is not None:
@@ -224,7 +226,7 @@ class HintsManager(object):
 
     def __onUpdateTutorialHints(self, conditionId, state, arguments=''):
         filteredHints = []
-        for itemID, hints in self._data.getHints().iteritems():
+        for itemID, hints in viewitems(self._data.getHints()):
             for hint in hints:
                 condition = self.__filterConditions(hint.get('conditions'), self.__filterByLimitedUIRule, conditionId, arguments)
                 if condition is not None:

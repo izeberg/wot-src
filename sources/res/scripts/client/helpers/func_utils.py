@@ -1,4 +1,6 @@
+from __future__ import absolute_import
 from functools import partial, wraps
+from past.builtins import intern
 from time import sleep, time
 import BigWorld
 from constants import IS_DEVELOPMENT
@@ -69,7 +71,8 @@ def isDeveloperFunc(func):
     @wraps(func)
     def decorator(*args, **kwargs):
         if not IS_DEVELOPMENT:
-            return
-        return func(*args, **kwargs)
+            return None
+        else:
+            return func(*args, **kwargs)
 
     return decorator

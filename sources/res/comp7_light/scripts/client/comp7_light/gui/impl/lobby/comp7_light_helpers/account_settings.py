@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from account_helpers import AccountSettings
 from account_helpers.AccountSettings import COMP7_LIGHT_UI_SECTION, COMP7_LIGHT_UMG_SEEN_QUESTS, COMP7_LIGHT_UMG_PROGRESSION_POINTS_SEEN, COMP7_LIGHT_UMG_ENTRY_POINT_SEEN
 

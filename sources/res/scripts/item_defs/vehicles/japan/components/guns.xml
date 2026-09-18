@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<xmlns:xmlref>http://bwt/xmlref</xmlns:xmlref>
 	<ids>
 		<_75mm_Type5_1>0</_75mm_Type5_1>
 		<_13.2mm_Type93>1</_13.2mm_Type93>
@@ -10326,29 +10325,26 @@
 			<reloadEffect>reload155_170</reloadEffect>
 			<pitchLimits>
 				<minPitch>
-					0.0 -10 1.0 -10
+					0.0 -15.0 1.0 -15.0
 					<!--BW_String-->
 				</minPitch>
 				<maxPitch>
-					0.0 10 1.0 10
+					0.0 5.0 1.0 5.0
 					<!--BW_String-->
 				</maxPitch>
 			</pitchLimits>
 			<turretYawLimits>-180 180</turretYawLimits>
-			<rotationSpeed>
-				0.96
-				<!--BW_String-->
-			</rotationSpeed>
+			<rotationSpeed>24</rotationSpeed>
 			<reloadTime>
-				62.58
+				15.3
 				<!--BW_String-->
 			</reloadTime>
 			<maxAmmo>40</maxAmmo>
 			<aimingTime>
-				10.43
+				2.5
 				<!--BW_String-->
 			</aimingTime>
-			<weight>100</weight>
+			<weight>5500</weight>
 			<maxHealth>240</maxHealth>
 			<maxRegenHealth>120</maxRegenHealth>
 			<repairCost>11</repairCost>
@@ -10357,7 +10353,7 @@
 				<!--BW_String-->
 			</invisibilityFactorAtShot>
 			<shotDispersionRadius>
-				1.04
+				0.34
 				<!--BW_String-->
 			</shotDispersionRadius>
 			<shotDispersionFactors>
@@ -10386,7 +10382,7 @@
 						<!--BW_String-->
 					</gravity>
 					<maxDistance>720</maxDistance>
-					<piercingPower>100</piercingPower>
+					<piercingPower>305 290</piercingPower>
 				</_15_5_cm_AP_Shin>
 				<_15_5_cm_AP_Shin_Toku_Kou>
 					<defaultPortion>
@@ -10399,7 +10395,7 @@
 						<!--BW_String-->
 					</gravity>
 					<maxDistance>720</maxDistance>
-					<piercingPower>100</piercingPower>
+					<piercingPower>365 350</piercingPower>
 				</_15_5_cm_AP_Shin_Toku_Kou>
 				<_15_5_cm_HE_Shin>
 					<defaultPortion>
@@ -10412,7 +10408,7 @@
 						<!--BW_String-->
 					</gravity>
 					<maxDistance>720</maxDistance>
-					<piercingPower>100</piercingPower>
+					<piercingPower>90 90</piercingPower>
 				</_15_5_cm_HE_Shin>
 			</shots>
 		</_15_5_cm_Gun_Shin>
@@ -10423,15 +10419,15 @@
 			<price>500000</price>
 			<notInShop>True</notInShop>
 			<reloadTime>
-				62.58
+				30.0
 				<!--BW_String-->
 			</reloadTime>
 			<aimingTime>
-				10.43
+				2.1
 				<!--BW_String-->
 			</aimingTime>
 			<shotDispersionRadius>
-				1.04
+				0.4
 				<!--BW_String-->
 			</shotDispersionRadius>
 			<shotDispersionFactors>
@@ -10449,7 +10445,7 @@
 				</whileGunDamaged>
 			</shotDispersionFactors>
 			<invisibilityFactorAtShot>
-				0.1
+				0.26
 				<!--BW_String-->
 			</invisibilityFactorAtShot>
 			<shots>
@@ -10464,7 +10460,7 @@
 						<!--BW_String-->
 					</gravity>
 					<maxDistance>720</maxDistance>
-					<piercingPower>100</piercingPower>
+					<piercingPower>80 80</piercingPower>
 				</_12_cm_Shisei_HE_Funshindan>
 			</shots>
 		</_12_cm_Shisei_Funshinhou>

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from constants import QUEUE_TYPE
 from gui.prb_control.dispatcher import g_prbLoader
 from gui.prb_control.entities.base.ctx import PrbAction

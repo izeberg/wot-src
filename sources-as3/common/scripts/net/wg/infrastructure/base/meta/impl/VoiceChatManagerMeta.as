@@ -11,8 +11,6 @@ package net.wg.infrastructure.base.meta.impl
       
       public var isVivox:Function;
       
-      public var isYY:Function;
-      
       public var isVOIPEnabled:Function;
       
       public var isVOIPAvailable:Function;
@@ -32,12 +30,6 @@ package net.wg.infrastructure.base.meta.impl
       {
          App.utils.asserter.assertNotNull(this.isVivox,"isVivox" + Errors.CANT_NULL);
          return this.isVivox();
-      }
-      
-      public function isYYS() : Boolean
-      {
-         App.utils.asserter.assertNotNull(this.isYY,"isYY" + Errors.CANT_NULL);
-         return this.isYY();
       }
       
       public function isVOIPEnabledS() : Boolean

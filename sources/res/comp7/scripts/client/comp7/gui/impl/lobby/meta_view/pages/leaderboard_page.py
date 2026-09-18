@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, BigWorld, adisp, typing
 from comp7.gui.impl.gen.view_models.views.lobby.enums import MetaRootViews, Rank
 from comp7.gui.impl.gen.view_models.views.lobby.meta_view.pages.leaderboard_model import LeaderboardModel, State
@@ -48,11 +49,13 @@ class LeaderboardPage(PageSubModelPresenter):
     def createToolTipContent(self, event, contentID):
         if contentID == R.views.comp7.mono.lobby.tooltips.fifth_rank_tooltip():
             return FifthRankTooltip()
-        if contentID == R.views.comp7.mono.lobby.tooltips.sixth_rank_tooltip():
-            return SixthRankTooltip()
-        if contentID == R.views.comp7.mono.lobby.tooltips.last_update_tooltip():
-            description = event.getArgument('description')
-            return LastUpdateTooltip(description, updateTime=self.__lastUpdateTime)
+        else:
+            if contentID == R.views.comp7.mono.lobby.tooltips.sixth_rank_tooltip():
+                return SixthRankTooltip()
+            if contentID == R.views.comp7.mono.lobby.tooltips.last_update_tooltip():
+                description = event.getArgument('description')
+                return LastUpdateTooltip(description, updateTime=self.__lastUpdateTime)
+            return
 
     def createContextMenu(self, event):
         if event.contentID == R.views.common.BackportContextMenu():

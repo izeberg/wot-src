@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from comp7_core.gui.impl.battle.ammunition_panel.prebattle_ammunition_panel_view import Comp7CorePrebattleAmmunitionPanelView
 from helpers import dependency
 from skeletons.gui.game_control import IComp7Controller

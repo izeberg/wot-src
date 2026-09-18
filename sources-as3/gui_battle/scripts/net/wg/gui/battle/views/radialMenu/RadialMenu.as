@@ -31,6 +31,14 @@ package net.wg.gui.battle.views.radialMenu
       
       private static const POINT_RADIUS:int = 190;
       
+      private static const INTERNAL_MENU_RADIUS_SQUARED:int = INTERNAL_MENU_RADIUS * INTERNAL_MENU_RADIUS;
+      
+      private static const POINT_RADIUS_SQUARED:int = POINT_RADIUS * POINT_RADIUS;
+      
+      private static const DEGREES_IN_RADIAN:Number = 180 / Math.PI;
+      
+      private static const CONTENT_AXIS_ANGLE:Number = -90;
+      
       private static const EFFECT_TIME:int = 900;
       
       private static const PAUSE_BEFORE_HIDE:int = 300;
@@ -75,10 +83,6 @@ package net.wg.gui.battle.views.radialMenu
       private var _stageHeight:int = 0;
       
       private var _wheelPosition:int = -1;
-      
-      private var _scaleKoefX:Number = 1;
-      
-      private var _scaleKoefY:Number = 1;
       
       private var _mouseOffset:Point;
       
@@ -142,23 +146,7 @@ package net.wg.gui.battle.views.radialMenu
          this.internalShow(param1,param2);
          x = param6[0];
          y = param6[1];
-      }
-      
-      protected function updateColor(param1:String) : void
-      {
-         if(RADIAL_MENU_CONSTS.GREEN_TARGET_STATES.indexOf(param1) >= 0)
-         {
-            this.color = RADIAL_MENU_CONSTS.GREEN_STATE;
-            this.backgroundColor = param1 == RADIAL_MENU_CONSTS.TARGET_STATE_ALLY ? RADIAL_MENU_CONSTS.GREEN_STATE : RADIAL_MENU_CONSTS.GREEN_STATE_2;
-         }
-         else if(RADIAL_MENU_CONSTS.RED_TARGET_STATES.indexOf(param1) >= 0)
-         {
-            this.color = this.backgroundColor = !!this._isColorBlind ? RADIAL_MENU_CONSTS.PURPLE_STATE : RADIAL_MENU_CONSTS.RED_STATE;
-         }
-         else
-         {
-            this.color = this.backgroundColor = RADIAL_MENU_CONSTS.ORANGE_STATE;
-         }
+         this.background.redraw();
       }
       
       override protected function draw() : void
@@ -240,6 +228,23 @@ package net.wg.gui.battle.views.radialMenu
          invalidateSize();
       }
       
+      protected function updateColor(param1:String) : void
+      {
+         if(RADIAL_MENU_CONSTS.GREEN_TARGET_STATES.indexOf(param1) >= 0)
+         {
+            this.color = RADIAL_MENU_CONSTS.GREEN_STATE;
+            this.backgroundColor = param1 == RADIAL_MENU_CONSTS.TARGET_STATE_ALLY ? RADIAL_MENU_CONSTS.GREEN_STATE : RADIAL_MENU_CONSTS.GREEN_STATE_2;
+         }
+         else if(RADIAL_MENU_CONSTS.RED_TARGET_STATES.indexOf(param1) >= 0)
+         {
+            this.color = this.backgroundColor = !!this._isColorBlind ? RADIAL_MENU_CONSTS.PURPLE_STATE : RADIAL_MENU_CONSTS.RED_STATE;
+         }
+         else
+         {
+            this.color = this.backgroundColor = RADIAL_MENU_CONSTS.ORANGE_STATE;
+         }
+      }
+      
       private function updateDataForWithShortcutsArray(param1:Array, param2:Boolean) : void
       {
          var _loc3_:RadialButton = null;
@@ -294,7 +299,7 @@ package net.wg.gui.battle.views.radialMenu
          {
             param1.state = InteractiveStates.OVER;
             param1.selected = true;
-            if(param1.buttonVisualState != RADIAL_MENU_CONSTS.EMPTY_BUTTON_STATE || param1.buttonVisualState != RADIAL_MENU_CONSTS.DISABLED_BUTTON_STATE)
+            if(param1.buttonVisualState != RADIAL_MENU_CONSTS.EMPTY_BUTTON_STATE && param1.buttonVisualState != RADIAL_MENU_CONSTS.DISABLED_BUTTON_STATE)
             {
                onSelectS();
             }
@@ -318,8 +323,6 @@ package net.wg.gui.battle.views.radialMenu
       
       private function internalShow(param1:Number, param2:Number) : void
       {
-         this._scaleKoefX = 1 / App.stage.scaleX;
-         this._scaleKoefY = 1 / App.stage.scaleY;
          this._hideWithAnimationState = false;
          visible = true;
          this.background.visible = true;
@@ -369,7 +372,8 @@ package net.wg.gui.battle.views.radialMenu
       {
          visible = false;
          this._hideWithAnimationState = false;
-         this._mouseOffset = new Point(0,0);
+         this._mouseOffset.x = 0;
+         this._mouseOffset.y = 0;
          this._wheelPosition = -1;
          this.arrowElement.visible = false;
          if(App.stage)
@@ -414,7 +418,7 @@ package net.wg.gui.battle.views.radialMenu
             return;
          }
          var _loc1_:Boolean = false;
-         var _loc3_:Number = 0;
+         var _loc3_:uint = 0;
          while(_loc3_ < this._buttonsCount)
          {
             _loc2_ = this._buttons[_loc3_];
@@ -449,64 +453,56 @@ package net.wg.gui.battle.views.radialMenu
       private function checkButtonSelectionWithMouse(param1:Number, param2:Number) : void
       {
          var _loc3_:uint = 0;
-         var _loc4_:Point = null;
-         var _loc5_:int = 0;
-         var _loc6_:int = 0;
-         var _loc7_:Number = NaN;
-         var _loc8_:Number = NaN;
-         var _loc9_:Number = NaN;
-         var _loc10_:Number = NaN;
-         var _loc11_:Number = NaN;
-         var _loc12_:RadialButton = null;
-         if(this.visible && !this._isAction)
+         if(!this.visible || this._isAction)
          {
-            this._wheelPosition = -1;
-            _loc3_ = 0;
-            _loc4_ = new Point(param1,param2);
-            _loc5_ = _loc4_.x - this._mouseOffset.x;
-            _loc6_ = _loc4_.y - this._mouseOffset.y;
-            _loc7_ = Math.sqrt(_loc5_ * _loc5_ + _loc6_ * _loc6_);
-            if(_loc7_ <= INTERNAL_MENU_RADIUS)
-            {
-               while(_loc3_ < this._buttonsCount)
-               {
-                  this.unSelectButton(this._buttons[_loc3_]);
-                  _loc3_++;
-               }
-               this.arrowElement.visible = false;
-               return;
-            }
-            _loc9_ = Math.atan2(_loc6_,_loc5_);
-            _loc10_ = POINT_RADIUS * Math.cos(_loc9_);
-            _loc11_ = POINT_RADIUS * Math.sin(_loc9_);
-            _loc4_.x = _loc10_;
-            _loc4_.y = _loc11_;
-            if(_loc7_ > POINT_RADIUS)
-            {
-               this._mouseOffset.x = this.mouseX - _loc10_;
-               this._mouseOffset.y = this.mouseY - _loc11_;
-            }
-            if(_loc7_ > INTERNAL_MENU_RADIUS)
-            {
-               _loc4_ = this.localToGlobal(_loc4_);
-               while(_loc3_ < this._buttonsCount)
-               {
-                  _loc12_ = this._buttons[_loc3_];
-                  if(_loc12_.hitAreaSpr.hitTestPoint(_loc4_.x * this._scaleKoefX,_loc4_.y * this._scaleKoefY,true))
-                  {
-                     this.selectButton(_loc12_);
-                  }
-                  else
-                  {
-                     this.unSelectButton(_loc12_);
-                  }
-                  _loc3_++;
-               }
-            }
-            _loc8_ = Math.atan2(_loc6_,_loc5_) * 180 / Math.PI;
-            this.arrowElement.rotation = _loc8_;
-            this.arrowElement.visible = this.visible;
+            return;
          }
+         this._wheelPosition = -1;
+         var _loc4_:int = param1 - this._mouseOffset.x;
+         var _loc5_:int = param2 - this._mouseOffset.y;
+         var _loc6_:int = _loc4_ * _loc4_ + _loc5_ * _loc5_;
+         if(_loc6_ <= INTERNAL_MENU_RADIUS_SQUARED)
+         {
+            _loc3_ = 0;
+            while(_loc3_ < this._buttonsCount)
+            {
+               this.unSelectButton(this._buttons[_loc3_]);
+               _loc3_++;
+            }
+            this.arrowElement.visible = false;
+            return;
+         }
+         var _loc7_:Number = Math.atan2(_loc5_,_loc4_);
+         if(_loc6_ > POINT_RADIUS_SQUARED)
+         {
+            this._mouseOffset.x = this.mouseX - POINT_RADIUS * Math.cos(_loc7_);
+            this._mouseOffset.y = this.mouseY - POINT_RADIUS * Math.sin(_loc7_);
+         }
+         var _loc8_:Number = _loc7_ * DEGREES_IN_RADIAN;
+         var _loc9_:uint = this.getButtonIndexByAngle(_loc8_);
+         _loc3_ = 0;
+         while(_loc3_ < this._buttonsCount)
+         {
+            if(_loc3_ == _loc9_)
+            {
+               this.selectButton(this._buttons[_loc3_]);
+            }
+            else
+            {
+               this.unSelectButton(this._buttons[_loc3_]);
+            }
+            _loc3_++;
+         }
+         this.arrowElement.rotation = _loc8_;
+         this.arrowElement.visible = true;
+      }
+      
+      private function getButtonIndexByAngle(param1:Number) : uint
+      {
+         var _loc2_:Number = CIRCLE_DEGREES / this._buttonsCount;
+         var _loc3_:Number = OFFSET_ANGLE + CONTENT_AXIS_ANGLE;
+         var _loc4_:int = Math.floor((param1 - _loc3_ + _loc2_ * 0.5) / _loc2_);
+         return (_loc4_ % this._buttonsCount + this._buttonsCount) % this._buttonsCount;
       }
       
       override public function get visible() : Boolean

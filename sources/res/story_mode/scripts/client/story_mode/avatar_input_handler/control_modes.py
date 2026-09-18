@@ -1,3 +1,4 @@
+from __future__ import absolute_import, division
 import math, typing, BigWorld, CommandMapping, GUI, Keys, Math, SoundGroups, math_utils
 from AvatarInputHandler import aih_global_binding
 from AvatarInputHandler.DynamicCameras.ArcadeCamera import ArcadeCamera
@@ -126,7 +127,7 @@ class SMStrategicCamera(StrategicCamera):
                 newDistance = prevDistance - dy * self.getCurSense()
                 if self.minApplyRadius > 0 and newDistance < self.minApplyRadius and dy > 0:
                     dy *= (prevDistance - self.minApplyRadius) / (prevDistance - newDistance)
-                if self.maxApplyRadius > 0 and newDistance > self.maxApplyRadius and dy < 0:
+                if self.maxApplyRadius and newDistance > self.maxApplyRadius and dy < 0:
                     dy *= (self.maxApplyRadius - prevDistance) / (newDistance - prevDistance)
             else:
                 delta = Math.Vector3(float(dx), 0, float(-dy)) * self.getCurSense()

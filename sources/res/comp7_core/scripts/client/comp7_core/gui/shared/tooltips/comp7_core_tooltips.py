@@ -1,6 +1,7 @@
-import logging
+from __future__ import absolute_import
+import logging, typing
 from copy import copy
-import typing
+from future.utils import lfilter, viewitems
 from gui import g_htmlTemplates
 from gui.Scaleform.genConsts.BLOCKS_TOOLTIP_TYPES import BLOCKS_TOOLTIP_TYPES
 from gui.impl import backport
@@ -75,7 +76,7 @@ class RoleSkillLobbyTooltipData(BlocksTooltipData):
             _logger.error('Missing Role Skill = %s', equipmentName)
             return []
         else:
-            items = filter(None, [
+            items = lfilter(None, [
              self.__packHeaderBlock(equipment, roleName, self._modeController),
              self.__packDescriptionBlock(equipment, roleName, startLevel, self._modeController),
              self.__packInfoBlock()])
@@ -149,7 +150,7 @@ def getRoleSkillDescription(equipment, roleName, startLevel, modeController):
             tooltipParams = preprocessor.processParams(copy(tooltipParams))
             break
 
-    for k, v in tooltipParams.iteritems():
+    for k, v in viewitems(tooltipParams):
         if isinstance(v, tuple):
             for level, levelValue in enumerate(v):
                 levelKey = ('_').join((k, str(level + 1)))

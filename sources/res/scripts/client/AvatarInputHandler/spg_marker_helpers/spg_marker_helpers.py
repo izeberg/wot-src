@@ -1,3 +1,4 @@
+from __future__ import absolute_import, division
 from enum import IntEnum
 import BigWorld, math_utils
 from AvatarInputHandler import AimingSystems

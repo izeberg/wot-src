@@ -1,4 +1,5 @@
-from itertools import ifilter
+from __future__ import absolute_import
+from builtins import filter
 from debug_utils import LOG_WARNING, LOG_DEBUG
 
 class IIncomingMessageFilter(object):
@@ -92,7 +93,7 @@ class FiltersChain(object):
         return
 
     def __getInFilterByName(self, name):
-        return next(ifilter(lambda inFilter: inFilter['name'] == name, self.__inFilters), None)
+        return next(filter(lambda inFilter: inFilter['name'] == name, self.__inFilters), None)
 
     def __doRemoveInFilter(self, name):
         result = False
@@ -119,9 +120,9 @@ class FiltersChain(object):
         return result
 
     def __prepareInFilters(self):
-        self.__inFilters = sorted(self.__inFilters, cmp=lambda item, other: cmp(item['order'], other['order']))
+        self.__inFilters = sorted(self.__inFilters, key=lambda item: item['order'])
         self.__inFilterNames = dict((f['name'], idx) for idx, f in enumerate(self.__inFilters))
 
     def __prepareOutFilters(self):
-        self.__outFilters = sorted(self.__outFilters, cmp=lambda item, other: cmp(item['order'], other['order']))
+        self.__outFilters = sorted(self.__outFilters, key=lambda item: item['order'])
         self.__outFilterNames = dict((f['name'], idx) for idx, f in enumerate(self.__outFilters))

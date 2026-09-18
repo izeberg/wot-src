@@ -1,6 +1,7 @@
+from __future__ import absolute_import
+from gui.doc_loaders.manual_xml_data_reader import getPagesIndexesList
 from helpers import dependency
 from skeletons.gui.game_control import IManualController
-from gui.doc_loaders.manual_xml_data_reader import getPagesIndexesList
 from web.web_client_api import W2CSchema, w2c, Field
 
 def _chapterIndexValidator(key, _):

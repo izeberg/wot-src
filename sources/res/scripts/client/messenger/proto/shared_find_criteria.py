@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from debug_utils import LOG_WARNING
 from messenger.m_constants import USER_TAG
 from messenger.proto.interfaces import IEntityFindCriteria
@@ -28,8 +29,8 @@ class OnlineFindCriteria(IEntityFindCriteria):
             self.__onlineMode = onlineMode
         return result
 
-    def filter(self, user):
-        return self._checkOnlineMode(user)
+    def filter(self, entity):
+        return self._checkOnlineMode(entity)
 
     def _checkOnlineMode(self, user):
         result = True
@@ -50,8 +51,8 @@ class UserTagsFindCriteria(OnlineFindCriteria):
     def removeTags(self, tags):
         self._tags = self._tags.difference(tags)
 
-    def filter(self, user):
-        return user.getTags() & self._tags and self._checkOnlineMode(user)
+    def filter(self, entity):
+        return entity.getTags() & self._tags and self._checkOnlineMode(entity)
 
 
 class FriendsFindCriteria(UserTagsFindCriteria):
@@ -63,9 +64,9 @@ class FriendsFindCriteria(UserTagsFindCriteria):
 
 class MutualFriendsFindCriteria(FriendsFindCriteria):
 
-    def filter(self, user):
-        friendsFilter = super(MutualFriendsFindCriteria, self).filter(user)
-        return friendsFilter and not user.getTags() & {USER_TAG.SUB_PENDING_OUT, USER_TAG.SUB_NONE}
+    def filter(self, entity):
+        friendsFilter = super(MutualFriendsFindCriteria, self).filter(entity)
+        return friendsFilter and not entity.getTags() & {USER_TAG.SUB_PENDING_OUT, USER_TAG.SUB_NONE}
 
 
 class PendingFriendsCandidatesFindCriteria(UserTagsFindCriteria):

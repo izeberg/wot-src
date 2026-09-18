@@ -20,9 +20,9 @@ from gui.shared.utils.decorators import ReprInjector
 from gui.Scaleform.genConsts.AUTOLOADERBOOSTVIEWSTATES import AUTOLOADERBOOSTVIEWSTATES
 from ReloadEffect import ReloadEffectStrategy
 from items import vehicles
+from items.vehicle_mechanics_types import VehicleMechanicKeys
 from math_common import round_py2_style_int
 from skeletons.gui.battle_session import IBattleSessionProvider
-from vehicles.mechanics.mechanic_constants import VehicleMechanic
 from vehicles.mechanics.mechanic_helpers import isMechanicInMechanicsParams, getMechanicFromMechanicsParams
 from helpers import dependency
 if typing.TYPE_CHECKING:
@@ -94,7 +94,7 @@ class _GunSettings(object):
 
     @cached_property
     def isShellCalibration(self):
-        return isMechanicInMechanicsParams(self.mechanicsParams, VehicleMechanic.SHELL_CALIBRATION)
+        return isMechanicInMechanicsParams(self.mechanicsParams, VehicleMechanicKeys.SHELL_CALIBRATION)
 
     @cached_property
     def isDualGun(self):
@@ -106,7 +106,7 @@ class _GunSettings(object):
 
     @cached_property
     def temperatureParams(self):
-        return getMechanicFromMechanicsParams(self.mechanicsParams, VehicleMechanic.TEMPERATURE_GUN)
+        return getMechanicFromMechanicsParams(self.mechanicsParams, VehicleMechanicKeys.TEMPERATURE_GUN)
 
     @cached_property
     def isUnlimitedClip(self):
@@ -144,6 +144,12 @@ class _GunSettings(object):
 
     def hasAutoReload(self):
         return self.autoReload is not None
+
+    def hasAutoBoost(self):
+        if self.autoReload is None:
+            return False
+        else:
+            return self.autoReload.boostFraction > 0 and self.autoReload.boostStartTime > 0 and self.autoReload.boostResidueTime > 0
 
     def hasShellChangeFactor(self):
         return self.shellChangeFactor > 0.0
@@ -724,6 +730,11 @@ class AmmoController(MethodsRules, ViewComponentsController):
                 if not (quantityClip == 1 and timeLeft == 0 and not self.__gunSettings.hasAutoReload() or quantityClip <= 1 and timeLeft != 0 or self.__gunSettings.isControllableReload and timeLeft != 0 and quantityClip != 0):
                     if interval <= baseTime:
                         baseTime = interval
+            elif self.__gunSettings.hasAutoReload() and not self.__gunSettings.hasAutoBoost():
+                if shellsInClip <= 1:
+                    baseTime = self.__shellChangeTime
+                elif interval <= baseTime:
+                    baseTime = interval
             elif not (shellsInClip == 1 and timeLeft == 0 and not self.__gunSettings.hasAutoReload() or shellsInClip == 0 and timeLeft != 0 or shellsInClip == 1 and timeLeft != 0 and self.__gunSettings.hasExtraShot() or self.__gunSettings.isControllableReload and timeLeft != 0 and shellsInClip != 0):
                 if interval <= baseTime:
                     baseTime = interval
@@ -793,7 +804,7 @@ class AmmoController(MethodsRules, ViewComponentsController):
             if predictedTime > 0.0:
                 baseTime = oneShellReloadTime * (shellsToReload + shellsInClipLeft)
                 timeLeft = predictedTime
-        ammoStates[VehicleMechanic.STATIONARY_RELOAD.value] = ammoState
+        ammoStates[VehicleMechanicKeys.STATIONARY_RELOAD.uniqueName] = ammoState
         return (timeLeft, baseTime, ammoStates)
 
     def setClipReloadTime(self, timeLeft, baseTime, firstClipBaseTime, isSlowed, isBoostApplicable, clipTime=None):
@@ -923,6 +934,9 @@ class AmmoController(MethodsRules, ViewComponentsController):
         if self.__gunSettings.getShotIndex(intCD) < 0:
             _logger.warning('Trying to set data for shell %d, which is not suitable for current gun', intCD)
             return result
+        if self.__gunSettings.hasAutoReload() and quantityInClip > 1 and not self.__gunSettings.hasAutoBoost():
+            self._reloadingState.setTimes(self._reloadingState.getActualValue(), self.__gunSettings.getClipInterval())
+            self.onGunReloadTimeSet(self.__currShellCD, self.getGunReloadingState(), False)
         if intCD in self.__ammo:
             prevAmmo = self.__ammo[intCD]
             self.__ammo[intCD] = (

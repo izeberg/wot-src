@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.prb_control.entities.base.pre_queue.permissions import PreQueuePermissions
 from helpers import dependency
 from skeletons.gui.game_control import IComp7LightController

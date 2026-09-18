@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from frontline.constants.aliases import FrontlineHangarAliases
 from frameworks.wulf import ViewSettings, WindowFlags, ViewFlags
 from gui.Scaleform.framework.entities.View import ViewKey

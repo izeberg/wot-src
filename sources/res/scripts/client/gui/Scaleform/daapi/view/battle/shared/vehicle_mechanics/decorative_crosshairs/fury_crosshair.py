@@ -6,7 +6,7 @@ from events_handler import eventHandler
 from gui.Scaleform.daapi.view.meta.FuryDecorativeCrosshairMeta import FuryDecorativeCrosshairMeta
 from gui.veh_mechanics.battle.updaters.mechanics.mechanic_passenger_updater import VehicleMechanicPassengerUpdater
 from gui.veh_mechanics.battle.updaters.mechanics.mechanic_states_updater import VehicleMechanicStatesUpdater
-from vehicles.mechanics.mechanic_constants import VehicleMechanic
+from items.vehicle_mechanics_types import VehicleMechanicKeys
 from vehicles.mechanics.mechanic_states import IMechanicStatesListenerLogic
 if typing.TYPE_CHECKING:
     from typing import List
@@ -44,8 +44,8 @@ class FuryDecorativeCrosshair(FuryDecorativeCrosshairMeta, ContainersListener, I
 
     def _getViewUpdaters(self):
         return [
-         VehicleMechanicPassengerUpdater(VehicleMechanic.BATTLE_FURY, self),
-         VehicleMechanicStatesUpdater(VehicleMechanic.BATTLE_FURY, self)]
+         VehicleMechanicPassengerUpdater(VehicleMechanicKeys.BATTLE_FURY, self),
+         VehicleMechanicStatesUpdater(VehicleMechanicKeys.BATTLE_FURY, self)]
 
     def __onReplayTimeWarpFinished(self):
         self.as_setGunStackProgressS(self.__level, self.__progress)

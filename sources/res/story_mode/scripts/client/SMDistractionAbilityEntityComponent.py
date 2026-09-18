@@ -1,3 +1,4 @@
+from __future__ import absolute_import, division
 import AnimationSequence, BigWorld, Math
 from Event import Event
 from helpers import dependency

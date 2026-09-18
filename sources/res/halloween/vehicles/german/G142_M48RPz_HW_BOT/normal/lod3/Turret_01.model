@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>halloween/vehicles/german/G142_M48RPz_HW_BOT/normal/lod3/Turret_01</nodefullVisual>
+	<parent>halloween/vehicles/german/G142_M48RPz_HW_BOT/normal/lod4/Turret_01</parent>
+	<extent>192.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.328368 -0.031195 -2.397514</min>
+		<max>1.510531 1.308045 1.252292</max>
+	</visibilityBox>
+</root>

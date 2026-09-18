@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from helpers import dependency
 from gui.shared import event_dispatcher
 from skeletons.gui.shared import IItemsCache

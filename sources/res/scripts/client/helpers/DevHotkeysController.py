@@ -1,4 +1,5 @@
-import Keys, os, subprocess
+from __future__ import absolute_import
+import os, subprocess, Keys
 
 def handleKeyEvent(event):
     if event.isShiftDown() and event.isCtrlDown() and event.isAltDown() and event.isKeyDown() and not event.isRepeatedEvent():

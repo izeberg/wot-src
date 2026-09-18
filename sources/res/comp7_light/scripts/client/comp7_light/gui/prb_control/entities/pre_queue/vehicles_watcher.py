@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from itertools import chain
 import typing
 from comp7_light_constants import BATTLE_MODE_VEH_TAGS_EXCEPT_COMP7_LIGHT, Configs

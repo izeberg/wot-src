@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, typing, Event
 from ..py_object_binder import PyObjectEntity
 from .windows_area import WindowsArea

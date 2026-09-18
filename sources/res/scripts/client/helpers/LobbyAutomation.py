@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld
 from frameworks.wulf import WindowLayer
 from gui.Scaleform.Waiting import Waiting

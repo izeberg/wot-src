@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>nodes_01</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>Leg_01</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>hip</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 -0.000000 0.000000</row3>
+					</transform>
+					<node>
+						<identifier>toe1</identifier>
+						<transform>
+							<row0>0.697224 -0.716854 0.000000</row0>
+							<row1>0.716854 0.697224 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>-0.000000 0.000000 0.000000</row3>
+						</transform>
+						<node>
+							<identifier>toe2</identifier>
+							<transform>
+								<row0>0.032384 0.999476 0.000000</row0>
+								<row1>-0.999476 0.032384 0.000000</row1>
+								<row2>0.000000 0.000000 1.000000</row2>
+								<row3>2.582381 0.000000 0.000000</row3>
+							</transform>
+							<node>
+								<identifier>toe3</identifier>
+								<transform>
+									<row0>-0.080272 -0.996773 0.000000</row0>
+									<row1>0.996773 -0.080272 0.000000</row1>
+									<row2>0.000000 0.000000 1.000000</row2>
+									<row3>3.239999 0.000000 -0.000000</row3>
+								</transform>
+								<node>
+									<identifier>toe4</identifier>
+									<transform>
+										<row0>0.790746 -0.612144 0.000000</row0>
+										<row1>0.612144 0.790746 0.000000</row1>
+										<row2>0.000000 0.000000 1.000000</row2>
+										<row3>3.240001 0.000000 0.000000</row3>
+									</transform>
+									<node>
+										<identifier>foot</identifier>
+										<transform>
+											<row0>1.000000 0.000000 0.000000</row0>
+											<row1>0.000000 1.000000 0.000000</row1>
+											<row2>0.000000 0.000000 1.000000</row2>
+											<row3>0.769398 0.000000 -0.000000</row3>
+										</transform>
+										<node>
+											<identifier>foot_BlendBone</identifier>
+											<transform>
+												<row0>-0.000000 1.000000 0.000000</row0>
+												<row1>-1.000000 -0.000000 0.000000</row1>
+												<row2>-0.000000 0.000000 -1.000000</row2>
+												<row3>-3.000000 -6.178387 0.000000</row3>
+											</transform>
+										</node>
+									</node>
+									<node>
+										<identifier>toe4_BlendBone</identifier>
+										<transform>
+											<row0>-0.000000 1.000000 0.000000</row0>
+											<row1>-1.000000 -0.000000 0.000000</row1>
+											<row2>-0.000000 0.000000 -1.000000</row2>
+											<row3>-2.230602 -6.178387 0.000000</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>toe3_BlendBone</identifier>
+									<transform>
+										<row0>0.612144 0.790746 0.000000</row0>
+										<row1>-0.790746 0.612144 0.000000</row1>
+										<row2>0.000000 0.000000 -1.000000</row2>
+										<row3>-2.305904 -3.520085 0.000000</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>toe2_BlendBone</identifier>
+								<transform>
+									<row0>0.739057 -0.673643 0.000000</row0>
+									<row1>0.673643 0.739057 0.000000</row1>
+									<row2>0.000000 0.000000 -1.000000</row2>
+									<row3>-0.083628 2.581026 0.000000</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>toe1_BlendBone</identifier>
+							<transform>
+								<row0>0.697224 0.716854 0.000000</row0>
+								<row1>-0.716854 0.697224 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>0.000000 0.000000 0.000000</row3>
+							</transform>
+						</node>
+					</node>
+				</node>
+				<node>
+					<identifier>Leg_01_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>toe1_BlendBone</node>
+		<node>toe2_BlendBone</node>
+		<node>toe3_BlendBone</node>
+		<node>toe4_BlendBone</node>
+		<node>foot_BlendBone</node>
+		<geometry>
+			<vertices>Leg_01_Shape.vertices</vertices>
+			<primitive>Leg_01_Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_chassis_01_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						diffuseMap
+						<Texture>halloween/vehicles/german/G00_Spider_Boss_HW26_bot/Spider_Boss_HW26_bot_chassis_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>halloween/vehicles/german/G00_Spider_Boss_HW26_bot/Spider_Boss_HW26_bot_chassis_01_AO.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>halloween/vehicles/german/G00_Spider_Boss_HW26_bot/Spider_Boss_HW26_bot_chassis_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>halloween/vehicles/german/G00_Spider_Boss_HW26_bot/Spider_Boss_HW26_bot_chassis_01_ANM.dds</Texture>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>4.000000 4.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_defaultDetail
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_detailMetallicCutoff
+						<Float>1.000000</Float>
+					</property>
+					<property>
+						g_detailParams
+						<matrix>
+							<element>76615680</element>
+							<element>0</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>285151232</element>
+							<element>912654336</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>298588160</element>
+							<element>952958976</element>
+							<element>867375104</element>
+							<element>939524096</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>1325338624</element>
+							<element>1006632960</element>
+						</matrix>
+					</property>
+					<property>
+						g_dirtLevel
+						<Float>0.600000</Float>
+					</property>
+					<property>
+						g_glossMax
+						<Float>0.600000</Float>
+					</property>
+					<property>
+						g_glossMin
+						<Float>0.000000</Float>
+					</property>
+				</material>
+				<groupOrigin>3.234672 -0.720208 -0.000000</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-0.897549 -3.010301 -2.156667</min>
+		<max>7.366892 1.569884 2.156668</max>
+	</boundingBox>
+	<geometrySize>141096</geometrySize>
+</root>

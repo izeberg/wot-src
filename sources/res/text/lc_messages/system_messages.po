@@ -2294,11 +2294,6 @@ msgstr ""
 "Ошибка при обслуживании «%(vehName)s». Недостаточно золота для покупки "
 "снаряжения."
 
-msgid "layout_apply/EQS_NO_WALLET_SESSION"
-msgstr ""
-"Операция невозможна. Всё ваше золото станет доступно после автоматического "
-"восстановления работоспособности Единого кошелька."
-
 msgid "layout_apply/NOT_RESEARCHED_ITEM"
 msgstr ""
 "Ошибка при обслуживании «%(vehName)s». Невозможно пополнить снаряжение. "
@@ -2316,11 +2311,6 @@ msgid "layout_apply/SHELLS_NO_GOLD"
 msgstr ""
 "Ошибка при обслуживании «%(vehName)s». Недостаточно золота для покупки "
 "снарядов."
-
-msgid "layout_apply/SHELLS_NO_WALLET_SESSION"
-msgstr ""
-"Операция невозможна. Всё ваше золото станет доступно после автоматического "
-"восстановления работоспособности Единого кошелька."
 
 msgid "layout_apply/Vehicle is locked"
 msgstr "Ошибка при обслуживании «%(vehName)s». Машина заблокирована."
@@ -4682,7 +4672,7 @@ msgstr ""
 "свободного опыта %(freeXP)s."
 
 msgid "vehicleMilestones/vanityAvailable/text"
-msgstr "Получен доступ к системе элитных наград для %(vehicle)s"
+msgstr "Получен доступ к системе элитных наград для %(vehicle)s."
 
 msgid "vehicleMilestones/vanityAvailable/title"
 msgstr "Элитные награды"

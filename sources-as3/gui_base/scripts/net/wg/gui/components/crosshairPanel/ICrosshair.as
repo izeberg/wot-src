@@ -3,6 +3,7 @@ package net.wg.gui.components.crosshairPanel
    import net.wg.gui.components.crosshairPanel.VO.GunMarkerIndicatorVO;
    import net.wg.gui.components.crosshairPanel.components.autoloader.BoostIndicatorStateParamsVO;
    import net.wg.infrastructure.interfaces.IDisplayObject;
+   import net.wg.infrastructure.interfaces.ILayoutPart;
    import net.wg.infrastructure.interfaces.entity.IDisposable;
    
    public interface ICrosshair extends IDisposable, IDisplayObject
@@ -82,6 +83,10 @@ package net.wg.gui.components.crosshairPanel
       function setReloadBoostBorderBlink() : void;
       
       function setReloadBoostBorderVisible(param1:Boolean, param2:Boolean, param3:Boolean) : void;
+      
+      function connectLayout(param1:ILayoutPart) : void;
+      
+      function disconnectLayout(param1:ILayoutPart) : void;
       
       function set reloadBoost(param1:Boolean) : void;
       

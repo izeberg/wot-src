@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/poland/Pl43_Kruk/normal/lod2/Chassis</parent>
+	<extent>64.000000</extent>
+	<nodefullVisual>vehicles/poland/Pl43_Kruk/normal/lod1/Chassis</nodefullVisual>
+	<visibilityBox>
+		<min>-1.716001 -0.002555 -3.183505</min>
+		<max>1.716000 1.131767 3.895714</max>
+	</visibilityBox>
+</root>

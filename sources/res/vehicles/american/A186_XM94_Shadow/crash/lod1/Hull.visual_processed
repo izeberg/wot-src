@@ -83,7 +83,7 @@
 						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.012841 0.130084 -0.054988</groupOrigin>
+				<groupOrigin>0.012841 0.130083 -0.054988</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				1
@@ -125,7 +125,7 @@
 						<Bool>true</Bool>
 					</property>
 				</material>
-				<groupOrigin>-0.000000 -0.315297 -0.004992</groupOrigin>
+				<groupOrigin>-0.000000 -0.315298 -0.004992</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				2
@@ -155,7 +155,7 @@
 						<Bool>true</Bool>
 					</property>
 				</material>
-				<groupOrigin>-0.024977 0.077881 0.029943</groupOrigin>
+				<groupOrigin>-0.024977 0.077880 0.029943</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -163,5 +163,5 @@
 		<min>-1.664508 -0.749163 -3.043545</min>
 		<max>1.690190 0.714817 2.933568</max>
 	</boundingBox>
-	<geometrySize>781038</geometrySize>
+	<geometrySize>814002</geometrySize>
 </root>

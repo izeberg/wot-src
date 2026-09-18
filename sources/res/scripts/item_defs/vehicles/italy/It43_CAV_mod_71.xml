@@ -10,24 +10,24 @@
 	<postProgressionTree>It43_CAV_mod_71</postProgressionTree>
 	<customRoleSlotOptions>3 5</customRoleSlotOptions>
 	<speedLimits>
-		<forward>10</forward>
-		<backward>10</backward>
+		<forward>65</forward>
+		<backward>21</backward>
 	</speedLimits>
 	<invisibility>
 		<moving>
-			0.01
+			0.206
 			<!--BW_String-->
 		</moving>
 		<still>
-			0.01
+			0.275
 			<!--BW_String-->
 		</still>
 		<camouflageBonus>
-			0.0
+			0.03
 			<!--BW_String-->
 		</camouflageBonus>
 		<firePenalty>
-			0.1
+			0.413
 			<!--BW_String-->
 		</firePenalty>
 	</invisibility>
@@ -86,28 +86,28 @@
 	</camouflage>
 	<hull>
 		<armor>
-			<armor_1>10</armor_1>
-			<armor_3>10</armor_3>
-			<armor_4>10</armor_4>
-			<armor_2>10</armor_2>
-			<armor_5>10</armor_5>
-			<armor_6>10</armor_6>
-			<armor_7>10</armor_7>
-			<armor_8>10</armor_8>
-			<armor_9>10</armor_9>
-			<armor_10>10</armor_10>
-			<armor_11>10</armor_11>
-			<armor_12>10</armor_12>
-			<armor_13>10</armor_13>
-			<armor_14>10</armor_14>
+			<armor_1>100</armor_1>
+			<armor_3>40</armor_3>
+			<armor_4>25</armor_4>
+			<armor_2>50</armor_2>
+			<armor_5>30</armor_5>
+			<armor_6>20</armor_6>
+			<armor_7>40</armor_7>
+			<armor_8>0</armor_8>
+			<armor_9>40</armor_9>
+			<armor_10>100</armor_10>
+			<armor_11>50</armor_11>
+			<armor_12>25</armor_12>
+			<armor_13>20</armor_13>
+			<armor_14>15</armor_14>
 			<armor_15>
-				10
+				25
 				<vehicleDamageFactor>0</vehicleDamageFactor>
 			</armor_15>
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
-		<weight>9400</weight>
-		<maxHealth>10</maxHealth>
+		<weight>18871</weight>
+		<maxHealth>1640</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>270</maxHealth>
 			<maxRegenHealth>203</maxRegenHealth>
@@ -966,17 +966,17 @@
 			<price>100000</price>
 			<notInShop>true</notInShop>
 			<armor>
-				<leftTrack>10</leftTrack>
-				<rightTrack>10</rightTrack>
+				<leftTrack>20</leftTrack>
+				<rightTrack>20</rightTrack>
 			</armor>
-			<weight>100</weight>
+			<weight>10000</weight>
 			<terrainResistance>
 				0.8 0.9 1.8
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>40000</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>10</rotationSpeed>
+			<rotationSpeed>54</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.15
@@ -2879,7 +2879,7 @@
 				</right>
 			</physicalTracks>
 			<repairTime>
-				0.649999976
+				6.66666651
 				<!--BW_String-->
 			</repairTime>
 		</Chassis_It43_CAV_mod_71>
@@ -2892,52 +2892,49 @@
 			<price>100000</price>
 			<notInShop>true</notInShop>
 			<armor>
-				<armor_1>10</armor_1>
-				<armor_3>10</armor_3>
-				<armor_4>10</armor_4>
-				<armor_2>10</armor_2>
-				<armor_5>10</armor_5>
-				<armor_6>10</armor_6>
-				<armor_7>10</armor_7>
+				<armor_1>150</armor_1>
+				<armor_3>40</armor_3>
+				<armor_4>30</armor_4>
+				<armor_2>40</armor_2>
+				<armor_5>30</armor_5>
+				<armor_6>15</armor_6>
+				<armor_7>40</armor_7>
 				<armor_8>0</armor_8>
-				<armor_9>10</armor_9>
-				<armor_10>10</armor_10>
-				<armor_11>10</armor_11>
-				<armor_12>10</armor_12>
-				<armor_13>10</armor_13>
-				<armor_14>10</armor_14>
-				<armor_15>10</armor_15>
-				<armor_16>10</armor_16>
-				<armor_17>10</armor_17>
-				<armor_18>10</armor_18>
-				<armor_19>10</armor_19>
-				<armor_20>10</armor_20>
-				<armor_21>10</armor_21>
-				<armor_22>10</armor_22>
-				<armor_23>10</armor_23>
-				<armor_24>10</armor_24>
-				<armor_25>10</armor_25>
-				<armor_26>10</armor_26>
-				<armor_27>10</armor_27>
-				<armor_28>10</armor_28>
-				<armor_29>10</armor_29>
-				<armor_30>10</armor_30>
-				<armor_31>10</armor_31>
-				<armor_32>10</armor_32>
+				<armor_9>40</armor_9>
+				<armor_10>90</armor_10>
+				<armor_11>30</armor_11>
+				<armor_12>30</armor_12>
+				<armor_13>90</armor_13>
+				<armor_14>30</armor_14>
+				<armor_15>30</armor_15>
+				<armor_16>60</armor_16>
+				<armor_17>100</armor_17>
+				<armor_18>70</armor_18>
+				<armor_19>30</armor_19>
+				<armor_20>30</armor_20>
+				<armor_21>30</armor_21>
+				<armor_22>30</armor_22>
+				<armor_23>70</armor_23>
+				<armor_24>70</armor_24>
+				<armor_25>50</armor_25>
+				<armor_26>30</armor_26>
+				<armor_27>100</armor_27>
+				<armor_28>90</armor_28>
+				<armor_29>70</armor_29>
+				<armor_30>60</armor_30>
+				<armor_31>40</armor_31>
+				<armor_32>70</armor_32>
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
-			<weight>100</weight>
-			<maxHealth>10</maxHealth>
-			<rotationSpeed>
-				0.96
-				<!--BW_String-->
-			</rotationSpeed>
+			<weight>8000</weight>
+			<maxHealth>410</maxHealth>
+			<rotationSpeed>34</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>200</maxHealth>
 				<maxRegenHealth>100</maxRegenHealth>
 				<repairCost>11</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>100</circularVisionRadius>
+			<circularVisionRadius>400</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>130</maxHealth>
 				<maxRegenHealth>65</maxRegenHealth>
@@ -2948,26 +2945,26 @@
 					shared
 					<maxAmmo>70</maxAmmo>
 					<armor>
-						<gun>10</gun>
-						<armor_1>10</armor_1>
-						<armor_2>10</armor_2>
-						<armor_3>10</armor_3>
-						<armor_4>10</armor_4>
-						<armor_5>10</armor_5>
-						<armor_7>10</armor_7>
-						<armor_8>10</armor_8>
-						<armor_9>10</armor_9>
-						<armor_10>10</armor_10>
-						<armor_11>10</armor_11>
-						<armor_12>10</armor_12>
-						<armor_13>10</armor_13>
-						<armor_15>10</armor_15>
-						<armor_16>10</armor_16>
-						<armor_17>10</armor_17>
-						<armor_18>10</armor_18>
+						<gun>40</gun>
+						<armor_1>150</armor_1>
+						<armor_2>80</armor_2>
+						<armor_3>40</armor_3>
+						<armor_4>30</armor_4>
+						<armor_5>30</armor_5>
+						<armor_7>60</armor_7>
+						<armor_8>0</armor_8>
+						<armor_9>120</armor_9>
+						<armor_10>40</armor_10>
+						<armor_11>20</armor_11>
+						<armor_12>20</armor_12>
+						<armor_13>30</armor_13>
+						<armor_15>30</armor_15>
+						<armor_16>60</armor_16>
+						<armor_17>100</armor_17>
+						<armor_18>30</armor_18>
 					</armor>
 					<aimingTime>
-						10.43
+						2.1
 						<!--BW_String-->
 					</aimingTime>
 					<shotDispersionFactors>
@@ -2982,33 +2979,30 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<pitchLimits>
-						<minPitch>
-							0.0 -10 1.0 -10
-							<!--BW_String-->
-						</minPitch>
+						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
-							0.0 10 1.0 10
+							0.00000 9.00 0.34722 9.00 0.42222 3.00 0.57778 3.00 0.65278 9.00 1.00000 9.00
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
 					<shotDispersionRadius>
-						1.04
+						0.35
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>60</reloadTime>
+					<reloadTime>
+						15.4
+						<!--BW_String-->
+					</reloadTime>
 					<invisibilityFactorAtShot>
-						0.1
+						0.209
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<clip>
 						<count>4</count>
-						<rate>1</rate>
+						<rate>24</rate>
 					</clip>
 					<autoreload>
-						<reloadTime>
-							1.042 1.042 1.042 1.042
-							<!--BW_String-->
-						</reloadTime>
+						<reloadTime>10 12 14 16</reloadTime>
 					</autoreload>
 					<models>
 						<undamaged>vehicles/italy/It43_CAV_mod_71/normal/lod0/Gun_02.model</undamaged>
@@ -3226,22 +3220,6 @@
 						<density>106.901466 107.360268</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-					<rotationSpeed>
-						0.96
-						<!--BW_String-->
-					</rotationSpeed>
-					<weight>100</weight>
-					<shots>
-						<_105mm_PPS_T_Sperimentale>
-							<piercingPower>100</piercingPower>
-						</_105mm_PPS_T_Sperimentale>
-						<_105mm_Gr_EP_T_Sperimentale>
-							<piercingPower>100</piercingPower>
-						</_105mm_Gr_EP_T_Sperimentale>
-						<_105mm_Gr_D_Sperimentale>
-							<piercingPower>100</piercingPower>
-						</_105mm_Gr_D_Sperimentale>
-					</shots>
 				</Cannone_da_105_55_Sperimentale>
 			</guns>
 			<models>
@@ -3407,7 +3385,7 @@
 		<guns>
 			<Cannone_da_105_55_Sperimentale>
 				<delta>
-					1.0
+					1.443396226
 					<!--BW_String-->
 				</delta>
 			</Cannone_da_105_55_Sperimentale>
@@ -3417,8 +3395,8 @@
 		<detailed>
 			<engines>
 				<OM_Fiat_V12_TCA>
-					<smplEnginePower>10</smplEnginePower>
-					<smplFwMaxSpeed>10</smplFwMaxSpeed>
+					<smplEnginePower>750</smplEnginePower>
+					<smplFwMaxSpeed>65</smplFwMaxSpeed>
 				</OM_Fiat_V12_TCA>
 			</engines>
 			<chassis>
@@ -3450,11 +3428,20 @@
 	</physics>
 	<mechanics>
 		<autoreloaderSurge>
-			<maxCharges>2</maxCharges>
+			<maxCharges>3</maxCharges>
 			<startCharges>1</startCharges>
-			<chargeTimeSRegular>1000</chargeTimeSRegular>
-			<chargeTimeSFullClip>1000</chargeTimeSFullClip>
-			<reloadTime>1000</reloadTime>
+			<chargeTimeSRegular>
+				50.0
+				<!--BW_String-->
+			</chargeTimeSRegular>
+			<chargeTimeSFullClip>
+				18.0
+				<!--BW_String-->
+			</chargeTimeSFullClip>
+			<reloadTime>
+				8.5
+				<!--BW_String-->
+			</reloadTime>
 		</autoreloaderSurge>
 	</mechanics>
 	<effects>

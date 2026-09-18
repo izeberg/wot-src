@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from frameworks.wulf import ViewModel
 from frameworks.wulf.view.view import ViewSettings
 from gui.impl.gen import R

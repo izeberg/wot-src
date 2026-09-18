@@ -1,5 +1,8 @@
-import os, typing, hashlib, json, logging, urlparse, itertools
+from __future__ import absolute_import
+import os, typing, hashlib, json, logging, itertools
 from functools import partial
+from future.moves.urllib import parse
+from future.utils import viewitems
 import BigWorld
 from debug_utils import LOG_CURRENT_EXCEPTION
 from Event import Event, EventManager
@@ -133,7 +136,7 @@ class WebExternalCache(IWebExternalCache):
             self._storage.restartWorker(_WORKERS_LIMIT)
             _logger.info('There are %r new files to download', len(filesToDownload))
             _logger.info('Start downloading...')
-            for url, name in filesToDownload.iteritems():
+            for url, name in viewitems(filesToDownload):
                 self._downloader.download(url, partial(self._onResourceLoaded, name))
 
         else:
@@ -188,7 +191,7 @@ class WebExternalCache(IWebExternalCache):
                 unusedFiles = self._storage.getAppFiles(appName)
                 files = data['files']
                 for curfile in files:
-                    url = urlparse.urljoin(host, curfile)
+                    url = parse.urljoin(host, curfile)
                     url = url.replace(' ', '%20')
                     key = generateKey(url)
                     if key not in self._cache or not self._storage.isAppFileExist(appName, key):
@@ -210,7 +213,7 @@ class WebExternalCache(IWebExternalCache):
         if self._prefetchCnt > 0:
             _logger.info('There are %r new files in manifest', self._prefetchCnt)
             _logger.info('Start downloading...')
-            for url, name in filesToDownload.iteritems():
+            for url, name in viewitems(filesToDownload):
                 self._downloader.downloadLowPriority(url, partial(self._onResourceLoaded, name))
 
         else:
@@ -326,8 +329,8 @@ class BaseExternalCache(WebExternalCache):
             return
         self._cache[key] = filename
         _logger.debug('Config: %s saved on disk as: %s.', url, filename)
-        parsedUrl = urlparse.urlparse(url)
-        host = urlparse.urlunsplit((parsedUrl.scheme, parsedUrl.netloc, '', '', ''))
+        parsedUrl = parse.urlparse(url)
+        host = parse.urlunsplit((parsedUrl.scheme, parsedUrl.netloc, '', '', ''))
         filePath = parsedUrl.path[1:] if parsedUrl.path.startswith('/') else parsedUrl.path
         self._prepareToUpdate(config, [createManifestRecord(self._CONFIGS_DIR_NAME, host, [filePath])])
 
@@ -397,14 +400,16 @@ class BaseExternalCache(WebExternalCache):
     def _onResourceLoaded(self, appName, url, data):
         if not self.syncing:
             _logger.debug('Receive resource from: [%s], when stopped or destroyed (%s)', url, self._state)
-            return
-        return super(BaseExternalCache, self)._onResourceLoaded(appName, url, data)
+            return None
+        else:
+            return super(BaseExternalCache, self)._onResourceLoaded(appName, url, data)
 
     def _onResourceStored(self, url, key, filename, stored):
         if not self.syncing:
             _logger.debug('Receive save request for: [%s], when stopped or destroyed (%s)', url, self._state)
-            return
-        return super(BaseExternalCache, self)._onResourceStored(url, key, filename, stored)
+            return None
+        else:
+            return super(BaseExternalCache, self)._onResourceStored(url, key, filename, stored)
 
     def _createManifest(self, config=None):
         raise NotImplementedError
@@ -528,7 +533,7 @@ class BaseExternalCacheManager(object):
             _logger.error('External cache manager wrong sync timeout: %s. Using default: %s.', timeout, self._DEFAULT_SYNC_TIMEOUT)
             timeout = self._DEFAULT_SYNC_TIMEOUT
         if callable(caller):
-            cID = self._callersIDGen.next()
+            cID = next(self._callersIDGen)
             tID = BigWorld.callback(timeout, partial(self._onTimeout, cID))
             self._callers[cID] = (tID, caller)
         else:

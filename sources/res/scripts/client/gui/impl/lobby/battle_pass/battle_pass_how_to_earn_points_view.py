@@ -14,13 +14,13 @@ from gui.impl.lobby.user_missions.hub.hub_view import DailyTabs
 from gui.impl.pub import ViewImpl
 from gui.impl.pub.lobby_window import LobbyWindow
 from gui.server_events.events_dispatcher import showDailyQuests
-from gui.shared.event_dispatcher import showHangar, showShop
-from gui.Scaleform.daapi.view.lobby.store.browser.shop_helpers import getWotPlusProShopUrl
+from gui.shared.event_dispatcher import showHangar, showWotPlusInfoPage
 from gui.sounds.filters import switchHangarOverlaySoundFilter
 from helpers import dependency
 from skeletons.gui.game_control import IBattlePassController
 from skeletons.gui.shared import IItemsCache
 from gui.impl.lobby.battle_pass.battle_pass_wot_plus import getWotPlusPerBattlePoints, getWotPlusBattlePassTier, isWotPlusBattlePassAvailableForAnyTier, getMergedWotPlusPointsList, extractMinValueFromRange
+from uilogging.wot_plus.logging_constants import WotPlusInfoPageSource
 REVERSE_GAME_MODE_ORDER = (
  ARENA_BONUS_TYPE.BATTLE_ROYALE_SOLO,
  ARENA_BONUS_TYPE.COMP7_LIGHT,
@@ -61,7 +61,7 @@ class BattlePassHowToEarnPointsView(ViewImpl):
          (
           self.viewModel.onGoToMissions, self.__goToMissions),
          (
-          self.viewModel.onWotPlusClick, self.__goToWotPlus))
+          self.viewModel.onWotPlusClick, self.__goToWotPlusInfoPage))
 
     def __getGameMode(self, arenaType):
         if arenaType == ARENA_BONUS_TYPE.BATTLE_ROYALE_SOLO:
@@ -222,8 +222,8 @@ class BattlePassHowToEarnPointsView(ViewImpl):
     def __goToMissions(self):
         showDailyQuests(subTab=DailyTabs.QUESTS)
 
-    def __goToWotPlus(self):
-        showShop(getWotPlusProShopUrl())
+    def __goToWotPlusInfoPage(self):
+        showWotPlusInfoPage(WotPlusInfoPageSource.SUBSCRIPTION_PAGE)
 
     def __onBattlePassSettingsChange(self, *_):
         if self.__battlePass.isVisible() and not self.__battlePass.isPaused():

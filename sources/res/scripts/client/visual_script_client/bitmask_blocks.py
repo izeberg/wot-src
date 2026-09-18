@@ -1,6 +1,7 @@
+from __future__ import absolute_import
+from constants import EQUIPMENT_ERROR_STATES, CollisionFlags, VEHICLE_HIT_FLAGS
 from visual_script.bitmask_blocks_common import BitMaskBase
 from visual_script.misc import ASPECT
-from constants import EQUIPMENT_ERROR_STATES, CollisionFlags, VEHICLE_HIT_FLAGS
 
 class BitMask(BitMaskBase):
     _MASK_TYPES = {'Equipment ErrorStates': EQUIPMENT_ERROR_STATES, 

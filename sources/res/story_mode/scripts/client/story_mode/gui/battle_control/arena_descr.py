@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.battle_control.arena_info import settings
 from gui.battle_control.arena_info.arena_descrs import ArenaWithLabelDescription
 

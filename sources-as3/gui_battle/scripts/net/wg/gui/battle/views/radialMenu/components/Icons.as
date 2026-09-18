@@ -58,6 +58,12 @@ package net.wg.gui.battle.views.radialMenu.components
       
       private var _currentState:String = "";
       
+      private var _shownIcon:MovieClip = null;
+      
+      private var _shownIconName:String = "";
+      
+      private var _isInitialHideDone:Boolean = false;
+      
       private var _disposed:Boolean = false;
       
       public function Icons()
@@ -88,10 +94,69 @@ package net.wg.gui.battle.views.radialMenu.components
          this.iconsDictionary[RADIAL_MENU_CONSTS.DEFENDING_HQ] = this.defendingHQIcon;
       }
       
+      public final function dispose() : void
+      {
+         if(this._disposed)
+         {
+            return;
+         }
+         this.onDispose();
+         this._disposed = true;
+      }
+      
+      public final function isDisposed() : Boolean
+      {
+         return this._disposed;
+      }
+      
+      public function setState(param1:String) : void
+      {
+         if(this._currentState == param1)
+         {
+            return;
+         }
+         this._currentState = param1;
+         if(this._shownIcon != null && param1 != Values.EMPTY_STR)
+         {
+            this._shownIcon.gotoAndStop(param1);
+         }
+      }
+      
+      public function showIcon(param1:String) : void
+      {
+         if(!this._isInitialHideDone)
+         {
+            this.hideAll();
+            this._isInitialHideDone = true;
+         }
+         else
+         {
+            if(this._shownIconName == param1)
+            {
+               return;
+            }
+            if(this._shownIcon != null)
+            {
+               this._shownIcon.visible = false;
+            }
+         }
+         this._shownIconName = param1;
+         this._shownIcon = this.iconsDictionary[param1];
+         if(this._shownIcon != null)
+         {
+            this._shownIcon.visible = true;
+            if(this._currentState != Values.EMPTY_STR)
+            {
+               this._shownIcon.gotoAndStop(this._currentState);
+            }
+         }
+      }
+      
       protected function onDispose() : void
       {
          App.utils.data.cleanupDynamicObject(this.iconsDictionary);
          this.iconsDictionary = null;
+         this._shownIcon = null;
          this.supportingAllyIcon = null;
          this.turnbackIcon = null;
          this.supportIcon = null;
@@ -110,39 +175,10 @@ package net.wg.gui.battle.views.radialMenu.components
          this.attackBaseIcon = null;
          this.defendingBaseIcon = null;
          this.attackingBaseIcon = null;
-      }
-      
-      public final function dispose() : void
-      {
-         if(this._disposed)
-         {
-            return;
-         }
-         this.onDispose();
-         this._disposed = true;
-      }
-      
-      public final function isDisposed() : Boolean
-      {
-         return this._disposed;
-      }
-      
-      public function showIcon(param1:String) : void
-      {
-         this.hideAll();
-         if(this.iconsDictionary[param1] != null)
-         {
-            this.iconsDictionary[param1].visible = true;
-            if(this._currentState != Values.EMPTY_STR)
-            {
-               this.iconsDictionary[param1].gotoAndStop(this._currentState);
-            }
-         }
-      }
-      
-      public function setState(param1:String) : void
-      {
-         this._currentState = param1;
+         this.attackHQIcon = null;
+         this.attackingHQIcon = null;
+         this.defendHQIcon = null;
+         this.defendingHQIcon = null;
       }
       
       protected function hideAll() : void

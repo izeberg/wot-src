@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import AccountCommands
 from BaseAccountExtensionComponent import BaseAccountExtensionComponent
 from PlayerEvents import g_playerEvents as events

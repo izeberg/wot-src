@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<Properties>
+		<mechanicVariant>
+			<Type>STRING</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</mechanicVariant>
+		<status>
+			<Type>PHASED_MODE_WITH_PROGRESS_STATUS</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</status>
+	</Properties>
+	<CellMethods>
+		<tryActivate>
+			<Exposed>OWN_CLIENT</Exposed>
+		</tryActivate>
+	</CellMethods>
+	<DefaultKeyName>specBoostModeComponent</DefaultKeyName>
+</root>

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from logging import getLogger
 from adisp import adisp_process
 from gui.impl.pub import ViewImpl

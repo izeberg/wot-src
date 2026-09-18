@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from past.builtins import basestring
 from gui.marathon.marathon_event_controller import getMarathons
 from gui.server_events import events_dispatcher as server_events
 from helpers import dependency

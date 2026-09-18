@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from comp7_common.comp7_constants import ARENA_GUI_TYPE
 from helpers.tips import readTips

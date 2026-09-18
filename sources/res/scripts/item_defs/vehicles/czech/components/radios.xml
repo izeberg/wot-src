@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<xmlns:xmlref>http://bwt/xmlref</xmlns:xmlref>
 	<ids>
 		<Fu7A>0</Fu7A>
 		<Radiostanice_vz_29>1</Radiostanice_vz_29>
@@ -29,6 +28,7 @@
 		<Radiostanice_R_113_JA>29</Radiostanice_R_113_JA>
 		<_10_RT_26L>30</_10_RT_26L>
 		<Radiostanice_9RMO>31</Radiostanice_9RMO>
+		<Radiostanice_R_112_Petra>34</Radiostanice_R_112_Petra>
 		<Radiostanice_RM_31TP>35</Radiostanice_RM_31TP>
 		<Development_Radio>65000</Development_Radio>
 	</ids>
@@ -343,6 +343,21 @@
 			<maxRegenHealth>150</maxRegenHealth>
 			<repairCost>3</repairCost>
 		</Radiostanice_R_112>
+		<Radiostanice_R_112_Petra>
+			<userString>#czech_vehicles:Radiostanice_R_112_Petra</userString>
+			<tags/>
+			<level>8</level>
+			<price>30000</price>
+			<notInShop>true</notInShop>
+			<weight>80</weight>
+			<distance>570</distance>
+			<maxHealth>190</maxHealth>
+			<maxRegenHealth>95</maxRegenHealth>
+			<repairCost>
+				2.5
+				<!--BW_String-->
+			</repairCost>
+		</Radiostanice_R_112_Petra>
 		<Radiostanice_R_123T>
 			<userString>#czech_vehicles:Radiostanice_R_123T</userString>
 			<tags/>
@@ -385,7 +400,7 @@
 			<price>80000</price>
 			<notInShop>true</notInShop>
 			<weight>100</weight>
-			<distance>104</distance>
+			<distance>800</distance>
 			<maxHealth>250</maxHealth>
 			<maxRegenHealth>125</maxRegenHealth>
 			<repairCost>4</repairCost>

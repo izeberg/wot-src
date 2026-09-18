@@ -1,8 +1,9 @@
+from __future__ import absolute_import
+import Event
+from adisp import adisp_process
 from gui import DialogsInterface
 from gui.Scaleform.daapi.view.dialogs.SystemMessageMeta import SystemMessageMeta
 from notification.BaseMessagesController import BaseMessagesController
-import Event
-from adisp import adisp_process
 
 class AlertController(BaseMessagesController):
 

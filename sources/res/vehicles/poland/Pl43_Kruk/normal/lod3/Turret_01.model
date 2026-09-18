@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/poland/Pl43_Kruk/normal/lod3/Turret_01</nodefullVisual>
+	<parent>vehicles/poland/Pl43_Kruk/normal/lod4/Turret_01</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.445075 -0.003189 -2.442817</min>
+		<max>1.447419 4.866370 1.680321</max>
+	</visibilityBox>
+</root>

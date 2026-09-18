@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, weakref
 from helpers import dependency
 from skeletons.gui.shared.utils import IHangarSpace

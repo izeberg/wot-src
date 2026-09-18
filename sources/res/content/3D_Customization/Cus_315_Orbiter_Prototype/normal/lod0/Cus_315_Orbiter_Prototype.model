@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>content/3D_Customization/Cus_315_Orbiter_Prototype/normal/lod0/Cus_315_Orbiter_Prototype</nodefullVisual>
+	<visibilityBox>
+		<min>-0.259580 -0.066367 -0.424292</min>
+		<max>0.259580 0.661985 1.345522</max>
+	</visibilityBox>
+	<parent>content/3D_Customization/Cus_315_Orbiter_Prototype/normal/lod1/Cus_315_Orbiter_Prototype</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+</root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_318_Encryption_Station/normal/lod3/Cus_318_Encryption_Station</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.638912 -0.000090 -0.679604</min>
+		<max>0.070148 0.501407 0.655185</max>
+	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/Cus_318_Encryption_Station/normal/lod2/Cus_318_Encryption_Station</nodefullVisual>
+	<tank>true</tank>
+</root>

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from gui.impl.lobby.tooltips.carousel_vehicle_tooltip import CarouselVehicleTooltipView
 if typing.TYPE_CHECKING:

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from comp7_light.gui.shared.tooltips import TOOLTIP_TYPE
 from gui.impl.gen import R
 from gui.shared.tooltips.periodic.calendar_day import PeriodicCalendarDayTooltip

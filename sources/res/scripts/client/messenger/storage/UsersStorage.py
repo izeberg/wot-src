@@ -1,6 +1,7 @@
-import logging
+from __future__ import absolute_import
+import logging, typing
 from collections import deque, defaultdict
-import types, typing
+from future.utils import listvalues, lfilter, viewvalues
 from messenger import normalizeGroupId
 from messenger.m_constants import USER_GUI_TYPE, BREAKERS_MAX_LENGTH, USER_TAG, MESSENGER_SCOPE, UserEntityScope
 from messenger.storage.local_cache import RevCachedStorage
@@ -43,14 +44,14 @@ class UsersStorage(RevCachedStorage):
         self.init()
 
     def reduce(self):
-        keys = self.__contacts.keys()
+        keys = list(self.__contacts)
         for key in keys:
             user = self.__contacts[key]
             if USER_TAG.filterToRemoveTags(user.getTags()):
                 self.__contacts.pop(key)
 
     def all(self):
-        return self.__contacts.values()
+        return listvalues(self.__contacts)
 
     def addUser(self, user):
         key = user.getStorageKey()
@@ -99,13 +100,13 @@ class UsersStorage(RevCachedStorage):
 
     def getList(self, criteria, iterator=None):
         if iterator is None:
-            iterator = self.__contacts.itervalues()
-        return filter(criteria.filter, iterator)
+            iterator = viewvalues(self.__contacts)
+        return lfilter(criteria.filter, iterator)
 
     def getCount(self, criteria, iterator=None):
         if iterator is None:
-            iterator = self.__contacts.itervalues()
-        return len(filter(criteria.filter, iterator))
+            iterator = viewvalues(self.__contacts)
+        return len(lfilter(criteria.filter, iterator))
 
     def getClanMembersIterator(self, exCurrent=True):
         for dbID in self.__clanMembersIDs:
@@ -119,7 +120,7 @@ class UsersStorage(RevCachedStorage):
 
     def removeTags(self, tags, criteria=None):
         if criteria is None:
-            users = self.__contacts.itervalues()
+            users = viewvalues(self.__contacts)
         else:
             users = self.getList(criteria=criteria)
         for user in users:
@@ -142,7 +143,7 @@ class UsersStorage(RevCachedStorage):
         return self.__emptyGroups.copy()
 
     def isGroupExists(self, name):
-        for contact in self.__contacts.itervalues():
+        for contact in viewvalues(self.__contacts):
             if name in contact.getGroups():
                 return True
 
@@ -156,7 +157,7 @@ class UsersStorage(RevCachedStorage):
 
     def getGroups(self):
         groups = self.__emptyGroups.copy()
-        for contact in self.__contacts.itervalues():
+        for contact in viewvalues(self.__contacts):
             groups.union(contact.getGroups())
 
         return groups
@@ -164,7 +165,7 @@ class UsersStorage(RevCachedStorage):
     def getGroupsDict(self, criteria, includeEmpty=False):
         result = defaultdict(set)
         self._syncEmptyGroups()
-        for contact in filter(criteria.filter, self.__contacts.itervalues()):
+        for contact in filter(criteria.filter, viewvalues(self.__contacts)):
             groups = contact.getGroups()
             for group in groups:
                 result[group].add(contact)
@@ -235,7 +236,7 @@ class UsersStorage(RevCachedStorage):
     def _syncEmptyGroups(self):
         if not self.__emptyGroups:
             return
-        for contact in self.__contacts.itervalues():
+        for contact in viewvalues(self.__contacts):
             groups = contact.getGroups()
             if groups & self.__emptyGroups:
                 self.__emptyGroups = self.__emptyGroups.difference(groups)
@@ -247,7 +248,7 @@ class UsersStorage(RevCachedStorage):
         else:
             data.append(None)
         contacts = []
-        for contact in self.__contacts.itervalues():
+        for contact in viewvalues(self.__contacts):
             state = contact.getPersistentState()
             if state:
                 contacts.append((
@@ -263,17 +264,17 @@ class UsersStorage(RevCachedStorage):
             data.append(None)
         return data
 
-    def _setCachedData(self, record):
+    def _setCachedData(self, data):
         result = None
-        emptyGroups = record.pop(0)
-        if isinstance(emptyGroups, types.TupleType):
-            self.__emptyGroups = set([ normalizeGroupId(group) for group in emptyGroups ])
-        contacts = record.pop(0)
-        if isinstance(contacts, types.ListType):
+        emptyGroups = data.pop(0)
+        if isinstance(emptyGroups, tuple):
+            self.__emptyGroups = {normalizeGroupId(group) for group in emptyGroups}
+        contacts = data.pop(0)
+        if isinstance(contacts, list):
 
             def stateGenerator(requiredType):
                 for item in contacts:
-                    if not isinstance(item, types.TupleType):
+                    if not isinstance(item, tuple):
                         continue
                     if len(item) != 3:
                         continue
@@ -284,8 +285,8 @@ class UsersStorage(RevCachedStorage):
                      dbID, state)
 
             result = stateGenerator
-        if record:
-            openedGroups = record.pop(0) or {}
+        if data:
+            openedGroups = data.pop(0) or {}
             openedGroups = {k:{normalizeGroupId(gr) for gr in v} for k, v in openedGroups.items()}
             self.__openedGroups = openedGroups
         else:

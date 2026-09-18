@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from comp7.gui.comp7_constants import PREBATTLE_ACTION_NAME
 from comp7.gui.Scaleform.daapi.view.lobby.lobby_constants import USER
 from gui.Scaleform.daapi.view.lobby.user_cm_handlers import BaseUserCMHandler, UserVehicleCMHandler

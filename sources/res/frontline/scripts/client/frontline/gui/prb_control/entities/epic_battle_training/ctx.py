@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from constants import PREBATTLE_TYPE
 from gui.prb_control import settings as prb_settings
 from gui.prb_control.entities.base.legacy.ctx import TeamSettingsCtx, JoinLegacyCtx

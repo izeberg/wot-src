@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, BigWorld, wg_async, constants
 from gui.shared.gui_items import GUI_ITEM_TYPE
 from helpers import dependency

@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from past.builtins import long
 from debug_utils import LOG_CURRENT_EXCEPTION
 from shared_utils import findFirst
 from messenger.proto.xmpp.extensions import PyExtension, SimpleExtension, PyHandler

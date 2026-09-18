@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing, logging
 from collections import defaultdict
 from Event import Event, EventManager
@@ -25,7 +26,6 @@ if typing.TYPE_CHECKING:
 _logger = logging.getLogger(__name__)
 
 class WulfGuiImpl(IGuiImpl):
-    __slots__ = ('__model', '__proxy', '__eventMgr', '__effectsFactory')
     _SUPPORTED_TRIGGERS = frozenset((TUTORIAL_TRIGGER_TYPES.ENABLED, TUTORIAL_TRIGGER_TYPES.DISABLED,
      TUTORIAL_TRIGGER_TYPES.VISIBLE_CHANGE, TUTORIAL_TRIGGER_TYPES.ENABLED_CHANGE,
      TUTORIAL_TRIGGER_TYPES.ESCAPE))
@@ -50,13 +50,13 @@ class WulfGuiImpl(IGuiImpl):
         self.onEffectCompleted = Event(self.__eventMgr)
         self.onInit = Event(self.__eventMgr)
 
-    def showEffect(self, componentId, viewId, effectType, effectData, effectBuilder=''):
+    def showEffect(self, componentID, viewID, effectType, effectData, effectBuilder=''):
         if effectType not in self._SUPPORTED_EFFECTS:
-            self.__proxy.showEffect(componentId, viewId, effectType, effectData, effectBuilder)
+            self.__proxy.showEffect(componentID, viewID, effectType, effectData, effectBuilder)
             return
 
         def _findPredicate(ef):
-            return ef.getComponentId() == componentId and ef.getViewId() == viewId and ef.getType() == effectType and ef.getBuilder() == effectBuilder
+            return ef.getComponentId() == componentID and ef.getViewId() == viewID and ef.getType() == effectType and ef.getBuilder() == effectBuilder
 
         foundEffects = findItems(self.__model.effects.getItems(), _findPredicate)
         with self.__model.effects.transaction() as (effects):
@@ -65,21 +65,21 @@ class WulfGuiImpl(IGuiImpl):
             else:
                 effect = self.__effectsFactory.createEffect(effectType)
                 if effect:
-                    effect.setComponentId(componentId)
-                    effect.setViewId(viewId)
+                    effect.setComponentId(componentID)
+                    effect.setViewId(viewID)
                     effect.setBuilder(effectBuilder)
                     effects.getItems().addViewModel(effect)
                     effects.getItems().invalidate()
             if effect:
                 self.__effectsFactory.updateEffect(effect, effectData)
 
-    def hideEffect(self, componentId, viewId, effectType, effectBuilder=''):
+    def hideEffect(self, componentID, viewID, effectType, effectBuilder=''):
         if effectType not in self._SUPPORTED_EFFECTS:
-            self.__proxy.hideEffect(componentId, viewId, effectType, effectBuilder)
+            self.__proxy.hideEffect(componentID, viewID, effectType, effectBuilder)
             return
 
         def _predicate(e):
-            return e.getViewId() == viewId and e.getComponentId() == componentId and e.getType() == effectType and e.getBuilder() == effectBuilder
+            return e.getViewId() == viewID and e.getComponentId() == componentID and e.getType() == effectType and e.getBuilder() == effectBuilder
 
         effects = self.__model.effects.getItems()
         indexes = findIndexes(effects, _predicate)
@@ -119,26 +119,26 @@ class WulfGuiImpl(IGuiImpl):
                 items.invalidate()
             criterion.setValue(value)
 
-    def setViewCriteria(self, componentId, viewUniqueName):
+    def setViewCriteria(self, componentID, viewUniqueName):
         with self.__model.viewCriteria.transaction() as (viewCriteria):
             items = viewCriteria.getItems()
-            criteria = findItems(items, lambda item: item.getComponentId() == componentId)
+            criteria = findItems(items, lambda item: item.getComponentId() == componentID)
             if criteria:
                 criterion = criteria[0]
             else:
                 criterion = ViewCriterionModel()
-                criterion.setComponentId(componentId)
+                criterion.setComponentId(componentID)
                 items.addViewModel(criterion)
                 items.invalidate()
             criterion.setViewUniqueId(viewUniqueName)
 
-    def setTriggers(self, componentId, triggers):
+    def setTriggers(self, componentID, triggers):
 
         def _findPredicate(trgrs):
-            return trgrs.getComponentId() == componentId
+            return trgrs.getComponentId() == componentID
 
         if not triggers:
-            self.__proxy.setTriggers(componentId, triggers)
+            self.__proxy.setTriggers(componentID, triggers)
             foundIndexes = findIndexes(self.__model.triggers.getItems(), _findPredicate)
             if foundIndexes:
                 self.__model.triggers.getItems().remove(foundIndexes[0])
@@ -147,7 +147,7 @@ class WulfGuiImpl(IGuiImpl):
         allTriggers = set(triggers)
         proxiedTriggers = allTriggers & self._PROXIED_TRIGGERS
         if proxiedTriggers:
-            self.__proxy.setTriggers(componentId, proxiedTriggers)
+            self.__proxy.setTriggers(componentID, proxiedTriggers)
         supportedTriggers = allTriggers & self._SUPPORTED_TRIGGERS
         if supportedTriggers:
             with self.__model.triggers.transaction() as (triggersList):
@@ -157,7 +157,7 @@ class WulfGuiImpl(IGuiImpl):
                     triggersModel.getTriggers().clear()
                 else:
                     triggersModel = TriggersModel()
-                    triggersModel.setComponentId(componentId)
+                    triggersModel.setComponentId(componentID)
                 for trType in supportedTriggers:
                     triggersModel.getTriggers().addString(trType)
 

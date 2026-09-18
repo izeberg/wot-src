@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from constants import QUEUE_TYPE, ARENA_BONUS_TYPE
 from frontline.gui.impl.lobby.missions.missions_helpers import FrontlineMissionsGuiHelper
 from frontline.gui.Scaleform.daapi.view.lobby.hangar.hangar_quest_flags import EpicQuestFlagsGetter

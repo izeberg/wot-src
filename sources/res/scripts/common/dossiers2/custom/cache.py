@@ -5,13 +5,14 @@ import nations
 from items import vehicles
 from collector_vehicle import CollectorVehicleConsts
 PRESTIGE_ALLOWED_TAGS = {
- 'role_ATSPG_sniper', 'role_ATSPG_universal', 'role_ATSPG_support', 'role_LT_universal',
- 'role_LT_wheeled', 'role_SPG', 'role_HT_break', 'role_HT_universal', 'role_HT_support',
+ 'role_ATSPG_sniper', 'role_ATSPG_universal', 'role_ATSPG_support', 'role_ATSPG_assault',
+ 'role_LT_universal', 'role_LT_scout', 'role_LT_support', 'role_SPG',
+ 'role_HT_break', 'role_HT_universal', 'role_HT_support', 'role_HT_assault',
  'role_MT_assault', 'role_MT_universal', 'role_MT_sniper', 'role_MT_support',
- 'role_ATSPG_assault', 'role_HT_assault', 'special', 'collectorVehicle', 'secret', 'testTank',
- 'private', 'event_battles', 'fallout', 'epic_battles', 'mapbox', 'fun_random',
- 'rent_promotion', 'premiumIGR', 'pillbox', 'fr_hidden', 'mode_hidden', 'disableIBA', 'comp7',
- 'comp7_light', 'bot_hunter', 'clanWarsBattles'}
+ 'special', 'collectorVehicle', 'secret', 'testTank', 'private', 'event_battles', 'fallout',
+ 'epic_battles', 'mapbox', 'fun_random', 'rent_promotion', 'premiumIGR', 'pillbox',
+ 'fr_hidden', 'mode_hidden', 'disableIBA', 'comp7', 'comp7_light', 'bot_hunter',
+ 'clanWarsBattles'}
 EXCLUDE_VEHICLE_BY_TAGS = {
  'bob', 'battle_royale', 'maps_training', 'bunkerTurret', 'event_battles'}
 

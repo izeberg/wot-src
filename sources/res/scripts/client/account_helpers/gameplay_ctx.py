@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import ArenaType, constants
 from constants import RANDOM_FLAGS
 from debug_utils import LOG_DEBUG, LOG_ERROR, LOG_WARNING

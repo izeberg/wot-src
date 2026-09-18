@@ -1,0 +1,8 @@
+from __future__ import absolute_import
+from cgf_client_common.entity_dyn_components import ReplicableDynamicScriptComponent
+from cgf_script.registration import registerReplicableComponent
+from event_platform_common.respawns.respawn_validation_component_descriptors import DisconnectRespawnValidatorComponentDescr
+
+@registerReplicableComponent
+class DisconnectRespawnValidatorComponent(ReplicableDynamicScriptComponent, DisconnectRespawnValidatorComponentDescr):
+    pass

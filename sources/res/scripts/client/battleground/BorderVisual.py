@@ -1,10 +1,12 @@
+from __future__ import absolute_import, division
 import math
 from collections import namedtuple
+from future.utils import viewitems
 import BigWorld, ResMgr
-from epic_constants import SECTOR_EDGE_STATE
-from items import _xml
 from Math import Matrix, Vector3
 import math_utils
+from epic_constants import SECTOR_EDGE_STATE
+from items import _xml
 CONFIG_FILE = 'scripts/dynamic_objects.xml'
 BORDER_VISUAL_TAG = 'SectorBorderVisual'
 VisualSetting = namedtuple('VisualSetting', ('modelPath', 'overTerrainHeight', 'modelSettings'))
@@ -53,7 +55,7 @@ class BorderVisual(object):
             self.__length = self.__direction.length
             self.__direction.normalise()
             self.__numModelsPerEdgeState = {}
-            for edgeState, modelSetting in g_borderVisualSettings.modelSettings.iteritems():
+            for edgeState, modelSetting in viewitems(g_borderVisualSettings.modelSettings):
                 dashLength = modelSetting.scale.x
                 gap = modelSetting.spacing
                 self.__numModelsPerEdgeState[edgeState] = max(1, int((self.__length - 2 * dashLength) / (dashLength + gap)) + 1)

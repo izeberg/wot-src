@@ -1,4 +1,6 @@
+from __future__ import absolute_import
 import logging
+from future.utils import viewitems
 from gui.battle_control.controllers.appearance_cache_ctrls.default_appearance_cache_ctrl import DefaultAppearanceCacheController
 _logger = logging.getLogger(__name__)
 
@@ -14,7 +16,7 @@ class Comp7AppearanceCacheController(DefaultAppearanceCacheController):
 
     def arenaLoadCompleted(self):
         super(Comp7AppearanceCacheController, self).arenaLoadCompleted()
-        for vId, args in self.__pendingReloads.iteritems():
+        for vId, args in viewitems(self.__pendingReloads):
             self.reloadAppearance(vId, *args)
 
         self.__pendingReloads.clear()

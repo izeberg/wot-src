@@ -92,6 +92,95 @@
 		</mechanics>
 	</vehicle>
 	<vehicle>
+		<vehicleType>china:Ch71_WZ_219</vehicleType>
+		<mechanics>
+			<sightPointer>
+				<priority>1</priority>
+				<rank>gold</rank>
+				<params>
+					<param>
+						30.0
+						<!--BW_String-->
+						<name>sightPointerDeployTime</name>
+						<template>vehicle_hub.characteristics.templates.upTo</template>
+					</param>
+					<param>
+						30.0
+						<!--BW_String-->
+						<name>sightPointerReloadTime</name>
+						<template>vehicle_hub.characteristics.templates.upTo</template>
+					</param>
+					<param>
+						7.0
+						<!--BW_String-->
+						<name>sightPointerDuration</name>
+						<template>vehicle_hub.characteristics.templates.upTo</template>
+					</param>
+					<param>
+						-50%
+						<name>sightPointerRotationSpeed</name>
+					</param>
+					<param>
+						15.0
+						<!--BW_String-->
+						<name>sightPointerSectorAngleStart</name>
+					</param>
+					<param>
+						5.0
+						<!--BW_String-->
+						<name>sightPointerSectorAngleEnd</name>
+						<template>vehicle_hub.characteristics.templates.upTo</template>
+					</param>
+					<param>
+						4.0
+						<!--BW_String-->
+						<name>sightPointerSelfSpottingTime</name>
+						<template>vehicle_hub.characteristics.templates.upTo</template>
+					</param>
+					<param>
+						+123.0
+						<!--BW_String-->
+						<name>sightPointerViewRange</name>
+						<template>vehicle_hub.characteristics.templates.upTo</template>
+					</param>
+					<param>
+						-40.0%
+						<!--BW_String-->
+						<name>sightPointerConsealmentFoliage</name>
+						<template>vehicle_hub.characteristics.templates.upTo</template>
+					</param>
+					<param>
+						-17.5%
+						<!--BW_String-->
+						<name>sightPointerConsealmentMoving</name>
+						<template>vehicle_hub.characteristics.templates.upTo</template>
+					</param>
+				</params>
+			</sightPointer>
+		</mechanics>
+	</vehicle>
+	<vehicle>
+		<vehicleType>czech:Cz46_Vz_63P</vehicleType>
+		<mechanics>
+			<shellCalibration>
+				<priority>1</priority>
+				<rank>gold</rank>
+				<params>
+					<param>
+						15%
+						<name>shellCalibrationAvgDamage</name>
+						<template>vehicle_hub.characteristics.templates.upTo</template>
+					</param>
+					<param>
+						10%
+						<name>shellCalibrationAvgPenetration</name>
+						<template>vehicle_hub.characteristics.templates.upTo</template>
+					</param>
+				</params>
+			</shellCalibration>
+		</mechanics>
+	</vehicle>
+	<vehicle>
 		<vehicleType>france:F135_AS_XX_40_t</vehicleType>
 		<mechanics>
 			<stationaryReload>
@@ -339,8 +428,7 @@
 				<rank>silver</rank>
 				<params>
 					<param>
-						1.5
-						<!--BW_String-->
+						1
 						<name>shellParamsSwitchingTime</name>
 					</param>
 				</params>
@@ -379,8 +467,7 @@
 				<rank>silver</rank>
 				<params>
 					<param>
-						1.5
-						<!--BW_String-->
+						1
 						<name>shellParamsSwitchingTime</name>
 					</param>
 				</params>
@@ -409,7 +496,8 @@
 				<rank>gold</rank>
 				<params>
 					<param>
-						100
+						0.5
+						<!--BW_String-->
 						<name>shellParamsSwitchingTime</name>
 						<template>vehicle_hub.characteristics.templates.upTo</template>
 					</param>
@@ -439,8 +527,7 @@
 				<rank>silver</rank>
 				<params>
 					<param>
-						1.5
-						<!--BW_String-->
+						1
 						<name>shellParamsSwitchingTime</name>
 					</param>
 				</params>
@@ -469,8 +556,7 @@
 				<rank>silver</rank>
 				<params>
 					<param>
-						1.5
-						<!--BW_String-->
+						1
 						<name>shellParamsSwitchingTime</name>
 					</param>
 				</params>
@@ -502,6 +588,41 @@
 		</mechanics>
 	</vehicle>
 	<vehicle>
+		<vehicleType>italy:It43_CAV_mod_71</vehicleType>
+		<mechanics>
+			<autoreloaderSurge>
+				<priority>1</priority>
+				<rank>gold</rank>
+				<params>
+					<param>
+						3
+						<name>autoreloaderSurgeMaxCharges</name>
+					</param>
+					<param>
+						2
+						<name>autoreloaderSurgeInitCharges</name>
+						<template>vehicle_hub.characteristics.templates.upTo</template>
+					</param>
+					<param>
+						45
+						<name>autoreloaderSurgeChargeTimeSlow</name>
+						<template>vehicle_hub.characteristics.templates.upTo</template>
+					</param>
+					<param>
+						15
+						<name>autoreloaderSurgeChargeTimeFast</name>
+						<template>vehicle_hub.characteristics.templates.upTo</template>
+					</param>
+					<param>
+						8
+						<name>autoreloaderSurgeBoostedReloadTime</name>
+						<template>vehicle_hub.characteristics.templates.upTo</template>
+					</param>
+				</params>
+			</autoreloaderSurge>
+		</mechanics>
+	</vehicle>
+	<vehicle>
 		<vehicleType>japan:J52_STK_2</vehicleType>
 		<mechanics>
 			<heatingZonesGun>
@@ -527,6 +648,40 @@
 					</param>
 				</params>
 			</heatingZonesGun>
+		</mechanics>
+	</vehicle>
+	<vehicle>
+		<vehicleType>japan:J53_Ho_Ri_Shugo</vehicleType>
+		<mechanics>
+			<auxiliaryRocketLauncher>
+				<priority>1</priority>
+				<rank>gold</rank>
+				<params>
+					<param>
+						45
+						<name>auxiliaryRocketLauncherReloadTime</name>
+						<template>vehicle_hub.characteristics.templates.upTo</template>
+					</param>
+					<param>
+						600
+						<name>auxiliaryRocketLauncherAvgDamage</name>
+						<template>vehicle_hub.characteristics.templates.upTo</template>
+					</param>
+					<param>
+						80
+						<name>auxiliaryRocketLauncherPenetration</name>
+					</param>
+					<param>
+						320
+						<name>auxiliaryRocketLauncherVelocity</name>
+					</param>
+					<param>
+						0.15
+						<!--BW_String-->
+						<name>auxiliaryRocketLauncherDispersion</name>
+					</param>
+				</params>
+			</auxiliaryRocketLauncher>
 		</mechanics>
 	</vehicle>
 	<vehicle>
@@ -675,6 +830,15 @@
 		</mechanics>
 	</vehicle>
 	<vehicle>
+		<vehicleType>uk:GB147_FV4025_Contriver_7x7</vehicleType>
+		<mechanics>
+			<twinGun>
+				<priority>1</priority>
+				<rank>gold</rank>
+			</twinGun>
+		</mechanics>
+	</vehicle>
+	<vehicle>
 		<vehicleType>uk:GB152_AT_FV230_Breaker</vehicleType>
 		<mechanics>
 			<powerMode>
@@ -707,6 +871,90 @@
 					</param>
 				</params>
 			</powerMode>
+		</mechanics>
+	</vehicle>
+	<vehicle>
+		<vehicleType>uk:GB158_Executor</vehicleType>
+		<mechanics>
+			<wheeledDash>
+				<priority>1</priority>
+				<rank>gold</rank>
+				<params>
+					<param>
+						150%
+						<name>wheeledDashEnginePower</name>
+						<template>vehicle_hub.characteristics.templates.upTo</template>
+					</param>
+					<param>
+						104%
+						<name>wheeledDashTopSpeed</name>
+					</param>
+					<param>
+						114%
+						<name>wheeledDashReverseSpeed</name>
+						<template>vehicle_hub.characteristics.templates.upTo</template>
+					</param>
+					<param>
+						5
+						<name>wheeledDashAbilityDuration</name>
+						<template>vehicle_hub.characteristics.templates.upTo</template>
+					</param>
+					<param>
+						15
+						<name>wheeledDashAbilityReloadTime</name>
+						<template>vehicle_hub.characteristics.templates.upTo</template>
+					</param>
+					<param>
+						-50%
+						<name>wheeledDashAbilityReloadTimeBonus</name>
+					</param>
+					<param>
+						50
+						<name>wheeledDashSpeedLimits</name>
+					</param>
+				</params>
+			</wheeledDash>
+		</mechanics>
+	</vehicle>
+	<vehicle>
+		<vehicleType>uk:GB159_FV4602_Victorious</vehicleType>
+		<mechanics>
+			<combatThrottle>
+				<priority>1</priority>
+				<rank>silver</rank>
+				<params>
+					<param>
+						60
+						<name>combatThrottleCooldown</name>
+					</param>
+					<param>
+						20
+						<name>combatThrottleDuration</name>
+					</param>
+					<param>
+						+10%
+						<name>enginePower</name>
+					</param>
+					<param>
+						+10%
+						<name>chassisRotationSpeed</name>
+					</param>
+					<param>
+						+50%
+						<name>speedLimits</name>
+					</param>
+					<param>
+						-30%
+						<name>vehicleGunShotDispersionChassisMovement</name>
+						<kpiSign>negative</kpiSign>
+					</param>
+					<param>
+						-30%
+						<name>vehicleGunShotDispersionChassisRotation</name>
+						<kpiSign>negative</kpiSign>
+					</param>
+				</params>
+			</combatThrottle>
 		</mechanics>
 	</vehicle>
 	<vehicle>
@@ -825,6 +1073,52 @@
 		</mechanics>
 	</vehicle>
 	<vehicle>
+		<vehicleType>usa:A183_XM69_Hacker_7x7</vehicleType>
+		<mechanics>
+			<concentrationMode>
+				<priority>1</priority>
+				<rank>gold</rank>
+				<params>
+					<param>
+						30
+						<name>concentrationModeCooldown</name>
+					</param>
+					<param>
+						15
+						<name>concentrationModeDuration</name>
+					</param>
+					<param>
+						-100%
+						<name>vehicleGunShotDispersionChassisMovement</name>
+						<kpiSign>negative</kpiSign>
+					</param>
+					<param>
+						-100%
+						<name>vehicleGunShotDispersionChassisRotation</name>
+						<kpiSign>negative</kpiSign>
+					</param>
+					<param>
+						-100%
+						<name>vehicleGunShotDispersionTurretRotation</name>
+						<kpiSign>negative</kpiSign>
+					</param>
+					<param>
+						-6%
+						<name>shotDispersionAngle</name>
+					</param>
+					<param>
+						+10%
+						<name>chassisRotationSpeed</name>
+					</param>
+					<param>
+						+10%
+						<name>enginePower</name>
+					</param>
+				</params>
+			</concentrationMode>
+		</mechanics>
+	</vehicle>
+	<vehicle>
 		<vehicleType>usa:A187_Ares_75</vehicleType>
 		<mechanics>
 			<overheatGun>
@@ -866,7 +1160,7 @@
 				<rank>silver</rank>
 				<params>
 					<param>
-						4.8
+						3.3
 						<!--BW_String-->
 						<name>timeToOverheat</name>
 					</param>
@@ -1026,6 +1320,27 @@
 		</mechanics>
 	</vehicle>
 	<vehicle>
+		<vehicleType>ussr:R228_KR_1_7x7</vehicleType>
+		<mechanics>
+			<improvedRamming>
+				<priority>1</priority>
+				<rank>gold</rank>
+				<params>
+					<param>
+						+60%
+						<name>improvedDamageEnemiesByRamming</name>
+						<template>vehicle_hub.characteristics.templates.upTo</template>
+					</param>
+					<param>
+						+20%
+						<name>improvedDamageEnemiesChassisByRamming</name>
+						<template>vehicle_hub.characteristics.templates.upTo</template>
+					</param>
+				</params>
+			</improvedRamming>
+		</mechanics>
+	</vehicle>
+	<vehicle>
 		<vehicleType>ussr:R230_Object_432U</vehicleType>
 		<mechanics>
 			<chargeShot>
@@ -1052,6 +1367,35 @@
 						2
 						<name>heatChargeOverheatDuration</name>
 						<template>vehicle_hub.characteristics.templates.upTo</template>
+					</param>
+				</params>
+			</chargeShot>
+		</mechanics>
+	</vehicle>
+	<vehicle>
+		<vehicleType>ussr:R230_Object_432U_7x7</vehicleType>
+		<mechanics>
+			<chargeShot>
+				<priority>1</priority>
+				<rank>gold</rank>
+				<params>
+					<param>
+						6.5/21.75/30.5%
+						<!--BW_String-->
+						<name>heatAvgDmgPerLvl</name>
+					</param>
+					<param>
+						1/2.5/3.5
+						<!--BW_String-->
+						<name>heatTimeToReachLevel</name>
+					</param>
+					<param>
+						7
+						<name>heatTimeBeforeOverheat</name>
+					</param>
+					<param>
+						2
+						<name>heatChargeOverheatDuration</name>
 					</param>
 				</params>
 			</chargeShot>
@@ -1126,237 +1470,66 @@
 		</mechanics>
 	</vehicle>
 	<vehicle>
-		<vehicleType>china:Ch70_PTZ_78</vehicleType>
+		<vehicleType>usa:A195_Gorilla_7x7</vehicleType>
 		<mechanics>
-			<stagedJetBoosters>
+			<lowChargeShot>
 				<priority>1</priority>
 				<rank>gold</rank>
 				<params>
 					<param>
-						130%
-						<name>stagedJetBoostersEnginePower</name>
-						<template>vehicle_hub.characteristics.templates.upTo</template>
+						400
+						<name>lowChargeShotAvgDamage</name>
 					</param>
 					<param>
-						112.5%
-						<!--BW_String-->
-						<name>stagedJetBoostersTopSpeed</name>
+						260
+						<name>lowChargeShotPenetration</name>
 					</param>
 					<param>
-						100%
-						<name>stagedJetBoostersSpeedLimits</name>
+						222%
+						<name>lowChargeShotRateOfFire</name>
 					</param>
 					<param>
-						130%
-						<name>stagedJetBoostersRotationSpeed</name>
+						125%
+						<name>lowChargeShotDispertion</name>
 					</param>
 					<param>
-						10
-						<name>stagedJetBoostersChargesCount</name>
-						<template>vehicle_hub.characteristics.templates.upTo</template>
+						750
+						<name>lowChargeShotVelocity</name>
 					</param>
 					<param>
-						10
-						<name>stagedJetBoostersChargeDuration</name>
-					</param>
-					<param>
-						12
-						<name>stagedJetBoostersCooldownTime</name>
-						<template>vehicle_hub.characteristics.templates.upTo</template>
+						2
+						<name>lowChargeShotBlockDuration</name>
 					</param>
 				</params>
-			</stagedJetBoosters>
-		</mechanics>
-	</vehicle>
-	<vehicle>
-		<vehicleType>uk:GB158_Executor</vehicleType>
-		<mechanics>
-			<wheeledDash>
-				<priority>1</priority>
-				<rank>gold</rank>
-				<params>
-					<param>
-						150%
-						<name>wheeledDashEnginePower</name>
-						<template>vehicle_hub.characteristics.templates.upTo</template>
-					</param>
-					<param>
-						104%
-						<name>wheeledDashTopSpeed</name>
-					</param>
-					<param>
-						114%
-						<name>wheeledDashReverseSpeed</name>
-						<template>vehicle_hub.characteristics.templates.upTo</template>
-					</param>
-					<param>
-						5
-						<name>wheeledDashAbilityDuration</name>
-						<template>vehicle_hub.characteristics.templates.upTo</template>
-					</param>
-					<param>
-						15
-						<name>wheeledDashAbilityReloadTime</name>
-						<template>vehicle_hub.characteristics.templates.upTo</template>
-					</param>
-					<param>
-						-50%
-						<name>wheeledDashAbilityReloadTimeBonus</name>
-					</param>
-					<param>
-						50
-						<name>wheeledDashSpeedLimits</name>
-					</param>
-				</params>
-			</wheeledDash>
-		</mechanics>
-	</vehicle>
-	<vehicle>
-		<vehicleType>japan:J53_Ho_Ri_Shugo</vehicleType>
-		<mechanics>
-			<auxiliaryRocketLauncher>
-				<priority>1</priority>
-				<rank>gold</rank>
-				<params>
-					<param>
-						1
-						<name>auxiliaryRocketLauncherReloadTime</name>
-						<template>vehicle_hub.characteristics.templates.upTo</template>
-					</param>
-					<param>
-						1
-						<name>auxiliaryRocketLauncherAvgDamage</name>
-						<template>vehicle_hub.characteristics.templates.upTo</template>
-					</param>
-					<param>
-						1
-						<name>auxiliaryRocketLauncherPenetration</name>
-					</param>
-					<param>
-						1
-						<name>auxiliaryRocketLauncherVelocity</name>
-					</param>
-					<param>
-						1
-						<name>auxiliaryRocketLauncherDispersion</name>
-					</param>
-				</params>
-			</auxiliaryRocketLauncher>
-		</mechanics>
-	</vehicle>
-	<vehicle>
-		<vehicleType>china:Ch71_WZ_219</vehicleType>
-		<mechanics>
-			<sightPointer>
-				<priority>1</priority>
-				<rank>gold</rank>
-				<params>
-					<param>
-						1
-						<name>sightPointerDeployTime</name>
-						<template>vehicle_hub.characteristics.templates.upTo</template>
-					</param>
-					<param>
-						1
-						<name>sightPointerReloadTime</name>
-						<template>vehicle_hub.characteristics.templates.upTo</template>
-					</param>
-					<param>
-						1
-						<name>sightPointerDuration</name>
-						<template>vehicle_hub.characteristics.templates.upTo</template>
-					</param>
-					<param>
-						-1%
-						<name>sightPointerRotationSpeed</name>
-					</param>
-					<param>
-						1
-						<name>sightPointerSectorAngleStart</name>
-					</param>
-					<param>
-						1
-						<name>sightPointerSectorAngleEnd</name>
-						<template>vehicle_hub.characteristics.templates.upTo</template>
-					</param>
-					<param>
-						1
-						<name>sightPointerSelfSpottingTime</name>
-						<template>vehicle_hub.characteristics.templates.upTo</template>
-					</param>
-					<param>
-						+1%
-						<name>sightPointerViewRange</name>
-						<template>vehicle_hub.characteristics.templates.upTo</template>
-					</param>
-					<param>
-						-1%
-						<name>sightPointerConsealmentFoliage</name>
-						<template>vehicle_hub.characteristics.templates.upTo</template>
-					</param>
-					<param>
-						-1%
-						<name>sightPointerConsealmentMoving</name>
-						<template>vehicle_hub.characteristics.templates.upTo</template>
-					</param>
-				</params>
-			</sightPointer>
-		</mechanics>
-	</vehicle>
-	<vehicle>
-		<vehicleType>czech:Cz46_Vz_63P</vehicleType>
-		<mechanics>
-			<shellCalibration>
-				<priority>1</priority>
-				<rank>gold</rank>
-				<params>
-					<param>
-						1%
-						<name>shellCalibrationAvgDamage</name>
-						<template>vehicle_hub.characteristics.templates.upTo</template>
-					</param>
-					<param>
-						1%
-						<name>shellCalibrationAvgPenetration</name>
-						<template>vehicle_hub.characteristics.templates.upTo</template>
-					</param>
-				</params>
-			</shellCalibration>
-		</mechanics>
-	</vehicle>
-	<vehicle>
-		<vehicleType>italy:It43_CAV_mod_71</vehicleType>
-		<mechanics>
-			<autoreloaderSurge>
-				<priority>1</priority>
-				<rank>gold</rank>
-				<params>
-					<param>
-						1
-						<name>autoreloaderSurgeMaxCharges</name>
-					</param>
-					<param>
-						1
-						<name>autoreloaderSurgeInitCharges</name>
-						<template>vehicle_hub.characteristics.templates.upTo</template>
-					</param>
-					<param>
-						1
-						<name>autoreloaderSurgeChargeTimeSlow</name>
-						<template>vehicle_hub.characteristics.templates.upTo</template>
-					</param>
-					<param>
-						1
-						<name>autoreloaderSurgeChargeTimeFast</name>
-						<template>vehicle_hub.characteristics.templates.upTo</template>
-					</param>
-					<param>
-						1
-						<name>autoreloaderSurgeBoostedReloadTime</name>
-						<template>vehicle_hub.characteristics.templates.upTo</template>
-					</param>
-				</params>
-			</autoreloaderSurge>
+				<mechanicSubtypes>
+					<shells>
+						<shell>
+							<name>usa:_155mm_AP_MPCS</name>
+							<basic>basic</basic>
+							<basicWithTextLabel>true</basicWithTextLabel>
+							<basicWithRichTooltip>false</basicWithRichTooltip>
+							<modified>modified</modified>
+							<modifiedWithRichTooltip>false</modifiedWithRichTooltip>
+						</shell>
+						<shell>
+							<name>usa:_155mm_APCR_MPCS</name>
+							<basic>basic</basic>
+							<basicWithTextLabel>true</basicWithTextLabel>
+							<basicWithRichTooltip>false</basicWithRichTooltip>
+							<modified>modified</modified>
+							<modifiedWithRichTooltip>false</modifiedWithRichTooltip>
+						</shell>
+						<shell>
+							<name>usa:_155mm_HE_MPCS</name>
+							<basic>basic</basic>
+							<basicWithTextLabel>true</basicWithTextLabel>
+							<basicWithRichTooltip>false</basicWithRichTooltip>
+							<modified>modified</modified>
+							<modifiedWithRichTooltip>false</modifiedWithRichTooltip>
+						</shell>
+					</shells>
+				</mechanicSubtypes>
+			</lowChargeShot>
 		</mechanics>
 	</vehicle>
 	<vehicle>
@@ -1367,26 +1540,27 @@
 				<rank>gold</rank>
 				<params>
 					<param>
-						1
+						560
 						<name>bustleFeedDamagePerShot</name>
 						<template>vehicle_hub.characteristics.templates.upTo</template>
 					</param>
 					<param>
-						-1%
+						-30%
 						<name>bustleFeedRateOfFire</name>
 						<template>vehicle_hub.characteristics.templates.upTo</template>
 					</param>
 					<param>
-						-1%
+						-45%
 						<name>bustleFeedMaxSpeed</name>
 						<template>vehicle_hub.characteristics.templates.upTo</template>
 					</param>
 					<param>
-						1
+						5
 						<name>bustleFeedSwitchingToEASMMode</name>
 					</param>
 					<param>
-						1
+						2.5
+						<!--BW_String-->
 						<name>bustleFeedSwitchingToStandardMode</name>
 					</param>
 				</params>

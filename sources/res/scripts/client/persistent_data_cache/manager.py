@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld, wg_async
 from helpers import ExitCode
 from persistent_data_cache_common.manager import ForceCreatingPDCManager

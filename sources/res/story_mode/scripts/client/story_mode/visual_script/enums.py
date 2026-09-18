@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from visual_script.type import VScriptEnum
 from visual_script import ASPECT

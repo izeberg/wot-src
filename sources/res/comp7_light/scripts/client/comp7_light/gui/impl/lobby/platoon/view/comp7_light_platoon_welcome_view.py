@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from comp7_light.gui.comp7_light_constants import SELECTOR_BATTLE_TYPES
 from comp7_light.gui.prb_control.entities import comp7_light_prb_helpers
 from constants import QUEUE_TYPE

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<FeatureName>fort_rush</FeatureName>
+	<IsEnabled>True</IsEnabled>
+	<Personality>fort_rush_personality</Personality>
+	<EditorPersonality>editor_fort_rush_personality</EditorPersonality>
+	<Entities>
+		<ServerOnlyEntities>
+			<FortRushBattlesMgr/>
+			<FortRushUnitMgr/>
+		</ServerOnlyEntities>
+	</Entities>
+	<Components>
+		<StaticComponents>
+			<FortRushComponent/>
+			<FortRushAccountComponent/>
+		</StaticComponents>
+		<DynamicComponents>
+			<FortRushScoreComponent/>
+			<FortRushDevelopmentHelper/>
+			<CapturePointComponent/>
+			<FortRushVehicleRespawnComponent/>
+			<FortRushVehicleBattleFeedbackComponent/>
+			<CapturePointInvaderComponent/>
+			<FortRushHighlighter/>
+			<VehicleExpirableComponent/>
+			<FortRushDamageResistanceComponent/>
+			<FortRushCapturePointStateMachineComponent/>
+			<FortRushFairplayVehicleBattleStatsComponent/>
+			<FortRushVehicleStatsCollector/>
+			<FortRushSoundPlayerComponent/>
+		</DynamicComponents>
+	</Components>
+	<cgf>
+		<script>
+			<module>cell.fort_rush_cell.cgf.cgf_module</module>
+			<module>client.fort_rush.cgf.cgf_module</module>
+			<module>client.fort_rush.cgf.show_event_component</module>
+		</script>
+		<prefabs>
+			<path>fort_rush/content/CGFPrefabs/damage_resistance.prefab</path>
+		</prefabs>
+	</cgf>
+</root>

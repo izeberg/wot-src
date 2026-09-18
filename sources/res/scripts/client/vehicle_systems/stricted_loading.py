@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import weakref, functools, inspect, BigWorld, debug_utils
 from constants import IS_EDITOR
 _MAX_PRIORITY = 96

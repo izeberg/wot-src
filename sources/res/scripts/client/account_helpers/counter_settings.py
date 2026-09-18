@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from future.utils import viewitems, viewvalues
 from account_helpers import AccountSettings
 from account_helpers.AccountSettings import NEW_SETTINGS_COUNTER
 from account_helpers.settings_core import settings_constants
@@ -26,15 +28,15 @@ def getNewSettings():
     settings = _getSettingsFromStorage()
     result = []
     grouping = set()
-    for tabID, tabsSettings in settings.iteritems():
+    for tabID, tabsSettings in viewitems(settings):
         tabData = _getTabData(result, tabID)
-        for subTabID, controlSettings in tabsSettings.iteritems():
+        for subTabID, controlSettings in viewitems(tabsSettings):
             if isinstance(controlSettings, bool):
                 controlID = subTabID
                 subTabID = None
                 _packCounter(tabData, controlSettings, subTabID, controlID)
             else:
-                for controlID, state in controlSettings.iteritems():
+                for controlID, state in viewitems(controlSettings):
                     controlID = _tryGrouping(controlID, grouping)
                     if not controlID:
                         continue
@@ -79,7 +81,7 @@ def dropCounters():
 
 
 def _countNewSettingsItems(dictItem, count):
-    for _, v in dictItem.iteritems():
+    for v in viewvalues(dictItem):
         if isinstance(v, dict):
             count = _countNewSettingsItems(v, count)
         elif isinstance(v, bool) and v:
@@ -127,15 +129,15 @@ def _setSettingsToStorage(value):
 
 
 def _filterSettings(value):
-    return {category:{settingKey:settingValue for settingKey, settingValue in settings.iteritems() if isNewSettingCounterVisible(settingKey) if isNewSettingCounterVisible(settingKey)} for category, settings in value.iteritems()}
+    return {category:{settingKey:settingValue for settingKey, settingValue in viewitems(settings) if isNewSettingCounterVisible(settingKey) if isNewSettingCounterVisible(settingKey)} for category, settings in viewitems(value)}
 
 
 def _tryGrouping(controlID, grouping):
-    for group, controls in settings_constants.GROUPS_NOVELTY_SETTINGS.iteritems():
+    for group, controls in viewitems(settings_constants.GROUPS_NOVELTY_SETTINGS):
         if controlID in controls:
             if group not in grouping:
                 grouping.add(group)
                 return group
-            return
+            return None
 
     return controlID

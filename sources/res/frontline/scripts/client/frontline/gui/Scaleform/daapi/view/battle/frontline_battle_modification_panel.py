@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from PlayerEvents import g_playerEvents
 from constants import ARENA_PERIOD
 from frontline.gui.Scaleform.daapi.view.meta.FrontlineModificationPanelMeta import FrontlineModificationPanelMeta

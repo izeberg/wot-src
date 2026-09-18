@@ -1,3 +1,4 @@
+from __future__ import absolute_import, division
 import BigWorld, Math, SoundGroups, WWISE
 from typing import TYPE_CHECKING
 from StoryModeLootableComponent import StoryModeLootableComponent
@@ -8,6 +9,7 @@ from gui.battle_control import minimap_utils
 from gui.impl import backport
 from gui.impl.gen import R
 from helpers import time_utils, dependency
+from math_common import round_py2_style
 from skeletons.gui.battle_session import IBattleSessionProvider
 from story_mode.gui.sound_constants import VDAY_LOOT_CAPTURE_COMPLETE_SOUND, VDAY_LOOT_CAPTURE_PROGRESS_SOUND, VDAY_LOOT_CAPTURE_RTPC, VDAY_LOOT_CAPTURE_START_SOUND, VDAY_LOOT_CAPTURE_STOP_SOUND
 from story_mode_common.story_mode_constants import RECON_ABILITY
@@ -83,10 +85,10 @@ class LootMarkerComponent(World2DLocationMarkerComponent):
         gui = self._gui()
         if not gui:
             return
-        timeLeft = round(max(0, self._startTime + self._captureTime - BigWorld.serverTime()))
+        timeLeft = round_py2_style(max(0, self._startTime + self._captureTime - BigWorld.serverTime()))
         gui.invokeMarker(self.componentID, 'updateLootingTime', time_utils.getTimeLeftFormat(timeLeft))
         self._tickTimerId = BigWorld.callback(1.0, self._tick)
-        rtpcValue = round((1 - timeLeft / self._captureTime) * 100)
+        rtpcValue = round_py2_style((1 - timeLeft / self._captureTime) * 100)
         if rtpcValue != 0:
             SoundGroups.g_instance.playSound2D(VDAY_LOOT_CAPTURE_PROGRESS_SOUND)
             WWISE.WW_setRTCPGlobal(VDAY_LOOT_CAPTURE_RTPC, rtpcValue)

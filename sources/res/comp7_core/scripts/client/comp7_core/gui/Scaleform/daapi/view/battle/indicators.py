@@ -1,3 +1,4 @@
+from __future__ import absolute_import, division
 import typing
 from comp7_core.gui.Scaleform.daapi.view.meta.Comp7SixthSenseIndicatorMeta import Comp7SixthSenseIndicatorMeta
 from constants import DIRECT_DETECTION_TYPE

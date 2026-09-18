@@ -1,6 +1,8 @@
 from __future__ import absolute_import
+from typing import TYPE_CHECKING
 from helpers import time_utils
-from gui.impl.gen.view_models.views.lobby.user_missions.constants.event_banner_state import EventBannerState
+if TYPE_CHECKING:
+    from gui.impl.gen.view_models.views.lobby.user_missions.widget.event_banner_model import EventBannerModel
 
 class BaseEventBanner(object):
     NAME = ''
@@ -10,60 +12,8 @@ class BaseEventBanner(object):
         self._isVisible = False
 
     @property
-    def bannerState(self):
-        return EventBannerState.INACTIVE
-
-    @property
-    def isMode(self):
-        return False
-
-    @property
-    def hasRewards(self):
-        return False
-
-    @property
-    def borderColor(self):
-        return ''
-
-    @property
-    def title(self):
-        return ''
-
-    @property
-    def iconsPath(self):
-        return ''
-
-    @property
-    def videosPath(self):
-        return ''
-
-    @property
-    def introDescription(self):
-        return ''
-
-    @property
-    def inProgressDescription(self):
-        return ''
-
-    @property
-    def timerText(self):
-        return ''
-
-    @property
-    def timerValue(self):
-        return 0
-
-    @property
-    def eventStartDate(self):
-        return 0
-
-    @property
-    def eventEndDate(self):
-        return 0
-
-    @property
-    def playAppearAnim(self):
-        return False
+    def isVisible(self):
+        return self._isVisible
 
     @property
     def showTimerBeforeEventEnd(self):
@@ -71,8 +21,12 @@ class BaseEventBanner(object):
         return hoursBeforeEnd * time_utils.ONE_HOUR
 
     @property
-    def isVisible(self):
-        return self._isVisible
+    def playAppearAnim(self):
+        return False
+
+    def fillModel(self, model):
+        model.setName(self.NAME)
+        model.setShowTimerBeforeEventEnd(self.showTimerBeforeEventEnd)
 
     def createToolTipContent(self, event):
         return
@@ -91,3 +45,9 @@ class BaseEventBanner(object):
 
     def onDisappear(self):
         self._isVisible = False
+
+    def startPersistentListening(self):
+        pass
+
+    def stopPersistentListening(self):
+        pass

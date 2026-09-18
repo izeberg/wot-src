@@ -1,0 +1,1499 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-12 10:00+0300\n"
+"PO-Revision-Date: 2023-01-12 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgid "abilitiesIncomplete/title"
+msgstr "Боевые умения не выбраны"
+
+msgid "abilitiesIncomplete/toAbilities"
+msgstr "К умениям"
+
+msgid "abilitiesIncomplete/toBattle"
+msgstr "В бой"
+
+msgid "abilitiesIncomplete/warning"
+msgstr ""
+"На выбранной машине не хватает боевых умений. Это может негативно сказаться "
+"на вашей эффективности. Всё равно выйти в бой?"
+
+msgid "ammoSetup/changeHotKey/body"
+msgstr ""
+"Вы можете настроить горячие клавиши для типов боевых умений и снарядов.\n"
+"Эти изменения затрагивают только игровые события и не влияют на стандартные режимы игры.\n"
+"Вы также можете настроить горячие клавиши в меню настроек управления (категория «Снаряжение»)."
+
+msgid "ammoSetup/changeHotKey/header"
+msgstr "Изменить горячие клавиши для снаряжения"
+
+msgid "anomaliesView/description_1"
+msgstr ""
+"В бою доступны бонусы экипажа. На сложности {{@ style (color #EEEDE9B2) "
+"(bold)}}«Тяжело»{{/}} и {{@ style (color #EEEDE9B2) (bold)}}«Кошмар»{{/}} "
+"выберите Аномалии во время сражения и объедините их, чтобы получить мощную "
+"{{@ style (color #C293FFCC) (bold)}}Эхо-аномалию{{/}}."
+
+msgid "anomaliesView/description_2"
+msgstr ""
+"Это руководство показывает Аномалии, которые вы получили в предыдущих боях, "
+"а также те, которые ещё предстоит найти. Чтобы открыть меню Аномалий в бою, "
+"{{@ style (color #EEEDE9B2) (bold)}}нажмите N{{/}} (по умолчанию)."
+
+msgid "anomaliesView/header"
+msgstr "АНОМАЛИИ"
+
+msgid "anomaliesView/quote_1/author"
+msgstr ""
+"— Объект 66, «Тихий»\n"
+"Говорят, его не отправляли в экспедицию. Но периодически его встречают в аномалии. Он молча передаёт группе новые записи и уходит."
+
+msgid "anomaliesView/quote_1/message"
+msgstr "Да наполнит тебя мириум."
+
+msgid "anomaliesView/quote_2/author"
+msgstr ""
+"— Объект 6, «Крысолов»\n"
+"Инженер, вернувшийся из экспедиции и построивший «Волнолом». Одни говорят, что мириум его изменил, другие — что он всегда таким был."
+
+msgid "anomaliesView/quote_2/message"
+msgstr ""
+"Слышишь?\n"
+"Это мириум зовёт."
+
+msgid "anomaliesView/quote_3/author"
+msgstr ""
+"— Объект 12, «Сорока»\n"
+"Лаборантка одной из ранних экспедиций. Считалась пропавшей без вести. Но она вернулась. Не там, не тогда и уже не той, какой уходила."
+
+msgid "anomaliesView/quote_3/message"
+msgstr "Сколько бы раз ты не выходил из аномалии, тебя будет тянуть назад."
+
+msgid "anomaliesView/title"
+msgstr "Комбо Аномалий"
+
+msgid "badgeWidget/tooltipBody"
+msgstr ""
+"Выполните текущую задачу, чтобы получить уникальную нашивку «Вавилон: "
+"Запретная зона»:"
+
+msgid "badgeWidget/tooltipHeader"
+msgstr "Задача на эпическую награду"
+
+msgid "bestiaryView/carousel/card/new"
+msgstr "НОВОЕ"
+
+msgid "bestiaryView/carousel/card/state/locked"
+msgstr "Недоступно"
+
+msgid "bestiaryView/carousel/card/tooltip/locked/body"
+msgstr "Выполните задачу {number}, чтобы открыть досье противника."
+
+msgid "bestiaryView/carousel/card/tooltip/style/body"
+msgstr ""
+"Примерьте облик противника в Случайных боях с помощью извращённого "
+"«Вавилоном» 3D-стиля из Магазина события."
+
+msgid "bestiaryView/info/about/czech_Cz34_Vz_71_Tesak_HW_BOT"
+msgstr "?empty?"
+
+msgid "bestiaryView/info/about/france_F110_Lynx_6x6_HW_BOT"
+msgstr "Лёгкий и проворный противник, способный наносить энергоудары."
+
+msgid "bestiaryView/info/about/france_F17_AMX_13_90_HW_BOT"
+msgstr ""
+"Потерянный танк Шершень, который теперь охотится на своих бывших союзников. "
+"Его жгучая ненависть превратилась в бушующий огонь, способный поджигать "
+"противника каждым выстрелом."
+
+msgid "bestiaryView/info/about/germany_G00_Bomber_Hell"
+msgstr ""
+"Самоходные чёрные сферы, покрытые шипами, как морские мины. Ерши всегда "
+"появляются группами. Они быстрые, манёвренные и наносят урон, только "
+"взрываясь при контакте. Один взрыв очень опасен, а сразу несколько могут "
+"уничтожить машину."
+
+msgid "bestiaryView/info/about/germany_G00_K_bomber__HW_21_AI"
+msgstr ""
+"Альфа-ерши похожи на обычных Ершей по поведению и характеристикам, но они "
+"могут доставить ещё больше проблем. Когда Альфа-ёрш обнаружен, всему отряду "
+"рекомендуется сосредоточиться на его уничтожении."
+
+msgid "bestiaryView/info/about/germany_G113_SP_I_C_HW_BOT"
+msgstr ""
+"Группа танков, объединённая в единую структуру. Урон, нанесённый одному, "
+"наносится всем. Они побеждают и проигрывают вместе."
+
+msgid "bestiaryView/info/about/germany_G142_M48RPz_HW_BOT"
+msgstr ""
+"Типичный противник в аномалии, охраняющий места, в которых можно найти "
+"материю. Когда вы приближаетесь к лагерю, все скрывающиеся там Стражи "
+"появляются и атакуют. Они созданы мириумом и после уничтожения бесследно "
+"исчезают."
+
+msgid "bestiaryView/info/about/germany_G171_E77_HW_BOT"
+msgstr "Монарх — это опора Улья. Он поддерживает всех его солдат."
+
+msgid "bestiaryView/info/about/germany_G181_E100_Autocannon_Boss_HW25_bot"
+msgstr "?empty?"
+
+msgid "bestiaryView/info/about/germany_G25_PzII_Luchs_HELL_HALL"
+msgstr ""
+"Трусливый и осторожный противник, который предпочитает сразу же скрыться при"
+" обнаружении. Не опасен, но представляет интерес как лёгкая добыча и "
+"источник мириума."
+
+msgid "bestiaryView/info/about/germany_G64_Panther_II_Hall_minion"
+msgstr ""
+"Средний танк, способный преследовать наших бойцов по всей аномалии. Его "
+"мощные фугасы могут наносить большой урон легкобронированным союзникам."
+
+msgid "bestiaryView/info/about/germany_G73_E50_Ausf_M_Hall_minion"
+msgstr ""
+"Мощный тяжёлый танк, часто возглавляющий атаку Стражей в лагере. Невероятная"
+" прочность и высокий урон делают его крайне опасным противником."
+
+msgid "bestiaryView/info/about/italy_It19_Progetto_C50_mod_66_HW_BOT"
+msgstr ""
+"Искажённая мириумная копия Легио Феррата, более сильная и обращённая против "
+"бывших союзников."
+
+msgid "bestiaryView/info/about/uk_GB100_Manticore_HW_BOT"
+msgstr ""
+"Компактный и быстрый противник с высокой прочностью. Обладает неразрушаемыми"
+" гусеницами и несёт огромный запас мириума. При обнаружении сразу же "
+"постарается скрыться."
+
+msgid "bestiaryView/info/about/uk_GB125_Saladin_HW_BOT"
+msgstr ""
+"У этого противника нет обычного вооружения. Вместо этого он пытается "
+"сократить дистанцию и взорваться. Ударная волна оглушает все машины в "
+"радиусе действия."
+
+msgid "bestiaryView/info/about/uk_GB24_Centurion_Mk3_HW_BOT"
+msgstr ""
+"Потерянный в аномалии Цербер, единственная цель которого — уничтожить "
+"каждого, кто хочет отнять у него мириум."
+
+msgid "bestiaryView/info/about/usa_A100_T49_HW_BOT"
+msgstr ""
+"Потерянный Гренадер, которого всё ещё можно встретить в аномалии. Высокий "
+"урон и лазерная система наведения делают его опасным противником."
+
+msgid "bestiaryView/info/about/ussr_R171_IS_3_II_HW_BOT"
+msgstr ""
+"Тяжёлый танк, наносящий огромный урон тараном. Обычно он движется впереди "
+"волны противника и сеет хаос в вашей команде. При удачном стечении "
+"обстоятельств способен уничтожить свою цель одним ударом."
+
+msgid "bestiaryView/info/about/ussr_R40_T-54_HW_BOT"
+msgstr ""
+"Потерянный в аномалии Малахит, ставший чрезвычайно опасным. Он сохранил свои"
+" изначальные способности и попытается подобраться к вам как можно ближе."
+
+msgid "bestiaryView/info/about/ussr_R77_KV2_turret_2"
+msgstr ""
+"На первый взгляд кажется лёгкой добычей, но не обманывайтесь. Тяжёлая "
+"лобовая броня и очень точное орудие делают его серьёзной угрозой в прямых "
+"столкновениях."
+
+msgid "bestiaryView/info/description/ability_1"
+msgstr ""
+"Не может покинуть охраняемую область и преследовать отступающего противника."
+
+msgid "bestiaryView/info/description/ability_10"
+msgstr ""
+"Иногда наносит урон всем машинам поблизости энергетической волной из своих "
+"катушек."
+
+msgid "bestiaryView/info/description/ability_11"
+msgstr ""
+"Аномалия трансформировала орудие этой машины. Теперь оно стреляет "
+"концентрированным пламенем, и каждое попадание поджигает цель."
+
+msgid "bestiaryView/info/description/ability_12"
+msgstr ""
+"Выпускает осколочно-фугасные боеприпасы из орудия с магазином заряжания на "
+"два снаряда."
+
+msgid "bestiaryView/info/description/ability_13"
+msgstr ""
+"Ослабляет машины в радиусе действия ауры и поглощает материю, собранную "
+"игроками."
+
+msgid "bestiaryView/info/description/ability_14"
+msgstr ""
+"Улучшенные боеприпасы с концентрированной эхо-энергией, наносящие много "
+"дополнительного урона при каждом попадании."
+
+msgid "bestiaryView/info/description/ability_15"
+msgstr ""
+"Создаёт вокруг себя область, которая взрывается после короткой задержки. Все"
+" союзные машины в ней оглушаются. Уничтожьте Детонатор до взрыва, и тогда "
+"будут оглушены окружающие его эхо-танки."
+
+msgid "bestiaryView/info/description/ability_16"
+msgstr ""
+"Не двигается, служит стационарной турелью и поражает противника меткими "
+"выстрелами."
+
+msgid "bestiaryView/info/description/ability_17"
+msgstr "Лидер группы, от которого зависит выживание всех её участников."
+
+msgid "bestiaryView/info/description/ability_18"
+msgstr ""
+"Цепь, непосредственно связывающая Монарха с Ульем. Если лидер повержен, цепь"
+" разрушается, а через несколько секунд — и вся структура группы."
+
+msgid "bestiaryView/info/description/ability_19"
+msgstr ""
+"После уничтожения этот противник оставляет после себя концентрированную "
+"Аномалию. Если её подобрать, вся команда получит случайное уникальное боевое"
+" умение."
+
+msgid "bestiaryView/info/description/ability_2"
+msgstr ""
+"Использует рывок, чтобы сблизиться с целью, протаранить её и нанести "
+"существенный урон."
+
+msgid "bestiaryView/info/description/ability_3"
+msgstr ""
+"Охотники обнаруживают цели на большом расстоянии и стреляют медленными "
+"осколочно-фугасными снарядами издалека, что опасно не только для лёгких "
+"танков, но и для бортовой и кормовой брони средних и даже тяжёлых танков."
+
+msgid "bestiaryView/info/description/ability_4"
+msgstr ""
+"Использует мириум, чтобы устанавливать ловушки под добычей. Эти зоны "
+"взрываются через несколько секунд. Выезжайте из них, чтобы не разлететься на"
+" куски."
+
+msgid "bestiaryView/info/description/ability_5"
+msgstr ""
+"После обнаружения сбегает на максимальной скорости, унося с собой мириум."
+
+msgid "bestiaryView/info/description/ability_6"
+msgstr ""
+"Наводится на ближайшую цель и сближается с ней на полной скорости, взрываясь"
+" после столкновения. Взрыв также может повредить другие машины поблизости."
+
+msgid "bestiaryView/info/description/ability_7"
+msgstr ""
+"После уничтожения Альфа-ёрш разделяется на несколько обычных Ершей (обычно "
+"три, но количество может меняться), которые преследуют ближайшую цель, "
+"таранят её и взрываются."
+
+msgid "bestiaryView/info/description/ability_8"
+msgstr ""
+"Излучает мириумную ауру, которая разъедает броню ближайших машин и поглощает"
+" этот материал, чтобы восстановить собственную прочность."
+
+msgid "bestiaryView/info/description/ability_9"
+msgstr ""
+"Повышенная скорострельность орудия позволяет ему наносить дополнительный "
+"урон."
+
+msgid "bestiaryView/info/tacticalAdvise/czech_Cz34_Vz_71_Tesak_HW_BOT"
+msgstr ""
+"{UL}tacticalAdvise_czech_Cz34_Vz_71_Tesak_HW_BOT "
+"{UL}{LI}{f7f6f299Bold_open}Tactic_1{f7f6f299Bold_close}: "
+"do_1.{UL}{LI}{f7f6f299Bold_open}Tactic_2{f7f6f299Bold_close}: "
+"do_2.{UL}{LI}{f7f6f299Bold_open}Tactic_3{f7f6f299Bold_close}: do_3 ."
+
+msgid "bestiaryView/info/tacticalAdvise/france_F110_Lynx_6x6_HW_BOT"
+msgstr ""
+"{UL}Он не даст вам спокойно выполнить задачу! Уничтожайте Ловца в первую "
+"очередь.{UL}{LI}{{@ style (bold)}}Рассредоточьтесь{{/}}: если союзник "
+"находится слишком близко, вы можете попасть в его зону урона, пытаясь "
+"выбраться из собственной.{UL}{LI}{{@ style (bold)}}Избегайте узких "
+"проходов{{/}}: сохраняйте максимальную манёвренность.{UL}{LI}{{@ style "
+"(bold)}}Используйте способности машины{{/}}: «Энергощит» защитит вас от "
+"урона зоны, а «Теневое восстановление» не позволит Ловцу прицелиться в вас. "
+"Однако помните, что «Теневое восстановление» не поможет, если вы уже "
+"находитесь внутри зоны урона."
+
+msgid "bestiaryView/info/tacticalAdvise/france_F17_AMX_13_90_HW_BOT"
+msgstr ""
+"{UL}Считайте снаряды: у него их по одному на каждого в вашей "
+"команде!{UL}{LI}{{@ style (bold)}}Приоритетная цель{{/}}: из-за своих "
+"аномальных способностей этот танк представляет чрезвычайную угрозу для всей "
+"команды.{UL}{LI}{{@ style (bold)}}Тактическое превосходство{{/}}: «Теневое "
+"восстановление» и «Групповой ремонт» могут потушить пожар и помочь вам или "
+"вашим союзникам не сгореть дотла.{UL}{LI}{{@ style (bold)}}Уничтожьте его "
+"быстро{{/}}: используйте «Рывок», чтобы нанести мощный удар тараном!"
+
+msgid "bestiaryView/info/tacticalAdvise/germany_G00_Bomber_Hell"
+msgstr ""
+"{UL}Как только вы обнаружите Ершей, они должны стать главным приоритетом для"
+" команды!{UL}{LI}{{@ style (bold)}}Уязвимость{{/}}: отсутствие брони делает "
+"их очень лёгкой целью для уничтожения любым способом.{UL}{LI}{{@ style "
+"(bold)}}Групповая тактика{{/}}: эти противники обычно атакуют вместе, "
+"поэтому будьте начеку и не позволяйте им застать вас врасплох.{UL}{LI}{{@ "
+"style (bold)}}Урон по области{{/}}: используйте способности с уроном по "
+"области, такие как «Энерговыстрел» или «Выстрел вампира», чтобы уничтожить "
+"всю группу одним ударом."
+
+msgid "bestiaryView/info/tacticalAdvise/germany_G00_K_bomber__HW_21_AI"
+msgstr ""
+"{UL}Разобравшись с Альфой, будьте готовы к атаке обычных Ершей!{UL}{LI}{{@ "
+"style (bold)}}Урон по области{{/}}: используйте свои боевые умения — одного "
+"удара по области может хватить, чтобы уничтожить сразу всю "
+"группу.{UL}{LI}{{@ style (bold)}}Расчёт времени для щита{{/}}: используйте "
+"«Энергощит», чтобы поглощать урон от таранящих Ершей, но рассчитывайте время"
+" так, чтобы он был активен прямо перед столкновением.{UL}{LI}{{@ style "
+"(bold)}}Не останавливайтесь{{/}}: если ваша машина уязвима, используйте "
+"скорость и «Рывок», чтобы маневрировать вокруг роя и уничтожать противника с"
+" безопасного расстояния."
+
+msgid "bestiaryView/info/tacticalAdvise/germany_G113_SP_I_C_HW_BOT"
+msgstr ""
+"{UL}Четыре головы, одно ядро.{UL}{LI}{{@ style (bold)}}Общая структура{{/}}:"
+" каждый выстрел важен, независимо от того, по какому танку вы попали. Урон "
+"любому модулю в кластере ослабляет их общую структуру.{UL}{LI}{{@ style "
+"(bold)}}Постоянная огневая мощь{{/}}: поскольку у них общая структура, вы не"
+" можете снизить их огневой потенциал, уничтожая отдельные машины — они "
+"продолжат стрелять, пока не выйдет из строя последняя.{UL}{LI}{{@ style "
+"(bold)}}Максимизируйте прибыль{{/}}: полностью уничтожьте весь Улей, чтобы "
+"добыть больше мириума."
+
+msgid "bestiaryView/info/tacticalAdvise/germany_G142_M48RPz_HW_BOT"
+msgstr ""
+"{UL}Внутри аномалии командная работа — ключ к успеху.{UL}{LI}{{@ style "
+"(bold)}}Координируйте нападение{{/}}: атакуйте лагерь только совместным "
+"ударом — никогда не в одиночку!{UL}{LI}{{@ style (bold)}}Огневое "
+"превосходство{{/}}: уничтоженный противник не может наносить урон — не "
+"оставляйте выживших.{UL}{LI}{{@ style (bold)}}Тактическое отступление{{/}}: "
+"если есть риск уничтожения, вы можете отступить за пределы лагеря, чтобы "
+"спасти машину."
+
+msgid "bestiaryView/info/tacticalAdvise/germany_G171_E77_HW_BOT"
+msgstr ""
+"{UL}Отрубите голову и тело падёт!{UL}{LI}{{@ style (bold)}}Удар в "
+"сердце{{/}}: используйте «Рывок», чтобы прорваться сквозь рой и уничтожить "
+"Монарха.{UL}{LI}{{@ style (bold)}}Лёгкая цель{{/}}: самого Монарха не очень "
+"сложно уничтожить.{UL}{LI}{{@ style (bold)}}Стратегический выбор{{/}}: вы "
+"можете уничтожить Монарха, чтобы немедленно закончить бой, или сначала "
+"зачистить Улей, чтобы собрать больше мириума."
+
+msgid ""
+"bestiaryView/info/tacticalAdvise/germany_G181_E100_Autocannon_Boss_HW25_bot"
+msgstr ""
+"{UL}tacticalAdvise_germany_G181_E100_Autocannon_Boss_HW25_bot "
+"{UL}{LI}{f7f6f299Bold_open}Tactic_1{f7f6f299Bold_close}: "
+"do_1.{UL}{LI}{f7f6f299Bold_open}Tactic_2{f7f6f299Bold_close}: "
+"do_2.{UL}{LI}{f7f6f299Bold_open}Tactic_3{f7f6f299Bold_close}: do_3 ."
+
+msgid "bestiaryView/info/tacticalAdvise/germany_G25_PzII_Luchs_HELL_HALL"
+msgstr ""
+"{UL}Не дайте им сбежать!{UL}{LI}{{@ style (bold)}}Низкая живучесть{{/}}: их "
+"можно уничтожить всего парой попаданий, даже из орудий малого "
+"калибра.{UL}{LI}{{@ style (bold)}}Отдавайте приоритет удалённым Зайцам{{/}}:"
+" не дайте им ускользнуть. При необходимости стреляйте по "
+"гусеницам.{UL}{LI}{{@ style (bold)}}Используйте «Рывок»{{/}}: эта "
+"способность поможет вам догнать убегающего Зайца или уничтожить его лёгким "
+"тараном."
+
+msgid "bestiaryView/info/tacticalAdvise/germany_G64_Panther_II_Hall_minion"
+msgstr ""
+"{UL}Охотники будут преследовать вас по всей карте, так что отступление — не "
+"вариант.{UL}{LI}{{@ style (bold)}}Будьте начеку{{/}}: вступайте в бой с "
+"Охотниками после того, как расправитесь с основными силами противника, или "
+"перед началом нового столкновения.{UL}{LI}{{@ style (bold)}}Не стойте на "
+"месте{{/}}: вы можете уклоняться от медленно летящих осколочно-фугасный "
+"снарядов, постоянно двигаясь.{UL}{LI}{{@ style (bold)}}Снарядный "
+"фейерверк{{/}}: боеукладка Охотника находится в бортах, так что цельтесь "
+"именно в них."
+
+msgid "bestiaryView/info/tacticalAdvise/germany_G73_E50_Ausf_M_Hall_minion"
+msgstr ""
+"{UL}Большой и неуклюжий — используйте это себе на пользу!{UL}{LI}{{@ style "
+"(bold)}}Высокий профиль{{/}}: постарайтесь подобраться к противнику поближе "
+"сбоку и держитесь ниже линии огня его орудия.{UL}{LI}{{@ style "
+"(bold)}}Используйте рельеф{{/}}: неровности ландшафта — ваше преимущество. "
+"Стоять на открытом пространстве в прицеле огромного орудия — фатальная "
+"ошибка.{UL}{LI}{{@ style (bold)}}Скоординированный удар{{/}}: из-за его "
+"невероятной прочности дважды подумайте, прежде чем попытаетесь уничтожить "
+"его в одиночку."
+
+msgid "bestiaryView/info/tacticalAdvise/header"
+msgstr "Тактические советы"
+
+msgid "bestiaryView/info/tacticalAdvise/italy_It19_Progetto_C50_mod_66_HW_BOT"
+msgstr ""
+"{UL}Эта эхо-копия восстанавливается за счёт ваших ошибок!{UL}{LI}{{@ style "
+"(bold)}}Приоритетная цель{{/}}: из-за своих аномальных способностей этот "
+"танк представляет чрезвычайную угрозу для всей команды.{UL}{LI}{{@ style "
+"(bold)}}Держитесь на расстоянии{{/}}: этого противника гораздо сложнее "
+"уничтожить, если он восстанавливается за ваш счёт.{UL}{LI}{{@ style "
+"(bold)}}Избегайте дуэлей{{/}}: искажённая копия легко уничтожит ваш танк в "
+"бою один на один."
+
+msgid "bestiaryView/info/tacticalAdvise/uk_GB100_Manticore_HW_BOT"
+msgstr ""
+"{UL}Поймайте его, пока можете — второго шанса получить преимущество не "
+"будет!{UL}{LI}{{@ style (bold)}}Единственный шанс{{/}}: Стервятник несёт "
+"большое количество мириума и уникальную аномалию. Если вы упустите его, то "
+"он исчезнет до конца боя вместе с ценным грузом.{UL}{LI}{{@ style "
+"(bold)}}Забудьте про гусеницы{{/}}: у этого противника неуязвимая ходовая. "
+"Вместо этого используйте способности, увеличивающие урон.{UL}{LI}{{@ style "
+"(bold)}}Смотрите по сторонам{{/}}: не позволяйте другим противникам застать "
+"вас врасплох в процессе погони."
+
+msgid "bestiaryView/info/tacticalAdvise/uk_GB125_Saladin_HW_BOT"
+msgstr ""
+"{UL}Держитесь подальше и уничтожьте его быстро!{UL}{LI}{{@ style "
+"(bold)}}Сохраняйте дистанцию{{/}}: не позволяйте Детонатору "
+"приблизиться.{UL}{LI}{{@ style (bold)}}Используйте его в своих целях{{/}}: "
+"если вы ликвидируете Детонатора до того, как он самоуничтожится, его ударная"
+" волна оглушит все танки противника в области.{UL}{LI}{{@ style "
+"(bold)}}Подготовьте ремонт{{/}}: если вы или ваши союзники окажетесь в зоне "
+"взрыва, используйте «Групповой ремонт», чтобы немедленно снять эффект "
+"оглушения."
+
+msgid "bestiaryView/info/tacticalAdvise/uk_GB24_Centurion_Mk3_HW_BOT"
+msgstr ""
+"{UL}Не позволяйте ему застать вас на открытой местности!{UL}{LI}{{@ style "
+"(bold)}}Приоритетная цель{{/}}: из-за своих аномальных способностей этот "
+"танк представляет чрезвычайную угрозу для всей команды.{UL}{LI}{{@ style "
+"(bold)}}Тактическое превосходство{{/}}: в бою с этим противником держите "
+"«Энергощит» или «Теневое восстановление» наготове, чтобы нейтрализовать его "
+"высокий урон.{UL}{LI}{{@ style (bold)}}Клин клином{{/}}: используйте "
+"способность «Ускоренная перезарядка», чтобы пробить его броню и как можно "
+"быстрее уничтожить эту жалкую пародию на настоящего Цербера."
+
+msgid "bestiaryView/info/tacticalAdvise/usa_A100_T49_HW_BOT"
+msgstr ""
+"{UL}Одна ошибка — и вы выбыли!{UL}{LI}{{@ style (bold)}}Приоритетная "
+"цель{{/}}: из-за своих аномальных способностей этот танк представляет "
+"чрезвычайную угрозу для всей команды.{UL}{LI}{{@ style (bold)}}Слабая "
+"броня{{/}}: зарядите осколочно-фугасные снаряды, чтобы быстрее с ним "
+"расправиться.{UL}{LI}{{@ style (bold)}}Опасность в тылу{{/}}: не дайте этому"
+" противнику зайти вашей команде во фланг. Сражайтесь с ним лицом к лицу."
+
+msgid "bestiaryView/info/tacticalAdvise/ussr_R171_IS_3_II_HW_BOT"
+msgstr ""
+"{UL}Уничтожьте таран, прежде чем он ударит! Это приоритетная цель в любой "
+"волне.{UL}{LI}{{@ style (bold)}}Стреляйте по гусеницам{{/}}: это обездвижит "
+"Вышибалу и сделает его лёгкой целью для ваших союзников.{UL}{LI}{{@ style "
+"(bold)}}Сосредоточьте огонь{{/}}: уничтожьте противника, прежде чем он "
+"оправится. При необходимости снова стреляйте по гусеницам.{UL}{LI}{{@ style "
+"(bold)}}Избегайте тарана{{/}}: если Вышибала прорвётся к вам, активируйте "
+"невидимость или увернитесь от него, чтобы уйти с линии атаки."
+
+msgid "bestiaryView/info/tacticalAdvise/ussr_R40_T-54_HW_BOT"
+msgstr ""
+"{UL}Смотрите в оба: не успеете оглянуться, как он уже подберётся "
+"вплотную.{UL}{LI}{{@ style (bold)}}Приоритетная цель{{/}}: из-за своих "
+"аномальных способностей этот танк представляет чрезвычайную угрозу для всей "
+"команды.{UL}{LI}{{@ style (bold)}}Держите дистанцию{{/}}: этот противник "
+"создаёт разрушительное энергетическое поле. Любой, кто окажется в радиусе "
+"действия, получает значительный урон.{UL}{LI}{{@ style (bold)}}Уничтожьте "
+"его быстро{{/}}: используйте «Ускоренную перезарядку» или другие приёмы, "
+"чтобы вывести его из строя, прежде чем он подберётся слишком близко."
+
+msgid "bestiaryView/info/tacticalAdvise/ussr_R77_KV2_turret_2"
+msgstr ""
+"{UL}Оставайтесь мобильными и избегайте перекрёстного "
+"огня!{UL}{LI}{f7f6f299Bold_open}Неподвижная угроза{f7f6f299Bold_close}: "
+"поскольку этот противник не может двигаться, используйте окружение с пользой"
+" для себя. Холмы и препятствия перекроют линию огня и помогут избежать "
+"попаданий.{UL}{LI}{f7f6f299Bold_open}Не вступайте в "
+"дуэль{f7f6f299Bold_close}: его лобовая броня исключительно прочна. Вместо "
+"перестрелки ищите возможность зайти ему во фланг или дождитесь момента, "
+"чтобы ударить по его более уязвимым "
+"бортам.{UL}{LI}{f7f6f299Bold_open}Подготовьте щиты{f7f6f299Bold_close}: этот"
+" противник бьёт очень больно. Его снаряды с высоким уроном могут быстро "
+"вывести из строя вашу машину, поэтому держите «Энергощит» наготове, чтобы "
+"снизить получаемый урон."
+
+msgid "bestiaryView/info/title/ability_1"
+msgstr "Защитник"
+
+msgid "bestiaryView/info/title/ability_10"
+msgstr "Ударная волна"
+
+msgid "bestiaryView/info/title/ability_11"
+msgstr "Зажигательный снаряд"
+
+msgid "bestiaryView/info/title/ability_12"
+msgstr "Двойной удар"
+
+msgid "bestiaryView/info/title/ability_13"
+msgstr "Аура монстра"
+
+msgid "bestiaryView/info/title/ability_14"
+msgstr "Эхо-снаряды"
+
+msgid "bestiaryView/info/title/ability_15"
+msgstr "Оглушающий импульс"
+
+msgid "bestiaryView/info/title/ability_16"
+msgstr "Осадный режим"
+
+msgid "bestiaryView/info/title/ability_17"
+msgstr "Аварийный выключатель"
+
+msgid "bestiaryView/info/title/ability_18"
+msgstr "Жизненная связь"
+
+msgid "bestiaryView/info/title/ability_19"
+msgstr "Носитель Аномалии"
+
+msgid "bestiaryView/info/title/ability_2"
+msgstr "Таран"
+
+msgid "bestiaryView/info/title/ability_3"
+msgstr "Фугасный залп"
+
+msgid "bestiaryView/info/title/ability_4"
+msgstr "Мириумный капкан"
+
+msgid "bestiaryView/info/title/ability_5"
+msgstr "Сломя голову"
+
+msgid "bestiaryView/info/title/ability_6"
+msgstr "Бабах!"
+
+msgid "bestiaryView/info/title/ability_7"
+msgstr "Стая ершей"
+
+msgid "bestiaryView/info/title/ability_8"
+msgstr "Вампирский импульс"
+
+msgid "bestiaryView/info/title/ability_9"
+msgstr "Беглый огонь"
+
+msgid "bestiaryView/title"
+msgstr "ХРАНИЛИЩЕ ЭХО-ТАНКОВ"
+
+msgid "bundleView/btn/keys"
+msgstr "Купить"
+
+msgid "bundleView/btn/shop"
+msgstr "Смотреть в Магазине"
+
+msgid "bundleView/bundle/header/bundleGroupEventPack"
+msgstr "МОБИЛИЗОВАТЬ ЧАСОВЫХ"
+
+msgid "bundleView/bundle/header/bundleGroupLuxuryEventPack"
+msgstr "ВСЁ И СРАЗУ"
+
+msgid "bundleView/bundle/header/bundleGroupStyle"
+msgstr "ВНЕШНИЙ ВИД"
+
+msgid "bundleView/bundle/header/hw26bundle_keys"
+msgstr "КУПИТЬ КЛЮЧИ"
+
+msgid "bundleView/bundle/serviceChannelMessages/hw26bundle_keys"
+msgstr "Ключи куплены"
+
+msgid "bundleView/bundle/subHeader/bundleGroupEventPack"
+msgstr ""
+"Специальный набор, который ускорит ваш прогресс в событии «Вавилон: Тёмная "
+"башня»."
+
+msgid "bundleView/bundle/subHeader/bundleGroupLuxuryEventPack"
+msgstr "Особый супернабор события «Вавилон: Тёмная башня»."
+
+msgid "bundleView/bundle/subHeader/bundleGroupStyle"
+msgstr "3D-стили и другие элементы в духе события."
+
+msgid "bundleView/bundle/subHeader/hw26bundle_keys"
+msgstr ""
+"Ключи нужны для дешифровки или пропуска записей. Стоимость одного ключа — "
+"{cost} золота."
+
+msgid "bundleView/eventName"
+msgstr "Проект «Вавилон»"
+
+msgid "bundleView/reward/hw_artefact_key"
+msgstr "Ключи дешифровки (бонус)"
+
+msgid "bundleView/subTitle"
+msgid_plural "plural/bundleView/subTitle"
+msgstr[0] "{key} ТРЕБУЕТСЯ ДЛЯ ЗАПИСИ {slide}"
+msgstr[1] "{key} ТРЕБУЕТСЯ ДЛЯ ЗАПИСИ {slide}"
+msgstr[2] "{key} ТРЕБУЕТСЯ ДЛЯ ЗАПИСИ {slide}"
+
+msgid "bundleView/title"
+msgstr "КЛЮЧИ ДЕШИФРОВКИ"
+
+msgid "bundleView/title/default"
+msgstr "ВЫБЕРИТЕ СПОСОБ ПОКУПКИ КЛЮЧЕЙ"
+
+msgid "bundleView/title/onlyKeysBundle"
+msgstr "ВЫБЕРИТЕ КОЛИЧЕСТВО КЛЮЧЕЙ ДЛЯ ПОКУПКИ"
+
+msgid "bundleView/title/onlyShopBundle"
+msgstr "ВЫБЕРИТЕ НАБОР СОБЫТИЯ"
+
+msgid "bundleView/tooltip/cerfToken/body"
+msgstr "Особый член экипажа события на ваш выбор с уникальной озвучкой."
+
+msgid "bundleView/tooltip/cerfToken/header"
+msgstr "Член экипажа события на выбор"
+
+msgid "bundleView/tooltip/expVehicleX5/body"
+msgstr ""
+"Возможность получать в пять раз больше опыта за бой, начиная со второй "
+"победы в день на любой машине."
+
+msgid "bundleView/tooltip/expVehicleX5/header"
+msgstr "Задача на ×5 опыта за бой"
+
+msgid "bundleView/tooltip/stepper/body"
+msgstr "Укажите количество ключей для дешифровки или пропуска записей."
+
+msgid "bundleView/tooltip/stepper/header"
+msgstr "Ключи для дешифровки записей"
+
+msgid "carousel/card/inBattle"
+msgstr "В бою"
+
+msgid "carousel/card/inPlatoon"
+msgstr "В формировании"
+
+msgid "carousel/card/inQueue"
+msgstr "Вы в очереди"
+
+msgid "carousel/card/locked"
+msgstr "Машина заблокирована"
+
+msgid "carousel/daily/header"
+msgstr "Ежедневная задача для техники"
+
+msgid "common/back"
+msgstr "НАЗАД"
+
+msgid "common/btnContinue"
+msgstr "ПРОДОЛЖИТЬ"
+
+msgid "common/close"
+msgstr "ЗАКРЫТЬ"
+
+msgid "common/new"
+msgstr "НОВОЕ"
+
+msgid "common/progress"
+msgstr "{{value}} / {{maxValue}}"
+
+msgid "common/toEvent"
+msgstr "К СОБЫТИЮ"
+
+msgid "common/toRewardPath"
+msgstr "К ЦЕПОЧКЕ НАГРАД"
+
+msgid "common/yes"
+msgstr "ТАК ТОЧНО!"
+
+msgid "comparisonWindow/categoryName/maxHealth"
+msgstr ""
+"Прочность\n"
+"(ед.)"
+
+msgid "comparisonWindow/categoryName/relativePower"
+msgstr ""
+"Огневая мощь\n"
+"(ед.)"
+
+msgid "comparisonWindow/categoryName/speedLimit"
+msgstr ""
+"Максимальная скорость\n"
+"(км/ч)"
+
+msgid "comparisonWindow/tank/ttcType/france_F17_AMX_13_90_Halloween_event"
+msgstr "Магазин заряжания на&nbsp;5&nbsp;снарядов"
+
+msgid "comparisonWindow/tank/ttcType/italy_It19_Progetto_C50_mod_66_hw21"
+msgstr "Доработанная система дозарядки на 3 снаряда"
+
+msgid "comparisonWindow/tank/ttcType/uk_GB123_GSOR_1006_v7_Halloween_event"
+msgstr "Орудие с системой непрерывного огня"
+
+msgid "comparisonWindow/tank/ttcType/uk_GB24_Centurion_Mk3_Halloween_event"
+msgstr "Повышенный шанс поражения модулей противника"
+
+msgid "comparisonWindow/tank/ttcType/usa_A100_T49_Halloween_event"
+msgstr "Фугасное орудие с системой дозарядки на 2&nbsp;снаряда"
+
+msgid "comparisonWindow/tank/ttcType/ussr_R171_IS_3_II_hw21"
+msgstr "Спаренная орудийная установка"
+
+msgid "comparisonWindow/tank/ttcType/ussr_R40_T_54_Halloween_event"
+msgstr "Защита модулей от&nbsp;поражения"
+
+msgid "comparisonWindow/title"
+msgstr "СРАВНЕНИЕ ТЕХНИКИ"
+
+msgid "crewShowcase/play"
+msgstr "Прослушать"
+
+msgid "crewShowcase/status/inBaseReward"
+msgstr "В базовых наградах"
+
+msgid "crewShowcase/status/inShop"
+msgstr "В составе набора"
+
+msgid "crewShowcase/status/received"
+msgstr "Получено"
+
+msgid "crewShowcase/subTitle"
+msgstr ""
+"У всех членов экипажа достаточно опыта для полного изучения трёх навыков."
+
+msgid "crewShowcase/title"
+msgstr "УНИКАЛЬНЫЕ ЧЛЕНЫ ЭКИПАЖА"
+
+msgid "crewShowcase/viewInStore"
+msgstr "Смотреть в Магазине"
+
+msgid "decrypt/affirmative"
+msgstr "ТАК ТОЧНО!"
+
+msgid "decrypt/arrow/disabled/body"
+msgstr "Выполните следующую задачу и расшифруйте запись, чтобы продолжить."
+
+msgid "decrypt/arrow/disabled/header"
+msgstr "Следующая задача"
+
+msgid "decrypt/arrowPrev/disabled/body"
+msgstr "Выполните предыдущую задачу и расшифруйте запись, чтобы продолжить."
+
+msgid "decrypt/arrowPrev/disabled/header"
+msgstr "Предыдущая задача"
+
+msgid "decrypt/completed"
+msgstr "Задача выполнена. Получены награды:"
+
+msgid "decrypt/hideShow"
+msgstr "Скрыть/показать интерфейс"
+
+msgid "decrypt/outroVideo"
+msgstr "Эпилог"
+
+msgid "decrypt/outroVideoTooltip/active"
+msgstr "Посмотреть эпилог."
+
+msgid "decrypt/outroVideoTooltip/disabled"
+msgstr ""
+"Вы сможете снова посмотреть заключительное видео на этом экране после "
+"получения всех наград."
+
+msgid "decrypt/voiceover"
+msgstr "Озвучка"
+
+msgid "decrypt/voiceoverTooltip"
+msgstr ""
+"Включить/отключить голосовую озвучку на всех экранах с дешифрованными "
+"записями."
+
+msgid "difficult/disabled/body"
+msgstr "Вы в составе взвода. Только командир может менять уровень сложности"
+
+msgid "difficult/disabled/header"
+msgstr "Смена уровня сложности недоступна"
+
+msgid "difficult/level_1"
+msgstr "Нормально"
+
+msgid "difficult/level_2"
+msgstr "Тяжело"
+
+msgid "difficult/level_3"
+msgstr "Кошмар"
+
+msgid "difficult/new"
+msgstr "НОВОЕ"
+
+msgid "difficult/tooltip/description/level1"
+msgstr "Снижены прочность и бронирование противников. Стандартная награда."
+
+msgid "difficult/tooltip/description/level2"
+msgstr ""
+"Броня противников усилена. Награда и количество ключей за бой увеличены."
+
+msgid "difficult/tooltip/description/level3"
+msgstr ""
+"Ещё больше противников с прочной бронёй. Награда и количество ключей за бой "
+"значительно увеличены."
+
+msgid "difficult/tooltip/header/level1"
+msgstr "Нормально"
+
+msgid "difficult/tooltip/header/level2"
+msgstr "Тяжело"
+
+msgid "difficult/tooltip/header/level3"
+msgstr "Кошмар"
+
+msgid "difficult/tooltip/locked"
+msgstr "Заблокирован"
+
+msgid "difficult/tooltip/lockedDescr/level2"
+msgstr "Чтобы открыть этот уровень, победите босса на сложности «Нормально»."
+
+msgid "difficult/tooltip/lockedDescr/level3"
+msgstr "Чтобы открыть этот уровень, победите босса на сложности «Тяжело»."
+
+msgid "difficult/tooltip/state/default"
+msgstr "Доступно"
+
+msgid "difficult/tooltip/state/selected"
+msgstr "Выбрано"
+
+msgid "difficult/tooltip/subHeader/level1"
+msgstr "4 фазы"
+
+msgid "difficult/tooltip/subHeader/level2"
+msgstr "4 фазы"
+
+msgid "difficult/tooltip/subHeader/level3"
+msgstr "4 фазы"
+
+msgid "difficult/uppercase/level_1"
+msgstr "НОРМАЛЬНО"
+
+msgid "difficult/uppercase/level_2"
+msgstr "ТЯЖЕЛО"
+
+msgid "difficult/uppercase/level_3"
+msgstr "КОШМАР"
+
+msgid "difficultyWindow/anomalies/button"
+msgstr "К АНОМАЛИЯМ"
+
+msgid "difficultyWindow/anomalies/label"
+msgstr "ОТКРЫТЫ КОМБО АНОМАЛИЙ"
+
+msgid "difficultyWindow/description/level_2"
+msgstr ""
+"Броня противников усилена. Награда и количество ключей за бой увеличены."
+
+msgid "difficultyWindow/description/level_3"
+msgstr ""
+"Ещё больше противников с прочной бронёй. Награда и количество ключей за бой "
+"значительно увеличены."
+
+msgid "difficultyWindow/header/level_2"
+msgstr "УРОВЕНЬ СЛОЖНОСТИ: ТЯЖЕЛО"
+
+msgid "difficultyWindow/header/level_3"
+msgstr "УРОВЕНЬ СЛОЖНОСТИ: КОШМАР"
+
+msgid "difficultyWindow/title"
+msgstr "ДОСТУПЕН"
+
+msgid "hangar/about"
+msgstr "О СОБЫТИИ"
+
+msgid "hangar/exit"
+msgstr "ПОКИНУТЬ СОБЫТИЕ"
+
+msgid "hangar/header/keys"
+msgstr "Ключи: {{value}}"
+
+msgid "hangar/tooltipAbout"
+msgstr "Узнать больше об игровом событии «Вавилон: Тёмная башня»."
+
+msgid "hangarAmmunitionSetup/header"
+msgstr "БОЕВЫЕ УМЕНИЯ"
+
+msgid "headerButtons/battle/types/halloween"
+msgstr "Вавилон: Тёмная башня"
+
+msgid "iconButton/comparison/default"
+msgstr "Сравнение техники"
+
+msgid "iconButton/comparison/isDisabled"
+msgstr "Сравнение техники недоступно"
+
+msgid "iconButton/enemyPreview/isDisabled"
+msgstr ""
+"Выполните и расшифруйте текущую задачу, чтобы получить доступ к досье "
+"противника."
+
+msgid "iconButton/preview/default"
+msgstr "Предпросмотр машины"
+
+msgid "iconButton/preview/isDisabled"
+msgstr "Предпросмотр машины недоступен."
+
+msgid "infoBestiary/button/name"
+msgstr "Хранилище эхо-танков"
+
+msgid "infoBestiary/simpleTooltip/body/disabled"
+msgstr "Выполните и расшифруйте записи, чтобы получить доступ к досье."
+
+msgid "infoBestiary/simpleTooltip/body/enabled"
+msgstr ""
+"Изучайте противника и его способности и узнавайте лучшие способы его "
+"уничтожить."
+
+msgid "infoBestiary/simpleTooltip/header/disabled"
+msgstr "Хранилище эхо-танков недоступно"
+
+msgid "keyCard/name"
+msgstr "КЛЮЧИ ДЕШИФРОВКИ"
+
+msgid "keys/get"
+msgstr "ПОЛУЧИТЬ"
+
+msgid "kingRewardCongratsView/btn/garage"
+msgstr "Посмотреть в Ангаре"
+
+msgid "kingRewardCongratsView/btn/outro"
+msgstr "К развязке истории"
+
+msgid "kingRewardCongratsView/header"
+msgstr "ГЛАВНАЯ НАГРАДА ПОЛУЧЕНА"
+
+msgid "kingRewardCongratsView/reward/crew100/value"
+msgstr "100%"
+
+msgid "kingRewardCongratsView/rewardsTitle"
+msgstr "Награды:"
+
+msgid "kingRewardCongratsView/tankName"
+msgstr "{level}{icon}{userName}"
+
+msgid "kingRewardCongratsView/title"
+msgstr "ФИНАЛЬНАЯ ЗАДАЧА ВЫПОЛНЕНА"
+
+msgid "medalWidget/tooltipBody"
+msgstr "Откройте все Аномалии, указанные в меню Аномалий."
+
+msgid "medalWidget/tooltipHeader"
+msgstr "Задача на эпическую медаль"
+
+msgid "meta/btn/decrypt"
+msgstr "ДЕШИФРОВАТЬ"
+
+msgid "meta/btn/skip"
+msgstr "ПРОПУСТИТЬ"
+
+msgid "meta/btn/view"
+msgstr "СМОТРЕТЬ"
+
+msgid "meta/receive/description"
+msgstr ""
+"Соберите %(keys) / %(decrypt) %(icon)\n"
+"для дешифровки записи"
+
+msgid "meta/shortStory/hw_artefact_1"
+msgstr ""
+"Он хитрее всех, с кем мы сталкивались. И у него есть один фокус, против "
+"которого пока нет приёма."
+
+msgid "meta/shortStory/hw_artefact_10"
+msgstr ""
+"Доступ к содержанию этой записи сейчас ограничен. Информация будет доступна "
+"позже, после рассекречивания."
+
+msgid "meta/shortStory/hw_artefact_11"
+msgstr ""
+"Доступ к содержанию этой записи сейчас ограничен. Информация будет доступна "
+"позже, после рассекречивания."
+
+msgid "meta/shortStory/hw_artefact_12"
+msgstr ""
+"Доступ к содержанию этой записи сейчас ограничен. Информация будет доступна "
+"позже, после рассекречивания."
+
+msgid "meta/shortStory/hw_artefact_13"
+msgstr ""
+"Доступ к содержанию этой записи сейчас ограничен. Информация будет доступна "
+"позже, после рассекречивания."
+
+msgid "meta/shortStory/hw_artefact_2"
+msgstr ""
+"Доступ к содержанию этой записи сейчас ограничен. Информация будет доступна "
+"позже, после рассекречивания."
+
+msgid "meta/shortStory/hw_artefact_3"
+msgstr ""
+"Доступ к содержанию этой записи сейчас ограничен. Информация будет доступна "
+"позже, после рассекречивания."
+
+msgid "meta/shortStory/hw_artefact_4"
+msgstr ""
+"Доступ к содержанию этой записи сейчас ограничен. Информация будет доступна "
+"позже, после рассекречивания."
+
+msgid "meta/shortStory/hw_artefact_5"
+msgstr ""
+"Доступ к содержанию этой записи сейчас ограничен. Информация будет доступна "
+"позже, после рассекречивания."
+
+msgid "meta/shortStory/hw_artefact_6"
+msgstr ""
+"Доступ к содержанию этой записи сейчас ограничен. Информация будет доступна "
+"позже, после рассекречивания."
+
+msgid "meta/shortStory/hw_artefact_7"
+msgstr ""
+"Доступ к содержанию этой записи сейчас ограничен. Информация будет доступна "
+"позже, после рассекречивания."
+
+msgid "meta/shortStory/hw_artefact_8"
+msgstr ""
+"Доступ к содержанию этой записи сейчас ограничен. Информация будет доступна "
+"позже, после рассекречивания."
+
+msgid "meta/shortStory/hw_artefact_9"
+msgstr ""
+"Доступ к содержанию этой записи сейчас ограничен. Информация будет доступна "
+"позже, после рассекречивания."
+
+msgid "meta/story/hw_artefact_1"
+msgstr ""
+"{{@ class $titleClass}}Он хитрее всех, с кем мы сталкивались. И у него есть один фокус, против которого пока нет приёма.{{/}}\n"
+"\n"
+"Твою ж мать! Ну почему никогда не бывает легко? План А провалился. Красиво, эффектно, но провалился.\n"
+"\n"
+"Все думали, что {{@ class $keyWordViolet}}«Мардук»{{/}} — это наш козырь. Огромный летающий корабль с орудиями больше, чем пушка у «Доры».\n"
+"\n"
+"Залп — и все наши проблемы решены: {{@ class $keyWordViolet}}Тёмная башня{{/}} разрушена, нацисты, или то, что от них осталось, обезврежены. И все те тысячи танков, которые они приготовили для нападения ещё в сороковые, остаются тут ржаветь навсегда.\n"
+"\n"
+"Но я забыл главное правило: в аномалии никогда не бывает легко. Снаряды застряли в этом грёбаном щите. И чтобы его вырубить, нужно уничтожить тварь, которая его создаёт.\n"
+"\n"
+"Но этот {{@ class $keyWordViolet}}Паук{{/}} хитрее, чем все, с кем мы сталкивались. Сначала до него ещё нужно добраться. А потом, когда остаётся лишь нанести последний удар, он включает чёртов Волот и перемещается в своё логово зализывать раны. А нас отбрасывает на несколько фаз назад.\n"
+"\n"
+"Ладно, хватит лирики. Пора дело делать. Или мы выключим этот щит и разнесём Башню к чертям, или останемся здесь навсегда.\n"
+"\n"
+"Командование построило свой огромный корабль, даже дало ему имя одного из богов и думало, что проблема решена. А в итоге мы снова здесь. Боги подводят. Танки — нет.\n"
+"\n"
+"{{@ class $titleManual}}Вырезка из руководства:{{/}}\n"
+"{{@ class $textManual}}«Используй тактическую карту и координируй действия. Отмечай точку, в которую направляешься, чтобы взвод двигался вместе с тобой. Или следуй к позиции, выбранной другим командиром. Всегда держитесь вместе».{{/}}"
+
+msgid "meta/story/hw_artefact_10"
+msgstr ""
+"Доступ к содержанию этой записи сейчас ограничен. Информация будет доступна позже, после рассекречивания.\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+" "
+
+msgid "meta/story/hw_artefact_11"
+msgstr ""
+"Доступ к содержанию этой записи сейчас ограничен. Информация будет доступна позже, после рассекречивания.\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+" "
+
+msgid "meta/story/hw_artefact_12"
+msgstr ""
+"Доступ к содержанию этой записи сейчас ограничен. Информация будет доступна позже, после рассекречивания.\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+" "
+
+msgid "meta/story/hw_artefact_13"
+msgstr ""
+"Доступ к содержанию этой записи сейчас ограничен. Информация будет доступна позже, после рассекречивания.\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+" "
+
+msgid "meta/story/hw_artefact_2"
+msgstr ""
+"Доступ к содержанию этой записи сейчас ограничен. Информация будет доступна позже, после рассекречивания.\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+" "
+
+msgid "meta/story/hw_artefact_3"
+msgstr ""
+"Доступ к содержанию этой записи сейчас ограничен. Информация будет доступна позже, после рассекречивания.\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+" "
+
+msgid "meta/story/hw_artefact_4"
+msgstr ""
+"Доступ к содержанию этой записи сейчас ограничен. Информация будет доступна позже, после рассекречивания.\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+" "
+
+msgid "meta/story/hw_artefact_5"
+msgstr ""
+"Доступ к содержанию этой записи сейчас ограничен. Информация будет доступна позже, после рассекречивания.\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+" "
+
+msgid "meta/story/hw_artefact_6"
+msgstr ""
+"Доступ к содержанию этой записи сейчас ограничен. Информация будет доступна позже, после рассекречивания.\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+" "
+
+msgid "meta/story/hw_artefact_7"
+msgstr ""
+"Доступ к содержанию этой записи сейчас ограничен. Информация будет доступна позже, после рассекречивания.\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+" "
+
+msgid "meta/story/hw_artefact_8"
+msgstr ""
+"Доступ к содержанию этой записи сейчас ограничен. Информация будет доступна позже, после рассекречивания.\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+" "
+
+msgid "meta/story/hw_artefact_9"
+msgstr ""
+"Доступ к содержанию этой записи сейчас ограничен. Информация будет доступна позже, после рассекречивания.\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+" "
+
+msgid "metaCmp/completed"
+msgstr "%(icon) Награда получена"
+
+msgid "metaCmp/name"
+msgstr "Цепочка наград"
+
+msgid "metaIntro/description/fight"
+msgstr ""
+"Участвуйте в боях события, зарабатывайте ключи дешифровки и выполняйте "
+"задачи, чтобы получить главную награду события."
+
+msgid "metaIntro/description/progress"
+msgstr ""
+"Дешифруйте все записи с помощью ключей дешифровки, полученных в сражениях "
+"события."
+
+msgid "metaIntro/description/reward"
+msgstr ""
+"Выполните все задачи и дешифруйте все записи, чтобы получить главную награду"
+" события — тяжёлый премиум танк %(level)s уровня "
+"{whiteSpanish_Start}%(tankName)s.{whiteSpanish_End}"
+
+msgid "metaIntro/header/fight"
+msgstr "Боевые задания"
+
+msgid "metaIntro/header/progress"
+msgstr "Дешифровка записей"
+
+msgid "metaIntro/header/reward"
+msgstr "Уникальные награды"
+
+msgid "metaIntro/title"
+msgstr "О ЗАДАЧАХ"
+
+msgid "missionWidget/complete"
+msgstr ""
+"Задача выполнена.\n"
+"Возвращайтесь завтра."
+
+msgid "missionWidget/tooltipBody"
+msgstr ""
+"Выполните ежедневные задачи, которые доступны каждые 24 часа, чтобы получить"
+" награду. Сегодняшняя задача:"
+
+msgid "missionWidget/tooltipHeader"
+msgstr "Ежедневная задача"
+
+msgid "preBattle/leave"
+msgstr "Выйти из боя"
+
+msgid "preBattle/mainTip"
+msgstr ""
+"Долго не можете подобрать разведотряд? Попробуйте изменить уровень "
+"сложности."
+
+msgid "preBattle/searching"
+msgstr "ПОИСК СОЮЗНИКОВ..."
+
+msgid "preBattle/tips/1"
+msgstr "Портал в аномалию «Вавилон» стабилизируется. Ожидайте перехода."
+
+msgid "preBattle/tips/2"
+msgstr ""
+"Ваша работа в аномалии «Вавилон» очень важна для нас. Ожидайте разрешения на"
+" переход."
+
+msgid "preBattle/tips/3"
+msgstr ""
+"Каналы связи с аномалией «Вавилон» перегружены. Не теряйте надежды. "
+"Оставайтесь готовыми к переходу."
+
+msgid "preBattle/uppercase/leave"
+msgstr "ВЫЙТИ ИЗ БОЯ"
+
+msgid "promoWindow/btn"
+msgstr "ТАК ТОЧНО!"
+
+msgid "promoWindow/header"
+msgstr "ИГРАТЬ В РЕЖИМЕ «ВАВИЛОН: ТЁМНАЯ БАШНЯ»"
+
+msgid "promoWindow/subheader"
+msgstr ""
+"{dateRange} участвуйте в новом одиночном режиме.\n"
+"Выполните {regularArtefactsLength} задач, чтобы получить особую машину —&nbsp;{level}{icon}{userName}."
+
+msgid "reward/rest"
+msgstr "И ещё: %(count)s"
+
+msgid "rewardPath/about"
+msgstr "О ЗАДАНИЯХ"
+
+msgid "rewardPath/aboutTooltip"
+msgstr "Узнать больше о событии."
+
+msgid "rewardPath/completed"
+msgstr "Главная награда получена"
+
+msgid "rewardPath/crewMembers"
+msgstr ""
+"ЧЛЕНЫ\n"
+"ЭКИПАЖА"
+
+msgid "rewardPath/crewMembersTooltip"
+msgstr "Нажмите, чтобы просмотреть членов экипажа события."
+
+msgid "rewardPath/description"
+msgstr "Осталось дешифровать записей до главной награды: %(count)s"
+
+msgid "rewardPath/intro"
+msgstr "ВСТУПЛЕНИЕ"
+
+msgid "rewardPath/introTooltip"
+msgstr "Посмотреть вступительное видео."
+
+msgid "rewardPath/title"
+msgstr "ЦЕПОЧКА НАГРАД"
+
+msgid "rewardPathCard/name"
+msgstr "Цепочка наград"
+
+msgid "rewardPathCard/storyChoice"
+msgstr "Выберите финал истории!"
+
+msgid "rewardSelection/button"
+msgstr "ЗАБРАТЬ НАГРАДУ"
+
+msgid "rewardSelection/crew"
+msgstr "Члены экипажа"
+
+msgid "rewardSelection/limit"
+msgstr "Достигнут максимум"
+
+msgid "rewardSelection/limitTooltip"
+msgstr ""
+"Вы достигли лимита. Отмените выбор одного члена экипажа, чтобы выбрать "
+"другого."
+
+msgid "rewardSelection/title"
+msgstr "ВЫБЕРИТЕ НАГРАДУ"
+
+msgid "shopCard/name"
+msgstr "Наборы события"
+
+msgid "shopCmp/name"
+msgstr "Наборы события"
+
+msgid "shopStyleWidget/description/button"
+msgstr "В Магазин"
+
+msgid "shopStyleWidget/description/notOwned"
+msgstr "Доступно"
+
+msgid "shopStyleWidget/description/owned"
+msgstr "Получено"
+
+msgid "shopStyleWidget/header"
+msgstr "3D-стиль для {name}"
+
+msgid "squad/goToAnother/cancel"
+msgstr "Отменить"
+
+msgid "squad/goToAnother/message"
+msgstr "Взвод будет расформирован."
+
+msgid "squad/goToAnother/submit"
+msgstr "Выйти"
+
+msgid "squad/goToAnother/title"
+msgstr "Покинуть событие «Вавилон: Тёмная башня»"
+
+msgid "squad/leave/cancel"
+msgstr "Отменить"
+
+msgid "squad/leave/disabledEvent/message"
+msgstr "Взвод будет расформирован."
+
+msgid "squad/leave/disabledEvent/submit"
+msgstr "Так точно!"
+
+msgid "squad/leave/disabledEvent/title"
+msgstr "Событие «Вавилон: Тёмная башня» завершено"
+
+msgid "squad/leave/message"
+msgstr "Взвод будет расформирован."
+
+msgid "squad/leave/submit"
+msgstr "Выйти"
+
+msgid "squad/leave/title"
+msgstr "Покинуть взвод «Вавилон: Тёмная башня»"
+
+msgid "squad/leaveDisabled/cancel"
+msgstr "Продолжить"
+
+msgid "squad/leaveDisabled/message"
+msgstr "Вы находитесь в основном составе и подтвердили готовность к бою."
+
+msgid "squad/leaveDisabled/title"
+msgstr "Невозможно покинуть взвод!"
+
+msgid "storyChoice/main_view/button/side_option_1"
+msgstr "ЗАСЕКРЕЧЕНО"
+
+msgid "storyChoice/main_view/button/side_option_2"
+msgstr "ЗАСЕКРЕЧЕНО"
+
+msgid "storyChoice/main_view/description/side_option_1"
+msgstr ""
+"Доступ к содержанию этой записи сейчас ограничен. Информация будет доступна "
+"позже, после рассекречивания."
+
+msgid "storyChoice/main_view/description/side_option_2"
+msgstr ""
+"Доступ к содержанию этой записи сейчас ограничен. Информация будет доступна "
+"позже, после рассекречивания."
+
+msgid "storyChoice/main_view/header"
+msgstr "Выберите финал истории:"
+
+msgid "storyChoiceAward/community"
+msgstr ""
+"Доступ к содержанию этой записи сейчас ограничен. Информация будет доступна "
+"позже, после рассекречивания."
+
+msgid "storyChoiceAward/option_1/title"
+msgstr "Засекречено"
+
+msgid "storyChoiceAward/option_2/title"
+msgstr "Засекречено"
+
+msgid "storyChoiceAward/subtitle"
+msgstr "Выбор сделан!"
+
+msgid "storyChoiceConfirm/cancel"
+msgstr "Вернуться назад"
+
+msgid "storyChoiceConfirm/description"
+msgstr "Информация будет доступна позже, после рассекречивания."
+
+msgid "storyChoiceConfirm/option_1/confirm"
+msgstr "Засекречено"
+
+msgid "storyChoiceConfirm/option_1/title"
+msgstr "Засекречено?"
+
+msgid "storyChoiceConfirm/option_2/confirm"
+msgstr "Засекречено"
+
+msgid "storyChoiceConfirm/option_2/title"
+msgstr "Засекречено?"
+
+msgid "storyChoiceConfirm/warning"
+msgstr "Доступ к содержанию этой записи сейчас ограничен."
+
+msgid "vehicle/rent/label"
+msgstr ""
+"Выполните {cream_open}задачу %(number)s{cream_close} или купите "
+"{cream_open}набор события{cream_close}, чтобы получить доступ к этой машине."
+
+msgid "vehicle/rent/packs"
+msgstr "К набору события"
+
+msgid "vehicle/rent/tasks"
+msgstr "К задаче"
+
+msgid "vehicle/tasks/locked"
+msgstr ""
+"Выполните текущую {cream_open}задачу %(number)s{cream_close} или купите "
+"{cream_open}набор события{cream_close}, чтобы получить доступ к этой машине."

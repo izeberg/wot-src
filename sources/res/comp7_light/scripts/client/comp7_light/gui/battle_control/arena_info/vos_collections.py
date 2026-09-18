@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from past.builtins import cmp
 from gui.battle_control.arena_info.vos_collections import VehicleInfoSortKey
 
 class Comp7LightSortKey(VehicleInfoSortKey):

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.shared.rq_cooldown import RequestCooldownManager, REQUEST_SCOPE
 from messenger.proto.shared_errors import I18nActionID
 

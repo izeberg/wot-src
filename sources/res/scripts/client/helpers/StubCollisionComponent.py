@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing, Math, CGF
 from vehicle_systems.tankStructure import TankPartNames, TankPartIndexes
 

@@ -12,6 +12,7 @@ if typing.TYPE_CHECKING:
     from typing import Optional
     from Avatar import PlayerAvatar
     from ClientArena import ClientArena
+    from items.vehicle_mechanics_types import VehicleMechanicKey
 
 def _getClientArena(avatar=None):
     if avatar is None:
@@ -432,6 +433,10 @@ class _ArenaExtraDataVisitor(IArenaVisitor):
 
     def isMapsInDevelopmentEnabled(self):
         return self._extra.get('isRandomEventsAllowed', False)
+
+    def isGfHudMechanicEnabled(self, mechanicKey):
+        paramsName = mechanicKey.mechanic.value
+        return paramsName in self._extra.get('gfHudMechanics', frozenset())
 
     def getValue(self, key, default=None):
         return self._extra.get(key, default)

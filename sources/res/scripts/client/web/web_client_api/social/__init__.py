@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld
 from gui.clans.clan_cache import g_clanCache
 from gui.shared.view_helpers import UsersInfoHelper

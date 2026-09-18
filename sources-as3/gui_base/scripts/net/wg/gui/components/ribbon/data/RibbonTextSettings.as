@@ -22,6 +22,8 @@ package net.wg.gui.components.ribbon.data
       
       private static const PURPLE_RIBBON_SHADOW_COLOR:String = "ribbonPurpleShadow";
       
+      private static const BLUE_RIBBON_SHADOW_COLOR:String = "ribbonBlueShadow";
+      
       private static const PERK_TEXT_COLOR:String = "ribbonPerkValueText";
       
       private static const PERK_SHADOW_COLOR:String = "ribbonPerkShadow";
@@ -85,6 +87,11 @@ package net.wg.gui.components.ribbon.data
             case RibbonColors.PURPLE:
                this._valueTextColor = _loc3_;
                this._shadowColor = _loc2_.getRGB(PURPLE_RIBBON_SHADOW_COLOR);
+               this._ribbonNameTextColor = _loc3_;
+               break;
+            case RibbonColors.BLUE:
+               this._valueTextColor = _loc3_;
+               this._shadowColor = _loc2_.getRGB(BLUE_RIBBON_SHADOW_COLOR);
                this._ribbonNameTextColor = _loc3_;
                break;
             case RibbonColors.PERK:

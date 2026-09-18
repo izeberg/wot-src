@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from .common_blocks import packEpicBattleInfoBlock, packEpicBattleSeasonBlock
 from gui.game_control.epic_meta_game_ctrl import EPIC_PERF_GROUP
 from gui.impl import backport

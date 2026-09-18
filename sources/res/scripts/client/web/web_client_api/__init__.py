@@ -1,15 +1,19 @@
-import json, inspect, logging, weakref
+from __future__ import absolute_import
+import json, inspect, logging, typing, weakref
 from functools import partial
+from future.utils import iteritems, itervalues
 from itertools import chain
-from types import FunctionType, TypeType
-import typing
+from past.builtins import basestring
+from types import FunctionType
 from Event import Event
 from helpers import uniprof
 from py2to3.backport.inspect import getargspec
+from py2to3.patched_future import with_metaclass
 from soft_exception import SoftException
 if typing.TYPE_CHECKING:
     from typing import Callable, Dict, Iterable, NamedTuple, Optional, Type, Union
 _logger = logging.getLogger(__name__)
+_TypeType = type
 
 class CommandHandler(object):
 
@@ -20,8 +24,13 @@ class CommandHandler(object):
         self.finiHandler = finiHandler
         super(CommandHandler, self).__init__()
 
+    __hash__ = object.__hash__
+
     def __eq__(self, other):
         return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        return not self == other
 
 
 class SubCommand(object):
@@ -51,8 +60,7 @@ class ISchemeMeta(type):
         raise NotImplementedError
 
 
-class Schema(object):
-    __metaclass__ = ISchemeMeta
+class Schema(with_metaclass(ISchemeMeta, object)):
 
     @classmethod
     def instantiate(cls, data):
@@ -86,11 +94,11 @@ class W2CSchemaMeta(ISchemeMeta):
 
     def __init__(cls, *args, **kwargs):
         super(W2CSchemaMeta, cls).__init__(*args, **kwargs)
-        cls.__schema = {k:v for k, v in args[2].iteritems() if isinstance(v, Field) if isinstance(v, Field)}
-        cls.__methods = {k:v for k, v in args[2].iteritems() if isinstance(v, FunctionType) if isinstance(v, FunctionType)}
+        cls.__schema = {k:v for k, v in iteritems(args[2]) if isinstance(v, Field) if isinstance(v, Field)}
+        cls.__methods = {k:v for k, v in iteritems(args[2]) if isinstance(v, FunctionType) if isinstance(v, FunctionType)}
 
     def validate(cls, data):
-        for key, value in cls.__schema.iteritems():
+        for key, value in iteritems(cls.__schema):
             error = cls.__validateField(value, key, data, value.required)
             if error:
                 raise WebCommandException(error)
@@ -106,7 +114,7 @@ class W2CSchemaMeta(ISchemeMeta):
                 raise WebCommandException('Command validation failed: Not found suitable parameters!')
 
     def setDefault(cls, data):
-        for key, value in cls.__schema.iteritems():
+        for key, value in iteritems(cls.__schema):
             if key not in data:
                 data[key] = value.default
 
@@ -150,7 +158,7 @@ class Schema2Command(object):
         super(Schema2Command, self).__init__()
         self.__data = data
         self.__methods = methods.keys()
-        for key, value in methods.iteritems():
+        for key, value in iteritems(methods):
             setattr(self, key, value.__get__(self))
 
     def clear(self):
@@ -163,8 +171,7 @@ class Schema2Command(object):
         raise AttributeError(('Property is not found in {0}: {1}').format(self.__class__, name))
 
 
-class W2CSchema(Schema):
-    __metaclass__ = W2CSchemaMeta
+class W2CSchema(with_metaclass(W2CSchemaMeta, Schema)):
     __unions__ = None
 
 
@@ -203,19 +210,17 @@ def w2capi(name=None, key=None, finiHandlerName=None):
     return _W2CApi(name, key, finiHandlerName=finiHandlerName)
 
 
-def _makeOverriddenMeta(key):
+class _OverriddenMeta(W2CSchemaMeta):
 
-    def _get(*args, **kwargs):
-        args[2][key] = Field(required=True, type=basestring)
-        return W2CSchemaMeta(*args, **kwargs)
-
-    return _get
+    def __new__(cls, name, bases, attrs):
+        attrs[attrs.get('_overriddenKey')] = Field(required=True, type=basestring)
+        return super(_OverriddenMeta, cls).__new__(cls, name, bases, attrs)
 
 
 def _makeOverriddenSchema(key):
 
-    class _OverriddenSchema(W2CSchema):
-        __metaclass__ = _makeOverriddenMeta(key)
+    class _OverriddenSchema(with_metaclass(_OverriddenMeta, W2CSchema)):
+        _overriddenKey = key
 
     return _OverriddenSchema
 
@@ -258,7 +263,7 @@ class _CallbackDispatcher(object):
         self.gen = generator
         self.handler = handler
         try:
-            self.call(self.gen.next())
+            self.call(next(self.gen))
         except StopIteration:
             pass
 
@@ -320,7 +325,7 @@ class WebCommandHandler(object):
         self.onCallback = Event()
 
     def fini(self):
-        for handler in self.__handlers.itervalues():
+        for handler in itervalues(self.__handlers):
             finiHandler = handler.finiHandler
             if callable(finiHandler):
                 finiHandler()

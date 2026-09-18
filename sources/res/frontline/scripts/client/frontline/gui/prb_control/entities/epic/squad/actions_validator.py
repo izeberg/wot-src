@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from CurrentVehicle import g_currentVehicle
 from constants import BATTLE_MODE_VEH_TAGS_EXCEPT_EPIC
 from gui.prb_control.entities.base.actions_validator import ActionsValidatorComposite
@@ -61,3 +62,5 @@ class EpicSquadSlotsValidator(CommanderValidator):
         pInfo = self._entity.getPlayerInfo()
         if stats.occupiedSlotsCount > 1 and not pInfo.isReady:
             return ValidationResult(False, UNIT_RESTRICTION.COMMANDER_VEHICLE_NOT_SELECTED)
+        else:
+            return

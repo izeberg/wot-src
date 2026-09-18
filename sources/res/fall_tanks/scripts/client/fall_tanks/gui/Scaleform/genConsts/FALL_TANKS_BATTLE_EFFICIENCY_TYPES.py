@@ -1,4 +1,0 @@
-
-
-class FALL_TANKS_BATTLE_EFFICIENCY_TYPES(object):
-    FALL_TANKS_DESTRUCTION = 'fallTanksKill'

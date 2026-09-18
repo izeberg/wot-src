@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from helpers import dependency
 from shared_utils import first
 from story_mode.skeletons.story_mode_controller import IStoryModeController

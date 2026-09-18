@@ -7,7 +7,7 @@ from gui.Scaleform.daapi.view.meta.ConcentrationDecorativeCrosshairMeta import C
 from gui.Scaleform.genConsts.DECORATIVE_CROSSHAIR_CONSTS import DECORATIVE_CROSSHAIR_CONSTS as _DECORATIVE_CONSTS
 from gui.veh_mechanics.battle.updaters.mechanics.mechanic_passenger_updater import VehicleMechanicPassengerUpdater
 from gui.veh_mechanics.battle.updaters.mechanics.mechanic_states_updater import VehicleMechanicStatesUpdater
-from vehicles.mechanics.mechanic_constants import VehicleMechanic
+from items.vehicle_mechanics_types import VehicleMechanicKeys
 from vehicles.mechanics.mechanic_states import IMechanicStatesListenerLogic
 if typing.TYPE_CHECKING:
     from ConcentrationModeComponent import ConcentrationModeState
@@ -25,8 +25,8 @@ class ConcentrationDecorativeCrosshair(ConcentrationDecorativeCrosshairMeta, Con
 
     def _getViewUpdaters(self):
         return [
-         VehicleMechanicPassengerUpdater(VehicleMechanic.CONCENTRATION_MODE, self),
-         VehicleMechanicStatesUpdater(VehicleMechanic.CONCENTRATION_MODE, self)]
+         VehicleMechanicPassengerUpdater(VehicleMechanicKeys.CONCENTRATION_MODE, self),
+         VehicleMechanicStatesUpdater(VehicleMechanicKeys.CONCENTRATION_MODE, self)]
 
     def __invalidateAll(self, state, isInstantly=False):
         isActive = state.state == CONCENTRATION_MODE_STATE.ACTIVE

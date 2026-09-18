@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<xmlns:xmlref>http://bwt/xmlref</xmlns:xmlref>
 	<ids>
 		<_100mm_59>0</_100mm_59>
 		<_85mm_Tip_62-85TS>1</_85mm_Tip_62-85TS>
@@ -6816,35 +6815,29 @@
 			<reloadEffect>reload115_152</reloadEffect>
 			<pitchLimits>
 				<minPitch>
-					0.0 -10 1.0 -10
+					0.0 -15.0 1.0 -15.0
 					<!--BW_String-->
 				</minPitch>
 				<maxPitch>
-					0.0 10 1.0 10
+					0.0 11.0 1.0 11.0
 					<!--BW_String-->
 				</maxPitch>
 			</pitchLimits>
 			<turretYawLimits>-180 180</turretYawLimits>
-			<rotationSpeed>
-				0.96
-				<!--BW_String-->
-			</rotationSpeed>
-			<reloadTime>60</reloadTime>
+			<rotationSpeed>33</rotationSpeed>
+			<reloadTime>8</reloadTime>
 			<maxAmmo>45</maxAmmo>
-			<aimingTime>
-				10.43
-				<!--BW_String-->
-			</aimingTime>
-			<weight>100</weight>
+			<aimingTime>2</aimingTime>
+			<weight>2500</weight>
 			<maxHealth>240</maxHealth>
 			<maxRegenHealth>120</maxRegenHealth>
 			<repairCost>11</repairCost>
 			<invisibilityFactorAtShot>
-				0.1
+				0.2
 				<!--BW_String-->
 			</invisibilityFactorAtShot>
 			<shotDispersionRadius>
-				1.04
+				0.34
 				<!--BW_String-->
 			</shotDispersionRadius>
 			<shotDispersionFactors>
@@ -6873,7 +6866,7 @@
 						<!--BW_String-->
 					</gravity>
 					<maxDistance>720</maxDistance>
-					<piercingPower>100</piercingPower>
+					<piercingPower>250 211</piercingPower>
 				</_115mm_Tuo_chuan_115G>
 				<_115mm_Po_115G>
 					<defaultPortion>
@@ -6886,7 +6879,7 @@
 						<!--BW_String-->
 					</gravity>
 					<maxDistance>720</maxDistance>
-					<piercingPower>100</piercingPower>
+					<piercingPower>285 285</piercingPower>
 				</_115mm_Po_115G>
 				<_115mm_Sha_bao_115G>
 					<defaultPortion>
@@ -6899,7 +6892,7 @@
 						<!--BW_String-->
 					</gravity>
 					<maxDistance>720</maxDistance>
-					<piercingPower>100</piercingPower>
+					<piercingPower>58 58</piercingPower>
 				</_115mm_Sha_bao_115G>
 			</shots>
 		</_115mm_69_115T>

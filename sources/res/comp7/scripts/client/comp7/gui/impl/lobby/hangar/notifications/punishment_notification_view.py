@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.impl import backport
 from gui.impl.gen.resources import R
 from gui.impl.lobby.hangar.notifications.punishment_notification_view import PunishmentView, AfkLeaverNotification

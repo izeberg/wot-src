@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import weakref
 from visual_script.context import VScriptContext, vse_get_property
 from visual_script.misc import ASPECT

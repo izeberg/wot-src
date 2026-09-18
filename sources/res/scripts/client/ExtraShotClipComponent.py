@@ -3,9 +3,9 @@ from constants import ExtraShotClipStates
 from events_handler import eventHandler
 from gui.battle_control.components_states.ammo import DefaultComponentAmmoState, AmmoShootPossibility
 from gui.shared.utils.decorators import ReprInjector
+from items.vehicle_mechanics_types import VehicleMechanicKey, VehicleMechanicKeys
 from vehicles.components.vehicle_component import VehicleDynamicComponent
 from vehicles.mechanics.gun_mechanics.common import IGunMechanicComponent
-from vehicles.mechanics.mechanic_constants import VehicleMechanic
 
 class ExtraShotAmmoState(DefaultComponentAmmoState):
 
@@ -37,9 +37,9 @@ class ExtraShotClipComponent(VehicleDynamicComponent, IGunMechanicComponent):
         self._initComponent()
 
     @property
-    def vehicleMechanic(self):
-        return VehicleMechanic.EXTRA_SHOT_CLIP
+    def vehicleMechanicKey(self):
+        return VehicleMechanicKeys.EXTRA_SHOT_CLIP
 
     @eventHandler
     def onCollectAmmoStates(self, ammoStates):
-        ammoStates[self.vehicleMechanic.value] = ExtraShotAmmoState(self.reloadState)
+        ammoStates[self.vehicleMechanicKey.uniqueName] = ExtraShotAmmoState(self.reloadState)

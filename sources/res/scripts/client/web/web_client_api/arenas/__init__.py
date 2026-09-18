@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from future.utils import viewitems
 import ArenaType
 from gui.impl import backport
 from gui.impl.gen import R
@@ -36,7 +38,7 @@ class ArenasWebApi(object):
                 res[arenaTypeID] = self.__collectArenaInfo(arenaType)
 
         else:
-            for arenaTypeID, arenaType in ArenaType.g_cache.iteritems():
+            for arenaTypeID, arenaType in viewitems(ArenaType.g_cache):
                 res[arenaTypeID] = self.__collectArenaInfo(arenaType)
 
         return res

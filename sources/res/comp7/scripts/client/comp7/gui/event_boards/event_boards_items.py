@@ -1,4 +1,6 @@
+from __future__ import absolute_import, division
 import datetime, typing, math
+from future.utils import viewvalues
 from comp7.gui.shared.gui_items.dossier.stats import getComp7DossierStats
 from comp7.gui.impl.lobby.comp7_helpers.comp7_shared import getRankEnumValue, getPlayerDivisionByDvsnID
 from gui.event_boards.event_boards_items import LeaderBoard, IPlayerProgression, isDataSchemaValid
@@ -322,7 +324,7 @@ class Comp7PlayerProgression(IPlayerProgression):
 
     @classmethod
     def _isDataStructureValid(cls, data):
-        return bool(data) and isDataSchemaValid(cls._EXPECTED_ROOT_FIELDS, data) and isDataSchemaValid(cls._EXPECTED_META_FIELDS, data[cls._META_FIELD]) and all(isDataSchemaValid(cls._EXPECTED_DAY_FIELDS, day) for day in data[cls._DAYS_FIELD]) and all(isDataSchemaValid(cls._EXPECTED_VEHICLE_FIELDS, vehicleData) for day in data[cls._DAYS_FIELD] for vehicleData in day['vehicles'].itervalues())
+        return bool(data) and isDataSchemaValid(cls._EXPECTED_ROOT_FIELDS, data) and isDataSchemaValid(cls._EXPECTED_META_FIELDS, data[cls._META_FIELD]) and all(isDataSchemaValid(cls._EXPECTED_DAY_FIELDS, day) for day in data[cls._DAYS_FIELD]) and all(isDataSchemaValid(cls._EXPECTED_VEHICLE_FIELDS, vehicleData) for day in data[cls._DAYS_FIELD] for vehicleData in viewvalues(day['vehicles']))
 
     def __getBusinessDate(self, dt, ranksConfig):
         isDtInPreviousBusinessDay = dt.hour < ranksConfig.businessDayStartHour

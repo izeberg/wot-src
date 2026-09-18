@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, typing, Event
 from soft_exception import SoftException
 from sound_gui_manager import ViewSoundExtension
@@ -38,6 +39,14 @@ class ViewSettings(patched_typing.Generic[TViewModel]):
     @layoutID.setter
     def layoutID(self, layoutID):
         self.__proxy.layoutID = layoutID
+
+    @property
+    def sharedLayoutID(self):
+        return self.__proxy.sharedLayoutID
+
+    @sharedLayoutID.setter
+    def sharedLayoutID(self, slId):
+        self.__proxy.sharedLayoutID = slId
 
     @property
     def flags(self):
@@ -101,6 +110,13 @@ class View(PyObjectEntity, patched_typing.Generic[TViewModel]):
     def layoutID(self):
         if self.proxy is not None:
             return self.proxy.layoutID
+        else:
+            return 0
+
+    @property
+    def sharedLayoutID(self):
+        if self.proxy is not None:
+            return self.proxy.sharedLayoutID
         else:
             return 0
 

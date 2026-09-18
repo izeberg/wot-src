@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from comp7_core_constants import ROLE_EQUIPMENT_TAG
 from constants import EQUIPMENT_STAGES

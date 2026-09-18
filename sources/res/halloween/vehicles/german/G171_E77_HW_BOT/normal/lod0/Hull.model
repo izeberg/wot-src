@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>halloween/vehicles/german/G171_E77_HW_BOT/normal/lod0/Hull</nodefullVisual>
+	<visibilityBox>
+		<min>-1.914839 -0.581236 -3.789829</min>
+		<max>1.914839 0.696827 3.611562</max>
+	</visibilityBox>
+	<parent>halloween/vehicles/german/G171_E77_HW_BOT/normal/lod1/Hull</parent>
+	<extent>32.000000</extent>
+</root>

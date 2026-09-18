@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import time, typing
 from enum import Enum
 import BigWorld, math_utils

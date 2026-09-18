@@ -108,8 +108,14 @@ package net.wg.gui.battle.battleloading.data
          {
             return false;
          }
-         this.vehicleIDs.splice(0,this.vehicleIDs.length);
-         this.vehicleIDs = param1.slice();
+         var _loc2_:uint = param1.length;
+         this.vehicleIDs.length = _loc2_;
+         var _loc3_:uint = 0;
+         while(_loc3_ < _loc2_)
+         {
+            this.vehicleIDs[_loc3_] = param1[_loc3_];
+            _loc3_++;
+         }
          sort(this.compare);
          return true;
       }

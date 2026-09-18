@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing, constants
 from helpers import version
 from persistent_data_cache_common.common import getLogger

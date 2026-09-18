@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G171_E77/_skins/G171_E77_HW26_3Dst/crash/lod1/Chassis</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/german/G171_E77/_skins/G171_E77_HW26_3Dst/crash/lod2/Chassis</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.710897 -0.039340 -3.218871</min>
+		<max>1.710897 1.207866 3.244604</max>
+	</visibilityBox>
+</root>

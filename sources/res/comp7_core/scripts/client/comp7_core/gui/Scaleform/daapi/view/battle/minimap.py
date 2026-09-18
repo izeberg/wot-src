@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from constants import ARENA_PERIOD
 from gui.Scaleform.daapi.view.battle.classic.minimap import ClassicMinimapComponent, GlobalSettingsPlugin
 from gui.Scaleform.daapi.view.battle.shared.points_of_interest import minimap as poi_plugins

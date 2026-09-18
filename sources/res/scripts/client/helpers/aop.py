@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, re, sys, traceback, types, weakref
 from functools import partial
 from future.utils import raise_
@@ -32,8 +33,7 @@ def execFunction(wrapped, args, kwargs):
             if cd._avoid:
                 cd._exception = e
                 break
-            else:
-                raise
+            raise
 
         count += 1
 

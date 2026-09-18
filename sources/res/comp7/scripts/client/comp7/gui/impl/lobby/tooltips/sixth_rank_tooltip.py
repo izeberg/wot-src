@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from comp7.gui.impl.gen.view_models.views.lobby.tooltips.sixth_rank_tooltip_model import SixthRankTooltipModel
 from comp7.gui.impl.lobby.comp7_helpers import comp7_model_helpers
 from frameworks.wulf import ViewSettings

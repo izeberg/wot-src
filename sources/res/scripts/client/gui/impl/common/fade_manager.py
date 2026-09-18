@@ -1,9 +1,8 @@
 from __future__ import absolute_import
 import typing
-from frameworks.wulf import Window, View, WindowSettings, ViewSettings, WindowFlags, WindowStatus
+from frameworks.wulf import Window, View, WindowSettings, ViewSettings, WindowFlags, WindowStatus, PyResAccessor
 from gui.impl.gen import R
 from gui.impl.gen.view_models.views.fading_cover_view_model import FadingCoverViewModel
-from gui.impl.gen_utils import DynAccessor
 from skeletons.gui.app_loader import IAppLoader
 from skeletons.gui.game_control import IFadingController
 from skeletons.gui.impl import IGuiLoader
@@ -44,7 +43,7 @@ class DefaultFadingCover(View, ICover):
         model.setFadeInDuration(fadeInDuration)
         model.setFadeOutDuration(fadeOutDuration)
         if background:
-            bgRes = background() if isinstance(background, DynAccessor) else background
+            bgRes = background() if isinstance(background, PyResAccessor) else background
             model.setBackground(bgRes)
         return
 

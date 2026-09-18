@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, weakref
 from itertools import chain
 import typing

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from adisp import adisp_process, adisp_async
 import wg_async as future_async
 from gui.impl.dialogs import dialogs

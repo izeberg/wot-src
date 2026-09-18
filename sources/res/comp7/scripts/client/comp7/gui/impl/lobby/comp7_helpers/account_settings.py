@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from account_helpers import AccountSettings
 from account_helpers.AccountSettings import COMP7_WEEKLY_WIDGET_SHOWN_QUEST, COMP7_UI_SECTION, COMP7_UMG_ENTRY_POINT_SEEN
 

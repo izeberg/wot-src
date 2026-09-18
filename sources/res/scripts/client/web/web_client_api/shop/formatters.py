@@ -1,6 +1,7 @@
-import re
+from __future__ import absolute_import
+import re, typing
 from collections import namedtuple
-import typing, nations
+import nations
 from constants import RentType
 from gui.Scaleform.genConsts.STORE_CONSTANTS import STORE_CONSTANTS
 from gui.Scaleform.locale.ITEM_TYPES import ITEM_TYPES
@@ -14,6 +15,7 @@ from helpers import dependency, i18n, time_utils
 from helpers.func_utils import replaceImgPrefix
 from items.components.supply_slot_categories import SlotCategories
 from items import vehicles
+from math_common import decimal_round
 from nation_change.nation_change_helpers import getGroupByVehTypeCompactDescr, iterVehTypeCDsInNationGroup
 from rent_common import SeasonRentDuration
 from shared_utils import first
@@ -43,7 +45,7 @@ def _formatPrice(itemPrice):
 
 
 def _formatFloat(val):
-    return round(val, 4)
+    return decimal_round(val, 4)
 
 
 def _formatKPI(kpiList):

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import importlib
 from collections import namedtuple
 from functools import partial
@@ -854,7 +855,7 @@ _ArrowProps = namedtuple('_ArrowProps', ('direction', 'loop', 'positionValue', '
 _Padding = namedtuple('_Padding', ('left', 'top', 'right', 'bottom'))
 
 def parseHint(xmlCtx, section):
-    sectionInfo = dict()
+    sectionInfo = {}
     sectionInfo['hintID'] = parseID(xmlCtx, section, 'Specify a hint ID')
     tags = section.keys()
     if 'item-id' in tags:

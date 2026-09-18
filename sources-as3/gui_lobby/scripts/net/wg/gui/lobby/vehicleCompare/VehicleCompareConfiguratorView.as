@@ -41,7 +41,7 @@ package net.wg.gui.lobby.vehicleCompare
       
       private static const EQUIPMENT_WIDGET_WIDTH:int = 622;
       
-      private static const EQUIPMENT_WIDGET_HEIGHT:int = 130;
+      private static const EQUIPMENT_WIDGET_HEIGHT:int = 169;
       
       private static const EQUIPMENT_WIDGET_X_OFFSET:int = 2;
       
@@ -79,12 +79,12 @@ package net.wg.gui.lobby.vehicleCompare
          _offsets[this.skillsWidget] = new Offsets(-1,55);
          _offsets[this.modules] = new Offsets(-2,14);
          _offsets[this.modificationsWidget] = new Offsets(12,22);
-         _offsets[this.equipmentWidget] = new Offsets(7,17);
+         _offsets[this.equipmentWidget] = new Offsets(-32,-22);
          _offsets[bottomPanel] = new Offsets(-40,-20);
          this._offsetsNoModifications[titleTf] = new Offsets(41,115);
          this._offsetsNoModifications[this.skillsWidget] = new Offsets(15,55);
          this._offsetsNoModifications[this.modules] = new Offsets(12,42);
-         this._offsetsNoModifications[this.equipmentWidget] = new Offsets(22,47);
+         this._offsetsNoModifications[this.equipmentWidget] = new Offsets(-17,8);
          this._offsetsNoModifications[bottomPanel] = new Offsets(3,60);
       }
       

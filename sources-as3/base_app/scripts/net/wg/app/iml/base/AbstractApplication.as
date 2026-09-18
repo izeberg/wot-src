@@ -27,6 +27,7 @@ package net.wg.app.iml.base
    import net.wg.infrastructure.managers.IImageManager;
    import net.wg.infrastructure.managers.ILoaderManager;
    import net.wg.infrastructure.managers.IPopoverManager;
+   import net.wg.infrastructure.managers.ISharedLayoutManager;
    import net.wg.infrastructure.managers.ISoundManager;
    import net.wg.infrastructure.managers.IStageSizeManager;
    import net.wg.infrastructure.managers.ITooltipMgr;
@@ -96,6 +97,8 @@ package net.wg.app.iml.base
       private var _graphicsOptimizationManager:IGraphicsOptimizationManager = null;
       
       private var _stageSizeManager:IStageSizeManager = null;
+      
+      private var _sharedLayoutManagerMgr:ISharedLayoutManager = null;
       
       private var _appWidth:Number = 0;
       
@@ -170,15 +173,15 @@ package net.wg.app.iml.base
          }
       }
       
-      public function as_unblurBackgroundViews() : void
-      {
-         this._utils.blurAdapter.unblurElements();
-      }
-      
       public function as_setMouseEventsEnabled(param1:Boolean) : void
       {
          mouseEnabled = param1;
          mouseChildren = param1;
+      }
+      
+      public function as_unblurBackgroundViews() : void
+      {
+         this._utils.blurAdapter.unblurElements();
       }
       
       public function as_updateStage(param1:Number, param2:Number, param3:Number) : void
@@ -423,6 +426,11 @@ package net.wg.app.iml.base
          throw new AbstractException("BaseApp.getNewStageSizeManager" + Errors.ABSTRACT_INVOKE);
       }
       
+      protected function getSharedLayoutManager() : ISharedLayoutManager
+      {
+         throw new AbstractException("BaseApp.getSharedLayoutManager" + Errors.ABSTRACT_INVOKE);
+      }
+      
       protected function initializeAtlasManager() : void
       {
       }
@@ -465,6 +473,7 @@ package net.wg.app.iml.base
          this._imageManager = this.getNewImageManagerManager();
          this._graphicsOptimizationManager = this.getNewGraphicsOptimizationManager();
          this._stageSizeManager = this.getNewStageSizeManager();
+         this._sharedLayoutManagerMgr = this.getSharedLayoutManager();
          if(this._loaderMgr)
          {
             this._loaderMgr.addEventListener(LibraryLoaderEvent.LOADED_COMPLETED,this.onLibraryLoadedHandler);
@@ -481,6 +490,11 @@ package net.wg.app.iml.base
       
       private function disposeManagers() : void
       {
+         if(this._sharedLayoutManagerMgr)
+         {
+            this._sharedLayoutManagerMgr.dispose();
+            this._sharedLayoutManagerMgr = null;
+         }
          this._classLoaderMgr = null;
          this._contextMenuMgr = null;
          this._containersMgr.removeEventListener(LoaderEvent.WAITING_LOADED,this.onWaitingLoadedHandler);
@@ -659,6 +673,11 @@ package net.wg.app.iml.base
       public function get stageSizeMgr() : IStageSizeManager
       {
          return this._stageSizeManager;
+      }
+      
+      public function get sharedLayoutMgr() : ISharedLayoutManager
+      {
+         return this._sharedLayoutManagerMgr;
       }
       
       public function get systemMessages() : DisplayObjectContainer

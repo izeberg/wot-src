@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from web.web_client_api import w2capi
 from web.web_client_api.shop.actions import ActionsWebApiMixin
 from web.web_client_api.shop.boosters import BoostersInfoWebApiMixin

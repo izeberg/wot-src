@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from enum import Enum
 from gui.filters.carousel_filter import FILTER_KEYS
 from gui.Scaleform.daapi.view.lobby.customization.shared import CustomizationTabs, CustomizationModes

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from gui.Scaleform.framework.entities.View import ViewKey
 from gui.app_loader.observers import BattleLoadingObserver, registerBattleObserverOverrideHandler, SwitchToBattleObserver, BattlePageObserver, SwitchToLobbyObserver

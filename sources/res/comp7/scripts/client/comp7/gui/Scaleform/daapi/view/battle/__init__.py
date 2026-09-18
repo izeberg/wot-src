@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from comp7_core.gui.Scaleform.daapi.view.battle.page import Comp7BattlePage
 from frameworks.wulf import WindowLayer
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS

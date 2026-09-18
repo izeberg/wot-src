@@ -1,4 +1,7 @@
-import math, BigWorld, Math, Event, math_utils
+from __future__ import absolute_import, division
+import math
+from builtins import range
+import BigWorld, Math, Event, math_utils
 
 class ImpulseReason(object):
     MY_SHOT = 0
@@ -121,7 +124,7 @@ def readVec2(dataSec, name, minVal, maxVal, defaultVal):
         return Math.Vector2(defaultVal)
     else:
         value = dataSec.readVector2(name, Math.Vector2(defaultVal))
-        for i in xrange(2):
+        for i in range(2):
             value[i] = math_utils.clamp(minVal[i], maxVal[i], value[i])
 
         return value
@@ -132,7 +135,7 @@ def readVec3(dataSec, name, minVal, maxVal, defaultVal):
         return Math.Vector3(defaultVal)
     else:
         value = dataSec.readVector3(name, Math.Vector3(defaultVal))
-        for i in xrange(3):
+        for i in range(3):
             value[i] = math_utils.clamp(minVal[i], maxVal[i], value[i])
 
         return value
@@ -249,8 +252,8 @@ def refineVehicleMProv(vehicleMProv):
 
 class FovExtended(object):
     __instance = None
-    arWide = 16.0 / 9.0
-    arNormal = 95.0 / 60.0
+    arWide = 1.7777777777777777
+    arNormal = 1.5833333333333333
 
     @staticmethod
     def calculateVerticalFov(horizontalFovValue):

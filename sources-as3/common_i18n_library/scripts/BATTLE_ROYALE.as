@@ -251,7 +251,7 @@ package
       
       public static const BATTLERESULT_PLAYERBATTLETYPESTATUS_BUTTON_TEXT:String = "#battle_royale:battleResult/playerBattleTypeStatus/button/text";
       
-      public static const BATTLERESULT_PLAYERBATTLETYPESTATUS_CLAN:String = "#battle_royale:battleResult/playerBattleTypeStatus/clan/";
+      public static const BATTLERESULT_PLAYERBATTLETYPESTATUS_CLAN:String = "#battle_royale:battleResult/playerBattleTypeStatus/clan";
       
       public static const BATTLERESULT_TAB_RESULT:String = "#battle_royale:battleResult/tab/result";
       

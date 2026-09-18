@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from constants import PREBATTLE_ROLE
 from gui.prb_control.entities.base.legacy.permissions import LegacyPermissions, ILegacyPermissions
 

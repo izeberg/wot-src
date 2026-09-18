@@ -1,10 +1,11 @@
+from __future__ import absolute_import
 from constants import IS_UE_EDITOR, IS_VS_EDITOR
 from visual_script.misc import ASPECT
 from visual_script.registrar import VSBlockRegistrar
-from contexts.sound_notifications_context import SoundNotificationsContext
-from contexts.ability_context import AbilityContextClient
-from contexts.entity_context import EntityContextClient
-from contexts.vehicle_context import VehicleContextClient
+from visual_script_client.contexts.sound_notifications_context import SoundNotificationsContext
+from visual_script_client.contexts.ability_context import AbilityContextClient
+from visual_script_client.contexts.entity_context import EntityContextClient
+from visual_script_client.contexts.vehicle_context import VehicleContextClient
 g_blockRegistrar = VSBlockRegistrar(ASPECT.CLIENT, ASPECT.HANGAR)
 
 def registerContext():
@@ -14,7 +15,7 @@ def registerContext():
 
 def registerForGeneral():
     registerContext()
-    import arena_blocks, vehicle_blocks, scene_blocks, event_platform_blocks, triggers_blocks, player_blocks, sound_blocks, game_settings_blocks, camera_blocks, battle_hud_block, bitmask_blocks, cgf_blocks, pve_battle_hud_blocks, battle_hints_blocks, vehicle_mechanics_blocks, platoon_blocks, pet_system_blocks, gameplay_logic_blocks
+    from visual_script_client import arena_blocks, vehicle_blocks, scene_blocks, event_platform_blocks, triggers_blocks, player_blocks, sound_blocks, game_settings_blocks, camera_blocks, battle_hud_block, bitmask_blocks, cgf_blocks, pve_battle_hud_blocks, battle_hints_blocks, vehicle_mechanics_blocks, platoon_blocks, pet_system_blocks, gameplay_logic_blocks
     g_blockRegistrar.regBlocksFromModule(event_platform_blocks)
     g_blockRegistrar.regBlocksFromModule(arena_blocks)
     g_blockRegistrar.regBlocksFromModule(vehicle_blocks)

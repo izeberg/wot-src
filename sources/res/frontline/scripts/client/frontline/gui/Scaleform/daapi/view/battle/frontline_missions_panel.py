@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import math
 from frontline.gui.Scaleform.daapi.view.meta.FrontlineMissionsPanelMeta import FrontlineMissionsPanelMeta
 from helpers import dependency

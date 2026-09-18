@@ -1,7 +1,10 @@
-import BigWorld, json, logging
-from wotdecorators import noexcept
+from __future__ import absolute_import
+import json, logging
+from future.utils import iteritems
+import BigWorld
 from uilogging.base.logger import _BaseLogger as Logger
 from uilogging.constants import DEFAULT_LOGGER_NAME
+from wotdecorators import noexcept
 _logger = logging.getLogger(DEFAULT_LOGGER_NAME)
 
 class ModsStatisticLogger(Logger):
@@ -28,7 +31,7 @@ class ModsStatisticLogger(Logger):
             return
         jsonStrLen = 2
         tmpMods = {}
-        for modName, md5 in mods.iteritems():
+        for modName, md5 in iteritems(mods):
             rowStrLen = 0
             rowStrLen += 5 + self.MD5_LEN
             rowStrLen += len(modName)

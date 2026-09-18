@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/czech/Cz41_Petra/normal/lod3/Chassis</nodefullVisual>
+	<parent>vehicles/czech/Cz41_Petra/normal/lod4/Chassis</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.730114 -0.000002 -3.392486</min>
+		<max>1.723113 1.040850 3.512617</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

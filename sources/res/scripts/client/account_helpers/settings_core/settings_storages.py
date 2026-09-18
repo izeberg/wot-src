@@ -1,3 +1,4 @@
+from __future__ import absolute_import, division
 import functools, weakref, BigWorld, BattleReplay
 from AvatarInputHandler.cameras import FovExtended
 from adisp import adisp_async

@@ -1,6 +1,6 @@
-import BigWorld
+from __future__ import absolute_import
+import BigWorld, Event
 from arena_component_system.client_arena_component_system import ClientArenaComponent
-import Event
 from constants import ARENA_BONUS_TYPE
 from debug_utils import LOG_DEBUG_DEV
 from helpers import dependency

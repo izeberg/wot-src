@@ -1,3 +1,6 @@
+from __future__ import absolute_import
+from future.utils import viewitems
+from past.builtins import long
 import BigWorld, chat_shared
 from gui.shared.utils import getPlayerDatabaseID
 from messenger.m_constants import USER_ACTION_ID as _ACTION_ID, USER_TAG as _TAG, MESSENGER_SCOPE, PROTO_TYPE, CLIENT_ACTION_ID
@@ -170,7 +173,7 @@ class UsersManager(ChatActionsListener):
 
     def __onFriendStatusUpdate(self, chatAction):
         userData = chatAction['data'] if chatAction.has_key('data') else [-1, False]
-        dbID, isOnline = userData.iteritems().next()
+        dbID, isOnline = next(iter(viewitems(userData)))
         user = self.usersStorage.getUser(dbID, PROTO_TYPE.BW)
         if user:
             user.update(isOnline=isOnline)

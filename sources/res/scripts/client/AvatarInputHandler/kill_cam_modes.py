@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, weakref, typing, BigWorld, constants, Keys, Math, BattleReplay, math_utils, GUI, CommandMapping as CM
 from PlayerEvents import g_playerEvents
 from battleground.simulated_scene import SimulatedScene, ANIMATION_DURATION_BEFORE_SHOT
@@ -8,12 +9,12 @@ from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
 from wotdecorators import noexcept
 from AvatarInputHandler.DynamicCameras.ArcadeCamera import ArcadeCamera
 from AvatarInputHandler.DynamicCameras.kill_cam_camera import KillCamera, StartCamDirection, LOOK_AT_KILLER_DURATION
-from control_modes import IControlMode, _readCameraTransitionSettings
+from AvatarInputHandler.control_modes import IControlMode, _readCameraTransitionSettings
 from aih_constants import CTRL_MODE_NAME
 from helpers import dependency, uniprof
 from helpers.CallbackDelayer import CallbackDelayer
 from skeletons.gui.battle_session import IBattleSessionProvider
-from PostmortemDelay import PostmortemDelay
+from AvatarInputHandler.PostmortemDelay import PostmortemDelay
 from account_helpers.AccountSettings import AccountSettings, WHEELED_DEATH_DELAY_COUNT
 if typing.TYPE_CHECKING:
     from typing import Dict, Any
@@ -795,7 +796,9 @@ class LookAtKillerMode(KillModeBase):
             waitTime = _WHEELED_VEHICLE_POSTMORTEM_DELAY
         suicide = self._killerVehicleID == self._victimVehicleID
         if not suicide:
-            if (simAvailability == SimulationAvailability.NOT_KILLED_BY_SHOT or simAvailability == SimulationAvailability.NOT_AVAILABLE_MISSING_DATA) and not isFirstTenDeathWheeledTank:
+            available = simAvailability in (
+             SimulationAvailability.NOT_KILLED_BY_SHOT, SimulationAvailability.NOT_AVAILABLE_MISSING_DATA)
+            if available and not isFirstTenDeathWheeledTank:
                 waitTime = _LOOK_AT_KILLER_DURATION_LEGACY
             self.__handleCameraRotation(enemySpottedInsideAOI=BigWorld.entity(self._killerVehicleID) is not None, killerIsSpotted=self._killerIsSpotted)
         if suicide or not haveEnoughTime:

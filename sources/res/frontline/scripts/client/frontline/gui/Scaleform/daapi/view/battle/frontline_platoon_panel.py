@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from frontline.gui.Scaleform.daapi.view.meta.FrontlinePlatoonPanelMeta import FrontlinePlatoonPanelMeta
 from helpers import i18n
 from gui.Scaleform.locale.EPIC_BATTLE import EPIC_BATTLE

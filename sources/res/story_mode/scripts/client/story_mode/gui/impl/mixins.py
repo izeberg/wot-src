@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from PlayerEvents import g_playerEvents
 
 class DestroyWindowOnDisconnectMixin(object):

@@ -1,5 +1,7 @@
+from __future__ import absolute_import
+import logging
 from collections import defaultdict
-import logging, BigWorld, Math, BattleReplay
+import BigWorld, Math, BattleReplay
 from PlayerEvents import g_playerEvents
 from aih_constants import CTRL_MODE_NAME, CTRL_MODES
 from arena_bonus_type_caps import ARENA_BONUS_TYPE_CAPS as BONUS_CAPS

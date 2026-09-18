@@ -193,6 +193,9 @@ msgstr "Vz. 62 Jasan"
 msgid "Chassis_Cz40_DBV_152"
 msgstr "DBV-152"
 
+msgid "Chassis_Cz41_Petra"
+msgstr "Petra"
+
 msgid "Chassis_Cz43_Ogar"
 msgstr "Ogar"
 
@@ -1016,6 +1019,36 @@ msgstr "DBV-152"
 msgid "Cz40_DBV_152_short_special"
 msgstr "Достойный разовый урон, неплохая динамика"
 
+msgid "Cz41_Petra"
+msgstr "Petra"
+
+msgid "Cz41_Petra_descr"
+msgstr ""
+"Эта машина разрабатывалась для поддержки пехоты и обладала повышенной "
+"огневой мощью благодаря спаренной орудийной установке. В основе её "
+"конструкции лежали проверенные решения и максимальная унификация. Плотная "
+"компоновка шасси и компактное моторно-трансмиссионное отделение позволили "
+"установить прочную башню, вооружить танк двумя крупнокалиберными орудиями и "
+"значительно увеличить углы горизонтального наведения. При создании машины "
+"широко применялись литые детали переменной толщины, что снижало массу. "
+"Однако для повышения защиты пришлось использовать навесные броневые "
+"элементы, образующие разнесённую преграду на пути кумулятивных снарядов. "
+"Концепция оказалась слишком необычной и не была принята заказчиками."
+
+msgid "Cz41_Petra_long_special"
+msgstr ""
+"Petra — чехословацкий тяжёлый танк VIII уровня. Главная особенность машины —"
+" спаренная орудийная установка. Высокий для своего уровня разовый урон "
+"делает этот танк особенно опасным при стрельбе залпом, и он может "
+"представлять серьёзную угрозу даже для соперников более высокого уровня. У "
+"машины хорошее бронирование, однако подвижность довольно посредственная."
+
+msgid "Cz41_Petra_short"
+msgstr "Petra"
+
+msgid "Cz41_Petra_short_special"
+msgstr "Спаренная орудийная установка, прочная броня"
+
 msgid "Cz43_Ogar"
 msgstr "ZŤS Vz.63-1 Ogar"
 
@@ -1076,6 +1109,9 @@ msgstr "DG-TK-61"
 
 msgid "DG_TK_62"
 msgstr "DG-TK-62"
+
+msgid "DNT_10_Petra"
+msgstr "DNT-10 (Petra)"
 
 msgid "DTN_10"
 msgstr "DTN-10"
@@ -1160,6 +1196,9 @@ msgstr "Radiostanice RM-31T"
 
 msgid "Radiostanice_R_112"
 msgstr "Radiostanice R-112"
+
+msgid "Radiostanice_R_112_Petra"
+msgstr "Radiostanice R-112 (Petra)"
 
 msgid "Radiostanice_R_113"
 msgstr "Radiostanice R-113"
@@ -1388,6 +1427,9 @@ msgstr "Vz. 62 Jasan"
 
 msgid "Turret_1_Cz40_DBV_152"
 msgstr "DBV-152"
+
+msgid "Turret_1_Cz41_Petra"
+msgstr "Petra"
 
 msgid "Turret_1_Cz43_Ogar"
 msgstr "Ogar"
@@ -1662,6 +1704,12 @@ msgstr "Nárazový vz. 48 (A)"
 msgid "_122mm_Narazovy_vz_52"
 msgstr "Nárazový vz. 52"
 
+msgid "_122mm_Narazovy_vz_52_Petra"
+msgstr "Nárazový vz. 52 (Petra)"
+
+msgid "_122mm_Prupalny_vz_52_Petra"
+msgstr "Průpalný vz. 52 (Petra)"
+
 msgid "_122mm_Prurazny_vz_48"
 msgstr "Průrazný vz. 48"
 
@@ -1683,6 +1731,9 @@ msgstr "Průrazný 50-60 (s oc. jádrem)"
 msgid "_122mm_Prurazny_vz_52"
 msgstr "Průrazný vz. 52"
 
+msgid "_122mm_Prurazny_vz_52_Petra"
+msgstr "Průrazný vz. 52 (Petra)"
+
 msgid "_122mm_Prurazny_vz_52_s_oc_jadrem"
 msgstr "Průrazný vz. 52 (s jádrem)"
 
@@ -1691,6 +1742,9 @@ msgstr "UBR-471"
 
 msgid "_122mm_UOF_741"
 msgstr "UOF-741"
+
+msgid "_122mm_Vz_122_2_L52_Petra"
+msgstr "122 mm Vz. 122-2 L/52 (Petra)"
 
 msgid "_122mm_vz_122_L52"
 msgstr "122 mm vz. 122 L/52"

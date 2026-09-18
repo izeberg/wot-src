@@ -19,6 +19,7 @@ package net.wg.gui.battle.views.widgetsPanel.settings
    import net.wg.gui.battle.views.widgetsPanel.ShellCalibrationWidget;
    import net.wg.gui.battle.views.widgetsPanel.ShellParamsSwitcherWidget;
    import net.wg.gui.battle.views.widgetsPanel.SightPointerWidget;
+   import net.wg.gui.battle.views.widgetsPanel.SpecBoostModeWidget;
    import net.wg.gui.battle.views.widgetsPanel.StagedJetBoostersWidget;
    import net.wg.gui.battle.views.widgetsPanel.StanceDanceFightWidget;
    import net.wg.gui.battle.views.widgetsPanel.StanceDanceTurboWidget;
@@ -69,6 +70,7 @@ package net.wg.gui.battle.views.widgetsPanel.settings
          this._settingsList[BATTLE_WIDGETS_CONSTS.AUTORELOADER_SURGE] = new WidgetProperties(Linkages.AUTORELOADER_SURGE,AutoreloaderSurgeWidget,BATTLE_VIEW_ALIASES.AUTORELOADER_SURGE_WIDGET);
          this._settingsList[BATTLE_WIDGETS_CONSTS.BUSTLE_FEED] = new WidgetProperties(Linkages.BUSTLE_FEED,BustleFeedWidget,BATTLE_VIEW_ALIASES.BUSTLE_FEED_WIDGET);
          this._settingsList[BATTLE_WIDGETS_CONSTS.SIGHT_POINTER_WIDGET] = new WidgetProperties(Linkages.SIGHT_POINTER_WIDGET,SightPointerWidget,BATTLE_VIEW_ALIASES.SIGHT_POINTER_WIDGET);
+         this._settingsList[BATTLE_WIDGETS_CONSTS.SPEC_BOOST_MODE] = new WidgetProperties(Linkages.SPEC_BOOST_MODE,SpecBoostModeWidget,BATTLE_VIEW_ALIASES.SPEC_BOOST_MODE_WIDGET);
       }
       
       public static function get instance() : WidgetSettings

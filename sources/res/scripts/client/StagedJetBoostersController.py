@@ -6,12 +6,13 @@ from cgf_script.registration import registerReplicableComponent
 from constants import PHASED_MECHANIC_STATE, IS_CLIENT, AcceleratorStatus
 from gui.shared.utils.decorators import ReprInjector
 from items.components.shared_components import StagedJetBoostersParams
+from items.vehicle_mechanics_types import VehicleMechanicKey, VehicleMechanicKeys
 from shared_utils import skipInEditor
 from vehicles.components.component_wrappers import ifPlayerVehicle
 from vehicles.components.vehicle_component import VehicleDynamicComponent
 from vehicles.mechanics.common import IMechanicComponent
 from vehicles.mechanics.mechanic_commands import createMechanicCommandsEvents, IMechanicCommandsEvents, IMechanicCommandsComponent
-from vehicles.mechanics.mechanic_constants import VehicleMechanic, VehicleMechanicCommand
+from vehicles.mechanics.mechanic_constants import VehicleMechanicCommand
 from vehicles.mechanics.mechanic_helpers import getVehicleDescrMechanicParams
 from vehicles.mechanics.mechanic_logging import createMechanicInputLogger, IMechanicInputLoggingComponent
 from vehicles.mechanics.mechanic_states import IMechanicStatesComponent, createMechanicStatesEvents, IMechanicStatesEvents, IMechanicState
@@ -19,6 +20,7 @@ from wotdecorators import noexcept
 if IS_CLIENT:
     import Input
     from Input import TriggerEvent
+    from vehicles.mechanics.mechanic_inputs.mechanic_input_profile import PlayerVehicleInputPredicate
 _logger = logging.getLogger(__name__)
 
 @ReprInjector.simple('state', 'endTime', 'duration', 'count', 'acceleratorStatus', 'params')
@@ -76,15 +78,9 @@ class StagedJetBoostersController(VehicleDynamicComponent, StagedJetBoostersCont
         self._initComponent()
         return
 
-    def onDestroy(self):
-        self.detachInput()
-        self.__commandsEvents.destroy()
-        self.__statesEvents.destroy()
-        super(StagedJetBoostersController, self).onDestroy()
-
     @property
-    def vehicleMechanic(self):
-        return VehicleMechanic.STAGED_JET_BOOSTERS
+    def vehicleMechanicKey(self):
+        return VehicleMechanicKeys.STAGED_JET_BOOSTERS
 
     @property
     def commandsEvents(self):
@@ -101,6 +97,7 @@ class StagedJetBoostersController(VehicleDynamicComponent, StagedJetBoostersCont
             return
         inputAction = Input.inputSystem().findAction(self._INPUT_PROFILE_NAME, self._INPUT_ACTION_NAME)
         if inputAction:
+            inputAction.setPredicate(PlayerVehicleInputPredicate(self.entity))
             inputAction.bindEventReaction(TriggerEvent.Triggered, self.tryActivate)
         else:
             _logger.error("[INPUT] Can't find InputAction %s/%s", self._INPUT_PROFILE_NAME, self._INPUT_ACTION_NAME)
@@ -123,7 +120,7 @@ class StagedJetBoostersController(VehicleDynamicComponent, StagedJetBoostersCont
         return {'state': self.__currentState.state, 
            'time_left': self.__currentState.timeLeft, 
            'duration': self.__currentState.duration, 
-           'mechanic_name': self.vehicleMechanic.name}
+           'mechanic_name': self.vehicleMechanicKey.mechanic.name}
 
     def getMechanicState(self):
         return self.__currentState
@@ -141,6 +138,12 @@ class StagedJetBoostersController(VehicleDynamicComponent, StagedJetBoostersCont
     def set_acceleratorStatus(self, prev=None):
         self._updateComponentAppearance()
 
+    def onDestroy(self):
+        self.detachInput()
+        self.__commandsEvents.destroy()
+        self.__statesEvents.destroy()
+        super(StagedJetBoostersController, self).onDestroy()
+
     def _onAppearanceReady(self):
         super(StagedJetBoostersController, self)._onAppearanceReady()
         self.__updateMechanicState()
@@ -148,7 +151,7 @@ class StagedJetBoostersController(VehicleDynamicComponent, StagedJetBoostersCont
 
     def _collectComponentParams(self, typeDescriptor):
         super(StagedJetBoostersController, self)._collectComponentParams(typeDescriptor)
-        self.__params = getVehicleDescrMechanicParams(typeDescriptor, self.vehicleMechanic)
+        self.__params = getVehicleDescrMechanicParams(typeDescriptor, self.vehicleMechanicKey)
 
     def _onComponentAppearanceUpdate(self, **kwargs):
         super(StagedJetBoostersController, self)._onComponentAppearanceUpdate(**kwargs)

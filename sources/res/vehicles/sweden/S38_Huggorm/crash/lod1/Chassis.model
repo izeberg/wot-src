@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/sweden/S38_Huggorm/crash/lod2/Chassis</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.656745 -0.000000 -2.738894</min>
+		<max>1.656622 1.204999 3.172053</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/sweden/S38_Huggorm/crash/lod1/Chassis</nodefullVisual>
+</root>

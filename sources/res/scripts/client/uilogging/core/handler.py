@@ -1,9 +1,11 @@
-import typing, json, zlib, base64, binascii
+from __future__ import absolute_import
+import typing, json, zlib, binascii
 from functools import wraps, partial
 import BigWorld
 from Event import SafeEvent
 from helpers import isPlayerAccount
 from helpers.log.adapters import getWithContext
+from py2to3.compat import base64compat
 from shared_utils import safeCancelCallback
 from uilogging.constants import DEFAULT_LOGGER_NAME, LogLevels
 from uilogging.core.core_constants import LOGS_SEND_PERIOD, LOGS_FORCE_SEND_PERIOD, LOGS_MAX_QUEUE_SIZE, HTTP_DEFAULT_TIMEOUT, HTTP_OK_STATUS, HTTP_SESSION_EXPIRED, DEFAULT_COMPRESSION_LEVEL, FINAL_FLUSH_TIMEOUT, HttpHeaders
@@ -78,6 +80,9 @@ class FeatureSettings(object):
 
     def __ne__(self, other):
         return not self.__eq__(other)
+
+    def __hash__(self):
+        return hash(self.params)
 
     def __str__(self):
         return ('<FeatureSettings: {}>').format(self.params)
@@ -230,7 +235,7 @@ class LogHandler(object):
         else:
             try:
                 jsonData = json.dumps([ _log.toDict() for _log in logs ])
-                postData = base64.b64encode(zlib.compress(jsonData.encode('utf-8'), DEFAULT_COMPRESSION_LEVEL))
+                postData = base64compat.b64encode(zlib.compress(jsonData.encode('utf-8'), DEFAULT_COMPRESSION_LEVEL))
             except (binascii.Error, zlib.error, UnicodeError, TypeError, ValueError):
                 self._logger.exception('Logs compression failed.')
                 return

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import CGF
 from cgf_script.registration import registerComponent
 from constants import VEHICLE_SIEGE_STATE
@@ -30,7 +31,8 @@ class HullAimingController(object):
     def onSiegeStateChanged(self, newState):
         if self.__vehicleFilter is None or self.__vehicleDescriptor is None:
             return
-        needUpdateSpringsLength = newState == VEHICLE_SIEGE_STATE.ENABLED or newState == VEHICLE_SIEGE_STATE.DISABLED or newState == VEHICLE_SIEGE_STATE.PILLBOX_ENABLED
+        needUpdateSpringsLength = newState in (
+         VEHICLE_SIEGE_STATE.ENABLED, VEHICLE_SIEGE_STATE.DISABLED, VEHICLE_SIEGE_STATE.PILLBOX_ENABLED)
         physics = self.__vehicleFilter.getVehiclePhysics()
         if physics is None or not needUpdateSpringsLength:
             return

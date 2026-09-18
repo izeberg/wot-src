@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import json, typing
 from gui.game_loading import loading as gameLoading
 from helpers import dependency

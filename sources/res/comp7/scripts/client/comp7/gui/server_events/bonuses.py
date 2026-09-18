@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging
 from comp7_common_const import COMP7_WEEKLY_QUESTS_COMPLETE_TOKEN_REGEXP
 from gui.Scaleform.locale.TOOLTIPS import TOOLTIPS

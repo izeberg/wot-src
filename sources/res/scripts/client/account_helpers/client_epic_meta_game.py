@@ -1,5 +1,6 @@
-from functools import partial
+from __future__ import absolute_import
 import AccountCommands
+from functools import partial
 from debug_utils import LOG_DEBUG_DEV
 from shared_utils.account_helpers.diff_utils import synchronizeDicts
 

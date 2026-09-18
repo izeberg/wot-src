@@ -1,4 +1,7 @@
-import re, Event
+from __future__ import absolute_import
+import re
+from future.utils import lfilter, viewvalues
+import Event
 from gui.Scaleform.framework.entities.DAAPIDataProvider import DAAPIDataProvider
 from gui.Scaleform.genConsts.CONTACTS_ALIASES import CONTACTS_ALIASES
 from helpers import dependency
@@ -423,10 +426,10 @@ class _ContactsCriteria(UserTagsFindCriteria):
         super(_ContactsCriteria, self).__init__(tags, None)
         return
 
-    def filter(self, user):
+    def filter(self, entity):
         result = False
-        if not user.isCurrentPlayer():
-            result = super(_ContactsCriteria, self).filter(user)
+        if not entity.isCurrentPlayer():
+            result = super(_ContactsCriteria, self).filter(entity)
         return result
 
 
@@ -486,7 +489,7 @@ class _ContactsCategories(object):
                 self._cache[idx] = category.getData(self._pattern)
                 result = True
 
-        data = filter(bool, self._cache)
+        data = lfilter(bool, self._cache)
         if len(data) == 1 and self.isEmpty():
             data = []
         return (
@@ -501,7 +504,7 @@ class _ContactsCategories(object):
                 self._cache[idx] = category.getData(self._pattern)
                 result = True
 
-        data = filter(bool, self._cache)
+        data = lfilter(bool, self._cache)
         if len(data) == 1 and self.isEmpty():
             data = []
         return (
@@ -554,7 +557,7 @@ class _ContactsCategories(object):
                 result = True
                 break
 
-        data = filter(bool, self._cache)
+        data = lfilter(bool, self._cache)
         if len(data) == 1 and self.isEmpty():
             data = []
         return (
@@ -572,7 +575,7 @@ class _ContactsCategories(object):
                 result = True
                 break
 
-        data = filter(bool, self._cache)
+        data = lfilter(bool, self._cache)
         if len(data) == 1 and self.isEmpty():
             data = []
         return (
@@ -595,7 +598,7 @@ class _ContactsCategories(object):
             resultDict.update(category.getContactsDict())
 
         resultList = []
-        for contact in resultDict.itervalues():
+        for contact in viewvalues(resultDict):
             if self._pattern is not None:
                 if self._pattern.match(contact['criteria'][1]) is not None:
                     resultList.append(contact['data'])

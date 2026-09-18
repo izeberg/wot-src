@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from constants import EntityCaptured
 from gui.battle_results.components import base, style
 from gui.battle_results.components.vehicles import RegularVehicleStatValuesBlock, RegularVehicleStatsBlock, TeamStatsBlock, _getStunFilter
@@ -19,7 +20,7 @@ class EfficiencyTitleWithSkills(base.StatsItem):
 
 class IsDeserterFlag(base.StatsItem):
 
-    def _convert(self, result, reusable):
+    def _convert(self, value, reusable):
         raise NotImplementedError
 
 

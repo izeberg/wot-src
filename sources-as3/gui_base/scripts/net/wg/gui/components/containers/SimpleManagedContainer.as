@@ -47,5 +47,10 @@ package net.wg.gui.components.containers
       {
          this._manageSize = param1;
       }
+      
+      public function get empty() : Boolean
+      {
+         return numChildren == 0;
+      }
    }
 }

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from comp7.gui.Scaleform.daapi.view.lobby.tooltips.comp7_calendar_day_extended_tooltip import Comp7CalendarDayExtendedTooltip
 from comp7.gui.Scaleform.daapi.view.lobby.tooltips.comp7_calendar_day_tooltip import Comp7CalendarDayTooltip
 from comp7.gui.Scaleform.daapi.view.lobby.tooltips.comp7_selector_tooltip import Comp7SelectorTooltip, Comp7SelectorUnavailableTooltip

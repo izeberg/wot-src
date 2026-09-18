@@ -1,5 +1,8 @@
+from __future__ import absolute_import
+import typing, logging
 from collections import defaultdict
-import typing, logging, GenericComponents, BigWorld, CGF, Math, math_utils
+from future.utils import viewvalues
+import BigWorld, CGF, GenericComponents, Math, math_utils
 from arena_component_system.client_arena_component_system import ClientArenaComponent
 from gui.battle_control import avatar_getter
 from gui.battle_control.battle_constants import FEEDBACK_EVENT_ID
@@ -33,8 +36,8 @@ class Comp7CoreEquipmentComponent(ClientArenaComponent):
         return
 
     def __clear(self):
-        for effects in self.__effects.itervalues():
-            for effect in effects.itervalues():
+        for effects in viewvalues(self.__effects):
+            for effect in viewvalues(effects):
                 effect.destroy()
 
             effects.clear()

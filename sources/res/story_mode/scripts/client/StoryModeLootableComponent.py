@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import CGF, Math
 from script_component.DynamicScriptComponent import DynamicScriptComponent
 from Event import SafeEvent, EventManager

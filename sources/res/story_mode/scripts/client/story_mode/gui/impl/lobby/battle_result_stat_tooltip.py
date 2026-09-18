@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from typing import Optional, Tuple
 from frameworks.wulf.view.view import ViewSettings
 from gui.impl.gen import R

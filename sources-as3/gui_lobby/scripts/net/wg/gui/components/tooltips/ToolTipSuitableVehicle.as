@@ -94,6 +94,7 @@ package net.wg.gui.components.tooltips
       {
          var _loc1_:ILocale = null;
          var _loc2_:SuitableVehicleVO = null;
+         var _loc3_:Separator = null;
          var _loc4_:uint = 0;
          var _loc5_:uint = 0;
          var _loc6_:TextField = null;
@@ -102,7 +103,7 @@ package net.wg.gui.components.tooltips
          var _loc9_:TextField = null;
          _loc1_ = App.utils.locale;
          _loc2_ = new SuitableVehicleVO(_data);
-         var _loc3_:Separator = null;
+         _loc3_ = null;
          separators = new Vector.<Separator>();
          this.headerTF.autoSize = TextFieldAutoSize.LEFT;
          if(!_loc2_.isCreator)

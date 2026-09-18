@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>content/3D_Customization/Cus_317_Satellite_Tracker/normal/lod1/Cus_317_Satellite_Tracker</nodefullVisual>
+	<parent>content/3D_Customization/Cus_317_Satellite_Tracker/normal/lod2/Cus_317_Satellite_Tracker</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.648962 -0.000151 -0.984472</min>
+		<max>0.104394 0.507534 0.688933</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

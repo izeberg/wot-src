@@ -1,5 +1,6 @@
 package net.wg.gui.battle.epicRandom.battleloading
 {
+   import flash.display.MovieClip;
    import flash.text.TextField;
    import net.wg.data.VO.daapi.DAAPIVehicleInfoVO;
    import net.wg.data.VO.daapi.DAAPIVehicleUserTagsVO;
@@ -34,13 +35,17 @@ package net.wg.gui.battle.epicRandom.battleloading
       private static const SQUAD_ICON_SHIFT:int = 57;
       
       private static const EXTENDED_LAYOUT_OFFSET:int = 30;
+      
+      private static const SIMPLE_BG_LBL:String = "simple";
+      
+      private static const TIPS_BG_LBL:String = "tips";
        
       
       public var team1Text:TextField = null;
       
       public var team2Text:TextField = null;
       
-      public var formBackgroundTable:BattleAtlasSprite = null;
+      public var formBackgroundTable:MovieClip = null;
       
       public var betaIcon:BattleAtlasSprite = null;
       
@@ -99,7 +104,7 @@ package net.wg.gui.battle.epicRandom.battleloading
          this._data = param1;
          if(param1.showTableBackground)
          {
-            this.formBackgroundTable.imageName = BATTLEATLAS.BATTLE_LOADING_FORM_BG_TABLE;
+            this.formBackgroundTable.gotoAndStop(SIMPLE_BG_LBL);
             this.team1Text.x = param1.leftTeamTitleLeft;
             this.team2Text.x = param1.rightTeamTitleLeft;
          }
@@ -107,7 +112,7 @@ package net.wg.gui.battle.epicRandom.battleloading
          {
             this._team1TextInitX = param1.leftTeamTitleLeft;
             this._team2TextInitX = param1.rightTeamTitleLeft;
-            this.formBackgroundTable.imageName = BATTLEATLAS.BATTLE_LOADING_FORM_BG_TIPS;
+            this.formBackgroundTable.gotoAndStop(TIPS_BG_LBL);
             App.stageSizeMgr.register(this);
          }
          if(param1.showMinimap)

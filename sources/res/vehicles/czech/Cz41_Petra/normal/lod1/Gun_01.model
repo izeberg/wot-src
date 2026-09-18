@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/czech/Cz41_Petra/normal/lod2/Gun_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.853674 -0.254650 -0.065101</min>
+		<max>0.501570 0.254038 5.167286</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/czech/Cz41_Petra/normal/lod1/Gun_01</nodefullVisual>
+</root>

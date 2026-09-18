@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import Event
 from debug_utils import LOG_ERROR, LOG_WARNING
 from notification.decorators import SearchCriteria, _NotificationDecorator

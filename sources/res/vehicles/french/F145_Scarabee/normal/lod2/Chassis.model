@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.655799 -0.000162 -3.357394</min>
+		<max>1.655799 1.151177 3.186661</max>
+	</visibilityBox>
+	<parent>vehicles/french/F145_Scarabee/normal/lod3/Chassis</parent>
+	<extent>96.000000</extent>
+	<nodefullVisual>vehicles/french/F145_Scarabee/normal/lod2/Chassis</nodefullVisual>
+</root>

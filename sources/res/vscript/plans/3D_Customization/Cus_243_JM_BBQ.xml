@@ -307,10 +307,22 @@
 				<output>false</output>
 			</connection>
 			<connection>
+				<from>Macro_1</from>
+				<input>input</input>
+				<to>SetVariable_1</to>
+				<output>PrebattleHighlightStart</output>
+			</connection>
+			<connection>
 				<from>GetComponentProperty_3</from>
 				<input>windup</input>
 				<to>Timer_5</to>
 				<output>out</output>
+			</connection>
+			<connection>
+				<from>Macro_1</from>
+				<input>cancel</input>
+				<to>Timer_5</to>
+				<output>PrebattleHighlightEnd</output>
 			</connection>
 			<connection>
 				<from>GetComponentProperty_3</from>
@@ -323,6 +335,12 @@
 				<input>in</input>
 				<to>ComponentMethod_17</to>
 				<output>event0</output>
+			</connection>
+			<connection>
+				<from>Timer_5</from>
+				<input>in</input>
+				<to>ComponentMethod_17</to>
+				<output>cancelOut</output>
 			</connection>
 			<connection>
 				<from>FindFirstNode_11</from>

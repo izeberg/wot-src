@@ -1,4 +1,7 @@
-import weakref, zlib, cPickle, AccountCommands
+from __future__ import absolute_import
+import weakref, zlib
+from future.moves import pickle
+import AccountCommands
 from debug_utils import LOG_CODEPOINT_WARNING, LOG_CURRENT_EXCEPTION
 
 class SimpleStreamResponseHandler(object):
@@ -23,7 +26,7 @@ class SimpleStreamResponseHandler(object):
             else:
                 try:
                     data = zlib.decompress(data)
-                    data = cPickle.loads(data)
+                    data = pickle.loads(data)
                 except Exception:
                     LOG_CURRENT_EXCEPTION()
                     isSuccess = False

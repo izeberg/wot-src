@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from account_helpers import AccountSettings
 from frontline_common.constants import AccountSettingsKeys, ACCOUNT_DEFAULT_SETTINGS
 

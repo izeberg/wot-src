@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from debug_utils import LOG_NOTE
 from messenger import g_settings
 from messenger.m_constants import PROTO_TYPE_NAMES

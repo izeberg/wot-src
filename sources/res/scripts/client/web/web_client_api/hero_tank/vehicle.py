@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
 from gui.shared import event_dispatcher
 from helpers import dependency

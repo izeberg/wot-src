@@ -1,4 +1,7 @@
-import functools, logging, math, typing, BigWorld, CGF, Keys, Math, ResMgr, Input
+from __future__ import absolute_import, division
+import functools, logging, math, typing
+from future.utils import viewitems, viewvalues
+import BigWorld, CGF, Keys, Math, ResMgr, Input
 from AvatarInputHandler.AimingSystems import disableShotPointCache
 from AvatarInputHandler.commands.armor_flashlight_control import ArmorFlashlightControl
 from AvatarInputHandler.commands.prebattle_highlights_control import PrebattleHighlightsCommandsSetup
@@ -6,11 +9,10 @@ from AvatarInputHandler.vehicles_selection_mode import VehiclesSelectionControlM
 from AvatarInputHandler.commands.fl_random_reserves import FLRandomReserves
 from aih_constants import MAP_CASE_MODES
 from helpers.CallbackDelayer import CallbackDelayer
-import BattleReplay, CommandMapping, DynamicCameras.ArcadeCamera, DynamicCameras.ArtyCamera, DynamicCameras.DualGunCamera, DynamicCameras.SniperCamera, DynamicCameras.StrategicCamera, DynamicCameras.kill_cam_camera, GenericComponents, MapCaseMode, RespawnDeathMode, TriggersManager, aih_constants, cameras, constants, control_modes, kill_cam_modes, DynamicCameras.twin_gun_camera
-from AvatarInputHandler import AimingSystems, keys_handlers
-from AvatarInputHandler import aih_global_binding, gun_marker_ctrl
-from AvatarInputHandler import steel_hunter_control_modes
+import BattleReplay, CommandMapping, GenericComponents, TriggersManager, aih_constants, constants
+from AvatarInputHandler import AimingSystems, keys_handlers, aih_global_binding, gun_marker_ctrl, steel_hunter_control_modes, MapCaseMode, RespawnDeathMode, cameras, control_modes, kill_cam_modes
 from BigWorld import SniperAimingSystem
+from AvatarInputHandler.DynamicCameras import ArcadeCamera, ArtyCamera, DualGunCamera, SniperCamera, StrategicCamera, kill_cam_camera, twin_gun_camera
 from AvatarInputHandler.commands.dualgun_control import DualGunController
 from AvatarInputHandler.commands.mechanic_controls import createMechanicControls
 from AvatarInputHandler.commands.prebattle_setups_control import PrebattleSetupsControl
@@ -31,13 +33,13 @@ from gui.app_loader import settings
 from gui.battle_control import event_dispatcher as gui_event_dispatcher
 from gui.shared.system_factory import collectPrebattleCtrlMode
 from helpers import dependency
-from player_notifications.siege_mode.notifier import SiegeModeNotifier
+from items.vehicle_mechanics_types import VehicleMechanicKeys
+from AvatarInputHandler.player_notifications.siege_mode.notifier import SiegeModeNotifier
 from skeletons.account_helpers.settings_core import ISettingsCore
 from skeletons.gui.app_loader import IAppLoader
 from components_base.component_descriptor import ComponentDescriptor
 from components_base.component_controller import ComponentController
 from vehicles.mechanics.mechanic_helpers import hasVehicleDescrMechanic
-from vehicles.mechanics.mechanic_constants import VehicleMechanic
 from avatar_components.avatar_input_debug import AvatarInputDebug
 if typing.TYPE_CHECKING:
     from BigWorld import KeyEvent, MouseEvent, AxisEvent
@@ -110,13 +112,13 @@ for royaleBonusCap in constants.ARENA_BONUS_TYPE.BATTLE_ROYALE_RANGE:
                              steel_hunter_control_modes.SHPostMortemControlMode, 'postMortemMode', _CTRL_TYPE.USUAL)}
 
 _DYNAMIC_CAMERAS = (
- DynamicCameras.ArcadeCamera.ArcadeCamera,
- DynamicCameras.SniperCamera.SniperCamera,
- DynamicCameras.StrategicCamera.StrategicCamera,
- DynamicCameras.ArtyCamera.ArtyCamera,
- DynamicCameras.DualGunCamera.DualGunCamera,
- DynamicCameras.twin_gun_camera.TwinGunCamera,
- DynamicCameras.kill_cam_camera.KillCamera)
+ ArcadeCamera.ArcadeCamera,
+ SniperCamera.SniperCamera,
+ StrategicCamera.StrategicCamera,
+ ArtyCamera.ArtyCamera,
+ DualGunCamera.DualGunCamera,
+ twin_gun_camera.TwinGunCamera,
+ kill_cam_camera.KillCamera)
 _FREE_AND_CHAT_SHORTCUT_CMD = (
  CommandMapping.CMD_CM_FREE_CAMERA, CommandMapping.CMD_CHAT_SHORTCUT_CONTEXT_COMMAND)
 
@@ -243,7 +245,7 @@ class AvatarInputHandler(CallbackDelayer, ComponentController):
         self.__isStarted = False
         self.__targeting = _Targeting()
         self.__vertScreenshotCamera = _VertScreenshotCamera()
-        self.__ctrls = dict()
+        self.__ctrls = {}
         self.__killerVehicleID = None
         self.__deathReasonID = None
         self.__isAutorotation = True
@@ -287,7 +289,7 @@ class AvatarInputHandler(CallbackDelayer, ComponentController):
             if typeDescr.hasSiegeMode:
                 self.siegeModeNotifier = SiegeModeNotifier()
                 self.siegeModeNotifier.construct(vehicle)
-                if not hasVehicleDescrMechanic(typeDescr, VehicleMechanic.PILLBOX_SIEGE_MODE):
+                if not hasVehicleDescrMechanic(typeDescr, VehicleMechanicKeys.PILLBOX_SIEGE_MODE):
                     self.siegeModeControl = SiegeModeControl(self.siegeModeNotifier)
                     self.__commands.append(self.siegeModeControl)
             if typeDescr.isDualgunVehicle and not self.dualGunControl:
@@ -328,7 +330,7 @@ class AvatarInputHandler(CallbackDelayer, ComponentController):
 
     def prerequisites(self):
         out = []
-        for ctrl in self.__ctrls.itervalues():
+        for ctrl in viewvalues(self.__ctrls):
             out += ctrl.prerequisites()
 
         return out
@@ -417,9 +419,8 @@ class AvatarInputHandler(CallbackDelayer, ComponentController):
         return result
 
     def updateShootingStatus(self, canShoot):
-        if self.__isDetached:
-            return
-        return self.__curCtrl.updateShootingStatus(canShoot)
+        if not self.__isDetached:
+            self.__curCtrl.updateShootingStatus(canShoot)
 
     def getDesiredShotPoint(self, ignoreAimingMode=False):
         if self.__isDetached:
@@ -485,7 +486,7 @@ class AvatarInputHandler(CallbackDelayer, ComponentController):
             self.siegeModeNotifier.stop()
         avatar = BigWorld.player()
         avatar.autoAim(None)
-        for ctlMode in self.__ctrls.itervalues():
+        for ctlMode in viewvalues(self.__ctrls):
             ctlMode.resetAimingMode()
 
         params = self.__curCtrl.postmortemCamParams if hasattr(self.__curCtrl, 'postmortemCamParams') else None
@@ -532,7 +533,7 @@ class AvatarInputHandler(CallbackDelayer, ComponentController):
         g_guiResetters.add(self.__onRecreateDevice)
         self.__identifyVehicleType()
         self.__constructComponents()
-        for control in self.__ctrls.itervalues():
+        for control in viewvalues(self.__ctrls):
             control.create()
 
         avatar = BigWorld.player()
@@ -569,7 +570,7 @@ class AvatarInputHandler(CallbackDelayer, ComponentController):
         import SoundGroups
         SoundGroups.g_instance.changePlayMode(0)
         aih_global_binding.clear()
-        for control in self.__ctrls.itervalues():
+        for control in viewvalues(self.__ctrls):
             control.destroy()
 
         replayCtrl = BattleReplay.g_replayCtrl
@@ -612,7 +613,7 @@ class AvatarInputHandler(CallbackDelayer, ComponentController):
                 self.onControlModeChanged(pendingMode, *args)
 
     def setObservedVehicle(self, vehicleID):
-        for control in self.__ctrls.itervalues():
+        for control in viewvalues(self.__ctrls):
             control.setObservedVehicle(vehicleID)
 
     @disableShotPointCache
@@ -778,7 +779,7 @@ class AvatarInputHandler(CallbackDelayer, ComponentController):
                     impulseReason = cameras.ImpulseReason.OTHER_SHOT
                     isDistant = True
             elif vehicle is avatarVehicle:
-                if shakeReason == _ShakeReason.HIT or shakeReason == _ShakeReason.HIT_NO_DAMAGE:
+                if shakeReason in (_ShakeReason.HIT, _ShakeReason.HIT_NO_DAMAGE):
                     impulseValue *= 1.0 if shakeReason == _ShakeReason.HIT else self.__dynamicCameraSettings.settings['zeroDamageHitSensitivity']
                     impulseReason = cameras.ImpulseReason.ME_HIT
                     isDistant = False
@@ -1093,12 +1094,12 @@ class _VertScreenshotCamera(object):
     def enable(self, doEnable):
         if self.__isEnabled == doEnable:
             return
-        from cameras import FovExtended
+        from AvatarInputHandler.cameras import FovExtended
         if not doEnable:
             self.__isEnabled = False
             BigWorld.camera(self.__savedCamera)
             BigWorld.wg_enableSuperShot(False, False)
-            for k, v in self.__savedWatchers.iteritems():
+            for k, v in viewitems(self.__savedWatchers):
                 BigWorld.setWatcher(k, v)
 
             FovExtended.instance().enabled = True

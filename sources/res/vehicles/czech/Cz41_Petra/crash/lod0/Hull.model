@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/czech/Cz41_Petra/crash/lod0/Hull</nodefullVisual>
+	<parent>vehicles/czech/Cz41_Petra/crash/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.905326 -0.815900 -3.708290</min>
+		<max>1.889993 0.539762 3.572629</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

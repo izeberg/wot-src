@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from enum import Enum
 from items import ITEM_TYPE_NAMES, ITEM_TYPES
 FEATURE = 'easy_tank_equip'

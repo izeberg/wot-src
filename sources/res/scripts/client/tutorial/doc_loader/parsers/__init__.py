@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import ResMgr
 from items import _xml
 from tutorial.data.chapter import Chapter, Scene
@@ -52,13 +53,15 @@ class DescriptorParser(object):
         if 'bonus' in tags:
             subSection = section['bonus']
             return sub_parsers.parseBonus(xmlCtx, subSection)
-        if 'bonus-ref' in tags:
-            bonusID = sub_parsers.parseID(xmlCtx, section['bonus-ref'], 'Specify a bonus ID')
-            if bonusID in bonuses:
-                return bonuses[bonusID]
-            _xml.raiseWrongXml(xmlCtx, section.name, ('Bonus reference {0} is not found').format(bonusID))
         else:
-            _xml.raiseWrongXml(xmlCtx, section.name, 'Bonuses is not found')
+            if 'bonus-ref' in tags:
+                bonusID = sub_parsers.parseID(xmlCtx, section['bonus-ref'], 'Specify a bonus ID')
+                if bonusID in bonuses:
+                    return bonuses[bonusID]
+                _xml.raiseWrongXml(xmlCtx, section.name, ('Bonus reference {0} is not found').format(bonusID))
+            else:
+                _xml.raiseWrongXml(xmlCtx, section.name, 'Bonuses is not found')
+            return
 
 
 class ChapterParser(object):

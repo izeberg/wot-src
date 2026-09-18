@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<Properties>
+		<vehicleId>
+			<Type>INT32</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</vehicleId>
+	</Properties>
+	<DefaultKeyName>RespawnPolicyVehicleLinkComponent</DefaultKeyName>
+</root>

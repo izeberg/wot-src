@@ -108,9 +108,9 @@ class CrewBook(FittingItem):
             sizeID = R.images.gui.maps.icons.crewBooks.books.dyn(size)
         else:
             sizeID = R.images.gui.maps.icons.crewBooks.books.dyn('s' + size)
-        resID = sizeID.dyn(replaceHyphenToUnderscore(self.getBonusIconName()))()
-        if resID != -1:
-            return backport.image(resID)
+        res = sizeID.dyn(replaceHyphenToUnderscore(self.getBonusIconName()))
+        if res.exists():
+            return backport.image(res())
         return ''
 
     def getGUIEmblemID(self):
@@ -133,7 +133,7 @@ class CrewBook(FittingItem):
         params = {}
         if self.nationID != nations.NONE_INDEX:
             params['nation'] = backport.text(R.strings.nations.dyn(self.getNation())())
-        return backport.text(R.strings.crew_books.items.dyn(self.getBookType()).Name(), **params)
+        return backport.text(R.strings.crew_books.c_items.dyn(self.getBookType()).Name(), **params)
 
     @property
     def fullDescription(self):
@@ -142,7 +142,7 @@ class CrewBook(FittingItem):
     @property
     def shortDescription(self):
         xpStr = backport.getIntegralFormat(self.getXP())
-        return backport.text(R.strings.crew_books.items.dyn(self.getBookSpread()).Descr(), exp=xpStr)
+        return backport.text(R.strings.crew_books.c_items.dyn(self.getBookSpread()).Descr(), exp=xpStr)
 
     @property
     def icon(self):

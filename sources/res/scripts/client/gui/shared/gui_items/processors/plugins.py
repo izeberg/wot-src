@@ -429,7 +429,7 @@ class MoneyValidator(SyncValidator):
         shortage = stats.money.getShortage(self.price)
         if shortage:
             currency = shortage.getCurrency(byWeight=False)
-            if currency == Currency.GOLD and not stats.mayConsumeWalletResources:
+            if currency == Currency.GOLD and not stats.isResourcesConsumptionAllowed:
                 error = GUI_ITEM_ECONOMY_CODE.WALLET_NOT_AVAILABLE
             elif self.__byCurrencyError:
                 error = GUI_ITEM_ECONOMY_CODE.getCurrencyError(currency)
@@ -443,7 +443,7 @@ class WalletValidator(SyncValidator):
 
     def _validate(self):
         stats = self.itemsCache.items.stats
-        if not stats.mayConsumeWalletResources:
+        if not stats.isResourcesConsumptionAllowed:
             return makeError(GUI_ITEM_ECONOMY_CODE.WALLET_NOT_AVAILABLE)
         return makeSuccess()
 

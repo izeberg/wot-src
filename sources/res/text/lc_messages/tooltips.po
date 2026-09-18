@@ -2806,13 +2806,13 @@ msgid "boostersWindow/booster/activateInfo/expirableReserves"
 msgstr "Резервы со сроком действия"
 
 msgid "boostersWindow/booster/activateInfo/expirationTimer"
-msgstr "%(count)s в течение %(time)s"
+msgstr "%(count)s за %(time)s"
 
 msgid "boostersWindow/booster/activateInfo/expireSoon"
-msgstr "Активируйте личные резервы с ограниченным сроком:"
+msgstr "Активируйте личные резервы со сроком действия:"
 
 msgid "boostersWindow/booster/activateInfo/expireToday"
-msgstr "Активируйте личные резервы с ограниченным сроком:"
+msgstr "Активируйте личные резервы со сроком действия:"
 
 msgid "boostersWindow/booster/activateInfo/improvedReserve"
 msgstr "Улучшенный личный резерв"
@@ -8176,6 +8176,26 @@ msgstr "?empty?"
 msgid "notrecruitedtankman/fisherman/label"
 msgstr "?empty?"
 
+msgid "notrecruitedtankman/fr_spark/desc"
+msgstr ""
+"Лэйси Пэкстон по прозвищу «Искорка» нигде не задерживалась надолго. Её "
+"воспитывал отец, инженер связи, и они постоянно переезжали с одной военной "
+"базы на другую. Благодаря этому она повидала мир, научилась "
+"приспосабливаться к любым условиям и приобрела поразительную способность "
+"замечать закономерности. Позже Искорка доказала, что одинаково хорошо "
+"управляется как с разведывательным оборудованием, так и с бронетехникой. Она"
+" руководит с присущим ей сухим остроумием и никогда зря не рискует своим "
+"экипажем. Когда «Сектор 3» сформировал подразделение для перехвата передач "
+"Архитектора, Искорка стала очевидным кандидатом на роль его командира. Свою "
+"первую операцию она назвала «Выкидной нож», и это название закрепилось за "
+"всем подразделением."
+
+msgid "notrecruitedtankman/fr_spark/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/fr_spark/label"
+msgstr "Есть сигнал"
+
 msgid "notrecruitedtankman/freeSkillsTitle"
 msgstr "«Нулевые» навыки"
 
@@ -8577,6 +8597,25 @@ msgid "notrecruitedtankman/lunar26_commander/howToGetInfo"
 msgstr "?empty?"
 
 msgid "notrecruitedtankman/lunar26_commander/label"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/mustached_engineer/desc"
+msgstr ""
+"Знаменитый инженер, ставший командиром, Эмиль Дьяченко одинаково уверенно "
+"чувствует себя, ведя огонь по танкам противника или вскрывая моторный отсек,"
+" чтобы установить очередное импровизированное улучшение. Настоящий "
+"индивидуалист, он стал легендой в казарме — его люди клянутся, что он "
+"никогда не спит. Эмиль знает об этих слухах и предпочитает не подтверждать и"
+" не опровергать их. Как большой любитель всего необычного, он никогда не "
+"станет сдерживать чьё-либо воображение. И действительно, когда он не "
+"замышляет очередную безумную авантюру, то чертит самодельные "
+"турбонагнетатели, которые никак не могут работать... по крайней мере, на "
+"первый взгляд."
+
+msgid "notrecruitedtankman/mustached_engineer/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/mustached_engineer/label"
 msgstr "?empty?"
 
 msgid "notrecruitedtankman/ny19men/desc"
@@ -11182,8 +11221,8 @@ msgstr "Боевой пропуск: Far Cry"
 
 msgid "notrecruitedtankman/tankmen_bp20_8/desc"
 msgstr ""
-"Джейсон Броди — талантливый и умный, но непутёвый малый, привыкший плыть по "
-"течению. В основном его интересуют вечеринки, экстремальные виды спорта и "
+"Джейсон Броуди — талантливый и умный, но непутёвый малый, привыкший плыть по"
+" течению. В основном его интересуют вечеринки, экстремальные виды спорта и "
 "его девушка Лиза, постоянно напоминающая о том, что пора бы взяться за ум. "
 "Оказавшись на враждебном острове, он наконец вынужден сосредоточиться на "
 "единственной важной цели: спасении друзей. По ходу дела Джейсон обнаруживает"
@@ -14373,7 +14412,7 @@ msgid "shell/mechanics/bustleFeed/paramsHeader/basic"
 msgstr "Базовые"
 
 msgid "shell/mechanics/bustleFeed/paramsHeader/specific"
-msgstr "Модифицированные"
+msgstr "Унитарные"
 
 msgid "shell/mechanics/lowChargeShot/description"
 msgstr ""
@@ -14400,7 +14439,7 @@ msgstr ""
 "Регулируемый взрыватель увеличивает средний урон или бронепробиваемость."
 
 msgid "shell/mechanics/shellCalibration/paramsHeader"
-msgstr "Изменяемые"
+msgstr "Изменяемые:"
 
 msgid "shell/mechanics/shellParamsSwitcher/description"
 msgstr ""
@@ -15127,7 +15166,7 @@ msgstr ""
 
 msgid "tank_params/desc/bustleFeedDamagePerShot"
 msgstr ""
-"Среднее значение урона, наносимого единичным снарядом повышенной мощности за"
+"Среднее значение урона, наносимого унитарным снарядом повышенной мощности за"
 " один выстрел при пробитии брони. Разброс урона составляет от –25% до +25% "
 "от среднего значения."
 
@@ -15196,6 +15235,12 @@ msgid "tank_params/desc/coincidenceElectromechanicalSightDuration"
 msgstr ""
 "Продолжительность эффекта параллаксного электромеханического прицела после "
 "активации."
+
+msgid "tank_params/desc/combatThrottleCooldown"
+msgstr "Время до повторного использования «Боевого форсажа»."
+
+msgid "tank_params/desc/combatThrottleDuration"
+msgstr "Продолжительность действия «Боевого форсажа» после активации."
 
 msgid "tank_params/desc/concentrationModeCooldown"
 msgstr "Время до повторного использования стабилизатора."

@@ -289,6 +289,30 @@ package net.wg.gui.battle.views.situationIndicators
          return this._perksList;
       }
       
+      protected function addMask() : void
+      {
+         var _loc1_:uint = MAX_VISIBLE_ITEMS * ITEM_FULL_WIDTH + ITEM_GAP;
+         var _loc2_:uint = ITEM_SIZE;
+         var _loc3_:Matrix = new Matrix();
+         _loc3_.createGradientBox(_loc1_,_loc2_,0,0,0);
+         this._gMask.graphics.beginGradientFill(GradientType.LINEAR,[16777215,16777215,16777215,16777215],[0,1,1,0],[0,255 * 0.02,255 * 0.98,255],_loc3_);
+         this._gMask.graphics.drawRect(0,0,_loc1_,_loc2_);
+         this._gMask.graphics.endFill();
+         _loc3_ = null;
+         this.addChild(this._gMask);
+         this._gMask.cacheAsBitmap = true;
+         this._gMask.blendMode = BlendMode.ALPHA;
+         this._sMask.graphics.beginFill(16777215);
+         this._sMask.graphics.drawRect(0,0,_loc1_,_loc2_);
+         this._sMask.graphics.endFill();
+         addChild(this._sMask);
+         this.mask = this._sMask;
+         this._gMask.mouseEnabled = this._sMask.mouseEnabled = false;
+         this._gMask.mouseChildren = this._sMask.mouseChildren = false;
+         this._gMask.x = this._sMask.x = (_loc1_ >> 1) * -1;
+         this._gMask.y = this._sMask.y = this.wrapper.y;
+      }
+      
       private function animateItem(param1:MovieClip, param2:int, param3:Boolean) : void
       {
          var _loc4_:Number = NaN;
@@ -342,30 +366,6 @@ package net.wg.gui.battle.views.situationIndicators
          _loc4_.x = _loc6_ + _loc5_ * ITEM_FULL_WIDTH;
          this._weatherList.push(_loc4_);
          this.wrapper.addContent(_loc4_);
-      }
-      
-      private function addMask() : void
-      {
-         var _loc1_:uint = MAX_VISIBLE_ITEMS * ITEM_FULL_WIDTH + ITEM_GAP;
-         var _loc2_:uint = ITEM_SIZE;
-         var _loc3_:Matrix = new Matrix();
-         _loc3_.createGradientBox(_loc1_,_loc2_,0,0,0);
-         this._gMask.graphics.beginGradientFill(GradientType.LINEAR,[16777215,16777215,16777215,16777215],[0,1,1,0],[0,255 * 0.02,255 * 0.98,255],_loc3_);
-         this._gMask.graphics.drawRect(0,0,_loc1_,_loc2_);
-         this._gMask.graphics.endFill();
-         _loc3_ = null;
-         this.addChild(this._gMask);
-         this._gMask.cacheAsBitmap = true;
-         this._gMask.blendMode = BlendMode.ALPHA;
-         this._sMask.graphics.beginFill(16777215);
-         this._sMask.graphics.drawRect(0,0,_loc1_,_loc2_);
-         this._sMask.graphics.endFill();
-         addChild(this._sMask);
-         this.mask = this._sMask;
-         this._gMask.mouseEnabled = this._sMask.mouseEnabled = false;
-         this._gMask.mouseChildren = this._sMask.mouseChildren = false;
-         this._gMask.x = this._sMask.x = (_loc1_ >> 1) * -1;
-         this._gMask.y = this._sMask.y = this.wrapper.y;
       }
       
       private function getItemsStartPosition() : int

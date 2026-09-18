@@ -1,3 +1,6 @@
+from __future__ import absolute_import
+from future.utils import viewitems
+from past.builtins import basestring
 from gui.SystemMessages import SM_TYPE, pushI18nMessage, pushMessage
 from web.web_client_api import WebCommandException, w2c, W2CSchema, Field
 
@@ -32,14 +35,14 @@ class NotificationWebApiMixin(object):
         elif cmd.hasI18nKey():
             parameters = cmd.i18n_data
             params = {'type': smType, 'key': cmd.i18n_key, 'messageData': cmd.message_data}
-            for key, value in parameters.iteritems():
+            for key, value in viewitems(parameters):
                 params[key] = value
 
             pushI18nMessage(**params)
         elif cmd.hasKey():
             custom_parameters = cmd.custom_parameters
             params = {'type': smType, 'key': cmd.key, 'messageData': cmd.message_data}
-            for key, value in custom_parameters.iteritems():
+            for key, value in viewitems(custom_parameters):
                 params[key] = value
 
             pushI18nMessage(**params)

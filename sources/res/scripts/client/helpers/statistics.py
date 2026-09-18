@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld, ResMgr, Settings, Sound
 from constants import ARENA_PERIOD, INVALID_CLIENT_STATS
 from account_helpers.settings_core.settings_constants import GRAPHICS, SOUND, SoundPhysicsQuality
@@ -5,6 +6,7 @@ from gui.shared.utils.graphics import getGraphicsEngineValue
 from gui.shared.utils import monitor_settings
 from debug_utils import LOG_DEBUG, LOG_NOTE
 from helpers import dependency, isPlayerAvatar
+from math_common import round_py2_style_int
 from skeletons.account_helpers.settings_core import ISettingsCore
 from skeletons.connection_mgr import IConnectionManager
 from skeletons.gui.battle_session import IBattleSessionProvider
@@ -265,7 +267,7 @@ class StatisticsCollector(IStatisticsCollector):
            'screen_res_width': resolutionContainer.width, 
            'screen_res_height': resolutionContainer.height, 
            'window_mode': windowModeLUT.get(windowMode, 0), 
-           'drr_scale': int(round(BigWorld.getDRRScale() * 100)), 
+           'drr_scale': round_py2_style_int(BigWorld.getDRRScale() * 100), 
            'game_session_duration': statisticsDict['gameSessionDuration'], 
            'arena_id': self.__lastArenaUniqueID, 
            'periphery_id': getClientPeripheryID(), 

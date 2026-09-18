@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from gui.battle_results.presenters.battle_results_sub_presenter import BattleResultsSubPresenter
 from frontline.gui.impl.gen.view_models.views.lobby.views.post_battle_results_view.post_battle_results_view_model import PostBattleResultsViewModel

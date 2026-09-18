@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from comp7.gui.Scaleform.daapi.view.lobby.hangar.carousels.carousel_data_provider import Comp7CarouselDataProvider
 from comp7.gui.Scaleform.daapi.view.lobby.hangar.carousels.carousel_filter import Comp7CarouselFilter
 from gui.Scaleform.daapi.view.lobby.hangar.carousels import BattlePassTankCarousel

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, time, typing, AccountCommands
 if typing.TYPE_CHECKING:
     from Account import PlayerAccount

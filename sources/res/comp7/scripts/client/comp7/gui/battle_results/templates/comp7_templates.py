@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from comp7.gui.battle_results.components import comp7_components
 from comp7_core.gui.battle_results.components import comp7_core_components
 from comp7_core.gui.battle_results.components import progress

@@ -1,4 +1,6 @@
+from __future__ import absolute_import
 import weakref
+from future.utils import lmap
 from typing import List
 import BigWorld, Math
 from ArenaType import g_cache
@@ -84,14 +86,14 @@ class GetActiveControlPoints(Block, ArenaMeta):
                 teambases.append(self._CACHE[baseKey])
 
         elif team != TEAMS_IN_ARENA.ANY_TEAM and team <= len(teamBasePositions):
-            for baseId in teamBasePositions[(team - 1)].iterkeys():
+            for baseId in teamBasePositions[(team - 1)]:
                 baseKey = (
                  team, baseId)
                 if baseKey not in self._CACHE:
                     self._CACHE[baseKey] = self.TeamBase(*baseKey)
                 teambases.append(self._CACHE[baseKey])
 
-        self._value.setValue(map(weakref.proxy, teambases))
+        self._value.setValue(lmap(weakref.proxy, teambases))
         return
 
     @classmethod
@@ -150,10 +152,10 @@ class OnCaptureControlPoint(TunableEventBlock, ArenaMeta):
         if points != lastPoints:
             self._index = 2
             self._callUpdated()
-        if capturingStopped or lastInvadersCnt > 0 and invadersCnt <= 0:
+        if capturingStopped or invadersCnt <= 0 < lastInvadersCnt:
             self._index = 1
             self._callStopped()
-        elif lastInvadersCnt <= 0 and invadersCnt > 0:
+        elif lastInvadersCnt <= 0 < invadersCnt:
             self._index = 0
             self._callStarted()
         return
@@ -362,8 +364,8 @@ class GetUDOByName(GetUDOByNameBase):
         return [ASPECT.CLIENT]
 
     def _getUDOsOfType(self, typeName):
-        allUDOs = BigWorld.userDataObjects.values()
-        return [ udo for udo in allUDOs if udo.__class__.__name__ == typeName ]
+        return [ udo for udo in BigWorld.userDataObjects.values() if udo.__class__.__name__ == typeName
+               ]
 
 
 class GetArenaBorders(Block, ArenaMeta):
@@ -407,7 +409,7 @@ class GetVehicles(Block, ArenaMeta):
                 vehicles = (v for v in vehicles if v.id != avatar.vehicle.id)
             if self._excludeDestroyed.hasValue() and self._excludeDestroyed.getValue():
                 vehicles = (v for v in vehicles if v.isAlive())
-            self._vehicles.setValue(map(weakref.proxy, vehicles))
+            self._vehicles.setValue(lmap(weakref.proxy, vehicles))
         else:
             errorVScript(self, 'BigWorld.player is not player avatar.')
         return

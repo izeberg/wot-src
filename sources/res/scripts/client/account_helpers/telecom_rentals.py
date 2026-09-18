@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, typing, AccountCommands
 from Event import Event
 from account_helpers import AccountSyncData

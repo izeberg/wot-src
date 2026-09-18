@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from frontline.gui.impl.gen.view_models.views.lobby.views.skill_base_model import SkillBaseModel
 if typing.TYPE_CHECKING:

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld, Math, math_utils
 from Event import EventManager, Event
 from helpers.CallbackDelayer import CallbackDelayer

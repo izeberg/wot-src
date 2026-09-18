@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, typing, weakref, BigWorld
 from constants import IS_VS_EDITOR, ROCKET_ACCELERATION_STATE, UNKNOWN_VEHICLE_ID
 from debug_utils import LOG_WARNING

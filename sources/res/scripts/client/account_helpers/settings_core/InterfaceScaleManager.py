@@ -1,4 +1,5 @@
-import weakref, Event, BigWorld
+from __future__ import absolute_import
+import weakref, BigWorld, Event
 from gui.shared.utils import graphics
 from gui import g_guiResetters
 from account_helpers.settings_core import settings_constants

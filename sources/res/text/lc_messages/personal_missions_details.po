@@ -3995,8 +3995,7 @@ msgstr "Авангард-14"
 
 msgid "pm3_10_1_14_description_counterAttack"
 msgstr ""
-"Нанести %(goal)s ед. урона машинам противника, которые попали по вашей "
-"машине."
+"Нанести %(goal)s ед. урона машинам противника, которые нанесли вам урон."
 
 msgid "pm3_10_1_14_short"
 msgstr "Авангард-14"
@@ -4316,8 +4315,7 @@ msgid "pm3_10_2_3"
 msgstr "Засада-3"
 
 msgid "pm3_10_2_3_description_damage"
-msgstr ""
-"Нанести %(goal)s ед. урона, оставаясь необнаруженным в момент его нанесения."
+msgstr "Нанести %(goal)s ед. урона, оставаясь необнаруженным."
 
 msgid "pm3_10_2_3_description_killWithCausingDamage"
 msgstr ""
@@ -4424,7 +4422,7 @@ msgstr "Засада-9"
 
 msgid "pm3_10_2_9_description_hitsBlindly"
 msgstr ""
-"Не менее %(hits)s раз нанести урон технике противника, необнаруженной в "
+"Нанести урон %(hits)s раз технике противника, необнаруженной для вас в "
 "момент его нанесения."
 
 msgid "pm3_10_2_9_description_killsDiversity"
@@ -4960,8 +4958,7 @@ msgstr "Авангард-9"
 
 msgid "pm3_8_1_9_description_counterAttack"
 msgstr ""
-"Нанести %(goal)s ед. урона машинам противника, которые попали по вашей "
-"машине."
+"Нанести %(goal)s ед. урона машинам противника, которые нанесли вам урон."
 
 msgid "pm3_8_1_9_short"
 msgstr "Авангард-9"
@@ -5183,8 +5180,7 @@ msgid "pm3_8_2_9"
 msgstr "Засада-9"
 
 msgid "pm3_8_2_9_description_damage"
-msgstr ""
-"Нанести %(goal)s ед. урона, оставаясь необнаруженным в момент его нанесения."
+msgstr "Нанести %(goal)s ед. урона, оставаясь необнаруженным."
 
 msgid "pm3_8_2_9_short"
 msgstr "Засада-9"
@@ -5531,8 +5527,7 @@ msgstr "Авангард-14"
 
 msgid "pm3_9_1_14_description_counterAttack"
 msgstr ""
-"Нанести %(goal)s ед. урона машинам противника, которые попали по вашей "
-"машине."
+"Нанести %(goal)s ед. урона машинам противника, которые нанесли вам урон."
 
 msgid "pm3_9_1_14_short"
 msgstr "Авангард-14"
@@ -5853,8 +5848,7 @@ msgid "pm3_9_2_4"
 msgstr "Засада-4"
 
 msgid "pm3_9_2_4_description_damage"
-msgstr ""
-"Нанести %(goal)s ед. урона, оставаясь необнаруженным в момент его нанесения."
+msgstr "Нанести %(goal)s ед. урона, оставаясь необнаруженным."
 
 msgid "pm3_9_2_4_description_killWithCausingDamage"
 msgstr ""

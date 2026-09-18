@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>halloween/vehicles/british/GB100_Manticore_HW_BOT/normal/lod3/Gun_01</nodefullVisual>
+	<parent>halloween/vehicles/british/GB100_Manticore_HW_BOT/normal/lod4/Gun_01</parent>
+	<visibilityBox>
+		<min>-1.311933 -0.713127 -2.104176</min>
+		<max>1.049561 1.293139 4.988043</max>
+	</visibilityBox>
+	<extent>192.000000</extent>
+	<tank>true</tank>
+</root>

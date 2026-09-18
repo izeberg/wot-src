@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from constants import EQUIPMENT_STAGES
 import ResMgr
 from gui.battle_control.controllers.consumables.equipment_ctrl import _ReplayItem, _InspireItem, _RegenerationKitItem, _ActivationError, _StealthRadarItem

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import json, logging
 from typing import TYPE_CHECKING, Set
 from helpers.base64_utils import base64UrlDecode

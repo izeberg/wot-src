@@ -1,4 +1,7 @@
+from __future__ import absolute_import
 import typing
+from future.utils import viewitems
+from past.builtins import basestring
 from account_helpers import AccountSettings
 from account_helpers.AccountSettings import NEW_LOBBY_TAB_COUNTER
 from dossiers2.ui.achievements import ACHIEVEMENT_BLOCK
@@ -150,7 +153,7 @@ class UtilWebApiMixin(object):
 
     @w2c(_GetCountersSchema, 'get_counters')
     def getCountersInfo(self, cmd):
-        ids = cmd.id_list or _COUNTER_IDS_MAP.keys()
+        ids = cmd.id_list or list(_COUNTER_IDS_MAP)
         counters = AccountSettings.getCounters(NEW_LOBBY_TAB_COUNTER)
         return {id:counters.get(_COUNTER_IDS_MAP[id]) for id in ids if id in _COUNTER_IDS_MAP}
 
@@ -225,7 +228,7 @@ class UtilWebApiMixin(object):
     @w2c(_ShowAdditionalRewardsTooltipSchema, 'show_additional_rewards_tooltip')
     def showAdditionalRewardsTooltip(self, cmd):
         bonuses = []
-        for key, value in cmd.rewards.iteritems():
+        for key, value in viewitems(cmd.rewards):
             bonuses.extend(getNonQuestBonuses(key, value))
 
         self._getTooltipMgr().onCreateWulfTooltip(TC.ADDITIONAL_REWARDS, [bonuses], cmd.x, cmd.y)

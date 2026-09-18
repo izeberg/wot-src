@@ -1,4 +1,4 @@
-
+from __future__ import absolute_import
 
 def registerComp7LightLobby():
     from comp7_light_constants import PREBATTLE_TYPE

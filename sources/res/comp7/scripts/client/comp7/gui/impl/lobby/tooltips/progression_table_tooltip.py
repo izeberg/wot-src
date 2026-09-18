@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from comp7.gui.impl.gen.view_models.views.lobby.progression_item_model import ProgressionItemModel
 from comp7.gui.impl.gen.view_models.views.lobby.tooltips.progression_table_tooltip_model import ProgressionTableTooltipModel
 from comp7.gui.impl.lobby.comp7_helpers import comp7_model_helpers, comp7_shared
