@@ -76,10 +76,11 @@ package net.wg.gui.components.tooltips.inblocks.blocks
       
       private function invalidateSize() : void
       {
+         var _loc1_:TitleDescParameterWithIconVO = null;
          var _loc7_:int = 0;
          var _loc8_:int = 0;
          var _loc9_:int = 0;
-         var _loc1_:TitleDescParameterWithIconVO = TitleDescParameterWithIconVO(_data);
+         _loc1_ = TitleDescParameterWithIconVO(_data);
          var _loc2_:TextField = valueTF;
          var _loc3_:TextField = this.titleTF;
          var _loc4_:PaddingVO = _loc1_.valuePadding;
