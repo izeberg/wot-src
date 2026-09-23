@@ -112,7 +112,7 @@
 				<vehicleDamageFactor>0</vehicleDamageFactor>
 			</armor_18>
 			<armor_19>
-				160
+				86
 				<vehicleDamageFactor>0</vehicleDamageFactor>
 			</armor_19>
 		</armor>
@@ -1956,7 +1956,7 @@
 				<armor_4>95</armor_4>
 				<armor_5>55</armor_5>
 				<armor_6>55</armor_6>
-				<armor_7>100</armor_7>
+				<armor_7>140</armor_7>
 				<armor_8>0</armor_8>
 				<armor_9>170</armor_9>
 				<armor_10>30</armor_10>
@@ -2033,7 +2033,7 @@
 						0.38
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>25</reloadTime>
+					<reloadTime>28</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
 							0.12
@@ -2046,7 +2046,7 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						2.1
+						2.3
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>

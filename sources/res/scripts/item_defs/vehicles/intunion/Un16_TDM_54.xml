@@ -10,8 +10,8 @@
 	<postProgressionTree>role_MT_support</postProgressionTree>
 	<customRoleSlotOptions>3 5</customRoleSlotOptions>
 	<speedLimits>
-		<forward>60</forward>
-		<backward>22</backward>
+		<forward>55</forward>
+		<backward>18</backward>
 	</speedLimits>
 	<invisibility>
 		<moving>
@@ -3996,9 +3996,9 @@
 			<level>8</level>
 			<price>32000</price>
 			<armor>
-				<armor_1>150</armor_1>
-				<armor_2>120</armor_2>
-				<armor_3>120</armor_3>
+				<armor_1>120</armor_1>
+				<armor_2>100</armor_2>
+				<armor_3>110</armor_3>
 				<armor_4>100</armor_4>
 				<armor_5>30</armor_5>
 				<armor_6>30</armor_6>
@@ -4029,7 +4029,7 @@
 					<!--BW_String-->
 				</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>390</circularVisionRadius>
+			<circularVisionRadius>380</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>110</maxHealth>
 				<maxRegenHealth>55</maxRegenHealth>
@@ -4041,7 +4041,7 @@
 			<guns>
 				<_50mm_ZK_500_Un16>
 					shared
-					<maxAmmo>504</maxAmmo>
+					<maxAmmo>500</maxAmmo>
 					<unlocks>
 						<gun>
 							_57mm_R_10_Un16
@@ -4079,12 +4079,12 @@
 						</maxPitch>
 					</pitchLimits>
 					<shotDispersionRadius>
-						0.17
+						0.3
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>15</reloadTime>
+					<reloadTime>13</reloadTime>
 					<aimingTime>
-						1.0
+						2.1
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -4106,16 +4106,19 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<clip>
-						<count>18</count>
-						<rate>240</rate>
+						<count>10</count>
+						<rate>230</rate>
 					</clip>
 					<autoShoot>
 						<shotDispersionPerSec>
-							2.0
+							1.5
 							<!--BW_String-->
 						</shotDispersionPerSec>
-						<maxShotDispersion>8</maxShotDispersion>
-						<rate>4</rate>
+						<maxShotDispersion>2</maxShotDispersion>
+						<rate>
+							3.833
+							<!--BW_String-->
+						</rate>
 						<rebuildShotDispersionDelay>
 							0.3
 							<!--BW_String-->
@@ -4219,7 +4222,7 @@
 				</_50mm_ZK_500_Un16>
 				<_57mm_R_10_Un16>
 					shared
-					<maxAmmo>468</maxAmmo>
+					<maxAmmo>460</maxAmmo>
 					<unlocks>
 						<turret>
 							Turret_2_Un16_TDM_54
@@ -4257,10 +4260,10 @@
 						</maxPitch>
 					</pitchLimits>
 					<shotDispersionRadius>
-						0.21
+						0.31
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>17</reloadTime>
+					<reloadTime>16</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
 							0.05
@@ -4280,21 +4283,21 @@
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<aimingTime>
-						1.4
+						2.2
 						<!--BW_String-->
 					</aimingTime>
 					<clip>
-						<count>18</count>
-						<rate>220</rate>
+						<count>10</count>
+						<rate>210</rate>
 					</clip>
 					<autoShoot>
 						<shotDispersionPerSec>
-							2.0
+							1.6
 							<!--BW_String-->
 						</shotDispersionPerSec>
-						<maxShotDispersion>7</maxShotDispersion>
+						<maxShotDispersion>2</maxShotDispersion>
 						<rate>
-							3.667
+							3.5
 							<!--BW_String-->
 						</rate>
 						<rebuildShotDispersionDelay>
@@ -5097,16 +5100,16 @@
 				</vehicle>
 			</unlocks>
 			<armor>
-				<armor_1>140</armor_1>
+				<armor_1>100</armor_1>
 				<armor_2>140</armor_2>
-				<armor_3>120</armor_3>
+				<armor_3>100</armor_3>
 				<armor_4>100</armor_4>
 				<armor_5>30</armor_5>
 				<armor_6>30</armor_6>
 				<armor_7>120</armor_7>
 				<armor_8>0</armor_8>
 				<armor_9>220</armor_9>
-				<armor_10>50</armor_10>
+				<armor_10>40</armor_10>
 				<armor_11>180</armor_11>
 				<armor_12>150</armor_12>
 				<armor_13>120</armor_13>
@@ -5125,7 +5128,7 @@
 					<!--BW_String-->
 				</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>400</circularVisionRadius>
+			<circularVisionRadius>390</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>110</maxHealth>
 				<maxRegenHealth>55</maxRegenHealth>
@@ -5170,12 +5173,12 @@
 						<maxPitch>0 7 1 7</maxPitch>
 					</pitchLimits>
 					<shotDispersionRadius>
-						0.16
+						0.3
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>14</reloadTime>
+					<reloadTime>13</reloadTime>
 					<aimingTime>
-						0.9
+						1.9
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -5197,16 +5200,19 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<clip>
-						<count>18</count>
-						<rate>240</rate>
+						<count>10</count>
+						<rate>230</rate>
 					</clip>
 					<autoShoot>
 						<shotDispersionPerSec>
-							1.8
+							1.4
 							<!--BW_String-->
 						</shotDispersionPerSec>
-						<maxShotDispersion>8</maxShotDispersion>
-						<rate>4</rate>
+						<maxShotDispersion>2</maxShotDispersion>
+						<rate>
+							3.833
+							<!--BW_String-->
+						</rate>
 						<rebuildShotDispersionDelay>
 							0.3
 							<!--BW_String-->
@@ -5310,7 +5316,7 @@
 				</_50mm_ZK_500_Un16>
 				<_57mm_R_10_Un16>
 					shared
-					<maxAmmo>504</maxAmmo>
+					<maxAmmo>500</maxAmmo>
 					<armor>
 						<armor_1>
 							220
@@ -5339,10 +5345,13 @@
 						<maxPitch>0 7 1 7</maxPitch>
 					</pitchLimits>
 					<shotDispersionRadius>
-						0.19
+						0.30
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>16</reloadTime>
+					<reloadTime>
+						15.5
+						<!--BW_String-->
+					</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
 							0.05
@@ -5362,21 +5371,21 @@
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<aimingTime>
-						1.2
+						2.0
 						<!--BW_String-->
 					</aimingTime>
 					<clip>
-						<count>18</count>
-						<rate>220</rate>
+						<count>10</count>
+						<rate>210</rate>
 					</clip>
 					<autoShoot>
 						<shotDispersionPerSec>
-							2.0
+							1.5
 							<!--BW_String-->
 						</shotDispersionPerSec>
-						<maxShotDispersion>7</maxShotDispersion>
+						<maxShotDispersion>2</maxShotDispersion>
 						<rate>
-							3.667
+							3.5
 							<!--BW_String-->
 						</rate>
 						<rebuildShotDispersionDelay>
@@ -6192,7 +6201,7 @@
 	</radios>
 	<clientAdjustmentFactors>
 		<power>
-			0.35
+			0.7
 			<!--BW_String-->
 		</power>
 	</clientAdjustmentFactors>
@@ -6200,12 +6209,12 @@
 		<detailed>
 			<engines>
 				<V_54_Un16>
-					<smplEnginePower>700</smplEnginePower>
-					<smplFwMaxSpeed>60</smplFwMaxSpeed>
+					<smplEnginePower>670</smplEnginePower>
+					<smplFwMaxSpeed>55</smplFwMaxSpeed>
 				</V_54_Un16>
 				<V_55_Un16>
-					<smplEnginePower>750</smplEnginePower>
-					<smplFwMaxSpeed>60</smplFwMaxSpeed>
+					<smplEnginePower>720</smplEnginePower>
+					<smplFwMaxSpeed>55</smplFwMaxSpeed>
 				</V_55_Un16>
 			</engines>
 			<chassis>

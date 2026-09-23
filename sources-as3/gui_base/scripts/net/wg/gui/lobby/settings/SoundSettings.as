@@ -63,6 +63,8 @@ package net.wg.gui.lobby.settings
       private static const BULB_VOICES_NULL_ERROR:String = "_existsBulbVoices";
       
       private static const ARTY_BULB_VOICES_NULL_ERROR:String = "_existsArtyBulbVoices";
+      
+      private static const COUNT_SLIDER_MIN_MAX_OPTIONS:int = 2;
        
       
       private var _isVoiceTestStarted:Boolean = false;
@@ -485,6 +487,12 @@ package net.wg.gui.lobby.settings
          if(_loc5_ && param4.hasValue)
          {
             _loc5_.text = param4.current.toString();
+         }
+         var _loc6_:Array = param4.options;
+         if(_loc6_ && _loc6_.length == COUNT_SLIDER_MIN_MAX_OPTIONS)
+         {
+            param1.minimum = _loc6_[0];
+            param1.maximum = _loc6_[1];
          }
          param1.enabled = param3;
       }
