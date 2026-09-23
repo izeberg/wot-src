@@ -4325,9 +4325,7 @@ class PyVOIP(pybind11_object):
 	def __subclasshook__(*args, **kwargs): pass
 	def command(self, *args, **kwargs): pass
 	def disableMicrophone(self, *args, **kwargs): pass
-	def disableVOIP(self, *args, **kwargs): pass
 	def enableMicrophone(self, *args, **kwargs): pass
-	def enableVOIP(self, *args, **kwargs): pass
 	def finalise(self, *args, **kwargs): pass
 	def getAPI(self, *args, **kwargs): pass
 	def getCaptureDevices(self, *args, **kwargs): pass

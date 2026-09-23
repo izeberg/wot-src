@@ -3027,7 +3027,7 @@
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
-						2.1
+						2.3
 						<!--BW_String-->
 					</aimingTime>
 					<shotDispersionFactors>
@@ -3056,10 +3056,7 @@
 						</chargeTime>
 						<shootImpulse>200</shootImpulse>
 						<reloadLockTime>3</reloadLockTime>
-						<reloadTimes>
-							9.3 9.3
-							<!--BW_String-->
-						</reloadTimes>
+						<reloadTimes>10 10</reloadTimes>
 						<rateTime>
 							4.0
 							<!--BW_String-->
