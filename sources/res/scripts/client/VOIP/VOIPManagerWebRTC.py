@@ -398,8 +398,8 @@ class VOIPManagerWebRTC(VOIPHandler):
         if int(data[VOIPCommon.KEY_RETURN_CODE]) != VOIPCommon.CODE_SUCCESS:
             _logger.error('Participant is not updated: %r', data)
             return
-        dbid = data[VOIPCommon.KEY_PARTICIPANT_URI]
-        if dbid == '0':
+        dbid = int(data[VOIPCommon.KEY_PARTICIPANT_URI])
+        if dbid == 0:
             dbid = self.__getOwnPlayerDBID()
         talking = int(data[VOIPCommon.KEY_IS_SPEAKING])
         if dbid in self.__channelUsers:
