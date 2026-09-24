@@ -9,7 +9,7 @@
 				<postBattle>
 					<vehicleDamage>
 						<directHitsReceived>1</directHitsReceived>
-						<greaterOrEqual>5000</greaterOrEqual>
+						<greaterOrEqual>3000</greaterOrEqual>
 					</vehicleDamage>
 				</postBattle>
 				<common>
@@ -56,7 +56,7 @@
 				<postBattle>
 					<vehicleDamage>
 						<directHitsReceived>1</directHitsReceived>
-						<greaterOrEqual>5000</greaterOrEqual>
+						<greaterOrEqual>3000</greaterOrEqual>
 					</vehicleDamage>
 				</postBattle>
 				<common>

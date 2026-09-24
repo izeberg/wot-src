@@ -9,7 +9,7 @@
 				<postBattle>
 					<vehicleKills>
 						<distance>0</distance>
-						<greaterOrEqual>6</greaterOrEqual>
+						<greaterOrEqual>5</greaterOrEqual>
 					</vehicleKills>
 				</postBattle>
 			</conditions>
@@ -44,7 +44,7 @@
 				<postBattle>
 					<vehicleKills>
 						<distance>0</distance>
-						<greaterOrEqual>6</greaterOrEqual>
+						<greaterOrEqual>5</greaterOrEqual>
 					</vehicleKills>
 				</postBattle>
 			</conditions>

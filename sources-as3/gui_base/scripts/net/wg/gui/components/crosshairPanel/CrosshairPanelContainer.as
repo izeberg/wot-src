@@ -241,6 +241,7 @@ package net.wg.gui.components.crosshairPanel
          this.clearAutoloaderReloadTimer();
          this.clearAutoloaderAnimationTimer();
          this.clearExtraShotClipTimer();
+         this.clearShellCalibrationClipTimer();
          this.clearTweens();
          this._gunMarkersContainer.dispose();
          this._gunMarkersContainer = null;

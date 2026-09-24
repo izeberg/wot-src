@@ -173,6 +173,7 @@ class HangarCameraSystem(CGF.System):
             return
         else:
             self.__cam = None
+            self.__cameraName = None
             self.__customizationHelper = None
             g_eventBus.removeListener(CameraRelatedEvents.LOBBY_VIEW_MOUSE_MOVE, self.__handleLobbyViewMouseEvent)
             FovExtended.instance().onSetFovSettingEvent -= self.__onSetFovSetting

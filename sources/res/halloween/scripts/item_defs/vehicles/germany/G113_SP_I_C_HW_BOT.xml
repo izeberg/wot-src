@@ -145,23 +145,6 @@
 		<hangarShadowTexture>vehicles/german/G113_SP_I_C/SP_I_C_HangarShadowMap.dds</hangarShadowTexture>
 		<customizationSlots>
 			<slot>
-				<slotType>clan</slotType>
-				<slotId>10000</slotId>
-				<rayStart>
-					0.470905 0.511305 1.30245
-					<!--BW_String-->
-				</rayStart>
-				<rayEnd>
-					0.470905 0.31995 1.24428
-					<!--BW_String-->
-				</rayEnd>
-				<rayUp>0 0 -1</rayUp>
-				<size>
-					0.26
-					<!--BW_String-->
-				</size>
-			</slot>
-			<slot>
 				<slotType>paint</slotType>
 				<slotId>11000</slotId>
 				<anchorPosition>

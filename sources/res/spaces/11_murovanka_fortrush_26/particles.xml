@@ -584,6 +584,10 @@
 			<shader>\data\shaders\ps.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/eff_fireworks.dds</texture>
 		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/Glow_white.dds</texture>
+		</preload>
 		<preloadVisual>particles/mesh_particles/environment/Lightning_mesh_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/environment/Lightning_mesh_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/environment/Lightning_mesh_03.visual</preloadVisual>

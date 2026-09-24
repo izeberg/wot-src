@@ -1,4 +1,4 @@
-import typing, game_loading_bindings
+import ResMgr, typing, game_loading_bindings
 from frameworks_common.state_machine import StateFlags
 from gui.game_loading import loggers
 from gui.game_loading.resources.consts import InfoStyles
@@ -33,6 +33,10 @@ def _showImage(image, settings):
     _logger.debug('Image [%s] shown.', image)
 
 
+def _isImageFileExists(image):
+    return image is not None and ResMgr.isFile(image.imageAbsolutePath or image.imageRelativePath)
+
+
 class StaticSlideState(BaseState):
     __slots__ = ('_images', '_image', '_imageViewSettings')
 
@@ -51,13 +55,13 @@ class StaticSlideState(BaseState):
     def timeLeft(self):
         return 0.0
 
-    def setImage(self, image):
+    def setImage(self, image=None):
         self._image = image
         _logger.debug('[%s] image [%s] set.', self, image)
 
     def _onEntered(self, event):
         super(StaticSlideState, self)._onEntered(event)
-        self._image = self._image or self._images.get()
+        self._image = self._image if _isImageFileExists(self._image) else self._images.get()
         _showImage(self._image, self._imageViewSettings)
 
     def _onExited(self):
@@ -92,6 +96,9 @@ class SlideState(BaseViewResourcesTickingState):
         super(SlideState, self)._stop()
 
     def _selectResource(self):
+        if self._firstImageToShow and not _isImageFileExists(self._firstImageToShow):
+            _logger.debug('[%s] first image to show no longer exists <%s>, clearing.', self, self._firstImageToShow)
+            self._firstImageToShow = None
         if not self._firstImageToShow:
             return super(SlideState, self)._selectResource()
         else:

@@ -1317,7 +1317,7 @@ msgid "section/statistics/chart/class/tooltip/body"
 msgstr "Количество боёв на этом классе техники"
 
 msgid "section/statistics/chart/class/tooltip/header"
-msgstr "Класс техники: %(value)s"
+msgstr "Тип техники: %(value)s"
 
 msgid "section/statistics/chart/level/tooltip/body"
 msgstr "Количество боёв на технике этого уровня"
@@ -1754,7 +1754,7 @@ msgid "section/technique/sort/tooltip/battlesCount/header"
 msgstr "Бои"
 
 msgid "section/technique/sort/tooltip/class/body"
-msgstr "Сортировать по классу техники"
+msgstr "Сортировать по типу техники"
 
 msgid "section/technique/sort/tooltip/class/header"
 msgstr "Класс"

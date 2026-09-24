@@ -49,7 +49,8 @@ class PrebattleAmmunitionPanelView(ViewImpl):
         if slotType == TankSetupConstants.SHELLS:
             intCD = int(event.getArgument('intCD'))
             header, body, _ = makeShellTooltip(intCD)
-        elif slotType in (TankSetupConstants.BATTLE_BOOSTERS, TankSetupConstants.CONSUMABLES):
+        elif slotType in (TankSetupConstants.BATTLE_BOOSTERS, TankSetupConstants.CONSUMABLES,
+         TankSetupConstants.OPT_DEVICES):
             slotId = int(event.getArgument('slotId'))
             header, body = buildEquipmentSlotTooltipTextBySlotInfo(slotType=slotType, slotId=slotId)
         if header or body:

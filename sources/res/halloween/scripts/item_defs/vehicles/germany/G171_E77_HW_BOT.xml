@@ -150,24 +150,6 @@
 		</hitTester>
 		<customizationSlots>
 			<slot>
-				<slotType>clan</slotType>
-				<slotId>10000</slotId>
-				<rayStart>-0.656349 0.466499 2.315449</rayStart>
-				<rayEnd>
-					-0.656349 0.248988 2.21402
-					<!--BW_String-->
-				</rayEnd>
-				<rayUp>
-					0 0.422621 -0.906306
-					<!--BW_String-->
-				</rayUp>
-				<size>
-					0.32
-					<!--BW_String-->
-				</size>
-				<hideIfDamaged>true</hideIfDamaged>
-			</slot>
-			<slot>
 				<slotType>paint</slotType>
 				<slotId>11000</slotId>
 				<anchorPosition>-0.000001 0.531575 -2.446944</anchorPosition>

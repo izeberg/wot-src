@@ -509,7 +509,7 @@ class ShellCalibrationStatsBlockConstructor(TwoColumnsStatsBlockConstructor):
 
     def _getHeaderBlock(self, bottomPadding):
         headerRoot = _MECHANICS_TEXT_ROOT.dyn(self._mechanic.guiName.value).paramsHeader
-        return formatters.packTextParameterBlockData(name='', value=text_styles.middleTitle(backport.text(headerRoot())), valueWidth=self._valueWidth, padding=formatters.packPadding(bottom=8, left=-34))
+        return formatters.packTextBlockData(text=text_styles.middleTitle(backport.text(headerRoot())), padding=formatters.packPadding(bottom=8))
 
     def _packParamBlock(self, name, value, units):
         iconRoot = _MECHANICS_IMAGE_ROOT.dyn(self._mechanic.guiName.value)

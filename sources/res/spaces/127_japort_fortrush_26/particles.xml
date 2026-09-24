@@ -488,6 +488,10 @@
 			<shader>\data\shaders\ps.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/eff_tex_h34.dds</texture>
 		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/Glow_white.dds</texture>
+		</preload>
 		<preloadVisual>particles/mesh_particles/metal_part_05.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/metal_plate_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/metal_stick.visual</preloadVisual>

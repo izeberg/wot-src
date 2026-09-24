@@ -158,20 +158,6 @@
 		<hangarShadowTexture>vehicles/british/GB100_Manticore/Manticore_HangarShadowMap.dds</hangarShadowTexture>
 		<customizationSlots>
 			<slot>
-				<slotType>clan</slotType>
-				<slotId>10000</slotId>
-				<rayStart>-1.103627 0.432726 1.063551</rayStart>
-				<rayEnd>
-					-1.103627 0.23546 1.030571
-					<!--BW_String-->
-				</rayEnd>
-				<rayUp>0.261904 0.159142 -0.951882</rayUp>
-				<size>
-					0.23
-					<!--BW_String-->
-				</size>
-			</slot>
-			<slot>
 				<slotType>paint</slotType>
 				<slotId>11000</slotId>
 				<anchorPosition>

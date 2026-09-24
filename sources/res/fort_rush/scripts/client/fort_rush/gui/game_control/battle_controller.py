@@ -354,7 +354,7 @@ class FortRushBattleController(IFortRushBattleController, IGlobalListener, Perfo
 
     @server_settings.serverSettingsChangeListener(EXT_GAME_PARAMS_KEY)
     def __onServerSettingsChanged(self, diff):
-        if not self.isAvailable():
+        if not self.isAvailable() and self.isEventPrbActive():
             self.selectRandomBattle()
         self.onConfigUpdated()
         self.__eventsService.updateEntries()

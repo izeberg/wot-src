@@ -14,7 +14,7 @@
 						</results>
 						<vehicleDamage>
 							<classes>heavyTank</classes>
-							<greaterOrEqual>4000</greaterOrEqual>
+							<greaterOrEqual>3000</greaterOrEqual>
 						</vehicleDamage>
 					</and>
 				</postBattle>
@@ -70,7 +70,7 @@
 						</results>
 						<vehicleDamage>
 							<classes>heavyTank</classes>
-							<greaterOrEqual>4000</greaterOrEqual>
+							<greaterOrEqual>3000</greaterOrEqual>
 						</vehicleDamage>
 					</and>
 				</postBattle>
