@@ -806,12 +806,14 @@ class MainPrizeDiscountTokensBonus(TokensBonus):
         mainPrizeDiscountName = self.__gameEventCtrl.getConfig().mainPrizeDiscountToken
         amount = sum([ data.get('count', 0) for tokenID, data in self._value.iteritems() if tokenID == mainPrizeDiscountName
                      ])
+        tankPortalPrice = self.__gameEventCtrl.getConfig().tankPortalPrice
         discountPerToken = self.__gameEventCtrl.getMainPrizeDiscountPerToken()
         discountTokenCount = self.__gameEventCtrl.getCurrentMainPrizeDiscountTokensCount()
         if amount > 0:
-            return discountPerToken * discountTokenCount
+            percent = int(discountPerToken * 100 / tankPortalPrice) * discountTokenCount
         else:
-            return
+            percent = None
+        return percent
 
     def getWrappedEpicBonusList(self):
         return []

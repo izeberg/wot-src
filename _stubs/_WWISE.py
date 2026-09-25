@@ -108,6 +108,7 @@ def WW_addMarkerListener(*args, **kwargs): pass
 def WW_eventGlobal(*args, **kwargs): pass
 def WW_eventGlobalPos(*args, **kwargs): pass
 def WW_eventGlobalSync(*args, **kwargs): pass
+def WW_getAppMixerVolume(*args, **kwargs): pass
 def WW_getCameraOriented(*args, **kwargs): pass
 def WW_getRTPCValue(*args, **kwargs): pass
 def WW_getSound(*args, **kwargs): pass
