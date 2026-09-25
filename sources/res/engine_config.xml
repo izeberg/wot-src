@@ -408,6 +408,7 @@
 		<reportArchiveSizeThresholdKb>1024</reportArchiveSizeThresholdKb>
 		<reportTimeoutDisconnections>false</reportTimeoutDisconnections>
 		<reportCriticalMessages>false</reportCriticalMessages>
+		<reportScriptExceptions>true</reportScriptExceptions>
 	</cat_config>
 	<debug>
 		<framesCount>0</framesCount>
