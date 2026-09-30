@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>lod0</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>HP_GB130_Attachment_Hull</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>hull</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+			</node>
+		</node>
+		<node>
+			<identifier>nodes_01</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>Chainsaw_Lever</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>Chainsaw_L</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>2.286237 -0.105859 2.178703</row3>
+					</transform>
+					<node>
+						<identifier>Chainsaw_L_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>-2.286237 0.105859 -2.178703</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Chainsaw_R</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>-2.286237 -0.105859 2.178703</row3>
+					</transform>
+					<node>
+						<identifier>Chainsaw_R_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>2.286237 0.105859 -2.178703</row3>
+						</transform>
+					</node>
+				</node>
+			</node>
+			<node>
+				<identifier>HP_Fire_2</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.164752 2.126144</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_LFront</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.528487 0.848942</row1>
+					<row2>0.000000 -0.848942 0.528487</row2>
+					<row3>-1.500002 -0.022160 3.793171</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_LRear</identifier>
+				<transform>
+					<row0>-1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.229430 -0.973325</row1>
+					<row2>-0.000000 -0.973325 -0.229430</row2>
+					<row3>-1.500002 -0.145491 -3.740412</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_RFront</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.528487 0.848942</row1>
+					<row2>0.000000 -0.848942 0.528487</row2>
+					<row3>1.500002 -0.022160 3.793171</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_RRear</identifier>
+				<transform>
+					<row0>-1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.229430 -0.973325</row1>
+					<row2>-0.000000 -0.973325 -0.229430</row2>
+					<row3>1.500002 -0.145491 -3.740412</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Track_Exhaus_1</identifier>
+				<transform>
+					<row0>0.989000 -0.000000 -0.147914</row0>
+					<row1>-0.000000 -1.000000 -0.000000</row1>
+					<row2>-0.147914 0.000000 -0.989000</row2>
+					<row3>-1.532816 0.566540 -3.804005</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Track_Exhaus_2</identifier>
+				<transform>
+					<row0>0.982063 0.000000 0.188555</row0>
+					<row1>0.000000 -1.000000 -0.000000</row1>
+					<row2>0.188555 0.000000 -0.982063</row2>
+					<row3>1.539073 0.566540 -3.804005</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_turretJoint</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.921460 0.000000</row3>
+				</transform>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>Chainsaw_R_BlendBone</node>
+		<node>Chainsaw_L_BlendBone</node>
+		<geometry>
+			<vertices>hull_chain_Shape.vertices</vertices>
+			<primitive>hull_chain_Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_equipment_02_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skin_scroll.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						alphaReference
+						<Int>128</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/british/GB130_FV225_Collector/_skins/GB130_FV225_Collector_DMC_3Dst/FV225_Collector_DMC_3Dst_tank_equipment_02_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/british/GB130_FV225_Collector/_skins/GB130_FV225_Collector_DMC_3Dst/FV225_Collector_DMC_3Dst_tank_equipment_02_AO.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/british/GB130_FV225_Collector/_skins/GB130_FV225_Collector_DMC_3Dst/FV225_Collector_DMC_3Dst_tank_equipment_02_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/british/GB130_FV225_Collector/_skins/GB130_FV225_Collector_DMC_3Dst/FV225_Collector_DMC_3Dst_tank_equipment_02_ANM.dds</Texture>
+					</property>
+					<property>
+						g_heatColorGradient
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/Gradients/heatmech_red_orange_01_HCG.dds</Texture>
+					</property>
+					<property>
+						g_heatMap
+						<Texture>vehicles/british/GB130_FV225_Collector/_skins/GB130_FV225_Collector_DMC_3Dst/chainsaw_HM.dds</Texture>
+					</property>
+					<property>
+						g_heatPercentage
+						<Float>0.100000</Float>
+					</property>
+					<property>
+						g_useOverheatMechanic
+						<Bool>true</Bool>
+					</property>
+				</material>
+				<groupOrigin>-0.000000 -0.635108 -4.150621</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>Chainsaw_R_BlendBone</node>
+		<node>Chainsaw_L_BlendBone</node>
+		<geometry>
+			<vertices>hull_leverShape.vertices</vertices>
+			<primitive>hull_leverShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_hull_01_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						diffuseMap
+						<Texture>vehicles/british/GB130_FV225_Collector/_skins/GB130_FV225_Collector_DMC_3Dst/FV225_Collector_DMC_3Dst_hull_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/british/GB130_FV225_Collector/_skins/GB130_FV225_Collector_DMC_3Dst/FV225_Collector_DMC_3Dst_hull_01_AO.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/british/GB130_FV225_Collector/_skins/GB130_FV225_Collector_DMC_3Dst/FV225_Collector_DMC_3Dst_hull_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/british/GB130_FV225_Collector/_skins/GB130_FV225_Collector_DMC_3Dst/FV225_Collector_DMC_3Dst_hull_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.000000 -0.274896 -3.073281</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>hull</node>
+		<geometry>
+			<vertices>hull_Shape.vertices</vertices>
+			<primitive>hull_Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_hull_01</identifier>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/british/GB130_FV225_Collector/_skins/GB130_FV225_Collector_DMC_3Dst/FV225_Collector_DMC_3Dst_hull_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/british/GB130_FV225_Collector/_skins/GB130_FV225_Collector_DMC_3Dst/FV225_Collector_DMC_3Dst_hull_01_AO.dds</Texture>
+					</property>
+					<property>
+						g_defaultDetail
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_detailMetallicCutoff
+						<Float>0.500000</Float>
+					</property>
+					<property>
+						g_detailParams
+						<matrix>
+							<element>56700928</element>
+							<element>1020081200</element>
+							<element>159399936</element>
+							<element>1006632960</element>
+							<element>496388096</element>
+							<element>1006632960</element>
+							<element>394608640</element>
+							<element>1006648904</element>
+							<element>830488576</element>
+							<element>1006648887</element>
+							<element>1334804480</element>
+							<element>947585024</element>
+							<element>427839488</element>
+							<element>1006632960</element>
+							<element>662719488</element>
+							<element>1052246016</element>
+						</matrix>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>7.013700 7.013700 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_metallicDetailInfluence
+						<Float>0.200000</Float>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/british/GB130_FV225_Collector/_skins/GB130_FV225_Collector_DMC_3Dst/FV225_Collector_DMC_3Dst_hull_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/british/GB130_FV225_Collector/_skins/GB130_FV225_Collector_DMC_3Dst/FV225_Collector_DMC_3Dst_hull_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.000000 0.142294 0.134037</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>tank_equipment_01</identifier>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						alphaReference
+						<Int>128</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/british/GB130_FV225_Collector/_skins/GB130_FV225_Collector_DMC_3Dst/FV225_Collector_DMC_3Dst_tank_equipment_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/british/GB130_FV225_Collector/_skins/GB130_FV225_Collector_DMC_3Dst/FV225_Collector_DMC_3Dst_tank_equipment_01_AO.dds</Texture>
+					</property>
+					<property>
+						g_defaultDetail
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_detailMetallicCutoff
+						<Float>0.500000</Float>
+					</property>
+					<property>
+						g_detailParams
+						<matrix>
+							<element>56700928</element>
+							<element>1020081200</element>
+							<element>159399936</element>
+							<element>1006632960</element>
+							<element>496388096</element>
+							<element>1006632960</element>
+							<element>394608640</element>
+							<element>1006648904</element>
+							<element>830488576</element>
+							<element>1006648887</element>
+							<element>1334804480</element>
+							<element>947585024</element>
+							<element>427839488</element>
+							<element>1006632960</element>
+							<element>662719488</element>
+							<element>1052246016</element>
+						</matrix>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>7.013700 7.013700 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_metallicDetailInfluence
+						<Float>0.200000</Float>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/british/GB130_FV225_Collector/_skins/GB130_FV225_Collector_DMC_3Dst/FV225_Collector_DMC_3Dst_tank_equipment_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/british/GB130_FV225_Collector/_skins/GB130_FV225_Collector_DMC_3Dst/FV225_Collector_DMC_3Dst_tank_equipment_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.000050 0.423968 -0.238608</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-2.286237 -0.777907 -3.899763</min>
+		<max>2.286237 0.951269 4.425646</max>
+	</boundingBox>
+	<geometrySize>2000804</geometrySize>
+</root>

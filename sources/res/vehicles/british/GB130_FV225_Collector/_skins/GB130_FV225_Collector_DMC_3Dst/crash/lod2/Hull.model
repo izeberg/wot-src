@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/british/GB130_FV225_Collector/_skins/GB130_FV225_Collector_DMC_3Dst/crash/lod2/Hull</nodefullVisual>
+	<parent>vehicles/british/GB130_FV225_Collector/_skins/GB130_FV225_Collector_DMC_3Dst/crash/lod3/Hull</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-2.291939 -1.113446 -3.880995</min>
+		<max>2.290871 1.015865 4.567837</max>
+	</visibilityBox>
+</root>

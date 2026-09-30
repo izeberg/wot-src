@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-0.049281 -0.049277 -0.018619</min>
+		<max>0.049281 0.049277 0.046445</max>
+	</visibilityBox>
+	<parent>content/3D_Customization/Cus_304_BP21_Demon/normal/lod1/Cus_304_BP21_Demon_02</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_304_BP21_Demon/normal/lod0/Cus_304_BP21_Demon_02</nodefullVisual>
+</root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/british/GB130_FV225_Collector/_skins/GB130_FV225_Collector_DMC_3Dst/crash/lod1/Gun_03</nodefullVisual>
+	<parent>vehicles/british/GB130_FV225_Collector/_skins/GB130_FV225_Collector_DMC_3Dst/crash/lod2/Gun_03</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.800489 -0.354516 -1.439351</min>
+		<max>0.801341 0.394030 6.580443</max>
+	</visibilityBox>
+</root>

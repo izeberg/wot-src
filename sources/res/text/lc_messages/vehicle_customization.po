@@ -153,6 +153,27 @@ msgstr "精英纹章"
 msgid "attachment/Challenger_s_Bounty/Cus_233_Challenges_Armor"
 msgstr "炽烈之弹"
 
+msgid "attachment/Doomguys_Keepsakes"
+msgstr "杜姆盖的珍藏"
+
+msgid "attachment/Doomguys_Keepsakes/Cus_309_Classic_HUD"
+msgstr "经典战斗界面"
+
+msgid "attachment/Doomguys_Keepsakes/Cus_309_Classic_HUD/description"
+msgstr "生命值、装甲，还有一张无所畏惧的面孔。对于一名陆战队员来说，凭借这些就足够面对蜂拥而至的不速之客，并把他们统统炸个粉碎。"
+
+msgid "attachment/Doomguys_Keepsakes/Cus_310_DOOM_Ornament"
+msgstr "毁灭战士饰物"
+
+msgid "attachment/Doomguys_Keepsakes/Cus_311_Chaingun"
+msgstr "链式机枪"
+
+msgid "attachment/Doomguys_Keepsakes/Cus_312_Demon_Disposal_Kit"
+msgstr "恶魔清除套装"
+
+msgid "attachment/Doomguys_Keepsakes/Cus_313_Marines_Stash"
+msgstr "陆战队员的补给箱"
+
 msgid "attachment/Expedition_Essentials"
 msgstr "远征必备"
 
@@ -678,6 +699,27 @@ msgstr "燃油桶"
 
 msgid "attachment/field_operations/Cus_76_OTG_Canisters"
 msgstr "外挂补给架"
+
+msgid "attachment/fight_like_hell"
+msgstr "鏖战地狱"
+
+msgid "attachment/fight_like_hell/Cus_304_BP21_Demon"
+msgstr "巨脑魔"
+
+msgid "attachment/fight_like_hell/Cus_304_BP21_Demon/description"
+msgstr "这只巨大的灵能恶魔仅受一种欲望驱使: 进食。它狰狞的下颚沾满剧毒胆汁，潜伏在地狱无尽深渊之中，搜寻着容易下手的猎物。"
+
+msgid "attachment/fight_like_hell/Cus_305_BP21_Gun"
+msgstr "BFG9000"
+
+msgid "attachment/fight_like_hell/Cus_306_BP21_RocketLauncher"
+msgstr "UAC火箭发射器"
+
+msgid "attachment/fight_like_hell/Cus_307_BP21_Stuff"
+msgstr "毁灭战士的补给箱"
+
+msgid "attachment/fight_like_hell/Cus_308_BP21_Armor"
+msgstr "毁灭战士战甲"
 
 msgid "attachment/fire_horse_gear"
 msgstr "火马摩托车装备"
@@ -3547,6 +3589,15 @@ msgstr "公平竞争"
 
 msgid "camouflage/bp2026_march_3/label"
 msgstr "失落天堂黑色纪事"
+
+msgid "camouflage/bp2026_october_1/label"
+msgstr "执政官战甲"
+
+msgid "camouflage/bp2026_october_2/label"
+msgstr "梅克族"
+
+msgid "camouflage/bp2026_october_3/label"
+msgstr "黑暗时代"
 
 msgid "camouflage/bp2026_september_dune/label"
 msgstr "沙海迷踪"
@@ -16656,6 +16707,15 @@ msgstr "插翅难飞"
 msgid "inscription/special/special_880"
 msgstr "2026秋季OLS"
 
+msgid "inscription/special/special_881"
+msgstr "IDDQD作弊码"
+
+msgid "inscription/special/special_882"
+msgstr "毁灭战士"
+
+msgid "inscription/special/special_883"
+msgstr "唔嗯"
+
 msgid "inscription/special/special_884"
 msgstr "高压危险！"
 
@@ -20390,6 +20450,24 @@ msgstr "还记得2015年测试过的秘密武器吗？是的，它还能用。"
 
 msgid "projection_decals/special/projection_decal_1100"
 msgstr "蔚蓝先锋"
+
+msgid "projection_decals/special/projection_decal_1103"
+msgstr "盾锯"
+
+msgid "projection_decals/special/projection_decal_1104"
+msgstr "毁灭战士头盔"
+
+msgid "projection_decals/special/projection_decal_1105"
+msgstr "裁决剑"
+
+msgid "projection_decals/special/projection_decal_1106"
+msgstr "BFG-9000"
+
+msgid "projection_decals/special/projection_decal_1107"
+msgstr "钥匙卡"
+
+msgid "projection_decals/special/projection_decal_1108"
+msgstr "巨脑魔"
 
 msgid "projection_decals/special/projection_decal_111"
 msgstr "金属战争优胜者"
@@ -27264,6 +27342,15 @@ msgid "special_style/GB120_Concept_No_5_3Dst_BPXV_desc/long"
 msgstr ""
 "\"这不是普普通通的工作。我们所做的事也非比寻常。但很重要，必须有人来完成。从事我们这行，要学会放平心态。你必须准备好——即使不是万全准备，但也要尽力而为。当面对人类从未遇到过的科技和现象时，一切都防不胜防。因此，你要竭尽所能。把坦克修好，装上设备，希望这些能保你平安，最重要的是，提醒自己为什么要从事这一行。然后，亲爱的朋友们，让我们再一次踏上征程...\""
 
+msgid "special_style/GB130_FV225_Collector_DMC_3Dst"
+msgstr "FV225 Mk.BFG"
+
+msgid "special_style/GB130_FV225_Collector_DMC_3Dst_desc/long"
+msgstr ""
+"\"看得出来，你对枪械颇有兴趣，所以我就长话短说了。这是一辆集成了亚金能量的坦克。我知道你反对源自地狱的科技，但凭借你的能力，这辆战斗机器将使入侵部队变得无足轻重。你可能不认可我们的研究，但你必须明白:"
+" "
+"我们之所以利用地狱及其资源，是因为这符合人类的最大利益。你现在看到的就是进步带来的成果。现在，毁灭战士，驾驶它投入战斗吧。倘若我们的...实验失控，那么这一切风险也仍然值得。我向你保证。\""
+
 msgid "special_style/GB133_Charioteer_MkVII_HBP_3DSt"
 msgstr "都市生活"
 
@@ -29458,6 +29545,44 @@ msgstr ""
 "失落天堂的日子不好过。大萧条时期，无人幸免。每个人都想尽办法谋生，但正当工作却一职难求——而禁酒令则让这座城市的地下暗黑世界变成了那些愿意铤而走险之人的机遇之地。\n"
 "\n"
 "汤米·安吉洛从未想过自己会过上这样的生活，但为萨列里阁下工作不仅报酬丰厚，还能让他出人头地。唯一的问题是: 他最终将为此付出什么代价？"
+
+msgid "special_style/bp2026_october_1"
+msgstr "执政官战甲"
+
+msgid "special_style/bp2026_october_1_desc"
+msgstr "片甲不留，直到使命完成。穿上这款全地形、地狱级防护战甲，战斗到底。"
+
+msgid "special_style/bp2026_october_1_desc/long"
+msgstr ""
+"联合航天公司最近最引人注目的发现，来自一次对地狱卡丁格圣所的探险行动。探险队在一片几乎无法通行的地带深处发现了一座古墓，墓穴入口和墙壁上刻满了护佑符文和禁锢咒语。他们从中发现了许多遗物，其中包括一套尺寸明显符合人类身形的战甲。这件装备被从包裹它的岩石中取出，并经过了广泛的测试，结果表明，它几乎坚不可摧。不过，要激活这套战甲所蕴含的神秘力量，还需要一个至关重要的组成部分。而那个组成部分，很可能正是毁灭战士本人。"
+
+msgid "special_style/bp2026_october_2"
+msgstr "梅克族"
+
+msgid "special_style/bp2026_october_2_desc"
+msgstr "数千年来，他们延续至今。他们以繁荣之名，让无数人为之付出代价。应用这款全地形风格，重拾他们的辉煌力量。"
+
+msgid "special_style/bp2026_october_2_desc/long"
+msgstr ""
+"\"地球将被吞噬，而能量将继续流动。这关乎你们种族的存续...以及我们的存亡。\"\n"
+"\n"
+"梅克族曾是严苛天界秩序的守护者。但当他们的力量之源逐渐枯竭时，他们将目光投向了帷幕之外...并发现了地狱。在领域之间充满哀嚎的黑暗中，他们缔结了一份契约。凡人世界的门户被打开，任其入侵，无数灵魂被收割并转化为能量，梅克族则利用这股能量来维持其日渐衰弱的存在。于是，一个邪恶的联盟诞生了，它不断蔓延，吞噬万物。 \n"
+"\n"
+"直到毁灭战士介入。"
+
+msgid "special_style/bp2026_october_3"
+msgstr "黑暗时代"
+
+msgid "special_style/bp2026_october_3_desc"
+msgstr "应用这款残酷的全地形风格，重创敌人。"
+
+msgid "special_style/bp2026_october_3_desc/long"
+msgstr ""
+"\"在烈火与毁灭的时代，当地狱军团首次踏足阿根特·德努尔时，另一个身影出现了...一名来自异界的陌生人。他一路征战来到这个世界，因为恶魔永远无法逃脱他的怒火。\"\n"
+"\n"
+"恶魔席卷了凡人领域。如今，又一个世界濒临毁灭。暗夜守卫英勇奋战，但无人能抵挡无穷无尽的恶魔大军。除了一个人。他们不知道他的名字，也不知道他的来历。他们只知道，唯有他拥有从毁灭深渊中撕开一线生机的力量。\n"
+"\n"
+"于是，当所有希望都即将熄灭之际，他们派出了毁灭战士。"
 
 msgid "special_style/bp2026_september_dune"
 msgstr "沙海迷踪"
