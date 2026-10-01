@@ -1384,9 +1384,9 @@
 		<normalizationAngle>2</normalizationAngle>
 		<ricochetAngle>70</ricochetAngle>
 	</_45mm_UBR_243SPA_A_20>
-	<_45mm_UOF-243>
+	<_45mm_UOF_243_A>
 		<id>18</id>
-		<userString>#ussr_vehicles:_45mm_UOF-243</userString>
+		<userString>#ussr_vehicles:_45mm_UOF_243_A</userString>
 		<icon>he_modern</icon>
 		<price>19</price>
 		<kind>HIGH_EXPLOSIVE</kind>
@@ -1413,7 +1413,7 @@
 				<devices>30</devices>
 			</damage>
 		</armorSpalls>
-	</_45mm_UOF-243>
+	</_45mm_UOF_243_A>
 	<_45mm_UOF_243_T_70>
 		<id>413</id>
 		<userString>#ussr_vehicles:_45mm_UOF_243_T_70</userString>
@@ -2170,9 +2170,9 @@
 		<normalizationAngle>5</normalizationAngle>
 		<ricochetAngle>70</ricochetAngle>
 	</_76mm_UBR_354A_KV_1>
-	<_76mm_BR-350A>
+	<_76mm_BR_350A1>
 		<id>119</id>
-		<userString>#ussr_vehicles:_76mm_BR-350A</userString>
+		<userString>#ussr_vehicles:_76mm_BR_350A1</userString>
 		<icon>ap</icon>
 		<price>45</price>
 		<notInShop>true</notInShop>
@@ -2186,7 +2186,7 @@
 		</damage>
 		<normalizationAngle>5</normalizationAngle>
 		<ricochetAngle>70</ricochetAngle>
-	</_76mm_BR-350A>
+	</_76mm_BR_350A1>
 	<_76mm_BP-354>
 		<id>29</id>
 		<userString>#ussr_vehicles:_76mm_BP-354</userString>

@@ -20,7 +20,6 @@ package net.wg.gui.lobby.settings
    import net.wg.gui.lobby.settings.events.SettingViewEvent;
    import net.wg.gui.lobby.settings.vo.AnonymizerExtraVO;
    import net.wg.gui.lobby.settings.vo.CheckboxVo;
-   import net.wg.gui.lobby.settings.vo.DevMapsVO;
    import net.wg.gui.lobby.settings.vo.SettingsControlProp;
    import net.wg.gui.lobby.settings.vo.SimpleExtraVO;
    import net.wg.gui.lobby.settings.vo.base.SettingsDataVo;
@@ -122,25 +121,23 @@ package net.wg.gui.lobby.settings
          var _loc8_:String = null;
          var _loc9_:CheckBox = null;
          var _loc10_:Boolean = false;
-         var _loc13_:String = null;
-         var _loc14_:CheckboxVo = null;
-         var _loc15_:AnonymizerExtraVO = null;
-         var _loc16_:DevMapsVO = null;
-         var _loc17_:SimpleExtraVO = null;
-         var _loc18_:SimpleExtraVO = null;
-         var _loc19_:String = null;
+         var _loc12_:String = null;
+         var _loc13_:CheckboxVo = null;
+         var _loc14_:AnonymizerExtraVO = null;
+         var _loc15_:SimpleExtraVO = null;
+         var _loc16_:SimpleExtraVO = null;
+         var _loc17_:String = null;
          var _loc2_:Vector.<String> = param1.keys;
          var _loc3_:Vector.<Object> = param1.values;
          var _loc4_:int = _loc2_.length;
          var _loc5_:String = Values.EMPTY_STR;
          var _loc6_:SettingsControlProp = null;
          var _loc7_:GameSettingsContent = this.getContent();
-         var _loc11_:Boolean = false;
-         var _loc12_:int = 0;
-         while(_loc12_ < _loc4_)
+         var _loc11_:int = 0;
+         while(_loc11_ < _loc4_)
          {
-            _loc5_ = _loc2_[_loc12_];
-            _loc6_ = _loc3_[_loc12_] as SettingsControlProp;
+            _loc5_ = _loc2_[_loc11_];
+            _loc6_ = _loc3_[_loc11_] as SettingsControlProp;
             App.utils.asserter.assertNotNull(_loc6_,Errors.CANT_NULL);
             _loc8_ = _loc5_ + _loc6_.type;
             if(_loc7_[_loc8_])
@@ -165,39 +162,33 @@ package net.wg.gui.lobby.settings
                      }
                      else if(_loc5_ == SHOW_DAMAGE_ICON_LBL || _loc5_ == INCREASED_ZOOM_LBL)
                      {
-                        _loc14_ = new CheckboxVo(_loc6_.extraData);
-                        _loc9_.toolTip = _loc14_.tooltip;
-                        _loc9_.label = _loc14_.checkBoxLabel;
-                        _loc14_.dispose();
+                        _loc13_ = new CheckboxVo(_loc6_.extraData);
+                        _loc9_.toolTip = _loc13_.tooltip;
+                        _loc9_.label = _loc13_.checkBoxLabel;
+                        _loc13_.dispose();
                      }
                      else if(_loc5_ == ANONYMIZER)
                      {
-                        _loc15_ = new AnonymizerExtraVO(_loc6_.extraData);
-                        _loc9_.label = _loc15_.checkBoxLabel;
-                        _loc9_.toolTip = _loc15_.tooltip;
-                        _loc9_.visible = _loc15_.visible;
-                        _loc9_.enabled = _loc15_.enabled;
-                        _loc11_ = _loc15_.visible;
-                        _loc15_.dispose();
-                     }
-                     else if(_loc5_ == SettingsConfigHelper.GAMEPLAY_DEVMAPS)
-                     {
-                        _loc16_ = new DevMapsVO(_loc6_.extraData);
-                        _loc9_.visible = _loc16_.enabled;
+                        _loc14_ = new AnonymizerExtraVO(_loc6_.extraData);
+                        _loc9_.label = _loc14_.checkBoxLabel;
+                        _loc9_.toolTip = _loc14_.tooltip;
+                        _loc9_.visible = _loc14_.visible;
+                        _loc9_.enabled = _loc14_.enabled;
+                        _loc14_.dispose();
                      }
                      else if(CONTROLS_WITH_SIMPLE_EXTRA_DATA.indexOf(_loc5_) != -1)
                      {
-                        _loc17_ = new SimpleExtraVO(_loc6_.extraData);
-                        if(!_loc17_.enabled)
+                        _loc15_ = new SimpleExtraVO(_loc6_.extraData);
+                        if(!_loc15_.enabled)
                         {
                            _loc9_.selected = false;
                         }
-                        _loc9_.enabled = _loc17_.enabled;
+                        _loc9_.enabled = _loc15_.enabled;
                      }
                      else if(_loc5_ == SettingsConfigHelper.ENABLE_COMMENDATIONS_FEEDBACK)
                      {
-                        _loc18_ = new SimpleExtraVO(_loc6_.extraData);
-                        _loc9_.enabled = _loc18_.enabled;
+                        _loc16_ = new SimpleExtraVO(_loc6_.extraData);
+                        _loc9_.enabled = _loc16_.enabled;
                      }
                      break;
                   case SettingsConfigHelper.TYPE_DROPDOWN:
@@ -214,8 +205,8 @@ package net.wg.gui.lobby.settings
                      this.setupButtonBar(ButtonBarEx(_loc7_[_loc8_]),_loc6_,_loc10_);
                      if(_loc5_ == SettingsConfigHelper.CAROUSEL_TYPE)
                      {
-                        _loc19_ = SettingsConfigHelper.CAROUSEL_TYPE_ID[_loc6_.current];
-                        _loc7_.doubleCarouselTypeDropDown.enabled = _loc19_ == SettingsConfigHelper.CAROUSEL_DOUBLE;
+                        _loc17_ = SettingsConfigHelper.CAROUSEL_TYPE_ID[_loc6_.current];
+                        _loc7_.doubleCarouselTypeDropDown.enabled = _loc17_ == SettingsConfigHelper.CAROUSEL_DOUBLE;
                      }
                }
             }
@@ -223,13 +214,12 @@ package net.wg.gui.lobby.settings
             {
                DebugUtils.LOG_WARNING(_loc8_ + Errors.CANT_NULL);
             }
-            _loc12_++;
+            _loc11_++;
          }
-         for each(_loc13_ in headDependedControls)
+         for each(_loc12_ in headDependedControls)
          {
-            this.updateDependedControl(_loc13_);
+            this.updateDependedControl(_loc12_);
          }
-         _loc7_.updateDependentVisibleControls(_loc11_);
       }
       
       override protected function onDispose() : void

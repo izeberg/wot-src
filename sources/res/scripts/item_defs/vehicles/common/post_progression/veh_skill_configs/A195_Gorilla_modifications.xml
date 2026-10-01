@@ -428,8 +428,8 @@
 	</a195_node23>
 	<a195_node24>
 		<id>12224</id>
-		<imgName>turretTraverseStability</imgName>
-		<locName>turretTraverseStability</locName>
+		<imgName>gunStabilizationFromTurret</imgName>
+		<locName>gunStabilizationFromTurret</locName>
 		<categories>firepower</categories>
 		<modifiers>
 			<mul>
@@ -438,7 +438,6 @@
 					0.95
 					<!--BW_String-->
 				</value>
-				<filter>default</filter>
 			</mul>
 		</modifiers>
 		<kpi>

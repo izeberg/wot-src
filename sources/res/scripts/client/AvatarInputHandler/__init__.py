@@ -289,7 +289,7 @@ class AvatarInputHandler(CallbackDelayer, ComponentController):
             if typeDescr.hasSiegeMode:
                 self.siegeModeNotifier = SiegeModeNotifier()
                 self.siegeModeNotifier.construct(vehicle)
-                if not hasVehicleDescrMechanic(typeDescr, VehicleMechanicKeys.PILLBOX_SIEGE_MODE):
+                if not (hasVehicleDescrMechanic(typeDescr, VehicleMechanicKeys.PILLBOX_SIEGE_MODE) or hasVehicleDescrMechanic(typeDescr, VehicleMechanicKeys.LOW_CHARGE_SHOT)):
                     self.siegeModeControl = SiegeModeControl(self.siegeModeNotifier)
                     self.__commands.append(self.siegeModeControl)
             if typeDescr.isDualgunVehicle and not self.dualGunControl:
@@ -969,14 +969,19 @@ class AvatarInputHandler(CallbackDelayer, ComponentController):
     def __onArenaStarted(self, period, *args):
         self.__isArenaStarted = period == ARENA_PERIOD.BATTLE
         self.__curCtrl.setGunMarkerFlag(self.__isArenaStarted, _GUN_MARKER_FLAG.CONTROL_ENABLED)
-        gunRotator = BigWorld.player().gunRotator
-        if gunRotator is None or gunRotator.clientMode:
-            useServerMarker = gun_marker_ctrl.useServerGunMarker()
-        else:
-            useServerMarker = False
+        useServerMarker = self.__canReceiveServerGunMarker() and gun_marker_ctrl.useServerGunMarker()
         self.showServerGunMarker(useServerMarker)
         self.showClientGunMarkers(gun_marker_ctrl.useClientGunMarker())
-        return
+
+    def __canReceiveServerGunMarker(self):
+        player = BigWorld.player()
+        if player.isObserver():
+            return False
+        else:
+            gunRotator = player.gunRotator
+            if gunRotator is not None and not gunRotator.clientMode:
+                return False
+            return True
 
     def __onRecreateDevice(self):
         self.__curCtrl.onRecreateDevice()

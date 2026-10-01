@@ -5,8 +5,9 @@ from fort_rush.gui.scaleform.daapi.view.battle.crosshair.container import FortRu
 from fort_rush.gui.shared.events import RespawnCtrlEvent
 from gui.Scaleform.genConsts.BATTLE_VIEW_ALIASES import BATTLE_VIEW_ALIASES
 from gui.Scaleform.daapi.view.battle.shared.indicators import createDamageIndicator
-from gui.Scaleform.daapi.view.battle.shared import finish_sound_player
-from gui.Scaleform.daapi.view.battle.classic.page import ClassicComponentsConfig, DynamicAliases as ClassicDynamicAliases
+from gui.Scaleform.daapi.view.battle.shared import finish_sound_player, drone_music_player
+from gui.Scaleform.daapi.view.battle.shared.start_countdown_sound_player import StartCountdownSoundPlayer
+from gui.Scaleform.daapi.view.battle.classic.page import DynamicAliases as ClassicDynamicAliases
 from gui.Scaleform.daapi.view.battle.shared.indicators import createPredictionIndicator
 from gui.Scaleform.daapi.view.battle.shared.page import ComponentsConfig
 from fort_rush.gui.fort_rush_gui_constants import BATTLE_CTRL_ID
@@ -22,8 +23,59 @@ from fort_rush.gui.scaleform.daapi.view.battle.battle_hints import FortRushBattl
 from gui.battle_control.controllers.battle_hints.queues import BattleHintQueueParams
 from fort_rush.gui.scaleform.daapi.view.battle.battle_hints import FortRushBattleHintsQueue, FortRushBattleHint
 _logger = logging.getLogger(__name__)
-COMMON_CLASSIC_CONFIG = ClassicComponentsConfig()
-EXTENDED_CLASSIC_CONFIG = COMMON_CLASSIC_CONFIG + ComponentsConfig(config=(
+
+class _ComponentsConfig(ComponentsConfig):
+
+    def __init__(self):
+        super(_ComponentsConfig, self).__init__((
+         (
+          BATTLE_CTRL_ID.ARENA_PERIOD,
+          (
+           BATTLE_VIEW_ALIASES.PREBATTLE_TIMER,
+           ClassicDynamicAliases.PREBATTLE_TIMER_SOUND_PLAYER,
+           BATTLE_VIEW_ALIASES.PLAYERS_PANEL,
+           BATTLE_VIEW_ALIASES.HINT_PANEL,
+           BATTLE_VIEW_ALIASES.PREBATTLE_AMMUNITION_PANEL,
+           ClassicDynamicAliases.DRONE_MUSIC_PLAYER)),
+         (
+          BATTLE_CTRL_ID.PERKS, (BATTLE_VIEW_ALIASES.SITUATION_INDICATORS,)),
+         (
+          BATTLE_CTRL_ID.TEAM_BASES,
+          (
+           BATTLE_VIEW_ALIASES.TEAM_BASES_PANEL,
+           ClassicDynamicAliases.DRONE_MUSIC_PLAYER)),
+         (
+          BATTLE_CTRL_ID.CALLOUT, (BATTLE_VIEW_ALIASES.CALLOUT_PANEL,)),
+         (
+          BATTLE_CTRL_ID.MAPS, (BATTLE_VIEW_ALIASES.MINIMAP,)),
+         (
+          BATTLE_CTRL_ID.DEBUG, (BATTLE_VIEW_ALIASES.DEBUG_PANEL,)),
+         (
+          BATTLE_CTRL_ID.BATTLE_FIELD_CTRL,
+          (
+           ClassicDynamicAliases.DRONE_MUSIC_PLAYER,
+           BATTLE_VIEW_ALIASES.FRAG_CORRELATION_BAR,
+           BATTLE_VIEW_ALIASES.PLAYERS_PANEL)),
+         (
+          BATTLE_CTRL_ID.ARENA_LOAD_PROGRESS, (ClassicDynamicAliases.DRONE_MUSIC_PLAYER,)),
+         (
+          BATTLE_CTRL_ID.GAME_MESSAGES_PANEL, (BATTLE_VIEW_ALIASES.GAME_MESSAGES_PANEL,)),
+         (
+          BATTLE_CTRL_ID.PREBATTLE_SETUPS_CTRL,
+          (
+           BATTLE_VIEW_ALIASES.PREBATTLE_AMMUNITION_PANEL, BATTLE_VIEW_ALIASES.DAMAGE_PANEL)),
+         (
+          BATTLE_CTRL_ID.AMMO,
+          (
+           BATTLE_VIEW_ALIASES.PREBATTLE_AMMUNITION_PANEL, BATTLE_VIEW_ALIASES.CONSUMABLES_PANEL))), viewsConfig=(
+         (
+          ClassicDynamicAliases.DRONE_MUSIC_PLAYER, drone_music_player.DroneMusicPlayer),
+         (
+          ClassicDynamicAliases.PREBATTLE_TIMER_SOUND_PLAYER, StartCountdownSoundPlayer)))
+
+
+_CONFIG = _ComponentsConfig()
+_EXTENDED_CONFIG = _CONFIG + ComponentsConfig(config=(
  (
   BATTLE_CTRL_ID.ARENA_PERIOD, (ClassicDynamicAliases.FINISH_SOUND_PLAYER,)),
  (
@@ -65,7 +117,7 @@ class FortRushBattlePage(FortRushBattlePageMeta, ISpawnListener):
     def __init__(self, components=None, external=_EXTERNAL_COMPONENTS, fullStatsAlias=BATTLE_VIEW_ALIASES.FULL_STATS, **kwargs):
         self.__savedVisibleComponents = set()
         if components is None:
-            components = COMMON_CLASSIC_CONFIG if self.sessionProvider.isReplayPlaying else EXTENDED_CLASSIC_CONFIG
+            components = _CONFIG if self.sessionProvider.isReplayPlaying else _EXTENDED_CONFIG
         components = components + EXT_CONFIG
         super(FortRushBattlePage, self).__init__(components=components, external=external, fullStatsAlias=fullStatsAlias)
         return
@@ -135,7 +187,6 @@ class FortRushBattlePage(FortRushBattlePageMeta, ISpawnListener):
          FORT_RUSH_BATTLE_VIEW_ALIASES.FORT_RUSH_VEHICLE_SELECTOR,
          BATTLE_VIEW_ALIASES.MINIMAP,
          BATTLE_VIEW_ALIASES.PLAYERS_PANEL,
-         BATTLE_VIEW_ALIASES.BATTLE_TIMER,
          BATTLE_VIEW_ALIASES.BATTLE_MESSENGER}
         visibleComponents = desiredVisibleComponents
         hiddenComponents = availableComponents - visibleComponents

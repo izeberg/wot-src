@@ -2,7 +2,7 @@
 <root>
 	<ids>
 		<_76mm_L-11>0</_76mm_L-11>
-		<_76mm_F-32>1</_76mm_F-32>
+		<_76mm_F_32_A>1</_76mm_F_32_A>
 		<_76mm_F_34>2</_76mm_F_34>
 		<_45mm_VT-42>3</_45mm_VT-42>
 		<_57mm_ZiS-8>4</_57mm_ZiS-8>
@@ -2158,7 +2158,7 @@
 					<maxDistance>720</maxDistance>
 					<piercingPower>110 81</piercingPower>
 				</_45mm_UBR-243SPA>
-				<_45mm_UOF-243>
+				<_45mm_UOF_243_A>
 					<defaultPortion>
 						0.05
 						<!--BW_String-->
@@ -2170,7 +2170,7 @@
 					</gravity>
 					<maxDistance>720</maxDistance>
 					<piercingPower>23 23</piercingPower>
-				</_45mm_UOF-243>
+				</_45mm_UOF_243_A>
 			</shots>
 		</_45mm_VT-42>
 		<_45mm_VT_42_T_70>
@@ -2491,7 +2491,7 @@
 					<maxDistance>720</maxDistance>
 					<piercingPower>110 81</piercingPower>
 				</_45mm_UBR-243SPA>
-				<_45mm_UOF-243>
+				<_45mm_UOF_243_A>
 					<defaultPortion>
 						0.05
 						<!--BW_String-->
@@ -2503,7 +2503,7 @@
 					</gravity>
 					<maxDistance>720</maxDistance>
 					<piercingPower>23 23</piercingPower>
-				</_45mm_UOF-243>
+				</_45mm_UOF_243_A>
 			</shots>
 		</_45mm_VT-43>
 		<_45mm_VT-43M>
@@ -5492,8 +5492,8 @@
 				</_76mm_F_354>
 			</shots>
 		</_76mm_L_11>
-		<_76mm_F-32>
-			<userString>#ussr_vehicles:_76mm_F-32</userString>
+		<_76mm_F_32_A>
+			<userString>#ussr_vehicles:_76mm_F_32_A</userString>
 			<tags/>
 			<level>4</level>
 			<price>27610</price>
@@ -5603,7 +5603,7 @@
 					<piercingPower>38 38</piercingPower>
 				</_76mm_UOF-354>
 			</shots>
-		</_76mm_F-32>
+		</_76mm_F_32_A>
 		<_76mm_F_32>
 			<userString>#ussr_vehicles:_76mm_F_32</userString>
 			<tags/>

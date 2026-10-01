@@ -136,7 +136,7 @@ class FortRushSquadEntity(SquadEntity, SquadRestrictionsMixin):
         self.invalidateVehicleStates()
 
     def _doStartBattleRequest(self, ctx, flags, callback):
-        self._requestsProcessor.doRequest(ctx, 'startBattle', startBattleUnitCmd=CLIENT_UNIT_CMD.START_UNIT_FORT_RUSH_BATTLE, vehInvID=ctx.selectVehInvID, gameplaysMask=ctx.getGamePlayMask(), arenaTypeID=ctx.getDemoArenaTypeID(), callback=callback, stopAutoSearch=flags.isInSearch(), randomFlags=ctx.getRandomFlags())
+        self._requestsProcessor.doRequest(ctx, 'startBattle', startBattleUnitCmd=CLIENT_UNIT_CMD.START_UNIT_FORT_RUSH_BATTLE, vehInvID=ctx.selectVehInvID, gameplaysMask=ctx.getGamePlayMask(), arenaTypeID=ctx.getDemoArenaTypeID(), callback=callback, stopAutoSearch=flags.isInSearch())
 
     def _onServerSettingChanged(self, *args, **kwargs):
         self.invalidateVehicleStates()

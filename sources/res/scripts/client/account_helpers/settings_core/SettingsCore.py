@@ -255,9 +255,6 @@ class SettingsCore(ISettingsCore):
           GAME.GAMEPLAY_CTF,
           options.GameplaySetting(GAME.GAMEPLAY_MASK, 'ctf', storage=GAMEPLAY_SETTINGS_STORAGE)),
          (
-          GAME.GAMEPLAY_DEV_MAPS,
-          options.DevMapsSetting(GAME.GAMEPLAY_DEV_MAPS, storage=EXTENDED_GAME_2_SETTINGS_STORAGE)),
-         (
           GAME.LENS_EFFECT,
           options.LensEffectSetting(GAME.LENS_EFFECT, storage=GRAPHICS_SETTINGS_STORAGE)),
          (

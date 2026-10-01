@@ -247,8 +247,7 @@ class DeclineSearchUnitCtx(UnitRequestCtx):
 
 @ReprInjector.withParent(('selectVehInvID', 'selectVehInvID'), ('getGamePlayMask',
                                                                 'gamePlayMask'), ('getDemoArenaTypeID',
-                                                                                  'getDemoArenaTypeID'), ('getRandomFlags',
-                                                                                                          'randomFlags'))
+                                                                                  'getDemoArenaTypeID'))
 class BattleQueueUnitCtx(AutoSearchUnitCtx):
     __slots__ = ('selectVehInvID', '__isActionStartBattle', 'mmData')
 
@@ -265,9 +264,6 @@ class BattleQueueUnitCtx(AutoSearchUnitCtx):
 
     def getDemoArenaTypeID(self):
         return self.mmData
-
-    def getRandomFlags(self):
-        return gameplay_ctx.getRandomFlags()
 
 
 class RosterSlotCtx(object):

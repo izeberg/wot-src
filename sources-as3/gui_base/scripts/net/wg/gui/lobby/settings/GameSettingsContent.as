@@ -17,8 +17,6 @@ package net.wg.gui.lobby.settings
    public class GameSettingsContent extends UIComponentEx
    {
       
-      private static const OFFSET_CB_DISABLED:int = -26;
-      
       private static const BTN_MIN_WIDTH:int = 128;
       
       private static const MENU_WIDTH:int = 410;
@@ -51,8 +49,6 @@ package net.wg.gui.lobby.settings
       public var disableBattleChatCheckbox:CheckBox = null;
       
       public var ppShowLevelsCheckbox:CheckBox = null;
-      
-      public var gameplay_devMapsCheckbox:CheckBox = null;
       
       public var showCommInPlayerlistCheckbox:CheckBox = null;
       
@@ -194,12 +190,9 @@ package net.wg.gui.lobby.settings
       
       public var w2gtEnableCheckbox:CheckBox = null;
       
-      private var _initYGameplayDevMapsCheckbox:int;
-      
       public function GameSettingsContent()
       {
          super();
-         this.setDependentVisibleControlsY();
       }
       
       override protected function configUI() : void
@@ -246,9 +239,6 @@ package net.wg.gui.lobby.settings
          this.enableCommendationsCheckbox.toolTip = TOOLTIPS.ENABLECOMMENDATIONS;
          this.enableCommendationsCheckbox.infoIcoType = InfoIcon.TYPE_INFO;
          this.ppShowLevelsCheckbox.label = SETTINGS.GAME_PPSHOWLEVELS;
-         this.gameplay_devMapsCheckbox.label = SETTINGS.GAMEPLAY_DEVMAPS;
-         this.gameplay_devMapsCheckbox.toolTip = TOOLTIPS.DEVMAPS;
-         this.gameplay_devMapsCheckbox.infoIcoType = InfoIcon.TYPE_INFO;
          this.newbiePrebattleHintsCheckbox.label = SETTINGS.GAME_NEWBIEPREBATTLEHINTS;
          this.newbiePrebattleHintsCheckbox.toolTip = TOOLTIPS.NEWBIEPREBATTLEHINTS;
          this.newbiePrebattleHintsCheckbox.infoIcoType = InfoIcon.TYPE_INFO;
@@ -407,8 +397,6 @@ package net.wg.gui.lobby.settings
          this.showMarkersCheckbox = null;
          this.enableCommendationsCheckbox.dispose();
          this.enableCommendationsCheckbox = null;
-         this.gameplay_devMapsCheckbox.dispose();
-         this.gameplay_devMapsCheckbox = null;
          this.switchEquipmentCheckbox.dispose();
          this.switchEquipmentCheckbox = null;
          this.minimapAlphaSlider.dispose();
@@ -532,16 +520,6 @@ package net.wg.gui.lobby.settings
          this.w2gtEnableCheckbox.dispose();
          this.w2gtEnableCheckbox = null;
          super.onDispose();
-      }
-      
-      public function updateDependentVisibleControls(param1:Boolean) : void
-      {
-         this.gameplay_devMapsCheckbox.y = this._initYGameplayDevMapsCheckbox + (!!param1 ? 0 : OFFSET_CB_DISABLED);
-      }
-      
-      private function setDependentVisibleControlsY() : void
-      {
-         this._initYGameplayDevMapsCheckbox = this.gameplay_devMapsCheckbox.y;
       }
       
       private function onGuiGraphicsOptimizationCheckboxSelectHandler(param1:Event) : void

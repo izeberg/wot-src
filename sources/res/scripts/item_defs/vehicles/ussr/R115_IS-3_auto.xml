@@ -4647,7 +4647,7 @@
 		</Turret_1_R115_IS-3_auto>
 	</turrets0>
 	<engines>
-		<V-11-IS-3>shared</V-11-IS-3>
+		<V_11_IS_3_A>shared</V_11_IS_3_A>
 	</engines>
 	<fuelTanks>
 		<Heavy>shared</Heavy>
@@ -4658,13 +4658,13 @@
 	<physics>
 		<detailed>
 			<engines>
-				<V-11-IS-3>
+				<V_11_IS_3_A>
 					<smplEnginePower>
 						549.7862
 						<!--BW_String-->
 					</smplEnginePower>
 					<smplFwMaxSpeed>40</smplFwMaxSpeed>
-				</V-11-IS-3>
+				</V_11_IS_3_A>
 			</engines>
 			<chassis>
 				<Chassis_R115_IS-3_auto>

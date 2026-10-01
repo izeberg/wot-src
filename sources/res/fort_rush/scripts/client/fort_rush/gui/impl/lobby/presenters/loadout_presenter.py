@@ -5,7 +5,11 @@ from gui.impl.lobby.hangar.presenters.consumables_presenter import ConsumablesPr
 from gui.impl.lobby.hangar.presenters.equipments_presenter import EquipmentsPresenter
 from gui.impl.lobby.hangar.presenters.instructions_presenter import InstructionsPresenter
 from gui.impl.lobby.hangar.presenters.loadout_presenter import LoadoutPresenter, _LoadoutStatesObserver
+from gui.impl.lobby.hangar.presenters.loadout_presenter_base import LoadoutEntityProvider
 from gui.impl.lobby.hangar.presenters.shells_presenter import ShellsPresenter
+from gui.impl.lobby.tank_setup.configurations.consumable import ConsumableTabs
+from gui.impl.lobby.tank_setup.interactors.consumable import ConsumableInteractor
+from fort_rush.gui.impl.lobby.tank_setup.array_provider import FortRushConsumableProvider
 from gui.impl.gen.view_models.views.lobby.loadout.panel.ammunition.ammunition_panel_model import AmmunitionPanelModel
 
 class _FortRushLoadoutStatesObserver(_LoadoutStatesObserver):
@@ -25,7 +29,13 @@ class FortRushLoadoutPresenter(LoadoutPresenter):
         return {hangar.Equipments(): lambda : EquipmentsPresenter(self._vehInteractingItem), 
            hangar.Instructions(): lambda : InstructionsPresenter(self._vehInteractingItem), 
            hangar.Shells(): lambda : FortRushShellsPresenter(self._vehInteractingItem), 
-           hangar.Consumables(): lambda : ConsumablesPresenter(self._vehInteractingItem)}
+           hangar.Consumables(): lambda : FortRushConsumablesPresenter(self._vehInteractingItem)}
+
+
+class FortRushConsumablesPresenter(ConsumablesPresenter):
+
+    def _createProvider(self, vehInteractingItem):
+        self._provider = LoadoutEntityProvider(vehInteractingItem, ConsumableInteractor, {ConsumableTabs.DEFAULT: FortRushConsumableProvider})
 
 
 class FortRushShellsPresenter(ShellsPresenter):

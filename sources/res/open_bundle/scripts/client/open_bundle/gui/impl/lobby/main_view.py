@@ -8,6 +8,7 @@ from frameworks.wulf import ViewFlags, ViewSettings
 from frameworks.wulf.gui_constants import ViewStatus
 from gui.Scaleform.daapi.view.lobby.storage.storage_helpers import getVehicleCDForStyle
 from gui.impl.gen import R
+from gui.impl.gen.view_models.views.lobby.customization.attachments_preview.attachments_preview_model import AttachmentsPreviewFeature
 from gui.impl.gui_decorators import args2params
 from gui.impl.lobby.common.view_wrappers import createBackportTooltipDecorator
 from gui.impl.pub import ViewImpl
@@ -253,7 +254,7 @@ class MainView(ViewImpl):
             vehicleCD = getVehicleCDForStyle(style)
             showStylePreview(vehicleCD, style)
         elif bonusType == 'attachmentsSet':
-            showAttachmentsSetPreview(attachmentsToken)
+            showAttachmentsSetPreview(attachmentsToken, AttachmentsPreviewFeature.OPEN_BUNDLE)
         return
 
     def __selectVehicle(self, vehicleCD):

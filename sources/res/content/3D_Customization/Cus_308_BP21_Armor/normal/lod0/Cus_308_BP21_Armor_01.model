@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-0.628621 -0.044544 -0.831303</min>
+		<max>0.159399 0.509198 0.589041</max>
+	</visibilityBox>
+	<parent>content/3D_Customization/Cus_308_BP21_Armor/normal/lod1/Cus_308_BP21_Armor_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_308_BP21_Armor/normal/lod0/Cus_308_BP21_Armor_01</nodefullVisual>
+</root>

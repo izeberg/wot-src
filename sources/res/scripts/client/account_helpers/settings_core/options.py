@@ -874,16 +874,6 @@ class GameplaySetting(StorageAccountSetting):
         return super(GameplaySetting, self)._get()
 
 
-class DevMapsSetting(StorageAccountSetting):
-    lobbyContext = dependency.descriptor(ILobbyContext)
-
-    def pack(self):
-        return SettingsExtraData(self._get(), self._getOptions(), self.getExtraData())._asdict()
-
-    def getExtraData(self):
-        return {'enabled': self.lobbyContext.getServerSettings().isMapsInDevelopmentEnabled()}
-
-
 class TripleBufferedSetting(SettingAbstract):
 
     def _get(self):

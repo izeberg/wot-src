@@ -137,7 +137,7 @@
 		<Maybach_HL_234K>148</Maybach_HL_234K>
 		<MB_837_F>149</MB_837_F>
 		<GT_101>150</GT_101>
-		<Continental_AVI_1790_8>151</Continental_AVI_1790_8>
+		<Continental_AVI_1790_8A>151</Continental_AVI_1790_8A>
 		<MB_837_K>152</MB_837_K>
 		<Maybach_HL45P1>153</Maybach_HL45P1>
 		<Daimler_Benz_MB_8V837_Ba>154</Daimler_Benz_MB_8V837_Ba>
@@ -4861,9 +4861,9 @@
 			<rpm_min>382</rpm_min>
 			<rpm_max>2377</rpm_max>
 		</GT_101>
-		<Continental_AVI_1790_8>
-			<userString>#germany_vehicles:Continental_AVI_1790_8</userString>
-			<shortUserString>#germany_vehicles:Continental_AVI_1790_8_short</shortUserString>
+		<Continental_AVI_1790_8A>
+			<userString>#germany_vehicles:Continental_AVI_1790_8A</userString>
+			<shortUserString>#germany_vehicles:Continental_AVI_1790_8A_short</shortUserString>
 			<tags>gasoline</tags>
 			<level>9</level>
 			<price>80000</price>
@@ -4881,7 +4881,7 @@
 			</fireStartingChance>
 			<rpm_min>497</rpm_min>
 			<rpm_max>2663</rpm_max>
-		</Continental_AVI_1790_8>
+		</Continental_AVI_1790_8A>
 		<MB_837_K>
 			<userString>#germany_vehicles:MB_837_K</userString>
 			<tags>diesel</tags>

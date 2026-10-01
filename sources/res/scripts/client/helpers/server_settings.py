@@ -2208,13 +2208,6 @@ class ServerSettings(object):
     def isHofEnabled(self):
         return self.__getGlobalSetting('hallOfFame', {}).get('isHofEnabled', False)
 
-    def isMapsInDevelopmentEnabled(self):
-        mapsInDevCongig = self.__getGlobalSetting(Configs.MAPS_IN_DEVELOPMENT_CONFIG.value, None)
-        if mapsInDevCongig:
-            return bool(mapsInDevCongig['isEnabled'])
-        else:
-            return False
-
     def getSquadRestrictions(self):
         return self.__getGlobalSetting('squadRestrictions', {})
 

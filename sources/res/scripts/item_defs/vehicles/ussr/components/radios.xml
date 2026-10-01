@@ -18,7 +18,7 @@
 		<_71-TK-3U>16</_71-TK-3U>
 		<_10RB>17</_10RB>
 		<_71-TK-3A>18</_71-TK-3A>
-		<_10RT-26E>19</_10RT-26E>
+		<_10RT_26E1>19</_10RT_26E1>
 		<_10RKM>20</_10RKM>
 		<KRSTB>21</KRSTB>
 		<_9RM_O>22</_9RM_O>
@@ -748,8 +748,8 @@
 			<maxRegenHealth>55</maxRegenHealth>
 			<repairCost>1</repairCost>
 		</SCR_209>
-		<_10RT-26E>
-			<userString>#ussr_vehicles:_10RT-26E</userString>
+		<_10RT_26E1>
+			<userString>#ussr_vehicles:_10RT_26E1</userString>
 			<tags/>
 			<level>10</level>
 			<price>56500</price>
@@ -758,7 +758,7 @@
 			<maxHealth>200</maxHealth>
 			<maxRegenHealth>150</maxRegenHealth>
 			<repairCost>4</repairCost>
-		</_10RT-26E>
+		</_10RT_26E1>
 		<_10RT-26M>
 			<userString>#ussr_vehicles:_10RT-26M</userString>
 			<tags/>

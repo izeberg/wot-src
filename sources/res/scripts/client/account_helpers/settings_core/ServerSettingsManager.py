@@ -244,7 +244,6 @@ class ServerSettingsManager(object):
                                          GAME.SNIPER_ZOOM: Offset(27, 3 << 27)}), 
        SETTINGS_SECTIONS.GAME_EXTENDED_2: Section(masks={GAME.SHOW_ARTY_HIT_ON_MAP: 0, 
                                            GAME.SCROLL_SMOOTHING: 4, 
-                                           GAME.GAMEPLAY_DEV_MAPS: 5, 
                                            GAME.NEWBIE_PREBATTLE_HINTS: 6, 
                                            GAME.NEWBIE_BATTLE_HINTS: 7, 
                                            GAME.ENABLE_SERVER_AIM: 8, 

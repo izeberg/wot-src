@@ -947,6 +947,8 @@ class AmmoController(MethodsRules, ViewComponentsController):
                 if quantityInClip > 0 and prevAmmo[1] == 0 and quantity == prevAmmo[0]:
                     result |= SHELL_SET_RESULT.CASSETTE_RELOAD
             self.onShellsUpdated(intCD, quantity, quantityInClip, result)
+            if self.__gunSettings.hasExtraShot() and intCD == self.__currShellCD and quantityInClip == 1 and prevAmmo[1] == 0:
+                self.onGunReloadTimeSet(self.__currShellCD, self.getGunReloadingState(), False)
         else:
             self.__ammo[intCD] = (
              quantity, quantityInClip)

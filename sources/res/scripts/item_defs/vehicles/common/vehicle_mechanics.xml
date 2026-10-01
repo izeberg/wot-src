@@ -1131,14 +1131,15 @@
 						<name>timeToOverheat</name>
 					</param>
 					<param>
-						23.8
-						<!--BW_String-->
+						25
 						<name>overheatDuration</name>
+						<template>vehicle_hub.characteristics.templates.upTo</template>
 					</param>
 					<param>
-						11.9
+						12.5
 						<!--BW_String-->
 						<name>coolingTime</name>
+						<template>vehicle_hub.characteristics.templates.upTo</template>
 					</param>
 					<param>
 						2

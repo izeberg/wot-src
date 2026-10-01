@@ -2171,12 +2171,6 @@ class USER_SERVER_SETTINGS:
             return not settings[cls.GAME_EXTENDED] >> 2 & 1
         return False
 
-    @classmethod
-    def isMapsInDevEnabled(cls, settings):
-        if settings and cls.GAME_EXTENDED_2 in settings:
-            return bool(settings[cls.GAME_EXTENDED_2] >> 5 & 1)
-        return False
-
 
 INT_USER_SETTINGS_KEYS = {USER_SERVER_SETTINGS.VERSION: 'Settings version', 
    USER_SERVER_SETTINGS.GAME: 'Game section settings', 
@@ -3762,10 +3756,6 @@ class MinimapLayerType(object):
 class RandomizationType(object):
     NORMAL = 'NORMAL'
     UNIFORM = 'UNIFORM'
-
-
-class RANDOM_FLAGS:
-    IS_MAPS_IN_DEVELOPMENT_ENABLED = 2
 
 
 class PENALTY_TYPES(enum.Enum):

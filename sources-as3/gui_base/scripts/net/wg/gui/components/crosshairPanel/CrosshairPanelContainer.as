@@ -1382,7 +1382,14 @@ package net.wg.gui.components.crosshairPanel
             this._currentCrosshair.setReloadingAsPercent(this._currReloadingPercent);
             this._currentCrosshair.setReloadingState(this._currReloadingState);
          }
-         this._gunMarkersContainer.updateReloadingParams(this._currReloadingPercent,this._currReloadingState);
+         if(this.isExtraShot && this._isShotAvailable && this._currReloadingState == CrosshairConsts.RELOADING_PROGRESS)
+         {
+            this._gunMarkersContainer.updateReloadingParams(VALUE_100,CrosshairConsts.RELOADING_ENDED);
+         }
+         else
+         {
+            this._gunMarkersContainer.updateReloadingParams(this._currReloadingPercent,this._currReloadingState);
+         }
       }
       
       private function clearReloadingTimer() : void

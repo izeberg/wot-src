@@ -1,6 +1,7 @@
 from __future__ import absolute_import
 import typing
 from account_helpers.AccountSettings import HANGAR_VIEW_SETTINGS, HANGAR_KEY_BINDINGS
+from gui.impl.lobby.hangar.presenters.pet_object_tooltip_presenter import PetObjectTooltipPresenter
 from helpers.CallbackDelayer import CallbackDelayer
 from ClientSelectableCameraObject import ClientSelectableCameraObject
 from CurrentVehicle import g_currentPreviewVehicle, g_currentVehicle
@@ -118,6 +119,7 @@ class FortRushHangarView(ViewComponent[RouterModel], IRoutableView):
            hangar.SpaceInteraction(): lambda : SpaceInteractionPresenter(self.__createSelectableLogic()), 
            hangar.VehicleMenu(): VehicleMenuPresenter, 
            hangar.HeroTank(): HeroTankPresenter, 
+           hangar.PetObjectTooltip(): PetObjectTooltipPresenter, 
            hangar.Settings(): lambda : SettingsPresenter(HangarSettingsModel, HANGAR_VIEW_SETTINGS), 
            hangar.KeyBindings(): lambda : SettingsPresenter(KeyBindingsModel, HANGAR_KEY_BINDINGS, readOnly=True), 
            hangar.ManageableVehiclePlaylists(): ManageableVehiclePlaylistsPresenter, 

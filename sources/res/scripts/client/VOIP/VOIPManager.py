@@ -1,5 +1,5 @@
 from __future__ import absolute_import
-import logging
+import logging, re
 from builtins import range
 from future.utils import viewitems
 import BigWorld, Event, Settings, SoundGroups
@@ -28,6 +28,10 @@ _BACK_OFF_MIN_DELAY = 1
 _BACK_OFF_MAX_DELAY = CLIENT_INACTIVITY_TIMEOUT
 _BACK_OFF_MODIFIER = 1
 _BACK_OFF_EXP_RANDOM_FACTOR = 0.5
+_LOG_REPEAT_WINDOW = 10.0
+_LOG_REPEAT_BURST = 3
+_LOG_REPEAT_KEYS_MAX = 64
+_LOG_DIGITS = re.compile('\\d+')
 
 class VOIPManager(VOIPHandler):
     settingsCore = dependency.descriptor(ISettingsCore)
@@ -71,6 +75,7 @@ class VOIPManager(VOIPHandler):
         self.__captureDevicesNames = []
         self.__currentCaptureDevice = ''
         self.__channelUsers = {}
+        self.__logRepeats = {}
         self.__eventManager = em = Event.EventManager()
         self.onCaptureDevicesUpdated = Event.Event(em)
         self.onCaptureDeviceSet = Event.Event(em)
@@ -329,6 +334,13 @@ class VOIPManager(VOIPHandler):
         _logger.info('__setReloginCallback. Next attempt after %d seconds', delay)
         self.__reLoginCallbackID = BigWorld.callback(delay, self.__loginUserOnCallback)
 
+    def __dropPendingRelogin(self):
+        if self.__reLoginCallbackID is not None:
+            _logger.info('Pending relogin cancelled')
+            self.__cancelReloginCallback()
+            self.__expBackOff.reset()
+        return
+
     def logout(self):
         _logger.info('Logout')
         self.__cancelChannelTokenTimeout()
@@ -342,6 +354,7 @@ class VOIPManager(VOIPHandler):
 
     def finalise(self):
         _logger.info('Finalise')
+        self.__dropPendingRelogin()
         self.__cancelChannelTokenTimeout()
         self.__awaitingChannelToken = False
         self.__channelTokenRetried = False
@@ -609,6 +622,8 @@ class VOIPManager(VOIPHandler):
             _logger.info('Joined to channel: %s', self.__currentChannel)
             self.__fsm.update(self)
         elif newState == STATE.LEAVING_CHANNEL:
+            if self.__desiredIsLiveKit:
+                self.__dropPendingRelogin()
             self.__sendLeaveChannelCommand(self.getCurrentChannel())
         elif newState == STATE.LOGGING_OUT:
             self.__normalLogout = True
@@ -717,6 +732,8 @@ class VOIPManager(VOIPHandler):
                     self.__normalLogout = False
                     self.__loggedIn = False
                     self.__fsm.update(self)
+                elif self.__desiredIsLiveKit and self.__fsm.getState() != STATE.JOINED_CHANNEL:
+                    _logger.info('LiveKit logout ignored in state %d: %s', self.__fsm.getState(), statusString)
                 elif self.__reLoginCallbackID is None:
                     _logger.debug('onLoginStateChange: Network lost logout')
                     self.__setReloginCallback()
@@ -851,10 +868,36 @@ class VOIPManager(VOIPHandler):
         severity = str(data[VOIPCommon.KEY_LOG_SEVERITY])
         if severity == VOIPCommon.SEVERITY_INFO:
             _logger.info('[LiveKitVOIP]: %s', message)
-        elif severity == VOIPCommon.SEVERITY_WARNING:
-            _logger.warning('[LiveKitVOIP]: %s', message)
+        elif severity in (VOIPCommon.SEVERITY_WARNING, VOIPCommon.SEVERITY_WARN):
+            muted = self.__takeWarningSlot(message)
+            if muted:
+                _logger.warning('[LiveKitVOIP]: %s (+%d similar muted)', message, muted)
+            elif muted is not None:
+                _logger.warning('[LiveKitVOIP]: %s', message)
         elif severity == VOIPCommon.SEVERITY_ERROR:
             _logger.error('[LiveKitVOIP]: %s', message)
+        else:
+            _logger.info('[LiveKitVOIP] %s: %s', severity, message)
+        return
+
+    def __takeWarningSlot(self, message):
+        key = _LOG_DIGITS.sub('#', message)
+        now = BigWorld.time()
+        start, seen, muted = self.__logRepeats.get(key, (None, 0, 0))
+        if start is not None and now - start < _LOG_REPEAT_WINDOW:
+            if seen < _LOG_REPEAT_BURST:
+                self.__logRepeats[key] = (
+                 start, seen + 1, muted)
+                return 0
+            self.__logRepeats[key] = (
+             start, seen + 1, muted + 1)
+            return
+        else:
+            if len(self.__logRepeats) >= _LOG_REPEAT_KEYS_MAX:
+                self.__logRepeats.clear()
+            self.__logRepeats[key] = (
+             now, 1, 0)
+            return muted
 
     @staticmethod
     def __isAutoJoinChannel():

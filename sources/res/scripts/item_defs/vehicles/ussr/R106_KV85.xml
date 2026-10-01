@@ -8468,7 +8468,7 @@
 		</Turret_2_R106_KV85>
 	</turrets0>
 	<engines>
-		<V-2K>
+		<V_2K1>
 			shared
 			<unlocks>
 				<engine>
@@ -8476,7 +8476,7 @@
 					<cost>11000</cost>
 				</engine>
 			</unlocks>
-		</V-2K>
+		</V_2K1>
 		<V-2IS>shared</V-2IS>
 	</engines>
 	<fuelTanks>
@@ -8506,13 +8506,13 @@
 	<physics>
 		<detailed>
 			<engines>
-				<V-2K>
+				<V_2K1>
 					<smplEnginePower>
 						528.6406
 						<!--BW_String-->
 					</smplEnginePower>
 					<smplFwMaxSpeed>34</smplFwMaxSpeed>
-				</V-2K>
+				</V_2K1>
 				<V-2IS>
 					<smplEnginePower>
 						634.3687

@@ -166,6 +166,14 @@
 				</params>
 			</block>
 			<block>
+				<class>If</class>
+				<id>If_66</id>
+			</block>
+			<block>
+				<class>StartScript</class>
+				<id>StartScript_1</id>
+			</block>
+			<block>
 				<class>FindFirstNode</class>
 				<id>FindFirstNode_19</id>
 				<slots>
@@ -198,6 +206,23 @@
 			<block>
 				<class>IsValid</class>
 				<id>IsValid_8</id>
+			</block>
+			<block>
+				<class>CompareEnum</class>
+				<id>CompareEnum_19</id>
+				<params>
+					<param>
+						PetStaticTriggerT
+						<name>Enum Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>a</name>
+						<const>\EVENT\</const>
+					</slot>
+				</slots>
 			</block>
 			<block>
 				<class>ActivateGameObject</class>
@@ -302,11 +327,11 @@
 			</block>
 			<block>
 				<class>FindFirstNode</class>
-				<id>FindFirstNode_18</id>
+				<id>FindFirstNode_17</id>
 				<slots>
 					<slot>
 						<name>name</name>
-						<const>\Bag\</const>
+						<const>\Lighting_Bag\</const>
 					</slot>
 					<slot>
 						<name>includingInactive</name>
@@ -316,11 +341,11 @@
 			</block>
 			<block>
 				<class>FindFirstNode</class>
-				<id>FindFirstNode_17</id>
+				<id>FindFirstNode_18</id>
 				<slots>
 					<slot>
 						<name>name</name>
-						<const>\Lighting_Bag\</const>
+						<const>\Bag\</const>
 					</slot>
 					<slot>
 						<name>includingInactive</name>
@@ -468,6 +493,10 @@
 				</slots>
 			</block>
 			<block>
+				<class>GetPetStaticTrigger</class>
+				<id>GetPetStaticTrigger_1</id>
+			</block>
+			<block>
 				<class>If</class>
 				<id>If_57</id>
 			</block>
@@ -587,6 +616,18 @@
 				<output>value</output>
 			</connection>
 			<connection>
+				<from>StartScript_1</from>
+				<input>input</input>
+				<to>If_66</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>CompareEnum_19</from>
+				<input>value</input>
+				<to>If_66</to>
+				<output>res</output>
+			</connection>
+			<connection>
 				<from>ContextGetSelf_1</from>
 				<input>gameObject</input>
 				<to>FindFirstNode_19</to>
@@ -621,6 +662,12 @@
 				<input>gameObject</input>
 				<to>IsValid_8</to>
 				<output>node</output>
+			</connection>
+			<connection>
+				<from>GetPetStaticTrigger_1</from>
+				<input>b</input>
+				<to>CompareEnum_19</to>
+				<output>staticTrigger</output>
 			</connection>
 			<connection>
 				<from>SetVariable_38</from>
@@ -666,6 +713,12 @@
 			</connection>
 			<connection>
 				<from>If_39</from>
+				<input>input</input>
+				<to>If_62</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>If_66</from>
 				<input>input</input>
 				<to>If_62</to>
 				<output>true</output>
@@ -727,13 +780,13 @@
 			<connection>
 				<from>GetVariable_31</from>
 				<input>gameObject</input>
-				<to>FindFirstNode_18</to>
+				<to>FindFirstNode_17</to>
 				<output>value</output>
 			</connection>
 			<connection>
 				<from>GetVariable_31</from>
 				<input>gameObject</input>
-				<to>FindFirstNode_17</to>
+				<to>FindFirstNode_18</to>
 				<output>value</output>
 			</connection>
 			<connection>
@@ -849,6 +902,12 @@
 				<input>value</input>
 				<to>SetVariable_37</to>
 				<output>node</output>
+			</connection>
+			<connection>
+				<from>If_66</from>
+				<input>input</input>
+				<to>If_61</to>
+				<output>false</output>
 			</connection>
 			<connection>
 				<from>If_39</from>

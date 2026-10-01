@@ -826,7 +826,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.settings.vo.CheckboxVo;
    import net.wg.gui.lobby.settings.vo.ColorFilerSettingsVo;
    import net.wg.gui.lobby.settings.vo.CursorTabsDataVo;
-   import net.wg.gui.lobby.settings.vo.DevMapsVO;
    import net.wg.gui.lobby.settings.vo.IncreaseEffectsContrastVO;
    import net.wg.gui.lobby.settings.vo.MarkerTabsDataVo;
    import net.wg.gui.lobby.settings.vo.SettingsControlProp;
@@ -2590,8 +2589,6 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_SETTINGS_VO_COLORFILERSETTINGSVO:Class = ColorFilerSettingsVo;
       
       public static const NET_WG_GUI_LOBBY_SETTINGS_VO_CURSORTABSDATAVO:Class = CursorTabsDataVo;
-      
-      public static const NET_WG_GUI_LOBBY_SETTINGS_VO_DEVMAPSVO:Class = DevMapsVO;
       
       public static const NET_WG_GUI_LOBBY_SETTINGS_VO_INCREASEEFFECTSCONTRASTVO:Class = IncreaseEffectsContrastVO;
       

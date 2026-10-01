@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_313_Marines_Stash/normal/lod2/Cus_313_Marines_Stash</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.590994 -0.003723 -0.655771</min>
+		<max>0.146648 0.470248 0.747993</max>
+	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/Cus_313_Marines_Stash/normal/lod1/Cus_313_Marines_Stash</nodefullVisual>
+	<tank>true</tank>
+</root>

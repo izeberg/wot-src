@@ -23,7 +23,7 @@ class ExtraShotAmmoState(DefaultComponentAmmoState):
         return timeLeft == baseTime
 
     def getShootPossibility(self, currentShells):
-        isShootPossible = currentShells[1] == 1 and self.__reloadState == ExtraShotClipStates.EXTRA_FULL_RELOAD
+        isShootPossible = currentShells[1] == 1 and bool(self.__reloadState & ExtraShotClipStates.EXTRA_FULL_RELOAD)
         if isShootPossible:
             return AmmoShootPossibility.ALLOWED
         return AmmoShootPossibility.NOT_DEFINED

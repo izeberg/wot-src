@@ -11,7 +11,7 @@
 		<V-3>7</V-3>
 		<M_50TI_7x7>8</M_50TI_7x7>
 		<M-5-400>9</M-5-400>
-		<V-2K>10</V-2K>
+		<V_2K1>10</V_2K1>
 		<V-4>11</V-4>
 		<V-2-34M>12</V-2-34M>
 		<MT-5-1>13</MT-5-1>
@@ -41,7 +41,7 @@
 		<M-17FA>43</M-17FA>
 		<V_14>44</V_14>
 		<V-5U>45</V-5U>
-		<TD-30>47</TD-30>
+		<TD_30_A>47</TD_30_A>
 		<M-50TD>48</M-50TD>
 		<M500>49</M500>
 		<D-744>50</D-744>
@@ -86,7 +86,7 @@
 		<V-2-54A>111</V-2-54A>
 		<V-44>112</V-44>
 		<V-12-5A>113</V-12-5A>
-		<V-11-IS-3>114</V-11-IS-3>
+		<V_11_IS_3_A>114</V_11_IS_3_A>
 		<M-17L_R>115</M-17L_R>
 		<V-7C>116</V-7C>
 		<V-7>217</V-7>
@@ -1575,8 +1575,8 @@
 			<rpm_min>349</rpm_min>
 			<rpm_max>2681</rpm_max>
 		</M_5_400_BT_2>
-		<V-2K>
-			<userString>#ussr_vehicles:V-2K</userString>
+		<V_2K1>
+			<userString>#ussr_vehicles:V_2K1</userString>
 			<tags>diesel</tags>
 			<level>6</level>
 			<price>23050</price>
@@ -1593,7 +1593,7 @@
 			</fireStartingChance>
 			<rpm_min>386</rpm_min>
 			<rpm_max>2040</rpm_max>
-		</V-2K>
+		</V_2K1>
 		<V_2K_SU>
 			<userString>#ussr_vehicles:V_2K_SU</userString>
 			<tags>diesel</tags>
@@ -2425,8 +2425,8 @@
 			<rpm_min>309</rpm_min>
 			<rpm_max>2272</rpm_max>
 		</V_12P>
-		<V-11-IS-3>
-			<userString>#ussr_vehicles:V-11-IS-3</userString>
+		<V_11_IS_3_A>
+			<userString>#ussr_vehicles:V_11_IS_3_A</userString>
 			<tags>diesel</tags>
 			<level>8</level>
 			<price>55000</price>
@@ -2444,7 +2444,7 @@
 			</fireStartingChance>
 			<rpm_min>381</rpm_min>
 			<rpm_max>2056</rpm_max>
-		</V-11-IS-3>
+		</V_11_IS_3_A>
 		<V-11_700>
 			<userString>#ussr_vehicles:V-11_700</userString>
 			<tags>diesel</tags>
@@ -3583,8 +3583,8 @@
 			<rpm_min>365</rpm_min>
 			<rpm_max>2104</rpm_max>
 		</V-5U>
-		<TD-30>
-			<userString>#ussr_vehicles:TD-30</userString>
+		<TD_30_A>
+			<userString>#ussr_vehicles:TD_30_A</userString>
 			<tags>diesel</tags>
 			<level>9</level>
 			<price>87000</price>
@@ -3602,7 +3602,7 @@
 			</fireStartingChance>
 			<rpm_min>280</rpm_min>
 			<rpm_max>2360</rpm_max>
-		</TD-30>
+		</TD_30_A>
 		<M-50TD>
 			<userString>#ussr_vehicles:M-50TD</userString>
 			<tags>diesel</tags>
@@ -4493,7 +4493,7 @@
 			<rpm_max>2240</rpm_max>
 		</GAZ_OU>
 		<Engine_01_KV>
-			<userString>#ussr_vehicles:V-2K</userString>
+			<userString>#ussr_vehicles:V_2K1</userString>
 			<tags>diesel</tags>
 			<level>6</level>
 			<price>23050</price>

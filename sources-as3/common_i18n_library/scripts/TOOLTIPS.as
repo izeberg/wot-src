@@ -65,8 +65,6 @@ package
       
       public static const EPICRANDOMSTANDARDNOTIFICATION:String = "#tooltips:epicRandomStandardNotification";
       
-      public static const DEVMAPS:String = "#tooltips:devMaps";
-      
       public static const LOGIN_LEGAL:String = "#tooltips:login/legal";
       
       public static const LOGIN_REMEMBERPASSWORD_SIMPLE:String = "#tooltips:login/rememberPassword/simple";
@@ -804,10 +802,6 @@ package
       public static const EPICRANDOMSTANDARDNOTIFICATION_BODY:String = "#tooltips:epicRandomStandardNotification/body";
       
       public static const EPICRANDOMSTANDARDNOTIFICATION_ATTENTION:String = "#tooltips:epicRandomStandardNotification/attention";
-      
-      public static const DEVMAPS_HEADER:String = "#tooltips:devMaps/header";
-      
-      public static const DEVMAPS_BODY:String = "#tooltips:devMaps/body";
       
       public static const EPICBATTLEWIDGET_HEADER:String = "#tooltips:epicBattleWidget/header";
       
@@ -9256,6 +9250,36 @@ package
       public static const NOTRECRUITEDTANKMAN_FR_SPARK_DESC:String = "#tooltips:notrecruitedtankman/fr_spark/desc";
       
       public static const NOTRECRUITEDTANKMAN_FR_SPARK_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/fr_spark/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP21_5_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_bp21_5/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP21_5_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp21_5/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP21_5_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp21_5/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP21_6_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_bp21_6/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP21_6_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp21_6/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP21_6_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp21_6/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP21_7_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_bp21_7/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP21_7_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp21_7/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP21_7_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp21_7/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP21_8_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_bp21_8/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP21_8_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp21_8/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP21_8_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp21_8/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP21_9_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_bp21_9/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP21_9_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp21_9/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP21_9_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp21_9/howToGetInfo";
       
       public static const ELEN_SUMMARY_RANK_ENUM:Array = [ELEN_SUMMARY_RANK_1,ELEN_SUMMARY_RANK_2,ELEN_SUMMARY_RANK_3,ELEN_SUMMARY_RANK_4,ELEN_SUMMARY_RANK_NORANK];
       

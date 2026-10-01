@@ -6,7 +6,7 @@ from fort_rush.gui.impl.lobby.tooltips.fort_rush_event_banner_tooltip import For
 from fort_rush.skeletons.battle_controller import IFortRushBattleController
 from gui.impl.gen.view_models.views.lobby.user_missions.constants.event_banner_state import EventBannerState
 from gui.impl.lobby.user_missions.hangar_widget.event_banners.event_banners_container import EventBannersContainer
-from gui.impl.lobby.user_missions.hangar_widget.event_banners.base_event_banner import BaseEventBanner
+from gui.impl.lobby.user_missions.hangar_widget.event_banners.standard_event_banner import StandardEventBanner
 from gui.impl.lobby.user_missions.hangar_widget.services import IEventsService
 from gui.shared.utils.SelectorBattleTypesUtils import isKnownBattleType
 from helpers import dependency
@@ -24,7 +24,7 @@ def isFortRushEntryPointAvailable():
         return isEnabled
 
 
-class FortRushEventBanner(BaseEventBanner):
+class FortRushEventBanner(StandardEventBanner):
     NAME = FORT_RUSH_HANGAR_ALIASES.FORT_RUSH_ENTRY_POINT
     __frCtrl = dependency.descriptor(IFortRushBattleController)
     __eventsService = dependency.descriptor(IEventsService)

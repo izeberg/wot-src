@@ -243,8 +243,6 @@ package net.wg.gui.lobby.settings.config
       
       public static const RECEIVE_CLAN_INVITES_NOTIFICATIONS:String = "receiveClanInvitesNotifications";
       
-      public static const GAMEPLAY_DEVMAPS:String = "gameplay_devMaps";
-      
       public static const NEWBIE_PREBATTLE_HINTS:String = "newbiePrebattleHints";
       
       public static const NEWBIE_BATTLE_HINTS:String = "newbieBattleHints";
