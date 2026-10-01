@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-0.525703 -0.000036 -0.765837</min>
+		<max>0.045323 0.287862 0.795542</max>
+	</visibilityBox>
+	<parent>content/3D_Customization/Cus_306_BP21_RocketLauncher/normal/lod1/Cus_306_BP21_RocketLauncher_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_306_BP21_RocketLauncher/normal/lod0/Cus_306_BP21_RocketLauncher_01</nodefullVisual>
+</root>

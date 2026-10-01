@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-0.089845 -0.100000 -0.335716</min>
+		<max>0.089845 0.423513 0.427114</max>
+	</visibilityBox>
+	<parent>content/3D_Customization/Cus_311_Chaingun/normal/lod1/Cus_311_Chaingun</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>content/3D_Customization/Cus_311_Chaingun/normal/lod0/Cus_311_Chaingun</nodefullVisual>
+	<tank>true</tank>
+</root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.986167 0.003350 -3.758194</min>
+		<max>1.986167 1.327226 3.858521</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/british/GB130_FV225_Collector/_skins/GB130_FV225_Collector_DMC_3Dst/crash/lod0/Chassis</nodefullVisual>
+	<parent>vehicles/british/GB130_FV225_Collector/_skins/GB130_FV225_Collector_DMC_3Dst/crash/lod1/Chassis</parent>
+</root>
