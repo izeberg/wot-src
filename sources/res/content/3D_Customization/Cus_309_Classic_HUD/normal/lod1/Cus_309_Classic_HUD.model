@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_309_Classic_HUD/normal/lod2/Cus_309_Classic_HUD</parent>
+	<extent>70.000000</extent>
+	<visibilityBox>
+		<min>-0.474608 -0.000815 -0.882374</min>
+		<max>0.064179 0.331473 0.867653</max>
+	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/Cus_309_Classic_HUD/normal/lod1/Cus_309_Classic_HUD</nodefullVisual>
+	<tank>true</tank>
+</root>

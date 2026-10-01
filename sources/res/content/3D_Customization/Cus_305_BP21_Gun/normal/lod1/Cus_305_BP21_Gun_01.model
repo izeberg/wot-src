@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_305_BP21_Gun/normal/lod2/Cus_305_BP21_Gun_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.254505 -0.070015 -0.642394</min>
+		<max>0.254505 0.557408 0.312988</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_305_BP21_Gun/normal/lod1/Cus_305_BP21_Gun_01</nodefullVisual>
+</root>
