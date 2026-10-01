@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>content/3D_Customization/Cus_307_BP21_Stuff/normal/lod2/Cus_307_BP21_Stuff_01</nodefullVisual>
+	<parent>content/3D_Customization/Cus_307_BP21_Stuff/normal/lod3/Cus_307_BP21_Stuff_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.525367 0.015673 -0.672600</min>
+		<max>0.032706 0.416975 0.795221</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

@@ -5,7 +5,7 @@ from gui.impl.gen.view_models.views.lobby.battle_pass.reward_item_model import R
 class BattlePassBuyLevelViewModel(ViewModel):
     __slots__ = ('onChangeSelectedLevels', 'onPurchase')
 
-    def __init__(self, properties=6, commands=2):
+    def __init__(self, properties=7, commands=2):
         super(BattlePassBuyLevelViewModel, self).__init__(properties=properties, commands=commands)
 
     @property
@@ -46,6 +46,12 @@ class BattlePassBuyLevelViewModel(ViewModel):
     def setLevelPrice(self, value):
         self._setNumber(5, value)
 
+    def getPurchaseAbortedCount(self):
+        return self._getNumber(6)
+
+    def setPurchaseAbortedCount(self, value):
+        self._setNumber(6, value)
+
     def _initialize(self):
         super(BattlePassBuyLevelViewModel, self)._initialize()
         self._addViewModelProperty('rewards', UserListModel())
@@ -54,5 +60,6 @@ class BattlePassBuyLevelViewModel(ViewModel):
         self._addNumberProperty('levelsPassed', 0)
         self._addNumberProperty('chapterID', 0)
         self._addNumberProperty('levelPrice', 0)
+        self._addNumberProperty('purchaseAbortedCount', 0)
         self.onChangeSelectedLevels = self._addCommand('onChangeSelectedLevels')
         self.onPurchase = self._addCommand('onPurchase')
