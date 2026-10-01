@@ -38,6 +38,10 @@ package net.wg.infrastructure.base.meta
       
       function openColorSettingsS() : void;
       
+      function showSystemMixerVolumeDisabledPageS() : void;
+      
+      function isSystemMixerVolumeDisabledS() : Boolean;
+      
       function as_setData(param1:Object) : void;
       
       function as_setCaptureDevices(param1:Number, param2:Array) : void;

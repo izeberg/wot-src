@@ -3605,6 +3605,15 @@ msgstr "Сервер гульні будзе адлучаны %(date)s."
 msgid "serviceChannelMessages/serverRebootCancelled"
 msgstr "Адлучэнне сервера гульні, запланаванае на %(date)s, скасавана."
 
+msgid "serviceChannelMessages/sessionProgressRewardsComplete/body"
+msgstr ""
+"Вы атрымалі ўсе ўзнагароды.\n"
+"\n"
+"Атрыманыя ўзнагароды:"
+
+msgid "serviceChannelMessages/sessionProgressRewardsComplete/header"
+msgstr "Віншуем!"
+
 msgid "serviceChannelMessages/specialReward/intelligenceBlueprints"
 msgstr "Універсальны фрагмент (x%(fragmentsCount)s)"
 
@@ -3831,6 +3840,17 @@ msgstr "Прададзена:"
 
 msgid "serviceChannelMessages/sysMsg/titles/upgrade"
 msgstr "Наладка абсталявання"
+
+msgid "serviceChannelMessages/systemMixerVolumeDisabledSysMessage/body"
+msgstr ""
+"Занадта нізкая гучнасць гульні. Націсніце на кнопку, каб паглядзець "
+"інструкцыю і праверыць налады мікшэра."
+
+msgid "serviceChannelMessages/systemMixerVolumeDisabledSysMessage/button"
+msgstr "Перайсці"
+
+msgid "serviceChannelMessages/systemMixerVolumeDisabledSysMessage/header"
+msgstr "Увага!"
 
 msgid "serviceChannelMessages/tankPremiumReceivedAsGift"
 msgstr "Ад адміністрацыі атрыманы Танкавы прэміум акаўнт на %(days)d сут."

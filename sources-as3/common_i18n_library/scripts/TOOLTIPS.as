@@ -237,6 +237,8 @@ package
       
       public static const MASTERVOLUMETOGGLEOFF:String = "#tooltips:masterVolumeToggleOff";
       
+      public static const SYSTEMMIXERVOLUMEDISABLEDWARNING:String = "#tooltips:systemMixerVolumeDisabledWarning";
+      
       public static const SOUNDQUALITYON:String = "#tooltips:soundQualityOn";
       
       public static const RECEIVECLANINVITESNOTIFICATIONS:String = "#tooltips:receiveClanInvitesNotifications";
@@ -790,6 +792,10 @@ package
       public static const MASTERVOLUMETOGGLEOFF_HEADER:String = "#tooltips:masterVolumeToggleOff/header";
       
       public static const MASTERVOLUMETOGGLEOFF_BODY:String = "#tooltips:masterVolumeToggleOff/body";
+      
+      public static const SYSTEMMIXERVOLUMEDISABLEDWARNING_HEADER:String = "#tooltips:systemMixerVolumeDisabledWarning/header";
+      
+      public static const SYSTEMMIXERVOLUMEDISABLEDWARNING_BODY:String = "#tooltips:systemMixerVolumeDisabledWarning/body";
       
       public static const SOUNDQUALITYON_HEADER:String = "#tooltips:soundQualityOn/header";
       

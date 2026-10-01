@@ -115,6 +115,12 @@
 			<gameHddName>
 				<Type>STRING</Type>
 			</gameHddName>
+			<systemVolume>
+				<Type>UINT8</Type>
+			</systemVolume>
+			<gameVolume>
+				<Type>UINT8</Type>
+			</gameVolume>
 		</Properties>
 	</CLIENT_SYSTEM>
 	<CLIENT_SESSION_STATS>
@@ -280,6 +286,12 @@
 			<pageFilePeak>
 				<Type>UINT32</Type>
 			</pageFilePeak>
+			<systemVolume>
+				<Type>UINT8</Type>
+			</systemVolume>
+			<gameVolume>
+				<Type>UINT8</Type>
+			</gameVolume>
 		</Properties>
 	</CLIENT_SESSION_STATS>
 	<MEM_CRIT_EVENT>

@@ -13131,6 +13131,14 @@ msgstr "Нет подходящей техники"
 msgid "summary/status/tooltip"
 msgstr "Обновление данных происходит раз в %(interval)s мин."
 
+msgid "systemMixerVolumeDisabledWarning/body"
+msgstr ""
+"Нажмите на ссылку справа, чтобы посмотреть инструкцию и проверить настройки "
+"микшера."
+
+msgid "systemMixerVolumeDisabledWarning/header"
+msgstr "Громкость игры кажется слишком низкой?"
+
 msgid "tankCarusel/MainProperty"
 msgstr "Базовые характеристики:"
 

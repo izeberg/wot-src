@@ -85,6 +85,8 @@ package net.wg.gui.lobby.settings
       
       private var _isVOIPButtonForceDisabled:Boolean = false;
       
+      private var _isSystemMixerVolumeDisabled:Boolean = false;
+      
       public function SoundSettings()
       {
          this._toolTipMgr = App.toolTipMgr;
@@ -137,12 +139,12 @@ package net.wg.gui.lobby.settings
          artyBulbVoicesButton.addEventListener(MouseEvent.MOUSE_OUT,this.onArtyBulbVoicesButtonMouseOutHandler);
          enableVoIPCheckbox.enabled = App.voiceChatMgr.getYY();
          tabs.addEventListener(IndexEvent.INDEX_CHANGE,this.onTabsIndexChangeHandler);
+         systemMixerVolumeDisabledLink.addEventListener(MouseEvent.CLICK,this.onSystemMixerVolumeDisabledLinkClickHandler);
          super.configUI();
       }
       
       override protected function setData(param1:SettingsDataVo) : void
       {
-         var _loc3_:Boolean = false;
          var _loc9_:String = null;
          var _loc11_:String = null;
          var _loc12_:String = null;
@@ -152,7 +154,7 @@ package net.wg.gui.lobby.settings
          this.controlsUnsubscribe();
          super.setData(param1);
          var _loc2_:SettingsControlProp = SettingsControlProp(param1.getByKey(SettingsConfigHelper.VOICE_CHAT_SUPPORTED));
-         _loc3_ = _loc2_.current;
+         var _loc3_:Boolean = _loc2_.current;
          var _loc4_:Array = [{"label":SETTINGS.SOUNDS_TABCOMMON}];
          var _loc5_:Boolean = App.voiceChatMgr.getYY();
          if(_loc3_ || _loc5_)
@@ -220,12 +222,14 @@ package net.wg.gui.lobby.settings
          }
          this.updateMasterVolumeEnabled();
          this.updateVoiceChatEnabled();
+         App.utils.scheduler.scheduleOnNextFrame(this.dispatchGetSystemOffStatus);
       }
       
       override protected function onDispose() : void
       {
          this.breakSoundCheck();
          this.forceFinishVivoxTest();
+         systemMixerVolumeDisabledLink.removeEventListener(MouseEvent.CLICK,this.onSystemMixerVolumeDisabledLinkClickHandler);
          btnCaptureDevicesUpdate.removeEventListener(ButtonEvent.CLICK,this.onBtnCaptureDevicesUpdateClickHandler);
          soundSpeakersTestButton.removeEventListener(ButtonEvent.CLICK,this.onSoundSpeakersTestButtonClickHandler);
          btnVivoxTest.removeEventListener(ButtonEvent.CLICK,this.onBtnVivoxTestClickHandler);
@@ -378,6 +382,12 @@ package net.wg.gui.lobby.settings
       public function updatePTTControl(param1:Number) : void
       {
          PTTKeyInput.key = param1;
+      }
+      
+      public function setSystemMixerVolumeDisabled(param1:Boolean) : void
+      {
+         this._isSystemMixerVolumeDisabled = param1;
+         this.setMasterVolumeToggleCheckboxAdditionalProps();
       }
       
       private function updatesPttKeyList() : void
@@ -565,8 +575,6 @@ package net.wg.gui.lobby.settings
       private function updateMasterVolumeEnabled() : void
       {
          this._masterVolumeSelected = masterVolumeToggleCheckbox.selected;
-         masterVolumeToggleCheckbox.infoIcoType = !!this._masterVolumeSelected ? Values.EMPTY_STR : InfoIcon.TYPE_WARNING;
-         masterVolumeToggleCheckbox.toolTip = !!this._masterVolumeSelected ? Values.EMPTY_STR : TOOLTIPS.MASTERVOLUMETOGGLEOFF;
          masterVolumeLabel.enabled = this._masterVolumeSelected;
          masterVolumeSlider.enabled = this._masterVolumeSelected;
          masterVolumeValue.enabled = this._masterVolumeSelected;
@@ -616,6 +624,7 @@ package net.wg.gui.lobby.settings
          subtitlesCheckbox.enabled = this._masterVolumeSelected;
          soundSpeakersTestButton.enabled = this._masterVolumeSelected;
          this.updateSoundSpeakersDropDown();
+         this.setMasterVolumeToggleCheckboxAdditionalProps();
       }
       
       private function updateVoiceChatEnabled() : void
@@ -901,6 +910,28 @@ package net.wg.gui.lobby.settings
             case SPECIAL_TAB_INDEX:
                specialForm.visible = true;
          }
+      }
+      
+      private function onSystemMixerVolumeDisabledLinkClickHandler(param1:MouseEvent) : void
+      {
+         dispatchEvent(new SettingViewEvent(SettingViewEvent.ON_SOUND_SYSTEM_OFF_LINK_CLICKED,viewId));
+      }
+      
+      private function setMasterVolumeToggleCheckboxAdditionalProps() : void
+      {
+         masterVolumeToggleCheckbox.infoIcoType = !!this._masterVolumeSelected ? Values.EMPTY_STR : InfoIcon.TYPE_WARNING;
+         masterVolumeToggleCheckbox.toolTip = !!this._masterVolumeSelected ? Values.EMPTY_STR : TOOLTIPS.MASTERVOLUMETOGGLEOFF;
+         systemMixerVolumeDisabledLink.visible = this._masterVolumeSelected && this._isSystemMixerVolumeDisabled;
+         if(this._masterVolumeSelected && this._isSystemMixerVolumeDisabled)
+         {
+            masterVolumeToggleCheckbox.infoIcoType = InfoIcon.TYPE_WARNING;
+            masterVolumeToggleCheckbox.toolTip = TOOLTIPS.SYSTEMMIXERVOLUMEDISABLEDWARNING;
+         }
+      }
+      
+      private function dispatchGetSystemOffStatus() : void
+      {
+         dispatchEvent(new SettingViewEvent(SettingViewEvent.GET_SYSTEM_OFF_STATUS,viewId));
       }
    }
 }

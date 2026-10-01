@@ -2545,6 +2545,16 @@ package
       
       public static const VOIP_READY:String = "#messenger:voip/ready";
       
+      public static const SERVICECHANNELMESSAGES_SESSIONPROGRESSREWARDSCOMPLETE_HEADER:String = "#messenger:serviceChannelMessages/sessionProgressRewardsComplete/header";
+      
+      public static const SERVICECHANNELMESSAGES_SESSIONPROGRESSREWARDSCOMPLETE_BODY:String = "#messenger:serviceChannelMessages/sessionProgressRewardsComplete/body";
+      
+      public static const SERVICECHANNELMESSAGES_SYSTEMMIXERVOLUMEDISABLEDSYSMESSAGE_HEADER:String = "#messenger:serviceChannelMessages/systemMixerVolumeDisabledSysMessage/header";
+      
+      public static const SERVICECHANNELMESSAGES_SYSTEMMIXERVOLUMEDISABLEDSYSMESSAGE_BODY:String = "#messenger:serviceChannelMessages/systemMixerVolumeDisabledSysMessage/body";
+      
+      public static const SERVICECHANNELMESSAGES_SYSTEMMIXERVOLUMEDISABLEDSYSMESSAGE_BUTTON:String = "#messenger:serviceChannelMessages/systemMixerVolumeDisabledSysMessage/button";
+      
       public static const DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_ENUM:Array = [DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_OFFLINE,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_NOTREADY,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_READY,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_INBATTLE,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_AFK];
        
       

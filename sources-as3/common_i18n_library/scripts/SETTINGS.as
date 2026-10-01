@@ -535,6 +535,10 @@ package
       
       public static const SOUNDS_MASTERVOLUMETOGGLE_DESCRIPTION:String = "#settings:sounds/masterVolumeToggle/description";
       
+      public static const SOUNDS_SYSTEMMIXERVOLUMEDISABLEDLINK:String = "#settings:sounds/systemMixerVolumeDisabledLink";
+      
+      public static const SOUNDS_SYSTEMMIXERVOLUMEDISABLEDLINK_DESCRIPTION:String = "#settings:sounds/systemMixerVolumeDisabledLink/description";
+      
       public static const SOUNDS_BULBVOICES:String = "#settings:sounds/bulbVoices";
       
       public static const SOUNDS_BULBVOICES_DESCRIPTION:String = "#settings:sounds/bulbVoices/description";

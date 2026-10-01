@@ -205,6 +205,8 @@ package net.wg.gui.lobby.settings
          addEventListener(SettingViewEvent.ON_GAMMA_SETTING_OPEN,this.onOnGammaSettingOpenHandler);
          addEventListener(SettingViewEvent.ON_COLOR_SETTING_OPEN,this.onOnColorSettingOpenHandler);
          addEventListener(SettingViewEvent.ON_RESET_BATTLE_CONTEXT_HINTS,this.onBattleContextHintResetHandler);
+         addEventListener(SettingViewEvent.ON_SOUND_SYSTEM_OFF_LINK_CLICKED,this.onSoundSystemOffLinkClickedHandler);
+         addEventListener(SettingViewEvent.GET_SYSTEM_OFF_STATUS,this.onGetSystemOffStatusHandler);
          updateStage(App.appWidth,App.appHeight);
          window.addEventListener(WindowEvent.SCALE_Y_CHANGED,this.onWindowScaleYChangedHandler);
       }
@@ -276,6 +278,8 @@ package net.wg.gui.lobby.settings
          removeEventListener(SettingViewEvent.ON_GAMMA_SETTING_OPEN,this.onOnGammaSettingOpenHandler);
          removeEventListener(SettingViewEvent.ON_COLOR_SETTING_OPEN,this.onOnColorSettingOpenHandler);
          removeEventListener(SettingViewEvent.ON_RESET_BATTLE_CONTEXT_HINTS,this.onBattleContextHintResetHandler);
+         removeEventListener(SettingViewEvent.ON_SOUND_SYSTEM_OFF_LINK_CLICKED,this.onSoundSystemOffLinkClickedHandler);
+         removeEventListener(SettingViewEvent.GET_SYSTEM_OFF_STATUS,this.onGetSystemOffStatusHandler);
          this._settingsConfigHelper.changesData.clear();
          this._settingsConfigHelper = null;
          this._invalidTabs = App.utils.data.cleanupDynamicObject(this._invalidTabs);
@@ -1473,6 +1477,22 @@ package net.wg.gui.lobby.settings
       private function onBattleContextHintResetHandler(param1:SettingViewEvent) : void
       {
          showWarningDialogS(SETTINGS_DIALOGS.RESET_BATTLE_CONTEXT_HINTS_NOTIFICATION,null,false);
+      }
+      
+      private function onSoundSystemOffLinkClickedHandler(param1:SettingViewEvent) : void
+      {
+         showSystemMixerVolumeDisabledPageS();
+      }
+      
+      private function onGetSystemOffStatusHandler(param1:SettingViewEvent) : void
+      {
+         var _loc3_:Boolean = false;
+         var _loc2_:SoundSettings = this.getSoundSettings();
+         if(_loc2_)
+         {
+            _loc3_ = isSystemMixerVolumeDisabledS();
+            _loc2_.setSystemMixerVolumeDisabled(_loc3_);
+         }
       }
    }
 }

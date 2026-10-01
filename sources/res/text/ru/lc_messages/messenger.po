@@ -3608,6 +3608,15 @@ msgstr "Игровой сервер будет отключён %(date)s."
 msgid "serviceChannelMessages/serverRebootCancelled"
 msgstr "Отключение игрового сервера, запланированное %(date)s, отменено."
 
+msgid "serviceChannelMessages/sessionProgressRewardsComplete/body"
+msgstr ""
+"Вы получили все награды.\n"
+"\n"
+"Полученные награды:"
+
+msgid "serviceChannelMessages/sessionProgressRewardsComplete/header"
+msgstr "Поздравляем!"
+
 msgid "serviceChannelMessages/specialReward/intelligenceBlueprints"
 msgstr "Универсальный фрагмент (x%(fragmentsCount)s)"
 
@@ -3834,6 +3843,17 @@ msgstr "Продано:"
 
 msgid "serviceChannelMessages/sysMsg/titles/upgrade"
 msgstr "Наладка оборудования"
+
+msgid "serviceChannelMessages/systemMixerVolumeDisabledSysMessage/body"
+msgstr ""
+"Слишком низкая громкость игры. Нажмите на кнопку, чтобы посмотреть "
+"инструкцию и проверить настройки микшера."
+
+msgid "serviceChannelMessages/systemMixerVolumeDisabledSysMessage/button"
+msgstr "Перейти"
+
+msgid "serviceChannelMessages/systemMixerVolumeDisabledSysMessage/header"
+msgstr "Внимание!"
 
 msgid "serviceChannelMessages/tankPremiumReceivedAsGift"
 msgstr "От администрации получен Танковый премиум аккаунт на %(days)d д."
