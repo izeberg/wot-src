@@ -491,22 +491,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.components.crosshairPanel.components.overheatBar.OverheatMarkersDrawer;
    import net.wg.gui.components.crosshairPanel.components.speedometer.Speedometer;
    import net.wg.gui.components.crosshairPanel.components.speedometer.SpeedometerWarningAnim;
-   import net.wg.gui.components.crosshairPanel.components.wt.BarrierHint;
-   import net.wg.gui.components.crosshairPanel.components.wt.IncreaseDamage;
-   import net.wg.gui.components.crosshairPanel.components.wt.PlasmaExtraDamage;
-   import net.wg.gui.components.crosshairPanel.components.wt.PlasmaIndicator;
-   import net.wg.gui.components.crosshairPanel.components.wt.ReloadBoost;
-   import net.wg.gui.components.crosshairPanel.components.wt.ReloadBoostChargeBar;
-   import net.wg.gui.components.crosshairPanel.components.wt.components.IncreaseDamageIndicator;
-   import net.wg.gui.components.crosshairPanel.components.wt.components.IncreaseDamageProgress;
-   import net.wg.gui.components.crosshairPanel.components.wt.components.PlasmaExtraDamageBraces;
-   import net.wg.gui.components.crosshairPanel.components.wt.events.IncreaseDamageEvent;
    import net.wg.gui.components.crosshairPanel.constants.CrosshairConsts;
-   import net.wg.gui.components.crosshairPanel.constants.WT_CROSSHAIR_CHILDREN_NAMES;
-   import net.wg.gui.components.crosshairPanel.constants.WT_CROSSHAIR_LINKAGES;
-   import net.wg.gui.components.crosshairPanel.wt.WTCrosshairArcade;
-   import net.wg.gui.components.crosshairPanel.wt.WTCrosshairBase;
-   import net.wg.gui.components.crosshairPanel.wt.WTCrosshairPanelContainer;
    import net.wg.gui.components.damageIndicator.AnimationContainer;
    import net.wg.gui.components.damageIndicator.DamageIndicator;
    import net.wg.gui.components.damageIndicator.DamageIndicatorExtendedSetting;
@@ -664,6 +649,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.components.tooltips.VO.ToolTipStatusColorsVO;
    import net.wg.gui.components.tooltips.VO.UnitCommandVO;
    import net.wg.gui.components.tooltips.helpers.Utils;
+   import net.wg.gui.components.tooltips.inblocks.AdvancedShuffleTooltip;
    import net.wg.gui.components.tooltips.inblocks.TooltipInBlocks;
    import net.wg.gui.components.tooltips.inblocks.TooltipInBlocksUtils;
    import net.wg.gui.components.tooltips.inblocks.blocks.AbstractTextParameterBlock;
@@ -720,6 +706,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.dialogs.SimpleDialog;
    import net.wg.gui.eventcomponents.NumberProgress;
    import net.wg.gui.events.AccordionRendererEvent;
+   import net.wg.gui.events.AnimationEvent;
    import net.wg.gui.events.EquipmentEvent;
    import net.wg.gui.events.FiltersEvent;
    import net.wg.gui.events.ListEventEx;
@@ -796,7 +783,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.settings.SoundSettingsBase;
    import net.wg.gui.lobby.settings.SoundSpecialForm;
    import net.wg.gui.lobby.settings.SoundVivoxForm;
-   import net.wg.gui.lobby.settings.components.EventSettingLabel;
    import net.wg.gui.lobby.settings.components.KeyInput;
    import net.wg.gui.lobby.settings.components.KeysItemRenderer;
    import net.wg.gui.lobby.settings.components.KeysScrollingList;
@@ -1920,43 +1906,13 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_SPEEDOMETER_SPEEDOMETERWARNINGANIM:Class = SpeedometerWarningAnim;
       
-      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_WT_BARRIERHINT:Class = BarrierHint;
-      
-      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_WT_INCREASEDAMAGE:Class = IncreaseDamage;
-      
-      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_WT_PLASMAEXTRADAMAGE:Class = PlasmaExtraDamage;
-      
-      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_WT_PLASMAINDICATOR:Class = PlasmaIndicator;
-      
-      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_WT_RELOADBOOST:Class = ReloadBoost;
-      
-      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_WT_RELOADBOOSTCHARGEBAR:Class = ReloadBoostChargeBar;
-      
-      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_WT_COMPONENTS_INCREASEDAMAGEINDICATOR:Class = IncreaseDamageIndicator;
-      
-      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_WT_COMPONENTS_INCREASEDAMAGEPROGRESS:Class = IncreaseDamageProgress;
-      
-      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_WT_COMPONENTS_PLASMAEXTRADAMAGEBRACES:Class = PlasmaExtraDamageBraces;
-      
-      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_WT_EVENTS_INCREASEDAMAGEEVENT:Class = IncreaseDamageEvent;
-      
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_CONSTANTS_CROSSHAIRCONSTS:Class = CrosshairConsts;
-      
-      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_CONSTANTS_WT_CROSSHAIR_CHILDREN_NAMES:Class = WT_CROSSHAIR_CHILDREN_NAMES;
-      
-      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_CONSTANTS_WT_CROSSHAIR_LINKAGES:Class = WT_CROSSHAIR_LINKAGES;
       
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_VO_CROSSHAIRSETTINGSVO:Class = CrosshairSettingsVO;
       
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_VO_GUNMARKERINDICATORVO:Class = GunMarkerIndicatorVO;
       
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_VO_SHOTFLYTIMEVO:Class = ShotFlyTimeVO;
-      
-      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_WT_WTCROSSHAIRARCADE:Class = WTCrosshairArcade;
-      
-      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_WT_WTCROSSHAIRBASE:Class = WTCrosshairBase;
-      
-      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_WT_WTCROSSHAIRPANELCONTAINER:Class = WTCrosshairPanelContainer;
       
       public static const NET_WG_GUI_COMPONENTS_DAMAGEINDICATOR_ANIMATIONCONTAINER:Class = AnimationContainer;
       
@@ -2260,6 +2216,8 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_COMPONENTS_TOOLTIPS_HELPERS_UTILS:Class = Utils;
       
+      public static const NET_WG_GUI_COMPONENTS_TOOLTIPS_INBLOCKS_ADVANCEDSHUFFLETOOLTIP:Class = AdvancedShuffleTooltip;
+      
       public static const NET_WG_GUI_COMPONENTS_TOOLTIPS_INBLOCKS_TOOLTIPINBLOCKS:Class = TooltipInBlocks;
       
       public static const NET_WG_GUI_COMPONENTS_TOOLTIPS_INBLOCKS_TOOLTIPINBLOCKSUTILS:Class = TooltipInBlocksUtils;
@@ -2383,6 +2341,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_EVENTCOMPONENTS_NUMBERPROGRESS:Class = NumberProgress;
       
       public static const NET_WG_GUI_EVENTS_ACCORDIONRENDEREREVENT:Class = AccordionRendererEvent;
+      
+      public static const NET_WG_GUI_EVENTS_ANIMATIONEVENT:Class = AnimationEvent;
       
       public static const NET_WG_GUI_EVENTS_EQUIPMENTEVENT:Class = EquipmentEvent;
       
@@ -2535,8 +2495,6 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_SETTINGS_SOUNDSPECIALFORM:Class = SoundSpecialForm;
       
       public static const NET_WG_GUI_LOBBY_SETTINGS_SOUNDVIVOXFORM:Class = SoundVivoxForm;
-      
-      public static const NET_WG_GUI_LOBBY_SETTINGS_COMPONENTS_EVENTSETTINGLABEL:Class = EventSettingLabel;
       
       public static const NET_WG_GUI_LOBBY_SETTINGS_COMPONENTS_KEYINPUT:Class = KeyInput;
       

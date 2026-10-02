@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s0Shape.vertices</vertices>
+			<primitive>s0Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/glow.fx</fx>
+					<materialKind>112</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/hd_env_EVT_P26_0001_Teleport/normal/hd_env_EVT_P26_0001_Teleport_AM.dds</Texture>
+					</property>
+					<property>
+						selfIllumination
+						<Float>35.200001</Float>
+					</property>
+				</material>
+				<groupOrigin>0.000000 0.104766 0.000000</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-7.575743 -0.612810 -7.575743</min>
+		<max>7.575743 0.634966 7.336384</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>10608</geometrySize>
+	<minUVDensity>0.040546</minUVDensity>
+</root>

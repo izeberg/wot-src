@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/american/A184_HTPC/_skins/A184_HTPC_3Dst_01/normal/lod4/Hull</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<nodefullVisual>vehicles/american/A184_HTPC/_skins/A184_HTPC_3Dst_01/normal/lod3/Hull</nodefullVisual>
+	<visibilityBox>
+		<min>-1.719329 -0.503997 -3.965055</min>
+		<max>1.717987 0.581472 3.899499</max>
+	</visibilityBox>
+</root>

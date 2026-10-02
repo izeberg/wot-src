@@ -2,14 +2,8 @@
 <root>
 	<materialNames/>
 	<visibilityBox>
-		<min>
-			-0.191307 -0.116841 -0.0891843
-			<!--BW_String-->
-		</min>
-		<max>
-			0.319328 0.264468 5.24703
-			<!--BW_String-->
-		</max>
+		<min>-0.191307 -0.116841 -0.089184</min>
+		<max>0.319328 0.264468 5.247030</max>
 	</visibilityBox>
 	<tank>true</tank>
 	<nodefullVisual>vehicles/british/GB88_T95_Chieftain_turret/normal/lod4/Gun_01</nodefullVisual>

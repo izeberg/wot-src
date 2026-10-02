@@ -52,10 +52,26 @@
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
+	<renderSet>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s_ramp_0.vertices</vertices>
+			<primitive>s_ramp_0.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_ramp_0</identifier>
+					<collisionFlags>131</collisionFlags>
+					<materialKind>0</materialKind>
+				</material>
+				<groupOrigin>24.171066 -0.218240 -0.000000</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
 	<boundingBox>
 		<min>12.522160 -1.000089 -36.919724</min>
 		<max>35.844540 18.965790 36.919765</max>
 	</boundingBox>
-	<geometrySize>15828</geometrySize>
-	<minUVDensity>0.000168</minUVDensity>
+	<geometrySize>17234</geometrySize>
+	<minUVDensity>0.000081</minUVDensity>
 </root>

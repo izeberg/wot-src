@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<Properties>
+		<bossVehicleID>
+			<Type>INT32</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<Default>-1</Default>
+		</bossVehicleID>
+	</Properties>
+	<CellMethods/>
+	<DefaultKeyName>portalAuraComponent</DefaultKeyName>
+</root>

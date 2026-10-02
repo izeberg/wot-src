@@ -1,0 +1,99 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "ammunitionPanel/updateButton"
+msgstr "УСИЛИТЬ"
+
+msgid "banner/countdown/end"
+msgstr "Закроется: %(day)s %(month)s"
+
+msgid "carousel/hasUpdate"
+msgstr "Новый уровень"
+
+msgid "carousel/inBattle"
+msgstr "В бою"
+
+msgid "carousel/inPlatoon"
+msgstr "В отряде"
+
+msgid "closeButton/default"
+msgstr "ВЕРНУТЬСЯ В РЕАЛЬНОСТЬ"
+
+msgid "closeButton/hovered/text0"
+msgstr "ОСТАНЬСЯ ЗДЕСЬ"
+
+msgid "closeButton/hovered/text1"
+msgstr "Я ТЕБЯ ВИЖУ"
+
+msgid "closeButton/hovered/text2"
+msgstr "ОСТАНОВИ ЕГО"
+
+msgid "closeButton/hovered/text3"
+msgstr "ПОПАЛСЯ"
+
+msgid "closeButton/hovered/text4"
+msgstr "Я РЯДОМ"
+
+msgid "complexity/level/1"
+msgstr "Просто"
+
+msgid "complexity/level/2"
+msgstr "Опасно"
+
+msgid "complexity/level/3"
+msgstr "Аномально"
+
+msgid "infoButton/default"
+msgstr "БОЛЬШЕ О РАЗЛОМЕ"
+
+msgid "infoButton/hovered/text0"
+msgstr "ЭТО НЕ ПОМОЖЕТ"
+
+msgid "infoButton/hovered/text1"
+msgstr "УЖЕ ПОЗДНО"
+
+msgid "infoButton/hovered/text2"
+msgstr "БЕСПОЛЕЗНО"
+
+msgid "infoButton/hovered/text3"
+msgstr "СМИРИСЬ"
+
+msgid "infoButton/hovered/text4"
+msgstr "ВСЁ НАПРАСНО"
+
+msgid "infoButton/tooltip"
+msgstr "Всё, что удалось узнать о Разломе."
+
+msgid "questsWidget/complete"
+msgstr "Вы собрали все награды"
+
+msgid "questsWidget/progress"
+msgstr "%(current)s / %(goal)s"
+
+msgid "questsWidget/text"
+msgstr "ПРОГРЕССИЯ СОБЫТИЯ"
+
+msgid "questsWidget/tooltip/body"
+msgstr "Нажмите, чтобы перейти в прогрессию события."
+
+msgid "questsWidget/tooltip/header"
+msgstr "Прогрессия события"
+
+msgid "shopWidget/text"
+msgstr "ПУНКТ СНАБЖЕНИЯ"
+
+msgid "shopWidget/tooltip/body"
+msgstr "Нажмите, чтобы перейти в магазин события."
+
+msgid "shopWidget/tooltip/header"
+msgstr "Пункт снабжения"
+
+msgid "startButton/tooltip/queueNotReady"
+msgstr "Вам придётся дождаться своей очереди."

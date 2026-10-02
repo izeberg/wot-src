@@ -889,6 +889,7 @@ class Configs(enum.Enum):
     STALL_CONFIG = 'stall_config'
     CONTROL_POINT_OVERRIDE_CONFIG = 'control_point_override_config'
     NEWBIE_CHAT_LOCK_CONFIG = 'newbie_chat_lock_config'
+    SESSION_PROGRESS_REWARDS_CONFIG = 'session_progress_rewards_config'
 
 
 INBATTLE_CONFIGS = [
@@ -1184,12 +1185,10 @@ class ATTACK_REASON(object):
     STATIC_DEATH_ZONE = 'static_deathzone'
     CGF_WORLD = 'cgf_world'
     AUTOSHOOT = 'autoshoot'
-    CIRCUIT_OVERLOAD = 'circuitOverload'
-    MISSILE = 'missile'
-    ABILITY_SHELL = 'ability_shell'
-    DAMAGE_SHIELD_EXPLOSION = 'damage_shield_explosion'
-    DAMAGE_STUN_AREA_MOD_A = 'stun_area_mod_a'
-    ANOMALY = 'anomaly'
+    GUIDED_MISSILE = 'guided_missile'
+    SUPER_BOSS_AURA = 'super_boss_aura'
+    SENTINEL_ATTACK = 'sentinel_attack'
+    PERIODIC = 'periodic'
     NONE = 'none'
 
     @classmethod
@@ -1209,9 +1208,8 @@ ATTACK_REASONS = (
  ATTACK_REASON.THUNDER_STRIKE, ATTACK_REASON.FIRE_CIRCLE, ATTACK_REASON.CLING_BRANDER,
  ATTACK_REASON.CLING_BRANDER_RAM, ATTACK_REASON.BRANDER_RAM,
  ATTACK_REASON.FORT_ARTILLERY_EQ, ATTACK_REASON.STATIC_DEATH_ZONE, ATTACK_REASON.AUTOSHOOT,
- ATTACK_REASON.CIRCUIT_OVERLOAD, ATTACK_REASON.CGF_WORLD, ATTACK_REASON.ABILITY_SHELL,
- ATTACK_REASON.MISSILE, ATTACK_REASON.DAMAGE_SHIELD_EXPLOSION, ATTACK_REASON.DAMAGE_STUN_AREA_MOD_A,
- ATTACK_REASON.ANOMALY)
+ ATTACK_REASON.CGF_WORLD, ATTACK_REASON.GUIDED_MISSILE, ATTACK_REASON.SUPER_BOSS_AURA,
+ ATTACK_REASON.SENTINEL_ATTACK, ATTACK_REASON.PERIODIC)
 ATTACK_REASON_INDICES = dict((value, index) for index, value in enumerate(ATTACK_REASONS))
 BOT_RAM_REASONS = (
  ATTACK_REASON.BRANDER_RAM, ATTACK_REASON.CLING_BRANDER_RAM)
@@ -1289,10 +1287,8 @@ DAMAGE_INFO_CODES = ('DEVICE_CRITICAL', 'DEVICE_DESTROYED', 'TANKMAN_HIT', 'DEVI
                      'DEATH_FROM_ARTILLERY_PROTECTION', 'DEATH_FROM_ARTILLERY_SECTOR',
                      'DEATH_FROM_BOMBER', 'DEATH_FROM_RECOVERY', 'DEATH_FROM_KAMIKAZE',
                      'DEATH_FROM_FIRE_CIRCLE', 'DEATH_FROM_THUNDER_STRIKE', 'DEATH_FROM_CORRODING_SHOT',
-                     'DEATH_FROM_CLING_BRANDER', 'INCREASE_PLASMA_COUNT', 'DECREASE_PLASMA_COUNT',
-                     'STUN_AREA_APPLIED', 'STUN_AREA_STOPPED', 'PASSIVE_HEAL_ACTIVATE',
-                     'DEATH_FROM_DAMAGE_SHIELD_EXPLOSION', 'DEATH_FROM_DAMAGE_STUN_AREA_MOD_A',
-                     'STUN_AREA_MOD_A_APPLIED', 'STUN_AREA_MOD_A_STOPPED')
+                     'DEATH_FROM_SENTINEL_ATTACK', 'DEATH_FROM_SUPER_BOSS_AURA',
+                     'DEATH_FROM_CLING_BRANDER', 'DEATH_FROM_PERIODIC')
 
 class IGR_TYPE:
     NONE = 0
@@ -1682,8 +1678,6 @@ class REQUEST_COOLDOWN:
     RUN_QUEST = 1.0
     PAWN_FREE_AWARD_LIST = 1.0
     LOOTBOX = 1.0
-    LOOTBOX_REROLL = 1.0
-    LOOTBOX_RECORDS = 1.0
     BADGES = 2.0
     CREW_SKINS = 0.3
     BPF_COMMAND = 1.0
@@ -1825,7 +1819,7 @@ class OVERTURN_CONDITION:
     WARNING_COSINE = cos(radians(70))
     ONBOARD_COSINE = cos(radians(80))
     OVERTURN_COSINE = cos(radians(120))
-    HULL_PRESSURE = 0.2
+    HULL_PRESSURE = 0.15
 
 
 class ARTILLERY_STRIKE_ZONE_STATUS:
@@ -1973,9 +1967,10 @@ class USER_SERVER_SETTINGS:
     NEW_YEAR = 105
     CONTOUR = 106
     UI_STORAGE_2 = 109
+    UI_STORAGE_3 = 116
     _ALL = (
      HIDE_MARKS_ON_GUN, EULA_VERSION, GAME_EXTENDED, BATTLE_MATTERS_QUESTS, SESSION_STATS, DOG_TAGS,
-     GAME_EXTENDED_2, BATTLE_HUD, CONTOUR, UI_STORAGE_2, BATTLE_EVENTS)
+     GAME_EXTENDED_2, BATTLE_HUD, CONTOUR, UI_STORAGE_2, BATTLE_EVENTS, UI_STORAGE_3)
 
     @classmethod
     def isBattleInvitesForbidden(cls, settings):
@@ -2102,6 +2097,7 @@ INT_USER_SETTINGS_KEYS = {USER_SERVER_SETTINGS.VERSION: 'Settings version',
    113: 'Dead marker setting', 
    114: 'Ally marker setting', 
    115: 'Once only hints', 
+   USER_SERVER_SETTINGS.UI_STORAGE_3: 'ui storage 3, used for preserving first entry flags etc', 
    31001: 'Armory Yard progression', 
    31002: 'Versus AI carousel filter 1', 
    31003: 'Versus AI carousel filter 2', 
@@ -2186,16 +2182,13 @@ class FAIRPLAY_VIOLATIONS:
     COMP7_DESERTER = 'comp7_deserter'
     BATTLEROYALE_DESERTER = 'battleroyale_deserter'
     BATTLEROYALE_AFK = 'battleroyale_afk'
-    WT_DESERTER = 'wt_deserter'
-    WT_AFK = 'wt_afk'
 
 
 FAIRPLAY_VIOLATIONS_NAMES = (
  FAIRPLAY_VIOLATIONS.DESERTER, FAIRPLAY_VIOLATIONS.SUICIDE, FAIRPLAY_VIOLATIONS.AFK,
  FAIRPLAY_VIOLATIONS.EVENT_DESERTER, FAIRPLAY_VIOLATIONS.EVENT_AFK,
  FAIRPLAY_VIOLATIONS.EPIC_DESERTER, FAIRPLAY_VIOLATIONS.COMP7_DESERTER,
- FAIRPLAY_VIOLATIONS.BATTLEROYALE_DESERTER, FAIRPLAY_VIOLATIONS.BATTLEROYALE_AFK,
- FAIRPLAY_VIOLATIONS.WT_AFK, FAIRPLAY_VIOLATIONS.WT_DESERTER)
+ FAIRPLAY_VIOLATIONS.BATTLEROYALE_DESERTER, FAIRPLAY_VIOLATIONS.BATTLEROYALE_AFK)
 FAIRPLAY_VIOLATIONS_MASKS = {name:1 << index for index, name in enumerate(FAIRPLAY_VIOLATIONS_NAMES)}
 
 class INVALID_CLIENT_STATS:
@@ -2508,8 +2501,8 @@ class VISIBILITY:
     MIN_RADIUS = 50.0
 
 
-VEHICLE_ATTRS_TO_SYNC = frozenset(['circularVisionRadius', 'gun/piercing', 'gun/canShoot'])
-VEHICLE_ATTRS_TO_SYNC_ALIASES = {'gun/piercing': 'gunPiercing', 'gun/canShoot': 'gunCanShoot'}
+VEHICLE_ATTRS_TO_SYNC = frozenset(['circularVisionRadius', 'gun/piercing'])
+VEHICLE_ATTRS_TO_SYNC_ALIASES = {'gun/piercing': 'gunPiercing'}
 
 class OBSTACLE_KIND:
     CHUNK_DESTRUCTIBLE = 1
@@ -2794,12 +2787,10 @@ class BotNamingType(object):
     CREW_MEMBER = 1
     VEHICLE_MODEL = 2
     CUSTOM = 3
-    LABEL = 4
     DEFAULT = CREW_MEMBER
     _parseDict = {'crew': CREW_MEMBER, 
        'vehicle': VEHICLE_MODEL, 
        'custom': CUSTOM, 
-       'label': LABEL, 
        'default': DEFAULT}
 
     @classmethod
@@ -3214,13 +3205,11 @@ class DamageAbsorptionTypes(object):
     FRAGMENTS = 0
     BLAST = 1
     SPALLS = 2
-    NONE = 3
 
 
 DamageAbsorptionLabelToType = {'FRAGMENTS': DamageAbsorptionTypes.FRAGMENTS, 
    'BLAST': DamageAbsorptionTypes.BLAST, 
-   'SPALLS': DamageAbsorptionTypes.SPALLS, 
-   'NONE': DamageAbsorptionTypes.NONE}
+   'SPALLS': DamageAbsorptionTypes.SPALLS}
 DamageAbsorptionTypeToLabel = dict((type, label) for label, type in DamageAbsorptionLabelToType.items())
 EQUIPMENT_COOLDOWN_MOD_SUFFIX = 'CooldownMod'
 CHANCE_TO_HIT_SUFFIX_FACTOR = 'ChanceToHitDeviceMod'
@@ -3446,7 +3435,6 @@ class BuffDisplayedState(enum.IntEnum):
 
 class EntityCaptured(object):
     POI_CAPTURABLE = 'poiCapturable'
-    WT_GENERATOR = 'captureGenerator'
 
 
 class VehicleSelectionPlayerStatus(object):
@@ -3512,10 +3500,6 @@ class MarkerItem(object):
     POLYGONAL_ZONE = 2
     STATIC_DEATH_ZONE = 3
     STATIC_DEATH_ZONE_PROXIMITY = 4
-    GEN_ON = 5
-    GEN_OFF = 6
-    DOME = 7
-    ANOMALY = 8
 
 
 class DROP_SKILL_OPTIONS(object):

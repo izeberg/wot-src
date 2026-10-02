@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<params>
+		<param>
+			<name>onShoot</name>
+			<type>trigger</type>
+		</param>
+	</params>
+	<node>
+		<name>Sleep Node</name>
+		<type>sleep</type>
+		<time>1.000000 1.000000</time>
+		<transition>
+			<to>steam</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>trigger</type>
+					<name>onShoot</name>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>-100.000000 -92.000000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>steam</name>
+		<type>sequence</type>
+		<resource>particles/Tank/abilities/J52_SYA1/J52_steam.seq</resource>
+		<isLoop>false</isLoop>
+		<loop>1</loop>
+		<transition>
+			<to>Sleep Node</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>-99.000000 8.500000 0.000000</uiPosition>
+	</node>
+</root>

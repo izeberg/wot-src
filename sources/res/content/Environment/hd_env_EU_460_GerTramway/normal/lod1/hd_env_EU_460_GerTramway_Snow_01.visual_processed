@@ -25,16 +25,70 @@
 					<row3>0.000000 0.596615 0.000000</row3>
 				</transform>
 			</node>
+			<node>
+				<identifier>lod0</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>n1</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>s_ramp0</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>s_wall0</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+			</node>
 		</node>
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>d0Shape.vertices</vertices>
-			<primitive>d0Shape.indices</primitive>
+			<vertices>s_wallShape0.vertices</vertices>
+			<primitive>s_wallShape0.indices</primitive>
 			<primitiveGroup>
 				0
+				<material>
+					<identifier>s_wall_0</identifier>
+					<collisionFlags>144</collisionFlags>
+					<materialKind>73</materialKind>
+				</material>
+				<groupOrigin>0.000000 2.692032 0.000000</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>s_ramp_0</identifier>
+					<collisionFlags>131</collisionFlags>
+					<materialKind>0</materialKind>
+				</material>
+				<groupOrigin>0.041314 0.277771 -0.049613</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				2
 				<material>
 					<identifier>d_metal0</identifier>
 					<collisionFlags>255</collisionFlags>
@@ -57,10 +111,10 @@
 						<Bool>true</Bool>
 					</property>
 				</material>
-				<groupOrigin>-0.051974 0.331904 -0.096701</groupOrigin>
+				<groupOrigin>-0.031231 0.331904 -0.008626</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				1
+				3
 				<material>
 					<identifier>n_glass1</identifier>
 					<fx>shaders/std_effects/PBS_glass.fx</fx>
@@ -82,7 +136,7 @@
 				<groupOrigin>0.003642 2.400914 0.001178</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				2
+				4
 				<material>
 					<identifier>n_metal0</identifier>
 					<collisionFlags>0</collisionFlags>
@@ -107,31 +161,13 @@
 				</material>
 				<groupOrigin>0.000000 2.910995 0.000000</groupOrigin>
 			</primitiveGroup>
-			<primitiveGroup>
-				3
-				<material>
-					<identifier>s_wall_0</identifier>
-					<collisionFlags>144</collisionFlags>
-					<materialKind>73</materialKind>
-				</material>
-				<groupOrigin>0.000000 2.692032 0.000000</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
-				4
-				<material>
-					<identifier>s_ramp_0</identifier>
-					<collisionFlags>131</collisionFlags>
-					<materialKind>0</materialKind>
-				</material>
-				<groupOrigin>0.041314 0.277771 -0.049613</groupOrigin>
-			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-2.036926 -0.416914 -5.103627</min>
-		<max>1.932979 5.825879 4.943951</max>
+		<min>-1.549662 -0.416914 -4.997197</min>
+		<max>1.632291 5.825879 4.943951</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>270098</geometrySize>
+	<geometrySize>261314</geometrySize>
 	<minUVDensity>0.000275</minUVDensity>
 </root>

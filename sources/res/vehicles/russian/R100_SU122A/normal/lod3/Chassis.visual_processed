@@ -962,14 +962,6 @@
 						colorIdMap
 						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
-					</property>
 				</material>
 				<groupOrigin>1.183362 0.495311 -0.040801</groupOrigin>
 			</primitiveGroup>
@@ -1018,14 +1010,6 @@
 					<property>
 						colorIdMap
 						<Texture>vehicles/russian/common/common_ID.dds</Texture>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
 					</property>
 				</material>
 				<groupOrigin>-1.183362 0.495311 -0.040801</groupOrigin>
@@ -1082,10 +1066,6 @@
 						doubleSided
 						<Bool>true</Bool>
 					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
-					</property>
 				</material>
 				<groupOrigin>1.207375 0.476919 -0.025792</groupOrigin>
 			</primitiveGroup>
@@ -1140,10 +1120,6 @@
 					<property>
 						doubleSided
 						<Bool>true</Bool>
-					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
 					</property>
 				</material>
 				<groupOrigin>-1.207375 0.476919 -0.025792</groupOrigin>

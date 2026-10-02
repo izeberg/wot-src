@@ -25,6 +25,33 @@
 					<row3>0.000000 0.000000 0.000000</row3>
 				</transform>
 			</node>
+			<node>
+				<identifier>lod0</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>n2</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>n3</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+			</node>
 		</node>
 	</node>
 	<renderSet>
@@ -83,7 +110,7 @@
 						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_Glass_03_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.031870 1.815469 -0.053420</groupOrigin>
+				<groupOrigin>0.031870 1.815469 -0.043196</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				2
@@ -109,7 +136,7 @@
 						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_Kaliningrad_01_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.036499 1.718567 -0.047340</groupOrigin>
+				<groupOrigin>-0.036499 1.718567 -0.051796</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -394,7 +421,7 @@
 						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_GBMT.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.119181 1.700334 -0.000336</groupOrigin>
+				<groupOrigin>0.117432 1.699207 0.002779</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -403,6 +430,6 @@
 		<max>2.624298 3.313368 1.578647</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>69842</geometrySize>
+	<geometrySize>79270</geometrySize>
 	<minUVDensity>0.003412</minUVDensity>
 </root>

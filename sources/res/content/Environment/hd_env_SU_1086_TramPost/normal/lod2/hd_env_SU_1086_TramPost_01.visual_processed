@@ -31,9 +31,9 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<stream>colour</stream>
-			<primitive>indices</primitive>
+			<vertices>n0Shape.vertices</vertices>
+			<stream>n0Shape.colour</stream>
+			<primitive>n0Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -58,7 +58,7 @@
 						<Bool>true</Bool>
 					</property>
 				</material>
-				<groupOrigin>0.000000 3.676077 -0.012622</groupOrigin>
+				<groupOrigin>0.000000 3.574545 -0.014232</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				1
@@ -89,6 +89,6 @@
 		<max>3.694277 7.250967 0.232733</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>72368</geometrySize>
-	<minUVDensity>0.067907</minUVDensity>
+	<geometrySize>51392</geometrySize>
+	<minUVDensity>0.054419</minUVDensity>
 </root>

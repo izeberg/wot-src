@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G00_Mausekonig_V01/crash/lod3/Chassis</nodefullVisual>
+	<parent>vehicles/german/G00_Mausekonig_V01/crash/lod4/Chassis</parent>
+	<tank>true</tank>
+	<extent>
+		192.0
+		<!--BW_String-->
+	</extent>
+	<visibilityBox>
+		<min>-2.180698 -0.000714 -5.270658</min>
+		<max>2.180698 1.003294 5.352242</max>
+	</visibilityBox>
+</root>

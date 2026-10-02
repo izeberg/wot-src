@@ -17,33 +17,6 @@
 				<row3>0.000000 0.000000 0.000000</row3>
 			</transform>
 			<node>
-				<identifier>HP_module0</identifier>
-				<transform>
-					<row0>0.000000 0.000000 0.999989</row0>
-					<row1>0.000000 0.999993 0.000000</row1>
-					<row2>-0.999990 0.000000 0.000000</row2>
-					<row3>4.215020 -0.400000 -0.123862</row3>
-				</transform>
-			</node>
-			<node>
-				<identifier>HP_module1</identifier>
-				<transform>
-					<row0>0.000000 0.000000 1.000000</row0>
-					<row1>0.000000 1.000000 0.000000</row1>
-					<row2>-1.000000 0.000000 0.000000</row2>
-					<row3>-0.356773 -0.400000 -0.120000</row3>
-				</transform>
-			</node>
-			<node>
-				<identifier>HP_module2</identifier>
-				<transform>
-					<row0>0.000000 0.000000 1.000000</row0>
-					<row1>0.000000 1.000000 0.000000</row1>
-					<row2>-1.000000 0.000000 0.000000</row2>
-					<row3>-5.431580 -0.400000 -0.120000</row3>
-				</transform>
-			</node>
-			<node>
 				<identifier>lod0</identifier>
 				<transform>
 					<row0>1.000000 0.000000 0.000000</row0>
@@ -87,15 +60,6 @@
 						<row3>0.000000 0.000000 0.000000</row3>
 					</transform>
 				</node>
-				<node>
-					<identifier>s_ramp0</identifier>
-					<transform>
-						<row0>1.000000 0.000000 0.000000</row0>
-						<row1>0.000000 1.000000 0.000000</row1>
-						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>0.000000 0.000000 0.000000</row3>
-					</transform>
-				</node>
 			</node>
 		</node>
 	</node>
@@ -103,34 +67,19 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<stream>uv2</stream>
-			<primitive>indices</primitive>
+			<vertices>d0_1Shape.vertices</vertices>
+			<stream>d0_1Shape.uv2</stream>
+			<primitive>d0_1Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
 					<identifier>d_stone0_1</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>87</materialKind>
 					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
 						g_dirtColor
-						<Vector4>
-							0.47 0.43 0.38 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.470000 0.430000 0.380000 0.000000</Vector4>
 					</property>
 					<property>
 						g_atlasSizes
@@ -196,26 +145,11 @@
 				<material>
 					<identifier>d_stone1_1</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>87</materialKind>
 					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
 						g_dirtColor
-						<Vector4>
-							0.47 0.43 0.38 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.470000 0.430000 0.380000 0.000000</Vector4>
 					</property>
 					<property>
 						g_atlasSizes
@@ -281,26 +215,11 @@
 				<material>
 					<identifier>d_stone1_2</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>88</materialKind>
 					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
 						g_dirtColor
-						<Vector4>
-							0.47 0.43 0.38 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.470000 0.430000 0.380000 0.000000</Vector4>
 					</property>
 					<property>
 						g_atlasSizes
@@ -366,26 +285,11 @@
 				<material>
 					<identifier>d_stone0_2</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>88</materialKind>
 					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
 						g_dirtColor
-						<Vector4>
-							0.47 0.43 0.38 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.470000 0.430000 0.380000 0.000000</Vector4>
 					</property>
 					<property>
 						g_atlasSizes
@@ -451,26 +355,11 @@
 				<material>
 					<identifier>d_stone1_3</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>89</materialKind>
 					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
 						g_dirtColor
-						<Vector4>
-							0.47 0.43 0.38 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.470000 0.430000 0.380000 0.000000</Vector4>
 					</property>
 					<property>
 						g_atlasSizes
@@ -536,26 +425,11 @@
 				<material>
 					<identifier>d_stone0_3</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>89</materialKind>
 					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
 						g_dirtColor
-						<Vector4>
-							0.47 0.43 0.38 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.470000 0.430000 0.380000 0.000000</Vector4>
 					</property>
 					<property>
 						g_atlasSizes
@@ -624,23 +498,8 @@
 					<collisionFlags>0</collisionFlags>
 					<materialKind>73</materialKind>
 					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
 						g_dirtColor
-						<Vector4>
-							0.47 0.43 0.38 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.470000 0.430000 0.380000 0.000000</Vector4>
 					</property>
 					<property>
 						g_atlasSizes
@@ -709,23 +568,8 @@
 					<collisionFlags>0</collisionFlags>
 					<materialKind>74</materialKind>
 					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
 						g_dirtColor
-						<Vector4>
-							0.47 0.43 0.38 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.470000 0.430000 0.380000 0.000000</Vector4>
 					</property>
 					<property>
 						g_atlasSizes
@@ -794,23 +638,8 @@
 					<collisionFlags>0</collisionFlags>
 					<materialKind>75</materialKind>
 					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
 						g_dirtColor
-						<Vector4>
-							0.47 0.43 0.38 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.470000 0.430000 0.380000 0.000000</Vector4>
 					</property>
 					<property>
 						g_atlasSizes
@@ -871,22 +700,13 @@
 				</material>
 				<groupOrigin>-5.085757 1.006381 -0.328838</groupOrigin>
 			</primitiveGroup>
-			<primitiveGroup>
-				9
-				<material>
-					<identifier>s_ramp_0</identifier>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>0</materialKind>
-				</material>
-				<groupOrigin>-0.527134 0.224711 0.081651</groupOrigin>
-			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-8.951509 -0.707427 -4.211308</min>
-		<max>7.897241 2.730185 4.374609</max>
+		<min>-8.773453 -0.707427 -4.114586</min>
+		<max>7.547575 2.730185 3.527645</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>68322</geometrySize>
-	<minUVDensity>0.002966</minUVDensity>
+	<geometrySize>67942</geometrySize>
+	<minUVDensity>0.035986</minUVDensity>
 </root>

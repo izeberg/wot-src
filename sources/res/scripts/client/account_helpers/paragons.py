@@ -48,6 +48,10 @@ class Paragons(BaseParagons):
     def isVehicleWasReset(self, compDescr):
         return any(self.storage.isBranchStateExists(branchID) for branchID in vehicles.g_cache.paragonsBranchesToReset.getResetBranchIdsByVehicleCd(compDescr))
 
+    def isVehicleNowInResetBranch(self, compDescr):
+        resetBranchIds = vehicles.g_cache.paragonsBranchesToReset.getResetBranchIdsByVehicleCd(compDescr)
+        return any(self.storage.getBranchStateById(resetBranchId).isReset for resetBranchId in resetBranchIds)
+
     def getBranchStateById(self, branchID):
         resetBranch = vehicles.g_cache.paragonsBranchesToReset.getResetBranchById(branchID)
         if not resetBranch:

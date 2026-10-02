@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/intunion/Un20_M_767_Vepar/normal/lod2/Chassis</nodefullVisual>
+	<parent>vehicles/intunion/Un20_M_767_Vepar/normal/lod3/Chassis</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.771926 -0.000000 -4.084942</min>
+		<max>1.771929 1.249415 3.729887</max>
+	</visibilityBox>
+</root>

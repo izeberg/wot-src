@@ -8,42 +8,7 @@
 			<row2>0.000000 0.000000 1.000000</row2>
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
-		<node>
-			<identifier>hd_env_UNI_0050_Stage_Snow</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-			<node>
-				<identifier>HP_module0</identifier>
-				<transform>
-					<row0>1.000000 0.000000 0.000000</row0>
-					<row1>0.000000 1.000000 0.000000</row1>
-					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 0.043301 0.000000</row3>
-				</transform>
-			</node>
-		</node>
 	</node>
-	<renderSet>
-		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
-		<node>Scene Root</node>
-		<geometry>
-			<vertices>s_wall0_Shape.vertices</vertices>
-			<primitive>s_wall0_Shape.indices</primitive>
-			<primitiveGroup>
-				0
-				<material>
-					<identifier>s_wall_0</identifier>
-					<collisionFlags>131</collisionFlags>
-					<materialKind>73</materialKind>
-				</material>
-				<groupOrigin>-0.039022 0.750000 0.035158</groupOrigin>
-			</primitiveGroup>
-		</geometry>
-	</renderSet>
 	<renderSet>
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
@@ -182,6 +147,23 @@
 					</property>
 				</material>
 				<groupOrigin>-0.031651 0.147445 0.038992</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s_wall0_Shape.vertices</vertices>
+			<primitive>s_wall0_Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_wall_0</identifier>
+					<collisionFlags>131</collisionFlags>
+					<materialKind>73</materialKind>
+				</material>
+				<groupOrigin>-0.039022 0.750000 0.035158</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>

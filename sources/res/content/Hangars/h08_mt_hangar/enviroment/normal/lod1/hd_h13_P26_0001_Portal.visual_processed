@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s1Shape.vertices</vertices>
+			<primitive>s1Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd1</identifier>
+					<fx>shaders/std_effects/glow.fx</fx>
+					<materialKind>108</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						depthAccess
+						<Int>3</Int>
+					</property>
+					<property>
+						destBlend
+						<Int>4</Int>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h08_mt_hangar/enviroment/hd_h13_P26_0001_Portal_alfa1_AM.dds</Texture>
+					</property>
+					<property>
+						selfIllumination
+						<Float>8.700000</Float>
+					</property>
+					<property>
+						selfIlluminationEnvDependent
+						<Float>4.600000</Float>
+					</property>
+					<property>
+						srcBlend
+						<Int>3</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_tintColor
+						<Vector4>0.517647 0.517647 0.517647 1.000000</Vector4>
+					</property>
+					<property>
+						alphaReference
+						<Int>1</Int>
+					</property>
+					<sortOrder>2</sortOrder>
+				</material>
+				<groupOrigin>-0.300580 0.255500 1.777665</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s0Shape.vertices</vertices>
+			<stream>s0Shape.colour</stream>
+			<primitive>s0Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/glow.fx</fx>
+					<materialKind>108</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						depthAccess
+						<Int>3</Int>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h08_mt_hangar/enviroment/hd_h13_P26_0001_Portal_AM.dds</Texture>
+					</property>
+					<property>
+						g_tintColor
+						<Vector4>0.533333 0.694118 0.705882 1.000000</Vector4>
+					</property>
+					<property>
+						selfIllumination
+						<Float>1.000000</Float>
+					</property>
+					<sortOrder>1</sortOrder>
+				</material>
+				<groupOrigin>-0.304094 0.232753 1.906188</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-13.191198 -12.635119 1.409742</min>
+		<max>12.590039 13.146120 1.906190</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>2616</geometrySize>
+	<minUVDensity>0.001493</minUVDensity>
+</root>

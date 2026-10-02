@@ -273,6 +273,10 @@ package
       
       public static const STATTRACKERPANEL_LABEL:String = "#vehicle_preview:statTrackerPanel/label";
       
+      public static const HEADER_BACKBTN_DESCRLABEL_SESSIONPROGRESSREWARDS:String = "#vehicle_preview:header/backBtn/descrLabel/sessionProgressRewards";
+      
+      public static const BUYINGPANEL_UNIQUEVEHICLELABEL_SESSIONPROGRESSREWARDS:String = "#vehicle_preview:buyingPanel/uniqueVehicleLabel/sessionProgressRewards";
+      
       public static const TOOLTIPS_STATTRACK_TITLE:String = "#vehicle_preview:tooltips/statTrack/title";
       
       public static const TOOLTIPS_STATTRACK_DESCRIPTION_FIRSTPART:String = "#vehicle_preview:tooltips/statTrack/description/firstPart";

@@ -25,6 +25,33 @@
 					<row3>0.000000 0.000000 0.000000</row3>
 				</transform>
 			</node>
+			<node>
+				<identifier>lod0</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>n2</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>n3</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+			</node>
 		</node>
 	</node>
 	<renderSet>
@@ -298,7 +325,7 @@
 						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_Glass_03_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.032091 1.816214 -0.053283</groupOrigin>
+				<groupOrigin>0.031870 1.815469 -0.043196</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				1
@@ -324,7 +351,7 @@
 						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_Kaliningrad_01_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.036499 1.718567 -0.051432</groupOrigin>
+				<groupOrigin>-0.036499 1.718567 -0.051796</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -333,6 +360,6 @@
 		<max>2.567851 3.313368 1.509759</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>39604</geometrySize>
+	<geometrySize>50128</geometrySize>
 	<minUVDensity>0.003412</minUVDensity>
 </root>

@@ -39,7 +39,6 @@ from vehicle_systems.model_assembler import collisionIdxToTrackPairIdx
 from vehicle_systems.tankStructure import TankPartNames, TankPartIndexes, TankSoundObjectsIndexes
 from vehicle_systems.appearance_cache import VehicleAppearanceCacheInfo
 from shared_utils.vehicle_utils import createWheelFilters
-from cgf_script.component_meta_class import registerComponent
 import GenericComponents, Projectiles, CGF
 from helpers.styles_perf_toolset import g_stylesOverrider
 if typing.TYPE_CHECKING:
@@ -49,11 +48,6 @@ _logger = logging.getLogger(__name__)
 LOW_ENERGY_COLLISION_D = 0.3
 HIGH_ENERGY_COLLISION_D = 0.6
 _g_respawnQueue = dict()
-
-@registerComponent
-class SpawnComponent(object):
-    pass
-
 
 class _Vector4Provider(object):
     __slots__ = ('_v', )
@@ -315,8 +309,6 @@ class Vehicle(BigWorld.Entity, BWEntitiyComponentTracker, BattleAbilitiesCompone
             _g_respawnQueue.pop(vID, None)
             vehicle.onLeaveWorld()
             vehicle.onEnterWorld()
-            if vehicle.appearance.findComponentByType(SpawnComponent) is None:
-                vehicle.appearance.createComponent(SpawnComponent)
         else:
             _logger.debug('Delayed respawn %d', vID)
             _g_respawnQueue[vID] = [compactDescr, outfitCompactDescr]
@@ -351,9 +343,6 @@ class Vehicle(BigWorld.Entity, BWEntitiyComponentTracker, BattleAbilitiesCompone
         self.onAppearanceReady()
         if hasattr(self, 'rocketAccelerationController'):
             self.rocketAccelerationController.init()
-        for component in self.dynamicComponents.values():
-            if hasattr(component, 'onAppearanceReady'):
-                component.onAppearanceReady()
 
     def __onVehicleInfoAdded(self, vehID):
         if self.id != vehID:
@@ -1306,10 +1295,6 @@ class Vehicle(BigWorld.Entity, BWEntitiyComponentTracker, BattleAbilitiesCompone
     def onDynamicComponentCreated(self, component):
         LOG_DEBUG_DEV('Component created', component)
         super(Vehicle, self).onDynamicComponentCreated(component)
-
-    def onDynamicComponentDestroyed(self, component):
-        LOG_DEBUG_DEV('Component destroyed', component)
-        super(Vehicle, self).onDynamicComponentDestroyed(component)
 
     @property
     def label(self):

@@ -167,8 +167,25 @@ msgstr "?empty?"
 msgid "Chassis_G00_Feuerbunker"
 msgstr "Агнямёт"
 
+msgid "Chassis_G00_Mausekonig_V01"
+msgstr "Фэнрыр"
+
+msgid "Chassis_G00_PzVI_Tiger_P"
+msgstr "Tiger (P) verstärkteketten"
+
+msgid "Chassis_G00_PzVI_Tiger_P_short"
+msgstr ""
+"Tiger (P)\n"
+"verstärkteketten"
+
+msgid "Chassis_G00_Ratte_V1"
+msgstr "Ratte"
+
 msgid "Chassis_G00_Startgestell"
 msgstr "Nebelwerfer 41"
+
+msgid "Chassis_G00_Typ_205"
+msgstr "Сурт"
 
 msgid "Chassis_G04_PzVI_Tiger_IA"
 msgstr "Pz.Kpfw. Tiger Ausf. E"
@@ -400,11 +417,17 @@ msgstr "E 75"
 msgid "Chassis_G197_E_94_Fechter"
 msgstr "E 94"
 
+msgid "Chassis_G201_Flakpanzer_5_5_cm_Coelian_Kr"
+msgstr "Panther Ausf. F"
+
 msgid "Chassis_G58_VK4502P"
 msgstr "VK 45.02(P) Ausf. B"
 
 msgid "Chassis_G58_VK4502P_short"
 msgstr "VK 45.02(P) Ausf. B"
+
+msgid "Chassis_G71_JagdPantherII_02"
+msgstr "Jagdpanther II verstärkteketten"
 
 msgid "Chassis_G81_Pz_IV_AusfH_GuP"
 msgstr "Pz.Kpfw. IV Ausf. H Ankou"
@@ -765,6 +788,18 @@ msgstr "Добры агляд і вуглы схілення гарматы, в�
 msgid "E-100"
 msgstr "E 100"
 
+msgid "E-100_cl"
+msgstr "E 100 КЛ"
+
+msgid "E-100_cl_long_special"
+msgstr "?empty?"
+
+msgid "E-100_cl_short"
+msgstr "E 100 КЛ"
+
+msgid "E-100_cl_short_special"
+msgstr "?empty?"
+
 msgid "E-100_descr"
 msgstr ""
 "У чэрвені 1943 г. кампанія Adlerwerke атрымала замову на распрацоўку танка E"
@@ -931,7 +966,16 @@ msgstr "FuG 12 A"
 msgid "FuG12D"
 msgstr "FuG 12"
 
+msgid "FuG12_G00"
+msgstr "FuG 12"
+
+msgid "FuG12_G00_"
+msgstr "FuG 12"
+
 msgid "FuG12_G197"
+msgstr "FuG 12"
+
+msgid "FuG12_G71_02"
 msgstr "FuG 12"
 
 msgid "FuG12_MapsTraining_Player_HT_2"
@@ -944,7 +988,7 @@ msgid "FuG12_ST"
 msgstr "FuG 12 ST"
 
 msgid "FuG16"
-msgstr "Fu 16"
+msgstr "FuG 16"
 
 msgid "FuG2"
 msgstr "FuG 2"
@@ -1003,6 +1047,9 @@ msgstr "FuG Spr. 1"
 msgid "FuG_Spr.A"
 msgstr "Fu.Spr.Ger. \"a\""
 
+msgid "Fu_5_G201"
+msgstr "Fu 5"
+
 msgid "Fu_8_Alkett"
 msgstr "Fu 8"
 
@@ -1051,6 +1098,48 @@ msgstr "Брандар 21"
 msgid "G00_K_bomber__HW_21_AI_short"
 msgstr "Брандар 21"
 
+msgid "G00_Mausekonig_V01"
+msgstr "Фэнрыр"
+
+msgid "G00_Mausekonig_V01_descr"
+msgstr "?empty?"
+
+msgid "G00_Mausekonig_V01_short"
+msgstr "Фэнрыр"
+
+msgid "G00_PzVI_Tiger_P"
+msgstr "Сколль"
+
+msgid "G00_PzVI_Tiger_P_descr"
+msgstr ""
+"26 мая 1941 г. Адольф Гітлер загадаў Фердынанду Поршэ і кампаніі Henschel "
+"распрацаваць першаўзоры новага цяжкага танка, якія былі прадэманстраваныя "
+"фюрару 20 красавіка 1942 г. Машына распрацоўкі Поршэ не пайшла ў вытворчасць"
+" з-за занадта складанай сістэмы прывода і кіравання, а таксама патрэбы "
+"выкарыстання вялікай колькасці медзі. Пазней 90 астатніх карпусоў перарабілі"
+" ў СТ-САУ Ferdinand."
+
+msgid "G00_PzVI_Tiger_P_short"
+msgstr "Сколль"
+
+msgid "G00_Ratte"
+msgstr "Ратте"
+
+msgid "G00_Ratte_V1"
+msgstr "Ратте"
+
+msgid "G00_Ratte_V1_descr"
+msgstr "G00_Ratte_V1 description"
+
+msgid "G00_Ratte_V1_short"
+msgstr "Ратте"
+
+msgid "G00_Ratte_descr"
+msgstr "Ратте"
+
+msgid "G00_Ratte_short"
+msgstr "Ратте"
+
 msgid "G00_Startgestell"
 msgstr "РСЗА"
 
@@ -1059,6 +1148,20 @@ msgstr "РСЗА"
 
 msgid "G00_Startgestell_short"
 msgstr "РСЗА"
+
+msgid "G00_Typ_205"
+msgstr "Сурт"
+
+msgid "G00_Typ_205_descr"
+msgstr ""
+"Улетку 1942 г. кампанія Porsche атрымала заказ на правядзенне доследна-"
+"канструктарскіх работ па стварэнні танка прарыву з максімальна магчымым "
+"узроўнем браніравання і магутнасці ўзбраення. Адным з вынікаў распрацоўкі "
+"звышцяжкага танка Maus стаў эскізны праект Typ 205 Mäuschen, які меў такую "
+"самую кампаноўку. Першаўзор выраблены не быў."
+
+msgid "G00_Typ_205_short"
+msgstr "Сурт"
 
 msgid "G04"
 msgstr "G04"
@@ -2449,6 +2552,24 @@ msgstr "Выдатная гармата, надзейная абароненас
 msgid "G182_Mausekonig"
 msgstr "Mausekönig"
 
+msgid "G182_Mausekonig_T"
+msgstr "Mausekönig Test"
+
+msgid "G182_Mausekonig_T_descr"
+msgstr ""
+".\n"
+"\n"
+"Характеристики машины могут быть изменены без компенсации."
+
+msgid "G182_Mausekonig_T_long_special"
+msgstr "?empty?"
+
+msgid "G182_Mausekonig_T_short"
+msgstr "M.König (T)"
+
+msgid "G182_Mausekonig_T_short_special"
+msgstr "?empty?"
+
 msgid "G182_Mausekonig_descr"
 msgstr ""
 "У 1942 годзе пачалася распрацоўка звышцяжкага танка Pz.Kpfw. Maus. У дадатак да яго нарадзілася ідэя звышцяжкага танка, які мог выкарыстоўвацца ў ролі мабільнага агнявога пункта. У пачатку 1943 года з'явіўся праект, які атрымаў унутранае абазначэнне Mausekönig («Мышыны кароль»). У ім выкарыстоўваліся рашэнні, блізкія да Pz.Kpfw. Maus. У прыватнасці — электрамеханічная трансмісія. З улікам масы 250 тон для шасі выбралі 4-гусенічную схему са здымнымі бартавымі экранамі, на якіх мацаваліся знешнія гусенічныя галіны шасі. У мэтах супрацьпаветранай абароны танк абсталявалі зенітнай вежай і дадатковай устаноўкай зенітнай 20-мм аўтаматычнай гарматы MG 151/20 у самой вежы. У адрозненне ад Pz.Kpfw.Maus баявая машына ад Krupp стваралася як сродак узмацнення абарончых ліній. Зрэшты, неаднаразовыя бамбардаванні заводаў Krupp не дазволілі развіць тэму Mausekönig далей за эскізныя напрацоўкі.\n"
@@ -2471,6 +2592,24 @@ msgstr "Выдатнае браніраванне, вялікі агнявы п�
 
 msgid "G184_EisBaer"
 msgstr "Eisbär"
+
+msgid "G184_EisBaer_T"
+msgstr "Eisbär Test"
+
+msgid "G184_EisBaer_T_descr"
+msgstr ""
+" \n"
+"\n"
+"Характарыстыкі машыны могуць быць зменены без кампенсацыі."
+
+msgid "G184_EisBaer_T_long_special"
+msgstr "?empty?"
+
+msgid "G184_EisBaer_T_short"
+msgstr "Eisbär (T)"
+
+msgid "G184_EisBaer_T_short_special"
+msgstr "?empty?"
 
 msgid "G184_EisBaer_descr"
 msgstr ""
@@ -2564,7 +2703,7 @@ msgstr ""
 msgid "G194_E_50_GT_Alkett_Prod_02_long_special"
 msgstr ""
 "Машина — отличный представитель штурмовых средних танков, обладает хорошим "
-"бронированием и запасом прочности. При этом у танка нет недостатка "
+"бронированием и запасом прочности. При этом у танка нет недостатка "
 "в мобильности благодаря газотурбинному двигателю, что позволяет "
 "передвигаться по полю боя наравне с мобильными средними танками и занимать "
 "более выгодные позиции для реализации огневого потенциала."
@@ -2584,7 +2723,7 @@ msgstr ""
 msgid "G194_E_50_GT_Alkett_Prod_long_special"
 msgstr ""
 "Машина — отличный представитель штурмовых средних танков, обладает хорошим "
-"бронированием и запасом прочности. При этом у танка нет недостатка "
+"бронированием и запасом прочности. При этом у танка нет недостатка "
 "в мобильности благодаря газотурбинному двигателю, что позволяет "
 "передвигаться по полю боя наравне с мобильными средними танками и занимать "
 "более выгодные позиции для реализации огневого потенциала."
@@ -2639,6 +2778,30 @@ msgstr "E 94"
 
 msgid "G197_E_94_Fechter_short_special"
 msgstr "Хорошее фронтальное бронирование, высокий урон за выстрел"
+
+msgid "G201_Flakpanzer_5_5_cm_Coelian_Kr"
+msgstr "Coelian 5,5 cm FlakPz V Kr."
+
+msgid "G201_Flakpanzer_5_5_cm_Coelian_Kr_descr"
+msgstr ""
+"В мае 1943 года стартовали работы над зенитной самоходной установкой на базе танка Pz.Kpfw. Panther. Первоначально предполагалось, что в башне будут установлены спаренные зенитные автоматические пушки калибра 37 мм, а в дальнейшем было решено усилить вооружение за счёт спарки новых 55-мм пушек Gerät 58 (Geraet 58). Для борьбы с бронетехникой и полевыми укреплениями для боекомплекта были разработаны бронебойные снаряды двух типов: калиберный и подкалиберный. Темп стрельбы спаренных орудий был таким, что весь возимый запас снарядов можно было расстрелять за несколько минут. Работы над конкурирующими проектами велись двумя фирмами: Rheinmetall и Krupp. В течение октября–декабря 1944 года были представлены эскизные проекты, которые отличались друг от друга конструкцией башен. Победителя в конкурсе не было, а в феврале 1945 года немецкое командование дало указание о том, что разработка зенитных башен для «пантер» приостанавливается.\n"
+"\n"
+"Характеристики машины могут быть изменены без компенсации."
+
+msgid "G201_Flakpanzer_5_5_cm_Coelian_Kr_long_special"
+msgstr ""
+"Немецкий танк со спаренной автоматической пушкой. Наилучшим образом машина "
+"показывает себя на третьей линии: отличные показатели точности позволяют "
+"результативно поражать противников с дальней дистанции из-за укрытий. Однако"
+" следует помнить, что из-за больших габаритов и скромного бронирования "
+"машина не столь эффективна в ближнем бою."
+
+msgid "G201_Flakpanzer_5_5_cm_Coelian_Kr_short"
+msgstr "Coelian"
+
+msgid "G201_Flakpanzer_5_5_cm_Coelian_Kr_short_special"
+msgstr ""
+"Автоматическое орудие, отличная точность, высокий комфорт ведения огня"
 
 msgid "G20_Marder_II"
 msgstr "Marder II"
@@ -2767,6 +2930,24 @@ msgstr ""
 
 msgid "G70_PzIV_Hydro_short_special"
 msgstr "Добрыя бронепрабівальнасць і ВВН, высокая трываласць"
+
+msgid "G71_JagdPantherII_02"
+msgstr "Jagdpanther II 2"
+
+msgid "G71_JagdPantherII_02_descr"
+msgstr ""
+" \n"
+"\n"
+"Характарыстыкі машыны могуць быць зменены без кампенсацыі."
+
+msgid "G71_JagdPantherII_02_long_special"
+msgstr "?empty?"
+
+msgid "G71_JagdPantherII_02_short"
+msgstr "JPanther II 2"
+
+msgid "G71_JagdPantherII_02_short_special"
+msgstr "?empty?"
 
 msgid "G77_PzIV_Schmalturm_SHXXI_B"
 msgstr "Воўк"
@@ -3331,6 +3512,9 @@ msgstr "Luchs"
 msgid "Luchsketten_Ausf_B"
 msgstr "Luchs verstärkteketten"
 
+msgid "MAN_V12Z32_44"
+msgstr "MAN V12Z32/44"
+
 msgid "MB-503"
 msgstr "Daimler-Benz MB 503"
 
@@ -3378,6 +3562,9 @@ msgstr "MB 509"
 
 msgid "MB509_StGM"
 msgstr "Daimler-Benz MB 509"
+
+msgid "MB509_V01"
+msgstr "MB 509"
 
 msgid "MB517"
 msgstr "MB 517"
@@ -3627,8 +3814,19 @@ msgstr "Maybach HL 230 P45"
 msgid "Maybach_HL_230P45_05"
 msgstr "Maybach HL 130 P50"
 
+msgid "Maybach_HL_230_G201"
+msgstr "Maybach HL 230"
+
 msgid "Maybach_HL_230_TRM_P30"
 msgstr "Maybach HL 230 TRM P30"
+
+msgid "Maybach_HL_230_TRM_P30_G71_02"
+msgstr "Maybach HL 230 TRM P30"
+
+msgid "Maybach_HL_230_TRM_P30_G71_02_short"
+msgstr ""
+"Maybach\n"
+"HL 230 TRM P30"
 
 msgid "Maybach_HL_230_TRM_P30_SH"
 msgstr "Maybach H 230 TR P50"
@@ -3859,6 +4057,9 @@ msgstr "2x Porsche Typ 100/3"
 msgid "Porsche_Typ_100_3A"
 msgstr "2x Porsche Typ 100/3A"
 
+msgid "Porsche_Typ_100_3_G00"
+msgstr "2x Porsche Typ 100/3"
+
 msgid "Porsche_Typ_101_1_x2"
 msgstr "2 × Porsche Typ 101/1"
 
@@ -3866,6 +4067,9 @@ msgid "Porsche_Typ_205_2"
 msgstr "Porsche Typ 205/2"
 
 msgid "Porsche_Typ_220"
+msgstr "DB 603 A1"
+
+msgid "Porsche_Typ_220_G00"
 msgstr "DB 603 A1"
 
 msgid "Praga_AusfIV"
@@ -4675,6 +4879,9 @@ msgstr "Radio"
 msgid "Radio_VK4502P_G"
 msgstr "FuG5 W"
 
+msgid "Ratte_Radio"
+msgstr "10WSc"
+
 msgid "Renault"
 msgstr "Renault"
 
@@ -4937,8 +5144,17 @@ msgstr "?empty?"
 msgid "Turret_1_G00_Feuerbunker"
 msgstr "Агнямёт"
 
+msgid "Turret_1_G00_Mausekonig_V01"
+msgstr "Фэнрыр"
+
+msgid "Turret_1_G00_Ratte_V1"
+msgstr "Ratte"
+
 msgid "Turret_1_G00_Startgestell"
 msgstr "Nebelwerfer 41"
+
+msgid "Turret_1_G00_Typ_205"
+msgstr "Сурт"
 
 msgid "Turret_1_G04_PzVI_Tiger_IA"
 msgstr "Pz.Kpfw. Tiger Ausf. E"
@@ -5157,11 +5373,17 @@ msgstr "Doppel"
 msgid "Turret_1_G197_E_94_Fechter"
 msgstr "E 94"
 
+msgid "Turret_1_G201_Flakpanzer_5_5_cm_Coelian_Kr"
+msgstr "Coelian Turm"
+
 msgid "Turret_1_G58_VK4502P"
 msgstr "VK 45.02 (P) Ausf. B"
 
 msgid "Turret_1_G58_VK4502P_short"
 msgstr "VK 45.02 (P) Ausf. B"
+
+msgid "Turret_1_G71_JagdPantherII_02"
+msgstr "Jagdpanther II"
 
 msgid "Turret_1_G81_Pz_IV_AusfH_GuP"
 msgstr "Pz.Kpfw. IV Ausf. H Ankou"
@@ -5316,6 +5538,14 @@ msgstr "E 50 Basiert"
 
 msgid "Turret_2_E-75"
 msgstr "E 75 Ausf. B"
+
+msgid "Turret_2_G00_PzVI_Tiger_P"
+msgstr "Tiger (P) Neuer Turm"
+
+msgid "Turret_2_G00_PzVI_Tiger_P_short"
+msgstr ""
+"Tiger (P)\n"
+"Neuer Turm"
 
 msgid "Turret_2_G113_SP_I_C"
 msgstr "Spähpanzer SP I C PT II Rh.-Nr. WK-G2"
@@ -5914,6 +6144,9 @@ msgstr "10,5 cm Pak L/52"
 msgid "_105mm_K18_L52A"
 msgstr "10,5 cm Kanone 18"
 
+msgid "_105mm_K18_L52_G71_02"
+msgstr "10,5 cm Pak L/52"
+
 msgid "_105mm_Kanone"
 msgstr "105 mm Kanone"
 
@@ -5984,6 +6217,9 @@ msgstr "Pzgr 39 L"
 msgid "_105mm_PzGr39L1"
 msgstr "Pzgr 39 L1"
 
+msgid "_105mm_PzGr39L_G71_02"
+msgstr "Pzgr 39 L"
+
 msgid "_105mm_PzGr39L_n"
 msgstr "Pzgr 39 LV"
 
@@ -6001,6 +6237,9 @@ msgstr "Pzgr 40 K"
 
 msgid "_105mm_Pzgr.40L1"
 msgstr "Pzgr 40 L1"
+
+msgid "_105mm_Pzgr.40_G71_02"
+msgstr "Pzgr 40"
 
 msgid "_105mm_Pzgr.40_n"
 msgstr "Pzgr ver. 40"
@@ -6041,6 +6280,9 @@ msgstr "Sprgr L"
 msgid "_105mm_Sprg_L1"
 msgstr "Sprgr L1"
 
+msgid "_105mm_Sprg_L_G71_02"
+msgstr "Sprgr L"
+
 msgid "_105mm_Sprg_L_n"
 msgstr "Sprgr LV"
 
@@ -6069,6 +6311,9 @@ msgid "_10WSc_02"
 msgstr "10WSc F"
 
 msgid "_10WSc_MK"
+msgstr "10WSc"
+
+msgid "_10WSc_MK_V01"
 msgstr "10WSc"
 
 msgid "_10WSc_StGM"
@@ -6167,6 +6412,9 @@ msgstr "12,8 cm Kw.K. 44 L/55"
 msgid "_128mm_KwK44_L55_G"
 msgstr "12,8 cm Kw.K. 44 L/55"
 
+msgid "_128mm_KwK44_L55_G00"
+msgstr "12,8 cm Kw.K. 44 L/55"
+
 msgid "_128mm_KwK44_L55_N"
 msgstr "12,8 cm Kw.K. Ausf. E"
 
@@ -6174,6 +6422,9 @@ msgid "_128mm_KwK44_L55_SH"
 msgstr "12,8 cm Kw.K. 44 L/55"
 
 msgid "_128mm_KwK44_L55_x2"
+msgstr "12,8 cm Kw.K. 44 L/55 x2"
+
+msgid "_128mm_KwK44_L55_x2_V01"
 msgstr "12,8 cm Kw.K. 44 L/55 x2"
 
 msgid "_128mm_KwK46_L61"
@@ -6227,6 +6478,9 @@ msgstr "Pzgr 39 A"
 msgid "_128mm_PzGr39D"
 msgstr "Pzgr 39 D"
 
+msgid "_128mm_PzGr39D_V01"
+msgstr "Pzgr 39 D"
+
 msgid "_128mm_PzGr39E"
 msgstr "Pzgr 39 E"
 
@@ -6238,6 +6492,9 @@ msgstr "Pzgr 39 L"
 
 msgid "_128mm_PzGr39_E"
 msgstr "Pzgr 39 E"
+
+msgid "_128mm_PzGr39_G00"
+msgstr "Pzgr 39"
 
 msgid "_128mm_PzGr39_GW"
 msgstr "Pzgr 39"
@@ -6530,6 +6787,18 @@ msgstr "Gr. 18 Stg"
 msgid "_210mm_Sprg18_Ausf_G"
 msgstr "Gr. 18"
 
+msgid "_283mm_PzGr_L44"
+msgstr "Pz.Gr. L/4,4"
+
+msgid "_283mm_SKC_34"
+msgstr "28 cm SKC/34"
+
+msgid "_283mm_SprGr_L44"
+msgstr "Spr.Gr. L/4,4 Bdz"
+
+msgid "_283mm_SprGr_L46"
+msgstr "Spr.Gr. L/4,6 Kz"
+
 msgid "_2x_Hanomag_Boxer"
 msgstr "2x Hanomag Boxer"
 
@@ -6676,6 +6945,15 @@ msgstr "Pzgr 40"
 
 msgid "_50mm_Sprg.18"
 msgstr "Sprgr 18"
+
+msgid "_55mm_Geraet_58_G201"
+msgstr "5,5 cm Gerät 58"
+
+msgid "_55mm_PzGr39_G201"
+msgstr "55х450 Pzgr. 39"
+
+msgid "_55mm_PzGr40_G201"
+msgstr "55х450 Pzgr. 40"
 
 msgid "_7.92mm_AP"
 msgstr "Patrone 318 SmK-Rs-L'spur"
@@ -6848,6 +7126,9 @@ msgstr "8,8 cm Kw.K. 43 L/71"
 msgid "_88mm_KwK_43_L71_Dual"
 msgstr "8,8 cm Kw.K. 43 L/71 D"
 
+msgid "_88mm_KwK_43_L71_G00"
+msgstr "8,8 cm Kw.K. 43 L/71"
+
 msgid "_88mm_KwK_43_L71_N"
 msgstr "8,8 cm Kw.K. 43 L/71 mod.Vlt"
 
@@ -6900,6 +7181,9 @@ msgid "_88mm_Pzgr39_1"
 msgstr "Pzgr. 39/1 Flak 41"
 
 msgid "_88mm_Pzgr39_43"
+msgstr "Pzgr 39/43"
+
+msgid "_88mm_Pzgr39_43_G00"
 msgstr "Pzgr 39/43"
 
 msgid "_88mm_Pzgr39_43_d"

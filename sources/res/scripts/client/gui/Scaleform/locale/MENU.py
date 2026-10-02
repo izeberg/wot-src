@@ -677,7 +677,9 @@ class MENU(object):
     EXTRAPARAMS_NAME_ABILITYCOOLDOWNBONUS = '#menu:extraParams/name/abilityCooldownBonus'
     EXTRAPARAMS_NAME_VEHICLEGUNSPECDAMAGE = '#menu:extraParams/name/vehicleGunSpecDamage'
     EXTRAPARAMS_NAME_VEHICLEGUNDAMAGE = '#menu:extraParams/name/vehicleGunDamage'
-    CUSTOM_SHOT_PASSION_EXTRAPARAMS_NAME_VEHICLEGUNDAMAGE = '#menu:custom/shot_passion/extraParams/name/vehicleGunDamage'
+    CUSTOM_SHOT_PASSION_OLD_EXTRAPARAMS_NAME_VEHICLEGUNDAMAGE = '#menu:custom/shot_passion_old/extraParams/name/vehicleGunDamage'
+    CUSTOM_SHOT_PASSION_EXTRAPARAMS_NAME_VEHICLEGUNRELOADTIME = '#menu:custom/shot_passion/extraParams/name/vehicleGunReloadTime'
+    SHOT_PASSION_EXTRAPARAMS_NAME_VEHICLEGUNRELOADTIME = '#menu:shot_passion/extraParams/name/vehicleGunReloadTime'
     EXTRAPARAMS_NAME_VEHICLEGUNSHOTDISPERSIONCHASSISMOVEMENT = '#menu:extraParams/name/vehicleGunShotDispersionChassisMovement'
     EXTRAPARAMS_NAME_VEHICLEGUNSHOTDISPERSIONCHASSISROTATION = '#menu:extraParams/name/vehicleGunShotDispersionChassisRotation'
     EXTRAPARAMS_NAME_VEHICLEGUNSHOTDISPERSIONTURRETROTATION = '#menu:extraParams/name/vehicleGunShotDispersionTurretRotation'
@@ -699,6 +701,14 @@ class MENU(object):
     EXTRAPARAMS_NAME_LOADSHELLINTODUALGUNBONUS = '#menu:extraParams/name/loadShellIntoDualGunBonus'
     EXTRAPARAMS_NAME_CHARGETIMEBONUS = '#menu:extraParams/name/chargeTimeBonus'
     EXTRAPARAMS_NAME_SPEEDLIMITSBONUS = '#menu:extraParams/name/speedLimitsBonus'
+    EXTRAPARAMS_NAME_EXTRAABILITYPARAMCHASSISROTATIONSPEED = '#menu:extraParams/name/extraAbilityParamChassisRotationSpeed'
+    EXTRAPARAMS_NAME_EXTRAABILITYPARAMTURRETROTATIONSPEED = '#menu:extraParams/name/extraAbilityParamTurretRotationSpeed'
+    EXTRAPARAMS_NAME_VEHICLETURRETROTATIONSPEED = '#menu:extraParams/name/vehicleTurretRotationSpeed'
+    EXTRAPARAMS_NAME_EXTRAABILITYPARAMGUNCLIPCOOLDOWN = '#menu:extraParams/name/extraAbilityParamGunClipCooldown'
+    EXTRAPARAMS_NAME_EXTRAABILITYPARAMSPEEDBONUS = '#menu:extraParams/name/extraAbilityParamSpeedBonus'
+    EXTRAPARAMS_NAME_EXTRAABILITYPARAMSHELLDAMAGE = '#menu:extraParams/name/extraAbilityParamShellDamage'
+    EXTRAPARAMS_NAME_EXTRAABILITYPARAMSHELLPIERCING = '#menu:extraParams/name/extraAbilityParamShellPiercing'
+    EXTRAPARAMS_NAME_EXTRAABILITYPARAMSHELLSPEED = '#menu:extraParams/name/extraAbilityParamShellSpeed'
     DESCRIPTIONS_VEHICLE = '#menu:descriptions/vehicle'
     DESCRIPTIONS_VEHICLEGUN = '#menu:descriptions/vehicleGun'
     DESCRIPTIONS_VEHICLEGUN_AUTORELOAD = '#menu:descriptions/vehicleGun/autoReload'
@@ -1854,8 +1864,7 @@ class MENU(object):
     BONUSTYPE_43 = '#menu:bonusType/43'
     BONUSTYPE_44 = '#menu:bonusType/44'
     BONUSTYPE_50 = '#menu:bonusType/50'
-    BONUSTYPE_52 = '#menu:bonusType/52'
-    BONUSTYPE_53 = '#menu:bonusType/53'
+    BONUSTYPE_61 = '#menu:bonusType/61'
     FORTIFICATIONCTX_ASSIGNEDPLAYERS = '#menu:fortificationCtx/assignedPlayers'
     FORTIFICATIONCTX_PREPAREORDER = '#menu:fortificationCtx/prepareOrder'
     FORTIFICATIONCTX_CLANDESCRIPTION_OPENCLANCARD = '#menu:fortificationCtx/clanDescription/openClanCard'
@@ -2388,6 +2397,7 @@ class MENU(object):
     LOADING_BATTLETYPES_300 = '#menu:loading/battleTypes/300'
     LOADING_BATTLETYPES_DESC_300 = '#menu:loading/battleTypes/desc/300'
     HEADERBUTTON_MUSEUM = '#menu:headerButton/museum'
+    CONTEXTMENU_CREATEPORTALSQUAD = '#menu:contextMenu/createPortalSquad'
     CONTEXTMENU_ENUM = (
      CONTEXTMENU_EXCHANGE,
      CONTEXTMENU_VEHICLEINFO,
@@ -2499,7 +2509,8 @@ class MENU(object):
      CONTEXTMENU_CREWWIDGETSENDTOTOBARRACKS,
      CONTEXTMENU_CREWWIDGETDISMISS,
      CONTEXTMENU_CREWWIDGETQUICKTRAINING,
-     CONTEXTMENU_CREWWIDGETCHANGESPECIALIZATION)
+     CONTEXTMENU_CREWWIDGETCHANGESPECIALIZATION,
+     CONTEXTMENU_CREATEPORTALSQUAD)
     NATIONS_ENUM = (
      NATIONS_TITLE,
      NATIONS_USSR,

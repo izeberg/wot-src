@@ -1,8 +1,12 @@
 from gui.Scaleform.framework.entities.inject_component_adaptor import InjectComponentAdaptor
+from gui.impl.lobby.paragons.notifications.paragons_coins_notification_view import ParagonsCoinsNotification
+from messenger.m_constants import GFNotificationTemplates
 from simple_notification import SimpleNotification
+from session_progress_rewards_notification import SessionProgressRewardsNotification
 from debug_utils import LOG_ERROR
 from gui.impl.gen import R
-NOTIFICATION_PRESENTERS = {}
+NOTIFICATION_PRESENTERS = {GFNotificationTemplates.CUSTOM_PARAGONS_COINS_NOTIFICATION: (
+                                                              R.views.lobby.paragons.notifications.ParagonsCoinsNotificationView(), ParagonsCoinsNotification)}
 
 class GFNotificationInject(InjectComponentAdaptor):
 
@@ -32,3 +36,6 @@ class PresentersFactory(object):
     def add(viewName, resId, clazz):
         NOTIFICATION_PRESENTERS[viewName] = (
          resId, clazz)
+
+
+PresentersFactory.add('SessionProgressRewardsNotification', R.views.lobby.daily.SessionProgressRewardsNotificationView(), SessionProgressRewardsNotification)

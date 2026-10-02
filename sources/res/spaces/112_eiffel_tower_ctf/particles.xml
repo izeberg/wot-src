@@ -8,31 +8,7 @@
 		<preloadVisual>particles/mesh_particles/environment/vfx_m_newspapers_02.visual</preloadVisual>
 		<preloadTextures>
 			<path>
-				particles/content_forward/pfx_textures/eff_tex_split_smoke_4.dds
-				<type>primary</type>
-			</path>
-			<path>
-				particles/content_forward/pfx_textures/eff_tex_split_fire_smoke_1.dds
-				<type>primary</type>
-			</path>
-			<path>
-				particles/content_forward/pfx_textures/eff_tex_split_misc_3.dds
-				<type>primary</type>
-			</path>
-			<path>
 				particles/content_forward/pfx_textures/eff_tex_split_smoke_8.dds
-				<type>primary</type>
-			</path>
-			<path>
-				particles/content_forward/pfx_textures/tracers.dds
-				<type>primary</type>
-			</path>
-			<path>
-				particles/content_forward/pfx_textures/eff_leaves.dds
-				<type>primary</type>
-			</path>
-			<path>
-				particles/content_forward/pfx_textures/eff_tex_split_dirt.dds
 				<type>primary</type>
 			</path>
 			<path>
@@ -56,6 +32,18 @@
 				<type>primary</type>
 			</path>
 			<path>
+				particles/content_forward/pfx_textures/eff_tex_split_smoke_4.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_split_misc_3.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_split_fire_smoke_1.dds
+				<type>primary</type>
+			</path>
+			<path>
 				particles/content_forward/pfx_textures/eff_tex_split_smoke_7.dds
 				<type>primary</type>
 			</path>
@@ -64,7 +52,19 @@
 				<type>primary</type>
 			</path>
 			<path>
+				particles/content_forward/pfx_textures/tracers.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_leaves.dds
+				<type>primary</type>
+			</path>
+			<path>
 				particles/content_forward/pfx_textures/eff_tex_long.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_split_splash_3.dds
 				<type>primary</type>
 			</path>
 			<path>
@@ -76,7 +76,11 @@
 				<type>primary</type>
 			</path>
 			<path>
-				particles/content_forward/pfx_textures/eff_tex_split_splash_3.dds
+				particles/content_forward/pfx_textures/eff_tex_split_splash_4.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_split_dirt.dds
 				<type>primary</type>
 			</path>
 			<path>
@@ -85,10 +89,6 @@
 			</path>
 			<path>
 				particles/content_forward/pfx_textures/eff_tex_split_misc_6.dds
-				<type>primary</type>
-			</path>
-			<path>
-				particles/content_forward/pfx_textures/eff_tex_split_splash_4.dds
 				<type>primary</type>
 			</path>
 			<path>
@@ -101,7 +101,6 @@
 		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/inf_bld_112_04_trocaderofountain_01_2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/inf_bld_112_04_trocaderofountain_01_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/inf_bld_112_04_trocaderofountain_03.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/inf_bld_uni_000_base_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/inf_bldsu_001_outhouse_03.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/inf_bldsu_001_outhouse_04.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/interior/112_eiffel_tower_ctf_air_balloons.vfx</fn_effect_bin>
@@ -137,7 +136,6 @@
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_env_112_12_bicycle_04.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_env_112_12_bicycle_05.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_env_112_12_bicycle_06.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_env_112_14_tablecaffe_002.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_env_112_14_tablecaffe_005.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_env_112_14_tablecaffe_008.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_env_112_14_tablecaffe_009.vfx</fn_effect_bin>
@@ -150,7 +148,6 @@
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_env_112_20_fochstatue.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_env_112_21_bridgestatue_arab_warrior.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_env_114_18_concreteslab_02.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_env_114_18_concreteslab_03.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_env_uni_622_fieldjunk_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_envaf_006_barrelfuel_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_envaf_006_barrelfuel_02.vfx</fn_effect_bin>
@@ -180,6 +177,8 @@
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_gafsu_92_03_ironfence_big_tile.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_mle001_fuel.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_mle010_littlebobbin1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_streetlamp_fracture.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_streetlamp_touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_town_bench_des.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/trees/broadleaves/drytree_01_fall.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/trees/broadleaves/drytree_01_touchdown.vfx</fn_effect_bin>
@@ -220,7 +219,6 @@
 		<fn_effect_bin>particles/environment/buildings/inf_bld_112_04_trocaderofountain_01_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/buildings/inf_bld_112_04_trocaderofountain_01_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/buildings/inf_bld_112_04_trocaderofountain_03.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/buildings/inf_bld_uni_000_base_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/buildings/inf_bldsu_001_outhouse_03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/buildings/inf_bldsu_001_outhouse_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/112_eiffel_tower_ctf_balloons.eff</fn_effect_bin>
@@ -250,7 +248,6 @@
 		<fn_effect_bin>particles/environment/objects/inf_env_112_12_bicycle_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_env_112_12_bicycle_05.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_env_112_12_bicycle_06.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/inf_env_112_14_tablecaffe_002.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_env_112_14_tablecaffe_005.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_env_112_14_tablecaffe_008.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_env_112_14_tablecaffe_009.eff</fn_effect_bin>
@@ -263,7 +260,6 @@
 		<fn_effect_bin>particles/environment/objects/inf_env_112_20_fochstatue.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_env_112_21_bridgestatue_arab_warrior.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_env_114_18_concreteslab_02.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/inf_env_114_18_concreteslab_03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_env_uni_622_fieldjunk_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_envaf_006_barrelfuel_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_envaf_006_barrelfuel_02.eff</fn_effect_bin>
@@ -293,6 +289,8 @@
 		<fn_effect_bin>particles/environment/objects/inf_gafsu_92_03_ironfence_big_tile.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_mle001_fuel.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_mle010_littlebobbin1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_streetlamp_fracture.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_streetlamp_touchdown.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_town_bench_des.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/scenarios/plane_engine_sc_all.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/trees/broadleaves/drytree_01_fall.eff</fn_effect_bin>
@@ -356,23 +354,11 @@
 		<preloadVisual>particles/mesh_particles/environment/vfx_m_newspapers_02.visual</preloadVisual>
 		<preloadTextures>
 			<path>
-				particles/content_deferred/pfx_textures/eff_tex_split_misc_6.dds
+				particles/content_deferred/pfx_textures/eff_tex_split_misc_2.dds
 				<type>primary</type>
 			</path>
 			<path>
-				particles/content_deferred/pfx_textures/eff_tex_112_eiffel_tower_ctf_playtest.dds
-				<type>primary</type>
-			</path>
-			<path>
-				particles/content_deferred/pfx_textures/eff_tex_split_misc_5.dds
-				<type>primary</type>
-			</path>
-			<path>
-				particles/content_deferred/pfx_textures/eff_tex_split_smoke_4.dds
-				<type>primary</type>
-			</path>
-			<path>
-				particles/content_deferred/pfx_textures/eff_tex_split_misc_3.dds
+				particles/content_deferred/pfx_textures/eff_tex_split_smoke_5.dds
 				<type>primary</type>
 			</path>
 			<path>
@@ -384,15 +370,15 @@
 				<type>primary</type>
 			</path>
 			<path>
-				particles/content_deferred/pfx_textures/eff_tex_split_dirt.dds
+				particles/content_deferred/pfx_textures/eff_tex_split_misc_6.dds
 				<type>primary</type>
 			</path>
 			<path>
-				particles/content_deferred/pfx_textures/eff_tex_split_misc_2.dds
+				particles/content_deferred/pfx_textures/eff_tex_112_eiffel_tower_ctf_playtest.dds
 				<type>primary</type>
 			</path>
 			<path>
-				particles/content_deferred/pfx_textures/eff_tex_split_smoke_5.dds
+				particles/content_deferred/pfx_textures/eff_tex_split_misc_5.dds
 				<type>primary</type>
 			</path>
 			<path>
@@ -408,6 +394,18 @@
 				<type>primary</type>
 			</path>
 			<path>
+				particles/content_deferred/pfx_textures/eff_tex_split_splash_3.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_split_smoke_4.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_split_misc_3.dds
+				<type>primary</type>
+			</path>
+			<path>
 				particles/content_deferred/pfx_textures/eff_tex_split_smoke_3.dds
 				<type>primary</type>
 			</path>
@@ -416,11 +414,11 @@
 				<type>primary</type>
 			</path>
 			<path>
-				particles/content_deferred/pfx_textures/eff_tex_split_splash_3.dds
+				particles/content_deferred/pfx_textures/eff_tex_split_splash_4.dds
 				<type>primary</type>
 			</path>
 			<path>
-				particles/content_deferred/pfx_textures/eff_tex_split_splash_4.dds
+				particles/content_deferred/pfx_textures/eff_tex_split_dirt.dds
 				<type>primary</type>
 			</path>
 			<path>
@@ -461,7 +459,6 @@
 		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/inf_bld_112_04_trocaderofountain_01_2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/inf_bld_112_04_trocaderofountain_01_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/inf_bld_112_04_trocaderofountain_03.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/inf_bld_uni_000_base_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/inf_bldsu_001_outhouse_03.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/inf_bldsu_001_outhouse_04.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/112_eiffel_tower_ctf_air_balloons.vfx</fn_effect_bin>
@@ -497,7 +494,6 @@
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_env_112_12_bicycle_04.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_env_112_12_bicycle_05.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_env_112_12_bicycle_06.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_env_112_14_tablecaffe_002.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_env_112_14_tablecaffe_005.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_env_112_14_tablecaffe_008.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_env_112_14_tablecaffe_009.vfx</fn_effect_bin>
@@ -510,7 +506,6 @@
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_env_112_20_fochstatue.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_env_112_21_bridgestatue_arab_warrior.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_env_114_18_concreteslab_02.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_env_114_18_concreteslab_03.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_env_uni_622_fieldjunk_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_envaf_006_barrelfuel_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_envaf_006_barrelfuel_02.vfx</fn_effect_bin>
@@ -540,6 +535,8 @@
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_gafsu_92_03_ironfence_big_tile.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_mle001_fuel.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_mle010_littlebobbin1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_streetlamp_fracture.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_streetlamp_touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_town_bench_des.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/trees/broadleaves/drytree_01_fall.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/trees/broadleaves/drytree_01_touchdown.vfx</fn_effect_bin>
@@ -580,7 +577,6 @@
 		<fn_effect_bin>particles/environment/buildings/inf_bld_112_04_trocaderofountain_01_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/buildings/inf_bld_112_04_trocaderofountain_01_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/buildings/inf_bld_112_04_trocaderofountain_03.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/buildings/inf_bld_uni_000_base_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/buildings/inf_bldsu_001_outhouse_03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/buildings/inf_bldsu_001_outhouse_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/112_eiffel_tower_ctf_balloons.eff</fn_effect_bin>
@@ -610,7 +606,6 @@
 		<fn_effect_bin>particles/environment/objects/inf_env_112_12_bicycle_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_env_112_12_bicycle_05.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_env_112_12_bicycle_06.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/inf_env_112_14_tablecaffe_002.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_env_112_14_tablecaffe_005.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_env_112_14_tablecaffe_008.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_env_112_14_tablecaffe_009.eff</fn_effect_bin>
@@ -623,7 +618,6 @@
 		<fn_effect_bin>particles/environment/objects/inf_env_112_20_fochstatue.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_env_112_21_bridgestatue_arab_warrior.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_env_114_18_concreteslab_02.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/inf_env_114_18_concreteslab_03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_env_uni_622_fieldjunk_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_envaf_006_barrelfuel_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_envaf_006_barrelfuel_02.eff</fn_effect_bin>
@@ -653,6 +647,8 @@
 		<fn_effect_bin>particles/environment/objects/inf_gafsu_92_03_ironfence_big_tile.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_mle001_fuel.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_mle010_littlebobbin1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_streetlamp_fracture.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_streetlamp_touchdown.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_town_bench_des.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/scenarios/plane_engine_sc_all.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/trees/broadleaves/drytree_01_fall.eff</fn_effect_bin>

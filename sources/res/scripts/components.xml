@@ -10,6 +10,7 @@
 		<AccountRankedComponent/>
 		<ArenaRankedComponent/>
 		<AccountNewbieChatLockComponent/>
+		<DynamicVehicleChangeComponent/>
 	</StaticComponents>
 	<DynamicComponents>
 		<OwnVehicle/>
@@ -39,6 +40,7 @@
 		<CoolantTankAbilityEquipment/>
 		<TankRamAbilityEquipment/>
 		<DamageModifierAbilityEquipment/>
+		<SureShotAbilityEquipment/>
 		<VehicleCircle/>
 		<VehicleRadarDetection/>
 		<VehicleProximityDetection/>
@@ -71,9 +73,7 @@
 		<DualAccuracy/>
 		<DualGunDualAccuracy/>
 		<RankedVoiceComponent/>
-		<VehicleShellOverride/>
-		<PublicHealth/>
-		<HealthTracker/>
-		<MissileComponent/>
+		<MasterVehicleEventsListener/>
+		<VehicleTeamOverride/>
 	</DynamicComponents>
 </root>

@@ -376,6 +376,12 @@ package
       public static const DETAILSHELP_DISTANCEDAMAGE_TITLE:String = "#ingame_help:detailsHelp/distanceDamage/title";
       
       public static const DETAILSHELP_DISTANCEDAMAGE_DESCRIPTION:String = "#ingame_help:detailsHelp/distanceDamage/description";
+      
+      public static const DETAILSHELP_CLIPGUN_HEADERTITLE:String = "#ingame_help:detailsHelp/clipGun/headerTitle";
+      
+      public static const DETAILSHELP_CLIPGUN_TITLE:String = "#ingame_help:detailsHelp/clipGun/title";
+      
+      public static const DETAILSHELP_CLIPGUN_DESCRIPTION:String = "#ingame_help:detailsHelp/clipGun/description";
        
       
       public function INGAME_HELP()

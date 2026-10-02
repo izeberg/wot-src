@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/russian/R205_Tank_Rozanova/crash/lod0/Gun_02</nodefullVisual>
+	<parent>vehicles/russian/R205_Tank_Rozanova/crash/lod1/Gun_02</parent>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-0.382692 -0.234162 -1.096480</min>
+		<max>0.334935 0.226590 4.729541</max>
+	</visibilityBox>
+</root>

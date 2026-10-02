@@ -1265,15 +1265,5 @@ package net.wg.gui.components.crosshairPanel
             _loc2_.setGunCoolingVisibility(param1);
          }
       }
-      
-      public function get currentCrosshair() : ICrosshair
-      {
-         return this._currentCrosshair;
-      }
-      
-      public function get gunMarkersContainer() : GunMarkersManager
-      {
-         return this._gunMarkersContainer;
-      }
    }
 }

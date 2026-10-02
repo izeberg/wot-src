@@ -7,6 +7,12 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n==0 ? 0 : n%10==1 && n%100!=11 ? 1 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 2 : 3)\n"
+
+msgid "#PluralForms"
+msgstr ""
+"nplurals=4; plural=(n==0 ? 0 : n%10==1 && n%100!=11 ? 1 : n%10>=2 && n%10<=4"
+" && (n%100<10 || n%100>=20) ? 2 : 3)"
 
 msgid "multiOpenView/applyLabel"
 msgstr "Так точно!"
@@ -92,7 +98,7 @@ msgid "rewardsView/applyBtn"
 msgstr "Так точно!"
 
 msgid "rewardsView/exchangeCoins"
-msgstr "Обменяйте жетоны на награды в Магазине."
+msgstr "Обменяйте жетоны на награды в Магазине"
 
 msgid "rewardsView/gotoRewardsBtn"
 msgstr "В Магазин"
@@ -110,7 +116,7 @@ msgstr ""
 "наградой"
 
 msgid "rewardsView/moreRewardsBtn"
-msgstr "Больше наград!"
+msgstr "Больше наград"
 
 msgid "rewardsView/nextBtn"
 msgstr "К следующей награде (%(count)s)"
@@ -118,127 +124,27 @@ msgstr "К следующей награде (%(count)s)"
 msgid "rewardsView/openBtn"
 msgstr "Открыть"
 
+msgid "rewardsView/paragonsPoints/label"
+msgstr "Очки проекта «Орбита»"
+
 msgid "rewardsView/sacoin/counter"
-msgstr "×%(count)s"
+msgstr "x%(count)s"
+
+msgid "rewardsView/sacoin/label"
+msgstr "Жетон ветерана"
+
+msgid "rewardsView/subTitle"
+msgid_plural "plural/rewardsView/subTitle"
+msgstr[0] "НАГРАДА ЗА БОЕВЫЕ ЗАСЛУГИ"
+msgstr[1] "НАГРАДА ЗА %(gradientStart)s %(years)s ГОД%(gradientEnd)s В СТРОЮ"
+msgstr[2] "НАГРАДА ЗА %(gradientStart)s %(years)s ГОДА%(gradientEnd)s В СТРОЮ"
+msgstr[3] "НАГРАДА ЗА %(gradientStart)s %(years)s ЛЕТ%(gradientEnd)s В СТРОЮ"
 
 msgid "rewardsView/subTitle/AT"
 msgstr "НАГРАДА ЗА УЧАСТИЕ В %(gradientStart)sАЛЬФА-ТЕСТЕ%(gradientEnd)s"
 
 msgid "rewardsView/subTitle/BT"
 msgstr "НАГРАДА ЗА УЧАСТИЕ В %(gradientStart)sБЕТА-ТЕСТЕ%(gradientEnd)s"
-
-msgid "rewardsView/subTitle/Y0"
-msgstr "НАГРАДА ЗА БОЕВЫЕ ЗАСЛУГИ"
-
-msgid "rewardsView/subTitle/Y1"
-msgstr "НАГРАДА ЗА %(gradientStart)s1 ГОД%(gradientEnd)s В СТРОЮ"
-
-msgid "rewardsView/subTitle/Y10"
-msgstr "НАГРАДА ЗА %(gradientStart)s10 ЛЕТ%(gradientEnd)s В СТРОЮ"
-
-msgid "rewardsView/subTitle/Y10_BT"
-msgstr ""
-"НАГРАДА ЗА УЧАСТИЕ В БЕТА-ТЕСТЕ И\n"
-"10 ЛЕТ В СТРОЮ"
-
-msgid "rewardsView/subTitle/Y11"
-msgstr "НАГРАДА ЗА %(gradientStart)s11 ЛЕТ%(gradientEnd)s В СТРОЮ"
-
-msgid "rewardsView/subTitle/Y11_BT"
-msgstr ""
-"НАГРАДА ЗА УЧАСТИЕ В БЕТА-ТЕСТЕ И\n"
-"11 ЛЕТ В СТРОЮ"
-
-msgid "rewardsView/subTitle/Y12"
-msgstr "НАГРАДА ЗА %(gradientStart)s12 ЛЕТ%(gradientEnd)s В СТРОЮ"
-
-msgid "rewardsView/subTitle/Y12_BT"
-msgstr ""
-"НАГРАДА ЗА УЧАСТИЕ В БЕТА-ТЕСТЕ И\n"
-"12 ЛЕТ В СТРОЮ"
-
-msgid "rewardsView/subTitle/Y13"
-msgstr "НАГРАДА ЗА %(gradientStart)s13 ЛЕТ%(gradientEnd)s В СТРОЮ"
-
-msgid "rewardsView/subTitle/Y13_BT"
-msgstr ""
-"НАГРАДА ЗА УЧАСТИЕ В БЕТА-ТЕСТЕ И\n"
-"13 ЛЕТ В СТРОЮ"
-
-msgid "rewardsView/subTitle/Y14"
-msgstr "НАГРАДА ЗА %(gradientStart)s14 ЛЕТ%(gradientEnd)s В СТРОЮ"
-
-msgid "rewardsView/subTitle/Y15"
-msgstr "НАГРАДА ЗА %(gradientStart)s15 ЛЕТ%(gradientEnd)s В СТРОЮ"
-
-msgid "rewardsView/subTitle/Y1_BT"
-msgstr ""
-"НАГРАДА ЗА УЧАСТИЕ В БЕТА-ТЕСТЕ И\n"
-"1 ГОД В СТРОЮ"
-
-msgid "rewardsView/subTitle/Y2"
-msgstr "НАГРАДА ЗА %(gradientStart)s2 ГОДА%(gradientEnd)s В СТРОЮ"
-
-msgid "rewardsView/subTitle/Y2_BT"
-msgstr ""
-"НАГРАДА ЗА УЧАСТИЕ В БЕТА-ТЕСТЕ И\n"
-"2 ГОДА В СТРОЮ"
-
-msgid "rewardsView/subTitle/Y3"
-msgstr "НАГРАДА ЗА %(gradientStart)s3 ГОДА%(gradientEnd)s В СТРОЮ"
-
-msgid "rewardsView/subTitle/Y3_BT"
-msgstr ""
-"НАГРАДА ЗА УЧАСТИЕ В БЕТА-ТЕСТЕ И\n"
-"3 ГОДА В СТРОЮ"
-
-msgid "rewardsView/subTitle/Y4"
-msgstr "НАГРАДА ЗА %(gradientStart)s4 ГОДА%(gradientEnd)s В СТРОЮ"
-
-msgid "rewardsView/subTitle/Y4_BT"
-msgstr ""
-"НАГРАДА ЗА УЧАСТИЕ В БЕТА-ТЕСТЕ И\n"
-"4 ГОДА В СТРОЮ"
-
-msgid "rewardsView/subTitle/Y5"
-msgstr "НАГРАДА ЗА %(gradientStart)s5 ЛЕТ%(gradientEnd)s В СТРОЮ"
-
-msgid "rewardsView/subTitle/Y5_BT"
-msgstr ""
-"НАГРАДА ЗА УЧАСТИЕ В БЕТА-ТЕСТЕ И\n"
-"5 ЛЕТ В СТРОЮ"
-
-msgid "rewardsView/subTitle/Y6"
-msgstr "НАГРАДА ЗА %(gradientStart)s6 ЛЕТ%(gradientEnd)s В СТРОЮ"
-
-msgid "rewardsView/subTitle/Y6_BT"
-msgstr ""
-"НАГРАДА ЗА УЧАСТИЕ В БЕТА-ТЕСТЕ И\n"
-"6 ЛЕТ В СТРОЮ"
-
-msgid "rewardsView/subTitle/Y7"
-msgstr "НАГРАДА ЗА %(gradientStart)s7 ЛЕТ%(gradientEnd)s В СТРОЮ"
-
-msgid "rewardsView/subTitle/Y7_BT"
-msgstr ""
-"НАГРАДА ЗА УЧАСТИЕ В БЕТА-ТЕСТЕ И\n"
-"7 ЛЕТ В СТРОЮ"
-
-msgid "rewardsView/subTitle/Y8"
-msgstr "НАГРАДА ЗА %(gradientStart)s8 ЛЕТ%(gradientEnd)s В СТРОЮ"
-
-msgid "rewardsView/subTitle/Y8_BT"
-msgstr ""
-"НАГРАДА ЗА УЧАСТИЕ В БЕТА-ТЕСТЕ И\n"
-"8 ЛЕТ В СТРОЮ"
-
-msgid "rewardsView/subTitle/Y9"
-msgstr "НАГРАДА ЗА %(gradientStart)s9 ЛЕТ%(gradientEnd)s В СТРОЮ"
-
-msgid "rewardsView/subTitle/Y9_BT"
-msgstr ""
-"НАГРАДА ЗА УЧАСТИЕ В БЕТА-ТЕСТЕ И\n"
-"9 ЛЕТ В СТРОЮ"
 
 msgid "rewardsView/subTitle/otherRewards"
 msgstr "Также получено:"
@@ -254,14 +160,6 @@ msgstr "К ТЕХНИКЕ"
 
 msgid "rewardsView/title"
 msgstr "ПОЗДРАВЛЯЕМ!"
-
-msgid "specialItem/body"
-msgstr ""
-"Выдаются за боевые заслуги. После завершения события оставшиеся жетоны будут"
-" списаны."
-
-msgid "specialItem/header"
-msgstr "%(count)s шт. жетонов за выслугу лет"
 
 msgid "tooltip/restrictedMode"
 msgstr "Операция временно недоступна. Попробуйте позже."

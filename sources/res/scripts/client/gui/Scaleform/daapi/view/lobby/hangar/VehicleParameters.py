@@ -10,7 +10,7 @@ from gui.shared.formatters import text_styles
 from gui.shared.items_parameters import params_helper, formatters
 from gui.shared.items_parameters.comparator import PARAM_STATE
 from gui.shared.items_parameters.param_name_helper import getVehicleParameterText
-from gui.shared.items_parameters.params_helper import VehParamsBaseGenerator, getParameters, getCommonParam, isValidEmptyValue, SimplifiedBarVO
+from gui.shared.items_parameters.params_helper import VehParamsBaseGenerator, getParameters, getCommonParam, isValidEmptyValue, SimplifiedBarVO, UNIQUE_FORMATTING_PARAMS, PARAM_TO_UNIQ_KPI_TITLE_FORMATTER
 from items import vehicles
 
 class VehicleParameters(VehicleParametersMeta):
@@ -148,7 +148,8 @@ class _VehParamsGenerator(VehParamsBaseGenerator):
         if param.value:
             data, _ = super(_VehParamsGenerator, self)._makeExtraParamVO(param, parentID, highlight)
             isPositive = param.value >= 0
-            title = backport.text(getVehicleParameterText(param.name, isTTC=True, isPositive=isPositive))
+            uniqFormatter = PARAM_TO_UNIQ_KPI_TITLE_FORMATTER.get(param.name) if param.name in UNIQUE_FORMATTING_PARAMS else None
+            title = uniqFormatter(param) if uniqFormatter is not None else backport.text(getVehicleParameterText(param.name, isTTC=True, isPositive=isPositive))
             data.update({'titleText': text_styles.leadingText(text_styles.main(title), 2), 
                'valueText': formatters.colorizedFullFormatParameter(param, self._getExtraFormatters()), 
                'isEnabled': False, 

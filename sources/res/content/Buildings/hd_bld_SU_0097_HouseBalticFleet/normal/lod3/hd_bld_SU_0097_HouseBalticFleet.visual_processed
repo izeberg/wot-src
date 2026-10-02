@@ -150,6 +150,61 @@
 			<identifier>s_ramp_0</identifier>
 		</material>
 	</missingBspMaterial>
+	<missingBspMaterial>
+		<material>
+			<identifier>s_ramp_0</identifier>
+		</material>
+	</missingBspMaterial>
+	<missingBspMaterial>
+		<material>
+			<identifier>s_ramp_0</identifier>
+		</material>
+	</missingBspMaterial>
+	<missingBspMaterial>
+		<material>
+			<identifier>s_ramp_0</identifier>
+		</material>
+	</missingBspMaterial>
+	<missingBspMaterial>
+		<material>
+			<identifier>s_ramp_0</identifier>
+		</material>
+	</missingBspMaterial>
+	<missingBspMaterial>
+		<material>
+			<identifier>s_ramp_0</identifier>
+		</material>
+	</missingBspMaterial>
+	<missingBspMaterial>
+		<material>
+			<identifier>s_ramp_0</identifier>
+		</material>
+	</missingBspMaterial>
+	<missingBspMaterial>
+		<material>
+			<identifier>s_ramp_0</identifier>
+		</material>
+	</missingBspMaterial>
+	<missingBspMaterial>
+		<material>
+			<identifier>s_ramp_0</identifier>
+		</material>
+	</missingBspMaterial>
+	<missingBspMaterial>
+		<material>
+			<identifier>s_ramp_0</identifier>
+		</material>
+	</missingBspMaterial>
+	<missingBspMaterial>
+		<material>
+			<identifier>s_ramp_0</identifier>
+		</material>
+	</missingBspMaterial>
+	<missingBspMaterial>
+		<material>
+			<identifier>s_ramp_0</identifier>
+		</material>
+	</missingBspMaterial>
 	<renderSet>
 		<node>Scene Root</node>
 		<geometry>
@@ -675,65 +730,26 @@
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
+	<renderSet>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s_ramp_0.vertices</vertices>
+			<primitive>s_ramp_0.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_ramp_0</identifier>
+					<collisionFlags>131</collisionFlags>
+					<materialKind>0</materialKind>
+				</material>
+				<groupOrigin>24.171066 -0.218240 -0.000000</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
 	<boundingBox>
 		<min>12.522099 -1.000088 -36.919724</min>
 		<max>35.844540 18.967520 36.919765</max>
 	</boundingBox>
-	<missingBspMaterial>
-		<material>
-			<identifier>s_ramp_0</identifier>
-		</material>
-	</missingBspMaterial>
-	<missingBspMaterial>
-		<material>
-			<identifier>s_ramp_0</identifier>
-		</material>
-	</missingBspMaterial>
-	<missingBspMaterial>
-		<material>
-			<identifier>s_ramp_0</identifier>
-		</material>
-	</missingBspMaterial>
-	<missingBspMaterial>
-		<material>
-			<identifier>s_ramp_0</identifier>
-		</material>
-	</missingBspMaterial>
-	<missingBspMaterial>
-		<material>
-			<identifier>s_ramp_0</identifier>
-		</material>
-	</missingBspMaterial>
-	<missingBspMaterial>
-		<material>
-			<identifier>s_ramp_0</identifier>
-		</material>
-	</missingBspMaterial>
-	<missingBspMaterial>
-		<material>
-			<identifier>s_ramp_0</identifier>
-		</material>
-	</missingBspMaterial>
-	<missingBspMaterial>
-		<material>
-			<identifier>s_ramp_0</identifier>
-		</material>
-	</missingBspMaterial>
-	<missingBspMaterial>
-		<material>
-			<identifier>s_ramp_0</identifier>
-		</material>
-	</missingBspMaterial>
-	<missingBspMaterial>
-		<material>
-			<identifier>s_ramp_0</identifier>
-		</material>
-	</missingBspMaterial>
-	<missingBspMaterial>
-		<material>
-			<identifier>s_ramp_0</identifier>
-		</material>
-	</missingBspMaterial>
-	<geometrySize>143660</geometrySize>
-	<minUVDensity>0.000442</minUVDensity>
+	<geometrySize>145066</geometrySize>
+	<minUVDensity>0.000081</minUVDensity>
 </root>

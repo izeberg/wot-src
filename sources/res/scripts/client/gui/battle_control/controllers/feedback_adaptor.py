@@ -49,8 +49,7 @@ class BattleFeedbackAdaptor(IBattleController):
                  'onShotDone', 'onAddCommandReceived', 'setGoals', 'destroyGoal',
                  'onLocalKillGoalsUpdated', 'onEnemySPGShotReceived', '__arenaDP',
                  '__visible', '__pending', '__attrs', '__weakref__', '__arenaVisitor',
-                 '__devInfo', '__eventsCache', '__eManager', 'onArenaTimer', 'onPublicCounter',
-                 'onGeneratorCapture', 'onGeneratorStopCapture')
+                 '__devInfo', '__eventsCache', '__eManager')
 
     def __init__(self, setup):
         super(BattleFeedbackAdaptor, self).__init__()
@@ -86,10 +85,6 @@ class BattleFeedbackAdaptor(IBattleController):
         self.setGoals = Event.Event(self.__eManager)
         self.destroyGoal = Event.Event(self.__eManager)
         self.onLocalKillGoalsUpdated = Event.Event(self.__eManager)
-        self.onArenaTimer = Event.Event(self.__eManager)
-        self.onPublicCounter = Event.Event(self.__eManager)
-        self.onGeneratorCapture = Event.Event(self.__eManager)
-        self.onGeneratorStopCapture = Event.Event(self.__eManager)
 
     def getControllerID(self):
         return BATTLE_CTRL_ID.FEEDBACK

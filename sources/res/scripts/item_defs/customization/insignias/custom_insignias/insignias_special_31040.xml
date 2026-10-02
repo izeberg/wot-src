@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<itemGroup>
+		<name>BlackMarket_02_Insigna_138</name>
+		<userString>#vehicle_customization:insignias/special</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>insignias 50g notInShop</priceGroup>
+		<insignia>
+			<id>31040</id>
+			<texture>gui/maps/vehicles/decals/insignia/custom/BlackMarket_02_Insigna_138_3.dds</texture>
+		</insignia>
+		<tags>hiddenInUI</tags>
+	</itemGroup>
+</root>

@@ -28,7 +28,7 @@
 					</property>
 					<property>
 						g_emissionStrength
-						<Vector4>15.000000 2.000000 0.000000 0.000000</Vector4>
+						<Vector4>60.000000 15.000000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_enableAO
@@ -43,12 +43,12 @@
 						<Texture>content/Buildings/hd_bld_SU_0092_ChurchHolyFamily/hd_bld_SU_0092_ChurchHolyFamily_BANM.dds</Texture>
 					</property>
 					<property>
-						g_useEmissionColorAsTint
-						<Bool>true</Bool>
+						g_simpleEmissionColor
+						<Vector4>0.968627 0.737255 0.470588 0.000000</Vector4>
 					</property>
 					<property>
-						g_simpleEmissionColor
-						<Vector4>1.000000 0.643137 0.400000 0.000000</Vector4>
+						g_useEmissionColorAsTint
+						<Bool>true</Bool>
 					</property>
 				</material>
 				<groupOrigin>0.888632 29.598932 -0.145355</groupOrigin>
@@ -73,7 +73,7 @@
 					</property>
 					<property>
 						g_emissionStrength
-						<Vector4>6.000000 1.500000 0.000000 0.000000</Vector4>
+						<Vector4>60.000000 1.500000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_enableAO
@@ -89,7 +89,11 @@
 					</property>
 					<property>
 						g_simpleEmissionColor
-						<Vector4>1.000000 0.721569 0.400000 0.000000</Vector4>
+						<Vector4>0.968627 0.737255 0.470588 0.000000</Vector4>
+					</property>
+					<property>
+						g_useEmissionColorAsTint
+						<Bool>true</Bool>
 					</property>
 				</material>
 				<groupOrigin>-20.885693 42.371193 0.329407</groupOrigin>

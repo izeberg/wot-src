@@ -32,7 +32,7 @@ package net.wg.infrastructure.base.meta
       
       function as_setCurrentShell(param1:int) : void;
       
-      function as_addEquipmentSlot(param1:int, param2:Number, param3:Number, param4:int, param5:Number, param6:Number, param7:String, param8:String, param9:int, param10:String) : void;
+      function as_addEquipmentSlot(param1:int, param2:Number, param3:Number, param4:int, param5:Number, param6:Number, param7:String, param8:String, param9:int) : void;
       
       function as_showEquipmentSlots(param1:Boolean) : void;
       

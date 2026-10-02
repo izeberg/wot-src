@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-1.771858 -0.001106 -4.706091</min>
+		<max>1.771858 1.260566 3.767203</max>
+	</visibilityBox>
+	<parent>vehicles/intunion/Un20_M_767_Vepar/crash/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/intunion/Un20_M_767_Vepar/crash/lod0/Chassis</nodefullVisual>
+</root>

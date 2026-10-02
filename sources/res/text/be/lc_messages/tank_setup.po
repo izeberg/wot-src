@@ -863,6 +863,15 @@ msgstr "У вас няма прыдатнага эксперыментальна
 msgid "introduction/title/withoutEquipments/trophy"
 msgstr "У вас няма прыдатнага трафейнага абсталявання"
 
+msgid "kpi/bonus"
+msgstr "%(valueSign)s %(value)s"
+
+msgid "kpi/bonus/combined"
+msgstr "%(valueSign)s %(value)s / %(specValueSign)s %(specValue)s"
+
+msgid "kpi/bonus/combined/withoutSign"
+msgstr "%(value)s / %(specValue)s"
+
 msgid "kpi/bonus/longDescr/negative/demaskFoliageFactor"
 msgstr ""
 "ад скрытасці праціўніка, схаванага расліннасцю (як нерухомага, так і "
@@ -1053,6 +1062,24 @@ msgstr ""
 
 msgid "kpi/bonus/negative/equipmentPreparationTime"
 msgstr "ад часу падрыхтоўкі рыштунку"
+
+msgid "kpi/bonus/negative/extraAbilityParamChassisRotationSpeed"
+msgstr "от скорости поворота шасси"
+
+msgid "kpi/bonus/negative/extraAbilityParamGunClipCooldown"
+msgstr "от времени перезарядки"
+
+msgid "kpi/bonus/negative/extraAbilityParamShellDamage"
+msgstr "ад сярэдніх пашкоджанняў"
+
+msgid "kpi/bonus/negative/extraAbilityParamShellPiercing"
+msgstr "от средней бронепробиваемости"
+
+msgid "kpi/bonus/negative/extraAbilityParamShellSpeed"
+msgstr "от скорости полёта снаряда"
+
+msgid "kpi/bonus/negative/extraAbilityParamTurretRotationSpeed"
+msgstr "от скорости гориз. перевода прицела"
 
 msgid "kpi/bonus/negative/fireExtinguishingRate"
 msgstr "ад хуткасці гашэння пажару"
@@ -1336,6 +1363,24 @@ msgstr ""
 msgid "kpi/bonus/positive/equipmentPreparationTime"
 msgstr "да часу падрыхтоўкі рыштунку"
 
+msgid "kpi/bonus/positive/extraAbilityParamChassisRotationSpeed"
+msgstr "к скорости поворота шасси"
+
+msgid "kpi/bonus/positive/extraAbilityParamGunClipCooldown"
+msgstr "к скорости перезарядки"
+
+msgid "kpi/bonus/positive/extraAbilityParamShellDamage"
+msgstr "да сярэдніх пашкоджанняў"
+
+msgid "kpi/bonus/positive/extraAbilityParamShellPiercing"
+msgstr "к средней бронепробиваемости"
+
+msgid "kpi/bonus/positive/extraAbilityParamShellSpeed"
+msgstr "к скорости полёта снаряда"
+
+msgid "kpi/bonus/positive/extraAbilityParamTurretRotationSpeed"
+msgstr "к скорости гориз. перевода прицела"
+
 msgid "kpi/bonus/positive/fireExtinguishingRate"
 msgstr "да хуткасці гашэння пажару"
 
@@ -1593,6 +1638,24 @@ msgstr ""
 "ад скрытасці праціўніка\n"
 "ў руху"
 
+msgid "kpi/bonus/ttc/negative/extraAbilityParamChassisRotationSpeed"
+msgstr "от скорости поворота шасси"
+
+msgid "kpi/bonus/ttc/negative/extraAbilityParamGunClipCooldown"
+msgstr "от времени перезарядки"
+
+msgid "kpi/bonus/ttc/negative/extraAbilityParamShellDamage"
+msgstr "ад сярэдніх пашкоджанняў"
+
+msgid "kpi/bonus/ttc/negative/extraAbilityParamShellPiercing"
+msgstr "от средней бронепробиваемости"
+
+msgid "kpi/bonus/ttc/negative/extraAbilityParamShellSpeed"
+msgstr "от скорости полёта снаряда"
+
+msgid "kpi/bonus/ttc/negative/extraAbilityParamTurretRotationSpeed"
+msgstr "от скорости гориз. перевода прицела"
+
 msgid "kpi/bonus/ttc/negative/radiomanChanceToHitPerLevel"
 msgstr "ад абароны радыста ад раненняў"
 
@@ -1783,6 +1846,24 @@ msgid "kpi/bonus/ttc/positive/enemyModulesCrewCritChance"
 msgstr ""
 "да імавернасці паражэння модуляў і экіпажа\n"
 "праціўніка"
+
+msgid "kpi/bonus/ttc/positive/extraAbilityParamChassisRotationSpeed"
+msgstr "к скорости поворота шасси"
+
+msgid "kpi/bonus/ttc/positive/extraAbilityParamGunClipCooldown"
+msgstr "к скорости перезарядки"
+
+msgid "kpi/bonus/ttc/positive/extraAbilityParamShellDamage"
+msgstr "да сярэдніх пашкоджанняў"
+
+msgid "kpi/bonus/ttc/positive/extraAbilityParamShellPiercing"
+msgstr "к средней бронепробиваемости"
+
+msgid "kpi/bonus/ttc/positive/extraAbilityParamShellSpeed"
+msgstr "к скорости полёта снаряда"
+
+msgid "kpi/bonus/ttc/positive/extraAbilityParamTurretRotationSpeed"
+msgstr "к скорости гориз. перевода прицела"
 
 msgid "kpi/bonus/ttc/positive/fireExtinguishingRate"
 msgstr "да хуткасці гашэння пажару"
@@ -2005,11 +2086,47 @@ msgstr "c"
 msgid "kpi/bonus/valueTypes/vehicleOwnSpottingTime"
 msgstr "c"
 
+msgid "kpi/negative"
+msgstr "штраф"
+
+msgid "kpi/negative/capital"
+msgstr "Штраф"
+
+msgid "kpi/positive"
+msgstr "бонус"
+
+msgid "kpi/positive/capital"
+msgstr "Бонус"
+
+msgid "kpi/specValue/negative/extraAbilityParamSpeedBonus"
+msgstr "от заднего хода"
+
+msgid "kpi/specValue/positive/extraAbilityParamSpeedBonus"
+msgstr "к заднему ходу"
+
+msgid "kpi/specValue/title/extraAbilityParamSpeedBonus"
+msgstr "к заднему ходу (км/ч)"
+
 msgid "kpi/title/abilityDurationBonus"
 msgstr "Бонус да часу дзеяння мадыфікацыі (с)"
 
 msgid "kpi/title/chargeTimeBonus"
 msgstr "Час залпу (с)"
+
+msgid "kpi/title/extraAbilityParamGunClipCooldown"
+msgstr "Бонус к перезарядке (полная)"
+
+msgid "kpi/title/extraAbilityParamShellDamage"
+msgstr "Бонус к среднему урону"
+
+msgid "kpi/title/extraAbilityParamShellPiercing"
+msgstr "Штраф к средней бронепробиваемости"
+
+msgid "kpi/title/extraAbilityParamShellSpeed"
+msgstr "Штраф к скорости полёта снаряда"
+
+msgid "kpi/title/extraAbilityParamTurretRotationSpeed"
+msgstr "Бонус к скорости гориз. перевода прицела"
 
 msgid "kpi/title/limitsForGunBoost"
 msgstr "Колькасць улічаных траплянняў (паводле колькасці / часу)"
@@ -2061,6 +2178,18 @@ msgstr "Бонус да сярэдніх пашкоджанняў (пры акт
 
 msgid "kpi/title/vehicleRamDamageResistance"
 msgstr "Бонус ад атрыманых пашкоджанняў пры таране"
+
+msgid "kpi/value/negative/extraAbilityParamSpeedBonus"
+msgstr "от макс. скорости"
+
+msgid "kpi/value/positive/extraAbilityParamSpeedBonus"
+msgstr "к макс. скорости"
+
+msgid "kpi/value/title/extraAbilityParamChassisRotationSpeed"
+msgstr "к скорости поворота шасси"
+
+msgid "kpi/value/title/extraAbilityParamSpeedBonus"
+msgstr "к макс. скорости"
 
 msgid "section/battleAbilities"
 msgstr "РЭЗЕРВЫ"

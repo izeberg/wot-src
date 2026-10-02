@@ -1619,7 +1619,8 @@ SYS_MESSAGE_TYPE = Enumeration('systemMessageType', [
  'tradingCaravanMessage',
  'immediatelyOpenBoxReward',
  'excludedMapSlotKillSwitch',
- 'bonusExcludedMapPremium'])
+ 'bonusExcludedMapPremium',
+ 'sessionProgressRewards'])
 SYS_MESSAGE_IMPORTANCE = Enumeration('systemMessageImportance', [
  'normal',
  'high'])

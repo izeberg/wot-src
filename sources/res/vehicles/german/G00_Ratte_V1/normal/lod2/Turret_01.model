@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-5.165921 -0.132905 -8.703500</min>
+		<max>5.149118 3.622578 5.118275</max>
+	</visibilityBox>
+	<extent>96.000000</extent>
+	<nodefullVisual>vehicles/german/G00_Ratte_V1/normal/lod2/Turret_01</nodefullVisual>
+</root>

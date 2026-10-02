@@ -69,6 +69,7 @@
 		<node>Tank_BlendBone</node>
 		<geometry>
 			<vertices>track_RShape.vertices</vertices>
+			<stream>track_RShape.uv2</stream>
 			<primitive>track_RShape.indices</primitive>
 			<primitiveGroup>
 				0
@@ -76,10 +77,7 @@
 					<identifier>track_mat_R_skinned</identifier>
 					<property>
 						crash_coefficient
-						<Float>
-							0.3
-							<!--BW_String-->
-						</Float>
+						<Float>0.300000</Float>
 					</property>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
@@ -108,12 +106,8 @@
 						doubleSided
 						<Bool>true</Bool>
 					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
-					</property>
 				</material>
-				<groupOrigin>1.213401 0.449976 -0.069632</groupOrigin>
+				<groupOrigin>1.206766 0.451727 -0.040310</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -123,6 +117,7 @@
 		<node>V_BlendBone</node>
 		<geometry>
 			<vertices>track_LShape.vertices</vertices>
+			<stream>track_LShape.uv2</stream>
 			<primitive>track_LShape.indices</primitive>
 			<primitiveGroup>
 				0
@@ -130,10 +125,7 @@
 					<identifier>track_mat_L_skinned</identifier>
 					<property>
 						crash_coefficient
-						<Float>
-							0.3
-							<!--BW_String-->
-						</Float>
+						<Float>0.300000</Float>
 					</property>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
@@ -162,20 +154,16 @@
 						doubleSided
 						<Bool>true</Bool>
 					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
-					</property>
 				</material>
-				<groupOrigin>-1.205265 0.479377 -0.038901</groupOrigin>
+				<groupOrigin>-1.205265 0.479377 -0.035021</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-1.343291 0.015025 -2.408193</min>
-		<max>1.356767 0.943730 2.547457</max>
+		<min>-1.343291 -0.000001 -2.455657</min>
+		<max>1.356767 0.943730 2.536277</max>
 	</boundingBox>
-	<geometrySize>17840</geometrySize>
-	<minUVDensity>0.665996</minUVDensity>
+	<geometrySize>48240</geometrySize>
+	<minUVDensity>0.407464</minUVDensity>
 </root>

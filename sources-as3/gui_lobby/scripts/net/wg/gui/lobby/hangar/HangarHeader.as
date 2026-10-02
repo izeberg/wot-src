@@ -24,7 +24,6 @@ package net.wg.gui.lobby.hangar
    import net.wg.gui.lobby.hangar.quests.ResourceWellEntryPoint;
    import net.wg.gui.lobby.hangar.quests.SecondaryEntryPoint;
    import net.wg.gui.lobby.hangar.quests.StrongholdWidget;
-   import net.wg.gui.lobby.hangar.quests.WhiteTigerWidget;
    import net.wg.gui.lobby.hangar.quests.WinbackWidget;
    import net.wg.gui.lobby.rankedBattles19.components.widget.RankedBattlesHangarWidget;
    import net.wg.infrastructure.base.meta.IHangarHeaderMeta;
@@ -401,8 +400,6 @@ package net.wg.gui.lobby.hangar
                return App.instance.utils.classFactory.getComponent(Linkages.BATTLE_ROYALE_TOURNAMENT_WIDGET_UI,BattleRoyaleTournamentWidget);
             case HANGAR_ALIASES.COMP7_WIDGET:
                return new Comp7Widget();
-            case HANGAR_ALIASES.WT_HEADER_WIDGET:
-               return new WhiteTigerWidget();
             case HANGAR_ALIASES.EPIC_WIDGET:
                return App.instance.utils.classFactory.getComponent(Linkages.EPIC_WIDGET,EpicBattlesWidget);
             case FUNRANDOM_ALIASES.FUN_RANDOM_HANGAR_WIDGET:

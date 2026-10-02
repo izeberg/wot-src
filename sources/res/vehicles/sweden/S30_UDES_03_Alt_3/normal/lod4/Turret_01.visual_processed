@@ -38,7 +38,7 @@
 				<material>
 					<fx>shaders/std_effects/PBS_tank.fx</fx>
 					<materialKind>0</materialKind>
-					<identifier>tank_turret_01</identifier>
+					<identifier>tank_proxy</identifier>
 					<collisionFlags>0</collisionFlags>
 					<property>
 						diffuseMap
@@ -65,14 +65,14 @@
 						<Int>0</Int>
 					</property>
 				</material>
-				<groupOrigin>-0.006539 0.671667 -0.545864</groupOrigin>
+				<groupOrigin>-0.003829 1.165384 -0.533695</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-1.418975 -0.014035 -2.590764</min>
-		<max>1.405897 1.357369 1.499035</max>
+		<min>-1.418975 -0.027260 -2.572967</min>
+		<max>1.411318 2.358028 1.505577</max>
 	</boundingBox>
-	<geometrySize>6144</geometrySize>
-	<minUVDensity>0.003756</minUVDensity>
+	<geometrySize>5964</geometrySize>
+	<minUVDensity>0.003488</minUVDensity>
 </root>

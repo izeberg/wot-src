@@ -315,10 +315,6 @@
 						normalMap
 						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_Kaliningrad_01_ANM.dds</Texture>
 					</property>
-					<property>
-						doubleSided
-						<Bool>true</Bool>
-					</property>
 				</material>
 				<groupOrigin>-1.296225 7.551989 0.367882</groupOrigin>
 			</primitiveGroup>

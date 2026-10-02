@@ -477,6 +477,12 @@
 				<slots/>
 			</block>
 			<block>
+				<class>If</class>
+				<id>If_4</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
 				<class>ComponentMethod</class>
 				<id>ComponentMethod_2</id>
 				<params>
@@ -487,24 +493,6 @@
 					</param>
 				</params>
 				<slots/>
-			</block>
-			<block>
-				<class>SetVariable</class>
-				<id>SetVariable_5</id>
-				<buddy>Variable_5</buddy>
-				<params>
-					<param>
-						BoolT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>value</name>
-						<const>\true\</const>
-					</slot>
-				</slots>
 			</block>
 			<block>
 				<class>ComponentMethod</class>
@@ -547,6 +535,63 @@
 						<const>\0.000000\</const>
 					</slot>
 				</slots>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_11</id>
+				<buddy>Variable_7</buddy>
+				<params>
+					<param>
+						GameObjectT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_13</id>
+				<buddy>Variable_4</buddy>
+				<params>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>SetVariable</class>
+				<id>SetVariable_5</id>
+				<buddy>Variable_5</buddy>
+				<params>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>value</name>
+						<const>\true\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_10</id>
+				<buddy>Variable_6</buddy>
+				<params>
+					<param>
+						GameObjectT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
 			</block>
 			<block>
 				<class>ContextEventReceive</class>
@@ -603,32 +648,6 @@
 				<slots/>
 			</block>
 			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_11</id>
-				<buddy>Variable_7</buddy>
-				<params>
-					<param>
-						GameObjectT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_10</id>
-				<buddy>Variable_6</buddy>
-				<params>
-					<param>
-						GameObjectT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
 				<class>Choice</class>
 				<id>Choice_1</id>
 				<params>
@@ -662,6 +681,36 @@
 				<class>IsPlayerVehicle</class>
 				<id>IsPlayerVehicle_2</id>
 				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>ComponentMethod</class>
+				<id>ComponentMethod_5</id>
+				<params>
+					<param>
+						Animator.stop
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_5</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>ComponentMethod</class>
+				<id>ComponentMethod_3</id>
+				<params>
+					<param>
+						Sound3D.play
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
 				<slots/>
 			</block>
 			<block>
@@ -719,30 +768,6 @@
 				</slots>
 			</block>
 			<block>
-				<class>ComponentMethod</class>
-				<id>ComponentMethod_5</id>
-				<params>
-					<param>
-						Animator.stop
-						<name>Component Type</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>ComponentMethod</class>
-				<id>ComponentMethod_3</id>
-				<params>
-					<param>
-						Sound3D.play
-						<name>Component Type</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
 				<class>SetVariable</class>
 				<id>SetVariable_11</id>
 				<buddy>Variable_5</buddy>
@@ -774,8 +799,8 @@
 			</block>
 			<block>
 				<class>GetVariable</class>
-				<id>GetVariable_14</id>
-				<buddy>Variable_6</buddy>
+				<id>GetVariable_12</id>
+				<buddy>Variable_8</buddy>
 				<params>
 					<param>
 						GameObjectT
@@ -787,8 +812,21 @@
 			</block>
 			<block>
 				<class>GetVariable</class>
-				<id>GetVariable_12</id>
-				<buddy>Variable_8</buddy>
+				<id>GetVariable_15</id>
+				<buddy>Variable_4</buddy>
+				<params>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_14</id>
+				<buddy>Variable_6</buddy>
 				<params>
 					<param>
 						GameObjectT
@@ -1137,27 +1175,27 @@
 			</connection>
 			<connection>
 				<from>ComponentMethod_8</from>
+				<input>input</input>
+				<to>If_4</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>GetVariable_13</from>
+				<input>value</input>
+				<to>If_4</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>If_4</from>
 				<input>in</input>
 				<to>ComponentMethod_2</to>
-				<output>out</output>
+				<output>true</output>
 			</connection>
 			<connection>
 				<from>GetVariable_11</from>
 				<input>gameObject</input>
 				<to>ComponentMethod_2</to>
 				<output>value</output>
-			</connection>
-			<connection>
-				<from>Choice_1</from>
-				<input>input</input>
-				<to>SetVariable_5</to>
-				<output>o0</output>
-			</connection>
-			<connection>
-				<from>Choice_1</from>
-				<input>input</input>
-				<to>SetVariable_5</to>
-				<output>o1</output>
 			</connection>
 			<connection>
 				<from>SetVariable_5</from>
@@ -1182,6 +1220,18 @@
 				<input>gameObject</input>
 				<to>ComponentMethod_8</to>
 				<output>value</output>
+			</connection>
+			<connection>
+				<from>Choice_1</from>
+				<input>input</input>
+				<to>SetVariable_5</to>
+				<output>o0</output>
+			</connection>
+			<connection>
+				<from>Choice_1</from>
+				<input>input</input>
+				<to>SetVariable_5</to>
+				<output>o1</output>
 			</connection>
 			<connection>
 				<from>ContextEventReceive_1</from>
@@ -1250,6 +1300,42 @@
 				<output>value</output>
 			</connection>
 			<connection>
+				<from>SetVariable_6</from>
+				<input>in</input>
+				<to>ComponentMethod_5</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>GetVariable_10</from>
+				<input>gameObject</input>
+				<to>ComponentMethod_5</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>ComponentMethod_5</from>
+				<input>input</input>
+				<to>If_5</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>GetVariable_15</from>
+				<input>value</input>
+				<to>If_5</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>If_5</from>
+				<input>in</input>
+				<to>ComponentMethod_3</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>GetVariable_12</from>
+				<input>gameObject</input>
+				<to>ComponentMethod_3</to>
+				<output>value</output>
+			</connection>
+			<connection>
 				<from>GetVariable_2</from>
 				<input>array</input>
 				<to>FindInArray_1</to>
@@ -1265,30 +1351,6 @@
 				<from>GetVariable_3</from>
 				<input>a</input>
 				<to>CompareIntegers_1</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>SetVariable_6</from>
-				<input>in</input>
-				<to>ComponentMethod_5</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>GetVariable_10</from>
-				<input>gameObject</input>
-				<to>ComponentMethod_5</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>ComponentMethod_5</from>
-				<input>in</input>
-				<to>ComponentMethod_3</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>GetVariable_12</from>
-				<input>gameObject</input>
-				<to>ComponentMethod_3</to>
 				<output>value</output>
 			</connection>
 			<connection>

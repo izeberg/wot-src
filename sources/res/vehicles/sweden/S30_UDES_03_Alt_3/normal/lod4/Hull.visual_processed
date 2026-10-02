@@ -9,24 +9,6 @@
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
 		<node>
-			<identifier>lod0</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-			<node>
-				<identifier>hull</identifier>
-				<transform>
-					<row0>1.000000 0.000000 0.000000</row0>
-					<row1>0.000000 1.000000 0.000000</row1>
-					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 -0.781544 0.000000</row3>
-				</transform>
-			</node>
-		</node>
-		<node>
 			<identifier>nodes_01</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
@@ -112,19 +94,23 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<primitive>indices</primitive>
+			<vertices>hull_Shape.vertices</vertices>
+			<primitive>hull_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_hull_01</identifier>
-					<property>
-						selfIllumination
-						<Float>0.000000</Float>
-					</property>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>0</materialKind>
 					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<materialKind>0</materialKind>
+					<identifier>tank_proxy</identifier>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>vehicles/sweden/S30_UDES_03_Alt_3/UDES_03_Alt_3_proxy_AM.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
 					<property>
 						metallicGlossMap
 						<Texture>vehicles/sweden/S30_UDES_03_Alt_3/UDES_03_Alt_3_proxy_GMM.dds</Texture>
@@ -134,26 +120,26 @@
 						<Texture>vehicles/sweden/S30_UDES_03_Alt_3/UDES_03_Alt_3_proxy_ANM.dds</Texture>
 					</property>
 					<property>
-						diffuseMap
-						<Texture>vehicles/sweden/S30_UDES_03_Alt_3/UDES_03_Alt_3_proxy_AM.dds</Texture>
-					</property>
-					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/sweden/S30_UDES_03_Alt_3/UDES_03_Alt_3_proxy_AO.dds</Texture>
 					</property>
 					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						alphaReference
+						<Int>0</Int>
 					</property>
 				</material>
-				<groupOrigin>0.013295 0.089994 0.007320</groupOrigin>
+				<groupOrigin>-0.009852 0.091242 0.038489</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-1.579109 -0.345079 -3.017219</min>
-		<max>1.605698 0.525068 3.031859</max>
+		<min>-1.596144 -0.343307 -2.931602</min>
+		<max>1.576439 0.525791 3.008579</max>
 	</boundingBox>
-	<geometrySize>1780</geometrySize>
-	<minUVDensity>0.010267</minUVDensity>
+	<geometrySize>1384</geometrySize>
+	<minUVDensity>0.004307</minUVDensity>
 </root>

@@ -175,7 +175,6 @@
 			<tooltip_counter_value_label>&lt;font color=&quot;#D3D3CA&quot; size=&quot;12&quot; face=&quot;$TextFont&quot;&gt;%(text)s&lt;/font&gt;</tooltip_counter_value_label>
 			<tooltip_params_style>&lt;font color=&quot;#4a4a3f&quot; size=&quot;12&quot; face=&quot;$FieldFont&quot;&gt;%(text)s&lt;/font&gt;</tooltip_params_style>
 			<tooltip_crit_label>&lt;IMG SRC=&quot;img://gui/maps/icons/library/crits/%(image)sSmall.png&quot; width=&quot;16&quot; height=&quot;16&quot; vspace=&quot;-5&quot;/&gt;&lt;font color=&quot;#7b7969&quot;&gt;%(value)s&lt;/font&gt;</tooltip_crit_label>
-			<tooltip_crit_label_with_count>&lt;IMG SRC=&quot;img://gui/maps/icons/library/crits/%(image)sSmall.png&quot; width=&quot;16&quot; height=&quot;16&quot; vspace=&quot;-5&quot;/&gt;&lt;font color=&quot;#7b7969&quot;&gt;%(value)s (x%(count)s)&lt;/font&gt;</tooltip_crit_label_with_count>
 			<tooltip_two_liner>%(line1)s&lt;br/&gt;%(line2)s</tooltip_two_liner>
 			<tooltip_three_liner>%(line1)s&lt;br/&gt;%(line2)s&lt;br/&gt;%(line3)s</tooltip_three_liner>
 			<tooltip_four_liner>%(line1)s&lt;br/&gt;%(line2)s&lt;br/&gt;%(line3)s&lt;br/&gt;%(line4)s</tooltip_four_liner>
@@ -225,6 +224,7 @@
 				<tie>&lt;FONT COLOR=&quot;#595950&quot;&gt;_(#tooltips:fortification/calendarEvent/battleResultTooltip/plundered): &lt;/FONT&gt;&lt;FONT color=&apos;#A29B70&apos;&gt;%(robbed)s&lt;/FONT&gt; &lt;IMG SRC=&quot;img://gui/maps/icons/library/fortification/nut.png&quot; width=&quot;16&quot; height=&quot;16&quot; vspace=&quot;-4&quot; hspace=&quot;0&quot; /&gt;&lt;BR/&gt;&lt;FONT SIZE=&apos;14&apos; COLOR=&apos;#595950&apos;&gt;_(#tooltips:fortification/calendarEvent/battleResultTooltip/battlesCount):&lt;/FONT&gt; &lt;FONT COLOR=&apos;#E9E2BF&apos;&gt;%(battlesCount)s&lt;/FONT&gt;&lt;BR/&gt;&lt;FONT COLOR=&apos;#595950&apos;&gt;_(#tooltips:fortification/calendarEvent/battleResultTooltip/buildingsSeized):&lt;/FONT&gt; &lt;FONT COLOR=&apos;#E9E2BF&apos;&gt;%(buildings)s&lt;/FONT&gt;</tie>
 			</fort_calendar_event>
 			<advanced_text>&lt;img src=&apos;img://gui/maps/icons/lobby/iconBtnAlt.png&apos; width=&apos;28&apos; height=&apos;25&apos; vspace=&apos;-10&apos; hspace=&apos;0&apos; align=&apos;left&apos;/&gt;  &lt;font size=&apos;14&apos; color=&apos;#8C8C7E&apos; face=&apos;$FieldFont&apos;&gt;%(message)s &lt;/font&gt;</advanced_text>
+			<advanced_counter>&lt;font face=&apos;$FieldFont&apos; size=&apos;14&apos; color=&apos;#CBAC77&apos;&gt;&lt;P ALIGN=&quot;RIGHT&quot;&gt;%(text)s&lt;/P&gt;&lt;/font&gt;</advanced_counter>
 		</tooltips_complex>
 		<tooltips>
 			<sell_slot_action>&lt;TEXTFORMAT leftmargin=&quot;25&quot;&gt;%(separator)s&lt;/TEXTFORMAT&gt;&lt;br&gt;%(foraction)s&lt;br&gt;&lt;FONT FACE=&quot;$TextFont&quot; SIZE=&quot;5&quot; KERNING=&quot;0&quot;&gt;&amp;nbsp;&lt;/FONT&gt;&lt;br&gt;&lt;TEXTFORMAT leftmargin=&quot;55&quot;&gt;%(prices)s&lt;/TEXTFORMAT&gt;</sell_slot_action>
@@ -755,15 +755,6 @@ _(#invites:invites/text/fort/defence) &lt;font color=&quot;#c9c9b6&quot;&gt;%(cl
 				<crewBook>&lt;img src=&apos;img://gui/maps/icons/crewBooks/books/small/%(type)s_%(nation)s.png&apos;/&gt; &lt;font color=&apos;#CED9D9&apos;&gt;x%(value)s&lt;/font&gt;</crewBook>
 				<anyBlueprints>_(#quests:bonusName/blueprints/any) &lt;font color=&apos;#CED9D9&apos;&gt;%(value)s&lt;/font&gt;</anyBlueprints>
 				<anyNationalBlueprints>_(#quests:bonusName/blueprints/nation/any) &lt;font color=&apos;#CED9D9&apos;&gt;%(value)s&lt;/font&gt;</anyNationalBlueprints>
-				<customizations>
-					<camouflage>_(#quests:bonusName/camouflage) &lt;font color=&apos;#CED9D9&apos;&gt;x%(value)s&lt;/font&gt;</camouflage>
-					<emblem>_(#quests:bonusName/emblem) &lt;font color=&apos;#CED9D9&apos;&gt;x%(value)s&lt;/font&gt;</emblem>
-					<inscription>_(#quests:bonusName/inscription) &lt;font color=&apos;#CED9D9&apos;&gt;x%(value)s&lt;/font&gt;</inscription>
-					<projection_decal>_(#quests:bonusName/projectionDecal) &lt;font color=&apos;#CED9D9&apos;&gt;x%(value)s&lt;/font&gt;</projection_decal>
-					<decal>_(#quests:bonusName/decal) &lt;font color=&apos;#CED9D9&apos;&gt;x%(value)s&lt;/font&gt;</decal>
-					<paint>_(#quests:bonusName/paint) &lt;font color=&apos;#CED9D9&apos;&gt;x%(value)s&lt;/font&gt;</paint>
-					<style>_(#quests:bonusName/style) &lt;font color=&apos;#CED9D9&apos;&gt;x%(value)s&lt;/font&gt;</style>
-				</customizations>
 				<crewSkinText>_(#quests:bonuses/crewSkin/text)</crewSkinText>
 				<crewBookText>_(#quests:bonuses/crewBook/text)</crewBookText>
 				<dossierAchive>_(#quests:bonuses/dossier/achive)</dossierAchive>
@@ -1017,7 +1008,6 @@ _(#invites:invites/text/fort/defence) &lt;font color=&quot;#c9c9b6&quot;&gt;%(cl
 			<order_in_progress>&lt;img src=&apos;img://gui/maps/icons/library/fortification/order_in_progress.png&apos; width=&apos;24&apos; height=&apos;24&apos; vspace=&apos;-7&apos; hspace=&apos;0&apos;/&gt;</order_in_progress>
 			<clock>&lt;img src=&apos;img://gui/maps/icons/library/fortification/clock.png&apos; width=&apos;16&apos; height=&apos;16&apos; vspace=&apos;-2&apos; hspace=&apos;0&apos;/&gt;</clock>
 			<clockGold>&lt;img src=&apos;img://gui/maps/icons/library/time_icon.png&apos; width=&apos;16&apos; height=&apos;16&apos; vspace=&apos;-3&apos; hspace=&apos;0&apos;/&gt;</clockGold>
-			<clockSh>&lt;img src=&apos;img://gui/maps/icons/library/clock_icon_s.png&apos; width=&apos;24&apos; height=&apos;24&apos; vspace=&apos;%(vspace)d&apos; hspace=&apos;0&apos;/&gt;</clockSh>
 			<notAvailable>&lt;img src=&apos;img://gui/maps/icons/buttons/tab_sort_button/notAvailable.png&apos; width=&apos;12&apos; height=&apos;12&apos; vspace=&apos;-1&apos; hspace=&apos;0&apos;/&gt;</notAvailable>
 			<notAvailableRed>&lt;img src=&apos;img://gui/maps/icons/library/redNotAvailable.png&apos; width=&apos;12&apos; height=&apos;12&apos; vspace=&apos;0&apos; hspace=&apos;0&apos;/&gt;</notAvailableRed>
 			<level5>&lt;img src=&apos;img://gui/maps/icons/levels/tank_level_5.png&apos; width=&apos;14&apos; height=&apos;16&apos; vspace=&apos;-4&apos; hspace=&apos;0&apos;/&gt;</level5>

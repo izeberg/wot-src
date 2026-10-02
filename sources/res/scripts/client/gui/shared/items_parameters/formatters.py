@@ -164,12 +164,14 @@ _kpiFormatNoSignEndingForEveryValueList = KPIFormatter(formatter=kpiFormatNoSign
 _kpiNoSignNoEndingList = KPIFormatter(formatter=kpiFormatNoSignList, separator=None, addEnding=False)
 _kpiWithSpec = KPIFormatter(formatter=kpiFormatWithSpec, separator=None, addEnding=True)
 _kpiNoSignWithSpec = KPIFormatter(formatter=kpiFormatNoSignWithSpec, separator=None, addEnding=True)
+_kpiNoSignWithSpecNoEnding = KPIFormatter(formatter=kpiFormatNoSignWithSpec, separator=None, addEnding=False)
 KPI_FORMATTERS = {KPI.Name.DAMAGED_MODULES_DETECTION_TIME: _kpiNoSignValue, 
    KPI.Name.ART_NOTIFICATION_DELAY_FACTOR: _kpiNoSignValue, 
    KPI.Name.LIMITS_FOR_GUN_BOOST: _kpiNoSignWithSpec, 
    KPI.Name.VEHICLE_GUN_AND_GUN_CLIP_COOLDOWN: _kpiWithSpec, 
    KPI.Name.VEHICLE_GUN_DAMAGE: _kpiNoSignWithSpec, 
    KPI.Name.VEHICLE_GUN_SPEC_DAMAGE: _kpiWithSpec, 
+   KPI.Name.VEHICLE_EXTRA_ABILITY_SPEED_BONUS: _kpiNoSignWithSpecNoEnding, 
    KPI.Name.TEMPERATURE_STATES_COUNT: _kpiNoSignNoEndingValue, 
    KPI.Name.TEMPERATURE_HEATING_TIME: _kpiNoSignNoEndingList, 
    KPI.Name.TEMPERATURE_COOLING_TIME: _kpiNoSignNoEndingList, 

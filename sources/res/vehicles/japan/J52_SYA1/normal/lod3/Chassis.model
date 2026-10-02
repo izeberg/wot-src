@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/japan/J52_SYA1/normal/lod4/Chassis</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.639147 0.029964 -3.788153</min>
+		<max>1.639147 1.166229 3.801423</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/japan/J52_SYA1/normal/lod3/Chassis</nodefullVisual>
+</root>

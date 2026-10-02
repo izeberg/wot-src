@@ -3,8 +3,6 @@ package
    public class PERSONAL_RESERVES
    {
       
-      public static const HANGARENTRY_ONLYONCEHINT:String = "#personal_reserves:hangarEntry/onlyOnceHint";
-      
       public static const HANGARENTRY_MINUTE:String = "#personal_reserves:hangarEntry/minute";
       
       public static const HANGARENTRYTOOLTIP_TOOLTIPDISABLED:String = "#personal_reserves:hangarEntryTooltip/tooltipDisabled";
@@ -32,8 +30,6 @@ package
       public static const INTRO_PAGES_DESCRIPTION5:String = "#personal_reserves:intro/pages/description5";
       
       public static const INTRO_BUTTONS_CLOSE:String = "#personal_reserves:intro/buttons/close";
-      
-      public static const ACTIVATION_ONLYONCEHINT:String = "#personal_reserves:activation/onlyOnceHint";
       
       public static const ACTIVATION_TITLE:String = "#personal_reserves:activation/title";
       

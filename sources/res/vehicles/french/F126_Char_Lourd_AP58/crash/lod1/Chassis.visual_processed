@@ -91,7 +91,7 @@
 					</property>
 					<property>
 						alphaReference
-						<Int>64</Int>
+						<Int>128</Int>
 					</property>
 					<property>
 						alphaTestEnable
@@ -111,7 +111,7 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>1.402740 0.350685 0.000000 0.000000</Vector4>
+						<Vector4>3.500000 0.860000 0.000000 0.000000</Vector4>
 					</property>
 				</material>
 				<groupOrigin>1.396438 0.592850 0.063856</groupOrigin>
@@ -146,7 +146,7 @@
 					</property>
 					<property>
 						alphaReference
-						<Int>64</Int>
+						<Int>128</Int>
 					</property>
 					<property>
 						alphaTestEnable
@@ -166,7 +166,7 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>1.402740 0.350685 0.000000 0.000000</Vector4>
+						<Vector4>3.500000 0.860000 0.000000 0.000000</Vector4>
 					</property>
 				</material>
 				<groupOrigin>-1.396401 0.593985 0.009840</groupOrigin>
@@ -178,6 +178,6 @@
 		<min>-1.699084 -0.000147 -3.876459</min>
 		<max>1.699090 1.188059 3.748747</max>
 	</boundingBox>
-	<geometrySize>44928</geometrySize>
+	<geometrySize>52800</geometrySize>
 	<minUVDensity>1.126380</minUVDensity>
 </root>

@@ -289,7 +289,7 @@
 						<type>BoolT</type>
 					</param>
 					<param>
-						c3RhcnRfYWN0aXZl b25BY3RpdmF0ZQ== b25Db29sZG93bg==
+						c3RhcnRfYWN0aXZl b25BY3RpdmF0ZQ== b25Db29sZG93bg== b25FeGhhdXN0ZWQ=
 						<name>Initial Value</name>
 						<type>StringArrayT</type>
 					</param>
@@ -297,7 +297,7 @@
 				<slots>
 					<slot>
 						<name>default</name>
-						<const>\c3RhcnRfYWN0aXZl b25BY3RpdmF0ZQ== b25Db29sZG93bg==\</const>
+						<const>\c3RhcnRfYWN0aXZl b25BY3RpdmF0ZQ== b25Db29sZG93bg== b25FeGhhdXN0ZWQ=\</const>
 					</slot>
 				</slots>
 			</block>
@@ -326,6 +326,249 @@
 						<type>BoolT</type>
 					</param>
 				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>Variable</class>
+				<id>Variable_10</id>
+				<params>
+					<param>
+						vehicle
+						<name>Variable Name</name>
+						<type>StringT</type>
+					</param>
+					<param>
+						VehicleT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+					<param>
+						false
+						<name>External Init</name>
+						<type>BoolT</type>
+					</param>
+					<param>
+						false
+						<name>Is Const</name>
+						<type>BoolT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>default</name>
+						<const>\\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>StartScript</class>
+				<id>StartScript_1</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>SetVariable</class>
+				<id>SetVariable_1</id>
+				<buddy>Variable_2</buddy>
+				<params>
+					<param>
+						GameObjectT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>SetVariable</class>
+				<id>SetVariable_3</id>
+				<buddy>Variable_1</buddy>
+				<params>
+					<param>
+						GameObjectT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>SetVariable</class>
+				<id>SetVariable_2</id>
+				<buddy>Variable_3</buddy>
+				<params>
+					<param>
+						GameObjectT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>SetVariable</class>
+				<id>SetVariable_4</id>
+				<buddy>Variable_4</buddy>
+				<params>
+					<param>
+						GameObjectT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>SetVariable</class>
+				<id>SetVariable_5</id>
+				<buddy>Variable_5</buddy>
+				<params>
+					<param>
+						GameObjectT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>SetVariable</class>
+				<id>SetVariable_10</id>
+				<buddy>Variable_10</buddy>
+				<params>
+					<param>
+						VehicleT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>GameObjectToVehicle</class>
+				<id>GameObjectToVehicle_5</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>FindFirstNode</class>
+				<id>FindFirstNode_5</id>
+				<params/>
+				<slots>
+					<slot>
+						<name>name</name>
+						<const>\turret\</const>
+					</slot>
+					<slot>
+						<name>includingInactive</name>
+						<const>\true\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>FindFirstNode</class>
+				<id>FindFirstNode_4</id>
+				<params/>
+				<slots>
+					<slot>
+						<name>name</name>
+						<const>\disableEngineEffects\</const>
+					</slot>
+					<slot>
+						<name>includingInactive</name>
+						<const>\true\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>FindFirstNode</class>
+				<id>FindFirstNode_6</id>
+				<params/>
+				<slots>
+					<slot>
+						<name>name</name>
+						<const>\hull\</const>
+					</slot>
+					<slot>
+						<name>includingInactive</name>
+						<const>\true\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>FindFirstNode</class>
+				<id>FindFirstNode_1</id>
+				<params/>
+				<slots>
+					<slot>
+						<name>name</name>
+						<const>\abilityStopSound\</const>
+					</slot>
+					<slot>
+						<name>includingInactive</name>
+						<const>\true\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>FindFirstNode</class>
+				<id>FindFirstNode_2</id>
+				<params/>
+				<slots>
+					<slot>
+						<name>name</name>
+						<const>\abilityStartSound\</const>
+					</slot>
+					<slot>
+						<name>includingInactive</name>
+						<const>\true\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>GetVehicleGameObject</class>
+				<id>GetVehicleGameObject_5</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>FindFirstNode</class>
+				<id>FindFirstNode_3</id>
+				<params/>
+				<slots>
+					<slot>
+						<name>name</name>
+						<const>\Sounds\</const>
+					</slot>
+					<slot>
+						<name>includingInactive</name>
+						<const>\true\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_11</id>
+				<buddy>Variable_7</buddy>
+				<params>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_3</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>OnUnderWaterSwitch</class>
+				<id>OnUnderWaterSwitch_1</id>
+				<params/>
 				<slots/>
 			</block>
 			<block>
@@ -423,248 +666,22 @@
 				<slots/>
 			</block>
 			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_16</id>
+				<buddy>Variable_10</buddy>
+				<params>
+					<param>
+						VehicleT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
 				<class>CompareGameObjects</class>
 				<id>CompareGameObjects_1</id>
 				<params/>
-				<slots/>
-			</block>
-			<block>
-				<class>GameObjectToVehicle</class>
-				<id>GameObjectToVehicle_4</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
-				<class>GameObjectToVehicle</class>
-				<id>GameObjectToVehicle_3</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
-				<class>GetVehicleGameObject</class>
-				<id>GetVehicleGameObject_4</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
-				<class>GetVehicleGameObject</class>
-				<id>GetVehicleGameObject_3</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
-				<class>StartScript</class>
-				<id>StartScript_1</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
-				<class>SetVariable</class>
-				<id>SetVariable_1</id>
-				<buddy>Variable_2</buddy>
-				<params>
-					<param>
-						GameObjectT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>SetVariable</class>
-				<id>SetVariable_3</id>
-				<buddy>Variable_1</buddy>
-				<params>
-					<param>
-						GameObjectT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>SetVariable</class>
-				<id>SetVariable_2</id>
-				<buddy>Variable_3</buddy>
-				<params>
-					<param>
-						GameObjectT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>SetVariable</class>
-				<id>SetVariable_4</id>
-				<buddy>Variable_4</buddy>
-				<params>
-					<param>
-						GameObjectT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>SetVariable</class>
-				<id>SetVariable_5</id>
-				<buddy>Variable_5</buddy>
-				<params>
-					<param>
-						GameObjectT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>FindFirstNode</class>
-				<id>FindFirstNode_1</id>
-				<params/>
-				<slots>
-					<slot>
-						<name>name</name>
-						<const>\abilityStopSound\</const>
-					</slot>
-					<slot>
-						<name>includingInactive</name>
-						<const>\true\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>FindFirstNode</class>
-				<id>FindFirstNode_2</id>
-				<params/>
-				<slots>
-					<slot>
-						<name>name</name>
-						<const>\abilityStartSound\</const>
-					</slot>
-					<slot>
-						<name>includingInactive</name>
-						<const>\true\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>FindFirstNode</class>
-				<id>FindFirstNode_6</id>
-				<params/>
-				<slots>
-					<slot>
-						<name>name</name>
-						<const>\hull\</const>
-					</slot>
-					<slot>
-						<name>includingInactive</name>
-						<const>\true\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>FindFirstNode</class>
-				<id>FindFirstNode_5</id>
-				<params/>
-				<slots>
-					<slot>
-						<name>name</name>
-						<const>\turret\</const>
-					</slot>
-					<slot>
-						<name>includingInactive</name>
-						<const>\true\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>FindFirstNode</class>
-				<id>FindFirstNode_4</id>
-				<params/>
-				<slots>
-					<slot>
-						<name>name</name>
-						<const>\disableEngineEffects\</const>
-					</slot>
-					<slot>
-						<name>includingInactive</name>
-						<const>\true\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>FindFirstNode</class>
-				<id>FindFirstNode_3</id>
-				<params/>
-				<slots>
-					<slot>
-						<name>name</name>
-						<const>\Sounds\</const>
-					</slot>
-					<slot>
-						<name>includingInactive</name>
-						<const>\true\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_11</id>
-				<buddy>Variable_7</buddy>
-				<params>
-					<param>
-						BoolT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>If</class>
-				<id>If_3</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
-				<class>OnUnderWaterSwitch</class>
-				<id>OnUnderWaterSwitch_1</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
-				<class>GetVehicleGameObject</class>
-				<id>GetVehicleGameObject_2</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
-				<class>GameObjectToVehicle</class>
-				<id>GameObjectToVehicle_2</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
-				<class>ContextGetSelf</class>
-				<id>ContextGetSelf_1</id>
-				<params>
-					<param>
-						CGFGameObjectContext
-						<name>Context Name</name>
-						<type>StringT</type>
-					</param>
-					<param>
-						getSelf
-						<name>Member Name</name>
-						<type>StringT</type>
-					</param>
-				</params>
 				<slots/>
 			</block>
 			<block>
@@ -686,27 +703,15 @@
 				</slots>
 			</block>
 			<block>
-				<class>ActivateGameObject</class>
-				<id>ActivateGameObject_1</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
 				<class>If</class>
 				<id>If_2</id>
 				<params/>
 				<slots/>
 			</block>
 			<block>
-				<class>Macro</class>
-				<id>Macro_1</id>
-				<params>
-					<param>
-						activate_effects
-						<name>Macro Name</name>
-						<type>StringT</type>
-					</param>
-				</params>
+				<class>ActivateGameObject</class>
+				<id>ActivateGameObject_1</id>
+				<params/>
 				<slots/>
 			</block>
 			<block>
@@ -718,6 +723,18 @@
 						BoolT
 						<name>Variable Type</name>
 						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>Macro</class>
+				<id>Macro_1</id>
+				<params>
+					<param>
+						activate_effects
+						<name>Macro Name</name>
+						<type>StringT</type>
 					</param>
 				</params>
 				<slots/>
@@ -736,6 +753,12 @@
 				<slots/>
 			</block>
 			<block>
+				<class>IsUnderwater</class>
+				<id>IsUnderwater_1</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
 				<class>GetVariable</class>
 				<id>GetVariable_3</id>
 				<buddy>Variable_3</buddy>
@@ -746,12 +769,6 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>IsUnderwater</class>
-				<id>IsUnderwater_1</id>
-				<params/>
 				<slots/>
 			</block>
 			<block>
@@ -769,11 +786,50 @@
 			</block>
 			<block>
 				<class>GetVariable</class>
+				<id>GetVariable_17</id>
+				<buddy>Variable_10</buddy>
+				<params>
+					<param>
+						VehicleT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>GetVariable</class>
 				<id>GetVariable_5</id>
 				<buddy>Variable_4</buddy>
 				<params>
 					<param>
 						GameObjectT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_15</id>
+				<buddy>Variable_10</buddy>
+				<params>
+					<param>
+						VehicleT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_18</id>
+				<buddy>Variable_10</buddy>
+				<params>
+					<param>
+						VehicleT
 						<name>Variable Type</name>
 						<type>TypeT</type>
 					</param>
@@ -815,12 +871,6 @@
 				</slots>
 			</block>
 			<block>
-				<class>Print</class>
-				<id>Print_1</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
 				<class>SetVariable</class>
 				<id>SetVariable_6</id>
 				<buddy>Variable_6</buddy>
@@ -844,7 +894,7 @@
 				<id>Choice_1</id>
 				<params>
 					<param>
-						3
+						4
 						<name>Output Count</name>
 						<type>IntT</type>
 					</param>
@@ -865,6 +915,17 @@
 				<slots/>
 			</block>
 			<block>
+				<class>CompareIntegers</class>
+				<id>CompareIntegers_1</id>
+				<params/>
+				<slots>
+					<slot>
+						<name>b</name>
+						<const>\-1\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
 				<class>FindInArray</class>
 				<id>FindInArray_1</id>
 				<params>
@@ -878,17 +939,6 @@
 					<slot>
 						<name>start</name>
 						<const>\0\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>CompareIntegers</class>
-				<id>CompareIntegers_1</id>
-				<params/>
-				<slots>
-					<slot>
-						<name>b</name>
-						<const>\-1\</const>
 					</slot>
 				</slots>
 			</block>
@@ -994,6 +1044,23 @@
 				<slots/>
 			</block>
 			<block>
+				<class>ContextGetSelf</class>
+				<id>ContextGetSelf_1</id>
+				<params>
+					<param>
+						CGFGameObjectContext
+						<name>Context Name</name>
+						<type>StringT</type>
+					</param>
+					<param>
+						getSelf
+						<name>Member Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
 				<class>GetVariable</class>
 				<id>GetVariable_2</id>
 				<buddy>Variable_6</buddy>
@@ -1036,108 +1103,6 @@
 				<from>ContextGetSelf_1</from>
 				<input>default</input>
 				<to>Variable_4</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>OnPlanPostAttached_1</from>
-				<input>input</input>
-				<to>If_5</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>CompareGameObjects_1</from>
-				<input>value</input>
-				<to>If_5</to>
-				<output>res</output>
-			</connection>
-			<connection>
-				<from>If_5</from>
-				<input>input</input>
-				<to>SetVariable_9</to>
-				<output>true</output>
-			</connection>
-			<connection>
-				<from>ListenEvent_1</from>
-				<input>input</input>
-				<to>BroadcastEvent_2</to>
-				<output>exec</output>
-			</connection>
-			<connection>
-				<from>GameObjectToVehicle_4</from>
-				<input>scope</input>
-				<to>BroadcastEvent_2</to>
-				<output>vehicle</output>
-			</connection>
-			<connection>
-				<from>ContextGetSelf_1</from>
-				<input>gameObject</input>
-				<to>BroadcastEvent_2</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>SetVariable_9</from>
-				<input>input</input>
-				<to>BroadcastEvent_1</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>GameObjectToVehicle_3</from>
-				<input>scope</input>
-				<to>BroadcastEvent_1</to>
-				<output>vehicle</output>
-			</connection>
-			<connection>
-				<from>ContextGetSelf_1</from>
-				<input>gameObject</input>
-				<to>BroadcastEvent_1</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>GetVariable_14</from>
-				<input>active</input>
-				<to>ListenEvent_1</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>ContextGetSelf_1</from>
-				<input>scope</input>
-				<to>ListenEvent_1</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>ContextGetSelf_1</from>
-				<input>a</input>
-				<to>CompareGameObjects_1</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>OnPlanPostAttached_1</from>
-				<input>b</input>
-				<to>CompareGameObjects_1</to>
-				<output>object</output>
-			</connection>
-			<connection>
-				<from>GetVehicleGameObject_4</from>
-				<input>gameObject</input>
-				<to>GameObjectToVehicle_4</to>
-				<output>vehicleObject</output>
-			</connection>
-			<connection>
-				<from>GetVehicleGameObject_3</from>
-				<input>gameObject</input>
-				<to>GameObjectToVehicle_3</to>
-				<output>vehicleObject</output>
-			</connection>
-			<connection>
-				<from>ContextGetSelf_1</from>
-				<input>gameObject</input>
-				<to>GetVehicleGameObject_4</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>ContextGetSelf_1</from>
-				<input>gameObject</input>
-				<to>GetVehicleGameObject_3</to>
 				<output>value</output>
 			</connection>
 			<connection>
@@ -1201,6 +1166,42 @@
 				<output>node</output>
 			</connection>
 			<connection>
+				<from>SetVariable_5</from>
+				<input>input</input>
+				<to>SetVariable_10</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>GameObjectToVehicle_5</from>
+				<input>value</input>
+				<to>SetVariable_10</to>
+				<output>vehicle</output>
+			</connection>
+			<connection>
+				<from>GetVehicleGameObject_5</from>
+				<input>gameObject</input>
+				<to>GameObjectToVehicle_5</to>
+				<output>vehicleObject</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>FindFirstNode_5</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>FindFirstNode_4</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>FindFirstNode_6</to>
+				<output>value</output>
+			</connection>
+			<connection>
 				<from>FindFirstNode_3</from>
 				<input>gameObject</input>
 				<to>FindFirstNode_1</to>
@@ -1215,19 +1216,7 @@
 			<connection>
 				<from>ContextGetSelf_1</from>
 				<input>gameObject</input>
-				<to>FindFirstNode_6</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>ContextGetSelf_1</from>
-				<input>gameObject</input>
-				<to>FindFirstNode_5</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>ContextGetSelf_1</from>
-				<input>gameObject</input>
-				<to>FindFirstNode_4</to>
+				<to>GetVehicleGameObject_5</to>
 				<output>value</output>
 			</connection>
 			<connection>
@@ -1261,22 +1250,88 @@
 				<output>out</output>
 			</connection>
 			<connection>
-				<from>GameObjectToVehicle_2</from>
+				<from>GetVariable_16</from>
 				<input>vehicle</input>
 				<to>OnUnderWaterSwitch_1</to>
-				<output>vehicle</output>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>OnPlanPostAttached_1</from>
+				<input>input</input>
+				<to>If_5</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>CompareGameObjects_1</from>
+				<input>value</input>
+				<to>If_5</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>If_5</from>
+				<input>input</input>
+				<to>SetVariable_9</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>ListenEvent_1</from>
+				<input>input</input>
+				<to>BroadcastEvent_2</to>
+				<output>exec</output>
+			</connection>
+			<connection>
+				<from>GetVariable_18</from>
+				<input>scope</input>
+				<to>BroadcastEvent_2</to>
+				<output>value</output>
 			</connection>
 			<connection>
 				<from>ContextGetSelf_1</from>
 				<input>gameObject</input>
-				<to>GetVehicleGameObject_2</to>
+				<to>BroadcastEvent_2</to>
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>GetVehicleGameObject_2</from>
+				<from>SetVariable_9</from>
+				<input>input</input>
+				<to>BroadcastEvent_1</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>GetVariable_15</from>
+				<input>scope</input>
+				<to>BroadcastEvent_1</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
 				<input>gameObject</input>
-				<to>GameObjectToVehicle_2</to>
-				<output>vehicleObject</output>
+				<to>BroadcastEvent_1</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>GetVariable_14</from>
+				<input>active</input>
+				<to>ListenEvent_1</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>scope</input>
+				<to>ListenEvent_1</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>a</input>
+				<to>CompareGameObjects_1</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>OnPlanPostAttached_1</from>
+				<input>b</input>
+				<to>CompareGameObjects_1</to>
+				<output>object</output>
 			</connection>
 			<connection>
 				<from>Choice_1</from>
@@ -1291,18 +1346,6 @@
 				<output>o1</output>
 			</connection>
 			<connection>
-				<from>SetVariable_7</from>
-				<input>in</input>
-				<to>ActivateGameObject_1</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>GetVariable_10</from>
-				<input>gameObject</input>
-				<to>ActivateGameObject_1</to>
-				<output>value</output>
-			</connection>
-			<connection>
 				<from>ActivateGameObject_1</from>
 				<input>input</input>
 				<to>If_2</to>
@@ -1313,6 +1356,18 @@
 				<input>value</input>
 				<to>If_2</to>
 				<output>isUnderwater</output>
+			</connection>
+			<connection>
+				<from>SetVariable_7</from>
+				<input>in</input>
+				<to>ActivateGameObject_1</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>GetVariable_10</from>
+				<input>gameObject</input>
+				<to>ActivateGameObject_1</to>
+				<output>value</output>
 			</connection>
 			<connection>
 				<from>If_2</from>
@@ -1351,10 +1406,10 @@
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>GameObjectToVehicle_2</from>
+				<from>GetVariable_17</from>
 				<input>vehicle</input>
 				<to>IsUnderwater_1</to>
-				<output>vehicle</output>
+				<output>value</output>
 			</connection>
 			<connection>
 				<from>If_1</from>
@@ -1364,18 +1419,6 @@
 			</connection>
 			<connection>
 				<from>ContextEventReceive_1</from>
-				<input>input</input>
-				<to>Print_1</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>ContextEventReceive_1</from>
-				<input>value</input>
-				<to>Print_1</to>
-				<output>eventName</output>
-			</connection>
-			<connection>
-				<from>Print_1</from>
 				<input>input</input>
 				<to>SetVariable_6</to>
 				<output>out</output>
@@ -1411,6 +1454,12 @@
 				<output>value</output>
 			</connection>
 			<connection>
+				<from>GetVariable_2</from>
+				<input>a</input>
+				<to>CompareIntegers_1</to>
+				<output>value</output>
+			</connection>
+			<connection>
 				<from>GetVariable_1</from>
 				<input>array</input>
 				<to>FindInArray_1</to>
@@ -1423,16 +1472,16 @@
 				<output>eventName</output>
 			</connection>
 			<connection>
-				<from>GetVariable_2</from>
-				<input>a</input>
-				<to>CompareIntegers_1</to>
-				<output>value</output>
+				<from>Choice_1</from>
+				<input>input</input>
+				<to>SetVariable_8</to>
+				<output>o2</output>
 			</connection>
 			<connection>
 				<from>Choice_1</from>
 				<input>input</input>
 				<to>SetVariable_8</to>
-				<output>o2</output>
+				<output>o3</output>
 			</connection>
 			<connection>
 				<from>SetVariable_8</from>

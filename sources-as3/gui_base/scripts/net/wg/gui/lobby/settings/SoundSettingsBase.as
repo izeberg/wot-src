@@ -7,6 +7,7 @@ package net.wg.gui.lobby.settings
    import net.wg.gui.components.advanced.InviteIndicator;
    import net.wg.gui.components.controls.CheckBox;
    import net.wg.gui.components.controls.DropdownMenu;
+   import net.wg.gui.components.controls.HyperLink;
    import net.wg.gui.components.controls.IconTextButton;
    import net.wg.gui.components.controls.InfoIcon;
    import net.wg.gui.components.controls.LabelControl;
@@ -25,6 +26,8 @@ package net.wg.gui.lobby.settings
        
       
       public var masterVolumeToggleCheckbox:CheckBox = null;
+      
+      public var systemMixerVolumeDisabledLink:HyperLink = null;
       
       public var masterVolumeLabel:LabelControl = null;
       
@@ -302,6 +305,9 @@ package net.wg.gui.lobby.settings
          this.masterVolumeToggleCheckbox.label = SETTINGS.SOUNDS_MASTERVOLUMETOGGLE;
          this.masterVolumeLabel.text = SETTINGS.SOUNDS_MASTERVOLUME;
          this.masterVolumeValue.textAlign = TextFormatAlign.RIGHT;
+         this.systemMixerVolumeDisabledLink.label = SETTINGS.SOUNDS_SYSTEMMIXERVOLUMEDISABLEDLINK;
+         this.systemMixerVolumeDisabledLink.forceFocusView = true;
+         registerToolTip(this.systemMixerVolumeDisabledLink,SettingsConfigHelper.MASTER_VOLUME_SYSTEM_OFF_LINK);
          registerToolTip(this.bulbVoicesDropDown,SettingsConfigHelper.BULB_VOICES);
          registerToolTip(this.bulbVoicesLabel,SettingsConfigHelper.BULB_VOICES);
          registerToolTip(this.masterVolumeToggleCheckbox,SettingsConfigHelper.MASTER_VOLUME_TOGGLE);
@@ -418,6 +424,8 @@ package net.wg.gui.lobby.settings
          this.vivoxForm = null;
          this.specialForm.dispose();
          this.specialForm = null;
+         this.systemMixerVolumeDisabledLink.dispose();
+         this.systemMixerVolumeDisabledLink = null;
          super.onDispose();
       }
    }

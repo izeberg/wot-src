@@ -66,25 +66,24 @@
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
 		<node>Tank_BlendBone</node>
+		<node>V_BlendBone</node>
 		<geometry>
-			<vertices>track_L_Shape.vertices</vertices>
-			<primitive>track_L_Shape.indices</primitive>
+			<vertices>chassis_L_Shape.vertices</vertices>
+			<primitive>chassis_L_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_proxy_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
-					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
-					</property>
+					<materialKind>0</materialKind>
+					<identifier>tank_proxy_skinned</identifier>
+					<collisionFlags>0</collisionFlags>
 					<property>
 						diffuseMap
 						<Texture>vehicles/russian/R223_T_54B_1958/T_54B_1958_proxy_AM.dds</Texture>
 					</property>
 					<property>
-						excludeMaskAndAOMap
-						<Texture>vehicles/russian/R223_T_54B_1958/T_54B_1958_proxy_AO.dds</Texture>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<property>
 						metallicGlossMap
@@ -94,8 +93,10 @@
 						normalMap
 						<Texture>vehicles/russian/R223_T_54B_1958/T_54B_1958_proxy_ANM.dds</Texture>
 					</property>
-					<collisionFlags>255</collisionFlags>
-					<materialKind>0</materialKind>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/russian/R223_T_54B_1958/T_54B_1958_proxy_AO.dds</Texture>
+					</property>
 				</material>
 				<groupOrigin>-1.321345 0.534805 -0.204287</groupOrigin>
 			</primitiveGroup>
@@ -104,25 +105,24 @@
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
 		<node>Tank_BlendBone</node>
+		<node>V_BlendBone</node>
 		<geometry>
-			<vertices>track_R_Shape.vertices</vertices>
-			<primitive>track_R_Shape.indices</primitive>
+			<vertices>chassis_R_Shape.vertices</vertices>
+			<primitive>chassis_R_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_proxy_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
-					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
-					</property>
+					<materialKind>0</materialKind>
+					<identifier>tank_proxy_skinned</identifier>
+					<collisionFlags>0</collisionFlags>
 					<property>
 						diffuseMap
 						<Texture>vehicles/russian/R223_T_54B_1958/T_54B_1958_proxy_AM.dds</Texture>
 					</property>
 					<property>
-						excludeMaskAndAOMap
-						<Texture>vehicles/russian/R223_T_54B_1958/T_54B_1958_proxy_AO.dds</Texture>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<property>
 						metallicGlossMap
@@ -132,8 +132,10 @@
 						normalMap
 						<Texture>vehicles/russian/R223_T_54B_1958/T_54B_1958_proxy_ANM.dds</Texture>
 					</property>
-					<collisionFlags>255</collisionFlags>
-					<materialKind>0</materialKind>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/russian/R223_T_54B_1958/T_54B_1958_proxy_AO.dds</Texture>
+					</property>
 				</material>
 				<groupOrigin>1.321345 0.534805 0.198207</groupOrigin>
 			</primitiveGroup>

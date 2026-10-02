@@ -10,6 +10,33 @@
 		<blocks>
 			<block>
 				<class>Variable</class>
+				<id>Variable_2</id>
+				<params>
+					<param>
+						abilityShot
+						<name>Variable Name</name>
+						<type>StringT</type>
+					</param>
+					<param>
+						GameObjectT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+					<param>
+						false
+						<name>External Init</name>
+						<type>BoolT</type>
+					</param>
+					<param>
+						false
+						<name>Is Const</name>
+						<type>BoolT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>Variable</class>
 				<id>Variable_6</id>
 				<params>
 					<param>
@@ -41,33 +68,6 @@
 				<params>
 					<param>
 						abilityStopSound
-						<name>Variable Name</name>
-						<type>StringT</type>
-					</param>
-					<param>
-						GameObjectT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-					<param>
-						false
-						<name>External Init</name>
-						<type>BoolT</type>
-					</param>
-					<param>
-						false
-						<name>Is Const</name>
-						<type>BoolT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>Variable</class>
-				<id>Variable_8</id>
-				<params>
-					<param>
-						appearance_GO
 						<name>Variable Name</name>
 						<type>StringT</type>
 					</param>
@@ -128,60 +128,6 @@
 			</block>
 			<block>
 				<class>Variable</class>
-				<id>Variable_2</id>
-				<params>
-					<param>
-						disableEngineEffects
-						<name>Variable Name</name>
-						<type>StringT</type>
-					</param>
-					<param>
-						GameObjectT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-					<param>
-						false
-						<name>External Init</name>
-						<type>BoolT</type>
-					</param>
-					<param>
-						false
-						<name>Is Const</name>
-						<type>BoolT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>Variable</class>
-				<id>Variable_3</id>
-				<params>
-					<param>
-						hull_GO
-						<name>Variable Name</name>
-						<type>StringT</type>
-					</param>
-					<param>
-						GameObjectT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-					<param>
-						false
-						<name>External Init</name>
-						<type>BoolT</type>
-					</param>
-					<param>
-						false
-						<name>Is Const</name>
-						<type>BoolT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>Variable</class>
 				<id>Variable_13</id>
 				<params>
 					<param>
@@ -219,10 +165,10 @@
 			</block>
 			<block>
 				<class>Variable</class>
-				<id>Variable_7</id>
+				<id>Variable_3</id>
 				<params>
 					<param>
-						isDustActive
+						isPlayerActivated
 						<name>Variable Name</name>
 						<type>StringT</type>
 					</param>
@@ -251,152 +197,6 @@
 					<slot>
 						<name>default</name>
 						<const>\false\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>Variable</class>
-				<id>Variable_4</id>
-				<params>
-					<param>
-						isPlayerActivateAbility
-						<name>Variable Name</name>
-						<type>StringT</type>
-					</param>
-					<param>
-						BoolT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-					<param>
-						false
-						<name>External Init</name>
-						<type>BoolT</type>
-					</param>
-					<param>
-						false
-						<name>Is Const</name>
-						<type>BoolT</type>
-					</param>
-					<param>
-						false
-						<name>Initial Value</name>
-						<type>BoolT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>default</name>
-						<const>\false\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>Variable</class>
-				<id>Variable_9</id>
-				<params>
-					<param>
-						ram_animation_duration
-						<name>Variable Name</name>
-						<type>StringT</type>
-					</param>
-					<param>
-						FloatT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-					<param>
-						false
-						<name>External Init</name>
-						<type>BoolT</type>
-					</param>
-					<param>
-						false
-						<name>Is Const</name>
-						<type>BoolT</type>
-					</param>
-					<param>
-						0.000000
-						<name>Initial Value</name>
-						<type>FloatT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>default</name>
-						<const>\0.000000\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>Variable</class>
-				<id>Variable_10</id>
-				<params>
-					<param>
-						ram_left
-						<name>Variable Name</name>
-						<type>StringT</type>
-					</param>
-					<param>
-						StringT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-					<param>
-						false
-						<name>External Init</name>
-						<type>BoolT</type>
-					</param>
-					<param>
-						false
-						<name>Is Const</name>
-						<type>BoolT</type>
-					</param>
-					<param>
-						<name>Initial Value</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>default</name>
-						<const>\\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>Variable</class>
-				<id>Variable_15</id>
-				<params>
-					<param>
-						ram_right
-						<name>Variable Name</name>
-						<type>StringT</type>
-					</param>
-					<param>
-						StringT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-					<param>
-						false
-						<name>External Init</name>
-						<type>BoolT</type>
-					</param>
-					<param>
-						false
-						<name>Is Const</name>
-						<type>BoolT</type>
-					</param>
-					<param>
-						<name>Initial Value</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>default</name>
-						<const>\\</const>
 					</slot>
 				</slots>
 			</block>
@@ -534,58 +334,22 @@
 				</slots>
 			</block>
 			<block>
-				<class>SetVariable</class>
-				<id>SetVariable_15</id>
-				<buddy>Variable_10</buddy>
-				<params>
-					<param>
-						StringT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>value</name>
-						<const>\ram_left_dfd\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>SetVariable</class>
-				<id>SetVariable_16</id>
-				<buddy>Variable_15</buddy>
-				<params>
-					<param>
-						StringT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>value</name>
-						<const>\ram_right_dfd\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>SetVariable</class>
-				<id>SetVariable_14</id>
-				<buddy>Variable_9</buddy>
-				<params>
-					<param>
-						FloatT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
 				<class>StartScript</class>
 				<id>StartScript_1</id>
 				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>SetVariable</class>
+				<id>SetVariable_1</id>
+				<buddy>Variable_1</buddy>
+				<params>
+					<param>
+						VehicleT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
 				<slots/>
 			</block>
 			<block>
@@ -629,44 +393,6 @@
 			</block>
 			<block>
 				<class>SetVariable</class>
-				<id>SetVariable_9</id>
-				<buddy>Variable_8</buddy>
-				<params>
-					<param>
-						GameObjectT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>ComponentMethod</class>
-				<id>ComponentMethod_10</id>
-				<params>
-					<param>
-						Animator.getDurationByName
-						<name>Component Type</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>SetVariable</class>
-				<id>SetVariable_1</id>
-				<buddy>Variable_1</buddy>
-				<params>
-					<param>
-						VehicleT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>SetVariable</class>
 				<id>SetVariable_3</id>
 				<buddy>Variable_2</buddy>
 				<params>
@@ -679,89 +405,9 @@
 				<slots/>
 			</block>
 			<block>
-				<class>SetVariable</class>
-				<id>SetVariable_5</id>
-				<buddy>Variable_3</buddy>
-				<params>
-					<param>
-						GameObjectT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>Choice</class>
-				<id>Choice_2</id>
-				<params>
-					<param>
-						2
-						<name>Output Count</name>
-						<type>IntT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>SetVariable</class>
-				<id>SetVariable_17</id>
-				<buddy>Variable_10</buddy>
-				<params>
-					<param>
-						StringT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>value</name>
-						<const>\ram_left_fwd\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>SetVariable</class>
-				<id>SetVariable_18</id>
-				<buddy>Variable_15</buddy>
-				<params>
-					<param>
-						StringT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>value</name>
-						<const>\ram_right_fwd\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
 				<class>GameObjectToVehicle</class>
 				<id>GameObjectToVehicle_2</id>
 				<params/>
-				<slots/>
-			</block>
-			<block>
-				<class>GetVehicleAppearanceGameObject</class>
-				<id>GetVehicleAppearanceGameObject_1</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_28</id>
-				<buddy>Variable_10</buddy>
-				<params>
-					<param>
-						StringT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
 				<slots/>
 			</block>
 			<block>
@@ -801,22 +447,7 @@
 				<slots>
 					<slot>
 						<name>name</name>
-						<const>\disableEngineEffects\</const>
-					</slot>
-					<slot>
-						<name>includingInactive</name>
-						<const>\true\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>FindFirstNode</class>
-				<id>FindFirstNode_2</id>
-				<params/>
-				<slots>
-					<slot>
-						<name>name</name>
-						<const>\hull_GO\</const>
+						<const>\abilityShot\</const>
 					</slot>
 					<slot>
 						<name>includingInactive</name>
@@ -863,19 +494,6 @@
 				<slots/>
 			</block>
 			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_18</id>
-				<buddy>Variable_3</buddy>
-				<params>
-					<param>
-						GameObjectT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
 				<class>ContextGetSelf</class>
 				<id>ContextGetSelf_1</id>
 				<params>
@@ -893,23 +511,6 @@
 				<slots/>
 			</block>
 			<block>
-				<class>GetGameSetting</class>
-				<id>GetGameSetting_1</id>
-				<params>
-					<param>
-						int
-						<name>Game Setting Type</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>settingName</name>
-						<const>\RENDER_PIPELINE\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
 				<class>FindFirstNode</class>
 				<id>FindFirstNode_3</id>
 				<params/>
@@ -923,31 +524,6 @@
 						<const>\true\</const>
 					</slot>
 				</slots>
-			</block>
-			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_6</id>
-				<buddy>Variable_13</buddy>
-				<params>
-					<param>
-						BoolT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>If</class>
-				<id>If_4</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
-				<class>OnUnderWaterSwitch</class>
-				<id>OnUnderWaterSwitch_1</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>GetVariable</class>
@@ -1027,6 +603,19 @@
 				<slots/>
 			</block>
 			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_4</id>
+				<buddy>Variable_1</buddy>
+				<params>
+					<param>
+						VehicleT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
 				<class>ListenEvent</class>
 				<id>ListenEvent_1</id>
 				<params>
@@ -1045,7 +634,7 @@
 			</block>
 			<block>
 				<class>GetVariable</class>
-				<id>GetVariable_8</id>
+				<id>GetVariable_3</id>
 				<buddy>Variable_1</buddy>
 				<params>
 					<param>
@@ -1059,38 +648,6 @@
 			<block>
 				<class>CompareGameObjects</class>
 				<id>CompareGameObjects_1</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_3</id>
-				<buddy>Variable_1</buddy>
-				<params>
-					<param>
-						VehicleT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_4</id>
-				<buddy>Variable_1</buddy>
-				<params>
-					<param>
-						VehicleT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>If</class>
-				<id>If_8</id>
 				<params/>
 				<slots/>
 			</block>
@@ -1113,9 +670,21 @@
 				</slots>
 			</block>
 			<block>
-				<class>ActivateGameObject</class>
-				<id>ActivateGameObject_1</id>
+				<class>If</class>
+				<id>If_2</id>
 				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>ComponentMethod</class>
+				<id>ComponentMethod_3</id>
+				<params>
+					<param>
+						Sound3D.play
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
 				<slots/>
 			</block>
 			<block>
@@ -1137,44 +706,6 @@
 			</block>
 			<block>
 				<class>GetVariable</class>
-				<id>GetVariable_15</id>
-				<buddy>Variable_6</buddy>
-				<params>
-					<param>
-						GameObjectT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>Macro</class>
-				<id>Macro_6</id>
-				<params>
-					<param>
-						activateEffects
-						<name>Macro Name</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_1</id>
-				<buddy>Variable_2</buddy>
-				<params>
-					<param>
-						GameObjectT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>GetVariable</class>
 				<id>GetVariable_29</id>
 				<buddy>Variable_16</buddy>
 				<params>
@@ -1188,30 +719,11 @@
 			</block>
 			<block>
 				<class>GetVariable</class>
-				<id>GetVariable_11</id>
-				<buddy>Variable_4</buddy>
+				<id>GetVariable_1</id>
+				<buddy>Variable_6</buddy>
 				<params>
 					<param>
-						BoolT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>IsUnderwater</class>
-				<id>IsUnderwater_1</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_7</id>
-				<buddy>Variable_1</buddy>
-				<params>
-					<param>
-						VehicleT
+						GameObjectT
 						<name>Variable Type</name>
 						<type>TypeT</type>
 					</param>
@@ -1220,8 +732,8 @@
 			</block>
 			<block>
 				<class>GetVariable</class>
-				<id>GetVariable_5</id>
-				<buddy>Variable_13</buddy>
+				<id>GetVariable_8</id>
+				<buddy>Variable_3</buddy>
 				<params>
 					<param>
 						BoolT
@@ -1232,33 +744,13 @@
 				<slots/>
 			</block>
 			<block>
-				<class>SetVariable</class>
-				<id>SetVariable_10</id>
-				<buddy>Variable_11</buddy>
+				<class>Macro</class>
+				<id>Macro_1</id>
 				<params>
 					<param>
-						IntT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>If</class>
-				<id>If_7</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
-				<class>SetVariable</class>
-				<id>SetVariable_8</id>
-				<buddy>Variable_4</buddy>
-				<params>
-					<param>
-						BoolT
-						<name>Variable Type</name>
-						<type>TypeT</type>
+						CheckIsPlayerActivateMechanics
+						<name>Macro Name</name>
+						<type>StringT</type>
 					</param>
 				</params>
 				<slots/>
@@ -1286,6 +778,25 @@
 				</slots>
 			</block>
 			<block>
+				<class>SetVariable</class>
+				<id>SetVariable_10</id>
+				<buddy>Variable_11</buddy>
+				<params>
+					<param>
+						IntT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_7</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
 				<class>Choice</class>
 				<id>Choice_1</id>
 				<params>
@@ -1311,12 +822,6 @@
 				<slots/>
 			</block>
 			<block>
-				<class>IsPlayerVehicle</class>
-				<id>IsPlayerVehicle_2</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
 				<class>FindInArray</class>
 				<id>FindInArray_1</id>
 				<params>
@@ -1332,19 +837,6 @@
 						<const>\0\</const>
 					</slot>
 				</slots>
-			</block>
-			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_10</id>
-				<buddy>Variable_1</buddy>
-				<params>
-					<param>
-						VehicleT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>SetVariable</class>
@@ -1365,17 +857,29 @@
 				</slots>
 			</block>
 			<block>
-				<class>DeactivateGameObject</class>
-				<id>DeactivateGameObject_1</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
 				<class>ComponentMethod</class>
 				<id>ComponentMethod_11</id>
 				<params>
 					<param>
 						Animator.stop
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_3</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>ComponentMethod</class>
+				<id>ComponentMethod_4</id>
+				<params>
+					<param>
+						Sound3D.play
 						<name>Component Type</name>
 						<type>StringT</type>
 					</param>
@@ -1394,44 +898,6 @@
 				</slots>
 			</block>
 			<block>
-				<class>Macro</class>
-				<id>Macro_4</id>
-				<params>
-					<param>
-						deactivateEffects
-						<name>Macro Name</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_16</id>
-				<buddy>Variable_5</buddy>
-				<params>
-					<param>
-						GameObjectT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_9</id>
-				<buddy>Variable_2</buddy>
-				<params>
-					<param>
-						GameObjectT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
 				<class>GetVariable</class>
 				<id>GetVariable_30</id>
 				<buddy>Variable_16</buddy>
@@ -1446,8 +912,21 @@
 			</block>
 			<block>
 				<class>GetVariable</class>
-				<id>GetVariable_17</id>
-				<buddy>Variable_4</buddy>
+				<id>GetVariable_2</id>
+				<buddy>Variable_5</buddy>
+				<params>
+					<param>
+						GameObjectT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_9</id>
+				<buddy>Variable_3</buddy>
 				<params>
 					<param>
 						BoolT
@@ -1471,11 +950,17 @@
 				<slots/>
 			</block>
 			<block>
+				<class>If</class>
+				<id>If_1</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
 				<class>ComponentMethod</class>
-				<id>ComponentMethod_3</id>
+				<id>ComponentMethod_2</id>
 				<params>
 					<param>
-						Animator.stopLayerByName
+						Sound3D.play
 						<name>Component Type</name>
 						<type>StringT</type>
 					</param>
@@ -1483,56 +968,21 @@
 				<slots/>
 			</block>
 			<block>
-				<class>Delay</class>
-				<id>Delay_1</id>
-				<params>
-					<param>
-						StringT
-						<name>Value Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>stack</name>
-						<const>\false\</const>
-					</slot>
-				</slots>
+				<class>OnAnyVehicleShoot</class>
+				<id>OnAnyVehicleShoot_1</id>
+				<params/>
+				<slots/>
 			</block>
 			<block>
-				<class>ComponentMethod</class>
-				<id>ComponentMethod_9</id>
-				<params>
-					<param>
-						Animator.startLayerByName
-						<name>Component Type</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>arg#1</name>
-						<const>\0.000000\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_26</id>
-				<buddy>Variable_10</buddy>
-				<params>
-					<param>
-						StringT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
+				<class>IsVehicleValid</class>
+				<id>IsVehicleValid_1</id>
+				<params/>
 				<slots/>
 			</block>
 			<block>
 				<class>GetVariable</class>
-				<id>GetVariable_21</id>
-				<buddy>Variable_3</buddy>
+				<id>GetVariable_7</id>
+				<buddy>Variable_2</buddy>
 				<params>
 					<param>
 						GameObjectT
@@ -1543,12 +993,30 @@
 				<slots/>
 			</block>
 			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_25</id>
-				<buddy>Variable_9</buddy>
+				<class>And</class>
+				<id>And_1</id>
 				<params>
 					<param>
-						FloatT
+						5
+						<name>Input Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>IsVehicleValid</class>
+				<id>IsVehicleValid_2</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_5</id>
+				<buddy>Variable_1</buddy>
+				<params>
+					<param>
+						VehicleT
 						<name>Variable Type</name>
 						<type>TypeT</type>
 					</param>
@@ -1556,20 +1024,14 @@
 				<slots/>
 			</block>
 			<block>
-				<class>If</class>
-				<id>If_3</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
-				<class>OnCollidedWithAliveEnemy</class>
-				<id>OnCollidedWithAliveEnemy_1</id>
+				<class>CompareVehicles</class>
+				<id>CompareVehicles_1</id>
 				<params/>
 				<slots/>
 			</block>
 			<block>
 				<class>GetVariable</class>
-				<id>GetVariable_2</id>
+				<id>GetVariable_6</id>
 				<buddy>Variable_13</buddy>
 				<params>
 					<param>
@@ -1581,85 +1043,12 @@
 				<slots/>
 			</block>
 			<block>
-				<class>If</class>
-				<id>If_5</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
-				<class>ComponentMethod</class>
-				<id>ComponentMethod_4</id>
-				<params>
-					<param>
-						Animator.stopLayerByName
-						<name>Component Type</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>Delay</class>
-				<id>Delay_2</id>
-				<params>
-					<param>
-						StringT
-						<name>Value Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>stack</name>
-						<const>\false\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>ComponentMethod</class>
-				<id>ComponentMethod_5</id>
-				<params>
-					<param>
-						Animator.startLayerByName
-						<name>Component Type</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>arg#1</name>
-						<const>\0.000000\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>EVehCollisionSideToString</class>
-				<id>EVehCollisionSideToString_1</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
-				<class>CompareString</class>
-				<id>CompareString_1</id>
-				<params/>
-				<slots>
-					<slot>
-						<name>b</name>
-						<const>\LEFT\</const>
-					</slot>
-					<slot>
-						<name>no_case</name>
-						<const>\true\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
 				<class>GetVariable</class>
-				<id>GetVariable_27</id>
-				<buddy>Variable_15</buddy>
+				<id>GetVariable_10</id>
+				<buddy>Variable_3</buddy>
 				<params>
 					<param>
-						StringT
+						BoolT
 						<name>Variable Type</name>
 						<type>TypeT</type>
 					</param>
@@ -1668,6 +1057,12 @@
 			</block>
 		</blocks>
 		<connections>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>default</input>
+				<to>Variable_2</to>
+				<output>value</output>
+			</connection>
 			<connection>
 				<from>ContextGetSelf_1</from>
 				<input>default</input>
@@ -1683,53 +1078,23 @@
 			<connection>
 				<from>ContextGetSelf_1</from>
 				<input>default</input>
-				<to>Variable_8</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>ContextGetSelf_1</from>
-				<input>default</input>
-				<to>Variable_2</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>ContextGetSelf_1</from>
-				<input>default</input>
-				<to>Variable_3</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>ContextGetSelf_1</from>
-				<input>default</input>
 				<to>Variable_16</to>
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>Choice_2</from>
+				<from>StartScript_1</from>
 				<input>input</input>
-				<to>SetVariable_15</to>
-				<output>o0</output>
-			</connection>
-			<connection>
-				<from>SetVariable_15</from>
-				<input>input</input>
-				<to>SetVariable_16</to>
+				<to>SetVariable_1</to>
 				<output>out</output>
 			</connection>
 			<connection>
-				<from>ComponentMethod_10</from>
-				<input>input</input>
-				<to>SetVariable_14</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>ComponentMethod_10</from>
+				<from>GameObjectToVehicle_2</from>
 				<input>value</input>
-				<to>SetVariable_14</to>
-				<output>return</output>
+				<to>SetVariable_1</to>
+				<output>vehicle</output>
 			</connection>
 			<connection>
-				<from>SetVariable_5</from>
+				<from>SetVariable_1</from>
 				<input>input</input>
 				<to>SetVariable_19</to>
 				<output>out</output>
@@ -1767,54 +1132,6 @@
 			<connection>
 				<from>SetVariable_7</from>
 				<input>input</input>
-				<to>SetVariable_9</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>GetVehicleAppearanceGameObject_1</from>
-				<input>value</input>
-				<to>SetVariable_9</to>
-				<output>appearanceObject</output>
-			</connection>
-			<connection>
-				<from>SetVariable_16</from>
-				<input>in</input>
-				<to>ComponentMethod_10</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>SetVariable_18</from>
-				<input>in</input>
-				<to>ComponentMethod_10</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>GetVariable_18</from>
-				<input>gameObject</input>
-				<to>ComponentMethod_10</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>GetVariable_28</from>
-				<input>arg#0</input>
-				<to>ComponentMethod_10</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>StartScript_1</from>
-				<input>input</input>
-				<to>SetVariable_1</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>GameObjectToVehicle_2</from>
-				<input>value</input>
-				<to>SetVariable_1</to>
-				<output>vehicle</output>
-			</connection>
-			<connection>
-				<from>SetVariable_1</from>
-				<input>input</input>
 				<to>SetVariable_3</to>
 				<output>out</output>
 			</connection>
@@ -1825,52 +1142,10 @@
 				<output>node</output>
 			</connection>
 			<connection>
-				<from>SetVariable_3</from>
-				<input>input</input>
-				<to>SetVariable_5</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>FindFirstNode_2</from>
-				<input>value</input>
-				<to>SetVariable_5</to>
-				<output>node</output>
-			</connection>
-			<connection>
-				<from>SetVariable_9</from>
-				<input>input</input>
-				<to>Choice_2</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>GetGameSetting_1</from>
-				<input>index</input>
-				<to>Choice_2</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>Choice_2</from>
-				<input>input</input>
-				<to>SetVariable_17</to>
-				<output>o1</output>
-			</connection>
-			<connection>
-				<from>SetVariable_17</from>
-				<input>input</input>
-				<to>SetVariable_18</to>
-				<output>out</output>
-			</connection>
-			<connection>
 				<from>GetVehicleGameObject_2</from>
 				<input>gameObject</input>
 				<to>GameObjectToVehicle_2</to>
 				<output>vehicleObject</output>
-			</connection>
-			<connection>
-				<from>ContextGetSelf_1</from>
-				<input>gameObject</input>
-				<to>GetVehicleAppearanceGameObject_1</to>
-				<output>value</output>
 			</connection>
 			<connection>
 				<from>FindFirstNode_3</from>
@@ -1885,16 +1160,10 @@
 				<output>node</output>
 			</connection>
 			<connection>
-				<from>ContextGetSelf_1</from>
+				<from>FindFirstNode_3</from>
 				<input>gameObject</input>
 				<to>FindFirstNode_1</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>ContextGetSelf_1</from>
-				<input>gameObject</input>
-				<to>FindFirstNode_2</to>
-				<output>value</output>
+				<output>node</output>
 			</connection>
 			<connection>
 				<from>ContextGetSelf_1</from>
@@ -1912,36 +1181,6 @@
 				<from>ContextGetSelf_1</from>
 				<input>gameObject</input>
 				<to>FindFirstNode_3</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>OnUnderWaterSwitch_1</from>
-				<input>input</input>
-				<to>If_4</to>
-				<output>onUnderWaterSwitch</output>
-			</connection>
-			<connection>
-				<from>OnUnderWaterSwitch_1</from>
-				<input>value</input>
-				<to>If_4</to>
-				<output>isUnderWater</output>
-			</connection>
-			<connection>
-				<from>GetVariable_6</from>
-				<input>active</input>
-				<to>OnUnderWaterSwitch_1</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>BroadcastEvent_2</from>
-				<input>subscribe</input>
-				<to>OnUnderWaterSwitch_1</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>GetVariable_8</from>
-				<input>vehicle</input>
-				<to>OnUnderWaterSwitch_1</to>
 				<output>value</output>
 			</connection>
 			<connection>
@@ -2023,18 +1262,6 @@
 				<output>object</output>
 			</connection>
 			<connection>
-				<from>ComponentMethod_1</from>
-				<input>input</input>
-				<to>If_8</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>IsUnderwater_1</from>
-				<input>value</input>
-				<to>If_8</to>
-				<output>isUnderwater</output>
-			</connection>
-			<connection>
 				<from>Choice_1</from>
 				<input>input</input>
 				<to>SetVariable_2</to>
@@ -2047,19 +1274,31 @@
 				<output>o1</output>
 			</connection>
 			<connection>
-				<from>SetVariable_2</from>
-				<input>in</input>
-				<to>ActivateGameObject_1</to>
+				<from>ComponentMethod_1</from>
+				<input>input</input>
+				<to>If_2</to>
 				<output>out</output>
+			</connection>
+			<connection>
+				<from>GetVariable_8</from>
+				<input>value</input>
+				<to>If_2</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>If_2</from>
+				<input>in</input>
+				<to>ComponentMethod_3</to>
+				<output>true</output>
 			</connection>
 			<connection>
 				<from>GetVariable_1</from>
 				<input>gameObject</input>
-				<to>ActivateGameObject_1</to>
+				<to>ComponentMethod_3</to>
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>ActivateGameObject_1</from>
+				<from>SetVariable_2</from>
 				<input>in</input>
 				<to>ComponentMethod_1</to>
 				<output>out</output>
@@ -2071,40 +1310,10 @@
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>If_4</from>
-				<input>in</input>
-				<to>Macro_6</to>
-				<output>false</output>
-			</connection>
-			<connection>
-				<from>If_8</from>
-				<input>in</input>
-				<to>Macro_6</to>
-				<output>false</output>
-			</connection>
-			<connection>
-				<from>GetVariable_15</from>
-				<input>sound</input>
-				<to>Macro_6</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>GetVariable_11</from>
-				<input>isPlayerActivated</input>
-				<to>Macro_6</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>GetVariable_5</from>
-				<input>isAbilityActive</input>
-				<to>Macro_6</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>GetVariable_7</from>
-				<input>vehicle</input>
-				<to>IsUnderwater_1</to>
-				<output>value</output>
+				<from>If_7</from>
+				<input>input</input>
+				<to>Macro_1</to>
+				<output>true</output>
 			</connection>
 			<connection>
 				<from>ContextEventReceive_1</from>
@@ -2131,19 +1340,7 @@
 				<output>greater</output>
 			</connection>
 			<connection>
-				<from>If_7</from>
-				<input>input</input>
-				<to>SetVariable_8</to>
-				<output>true</output>
-			</connection>
-			<connection>
-				<from>IsPlayerVehicle_2</from>
-				<input>value</input>
-				<to>SetVariable_8</to>
-				<output>res</output>
-			</connection>
-			<connection>
-				<from>SetVariable_8</from>
+				<from>Macro_1</from>
 				<input>input</input>
 				<to>Choice_1</to>
 				<output>out</output>
@@ -2152,12 +1349,6 @@
 				<from>GetVariable_12</from>
 				<input>index</input>
 				<to>Choice_1</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>GetVariable_10</from>
-				<input>vehicle</input>
-				<to>IsPlayerVehicle_2</to>
 				<output>value</output>
 			</connection>
 			<connection>
@@ -2187,18 +1378,6 @@
 			<connection>
 				<from>SetVariable_6</from>
 				<input>in</input>
-				<to>DeactivateGameObject_1</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>GetVariable_9</from>
-				<input>gameObject</input>
-				<to>DeactivateGameObject_1</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>DeactivateGameObject_1</from>
-				<input>in</input>
 				<to>ComponentMethod_11</to>
 				<output>out</output>
 			</connection>
@@ -2209,342 +1388,124 @@
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>GetVariable_12</from>
-				<input>a</input>
-				<to>CompareIntegers_3</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>If_4</from>
-				<input>in</input>
-				<to>Macro_4</to>
-				<output>true</output>
-			</connection>
-			<connection>
 				<from>ComponentMethod_11</from>
-				<input>in</input>
-				<to>Macro_4</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>GetVariable_16</from>
-				<input>sound</input>
-				<to>Macro_4</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>GetVariable_17</from>
-				<input>isPlayerActivated</input>
-				<to>Macro_4</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>Delay_1</from>
-				<input>in</input>
-				<to>ComponentMethod_3</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>GetVariable_21</from>
-				<input>gameObject</input>
-				<to>ComponentMethod_3</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>GetVariable_26</from>
-				<input>arg#0</input>
-				<to>ComponentMethod_3</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>ComponentMethod_9</from>
-				<input>input</input>
-				<to>Delay_1</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>GetVariable_25</from>
-				<input>time</input>
-				<to>Delay_1</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>If_5</from>
-				<input>in</input>
-				<to>ComponentMethod_9</to>
-				<output>true</output>
-			</connection>
-			<connection>
-				<from>GetVariable_21</from>
-				<input>gameObject</input>
-				<to>ComponentMethod_9</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>GetVariable_26</from>
-				<input>arg#0</input>
-				<to>ComponentMethod_9</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>OnCollidedWithAliveEnemy_1</from>
 				<input>input</input>
 				<to>If_3</to>
 				<output>out</output>
 			</connection>
 			<connection>
-				<from>GetVariable_2</from>
+				<from>GetVariable_9</from>
 				<input>value</input>
 				<to>If_3</to>
 				<output>value</output>
 			</connection>
 			<connection>
 				<from>If_3</from>
-				<input>input</input>
-				<to>If_5</to>
+				<input>in</input>
+				<to>ComponentMethod_4</to>
 				<output>true</output>
 			</connection>
 			<connection>
-				<from>CompareString_1</from>
-				<input>value</input>
-				<to>If_5</to>
-				<output>equal</output>
-			</connection>
-			<connection>
-				<from>Delay_2</from>
-				<input>in</input>
-				<to>ComponentMethod_4</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>GetVariable_21</from>
+				<from>GetVariable_2</from>
 				<input>gameObject</input>
 				<to>ComponentMethod_4</to>
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>GetVariable_27</from>
-				<input>arg#0</input>
-				<to>ComponentMethod_4</to>
+				<from>GetVariable_12</from>
+				<input>a</input>
+				<to>CompareIntegers_3</to>
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>ComponentMethod_5</from>
+				<from>OnAnyVehicleShoot_1</from>
 				<input>input</input>
-				<to>Delay_2</to>
+				<to>If_1</to>
 				<output>out</output>
 			</connection>
 			<connection>
-				<from>GetVariable_25</from>
-				<input>time</input>
-				<to>Delay_2</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>If_5</from>
-				<input>in</input>
-				<to>ComponentMethod_5</to>
-				<output>false</output>
-			</connection>
-			<connection>
-				<from>GetVariable_21</from>
-				<input>gameObject</input>
-				<to>ComponentMethod_5</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>GetVariable_27</from>
-				<input>arg#0</input>
-				<to>ComponentMethod_5</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>OnCollidedWithAliveEnemy_1</from>
-				<input>a</input>
-				<to>EVehCollisionSideToString_1</to>
-				<output>collisionSide</output>
-			</connection>
-			<connection>
-				<from>EVehCollisionSideToString_1</from>
-				<input>a</input>
-				<to>CompareString_1</to>
+				<from>And_1</from>
+				<input>value</input>
+				<to>If_1</to>
 				<output>res</output>
+			</connection>
+			<connection>
+				<from>If_1</from>
+				<input>in</input>
+				<to>ComponentMethod_2</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>GetVariable_7</from>
+				<input>gameObject</input>
+				<to>ComponentMethod_2</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>OnAnyVehicleShoot_1</from>
+				<input>vehicle</input>
+				<to>IsVehicleValid_1</to>
+				<output>vehicle</output>
+			</connection>
+			<connection>
+				<from>IsVehicleValid_1</from>
+				<input>i1</input>
+				<to>And_1</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>IsVehicleValid_2</from>
+				<input>i2</input>
+				<to>And_1</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>CompareVehicles_1</from>
+				<input>i3</input>
+				<to>And_1</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>GetVariable_6</from>
+				<input>i4</input>
+				<to>And_1</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>GetVariable_10</from>
+				<input>i5</input>
+				<to>And_1</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>GetVariable_5</from>
+				<input>vehicle</input>
+				<to>IsVehicleValid_2</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>OnAnyVehicleShoot_1</from>
+				<input>a</input>
+				<to>CompareVehicles_1</to>
+				<output>vehicle</output>
+			</connection>
+			<connection>
+				<from>GetVariable_5</from>
+				<input>b</input>
+				<to>CompareVehicles_1</to>
+				<output>value</output>
 			</connection>
 		</connections>
 		<macros>
 			<macro>
-				<name>checkTerrainAndSpeedCompliance</name>
-				<blocks>
-					<block>
-						<class>ContextGetSelf</class>
-						<id>ContextGetSelf_2</id>
-						<params>
-							<param>
-								CGFGameObjectContext
-								<name>Context Name</name>
-								<type>StringT</type>
-							</param>
-							<param>
-								getSelf
-								<name>Member Name</name>
-								<type>StringT</type>
-							</param>
-						</params>
-						<slots/>
-					</block>
-					<block>
-						<class>MacroOutput</class>
-						<id>MacroOutput_1</id>
-						<params>
-							<param>
-								true
-								<name>Output Name</name>
-								<type>StringT</type>
-							</param>
-							<param>
-								EventT
-								<name>Output Type</name>
-								<type>TypeT</type>
-							</param>
-						</params>
-						<slots/>
-					</block>
-					<block>
-						<class>MacroInput</class>
-						<id>MacroInput_1</id>
-						<params>
-							<param>
-								in
-								<name>Input Name</name>
-								<type>StringT</type>
-							</param>
-							<param>
-								EventT
-								<name>Input Type</name>
-								<type>TypeT</type>
-							</param>
-							<param>
-								Default
-								<name>Input Editor</name>
-								<type>StringT</type>
-							</param>
-						</params>
-						<slots/>
-					</block>
-					<block>
-						<class>If</class>
-						<id>If_2</id>
-						<params/>
-						<slots/>
-					</block>
-					<block>
-						<class>GetComponentProperty</class>
-						<id>GetComponentProperty_1</id>
-						<params>
-							<param>
-								Detailed Engine State.speed
-								<name>Component Type</name>
-								<type>StringT</type>
-							</param>
-						</params>
-						<slots/>
-					</block>
-					<block>
-						<class>MacroOutput</class>
-						<id>MacroOutput_2</id>
-						<params>
-							<param>
-								false
-								<name>Output Name</name>
-								<type>StringT</type>
-							</param>
-							<param>
-								EventT
-								<name>Output Type</name>
-								<type>TypeT</type>
-							</param>
-						</params>
-						<slots/>
-					</block>
-					<block>
-						<class>CompareFloats</class>
-						<id>CompareFloats_1</id>
-						<params/>
-						<slots>
-							<slot>
-								<name>b</name>
-								<const>\1.500000\</const>
-							</slot>
-						</slots>
-					</block>
-					<block>
-						<class>GetVariable</class>
-						<id>GetVariable_22</id>
-						<buddy>Variable_8</buddy>
-						<params>
-							<param>
-								GameObjectT
-								<name>Variable Type</name>
-								<type>TypeT</type>
-							</param>
-						</params>
-						<slots/>
-					</block>
-				</blocks>
-				<connections>
-					<connection>
-						<from>If_2</from>
-						<input>true</input>
-						<to>MacroOutput_1</to>
-						<output>true</output>
-					</connection>
-					<connection>
-						<from>GetComponentProperty_1</from>
-						<input>input</input>
-						<to>If_2</to>
-						<output>out</output>
-					</connection>
-					<connection>
-						<from>CompareFloats_1</from>
-						<input>value</input>
-						<to>If_2</to>
-						<output>greater</output>
-					</connection>
-					<connection>
-						<from>MacroInput_1</from>
-						<input>in</input>
-						<to>GetComponentProperty_1</to>
-						<output>in</output>
-					</connection>
-					<connection>
-						<from>GetVariable_22</from>
-						<input>gameObject</input>
-						<to>GetComponentProperty_1</to>
-						<output>value</output>
-					</connection>
-					<connection>
-						<from>If_2</from>
-						<input>false</input>
-						<to>MacroOutput_2</to>
-						<output>false</output>
-					</connection>
-					<connection>
-						<from>GetComponentProperty_1</from>
-						<input>a</input>
-						<to>CompareFloats_1</to>
-						<output>speed</output>
-					</connection>
-				</connections>
-			</macro>
-			<macro>
-				<name>activateEffects</name>
+				<name>CheckIsPlayerActivateMechanics</name>
 				<blocks>
 					<block>
 						<class>MacroInput</class>
 						<id>MacroInput_1</id>
 						<params>
 							<param>
-								in
+								input
 								<name>Input Name</name>
 								<type>StringT</type>
 							</param>
@@ -2554,571 +1515,7 @@
 								<type>TypeT</type>
 							</param>
 							<param>
-								Default
 								<name>Input Editor</name>
-								<type>StringT</type>
-							</param>
-						</params>
-						<slots>
-							<slot>
-								<name>required</name>
-								<const>\true\</const>
-							</slot>
-						</slots>
-					</block>
-					<block>
-						<class>If</class>
-						<id>If_1</id>
-						<params/>
-						<slots/>
-					</block>
-					<block>
-						<class>ComponentMethod</class>
-						<id>ComponentMethod_6</id>
-						<params>
-							<param>
-								Sound3D.play
-								<name>Component Type</name>
-								<type>StringT</type>
-							</param>
-						</params>
-						<slots/>
-					</block>
-					<block>
-						<class>MacroInput</class>
-						<id>MacroInput_3</id>
-						<params>
-							<param>
-								sound
-								<name>Input Name</name>
-								<type>StringT</type>
-							</param>
-							<param>
-								GameObjectT
-								<name>Input Type</name>
-								<type>TypeT</type>
-							</param>
-							<param>
-								Default
-								<name>Input Editor</name>
-								<type>StringT</type>
-							</param>
-						</params>
-						<slots>
-							<slot>
-								<name>required</name>
-								<const>\true\</const>
-							</slot>
-						</slots>
-					</block>
-					<block>
-						<class>MacroInput</class>
-						<id>MacroInput_2</id>
-						<params>
-							<param>
-								isPlayerActivated
-								<name>Input Name</name>
-								<type>StringT</type>
-							</param>
-							<param>
-								BoolT
-								<name>Input Type</name>
-								<type>TypeT</type>
-							</param>
-							<param>
-								Default
-								<name>Input Editor</name>
-								<type>StringT</type>
-							</param>
-						</params>
-						<slots>
-							<slot>
-								<name>required</name>
-								<const>\true\</const>
-							</slot>
-						</slots>
-					</block>
-					<block>
-						<class>ContextGetSelf</class>
-						<id>ContextGetSelf_2</id>
-						<params>
-							<param>
-								CGFGameObjectContext
-								<name>Context Name</name>
-								<type>StringT</type>
-							</param>
-							<param>
-								getSelf
-								<name>Member Name</name>
-								<type>StringT</type>
-							</param>
-						</params>
-						<slots/>
-					</block>
-					<block>
-						<class>Macro</class>
-						<id>Macro_1</id>
-						<params>
-							<param>
-								checkTerrainAndSpeedCompliance
-								<name>Macro Name</name>
-								<type>StringT</type>
-							</param>
-						</params>
-						<slots/>
-					</block>
-					<block>
-						<class>SetVariable</class>
-						<id>SetVariable_13</id>
-						<buddy>Variable_7</buddy>
-						<params>
-							<param>
-								BoolT
-								<name>Variable Type</name>
-								<type>TypeT</type>
-							</param>
-						</params>
-						<slots>
-							<slot>
-								<name>value</name>
-								<const>\false\</const>
-							</slot>
-						</slots>
-					</block>
-					<block>
-						<class>ComponentMethod</class>
-						<id>ComponentMethod_2</id>
-						<params>
-							<param>
-								Animator.stopLayerByName
-								<name>Component Type</name>
-								<type>StringT</type>
-							</param>
-						</params>
-						<slots>
-							<slot>
-								<name>arg#0</name>
-								<const>\dirt\</const>
-							</slot>
-						</slots>
-					</block>
-					<block>
-						<class>If</class>
-						<id>If_10</id>
-						<params/>
-						<slots/>
-					</block>
-					<block>
-						<class>If</class>
-						<id>If_2</id>
-						<params/>
-						<slots/>
-					</block>
-					<block>
-						<class>GetVariable</class>
-						<id>GetVariable_19</id>
-						<buddy>Variable_7</buddy>
-						<params>
-							<param>
-								BoolT
-								<name>Variable Type</name>
-								<type>TypeT</type>
-							</param>
-						</params>
-						<slots/>
-					</block>
-					<block>
-						<class>Repeat</class>
-						<id>Repeat_1</id>
-						<params/>
-						<slots>
-							<slot>
-								<name>interval</name>
-								<const>\0.100000\</const>
-							</slot>
-						</slots>
-					</block>
-					<block>
-						<class>GetVariable</class>
-						<id>GetVariable_23</id>
-						<buddy>Variable_3</buddy>
-						<params>
-							<param>
-								GameObjectT
-								<name>Variable Type</name>
-								<type>TypeT</type>
-							</param>
-						</params>
-						<slots/>
-					</block>
-					<block>
-						<class>Macro</class>
-						<id>Macro_3</id>
-						<params>
-							<param>
-								checkTerrainAndSpeedCompliance
-								<name>Macro Name</name>
-								<type>StringT</type>
-							</param>
-						</params>
-						<slots/>
-					</block>
-					<block>
-						<class>SetVariable</class>
-						<id>SetVariable_12</id>
-						<buddy>Variable_7</buddy>
-						<params>
-							<param>
-								BoolT
-								<name>Variable Type</name>
-								<type>TypeT</type>
-							</param>
-						</params>
-						<slots>
-							<slot>
-								<name>value</name>
-								<const>\true\</const>
-							</slot>
-						</slots>
-					</block>
-					<block>
-						<class>ComponentMethod</class>
-						<id>ComponentMethod_8</id>
-						<params>
-							<param>
-								Animator.startLayerByName
-								<name>Component Type</name>
-								<type>StringT</type>
-							</param>
-						</params>
-						<slots>
-							<slot>
-								<name>arg#0</name>
-								<const>\dirt\</const>
-							</slot>
-							<slot>
-								<name>arg#1</name>
-								<const>\0.000000\</const>
-							</slot>
-						</slots>
-					</block>
-					<block>
-						<class>MacroInput</class>
-						<id>MacroInput_5</id>
-						<params>
-							<param>
-								isAbilityActive
-								<name>Input Name</name>
-								<type>StringT</type>
-							</param>
-							<param>
-								BoolT
-								<name>Input Type</name>
-								<type>TypeT</type>
-							</param>
-							<param>
-								Default
-								<name>Input Editor</name>
-								<type>StringT</type>
-							</param>
-						</params>
-						<slots>
-							<slot>
-								<name>required</name>
-								<const>\true\</const>
-							</slot>
-						</slots>
-					</block>
-					<block>
-						<class>GetVariable</class>
-						<id>GetVariable_20</id>
-						<buddy>Variable_3</buddy>
-						<params>
-							<param>
-								GameObjectT
-								<name>Variable Type</name>
-								<type>TypeT</type>
-							</param>
-						</params>
-						<slots/>
-					</block>
-					<block>
-						<class>ComponentMethod</class>
-						<id>ComponentMethod_7</id>
-						<params>
-							<param>
-								Animator.startLayerByName
-								<name>Component Type</name>
-								<type>StringT</type>
-							</param>
-						</params>
-						<slots>
-							<slot>
-								<name>arg#0</name>
-								<const>\exhaust\</const>
-							</slot>
-							<slot>
-								<name>arg#1</name>
-								<const>\0.000000\</const>
-							</slot>
-						</slots>
-					</block>
-				</blocks>
-				<connections>
-					<connection>
-						<from>MacroInput_1</from>
-						<input>input</input>
-						<to>If_1</to>
-						<output>in</output>
-					</connection>
-					<connection>
-						<from>MacroInput_2</from>
-						<input>value</input>
-						<to>If_1</to>
-						<output>isPlayerActivated</output>
-					</connection>
-					<connection>
-						<from>If_1</from>
-						<input>in</input>
-						<to>ComponentMethod_6</to>
-						<output>true</output>
-					</connection>
-					<connection>
-						<from>MacroInput_3</from>
-						<input>gameObject</input>
-						<to>ComponentMethod_6</to>
-						<output>sound</output>
-					</connection>
-					<connection>
-						<from>If_10</from>
-						<input>in</input>
-						<to>Macro_1</to>
-						<output>true</output>
-					</connection>
-					<connection>
-						<from>ComponentMethod_2</from>
-						<input>input</input>
-						<to>SetVariable_13</to>
-						<output>out</output>
-					</connection>
-					<connection>
-						<from>Macro_1</from>
-						<input>in</input>
-						<to>ComponentMethod_2</to>
-						<output>false</output>
-					</connection>
-					<connection>
-						<from>GetVariable_23</from>
-						<input>gameObject</input>
-						<to>ComponentMethod_2</to>
-						<output>value</output>
-					</connection>
-					<connection>
-						<from>If_2</from>
-						<input>input</input>
-						<to>If_10</to>
-						<output>true</output>
-					</connection>
-					<connection>
-						<from>GetVariable_19</from>
-						<input>value</input>
-						<to>If_10</to>
-						<output>value</output>
-					</connection>
-					<connection>
-						<from>Repeat_1</from>
-						<input>input</input>
-						<to>If_2</to>
-						<output>out</output>
-					</connection>
-					<connection>
-						<from>MacroInput_5</from>
-						<input>value</input>
-						<to>If_2</to>
-						<output>isAbilityActive</output>
-					</connection>
-					<connection>
-						<from>ComponentMethod_7</from>
-						<input>start</input>
-						<to>Repeat_1</to>
-						<output>out</output>
-					</connection>
-					<connection>
-						<from>If_2</from>
-						<input>stop</input>
-						<to>Repeat_1</to>
-						<output>false</output>
-					</connection>
-					<connection>
-						<from>If_10</from>
-						<input>in</input>
-						<to>Macro_3</to>
-						<output>false</output>
-					</connection>
-					<connection>
-						<from>ComponentMethod_8</from>
-						<input>input</input>
-						<to>SetVariable_12</to>
-						<output>out</output>
-					</connection>
-					<connection>
-						<from>Macro_3</from>
-						<input>in</input>
-						<to>ComponentMethod_8</to>
-						<output>true</output>
-					</connection>
-					<connection>
-						<from>GetVariable_23</from>
-						<input>gameObject</input>
-						<to>ComponentMethod_8</to>
-						<output>value</output>
-					</connection>
-					<connection>
-						<from>ComponentMethod_6</from>
-						<input>in</input>
-						<to>ComponentMethod_7</to>
-						<output>out</output>
-					</connection>
-					<connection>
-						<from>If_1</from>
-						<input>in</input>
-						<to>ComponentMethod_7</to>
-						<output>false</output>
-					</connection>
-					<connection>
-						<from>GetVariable_20</from>
-						<input>gameObject</input>
-						<to>ComponentMethod_7</to>
-						<output>value</output>
-					</connection>
-				</connections>
-			</macro>
-			<macro>
-				<name>deactivateEffects</name>
-				<blocks>
-					<block>
-						<class>MacroInput</class>
-						<id>MacroInput_1</id>
-						<params>
-							<param>
-								in
-								<name>Input Name</name>
-								<type>StringT</type>
-							</param>
-							<param>
-								EventT
-								<name>Input Type</name>
-								<type>TypeT</type>
-							</param>
-							<param>
-								Default
-								<name>Input Editor</name>
-								<type>StringT</type>
-							</param>
-						</params>
-						<slots>
-							<slot>
-								<name>required</name>
-								<const>\true\</const>
-							</slot>
-						</slots>
-					</block>
-					<block>
-						<class>If</class>
-						<id>If_1</id>
-						<params/>
-						<slots/>
-					</block>
-					<block>
-						<class>ComponentMethod</class>
-						<id>ComponentMethod_6</id>
-						<params>
-							<param>
-								Sound3D.play
-								<name>Component Type</name>
-								<type>StringT</type>
-							</param>
-						</params>
-						<slots/>
-					</block>
-					<block>
-						<class>MacroInput</class>
-						<id>MacroInput_3</id>
-						<params>
-							<param>
-								sound
-								<name>Input Name</name>
-								<type>StringT</type>
-							</param>
-							<param>
-								GameObjectT
-								<name>Input Type</name>
-								<type>TypeT</type>
-							</param>
-							<param>
-								Default
-								<name>Input Editor</name>
-								<type>StringT</type>
-							</param>
-						</params>
-						<slots>
-							<slot>
-								<name>required</name>
-								<const>\true\</const>
-							</slot>
-						</slots>
-					</block>
-					<block>
-						<class>MacroInput</class>
-						<id>MacroInput_2</id>
-						<params>
-							<param>
-								isPlayerActivated
-								<name>Input Name</name>
-								<type>StringT</type>
-							</param>
-							<param>
-								BoolT
-								<name>Input Type</name>
-								<type>TypeT</type>
-							</param>
-							<param>
-								Default
-								<name>Input Editor</name>
-								<type>StringT</type>
-							</param>
-						</params>
-						<slots>
-							<slot>
-								<name>required</name>
-								<const>\true\</const>
-							</slot>
-						</slots>
-					</block>
-					<block>
-						<class>ContextGetSelf</class>
-						<id>ContextGetSelf_2</id>
-						<params>
-							<param>
-								CGFGameObjectContext
-								<name>Context Name</name>
-								<type>StringT</type>
-							</param>
-							<param>
-								getSelf
-								<name>Member Name</name>
-								<type>StringT</type>
-							</param>
-						</params>
-						<slots/>
-					</block>
-					<block>
-						<class>ComponentMethod</class>
-						<id>ComponentMethod_7</id>
-						<params>
-							<param>
-								Animator.stop
-								<name>Component Type</name>
 								<type>StringT</type>
 							</param>
 						</params>
@@ -3142,14 +1539,49 @@
 						<slots/>
 					</block>
 					<block>
-						<class>GetVariable</class>
-						<id>GetVariable_24</id>
+						<class>SetVariable</class>
+						<id>SetVariable_4</id>
 						<buddy>Variable_3</buddy>
 						<params>
 							<param>
-								GameObjectT
+								BoolT
 								<name>Variable Type</name>
 								<type>TypeT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
+						<class>GetVehicleGameObject</class>
+						<id>GetVehicleGameObject_1</id>
+						<params/>
+						<slots/>
+					</block>
+					<block>
+						<class>GameObjectToVehicle</class>
+						<id>GameObjectToVehicle_1</id>
+						<params/>
+						<slots/>
+					</block>
+					<block>
+						<class>IsPlayerVehicle</class>
+						<id>IsPlayerVehicle_1</id>
+						<params/>
+						<slots/>
+					</block>
+					<block>
+						<class>ContextGetSelf</class>
+						<id>ContextGetSelf_2</id>
+						<params>
+							<param>
+								CGFGameObjectContext
+								<name>Context Name</name>
+								<type>StringT</type>
+							</param>
+							<param>
+								getSelf
+								<name>Member Name</name>
+								<type>StringT</type>
 							</param>
 						</params>
 						<slots/>
@@ -3157,52 +1589,40 @@
 				</blocks>
 				<connections>
 					<connection>
-						<from>MacroInput_1</from>
-						<input>input</input>
-						<to>If_1</to>
-						<output>in</output>
-					</connection>
-					<connection>
-						<from>MacroInput_2</from>
-						<input>value</input>
-						<to>If_1</to>
-						<output>isPlayerActivated</output>
-					</connection>
-					<connection>
-						<from>If_1</from>
-						<input>in</input>
-						<to>ComponentMethod_6</to>
-						<output>true</output>
-					</connection>
-					<connection>
-						<from>MacroInput_3</from>
-						<input>gameObject</input>
-						<to>ComponentMethod_6</to>
-						<output>sound</output>
-					</connection>
-					<connection>
-						<from>ComponentMethod_6</from>
-						<input>in</input>
-						<to>ComponentMethod_7</to>
-						<output>out</output>
-					</connection>
-					<connection>
-						<from>If_1</from>
-						<input>in</input>
-						<to>ComponentMethod_7</to>
-						<output>false</output>
-					</connection>
-					<connection>
-						<from>GetVariable_24</from>
-						<input>gameObject</input>
-						<to>ComponentMethod_7</to>
-						<output>value</output>
-					</connection>
-					<connection>
-						<from>ComponentMethod_7</from>
+						<from>SetVariable_4</from>
 						<input>out</input>
 						<to>MacroOutput_1</to>
 						<output>out</output>
+					</connection>
+					<connection>
+						<from>MacroInput_1</from>
+						<input>input</input>
+						<to>SetVariable_4</to>
+						<output>input</output>
+					</connection>
+					<connection>
+						<from>IsPlayerVehicle_1</from>
+						<input>value</input>
+						<to>SetVariable_4</to>
+						<output>res</output>
+					</connection>
+					<connection>
+						<from>ContextGetSelf_2</from>
+						<input>gameObject</input>
+						<to>GetVehicleGameObject_1</to>
+						<output>value</output>
+					</connection>
+					<connection>
+						<from>GetVehicleGameObject_1</from>
+						<input>gameObject</input>
+						<to>GameObjectToVehicle_1</to>
+						<output>vehicleObject</output>
+					</connection>
+					<connection>
+						<from>GameObjectToVehicle_1</from>
+						<input>vehicle</input>
+						<to>IsPlayerVehicle_1</to>
+						<output>vehicle</output>
 					</connection>
 				</connections>
 			</macro>

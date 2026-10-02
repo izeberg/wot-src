@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/german/G201_Flakpanzer_5_5_cm_Coelian_Kr/normal/lod4/Gun_01</nodefullVisual>
+	<visibilityBox>
+		<min>-0.361381 0.001733 0.575285</min>
+		<max>0.360841 0.528236 5.129918</max>
+	</visibilityBox>
+</root>

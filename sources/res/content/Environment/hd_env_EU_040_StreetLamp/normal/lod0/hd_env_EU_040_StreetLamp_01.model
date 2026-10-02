@@ -1,20 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<visibilityBox>
-		<min>
-			-0.387885 -0.00366752 -0.387885
-			<!--BW_String-->
-		</min>
-		<max>
-			0.387885 6.3272 0.387885
-			<!--BW_String-->
-		</max>
+		<min>-0.387885 -0.003668 -0.387885</min>
+		<max>0.387885 6.327200 0.387885</max>
 	</visibilityBox>
 	<parent>content/Environment/hd_env_EU_040_StreetLamp/normal/lod1/hd_env_EU_040_StreetLamp_01</parent>
-	<extent>
-		20.0
-		<!--BW_String-->
-	</extent>
+	<extent>20.000000</extent>
 	<havok>
 		<damagedState>true</damagedState>
 	</havok>

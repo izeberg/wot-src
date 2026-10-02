@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/japan/J52_SYA1/crash/lod1/Turret_01</nodefullVisual>
+	<parent>vehicles/japan/J52_SYA1/crash/lod2/Turret_01</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.402367 0.045574 -3.093063</min>
+		<max>1.399999 1.894293 1.610026</max>
+	</visibilityBox>
+</root>

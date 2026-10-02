@@ -1104,14 +1104,10 @@
 					</property>
 					<property>
 						alphaReference
-						<Int>64</Int>
+						<Int>128</Int>
 					</property>
 					<property>
 						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
-						doubleSided
 						<Bool>true</Bool>
 					</property>
 				</material>
@@ -1161,14 +1157,10 @@
 					</property>
 					<property>
 						alphaReference
-						<Int>64</Int>
+						<Int>128</Int>
 					</property>
 					<property>
 						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
-						doubleSided
 						<Bool>true</Bool>
 					</property>
 				</material>
@@ -1262,6 +1254,14 @@
 						colorIdMap
 						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
+					<property>
+						alphaReference
+						<Int>128</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
 				</material>
 				<groupOrigin>-1.342159 0.611444 -0.054662</groupOrigin>
 			</primitiveGroup>
@@ -1352,6 +1352,14 @@
 					<property>
 						colorIdMap
 						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						alphaReference
+						<Int>128</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
 					</property>
 				</material>
 				<groupOrigin>1.343860 0.611716 -0.054662</groupOrigin>

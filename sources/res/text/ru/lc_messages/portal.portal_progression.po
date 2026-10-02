@@ -1,0 +1,86 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "progression/closeButton/defaultText"
+msgstr "ЗАКРЫТЬ"
+
+msgid "progression/closeButton/hoverText"
+msgstr "ОСТАНЬСЯ"
+
+msgid "progression/closeButton/hoverText_2"
+msgstr "И КУДА ТЫ?"
+
+msgid "progression/closeButton/hoverText_3"
+msgstr "ВЕРНЁШЬСЯ"
+
+msgid "progression/closeButton/hoverText_4"
+msgstr "ПОПАЛСЯ"
+
+msgid "progression/closeButton/hoverText_5"
+msgstr "МЫ РЯДОМ"
+
+msgid "progression/counter/active"
+msgstr "%(current)s / %(max)s%(icon)s"
+
+msgid "progression/counter/default"
+msgstr "%(number)s%(icon)s"
+
+msgid "progression/introButton/hoverText"
+msgstr "ОСТАНОВИСЬ"
+
+msgid "progression/introButton/hoverText_2"
+msgstr "ТЫ БОИШЬСЯ"
+
+msgid "progression/introButton/hoverText_3"
+msgstr "ТЕБЯ ПРЕДАЛИ"
+
+msgid "progression/introButton/hoverText_4"
+msgstr "ЭТО УЖЕ БЫЛО"
+
+msgid "progression/introButton/hoverText_5"
+msgstr "ЭТО ИЛЛЮЗИЯ"
+
+msgid "progression/introButton/mainText"
+msgstr "ПРЕДЫСТОРИЯ"
+
+msgid "progression/introButton/simpleTooltip"
+msgstr "Узнать историю последней экспедиции."
+
+msgid "progression/outroButton/hoverText"
+msgstr "ВСЁ ПОВТОРИТСЯ"
+
+msgid "progression/outroButton/hoverText_2"
+msgstr "УПРЯМЫЕ ЛЮДИ"
+
+msgid "progression/outroButton/hoverText_3"
+msgstr "МНЕ ТЕБЯ ЖАЛЬ"
+
+msgid "progression/outroButton/hoverText_4"
+msgstr "ЗАЧЕМ ТЕБЕ ЭТО"
+
+msgid "progression/outroButton/hoverText_5"
+msgstr "МЫ ВСТРЕТИМСЯ"
+
+msgid "progression/outroButton/mainText"
+msgstr "ВЕЛИКАЯ ПОБЕДА"
+
+msgid "progression/outroButton/simpleTooltip"
+msgstr "Момент торжества над Ратте."
+
+msgid "progression/outroButton/simpleTooltipDisabled"
+msgstr "Ратте ещё не побеждён."
+
+msgid "progression/topBanner/desc"
+msgstr ""
+"Зарабатывайте очки прогрессии в боях события, чтобы продвигаться вперёд "
+"по этапам и получать награды."
+
+msgid "progression/topBanner/title"
+msgstr "ПРОГРЕССИЯ РАЗЛОМА"

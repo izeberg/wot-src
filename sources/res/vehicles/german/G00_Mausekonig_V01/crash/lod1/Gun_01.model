@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/german/G00_Mausekonig_V01/crash/lod2/Gun_01</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.931323 -0.526683 -1.857014</min>
+		<max>0.932159 0.663711 5.790314</max>
+	</visibilityBox>
+	<nodelessVisual>vehicles/german/G00_Mausekonig_V01/crash/lod1/Gun_01</nodelessVisual>
+</root>

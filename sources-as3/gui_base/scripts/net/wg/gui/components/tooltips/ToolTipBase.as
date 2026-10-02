@@ -16,6 +16,8 @@ package net.wg.gui.components.tooltips
    {
       
       public static var COMPONENT_PROFILE_VEHICLE:String = "profileVehicle";
+      
+      private static const FADEIN_DURATION:int = 100;
        
       
       public var background:Sprite = null;
@@ -46,9 +48,9 @@ package net.wg.gui.components.tooltips
       
       protected var _props:ITooltipProps = null;
       
-      private var _isRedrawed:Boolean = false;
+      private var _tween:Tween = null;
       
-      private var tween:Tween = null;
+      private var _isRedrawed:Boolean = false;
       
       private var _showDelayIntervalID:Number = 0;
       
@@ -68,7 +70,6 @@ package net.wg.gui.components.tooltips
          this.bgShadowMargin = new Padding(3,5,7,5);
          super();
          visible = false;
-         alpha = 0;
          this.x = -1000;
          this.y = -1000;
       }
@@ -168,6 +169,7 @@ package net.wg.gui.components.tooltips
       protected function startShow(... rest) : void
       {
          this.clearDelayIntervalID();
+         this.updatePosition();
          this.fadeIn();
       }
       
@@ -176,6 +178,20 @@ package net.wg.gui.components.tooltips
          var _loc1_:Separator = this.separators.pop();
          this.content.removeChild(_loc1_);
          _loc1_.dispose();
+      }
+      
+      protected function fadeIn() : void
+      {
+         visible = true;
+         alpha = 0;
+         if(!this._tween)
+         {
+            this._tween = new Tween(FADEIN_DURATION,this,{"alpha":1},{
+               "paused":false,
+               "onComplete":this.onTweenComplete,
+               "ease":Strong.easeInOut
+            });
+         }
       }
       
       private function cleaUpSeparators() : void
@@ -194,7 +210,7 @@ package net.wg.gui.components.tooltips
          }
       }
       
-      private function fadeIn() : void
+      private function updatePosition() : void
       {
          var _loc1_:Number = App.appWidth;
          var _loc2_:Number = App.appHeight;
@@ -220,13 +236,6 @@ package net.wg.gui.components.tooltips
          }
          this.x = _loc3_ | 0;
          this.y = _loc4_ | 0;
-         this.visible = true;
-         this.tryClearTween();
-         this.tween = new Tween(100,this,{"alpha":1},{
-            "paused":false,
-            "onComplete":this.onTweenComplete,
-            "ease":Strong.easeInOut
-         });
       }
       
       private function onTweenComplete(param1:Tween) : void
@@ -236,11 +245,11 @@ package net.wg.gui.components.tooltips
       
       private function tryClearTween() : void
       {
-         if(this.tween)
+         if(this._tween)
          {
-            this.tween.paused = true;
-            this.tween.dispose();
-            this.tween = null;
+            this._tween.paused = true;
+            this._tween.dispose();
+            this._tween = null;
          }
       }
       

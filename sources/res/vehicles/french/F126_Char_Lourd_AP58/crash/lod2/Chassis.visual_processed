@@ -91,14 +91,10 @@
 					</property>
 					<property>
 						alphaReference
-						<Int>64</Int>
+						<Int>128</Int>
 					</property>
 					<property>
 						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
-						doubleSided
 						<Bool>true</Bool>
 					</property>
 				</material>
@@ -134,14 +130,10 @@
 					</property>
 					<property>
 						alphaReference
-						<Int>64</Int>
+						<Int>128</Int>
 					</property>
 					<property>
 						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
-						doubleSided
 						<Bool>true</Bool>
 					</property>
 				</material>
@@ -154,6 +146,6 @@
 		<min>-1.699084 -0.000147 -3.876459</min>
 		<max>1.699090 1.188039 3.748747</max>
 	</boundingBox>
-	<geometrySize>27392</geometrySize>
+	<geometrySize>32208</geometrySize>
 	<minUVDensity>1.126380</minUVDensity>
 </root>

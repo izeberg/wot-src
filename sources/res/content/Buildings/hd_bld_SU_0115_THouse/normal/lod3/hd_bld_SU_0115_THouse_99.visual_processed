@@ -52,10 +52,6 @@
 						<Vector4>0.100000 0.850000 0.700000 1.000000</Vector4>
 					</property>
 					<property>
-						g_enableTerrainBlending
-						<Bool>true</Bool>
-					</property>
-					<property>
 						metallicAOTile0
 						<Texture>content/Buildings/00_Tiles/dds/Redbrick_06_512_MAO.dds</Texture>
 					</property>
@@ -195,10 +191,6 @@
 					<property>
 						g_dirtColorParams
 						<Vector4>0.100000 0.570000 0.850000 0.000000</Vector4>
-					</property>
-					<property>
-						g_enableTerrainBlending
-						<Bool>true</Bool>
 					</property>
 					<property>
 						g_tile0Tint

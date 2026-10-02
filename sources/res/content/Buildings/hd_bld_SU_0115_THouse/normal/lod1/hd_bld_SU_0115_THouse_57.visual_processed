@@ -416,7 +416,7 @@
 						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_GBMT.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>1.165674 6.773090 0.065842</groupOrigin>
+				<groupOrigin>1.165674 6.782444 0.065842</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -586,8 +586,8 @@
 	</renderSet>
 	<boundingBox>
 		<min>-8.056350 -0.462264 -5.486447</min>
-		<max>9.760400 10.781496 5.618131</max>
+		<max>9.760400 10.781496 5.618132</max>
 	</boundingBox>
-	<geometrySize>201262</geometrySize>
+	<geometrySize>207912</geometrySize>
 	<minUVDensity>0.003910</minUVDensity>
 </root>

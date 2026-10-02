@@ -2,17 +2,11 @@
 <root>
 	<materialNames/>
 	<visibilityBox>
-		<min>
-			-1.21744 0.000309326 -2.72633
-			<!--BW_String-->
-		</min>
-		<max>
-			1.24951 1.09096 2.73106
-			<!--BW_String-->
-		</max>
+		<min>-1.217440 0.000309 -2.726330</min>
+		<max>1.249510 1.090960 2.731060</max>
 	</visibilityBox>
 	<tank>true</tank>
 	<parent>vehicles/german/G22_Sturmpanzer_II/crash/lod1/Chassis</parent>
-	<extent>32</extent>
+	<extent>32.000000</extent>
 	<nodefullVisual>vehicles/german/G22_Sturmpanzer_II/crash/lod0/Chassis</nodefullVisual>
 </root>

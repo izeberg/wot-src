@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/american/A184_HTPC/_skins/A184_HTPC_3Dst_01/normal/lod4/Turret_01</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<nodefullVisual>vehicles/american/A184_HTPC/_skins/A184_HTPC_3Dst_01/normal/lod3/Turret_01</nodefullVisual>
+	<visibilityBox>
+		<min>-1.512955 -0.011105 -3.152914</min>
+		<max>1.478354 1.839598 1.199005</max>
+	</visibilityBox>
+</root>

@@ -3,6 +3,8 @@ package net.wg.data.constants.generated
    public class FITTING_TYPES
    {
       
+      public static const DEFAULT:String = "default";
+      
       public static const OPTIONAL_DEVICE:String = "optionalDevice";
       
       public static const EQUIPMENT:String = "equipment";
@@ -22,6 +24,8 @@ package net.wg.data.constants.generated
       public static const CUSTOMIZATION:String = "customization";
       
       public static const BATTLE_ABILITY:String = "battleAbility";
+      
+      public static const VEHICLE_FUEL_TANK:String = "vehicleFuelTank";
       
       public static const STORE_SLOTS:Array = [VEHICLE,MODULE,SHELL,OPTIONAL_DEVICE,EQUIPMENT,BOOSTER];
       

@@ -2,10 +2,10 @@
 <root>
 	<chunkSize>100.000000</chunkSize>
 	<bounds>
-		<minX>-5</minX>
-		<maxX>4</maxX>
-		<minY>-5</minY>
-		<maxY>6</maxY>
+		<minX>-8</minX>
+		<maxX>7</maxX>
+		<minY>-8</minY>
+		<maxY>7</maxY>
 	</bounds>
 	<farPlane>
 		<max>25000.000000</max>
@@ -30,8 +30,8 @@
 					<constrains>
 						<minWidth>128</minWidth>
 						<minHeight>128</minHeight>
-						<maxWidth>1024</maxWidth>
-						<maxHeight>1024</maxHeight>
+						<maxWidth>2048</maxWidth>
+						<maxHeight>2048</maxHeight>
 						<format>BC3_UNORM</format>
 					</constrains>
 				</atlas>
@@ -42,8 +42,8 @@
 					<constrains>
 						<minWidth>128</minWidth>
 						<minHeight>128</minHeight>
-						<maxWidth>1024</maxWidth>
-						<maxHeight>1024</maxHeight>
+						<maxWidth>2048</maxWidth>
+						<maxHeight>2048</maxHeight>
 						<format>BC3_UNORM</format>
 					</constrains>
 				</atlas>
@@ -54,8 +54,8 @@
 					<constrains>
 						<minWidth>128</minWidth>
 						<minHeight>128</minHeight>
-						<maxWidth>1024</maxWidth>
-						<maxHeight>1024</maxHeight>
+						<maxWidth>2048</maxWidth>
+						<maxHeight>2048</maxHeight>
 						<format>BC3_UNORM</format>
 					</constrains>
 				</atlas>
@@ -76,6 +76,47 @@
 				</atlas>
 			</type>
 		</scene>
+		<road>
+			<type>
+				<name>GBufferDecals</name>
+				<atlas>
+					<width>2560</width>
+					<height>1024</height>
+					<format>BC3_UNORM</format>
+					<constrains>
+						<minWidth>64</minWidth>
+						<minHeight>64</minHeight>
+						<maxWidth>2048</maxWidth>
+						<maxHeight>2048</maxHeight>
+						<format>BC3_UNORM</format>
+					</constrains>
+				</atlas>
+				<atlas>
+					<width>2560</width>
+					<height>1024</height>
+					<format>BC3_UNORM</format>
+					<constrains>
+						<minWidth>64</minWidth>
+						<minHeight>64</minHeight>
+						<maxWidth>2048</maxWidth>
+						<maxHeight>2048</maxHeight>
+						<format>BC3_UNORM</format>
+					</constrains>
+				</atlas>
+				<atlas>
+					<width>2560</width>
+					<height>1024</height>
+					<format>BC3_UNORM</format>
+					<constrains>
+						<minWidth>64</minWidth>
+						<minHeight>64</minHeight>
+						<maxWidth>2048</maxWidth>
+						<maxHeight>2048</maxHeight>
+						<format>BC3_UNORM</format>
+					</constrains>
+				</atlas>
+			</type>
+		</road>
 	</DecalsInfo>
 	<havok>
 		<enabled>true</enabled>
@@ -86,5 +127,11 @@
 		<blurFilterExtent>27</blurFilterExtent>
 		<blurFilterFalloff>0.000100</blurFilterFalloff>
 	</shadowBaker>
+	<borderMask>borderMask.dds</borderMask>
 	<NonChunkUDO>true</NonChunkUDO>
+	<navmeshGenerator>navgen</navmeshGenerator>
+	<enableClusteredShading>false</enableClusteredShading>
+	<isSHGridQualityOverridden>false</isSHGridQualityOverridden>
+	<overrideSHGridQuality>0</overrideSHGridQuality>
+	<texturesMipShift>0</texturesMipShift>
 </root>

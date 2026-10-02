@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/russian/R205_Tank_Rozanova/normal/lod1/Gun_02</parent>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-0.337924 -0.199841 -0.004653</min>
+		<max>0.337955 0.238863 4.729540</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/russian/R205_Tank_Rozanova/normal/lod0/Gun_02</nodefullVisual>
+</root>

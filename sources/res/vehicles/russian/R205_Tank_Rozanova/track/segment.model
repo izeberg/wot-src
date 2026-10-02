@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<nodelessVisual>vehicles/russian/R205_Tank_Rozanova/track/segment</nodelessVisual>
+	<visibilityBox>
+		<min>-0.292563 -0.069139 -0.096665</min>
+		<max>0.292564 0.055938 0.096793</max>
+	</visibilityBox>
 </root>

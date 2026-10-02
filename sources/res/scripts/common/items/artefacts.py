@@ -536,9 +536,7 @@ class Equipment(Artefact):
     __slots__ = ('equipmentType', 'reuseCount', 'cooldownSeconds', 'soundNotification',
                  'stunResistanceEffect', 'stunResistanceDuration', 'repeatedStunDurationFactor',
                  'clientSelector', 'ownerPrefab', 'usagePrefab', 'playerMessagesKey',
-                 'code', 'activationSound', 'deactivationSound', 'refillSound', 'consumeSeconds',
-                 'deploySeconds', 'rechargeSeconds', 'soundPressedReady', 'soundPressedNotReady',
-                 'soundPressedCancel')
+                 'code', 'activationSound', 'deactivationSound', 'refillSound')
 
     def __init__(self):
         super(Equipment, self).__init__(items.ITEM_TYPES.equipment, 0, '', 0)
@@ -548,9 +546,6 @@ class Equipment(Artefact):
         self.repeatedStunDurationFactor = 1.0
         self.reuseCount = component_constants.ZERO_INT
         self.cooldownSeconds = component_constants.ZERO_INT
-        self.consumeSeconds = component_constants.ZERO_INT
-        self.rechargeSeconds = component_constants.ZERO_INT
-        self.deploySeconds = component_constants.ZERO_INT
         self.soundNotification = None
         self.clientSelector = None
         self.playerMessagesKey = None
@@ -559,9 +554,6 @@ class Equipment(Artefact):
         self.activationSound = None
         self.deactivationSound = None
         self.refillSound = None
-        self.soundPressedReady = None
-        self.soundPressedNotReady = None
-        self.soundPressedCancel = None
         return
 
     def _readBasicConfig(self, xmlCtx, section):
@@ -572,13 +564,9 @@ class Equipment(Artefact):
         self.deactivationSound = _xml.readStringOrNone(xmlCtx, section, 'deactivationSound')
         self.refillSound = _xml.readStringOrNone(xmlCtx, section, 'refillSound')
         self.playerMessagesKey = _xml.readStringOrNone(xmlCtx, section, 'playerMessagesKey')
-        self.soundPressedReady = _xml.readStringOrNone(xmlCtx, section, 'soundPressedReady')
-        self.soundPressedNotReady = _xml.readStringOrNone(xmlCtx, section, 'soundPressedNotReady')
-        self.soundPressedCancel = _xml.readStringOrNone(xmlCtx, section, 'soundPressedCancel')
         scriptSection = section['script']
         self.stunResistanceEffect, self.stunResistanceDuration, self.repeatedStunDurationFactor = _readStun(xmlCtx, scriptSection)
-        params = _readReuseParams(xmlCtx, scriptSection)
-        self.reuseCount, self.cooldownSeconds, self.consumeSeconds, self.deploySeconds, self.rechargeSeconds = params
+        self.reuseCount, self.cooldownSeconds = _readReuseParams(xmlCtx, scriptSection)
         self.clientSelector = _xml.readStringOrNone(xmlCtx, scriptSection, 'clientSelector')
         self.ownerPrefab = _xml.readStringOrNone(xmlCtx, section, 'ownerPrefab')
         self.usagePrefab = _xml.readStringOrNone(xmlCtx, section, 'usagePrefab')
@@ -2980,10 +2968,7 @@ def _readStun(xmlCtx, scriptSection):
 def _readReuseParams(xmlCtx, scriptSection):
     return (
      _xml.readInt(xmlCtx, scriptSection, 'reuseCount', minVal=-1) if scriptSection.has_key('reuseCount') else 0,
-     _xml.readInt(xmlCtx, scriptSection, 'cooldownSeconds', minVal=0) if scriptSection.has_key('cooldownSeconds') else 0,
-     _xml.readInt(xmlCtx, scriptSection, 'consumeSeconds', minVal=0) if scriptSection.has_key('consumeSeconds') else 0,
-     _xml.readInt(xmlCtx, scriptSection, 'deploySeconds', minVal=0) if scriptSection.has_key('deploySeconds') else 0,
-     _xml.readInt(xmlCtx, scriptSection, 'rechargeSeconds', minVal=0) if scriptSection.has_key('rechargeSeconds') else 0)
+     _xml.readInt(xmlCtx, scriptSection, 'cooldownSeconds', minVal=0) if scriptSection.has_key('cooldownSeconds') else 0)
 
 
 class OPT_DEV_TYPE_TAG(object):
@@ -3278,3 +3263,22 @@ class DamageModifierAbilityEquipment(BaseAbilityEquipment):
         self.maxDamageIncreasePerShot = _xml.readPositiveFloat(xmlCtx, section, 'maxDamageIncreasePerShot', component_constants.ZERO_FLOAT)
         self.damageFirstIncrease = _xml.readPositiveFloat(xmlCtx, section, 'damageFirstIncrease', component_constants.ZERO_FLOAT)
         self.addDuration = _xml.readPositiveFloat(xmlCtx, section, 'addDuration', component_constants.ZERO_FLOAT)
+
+
+class SureShotAbilityEquipment(BaseAbilityEquipment):
+    __slots__ = ('impulse', )
+
+    def __init__(self):
+        super(SureShotAbilityEquipment, self).__init__()
+        self.impulse = None
+        return
+
+    def _readConfig(self, xmlCtx, section):
+        super(SureShotAbilityEquipment, self)._readConfig(xmlCtx, section)
+        if section.has_key('impulse'):
+            self.impulse = self._readImpulse(xmlCtx, section['impulse'])
+
+    def _readImpulse(self, xmlCtx, section):
+        return {'magnitude': _xml.readNonNegativeFloat(xmlCtx, section, 'magnitude'), 
+           'applyPoint': _xml.readVector3(xmlCtx, section, 'applyPoint', component_constants.ZERO_VECTOR3), 
+           'duration': _xml.readNonNegativeFloat(xmlCtx, section, 'duration')}

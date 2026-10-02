@@ -87,10 +87,6 @@
 						normalGlossSpecTile2
 						<Texture>content/Buildings/00_Tiles/dds/Redbrick_06_512_GBMT.dds</Texture>
 					</property>
-					<property>
-						g_enableTerrainBlending
-						<Bool>true</Bool>
-					</property>
 				</material>
 				<groupOrigin>1.383284 4.757895 0.389208</groupOrigin>
 			</primitiveGroup>
@@ -242,10 +238,6 @@
 					<property>
 						normalGlossSpecTile2
 						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_GBMT.dds</Texture>
-					</property>
-					<property>
-						g_enableTerrainBlending
-						<Bool>true</Bool>
 					</property>
 				</material>
 				<groupOrigin>0.911214 3.556751 -0.198384</groupOrigin>
@@ -584,6 +576,6 @@
 		<min>-8.056350 -0.462264 -5.486447</min>
 		<max>9.755582 10.781496 5.578206</max>
 	</boundingBox>
-	<geometrySize>56856</geometrySize>
+	<geometrySize>56824</geometrySize>
 	<minUVDensity>0.003715</minUVDensity>
 </root>

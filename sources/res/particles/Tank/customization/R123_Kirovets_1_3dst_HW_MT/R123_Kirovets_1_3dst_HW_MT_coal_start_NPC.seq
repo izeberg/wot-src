@@ -272,14 +272,14 @@
 	<sequenceObject>
 		<name>Blow</name>
 		<type>model</type>
-		<resource>vehicles/russian/R123_Kirovets_1/_skin/R123_Kirovets_1_3dst_HW_MT/normal/lod0/equip_anim.model</resource>
+		<resource>vehicles/russian/R123_Kirovets_1/_skins/R123_Kirovets_1_3dst_HW_MT/normal/lod0/equip_anim.model</resource>
 		<track>
 			<name>animation</name>
 			<type>animation</type>
 			<frame>
 				<startTime>0.000000</startTime>
 				<duration>5.000000</duration>
-				<resourceID>vehicles/russian/R123_Kirovets_1/_skin/R123_Kirovets_1_3dst_HW_MT/normal/lod0/Kirovets_hull_anim_short.fbx</resourceID>
+				<resourceID>vehicles/russian/R123_Kirovets_1/_skins/R123_Kirovets_1_3dst_HW_MT/normal/lod0/Kirovets_hull_anim_short.fbx</resourceID>
 				<clipName/>
 				<speed>1.000000</speed>
 				<layer>0</layer>

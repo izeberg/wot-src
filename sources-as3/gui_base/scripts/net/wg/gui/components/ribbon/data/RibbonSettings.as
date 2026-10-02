@@ -123,14 +123,15 @@ package net.wg.gui.components.ribbon.data
          return this._ribbonText;
       }
       
+      public function updateRibbonProperties(param1:String, param2:String) : void
+      {
+         this._ribbonText = param2;
+         this._ribbonSettingsByType.icon = param1;
+      }
+      
       public function getRibbonType() : String
       {
          return this._ribbonType;
-      }
-      
-      public function getSettingsByType() : RibbonSettingByType
-      {
-         return RIBBON_TYPES_MAP[this._ribbonType] || this.DYNAMIC_RIBBON_TYPES_MAP[this._ribbonType];
       }
       
       public function getStartCountItemsInPool() : int
@@ -143,15 +144,9 @@ package net.wg.gui.components.ribbon.data
          return TEXT_SETTINGS[this._ribbonSettingsByType.getCurrentColor()];
       }
       
-      public function isDisposed() : Boolean
+      public function getSettingsByType() : RibbonSettingByType
       {
-         return this._disposed;
-      }
-      
-      public function updateRibbonProperties(param1:String, param2:String) : void
-      {
-         this._ribbonText = param2;
-         this._ribbonSettingsByType.icon = param1;
+         return RIBBON_TYPES_MAP[this._ribbonType] || this.DYNAMIC_RIBBON_TYPES_MAP[this._ribbonType];
       }
       
       protected function atlasInit() : void
@@ -211,16 +206,9 @@ package net.wg.gui.components.ribbon.data
          RIBBON_TYPES_MAP[BATTLE_EFFICIENCY_TYPES.DAMAGE_BY_ARTILLERY] = new RibbonSettingByType(_loc1_,BATTLEATLAS.RIBBONS_DAMAGE_BY_ARTILLERY,_loc1_,BATTLEATLAS.RIBBONS_DAMAGE_BY_ARTILLERY,3);
          RIBBON_TYPES_MAP[BATTLE_EFFICIENCY_TYPES.RECEIVED_BY_ARTILLERY] = new RibbonSettingByType(_loc2_,BATTLEATLAS.RIBBONS_RECEIVED_BY_ARTILLERY,_loc3_,BATTLEATLAS.RIBBONS_RECEIVED_BY_ARTILLERY_BLIND,3);
          RIBBON_TYPES_MAP[BATTLE_EFFICIENCY_TYPES.RECEIVED_BY_DEATH_ZONE] = new RibbonSettingByType(_loc2_,BATTLEATLAS.RIBBONS_RECEIVED_BY_DEATH_ZONE,_loc3_,BATTLEATLAS.RIBBONS_RECEIVED_BY_DEATH_ZONE_BLIND,1);
-         RIBBON_TYPES_MAP[BATTLE_EFFICIENCY_TYPES.VEHICLE_HEALTH_ADDED] = new RibbonSettingByType(_loc1_,BATTLEATLAS.RIBBONS_HEALTH_ADDED,_loc1_,BATTLEATLAS.RIBBONS_HEALTH_ADDED,1);
-         RIBBON_TYPES_MAP[BATTLE_EFFICIENCY_TYPES.RECEIVED_BY_CIRCUIT_OVERLOAD] = new RibbonSettingByType(_loc2_,BATTLEATLAS.RIBBONS_DAMAGE_BY_CIRCUIT_OVERLOAD,_loc3_,BATTLEATLAS.RIBBONS_DAMAGE_BY_CIRCUIT_OVERLOAD_BLIND,1);
-         RIBBON_TYPES_MAP[BATTLE_EFFICIENCY_TYPES.RECEIVED_BY_ENERGY_SHIELD] = new RibbonSettingByType(_loc2_,BATTLEATLAS.RIBBONS_DAMAGE_BY_ENERGY_SHIELD,_loc3_,BATTLEATLAS.RIBBONS_DAMAGE_BY_ENERGY_SHIELD_BLIND,1);
-         RIBBON_TYPES_MAP[BATTLE_EFFICIENCY_TYPES.DEALT_BY_ENERGY_SHIELD] = new RibbonSettingByType(_loc1_,BATTLEATLAS.RIBBONS_DEALT_BY_ENERGY_SHIELD,_loc1_,BATTLEATLAS.RIBBONS_DEALT_BY_ENERGY_SHIELD,1);
-         RIBBON_TYPES_MAP[BATTLE_EFFICIENCY_TYPES.DEALT_BY_MISSILE] = new RibbonSettingByType(_loc1_,BATTLEATLAS.WT_DEALT_BY_MISSILE,_loc1_,BATTLEATLAS.WT_DEALT_BY_MISSILE,1);
-         RIBBON_TYPES_MAP[BATTLE_EFFICIENCY_TYPES.RECEIVED_BY_MISSILE] = new RibbonSettingByType(_loc2_,BATTLEATLAS.WT_RECEIVED_BY_MISSILE,_loc3_,BATTLEATLAS.WT_RECEIVED_BY_MISSILE_BLIND,1);
-         RIBBON_TYPES_MAP[BATTLE_EFFICIENCY_TYPES.RECEIVED_BY_ANOMALY] = new RibbonSettingByType(_loc2_,BATTLEATLAS.RIBBONS_DAMAGE_BY_ANOMALY,_loc3_,BATTLEATLAS.RIBBONS_DAMAGE_BY_ANOMALY_BLIND,1);
-         RIBBON_TYPES_MAP[BATTLE_EFFICIENCY_TYPES.DEALT_BY_ANOMALY] = new RibbonSettingByType(_loc1_,BATTLEATLAS.RIBBONS_HEALTH_ADDED,_loc1_,BATTLEATLAS.RIBBONS_HEALTH_ADDED,1);
-         RIBBON_TYPES_MAP[BATTLE_EFFICIENCY_TYPES.RECEIVED_BY_STUN_AREA_MOD_A] = new RibbonSettingByType(_loc2_,BATTLEATLAS.RIBBONS_DAMAGE_BY_STUN_AREA_MOD_A,_loc3_,BATTLEATLAS.RIBBONS_DAMAGE_BY_STUN_AREA_MOD_A_BLIND,1);
-         RIBBON_TYPES_MAP[BATTLE_EFFICIENCY_TYPES.DEALT_BY_STUN_AREA_MOD_A] = new RibbonSettingByType(_loc1_,BATTLEATLAS.RIBBONS_DEALT_BY_STUN_AREA_MOD_A,_loc1_,BATTLEATLAS.RIBBONS_DEALT_BY_STUN_AREA_MOD_A,1);
+         RIBBON_TYPES_MAP[BATTLE_EFFICIENCY_TYPES.DEALT_DMG_BY_PERIODIC] = new RibbonSettingByType(_loc1_,BATTLEATLAS.RIBBONS_DAMAGE_PERIODIC_PORTAL,_loc1_,BATTLEATLAS.RIBBONS_DAMAGE_PERIODIC_PORTAL,2);
+         RIBBON_TYPES_MAP[BATTLE_EFFICIENCY_TYPES.RECEIVED_BY_PERIODIC] = new RibbonSettingByType(_loc2_,BATTLEATLAS.RIBBONS_DAMAGE_PERIODIC_ENEMY_PORTAL,_loc3_,BATTLEATLAS.RIBBONS_DAMAGE_PERIODIC_ENEMY_PORTAL,2);
+         RIBBON_TYPES_MAP[BATTLE_EFFICIENCY_TYPES.HEALTH_ADDED] = new RibbonSettingByType(_loc1_,BATTLEATLAS.RIBBONS_HEALTH_ADDED_PORTAL,_loc1_,BATTLEATLAS.RIBBONS_HEALTH_ADDED_PORTAL,1);
          BACKGROUNDS[_loc1_] = new BackgroundAtlasNames(_loc1_);
          BACKGROUNDS[_loc4_] = new BackgroundAtlasNames(_loc4_);
          BACKGROUNDS[_loc2_] = new BackgroundAtlasNames(_loc2_);
@@ -263,12 +251,6 @@ package net.wg.gui.components.ribbon.data
          _loc2_ = new <String>[BATTLEATLAS.FORT_ARTILLERY_ENEMY,BATTLEATLAS.FORT_ARTILLERY_ENEMY_CRITS];
          _loc3_ = new <String>[BATTLEATLAS.FORT_ARTILLERY_ENEMY_BLIND,BATTLEATLAS.FORT_ARTILLERY_ENEMY_CRITS_BLIND];
          DAMAGE_SOURCE_MAP[DAMAGE_SOURCE_TYPES.FORT_ARTILLERY] = new DamageSourceComplexSetting(_loc1_,_loc2_,_loc3_);
-      }
-      
-      protected function initDynamicRibbons() : void
-      {
-         var _loc1_:String = RibbonColors.PERK;
-         this.DYNAMIC_RIBBON_TYPES_MAP[BATTLE_EFFICIENCY_TYPES.PERK] = new RibbonSettingByType(_loc1_,BATTLEATLAS.GUNNER_FOCUS,_loc1_,BATTLEATLAS.GUNNER_FOCUS,1);
       }
       
       private function init() : void
@@ -314,6 +296,17 @@ package net.wg.gui.components.ribbon.data
             ICON_Y_PADDINGS[DAMAGE_SOURCE_TYPES.AIRSTRIKE] = -6;
             ICON_Y_PADDINGS[DAMAGE_SOURCE_TYPES.FORT_ARTILLERY] = -6;
          }
+      }
+      
+      protected function initDynamicRibbons() : void
+      {
+         var _loc1_:String = RibbonColors.PERK;
+         this.DYNAMIC_RIBBON_TYPES_MAP[BATTLE_EFFICIENCY_TYPES.PERK] = new RibbonSettingByType(_loc1_,BATTLEATLAS.GUNNER_FOCUS,_loc1_,BATTLEATLAS.GUNNER_FOCUS,1);
+      }
+      
+      public function isDisposed() : Boolean
+      {
+         return this._disposed;
       }
    }
 }

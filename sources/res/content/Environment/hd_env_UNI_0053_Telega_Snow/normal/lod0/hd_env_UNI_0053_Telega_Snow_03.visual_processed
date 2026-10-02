@@ -31,9 +31,8 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<stream>uv2</stream>
-			<primitive>indices</primitive>
+			<vertices>s_wallShape0.vertices</vertices>
+			<primitive>s_wallShape0.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -43,8 +42,17 @@
 				</material>
 				<groupOrigin>-0.542621 1.003900 0.002649</groupOrigin>
 			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>d0Shape.vertices</vertices>
+			<stream>d0Shape.uv2</stream>
+			<primitive>d0Shape.indices</primitive>
 			<primitiveGroup>
-				1
+				0
 				<material>
 					<identifier>d_wood0</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
@@ -102,7 +110,7 @@
 				<groupOrigin>-0.396040 0.051886 0.047395</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				2
+				1
 				<material>
 					<identifier>n_wood0</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
@@ -166,6 +174,6 @@
 		<max>1.639701 2.007800 1.148318</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>169322</geometrySize>
+	<geometrySize>156206</geometrySize>
 	<minUVDensity>0.012008</minUVDensity>
 </root>

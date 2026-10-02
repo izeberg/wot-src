@@ -8,6 +8,9 @@
 		<Chassis_105_leFH18B2_IGR>
 			<id>60004</id>
 		</Chassis_105_leFH18B2_IGR>
+		<Chassis_AMC_35_H>
+			<id>20001</id>
+		</Chassis_AMC_35_H>
 		<Chassis_AMC_35_SH>
 			<id>10000</id>
 		</Chassis_AMC_35_SH>
@@ -17,6 +20,9 @@
 		<Chassis_AMX13_57_100_GrandFinal>
 			<id>124</id>
 		</Chassis_AMX13_57_100_GrandFinal>
+		<Chassis_AMX13_57_100_H>
+			<id>20002</id>
+		</Chassis_AMX13_57_100_H>
 		<Chassis_AMX13_57_100_SH>
 			<id>10001</id>
 		</Chassis_AMX13_57_100_SH>
@@ -32,6 +38,9 @@
 		<Chassis_AMX40_2>
 			<id>20</id>
 		</Chassis_AMX40_2>
+		<Chassis_AMX40_portal>
+			<id>40000</id>
+		</Chassis_AMX40_portal>
 		<Chassis_AMX50_Foch>
 			<id>72</id>
 		</Chassis_AMX50_Foch>
@@ -197,6 +206,9 @@
 		<Chassis_Bat_Chatillon25t_2_7x7>
 			<id>31007</id>
 		</Chassis_Bat_Chatillon25t_2_7x7>
+		<Chassis_Bat_Chatillon25t_2_H>
+			<id>20003</id>
+		</Chassis_Bat_Chatillon25t_2_H>
 		<Chassis_Bat_Chatillon25t_2_IGR>
 			<id>60007</id>
 		</Chassis_Bat_Chatillon25t_2_IGR>
@@ -329,6 +341,9 @@
 		<Chassis_F134_ARL_Projet_F>
 			<id>31012</id>
 		</Chassis_F134_ARL_Projet_F>
+		<Chassis_F134_ARL_Projet_F_T>
+			<id>35001</id>
+		</Chassis_F134_ARL_Projet_F_T>
 		<Chassis_F135_Schneider_120_AC_Gendarme_02>
 			<id>31016</id>
 		</Chassis_F135_Schneider_120_AC_Gendarme_02>
@@ -341,9 +356,6 @@
 		<Chassis_F144_Etoile>
 			<id>31020</id>
 		</Chassis_F144_Etoile>
-		<Chassis_F18_Bat_Chatillon25t_hound_TLXXL>
-			<id>1001</id>
-		</Chassis_F18_Bat_Chatillon25t_hound_TLXXL>
 		<Chassis_F19_Lorraine40t>
 			<id>141</id>
 		</Chassis_F19_Lorraine40t>

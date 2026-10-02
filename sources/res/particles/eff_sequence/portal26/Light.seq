@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>4.433333</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Circle</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/portal26_event/LEP/Light.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd0</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 0.000000 0.000000 0.200000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.400000</startTime>
+				<value>1.000000 0.000000 0.000000 0.200000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 5.296818</outTangent>
+				<tangentMode>66305</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.800000</startTime>
+				<value>1.000000 0.000000 0.000000 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 0.012589</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 0.012589</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.833333</startTime>
+				<value>0.999363 0.000000 0.000000 0.203971</value>
+				<inTangent>-0.000000 0.000000 0.000000 0.691068</inTangent>
+				<outTangent>-0.000000 0.000000 0.000000 6.443863</outTangent>
+				<tangentMode>66307</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.100000</startTime>
+				<value>0.999363 0.000000 0.000000 0.985409</value>
+				<inTangent>0.001365 0.000000 0.000000 -0.047994</inTangent>
+				<outTangent>0.001365 0.000000 0.000000 -0.047994</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.433333</startTime>
+				<value>1.000000 0.000000 0.000000 0.207958</value>
+				<inTangent>0.002389 0.000000 0.000000 -1.742702</inTangent>
+				<outTangent>0.002389 0.000000 0.000000 -1.742702</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd1</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 0.000000 0.000000 0.200000</value>
+				<inTangent>0.000000 0.000000 0.000000 -0.001329</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -0.001329</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.000000</startTime>
+				<value>1.000000 0.000000 0.000000 0.196013</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.001329</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 3.277771</outTangent>
+				<tangentMode>66305</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.466667</startTime>
+				<value>1.000000 0.000000 0.000000 0.759150</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 0.000000</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.566667</startTime>
+				<value>1.000000 0.000000 0.000000 0.202974</value>
+				<inTangent>0.000000 0.000000 0.000000 -0.182459</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -0.182459</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.700000</startTime>
+				<value>1.000000 0.000000 0.000000 0.733235</value>
+				<inTangent>0.000000 0.000000 0.000000 1.098064</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 1.098064</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.000000</startTime>
+				<value>1.000000 0.000000 0.000000 0.198987</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -1.780830</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -1.780830</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

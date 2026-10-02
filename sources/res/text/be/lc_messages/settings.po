@@ -738,9 +738,6 @@ msgstr ""
 msgid "edgeDetectAA"
 msgstr "Edge detect AA"
 
-msgid "eventSettingDisabled"
-msgstr "Часть настроек недоступна"
-
 msgid "feedBack"
 msgstr "Інфармаванне ў баі"
 
@@ -2498,6 +2495,13 @@ msgstr "Сабвуфер"
 
 msgid "sounds/subtitles"
 msgstr "Субтытры"
+
+msgid "sounds/systemMixerVolumeDisabledLink"
+msgstr "Слишком низкая громкость игры!"
+
+msgid "sounds/systemMixerVolumeDisabledLink/description"
+msgstr ""
+"Нажмите здесь, чтобы посмотреть инструкцию и проверить настройки микшера."
 
 msgid "sounds/tabCommon"
 msgstr "Агульная гучнасць"

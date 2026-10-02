@@ -13,8 +13,8 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>gun_01_Shape.vertices</vertices>
-			<primitive>gun_01_Shape.indices</primitive>
+			<vertices>gun_01Shape.vertices</vertices>
+			<primitive>gun_01Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -50,7 +50,6 @@
 						excludeMaskAndAOMap
 						<Texture>vehicles/american/A175_OTAC_MT_58/OTAC_MT_58_guns_01_AO.dds</Texture>
 					</property>
-					<sortOrder>0</sortOrder>
 				</material>
 				<groupOrigin>0.009789 0.004897 0.367987</groupOrigin>
 			</primitiveGroup>
@@ -60,6 +59,6 @@
 		<min>-0.563589 -0.329387 -1.369428</min>
 		<max>0.583167 0.339181 2.105402</max>
 	</boundingBox>
-	<geometrySize>56590</geometrySize>
+	<geometrySize>56526</geometrySize>
 	<minUVDensity>0.033773</minUVDensity>
 </root>

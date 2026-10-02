@@ -54,24 +54,27 @@ package net.wg.gui.components.tooltips.inblocks
       
       override protected function redraw() : void
       {
-         super.redraw();
-         this.removeValidationRequesters();
+         visible = false;
          this.clearData();
          this.clearBlocks();
-         visible = false;
+         this.removeValidationRequesters();
          App.utils.scheduler.scheduleOnNextFrame(this.scheduleValidation);
+         super.redraw();
       }
       
       override protected function updateSize() : void
       {
          var _loc1_:Rectangle = null;
          var _loc2_:Number = NaN;
+         var _loc3_:int = 0;
+         var _loc4_:int = 0;
          if(this.isBlocksBuilt())
          {
             _loc1_ = content.getBounds(content);
             _loc2_ = _loc1_.x + _loc1_.width;
-            background.width = _loc2_ + contentMargin.right + bgShadowMargin.right | 0;
-            background.height = this._contentHeight + contentMargin.bottom + bgShadowMargin.bottom | 0;
+            _loc3_ = _loc2_ + contentMargin.right + bgShadowMargin.right;
+            _loc4_ = this._contentHeight + contentMargin.bottom + bgShadowMargin.bottom;
+            this.setBackgroundSize(_loc3_,_loc4_);
          }
       }
       
@@ -82,18 +85,23 @@ package net.wg.gui.components.tooltips.inblocks
          super.onDispose();
       }
       
+      protected function setBackgroundSize(param1:int, param2:int) : void
+      {
+         background.width = param1;
+         background.height = param2;
+      }
+      
       private function rearrangeBlocks() : void
       {
-         var _loc4_:int = 0;
-         var _loc8_:int = 0;
+         var _loc3_:Number = NaN;
          var _loc1_:ITooltipBlock = null;
          var _loc2_:DisplayObject = null;
-         var _loc3_:Number = bgShadowMargin.left + contentMargin.left | 0;
-         _loc4_ = this._blocks.length;
+         _loc3_ = bgShadowMargin.left + contentMargin.left | 0;
+         var _loc4_:int = this._blocks.length;
          var _loc5_:Vector.<BlockDataItemVO> = this._inBlocksData.blocksData;
          var _loc6_:PaddingVO = null;
          var _loc7_:Boolean = false;
-         _loc8_ = 0;
+         var _loc8_:int = 0;
          while(_loc8_ < _loc4_)
          {
             _loc1_ = this._blocks[_loc8_];
@@ -309,6 +317,12 @@ package net.wg.gui.components.tooltips.inblocks
          this._validationScheduled = false;
       }
       
+      private function removeValidationRequesters() : void
+      {
+         App.utils.scheduler.cancelTask(this.scheduleValidation);
+         this.unscheduleValidation();
+      }
+      
       override protected function get isBeginShowAfterRedraw() : Boolean
       {
          return false;
@@ -349,12 +363,6 @@ package net.wg.gui.components.tooltips.inblocks
       private function onBlockSizeChangeHandler(param1:ToolTipBlockEvent) : void
       {
          this.scheduleValidation();
-      }
-      
-      private function removeValidationRequesters() : void
-      {
-         App.utils.scheduler.cancelTask(this.scheduleValidation);
-         this.unscheduleValidation();
       }
    }
 }

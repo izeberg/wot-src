@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<nodefullVisual>vehicles/japan/J52_SYA1/crash/lod3/Chassis</nodefullVisual>
+	<parent>vehicles/japan/J52_SYA1/crash/lod4/Chassis</parent>
+	<visibilityBox>
+		<min>-1.643948 0.028424 -3.909287</min>
+		<max>1.643948 1.150716 4.211557</max>
+	</visibilityBox>
+</root>

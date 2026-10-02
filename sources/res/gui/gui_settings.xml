@@ -1382,6 +1382,11 @@
 				<name>buyLootboxes</name>
 				<type>url</type>
 			</item>
+			<item>
+				$PARAMS(/portal_category)
+				<name>portalShop</name>
+				<type>url</type>
+			</item>
 		</value>
 	</setting>
 	<setting>
@@ -1745,8 +1750,13 @@
 		<macros>AUTH_REALM</macros>
 		<value>
 			<item>
-				https://webbrg.tanki.su/ru/promocontent/wt-26/
+				https://webbrg.tanki.su/ru/promocontent/wt-revenge/
 				<name>default</name>
+				<type>url</type>
+			</item>
+			<item>
+				https://webbrg-rpt.tanki.su/ru/promocontent/wt-revenge/
+				<name>CT</name>
 				<type>url</type>
 			</item>
 		</value>
@@ -2301,6 +2311,42 @@
 		<value>
 			<item>
 				https://webbrg.tanki.su/ru/promocontent/tank-academy/
+				<name>default</name>
+				<type>url</type>
+			</item>
+		</value>
+	</setting>
+	<setting>
+		<name>sessionProgressRewardsInfoPageURL</name>
+		<type>macros</type>
+		<macros>AUTH_REALM</macros>
+		<value>
+			<item>
+				https://webbrg.tanki.su/ru/promocontent/chain_of_entrances/
+				<name>default</name>
+				<type>url</type>
+			</item>
+		</value>
+	</setting>
+	<setting>
+		<name>portalInfoPageURL</name>
+		<type>macros</type>
+		<macros>AUTH_REALM</macros>
+		<value>
+			<item>
+				https://webbrg.tanki.su/$LANGUAGE_CODE/promocontent/razlom26/
+				<name>default</name>
+				<type>url</type>
+			</item>
+		</value>
+	</setting>
+	<setting>
+		<name>systemMixerVolumeDisabledPage</name>
+		<type>macros</type>
+		<macros>AUTH_REALM</macros>
+		<value>
+			<item>
+				https://lesta.ru/support/ru/products/mt/hot-issues/37169/
 				<name>default</name>
 				<type>url</type>
 			</item>

@@ -104,6 +104,12 @@ package net.wg.data.constants.generated
       public static const WHITE_ICON_MORTAR_16X16:String = "whiteIconMortar16x16";
       
       public static const WHITE_ICON_AIRSHIP_16X16:String = "whiteIconAirship16x16";
+      
+      public static const DAMAGE_LOG_SENTINEL_ENEMY_16X16:String = "damageLog_sentinel_enemy_16x16";
+      
+      public static const DAMAGE_LOG_PERIODIC_16X16:String = "damageLog_periodic_16x16";
+      
+      public static const DAMAGE_LOG_PERIODIC_ENEMY_16X16:String = "damageLog_periodic_16x16";
        
       
       public function BATTLEDAMAGELOG_IMAGES()

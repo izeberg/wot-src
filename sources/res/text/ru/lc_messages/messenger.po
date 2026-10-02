@@ -1272,8 +1272,11 @@ msgstr "Списано золотых билетов"
 msgid "platformCurrencyMsg/debited/honey_coin"
 msgstr "Списано мёда"
 
+msgid "platformCurrencyMsg/debited/razlom_coin"
+msgstr "Списано монет Разлома"
+
 msgid "platformCurrencyMsg/debited/sacoin"
-msgstr "Списано жетонов за выслугу лет"
+msgstr "Списано жетонов ветерана"
 
 msgid "platformCurrencyMsg/received/bpbit"
 msgstr "Начислено очков Боевого пропуска"
@@ -1299,8 +1302,11 @@ msgstr "Начислено золотых билетов"
 msgid "platformCurrencyMsg/received/honey_coin"
 msgstr "Начислено мёда"
 
+msgid "platformCurrencyMsg/received/razlom_coin"
+msgstr "Начислено монет Разлома"
+
 msgid "platformCurrencyMsg/received/sacoin"
-msgstr "Добавлено жетонов за выслугу лет"
+msgstr "Добавлено жетонов ветерана"
 
 msgid "prebattle/addAllBtn/tooltip/body"
 msgstr "Добавить все контакты в список адресатов."
@@ -3194,6 +3200,12 @@ msgstr "Поставки из тыла"
 msgid "serviceChannelMessages/paragons/body"
 msgstr "Получен доступ к ветке техники."
 
+msgid "serviceChannelMessages/paragonsCoins/purchase"
+msgstr "Начислено очков проекта «Орбита»: "
+
+msgid "serviceChannelMessages/paragonsCoins/title"
+msgstr "Очки проекта «Орбита»"
+
 msgid ""
 "serviceChannelMessages/personalMission/3/earlyPerfectCompletion/congrats"
 msgstr "За досрочное прохождение аттестации вам присвоены следующие награды"
@@ -3608,6 +3620,24 @@ msgstr "Игровой сервер будет отключён %(date)s."
 msgid "serviceChannelMessages/serverRebootCancelled"
 msgstr "Отключение игрового сервера, запланированное %(date)s, отменено."
 
+msgid "serviceChannelMessages/sessionProgressRewardsComplete/body"
+msgstr ""
+"Вы получили все награды.\n"
+"\n"
+"Полученные награды:"
+
+msgid "serviceChannelMessages/sessionProgressRewardsComplete/header"
+msgstr "Поздравляем!"
+
+msgid "serviceChannelMessages/sessionProgressRewardsNotification/button"
+msgstr "Ко всем наградам"
+
+msgid "serviceChannelMessages/sessionProgressRewardsNotification/header"
+msgstr "Получены награды за вход в игру"
+
+msgid "serviceChannelMessages/sessionProgressRewardsNotification/text"
+msgstr "Заходите регулярно: новый день — новая награда."
+
 msgid "serviceChannelMessages/specialReward/intelligenceBlueprints"
 msgstr "Универсальный фрагмент (x%(fragmentsCount)s)"
 
@@ -3834,6 +3864,17 @@ msgstr "Продано:"
 
 msgid "serviceChannelMessages/sysMsg/titles/upgrade"
 msgstr "Наладка оборудования"
+
+msgid "serviceChannelMessages/systemMixerVolumeDisabledSysMessage/body"
+msgstr ""
+"Слишком низкая громкость игры. Нажмите на кнопку, чтобы посмотреть "
+"инструкцию и проверить настройки микшера."
+
+msgid "serviceChannelMessages/systemMixerVolumeDisabledSysMessage/button"
+msgstr "Перейти"
+
+msgid "serviceChannelMessages/systemMixerVolumeDisabledSysMessage/header"
+msgstr "Внимание!"
 
 msgid "serviceChannelMessages/tankPremiumReceivedAsGift"
 msgstr "От администрации получен Танковый премиум аккаунт на %(days)d д."

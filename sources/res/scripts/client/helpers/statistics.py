@@ -1,4 +1,4 @@
-import BigWorld, ResMgr, Settings
+import BigWorld, ResMgr, Settings, WWISE, SoundGroups
 from constants import ARENA_PERIOD, INVALID_CLIENT_STATS
 from account_helpers.settings_core.settings_constants import GRAPHICS
 from debug_utils import LOG_DEBUG, LOG_NOTE
@@ -225,6 +225,12 @@ class StatisticsCollector(IStatisticsCollector):
             resolutionContainer = monitorSettings.currentBorderlessSize
         stat['screenResWidth'] = resolutionContainer.width
         stat['screenResHeight'] = resolutionContainer.height
+        numAdapters, maxActiveAdapter, maxGlobalAdapter = monitorSettings.getMaxResolutionsInfo()
+        stat['screenActiveMaxResWidth'] = maxActiveAdapter.width
+        stat['screenActiveMaxResHeight'] = maxActiveAdapter.height
+        stat['screenGlobalMaxResWidth'] = maxGlobalAdapter.width
+        stat['screenGlobalMaxResHeight'] = maxGlobalAdapter.height
+        stat['numOutputAdapters'] = numAdapters
         stat['drrScale'] = int(round(BigWorld.getDRRScale() * 100))
         stat['dynamicDRR'] = BigWorld.isDRRAutoscalingEnabled()
         stat['invalidStats'] |= self.__invalidStats
@@ -233,6 +239,8 @@ class StatisticsCollector(IStatisticsCollector):
         stat['lastArenaUniqueID'] = self.__lastArenaUniqueID
         stat['lastArenaTypeID'] = self.__lastArenaTypeID
         stat['lastArenaTeam'] = self.__lastArenaTeam
+        stat['systemVolume'] = int(round(WWISE.WW_getAppMixerVolume() * 100))
+        stat['gameVolume'] = int(round(SoundGroups.g_instance.getMasterVolume() * 100))
         return stat
 
     def __getSystemData(self, statisticsDict):
@@ -266,7 +274,9 @@ class StatisticsCollector(IStatisticsCollector):
            'virtTotal': statisticsDict['virtTotal'], 
            'pageFileTotal': statisticsDict['pageFileTotal'], 
            'systemHddName': statisticsDict['systemHddName'], 
-           'gameHddName': statisticsDict['gameHddName']}
+           'gameHddName': statisticsDict['gameHddName'], 
+           'systemVolume': int(round(WWISE.WW_getAppMixerVolume() * 100)), 
+           'gameVolume': int(round(SoundGroups.g_instance.getMasterVolume() * 100))}
 
     def __onSettingsChanged(self, diff):
         keys = set(diff.keys())

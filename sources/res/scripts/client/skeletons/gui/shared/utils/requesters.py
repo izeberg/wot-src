@@ -1270,3 +1270,15 @@ class IReferralProgramRequester(IRequester):
 
     def getRPPassiveIncome(self):
         raise NotImplementedError
+
+
+class ISessionProgressRewardsRequester(IRequester):
+
+    def isCompleted(self):
+        raise NotImplementedError
+
+    def getCurrentStep(self):
+        raise NotImplementedError
+
+    def getLastRewardGameDay(self):
+        raise NotImplementedError

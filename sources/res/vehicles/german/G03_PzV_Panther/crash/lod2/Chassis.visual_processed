@@ -114,7 +114,7 @@
 						<Int>128</Int>
 					</property>
 				</material>
-				<groupOrigin>1.368784 0.730511 0.540612</groupOrigin>
+				<groupOrigin>1.368779 0.730512 -0.403973</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -169,7 +169,7 @@
 						<Int>128</Int>
 					</property>
 				</material>
-				<groupOrigin>-1.368517 0.730512 -0.386420</groupOrigin>
+				<groupOrigin>-1.368791 0.728638 0.531444</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -178,6 +178,6 @@
 		<min>-1.699920 0.002504 -4.344863</min>
 		<max>1.699920 1.458518 3.575471</max>
 	</boundingBox>
-	<geometrySize>66894</geometrySize>
-	<minUVDensity>0.085274</minUVDensity>
+	<geometrySize>56172</geometrySize>
+	<minUVDensity>0.010444</minUVDensity>
 </root>

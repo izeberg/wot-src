@@ -6501,7 +6501,9 @@ def collideDynamic(*args, **kwargs): pass
 def collideDynamicStatic(*args, **kwargs): pass
 def collideDynamics(*args, **kwargs): pass
 def collideSegment(*args, **kwargs): pass
+def collideSphere(*args, **kwargs): pass
 def collideWater(*args, **kwargs): pass
+def collideWaterMatKind(*args, **kwargs): pass
 def commandLineLoginInfo(*args, **kwargs): pass
 def commitPendingGraphicsSettings(*args, **kwargs): pass
 component = u'client'

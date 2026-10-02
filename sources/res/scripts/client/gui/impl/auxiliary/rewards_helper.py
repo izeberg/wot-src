@@ -622,7 +622,7 @@ def getSeniorityAwardsRewardsAndBonuses(rewards, excluded=(), sortKey=None):
             else:
                 nonQuestBonuses = getNonQuestBonuses(rewardType, rewardValue)
                 for bonus in nonQuestBonuses:
-                    bonuses.extend(zip(packer.pack(bonus), packer.getToolTip(bonus)))
+                    bonuses.extend(zip(packer.pack(bonus), packer.getToolTip(bonus), packer.getContentId(bonus)))
 
     if sortKey:
         bonuses = sorted(bonuses, key=sortKey)

@@ -377,9 +377,6 @@ msgstr "Слот для снаряжения"
 msgid "countRibbons/multiSeparator"
 msgstr "x%(multiplier)d"
 
-msgid "crosshair/hint/wtBarrier"
-msgstr "УСТАНОВИТЬ"
-
 msgid "cruise_ctrl/speedMetric"
 msgstr "км/ч"
 
@@ -571,9 +568,6 @@ msgstr "Машина может быть уничтожена — срочно �
 
 msgid "destroyTimer/liftOver"
 msgstr "Машина возвращается в строй..."
-
-msgid "destroyTimer/medkitInUse"
-msgstr "?empty?"
 
 msgid "devMaps/hint/description"
 msgstr "для знакомства с особенностями карты"
@@ -1018,11 +1012,6 @@ msgstr "Орудие перегрето. Смена снарядов невоз�
 
 msgid "player_errors/cant_switch/engine_destroyed"
 msgstr "Смена режима недоступна: двигатель выведен из строя."
-
-msgid "player_errors/equipment/FEPmedkit/allTankmenAreSafe"
-msgstr ""
-"Экипаж не пострадал, медицинская помощь не требуется. Машина имеет полный "
-"запас прочности."
 
 msgid "player_errors/equipment/ability/alreadyActivated"
 msgstr "Модификация «%(name)s» уже активирована."
@@ -2069,6 +2058,15 @@ msgstr "Склады"
 
 msgid "prebattlemarker/prebattlemarker_52"
 msgstr "Фабрика"
+
+msgid "prebattlemarker/prebattlemarker_53"
+msgstr "Нижний рубеж"
+
+msgid "prebattlemarker/prebattlemarker_54"
+msgstr "Срединный рубеж"
+
+msgid "prebattlemarker/prebattlemarker_55"
+msgstr "Верхний рубеж"
 
 msgid "prebattlemarker/prebattlemarker_6"
 msgstr "Берег"

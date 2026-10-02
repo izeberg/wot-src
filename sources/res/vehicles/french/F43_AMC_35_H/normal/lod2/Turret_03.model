@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/french/F43_AMC_35_H/normal/lod3/Turret_03</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.901299 -0.000005 -0.876116</min>
+		<max>0.887581 0.605555 0.892887</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/french/F43_AMC_35_H/normal/lod2/Turret_03</nodefullVisual>
+</root>

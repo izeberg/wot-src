@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-3.221859 -0.729515 0.000873</min>
+		<max>3.222352 0.749623 11.354664</max>
+	</visibilityBox>
+	<parent>vehicles/german/G00_Ratte_V1/crash/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/german/G00_Ratte_V1/crash/lod0/Gun_01</nodefullVisual>
+</root>

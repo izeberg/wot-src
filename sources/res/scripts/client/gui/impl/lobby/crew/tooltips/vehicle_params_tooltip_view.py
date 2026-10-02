@@ -11,7 +11,7 @@ from gui.impl.gen.view_models.views.lobby.crew.tooltips.vehicle_params_item impo
 from gui.impl.pub import ViewImpl
 from gui.shared.gui_items import KPI, getKpiAbilityFormatter
 from gui.impl import backport
-from gui.shared.items_parameters.params_helper import RELATIVE_PARAMS
+from gui.shared.items_parameters.params_helper import RELATIVE_PARAMS, UNIQUE_FORMATTING_PARAMS, PARAM_TO_UNIQ_TITLE_FORMATTER, EXTRA_ABILITY_PARAMS_BASE
 from gui.shared.items_parameters.param_name_helper import getVehicleParameterText
 from gui.shared.items_parameters import formatters as param_formatter
 from helpers import i18n
@@ -209,13 +209,19 @@ class BaseVehicleParamsTooltipView(ViewImpl):
     def _onLoading(self, *args, **kwargs):
         super(BaseVehicleParamsTooltipView, self)._onLoading(*args, **kwargs)
         comparator = self._context.getComparator()
-        self._extendedData = comparator.getExtendedData(self._paramName)
+        paramName = self.__getParamName()
+        self._extendedData = comparator.getExtendedData(paramName)
         self._hasPerksBonuses = comparator.hasBonusOfType(constants.BonusTypes.PERK)
         with self.viewModel.transaction() as (tx):
             self._fillModel(tx)
 
     def _fillModel(self, model):
         pass
+
+    def __getParamName(self):
+        if self._paramName in EXTRA_ABILITY_PARAMS_BASE:
+            return self._paramName + 'AbilityKpi'
+        return self._paramName
 
 
 class BaseVehicleAdvancedParamsTooltipView(BaseVehicleParamsTooltipView):
@@ -293,10 +299,15 @@ class BaseVehicleAdvancedParamsTooltipView(BaseVehicleParamsTooltipView):
         return pathToIcons.dyn(parameter, defaultIcon)
 
     def __getKpiTitle(self):
+        if self._paramName in UNIQUE_FORMATTING_PARAMS:
+            formatter = PARAM_TO_UNIQ_TITLE_FORMATTER.get(self._paramName)
+            if formatter is not None:
+                return formatter(self._extendedData)
         customTitlePath = R.strings.tank_setup.kpi.title.dyn(self._paramName)
         if customTitlePath:
             return backport.text(customTitlePath())
-        return backport.text(R.strings.menu.extraParams.header(), paramName=backport.text(getVehicleParameterText(self._paramName, isPositive=True)))
+        else:
+            return backport.text(R.strings.menu.extraParams.header(), paramName=backport.text(getVehicleParameterText(self._paramName, isPositive=True)))
 
     def __getKpiDescr(self):
         descr = backport.text(R.strings.menu.extraParams.name.dyn(self._paramName, R.strings.menu.extraParams.desc)())

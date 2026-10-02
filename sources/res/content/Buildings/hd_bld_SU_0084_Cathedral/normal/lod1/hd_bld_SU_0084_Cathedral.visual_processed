@@ -157,7 +157,7 @@
 						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_GBMT.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>13.296749 15.520338 -0.182789</groupOrigin>
+				<groupOrigin>13.296749 15.520470 -0.182789</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -354,7 +354,7 @@
 						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_Kaliningrad_Cathedral_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>14.399623 14.490612 0.073217</groupOrigin>
+				<groupOrigin>14.382202 14.262849 0.073217</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -621,7 +621,7 @@
 						<Vector4>0.996078 0.749020 0.415686 1.000000</Vector4>
 					</property>
 				</material>
-				<groupOrigin>13.093681 13.720464 -0.075509</groupOrigin>
+				<groupOrigin>13.082785 13.770410 -0.075509</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -736,14 +736,14 @@
 						<Vector4>0.996078 0.749020 0.415686 1.000000</Vector4>
 					</property>
 				</material>
-				<groupOrigin>9.738976 8.966848 -0.077656</groupOrigin>
+				<groupOrigin>9.717000 8.966848 -0.077656</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-31.182705 -2.192038 -16.038378</min>
+		<min>-31.182705 -2.647564 -16.038378</min>
 		<max>57.340305 59.122360 16.262259</max>
 	</boundingBox>
-	<geometrySize>2172832</geometrySize>
+	<geometrySize>2184268</geometrySize>
 	<minUVDensity>0.001047</minUVDensity>
 </root>

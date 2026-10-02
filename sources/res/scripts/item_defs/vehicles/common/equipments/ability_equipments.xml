@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<sure_shot>
+	<sure_shot_old>
 		<id>11000</id>
-		<userString>#artefacts:sure_shot/name</userString>
-		<description>#artefacts:sure_shot/descr</description>
+		<userString>#artefacts:sure_shot_old/name</userString>
+		<description>#artefacts:sure_shot_old/descr</description>
 		<icon>sure_shot 0 0</icon>
 		<price>100</price>
 		<notInShop>True</notInShop>
@@ -92,11 +92,11 @@
 			</mul>
 		</kpi>
 		<tooltipSection>equipment</tooltipSection>
-	</sure_shot>
-	<juggernaut>
+	</sure_shot_old>
+	<juggernaut_old>
 		<id>11001</id>
-		<userString>#artefacts:juggernaut/name</userString>
-		<description>#artefacts:juggernaut/descr</description>
+		<userString>#artefacts:juggernaut_old/name</userString>
+		<description>#artefacts:juggernaut_old/descr</description>
 		<icon>juggernaut 0 0</icon>
 		<price>0</price>
 		<notInShop>True</notInShop>
@@ -177,11 +177,11 @@
 				<value>75</value>
 			</mul>
 		</kpi>
-	</juggernaut>
-	<concentration>
+	</juggernaut_old>
+	<concentration_old>
 		<id>11002</id>
-		<userString>#artefacts:concentration/name</userString>
-		<description>#artefacts:concentration/descr</description>
+		<userString>#artefacts:concentration_old/name</userString>
+		<description>#artefacts:concentration_old/descr</description>
 		<icon>concentration 0 0</icon>
 		<price>0</price>
 		<notInShop>True</notInShop>
@@ -269,11 +269,11 @@
 				<value>30</value>
 			</mul>
 		</kpi>
-	</concentration>
-	<recoil_recuperator>
+	</concentration_old>
+	<recoil_recuperator_old>
 		<id>11003</id>
-		<userString>#artefacts:recoil_recuperator/name</userString>
-		<description>#artefacts:recoil_recuperator/descr</description>
+		<userString>#artefacts:recoil_recuperator_old/name</userString>
+		<description>#artefacts:recoil_recuperator_old/descr</description>
 		<icon>recoil_recuperator 0 0</icon>
 		<price>0</price>
 		<notInShop>True</notInShop>
@@ -355,11 +355,11 @@
 				<value>5</value>
 			</add>
 		</kpi>
-	</recoil_recuperator>
-	<coolant_tank>
+	</recoil_recuperator_old>
+	<coolant_tank_old>
 		<id>11004</id>
-		<userString>#artefacts:coolant_tank/name</userString>
-		<description>#artefacts:coolant_tank/descr</description>
+		<userString>#artefacts:coolant_tank_old/name</userString>
+		<description>#artefacts:coolant_tank_old/descr</description>
 		<icon>coolant_tank 0 0</icon>
 		<price>0</price>
 		<notInShop>True</notInShop>
@@ -405,11 +405,11 @@
 				<value>-50</value>
 			</mul>
 		</kpi>
-	</coolant_tank>
-	<tank_ram>
+	</coolant_tank_old>
+	<tank_ram_old>
 		<id>11005</id>
-		<userString>#artefacts:tank_ram/name</userString>
-		<description>#artefacts:tank_ram/descr</description>
+		<userString>#artefacts:tank_ram_old/name</userString>
+		<description>#artefacts:tank_ram_old/descr</description>
 		<icon>tank_ram 0 0</icon>
 		<price>0</price>
 		<notInShop>True</notInShop>
@@ -505,8 +505,8 @@
 				<value>12</value>
 			</add>
 		</kpi>
-	</tank_ram>
-	<shot_passion>
+	</tank_ram_old>
+	<shot_passion_old>
 		<id>11006</id>
 		<userString>#artefacts:shotPassion/name</userString>
 		<description>#artefacts:shotPassion/descr</description>
@@ -599,5 +599,381 @@
 				<value>-20</value>
 			</mul>
 		</kpi>
+	</shot_passion_old>
+	<shot_passion>
+		<id>11116</id>
+		<userString>#artefacts:shot_passion/name</userString>
+		<description>#artefacts:shot_passion/descr</description>
+		<icon>concentration 0 0</icon>
+		<price>0</price>
+		<notInShop>True</notInShop>
+		<tags>notForSale trigger abilityEquipment</tags>
+		<type>battleAbilities</type>
+		<activationSound>ability_start_button</activationSound>
+		<deactivationSound>ability_stop_button</deactivationSound>
+		<refillSound>ability_recharging</refillSound>
+		<script>
+			BaseAbilityEquipment
+			<visualScript>
+				<client>
+					<plan>abilities/base_ability_controller_client</plan>
+				</client>
+			</visualScript>
+			<cooldownSeconds>180</cooldownSeconds>
+			<reuseCount>2</reuseCount>
+			<duration>15</duration>
+			<additiveFactors/>
+			<multiplicativeFactors>
+				<gun-reloadTime>
+					0.75
+					<!--BW_String-->
+				</gun-reloadTime>
+			</multiplicativeFactors>
+		</script>
+		<kpi>
+			<mul>
+				<name>vehicleGunReloadTime</name>
+				<value>-25</value>
+			</mul>
+		</kpi>
 	</shot_passion>
+	<concentration>
+		<id>11112</id>
+		<userString>#artefacts:concentration/name</userString>
+		<description>#artefacts:concentration/descr</description>
+		<icon>concentration 0 0</icon>
+		<price>0</price>
+		<notInShop>True</notInShop>
+		<tags>notForSale trigger abilityEquipment</tags>
+		<type>battleAbilities</type>
+		<activationSound>ability_start_button</activationSound>
+		<deactivationSound>ability_stop_button</deactivationSound>
+		<refillSound>ability_recharging</refillSound>
+		<script>
+			BaseAbilityEquipment
+			<visualScript>
+				<client>
+					<plan>abilities/base_ability_controller_client</plan>
+				</client>
+			</visualScript>
+			<cooldownSeconds>180</cooldownSeconds>
+			<reuseCount>2</reuseCount>
+			<duration>25</duration>
+			<additiveFactors/>
+			<multiplicativeFactors>
+				<gun-reloadTime>
+					0.67
+					<!--BW_String-->
+				</gun-reloadTime>
+			</multiplicativeFactors>
+		</script>
+		<kpi>
+			<mul>
+				<name>extraAbilityParamGunClipCooldown</name>
+				<value>-33</value>
+			</mul>
+		</kpi>
+	</concentration>
+	<juggernaut>
+		<id>11111</id>
+		<userString>#artefacts:juggernaut/name</userString>
+		<description>#artefacts:juggernaut/descr</description>
+		<icon>sure_shot 0 0</icon>
+		<price>0</price>
+		<notInShop>True</notInShop>
+		<tags>notForSale trigger abilityEquipment</tags>
+		<type>battleAbilities</type>
+		<activationSound>ability_start_button</activationSound>
+		<deactivationSound>ability_stop_button</deactivationSound>
+		<refillSound>ability_recharging</refillSound>
+		<script>
+			BaseAbilityEquipment
+			<visualScript>
+				<client>
+					<plan>abilities/base_ability_controller_client</plan>
+				</client>
+			</visualScript>
+			<cooldownSeconds>180</cooldownSeconds>
+			<reuseCount>2</reuseCount>
+			<duration>25</duration>
+			<additiveFactors/>
+			<multiplicativeFactors>
+				<gun-rotationSpeed>
+					1.125
+					<!--BW_String-->
+				</gun-rotationSpeed>
+				<turret-rotationSpeed>
+					1.125
+					<!--BW_String-->
+				</turret-rotationSpeed>
+				<vehicle-rotationSpeed>
+					1.125
+					<!--BW_String-->
+				</vehicle-rotationSpeed>
+				<chassis-shotDispersionFactors-movement>
+					0.875
+					<!--BW_String-->
+				</chassis-shotDispersionFactors-movement>
+				<chassis-shotDispersionFactors-rotation>
+					0.875
+					<!--BW_String-->
+				</chassis-shotDispersionFactors-rotation>
+				<gun-shotDispersionFactors-turretRotation>
+					0.875
+					<!--BW_String-->
+				</gun-shotDispersionFactors-turretRotation>
+				<gun-shotDispersionFactors-afterShot>
+					0.875
+					<!--BW_String-->
+				</gun-shotDispersionFactors-afterShot>
+			</multiplicativeFactors>
+		</script>
+		<kpi>
+			<mul>
+				<name>extraAbilityParamTurretRotationSpeed</name>
+				<value>
+					12.5
+					<!--BW_String-->
+				</value>
+			</mul>
+			<mul>
+				<name>vehicleGunShotDispersionAfterShot</name>
+				<value>
+					-12.5
+					<!--BW_String-->
+				</value>
+			</mul>
+			<mul>
+				<name>vehicleGunShotDispersionChassisMovement</name>
+				<value>
+					-12.5
+					<!--BW_String-->
+				</value>
+			</mul>
+			<mul>
+				<name>vehicleGunShotDispersionChassisRotation</name>
+				<value>
+					-12.5
+					<!--BW_String-->
+				</value>
+			</mul>
+			<mul>
+				<name>vehicleGunShotDispersionTurretRotation</name>
+				<value>
+					-12.5
+					<!--BW_String-->
+				</value>
+			</mul>
+			<mul>
+				<name>extraAbilityParamChassisRotationSpeed</name>
+				<value>
+					12.5
+					<!--BW_String-->
+				</value>
+			</mul>
+		</kpi>
+	</juggernaut>
+	<coolant_tank>
+		<id>11114</id>
+		<userString>#artefacts:coolant_tank/name</userString>
+		<description>#artefacts:coolant_tank/descr</description>
+		<icon>coolant_tank 0 0</icon>
+		<price>0</price>
+		<notInShop>True</notInShop>
+		<tags>notForSale abilityEquipment</tags>
+		<type>battleAbilities</type>
+		<activationSound>ability_start_button</activationSound>
+		<deactivationSound>ability_stop_button</deactivationSound>
+		<refillSound>ability_recharging</refillSound>
+		<script>
+			BaseAbilityEquipment
+			<visualScript>
+				<client>
+					<plan>abilities/base_ability_controller_client</plan>
+				</client>
+			</visualScript>
+			<cooldownSeconds>180</cooldownSeconds>
+			<reuseCount>2</reuseCount>
+			<duration>20</duration>
+			<additiveFactors/>
+			<multiplicativeFactors>
+				<multShotDispersionFactor>
+					0.75
+					<!--BW_String-->
+				</multShotDispersionFactor>
+			</multiplicativeFactors>
+		</script>
+		<kpi>
+			<mul>
+				<name>vehicleFinalDispersion</name>
+				<value>-25</value>
+			</mul>
+		</kpi>
+	</coolant_tank>
+	<recoil_recuperator>
+		<id>11113</id>
+		<userString>#artefacts:recoil_recuperator/name</userString>
+		<description>#artefacts:recoil_recuperator/descr</description>
+		<icon>tank_ram 0 0</icon>
+		<price>0</price>
+		<notInShop>True</notInShop>
+		<tags>notForSale abilityEquipment</tags>
+		<type>battleAbilities</type>
+		<activationSound>ability_start_button</activationSound>
+		<deactivationSound>ability_stop_button</deactivationSound>
+		<refillSound>ability_recharging</refillSound>
+		<script>
+			BaseAbilityEquipment
+			<visualScript>
+				<client>
+					<plan>abilities/base_ability_controller_client</plan>
+				</client>
+			</visualScript>
+			<cooldownSeconds>180</cooldownSeconds>
+			<reuseCount>2</reuseCount>
+			<duration>25</duration>
+			<additiveFactors/>
+			<multiplicativeFactors>
+				<engine-power>
+					1.2
+					<!--BW_String-->
+				</engine-power>
+				<vehicle-rotationSpeed>
+					1.2
+					<!--BW_String-->
+				</vehicle-rotationSpeed>
+				<turret-rotationSpeed>
+					1.2
+					<!--BW_String-->
+				</turret-rotationSpeed>
+			</multiplicativeFactors>
+		</script>
+		<kpi>
+			<mul>
+				<name>extraAbilityParamTurretRotationSpeed</name>
+				<value>20</value>
+			</mul>
+			<mul>
+				<name>vehicleEnginePower</name>
+				<value>20</value>
+			</mul>
+			<mul>
+				<name>extraAbilityParamChassisRotationSpeed</name>
+				<value>20</value>
+			</mul>
+		</kpi>
+	</recoil_recuperator>
+	<tank_ram>
+		<id>11115</id>
+		<userString>#artefacts:tank_ram/name</userString>
+		<description>#artefacts:tank_ram/descr</description>
+		<icon>shotPassion 0 0</icon>
+		<price>0</price>
+		<notInShop>True</notInShop>
+		<tags>notForSale abilityEquipment</tags>
+		<type>battleAbilities</type>
+		<activationSound>ability_start_button</activationSound>
+		<deactivationSound>ability_stop_button</deactivationSound>
+		<refillSound>ability_recharging</refillSound>
+		<script>
+			BaseAbilityEquipment
+			<visualScript>
+				<client>
+					<plan>abilities/base_ability_controller_client</plan>
+				</client>
+			</visualScript>
+			<cooldownSeconds>180</cooldownSeconds>
+			<reuseCount>2</reuseCount>
+			<duration>20</duration>
+			<additiveFactors/>
+			<multiplicativeFactors>
+				<armorDamageFactor>
+					1.3
+					<!--BW_String-->
+				</armorDamageFactor>
+				<armorSpallsDamageFactor>
+					1.3
+					<!--BW_String-->
+				</armorSpallsDamageFactor>
+				<gun-piercing>
+					0.85
+					<!--BW_String-->
+				</gun-piercing>
+			</multiplicativeFactors>
+		</script>
+		<kpi>
+			<mul>
+				<name>extraAbilityParamShellDamage</name>
+				<value>30</value>
+			</mul>
+			<mul>
+				<name>extraAbilityParamShellPiercing</name>
+				<value>-15</value>
+			</mul>
+		</kpi>
+	</tank_ram>
+	<sure_shot>
+		<id>11110</id>
+		<userString>#artefacts:sure_shot/name</userString>
+		<description>#artefacts:sure_shot/descr</description>
+		<icon>juggernaut 0 0</icon>
+		<price>0</price>
+		<notInShop>True</notInShop>
+		<tags>notForSale abilityEquipment</tags>
+		<type>battleAbilities</type>
+		<activationSound>ability_start_button</activationSound>
+		<deactivationSound>ability_stop_button</deactivationSound>
+		<refillSound>ability_recharging</refillSound>
+		<script>
+			SureShotAbilityEquipment
+			<visualScript>
+				<client>
+					<plan>abilities/base_ability_controller_client</plan>
+				</client>
+			</visualScript>
+			<cooldownSeconds>90</cooldownSeconds>
+			<reuseCount>4</reuseCount>
+			<duration>10</duration>
+			<impulse>
+				<magnitude>60</magnitude>
+				<applyPoint>
+					0.0 0.0 -1.5
+					<!--BW_String-->
+				</applyPoint>
+				<duration>
+					1.0
+					<!--BW_String-->
+				</duration>
+			</impulse>
+			<additiveFactors>
+				<vehicle-fwMaxSpeedBonus>10</vehicle-fwMaxSpeedBonus>
+				<vehicle-bkMaxSpeedBonus>-7</vehicle-bkMaxSpeedBonus>
+			</additiveFactors>
+			<multiplicativeFactors>
+				<vehicle-rotationSpeed>
+					0.25
+					<!--BW_String-->
+				</vehicle-rotationSpeed>
+				<engine-power>
+					1.5
+					<!--BW_String-->
+				</engine-power>
+			</multiplicativeFactors>
+		</script>
+		<kpi>
+			<mul>
+				<name>vehicleEnginePower</name>
+				<value>50</value>
+			</mul>
+			<mul>
+				<name>extraAbilityParamSpeedBonus</name>
+				<value>10</value>
+				<specValue>-7</specValue>
+			</mul>
+			<mul>
+				<name>extraAbilityParamChassisRotationSpeed</name>
+				<value>-75</value>
+			</mul>
+		</kpi>
+	</sure_shot>
 </root>

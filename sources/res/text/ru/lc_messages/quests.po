@@ -1186,6 +1186,9 @@ msgstr "Увеличение скидки"
 msgid "bonusName/entitlements/ranked_202203_access"
 msgstr "Доступ к покупке"
 
+msgid "bonusName/entitlements/razlomsupercoin"
+msgstr "Сердце Ратте"
+
 msgid "bonusName/entitlements/shevents_clan_chevron"
 msgstr "Клановый шеврон"
 
@@ -1263,6 +1266,9 @@ msgstr "Стандартный призовой бой."
 
 msgid "bonusName/rankedDailyBattles"
 msgstr "Ежедневный призовой бой."
+
+msgid "bonusName/razlom_coin"
+msgstr "Монеты Разлома"
 
 msgid "bonusName/rewardsSlots"
 msgstr "Слот для исключения карты"
@@ -1675,6 +1681,12 @@ msgstr "Нажмите, чтобы подробнее узнать о ежедн
 msgid "dailyQuests/tab/cathegory/tooltip/daily/header"
 msgstr "О ежедневных задачах"
 
+msgid "dailyQuests/tab/cathegory/tooltip/serialEnter/body"
+msgstr "Нажмите, чтобы подробнее узнать о событии."
+
+msgid "dailyQuests/tab/cathegory/tooltip/serialEnter/header"
+msgstr "О наградах за вход"
+
 msgid "dailyQuests/tab/completed"
 msgstr "Сегодняшние задачи выполнены, ждём вас завтра."
 
@@ -1805,6 +1817,21 @@ msgstr ""
 
 msgid "dailyWidget/tooltip/notAvailable/header"
 msgstr "Недоступно"
+
+msgid "dailyWidget/tooltip/serialEnter/allReceived"
+msgstr "Все награды получены"
+
+msgid "dailyWidget/tooltip/serialEnter/available"
+msgstr "Награда будет начислена при следующем заходе"
+
+msgid "dailyWidget/tooltip/serialEnter/completed"
+msgstr "Награда получена, приходите завтра"
+
+msgid "dailyWidget/tooltip/serialEnter/description"
+msgstr "Ежедневно заходите в игру и получайте приятные награды."
+
+msgid "dailyWidget/tooltip/serialEnter/header"
+msgstr "Награды за вход"
 
 msgid "dailyWidget/tooltip/timer"
 msgstr "Обновление задач: %(timer)s"
@@ -2220,10 +2247,6 @@ msgstr "Получить отличительную отметку на оруд
 msgid "details/conditions/cumulative/maxDamage"
 msgstr "Максимальный урон"
 
-msgid "details/conditions/cumulative/maxWtPlasmaBonus"
-msgstr ""
-"Получить определённый уровень усиления огневой мощи в рамках одного боя"
-
 msgid "details/conditions/cumulative/mileage"
 msgstr "Пройденное расстояние, не менее (м)"
 
@@ -2302,18 +2325,6 @@ msgstr "Параметр для команды: %(param)s"
 
 msgid "details/conditions/cumulative/tkills"
 msgstr "Уничтоженные машины союзников"
-
-msgid "details/conditions/cumulative/wtBossVulnerableDamage"
-msgstr "Нанести урон машине Инженера, пока она без щита"
-
-msgid "details/conditions/cumulative/wtDeathCount"
-msgstr "Количество возрождений"
-
-msgid "details/conditions/cumulative/wtGeneratorsCaptured"
-msgstr "Принять участие в перегрузке указанного количества генераторов"
-
-msgid "details/conditions/cumulative/wtTotalGeneratorsCaptured"
-msgstr "Количество перегруженных генераторов"
 
 msgid "details/conditions/cumulative/xp"
 msgstr "Заработанный опыт"
@@ -3402,6 +3413,9 @@ msgstr "Проведённых боёв в режиме «Полигон»"
 
 msgid "details/dossier/6/battlesCount"
 msgstr "Пройденных Боевых обучений"
+
+msgid "details/dossier/61/battlesCount"
+msgstr "Проведённых боёв в режиме «Разлом»"
 
 msgid "details/dossier/7/battlesCount"
 msgstr "Проведённых Командных боёв"
@@ -4825,36 +4839,6 @@ msgstr ""
 msgid "infoPage/premiumMissionsTitle"
 msgstr "Премиум задачи"
 
-msgid "introScreen/close"
-msgstr "ЗАКРЫТЬ"
-
-msgid "introScreen/confirm"
-msgstr "Так точно!"
-
-msgid "introScreen/dailyQuests/description"
-msgstr ""
-"Ежедневные задачи состоят из стандартных и премиум задач. В рамках категории"
-" они имеют одинаковые условия, но разный необходимый результат. Задачи могут"
-" быть выполнены за любое количество боёв и обновляются раз в сутки."
-
-msgid "introScreen/dailyQuests/header"
-msgstr "Ежедневные задачи"
-
-msgid "introScreen/subtitle"
-msgstr ""
-"Интерфейс и механики ежедневных задач были полностью обновлены. Теперь во "
-"вкладке «Ежедневные» будут отображаться задачи на цепь побед и ежедневные "
-"задачи. Эти задачи выполняются независимо друг от друга, а для переключения "
-"между ними воспользуйтесь навигацией слева."
-
-msgid "introScreen/subtitleDailyQuestsOnly"
-msgstr ""
-"Интерфейс и механики ежедневных задач были полностью обновлены. Для "
-"переключения между задачами воспользуйтесь навигацией слева."
-
-msgid "introScreen/title"
-msgstr "ОБНОВЛЕНИЕ ЗАДАЧ"
-
 msgid "item/timer/tillFinish"
 msgstr "До окончания"
 
@@ -5345,6 +5329,9 @@ msgstr ""
 "Игровое событие, в рамках которого вы можете бесплатно получить британскую "
 "премиум ПТ-САУ VIII уровня GSOR 1008."
 
+msgid "missions/tab/serialEnter/header"
+msgstr "Награды за вход"
+
 msgid "missions/tab/winback/body"
 msgstr "Случайные условия, которые обновляются ежедневно после выполнения."
 
@@ -5830,6 +5817,60 @@ msgstr ""
 
 msgid "reward/tooltip/title"
 msgstr "Бонус подписки"
+
+msgid "serialEnter/calendar/description"
+msgstr "Заходите регулярно: новый день — новая награда."
+
+msgid "serialEnter/calendar/preview"
+msgstr "Предпросмотр"
+
+msgid "serialEnter/calendar/title"
+msgstr "Заходите в игру ежедневно за наградами!"
+
+msgid "serialEnter/tab/completed/description"
+msgstr "Новая будет при заходе в игру завтра."
+
+msgid "serialEnter/tab/completed/title"
+msgstr "Награда за сегодня получена!"
+
+msgid "serialEnter/tab/description"
+msgstr "Зайдите в игру, чтобы получить их."
+
+msgid "serialEnter/tab/final/description"
+msgstr "Вы получили все награды."
+
+msgid "serialEnter/tab/final/title"
+msgstr "Поздравляем!"
+
+msgid "serialEnter/tab/label"
+msgstr "Доступны награды!"
+
+msgid "sessionProgressRewardScreen/close"
+msgstr "ЗАКРЫТЬ"
+
+msgid "sessionProgressRewardScreen/compensationTooltip/description/vehicles"
+msgstr "Компенсация за машину"
+
+msgid "sessionProgressRewardScreen/compensationTooltip/footerDetails/vehicles"
+msgstr "Компенсация за машину, которая уже есть в Ангаре."
+
+msgid "sessionProgressRewardScreen/compensationTooltip/title/credits"
+msgstr "Серебро"
+
+msgid "sessionProgressRewardScreen/compensationTooltip/title/gold"
+msgstr "Золото"
+
+msgid "sessionProgressRewardScreen/confirm"
+msgstr "Так точно!"
+
+msgid "sessionProgressRewardScreen/header"
+msgstr "НАГРАДЫ ЗА ВХОД"
+
+msgid "sessionProgressRewardScreen/showInHangar"
+msgstr "Посмотреть в Ангаре"
+
+msgid "sessionProgressRewardScreen/title"
+msgstr "ВЫ ПОЛУЧИЛИ ВСЕ НАГРАДЫ!"
 
 msgid "summerSale/missions/header/button/gotoEvent"
 msgstr "К событию"

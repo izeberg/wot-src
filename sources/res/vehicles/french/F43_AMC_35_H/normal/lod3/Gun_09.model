@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/french/F43_AMC_35_H/normal/lod4/Gun_09</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.030239 -0.483090 -2.380321</min>
+		<max>1.008254 1.170709 3.859409</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/french/F43_AMC_35_H/normal/lod3/Gun_09</nodefullVisual>
+</root>

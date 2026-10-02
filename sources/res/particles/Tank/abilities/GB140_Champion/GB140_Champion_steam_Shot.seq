@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<duration>30.000000</duration>
+	<duration>10.000000</duration>
 	<sequenceObject>
 		<name>Root</name>
 		<type>model</type>
@@ -224,7 +224,7 @@
 			<type>attach</type>
 			<frame>
 				<startTime>0.000000</startTime>
-				<duration>30.000000</duration>
+				<duration>10.000000</duration>
 				<value>Root|</value>
 			</frame>
 		</track>
@@ -244,7 +244,7 @@
 			<type>sound</type>
 			<frame>
 				<startTime>0.000000</startTime>
-				<duration>30.000000</duration>
+				<duration>10.000000</duration>
 				<sequenceSound>ability_champion_steam_shot</sequenceSound>
 				<type>play_till_end</type>
 				<fade>0.000000</fade>

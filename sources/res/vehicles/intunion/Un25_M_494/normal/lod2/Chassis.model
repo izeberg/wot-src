@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/intunion/Un25_M_494/normal/lod3/Chassis</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.768456 0.017182 -4.015810</min>
+		<max>1.768134 1.250900 3.853364</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/intunion/Un25_M_494/normal/lod2/Chassis</nodefullVisual>
+</root>

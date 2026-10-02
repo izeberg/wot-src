@@ -73,21 +73,17 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_proxy_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
-					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
-					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
-					</property>
+					<identifier>tank_proxy_skinned</identifier>
+					<collisionFlags>0</collisionFlags>
 					<property>
 						diffuseMap
 						<Texture>vehicles/german/G03_PzV_Panther/_skins/G03_PzV_Panther_E_3DSt/PzV_Panther_E_3DSt_proxy_AM.dds</Texture>
 					</property>
 					<property>
-						excludeMaskAndAOMap
-						<Texture>vehicles/german/G03_PzV_Panther/_skins/G03_PzV_Panther_E_3DSt/PzV_Panther_E_3DSt_proxy_AO.dds</Texture>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<property>
 						metallicGlossMap
@@ -96,6 +92,10 @@
 					<property>
 						normalMap
 						<Texture>vehicles/german/G03_PzV_Panther/_skins/G03_PzV_Panther_E_3DSt/PzV_Panther_E_3DSt_proxy_ANM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/german/G03_PzV_Panther/_skins/G03_PzV_Panther_E_3DSt/PzV_Panther_E_3DSt_proxy_AO.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>1.381914 0.711819 -0.117714</groupOrigin>
@@ -112,21 +112,17 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_proxy_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
-					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
-					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
-					</property>
+					<identifier>tank_proxy_skinned</identifier>
+					<collisionFlags>0</collisionFlags>
 					<property>
 						diffuseMap
 						<Texture>vehicles/german/G03_PzV_Panther/_skins/G03_PzV_Panther_E_3DSt/PzV_Panther_E_3DSt_proxy_AM.dds</Texture>
 					</property>
 					<property>
-						excludeMaskAndAOMap
-						<Texture>vehicles/german/G03_PzV_Panther/_skins/G03_PzV_Panther_E_3DSt/PzV_Panther_E_3DSt_proxy_AO.dds</Texture>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<property>
 						metallicGlossMap
@@ -135,6 +131,10 @@
 					<property>
 						normalMap
 						<Texture>vehicles/german/G03_PzV_Panther/_skins/G03_PzV_Panther_E_3DSt/PzV_Panther_E_3DSt_proxy_ANM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/german/G03_PzV_Panther/_skins/G03_PzV_Panther_E_3DSt/PzV_Panther_E_3DSt_proxy_AO.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>-1.381914 0.711819 -0.117714</groupOrigin>

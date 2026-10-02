@@ -666,6 +666,9 @@
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Asphalt_01_0052_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Rock_25_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Concrete_02_AM</terrain>
+		<terrain>maps/landscape/00_AllTerrain3_tiles/Lava_3_AM</terrain>
+		<terrain>maps/landscape/00_AllTerrain3_tiles/Lava2_AM</terrain>
+		<terrain>maps/landscape/00_AllTerrain3_tiles/Lava_AM</terrain>
 	</kind>
 	<kind>
 		<id>108</id>
@@ -717,7 +720,6 @@
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Snow_Wavy_02_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/ice5_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/ice4_AM</terrain>
-		<terrain>maps/landscape/00_AllTerrain3_tiles/Snow_09_AM</terrain>
 	</kind>
 	<kind>
 		<id>111</id>
@@ -803,10 +805,7 @@
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Paving_09_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/PavingBlockStonyBigSnow_00129_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Paving_Mid_03_AM</terrain>
-		<terrain>maps/landscape/00_AllTerrain3_tiles/ConcreteSlabsLarge_01_00510_1_AM</terrain>
-		<terrain>maps/landscape/00_AllTerrain3_tiles/Asphalt_Fine_02_1_AM</terrain>
-		<terrain>maps/landscape/00_AllTerrain3_tiles/PavingSmoothMid_01_00404_2_AM</terrain>
-		<terrain>maps/landscape/00_AllTerrain3_tiles/PavingSmoothMid_01_00404_1_AM</terrain>
+		<terrain>maps/landscape/00_AllTerrain3_tiles/Paving_41_AM</terrain>
 	</kind>
 	<kind>
 		<id>112</id>
@@ -865,5 +864,11 @@
 		<desc>water</desc>
 		<help>Water</help>
 		<effect_material>water</effect_material>
+	</kind>
+	<kind>
+		<id>117</id>
+		<desc>lava</desc>
+		<help>Lava</help>
+		<effect_material>lava</effect_material>
 	</kind>
 </root>

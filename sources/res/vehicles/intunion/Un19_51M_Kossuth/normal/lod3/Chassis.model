@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/intunion/Un19_51M_Kossuth/normal/lod3/Chassis</nodefullVisual>
+	<parent>vehicles/intunion/Un19_51M_Kossuth/normal/lod4/Chassis</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.690256 -0.000023 -3.342151</min>
+		<max>1.690256 1.348723 3.351648</max>
+	</visibilityBox>
+</root>

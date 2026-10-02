@@ -77,10 +77,7 @@
 					<identifier>track_mat_R_skinned</identifier>
 					<property>
 						g_detailUVTiling
-						<Vector4>
-							3.50685 0.876712 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>3.506850 0.876712 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_maskBias
@@ -117,10 +114,7 @@
 					</property>
 					<property>
 						crash_coefficient
-						<Float>
-							0.3
-							<!--BW_String-->
-						</Float>
+						<Float>0.300000</Float>
 					</property>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
@@ -148,10 +142,6 @@
 					<property>
 						doubleSided
 						<Bool>true</Bool>
-					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
 					</property>
 				</material>
 				<groupOrigin>1.206767 0.451727 -0.047072</groupOrigin>
@@ -172,10 +162,7 @@
 					<identifier>track_mat_L_skinned</identifier>
 					<property>
 						g_detailUVTiling
-						<Vector4>
-							3.50685 0.876712 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>3.506850 0.876712 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_maskBias
@@ -212,10 +199,7 @@
 					</property>
 					<property>
 						crash_coefficient
-						<Float>
-							0.3
-							<!--BW_String-->
-						</Float>
+						<Float>0.300000</Float>
 					</property>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
@@ -243,10 +227,6 @@
 					<property>
 						doubleSided
 						<Bool>true</Bool>
-					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
 					</property>
 				</material>
 				<groupOrigin>-1.206081 0.479486 -0.030824</groupOrigin>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<effectMap>spaces/252_br_battle_city4_portal/environments/9CD7DE5C-455265BF-4508AE9A-165F2644/camera_effects_map.dds</effectMap>
+	<effect>
+		<id>1</id>
+		<name>particles/content_deferred/PFX/Environment/CameraEffects/252_portal_ash_slow.vfx</name>
+		<alignToTerrain>false</alignToTerrain>
+		<useCameraTarget>true</useCameraTarget>
+	</effect>
+</root>

@@ -71,10 +71,26 @@
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
+	<renderSet>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s_wall0.vertices</vertices>
+			<primitive>s_wall0.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_wall0</identifier>
+					<collisionFlags>131</collisionFlags>
+					<materialKind>0</materialKind>
+				</material>
+				<groupOrigin>4.695167 2.281463 -6.329239</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
 	<boundingBox>
 		<min>-9.880109 -1.333376 -15.104538</min>
 		<max>9.556882 21.893272 2.116091</max>
 	</boundingBox>
-	<geometrySize>20894</geometrySize>
+	<geometrySize>21198</geometrySize>
 	<minUVDensity>0.000232</minUVDensity>
 </root>

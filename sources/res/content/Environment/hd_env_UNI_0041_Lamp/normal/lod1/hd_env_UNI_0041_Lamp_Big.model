@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/Environment/hd_env_UNI_0041_Lamp/normal/lod2/hd_env_UNI_0041_Lamp_Big</parent>
+	<extent>96.000000</extent>
+	<havok>
+		<damagedState>true</damagedState>
+	</havok>
+	<visibilityBox>
+		<min>-1.106985 -0.003668 -0.386597</min>
+		<max>1.119705 6.623692 0.386596</max>
+	</visibilityBox>
+	<nodefullVisual>content/Environment/hd_env_UNI_0041_Lamp/normal/lod1/hd_env_UNI_0041_Lamp_Big</nodefullVisual>
+</root>

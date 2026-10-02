@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s0Shape.vertices</vertices>
+			<stream>s0Shape.uv2</stream>
+			<primitive>s0Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/custom/emissive_playground.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>112</materialKind>
+					<property>
+						angleFalloffParams
+						<Vector4>1.000000 1.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						destBlend
+						<Int>5</Int>
+					</property>
+					<property>
+						emissionMap
+						<Texture>content/Environment/hd_env_EVT_P26_0024_Window_Light/hd_env_EVT_P26_0024_Window_Light_emission_mask.dds</Texture>
+					</property>
+					<property>
+						g_contrast
+						<Float>3.000000</Float>
+					</property>
+					<property>
+						g_deferredMult
+						<Float>3.000000</Float>
+					</property>
+					<property>
+						g_offsetBlack
+						<Float>0.500000</Float>
+					</property>
+					<property>
+						phaseMap
+						<Texture>content/Environment/hd_env_EVT_P26_0024_Window_Light/hd_env_EVT_P26_0024_Window_Light_gradient.dds</Texture>
+					</property>
+					<property>
+						speed
+						<Float>0.220000</Float>
+					</property>
+					<property>
+						srcBlend
+						<Int>3</Int>
+					</property>
+					<property>
+						usePhaseMap
+						<Bool>true</Bool>
+					</property>
+					<property>
+						waveLen
+						<Float>2.470000</Float>
+					</property>
+				</material>
+				<groupOrigin>2.135803 6.281350 -0.938371</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-9.136119 -0.304634 -7.471522</min>
+		<max>8.669104 13.659646 7.298663</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>1120</geometrySize>
+	<minUVDensity>0.339456</minUVDensity>
+</root>

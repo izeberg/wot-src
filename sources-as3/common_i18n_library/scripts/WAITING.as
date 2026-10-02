@@ -219,6 +219,8 @@ package
       
       public static const DOWNLOAD_REFPROGRAM:String = "#waiting:download/refProgram";
       
+      public static const DOWNLOAD_SESSIONPROGRESSREWARDS:String = "#waiting:download/sessionProgressRewards";
+      
       public static const UPDATINGSKILLWINDOW:String = "#waiting:updatingSkillWindow";
       
       public static const PREBATTLE_CREATE:String = "#waiting:prebattle/create";

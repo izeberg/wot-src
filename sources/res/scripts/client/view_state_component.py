@@ -247,6 +247,15 @@ class _AbilityStateUpdater(ViewStateUpdater):
     _VEHICLE_VIEW_STATE = VEHICLE_VIEW_STATE.ABILITY
 
 
+class _AbilityBlikOnActiveStateUpdater(_AbilityStateUpdater):
+
+    def _invalidateState(self):
+        super(_AbilityBlikOnActiveStateUpdater, self)._invalidateState()
+        if self._isActive and self._component.entity.isPlayerVehicle:
+            self._sessionProvider.invalidateVehicleState(VEHICLE_VIEW_STATE.GUN_RELOAD_BOOST, None)
+        return
+
+
 _VIEW_STATE_UPDATERS = {BuffDisplayedState.AOE_INSPIRE: _AoeInspireStateUpdater, 
    BuffDisplayedState.AOE_HEAL: _AoeHealStateUpdater, 
    BuffDisplayedState.RISKY_ATTACK_BUFF: _RiskyAttackBuffStateUpdater, 
@@ -262,9 +271,9 @@ _VIEW_STATE_UPDATERS = {BuffDisplayedState.AOE_INSPIRE: _AoeInspireStateUpdater,
    BuffDisplayedState.MARCH: _MarchStateUpdater, 
    BuffDisplayedState.AGGRESSIVE_DETECTION: _AggressiveDetectionStateUpdater, 
    BuffDisplayedState.ABILITY_JUGGERNAUT: _AbilityStateUpdater, 
-   BuffDisplayedState.ABILITY_CONCENTRATION: _AbilityStateUpdater, 
+   BuffDisplayedState.ABILITY_CONCENTRATION: _AbilityBlikOnActiveStateUpdater, 
    BuffDisplayedState.ABILITY_SURE_SHOT: _AbilityStateUpdater, 
    BuffDisplayedState.ABILITY_RECOIL_RECUPERATOR: _AbilityStateUpdater, 
    BuffDisplayedState.ABILITY_COOLANT_TANK: _AbilityStateUpdater, 
    BuffDisplayedState.ABILITY_TANK_RAM: _AbilityStateUpdater, 
-   BuffDisplayedState.ABILITY_SHOT_PASSION: _AbilityStateUpdater}
+   BuffDisplayedState.ABILITY_SHOT_PASSION: _AbilityBlikOnActiveStateUpdater}

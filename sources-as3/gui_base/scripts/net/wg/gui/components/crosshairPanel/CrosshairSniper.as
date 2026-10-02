@@ -1,22 +1,11 @@
 package net.wg.gui.components.crosshairPanel
 {
    import flash.text.TextField;
-   import net.wg.gui.components.crosshairPanel.wt.WTCrosshairBase;
    
-   public class CrosshairSniper extends WTCrosshairBase
+   public class CrosshairSniper extends CrosshairWithCassette
    {
       
       private static const GUN_COOLING_INDICATOR_OFFSET:int = -175;
-      
-      private static const PLASMA_DAMAGE_Y_HORIZONTAL:Number = 238;
-      
-      private static const PLASMA_DAMAGE_Y_DIAGONAL:Number = 238;
-      
-      private static const PLASMA_DAMAGE_Y_RADIAL:Number = 238;
-      
-      private static const PLASMA_DAMAGE_Y_DASHED:Number = 238;
-      
-      private static const PLASMA_DAMAGE_Y_SIEGE:Number = 238;
        
       
       public var zoomTF:TextField = null;
@@ -83,11 +72,6 @@ package net.wg.gui.components.crosshairPanel
       override protected function getGunCoolingIndicatorYOffset() : int
       {
          return GUN_COOLING_INDICATOR_OFFSET;
-      }
-      
-      override protected function getPlasmaExtraDamageYPos() : Array
-      {
-         return [PLASMA_DAMAGE_Y_DIAGONAL,PLASMA_DAMAGE_Y_HORIZONTAL,PLASMA_DAMAGE_Y_RADIAL,PLASMA_DAMAGE_Y_DASHED,PLASMA_DAMAGE_Y_SIEGE];
       }
    }
 }

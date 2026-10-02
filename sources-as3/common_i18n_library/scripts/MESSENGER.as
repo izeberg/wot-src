@@ -1871,6 +1871,12 @@ package
       
       public static const SERVICECHANNELMESSAGES_PROGRESSIVEREWARDNOTIFICATION_BUTTON:String = "#messenger:serviceChannelMessages/progressiveRewardNotification/button";
       
+      public static const SERVICECHANNELMESSAGES_SESSIONPROGRESSREWARDSNOTIFICATION_HEADER:String = "#messenger:serviceChannelMessages/sessionProgressRewardsNotification/header";
+      
+      public static const SERVICECHANNELMESSAGES_SESSIONPROGRESSREWARDSNOTIFICATION_TEXT:String = "#messenger:serviceChannelMessages/sessionProgressRewardsNotification/text";
+      
+      public static const SERVICECHANNELMESSAGES_SESSIONPROGRESSREWARDSNOTIFICATION_BUTTON:String = "#messenger:serviceChannelMessages/sessionProgressRewardsNotification/button";
+      
       public static const SERVICECHANNELMESSAGES_CREWSKINSCOUNT:String = "#messenger:serviceChannelMessages/crewSkinsCount";
       
       public static const SERVICECHANNELMESSAGES_PIGGYBANK_TITLE:String = "#messenger:serviceChannelMessages/piggyBank/title";
@@ -2517,6 +2523,10 @@ package
       
       public static const SERVICECHANNELMESSAGES_PARAGONS_BODY:String = "#messenger:serviceChannelMessages/paragons/body";
       
+      public static const SERVICECHANNELMESSAGES_PARAGONSCOINS_TITLE:String = "#messenger:serviceChannelMessages/paragonsCoins/title";
+      
+      public static const SERVICECHANNELMESSAGES_PARAGONSCOINS_PURCHASE:String = "#messenger:serviceChannelMessages/paragonsCoins/purchase";
+      
       public static const PLATFORMCURRENCYMSG_RECEIVED_GOLDENTICKET:String = "#messenger:platformCurrencyMsg/received/goldenticket";
       
       public static const PLATFORMCURRENCYMSG_DEBITED_GOLDENTICKET:String = "#messenger:platformCurrencyMsg/debited/goldenticket";
@@ -2544,6 +2554,20 @@ package
       public static const VOIP_INITINPROGRESS:String = "#messenger:voip/initInProgress";
       
       public static const VOIP_READY:String = "#messenger:voip/ready";
+      
+      public static const SERVICECHANNELMESSAGES_SESSIONPROGRESSREWARDSCOMPLETE_HEADER:String = "#messenger:serviceChannelMessages/sessionProgressRewardsComplete/header";
+      
+      public static const SERVICECHANNELMESSAGES_SESSIONPROGRESSREWARDSCOMPLETE_BODY:String = "#messenger:serviceChannelMessages/sessionProgressRewardsComplete/body";
+      
+      public static const PLATFORMCURRENCYMSG_RECEIVED_RAZLOM_COIN:String = "#messenger:platformCurrencyMsg/received/razlom_coin";
+      
+      public static const PLATFORMCURRENCYMSG_DEBITED_RAZLOM_COIN:String = "#messenger:platformCurrencyMsg/debited/razlom_coin";
+      
+      public static const SERVICECHANNELMESSAGES_SYSTEMMIXERVOLUMEDISABLEDSYSMESSAGE_HEADER:String = "#messenger:serviceChannelMessages/systemMixerVolumeDisabledSysMessage/header";
+      
+      public static const SERVICECHANNELMESSAGES_SYSTEMMIXERVOLUMEDISABLEDSYSMESSAGE_BODY:String = "#messenger:serviceChannelMessages/systemMixerVolumeDisabledSysMessage/body";
+      
+      public static const SERVICECHANNELMESSAGES_SYSTEMMIXERVOLUMEDISABLEDSYSMESSAGE_BUTTON:String = "#messenger:serviceChannelMessages/systemMixerVolumeDisabledSysMessage/button";
       
       public static const DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_ENUM:Array = [DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_OFFLINE,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_NOTREADY,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_READY,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_INBATTLE,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_AFK];
        

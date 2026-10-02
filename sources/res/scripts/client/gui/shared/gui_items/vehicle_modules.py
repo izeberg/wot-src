@@ -8,7 +8,7 @@ from gui.impl.gen import R
 from gui.shared.items_parameters.params_cache import g_paramsCache
 from gui.shared.utils.functions import replaceHyphenToUnderscore
 from gui.shared.gui_items.fitting_item import FittingItem, ICONS_MASK
-from gui.shared.utils import GUN_CLIP, GUN_CAN_BE_CLIP, GUN_AUTO_RELOAD, GUN_CAN_BE_AUTO_RELOAD, GUN_DUAL_GUN, GUN_CAN_BE_DUAL_GUN, GUN_CAN_BE_AUTOSHOOT_FLAME, GUN_AUTOSHOOT_FLAME, GUN_AUTO_RELOAD_DUAL_GUN, GUN_CLIP_DUAL_GUN, GUN_CAN_BE_AUTO_RELOAD_DUAL_GUN, GUN_CAN_BE_CLIP_DUAL_GUN, GUN_AUTOSHOOT, GUN_CAN_BE_AUTOSHOOT, GUN_DUAL_ACCURACY, GUN_DUAL_GUN_DUAL_ACCURACY, GUN_CAN_HAVE_DUAL_ACCURACY, GUN_CAN_BE_DUAL_GUN_DUAL_ACCURACY
+from gui.shared.utils import GUN_CLIP, GUN_CAN_BE_CLIP, GUN_AUTO_RELOAD, GUN_CAN_BE_AUTO_RELOAD, GUN_DUAL_GUN, GUN_CAN_BE_DUAL_GUN, GUN_CAN_BE_AUTOSHOOT_FLAME, GUN_AUTOSHOOT_FLAME, GUN_AUTO_RELOAD_DUAL_GUN, GUN_CLIP_DUAL_GUN, GUN_CAN_BE_AUTO_RELOAD_DUAL_GUN, GUN_CAN_BE_CLIP_DUAL_GUN, GUN_AUTOSHOOT, GUN_CAN_BE_AUTOSHOOT, GUN_DUAL_ACCURACY, GUN_DUAL_GUN_DUAL_ACCURACY, GUN_CAN_HAVE_DUAL_ACCURACY, GUN_CAN_BE_DUAL_GUN_DUAL_ACCURACY, GUN_CLIP_GUN_DUAL_ACCURACY, GUN_CAN_BE_CLIP_GUN_DUAL_ACCURACY
 from gui.shared.money import Currency
 import nations
 from items import vehicles as veh_core
@@ -61,6 +61,10 @@ class VehicleModule(FittingItem):
 
 class VehicleChassis(VehicleModule):
     __slots__ = ()
+
+    @property
+    def fittingType(self):
+        return FITTING_TYPES.VEHICLE_CHASSIS
 
     def isInstalled(self, vehicle, slotIdx=None):
         return self.intCD == vehicle.chassis.intCD
@@ -142,6 +146,10 @@ class VehicleChassis(VehicleModule):
 class VehicleTurret(VehicleModule):
     __slots__ = ()
 
+    @property
+    def fittingType(self):
+        return FITTING_TYPES.VEHICLE_TURRET
+
     def isInstalled(self, vehicle, slotIdx=None):
         return self.intCD == vehicle.turret.intCD
 
@@ -198,6 +206,10 @@ class VehicleGun(VehicleModule):
         self._defaultAmmo = self._getDefaultAmmo(proxy)
         self._maxAmmo = self._getMaxAmmo()
 
+    @property
+    def fittingType(self):
+        return FITTING_TYPES.VEHICLE_GUN
+
     def isInstalled(self, vehicle, slotIdx=None):
         return self.intCD == vehicle.gun.intCD
 
@@ -249,6 +261,10 @@ class VehicleGun(VehicleModule):
         typeToCheck = GUN_AUTOSHOOT if vehicleDescr is not None else GUN_CAN_BE_AUTOSHOOT
         return self.getReloadingType(vehicleDescr) == typeToCheck
 
+    def isClipGunDualAccuracy(self, vehicleDescr=None):
+        typeToCheck = GUN_CLIP_GUN_DUAL_ACCURACY if vehicleDescr is not None else GUN_CAN_BE_CLIP_GUN_DUAL_ACCURACY
+        return self.getReloadingType(vehicleDescr) == typeToCheck
+
     def getInstalledVehicles(self, vehicles):
         result = set()
         for vehicle in vehicles:
@@ -289,6 +305,8 @@ class VehicleGun(VehicleModule):
             return backport.text(R.strings.item_types.dualGun.name())
         if self.isAutoShootGun():
             return backport.text(R.strings.item_types.autoShootGun.name())
+        if self.isClipGun():
+            return backport.text(R.strings.item_types.clipGun.name())
         return userType
 
     def getExtraIconInfo(self, vehDescr=None):
@@ -316,6 +334,8 @@ class VehicleGun(VehicleModule):
                 return backport.image(R.images.gui.maps.icons.modules.dualGun())
             if self.hasDualAccuracy(vehDescr):
                 return backport.image(R.images.gui.maps.icons.modules.dualAccuracy())
+            if self.isClipGunDualAccuracy(vehDescr):
+                return backport.image(R.images.gui.maps.icons.modules.clipGunDualAccuracy())
             return
 
     def getGUIEmblemID(self):
@@ -353,6 +373,10 @@ class VehicleGun(VehicleModule):
 
 class VehicleEngine(VehicleModule):
     __slots__ = ()
+
+    @property
+    def fittingType(self):
+        return FITTING_TYPES.VEHICLE_ENGINE
 
     def isInstalled(self, vehicle, slotIdx=None):
         return self.intCD == vehicle.engine.intCD
@@ -404,6 +428,10 @@ class VehicleEngine(VehicleModule):
 class VehicleFuelTank(VehicleModule):
     __slots__ = ()
 
+    @property
+    def fittingType(self):
+        return FITTING_TYPES.VEHICLE_FUEL_TANK
+
     def isInstalled(self, vehicle, slotIdx=None):
         return self.intCD == vehicle.fuelTank.intCD
 
@@ -418,6 +446,10 @@ class VehicleFuelTank(VehicleModule):
 
 class VehicleRadio(VehicleModule):
     __slots__ = ()
+
+    @property
+    def fittingType(self):
+        return FITTING_TYPES.VEHICLE_RADIO
 
     def isInstalled(self, vehicle, slotIdx=None):
         return self.intCD == vehicle.radio.intCD
@@ -446,6 +478,10 @@ class Shell(FittingItem):
     def __init__(self, intCompactDescr, count=0, proxy=None, isBoughtForCredits=False):
         FittingItem.__init__(self, intCompactDescr, proxy, isBoughtForCredits)
         self._count = count
+
+    @property
+    def fittingType(self):
+        return FITTING_TYPES.SHELL
 
     @property
     def level(self):

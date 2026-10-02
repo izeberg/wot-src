@@ -1,6 +1,7 @@
 package net.wg.gui.battle.views.vehicleMessages
 {
    import flash.display.DisplayObjectContainer;
+   import net.wg.data.constants.Values;
    import net.wg.data.constants.generated.BATTLE_MESSAGES_CONSTS;
    import net.wg.gui.battle.views.messages.IMessage;
    import net.wg.gui.battle.views.messages.MessageListDAAPI;
@@ -24,10 +25,6 @@ package net.wg.gui.battle.views.vehicleMessages
          super(param1);
       }
       
-      override public function closeOldestMessage() : void
-      {
-      }
-      
       override public function as_showGoldMessage(param1:String, param2:String) : void
       {
          this.storeMessage(param1,param2,VehicleMessageVO.COLOR_YELLOW);
@@ -35,7 +32,7 @@ package net.wg.gui.battle.views.vehicleMessages
       
       override public function as_showGreenMessage(param1:String, param2:String) : void
       {
-         this.storeMessage(param1,param2,VehicleMessageVO.COLOR_GREEN);
+         this.storeMessage(param1,param2,this.getGreen());
       }
       
       override public function as_showPurpleMessage(param1:String, param2:String) : void
@@ -56,6 +53,10 @@ package net.wg.gui.battle.views.vehicleMessages
       override public function as_showYellowMessage(param1:String, param2:String) : void
       {
          this.storeMessage(param1,param2,VehicleMessageVO.COLOR_YELLOW);
+      }
+      
+      override public function closeOldestMessage() : void
+      {
       }
       
       override protected function setupList(param1:FadingMessageListSettingsVO) : void
@@ -79,6 +80,56 @@ package net.wg.gui.battle.views.vehicleMessages
       {
          super.onMessageClose(param1);
          this.showNextMessage();
+      }
+      
+      override protected function rearrangeMessages() : void
+      {
+         var _loc2_:Boolean = false;
+         var _loc3_:VehicleMessage = null;
+         var _loc4_:int = 0;
+         var _loc5_:int = 0;
+         var _loc6_:int = 0;
+         var _loc1_:int = messages.length;
+         if(_loc1_)
+         {
+            _loc2_ = direction == BATTLE_MESSAGES_CONSTS.LIST_DIRECTION_DOWN;
+            _loc4_ = y;
+            _loc6_ = 0;
+            while(_loc6_ < _loc1_)
+            {
+               _loc3_ = VehicleMessage(messages[_loc6_]);
+               _loc3_.x = x;
+               _loc5_ = messageGap + _loc3_.height;
+               if(_loc2_)
+               {
+                  _loc3_.y = _loc4_;
+                  _loc4_ += _loc5_;
+               }
+               else
+               {
+                  _loc4_ -= _loc5_;
+                  _loc3_.y = _loc4_;
+               }
+               _loc6_++;
+            }
+         }
+      }
+      
+      public function updateStage() : void
+      {
+         if(this._renderersPool)
+         {
+            this._renderersPool.updateStage();
+         }
+      }
+      
+      private function getGreen() : int
+      {
+         if(greenMessageColorOverride != Values.DEFAULT_INT)
+         {
+            return greenMessageColorOverride;
+         }
+         return VehicleMessageVO.COLOR_GREEN;
       }
       
       private function storeMessage(param1:String, param2:String, param3:uint) : void
@@ -168,47 +219,6 @@ package net.wg.gui.battle.views.vehicleMessages
          {
             this._renderersPool.dispose();
             this._renderersPool = null;
-         }
-      }
-      
-      public function updateStage() : void
-      {
-         if(this._renderersPool)
-         {
-            this._renderersPool.updateStage();
-         }
-      }
-      
-      override protected function rearrangeMessages() : void
-      {
-         var _loc2_:Boolean = false;
-         var _loc3_:VehicleMessage = null;
-         var _loc4_:int = 0;
-         var _loc5_:int = 0;
-         var _loc6_:int = 0;
-         var _loc1_:int = messages.length;
-         if(_loc1_)
-         {
-            _loc2_ = direction == BATTLE_MESSAGES_CONSTS.LIST_DIRECTION_DOWN;
-            _loc4_ = y;
-            _loc6_ = 0;
-            while(_loc6_ < _loc1_)
-            {
-               _loc3_ = VehicleMessage(messages[_loc6_]);
-               _loc3_.x = x;
-               _loc5_ = messageGap + _loc3_.height;
-               if(_loc2_)
-               {
-                  _loc3_.y = _loc4_;
-                  _loc4_ += _loc5_;
-               }
-               else
-               {
-                  _loc4_ -= _loc5_;
-                  _loc3_.y = _loc4_;
-               }
-               _loc6_++;
-            }
          }
       }
    }

@@ -86,9 +86,6 @@ msgstr "Фронтовой опыт"
 msgid "activation/informationButton"
 msgstr "ИНФОРМАЦИЯ"
 
-msgid "activation/onlyOnceHint"
-msgstr "ВЫБЕРИТЕ БОНУС"
-
 msgid "activation/price"
 msgstr "Стоимость:"
 
@@ -157,9 +154,6 @@ msgstr ""
 
 msgid "hangarEntry/minute"
 msgstr "%(minutesLeft)мин"
-
-msgid "hangarEntry/onlyOnceHint"
-msgstr "АКТИВАЦИЯ ЛИЧНЫХ РЕЗЕРВОВ"
 
 msgid "hangarEntryTooltip/bonus"
 msgstr "+%(bonus)%"

@@ -13,8 +13,8 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<primitive>indices</primitive>
+			<vertices>segment_01Shape.vertices</vertices>
+			<primitive>segment_01Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -60,9 +60,9 @@
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.324832 -0.067657 -0.066113</min>
-		<max>0.324832 0.082603 0.066113</max>
+		<min>-0.321041 -0.067657 -0.066113</min>
+		<max>0.321041 0.082603 0.066113</max>
 	</boundingBox>
 	<geometrySize>4824</geometrySize>
-	<minUVDensity>1.594997</minUVDensity>
+	<minUVDensity>1.595002</minUVDensity>
 </root>

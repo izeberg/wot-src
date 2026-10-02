@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/german/G201_Flakpanzer_5_5_cm_Coelian_Kr/crash/lod3/Gun_01</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.529750 -0.773221 -0.762649</min>
+		<max>0.529750 0.757280 5.130295</max>
+	</visibilityBox>
+	<nodelessVisual>vehicles/german/G201_Flakpanzer_5_5_cm_Coelian_Kr/crash/lod2/Gun_01</nodelessVisual>
+</root>

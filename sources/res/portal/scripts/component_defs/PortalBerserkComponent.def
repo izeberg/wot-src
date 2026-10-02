@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<Properties>
+		<isBerserkActive>
+			<Type>BOOL</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<Default>0</Default>
+		</isBerserkActive>
+		<equipmentID>
+			<Type>UINT32</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<Default>0</Default>
+		</equipmentID>
+	</Properties>
+	<CellMethods/>
+	<ClientMethods/>
+	<ofEntity>
+		<Vehicle/>
+	</ofEntity>
+	<DefaultKeyName>portalBerserk</DefaultKeyName>
+</root>

@@ -199,14 +199,6 @@
 			</value>
 		</message>
 		<message>
-			<name>FEPmedkitAllTankmenAreSafe</name>
-			<type>list</type>
-			<value>
-				<item>_(#ingame_gui:player_errors/equipment/FEPmedkit/allTankmenAreSafe)</item>
-				<item>yellow</item>
-			</value>
-		</message>
-		<message>
 			<name>crewAndDevicesAreOk</name>
 			<type>list</type>
 			<value>
@@ -267,6 +259,22 @@
 			<type>list</type>
 			<value>
 				<item>_(#epic_battle:player_errors/minefieldIsIntersected)</item>
+				<item>yellow</item>
+			</value>
+		</message>
+		<message>
+			<name>guidedMissileCeilingBlocked</name>
+			<type>list</type>
+			<value>
+				<item>_(#portal.portal_battle:player_errors/guidedMissileCeilingBlocked)</item>
+				<item>yellow</item>
+			</value>
+		</message>
+		<message>
+			<name>guidedMissileTeleportBlocked</name>
+			<type>list</type>
+			<value>
+				<item>_(#portal.portal_battle:player_errors/guidedMissileTeleportBlocked)</item>
 				<item>yellow</item>
 			</value>
 		</message>

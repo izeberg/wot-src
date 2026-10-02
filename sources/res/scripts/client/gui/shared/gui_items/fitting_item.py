@@ -2,6 +2,7 @@ from collections import namedtuple
 import BigWorld
 from debug_utils import LOG_CURRENT_EXCEPTION
 from gui import GUI_SETTINGS
+from gui.Scaleform.genConsts.FITTING_TYPES import FITTING_TYPES
 from gui.Scaleform.genConsts.SLOT_HIGHLIGHT_TYPES import SLOT_HIGHLIGHT_TYPES
 from gui.impl.gen.view_models.constants.item_highlight_types import ItemHighlightTypes
 from gui.shared.gui_items import GUI_ITEM_TYPE, GUI_ITEM_ECONOMY_CODE
@@ -215,8 +216,9 @@ class FittingItem(GUIItem):
             self._fullyConfigured = False
         return
 
-    def _getAltPrice(self, buyPrice, proxy):
-        return MONEY_UNDEFINED
+    @property
+    def fittingType(self):
+        return FITTING_TYPES.DEFAULT
 
     @property
     def buyPrices(self):
@@ -517,6 +519,9 @@ class FittingItem(GUIItem):
 
     def isRestoreAvailable(self):
         return False
+
+    def _getAltPrice(self, buyPrice, proxy):
+        return MONEY_UNDEFINED
 
     def _mayPurchase(self, price, money):
         if self.itemTypeID not in (

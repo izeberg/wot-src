@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>4.100000</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>RAY</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/portal26_event/guard_gates/Gates_ray.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd0</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 0.200000 0.200000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 -0.029009</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -0.029009</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.133333</startTime>
+				<value>1.000000 1.000000 1.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 -73.399063</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -73.399063</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.166667</startTime>
+				<value>1.000000 1.000000 1.000000 0.119116</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -5.183234</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -5.183234</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.233333</startTime>
+				<value>1.000000 0.200000 0.200000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.026381</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -0.026381</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd1</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 0.639216 0.400000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 -0.530297</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -0.530297</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.133333</startTime>
+				<value>1.000000 0.639216 0.400000 5.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 8.498882</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 8.498882</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.466667</startTime>
+				<value>1.000000 0.639216 0.400000 0.665892</value>
+				<inTangent>0.000000 -0.000000 0.000000 -12.420238</inTangent>
+				<outTangent>0.000000 -0.000000 0.000000 -12.420238</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.566667</startTime>
+				<value>1.000000 0.639216 0.400000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.313665</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -0.313665</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd2</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 0.133333 0.062745 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 -1.499999</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -1.499999</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.666667</startTime>
+				<value>1.000000 0.133333 0.062745 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -1.499999</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -1.499999</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>SPARKS</name>
+		<type>particle</type>
+		<resource>particles/environment/interior/252_portal_laser_destruction.eff</resource>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>6.000000</inTangent>
+				<outTangent>6.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.166667</startTime>
+				<value>1.000000</value>
+				<inTangent>3.000000</inTangent>
+				<outTangent>3.000000</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>0.000000</value>
+				<inTangent>-3.000000</inTangent>
+				<outTangent>-3.000000</outTangent>
+				<tangentMode>2</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>STONES</name>
+		<type>particle</type>
+		<resource>particles/Environment/interior/252_portal_stones.eff</resource>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000</value>
+				<inTangent>-6.000000</inTangent>
+				<outTangent>-6.000000</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.166667</startTime>
+				<value>0.000000</value>
+				<inTangent>-6.000000</inTangent>
+				<outTangent>-6.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Sound 0</name>
+		<type>sound</type>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>1.000000</duration>
+				<value>Root|</value>
+			</frame>
+		</track>
+		<track>
+			<name>Sound</name>
+			<type>sound</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>4.100000</duration>
+				<sequenceSound>ev_portal_gameplay_guards_explode</sequenceSound>
+				<type>play_till_end</type>
+				<fade>0.000000</fade>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

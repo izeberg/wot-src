@@ -1,0 +1,251 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "battle_hints/allCampsCaptured"
+msgstr ""
+"Все Башни захвачены.\n"
+"Путь к порталу открыт."
+
+msgid "battle_hints/almostBase"
+msgstr ""
+"Противник почти добрался до Базы.\n"
+"Обороняйте "
+
+msgid "battle_hints/almostBase/1"
+msgstr "верхний рубеж!"
+
+msgid "battle_hints/almostBase/2"
+msgstr "срединный рубеж!"
+
+msgid "battle_hints/almostBase/3"
+msgstr "нижний рубеж!"
+
+msgid "battle_hints/almostTimeout"
+msgstr ""
+"Время пребывания в Разломе почти истекло.\n"
+"Поторопитесь!"
+
+msgid "battle_hints/battleStarted"
+msgstr ""
+"Первая цель — Башни.\n"
+"Захватите их, чтобы проложить путь к порталу."
+
+msgid "battle_hints/campBecameCapturable"
+msgstr "Башня доступна для захвата."
+
+msgid "battle_hints/campCaptured"
+msgstr ""
+"Башня захвачена.\n"
+"Доступен телепорт на Базу."
+
+msgid "battle_hints/superBossFightStarted"
+msgstr ""
+"{bossName} повержен!\n"
+"Но это ещё не конец..."
+
+msgid "battle_hints/waveStarted"
+msgstr "Идёт волна №"
+
+msgid "battle_hints/waveStarted/1"
+msgstr "верхнем рубеже."
+
+msgid "battle_hints/waveStarted/2"
+msgstr "срединном рубеже."
+
+msgid "battle_hints/waveStarted/3"
+msgstr "нижнем рубеже."
+
+msgid "battle_hints/waveStarted/description/1"
+msgstr "Враги на"
+
+msgid "battle_hints/waveStarted/description/2"
+msgstr "Не подпускайте врагов к Базе!"
+
+msgid "battle_hints/wavesBuffed"
+msgstr ""
+"Враги стали сильнее!\n"
+"Уничтожайте противников, чтобы уменьшить их мощь."
+
+msgid "camp/capturing"
+msgstr "Захват Башни (%(percent)s%%)"
+
+msgid "efficiencyRibbons/guidedMissile"
+msgstr "Урон Шаровой молнией"
+
+msgid "efficiencyRibbons/healSelfVehicleApplied"
+msgstr "Восстановление прочности"
+
+msgid "efficiencyRibbons/periodicCaused"
+msgstr "Периодический урон"
+
+msgid "efficiencyRibbons/periodicReceived"
+msgstr "Урон от Зоны-убийцы"
+
+msgid "efficiencyRibbons/portalDeathZone"
+msgstr "Урон от Зоны-убийцы"
+
+msgid "efficiencyRibbons/sentinelAttack"
+msgstr "Урон от Врат"
+
+msgid "efficiencyRibbons/superBossAura"
+msgstr "Урон от Испепеления"
+
+msgid "finalStatistics/commonStats/resultlabel/lose"
+msgstr "ПОРАЖЕНИЕ"
+
+msgid "finalStatistics/commonStats/resultlabel/lose/timeout"
+msgstr "ПОРАЖЕНИЕ"
+
+msgid "finalStatistics/commonStats/resultlabel/win"
+msgstr "ПОБЕДА"
+
+msgid "finish/lose/reason/base"
+msgstr "Противник захватил Базу."
+
+msgid "finish/lose/reason/super_boss"
+msgstr "Время вышло. Попробуйте ещё раз."
+
+msgid "finish/lose/reason/timeout"
+msgstr "Вы не успели выполнить поставленную цель."
+
+msgid "finish/win/reason/boss"
+msgstr "%(bossName)s повержен. Портал уничтожен. Вы справились! "
+
+msgid "finish/win/reason/super_boss"
+msgstr "Вы уничтожили Ратте. Портал разрушен!"
+
+msgid "player_errors/guidedMissileCeilingBlocked"
+msgstr "Невозможно активировать способность: над танком недостаточно места."
+
+msgid "player_errors/guidedMissileTeleportBlocked"
+msgstr "Невозможно активировать способность во время телепортации."
+
+msgid "player_messages/COMBAT_EQUIPMENT_ACTIVATED_BERSERK_PORTAL"
+msgstr "Адреналин активирован."
+
+msgid "player_messages/COMBAT_EQUIPMENT_ACTIVATED_CURSE_SHOT_PORTAL"
+msgstr "Замыкание активировано."
+
+msgid "player_messages/COMBAT_EQUIPMENT_ACTIVATED_FIRE_SHOT_PORTAL"
+msgstr "Пирокинез активирован."
+
+msgid "player_messages/COMBAT_EQUIPMENT_ACTIVATED_FROZEN_SHOT_PORTAL"
+msgstr "Заморозка активирована."
+
+msgid "player_messages/COMBAT_EQUIPMENT_ACTIVATED_GUIDED_MISSILE_PORTAL"
+msgstr "Шаровая молния активирована."
+
+msgid "player_messages/COMBAT_EQUIPMENT_ACTIVATED_LAUGH_SHOT_PORTAL"
+msgstr "Ошибка кода активирована."
+
+msgid "player_messages/COMBAT_EQUIPMENT_ACTIVATED_MINEFIELD_PORTAL"
+msgstr "Минное поле активировано."
+
+msgid "player_messages/COMBAT_EQUIPMENT_ACTIVATED_RELOAD_AURA_PORTAL"
+msgstr "Огневой рубеж активирован."
+
+msgid "player_messages/COMBAT_EQUIPMENT_ACTIVATED_SENTRY_GUN_PORTAL"
+msgstr "Турель активирована."
+
+msgid "player_messages/COMBAT_EQUIPMENT_ACTIVATED_SHIELD_PORTAL"
+msgstr "Защитный барьер активирован."
+
+msgid "player_messages/COMBAT_EQUIPMENT_ACTIVATED_TRAP_PORTAL"
+msgstr "Магнит активирован."
+
+msgid "player_messages/COMBAT_EQUIPMENT_ACTIVATED_VEHICLE_CHANGE_SHOT_PORTAL"
+msgstr "Перехват активирован."
+
+msgid "player_messages/COMBAT_EQUIPMENT_READY_BERSERK_PORTAL"
+msgstr "Адреналин готов к использованию."
+
+msgid "player_messages/COMBAT_EQUIPMENT_READY_CURSE_SHOT_PORTAL"
+msgstr "Замыкание готово к использованию."
+
+msgid "player_messages/COMBAT_EQUIPMENT_READY_FIRE_SHOT_PORTAL"
+msgstr "Пирокинез готов к использованию."
+
+msgid "player_messages/COMBAT_EQUIPMENT_READY_FROZEN_SHOT_PORTAL"
+msgstr "Заморозка готова к использованию."
+
+msgid "player_messages/COMBAT_EQUIPMENT_READY_GUIDED_MISSILE_PORTAL"
+msgstr "Шаровая молния готова к использованию."
+
+msgid "player_messages/COMBAT_EQUIPMENT_READY_LAUGH_SHOT_PORTAL"
+msgstr "Ошибка кода готова к использованию."
+
+msgid "player_messages/COMBAT_EQUIPMENT_READY_MINEFIELD_PORTAL"
+msgstr "Минное поле готово к использованию."
+
+msgid "player_messages/COMBAT_EQUIPMENT_READY_RELOAD_AURA_PORTAL"
+msgstr "Огневой рубеж готов к использованию."
+
+msgid "player_messages/COMBAT_EQUIPMENT_READY_SENTRY_GUN_PORTAL"
+msgstr "Турель готова к использованию."
+
+msgid "player_messages/COMBAT_EQUIPMENT_READY_SHIELD_PORTAL"
+msgstr "Защитный барьер готов к использованию."
+
+msgid "player_messages/COMBAT_EQUIPMENT_READY_TRAP_PORTAL"
+msgstr "Магнит готов к использованию."
+
+msgid "player_messages/COMBAT_EQUIPMENT_READY_VEHICLE_CHANGE_SHOT_PORTAL"
+msgstr "Перехват готов к использованию."
+
+msgid "player_messages/DEATH_FROM_DEATH_ZONE_ENEMY_SELF"
+msgstr "%(target)s уничтожен Зоной-убийцей."
+
+msgid "player_messages/DEATH_FROM_SENTINEL_ATTACK_SELF_SUICIDE"
+msgstr "%(target)s уничтожен Вратами."
+
+msgid "player_messages/DEATH_FROM_SUPER_BOSS_AURA_SELF_SUICIDE"
+msgstr "%(target)s уничтожен Испепелением."
+
+msgid "player_messages/DEATH_ZONE_ENEMY_ALLY"
+msgstr "%(target)s уничтожен Зоной-убийцей."
+
+msgid "player_messages/GUIDED_MISSILE_ALLY_ENEMY"
+msgstr "Шаровая молния %(attacker)s уничтожила %(target)s."
+
+msgid "player_messages/MINEFIELD_EQ_ALLY_ENEMY"
+msgstr "Минное поле %(attacker)s уничтожило %(target)s."
+
+msgid "player_messages/PERIODIC_ALLY_ENEMY_LAUGH_SHOT_PORTAL"
+msgstr "Ошибка кода %(attacker)s уничтожила %(target)s."
+
+msgid "player_messages/PERIODIC_ALLY_ENEMY_TRAP_PORTAL"
+msgstr "Магнит %(attacker)s уничтожил %(target)s."
+
+msgid "player_messages/SENTINEL_ATTACK_ALLY_SUICIDE"
+msgstr "%(target)s уничтожен Вратами."
+
+msgid "player_messages/SUPER_BOSS_AURA_ALLY_SUICIDE"
+msgstr "%(target)s уничтожен Испепелением."
+
+msgid "postmortem/deadMsg"
+msgstr "Ваша машина уничтожена"
+
+msgid "postmortem/respawnMsg"
+msgstr "С каждым уничтожением время до возвращения машины увеличивается."
+
+msgid "postmortem/waitMsg"
+msgstr "Скоро вернёшься!"
+
+msgid "timers_panel/anomaly"
+msgstr "?empty?"
+
+msgid "timers_panel/death_zone"
+msgstr "Зона-убийца"
+
+msgid "timers_panel/ratte_aura"
+msgstr "Испепеление"
+
+msgid "timers_panel/teleport"
+msgstr "Телепортация"

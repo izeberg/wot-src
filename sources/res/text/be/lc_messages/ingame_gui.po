@@ -375,9 +375,6 @@ msgstr "Слот пад рыштунак"
 msgid "countRibbons/multiSeparator"
 msgstr "×%(multiplier)d"
 
-msgid "crosshair/hint/wtBarrier"
-msgstr "УСТАНОВИТЬ"
-
 msgid "cruise_ctrl/speedMetric"
 msgstr "км/гадз"
 
@@ -569,9 +566,6 @@ msgstr "Машына можа быць знішчана — тэрмінова �
 
 msgid "destroyTimer/liftOver"
 msgstr "Машына вяртаецца ў строй..."
-
-msgid "destroyTimer/medkitInUse"
-msgstr "?empty?"
 
 msgid "devMaps/hint/description"
 msgstr "для знаёмства з асаблівасцямі мапы"
@@ -1016,11 +1010,6 @@ msgstr "Гармата перагрэтая! Змена снарадаў нем�
 
 msgid "player_errors/cant_switch/engine_destroyed"
 msgstr "Пераключыць рэжым немагчыма: рухавік выведзены са строю."
-
-msgid "player_errors/equipment/FEPmedkit/allTankmenAreSafe"
-msgstr ""
-"Экипаж не пострадал, медицинская помощь не требуется. Машина имеет полный "
-"запас прочности."
 
 msgid "player_errors/equipment/ability/alreadyActivated"
 msgstr "Мадыфікацыя «%(name)s» ужо актывавана."
@@ -2067,6 +2056,15 @@ msgstr "Склады"
 
 msgid "prebattlemarker/prebattlemarker_52"
 msgstr "Фабрыка"
+
+msgid "prebattlemarker/prebattlemarker_53"
+msgstr "Нижний рубеж"
+
+msgid "prebattlemarker/prebattlemarker_54"
+msgstr "Срединный рубеж"
+
+msgid "prebattlemarker/prebattlemarker_55"
+msgstr "Верхний рубеж"
 
 msgid "prebattlemarker/prebattlemarker_6"
 msgstr "Бераг"

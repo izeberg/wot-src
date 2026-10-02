@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/german/G00_Ratte_V1/normal/lod2/Gun_01</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<nodefullVisual>vehicles/german/G00_Ratte_V1/normal/lod1/Gun_01</nodefullVisual>
+	<visibilityBox>
+		<min>-3.208968 -0.690614 -0.000944</min>
+		<max>3.205102 0.749410 11.351480</max>
+	</visibilityBox>
+</root>

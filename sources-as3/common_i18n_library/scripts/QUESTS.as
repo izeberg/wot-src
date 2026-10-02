@@ -1937,6 +1937,8 @@ package
       
       public static const DETAILS_DOSSIER_50_BATTLESCOUNT:String = "#quests:details/dossier/50/battlesCount";
       
+      public static const DETAILS_DOSSIER_61_BATTLESCOUNT:String = "#quests:details/dossier/61/battlesCount";
+      
       public static const DETAILS_MODIFIERS_TITLE_DISCOUNT:String = "#quests:details/modifiers/title/discount";
       
       public static const DETAILS_MODIFIERS_TITLE_SELLING:String = "#quests:details/modifiers/title/selling";
@@ -2132,6 +2134,8 @@ package
       public static const MISSIONS_TAB_DAILY_HEADER:String = "#quests:missions/tab/daily/header";
       
       public static const MISSIONS_TAB_DAILY_BODY:String = "#quests:missions/tab/daily/body";
+      
+      public static const MISSIONS_TAB_SERIALENTER_HEADER:String = "#quests:missions/tab/serialEnter/header";
       
       public static const MISSIONS_TAB_WINBACK_HEADER:String = "#quests:missions/tab/winback/header";
       
@@ -3303,6 +3307,28 @@ package
       
       public static const DAILYQUESTS_TAB_CATHEGORY_TOOLTIP_DAILY_BODY:String = "#quests:dailyQuests/tab/cathegory/tooltip/daily/body";
       
+      public static const DAILYQUESTS_TAB_CATHEGORY_TOOLTIP_SERIALENTER_HEADER:String = "#quests:dailyQuests/tab/cathegory/tooltip/serialEnter/header";
+      
+      public static const DAILYQUESTS_TAB_CATHEGORY_TOOLTIP_SERIALENTER_BODY:String = "#quests:dailyQuests/tab/cathegory/tooltip/serialEnter/body";
+      
+      public static const SERIALENTER_TAB_LABEL:String = "#quests:serialEnter/tab/label";
+      
+      public static const SERIALENTER_TAB_DESCRIPTION:String = "#quests:serialEnter/tab/description";
+      
+      public static const SERIALENTER_TAB_COMPLETED_TITLE:String = "#quests:serialEnter/tab/completed/title";
+      
+      public static const SERIALENTER_TAB_COMPLETED_DESCRIPTION:String = "#quests:serialEnter/tab/completed/description";
+      
+      public static const SERIALENTER_TAB_FINAL_TITLE:String = "#quests:serialEnter/tab/final/title";
+      
+      public static const SERIALENTER_TAB_FINAL_DESCRIPTION:String = "#quests:serialEnter/tab/final/description";
+      
+      public static const SERIALENTER_CALENDAR_TITLE:String = "#quests:serialEnter/calendar/title";
+      
+      public static const SERIALENTER_CALENDAR_DESCRIPTION:String = "#quests:serialEnter/calendar/description";
+      
+      public static const SERIALENTER_CALENDAR_PREVIEW:String = "#quests:serialEnter/calendar/preview";
+      
       public static const DAILYQUESTS_BODY_REROLL:String = "#quests:dailyQuests/body/reroll";
       
       public static const DAILYQUESTS_MISSIONSWITCH_TOOLTIP_HEADER:String = "#quests:dailyQuests/missionSwitch/tooltip/header";
@@ -3585,6 +3611,24 @@ package
       
       public static const WEEKLYQUEST_REWARDSCREEN_CONFIRM:String = "#quests:weeklyQuest/rewardScreen/confirm";
       
+      public static const SESSIONPROGRESSREWARDSCREEN_HEADER:String = "#quests:sessionProgressRewardScreen/header";
+      
+      public static const SESSIONPROGRESSREWARDSCREEN_TITLE:String = "#quests:sessionProgressRewardScreen/title";
+      
+      public static const SESSIONPROGRESSREWARDSCREEN_CLOSE:String = "#quests:sessionProgressRewardScreen/close";
+      
+      public static const SESSIONPROGRESSREWARDSCREEN_CONFIRM:String = "#quests:sessionProgressRewardScreen/confirm";
+      
+      public static const SESSIONPROGRESSREWARDSCREEN_SHOWINHANGAR:String = "#quests:sessionProgressRewardScreen/showInHangar";
+      
+      public static const SESSIONPROGRESSREWARDSCREEN_COMPENSATIONTOOLTIP_TITLE_GOLD:String = "#quests:sessionProgressRewardScreen/compensationTooltip/title/gold";
+      
+      public static const SESSIONPROGRESSREWARDSCREEN_COMPENSATIONTOOLTIP_TITLE_CREDITS:String = "#quests:sessionProgressRewardScreen/compensationTooltip/title/credits";
+      
+      public static const SESSIONPROGRESSREWARDSCREEN_COMPENSATIONTOOLTIP_DESCRIPTION_VEHICLES:String = "#quests:sessionProgressRewardScreen/compensationTooltip/description/vehicles";
+      
+      public static const SESSIONPROGRESSREWARDSCREEN_COMPENSATIONTOOLTIP_FOOTERDETAILS_VEHICLES:String = "#quests:sessionProgressRewardScreen/compensationTooltip/footerDetails/vehicles";
+      
       public static const DAILYWIDGET_PROGRESS:String = "#quests:dailyWidget/progress";
       
       public static const DAILYWIDGET_TOOLTIP_HEADER_DAILY:String = "#quests:dailyWidget/tooltip/header/daily";
@@ -3594,6 +3638,16 @@ package
       public static const DAILYWIDGET_TOOLTIP_HEADER_BONUS:String = "#quests:dailyWidget/tooltip/header/bonus";
       
       public static const DAILYWIDGET_TOOLTIP_HEADER_EPIC:String = "#quests:dailyWidget/tooltip/header/epic";
+      
+      public static const DAILYWIDGET_TOOLTIP_SERIALENTER_HEADER:String = "#quests:dailyWidget/tooltip/serialEnter/header";
+      
+      public static const DAILYWIDGET_TOOLTIP_SERIALENTER_DESCRIPTION:String = "#quests:dailyWidget/tooltip/serialEnter/description";
+      
+      public static const DAILYWIDGET_TOOLTIP_SERIALENTER_COMPLETED:String = "#quests:dailyWidget/tooltip/serialEnter/completed";
+      
+      public static const DAILYWIDGET_TOOLTIP_SERIALENTER_AVAILABLE:String = "#quests:dailyWidget/tooltip/serialEnter/available";
+      
+      public static const DAILYWIDGET_TOOLTIP_SERIALENTER_ALLRECEIVED:String = "#quests:dailyWidget/tooltip/serialEnter/allReceived";
       
       public static const DAILYWIDGET_TOOLTIP_TIMER:String = "#quests:dailyWidget/tooltip/timer";
       
@@ -3606,20 +3660,6 @@ package
       public static const DAILYWIDGET_TOOLTIP_NOTAVAILABLE_DESCRIPTION:String = "#quests:dailyWidget/tooltip/notAvailable/description";
       
       public static const DAILYWIDGET_TOOLTIP_HIDDENREWARDS:String = "#quests:dailyWidget/tooltip/hiddenRewards";
-      
-      public static const INTROSCREEN_TITLE:String = "#quests:introScreen/title";
-      
-      public static const INTROSCREEN_SUBTITLE:String = "#quests:introScreen/subtitle";
-      
-      public static const INTROSCREEN_SUBTITLEDAILYQUESTSONLY:String = "#quests:introScreen/subtitleDailyQuestsOnly";
-      
-      public static const INTROSCREEN_DAILYQUESTS_HEADER:String = "#quests:introScreen/dailyQuests/header";
-      
-      public static const INTROSCREEN_DAILYQUESTS_DESCRIPTION:String = "#quests:introScreen/dailyQuests/description";
-      
-      public static const INTROSCREEN_CONFIRM:String = "#quests:introScreen/confirm";
-      
-      public static const INTROSCREEN_CLOSE:String = "#quests:introScreen/close";
       
       public static const DAILYREROLL_TITLE:String = "#quests:dailyReroll/title";
       
@@ -3683,15 +3723,9 @@ package
       
       public static const BONUSNAME_GOLDENTICKET:String = "#quests:bonusName/goldenticket";
       
-      public static const DETAILS_CONDITIONS_CUMULATIVE_WTBOSSVULNERABLEDAMAGE:String = "#quests:details/conditions/cumulative/wtBossVulnerableDamage";
+      public static const BONUSNAME_RAZLOM_COIN:String = "#quests:bonusName/razlom_coin";
       
-      public static const DETAILS_CONDITIONS_CUMULATIVE_MAXWTPLASMABONUS:String = "#quests:details/conditions/cumulative/maxWtPlasmaBonus";
-      
-      public static const DETAILS_CONDITIONS_CUMULATIVE_WTGENERATORSCAPTURED:String = "#quests:details/conditions/cumulative/wtGeneratorsCaptured";
-      
-      public static const DETAILS_CONDITIONS_CUMULATIVE_WTTOTALGENERATORSCAPTURED:String = "#quests:details/conditions/cumulative/wtTotalGeneratorsCaptured";
-      
-      public static const DETAILS_CONDITIONS_CUMULATIVE_WTDEATHCOUNT:String = "#quests:details/conditions/cumulative/wtDeathCount";
+      public static const BONUSNAME_ENTITLEMENTS_RAZLOMSUPERCOIN:String = "#quests:bonusName/entitlements/razlomsupercoin";
       
       public static const BATTLECONDITION_STATE_ENUM:Array = [BATTLECONDITION_STATE_COMPLETED,BATTLECONDITION_STATE_COMPLETED_PERFECTLY,BATTLECONDITION_STATE_IN_PROGRESS,BATTLECONDITION_STATE_FAILED];
       

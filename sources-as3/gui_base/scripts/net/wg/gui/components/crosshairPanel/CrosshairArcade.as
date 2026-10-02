@@ -1,8 +1,6 @@
 package net.wg.gui.components.crosshairPanel
 {
-   import net.wg.gui.components.crosshairPanel.wt.WTCrosshairBase;
-   
-   public class CrosshairArcade extends WTCrosshairBase
+   public class CrosshairArcade extends CrosshairWithCassette
    {
       
       private static const GUN_COOLING_INDICATOR_OFFSET:int = -100;

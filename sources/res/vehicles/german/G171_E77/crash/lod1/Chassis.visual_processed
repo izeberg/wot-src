@@ -114,6 +114,10 @@
 						normalMap
 						<Texture>vehicles/german/tracks/E77_track_ANM.dds</Texture>
 					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
 				</material>
 				<groupOrigin>1.362593 0.589291 -0.062449</groupOrigin>
 			</primitiveGroup>
@@ -169,6 +173,10 @@
 					<property>
 						normalMap
 						<Texture>vehicles/german/tracks/E77_track_ANM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
 					</property>
 				</material>
 				<groupOrigin>-1.362213 0.512701 -0.107462</groupOrigin>

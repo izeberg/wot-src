@@ -1,0 +1,94 @@
+from copy import copy
+from frameworks.wulf import ViewFlags, ViewSettings, WindowFlags, WindowLayer
+from gui.impl.gen import R
+from gui.impl.gen.view_models.views.lobby.daily.session_progress_reward_screen_model import SessionProgressRewardScreenModel
+from gui.impl.lobby.common.view_helpers import packBonusModelAndTooltipData
+from gui.impl.lobby.common.view_wrappers import createBackportTooltipDecorator
+from gui.impl.lobby.daily.tooltips.session_progress_rewards_compensation_tooltip import SessionProgressRewardsCompensationTooltip
+from gui.impl.pub import ViewImpl
+from gui.impl.pub.lobby_window import LobbyNotificationWindow
+from gui.server_events.bonuses import getNonQuestBonuses, splitBonuses, mergeBonuses
+from gui.session_progress_rewards.session_progress_rewards_bonus_packers import getSessionProgressRewardsBonusPacker
+from gui.shared.bonuses_sorter import bonusesSortKeyFunc
+from gui.shared.event_dispatcher import selectVehicleInHangar
+from shared_utils import findFirst
+_MAX_REWARDS = 3
+
+class SessionProgressRewardScreen(ViewImpl):
+    __slots__ = ('__tooltipData', '__rawBonuses', '__mainVehicleCd')
+
+    def __init__(self, layoutID, bonuses):
+        settings = ViewSettings(layoutID)
+        settings.flags = ViewFlags.VIEW
+        settings.model = SessionProgressRewardScreenModel()
+        self.__tooltipData = {}
+        self.__rawBonuses = copy(bonuses)
+        self.__mainVehicleCd = None
+        super(SessionProgressRewardScreen, self).__init__(settings)
+        return
+
+    @property
+    def viewModel(self):
+        return super(SessionProgressRewardScreen, self).getViewModel()
+
+    @createBackportTooltipDecorator()
+    def createToolTip(self, event):
+        return super(SessionProgressRewardScreen, self).createToolTip(event)
+
+    def createToolTipContent(self, event, contentID):
+        if contentID == R.views.lobby.daily.tooltips.SessionProgressRewardsCompensationTooltip():
+            tooltipData = self.getTooltipData(event)
+            if tooltipData:
+                return SessionProgressRewardsCompensationTooltip(*tooltipData.specialArgs)
+        return super(SessionProgressRewardScreen, self).createToolTipContent(event=event, contentID=contentID)
+
+    def getTooltipData(self, event):
+        index = event.getArgument('tooltipId')
+        return self.__tooltipData.get(index, None)
+
+    def _getEvents(self):
+        return (
+         (
+          self.viewModel.onClose, self.__onClose),
+         (
+          self.viewModel.onShowInHangar, self.__onShowInHangar))
+
+    def _onLoading(self, *args, **kwargs):
+        super(SessionProgressRewardScreen, self)._onLoading(*args, **kwargs)
+        rewards = []
+        for bonusType, bonusValue in self.__rawBonuses.items():
+            bonus = getNonQuestBonuses(bonusType, bonusValue)
+            rewards.extend(bonus)
+
+        rewards = splitBonuses(mergeBonuses(rewards))
+        rewards.sort(key=bonusesSortKeyFunc)
+        rewards = rewards[:_MAX_REWARDS]
+        vehicleBonus = findFirst(lambda bonus: bonus.getName() == 'vehicles', rewards)
+        if vehicleBonus:
+            vehicles = vehicleBonus.getVehicles()
+            if vehicles:
+                vehicle, _ = vehicles[0]
+                self.__mainVehicleCd = vehicle.intCD
+        if len(rewards) == _MAX_REWARDS:
+            rewards[0], rewards[1] = rewards[1], rewards[0]
+        with self.viewModel.transaction() as (model):
+            rewardsList = model.getRewards()
+            rewardsList.clear()
+            packBonusModelAndTooltipData(rewards, rewardsList, self.__tooltipData, getSessionProgressRewardsBonusPacker())
+            rewardsList.invalidate()
+
+    def __onClose(self):
+        self.destroyWindow()
+
+    def __onShowInHangar(self):
+        if self.__mainVehicleCd is not None:
+            self.destroyWindow()
+            selectVehicleInHangar(self.__mainVehicleCd)
+        return
+
+
+class SessionProgressRewardScreenWindow(LobbyNotificationWindow):
+    __slots__ = ()
+
+    def __init__(self, bonuses=None, parent=None):
+        super(SessionProgressRewardScreenWindow, self).__init__(wndFlags=WindowFlags.WINDOW | WindowFlags.WINDOW_FULLSCREEN, content=SessionProgressRewardScreen(R.views.lobby.daily.SessionProgressRewardScreen(), bonuses or {}), parent=parent, layer=WindowLayer.FULLSCREEN_WINDOW)

@@ -117,6 +117,8 @@ package net.wg.gui.lobby.settings.config
       
       public static const MASTER_VOLUME_TOGGLE:String = "masterVolumeToggle";
       
+      public static const MASTER_VOLUME_SYSTEM_OFF_LINK:String = "systemMixerVolumeDisabledLink";
+      
       public static const NIGHT_MODE:String = "nightMode";
       
       public static const BASS_BOOST:String = "bassBoost";

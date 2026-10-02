@@ -1,6 +1,6 @@
 import logging, math
 from collections import namedtuple
-import BigWorld, CGF, DataLinks, GenericComponents, Math, Vehicular, WWISE, material_kinds, math_utils
+import BigWorld, CGF, DataLinks, GenericComponents, Math, Vehicular, WWISE, constants, material_kinds, math_utils
 from constants import IS_DEVELOPMENT, IS_EDITOR, IS_UE_EDITOR
 from helpers import DecalMap, dependency
 from items.components import shared_components, component_constants
@@ -669,7 +669,10 @@ def assembleWaterSensor(vehicleDesc, appearance, lodStateLink, spaceID):
     sensor = appearance.createComponent(Vehicular.WaterSensor, sensorConfig)
     sensor.sensorPlaneLink = appearance.compoundModel.root
     sensor.speedLink = DataLinks.createFloatLink(appearance.filter, 'averageSpeed')
-    sensor.onWaterSplash = appearance.onWaterSplash
+    player = getattr(BigWorld, 'player', None)
+    arena = player and getattr(player(), 'arena', None)
+    if not arena or arena.bonusType != getattr(constants.ARENA_BONUS_TYPE, 'PORTAL', -1):
+        sensor.onWaterSplash = appearance.onWaterSplash
     sensor.onUnderWaterSwitch = appearance.onUnderWaterSwitch
     sensor.setLodLink(lodStateLink)
     sensor.setLodSettings(shared_components.LodSettings(WATER_SENSOR_LOD_DIST, WATER_SENSOR_MAX_PRIORITY))
@@ -941,6 +944,19 @@ def getStyleAttachments(styleOutfit):
     return attachments
 
 
+def getProgressionAttachments(tankStyle):
+    from items.vehicles import g_cache
+    progressionAttachments = []
+    listIndex = tankStyle.editorData.selectedProgressionStageIndex - 1
+    if listIndex >= 0 and listIndex < len(tankStyle.progression3dlist):
+        currentStage = tankStyle.progression3dlist[listIndex]
+        for outfitsProxyListItem in currentStage.outfitsProxyList:
+            for attachment in outfitsProxyListItem.attachments:
+                progressionAttachments.append(g_cache.customization20().attachments[attachment.id])
+
+    return progressionAttachments
+
+
 def updatePrefabAttachments(editorTank):
     appearance = editorTank.appearance
     typeDescriptor = editorTank.typeDescriptor
@@ -956,6 +972,8 @@ def updatePrefabAttachments(editorTank):
             outfit = tankStyle.outfitsProxyList[tankStyle.editorData.selectedOutfitIndex]
             shouldOverrideDefault = outfit.overrideDefault
             newPrefabAttachments = getStyleAttachments(outfit)
+            if IS_EDITOR:
+                newPrefabAttachments = newPrefabAttachments + getProgressionAttachments(tankStyle)
     if not shouldOverrideDefault and isUndamaged:
         newPrefabAttachments = newPrefabAttachments + typeDescriptor.type.edModelsSets.getPrefabAttachments()
     typeDescriptor.type.prefabAttachments = newPrefabAttachments

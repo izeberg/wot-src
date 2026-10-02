@@ -27,7 +27,7 @@
 			<density>0.002100</density>
 			<height>58.820000</height>
 			<heightFalloff>0.014000</heightFalloff>
-			<startDistance>100.000000</startDistance>
+			<startDistance>120.000000</startDistance>
 			<skyLow>-0.030000</skyLow>
 			<skyHigh>0.270000</skyHigh>
 			<useCustomCenter>false</useCustomCenter>
@@ -35,7 +35,7 @@
 		</forward>
 	</Fog>
 	<HDR>
-		<version>2</version>
+		<version>3</version>
 		<enable>true</enable>
 		<adaptationSpeed>120.000000</adaptationSpeed>
 		<bloom>
@@ -46,12 +46,12 @@
 			<dirtAmount>0.800000</dirtAmount>
 		</bloom>
 		<environment>
-			<sunlightLumMultiplier>12.000000</sunlightLumMultiplier>
+			<sunlightLumMultiplier>37.699116</sunlightLumMultiplier>
 			<ambientLumMultiplier>1.000000</ambientLumMultiplier>
-			<sunLumMultiplier>300.000000</sunLumMultiplier>
-			<skyLumMultiplier>5.000000</skyLumMultiplier>
-			<LDR2HDRenableLumaMask>false</LDR2HDRenableLumaMask>
+			<sunDiskLumMultiplier>1800.000000</sunDiskLumMultiplier>
+			<skyExpositionOffset>0.000000</skyExpositionOffset>
 			<LDR2HDRsaturation>1.000000</LDR2HDRsaturation>
+			<LDR2HDRenableLumaMask>false</LDR2HDRenableLumaMask>
 		</environment>
 		<tonemappings>
 			<tonemapping>
@@ -59,18 +59,28 @@
 				<middleGray>0.190000</middleGray>
 				<whitePoint>1.000000</whitePoint>
 				<blackPoint>1.500000</blackPoint>
+				<contrast>1.000000</contrast>
 			</tonemapping>
 			<tonemapping>
 				<name>FilmicTM</name>
 				<middleGray>0.310000</middleGray>
 				<whitePoint>12.790000</whitePoint>
 				<blackPoint>3.500000</blackPoint>
+				<contrast>1.000000</contrast>
 			</tonemapping>
 			<tonemapping>
 				<name>LinearExpTM</name>
 				<middleGray>0.487224</middleGray>
 				<whitePoint>1.750000</whitePoint>
 				<blackPoint>1.300000</blackPoint>
+				<contrast>1.000000</contrast>
+			</tonemapping>
+			<tonemapping>
+				<name>GTTM</name>
+				<middleGray>0.220000</middleGray>
+				<whitePoint>0.400000</whitePoint>
+				<blackPoint>1.330000</blackPoint>
+				<contrast>1.000000</contrast>
 			</tonemapping>
 			<active>0</active>
 		</tonemappings>
@@ -95,10 +105,14 @@
 			<scale>0.120000</scale>
 		</filmgrain>
 		<camera>
+			<usePhysicalCamera>true</usePhysicalCamera>
 			<fnumberDown>13.000000</fnumberDown>
 			<fnumberUp>6.300000</fnumberUp>
 			<shutterSpeed>6.643856</shutterSpeed>
-			<keyValue>0.120000</keyValue>
+			<cameraKeyValue>0.120000</cameraKeyValue>
+			<lightLimit>1000.000000</lightLimit>
+			<darkLimit>0.001000</darkLimit>
+			<eyeKeyValue>0.200000</eyeKeyValue>
 		</camera>
 	</HDR>
 	<LensFlare>
@@ -128,10 +142,10 @@
 		<enable>true</enable>
 		<attenuationPower>20.000000</attenuationPower>
 		<decay>0.526389</decay>
-		<color>0.495000 0.354502 0.240075 1.000000</color>
+		<color>0.495000 0.354502 0.240075 0.166667</color>
 	</GodRays>
 	<SSAO>
-		<enable>true</enable>
+		<enableFromPreset>2</enableFromPreset>
 		<radius>0.100000</radius>
 		<amplify>0.400000</amplify>
 		<fadeNear>4.000000</fadeNear>
@@ -144,13 +158,13 @@
 		</influences>
 	</SSAO>
 	<Shadow>
-		<maxShadowsSplitCount>5</maxShadowsSplitCount>
+		<maxShadowsSplitCount>4</maxShadowsSplitCount>
 		<maxDynamicViewDistance>16384.000000</maxDynamicViewDistance>
 		<lightSize>1.000000</lightSize>
 		<dynamicShadowsLightSize>13.000000</dynamicShadowsLightSize>
 	</Shadow>
 	<SSShadows>
-		<enable>true</enable>
+		<enableFromPreset>2</enableFromPreset>
 		<amplify>0.700000</amplify>
 	</SSShadows>
 	<VFX>
@@ -181,12 +195,31 @@
 		</layer1>
 	</cloudsShadow>
 	<PBS>
-		<ForwardSHMultiplier>1.100000</ForwardSHMultiplier>
-		<flakesEnabled>false</flakesEnabled>
+		<ForwardSHMultiplier>1.250000</ForwardSHMultiplier>
 		<flakesDensityThreshold>0.800000</flakesDensityThreshold>
 		<flakesUvScale>0.800000</flakesUvScale>
 		<flakesGloss>0.890000</flakesGloss>
 		<flakesSurfNormalNoiseWeight>0.100000</flakesSurfNormalNoiseWeight>
+		<flakesEnabled>false</flakesEnabled>
+		<useBC6PackingFormat>false</useBC6PackingFormat>
+		<mossDirectMult>1.000000</mossDirectMult>
+		<mossIndirectMult>1.000000</mossIndirectMult>
+		<mossSheenFactor>0.500000</mossSheenFactor>
+		<mossGrassSheenFactor>0.500000</mossGrassSheenFactor>
+		<mossAddColor>0.000000 0.000000 0.000000</mossAddColor>
+		<mossAddColorTint>0.000000</mossAddColorTint>
+		<mossIndirectBRDFFactor>0.800000</mossIndirectBRDFFactor>
+		<mossMinMaskMult>1.000000</mossMinMaskMult>
+		<mossMaxMaskMult>1.000000</mossMaxMaskMult>
+		<snowDirectMult>1.000000</snowDirectMult>
+		<snowScatterColor>0.000000 0.000000 0.000000</snowScatterColor>
+		<snowScatterColorTint>0.000000</snowScatterColorTint>
+		<snowIndirectMultShittySS>0.200000</snowIndirectMultShittySS>
+		<snowIndirectMultBase>1.000000</snowIndirectMultBase>
+		<snowIndirectBRDFFactor>0.800000</snowIndirectBRDFFactor>
+		<snowMinMaskMult>1.000000</snowMinMaskMult>
+		<snowMaxMaskMult>1.000000</snowMaxMaskMult>
+		<shadingModel>0</shadingModel>
 	</PBS>
 	<Weather>
 		<wind>
@@ -256,6 +289,8 @@
 		<waveMaskTexture>system/maps/wetness_waves.dds</waveMaskTexture>
 		<waveMaskUVScale>0.250000</waveMaskUVScale>
 		<waveMaskSpeed>0.141320</waveMaskSpeed>
+		<waterGlossMultiplier>1.000000</waterGlossMultiplier>
+		<wetCoastGlossMultiplier>1.000000</wetCoastGlossMultiplier>
 	</Wetness>
 	<DOF>
 		<enable>false</enable>
@@ -272,6 +307,10 @@
 		<PsIndirLightMultForward>1.000000</PsIndirLightMultForward>
 		<PsIllumMultDeferred>1.000000</PsIllumMultDeferred>
 		<PsIllumMultForward>1.000000</PsIllumMultForward>
+		<PsRibbonMultDeferred>1.000000</PsRibbonMultDeferred>
+		<PsRibbonMultForward>1.000000</PsRibbonMultForward>
+		<particleEnvironmentTintEnabledDeferred>false</particleEnvironmentTintEnabledDeferred>
+		<particleEnvironmentTintEnabledForward>false</particleEnvironmentTintEnabledForward>
 	</VFXLighting>
 	<WeatherDependentSettings>
 		<environment_dependent_emission>
@@ -281,4 +320,19 @@
 			<enabled>false</enabled>
 		</environment_dependent_lights>
 	</WeatherDependentSettings>
+	<visibilityMask>4294967295</visibilityMask>
+	<AlbedoScaleSettings>
+		<deferred>
+			<enable>false</enable>
+			<baseColor>0.000000 0.000000 0.000000</baseColor>
+			<lerpCoeff>1.000000</lerpCoeff>
+			<contrast>1.000000</contrast>
+		</deferred>
+		<forward>
+			<enable>false</enable>
+			<baseColor>0.000000 0.000000 0.000000</baseColor>
+			<lerpCoeff>1.000000</lerpCoeff>
+			<contrast>1.000000</contrast>
+		</forward>
+	</AlbedoScaleSettings>
 </root>

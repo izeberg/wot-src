@@ -1,0 +1,26 @@
+from battle_results.battle_results_constants import BATTLE_RESULT_ENTRY_TYPE as ENTRY_TYPE
+BATTLE_RESULTS = [
+ (
+  'vehicleCompDescrs', list, [], None, 'skip', ENTRY_TYPE.ACCOUNT_SELF),
+ (
+  'portalBattleLevel', int, -1, None, 'skip', ENTRY_TYPE.ACCOUNT_SELF),
+ (
+  'portalUnlockedComplexityLevel', int, 0, None, 'skip', ENTRY_TYPE.ACCOUNT_SELF),
+ (
+  'progressionTokens', int, 0, None, 'skip', ENTRY_TYPE.ACCOUNT_SELF),
+ (
+  'portalAwardToken', str, '', None, 'skip', ENTRY_TYPE.ACCOUNT_SELF),
+ (
+  'vehicleExperience', int, 0, None, 'skip', ENTRY_TYPE.ACCOUNT_SELF),
+ (
+  'wavesCount', int, 0, None, 'skip', ENTRY_TYPE.ACCOUNT_SELF),
+ (
+  'currentWave', int, 0, None, 'skip', ENTRY_TYPE.ACCOUNT_SELF),
+ (
+  'portalTotalScore', int, 0, None, 'skip', ENTRY_TYPE.ACCOUNT_SELF),
+ (
+  'isCurrentWaveCompleted', bool, False, None, 'skip', ENTRY_TYPE.ACCOUNT_SELF),
+ (
+  'portalTankLevel', int, 0, None, 'skip', ENTRY_TYPE.VEHICLE_ALL),
+ (
+  'isPortalBattleLeave', bool, False, None, 'skip', ENTRY_TYPE.VEHICLE_ALL)]

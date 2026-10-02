@@ -4,6 +4,7 @@ package net.wg.gui.battle.random.views.stats.components.fullStats.tableItem
    import flash.events.MouseEvent;
    import net.wg.data.VO.daapi.DAAPIVehicleInfoVO;
    import net.wg.data.constants.InvalidationType;
+   import net.wg.data.constants.Values;
    import net.wg.data.constants.generated.BATTLEATLAS;
    import net.wg.gui.battle.components.BattleAtlasSprite;
    import net.wg.gui.battle.components.buttons.BattleButton;
@@ -74,7 +75,10 @@ package net.wg.gui.battle.random.views.stats.components.fullStats.tableItem
          this._tooltipMgr = App.toolTipMgr;
          this._state = DynamicSquadState.NONE;
          this._squadStatus = param1;
+         this._squadStatus.hide();
          this._squadIcon = param2;
+         this._squadIcon.visible = false;
+         this._squadIcon.imageName = Values.EMPTY_STR;
          this._squadAcceptBt = param3;
          this._squadAcceptBt.visible = false;
          this._squadAddBt = param4;

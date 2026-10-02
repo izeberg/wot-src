@@ -926,6 +926,7 @@
 		<node>V_BlendBone</node>
 		<geometry>
 			<vertices>track_L_Shape.vertices</vertices>
+			<stream>track_L_Shape.uv2</stream>
 			<primitive>track_L_Shape.indices</primitive>
 			<primitiveGroup>
 				0
@@ -950,11 +951,19 @@
 						</Float>
 					</property>
 					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
 						g_maskBias
 						<Float>
 							0.18
 							<!--BW_String-->
 						</Float>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>3.507000 3.507000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_detailPower
@@ -969,19 +978,15 @@
 						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
 					<property>
+						alphaReference
+						<Int>128</Int>
+					</property>
+					<property>
 						g_detailPowerAlbedo
 						<Float>
 							0.11
 							<!--BW_String-->
 						</Float>
-					</property>
-					<property>
-						alphaReference
-						<Int>128</Int>
-					</property>
-					<property>
-						doubleSided
-						<Bool>true</Bool>
 					</property>
 				</material>
 				<groupOrigin>-1.150900 0.536901 0.123753</groupOrigin>
@@ -995,6 +1000,7 @@
 		<node>Track_R0_BlendBone</node>
 		<geometry>
 			<vertices>track_R_Shape.vertices</vertices>
+			<stream>track_R_Shape.uv2</stream>
 			<primitive>track_R_Shape.indices</primitive>
 			<primitiveGroup>
 				0
@@ -1019,11 +1025,19 @@
 						</Float>
 					</property>
 					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
 						g_maskBias
 						<Float>
 							0.18
 							<!--BW_String-->
 						</Float>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>3.507000 3.507000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_detailPower
@@ -1038,19 +1052,15 @@
 						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
 					<property>
+						alphaReference
+						<Int>128</Int>
+					</property>
+					<property>
 						g_detailPowerAlbedo
 						<Float>
 							0.11
 							<!--BW_String-->
 						</Float>
-					</property>
-					<property>
-						alphaReference
-						<Int>128</Int>
-					</property>
-					<property>
-						doubleSided
-						<Bool>true</Bool>
 					</property>
 				</material>
 				<groupOrigin>1.150900 0.537004 0.123753</groupOrigin>
@@ -1114,6 +1124,10 @@
 						</Float>
 					</property>
 					<property>
+						g_detailUVTiling
+						<Vector4>3.507000 1.507000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
 						g_detailPower
 						<Float>5</Float>
 					</property>
@@ -1128,6 +1142,10 @@
 					<property>
 						metallicDetailMap
 						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						alphaReference
+						<Int>128</Int>
 					</property>
 					<property>
 						g_detailPowerAlbedo
@@ -1198,6 +1216,10 @@
 						</Float>
 					</property>
 					<property>
+						g_detailUVTiling
+						<Vector4>3.507000 1.507000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
 						g_detailPower
 						<Float>5</Float>
 					</property>
@@ -1212,6 +1234,10 @@
 					<property>
 						metallicDetailMap
 						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						alphaReference
+						<Int>128</Int>
 					</property>
 					<property>
 						g_detailPowerAlbedo
@@ -1230,6 +1256,6 @@
 		<min>-1.451757 0.000482 -2.938541</min>
 		<max>1.451757 1.078031 2.691036</max>
 	</boundingBox>
-	<geometrySize>153186</geometrySize>
+	<geometrySize>154706</geometrySize>
 	<minUVDensity>0.021444</minUVDensity>
 </root>

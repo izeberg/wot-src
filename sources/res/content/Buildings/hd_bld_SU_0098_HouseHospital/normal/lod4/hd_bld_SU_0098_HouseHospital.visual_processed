@@ -28,7 +28,7 @@
 					</property>
 					<property>
 						g_emissionStrength
-						<Vector4>4.400000 2.000000 0.000000 0.000000</Vector4>
+						<Vector4>5.000000 1.500000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_enableAO
@@ -44,7 +44,7 @@
 					</property>
 					<property>
 						g_simpleEmissionColor
-						<Vector4>0.721569 0.525490 0.286275 0.000000</Vector4>
+						<Vector4>0.901961 0.686275 0.407843 0.000000</Vector4>
 					</property>
 				</material>
 				<groupOrigin>-0.046852 6.129618 -0.003657</groupOrigin>

@@ -9,7 +9,9 @@ package net.wg.gui.lobby.hangar.quests
       
       public static const QUESTS_BUTTON_GAP:int = 15;
       
-      private static const QUEST_BUTTON_VISUAL_WIDTH:int = 45;
+      public static const QUEST_BUTTON_VISUAL_WIDTH:int = 45;
+      
+      public static const QUEST_BUTTON_VISUAL_HEIGHT:int = 80;
       
       public static const QUEST_BUTTONS_MASK_X_SHIFT_COLLAPSE:int = QUEST_BUTTON_VISUAL_WIDTH - QUEST_BUTTONS_GROUP_STEP;
        

@@ -1,4 +1,5 @@
 from operator import attrgetter
+from account_helpers.settings_core.ServerSettingsManager import SETTINGS_SECTIONS
 from gui.Scaleform.daapi import LobbySubView
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
 from gui.Scaleform.daapi.view.meta.PersonalMissionFirstEntryAwardViewMeta import PersonalMissionFirstEntryAwardViewMeta
@@ -30,7 +31,7 @@ class PersonalMissionFirstEntryAwardView(LobbySubView, PersonalMissionsNavigatio
 
     def bigBtnClicked(self):
         settingsCore = dependency.instance(ISettingsCore)
-        settingsCore.serverSettings.saveInUIStorage({PM_TUTOR_FIELDS.FIRST_ENTRY_AWARDS_SHOWN: True})
+        settingsCore.serverSettings.saveInUIStorage(SETTINGS_SECTIONS.UI_STORAGE, {PM_TUTOR_FIELDS.FIRST_ENTRY_AWARDS_SHOWN: True})
         g_eventBus.handleEvent(events.LoadViewEvent(SFViewLoadParams(PERSONAL_MISSIONS_ALIASES.PERSONAL_MISSIONS_OPERATIONS), ctx={'branch': PM_BRANCH.REGULAR}), scope=EVENT_BUS_SCOPE.LOBBY)
 
     def onEscapePress(self):

@@ -49,17 +49,17 @@
 					</property>
 					<property>
 						g_emissionStrength
-						<Vector4>5.000000 1.350000 0.000000 0.000000</Vector4>
+						<Vector4>7.000000 1.350000 0.000000 0.000000</Vector4>
 					</property>
 				</material>
-				<groupOrigin>-0.016586 8.633849 -0.231501</groupOrigin>
+				<groupOrigin>-0.016586 8.951723 -0.231501</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
 		<min>-5.819148 -1.465685 -6.344046</min>
-		<max>5.785976 18.733383 5.881043</max>
+		<max>5.785976 19.369131 5.881043</max>
 	</boundingBox>
-	<geometrySize>4252</geometrySize>
+	<geometrySize>7844</geometrySize>
 	<minUVDensity>0.000161</minUVDensity>
 </root>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-1.536990 0.001995 -3.205500</min>
+		<max>1.537300 1.142810 4.264090</max>
+	</visibilityBox>
+	<parent>vehicles/german/G201_Flakpanzer_5_5_cm_Coelian_Kr/crash/lod1/Chassis</parent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/german/G201_Flakpanzer_5_5_cm_Coelian_Kr/crash/lod0/Chassis</nodefullVisual>
+	<extent>32.000000</extent>
+</root>

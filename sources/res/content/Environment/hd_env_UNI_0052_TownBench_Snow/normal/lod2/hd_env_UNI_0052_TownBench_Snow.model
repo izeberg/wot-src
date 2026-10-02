@@ -6,8 +6,8 @@
 	</visibilityBox>
 	<extent>60.000000</extent>
 	<parent>content/Environment/hd_env_UNI_0052_TownBench_Snow/normal/lod3/hd_env_UNI_0052_TownBench_Snow</parent>
-	<nodefullVisual>content/Environment/hd_env_UNI_0052_TownBench_Snow/normal/lod2/hd_env_UNI_0052_TownBench_Snow</nodefullVisual>
 	<havok>
 		<damagedState>false</damagedState>
 	</havok>
+	<nodefullVisual>content/Environment/hd_env_UNI_0052_TownBench_Snow/normal/lod2/hd_env_UNI_0052_TownBench_Snow</nodefullVisual>
 </root>

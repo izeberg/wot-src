@@ -147,10 +147,6 @@
 						<Vector4>2.000000 2.000000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
 						crashTileMap
 						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
 					</property>

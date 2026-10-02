@@ -19,8 +19,6 @@ package
       
       public static const CURSOR_OVERLAPCONTOUR_TOOLTIP:String = "#settings:cursor/overlapContour/tooltip";
       
-      public static const EVENTSETTINGDISABLED:String = "#settings:eventSettingDisabled";
-      
       public static const LANGUAGE_CODE:String = "#settings:LANGUAGE_CODE";
       
       public static const WINDOWTITLE:String = "#settings:windowTitle";
@@ -534,6 +532,10 @@ package
       public static const SOUNDS_MASTERVOLUMETOGGLE:String = "#settings:sounds/masterVolumeToggle";
       
       public static const SOUNDS_MASTERVOLUMETOGGLE_DESCRIPTION:String = "#settings:sounds/masterVolumeToggle/description";
+      
+      public static const SOUNDS_SYSTEMMIXERVOLUMEDISABLEDLINK:String = "#settings:sounds/systemMixerVolumeDisabledLink";
+      
+      public static const SOUNDS_SYSTEMMIXERVOLUMEDISABLEDLINK_DESCRIPTION:String = "#settings:sounds/systemMixerVolumeDisabledLink/description";
       
       public static const SOUNDS_BULBVOICES:String = "#settings:sounds/bulbVoices";
       

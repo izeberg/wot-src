@@ -77,7 +77,6 @@
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
 					<materialKind>0</materialKind>
 					<collisionFlags>0</collisionFlags>
-					<sortOrder>0</sortOrder>
 					<property>
 						colorIdMap
 						<Texture>vehicles/american/A175_OTAC_MT_58/OTAC_MT_58_guns_01_ID.dds</Texture>
@@ -120,6 +119,6 @@
 		<min>-0.563581 -0.328989 -0.015250</min>
 		<max>0.567071 0.339846 2.105402</max>
 	</boundingBox>
-	<geometrySize>43892</geometrySize>
+	<geometrySize>49204</geometrySize>
 	<minUVDensity>0.149225</minUVDensity>
 </root>

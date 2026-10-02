@@ -470,6 +470,10 @@ package net.wg.infrastructure.managers.impl
                      _loc17_ = this.makeFullPath(param1,_loc12_);
                      if(_loc18_.foundComponent == null || _loc18_.foundComponent.stage == null)
                      {
+                        if(_loc18_.foundComponent != null)
+                        {
+                           this.unregisterComponent(_loc18_.foundComponent,false);
+                        }
                         _loc19_ = _loc12_.match(CRITERIA_REG_EXP);
                         _loc20_ = true;
                         if(_loc19_ != null)
@@ -1126,22 +1130,25 @@ package net.wg.infrastructure.managers.impl
          return param1 + "." + param2;
       }
       
-      private function unregisterComponent(param1:DisplayObject) : void
+      private function unregisterComponent(param1:DisplayObject, param2:Boolean = true) : void
       {
-         var _loc2_:TutorialComponentPathVO = this._componentToVO[param1];
-         var _loc3_:Vector.<ITriggerWatcher> = this._compIdToWatchers[_loc2_.id];
-         if(_loc3_ && _loc3_.length > 0)
+         var _loc3_:TutorialComponentPathVO = this._componentToVO[param1];
+         var _loc4_:Vector.<ITriggerWatcher> = this._compIdToWatchers[_loc3_.id];
+         if(_loc4_ && _loc4_.length > 0)
          {
-            this.cleanupTriggerWatchers(_loc3_);
-            this._compIdToWatchers[_loc2_.id] = null;
+            this.cleanupTriggerWatchers(_loc4_);
+            this._compIdToWatchers[_loc3_.id] = null;
          }
-         if(_loc2_)
+         if(_loc3_)
          {
-            this.clearCriteriaHash(CriteriaUtils.componentPathVoPredicate(_loc2_));
-            this._buildersMap.removeBuildersForComponent(_loc2_.viewName,_loc2_.id);
-            _loc2_.foundComponent = null;
+            if(param2)
+            {
+               this.clearCriteriaHash(CriteriaUtils.componentPathVoPredicate(_loc3_));
+            }
+            this._buildersMap.removeBuildersForComponent(_loc3_.viewName,_loc3_.id);
+            _loc3_.foundComponent = null;
             delete this._componentToVO[param1];
-            onComponentDisposedS(_loc2_.id);
+            onComponentDisposedS(_loc3_.id);
          }
       }
       

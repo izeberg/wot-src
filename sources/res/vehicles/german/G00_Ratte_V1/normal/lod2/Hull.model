@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-7.502539 -1.813919 -18.038877</min>
+		<max>7.388116 7.779255 18.319700</max>
+	</visibilityBox>
+	<extent>
+		96.0
+		<!--BW_String-->
+	</extent>
+	<nodefullVisual>vehicles/german/G00_Ratte_V1/normal/lod2/Hull</nodefullVisual>
+</root>

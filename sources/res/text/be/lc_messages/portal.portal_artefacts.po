@@ -1,0 +1,116 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "ability/descr/usage"
+msgstr "Время перезарядки: %(cooldown)d с."
+
+msgid "berserk_portal/descr"
+msgstr ""
+"При активации на время увеличивает наносимый урон и существенно снижает "
+"получаемый урон."
+
+msgid "berserk_portal/name"
+msgstr "Адреналин"
+
+msgid "curse_shot_portal/descr"
+msgstr ""
+"Следующий выстрел при пробитии брони наносит машине противника сразу "
+"несколько критических повреждений."
+
+msgid "curse_shot_portal/name"
+msgstr "Замыкание"
+
+msgid "fire_shot_portal/descr"
+msgstr "Следующий выстрел при пробитии брони поджигает машину противника."
+
+msgid "fire_shot_portal/name"
+msgstr "Пирокинез"
+
+msgid "frozen_shot_portal/descr"
+msgstr ""
+"Следующий выстрел при пробитии брони снижает скорость движения и увеличивает"
+" время перезарядки орудия машины противника."
+
+msgid "frozen_shot_portal/name"
+msgstr "Заморозка"
+
+msgid "guided_missile/descr"
+msgstr ""
+"Выпускает снаряд в заданном направлении. При попадании в машину противника "
+"наносит фиксированный урон."
+
+msgid "guided_missile/name"
+msgstr "Шаровая молния"
+
+msgid "laugh_shot_portal/descr"
+msgstr ""
+"Следующий выстрел при пробитии брони значительно затруднит управление "
+"машиной противника и будет наносить периодический урон."
+
+msgid "laugh_shot_portal/name"
+msgstr "Ошибка кода"
+
+msgid "minefield_portal/descr"
+msgstr ""
+"При активации размещает в выбранной зоне минное поле. При детонации мины "
+"повреждают и обездвиживают технику противника. Минное поле не повреждает "
+"технику союзников."
+
+msgid "minefield_portal/longDescr"
+msgstr "?empty?"
+
+msgid "minefield_portal/name"
+msgstr "Минное поле"
+
+msgid "minefield_portal/shortDescr"
+msgstr "?empty?"
+
+msgid "reload_aura_portal/descr"
+msgstr ""
+"При активации создаёт зону вокруг машины, которая ускоряет перезарядку "
+"орудий союзной техники в течение некоторого времени."
+
+msgid "reload_aura_portal/name"
+msgstr "Огневой рубеж"
+
+msgid "sentry_gun/descr"
+msgstr ""
+"При активации размещает в выбранной зоне статичную турель, которая в течение"
+" некоторого времени имитирует настоящую машину и атакует противников. Турель"
+" имеет ограниченный запас прочности и может быть уничтожена."
+
+msgid "sentry_gun/name"
+msgstr "Турель"
+
+msgid "shield_portal/descr"
+msgstr ""
+"При активации делает вашу машину временно неуязвимой к оглушению и урону "
+"от снарядов противников."
+
+msgid "shield_portal/name"
+msgstr "Защитный барьер"
+
+msgid "trap_portal/descr"
+msgstr ""
+"При активации создаёт в выбранной зоне мощное поле, которое притягивает "
+"машины противника и наносит им периодический урон."
+
+msgid "trap_portal/name"
+msgstr "Магнит"
+
+msgid "vehicle_change_shot/descr"
+msgstr ""
+"Следующий выстрел при пробитии брони позволяет на время перехватить "
+"управление машиной противника. Можно привлечь внимание и сконцентрировать "
+"огонь противников на захваченной машине или принудительно подорвать её, "
+"прекратив перехват."
+
+msgid "vehicle_change_shot/name"
+msgstr "Перехват"

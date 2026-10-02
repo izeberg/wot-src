@@ -20,6 +20,12 @@ msgstr "AN/VRC-12"
 msgid "AN_VRC_12M"
 msgstr "AN/VRC-12"
 
+msgid "AN_VRC_12_Un20"
+msgstr "AN/VRC-12"
+
+msgid "AN_VRC_12_Un20_T"
+msgstr "AN/VRC-12 (T)"
+
 msgid "Chassis_Un01_Cromwell_VII"
 msgstr "A27L"
 
@@ -71,6 +77,12 @@ msgstr "SBM-44-2 T"
 msgid "Chassis_Un1017_RDT_62_T"
 msgstr "RDT-62 T"
 
+msgid "Chassis_Un1020_M_767_Vepar_T"
+msgstr "M-767 (T)"
+
+msgid "Chassis_Un1025_M_494_T_2"
+msgstr "M-494B (T)"
+
 msgid "Chassis_Un10_Sherman_Krupp_IDF"
 msgstr "VVSS T41"
 
@@ -116,8 +128,20 @@ msgstr "VT-49 vz. 48"
 msgid "Chassis_Un18_VT_49_2"
 msgstr "VT-49 vz. 49"
 
+msgid "Chassis_Un19_51M_Kossuth"
+msgstr "51M"
+
+msgid "Chassis_Un20_M_767_Vepar"
+msgstr "M-767"
+
 msgid "Chassis_Un24_Vz_68_2_Britva"
 msgstr "Vz. 68-2"
+
+msgid "Chassis_Un25_M_494"
+msgstr "M-494"
+
+msgid "Chassis_Un25_M_494_2"
+msgstr "M-494B"
 
 msgid "Chrysler_A57"
 msgstr "Chrysler A57"
@@ -154,6 +178,22 @@ msgstr ""
 "Continental\n"
 "AVDS-1790"
 
+msgid "Continental_AV_1790_2Y_Un25"
+msgstr "Continental AVDS-1790-2Y"
+
+msgid "Continental_AV_1790_2Y_Un25_T"
+msgstr "Continental AVDS-1790-2Y (T)"
+
+msgid "Continental_AV_1790_2Y_Un25_T_short"
+msgstr ""
+"Continental\n"
+"AVDS-1790-2Y (T)"
+
+msgid "Continental_AV_1790_2Y_Un25_short"
+msgstr ""
+"Continental\n"
+"AVDS-1790-2Y"
+
 msgid "Continental_AV_1790_6A"
 msgstr "Continental AV-1790-6A"
 
@@ -169,6 +209,14 @@ msgid "Continental_AV_1790_7B_short"
 msgstr ""
 "Continental\n"
 "AV-1790-7B"
+
+msgid "Continental_AV_1790_Y_Un25"
+msgstr "Continental AVDS-1790-Y"
+
+msgid "Continental_AV_1790_Y_Un25_short"
+msgstr ""
+"Continental\n"
+"AVDS-1790-Y"
 
 msgid "Cummins_V903_500"
 msgstr "Cummins V903"
@@ -203,6 +251,12 @@ msgstr "Lycoming O-435-T"
 msgid "Lycoming_O_435TA"
 msgstr "Lycoming O-435-TA"
 
+msgid "MTU_8V331_Un20"
+msgstr "MTU 8V331"
+
+msgid "MTU_8V331_Un20_T"
+msgstr "MTU 8V331 (T)"
+
 msgid "N19Mk1"
 msgstr "WS No. 19 Mk. I"
 
@@ -215,8 +269,14 @@ msgstr "WS No. 19 Mk. III"
 msgid "N22"
 msgstr "WS No. 22"
 
+msgid "N22_T"
+msgstr "WS No. 22 (T)"
+
 msgid "N9"
 msgstr "WS No. 9"
+
+msgid "NV_V_12_Un19"
+msgstr "NV-V-12"
 
 msgid "QF_20_pounder"
 msgstr "QF 20 pounder"
@@ -240,6 +300,9 @@ msgid "R_113_44_T"
 msgstr "R-113 T"
 
 msgid "R_113_68"
+msgstr "R-113"
+
+msgid "R_113_Un19"
 msgstr "R-113"
 
 msgid "R_123"
@@ -314,6 +377,9 @@ msgstr "M22D1"
 msgid "Turret_1_Un1017_RDT_62_T"
 msgstr "RDT-62 T"
 
+msgid "Turret_1_Un1020_M_767_Vepar_T"
+msgstr "M-767 (T)"
+
 msgid "Turret_1_Un10_Sherman_Krupp_IDF"
 msgstr "M3A1"
 
@@ -341,8 +407,17 @@ msgstr "RDT-62"
 msgid "Turret_1_Un18_VT_49"
 msgstr "VT-49"
 
+msgid "Turret_1_Un19_51M_Kossuth"
+msgstr "51M"
+
+msgid "Turret_1_Un20_M_767_Vepar"
+msgstr "M-767"
+
 msgid "Turret_1_Un24_Vz_68_2_Britva"
 msgstr "Vz. 68-2"
+
+msgid "Turret_1_Un25_M_494"
+msgstr "M-494"
 
 msgid "Turret_2_Un01_Cromwell_VII"
 msgstr "Mk VII"
@@ -365,6 +440,9 @@ msgstr "M22D1-M1"
 msgid "Turret_2_Un1015_SBM_44_T"
 msgstr "SBM-44-2 T"
 
+msgid "Turret_2_Un1025_M_494_T"
+msgstr "M-494B (T)"
+
 msgid "Turret_2_Un10_Sherman_Krupp_IDF"
 msgstr "M3A3"
 
@@ -382,6 +460,9 @@ msgstr "PT. 67"
 
 msgid "Turret_2_Un18_VT_49"
 msgstr "T-17"
+
+msgid "Turret_2_Un25_M_494"
+msgstr "M-494B"
 
 msgid "Un01_Cromwell_VII"
 msgstr "Cromwell VII"
@@ -611,6 +692,42 @@ msgstr "Řezačka (T)"
 msgid "Un1017_RDT_62_T_short_special"
 msgstr "?empty?"
 
+msgid "Un1020_M_767_Vepar_T"
+msgstr "M-767 Test"
+
+msgid "Un1020_M_767_Vepar_T_descr"
+msgstr ""
+" \n"
+"\n"
+"Характарыстыкі машыны могуць быць зменены без кампенсацыі."
+
+msgid "Un1020_M_767_Vepar_T_long_special"
+msgstr "?empty?"
+
+msgid "Un1020_M_767_Vepar_T_short"
+msgstr "M-767 (T)"
+
+msgid "Un1020_M_767_Vepar_T_short_special"
+msgstr "?empty?"
+
+msgid "Un1025_M_494_T"
+msgstr "M-494 Test"
+
+msgid "Un1025_M_494_T_descr"
+msgstr ""
+" \n"
+"\n"
+"Характарыстыкі машыны могуць быць зменены без кампенсацыі."
+
+msgid "Un1025_M_494_T_long_special"
+msgstr "?empty?"
+
+msgid "Un1025_M_494_T_short"
+msgstr "M-494 (T)"
+
+msgid "Un1025_M_494_T_short_special"
+msgstr "?empty?"
+
 msgid "Un10_Sherman_Krupp_IDF"
 msgstr "Sherman Krupp IDF"
 
@@ -788,6 +905,52 @@ msgstr ""
 msgid "Un18_VT_49_short"
 msgstr "VT-49"
 
+msgid "Un19_51M_Kossuth"
+msgstr "51M Kossuth"
+
+msgid "Un19_51M_Kossuth_descr"
+msgstr ""
+"После окончания Второй мировой войны молодая Венгерская Народная Республика была вынуждена восстанавливать инженерную школу, опираясь на опыт военного времени. Одним из первых проектов стал тяжёлый танк 51M Kossuth. Конструктивно он являлся развитием танка 44M Tas со значительным влиянием опыта эксплуатации советской техники. К тому же предполагалось, что часть компонентов будет освоена по лицензии венгерскими заводами, либо поставлена из СССР. Танк должен был получить советский дизельный двигатель В-12. Орудие калибра 100 мм предполагалось закупить у соседей — Чехословакии или Польши. Работу заряжающего намеревались облегчить и ускорить установкой досылателя и механизированной боеукладки. Ходовая часть основывалась на наработках военного времени: тележки с рессорами и сдвоенными катками. Однако венгерская промышленность не смогла освоить столь сложный танк, и работы по 51M Kossuth не продвинулись дальше эскизного проекта.\n"
+"\n"
+"Характеристики машины могут быть изменены без компенсации."
+
+msgid "Un19_51M_Kossuth_long_special"
+msgstr ""
+"Kossuth обладает рядом интересных особенностей, которые позволяют ему "
+"уверенно чувствовать себя на 1-й и 2-й линии. Первая — орудие с магазином "
+"дозарядки на 4 снаряда. Вторая — бронирование: лобовую проекцию пробить "
+"не просто, башня практически непробиваема, а корпус способен держать удар "
+"большинства снарядов техники того же уровня. Третья — хорошая для такой "
+"брони подвижность."
+
+msgid "Un19_51M_Kossuth_short"
+msgstr "Kossuth"
+
+msgid "Un19_51M_Kossuth_short_special"
+msgstr "Дозарядка на 4 снаряда, крепкое бронирование"
+
+msgid "Un20_M_767_Vepar"
+msgstr "M-767 Vepar"
+
+msgid "Un20_M_767_Vepar_descr"
+msgstr ""
+"В начале 1950-х годов в Югославии с целью сохранения военно-технического "
+"суверенитета была развёрнута национальная программа по разработке "
+"и производству различных видов вооружения и военной техники, включая танки. "
+"В числе разработок того периода был и проект тяжёлого танка M-767 Vepar. Эту"
+" боевую машину предполагалось вооружить 130-мм нарезной пушкой, разработка "
+"которой велась на основе советской полевой пушки М-46 с автоматом заряжания "
+"карусельного типа. Для её размещения была спроектирована ходовая часть "
+"оригинальной конструкции с опорными катками разного диаметра, "
+"но работоспособный карусельный автомат заряжания создать так и не смогли. "
+"Вместо него в нише башни решили разместить более простую механизированную "
+"боеукладку. В качестве двигателя был выбран немецкий дизель MTU. Однако "
+"в конечном итоге проект тяжёлого танка M-767 Vepar так и не дошёл до стадии "
+"опытного образца."
+
+msgid "Un20_M_767_Vepar_short"
+msgstr "M-767 Vepar"
+
 msgid "Un24_Vz_68_2_Britva"
 msgstr "Vz. 68-2 Britva"
 
@@ -811,6 +974,30 @@ msgstr "Britva"
 
 msgid "Un24_Vz_68_2_Britva_short_special"
 msgstr "Автоматические пушки, хорошая мобильность"
+
+msgid "Un25_M_494"
+msgstr "M-494"
+
+msgid "Un25_M_494_descr"
+msgstr ""
+"В 1951 году началось военно-техническое сотрудничество между Югославией "
+"и США, включавшее в себя в том числе поставку вооружений и военной техники "
+"американского производства. Это сотрудничество непосредственно повлияло "
+"на проектирование перспективных югославских танков, в конструкции которых "
+"стали использоваться американские комплектующие: пулемёты, прицелы, "
+"смотровые приборы и отчасти двигатели. Одним из таких перспективных танков, "
+"подразумевавших широкое использование американских компонентов, был проект "
+"тяжёлого танка M-494. По аналогии с американскими танками того периода, "
+"в конструкции корпуса M-494 предполагалось использование крупных литых "
+"броневых деталей. При создании танка приоритетом являлось сочетание высокой "
+"подвижности и относительно небольшой боевой массы. Танк планировалось "
+"вооружить американской нарезной 90-мм пушкой М-41 либо 105-мм пушкой М-57, "
+"а основой его силовой установки должен был стать карбюраторный двигатель "
+"Continental AV-1790-2Y. Однако по ряду причин проект танка М-494 так "
+"и остался на бумаге."
+
+msgid "Un25_M_494_short"
+msgstr "M-494"
 
 msgid "V-2-54"
 msgstr "В-2-54"
@@ -845,6 +1032,9 @@ msgstr "V-55"
 msgid "_100mm_3UBK4"
 msgstr "3УБК4"
 
+msgid "_100mm_51M_Un19"
+msgstr "100 mm 51M"
+
 msgid "_100mm_BR-412D"
 msgstr "УБР-412Д"
 
@@ -859,6 +1049,15 @@ msgstr "100 мм Д-54"
 
 msgid "_100mm_LB-1"
 msgstr "100 мм ЛБ-1"
+
+msgid "_100mm_Pg_412D_Un19"
+msgstr "Pg 412D"
+
+msgid "_100mm_Psg_3_8_Un19"
+msgstr "Psg 3-8"
+
+msgid "_100mm_Rg_412_Un19"
+msgstr "Rg 412"
 
 msgid "_100mm_UBR-412"
 msgstr "УБР-412"
@@ -880,6 +1079,12 @@ msgstr "APDS L28"
 
 msgid "_105mm_APDS_L28A3"
 msgstr "APDS L28A3"
+
+msgid "_105mm_APDS_L28_Un25"
+msgstr "APDS L28"
+
+msgid "_105mm_APDS_L28_Un25_T"
+msgstr "APDS L28 (T)"
 
 msgid "_105mm_APDS_M392"
 msgstr "АРDS M392"
@@ -905,6 +1110,12 @@ msgstr "HEAT L51"
 msgid "_105mm_HEAT_L51A3"
 msgstr "HEAT L51A3"
 
+msgid "_105mm_HEAT_L51_Un25"
+msgstr "HEAT L51"
+
+msgid "_105mm_HEAT_L51_Un25_T"
+msgstr "HEAT L51 (T)"
+
 msgid "_105mm_HEAT_M456"
 msgstr "HEAT M456"
 
@@ -916,6 +1127,12 @@ msgstr "HESH L35"
 
 msgid "_105mm_HESH_L35A3"
 msgstr "HESH L35A3"
+
+msgid "_105mm_HESH_L35_Un25"
+msgstr "HESH L35"
+
+msgid "_105mm_HESH_L35_Un25_T"
+msgstr "HESH L35 (T)"
 
 msgid "_105mm_HE_105_57"
 msgstr "НЕ 105-57"
@@ -941,6 +1158,12 @@ msgstr "105 mm L7"
 msgid "_105mm_L7A3"
 msgstr "105 mm L7A3"
 
+msgid "_105mm_M57_Un25"
+msgstr "105 mm M-57"
+
+msgid "_105mm_M57_Un25_T"
+msgstr "105 mm M-57 (T)"
+
 msgid "_105mm_M68"
 msgstr "105 mm M68"
 
@@ -955,6 +1178,30 @@ msgstr "120 mm Gun L11A1"
 
 msgid "_120mm_HESH_L31A7"
 msgstr "HESH L31A7"
+
+msgid "_130mm_BR_482P_Un20"
+msgstr "BR-482P"
+
+msgid "_130mm_BR_482P_Un20_T"
+msgstr "BR-482P (T)"
+
+msgid "_130mm_BR_482_Un20"
+msgstr "BR-482"
+
+msgid "_130mm_BR_482_Un20_T"
+msgstr "BR-482 (T)"
+
+msgid "_130mm_M58A_Un20"
+msgstr "130 mm M-58A"
+
+msgid "_130mm_M58A_Un20_T"
+msgstr "130 mm M-58A (T)"
+
+msgid "_130mm_OF_482M_Un20"
+msgstr "OF-482M"
+
+msgid "_130mm_OF_482M_Un20_T"
+msgstr "OF-482M (T)"
 
 msgid "_13_2mm_Balle_O"
 msgstr "Balle O"
@@ -1214,8 +1461,14 @@ msgstr "HE M42A2"
 msgid "_76mm_HVAP_M93"
 msgstr "HVAP M93"
 
+msgid "_90mm_APCBC_M82_Un25"
+msgstr "АРCBC М82"
+
 msgid "_90mm_APT_M318"
 msgstr "АР-T М318"
+
+msgid "_90mm_Gun_M41_Un25"
+msgstr "90 mm M41"
 
 msgid "_90mm_Gun_T119E1"
 msgstr "90mm Т119Е1"
@@ -1223,8 +1476,14 @@ msgstr "90mm Т119Е1"
 msgid "_90mm_HE_M71A1"
 msgstr "НЕ-Т М71А1"
 
+msgid "_90mm_HE_T91E3_Un25"
+msgstr "НЕ Т-91E3"
+
 msgid "_90mm_HVAP_M304"
 msgstr "HVAP M304"
+
+msgid "_90mm_HVAP_M332_Un25"
+msgstr "HVAP M332"
 
 msgid "_94mm_APCBC_MkI"
 msgstr "APCBC Mk. I"

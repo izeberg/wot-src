@@ -35,7 +35,7 @@
 		</forward>
 	</Fog>
 	<HDR>
-		<version>2</version>
+		<version>3</version>
 		<enable>true</enable>
 		<adaptationSpeed>100.000000</adaptationSpeed>
 		<bloom>
@@ -46,10 +46,10 @@
 			<dirtAmount>0.600000</dirtAmount>
 		</bloom>
 		<environment>
-			<sunlightLumMultiplier>3.000000</sunlightLumMultiplier>
+			<sunlightLumMultiplier>9.424778</sunlightLumMultiplier>
 			<ambientLumMultiplier>1.000000</ambientLumMultiplier>
-			<sunLumMultiplier>75.000000</sunLumMultiplier>
-			<skyLumMultiplier>12.000000</skyLumMultiplier>
+			<sunDiskLumMultiplier>975.000000</sunDiskLumMultiplier>
+			<skyExpositionOffset>0.000000</skyExpositionOffset>
 			<LDR2HDRsaturation>1.000000</LDR2HDRsaturation>
 			<LDR2HDRenableLumaMask>false</LDR2HDRenableLumaMask>
 		</environment>
@@ -59,18 +59,28 @@
 				<middleGray>0.190000</middleGray>
 				<whitePoint>5.000000</whitePoint>
 				<blackPoint>1.000000</blackPoint>
+				<contrast>1.000000</contrast>
 			</tonemapping>
 			<tonemapping>
 				<name>FilmicTM</name>
 				<middleGray>0.194354</middleGray>
 				<whitePoint>12.790000</whitePoint>
 				<blackPoint>3.500000</blackPoint>
+				<contrast>1.000000</contrast>
 			</tonemapping>
 			<tonemapping>
 				<name>LinearExpTM</name>
 				<middleGray>0.285637</middleGray>
 				<whitePoint>1.750000</whitePoint>
 				<blackPoint>1.300000</blackPoint>
+				<contrast>1.000000</contrast>
+			</tonemapping>
+			<tonemapping>
+				<name>GTTM</name>
+				<middleGray>0.220000</middleGray>
+				<whitePoint>0.400000</whitePoint>
+				<blackPoint>1.330000</blackPoint>
+				<contrast>1.000000</contrast>
 			</tonemapping>
 			<active>0</active>
 		</tonemappings>
@@ -95,10 +105,14 @@
 			<scale>0.150000</scale>
 		</filmgrain>
 		<camera>
+			<usePhysicalCamera>true</usePhysicalCamera>
 			<fnumberDown>12.000000</fnumberDown>
 			<fnumberUp>10.000000</fnumberUp>
 			<shutterSpeed>7.022368</shutterSpeed>
-			<keyValue>0.120000</keyValue>
+			<cameraKeyValue>0.120000</cameraKeyValue>
+			<lightLimit>1000.000000</lightLimit>
+			<darkLimit>0.001000</darkLimit>
+			<eyeKeyValue>0.200000</eyeKeyValue>
 		</camera>
 	</HDR>
 	<LensFlare>
@@ -128,7 +142,7 @@
 		<enable>true</enable>
 		<attenuationPower>40.000000</attenuationPower>
 		<decay>0.500000</decay>
-		<color>1.000000 0.674510 0.411765 10.120000</color>
+		<color>1.000000 0.674510 0.411765 0.778462</color>
 	</GodRays>
 	<SSAO>
 		<enableFromPreset>-1</enableFromPreset>
@@ -144,7 +158,7 @@
 		</influences>
 	</SSAO>
 	<Shadow>
-		<maxShadowsSplitCount>5</maxShadowsSplitCount>
+		<maxShadowsSplitCount>4</maxShadowsSplitCount>
 		<maxDynamicViewDistance>100.000000</maxDynamicViewDistance>
 		<lightSize>1.000000</lightSize>
 		<dynamicShadowsLightSize>13.000000</dynamicShadowsLightSize>
@@ -181,13 +195,31 @@
 		</layer1>
 	</cloudsShadow>
 	<PBS>
-		<ForwardSHMultiplier>1.050000</ForwardSHMultiplier>
+		<ForwardSHMultiplier>1.300000</ForwardSHMultiplier>
 		<flakesDensityThreshold>0.800000</flakesDensityThreshold>
 		<flakesUvScale>0.800000</flakesUvScale>
 		<flakesGloss>0.700000</flakesGloss>
 		<flakesSurfNormalNoiseWeight>0.100000</flakesSurfNormalNoiseWeight>
 		<flakesEnabled>false</flakesEnabled>
 		<useBC6PackingFormat>false</useBC6PackingFormat>
+		<mossDirectMult>1.000000</mossDirectMult>
+		<mossIndirectMult>1.000000</mossIndirectMult>
+		<mossSheenFactor>0.500000</mossSheenFactor>
+		<mossGrassSheenFactor>0.500000</mossGrassSheenFactor>
+		<mossAddColor>0.000000 0.000000 0.000000</mossAddColor>
+		<mossAddColorTint>0.000000</mossAddColorTint>
+		<mossIndirectBRDFFactor>0.800000</mossIndirectBRDFFactor>
+		<mossMinMaskMult>1.000000</mossMinMaskMult>
+		<mossMaxMaskMult>1.000000</mossMaxMaskMult>
+		<snowDirectMult>1.000000</snowDirectMult>
+		<snowScatterColor>0.000000 0.000000 0.000000</snowScatterColor>
+		<snowScatterColorTint>0.000000</snowScatterColorTint>
+		<snowIndirectMultShittySS>0.200000</snowIndirectMultShittySS>
+		<snowIndirectMultBase>1.000000</snowIndirectMultBase>
+		<snowIndirectBRDFFactor>0.800000</snowIndirectBRDFFactor>
+		<snowMinMaskMult>1.000000</snowMinMaskMult>
+		<snowMaxMaskMult>1.000000</snowMaxMaskMult>
+		<shadingModel>0</shadingModel>
 	</PBS>
 	<Weather>
 		<wind>
@@ -236,8 +268,8 @@
 		<sunScaleForward>0.170000</sunScaleForward>
 		<sunColorForward>203.000000 196.000000 178.000000</sunColorForward>
 		<sunTextureForward>system/maps/moon.dds</sunTextureForward>
-		<sunLightColorForward>0.592157 0.584314 0.462745</sunLightColorForward>
-		<ambientColorForward>0.603922 0.749020 0.866667</ambientColorForward>
+		<sunLightColorForward>0.400000 0.396078 0.309804</sunLightColorForward>
+		<ambientColorForward>0.839216 0.929412 1.000000</ambientColorForward>
 		<starttime>10.000000</starttime>
 	</day_night_cycle>
 	<dirt>
@@ -272,6 +304,8 @@
 		<waveMaskTexture>system/maps/wetness_waves.dds</waveMaskTexture>
 		<waveMaskUVScale>0.250000</waveMaskUVScale>
 		<waveMaskSpeed>0.140000</waveMaskSpeed>
+		<waterGlossMultiplier>1.000000</waterGlossMultiplier>
+		<wetCoastGlossMultiplier>1.000000</wetCoastGlossMultiplier>
 	</Wetness>
 	<DOF>
 		<enable>false</enable>
@@ -290,6 +324,8 @@
 		<PsIllumMultForward>1.000000</PsIllumMultForward>
 		<PsRibbonMultDeferred>1.000000</PsRibbonMultDeferred>
 		<PsRibbonMultForward>1.000000</PsRibbonMultForward>
+		<particleEnvironmentTintEnabledDeferred>false</particleEnvironmentTintEnabledDeferred>
+		<particleEnvironmentTintEnabledForward>false</particleEnvironmentTintEnabledForward>
 	</VFXLighting>
 	<WeatherDependentSettings>
 		<environment_dependent_emission>

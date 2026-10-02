@@ -152,7 +152,7 @@
 		</influences>
 	</SSAO>
 	<Shadow>
-		<maxShadowsSplitCount>5</maxShadowsSplitCount>
+		<maxShadowsSplitCount>4</maxShadowsSplitCount>
 		<maxDynamicViewDistance>100.000000</maxDynamicViewDistance>
 		<lightSize>100.000000</lightSize>
 		<dynamicShadowsLightSize>30.000000</dynamicShadowsLightSize>
@@ -189,7 +189,7 @@
 		</layer1>
 	</cloudsShadow>
 	<PBS>
-		<ForwardSHMultiplier>1.160000</ForwardSHMultiplier>
+		<ForwardSHMultiplier>1.300000</ForwardSHMultiplier>
 		<flakesDensityThreshold>0.800000</flakesDensityThreshold>
 		<flakesUvScale>0.800000</flakesUvScale>
 		<flakesGloss>0.890000</flakesGloss>
@@ -292,8 +292,8 @@
 		<sunScaleForward>0.600000</sunScaleForward>
 		<sunColorForward>189.000000 43.000000 11.000000</sunColorForward>
 		<sunTextureForward>system/maps/sun_small_sharp.dds</sunTextureForward>
-		<sunLightColorForward>0.580392 0.333333 0.266667</sunLightColorForward>
-		<ambientColorForward>0.764706 0.819608 0.909804</ambientColorForward>
+		<sunLightColorForward>0.466667 0.231373 0.160784</sunLightColorForward>
+		<ambientColorForward>0.878431 0.925490 1.000000</ambientColorForward>
 		<starttime>10.000000</starttime>
 	</day_night_cycle>
 	<VFXLighting>
@@ -305,6 +305,8 @@
 		<PsIllumMultForward>1.000000</PsIllumMultForward>
 		<PsRibbonMultDeferred>1.000000</PsRibbonMultDeferred>
 		<PsRibbonMultForward>1.000000</PsRibbonMultForward>
+		<particleEnvironmentTintEnabledDeferred>false</particleEnvironmentTintEnabledDeferred>
+		<particleEnvironmentTintEnabledForward>false</particleEnvironmentTintEnabledForward>
 	</VFXLighting>
 	<dirt>
 		<normal>vehicles/russian/Tank_detail/SnowNM.dds</normal>
