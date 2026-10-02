@@ -2567,7 +2567,10 @@
 						0.39
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>10</reloadTime>
+					<reloadTime>
+						9.5
+						<!--BW_String-->
+					</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
 							0.12
@@ -3350,12 +3353,12 @@
 		</detailed>
 	</physics>
 	<rocketAcceleration>
-		<deployTime>25</deployTime>
-		<reloadTime>20</reloadTime>
+		<deployTime>10</deployTime>
+		<reloadTime>15</reloadTime>
 		<reuseCount>8</reuseCount>
-		<duration>5</duration>
+		<duration>6</duration>
 		<impulse>
-			<magnitude>20</magnitude>
+			<magnitude>40</magnitude>
 			<applyPoint>
 				0.00 0.00 -1.2
 				<!--BW_String-->
@@ -3367,6 +3370,13 @@
 		</impulse>
 		<modifiers>
 			<mul>
+				<name>dynAttrs/ramming</name>
+				<value>
+					1.10
+					<!--BW_String-->
+				</value>
+			</mul>
+			<mul>
 				<name>dynAttrs/engine/power</name>
 				<value>
 					1.6
@@ -3376,7 +3386,7 @@
 			<mul>
 				<name>dynAttrs/vehicle/maxSpeed/forward</name>
 				<value>
-					1.12
+					1.15
 					<!--BW_String-->
 				</value>
 			</mul>
@@ -3390,7 +3400,7 @@
 			<mul>
 				<name>dynAttrs/vehicle/rotationSpeed</name>
 				<value>
-					0.30
+					0.50
 					<!--BW_String-->
 				</value>
 			</mul>
@@ -3406,7 +3416,7 @@
 			<mul>
 				<name>vehicleForwardMaxSpeed</name>
 				<value>
-					1.12
+					1.15
 					<!--BW_String-->
 				</value>
 			</mul>
@@ -3420,7 +3430,7 @@
 			<mul>
 				<name>vehicleAllGroundRotationSpeed</name>
 				<value>
-					0.30
+					0.50
 					<!--BW_String-->
 				</value>
 			</mul>

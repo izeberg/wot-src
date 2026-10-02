@@ -116,7 +116,7 @@ msgid "A104_M4A3E8A_short_special"
 msgstr "Выгодная гармата, прыстойная рухомасць"
 
 msgid "A106_M48A2_120"
-msgstr "M48A2/T54E2/T123E6"
+msgstr "M48A2"
 
 msgid "A106_M48A2_120_descr"
 msgstr ""
@@ -133,7 +133,7 @@ msgstr ""
 "неблагое лабавое браніраванне."
 
 msgid "A106_M48A2_120_short"
-msgstr "M48/T54E2"
+msgstr "M48A2"
 
 msgid "A106_M48A2_120_short_special"
 msgstr "Камфортныя ВВН, добрая бронепрабівальнасць"
@@ -2092,7 +2092,7 @@ msgid "Chassis_A104_M4A3E8A"
 msgstr "M4A3E8 Fury"
 
 msgid "Chassis_A106_M48A2_120"
-msgstr "M48A2/T54E2/T123E6"
+msgstr "M48A2"
 
 msgid "Chassis_A107_T1_HMC"
 msgstr "T1 HMC"
@@ -4648,7 +4648,7 @@ msgid "Turret_1_A104_M4A3E8A"
 msgstr "M4A3E8 Fury"
 
 msgid "Turret_1_A106_M48A2_120"
-msgstr "M48A2/T54E2/T123E6"
+msgstr "M48A2"
 
 msgid "Turret_1_A107_T1_HMC"
 msgstr "T1 HMC"
@@ -5554,6 +5554,9 @@ msgstr "APBC M358"
 
 msgid "_120mm_APBC_M358_A184"
 msgstr "APBC M358"
+
+msgid "_120mm_APCR_M358"
+msgstr "APCR M469"
 
 msgid "_120mm_APCR_T62"
 msgstr "APCR T62"

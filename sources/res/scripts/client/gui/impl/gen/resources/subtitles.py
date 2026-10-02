@@ -5,12 +5,12 @@ class Subtitles(DynAccessor):
 
     class _development(DynAccessor):
         __slots__ = ()
-        cosmic_intro_vp8_8_128 = DynAccessor(114007)
+        cosmic_intro_vp8_8_128 = DynAccessor(114008)
 
     development = _development()
 
     class _portal(DynAccessor):
         __slots__ = ()
-        portal_intro_vp8_8_128 = DynAccessor(114008)
+        portal_intro_vp8_8_128 = DynAccessor(114009)
 
     portal = _portal()
