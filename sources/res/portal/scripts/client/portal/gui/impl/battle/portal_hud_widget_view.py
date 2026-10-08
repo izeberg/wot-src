@@ -37,10 +37,14 @@ class PortalHudWidgetView(ViewImpl):
         self._updateModel()
 
     def _updateModel(self):
-        with self.viewModel.transaction() as (model):
+        vm = self.viewModel
+        if vm is None or not vm.isBound():
+            return
+        with vm.transaction() as (model):
             self.__fillState(model)
             self.__fillCamps(model)
             self.__fillBosses(model)
+        return
 
     def __fillState(self, model):
         period = BigWorld.player().arena.period
@@ -143,44 +147,64 @@ class PortalHudWidgetView(ViewImpl):
         self.__fillVehicleNameAndTag(model, bossInfo)
 
     def __onAllCampsInited(self, *args, **kwargs):
-        with self.viewModel.transaction() as (model):
+        vm = self.viewModel
+        if vm is None or not vm.isBound():
+            return
+        with vm.transaction() as (model):
             self.__fillCamps(model)
             self.__fillState(model)
+        return
 
     def __onCampUpdated(self, *args, **kwargs):
-        with self.viewModel.transaction() as (model):
+        vm = self.viewModel
+        if vm is None or not vm.isBound():
+            return
+        with vm.transaction() as (model):
             self.__fillCamps(model)
+        return
 
     def __onBattleStateChanged(self, *args, **kwargs):
-        with self.viewModel.transaction() as (model):
+        vm = self.viewModel
+        if vm is None or not vm.isBound():
+            return
+        with vm.transaction() as (model):
             self.__fillState(model)
+        return
 
     def __onBossInfoUpdated(self, *args, **kwargs):
-        with self.viewModel.transaction() as (model):
+        vm = self.viewModel
+        if vm is None or not vm.isBound():
+            return
+        with vm.transaction() as (model):
             self.__fillBosses(model)
             self.__fillState(model)
+        return
 
     def __onVehicleAdded(self, vehicleID):
         bossInfo = self.battleState.bossInfo
         if not bossInfo:
             return
-        boss = bossInfo[PortalBossesID.BOSS_ID]
-        if vehicleID != boss.vehicleID:
+        else:
+            boss = bossInfo[PortalBossesID.BOSS_ID]
+            if vehicleID != boss.vehicleID:
+                return
+            vm = self.viewModel
+            if vm is None or not vm.isBound():
+                return
+            with vm.transaction() as (model):
+                self.__fillVehicleNameAndTag(model, bossInfo)
             return
-        with self.viewModel.transaction() as (model):
-            self.__fillVehicleNameAndTag(model, bossInfo)
 
     def __onArenaPeriodChange(self, period, periodEndTime, periodLength, periodAdditionalInfo):
-        if self.viewModel is None:
+        vm = self.viewModel
+        if vm is None or not vm.isBound():
             return
-        else:
-            with self.viewModel.transaction() as (model):
-                if not self.__sessionProvider.isReplayPlaying:
-                    self.__fillState(model)
-            return
+        with vm.transaction() as (model):
+            if not self.__sessionProvider.isReplayPlaying:
+                self.__fillState(model)
+        return
 
     def _getEvents(self):
-        arena = BigWorld.player().arena
         events = [
          (
           PortalBattleStateComponent.onAllCampsInited, self.__onAllCampsInited),
@@ -194,6 +218,7 @@ class PortalHudWidgetView(ViewImpl):
           PortalBattleStateComponent.onBattleStateChanged, self.__onBattleStateChanged),
          (
           PlayerEvents.g_playerEvents.onArenaPeriodChange, self.__onArenaPeriodChange)]
-        if arena is not None:
-            events.append((arena.onVehicleAdded, self.__onVehicleAdded))
+        player = BigWorld.player()
+        if player is not None and player.arena is not None:
+            events.append((player.arena.onVehicleAdded, self.__onVehicleAdded))
         return tuple(events)

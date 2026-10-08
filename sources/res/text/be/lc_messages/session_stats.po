@@ -77,6 +77,9 @@ msgstr "У Залу славы"
 msgid "propertyInfo/current"
 msgstr "За сеанс"
 
+msgid "propertyInfo/delta"
+msgstr "Дельта"
+
 msgid "propertyInfo/dynamic"
 msgstr "Дынаміка"
 
@@ -139,8 +142,8 @@ msgstr ""
 
 msgid "propertyInfo/prop/descr/wtr"
 msgstr ""
-"MTR паводле сярэдніх паказчыкаў за ўвесь сеанс. Дэльта паказвае ўплыў "
-"бягучага сеанса гульні на параметр за ўвесь час."
+"MTR по средним показателям за всю сессию. Динамика показывает разницу между "
+"текущей и предыдущей игровыми сессиями."
 
 msgid "propertyInfo/prop/label/averageDamage"
 msgstr "Сярэднія пашкоджанні"

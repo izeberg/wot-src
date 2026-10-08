@@ -50,7 +50,7 @@
 				<id>Variable_5</id>
 				<params>
 					<param>
-						isPlayerActivated
+						isPlayerActivateAbility
 						<name>Variable Name</name>
 						<type>StringT</type>
 					</param>
@@ -417,19 +417,6 @@
 				</slots>
 			</block>
 			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_1</id>
-				<buddy>Variable_1</buddy>
-				<params>
-					<param>
-						BoolT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
 				<class>If</class>
 				<id>If_1</id>
 				<params/>
@@ -452,6 +439,19 @@
 						<const>\true\</const>
 					</slot>
 				</slots>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_1</id>
+				<buddy>Variable_1</buddy>
+				<params>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
 			</block>
 			<block>
 				<class>OnPlanPostAttached</class>
@@ -543,18 +543,6 @@
 				<slots/>
 			</block>
 			<block>
-				<class>Macro</class>
-				<id>Macro_1</id>
-				<params>
-					<param>
-						CheckIsPlayerActivateMechanics
-						<name>Macro Name</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
 				<class>ContextEventReceive</class>
 				<id>ContextEventReceive_1</id>
 				<params>
@@ -592,12 +580,6 @@
 			<block>
 				<class>If</class>
 				<id>If_2</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
-				<class>If</class>
-				<id>If_3</id>
 				<params/>
 				<slots/>
 			</block>
@@ -669,6 +651,19 @@
 				<slots/>
 			</block>
 			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_7</id>
+				<buddy>Variable_3</buddy>
+				<params>
+					<param>
+						GameObjectT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
 				<class>FindInArray</class>
 				<id>FindInArray_1</id>
 				<params>
@@ -686,32 +681,6 @@
 				</slots>
 			</block>
 			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_7</id>
-				<buddy>Variable_3</buddy>
-				<params>
-					<param>
-						GameObjectT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_9</id>
-				<buddy>Variable_5</buddy>
-				<params>
-					<param>
-						BoolT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
 				<class>CompareIntegers</class>
 				<id>CompareIntegers_1</id>
 				<params/>
@@ -723,19 +692,6 @@
 				</slots>
 			</block>
 			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_6</id>
-				<buddy>Variable_4</buddy>
-				<params>
-					<param>
-						IntT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
 				<class>ComponentMethod</class>
 				<id>ComponentMethod_2</id>
 				<params>
@@ -745,12 +701,6 @@
 						<type>StringT</type>
 					</param>
 				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>If</class>
-				<id>If_4</id>
-				<params/>
 				<slots/>
 			</block>
 			<block>
@@ -780,11 +730,11 @@
 			</block>
 			<block>
 				<class>GetVariable</class>
-				<id>GetVariable_10</id>
-				<buddy>Variable_5</buddy>
+				<id>GetVariable_6</id>
+				<buddy>Variable_4</buddy>
 				<params>
 					<param>
-						BoolT
+						IntT
 						<name>Variable Type</name>
 						<type>TypeT</type>
 					</param>
@@ -974,12 +924,6 @@
 				<output>object</output>
 			</connection>
 			<connection>
-				<from>If_2</from>
-				<input>input</input>
-				<to>Macro_1</to>
-				<output>true</output>
-			</connection>
-			<connection>
 				<from>ContextEventReceive_1</from>
 				<input>input</input>
 				<to>SetVariable_3</to>
@@ -1005,21 +949,9 @@
 			</connection>
 			<connection>
 				<from>ComponentMethod_1</from>
-				<input>input</input>
-				<to>If_3</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>GetVariable_9</from>
-				<input>value</input>
-				<to>If_3</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>If_3</from>
 				<input>in</input>
 				<to>ComponentMethod_3</to>
-				<output>true</output>
+				<output>out</output>
 			</connection>
 			<connection>
 				<from>GetVariable_5</from>
@@ -1046,10 +978,10 @@
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>Macro_1</from>
+				<from>If_2</from>
 				<input>input</input>
 				<to>Choice_1</to>
-				<output>out</output>
+				<output>true</output>
 			</connection>
 			<connection>
 				<from>GetVariable_6</from>
@@ -1095,21 +1027,9 @@
 			</connection>
 			<connection>
 				<from>ComponentMethod_2</from>
-				<input>input</input>
-				<to>If_4</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>GetVariable_10</from>
-				<input>value</input>
-				<to>If_4</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>If_4</from>
 				<input>in</input>
 				<to>ComponentMethod_4</to>
-				<output>true</output>
+				<output>out</output>
 			</connection>
 			<connection>
 				<from>GetVariable_8</from>
@@ -1118,137 +1038,7 @@
 				<output>value</output>
 			</connection>
 		</connections>
-		<macros>
-			<macro>
-				<name>CheckIsPlayerActivateMechanics</name>
-				<blocks>
-					<block>
-						<class>MacroInput</class>
-						<id>MacroInput_1</id>
-						<params>
-							<param>
-								input
-								<name>Input Name</name>
-								<type>StringT</type>
-							</param>
-							<param>
-								EventT
-								<name>Input Type</name>
-								<type>TypeT</type>
-							</param>
-							<param>
-								<name>Input Editor</name>
-								<type>StringT</type>
-							</param>
-						</params>
-						<slots/>
-					</block>
-					<block>
-						<class>MacroOutput</class>
-						<id>MacroOutput_1</id>
-						<params>
-							<param>
-								out
-								<name>Output Name</name>
-								<type>StringT</type>
-							</param>
-							<param>
-								EventT
-								<name>Output Type</name>
-								<type>TypeT</type>
-							</param>
-						</params>
-						<slots/>
-					</block>
-					<block>
-						<class>SetVariable</class>
-						<id>SetVariable_4</id>
-						<buddy>Variable_5</buddy>
-						<params>
-							<param>
-								BoolT
-								<name>Variable Type</name>
-								<type>TypeT</type>
-							</param>
-						</params>
-						<slots/>
-					</block>
-					<block>
-						<class>GetVehicleGameObject</class>
-						<id>GetVehicleGameObject_1</id>
-						<params/>
-						<slots/>
-					</block>
-					<block>
-						<class>GameObjectToVehicle</class>
-						<id>GameObjectToVehicle_1</id>
-						<params/>
-						<slots/>
-					</block>
-					<block>
-						<class>IsPlayerVehicle</class>
-						<id>IsPlayerVehicle_1</id>
-						<params/>
-						<slots/>
-					</block>
-					<block>
-						<class>ContextGetSelf</class>
-						<id>ContextGetSelf_2</id>
-						<params>
-							<param>
-								CGFGameObjectContext
-								<name>Context Name</name>
-								<type>StringT</type>
-							</param>
-							<param>
-								getSelf
-								<name>Member Name</name>
-								<type>StringT</type>
-							</param>
-						</params>
-						<slots/>
-					</block>
-				</blocks>
-				<connections>
-					<connection>
-						<from>SetVariable_4</from>
-						<input>out</input>
-						<to>MacroOutput_1</to>
-						<output>out</output>
-					</connection>
-					<connection>
-						<from>MacroInput_1</from>
-						<input>input</input>
-						<to>SetVariable_4</to>
-						<output>input</output>
-					</connection>
-					<connection>
-						<from>IsPlayerVehicle_1</from>
-						<input>value</input>
-						<to>SetVariable_4</to>
-						<output>res</output>
-					</connection>
-					<connection>
-						<from>ContextGetSelf_2</from>
-						<input>gameObject</input>
-						<to>GetVehicleGameObject_1</to>
-						<output>value</output>
-					</connection>
-					<connection>
-						<from>GetVehicleGameObject_1</from>
-						<input>gameObject</input>
-						<to>GameObjectToVehicle_1</to>
-						<output>vehicleObject</output>
-					</connection>
-					<connection>
-						<from>GameObjectToVehicle_1</from>
-						<input>vehicle</input>
-						<to>IsPlayerVehicle_1</to>
-						<output>vehicle</output>
-					</connection>
-				</connections>
-			</macro>
-		</macros>
+		<macros/>
 		<curves/>
 	</info>
 </root>

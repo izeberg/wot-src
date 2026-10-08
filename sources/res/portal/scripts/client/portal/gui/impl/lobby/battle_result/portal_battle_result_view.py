@@ -1,3 +1,4 @@
+import sys
 from constants import FINISH_REASON
 from debug_utils import LOG_WARNING
 from frameworks.wulf import ViewFlags, ViewSettings
@@ -171,7 +172,7 @@ class PortalBattleResultView(ViewImpl):
         resultList = model.getPlacesList()
         resultList.clear()
         leaderBoard = self.__data['leaderboard']
-        for playerInfo in sorted(leaderBoard, key=lambda p: p['place']):
+        for playerInfo in sorted(leaderBoard, key=lambda p: p['place'] or sys.maxint):
             rowModel = RowModel()
             rowModel.setPlace(playerInfo['place'])
             rowModel.setIsPersonal(playerInfo['isPersonal'])

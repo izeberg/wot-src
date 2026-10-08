@@ -20,6 +20,8 @@ class PortalBerserkComponent(DynamicScriptComponent):
         self.__handleEffects()
 
     def _onAvatarReady(self):
+        if not hasattr(self.entity, 'appearance') or not hasattr(self.entity, 'onAppearanceReady'):
+            return
         if self.entity.appearance and self.entity.appearance.isConstructed:
             self.__handleEffects()
         else:

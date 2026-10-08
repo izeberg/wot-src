@@ -336,7 +336,6 @@ class TOOLTIPS_CONSTANTS(object):
     SETTINGS_MINIMAP_CIRCLES_UI = 'ToolTipInblocksDefaultUI'
     BOOSTERS_BOOSTER_INFO_UI = 'ToolTipInblocksDefaultUI'
     VEHICLE_PARAMETERS_UI = 'ToolTipInblocksDefaultUI'
-    VEHICLE_PREVIEW_CREW_MEMBER_UI = 'ToolTipInblocksDefaultUI'
     VEH_CMP_CUSTOMIZATION = 'vehCmpCustomiztion'
     VEH_CMP_CUSTOMIZATION_UI = 'ToolTipInblocksDefaultUI'
     SETTINGS_KEY_SWITCH_MODE = 'SettingKeySwitchMode'

@@ -3263,22 +3263,3 @@ class DamageModifierAbilityEquipment(BaseAbilityEquipment):
         self.maxDamageIncreasePerShot = _xml.readPositiveFloat(xmlCtx, section, 'maxDamageIncreasePerShot', component_constants.ZERO_FLOAT)
         self.damageFirstIncrease = _xml.readPositiveFloat(xmlCtx, section, 'damageFirstIncrease', component_constants.ZERO_FLOAT)
         self.addDuration = _xml.readPositiveFloat(xmlCtx, section, 'addDuration', component_constants.ZERO_FLOAT)
-
-
-class SureShotAbilityEquipment(BaseAbilityEquipment):
-    __slots__ = ('impulse', )
-
-    def __init__(self):
-        super(SureShotAbilityEquipment, self).__init__()
-        self.impulse = None
-        return
-
-    def _readConfig(self, xmlCtx, section):
-        super(SureShotAbilityEquipment, self)._readConfig(xmlCtx, section)
-        if section.has_key('impulse'):
-            self.impulse = self._readImpulse(xmlCtx, section['impulse'])
-
-    def _readImpulse(self, xmlCtx, section):
-        return {'magnitude': _xml.readNonNegativeFloat(xmlCtx, section, 'magnitude'), 
-           'applyPoint': _xml.readVector3(xmlCtx, section, 'applyPoint', component_constants.ZERO_VECTOR3), 
-           'duration': _xml.readNonNegativeFloat(xmlCtx, section, 'duration')}

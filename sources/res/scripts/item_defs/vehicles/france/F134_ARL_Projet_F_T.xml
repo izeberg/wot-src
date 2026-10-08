@@ -3192,12 +3192,13 @@
 						0.144
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
-					<reloadTime>
-						13.5
-						<!--BW_String-->
-					</reloadTime>
+					<reloadTime>32</reloadTime>
+					<clip>
+						<count>3</count>
+						<rate>15</rate>
+					</clip>
 					<aimingTime>
-						2.4
+						2.5
 						<!--BW_String-->
 					</aimingTime>
 					<shotDispersionFactors>
@@ -3215,7 +3216,7 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<shotDispersionRadius>
-						0.35
+						0.4
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<customizationSlots>

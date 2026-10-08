@@ -264,7 +264,7 @@ class DailyQuestsWidgetView(ViewImpl, ClientMainWindowStateWatcher):
         expectedEarned = 1 if shouldIndicateComplete else 0
         expectedCurrentProgress = 1 if startAnimation else 0
         tabTexts = R.strings.quests.serialEnter.tab
-        isLastStageCompleted = currentStep >= finalStep
+        isLastStageCompleted = currentStep > finalStep
         if isLastStageCompleted:
             title = backport.text(tabTexts.final.title())
             description = backport.text(tabTexts.final.description())

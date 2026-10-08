@@ -16,6 +16,14 @@ class VehicleNodeEffect(DynamicScriptComponent):
         if self.nodeID:
             self.__loadPrefab()
 
+    def onDestroy(self):
+        arena = BigWorld.player().arena
+        if arena is not None:
+            arena.onVehicleKilled -= self.__onArenaVehicleKilled
+        self.__go = None
+        super(VehicleNodeEffect, self).onDestroy()
+        return
+
     def _onAvatarReady(self, *args):
         arena = BigWorld.player().arena
         if arena is not None:
@@ -45,10 +53,13 @@ class VehicleNodeEffect(DynamicScriptComponent):
             return
         else:
             duration = max([ animator.getDuration() for animator in animators ])
-            self.__go.createComponent(RemoveGoDelayedComponent, duration)
+            if self.__go.findComponentByType(RemoveGoDelayedComponent) is None:
+                self.__go.createComponent(RemoveGoDelayedComponent, duration)
             return
 
     def __getNodeAnimators(self, nodeID):
+        if self.entity.isDestroyed:
+            return []
         hm = CGF.HierarchyManager(self.spaceID)
         animators = []
         for effectGO in hm.getChildren(self.__go):

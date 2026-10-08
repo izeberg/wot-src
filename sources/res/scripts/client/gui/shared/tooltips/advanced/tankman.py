@@ -1,7 +1,7 @@
 from gui.shared.tooltips.advanced import BaseAdvancedTooltip
 from gui.shared.tooltips.advanced.data.advanced_constants import TANKMAN_MOVIES
 from gui.shared.tooltips.advanced.data.default_alt_key_data import AltKeyData
-from items import ITEM_TYPES
+from gui.Scaleform.locale.ITEM_TYPES import ITEM_TYPES
 
 class TankmanPreviewTooltipAdvanced(BaseAdvancedTooltip):
 

@@ -39,8 +39,6 @@ package
       
       public static const MAPS_ICONS_CUSTOMIZATION_TOOLBAR_EXTENDED_BG:String = "../maps/icons/customization/toolbar/extended/bg.png";
       
-      public static const MAPS_ICONS_DAILY_SESSIONPROGRESSREWARDSCREEN_BG:String = "../maps/icons/daily/sessionProgressRewardScreen/bg.png";
-      
       public static const MAPS_ICONS_DEDICATION_BG:String = "../maps/icons/dedication/bg.png";
       
       public static const MAPS_ICONS_DEMOUNTKIT_BG:String = "../maps/icons/demountKit/bg.png";

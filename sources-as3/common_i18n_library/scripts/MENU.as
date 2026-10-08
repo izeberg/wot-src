@@ -1335,11 +1335,7 @@ package
       
       public static const EXTRAPARAMS_NAME_VEHICLEGUNDAMAGE:String = "#menu:extraParams/name/vehicleGunDamage";
       
-      public static const CUSTOM_SHOT_PASSION_OLD_EXTRAPARAMS_NAME_VEHICLEGUNDAMAGE:String = "#menu:custom/shot_passion_old/extraParams/name/vehicleGunDamage";
-      
-      public static const CUSTOM_SHOT_PASSION_EXTRAPARAMS_NAME_VEHICLEGUNRELOADTIME:String = "#menu:custom/shot_passion/extraParams/name/vehicleGunReloadTime";
-      
-      public static const SHOT_PASSION_EXTRAPARAMS_NAME_VEHICLEGUNRELOADTIME:String = "#menu:shot_passion/extraParams/name/vehicleGunReloadTime";
+      public static const CUSTOM_SHOT_PASSION_EXTRAPARAMS_NAME_VEHICLEGUNDAMAGE:String = "#menu:custom/shot_passion/extraParams/name/vehicleGunDamage";
       
       public static const EXTRAPARAMS_NAME_VEHICLEGUNSHOTDISPERSIONCHASSISMOVEMENT:String = "#menu:extraParams/name/vehicleGunShotDispersionChassisMovement";
       
@@ -1382,22 +1378,6 @@ package
       public static const EXTRAPARAMS_NAME_CHARGETIMEBONUS:String = "#menu:extraParams/name/chargeTimeBonus";
       
       public static const EXTRAPARAMS_NAME_SPEEDLIMITSBONUS:String = "#menu:extraParams/name/speedLimitsBonus";
-      
-      public static const EXTRAPARAMS_NAME_EXTRAABILITYPARAMCHASSISROTATIONSPEED:String = "#menu:extraParams/name/extraAbilityParamChassisRotationSpeed";
-      
-      public static const EXTRAPARAMS_NAME_EXTRAABILITYPARAMTURRETROTATIONSPEED:String = "#menu:extraParams/name/extraAbilityParamTurretRotationSpeed";
-      
-      public static const EXTRAPARAMS_NAME_VEHICLETURRETROTATIONSPEED:String = "#menu:extraParams/name/vehicleTurretRotationSpeed";
-      
-      public static const EXTRAPARAMS_NAME_EXTRAABILITYPARAMGUNCLIPCOOLDOWN:String = "#menu:extraParams/name/extraAbilityParamGunClipCooldown";
-      
-      public static const EXTRAPARAMS_NAME_EXTRAABILITYPARAMSPEEDBONUS:String = "#menu:extraParams/name/extraAbilityParamSpeedBonus";
-      
-      public static const EXTRAPARAMS_NAME_EXTRAABILITYPARAMSHELLDAMAGE:String = "#menu:extraParams/name/extraAbilityParamShellDamage";
-      
-      public static const EXTRAPARAMS_NAME_EXTRAABILITYPARAMSHELLPIERCING:String = "#menu:extraParams/name/extraAbilityParamShellPiercing";
-      
-      public static const EXTRAPARAMS_NAME_EXTRAABILITYPARAMSHELLSPEED:String = "#menu:extraParams/name/extraAbilityParamShellSpeed";
       
       public static const DESCRIPTIONS_VEHICLE:String = "#menu:descriptions/vehicle";
       

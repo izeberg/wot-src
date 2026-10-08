@@ -9823,13 +9823,21 @@ package
       
       public static const MAPS_ICONS_DAILY_QUESTS_TABS_WARNING:String = "../maps/icons/daily/quests/tabs/warning.png";
       
-      public static const MAPS_ICONS_DAILY_SESSIONPROGRESSREWARDSCREEN_BG:String = "../maps/icons/daily/sessionProgressRewardScreen/bg.png";
+      public static const MAPS_ICONS_DAILY_SESSIONPROGRESSREWARDSCREEN_BG_LARGE:String = "../maps/icons/daily/sessionProgressRewardScreen/bg_large.png";
       
-      public static const MAPS_ICONS_DAILY_SESSIONPROGRESSREWARDSCREEN_RADIAL_LINES:String = "../maps/icons/daily/sessionProgressRewardScreen/radial_lines.png";
+      public static const MAPS_ICONS_DAILY_SESSIONPROGRESSREWARDSCREEN_BG_MEDIUM:String = "../maps/icons/daily/sessionProgressRewardScreen/bg_medium.png";
       
-      public static const MAPS_ICONS_DAILY_SESSIONPROGRESSREWARDSCREEN_RAYS:String = "../maps/icons/daily/sessionProgressRewardScreen/rays.png";
+      public static const MAPS_ICONS_DAILY_SESSIONPROGRESSREWARDSCREEN_BG_SMALL:String = "../maps/icons/daily/sessionProgressRewardScreen/bg_small.png";
       
-      public static const MAPS_ICONS_DAILY_SESSIONPROGRESSREWARDSCREEN_RIBBON_GOLD:String = "../maps/icons/daily/sessionProgressRewardScreen/ribbon_gold.png";
+      public static const MAPS_ICONS_DAILY_SESSIONPROGRESSREWARDSCREEN_RAYS_MEDIUM:String = "../maps/icons/daily/sessionProgressRewardScreen/rays_medium.png";
+      
+      public static const MAPS_ICONS_DAILY_SESSIONPROGRESSREWARDSCREEN_RAYS_SMALL:String = "../maps/icons/daily/sessionProgressRewardScreen/rays_small.png";
+      
+      public static const MAPS_ICONS_DAILY_SESSIONPROGRESSREWARDSCREEN_RIBBON_GOLD_LARGE:String = "../maps/icons/daily/sessionProgressRewardScreen/ribbon_gold_large.png";
+      
+      public static const MAPS_ICONS_DAILY_SESSIONPROGRESSREWARDSCREEN_RIBBON_GOLD_MEDIUM:String = "../maps/icons/daily/sessionProgressRewardScreen/ribbon_gold_medium.png";
+      
+      public static const MAPS_ICONS_DAILY_SESSIONPROGRESSREWARDSCREEN_RIBBON_GOLD_SMALL:String = "../maps/icons/daily/sessionProgressRewardScreen/ribbon_gold_small.png";
       
       public static const MAPS_ICONS_DAILY_SESSIONPROGRESSREWARDSCREEN_TOOLTIP_COMPENSATIONARROW:String = "../maps/icons/daily/sessionProgressRewardScreen/tooltip/compensationArrow.png";
       
@@ -26523,6 +26531,8 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_BUMBLEBEE_COIN:String = "../maps/icons/quests/bonuses/s296x222/bumblebee_coin.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_CAMOUFLAGE:String = "../maps/icons/quests/bonuses/s296x222/camouflage.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_CAMOUFLAGEBATTLEBOOSTER:String = "../maps/icons/quests/bonuses/s296x222/camouflageBattleBooster.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_CAMOUFLAGENET:String = "../maps/icons/quests/bonuses/s296x222/camouflageNet.png";
@@ -31541,25 +31551,15 @@ package
       
       public static const MAPS_ICONS_ROLESKILLS_48X48_JUGGERNAUT:String = "../maps/icons/roleSkills/48x48/juggernaut.png";
       
-      public static const MAPS_ICONS_ROLESKILLS_48X48_JUGGERNAUT_OLD:String = "../maps/icons/roleSkills/48x48/juggernaut_old.png";
-      
       public static const MAPS_ICONS_ROLESKILLS_48X48_NOT_FOUND_ARTEFACT:String = "../maps/icons/roleSkills/48x48/not_found_artefact.png";
       
       public static const MAPS_ICONS_ROLESKILLS_48X48_RECOIL_RECUPERATOR:String = "../maps/icons/roleSkills/48x48/recoil_recuperator.png";
       
-      public static const MAPS_ICONS_ROLESKILLS_48X48_RECOIL_RECUPERATOR_OLD:String = "../maps/icons/roleSkills/48x48/recoil_recuperator_old.png";
-      
       public static const MAPS_ICONS_ROLESKILLS_48X48_SHOT_PASSION:String = "../maps/icons/roleSkills/48x48/shot_passion.png";
-      
-      public static const MAPS_ICONS_ROLESKILLS_48X48_SHOT_PASSION_OLD:String = "../maps/icons/roleSkills/48x48/shot_passion_old.png";
       
       public static const MAPS_ICONS_ROLESKILLS_48X48_SURE_SHOT:String = "../maps/icons/roleSkills/48x48/sure_shot.png";
       
-      public static const MAPS_ICONS_ROLESKILLS_48X48_SURE_SHOT_OLD:String = "../maps/icons/roleSkills/48x48/sure_shot_old.png";
-      
       public static const MAPS_ICONS_ROLESKILLS_48X48_TANK_RAM:String = "../maps/icons/roleSkills/48x48/tank_ram.png";
-      
-      public static const MAPS_ICONS_ROLESKILLS_48X48_TANK_RAM_OLD:String = "../maps/icons/roleSkills/48x48/tank_ram_old.png";
       
       public static const MAPS_ICONS_ROLESKILLS_80X80_COMP7_AGGRESSIVE_DETECTION:String = "../maps/icons/roleSkills/80x80/comp7_aggressive_detection.png";
       

@@ -673,8 +673,6 @@ package net.wg.data.constants.generated
       
       public static const VEHICLE_PARAMETERS_UI:String = "ToolTipInblocksDefaultUI";
       
-      public static const VEHICLE_PREVIEW_CREW_MEMBER_UI:String = "ToolTipInblocksDefaultUI";
-      
       public static const VEH_CMP_CUSTOMIZATION:String = "vehCmpCustomiztion";
       
       public static const VEH_CMP_CUSTOMIZATION_UI:String = "ToolTipInblocksDefaultUI";

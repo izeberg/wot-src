@@ -491,6 +491,18 @@
 				<mod>treads_type_pc</mod>
 				<modAUX>ev_portal_surfaces_PC_lava</modAUX>
 			</event>
+			<event>
+				<name>ev_portal_gameplay_teleport_cooldown_idle</name>
+				<mod>ev_portal_gameplay_silence</mod>
+			</event>
+			<event>
+				<name>ev_portal_gameplay_teleport_ready_idle</name>
+				<mod>ev_portal_gameplay_silence</mod>
+			</event>
+			<event>
+				<name>ev_portal_gameplay_teleport_in_PC</name>
+				<mod>ev_portal_gameplay_silence</mod>
+			</event>
 		</events>
 	</soundRemapping>
 	<wwambientSound>ev_portal_amb_map_wind</wwambientSound>

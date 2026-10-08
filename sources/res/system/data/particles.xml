@@ -62,6 +62,9 @@
 		<fn_effect_bin>particles/content_forward/PFX/Tank/customization/R77_KV2_3Dst_02/R77_KV2_bees_idle.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/tank/abilities/g182_mausekonig/g182_fire_burst_exhaust.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Tank/abilities/G182_Mausekonig/G182_fire_burst_exhaust.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/tank/abilities/f134_arl_projet_f/f134_burst_exhaust.eff</fn_effect_bin>
+		<fn_effect_bin>particles/tank/abilities/f134_arl_projet_f/f134_dirt.eff</fn_effect_bin>
+		<fn_effect_bin>particles/tank/abilities/f134_arl_projet_f/f134_ram_sparks.eff</fn_effect_bin>
 		<fn_effect_bin>particles/tank/abilities/gb140_champion/gb140_steam.eff</fn_effect_bin>
 		<fn_effect_bin>particles/tank/abilities/sleeve/sleeve_emission.eff</fn_effect_bin>
 		<fn_effect_bin>particles/tank/shots/shot_autoshoot_lm.eff</fn_effect_bin>
@@ -1104,6 +1107,9 @@
 		<fn_effect_bin>particles/content_forward/pfx/strike_eff/artillerystrike_snowhit.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/strike_eff/artillerystrike_stonehit.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/strike_eff/artillerystrike_waterhit.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/tank/abilities/f134_arl_projet_f/f134_burst_exhaust.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/tank/abilities/f134_arl_projet_f/f134_dirt.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/tank/abilities/f134_arl_projet_f/f134_ram_sparks.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/tank/abilities/gb140_champion/gb140_steam.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/tank/abilities/sleeve_emission.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/tank/armor_parts_smoke_01.vfx</fn_effect_bin>
@@ -3288,6 +3294,9 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/customization/R77_KV2_3Dst_02/R77_KV2_bees_out.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/customization/R77_KV2_3Dst_02/R77_KV2_bees_in.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/customization/R77_KV2_3Dst_02/R77_KV2_bees_idle.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/tank/abilities/f134_arl_projet_f/f134_burst_exhaust.eff</fn_effect_bin>
+		<fn_effect_bin>particles/tank/abilities/f134_arl_projet_f/f134_dirt.eff</fn_effect_bin>
+		<fn_effect_bin>particles/tank/abilities/f134_arl_projet_f/f134_ram_sparks.eff</fn_effect_bin>
 		<fn_effect_bin>particles/tank/abilities/gb140_champion/gb140_steam.eff</fn_effect_bin>
 		<fn_effect_bin>particles/tank/abilities/sleeve/sleeve_emission.eff</fn_effect_bin>
 		<fn_effect_bin>particles/tank/shots/shot_autoshoot_lm.eff</fn_effect_bin>
@@ -4448,6 +4457,9 @@
 		<fn_effect_bin>particles/content_deferred/pfx/strike_eff/artillerystrike_waterhit.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/strike_eff/artillerystrike_waterhit_add.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/strike_eff/artillerystrike_waterhit_snp.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/tank/abilities/f134_arl_projet_f/f134_burst_exhaust.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/tank/abilities/f134_arl_projet_f/f134_dirt.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/tank/abilities/f134_arl_projet_f/f134_ram_sparks.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/tank/abilities/gb140_champion/gb140_steam.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/tank/abilities/sleeve_emission.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/tank/armor_parts_smoke_01.vfx</fn_effect_bin>

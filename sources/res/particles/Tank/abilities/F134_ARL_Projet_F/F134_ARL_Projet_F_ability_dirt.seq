@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>20.000002</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Dirt</name>
+		<type>particle</type>
+		<resource>particles/Tank/abilities/F134_ARL_Projet_F/f134_dirt.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 -1.617016 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>-0.068885</inTangent>
+				<outTangent>-0.068885</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.300000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.074564</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>65795</tangentMode>
+			</frame>
+			<frame>
+				<startTime>19.833334</startTime>
+				<value>1.000000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>-0.034390</outTangent>
+				<tangentMode>66305</tangentMode>
+			</frame>
+			<frame>
+				<startTime>20.000002</startTime>
+				<value>-0.001536</value>
+				<inTangent>-6.009170</inTangent>
+				<outTangent>-3.333334</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

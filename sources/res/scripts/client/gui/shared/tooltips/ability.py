@@ -3,9 +3,6 @@ from account_helpers.AccountSettings import SHOW_ABILITY_ADVANCE_ANIM
 from frameworks.wulf import ViewSettings, ViewModel
 from gui.impl.backport.backport_tooltip import DecoratedTooltipWindow
 from gui.Scaleform.genConsts.TOOLTIPS_CONSTANTS import TOOLTIPS_CONSTANTS
-from gui.impl.gen.view_models.views.lobby.tank_setup.tooltips.abilities.ability_tooltip_extra_param_item_model import AbilityTooltipExtraParamItemModel
-from gui.shared.items_parameters.formatters import formatParameter
-from gui.shared.items_parameters.params_helper import UNIQUE_FORMATTING_PARAMS, PARAM_TO_UNIQ_KPI_TITLE_FORMATTER
 from gui.shared.tooltips import ToolTipBaseData
 from items.vehicles import g_cache
 from gui.impl.gen import R
@@ -44,12 +41,7 @@ class AbilitySkillTooltip(ViewImpl):
             vm.setLightAdditional(AccountSettings.getSettings(SHOW_ABILITY_ADVANCE_ANIM))
             bonusesArray = vm.bonuses.getItems()
             bonusesArray.clear()
-            extraParamsArray = vm.getExtraParams()
-            extraParamsArray.clear()
             for kpi in self._ability.kpi:
-                if kpi.name in UNIQUE_FORMATTING_PARAMS:
-                    if self.__addExtraParam(extraParamsArray, kpi):
-                        continue
                 value = BonusValueModel()
                 value.setValue(kpi.value)
                 value.setValueKey(kpi.name)
@@ -63,22 +55,6 @@ class AbilitySkillTooltip(ViewImpl):
                 bonusesArray.addViewModel(bonusModel)
 
             bonusesArray.invalidate()
-            extraParamsArray.invalidate()
-
-    def __addExtraParam(self, extraParamsArray, kpi):
-        formatter = PARAM_TO_UNIQ_KPI_TITLE_FORMATTER.get(kpi.name)
-        if formatter is not None:
-            description = formatter(kpi)
-            value = formatParameter(kpi.name, (kpi.value, kpi.specValue))
-            value = '+' + value if kpi.value > 0 else value
-            item = AbilityTooltipExtraParamItemModel()
-            item.setParamKey(kpi.name)
-            item.setValue(value)
-            item.setDescription(description)
-            extraParamsArray.addViewModel(item)
-            return True
-        else:
-            return False
 
 
 class AbilitySkillTooltipData(ToolTipBaseData):

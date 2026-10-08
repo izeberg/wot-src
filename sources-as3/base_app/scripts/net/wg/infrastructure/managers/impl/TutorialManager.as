@@ -1132,15 +1132,16 @@ package net.wg.infrastructure.managers.impl
       
       private function unregisterComponent(param1:DisplayObject, param2:Boolean = true) : void
       {
+         var _loc4_:Vector.<ITriggerWatcher> = null;
          var _loc3_:TutorialComponentPathVO = this._componentToVO[param1];
-         var _loc4_:Vector.<ITriggerWatcher> = this._compIdToWatchers[_loc3_.id];
-         if(_loc4_ && _loc4_.length > 0)
-         {
-            this.cleanupTriggerWatchers(_loc4_);
-            this._compIdToWatchers[_loc3_.id] = null;
-         }
          if(_loc3_)
          {
+            _loc4_ = this._compIdToWatchers[_loc3_.id];
+            if(_loc4_ && _loc4_.length > 0)
+            {
+               this.cleanupTriggerWatchers(_loc4_);
+               this._compIdToWatchers[_loc3_.id] = null;
+            }
             if(param2)
             {
                this.clearCriteriaHash(CriteriaUtils.componentPathVoPredicate(_loc3_));

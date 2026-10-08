@@ -1974,7 +1974,6 @@
 				<armor>350</armor>
 				<devices>90</devices>
 			</damage>
-			<useFactorAfterCalcDamage/>
 		</armorSpalls>
 	</_138mm_OE_Mle1891>
 	<_138mm_OE_Mle1932_F144>
@@ -2693,7 +2692,7 @@
 		<isTracer>true</isTracer>
 		<effects>smallArmorPiercing_turel_portal26</effects>
 		<damage>
-			<armor>500</armor>
+			<armor>200</armor>
 			<devices>64</devices>
 		</damage>
 	</_47mm_Odr_mle._1892_portal>

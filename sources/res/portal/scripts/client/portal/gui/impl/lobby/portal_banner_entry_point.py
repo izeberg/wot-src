@@ -24,6 +24,7 @@ class PortalBannerEntryPointView(ViewImpl, Notifiable):
 
     def __init__(self, flags=ViewFlags.VIEW):
         settings = ViewSettings(layoutID=R.views.portal.lobby.PortalBannerEntryPoint(), flags=flags, model=PortalBannerEntryPointModel())
+        self.__callbackDelayer = CallbackDelayer()
         self._em = EventManager()
         self.onAnimationFinished = Event(self._em)
         super(PortalBannerEntryPointView, self).__init__(settings)
@@ -57,7 +58,6 @@ class PortalBannerEntryPointView(ViewImpl, Notifiable):
 
     def _onLoaded(self, *args, **kwargs):
         super(PortalBannerEntryPointView, self)._onLoaded(*args, **kwargs)
-        self.__callbackDelayer = CallbackDelayer()
         self.__callbackDelayer.delayCallback(self._BANNER_WAIT_TICK, self.__setBannerReady)
 
     def __onStatusUpdated(self, _):

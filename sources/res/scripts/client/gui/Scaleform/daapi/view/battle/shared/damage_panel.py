@@ -46,7 +46,7 @@ _STATE_HANDLERS = {VEHICLE_VIEW_STATE.HEALTH: '_updateHealthFromServer',
    VEHICLE_VIEW_STATE.AOE_INSPIRE: '_updateAoeInspire', 
    VEHICLE_VIEW_STATE.ALLY_SUPPORT: '_updateAllySupport', 
    VEHICLE_VIEW_STATE.ABILITY: '_updateAbility'}
-_ABILITY_HANDLERS = {'tank_ram_old': 'as_showRammingS'}
+_ABILITY_HANDLERS = {'tank_ram': 'as_showRammingS'}
 
 class STATUS_ID(CONST_CONTAINER):
     STUN = 0

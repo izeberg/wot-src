@@ -23,6 +23,6 @@ class SessionProgressRewardsTooltip(ViewImpl):
         super(SessionProgressRewardsTooltip, self)._onLoading(*args, **kwargs)
         controller = self.__sessionProgressRewardsController
         isRewardReceivedToday = controller.isRewardWasReceivedToday
-        isProgressionCompleted = controller.currentStep >= controller.finalStep
+        isProgressionCompleted = controller.currentStep > controller.finalStep
         self.viewModel.setIsCompleted(isRewardReceivedToday)
         self.viewModel.setIsProgressionCompleted(isProgressionCompleted)

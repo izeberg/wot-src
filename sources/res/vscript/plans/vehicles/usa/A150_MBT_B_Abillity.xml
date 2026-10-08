@@ -225,7 +225,7 @@
 						<type>BoolT</type>
 					</param>
 					<param>
-						c3RhcnRfYWN0aXZl c3RhcnRfY29vbGRvd24= b25BY3RpdmF0ZQ== b25Db29sZG93bg== b25FeGhhdXN0ZWQ=
+						c3RhcnRfYWN0aXZl c3RhcnRfY29vbGRvd24= b25BY3RpdmF0ZQ== b25Db29sZG93bg==
 						<name>Initial Value</name>
 						<type>StringArrayT</type>
 					</param>
@@ -233,7 +233,7 @@
 				<slots>
 					<slot>
 						<name>default</name>
-						<const>\c3RhcnRfYWN0aXZl c3RhcnRfY29vbGRvd24= b25BY3RpdmF0ZQ== b25Db29sZG93bg== b25FeGhhdXN0ZWQ=\</const>
+						<const>\c3RhcnRfYWN0aXZl c3RhcnRfY29vbGRvd24= b25BY3RpdmF0ZQ== b25Db29sZG93bg==\</const>
 					</slot>
 				</slots>
 			</block>
@@ -590,6 +590,12 @@
 				</slots>
 			</block>
 			<block>
+				<class>Print</class>
+				<id>Print_1</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
 				<class>SetVariable</class>
 				<id>SetVariable_4</id>
 				<buddy>Variable_1</buddy>
@@ -613,39 +619,9 @@
 				<id>Choice_1</id>
 				<params>
 					<param>
-						5
+						4
 						<name>Output Count</name>
 						<type>IntT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>Macro</class>
-				<id>Macro_2</id>
-				<params>
-					<param>
-						start_effects_on_last_frame
-						<name>Macro Name</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>layer_name</name>
-						<const>\open\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_8</id>
-				<buddy>Variable_2</buddy>
-				<params>
-					<param>
-						GameObjectT
-						<name>Variable Type</name>
-						<type>TypeT</type>
 					</param>
 				</params>
 				<slots/>
@@ -692,6 +668,36 @@
 				</slots>
 			</block>
 			<block>
+				<class>Macro</class>
+				<id>Macro_2</id>
+				<params>
+					<param>
+						start_effects_on_last_frame
+						<name>Macro Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>layer_name</name>
+						<const>\open\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_8</id>
+				<buddy>Variable_2</buddy>
+				<params>
+					<param>
+						GameObjectT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
 				<class>GetVariable</class>
 				<id>GetVariable_2</id>
 				<buddy>Variable_1</buddy>
@@ -705,6 +711,12 @@
 				<slots/>
 			</block>
 			<block>
+				<class>If</class>
+				<id>If_2</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
 				<class>ComponentMethod</class>
 				<id>ComponentMethod_1</id>
 				<params>
@@ -714,12 +726,6 @@
 						<type>StringT</type>
 					</param>
 				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>If</class>
-				<id>If_2</id>
-				<params/>
 				<slots/>
 			</block>
 			<block>
@@ -749,6 +755,19 @@
 				<slots/>
 			</block>
 			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_4</id>
+				<buddy>Variable_2</buddy>
+				<params>
+					<param>
+						GameObjectT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
 				<class>Macro</class>
 				<id>Macro_3</id>
 				<params>
@@ -770,19 +789,6 @@
 				</slots>
 			</block>
 			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_4</id>
-				<buddy>Variable_2</buddy>
-				<params>
-					<param>
-						GameObjectT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
 				<class>If</class>
 				<id>If_3</id>
 				<params/>
@@ -796,19 +802,6 @@
 						Sound3D.play
 						<name>Component Type</name>
 						<type>StringT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_11</id>
-				<buddy>Variable_5</buddy>
-				<params>
-					<param>
-						BoolT
-						<name>Variable Type</name>
-						<type>TypeT</type>
 					</param>
 				</params>
 				<slots/>
@@ -1093,6 +1086,18 @@
 			<connection>
 				<from>ContextEventReceive_1</from>
 				<input>input</input>
+				<to>Print_1</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>ContextEventReceive_1</from>
+				<input>value</input>
+				<to>Print_1</to>
+				<output>eventName</output>
+			</connection>
+			<connection>
+				<from>Print_1</from>
+				<input>input</input>
 				<to>SetVariable_4</to>
 				<output>out</output>
 			</connection>
@@ -1127,24 +1132,6 @@
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>Choice_1</from>
-				<input>in</input>
-				<to>Macro_2</to>
-				<output>o1</output>
-			</connection>
-			<connection>
-				<from>ContextGetSelf_1</from>
-				<input>minigun_go</input>
-				<to>Macro_2</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>GetVariable_8</from>
-				<input>comm_turret_door_go</input>
-				<to>Macro_2</to>
-				<output>value</output>
-			</connection>
-			<connection>
 				<from>GetVariable_1</from>
 				<input>array</input>
 				<to>FindInArray_1</to>
@@ -1163,15 +1150,21 @@
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>If_2</from>
+				<from>Choice_1</from>
 				<input>in</input>
-				<to>ComponentMethod_1</to>
-				<output>true</output>
+				<to>Macro_2</to>
+				<output>o1</output>
 			</connection>
 			<connection>
-				<from>GetVariable_3</from>
-				<input>gameObject</input>
-				<to>ComponentMethod_1</to>
+				<from>ContextGetSelf_1</from>
+				<input>minigun_go</input>
+				<to>Macro_2</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>GetVariable_8</from>
+				<input>comm_turret_door_go</input>
+				<to>Macro_2</to>
 				<output>value</output>
 			</connection>
 			<connection>
@@ -1184,6 +1177,18 @@
 				<from>GetVariable_9</from>
 				<input>value</input>
 				<to>If_2</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>If_2</from>
+				<input>in</input>
+				<to>ComponentMethod_1</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>GetVariable_3</from>
+				<input>gameObject</input>
+				<to>ComponentMethod_1</to>
 				<output>value</output>
 			</connection>
 			<connection>
@@ -1217,13 +1222,7 @@
 				<output>o3</output>
 			</connection>
 			<connection>
-				<from>Choice_1</from>
-				<input>input</input>
-				<to>If_3</to>
-				<output>o4</output>
-			</connection>
-			<connection>
-				<from>GetVariable_11</from>
+				<from>GetVariable_9</from>
 				<input>value</input>
 				<to>If_3</to>
 				<output>value</output>

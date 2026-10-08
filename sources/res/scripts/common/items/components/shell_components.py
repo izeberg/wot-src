@@ -67,7 +67,7 @@ class DistanceDamageFactor(object):
 
 class HighExplosiveImpactParams(object):
     __slots__ = ('radius', 'damages', 'coneAngleCos', 'piercingSpalls', 'damageAbsorptionType',
-                 'isActive', 'useEffectiveArmor', 'useFactorAfterCalcDamage')
+                 'isActive', 'useEffectiveArmor')
 
     def __init__(self):
         self.radius = component_constants.ZERO_FLOAT
@@ -77,11 +77,10 @@ class HighExplosiveImpactParams(object):
         self.damageAbsorptionType = None
         self.useEffectiveArmor = False
         self.isActive = True
-        self.useFactorAfterCalcDamage = False
         return
 
     def __repr__(self):
-        return ('HighExplosiveImpactParams(radius={}, damages={}, coneAngleCos={}, piersingSpalls={}, damageAbsorption={}, useEffectiveArmor={}, useFactorAfterCalcDamage={})').format(self.radius, self.damages, self.coneAngleCos, self.piercingSpalls, DamageAbsorptionTypeToLabel[self.damageAbsorptionType] if self.damageAbsorptionType else None, self.useEffectiveArmor, self.useFactorAfterCalcDamage)
+        return ('HighExplosiveImpactParams(radius={}, damages={}, coneAngleCos={}, piersingSpalls={}, damageAbsorption={}, useEffectiveArmor={})').format(self.radius, self.damages, self.coneAngleCos, self.piercingSpalls, DamageAbsorptionTypeToLabel[self.damageAbsorptionType] if self.damageAbsorptionType else None, self.useEffectiveArmor)
 
 
 class HighExplosiveType(ShellType):

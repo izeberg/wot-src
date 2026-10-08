@@ -1,4 +1,5 @@
 from copy import copy
+import AnimationSequence, BigWorld
 from frameworks.wulf import ViewFlags, ViewSettings, WindowFlags, WindowLayer
 from gui.impl.gen import R
 from gui.impl.gen.view_models.views.lobby.daily.session_progress_reward_screen_model import SessionProgressRewardScreenModel
@@ -11,11 +12,15 @@ from gui.server_events.bonuses import getNonQuestBonuses, splitBonuses, mergeBon
 from gui.session_progress_rewards.session_progress_rewards_bonus_packers import getSessionProgressRewardsBonusPacker
 from gui.shared.bonuses_sorter import bonusesSortKeyFunc
 from gui.shared.event_dispatcher import selectVehicleInHangar
+from helpers import dependency, isPlayerAccount
 from shared_utils import findFirst
+from skeletons.gui.shared.utils import IHangarSpace
 _MAX_REWARDS = 3
 
 class SessionProgressRewardScreen(ViewImpl):
-    __slots__ = ('__tooltipData', '__rawBonuses', '__mainVehicleCd')
+    __slots__ = ('__tooltipData', '__rawBonuses', '__mainVehicleCd', '__isWorldDrawOptimizationActive',
+                 '__isWorldDrawDisabled')
+    __hangarSpace = dependency.descriptor(IHangarSpace)
 
     def __init__(self, layoutID, bonuses):
         settings = ViewSettings(layoutID)
@@ -24,6 +29,8 @@ class SessionProgressRewardScreen(ViewImpl):
         self.__tooltipData = {}
         self.__rawBonuses = copy(bonuses)
         self.__mainVehicleCd = None
+        self.__isWorldDrawOptimizationActive = False
+        self.__isWorldDrawDisabled = False
         super(SessionProgressRewardScreen, self).__init__(settings)
         return
 
@@ -51,7 +58,9 @@ class SessionProgressRewardScreen(ViewImpl):
          (
           self.viewModel.onClose, self.__onClose),
          (
-          self.viewModel.onShowInHangar, self.__onShowInHangar))
+          self.viewModel.onShowInHangar, self.__onShowInHangar),
+         (
+          self.__hangarSpace.onSpaceCreate, self.__onHangarSpaceCreate))
 
     def _onLoading(self, *args, **kwargs):
         super(SessionProgressRewardScreen, self)._onLoading(*args, **kwargs)
@@ -76,6 +85,18 @@ class SessionProgressRewardScreen(ViewImpl):
             rewardsList.clear()
             packBonusModelAndTooltipData(rewards, rewardsList, self.__tooltipData, getSessionProgressRewardsBonusPacker())
             rewardsList.invalidate()
+        self.__isWorldDrawOptimizationActive = True
+        self.__disableWorldDraw()
+
+    def _onLoaded(self, *args, **kwargs):
+        super(SessionProgressRewardScreen, self)._onLoaded(*args, **kwargs)
+        if self.__isWorldDrawOptimizationActive:
+            self.__disableWorldDraw()
+
+    def _finalize(self):
+        self.__isWorldDrawOptimizationActive = False
+        self.__enableWorldDraw()
+        super(SessionProgressRewardScreen, self)._finalize()
 
     def __onClose(self):
         self.destroyWindow()
@@ -85,6 +106,28 @@ class SessionProgressRewardScreen(ViewImpl):
             self.destroyWindow()
             selectVehicleInHangar(self.__mainVehicleCd)
         return
+
+    def __onHangarSpaceCreate(self):
+        if self.__isWorldDrawOptimizationActive:
+            self.__disableWorldDraw()
+
+    def __canToggleWorldDraw(self):
+        return isPlayerAccount() and self.__hangarSpace.spaceInited
+
+    def __disableWorldDraw(self):
+        if not self.__canToggleWorldDraw():
+            return
+        BigWorld.worldDrawEnabled(False)
+        AnimationSequence.setEnableAnimationSequenceUpdate(False)
+        self.__isWorldDrawDisabled = True
+
+    def __enableWorldDraw(self):
+        if not self.__isWorldDrawDisabled:
+            return
+        self.__isWorldDrawDisabled = False
+        AnimationSequence.setEnableAnimationSequenceUpdate(True)
+        if self.__canToggleWorldDraw():
+            BigWorld.worldDrawEnabled(True)
 
 
 class SessionProgressRewardScreenWindow(LobbyNotificationWindow):

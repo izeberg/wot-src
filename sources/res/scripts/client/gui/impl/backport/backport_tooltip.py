@@ -1,4 +1,5 @@
 from collections import namedtuple
+import constants
 from frameworks.wulf import ViewModel, Window, WindowFlags, WindowSettings, ViewSettings
 from gui.impl.gen import R
 from gui.impl.pub import ViewImpl, WindowImpl
@@ -53,6 +54,11 @@ class _BackportTooltipContent(ViewImpl):
         if toolTipMgr is not None:
             toolTipMgr.hide()
         return
+
+    def __repr__(self):
+        if constants.IS_DEVELOPMENT:
+            return ('{}(uniqueID={}, layoutID={}, tooltipData={})').format(self.__class__.__name__, self.uniqueID, self.layoutID, self.__tooltipData)
+        return super(_BackportTooltipContent, self).__repr__()
 
 
 class BackportTooltipWindow(Window):

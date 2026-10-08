@@ -1792,10 +1792,7 @@ msgstr "Разблакуецца ў баі"
 msgid "currentVehicleStatus/wot_plus_exclusive_vehicle_disabled"
 msgstr "?empty?"
 
-msgid "custom/shot_passion/extraParams/name/vehicleGunReloadTime"
-msgstr "%(customDescr)s"
-
-msgid "custom/shot_passion_old/extraParams/name/vehicleGunDamage"
+msgid "custom/shot_passion/extraParams/name/vehicleGunDamage"
 msgstr ""
 "%(defaultText)s\n"
 "\n"
@@ -2269,35 +2266,6 @@ msgid "extraParams/name/equipmentPreparationTime"
 msgstr ""
 "Параметр, які адказвае за час падрыхтоўкі рыштунку пасля выкарыстання."
 
-msgid "extraParams/name/extraAbilityParamChassisRotationSpeed"
-msgstr ""
-"Скорость вращения корпуса машины вокруг своей оси, а также скорость смены "
-"курса при движении (манёвренность)."
-
-msgid "extraParams/name/extraAbilityParamGunClipCooldown"
-msgstr ""
-"Время между полной разрядкой магазина (или орудий) и полным заряжанием."
-
-msgid "extraParams/name/extraAbilityParamShellDamage"
-msgstr "Параметр, отвечающий за изменение среднего урона снаряда. "
-
-msgid "extraParams/name/extraAbilityParamShellPiercing"
-msgstr "Параметр, отвечающий за изменение средней бронепробиваемости снаряда."
-
-msgid "extraParams/name/extraAbilityParamShellSpeed"
-msgstr "Параметр, отвечающий за изменение скорости полёта снаряда."
-
-msgid "extraParams/name/extraAbilityParamSpeedBonus"
-msgstr ""
-"Параметр, отвечающий за изменение максимальной скорости / скорости заднего "
-"хода."
-
-msgid "extraParams/name/extraAbilityParamTurretRotationSpeed"
-msgstr ""
-"Количество градусов в секунду, на которое орудие переведётся в секторе "
-"обстрела вместе с башней или в неподвижной рубке (обычный / специальный "
-"режим)."
-
 msgid "extraParams/name/fireExtinguishingRate"
 msgstr ""
 "Параметр, які адказвае за памяншэнне працягласці пажару і пашкоджанняў ад "
@@ -2422,7 +2390,9 @@ msgstr ""
 " хуткасці павароту корпуса машыны."
 
 msgid "extraParams/name/vehicleFinalDispersion"
-msgstr "Параметр, отвечающий за уменьшение круга сведения."
+msgstr ""
+"Параметр, отвечающий за уменьшение круга сведения во время действия "
+"модификации."
 
 msgid "extraParams/name/vehicleFireChance"
 msgstr ""
@@ -2540,12 +2510,6 @@ msgid "extraParams/name/vehicleSpeedGain"
 msgstr ""
 "Параметр, які адказвае за якасць счаплення шасі з паверхняй. Чым вышэйшае "
 "значэнне, тым хутчэй будзе набірацца лінейная хуткасць."
-
-msgid "extraParams/name/vehicleTurretRotationSpeed"
-msgstr ""
-"++Параметр, отвечающий за количество градусов в секунду, на которое орудие "
-"переведётся в секторе обстрела вместе с башней или в неподвижной рубке "
-"(обычный / специальный режим).++"
 
 msgid "extraParams/name/vehicleWeakSoilResistance"
 msgstr ""
@@ -6294,9 +6258,6 @@ msgstr "Зніжка"
 
 msgid "shop/table/notForSale"
 msgstr "Нельга прадаць"
-
-msgid "shot_passion/extraParams/name/vehicleGunReloadTime"
-msgstr "Параметр, отвечающий за уменьшение времени перезарядки орудия."
 
 msgid "specPrebetles/listTitle"
 msgstr "Камандныя пакоі"

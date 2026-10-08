@@ -33,18 +33,8 @@
 			<flags>0</flags>
 		</GameObject>
 		<GameObject>
-			<name>hull_GO</name>
-			<UUID>a4fc1bcf-6257-4f78-9509-e945de89be4d</UUID>
-			<flags>0</flags>
-		</GameObject>
-		<GameObject>
-			<name>disableDefaultEngineExhaust</name>
-			<UUID>b54b7ad6-aa91-4d59-8d86-7524ae1c78cd</UUID>
-			<flags>8</flags>
-		</GameObject>
-		<GameObject>
-			<name>turret_GO</name>
-			<UUID>b87c3ee0-bff2-45c2-85f1-cce65be4716c</UUID>
+			<name>prebattleAnim</name>
+			<UUID>ea5f9662-b534-4622-b419-b2f26264e065</UUID>
 			<flags>0</flags>
 		</GameObject>
 	</GameObjects>
@@ -112,26 +102,6 @@
 					</property>
 				</config>
 			</component>
-			<component>
-				<objectIndex>7</objectIndex>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Parent</name>
-						<link>0bf0df25-a39a-4c3b-8e4b-9aabce372255</link>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>8</objectIndex>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Parent</name>
-						<link>0bf0df25-a39a-4c3b-8e4b-9aabce372255</link>
-					</property>
-				</config>
-			</component>
 		</ComponentPool>
 		<ComponentPool>
 			<type>Transform</type>
@@ -160,7 +130,10 @@
 				<config>
 					<property>
 						<name>Position</name>
-						<value>0 0 0</value>
+						<value>
+							0 0.630602 0
+							<!--BW_String-->
+						</value>
 					</property>
 					<property>
 						<name>Scale</name>
@@ -204,7 +177,7 @@
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>-0 0 0</value>
+						<value>0 0 0</value>
 					</property>
 				</config>
 			</component>
@@ -258,43 +231,21 @@
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>-0 0 0</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>7</objectIndex>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Position</name>
-						<value>0 0 0</value>
-					</property>
-					<property>
-						<name>Scale</name>
-						<value>1 1 1</value>
-					</property>
-					<property>
-						<name>Rotation</name>
 						<value>0 0 0</value>
 					</property>
 				</config>
 			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>RemoveGoDelayedComponent</type>
+			<version>1</version>
 			<component>
-				<objectIndex>8</objectIndex>
-				<flags>35</flags>
+				<objectIndex>6</objectIndex>
+				<flags>3</flags>
 				<config>
 					<property>
-						<name>Position</name>
-						<value>0 0 0</value>
-					</property>
-					<property>
-						<name>Scale</name>
-						<value>1 1 1</value>
-					</property>
-					<property>
-						<name>Rotation</name>
-						<value>0 0 0</value>
+						<name>Delay</name>
+						<value>60</value>
 					</property>
 				</config>
 			</component>
@@ -303,97 +254,7 @@
 			<type>Animator</type>
 			<version>2</version>
 			<component>
-				<objectIndex>6</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>Auto Start</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>Layers</name>
-						<collection>
-							<item>
-								<object>
-									<property>
-										<name>Path</name>
-										<isAsset>true</isAsset>
-										<value>vehicles/chinese/Ch57_BZT_70/Sequence/Ch57_BZT_70_ability_hull.seq</value>
-									</property>
-									<property>
-										<name>Properties</name>
-										<object>
-											<property>
-												<name>delay</name>
-												<value>0</value>
-											</property>
-											<property>
-												<name>speed</name>
-												<value>1</value>
-											</property>
-											<property>
-												<name>loop</name>
-												<value>0</value>
-											</property>
-											<property>
-												<name>loopCount</name>
-												<value>-1</value>
-											</property>
-										</object>
-									</property>
-									<property>
-										<name>Clip</name>
-										<value>&lt;Default Clip&gt;</value>
-									</property>
-									<property>
-										<name>LayerName</name>
-										<value>0</value>
-									</property>
-									<property>
-										<name>Weight</name>
-										<value>1</value>
-									</property>
-									<property>
-										<name>LOD Scale</name>
-										<value>1</value>
-									</property>
-									<property>
-										<name>Auto Start</name>
-										<value>0</value>
-									</property>
-									<property>
-										<name>Graphics preset</name>
-										<value>2</value>
-									</property>
-								</object>
-							</item>
-						</collection>
-					</property>
-					<property>
-						<name>Path</name>
-						<isAsset>true</isAsset>
-						<value>vehicles/chinese/Ch57_BZT_70/Sequence/Ch57_BZT_70_ability_hull.seq</value>
-					</property>
-					<property>
-						<name>Delay</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>Speed</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Loop</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>Loop Count</name>
-						<value>-1</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>8</objectIndex>
+				<objectIndex>1</objectIndex>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -541,7 +402,7 @@
 			<type>ComponentsVisibilityController</type>
 			<version>1</version>
 			<component>
-				<objectIndex>0</objectIndex>
+				<objectIndex>1</objectIndex>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -586,7 +447,57 @@
 					</property>
 					<property>
 						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
+						<value>0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>3</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Visible in ARCADE MODE</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SNIPER MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in ARTY MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in POSTMORTEM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in RESPAWN_DEATH MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DEATH_FREE_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DUAL_GUN MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -595,7 +506,7 @@
 			<type>EdgeDrawerComponent</type>
 			<version>1</version>
 			<component>
-				<objectIndex>3</objectIndex>
+				<objectIndex>1</objectIndex>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -609,12 +520,12 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>8</objectIndex>
+				<objectIndex>3</objectIndex>
 				<flags>3</flags>
 				<config>
 					<property>
 						<name>triggerSource</name>
-						<link>00000000-0000-0000-0000-000000000001</link>
+						<link>49d68101-9737-46ce-a728-fbd8bd923bd7</link>
 					</property>
 					<property>
 						<name>isAnimated</name>
@@ -636,7 +547,7 @@
 					</property>
 					<property>
 						<name>Event name</name>
-						<value>ability_v2_bzt_70_start</value>
+						<value>ability_verni_vistrel_device_start</value>
 					</property>
 					<property>
 						<name>AutoStart</name>
@@ -654,7 +565,7 @@
 					</property>
 					<property>
 						<name>Event name</name>
-						<value>ability_v2_bzt_70_stop</value>
+						<value>ability_verni_vistrel_device_stop</value>
 					</property>
 					<property>
 						<name>AutoStart</name>
@@ -666,6 +577,21 @@
 		<ComponentPool>
 			<type>DynamicModel</type>
 			<version>1</version>
+			<component>
+				<objectIndex>1</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Model name</name>
+						<isAsset>true</isAsset>
+						<value>vehicles/chinese/Ch57_BZT_70/normal/lod0/Module_Cover_anim.model</value>
+					</property>
+					<property>
+						<name>Cast Shadows</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
 			<component>
 				<objectIndex>3</objectIndex>
 				<flags>3</flags>
@@ -679,29 +605,6 @@
 						<name>Cast Shadows</name>
 						<value>1</value>
 					</property>
-					<property>
-						<name>Parts</name>
-						<collection/>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>8</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>Model name</name>
-						<isAsset>true</isAsset>
-						<value>vehicles/chinese/Ch57_BZT_70/normal/lod0/Module_Cover_anim.model</value>
-					</property>
-					<property>
-						<name>Cast Shadows</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Parts</name>
-						<collection/>
-					</property>
 				</config>
 			</component>
 		</ComponentPool>
@@ -709,61 +612,7 @@
 			<type>NodeFollower</type>
 			<version>1</version>
 			<component>
-				<objectIndex>2</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>NodeName</name>
-						<value>HP_abillity</value>
-					</property>
-					<property>
-						<name>DeactivateIfInvalid</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>modelLink</name>
-						<link>00000000-0000-0000-0000-000000000001</link>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>3</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>NodeName</name>
-						<value>HP_abillity</value>
-					</property>
-					<property>
-						<name>DeactivateIfInvalid</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>modelLink</name>
-						<link>00000000-0000-0000-0000-000000000001</link>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>6</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>NodeName</name>
-						<value>V</value>
-					</property>
-					<property>
-						<name>DeactivateIfInvalid</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>modelLink</name>
-						<link>00000000-0000-0000-0000-000000000001</link>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>8</objectIndex>
+				<objectIndex>1</objectIndex>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -786,7 +635,7 @@
 			<version>1</version>
 			<component>
 				<objectIndex>1</objectIndex>
-				<flags>1</flags>
+				<flags>3</flags>
 				<config>
 					<property>
 						<name>Path</name>
@@ -799,20 +648,27 @@
 					</property>
 				</config>
 			</component>
-		</ComponentPool>
-		<ComponentPool>
-			<type>DisableEngineExhaustComponent</type>
-			<version>1</version>
 			<component>
-				<objectIndex>7</objectIndex>
+				<objectIndex>6</objectIndex>
 				<flags>3</flags>
+				<config>
+					<property>
+						<name>Path</name>
+						<isAsset>true</isAsset>
+						<value>vscript/plans/vehicles/china/Ch57_BZT_70_Prebattle_anim.xml</value>
+					</property>
+					<property>
+						<name>AutoStart</name>
+						<value>1</value>
+					</property>
+				</config>
 			</component>
 		</ComponentPool>
 		<ComponentPool>
 			<type>CustomizableModelAttachmentComponent</type>
 			<version>1</version>
 			<component>
-				<objectIndex>3</objectIndex>
+				<objectIndex>1</objectIndex>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -838,7 +694,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>8</objectIndex>
+				<objectIndex>3</objectIndex>
 				<flags>3</flags>
 				<config>
 					<property>

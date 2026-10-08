@@ -204,7 +204,7 @@ class ComplexBuilder(AdvancedBuilder):
                     self._setDisableAnimFlag()
             else:
                 data = ComplexTooltip(contexts.ToolTipContext(None), disableAnim).buildToolTip(data)
-            linkage = TOOLTIPS_CONSTANTS.BLOCKS_DEFAULT_UI
+            linkage = TOOLTIPS_CONSTANTS.ADVANCED_SHUFFLE_UI
         if data:
             return (self._provider, data, linkage)
         else:

@@ -269,20 +269,13 @@
 		<afterburning>NoneExtra : Afterburning</afterburning>
 		<exampleAbility>NoneExtra : VisualScriptEquipmentExtra</exampleAbility>
 		<poi_radar>NoneExtra : VisualScriptEquipmentExtra</poi_radar>
-		<sure_shot_old>NoneExtra : VisualScriptEquipmentExtra</sure_shot_old>
-		<juggernaut_old>NoneExtra : VisualScriptEquipmentExtra</juggernaut_old>
-		<concentration_old>NoneExtra : VisualScriptEquipmentExtra</concentration_old>
-		<recoil_recuperator_old>NoneExtra : AbilityEquipmentExtra</recoil_recuperator_old>
-		<coolant_tank_old>NoneExtra : CoolantTankAbilityEquipmentExtra</coolant_tank_old>
-		<tank_ram_old>NoneExtra : TankRamAbilityEquipmentExtra</tank_ram_old>
-		<shot_passion_old>NoneExtra : DamageModifierAbilityEquipmentExtra</shot_passion_old>
-		<juggernaut>NoneExtra : AbilityEquipmentExtra</juggernaut>
-		<concentration>NoneExtra : AbilityEquipmentExtra</concentration>
-		<coolant_tank>NoneExtra : AbilityEquipmentExtra</coolant_tank>
-		<shot_passion>NoneExtra : AbilityEquipmentExtra</shot_passion>
+		<sure_shot>NoneExtra : VisualScriptEquipmentExtra</sure_shot>
+		<juggernaut>NoneExtra : VisualScriptEquipmentExtra</juggernaut>
+		<concentration>NoneExtra : VisualScriptEquipmentExtra</concentration>
 		<recoil_recuperator>NoneExtra : AbilityEquipmentExtra</recoil_recuperator>
-		<tank_ram>NoneExtra : AbilityEquipmentExtra</tank_ram>
-		<sure_shot>NoneExtra : SureShotAbilityEquipmentExtra</sure_shot>
+		<coolant_tank>NoneExtra : CoolantTankAbilityEquipmentExtra</coolant_tank>
+		<tank_ram>NoneExtra : TankRamAbilityEquipmentExtra</tank_ram>
+		<shot_passion>NoneExtra : DamageModifierAbilityEquipmentExtra</shot_passion>
 		<engineHealth>
 			DamageMarker : EngineHealth
 			<sounds>

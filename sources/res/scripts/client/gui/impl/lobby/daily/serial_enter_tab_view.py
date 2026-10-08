@@ -35,11 +35,16 @@ class SerialEnterTabView(DailyQuestTabBase, ViewImpl):
         currentStep = self.__sessionProgressRewardsController.currentStep
         isRewardWasReceivedToday = self.__sessionProgressRewardsController.isRewardWasReceivedToday
         lastSeenStep = AccountSettings.getSettings(SESSION_PROGRESS_REWARDS_LAST_SEEN_STEP)
+        isLastStageCompleted = currentStep > self.__sessionProgressRewardsController.finalStep
+        if isRewardWasReceivedToday:
+            isViewed = currentStep == lastSeenStep
+        else:
+            isViewed = isLastStageCompleted
         with self.viewModel.transaction() as (tx):
             tx.setIsEnabled(self.__sessionProgressRewardsController.isAvailable)
-            tx.setIsCompleted(isRewardWasReceivedToday)
-            tx.setIsViewed(isRewardWasReceivedToday and currentStep == lastSeenStep)
-            tx.setIsFinal(currentStep >= self.__sessionProgressRewardsController.finalStep)
+            tx.setIsCompleted(isRewardWasReceivedToday or isLastStageCompleted)
+            tx.setIsViewed(isViewed)
+            tx.setIsFinal(isLastStageCompleted)
 
     def _getEvents(self):
         return (

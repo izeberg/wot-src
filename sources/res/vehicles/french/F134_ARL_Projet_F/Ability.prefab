@@ -13,6 +13,16 @@
 			<flags>0</flags>
 		</GameObject>
 		<GameObject>
+			<name>disableEngineEffects</name>
+			<UUID>a7daacb1-188f-46e5-9587-826d424bbef9</UUID>
+			<flags>8</flags>
+		</GameObject>
+		<GameObject>
+			<name>hull_GO</name>
+			<UUID>240ecf15-df80-4794-95e1-bc8ea1ba23f0</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
 			<name>Sounds</name>
 			<UUID>4254ba9c-0d80-4d7e-a857-c4147b179544</UUID>
 			<flags>0</flags>
@@ -30,11 +40,6 @@
 		<GameObject>
 			<name>turret_GO</name>
 			<UUID>ead37b86-33b3-49ab-bed8-e396ca9402f0</UUID>
-			<flags>0</flags>
-		</GameObject>
-		<GameObject>
-			<name>abilityShot</name>
-			<UUID>e768e3c6-16f9-4880-982e-b171809d134f</UUID>
 			<flags>0</flags>
 		</GameObject>
 	</GameObjects>
@@ -68,7 +73,7 @@
 				<config>
 					<property>
 						<name>Parent</name>
-						<link>4254ba9c-0d80-4d7e-a857-c4147b179544</link>
+						<link>a914c759-5ef9-46fe-811d-8014906880d0</link>
 					</property>
 				</config>
 			</component>
@@ -78,7 +83,7 @@
 				<config>
 					<property>
 						<name>Parent</name>
-						<link>4254ba9c-0d80-4d7e-a857-c4147b179544</link>
+						<link>a914c759-5ef9-46fe-811d-8014906880d0</link>
 					</property>
 				</config>
 			</component>
@@ -88,7 +93,7 @@
 				<config>
 					<property>
 						<name>Parent</name>
-						<link>a914c759-5ef9-46fe-811d-8014906880d0</link>
+						<link>4254ba9c-0d80-4d7e-a857-c4147b179544</link>
 					</property>
 				</config>
 			</component>
@@ -99,6 +104,16 @@
 					<property>
 						<name>Parent</name>
 						<link>4254ba9c-0d80-4d7e-a857-c4147b179544</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>7</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>a914c759-5ef9-46fe-811d-8014906880d0</link>
 					</property>
 				</config>
 			</component>
@@ -232,12 +247,390 @@
 					</property>
 				</config>
 			</component>
+			<component>
+				<objectIndex>7</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>0 0 0</value>
+					</property>
+				</config>
+			</component>
 		</ComponentPool>
 		<ComponentPool>
 			<type>Animator</type>
 			<version>2</version>
 			<component>
-				<objectIndex>5</objectIndex>
+				<objectIndex>3</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Auto Start</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Layers</name>
+						<collection>
+							<item>
+								<object>
+									<property>
+										<name>Path</name>
+										<isAsset>true</isAsset>
+										<value>particles/Tank/abilities/F134_ARL_Projet_F/F134_ARL_Projet_F_ability_exhoust_hull.seq</value>
+									</property>
+									<property>
+										<name>Properties</name>
+										<object>
+											<property>
+												<name>delay</name>
+												<value>0</value>
+											</property>
+											<property>
+												<name>speed</name>
+												<value>1</value>
+											</property>
+											<property>
+												<name>loop</name>
+												<value>1</value>
+											</property>
+											<property>
+												<name>loopCount</name>
+												<value>-1</value>
+											</property>
+										</object>
+									</property>
+									<property>
+										<name>Clip</name>
+										<value>&lt;Default Clip&gt;</value>
+									</property>
+									<property>
+										<name>LayerName</name>
+										<value>exhaust</value>
+									</property>
+									<property>
+										<name>Weight</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>LOD Scale</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>Auto Start</name>
+										<value>0</value>
+									</property>
+									<property>
+										<name>Graphics preset</name>
+										<value>2</value>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>Path</name>
+										<isAsset>true</isAsset>
+										<value>particles/Tank/abilities/F134_ARL_Projet_F/F134_ARL_Projet_F_ability_dirt.seq</value>
+									</property>
+									<property>
+										<name>Properties</name>
+										<object>
+											<property>
+												<name>delay</name>
+												<value>0</value>
+											</property>
+											<property>
+												<name>speed</name>
+												<value>1</value>
+											</property>
+											<property>
+												<name>loop</name>
+												<value>1</value>
+											</property>
+											<property>
+												<name>loopCount</name>
+												<value>-1</value>
+											</property>
+										</object>
+									</property>
+									<property>
+										<name>Clip</name>
+										<value>&lt;Default Clip&gt;</value>
+									</property>
+									<property>
+										<name>LayerName</name>
+										<value>dirt</value>
+									</property>
+									<property>
+										<name>Weight</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>LOD Scale</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>Auto Start</name>
+										<value>0</value>
+									</property>
+									<property>
+										<name>Graphics preset</name>
+										<value>2</value>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>Path</name>
+										<isAsset>true</isAsset>
+										<value>particles/Tank/abilities/F134_ARL_Projet_F/F134_ARL_Projet_F_ability_ram_sparks_L.seq</value>
+									</property>
+									<property>
+										<name>Properties</name>
+										<object>
+											<property>
+												<name>delay</name>
+												<value>0</value>
+											</property>
+											<property>
+												<name>speed</name>
+												<value>1</value>
+											</property>
+											<property>
+												<name>loop</name>
+												<value>0</value>
+											</property>
+											<property>
+												<name>loopCount</name>
+												<value>-1</value>
+											</property>
+										</object>
+									</property>
+									<property>
+										<name>Clip</name>
+										<value>&lt;Default Clip&gt;</value>
+									</property>
+									<property>
+										<name>LayerName</name>
+										<value>ram_left_fwd</value>
+									</property>
+									<property>
+										<name>Weight</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>LOD Scale</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>Auto Start</name>
+										<value>0</value>
+									</property>
+									<property>
+										<name>Graphics preset</name>
+										<value>1</value>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>Path</name>
+										<isAsset>true</isAsset>
+										<value>particles/Tank/abilities/F134_ARL_Projet_F/F134_ARL_Projet_F_ability_ram_sparks_R.seq</value>
+									</property>
+									<property>
+										<name>Properties</name>
+										<object>
+											<property>
+												<name>delay</name>
+												<value>0</value>
+											</property>
+											<property>
+												<name>speed</name>
+												<value>1</value>
+											</property>
+											<property>
+												<name>loop</name>
+												<value>0</value>
+											</property>
+											<property>
+												<name>loopCount</name>
+												<value>-1</value>
+											</property>
+										</object>
+									</property>
+									<property>
+										<name>Clip</name>
+										<value>&lt;Default Clip&gt;</value>
+									</property>
+									<property>
+										<name>LayerName</name>
+										<value>ram_right_fwd</value>
+									</property>
+									<property>
+										<name>Weight</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>LOD Scale</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>Auto Start</name>
+										<value>0</value>
+									</property>
+									<property>
+										<name>Graphics preset</name>
+										<value>1</value>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>Path</name>
+										<isAsset>true</isAsset>
+										<value>particles/Tank/abilities/F134_ARL_Projet_F/F134_ARL_Projet_F_ability_ram_sparks_L.seq</value>
+									</property>
+									<property>
+										<name>Properties</name>
+										<object>
+											<property>
+												<name>delay</name>
+												<value>0</value>
+											</property>
+											<property>
+												<name>speed</name>
+												<value>1</value>
+											</property>
+											<property>
+												<name>loop</name>
+												<value>0</value>
+											</property>
+											<property>
+												<name>loopCount</name>
+												<value>-1</value>
+											</property>
+										</object>
+									</property>
+									<property>
+										<name>Clip</name>
+										<value>&lt;Default Clip&gt;</value>
+									</property>
+									<property>
+										<name>LayerName</name>
+										<value>ram_left_dfd</value>
+									</property>
+									<property>
+										<name>Weight</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>LOD Scale</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>Auto Start</name>
+										<value>0</value>
+									</property>
+									<property>
+										<name>Graphics preset</name>
+										<value>0</value>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>Path</name>
+										<isAsset>true</isAsset>
+										<value>particles/Tank/abilities/F134_ARL_Projet_F/F134_ARL_Projet_F_ability_ram_sparks_R.seq</value>
+									</property>
+									<property>
+										<name>Properties</name>
+										<object>
+											<property>
+												<name>delay</name>
+												<value>0</value>
+											</property>
+											<property>
+												<name>speed</name>
+												<value>1</value>
+											</property>
+											<property>
+												<name>loop</name>
+												<value>0</value>
+											</property>
+											<property>
+												<name>loopCount</name>
+												<value>-1</value>
+											</property>
+										</object>
+									</property>
+									<property>
+										<name>Clip</name>
+										<value>&lt;Default Clip&gt;</value>
+									</property>
+									<property>
+										<name>LayerName</name>
+										<value>ram_right_dfd</value>
+									</property>
+									<property>
+										<name>Weight</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>LOD Scale</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>Auto Start</name>
+										<value>0</value>
+									</property>
+									<property>
+										<name>Graphics preset</name>
+										<value>0</value>
+									</property>
+								</object>
+							</item>
+						</collection>
+					</property>
+					<property>
+						<name>Path</name>
+						<isAsset>true</isAsset>
+						<value>particles/Tank/abilities/F134_ARL_Projet_F/F134_ARL_Projet_F_ability_exhoust_hull.seq</value>
+					</property>
+					<property>
+						<name>Delay</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Speed</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Loop</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Loop Count</name>
+						<value>-1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>7</objectIndex>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -331,7 +724,7 @@
 			<type>Sound3D</type>
 			<version>1</version>
 			<component>
-				<objectIndex>3</objectIndex>
+				<objectIndex>5</objectIndex>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -340,25 +733,7 @@
 					</property>
 					<property>
 						<name>Event name</name>
-						<value>ability_v2_arl_projet_f_start</value>
-					</property>
-					<property>
-						<name>AutoStart</name>
-						<value>0</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>4</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>Object name</name>
-						<value>stopSound</value>
-					</property>
-					<property>
-						<name>Event name</name>
-						<value>ability_v2_arl_projet_f_stop</value>
+						<value>ability_arl_projet_f_start</value>
 					</property>
 					<property>
 						<name>AutoStart</name>
@@ -372,11 +747,11 @@
 				<config>
 					<property>
 						<name>Object name</name>
-						<value>abilityShot</value>
+						<value>stopSound</value>
 					</property>
 					<property>
 						<name>Event name</name>
-						<value>ability_v2_arl_projet_f_shot</value>
+						<value>ability_arl_projet_f_stop</value>
 					</property>
 					<property>
 						<name>AutoStart</name>
@@ -394,7 +769,7 @@
 				<config>
 					<property>
 						<name>NodeName</name>
-						<value>HP_Fire_1</value>
+						<value>HP_hull_anim</value>
 					</property>
 					<property>
 						<name>DeactivateIfInvalid</name>
@@ -407,48 +782,12 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>4</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>NodeName</name>
-						<value>HP_Fire_1</value>
-					</property>
-					<property>
-						<name>DeactivateIfInvalid</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>modelLink</name>
-						<link>00000000-0000-0000-0000-000000000001</link>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>5</objectIndex>
+				<objectIndex>7</objectIndex>
 				<flags>3</flags>
 				<config>
 					<property>
 						<name>NodeName</name>
 						<value>HP_sleeveSpawnPoint</value>
-					</property>
-					<property>
-						<name>DeactivateIfInvalid</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>modelLink</name>
-						<link>00000000-0000-0000-0000-000000000001</link>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>6</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>NodeName</name>
-						<value>Gun</value>
 					</property>
 					<property>
 						<name>DeactivateIfInvalid</name>
@@ -478,6 +817,14 @@
 						<value>1</value>
 					</property>
 				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>DisableEngineExhaustComponent</type>
+			<version>1</version>
+			<component>
+				<objectIndex>2</objectIndex>
+				<flags>3</flags>
 			</component>
 		</ComponentPool>
 	</components>
