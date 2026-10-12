@@ -20,10 +20,11 @@
 		<SCR_528A1>19</SCR_528A1>
 		<FuG7A>21</FuG7A>
 		<AN_VRC-3_7x7_0>24</AN_VRC-3_7x7_0>
+		<AN_VRC-3_FR>25</AN_VRC-3_FR>
 		<SCR_200A>53</SCR_200A>
 		<AN-VRC-7>55</AN-VRC-7>
 		<AN_VRC-24>56</AN_VRC-24>
-		<AN-VRC-12>58</AN-VRC-12>
+		<AN_VRC_12_A>58</AN_VRC_12_A>
 		<SCR_528R1>60</SCR_528R1>
 		<AN_PRC_10>61</AN_PRC_10>
 		<AN_PRC_25>62</AN_PRC_25>
@@ -87,6 +88,8 @@
 		<AN-VRC-7_7x7>501</AN-VRC-7_7x7>
 		<AN_VRC-3_7x7>503</AN_VRC-3_7x7>
 		<AN_VRC_3_57_58_7x7>504</AN_VRC_3_57_58_7x7>
+		<AN_VRC_47_7x7>505</AN_VRC_47_7x7>
+		<AN_VRC_3G_7x7>506</AN_VRC_3G_7x7>
 		<Development_Radio>65535</Development_Radio>
 		<SCR_506_MapsTraining_Dummy_MT_1>6</SCR_506_MapsTraining_Dummy_MT_1>
 		<SCR_508_1_MapsTraining_Player_HT_1>20</SCR_508_1_MapsTraining_Player_HT_1>
@@ -518,6 +521,21 @@
 				<!--BW_String-->
 			</repairCost>
 		</AN_VRC-3_7x7>
+		<AN_VRC-3_FR>
+			<userString>#usa_vehicles:AN_VRC-3_FR</userString>
+			<tags/>
+			<level>10</level>
+			<notInShop>true</notInShop>
+			<price>51600</price>
+			<weight>160</weight>
+			<distance>745</distance>
+			<maxHealth>250</maxHealth>
+			<maxRegenHealth>75</maxRegenHealth>
+			<repairCost>
+				3.5
+				<!--BW_String-->
+			</repairCost>
+		</AN_VRC-3_FR>
 		<AN_VRC-24>
 			<userString>#usa_vehicles:AN_VRC-24</userString>
 			<tags/>
@@ -825,6 +843,18 @@
 			<maxRegenHealth>125</maxRegenHealth>
 			<repairCost>4</repairCost>
 		</AN_VRC_47>
+		<AN_VRC_47_7x7>
+			<userString>#usa_vehicles:AN_VRC_47_7x7</userString>
+			<tags/>
+			<level>11</level>
+			<price>80000</price>
+			<notInShop>true</notInShop>
+			<weight>100</weight>
+			<distance>800</distance>
+			<maxHealth>250</maxHealth>
+			<maxRegenHealth>125</maxRegenHealth>
+			<repairCost>4</repairCost>
+		</AN_VRC_47_7x7>
 		<AN_VRC_12_11>
 			<userString>#usa_vehicles:AN_VRC_12_11</userString>
 			<tags/>
@@ -849,6 +879,18 @@
 			<maxRegenHealth>125</maxRegenHealth>
 			<repairCost>4</repairCost>
 		</AN_VRC_3G>
+		<AN_VRC_3G_7x7>
+			<userString>#usa_vehicles:AN_VRC_3G_7x7</userString>
+			<tags/>
+			<level>11</level>
+			<price>80000</price>
+			<notInShop>true</notInShop>
+			<weight>100</weight>
+			<distance>800</distance>
+			<maxHealth>250</maxHealth>
+			<maxRegenHealth>125</maxRegenHealth>
+			<repairCost>4</repairCost>
+		</AN_VRC_3G_7x7>
 		<AN_VRC_46>
 			<userString>#usa_vehicles:AN_VRC_46</userString>
 			<tags/>
@@ -924,8 +966,8 @@
 				<!--BW_String-->
 			</repairCost>
 		</FuG7A>
-		<AN-VRC-12>
-			<userString>#usa_vehicles:AN-VRC-12</userString>
+		<AN_VRC_12_A>
+			<userString>#usa_vehicles:AN_VRC_12_A</userString>
 			<tags/>
 			<level>10</level>
 			<price>54000</price>
@@ -938,7 +980,7 @@
 				3.5
 				<!--BW_String-->
 			</repairCost>
-		</AN-VRC-12>
+		</AN_VRC_12_A>
 		<AN_VRC_12>
 			<userString>#usa_vehicles:AN_VRC_12</userString>
 			<tags/>

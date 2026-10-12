@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from comp7.gui.impl.gen.view_models.views.lobby.tooltips.style3d_tooltip_model import Style3dTooltipModel
 from frameworks.wulf import ViewSettings
 from gui.Scaleform.daapi.view.lobby.customization.shared import getSuitableText

@@ -1,6 +1,5 @@
 import logging, BigWorld
 from CurrentVehicle import g_currentVehicle
-from account_helpers import gameplay_ctx
 from constants import QUEUE_TYPE
 from debug_utils import LOG_CURRENT_EXCEPTION
 from gui.prb_control.entities.base import vehicleAmmoCheck
@@ -58,7 +57,7 @@ class WinbackEntity(PreQueueEntity):
         return WinbackPermissions(self.isInQueue())
 
     def _doQueue(self, ctx):
-        BigWorld.player().enqueueWinback(ctx.getVehicleInventoryID(), winbackFlags=ctx.getWinbackFlags())
+        BigWorld.player().enqueueWinback(ctx.getVehicleInventoryID())
         _logger.debug('Sends request on queuing to the winback battle %s', str(ctx))
 
     def _doDequeue(self, ctx):
@@ -69,7 +68,7 @@ class WinbackEntity(PreQueueEntity):
         invID = g_currentVehicle.invID
         if not invID:
             raise SoftException('Inventory ID of vehicle can not be zero')
-        return WinbackModeQueueCtx(invID, waitingID='prebattle/join', winbackFlags=gameplay_ctx.getWinbackFlags())
+        return WinbackModeQueueCtx(invID, waitingID='prebattle/join')
 
     def forceRandomLeave(self):
         try:

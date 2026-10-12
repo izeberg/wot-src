@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.locale.MESSENGER import MESSENGER as I18N_MESSENGER
 from gui.impl import backport
 from helpers import i18n

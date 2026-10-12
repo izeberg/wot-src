@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld
 from PlayerEvents import g_playerEvents
 from constants import PREBATTLE_TYPE, PREBATTLE_CACHE_KEY

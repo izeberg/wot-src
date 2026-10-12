@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from comp7_core.gui.Scaleform.daapi.view.battle.consumables_panel import Comp7CoreConsumablesPanel
 from helpers import dependency
 from skeletons.gui.game_control import IComp7Controller

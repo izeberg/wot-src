@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from helpers import dependency
 from skeletons.gui.lobby_context import ILobbyContext
 from web.web_client_api import W2CSchema, w2c

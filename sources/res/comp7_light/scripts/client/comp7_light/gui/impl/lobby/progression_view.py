@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing, BigWorld, SoundGroups
 from comp7_core.gui.impl.lobby.comp7_core_helpers import comp7_core_model_helpers
 from comp7_light.gui.impl.gen.view_models.views.lobby.progression.progress_level_model import ProgressLevelModel
@@ -60,7 +61,7 @@ class ProgressionView(SubModelPresenter):
         if contentID == R.views.lobby.tooltips.AdditionalRewardsTooltip():
             fromIndex = int(event.getArgument('fromIndex'))
             index = int(event.getArgument('index'))
-            bonuses = [ bonus for bonus in self.__bonuses[index][fromIndex:] ]
+            bonuses = list(self.__bonuses[index][fromIndex:])
             return AdditionalRewardsTooltip(bonuses)
         return super(ProgressionView, self).createToolTipContent(event, contentID)
 

@@ -1,5 +1,7 @@
+from __future__ import absolute_import
 import logging
 from functools import partial
+from past.builtins import long
 from adisp import adisp_process
 from constants import JOIN_FAILURE, PREBATTLE_TYPE
 from debug_utils import LOG_CURRENT_EXCEPTION
@@ -100,7 +102,7 @@ class StrongholdsWebApi(object):
                 _logger.warning('There is no reserve with intCD=(%s)', intCD)
                 continue
             rawParams = params_helper.getParameters(item)
-            result[intCD] = {pName:pValue for pName, pValue in formatters.getFormattedParamsList(item.descriptor, rawParams)}
+            result[intCD] = dict(formatters.getFormattedParamsList(item.descriptor, rawParams))
 
         return result
 

@@ -630,8 +630,7 @@ msgid "booster/bonus/booster_free_xp_and_crew_xp"
 msgstr "%(effectValue)s to Free and Crew XP for %(effectHours)s"
 
 msgid "booster/bonus/booster_xp"
-msgstr ""
-"%(effectValue)s bonus for %(effectHours)s to experience earned in battle"
+msgstr "%(effectValue)s to Combat XP for %(effectHours)s"
 
 msgid "booster/description/bonusValueTime/booster_credits"
 msgstr "%(effectValue)s bonus to credits earned in battle for %(effectTime)s"
@@ -4452,6 +4451,9 @@ msgstr ""
 msgid "moduleInfo/closeBtn"
 msgstr "Close"
 
+msgid "moduleInfo/combatThrottle"
+msgstr "Combat Throttle"
+
 msgid "moduleInfo/compatible/clipVehicles"
 msgstr "Equipped with magazine loading system on vehicles:"
 
@@ -6530,6 +6532,12 @@ msgstr "(item(s))"
 
 msgid "tank_params/coincidenceElectromechanicalSightDuration"
 msgstr "Coincidence Electromechanical Sight Duration"
+
+msgid "tank_params/combatThrottleCooldown"
+msgstr "Cooldown"
+
+msgid "tank_params/combatThrottleDuration"
+msgstr "Duration"
 
 msgid "tank_params/concentrationModeCooldown"
 msgstr "Cooldown"

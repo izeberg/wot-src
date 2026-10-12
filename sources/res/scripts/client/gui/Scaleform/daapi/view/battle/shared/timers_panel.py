@@ -24,10 +24,10 @@ from gui.shared.items_parameters import isAutoReloadGun
 from gui.shared.utils.MethodsRules import MethodsRules
 from helpers import dependency
 from items import vehicles
+from items.vehicle_mechanics_types import VehicleMechanicKeys
 from math_utils import almostEqual
 from skeletons.gui.battle_session import IBattleSessionProvider
 from skeletons.gui.lobby_context import ILobbyContext
-from vehicles.mechanics.mechanic_constants import VehicleMechanic
 from vehicles.mechanics.mechanic_helpers import hasVehicleDescrMechanic
 if typing.TYPE_CHECKING:
     from typing import List
@@ -135,6 +135,9 @@ class _BaseTimersCollection(object):
     def clear(self):
         pass
 
+    def hasActiveTimer(self, typeID):
+        return False
+
     def addTimer(self, typeID, viewID, totalTime, finishTime, startTime=None):
         pass
 
@@ -202,6 +205,9 @@ class _StackTimersCollection(_BaseTimersCollection):
             timer.clear()
 
         return
+
+    def hasActiveTimer(self, typeID):
+        return typeID in self._timers
 
     def addTimer(self, typeID, viewID, totalTime, finishTime, startTime=None):
         if typeID in self._timers:
@@ -714,7 +720,7 @@ class TimersPanel(TimersPanelMeta, MethodsRules):
             return
 
     def __hasOverlappingMechanic(self, vTypeDescr):
-        return vTypeDescr.isDualgunVehicle or isAutoReloadGun(vTypeDescr.gun) or hasVehicleDescrMechanic(vTypeDescr, VehicleMechanic.CHARGEABLE_BURST)
+        return vTypeDescr.isDualgunVehicle or isAutoReloadGun(vTypeDescr.gun) or hasVehicleDescrMechanic(vTypeDescr, VehicleMechanicKeys.CHARGEABLE_BURST)
 
     def _onVehicleStateUpdated(self, state, value):
         if state == VEHICLE_VIEW_STATE.SWITCHING:

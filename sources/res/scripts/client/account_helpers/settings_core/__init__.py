@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from skeletons.account_helpers.settings_core import ISettingsCache, ISettingsCore, IBattleCommunicationsSettings
 
 def getSettingsCoreConfig(manager):

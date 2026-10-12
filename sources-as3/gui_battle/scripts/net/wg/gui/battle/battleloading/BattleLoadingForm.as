@@ -1,5 +1,6 @@
 package net.wg.gui.battle.battleloading
 {
+   import flash.display.MovieClip;
    import flash.text.TextField;
    import net.wg.data.VO.daapi.DAAPIVehicleInfoVO;
    import net.wg.data.VO.daapi.DAAPIVehicleUserTagsVO;
@@ -43,13 +44,17 @@ package net.wg.gui.battle.battleloading
       private static const RENDERERS_CONTAINER_NAME:String = "container";
       
       private static const EXTENDED_LAYOUT_OFFSET_X:int = 30;
+      
+      private static const SIMPLE_BG_LBL:String = "simple";
+      
+      private static const TIPS_BG_LBL:String = "tips";
        
       
       public var team1Text:TextField;
       
       public var team2Text:TextField;
       
-      public var formBackgroundTable:BattleAtlasSprite;
+      public var formBackgroundTable:MovieClip;
       
       public var leftSquad:BattleAtlasSprite = null;
       
@@ -110,18 +115,7 @@ package net.wg.gui.battle.battleloading
       {
          var _loc2_:IBattleLoadingRenderer = null;
          this._data = param1;
-         if(param1.showTableBackground)
-         {
-            this.formBackgroundTable.imageName = BATTLEATLAS.BATTLE_LOADING_FORM_BG_TABLE;
-            this.team1Text.x = param1.leftTeamTitleLeft;
-            this.team2Text.x = param1.rightTeamTitleLeft;
-         }
-         if(param1.showTipsBackground)
-         {
-            this._team1TextInitX = param1.leftTeamTitleLeft;
-            this._team2TextInitX = param1.rightTeamTitleLeft;
-            this.formBackgroundTable.imageName = BATTLEATLAS.BATTLE_LOADING_FORM_BG_TIPS;
-         }
+         this.setFormBG(param1);
          if(param1.showMinimap)
          {
             showMap(param1.arenaTypeID,param1.minimapTeam);
@@ -365,6 +359,22 @@ package net.wg.gui.battle.battleloading
          for each(_loc4_ in this._enemyRenderers)
          {
             _loc4_.isExtendedLayout = _loc3_;
+         }
+      }
+      
+      protected function setFormBG(param1:VisualTipInfoVO) : void
+      {
+         if(param1.showTableBackground)
+         {
+            this.formBackgroundTable.gotoAndStop(SIMPLE_BG_LBL);
+            this.team1Text.x = param1.leftTeamTitleLeft;
+            this.team2Text.x = param1.rightTeamTitleLeft;
+         }
+         if(param1.showTipsBackground)
+         {
+            this._team1TextInitX = param1.leftTeamTitleLeft;
+            this._team2TextInitX = param1.rightTeamTitleLeft;
+            this.formBackgroundTable.gotoAndStop(TIPS_BG_LBL);
          }
       }
       

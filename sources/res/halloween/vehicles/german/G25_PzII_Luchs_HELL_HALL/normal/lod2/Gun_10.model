@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>halloween/vehicles/german/G25_PzII_Luchs_HELL_HALL/normal/lod2/Gun_10</nodefullVisual>
+	<parent>halloween/vehicles/german/G25_PzII_Luchs_HELL_HALL/normal/lod3/Gun_10</parent>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+	<materialNames/>
+	<visibilityBox>
+		<min>-0.295664 -0.189691 0.004277</min>
+		<max>0.342518 0.305895 2.419682</max>
+	</visibilityBox>
+</root>

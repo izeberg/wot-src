@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging
 from collections import namedtuple
 from gui.impl import backport
@@ -57,7 +58,7 @@ class NOTIFICATION_TYPE(object):
     HO_RESOURCE_REMINDER = 38
     HO_FRIEND_RESOURCE_REMINDER = 39
     HO_NO_FRIENDS_REMINDER = 40
-    RANGE = None
+    RANGE = frozenset()
 
 
 NOTIFICATION_TYPE.RANGE = frozenset(v for k, v in NOTIFICATION_TYPE.__dict__.items() if not k.startswith('_') and isinstance(v, ScalarTypes) and v != NOTIFICATION_TYPE.UNDEFINED)

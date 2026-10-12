@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>halloween/vehicles/italy/It19_Progetto_C50_mod_66_HW_BOT/normal/lod3/Chassis</nodefullVisual>
+	<tank>true</tank>
+	<parent>halloween/vehicles/italy/It19_Progetto_C50_mod_66_HW_BOT/normal/lod4/Chassis</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.624920 0.000000 -3.952988</min>
+		<max>1.624920 1.134880 3.045624</max>
+	</visibilityBox>
+</root>

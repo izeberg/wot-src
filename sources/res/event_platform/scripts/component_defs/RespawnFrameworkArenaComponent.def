@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<CellMethods>
+		<onUpdateVehicleInfo>
+			<Arg>OBJECT_ID</Arg>
+			<Arg>PYTHON</Arg>
+		</onUpdateVehicleInfo>
+	</CellMethods>
+	<Properties/>
+	<ofEntity>
+		<Arena/>
+	</ofEntity>
+</root>

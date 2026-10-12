@@ -1,5 +1,6 @@
-from collections import namedtuple
+from __future__ import absolute_import
 import typing
+from collections import namedtuple
 RoleEquipmentState = namedtuple('RoleEquipmentState', ('level', 'progress'))
 StatusWithTimeInterval = namedtuple('StatusWithTimeInterval', ('statusID', 'startTime',
                                                                'endTime'))

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<Properties>
+		<modifiers>
+			<Type>PYTHON</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</modifiers>
+	</Properties>
+	<ofEntity>
+		<Vehicle/>
+	</ofEntity>
+	<DefaultKeyName>hwModifiers</DefaultKeyName>
+</root>

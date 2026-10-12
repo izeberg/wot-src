@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import weakref, BigWorld, Keys
 from aih_constants import CTRL_MODE_NAME
 from debug_utils import LOG_ERROR

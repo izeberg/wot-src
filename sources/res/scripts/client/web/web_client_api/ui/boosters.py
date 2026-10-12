@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from web.web_client_api import w2c, W2CSchema, Field
 from gui.shared import event_dispatcher as shared_events
 

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from collections import deque
 from gui.shared.utils.decorators import ReprInjector
 from messenger.m_constants import PROTO_TYPE, USER_TAG, GAME_ONLINE_STATUS
@@ -216,7 +217,7 @@ class XMPPChatChannelEntity(_XMPPChannelEntity):
     def addMembers(self, members):
         pass
 
-    def removeMembers(self, ids):
+    def removeMembers(self, membersIDs):
         pass
 
     def setUser(self, jid, nickname, presence=PRESENCE.AVAILABLE):

@@ -1,6 +1,7 @@
-import logging
+from __future__ import absolute_import
+import logging, typing
+from future.utils import viewitems
 from functools import partial
-import typing
 from gui.Scaleform.lobby_entry import getLobbyStateMachine
 from shared_utils import first, findFirst
 from CurrentVehicle import g_currentPreviewVehicle, g_currentVehicle
@@ -34,7 +35,6 @@ from gui.impl.backport.backport_tooltip import TooltipData
 from gui.impl.gen import R
 from gui.impl.gui_decorators import args2params
 from gui.impl.lobby.tooltips.vehicle_role_descr_view import VehicleRolesTooltipView
-from gui.platform.products_fetcher.fetch_result import ResponseStatus
 from gui.shared import g_eventBus
 from gui.shared.event_dispatcher import showStorage
 from gui.shared.gui_items import GUI_ITEM_TYPE
@@ -55,6 +55,7 @@ if typing.TYPE_CHECKING:
     from typing import Dict
     from comp7.helpers.comp7_server_settings import Comp7RanksConfig
     from comp7.gui.game_control.comp7_shop_controller import ShopPageProductInfo
+    from gui.platform.products_fetcher.fetch_result import ResponseStatus
     from gui.Scaleform.framework.application import AppEntry
 
 @dependency.replace_none_kwargs(service=ICustomizationService, hangarSpace=IHangarSpace)
@@ -319,7 +320,7 @@ class ShopPage(PageSubModelPresenter):
 
     def __updateProductsData(self, shopModel):
         productItems = []
-        for productCode, productData in self.__products.iteritems():
+        for productCode, productData in viewitems(self.__products):
             productModel = packProduct(productData)
             if productModel is not None:
                 self.__productCdToCode[productModel.getId()] = productCode
@@ -341,7 +342,7 @@ class ShopPage(PageSubModelPresenter):
             discountItems = []
             productCode = self.__productCdToCode[self.__currentItemCD]
             product = self.__products[productCode]
-            for rankName, discount in product.discounts.iteritems():
+            for rankName, discount in viewitems(product.discounts):
                 discountModel = RankDiscountModel()
                 rank = comp7_shared.getRankByName(rankName)
                 setRankData(discountModel, rank.value, self.ranksConfig)

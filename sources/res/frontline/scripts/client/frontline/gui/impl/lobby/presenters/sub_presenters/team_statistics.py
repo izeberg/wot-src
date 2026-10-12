@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from frontline.gui.impl.gen.view_models.views.lobby.views.post_battle_results_view.battle_team_stats_model import BattleTeamStatsModel
 from constants import ARENA_BONUS_TYPE

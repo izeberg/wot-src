@@ -1,4 +1,7 @@
-import math, BigWorld
+from __future__ import absolute_import, division
+import math
+from future.utils import listvalues
+import BigWorld
 from frontline.gui.Scaleform.daapi.view.meta.FrontlineRespawnViewMeta import FrontlineRespawnViewMeta
 from frontline.gui.Scaleform.genConsts.FRONTLINE_BATTLE_VIEW_ALIASES import FRONTLINE_BATTLE_VIEW_ALIASES
 from frontline.gui.battle_control.controllers.frontline_respawn_ctrl import IFrontlineRespawnView
@@ -11,6 +14,7 @@ from debug_utils import LOG_DEBUG, LOG_ERROR
 from gui.battle_control import minimap_utils
 from gui.Scaleform.daapi.view.battle.shared.respawn import respawn_utils
 from gui.sounds.epic_sound_constants import EPIC_SOUND, EPIC_TIME_WWEVENTS
+from math_common import round_py2_style_int
 import SoundGroups
 _BF_EB_COUNT_DOWN_SOUND_SECONDS = 10
 _DEFAULT_RESPAWN_POSITIONS = (
@@ -36,12 +40,12 @@ class FrontlineRespawnView(FrontlineRespawnViewMeta, IFrontlineRespawnView):
         self.__battleCtx = None
         return
 
-    def _onRegisterFlashComponent(self, componentPy, alias):
-        super(FrontlineRespawnView, self)._onRegisterFlashComponent(componentPy, alias)
+    def _onRegisterFlashComponent(self, viewPy, alias):
+        super(FrontlineRespawnView, self)._onRegisterFlashComponent(viewPy, alias)
         if alias == FRONTLINE_BATTLE_VIEW_ALIASES.FRONTLINE_BATTLE_TANK_CAROUSEL:
-            self.__carousel = componentPy
+            self.__carousel = viewPy
         elif alias == FRONTLINE_BATTLE_VIEW_ALIASES.FRONTLINE_RESPAWN_AMMUNITION_PANEL:
-            self.__ammunitionPanel = componentPy
+            self.__ammunitionPanel = viewPy
 
     def _onUnregisterFlashComponent(self, viewPy, alias):
         if alias == FRONTLINE_BATTLE_VIEW_ALIASES.FRONTLINE_BATTLE_TANK_CAROUSEL:
@@ -87,9 +91,9 @@ class FrontlineRespawnView(FrontlineRespawnViewMeta, IFrontlineRespawnView):
             self.__playCountDownSound(False)
         return
 
-    def onLocationSelected(self, pointId):
-        if self.__selectedPointID != pointId:
-            self.setSelectedPoint(pointId)
+    def onLocationSelected(self, pointIdx):
+        if self.__selectedPointID != pointIdx:
+            self.setSelectedPoint(pointIdx)
 
     def onDeploymentReady(self):
         self.__playSound(EPIC_SOUND.EB_READY_FOR_DEPLOYMENT)
@@ -110,7 +114,7 @@ class FrontlineRespawnView(FrontlineRespawnViewMeta, IFrontlineRespawnView):
         return isVehicleChanged
 
     def updateTimer(self, timeLeft, vehs, cooldowns, limits=None):
-        mainTimer = i18n.makeString(EPIC_BATTLE.RESPAWNSCREEN_SECONDSTIMERTEXT, seconds=int(round(timeLeft[0])))
+        mainTimer = i18n.makeString(EPIC_BATTLE.RESPAWNSCREEN_SECONDSTIMERTEXT, seconds=round_py2_style_int(timeLeft[0]))
         secondsLeft = int(math.ceil(timeLeft[0]))
         if secondsLeft <= 0 and not self.__timeOver:
             self.__timeOver = True
@@ -126,7 +130,7 @@ class FrontlineRespawnView(FrontlineRespawnViewMeta, IFrontlineRespawnView):
             self.as_updateTimerS(secondsLeft == 0, mainTimer)
         secondsLeft = int(math.ceil(timeLeft[1]))
         if secondsLeft <= 10:
-            autoTimer = i18n.makeString(EPIC_BATTLE.RESPAWN_AUTO_TIMER_TXT, seconds=int(round(timeLeft[1])))
+            autoTimer = i18n.makeString(EPIC_BATTLE.RESPAWN_AUTO_TIMER_TXT, seconds=round_py2_style_int(timeLeft[1]))
             self.as_updateAutoTimerS(secondsLeft == 0.0, autoTimer)
             if self.__countDownIsPlaying is False:
                 self.__playCountDownSound(True)
@@ -153,7 +157,7 @@ class FrontlineRespawnView(FrontlineRespawnViewMeta, IFrontlineRespawnView):
     def start(self, vehs, isLimited):
         self.__carousel.sortVehicles(vehs)
 
-    def setLimits(self, limits):
+    def setLimits(self, respawnLimits):
         pass
 
     def setSelectedLane(self, laneId):
@@ -226,8 +230,9 @@ class FrontlineRespawnView(FrontlineRespawnViewMeta, IFrontlineRespawnView):
     def __getVehicleLimits(self, limits):
         result = []
         if limits:
-            for vehCD in next(limits.itervalues()):
-                if all([ vehCD in cdList for cdList in limits.itervalues() ]):
+            valueLists = listvalues(limits)
+            for vehCD in valueLists[0]:
+                if all(vehCD in cdList for cdList in valueLists):
                     result.append(vehCD)
 
         return result

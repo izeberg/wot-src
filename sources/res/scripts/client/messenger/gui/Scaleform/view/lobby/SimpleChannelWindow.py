@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.framework.managers.loaders import SFViewLoadParams
 from gui.Scaleform.managers.windows_stored_data import g_windowsStoredData, TARGET_ID
 from gui.impl import backport

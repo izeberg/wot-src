@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_292_HW_PowerCollector/normal/lod3/attachment</parent>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.532837 -0.000000 -0.600127</min>
+		<max>0.047556 0.406563 0.601726</max>
+	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/Cus_292_HW_PowerCollector/normal/lod2/attachment</nodefullVisual>
+</root>

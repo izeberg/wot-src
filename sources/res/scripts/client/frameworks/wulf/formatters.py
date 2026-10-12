@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from .gui_constants import NumberFormatType, RealFormatType
 from .gui_constants import TimeFormatType, DateFormatType

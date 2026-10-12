@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from account_helpers.AccountSettings import STATS_COMP7_SORTING
 from gui.battle_results.components.shared import SortingBlock
 

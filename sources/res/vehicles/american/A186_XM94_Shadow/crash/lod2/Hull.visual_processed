@@ -54,36 +54,6 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_mat_inside</identifier>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>0</materialKind>
-					<fx>shaders/std_effects/PBS_tank.fx</fx>
-					<property>
-						metallicGlossMap
-						<Texture>vehicles/american/crash_inside/crash_inside_GMM.dds</Texture>
-					</property>
-					<property>
-						normalMap
-						<Texture>vehicles/american/crash_inside/crash_inside_NM.dds</Texture>
-					</property>
-					<property>
-						diffuseMap
-						<Texture>vehicles/american/crash_inside/crash_inside_AM.dds</Texture>
-					</property>
-					<property>
-						excludeMaskAndAOMap
-						<Texture>vehicles/american/crash_inside/crash_inside_AO.dds</Texture>
-					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>true</Bool>
-					</property>
-				</material>
-				<groupOrigin>-0.024973 0.077961 0.029943</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
-				1
-				<material>
 					<identifier>tank_hull_01</identifier>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
@@ -113,10 +83,10 @@
 						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.010136 0.126296 -0.052842</groupOrigin>
+				<groupOrigin>0.010136 0.126295 -0.052842</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				2
+				1
 				<material>
 					<identifier>tank_chassis_01</identifier>
 					<collisionFlags>0</collisionFlags>
@@ -155,7 +125,37 @@
 						<Bool>true</Bool>
 					</property>
 				</material>
-				<groupOrigin>-0.000000 -0.315296 -0.004992</groupOrigin>
+				<groupOrigin>-0.000000 -0.315297 -0.004992</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				2
+				<material>
+					<identifier>tank_mat_inside</identifier>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/american/crash_inside/crash_inside_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/american/crash_inside/crash_inside_NM.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/american/crash_inside/crash_inside_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/american/crash_inside/crash_inside_AO.dds</Texture>
+					</property>
+					<property>
+						g_useNormalPackDXT1
+						<Bool>true</Bool>
+					</property>
+				</material>
+				<groupOrigin>-0.024973 0.077960 0.029943</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -163,5 +163,5 @@
 		<min>-1.662989 -0.749162 -3.039190</min>
 		<max>1.683261 0.707231 2.933505</max>
 	</boundingBox>
-	<geometrySize>276652</geometrySize>
+	<geometrySize>283686</geometrySize>
 </root>

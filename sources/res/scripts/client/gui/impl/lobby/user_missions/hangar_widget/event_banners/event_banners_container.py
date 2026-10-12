@@ -1,6 +1,9 @@
 from __future__ import absolute_import
+from future.utils import viewvalues
 import typing, Event
+from helpers import dependency
 from soft_exception import SoftException
+from system_events import g_systemEvents
 if typing.TYPE_CHECKING:
     from typing import Dict, Type
     from gui.impl.lobby.user_missions.hangar_widget.event_banners.base_event_banner import BaseEventBanner
@@ -19,6 +22,7 @@ class EventBannersContainer(object):
         self.__eventsMap = {}
         self.onBannerUpdate = Event.Event()
         self._initialized = True
+        g_systemEvents.onDependenciesReady += self.startPersistentListening
 
     @property
     def events(self):
@@ -27,7 +31,10 @@ class EventBannersContainer(object):
     def registerEventBanner(self, eventBannerCls):
         if self.__eventsMap.has_key(eventBannerCls.NAME):
             raise SoftException(('Banner for key {0} is already registered').format(eventBannerCls.NAME))
-        self.__eventsMap[eventBannerCls.NAME] = eventBannerCls()
+        banner = eventBannerCls()
+        self.__eventsMap[eventBannerCls.NAME] = banner
+        if dependency.isConfigured():
+            banner.startPersistentListening()
 
     def getEventBanner(self, key):
         return self.__eventsMap.get(key)
@@ -36,4 +43,10 @@ class EventBannersContainer(object):
         banner = self.__eventsMap.pop(eventBannerCls.NAME)
         if banner is not None:
             banner.onDisappear()
+            banner.stopPersistentListening()
         return
+
+    def startPersistentListening(self):
+        g_systemEvents.onDependenciesReady -= self.startPersistentListening
+        for banner in viewvalues(self.__eventsMap):
+            banner.startPersistentListening()

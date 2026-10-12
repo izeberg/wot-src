@@ -1,0 +1,42 @@
+msgid ""
+msgstr ""
+
+msgid "common/toEvent"
+msgstr "To Event"
+
+msgid "serviceChannelMessages/battleResults/battleMapName"
+msgstr "Map:"
+
+msgid "serviceChannelMessages/battleResults/battleTypeName"
+msgstr "Event: Black Signal"
+
+msgid "serviceChannelMessages/battleResults/credits"
+msgstr "Credits received:"
+
+msgid "serviceChannelMessages/battleResults/progression"
+msgstr "Data Packets received:"
+
+msgid "serviceChannelMessages/battleResults/tanks"
+msgstr "Vehicles:"
+
+msgid "serviceChannelMessages/eventName"
+msgstr "Black Signal"
+
+msgid "serviceChannelMessages/fortRushBattlesFinishMessage/body"
+msgstr "Thank you for playing!"
+
+msgid "serviceChannelMessages/fortRushBattlesFinishMessage/header"
+msgstr "Black Signal has ended"
+
+msgid "serviceChannelMessages/fortRushEventResumedMessage/body"
+msgstr "The event is available again."
+
+msgid "serviceChannelMessages/fortRushEventStartMessage/body"
+msgstr ""
+"Take control of the antennas. Hold the network. Secure the transmission."
+
+msgid "serviceChannelMessages/fortRushEventStartMessage/header"
+msgstr "Black Signal has started"
+
+msgid "serviceChannelMessages/fortRushEventSuspendedMessage/body"
+msgstr "The Black Signal event is unavailable for technical reasons."

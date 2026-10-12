@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/russian/R236_Object_265_II/_skins/R236_Object_265_II_HW26_3Dst/normal/lod2/Turret_01</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/russian/R236_Object_265_II/_skins/R236_Object_265_II_HW26_3Dst/normal/lod3/Turret_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.768073 -0.010961 -3.472589</min>
+		<max>1.754472 1.832634 1.676888</max>
+	</visibilityBox>
+</root>

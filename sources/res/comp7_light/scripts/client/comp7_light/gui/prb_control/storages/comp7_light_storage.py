@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from comp7_light_constants import ARENA_GUI_TYPE
 from gui.prb_control.storages.local_storage import SessionStorage
 from helpers import dependency

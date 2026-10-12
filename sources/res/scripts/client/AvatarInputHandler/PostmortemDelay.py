@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import math, BigWorld, Math, math_utils
 from AvatarInputHandler.DynamicCameras.ArcadeCamera import ArcadeCamera
 from PlayerEvents import g_playerEvents

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>halloween/vehicles/british/GB24_Centurion_Mk3_HW_BOT/normal/lod3/Gun_04</parent>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.660943 -0.257555 -0.144138</min>
+		<max>0.673837 0.278432 4.271925</max>
+	</visibilityBox>
+	<nodefullVisual>halloween/vehicles/british/GB24_Centurion_Mk3_HW_BOT/normal/lod2/Gun_04</nodefullVisual>
+</root>

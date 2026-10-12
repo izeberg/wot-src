@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from account_helpers.AccountSyncData import BaseSyncDataCache
 from shared_utils.account_helpers.diff_utils import synchronizeDicts
 

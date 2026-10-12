@@ -1,4 +1,4 @@
-
+from __future__ import absolute_import
 
 class FL_BATTLE_UPGRADE_PANEL_SOUND_EVENTS(object):
     UPGRADE_PANEL_SHOW = 'eb_reserves_widget_on'

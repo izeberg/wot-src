@@ -60,16 +60,12 @@ class OptionalDevicesAssistantView(BaseSubModelView):
 
     def onLoading(self, *args, **kwargs):
         super(OptionalDevicesAssistantView, self).onLoading(*args, **kwargs)
-        self._fillModel()
+        self.fillModel()
 
     def updateVehicle(self, _=None):
-        self._fillModel()
+        self.fillModel()
 
-    @args2params(int)
-    def __onPresetSelected(self, presetType):
-        AccountSettings.setSettings(OptionalDevicesAssistant.SELECTED_PRESET, presetType)
-
-    def _fillModel(self):
+    def fillModel(self):
         currentVehicle = g_currentVehicle.item
         if not self.__isSuitableVehicle(currentVehicle):
             self.viewModel.setState(OptionalDevicesAssistantStateEnum.NOTSUITABLEVEHICLE)
@@ -130,7 +126,7 @@ class OptionalDevicesAssistantView(BaseSubModelView):
         return popularItemsData
 
     def __onDataChanged(self, _):
-        self._fillModel()
+        self.fillModel()
 
     def __isSuitableVehicle(self, vehicle):
         if self._queueType == QUEUE_TYPE.RANDOMS:
@@ -147,6 +143,10 @@ class OptionalDevicesAssistantView(BaseSubModelView):
         if self._queueType == QUEUE_TYPE.COMP7:
             return not vehicle.isSecret or vehicle.isOnlyForComp7Battles
         return True
+
+    @args2params(int)
+    def __onPresetSelected(self, presetType):
+        AccountSettings.setSettings(OptionalDevicesAssistant.SELECTED_PRESET, presetType)
 
     def __createPreset(self, presetType, resultType, resultVehicle, loadouts):
         preset = OptDeviceAssistPresetUI()

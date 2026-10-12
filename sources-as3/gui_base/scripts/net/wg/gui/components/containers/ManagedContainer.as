@@ -482,6 +482,21 @@ package net.wg.gui.components.containers
          return true;
       }
       
+      override public function get empty() : Boolean
+      {
+         var _loc1_:uint = numChildren;
+         var _loc2_:uint = 0;
+         while(_loc2_ < _loc1_)
+         {
+            if(getChildAt(_loc2_) is IManagedContent)
+            {
+               return false;
+            }
+            _loc2_++;
+         }
+         return true;
+      }
+      
       public function get paddings() : Rectangle
       {
          return new Rectangle();

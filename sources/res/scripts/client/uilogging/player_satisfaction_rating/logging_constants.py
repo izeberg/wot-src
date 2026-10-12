@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from enum import Enum
 from chat_commands_consts import BATTLE_CHAT_COMMAND_NAMES
 from gui.Scaleform.daapi.view.lobby.lobby_constants import USER

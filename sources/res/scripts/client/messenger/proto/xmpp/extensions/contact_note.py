@@ -1,4 +1,5 @@
-import types
+from __future__ import absolute_import
+from past.builtins import basestring, long
 from helpers import html
 from messenger.proto.xmpp.extensions import PyExtension, PyQuery
 from messenger.proto.xmpp.extensions.ext_constants import XML_NAME_SPACE as _NS

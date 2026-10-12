@@ -28,7 +28,7 @@ class GiftEventBaseStamper(IGiftEventStamper):
         self.__updateCallback = updateCallback
         self.__isBalanceAvailable = self.__wasBalanceAvailable = False
         self.__initBalanceWatchers()
-        g_clientUpdateManager.addCallbacks({'cache.mayConsumeWalletResources': self.__updateBalanceAvailability, 
+        g_clientUpdateManager.addCallbacks({'cache.isResourcesConsumptionAllowed': self.__updateBalanceAvailability, 
            'cache.entitlements': self.__updateBalanceContent})
 
     def destroy(self):
@@ -56,7 +56,7 @@ class GiftEventBaseStamper(IGiftEventStamper):
         self.__onItemsSyncCompleted()
 
     def __onItemsSyncCompleted(self, *_):
-        mayConsumeWalletResources = self.__itemsCache.items.stats.mayConsumeWalletResources
+        mayConsumeWalletResources = self.__itemsCache.items.stats.isResourcesConsumptionAllowed
         self.__isBalanceAvailable = self.__wasBalanceAvailable = mayConsumeWalletResources
         self.__itemsCache.onSyncCompleted -= self.__onItemsSyncCompleted
         self.__notifyGiftEventHub()

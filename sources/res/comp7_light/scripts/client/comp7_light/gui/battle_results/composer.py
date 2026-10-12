@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from comp7_light.gui.battle_results.templates import comp7_light_templates
 from gui.battle_results import templates

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from frameworks.wulf import ViewFlags, ViewSettings, WindowFlags, WindowLayer
 from gui.impl.pub import ViewImpl, WindowImpl
 from gui.impl.gen import R

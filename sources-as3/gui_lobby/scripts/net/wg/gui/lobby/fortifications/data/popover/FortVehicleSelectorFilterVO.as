@@ -7,9 +7,13 @@ package net.wg.gui.lobby.fortifications.data.popover
    {
       
       private static const MAIN_BTN:String = "mainBtn";
+      
+      private static const FROZEN_BTN:String = "frozenBtn";
        
       
       public var mainBtn:SimpleRendererVO = null;
+      
+      public var frozenBtn:SimpleRendererVO = null;
       
       public var nationTooltip:String = "";
       
@@ -25,6 +29,11 @@ package net.wg.gui.lobby.fortifications.data.popover
             this.mainBtn = new SimpleRendererVO(param2);
             return false;
          }
+         if(param1 == FROZEN_BTN)
+         {
+            this.frozenBtn = new SimpleRendererVO(param2);
+            return false;
+         }
          return super.onDataWrite(param1,param2);
       }
       
@@ -34,6 +43,11 @@ package net.wg.gui.lobby.fortifications.data.popover
          {
             this.mainBtn.dispose();
             this.mainBtn = null;
+         }
+         if(this.frozenBtn)
+         {
+            this.frozenBtn.dispose();
+            this.frozenBtn = null;
          }
          super.onDispose();
       }

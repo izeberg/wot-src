@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>vehicles/german/G06_PzII/normal/lod4/Gun_07</nodefullVisual>
 	<tank>true</tank>
 	<visibilityBox>
 		<min>-0.483762 -0.120064 -0.084425</min>
 		<max>0.276682 0.122714 1.007232</max>
 	</visibilityBox>
+	<nodefullVisual>vehicles/german/G06_PzII/normal/lod4/Gun_07</nodefullVisual>
 </root>

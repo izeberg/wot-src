@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import CGF, Math
 from constants import VEHICLE_SIEGE_STATE
 from cgf_script.registration import registerComponent

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from comp7.gui.impl.gen.view_models.views.lobby.enums import SeasonName
 from comp7.gui.impl.gen.view_models.views.lobby.tooltips.progression_tooltip_model import ProgressionTooltipModel
 from comp7.gui.impl.lobby.comp7_helpers import comp7_model_helpers, comp7_shared, comp7_qualification_helpers

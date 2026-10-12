@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import VOIP
 from comp7_core.gui.Scaleform.daapi.view.meta.Comp7BattleStatisticDataControllerMeta import Comp7BattleStatisticDataControllerMeta
 from comp7_light.gui.Scaleform.genConsts.TOOLTIPS_BATTLE_CONSTANTS import TOOLTIPS_BATTLE_CONSTANTS

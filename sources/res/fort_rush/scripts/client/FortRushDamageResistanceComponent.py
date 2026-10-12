@@ -1,0 +1,8 @@
+from __future__ import absolute_import
+from cgf_client_common.entity_dyn_components import ReplicableDynamicScriptComponent
+from cgf_script.registration import registerReplicableComponent
+from fort_rush_common.cgf.damage_resistance import FortRushDamageResistanceComponentDescr
+
+@registerReplicableComponent
+class FortRushDamageResistanceComponent(ReplicableDynamicScriptComponent, FortRushDamageResistanceComponentDescr):
+    pass

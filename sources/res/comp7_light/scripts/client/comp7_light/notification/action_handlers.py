@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from comp7_light.gui.shared.event_dispatcher import showComp7LightProgressionView
 from notification.actions_handlers import NavigationDisabledActionHandler
 from notification.settings import NOTIFICATION_TYPE

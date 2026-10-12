@@ -1,5 +1,5 @@
 from __future__ import absolute_import
-from builtins import zip
+from future.utils import lzip
 from collections import namedtuple
 from constants import PREMIUM_ENTITLEMENTS
 from items.components.c11n_constants import Rarity
@@ -213,7 +213,7 @@ class LSCustomizationsBonusFormatter(CustomizationsBonusFormatter):
         return c11item.buyPrices.itemPrice.price
 
     def _format(self, bonus):
-        customizations = zip(bonus.getCustomizations(), bonus.getList())
+        customizations = lzip(bonus.getCustomizations(), bonus.getList())
         items = [ C11BonusArgs(bonus, item, bonus.getC11nItem(item), data) for item, data in customizations ]
         sortedC11Bonuses = sorted(items, key=self._getPriority)
         return [ self._createCustomizationBonus(bonusData.bonus, bonusData.item, bonusData.data) for bonusData in sortedC11Bonuses

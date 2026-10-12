@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/poland/Pl43_Kruk/crash/lod0/Chassis</nodefullVisual>
+	<parent>vehicles/poland/Pl43_Kruk/crash/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.716181 -0.002555 -3.188698</min>
+		<max>1.716192 1.080102 3.898385</max>
+	</visibilityBox>
+</root>

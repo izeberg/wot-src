@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld
 from gui.battle_control.controllers.period_ctrl import IAbstractPeriodView
 from constants import ARENA_PERIOD

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging
 from comp7.gui.shared.tooltips import TOOLTIP_TYPE
 from comp7_common_const import offerRewardGiftToken
@@ -106,8 +107,9 @@ class Comp7SelectableRewardTooltip(BlocksTooltipData):
 
     @staticmethod
     def __packRewardsBlock(tokenCategory):
+        title = backport.text(R.strings.selectable_reward.tabs.c_items.dyn(tokenCategory)())
         blocks = [
-         formatters.packTextBlockData(text=text_styles.highTitle(backport.text(R.strings.selectable_reward.tabs.items.dyn(tokenCategory)())), padding={'bottom': 10})]
+         formatters.packTextBlockData(text=text_styles.highTitle(title), padding={'bottom': 10})]
         selectableRewardList = R.strings.comp7_ext.rewardSelection.tooltip.selectableRewardList.dyn(tokenCategory)()
         if selectableRewardList:
             blocks.append(formatters.packTextBlockData(text=text_styles.main(backport.text(selectableRewardList))))

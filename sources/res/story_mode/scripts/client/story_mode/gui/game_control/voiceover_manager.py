@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from functools import partial
 import typing
 from account_helpers.settings_core.settings_constants import SOUND

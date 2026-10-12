@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from battle_modifiers_common import BattleModifiers
 from comp7.gui.impl.lobby.missions.missions_helpers import Comp7MissionsGuiHelper
 from comp7.gui.Scaleform.daapi.view.lobby.header.helpers.controls_helpers import Comp7LobbyHeaderHelper

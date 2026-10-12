@@ -7,8 +7,8 @@ from gui.Scaleform.daapi.view.meta.LowChargeShotWidgetMeta import LowChargeShotW
 from gui.veh_mechanics.battle.updaters.mechanics.mechanic_passenger_updater import VehicleMechanicPassengerUpdater
 from gui.veh_mechanics.battle.updaters.mechanics.mechanic_states_updater import VehicleMechanicStatesUpdater
 from gui.veh_mechanics.battle.updaters.mechanics.low_charge_shot_updater import LowChargeShotUpdater
+from items.vehicle_mechanics_types import VehicleMechanicKeys
 from vehicles.mechanics.gun_mechanics.low_charge_shot.private import LowChargeShotMechanicState, DEFAULT_MECHANIC_STATE
-from vehicles.mechanics.mechanic_constants import VehicleMechanic
 from vehicles.mechanics.mechanic_states import IMechanicStatesListenerLogic
 if typing.TYPE_CHECKING:
     from gui.veh_mechanics.battle.updaters.updaters_common import IViewUpdater
@@ -70,8 +70,8 @@ class LowChargeShotMechanicWidget(LowChargeShotWidgetMeta, ContainersListener, I
 
     def _getViewUpdaters(self):
         return [
-         VehicleMechanicPassengerUpdater(VehicleMechanic.LOW_CHARGE_SHOT, self),
-         VehicleMechanicStatesUpdater(VehicleMechanic.LOW_CHARGE_SHOT, self),
+         VehicleMechanicPassengerUpdater(VehicleMechanicKeys.LOW_CHARGE_SHOT, self),
+         VehicleMechanicStatesUpdater(VehicleMechanicKeys.LOW_CHARGE_SHOT, self),
          LowChargeShotUpdater(self)]
 
     def __updateState(self, state):

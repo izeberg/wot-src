@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from typing import TYPE_CHECKING
 from CurrentVehicle import g_currentVehicle
 from gui.shared.gui_items import GUI_ITEM_TYPE

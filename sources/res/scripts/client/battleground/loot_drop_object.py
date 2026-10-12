@@ -1,3 +1,4 @@
+from __future__ import absolute_import, division
 import random, math
 from collections import namedtuple
 import Math, BigWorld, CGF, AnimationSequence, math_utils
@@ -19,6 +20,7 @@ class DescendSimulator(Component):
     matrix = property(lambda self: self.__matrix)
 
     def __init__(self, yaw, dropPoint, endPoint, descendTime):
+        super(DescendSimulator, self).__init__()
         self.__matrix = math_utils.createRotationMatrix((yaw, 0, 0))
         if descendTime > 0.0:
             self.easing = Easing.linearEasing(dropPoint, endPoint, descendTime)
@@ -91,7 +93,7 @@ class DropPlane(Component, CallbackDelayer):
     FLY_TIME_BEFORE_DROP = 20
     FLY_TIME_AFTER_DROP = 10
     UNLOAD_ANIMATION_TIME = 8.0
-    FLIGHT_SPEED = 300 / 3.6
+    FLIGHT_SPEED = 83.33333333333333
     ARRIVAL_VECTOR = Math.Vector3(0, math.sin(math.radians(-30)), math.cos(math.radians(-30)))
     DEPARTURE_VECTOR = Math.Vector3(0, math.sin(math.radians(20)), math.cos(math.radians(20)))
     ARRIVAL_TRAJECTORY_INCLINATION = ARRIVAL_VECTOR * FLY_TIME_BEFORE_DROP * FLIGHT_SPEED

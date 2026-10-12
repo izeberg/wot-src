@@ -1,9 +1,9 @@
+from __future__ import absolute_import
 from functools import partial
-import AccountCommands
+import AccountCommands, season_common
 from shared_utils.account_helpers.diff_utils import synchronizeDicts
 from debug_utils import LOG_DEBUG_DEV
 from helpers import time_utils
-import season_common
 
 def _skipResponse(resultID, errorCode):
     LOG_DEBUG_DEV('_skipResponse', resultID, errorCode)

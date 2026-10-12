@@ -2260,11 +2260,6 @@ msgstr ""
 "Service error \"%(vehName)s\". Not enough gold to purchase consumables. Try "
 "again later."
 
-msgid "layout_apply/EQS_NO_WALLET_SESSION"
-msgstr ""
-"Operation unavailable. All your gold will be available after WG Wallet "
-"operability is restored automatically."
-
 msgid "layout_apply/NOT_RESEARCHED_ITEM"
 msgstr ""
 "Service error \"%(vehName)s\". Unable to resupply consumables. Try again "
@@ -2278,11 +2273,6 @@ msgstr "Service error \"%(vehName)s\". Not enough credits to purchase shells."
 
 msgid "layout_apply/SHELLS_NO_GOLD"
 msgstr "Service error \"%(vehName)s\". Not enough gold to purchase shells."
-
-msgid "layout_apply/SHELLS_NO_WALLET_SESSION"
-msgstr ""
-"Operation unavailable. All your gold will be available after WG Wallet "
-"operability is restored automatically."
 
 msgid "layout_apply/Vehicle is locked"
 msgstr "Service error \"%(vehName)s\". The vehicle is locked."
@@ -4638,7 +4628,7 @@ msgstr ""
 "Free Experience spent: %(freeXP)s."
 
 msgid "vehicleMilestones/vanityAvailable/text"
-msgstr "The Elite Rewards system is now available for the %(vehicle)s"
+msgstr "The Elite Rewards system is now available for the %(vehicle)s."
 
 msgid "vehicleMilestones/vanityAvailable/title"
 msgstr "Elite Rewards"

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from tutorial.data import chapter
 from tutorial.data import conditions
 from tutorial.data import descriptor

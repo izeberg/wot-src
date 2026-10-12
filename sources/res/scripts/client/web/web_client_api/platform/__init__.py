@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from web.web_client_api import w2capi
 from constants import WGC_PUBLICATION

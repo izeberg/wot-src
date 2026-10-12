@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from constants import IS_UE_EDITOR
 from visual_script.misc import ASPECT
 from visual_script.registrar import VSBlockRegistrar

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing, enum, logging, Math, CGF
 from cgf_modules.variable_components import VariableStorageComponent
 from constants import VEHICLE_CLASSES, VEHICLE_CLASS_INDICES

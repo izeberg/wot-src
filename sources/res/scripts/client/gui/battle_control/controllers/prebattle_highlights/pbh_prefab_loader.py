@@ -80,6 +80,11 @@ class PBHPrefabLoader(object):
 
     def __onPrefabLoaded(self, objects, queue):
         go = queue.gameObject(objects[0])
+        if self.__prefabStatus != PrefabLoaderStatus.LOADING:
+            _logger.debug('PBH prefab loaded after loader reset/clear, discard')
+            if go is not None:
+                go.destroy()
+            return
 
         def afterSubmit():
 
@@ -95,6 +100,7 @@ class PBHPrefabLoader(object):
             self.__callbackDelayer.delayCallback(0.0, afterUpdate)
 
         self.__callbackDelayer.delayCallback(0.0, afterSubmit)
+        return
 
     def __getPetBattlePrefabByID(self, petID):
         config = self.__petController.getPetsConfig().getPet(petID)

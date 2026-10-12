@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from comp7.gui.Scaleform.daapi.view.battle.shared.premature_leave import showComp7LeaverAliveWindow
 from gui.Scaleform.daapi.view.battle.shared.ingame_menu import IngameMenu
 

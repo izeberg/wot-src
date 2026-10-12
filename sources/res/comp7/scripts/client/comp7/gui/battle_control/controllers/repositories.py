@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from comp7_core.gui.battle_control.controllers.appearance_cache_ctrls.comp7_appearance_cache_ctrl import Comp7AppearanceCacheController
 from comp7_core.gui.battle_control.controllers.comp7_vehicle_ban_ctrl import Comp7VehicleBanController
 from comp7_core.gui.battle_control.controllers.comp7_voip_ctrl import Comp7VOIPController

@@ -124,6 +124,13 @@
 			<undamaged>vehicles/russian/R236_Object_265_II/normal/lod0/Hull.model</undamaged>
 			<destroyed>vehicles/russian/R236_Object_265_II/crash/lod0/Hull.model</destroyed>
 			<exploded>vehicles/russian/R236_Object_265_II/crash/lod0/Hull.model</exploded>
+			<sets>
+				<R236_Object_265_II_HW26_3Dst>
+					<undamaged>vehicles/russian/R236_Object_265_II/_skins/R236_Object_265_II_HW26_3Dst/normal/lod0/Hull.model</undamaged>
+					<destroyed>vehicles/russian/R236_Object_265_II/_skins/R236_Object_265_II_HW26_3Dst/crash/lod0/Hull.model</destroyed>
+					<exploded>vehicles/russian/R236_Object_265_II/_skins/R236_Object_265_II_HW26_3Dst/crash/lod0/Hull.model</exploded>
+				</R236_Object_265_II_HW26_3Dst>
+			</sets>
 		</models>
 		<swinging>
 			<lodDist>FAR</lodDist>
@@ -1187,6 +1194,13 @@
 				<undamaged>vehicles/russian/R236_Object_265_II/normal/lod0/Chassis.model</undamaged>
 				<destroyed>vehicles/russian/R236_Object_265_II/crash/lod0/Chassis.model</destroyed>
 				<exploded>vehicles/russian/R236_Object_265_II/crash/lod0/Chassis.model</exploded>
+				<sets>
+					<R236_Object_265_II_HW26_3Dst>
+						<undamaged>vehicles/russian/R236_Object_265_II/_skins/R236_Object_265_II_HW26_3Dst/normal/lod0/Chassis.model</undamaged>
+						<destroyed>vehicles/russian/R236_Object_265_II/_skins/R236_Object_265_II_HW26_3Dst/crash/lod0/Chassis.model</destroyed>
+						<exploded>vehicles/russian/R236_Object_265_II/_skins/R236_Object_265_II_HW26_3Dst/crash/lod0/Chassis.model</exploded>
+					</R236_Object_265_II_HW26_3Dst>
+				</sets>
 			</models>
 			<traces>
 				<lodDist>MEDIUM</lodDist>
@@ -1293,6 +1307,45 @@
 									<row3>-1.787723 0.921956 0.089339</row3>
 								</boxCollider>
 							</hullCollider>
+							<hullCollider>
+								<modelsSet>R236_Object_265_II_HW26_3Dst</modelsSet>
+								<boxCollider>
+									<row0>1.825939 0.000000 -0.000000</row0>
+									<row1>0.000000 1.645763 0.000000</row1>
+									<row2>0.000000 -0.000000 8.408000</row2>
+									<row3>-0.000000 1.231648 0.222000</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.468835 -0.000000 0.000000</row0>
+									<row1>-0.000000 0.414000 0.000000</row1>
+									<row2>-0.000000 -0.000000 6.829551</row2>
+									<row3>0.000000 1.383000 -0.017000</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.477000 -0.000000 -0.000000</row0>
+									<row1>0.000000 0.370463 -0.544368</row1>
+									<row2>0.000000 0.756448 0.514792</row2>
+									<row3>-0.000000 0.994158 -3.502363</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.479000 0.000000 0.000000</row0>
+									<row1>0.000000 0.317131 0.154249</row1>
+									<row2>0.000000 -0.243554 0.500739</row2>
+									<row3>0.000000 1.321301 3.345769</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.871000 0.000000 0.000000</row0>
+									<row1>-0.000000 0.022209 0.756660</row1>
+									<row2>0.000000 -1.081534 0.031744</row2>
+									<row3>-0.000000 0.734882 3.877911</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>0.352000 0.000000 -0.000000</row0>
+									<row1>0.000000 0.669000 0.000000</row1>
+									<row2>0.000000 -0.000000 6.862592</row2>
+									<row3>-1.812924 0.836000 0.089339</row3>
+								</boxCollider>
+							</hullCollider>
 						</physicalParams>
 					</trackDebris>
 					<trackDebris>
@@ -1374,6 +1427,45 @@
 									<row1>0.000000 0.647954 0.000000</row1>
 									<row2>0.000000 0.000000 6.862592</row2>
 									<row3>1.787723 0.921956 0.089339</row3>
+								</boxCollider>
+							</hullCollider>
+							<hullCollider>
+								<modelsSet>R236_Object_265_II_HW26_3Dst</modelsSet>
+								<boxCollider>
+									<row0>1.825940 0.000000 -0.000000</row0>
+									<row1>0.000000 1.645760 0.000000</row1>
+									<row2>0.000000 -0.000000 8.408000</row2>
+									<row3>-0.000000 1.231650 0.222000</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.468840 -0.000000 0.000000</row0>
+									<row1>-0.000000 0.414000 0.000000</row1>
+									<row2>-0.000000 -0.000000 6.829550</row2>
+									<row3>0.000000 1.383000 -0.017000</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.477000 -0.000000 -0.000000</row0>
+									<row1>0.000000 0.370463 -0.544368</row1>
+									<row2>0.000000 0.756448 0.514792</row2>
+									<row3>-0.000000 0.994158 -3.502360</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.479000 0.000000 0.000000</row0>
+									<row1>0.000000 0.317131 0.154249</row1>
+									<row2>0.000000 -0.243554 0.500739</row2>
+									<row3>0.000000 1.321300 3.345770</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.871000 0.000000 0.000000</row0>
+									<row1>-0.000000 0.022209 0.756660</row1>
+									<row2>0.000000 -1.081530 0.031744</row2>
+									<row3>-0.000000 0.734882 3.877910</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>0.352000 0.000000 -0.000000</row0>
+									<row1>0.000000 0.669000 0.000000</row1>
+									<row2>0.000000 -0.000000 6.862592</row2>
+									<row3>1.813000 0.836000 0.089339</row3>
 								</boxCollider>
 							</hullCollider>
 						</physicalParams>
@@ -1529,6 +1621,12 @@
 						<UTiles>1</UTiles>
 						<VTiles>1</VTiles>
 					</atlas>
+					<modelSets>
+						<R236_Object_265_II_HW26_3Dst>
+							<segmentModelLeft>vehicles/russian/R236_Object_265_II/_skins/R236_Object_265_II_HW26_3Dst/track/segment.model</segmentModelLeft>
+							<segmentModelRight>vehicles/russian/R236_Object_265_II/_skins/R236_Object_265_II_HW26_3Dst/track/segment.model</segmentModelRight>
+						</R236_Object_265_II_HW26_3Dst>
+					</modelSets>
 				</trackPair>
 			</splineDesc>
 			<groundNodes>
@@ -1613,18 +1711,130 @@
 				<node>
 					<isLeft>true</isLeft>
 					<name>Track_VT_L0</name>
+					<forwardElastK>
+						1.8
+						<!--BW_String-->
+					</forwardElastK>
+					<backwardElastK>
+						0.5
+						<!--BW_String-->
+					</backwardElastK>
+					<offset>
+						-0.34
+						<!--BW_String-->
+					</offset>
 				</node>
 				<node>
 					<isLeft>true</isLeft>
 					<name>Track_VT_L1</name>
+					<forwardElastK>
+						1.6
+						<!--BW_String-->
+					</forwardElastK>
+					<backwardElastK>
+						0.6
+						<!--BW_String-->
+					</backwardElastK>
+					<offset>
+						-0.34
+						<!--BW_String-->
+					</offset>
+				</node>
+				<node>
+					<isLeft>true</isLeft>
+					<name>Track_VT_L2</name>
+					<forwardElastK>
+						1.6
+						<!--BW_String-->
+					</forwardElastK>
+					<backwardElastK>
+						0.6
+						<!--BW_String-->
+					</backwardElastK>
+					<offset>
+						-0.34
+						<!--BW_String-->
+					</offset>
+				</node>
+				<node>
+					<isLeft>true</isLeft>
+					<name>Track_VT_L3</name>
+					<forwardElastK>
+						1.6
+						<!--BW_String-->
+					</forwardElastK>
+					<backwardElastK>
+						0.8
+						<!--BW_String-->
+					</backwardElastK>
+					<offset>
+						-0.34
+						<!--BW_String-->
+					</offset>
 				</node>
 				<node>
 					<isLeft>false</isLeft>
 					<name>Track_VT_R0</name>
+					<forwardElastK>
+						1.8
+						<!--BW_String-->
+					</forwardElastK>
+					<backwardElastK>
+						0.5
+						<!--BW_String-->
+					</backwardElastK>
+					<offset>
+						-0.34
+						<!--BW_String-->
+					</offset>
 				</node>
 				<node>
 					<isLeft>false</isLeft>
 					<name>Track_VT_R1</name>
+					<forwardElastK>
+						1.6
+						<!--BW_String-->
+					</forwardElastK>
+					<backwardElastK>
+						0.6
+						<!--BW_String-->
+					</backwardElastK>
+					<offset>
+						-0.34
+						<!--BW_String-->
+					</offset>
+				</node>
+				<node>
+					<isLeft>false</isLeft>
+					<name>Track_VT_R2</name>
+					<forwardElastK>
+						1.6
+						<!--BW_String-->
+					</forwardElastK>
+					<backwardElastK>
+						0.6
+						<!--BW_String-->
+					</backwardElastK>
+					<offset>
+						-0.34
+						<!--BW_String-->
+					</offset>
+				</node>
+				<node>
+					<isLeft>false</isLeft>
+					<name>Track_VT_R3</name>
+					<forwardElastK>
+						1.6
+						<!--BW_String-->
+					</forwardElastK>
+					<backwardElastK>
+						0.8
+						<!--BW_String-->
+					</backwardElastK>
+					<offset>
+						-0.34
+						<!--BW_String-->
+					</offset>
 				</node>
 			</trackNodes>
 			<trackThickness>
@@ -1645,6 +1855,11 @@
 						<model>vehicles/russian/R236_Object_265_II/track/segment.model</model>
 						<length>0.148587</length>
 					</mainSegment>
+					<modelSets>
+						<R236_Object_265_II_HW26_3Dst>
+							<mainSegmentModel>vehicles/russian/R236_Object_265_II/_skins/R236_Object_265_II_HW26_3Dst/track/segment.model</mainSegmentModel>
+						</R236_Object_265_II_HW26_3Dst>
+					</modelSets>
 					<springsLength>
 						<backwardMovement>
 							<back>0.152342</back>
@@ -1886,6 +2101,11 @@
 						<model>vehicles/russian/R236_Object_265_II/track/segment.model</model>
 						<length>0.148587</length>
 					</mainSegment>
+					<modelSets>
+						<R236_Object_265_II_HW26_3Dst>
+							<mainSegmentModel>vehicles/russian/R236_Object_265_II/_skins/R236_Object_265_II_HW26_3Dst/track/segment.model</mainSegmentModel>
+						</R236_Object_265_II_HW26_3Dst>
+					</modelSets>
 					<springsLength>
 						<backwardMovement>
 							<back>0.152342</back>
@@ -2400,7 +2620,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>11200</weight>
-			<maxHealth>280</maxHealth>
+			<maxHealth>380</maxHealth>
 			<rotationSpeed>20</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>170</maxHealth>
@@ -2525,7 +2745,7 @@
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
-						3.2
+						2.7
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -2569,6 +2789,13 @@
 						<undamaged>vehicles/russian/R236_Object_265_II/normal/lod0/Gun_01.model</undamaged>
 						<destroyed>vehicles/russian/R236_Object_265_II/crash/lod0/Gun_01.model</destroyed>
 						<exploded>vehicles/russian/R236_Object_265_II/crash/lod0/Gun_01.model</exploded>
+						<sets>
+							<R236_Object_265_II_HW26_3Dst>
+								<undamaged>vehicles/russian/R236_Object_265_II/_skins/R236_Object_265_II_HW26_3Dst/normal/lod0/Gun_01.model</undamaged>
+								<destroyed>vehicles/russian/R236_Object_265_II/_skins/R236_Object_265_II_HW26_3Dst/crash/lod0/Gun_01.model</destroyed>
+								<exploded>vehicles/russian/R236_Object_265_II/_skins/R236_Object_265_II_HW26_3Dst/crash/lod0/Gun_01.model</exploded>
+							</R236_Object_265_II_HW26_3Dst>
+						</sets>
 					</models>
 					<hitTester>
 						<collisionModelServer>vehicles/russian/R236_Object_265_II/collision/Gun_01.model</collisionModelServer>
@@ -2632,6 +2859,48 @@
 								<!--BW_String-->
 							</size>
 						</slot>
+						<slot>
+							<slotType>insigniaOnGun</slotType>
+							<slotId>49002</slotId>
+							<compatibleModels>R236_Object_265_II_HW26_3Dst</compatibleModels>
+							<rayStart>
+								-0.218484 -0.035 4.165
+								<!--BW_String-->
+							</rayStart>
+							<rayEnd>
+								-0.218484 -0.035 4.865
+								<!--BW_String-->
+							</rayEnd>
+							<rayUp>
+								0.099 0 0
+								<!--BW_String-->
+							</rayUp>
+							<size>
+								0.7
+								<!--BW_String-->
+							</size>
+						</slot>
+						<slot>
+							<slotType>insigniaOnGun</slotType>
+							<slotId>49003</slotId>
+							<compatibleModels>R236_Object_265_II_HW26_3Dst</compatibleModels>
+							<rayStart>
+								0.219423 -0.035 4.165
+								<!--BW_String-->
+							</rayStart>
+							<rayEnd>
+								0.219423 -0.035 4.865
+								<!--BW_String-->
+							</rayEnd>
+							<rayUp>
+								0.099 0 0
+								<!--BW_String-->
+							</rayUp>
+							<size>
+								0.7
+								<!--BW_String-->
+							</size>
+						</slot>
 					</customizationSlots>
 					<customization>
 						<customizableVehicleAreas>
@@ -2650,6 +2919,13 @@
 				<undamaged>vehicles/russian/R236_Object_265_II/normal/lod0/Turret_01.model</undamaged>
 				<destroyed>vehicles/russian/R236_Object_265_II/crash/lod0/Turret_01.model</destroyed>
 				<exploded>vehicles/russian/R236_Object_265_II/crash/lod0/Turret_01.model</exploded>
+				<sets>
+					<R236_Object_265_II_HW26_3Dst>
+						<undamaged>vehicles/russian/R236_Object_265_II/_skins/R236_Object_265_II_HW26_3Dst/normal/lod0/Turret_01.model</undamaged>
+						<destroyed>vehicles/russian/R236_Object_265_II/_skins/R236_Object_265_II_HW26_3Dst/crash/lod0/Turret_01.model</destroyed>
+						<exploded>vehicles/russian/R236_Object_265_II/_skins/R236_Object_265_II_HW26_3Dst/crash/lod0/Turret_01.model</exploded>
+					</R236_Object_265_II_HW26_3Dst>
+				</sets>
 			</models>
 			<hitTester>
 				<collisionModelServer>vehicles/russian/R236_Object_265_II/collision/Turret_01.model</collisionModelServer>

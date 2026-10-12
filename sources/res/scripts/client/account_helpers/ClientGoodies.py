@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from functools import partial
 import AccountCommands
 from shared_utils.account_helpers.diff_utils import synchronizeDicts

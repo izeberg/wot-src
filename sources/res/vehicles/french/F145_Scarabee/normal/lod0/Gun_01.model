@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/french/F145_Scarabee/normal/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-0.337116 -0.428924 -2.186065</min>
+		<max>0.336434 0.456349 5.077972</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/french/F145_Scarabee/normal/lod0/Gun_01</nodefullVisual>
+</root>

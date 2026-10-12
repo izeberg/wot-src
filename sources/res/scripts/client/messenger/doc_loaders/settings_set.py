@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from collections import namedtuple
 from messenger.doc_loaders import _xml_helpers
 from messenger.m_constants import BATTLE_CHANNEL

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from helpers.local_cache import FileLocalCache
 
 class W2gtCache(FileLocalCache):

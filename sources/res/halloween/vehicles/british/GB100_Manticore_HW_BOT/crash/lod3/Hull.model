@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>halloween/vehicles/british/GB100_Manticore_HW_BOT/crash/lod3/Hull</nodefullVisual>
+	<parent>halloween/vehicles/british/GB100_Manticore_HW_BOT/crash/lod4/Hull</parent>
+	<visibilityBox>
+		<min>-1.244905 -0.640353 -2.005266</min>
+		<max>1.246446 0.388384 2.639930</max>
+	</visibilityBox>
+	<extent>192.000000</extent>
+	<tank>true</tank>
+</root>

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from story_mode_common.story_mode_constants import VEHICLE_BUNKER_TURRET_TAG
 if typing.TYPE_CHECKING:

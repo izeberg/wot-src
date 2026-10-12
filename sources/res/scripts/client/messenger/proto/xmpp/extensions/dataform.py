@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from collections import namedtuple
 from messenger.proto.xmpp.extensions import PyExtension, SimpleExtension
 from messenger.proto.xmpp.extensions.ext_constants import XML_NAME_SPACE as _NS

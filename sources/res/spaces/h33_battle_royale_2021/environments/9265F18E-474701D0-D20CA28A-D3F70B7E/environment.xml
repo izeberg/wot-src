@@ -338,6 +338,6 @@
 		<waterReflectionAttenuation>0.350000</waterReflectionAttenuation>
 	</SimplifiedDeferred>
 	<VisibilityTunnel>
-		<shouldOverrideSettings>false</shouldOverrideSettings>
+		<overrideMode>none</overrideMode>
 	</VisibilityTunnel>
 </root>

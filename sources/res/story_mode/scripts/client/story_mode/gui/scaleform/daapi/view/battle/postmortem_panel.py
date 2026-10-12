@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import SoundGroups
 from gui.Scaleform.daapi.view.battle.pve_base.postmortem_panel import PvePostmortemPanel, LivesState
 from story_mode.gui.sound_constants import RESPAWN_TIMER_SOUND_EVENT, RESPAWN_TIMER_STATE_GROUP, RESPAWN_TIMER_STATE_OFF, RESPAWN_TIMER_STATE_ON

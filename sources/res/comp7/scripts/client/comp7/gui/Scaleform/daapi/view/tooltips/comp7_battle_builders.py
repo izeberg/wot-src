@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from comp7.gui.Scaleform.genConsts.TOOLTIPS_BATTLE_CONSTANTS import TOOLTIPS_BATTLE_CONSTANTS as COMP7_BATTLE_TOOLTIPS
 from comp7.gui.shared.tooltips.comp7_tooltips import Comp7RoleSkillBattleTooltipData
 from comp7.gui.shared.tooltips.contexts import Comp7RoleSkillBattleContext

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.impl import backport
 from gui.impl.gen import R
 from gui.shared.formatters import text_styles

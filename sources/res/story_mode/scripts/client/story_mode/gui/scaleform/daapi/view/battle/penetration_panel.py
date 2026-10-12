@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from story_mode.gui.scaleform.daapi.view.meta.StoryModePenetrationPanelMeta import StoryModePenetrationPanelMeta
 
 class StoryModePenetrationPanel(StoryModePenetrationPanelMeta):

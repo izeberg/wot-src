@@ -1,5 +1,7 @@
+from __future__ import absolute_import
 import os, shutil, logging
 from functools import partial
+from future.utils import viewvalues
 import BigWorld
 from helpers import threads
 from helpers.web.storage import IStorage
@@ -97,7 +99,7 @@ class ApplicationStorage(object):
         return self.__worker is None
 
     def close(self):
-        for i in self.__db.itervalues():
+        for i in viewvalues(self.__db):
             i.close()
 
         self.__db = {}
@@ -113,7 +115,7 @@ class ApplicationStorage(object):
         if self.stopped:
             self.__worker = threads.ThreadPool(workersLimit, queueLimit)
             self.__worker.start()
-            for storage in self.__db.itervalues():
+            for storage in viewvalues(self.__db):
                 storage.setWorker(self.__worker)
 
     @property
@@ -146,7 +148,7 @@ class ApplicationStorage(object):
             if os.path.isfile(curdir):
                 os.remove(curdir)
 
-        cacheSizeInMb = cacheSize / 1024 / 1024
+        cacheSizeInMb = cacheSize // 1024 // 1024
         if cacheSizeInMb > 0:
             _logger.log(logging.WARNING if cacheSizeInMb > _CACHE_WARNING_GAP_IN_MB else logging.INFO, 'WebCache size on disk: %.1f Mb', cacheSizeInMb)
         else:

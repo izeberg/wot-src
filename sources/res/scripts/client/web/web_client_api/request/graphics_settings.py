@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from debug_utils import LOG_DEBUG
 from gui.shared.utils import graphics
 from web.web_client_api import w2c, W2CSchema

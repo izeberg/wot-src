@@ -1,4 +1,6 @@
+from __future__ import absolute_import
 import json
+from future.utils import viewvalues
 from CurrentVehicle import g_currentPreviewVehicle
 from comp7.gui.comp7_constants import FUNCTIONAL_FLAG, PREBATTLE_ACTION_NAME
 from comp7.gui.prb_control.entities.base.ctx import Comp7PrbAction
@@ -107,7 +109,7 @@ class Comp7SquadEntity(SquadEntity):
         return super(Comp7SquadEntity, self)._buildStats(unitMgrID, unit)
 
     def __onVehicleClientStateChanged(self, intCDs):
-        vehs = self.__itemsCache.items.getVehicles(REQ_CRITERIA.INVENTORY).itervalues()
+        vehs = viewvalues(self.__itemsCache.items.getVehicles(REQ_CRITERIA.INVENTORY))
         allIntCDs = set(vehicle.intCD for vehicle in vehs)
         validIntCDs = allIntCDs - intCDs
         isReady = self.getPlayerInfo().isReady

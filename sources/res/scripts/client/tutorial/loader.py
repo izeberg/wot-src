@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, weakref, typing, BigWorld, account_helpers
 from CurrentVehicle import g_currentVehicle
 from skeletons.tutorial import ITutorialLoader

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<slots>
+		<slot>
+			<id>70</id>
+			<slotClass>fort_rush_common.items.fr_supply_slots_components.FortRushEquipmentSlot</slotClass>
+			<categories/>
+			<tags/>
+			<excludeTags>hwEquipment</excludeTags>
+			<meta>
+				<equipmentType>regular</equipmentType>
+			</meta>
+		</slot>
+	</slots>
+</root>

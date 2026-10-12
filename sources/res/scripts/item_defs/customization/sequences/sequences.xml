@@ -132,5 +132,10 @@
 			<name>Ch45_WZ_114_3DSt_turret</name>
 			<sequenceName>particles/Tank/customization/Ch45_WZ_114_3DSt/Ch45_WZ_114_3DSt_turret.ssm</sequenceName>
 		</sequence>
+		<sequence>
+			<id>32</id>
+			<name>G171_E77_HW26_3Dst_headlight_turret</name>
+			<sequenceName>particles/Tank/customization/G171_E77_3Dst/G171_E77_HW26_3Dst_headlight_turret_01.seq</sequenceName>
+		</sequence>
 	</itemGroup>
 </root>

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld
 from gui.Scaleform.daapi.view.lobby.battle_queue.battle_queue import RandomQueueProvider
 from gui.Scaleform.locale.MENU import MENU

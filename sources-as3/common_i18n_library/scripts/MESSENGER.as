@@ -1097,16 +1097,6 @@ package
       
       public static const SERVICECHANNELMESSAGES_AUTORENTSTYLEERROR:String = "#messenger:serviceChannelMessages/autoRentStyleError";
       
-      public static const SERVICECHANNELMESSAGES_AUTOREPAIRERRORNOWALLET:String = "#messenger:serviceChannelMessages/autoRepairErrorNoWallet";
-      
-      public static const SERVICECHANNELMESSAGES_AUTOLOADERRORNOWALLET:String = "#messenger:serviceChannelMessages/autoLoadErrorNoWallet";
-      
-      public static const SERVICECHANNELMESSAGES_AUTOEQUIPERRORNOWALLET:String = "#messenger:serviceChannelMessages/autoEquipErrorNoWallet";
-      
-      public static const SERVICECHANNELMESSAGES_AUTOBOOSTERERRORNOWALLET:String = "#messenger:serviceChannelMessages/autoBoosterErrorNoWallet";
-      
-      public static const SERVICECHANNELMESSAGES_AUTORENTSTYLEERRORNOWALLET:String = "#messenger:serviceChannelMessages/autoRentStyleErrorNoWallet";
-      
       public static const SERVICECHANNELMESSAGES_AUTORENTSTYLERENTISOVER_TEXT:String = "#messenger:serviceChannelMessages/autoRentStyleRentIsOver/text";
       
       public static const SERVICECHANNELMESSAGES_AUTORENTSTYLERENTISOVER_BUTTON:String = "#messenger:serviceChannelMessages/autoRentStyleRentIsOver/button";

@@ -189,6 +189,10 @@
 						<const>\true\</const>
 					</slot>
 					<slot>
+						<name>releaseGpuOnDeactivate</name>
+						<const>\false\</const>
+					</slot>
+					<slot>
 						<name>tintColor</name>
 						<const>\-1\</const>
 					</slot>

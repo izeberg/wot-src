@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<stream>colour</stream>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>weakzone</identifier>
+					<fx>shaders/custom/emissive_playground.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						destBlend
+						<Int>2</Int>
+					</property>
+					<property>
+						emissionMap
+						<Texture>particles/mesh_particles/tex/weakzone_turret_rozanov_lum.dds</Texture>
+					</property>
+					<property>
+						g_chromaOffsetBlue
+						<Float>0.430000</Float>
+					</property>
+					<property>
+						g_chromaOffsetGreen
+						<Float>0.060000</Float>
+					</property>
+					<property>
+						g_deferredMult
+						<Float>30.000000</Float>
+					</property>
+					<property>
+						g_offsetBlack
+						<Float>0.140000</Float>
+					</property>
+					<property>
+						g_tint
+						<Vector4>1.000000 0.325490 0.000000 1.000000</Vector4>
+					</property>
+					<property>
+						phaseMap
+						<Texture>particles/mesh_particles/tex/weakzone_turret_rozanov_ctrl.dds</Texture>
+					</property>
+					<property>
+						speed
+						<Float>0.600000</Float>
+					</property>
+					<property>
+						usePhaseMap
+						<Bool>true</Bool>
+					</property>
+					<property>
+						useVersicolorMode
+						<Bool>true</Bool>
+					</property>
+					<property>
+						waveLen
+						<Float>3.000000</Float>
+					</property>
+				</material>
+				<groupOrigin>-3.821825 3.110541 -7.618493</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-4.714852 2.158285 -9.081952</min>
+		<max>-2.928797 4.062798 -6.155034</max>
+	</boundingBox>
+	<geometrySize>3864</geometrySize>
+</root>

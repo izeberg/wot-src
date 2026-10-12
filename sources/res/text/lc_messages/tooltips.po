@@ -3956,15 +3956,6 @@ msgstr "Platoon Restrictions"
 msgid "details/conditions/additional"
 msgstr "Click to view the secondary condition of this mission."
 
-msgid "devMaps/body"
-msgstr ""
-"Fight battles on maps featuring randomly occurring events—like train or "
-"airplane crashes—that change battlefield dynamics and create new tactical "
-"opportunities."
-
-msgid "devMaps/header"
-msgstr "Play on Maps With Random Events"
-
 msgid "deviceFits/already_installed/header"
 msgstr "Mounted on:"
 
@@ -8211,6 +8202,23 @@ msgstr "?empty?"
 msgid "notrecruitedtankman/fisherman/label"
 msgstr "?empty?"
 
+msgid "notrecruitedtankman/fr_spark/desc"
+msgstr ""
+"Nowhere stayed home for long for Lacie \"Spark\" Paxton. Growing up "
+"traveling between military bases with her father, a communications engineer,"
+" made her worldly, adaptable, and uncannily skilled at spotting patterns. "
+"Spark later proved just as capable inside an armored vehicle as she was "
+"behind intelligence equipment. She leads with dry wit and never risks her "
+"crew lightly. When Sector 3 formed a unit to intercept the Architect's "
+"transmissions, Spark was the natural choice to command it. She dubbed their "
+"first mission \"Operation Switchblade\", and the name stuck to the unit."
+
+msgid "notrecruitedtankman/fr_spark/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/fr_spark/label"
+msgstr "Black Signal"
+
 msgid "notrecruitedtankman/freeSkillsTitle"
 msgstr "Zero Perks"
 
@@ -8266,6 +8274,17 @@ msgstr "?empty?"
 msgid "notrecruitedtankman/girls_und_panzer_erwin/label"
 msgstr "?empty?"
 
+msgid "notrecruitedtankman/girls_und_panzer_hoshino/desc"
+msgstr ""
+"Hoshino is a capable gunner who dispatches opponents with a smile—and a "
+"hotshot driver in her free time."
+
+msgid "notrecruitedtankman/girls_und_panzer_hoshino/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/girls_und_panzer_hoshino/label"
+msgstr "?empty?"
+
 msgid "notrecruitedtankman/girls_und_panzer_kei/desc"
 msgstr ""
 "With her extraverted personality and impeccable sense of fair play, Kei is "
@@ -8278,6 +8297,17 @@ msgid "notrecruitedtankman/girls_und_panzer_kei/howToGetInfo"
 msgstr "?empty?"
 
 msgid "notrecruitedtankman/girls_und_panzer_kei/label"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/girls_und_panzer_nakajima/desc"
+msgstr ""
+"Team-Leoponsan's easygoing commander and radio operator always keeps a cool "
+"head in the heat of combat."
+
+msgid "notrecruitedtankman/girls_und_panzer_nakajima/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/girls_und_panzer_nakajima/label"
 msgstr "?empty?"
 
 msgid "notrecruitedtankman/girls_und_panzer_naomi/desc"
@@ -8326,6 +8356,27 @@ msgid "notrecruitedtankman/girls_und_panzer_saunders/howToGetInfo"
 msgstr "?empty?"
 
 msgid "notrecruitedtankman/girls_und_panzer_saunders/label"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/girls_und_panzer_suzuki/desc"
+msgstr ""
+"Suzuki might have a soft manner, but the shells she loads hit her opponents "
+"hard."
+
+msgid "notrecruitedtankman/girls_und_panzer_suzuki/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/girls_und_panzer_suzuki/label"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/girls_und_panzer_tsuchiya/desc"
+msgstr ""
+"You can try telling Tsuchiya not to drift. Just don't expect her to listen."
+
+msgid "notrecruitedtankman/girls_und_panzer_tsuchiya/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/girls_und_panzer_tsuchiya/label"
 msgstr "?empty?"
 
 msgid "notrecruitedtankman/howToGet"
@@ -8617,6 +8668,24 @@ msgid "notrecruitedtankman/lunar26_commander/howToGetInfo"
 msgstr "?empty?"
 
 msgid "notrecruitedtankman/lunar26_commander/label"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/mustached_engineer/desc"
+msgstr ""
+"Renowned engineer-turned-commander Emil Diachenko is equally in his element "
+"opening fire on enemy tanks or opening up an engine compartment to hammer in"
+" impromptu upgrades. A true maverick, he has become something of an urban "
+"legend at the barracks—his men swear he never sleeps. Emil knows the rumors,"
+" and prefers to neither confirm nor deny them; a man with a fondness for the"
+" extraordinary, he'd be the last to stifle anyone's imagination. Indeed, "
+"when he's not scheming up his next madcap venture, he's sketching out "
+"homebrewed turbochargers that could never possibly work... or so it would "
+"seem."
+
+msgid "notrecruitedtankman/mustached_engineer/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/mustached_engineer/label"
 msgstr "?empty?"
 
 msgid "notrecruitedtankman/ny19men/desc"
@@ -15328,6 +15397,12 @@ msgid "tank_params/desc/coincidenceElectromechanicalSightDuration"
 msgstr ""
 "Duration of the effect of the Coincidence Electromechanical Sight after "
 "activation."
+
+msgid "tank_params/desc/combatThrottleCooldown"
+msgstr "Time required before the throttle can be activated again after use."
+
+msgid "tank_params/desc/combatThrottleDuration"
+msgstr "Duration of the throttle's effect after activation."
 
 msgid "tank_params/desc/concentrationModeCooldown"
 msgstr "Time required before the stabilizer can be activated again after use."

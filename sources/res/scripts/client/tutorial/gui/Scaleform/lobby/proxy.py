@@ -1,19 +1,22 @@
+from __future__ import absolute_import
 import weakref
 from debug_utils import LOG_CURRENT_EXCEPTION
 from frameworks.wulf import WindowLayer
 from gui import SystemMessages
 from gui.Scaleform.Waiting import Waiting
-from gui.Scaleform.framework import g_entitiesFactories
 from gui.Scaleform.framework.managers.loaders import SFViewLoadParams
 from gui.Scaleform.genConsts.TUTORIAL_TRIGGER_TYPES import TUTORIAL_TRIGGER_TYPES
+from gui.app_loader import sf_lobby
 from gui.app_loader.settings import APP_NAME_SPACE
 from gui.shared import g_eventBus, events, EVENT_BUS_SCOPE
 from helpers import dependency
 from helpers.statistics import HANGAR_LOADING_STATE
 from messenger.m_constants import PROTO_TYPE, SCH_CLIENT_MSG_TYPE
 from messenger.proto import proto_getter
+from skeletons.gui.impl import IGuiLoader
 from skeletons.helpers.statistics import IStatisticsCollector
 from skeletons.tutorial import ITutorialLoader
+from soft_exception import SoftException
 from tutorial.data.events import ClickEvent, ClickOutsideEvent, EscEvent, EnableEvent, DisableEvent
 from tutorial.data.events import EnabledChangeEvent, VisibleChangeEvent
 from tutorial.doc_loader import gui_config
@@ -21,8 +24,6 @@ from tutorial.gui import GUIProxy, GUI_EFFECT_NAME
 from tutorial.gui.commands import GUICommandsFactory
 from tutorial.gui.Scaleform.effects_player import GUIEffectScope
 from tutorial.logger import LOG_DEBUG, LOG_ERROR, LOG_WARNING
-from gui.app_loader import sf_lobby
-from soft_exception import SoftException
 _TEvent = events.TutorialEvent
 _AppEvent = events.AppLifeCycleEvent
 _EventClassByTriggerType = {TUTORIAL_TRIGGER_TYPES.CLICK_TYPE: (
@@ -46,6 +47,7 @@ CLIENT_CHECKED_TRIGGERS = frozenset([
 class SfLobbyProxy(GUIProxy):
     statsCollector = dependency.descriptor(IStatisticsCollector)
     __tutorialLoader = dependency.descriptor(ITutorialLoader)
+    __guiLoader = dependency.descriptor(IGuiLoader)
 
     def __init__(self, effectPlayer):
         super(SfLobbyProxy, self).__init__()
@@ -232,7 +234,7 @@ class SfLobbyProxy(GUIProxy):
         loader.onViewLoadInit += self.__onViewLoadInit
         loader.onViewLoaded += self.__onViewLoaded
         loader.onViewLoadError += self.__onViewLoadError
-        addSettings = g_entitiesFactories.addSettings
+        addSettings = self.__guiLoader.entitiesFactory.addSettings
         try:
             for settings in self.getViewSettings():
                 addSettings(settings)
@@ -247,7 +249,7 @@ class SfLobbyProxy(GUIProxy):
         loader.onViewLoadInit -= self.__onViewLoadInit
         loader.onViewLoaded -= self.__onViewLoaded
         loader.onViewLoadError -= self.__onViewLoadError
-        removeSettings = g_entitiesFactories.removeSettings
+        removeSettings = self.__guiLoader.entitiesFactory.removeSettings
         for settings in self.getViewSettings():
             removeSettings(settings.alias)
 

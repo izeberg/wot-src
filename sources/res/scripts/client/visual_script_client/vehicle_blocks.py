@@ -1,4 +1,5 @@
-import typing, random, weakref, BigWorld, GenericComponents
+from __future__ import absolute_import
+import typing, random, weakref, BigWorld
 from constants import IS_VS_EDITOR, VEHICLE_CLASSES, OVERTURN_WARNING_LEVEL, DROWN_WARNING_LEVEL
 from debug_utils import LOG_DEBUG_DEV
 from visual_script.block import Block, InitParam, buildStrKeysValue
@@ -17,7 +18,7 @@ if typing.TYPE_CHECKING:
     from typing import Optional
     from Vehicle import Vehicle
     from items.components.gun_installation_components import GunInstallationSlot
-OwnVehicle, = dependencyImporter('OwnVehicle')
+OwnVehicle, EntitySync = dependencyImporter('OwnVehicle', 'EntitySync')
 
 class OverturnWarningLevelEnum(VScriptEnum):
 
@@ -396,7 +397,7 @@ class GameObjectToVehicle(Block, VehicleMeta):
             errorVScript(self, 'Please check input game object.')
             return
         else:
-            goSyncComponent = go.findRead(GenericComponents.EntityGOSync)
+            goSyncComponent = go.findRead(EntitySync.EntityGOSync)
             if goSyncComponent is None:
                 LOG_DEBUG_DEV("Can't find associated entity. Please check input game object")
                 self._vehicle.setValue(None)

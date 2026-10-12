@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import enum, typing, CGF, BigWorld, GenericComponents
 from aih_constants import CTRL_MODE_NAME
 from dyn_components_groups import groupComponent

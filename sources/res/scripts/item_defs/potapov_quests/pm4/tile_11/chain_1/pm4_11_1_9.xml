@@ -10,10 +10,10 @@
 					<or>
 						<vehicleDamage>
 							<enemyImmobilized/>
-							<greaterOrEqual>3000</greaterOrEqual>
+							<greaterOrEqual>2000</greaterOrEqual>
 						</vehicleDamage>
 						<vehicleDamage>
-							<greaterOrEqual>7000</greaterOrEqual>
+							<greaterOrEqual>6000</greaterOrEqual>
 						</vehicleDamage>
 					</or>
 				</postBattle>
@@ -59,10 +59,10 @@
 					<or>
 						<vehicleDamage>
 							<enemyImmobilized/>
-							<greaterOrEqual>3000</greaterOrEqual>
+							<greaterOrEqual>2000</greaterOrEqual>
 						</vehicleDamage>
 						<vehicleDamage>
-							<greaterOrEqual>7000</greaterOrEqual>
+							<greaterOrEqual>6000</greaterOrEqual>
 						</vehicleDamage>
 					</or>
 				</postBattle>

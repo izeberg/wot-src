@@ -1,0 +1,283 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-19 10:00+0100\n"
+"PO-Revision-Date: 2026-03-19 10:00+0100\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+
+msgid "bannerTooltip/allStagesAreCompleted"
+msgstr "All Data Blocks are completed!"
+
+msgid "bannerTooltip/dataBlock"
+msgstr "Data Block {{level}}"
+
+msgid "bannerTooltip/description"
+msgstr ""
+"Take control of the antennas. Hold the network. Secure the transmission."
+
+msgid "bannerTooltip/expiryDate/timerText"
+msgstr "Mode will be available for"
+
+msgid "bannerTooltip/header"
+msgstr "Black Signal"
+
+msgid "bannerTooltip/mode"
+msgstr "MODE"
+
+msgid "bannerTooltip/modeHint"
+msgstr "— switching to another game mode"
+
+msgid "bannerTooltip/performanceRisk/text/highRisk"
+msgstr ""
+"Your computer's performance is insufficient for this mode. You will "
+"experience issues with graphics and vehicle movement. Game client crashes "
+"are also probable."
+
+msgid "bannerTooltip/performanceRisk/text/lowRisk"
+msgstr ""
+"In case of insufficient performance, try lowering the graphics settings."
+
+msgid "bannerTooltip/performanceRisk/text/mediumRisk"
+msgstr ""
+"This mode demands high computer performance. You may experience issues with "
+"map loading, graphics, and vehicle movement. In case of insufficient "
+"performance, try a lower graphics quality in Settings."
+
+msgid "bannerTooltip/performanceRisk/title/highRisk"
+msgstr "Low Performance"
+
+msgid "bannerTooltip/performanceRisk/title/lowRisk"
+msgstr "The mode is demanding on the computer"
+
+msgid "bannerTooltip/performanceRisk/title/mediumRisk"
+msgstr "Reduced Performance"
+
+msgid "battleEfficiency/baseHeal"
+msgstr "Hit Points recovered"
+
+msgid "battleEfficiency/personalPoints"
+msgstr "Service Score"
+
+msgid "battleLoading/description"
+msgstr ""
+"Take control of the antennas. Hold the network. Secure the transmission."
+
+msgid "battleLoading/header"
+msgstr "Black Signal"
+
+msgid "battleLoading/tips/tip01/description"
+msgstr ""
+"Capturing an antenna restores a small amount of your vehicle's HP. Use this "
+"bonus to hold the position and prepare for the counterattack."
+
+msgid "battleLoading/tips/tip01/title"
+msgstr "Secure and Recover"
+
+msgid "battleLoading/tips/tip02/description"
+msgstr ""
+"Antennas cannot be captured while enemy vehicles are present. Deal with any "
+"interlopers to continue securing an objective."
+
+msgid "battleLoading/tips/tip02/title"
+msgstr "Contested Capture"
+
+msgid "battleLoading/tips/tip03/description"
+msgstr ""
+"After redeployment, your vehicle is protected from damage for 10 seconds. "
+"Use this time to return to the fight or take cover."
+
+msgid "battleLoading/tips/tip03/title"
+msgstr "Redeployment Protection"
+
+msgid "battleQueue/title"
+msgstr "Black Signal"
+
+msgid "capturingIndicator/captured"
+msgstr "Antenna Captured"
+
+msgid "capturingIndicator/capturing"
+msgstr "Capturing Antenna"
+
+msgid "capturingIndicator/contesting"
+msgstr "Antenna Contested"
+
+msgid "capturingIndicator/neutralizing"
+msgstr "Neutralizing Antenna"
+
+msgid "endGame/reason/210"
+msgstr "Both teams reached the Signal Point limit"
+
+msgid "endGame/reason/3"
+msgstr "Time limit reached"
+
+msgid "endGame/reason/6/lose"
+msgstr "The enemy reached the Signal Point limit"
+
+msgid "endGame/reason/6/win"
+msgstr "Your team reached the Signal Point limit"
+
+msgid "endGame/reason/7"
+msgstr "Time limit reached"
+
+msgid "notifications/progression/header"
+msgstr "Congratulations!"
+
+msgid "notifications/progression/openBtnLabel"
+msgstr "Details"
+
+msgid "notifications/progression/stageAchieved"
+msgstr ""
+"Rewards for completing Progression step&nbsp;%(stageIdx)s: %(rewards)s"
+
+msgid "progression/completedDescription"
+msgstr "All Data Blocks have been completed."
+
+msgid "progression/completedTitle"
+msgstr "Progression completed!"
+
+msgid "progression/dailyMissions/timerLabel"
+msgstr "Time Left:"
+
+msgid "progression/dailyMissions/title"
+msgstr "Field Orders"
+
+msgid "progression/description"
+msgstr ""
+"Complete daily missions in Black Signal battles to advance through the "
+"Progression."
+
+msgid "progression/info_button/body"
+msgstr "Click for additional information"
+
+msgid "progression/info_button/header"
+msgstr "About Black Signal"
+
+msgid "progression/widget/stageLabel"
+msgstr "Data Block %(stage)s"
+
+msgid "progression/widget/stageProgress"
+msgstr "%(current)s / %(total)s"
+
+msgid "progression/widget/tooltip/allStagesCompleted"
+msgstr "You have completed every Data Block!"
+
+msgid "progression/widget/tooltip/completedLabel"
+msgstr "Completed"
+
+msgid "progression/widget/tooltip/rewardsHeader"
+msgstr "Data Block Rewards"
+
+msgid "progression/widget/tooltip/subtitle"
+msgstr "Current Data Block"
+
+msgid "progression/widget/tooltip/timerLabel"
+msgstr "Daily missions reset in:"
+
+msgid "progression/widget/tooltip/title"
+msgstr "Black Signal"
+
+msgid "progression/widget/tooltip/titleSubtitle"
+msgstr "Current Progress"
+
+msgid "progression/widget/tooltip/unavailable"
+msgstr "Progression is temporary unavailable."
+
+msgid "progression/widget/unavailable"
+msgstr "Progression Unavailable"
+
+msgid "progressionView/stateHeader"
+msgstr "Black Signal progression"
+
+msgid "quitBattle/leaver/cancel"
+msgstr "Cancel"
+
+msgid "quitBattle/leaver/descriptionAlive"
+msgstr ""
+"Your team still needs you! If you leave the battle, your team will be at a "
+"disadvantage, and you will not receive any bonuses or make any mission "
+"progress."
+
+msgid "quitBattle/leaver/submit"
+msgstr "Leave"
+
+msgid "quitBattle/leaver/title"
+msgstr "You are leaving the battle"
+
+msgid "respawnTimer/description"
+msgstr "A different redeployment position can give you a strategic edge."
+
+msgid "respawnTimer/title"
+msgstr "Deployment in:"
+
+msgid "rewardScreen/button"
+msgstr "Affirmative!"
+
+msgid "rewardScreen/title"
+msgstr "Data Block Rewards Unlocked"
+
+msgid "timersPanel/invulnerable"
+msgstr "Invulnerable"
+
+msgid "tooltips/eventPoints/body"
+msgstr ""
+"Earn Data Packets to complete Data Blocks and obtain valuable resources, "
+"including a significant reward. Data Packets can be earned by dealing "
+"damage, destroying enemies in battle, capturing points and completing daily "
+"missions."
+
+msgid "tooltips/eventPoints/header"
+msgstr "Data Packet"
+
+msgid "vehicleSelector/allVehicles"
+msgstr "All Vehicles"
+
+msgid "vehicleSelector/noVehiclesAction"
+msgstr "Reset Filters"
+
+msgid "vehicleSelector/noVehiclesDescription"
+msgstr "Reset the filters to view available vehicles"
+
+msgid "vehicleSelector/noVehiclesInPlaylistTooltipBody"
+msgstr "This playlist does not contain any suitable vehicles for this mode."
+
+msgid "vehicleSelector/noVehiclesInPlaylistTooltipHeading"
+msgstr "No suitable vehicles"
+
+msgid "vehicleSelector/noVehiclesTitle"
+msgstr "No matching vehicles found"
+
+msgid "welcomeScreen/button"
+msgstr "Continue"
+
+msgid "welcomeScreen/description1"
+msgstr ""
+"You are part of an armored task force ordered to secure and hold a secretive"
+" network across a contested zone. Keep the network under your control at all"
+" costs."
+
+msgid "welcomeScreen/description2"
+msgstr ""
+"Someone went to great lengths to keep this intelligence hidden. Complete "
+"missions to recover encrypted fragments."
+
+msgid "welcomeScreen/description3"
+msgstr ""
+"Complete the Data Blocks to receive valuable rewards from event missions."
+
+msgid "welcomeScreen/header1"
+msgstr "Seize the Antennas"
+
+msgid "welcomeScreen/header2"
+msgstr "Decode the Transmission"
+
+msgid "welcomeScreen/header3"
+msgstr "Progression and Rewards"
+
+msgid "welcomeScreen/title"
+msgstr "Black Signal"

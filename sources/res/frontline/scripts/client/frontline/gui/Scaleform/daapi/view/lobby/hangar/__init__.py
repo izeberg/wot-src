@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.framework import WindowLayer, ScopeTemplates, ViewSettings
 from frontline.constants.aliases import FrontlineHangarAliases
 from gui.Scaleform.framework.package_layout import PackageBusinessHandler

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>1.000000</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Model 0</name>
+		<type>model</type>
+		<resource>particles/3D_Customization/Cus_315_Orbiter_Prototype/Orbiter_Prototype_electric.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>m_top_electric</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.027451 0.125490 1.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 49.999996</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 49.999996</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.200000</startTime>
+				<value>0.027451 0.125490 1.000000 10.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 18.749998</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 18.749998</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.000000</startTime>
+				<value>0.027451 0.125490 1.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -12.500001</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -12.500001</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property vector4</name>
+			<type>vector4</type>
+			<identifier>m_top_electric</identifier>
+			<property>lightMultipliers</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>100.000000 1.000000 1.000000 0.000000</value>
+				<inTangent>-90.000000 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>-90.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.000000</startTime>
+				<value>10.000000 1.000000 1.000000 0.000000</value>
+				<inTangent>-90.000000 -0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>-90.000000 -0.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

@@ -95,7 +95,7 @@ class CrewBookFormatter(OldStyleBonusFormatter):
 
     @classmethod
     def _formatBook(cls, book, count):
-        return backport.text(R.strings.quests.bonuses.items.name(), name=book.userName, count=count)
+        return backport.text(R.strings.quests.bonuses.c_items.name(), name=book.userName, count=count)
 
 
 class CrewSkinFormatter(OldStyleBonusFormatter):
@@ -117,7 +117,7 @@ class CrewSkinFormatter(OldStyleBonusFormatter):
 
     @classmethod
     def _formatCrewSkin(cls, skin, count):
-        return backport.text(R.strings.quests.bonuses.items.name(), name=localizeSkinName(skin), count=count)
+        return backport.text(R.strings.quests.bonuses.c_items.name(), name=localizeSkinName(skin), count=count)
 
 
 class BlueprintsFormatter(OldStyleBonusFormatter):

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from tutorial.data.has_id import HasTargetID
 from shared_utils import CONST_CONTAINER
 

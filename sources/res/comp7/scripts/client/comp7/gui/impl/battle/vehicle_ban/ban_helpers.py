@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing, BigWorld, logging
 from comp7.gui.impl.gen.view_models.views.battle.constants import Constants
 from comp7.gui.impl.gen.view_models.views.battle.enums import BanState
@@ -5,6 +6,7 @@ from comp7_core_constants import ArenaPrebattlePhase
 from constants import VEHICLE_SELECTION_BLOCK_DELAY
 from gui.impl.lobby.common.vehicle_model_helpers import fillVehicleModel
 from helpers import dependency
+from math_common import round_py2_style_int
 from skeletons.gui.battle_session import IBattleSessionProvider
 from skeletons.gui.game_control import IComp7Controller
 from skeletons.gui.shared import IItemsCache
@@ -77,13 +79,13 @@ def fillBanProgressionModel(model, vehicleBanCtrl, comp7Controller=None, session
         model.setBanState(BanState.FINISHED)
         startTimestamp = vehicleBanCtrl.vehicleBanEndTime
         endTimestamp = sessionProvider.arenaVisitor.getArenaPeriodEndTime() - VEHICLE_SELECTION_BLOCK_DELAY
-    startTimestamp = int(round(startTimestamp))
-    endTimestamp = int(round(endTimestamp))
+    startTimestamp = round_py2_style_int(startTimestamp)
+    endTimestamp = round_py2_style_int(endTimestamp)
     if startTimestamp > endTimestamp:
         _logger.error('Incorrect timestamps range: startTimestamp=%d, endTimestamp=%d', startTimestamp, endTimestamp)
         return
     else:
-        serverTimestamp = int(round(BigWorld.serverTime()))
+        serverTimestamp = round_py2_style_int(BigWorld.serverTime())
         if serverTimestamp < startTimestamp or serverTimestamp > endTimestamp:
             serverTimestamp = startTimestamp
         model.setStartTimestamp(startTimestamp)

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from shared_utils import first
 from gui.Scaleform.daapi.view.lobby.epicBattle.epic_helpers import getOfferTokenByGift
 from gui.Scaleform.genConsts.BLOCKS_TOOLTIP_TYPES import BLOCKS_TOOLTIP_TYPES

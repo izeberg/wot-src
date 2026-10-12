@@ -95,9 +95,8 @@ package net.wg.gui.battle.epicRandom.views
       
       override public function updateStage(param1:Number, param2:Number) : void
       {
-         var _loc3_:int = 0;
          super.updateStage(param1,param2);
-         _loc3_ = param1 >> 1;
+         var _loc3_:int = param1 >> 1;
          this.teamBasesPanelUI.x = _loc3_;
          var _loc4_:Number = stage.scaleY;
          this.damageInfoPanel.y = (param2 >> 1) / _loc4_ + DAMAGE_INFO_PANEL_CONSTS.HEIGHT * _loc4_ | 0;

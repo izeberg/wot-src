@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from comp7_light.gui.impl.gen.view_models.views.lobby.entry_point_model import EntryPointModel, ProgressionState
 from comp7_light.gui.impl.gen.view_models.views.lobby.tooltips.leaderboard_reward_tooltip_model import State
 from comp7_light.gui.impl.lobby.comp7_light_helpers.account_settings import setUmgProgressionPointsSeen, getPrevUmgProgressionPointsSeen, markUmgEntryPointSeen, getUmgEntryPointSeen

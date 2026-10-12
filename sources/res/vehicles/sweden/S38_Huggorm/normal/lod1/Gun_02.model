@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/sweden/S38_Huggorm/normal/lod2/Gun_02</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.435436 -0.302386 0.000000</min>
+		<max>0.222431 0.303247 5.989491</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/sweden/S38_Huggorm/normal/lod1/Gun_02</nodefullVisual>
+</root>

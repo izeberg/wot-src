@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import enum, typing
 if typing.TYPE_CHECKING:
     from points_of_interest_shared import PoiType

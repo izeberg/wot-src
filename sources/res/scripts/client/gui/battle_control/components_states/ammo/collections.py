@@ -3,7 +3,7 @@ import typing
 from future.utils import viewvalues
 from gui.battle_control.components_states.ammo.constants import AmmoShootPossibility
 from gui.battle_control.components_states.ammo.shells import DefaultAmmoMode
-from vehicles.mechanics.mechanic_constants import VehicleMechanic
+from items.vehicle_mechanics_types import VehicleMechanicKeys
 from shared_utils import findFirst
 if typing.TYPE_CHECKING:
     from ChargeableBurstComponent import ChargeableBurstAmmoState
@@ -22,11 +22,11 @@ class AmmoStatesROCollection(object):
 
     @property
     def chargeableBurstAmmoState(self):
-        return self._ammoStates.get(VehicleMechanic.CHARGEABLE_BURST.value)
+        return self._ammoStates.get(VehicleMechanicKeys.CHARGEABLE_BURST.uniqueName)
 
     @property
     def extraShotReloadState(self):
-        extraShotState = self._ammoStates.get(VehicleMechanic.EXTRA_SHOT_CLIP.value)
+        extraShotState = self._ammoStates.get(VehicleMechanicKeys.EXTRA_SHOT_CLIP.uniqueName)
         if extraShotState is not None:
             return extraShotState.extraReloadState
         else:
@@ -34,11 +34,11 @@ class AmmoStatesROCollection(object):
 
     @property
     def stationaryReloadAmmoState(self):
-        return self._ammoStates.get(VehicleMechanic.STATIONARY_RELOAD.value)
+        return self._ammoStates.get(VehicleMechanicKeys.STATIONARY_RELOAD.uniqueName)
 
     @property
     def temperatureGunAmmoState(self):
-        return self._ammoStates.get(VehicleMechanic.TEMPERATURE_GUN.value)
+        return self._ammoStates.get(VehicleMechanicKeys.TEMPERATURE_GUN.uniqueName)
 
     def isReloadingBlocked(self):
         return any(state.isReloadingBlocked() for state in viewvalues(self._ammoStates))

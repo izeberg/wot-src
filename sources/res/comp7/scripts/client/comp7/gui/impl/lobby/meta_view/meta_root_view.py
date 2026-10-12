@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, typing
 from shared_utils import findFirst
 from comp7.gui.Scaleform.genConsts.TOOLTIPS_CONSTANTS import TOOLTIPS_CONSTANTS as COMP7_TOOLTIPS

@@ -1,4 +1,6 @@
+from __future__ import absolute_import
 import copy, enum, typing
+from future.utils import viewitems
 from constants import PREMIUM_ENTITLEMENTS
 from dog_tags_common.components_config import componentConfigAdapter
 from dog_tags_common.config.common import ComponentViewType
@@ -245,8 +247,8 @@ def _splitDossierBonus(dossier):
     badgeSuffixIds = [ badge.badgeID for badge in dossier.getBadges() if badge.isSuffixLayout() ]
     achievements, badges, badgeSuffixes = {}, {}, {}
     extra = {}
-    for dossierType, records in dossierValue.iteritems():
-        for (block, record), value in records.iteritems():
+    for dossierType, records in viewitems(dossierValue):
+        for (block, record), value in viewitems(records):
             component = extra
             if block in ACHIEVEMENT_BLOCK.ALL:
                 component = achievements

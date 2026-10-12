@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>content/3D_Customization/Cus_64_ArmiesCh_MGCrate/normal/lod2/Cus_64_ArmiesCh_MGCrate_01</nodefullVisual>
+	<parent>content/3D_Customization/Cus_64_ArmiesCh_MGCrate/normal/lod3/Cus_64_ArmiesCh_MGCrate_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.537799 0.000792 -0.876151</min>
+		<max>0.040649 0.475581 0.803764</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

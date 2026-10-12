@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import weakref, BigWorld
 from PlayerEvents import g_playerEvents
 from constants import ARENA_GUI_TYPE

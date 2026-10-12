@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.772645 -0.586930 -3.536943</min>
+		<max>1.772645 1.904099 2.871782</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/poland/Pl27_SDP_Wz_66T/_skins/Pl27_SDP_Wz_66T_WCI_3Dst/crash/lod3/Hull</nodefullVisual>
+	<parent>vehicles/poland/Pl27_SDP_Wz_66T/_skins/Pl27_SDP_Wz_66T_WCI_3Dst/crash/lod4/Hull</parent>
+	<extent>192.000000</extent>
+</root>

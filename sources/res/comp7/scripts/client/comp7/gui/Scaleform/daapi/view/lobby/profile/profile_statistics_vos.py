@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from comp7.gui.Scaleform.daapi.view.lobby.profile.profile_utils import COMP7_STATISTICS_LAYOUT
 from gui.Scaleform.daapi.view.lobby.profile.ProfileUtils import ProfileUtils as PUtils
 from gui.Scaleform.daapi.view.lobby.profile.profile_statistics_vos import ProfileDictStatisticsVO, packAvgDmgLditItemData, getDetailedStatisticsData, formatChartsData, getVehStatsByTypes, getVehStatsByNation

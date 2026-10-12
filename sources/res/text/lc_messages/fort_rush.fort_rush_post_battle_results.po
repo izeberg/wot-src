@@ -1,0 +1,97 @@
+msgid ""
+msgstr ""
+
+msgid "battleInfo/all_from_battle"
+msgstr "All vehicles in the last battle"
+
+msgid "battleInfo/arena"
+msgstr "{{arenaName}}, Black Signal – {{finishReason}}"
+
+msgid "battleInfo/finishReason/10lose"
+msgstr "objectives have survived"
+
+msgid "battleInfo/finishReason/10win"
+msgstr "objectives destroyed"
+
+msgid "battleInfo/finishReason/1lose"
+msgstr "all allied vehicles destroyed"
+
+msgid "battleInfo/finishReason/1tie"
+msgstr "all vehicles destroyed"
+
+msgid "battleInfo/finishReason/1win"
+msgstr "all enemy vehicles destroyed"
+
+msgid "battleInfo/finishReason/2"
+msgstr "base Captured"
+
+msgid "battleInfo/finishReason/3"
+msgstr "battle time expired"
+
+msgid "battleInfo/finishReason/4"
+msgstr "battle ended due to system failure"
+
+msgid "battleInfo/finishReason/5"
+msgstr "technical Defeat"
+
+msgid "battleInfo/finishReason/8"
+msgstr "ally destroyed"
+
+msgid "battleInfo/finishReason/9"
+msgstr "your vehicle was destroyed"
+
+msgid "battleInfo/labels_objectivesDestroyed"
+msgstr "Objectives destroyed"
+
+msgid "battleInfo/labels_objectivesReached"
+msgstr "Objectives reached"
+
+msgid "battleInfo/labels_zoneCaptured"
+msgstr "Zones captured"
+
+msgid "battleInfo/leaver/body"
+msgstr ""
+"Mission progress earned after leaving the battle was not counted. Data "
+"Packets granted based on the battle result were not awarded."
+
+msgid "battleInfo/leaver/header"
+msgstr "Unacceptable performance: inaction/desertion"
+
+msgid "battleInfo/no"
+msgstr "No"
+
+msgid "battleInfo/time"
+msgstr "{{date}}, {{time}} (battle duration: {{duration}})"
+
+msgid "battleInfo/timeLeft/minutesAndSeconds"
+msgstr "{{minutes}} min {{seconds}} s"
+
+msgid "battleInfo/timeLeft/minutesOnly"
+msgstr "{{minutes}} min"
+
+msgid "battleInfo/timeLeft/secondsOnly"
+msgstr "{{seconds}} s"
+
+msgid "battleInfo/yes"
+msgstr "Yes"
+
+msgid "currencies/credits/body"
+msgstr ""
+"The main in-game currency.\n"
+"Earned in battles or\n"
+"purchased with gold."
+
+msgid "currencies/credits/header"
+msgstr "Credits"
+
+msgid "detailedPersonalEfficiency/fortRushScore/body"
+msgstr ""
+"Points earned by capturing antennas, neutralizing enemy-controlled antennas,"
+" contesting antennas being captured by the enemy team, dealing damage and "
+"destroying enemies near antennas."
+
+msgid "detailedPersonalEfficiency/fortRushScore/header"
+msgstr "Service Score"
+
+msgid "state/title"
+msgstr "BATTLE RESULTS"
