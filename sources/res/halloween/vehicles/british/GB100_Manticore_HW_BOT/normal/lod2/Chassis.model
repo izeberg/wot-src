@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>halloween/vehicles/british/GB100_Manticore_HW_BOT/normal/lod2/Chassis</nodefullVisual>
+	<parent>halloween/vehicles/british/GB100_Manticore_HW_BOT/normal/lod3/Chassis</parent>
+	<visibilityBox>
+		<min>-1.219908 -0.007350 -2.059369</min>
+		<max>1.219909 0.809149 2.608814</max>
+	</visibilityBox>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+</root>

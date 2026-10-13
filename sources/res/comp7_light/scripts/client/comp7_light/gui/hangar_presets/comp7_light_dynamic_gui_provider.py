@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from comp7_light.gui.Scaleform.daapi.view.lobby.header.helpers.controls_helpers import Comp7LightLobbyHeaderHelper
 from comp7_light.gui.impl.lobby.missions.missions_helpers import Comp7LightMissionsGuiHelper
 from constants import QUEUE_TYPE, ARENA_BONUS_TYPE

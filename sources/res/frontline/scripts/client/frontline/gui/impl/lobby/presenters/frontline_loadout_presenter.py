@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from gui.Scaleform.genConsts.TOOLTIPS_CONSTANTS import TOOLTIPS_CONSTANTS
 from gui.Scaleform.lobby_entry import getLobbyStateMachine

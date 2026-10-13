@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from builtins import range
 import AccountCommands
 from items.abilities_manager import AbilitiesManager
 
@@ -37,7 +39,7 @@ class AbilitiesHelper(object):
             perksListRes.extend(perksList)
             self.__account._doCmdIntArr(AccountCommands.CMD_ADD_PERK_TO_BATTLE, perksListRes, proxy)
         else:
-            perks = {perksList[i]:perksList[(i + 1)] for i in xrange(0, len(perksList), 2)}
+            perks = {perksList[i]:perksList[(i + 1)] for i in range(0, len(perksList), 2)}
             self.abilitiesManager.addBuild(vehicleID, 'debug' + str(scopeIndex), perks)
         return
 

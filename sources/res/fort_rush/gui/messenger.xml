@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<htmlTemplates>
+		<FREventProgressionSysMessage>
+			<icon>InformationIcon</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#fort_rush.fort_rush:notifications/progression/header)&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;</message>
+			<buttonsLayout>
+				<button>
+					<type>submit</type>
+					<label>_(#fort_rush.fort_rush:notifications/progression/openBtnLabel)</label>
+					<action>openFRProgression</action>
+					<width>107</width>
+				</button>
+			</buttonsLayout>
+		</FREventProgressionSysMessage>
+		<FortRushEventStateStart>
+			<priority>high</priority>
+			<type>grey</type>
+			<icon>InformationIcon</icon>
+			<filters>
+				<filter>
+					<name>glow</name>
+					<color>EA5200</color>
+				</filter>
+				<filter>
+					<name>dropshadow</name>
+					<color>
+						000000
+						<!--BW_String-->
+					</color>
+				</filter>
+			</filters>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#fort_rush.fort_rush_messenger:serviceChannelMessages/fortRushEventStartMessage/header)&lt;/font&gt;
+&lt;font color=&apos;#8C8C7E&apos;&gt;_(#fort_rush.fort_rush_messenger:serviceChannelMessages/fortRushEventStartMessage/body)&lt;/font&gt;</message>
+			<buttonsLayout>
+				<button>
+					<type>submit</type>
+					<label>_(#fort_rush.fort_rush_messenger:common/toEvent)</label>
+					<action>fortRushSwitchPrb</action>
+				</button>
+			</buttonsLayout>
+		</FortRushEventStateStart>
+		<FortRushEventStatePause>
+			<priority>high</priority>
+			<type>grey</type>
+			<icon>ErrorIcon</icon>
+			<filters>
+				<filter>
+					<name>glow</name>
+					<color>EA5200</color>
+				</filter>
+				<filter>
+					<name>dropshadow</name>
+					<color>
+						000000
+						<!--BW_String-->
+					</color>
+				</filter>
+			</filters>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#fort_rush.fort_rush_messenger:serviceChannelMessages/eventName)&lt;/font&gt;
+&lt;font color=&apos;#8C8C7E&apos;&gt;_(#fort_rush.fort_rush_messenger:serviceChannelMessages/fortRushEventSuspendedMessage/body)&lt;/font&gt;</message>
+		</FortRushEventStatePause>
+		<FortRushEventStateResume>
+			<priority>high</priority>
+			<type>grey</type>
+			<icon>InformationIcon</icon>
+			<filters>
+				<filter>
+					<name>glow</name>
+					<color>EA5200</color>
+				</filter>
+				<filter>
+					<name>dropshadow</name>
+					<color>
+						000000
+						<!--BW_String-->
+					</color>
+				</filter>
+			</filters>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#fort_rush.fort_rush_messenger:serviceChannelMessages/eventName)&lt;/font&gt;
+&lt;font color=&apos;#8C8C7E&apos;&gt;_(#fort_rush.fort_rush_messenger:serviceChannelMessages/fortRushEventResumedMessage/body)&lt;/font&gt;</message>
+		</FortRushEventStateResume>
+		<FortRushEventStateEnded>
+			<priority>high</priority>
+			<type>grey</type>
+			<icon>InformationIcon</icon>
+			<filters>
+				<filter>
+					<name>glow</name>
+					<color>EA5200</color>
+				</filter>
+				<filter>
+					<name>dropshadow</name>
+					<color>
+						000000
+						<!--BW_String-->
+					</color>
+				</filter>
+			</filters>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#fort_rush.fort_rush_messenger:serviceChannelMessages/fortRushBattlesFinishMessage/header)&lt;/font&gt;
+&lt;font color=&apos;#8C8C7E&apos;&gt;_(#fort_rush.fort_rush_messenger:serviceChannelMessages/fortRushBattlesFinishMessage/body)&lt;/font&gt;</message>
+		</FortRushEventStateEnded>
+		<FortRushBattleVictoryResult>
+			<type>battleResult</type>
+			<icon>BattleResultIcon</icon>
+			<bgIcon>BgBattleResultIconVictory</bgIcon>
+			<buttonsLayout>
+				<button>
+					<type>submit</type>
+					<label>_(#messenger:serviceChannelMessages/battleResults/button)</label>
+					<action>showBattleResults</action>
+				</button>
+			</buttonsLayout>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/battleResults/victory)!&lt;/font&gt;
+&lt;font color=&apos;#929290&apos;&gt;_(#fort_rush.fort_rush_messenger:serviceChannelMessages/battleResults/battleTypeName)&lt;/font&gt;
+&lt;font color=&apos;#929290&apos;&gt;_(#fort_rush.fort_rush_messenger:serviceChannelMessages/battleResults/battleMapName) %(mapName)s&lt;/font&gt;
+&lt;font color=&apos;#929290&apos;&gt;_(#fort_rush.fort_rush_messenger:serviceChannelMessages/battleResults/tanks) %(vehicles)s&lt;/font&gt;
+&lt;font color=&apos;#929290&apos;&gt;_(#fort_rush.fort_rush_messenger:serviceChannelMessages/battleResults/credits) %(credits)s&lt;/font&gt;
+&lt;font color=&apos;#929290&apos;&gt;_(#fort_rush.fort_rush_messenger:serviceChannelMessages/battleResults/progression) %(progressionPoints)s&lt;/font&gt;</message>
+		</FortRushBattleVictoryResult>
+		<FortRushBattleDefeatResult>
+			<type>battleResult</type>
+			<icon>BattleResultIcon</icon>
+			<bgIcon>BgBattleResultIconDefeat</bgIcon>
+			<buttonsLayout>
+				<button>
+					<type>submit</type>
+					<label>_(#messenger:serviceChannelMessages/battleResults/button)</label>
+					<action>showBattleResults</action>
+				</button>
+			</buttonsLayout>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/battleResults/ended)&lt;/font&gt;
+&lt;font color=&apos;#929290&apos;&gt;_(#fort_rush.fort_rush_messenger:serviceChannelMessages/battleResults/battleTypeName)&lt;/font&gt;
+&lt;font color=&apos;#929290&apos;&gt;_(#fort_rush.fort_rush_messenger:serviceChannelMessages/battleResults/battleMapName) %(mapName)s&lt;/font&gt;
+&lt;font color=&apos;#929290&apos;&gt;_(#fort_rush.fort_rush_messenger:serviceChannelMessages/battleResults/tanks) %(vehicles)s&lt;/font&gt;
+&lt;font color=&apos;#929290&apos;&gt;_(#fort_rush.fort_rush_messenger:serviceChannelMessages/battleResults/credits) %(credits)s&lt;/font&gt;
+&lt;font color=&apos;#929290&apos;&gt;_(#fort_rush.fort_rush_messenger:serviceChannelMessages/battleResults/progression) %(progressionPoints)s&lt;/font&gt;</message>
+		</FortRushBattleDefeatResult>
+		<FortRushBattleDrawResult>
+			<type>battleResult</type>
+			<icon>BattleResultIcon</icon>
+			<bgIcon>BgBattleResultIconDraw</bgIcon>
+			<buttonsLayout>
+				<button>
+					<type>submit</type>
+					<label>_(#messenger:serviceChannelMessages/battleResults/button)</label>
+					<action>showBattleResults</action>
+				</button>
+			</buttonsLayout>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/battleResults/ended)&lt;/font&gt;
+&lt;font color=&apos;#929290&apos;&gt;_(#fort_rush.fort_rush_messenger:serviceChannelMessages/battleResults/battleTypeName)&lt;/font&gt;
+&lt;font color=&apos;#929290&apos;&gt;_(#fort_rush.fort_rush_messenger:serviceChannelMessages/battleResults/battleMapName) %(mapName)s&lt;/font&gt;
+&lt;font color=&apos;#929290&apos;&gt;_(#fort_rush.fort_rush_messenger:serviceChannelMessages/battleResults/tanks) %(vehicles)s&lt;/font&gt;
+&lt;font color=&apos;#929290&apos;&gt;_(#fort_rush.fort_rush_messenger:serviceChannelMessages/battleResults/credits) %(credits)s&lt;/font&gt;
+&lt;font color=&apos;#929290&apos;&gt;_(#fort_rush.fort_rush_messenger:serviceChannelMessages/battleResults/progression) %(progressionPoints)s&lt;/font&gt;</message>
+		</FortRushBattleDrawResult>
+	</htmlTemplates>
+</root>

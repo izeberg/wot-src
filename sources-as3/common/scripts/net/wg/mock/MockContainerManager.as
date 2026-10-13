@@ -58,6 +58,11 @@ package net.wg.mock
          return 0;
       }
       
+      public function getLayerIndex(param1:String) : int
+      {
+         return 0;
+      }
+      
       public function getManageSize(param1:uint = 0) : Boolean
       {
          return false;

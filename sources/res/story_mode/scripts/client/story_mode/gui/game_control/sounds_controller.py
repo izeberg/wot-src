@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import enum, typing, SoundGroups, WWISE
 from story_mode.gui.sound_constants import GAMEMODE_GROUP, GAMEMODE_STATE
 if typing.TYPE_CHECKING:

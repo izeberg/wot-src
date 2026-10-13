@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodelessVisual>vehicles/russian/R236_Object_265_II/_skins/R236_Object_265_II_HW26_3Dst/crash/lod2/Gun_01</nodelessVisual>
+	<tank>true</tank>
+	<parent>vehicles/russian/R236_Object_265_II/_skins/R236_Object_265_II_HW26_3Dst/crash/lod3/Gun_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.603891 -0.402532 -1.411724</min>
+		<max>0.547363 0.271837 5.193347</max>
+	</visibilityBox>
+</root>

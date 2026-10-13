@@ -1295,7 +1295,7 @@ msgid "section/statistics/chart/class/tooltip/body"
 msgstr "The total number of battles in vehicles of this class"
 
 msgid "section/statistics/chart/class/tooltip/header"
-msgstr "Vehicle Class: %(value)s"
+msgstr "Vehicle Type: %(value)s"
 
 msgid "section/statistics/chart/level/tooltip/body"
 msgstr "Number of battles in vehicles of this tier"
@@ -1731,7 +1731,7 @@ msgid "section/technique/sort/tooltip/battlesCount/header"
 msgstr "Battles"
 
 msgid "section/technique/sort/tooltip/class/body"
-msgstr "Sort by vehicle class"
+msgstr "Sort by vehicle type"
 
 msgid "section/technique/sort/tooltip/class/header"
 msgstr "Class"

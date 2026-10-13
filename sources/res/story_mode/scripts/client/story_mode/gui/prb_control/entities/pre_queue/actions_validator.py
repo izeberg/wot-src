@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.prb_control.entities.base.pre_queue.actions_validator import InQueueValidator
 from gui.prb_control.items import ValidationResult
 from gui.prb_control.entities.base.actions_validator import BaseActionsValidator, ActionsValidatorComposite

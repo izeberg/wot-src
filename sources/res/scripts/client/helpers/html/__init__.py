@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import re
 from debug_utils import LOG_CURRENT_EXCEPTION
 from helpers import i18n

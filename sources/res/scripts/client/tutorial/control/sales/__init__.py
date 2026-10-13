@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from tutorial.control import ControlsFactory
 from tutorial.control import context as core_ctx
 from tutorial.control.sales import functional

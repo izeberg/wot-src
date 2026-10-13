@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing, ResMgr, section2dict
 from dict2model import models, schemas, fields, validate
 from gui.battle_control.arena_info.interfaces import IOverrideSettingsController

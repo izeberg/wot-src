@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from notification import AlertController
 from notification import BaseMessagesController
 from notification import BaseNotificationView

@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from future.utils import viewitems
 import SoundGroups
 from frameworks.wulf import ViewSettings, WindowFlags, WindowLayer
 from gui.battle_pass.battle_pass_decorators import createBackportTooltipDecorator, createTooltipContentDecorator
@@ -97,7 +99,7 @@ class AwardsWindow(LobbyNotificationWindow):
         super(AwardsWindow, self).__init__(wndFlags=WindowFlags.SERVICE_WINDOW | WindowFlags.WINDOW_FULLSCREEN, content=AwardsView(bonuses, onCloseCallback, onAnimationEndedCallback), layer=WindowLayer.TOP_WINDOW)
 
     def isParamsEqual(self, *args, **kwargs):
-        return all(pValue in args or kwargs.get(pName) == pValue for pName, pValue in self.__params.iteritems())
+        return all(pValue in args or kwargs.get(pName) == pValue for pName, pValue in viewitems(self.__params))
 
     def _finalize(self):
         super(AwardsWindow, self)._finalize()
@@ -107,7 +109,7 @@ class AwardsWindow(LobbyNotificationWindow):
 def composeBonuses(rewards, ctx=None):
     bonuses = []
     for reward in rewards:
-        for key, value in reward.iteritems():
+        for key, value in viewitems(reward):
             bonuses.extend(getNonQuestBonuses(key, value, ctx))
 
     return splitBonuses(mergeBonuses(bonuses))

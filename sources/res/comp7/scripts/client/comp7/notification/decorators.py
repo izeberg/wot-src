@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from comp7.gui.impl.lobby.comp7_helpers.comp7_quest_helpers import hasAvailableOfferTokens
 from gui.shared.notifications import NotificationGroup, NotificationGuiSettings
 from helpers import dependency

@@ -139,6 +139,10 @@ package
       
       public static const TOOLTIP_CUSTOMIZATION_OWN3DSTYLE_BODY:String = "#tank_carousel_filter:tooltip/customization/own3DStyle/body";
       
+      public static const TOOLTIP_BROKEN_HEADER:String = "#tank_carousel_filter:tooltip/broken/header";
+      
+      public static const TOOLTIP_BROKEN_BODY:String = "#tank_carousel_filter:tooltip/broken/body";
+      
       public static const INFOTIP_HEADER_TITLE:String = "#tank_carousel_filter:infotip/header/title";
       
       public static const INFOTIP_HEADER_DESCRIPTION:String = "#tank_carousel_filter:infotip/header/description";

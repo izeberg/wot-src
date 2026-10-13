@@ -8451,6 +8451,86 @@
 				<_3373>tankmen_bp21_4.png</_3373>
 			</icons>
 		</tankmen_bp21_4>
+		<girls_und_panzer_nakajima>
+			<groupID>390</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>female</sex>
+			<notInShop>true</notInShop>
+			<tags>commander nakajima_SpecialVoice leoponCrew passportReplacementForbidden</tags>
+			<roles>commander</roles>
+			<firstNames>
+				<_3375>#germany_crew:names/girls_und_panzer_nakajima_n</_3375>
+			</firstNames>
+			<lastNames>
+				<_3375>#germany_crew:names/girls_und_panzer_nakajima</_3375>
+			</lastNames>
+			<icons>
+				<_3375>girls_und_panzer_nakajima.png</_3375>
+			</icons>
+		</girls_und_panzer_nakajima>
+		<girls_und_panzer_hoshino>
+			<groupID>391</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>female</sex>
+			<notInShop>true</notInShop>
+			<tags>gunner leoponCrew passportReplacementForbidden</tags>
+			<roles>gunner</roles>
+			<firstNames>
+				<_3376>#germany_crew:names/girls_und_panzer_hoshino_n</_3376>
+			</firstNames>
+			<lastNames>
+				<_3376>#germany_crew:names/girls_und_panzer_hoshino</_3376>
+			</lastNames>
+			<icons>
+				<_3376>girls_und_panzer_hoshino.png</_3376>
+			</icons>
+		</girls_und_panzer_hoshino>
+		<girls_und_panzer_suzuki>
+			<groupID>392</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>female</sex>
+			<notInShop>true</notInShop>
+			<tags>loader leoponCrew passportReplacementForbidden</tags>
+			<roles>loader</roles>
+			<firstNames>
+				<_3377>#germany_crew:names/girls_und_panzer_suzuki_n</_3377>
+			</firstNames>
+			<lastNames>
+				<_3377>#germany_crew:names/girls_und_panzer_suzuki</_3377>
+			</lastNames>
+			<icons>
+				<_3377>girls_und_panzer_suzuki.png</_3377>
+			</icons>
+		</girls_und_panzer_suzuki>
+		<girls_und_panzer_tsuchiya>
+			<groupID>393</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>female</sex>
+			<notInShop>true</notInShop>
+			<tags>driver leoponCrew passportReplacementForbidden</tags>
+			<roles>driver</roles>
+			<firstNames>
+				<_3378>#germany_crew:names/girls_und_panzer_tsuchiya_n</_3378>
+			</firstNames>
+			<lastNames>
+				<_3378>#germany_crew:names/girls_und_panzer_tsuchiya</_3378>
+			</lastNames>
+			<icons>
+				<_3378>girls_und_panzer_tsuchiya.png</_3378>
+			</icons>
+		</girls_und_panzer_tsuchiya>
 		<birthday16_crew_1>
 			<groupID>382</groupID>
 			<weight>
@@ -8511,6 +8591,46 @@
 				<_3369>birthday16_crew_3.png</_3369>
 			</icons>
 		</birthday16_crew_3>
+		<mustached_engineer>
+			<groupID>400</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>male</sex>
+			<notInShop>true</notInShop>
+			<tags>commander  passportReplacementForbidden</tags>
+			<roles>commander</roles>
+			<firstNames>
+				<_3385>#germany_crew:names/mustached_engineer_n</_3385>
+			</firstNames>
+			<lastNames>
+				<_3385>#germany_crew:names/mustached_engineer</_3385>
+			</lastNames>
+			<icons>
+				<_3385>mustached_engineer.png</_3385>
+			</icons>
+		</mustached_engineer>
+		<fr_spark>
+			<groupID>389</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>female</sex>
+			<notInShop>true</notInShop>
+			<tags>commander driver gunner loader radioman fr_spark_SpecialVoice passportReplacementForbidden</tags>
+			<roles>commander driver gunner loader radioman</roles>
+			<firstNames>
+				<_3374>#germany_crew:names/fr_spark_n</_3374>
+			</firstNames>
+			<lastNames>
+				<_3374>#germany_crew:names/fr_spark</_3374>
+			</lastNames>
+			<icons>
+				<_3374>fr_spark.png</_3374>
+			</icons>
+		</fr_spark>
 		<tankmen_bp21_5>
 			<groupID>394</groupID>
 			<weight>

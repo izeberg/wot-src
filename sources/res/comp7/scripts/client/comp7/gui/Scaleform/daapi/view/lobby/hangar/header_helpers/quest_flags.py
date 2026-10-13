@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import constants
 from gui.Scaleform.daapi.view.lobby.hangar.header_helpers.quest_flags import BattleQuestsFlag
 from helpers import dependency

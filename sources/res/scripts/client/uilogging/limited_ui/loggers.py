@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from uilogging.base.logger import MetricsLogger
 from uilogging.limited_ui.constants import FEATURE, LimitedUILogActions

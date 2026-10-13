@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from messenger.proto.interfaces import IProtoLimits
 from messenger_common_chat2 import MESSENGER_LIMITS
 from soft_exception import SoftException

@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from past.builtins import basestring, long
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
 from gui.Scaleform.framework.managers.loaders import SFViewLoadParams
 from gui.shared.event_bus import EVENT_BUS_SCOPE

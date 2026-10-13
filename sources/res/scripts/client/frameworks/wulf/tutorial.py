@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, typing
 from .py_object_binder import PyObjectEntity
 if typing.TYPE_CHECKING:

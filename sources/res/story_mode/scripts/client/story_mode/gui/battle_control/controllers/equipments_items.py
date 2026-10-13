@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import math, typing
 from functools import partial
 import BigWorld, CGF, Math, SoundGroups

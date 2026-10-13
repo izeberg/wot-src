@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from gui.Scaleform.daapi.view.battle.pve_base.status_notifications.panel import PveStatusNotificationTimerPanel
 from gui.Scaleform.genConsts.BATTLE_NOTIFICATIONS_TIMER_COLORS import BATTLE_NOTIFICATIONS_TIMER_COLORS as _COLORS

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/british/GB142_FV230_Canopener/_skins/GB142_FV230_Canopener_HW26_3Dst/normal/lod3/Gun_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.052629 -0.356171 -0.680096</min>
+		<max>1.006187 0.620854 5.890892</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/british/GB142_FV230_Canopener/_skins/GB142_FV230_Canopener_HW26_3Dst/normal/lod2/Gun_01</nodefullVisual>
+</root>

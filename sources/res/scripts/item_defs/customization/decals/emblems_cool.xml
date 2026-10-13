@@ -473,6 +473,13 @@
 			<tags>styleOnly</tags>
 			<mirror>true</mirror>
 		</decal>
+		<decal>
+			<id>1365</id>
+			<texture>gui/maps/vehicles/decals/player_stickers/cool/sticker_75.dds</texture>
+			<userString>#vehicle_customization:emblem/cool/sticker_75</userString>
+			<tags>hiddenInUI styleOnly</tags>
+			<mirror>true</mirror>
+		</decal>
 		<name>Girls und Panzer</name>
 		<type>EMBLEM</type>
 		<vehicleFilter>

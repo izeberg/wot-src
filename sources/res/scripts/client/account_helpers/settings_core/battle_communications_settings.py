@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing, BattleReplay
 from Event import Event
 from PlayerEvents import g_playerEvents

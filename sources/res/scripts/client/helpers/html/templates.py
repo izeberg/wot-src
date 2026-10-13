@@ -1,6 +1,7 @@
-from types import DictType
+from __future__ import absolute_import
 from typing import TYPE_CHECKING
 from collections import defaultdict
+from past.builtins import unicode
 import ResMgr
 from debug_utils import LOG_WARNING, LOG_ERROR, LOG_CURRENT_EXCEPTION
 from helpers import html
@@ -26,7 +27,7 @@ class Template(object):
             return ''
         if ctx is None:
             ctx = {}
-        if isinstance(self.ctx, DictType) and isinstance(ctx, DictType):
+        if isinstance(self.ctx, dict) and isinstance(ctx, dict):
             ctx.update(self.ctx)
         if ctx:
             try:

@@ -5,8 +5,10 @@ package net.wg.gui.battle.views.minimap
    import net.wg.gui.battle.views.minimap.events.MinimapEvent;
    import net.wg.infrastructure.base.meta.IMinimapMeta;
    import net.wg.infrastructure.base.meta.impl.MinimapMeta;
+   import net.wg.infrastructure.layoutPart.ILayoutBoundsProvider;
+   import net.wg.infrastructure.layoutPart.LayoutBounds;
    
-   public class BaseMinimap extends MinimapMeta implements IMinimapMeta
+   public class BaseMinimap extends MinimapMeta implements IMinimapMeta, ILayoutBoundsProvider
    {
        
       
@@ -74,6 +76,13 @@ package net.wg.gui.battle.views.minimap
       
       public function as_updateHintPanelData(param1:Boolean, param2:Boolean) : void
       {
+      }
+      
+      public function getLayoutBounds() : LayoutBounds
+      {
+         var _loc1_:Point = this.currentTopLeftPoint;
+         var _loc2_:Rectangle = this.getMinimapRectBySizeIndex(this.currentSizeIndex);
+         return new LayoutBounds(_loc2_.width,_loc2_.height,_loc1_.x,_loc1_.y);
       }
       
       public function getMessageCoordinate() : Number

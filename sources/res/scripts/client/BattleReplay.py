@@ -1,5 +1,5 @@
 from __future__ import absolute_import, print_function
-import base64, os, datetime, json, copy, logging, zlib
+import os, datetime, json, copy, logging, zlib
 from collections import defaultdict
 from builtins import open
 from future.moves import pickle
@@ -17,6 +17,7 @@ from constants import ARENA_PERIOD, ARENA_BONUS_TYPE, NULL_ENTITY_ID
 from constants_utils import getUsedInReplaysConfigKeys
 from helpers import dependency
 from gui.app_loader import settings
+from py2to3.compat import base64compat
 from skeletons.account_helpers.settings_core import ISettingsCore
 from skeletons.connection_mgr import IConnectionManager
 from skeletons.gameplay import IGameplayLogic, ReplayEventID
@@ -442,7 +443,7 @@ class BattleReplay(object):
 
     def onReplayMetaData(self, metaData):
         if 'serverSettings' in metaData:
-            self.__serverSettings = pickle.loads(zlib.decompress(base64.b64decode(metaData['serverSettings'])))
+            self.__serverSettings = pickle.loads(zlib.decompress(base64compat.b64decode(metaData['serverSettings'])))
 
     def onEntityAoIChangedCallback(self, witnessID, entityID, hasEnteredAoI):
         _logger.debug('BattleReplay: onEntityAoIChangedCallback: witnessID=%s, entityID=%s, hasEnteredAoI=%s', witnessID, entityID, hasEnteredAoI)
@@ -1242,11 +1243,11 @@ class BattleReplay(object):
 
     def getSetting(self, key, default=None):
         if self.__settings.has_key(key):
-            return pickle.loads(base64.b64decode(self.__settings.readString(key)))
+            return pickle.loads(base64compat.b64decode(self.__settings.readString(key)))
         return default
 
     def setSetting(self, key, value):
-        self.__settings.write(key, base64.b64encode(pickle.dumps(value)))
+        self.__settings.write(key, base64compat.b64encode(pickle.dumps(value)))
         diff = {key: value}
         self.settingsCore.onSettingsChanged(diff)
 

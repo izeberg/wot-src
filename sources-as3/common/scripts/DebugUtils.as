@@ -1,5 +1,7 @@
 package
 {
+   import flash.external.ExternalInterface;
+   
    public class DebugUtils
    {
       
@@ -41,7 +43,7 @@ package
       
       private static function __doLog() : void
       {
-         App.environment.call(CPP_DO_LOG_METHOD_NAME,arguments[0],String(arguments.slice(1)));
+         ExternalInterface.call(CPP_DO_LOG_METHOD_NAME,arguments[0],String(arguments.slice(1)));
       }
    }
 }

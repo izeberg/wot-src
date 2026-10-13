@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from logging import getLogger
 import BattleReplay, BigWorld
 from PlayerEvents import g_playerEvents

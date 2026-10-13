@@ -28,6 +28,12 @@ package net.wg.gui.battle.eventBattle.views.minimap.entries
       private static const MITER_LIMIT:int = 10;
       
       private static const MAX_GRADIENT:int = 255;
+      
+      private static const X_INDEX:int = 0;
+      
+      private static const Y_INDEX:int = 1;
+      
+      private static const RADIUS_INDEX:int = 2;
        
       
       public var placeholderShape:Sprite = null;
@@ -52,11 +58,17 @@ package net.wg.gui.battle.eventBattle.views.minimap.entries
       
       private var _useGradient:Boolean = true;
       
-      private var _zones:Array;
+      private var _zonesInternal:Array;
+      
+      private var _zonesExternal:Array;
+      
+      private var _zonesCircle:Array;
       
       public function CustomDeathZoneMinimapEntry()
       {
-         this._zones = [];
+         this._zonesInternal = [];
+         this._zonesExternal = [];
+         this._zonesCircle = [];
          super();
       }
       
@@ -64,8 +76,12 @@ package net.wg.gui.battle.eventBattle.views.minimap.entries
       {
          this.placeholderShape = null;
          this.placeholderBorder = null;
-         this._zones.splice(0,this._zones.length);
-         this._zones = null;
+         this._zonesInternal.splice(0,this._zonesInternal.length);
+         this._zonesInternal = null;
+         this._zonesExternal.splice(0,this._zonesExternal.length);
+         this._zonesExternal = null;
+         this._zonesCircle.splice(0,this._zonesCircle.length);
+         this._zonesCircle = null;
          super.onDispose();
       }
       
@@ -74,12 +90,13 @@ package net.wg.gui.battle.eventBattle.views.minimap.entries
          var _loc1_:Graphics = null;
          var _loc2_:Graphics = null;
          var _loc3_:int = 0;
-         var _loc4_:uint = 0;
-         var _loc5_:Matrix = null;
+         var _loc4_:Array = null;
+         var _loc5_:int = 0;
          var _loc6_:int = 0;
-         var _loc7_:Array = null;
+         var _loc7_:Matrix = null;
          var _loc8_:int = 0;
          var _loc9_:uint = 0;
+         var _loc10_:Array = null;
          super.draw();
          if(isInvalid(InvalidationType.DATA))
          {
@@ -90,46 +107,109 @@ package net.wg.gui.battle.eventBattle.views.minimap.entries
             _loc2_.lineStyle(this._lineThickness,this._lineColor,this._lineAlpha,false,LineScaleMode.VERTICAL,CapsStyle.NONE,JointStyle.MITER,MITER_LIMIT);
             if(this._useGradient)
             {
-               _loc5_ = new Matrix();
-               _loc6_ = -(this._gradientSize >> 1);
-               _loc5_.createGradientBox(this._gradientSize,this._gradientSize,0,_loc6_,_loc6_);
-               _loc1_.beginGradientFill(GradientType.RADIAL,[this._fillColor,this._gradientColor],[this._fillAlpha,this._gradientAlpha],[0,MAX_GRADIENT],_loc5_,SpreadMethod.PAD);
+               _loc7_ = new Matrix();
+               _loc8_ = this._gradientSize >> 1;
+               _loc7_.createGradientBox(this._gradientSize,this._gradientSize,0,-_loc8_,-_loc8_);
+               _loc1_.beginGradientFill(GradientType.RADIAL,[this._fillColor,this._gradientColor],[this._fillAlpha,this._gradientAlpha],[0,MAX_GRADIENT],_loc7_,SpreadMethod.PAD);
             }
             else
             {
                _loc1_.beginFill(this._fillColor,this._fillAlpha);
             }
-            _loc3_ = this._zones.length;
-            _loc4_ = 0;
-            while(_loc4_ < _loc3_)
+            _loc3_ = this._zonesExternal.length;
+            _loc4_ = null;
+            _loc5_ = 0;
+            _loc6_ = 0;
+            _loc6_ = 0;
+            while(_loc6_ < _loc3_)
             {
-               _loc7_ = this._zones[_loc4_];
-               _loc8_ = _loc7_.length;
-               _loc1_.moveTo(_loc7_[0],_loc7_[1]);
-               _loc2_.moveTo(_loc7_[0],_loc7_[1]);
+               _loc4_ = this._zonesExternal[_loc6_];
+               _loc5_ = _loc4_.length;
+               _loc1_.moveTo(_loc4_[X_INDEX],_loc4_[Y_INDEX]);
+               _loc2_.moveTo(_loc4_[X_INDEX],_loc4_[Y_INDEX]);
                _loc9_ = COORD_STEP;
-               while(_loc9_ < _loc8_)
+               while(_loc9_ < _loc5_)
                {
-                  _loc1_.lineTo(_loc7_[_loc9_],_loc7_[_loc9_ + 1]);
-                  _loc2_.lineTo(_loc7_[_loc9_],_loc7_[_loc9_ + 1]);
+                  _loc1_.lineTo(_loc4_[_loc9_],_loc4_[_loc9_ + 1]);
+                  _loc2_.lineTo(_loc4_[_loc9_],_loc4_[_loc9_ + 1]);
                   _loc9_ += COORD_STEP;
                }
-               _loc2_.lineTo(_loc7_[0],_loc7_[1]);
-               _loc4_ += 1;
+               _loc2_.lineTo(_loc4_[X_INDEX],_loc4_[Y_INDEX]);
+               _loc6_ += 1;
+            }
+            _loc3_ = this._zonesInternal.length;
+            _loc6_ = 0;
+            while(_loc6_ < _loc3_)
+            {
+               _loc4_ = this._zonesInternal[_loc6_];
+               _loc5_ = _loc4_.length;
+               _loc1_.moveTo(_loc4_[X_INDEX],_loc4_[Y_INDEX]);
+               _loc2_.moveTo(_loc4_[X_INDEX],_loc4_[Y_INDEX]);
+               _loc9_ = COORD_STEP;
+               while(_loc9_ < _loc5_)
+               {
+                  _loc1_.lineTo(_loc4_[_loc9_],_loc4_[_loc9_ + 1]);
+                  _loc2_.lineTo(_loc4_[_loc9_],_loc4_[_loc9_ + 1]);
+                  _loc9_ += COORD_STEP;
+               }
+               _loc2_.lineTo(_loc4_[X_INDEX],_loc4_[Y_INDEX]);
+               _loc6_ += 1;
+            }
+            _loc3_ = this._zonesCircle.length;
+            _loc6_ = 0;
+            while(_loc6_ < _loc3_)
+            {
+               _loc10_ = this._zonesCircle[_loc6_];
+               _loc1_.drawCircle(_loc10_[X_INDEX],_loc10_[Y_INDEX],_loc10_[RADIUS_INDEX]);
+               _loc2_.drawCircle(_loc10_[X_INDEX],_loc10_[Y_INDEX],_loc10_[RADIUS_INDEX]);
+               _loc6_ += 1;
             }
             _loc1_.endFill();
          }
       }
       
+      public function addCircleZone(param1:Number, param2:Number, param3:Number) : void
+      {
+         this._zonesCircle.push([param1,param2,param3]);
+         invalidateData();
+      }
+      
+      public function addExternalZoneData(... rest) : void
+      {
+         this._zonesExternal.push(rest);
+         invalidateData();
+      }
+      
+      public function addInternalZoneData(... rest) : void
+      {
+         this._zonesInternal.push(rest);
+         invalidateData();
+      }
+      
       public function addZoneData(... rest) : void
       {
-         this._zones.push(rest);
+         this._zonesExternal.push(rest);
+         invalidateData();
+      }
+      
+      public function clearExternalZones() : void
+      {
+         this._zonesExternal.splice(0,this._zonesExternal.length);
+         invalidateData();
+      }
+      
+      public function clearInternalZones() : void
+      {
+         this._zonesInternal.splice(0,this._zonesInternal.length);
+         this._zonesCircle.splice(0,this._zonesCircle.length);
          invalidateData();
       }
       
       public function clearZones() : void
       {
-         this._zones.splice(0,this._zones.length);
+         this._zonesExternal.splice(0,this._zonesExternal.length);
+         this._zonesInternal.splice(0,this._zonesInternal.length);
+         this._zonesCircle.splice(0,this._zonesCircle.length);
          invalidateData();
       }
       

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/hd_env_UNI_261_Beacon/hd_env_UNI_261_Beacon_01_AM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Environment/hd_env_UNI_261_Beacon/hd_env_UNI_261_Beacon_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Environment/hd_env_UNI_261_Beacon/hd_env_UNI_261_Beacon_01_ANM.dds</Texture>
+					</property>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>112</materialKind>
+				</material>
+				<groupOrigin>0.013902 0.321169 -0.033757</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>s_nd1</identifier>
+					<fx>shaders/std_effects/PBS_glass.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>112</materialKind>
+					<property>
+						alphaReference
+						<Int>159</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						dirtAlbedoMap
+						<Texture>content/Environment/hd_env_UNI_261_Beacon/hd_env_UNI_261_Beacon_01_Glass_AM.dds</Texture>
+					</property>
+					<property>
+						glassMap
+						<Texture>content/Environment/hd_env_UNI_261_Beacon/hd_env_UNI_261_Beacon_01_Glass_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Environment/hd_env_UNI_261_Beacon/hd_env_UNI_261_Beacon_01_Glass_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.006951 0.772309 -0.045797</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				2
+				<material>
+					<identifier>s_nd2</identifier>
+					<fx>shaders/std_effects/glow.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>112</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/UniversalTextures/Graybox_01_AM.dds</Texture>
+					</property>
+					<property>
+						g_tintColor
+						<Vector4>1.000000 1.000000 1.000000 0.200000</Vector4>
+					</property>
+					<property>
+						selfIllumination
+						<Float>1000000.000000</Float>
+					</property>
+				</material>
+				<groupOrigin>0.013902 0.718117 -0.000000</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-0.118577 0.000000 -0.147069</min>
+		<max>0.130841 0.902281 0.100439</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>6076</geometrySize>
+</root>

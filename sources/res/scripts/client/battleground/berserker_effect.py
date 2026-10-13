@@ -1,4 +1,7 @@
-import logging, BigWorld, CGF, AnimationSequence, Math, math_utils, ResMgr
+from __future__ import absolute_import
+import logging
+from future.utils import viewvalues
+import BigWorld, CGF, AnimationSequence, Math, math_utils, ResMgr
 from battle_royale.gui.constants import BattleRoyaleEquipments
 from components_base.component_controller import ComponentController
 from helpers import dependency, newFakeModel, CallbackDelayer
@@ -22,7 +25,7 @@ class BerserkerEffectComponent(AvatarRelatedComponent):
 
     def deactivate(self):
         super(BerserkerEffectComponent, self).deactivate()
-        for effObject in self.__loadingEffects.itervalues():
+        for effObject in viewvalues(self.__loadingEffects):
             effObject.stopLoading = True
             effObject.destroy()
 

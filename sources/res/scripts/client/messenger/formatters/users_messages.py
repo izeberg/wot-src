@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui import GUI_SETTINGS, makeHtmlString
 from helpers import i18n
 from messenger.m_constants import USER_ACTION_ID, MESSENGER_I18N_FILE

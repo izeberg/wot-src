@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld
 from PlayerEvents import g_playerEvents
 from gui.battle_control.battle_constants import VEHICLE_VIEW_STATE

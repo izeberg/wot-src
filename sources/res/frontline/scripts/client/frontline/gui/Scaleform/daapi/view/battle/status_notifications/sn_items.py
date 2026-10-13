@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from constants import VEHICLE_MISC_STATUS
 from frontline.gui.Scaleform.daapi.view.battle.status_notifications.frontline_helpers import getSmokeDataByPredicate, getEquipmentById
@@ -153,9 +154,9 @@ class CaptureBlockSN(_FrontlineLocalizationProvider, sn_items.TimerSN):
     def getViewTypeID(self):
         return BATTLE_NOTIFICATIONS_TIMER_TYPES.CAPTURE_BLOCK
 
-    def _update(self, duration):
-        if duration:
-            self._updateTimeParams(duration, 0)
+    def _update(self, value):
+        if value:
+            self._updateTimeParams(value, 0)
             self._isVisible = True
             self.__isBlocked = False
             self._sendUpdate()

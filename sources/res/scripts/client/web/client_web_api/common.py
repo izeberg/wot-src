@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging
 from Event import Event
 from web.client_web_api.battle_pass import BattlePassEventHandler

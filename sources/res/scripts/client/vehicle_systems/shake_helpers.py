@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing, BigWorld, Math
 from aih_constants import ShakeReason
 from vehicle_systems.tankStructure import TankNodeNames

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<vehicle>
+		<tags>
+			<hwrole_boss/>
+			<hwrole_sentry/>
+			<hwrole_hunter/>
+			<hwrole_runner/>
+			<hwrole_alpha/>
+			<hwrole_turret/>
+			<hwrole_bomber/>
+			<hwrole_bomber_alpha/>
+			<hwrole_catcher/>
+			<hwrole_charger/>
+			<hwrole_detonator/>
+			<hwrole_ripper/>
+			<hwrole_hive/>
+		</tags>
+	</vehicle>
+	<equipment>
+		<tags>
+			<hwEquipment/>
+			<hwInstantEquipment/>
+			<hwEmptySlot/>
+			<hwIgnoreUsageCountInQuest/>
+		</tags>
+	</equipment>
+	<customizationItem>
+		<tags>
+			<halloween_style/>
+		</tags>
+	</customizationItem>
+</root>

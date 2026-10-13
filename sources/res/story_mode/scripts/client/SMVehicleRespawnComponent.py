@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld
 from VehicleRespawnComponent import VehicleRespawnComponent
 from aih_constants import CTRL_MODE_NAME

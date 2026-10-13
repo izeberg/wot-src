@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from messenger.m_constants import MESSENGER_SCOPE
 
 def setGUIEntries(decorator):

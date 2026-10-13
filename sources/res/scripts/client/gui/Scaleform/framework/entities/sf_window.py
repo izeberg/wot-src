@@ -1,18 +1,19 @@
 from __future__ import absolute_import
-import logging, weakref, typing
+import logging, typing, weakref, Event
+from frameworks.wulf import Window, WindowFlags, WindowSettings, WindowStatus
 from frameworks.wulf.gui_constants import ShowingStatus
-from wg_async import wg_async, wg_await, AsyncReturn
-import Event
-from frameworks.wulf import WindowSettings, Window, WindowStatus, WindowFlags
-from gui.Scaleform.framework import g_entitiesFactories
-from gui.shared import g_eventBus, events, EVENT_BUS_SCOPE
+from gui.shared import EVENT_BUS_SCOPE, events, g_eventBus
+from helpers import dependency
+from skeletons.gui.impl import IGuiLoader
 from soft_exception import SoftException
+from wg_async import AsyncReturn, wg_async, wg_await
 if typing.TYPE_CHECKING:
     from gui.Scaleform.framework.managers.loaders import SFViewLoadParams
     from gui.Scaleform.framework.entities.View import View
 _logger = logging.getLogger(__name__)
 
 class SFWindow(Window):
+    __guiLoader = dependency.descriptor(IGuiLoader)
     __slots__ = ('__loadParams', '__scope', '__fireEvent', '__view', 'args', 'kwargs',
                  'onContentLoaded')
 
@@ -24,7 +25,7 @@ class SFWindow(Window):
         self.__view = None
         self.__scope = scope
         self.__fireEvent = fireEvent
-        viewSettings = g_entitiesFactories.getSettings(loadParams.viewKey.alias)
+        viewSettings = self.__guiLoader.entitiesFactory.getSettings(loadParams.viewKey.alias)
         settings = WindowSettings()
         settings.flags = viewSettings.flags or WindowFlags.SERVICE_WINDOW
         settings.layer = viewSettings.layer

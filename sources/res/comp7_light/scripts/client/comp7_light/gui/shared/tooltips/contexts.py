@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.shared.tooltips import TOOLTIP_COMPONENT
 from gui.shared.tooltips.contexts import ToolTipContext
 from helpers import dependency

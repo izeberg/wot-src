@@ -150,6 +150,8 @@ package net.wg.infrastructure.base.meta
       
       function as_setShellCalibrationState(param1:uint) : void;
       
+      function as_setSharedLayout(param1:uint) : void;
+      
       function as_setAutoreloaderSurgeState(param1:Boolean) : void;
    }
 }

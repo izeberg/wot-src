@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from enum import Enum
 FEATURE_VEH_SKILL_TREE = 'veh_skill_tree'
 VEH_SKILL_TREE_SCREEN = 'tier_11_progression_screen'

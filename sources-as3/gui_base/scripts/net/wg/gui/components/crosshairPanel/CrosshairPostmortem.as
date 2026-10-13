@@ -4,6 +4,7 @@ package net.wg.gui.components.crosshairPanel
    import flash.text.TextField;
    import net.wg.gui.components.crosshairPanel.VO.GunMarkerIndicatorVO;
    import net.wg.gui.components.crosshairPanel.components.autoloader.BoostIndicatorStateParamsVO;
+   import net.wg.infrastructure.interfaces.ILayoutPart;
    
    public class CrosshairPostmortem extends MovieClip implements ICrosshair
    {
@@ -212,6 +213,14 @@ package net.wg.gui.components.crosshairPanel
       }
       
       public function setReloadBoostBorderVisible(param1:Boolean, param2:Boolean, param3:Boolean) : void
+      {
+      }
+      
+      public function connectLayout(param1:ILayoutPart) : void
+      {
+      }
+      
+      public function disconnectLayout(param1:ILayoutPart) : void
       {
       }
    }

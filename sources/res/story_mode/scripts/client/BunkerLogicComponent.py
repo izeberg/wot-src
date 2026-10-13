@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld, CGF
 from story_mode_common.cgf_components_common.bunkers import BunkerLogicComponentDescriptor
 from constants import IS_CGF_DUMP, IS_EDITOR

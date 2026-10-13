@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>3.000000</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>wall</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/FortRush/normal/lod0/shockWave_cylinder_01.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>3.000000</duration>
+				<value>ctrl|root</value>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>m_noise</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.901961 0.086275 0.078431 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.062500</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.062500</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.800000</startTime>
+				<value>0.901961 0.086275 0.078431 0.050000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.019886</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.019886</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.000000</startTime>
+				<value>0.901961 0.086275 0.078431 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.022727</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -0.022727</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>m_wave</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.901961 0.086275 0.078431 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.622549</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.622549</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.800000</startTime>
+				<value>0.901961 0.086275 0.078431 0.498039</value>
+				<inTangent>0.000000 0.000000 0.000000 0.198084</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.198084</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.000000</startTime>
+				<value>0.901961 0.086275 0.078431 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.226381</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -0.226381</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>refraction</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/FortRush/normal/lod0/shockWave_refraction.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>3.000000</duration>
+				<value>ctrl|root</value>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.200000 1.000000 0.200000</value>
+				<inTangent>0.304348 0.217391 0.304348</inTangent>
+				<outTangent>0.304348 0.217391 0.304348</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>mat_shockWave</identifier>
+			<property>g_effectPower</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.900000</inTangent>
+				<outTangent>0.900000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.333333</startTime>
+				<value>0.300000</value>
+				<inTangent>0.300001</inTangent>
+				<outTangent>0.300001</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.333333</startTime>
+				<value>0.000000</value>
+				<inTangent>-0.300000</inTangent>
+				<outTangent>-0.300000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>ctrl</name>
+		<type>model</type>
+		<resource>content/Environment/env_null_model/null_model.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>14.000000 0.277778 14.000000</inTangent>
+				<outTangent>14.000000 0.277778 14.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.000000</startTime>
+				<value>15.000000 1.277778 15.000000</value>
+				<inTangent>8.750000 0.319445 8.750000</inTangent>
+				<outTangent>8.750000 0.319445 8.750000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.000000</startTime>
+				<value>22.000000 2.000000 22.000000</value>
+				<inTangent>3.500000 0.361111 3.500000</inTangent>
+				<outTangent>3.500000 0.361111 3.500000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

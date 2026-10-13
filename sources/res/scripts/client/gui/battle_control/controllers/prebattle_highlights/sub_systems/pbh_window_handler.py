@@ -49,6 +49,7 @@ class PbhWindowHandler(BasePbhSubSystem):
     def __init__(self, readyCallback):
         self.__window = None
         self.__windowReady = False
+        self.__inFade = False
         self.__fadeManager = _PreloadedFadeManager(WindowLayer.OVERLAY)
         self.__uiLogger = PrebattleHighlightsEventLogger()
         super(PbhWindowHandler, self).__init__(readyCallback)
@@ -62,6 +63,10 @@ class PbhWindowHandler(BasePbhSubSystem):
 
     def isReady(self):
         return self.__window is not None and self.__windowReady
+
+    @property
+    def inFade(self):
+        return self.__inFade
 
     def startFlow(self):
         if not self.isReady():
@@ -84,6 +89,7 @@ class PbhWindowHandler(BasePbhSubSystem):
         if self.__window is not None:
             self.__window = None
             self.__windowReady = False
+        self.__inFade = False
         self.__fadeManager = None
         super(PbhWindowHandler, self).clear()
         return
@@ -102,6 +108,7 @@ class PbhWindowHandler(BasePbhSubSystem):
 
     @wg_async
     def toggleFadeManager(self, value):
+        self.__inFade = value
         if value:
             yield self.__fadeManager.show()
         else:

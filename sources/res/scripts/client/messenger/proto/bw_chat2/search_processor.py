@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from debug_utils import LOG_WARNING
 from messenger.m_constants import PROTO_TYPE
 from messenger.proto import proto_getter

@@ -1,32 +1,34 @@
-import types
+from __future__ import absolute_import
+from builtins import range
+from future.utils import viewitems
 from helpers import dependency
 from messenger.doc_loaders import _xml_helpers
 from skeletons.account_helpers.settings_core import ISettingsCore
 _userProps = {'datetimeIdx': (
-                 'readInt', 'writeInt', lambda value: value in xrange(0, 4), False), 
+                 'readInt', 'writeInt', lambda value: value in range(0, 4), False), 
    'enableOlFilter': (
-                    'readBool', 'writeBool', lambda value: isinstance(value, types.BooleanType),
+                    'readBool', 'writeBool', lambda value: isinstance(value, bool),
                     False), 
    'enableSpamFilter': (
-                      'readBool', 'writeBool', lambda value: isinstance(value, types.BooleanType),
+                      'readBool', 'writeBool', lambda value: isinstance(value, bool),
                       False), 
    'invitesFromFriendsOnly': (
-                            'readBool', 'writeBool', lambda value: isinstance(value, types.BooleanType),
+                            'readBool', 'writeBool', lambda value: isinstance(value, bool),
                             False), 
    'storeReceiverInBattle': (
-                           'readBool', 'writeBool', lambda value: isinstance(value, types.BooleanType),
+                           'readBool', 'writeBool', lambda value: isinstance(value, bool),
                            False), 
    'disableBattleChat': (
-                       'readBool', 'writeBool', lambda value: isinstance(value, types.BooleanType),
+                       'readBool', 'writeBool', lambda value: isinstance(value, bool),
                        False), 
    'chatContactsListOnly': (
-                          'readBool', 'writeBool', lambda value: isinstance(value, types.BooleanType),
+                          'readBool', 'writeBool', lambda value: isinstance(value, bool),
                           True), 
    'receiveFriendshipRequest': (
-                              'readBool', 'writeBool', lambda value: isinstance(value, types.BooleanType),
+                              'readBool', 'writeBool', lambda value: isinstance(value, bool),
                               False), 
    'receiveInvitesInBattle': (
-                            'readBool', 'writeBool', lambda value: isinstance(value, types.BooleanType),
+                            'readBool', 'writeBool', lambda value: isinstance(value, bool),
                             True)}
 
 def loadDefault(xmlCtx, section, messengerSettings):
@@ -54,7 +56,7 @@ def loadFromServer(messengerSettings):
     data = messengerSettings.userPrefs._asdict()
     settingsCore = dependency.instance(ISettingsCore)
     core = settingsCore.serverSettings
-    for key, (_, _, _, isExtended) in _userProps.iteritems():
+    for key, (_, _, _, isExtended) in viewitems(_userProps):
         section = SETTINGS_SECTIONS.GAME_EXTENDED if isExtended else SETTINGS_SECTIONS.GAME
         settingValue = core.getSectionSettings(section, key, None)
         if settingValue is not None:
@@ -70,7 +72,7 @@ def loadFromServer(messengerSettings):
 def flush(messengerSettings, data):
     oldData = messengerSettings.userPrefs._asdict()
     newData = {}
-    for key, value in data.iteritems():
+    for key, value in viewitems(data):
         if key in oldData and oldData[key] == value:
             continue
         if key in _userProps:

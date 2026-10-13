@@ -385,10 +385,10 @@ class SubscriptionSettingsStorage(object):
         return 2
 
     def isOptionalDevicesAssistantEnabled(self):
-        tierSettings = self._getEnabledTierSettings()
-        if not tierSettings:
+        settingsModel = self._modelProvider.getModelRef()
+        if not settingsModel:
             return False
-        return tierSettings.optionalDevicesAssistantFeature.enabled
+        return settingsModel.optionalDevicesAssistantFeature.enabled
 
     def isOptionalDevicesAssistantAvailable(self):
         tierSettings = self._getEnabledTierSettings()

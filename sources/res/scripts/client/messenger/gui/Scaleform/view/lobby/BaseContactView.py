@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from debug_utils import LOG_ERROR
 from messenger.gui.Scaleform.meta.BaseContactViewMeta import BaseContactViewMeta
 

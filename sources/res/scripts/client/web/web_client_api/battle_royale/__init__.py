@@ -1,4 +1,6 @@
+from __future__ import absolute_import
 from collections import namedtuple
+from future.utils import listvalues
 from web.web_client_api import webApiCollection
 from web.web_client_api.exchange import PersonalExchangeRatesDiscountsWebApi
 from web.web_client_api.request import RequestWebApi
@@ -30,7 +32,7 @@ class BattleRoyaleWebApi(W2CSchema):
 
     @w2c(W2CSchema, name='get_calendar_info')
     def handleGetCalendarInfo(self, _):
-        calendarData = dict()
+        calendarData = {}
         for season in self.__getSeasons():
             if season is not None:
                 calendarData['season'] = {'id': season.getSeasonID(), 'start': season.getStartDate(), 
@@ -53,7 +55,7 @@ class BattleRoyaleWebApi(W2CSchema):
                'top1': stats.topCount, 
                'season_id': currentSeason.getSeasonID(), 
                'episode_id': currentSeason.getCycleID() or currentSeason.getLastActiveCycleID(now)}
-        return seasonsAchievements.values()
+        return listvalues(seasonsAchievements)
 
     def __getSeasonAchievements(self, achievements, template):
         seasonsAchievements = {}

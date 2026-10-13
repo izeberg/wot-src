@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from helpers import dependency, time_utils
 from skeletons.connection_mgr import IConnectionManager
 from skeletons.gui.web import IWebController

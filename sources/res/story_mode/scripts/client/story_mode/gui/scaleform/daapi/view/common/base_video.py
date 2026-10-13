@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from logging import getLogger
 import BigWorld, SoundGroups, typing, WWISE, Windowing
 from PlayerEvents import g_playerEvents

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import SoundGroups
 from typing import Tuple, Optional, TYPE_CHECKING
 from constants import ARENA_BONUS_TYPE

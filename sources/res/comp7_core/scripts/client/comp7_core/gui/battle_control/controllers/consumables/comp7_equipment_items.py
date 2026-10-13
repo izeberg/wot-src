@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, BigWorld
 from PlayerEvents import g_playerEvents
 from comp7_core_constants import ROLE_EQUIPMENT_TAG

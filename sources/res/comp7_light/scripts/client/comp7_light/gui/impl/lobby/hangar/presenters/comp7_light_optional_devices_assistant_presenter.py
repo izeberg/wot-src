@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from frameworks_common.state_machine import visitor
 from gui.impl.lobby.hangar.presenters.optional_devices_assistant_presenter import _OptionalDevicesObserver, OptionalDevicesAssistantPresenter

@@ -3,7 +3,7 @@ import typing, CommandMapping
 from AvatarInputHandler.commands.input_handler_command import InputHandlerCommand
 from vehicles.mechanics.mechanic_helpers import getPlayerVehicleMechanicComponent
 if typing.TYPE_CHECKING:
-    from vehicles.mechanics.mechanic_constants import VehicleMechanic
+    from items.vehicle_mechanics_types import VehicleMechanicKey
 
 class SightPointerActivationControl(InputHandlerCommand):
 

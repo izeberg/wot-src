@@ -3,6 +3,8 @@ package net.wg.data.constants.generated
    public class CLIP_RELOADING_TYPES
    {
       
+      public static const HIDDEN:int = -1;
+      
       public static const CASSETTE_CLIP:int = 0;
       
       public static const AUTO_LOADER_CLIP:int = 1;

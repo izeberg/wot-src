@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/russian/R236_Object_265_II/_skins/R236_Object_265_II_HW26_3Dst/normal/lod1/Hull</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/russian/R236_Object_265_II/_skins/R236_Object_265_II_HW26_3Dst/normal/lod2/Hull</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.984486 -0.765138 -4.018437</min>
+		<max>1.982341 0.753869 4.406985</max>
+	</visibilityBox>
+</root>

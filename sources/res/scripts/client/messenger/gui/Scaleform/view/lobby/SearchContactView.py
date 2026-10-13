@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.locale.MESSENGER import MESSENGER
 from helpers import i18n
 from messenger.gui.Scaleform.data.search_data_providers import SearchUsersDataProvider

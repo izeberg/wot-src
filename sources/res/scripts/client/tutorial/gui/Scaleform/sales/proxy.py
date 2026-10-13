@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from tutorial.gui import GUI_EFFECT_NAME
 from tutorial.gui.Scaleform import effects_player
 from tutorial.gui.Scaleform.lobby.proxy import SfLobbyProxy

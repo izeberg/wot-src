@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from frontline.gui.impl.lobby.tank_setup.array_provider import BattleAbilityProvider
 from gui.impl.common.tabs_controller import tabUpdateFunc
 from gui.impl.lobby.tank_setup.configurations.base import BaseTankSetupTabsController, BaseDealPanel

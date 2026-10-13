@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from helpers import dependency
 from story_mode.gui.scaleform.daapi.view.meta.StoryModeSubtitlesMeta import StoryModeSubtitlesMeta
 from story_mode.skeletons.story_mode_controller import IStoryModeController

@@ -1,8 +1,10 @@
-import resource_helper
+import typing, resource_helper
 from gui.wgnc import actions
-from gui.wgnc.wgnc_helpers import parseSize
 from gui.wgnc.errors import ParseError
-from gui.wgnc.xml.shared_parsers import SectionParser, ParsersCollection
+from gui.wgnc.wgnc_helpers import parseSize
+from gui.wgnc.xml.shared_parsers import ParsersCollection, SectionParser
+if typing.TYPE_CHECKING:
+    import ResMgr
 
 class _CallbackActionParser(SectionParser):
 
@@ -25,20 +27,21 @@ class _BrowseActionParser(SectionParser):
         if target == 'internal':
             size = parseSize(section.readString('size'))
             showRefresh = section.readBool('show_refresh')
-            webClientHandler = section.readString('web_client_handler')
+            webClientHandler = section.readString('web_client_handler') if section.has_key('web_client_handler') else None
             isSolidBorder = section.readBool('is_solid_border')
-            action = actions.OpenInternalBrowser(name, url, size, showRefresh, webClientHandler, isSolidBorder)
-        elif target == 'external':
-            action = actions.OpenExternalBrowser(name, url)
-        elif target == 'promo':
-            action = actions.OpenPromoBrowser(name, url)
-        elif target == 'stronghold':
-            action = actions.OpenStrongholdBrowser(name, url)
-        elif target == 'ranked':
-            action = actions.OpenRankedBrowser(name, url)
+            return actions.OpenInternalBrowser(name, url, size, showRefresh, webClientHandler, isSolidBorder)
         else:
-            raise ParseError(('The target of action "{0}" is not valid: {1}.').format(self.getTagName(), target))
-        return action
+            if target == 'external':
+                return actions.OpenExternalBrowser(name, url)
+            if target == 'promo':
+                return actions.OpenPromoBrowser(name, url)
+            if target == 'stronghold':
+                return actions.OpenStrongholdBrowser(name, url)
+            if target == 'ranked':
+                return actions.OpenRankedBrowser(name, url)
+            msg = ('The target "{}" of action "{}" is not valid.').format(target, self.getTagName())
+            raise ParseError(msg)
+            return
 
 
 class _OpenWindowParser(SectionParser):

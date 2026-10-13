@@ -1,4 +1,7 @@
-import logging, adisp
+from __future__ import absolute_import
+import logging
+from past.builtins import basestring
+import adisp
 from gui import DialogsInterface
 from gui.Scaleform.daapi.view.dialogs.ExchangeDialogMeta import ExchangeCreditsWebProductMeta
 from gui.impl.dialogs.dialogs import showExchangeToBuyItemsDialog

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, BigWorld
 from visual_script import ASPECT
 from visual_script.block import Block, Meta

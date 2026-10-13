@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.impl import backport
 from gui.impl.gen import R
 from comp7.gui.impl.gen.view_models.views.lobby.enums import Rank, Division

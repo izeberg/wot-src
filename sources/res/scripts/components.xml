@@ -92,6 +92,7 @@
 		<StaticDeathZoneVisual/>
 		<EntityVisualScriptRunner/>
 		<SequenceNetworkSync/>
+		<StateMachineNetworkSync/>
 		<DualAccuracy/>
 		<ArenaVehiclesInfo/>
 		<AvatarVehiclesInfo/>
@@ -132,5 +133,6 @@
 		<ShellParamsSwitcherController/>
 		<ShellCalibrationController/>
 		<BustleFeedController/>
+		<SpecBoostModeComponent/>
 	</DynamicComponents>
 </root>

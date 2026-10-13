@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BattleReplay
 from ReservesEvents import randomReservesEvents
 from frontline_common.constants import CallbackDataNames

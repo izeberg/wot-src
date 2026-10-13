@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, BigWorld
 from avatar_helpers import getAvatarSessionID
 from gui.ClientUpdateManager import g_clientUpdateManager

@@ -1,4 +1,7 @@
-import typing, Event
+from __future__ import absolute_import
+import typing
+from future.utils import viewitems, viewvalues
+import Event
 from Event import EventManager
 from comp7_light.gui.comp7_light_constants import FUNCTIONAL_FLAG
 from comp7_light.helpers.comp7_light_server_settings import Comp7LightServerSettings
@@ -234,7 +237,7 @@ class Comp7LightController(Notifiable, SeasonProvider, IComp7LightController, IG
             self.__roleEquipmentsCache = {}
             equipmentsCache = vehicles.g_cache.equipments()
             roleEquipmentsConfig = dict(self.getModeSettings().roleEquipments, **self.getModeSettings().roleEquipmentsByVehicle)
-            for role, equipmentConfig in roleEquipmentsConfig.iteritems():
+            for role, equipmentConfig in viewitems(roleEquipmentsConfig):
                 if equipmentConfig['equipmentID'] is not None:
                     startCharge = equipmentConfig['startCharge']
                     startLevel = len([ levelCost for levelCost in equipmentConfig['cost'] if levelCost <= startCharge ])
@@ -247,12 +250,12 @@ class Comp7LightController(Notifiable, SeasonProvider, IComp7LightController, IG
     def __applyRoleEquipmentOverrides(self):
         equipmentsCache = vehicles.g_cache.equipments()
         roleEquipmentsConfig = self.getModeSettings().roleEquipments
-        for equipment, overrideAttr in self.__roleOverridesCacheParameterByEquipment.iteritems():
+        for equipment, overrideAttr in viewitems(self.__roleOverridesCacheParameterByEquipment):
             setattr(equipment, overrideAttr, None)
 
         self.__roleOverridesCacheParameterByEquipment = {}
-        for equipmentConfig in roleEquipmentsConfig.itervalues():
-            for attr, value in equipmentConfig['overrides'].iteritems():
+        for equipmentConfig in viewvalues(roleEquipmentsConfig):
+            for attr, value in viewitems(equipmentConfig['overrides']):
                 equipment = equipmentsCache[equipmentConfig['equipmentID']]
                 overrideAttr = attr + 'RoleOverride'
                 if hasattr(equipment, overrideAttr):

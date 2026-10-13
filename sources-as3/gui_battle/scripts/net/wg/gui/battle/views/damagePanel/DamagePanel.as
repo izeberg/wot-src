@@ -34,11 +34,13 @@ package net.wg.gui.battle.views.damagePanel
    import net.wg.infrastructure.base.meta.IDamagePanelMeta;
    import net.wg.infrastructure.base.meta.impl.DamagePanelMeta;
    import net.wg.infrastructure.events.LifeCycleEvent;
+   import net.wg.infrastructure.layoutPart.ILayoutBoundsProvider;
+   import net.wg.infrastructure.layoutPart.LayoutBounds;
    import net.wg.infrastructure.managers.IAtlasManager;
    import net.wg.infrastructure.managers.ITooltipMgr;
    import scaleform.gfx.TextFieldEx;
    
-   public class DamagePanel extends DamagePanelMeta implements IDamagePanelMeta
+   public class DamagePanel extends DamagePanelMeta implements IDamagePanelMeta, ILayoutBoundsProvider
    {
       
       public static const PANEL_WIDTH:int = 230;
@@ -507,6 +509,11 @@ package net.wg.gui.battle.views.damagePanel
       public function as_updateSpeed(param1:int) : void
       {
          this.updateSpeed(param1);
+      }
+      
+      public function getLayoutBounds() : LayoutBounds
+      {
+         return new LayoutBounds(PANEL_WIDTH,height);
       }
       
       private function updateSpeed(param1:int) : void

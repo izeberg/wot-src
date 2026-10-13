@@ -1,3 +1,6 @@
+from __future__ import absolute_import
+from future.utils import lmap
+from past.builtins import long
 from collections import namedtuple
 from constants import IGR_TYPE, ARENA_GUI_TYPE_LABEL
 from gui.shared.utils.decorators import ReprInjector
@@ -135,7 +138,7 @@ def makeMucInfo(info):
                     return int(code)
                 return 0
 
-            statuses = map(__convert, info['status_codes'])
+            statuses = lmap(__convert, info['status_codes'])
         else:
             statuses = ()
         return MucInfo(affiliation, role, statuses)

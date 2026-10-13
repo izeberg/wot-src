@@ -1,4 +1,7 @@
-import functools, math, SoundGroups, helpers, math_utils, BigWorld
+from __future__ import absolute_import, division
+import functools, math, SoundGroups, helpers
+from future.utils import viewvalues
+import math_utils, BigWorld
 from Math import Vector2, Vector3
 from helpers import dependency
 from helpers.CallbackDelayer import CallbackDelayer
@@ -10,6 +13,7 @@ from items import vehicles
 import BattleReplay
 from skeletons.gui.battle_session import IBattleSessionProvider
 from gui.battle_control.battle_constants import VEHICLE_VIEW_STATE
+from math_common import round_py2_style
 from smoke_screen import SmokeScreen
 _ENABLE_DEBUG_DRAW = False
 _ENABLE_DEBUG_LOG = False
@@ -76,10 +80,10 @@ class CombatEquipmentManager(object):
         return False
 
     def onBecomeNonPlayer(self):
-        for area in self.__selectedAreas.itervalues():
+        for area in viewvalues(self.__selectedAreas):
             area.destroy()
 
-        for wing in self.__wings.itervalues():
+        for wing in viewvalues(self.__wings):
             wing.destroy()
 
         self.__callbackDelayer.destroy()
@@ -175,7 +179,7 @@ class CombatEquipmentManager(object):
         return
 
     def __showMarkerCallback(self, eq, pos, direction, time, areaUID):
-        timer = round(time - BigWorld.serverTime())
+        timer = round_py2_style(time - BigWorld.serverTime())
         if timer <= 0.0:
             return
         else:
@@ -194,7 +198,7 @@ class CombatEquipmentManager(object):
 
     def setGUIVisible(self, isVisible):
         self.__isGUIVisible = isVisible
-        for area in self.__selectedAreas.itervalues():
+        for area in viewvalues(self.__selectedAreas):
             area.setGUIVisible(self.__isGUIVisible)
 
     def setVFXVisible(self, isVisible):

@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from future.utils import viewvalues
 from constants import WG_GAMES
 from gui import makeHtmlString
 from gui.Scaleform.genConsts.CONTACTS_ALIASES import CONTACTS_ALIASES
@@ -381,11 +383,11 @@ class _ContactsConverter(IContactsConverter):
 
     def makeVO(self, pattern=None):
         if pattern:
-            contacts = self._matchPattern(pattern, self._contacts.itervalues())
+            contacts = self._matchPattern(pattern, viewvalues(self._contacts))
         else:
             if not self._contacts and self._showEmptyItem:
                 return [self.makeEmptyRow(self._parent)]
-            contacts = self._contacts.itervalues()
+            contacts = viewvalues(self._contacts)
         return sorted(contacts, key=lambda item: item['criteria'])
 
     def _makeContactVO(self, contact):
@@ -516,13 +518,13 @@ class FriendsGroupsConverter(IContactsConverter):
 
     def getContacts(self):
         result = {}
-        for frGroupConverter in self._groups.itervalues():
+        for frGroupConverter in viewvalues(self._groups):
             result.update(frGroupConverter.getContacts())
 
         return result
 
     def hasContacts(self):
-        for frGroupConverter in self._groups.itervalues():
+        for frGroupConverter in viewvalues(self._groups):
             if frGroupConverter.getContacts():
                 return True
 
@@ -542,13 +544,13 @@ class FriendsGroupsConverter(IContactsConverter):
         return not self._groups
 
     def showEmptyItem(self, value):
-        for group in self._groups.itervalues():
+        for group in viewvalues(self._groups):
             group.showEmptyItem(value)
 
         self._showEmptyItem = value
 
     def setConditionClass(self, clazz):
-        for group in self._groups.itervalues():
+        for group in viewvalues(self._groups):
             group.setConditionClass(clazz)
 
         self._conditionClass = clazz
@@ -574,7 +576,7 @@ class FriendsGroupsConverter(IContactsConverter):
                     self._groups.pop(group)
 
     def setMutable(self, value):
-        for group in self._groups.itervalues():
+        for group in viewvalues(self._groups):
             group.setMutable(value)
 
         self._rules = _setMutableRule(self._rules, value)
@@ -597,7 +599,7 @@ class FriendsGroupsConverter(IContactsConverter):
 
     def makeVO(self, pattern=None):
         vos = []
-        for group in sorted(self._groups.itervalues(), key=lambda group: group.getCriteria()):
+        for group in sorted(viewvalues(self._groups), key=lambda g: g.getCriteria()):
             vo = group.makeVO(pattern)
             if vo:
                 vos.append(vo)

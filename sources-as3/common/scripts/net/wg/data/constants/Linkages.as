@@ -565,6 +565,8 @@ package net.wg.data.constants
       
       public static const SIGHT_POINTER_WIDGET:String = "SightPointerWidgetUI";
       
+      public static const SPEC_BOOST_MODE:String = "SpecBoostModeWidgetUI";
+      
       public static const CONCENTRATION_DECOR_CROSSHAIR:String = "ConcentrationCrosshairUI";
       
       public static const ACCURACY_DECOR_CROSSHAIR:String = "AccuracyCrosshairUI";

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import CGF, GpuDecals, GenericComponents
 from vehicle_systems.vehicle_composition import findParentVehicleAppearance
 from vehicle_systems.tankStructure import TankPartIndexes, TankPartNames

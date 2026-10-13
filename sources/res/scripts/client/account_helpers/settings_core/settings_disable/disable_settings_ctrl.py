@@ -1,5 +1,6 @@
-from account_helpers.settings_core.settings_disable import aop as daop
+from __future__ import absolute_import
 from typing import TYPE_CHECKING
+from account_helpers.settings_core.settings_disable import aop as daop
 from gui.prb_control.entities.listener import IGlobalListener
 from helpers import dependency, aop
 from skeletons.account_helpers.settings_core import ISettingsCore

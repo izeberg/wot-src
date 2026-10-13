@@ -1,7 +1,9 @@
 from __future__ import absolute_import, print_function
-import cStringIO, logging, sys, traceback
+import logging, sys, traceback
 from contextlib import closing
+from future.utils import viewitems
 import BigWorld
+from py2to3.moves.io import FastStringIO
 _LOG_LEVEL_2_BW_FUNCTION = {logging.NOTSET: BigWorld.logTrace, 
    logging.DEBUG: BigWorld.logDebug, 
    logging.INFO: BigWorld.logInfo, 
@@ -35,13 +37,13 @@ class WotExtendedFormatter(WotFormatter):
             frames.append(frame)
             frame = frame.f_back
 
-        with closing(cStringIO.StringIO()) as (sio):
+        with closing(FastStringIO()) as (sio):
             print(message, file=sio)
             for frame in reversed(frames):
                 print('', file=sio)
                 print(('Frame {} in {} at line {}').format(frame.f_code.co_name, frame.f_code.co_filename, frame.f_lineno), file=sio)
                 size = self._frameSize
-                for key, value in frame.f_locals.iteritems():
+                for key, value in viewitems(frame.f_locals):
                     if not size:
                         break
                     size -= 1

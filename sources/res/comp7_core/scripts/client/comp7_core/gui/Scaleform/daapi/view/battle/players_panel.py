@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from comp7_core.gui.Scaleform.daapi.view.battle.comp7_voip_helper import Comp7VoipHelper, VoiceChatControlTextStyles
 from comp7_core.gui.Scaleform.daapi.view.meta.Comp7PlayersPanelMeta import Comp7PlayersPanelMeta
 from constants import ARENA_PERIOD

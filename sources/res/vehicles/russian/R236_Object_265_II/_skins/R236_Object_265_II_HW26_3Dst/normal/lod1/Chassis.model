@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/russian/R236_Object_265_II/_skins/R236_Object_265_II_HW26_3Dst/normal/lod1/Chassis</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/russian/R236_Object_265_II/_skins/R236_Object_265_II_HW26_3Dst/normal/lod2/Chassis</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.629702 0.017501 -3.122743</min>
+		<max>1.629703 1.072526 3.433414</max>
+	</visibilityBox>
+</root>

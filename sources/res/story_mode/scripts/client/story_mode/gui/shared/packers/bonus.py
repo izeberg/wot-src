@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from gui.server_events.awards_formatters import getDefaultFormattersMap, ItemsBonusFormatter
 from gui.shared.missions.packers.bonus import ItemBonusUIPacker, BonusUIPacker, getDefaultBonusPackersMap

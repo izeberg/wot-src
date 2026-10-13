@@ -1,3 +1,4 @@
+from __future__ import absolute_import, division
 import math, logging, weakref, BigWorld, Math, math_utils
 from AvatarInputHandler import cameras, keys_handlers
 from AvatarInputHandler.control_modes import IControlMode

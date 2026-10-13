@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>halloween/vehicles/russian/R40_T-54_HW_BOT/normal/lod3/Gun_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.478267 -0.269988 0.022921</min>
+		<max>0.478495 0.279755 4.300651</max>
+	</visibilityBox>
+	<nodefullVisual>halloween/vehicles/russian/R40_T-54_HW_BOT/normal/lod2/Gun_01</nodefullVisual>
+</root>

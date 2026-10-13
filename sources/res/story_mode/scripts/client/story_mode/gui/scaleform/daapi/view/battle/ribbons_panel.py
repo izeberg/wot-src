@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.daapi.view.battle.pve_base.ribbons_panel import PveRibbonsPanel
 from story_mode.gui.scaleform.daapi.view.battle import ribbons_aggregator
 

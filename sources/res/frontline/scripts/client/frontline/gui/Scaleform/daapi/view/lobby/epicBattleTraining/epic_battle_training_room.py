@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from frontline.gui.prb_control.entities.epic_battle_training.ctx import EpicTrainingSettingsCtx
 from adisp import adisp_process
 from constants import PREBATTLE_TYPE

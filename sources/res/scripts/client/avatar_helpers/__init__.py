@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld
 from shared_utils.avatar_helpers import VehicleTelemetry
 

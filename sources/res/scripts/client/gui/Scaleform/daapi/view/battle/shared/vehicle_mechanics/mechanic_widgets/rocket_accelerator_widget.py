@@ -3,7 +3,7 @@ import typing
 from gui.Scaleform.daapi.view.meta.RocketAcceleratorIndicatorMeta import RocketAcceleratorIndicatorMeta
 from gui.veh_mechanics.battle.updaters.mechanics.mechanic_passenger_updater import VehicleMechanicPassengerUpdater
 from gui.veh_mechanics.battle.updaters.mechanics.rocket_accelerator_updater import IRocketAcceleratorView, RocketAcceleratorUpdater
-from vehicles.mechanics.mechanic_constants import VehicleMechanic
+from items.vehicle_mechanics_types import VehicleMechanicKeys
 if typing.TYPE_CHECKING:
     from gui.veh_mechanics.battle.updaters.updaters_common import IViewUpdater
 
@@ -23,5 +23,5 @@ class RocketAcceleratorMechanicIndicator(RocketAcceleratorIndicatorMeta, IRocket
 
     def _getViewUpdaters(self):
         return [
-         VehicleMechanicPassengerUpdater(VehicleMechanic.ROCKET_ACCELERATION, self),
+         VehicleMechanicPassengerUpdater(VehicleMechanicKeys.ROCKET_ACCELERATION, self),
          RocketAcceleratorUpdater(self)]

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from account_helpers import AccountSettings
 from account_helpers.AccountSettings import NEW_SHOP_TABS, IS_COMP7_BONS_BANNER_VISITED
 from comp7.gui.shared import event_dispatcher as comp7_events

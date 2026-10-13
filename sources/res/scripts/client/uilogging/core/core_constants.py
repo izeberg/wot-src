@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from enum import Enum
 from constants import AUTH_TOKEN_REQUEST_TIMEOUT
 from gui.clans.settings import REQUEST_TIMEOUT

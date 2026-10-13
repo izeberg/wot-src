@@ -1,10 +1,13 @@
-import logging, random, string
+from __future__ import absolute_import, division
+import logging, random
 from collections import namedtuple
-from functools import partial
 from enum import Enum
-import AnimationSequence, BigWorld, Math, WWISE, DecalMap, SoundGroups, helpers, material_kinds
-from PixieBG import PixieBG
-from helpers import dependency
+from functools import partial
+from future.utils import viewitems, viewvalues
+from past.builtins import intern, xrange
+import AnimationSequence, BigWorld, Math, WWISE, SoundGroups, helpers, material_kinds
+from helpers import dependency, DecalMap
+from helpers.PixieBG import PixieBG
 from skeletons.gui.lobby_context import ILobbyContext
 from skeletons.gui.battle_session import IBattleSessionProvider
 from soft_exception import SoftException
@@ -36,9 +39,9 @@ def _isPyModel(model):
 
 
 def reload():
-    import __builtin__
     from sys import modules
-    __builtin__.reload(modules[reload.__module__])
+    from py2to3.moves import importLib
+    importLib.reload(modules[reload.__module__])
 
 
 class EFFECT_DELETE_REASON(Enum):
@@ -67,7 +70,7 @@ class EffectsList(object):
         for effDesc in self.__effectDescList:
             out += effDesc.prerequisites()
 
-        for relatedEffect in self.relatedEffects.itervalues():
+        for relatedEffect in viewvalues(self.relatedEffects):
             out += relatedEffect.effectsList.prerequisites()
 
         return out
@@ -175,7 +178,7 @@ class EffectsListPlayer(object):
         self.__keyPointIdx = -1
         self.__isStarted = False
         self.__waitForKeyOff = False
-        self.__data = dict()
+        self.__data = {}
         return
 
     def play(self, model, startKeyPoint=None, callbackFunc=None, waitForKeyOff=False):
@@ -199,7 +202,7 @@ class EffectsListPlayer(object):
             self.__keyPointIdx -= 1
             self.__effectsList.attachTo(self.__model, self.__data, None, self.__excludeTags, **self.__args)
             firstTimePoint = self.__keyPoints[(self.__keyPointIdx + 1)].time
-            if self.__keyPointIdx < 0 and startKeyPoint is None and firstTimePoint > 0.0:
+            if startKeyPoint is None and self.__keyPointIdx < 0 < firstTimePoint:
                 self.__callbackID = BigWorld.callback(firstTimePoint, self.__playKeyPoint)
             else:
                 self.__playKeyPoint(waitForKeyOff)
@@ -258,7 +261,7 @@ class EffectsListPlayer(object):
         if self.__effectsList is not None:
             self.__effectsList.detachAllFrom(self.__data, keepPosteffects, forceDelete)
         self.__model = None
-        self.__data = dict()
+        self.__data = {}
         self.__curKeyPoint = None
         self.__callbackFunc = None
         return
@@ -267,6 +270,8 @@ class EffectsListPlayer(object):
         for i, keyPoint in enumerate(self.__keyPoints):
             if keyPoint.name == name:
                 return i
+
+        return
 
     def __playKeyPoint(self, waitForKeyOff=False):
         self.__callbackID = None
@@ -302,7 +307,7 @@ class _EffectDesc(object):
         self.endKey = dataSection.readString('endKey')
         nodeName = dataSection.readString('position')
         if nodeName:
-            self._nodeName = [ intern(name) for name in string.split(nodeName, '/') ]
+            self._nodeName = [ intern(name) for name in nodeName.split('/') ]
         else:
             self._nodeName = []
 
@@ -356,7 +361,7 @@ class _PixieEffectDesc(_EffectDesc):
         nodePos = self._nodeName
         elem['model'] = model
         if newPos is not None:
-            nodePos = string.split(newPos[0], '/') if newPos[0] else []
+            nodePos = newPos[0].split('/') if newPos[0] else []
         if elem['pixie'].pixie is not None and elem['node'] is not None:
             elem['node'].detach(elem['pixie'].pixie)
             elem['node'] = _findTargetNode(model, nodePos, newPos[1] if newPos and len(newPos) > 1 else None, self._orientByClosestSurfaceNormal, elem['surfaceNormal'])
@@ -372,7 +377,7 @@ class _PixieEffectDesc(_EffectDesc):
             elem['newPos'] = newPos = args.get('position', None)
             nodePos = self._nodeName
             if newPos is not None:
-                nodePos = string.split(newPos[0], '/') if newPos[0] else []
+                nodePos = newPos[0].split('/') if newPos[0] else []
             scale = args.get('scale')
             if scale is not None:
                 elem['scale'] = scale
@@ -471,7 +476,6 @@ class _AnimationEffectDesc(_EffectDesc):
                 return False
             elem['animator'].stop()
             return True
-            return
 
 
 class _VisibilityEffectDesc(_EffectDesc):
@@ -527,7 +531,7 @@ class _ModelEffectDesc(_EffectDesc):
         newPos = elem['newPos']
         nodeName = self._nodeName
         if newPos is not None:
-            nodeName = string.split(newPos[0], '/') if newPos[0] else []
+            nodeName = newPos[0].split('/') if newPos[0] else []
         targetNode = _findTargetNode(model, nodeName, newPos[1] if newPos and len(newPos) > 1 else None)
         targetNode.attach(model)
         return
@@ -537,7 +541,7 @@ class _ModelEffectDesc(_EffectDesc):
         newPos = args.get('position', None)
         nodeName = self._nodeName
         if newPos is not None:
-            nodeName = string.split(newPos[0], '/') if newPos[0] else []
+            nodeName = newPos[0].split('/') if newPos[0] else []
         targetNode = _findTargetNode(model, nodeName, newPos[1] if newPos and len(newPos) > 1 else None)
         targetNode.attach(currentModel)
         animator = None
@@ -566,9 +570,9 @@ def _getDamageSize(args):
     damageFactor = args.get('damageFactor', -1)
     if damageFactor > -1:
         damage_size = 'SWITCH_ext_damage_size_medium'
-        if damageFactor < 4335.0 / 100.0:
+        if damageFactor < 43.35:
             damage_size = 'SWITCH_ext_damage_size_small'
-        elif damageFactor > 8925.0 / 100.0:
+        elif damageFactor > 89.25:
             damage_size = 'SWITCH_ext_damage_size_large'
         return damage_size
     return
@@ -879,7 +883,7 @@ class _DestructionSoundEffectDesc(_BaseSoundEvent):
         self._soundName = dataSection.readString('wwsound', '')
         self.__readParameters(dataSection)
 
-    def create(self, model, list, args):
+    def create(self, model, effects, args):
         if self._soundName == '':
             return
         else:
@@ -1060,7 +1064,7 @@ class _SoundEffectDesc(_EffectDesc):
                 import traceback
                 traceback.print_stack()
             if idd == 0:
-                _logger.error('Failed to start sound effect, event ' + soundName)
+                _logger.error('Failed to start sound effect, event %s', soundName)
         effects.append(elem)
         return
 
@@ -1138,7 +1142,7 @@ class _PostProcessEffectDesc(_EffectDesc):
     def prerequisites(self):
         return []
 
-    def create(self, model, list, args):
+    def create(self, model, effects, args):
         pass
 
     def delete(self, elem, reason):
@@ -1154,7 +1158,7 @@ class _FlashBangEffectDesc(_EffectDesc):
     def __init__(self, dataSection):
         super(_FlashBangEffectDesc, self).__init__(dataSection)
         self._duration = 0.0
-        self._keyframes = list()
+        self._keyframes = []
         self.__fba = None
         self.__clbackId = None
         for stage in dataSection['stages'].values():
@@ -1166,7 +1170,7 @@ class _FlashBangEffectDesc(_EffectDesc):
     def prerequisites(self):
         return []
 
-    def create(self, model, list, args):
+    def create(self, model, effects, args):
         isFlashBangAllowed = True
         if not IS_EDITOR:
             inputHandler = getattr(BigWorld.player(), 'inputHandler')
@@ -1189,7 +1193,7 @@ class _FlashBangEffectDesc(_EffectDesc):
             self.__clbackId = BigWorld.callback(self._duration - 0.05, self.__removeMe)
         elem = {}
         elem['typeDesc'] = self
-        list.append(elem)
+        effects.append(elem)
         return
 
     @classmethod
@@ -1264,7 +1268,7 @@ class _LightEffectDesc(_EffectDesc):
                 return
             nodePos = self._nodeName
             if elem['newPos'] is not None:
-                nodePos = string.split(elem['newPos'][0], '/') if elem['newPos'][0] else []
+                nodePos = elem['newPos'][0].split('/') if elem['newPos'][0] else []
             node = _findTargetNode(model, nodePos)
             elem['source'] = node.actualNode
             if elem['light'] is not None:
@@ -1275,7 +1279,7 @@ class _LightEffectDesc(_EffectDesc):
         if not _ALLOW_DYNAMIC_LIGHTS:
             return
         else:
-            elem = dict()
+            elem = {}
             elem['isDynCollision'] = args.get('isDynCollision', False)
             if elem['isDynCollision']:
                 componentIdx = args.get('componentIdx')
@@ -1290,7 +1294,7 @@ class _LightEffectDesc(_EffectDesc):
                 elem['newPos'] = args.get('position', None)
                 nodePos = self._nodeName
                 if elem['newPos'] is not None:
-                    nodePos = string.split(elem['newPos'][0], '/') if elem['newPos'][0] else []
+                    nodePos = elem['newPos'][0].split('/') if elem['newPos'][0] else []
                 node = _findTargetNode(model, nodePos)
                 elem['source'] = node.actualNode
             elem['typeDesc'] = self
@@ -1414,7 +1418,7 @@ _effectDescFactory = {'pixie': _PixieEffectDesc,
    'destructionSound': _DestructionSoundEffectDesc, 
    'lifetimeSound': _LifetimeSoundEffectDesc, 
    'autoShootTracerSound': _AutoShootTracerSoundEffectDesc}
-_effectDescTypeToKey = {cls.TYPE:key for key, cls in _effectDescFactory.iteritems()}
+_effectDescTypeToKey = {cls.TYPE:key for key, cls in viewitems(_effectDescFactory)}
 
 def _createEffectDesc(eType, dataSection):
     if not dataSection.values():
@@ -1571,7 +1575,7 @@ def _getHitPoint(model, nodeName, args):
     nodeDesc = args.get('position', None)
     nodeLocalPos = None
     if nodeDesc is not None:
-        nodeName = string.split(nodeDesc[0], '/') if nodeDesc[0] else []
+        nodeName = nodeDesc[0].split('/') if nodeDesc[0] else []
         nodeLocalPos = nodeDesc[1]
     node = _findTargetNode(model, nodeName, nodeLocalPos)
     hitPoint = args.get('hitPoint', None)

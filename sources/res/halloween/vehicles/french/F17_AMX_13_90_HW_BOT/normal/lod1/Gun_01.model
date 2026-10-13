@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>halloween/vehicles/french/F17_AMX_13_90_HW_BOT/normal/lod2/Gun_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.852333 -0.552608 -2.073888</min>
+		<max>0.925177 0.472488 4.226718</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>halloween/vehicles/french/F17_AMX_13_90_HW_BOT/normal/lod1/Gun_01</nodefullVisual>
+</root>

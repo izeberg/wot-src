@@ -1,4 +1,7 @@
-import weakref, math_utils, Math, BigWorld, CGF, Vehicular
+from __future__ import absolute_import
+import weakref
+from future.utils import lrange
+import BigWorld, Math, math_utils, CGF, Vehicular
 from cgf_script.registration import registerComponent
 from items.components.component_constants import MAIN_TRACK_PAIR_IDX, DEFAULT_TRACK_HIT_VECTOR, TrackState
 from items.vehicle_items import CHASSIS_ITEM_TYPE
@@ -35,10 +38,10 @@ class CrashedTracksController(object):
         return
 
     def isLeftTrackBroken(self):
-        return any([ state.isBroken for state in self.__crashedTracks[_TRACK_SIDE.LEFT] ])
+        return any(state.isBroken for state in self.__crashedTracks[_TRACK_SIDE.LEFT])
 
     def isRightTrackBroken(self):
-        return any([ state.isBroken for state in self.__crashedTracks[_TRACK_SIDE.RIGHT] ])
+        return any(state.isBroken for state in self.__crashedTracks[_TRACK_SIDE.RIGHT])
 
     def hasDebris(self, isLeft, pairIndex):
         side = _TRACK_SIDE.LEFT if isLeft else _TRACK_SIDE.RIGHT
@@ -181,7 +184,7 @@ class CrashedTracksController(object):
         trackIndices = []
         tracksPresent = self.__vehicleDesc.chassis.tracks is not None
         if (self.__vehicleDesc.chassis.chassisType == CHASSIS_ITEM_TYPE.MONOLITHIC or self.__vehicleDesc.chassis.chassisType == CHASSIS_ITEM_TYPE.TRACK_WITHIN_TRACK) and tracksPresent:
-            trackIndices = list(xrange(len(self.__vehicleDesc.chassis.tracks.trackPairs)))
+            trackIndices = lrange(len(self.__vehicleDesc.chassis.tracks.trackPairs))
         elif tracksPresent:
             trackIndices = [
              MAIN_TRACK_PAIR_IDX]

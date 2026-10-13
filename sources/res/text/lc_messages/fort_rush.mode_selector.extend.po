@@ -1,0 +1,46 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-01 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "#PluralForms"
+msgstr "nplurals=2; plural=(n != 1);"
+
+msgid "mode/fort_rush_battle/condition"
+msgstr "7v7 %(parSecondary_open)sI%(parSecondary_close)s Tier&nbsp;X"
+
+msgid "mode/fort_rush_battle/description"
+msgstr ""
+"Take control of the antennas. Hold the network. Secure the transmission."
+
+msgid "mode/fort_rush_battle/performance/highRisk/description"
+msgstr ""
+"Your computer's performance is insufficient for this mode. You may "
+"experience issues with graphics and vehicle movement. Game client crashes "
+"are also likely."
+
+msgid "mode/fort_rush_battle/performance/highRisk/header"
+msgstr "Low Performance"
+
+msgid "mode/fort_rush_battle/performance/highRisk/headerIcon"
+msgstr "%(icon) Low Performance"
+
+msgid "mode/fort_rush_battle/performance/mediumRisk/description"
+msgstr ""
+"This mode requires high computer performance. You will experience issues "
+"with map loading, graphics, and vehicle movement. In case of insufficient "
+"performance, try a lower graphics quality in your Settings."
+
+msgid "mode/fort_rush_battle/performance/mediumRisk/header"
+msgstr "Reduced Performance"
+
+msgid "mode/fort_rush_battle/performance/mediumRisk/headerIcon"
+msgstr "%(icon) Reduced Performance"

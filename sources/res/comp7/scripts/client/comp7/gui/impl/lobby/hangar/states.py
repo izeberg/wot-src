@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, typing
 from WeakMethod import WeakMethodProxy
 from comp7.gui.Scaleform.genConsts.COMP7_HANGAR_ALIASES import COMP7_HANGAR_ALIASES

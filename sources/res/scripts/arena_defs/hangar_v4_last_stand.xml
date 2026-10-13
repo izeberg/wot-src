@@ -73,6 +73,7 @@
 			<module>script::WotPlusProBoostModule</module>
 			<module>BW::VehicleTriggersModule</module>
 			<module>BW::VehicleBasicModule</module>
+			<module>BW::CGF::CGFBWCompatibilityModule</module>
 		</common>
 	</modules>
 </root>

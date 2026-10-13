@@ -1,0 +1,1569 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-12 10:00+0300\n"
+"PO-Revision-Date: 2023-01-12 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "abilitiesIncomplete/title"
+msgstr "Combat Abilities Incomplete"
+
+msgid "abilitiesIncomplete/toAbilities"
+msgstr "To Abilities"
+
+msgid "abilitiesIncomplete/toBattle"
+msgstr "To Battle"
+
+msgid "abilitiesIncomplete/warning"
+msgstr ""
+"The selected vehicle is missing one or more Combat Abilities. This could "
+"significantly affect your battle performance. Enter the battle anyway?"
+
+msgid "ammoSetup/changeHotKey/body"
+msgstr ""
+"You can customize the default event hotkey presets for Combat Abilities and shells.\n"
+"This change applies only to event battles and will not affect any other modes.\n"
+"You can still modify individual hotkeys in Menu — Settings — Controls (under Consumables)."
+
+msgid "ammoSetup/changeHotKey/header"
+msgstr "Consumable Hotkey Presets Change"
+
+msgid "anomaliesView/description_1"
+msgstr ""
+"These are crew bonuses in battle. On {{@ style (color #EEEDE9B2) "
+"(bold)}}Hard{{/}} and {{@ style (color #EEEDE9B2) (bold)}}Nightmare{{/}} "
+"difficulties, select Anomalies during combat and combine them to unlock an "
+"ultimate {{@ style (color #C293FFCC) (bold)}}Echo Anomaly{{/}}."
+
+msgid "anomaliesView/description_2"
+msgstr ""
+"This guide shows the Anomalies that you have obtained in previous battles, "
+"as well as those that have yet to be discovered. To open the Anomaly Menu in"
+" battle, {{@ style (color #EEEDE9B2) (bold)}}press N{{/}} (default key)."
+
+msgid "anomaliesView/header"
+msgstr "ANOMALIES"
+
+msgid "anomaliesView/quote_1/author"
+msgstr ""
+"—Object 66, The Quiet One\n"
+"They say he was never sent on an expedition. Yet others encounter him inside the Anomaly. He hands over new notes in silence and walks away."
+
+msgid "anomaliesView/quote_1/message"
+msgstr "May the Mirium fill you."
+
+msgid "anomaliesView/quote_2/author"
+msgstr ""
+"—Object 6, Pied Piper\n"
+"An engineer who came back from an expedition and built the Wavebreaker. Some say the Mirium changed him. Others, that he was always like this."
+
+msgid "anomaliesView/quote_2/message"
+msgstr ""
+"Can you hear it?\n"
+"That's the Mirium calling."
+
+msgid "anomaliesView/quote_3/author"
+msgstr ""
+"—Object 12, Magpie\n"
+"A lab assistant from an early expedition, listed MIA. But she came back. Not in the right place, not at the right time, and not as the one who had left."
+
+msgid "anomaliesView/quote_3/message"
+msgstr ""
+"No matter how many times you leave the Anomaly, it will keep pulling you "
+"back."
+
+msgid "anomaliesView/title"
+msgstr "Anomaly Combos"
+
+msgid "badgeWidget/tooltipBody"
+msgstr ""
+"Complete current mission to receive a unique Babylon: Forbidden Zone badge:"
+
+msgid "badgeWidget/tooltipHeader"
+msgstr "Epic Achievement Mission"
+
+msgid "bestiaryView/carousel/card/new"
+msgstr "NEW"
+
+msgid "bestiaryView/carousel/card/state/locked"
+msgstr "Locked"
+
+msgid "bestiaryView/carousel/card/tooltip/locked/body"
+msgstr "Complete Mission {number} to unlock the enemy's file."
+
+msgid "bestiaryView/carousel/card/tooltip/style/body"
+msgstr ""
+"Take on the enemy's form in Random Battle mode with a Babylon-twisted 3D "
+"style from the event store."
+
+msgid "bestiaryView/info/about/czech_Cz34_Vz_71_Tesak_HW_BOT"
+msgstr "?empty?"
+
+msgid "bestiaryView/info/about/france_F110_Lynx_6x6_HW_BOT"
+msgstr ""
+"A light and agile enemy capable of directing energy strikes at its targets."
+
+msgid "bestiaryView/info/about/france_F17_AMX_13_90_HW_BOT"
+msgstr ""
+"A lost Hornet tank that now hunts its former allies. Its sheer hatred has "
+"transformed into concentrated fire, capable of igniting enemies with every "
+"single shot."
+
+msgid "bestiaryView/info/about/germany_G00_Bomber_Hell"
+msgstr ""
+"Self-propelled black spheres, covered in spikes like naval mines. Hedgehogs "
+"always appear in groups. Fast and highly maneuverable, they only deal damage"
+" by exploding on impact. A single hit is dangerous. Several at once can be "
+"fatal."
+
+msgid "bestiaryView/info/about/germany_G00_K_bomber__HW_21_AI"
+msgstr ""
+"Similar to ordinary Hedgehogs in their characteristics and behavior, the "
+"Alpha Hedgehog can cause even more trouble. When this thing is detected, the"
+" entire squad is strongly advised to focus on destroying it."
+
+msgid "bestiaryView/info/about/germany_G113_SP_I_C_HW_BOT"
+msgstr ""
+"A group of tanks bound into a single structure. Damage dealt to one is "
+"shared across all of them. They stand or fall together."
+
+msgid "bestiaryView/info/about/germany_G142_M48RPz_HW_BOT"
+msgstr ""
+"A standard enemy inside the Anomaly that guards the locations where Matter "
+"is found. When you approach the camp, all the Guards hidden there reveal "
+"themselves and attack. They are creations of Mirium and disappear without a "
+"trace upon destruction."
+
+msgid "bestiaryView/info/about/germany_G171_E77_HW_BOT"
+msgstr ""
+"The Monarch acts as the anchor for the Hive, sustaining every unit nearby."
+
+msgid "bestiaryView/info/about/germany_G181_E100_Autocannon_Boss_HW25_bot"
+msgstr "?empty?"
+
+msgid "bestiaryView/info/about/germany_G25_PzII_Luchs_HELL_HALL"
+msgstr ""
+"A cowardly and cautious enemy that prefers to retreat at the first sign of "
+"detection. Not dangerous, but of interest as an easy target and source of "
+"Mirium."
+
+msgid "bestiaryView/info/about/germany_G64_Panther_II_Hall_minion"
+msgstr ""
+"A medium tank capable of pursuing our crews throughout the entire Anomaly. "
+"Its powerful high-explosive shells can deal a considerable amount of damage "
+"to low-armored allies."
+
+msgid "bestiaryView/info/about/germany_G73_E50_Ausf_M_Hall_minion"
+msgstr ""
+"A heavy and powerful tank that tends to lead the pack of guards at camps. "
+"Its immense durability and high damage output make it a lethal threat."
+
+msgid "bestiaryView/info/about/italy_It19_Progetto_C50_mod_66_HW_BOT"
+msgstr ""
+"A Mirium-copied, twisted version of the Legio Ferrata, now turned against "
+"its former allies with even greater power."
+
+msgid "bestiaryView/info/about/uk_GB100_Manticore_HW_BOT"
+msgstr ""
+"A fast, low-profile opponent boasting high speed and durability. Infused "
+"with unbreakable tracks, it carries a massive hoard of Mirium and will "
+"immediately attempt to flee upon detection."
+
+msgid "bestiaryView/info/about/uk_GB125_Saladin_HW_BOT"
+msgstr ""
+"This enemy carries no conventional weapons. Instead, it attempts to close "
+"the distance and self-destruct, releasing a shockwave that stuns all "
+"vehicles caught within its blast radius."
+
+msgid "bestiaryView/info/about/uk_GB24_Centurion_Mk3_HW_BOT"
+msgstr ""
+"A Cerberus lost within the Anomaly, whose sole purpose is now to hunt down "
+"those attempting to seize its Mirium."
+
+msgid "bestiaryView/info/about/usa_A100_T49_HW_BOT"
+msgstr ""
+"A Lost Grenadier that can still be found within the Anomaly. Its high damage"
+" output and laser guidance system make it a formidable opponent."
+
+msgid "bestiaryView/info/about/ussr_R171_IS_3_II_HW_BOT"
+msgstr ""
+"A heavy tank that performs devastating ramming attacks. It usually moves "
+"ahead of enemy waves and sows chaos among the team. With a successful "
+"attack, it can destroy its target with a single blow."
+
+msgid "bestiaryView/info/about/ussr_R40_T-54_HW_BOT"
+msgstr ""
+"A Malachite lost within the Anomaly, now extremely dangerous. Has retained "
+"its original abilities and tries to get as close to you as possible."
+
+msgid "bestiaryView/info/about/ussr_R77_KV2_turret_2"
+msgstr ""
+"At first glance, this may seem like an easy target, but do not be fooled. "
+"Its heavy frontal armor and highly accurate gun make it a formidable threat "
+"in a direct head-on engagement."
+
+msgid "bestiaryView/info/description/ability_1"
+msgstr "Unable to leave the guarded area and pursue retreating vehicles."
+
+msgid "bestiaryView/info/description/ability_10"
+msgstr ""
+"Periodically damages all nearby vehicles with an energy wave formed in its "
+"coils."
+
+msgid "bestiaryView/info/description/ability_11"
+msgstr ""
+"The Anomaly transformed this vehicle's gun, creating concentrated fire that "
+"lets each shot ignite its target."
+
+msgid "bestiaryView/info/description/ability_12"
+msgstr ""
+"Fires high-explosive shells from an autoloader with a two-round magazine."
+
+msgid "bestiaryView/info/description/ability_13"
+msgstr ""
+"It burns away the strength of machines within its aura's radius and also "
+"draws out the Matter collected by players."
+
+msgid "bestiaryView/info/description/ability_14"
+msgstr ""
+"Enhanced ammunition with concentrated echo energy, providing a substantial "
+"damage bonus to all hits."
+
+msgid "bestiaryView/info/description/ability_15"
+msgstr ""
+"Creates a zone around itself. After a short delay, the zone detonates: any "
+"allied vehicle caught inside is stunned. Destroy Detonator before the blast,"
+" and the stun hits the surrounding echo tanks instead."
+
+msgid "bestiaryView/info/description/ability_16"
+msgstr ""
+"It does not move, acting as a stationary turret and hitting enemy tanks with"
+" accurate fire."
+
+msgid "bestiaryView/info/description/ability_17"
+msgstr ""
+"Acts as a master life-link for the group, making the survival of every unit "
+"dependent on this leader."
+
+msgid "bestiaryView/info/description/ability_18"
+msgstr ""
+"A direct link that ties this unit's core to its Monarch. When the master "
+"falls, the link breaks and this unit's structure collapses moments later."
+
+msgid "bestiaryView/info/description/ability_19"
+msgstr ""
+"Upon destruction, this enemy leaves behind a concentrated Anomaly that, when"
+" picked up, grants the team a special Pick-Up Anomaly."
+
+msgid "bestiaryView/info/description/ability_2"
+msgstr ""
+"Uses Charge to quickly close in on the target and ram into it, dealing "
+"considerable damage."
+
+msgid "bestiaryView/info/description/ability_3"
+msgstr ""
+"Hunters detect enemies at large distances and shoot slow-velocity HE shells "
+"from afar, which can prove extremely dangerous not only for light tanks, but"
+" also for the sides and rears of mediums and even heavies."
+
+msgid "bestiaryView/info/description/ability_4"
+msgstr ""
+"Uses Mirium to set traps on the ground beneath its prey. These zones "
+"detonate seconds later. Move or be torn apart."
+
+msgid "bestiaryView/info/description/ability_5"
+msgstr "Flees at maximum speed when detected, carrying Mirium away with it."
+
+msgid "bestiaryView/info/description/ability_6"
+msgstr ""
+"Locks onto the nearest target and charges at full speed, detonating on "
+"impact. The blast can also damage nearby vehicles."
+
+msgid "bestiaryView/info/description/ability_7"
+msgstr ""
+"Once destroyed, the Alpha Hedgehog shatters into several regular Hedgehogs "
+"(usually three, but numbers may vary), which will chase the closest ally, "
+"ram it, and explode."
+
+msgid "bestiaryView/info/description/ability_8"
+msgstr ""
+"Emits a Mirium aura that corrodes the armor of nearby vehicles, absorbing "
+"the lost material to restore itself."
+
+msgid "bestiaryView/info/description/ability_9"
+msgstr ""
+"Its weapon's increased rate of fire allows this enemy to inflict extra "
+"damage."
+
+msgid "bestiaryView/info/tacticalAdvise/czech_Cz34_Vz_71_Tesak_HW_BOT"
+msgstr ""
+"{UL}tacticalAdvise_czech_Cz34_Vz_71_Tesak_HW_BOT "
+"{UL}{LI}{f7f6f299Bold_open}Tactic_1{f7f6f299Bold_close}: "
+"do_1.{UL}{LI}{f7f6f299Bold_open}Tactic_2{f7f6f299Bold_close}: "
+"do_2.{UL}{LI}{f7f6f299Bold_open}Tactic_3{f7f6f299Bold_close}: do_3 ."
+
+msgid "bestiaryView/info/tacticalAdvise/france_F110_Lynx_6x6_HW_BOT"
+msgstr ""
+"{UL}It won't let you complete the mission in peace! Focus on destroying the "
+"Trapper first.{UL}{LI}{{@ style (bold)}}Spread out{{/}}: If an ally is too "
+"close, you might end up in their damage zone while trying to escape your "
+"own.{UL}{LI}{{@ style (bold)}}Avoid narrow passages{{/}}: Maintain maximum "
+"maneuverability.{UL}{LI}{{@ style (bold)}}Use vehicle abilities{{/}}: Shield"
+" will protect you from zone damage, while Stealth prevents the Trapper from "
+"targeting you in the first place. However, keep in mind that Stealth won't "
+"help if you're already inside a damage zone."
+
+msgid "bestiaryView/info/tacticalAdvise/france_F17_AMX_13_90_HW_BOT"
+msgstr ""
+"{UL}Count the shells, it has one for each of your team!{UL}{LI}{{@ style "
+"(bold)}}High-priority target{{/}}: Due to its anomalous abilities, this tank"
+" poses a significant threat to the entire team.{UL}{LI}{{@ style "
+"(bold)}}Tactics triumph{{/}}: Stealth and Group Repair can extinguish fire "
+"and help you or your allies not burn down completely.{UL}{LI}{{@ style "
+"(bold)}}Burst it down{{/}}: Use Turbo to ram it in one swift blow!"
+
+msgid "bestiaryView/info/tacticalAdvise/germany_G00_Bomber_Hell"
+msgstr ""
+"{UL}Once detected, Hedgehogs should become the team's top "
+"priority!{UL}{LI}{{@ style (bold)}}Vulnerability{{/}}: Their lack of armor "
+"makes them extremely easy to destroy with any weapon.{UL}{LI}{{@ style "
+"(bold)}}Group tactics{{/}}: These enemies usually attack in swarms, so stay "
+"alert and don't let them surprise you.{UL}{LI}{{@ style (bold)}}AOE "
+"advantage{{/}}: Use area-of-effect abilities like Energy Shot or Vampiric "
+"Shot to destroy the entire cluster in one blow."
+
+msgid "bestiaryView/info/tacticalAdvise/germany_G00_K_bomber__HW_21_AI"
+msgstr ""
+"{UL}Once you’ve dealt with the Alpha, be ready to deal with the regular "
+"Hedgehogs!{UL}{LI}{{@ style (bold)}}Area damage{{/}}: Use your Combat "
+"Abilities—a single AOE strike can be enough to destroy the whole group in "
+"one go.{UL}{LI}{{@ style (bold)}}Shield timing{{/}}: Use your Energy Shield "
+"to absorb damage from ramming Hedgehogs, but time it carefully so it's "
+"active right before they reach you.{UL}{LI}{{@ style (bold)}}Stay "
+"mobile{{/}}: If your vehicle is fragile, use your speed and turbo to "
+"outmaneuver the swarm and pick them off from a safe distance."
+
+msgid "bestiaryView/info/tacticalAdvise/germany_G113_SP_I_C_HW_BOT"
+msgstr ""
+"{UL}Four heads, one core.{UL}{LI}{{@ style (bold)}}Shared structure{{/}}: "
+"Every shot counts, regardless of which tank you hit. Damaging any unit in "
+"the cluster wears down their shared structure.{UL}{LI}{{@ style "
+"(bold)}}Constant firepower{{/}}: Because they share a single structure, you "
+"cannot reduce their firepower by destroying individual units early—all keep "
+"firing until the last one falls.{UL}{LI}{{@ style (bold)}}Maximize "
+"profit{{/}}: Ensure you fully eliminate the entire Hive to fill the "
+"collector and harvest more Mirium."
+
+msgid "bestiaryView/info/tacticalAdvise/germany_G142_M48RPz_HW_BOT"
+msgstr ""
+"{UL}Within the Anomaly, teamwork is the key to success.{UL}{LI}{{@ style "
+"(bold)}}Coordinate the attack{{/}}: Only attack the camp with a joint "
+"strike, never alone!{UL}{LI}{{@ style (bold)}}Gun advantage{{/}}: A "
+"destroyed enemy can't cause damage. Do not leave any survivors "
+"behind.{UL}{LI}{{@ style (bold)}}Tactical retreat{{/}}: If there is a risk "
+"of destruction, you can retreat beyond the camp to save the vehicle."
+
+msgid "bestiaryView/info/tacticalAdvise/germany_G171_E77_HW_BOT"
+msgstr ""
+"{UL}Sever the head, and the body will fall!{UL}{LI}{{@ style (bold)}}Strike "
+"the heart{{/}}: Use your Turbo to break through the swarm and eliminate the "
+"Monarch.{UL}{LI}{{@ style (bold)}}Easy target{{/}}: The Monarch itself is "
+"not a difficult opponent to destroy.{UL}{LI}{{@ style (bold)}}Strategic "
+"choice{{/}}: Pick your priority—kill the Monarch to end the fight "
+"immediately, or clear the Hive tanks first to fill the collector and harvest"
+" more Mirium."
+
+msgid ""
+"bestiaryView/info/tacticalAdvise/germany_G181_E100_Autocannon_Boss_HW25_bot"
+msgstr ""
+"{UL}tacticalAdvise_germany_G181_E100_Autocannon_Boss_HW25_bot "
+"{UL}{LI}{f7f6f299Bold_open}Tactic_1{f7f6f299Bold_close}: "
+"do_1.{UL}{LI}{f7f6f299Bold_open}Tactic_2{f7f6f299Bold_close}: "
+"do_2.{UL}{LI}{f7f6f299Bold_open}Tactic_3{f7f6f299Bold_close}: do_3 ."
+
+msgid "bestiaryView/info/tacticalAdvise/germany_G25_PzII_Luchs_HELL_HALL"
+msgstr ""
+"{UL}Don’t let them escape!{UL}{LI}{{@ style (bold)}}Low survivability{{/}}: "
+"Can be destroyed in just one or two hits, even with low-power "
+"guns.{UL}{LI}{{@ style (bold)}}Prioritize distant Rabbits{{/}}: Don’t let "
+"them slip away. Shoot their tracks if needed.{UL}{LI}{{@ style (bold)}}Use "
+"Turbo{{/}}: This ability will help you chase down a fleeing Rabbit or "
+"destroy it with minor ramming impact."
+
+msgid "bestiaryView/info/tacticalAdvise/germany_G64_Panther_II_Hall_minion"
+msgstr ""
+"{UL}Hunters will pursue you across the entire map, so retreating is not an "
+"option.{UL}{LI}{{@ style (bold)}}Stay alert{{/}}: Engage the Hunters once "
+"you have dealt with the main enemy forces or before starting a new "
+"encounter.{UL}{LI}{{@ style (bold)}}Stay on the move{{/}}: You can dodge "
+"slow-moving HE shells by staying mobile.{UL}{LI}{{@ style (bold)}}Shell "
+"fireworks{{/}}: The Hunter's sides are a direct storage area for their "
+"vulnerable and explosive shells—aim there."
+
+msgid "bestiaryView/info/tacticalAdvise/germany_G73_E50_Ausf_M_Hall_minion"
+msgstr ""
+"{UL}Big and clumsy, use that to your advantage!{UL}{LI}{{@ style "
+"(bold)}}High profile{{/}}: Try to get close and to the side of the enemy, "
+"keep yourself under its gun.{UL}{LI}{{@ style (bold)}}Use the terrain{{/}}: "
+"Take advantage of the environment. Standing in the open against its massive "
+"cannon is a fatal mistake.{UL}{LI}{{@ style (bold)}}Coordinated strike{{/}}:"
+" Because of its huge durability, think twice before trying to take it down "
+"alone."
+
+msgid "bestiaryView/info/tacticalAdvise/header"
+msgstr "Tactical Advice"
+
+msgid "bestiaryView/info/tacticalAdvise/italy_It19_Progetto_C50_mod_66_HW_BOT"
+msgstr ""
+"{UL}This echo-copy will restore itself through your mistakes!{UL}{LI}{{@ "
+"style (bold)}}High-priority target{{/}}: Due to its anomalous abilities, "
+"this tank poses an extreme threat to the entire team.{UL}{LI}{{@ style "
+"(bold)}}Keep your distance{{/}}: This enemy is much harder to destroy if it "
+"repairs itself at your expense.{UL}{LI}{{@ style (bold)}}Avoid a duel{{/}}: "
+"This corrupted copy can easily take out your tank in a one-on-one encounter."
+
+msgid "bestiaryView/info/tacticalAdvise/uk_GB100_Manticore_HW_BOT"
+msgstr ""
+"{UL}Catch it while you can—there are no second chances to gain an "
+"advantage!{UL}{LI}{{@ style (bold)}}One-time opportunity{{/}}: The Scavenger"
+" carries a large amount of Mirium and a unique Anomaly. If you lose it, both"
+" the Scavenger and its valuable goods vanish for the remainder of the "
+"battle.{UL}{LI}{{@ style (bold)}}Ignore the tracks{{/}}: This enemy has "
+"invulnerable tracks. Use damage-boosting abilities to burn through its armor"
+" instead.{UL}{LI}{{@ style (bold)}}Watch your back{{/}}: Don't let other "
+"enemies catch you off guard while you are distracted by the chase."
+
+msgid "bestiaryView/info/tacticalAdvise/uk_GB125_Saladin_HW_BOT"
+msgstr ""
+"{UL}Stay back and destroy it—fast!{UL}{LI}{{@ style (bold)}}Keep your "
+"distance{{/}}: Do not let the Detonator get close.{UL}{LI}{{@ style "
+"(bold)}}Turn the tide{{/}}: If you destroy the Detonator before it self-"
+"destructs, its shockwave will stun all enemy tanks in the area.{UL}{LI}{{@ "
+"style (bold)}}Ready your repairs{{/}}: If you or your allies are caught in "
+"the blast, use Group Repair to immediately clear the stun effect."
+
+msgid "bestiaryView/info/tacticalAdvise/uk_GB24_Centurion_Mk3_HW_BOT"
+msgstr ""
+"{UL}Don't let it catch you in the open!{UL}{LI}{{@ style (bold)}}High-"
+"priority target{{/}}: Due to its anomalous abilities, this tank poses an "
+"extreme threat to the entire team.{UL}{LI}{{@ style (bold)}}Tactics "
+"triumph{{/}}: When engaging this opponent, keep your shield or stealth ready"
+" to negate its high damage output.{UL}{LI}{{@ style (bold)}}Fight fire with "
+"fire{{/}}: Use your Fast Reload ability to burn through its armor and "
+"eliminate this pale imitation of a real Cerberus as quickly as possible."
+
+msgid "bestiaryView/info/tacticalAdvise/usa_A100_T49_HW_BOT"
+msgstr ""
+"{UL}One wrong move and you're out!{UL}{LI}{{@ style (bold)}}High-priority "
+"target{{/}}: Due to its anomalous abilities, this tank poses a significant "
+"threat to the entire team.{UL}{LI}{{@ style (bold)}}Low armor{{/}}: Load HE "
+"shells to deal with it faster.{UL}{LI}{{@ style (bold)}}Flanking enemy{{/}}:"
+" Don't let this enemy flank your team. Face it head on."
+
+msgid "bestiaryView/info/tacticalAdvise/ussr_R171_IS_3_II_HW_BOT"
+msgstr ""
+"{UL}Destroy the battering ram before it hits! This is a priority target in "
+"any wave.{UL}{LI}{{@ style (bold)}}Shoot at the tracks{{/}}: This will "
+"immobilize the Charger and make it an easy target for your "
+"allies.{UL}{LI}{{@ style (bold)}}Concentrate your fire{{/}}: Destroy the "
+"enemy before it recovers. If necessary, shoot down the tracks "
+"again.{UL}{LI}{{@ style (bold)}}Avoid ramming{{/}}: If the Charger breaks "
+"through to you, activate invisibility or perform sharp maneuvers to get out "
+"of the line of attack."
+
+msgid "bestiaryView/info/tacticalAdvise/ussr_R40_T-54_HW_BOT"
+msgstr ""
+"{UL}Keep your eyes open, because it'll be at close range before you know "
+"it.{UL}{LI}{{@ style (bold)}}High-priority target{{/}}: Due to its anomalous"
+" abilities, this tank poses a significant threat to the entire "
+"team.{UL}{LI}{{@ style (bold)}}Keep your distance{{/}}: This enemy emits a "
+"damaging energy field. Any unit caught within the radius takes significant "
+"damage.{UL}{LI}{{@ style (bold)}}Burst it down{{/}}: Use Fast Reload or "
+"other tactics to bring it down before it gets too close."
+
+msgid "bestiaryView/info/tacticalAdvise/ussr_R77_KV2_turret_2"
+msgstr ""
+"{UL}Stay mobile and stay out of the "
+"crossfire!{UL}{LI}{f7f6f299Bold_open}Stationary Threat{f7f6f299Bold_close}: "
+"Since this opponent cannot move, use the environment to your advantage. "
+"Utilize hills and obstacles to break its line of sight and avoid incoming "
+"fire.{UL}{LI}{f7f6f299Bold_open}Don't Duel Head-on{f7f6f299Bold_close}: Its "
+"frontal plating is exceptionally thick. Instead of trading shots, look for a"
+" way to flank it or wait for an opening to strike its more vulnerable "
+"sides.{UL}{LI}{f7f6f299Bold_open}Ready Your Shields{f7f6f299Bold_close}: "
+"This enemy packs a punch. Its high-damage shells can cripple your vehicle, "
+"so keep your Energy Shield ready to mitigate the damage."
+
+msgid "bestiaryView/info/title/ability_1"
+msgstr "Defender"
+
+msgid "bestiaryView/info/title/ability_10"
+msgstr "Blastwave"
+
+msgid "bestiaryView/info/title/ability_11"
+msgstr "Incendiary Shot"
+
+msgid "bestiaryView/info/title/ability_12"
+msgstr "Double Trouble"
+
+msgid "bestiaryView/info/title/ability_13"
+msgstr "The aura of a monster"
+
+msgid "bestiaryView/info/title/ability_14"
+msgstr "Echo Rounds"
+
+msgid "bestiaryView/info/title/ability_15"
+msgstr "Stunning Pulse"
+
+msgid "bestiaryView/info/title/ability_16"
+msgstr "Siege Mode"
+
+msgid "bestiaryView/info/title/ability_17"
+msgstr "Killswitch"
+
+msgid "bestiaryView/info/title/ability_18"
+msgstr "Vital Link"
+
+msgid "bestiaryView/info/title/ability_19"
+msgstr "Anomaly Carrier"
+
+msgid "bestiaryView/info/title/ability_2"
+msgstr "Battering Ram"
+
+msgid "bestiaryView/info/title/ability_3"
+msgstr "High-Explosive Salvo"
+
+msgid "bestiaryView/info/title/ability_4"
+msgstr "Mirium Trap"
+
+msgid "bestiaryView/info/title/ability_5"
+msgstr "Hightail"
+
+msgid "bestiaryView/info/title/ability_6"
+msgstr "Explosion!!!"
+
+msgid "bestiaryView/info/title/ability_7"
+msgstr "Hedgehog Swarm"
+
+msgid "bestiaryView/info/title/ability_8"
+msgstr "Vampiric Pulse"
+
+msgid "bestiaryView/info/title/ability_9"
+msgstr "Rapid Fire"
+
+msgid "bestiaryView/title"
+msgstr "ECHO TANK VAULT"
+
+msgid "bundleView/btn/keys"
+msgstr "Purchase"
+
+msgid "bundleView/btn/shop"
+msgstr "View in Store"
+
+msgid "bundleView/bundle/header/bundleGroupEventPack"
+msgstr "MOBILIZE SENTINELS"
+
+msgid "bundleView/bundle/header/bundleGroupLuxuryEventPack"
+msgstr "GO ALL IN"
+
+msgid "bundleView/bundle/header/bundleGroupStyle"
+msgstr "CUSTOMIZE"
+
+msgid "bundleView/bundle/header/hw26bundle_keys"
+msgstr "PURCHASE KEYS"
+
+msgid "bundleView/bundle/serviceChannelMessages/hw26bundle_keys"
+msgstr "Keys purchased"
+
+msgid "bundleView/bundle/subHeader/bundleGroupEventPack"
+msgstr "A special bundle to boost your progress through Babylon: Dark Tower."
+
+msgid "bundleView/bundle/subHeader/bundleGroupLuxuryEventPack"
+msgstr "An exclusive Babylon: Dark Tower offer for the ultimate bundle."
+
+msgid "bundleView/bundle/subHeader/bundleGroupStyle"
+msgstr ""
+"3D styles and other elements that capture the atmosphere of the event."
+
+msgid "bundleView/bundle/subHeader/hw26bundle_keys"
+msgstr "Keys are used to decrypt or skip Records. One Key costs {cost} gold."
+
+msgid "bundleView/eventName"
+msgstr "Babylon Project"
+
+msgid "bundleView/reward/hw_artefact_key"
+msgstr "Decryption Keys (Bonus)"
+
+msgid "bundleView/subTitle"
+msgid_plural "plural/bundleView/subTitle"
+msgstr[0] "{key} MORE REQUIRED FOR RECORD {slide}"
+msgstr[1] "{key} MORE REQUIRED FOR RECORD {slide}"
+msgstr[2] "{key} MORE REQUIRED FOR RECORD {slide}"
+
+msgid "bundleView/title"
+msgstr "DECRYPTION KEYS"
+
+msgid "bundleView/title/default"
+msgstr "SELECT KEY PURCHASE METHOD"
+
+msgid "bundleView/title/onlyKeysBundle"
+msgstr "SELECT THE AMOUNT OF KEYS TO PURCHASE"
+
+msgid "bundleView/title/onlyShopBundle"
+msgstr "SELECT AN EVENT BUNDLE"
+
+msgid "bundleView/tooltip/cerfToken/body"
+msgstr "A special event crew member of your choice with a voiceover."
+
+msgid "bundleView/tooltip/cerfToken/header"
+msgstr "Event crew member to select from"
+
+msgid "bundleView/tooltip/expVehicleX5/body"
+msgstr ""
+"The option to earn ×5 XP, starting from the second victory of the day in any"
+" vehicle."
+
+msgid "bundleView/tooltip/expVehicleX5/header"
+msgstr "Mission for ×5 to XP earned in battle"
+
+msgid "bundleView/tooltip/stepper/body"
+msgstr "Set the number of Keys to decrypt or skip locked Records."
+
+msgid "bundleView/tooltip/stepper/header"
+msgstr "Keys to decrypt locked Records"
+
+msgid "carousel/card/inBattle"
+msgstr "In battle"
+
+msgid "carousel/card/inPlatoon"
+msgstr "In tactical unit"
+
+msgid "carousel/card/inQueue"
+msgstr "In queue"
+
+msgid "carousel/card/locked"
+msgstr "Locked"
+
+msgid "carousel/daily/header"
+msgstr "Daily vehicle mission"
+
+msgid "common/back"
+msgstr "BACK"
+
+msgid "common/btnContinue"
+msgstr "CONTINUE"
+
+msgid "common/close"
+msgstr "CLOSE"
+
+msgid "common/new"
+msgstr "NEW"
+
+msgid "common/progress"
+msgstr "{{value}} / {{maxValue}}"
+
+msgid "common/toEvent"
+msgstr "TO EVENT"
+
+msgid "common/toRewardPath"
+msgstr "TO REWARD PATH"
+
+msgid "common/yes"
+msgstr "AFFIRMATIVE!"
+
+msgid "comparisonWindow/categoryName/maxHealth"
+msgstr ""
+"Durability\n"
+"(HP)"
+
+msgid "comparisonWindow/categoryName/relativePower"
+msgstr ""
+"Firepower\n"
+"(units)"
+
+msgid "comparisonWindow/categoryName/speedLimit"
+msgstr ""
+"Top Speed\n"
+"(km/h)"
+
+msgid "comparisonWindow/tank/ttcType/france_F17_AMX_13_90_Halloween_event"
+msgstr "A&nbsp;5-shell&nbsp;magazine"
+
+msgid "comparisonWindow/tank/ttcType/italy_It19_Progetto_C50_mod_66_hw21"
+msgstr "An improved 3-shell autoreloading system"
+
+msgid "comparisonWindow/tank/ttcType/uk_GB123_GSOR_1006_v7_Halloween_event"
+msgstr "A gun with a continuous firing system"
+
+msgid "comparisonWindow/tank/ttcType/uk_GB24_Centurion_Mk3_Halloween_event"
+msgstr "An increased chance to damage enemy vehicles' modules"
+
+msgid "comparisonWindow/tank/ttcType/usa_A100_T49_Halloween_event"
+msgstr "An HE gun featuring a&nbsp;2-shell autoreloading system"
+
+msgid "comparisonWindow/tank/ttcType/ussr_R171_IS_3_II_hw21"
+msgstr "Double Gun System"
+
+msgid "comparisonWindow/tank/ttcType/ussr_R40_T_54_Halloween_event"
+msgstr "Protection for your vehicle's&nbsp;modules"
+
+msgid "comparisonWindow/title"
+msgstr "VEHICLE COMPARISON"
+
+msgid "crewShowcase/play"
+msgstr "Play"
+
+msgid "crewShowcase/status/inBaseReward"
+msgstr "In Base Rewards"
+
+msgid "crewShowcase/status/inShop"
+msgstr "In a special bundle"
+
+msgid "crewShowcase/status/received"
+msgstr "Received"
+
+msgid "crewShowcase/subTitle"
+msgstr "All crew members have enough Crew XP to train three perks to 100%."
+
+msgid "crewShowcase/title"
+msgstr "UNIQUE CREW MEMBERS"
+
+msgid "crewShowcase/viewInStore"
+msgstr "View in Store"
+
+msgid "decrypt/affirmative"
+msgstr "AFFIRMATIVE!"
+
+msgid "decrypt/arrow/disabled/body"
+msgstr ""
+"Complete the next Objective and decrypt its Record with Keys to proceed."
+
+msgid "decrypt/arrow/disabled/header"
+msgstr "Next Objective"
+
+msgid "decrypt/arrowPrev/disabled/body"
+msgstr ""
+"Complete the previous Objective and decrypt its Record with Keys to proceed."
+
+msgid "decrypt/arrowPrev/disabled/header"
+msgstr "Previous Objective"
+
+msgid "decrypt/completed"
+msgstr "Objective completed. Rewards received:"
+
+msgid "decrypt/hideShow"
+msgstr "Hide/show user interface"
+
+msgid "decrypt/outroVideo"
+msgstr "Outro Video"
+
+msgid "decrypt/outroVideoTooltip/active"
+msgstr "Watch the outro video."
+
+msgid "decrypt/outroVideoTooltip/disabled"
+msgstr ""
+"You can watch the outro video from this screen again after receiving all "
+"your rewards."
+
+msgid "decrypt/voiceover"
+msgstr "Voiceover"
+
+msgid "decrypt/voiceoverTooltip"
+msgstr ""
+"Enables or disables voice narration on all screens with decrypted Records."
+
+msgid "difficult/disabled/body"
+msgstr ""
+"You are in a Platoon. Only the Commander can change the difficulty level."
+
+msgid "difficult/disabled/header"
+msgstr "Changing Difficulty Unavailable"
+
+msgid "difficult/level_1"
+msgstr "Normal"
+
+msgid "difficult/level_2"
+msgstr "Hard"
+
+msgid "difficult/level_3"
+msgstr "Nightmare"
+
+msgid "difficult/new"
+msgstr "NEW"
+
+msgid "difficult/tooltip/description/level1"
+msgstr ""
+"Enemies have lower durability and weaker armor. Standard battle reward."
+
+msgid "difficult/tooltip/description/level2"
+msgstr ""
+"Enemies have stronger armor, while the reward and the number of Keys earned "
+"per battle are increased."
+
+msgid "difficult/tooltip/description/level3"
+msgstr ""
+"There are more enemies with stronger armor. The reward and the number of "
+"Keys earned per battle are increased."
+
+msgid "difficult/tooltip/header/level1"
+msgstr "Normal"
+
+msgid "difficult/tooltip/header/level2"
+msgstr "Hard"
+
+msgid "difficult/tooltip/header/level3"
+msgstr "Nightmare"
+
+msgid "difficult/tooltip/locked"
+msgstr "Locked"
+
+msgid "difficult/tooltip/lockedDescr/level2"
+msgstr ""
+"To unlock this difficulty level, defeat the boss on Normal difficulty."
+
+msgid "difficult/tooltip/lockedDescr/level3"
+msgstr "To unlock this difficulty level, defeat the boss on Hard difficulty."
+
+msgid "difficult/tooltip/state/default"
+msgstr "Available"
+
+msgid "difficult/tooltip/state/selected"
+msgstr "Selected"
+
+msgid "difficult/tooltip/subHeader/level1"
+msgstr "4 Phases"
+
+msgid "difficult/tooltip/subHeader/level2"
+msgstr "4 Phases"
+
+msgid "difficult/tooltip/subHeader/level3"
+msgstr "4 Phases"
+
+msgid "difficult/uppercase/level_1"
+msgstr "NORMAL"
+
+msgid "difficult/uppercase/level_2"
+msgstr "HARD"
+
+msgid "difficult/uppercase/level_3"
+msgstr "NIGHTMARE"
+
+msgid "difficultyWindow/anomalies/button"
+msgstr "TO ANOMALIES"
+
+msgid "difficultyWindow/anomalies/label"
+msgstr "ANOMALY COMBOS UNLOCKED"
+
+msgid "difficultyWindow/description/level_2"
+msgstr ""
+"Enemies have stronger armor, while the reward and the number of Keys earned "
+"per battle are increased."
+
+msgid "difficultyWindow/description/level_3"
+msgstr ""
+"There are more enemies with stronger armor. The reward and the number of "
+"Keys earned per battle are increased."
+
+msgid "difficultyWindow/header/level_2"
+msgstr "HARD DIFFICULTY LEVEL"
+
+msgid "difficultyWindow/header/level_3"
+msgstr "NIGHTMARE DIFFICULTY LEVEL"
+
+msgid "difficultyWindow/title"
+msgstr "AVAILABLE"
+
+msgid "hangar/about"
+msgstr "ABOUT EVENT"
+
+msgid "hangar/exit"
+msgstr "LEAVE EVENT"
+
+msgid "hangar/header/keys"
+msgstr "Keys: {{value}}"
+
+msgid "hangar/tooltipAbout"
+msgstr "Learn more about the Babylon: Dark Tower event."
+
+msgid "hangarAmmunitionSetup/header"
+msgstr "COMBAT ABILITIES"
+
+msgid "headerButtons/battle/types/halloween"
+msgstr "Babylon: Dark Tower"
+
+msgid "iconButton/comparison/default"
+msgstr "Vehicle comparison"
+
+msgid "iconButton/comparison/isDisabled"
+msgstr "Vehicle comparison is unavailable"
+
+msgid "iconButton/enemyPreview/isDisabled"
+msgstr ""
+"Complete and decrypt the current Objective to gain access to the enemy's "
+"file."
+
+msgid "iconButton/preview/default"
+msgstr "Preview vehicle"
+
+msgid "iconButton/preview/isDisabled"
+msgstr "Vehicle preview is unavailable."
+
+msgid "infoBestiary/button/name"
+msgstr "Echo Tank Vault"
+
+msgid "infoBestiary/simpleTooltip/body/disabled"
+msgstr "Complete and decrypt records to gain access to the file."
+
+msgid "infoBestiary/simpleTooltip/body/enabled"
+msgstr ""
+"Study your enemies and their abilities, and learn the most effective ways to"
+" destroy them."
+
+msgid "infoBestiary/simpleTooltip/header/disabled"
+msgstr "The Echo Tank Vault is unavailable"
+
+msgid "keyCard/name"
+msgstr "Decryption Keys"
+
+msgid "keys/get"
+msgstr "RECEIVE"
+
+msgid "kingRewardCongratsView/btn/garage"
+msgstr "View in Garage"
+
+msgid "kingRewardCongratsView/btn/outro"
+msgstr "To Story Conclusion"
+
+msgid "kingRewardCongratsView/header"
+msgstr "MAIN REWARD RECEIVED"
+
+msgid "kingRewardCongratsView/reward/crew100/value"
+msgstr "100%"
+
+msgid "kingRewardCongratsView/rewardsTitle"
+msgstr "Rewards:"
+
+msgid "kingRewardCongratsView/tankName"
+msgstr "{level}{icon}{userName}"
+
+msgid "kingRewardCongratsView/title"
+msgstr "FINAL OBJECTIVE COMPLETED"
+
+msgid "medalWidget/tooltipBody"
+msgstr "Unlock all the Anomalies listed in the Anomaly Menu."
+
+msgid "medalWidget/tooltipHeader"
+msgstr "Epic Medal Mission"
+
+msgid "meta/btn/decrypt"
+msgstr "DECRYPT"
+
+msgid "meta/btn/skip"
+msgstr "SKIP"
+
+msgid "meta/btn/view"
+msgstr "VIEW"
+
+msgid "meta/receive/description"
+msgstr ""
+"Collect %(keys) / %(decrypt) %(icon)\n"
+"to decrypt this Record"
+
+msgid "meta/shortStory/hw_artefact_1"
+msgstr ""
+"It's craftier than anything we've come up against. And it has one trick that"
+" there's still no way to counter."
+
+msgid "meta/shortStory/hw_artefact_10"
+msgstr ""
+"The Ferryman led Alex to the Tower knowing that she would hate it. He's a "
+"manipulator, but not suicidal. That means he had a plan. We have to find out"
+" what it was."
+
+msgid "meta/shortStory/hw_artefact_11"
+msgstr ""
+"I never had a home. Now I do. And I've just realized what I'm prepared to do"
+" to keep it."
+
+msgid "meta/shortStory/hw_artefact_12"
+msgstr "It works! The frequency is blocked! Fire, Smith! Destroy it!"
+
+msgid "meta/shortStory/hw_artefact_13"
+msgstr ""
+"We did it. The Spider is no more. The Tower has been destroyed. Now we need "
+"to decide Alex’s fate. Every one of us has to make a choice."
+
+msgid "meta/shortStory/hw_artefact_2"
+msgstr ""
+"Repair docks, private cabins, the smell of hot coffee in the cafeteria. A "
+"cozy home amid this damned anomaly. But one thought worries me..."
+
+msgid "meta/shortStory/hw_artefact_3"
+msgstr ""
+"I have a plan and a tank almost ready to execute it. There's just one piece "
+"missing. And only you can help with that."
+
+msgid "meta/shortStory/hw_artefact_4"
+msgstr ""
+"You've come to destroy the Tower. Destroy my home. You call it a danger, but"
+" that's a lie. You just want power."
+
+msgid "meta/shortStory/hw_artefact_5"
+msgstr ""
+"We weren't saving the world. We were doing what the Ferryman needed us to. "
+"He was playing us like pawns. Manipulating our every move. And I brought "
+"Alex right into his trap."
+
+msgid "meta/shortStory/hw_artefact_6"
+msgstr ""
+"The Mirium inside me pulses and leads me deep into the Tower. Answers await "
+"me there. The one who called me awaits me there..."
+
+msgid "meta/shortStory/hw_artefact_7"
+msgstr ""
+"The Ferryman wasn't looking for the Dark Tower's coordinates. He knew them. "
+"He needed all our expeditions for something else. And now it seems I "
+"understand what."
+
+msgid "meta/shortStory/hw_artefact_8"
+msgstr ""
+"Father gave me a name. Gretchen von Eckhardt. He called me \"pearl.\" I was "
+"special."
+
+msgid "meta/shortStory/hw_artefact_9"
+msgstr ""
+"Those born here are capable of more. We can shape Mirium, control it. For "
+"the first time in my life, I feel complete."
+
+msgid "meta/story/hw_artefact_1"
+msgstr ""
+"{{@ class $titleClass}}It's craftier than anything we've come up against. And it has one trick that there's still no way to counter.{{/}}\n"
+"\n"
+"Damn it! Why are things never easy? Plan A failed. It was beautiful, spectacular, but it failed.\n"
+"\n"
+"Everyone thought the {{@ class $keyWordViolet}}Marduk{{/}} was our ace in the hole. A huge flying ship with guns bigger than the Dora's cannon.\n"
+"\n"
+"One salvo, and all our problems would be solved. {{@ class $keyWordViolet}}The Dark Tower{{/}} destroyed; the Nazis, or what was left of them, neutralized. And all those thousands of tanks that they'd prepared for attack back in the '40s would stay here to rust forever.\n"
+"\n"
+"But I forgot rule number one: in the anomaly, things are never easy. The shells got stuck in that damned shield. And to take it out, we'd need to destroy the thing that generates it.\n"
+"\n"
+"But that {{@ class $keyWordViolet}}Spider{{/}} is craftier than anything we've come up against. First you need to get to it. And then, when all that's left is to deliver the final blow, it activates the damned Magnus and retreats to its lair to lick its wounds. And hurls us a few phases back.\n"
+"\n"
+"Alright, enough waxing lyrical. It's time for action. Either we deactivate that shield and blow the Tower to hell, or we'll stay here forever.\n"
+"\n"
+"The command built its huge ship, even gave it the name of a god and thought the problem was solved. But in the end, here we are again. Gods fail us. Tanks don't.\n"
+"\n"
+"{{@ class $titleManual}}From the manual:{{/}}\n"
+"{{@ class $textManual}}\"Use the tactical map and coordinate your actions. Mark the point you are heading to so that the platoon moves with you. Or proceed to a position chosen by another commander. Always stick together.\"{{/}}"
+
+msgid "meta/story/hw_artefact_10"
+msgstr ""
+"{{@ class $titleClass}}The Ferryman led Alex to the Tower knowing that she would hate it. He's a manipulator, but not suicidal. That means he had a plan. We have to find out what it was.{{/}}\n"
+"\n"
+"We're in a trap. In her web. Alex is learning. It doesn't matter if we win or lose—with each battle, she grows stronger. It seems she's just playing with us, testing what the Spider can do.\n"
+"\n"
+"I can't stop thinking that everything is playing out according to the Ferryman's script. But I can't understand his logic. He's a manipulator, but not suicidal. He led her to the Tower knowing that she would hate it. How did he plan to control her?\n"
+"\n"
+"In any case, it's too late. Smith keeps hoping he can talk to her and bring her round. He wants to save her. I'd like to as well, but that's not Alex anymore.\n"
+"\n"
+"I read the German archives. They tried to extract the operators. Seventeen attempts. Four survived, but none of them returned to consciousness. They breathed, their hearts beat, but no one was home. And yet... Alex is no ordinary operator.\n"
+"\n"
+"Enough. We don't have time for this. We need to destroy the Dark Tower. \n"
+"\n"
+"The Sharur, I mean, the Eclipse, is ready. I'm loading it with {{@ class $keyWordViolet}}superdense Mirium{{/}} now. We only have one shot, and we have to be sure we've found the right frequency.\n"
+"\n"
+"Bring in the last type of echo tank, and we'll be ready. Once we activate the \"{{@ class $keyWordViolet}}jammer{{/}},\" we'll have a thirty second opening. The Spider will stop receiving the signal from the Tower and won't be able to escape. That's our only chance to deliver the deciding blow. \n"
+"\n"
+"Bring the final specimen.\n"
+"\n"
+"{{@ class $titleManual}}From the manual:{{/}}\n"
+"{{@ class $textManual}}\"Within the Anomaly, unique mechanics changes the rules. Pay attention to the notification displayed at the beginning of the third phase. Some mechanics force you move faster, others demand tactics and attentiveness.\"{{/}}"
+
+msgid "meta/story/hw_artefact_11"
+msgstr ""
+"{{@ class $titleClass}}I never had a home. Now I do. And I've just realized what I'm prepared to do to keep it.{{/}}\n"
+"\n"
+"I sense it. Mirium. It's not evil. Not lonely. It's not anything. It doesn't think, it just exists. It merges with the host and strengthens them, if they can handle it.\n"
+"\n"
+"But is it possible to free yourself completely from your body? To {{@ class $keyWordViolet}}merge with Mirium{{/}}? To become a part of it. That could save me.\n"
+"\n"
+"The soldiers want to destroy the Dark Tower. And me? Smith is constantly trying to speak to me. He insists he wants to save me. But can he be believed? What if he's just part of another one of the Ferryman's manipulations?  \n"
+"\n"
+"The Ferryman. This is all because of him. He wants power. He wants to seize the technology. To seize me. And the soldiers are helping him do it, even if they don't realize it themselves. \n"
+"\n"
+"They're already close. I need more time. I've finally become complete. My whole life, I never had a home, now I do. I just realized what I'm prepared to do to keep it. \n"
+"\n"
+"You're all in on this. But I won't be your puppet again!\n"
+"\n"
+"{{@ class $titleManual}}From the manual:{{/}}\n"
+"{{@ class $textManual}}\"If you have Energy Shield, use it only as a last resort—if your hit points are low or before an encounter with a Hedgehog.\"{{/}}"
+
+msgid "meta/story/hw_artefact_12"
+msgstr ""
+"{{@ class $titleClass}}It works! The frequency is blocked! Fire, Smith! Destroy it!{{/}}\n"
+"\n"
+"MOREL: It's damaged enough! Smith, the Spider is preparing to jump! I'm turning on the jammer... Yes! It's working! The frequency is blocked! Fire, Smith! Destroy it!\n"
+"\n"
+"SMITH: ...\n"
+"\n"
+"MOREL: Smith?! Fire! Come on!\n"
+"\n"
+"SMITH: Damn... Alex is still there, in the Tower. If I destroy the Spider, she'll die too. We have to save her... at least try!\n"
+"\n"
+"MOREL: Smith, damn you! It's either her or all of us!\n"
+"\n"
+"SMITH: We can't do that. There has to be another way. We've got to get her out of there! I can't!\n"
+"\n"
+"{{@ class $titleManual}}From the manual:{{/}}\n"
+"{{@ class $textManual}}\"Pay attention to the tactical map and how the damage zone changes during the boss fight. As soon as the boss tries to escape, pursue it while staying in the safe zone. Once outside the safe zone, use Turbocharger to avoid damage to your vehicle.\"{{/}}"
+
+msgid "meta/story/hw_artefact_13"
+msgstr ""
+"{{@ class $titleClass}}We did it. The Spider is no more. The Tower has been destroyed. Now we need to decide Alex’s fate. Every one of us has to make a choice.{{/}}\n"
+"\n"
+"She did it! Alex. At the last moment, she took {{@ class $keyWordViolet}}the form of pure Mirium{{/}} and destroyed the Spider. The shield was disabled. The Marduk's shells hit their mark. The upper levels of the Tower are destroyed, but the lower levels survived, and we registered a signal inside. Weak, but stable. It's Alex. The Mirium is keeping her alive for now.\n"
+"\n"
+"We descended. We found the cocoon with her body and her last notes. She made a choice. Alex destroyed the Spider to destroy the Tower together with her human shell and finally merge with Mirium.\n"
+"\n"
+"Smith doesn't believe it was her conscious choice. He's convinced that the Mirium simply clouded her judgment. He recalls that in the notes, she admitted she couldn't always control her own thoughts. The captain intends to take her body and connect it into the ship's systems. He wants to preserve her at any cost, find a way to free her from the Mirium and return her to consciousness. Make her into a normal person again.\n"
+"\n"
+"Alex wrote that she felt at home for the first time. She didn't destroy the Spider under our orders. She decided to do it herself. Her home isn't this Tower. Her home is Mirium.\n"
+"\n"
+"If we destroy the Tower, Alex will be reborn. She'll merge with the matter not as an ordinary operator, but as something entirely new.\n"
+"\n"
+"That affects us all. Everyone who fought at this Tower. Decide."
+
+msgid "meta/story/hw_artefact_2"
+msgstr ""
+"{{@ class $titleClass}}Repair docks, private cabins, the smell of hot coffee in the cafeteria. A cozy home amid this damned anomaly. But one thought worries me...{{/}}\n"
+"\n"
+"Damn, that was close. I had the Spider in my sights. I was milliseconds short.\n"
+"\n"
+"I'll never get used to the Marduk. Before, when we were at our base in Babylon, every trip into the anomaly was a leap into the abyss. We \"resurfaced\" exhausted, deflated, and as if we were strangers. But now we have this ship. The Marduk...\n"
+"\n"
+"It has built-in Magnuses, and now we can \"jump\" to almost any phase. We just need an exact route. {{@ class $keyWordViolet}}Morel{{/}}, our chief engineer, says Mirium isn't just layers placed one on top of the other. It's more like a network of patterns, connected by complex pathways. {{@ class $keyWordViolet}}A maze{{/}}. And if there's no map, it's easy to get lost in it and stay there forever. To eternally roam through the phases and not know whether you're getting closer to home or further away.\n"
+"\n"
+"But now we're where we're supposed to be. And we have everything we need: a huge ship, experienced tankers, and Morel with his new technology. We can now even capture echo tanks and keep them in a solid state. Stabilize them and not let them turn back into liquid Mirium. Morel is opening them up, studying them, looking for a way to beat the Spider. And we continue to break through this protective field.\n"
+"\n"
+"Basically, we've got everything here: repair docks, private cabins, a gym, and even hot coffee in the cafeteria. A cozy little home amid the damned anomaly. I'm starting to get used to the comfort, and it worries me. The terror surrounding us is becoming the norm. We have to finish off this damned Tower faster and get back to our real home.\n"
+"\n"
+"{{@ class $titleManual}}From the manual:{{/}}\n"
+"{{@ class $textManual}}\"Do not attempt to destroy the Immortal. Do not waste your time and ammo. Do not stand still. Move, and do not let yourself get cornered.\"{{/}}"
+
+msgid "meta/story/hw_artefact_3"
+msgstr ""
+"{{@ class $titleClass}}I have a plan and a tank almost ready to execute it. There's just one piece missing. And only you can help with that.{{/}}\n"
+"\n"
+"One second, one second... Okay we need to stabilize {{@ class $keyWordViolet}}the stasis field{{/}}; otherwise, that thing will turn to liquid Mirium right here in my workshop.\n"
+"\n"
+"Now I can introduce myself. Pleased to meet you. {{@ class $keyWordViolet}}Jacques Morel{{/}}. Thanks for bringing in this specimen whole. Usually I'm only given fragments and vessels of liquid Mirium. But this we can work with.\n"
+"\n"
+"I have an idea. The echo tanks are controlled from the Dark Tower. That's a fact. They're like puppets on invisible strings. The Spider is too. Hmm...a damned interesting machine. Why did they choose this kind of platform? It's clearly connected to gravity somehow...\n"
+"\n"
+"Sorry, I got distracted. To catch the Spider and not let it get away, we need to cut those strings. Jam the signal. But there are a lot of strings. Each one on its own frequency. Now my sensors are picking up a whole choir on different wavelengths. If you bring me echo tank specimens of each type, I'll study their frequencies, filter them out, and we'll find out on which exact frequency the Spider receives its orders.\n"
+"\n"
+"And then the Sharur will come into play. A symbol of divine power and intellect prevailing over chaos. Like the legendary mace of Ninurta, it will crush our opponents. Don't memorize all these names. It's just a tribute to tradition—everything here is named in honor of Sumerian mythology. In the documentation I'll put things plainer: {{@ class $keyWordViolet}}Eclipse{{/}}. A heavily armored tank that can get close to the Spider and jam its signal. It just needs to be finished and set to the right frequency. We simply have to collect all types of echo tanks.\n"
+"\n"
+"I'd do it myself, but... Okay, who am I kidding? I couldn't manage without you.\n"
+"\n"
+"{{@ class $titleManual}}From the manual:{{/}}\n"
+"{{@ class $textManual}}\"Always stick together. Remember: when you break away from the platoon and go to another point alone, you provoke the echo tanks. Once your vehicle is destroyed, they will start attacking your allies from behind. Do not jeopardize your mission.\"{{/}}"
+
+msgid "meta/story/hw_artefact_4"
+msgstr ""
+"{{@ class $titleClass}}You've come to destroy the Tower. Destroy my home. You call it a danger, but that's a lie. You just want power.{{/}}\n"
+"\n"
+"Leave. You don't belong here.\n"
+"\n"
+"The clatter of your tracks... Before, that sound would mean salvation, now... Now you've come to destroy the Tower. Destroy my home. You call it a danger, but that's a lie. You just want power. You want to possess that which you cannot understand. You want to control Mirium, turn it into a weapon, and make me into your obedient plaything.\n"
+"\n"
+"The ones who came before you also tried to control it. They built, captured, possessed, but in the end they lost themselves.\n"
+"\n"
+"Clear off! You know nothing. You understand nothing. You're all puppets in HIS hands. {{@ class $keyWordViolet}}The Ferryman{{/}} is simply playing with us all. We're no one to him.\n"
+"\n"
+"And now he's directed you to my home. He wants me destroyed. But you're too late. I don't need saving anymore. Now I can take care of myself.\n"
+"\n"
+"{{@ class $titleManual}}From the manual:{{/}}\n"
+"{{@ class $textManual}}\"Do not only rely on your tank's armor. Seek cover and hide your vulnerable areas. It's trite advice, but many do forget about it in the anomaly. Perhaps due to how Mirium affects our minds.\"{{/}}"
+
+msgid "meta/story/hw_artefact_5"
+msgstr ""
+"{{@ class $titleClass}}We weren't saving the world. We were doing what the Ferryman needed us to. He was playing us like pawns. Manipulating our every move. And I brought Alex right into his trap.{{/}}\n"
+"\n"
+"Damn it... That voice I hear over the radio. It's her. {{@ class $keyWordViolet}}Alex{{/}}. The photographer who entered the Forbidden Zone. She discovered the source of the attack, transmitted us the recordings, asked us to take her. She waited for me to come for her, but I... I followed orders. \"The priority is to suppress the threats.\" \"Evacuation is inexpedient.\" I left her there. Alone.\n"
+"\n"
+"Morel confirmed my worst fears. The Ferryman, that son of a bitch from the security office, planned the whole thing. He knew she was the daughter of the same general who commanded that Tower. {{@ class $keyWordViolet}}Gretchen von Eckhardt{{/}}. It's her childhood voice that remained in the echo that we heard in the anomaly. \n"
+"\n"
+"We weren't saving the world. We were doing what the Ferryman needed us to. He was playing us like pawns. Manipulating our every move. And I brought Alex right into his trap.\n"
+"\n"
+"Morel says she's no longer human. That the Mirium has taken hold of her and it's irreversible. But the Lost don't talk like that. She didn't lose consciousness. She's still here. Alone.\n"
+"\n"
+"I have to save her. I just have to.\n"
+"\n"
+"{{@ class $titleManual}}From the manual:{{/}}\n"
+"{{@ class $textManual}}\"Mark the vehicles you are going to attack to coordinate fire and prompt your allies to focus on one enemy. Amass a local firepower advantage.\"{{/}}"
+
+msgid "meta/story/hw_artefact_6"
+msgstr ""
+"{{@ class $titleClass}}The Mirium inside me pulses and leads me deep into the Tower. Answers await me there. The one who called me awaits me there...{{/}}\n"
+"\n"
+"[Seven days until the assault]\n"
+"\n"
+"A recording... but I don't know which. How much time has passed since entering the anomaly—I don't know either. The teleporter didn't take me to Babylon. I ended up in the Dark Tower. \n"
+"\n"
+"The Mirium inside me pulses, takes over my thoughts, leads me. It leads me to {{@ class $keyWordViolet}}the control room{{/}}. It seems again that I've been here before. Everything is familiar. These empty {{@ class $keyWordViolet}}cocoons{{/}}. And the one she's inside. Was it her that called me?\n"
+"\n"
+"Who is she? She looks almost inhuman. Pale skin, only purple Mirium pulses through her veins. Keeps her alive. If you can call it being alive.\n"
+"\n"
+"She has to know all the answers. She has to explain to me what's going on here. How can I talk to her? Put on the same {{@ class $keyWordViolet}}helmet{{/}}? No. First, while I have the strength, I need to look around the Tower.\n"
+"\n"
+"{{@ class $titleManual}}From the manual:{{/}}\n"
+"{{@ class $textManual}}\"Keep an eye on the allied vehicles' hit points. If you have Group Repairs, restore hit points to the damaged platoon members. Even one lost vehicle jeopardizes the entire mission.\"{{/}}"
+
+msgid "meta/story/hw_artefact_7"
+msgstr ""
+"{{@ class $titleClass}}The Ferryman wasn't looking for the Dark Tower's coordinates. He knew them. He needed all our expeditions for something else. And now it seems I understand what.{{/}}\n"
+"\n"
+"Is that you? Have you heard? The Ferryman has disappeared. He's fled and probably moved on to the next part of his plan. He wasn't looking for the Dark Tower's coordinates. He knew them. All our expeditions, all those losses were needed for something else.\n"
+"\n"
+"Well, thanks to the specimens you brought in, I've realized why he needed Alex. But the others?\n"
+"\n"
+"Look: judging by the German archives, there are {{@ class $keyWordViolet}}operators{{/}} in the Dark Tower who send commands to the echo tanks. But a normal human mind can't control thousands of machines simultaneously, so a small group always comes to face us, of fifteen. That's the limit of one operator. The Tower needs new \"minds.\" Fresh, compatible ones.\n"
+"\n"
+"Alex isn't just some random photographer who got into the anomaly. As we now know, she is Gretchen von Eckhardt, {{@ class $keyWordViolet}}the daughter of the general{{/}} who commanded this Tower.\n"
+"\n"
+"The name Gretchen comes from the Greek \"Margaret\" and means \"pearl.\" That's no coincidence. That's what her father called her when he saw something special in her. It's likely that she's the one the German archives called the \"Überlenker,\" or {{@ class $keyWordViolet}}super operator{{/}}.\n"
+"\n"
+"If the thing that Alex became unleashes its potential, if it remembers how to control Mirium, thousands of tanks will gush out of the anomaly at once.\n"
+"\n"
+"We need to hurry. Time is against us.\n"
+"\n"
+"{{@ class $titleManual}}From the manual:{{/}}\n"
+"{{@ class $textManual}}\"When fighting the boss, use the special ammo picked up in phases, along with your vehicle's special perks, to deal more damage to the vulnerable spots in your enemy's armor.\"{{/}}"
+
+msgid "meta/story/hw_artefact_8"
+msgstr ""
+"{{@ class $titleClass}}Father gave me a name. Gretchen von Eckhardt. He called me \"pearl.\" I was special.{{/}}\n"
+"\n"
+"[Seven days until the assault]\n"
+"\n"
+"My name is Gretchen.\n"
+"\n"
+"{{@ class $keyWordViolet}}Project Gleipnir{{/}}. The Germans searched for a way to subjugate Mirium. They realized that ordinary people are ineffective and find it difficult to handle even a couple of vehicles. They should have been born here, in the anomaly. Those who are capable of sensing Mirium.\n"
+"\n"
+"I'm the result of an experiment. We didn't even have names. {{@ class $keyWordViolet}}Biological transmitter{{/}}, object, resource. But to Father, I was special. He left a label on the fields: Gretchen von Eckhardt. He called me \"pearl.\"\n"
+"\n"
+"The first successful specimen. High capabilities, resilience against Mirium degradation... I'm simply a weapon that was supposed to guide armies of echo tanks through the rifts. Ordinary operators gradually lost their minds, becoming unthinking effectors of another's will. Their consciousness partially passed into the Mirium, the echo. Reaching for it, trying to escape. And when they got out of control, they were simply turned off. Their personalities split, spawning new anomalies in the echo, and their bodies... their bodies still held life, but the people themselves were long gone.\n"
+"\n"
+"But those were ordinary operators. It says nothing in the documents about those like me. I'm getting weaker. My body won't last long. What if I manage to fully enter the Mirium?\n"
+"\n"
+"My thoughts are slipping away. Or is the Mirium getting hold of them? I don't know. There are still so many questions.\n"
+"\n"
+"I have to speak to it. To put on the helmet and learn the whole truth!\n"
+"\n"
+"{{@ class $titleManual}}From the manual:{{/}}\n"
+"{{@ class $textManual}}\"Turbocharger does not use Mirium to activate. However, it has a cooldown period. Use Turbocharger when absolutely necessary: to get away from the Hedgehog, dodge the Charger, jump out of the Immortal's aura, or dash to Magnus when everyone is ready to teleport.\"{{/}}"
+
+msgid "meta/story/hw_artefact_9"
+msgstr ""
+"{{@ class $titleClass}}Those born here are capable of more. We can shape Mirium, control it. For the first time in my life, I feel complete.{{/}}\n"
+"\n"
+"[Seven days until the assault]\n"
+"\n"
+"It's loud. Too loud. Thousands of signals, noise, whispering. Commands in German—cold, dead orders.   \n"
+"\n"
+"Can you hear me? Are you here?\n"
+"\n"
+"There's nothing left of her. This woman in the cocoon, she's just {{@ class $keyWordViolet}}a transmitter{{/}} now. Is that really what my future holds, too? Becoming an echo of old commands?\n"
+"\n"
+"No. In the documents it says that those born here are capable of more. We can resist the influence of Mirium, control it, shape it.\n"
+"\n"
+"I need to try. Imagine the particles gathering together.\n"
+"\n"
+"I feel something. This is strange. Scary. But for the first time I feel complete. I sense that I finally have power.\n"
+"\n"
+"{{@ class $titleManual}}From the manual:{{/}}\n"
+"{{@ class $textManual}}\"Remember: when moving to a new phase, the Anomaly affects the crew and you receive enhancements. Study them and change your tactics with the new options in mind.\"{{/}}"
+
+msgid "metaCmp/completed"
+msgstr "%(icon) Reward received"
+
+msgid "metaCmp/name"
+msgstr "Reward Path"
+
+msgid "metaIntro/description/fight"
+msgstr ""
+"Fight in event battles and earn Decryption Keys to progress through "
+"Objectives toward the main event reward."
+
+msgid "metaIntro/description/progress"
+msgstr "Decrypt all Records using Decryption Keys earned in event battles."
+
+msgid "metaIntro/description/reward"
+msgstr ""
+"Complete all Objectives and decrypt all Records to receive the main event "
+"reward—the unique {whiteSpanish_Start}%(tankName)s{whiteSpanish_End}. Tier "
+"%(level)s Premium heavy tank."
+
+msgid "metaIntro/header/fight"
+msgstr "Battle Raids"
+
+msgid "metaIntro/header/progress"
+msgstr "Decrypting Records"
+
+msgid "metaIntro/header/reward"
+msgstr "Unique Rewards"
+
+msgid "metaIntro/title"
+msgstr "ABOUT OBJECTIVES"
+
+msgid "missionWidget/complete"
+msgstr ""
+"Mission complete.\n"
+"Come back tomorrow."
+
+msgid "missionWidget/tooltipBody"
+msgstr ""
+"Complete current Daily Mission which is available every 24 h to receive the "
+"reward. Today's mission:"
+
+msgid "missionWidget/tooltipHeader"
+msgstr "Daily Mission"
+
+msgid "preBattle/leave"
+msgstr "Exit Battle"
+
+msgid "preBattle/mainTip"
+msgstr ""
+"Taking too long to find a Recon Squad? Try changing the difficulty level."
+
+msgid "preBattle/searching"
+msgstr "SEARCHING FOR ALLIES..."
+
+msgid "preBattle/tips/1"
+msgstr ""
+"The portal to the Babylon Anomaly is stabilizing. Stand by for transfer."
+
+msgid "preBattle/tips/2"
+msgstr ""
+"Your work within the Babylon Anomaly is very important to us. Please await "
+"portal clearance."
+
+msgid "preBattle/tips/3"
+msgstr ""
+"Communication channels with the Babylon Anomaly are overloaded. Do not lose "
+"hope. Remain available for transit."
+
+msgid "preBattle/uppercase/leave"
+msgstr "EXIT BATTLE"
+
+msgid "promoWindow/btn"
+msgstr "AFFIRMATIVE!"
+
+msgid "promoWindow/header"
+msgstr "PLAY BABYLON: DARK TOWER"
+
+msgid "promoWindow/subheader"
+msgstr ""
+"Explore this special new PvE game mode {dateRange}.\n"
+"Complete {regularArtefactsLength} Objectives to earn an exclusive vehicle, the&nbsp;{level}{icon}{userName}."
+
+msgid "reward/rest"
+msgstr "And %(count)s more"
+
+msgid "rewardPath/about"
+msgstr "ABOUT OBJECTIVES"
+
+msgid "rewardPath/aboutTooltip"
+msgstr "Learn more about the event."
+
+msgid "rewardPath/completed"
+msgstr "Main reward received"
+
+msgid "rewardPath/crewMembers"
+msgstr ""
+"CREW\n"
+"MEMBERS"
+
+msgid "rewardPath/crewMembersTooltip"
+msgstr "Click to see all event crew members."
+
+msgid "rewardPath/description"
+msgstr "Decrypt %(count)s more Records to reach the main reward"
+
+msgid "rewardPath/intro"
+msgstr "INTRODUCTION"
+
+msgid "rewardPath/introTooltip"
+msgstr "Watch the introductory video."
+
+msgid "rewardPath/title"
+msgstr "REWARD PATH"
+
+msgid "rewardPathCard/name"
+msgstr "Reward Path"
+
+msgid "rewardPathCard/storyChoice"
+msgstr "Choose how the story ends!"
+
+msgid "rewardSelection/button"
+msgstr "CLAIM REWARD"
+
+msgid "rewardSelection/crew"
+msgstr "Crew members"
+
+msgid "rewardSelection/limit"
+msgstr "Limit reached"
+
+msgid "rewardSelection/limitTooltip"
+msgstr ""
+"You have reached the maximum amount. Deselect a crew member to change your "
+"selection."
+
+msgid "rewardSelection/title"
+msgstr "SELECT YOUR REWARD"
+
+msgid "shopCard/name"
+msgstr "Event Bundles"
+
+msgid "shopCmp/name"
+msgstr "Event Bundles"
+
+msgid "shopStyleWidget/description/button"
+msgstr "To Store"
+
+msgid "shopStyleWidget/description/notOwned"
+msgstr "Available for"
+
+msgid "shopStyleWidget/description/owned"
+msgstr "Owned"
+
+msgid "shopStyleWidget/header"
+msgstr "3D Style for the {name}"
+
+msgid "squad/goToAnother/cancel"
+msgstr "Cancel"
+
+msgid "squad/goToAnother/message"
+msgstr "The Platoon will be dismissed."
+
+msgid "squad/goToAnother/submit"
+msgstr "Leave"
+
+msgid "squad/goToAnother/title"
+msgstr "Leave the Babylon: Dark Tower event?"
+
+msgid "squad/leave/cancel"
+msgstr "Cancel"
+
+msgid "squad/leave/disabledEvent/message"
+msgstr "The Platoon will be dismissed."
+
+msgid "squad/leave/disabledEvent/submit"
+msgstr "Affirmative!"
+
+msgid "squad/leave/disabledEvent/title"
+msgstr "The Babylon: Dark Tower event has ended"
+
+msgid "squad/leave/message"
+msgstr "The Platoon will be dismissed."
+
+msgid "squad/leave/submit"
+msgstr "Leave"
+
+msgid "squad/leave/title"
+msgstr "Leave the Babylon: Dark Tower Platoon?"
+
+msgid "squad/leaveDisabled/cancel"
+msgstr "Continue"
+
+msgid "squad/leaveDisabled/message"
+msgstr "You are in the Platoon and ready for battle."
+
+msgid "squad/leaveDisabled/title"
+msgstr "You cannot leave the Platoon!"
+
+msgid "storyChoice/main_view/button/side_option_1"
+msgstr "TAKE ALEX"
+
+msgid "storyChoice/main_view/button/side_option_2"
+msgstr "LET ALEX GO"
+
+msgid "storyChoice/main_view/description/side_option_1"
+msgstr ""
+"SMITH: Alex doesn't realize what she's getting herself into! She has no idea"
+" whether she'd remain herself or simply perish. I can't forsake her again. "
+"We'll hook her up to the ship's systems and find a way to bring her back to "
+"consciousness. We don't leave our own. Ever."
+
+msgid "storyChoice/main_view/description/side_option_2"
+msgstr ""
+"MOREL: We need to fully destroy the Tower together with her body. Destroy "
+"the link that's holding Alex. We have to let her go—that would be her "
+"choice. It's the only way she can be reborn and become something completely "
+"new."
+
+msgid "storyChoice/main_view/header"
+msgstr "Choose how the story ends:"
+
+msgid "storyChoiceAward/community"
+msgstr ""
+"The community's overall choice will shape events to come.\n"
+"Check the game portal for updates."
+
+msgid "storyChoiceAward/option_1/title"
+msgstr "You took Alex on Marduk"
+
+msgid "storyChoiceAward/option_2/title"
+msgstr "You left Alex to the Mirium"
+
+msgid "storyChoiceAward/subtitle"
+msgstr "The choice is made!"
+
+msgid "storyChoiceConfirm/cancel"
+msgstr "Go Back"
+
+msgid "storyChoiceConfirm/description"
+msgstr ""
+"The outcome will be revealed when the event ends. Check the game portal for "
+"updates."
+
+msgid "storyChoiceConfirm/option_1/confirm"
+msgstr "Take Alex"
+
+msgid "storyChoiceConfirm/option_1/title"
+msgstr "Take Alex?"
+
+msgid "storyChoiceConfirm/option_2/confirm"
+msgstr "Let Alex Go"
+
+msgid "storyChoiceConfirm/option_2/title"
+msgstr "Let Alex Go?"
+
+msgid "storyChoiceConfirm/warning"
+msgstr ""
+"This choice is final. The community's overall choice will influence the "
+"story of the next chapter."
+
+msgid "vehicle/rent/label"
+msgstr ""
+"Complete {cream_open}Objective %(number)s{cream_close} or purchase an "
+"{cream_open}event bundle{cream_close} to gain access to this vehicle."
+
+msgid "vehicle/rent/packs"
+msgstr "To Event Bundle"
+
+msgid "vehicle/rent/tasks"
+msgstr "To Objective"
+
+msgid "vehicle/tasks/locked"
+msgstr ""
+"Complete the current task ({cream_open}Objective %(number)s{cream_close}) or"
+" purchase an {cream_open}event bundle{cream_close} to gain access to this "
+"vehicle."

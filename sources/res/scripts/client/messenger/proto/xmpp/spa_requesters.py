@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from adisp import adisp_async
 from messenger.m_constants import CLIENT_ERROR_ID
 from messenger.proto.entities import SharedUserEntity

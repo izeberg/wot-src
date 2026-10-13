@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from messenger.proto.interfaces import IChatMessage
 
 class ACTION_MESSAGE_TYPE(object):

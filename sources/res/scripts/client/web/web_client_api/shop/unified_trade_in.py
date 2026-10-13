@@ -1,4 +1,6 @@
+from __future__ import absolute_import
 import typing
+from future.utils import viewvalues
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
 from gui.shared import event_dispatcher as shared_events
 from gui.shared.gui_items.Vehicle import Vehicle
@@ -65,9 +67,9 @@ class UnifiedTradeInWebApiMixin(object):
     def getUnifiedTradeInInfo(self, cmd):
         fmtSell = self._getSellVehicleFormatter()
         fmtBuy = self._getBuyVehicleFormatter()
-        vehiclesToBuy = [ fmtBuy.format(vehicle) for vehicle in self._tradeIn.getVehiclesToBuy(True).itervalues()
+        vehiclesToBuy = [ fmtBuy.format(vehicle) for vehicle in viewvalues(self._tradeIn.getVehiclesToBuy(True))
                         ]
-        vehiclesToSell = [ fmtSell.format(vehicle) for vehicle in self._tradeIn.getVehiclesToSell(True).itervalues()
+        vehiclesToSell = [ fmtSell.format(vehicle) for vehicle in viewvalues(self._tradeIn.getVehiclesToSell(True))
                          ]
         return {'expirationDate': self._tradeIn.getExpirationTime(), 
            'selectedVehicleToSell': fmtSell.format(self._tradeIn.getSelectedVehicleToSell()), 

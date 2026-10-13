@@ -1,7 +1,7 @@
+from __future__ import absolute_import
 from functools import partial
-import BigWorld
+import BigWorld, CommandMapping
 from arena_bonus_type_caps import ARENA_BONUS_TYPE_CAPS as BONUS_CAPS
-import CommandMapping
 from constants import RM_STATE
 from gui.battle_control.battle_constants import VEHICLE_VIEW_STATE
 

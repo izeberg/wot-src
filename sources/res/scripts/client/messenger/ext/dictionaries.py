@@ -1,4 +1,8 @@
-import re, types, sre_compile, ResMgr
+from __future__ import absolute_import
+import re, sre_compile
+from future.utils import viewitems
+from past.builtins import unicode
+import ResMgr
 from debug_utils import LOG_CURRENT_EXCEPTION, LOG_ERROR
 from helpers import html
 _defaultReplacementFunction = lambda word: '*' * len(word)
@@ -68,7 +72,7 @@ class BasicOLDictionary(ObsceneLanguageDictionary):
         words = text.split(' ')
         for idx, word in enumerate(words):
             parsing = self.__nonAlphaNumPattern.sub('', word.lower())
-            for find, replace in self.__equivalents.iteritems():
+            for find, replace in viewitems(self.__equivalents):
                 parsing = parsing.replace(find, replace)
 
             for include, exclude in self.__badWordPatterns:
@@ -152,7 +156,7 @@ class ChinaOLDictionary(SpecialOLDictionary):
                 for badWordSet in badWordsSection.values():
                     try:
                         badWordWS = badWordSet.asWideString
-                        if not isinstance(badWordWS, types.UnicodeType):
+                        if not isinstance(badWordWS, unicode):
                             badWordWS = unicode(badWordWS, 'utf-8')
                         badWordWS = html.escape(badWordWS)
                         badWordC = re.compile(badWordWS, re.M | re.S | re.U | re.I)
@@ -165,10 +169,10 @@ class ChinaOLDictionary(SpecialOLDictionary):
 
     def searchAndReplace(self, text):
         try:
-            if not isinstance(text, types.UnicodeType):
+            if not isinstance(text, unicode):
                 text = unicode(text, 'utf-8')
             lowerText = text.lower()
-            for find, replace in self.__equivalents.iteritems():
+            for find, replace in viewitems(self.__equivalents):
                 lowerText = lowerText.replace(find, replace)
 
             for pat in self.__badWordPatterns:

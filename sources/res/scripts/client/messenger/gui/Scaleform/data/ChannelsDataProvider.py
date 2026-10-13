@@ -1,6 +1,7 @@
+from __future__ import absolute_import
+from future.utils import itervalues
 import BigWorld, Event
 from debug_utils import LOG_ERROR
-from future.utils import itervalues
 from gui.prb_control.events_dispatcher import TOOLTIP_PRB_DATA
 DEFAULT_FIELDS = {'clientID': 0, 
    'label': '', 

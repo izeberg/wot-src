@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from enum import Enum
 FEATURE = 'dog_tags'
 MIN_VIEW_TIME = 2

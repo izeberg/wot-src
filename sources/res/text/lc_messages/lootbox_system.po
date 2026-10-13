@@ -35,7 +35,7 @@ msgstr "Affirmative!"
 msgid "autoOpenView/title"
 msgstr "RECEIVED REWARDS"
 
-msgid "awardViews/footer/backButton/"
+msgid "awardViews/footer/backButton"
 msgstr "Affirmative!"
 
 msgid "awardViews/footer/caption/attemptsLeft"
@@ -80,7 +80,7 @@ msgstr "2D style"
 msgid "bonuses/description/style3D"
 msgstr "3D style"
 
-msgid "bonuses/label/blueprints/nationalFragment/"
+msgid "bonuses/label/blueprints/nationalFragment"
 msgstr "Blueprint Fragment (%(nation)s)"
 
 msgid "bonuses/label/blueprints/universalFragment"
@@ -223,17 +223,17 @@ msgstr "%(count)nd"
 msgid "guaranteed/tooltip/count/third"
 msgstr "%(count)rd"
 
-msgid "guaranteed/tooltip/description/count/"
+msgid "guaranteed/tooltip/description/count"
 msgstr "every %(count) opening"
 
-msgid "guaranteed/tooltip/description/item/"
+msgid "guaranteed/tooltip/description/item"
 msgstr "vehicle"
 
-msgid "guaranteed/tooltip/description0/"
+msgid "guaranteed/tooltip/description0"
 msgstr ""
 "A %(item) is guaranteed %(count). The counter resets if one drops earlier."
 
-msgid "guaranteed/tooltip/description1/"
+msgid "guaranteed/tooltip/description1"
 msgstr "If all vehicles are already owned, you receive a gold instead."
 
 msgid "guaranteedTitle/text"
@@ -312,22 +312,22 @@ msgstr "|"
 msgid "infoPage/rewards/percent"
 msgstr "%"
 
-msgid "multipleRewardView/footer/openNextButton/"
+msgid "multipleRewardView/footer/openNextButton"
 msgstr "Open More"
 
-msgid "multipleRewardView/header/subTitle/"
+msgid "multipleRewardView/header/subTitle"
 msgstr "From the %(name) (%(boxesCount) boxes opened)"
 
-msgid "multipleRewardView/header/title/"
+msgid "multipleRewardView/header/title"
 msgstr "RECEIVED REWARDS"
 
-msgid "noBoxesView/description/"
+msgid "noBoxesView/description"
 msgstr "Boxes are available in the in-game Store"
 
-msgid "noBoxesView/getBoxes/"
+msgid "noBoxesView/getBoxes"
 msgstr "To the Store"
 
-msgid "noBoxesView/goToButton/"
+msgid "noBoxesView/goToButton"
 msgstr "To Available Boxes"
 
 msgid "preview/backLabel"
@@ -431,13 +431,13 @@ msgstr "Only until %(date)s: Premium vehicles and valuable in-game assets!"
 msgid "serviceChannelMessages/statisticReset/server_error/text"
 msgstr "Unable to reset statistics. Please try again later."
 
-msgid "singleRewardView/extraReward/text/"
+msgid "singleRewardView/extraReward/text"
 msgstr "And also"
 
-msgid "singleRewardView/footer/openNextButton/"
+msgid "singleRewardView/footer/openNextButton"
 msgstr "Open More"
 
-msgid "singleRewardView/header/title/"
+msgid "singleRewardView/header/title"
 msgstr "RECEIVED REWARDS"
 
 msgid "singleRewardView/uniqueTankman"

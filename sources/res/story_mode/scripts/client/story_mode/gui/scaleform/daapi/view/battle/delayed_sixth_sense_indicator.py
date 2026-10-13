@@ -1,3 +1,5 @@
+from __future__ import absolute_import, division
+from future.utils import viewvalues
 import BigWorld, SoundGroups, WWISE
 from constants import SERVER_TICK_LENGTH
 from SMDetectionDelayObservableComponent import SMDetectionDelayObservableComponent
@@ -60,7 +62,7 @@ class DelayedSixthSenseIndicator(DelayedSixthSenseMeta):
             self.as_hideS(False)
             self._isShown = False
         if isVehicleAlive:
-            for value in self._timers.itervalues():
+            for value in viewvalues(self._timers):
                 duration = value['endTime'] - value['startTime']
                 progress = (BigWorld.serverTime() - value['startTime']) / duration if duration > 0 else 1.0
                 items.append(max(0, min(self.FULL_PROGRESS, int(self.FULL_PROGRESS * progress))))

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from constants import PREBATTLE_TYPE, QUEUE_TYPE
 from frontline.constants.common import FRONTLINE_GROUPS
 from gui.impl.lobby.tank_setup.ammunition_panel.groups_controller import HangarAmmunitionGroupsController

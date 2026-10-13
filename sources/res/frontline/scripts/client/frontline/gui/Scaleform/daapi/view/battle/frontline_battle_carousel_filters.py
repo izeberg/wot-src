@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.filters.carousel_filter import RoleCriteriesGroup
 from gui.shared.utils.requesters.ItemsRequester import RequestCriteria, PredicateCondition
 FL_RENT = RequestCriteria(PredicateCondition(lambda item: item.name.endswith('_FL')))

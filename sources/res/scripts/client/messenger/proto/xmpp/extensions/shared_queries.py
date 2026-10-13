@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from messenger.proto.xmpp.extensions import PyQuery
 from messenger.proto.xmpp.extensions.wg_items import WgClientExtension
 

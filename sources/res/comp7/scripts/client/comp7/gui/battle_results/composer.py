@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from comp7.gui.battle_results.templates import comp7_templates
 from comp7.gui.impl.lobby.battle_results.submodel_presenters.battle_info import isDeserter

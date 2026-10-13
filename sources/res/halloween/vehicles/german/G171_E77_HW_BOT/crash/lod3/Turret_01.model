@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>halloween/vehicles/german/G171_E77_HW_BOT/crash/lod3/Turret_01</nodefullVisual>
+	<tank>true</tank>
+	<parent>halloween/vehicles/german/G171_E77_HW_BOT/crash/lod4/Turret_01</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.728939 -0.011273 -2.756002</min>
+		<max>1.728938 1.283451 1.610400</max>
+	</visibilityBox>
+</root>
