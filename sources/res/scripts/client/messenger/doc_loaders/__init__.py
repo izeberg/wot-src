@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import ResMgr
 from messenger.doc_loaders import colors_schemes, html_templates, settings_set
 from messenger.doc_loaders import user_prefs

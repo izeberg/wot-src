@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from messenger import g_settings
 from messenger.m_constants import USER_TAG, CLIENT_ACTION_ID, PROTO_TYPE
 from messenger.proto.events import g_messengerEvents

@@ -9,7 +9,9 @@ package net.wg.gui.battle.views
    import net.wg.data.constants.Errors;
    import net.wg.data.constants.Linkages;
    import net.wg.data.constants.generated.BATTLE_VIEW_ALIASES;
+   import net.wg.data.constants.generated.LAYER_NAMES;
    import net.wg.gui.battle.battleloading.BaseBattleLoading;
+   import net.wg.gui.battle.components.BattleLayoutComponent;
    import net.wg.gui.battle.interfaces.IPrebattleTimerBase;
    import net.wg.gui.battle.views.ammunitionPanel.PrbAmmunitionPanelEvent;
    import net.wg.gui.battle.views.ammunitionPanel.PrebattleAmmunitionPanelView;
@@ -36,10 +38,13 @@ package net.wg.gui.battle.views
    import net.wg.infrastructure.base.meta.IBattlePageMeta;
    import net.wg.infrastructure.base.meta.impl.BattlePageMeta;
    import net.wg.infrastructure.base.meta.impl.BattleTimerMeta;
+   import net.wg.infrastructure.events.ContainerManagerEvent;
    import net.wg.infrastructure.events.LifeCycleEvent;
    import net.wg.infrastructure.helpers.statisticsDataController.BattleStatisticDataController;
    import net.wg.infrastructure.interfaces.IDAAPIModule;
    import net.wg.infrastructure.interfaces.entity.IDisplayableComponent;
+   import net.wg.infrastructure.layoutPart.algorithms.LayoutPartAbsolute;
+   import net.wg.infrastructure.managers.IContainerManager;
    import scaleform.clik.motion.Tween;
    
    public class BaseBattlePage extends BattlePageMeta implements IBattlePageMeta
@@ -128,6 +133,12 @@ package net.wg.gui.battle.views
       
       private var _tweens:Vector.<Tween>;
       
+      private var _layoutPart:LayoutPartAbsolute;
+      
+      private var _markerLayer:int = -1;
+      
+      private var _containerMgr:IContainerManager;
+      
       public function BaseBattlePage()
       {
          this.hitTestFix = new Sprite();
@@ -143,23 +154,28 @@ package net.wg.gui.battle.views
          this.hitTestFix.name = HIT_TEST_FIX_NAME;
          this.hitTestFix.alpha = 0;
          addChildAt(this.hitTestFix,0);
+         this._markerLayer = App.containerMgr.getLayerIndex(LAYER_NAMES.MARKER);
+         this._containerMgr = App.containerMgr;
       }
       
       override public function unregisterComponent(param1:String) : void
       {
+         if(this._layoutPart && this._componentsStorage[param1] is BattleLayoutComponent)
+         {
+            this._layoutPart.unregister(this._componentsStorage[param1] as DisplayObject);
+         }
          delete this._componentsStorage[param1];
          super.unregisterComponent(param1);
       }
       
       override public function updateStage(param1:Number, param2:Number) : void
       {
-         var _loc4_:int = 0;
          var _loc5_:int = 0;
          var _loc6_:Number = NaN;
          var _loc7_:int = 0;
          super.updateStage(param1,param2);
          var _loc3_:int = param1 >> 1;
-         _loc4_ = param2 >> 1;
+         var _loc4_:int = param2 >> 1;
          _originalWidth = param1;
          _originalHeight = param2;
          setSize(param1,param2);
@@ -281,6 +297,9 @@ package net.wg.gui.battle.views
          this.minimap.addEventListener(MinimapEvent.TRY_SIZE_CHANGED,this.onMinimapTrySizeChangedHandler);
          this.minimap.addEventListener(MinimapEvent.SIZE_CHANGED,this.onMinimapSizeChangedHandler);
          this.minimap.addEventListener(MinimapEvent.VISIBILITY_CHANGED,this.onMinimapSizeChangedHandler);
+         this._containerMgr.addEventListener(ContainerManagerEvent.VIEW_ADDED,this.onContainerMgrViewLoadingHandler);
+         this._containerMgr.addEventListener(ContainerManagerEvent.VIEW_REMOVED,this.onContainerMgrViewLoadingHandler);
+         this.hitTestFix.visible = this._containerMgr.getContainer(this._markerLayer).empty;
          super.configUI();
       }
       
@@ -374,6 +393,10 @@ package net.wg.gui.battle.views
       
       override protected function onBeforeDispose() : void
       {
+         if(this._layoutPart)
+         {
+            App.sharedLayoutMgr.unregisterLayout(this._layoutPart);
+         }
          if(this.prebattleAmmunitionPanel)
          {
             this.prebattleAmmunitionPanel.removeEventListener(PrbAmmunitionPanelEvent.VIEW_HIDDEN,this.onPrebattleAmmunitionPanelViewHiddenHandler);
@@ -391,6 +414,11 @@ package net.wg.gui.battle.views
             this.gameMessagesPanel.removeEventListener(GameMessagesPanelEvent.MESSAGES_ENDED_PLAYING,this.onMessagesEndedPlayingHandler);
             this.gameMessagesPanel.removeEventListener(GameMessagesPanelEvent.ALL_MESSAGES_ENDED_PLAYING,this.onAllMessagesEndedPlayingHandler);
          }
+         if(this._containerMgr)
+         {
+            this._containerMgr.removeEventListener(ContainerManagerEvent.VIEW_ADDED,this.onContainerMgrViewLoadingHandler);
+            this._containerMgr.removeEventListener(ContainerManagerEvent.VIEW_REMOVED,this.onContainerMgrViewLoadingHandler);
+         }
          this.minimap.removeEventListener(MinimapEvent.TRY_SIZE_CHANGED,this.onMinimapTrySizeChangedHandler);
          this.minimap.removeEventListener(MinimapEvent.SIZE_CHANGED,this.onMinimapSizeChangedHandler);
          this.minimap.removeEventListener(MinimapEvent.VISIBILITY_CHANGED,this.onMinimapSizeChangedHandler);
@@ -399,6 +427,11 @@ package net.wg.gui.battle.views
       
       override protected function onDispose() : void
       {
+         if(this._layoutPart)
+         {
+            this._layoutPart.dispose();
+            this._layoutPart = null;
+         }
          this.sixthSense = null;
          this.unspotted = null;
          this.sightPointerUnderScanningIndicator = null;
@@ -435,6 +468,7 @@ package net.wg.gui.battle.views
          this.hitTestFix = null;
          this.clearTweens();
          this._tweens = null;
+         this._containerMgr = null;
          super.onDispose();
       }
       
@@ -518,6 +552,12 @@ package net.wg.gui.battle.views
       
       public function as_setArtyShotIndicatorFlag(param1:Boolean) : void
       {
+      }
+      
+      public function as_setLayout(param1:uint) : void
+      {
+         this._layoutPart = new LayoutPartAbsolute(param1);
+         App.sharedLayoutMgr.registerLayout(this._layoutPart);
       }
       
       public function as_toggleCtrlPressFlag(param1:Boolean) : void
@@ -646,6 +686,10 @@ package net.wg.gui.battle.views
       protected function registerComponent(param1:IDAAPIModule, param2:String) : void
       {
          this._componentsStorage[param2] = param1;
+         if(this._layoutPart && param1 is BattleLayoutComponent)
+         {
+            this._layoutPart.register(param1 as DisplayObject);
+         }
          registerFlashComponentS(param1,param2);
       }
       
@@ -813,6 +857,14 @@ package net.wg.gui.battle.views
       {
          this.anchorVictimDogTag();
          this.playerMessageListPositionUpdate();
+      }
+      
+      private function onContainerMgrViewLoadingHandler(param1:ContainerManagerEvent) : void
+      {
+         if(param1.layer == this._markerLayer)
+         {
+            this.hitTestFix.visible = this._containerMgr.getContainer(this._markerLayer).empty;
+         }
       }
       
       private function onPrebattleAmmunitionPanelViewShownHandler(param1:PrbAmmunitionPanelEvent) : void

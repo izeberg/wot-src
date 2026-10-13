@@ -1335,15 +1335,11 @@ package
       
       public static const LAYOUT_APPLY_SHELLS_NO_GOLD:String = "#system_messages:layout_apply/SHELLS_NO_GOLD";
       
-      public static const LAYOUT_APPLY_SHELLS_NO_WALLET_SESSION:String = "#system_messages:layout_apply/SHELLS_NO_WALLET_SESSION";
-      
       public static const LAYOUT_APPLY_EQS_NO_CREDITS:String = "#system_messages:layout_apply/EQS_NO_CREDITS";
       
       public static const LAYOUT_APPLY_EQS_NO_GOLD:String = "#system_messages:layout_apply/EQS_NO_GOLD";
       
       public static const LAYOUT_APPLY_EQS_NO_CRYSTAL:String = "#system_messages:layout_apply/EQS_NO_CRYSTAL";
-      
-      public static const LAYOUT_APPLY_EQS_NO_WALLET_SESSION:String = "#system_messages:layout_apply/EQS_NO_WALLET_SESSION";
       
       public static const LAYOUT_APPLY_NOT_RESEARCHED_ITEM:String = "#system_messages:layout_apply/NOT_RESEARCHED_ITEM";
       

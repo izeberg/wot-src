@@ -1,6 +1,5 @@
 from __future__ import absolute_import
-import typing
-from itertools import chain
+from typing import Dict, Iterable, Tuple, TYPE_CHECKING
 import BattleReplay
 from events_containers.common.containers import ContainersListener
 from events_handler import eventHandler
@@ -10,11 +9,11 @@ from gui.veh_mechanics.battle.updaters.mechanics.tracked_mechanics_updater impor
 from gui.veh_mechanics.battle.updaters.updaters_common import ViewUpdatersCollection
 from helpers import dependency
 from skeletons.gui.battle_session import IBattleSessionProvider
-if typing.TYPE_CHECKING:
-    from vehicles.mechanics.mechanic_constants import VehicleMechanic
+if TYPE_CHECKING:
+    from items.vehicle_mechanics_types import VehicleMechanicKey
 
-def getMechanicsUIComponents(vehicleMechanics, componentsMap):
-    return chain(componentsMap[mechanic] for mechanic in vehicleMechanics if mechanic in componentsMap)
+def _getMechanicsUIComponents(vehicleMechanics, componentsMap):
+    return (componentsMap[mechanic] for mechanic in vehicleMechanics if mechanic in componentsMap)
 
 
 class VehicleMechanicsPanel(BaseDAAPIComponent, ContainersListener, IVehicleTrackedMechanicsView):
@@ -30,8 +29,9 @@ class VehicleMechanicsPanel(BaseDAAPIComponent, ContainersListener, IVehicleTrac
 
     @eventHandler
     def onTrackedMechanicsUpdate(self, mechanics):
-        for mechanicComponent in getMechanicsUIComponents(mechanics, self._VEHICLE_MECHANIC_UI_COMPONENTS_MAP):
-            self._addMechanicUIComponent(mechanicComponent)
+        mechanicsAS = (m for m in mechanics if not self.__sessionProvider.arenaVisitor.extra.isGfHudMechanicEnabled(m))
+        for mechanicComponents in _getMechanicsUIComponents(mechanicsAS, self._VEHICLE_MECHANIC_UI_COMPONENTS_MAP):
+            self._addMechanicUIComponents(mechanicComponents)
 
     def _populate(self):
         super(VehicleMechanicsPanel, self)._populate()
@@ -87,7 +87,7 @@ class VehicleMechanicsPanel(BaseDAAPIComponent, ContainersListener, IVehicleTrac
     def _setCrosshairViewID(self, viewID):
         raise NotImplementedError
 
-    def _addMechanicUIComponent(self, mechanicComponents):
+    def _addMechanicUIComponents(self, mechanicComponents):
         raise NotImplementedError
 
     def __onRadialMenuOpenChanged(self):

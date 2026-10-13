@@ -178,16 +178,13 @@ msgstr "地图特点"
 msgid "detailsHelp/devMaps/markers/description"
 msgstr ""
 "随机事件的位置会在地图和小地图上\n"
-"分别用烟雾和标记标出。\n"
-"您可在游戏设置的\"游戏\"标签页中关闭带有随机事件的地图。"
+"分别用烟雾和标记标出。"
 
 msgid "detailsHelp/devMaps/title"
 msgstr "带有随机事件的地图"
 
 msgid "detailsHelp/devMaps/zone/description"
-msgstr ""
-"您的坦克可能会在随机事件区域被摧毁(如飞机坠毁时)。\n"
-"您可在游戏设置的\"游戏\"标签页中关闭带有随机事件的地图。"
+msgstr "您的坦克可能会在随机事件区域被摧毁(如飞机坠毁时)。"
 
 msgid "detailsHelp/dualGun/quick_fire"
 msgstr "搭载有该射击系统的战车会在开火后切换火炮。一门火炮射击后会自动装填，同时另一门火炮需要等待一段时间后才能开火。"
@@ -302,6 +299,12 @@ msgstr "击穿敌方坦克2次即可激活点射模式——装填一个点射�
 
 msgid "detailsHelp/mechanics/chargeableBurst/page1/title"
 msgstr "点射模式"
+
+msgid "detailsHelp/mechanics/combatThrottle/page1/description"
+msgstr "激活档位，可暂时提高发动机功率、速度和操控性，同时保持可靠的火炮手感。这使其能够实现灵活机动的玩法，且不影响作战效能。"
+
+msgid "detailsHelp/mechanics/combatThrottle/page1/title"
+msgstr "战斗档位"
 
 msgid "detailsHelp/mechanics/concentrationMode/page1/description"
 msgstr ""

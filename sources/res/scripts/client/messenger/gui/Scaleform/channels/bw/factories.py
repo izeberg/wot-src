@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from messenger.gui.Scaleform.channels.bw import lobby_controllers
 from messenger.gui.interfaces import IControllerFactory
 from messenger.m_constants import LAZY_CHANNEL

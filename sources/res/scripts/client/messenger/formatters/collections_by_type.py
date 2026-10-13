@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from chat_shared import SYS_MESSAGE_TYPE as _SM_TYPE
 from gui.gift_system.proxy import GiftSystemMessagesProxy
 from gui.shared.system_factory import registerLootBoxAutoOpenSubFormatters, registerMessengerClientFormatter, registerMessengerServerFormatter, registerTokenQuestsSubFormatters

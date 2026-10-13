@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from collections import deque
 from debug_utils import LOG_WARNING
 from messenger.gui.Scaleform import FILL_COLORS
@@ -36,7 +37,7 @@ class BattleSharedHistory(object):
         if self.isEnabled():
             self.__history.append((message, fillColor))
             if self.__syncCursor:
-                self.next()
+                self.goNext()
 
     def getNavControlsEnabled(self):
         prevControl = self.__cursor > self.__numberOfMessages
@@ -56,7 +57,7 @@ class BattleSharedHistory(object):
             history = temp[start:end]
         return history
 
-    def next(self):
+    def goNext(self):
         if self.__cursor > -1:
             self.__cursor = min(len(self.__history), self.__cursor + 1)
         elif not self.isEnabled():

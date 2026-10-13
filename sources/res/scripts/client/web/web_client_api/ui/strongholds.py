@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.clans.clan_helpers import getStrongholdUrl
 from gui.impl.lobby.clan_supply.clan_supply_helpers import showClanSupplyView
 from gui.shared import event_dispatcher as shared_events

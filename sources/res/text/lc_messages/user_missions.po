@@ -343,6 +343,9 @@ msgstr "领取奖励"
 msgid "hub/reward_progress/win_back_quest_progress/claim_main"
 msgstr "领取奖励"
 
+msgid "hub/reward_progress/win_back_quest_progress/progress"
+msgstr "{{current}}{{@ style (color #ede6d998)}}/{{total}}{{/}}"
+
 msgid "hub/reward_progress/win_back_quest_progress/sub_title"
 msgstr "每完成一个普通、高级或奖励任务，均可推动奖励进度。"
 
@@ -350,7 +353,7 @@ msgid "hub/reward_progress/win_back_quest_progress/time_left"
 msgstr "还将开放"
 
 msgid "hub/reward_progress/win_back_quest_progress/title"
-msgstr "厉兵秣马！完成日常任务，获取史诗奖励: {progres}"
+msgstr "厉兵秣马！完成日常任务，获取史诗奖励: {{progress}}"
 
 msgid "info_page/additional/bonus/description"
 msgstr "完成3个普通任务，即可解锁回报更加丰厚的奖励任务。奖励任务必须当日完成，否则就会过期。"

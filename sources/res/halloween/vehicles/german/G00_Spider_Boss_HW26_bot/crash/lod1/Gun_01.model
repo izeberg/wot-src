@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>halloween/vehicles/german/G00_Spider_Boss_HW26_bot/crash/lod1/Gun_01</nodefullVisual>
+	<tank>true</tank>
+	<parent>halloween/vehicles/german/G00_Spider_Boss_HW26_bot/crash/lod2/Gun_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-6.388655 -1.363424 -2.995902</min>
+		<max>6.388654 5.425519 5.695835</max>
+	</visibilityBox>
+</root>

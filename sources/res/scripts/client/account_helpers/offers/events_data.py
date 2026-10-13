@@ -1,4 +1,6 @@
+from __future__ import absolute_import
 import logging, time, typing
+from future.utils import viewitems
 from constants import PREMIUM_ENTITLEMENTS, RentType
 from gui.impl import backport
 from gui.impl.gen import R
@@ -18,7 +20,7 @@ OFFER_BONUSES_PRIORITY = (
 DEFAULT_PRIORITY = len(OFFER_BONUSES_PRIORITY)
 
 class OfferEventData(object):
-    __slots__ = ('_id', '_data', '_langCode')
+    __slots__ = ('_id', '_data')
     _itemsCache = dependency.descriptor(IItemsCache)
     _offersProvider = dependency.descriptor(IOffersDataProvider)
     _langCode = getClientLanguage()
@@ -100,13 +102,15 @@ class OfferEventData(object):
         if received is None:
             return []
         else:
-            return [ OfferGift(giftID, settings) for giftID, settings in self._data.get('gift', {}).iteritems() if giftID not in received or not settings.get('limit', 1) or giftID in received and settings.get('limit', 1) and received[giftID] < settings.get('limit', 1)
+            return [ OfferGift(giftID, settings) for giftID, settings in viewitems(self._data.get('gift', {})) if giftID not in received or not settings.get('limit', 1) or giftID in received and settings.get('limit', 1) and received[giftID] < settings.get('limit', 1)
                    ]
 
     def getGift(self, giftID):
         giftsData = self._data.get('gift')
         if giftsData and giftID in giftsData:
             return OfferGift(giftID, self._data['gift'][giftID])
+        else:
+            return
 
     def getGiftAvailableCount(self, giftID):
         received = self._receivedGifts
@@ -123,11 +127,11 @@ class OfferEventData(object):
             return -1
 
     def getAllGifts(self):
-        return [ OfferGift(giftID, settings) for giftID, settings in self._data.get('gift', {}).iteritems()
+        return [ OfferGift(giftID, settings) for giftID, settings in viewitems(self._data.get('gift', {}))
                ]
 
     def getFirstGift(self):
-        for giftID, settings in self._data.get('gift', {}).iteritems():
+        for giftID, settings in viewitems(self._data.get('gift', {})):
             return OfferGift(giftID, settings)
 
         return
@@ -325,13 +329,13 @@ class OfferGift(object):
 
     @property
     def rawBonuses(self):
-        return self._data.get('bonus', dict())
+        return self._data.get('bonus', {})
 
     @property
     def bonuses(self):
         if self._bonuses is None:
             self._bonuses = []
-            for name, value in self._data.get('bonus', dict()).iteritems():
+            for name, value in viewitems(self._data.get('bonus', {})):
                 self._bonuses += getOfferBonuses(name, value)
 
             if not self._bonuses:
@@ -353,7 +357,7 @@ class OfferGift(object):
 
     @property
     def isWithSlotBonus(self):
-        return 'slots' in self._data.get('bonus', dict())
+        return 'slots' in self._data.get('bonus', {})
 
     @property
     def buttonLabel(self):

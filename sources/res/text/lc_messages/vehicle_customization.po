@@ -153,25 +153,31 @@ msgstr "精英纹章"
 msgid "attachment/Challenger_s_Bounty/Cus_233_Challenges_Armor"
 msgstr "炽烈之弹"
 
-msgid "attachment/Doomguys_Keepsakes"
+msgid "attachment/Dark_Tower_Trophies"
+msgstr "黑塔战利品"
+
+msgid "attachment/Dark_Tower_Trophies/Cus_290_HW_MagneticHarpoon"
+msgstr "静滞鱼叉"
+
+msgid "attachment/Doomgyus_Keepsakes"
 msgstr "杜姆盖的珍藏"
 
-msgid "attachment/Doomguys_Keepsakes/Cus_309_Classic_HUD"
+msgid "attachment/Doomgyus_Keepsakes/Cus_309_Classic_HUD"
 msgstr "经典战斗界面"
 
-msgid "attachment/Doomguys_Keepsakes/Cus_309_Classic_HUD/description"
+msgid "attachment/Doomgyus_Keepsakes/Cus_309_Classic_HUD/description"
 msgstr "生命值、装甲，还有一张无所畏惧的面孔。对于一名陆战队员来说，凭借这些就足够面对蜂拥而至的不速之客，并把他们统统炸个粉碎。"
 
-msgid "attachment/Doomguys_Keepsakes/Cus_310_DOOM_Ornament"
+msgid "attachment/Doomgyus_Keepsakes/Cus_310_DOOM_Ornament"
 msgstr "毁灭战士饰物"
 
-msgid "attachment/Doomguys_Keepsakes/Cus_311_Chaingun"
+msgid "attachment/Doomgyus_Keepsakes/Cus_311_Chaingun"
 msgstr "链式机枪"
 
-msgid "attachment/Doomguys_Keepsakes/Cus_312_Demon_Disposal_Kit"
+msgid "attachment/Doomgyus_Keepsakes/Cus_312_Demon_Disposal_Kit"
 msgstr "恶魔清除套装"
 
-msgid "attachment/Doomguys_Keepsakes/Cus_313_Marines_Stash"
+msgid "attachment/Doomgyus_Keepsakes/Cus_313_Marines_Stash"
 msgstr "陆战队员的补给箱"
 
 msgid "attachment/Expedition_Essentials"
@@ -212,6 +218,18 @@ msgstr "战地回收炮塔"
 
 msgid "attachment/Field_Salvage/Cus_238_LS_TrophyWheels"
 msgstr "战地回收车轮"
+
+msgid "attachment/Field_Salvage/Cus_289_HW_SpiderSpotlight"
+msgstr "余响观察镜"
+
+msgid "attachment/Field_Salvage/Cus_291_HW_SpareBatteries"
+msgstr "鱼叉电池组"
+
+msgid "attachment/Field_Salvage/Cus_292_HW_PowerCollector"
+msgstr "超高密度銤元素收集器"
+
+msgid "attachment/Field_Salvage/Cus_293_HW_SpiderMines"
+msgstr "蜂王地雷"
 
 msgid "attachment/Football_Fever"
 msgstr "足球狂热"
@@ -398,6 +416,24 @@ msgstr "沙燕风筝"
 
 msgid "attachment/Traditional_Toys/Cus_263_FCN_Tricycle"
 msgstr "满载的三蹦子"
+
+msgid "attachment/Transmission_Tech"
+msgstr "通讯技术"
+
+msgid "attachment/Transmission_Tech/Cus_314_Telemetry_Plotter"
+msgstr "标绘仪"
+
+msgid "attachment/Transmission_Tech/Cus_315_Orbiter_Prototype"
+msgstr "轨道器原型"
+
+msgid "attachment/Transmission_Tech/Cus_316_EMP_Jammer"
+msgstr "脉冲干扰机"
+
+msgid "attachment/Transmission_Tech/Cus_317_Satellite_Tracker"
+msgstr "卫星追踪器"
+
+msgid "attachment/Transmission_Tech/Cus_318_Encryption_Station"
+msgstr "加密站"
 
 msgid "attachment/Zero_Legacy"
 msgstr "重置者传承"
@@ -4887,6 +4923,9 @@ msgstr "?empty?"
 msgid "camouflage/fort/label"
 msgstr "工业资源"
 
+msgid "camouflage/fr26_style1/label"
+msgstr "信号猎人"
+
 msgid "camouflage/france/bicolor/Winter/description"
 msgstr "冬季涂装被应用于在东线上作战的Axis部队中被占领的F系坦克。"
 
@@ -5335,6 +5374,12 @@ msgstr "继续高中"
 
 msgid "camouflage/girls_und_panzer_kabasan/label"
 msgstr "河马组"
+
+msgid "camouflage/girls_und_panzer_leopon/label"
+msgstr "?empty?"
+
+msgid "camouflage/girls_und_panzer_team_leoponsan/label"
+msgstr "?empty?"
 
 msgid "camouflage/give_paw/description"
 msgstr "?empty?"
@@ -5970,6 +6015,18 @@ msgstr "?empty?"
 
 msgid "camouflage/lunar_ny_ox/label"
 msgstr "公牛骑兵"
+
+msgid "camouflage/maneuvers_2026_1/label"
+msgstr "巨龟之壳"
+
+msgid "camouflage/maneuvers_2026_2/label"
+msgstr "战牛之角"
+
+msgid "camouflage/maneuvers_2026_3/label"
+msgstr "毒蝎之刺"
+
+msgid "camouflage/maneuvers_2026_4/label"
+msgstr "幻蜥之幕"
 
 msgid "camouflage/manners/description"
 msgstr "?empty?"
@@ -8271,6 +8328,24 @@ msgstr "将帅号令"
 
 msgid "camouflage/wci2025_progressive_st3/label"
 msgstr "制胜一击"
+
+msgid "camouflage/wci2026_progressive_st1/description"
+msgstr "凤凰的暗色轮廓隐约浮现在装甲板上，象征着赛事征途才刚刚开始。购买风格后即可获得等级I。"
+
+msgid "camouflage/wci2026_progressive_st1/label"
+msgstr "凤凰: 觉醒"
+
+msgid "camouflage/wci2026_progressive_st2/description"
+msgstr "银色纹路逐渐浮现在深色金属之上，仿佛凤凰正舒展双翼，振翅高飞。"
+
+msgid "camouflage/wci2026_progressive_st2/label"
+msgstr "凤凰: 腾飞"
+
+msgid "camouflage/wci2026_progressive_st3/description"
+msgstr "凤凰于金色与紫色烈焰中昂然升起，展现出唯有冠军方能匹配的荣耀之姿。风格最终等级，属于那些坚持到底并赢得胜利的勇士。"
+
+msgid "camouflage/wci2026_progressive_st3/label"
+msgstr "凤凰: 凯旋"
 
 msgid "camouflage/wci_2024_1/description"
 msgstr "?empty?"
@@ -11069,6 +11144,9 @@ msgstr "生生不息"
 msgid "emblem/cool/sticker_74"
 msgstr "雪花"
 
+msgid "emblem/cool/sticker_75"
+msgstr "?empty?"
+
 msgid "emblem/group1/animal_1"
 msgstr "狮子"
 
@@ -13747,6 +13825,15 @@ msgstr "比赛日"
 
 msgid "emblem/special/sticker_884"
 msgstr "牛气冲天"
+
+msgid "emblem/special/sticker_886"
+msgstr "信号猎人"
+
+msgid "emblem/special/sticker_887"
+msgstr "豹狮"
+
+msgid "emblem/special/sticker_888"
+msgstr "2026WCI"
 
 msgid "filter/popover/bonusType/title"
 msgstr "加成类型"
@@ -16721,6 +16808,12 @@ msgstr "高压危险！"
 
 msgid "inscription/special/special_885"
 msgstr "感受能量"
+
+msgid "inscription/special/special_886"
+msgstr "广播已安全"
+
+msgid "inscription/special/special_887"
+msgstr "通信检查"
 
 msgid "inscription/special/special_90"
 msgstr "2017年总决赛，莫斯科"
@@ -19923,6 +20016,9 @@ msgstr "Kei海报"
 msgid "projection_decals/pin_up/projection_decal_72"
 msgstr "Erwin海报"
 
+msgid "projection_decals/pin_up/projection_decal_73"
+msgstr "Nakajima海报"
+
 msgid "projection_decals/progression"
 msgstr "可升级"
 
@@ -20458,7 +20554,7 @@ msgid "projection_decals/special/projection_decal_1104"
 msgstr "毁灭战士头盔"
 
 msgid "projection_decals/special/projection_decal_1105"
-msgstr "裁决剑"
+msgstr "熔炉之刃"
 
 msgid "projection_decals/special/projection_decal_1106"
 msgstr "BFG-9000"
@@ -20490,17 +20586,41 @@ msgstr "电气智能"
 msgid "projection_decals/special/projection_decal_1114"
 msgstr "幽绿魅影"
 
+msgid "projection_decals/special/projection_decal_1119"
+msgstr "卫星"
+
 msgid "projection_decals/special/projection_decal_112"
 msgstr "金属战争前10"
 
 msgid "projection_decals/special/projection_decal_112/description"
 msgstr "发放给领土战金属战争活动中，获得前10名的军团的成员。"
 
+msgid "projection_decals/special/projection_decal_1120"
+msgstr "弹簧刀小队"
+
+msgid "projection_decals/special/projection_decal_1121"
+msgstr "Q版Nakajima"
+
+msgid "projection_decals/special/projection_decal_1122"
+msgstr "滨江索道"
+
+msgid "projection_decals/special/projection_decal_1122/description"
+msgstr "主办城市的标志性缆车，凌空横跨江面。既是对活动主办地的致敬，也象征着攀登巅峰的征程。"
+
+msgid "projection_decals/special/projection_decal_1123"
+msgstr "火锅"
+
+msgid "projection_decals/special/projection_decal_1123/description"
+msgstr "热气腾腾、红汤翻滚的火锅，筷子早已备好，邀您一同品尝主办城市最具代表性的美食。"
+
 msgid "projection_decals/special/projection_decal_113"
 msgstr "金属战争前100"
 
 msgid "projection_decals/special/projection_decal_113/description"
 msgstr "发放给领土战金属战争活动中，获得前100名的军团的成员。"
+
+msgid "projection_decals/special/projection_decal_1135"
+msgstr "涡轮增压器"
 
 msgid "projection_decals/special/projection_decal_114"
 msgstr "金属战争参与者"
@@ -24834,6 +24954,9 @@ msgstr "喷漆绘画"
 msgid "repaint/forged_flame"
 msgstr "烈火锻造"
 
+msgid "repaint/fr26_style1"
+msgstr "信号猎人"
+
 msgid "repaint/france_base_color"
 msgstr "F系基色"
 
@@ -24936,11 +25059,17 @@ msgstr "炭灰色"
 msgid "repaint/girls_und_panzer_kabasan_style"
 msgstr "河马组"
 
+msgid "repaint/girls_und_panzer_leopon"
+msgstr "?empty?"
+
 msgid "repaint/girls_und_panzer_rabbit"
 msgstr "苔藓绿色"
 
 msgid "repaint/girls_und_panzer_saunders"
 msgstr "桑德斯大学附属高中"
+
+msgid "repaint/girls_und_panzer_team_leoponsan"
+msgstr "?empty?"
 
 msgid "repaint/girls_und_panzer_turtle"
 msgstr "沙黄色"
@@ -27129,6 +27258,17 @@ msgstr ""
 "\n"
 "我们有B计划吗？我们甚至连A计划都没...\""
 
+msgid "special_style/G171_E77_HW26_3Dst"
+msgstr "蜂王"
+
+msgid "special_style/G171_E77_HW26_3Dst_desc/long"
+msgstr ""
+"\"那个铁疙瘩正直勾勾地盯着我！\n"
+"\n"
+"它的观瞄镜泛着幽光，仿佛真有自己的意识。就好像有一头野兽正在装甲下呼吸，而绑在它车体上的地雷则抽动着它们的小腿，随时准备跳下来。你问我是什么地雷？又是从哪儿冒出来的？问得好。弟兄们是从现实本身的一道深邃裂隙里把这辆坦克拖出来的。他们说这东西绝对安全，开起来还顺手得不得了。说得好听...\n"
+"\n"
+"但我总觉得这台机器是活的。可恶，就连我也想驾驶这辆坦克在战斗中试试手！\""
+
 msgid "special_style/G172_PzVIB_Tiger_II_DIT_3DSt"
 msgstr "Erika"
 
@@ -27187,6 +27327,13 @@ msgstr "河马组标准"
 msgid "special_style/G191_StuG_IIIF_A_3Dst_desc/long"
 msgstr ""
 "在某次探索大洗女子学园的过程中，河马组的女孩们在湖中发现了一辆失踪已久的III号突击炮F型，并努力帮其恢复昔日辉煌。这辆坦克曾经点缀着华丽的装饰物，但后来被重新漆成了实用的战地灰色，这反映了该队伍非常擅长隐蔽和伏击战术。"
+
+msgid "special_style/G204_PzVI_Tiger_P_CFE_A_3Dst"
+msgstr "\"虎\"(P)\"豹狮\""
+
+msgid "special_style/G204_PzVI_Tiger_P_CFE_A_3Dst_desc/long"
+msgstr ""
+"VI号P型坦克，也就是更为人熟知的VK4501(P)，又称保时捷\"虎\"，是D系最独特的重型坦克之一。它配备两台101型风冷发动机和一套电传动系统。由于动力系统结构复杂且可靠性不足，该坦克最终未能投入量产，但在大洗女子学园的帮助下，它迎来了新生。这辆坦克是在学园舰底部被发现的，并由汽车部成员修复，而她们后来也成为了它的车组，即豹狮组。凭借出色的工程技术，少女们不仅让这辆脾气古怪的保时捷\"虎\"始终保持战备状态，还对其进行了升级，为其加装了能够实现短时间爆发加速的装置。"
 
 msgid "special_style/G42_Maus_BPXVIII_3Dst"
 msgstr "钢铁凝视"
@@ -27269,6 +27416,13 @@ msgstr ""
 "\"太好了！他们已经把我们锁在了兵营里足足两周。现在终于要明确行动了！这段时间部队什么都没得做。我们只能坐在一边观看通信兵与解密器之间的无声战斗。我记得我们的无线电命令不断被敌方拦截，然后总部传输了假情报，但这反而没有被拦截，导致我们的人认为这是真实情报。然后我们又收到了取消的指示。还是那也被拦截了？唉，真麻烦...我宁愿看着油漆风干。无论如何，我们已经开始行动了，但是我觉得将重型坦克派往城市环境...并不是我们预想中的行动？希望没人会发现连我自己也不知道这条命令是哪个总部下达的。我很适应街区中的战斗。但是...上次我还只是一名骑兵。\n"
 "\n"
 "理查德一九七九，传输结束\""
+
+msgid "special_style/G89_Leopard1_KS_3Dst"
+msgstr "蒸汽时代"
+
+msgid "special_style/G89_Leopard1_KS_3Dst_desc/long"
+msgstr ""
+"这台\"蒸汽时代\"外观固然令人惊叹，却素来不以优雅精致见长。它是一头由纯粹力量铸就的钢铁巨兽，活塞如冲压机般轰鸣起落，排气口如铸造厂般喷吐浓烟。它诞生于蒸汽时代的鼎盛之年，那些满手煤垢、亲手锻铸它的匠人早已离世，它却一直存续至今。其发条机械般的恢宏气势，甚至令现代战场中的钢铁躯壳都相形见绌。它携新式动力轰鸣着冲入战场。当柴油引擎制造的喧嚣终于平息，唯有\"蒸汽时代\"那沉稳不倦的铿锵声依旧回荡。"
 
 msgid "special_style/G89_Leopard1_WT24_Mini_Boss_3Dst"
 msgstr "EOS 1"
@@ -27372,6 +27526,15 @@ msgstr "君国大义"
 msgid "special_style/GB136_Churchill_BPXIV_3Dst_desc/long"
 msgstr ""
 "\"说实话，战前我对F系知之甚少。我的家乡离这里太遥远。虽然父亲曾在附近的地区参加过战事，但他很少谈起。想想真是奇怪，我们过去竟然将其称为大战——唯一的一场大战，好像不可能再发生类似规模的战事一样。这样想也许太天真了。人类的历史就是一部斗争史。我心知肚明，一旦那一刻来临，战事爆发，我就会挺身而出。国王、祖国、责任、荣誉，全都是我从小到大的信仰，我所接受的教导也是要捍卫它们。即使粉身碎骨也在所不惜。\""
+
+msgid "special_style/GB142_FV230_Canopener_HW26_3Dst"
+msgstr "鱼叉手"
+
+msgid "special_style/GB142_FV230_Canopener_HW26_3Dst_desc/long"
+msgstr ""
+"\"每辆余响坦克内部，都有一个类似銤元素反应堆的东西在运作。它将物质维持在坦克形态。当敌人受到足够损伤，核心便无法再维持该形态，銤元素也会变回液态。到那时，就没什么可研究的了。\n"
+"\n"
+"但我成功研发出一种特殊类型的弹药。其原理很简单: 一旦我们瘫痪了一辆坦克，就向其发射一枚\"充能引力锚\"。引力锚会接管銤元素反应堆，并维持余响坦克的形态，直到回收小队能将样本转移至静滞舱。史密斯上尉仍然不太信任这项技术。每天早上他都会去机库巡视，用指关节敲击车体，检查它们。他担心有一天其中一辆会醒过来，给我们的早晨增添一些刺激。我理解他。但我相信我的计算，而他相信自己的直觉。目前就是这么个状况。\""
 
 msgid "special_style/GB142_FV230_Canopener_KS_3Dst"
 msgstr "双神镇厄"
@@ -27796,6 +27959,13 @@ msgid "special_style/Pl21_CS_63_OSP3_3DSt_desc/long"
 msgstr ""
 "这辆B系中型坦克是天马的化身——长着巨大翅膀的神奇雪白战马。这一次，无论是贝勒罗芬还是宙斯都无法驯服它，只有那些能征善战的勇士才能将其纳入麾下。准备好驾驶它征战四方，痛击来犯之敌。"
 
+msgid "special_style/Pl27_SDP_Wz_66T_WCI_3Dst"
+msgstr "追梦"
+
+msgid "special_style/Pl27_SDP_Wz_66T_WCI_3Dst_desc/long"
+msgstr ""
+"追梦，献给所有永不止步的挑战者。每一次冲锋都是对无限热情与不懈毅力的见证。黑金相间的凤凰羽翼流淌于钢铁之躯，宛如您心中燃烧不灭的坚定信念。无论征途多么艰难，您都将克服万难，迎来属于自己的荣耀时刻。"
+
 msgid "special_style/Pl29_NC_Wz_70T_BPXVI_3Dst"
 msgstr "盛夏酷暑"
 
@@ -27907,6 +28077,17 @@ msgstr "黑曜石"
 msgid "special_style/R205_Tank_Rozanova_3Dst_HW23_desc/long"
 msgstr ""
 "\"在坦克中发现一张纸条：'走出坦克，摘掉防毒面罩，然后大口呼吸新鲜空气...还有比这更让人向往的事吗？他们说这么做的话就没法反悔了。但无所谓了。我会出去，蜕去这具没有灵魂的坦克外壳。我将控制銤元素的能量，我必须这么做。别想我，霍普。'\""
+
+msgid "special_style/R236_Object_265_II_HW26_3Dst"
+msgstr "日蚀"
+
+msgid "special_style/R236_Object_265_II_HW26_3Dst_desc/long"
+msgstr ""
+"代号\"日蚀\"的坦克是在异象中发现的，发现地点位于一处相位空间，靠近名为\"黑塔\"的实体废墟。该坦克随后被送往巴比伦研究中心，接受专家团队的全面调查与分析。\n"
+"\n"
+"该坦克配备了由超高密度銤元素供能的试验型宽频信号压制装置。现有资料表明，该装置由远征队工程师开发，旨在瘫痪黑塔的防御系统。根据现场痕迹判断，该坦克参加了在黑塔消灭巨型机械蜘蛛的最终决战，之后被遗弃。坦克的乘员很可能已搭乘马尔杜克号撤离，该舰随后深入异象继续远征。\n"
+"\n"
+"日蚀的设计非常成功: 该坦克坚固耐用，对各种恶劣环境具有出色的抵抗能力。调查结束后，军事委员会建议将该坦克重新投入服役。"
 
 msgid "special_style/R40_T-54_3Dst_HW20"
 msgstr "孔雀石"
@@ -30989,6 +31170,22 @@ msgstr "要塞"
 msgid "special_style/fort_desc"
 msgstr "一款全地形要塞风格，献给那些一起开拓、一起赢得胜利的军团。"
 
+msgid "special_style/fr26_style1"
+msgstr "信号猎人"
+
+msgid "special_style/fr26_style1_desc"
+msgstr "应用这款全地形战术风格，冲破杂波干扰。"
+
+msgid "special_style/fr26_style1_desc/long"
+msgstr ""
+"车长日志: \n"
+"\n"
+"\"播报信号的人肯定有不为人知的阴谋，我们的任务就是查出他的身份。目前，我们只截获到一段奇怪的无线电通讯，它被复杂的密码加密，并被分成了数段。发送者费尽心机想要隐藏...一些东西。而无论那是什么，肯定不是什么好消息。\n"
+"\n"
+"为了恢复信息，我们必须占领并守住中继天线，直到完整记录全部内容。可惜，不只有我们在寻找这些信息。一支敌对部队正在逼近，他们也试图得到这份战略情报。 \n"
+"\n"
+"不能让他们得逞。\""
+
 msgid "special_style/frontline_alliance"
 msgstr "西线"
 
@@ -31238,6 +31435,16 @@ msgid "special_style/girls_und_panzer_kabasan_desc/long"
 msgstr ""
 "没错！这支由历史爱好者组成的队伍久经沙场，利用深厚的作战知识，勇往直前，给对手以决定性的打击。她们自豪地展示着河马徽章，以摧枯拉朽的效率和无可挑剔的风格展开攻击，在任何战车道活动中都是不可小觑的对手。"
 
+msgid "special_style/girls_und_panzer_leopon"
+msgstr "豹狮"
+
+msgid "special_style/girls_und_panzer_leopon_desc"
+msgstr "一款以豹狮组可爱吉祥物为主题的全地形风格。"
+
+msgid "special_style/girls_und_panzer_leopon_desc/long"
+msgstr ""
+"豹狮组由大洗女子学园汽车部的机械爱好者组成，她们过去一直负责学园坦克的维护工作。豹狮组成员以悠闲随性的作风和标志性的橙色连体工作服而闻名。正如她们的吉祥物豹狮为自己的混血特质感到自豪——半狮半豹，却又自成一派——这些少女也将工程技术和战车道两种技艺融会贯通，展现出令人赞叹的实力。"
+
 msgid "special_style/girls_und_panzer_saunders"
 msgstr "桑德斯大学附属高中"
 
@@ -31247,6 +31454,17 @@ msgstr "一款全地形风格，具有出色学园——桑德斯大学附属高
 msgid "special_style/girls_und_panzer_saunders_desc/long"
 msgstr ""
 "富甲一方的桑德斯大学附属高中坐拥强大的M系坦克阵容。这所学园的战车道人员数量惊人，除了爱炫耀令人印象深刻的M4\"谢尔曼\"方阵以外，她们还喜欢举办奢华的派对——欣赏宾客们在海量快餐面前目瞪口呆的样子！不过可别把这些女孩的好客误当成软弱——她们的策略是以数量优势压制对手，而这往往需要精准炮术与老练的战术。"
+
+msgid "special_style/girls_und_panzer_team_leoponsan"
+msgstr "豹狮组"
+
+msgid "special_style/girls_und_panzer_team_leoponsan_desc"
+msgstr "一款全地形风格，具有精通机械的豹狮组的徽章。"
+
+msgid "special_style/girls_und_panzer_team_leoponsan_desc/long"
+msgstr ""
+"豹狮组由大洗女子学园汽车部的机械爱好者组成，她们过去一直负责学园坦克的维护工作。豹狮组成员以悠闲随性的作风和标志性的橙色连体工作服而闻名。豹狮组的全部四名少女都是天赋异禀的机械师，能将任何坦克恢复到最佳工作状态，即使在比赛途中，也能从容完成其\"虎\"(P)坦克的紧急维修。在为下一场战车道对决做准备的闲暇之余，豹狮组成员最喜欢摆弄经典汽车和参加漂移赛事，并共同追逐着一个梦想:"
+" 有朝一日登上大奖赛的赛场。"
 
 msgid "special_style/give_paw"
 msgstr "拍爪称赞"
@@ -31936,6 +32154,48 @@ msgstr "一款全地形风格，专为镇宅辟邪的门神而设计。"
 msgid "special_style/lunar_ny_2025_3_desc/long"
 msgstr ""
 "门神是守卫着千家万户大门的勇猛战将，是东方民间传说中的尊崇人物。他们气势威严、手持威武兵器，因其驱邪避灾的能力而备受敬仰。在春节庆祝活动期间，家家户户会将色彩鲜艳的门神画贴在门上，祈求驱除恶灵，保佑来年平安吉祥、福寿双全。"
+
+msgid "special_style/maneuvers_2026_1"
+msgstr "巨龟之壳"
+
+msgid "special_style/maneuvers_2026_1_desc"
+msgstr "应用这款坚毅的全地形风格，如远古守卫者般岿然不动。"
+
+msgid "special_style/maneuvers_2026_1_desc/long"
+msgstr ""
+"传说中，巨龟背负着整个世界，是永恒坚韧的象征。其层层甲壳能够抵御无休止的打击，每一道伤痕都为宏伟的神话画卷添上一笔。作为注定肩负重任的守护者，它始终坚守职责，从未退缩。"
+
+msgid "special_style/maneuvers_2026_2"
+msgstr "战牛之角"
+
+msgid "special_style/maneuvers_2026_2_desc"
+msgstr "应用这款惊天动地的全地形风格，以雷霆万钧之势冲破敌方阵线。"
+
+msgid "special_style/maneuvers_2026_2_desc/long"
+msgstr ""
+"冲锋中的巨兽锋芒毕露，势不可挡，面对抵抗发出震天咆哮。伴随着原始而狂野的怒吼，这头长角巨兽宛如雪崩降临，碾碎其前进道路上的一切，留下满目疮痍。即便战场重归沉寂，它所带来的震撼依旧久久回荡。"
+
+msgid "special_style/maneuvers_2026_3"
+msgstr "毒蝎之刺"
+
+msgid "special_style/maneuvers_2026_3_desc"
+msgstr "应用这款诡谲的全地形风格，于无声无息间发动攻击。"
+
+msgid "special_style/maneuvers_2026_3_desc/long"
+msgstr ""
+"沉默、冷静、精准致命。毒蝎的可怕之处不在于蛮力，而在于那蓄势待发的尾刺。剧毒沿着锋芒注入猎物体内，带来命运般无可抗拒的刺痛。潜藏于沙海之下的猎手静静等待...\n"
+"\n"
+"待到出击之时，胜负已见分晓。"
+
+msgid "special_style/maneuvers_2026_4"
+msgstr "幻蜥之幕"
+
+msgid "special_style/maneuvers_2026_4_desc"
+msgstr "应用这款隐秘的全地形风格，与周遭环境融为一体，再于无形之中发动攻击。"
+
+msgid "special_style/maneuvers_2026_4_desc/long"
+msgstr ""
+"变色龙精于伪装，善于应变。不断变化的它如同树皮上的苔藓般融入环境，即使近在眼前也难以察觉。对于这样的猎手而言，隐匿便是战斗的艺术。毕竟，最致命的武器，往往隐于无形之中。"
 
 msgid "special_style/manners"
 msgstr "人靠衣装"
@@ -34328,6 +34588,16 @@ msgstr "一款主题2D风格，专为纪念2025年在中国苏州举办的《坦
 msgid "special_style/wci2025_progressive_desc/long"
 msgstr ""
 "史诗般的战场对决看似与象棋的脑力竞技相距甚远，但指挥坦克需要同等的缜密精准。您如审视棋盘般勘察地形，追踪敌方动向以驾驶坦克占据最佳点位。恰似象棋大师调遣车马诱敌护帅，您的战术决策与火力运用同样决定战局走向。该风格通过3个独特等级的演变，完美诠释兵家之道。"
+
+msgid "special_style/wci2026_progressive"
+msgstr "凤凰崛起"
+
+msgid "special_style/wci2026_progressive_desc"
+msgstr "一款拥有三个等级的渐变风格: 凤凰图案从若隐若现的轮廓逐渐变为鲜明的线条，最终燃起熊熊烈焰。"
+
+msgid "special_style/wci2026_progressive_desc/long"
+msgstr ""
+"这款风格围绕赛事打造，通过三个不同等级展现凤凰的蜕变。最初，凤凰仅以若隐若现的轮廓浮现于装甲之上；随后，金色线条逐渐蔓延，令其形态愈发鲜明；最终，凤凰于金色与紫色的烈焰中绚丽绽放。每个等级都拥有独立且完整的外观表现，同时又共同构成一段连贯的演变历程。"
 
 msgid "special_style/wci_2024_1"
 msgstr "锲而不舍"

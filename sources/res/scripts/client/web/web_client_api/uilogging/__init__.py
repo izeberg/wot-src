@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from past.builtins import basestring
 from helpers import dependency
 from skeletons.ui_logging import IUILoggingCore
 from uilogging.constants import LogLevels

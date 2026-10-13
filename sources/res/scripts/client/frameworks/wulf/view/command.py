@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from Event import Event
 from ..py_object_binder import PyObjectEntity

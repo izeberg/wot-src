@@ -788,6 +788,12 @@
 				<output>onKill</output>
 			</connection>
 			<connection>
+				<from>Macro_2</from>
+				<input>input</input>
+				<to>If_13</to>
+				<output>PrebattleHighlightStart</output>
+			</connection>
+			<connection>
 				<from>GetVariable_2</from>
 				<input>value</input>
 				<to>If_13</to>
@@ -824,6 +830,12 @@
 				<output>event0</output>
 			</connection>
 			<connection>
+				<from>Timer_5</from>
+				<input>in</input>
+				<to>ComponentMethod_4</to>
+				<output>cancelOut</output>
+			</connection>
+			<connection>
 				<from>ContextGetSelf_1</from>
 				<input>gameObject</input>
 				<to>ComponentMethod_4</to>
@@ -846,6 +858,12 @@
 				<input>windup</input>
 				<to>Timer_5</to>
 				<output>out</output>
+			</connection>
+			<connection>
+				<from>Macro_2</from>
+				<input>cancel</input>
+				<to>Timer_5</to>
+				<output>PrebattleHighlightEnd</output>
 			</connection>
 			<connection>
 				<from>ComponentMethod_3</from>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<bind>
+		<avatarBone>Leg_01</avatarBone>
+		<skeletonBone>Leg_01</skeletonBone>
+	</bind>
+	<bind>
+		<avatarBone>hip</avatarBone>
+		<skeletonBone>hip</skeletonBone>
+	</bind>
+	<bind>
+		<avatarBone>toe1</avatarBone>
+		<skeletonBone>toe1</skeletonBone>
+	</bind>
+	<bind>
+		<avatarBone>toe2</avatarBone>
+		<skeletonBone>toe2</skeletonBone>
+	</bind>
+	<bind>
+		<avatarBone>toe3</avatarBone>
+		<skeletonBone>toe3</skeletonBone>
+	</bind>
+	<bind>
+		<avatarBone>toe4</avatarBone>
+		<skeletonBone>toe4</skeletonBone>
+	</bind>
+	<bind>
+		<avatarBone>foot</avatarBone>
+		<skeletonBone>foot</skeletonBone>
+	</bind>
+</root>

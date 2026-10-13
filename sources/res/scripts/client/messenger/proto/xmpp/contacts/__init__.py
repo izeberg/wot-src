@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from PlayerEvents import g_playerEvents
 from constants import IS_IGR_ENABLED, ARENA_GUI_TYPE, ARENA_GUI_TYPE_LABEL
 from helpers import dependency
@@ -564,7 +565,7 @@ class ContactsManager(ClientEventsHandler):
 
     def __addTasks(self, actionID, jid, shadowMode, *tasks):
         if shadowMode:
-            if all([ task.canShadowMode() for task in tasks ]):
+            if all(task.canShadowMode() for task in tasks):
                 for task in tasks[:-1]:
                     task.setShadowMode(actionID, False)
 

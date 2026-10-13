@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from SMSoundAbstractComponent import SMSoundAbstractComponent
 from SMSound3DObjectComponent import SMSound3DObjectComponent

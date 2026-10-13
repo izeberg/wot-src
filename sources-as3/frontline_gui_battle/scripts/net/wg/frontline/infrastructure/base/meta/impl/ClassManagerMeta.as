@@ -131,6 +131,26 @@ package net.wg.frontline.infrastructure.base.meta.impl
    import net.wg.frontline.gui.battle.views.upgradePanel.data.FrontlineConfiguratorModuleVO;
    import net.wg.frontline.gui.battle.views.upgradePanel.data.FrontlineModuleInfoVO;
    import net.wg.frontline.gui.battle.views.upgradePanel.data.FrontlineUpgradePanelVO;
+   import net.wg.frontline.infrastructure.base.meta.IBattleTankCarouselMeta;
+   import net.wg.frontline.infrastructure.base.meta.IFrontlineBattleConsumablesPanelMeta;
+   import net.wg.frontline.infrastructure.base.meta.IFrontlineBattlePageMeta;
+   import net.wg.frontline.infrastructure.base.meta.IFrontlineBattleStatisticDataControllerMeta;
+   import net.wg.frontline.infrastructure.base.meta.IFrontlineBattleTimerMeta;
+   import net.wg.frontline.infrastructure.base.meta.IFrontlineBattleUpgradePanelMeta;
+   import net.wg.frontline.infrastructure.base.meta.IFrontlineCarouselFilterPopoverMeta;
+   import net.wg.frontline.infrastructure.base.meta.IFrontlineDamagePanelMeta;
+   import net.wg.frontline.infrastructure.base.meta.IFrontlineDeploymentMapMeta;
+   import net.wg.frontline.infrastructure.base.meta.IFrontlineFullStatsMeta;
+   import net.wg.frontline.infrastructure.base.meta.IFrontlineInGameRankMeta;
+   import net.wg.frontline.infrastructure.base.meta.IFrontlineMinimapMeta;
+   import net.wg.frontline.infrastructure.base.meta.IFrontlineMissionsPanelMeta;
+   import net.wg.frontline.infrastructure.base.meta.IFrontlineModificationPanelMeta;
+   import net.wg.frontline.infrastructure.base.meta.IFrontlineOverviewMapScreenMeta;
+   import net.wg.frontline.infrastructure.base.meta.IFrontlinePlatoonPanelMeta;
+   import net.wg.frontline.infrastructure.base.meta.IFrontlineReinforcementPanelMeta;
+   import net.wg.frontline.infrastructure.base.meta.IFrontlineRespawnViewMeta;
+   import net.wg.frontline.infrastructure.base.meta.IFrontlineScorePanelMeta;
+   import net.wg.frontline.infrastructure.base.meta.IRecoveryPanelMeta;
    import net.wg.frontline.infrastructure.helpers.statisticsDataController.FrontlineBattleStatisticDataController;
    import net.wg.frontline.infrastructure.helpers.statisticsDataController.interfaces.IFrontlineBattleStatisticDataController;
    
@@ -398,6 +418,94 @@ package net.wg.frontline.infrastructure.base.meta.impl
       public static const NET_WG_FRONTLINE_GUI_BATTLE_VO_DAAPI_FRONTLINEVEHICLESSTATSVO:Class = FrontlineVehiclesStatsVO;
       
       public static const NET_WG_FRONTLINE_GUI_BATTLE_VO_DAAPI_FRONTLINEVEHICLESTATSVO:Class = FrontlineVehicleStatsVO;
+      
+      public static const NET_WG_FRONTLINE_INFRASTRUCTURE_BASE_META_IBATTLETANKCAROUSELMETA:Class = IBattleTankCarouselMeta;
+      
+      public static const NET_WG_FRONTLINE_INFRASTRUCTURE_BASE_META_IFRONTLINEBATTLECONSUMABLESPANELMETA:Class = IFrontlineBattleConsumablesPanelMeta;
+      
+      public static const NET_WG_FRONTLINE_INFRASTRUCTURE_BASE_META_IFRONTLINEBATTLEPAGEMETA:Class = IFrontlineBattlePageMeta;
+      
+      public static const NET_WG_FRONTLINE_INFRASTRUCTURE_BASE_META_IFRONTLINEBATTLESTATISTICDATACONTROLLERMETA:Class = IFrontlineBattleStatisticDataControllerMeta;
+      
+      public static const NET_WG_FRONTLINE_INFRASTRUCTURE_BASE_META_IFRONTLINEBATTLETIMERMETA:Class = IFrontlineBattleTimerMeta;
+      
+      public static const NET_WG_FRONTLINE_INFRASTRUCTURE_BASE_META_IFRONTLINEBATTLEUPGRADEPANELMETA:Class = IFrontlineBattleUpgradePanelMeta;
+      
+      public static const NET_WG_FRONTLINE_INFRASTRUCTURE_BASE_META_IFRONTLINECAROUSELFILTERPOPOVERMETA:Class = IFrontlineCarouselFilterPopoverMeta;
+      
+      public static const NET_WG_FRONTLINE_INFRASTRUCTURE_BASE_META_IFRONTLINEDAMAGEPANELMETA:Class = IFrontlineDamagePanelMeta;
+      
+      public static const NET_WG_FRONTLINE_INFRASTRUCTURE_BASE_META_IFRONTLINEDEPLOYMENTMAPMETA:Class = IFrontlineDeploymentMapMeta;
+      
+      public static const NET_WG_FRONTLINE_INFRASTRUCTURE_BASE_META_IFRONTLINEFULLSTATSMETA:Class = IFrontlineFullStatsMeta;
+      
+      public static const NET_WG_FRONTLINE_INFRASTRUCTURE_BASE_META_IFRONTLINEINGAMERANKMETA:Class = IFrontlineInGameRankMeta;
+      
+      public static const NET_WG_FRONTLINE_INFRASTRUCTURE_BASE_META_IFRONTLINEMINIMAPMETA:Class = IFrontlineMinimapMeta;
+      
+      public static const NET_WG_FRONTLINE_INFRASTRUCTURE_BASE_META_IFRONTLINEMISSIONSPANELMETA:Class = IFrontlineMissionsPanelMeta;
+      
+      public static const NET_WG_FRONTLINE_INFRASTRUCTURE_BASE_META_IFRONTLINEMODIFICATIONPANELMETA:Class = IFrontlineModificationPanelMeta;
+      
+      public static const NET_WG_FRONTLINE_INFRASTRUCTURE_BASE_META_IFRONTLINEOVERVIEWMAPSCREENMETA:Class = IFrontlineOverviewMapScreenMeta;
+      
+      public static const NET_WG_FRONTLINE_INFRASTRUCTURE_BASE_META_IFRONTLINEPLATOONPANELMETA:Class = IFrontlinePlatoonPanelMeta;
+      
+      public static const NET_WG_FRONTLINE_INFRASTRUCTURE_BASE_META_IFRONTLINEREINFORCEMENTPANELMETA:Class = IFrontlineReinforcementPanelMeta;
+      
+      public static const NET_WG_FRONTLINE_INFRASTRUCTURE_BASE_META_IFRONTLINERESPAWNVIEWMETA:Class = IFrontlineRespawnViewMeta;
+      
+      public static const NET_WG_FRONTLINE_INFRASTRUCTURE_BASE_META_IFRONTLINESCOREPANELMETA:Class = IFrontlineScorePanelMeta;
+      
+      public static const NET_WG_FRONTLINE_INFRASTRUCTURE_BASE_META_IRECOVERYPANELMETA:Class = IRecoveryPanelMeta;
+      
+      public static const NET_WG_FRONTLINE_INFRASTRUCTURE_BASE_META_IMPL_BATTLETANKCAROUSELMETA:Class = BattleTankCarouselMeta;
+      
+      public static const NET_WG_FRONTLINE_INFRASTRUCTURE_BASE_META_IMPL_CLASSMANAGEREXTENSIONBATTLEDAMAGEINDICATORMETA:Class = ClassManagerExtensionBattleDamageIndicatorMeta;
+      
+      public static const NET_WG_FRONTLINE_INFRASTRUCTURE_BASE_META_IMPL_CLASSMANAGEREXTENSIONBATTLEDIRECTIONINDICATORMETA:Class = ClassManagerExtensionBattleDirectionIndicatorMeta;
+      
+      public static const NET_WG_FRONTLINE_INFRASTRUCTURE_BASE_META_IMPL_CLASSMANAGEREXTENSIONBATTLEMARKERSMETA:Class = ClassManagerExtensionBattleMarkersMeta;
+      
+      public static const NET_WG_FRONTLINE_INFRASTRUCTURE_BASE_META_IMPL_CLASSMANAGEREXTENSIONCROSSHAIRSMETA:Class = ClassManagerExtensionCrosshairsMeta;
+      
+      public static const NET_WG_FRONTLINE_INFRASTRUCTURE_BASE_META_IMPL_FRONTLINEBATTLECONSUMABLESPANELMETA:Class = FrontlineBattleConsumablesPanelMeta;
+      
+      public static const NET_WG_FRONTLINE_INFRASTRUCTURE_BASE_META_IMPL_FRONTLINEBATTLEPAGEMETA:Class = FrontlineBattlePageMeta;
+      
+      public static const NET_WG_FRONTLINE_INFRASTRUCTURE_BASE_META_IMPL_FRONTLINEBATTLESTATISTICDATACONTROLLERMETA:Class = FrontlineBattleStatisticDataControllerMeta;
+      
+      public static const NET_WG_FRONTLINE_INFRASTRUCTURE_BASE_META_IMPL_FRONTLINEBATTLETIMERMETA:Class = FrontlineBattleTimerMeta;
+      
+      public static const NET_WG_FRONTLINE_INFRASTRUCTURE_BASE_META_IMPL_FRONTLINEBATTLEUPGRADEPANELMETA:Class = FrontlineBattleUpgradePanelMeta;
+      
+      public static const NET_WG_FRONTLINE_INFRASTRUCTURE_BASE_META_IMPL_FRONTLINECAROUSELFILTERPOPOVERMETA:Class = FrontlineCarouselFilterPopoverMeta;
+      
+      public static const NET_WG_FRONTLINE_INFRASTRUCTURE_BASE_META_IMPL_FRONTLINEDAMAGEPANELMETA:Class = FrontlineDamagePanelMeta;
+      
+      public static const NET_WG_FRONTLINE_INFRASTRUCTURE_BASE_META_IMPL_FRONTLINEDEPLOYMENTMAPMETA:Class = FrontlineDeploymentMapMeta;
+      
+      public static const NET_WG_FRONTLINE_INFRASTRUCTURE_BASE_META_IMPL_FRONTLINEFULLSTATSMETA:Class = FrontlineFullStatsMeta;
+      
+      public static const NET_WG_FRONTLINE_INFRASTRUCTURE_BASE_META_IMPL_FRONTLINEINGAMERANKMETA:Class = FrontlineInGameRankMeta;
+      
+      public static const NET_WG_FRONTLINE_INFRASTRUCTURE_BASE_META_IMPL_FRONTLINEMINIMAPMETA:Class = FrontlineMinimapMeta;
+      
+      public static const NET_WG_FRONTLINE_INFRASTRUCTURE_BASE_META_IMPL_FRONTLINEMISSIONSPANELMETA:Class = FrontlineMissionsPanelMeta;
+      
+      public static const NET_WG_FRONTLINE_INFRASTRUCTURE_BASE_META_IMPL_FRONTLINEMODIFICATIONPANELMETA:Class = FrontlineModificationPanelMeta;
+      
+      public static const NET_WG_FRONTLINE_INFRASTRUCTURE_BASE_META_IMPL_FRONTLINEOVERVIEWMAPSCREENMETA:Class = FrontlineOverviewMapScreenMeta;
+      
+      public static const NET_WG_FRONTLINE_INFRASTRUCTURE_BASE_META_IMPL_FRONTLINEPLATOONPANELMETA:Class = FrontlinePlatoonPanelMeta;
+      
+      public static const NET_WG_FRONTLINE_INFRASTRUCTURE_BASE_META_IMPL_FRONTLINEREINFORCEMENTPANELMETA:Class = FrontlineReinforcementPanelMeta;
+      
+      public static const NET_WG_FRONTLINE_INFRASTRUCTURE_BASE_META_IMPL_FRONTLINERESPAWNVIEWMETA:Class = FrontlineRespawnViewMeta;
+      
+      public static const NET_WG_FRONTLINE_INFRASTRUCTURE_BASE_META_IMPL_FRONTLINESCOREPANELMETA:Class = FrontlineScorePanelMeta;
+      
+      public static const NET_WG_FRONTLINE_INFRASTRUCTURE_BASE_META_IMPL_RECOVERYPANELMETA:Class = RecoveryPanelMeta;
       
       public static const NET_WG_FRONTLINE_INFRASTRUCTURE_HELPERS_STATISTICSDATACONTROLLER_FRONTLINEBATTLESTATISTICDATACONTROLLER:Class = FrontlineBattleStatisticDataController;
       

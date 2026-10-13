@@ -1,6 +1,7 @@
+from __future__ import absolute_import
 import datetime, BigWorld
-from constants import ACCOUNT_ATTR
 from account_helpers.AccountSettings import AccountSettings
+from constants import ACCOUNT_ATTR
 from shared_utils.account_helpers import BattleResultsCache
 from shared_utils.account_helpers import ClientInvitations
 

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<CellMethods/>
+	<Properties>
+		<state>
+			<Type>INT8</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</state>
+	</Properties>
+	<ofEntity>
+		<Entity/>
+	</ofEntity>
+	<DefaultKeyName>FortRushCapturePointStateMachineComponent</DefaultKeyName>
+</root>

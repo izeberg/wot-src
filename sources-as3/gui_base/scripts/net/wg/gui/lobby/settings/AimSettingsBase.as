@@ -122,6 +122,7 @@ package net.wg.gui.lobby.settings
          this.armorFlashlightForm = null;
          this.armorFlashlight.dispose();
          this.armorFlashlight = null;
+         this.bg = null;
          super.onDispose();
       }
    }

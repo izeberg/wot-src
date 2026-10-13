@@ -3,7 +3,7 @@
 	<tank>true</tank>
 	<parent>vehicles/russian/R236_Object_265_II/crash/lod4/Hull</parent>
 	<extent>192.000000</extent>
-	<nodelessVisual>vehicles/russian/R236_Object_265_II/crash/lod3/Hull</nodelessVisual>
+	<nodefullVisual>vehicles/russian/R236_Object_265_II/crash/lod3/Hull</nodefullVisual>
 	<visibilityBox>
 		<min>-1.732030 -0.842602 -3.668478</min>
 		<max>1.705661 0.759534 3.581151</max>

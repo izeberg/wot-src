@@ -427,6 +427,14 @@
 				</params>
 			</block>
 			<block>
+				<class>If</class>
+				<id>If_32</id>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_41</id>
+			</block>
+			<block>
 				<class>SetVariable</class>
 				<id>SetVariable_13</id>
 				<buddy>Variable_2</buddy>
@@ -445,10 +453,6 @@
 				</slots>
 			</block>
 			<block>
-				<class>If</class>
-				<id>If_32</id>
-			</block>
-			<block>
 				<class>SetVariable</class>
 				<id>SetVariable_11</id>
 				<buddy>Variable_2</buddy>
@@ -459,6 +463,20 @@
 						<type>TypeT</type>
 					</param>
 				</params>
+			</block>
+			<block>
+				<class>OnAnyVehicleDamaged</class>
+				<id>OnAnyVehicleDamaged_2</id>
+				<slots>
+					<slot>
+						<name>active</name>
+						<const>\true\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>IsVehicleValid</class>
+				<id>IsVehicleValid_1</id>
 			</block>
 			<block>
 				<class>Sequence</class>
@@ -478,16 +496,6 @@
 					<slot>
 						<name>start</name>
 						<const>\0\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>OnAnyVehicleDamaged</class>
-				<id>OnAnyVehicleDamaged_2</id>
-				<slots>
-					<slot>
-						<name>active</name>
-						<const>\true\</const>
 					</slot>
 				</slots>
 			</block>
@@ -531,10 +539,6 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-			</block>
-			<block>
-				<class>CompareVehicles</class>
-				<id>CompareVehicles_9</id>
 			</block>
 			<block>
 				<class>SubtractInteger</class>
@@ -621,6 +625,10 @@
 				</slots>
 			</block>
 			<block>
+				<class>CompareVehicles</class>
+				<id>CompareVehicles_9</id>
+			</block>
+			<block>
 				<class>GetVehicleHealth</class>
 				<id>GetVehicleHealth_1</id>
 			</block>
@@ -687,6 +695,32 @@
 			<block>
 				<class>GetVehicleGameObject</class>
 				<id>GetVehicleGameObject_1</id>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_43</id>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_44</id>
+			</block>
+			<block>
+				<class>OnAnyVehicleRespawned</class>
+				<id>OnAnyVehicleRespawned_1</id>
+				<slots>
+					<slot>
+						<name>active</name>
+						<const>\true\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>IsVehicleValid</class>
+				<id>IsVehicleValid_3</id>
+			</block>
+			<block>
+				<class>CompareVehicles</class>
+				<id>CompareVehicles_14</id>
 			</block>
 			<block>
 				<class>IsPlayerVehicle</class>
@@ -767,6 +801,10 @@
 			</block>
 			<block>
 				<class>If</class>
+				<id>If_42</id>
+			</block>
+			<block>
+				<class>If</class>
 				<id>If_37</id>
 			</block>
 			<block>
@@ -795,6 +833,10 @@
 						<const>\true\</const>
 					</slot>
 				</slots>
+			</block>
+			<block>
+				<class>IsVehicleValid</class>
+				<id>IsVehicleValid_2</id>
 			</block>
 			<block>
 				<class>GetVariable</class>
@@ -1061,22 +1103,46 @@
 				<output>out</output>
 			</connection>
 			<connection>
-				<from>Sequence_1</from>
-				<input>input</input>
-				<to>SetVariable_13</to>
-				<output>o1</output>
-			</connection>
-			<connection>
-				<from>OnAnyVehicleDamaged_2</from>
+				<from>If_41</from>
 				<input>input</input>
 				<to>If_32</to>
-				<output>onDamaged</output>
+				<output>true</output>
 			</connection>
 			<connection>
 				<from>CompareVehicles_9</from>
 				<input>value</input>
 				<to>If_32</to>
 				<output>res</output>
+			</connection>
+			<connection>
+				<from>OnAnyVehicleDamaged_2</from>
+				<input>input</input>
+				<to>If_41</to>
+				<output>onDamaged</output>
+			</connection>
+			<connection>
+				<from>IsVehicleValid_1</from>
+				<input>value</input>
+				<to>If_41</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>Sequence_1</from>
+				<input>input</input>
+				<to>SetVariable_13</to>
+				<output>o1</output>
+			</connection>
+			<connection>
+				<from>If_44</from>
+				<input>input</input>
+				<to>SetVariable_13</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>GetComponentProperty_1</from>
+				<input>input</input>
+				<to>SetVariable_13</to>
+				<output>out</output>
 			</connection>
 			<connection>
 				<from>For_1</from>
@@ -1089,6 +1155,12 @@
 				<input>value</input>
 				<to>SetVariable_11</to>
 				<output>res</output>
+			</connection>
+			<connection>
+				<from>OnAnyVehicleDamaged_2</from>
+				<input>vehicle</input>
+				<to>IsVehicleValid_1</to>
+				<output>target</output>
 			</connection>
 			<connection>
 				<from>If_32</from>
@@ -1139,18 +1211,6 @@
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>OnAnyVehicleDamaged_2</from>
-				<input>a</input>
-				<to>CompareVehicles_9</to>
-				<output>target</output>
-			</connection>
-			<connection>
-				<from>GameObjectToVehicle_2</from>
-				<input>b</input>
-				<to>CompareVehicles_9</to>
-				<output>vehicle</output>
-			</connection>
-			<connection>
 				<from>StringLength_1</from>
 				<input>b</input>
 				<to>SubtractInteger_1</to>
@@ -1179,6 +1239,18 @@
 				<input>i1</input>
 				<to>Concatenate_8</to>
 				<output>res</output>
+			</connection>
+			<connection>
+				<from>OnAnyVehicleDamaged_2</from>
+				<input>a</input>
+				<to>CompareVehicles_9</to>
+				<output>target</output>
+			</connection>
+			<connection>
+				<from>GameObjectToVehicle_2</from>
+				<input>b</input>
+				<to>CompareVehicles_9</to>
+				<output>vehicle</output>
 			</connection>
 			<connection>
 				<from>GameObjectToVehicle_2</from>
@@ -1239,6 +1311,48 @@
 				<input>gameObject</input>
 				<to>GetVehicleGameObject_1</to>
 				<output>value</output>
+			</connection>
+			<connection>
+				<from>OnAnyVehicleRespawned_1</from>
+				<input>input</input>
+				<to>If_43</to>
+				<output>onRespawn</output>
+			</connection>
+			<connection>
+				<from>IsVehicleValid_3</from>
+				<input>value</input>
+				<to>If_43</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>If_43</from>
+				<input>input</input>
+				<to>If_44</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>CompareVehicles_14</from>
+				<input>value</input>
+				<to>If_44</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>OnAnyVehicleRespawned_1</from>
+				<input>vehicle</input>
+				<to>IsVehicleValid_3</to>
+				<output>vehicle</output>
+			</connection>
+			<connection>
+				<from>OnAnyVehicleRespawned_1</from>
+				<input>a</input>
+				<to>CompareVehicles_14</to>
+				<output>vehicle</output>
+			</connection>
+			<connection>
+				<from>GameObjectToVehicle_2</from>
+				<input>b</input>
+				<to>CompareVehicles_14</to>
+				<output>vehicle</output>
 			</connection>
 			<connection>
 				<from>GameObjectToVehicle_2</from>
@@ -1339,8 +1453,20 @@
 			<connection>
 				<from>OnAnyVehicleDamaged_3</from>
 				<input>input</input>
-				<to>If_37</to>
+				<to>If_42</to>
 				<output>onDamaged</output>
+			</connection>
+			<connection>
+				<from>IsVehicleValid_2</from>
+				<input>value</input>
+				<to>If_42</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>If_42</from>
+				<input>input</input>
+				<to>If_37</to>
+				<output>true</output>
 			</connection>
 			<connection>
 				<from>CompareVehicles_13</from>
@@ -1359,6 +1485,12 @@
 				<input>windup</input>
 				<to>Timer_1</to>
 				<output>out</output>
+			</connection>
+			<connection>
+				<from>OnAnyVehicleDamaged_3</from>
+				<input>vehicle</input>
+				<to>IsVehicleValid_2</to>
+				<output>attacker</output>
 			</connection>
 			<connection>
 				<from>OnAnyVehicleDamaged_3</from>

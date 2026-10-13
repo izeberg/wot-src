@@ -1,0 +1,253 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-19 10:00+0100\n"
+"PO-Revision-Date: 2026-03-19 10:00+0100\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+
+msgid "bannerTooltip/allStagesAreCompleted"
+msgstr "已完成所有数据块！"
+
+msgid "bannerTooltip/dataBlock"
+msgstr "数据块{{level}}"
+
+msgid "bannerTooltip/description"
+msgstr "控制天线，守住网络连接，保障传输完成。"
+
+msgid "bannerTooltip/expiryDate/timerText"
+msgstr "模式剩余开放"
+
+msgid "bannerTooltip/header"
+msgstr "绝密信号"
+
+msgid "bannerTooltip/mode"
+msgstr "模式"
+
+msgid "bannerTooltip/modeHint"
+msgstr "—— 正在切换至其他游戏模式"
+
+msgid "bannerTooltip/performanceRisk/text/highRisk"
+msgstr "您的计算机性能不足以运行此模式。您可能会遇到图形和坦克移动方面的问题。游戏客户端也有可能崩溃。"
+
+msgid "bannerTooltip/performanceRisk/text/lowRisk"
+msgstr "如果计算机性能不足，请在设置中尝试降低图形质量。"
+
+msgid "bannerTooltip/performanceRisk/text/mediumRisk"
+msgstr "该模式需要较高的计算机性能。您可能会遇到地图加载、图形和坦克移动方面的问题。如果性能不足，请在设置中尝试较低的图形质量。"
+
+msgid "bannerTooltip/performanceRisk/title/highRisk"
+msgstr "低性能"
+
+msgid "bannerTooltip/performanceRisk/title/lowRisk"
+msgstr "该模式对计算机的要求较高"
+
+msgid "bannerTooltip/performanceRisk/title/mediumRisk"
+msgstr "性能降低"
+
+msgid "battleEfficiency/baseHeal"
+msgstr "恢复生命值"
+
+msgid "battleEfficiency/personalPoints"
+msgstr "行动得分"
+
+msgid "battleLoading/description"
+msgstr "控制天线，守住网络连接，保障传输完成。"
+
+msgid "battleLoading/header"
+msgstr "绝密信号"
+
+msgid "battleLoading/tips/tip01/description"
+msgstr "占领天线可以为您的坦克恢复少量生命值。利用此机制守住阵地，并为反击做好准备。"
+
+msgid "battleLoading/tips/tip01/title"
+msgstr "占领与恢复"
+
+msgid "battleLoading/tips/tip02/description"
+msgstr "占领区域内有敌方坦克时，天线无法被占领。消灭占领区域中的所有敌方坦克后，才能继续占领任务目标。"
+
+msgid "battleLoading/tips/tip02/title"
+msgstr "占领干扰"
+
+msgid "battleLoading/tips/tip03/description"
+msgstr "重新部署后，您的坦克将在10秒内免疫损伤。利用这段时间重返战场或寻找掩体。"
+
+msgid "battleLoading/tips/tip03/title"
+msgstr "重新部署保护"
+
+msgid "battleQueue/title"
+msgstr "绝密信号"
+
+msgid "capturingIndicator/captured"
+msgstr "已占领天线"
+
+msgid "capturingIndicator/capturing"
+msgstr "正在占领天线"
+
+msgid "capturingIndicator/contesting"
+msgstr "天线占领被干扰"
+
+msgid "capturingIndicator/neutralizing"
+msgstr "正在夺控天线"
+
+msgid "endGame/reason/210"
+msgstr "双方团队已达到信号点数上限"
+
+msgid "endGame/reason/3"
+msgstr "战斗时间结束"
+
+msgid "endGame/reason/6/lose"
+msgstr "敌方已达到信号点数上限"
+
+msgid "endGame/reason/6/win"
+msgstr "我方团队已达到信号点数上限"
+
+msgid "endGame/reason/7"
+msgstr "战斗时间结束"
+
+msgid "notifications/progression/header"
+msgstr "恭喜!"
+
+msgid "notifications/progression/openBtnLabel"
+msgstr "详情"
+
+msgid "notifications/progression/stageAchieved"
+msgstr "完成进度阶段%(stageIdx)s的奖励: %(rewards)s"
+
+msgid "progression/completedDescription"
+msgstr "已完成所有数据块。"
+
+msgid "progression/completedTitle"
+msgstr "已完成进度！"
+
+msgid "progression/dailyMissions/timerLabel"
+msgstr "剩余时间:"
+
+msgid "progression/dailyMissions/title"
+msgstr "战场指令"
+
+msgid "progression/description"
+msgstr "在绝密信号战斗中完成每日任务，以推动进度。"
+
+msgid "progression/info_button/body"
+msgstr "点击查看更多信息"
+
+msgid "progression/info_button/header"
+msgstr "关于绝密信号"
+
+msgid "progression/widget/stageLabel"
+msgstr "数据块%(stage)s"
+
+msgid "progression/widget/stageProgress"
+msgstr "%(current)s/%(total)s"
+
+msgid "progression/widget/tooltip/allStagesCompleted"
+msgstr "您已完成所有数据块！"
+
+msgid "progression/widget/tooltip/completedLabel"
+msgstr "已完成"
+
+msgid "progression/widget/tooltip/rewardsHeader"
+msgstr "数据块奖励"
+
+msgid "progression/widget/tooltip/subtitle"
+msgstr "当前数据块"
+
+msgid "progression/widget/tooltip/timerLabel"
+msgstr "距每日任务重置还有:"
+
+msgid "progression/widget/tooltip/title"
+msgstr "绝密信号"
+
+msgid "progression/widget/tooltip/titleSubtitle"
+msgstr "当前进度"
+
+msgid "progression/widget/tooltip/unavailable"
+msgstr "进度系统暂不可用。"
+
+msgid "progression/widget/unavailable"
+msgstr "进度系统不可用"
+
+msgid "progressionView/stateHeader"
+msgstr "绝密信号进度"
+
+msgid "quitBattle/leaver/cancel"
+msgstr "取消"
+
+msgid "quitBattle/leaver/descriptionAlive"
+msgstr "您的团队仍然需要您！中途离场会让盟友处于不利地位，而且您将无法获得任何奖励或推动任何任务进度。"
+
+msgid "quitBattle/leaver/submit"
+msgstr "离开"
+
+msgid "quitBattle/leaver/title"
+msgstr "您将离开战斗"
+
+msgid "respawnTimer/description"
+msgstr "更换部署位置可以为您带来战略优势。"
+
+msgid "respawnTimer/title"
+msgstr "部署倒计时:"
+
+msgid "rewardScreen/button"
+msgstr "收到!"
+
+msgid "rewardScreen/title"
+msgstr "已解锁数据块奖励"
+
+msgid "timersPanel/invulnerable"
+msgstr "无敌"
+
+msgid "tooltips/eventPoints/body"
+msgstr ""
+"获取数据包以完成数据块，并获得包括一个主要奖励在内的珍贵游戏资源。可通过对敌方坦克造成损伤、击毁敌方坦克、占领天线，以及完成每日任务来获取数据包。"
+
+msgid "tooltips/eventPoints/header"
+msgstr "数据包"
+
+msgid "vehicleSelector/allVehicles"
+msgstr "全部坦克"
+
+msgid "vehicleSelector/noVehiclesAction"
+msgstr "重置筛选"
+
+msgid "vehicleSelector/noVehiclesDescription"
+msgstr "重置筛选以查看可用坦克。"
+
+msgid "vehicleSelector/noVehiclesInPlaylistTooltipBody"
+msgstr "列表中不包含任何适合该模式的坦克。"
+
+msgid "vehicleSelector/noVehiclesInPlaylistTooltipHeading"
+msgstr "没有满足要求的坦克"
+
+msgid "vehicleSelector/noVehiclesTitle"
+msgstr "未找到符合要求的坦克"
+
+msgid "welcomeScreen/button"
+msgstr "继续"
+
+msgid "welcomeScreen/description1"
+msgstr "您是一支装甲特遣队的成员，奉命夺取并守住冲突区域中的一个秘密网络。不惜一切代价确保对该网络的控制权。"
+
+msgid "welcomeScreen/description2"
+msgstr "有人费尽心机隐藏了这份情报。完成任务以找回加密的片段。"
+
+msgid "welcomeScreen/description3"
+msgstr "完成数据块，即可获得活动任务提供的珍贵奖励。"
+
+msgid "welcomeScreen/header1"
+msgstr "夺取天线"
+
+msgid "welcomeScreen/header2"
+msgstr "破译信号"
+
+msgid "welcomeScreen/header3"
+msgstr "进度和奖励"
+
+msgid "welcomeScreen/title"
+msgstr "绝密信号"

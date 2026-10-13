@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from typing import TYPE_CHECKING
 from advanced_achievements_client.getters import getAchievementByID
 from helpers import dependency

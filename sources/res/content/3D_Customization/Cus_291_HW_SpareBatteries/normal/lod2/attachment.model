@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_291_HW_SpareBatteries/normal/lod3/attachment</parent>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.542008 0.006115 -0.727315</min>
+		<max>0.015591 0.401014 0.734054</max>
+	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/Cus_291_HW_SpareBatteries/normal/lod2/attachment</nodefullVisual>
+</root>

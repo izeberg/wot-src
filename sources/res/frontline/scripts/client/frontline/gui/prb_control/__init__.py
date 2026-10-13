@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from frontline.gui.prb_control.entities.epic.pre_queue import entity as fl_entity
 from frontline.gui.prb_control.entities.epic.squad import entity as fl_squad_entity
 from frontline.gui.prb_control.entities.epic_battle_training import entity as fl_training_entity

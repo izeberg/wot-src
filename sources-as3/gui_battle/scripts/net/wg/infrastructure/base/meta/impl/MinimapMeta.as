@@ -1,9 +1,9 @@
 package net.wg.infrastructure.base.meta.impl
 {
    import net.wg.data.constants.Errors;
-   import net.wg.gui.battle.components.BattleDisplayable;
+   import net.wg.gui.battle.components.BattleLayoutComponent;
    
-   public class MinimapMeta extends BattleDisplayable
+   public class MinimapMeta extends BattleLayoutComponent
    {
        
       

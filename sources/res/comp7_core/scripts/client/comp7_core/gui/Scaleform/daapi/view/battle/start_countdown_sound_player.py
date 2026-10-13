@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from constants import VEHICLE_SELECTION_BLOCK_DELAY
 from gui.Scaleform.daapi.view.battle.shared.start_countdown_sound_player import StartCountdownSoundPlayer
 from gui.battle_control.battle_constants import COUNTDOWN_STATE

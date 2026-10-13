@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, traceback, sys, ResMgr
 
 def formatException(excType, excValue, excTraceback):

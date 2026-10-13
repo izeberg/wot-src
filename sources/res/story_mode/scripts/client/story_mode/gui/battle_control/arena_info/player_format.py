@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.battle_control.arena_info import player_format
 from gui.battle_control.arena_info.player_format import PlayerFormatResult
 from helpers import i18n

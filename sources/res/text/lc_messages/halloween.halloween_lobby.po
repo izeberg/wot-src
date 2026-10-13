@@ -1,0 +1,1351 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-12 10:00+0300\n"
+"PO-Revision-Date: 2023-01-12 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "abilitiesIncomplete/title"
+msgstr "战斗能力不完整"
+
+msgid "abilitiesIncomplete/toAbilities"
+msgstr "前往能力"
+
+msgid "abilitiesIncomplete/toBattle"
+msgstr "加入战斗"
+
+msgid "abilitiesIncomplete/warning"
+msgstr "所选坦克缺少一个或多个战斗能力。这可能会严重影响您的战斗表现。仍然要加入战斗吗？"
+
+msgid "ammoSetup/changeHotKey/body"
+msgstr ""
+"您可自定义战斗能力和炮弹的默认活动热键设置。\n"
+"此更改仅适用于活动战斗，不会影响其他任何模式。\n"
+"您仍可在菜单—游戏设置—控制(给养版块)中修改各个热键。"
+
+msgid "ammoSetup/changeHotKey/header"
+msgstr "更改给养热键设置"
+
+msgid "anomaliesView/description_1"
+msgstr ""
+"这些是战斗中的乘员加成。在{{@ style (color #EEEDE9B2) (bold)}}困难{{/}}和{{@ style (color "
+"#EEEDE9B2) (bold)}}梦魇{{/}}难度的战斗中，可以选择异化剂并通过将其组合来解锁终极{{@ style (color "
+"#C293FFCC) (bold)}}余响异化剂{{/}}。"
+
+msgid "anomaliesView/description_2"
+msgstr ""
+"该指南界面会显示您在之前的战斗中所获得的异化剂，以及尚未发现的异化剂。在战斗中{{@ style (color #EEEDE9B2) "
+"(bold)}}按下N键{{/}}(默认键位)即可开启异化剂菜单。"
+
+msgid "anomaliesView/header"
+msgstr "异化剂"
+
+msgid "anomaliesView/quote_1/author"
+msgstr ""
+"——66号目标: 沉默者\n"
+"据说他从未被派往远征。然而也有人曾在异象中见过他的身影。他默默留下新的笔记，随后悄然离去。"
+
+msgid "anomaliesView/quote_1/message"
+msgstr "愿銤元素与你同在。"
+
+msgid "anomaliesView/quote_2/author"
+msgstr ""
+"—6号目标，魔笛手\n"
+"一名从远征归来的工程师，他建造了碎波者。有人说銤元素改变了他。也有人说，他一直都是这样。"
+
+msgid "anomaliesView/quote_2/message"
+msgstr ""
+"您听到了吗？\n"
+"那是銤元素的呼唤。"
+
+msgid "anomaliesView/quote_3/author"
+msgstr ""
+"—12号目标: \"喜鹊\"\n"
+"一名早期远征队的实验室助手，被列为失踪人员。但她回来了。只是回来的地点不对，时间不对，人也不再是当初的那个她了。"
+
+msgid "anomaliesView/quote_3/message"
+msgstr "无论您离开异象多少次，它都会将您再次拉回来。"
+
+msgid "anomaliesView/title"
+msgstr "异化剂组合"
+
+msgid "badgeWidget/tooltipBody"
+msgstr "完成当前任务即可获得独特的\"巴比伦:荣耀征途\"奖章:"
+
+msgid "badgeWidget/tooltipHeader"
+msgstr "史诗成就任务"
+
+msgid "bestiaryView/carousel/card/new"
+msgstr "新"
+
+msgid "bestiaryView/carousel/card/state/locked"
+msgstr "未解锁"
+
+msgid "bestiaryView/carousel/card/tooltip/locked/body"
+msgstr "完成目标{number}即可解锁敌人的档案。"
+
+msgid "bestiaryView/carousel/card/tooltip/style/body"
+msgstr "从活动商店获取巴比伦主题的扭曲3D风格，在标准模式中以余响坦克主题的个性化元素震慑敌人。"
+
+msgid "bestiaryView/info/about/czech_Cz34_Vz_71_Tesak_HW_BOT"
+msgstr "?empty?"
+
+msgid "bestiaryView/info/about/france_F110_Lynx_6x6_HW_BOT"
+msgstr "一种轻巧敏捷的敌人，能够对目标发起能量攻击。"
+
+msgid "bestiaryView/info/about/france_F17_AMX_13_90_HW_BOT"
+msgstr "一辆迷失的大黄蜂坦克，如今正狩猎自己曾经的盟友。它无比强烈的仇恨已化为炙热的炮火，每次击穿敌方坦克都会将其点燃。"
+
+msgid "bestiaryView/info/about/germany_G00_Bomber_Hell"
+msgstr ""
+"刺猬是一种会自动行进的黑色球体，表面布满尖刺，就像水雷一样。它们总是成群出现，速度快，异常灵活，只能通过追上敌人然后爆炸来造成损伤。一个就已相当危险，同时承受多个围攻很可能导致玩家坦克被摧毁。"
+
+msgid "bestiaryView/info/about/germany_G00_K_bomber__HW_21_AI"
+msgstr "阿尔法刺猬的特性和攻击模式与普通刺猬相近，但威胁更大。一旦发现其踪迹，建议整个团队集中火力优先将其消灭。"
+
+msgid "bestiaryView/info/about/germany_G113_SP_I_C_HW_BOT"
+msgstr "由多辆坦克结合而成的共同体。对其中任意一辆造成的损伤都会由整个群体共同分担。它们共存共亡。"
+
+msgid "bestiaryView/info/about/germany_G142_M48RPz_HW_BOT"
+msgstr ""
+"异象中的常规敌人，守卫着蕴含銤元素的地点。当您接近其据点时，潜伏其中的所有暗卫都会现身并发动攻击。它们是銤元素的造物，被击毁后会消失得无影无踪。"
+
+msgid "bestiaryView/info/about/germany_G171_E77_HW_BOT"
+msgstr "蜂王是蜂群的核心，维系着周围所有单位的运转。"
+
+msgid "bestiaryView/info/about/germany_G181_E100_Autocannon_Boss_HW25_bot"
+msgstr "?empty?"
+
+msgid "bestiaryView/info/about/germany_G25_PzII_Luchs_HELL_HALL"
+msgstr "生性警觉的敌人，一旦被发现便会立刻撤退。它威胁较小，容易击毁，被击毁时会掉落銤元素。"
+
+msgid "bestiaryView/info/about/germany_G64_Panther_II_Hall_minion"
+msgstr "一种能够在整个异象中追击我方成员的中型坦克。其威力强大的HE炮弹足以对装甲薄弱的目标造成重创。"
+
+msgid "bestiaryView/info/about/germany_G73_E50_Ausf_M_Hall_minion"
+msgstr "一辆强悍的重量级坦克，往往会在据点中率领暗卫行动。惊人的生存能力与强劲的火力，使其成为极具威胁性的敌人。"
+
+msgid "bestiaryView/info/about/italy_It19_Progetto_C50_mod_66_HW_BOT"
+msgstr "由銤元素复制而成的装甲军团异化体，如今以更强的战斗力向昔日盟友发起攻击。"
+
+msgid "bestiaryView/info/about/uk_GB100_Manticore_HW_BOT"
+msgstr "一种外形低矮的灵活敌人，拥有出色的最大速度和生存能力。其履带坚不可摧，还携带大量銤元素，一旦被发现便会立即尝试逃跑。"
+
+msgid "bestiaryView/info/about/uk_GB125_Saladin_HW_BOT"
+msgstr "这种敌人不配备常规武器。它会试图接近目标并爆炸，其冲击波可以对爆炸范围内的所有坦克造成弹震。"
+
+msgid "bestiaryView/info/about/uk_GB24_Centurion_Mk3_HW_BOT"
+msgstr "在异象中迷失的地狱犬，现在其唯一目的就是狩猎那些试图夺取其銤元素的敌人。"
+
+msgid "bestiaryView/info/about/usa_A100_T49_HW_BOT"
+msgstr "在异象中迷失的掷弹兵。强劲的火力和激光制导系统使其成为一个强大的对手。"
+
+msgid "bestiaryView/info/about/ussr_R171_IS_3_II_HW_BOT"
+msgstr ""
+"一辆会发动毁灭性撞击攻击的重型坦克。它通常会把进攻波次中的其他坦克甩到身后，并且擅长打乱我方阵型。若是它全速接近，其威力巨大的撞击往往能一击撞毁目标。"
+
+msgid "bestiaryView/info/about/ussr_R40_T-54_HW_BOT"
+msgstr "在异象中迷失的孔雀石，现在变得极其危险。它保留了其原有的能力，并会竭尽所能展开近身缠斗。"
+
+msgid "bestiaryView/info/about/ussr_R77_KV2_turret_2"
+msgstr "乍一看，这似乎是一个容易对付的目标，但不要被其外表迷惑。其厚实的正面装甲和精度极高的火炮使其在正面交战中极具威胁性。"
+
+msgid "bestiaryView/info/description/ability_1"
+msgstr "无法离开驻守区域，因此不能追击撤退的坦克。"
+
+msgid "bestiaryView/info/description/ability_10"
+msgstr "周期性地利用其电磁线圈中形成的能量波对附近的所有坦克造成损伤。"
+
+msgid "bestiaryView/info/description/ability_11"
+msgstr "异象改造了该坦克的火炮，使其能够射击炙热的炮弹，每次击穿目标都会将其点燃。"
+
+msgid "bestiaryView/info/description/ability_12"
+msgstr "其双连发自动装填炮可以射击HE炮弹。"
+
+msgid "bestiaryView/info/description/ability_13"
+msgstr "其光环范围内的坦克会被削弱，并且会吸取玩家收集的銤元素。"
+
+msgid "bestiaryView/info/description/ability_14"
+msgstr "蕴含浓缩余响能量的强化弹药，能为每发炮弹提供可观的损伤加成。"
+
+msgid "bestiaryView/info/description/ability_15"
+msgstr ""
+"它会在自身周围生成一个区域。短暂延迟后，该区域会爆炸，对区域内的所有我方坦克造成弹震。如果在爆炸之前击毁引爆者，则会对引爆者周围的余响坦克造成弹震。"
+
+msgid "bestiaryView/info/description/ability_16"
+msgstr "这座固定炮塔不会移动，能够以精准的火力打击敌方坦克。"
+
+msgid "bestiaryView/info/description/ability_17"
+msgstr "作为团队的生命核心，蜂群中每个单位的命运都取决于蜂王。"
+
+msgid "bestiaryView/info/description/ability_18"
+msgstr "其核心与蜂王紧密相连。当蜂王被击败时，连接就会断开，该单位的结构也会在片刻后瓦解。"
+
+msgid "bestiaryView/info/description/ability_19"
+msgstr "击毁该敌人后，会留下一个浓缩异化剂，拾取后会为团队提供一个特殊的拾取型异化剂。"
+
+msgid "bestiaryView/info/description/ability_2"
+msgstr "使用加速能力快速接近并撞击目标，造成可观的损伤。"
+
+msgid "bestiaryView/info/description/ability_3"
+msgstr ""
+"追猎者可在很远的距离侦测到敌人，并从远处发射低速HE炮弹。这不仅对轻坦极具威胁性，若是击穿中坦甚至是重坦的侧面和后部装甲，后果同样不堪设想。"
+
+msgid "bestiaryView/info/description/ability_4"
+msgstr "将使用銤元素在猎物脚下的地面上设置陷阱。这些区域会在数秒后爆炸。抓紧时间撤出该区域，才能避免被爆炸波及。"
+
+msgid "bestiaryView/info/description/ability_5"
+msgstr "被发现后会以最快速度逃跑，防止玩家获取它们携带的銤元素。"
+
+msgid "bestiaryView/info/description/ability_6"
+msgstr "它将锁定最近的目标并全速冲锋，接触到玩家坦克时就会爆炸。冲击波也会对附近的坦克造成损伤。"
+
+msgid "bestiaryView/info/description/ability_7"
+msgstr "被击毁后，阿尔法刺猬会分裂成数个普通刺猬(一般为3个，但数量可能发生变化)，它们会追逐最近的玩家坦克，并在撞上目标时爆炸。"
+
+msgid "bestiaryView/info/description/ability_8"
+msgstr "散发出銤元素光环，会腐蚀附近坦克的装甲，并吸收被腐蚀的材料来恢复自身生命值。"
+
+msgid "bestiaryView/info/description/ability_9"
+msgstr "其火炮的射速非常高，赋予该敌人可怕的输出能力。"
+
+msgid "bestiaryView/info/tacticalAdvise/czech_Cz34_Vz_71_Tesak_HW_BOT"
+msgstr ""
+"{UL}tacticalAdvise_czech_Cz34_Vz_71_Tesak_HW_BOT "
+"{UL}{LI}{f7f6f299Bold_open}Tactic_1{f7f6f299Bold_close}: "
+"do_1。{UL}{LI}{f7f6f299Bold_open}Tactic_2{f7f6f299Bold_close}: "
+"do_2。{UL}{LI}{f7f6f299Bold_open}Tactic_3{f7f6f299Bold_close}: do_3。"
+
+msgid "bestiaryView/info/tacticalAdvise/france_F110_Lynx_6x6_HW_BOT"
+msgstr ""
+"{UL}它不会让您安稳地完成任务！建议优先摧毁捕猎者。{UL}{LI}{{@ style (bold)}}分散站位{{/}}: "
+"如果太过靠近盟友，您在尝试撤出自己脚下的崩坏区域时，可能会误入盟友的崩坏区域。{UL}{LI}{{@ style "
+"(bold)}}避开狭窄通道{{/}}: 尽量保持机动。{UL}{LI}{{@ style (bold)}}使用坦克能力{{/}}: "
+"\"能量护盾\"可以保护您免受区域爆炸所造成的损伤，而\"暗影恢复\"可以从一开始就阻止捕猎者锁定您。但请记住，如果您已处于损伤区域内，\"暗影恢复\"将无法帮助您规避区域爆炸造成的损伤。"
+
+msgid "bestiaryView/info/tacticalAdvise/france_F17_AMX_13_90_HW_BOT"
+msgstr ""
+"{UL}它为您的每位盟友都准备了一发炮弹！{UL}{LI}{{@ style (bold)}}高优先级目标{{/}}: "
+"由于其异常能力，这辆坦克对整个团队构成了重大威胁。{UL}{LI}{{@ style (bold)}}战术制胜{{/}}: "
+"\"暗影恢复\"和\"团体维修\"可以灭火，并帮助您或您的盟友迅速扑灭火势。{UL}{LI}{{@ style (bold)}}爆发输出{{/}}: "
+"使用\"高速冲撞\"来迅速将其撞毁！"
+
+msgid "bestiaryView/info/tacticalAdvise/germany_G00_Bomber_Hell"
+msgstr ""
+"{UL}一旦发现刺猬，它们就应成为团队的首要目标！{UL}{LI}{{@ style (bold)}}弱点{{/}}: "
+"它们的装甲薄如蝉翼，因此任何攻击手段都能将其摧毁。{UL}{LI}{{@ style (bold)}}集群战术{{/}}: "
+"这些敌人一般会成群结队地进攻，因此请保持警惕，不要给它们可乘之机。{UL}{LI}{{@ style (bold)}}范围攻击优势{{/}}: "
+"使用具有范围攻击效果的战斗能力，如\"高能射击\"或\"噬魂攻击\"，一击摧毁多个刺猬。"
+
+msgid "bestiaryView/info/tacticalAdvise/germany_G00_K_bomber__HW_21_AI"
+msgstr ""
+"{UL}解决掉阿尔法刺猬后，立即准备对付普通刺猬！{UL}{LI}{{@ style (bold)}}范围损伤{{/}}: "
+"使用您的战斗能力——单次范围攻击就足以一次性摧毁多个刺猬。{UL}{LI}{{@ style (bold)}}护盾时机{{/}}: "
+"使用您的\"能量护盾\"吸收刺猬造成的撞击损伤，但要仔细把握时机，在它们接触到您坦克之前激活护盾。{UL}{LI}{{@ style "
+"(bold)}}保持机动{{/}}: 如果您的坦克较为脆弱，请利用您的速度和\"高速冲撞\"来摆脱刺猬，并从安全距离将其逐个击破。"
+
+msgid "bestiaryView/info/tacticalAdvise/germany_G113_SP_I_C_HW_BOT"
+msgstr ""
+"{UL}四头一体。{UL}{LI}{{@ style (bold)}}共享结构{{/}}: "
+"对蜂群中的任何单位造成损伤都会削弱其共享结构，因此无论您击中哪辆坦克，每发炮弹都能削减蜂群中所有坦克的生命值。{UL}{LI}{{@ style "
+"(bold)}}持续输出{{/}}: "
+"由于它们共享一个结构，您无法通过逐个击破来削弱其火力——所有单位都会持续开火，直到蜂群中的最后一个单位被击毁。{UL}{LI}{{@ style "
+"(bold)}}收益最大化{{/}}: 确保您完全消灭整个蜂群，以填充收集器并收获更多銤元素。"
+
+msgid "bestiaryView/info/tacticalAdvise/germany_G142_M48RPz_HW_BOT"
+msgstr ""
+"{UL}在异象中，团队合作是成功的关键。{UL}{LI}{{@ style (bold)}}协同进攻{{/}}: "
+"务必协同进攻据点，切勿单独行动！{UL}{LI}{{@ style (bold)}}火力优势{{/}}: "
+"被摧毁的敌人不会对团队造成威胁。不要手下留情。{UL}{LI}{{@ style (bold)}}战术撤退{{/}}: "
+"如果有被摧毁的风险，您可以撤退到据点之外以保全自身坦克。"
+
+msgid "bestiaryView/info/tacticalAdvise/germany_G171_E77_HW_BOT"
+msgstr ""
+"{UL}擒贼先擒王！{UL}{LI}{{@ style (bold)}}直击核心{{/}}: "
+"利用您的\"高速冲撞\"突破蜂群，消灭蜂王。{UL}{LI}{{@ style (bold)}}脆弱的目标{{/}}: "
+"蜂王本身较为脆弱。{UL}{LI}{{@ style (bold)}}战略选择{{/}}: "
+"选择您的优先目标——击毁蜂王以立即结束战斗，或先清理蜂群坦克以填满收集器并收获更多銤元素。"
+
+msgid ""
+"bestiaryView/info/tacticalAdvise/germany_G181_E100_Autocannon_Boss_HW25_bot"
+msgstr ""
+"{UL}tacticalAdvise_germany_G181_E100_Autocannon_Boss_HW25_bot "
+"{UL}{LI}{f7f6f299Bold_open}Tactic_1{f7f6f299Bold_close}: "
+"do_1。{UL}{LI}{f7f6f299Bold_open}Tactic_2{f7f6f299Bold_close}: "
+"do_2。{UL}{LI}{f7f6f299Bold_open}Tactic_3{f7f6f299Bold_close}: do_3。"
+
+msgid "bestiaryView/info/tacticalAdvise/germany_G25_PzII_Luchs_HELL_HALL"
+msgstr ""
+"{UL}别让它们跑了！{UL}{LI}{{@ style (bold)}}生存能力差{{/}}: "
+"即便是威力乏善可陈的火炮，也只需一两发炮弹即可将其摧毁。{UL}{LI}{{@ style (bold)}}优先攻击远处的狡兔{{/}}: "
+"别让它们溜走。必要时打断其履带。{UL}{LI}{{@ style (bold)}}使用\"高速冲撞\"{{/}}: "
+"可以利用该能力追击逃跑的狡兔，或通过撞击将其摧毁。"
+
+msgid "bestiaryView/info/tacticalAdvise/germany_G64_Panther_II_Hall_minion"
+msgstr ""
+"{UL}无论您逃到地图上的哪个区域，追猎者仍会穷追不舍，因此战术撤退只是在推迟无法避免的冲突。{UL}{LI}{{@ style "
+"(bold)}}保持警惕{{/}}: 解决掉敌方主力部队后或开始新一轮交战前，先击毁追猎者。{UL}{LI}{{@ style "
+"(bold)}}持续移动{{/}}: 您可以通过保持机动来躲避其速度较慢的HE炮弹。{UL}{LI}{{@ style "
+"(bold)}}炮弹烟花{{/}}: 追猎者的侧面是其易爆炮弹的存储部位——建议射击此处弱点来终结它们。"
+
+msgid "bestiaryView/info/tacticalAdvise/germany_G73_E50_Ausf_M_Hall_minion"
+msgstr ""
+"{UL}体型庞大且行动笨拙，利用这一点来创造优势！{UL}{LI}{{@ style (bold)}}高大车体{{/}}: "
+"尝试贴近敌人侧面，使其火炮无法俯射到您。{UL}{LI}{{@ style (bold)}}利用地形{{/}}: "
+"善用周遭环境，尽量远离开阔地带，否则您将感受到其大口径火炮的威力。{UL}{LI}{{@ style (bold)}}协同攻击{{/}}: "
+"该坦克生命值极高，切勿尝试单独对抗。"
+
+msgid "bestiaryView/info/tacticalAdvise/header"
+msgstr "战术建议"
+
+msgid "bestiaryView/info/tacticalAdvise/italy_It19_Progetto_C50_mod_66_HW_BOT"
+msgstr ""
+"{UL}这个余响复制体会利用您的失误来修复自身！{UL}{LI}{{@ style (bold)}}高优先级目标{{/}}: "
+"由于其异常能力，这辆坦克对整个团队构成重大威胁。{UL}{LI}{{@ style (bold)}}保持距离{{/}}: "
+"若是让该敌人摄取您坦克的生命值来修复自身，您将更难将其击毁。{UL}{LI}{{@ style (bold)}}避免单挑{{/}}: "
+"这个恶堕复制体能在1对1的决斗中轻松击毁您的坦克。"
+
+msgid "bestiaryView/info/tacticalAdvise/uk_GB100_Manticore_HW_BOT"
+msgstr ""
+"{UL}机不可失，时不再来！{UL}{LI}{{@ style (bold)}}宝贵机遇{{/}}: "
+"拾荒者携带大量銤元素和一个独特异化剂。如果让它逃脱，您就无法在本局战斗中获取拾荒者及其携带的珍贵物资。{UL}{LI}{{@ style "
+"(bold)}}忽略履带{{/}}: 该敌人的履带无法被摧毁。使用能提高损伤的能力来击毁它。{UL}{LI}{{@ style "
+"(bold)}}小心背后{{/}}: 追击时，时刻警惕其他敌人偷袭。"
+
+msgid "bestiaryView/info/tacticalAdvise/uk_GB125_Saladin_HW_BOT"
+msgstr ""
+"{UL}保持距离，快速将其摧毁！{UL}{LI}{{@ style (bold)}}保持距离{{/}}: 切勿靠近引爆者。{UL}{LI}{{@ "
+"style (bold)}}扭转战局{{/}}: 如果您在引爆者自毁前将其摧毁，其爆炸冲击波将对区域内的所有敌方坦克造成弹震。{UL}{LI}{{@ "
+"style (bold)}}准备维修{{/}}: 如果您或盟友被卷入爆炸，使用\"团体维修\"来立即移除弹震效果。"
+
+msgid "bestiaryView/info/tacticalAdvise/uk_GB24_Centurion_Mk3_HW_BOT"
+msgstr ""
+"{UL}切勿在开阔地带被其发现！{UL}{LI}{{@ style (bold)}}高优先级目标{{/}}: "
+"由于其异常能力，该坦克对整个团队构成了重大威胁。{UL}{LI}{{@ style (bold)}}战术制胜{{/}}: "
+"与该敌人交战时，准备好\"能量护盾\"或\"暗影恢复\"能力来抵消其高额损伤。{UL}{LI}{{@ style (bold)}}以牙还牙{{/}}: "
+"使用您的\"火力全开\"能力来迅速削减其生命值，并尽快消灭这辆冒牌地狱犬。"
+
+msgid "bestiaryView/info/tacticalAdvise/usa_A100_T49_HW_BOT"
+msgstr ""
+"{UL}一步走错，满盘皆输！{UL}{LI}{{@ style (bold)}}高优先级目标{{/}}: "
+"由于其异常能力，这辆坦克对整个团队构成了重大威胁。{UL}{LI}{{@ style (bold)}}装甲薄弱{{/}}: "
+"装填HE炮弹以更快地击毁它。{UL}{LI}{{@ style (bold)}}擅长迂回包抄的敌人{{/}}: "
+"切勿让它从侧翼包抄您的团队，建议正面迎击。"
+
+msgid "bestiaryView/info/tacticalAdvise/ussr_R171_IS_3_II_HW_BOT"
+msgstr ""
+"{UL}在它撞上您之前摧毁这台\"攻城槌\"！它是所有进攻波次中的优先目标。{UL}{LI}{{@ style (bold)}}击毁履带{{/}}: "
+"这将使冲锋者无法移动，并使其成为盟友的活靶子。{UL}{LI}{{@ style (bold)}}集中火力{{/}}: "
+"在敌人修复履带前将其摧毁。如有必要，再次打断其履带。{UL}{LI}{{@ style (bold)}}避免撞击{{/}}: "
+"如果冲锋者突破到您面前，激活\"暗影恢复\"或进行大幅度机动来脱离其进攻路线。"
+
+msgid "bestiaryView/info/tacticalAdvise/ussr_R40_T-54_HW_BOT"
+msgstr ""
+"{UL}保持警惕，它会在不经意间迅速拉近交火距离。{UL}{LI}{{@ style (bold)}}高优先级目标{{/}}: "
+"由于其异常能力，这辆坦克对整个团队构成了重大威胁。{UL}{LI}{{@ style (bold)}}保持距离{{/}}: "
+"该敌人会释放一个能够造成损伤的能量力场。任何处于其半径范围内的单位都会受到大量损伤。{UL}{LI}{{@ style "
+"(bold)}}集火击毁{{/}}: 使用\"火力全开\"或其他战术，在它靠近之前将其击毁。"
+
+msgid "bestiaryView/info/tacticalAdvise/ussr_R77_KV2_turret_2"
+msgstr ""
+"{UL}保持移动，躲避交叉火力！{UL}{LI}{f7f6f299Bold_open}固定威胁{f7f6f299Bold_close}: "
+"由于该敌人无法移动，利用环境来创造优势。使用山脊和障碍物来阻断其视线并躲避来袭火力。{UL}{LI}{f7f6f299Bold_open}切勿正面交锋{f7f6f299Bold_close}:"
+" "
+"其正面装甲异常厚重。不要与其对射，寻找机会从侧翼攻击或等待时机打击其更脆弱的部位。{UL}{LI}{f7f6f299Bold_open}准备好护盾{f7f6f299Bold_close}:"
+" 该敌人火力凶猛。其高损伤炮弹能重创您的坦克，因此请准备好您的\"能量护盾\"来抵挡损伤。"
+
+msgid "bestiaryView/info/title/ability_1"
+msgstr "驻地守军"
+
+msgid "bestiaryView/info/title/ability_10"
+msgstr "冲击波"
+
+msgid "bestiaryView/info/title/ability_11"
+msgstr "燃烧射击"
+
+msgid "bestiaryView/info/title/ability_12"
+msgstr "双重麻烦"
+
+msgid "bestiaryView/info/title/ability_13"
+msgstr "怪物光环"
+
+msgid "bestiaryView/info/title/ability_14"
+msgstr "余响炮弹"
+
+msgid "bestiaryView/info/title/ability_15"
+msgstr "弹震脉冲"
+
+msgid "bestiaryView/info/title/ability_16"
+msgstr "攻城模式"
+
+msgid "bestiaryView/info/title/ability_17"
+msgstr "一损俱损"
+
+msgid "bestiaryView/info/title/ability_18"
+msgstr "生命连接"
+
+msgid "bestiaryView/info/title/ability_19"
+msgstr "异化剂携带者"
+
+msgid "bestiaryView/info/title/ability_2"
+msgstr "攻城槌"
+
+msgid "bestiaryView/info/title/ability_3"
+msgstr "HE炮弹齐射"
+
+msgid "bestiaryView/info/title/ability_4"
+msgstr "銤元素陷阱"
+
+msgid "bestiaryView/info/title/ability_5"
+msgstr "急速撤离"
+
+msgid "bestiaryView/info/title/ability_6"
+msgstr "爆炸！！！"
+
+msgid "bestiaryView/info/title/ability_7"
+msgstr "刺猬集群"
+
+msgid "bestiaryView/info/title/ability_8"
+msgstr "噬魂脉冲"
+
+msgid "bestiaryView/info/title/ability_9"
+msgstr "速射"
+
+msgid "bestiaryView/title"
+msgstr "余响坦克图鉴"
+
+msgid "bundleView/btn/keys"
+msgstr "购买"
+
+msgid "bundleView/btn/shop"
+msgstr "在军械库中查看"
+
+msgid "bundleView/bundle/header/bundleGroupEventPack"
+msgstr "动员守望者"
+
+msgid "bundleView/bundle/header/bundleGroupLuxuryEventPack"
+msgstr "全力出击"
+
+msgid "bundleView/bundle/header/bundleGroupStyle"
+msgstr "个性化"
+
+msgid "bundleView/bundle/header/hw26bundle_keys"
+msgstr "购买密钥"
+
+msgid "bundleView/bundle/serviceChannelMessages/hw26bundle_keys"
+msgstr "已购买密钥"
+
+msgid "bundleView/bundle/subHeader/bundleGroupEventPack"
+msgstr "一款特殊礼包，助您加快推进巴比伦:黑塔的进度。"
+
+msgid "bundleView/bundle/subHeader/bundleGroupLuxuryEventPack"
+msgstr "巴比伦:黑塔专属特惠——究极礼包。"
+
+msgid "bundleView/bundle/subHeader/bundleGroupStyle"
+msgstr "3D风格和其他元素，充满了该活动的氛围。"
+
+msgid "bundleView/bundle/subHeader/hw26bundle_keys"
+msgstr "密钥可用于解密或跳过胶片。一把密钥需要花费{cost}金币。"
+
+msgid "bundleView/eventName"
+msgstr "巴比伦计划"
+
+msgid "bundleView/reward/hw_artefact_key"
+msgstr "解密密钥(奖励)"
+
+msgid "bundleView/subTitle"
+msgid_plural "plural/bundleView/subTitle"
+msgstr[0] "还需要{key}才能解密胶片{slide}"
+msgstr[1] "还需要{key}才能解密胶片{slide}"
+msgstr[2] "还需要{key}才能解密胶片{slide}"
+
+msgid "bundleView/title"
+msgstr "解密密钥"
+
+msgid "bundleView/title/default"
+msgstr "选择密钥购买方式"
+
+msgid "bundleView/title/onlyKeysBundle"
+msgstr "选择要购买的密钥数量"
+
+msgid "bundleView/title/onlyShopBundle"
+msgstr "选择活动礼包"
+
+msgid "bundleView/tooltip/cerfToken/body"
+msgstr "一名自选特殊活动乘员，附带专属语音。"
+
+msgid "bundleView/tooltip/cerfToken/header"
+msgstr "1名自选活动乘员"
+
+msgid "bundleView/tooltip/expVehicleX5/body"
+msgstr "驾驶任意已取得当天首胜奖励的坦克，从第2场胜利开始获得5倍经验。"
+
+msgid "bundleView/tooltip/expVehicleX5/header"
+msgstr "5倍乘员经验任务"
+
+msgid "bundleView/tooltip/stepper/body"
+msgstr "选择您要获取的密钥数量，用来解密或跳过加密胶片。"
+
+msgid "bundleView/tooltip/stepper/header"
+msgstr "解密加密胶片的密钥"
+
+msgid "carousel/card/inBattle"
+msgstr "在战斗中"
+
+msgid "carousel/card/inPlatoon"
+msgstr "在小队中"
+
+msgid "carousel/card/inQueue"
+msgstr "在队列中"
+
+msgid "carousel/card/locked"
+msgstr "坦克被锁定"
+
+msgid "carousel/daily/header"
+msgstr "每日坦克任务"
+
+msgid "common/back"
+msgstr "返回"
+
+msgid "common/btnContinue"
+msgstr "继续"
+
+msgid "common/close"
+msgstr "关闭"
+
+msgid "common/new"
+msgstr "新"
+
+msgid "common/progress"
+msgstr "{{value}}/{{maxValue}}"
+
+msgid "common/toEvent"
+msgstr "活动"
+
+msgid "common/toRewardPath"
+msgstr "探秘之旅"
+
+msgid "common/yes"
+msgstr "收到!"
+
+msgid "comparisonWindow/categoryName/maxHealth"
+msgstr ""
+"生命值\n"
+"(点)"
+
+msgid "comparisonWindow/categoryName/relativePower"
+msgstr ""
+"火力\n"
+"(单位)"
+
+msgid "comparisonWindow/categoryName/speedLimit"
+msgstr ""
+"最大速度\n"
+"(千米/小时)"
+
+msgid "comparisonWindow/tank/ttcType/france_F17_AMX_13_90_Halloween_event"
+msgstr "5连发弹夹炮"
+
+msgid "comparisonWindow/tank/ttcType/italy_It19_Progetto_C50_mod_66_hw21"
+msgstr "3连发改进型自动装填系统"
+
+msgid "comparisonWindow/tank/ttcType/uk_GB123_GSOR_1006_v7_Halloween_event"
+msgstr "具有连射系统的火炮"
+
+msgid "comparisonWindow/tank/ttcType/uk_GB24_Centurion_Mk3_Halloween_event"
+msgstr "损伤敌方坦克模块的几率较高"
+
+msgid "comparisonWindow/tank/ttcType/usa_A100_T49_Halloween_event"
+msgstr "可射击HE炮弹的两连发自动装填炮"
+
+msgid "comparisonWindow/tank/ttcType/ussr_R171_IS_3_II_hw21"
+msgstr "双管火炮系统"
+
+msgid "comparisonWindow/tank/ttcType/ussr_R40_T_54_Halloween_event"
+msgstr "坦克模块防护性能提高"
+
+msgid "comparisonWindow/title"
+msgstr "坦克对比"
+
+msgid "crewShowcase/play"
+msgstr "播放"
+
+msgid "crewShowcase/status/inBaseReward"
+msgstr "在基础奖励中"
+
+msgid "crewShowcase/status/inShop"
+msgstr "在特殊礼包中"
+
+msgid "crewShowcase/status/received"
+msgstr "已获得"
+
+msgid "crewShowcase/subTitle"
+msgstr "全部乘员均附带足以将3项特长训练至100%熟练度的乘员经验。"
+
+msgid "crewShowcase/title"
+msgstr "独特乘员"
+
+msgid "crewShowcase/viewInStore"
+msgstr "前往军械库查看"
+
+msgid "decrypt/affirmative"
+msgstr "收到！"
+
+msgid "decrypt/arrow/disabled/body"
+msgstr "完成下一个目标，使用密钥解密其胶片即可继续。"
+
+msgid "decrypt/arrow/disabled/header"
+msgstr "下个目标"
+
+msgid "decrypt/arrowPrev/disabled/body"
+msgstr "完成上一个目标，使用密钥解密其胶片即可继续。"
+
+msgid "decrypt/arrowPrev/disabled/header"
+msgstr "上个目标"
+
+msgid "decrypt/completed"
+msgstr "目标已完成。已获得奖励:"
+
+msgid "decrypt/hideShow"
+msgstr "隐藏/显示用户界面"
+
+msgid "decrypt/outroVideo"
+msgstr "结尾视频"
+
+msgid "decrypt/outroVideoTooltip/active"
+msgstr "观看结尾视频。"
+
+msgid "decrypt/outroVideoTooltip/disabled"
+msgstr "领取全部奖励后，您可以从此界面再次观看结局视频。"
+
+msgid "decrypt/voiceover"
+msgstr "配音"
+
+msgid "decrypt/voiceoverTooltip"
+msgstr "开启/关闭所有解密胶片界面的配音。"
+
+msgid "difficult/disabled/body"
+msgstr "您在小队中。仅小队指挥官可更改难度等级。"
+
+msgid "difficult/disabled/header"
+msgstr "无法更改难度等级"
+
+msgid "difficult/level_1"
+msgstr "普通"
+
+msgid "difficult/level_2"
+msgstr "困难"
+
+msgid "difficult/level_3"
+msgstr "梦魇"
+
+msgid "difficult/new"
+msgstr "新"
+
+msgid "difficult/tooltip/description/level1"
+msgstr "敌人的生命值较低，装甲较为薄弱。可获得标准战斗奖励。"
+
+msgid "difficult/tooltip/description/level2"
+msgstr "敌人拥有较为坚固的装甲，同时，每场战斗可获得较多的奖励和密钥。"
+
+msgid "difficult/tooltip/description/level3"
+msgstr "敌人数量更多，装甲也更坚固。每场战斗可获得更多的奖励和密钥。"
+
+msgid "difficult/tooltip/header/level1"
+msgstr "普通"
+
+msgid "difficult/tooltip/header/level2"
+msgstr "困难"
+
+msgid "difficult/tooltip/header/level3"
+msgstr "梦魇"
+
+msgid "difficult/tooltip/locked"
+msgstr "未解锁"
+
+msgid "difficult/tooltip/lockedDescr/level2"
+msgstr "击败普通难度等级中的首领，即可解锁该难度等级。"
+
+msgid "difficult/tooltip/lockedDescr/level3"
+msgstr "击败困难难度等级中的首领，即可解锁该难度等级。"
+
+msgid "difficult/tooltip/state/default"
+msgstr "已开放"
+
+msgid "difficult/tooltip/state/selected"
+msgstr "已选择"
+
+msgid "difficult/tooltip/subHeader/level1"
+msgstr "4个阶段"
+
+msgid "difficult/tooltip/subHeader/level2"
+msgstr "4个阶段"
+
+msgid "difficult/tooltip/subHeader/level3"
+msgstr "4个阶段"
+
+msgid "difficult/uppercase/level_1"
+msgstr "普通"
+
+msgid "difficult/uppercase/level_2"
+msgstr "困难"
+
+msgid "difficult/uppercase/level_3"
+msgstr "梦魇"
+
+msgid "difficultyWindow/anomalies/button"
+msgstr "前往异化剂"
+
+msgid "difficultyWindow/anomalies/label"
+msgstr "已解锁异化剂组合"
+
+msgid "difficultyWindow/description/level_2"
+msgstr "敌人拥有较为坚固的装甲，同时，每场战斗可获得较多的奖励和密钥。"
+
+msgid "difficultyWindow/description/level_3"
+msgstr "敌人数量更多，装甲也更坚固。每场战斗可获得更多的奖励和密钥。"
+
+msgid "difficultyWindow/header/level_2"
+msgstr "困难难度等级"
+
+msgid "difficultyWindow/header/level_3"
+msgstr "梦魇难度等级"
+
+msgid "difficultyWindow/title"
+msgstr "已开放"
+
+msgid "hangar/about"
+msgstr "关于活动"
+
+msgid "hangar/exit"
+msgstr "离开活动"
+
+msgid "hangar/header/keys"
+msgstr "密钥: {{value}}"
+
+msgid "hangar/tooltipAbout"
+msgstr "了解关于巴比伦:黑塔活动的更多信息。"
+
+msgid "hangarAmmunitionSetup/header"
+msgstr "战斗能力"
+
+msgid "headerButtons/battle/types/halloween"
+msgstr "巴比伦:黑塔"
+
+msgid "iconButton/comparison/default"
+msgstr "坦克对比"
+
+msgid "iconButton/comparison/isDisabled"
+msgstr "坦克对比不可用"
+
+msgid "iconButton/enemyPreview/isDisabled"
+msgstr "完成并解密当前目标，即可查看敌方档案。"
+
+msgid "iconButton/preview/default"
+msgstr "预览坦克"
+
+msgid "iconButton/preview/isDisabled"
+msgstr "坦克预览不可用。"
+
+msgid "infoBestiary/button/name"
+msgstr "余响坦克图鉴"
+
+msgid "infoBestiary/simpleTooltip/body/disabled"
+msgstr "完成并解密胶片，即可查看档案。"
+
+msgid "infoBestiary/simpleTooltip/body/enabled"
+msgstr "研究您的敌人及其能力，并了解击毁它们的最高效方式。"
+
+msgid "infoBestiary/simpleTooltip/header/disabled"
+msgstr "余响坦克图鉴不可用"
+
+msgid "keyCard/name"
+msgstr "解密密钥"
+
+msgid "keys/get"
+msgstr "获取"
+
+msgid "kingRewardCongratsView/btn/garage"
+msgstr "在车库中查看"
+
+msgid "kingRewardCongratsView/btn/outro"
+msgstr "前往故事结局"
+
+msgid "kingRewardCongratsView/header"
+msgstr "已获得主要奖励"
+
+msgid "kingRewardCongratsView/reward/crew100/value"
+msgstr "100%"
+
+msgid "kingRewardCongratsView/rewardsTitle"
+msgstr "奖励:"
+
+msgid "kingRewardCongratsView/tankName"
+msgstr "{level}{icon}{userName}"
+
+msgid "kingRewardCongratsView/title"
+msgstr "已完成最终目标"
+
+msgid "medalWidget/tooltipBody"
+msgstr "解锁异化剂菜单中所列出的全部异化剂。"
+
+msgid "medalWidget/tooltipHeader"
+msgstr "史诗勋章任务"
+
+msgid "meta/btn/decrypt"
+msgstr "解密"
+
+msgid "meta/btn/skip"
+msgstr "跳过"
+
+msgid "meta/btn/view"
+msgstr "查看"
+
+msgid "meta/receive/description"
+msgstr "该胶片解密进度: %(keys)/%(decrypt)%(icon)"
+
+msgid "meta/shortStory/hw_artefact_1"
+msgstr "它比我们遇到过的所有对手都狡猾，而且它还有一张我们至今仍无法应对的底牌。"
+
+msgid "meta/shortStory/hw_artefact_10"
+msgstr ""
+"费里曼明知把亚历克斯引入黑塔将招致滔天恨意，却依然将她引向那里。他善于操纵局势，却绝不会轻易拿自己冒险。这说明他早有打算。我们必须弄清楚他的计划究竟是什么。"
+
+msgid "meta/shortStory/hw_artefact_11"
+msgstr "我从来没有真正的归宿。现在我拥有了一个家。而就在这一刻，我明白了自己愿意为守护它付出什么代价。"
+
+msgid "meta/shortStory/hw_artefact_12"
+msgstr "起作用了！频率被阻断！开火，史密斯！干掉它！"
+
+msgid "meta/shortStory/hw_artefact_13"
+msgstr "我们成功了。蜘蛛已被终结。黑塔已经被摧毁。现在，是时候决定亚历克斯的命运了。我们每个人都必须做出自己的选择。"
+
+msgid "meta/shortStory/hw_artefact_2"
+msgstr "维修船坞、私人船舱，还有自助餐厅飘来的热咖啡香气。在这可恶的异象中，竟有这么一个舒适的小家。但有一个问题让我有些担心..."
+
+msgid "meta/shortStory/hw_artefact_3"
+msgstr "我已经有了计划，也有一辆即将准备就绪的坦克来执行。现在只差最后一个关键环节。而这一切，只有你能帮我完成。"
+
+msgid "meta/shortStory/hw_artefact_4"
+msgstr "你们是想摧毁黑塔。摧毁我的家。你们说它危险，简直一派胡言。你们只是贪图力量。"
+
+msgid "meta/shortStory/hw_artefact_5"
+msgstr "这不是在拯救世界，只是在替费里曼办事。他把我们玩弄于股掌之间，操纵我们的一举一动。我亲手把亚历克斯带进了他的陷阱。"
+
+msgid "meta/shortStory/hw_artefact_6"
+msgstr "我体内的銤元素不断涌动，引领我深入黑塔深处。那里藏着我所寻找的答案。呼唤我的那个人...也在那里等着我。"
+
+msgid "meta/shortStory/hw_artefact_7"
+msgstr ""
+"费里曼并非在寻找黑塔的坐标。他一直都知道它的位置。他之所以推动我们进行一次又一次远征，是为了别的目的。而现在，我似乎终于明白了他的真正意图。"
+
+msgid "meta/shortStory/hw_artefact_8"
+msgstr "父亲为我取名格雷琴·冯·埃克哈特，他叫我\"珍珠\"。在他眼里，我与众不同。"
+
+msgid "meta/shortStory/hw_artefact_9"
+msgstr "这里出生的人更加坚强。我们能塑造銤元素，控制它。有生以来，我第一次感到完整。"
+
+msgid "meta/story/hw_artefact_1"
+msgstr ""
+"{{@ class $titleClass}}它比我们遇到过的所有对手都狡猾，而且它还有一张我们至今仍无法应对的底牌。{{/}}\n"
+"\n"
+"可恶！事情怎么从来就没顺利过？A计划失败了。虽然计划很完美、很宏大，但还是失败了。\n"
+"\n"
+"所有人都以为{{@ class $keyWordViolet}}马尔杜克号{{/}}是我们的王牌。一艘巨大的飞行母舰，火炮口径比多拉巨炮还大。\n"
+"\n"
+"一次齐射就能解决所有问题。摧毁{{@ class $keyWordViolet}}黑塔{{/}}，一举消灭D系残余势力。他们在40年代为进攻准备的成千上万辆坦克，只能永远留在这里生锈。\n"
+"\n"
+"但我忘了第一条铁律: 在异象中，凡事都不简单。炮弹被那可恶的防护力场挡住了。要解除防护力场，得先摧毁其能量源。\n"
+"\n"
+"而那辆{{@ class $keyWordViolet}}蜘蛛坦克{{/}}，比我们遇到过的所有对手都狡猾。先得接近它。然后，就在最后一击的瞬间，它会激活马格努斯，撤回巢穴舔舐伤口，把我们扔回前几个阶段。\n"
+"\n"
+"好了，不抒情了。该行动了。要么解除那个防护力场，把那座黑塔炸上天，要么我们永远留在这里。\n"
+"\n"
+"指挥部建造了巨大的母舰，甚至为其冠以非凡名号，天真地认为万事大吉了。可最后，我们又回到原点。所以说，唯一靠得住的就是坦克。\n"
+"\n"
+"{{@ class $titleManual}}作战手册规范:{{/}}\n"
+"{{@ class $textManual}}\"利用战术地图协同作战。标记前进目标，以便盟友一同行动；或前往其他指挥官选定的位置。并肩作战，众志成城。\"{{/}}"
+
+msgid "meta/story/hw_artefact_10"
+msgstr ""
+"{{@ class $titleClass}}费里曼明知把亚历克斯引入黑塔将招致滔天恨意，却依然将她引向那里。他善于操纵局势，却绝不会轻易拿自己冒险。这说明他早有打算。我们必须弄清楚他的计划究竟是什么。{{/}}\n"
+"\n"
+"我们上当了。被她困在蛛网里。亚历克斯在学习我们的战术。无论输赢，每场战斗都会让她变得更强。她似乎只是在玩弄我们，测试蜘蛛的能力。\n"
+"\n"
+"我总觉得一切都在按费里曼的剧本展开。但我想不通他的逻辑。他这个诡计多端的家伙可不会贸然行事。他明知把亚历克斯引入黑塔将招致滔天恨意，这种情况下怎么控制？\n"
+"\n"
+"无论如何，都太迟了。史密斯还希望能和她谈谈，使其回心转意。他想救亚历克斯，我也想，但那已经不是亚历克斯了。\n"
+"\n"
+"我读过D系档案。他们曾试图救出操作员。十七次尝试。四个幸存，但没有一个恢复意识。他们会呼吸，心脏会跳动，但只是个空壳。不过...亚历克斯不是普通的操作员。\n"
+"\n"
+"不，没时间胡思乱想了。我们必须摧毁黑塔。\n"
+"\n"
+"沙鲁尔——也就是日蚀，已准备就绪。我正在给它装填{{@ class $keyWordViolet}}超高密度銤元素{{/}}。我们只有一次机会，必须找准频率。\n"
+"\n"
+"把最后一种余响坦克带来，就万事俱备了。一旦启动\"{{@ class $keyWordViolet}}干扰器{{/}}\"，就会有三十秒的行动窗口。蜘蛛会停止接收来自黑塔的信号，也就无法逃脱。那是我们发动决定性一击的唯一机会。\n"
+"\n"
+"快去收集最后的样本。\n"
+"\n"
+"{{@ class $titleManual}}作战手册规范:{{/}}\n"
+"{{@ class $textManual}}\"在异象中，特殊机制会改变既有规则。请留意阶段3开始时出现的提示信息。有些机制会迫使您加快行动节奏，而另一些机制则考验您的战术运用和临场判断。\"{{/}}"
+
+msgid "meta/story/hw_artefact_11"
+msgstr ""
+"{{@ class $titleClass}}我从来没有真正的归宿。现在我有了一个家。而就在这一刻，我明白了自己愿意为守护它付出什么代价。{{/}}\n"
+"\n"
+"我能感觉到它。銤元素。它不邪恶。不孤独。它什么都不是。它不思考，就那么存在着。它会与宿主融合并使其变强——前提是宿主能够承受这个过程。\n"
+"\n"
+"但是否有可能彻底摆脱自己的躯体？{{@ class $keyWordViolet}}与銤元素完全融合{{/}}？成为它的一部分，那也许是我唯一的救赎。\n"
+"\n"
+"士兵们想摧毁黑塔，连同我一起？史密斯一直试着跟我说话，他坚持说想救我。但我能相信他吗？如果他是费里曼的同伙呢？\n"
+"\n"
+"费里曼，这一切都是因为他。他想要力量、夺取技术，还妄图控制我。那些士兵正在帮助费里曼达成这一切，而他们自己甚至都没意识到。\n"
+"\n"
+"他们就快到了，我需要更多时间。对于生来就没有家的我来说，銤元素使我变得完整，它就是我的归宿。而我也明白保护它所需付出的代价。\n"
+"\n"
+"你们没一个好东西。别想让我再次成为你们的傀儡！\n"
+"\n"
+"{{@ class $titleManual}}作战手册规范:{{/}}\n"
+"{{@ class $textManual}}\"若安装能量护盾，建议只在最后关头使用——生命值较低或即将遭遇刺猬时。\"{{/}}"
+
+msgid "meta/story/hw_artefact_12"
+msgstr ""
+"{{@ class $titleClass}}起作用了！频率被阻断！开火，史密斯！干掉它！{{/}}\n"
+"\n"
+"莫雷尔: 已对它造成足够的损伤了！史密斯，蜘蛛要逃走了！我这就开启干扰器...成了！起作用了！频率被阻断！开火，史密斯！干掉它！\n"
+"\n"
+"史密斯: ...\n"
+"\n"
+"莫雷尔: 史密斯？！快开火！\n"
+"\n"
+"史密斯: 可恶...亚历克斯还在塔里。如果我击毁蜘蛛，她也会受到牵连。我们必须拯救她...至少得试试！\n"
+"\n"
+"莫雷尔: 史密斯，你这个蠢货！不消灭她，我们就完蛋了！\n"
+"\n"
+"史密斯: 我们不能这么做。一定有别的办法。我们必须把她救出来！我下不了手！\n"
+"\n"
+"{{@ class $titleManual}}作战手册规范:{{/}}\n"
+"{{@ class $textManual}}\"请密切关注战术地图，在与首领交战期间留意\"崩坏区域\"的变化。首领开始撤离后，请始终在安全区域内进行追击。若必须离开安全区域，请及时使用\"高速冲撞\"，以免坦克受到损伤。\"{{/}}"
+
+msgid "meta/story/hw_artefact_13"
+msgstr ""
+"{{@ class $titleClass}}我们成功了。蜘蛛已被终结。黑塔已经被摧毁。现在，是时候决定亚历克斯的命运了。我们每个人都必须做出自己的选择。{{/}}\n"
+"\n"
+"她做到了！亚历克斯在最后一刻化身为{{@ class $keyWordViolet}}纯粹的銤元素形态{{/}}，并摧毁了蜘蛛。这使得力场解除了，马尔杜克号的炮弹正中目标。黑塔的上层被摧毁，但下层幸存了下来——我们从中侦测到了微弱，但稳定的信号。确认信号源是亚历克斯，銤元素暂时维持着她的生命。\n"
+"\n"
+"我们降落后，找到了包裹着其身体的茧，以及她最后的笔记。她做出了选择，亚历克斯之所以摧毁蜘蛛，是为了将黑塔和自己的人类躯壳一起摧毁，从而与銤元素彻底融合。\n"
+"\n"
+"史密斯不相信这是她的选择。他坚信是銤元素蒙蔽了她的判断。他回忆说，亚历克斯在笔记内承认自己并不总能控制自己的思想。上尉打算将她的身体连接到飞船的系统上。他会不惜一切代价地保护她，寻找到让她摆脱銤元素的办法，期望使其恢复意识并重新变回一个正常人。\n"
+"\n"
+"亚历克斯的笔记中还写道，她第一次有了家的感觉。她摧毁蜘蛛不是因为那是我们的命令——而是她自主决定的行为。因为她的家不是这座黑塔，而是銤元素。\n"
+"\n"
+"如果我们摧毁黑塔，亚历克斯就会重生。她将与銤元素融合——不是作为一个普通的操作员，而是成为一个全新的存在。\n"
+"\n"
+"这个选择关系到我们所有人，关系到每一个在这座黑塔战斗过的人。做出决定吧。"
+
+msgid "meta/story/hw_artefact_2"
+msgstr ""
+"{{@ class $titleClass}}维修船坞、私人船舱，还有自助餐厅飘来的热咖啡香气。在这可恶的异象中，竟有这么一个舒适的小家。但有一个问题让我有些担心...{{/}}\n"
+"\n"
+"可恶，就差一点。我已经瞄准了蜘蛛。就差那么几毫秒。\n"
+"\n"
+"我永远习惯不了马尔杜克号。以前在巴比伦基地的时候，每一次进入异象都像纵身跃入深渊。\"浮出水面\"时精疲力竭、垂头丧气，彼此仿佛陌生人。但现在我们有了这艘母舰——马尔杜克号...\n"
+"\n"
+"它内置了马格努斯，现在我们可以\"跳跃\"到几乎任何相位，只需要一条精确的路线即可。总工程师{{@ class $keyWordViolet}}莫雷尔{{/}}说，銤元素并不只是一层层叠加而成。它更像一张由复杂路径连接起来的模式网络，{{@ class $keyWordViolet}}一座迷宫{{/}}。没有地图，很容易迷失其中，无法离开——永远在各个相位间徘徊，不知道自己是离家越来越近，还是越来越远。\n"
+"\n"
+"但现在，我们已经身处正确的地方。而且我们拥有一切所需: 一艘巨大的母舰、经验丰富的坦克手，还有掌握全新科技的莫雷尔。我们甚至能捕获余响坦克，让它们保持固态，而不变回液态銤元素。莫雷尔在拆解并研究它们，寻找击败蜘蛛的方法。而我们则继续突破这道防护力场。\n"
+"\n"
+"基本上，我们在这里一应俱全: 维修船坞、私人船舱、健身房，连自助餐厅都有热咖啡。在这可恶的异象中，竟有这么一个舒适的小家。我开始习惯这种舒适——这一点让我有些担心。周围的恐怖正在变成常态。我们必须尽快摧毁那座可恶的黑塔，回到真正的家。\n"
+"\n"
+"{{@ class $titleManual}}作战手册规范:{{/}}\n"
+"{{@ class $textManual}}\"请勿试图击毁不朽者，不要浪费时间和弹药。我们会再想办法来终结它。与此同时，切忌静止不动。必须保持机动，才能避免让自己陷入困境。\"{{/}}"
+
+msgid "meta/story/hw_artefact_3"
+msgstr ""
+"{{@ class $titleClass}}我已经有了计划，也有一辆即将准备就绪的坦克来执行它。现在只差最后一个关键环节。而这一切，只有你能帮我完成。{{/}}\n"
+"\n"
+"等一下，就快好了...我们得稳定{{@ class $keyWordViolet}}静滞力场{{/}}；否则那东西就会在我的工作室里变回液态銤元素。\n"
+"\n"
+"现在可以自我介绍了。很高兴认识你，我是{{@ class $keyWordViolet}}雅克·莫雷尔{{/}}。感谢你把这个样本完整地带回来。往常我只能拿到碎片和装着液态銤元素的容器。但这个样本，可值得我们好好研究一下。\n"
+"\n"
+"我有个想法——既然余响坦克由黑塔控制。那它们就好比被无形丝线操纵的木偶。蜘蛛也一样。嗯...一台邪门又迷人的机器。所以为什么会使用这种武器平台？显然和重力有某种联系...\n"
+"\n"
+"抱歉，我跑题了。为了抓住蜘蛛、不让它逃跑，我们得首先切断那些丝线。干扰它的信号。但丝线很多，每一根都具有不同的频率。现在，我的探测器在不同的波长上接收到了一系列信号。如果你能收集每一种余响坦克的样本，我就能研究它们的频率，把信号筛选出来，从而找出蜘蛛接收命令的确切频率。\n"
+"\n"
+"然后就该沙鲁尔登场了。它是邪不胜正的象征。就像传说中尼努尔塔的权杖，它会粉碎我们的对手。不用在乎这些名字，这些苏美尔神话风格的代号只是为了致敬传统文化。在文档里的名称更直白一些——{{@ class $keyWordViolet}}日蚀{{/}}。一辆能接近蜘蛛并干扰其信号的重装甲坦克。这辆坦克制造完毕后，还要为其设置正确的频率。因此，我们需要收集所有类型的余响坦克样本。\n"
+"\n"
+"虽然我很想亲自上场，但是...我不擅长战斗。毕竟术业有专攻嘛。\"\n"
+"\n"
+"{{@ class $titleManual}}作战手册规范:{{/}}\n"
+"{{@ class $textManual}}\"始终并肩作战。记住: 当您脱离团队，独自前往其他位置时，会引来余响坦克。一旦您的坦克被击毁，它们就会从后方夹击您的盟友，这将关乎任务的成败。\"{{/}}"
+
+msgid "meta/story/hw_artefact_4"
+msgstr ""
+"{{@ class $titleClass}}你们是想摧毁黑塔。摧毁我的家。你们说它危险，简直一派胡言。你们只是贪图力量。{{/}}\n"
+"\n"
+"离开。这里不欢迎你们。\n"
+"\n"
+"你们履带的声响...以前，意味着救赎，可现在...你们是想摧毁黑塔。摧毁我的家。你们说它危险，简直一派胡言。你们只是贪图力量。妄想将无法理解的东西占为己有。你们想控制銤元素，把它变成武器，把我变成你们的奴仆。\n"
+"\n"
+"在你们之前闯进来的人，也曾试图控制它。他们建造、捕获、占有，但最终全部迷失了自我。\n"
+"\n"
+"滚出去！你们这群茫然无知的羔羊，我们都是他的傀儡。{{@ class $keyWordViolet}}费里曼{{/}}在玩弄我们所有人，在他眼里我们只是用完即弃的棋子。\n"
+"\n"
+"现在，他甚至将你们引到了我这儿。他想让我消失，但你们太迟了。我不再需要拯救，因为我已学会自救。\n"
+"\n"
+"{{@ class $titleManual}}作战手册规范:{{/}}\n"
+"{{@ class $textManual}}\"单纯依赖坦克装甲是大忌。寻找掩体并隐藏薄弱部位。虽是老生常谈，但许多人在异象中总会忘记这点——或许是銤元素影响心智所致。\"{{/}}"
+
+msgid "meta/story/hw_artefact_5"
+msgstr ""
+"{{@ class $titleClass}}我们不是在拯救世界，只是在替费里曼办事。他把我们玩弄于股掌之间，操纵我们的一举一动。我亲手把亚历克斯带进了他的陷阱。{{/}}\n"
+"\n"
+"可恶...我在无线电里听到的那个声音。是她，{{@ class $keyWordViolet}}亚历克斯{{/}}——那个进入禁区的摄影师。她发现了余响坦克的源头，把录音传给了我们，并恳求我们带她走。她等待我们的救援，但我...我却选择服从命令: \"优先压制威胁，不宜进行疏散。\"我把她留在了那里。独自一人。\n"
+"\n"
+"莫雷尔证实了我最坏的猜测。费里曼，那个安保部门的混蛋，是他策划了整件事。他知道亚历克斯就是那座黑塔驻守将领的女儿。{{@ class $keyWordViolet}}格雷琴·冯·埃克哈特{{/}}。我们在异象中听到的，是她童年时留在异象里的余响。\n"
+"\n"
+"我们不是在拯救世界，只是在替费里曼办事。他把我们玩弄于股掌之间，操纵我们的一举一动。我亲手把亚历克斯带进了他的陷阱。\n"
+"\n"
+"莫雷尔说她已经不再是人类了。銤元素已经控制了她，并且这一切不可逆转。但是迷失者无法那样说话，她的意识仍然存在。她还在那里，孤身一人。\n"
+"\n"
+"我必须拯救她。我一定要救她。\n"
+"\n"
+"{{@ class $titleManual}}作战手册规范:{{/}}\n"
+"{{@ class $textManual}}\"标记您将要攻击的目标，协同集火，并引导盟友集中打击单一敌人，形成局部火力优势。\"{{/}}"
+
+msgid "meta/story/hw_artefact_6"
+msgstr ""
+"{{@ class $titleClass}}我体内的銤元素不断涌动，引领我深入黑塔深处。那里藏着我所寻找的答案。呼唤我的那个人...也在那里等着我。{{/}}\n"
+"\n"
+"[距离进攻还有七天]\n"
+"\n"
+"一段录音...但我不知道是哪一段。进入异象后过了多久——我也不知道。传送器没有把我带到巴比伦。反而让我来到了黑塔。\n"
+"\n"
+"我体内的銤元素在脉动，它占据我的思想，指引着我...让我前往{{@ class $keyWordViolet}}控制室{{/}}。这里给我似曾相识的感觉，一切都那么熟悉。这些空的\"{{@ class $keyWordViolet}}茧{{/}}\"，还有她的那个，是她在召唤我吗？\n"
+"\n"
+"她是谁？看起来几乎不像人类。皮肤苍白，只有紫色的銤元素在血管里脉动。维持着她的生命。如果那还能称之为活着的话。\n"
+"\n"
+"她一定知道所有的答案。她必须告诉我这里发生了什么。我该怎么和她说话？戴上同样的{{@ class $keyWordViolet}}头盔{{/}}？不。首先，趁我还有力气，得先勘察一下黑塔。\n"
+"\n"
+"{{@ class $titleManual}}作战手册规范:{{/}}\n"
+"{{@ class $textManual}}\"密切关注盟友坦克的生命值。若您拥有团体维修，记得为受损盟友恢复生命值。即便损失一辆坦克也会危及整个任务。\"{{/}}"
+
+msgid "meta/story/hw_artefact_7"
+msgstr ""
+"{{@ class $titleClass}}费里曼并非在寻找黑塔的坐标。他一直都知道它的位置。他之所以推动我们进行一次又一次远征，是为了别的目的。而现在，我似乎终于明白了他的真正意图。{{/}}\n"
+"\n"
+"是你吗？你听说了吗？费里曼消失了。他逃跑了，可能已经开始执行他的下一步计划。之前的行动不是为了寻找黑塔的坐标——费里曼早就知道了。我们的每一场远征、每一次牺牲，都是为了别的目的。\n"
+"\n"
+"多亏了你带回的样本，我才明白他为什么需要亚历克斯。但其他人呢？\n"
+"\n"
+"你看: 根据D系档案，黑塔里需要{{@ class $keyWordViolet}}操作员{{/}}才能向余响坦克发号施令。但普通人的心智无法同时控制数千台机器，所以每次来对付我们的都是十五辆坦克的小队——这是一名操作员的极限。黑塔需要新的\"心智\"。新鲜的、兼容的心智。\n"
+"\n"
+"亚历克斯不是什么误入异象的普通摄影师。我们现在才知道，她是格雷琴·冯·埃克哈特——这座黑塔驻守{{@ class $keyWordViolet}}将领的女儿{{/}}。\n"
+"\n"
+"\"格雷琴\"这个名字源自希腊语的\"玛格丽特\"，意思是\"珍珠\"。这并非巧合。那是她父亲发现她身上某种特别之处后所给予的称呼。她很可能就是D系档案中提到的\"{{@ class $keyWordViolet}}超级操作员{{/}}\"。\n"
+"\n"
+"如果亚历克斯变成的那个东西释放出全部潜力，如果它记起怎么操控銤元素，就会有成千上万辆坦克从异象中涌出。\n"
+"\n"
+"我们必须抓紧时间，阻止这一切。\n"
+"\n"
+"{{@ class $titleManual}}作战手册规范:{{/}}\n"
+"{{@ class $textManual}}\"与首领交战时，使用阶段内获取的特殊弹药，结合坦克的特殊能力，攻击敌人装甲弱点来造成更多损伤。\"{{/}}"
+
+msgid "meta/story/hw_artefact_8"
+msgstr ""
+"{{@ class $titleClass}}父亲为我取名格雷琴·冯·埃克哈特，他叫我\"珍珠\"。在他眼里，我与众不同。{{/}}\n"
+"\n"
+"[距离进攻还有七天]\n"
+"\n"
+"我是格雷琴。\n"
+"\n"
+"{{@ class $keyWordViolet}}格莱普尼尔计划{{/}}。D系曾想方设法征服銤元素。他们发现普通人效率低下，连控制几辆坦克都很吃力。这些能够感知銤元素的人，应该是在异象中出生的。\n"
+"\n"
+"我就是这个实验的产物。我们甚至没有名字，仅仅视为{{@ class $keyWordViolet}}生物信号发射器{{/}}、物体、资源。但对父亲来说，我是特别的。他在档案上留下了标签: 格雷琴·冯·埃克哈特，他叫我\"珍珠\"。\n"
+"\n"
+"第一个成功的样本。能力出众，可以抵抗銤元素侵蚀...我只是一个武器，本该引导余响坦克大军穿越裂缝。普通操作员会逐渐失去理智，沦为他人贯彻意志的冰冷工具。他们意识的一部分转移到了銤元素中——也就是余响中。他们尝试发出呼唤，试图逃离。但一旦失控，就会被直接关闭。他们的人格开始分裂，在余响中催生出新的异象，而他们的身体...依旧活着，但其意识早已不复存在。\n"
+"\n"
+"不过这些说的都是普通操作员。文件里没有提到像我这样的人。我越来越虚弱了，身体撑不了多久。如果我能完全融入銤元素，会发生什么事？\n"
+"\n"
+"我的思绪越发难以控制，难道是銤元素的影响？我不知道。还有太多尚未解答的问题。\n"
+"\n"
+"我必须和它对话。戴上头盔，才能了解全部真相！\n"
+"\n"
+"{{@ class $titleManual}}作战手册规范:{{/}}\n"
+"{{@ class $textManual}}\"\"高速冲撞\"无需消耗銤元素即可激活，但设有冷却时间。建议仅在紧要关头使用: 规避刺猬的攻击、躲开冲锋者的冲撞、脱离不朽者的光环，或在全员准备传送时快速抵达马格努斯。\"{{/}}"
+
+msgid "meta/story/hw_artefact_9"
+msgstr ""
+"{{@ class $titleClass}}在这里出生的人更加坚强。我们能塑造銤元素，控制它。有生以来，我第一次感到完整。{{/}}\n"
+"\n"
+"[距离进攻还有七天]\n"
+"\n"
+"太吵了。吵得受不了。成千上万的信号、噪音、低语。D系指令——冰冷、毫无生气的命令。\n"
+"\n"
+"你听得见吗？醒一醒！\n"
+"\n"
+"她已经没有残留的意识了。这个茧里的女人，现在只是一个{{@ class $keyWordViolet}}信号发射器{{/}}。这真的也是我的未来吗？成为往日阴谋的余响？\n"
+"\n"
+"不。文件中说，在这里出生的人更加坚强。我们能抵抗銤元素的影响，控制它，甚至塑造它。\n"
+"\n"
+"我得试试，想象粒子聚集在一起。\n"
+"\n"
+"我感觉到了什么，很奇怪，很吓人。但我第一次感到完整，我终于获得了力量。\n"
+"\n"
+"{{@ class $titleManual}}作战手册规范:{{/}}\n"
+"{{@ class $textManual}}\"注意: 进入新阶段时，异象将影响乘员，并赋予坦克随机战斗加成。请研究加成效果，并据此调整战术策略。\"{{/}}"
+
+msgid "metaCmp/completed"
+msgstr "已获得奖励%(icon)"
+
+msgid "metaCmp/name"
+msgstr "探秘之旅"
+
+msgid "metaIntro/description/fight"
+msgstr "参与活动战斗，获取密钥，完成目标，获得主要活动奖励。"
+
+msgid "metaIntro/description/progress"
+msgstr "使用在活动战斗中获得的密钥解密所有胶片。"
+
+msgid "metaIntro/description/reward"
+msgstr ""
+"完成所有目标、解密所有胶片即可获得主要活动奖励——独特的%(level)s级金币重型坦克{whiteSpanish_Start}%(tankName)s{whiteSpanish_End}。"
+
+msgid "metaIntro/header/fight"
+msgstr "战斗突击"
+
+msgid "metaIntro/header/progress"
+msgstr "解密胶片"
+
+msgid "metaIntro/header/reward"
+msgstr "独特奖励"
+
+msgid "metaIntro/title"
+msgstr "关于目标"
+
+msgid "missionWidget/complete"
+msgstr ""
+"任务完成。\n"
+"明天再来。"
+
+msgid "missionWidget/tooltipBody"
+msgstr "完成每24小时开放一次的每日任务，即可获得奖励。今日任务:"
+
+msgid "missionWidget/tooltipHeader"
+msgstr "每日任务"
+
+msgid "preBattle/leave"
+msgstr "退出战斗"
+
+msgid "preBattle/mainTip"
+msgstr "仍未找到侦察小队？请尝试变更难度等级。"
+
+msgid "preBattle/searching"
+msgstr "搜索盟友..."
+
+msgid "preBattle/tips/1"
+msgstr "前往巴比伦异象的传送门逐渐稳定下来了。请做好传送准备。"
+
+msgid "preBattle/tips/2"
+msgstr "您在巴比伦异象中的工作对我们非常重要。正在确认传送许可，请稍等。"
+
+msgid "preBattle/tips/3"
+msgstr "连接巴比伦异象中的通讯频道已超载。不要放弃希望。请待命，准备进行传送。"
+
+msgid "preBattle/uppercase/leave"
+msgstr "退出战斗"
+
+msgid "promoWindow/btn"
+msgstr "收到!"
+
+msgid "promoWindow/header"
+msgstr "参加巴比伦:黑塔活动"
+
+msgid "promoWindow/subheader"
+msgstr ""
+"{dateRange}，体验特殊的全新PvE游戏模式。\n"
+"完成{regularArtefactsLength}个目标，即可获得专属坦克:&nbsp;{level}{icon}{userName}。"
+
+msgid "reward/rest"
+msgstr "还有%(count)s个"
+
+msgid "rewardPath/about"
+msgstr "关于目标"
+
+msgid "rewardPath/aboutTooltip"
+msgstr "查看活动详情。"
+
+msgid "rewardPath/completed"
+msgstr "已获得主要奖励"
+
+msgid "rewardPath/crewMembers"
+msgstr "乘员"
+
+msgid "rewardPath/crewMembersTooltip"
+msgstr "点击即可查看所有活动乘员。"
+
+msgid "rewardPath/description"
+msgstr "再解密%(count)s个胶片即可获得主要奖励"
+
+msgid "rewardPath/intro"
+msgstr "简介"
+
+msgid "rewardPath/introTooltip"
+msgstr "观看简介视频。"
+
+msgid "rewardPath/title"
+msgstr "探秘之旅"
+
+msgid "rewardPathCard/name"
+msgstr "探秘之旅"
+
+msgid "rewardPathCard/storyChoice"
+msgstr "选择故事的结局！"
+
+msgid "rewardSelection/button"
+msgstr "领取奖励"
+
+msgid "rewardSelection/crew"
+msgstr "乘员"
+
+msgid "rewardSelection/limit"
+msgstr "已达到上限"
+
+msgid "rewardSelection/limitTooltip"
+msgstr "您已达到数量上限。取消选择一名乘员，即可更改您的选择。"
+
+msgid "rewardSelection/title"
+msgstr "选择您的奖励"
+
+msgid "shopCard/name"
+msgstr "活动礼包"
+
+msgid "shopCmp/name"
+msgstr "活动礼包"
+
+msgid "shopStyleWidget/description/button"
+msgstr "前往军械库"
+
+msgid "shopStyleWidget/description/notOwned"
+msgstr "开放"
+
+msgid "shopStyleWidget/description/owned"
+msgstr "已获得"
+
+msgid "shopStyleWidget/header"
+msgstr "适用于{name}的3D风格"
+
+msgid "squad/goToAnother/cancel"
+msgstr "取消"
+
+msgid "squad/goToAnother/message"
+msgstr "小队将被解散。"
+
+msgid "squad/goToAnother/submit"
+msgstr "离开"
+
+msgid "squad/goToAnother/title"
+msgstr "离开巴比伦:黑塔活动？"
+
+msgid "squad/leave/cancel"
+msgstr "取消"
+
+msgid "squad/leave/disabledEvent/message"
+msgstr "小队将被解散。"
+
+msgid "squad/leave/disabledEvent/submit"
+msgstr "收到！"
+
+msgid "squad/leave/disabledEvent/title"
+msgstr "巴比伦:黑塔活动已结束"
+
+msgid "squad/leave/message"
+msgstr "小队将被解散。"
+
+msgid "squad/leave/submit"
+msgstr "离开"
+
+msgid "squad/leave/title"
+msgstr "离开巴比伦:黑塔小队？"
+
+msgid "squad/leaveDisabled/cancel"
+msgstr "继续"
+
+msgid "squad/leaveDisabled/message"
+msgstr "您所在小队已做好战斗准备。"
+
+msgid "squad/leaveDisabled/title"
+msgstr "您无法离开小队！"
+
+msgid "storyChoice/main_view/button/side_option_1"
+msgstr "带走亚历克斯"
+
+msgid "storyChoice/main_view/button/side_option_2"
+msgstr "抛下亚历克斯"
+
+msgid "storyChoice/main_view/description/side_option_1"
+msgstr ""
+"史密斯: "
+"亚历克斯根本不知道自己在做什么！她不知道自己能否保留意识，还是会就此消散。我不能再次抛弃她。我们会把她连接到母舰的系统上，想办法让她恢复意识。我们绝不抛弃自己人。永远不会。"
+
+msgid "storyChoice/main_view/description/side_option_2"
+msgstr ""
+"莫雷尔: 我们必须彻底摧毁黑塔和她的躯壳，这将斩断束缚着亚历克斯的纽带。我们必须给她自由——这才是她的选择。只有这样她才能重生并成为全新的存在。"
+
+msgid "storyChoice/main_view/header"
+msgstr "选择故事的结局:"
+
+msgid "storyChoiceAward/community"
+msgstr ""
+"玩家社群的最终选择将决定未来的活动故事。\n"
+"请前往游戏官网查看最新消息。"
+
+msgid "storyChoiceAward/option_1/title"
+msgstr "您将亚历克斯带上了马尔杜克号"
+
+msgid "storyChoiceAward/option_2/title"
+msgstr "您让亚历克斯投入了銤元素的怀抱"
+
+msgid "storyChoiceAward/subtitle"
+msgstr "已作出选择！"
+
+msgid "storyChoiceConfirm/cancel"
+msgstr "返回"
+
+msgid "storyChoiceConfirm/description"
+msgstr "结果将在活动结束后揭晓。请前往游戏官网查看最新消息。"
+
+msgid "storyChoiceConfirm/option_1/confirm"
+msgstr "带走亚历克斯"
+
+msgid "storyChoiceConfirm/option_1/title"
+msgstr "带走亚历克斯？"
+
+msgid "storyChoiceConfirm/option_2/confirm"
+msgstr "抛下亚历克斯"
+
+msgid "storyChoiceConfirm/option_2/title"
+msgstr "抛下亚历克斯？"
+
+msgid "storyChoiceConfirm/warning"
+msgstr "此选择为最终决定。玩家社群的整体选择将影响下一章节的剧情。"
+
+msgid "vehicle/rent/label"
+msgstr ""
+"完成{cream_open}目标%(number)s{cream_close}或购买{cream_open}活动礼包{cream_close}，即可解锁该坦克。"
+
+msgid "vehicle/rent/packs"
+msgstr "前往活动礼包"
+
+msgid "vehicle/rent/tasks"
+msgstr "前往目标"
+
+msgid "vehicle/tasks/locked"
+msgstr ""
+"完成当前任务({cream_open}目标%(number)s{cream_close})或购买相应{cream_open}活动礼包{cream_close}，即可解锁该坦克。"

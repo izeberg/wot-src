@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.locale.MESSENGER import MESSENGER as I18N_MESSENGER
 from helpers import i18n, time_utils
 from messenger.m_constants import CLIENT_ACTION_ID, CLIENT_ERROR_ID

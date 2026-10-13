@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from PrefabEffectsAvailability import getDebugForceHitType, getPrefabEffectsAvailable, setPrefabEffectsEnabledForBattle
 from constants import VEHICLE_HIT_EFFECT, IS_DEVELOPMENT
 from items import vehicles

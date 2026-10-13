@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, BigWorld, Keys, typing, CommandMapping, SoundGroups, VOIP
 from account_helpers import AccountSettings
 from account_helpers.AccountSettings import COMP7_IS_VOIP_IN_BATTLE_ACTIVATED
@@ -57,6 +58,10 @@ class Comp7VOIPController(IComp7VOIPController):
     def __VOIPManager(self):
         return VOIP.getVOIPManager()
 
+    @property
+    def __arenaBonusType(self):
+        return self.__sessionProvider.arenaVisitor.getArenaBonusType()
+
     def startControl(self, *_, **__):
         _logger.debug('[COMP7] Comp7VOIPController started.')
         self.__subscribe()
@@ -76,6 +81,10 @@ class Comp7VOIPController(IComp7VOIPController):
         else:
             if self.__cooldownCallback is not None:
                 _logger.info('Failed to toggle Comp7 team VOIP channel. Cooldown is in progress.')
+                return
+            if not self.isTeamChannelAvailable and self.isVoipSupported:
+                if not self.__isSoloPlayer():
+                    event_dispatcher.toggleVoipChannelEnabled(self.__arenaBonusType)
                 return
             if not self.isTeamVoipEnabled:
                 _logger.error('Failed to toggle Comp7 team VOIP channel. Joining is not allowed.')
@@ -137,12 +146,15 @@ class Comp7VOIPController(IComp7VOIPController):
         return ClientActionMessage(text)
 
     def __handleKeyEvent(self, event):
-        if not self.isTeamVoipEnabled:
+        canToggleTeamChannel = self.isTeamVoipEnabled
+        canTogglePlatoonChannel = self.isVoipSupported and not self.isTeamChannelAvailable
+        if not canToggleTeamChannel and not canTogglePlatoonChannel:
             return
         if event.key == getKey(CommandMapping.CMD_VOICECHAT_ENABLE):
             if event.isKeyDown() and not event.isRepeatedEvent():
-                soundEvent = _VOICE_CHAT_ENTER_SOUND_EVENT if not self.isJoined else _VOICE_CHAT_EXIT_SOUND_EVENT
-                SoundGroups.g_instance.playSound2D(soundEvent)
+                if canToggleTeamChannel:
+                    soundEvent = _VOICE_CHAT_ENTER_SOUND_EVENT if not self.isJoined else _VOICE_CHAT_EXIT_SOUND_EVENT
+                    SoundGroups.g_instance.playSound2D(soundEvent)
                 self.toggleChannelConnection()
 
     def __clearCooldown(self):

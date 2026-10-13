@@ -128,7 +128,7 @@ package net.wg.gui.lobby.fortifications.cmp.selector
             }
             if(this._isMouseOver)
             {
-               if(!enabled)
+               if(this.notReadyAlert.visible || this.vehicleFrozenIcon.visible)
                {
                   this.showAlertTooltip();
                }
@@ -138,14 +138,7 @@ package net.wg.gui.lobby.fortifications.cmp.selector
                   {
                      gotoAndPlay(OVER_STATE);
                   }
-                  if(this._itemVO.isFrozen)
-                  {
-                     this.showAlertTooltip();
-                  }
-                  else
-                  {
-                     this.hideTooltip();
-                  }
+                  this.hideTooltip();
                }
             }
             this.updateLayout();

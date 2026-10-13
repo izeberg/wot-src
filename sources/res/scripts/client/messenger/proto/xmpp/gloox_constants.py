@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from future.utils import viewitems
 import BigWorld
 _XmppClient = BigWorld.XmppClient
 
@@ -18,7 +20,7 @@ class PRESENCE(object):
 PRESENCES_ORDER = (
  PRESENCE.AVAILABLE, PRESENCE.CHAT, PRESENCE.AWAY, PRESENCE.DND, PRESENCE.XA,
  PRESENCE.UNAVAILABLE, PRESENCE.UNKNOWN)
-PRESENCES_NAMES = dict([ (v, k) for k, v in PRESENCE.__dict__.iteritems() if v in PRESENCE.RANGE ])
+PRESENCES_NAMES = {v:k for k, v in viewitems(PRESENCE.__dict__) if v in PRESENCE.RANGE if v in PRESENCE.RANGE}
 
 class SUBSCRIPTION(object):
     OFF = _XmppClient.SUBSCRIPTION_OFF
@@ -26,7 +28,7 @@ class SUBSCRIPTION(object):
     PENDING = _XmppClient.SUBSCRIPTION_PENDING
 
 
-SUBSCRIPTION_NAMES = dict([ (v, k) for k, v in SUBSCRIPTION.__dict__.iteritems() if not k.startswith('_') ])
+SUBSCRIPTION_NAMES = {v:k for k, v in viewitems(SUBSCRIPTION.__dict__) if not k.startswith('_') if not k.startswith('_')}
 
 class CONNECTION_STATE(object):
     DISCONNECTED = _XmppClient.STATE_DISCONNECTED
@@ -123,7 +125,7 @@ class GLOOX_EVENT(object):
     CONNECTED, LOGIN, DISCONNECTED, ROSTER_RESULT, ROSTER_ITEM_SET, ROSTER_ITEM_REMOVED, PRESENCE, SUBSCRIPTION_REQUEST, LOG, IQ, ROSTER_QUERY, MESSAGE, PRESENCE_ERROR, MESSAGE_ERROR = ALL = range(0, 14)
 
 
-GLOOX_EVENTS_NAMES = dict([ (v, k) for k, v in GLOOX_EVENT.__dict__.iteritems() if v in GLOOX_EVENT.ALL ])
+GLOOX_EVENTS_NAMES = {v:k for k, v in viewitems(GLOOX_EVENT.__dict__) if v in GLOOX_EVENT.ALL if v in GLOOX_EVENT.ALL}
 INBOUND_SUB_BATCH_SIZE = 100
 INBOUND_SUB_INTERVAL = 2
 

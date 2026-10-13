@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from notification.AlertController import AlertController
 from notification.NotificationsCounter import NotificationsCounter
 from notification.NotificationsModel import NotificationsModel

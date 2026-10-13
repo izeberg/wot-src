@@ -1,0 +1,612 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-16 10:00+0300\n"
+"PO-Revision-Date: 2023-03-16 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "buffs/buffAccuracy/body"
+msgstr ""
+"移动时、车体和炮塔旋转时的炮弹散布范围降低{{@ class $highlightClass}}%(generalValue)s%%{{/}}。"
+
+msgid "buffs/buffAccuracy/description/1"
+msgstr ""
+"%(value)s移动和车体旋转时的\n"
+"炮弹散布范围"
+
+msgid "buffs/buffAccuracy/description/tab"
+msgstr ""
+"降低\n"
+"炮弹散布范围。"
+
+msgid "buffs/buffAccuracy/description/tabTooltip"
+msgstr "降低移动时、车体和炮塔旋转时的炮弹散布范围。"
+
+msgid "buffs/buffAccuracy/header"
+msgstr "精准射手"
+
+msgid "buffs/buffAccuracy/value/1"
+msgstr "-%(generalValue)s%%"
+
+msgid "buffs/buffBomberResist/body"
+msgstr ""
+"使您的坦克完全{{@ class $highlightClass}}免疫{{/}}刺猬和阿尔法刺猬的{{@ class $highlightClass}}爆炸损伤{{/}}。\n"
+"坦克仍会受到刺猬的撞击损伤。"
+
+msgid "buffs/buffBomberResist/description/1"
+msgstr ""
+"使您的坦克免疫\n"
+"刺猬的爆炸损伤。"
+
+msgid "buffs/buffBomberResist/description/tab"
+msgstr "使您的坦克免疫刺猬的爆炸损伤。"
+
+msgid "buffs/buffBomberResist/description/tabTooltip"
+msgstr ""
+"使您的坦克免疫刺猬和阿尔法刺猬的爆炸损伤。\n"
+"坦克仍会受到刺猬的撞击损伤。"
+
+msgid "buffs/buffBomberResist/header"
+msgstr "爆炸免疫"
+
+msgid "buffs/buffControlledDamage/body"
+msgstr "移除{{@ class $highlightClass}}±25%{{/}}的潜在损伤浮动范围，消除射击损伤的随机性。"
+
+msgid "buffs/buffControlledDamage/description/1"
+msgstr ""
+"移除射击±25%%的\n"
+"潜在损伤浮动范围。"
+
+msgid "buffs/buffControlledDamage/description/tab"
+msgstr "移除射击±25%的潜在损伤浮动范围。"
+
+msgid "buffs/buffControlledDamage/description/tabTooltip"
+msgstr "移除±25%的潜在损伤浮动范围，消除射击损伤的随机性。"
+
+msgid "buffs/buffControlledDamage/header"
+msgstr "稳扎稳打"
+
+msgid "buffs/buffDamageMitigation/body"
+msgstr ""
+"受到的损伤*（包括射击、起火、撞击、崩坏区域、腐蚀阶段、模块损伤等）降低{{@ class $highlightClass}}%(mitigation)s%%{{/}}。\n"
+"*不适用于坠落和处决阶段造成的损伤。"
+
+msgid "buffs/buffDamageMitigation/description/1"
+msgstr "%(value)s受到的损伤。"
+
+msgid "buffs/buffDamageMitigation/description/tab"
+msgstr "降低受到的损伤。"
+
+msgid "buffs/buffDamageMitigation/description/tabTooltip"
+msgstr ""
+"降低受到的损伤*（包括射击、起火、撞击、崩坏区域、腐蚀阶段、模块损伤等）。\n"
+"*不适用于坠落和处决阶段造成的损伤。"
+
+msgid "buffs/buffDamageMitigation/header"
+msgstr "损伤吸收"
+
+msgid "buffs/buffDamageMitigation/value/1"
+msgstr "-%(mitigation)s%%"
+
+msgid "buffs/buffDrainOnShot/body"
+msgstr ""
+"对敌方坦克造成射击损伤时，有{{@ class $highlightClass}}%(chance)s%%{{/}}的几率为自身坦克恢复{{@ "
+"class $highlightClass}}%(heal)s点{{/}}生命值。"
+
+msgid "buffs/buffDrainOnShot/description/1"
+msgstr ""
+"%(value)s对敌人造成射击损伤时\n"
+"恢复生命值的几率。"
+
+msgid "buffs/buffDrainOnShot/description/tab"
+msgstr ""
+"对敌人造成射击损伤时\n"
+"有机会恢复生命值。"
+
+msgid "buffs/buffDrainOnShot/description/tabTooltip"
+msgstr "对敌方坦克造成射击损伤时，有机会为自身坦克恢复生命值。"
+
+msgid "buffs/buffDrainOnShot/header"
+msgstr "暗黑之吻"
+
+msgid "buffs/buffDrainOnShot/value/1"
+msgstr "+%(chance)s%%"
+
+msgid "buffs/buffEnlargeHealth/body"
+msgstr "坦克生命值提高{{@ class $highlightClass}}%(health)s%%{{/}}。"
+
+msgid "buffs/buffEnlargeHealth/description/1"
+msgstr "%(value)s坦克生命值。"
+
+msgid "buffs/buffEnlargeHealth/description/tab"
+msgstr ""
+"提高\n"
+"坦克生命值。"
+
+msgid "buffs/buffEnlargeHealth/description/tabTooltip"
+msgstr "提高坦克生命值。"
+
+msgid "buffs/buffEnlargeHealth/header"
+msgstr "钢筋铁骨"
+
+msgid "buffs/buffEnlargeHealth/value/1"
+msgstr "+%(health)s%%"
+
+msgid "buffs/buffIgniteOnShot/body"
+msgstr ""
+"对敌方坦克造成射击损伤时，使敌方坦克起火的几率提高{{@ class $highlightClass}}%(chance)s%%{{/}}。"
+
+msgid "buffs/buffIgniteOnShot/description/1"
+msgstr ""
+"%(value)s使敌方坦克\n"
+"起火的几率。"
+
+msgid "buffs/buffIgniteOnShot/description/tab"
+msgstr ""
+"提高使敌方坦克\n"
+"起火的几率。"
+
+msgid "buffs/buffIgniteOnShot/description/tabTooltip"
+msgstr "对敌方坦克造成射击损伤时，提高使敌方坦克起火的几率。"
+
+msgid "buffs/buffIgniteOnShot/header"
+msgstr "炽热针刺"
+
+msgid "buffs/buffIgniteOnShot/value/1"
+msgstr "+%(chance)s%%"
+
+msgid "buffs/buffIncreaseDamage/body"
+msgstr "对敌方坦克造成的损伤提高{{@ class $highlightClass}}%(damageFactor)s%%{{/}}。"
+
+msgid "buffs/buffIncreaseDamage/description/1"
+msgstr "%(value)s造成的损伤。"
+
+msgid "buffs/buffIncreaseDamage/description/tab"
+msgstr ""
+"提高\n"
+"造成的损伤。"
+
+msgid "buffs/buffIncreaseDamage/description/tabTooltip"
+msgstr "提高造成的损伤。"
+
+msgid "buffs/buffIncreaseDamage/header"
+msgstr "陶瓷弹头"
+
+msgid "buffs/buffIncreaseDamage/value/1"
+msgstr "+%(damageFactor)s%%"
+
+msgid "buffs/buffIncreaseRateOfFire/body"
+msgstr "装填速度提高{{@ class $highlightClass}}%(reloadTime)s%%{{/}}。"
+
+msgid "buffs/buffIncreaseRateOfFire/description/1"
+msgstr "%(value)s装填速度。"
+
+msgid "buffs/buffIncreaseRateOfFire/description/tab"
+msgstr ""
+"提高\n"
+"装填速度。"
+
+msgid "buffs/buffIncreaseRateOfFire/description/tabTooltip"
+msgstr "提高装填速度。"
+
+msgid "buffs/buffIncreaseRateOfFire/header"
+msgstr "机枪速射"
+
+msgid "buffs/buffIncreaseRateOfFire/value/1"
+msgstr "+%(reloadTime)s%%"
+
+msgid "buffs/buffInfiniteHeal/body"
+msgstr ""
+"逐渐恢复自身坦克的生命值，直至完全恢复。\n"
+"受到损伤时将暂停恢复效果。"
+
+msgid "buffs/buffInfiniteHeal/description/1"
+msgstr ""
+"逐渐恢复\n"
+"自身坦克的生命值。"
+
+msgid "buffs/buffInfiniteHeal/description/tab"
+msgstr ""
+"恢复\n"
+"生命值。"
+
+msgid "buffs/buffInfiniteHeal/description/tabTooltip"
+msgstr "逐渐恢复自身坦克的生命值，直至完全恢复。受到损伤时将暂停恢复效果。"
+
+msgid "buffs/buffInfiniteHeal/header"
+msgstr "恢复活力"
+
+msgid "buffs/buffInfiniteMiriumCapacity/body"
+msgstr "坦克在战斗中的銤元素容量将{{@ class $highlightClass}}没有上限{{/}}。"
+
+msgid "buffs/buffInfiniteMiriumCapacity/description/1"
+msgstr "移除銤元素容量上限。"
+
+msgid "buffs/buffInfiniteMiriumCapacity/description/tab"
+msgstr "移除銤元素容量上限。"
+
+msgid "buffs/buffInfiniteMiriumCapacity/description/tabTooltip"
+msgstr "坦克在战斗中的銤元素容量将没有上限。"
+
+msgid "buffs/buffInfiniteMiriumCapacity/header"
+msgstr "无限收集器"
+
+msgid "buffs/buffInspiration/body"
+msgstr "所有乘员的乘员效率加成提高{{@ class $highlightClass}}%(crewLevelIncrease)s%%{{/}}。"
+
+msgid "buffs/buffInspiration/description/1"
+msgstr "%(value)s乘员效率加成"
+
+msgid "buffs/buffInspiration/description/tab"
+msgstr ""
+"提高乘员\n"
+"效率。"
+
+msgid "buffs/buffInspiration/description/tabTooltip"
+msgstr "提高乘员效率。"
+
+msgid "buffs/buffInspiration/header"
+msgstr "振奋军心"
+
+msgid "buffs/buffInspiration/value/1"
+msgstr "+%(crewLevelIncrease)s%%"
+
+msgid "buffs/buffInstakill/body"
+msgstr ""
+"对敌方坦克造成射击损伤后，若其剩余生命值低于或等于{{@ class $highlightClass}}%(hpThreshold)s%%{{/}}，则立即将其摧毁。\n"
+"首领免疫此效果。"
+
+msgid "buffs/buffInstakill/description/1"
+msgstr ""
+"对敌方坦克造成射击损伤后，若其剩余生命值\n"
+"低于或等于%(value)s，则立即将其摧毁。"
+
+msgid "buffs/buffInstakill/description/tab"
+msgstr "对敌方坦克造成射击损伤后，若其剩余生命值较少，则立即将其摧毁。"
+
+msgid "buffs/buffInstakill/description/tabTooltip"
+msgstr ""
+"对敌方坦克造成射击损伤后，若其剩余生命值较少，则立即将其摧毁。\n"
+"首领免疫此效果。"
+
+msgid "buffs/buffInstakill/header"
+msgstr "收割残兵"
+
+msgid "buffs/buffInstakill/value/1"
+msgstr "%(hpThreshold)s%%"
+
+msgid "buffs/buffMaxSpeedTurbine/body"
+msgstr "提高坦克的最大前进速度和最大倒车速度。"
+
+msgid "buffs/buffMaxSpeedTurbine/description/1"
+msgstr ""
+"提高坦克的\n"
+"最大前进速度和倒车速度。"
+
+msgid "buffs/buffMaxSpeedTurbine/description/tab"
+msgstr "提高坦克的最大前进速度和最大倒车速度。"
+
+msgid "buffs/buffMaxSpeedTurbine/description/tabTooltip"
+msgstr "提高坦克的最大前进速度和最大倒车速度。"
+
+msgid "buffs/buffMaxSpeedTurbine/header"
+msgstr "全速前进"
+
+msgid "buffs/buffMiriumAmplification/body"
+msgstr ""
+"在战斗中对敌人造成损伤所获得的銤元素数量提高{{@ class "
+"$highlightClass}}%(miriumAmountFactor)s%%{{/}}。"
+
+msgid "buffs/buffMiriumAmplification/description/1"
+msgstr ""
+"%(value)s从敌人处\n"
+"获得的銤元素。"
+
+msgid "buffs/buffMiriumAmplification/description/tab"
+msgstr "提高从敌人处获得的銤元素数量。"
+
+msgid "buffs/buffMiriumAmplification/description/tabTooltip"
+msgstr "提高在战斗中对敌人造成损伤所获得的銤元素数量。"
+
+msgid "buffs/buffMiriumAmplification/header"
+msgstr "銤元素提取"
+
+msgid "buffs/buffMiriumAmplification/value/1"
+msgstr "+%(miriumAmountFactor)s%%"
+
+msgid "buffs/buffMiriumCapacity/body"
+msgstr "坦克在战斗中的銤元素容量上限提高{{@ class $highlightClass}}%(miriumAmount)s{{/}}。"
+
+msgid "buffs/buffMiriumCapacity/description/1"
+msgstr "%(value)s銤元素容量上限。"
+
+msgid "buffs/buffMiriumCapacity/description/tab"
+msgstr "提高銤元素容量上限。"
+
+msgid "buffs/buffMiriumCapacity/description/tabTooltip"
+msgstr "提高坦克在战斗中的銤元素容量上限。"
+
+msgid "buffs/buffMiriumCapacity/header"
+msgstr "大容量收集器"
+
+msgid "buffs/buffMiriumCapacity/value/1"
+msgstr "+%(miriumAmount)s"
+
+msgid "buffs/buffMiriumDeathKeeper/body"
+msgstr "坦克在战斗中被击毁后，重生时将保留被击毁前的所有銤元素。"
+
+msgid "buffs/buffMiriumDeathKeeper/description/1"
+msgstr ""
+"重生时将保留被击毁前的\n"
+"所有銤元素。"
+
+msgid "buffs/buffMiriumDeathKeeper/description/tab"
+msgstr "重生时保留被击毁前的所有銤元素。"
+
+msgid "buffs/buffMiriumDeathKeeper/description/tabTooltip"
+msgstr "重生时保留被击毁前的所有銤元素。"
+
+msgid "buffs/buffMiriumDeathKeeper/header"
+msgstr "銤元素守护者"
+
+msgid "buffs/buffMiriumEfficiency/body"
+msgstr "在战斗中，战斗能力的銤元素花费降低{{@ class $highlightClass}}%(cost)s%%{{/}}。"
+
+msgid "buffs/buffMiriumEfficiency/description/1"
+msgstr "%(value)s战斗能力的銤元素花费。"
+
+msgid "buffs/buffMiriumEfficiency/description/tab"
+msgstr "降低战斗能力的銤元素花费。"
+
+msgid "buffs/buffMiriumEfficiency/description/tabTooltip"
+msgstr "在战斗中，大幅降低战斗能力的銤元素花费。"
+
+msgid "buffs/buffMiriumEfficiency/header"
+msgstr "銤元素效率"
+
+msgid "buffs/buffMiriumEfficiency/value/1"
+msgstr "-%(cost)s%%"
+
+msgid "buffs/buffMiriumRefund/body"
+msgstr "使用战斗能力时，返还{{@ class $highlightClass}}%(refundAmount)s%%{{/}}銤元素花费。"
+
+msgid "buffs/buffMiriumRefund/description/1"
+msgstr ""
+"使用战斗能力时，\n"
+"返还%(value)s銤元素。"
+
+msgid "buffs/buffMiriumRefund/description/tab"
+msgstr "使用战斗能力时，返还部分銤元素。"
+
+msgid "buffs/buffMiriumRefund/description/tabTooltip"
+msgstr "使用战斗能力时，返还一部分銤元素花费。"
+
+msgid "buffs/buffMiriumRefund/header"
+msgstr "銤元素返还"
+
+msgid "buffs/buffMiriumRefund/value/1"
+msgstr "+%(refundAmount)s%%"
+
+msgid "buffs/buffMobility/body"
+msgstr ""
+"发动机功率提高{{@ class $highlightClass}}%(power)s%%{{/}}，炮塔旋转速度提高{{@ class "
+"$highlightClass}}%(rotationSpeed)s%%{{/}}。"
+
+msgid "buffs/buffMobility/description/1"
+msgstr "%(value)s发动机功率。"
+
+msgid "buffs/buffMobility/description/2"
+msgstr "%(value)s炮塔旋转速度。"
+
+msgid "buffs/buffMobility/description/tab"
+msgstr ""
+"提高发动机功率\n"
+"和炮塔旋转速度。"
+
+msgid "buffs/buffMobility/description/tabTooltip"
+msgstr "提高发动机功率和炮塔旋转速度。"
+
+msgid "buffs/buffMobility/header"
+msgstr "全力冲刺"
+
+msgid "buffs/buffMobility/value/1"
+msgstr "+%(power)s%%"
+
+msgid "buffs/buffMobility/value/2"
+msgstr "+%(rotationSpeed)s%%"
+
+msgid "buffs/buffModulesInvulnerability/body"
+msgstr "使所有坦克模块免受任何损伤。"
+
+msgid "buffs/buffModulesInvulnerability/description/1"
+msgstr ""
+"使所有坦克模块\n"
+"免受任何损伤。"
+
+msgid "buffs/buffModulesInvulnerability/description/tab"
+msgstr ""
+"使模块\n"
+"免受损伤。"
+
+msgid "buffs/buffModulesInvulnerability/description/tabTooltip"
+msgstr "使所有坦克模块免受任何损伤。"
+
+msgid "buffs/buffModulesInvulnerability/header"
+msgstr "无敌模块"
+
+msgid "buffs/buffModulesInvulnerability/vehicleAnomaly"
+msgstr "孔雀石的默认异化剂，永久生效。"
+
+msgid "buffs/buffShellPenetration/body"
+msgstr "所有炮弹的平均穿透力提高{{@ class $highlightClass}}%(shellPen)s%%{{/}}。"
+
+msgid "buffs/buffShellPenetration/description/1"
+msgstr "%(value)s炮弹平均穿透力。"
+
+msgid "buffs/buffShellPenetration/description/tab"
+msgstr "提高所有炮弹的平均穿透力。"
+
+msgid "buffs/buffShellPenetration/description/tabTooltip"
+msgstr "提高所有炮弹的平均穿透力。"
+
+msgid "buffs/buffShellPenetration/header"
+msgstr "穿甲炮弹"
+
+msgid "buffs/buffShellPenetration/value/1"
+msgstr "+%(shellPen)s%%"
+
+msgid "buffs/buffShellsKeeper/body"
+msgstr "如果坦克在战斗中被击毁，重生时会保留被击毁前的所有备用炮弹。"
+
+msgid "buffs/buffShellsKeeper/description/1"
+msgstr ""
+"重生时保留被击毁前的\n"
+"所有备用炮弹。"
+
+msgid "buffs/buffShellsKeeper/description/tab"
+msgstr "重生时保留被击毁前的所有备用炮弹。"
+
+msgid "buffs/buffShellsKeeper/description/tabTooltip"
+msgstr "如果坦克在战斗中被击毁，重生时会保留被击毁前的所有备用炮弹。"
+
+msgid "buffs/buffShellsKeeper/header"
+msgstr "炮弹守护者"
+
+msgid "buffs/buffSoulsBonus/body"
+msgstr ""
+"在每个新阶段开始时或重生后获得的銤元素数量提高{{@ class "
+"$highlightClass}}%(soulsBonus)s{{/}}。坦克在战斗中的銤元素容量上限提高{{@ class "
+"$highlightClass}}%(miriumAmount)s{{/}}。"
+
+msgid "buffs/buffSoulsBonus/description/1"
+msgstr ""
+"%(value)s在新阶段\n"
+"或重生后获得的銤元素。"
+
+msgid "buffs/buffSoulsBonus/description/2"
+msgstr "%(value)s銤元素容量上限。"
+
+msgid "buffs/buffSoulsBonus/description/tab"
+msgstr "提高銤元素容量，以及在新阶段或重生后获得的銤元素数量。"
+
+msgid "buffs/buffSoulsBonus/description/tabTooltip"
+msgstr "提高在每个新阶段开始时或重生后获得的銤元素数量。提高坦克在战斗中的銤元素容量上限。"
+
+msgid "buffs/buffSoulsBonus/header"
+msgstr "銤元素小金库"
+
+msgid "buffs/buffSoulsBonus/value/1"
+msgstr "+%(soulsBonus)s"
+
+msgid "buffs/buffSoulsBonus/value/2"
+msgstr "+%(miriumAmount)s"
+
+msgid "buffs/buffTurboRacer/body"
+msgstr ""
+"将\"高速冲撞\"持续时间延长{{@ class $highlightClass}}%(timeLength)s%%{{/}}，并将冷却时间缩短{{@ "
+"class $highlightClass}}%(reloadTime)s秒{{/}}。"
+
+msgid "buffs/buffTurboRacer/description/1"
+msgstr "%(value)s\"高速冲撞\"持续时间。"
+
+msgid "buffs/buffTurboRacer/description/2"
+msgstr "%(value)s秒\"高速冲撞\"冷却时间。"
+
+msgid "buffs/buffTurboRacer/description/tab"
+msgstr "\"高速冲撞\"持续时间延长，冷却时间缩短。"
+
+msgid "buffs/buffTurboRacer/description/tabTooltip"
+msgstr "\"高速冲撞\"持续时间延长，冷却时间缩短。"
+
+msgid "buffs/buffTurboRacer/header"
+msgstr "涡轮增强器"
+
+msgid "buffs/buffTurboRacer/value/1"
+msgstr "+%(timeLength)s%%"
+
+msgid "buffs/buffTurboRacer/value/2"
+msgstr "-%(reloadTime)s"
+
+msgid "buffs/buffVariableDamage/body"
+msgstr ""
+"射击时有几率造成特定数值的损伤: \n"
+"• 有{{@ class $highlightClass}}%(chance1)s%%{{/}}的几率造成{{@ class $highlightClass}}%(damage1)s%%{{/}}的损伤；\n"
+"• 有{{@ class $highlightClass}}%(chance2)s%%{{/}}的几率造成{{@ class $highlightClass}}%(damage2)s%%{{/}}的损伤；\n"
+"• 有{{@ class $highlightClass}}%(chance3)s%%{{/}}的几率造成{{@ class $highlightClass}}%(damage3)s%%{{/}}的损伤；\n"
+"• 有{{@ class $highlightClass}}%(chance4)s%%{{/}}的几率造成{{@ class $highlightClass}}%(damage4)s%%{{/}}的损伤。"
+
+msgid "buffs/buffVariableDamage/description/1"
+msgstr ""
+"射击损伤在\n"
+"低至极高范围内浮动。"
+
+msgid "buffs/buffVariableDamage/description/tab"
+msgstr "射击损伤在低至极高范围内浮动。"
+
+msgid "buffs/buffVariableDamage/description/tabTooltip"
+msgstr "有几率造成低于常规的损伤/极高的损伤。"
+
+msgid "buffs/buffVariableDamage/header"
+msgstr "量子射击"
+
+msgid "buffs/buffVariableDamage/value/1"
+msgstr "%(chance1)s%"
+
+msgid "buffs/buffVariableDamage/value/2"
+msgstr "%(damage1)s%"
+
+msgid "buffs/buffVariableDamage/value/3"
+msgstr "%(chance2)s%"
+
+msgid "buffs/buffVariableDamage/value/4"
+msgstr "%(damage2)s%"
+
+msgid "buffs/buffVariableDamage/value/5"
+msgstr "%(chance3)s%"
+
+msgid "buffs/buffVariableDamage/value/6"
+msgstr "%(damage3)s%"
+
+msgid "buffs/buffVariableDamage/value/7"
+msgstr "%(chance4)s%"
+
+msgid "buffs/buffVariableDamage/value/8"
+msgstr "%(damage4)s%"
+
+msgid "buffs/epic/body"
+msgstr "?empty?"
+
+msgid "buffs/epic/description/1"
+msgstr "?empty?"
+
+msgid "buffs/epic/description/tab"
+msgstr "?empty?"
+
+msgid "buffs/epic/description/tabTooltip"
+msgstr "?empty?"
+
+msgid "buffs/epic/header"
+msgstr "?empty?"
+
+msgid "buffs/secret/body"
+msgstr "?empty?"
+
+msgid "buffs/secret/description/1"
+msgstr "?empty?"
+
+msgid "buffs/secret/description/tab"
+msgstr "?empty?"
+
+msgid "buffs/secret/description/tabTooltip"
+msgstr "?empty?"
+
+msgid "buffs/secret/header"
+msgstr "?empty?"
+
+msgid "notification/moreInformation"
+msgstr "详情"

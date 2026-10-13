@@ -18,6 +18,9 @@ msgstr "逐一射击弹鼓中的数发炮弹，每一发会随着时间自动装
 msgid "abilities/common/description/autoShootGun"
 msgstr "快速连续射击数发炮弹，在短时间内造成高额损伤，但会牺牲穿透力与精度。最适合近战。"
 
+msgid "abilities/common/description/combatThrottle"
+msgstr "激活档位，可暂时提高发动机功率、速度和操控性，同时保持可靠的火炮手感。这使其能够实现灵活机动的玩法，且不影响作战效能。"
+
 msgid "abilities/common/description/damageMutable"
 msgstr "射击星形弹托炮弹，可对50米内的目标造成最大损伤。炮弹的损伤会随距离增加而降低，因此最适合近战。"
 
@@ -70,6 +73,9 @@ msgstr "改进型自动装填炮"
 msgid "abilities/common/name/autoShootGun"
 msgstr "自动炮"
 
+msgid "abilities/common/name/combatThrottle"
+msgstr "战斗档位"
+
 msgid "abilities/common/name/damageMutable"
 msgstr "深膛线火炮"
 
@@ -111,6 +117,15 @@ msgstr "涡轮模式"
 
 msgid "abilities/common/name/twinGun"
 msgstr "齐射射击模式"
+
+msgid "abilities/common/shortDescription/combatThrottle"
+msgstr "提高机动性，同时不影响火炮手感。"
+
+msgid "abilities/common/shortDescription/overheatGun"
+msgstr "该系统支持连续射击而无需重新装填，并控制火炮射击时产生的热量。"
+
+msgid "abilities/common/shortDescription/shellParamsSwitcher"
+msgstr "该火炮配备特殊装置，可在开火前调整射击诸元。"
 
 msgid "abilities/special/description/accuracyStacks"
 msgstr ""
@@ -383,6 +398,15 @@ msgstr "可同时射击两门火炮，但代价是装填时间增加。"
 msgid "abilities/special/shortDescription/wheeledDash"
 msgstr "一种可在短时间内提高发动机功率、加速能力和最大速度的特殊机制。"
 
+msgid "characteristics/abilities/common/description/combatThrottle"
+msgstr "激活档位，可暂时提高发动机功率、速度和操控性，同时保持可靠的火炮手感。这使其能够实现灵活机动的玩法，且不影响作战效能。"
+
+msgid "characteristics/abilities/common/description/overheatGun"
+msgstr "这门火炮可持续射击而无需重新装填。每次开火均会产生热量: 温度越高，部分参数受到的影响越大。连续射击将导致火炮过热，需冷却后才能恢复射击。"
+
+msgid "characteristics/abilities/common/description/shellParamsSwitcher"
+msgstr "该坦克的火炮配备特殊装置，可在开火前调整射击诸元。弹药界面会显示切换射击模式后受到影响的参数。"
+
 msgid "characteristics/abilities/special/description/accuracyStacks"
 msgstr ""
 "当坦克静止不动或以低于特定速度移动时，模拟弹道计算装置将启动，并累积精度等级，从而提高下一次射击的命中率。若超过速度限制，精度累积进度将暂停，直至降低速度。当达到最大精度等级时，坦克将获得相当不俗的火炮稳定性，移动时及炮塔/车体旋转时的炮弹散布范围有所降低。该效果会在开火后被移除。"
@@ -482,7 +506,7 @@ msgstr ""
 "该机械改装可在短时间内大幅提高坦克的加速能力、发动机功率，以及最大前进和倒车速度，让您可以快速应对敌方攻击，并通过灵活机动打对手一个措手不及。保持高速移动可加快该机制的冷却速度。"
 
 msgid "characteristics/abilities/special/notes"
-msgstr "显示的所有数值均为该坦克能达到的参数上限。配件、指令和给养可能会影响这些数值，但此处未反映相关变化。"
+msgstr "显示的所有数值均为该坦克能达到的最佳数值。配件、指令和给养可能会影响这些数值，但此处未反映相关变化。"
 
 msgid "characteristics/shellParamsSwitcher/ARMOR_PIERCING"
 msgstr "可校炮AP炮弹"
@@ -620,7 +644,7 @@ msgid "overview/benefits/wotPlus/description/credits"
 msgstr "每场战斗银币收益"
 
 msgid "overview/benefits/wotPlus/description/crewsTrain"
-msgstr "转移任意坦克类型乘员，无处罚"
+msgstr "可在任意类型的坦克之间调动乘员，无处罚"
 
 msgid "overview/benefits/wotPlus/description/experience"
 msgstr "战斗经验和乘员经验"

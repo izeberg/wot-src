@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.664201 -1.006992 -3.448484</min>
+		<max>2.003810 0.671672 2.932719</max>
+	</visibilityBox>
+	<parent>halloween/vehicles/russian/R40_T-54_HW_BOT/crash/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>halloween/vehicles/russian/R40_T-54_HW_BOT/crash/lod0/Hull</nodefullVisual>
+</root>

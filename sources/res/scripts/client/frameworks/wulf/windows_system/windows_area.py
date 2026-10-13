@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from .window import Window
 from ..gui_constants import PositionAnchor

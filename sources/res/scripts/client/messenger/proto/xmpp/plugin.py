@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from messenger import g_settings
 from messenger.proto.xmpp.messages import MessagesManager
 from messenger.proto.xmpp.contacts import ContactsManager

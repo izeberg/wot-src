@@ -211,11 +211,17 @@ msgstr "Strv 107-12"
 msgid "Chassis_S37_Ambassador"
 msgstr "持信者"
 
+msgid "Chassis_S38_Huggorm"
+msgstr "\"极北蝰\""
+
 msgid "Chassis_S39_Strv_m31"
 msgstr "Strv m/31"
 
 msgid "Chassis_S41_BV_111"
 msgstr "BV-111"
+
+msgid "Chassis_S42_Strv_T_fm_53"
+msgstr "Strv T fm/53"
 
 msgid "DB_605"
 msgstr "DB 605"
@@ -240,6 +246,9 @@ msgstr "利兰 L60"
 
 msgid "MTU_837_Ea_500"
 msgstr "MTU837 Ea-500"
+
+msgid "MTU_MB_833_Huggorm"
+msgstr "MTU MB 833 (\"极北蝰\")"
 
 msgid "Maybach_DSO"
 msgstr "迈巴赫 DSO"
@@ -286,6 +295,9 @@ msgstr "Ra 122"
 msgid "Ra_122_Ambassador"
 msgstr "Ra 122 (持信者)"
 
+msgid "Ra_122_m_53"
+msgstr "Ra 122 m/53"
+
 msgid "Ra_146"
 msgstr "Ra 146"
 
@@ -297,6 +309,9 @@ msgstr "Ra 401"
 
 msgid "Ra_400_P"
 msgstr "Ra 400 P"
+
+msgid "Ra_400_P_Huggorm"
+msgstr "Ra 400 P (\"极北蝰\")"
 
 msgid "Ra_400_P_SH"
 msgstr "Ra 400P"
@@ -812,6 +827,25 @@ msgstr "持信者"
 msgid "S37_Ambassador_short_special"
 msgstr "良好的机动性，短装填时间较短的弹夹炮"
 
+msgid "S38_Huggorm"
+msgstr "\"极北蝰\""
+
+msgid "S38_Huggorm_descr"
+msgstr ""
+"20世纪60年代中期，博福斯公司提出了一种全能型中型坦克的概念。该坦克既可以作为步兵部队的突击战车，也可以作为高机动性岸防坦克。然而，随着Strv "
+"81坦克完成采购以及Strv 103坦克投入生产，制造另一种坦克的计划被放弃。原本装备于装甲旅的Strv "
+"74中型坦克，则继续在步兵部队中承担突击战车的角色。"
+
+msgid "S38_Huggorm_long_special"
+msgstr ""
+"\"极北蝰\"是一辆V系X级中型坦克，性能十分全面。凭借装甲防护良好的炮塔、出色的精度和液气悬挂装置，该坦克在攻城模式下能运用\"卖头\"玩法，高效展开阵地战。良好的机动性和手感不俗的火炮，则使其能够在行驶模式下快速转场、灵活作战。此外，攻城模式还可在行进中随时切换。"
+
+msgid "S38_Huggorm_short"
+msgstr "\"极北蝰\""
+
+msgid "S38_Huggorm_short_special"
+msgstr "液气悬挂装置，装甲防护良好的炮塔"
+
 msgid "S39_Strv_m31"
 msgstr "Strv m/31"
 
@@ -847,6 +881,24 @@ msgstr ""
 
 msgid "S41_BV_111_short"
 msgstr "BV-111"
+
+msgid "S42_Strv_T_fm_53"
+msgstr "Strv T fm/53"
+
+msgid "S42_Strv_T_fm_53_descr"
+msgstr ""
+"20世纪50年代初，由于采购其他系别坦克存在不确定性，自主研发新型坦克的尝试也未成功，V系皇家陆军物资管理局军械部在埃米尔计划之外同步研发一种替代坦克方案。这辆新坦克被设计为拥有良好的装甲防护和强大的火力，足以对抗S系重型坦克IS-3。然而，1952年末，V系与Y系就百夫长坦克的交付达成协议，该计划因此失去了意义并被终止。"
+
+msgid "S42_Strv_T_fm_53_long_special"
+msgstr ""
+"Strv T "
+"fm/53是一辆V系IX级重型坦克，融合了V系和F系弹夹重坦的优点。它拥有出色的火炮俯角和坚固的炮塔装甲，但并非无懈可击。其机动性不俗，但不及F系重坦。作为一辆V系重坦，其火炮手感优秀，但需要您仔细瞄准。"
+
+msgid "S42_Strv_T_fm_53_short"
+msgstr "Strv T fm/53"
+
+msgid "S42_Strv_T_fm_53_short_special"
+msgstr "弹夹炮，出色的火炮俯角加不俗的炮塔装甲"
 
 msgid "SFA_8_cyl_boxer"
 msgstr "SFA 8缸(水平对置)"
@@ -1013,11 +1065,17 @@ msgstr "Strv 107-12"
 msgid "Turret_1_S37_Ambassador"
 msgstr "持信者"
 
+msgid "Turret_1_S38_Huggorm"
+msgstr "\"极北蝰\""
+
 msgid "Turret_1_S39_Strv_m31"
 msgstr "Strv m/31"
 
 msgid "Turret_1_S41_BV_111"
 msgstr "BV-111"
+
+msgid "Turret_1_S42_Strv_T_fm_53"
+msgstr "Strv T fm/53"
 
 msgid "Turret_2_S02_Strv_M42"
 msgstr "Strv m/42"
@@ -1058,6 +1116,9 @@ msgstr "沃尔沃 DC"
 msgid "Volvo_FE"
 msgstr "沃尔沃 FE"
 
+msgid "Volvo_SFA_12A"
+msgstr "沃尔沃 SFA 12A"
+
 msgid "Volvo_SFA_12B"
 msgstr "沃尔沃 SFA 12B"
 
@@ -1087,6 +1148,9 @@ msgstr "slpprj D/5"
 
 msgid "_105mm_Bofors_D_G5_SH"
 msgstr "博福斯 10.5cm D/5炮"
+
+msgid "_105mm_Bofors_L_62_Huggorm"
+msgstr "10.5cm 博福斯 L/62炮 (\"极北蝰\")"
 
 msgid "_105mm_L_7_Gun_Ambassador"
 msgstr "105mm L7炮 (持信者)"
@@ -1171,6 +1235,9 @@ msgstr "10.5cm m/42防空炮"
 
 msgid "_105mm_psgr_m_49"
 msgstr "psgr m/49"
+
+msgid "_105mm_psgr_m_66_Huggorm"
+msgstr "psgr m/66 (\"极北蝰\")"
 
 msgid "_105mm_sgr_LS_50_S"
 msgstr "slsgr L/50 S"
@@ -1262,6 +1329,9 @@ msgstr "slpprj m/61 (03)"
 msgid "_105mm_slpprj_m_61_16"
 msgstr "slpprj m/61 (16)"
 
+msgid "_105mm_slpprj_m_61_Huggorm"
+msgstr "slpprj m/61 (\"极北蝰\")"
+
 msgid "_105mm_slpprj_m_61_L62_103B"
 msgstr "slpprj m/61 L/62 (103B)"
 
@@ -1330,6 +1400,9 @@ msgstr "slsgr m/61A (03)"
 
 msgid "_105mm_slsgr_m_61A_16"
 msgstr "slsgr m/61A (16)"
+
+msgid "_105mm_slsgr_m_61A_Huggorm"
+msgstr "slsgr m/61A (\"极北蝰\")"
 
 msgid "_105mm_slsgr_m_61A_L62_103B"
 msgstr "slsgr m/61A L/62 (103B)"
@@ -1436,6 +1509,9 @@ msgstr "sgr m/51"
 msgid "_120mm_sgr_m_51_52E2"
 msgstr "sgr m/51 (52E2)"
 
+msgid "_120mm_sgr_m_53"
+msgstr "sgr m/53"
+
 msgid "_120mm_sgr_m_60"
 msgstr "sgr m/60"
 
@@ -1444,6 +1520,9 @@ msgstr "sgr m/ny"
 
 msgid "_120mm_sgr_m_ny_ord"
 msgstr "sgr 新型标准弹"
+
+msgid "_120mm_slpgr_m_53"
+msgstr "slpgr m/53"
 
 msgid "_120mm_slpprj_b"
 msgstr "slpprj b/68"
@@ -1457,6 +1536,9 @@ msgstr "slpprj m/51"
 msgid "_120mm_slpprj_m_51_52E2"
 msgstr "slpprj m/51 (52E2)"
 
+msgid "_120mm_slpprj_m_53"
+msgstr "slpprj m/53"
+
 msgid "_120mm_slpprj_m_60"
 msgstr "slpprj m/60"
 
@@ -1465,6 +1547,9 @@ msgstr "slpprj m/ny"
 
 msgid "_120mm_slpprj_m_ny_hog_laddning"
 msgstr "slpprj 新型高装药弹"
+
+msgid "_120mm_stk_m_55"
+msgstr "120mm stk m/55炮"
 
 msgid "_120mm_strvkan_L_40"
 msgstr "12cm L/40坦克炮"

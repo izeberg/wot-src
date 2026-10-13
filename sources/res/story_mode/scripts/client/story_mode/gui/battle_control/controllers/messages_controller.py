@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BattleReplay
 from gui.battle_control.controllers.msgs_ctrl import BattleMessagesController, BattleMessagesPlayer
 

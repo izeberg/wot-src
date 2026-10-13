@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import json, logging
 from enum import Enum
 from typing import TYPE_CHECKING

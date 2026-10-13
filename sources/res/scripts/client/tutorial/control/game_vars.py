@@ -1,4 +1,6 @@
-import types
+from __future__ import absolute_import
+from future.utils import lfilter
+from past.builtins import long
 from CurrentVehicle import g_currentVehicle
 from gui.Scaleform.daapi.view.lobby.techtree.techtree_dp import g_techTreeDP
 from gui.shared.gui_items import GUI_ITEM_TYPE
@@ -18,7 +20,7 @@ def getUnlockedItems(itemsCache=None):
 
 @dependency.replace_none_kwargs(itemsCache=IItemsCache)
 def getItemByIntCD(intCD, itemsCache=None):
-    if intCD is None or not isinstance(intCD, (types.IntType, types.LongType, types.FloatType)):
+    if intCD is None or not isinstance(intCD, (int, long, float)):
         return
     if itemsCache is not None:
         return itemsCache.items.getItemByCD(intCD)
@@ -138,14 +140,14 @@ def _vehicleHasRegularConsumables(vehicleCD):
     vehicle = getVehicleByIntCD(vehicleCD)
     if vehicle is None or vehicle.invID == -1:
         return False
-    return bool(filter(None, vehicle.consumables.installed))
+    return bool(lfilter(None, vehicle.consumables.installed))
 
 
 def _vehicleHasOptionalDevices(vehicleCD):
     vehicle = getVehicleByIntCD(vehicleCD)
     if vehicle is None or vehicle.invID == -1:
         return False
-    return bool(filter(None, vehicle.optDevices.installed))
+    return bool(lfilter(None, vehicle.optDevices.installed))
 
 
 def _isItemLevelEqual(itemCD, level):

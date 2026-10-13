@@ -12,9 +12,11 @@ if typing.TYPE_CHECKING:
 
 class IsDeserterFlag(base.StatsItem):
 
-    def _convert(self, result, reusable):
+    def _convert(self, value, reusable):
         if checkIfDeserter(reusable, FairplayViolations.COMP7_LIGHT_DESERTER):
             return backport.text(R.strings.comp7_light.battleResult.header.deserter())
+        else:
+            return
 
 
 class Comp7LightSortingBlock(SortingBlock):

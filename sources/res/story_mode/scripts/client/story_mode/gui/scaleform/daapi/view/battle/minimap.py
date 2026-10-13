@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from future.utils import viewvalues
 import BattleReplay, BigWorld, CGF, Math
 from story_mode.cgf_components.bunkers import BunkersSystem
 from aih_constants import CTRL_MODE_NAME
@@ -56,7 +58,7 @@ class BunkersPlugin(SimplePlugin):
             destructibleComponent.onDestructibleEntityAdded += self.__onDestructibleEntityAdded
             destructibleComponent.onDestructibleEntityHealthChanged += self.__onDestructibleEntityHealthChanged
             entities = destructibleComponent.destructibleEntities
-            for entity in (entity for _, entity in entities.iteritems() if entity.destructibleEntityID != 0):
+            for entity in (entity for entity in viewvalues(entities) if entity.destructibleEntityID != 0):
                 self.__onDestructibleEntityAdded(entity)
 
         return

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld, SoundGroups
 from gui.Scaleform.Waiting import Waiting
 from hangar_selectable_objects import ISelectableObject

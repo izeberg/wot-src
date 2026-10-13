@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from future.utils import viewitems
 import BigWorld
 from PlayerEvents import g_playerEvents
 from debug_utils import LOG_ERROR, LOG_DEBUG
@@ -122,7 +124,7 @@ class XmppClanListener(ClientHolder):
                 return
 
         playerID = getPlayerDatabaseID()
-        for dbID, (name, roleFlags) in clanMembers.iteritems():
+        for dbID, (name, roleFlags) in viewitems(clanMembers):
             if getter(dbID) is None:
                 gos = GAME_ONLINE_STATUS.UNDEFINED
             else:

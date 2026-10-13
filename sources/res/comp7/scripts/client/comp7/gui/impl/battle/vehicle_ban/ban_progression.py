@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from comp7.gui.impl.battle.vehicle_ban.ban_helpers import fillBanProgressionModel
 from comp7_core.gui.battle_control.controllers.sound_ctrls.comp7_battle_sounds import BAN_PROGRESSION_SOUND_SPACE
 from comp7_core.gui.comp7_core_constants import BATTLE_CTRL_ID

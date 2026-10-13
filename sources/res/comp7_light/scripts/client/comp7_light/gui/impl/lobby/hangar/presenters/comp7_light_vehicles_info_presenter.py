@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from comp7_core.gui.impl.lobby.hangar.presenters.comp7_core_vehicles_info_presenter import Comp7CoreVehiclesInfoPresenter
 from helpers import dependency
 from skeletons.gui.game_control import IComp7LightController

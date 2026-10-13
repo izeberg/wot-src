@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from comp7_core.gui.impl.lobby.comp7_core_helpers import comp7_core_model_helpers
 from gui.Scaleform.daapi.view.lobby.prime_time_view_base import ServerListItemPresenter, PrimeTimeViewBase
 from gui.impl import backport

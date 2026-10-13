@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from external_strings_utils import strtobool, InvalidStringValueException
 from shared_utils.account_helpers.diff_utils import synchronizeDicts
 from constants import SPA_ATTRS

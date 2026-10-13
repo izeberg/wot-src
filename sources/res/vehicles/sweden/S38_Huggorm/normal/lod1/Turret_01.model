@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/sweden/S38_Huggorm/normal/lod2/Turret_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.565429 -0.163918 -1.787887</min>
+		<max>1.560917 2.392998 1.561319</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/sweden/S38_Huggorm/normal/lod1/Turret_01</nodefullVisual>
+</root>

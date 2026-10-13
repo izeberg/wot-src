@@ -1,0 +1,92 @@
+msgid ""
+msgstr ""
+
+msgid "battleInfo/all_from_battle"
+msgstr "这场战斗中所驾驶的所有坦克"
+
+msgid "battleInfo/arena"
+msgstr "{{arenaName}}，绝密信号 – {{finishReason}}"
+
+msgid "battleInfo/finishReason/10lose"
+msgstr "炮台幸存"
+
+msgid "battleInfo/finishReason/10win"
+msgstr "已击毁炮台"
+
+msgid "battleInfo/finishReason/1lose"
+msgstr "所有己方坦克被击毁"
+
+msgid "battleInfo/finishReason/1tie"
+msgstr "全部坦克被击毁"
+
+msgid "battleInfo/finishReason/1win"
+msgstr "所有敌方坦克被击毁"
+
+msgid "battleInfo/finishReason/2"
+msgstr "基地被占领"
+
+msgid "battleInfo/finishReason/3"
+msgstr "战斗时间结束"
+
+msgid "battleInfo/finishReason/4"
+msgstr "因系统错误导致战斗结束"
+
+msgid "battleInfo/finishReason/5"
+msgstr "技术性失败"
+
+msgid "battleInfo/finishReason/8"
+msgstr "盟友被击毁"
+
+msgid "battleInfo/finishReason/9"
+msgstr "您的坦克被击毁"
+
+msgid "battleInfo/labels_objectivesDestroyed"
+msgstr "已击毁炮台"
+
+msgid "battleInfo/labels_objectivesReached"
+msgstr "抵达炮台"
+
+msgid "battleInfo/labels_zoneCaptured"
+msgstr "已占领区域"
+
+msgid "battleInfo/leaver/body"
+msgstr "因中途离场，系统将不会计入您在这场战斗中获得的任务进度。您也无法获得根据战斗结果发放的数据包。"
+
+msgid "battleInfo/leaver/header"
+msgstr "违规行为: 挂机/中途离场"
+
+msgid "battleInfo/no"
+msgstr "否"
+
+msgid "battleInfo/time"
+msgstr "{{date}} {{time}}(战斗持续时间: {{duration}})"
+
+msgid "battleInfo/timeLeft/minutesAndSeconds"
+msgstr "{{minutes}}分{{seconds}}秒"
+
+msgid "battleInfo/timeLeft/minutesOnly"
+msgstr "{{minutes}}分"
+
+msgid "battleInfo/timeLeft/secondsOnly"
+msgstr "{{seconds}}秒"
+
+msgid "battleInfo/yes"
+msgstr "是"
+
+msgid "currencies/credits/body"
+msgstr ""
+"主要的游戏内货币。\n"
+"在战斗中获取或\n"
+"用金币兑换。"
+
+msgid "currencies/credits/header"
+msgstr "银币"
+
+msgid "detailedPersonalEfficiency/fortRushScore/body"
+msgstr "可通过多种方式来获取行动得分: 占领天线、夺控敌方控制的天线、干扰敌方占领天线、对敌方坦克造成损伤，以及击毁天线附近的敌方坦克。"
+
+msgid "detailedPersonalEfficiency/fortRushScore/header"
+msgstr "行动得分"
+
+msgid "state/title"
+msgstr "战斗结果"

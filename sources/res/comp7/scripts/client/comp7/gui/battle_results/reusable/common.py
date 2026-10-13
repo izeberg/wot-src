@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.battle_results.reusable.common import CommonInfo
 
 class Comp7CommonInfo(CommonInfo):

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from frontline.gui.frontline_helpers import isHangarAvailable, getFrontlineState
 from frontline.gui.impl.gen.view_models.views.lobby.components.alert_message_model import AlertMessageModel
 from CurrentVehicle import g_currentVehicle, g_currentPreviewVehicle

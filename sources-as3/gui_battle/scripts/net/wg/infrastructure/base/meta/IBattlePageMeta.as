@@ -25,5 +25,7 @@ package net.wg.infrastructure.base.meta
       function as_setArtyShotIndicatorFlag(param1:Boolean) : void;
       
       function as_togglePiercingPanel() : void;
+      
+      function as_setLayout(param1:uint) : void;
    }
 }

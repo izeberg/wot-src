@@ -215,6 +215,7 @@
 		<preloadVisual>particles/Environment/Battle_Royal/Lighting/Sparks_lighting.visual</preloadVisual>
 		<preloadVisual>particles/Environment/Battle_Royal/Lighting/Steam_01.visual</preloadVisual>
 		<preloadVisual>particles/Environment/Battle_Royal/Lighting/Steam_02.visual</preloadVisual>
+		<preloadVisual>particles/mesh_particles/wood_log_02.visual</preloadVisual>
 		<preloadVisual>content/Interface/TargetPoint/firering_decal.visual</preloadVisual>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/hd_bld_SU_100_MetalDepot_h0.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/hd_bld_SU_100_MetalDepot_h1.vfx</fn_effect_bin>
@@ -445,7 +446,6 @@
 		<preloadVisual>particles/mesh_particles/wood_bamboo_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_board_04.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_broken_01.visual</preloadVisual>
-		<preloadVisual>particles/mesh_particles/wood_log_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_stick_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_stick_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_stick_03.visual</preloadVisual>

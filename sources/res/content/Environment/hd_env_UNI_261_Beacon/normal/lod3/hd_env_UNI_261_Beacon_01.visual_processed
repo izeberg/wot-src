@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/hd_env_UNI_261_Beacon/hd_env_UNI_261_Beacon_01_AM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Environment/hd_env_UNI_261_Beacon/hd_env_UNI_261_Beacon_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Environment/hd_env_UNI_261_Beacon/hd_env_UNI_261_Beacon_01_ANM.dds</Texture>
+					</property>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>112</materialKind>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+				</material>
+				<groupOrigin>0.000000 0.968250 0.000000</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>s_nd2</identifier>
+					<fx>shaders/std_effects/glow.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>112</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/UniversalTextures/Graybox_01_AM.dds</Texture>
+					</property>
+					<property>
+						g_tintColor
+						<Vector4>0.109804 1.000000 0.000000 0.200000</Vector4>
+					</property>
+					<property>
+						selfIllumination
+						<Float>1000.000000</Float>
+					</property>
+				</material>
+				<groupOrigin>0.000000 1.179703 0.000000</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				2
+				<material>
+					<identifier>s_nd1</identifier>
+					<fx>shaders/std_effects/PBS_glass.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>112</materialKind>
+					<property>
+						alphaReference
+						<Int>159</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						dirtAlbedoMap
+						<Texture>content/Environment/hd_env_UNI_261_Beacon/hd_env_UNI_261_Beacon_01_Glass_AM.dds</Texture>
+					</property>
+					<property>
+						glassMap
+						<Texture>content/Environment/hd_env_UNI_261_Beacon/hd_env_UNI_261_Beacon_01_Glass_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Environment/hd_env_UNI_261_Beacon/hd_env_UNI_261_Beacon_01_Glass_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.000000 1.155249 -0.000000</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				3
+				<material>
+					<identifier>s_nd3</identifier>
+					<fx>shaders/custom/shield_shimmer.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>112</materialKind>
+					<property>
+						g_distortionFrames
+						<Vector4>0.000000 0.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_distortionFrequency
+						<Float>0.000000</Float>
+					</property>
+					<property>
+						g_distortionMap
+						<Texture>content/Environment/hd_env_UNI_261_Beacon/hd_env_UNI_261_Beacon_01_Glass_Distort_Normal.dds</Texture>
+					</property>
+					<property>
+						g_distortionUVSpeedAmount
+						<Vector4>0.000000 0.000000 0.010000 0.050000</Vector4>
+					</property>
+					<property>
+						g_effectPower
+						<Float>0.500000</Float>
+					</property>
+					<property>
+						g_fresnelPower
+						<UInt>15</UInt>
+					</property>
+				</material>
+				<groupOrigin>0.000000 1.155249 -0.000000</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-0.711015 -0.041564 -0.711015</min>
+		<max>0.711015 1.936499 0.711015</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>37200</geometrySize>
+</root>

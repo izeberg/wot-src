@@ -1538,9 +1538,6 @@ msgstr "坦克世界Plus可控经验加成可用"
 msgid "serviceChannelMessages/additionalXP/unavailable/title"
 msgstr "坦克世界Plus可控经验加成不可用"
 
-msgid "serviceChannelMessages/autoBoosterErrorNoWallet"
-msgstr "无法补给给养给%s。您的所有金币将在资产同步完成后可用。"
-
 msgid "serviceChannelMessages/autoEquipBoosterDisabledOption"
 msgstr "为%s补给指令失败。由于服务器维护，操作暂不可用。"
 
@@ -1559,9 +1556,6 @@ msgstr "补给坦克%s给养失败。请使用金币购买。"
 msgid "serviceChannelMessages/autoEquipError"
 msgstr "无法给坦克%s补充给养。没有足够的资金。"
 
-msgid "serviceChannelMessages/autoEquipErrorNoWallet"
-msgstr "无法补给给养给%s。您的所有金币将在资产同步完成后可用。"
-
 msgid "serviceChannelMessages/autoEquipSkipped"
 msgstr "自动补给坦克 %s 给养失败。请手动补给给养。"
 
@@ -1574,9 +1568,6 @@ msgstr "补给坦克%s弹药失败。请使用金币购买。"
 msgid "serviceChannelMessages/autoLoadError"
 msgstr "未能成功补充%s坦克的弹药。 资金不足。"
 
-msgid "serviceChannelMessages/autoLoadErrorNoWallet"
-msgstr "无法补给弹药给%s。您的所有金币将在资产同步完成后可用。"
-
 msgid "serviceChannelMessages/autoLoadSkipped"
 msgstr "自动补给坦克%s弹药失败。请手动补给弹药。"
 
@@ -1588,9 +1579,6 @@ msgstr "延长%s风格租用失败。使用金币购买风格。"
 
 msgid "serviceChannelMessages/autoRentStyleError"
 msgstr "延长%s风格租用失败。货币不足。"
-
-msgid "serviceChannelMessages/autoRentStyleErrorNoWallet"
-msgstr "延长%s风格租用失败。WG钱包恢复正常后所有金币可用。"
 
 msgid "serviceChannelMessages/autoRentStyleRentIsAlmostOver/button"
 msgstr "延长租用时间"
@@ -1620,9 +1608,6 @@ msgstr "维修坦克%s失败。"
 
 msgid "serviceChannelMessages/autoRepairError"
 msgstr "未能成功修复%s坦克。 没有足够的银币。"
-
-msgid "serviceChannelMessages/autoRepairErrorNoWallet"
-msgstr "无法修理%s。您的所有金币将在资产同步完成后可用。"
 
 msgid "serviceChannelMessages/autoRepairSkipped"
 msgstr "自动维修坦克 %s 失败。请手动维修你的坦克。"

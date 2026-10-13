@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from future.utils import viewitems, viewvalues
 from CurrentVehicle import g_currentVehicle
 from debug_utils import LOG_ERROR
 from gui.impl import backport
@@ -96,7 +98,7 @@ class EpicSkillBaseTooltipData(BlocksTooltipData):
 
 def _equipmentToEpicSkillConverter(epicMetaGameCtrl, eqCompDescr):
     convertedEqCompDescr = int(eqCompDescr) >> 8 & 65535
-    skillID = next((abilityID for abilityID, skillInfo in epicMetaGameCtrl.getAllSkillsInformation().iteritems() if convertedEqCompDescr in (lvl.eqID for lvl in skillInfo.levels.itervalues())), 0)
+    skillID = next((abilityID for abilityID, skillInfo in viewitems(epicMetaGameCtrl.getAllSkillsInformation()) if convertedEqCompDescr in (lvl.eqID for lvl in viewvalues(skillInfo.levels))), 0)
     if skillID == 0:
         LOG_ERROR('Could not find the epic skill corresponding to the given eqCompDescr: ' + str(eqCompDescr))
     return skillID
@@ -107,16 +109,14 @@ class EpicSkillSlotTooltipAdvanced(BaseAdvancedTooltip):
 
     def _getBlocksList(self, *args, **kwargs):
         if not args:
-            return
+            return []
         else:
             skillID = _equipmentToEpicSkillConverter(self._epicMetaGameCtrl, int(args[0]))
             skillInfo = self._epicMetaGameCtrl.getAllSkillsInformation().get(skillID)
             skillLevel = skillInfo.levels.get(1) if skillInfo else None
             itemEm = self._item
             movieKey = itemEm.getGUIEmblemID()
-            movieName = None
-            if movieKey in MODULE_MOVIES:
-                movieName = MODULE_MOVIES[movieKey]
+            movieName = MODULE_MOVIES.get(movieKey)
             if skillLevel:
                 header = skillLevel.name
                 descr = skillLevel.longDescr
@@ -125,12 +125,12 @@ class EpicSkillSlotTooltipAdvanced(BaseAdvancedTooltip):
 
 class EpicSkillSlotTooltip(EpicSkillBaseTooltipData):
 
-    def _packBlocks(self, eqCompDescr, _=None):
-        if eqCompDescr == -1:
+    def _packBlocks(self, skillID, _=None):
+        if skillID == -1:
             return [
              formatters.packTitleDescBlock(backport.text(R.strings.epic_battle.abilityInfo.manage_abilities()), backport.text(R.strings.epic_battle.abilityInfo.manage_abilities_desc()))]
         else:
-            return super(EpicSkillSlotTooltip, self)._packBlocks(_equipmentToEpicSkillConverter(self._epicMetaGameCtrl, eqCompDescr), None)
+            return super(EpicSkillSlotTooltip, self)._packBlocks(_equipmentToEpicSkillConverter(self._epicMetaGameCtrl, skillID), None)
 
 
 class EpicSkillSlotSetupInfoTooltip(BlocksTooltipData):

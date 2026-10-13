@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, BigWorld
 from gui.Scaleform.daapi.view.battle.shared.damage_panel import DamagePanel, STATUS_ID, ConcurrentStatusManager
 from gui.battle_control.battle_constants import VEHICLE_VIEW_STATE

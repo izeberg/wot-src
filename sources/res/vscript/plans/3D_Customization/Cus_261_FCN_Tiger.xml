@@ -239,6 +239,14 @@
 				</slots>
 			</block>
 			<block>
+				<class>StartScript</class>
+				<id>StartScript_2</id>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_28</id>
+			</block>
+			<block>
 				<class>ContextGetSelf</class>
 				<id>ContextGetSelf_1</id>
 				<params>
@@ -251,6 +259,32 @@
 						getSelf
 						<name>Member Name</name>
 						<type>StringT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>OnPrebattleHighlights</class>
+				<id>OnPrebattleHighlights_2</id>
+			</block>
+			<block>
+				<class>ArenaPeriod</class>
+				<id>ArenaPeriod_2</id>
+				<params>
+					<param>
+						Battle
+						<name>Period</name>
+						<type>EArenaPeriodT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>ArenaPeriodStartEvent</class>
+				<id>ArenaPeriodStartEvent_5</id>
+				<params>
+					<param>
+						Battle
+						<name>Period</name>
+						<type>EArenaPeriodT</type>
 					</param>
 				</params>
 			</block>
@@ -323,6 +357,12 @@
 				<output>event0</output>
 			</connection>
 			<connection>
+				<from>OnPrebattleHighlights_2</from>
+				<input>in</input>
+				<to>ComponentMethod_40</to>
+				<output>onStart</output>
+			</connection>
+			<connection>
 				<from>ContextGetSelf_1</from>
 				<input>gameObject</input>
 				<to>ComponentMethod_40</to>
@@ -333,6 +373,12 @@
 				<input>windup</input>
 				<to>Timer_3</to>
 				<output>out</output>
+			</connection>
+			<connection>
+				<from>OnPrebattleHighlights_2</from>
+				<input>cancel</input>
+				<to>Timer_3</to>
+				<output>onEnded</output>
 			</connection>
 			<connection>
 				<from>ComponentMethod_39</from>
@@ -351,6 +397,12 @@
 				<input>in</input>
 				<to>ComponentMethod_41</to>
 				<output>event0</output>
+			</connection>
+			<connection>
+				<from>Timer_3</from>
+				<input>in</input>
+				<to>ComponentMethod_41</to>
+				<output>cancelOut</output>
 			</connection>
 			<connection>
 				<from>ContextGetSelf_1</from>
@@ -381,6 +433,30 @@
 				<input>a</input>
 				<to>CompareFloats_10</to>
 				<output>fwdSpeed</output>
+			</connection>
+			<connection>
+				<from>StartScript_2</from>
+				<input>input</input>
+				<to>If_28</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>ArenaPeriod_2</from>
+				<input>value</input>
+				<to>If_28</to>
+				<output>isActive</output>
+			</connection>
+			<connection>
+				<from>If_28</from>
+				<input>subscribe</input>
+				<to>OnPrebattleHighlights_2</to>
+				<output>false</output>
+			</connection>
+			<connection>
+				<from>ArenaPeriodStartEvent_5</from>
+				<input>unsubscribe</input>
+				<to>OnPrebattleHighlights_2</to>
+				<output>start</output>
 			</connection>
 		</connections>
 		<macros>

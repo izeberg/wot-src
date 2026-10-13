@@ -2882,7 +2882,7 @@ msgstr ""
 
 msgid "thunderStrike/longDescr"
 msgstr ""
-"生成一片会产生%(thunderCount)s次高频电击的区域。每次电击都会造成{whiteSpanish_Open}%(damage)s点损伤{whiteSpanish_Close}，并暂时降低能力效果范围内所有敌方坦克的机动性。\n"
+"生成一片会产生%(thunderCount)s次高频电击的区域。每次电击都会造成%(damage)s点损伤，并暂时降低能力效果范围内所有敌方坦克的机动性。\n"
 "\n"
 "*能力激活和首次电击之间存在%(delay)s秒的延迟。修理箱可以移除其减益效果。"
 
@@ -2891,7 +2891,7 @@ msgstr "脉冲电场"
 
 msgid "thunderStrike/shortDescr"
 msgstr ""
-"生成一片会产生%(thunderCount)s次高频电击的区域。每次电击都会造成{whiteSpanish_Open}%(damage)s点损伤{whiteSpanish_Close}，并暂时降低能力效果范围内所有敌方坦克的机动性。\n"
+"生成一片会产生%(thunderCount)s次高频电击的区域。每次电击都会造成%(damage)s点损伤，并暂时降低能力效果范围内所有敌方坦克的机动性。\n"
 "\n"
 "*能力激活和首次电击之间存在%(delay)s秒的延迟。修理箱可以移除其减益效果。"
 

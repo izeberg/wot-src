@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import CommandMapping
 from AvatarInputHandler.commands.input_handler_command import InputHandlerCommand
 from helpers import dependency

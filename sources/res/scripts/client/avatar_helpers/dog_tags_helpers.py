@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import random, BigWorld
 from dog_tags_common.components_config import componentConfigAdapter
 from dog_tags_common.components_packer import unpack_component

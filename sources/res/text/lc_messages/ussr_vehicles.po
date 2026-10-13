@@ -295,6 +295,9 @@ msgstr "LTG 改进型"
 msgid "Chassis_R132_VNII_100LT"
 msgstr "T-100 LT(产品64992)"
 
+msgid "Chassis_R132_VNII_100LT_FR"
+msgstr "T-100 LT BS"
+
 msgid "Chassis_R133_KV_122"
 msgstr "KV-122"
 
@@ -562,7 +565,13 @@ msgstr "SU-100I"
 msgid "Chassis_R228_KR_1"
 msgstr "KR-1"
 
+msgid "Chassis_R228_KR_1_7x7"
+msgstr "KR-1"
+
 msgid "Chassis_R230_Object_432U"
+msgstr "432工程U"
+
+msgid "Chassis_R230_Object_432U_7x7"
 msgstr "432工程U"
 
 msgid "Chassis_R231_Buryan"
@@ -576,6 +585,9 @@ msgstr "KB-52"
 
 msgid "Chassis_R236_Object_265_II"
 msgstr "265工程II型"
+
+msgid "Chassis_R236_Object_265_II_CFE_A"
+msgstr "日蚀"
 
 msgid "Chassis_R239_Object_Veles"
 msgstr "维莱斯"
@@ -913,6 +925,9 @@ msgstr "GMC 6046I"
 msgid "GTD_3T"
 msgstr "GTD-3T"
 
+msgid "GTD_3T_7x7"
+msgstr "GTD-3T"
+
 msgid "GTD_700P"
 msgstr "GTD-700P"
 
@@ -995,9 +1010,6 @@ msgstr "“瓦良”号"
 msgid "KV-13_descr"
 msgstr "?empty?"
 
-msgid "KV-2"
-msgstr "KV-2"
-
 msgid "KV-220"
 msgstr "KV-220-2"
 
@@ -1051,6 +1063,9 @@ msgid "KV_1"
 msgstr "KV-1"
 
 msgid "KV_2"
+msgstr "KV-2"
+
+msgid "KV_2_A"
 msgstr "KV-2"
 
 msgid "KV_descr"
@@ -1733,6 +1748,9 @@ msgstr "R-123M"
 msgid "R123U"
 msgstr "R-123U"
 
+msgid "R123_FR"
+msgstr "R-123"
+
 msgid "R123_K"
 msgstr "R-123K"
 
@@ -1891,6 +1909,16 @@ msgstr "LTG"
 
 msgid "R132_VNII_100LT"
 msgstr "T-100 LT"
+
+msgid "R132_VNII_100LT_FR"
+msgstr "T-100 LT BS"
+
+msgid "R132_VNII_100LT_FR_descr"
+msgstr ""
+"一个配备T-100武器系统的轻型坦克项目。于20世纪60年代中期由第100研究所和专业设计局GSKB-47联合研发。该坦克具备较好的装甲防护，其正面装甲足以在任何距离抵御90毫米炮弹的命中。"
+
+msgid "R132_VNII_100LT_FR_short"
+msgstr "T-100 LT BS"
 
 msgid "R132_VNII_100LT_descr"
 msgstr "?empty?"
@@ -2999,6 +3027,20 @@ msgstr "出色的平均穿透力，良好的平均单发损伤"
 msgid "R228_KR_1"
 msgstr "KR-1"
 
+msgid "R228_KR_1_7x7"
+msgstr "KR-1 7v7"
+
+msgid "R228_KR_1_7x7_descr"
+msgstr ""
+"一个拥有极高参数的重型坦克计划，研发于20世纪60年代，以满足大规模毁灭性武器使用时的作战需求。设计师充分采用了当时本系别在坦克制造领域具有前景的解决方案。"
+
+msgid "R228_KR_1_7x7_long_special"
+msgstr ""
+"KR-1是一辆经典的S系突破型重型坦克，它集卓越的机动性与可靠的装甲于一身，能迅速抢占关键点位，并对疏于防范的对手发动闪电突袭。它在近战中尤为高效，利用其强劲的136毫米火炮带头冲锋，重创前进道路上的所有对手。"
+
+msgid "R228_KR_1_7x7_short"
+msgstr "KR-1 7v7"
+
 msgid "R228_KR_1_descr"
 msgstr ""
 "一个拥有极高参数的重型坦克计划，研发于20世纪60年代，以满足大规模毁灭性武器使用时的作战需求。设计师充分采用了当时本系别在坦克制造领域具有前景的解决方案。"
@@ -3012,6 +3054,20 @@ msgstr "KR-1"
 
 msgid "R230_Object_432U"
 msgstr "432工程U"
+
+msgid "R230_Object_432U_7x7"
+msgstr "432工程U 7v7"
+
+msgid "R230_Object_432U_7x7_descr"
+msgstr ""
+"一个强化型坦克计划，目标是在防护和火力上显著超越敌方坦克。设计师们计划为其安装一门高膛压火炮，以便射击性能远超现有弹药的先进炮弹。为确保该火炮正常工作，设计中引入了泄压室。此外，该坦克还加装了额外的炮塔和车体装甲，以及防HEAT炮弹的间隙装甲。然而，由于研发成本过高，该计划在初步设计阶段被叫停。"
+
+msgid "R230_Object_432U_7x7_long_special"
+msgstr ""
+"432工程U是一辆火力强劲的中型坦克，非常适合前线作战。凭借可靠装甲和大口径火炮，它能自信地与重型坦克正面对抗，同时，凭借适中的机动性，它也能在必要时转场至关键区域。其火力潜能还可进一步提高，造成毁灭性打击。"
+
+msgid "R230_Object_432U_7x7_short"
+msgstr "432工程U 7v7"
 
 msgid "R230_Object_432U_descr"
 msgstr ""
@@ -3069,7 +3125,7 @@ msgstr ""
 
 msgid "R234_T_13_long_special"
 msgstr ""
-"T-13是一辆S系X级重型坦克。侧面装甲和首上装甲的倾斜度相当优秀，使得相对薄弱的垂直装甲也能提供很高的等效厚度。炮塔装甲也极其可靠。大口径火炮完美契合其突击型重型坦克的定位。"
+"T-13是一辆S系X级重型坦克。侧面装甲和首上装甲的倾斜度相当优秀，使得相对薄弱的垂直装甲也能提供很高的等效厚度。炮塔装甲也极其可靠。大口径火炮完美契合其突破型重型坦克的定位。"
 
 msgid "R234_T_13_short"
 msgstr "T-13"
@@ -3095,6 +3151,27 @@ msgstr "可靠的车体和炮塔装甲，弹夹炮"
 
 msgid "R236_Object_265_II"
 msgstr "265工程II型"
+
+msgid "R236_Object_265_II_CFE_A"
+msgstr "日蚀"
+
+msgid "R236_Object_265_II_CFE_A_descr"
+msgstr ""
+"代号\"日蚀\"的坦克是在异象中发现的，发现地点位于一处相位空间，靠近名为\"黑塔\"的实体废墟。该坦克随后被送往巴比伦研究中心，接受专家团队的全面调查与分析。\n"
+"\n"
+"该坦克配备了由超高密度銤元素供能的试验型宽频信号压制装置。现有资料表明，该装置由远征队工程师开发，旨在瘫痪黑塔的防御系统。根据现场痕迹判断，该坦克参加了在黑塔消灭巨型机械蜘蛛的最终决战，之后被遗弃。坦克的乘员很可能已搭乘马尔杜克号撤离，该舰随后深入异象继续远征。\n"
+"\n"
+"日蚀的设计非常成功: 该坦克坚固耐用，对各种恶劣环境具有出色的抵抗能力。调查结束后，军事委员会建议将该坦克重新投入服役。"
+
+msgid "R236_Object_265_II_CFE_A_long_special"
+msgstr ""
+"日蚀是一辆IX级重型坦克。该坦克将出色的车体和炮塔装甲与两门122毫米火炮相结合。坚固的装甲使其能够坚守阵地，而后置式炮塔则更便于使用\"卖侧面\"玩法。其双管火炮能造成巨额损伤，尤其是在使用齐射机制时。"
+
+msgid "R236_Object_265_II_CFE_A_short"
+msgstr "日蚀"
+
+msgid "R236_Object_265_II_CFE_A_short_special"
+msgstr "双管火炮系统，可靠的车体和炮塔装甲"
 
 msgid "R236_Object_265_II_descr"
 msgstr ""
@@ -3482,7 +3559,13 @@ msgstr "R-123B"
 msgid "R_123C"
 msgstr "R-123C"
 
+msgid "R_123C_7x7"
+msgstr "R-123C"
+
 msgid "R_123KR"
+msgstr "R-123KR"
+
+msgid "R_123KR_7x7"
 msgstr "R-123KR"
 
 msgid "R_123V"
@@ -3756,9 +3839,6 @@ msgstr "T-80"
 msgid "T80_descr"
 msgstr "?empty?"
 
-msgid "TD-30"
-msgstr "M-50D"
-
 msgid "TD_12"
 msgstr "TD-12"
 
@@ -3767,6 +3847,9 @@ msgstr "TD-12"
 
 msgid "TD_30"
 msgstr "TD-30"
+
+msgid "TD_30_A"
+msgstr "M-50D"
 
 msgid "T_50_2"
 msgstr "T-50-2"
@@ -3955,6 +4038,9 @@ msgstr "LTG"
 
 msgid "Turret_1_R132_VNII_100LT"
 msgstr "T-100 LT(产品64992)"
+
+msgid "Turret_1_R132_VNII_100LT_FR"
+msgstr "T-100 LT BS"
 
 msgid "Turret_1_R133_KV_122"
 msgstr "KV-122"
@@ -4187,7 +4273,13 @@ msgstr "SU-100I"
 msgid "Turret_1_R228_KR_1"
 msgstr "KR-1"
 
+msgid "Turret_1_R228_KR_1_7x7"
+msgstr "KR-1"
+
 msgid "Turret_1_R230_Object_432U"
+msgstr "432工程U"
+
+msgid "Turret_1_R230_Object_432U_7x7"
 msgstr "432工程U"
 
 msgid "Turret_1_R231_Buryan"
@@ -4204,6 +4296,9 @@ msgstr "KB-52"
 
 msgid "Turret_1_R236_Object_265_II"
 msgstr "265工程II型"
+
+msgid "Turret_1_R236_Object_265_II_CFE_A"
+msgstr "日蚀"
 
 msgid "Turret_1_R239_Object_Veles"
 msgstr "维莱斯"
@@ -4508,6 +4603,9 @@ msgstr "IS-7"
 msgid "UTD_20"
 msgstr "UTD-20"
 
+msgid "UTD_20_FR"
+msgstr "UTD-20"
+
 msgid "UTD_45A"
 msgstr "UTD-45A"
 
@@ -4516,9 +4614,6 @@ msgstr "UTD-50M1 B"
 
 msgid "V-11"
 msgstr "V-11"
-
-msgid "V-11-IS-3"
-msgstr "V-11-IS-3"
 
 msgid "V-11-IS-3_S"
 msgstr "V-11-IS-3A"
@@ -4546,9 +4641,6 @@ msgstr "V-12 A"
 
 msgid "V-12V"
 msgstr "V-12 V"
-
-msgid "V-14"
-msgstr "V-14"
 
 msgid "V-16FN"
 msgstr "V-16FN"
@@ -4600,9 +4692,6 @@ msgstr "V-2-10(增压型)"
 
 msgid "V-2IS_R_CN"
 msgstr "V-2-10 C"
-
-msgid "V-2K"
-msgstr "V-2K"
 
 msgid "V-2KT"
 msgstr "V-2KT"
@@ -4658,6 +4747,9 @@ msgstr "V-11 (704)"
 msgid "V_11_IS_3"
 msgstr "V-11 (IS-3)"
 
+msgid "V_11_IS_3_A"
+msgstr "V-11-IS-3"
+
 msgid "V_11_Kirovets_1"
 msgstr "V-11-KRT-1"
 
@@ -4689,6 +4781,9 @@ msgid "V_12_5B"
 msgstr "V-12-5B"
 
 msgid "V_12_5C"
+msgstr "V-12-5C"
+
+msgid "V_12_5C_CFE_A"
 msgstr "V-12-5C"
 
 msgid "V_12_5F"
@@ -4727,6 +4822,9 @@ msgstr "V-14"
 msgid "V_14UM"
 msgstr "V-14M"
 
+msgid "V_14_A"
+msgstr "V-14"
+
 msgid "V_16"
 msgstr "V-16"
 
@@ -4749,6 +4847,9 @@ msgid "V_2IS_SU"
 msgstr "V-2IS (SU)"
 
 msgid "V_2K"
+msgstr "V-2K"
+
+msgid "V_2K1"
 msgstr "V-2K"
 
 msgid "V_2K_KV_1"
@@ -5009,13 +5110,22 @@ msgstr "3UOF(LM)"
 msgid "_100mm_3VBB"
 msgstr "3VBB"
 
+msgid "_100mm_3VBB_FR"
+msgstr "3VBB"
+
 msgid "_100mm_3VBM"
 msgstr "3VBM"
 
 msgid "_100mm_3VBM2_SH"
 msgstr "3VBM-2"
 
+msgid "_100mm_3VBM_FR"
+msgstr "3VBM"
+
 msgid "_100mm_3VOF"
+msgstr "3VOF"
+
+msgid "_100mm_3VOF_FR"
 msgstr "3VOF"
 
 msgid "_100mm_BR-412A"
@@ -5130,6 +5240,9 @@ msgid "_100mm_S_34D_IS_2_II"
 msgstr "100mm S-34D炮 (IS-2-II)"
 
 msgid "_100mm_T_100"
+msgstr "100mm T-100炮"
+
+msgid "_100mm_T_100_FR"
 msgstr "100mm T-100炮"
 
 msgid "_100mm_T_12A"
@@ -5561,14 +5674,14 @@ msgstr "10RK-DV"
 msgid "_10RK_W"
 msgstr "10RK"
 
-msgid "_10RT-26E"
-msgstr "10RT-26E"
-
 msgid "_10RT-26M"
 msgstr "10RT-26M"
 
 msgid "_10RT_26E"
 msgstr "10RT-26E"
+
+msgid "_10RT_26E1"
+msgstr "10RT-26"
 
 msgid "_12.7mm_AP_B32"
 msgstr "B-32"
@@ -5732,6 +5845,9 @@ msgstr "122mm BL-13炮"
 msgid "_122mm_BL_13D_dualgun"
 msgstr "122mm BL-13D-SD炮"
 
+msgid "_122mm_BL_13D_dualgun_CFE_A"
+msgstr "122mm BL-13D-SD炮"
+
 msgid "_122mm_BL_13_1_257"
 msgstr "122mm BL-13-1炮 (257)"
 
@@ -5783,6 +5899,9 @@ msgstr "BP-460A (KV-1S)"
 msgid "_122mm_BP_471BMM"
 msgstr "BP 471BMM"
 
+msgid "_122mm_BP_471BMM_CFE_A"
+msgstr "BP 471BMM"
+
 msgid "_122mm_BP_471D"
 msgstr "BP-471D"
 
@@ -5793,6 +5912,9 @@ msgid "_122mm_BR-471D_P"
 msgstr "BR-471DP"
 
 msgid "_122mm_BR_471BMM"
+msgstr "BR 471BMM"
+
+msgid "_122mm_BR_471BMM_CFE_A"
 msgstr "BR 471BMM"
 
 msgid "_122mm_BR_471DS_SU"
@@ -5979,6 +6101,9 @@ msgid "_122mm_OF_462"
 msgstr "OF-462"
 
 msgid "_122mm_OF_471BMM"
+msgstr "OF 471BMM"
+
+msgid "_122mm_OF_471BMM_CFE_A"
 msgstr "OF 471BMM"
 
 msgid "_122mm_S34_II"
@@ -6242,13 +6367,25 @@ msgstr "122mm M1910/30榴弹炮"
 msgid "_125mm_3BK7_61"
 msgstr "3BK7-61"
 
+msgid "_125mm_3BK7_61_7x7"
+msgstr "3BK7-61"
+
 msgid "_125mm_3BM9_61"
+msgstr "3BM9-61"
+
+msgid "_125mm_3BM9_61_7x7"
 msgstr "3BM9-61"
 
 msgid "_125mm_3OF22_61"
 msgstr "3OF22-61"
 
+msgid "_125mm_3OF22_61_7x7"
+msgstr "3OF22-61"
+
 msgid "_125mm_D_181"
+msgstr "125mm D-181炮"
+
+msgid "_125mm_D_181_7x7"
 msgstr "125mm D-181炮"
 
 msgid "_12LL"
@@ -6258,6 +6395,9 @@ msgid "_12RT"
 msgstr "12RT"
 
 msgid "_12RT_B"
+msgstr "12RT-B"
+
+msgid "_12RT_B_CFE_A"
 msgstr "12RT-B"
 
 msgid "_12RT_Roz"
@@ -6461,13 +6601,25 @@ msgstr "ZBK60M"
 msgid "_136mm_BK_79"
 msgstr "BK-79"
 
+msgid "_136mm_BK_79_7x7"
+msgstr "BK-79"
+
 msgid "_136mm_BR_79"
+msgstr "BR-79"
+
+msgid "_136mm_BR_79_7x7"
 msgstr "BR-79"
 
 msgid "_136mm_D_79"
 msgstr "136mm D-79炮"
 
+msgid "_136mm_D_79_7x7"
+msgstr "136mm D-79炮"
+
 msgid "_136mm_OF_79"
+msgstr "OF-79"
+
+msgid "_136mm_OF_79_7x7"
 msgstr "OF-79"
 
 msgid "_140mm_BR_482A"
@@ -7094,9 +7246,6 @@ msgstr "UBR-243SP (T-70)"
 msgid "_45mm_UOF-240A"
 msgstr "UOF-240A"
 
-msgid "_45mm_UOF-243"
-msgstr "UOF-243"
-
 msgid "_45mm_UOF-243U"
 msgstr "UOF-243U"
 
@@ -7119,6 +7268,9 @@ msgid "_45mm_UOF_240A_T_70"
 msgstr "UOF-240A (T-70)"
 
 msgid "_45mm_UOF_243"
+msgstr "UOF-243"
+
+msgid "_45mm_UOF_243_A"
 msgstr "UOF-243"
 
 msgid "_45mm_UOF_243_A_20"
@@ -7289,6 +7441,9 @@ msgstr "5TDF-SM"
 msgid "_5TD_2"
 msgstr "5TD-2"
 
+msgid "_5TD_2_7x7"
+msgstr "5TD-2"
+
 msgid "_6TD"
 msgstr "6TD"
 
@@ -7337,10 +7492,10 @@ msgstr "BP-354IT"
 msgid "_76mm_BP_350A_T_28"
 msgstr "BP-350A (T-28)"
 
-msgid "_76mm_BR-350A"
+msgid "_76mm_BR_350A"
 msgstr "BR-350A"
 
-msgid "_76mm_BR_350A"
+msgid "_76mm_BR_350A1"
 msgstr "BR-350A"
 
 msgid "_76mm_BR_350A_1"
@@ -7352,13 +7507,13 @@ msgstr "BR-350A"
 msgid "_76mm_BR_350_P_T"
 msgstr "BP-354 T"
 
-msgid "_76mm_F-32"
-msgstr "76mm F-32炮"
-
 msgid "_76mm_F-34S_A"
 msgstr "76mm S-1炮"
 
 msgid "_76mm_F_32"
+msgstr "76mm F-32炮"
+
+msgid "_76mm_F_32_A"
 msgstr "76mm F-32炮"
 
 msgid "_76mm_F_34"

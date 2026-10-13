@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging
 from gui.Scaleform.daapi.view.battle.shared.consumables_panel import ConsumablesPanel
 from gui.app_loader import sf_battle

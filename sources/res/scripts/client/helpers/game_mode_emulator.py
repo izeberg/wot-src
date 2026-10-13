@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import sys, BigWorld
 from SpaceVisibilityFlags import SpaceVisibilityFlagsFactory
 from constants import ARENA_GAMEPLAY_IDS

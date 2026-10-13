@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from past.builtins import basestring
 from gui.Scaleform.daapi.view.lobby.storage import getSectionsList, STORAGE_CONSTANTS
 from gui.shared import event_dispatcher as shared_events
 from helpers import dependency

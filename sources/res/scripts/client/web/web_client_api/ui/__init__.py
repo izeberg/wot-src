@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from web.web_client_api import w2capi, w2c, W2CSchema
 from web.web_client_api.battle_pass import BattlePassWebApiMixin
 from web.web_client_api.seniority_awards import OpenSeniorityAwardsWebApi

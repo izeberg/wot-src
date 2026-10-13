@@ -1,4 +1,7 @@
-import typing, CGF, SoundGroups
+from __future__ import absolute_import
+import typing
+from future.utils import viewvalues
+import CGF, SoundGroups
 from points_of_interest.components import PoiStateComponent, PoiVehicleStateComponent, PoiStateUIListenerComponent, PoiCaptureBlockerStateComponent, PoiStateUpdateMask
 from points_of_interest.poi_view_states import PointViewStateUpdater, VehicleViewStateUpdater
 from points_of_interest_shared import PoiStatus
@@ -138,7 +141,7 @@ class PoiSoundSystem(CGF.System):
 
     def onMappingUnloaded(self):
         self.__poiStates.clear()
-        for soundObj in self.__soundObjects.itervalues():
+        for soundObj in viewvalues(self.__soundObjects):
             soundObj.stop()
             soundObj.releaseMatrix()
 

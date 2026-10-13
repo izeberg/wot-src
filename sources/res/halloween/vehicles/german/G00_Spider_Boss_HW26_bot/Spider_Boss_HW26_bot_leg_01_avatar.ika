@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<skeleton>
+		<node>
+			<name>Leg_01</name>
+			<node>
+				<name>hip</name>
+				<constraint>
+					<type>LINEAR</type>
+					<angle>40.000000</angle>
+					<axis>0.207912 0.978148 0.000000</axis>
+					<direction>0.978148 -0.207912 0.000000</direction>
+				</constraint>
+				<node>
+					<name>toe1</name>
+					<constraint>
+						<type>LINEAR</type>
+						<angle>20.000000</angle>
+						<axis>-0.000000 0.000000 1.000000</axis>
+						<direction>0.906308 -0.422618 0.000000</direction>
+					</constraint>
+					<node>
+						<name>toe2</name>
+						<constraint>
+							<type>LINEAR</type>
+							<angle>50.000000</angle>
+							<axis>0.000000 -0.000000 1.000000</axis>
+							<direction>0.422618 0.906308 0.000000</direction>
+						</constraint>
+						<node>
+							<name>toe3</name>
+							<constraint>
+								<type>LINEAR</type>
+								<angle>40.000000</angle>
+								<axis>0.000000 -0.000000 1.000000</axis>
+								<direction>0.000000 -1.000000 -0.000000</direction>
+							</constraint>
+							<node>
+								<name>toe4</name>
+								<constraint>
+									<type>LINEAR</type>
+									<angle>20.000000</angle>
+									<axis>0.000000 0.000001 1.000000</axis>
+									<direction>0.594881 -0.803814 0.000001</direction>
+								</constraint>
+								<node>
+									<name>foot</name>
+									<type>collider</type>
+								</node>
+							</node>
+						</node>
+					</node>
+				</node>
+			</node>
+		</node>
+	</skeleton>
+</root>

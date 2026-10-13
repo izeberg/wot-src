@@ -127,6 +127,9 @@ msgstr "SR C45"
 msgid "C45_CFE_A"
 msgstr "SR C45"
 
+msgid "C45_FR"
+msgstr "SR C45"
+
 msgid "C45_c_7x7"
 msgstr "SR C45"
 
@@ -385,6 +388,9 @@ msgstr "加布勒突击战车"
 msgid "Chassis_GB147_FV4025_Contriver"
 msgstr "FV4025 谋划者"
 
+msgid "Chassis_GB147_FV4025_Contriver_7x7"
+msgstr "FV4025 谋划者"
+
 msgid "Chassis_GB148_FV227_Conceiver"
 msgstr "FV227 构想者"
 
@@ -425,6 +431,9 @@ msgstr "FV214t"
 
 msgid "Chassis_GB158_Executor"
 msgstr "执行者"
+
+msgid "Chassis_GB159_FV4602_Victorious"
+msgstr "FV4602 凯旋"
 
 msgid "Chassis_GB15_Stuart_I"
 msgstr "\"斯图亚特\"I型"
@@ -693,6 +702,9 @@ msgstr "百夫长 AX"
 msgid "Chassis_GB86_Centurion_Action_X_CFE_A"
 msgstr "常胜将军"
 
+msgid "Chassis_GB86_Centurion_Action_X_FR"
+msgstr "百夫长 AX BS"
+
 msgid "Chassis_GB87_Chieftain_T95_turret"
 msgstr "酋长/T95"
 
@@ -757,8 +769,8 @@ msgstr ""
 "大陆\n"
 "AOI-1195-5A"
 
-msgid "Continental_W-670-9A"
-msgstr "大陆 W-670"
+msgid "Continental_W_670_9A1"
+msgstr "大陆 W-670-9A"
 
 msgid "Crysler_A57"
 msgstr "克莱斯勒 A57"
@@ -1346,13 +1358,13 @@ msgstr ""
 msgid "GB132_Taurus_CAT_long_special"
 msgstr ""
 "金牛座 "
-"CAT是一辆Y系VIII级自行反坦克炮，也是首辆配备液气悬挂装置的Y系坦克，同时亦是首辆配备弹夹炮而非常规循环式火炮的此类坦克。它速度快、灵巧敏捷，配合高射速的弹夹炮，让您可以更主动、更激进地投身战斗。"
+"CAT是一辆Y系IX级自行反坦克炮，配备V系风格的攻城模式，以及一门弹夹炮。其主要特点在于行驶模式下的弹夹装填速度远快于攻城模式。得益于较短的短装填时间，其火炮可快速爆发输出，同时，倾斜度良好的正面装甲也能产生跳弹，并提供一定的防护。"
 
 msgid "GB132_Taurus_CAT_short"
 msgstr "金牛座 CAT"
 
 msgid "GB132_Taurus_CAT_short_special"
-msgstr "弹夹炮与液气悬挂装置"
+msgstr "液气悬挂装置，弹夹炮"
 
 msgid "GB133_Charioteer_MkVII"
 msgstr "御夫座流浪者"
@@ -1560,6 +1572,23 @@ msgstr "弹夹装填系统，出色的机动性"
 msgid "GB147_FV4025_Contriver"
 msgstr "FV4025 谋划者"
 
+msgid "GB147_FV4025_Contriver_7x7"
+msgstr "FV4025 谋划者 7v7"
+
+msgid "GB147_FV4025_Contriver_7x7_descr"
+msgstr ""
+"20世纪50年代末至60年代初，Y系曾积极研发双管岸防坦克。研发期间出现了一个棘手问题: "
+"由于重量过大，这些坦克的接地压强系数过高。为解决此难题，4履带坦克的构想应运而生。该设计借鉴了从S系获取的279工程情报数据，并加以修改: "
+"外侧履带比内侧更轻，悬挂系统也换装为采用垂直螺旋弹簧的Y系悬挂。整个底盘安装在开放式铆接的C型槽钢框架上；然而，因其构造过于复杂，该计划尚未开始便被终止。"
+
+msgid "GB147_FV4025_Contriver_7x7_long_special"
+msgstr ""
+"FV4025 "
+"谋划者是一辆性能均衡、无明显短板的重型坦克，无论是与其他重坦并肩进行阵地对决，还是在面对敌方猛攻时固守防线，它足以在任何战况下独当一面。双管火炮系统增强了战术灵活性，使其能根据战况需要，在精准的单发射击与毁灭性的爆发齐射间自如切换。"
+
+msgid "GB147_FV4025_Contriver_7x7_short"
+msgstr "FV4025 谋划者 7v7"
+
 msgid "GB147_FV4025_Contriver_descr"
 msgstr ""
 "20世纪50年代末至60年代初，Y系曾积极研发双管岸防坦克。研发期间出现了一个棘手问题: "
@@ -1726,6 +1755,24 @@ msgstr ""
 
 msgid "GB158_Executor_short"
 msgstr "执行者"
+
+msgid "GB159_FV4602_Victorious"
+msgstr "FV4602 凯旋"
+
+msgid "GB159_FV4602_Victorious_descr"
+msgstr ""
+"20世纪70年代末，Y系利兰公司提出了自己的未来坦克方案，以取代\"酋长\"坦克。该方案主要侧重于机动性和火力；然而，由于坦克设计过于复杂且造价高昂，军方最终未采纳该方案，转而选择了后来的\"挑战者\"坦克。"
+
+msgid "GB159_FV4602_Victorious_long_special"
+msgstr ""
+"FV4602 "
+"凯旋是一辆Y系X级重型坦克。其强劲火炮足以重创任何对手，而令人印象深刻的可靠正面装甲甚至能够抵挡最猛烈的炮火。此外，该坦克还具有独特机制，可暂时大幅提高速度、机动性和火炮稳定性。"
+
+msgid "GB159_FV4602_Victorious_short"
+msgstr "FV4602 凯旋"
+
+msgid "GB159_FV4602_Victorious_short_special"
+msgstr "暂时提高机动性和火炮稳定性，高额的平均单发损伤"
 
 msgid "GB15_Stuart_I"
 msgstr "\"斯图亚特\" I-IV"
@@ -2302,6 +2349,16 @@ msgstr ""
 "\n"
 "云台列将耀汗青。"
 
+msgid "GB86_Centurion_Action_X_FR"
+msgstr "百夫长 AX BS"
+
+msgid "GB86_Centurion_Action_X_FR_descr"
+msgstr ""
+"AX炮塔原计划用于百夫长坦克的后续改型。一座炮塔原型被安装在百夫长 Mk.VII的底盘上，另一座则用于弹道测试。装备AX炮塔的坦克从未投入量产或服役。"
+
+msgid "GB86_Centurion_Action_X_FR_short"
+msgstr "百夫长 AX BS"
+
 msgid "GB86_Centurion_Action_X_descr"
 msgstr ""
 "AX炮塔原计划用于百夫长坦克的后续改型。一座炮塔原型被安装在百夫长 Mk.VII的底盘上，另一座则用于弹道测试。装备AX炮塔的坦克从未投入量产或服役。"
@@ -2832,6 +2889,12 @@ msgstr "PRC 352"
 msgid "Parson_s_Turbine_No_2983"
 msgstr "2983号帕森斯涡轮发动机"
 
+msgid "Parson_s_Turbine_No_2983_7x7"
+msgstr "2983号帕森斯涡轮发动机"
+
+msgid "Parson_s_Turbine_No_2985"
+msgstr "2985号帕森斯涡轮发动机"
+
 msgid "Paxman_Ricardo"
 msgstr "帕克斯曼 12TP"
 
@@ -3161,6 +3224,9 @@ msgstr "罗·罗 流星 TTSC"
 msgid "Rolls_Royce_Meteor_with_twin_turbo_supercharges_CFE_A"
 msgstr "罗·罗 流星 TTSC"
 
+msgid "Rolls_Royce_Meteor_with_twin_turbo_supercharges_FR"
+msgstr "罗·罗 流星 TTSC"
+
 msgid "Rolls_Royce_Meteorite_202"
 msgstr "罗·罗 流星 Mk.202"
 
@@ -3223,6 +3289,12 @@ msgstr "SR C42I"
 
 msgid "SR_C42O"
 msgstr "SR C42O"
+
+msgid "SR_C42O_7x7"
+msgstr "SR C42O"
+
+msgid "SR_C42V"
+msgstr "SR C42V"
 
 msgid "SR_C42_B"
 msgstr "SR C42 B"
@@ -3404,6 +3476,9 @@ msgstr "加布勒突击战车"
 msgid "Turret_1_GB147_FV4025_Contriver"
 msgstr "FV4025 谋划者"
 
+msgid "Turret_1_GB147_FV4025_Contriver_7x7"
+msgstr "FV4025 谋划者"
+
 msgid "Turret_1_GB148_FV227_Conceiver"
 msgstr "FV227 构想者"
 
@@ -3433,6 +3508,9 @@ msgstr "FV214t"
 
 msgid "Turret_1_GB158_Executor"
 msgstr "执行者"
+
+msgid "Turret_1_GB159_FV4602_Victorious"
+msgstr "FV4602 凯旋"
 
 msgid "Turret_1_GB15_Stuart_I"
 msgstr "\"斯图亚特\" I"
@@ -3586,6 +3664,9 @@ msgstr "百夫长 AX"
 
 msgid "Turret_1_GB86_Centurion_Action_X_CFE_A"
 msgstr "常胜将军"
+
+msgid "Turret_1_GB86_Centurion_Action_X_FR"
+msgstr "百夫长 AX BS"
 
 msgid "Turret_1_GB87_Chieftain_T95_turret"
 msgstr "酋长/T95"
@@ -3792,6 +3873,9 @@ msgstr "32磅 MBC Mk.2双管炮"
 msgid "Twin_4_5_in_Gun_MBC"
 msgstr "4.5英寸 MBC双管炮"
 
+msgid "Twin_4_5_in_Gun_MBC_7x7"
+msgstr "4.5英寸 MBC双管炮"
+
 msgid "Twin_OQF_77mm_Gun_Mk_II"
 msgstr "OQF 77mm双管炮 Mk.II"
 
@@ -3904,6 +3988,9 @@ msgstr "APDS L-28 (5321)"
 msgid "_105mm_APDS_L_28_5321_CFE_A"
 msgstr "APDS L-28"
 
+msgid "_105mm_APDS_L_28_5321_FR"
+msgstr "APDS L-28 (5321)"
+
 msgid "_105mm_AP_EX20"
 msgstr "105mm AP EX20"
 
@@ -3943,6 +4030,9 @@ msgstr "105mm L7A2炮"
 msgid "_105mm_Gun_L7_HEAT_CFE_A"
 msgstr "105mm L7A2炮"
 
+msgid "_105mm_Gun_L7_HEAT_FR"
+msgstr "105mm L7A2炮"
+
 msgid "_105mm_Gun_L7_HEAT_SH"
 msgstr "105mm L7A2炮"
 
@@ -3953,6 +4043,9 @@ msgid "_105mm_HEAT_L7"
 msgstr "US HEAT M456"
 
 msgid "_105mm_HEAT_L7_CFE_A"
+msgstr "US HEAT M456"
+
+msgid "_105mm_HEAT_L7_FR"
 msgstr "US HEAT M456"
 
 msgid "_105mm_HEAT_L7_SH"
@@ -3987,6 +4080,9 @@ msgstr "HESH L-35 (5321)"
 
 msgid "_105mm_HESH_L_35_5321_CFE_A"
 msgstr "HESH-T L-35"
+
+msgid "_105mm_HESH_L_35_5321_FR"
+msgstr "HESH L-35 (5321)"
 
 msgid "_105mm_HESH_L_37_4015"
 msgstr "HESH L-37 (4015)"
@@ -4326,6 +4422,18 @@ msgstr "QF 13磅炮 Mk.III"
 
 msgid "_13pdr_HE"
 msgstr "HE Mk.III"
+
+msgid "_140_mm_L33A1"
+msgstr "140mm L33A1炮"
+
+msgid "_140mm_APDS_Mk_2"
+msgstr "140mm APDS Mk.2"
+
+msgid "_140mm_AP_Mk_1"
+msgstr "140mm AP Mk.1"
+
+msgid "_140mm_HESH_Mk_1"
+msgstr "140mm HESH Mk.1"
 
 msgid "_150mm_AP_Mk_1"
 msgstr "6英寸SAP"
@@ -4999,10 +5107,19 @@ msgstr "QF HE Mk.IT"
 msgid "_4_5_in_APDS_MBC"
 msgstr "APDS MBC"
 
+msgid "_4_5_in_APDS_MBC_7x7"
+msgstr "APDS MBC"
+
 msgid "_4_5_in_AP_MBC"
 msgstr "AP MBC"
 
+msgid "_4_5_in_AP_MBC_7x7"
+msgstr "AP MBC"
+
 msgid "_4_5_in_HE_MBC"
+msgstr "HE MBC"
+
+msgid "_4_5_in_HE_MBC_7x7"
 msgstr "HE MBC"
 
 msgid "_4_5_in_HE_Mk_XIII"

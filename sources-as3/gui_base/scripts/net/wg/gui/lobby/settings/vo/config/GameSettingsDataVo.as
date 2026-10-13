@@ -41,8 +41,6 @@ package net.wg.gui.lobby.settings.vo.config
       
       public var ppShowLevels:SettingsControlProp = null;
       
-      public var gameplay_devMaps:SettingsControlProp = null;
-      
       public var minimapAlpha:SettingsControlProp = null;
       
       public var postmortemMode:SettingsControlProp = null;
@@ -165,7 +163,6 @@ package net.wg.gui.lobby.settings.vo.config
             "sniperModeByShift":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
             "increasedZoom":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
             "ppShowLevels":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
-            "gameplay_devMaps":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
             "minimapAlpha":createControl(ControlsFactory.TYPE_SLIDER).build(),
             "postmortemMode":createControl(ControlsFactory.TYPE_DROPDOWN).build(),
             "enableOpticalSnpEffect":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
@@ -250,8 +247,6 @@ package net.wg.gui.lobby.settings.vo.config
          this.disableBattleChat = null;
          this.ppShowLevels.dispose();
          this.ppShowLevels = null;
-         this.gameplay_devMaps.dispose();
-         this.gameplay_devMaps = null;
          this.minimapAlpha.dispose();
          this.minimapAlpha = null;
          this.postmortemMode.dispose();

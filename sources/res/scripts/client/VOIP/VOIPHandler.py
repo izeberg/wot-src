@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging
 from wotdecorators import noexcept
 _logger = logging.getLogger(__name__)
@@ -30,6 +31,8 @@ MSG_PARTICIPANT_REMOVED = 61
 MESSAGE_IDS[MSG_PARTICIPANT_REMOVED] = 'MSG_PARTICIPANT_REMOVED'
 MSG_PARTICIPANT_UPDATED = 62
 MESSAGE_IDS[MSG_PARTICIPANT_UPDATED] = 'MSG_PARTICIPANT_UPDATED'
+MSG_LOG = 100
+MESSAGE_IDS[MSG_LOG] = 'MSG_LOG'
 
 class VOIPHandler(object):
 
@@ -78,6 +81,9 @@ class VOIPHandler(object):
     def onParticipantUpdated(self, data):
         pass
 
+    def onLog(self, data):
+        pass
+
     @noexcept
     def __call__(self, message, data=None):
         if data is None:
@@ -112,4 +118,6 @@ class VOIPHandler(object):
             self.onParticipantRemoved(data)
         elif message == MSG_PARTICIPANT_UPDATED:
             self.onParticipantUpdated(data)
+        elif message == MSG_LOG:
+            self.onLog(data)
         return

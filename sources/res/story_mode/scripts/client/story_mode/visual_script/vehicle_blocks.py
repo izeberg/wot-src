@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from typing import List, TYPE_CHECKING
 import weakref
 from story_mode.visual_script.enums import SMAwarenessStateEnum

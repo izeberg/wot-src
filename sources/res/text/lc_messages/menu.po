@@ -597,7 +597,7 @@ msgid "booster/bonus/booster_free_xp_and_crew_xp"
 msgstr "%(effectValue)s全局和乘员经验，持续%(effectHours)s"
 
 msgid "booster/bonus/booster_xp"
-msgstr "在战斗中获得的战斗经验加成%(effectValue)s%(effectHours)s"
+msgstr "%(effectValue)s战斗经验加成，持续%(effectHours)s"
 
 msgid "booster/description/bonusValueTime/booster_credits"
 msgstr "银币增加%(effectValue)s，持续%(effectTime)s"
@@ -4255,6 +4255,9 @@ msgstr "该坦克在炮盾上安装了火箭发射器。激活该能力即可切
 msgid "moduleInfo/closeBtn"
 msgstr "关闭"
 
+msgid "moduleInfo/combatThrottle"
+msgstr "战斗档位"
+
 msgid "moduleInfo/compatible/clipVehicles"
 msgstr "坦克装备弹夹装填系统:"
 
@@ -6264,6 +6267,12 @@ msgstr "(个)"
 
 msgid "tank_params/coincidenceElectromechanicalSightDuration"
 msgstr "重合式机电瞄准镜持续时间"
+
+msgid "tank_params/combatThrottleCooldown"
+msgstr "冷却时间"
+
+msgid "tank_params/combatThrottleDuration"
+msgstr "持续时间"
 
 msgid "tank_params/concentrationModeCooldown"
 msgstr "冷却时间"

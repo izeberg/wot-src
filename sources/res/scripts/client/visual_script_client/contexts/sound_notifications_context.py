@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import weakref, BigWorld
 from visual_script.misc import ASPECT
 from visual_script.slot_types import SLOT_TYPE, arrayOf

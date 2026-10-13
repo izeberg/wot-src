@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import weakref, BigWorld
 from helpers import dependency
 from skeletons.account_helpers.settings_core import ISettingsCore

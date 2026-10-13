@@ -919,6 +919,15 @@ msgstr "• 在2019年伟大赛车中获奖。"
 msgid "Fest19Racer_descr"
 msgstr "在个人进度栏上获得第一笔奖励。"
 
+msgid "FortRushMedal_2026"
+msgstr "拦截者"
+
+msgid "FortRushMedal_2026_condition"
+msgstr "授予所有在\"绝密信号2026\"活动期间完成了全部进度阶段的弹簧刀小队特工。它象征着任务完美完成: 信号已被拦截，世界又迎来了一个宁静的夜晚。"
+
+msgid "FortRushMedal_2026_descr"
+msgstr "完成\"绝密信号2026\"活动进度。"
+
 msgid "HE17A1"
 msgstr "怪兽之证"
 
@@ -2677,7 +2686,7 @@ msgid "hw2019Medal1"
 msgstr "米尔内-13侦察兵"
 
 msgid "hw2019Medal1_condition"
-msgstr "• 奖励给在特殊游戏活动期间达成了全部相应条件的所有玩家。"
+msgstr "授予在2020年活动期间满足相应条件的所有玩家。"
 
 msgid "hw2019Medal1_descr"
 msgstr "在米尔内-13的行动中完成一星难度的所有阶段。"
@@ -2686,7 +2695,7 @@ msgid "hw2019Medal2"
 msgstr "米尔内-13老兵"
 
 msgid "hw2019Medal2_condition"
-msgstr "• 奖励给在特殊游戏活动期间达成了全部相应条件的所有玩家。"
+msgstr "授予在2020年活动期间满足相应条件的所有玩家。"
 
 msgid "hw2019Medal2_descr"
 msgstr "在米尔内-13的行动中完成二星难度的所有阶段。"
@@ -2695,13 +2704,13 @@ msgid "hw2019Medal3"
 msgstr "米尔内-13英雄"
 
 msgid "hw2019Medal3_condition"
-msgstr "• 奖励给在特殊游戏活动期间达成了全部相应条件的所有玩家。"
+msgstr "授予在2020年活动期间满足相应条件的所有玩家。"
 
 msgid "hw2019Medal3_descr"
 msgstr "在米尔内-13的行动中完成三星难度的所有阶段。"
 
 msgid "hw2019Medal_condition"
-msgstr "• 奖励给在特殊游戏活动期间达成了全部相应条件的所有玩家。"
+msgstr "授予在2020年活动期间满足相应条件的所有玩家。"
 
 msgid "hw2019Medal_descr"
 msgstr "在米尔内-13的行动中获得所有风格。"
@@ -2710,7 +2719,7 @@ msgid "hw2021Medal1"
 msgstr "驯服猛兽"
 
 msgid "hw2021Medal1_condition"
-msgstr "• 奖励给在特殊游戏活动期间达成了全部相应条件的所有玩家。"
+msgstr "授予在2021年活动期间满足相应条件的所有玩家。"
 
 msgid "hw2021Medal1_descr"
 msgstr "在中等难度下完成米尔内:曙光活动的所有阶段"
@@ -2719,7 +2728,7 @@ msgid "hw2021Medal2"
 msgstr "天选之人"
 
 msgid "hw2021Medal2_condition"
-msgstr "• 奖励给在特殊游戏活动期间达成了全部相应条件的所有玩家。"
+msgstr "授予在2021年活动期间满足相应条件的所有玩家。"
 
 msgid "hw2021Medal2_descr"
 msgstr "在高等难度下完成米尔内:曙光活动的所有阶段"
@@ -2728,7 +2737,7 @@ msgid "hw2022Medal01"
 msgstr "诡异之旅"
 
 msgid "hw2022Medal01_condition"
-msgstr "授予在活动期间满足特殊条件的所有玩家。"
+msgstr "授予在2022年活动期间满足相应条件的所有玩家。"
 
 msgid "hw2022Medal01_descr"
 msgstr "在南瓜派对活动中完成涉及战斗能力的所有任务。"
@@ -2737,7 +2746,7 @@ msgid "hw2022Medal02"
 msgstr "南瓜收割者"
 
 msgid "hw2022Medal02_condition"
-msgstr "授予在活动期间满足特殊条件的所有玩家。"
+msgstr "授予在2022年活动期间满足相应条件的所有玩家。"
 
 msgid "hw2022Medal02_descr"
 msgstr "在南瓜派对活动中获得65000万圣节点数。"
@@ -2746,7 +2755,7 @@ msgid "hw2023Medal"
 msgstr "绝处逢生"
 
 msgid "hw2023Medal_condition"
-msgstr "在米尔内:失落曙光2023活动期间获得。"
+msgstr "授予在2023年活动期间满足相应条件的所有玩家。"
 
 msgid "hw2023Medal_descr"
 msgstr "在米尔内:失落曙光活动中，解密所有的胶片。"
@@ -2755,7 +2764,7 @@ msgid "hw2024Medal"
 msgstr "巴比伦研究员"
 
 msgid "hw2024Medal_condition"
-msgstr "在巴比伦计划2024期间授予。"
+msgstr "授予在2024年活动期间满足相应条件的所有玩家。"
 
 msgid "hw2024Medal_descr"
 msgstr "在巴比伦计划活动中解密所有胶片。"
@@ -2764,10 +2773,37 @@ msgid "hw2025Medal"
 msgstr "禁域科技"
 
 msgid "hw2025Medal_condition"
-msgstr "授予在活动期间满足各个条件的所有玩家。"
+msgstr "授予在2025年活动期间满足相应条件的所有玩家。"
 
 msgid "hw2025Medal_descr"
 msgstr "在巴比伦:荣耀征途中解密所有胶片。"
+
+msgid "hw2026Medal_1"
+msgstr "不抛弃，不放弃"
+
+msgid "hw2026Medal_1_condition"
+msgstr "授予在2026年活动期间满足相应条件的所有玩家。"
+
+msgid "hw2026Medal_1_descr"
+msgstr "在巴比伦:黑塔活动中解密所有胶片。您拒绝抛下亚历克斯！"
+
+msgid "hw2026Medal_2"
+msgstr "銤元素是她的归宿"
+
+msgid "hw2026Medal_2_condition"
+msgstr "授予在2026年活动期间满足相应条件的所有玩家。"
+
+msgid "hw2026Medal_2_descr"
+msgstr "在巴比伦:黑塔活动中解密所有胶片。您让亚历克斯投入了銤元素的怀抱！"
+
+msgid "hw2026Medal_3"
+msgstr "异化剂收藏家"
+
+msgid "hw2026Medal_3_condition"
+msgstr "授予在2026年活动期间满足相应条件的所有玩家。"
+
+msgid "hw2026Medal_3_descr"
+msgstr "在巴比伦:黑塔活动中收集所有异化剂。"
 
 msgid "impenetrable"
 msgstr "坚如磐石"

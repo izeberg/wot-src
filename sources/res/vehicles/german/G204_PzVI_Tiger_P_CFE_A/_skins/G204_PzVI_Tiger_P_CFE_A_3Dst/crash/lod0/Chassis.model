@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G204_PzVI_Tiger_P_CFE_A/_skins/G204_PzVI_Tiger_P_CFE_A_3Dst/crash/lod0/Chassis</nodefullVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.640354 0.000000 -3.318556</min>
+		<max>1.644234 1.383839 3.373186</max>
+	</visibilityBox>
+	<parent>vehicles/german/G204_PzVI_Tiger_P_CFE_A/_skins/G204_PzVI_Tiger_P_CFE_A_3Dst/crash/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+</root>

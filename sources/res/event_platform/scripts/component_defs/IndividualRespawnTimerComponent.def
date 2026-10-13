@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<Properties>
+		<respawnDelay>
+			<Type>UINT8</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</respawnDelay>
+		<timeOfDeath>
+			<Type>UINT32</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</timeOfDeath>
+	</Properties>
+	<DefaultKeyName>IndividualRespawnTimerComponent</DefaultKeyName>
+</root>

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import uuid, typing, logging
 from functools import wraps
 import BigWorld

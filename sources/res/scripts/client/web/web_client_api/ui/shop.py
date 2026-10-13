@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from past.builtins import basestring
 from gui.shared import event_dispatcher, g_eventBus, events
 from gui.shared.event_dispatcher import hideWebBrowserOverlay
 from web.web_client_api import w2c, W2CSchema, Field

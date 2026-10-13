@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld
 from CurrentVehicle import g_currentVehicle
 from tutorial.control.triggers import Trigger, TriggerWithValidateVar

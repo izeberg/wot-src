@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.impl import backport
 from helpers import dependency
 from gui.Scaleform.daapi.view.battle.shared.damage_log_panel import DamageLogPanel, _LogViewComponent, _DamageActionImgVOBuilder, _LogRecordVOBuilder, _EMPTY_SHELL_VO_BUILDER, _DAMAGE_VALUE_VO_BUILDER, _VehicleVOBuilder, _DamageShellVOBuilder, _ReceivedHitVehicleVOBuilder, _CritsShellVOBuilder, _CriticalHitValueVOBuilder, _ActionImgVOBuilder, _AssistActionImgVOBuilder, _ShellVOBuilder, _ShellModeImgVOBuilder

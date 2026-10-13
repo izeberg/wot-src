@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.prb_control import prbDispatcherProperty
 from gui.prb_control.entities.base.ctx import PrbAction
 from gui.prb_control.settings import PREBATTLE_ACTION_NAME

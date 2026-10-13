@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import os, typing, ResMgr, section2dict
 from dict2model import models, schemas, fields, validate, exceptions
 from soft_exception import SoftException

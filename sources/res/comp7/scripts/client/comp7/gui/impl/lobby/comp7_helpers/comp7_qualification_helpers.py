@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from helpers import dependency
 from comp7_common_const import BattleStatuses

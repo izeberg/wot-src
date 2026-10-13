@@ -35,7 +35,7 @@ msgstr "收到！"
 msgid "autoOpenView/title"
 msgstr "已获得奖励"
 
-msgid "awardViews/footer/backButton/"
+msgid "awardViews/footer/backButton"
 msgstr "收到!"
 
 msgid "awardViews/footer/caption/attemptsLeft"
@@ -80,7 +80,7 @@ msgstr "2D风格"
 msgid "bonuses/description/style3D"
 msgstr "3D风格"
 
-msgid "bonuses/label/blueprints/nationalFragment/"
+msgid "bonuses/label/blueprints/nationalFragment"
 msgstr "蓝图碎片(%(nation)s)"
 
 msgid "bonuses/label/blueprints/universalFragment"
@@ -217,17 +217,17 @@ msgstr "%(count)个"
 msgid "guaranteed/tooltip/count/third"
 msgstr "%(count)个"
 
-msgid "guaranteed/tooltip/description/count/"
+msgid "guaranteed/tooltip/description/count"
 msgstr "每开启%(count)补给品"
 
-msgid "guaranteed/tooltip/description/item/"
+msgid "guaranteed/tooltip/description/item"
 msgstr "坦克"
 
-msgid "guaranteed/tooltip/description0/"
+msgid "guaranteed/tooltip/description0"
 msgstr "%(count)将保底掉落%(item)。如果提前掉落坦克，计数器将重置。"
 
-msgid "guaranteed/tooltip/description1/"
-msgstr "若车库中已拥有补给品内的所有坦克，您将获得金币作为补偿。"
+msgid "guaranteed/tooltip/description1"
+msgstr "如果车库中已拥有所有奖励坦克，您将获得金币作为补偿。"
 
 msgid "guaranteedTitle/text"
 msgstr "再开启%(count)个补给品将掉落%(name)"
@@ -293,22 +293,22 @@ msgstr "|"
 msgid "infoPage/rewards/percent"
 msgstr "%"
 
-msgid "multipleRewardView/footer/openNextButton/"
+msgid "multipleRewardView/footer/openNextButton"
 msgstr "开启更多"
 
-msgid "multipleRewardView/header/subTitle/"
+msgid "multipleRewardView/header/subTitle"
 msgstr "从%(name)中获得的奖励(已开启%(boxesCount)个补给品)"
 
-msgid "multipleRewardView/header/title/"
+msgid "multipleRewardView/header/title"
 msgstr "已获得奖励"
 
-msgid "noBoxesView/description/"
+msgid "noBoxesView/description"
 msgstr "您可在军械库中购买补给品礼包"
 
-msgid "noBoxesView/getBoxes/"
+msgid "noBoxesView/getBoxes"
 msgstr "前往购买"
 
-msgid "noBoxesView/goToButton/"
+msgid "noBoxesView/goToButton"
 msgstr "前往可用补给品"
 
 msgid "preview/backLabel"
@@ -410,13 +410,13 @@ msgstr "仅持续至%(date)s: 金币坦克和珍贵游戏内物品等待着您�
 msgid "serviceChannelMessages/statisticReset/server_error/text"
 msgstr "无法重置统计数据。请稍后再试。"
 
-msgid "singleRewardView/extraReward/text/"
+msgid "singleRewardView/extraReward/text"
 msgstr "还有"
 
-msgid "singleRewardView/footer/openNextButton/"
+msgid "singleRewardView/footer/openNextButton"
 msgstr "开启更多"
 
-msgid "singleRewardView/header/title/"
+msgid "singleRewardView/header/title"
 msgstr "已获得奖励"
 
 msgid "singleRewardView/uniqueTankman"

@@ -193,6 +193,9 @@ msgstr "Vz.62 J"
 msgid "Chassis_Cz40_DBV_152"
 msgstr "DBV-152"
 
+msgid "Chassis_Cz41_Petra"
+msgstr "磐石"
+
 msgid "Chassis_Cz43_Ogar"
 msgstr "\"猎犬\""
 
@@ -744,6 +747,23 @@ msgstr "DBV-152"
 msgid "Cz40_DBV_152_short_special"
 msgstr "不俗的平均单发损伤，良好的机动性"
 
+msgid "Cz41_Petra"
+msgstr "磐石"
+
+msgid "Cz41_Petra_descr"
+msgstr ""
+"该坦克为支援步兵作战而研发，双管火炮系统为其赋予了更强的火力。其设计基于成熟可靠的技术方案，并最大限度地实现了部件通用化。紧凑的底盘布局和小巧的发动机传动舱为安装强大的炮塔创造了条件，使坦克得以装备两门大口径火炮，并显著扩大了火炮射界。为减轻车重，设计人员广泛采用了厚度不一的铸造装甲部件；但为满足更高的防护需求，坦克还安装了附加装甲，从而形成针对HEAT炮弹的间隙装甲防护。然而，该设计理念过于标新立异，最终未能获得客户认可。"
+
+msgid "Cz41_Petra_long_special"
+msgstr ""
+"磐石是一辆J系VIII级重型坦克。其主要特点是双管火炮系统。凭借在同等级坦克中较高的平均单发损伤，该坦克在齐射时的破坏力尤为惊人，即使面对更高等级的对手，也足以构成巨大威胁。此外，它还拥有坚固的装甲，但机动性较为平庸。"
+
+msgid "Cz41_Petra_short"
+msgstr "磐石"
+
+msgid "Cz41_Petra_short_special"
+msgstr "双管火炮系统，坚固的装甲"
+
 msgid "Cz43_Ogar"
 msgstr "ZTS Vz.63-1 \"猎犬\""
 
@@ -783,6 +803,9 @@ msgstr "DG-TK-61"
 
 msgid "DG_TK_62"
 msgstr "DG-TK-62"
+
+msgid "DNT_10_Petra"
+msgstr "DNT-10 (磐石)"
 
 msgid "DTN_10"
 msgstr "DTN-10"
@@ -867,6 +890,9 @@ msgstr "RM-31T"
 
 msgid "Radiostanice_R_112"
 msgstr "R-112"
+
+msgid "Radiostanice_R_112_Petra"
+msgstr "R-112 (磐石)"
 
 msgid "Radiostanice_R_113"
 msgstr "R-113"
@@ -1095,6 +1121,9 @@ msgstr "Vz.62 J"
 
 msgid "Turret_1_Cz40_DBV_152"
 msgstr "DBV-152"
+
+msgid "Turret_1_Cz41_Petra"
+msgstr "磐石"
 
 msgid "Turret_1_Cz43_Ogar"
 msgstr "\"猎犬\""
@@ -1371,6 +1400,12 @@ msgstr "HE vz.48 (A)"
 msgid "_122mm_Narazovy_vz_52"
 msgstr "HE vz.52"
 
+msgid "_122mm_Narazovy_vz_52_Petra"
+msgstr "HE vz.52 (磐石)"
+
+msgid "_122mm_Prupalny_vz_52_Petra"
+msgstr "HEAT vz.52 (磐石)"
+
 msgid "_122mm_Prurazny_vz_48"
 msgstr "AP vz.48"
 
@@ -1392,6 +1427,9 @@ msgstr "APCR 50-60(钢芯)"
 msgid "_122mm_Prurazny_vz_52"
 msgstr "AP vz.52"
 
+msgid "_122mm_Prurazny_vz_52_Petra"
+msgstr "AP vz.52 (磐石)"
+
 msgid "_122mm_Prurazny_vz_52_s_oc_jadrem"
 msgstr "APCR vz.52"
 
@@ -1400,6 +1438,9 @@ msgstr "UBR-471"
 
 msgid "_122mm_UOF_741"
 msgstr "UOF-741"
+
+msgid "_122mm_Vz_122_2_L52_Petra"
+msgstr "122mm Vz.122-2 L/52炮 (磐石)"
 
 msgid "_122mm_vz_122_L52"
 msgstr "122mm vz.122 L/52炮"

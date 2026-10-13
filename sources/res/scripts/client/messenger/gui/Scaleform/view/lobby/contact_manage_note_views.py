@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from past.builtins import long
 from gui.Scaleform.locale.MESSENGER import MESSENGER
 from messenger.gui.Scaleform.data.contacts_vo_converter import ContactConverter
 from messenger.gui.Scaleform.meta.ContactNoteManageViewMeta import ContactNoteManageViewMeta
@@ -36,11 +38,11 @@ class ContactManageNoteView(ContactNoteManageViewMeta):
         self.as_setUserPropsS(userProps)
         return
 
-    def checkText(self, text):
-        self.as_setOkBtnEnabledS(self._isTextValid(text))
+    def checkText(self, txt):
+        self.as_setOkBtnEnabledS(self._isTextValid(txt))
 
-    def onOk(self, text):
-        success = self.proto.contacts.setNote(self._dbID, text.currValue)
+    def onOk(self, data):
+        success = self.proto.contacts.setNote(self._dbID, data.currValue)
         if success:
             self.as_closeViewS()
 

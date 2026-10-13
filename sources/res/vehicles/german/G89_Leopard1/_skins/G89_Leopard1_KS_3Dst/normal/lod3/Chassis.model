@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/german/G89_Leopard1/_skins/G89_Leopard1_KS_3Dst/normal/lod4/Chassis</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.805154 0.000000 -3.167367</min>
+		<max>1.805154 1.796269 3.302582</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G89_Leopard1/_skins/G89_Leopard1_KS_3Dst/normal/lod3/Chassis</nodefullVisual>
+</root>

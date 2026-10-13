@@ -1,5 +1,7 @@
+from __future__ import absolute_import
+import typing
 from functools import partial
-import typing, AccountCommands
+import AccountCommands
 from shared_utils.account_helpers.diff_utils import synchronizeDicts
 if typing.TYPE_CHECKING:
     from typing import Callable, Dict, Optional

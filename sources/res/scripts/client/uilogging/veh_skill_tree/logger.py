@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from uilogging.base.logger import MetricsLogger
 from uilogging.veh_skill_tree.logging_constants import VehSkillTreeActions, VehSkillTreeItems, FEATURE_VEH_SKILL_TREE, VEH_SKILL_TREE_SCREEN

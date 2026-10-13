@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from comp7_core.gui.impl.lobby.intro_screen import IntroScreen
 from comp7_light.gui.Scaleform.genConsts.TOOLTIPS_CONSTANTS import TOOLTIPS_CONSTANTS as COMP7_LIGHT_TOOLTIPS
 from comp7_light.gui.impl.gen.view_models.views.lobby.intro_screen_model import IntroScreenModel

@@ -2048,9 +2048,6 @@ msgstr "服务器错误:\"%(vehName)s\"。战争债券不足无法购买给养�
 msgid "layout_apply/EQS_NO_GOLD"
 msgstr "%(vehName)s'服务器错误。金币不足无法购买给养。请稍后再试。"
 
-msgid "layout_apply/EQS_NO_WALLET_SESSION"
-msgstr "操作失败。您的所有金币将在资产同步完成后可用。"
-
 msgid "layout_apply/NOT_RESEARCHED_ITEM"
 msgstr "%(vehName)s'服务器错误。给养无法补给。请稍后再试。"
 
@@ -2062,9 +2059,6 @@ msgstr "%(vehName)s'服务器错误。银币不足无法购买炮弹。"
 
 msgid "layout_apply/SHELLS_NO_GOLD"
 msgstr "%(vehName)s'服务器错误。金币不足无法购买炮弹。"
-
-msgid "layout_apply/SHELLS_NO_WALLET_SESSION"
-msgstr "操作失败。您的所有金币将在资产同步完成后可用。"
 
 msgid "layout_apply/Vehicle is locked"
 msgstr "%(vehName)s'服务器错误。该坦克被锁定。"
@@ -4145,7 +4139,7 @@ msgid "vehicleComponents/vehicle_unlock_success"
 msgstr "%(userString)s已研发。使用战斗经验:%(unspentXP)s。全局经验:%(freeXP)s。"
 
 msgid "vehicleMilestones/vanityAvailable/text"
-msgstr "%(vehicle)s的精英奖励系统现已开放"
+msgstr "%(vehicle)s的精英奖励系统现已开放。"
 
 msgid "vehicleMilestones/vanityAvailable/title"
 msgstr "精英奖励"

@@ -3501,12 +3501,6 @@ msgstr "小队限制"
 msgid "details/conditions/additional"
 msgstr "点击查看此任务的次要条件。"
 
-msgid "devMaps/body"
-msgstr "在有可能发生火车事故或飞机坠毁等随机事件的地图上投身战斗。这些事件会改变战场环境，并创造全新战术机会。"
-
-msgid "devMaps/header"
-msgstr "在带有随机事件的地图上战斗"
-
 msgid "deviceFits/already_installed/header"
 msgstr "已安装:"
 
@@ -7139,6 +7133,16 @@ msgstr "?empty?"
 msgid "notrecruitedtankman/fisherman/label"
 msgstr "?empty?"
 
+msgid "notrecruitedtankman/fr_spark/desc"
+msgstr ""
+"对于\"星火\"莱西·帕克斯顿而言，她从未在同一个地方停留。她的父亲是一名通信工程师，从小跟随父亲在各个军事基地之间辗转的生活让她见多识广、适应力强，而且在发现规律方面有着超乎寻常的敏锐。\"星火\"后来证明了她在装甲坦克内的能力丝毫不逊于她在情报设备后的表现。她以含蓄但幽默的方式领导团队，而且从不轻易让她的团队冒险。当第三区组建一支部队以拦截\"缔造者\"的通讯时，\"星火\"是当之无愧的指挥官人选。她将其第一个任务命名为\"弹簧刀行动\"，而这个名字也成为了该部队的代号。"
+
+msgid "notrecruitedtankman/fr_spark/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/fr_spark/label"
+msgstr "绝密信号"
+
 msgid "notrecruitedtankman/freeSkillsTitle"
 msgstr "零历练特长"
 
@@ -7180,6 +7184,15 @@ msgstr "?empty?"
 msgid "notrecruitedtankman/girls_und_panzer_erwin/label"
 msgstr "?empty?"
 
+msgid "notrecruitedtankman/girls_und_panzer_hoshino/desc"
+msgstr "Hoshino是一名出色的炮手，总能面带笑容地将对手逐个击败；而在闲暇之余，她同样是一名驾驶技术高超的车手。"
+
+msgid "notrecruitedtankman/girls_und_panzer_hoshino/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/girls_und_panzer_hoshino/label"
+msgstr "?empty?"
+
 msgid "notrecruitedtankman/girls_und_panzer_kei/desc"
 msgstr ""
 "Kei性格外向，一直秉持着公平竞争的原则，是桑德斯大学附属高中战车道团队中既活泼又技艺高超的指挥官。她是全队的精神支柱，也时刻提醒队友：玩得开心，才能让胜利更加令人愉悦。"
@@ -7188,6 +7201,15 @@ msgid "notrecruitedtankman/girls_und_panzer_kei/howToGetInfo"
 msgstr "?empty?"
 
 msgid "notrecruitedtankman/girls_und_panzer_kei/label"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/girls_und_panzer_nakajima/desc"
+msgstr "作为豹狮组悠闲随性的车长兼通信兵，她即使身处激战之中也总能保持冷静。"
+
+msgid "notrecruitedtankman/girls_und_panzer_nakajima/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/girls_und_panzer_nakajima/label"
 msgstr "?empty?"
 
 msgid "notrecruitedtankman/girls_und_panzer_naomi/desc"
@@ -7226,6 +7248,24 @@ msgid "notrecruitedtankman/girls_und_panzer_saunders/howToGetInfo"
 msgstr "?empty?"
 
 msgid "notrecruitedtankman/girls_und_panzer_saunders/label"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/girls_und_panzer_suzuki/desc"
+msgstr "Suzuki也许举止温柔，但她装填的炮弹却能重创对手。"
+
+msgid "notrecruitedtankman/girls_und_panzer_suzuki/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/girls_und_panzer_suzuki/label"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/girls_und_panzer_tsuchiya/desc"
+msgstr "您可以试着劝Tsuchiya别再漂移了，但别指望她会照做。"
+
+msgid "notrecruitedtankman/girls_und_panzer_tsuchiya/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/girls_und_panzer_tsuchiya/label"
 msgstr "?empty?"
 
 msgid "notrecruitedtankman/howToGet"
@@ -7436,6 +7476,16 @@ msgid "notrecruitedtankman/lunar26_commander/howToGetInfo"
 msgstr "?empty?"
 
 msgid "notrecruitedtankman/lunar26_commander/label"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/mustached_engineer/desc"
+msgstr ""
+"著名工程师出身的指挥官埃米尔·季亚琴科，无论是向敌方坦克倾泄炮火，还是打开引擎盖进行临时升级，都同样游刃有余。作为一名特立独行的人物，他早已成为军营中的传奇。手下的士兵甚至信誓旦旦地表示从未见过他睡觉。埃米尔当然知道这些传闻，但他选择不置可否。他本就热衷打破常规，又怎会扼杀他人的幻想？事实上，倘若他没有在筹划下一次异想天开的冒险，那就是在埋头绘制各种自制涡轮增压器的设计图。这些装置看起来根本不可能成功...至少看上去是这样。"
+
+msgid "notrecruitedtankman/mustached_engineer/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/mustached_engineer/label"
 msgstr "?empty?"
 
 msgid "notrecruitedtankman/ny19men/desc"
@@ -12548,6 +12598,12 @@ msgstr ""
 
 msgid "tank_params/desc/coincidenceElectromechanicalSightDuration"
 msgstr "重合式机电瞄准镜激活后的效果持续时间。"
+
+msgid "tank_params/desc/combatThrottleCooldown"
+msgstr "使用后，再次激活档位所需的时间。"
+
+msgid "tank_params/desc/combatThrottleDuration"
+msgstr "激活后，档位效果的持续时间。"
 
 msgid "tank_params/desc/concentrationModeCooldown"
 msgstr "使用后，再次激活稳定器所需的时间。"

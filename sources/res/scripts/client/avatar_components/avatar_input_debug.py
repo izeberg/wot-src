@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld, constants, pickle, Input, typing, logging
 from Input import TriggerEvent
 from gui.battle_control import event_dispatcher as gui_event_dispatcher

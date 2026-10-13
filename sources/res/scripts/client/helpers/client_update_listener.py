@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing, Event
 from PlayerEvents import g_playerEvents
 from account_helpers import AccountSyncData

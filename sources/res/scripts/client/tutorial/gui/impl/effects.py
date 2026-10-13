@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing, logging
 from gui.Scaleform.genConsts.TUTORIAL_EFFECT_TYPES import TUTORIAL_EFFECT_TYPES
 from gui.impl.gen.view_models.common.tutorial.visible_effect_model import VisibleEffectModel

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from frontline.gui.prb_control.entities.epic.pre_queue.vehicles_watcher import EpicVehiclesWatcher
 from frontline.gui.prb_control.entities.epic.squad.actions_validator import EpicSquadActionsValidator
 from frontline.gui.prb_control.entities.epic.squad.components import EpicSquadRestrictionsProvider

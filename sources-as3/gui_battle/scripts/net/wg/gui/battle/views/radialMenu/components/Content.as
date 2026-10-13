@@ -11,7 +11,7 @@ package net.wg.gui.battle.views.radialMenu.components
       
       private static const BACKGROUND_MIN_WIDTH:int = 20;
       
-      private static const ADJUSTING_OFFSET_FOR_LEFTSIDE:int = 26;
+      private static const ADJUSTING_OFFSET_FOR_LEFT_SIDE:int = 26;
       
       private static const TEXTFIELD_PADDING:int = 12;
        
@@ -45,38 +45,6 @@ package net.wg.gui.battle.views.radialMenu.components
          this.titleMC.titleTF.text = param1;
       }
       
-      public function setKeyVisibility(param1:Boolean) : void
-      {
-         this.keyTF.visible = param1;
-         this.keyBackgroundMC.visible = param1;
-      }
-      
-      public function setKeyTextAndBackgroundWidth(param1:String) : void
-      {
-         this.keyTF.text = param1;
-         var _loc2_:int = Math.max(this.keyTF.textWidth + TEXTFIELD_PADDING,BACKGROUND_MIN_WIDTH);
-         this.keyBackgroundMC.width = this.keyTF.width = _loc2_;
-      }
-      
-      public function setContentsXCoord(param1:int, param2:int, param3:int) : void
-      {
-         var _loc4_:int = -this.titleMC.titleTF.textWidth - param1;
-         this.titleMC.x = _loc4_;
-         this.setKeyXCoord(param2,param3);
-      }
-      
-      public function setKeyXCoord(param1:int, param2:int) : void
-      {
-         var _loc3_:int = param1;
-         if(param1 < 0)
-         {
-            _loc3_ = param1 - this.keyTF.width + ADJUSTING_OFFSET_FOR_LEFTSIDE;
-         }
-         this.keyBackgroundMC.x = _loc3_;
-         this.keyTF.x = _loc3_;
-         this.customButtonIcon.x = param2;
-      }
-      
       public final function dispose() : void
       {
          this._disposed = true;
@@ -94,6 +62,37 @@ package net.wg.gui.battle.views.radialMenu.components
       public function isDisposed() : Boolean
       {
          return this._disposed;
+      }
+      
+      public function setContentsXCoord(param1:int, param2:int, param3:int) : void
+      {
+         this.titleMC.x = -this.titleMC.titleTF.textWidth - param1;
+         this.setKeyXCoord(param2,param3);
+      }
+      
+      public function setKeyTextAndBackgroundWidth(param1:String) : void
+      {
+         this.keyTF.text = param1;
+         var _loc2_:int = Math.max(this.keyTF.textWidth + TEXTFIELD_PADDING,BACKGROUND_MIN_WIDTH);
+         this.keyBackgroundMC.width = this.keyTF.width = _loc2_;
+      }
+      
+      public function setKeyVisibility(param1:Boolean) : void
+      {
+         this.keyTF.visible = param1;
+         this.keyBackgroundMC.visible = param1;
+      }
+      
+      public function setKeyXCoord(param1:int, param2:int) : void
+      {
+         var _loc3_:int = param1;
+         if(param1 < 0)
+         {
+            _loc3_ = param1 - this.keyTF.width + ADJUSTING_OFFSET_FOR_LEFT_SIDE;
+         }
+         this.keyBackgroundMC.x = _loc3_;
+         this.keyTF.x = _loc3_;
+         this.customButtonIcon.x = param2;
       }
    }
 }

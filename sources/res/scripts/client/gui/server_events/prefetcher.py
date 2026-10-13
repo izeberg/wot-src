@@ -2,7 +2,7 @@ import json, itertools, weakref, typing
 from collections import namedtuple
 import BigWorld, ResMgr
 from wg_async import wg_async, wg_await, await_callback, AsyncScope, AsyncSemaphore
-from constants import DailyQuestDecorationMap, EVENT_TYPE
+from constants import DailyQuestDecorationMap, EVENT_TYPE, GF_RES_PROTOCOL
 from debug_utils import LOG_WARNING
 from gui import GUI_SETTINGS
 from gui.impl.gen import R
@@ -11,7 +11,8 @@ from gui.Scaleform.locale.QUESTS import QUESTS
 from gui.Scaleform.locale.RES_ICONS import RES_ICONS
 from gui.server_events.formatters import TOKEN_SIZES, DECORATION_SIZES, parseComplexToken
 from gui.server_events.events_helpers import isMarathon, isDailyQuest, isPremium
-from gui.shared.utils import mapTextureToTheMemory, getImageSize
+from gui.shared.image_helper import getTextureLinkByID
+from gui.shared.utils import mapTextureToTheMemory, getImageSize, removeTextureFromMemory
 from helpers import getClientLanguage, dependency
 from skeletons.gui.lobby_context import ILobbyContext
 from soft_exception import SoftException
@@ -39,6 +40,9 @@ class SubRequester(object):
 
     def pickup(self, ticket):
         return self._storage.get(ticket)
+
+    def clear(self):
+        self._storage.clear()
 
     def ask(self, filecache, fileserver):
         tickets = self._tickets()
@@ -91,24 +95,55 @@ class SubRequester(object):
         return ticket in self._storage
 
 
-class TokenImagesSubRequester(SubRequester):
+class ImagesSubRequester(SubRequester):
 
-    def pickup(self, styleID, size):
-        ticket = (
-         styleID, size)
-        content = self._storage.get(ticket)
-        if content:
-            return ('img://{}').format(mapTextureToTheMemory(content))
-        if styleID in _DEFAULT_TOKENS_STYLES:
-            return RES_ICONS.getTokenImage(size, styleID)
-        return RES_ICONS.getTokenUndefinedImage(size)
+    def __init__(self, eventsCache, semaphore):
+        super(ImagesSubRequester, self).__init__(eventsCache, semaphore)
+        self._textures = {}
+
+    def clear(self):
+        for ticket in list(self._textures):
+            self._releaseTexture(ticket)
+
+        super(ImagesSubRequester, self).clear()
 
     def _handler(self, ticket, content):
         _, expectedSize = ticket
         actualSize = ('{}x{}').format(*getImageSize(content))
         if expectedSize != actualSize:
             raise SoftException('Downloaded image has invalid size')
+        self._releaseTexture(ticket)
         self._storage[ticket] = content
+
+    def _getTextureLink(self, ticket, protocol):
+        textureID = self._textures.get(ticket)
+        if textureID is None:
+            content = self._storage.get(ticket)
+            if not content:
+                return
+            textureID = mapTextureToTheMemory(content, temp=False)
+            if textureID is None:
+                return
+            self._textures[ticket] = textureID
+        return getTextureLinkByID(textureID, protocol)
+
+    def _releaseTexture(self, ticket):
+        textureID = self._textures.pop(ticket, None)
+        if textureID is not None:
+            removeTextureFromMemory(textureID)
+        return
+
+
+class TokenImagesSubRequester(ImagesSubRequester):
+
+    def pickup(self, styleID, size, protocol=GF_RES_PROTOCOL.IMG):
+        ticket = (styleID, size)
+        link = self._getTextureLink(ticket, protocol)
+        if link:
+            return link
+        if styleID in _DEFAULT_TOKENS_STYLES:
+            return RES_ICONS.getTokenImage(size, styleID)
+        return RES_ICONS.getTokenUndefinedImage(size)
 
     def _tickets(self):
         tickets = []
@@ -180,11 +215,10 @@ class TokenInfoSubRequester(SubRequester):
         return False
 
 
-class DecorationRequester(SubRequester):
+class DecorationRequester(ImagesSubRequester):
 
-    def pickup(self, decorationID, size):
-        ticket = (
-         decorationID, size)
+    def pickup(self, decorationID, size, protocol=GF_RES_PROTOCOL.IMG):
+        ticket = (decorationID, size)
         if size == DECORATION_SIZES.BONUS:
             if str(decorationID) in _DEFAULT_DECORATIONS:
                 return RES_ICONS.getQuestDecoration(decorationID)
@@ -193,17 +227,7 @@ class DecorationRequester(SubRequester):
             if size == DECORATION_SIZES.DAILY:
                 return DailyQuestDecorationMap.get(decorationID, '')
             default = ''
-        content = self._storage.get(ticket)
-        if content:
-            return ('img://{}').format(mapTextureToTheMemory(content))
-        return default
-
-    def _handler(self, ticket, content):
-        _, expectedSize = ticket
-        actualSize = ('{}x{}').format(*getImageSize(content))
-        if actualSize != expectedSize:
-            raise SoftException('Downloaded image has invalid size')
-        self._storage[ticket] = content
+        return self._getTextureLink(ticket, protocol) or default
 
     def _tickets(self):
         decorations = []
@@ -297,11 +321,11 @@ class Prefetcher(object):
         self._requesters = {}
         return
 
-    def getTokenImage(self, styleID, size):
-        return self._requesters['tokenImage'].pickup(styleID, size)
+    def getTokenImage(self, styleID, size, protocol=GF_RES_PROTOCOL.IMG):
+        return self._requesters['tokenImage'].pickup(styleID, size, protocol)
 
-    def getMissionDecoration(self, decorationID, size):
-        return self._requesters['decoration'].pickup(decorationID, size)
+    def getMissionDecoration(self, decorationID, size, protocol=GF_RES_PROTOCOL.IMG):
+        return self._requesters['decoration'].pickup(decorationID, size, protocol)
 
     def getTokenInfo(self, styleID):
         return self._requesters['tokenInfo'].pickup(styleID).title
@@ -321,7 +345,12 @@ class Prefetcher(object):
            'decoration': DecorationRequester(self._eventsCache, self._semaphore)}
 
     def fini(self):
+        self.clear()
         self._asyncScope.destroy()
+
+    def clear(self):
+        for requester in self._requesters.itervalues():
+            requester.clear()
 
     def ask(self):
         filecache = BigWorld.player().customFilesCache

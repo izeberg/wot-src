@@ -138,15 +138,7 @@ class IInventoryRequester(IRequester):
 class IStatsRequester(IRequester):
 
     @property
-    def mayConsumeWalletResources(self):
-        raise NotImplementedError
-
-    @property
-    def currencyStatuses(self):
-        raise NotImplementedError
-
-    @property
-    def dynamicCurrencyStatuses(self):
+    def isResourcesConsumptionAllowed(self):
         raise NotImplementedError
 
     @property

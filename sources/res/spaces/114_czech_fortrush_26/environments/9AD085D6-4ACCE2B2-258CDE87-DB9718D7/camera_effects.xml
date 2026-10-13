@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<effectMap>spaces/114_czech_fortrush_26/environments/9AD085D6-4ACCE2B2-258CDE87-DB9718D7/camera_effects_map.dds</effectMap>
+	<effect>
+		<id>1</id>
+		<name>particles/content_deferred/PFX/Environment/interior/19_Paper_CE.vfx</name>
+		<alignToTerrain>true</alignToTerrain>
+		<useCameraTarget>false</useCameraTarget>
+	</effect>
+	<effect>
+		<id>2</id>
+		<name>particles/content_deferred/PFX/Environment/CameraEffects/sky_ash.vfx</name>
+		<alignToTerrain>true</alignToTerrain>
+		<useCameraTarget>false</useCameraTarget>
+	</effect>
+	<effect>
+		<id>3</id>
+		<name>particles/content_deferred/PFX/Environment/interior/19_Ashes_CE.vfx</name>
+		<alignToTerrain>false</alignToTerrain>
+		<useCameraTarget>false</useCameraTarget>
+	</effect>
+</root>

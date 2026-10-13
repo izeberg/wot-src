@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import enum, typing, BigWorld
 from dyn_components_groups import groupComponent
 from script_component.DynamicScriptComponent import DynamicScriptComponent

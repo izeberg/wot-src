@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from tutorial.control import TutorialProxyHolder
 from tutorial.logger import LOG_DEBUG
 STATE_LOADING = 0

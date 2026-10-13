@@ -1,4 +1,5 @@
-import typing, enum, BigWorld, Compound, CGF, Math, GenericComponents, math_utils
+from __future__ import absolute_import
+import typing, enum, BigWorld, Compound, CGF, EntitySync, Math, math_utils
 from constants import IS_UE_EDITOR
 from items.components import component_constants
 from items.components.c11n_constants import HANGER_POSTFIX, AttachmentType
@@ -116,7 +117,7 @@ def findParentVehicle(gameObject):
     from SimulatedVehicle import SimulatedVehicle
     from ClientSelectableCameraVehicle import ClientSelectableCameraVehicle
     from DetachedTurret import DetachedTurret
-    result = CGF.findParentWithComponent(gameObject, GenericComponents.EntityGOSync)
+    result = CGF.findParentWithComponent(gameObject, EntitySync.EntityGOSync)
     if result is not None:
         _, sync = result
         entity = sync.entity

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>content/3D_Customization/Cus_316_EMP_Jammer/normal/lod0/Cus_316_EMP_Jammer</nodefullVisual>
+	<visibilityBox>
+		<min>-0.293033 -0.100000 -0.310159</min>
+		<max>0.293033 0.386073 0.271097</max>
+	</visibilityBox>
+	<parent>content/3D_Customization/Cus_316_EMP_Jammer/normal/lod1/Cus_316_EMP_Jammer</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+</root>

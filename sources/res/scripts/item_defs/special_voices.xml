@@ -908,6 +908,22 @@
 			<gender>male</gender>
 			<languageMode>tankmen_mtlb4_1</languageMode>
 		</tankman>
+		<tankman>
+			<tag>fr_spark_SpecialVoice</tag>
+			<gender>male</gender>
+			<languageMode>
+				FR_Spark_en
+				<CN>FR_Spark_cn</CN>
+			</languageMode>
+		</tankman>
+		<tankman>
+			<tag>nakajima_SpecialVoice</tag>
+			<gender>male</gender>
+			<languageMode>gup_nakajima</languageMode>
+			<specialModes>
+				<isFullCrew>gup_leopon_crew</isFullCrew>
+			</specialModes>
+		</tankman>
 	</voiceover>
 	<arenaMusic>
 		<style>

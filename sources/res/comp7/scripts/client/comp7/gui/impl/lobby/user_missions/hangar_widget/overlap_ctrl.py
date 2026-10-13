@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from comp7.gui.impl.lobby.hangar.states import Comp7RootHangarState
 from gui.impl.lobby.user_missions.hangar_widget.overlap_ctrl import OverlapCtrlMixin
 

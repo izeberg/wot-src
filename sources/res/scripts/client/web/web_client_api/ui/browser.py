@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from past.builtins import basestring, long
 from adisp import adisp_process
 from frameworks import wulf
 from frameworks.wulf import WindowLayer

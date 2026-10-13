@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from gui.impl import backport
 from gui.impl.gen import R
@@ -14,9 +15,9 @@ def getValidVehicleCDForNationChange(vehCompDescr):
     if vehicle.hasNationGroup:
         if vehicle.isInInventory:
             if not vehicle.activeInNationGroup:
-                tempVehCD = iterVehTypeCDsInNationGroup(vehCompDescr).next()
+                tempVehCD = next(iterVehTypeCDsInNationGroup(vehCompDescr))
         elif not isMainInNationGroup(vehCompDescr):
-            tempVehCD = iterVehTypeCDsInNationGroup(vehCompDescr).next()
+            tempVehCD = next(iterVehTypeCDsInNationGroup(vehCompDescr))
     return tempVehCD
 
 

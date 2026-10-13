@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import functools
 from tutorial.data.has_id import HasID
 __all__ = ('CONDITION_TYPE', 'CONDITION_STATE', 'FlagCondition', 'GlobalFlagCondition',

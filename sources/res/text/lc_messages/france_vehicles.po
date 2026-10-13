@@ -472,6 +472,9 @@ msgstr "M47 \"谢瓦利埃\""
 msgid "Chassis_F143_Fauteur"
 msgstr "庇护者"
 
+msgid "Chassis_F145_Scarabee"
+msgstr "\"圣甲虫\""
+
 msgid "Chassis_F147_AMX29_Belier"
 msgstr "AMX 29 \"攻城槌\""
 
@@ -1522,6 +1525,23 @@ msgstr ""
 msgid "F143_Fauteur_short"
 msgstr "庇护者"
 
+msgid "F145_Scarabee"
+msgstr "\"圣甲虫\""
+
+msgid "F145_Scarabee_descr"
+msgstr ""
+"一项由F系和I系合作研发的坦克计划。当时认为，采用经过测试和改进的底盘，结合颇具潜力的炮塔与强大的火力，可加快坦克的研制进程；然而，由于遭遇技术难题，该计划最终仅停留在蓝图阶段。"
+
+msgid "F145_Scarabee_long_special"
+msgstr ""
+"\"圣甲虫\"是一辆F系IX级中型坦克。该坦克配备一门3连发改进型自动装填炮。凭借相对于同等级和同类型坦克来说极高的平均单发损伤，它在大多数消耗战中都能脱颖而出，同时，出色的精度和瞄准时间，也使其能够稳定地在远距离打击敌人。"
+
+msgid "F145_Scarabee_short"
+msgstr "\"圣甲虫\""
+
+msgid "F145_Scarabee_short_special"
+msgstr "改进型自动装填炮，出色的机动性"
+
 msgid "F147_AMX29_Belier"
 msgstr "AMX 29 \"攻城槌\""
 
@@ -2346,6 +2366,9 @@ msgstr "迈巴赫 HL 234 P50"
 msgid "Maybach_HL_234P50_short"
 msgstr "迈巴赫 HL 234 P50"
 
+msgid "Maybach_HL_234_P45"
+msgstr "迈巴赫 HL 234 P45"
+
 msgid "Maybach_HL_235_850"
 msgstr "迈巴赫 HL235 (850马力)"
 
@@ -2633,6 +2656,9 @@ msgstr "SCR 508"
 
 msgid "SCR_528"
 msgstr "SCR 528F"
+
+msgid "SCR_528S"
+msgstr "SCR 528S"
 
 msgid "SCR_528_7x7"
 msgstr "SCR 528F"
@@ -2974,6 +3000,9 @@ msgstr "M47 \"谢瓦利埃\""
 
 msgid "Turret_1_F143_Fauteur"
 msgstr "庇护者"
+
+msgid "Turret_1_F145_Scarabee"
+msgstr "\"圣甲虫\""
 
 msgid "Turret_1_F147_AMX29_Belier"
 msgstr "AMX 29 \"攻城槌\""
@@ -3788,6 +3817,9 @@ msgstr "120mm SA46 F炮"
 
 msgid "_127_mm_CN_127_F1"
 msgstr "127mm CN-127-F1炮"
+
+msgid "_127_mm_OTO_Melara_S"
+msgstr "奥托·梅莱拉 127mm S炮"
 
 msgid "_127_mm_Obus_Explosif_Mle_58"
 msgstr "127mm OE Mle.58"
@@ -4868,3 +4900,12 @@ msgstr "霍奇基斯H35"
 
 msgid "_M_107"
 msgstr "HE M107"
+
+msgid "a_e_127_54_Mk_116S"
+msgstr "a.e. 127/54 Mk.116S"
+
+msgid "c_c_127_54_Mk_411S"
+msgstr "c.c. 127/54 Mk.411S"
+
+msgid "c_p_127_54_Mk_316S"
+msgstr "c.p. 127/54 Mk.316S"

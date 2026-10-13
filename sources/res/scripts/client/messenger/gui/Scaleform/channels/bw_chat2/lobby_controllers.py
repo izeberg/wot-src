@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.prb_control.entities.base.legacy.listener import ILegacyListener
 from gui.prb_control.settings import PREBATTLE_ROSTER
 from gui.shared import g_eventBus, EVENT_BUS_SCOPE
@@ -99,22 +100,22 @@ class TrainingChannelController(LobbyChannelController, ILegacyListener):
             self._buildMembersList()
         super(TrainingChannelController, self).setView(view)
 
-    def onPlayerAdded(self, entity, pInfo):
+    def onPlayerAdded(self, entity, playerInfo):
         self._channel.addMembers([
-         BWMemberEntity(pInfo.dbID, pInfo.name)])
+         BWMemberEntity(playerInfo.dbID, playerInfo.name)])
         self._refreshMembersDP()
 
     def onPlayerRemoved(self, entity, playerInfo):
         self._channel.clearMembers()
         self._buildMembersList()
 
-    def onPlayerStateChanged(self, entity, roster, pInfo):
-        if pInfo.isOffline():
-            self._channel.removeMembers([pInfo.dbID])
+    def onPlayerStateChanged(self, entity, roster, accountInfo):
+        if accountInfo.isOffline():
+            self._channel.removeMembers([accountInfo.dbID])
             self._refreshMembersDP()
-        elif not self._channel.hasMember(pInfo.dbID):
+        elif not self._channel.hasMember(accountInfo.dbID):
             self._channel.addMembers([
-             BWMemberEntity(pInfo.dbID, pInfo.name)])
+             BWMemberEntity(accountInfo.dbID, accountInfo.name)])
             self._refreshMembersDP()
 
     def _removeListeners(self):
@@ -131,8 +132,8 @@ class TrainingChannelController(LobbyChannelController, ILegacyListener):
         def __convert(pInfo):
             return BWMemberEntity(pInfo.dbID, pInfo.name)
 
-        members = map(__convert, rosters[PREBATTLE_ROSTER.ASSIGNED_IN_TEAM1])
-        members.extend(map(__convert, rosters[PREBATTLE_ROSTER.ASSIGNED_IN_TEAM2]))
-        members.extend(map(__convert, rosters[PREBATTLE_ROSTER.UNASSIGNED]))
+        members = [ __convert(item) for item in rosters[PREBATTLE_ROSTER.ASSIGNED_IN_TEAM1] ]
+        members.extend(__convert(item) for item in rosters[PREBATTLE_ROSTER.ASSIGNED_IN_TEAM2])
+        members.extend(__convert(item) for item in rosters[PREBATTLE_ROSTER.UNASSIGNED])
         self._channel.addMembers(members)
         self._refreshMembersDP()

@@ -303,6 +303,9 @@ msgstr "M4190 GF"
 msgid "Chassis_G121_Grille_15_L63"
 msgstr "“蟋蟀”15"
 
+msgid "Chassis_G121_Grille_15_L63_FR"
+msgstr "\"蟋蟀\"15 BS"
+
 msgid "Chassis_G122_VK6501H"
 msgstr "VK6501(H)"
 
@@ -536,7 +539,7 @@ msgid "Chassis_G200_Chi_Go"
 msgstr "\"黑豹\"奇戈"
 
 msgid "Chassis_G204_PzVI_Tiger_P_CFE_A"
-msgstr "VK4501(P)"
+msgstr "\"虎\"(P)\"豹狮\""
 
 msgid "Chassis_G23_Grille"
 msgstr "“蟋蟀”"
@@ -576,6 +579,9 @@ msgstr "VK 30.01 (P)加强型"
 
 msgid "Chassis_G27_VK3001P_2_short"
 msgstr "VK 30.01 (P)加强型"
+
+msgid "Chassis_G28_PzIII_IV"
+msgstr "III/IV号坦克"
 
 msgid "Chassis_G37_Ferdinand"
 msgstr "\"斐迪南\""
@@ -759,6 +765,9 @@ msgstr "\"IDA坦克方案\""
 msgid "Chassis_G89_Leopard1"
 msgstr "“豹”I"
 
+msgid "Chassis_G89_Leopard1_CFE_A"
+msgstr "蒸汽时代"
+
 msgid "Chassis_G91_Pro_Ag_A"
 msgstr "“豹”I 原型车A1"
 
@@ -923,10 +932,10 @@ msgstr ""
 "大陆\n"
 "AOS-895-3"
 
-msgid "Continental_AVI_1790_8"
+msgid "Continental_AVI_1790_8A"
 msgstr "大陆 AVI-1790-8"
 
-msgid "Continental_AVI_1790_8_short"
+msgid "Continental_AVI_1790_8A_short"
 msgstr ""
 "大陆\n"
 "AVI-1790-8"
@@ -1616,6 +1625,18 @@ msgstr "优秀的火炮和良好的机动性"
 
 msgid "G121_Grille_15_L63"
 msgstr "“蟋蟀”15"
+
+msgid "G121_Grille_15_L63_FR"
+msgstr "\"蟋蟀\"15 BS"
+
+msgid "G121_Grille_15_L63_FR_descr"
+msgstr ""
+"1942年夏，D系陆军武器局与克虏伯公司及莱茵金属公司达成协议，计划以\"黑豹\"坦克的底盘为基础来设计一辆自行反坦克炮。原计划为其配备一门128mm "
+"K 43炮或150mm sFH "
+"43榴弹炮。该项目被命名为\"蟋蟀\"12和\"蟋蟀\"15，采用了战斗室后置的布局，它们唯一的区别就是火炮系统。后来，\"蟋蟀\"15计划装备63倍径150毫米火炮，使其可在4000米距离上击穿200毫米厚的装甲。然而，由于研发速度缓慢，\"蟋蟀\"15仅停留在蓝图阶段。"
+
+msgid "G121_Grille_15_L63_FR_short"
+msgstr "\"蟋蟀\"15 BS"
 
 msgid "G121_Grille_15_L63_descr"
 msgstr "?empty?"
@@ -2561,7 +2582,7 @@ msgid "G195_HWK_40_short"
 msgstr "HWK 40"
 
 msgid "G195_HWK_40_short_special"
-msgstr "良好的机动性，手感优秀的火炮"
+msgstr "校炮系统，手感优秀的火炮"
 
 msgid "G196_Versuchspanzer_57"
 msgstr "VPz 57"
@@ -2619,17 +2640,18 @@ msgid "G200_Chi_Go_short_special"
 msgstr "装甲防护不俗的炮塔，高额的平均单发损伤"
 
 msgid "G204_PzVI_Tiger_P_CFE_A"
-msgstr "VK4501(P)"
+msgstr "\"虎\"(P)\"豹狮\""
 
 msgid "G204_PzVI_Tiger_P_CFE_A_descr"
-msgstr "?empty?"
+msgstr ""
+"VI号P型坦克，也就是更为人熟知的VK4501(P)，又称保时捷\"虎\"，是D系最独特的重型坦克之一。它配备两台101型风冷发动机和一套电传动系统。由于动力系统结构复杂且可靠性不足，该坦克最终未能投入量产，但在大洗女子学园的帮助下，它迎来了新生。这辆坦克是在学园舰底部被发现的，并由汽车部成员修复，而她们后来也成为了它的车组，即豹狮组。凭借出色的工程技术，少女们不仅让这辆脾气古怪的保时捷\"虎\"始终保持战备状态，还对其进行了升级，为其加装了能够实现短时间爆发加速的装置。"
 
 msgid "G204_PzVI_Tiger_P_CFE_A_long_special"
 msgstr ""
-"VK4501(P)是一辆D系VI级重型坦克，其坚固的正面装甲能可靠地抵挡同等级中型和重型坦克的标准炮弹。它的火炮拥有良好的平均每分钟损伤，以及相当不错的穿透力和平均单发损伤。虽然速度较慢，但它配备了独特系统，可以暂时提高机动性，使其能够很快加速至最大速度。"
+"\"虎\"(P)\"豹狮\"是一辆D系VI级重型坦克，其坚固的正面装甲能可靠地抵挡同等级中型和重型坦克的标准炮弹。它的火炮拥有良好的平均每分钟损伤，以及相当不错的平均穿透力和平均单发损伤。虽然速度较慢，但它配备了独特系统，可以暂时提高机动性，使其能够很快加速至最大速度。"
 
 msgid "G204_PzVI_Tiger_P_CFE_A_short"
-msgstr "VK4501(P)"
+msgstr "\"虎\"(P)\"豹狮\""
 
 msgid "G204_PzVI_Tiger_P_CFE_A_short_special"
 msgstr "坚固的正面装甲、机动增强系统"
@@ -3024,6 +3046,23 @@ msgstr "\"IDA坦克方案\""
 msgid "G89_Leopard1"
 msgstr "“豹”I"
 
+msgid "G89_Leopard1_CFE_A"
+msgstr "蒸汽时代"
+
+msgid "G89_Leopard1_CFE_A_descr"
+msgstr ""
+"这台\"蒸汽时代\"外观固然令人惊叹，却素来不以优雅精致见长。它是一头由纯粹力量铸就的钢铁巨兽，活塞如冲压机般轰鸣起落，排气口如铸造厂般喷吐浓烟。它诞生于蒸汽时代的鼎盛之年，那些满手煤垢、亲手锻铸它的匠人早已离世，它却一直存续至今。其发条机械般的恢宏气势，甚至令现代战场中的钢铁躯壳都相形见绌。它携新式动力轰鸣着冲入战场。当柴油引擎制造的喧嚣终于平息，唯有\"蒸汽时代\"那沉稳不倦的铿锵声依旧回荡。"
+
+msgid "G89_Leopard1_CFE_A_long_special"
+msgstr ""
+"蒸汽时代是一辆D系X级中型坦克，拥有近乎完美的火炮性能。它没有明显短板，既擅长远距离作战，也精于借助掩体实施快速的偷炮战术。卓越的机动性进一步增强了其作战效能，使其能够迅速转场，在战场各处大显身手。"
+
+msgid "G89_Leopard1_CFE_A_short"
+msgstr "蒸汽时代"
+
+msgid "G89_Leopard1_CFE_A_short_special"
+msgstr "出色的精度，卓越的机动性"
+
 msgid "G89_Leopard1_descr"
 msgstr "?empty?"
 
@@ -3413,6 +3452,12 @@ msgid "MTU_MB_838_CaM_500"
 msgstr "MTU MB 838 CaM-500"
 
 msgid "MTU_MB_838_CaM_500A"
+msgstr "MTU MB 838 CaM-500A"
+
+msgid "MTU_MB_838_CaM_500A_CFE_A"
+msgstr "MTU MB 838 CaM-500A"
+
+msgid "MTU_MB_838_CaM_500A_CFE_A_short"
 msgstr "MTU MB 838 CaM-500A"
 
 msgid "MTU_MB_838_CaM_500A_short"
@@ -3951,6 +3996,9 @@ msgstr "迈巴赫新型发动机 A"
 msgid "Maybach_HL_234P60_short"
 msgstr "迈巴赫新型发动机"
 
+msgid "Maybach_HL_234_FR"
+msgstr "迈巴赫 HL 234"
+
 msgid "Maybach_HL_234_TRM_P30"
 msgstr "迈巴赫 HL 234 TRM P30"
 
@@ -4270,9 +4318,6 @@ msgstr "38(t)"
 msgid "PzI"
 msgstr "I号坦克"
 
-msgid "PzIII-IV"
-msgstr "III/IV号坦克"
-
 msgid "PzIII-IV_ausf_B"
 msgstr "III/IV号加强型"
 
@@ -4575,6 +4620,9 @@ msgstr "SEM 25"
 msgid "SEM25_1"
 msgstr "SEM 25A"
 
+msgid "SEM25_1_CFE_A"
+msgstr "SEM 25A"
+
 msgid "SEM_25A"
 msgstr "SEM 25A"
 
@@ -4847,6 +4895,9 @@ msgstr "M4190 GF"
 msgid "Turret_1_G121_Grille_15_L63"
 msgstr "“蟋蟀”15"
 
+msgid "Turret_1_G121_Grille_15_L63_FR"
+msgstr "\"蟋蟀\"15 BS"
+
 msgid "Turret_1_G122_VK6501H"
 msgstr "VK6501(H) SW"
 
@@ -5048,7 +5099,7 @@ msgid "Turret_1_G200_Chi_Go"
 msgstr "\"黑豹\"奇戈"
 
 msgid "Turret_1_G204_PzVI_Tiger_P_CFE_A"
-msgstr "VK4501(P)型"
+msgstr "\"虎\"(P)\"豹狮\""
 
 msgid "Turret_1_G23_Grille"
 msgstr "“蟋蟀”"
@@ -5157,6 +5208,9 @@ msgstr "\"IDA坦克方案\""
 
 msgid "Turret_1_G89_Leopard1"
 msgstr "“豹”I"
+
+msgid "Turret_1_G89_Leopard1_CFE_A"
+msgstr "蒸汽时代"
 
 msgid "Turret_1_G91_Pro_Ag_A"
 msgstr "“豹”I A组2号原型车"
@@ -5538,11 +5592,17 @@ msgstr "10.5cm L7炮"
 msgid "_105mm_Bordkanone_L7A3"
 msgstr "10.5cm L7A3炮"
 
+msgid "_105mm_Bordkanone_L7A3_CFE_A"
+msgstr "10.5cm L7A3炮"
+
 msgid "_105mm_DM11"
 msgstr "DM11"
 
 msgid "_105mm_DM11_A"
 msgstr "DM11 (A)"
+
+msgid "_105mm_DM11_CFE_A"
+msgstr "DM11"
 
 msgid "_105mm_DM11_Kurz"
 msgstr "DM11(短身管型)"
@@ -5583,6 +5643,9 @@ msgstr "DM13-20"
 msgid "_105mm_DM13_A"
 msgstr "DM13 (A)"
 
+msgid "_105mm_DM13_CFE_A"
+msgstr "DM13"
+
 msgid "_105mm_DM13_Kurz"
 msgstr "DM13(短身管型)"
 
@@ -5597,6 +5660,9 @@ msgstr "DM23"
 
 msgid "_105mm_DM23_A"
 msgstr "DM23 (A)"
+
+msgid "_105mm_DM23_CFE_A"
+msgstr "DM23"
 
 msgid "_105mm_DM502"
 msgstr "DM502"
@@ -5756,9 +5822,6 @@ msgstr "Pzgr 39 LV"
 msgid "_105mm_PzGrRot"
 msgstr "PzGr rot"
 
-msgid "_105mm_Pzgr.40"
-msgstr "Pzgr 40"
-
 msgid "_105mm_Pzgr.40L1"
 msgstr "Pzgr 40 L1"
 
@@ -5809,6 +5872,9 @@ msgstr "Pzgr 40 (180B)"
 
 msgid "_105mm_Pzgr_40_45"
 msgstr "Pzgr 40/45"
+
+msgid "_105mm_Pzgr_40_A"
+msgstr "Pzgr 40"
 
 msgid "_105mm_Pzgr_40_E"
 msgstr "Pzgr 40 E"
@@ -5925,6 +5991,9 @@ msgstr "10WSc"
 
 msgid "_10WSc_CFE_T"
 msgstr "10WSc T"
+
+msgid "_10WSc_FR"
+msgstr "10WSc"
 
 msgid "_10WSc_P"
 msgstr "10WSc P"
@@ -6539,6 +6608,9 @@ msgstr "Gr 44 Hl/A"
 msgid "_150mm_Gr_HL"
 msgstr "Gr HL"
 
+msgid "_150mm_Gr_HL_FR"
+msgstr "Gr HL"
+
 msgid "_150mm_Gr_Hl_A"
 msgstr "Gr Hl/A"
 
@@ -6561,6 +6633,9 @@ msgid "_150mm_Pak_L_44"
 msgstr "15cm Pak L/44炮"
 
 msgid "_150mm_Pak_L_63"
+msgstr "15cm Pak L/63炮"
+
+msgid "_150mm_Pak_L_63_FR"
 msgstr "15cm Pak L/63炮"
 
 msgid "_150mm_PzGr39H2_SH"
@@ -6587,6 +6662,9 @@ msgstr "Pzgr 42 (IV WT) T"
 msgid "_150mm_Pzgr_44"
 msgstr "Pzgr 44"
 
+msgid "_150mm_Pzgr_FR"
+msgstr "Pzgr"
+
 msgid "_150mm_Pzgr_m_Hb"
 msgstr "Pzgr (m.Hb)"
 
@@ -6610,6 +6688,9 @@ msgstr "Sprgr 18 (\"蟋蟀\")"
 
 msgid "_150mm_Sprgr_36"
 msgstr "Sprgr 36"
+
+msgid "_150mm_Sprgr_FR"
+msgstr "Sprgr"
 
 msgid "_150mm_Sprgr_G"
 msgstr "Sprgr G"

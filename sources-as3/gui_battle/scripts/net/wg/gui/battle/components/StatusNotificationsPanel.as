@@ -58,24 +58,52 @@ package net.wg.gui.battle.components
       
       private var _additionalNotificationsOffset:int = 0;
       
+      private var _tempTimersArr:Array;
+      
+      private var _tempNewNotifsArr:Array;
+      
+      private var _tempNewHash:Object;
+      
+      private var _tempCurrentHash:Object;
+      
+      private var _tempVisibleHash:Object;
+      
       public function StatusNotificationsPanel()
       {
          this._callbacksByType = new Dictionary();
+         this._tempTimersArr = [];
+         this._tempNewNotifsArr = [];
+         this._tempNewHash = {};
+         this._tempCurrentHash = {};
+         this._tempVisibleHash = {};
          super();
          this._additionalNotificationsOffset = this.getNotificationsOffset();
          this._notificationTimers = {};
          this._data = new Vector.<StatusNotificationVO>(0);
       }
       
-      private static function getStatusNotificationDataHash(param1:Vector.<StatusNotificationVO>) : Object
+      private static function fillStatusNotificationDataHash(param1:Object, param2:Vector.<StatusNotificationVO>) : void
       {
-         var _loc3_:StatusNotificationVO = null;
-         var _loc2_:Object = {};
-         for each(_loc3_ in param1)
+         var _loc3_:* = null;
+         var _loc4_:StatusNotificationVO = null;
+         for(_loc3_ in param1)
          {
-            _loc2_[_loc3_.typeID] = _loc3_;
+            delete param1[_loc3_];
          }
-         return _loc2_;
+         for each(_loc4_ in param2)
+         {
+            param1[_loc4_.typeID] = _loc4_;
+         }
+      }
+      
+      override public function isCompVisible() : Boolean
+      {
+         return alpha == 1;
+      }
+      
+      override public function setCompVisible(param1:Boolean) : void
+      {
+         alpha = !!param1 ? Number(1) : Number(0);
       }
       
       override protected function draw() : void
@@ -109,6 +137,13 @@ package net.wg.gui.battle.components
          this.notificationsContainer = null;
          this._notificationTimers = null;
          this._data = null;
+         this._tempTimersArr.length = 0;
+         this._tempTimersArr = null;
+         this._tempNewNotifsArr.length = 0;
+         this._tempNewNotifsArr = null;
+         this._tempNewHash = null;
+         this._tempCurrentHash = null;
+         this._tempVisibleHash = null;
          _loc2_ = null;
          for(_loc3_ in this._callbacksByType)
          {
@@ -197,121 +232,138 @@ package net.wg.gui.battle.components
          this.updtateNotificationsVisible();
       }
       
-      private function updateData(param1:Vector.<StatusNotificationVO>) : void
-      {
-         var _loc6_:StatusNotificationVO = null;
-         var _loc7_:IStatusNotification = null;
-         var _loc2_:Array = [];
-         var _loc3_:Array = [];
-         var _loc4_:Object = getStatusNotificationDataHash(param1);
-         var _loc5_:Object = getStatusNotificationDataHash(this._data);
-         this._data = param1.slice();
-         for each(_loc6_ in _loc4_)
-         {
-            _loc2_.push(this._notificationTimers[_loc6_.typeID]);
-            if(!Boolean(_loc5_[_loc6_.typeID]))
-            {
-               _loc3_.push(this.showNotification(_loc6_));
-            }
-            else
-            {
-               this.updateNotification(_loc6_);
-            }
-         }
-         for each(_loc6_ in _loc5_)
-         {
-            if(!Boolean(_loc4_[_loc6_.typeID]))
-            {
-               this.hideNotification(_loc6_);
-            }
-         }
-         if(_loc2_.length == 1)
-         {
-            _loc7_ = _loc2_[0];
-            _loc7_.fullSize();
-            if(_loc3_.indexOf(_loc7_) == -1)
-            {
-               _loc7_.tweenToX(0);
-            }
-            else
-            {
-               _loc7_.x = 0;
-            }
-            return;
-         }
-         var _loc8_:Boolean = false;
-         var _loc9_:Boolean = false;
-         var _loc10_:uint = 0;
-         var _loc11_:uint = 0;
-         for each(_loc7_ in _loc2_)
-         {
-            if(_loc7_.isShowing)
-            {
-               if(_loc11_ > 0)
-               {
-                  _loc8_ = _loc7_.cropSize();
-                  if(_loc8_ && !_loc9_)
-                  {
-                     _loc10_ -= NOTIFICATION_TIMERS_OFFSET_X;
-                  }
-                  _loc9_ = _loc8_;
-               }
-               else if(!_loc7_ is SecondaryTimer && !_loc7_ is ResupplyTimer || _loc7_.typeId == BATTLE_NOTIFICATIONS_TIMER_TYPES.ORANGE_ZONE || _loc7_.typeId == BATTLE_NOTIFICATIONS_TIMER_TYPES.DAMAGING_ZONE || _loc7_ is StatusNotificationTimer)
-               {
-                  _loc7_.fullSize();
-               }
-               else
-               {
-                  _loc9_ = this.handleFirstTimer(_loc7_);
-               }
-               _loc11_++;
-               if(_loc3_.indexOf(_loc7_) == -1)
-               {
-                  if(_loc7_.x != _loc10_)
-                  {
-                     _loc7_.tweenToX(_loc10_);
-                  }
-               }
-               else
-               {
-                  _loc7_.x = _loc10_;
-               }
-               _loc10_ += _loc7_.actualWidth + this._additionalNotificationsOffset;
-            }
-         }
-         this.updtateNotificationsVisible();
-      }
-      
       protected function handleFirstTimer(param1:IStatusNotification) : Boolean
       {
          param1.cropSize();
          return true;
       }
       
+      protected function getNotificationsOffset() : int
+      {
+         return Values.ZERO;
+      }
+      
+      protected function getNotifications() : Object
+      {
+         return this._notificationTimers;
+      }
+      
+      private function updateData(param1:Vector.<StatusNotificationVO>) : void
+      {
+         var _loc4_:StatusNotificationVO = null;
+         var _loc5_:IStatusNotification = null;
+         this._tempTimersArr.length = 0;
+         this._tempNewNotifsArr.length = 0;
+         fillStatusNotificationDataHash(this._tempNewHash,param1);
+         fillStatusNotificationDataHash(this._tempCurrentHash,this._data);
+         var _loc2_:uint = param1.length;
+         this._data.length = _loc2_;
+         var _loc3_:int = 0;
+         while(_loc3_ < _loc2_)
+         {
+            this._data[_loc3_] = param1[_loc3_];
+            _loc3_++;
+         }
+         for each(_loc4_ in this._tempNewHash)
+         {
+            this._tempTimersArr.push(this._notificationTimers[_loc4_.typeID]);
+            if(!Boolean(this._tempCurrentHash[_loc4_.typeID]))
+            {
+               this._tempNewNotifsArr.push(this.showNotification(_loc4_));
+            }
+            else
+            {
+               this.updateNotification(_loc4_);
+            }
+         }
+         for each(_loc4_ in this._tempCurrentHash)
+         {
+            if(!Boolean(this._tempNewHash[_loc4_.typeID]))
+            {
+               this.hideNotification(_loc4_);
+            }
+         }
+         if(this._tempTimersArr.length == 1)
+         {
+            _loc5_ = this._tempTimersArr[0];
+            _loc5_.fullSize();
+            if(this._tempNewNotifsArr.indexOf(_loc5_) == -1)
+            {
+               _loc5_.tweenToX(0);
+            }
+            else
+            {
+               _loc5_.x = 0;
+            }
+            return;
+         }
+         var _loc6_:Boolean = false;
+         var _loc7_:Boolean = false;
+         var _loc8_:uint = 0;
+         var _loc9_:uint = 0;
+         for each(_loc5_ in this._tempTimersArr)
+         {
+            if(_loc5_.isShowing)
+            {
+               if(_loc9_ > 0)
+               {
+                  _loc6_ = _loc5_.cropSize();
+                  if(_loc6_ && !_loc7_)
+                  {
+                     _loc8_ -= NOTIFICATION_TIMERS_OFFSET_X;
+                  }
+                  _loc7_ = _loc6_;
+               }
+               else if(!_loc5_ is SecondaryTimer && !_loc5_ is ResupplyTimer || _loc5_.typeId == BATTLE_NOTIFICATIONS_TIMER_TYPES.ORANGE_ZONE || _loc5_.typeId == BATTLE_NOTIFICATIONS_TIMER_TYPES.DAMAGING_ZONE || _loc5_ is StatusNotificationTimer)
+               {
+                  _loc5_.fullSize();
+               }
+               else
+               {
+                  _loc7_ = this.handleFirstTimer(_loc5_);
+               }
+               _loc9_++;
+               if(this._tempNewNotifsArr.indexOf(_loc5_) == -1)
+               {
+                  if(_loc5_.x != _loc8_)
+                  {
+                     _loc5_.tweenToX(_loc8_);
+                  }
+               }
+               else
+               {
+                  _loc5_.x = _loc8_;
+               }
+               _loc8_ += _loc5_.actualWidth + this._additionalNotificationsOffset;
+            }
+         }
+         this.updtateNotificationsVisible();
+      }
+      
       private function updtateNotificationsVisible() : void
       {
-         var _loc2_:IStatusNotification = null;
-         var _loc5_:StatusNotificationVO = null;
-         var _loc1_:Object = getStatusNotificationDataHash(this._data);
-         var _loc3_:uint = 1;
-         var _loc4_:uint = MAX_TIMERS_COUNT_BIG;
+         var _loc1_:IStatusNotification = null;
+         var _loc4_:StatusNotificationVO = null;
+         fillStatusNotificationDataHash(this._tempVisibleHash,this._data);
+         var _loc2_:uint = 1;
+         var _loc3_:uint = MAX_TIMERS_COUNT_BIG;
          if(this._stageWidth <= STAGE_SIZE_WIDTH_1730 && this._stageWidth >= STAGE_SIZE_WIDTH_1495)
          {
-            _loc4_ = MAX_TIMERS_COUNT_MEDIUM;
+            _loc3_ = MAX_TIMERS_COUNT_MEDIUM;
          }
          else if(this._stageWidth <= STAGE_SIZE_WIDTH_1495 && this._stageWidth >= STAGE_SIZE_WIDTH_1220)
          {
-            _loc4_ = MAX_TIMERS_COUNT_SMALL;
+            _loc3_ = MAX_TIMERS_COUNT_SMALL;
          }
          else if(this._stageWidth <= STAGE_SIZE_WIDTH_1220)
          {
-            _loc4_ = MAX_TIMERS_COUNT_EXTRA_SMALL;
+            _loc3_ = MAX_TIMERS_COUNT_EXTRA_SMALL;
          }
-         for each(_loc5_ in _loc1_)
+         for each(_loc4_ in this._tempVisibleHash)
          {
-            _loc2_ = this._notificationTimers[_loc5_.typeID];
-            _loc2_.visible = !Boolean(_loc3_ > _loc4_);
-            _loc3_++;
+            _loc1_ = this._notificationTimers[_loc4_.typeID];
+            _loc1_.visible = !Boolean(_loc2_ > _loc3_);
+            _loc2_++;
          }
       }
       
@@ -357,26 +409,6 @@ package net.wg.gui.battle.components
                _loc3_.invoke(param1);
             }
          }
-      }
-      
-      override public function setCompVisible(param1:Boolean) : void
-      {
-         alpha = !!param1 ? Number(1) : Number(0);
-      }
-      
-      override public function isCompVisible() : Boolean
-      {
-         return alpha == 1;
-      }
-      
-      protected function getNotificationsOffset() : int
-      {
-         return Values.ZERO;
-      }
-      
-      protected function getNotifications() : Object
-      {
-         return this._notificationTimers;
       }
    }
 }

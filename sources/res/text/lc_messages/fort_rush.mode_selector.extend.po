@@ -1,0 +1,39 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-01 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "#PluralForms"
+msgstr "nplurals=1; plural=0;"
+
+msgid "mode/fort_rush_battle/condition"
+msgstr "7对7%(parSecondary_open)sI%(parSecondary_close)s等级X"
+
+msgid "mode/fort_rush_battle/description"
+msgstr "控制天线，守住网络连接，保障传输完成。"
+
+msgid "mode/fort_rush_battle/performance/highRisk/description"
+msgstr "您的计算机在此模式下性能不足。您可能遇到图形和坦克移动方面的问题。亦有可能造成游戏客户端崩溃。"
+
+msgid "mode/fort_rush_battle/performance/highRisk/header"
+msgstr "低性能"
+
+msgid "mode/fort_rush_battle/performance/highRisk/headerIcon"
+msgstr "%(icon)低性能"
+
+msgid "mode/fort_rush_battle/performance/mediumRisk/description"
+msgstr "该模式需要较高的计算机性能。您将会遇到地图加载、图形和坦克移动方面的问题。如果性能不足，请在设置中尝试较低的图形质量。"
+
+msgid "mode/fort_rush_battle/performance/mediumRisk/header"
+msgstr "性能降低"
+
+msgid "mode/fort_rush_battle/performance/mediumRisk/headerIcon"
+msgstr "%(icon)性能降低"

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from functools import partial
 from gui.ranked_battles.constants import RankedDossierKeys, SeasonResultTokenPatterns
 from gui.shared import EVENT_BUS_SCOPE

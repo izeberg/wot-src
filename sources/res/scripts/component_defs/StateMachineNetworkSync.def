@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<Implements>
+		<Interface>ReplicableComponent</Interface>
+	</Implements>
+	<Properties>
+		<replicableStateIndex>
+			<Type>INT32</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</replicableStateIndex>
+	</Properties>
+	<DefaultKeyName>stateMachineNetworkSync</DefaultKeyName>
+</root>

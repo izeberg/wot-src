@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>halloween/vehicles/british/GB123_GSOR_1006_v7_Halloween_event/crash/lod3/Chassis</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.515354 0.003223 -2.654517</min>
+		<max>1.515357 1.296740 2.615735</max>
+	</visibilityBox>
+	<nodefullVisual>halloween/vehicles/british/GB123_GSOR_1006_v7_Halloween_event/crash/lod2/Chassis</nodefullVisual>
+	<tank>true</tank>
+</root>
