@@ -1619,6 +1619,22 @@ class _OpenSystemMixerVolumeDisabledPageHandler(ActionHandler):
         showSystemMixerVolumeDisabledPage()
 
 
+class _FixSystemMixerVolumeHandler(ActionHandler):
+    from skeletons.gui.sounds import ISoundsController
+    __soundsCtrl = dependency.descriptor(ISoundsController)
+
+    @classmethod
+    def getNotType(cls):
+        return NOTIFICATION_TYPE.MESSAGE
+
+    @classmethod
+    def getActions(cls):
+        return ('fixSystemMixerVolume', )
+
+    def handleAction(self, model, entityID, action):
+        self.__soundsCtrl.fixSystemMixerVolume()
+
+
 _AVAILABLE_HANDLERS = (
  ShowBattleResultsHandler,
  ShowFortBattleResultsHandler,
@@ -1701,7 +1717,8 @@ _AVAILABLE_HANDLERS = (
  ParagonsSelectRewardViewHandler,
  _OpenBattleMattersHandler,
  _BattleMattersTaskReminder,
- _OpenSystemMixerVolumeDisabledPageHandler)
+ _OpenSystemMixerVolumeDisabledPageHandler,
+ _FixSystemMixerVolumeHandler)
 registerNotificationsActionsHandlers(_AVAILABLE_HANDLERS)
 
 class NotificationsActionsHandlers(object):

@@ -1237,9 +1237,15 @@ _(#messenger:battle/toolTips/mutePlayer){/BODY}</value>
 			<buttonsLayout>
 				<button>
 					<type>submit</type>
+					<label>_(#messenger:serviceChannelMessages/systemMixerVolumeDisabledSysMessage/fixButton)</label>
+					<action>fixSystemMixerVolume</action>
+					<width>90</width>
+				</button>
+				<button>
+					<type>cancel</type>
 					<label>_(#messenger:serviceChannelMessages/systemMixerVolumeDisabledSysMessage/button)</label>
 					<action>systemMixerVolumeDisabledPage</action>
-					<width>120</width>
+					<width>90</width>
 				</button>
 			</buttonsLayout>
 		</SystemMixerVolumeDisabledSysMessage>

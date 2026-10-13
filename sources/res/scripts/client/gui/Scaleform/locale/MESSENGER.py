@@ -1278,6 +1278,7 @@ class MESSENGER(object):
     SERVICECHANNELMESSAGES_SYSTEMMIXERVOLUMEDISABLEDSYSMESSAGE_HEADER = '#messenger:serviceChannelMessages/systemMixerVolumeDisabledSysMessage/header'
     SERVICECHANNELMESSAGES_SYSTEMMIXERVOLUMEDISABLEDSYSMESSAGE_BODY = '#messenger:serviceChannelMessages/systemMixerVolumeDisabledSysMessage/body'
     SERVICECHANNELMESSAGES_SYSTEMMIXERVOLUMEDISABLEDSYSMESSAGE_BUTTON = '#messenger:serviceChannelMessages/systemMixerVolumeDisabledSysMessage/button'
+    SERVICECHANNELMESSAGES_SYSTEMMIXERVOLUMEDISABLEDSYSMESSAGE_FIXBUTTON = '#messenger:serviceChannelMessages/systemMixerVolumeDisabledSysMessage/fixButton'
     CLIENT_ERROR_SHARED_ENUM = (
      CLIENT_ERROR_SHARED_TRY_LATER,
      CLIENT_ERROR_SHARED_GENERIC,

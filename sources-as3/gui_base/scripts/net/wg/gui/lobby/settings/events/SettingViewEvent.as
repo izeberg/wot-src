@@ -29,8 +29,6 @@ package net.wg.gui.lobby.settings.events
       
       public static var ON_RESET_BATTLE_CONTEXT_HINTS:String = "on_reset_battle_context_hints";
       
-      public static var ON_SOUND_SYSTEM_OFF_LINK_CLICKED:String = "on_sound_system_off_link_clicked";
-      
       public static var GET_SYSTEM_OFF_STATUS:String = "get_system_off_status";
        
       
