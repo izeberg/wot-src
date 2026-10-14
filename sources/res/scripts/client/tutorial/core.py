@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import weakref
 from functools import partial
 import BigWorld, Event

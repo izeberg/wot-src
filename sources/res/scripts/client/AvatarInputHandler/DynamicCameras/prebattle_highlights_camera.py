@@ -1,5 +1,7 @@
-import math, logging, BigWorld, CGF
+from __future__ import absolute_import
+import math, logging
 from functools import partial
+import BigWorld, CGF
 from AvatarInputHandler.cameras import FovExtended
 from CameraComponents import CameraComponent, ActiveCameraComponent, FovComponent, DofComponent
 from GenericComponents import getGlobalTagStorage

@@ -2571,7 +2571,12 @@
 			</item>
 			<item>
 				$PARAMS(/featured/featured/items/platform_subscription_pro12/preview/)
-				<name>buyWotPlusPro</name>
+				<name>buyWotPlusPro12</name>
+				<type>url</type>
+			</item>
+			<item>
+				$PARAMS(/featured/featured/items/platform_subscription_pro6/preview/)
+				<name>buyWotPlusPro6</name>
 				<type>url</type>
 			</item>
 			<item>
@@ -2735,7 +2740,7 @@
 						<value>True</value>
 					</item>
 					<item>
-						/$LANGUAGE_CODE/promocontent/bp-special-chapter-10-Video/
+						/$LANGUAGE_CODE/promocontent/specialchapterVideo/
 						<name>url</name>
 						<type>url</type>
 					</item>
@@ -2757,7 +2762,7 @@
 				<type>dict</type>
 				<value>
 					<item>
-						/$LANGUAGE_CODE/promocontent/bp-special-chapter-10/
+						/$LANGUAGE_CODE/promocontent/specialchapter
 						<name>url</name>
 						<type>url</type>
 					</item>
@@ -2812,16 +2817,6 @@
 							</item>
 						</value>
 					</item>
-					<item>
-						<name>wt</name>
-						<type>list</type>
-						<value>
-							<item>
-								<type>int</type>
-								<value>1</value>
-							</item>
-						</value>
-					</item>
 				</value>
 			</item>
 			<item>
@@ -2835,11 +2830,6 @@
 							<item>
 								/$LANGUAGE_CODE/promocontent/lootBoxIntro/
 								<name>default</name>
-								<type>url</type>
-							</item>
-							<item>
-								/$LANGUAGE_CODE/promocontent/waffentrager-september-2026-Video/
-								<name>wt</name>
 								<type>url</type>
 							</item>
 						</value>
@@ -2944,7 +2934,7 @@
 		<macros>AUTH_REALM</macros>
 		<value>
 			<item>
-				https://worldoftanks.asia/ko/news/specials/waffentrager-2026-bundles/
+				https://worldoftanks.asia/ko/news/general-news/holiday-ops-2026-large-boxes/
 				<name>default</name>
 				<type>url</type>
 			</item>
@@ -3423,32 +3413,32 @@
 		<macros>AUTH_REALM</macros>
 		<value>
 			<item>
-				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/wot-plus-april-2026/
+				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/wot-plus-october-2026/
 				<name>EU</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/wot-plus-april-2026/
+				https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/wot-plus-october-2026/
 				<name>ASIA</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/wot-plus-april-2026/
+				https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/wot-plus-october-2026/
 				<name>NA</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/wot-plus-april-2026/
+				https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/wot-plus-october-2026/
 				<name>CN</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/wot-plus-april-2026/
+				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/wot-plus-october-2026/
 				<name>CT</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/wot-plus-april-2026/
+				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/wot-plus-october-2026/
 				<name>default</name>
 				<type>url</type>
 			</item>
@@ -3459,32 +3449,32 @@
 		<macros>AUTH_REALM</macros>
 		<value>
 			<item>
-				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/wot-plus-april-2026-Steam/
+				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/wot-plus-october-2026/
 				<name>EU</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/wot-plus-april-2026-Steam/
+				https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/wot-plus-october-2026/
 				<name>ASIA</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/wot-plus-april-2026-Steam/
+				https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/wot-plus-october-2026/
 				<name>NA</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/wot-plus-april-2026/
+				https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/wot-plus-october-2026/
 				<name>CN</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/wot-plus-april-2026-Steam/
+				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/wot-plus-october-2026/
 				<name>CT</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/wot-plus-april-2026-Steam/
+				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/wot-plus-october-2026/
 				<name>default</name>
 				<type>url</type>
 			</item>
@@ -3639,32 +3629,32 @@
 		<macros>AUTH_REALM</macros>
 		<value>
 			<item>
-				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught_wci_tournament_2025/
+				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught_wci_tournament_2026/
 				<name>EU</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/onslaught_wci_tournament_2025/
+				https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/onslaught_wci_tournament_2026/
 				<name>ASIA</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/onslaught_wci_tournament_2025/
+				https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/onslaught_wci_tournament_2026/
 				<name>NA</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/onslaught_wci_tournament_2025/
+				https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/onslaught_wci_tournament_2026/
 				<name>CN</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg-ct.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught_wci_tournament_2025/
+				https://webbrg-ct.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught_wci_tournament_2026/
 				<name>CT</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught_wci_tournament_2025/
+				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught_wci_tournament_2026/
 				<name>default</name>
 				<type>url</type>
 			</item>

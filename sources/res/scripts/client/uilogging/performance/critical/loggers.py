@@ -1,4 +1,5 @@
-import BigWorld, logging
+from __future__ import absolute_import
+import logging, BigWorld
 from uilogging.base.logger import _BaseLogger as Logger
 from uilogging.constants import DEFAULT_LOGGER_NAME
 from uilogging.performance.critical.constants import Features, Groups, LogActions

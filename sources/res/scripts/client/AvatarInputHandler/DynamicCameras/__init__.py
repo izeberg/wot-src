@@ -1,11 +1,14 @@
+from __future__ import absolute_import
 import math
 from collections import defaultdict
+from future.utils import viewitems
 import BigWorld, Math
 from Math import Vector3, Matrix
 import math_utils
 from AvatarInputHandler.cameras import readVec3, ICamera, readFloat, ImpulseReason
 from helpers import dependency
 from skeletons.account_helpers.settings_core import ISettingsCore
+from account_helpers.AccountSettings import AccountSettings
 
 def createCrosshairMatrix(offsetFromNearPlane):
     nearPlane = BigWorld.projection().nearPlane
@@ -92,7 +95,7 @@ class CameraDynamicConfig(dict):
         if projectionDataSec is None:
             return
         else:
-            for reason, reasonStr in CameraDynamicConfig.REASONS_AS_STR.iteritems():
+            for reason, reasonStr in viewitems(CameraDynamicConfig.REASONS_AS_STR):
                 reasonLimitSec = projectionDataSec[reasonStr]
                 if reasonLimitSec is not None:
                     if asMinMax:
@@ -187,6 +190,7 @@ class CameraWithSettings(ICamera):
 
     def create(self, **args):
         self._updateSettingsFromServer()
+        self._applyMouseSensitivityFromAccount()
         self.settingsCore.onSettingsChanged += self._handleSettingsChange
         self.settingsCore.onSettingsReady += self._updateSettingsFromServer
 
@@ -213,8 +217,23 @@ class CameraWithSettings(ICamera):
     def _getConfigsKey():
         raise NotImplementedError
 
+    def _getMouseSensitivitySettingKey(self):
+        return
+
+    def _applyMouseSensitivityFromAccount(self):
+        settingKey = self._getMouseSensitivitySettingKey()
+        if settingKey is None or not self._userCfg:
+            return
+        self._userCfg['sensitivity'] = AccountSettings.getSettings(settingKey)
+        if self._baseCfg and self._cfg and 'sensitivity' in self._baseCfg:
+            self._cfg['sensitivity'] = self._baseCfg['sensitivity'] * self._userCfg['sensitivity']
+        return
+
     def _handleSettingsChange(self, diff):
-        pass
+        settingKey = self._getMouseSensitivitySettingKey()
+        if settingKey is not None and settingKey in diff:
+            self._applyMouseSensitivityFromAccount()
+        return
 
     def _updateSettingsFromServer(self):
         if self.settingsCore.isReady:
@@ -225,15 +244,16 @@ class CameraWithSettings(ICamera):
             cfg['horzInvert'] = ucfg['horzInvert']
             cfg['vertInvert'] = ucfg['vertInvert']
 
-    def _readConfigs(self, dataSection):
+    def _readConfigs(self, dataSec):
         if not self._baseCfg:
-            self._readBaseCfg(dataSection)
+            self._readBaseCfg(dataSec)
         if not self._userCfg:
             self._readUserCfg()
         if not self._cfg:
             self._makeCfg()
+        self._applyMouseSensitivityFromAccount()
 
-    def _readBaseCfg(self, dataSection):
+    def _readBaseCfg(self, dataSec):
         pass
 
     def _readUserCfg(self):

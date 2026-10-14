@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from constants import IS_CHINA
 from debug_utils import LOG_ERROR
 from gui.Scaleform.locale.MESSENGER import MESSENGER

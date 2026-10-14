@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from comp7.gui.impl.gen.view_models.views.lobby.tooltips.weekly_quest_widget_tooltip_model import WeeklyQuestWidgetTooltipModel, State
 from comp7.gui.impl.lobby.comp7_helpers.comp7_bonus_packer import getComp7BonusPacker, packQuestBonuses
 from comp7.gui.shared.missions.packers.events import Comp7WeeklyQuestPacker

@@ -1,6 +1,12 @@
-import types, os, enum, BigWorld, ResMgr, i18n, constants
+from __future__ import absolute_import
+import os, enum
+from past.builtins import unicode
+from future.utils import viewitems
+import BigWorld, ResMgr, constants
 from aih_constants import CTRL_MODE_NAME, CTRL_MODES
 from debug_utils import LOG_CURRENT_EXCEPTION
+from helpers import i18n
+from math_common import round_py2_style_int
 from soft_exception import SoftException
 from external_strings_utils import unicode_from_utf8
 VERSION_FILE_PATH = '../version.xml'
@@ -123,20 +129,20 @@ _g_alphabetOrderExcept = {1105: 1077.5,
    1108: 1077.5}
 
 def _getSymOrderIdx(symbol):
-    if not isinstance(symbol, types.UnicodeType):
+    if not isinstance(symbol, unicode):
         raise SoftException('')
     symIdx = ord(symbol)
     return _g_alphabetOrderExcept.get(symIdx, symIdx)
 
 
 def strcmp(word1, word2):
-    if not isinstance(word1, types.UnicodeType):
+    if not isinstance(word1, unicode):
         raise SoftException('First argument should be unicode')
-    if not isinstance(word2, types.UnicodeType):
+    if not isinstance(word2, unicode):
         raise SoftException('Second argument should be unicode')
     for sym1, sym2 in zip(word1, word2):
         if sym1 != sym2:
-            return int(round(_getSymOrderIdx(sym1) - _getSymOrderIdx(sym2)))
+            return round_py2_style_int(_getSymOrderIdx(sym1) - _getSymOrderIdx(sym2))
 
     return len(word1) - len(word2)
 
@@ -160,20 +166,20 @@ def getHelperServicesConfig(manager):
 
 def isShowingKillCam--- This code section failed: ---
 
- L. 244         0  LOAD_CONST               -1
+ L. 248         0  LOAD_CONST               0
                 3  LOAD_CONST               ('DeathCamEvent',)
                 6  IMPORT_NAME           0  'gui.shared.events'
                 9  IMPORT_FROM           1  'DeathCamEvent'
                12  STORE_FAST            0  'DeathCamEvent'
                15  POP_TOP          
 
- L. 245        16  LOAD_GLOBAL           2  'BigWorld'
+ L. 249        16  LOAD_GLOBAL           2  'BigWorld'
                19  LOAD_ATTR             3  'player'
                22  CALL_FUNCTION_0       0  None
                25  LOAD_ATTR             4  'inputHandler'
                28  STORE_FAST            1  'inputHandler'
 
- L. 248        31  LOAD_FAST             1  'inputHandler'
+ L. 252        31  LOAD_FAST             1  'inputHandler'
                34  POP_JUMP_IF_FALSE    74  'to 74'
                37  LOAD_FAST             1  'inputHandler'
                40  LOAD_ATTR             5  'ctrlModeName'
@@ -243,7 +249,7 @@ def unicodeToStr(data):
         return [ unicodeToStr(el) for el in data ]
     if isinstance(data, dict):
         res = {}
-        for k, v in data.iteritems():
+        for k, v in viewitems(data):
             res[unicodeToStr(k)] = unicodeToStr(v)
 
         return res

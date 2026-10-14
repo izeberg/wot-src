@@ -1,4 +1,5 @@
-import types
+from __future__ import absolute_import
+from future.utils import viewitems
 from debug_utils import LOG_WARNING
 from gui.shared.notifications import NotificationPriorityLevel, NotificationGroup
 from helpers.html import translation as html_translation, templates
@@ -17,8 +18,8 @@ class _MessageTemplate(templates.Template):
 
     def format(self, ctx=None, data=None):
         vo = self.data.copy()
-        if isinstance(data, types.DictionaryType):
-            for key, value in data.iteritems():
+        if isinstance(data, dict):
+            for key, value in viewitems(data):
                 if key in vo:
                     vo[key] = value
 

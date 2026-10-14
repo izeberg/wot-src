@@ -3285,7 +3285,7 @@ msgstr ""
 
 msgid "thunderStrike/longDescr"
 msgstr ""
-"Creates a zone where a series of %(thunderCount)s electric discharges strike with high frequency. Each discharge causes {whiteSpanish_Open}%(damage)s HP of damage{whiteSpanish_Close} and temporarily reduces every enemy vehicle's mobility within the ability's area of effect.\n"
+"Creates a zone where a series of %(thunderCount)s electric discharges strike with high frequency. Each discharge causes %(damage)s HP of damage and temporarily reduces every enemy vehicle's mobility within the ability's area of effect.\n"
 "\n"
 "*There is a %(delay)s s delay between the ability's activation and the first discharge. The negative effect can be removed by a Repair Kit."
 
@@ -3294,7 +3294,7 @@ msgstr "Electric Discharge"
 
 msgid "thunderStrike/shortDescr"
 msgstr ""
-"Creates a zone where a series of %(thunderCount)s electric discharges strike with high frequency. Each discharge causes {whiteSpanish_Open}%(damage)s HP of damage{whiteSpanish_Close} and temporarily reduces every enemy vehicle's mobility within the ability's area of effect.\n"
+"Creates a zone where a series of %(thunderCount)s electric discharges strike with high frequency. Each discharge causes %(damage)s HP of damage and temporarily reduces every enemy vehicle's mobility within the ability's area of effect.\n"
 "\n"
 "*There is a %(delay)s s delay between the ability's activation and the first discharge. The negative effect can be removed by a Repair Kit."
 

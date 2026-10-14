@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from messenger.proto.events import g_messengerEvents
 from messenger.proto.xmpp import find_criteria
 from messenger.proto.xmpp.errors import createChatBanError

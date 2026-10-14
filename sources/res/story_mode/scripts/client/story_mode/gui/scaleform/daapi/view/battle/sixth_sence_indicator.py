@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.daapi.view.battle.shared.indicators import SixthSenseIndicator
 from helpers.dependency import descriptor
 from skeletons.gui.battle_session import IBattleSessionProvider

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.genConsts.MISSIONS_STATES import MISSIONS_STATES
 from gui.impl import backport
 from gui.impl.gen import R

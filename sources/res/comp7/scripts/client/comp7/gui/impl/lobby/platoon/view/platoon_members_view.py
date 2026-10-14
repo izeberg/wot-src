@@ -1,6 +1,6 @@
-import logging
-from itertools import izip
-import typing
+from __future__ import absolute_import
+import logging, typing
+from future.utils import lrange
 from shared_utils import findFirst
 from comp7.gui.comp7_constants import SELECTOR_BATTLE_TYPES
 from comp7.gui.impl.gen.view_models.views.lobby.enums import Division, Rank
@@ -136,12 +136,12 @@ class Comp7MembersView(SquadMembersView):
         startRankRange = max(maxPlayerRank - rankDelta, Rank.SIXTH.value)
         stopRankRange = min(maxPlayerRank + rankDelta, Rank.FIRST.value)
         newSize = stopRankRange - startRankRange + 1
-        for _ in xrange(len(rankLimits), newSize):
+        for _ in range(len(rankLimits), newSize):
             rankLimits.addViewModel(ProgressionItemBaseModel())
 
         if newSize < len(rankLimits):
-            rankLimits.removeValues(range(newSize, len(rankLimits)))
-        for progressionItemBasemodel, rank in izip(rankLimits, xrange(stopRankRange, startRankRange - 1, -1)):
+            rankLimits.removeValues(lrange(newSize, len(rankLimits)))
+        for progressionItemBasemodel, rank in zip(rankLimits, lrange(stopRankRange, startRankRange - 1, -1)):
             setRankItemData(progressionItemBasemodel, rank, ranksConfig)
 
         rankLimits.invalidate()

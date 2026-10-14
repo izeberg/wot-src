@@ -5,6 +5,7 @@ package net.wg.gui.lobby.storage.categories.forsell
    import flash.events.MouseEvent;
    import flash.text.TextField;
    import flash.text.TextFieldAutoSize;
+   import net.wg.data.constants.SoundManagerStates;
    import net.wg.gui.components.controls.IconTextBigButton;
    import net.wg.gui.components.controls.SoundButtonEx;
    import net.wg.gui.components.controls.price.Price;
@@ -66,6 +67,9 @@ package net.wg.gui.lobby.storage.categories.forsell
          this.checkbox = null;
          this._data = null;
          this._checkboxHitArea.removeEventListener(MouseEvent.CLICK,this.onCheckboxClickHandler);
+         this._checkboxHitArea.removeEventListener(MouseEvent.ROLL_OVER,this.onCheckboxRollOverHandler);
+         this._checkboxHitArea.removeEventListener(MouseEvent.ROLL_OUT,this.onCheckboxRollOutHandler);
+         this._checkboxHitArea.removeEventListener(MouseEvent.MOUSE_DOWN,this.onCheckboxMouseDownHandler);
          this._checkboxHitArea = null;
          this.markAllTitle = null;
          super.onDispose();
@@ -86,6 +90,9 @@ package net.wg.gui.lobby.storage.categories.forsell
          this._checkboxHitArea = new Sprite();
          this._checkboxHitArea.buttonMode = true;
          this._checkboxHitArea.addEventListener(MouseEvent.CLICK,this.onCheckboxClickHandler);
+         this._checkboxHitArea.addEventListener(MouseEvent.ROLL_OVER,this.onCheckboxRollOverHandler);
+         this._checkboxHitArea.addEventListener(MouseEvent.ROLL_OUT,this.onCheckboxRollOutHandler);
+         this._checkboxHitArea.addEventListener(MouseEvent.MOUSE_DOWN,this.onCheckboxMouseDownHandler);
          addChild(this._checkboxHitArea);
          var _loc1_:int = this.checkbox.x >> 1;
          var _loc2_:int = this.checkbox.y >> 1;
@@ -132,6 +139,29 @@ package net.wg.gui.lobby.storage.categories.forsell
          if(App.utils.commons.isLeftButton(param1))
          {
             dispatchEvent(new BuyBlockEvent(!this.checkbox.selected ? BuyBlockEvent.SELECT_ALL : BuyBlockEvent.DESELECT_ALL));
+         }
+      }
+      
+      private function onCheckboxRollOverHandler(param1:MouseEvent) : void
+      {
+         this.playCheckboxSound(MouseEvent.ROLL_OVER,SoundManagerStates.SND_OVER);
+      }
+      
+      private function onCheckboxRollOutHandler(param1:MouseEvent) : void
+      {
+         this.playCheckboxSound(MouseEvent.ROLL_OUT,SoundManagerStates.SND_OUT);
+      }
+      
+      private function onCheckboxMouseDownHandler(param1:MouseEvent) : void
+      {
+         this.playCheckboxSound(MouseEvent.MOUSE_DOWN,SoundManagerStates.SND_PRESS);
+      }
+      
+      private function playCheckboxSound(param1:String, param2:String) : void
+      {
+         if(this.checkbox.canPlaySound(param1))
+         {
+            App.soundMgr.playControlsSnd(param2,this.checkbox.getSoundType(),this.checkbox.getSoundId());
          }
       }
    }

@@ -84,6 +84,43 @@
 			</block>
 			<block>
 				<class>Variable</class>
+				<id>Variable_9</id>
+				<params>
+					<param>
+						is_battle
+						<name>Variable Name</name>
+						<type>StringT</type>
+					</param>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+					<param>
+						false
+						<name>External Init</name>
+						<type>BoolT</type>
+					</param>
+					<param>
+						false
+						<name>Is Const</name>
+						<type>BoolT</type>
+					</param>
+					<param>
+						false
+						<name>Initial Value</name>
+						<type>BoolT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>default</name>
+						<const>\false\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>Variable</class>
 				<id>Variable_7</id>
 				<params>
 					<param>
@@ -463,6 +500,17 @@
 				<id>If_30</id>
 			</block>
 			<block>
+				<class>And</class>
+				<id>And_3</id>
+				<params>
+					<param>
+						2
+						<name>Input Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
+			</block>
+			<block>
 				<class>ContextGetSelf</class>
 				<id>ContextGetSelf_1</id>
 				<params>
@@ -475,6 +523,18 @@
 						getSelf
 						<name>Member Name</name>
 						<type>StringT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_10</id>
+				<buddy>Variable_9</buddy>
+				<params>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
 					</param>
 				</params>
 			</block>
@@ -595,6 +655,76 @@
 					</param>
 				</params>
 			</block>
+			<block>
+				<class>StartScript</class>
+				<id>StartScript_1</id>
+			</block>
+			<block>
+				<class>SetVariable</class>
+				<id>SetVariable_13</id>
+				<buddy>Variable_9</buddy>
+				<params>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>value</name>
+						<const>\true\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_28</id>
+			</block>
+			<block>
+				<class>OnPrebattleHighlights</class>
+				<id>OnPrebattleHighlights_2</id>
+			</block>
+			<block>
+				<class>ArenaPeriod</class>
+				<id>ArenaPeriod_2</id>
+				<params>
+					<param>
+						Battle
+						<name>Period</name>
+						<type>EArenaPeriodT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>SetVariable</class>
+				<id>SetVariable_14</id>
+				<buddy>Variable_9</buddy>
+				<params>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>value</name>
+						<const>\true\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>ArenaPeriodStartEvent</class>
+				<id>ArenaPeriodStartEvent_5</id>
+				<params>
+					<param>
+						Battle
+						<name>Period</name>
+						<type>EArenaPeriodT</type>
+					</param>
+				</params>
+			</block>
 		</blocks>
 		<connections>
 			<connection>
@@ -682,6 +812,12 @@
 				<output>out</output>
 			</connection>
 			<connection>
+				<from>OnPrebattleHighlights_2</from>
+				<input>input</input>
+				<to>SetVariable_4</to>
+				<output>onStart</output>
+			</connection>
+			<connection>
 				<from>ComponentMethod_38</from>
 				<input>windup</input>
 				<to>Timer_3</to>
@@ -692,6 +828,12 @@
 				<input>cancel</input>
 				<to>Timer_3</to>
 				<output>true</output>
+			</connection>
+			<connection>
+				<from>OnPrebattleHighlights_2</from>
+				<input>cancel</input>
+				<to>Timer_3</to>
+				<output>onEnded</output>
 			</connection>
 			<connection>
 				<from>SetVariable_4</from>
@@ -742,10 +884,10 @@
 				<output>exec</output>
 			</connection>
 			<connection>
-				<from>CompareFloats_10</from>
+				<from>And_3</from>
 				<input>value</input>
 				<to>If_26</to>
-				<output>equal</output>
+				<output>res</output>
 			</connection>
 			<connection>
 				<from>GetVehicleGameObject_2</from>
@@ -781,6 +923,18 @@
 				<from>GetVariable_7</from>
 				<input>value</input>
 				<to>If_30</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>CompareFloats_10</from>
+				<input>i1</input>
+				<to>And_3</to>
+				<output>equal</output>
+			</connection>
+			<connection>
+				<from>GetVariable_10</from>
+				<input>i2</input>
+				<to>And_3</to>
 				<output>value</output>
 			</connection>
 			<connection>
@@ -830,6 +984,42 @@
 				<input>input</input>
 				<to>SetVariable_8</to>
 				<output>out</output>
+			</connection>
+			<connection>
+				<from>If_28</from>
+				<input>input</input>
+				<to>SetVariable_13</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>StartScript_1</from>
+				<input>input</input>
+				<to>If_28</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>ArenaPeriod_2</from>
+				<input>value</input>
+				<to>If_28</to>
+				<output>isActive</output>
+			</connection>
+			<connection>
+				<from>If_28</from>
+				<input>subscribe</input>
+				<to>OnPrebattleHighlights_2</to>
+				<output>false</output>
+			</connection>
+			<connection>
+				<from>SetVariable_14</from>
+				<input>unsubscribe</input>
+				<to>OnPrebattleHighlights_2</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>ArenaPeriodStartEvent_5</from>
+				<input>input</input>
+				<to>SetVariable_14</to>
+				<output>start</output>
 			</connection>
 		</connections>
 		<macros>

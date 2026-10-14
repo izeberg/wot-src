@@ -17,7 +17,7 @@ __all__ = ('ArgsEvent', 'ComponentEvent', 'LoadViewEvent', 'LoadGuiImplViewEvent
            'HasCtxEvent', 'DogTagsEvent', 'DeathCamEvent', 'FullscreenModeSelectorEvent',
            'ModeSelectorPopoverEvent', 'ModeSubSelectorEvent', 'NavigationEvent',
            'BackNavigationEvent', 'PersonalMissionsEvent', 'UserMissionsEvent', 'GUICommonEvent',
-           'PetObjectHoverEvent', 'PetSystemEvent')
+           'PetObjectHoverEvent', 'PetSystemEvent', 'HidePopoverEvent')
 _logger = logging.getLogger(__name__)
 
 class HasCtxEvent(SharedEvent):

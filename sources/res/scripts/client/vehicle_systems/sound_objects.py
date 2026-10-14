@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld
 from constants import IS_EDITOR
 from vehicle_systems.tankStructure import TankSoundObjectsIndexes

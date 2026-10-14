@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.prb_control.entities.base.ctx import PrbAction
 from gui.shared.utils.decorators import ReprInjector
 

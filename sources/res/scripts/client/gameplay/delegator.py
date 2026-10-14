@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld
 from frameworks_common.state_machine import StringEvent
 from frameworks_common.state_machine import StateMachine

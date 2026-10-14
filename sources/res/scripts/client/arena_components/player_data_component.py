@@ -1,5 +1,7 @@
-from arena_component_system.client_arena_component_system import ClientArenaComponent
+from __future__ import absolute_import
+from future.utils import viewitems
 import Event, player_ranks
+from arena_component_system.client_arena_component_system import ClientArenaComponent
 from debug_utils import LOG_DEBUG_DEV
 from arena_bonus_type_caps import ARENA_BONUS_TYPE_CAPS as BONUS_CAPS
 from gui.battle_control import avatar_getter
@@ -66,7 +68,7 @@ class PlayerDataComponent(ClientArenaComponent):
         arena = avatar_getter.getArena()
         if arena is not None:
             key = 'playerGroup'
-            gameModeStats = dict((vehID, {key: playerGroup}) for vehID, playerGroup in args.iteritems())
+            gameModeStats = dict((vehID, {key: playerGroup}) for vehID, playerGroup in viewitems(args))
             arena.updateGameModeSpecificStats(True, gameModeStats)
         self.onPlayerGroupsUpdated(args)
         return
@@ -97,10 +99,10 @@ class PlayerDataComponent(ClientArenaComponent):
         LOG_DEBUG_DEV('__onTeamRanksUpdated', args)
         if arena is not None:
             key = 'playerRank'
-            for _, ranksPerTeam in args.iteritems():
+            for _, ranksPerTeam in viewitems(args):
                 if playerVehicleId in ranksPerTeam:
                     self.__playerRank = ranksPerTeam[playerVehicleId]
-                gameModeStats = dict((vehID, {key: rank}) for vehID, rank in ranksPerTeam.iteritems())
+                gameModeStats = dict((vehID, {key: rank}) for vehID, rank in viewitems(ranksPerTeam))
                 arena.updateGameModeSpecificStats(False, gameModeStats)
 
         return

@@ -44,9 +44,9 @@ class OpenBundleReminderDecorator(MessageDecorator):
          (
           self.__openBundle.onSettingsChanged, self.__update))
 
-    def _make(self, formatted=None, settings=None):
+    def _make(self, entity=None, settings=None):
         self.__updateEntityButtons()
-        super(OpenBundleReminderDecorator, self)._make(formatted, settings)
+        super(OpenBundleReminderDecorator, self)._make(entity, settings)
 
     def __makeEntity(self, message, savedData):
         return g_settings.msgTemplates.format('OpenBundleReminderSysMessage', ctx=message, data={'savedData': savedData})

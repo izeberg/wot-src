@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from uilogging.base.logger import MetricsLogger
 from uilogging.constants import CommonLogActions
 from uilogging.vehicle_mechanics.low_charge_shot.constants import FEATURE_LOW_CHARGE_SHOT, LOW_CHARGE_SHOT_SCREEN, LowChargeShotItems

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_289_HW_SpiderSpotlight/normal/lod2/attachment</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.296853 -0.100000 -0.411053</min>
+		<max>0.297344 0.486914 0.349724</max>
+	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/Cus_289_HW_SpiderSpotlight/normal/lod1/attachment</nodefullVisual>
+</root>

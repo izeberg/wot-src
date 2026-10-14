@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>halloween/vehicles/british/GB100_Manticore_HW_BOT/normal/lod3/Turret_01</nodefullVisual>
+	<parent>halloween/vehicles/british/GB100_Manticore_HW_BOT/normal/lod4/Turret_01</parent>
+	<visibilityBox>
+		<min>-1.195333 -0.040969 -1.072258</min>
+		<max>1.059379 0.615373 1.029230</max>
+	</visibilityBox>
+	<extent>192.000000</extent>
+	<tank>true</tank>
+</root>

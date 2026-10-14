@@ -1,0 +1,1612 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>0.900000</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>lightning_04</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/environment/halloween/enemies/lightning_04.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.200000</startTime>
+				<value>0.000000 3.647770 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.200000</startTime>
+				<value>40.000000 20.000000 -40.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.200000</startTime>
+				<value>80.000000 60.000000 80.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>principledshader113</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.247059 0.431373 1.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 14.999999</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 14.999999</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.066667</startTime>
+				<value>0.247059 0.431373 1.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.133333</startTime>
+				<value>0.247059 0.431373 1.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -14.999999</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -14.999999</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property vector4</name>
+			<type>vector4</type>
+			<identifier>principledshader113</identifier>
+			<property>lightMultipliers</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>14999.925781 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>14999.925781 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.066667</startTime>
+				<value>1000.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>-0.111816 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>-0.111816 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.133333</startTime>
+				<value>0.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>-15000.149414 -0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>-15000.149414 -0.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>lightning_04_01</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/environment/halloween/enemies/lightning_04.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.266667</startTime>
+				<value>0.000000 3.647770 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.266667</startTime>
+				<value>45.000000 60.000000 -40.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.266667</startTime>
+				<value>80.000000 40.000000 80.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>principledshader113</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.066667</startTime>
+				<value>0.247059 0.431373 1.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 15.000073</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 15.000073</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.133333</startTime>
+				<value>0.247059 0.431373 1.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.000038</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000038</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.200000</startTime>
+				<value>0.247059 0.431373 1.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -14.999997</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -14.999997</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property vector4</name>
+			<type>vector4</type>
+			<identifier>principledshader113</identifier>
+			<property>lightMultipliers</property>
+			<frame>
+				<startTime>0.066667</startTime>
+				<value>0.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>15000.149414 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>15000.149414 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.133333</startTime>
+				<value>1000.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>0.112793 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.112793 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.200000</startTime>
+				<value>0.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>-14999.923828 -0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>-14999.923828 -0.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>lightning_04_02</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/environment/halloween/enemies/lightning_04.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.333333</startTime>
+				<value>0.000000 3.647770 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.333333</startTime>
+				<value>-45.000000 -20.000000 -40.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.333333</startTime>
+				<value>80.000000 80.000000 80.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>principledshader113</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.133333</startTime>
+				<value>0.247059 0.431373 1.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 14.999921</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 14.999921</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.200000</startTime>
+				<value>0.247059 0.431373 1.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 -0.000040</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -0.000040</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.266667</startTime>
+				<value>0.247059 0.431373 1.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -15.000001</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -15.000001</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property vector4</name>
+			<type>vector4</type>
+			<identifier>principledshader113</identifier>
+			<property>lightMultipliers</property>
+			<frame>
+				<startTime>0.133333</startTime>
+				<value>0.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>14999.923828 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>14999.923828 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.200000</startTime>
+				<value>1000.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.266667</startTime>
+				<value>0.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>-14999.923828 -0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>-14999.923828 -0.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>lightning_04_03</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/environment/halloween/enemies/lightning_04.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.400000</startTime>
+				<value>0.000000 3.647770 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.400000</startTime>
+				<value>40.000000 180.000000 -40.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.400000</startTime>
+				<value>80.000000 70.000000 60.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>principledshader113</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.200000</startTime>
+				<value>0.247059 0.431373 1.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 14.999997</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 14.999997</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.266667</startTime>
+				<value>0.247059 0.431373 1.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 -0.000002</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -0.000002</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.333333</startTime>
+				<value>0.247059 0.431373 1.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -15.000001</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -15.000001</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property vector4</name>
+			<type>vector4</type>
+			<identifier>principledshader113</identifier>
+			<property>lightMultipliers</property>
+			<frame>
+				<startTime>0.200000</startTime>
+				<value>0.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>14999.923828 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>14999.923828 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.266667</startTime>
+				<value>1000.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>-0.115723 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>-0.115723 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.333333</startTime>
+				<value>0.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>-15000.155273 -0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>-15000.155273 -0.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>lightning_05</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/environment/halloween/enemies/lightning_05.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.466667</startTime>
+				<value>0.000000 3.647770 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.466667</startTime>
+				<value>40.000000 -150.000000 -80.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.466667</startTime>
+				<value>100.000000 100.000000 100.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>principledshader107</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.266667</startTime>
+				<value>0.247059 0.431373 1.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 15.000074</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 15.000074</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.333333</startTime>
+				<value>0.247059 0.431373 1.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.000040</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000040</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.400000</startTime>
+				<value>0.247059 0.431373 1.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -14.999994</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -14.999994</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property vector4</name>
+			<type>vector4</type>
+			<identifier>principledshader107</identifier>
+			<property>lightMultipliers</property>
+			<frame>
+				<startTime>0.266667</startTime>
+				<value>0.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>15000.155273 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>15000.155273 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.333333</startTime>
+				<value>1000.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>0.117188 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.117188 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.400000</startTime>
+				<value>0.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>-14999.920898 -0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>-14999.920898 -0.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>lightning_05_01</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/environment/halloween/enemies/lightning_05.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.300000</startTime>
+				<value>0.000000 3.647770 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.300000</startTime>
+				<value>-40.000000 50.000000 -80.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.300000</startTime>
+				<value>80.000000 80.000000 80.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>principledshader107</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.100000</startTime>
+				<value>0.247059 0.431373 1.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 14.999999</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 14.999999</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.166667</startTime>
+				<value>0.247059 0.431373 1.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.000001</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000001</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.233333</startTime>
+				<value>0.247059 0.431373 1.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -14.999997</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -14.999997</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property vector4</name>
+			<type>vector4</type>
+			<identifier>principledshader107</identifier>
+			<property>lightMultipliers</property>
+			<frame>
+				<startTime>0.100000</startTime>
+				<value>0.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>14999.925781 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>14999.925781 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.166667</startTime>
+				<value>1000.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>-0.111328 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>-0.111328 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.233333</startTime>
+				<value>0.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>-15000.148438 -0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>-15000.148438 -0.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>lightning_05_02</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/environment/halloween/enemies/lightning_05.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.533333</startTime>
+				<value>0.000000 3.647770 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.533333</startTime>
+				<value>-40.000000 180.000000 -80.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.533333</startTime>
+				<value>80.000000 120.000000 80.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>principledshader107</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.333333</startTime>
+				<value>0.247059 0.431373 1.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 14.999914</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 14.999914</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.400000</startTime>
+				<value>0.247059 0.431373 1.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 -0.000043</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -0.000043</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.466667</startTime>
+				<value>0.247059 0.431373 1.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -15.000001</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -15.000001</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property vector4</name>
+			<type>vector4</type>
+			<identifier>principledshader107</identifier>
+			<property>lightMultipliers</property>
+			<frame>
+				<startTime>0.333333</startTime>
+				<value>0.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>14999.920898 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>14999.920898 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.400000</startTime>
+				<value>1000.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>-0.003418 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>-0.003418 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.466667</startTime>
+				<value>0.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>-14999.927734 -0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>-14999.927734 -0.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>lightning_06</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/environment/halloween/enemies/lightning_06.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.600000</startTime>
+				<value>0.000000 3.647770 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.600000</startTime>
+				<value>40.000000 -150.000000 -120.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.600000</startTime>
+				<value>70.000000 70.000000 70.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property vector4</name>
+			<type>vector4</type>
+			<identifier>principledshader108</identifier>
+			<property>lightMultipliers</property>
+			<frame>
+				<startTime>0.400000</startTime>
+				<value>0.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>14999.927734 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>14999.927734 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.466667</startTime>
+				<value>1000.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>-0.110352 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>-0.110352 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.533333</startTime>
+				<value>0.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>-15000.148438 -0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>-15000.148438 -0.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>lightning_06_01</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/environment/halloween/enemies/lightning_06.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.200000</startTime>
+				<value>0.000000 3.647770 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.200000</startTime>
+				<value>20.000000 -190.000000 -40.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.200000</startTime>
+				<value>50.000000 50.000000 50.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>principledshader108</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.247059 0.431373 1.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 14.999999</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 14.999999</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.066667</startTime>
+				<value>0.247059 0.431373 1.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.133333</startTime>
+				<value>0.247059 0.431373 1.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -14.999999</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -14.999999</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property vector4</name>
+			<type>vector4</type>
+			<identifier>principledshader108</identifier>
+			<property>lightMultipliers</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>14999.925781 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>14999.925781 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.066667</startTime>
+				<value>1000.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>-0.111816 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>-0.111816 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.133333</startTime>
+				<value>0.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>-15000.149414 -0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>-15000.149414 -0.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>lightning_06_02</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/environment/halloween/enemies/lightning_06.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.433333</startTime>
+				<value>0.000000 3.647770 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.433333</startTime>
+				<value>-20.000000 -140.000000 -80.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.433333</startTime>
+				<value>40.000000 40.000000 40.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>principledshader108</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.233333</startTime>
+				<value>0.247059 0.431373 1.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 14.999924</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 14.999924</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.300000</startTime>
+				<value>0.247059 0.431373 1.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 -0.000039</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -0.000039</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.366667</startTime>
+				<value>0.247059 0.431373 1.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -15.000001</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -15.000001</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property vector4</name>
+			<type>vector4</type>
+			<identifier>principledshader108</identifier>
+			<property>lightMultipliers</property>
+			<frame>
+				<startTime>0.233333</startTime>
+				<value>0.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>14999.923828 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>14999.923828 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.300000</startTime>
+				<value>1000.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>-0.001953 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>-0.001953 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.366667</startTime>
+				<value>0.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>-14999.927734 -0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>-14999.927734 -0.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>lightning_06_03</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/environment/halloween/enemies/lightning_06.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>0.000000 3.647770 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>-40.000000 150.000000 -40.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>60.000000 50.000000 60.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>principledshader108</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.300000</startTime>
+				<value>0.247059 0.431373 1.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 15.000001</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 15.000001</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.366667</startTime>
+				<value>0.247059 0.431373 1.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.000003</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000003</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.433333</startTime>
+				<value>0.247059 0.431373 1.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -14.999994</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -14.999994</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property vector4</name>
+			<type>vector4</type>
+			<identifier>principledshader108</identifier>
+			<property>lightMultipliers</property>
+			<frame>
+				<startTime>0.300000</startTime>
+				<value>0.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>14999.927734 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>14999.927734 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.366667</startTime>
+				<value>1000.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>-0.110352 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>-0.110352 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.433333</startTime>
+				<value>0.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>-15000.148438 -0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>-15000.148438 -0.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>lightning_06_04</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/environment/halloween/enemies/lightning_06.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.566667</startTime>
+				<value>0.000000 3.647770 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.566667</startTime>
+				<value>180.000000 100.000000 -220.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.566667</startTime>
+				<value>90.000000 40.000000 70.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>principledshader108</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.366667</startTime>
+				<value>0.247059 0.431373 1.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 15.000068</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 15.000068</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.433333</startTime>
+				<value>0.247059 0.431373 1.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.000030</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000030</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>0.247059 0.431373 1.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -15.000008</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -15.000008</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property vector4</name>
+			<type>vector4</type>
+			<identifier>principledshader108</identifier>
+			<property>lightMultipliers</property>
+			<frame>
+				<startTime>0.366667</startTime>
+				<value>0.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>15000.148438 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>15000.148438 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.433333</startTime>
+				<value>1000.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>0.110352 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.110352 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>0.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>-14999.927734 -0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>-14999.927734 -0.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>lightning_06_05</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/environment/halloween/enemies/lightning_06.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.266667</startTime>
+				<value>0.000000 3.647770 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.266667</startTime>
+				<value>-180.000000 100.000000 90.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.266667</startTime>
+				<value>80.000000 20.000000 80.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>principledshader108</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.066667</startTime>
+				<value>0.247059 0.431373 1.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 15.000073</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 15.000073</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.133333</startTime>
+				<value>0.247059 0.431373 1.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.000038</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000038</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.200000</startTime>
+				<value>0.247059 0.431373 1.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -14.999997</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -14.999997</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property vector4</name>
+			<type>vector4</type>
+			<identifier>principledshader108</identifier>
+			<property>lightMultipliers</property>
+			<frame>
+				<startTime>0.066667</startTime>
+				<value>0.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>15000.149414 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>15000.149414 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.133333</startTime>
+				<value>1000.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>0.112793 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.112793 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.200000</startTime>
+				<value>0.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>-14999.923828 -0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>-14999.923828 -0.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>lightning_04_04</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/environment/halloween/enemies/lightning_04.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>0.000000 3.647770 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>-60.000000 60.000000 -80.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>80.000000 60.000000 80.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property vector4</name>
+			<type>vector4</type>
+			<identifier>principledshader113</identifier>
+			<property>lightMultipliers</property>
+			<frame>
+				<startTime>0.300000</startTime>
+				<value>0.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>14999.927734 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>14999.927734 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.366667</startTime>
+				<value>1000.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>-0.110352 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>-0.110352 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.433333</startTime>
+				<value>0.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>-15000.148438 -0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>-15000.148438 -0.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>lightning_04_05</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/environment/halloween/enemies/lightning_04.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.700000</startTime>
+				<value>0.000000 3.647770 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.700000</startTime>
+				<value>40.000000 20.000000 -40.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.700000</startTime>
+				<value>80.000000 60.000000 80.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>principledshader113</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>0.247059 0.431373 1.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 14.999988</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 14.999988</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.566667</startTime>
+				<value>0.247059 0.431373 1.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 -0.000007</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -0.000007</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.633333</startTime>
+				<value>0.247059 0.431373 1.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -15.000001</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -15.000001</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property vector4</name>
+			<type>vector4</type>
+			<identifier>principledshader113</identifier>
+			<property>lightMultipliers</property>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>0.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>14999.920898 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>14999.920898 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.566667</startTime>
+				<value>1000.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>-0.113770 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>-0.113770 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.633333</startTime>
+				<value>0.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>-15000.148438 -0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>-15000.148438 -0.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>lightning_06_06</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/environment/halloween/enemies/lightning_06.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.733333</startTime>
+				<value>0.000000 3.647770 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.733333</startTime>
+				<value>-20.000000 -140.000000 -80.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.733333</startTime>
+				<value>40.000000 40.000000 40.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>principledshader108</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.533333</startTime>
+				<value>0.247059 0.431373 1.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 15.000001</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 15.000001</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.600000</startTime>
+				<value>0.247059 0.431373 1.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.666667</startTime>
+				<value>0.247059 0.431373 1.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -15.000001</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -15.000001</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property vector4</name>
+			<type>vector4</type>
+			<identifier>principledshader108</identifier>
+			<property>lightMultipliers</property>
+			<frame>
+				<startTime>0.533333</startTime>
+				<value>0.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>14999.920898 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>14999.920898 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.600000</startTime>
+				<value>1000.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>-0.006836 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>-0.006836 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.666667</startTime>
+				<value>0.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>-14999.934570 -0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>-14999.934570 -0.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>lightning_05_04</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/environment/halloween/enemies/lightning_05.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.800000</startTime>
+				<value>0.000000 3.647770 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.800000</startTime>
+				<value>-40.000000 180.000000 -80.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.800000</startTime>
+				<value>80.000000 120.000000 80.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>principledshader107</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.600000</startTime>
+				<value>0.247059 0.431373 1.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 15.000001</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 15.000001</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.666667</startTime>
+				<value>0.247059 0.431373 1.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.733333</startTime>
+				<value>0.247059 0.431373 1.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -15.000001</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -15.000001</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property vector4</name>
+			<type>vector4</type>
+			<identifier>principledshader107</identifier>
+			<property>lightMultipliers</property>
+			<frame>
+				<startTime>0.600000</startTime>
+				<value>0.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>14999.934570 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>14999.934570 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.666667</startTime>
+				<value>1000.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>-0.106934 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>-0.106934 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.733333</startTime>
+				<value>0.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>-15000.148438 -0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>-15000.148438 -0.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>lightning_04_06</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/environment/halloween/enemies/lightning_04.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.900000</startTime>
+				<value>0.000000 3.647770 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.900000</startTime>
+				<value>40.000000 180.000000 -40.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.900000</startTime>
+				<value>80.000000 70.000000 60.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>principledshader113</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.666667</startTime>
+				<value>0.247059 0.431373 1.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 15.000001</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 15.000001</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.733333</startTime>
+				<value>0.247059 0.431373 1.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.000007</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000007</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.800000</startTime>
+				<value>0.247059 0.431373 1.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -14.999988</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -14.999988</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property vector4</name>
+			<type>vector4</type>
+			<identifier>principledshader113</identifier>
+			<property>lightMultipliers</property>
+			<frame>
+				<startTime>0.666667</startTime>
+				<value>0.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>15000.148438 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>15000.148438 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.733333</startTime>
+				<value>1000.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>0.113770 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.113770 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.800000</startTime>
+				<value>0.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>-14999.920898 -0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>-14999.920898 -0.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

@@ -1501,6 +1501,10 @@ package
       
       public static const TANK_PARAMS_SIGHTPOINTERCONSEALMENTMOVING:String = "#menu:tank_params/sightPointerConsealmentMoving";
       
+      public static const TANK_PARAMS_COMBATTHROTTLEDURATION:String = "#menu:tank_params/combatThrottleDuration";
+      
+      public static const TANK_PARAMS_COMBATTHROTTLECOOLDOWN:String = "#menu:tank_params/combatThrottleCooldown";
+      
       public static const EXTRAPARAMS_HEADER:String = "#menu:extraParams/header";
       
       public static const EXTRAPARAMS_MULTIDESC:String = "#menu:extraParams/multiDesc";
@@ -2520,6 +2524,8 @@ package
       public static const MODULEINFO_AUTOLOADERGUNBOOST:String = "#menu:moduleInfo/autoLoaderGunBoost";
       
       public static const MODULEINFO_AUTOSHOOTGUN:String = "#menu:moduleInfo/autoShootGun";
+      
+      public static const MODULEINFO_COMBATTHROTTLE:String = "#menu:moduleInfo/combatThrottle";
       
       public static const MODULEINFO_DAMAGEMUTABLE:String = "#menu:moduleInfo/damageMutable";
       

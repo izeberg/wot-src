@@ -2,7 +2,6 @@ from __future__ import absolute_import
 import logging
 from constants import Configs
 from frameworks.wulf import WindowLayer
-from gui.Scaleform.framework import g_entitiesFactories
 from gui.Scaleform.framework.managers.containers import POP_UP_CRITERIA
 from gui.Scaleform.framework.managers.loaders import SFViewLoadParams
 from gui.impl.gen.view_models.views.lobby.page.footer.chat_model import ChatModel
@@ -108,7 +107,7 @@ class ChatsPresenter(ViewComponent[ChatModel]):
     @args2params(int, int, int, int)
     def __onChatsAction(self, x, y, width, height):
         manager = self.__appLoader.getApp().containerManager
-        window = manager.getView(WindowLayer.WINDOW, {POP_UP_CRITERIA.VIEW_ALIAS: g_entitiesFactories.getAliasByEvent(MESSENGER_VIEW_ALIAS.CHANNEL_MANAGEMENT_WINDOW)})
+        window = manager.getView(WindowLayer.WINDOW, {POP_UP_CRITERIA.VIEW_ALIAS: self.gui.entitiesFactory.getAliasByEvent(MESSENGER_VIEW_ALIAS.CHANNEL_MANAGEMENT_WINDOW)})
         if not window:
             self.__carouselHandler.setManagerWindowGeometry((x, y, width, height))
             g_eventBus.handleEvent(events.LoadViewEvent(SFViewLoadParams(MESSENGER_VIEW_ALIAS.CHANNEL_MANAGEMENT_WINDOW)), scope=EVENT_BUS_SCOPE.LOBBY)

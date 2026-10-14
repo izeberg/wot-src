@@ -1,4 +1,5 @@
-import CGF, Math, math
+from __future__ import absolute_import
+import math, CGF, Math
 from vehicle_systems.components.vehicle_pickup_component import VehiclePickupComponent
 
 class VehiclePickupSystem(CGF.System):

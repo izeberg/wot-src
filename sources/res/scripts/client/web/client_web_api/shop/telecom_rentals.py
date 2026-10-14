@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.ClientUpdateManager import g_clientUpdateManager
 from helpers import dependency
 from skeletons.gui.lobby_context import ILobbyContext

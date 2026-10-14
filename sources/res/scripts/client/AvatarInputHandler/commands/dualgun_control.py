@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, BigWorld, CommandMapping
 from AvatarInputHandler.commands.input_handler_command import InputHandlerCommand
 from constants import DUAL_GUN, DUALGUN_CHARGER_ACTION_TYPE, DUALGUN_CHARGER_STATUS

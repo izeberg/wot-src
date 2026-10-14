@@ -498,6 +498,9 @@ msgstr "M47 Chevalier"
 msgid "Chassis_F143_Fauteur"
 msgstr "Fauteur"
 
+msgid "Chassis_F145_Scarabee"
+msgstr "Scarabée"
+
 msgid "Chassis_F147_AMX29_Belier"
 msgstr "AMX 29 Bélier"
 
@@ -1873,6 +1876,31 @@ msgstr ""
 msgid "F143_Fauteur_short"
 msgstr "Fauteur"
 
+msgid "F145_Scarabee"
+msgstr "Scarabée"
+
+msgid "F145_Scarabee_descr"
+msgstr ""
+"A project for a tank developed as part of cooperation between France and "
+"Italy. It was assumed that using a tested and improved chassis in "
+"combination with a promising turret and powerful armament would speed up the"
+" vehicle's creation; however, the project encountered technical difficulties"
+" and went no further than blueprints."
+
+msgid "F145_Scarabee_long_special"
+msgstr ""
+"The Scarabée is a Tier IX French medium tank. The vehicle is equipped with "
+"an improved 3-shell autoreloader. Its exceptionally high alpha damage for "
+"its tier and class allows it to trade HP effectively with most opponents, "
+"while its excellent accuracy and aiming time ensure reliable long-range "
+"fire."
+
+msgid "F145_Scarabee_short"
+msgstr "Scarabée"
+
+msgid "F145_Scarabee_short_special"
+msgstr "Improved autoreloader, excellent mobility"
+
 msgid "F147_AMX29_Belier"
 msgstr "AMX 29 Bélier"
 
@@ -2958,6 +2986,9 @@ msgstr "Maybach HL 234 P50"
 msgid "Maybach_HL_234P50_short"
 msgstr "Maybach HL 234 P50"
 
+msgid "Maybach_HL_234_P45"
+msgstr "Maybach HL 234 P45"
+
 msgid "Maybach_HL_235_850"
 msgstr "Maybach HL 235 (850)"
 
@@ -3275,6 +3306,9 @@ msgstr "SCR 508"
 
 msgid "SCR_528"
 msgstr "SCR 528F"
+
+msgid "SCR_528S"
+msgstr "SCR 528S"
 
 msgid "SCR_528_7x7"
 msgstr "SCR 528F"
@@ -3616,6 +3650,9 @@ msgstr "M47 Chevalier"
 
 msgid "Turret_1_F143_Fauteur"
 msgstr "Fauteur"
+
+msgid "Turret_1_F145_Scarabee"
+msgstr "Scarabée"
 
 msgid "Turret_1_F147_AMX29_Belier"
 msgstr "AMX 29 Bélier"
@@ -4436,6 +4473,9 @@ msgstr "120 mm SA46"
 
 msgid "_127_mm_CN_127_F1"
 msgstr "127 mm CN-127-F1"
+
+msgid "_127_mm_OTO_Melara_S"
+msgstr "127 mm OTO Melara S"
 
 msgid "_127_mm_Obus_Explosif_Mle_58"
 msgstr "127 mm Obus Explosif Mle.58"
@@ -5516,3 +5556,12 @@ msgstr "Hotchkiss H35"
 
 msgid "_M_107"
 msgstr "HE M107"
+
+msgid "a_e_127_54_Mk_116S"
+msgstr "a.e. 127/54 Mk. 116S"
+
+msgid "c_c_127_54_Mk_411S"
+msgstr "c.c. 127/54 Mk. 411S"
+
+msgid "c_p_127_54_Mk_316S"
+msgstr "c.p. 127/54 Mk. 316S"

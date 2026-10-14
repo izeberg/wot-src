@@ -2338,36 +2338,6 @@
 				-0.002
 				<!--BW_String-->
 			</trackThickness>
-			<groundNodes>
-				<group>
-					<template>Track_L</template>
-					<startIndex>0</startIndex>
-					<count>5</count>
-					<isLeft>true</isLeft>
-					<minOffset>
-						-0.1
-						<!--BW_String-->
-					</minOffset>
-					<maxOffset>
-						0.1
-						<!--BW_String-->
-					</maxOffset>
-				</group>
-				<group>
-					<template>Track_R</template>
-					<startIndex>0</startIndex>
-					<count>5</count>
-					<isLeft>false</isLeft>
-					<minOffset>
-						-0.1
-						<!--BW_String-->
-					</minOffset>
-					<maxOffset>
-						0.1
-						<!--BW_String-->
-					</maxOffset>
-				</group>
-			</groundNodes>
 			<physicalTracks>
 				<left>
 					<segmentsCount>164</segmentsCount>

@@ -1937,6 +1937,42 @@
 				<bank>MTLB4/MTLB4_zh_CN_tankmen_1/voiceover.bnk</bank>
 			</wwbanks>
 		</mode>
+		<mode>
+			<name>FR_Spark_en</name>
+			<wwise_language>FR/FR_en_US_spark</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>FR/FR_en_US_spark/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
+		<mode>
+			<name>FR_Spark_cn</name>
+			<wwise_language>FR/FR_zh_CN_spark</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>FR/FR_zh_CN_spark/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
+		<mode>
+			<name>gup_nakajima</name>
+			<wwise_language>gup_jp/gup_nakajima</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>gup_jp/gup_nakajima/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
+		<mode>
+			<name>gup_leopon_crew</name>
+			<wwise_language>gup_jp/gup_leopon</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>gup_jp/gup_leopon/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
 	</modes>
 	<nationalPresets>
 		<preset>

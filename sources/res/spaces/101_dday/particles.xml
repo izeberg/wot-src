@@ -121,7 +121,6 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/101_dday_fire_big.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/101_dday_fire_small.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/101_dday_ground_fire.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/101_dday_mill_smoke.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/101_dday_smoke_dark_small.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/101_dday_smoke_ground.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/101_dday_smoke_ground_lg.vfx</fn_effect_bin>
@@ -285,7 +284,8 @@
 		<fn_effect_bin>particles/environment/interior/101_dday_fire_big.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/101_dday_fire_small.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/101_dday_ground_fire.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/101_dday_mill_smoke.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/101_dday_mill_smoke_big.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/101_dday_mill_smoke_small.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/101_dday_smoke_dark_small.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/101_dday_smoke_ground.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/101_dday_smoke_ground_lg.eff</fn_effect_bin>
@@ -456,26 +456,6 @@
 	<deferred>
 		<name>default</name>
 		<preload>
-			<shader>\data\shaders\ps_water_displacement.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_tex_water_101_dday_ext.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_water_displacement.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_tex_water_10_hills.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_tex_28_desert.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_tex_101_dday_ext.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_foam.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_tex_water_101_dday_ext.dds</texture>
-		</preload>
-		<preload>
 			<shader>\data\shaders\ps_solid.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/eff_tex.dds</texture>
 		</preload>
@@ -490,6 +470,10 @@
 		<preload>
 			<shader>\data\shaders\ps_water_displacement.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/eff_tex_water.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_water_displacement.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_tex_water_101_dday_ext.dds</texture>
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps_foam.fx</shader>
@@ -540,12 +524,32 @@
 			<texture>particles/content_deferred/PFX_textures/eff_tex_distortion.dds</texture>
 		</preload>
 		<preload>
+			<shader>\data\shaders\ps_shimmer.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization_main.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_tex_28_desert.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_tex_101_dday_ext.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_foam.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_tex_water_101_dday_ext.dds</texture>
+		</preload>
+		<preload>
 			<shader>\data\shaders\ps.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/eff_rocket_accelerator.dds</texture>
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps_long.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/eff_rocket_accelerator.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_water_displacement.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_tex_water_10_hills.dds</texture>
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps.fx</shader>
@@ -614,7 +618,8 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/101_dday_fire_big.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/101_dday_fire_small.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/101_dday_ground_fire.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/101_dday_mill_smoke.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/101_dday_mill_smoke_big.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/101_dday_mill_smoke_small.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/101_dday_smoke_dark_small.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/101_dday_smoke_ground.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/101_dday_smoke_ground_lg.vfx</fn_effect_bin>
@@ -786,7 +791,8 @@
 		<fn_effect_bin>particles/environment/interior/101_dday_fire_big.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/101_dday_fire_small.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/101_dday_ground_fire.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/101_dday_mill_smoke.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/101_dday_mill_smoke_big.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/101_dday_mill_smoke_small.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/101_dday_smoke_dark_small.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/101_dday_smoke_ground.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/101_dday_smoke_ground_lg.eff</fn_effect_bin>

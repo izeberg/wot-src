@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>halloween/vehicles/german/G00_Bomber_Hell/crash/lod2/Chassis</nodefullVisual>
+	<parent>halloween/vehicles/german/G00_Bomber_Hell/crash/lod3/Chassis</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.076836 -0.182879 -1.361729</min>
+		<max>1.071951 2.571453 1.395768</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

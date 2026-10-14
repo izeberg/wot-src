@@ -1,3 +1,4 @@
+from __future__ import absolute_import, division
 import GUI, Math
 
 def setAnchor(component, hor, vert):
@@ -31,4 +32,4 @@ def buildTexMapping(texCoords, texSize, fullTexSize):
 
 
 def hexARGBToRGBAFloatColor(hexColor):
-    return Math.Vector4((hexColor >> 16 & 255) * (1.0 / 255.0), (hexColor >> 8 & 255) * (1.0 / 255.0), (hexColor & 255) * (1.0 / 255.0), (hexColor >> 24 & 255) * (1.0 / 255.0))
+    return Math.Vector4((hexColor >> 16 & 255) * 0.00392156862745098, (hexColor >> 8 & 255) * 0.00392156862745098, (hexColor & 255) * 0.00392156862745098, (hexColor >> 24 & 255) * 0.00392156862745098)

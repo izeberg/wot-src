@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing, logging, Math
 from collections import namedtuple
 from constants import VehiclePartName

@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from past.builtins import basestring
 from gui.Scaleform.genConsts.RANKEDBATTLES_CONSTS import RANKEDBATTLES_CONSTS
 from gui.Scaleform.genConsts.RANKEDBATTLES_ALIASES import RANKEDBATTLES_ALIASES
 from gui.shared.event_dispatcher import showBrowserOverlayView

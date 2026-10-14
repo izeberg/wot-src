@@ -1,4 +1,6 @@
+from __future__ import absolute_import
 import logging, re, typing
+from future.utils import viewitems
 from comp7_common_const import COMP7_OFFER_YEARLY_REWARD_TOKEN_PREFIX, Comp7QuestType, offerWeeklyQuestsRewardTokenPrefixBySeasonNumber, weeklyQuestsCompleteTokenName, COMP7_YEARLY_REWARD_TOKEN, COMP7_OFFER_PREFIX
 from gui.server_events.cond_formatters.bonus import BattlesCountFormatter
 from gui.shared.items_cache import ItemsCache
@@ -61,6 +63,8 @@ def getComp7WeeklyQuestsCompleteToken(ctrl=None):
     actualSeasonNumber = ctrl.getActualSeasonNumber()
     if actualSeasonNumber:
         return weeklyQuestsCompleteTokenName(actualSeasonNumber)
+    else:
+        return
 
 
 @dependency.replace_none_kwargs(ctrl=IComp7Controller)
@@ -68,6 +72,8 @@ def getComp7OfferWeeklyQuestsRewardTokenPrefix(ctrl=None):
     actualSeasonNumber = ctrl.getActualSeasonNumber()
     if actualSeasonNumber:
         return offerWeeklyQuestsRewardTokenPrefixBySeasonNumber(actualSeasonNumber)
+    else:
+        return
 
 
 def isComp7OfferYearlyRewardToken(token):
@@ -80,13 +86,13 @@ def isComp7OfferYearlyRewardGiftToken(token):
 
 @dependency.replace_none_kwargs(itemsCache=IItemsCache)
 def hasAvailableOfferYearlyRewardGiftTokens(itemsCache=None):
-    tokens = itemsCache.items.tokens.getTokens().iteritems()
-    return any(amount[1] > 0 and isComp7OfferYearlyRewardGiftToken(name) for name, amount in tokens)
+    tokens = itemsCache.items.tokens.getTokens()
+    return any(amount[1] > 0 and isComp7OfferYearlyRewardGiftToken(name) for name, amount in viewitems(tokens))
 
 
 @dependency.replace_none_kwargs(itemsCache=IItemsCache)
 def hasAvailableOfferTokens(itemsCache=None):
-    for name, (_, count) in itemsCache.items.tokens.getTokens().iteritems():
+    for name, (_, count) in viewitems(itemsCache.items.tokens.getTokens()):
         if name.startswith(COMP7_OFFER_PREFIX) and name.endswith('_gift') and count > 0:
             return True
 
@@ -147,7 +153,7 @@ class Comp7ParsedQuestID(object):
         match = cls.__questIDMatcher(questID)
         if match:
             self = super(cls, cls).__new__(cls)
-            mascot, season, questType, self.extraInfo = match.groups()
+            _, season, questType, self.extraInfo = match.groups()
             self.season = int(season)
             self.questType = Comp7QuestType(questType)
             return self

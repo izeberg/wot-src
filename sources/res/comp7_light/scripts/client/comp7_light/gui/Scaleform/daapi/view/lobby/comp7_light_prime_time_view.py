@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from comp7_core.gui.Scaleform.daapi.view.lobby.comp7_core_prime_time_view import Comp7CorePrimeTimeView
 from comp7_light.gui.comp7_light_constants import PREBATTLE_ACTION_NAME
 from comp7_light.gui.impl.gen.view_models.views.lobby.enums import SeasonName

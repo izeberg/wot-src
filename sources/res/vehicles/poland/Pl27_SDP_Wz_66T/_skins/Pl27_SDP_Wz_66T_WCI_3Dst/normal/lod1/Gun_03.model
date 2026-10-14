@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.507272 -0.479747 -0.114514</min>
+		<max>0.508686 0.402253 6.009108</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/poland/Pl27_SDP_Wz_66T/_skins/Pl27_SDP_Wz_66T_WCI_3Dst/normal/lod1/Gun_03</nodefullVisual>
+	<parent>vehicles/poland/Pl27_SDP_Wz_66T/_skins/Pl27_SDP_Wz_66T_WCI_3Dst/normal/lod2/Gun_03</parent>
+	<extent>64.000000</extent>
+</root>

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.ClientUpdateManager import g_clientUpdateManager
 from gui.shared.money import Currency
 from helpers import dependency
@@ -28,4 +29,4 @@ class BalanceEventHandler(C2WHandler):
 
     @c2w(name='wallet_update')
     def __onWalletUpdate(self, *_):
-        return formatWalletCurrencyStatuses(self.__itemsCache.items.stats)
+        return formatWalletCurrencyStatuses(wallet=self.__walletController, itemsCache=self.__itemsCache)

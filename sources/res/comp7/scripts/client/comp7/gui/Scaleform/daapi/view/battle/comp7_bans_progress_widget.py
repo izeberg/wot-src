@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging
 from comp7_core.gui.comp7_core_constants import BATTLE_CTRL_ID
 from comp7.gui.impl.battle.vehicle_ban.ban_progression import BanProgressionView

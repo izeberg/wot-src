@@ -1,4 +1,6 @@
+from __future__ import absolute_import
 import typing
+from future.utils import viewvalues
 from comp7_common.comp7_constants import BATTLE_MODE_VEH_TAGS_EXCEPT_COMP7
 from gui.prb_control.entities.base.actions_validator import ActionsValidatorComposite, BaseActionsValidator
 from gui.prb_control.entities.base.squad.actions_validator import SquadActionsValidator, SquadVehiclesValidator
@@ -65,7 +67,7 @@ class _Comp7ModeStatusValidator(BaseActionsValidator):
 
     def _validate(self):
         if self._entity.isCommander():
-            for pInfo in self._entity.getMembers().itervalues():
+            for pInfo in viewvalues(self._entity.getMembers()):
                 if self.__isModeOfflineForPlayer(pInfo):
                     return ValidationResult(False, UNIT_RESTRICTION.MODE_OFFLINE)
 
@@ -89,6 +91,8 @@ class _Comp7SlotValidator(CommanderValidator):
         pInfo = self._entity.getPlayerInfo()
         if stats.occupiedSlotsCount > 1 and not pInfo.isReady:
             return ValidationResult(False, UNIT_RESTRICTION.COMMANDER_VEHICLE_NOT_SELECTED)
+        else:
+            return
 
 
 class Comp7SquadActionsValidator(SquadActionsValidator):

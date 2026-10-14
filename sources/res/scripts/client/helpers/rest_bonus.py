@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from gui.game_control.rest_bonus_controller import REST_BONUS_BASE_FACTOR, REST_BONUS_XP_FACTOR_BONUS
 if typing.TYPE_CHECKING:

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from WeakMixin import WeakMixin, Tapped
 from epic_constants import CATEGORIES_ORDER
@@ -20,6 +21,8 @@ class BattleAbilityMixin(WeakMixin, Tapped):
     def fromBattleAbility(cls, item, **kwargs):
         if isinstance(item, BattleAbility):
             return BattleAbilityMixin(item).tap(**kwargs)
+        else:
+            return
 
 
 class BattleAbilityProvider(VehicleBaseArrayProvider):

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from festivity.dummy.df_controller import DummyController
 from festivity.dummy.df_processor import DummyCommandsProcessor
 from festivity.dummy.df_requester import DummyRequester

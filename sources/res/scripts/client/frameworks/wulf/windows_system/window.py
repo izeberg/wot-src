@@ -1,11 +1,13 @@
+from __future__ import absolute_import
 import logging, typing, Event
 from soft_exception import SoftException
 from ..py_object_binder import PyObjectEntity, getProxy, getObject
 from ..py_object_wrappers import PyObjectWindowSettings
 from ..py_object_wrappers import PyObjectWindow
 from ..view.view import View
-from ..view.view_model import ViewModel
 from ..gui_constants import WindowStatus, WindowFlags, ViewStatus, ShowingStatus
+if typing.TYPE_CHECKING:
+    from ..view.view_model import ViewModel
 _logger = logging.getLogger(__name__)
 NO_WINDOW_OWNER = 0
 

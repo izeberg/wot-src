@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/sweden/S38_Huggorm/crash/lod1/Hull</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/sweden/S38_Huggorm/crash/lod2/Hull</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.731197 -0.950665 -3.136739</min>
+		<max>1.724297 0.645912 3.101706</max>
+	</visibilityBox>
+</root>

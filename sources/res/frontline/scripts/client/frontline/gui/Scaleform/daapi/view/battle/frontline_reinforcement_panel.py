@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld
 from frontline.gui.Scaleform.daapi.view.meta.FrontlineReinforcementPanelMeta import FrontlineReinforcementPanelMeta
 from helpers import dependency

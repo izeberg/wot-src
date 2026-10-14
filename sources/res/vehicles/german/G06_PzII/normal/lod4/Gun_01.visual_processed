@@ -65,11 +65,11 @@
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
-		<node>Gun_BlendBone</node>
 		<node>G_BlendBone</node>
+		<node>Gun_BlendBone</node>
 		<geometry>
-			<vertices>gun_01_Shape.vertices</vertices>
-			<primitive>gun_01_Shape.indices</primitive>
+			<vertices>gun_01Shape.vertices</vertices>
+			<primitive>gun_01Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -98,14 +98,14 @@
 						<Texture>vehicles/german/G06_PzII/PzII_guns_ID.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.100084 -0.000451 -0.466998</groupOrigin>
+				<groupOrigin>-0.103741 0.005171 -0.469367</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-0.476823 -0.125720 -0.075682</min>
-		<max>0.276654 0.124817 1.009678</max>
+		<min>-0.474819 -0.119634 -0.070399</min>
+		<max>0.267337 0.129976 1.009133</max>
 	</boundingBox>
-	<geometrySize>3300</geometrySize>
+	<geometrySize>4154</geometrySize>
 </root>

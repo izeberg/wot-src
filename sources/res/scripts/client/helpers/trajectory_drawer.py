@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld, CGF
 from constants import IS_DEVELOPMENT
 from debug_utils import LOG_CURRENT_EXCEPTION

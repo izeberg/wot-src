@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from constants_utils import ConstInjector
 from gui.Scaleform.daapi.settings import views
 from gui.prb_control import settings

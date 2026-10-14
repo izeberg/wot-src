@@ -1,6 +1,6 @@
 from __future__ import absolute_import
 from gui.shared.gui_items.vehicle_mechanics.factories.base_factory import BaseMechanicFactory
-from vehicles.mechanics.mechanic_constants import VehicleMechanic
+from items.vehicle_mechanics_types import VehicleMechanicKeys
 
 class GunMechanicFactory(BaseMechanicFactory):
 
@@ -8,26 +8,26 @@ class GunMechanicFactory(BaseMechanicFactory):
     def _getMechanicsChecks(cls, guiItem, vehDescr):
         return [
          (
-          guiItem.isAutoShoot(vehDescr), VehicleMechanic.AUTO_SHOOT_GUN),
+          guiItem.isAutoShoot(vehDescr), VehicleMechanicKeys.AUTO_SHOOT_GUN),
          (
-          guiItem.isDualGun(vehDescr), VehicleMechanic.DUAL_GUN),
+          guiItem.isDualGun(vehDescr), VehicleMechanicKeys.DUAL_GUN),
          (
-          guiItem.hasDualAccuracy(vehDescr), VehicleMechanic.DUAL_ACCURACY),
+          guiItem.hasMechanic(VehicleMechanicKeys.DUAL_ACCURACY, vehDescr), VehicleMechanicKeys.DUAL_ACCURACY),
          (
-          guiItem.isTwinGun(vehDescr), VehicleMechanic.TWIN_GUN),
+          guiItem.isTwinGun(vehDescr), VehicleMechanicKeys.TWIN_GUN),
          (
-          guiItem.isClipGun(vehDescr), VehicleMechanic.MAGAZINE_GUN),
+          guiItem.isClipGun(vehDescr), VehicleMechanicKeys.MAGAZINE_GUN),
          (
-          guiItem.isLowChargeShotGun(vehDescr), VehicleMechanic.LOW_CHARGE_SHOT),
+          guiItem.isLowChargeShotGun(vehDescr), VehicleMechanicKeys.LOW_CHARGE_SHOT),
          (
-          guiItem.isAutoReloadableWithBoost(vehDescr), VehicleMechanic.AUTO_LOADER_GUN_BOOST),
+          guiItem.isAutoReloadableWithBoost(vehDescr), VehicleMechanicKeys.AUTO_LOADER_GUN_BOOST),
          (
           guiItem.isAutoReloadable(vehDescr) and not guiItem.isAutoReloadableWithBoost(vehDescr),
-          VehicleMechanic.AUTO_LOADER_GUN),
+          VehicleMechanicKeys.AUTO_LOADER_GUN),
          (
-          guiItem.isDamageMutable(), VehicleMechanic.DAMAGE_MUTABLE),
+          guiItem.isDamageMutable(), VehicleMechanicKeys.DAMAGE_MUTABLE),
          (
-          any(shell.descriptor.hasStun for shell in guiItem.defaultAmmo), VehicleMechanic.STUN)]
+          any(shell.descriptor.hasStun for shell in guiItem.defaultAmmo), VehicleMechanicKeys.STUN)]
 
     @classmethod
     def _getMechanicsParams(cls, guiItem, vehDescr):

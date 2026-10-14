@@ -178,16 +178,15 @@ msgstr "Map Features"
 msgid "detailsHelp/devMaps/markers/description"
 msgstr ""
 "The random event location will be marked with\n"
-"smoke on the map and a marker on the minimap.\n"
-"Maps with random events can be disabled via the settings in the Game tab."
+"smoke on the map and a marker on the minimap."
 
 msgid "detailsHelp/devMaps/title"
 msgstr "Maps With Random Events"
 
 msgid "detailsHelp/devMaps/zone/description"
 msgstr ""
-"Your vehicle can be destroyed in a random event area (for example, during a plane crash).\n"
-"Maps with random events can be disabled via the settings in the Game tab."
+"Your vehicle can be destroyed in a random event area (for example, during a "
+"plane crash)."
 
 msgid "detailsHelp/dualGun/quick_fire"
 msgstr ""
@@ -339,6 +338,15 @@ msgstr ""
 
 msgid "detailsHelp/mechanics/chargeableBurst/page1/title"
 msgstr "Burst mode"
+
+msgid "detailsHelp/mechanics/combatThrottle/page1/description"
+msgstr ""
+"Activate the throttle for a temporary boost to engine power, speed, and "
+"maneuverability while maintaining reliable gun handling. This allows for "
+"agile, dynamic play without compromising combat effectiveness."
+
+msgid "detailsHelp/mechanics/combatThrottle/page1/title"
+msgstr "Combat Throttle"
 
 msgid "detailsHelp/mechanics/concentrationMode/page1/description"
 msgstr ""

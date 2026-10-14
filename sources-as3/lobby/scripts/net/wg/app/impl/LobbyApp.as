@@ -35,6 +35,7 @@ package net.wg.app.impl
    import net.wg.infrastructure.managers.IImageManager;
    import net.wg.infrastructure.managers.ILoaderManager;
    import net.wg.infrastructure.managers.IPopoverManager;
+   import net.wg.infrastructure.managers.ISharedLayoutManager;
    import net.wg.infrastructure.managers.ISoundManager;
    import net.wg.infrastructure.managers.IStageSizeManager;
    import net.wg.infrastructure.managers.ITooltipMgr;
@@ -55,6 +56,7 @@ package net.wg.app.impl
    import net.wg.infrastructure.managers.impl.ImageManager;
    import net.wg.infrastructure.managers.impl.LoaderManager;
    import net.wg.infrastructure.managers.impl.PopoverManagerLobby;
+   import net.wg.infrastructure.managers.impl.SharedLayoutManager;
    import net.wg.infrastructure.managers.impl.SoundManager;
    import net.wg.infrastructure.managers.impl.StageSizeManager;
    import net.wg.infrastructure.managers.impl.TextManager;
@@ -316,6 +318,11 @@ package net.wg.app.impl
       override protected function getNewStageSizeManager() : IStageSizeManager
       {
          return new StageSizeManager();
+      }
+      
+      override protected function getSharedLayoutManager() : ISharedLayoutManager
+      {
+         return new SharedLayoutManager();
       }
       
       override protected function onPopUpManagerInit() : void

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from messenger.proto.interfaces import IUserSearchLimits, IProtoLimits
 from messenger.proto.xmpp.xmpp_constants import USER_SEARCH_LIMITS, MESSAGE_LIMIT
 

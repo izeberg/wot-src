@@ -1,7 +1,9 @@
+from __future__ import absolute_import
 import typing, logging
 from collections import OrderedDict, defaultdict, namedtuple
-from functools import partial
 from enum import Enum
+from functools import partial
+from future.utils import viewitems, viewvalues
 import BigWorld
 from PlayerEvents import g_playerEvents
 from arena_component_system.client_arena_component_system import ClientArenaComponent
@@ -333,7 +335,7 @@ class AdvancedChatComponent(ClientArenaComponent):
                 return
             hq = destructibleComponent.getDestructibleEntity(entityID)
             if hq is None:
-                _logger.error('Expected DestructibleEntity not present! Id: ' + str(entityID))
+                _logger.error('Expected DestructibleEntity not present! Id: %s', str(entityID))
                 return
             if not hq.isAlive():
                 playerVehID = avatar_getter.getPlayerVehicleID()
@@ -365,12 +367,12 @@ class AdvancedChatComponent(ClientArenaComponent):
     def _removeActualTargetIfDestroyed(self, commands, playerVehID, targetID, markerType):
         if self._markerInFocus and self._markerInFocus.isFocused(targetID, markerType):
             listOfCommands = self._chatCommands[markerType].get(targetID, {})
-            for _, commandData in listOfCommands.iteritems():
+            for commandData in viewvalues(listOfCommands):
                 if playerVehID == commandData.commandCreatorVehID or playerVehID in commandData.owners:
                     commands.sendClearChatCommandsFromTarget(targetID, markerType.name)
 
         elif markerType == MarkerType.VEHICLE_MARKER_TYPE:
-            for cmdTargetID, listOfCommands in self._chatCommands[markerType].iteritems():
+            for cmdTargetID, listOfCommands in viewitems(self._chatCommands[markerType]):
                 if not self._isAliveVehicle(cmdTargetID):
                     commands.sendClearChatCommandsFromTarget(cmdTargetID, markerType.name)
 
@@ -433,9 +435,9 @@ class AdvancedChatComponent(ClientArenaComponent):
                 self._removeReplyContributionFromPlayer(avatar_getter.getPlayerVehicleID(), MarkerType.INVALID_MARKER_TYPE, -1)
             fbCtrl.setInFocusForPlayer(self._markerInFocus.targetID, self._markerInFocus.markerType, -1, MarkerType.INVALID_MARKER_TYPE, False)
             self._markerInFocus = None
-        for markerType in self._chatCommands.keys():
-            for targetIC in self._chatCommands[markerType].keys():
-                for commandID in self._chatCommands[markerType][targetIC]:
+        for markerType in list(self._chatCommands):
+            for targetIC in list(self._chatCommands[markerType]):
+                for commandID in list(self._chatCommands[markerType][targetIC]):
                     self._tryRemovingCommandFromMarker(commandID, targetIC, forceRemove=True)
 
         return
@@ -483,7 +485,7 @@ class AdvancedChatComponent(ClientArenaComponent):
     def _addCommandToList(self, commandID, commandName, commandCreatorID, commandTargetID, command, activeTime=_DEFAULT_ACTIVE_COMMAND_TIME):
         markerType = _COMMAND_NAME_TRANSFORM_MARKER_TYPE[commandName]
         if markerType not in self._chatCommands:
-            self._chatCommands[markerType] = dict()
+            self._chatCommands[markerType] = {}
         owners = []
         uniqueCBID = None
         if not command.isServerCommand():
@@ -733,7 +735,7 @@ class AdvancedChatComponent(ClientArenaComponent):
         targetID = cmd.getFirstTargetID()
         markerTypeName = cmd.getCommandData()['strArg1']
         markerType = MarkerType.getEnumValueByName(markerTypeName)
-        removeList = list()
+        removeList = []
         if markerType is not None and markerType in self._chatCommands:
             if targetID in self._chatCommands[markerType]:
                 for commandID in self._chatCommands[markerType][targetID]:
@@ -763,7 +765,7 @@ class AdvancedChatComponent(ClientArenaComponent):
         checkForRemovalOfCommandFromMarker = False
         for markerType in self._chatCommands:
             for targetID in self._chatCommands[markerType]:
-                for commandID, commandData in self._chatCommands[markerType][targetID].iteritems():
+                for commandID, commandData in viewitems(self._chatCommands[markerType][targetID]):
                     isSameCommand = targetID == newTargetID and newTargetType == markerType
                     if not isSameCommand and replierVehID in commandData.owners:
                         oldOwnerCount = len(commandData.owners)
@@ -841,10 +843,10 @@ class AdvancedChatComponent(ClientArenaComponent):
             self._temporaryStickyCommands.pop(commandID)
 
     def _tryRemovalOfPreviousLocationCommands(self, ucmdCreatorID):
-        removeCommandsList = list()
+        removeCommandsList = []
         for markerType in self._chatCommands:
             for targetID in self._chatCommands[markerType]:
-                for commandID, commandData in self._chatCommands[markerType][targetID].iteritems():
+                for commandID, commandData in viewitems(self._chatCommands[markerType][targetID]):
                     if commandData.command.isLocationRelatedCommand() and ucmdCreatorID == commandData.commandCreatorVehID and not commandData.owners and commandID != BATTLE_CHAT_COMMANDS_BY_NAMES[BATTLE_CHAT_COMMAND_NAMES.GOING_THERE].id:
                         removeCommandsList.append((commandID, targetID))
 

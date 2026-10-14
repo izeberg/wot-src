@@ -1,4 +1,7 @@
-import logging, weakref, BigWorld, Event
+from __future__ import absolute_import
+import logging, weakref
+from future.utils import listvalues
+import BigWorld, Event
 from account_helpers.AccountSettings import EPICBATTLE_CAROUSEL_FILTER_1, EPICBATTLE_CAROUSEL_FILTER_2, EPICBATTLE_CAROUSEL_FILTER_CLIENT_2
 from frontline.gui.Scaleform.daapi.view.battle.frontline_battle_carousel_filters import FLRentedCriteriaGroup, FL_RENT
 from frontline.gui.Scaleform.daapi.view.meta.BattleTankCarouselMeta import BattleTankCarouselMeta
@@ -309,7 +312,7 @@ class VehicleData(object):
             return self.__vehicles[invID]
 
     def __updateRespawnVehicles(self, vehs):
-        self.__vehicles = vehs.values()
+        self.__vehicles = listvalues(vehs)
         carousel = self.__carouselRef()
         if carousel:
             carousel.latePopulate()

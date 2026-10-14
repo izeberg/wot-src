@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import time
 from functools import partial
 from helpers import threads

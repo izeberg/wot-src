@@ -16,7 +16,7 @@ from items.components.shell_components import ShellType, HollowChargeType, HighE
 from post_progression_common import TankSetupGroupsId
 if typing.TYPE_CHECKING:
     from typing import Tuple
-    from gui.impl.gen_utils import DynAccessor
+    from frameworks.wulf import PyResAccessor
 
 def rnd_choice(*args):
     args = list(args)
@@ -183,12 +183,12 @@ def getArenaFullName(arenaTypeID):
 
 
 def getArenaImage(geometryName, subdir=''):
-    dynAccessor = R.images.gui.maps.icons.map
+    mapR = R.images.gui.maps.icons.map
     if subdir:
-        dynAccessor = dynAccessor.dyn(subdir)
-    imgDynAccessor = dynAccessor.num(geometryName)
-    if imgDynAccessor.isValid():
-        return backport.image(imgDynAccessor())
+        mapR = mapR.dyn(subdir)
+    imgR = mapR.num(geometryName)
+    if imgR.exists():
+        return backport.image(imgR())
     return ''
 
 

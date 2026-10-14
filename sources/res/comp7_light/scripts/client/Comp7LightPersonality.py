@@ -12,6 +12,7 @@ from comp7_light_constants import ARENA_GUI_TYPE, GameSeasonType
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
 from gui.override_scaleform_views_manager import g_overrideScaleFormViewsConfig
 from gui.prb_control.prb_utils import initGuiTypes
+from gui.shared.system_factory import registerTeamVoipSupport
 _LOBBY_EXT_PACKAGES = [
  'comp7_light.gui.impl.lobby.hangar',
  'comp7_light.gui.impl.lobby.battle_results']
@@ -23,7 +24,9 @@ class ClientComp7LightBattleMode(Comp7LightBattleMode):
     _CLIENT_PRB_ACTION_NAME_SQUAD = gui_constants.PREBATTLE_ACTION_NAME.COMP7_LIGHT_SQUAD
     _CLIENT_REPLAY_MODE_TAG = 'OnslaughtLight'
     _CLIENT_GAME_SEASON_TYPE = GameSeasonType.COMP7_LIGHT
-    _CLIENT_BATTLE_PAGE = VIEW_ALIAS.COMP7_LIGHT_BATTLE_PAGE
+    _CLIENT_BATTLE_PAGE = (
+     VIEW_ALIAS.COMP7_LIGHT_BATTLE_PAGE,
+     VIEW_ALIAS.RANDOM_BATTLE_HUD)
     _CLIENT_BANNER_ENTRY_POINT_ALIAS = COMP7_LIGHT_ENTRY_POINT_ALIAS
 
     @property
@@ -244,6 +247,7 @@ def preInit():
     registerComp7LightLobby()
     registerComp7LightOthersPrbParams()
     registerComp7LightBattle()
+    registerTeamVoipSupport(ARENA_GUI_TYPE.COMP7_LIGHT, True)
 
 
 def init():

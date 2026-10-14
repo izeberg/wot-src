@@ -25,6 +25,12 @@ msgstr ""
 "Fires rapid bursts of shells to deliver high damage in a short time, at the "
 "cost of penetration and accuracy. Most effective in close-quarters combat."
 
+msgid "abilities/common/description/combatThrottle"
+msgstr ""
+"Activate the throttle for a temporary boost to engine power, speed, and "
+"maneuverability while maintaining reliable gun handling. This allows for "
+"agile, dynamic play without compromising combat effectiveness."
+
 msgid "abilities/common/description/damageMutable"
 msgstr ""
 "Fires star shells, causing maximum damage within 50 m. The shells' damage "
@@ -116,6 +122,9 @@ msgstr "Improved Autoreloader"
 msgid "abilities/common/name/autoShootGun"
 msgstr "Autocannon"
 
+msgid "abilities/common/name/combatThrottle"
+msgstr "Combat Throttle"
+
 msgid "abilities/common/name/damageMutable"
 msgstr "Deep-Rifled Gun"
 
@@ -157,6 +166,19 @@ msgstr "Turbo Mode"
 
 msgid "abilities/common/name/twinGun"
 msgstr "Salvo Fire Mode"
+
+msgid "abilities/common/shortDescription/combatThrottle"
+msgstr "Boosts maneuverability without harming gun handling."
+
+msgid "abilities/common/shortDescription/overheatGun"
+msgstr ""
+"The system allows for continuous fire without reload and controls how the "
+"gun generates heat when firing."
+
+msgid "abilities/common/shortDescription/shellParamsSwitcher"
+msgstr ""
+"The gun has special devices that allow some shell parameters to be modified "
+"before firing."
 
 msgid "abilities/special/description/accuracyStacks"
 msgstr ""
@@ -548,6 +570,25 @@ msgstr ""
 "A special mechanic that boosts engine power, acceleration, and top speed for"
 " a short time."
 
+msgid "characteristics/abilities/common/description/combatThrottle"
+msgstr ""
+"Activate the throttle for a temporary boost to engine power, speed, and "
+"maneuverability while maintaining reliable gun handling. This allows for "
+"agile, dynamic play without compromising combat effectiveness."
+
+msgid "characteristics/abilities/common/description/overheatGun"
+msgstr ""
+"The gun can fire continuously without the need for reload. Each shot "
+"generates heat: the higher its temperature, the more some of its parameters "
+"change. Continuous firing will cause the gun to overheat, preventing further"
+" firing until it cools down."
+
+msgid "characteristics/abilities/common/description/shellParamsSwitcher"
+msgstr ""
+"The vehicle's gun has special devices that allow some shell parameters to be"
+" modified before firing. The loadout shows which parameters will be affected"
+" by switching between firing modes."
+
 msgid "characteristics/abilities/special/description/accuracyStacks"
 msgstr ""
 "Remaining stationary or moving below a certain speed allows your vehicle to "
@@ -743,7 +784,7 @@ msgstr ""
 
 msgid "characteristics/abilities/special/notes"
 msgstr ""
-"All values shown are the maximum possible for the vehicle. Equipment, "
+"All values shown are the best possible for the vehicle. Equipment, "
 "directives, and consumables can change these values, but these changes are "
 "not reflected here."
 
@@ -887,7 +928,7 @@ msgid "overview/benefits/wotPlus/description/credits"
 msgstr "credits for each battle"
 
 msgid "overview/benefits/wotPlus/description/crewsTrain"
-msgstr "crew transfer from any vehicle class without penalty"
+msgstr "crew transfer from any vehicle type without penalty"
 
 msgid "overview/benefits/wotPlus/description/experience"
 msgstr "Combat Experience and Crew Experience"

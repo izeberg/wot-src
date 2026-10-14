@@ -1,8 +1,10 @@
-import BigWorld, Math, AnimationSequence, SoundGroups
+from __future__ import absolute_import
+import BigWorld, Math, AnimationSequence
+from Math import Matrix
+import SoundGroups
 from PlayerEvents import g_playerEvents
 from gui.battle_control import avatar_getter
 from helpers import dependency
-from Math import Matrix
 from battleground.component_loading import loadComponentSystem, Loader, CompositeLoaderMixin
 from battleground.components import TerrainAreaObject, EffectPlayerObject, SequenceObject, SmartSequenceObject
 from ids_generators import SequenceIDGenerator
@@ -61,7 +63,7 @@ class MinesObject(TerrainAreaObject, CompositeLoaderMixin):
         self.__isActivated = False
         self.activationTimeDelay = 0
         self.mineNumber = 0
-        self.id = _idGen.next()
+        self.id = _idGen.nextSequenceID
         self.__pendingEffects = []
         if not self.__isAvatarReady:
             g_playerEvents.onAvatarReady += self.__onAvatarReady

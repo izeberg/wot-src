@@ -330,6 +330,26 @@ package net.wg.data.constants.generated
       public static const WHITE_ICON_SPG16X16:String = "whiteIconSPG16x16";
       
       public static const WHITE_ICON_SPG_ELITE16X16:String = "whiteIconSPG_elite16x16";
+      
+      public static const BUFF_ACCURACY:String = "buffAccuracy";
+      
+      public static const BUFF_DRAIN_ON_SHOT:String = "buffDrainOnShot";
+      
+      public static const BUFF_ENLARGE_HEALTH:String = "buffEnlargeHealth";
+      
+      public static const BUFF_IGNITE_ON_SHOT:String = "buffIgniteOnShot";
+      
+      public static const BUFF_INCREASE_DAMAGE:String = "buffIncreaseDamage";
+      
+      public static const BUFF_INCREASE_RATE_OF_FIRE:String = "buffIncreaseRateOfFire";
+      
+      public static const BUFF_INFINITE_HEAL:String = "buffInfiniteHeal";
+      
+      public static const BUFF_INSPIRATION:String = "buffInspiration";
+      
+      public static const BUFF_MOBILITY:String = "buffMobility";
+      
+      public static const BUFF_MODULES_INVULNERABILITY:String = "buffModulesInvulnerability";
        
       
       public function COMMONBATTLELOBBY()

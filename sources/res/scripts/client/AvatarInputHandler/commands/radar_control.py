@@ -1,7 +1,8 @@
+from __future__ import absolute_import
+import CommandMapping
 from AvatarInputHandler.commands.input_handler_command import InputHandlerCommand
 from helpers import dependency
 from skeletons.gui.battle_session import IBattleSessionProvider
-import CommandMapping
 
 class RadarControl(InputHandlerCommand):
     __guiSessionProvider = dependency.descriptor(IBattleSessionProvider)

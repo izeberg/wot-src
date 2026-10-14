@@ -293,23 +293,23 @@ package
       
       public static const CHAT_SHORTCUTS_ATTENTION_TO_CELL:String = "#ingame_gui:chat_shortcuts/attention_to_cell";
       
-      public static const CHAT_SHORTCUTS_GLOBAL_MSG_ATK_SAVE_TANKS:String = "#ingame_gui:chat_shortcuts/global_msg/atk/save_tanks";
+      public static const CHAT_SHORTCUTS_GLOBAL_MSG_ATK_SAVE_TANKS:String = "#ingame_gui:chat_shortcuts/global_msg_atk_save_tanks";
       
-      public static const CHAT_SHORTCUTS_GLOBAL_MSG_DEF_SAVE_TANKS:String = "#ingame_gui:chat_shortcuts/global_msg/def/save_tanks";
+      public static const CHAT_SHORTCUTS_GLOBAL_MSG_DEF_SAVE_TANKS:String = "#ingame_gui:chat_shortcuts/global_msg_def_save_tanks";
       
-      public static const CHAT_SHORTCUTS_GLOBAL_MSG_ATK_TIME:String = "#ingame_gui:chat_shortcuts/global_msg/atk/time";
+      public static const CHAT_SHORTCUTS_GLOBAL_MSG_ATK_TIME:String = "#ingame_gui:chat_shortcuts/global_msg_atk_time";
       
-      public static const CHAT_SHORTCUTS_GLOBAL_MSG_DEF_TIME:String = "#ingame_gui:chat_shortcuts/global_msg/def/time";
+      public static const CHAT_SHORTCUTS_GLOBAL_MSG_DEF_TIME:String = "#ingame_gui:chat_shortcuts/global_msg_def_time";
       
-      public static const CHAT_SHORTCUTS_GLOBAL_MSG_LANE_WEST:String = "#ingame_gui:chat_shortcuts/global_msg/lane/west";
+      public static const CHAT_SHORTCUTS_GLOBAL_MSG_LANE_WEST:String = "#ingame_gui:chat_shortcuts/global_msg_lane_west";
       
-      public static const CHAT_SHORTCUTS_GLOBAL_MSG_LANE_CENTER:String = "#ingame_gui:chat_shortcuts/global_msg/lane/center";
+      public static const CHAT_SHORTCUTS_GLOBAL_MSG_LANE_CENTER:String = "#ingame_gui:chat_shortcuts/global_msg_lane_center";
       
-      public static const CHAT_SHORTCUTS_GLOBAL_MSG_LANE_EAST:String = "#ingame_gui:chat_shortcuts/global_msg/lane/east";
+      public static const CHAT_SHORTCUTS_GLOBAL_MSG_LANE_EAST:String = "#ingame_gui:chat_shortcuts/global_msg_lane_east";
       
-      public static const CHAT_SHORTCUTS_GLOBAL_MSG_ATK_FOCUS_HQ:String = "#ingame_gui:chat_shortcuts/global_msg/atk/focus_hq";
+      public static const CHAT_SHORTCUTS_GLOBAL_MSG_ATK_FOCUS_HQ:String = "#ingame_gui:chat_shortcuts/global_msg_atk_focus_hq";
       
-      public static const CHAT_SHORTCUTS_GLOBAL_MSG_DEF_FOCUS_HQ:String = "#ingame_gui:chat_shortcuts/global_msg/def/focus_hq";
+      public static const CHAT_SHORTCUTS_GLOBAL_MSG_DEF_FOCUS_HQ:String = "#ingame_gui:chat_shortcuts/global_msg_def_focus_hq";
       
       public static const CHAT_EXAMPLE_ATTENTION_TO_BASE_DEF:String = "#ingame_gui:chat_example/attention_to_base_def";
       
@@ -317,25 +317,25 @@ package
       
       public static const CHAT_EXAMPLE_GOING_THERE:String = "#ingame_gui:chat_example/going_there";
       
-      public static const CHAT_EXAMPLE_GLOBAL_MSG_DEF_SAVE_TANKS:String = "#ingame_gui:chat_example/global_msg/def/save_tanks";
+      public static const CHAT_EXAMPLE_GLOBAL_MSG_DEF_SAVE_TANKS:String = "#ingame_gui:chat_example/global_msg_def_save_tanks";
       
       public static const MARKER_METERS:String = "#ingame_gui:marker/meters";
       
-      public static const CHAT_EXAMPLE_GLOBAL_MSG_ATK_SAVE_TANKS:String = "#ingame_gui:chat_example/global_msg/atk/save_tanks";
+      public static const CHAT_EXAMPLE_GLOBAL_MSG_ATK_SAVE_TANKS:String = "#ingame_gui:chat_example/global_msg_atk_save_tanks";
       
-      public static const CHAT_EXAMPLE_GLOBAL_MSG_ATK_TIME:String = "#ingame_gui:chat_example/global_msg/atk/time";
+      public static const CHAT_EXAMPLE_GLOBAL_MSG_ATK_TIME:String = "#ingame_gui:chat_example/global_msg_atk_time";
       
-      public static const CHAT_EXAMPLE_GLOBAL_MSG_DEF_TIME:String = "#ingame_gui:chat_example/global_msg/def/time";
+      public static const CHAT_EXAMPLE_GLOBAL_MSG_DEF_TIME:String = "#ingame_gui:chat_example/global_msg_def_time";
       
-      public static const CHAT_EXAMPLE_GLOBAL_MSG_LANE_WEST:String = "#ingame_gui:chat_example/global_msg/lane/west";
+      public static const CHAT_EXAMPLE_GLOBAL_MSG_LANE_WEST:String = "#ingame_gui:chat_example/global_msg_lane_west";
       
-      public static const CHAT_EXAMPLE_GLOBAL_MSG_LANE_CENTER:String = "#ingame_gui:chat_example/global_msg/lane/center";
+      public static const CHAT_EXAMPLE_GLOBAL_MSG_LANE_CENTER:String = "#ingame_gui:chat_example/global_msg_lane_center";
       
-      public static const CHAT_EXAMPLE_GLOBAL_MSG_LANE_EAST:String = "#ingame_gui:chat_example/global_msg/lane/east";
+      public static const CHAT_EXAMPLE_GLOBAL_MSG_LANE_EAST:String = "#ingame_gui:chat_example/global_msg_lane_east";
       
-      public static const CHAT_EXAMPLE_GLOBAL_MSG_ATK_FOCUS_HQ:String = "#ingame_gui:chat_example/global_msg/atk/focus_hq";
+      public static const CHAT_EXAMPLE_GLOBAL_MSG_ATK_FOCUS_HQ:String = "#ingame_gui:chat_example/global_msg_atk_focus_hq";
       
-      public static const CHAT_EXAMPLE_GLOBAL_MSG_DEF_FOCUS_HQ:String = "#ingame_gui:chat_example/global_msg/def/focus_hq";
+      public static const CHAT_EXAMPLE_GLOBAL_MSG_DEF_FOCUS_HQ:String = "#ingame_gui:chat_example/global_msg_def_focus_hq";
       
       public static const CHAT_EXAMPLE_ATTACK_ENEMY:String = "#ingame_gui:chat_example/attack_enemy";
       

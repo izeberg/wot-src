@@ -1,2 +1,3 @@
-from gui.impl.gen.resources import R
+from __future__ import absolute_import
+from .resources import R
 __all__ = ('R', )

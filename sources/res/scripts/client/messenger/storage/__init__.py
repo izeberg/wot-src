@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from .ChannelsStorage import ChannelsStorage
 from .descriptor import MessengerStorageDescriptor, StorageDecorator
 from .local_cache import StorageLocalCache

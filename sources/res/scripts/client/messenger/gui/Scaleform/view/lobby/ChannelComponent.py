@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import weakref, constants
 from debug_utils import LOG_DEBUG
 from gui.impl.gen import R
@@ -44,9 +45,9 @@ class ChannelComponent(ChannelComponentMeta):
             ctrl.deactivate()
 
     def getMessageMaxLength(self):
-        return round(constants.CHAT_MESSAGE_MAX_LENGTH / 2, 0)
+        return constants.CHAT_MESSAGE_MAX_LENGTH // 2
 
-    def onLinkClick(self, data):
+    def onLinkClick(self, linkCode):
         raise NotImplementedError('Shared battle results is not longer supported')
 
     def isJoined(self):

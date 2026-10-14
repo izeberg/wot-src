@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing, BigWorld
 from cgf_events import gun_events
 from constants import IS_CLIENT, DEFAULT_GUN_INDEX

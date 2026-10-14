@@ -29,7 +29,7 @@ package net.wg.app
    import net.wg.utils.ITweenManager;
    import net.wg.utils.IUtils;
    
-   public interface IApplication extends IApplicationMeta
+   public interface IApplication extends IApplicationMeta, ICoreApplication
    {
        
       

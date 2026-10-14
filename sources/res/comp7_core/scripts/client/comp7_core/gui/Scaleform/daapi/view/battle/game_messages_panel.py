@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.battle_control import avatar_getter
 from helpers import dependency
 from gui.Scaleform.daapi.view.battle.shared.game_messages_panel import GameMessagesPanel
@@ -19,7 +20,7 @@ class Comp7GameMessagesPanel(GameMessagesPanel):
             elif reason == FINISH_REASON.DAMAGE_DEALT:
                 arena = avatar_getter.getArena()
                 teamsDamageDealt = arena.arenaInfo.comp7.teamsDamageDealt if arena and arena.arenaInfo else [0, 0]
-                params = sorted([ damage for damage in teamsDamageDealt ], reverse=isWinner)
+                params = sorted(list(teamsDamageDealt), reverse=isWinner)
             messageType = self._getMessageType(winningTeam)
             reasonKey = ('c_{}{}').format(reason, messageType)
             subTitle = backport.text(R.strings.battle_results.battle_finish.reason.dyn(reasonKey)())

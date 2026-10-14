@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "awardViews/footer/backButton/"
+msgid "awardViews/footer/backButton"
 msgstr "Back to Vouchers"
 
 msgid "boxTooltip/description/text/commonTicket"
@@ -60,10 +60,10 @@ msgstr ""
 "Scratch a Voucher for a reward from the list below. You have the chance to "
 "receive credits, Free&nbsp;XP, and components for Experimental Equipment!"
 
-msgid "noBoxesView/description/"
+msgid "noBoxesView/description"
 msgstr ""
 "You do not have any Vouchers. You can earn them\n"
-"in the Elite Circuit."
+" in the Elite Circuit."
 
 msgid "preview/backLabel"
 msgstr "TO VOUCHERS"
@@ -74,5 +74,5 @@ msgstr "Available: %(boxesCount)"
 msgid "quantityTitle/noBoxes"
 msgstr "No Vouchers available"
 
-msgid "singleRewardView/footer/openNextButton/"
+msgid "singleRewardView/footer/openNextButton"
 msgstr "Scratch Next"

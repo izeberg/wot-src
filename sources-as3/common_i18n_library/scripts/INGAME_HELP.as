@@ -361,6 +361,10 @@ package
       
       public static const DETAILSHELP_MECHANICS_BUSTLEFEED_PAGE1_DESCRIPTION:String = "#ingame_help:detailsHelp/mechanics/bustleFeed/page1/description";
       
+      public static const DETAILSHELP_MECHANICS_COMBATTHROTTLE_PAGE1_TITLE:String = "#ingame_help:detailsHelp/mechanics/combatThrottle/page1/title";
+      
+      public static const DETAILSHELP_MECHANICS_COMBATTHROTTLE_PAGE1_DESCRIPTION:String = "#ingame_help:detailsHelp/mechanics/combatThrottle/page1/description";
+      
       public static const DETAILSHELP_NOKEYSWARNING:String = "#ingame_help:detailsHelp/noKeysWarning";
       
       public static const DETAILSHELP_ROLE_TITLE:String = "#ingame_help:detailsHelp/role/title";

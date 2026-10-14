@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<effects>
+		<nullTrackEffect>
+			<selector>
+				<type>union</type>
+				<selector>
+					<type>union</type>
+					<constantsGroup>small</constantsGroup>
+					<selector>
+						<type>effect</type>
+						<name>particles/null.eff</name>
+						<effectHP>chassis</effectHP>
+					</selector>
+				</selector>
+			</selector>
+		</nullTrackEffect>
+	</effects>
+</root>

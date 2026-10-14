@@ -9,7 +9,7 @@ from gui.Scaleform.genConsts.MECHANICS_WIDGET_CONST import MECHANICS_WIDGET_CONS
 from gui.veh_mechanics.battle.updaters.mechanics.mechanic_life_cycle_updater import VehicleMechanicLifeCycleUpdater
 from gui.veh_mechanics.battle.updaters.mechanics.mechanic_passenger_updater import VehicleMechanicPassengerUpdater
 from gui.veh_mechanics.battle.updaters.mechanics.temp_overheat_gun_updater import ITemperatureOverheatGunStatesListenerLogic, TemperatureOverheatGunStatesUpdater
-from vehicles.mechanics.mechanic_constants import VehicleMechanic
+from items.vehicle_mechanics_types import VehicleMechanicKeys
 from vehicles.mechanics.gun_mechanics.temperature.temperature_gun import DEFAULT_TEMPERATURE_MECHANIC_STATE
 from vehicles.mechanics.gun_mechanics.temperature.overheat_gun import DEFAULT_OVERHEAT_MECHANIC_STATE
 if typing.TYPE_CHECKING:
@@ -50,8 +50,8 @@ class TemperatureOverheatGunWidget(TemperatureGunOverheatWidgetMeta, ContainersL
 
     def _getViewUpdaters(self):
         return [
-         VehicleMechanicLifeCycleUpdater(VehicleMechanic.OVERHEAT_GUN, self),
-         VehicleMechanicPassengerUpdater(VehicleMechanic.OVERHEAT_GUN, self),
+         VehicleMechanicLifeCycleUpdater(VehicleMechanicKeys.OVERHEAT_GUN, self),
+         VehicleMechanicPassengerUpdater(VehicleMechanicKeys.OVERHEAT_GUN, self),
          TemperatureOverheatGunStatesUpdater(self)]
 
     def __invalidateAll(self, tempState, overheatState, isInstantly=False):

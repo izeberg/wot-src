@@ -837,8 +837,6 @@ package
       
       public static const GAME_FIELDSET_HEADERBATTLECOMMUNICATION:String = "#settings:game/fieldset/headerBattleCommunication";
       
-      public static const GAMEPLAY_DEVMAPS:String = "#settings:gameplay/devMaps";
-      
       public static const GAMEPLAY_NATIONS:String = "#settings:gameplay/nations";
       
       public static const GAME_FIELDSET_HEADERVEHICLEMARKER:String = "#settings:game/fieldset/headerVehicleMarker";

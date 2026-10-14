@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import json
 from typing import TYPE_CHECKING
 from gui.impl.gen.view_models.views.lobby.easy_tank_equip.common.proposal_model import ProposalType

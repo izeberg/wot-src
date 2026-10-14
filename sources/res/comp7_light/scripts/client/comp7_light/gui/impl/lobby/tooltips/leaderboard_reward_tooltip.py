@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from comp7_light.gui.impl.gen.view_models.views.lobby.tooltips.leaderboard_reward_tooltip_model import LeaderboardRewardTooltipModel, State
 from frameworks.wulf import ViewSettings
 from gui.impl.gen import R

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from messenger.m_constants import CLIENT_ERROR_ID, CLIENT_ACTION_ID
 from messenger.proto.events import g_messengerEvents
 from messenger.proto.migration.proxy import MigrationProxy
@@ -57,7 +58,7 @@ class ContactsManagerProxy(MigrationProxy):
     def cancelFriendship(self, dbID):
         raise NotImplementedError
 
-    def createPrivateChannel(self, uid, name):
+    def createPrivateChannel(self, dbID, name):
         raise NotImplementedError
 
     def setNote(self, dbID, note):
@@ -132,8 +133,8 @@ class BWContactsManagerProxy(ContactsManagerProxy):
         _showClientActionError(CLIENT_ACTION_ID.CANCEL_FRIENDSHIP)
         return False
 
-    def createPrivateChannel(self, uid, name):
-        self._proto.users.createPrivateChannel(uid, name)
+    def createPrivateChannel(self, dbID, name):
+        self._proto.users.createPrivateChannel(dbID, name)
         return True
 
     def setNote(self, dbID, note):

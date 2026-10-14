@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from chat_shared import CHAT_RESPONSES
 from debug_utils import LOG_ERROR, LOG_DEBUG
 from messenger import g_settings

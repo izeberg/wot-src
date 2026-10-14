@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import CGF, Math, BigWorld
 from items import vehicles
 from vehicle_systems.tankStructure import TankPartNames

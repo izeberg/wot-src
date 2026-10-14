@@ -7,6 +7,7 @@ package net.wg.gui.lobby.fortifications.cmp.selector
    import net.wg.gui.lobby.components.VehicleSelectorMultiFilter;
    import net.wg.gui.lobby.components.events.VehicleSelectorFilterEvent;
    import net.wg.gui.lobby.components.interfaces.IVehicleSelectorFilterVO;
+   import net.wg.gui.lobby.fortifications.cmp.events.FortVehicleSelectorFilterEvent;
    import net.wg.gui.lobby.fortifications.data.popover.FortVehicleSelectorFilterVO;
    import scaleform.clik.constants.DirectionMode;
    import scaleform.clik.constants.InvalidationType;
@@ -28,6 +29,8 @@ package net.wg.gui.lobby.fortifications.cmp.selector
       
       public var mainBtn:ToggleRenderer = null;
       
+      public var frozenBtn:ToggleRenderer = null;
+      
       public function FortVehicleSelectorFilter()
       {
          super();
@@ -42,6 +45,7 @@ package net.wg.gui.lobby.fortifications.cmp.selector
       {
          super.setData(param1);
          this.mainBtn.setData(FortVehicleSelectorFilterVO(param1).mainBtn);
+         this.frozenBtn.setData(FortVehicleSelectorFilterVO(param1).frozenBtn);
       }
       
       override protected function draw() : void
@@ -70,6 +74,9 @@ package net.wg.gui.lobby.fortifications.cmp.selector
          this.mainBtn.removeEventListener(RendererEvent.ITEM_CLICK,this.onMainItemClickHandler);
          this.mainBtn.dispose();
          this.mainBtn = null;
+         this.frozenBtn.removeEventListener(RendererEvent.ITEM_CLICK,this.onFrozenItemClickHandler);
+         this.frozenBtn.dispose();
+         this.frozenBtn = null;
          super.onDispose();
       }
       
@@ -86,6 +93,7 @@ package net.wg.gui.lobby.fortifications.cmp.selector
          toggles.horizontalGap = FILTERS_HOR_GAP;
          toggles.directionMode = DirectionMode.HORIZONTAL;
          this.mainBtn.addEventListener(RendererEvent.ITEM_CLICK,this.onMainItemClickHandler);
+         this.frozenBtn.addEventListener(RendererEvent.ITEM_CLICK,this.onFrozenItemClickHandler);
       }
       
       private function onFiltersIndexChangeHandler(param1:ListEvent) : void
@@ -123,6 +131,13 @@ package net.wg.gui.lobby.fortifications.cmp.selector
       {
          this.mainBtn.selected = !this.mainBtn.selected;
          this.dispatchFilterEvent();
+      }
+      
+      private function onFrozenItemClickHandler(param1:RendererEvent) : void
+      {
+         var _loc2_:FortVehicleSelectorFilterEvent = new FortVehicleSelectorFilterEvent(FortVehicleSelectorFilterEvent.FORT_FILTER_CHANGE,true);
+         _loc2_.isHideFrozen = this.frozenBtn.selected = !this.frozenBtn.selected;
+         dispatchEvent(_loc2_);
       }
       
       private function onFiltersRollOverHandler(param1:MouseEvent) : void

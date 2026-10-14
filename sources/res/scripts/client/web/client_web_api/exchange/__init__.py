@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from exchange.personal_discounts_constants import EXCHANGE_RATE_TYPES
 from helpers import dependency
 from skeletons.gui.game_control import IExchangeRatesWithDiscountsProvider

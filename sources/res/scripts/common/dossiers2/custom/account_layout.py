@@ -400,7 +400,8 @@ _SINGLE_ACHIEVEMENTS_VALUES = [
  'BPReserveAchievement_7', 'BPReserveAchievement_9', 'wot16thAnniversary',
  'wt2026progression', 'comp7_6_1', 'comp7_6_yearly_iron',
  'comp7_6_yearly_bronze', 'comp7_6_yearly_silver', 'comp7_6_yearly_gold',
- 'comp7_6_yearly_champion', 'comp7_6_yearly_legend']
+ 'comp7_6_yearly_champion', 'comp7_6_yearly_legend',
+ 'hw2026Medal_1', 'hw2026Medal_2', 'hw2026Medal_3', 'FortRushMedal_2026']
 _singleAchievementsPopUps = [
  'titleSniper', 'invincible', 'diehard', 'handOfDeath',
  'armorPiercer', 'battleCitizen', 'WFC2014', 'tacticalBreakthrough', 'aimer',
@@ -483,7 +484,8 @@ _singleAchievementsPopUps = [
  'BPReserveAchievement_7', 'BPReserveAchievement_9', 'wot16thAnniversary',
  'wt2026progression', 'comp7_6_1', 'comp7_6_yearly_iron',
  'comp7_6_yearly_bronze', 'comp7_6_yearly_silver', 'comp7_6_yearly_gold',
- 'comp7_6_yearly_champion', 'comp7_6_yearly_legend']
+ 'comp7_6_yearly_champion', 'comp7_6_yearly_legend',
+ 'hw2026Medal_1', 'hw2026Medal_2', 'hw2026Medal_3', 'FortRushMedal_2026']
 _singleAchievementsBlockBuilder = BinarySetDossierBlockBuilder('singleAchievements', _SINGLE_ACHIEVEMENTS_VALUES, SINGLE_ACHIEVEMENTS_DEPENDENCIES, _singleAchievementsPopUps)
 FORT_ACHIEVEMENTS_BLOCK_LAYOUT = [
  'conqueror', 'fireAndSword', 'crusher', 'counterblow', 'kampfer', 'soldierOfFortune']

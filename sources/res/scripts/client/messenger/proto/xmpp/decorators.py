@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from debug_utils import LOG_WARNING
 from messenger.ext import validateAccountName
 from messenger.m_constants import CLIENT_ERROR_ID

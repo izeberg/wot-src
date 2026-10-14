@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from messenger.proto.bw import bw_chat_string_utils
 from messenger.proto.events import g_messengerEvents
 from messenger.proto.migration.proxy import MigrationProxy

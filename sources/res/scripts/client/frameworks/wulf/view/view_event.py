@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 
 class Position2D(object):

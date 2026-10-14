@@ -1599,11 +1599,6 @@ msgstr "WoT Plus manageable XP multiplier is available"
 msgid "serviceChannelMessages/additionalXP/unavailable/title"
 msgstr "WoT Plus manageable XP multiplier is unavailable"
 
-msgid "serviceChannelMessages/autoBoosterErrorNoWallet"
-msgstr ""
-"Failed to resupply consumables on the %s. All your gold will be available "
-"after WG Wallet operability is restored automatically."
-
 msgid "serviceChannelMessages/autoEquipBoosterDisabledOption"
 msgstr ""
 "Failed to resupply directives for the %s. Operation is temporarily "
@@ -1628,11 +1623,6 @@ msgstr ""
 msgid "serviceChannelMessages/autoEquipError"
 msgstr "Failed to resupply consumables on %s. Not enough credits."
 
-msgid "serviceChannelMessages/autoEquipErrorNoWallet"
-msgstr ""
-"Failed to resupply consumables on %s. All your gold will be available after "
-"WG Wallet operability is restored automatically."
-
 msgid "serviceChannelMessages/autoEquipSkipped"
 msgstr ""
 "Failed to resupply consumables on %s automatically. Load consumables "
@@ -1649,11 +1639,6 @@ msgstr ""
 msgid "serviceChannelMessages/autoLoadError"
 msgstr "Failed to resupply ammunition on %s. Not enough credits."
 
-msgid "serviceChannelMessages/autoLoadErrorNoWallet"
-msgstr ""
-"Failed to resupply ammunition on %s. All your gold will be available after "
-"WG Wallet operability is restored automatically."
-
 msgid "serviceChannelMessages/autoLoadSkipped"
 msgstr ""
 "Failed to resupply ammunition on %s automatically. Load ammunition manually."
@@ -1667,11 +1652,6 @@ msgstr ""
 
 msgid "serviceChannelMessages/autoRentStyleError"
 msgstr "Failed to extend the style rental for %s. Insufficient funds."
-
-msgid "serviceChannelMessages/autoRentStyleErrorNoWallet"
-msgstr ""
-"Failed to extend the style rental for %s. All your gold will be available "
-"after WG Wallet operability is restored automatically."
 
 msgid "serviceChannelMessages/autoRentStyleRentIsAlmostOver/button"
 msgstr "Extend Rental Period"
@@ -1709,11 +1689,6 @@ msgstr "Failed to repair %s."
 
 msgid "serviceChannelMessages/autoRepairError"
 msgstr "Failed to repair %s. Not enough credits."
-
-msgid "serviceChannelMessages/autoRepairErrorNoWallet"
-msgstr ""
-"Failed to repair %s. All your gold will be available after WG Wallet "
-"operability is restored automatically."
 
 msgid "serviceChannelMessages/autoRepairSkipped"
 msgstr "Failed to repair %s automatically. Repair your vehicle manually."

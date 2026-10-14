@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld
 from gui.shared import g_eventBus, EVENT_BUS_SCOPE
 from gui.shared.events import MessengerEvent
@@ -295,7 +296,7 @@ class ClanUserRoomController(UserRoomController):
         return
 
     def __setRejoinCallback(self):
-        delay = self.__expBackOff.next()
+        delay = self.__expBackOff.nextDelay()
         self.__reJoinCallbackID = BigWorld.callback(delay, self.__doNextRejoin)
 
     def __me_onErrorReceived(self, error):

@@ -9,7 +9,7 @@
 				<postBattle>
 					<vehicleKills>
 						<whileFullHealth/>
-						<greaterOrEqual>6</greaterOrEqual>
+						<greaterOrEqual>4</greaterOrEqual>
 					</vehicleKills>
 				</postBattle>
 			</conditions>
@@ -44,7 +44,7 @@
 				<postBattle>
 					<vehicleKills>
 						<whileFullHealth/>
-						<greaterOrEqual>6</greaterOrEqual>
+						<greaterOrEqual>4</greaterOrEqual>
 					</vehicleKills>
 				</postBattle>
 			</conditions>

@@ -3352,7 +3352,7 @@
 						0.34
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>15</reloadTime>
+					<reloadTime>14</reloadTime>
 					<invisibilityFactorAtShot>
 						0.153
 						<!--BW_String-->
@@ -3362,7 +3362,7 @@
 						<rate>20</rate>
 					</clip>
 					<autoreload>
-						<reloadTime>15 15</reloadTime>
+						<reloadTime>14 14</reloadTime>
 						<boostFraction>
 							0.25
 							<!--BW_String-->

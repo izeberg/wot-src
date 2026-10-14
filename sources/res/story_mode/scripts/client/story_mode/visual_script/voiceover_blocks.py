@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from visual_script.block import Block
 from visual_script.slot_types import SLOT_TYPE
 from visual_script_client.sound_blocks import SoundMeta

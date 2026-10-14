@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import math, BigWorld, math_utils
 
 class RotatingCoursorCamera(object):

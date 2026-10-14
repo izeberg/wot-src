@@ -1,4 +1,7 @@
-import weakref, BigWorld, Math
+from __future__ import absolute_import
+import weakref
+from future.utils import viewitems, viewvalues
+import BigWorld, Math
 from helpers.PixieBG import PixieBG
 from helpers.EffectsList import EffectsListPlayer
 
@@ -177,8 +180,8 @@ class EffectNode(object):
         self.__nodeDefaultLocalTranslation = Math.Matrix(self.__node.local).translation
         self.__drawOrder = drawOrder
         self.__waterY = waterY
-        self.__effects = dict()
-        for effectName, effectDesc in effects.iteritems():
+        self.__effects = {}
+        for effectName, effectDesc in viewitems(effects):
             if effectDesc[self.EFFECT_LIST]:
                 self.__effects[effectDesc[self.EFFECT_ID]] = NodeEffectList(effectName, model, self)
             else:
@@ -196,7 +199,7 @@ class EffectNode(object):
                 self.__remappedNode = node
             else:
                 self.__remappedNode = None
-            for effect in self.__effects.itervalues():
+            for effect in viewvalues(self.__effects):
                 if effect.enabled:
                     effect.detach()
                     effect.attach()
@@ -231,7 +234,7 @@ class EffectNode(object):
 
 
 class PixieCache(object):
-    pixieCache = dict()
+    pixieCache = {}
     refCount = 0
     pixiesCount = 0
 

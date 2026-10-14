@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from enum import Enum
 from shared_utils import CONST_CONTAINER
 

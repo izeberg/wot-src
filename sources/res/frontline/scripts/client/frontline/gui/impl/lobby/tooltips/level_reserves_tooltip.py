@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from frameworks.wulf import ViewFlags, ViewSettings
 from frontline.gui.impl.gen.view_models.views.lobby.tooltips.level_reserves_tooltip_model import LevelReservesTooltipModel
 from gui.impl.pub import ViewImpl

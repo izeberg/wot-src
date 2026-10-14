@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from future.utils import viewvalues
 from frameworks.wulf import ViewSettings
 from frontline.gui.frontline_helpers import AbilitiesTemplates
 from frontline.gui.impl.gen.view_models.views.lobby.tooltips.battle_ability_tooltip_levels_model import BattleAbilityTooltipLevelsModel
@@ -53,12 +55,12 @@ class BattleAbilityTooltipView(ViewImpl):
     @staticmethod
     def __fillDetailsSkillLevels(levels, characteristics, skillData):
         skillParams = getSkillParams(skillData)
-        for lvl in skillData.levels.iterkeys():
+        for lvl in skillData.levels:
             levelModel = BattleAbilityTooltipLevelsModel()
             levels.addViewModel(levelModel)
             levelModel.setLevel(lvl)
             paramslevel = levelModel.getParams()
-            for paramList in skillParams[lvl].itervalues():
+            for paramList in viewvalues(skillParams[lvl]):
                 for param in paramList:
                     skillParam = BattleAbilityTooltipParamModel()
                     skillParam.setId(param.get('id'))

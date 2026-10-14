@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.impl.lobby.missions.missions_helpers import DefaultMissionsGuiHelper
 
 class FrontlineMissionsGuiHelper(DefaultMissionsGuiHelper):

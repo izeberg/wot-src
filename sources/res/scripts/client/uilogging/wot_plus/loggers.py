@@ -1,5 +1,6 @@
-from enum import Enum
+from __future__ import absolute_import
 import logging
+from enum import Enum
 from typing import TYPE_CHECKING
 from constants import WoTPlusBonusType, PREMIUM_TYPE
 from helpers import dependency

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import functools, logging, BigWorld
 _regions = {}
 _logger = logging.getLogger(__name__)

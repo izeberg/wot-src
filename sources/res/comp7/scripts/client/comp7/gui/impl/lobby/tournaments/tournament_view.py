@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, random, typing
 from comp7.gui.impl.gen.view_models.views.lobby.tournaments.match_model import MatchModel, MatchState, MatchStage
 from comp7.gui.impl.gen.view_models.views.lobby.tournaments.team_model import TeamModel

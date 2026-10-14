@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from comp7_light.gui.impl.lobby.page.comp7_light_platoon_presenter import Comp7LightPlatoonPresenter
 from gui.impl.gen import R
 from gui.impl.lobby.page.chats_presenter import ChatsPresenter

@@ -1,7 +1,9 @@
+from __future__ import absolute_import
+from future.utils import viewitems
 import BigWorld, Event
-from InterfaceScaleManager import InterfaceScaleManager
 from PlayerEvents import g_playerEvents
 from account_helpers.AccountSettings import AccountSettings
+from account_helpers.settings_core.InterfaceScaleManager import InterfaceScaleManager
 from account_helpers.settings_core.ServerSettingsManager import ServerSettingsManager, SETTINGS_SECTIONS
 from account_helpers.settings_core.settings_constants import SPGAim, CONTOUR, ArmorFlashlight
 from adisp import adisp_process
@@ -104,7 +106,9 @@ class SettingsCore(ISettingsCore):
            'contour': CONTOUR_SETTINGS_STORAGE}
         self.isDeviseRecreated = False
         self.isChangesConfirmed = True
-        graphicSettings = tuple((settingName, options.GraphicSetting(settingName)) for settingName in BigWorld.generateGfxSettings() if settingName != GRAPHICS.COLOR_GRADING_TECHNIQUE and settingName != GRAPHICS.INCREASE_EFFECTS_CONTRAST_ENABLED)
+        graphicSettings = tuple((settingName, options.GraphicSetting(settingName)) for settingName in BigWorld.generateGfxSettings() if settingName not in (
+         GRAPHICS.COLOR_GRADING_TECHNIQUE,
+         GRAPHICS.INCREASE_EFFECTS_CONTRAST_ENABLED))
         self.__options = options.SettingsContainer(graphicSettings + (
          (
           GAME.REPLAY_ENABLED,
@@ -250,9 +254,6 @@ class SettingsCore(ISettingsCore):
          (
           GAME.GAMEPLAY_CTF,
           options.GameplaySetting(GAME.GAMEPLAY_MASK, 'ctf', storage=GAMEPLAY_SETTINGS_STORAGE)),
-         (
-          GAME.GAMEPLAY_DEV_MAPS,
-          options.DevMapsSetting(GAME.GAMEPLAY_DEV_MAPS, storage=EXTENDED_GAME_2_SETTINGS_STORAGE)),
          (
           GAME.LENS_EFFECT,
           options.LensEffectSetting(GAME.LENS_EFFECT, storage=GRAPHICS_SETTINGS_STORAGE)),
@@ -420,7 +421,7 @@ class SettingsCore(ISettingsCore):
          (
           SOUND.VOIP_ENABLE_CHANNEL, options.VOIPChannelSetting()),
          (
-          SOUND.VOIP_MASTER, options.VOIPMasterSoundSetting()),
+          SOUND.VOIP_MASTER, options.VOIPMasterSoundSetting(True)),
          (
           SOUND.VOIP_MIC, options.VOIPMicSoundSetting(True)),
          (
@@ -820,7 +821,7 @@ class SettingsCore(ISettingsCore):
         self.__options.apply(diff)
         self.onSettingsApplied(diff)
         from account_helpers.settings_core import settings_constants
-        graphicsSettings = {k:v for k, v in diff.iteritems() if k in settings_constants.GRAPHICS.ALL()}
+        graphicsSettings = {k:v for k, v in viewitems(diff) if k in settings_constants.GRAPHICS.ALL()}
         if graphicsSettings:
             LOG_DEBUG('Apply graphic settings: ', graphicsSettings)
             self.onSettingsChanged(graphicsSettings)

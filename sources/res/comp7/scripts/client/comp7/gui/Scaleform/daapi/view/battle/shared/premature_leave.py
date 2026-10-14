@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld
 from BWUtil import AsyncReturn
 from comp7_common.comp7_constants import ARENA_GUI_TYPE
