@@ -21,6 +21,7 @@ class PortalBattleStateComponent(DynamicScriptComponent):
     onBossInfoUpdated = Event.Event()
     onBossFightFinished = Event.Event()
     onCampCaptureHealApplied = Event.Event()
+    onTeleportBlocked = Event.Event()
 
     def __init__(self):
         super(PortalBattleStateComponent, self).__init__()
@@ -136,6 +137,9 @@ class PortalBattleStateComponent(DynamicScriptComponent):
 
     def __onCampCaptureHealApplied(self, heals):
         self.onCampCaptureHealApplied(heals)
+
+    def __onTeleportBlocked(self, vehicleID):
+        self.onTeleportBlocked(vehicleID)
 
     @cached_property
     def __config(self):

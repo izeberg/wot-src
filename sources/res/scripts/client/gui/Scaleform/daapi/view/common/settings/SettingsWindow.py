@@ -11,7 +11,6 @@ from gui.Scaleform.locale.RES_ICONS import RES_ICONS
 from gui.Scaleform.locale.SETTINGS import SETTINGS
 from gui import DialogsInterface, g_guiResetters
 from gui.shared import g_eventBus, events, EVENT_BUS_SCOPE
-from gui.shared.event_dispatcher import showSystemMixerVolumeDisabledPage
 from gui.shared.utils import flashObject2Dict, decorators, graphics
 from gui.Scaleform.daapi.view.meta.SettingsWindowMeta import SettingsWindowMeta
 from gui.Scaleform.daapi.view.common.settings.SettingsParams import SettingsParams
@@ -350,9 +349,8 @@ class SettingsWindow(SettingsWindowMeta):
     def isSystemMixerVolumeDisabled(self):
         return self.soundsCtrl.isSystemMixerVolumeDisabled()
 
-    def showSystemMixerVolumeDisabledPage(self):
-        showSystemMixerVolumeDisabledPage()
-        self.onWindowClose()
+    def fixSystemMixerVolume(self):
+        self.soundsCtrl.fixSystemMixerVolume()
 
     def __updateInterfaceScale(self):
         self.as_updateVideoSettingsS(self.params.getMonitorSettings())

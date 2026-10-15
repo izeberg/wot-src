@@ -446,6 +446,7 @@ class MESSENGER(object):
     SERVICECHANNELMESSAGES_INVOICERECEIVED_NATIONALBLUEPRINTSACCRUED = '#messenger:serviceChannelMessages/invoiceReceived/nationalBlueprintsAccrued'
     SERVICECHANNELMESSAGES_INVOICERECEIVED_NATIONALBLUEPRINTSDEBITED = '#messenger:serviceChannelMessages/invoiceReceived/nationalBlueprintsDebited'
     SERVICECHANNELMESSAGES_MULTIPLIER = '#messenger:serviceChannelMessages/multiplier'
+    SERVICECHANNELMESSAGES_PREFERREDMAPSLOTSDEBITED = '#messenger:serviceChannelMessages/preferredMapSlotsDebited'
     SERVICECHANNELMESSAGES_INVOICERECEIVED_COMPENSATION = '#messenger:serviceChannelMessages/invoiceReceived/compensation'
     SERVICECHANNELMESSAGES_INVOICERECEIVED_COMPENSATION_PAINT = '#messenger:serviceChannelMessages/invoiceReceived/compensation/paint'
     SERVICECHANNELMESSAGES_INVOICERECEIVED_COMPENSATION_CAMOUFLAGE = '#messenger:serviceChannelMessages/invoiceReceived/compensation/camouflage'
@@ -493,6 +494,9 @@ class MESSENGER(object):
     SERVICECHANNELMESSAGES_OFFERTOKENBONUS_TITLE = '#messenger:serviceChannelMessages/offerTokenBonus/title'
     SERVICECHANNELMESSAGES_OFFERTOKENBONUS_ALTERNATIVETITLE = '#messenger:serviceChannelMessages/offerTokenBonus/alternativeTitle'
     SERVICECHANNELMESSAGES_INVOICERECEIVED_LBKEYSACCRUED = '#messenger:serviceChannelMessages/invoiceReceived/lbKeysAccrued'
+    SERVICECHANNELMESSAGES_DAYS_ONE = '#messenger:serviceChannelMessages/days/one'
+    SERVICECHANNELMESSAGES_DAYS_FEW = '#messenger:serviceChannelMessages/days/few'
+    SERVICECHANNELMESSAGES_DAYS_MANY = '#messenger:serviceChannelMessages/days/many'
     SERVICECHANNELMESSAGES_DURATIONOFPREMIUMACCOUNTEXPIRES = '#messenger:serviceChannelMessages/durationOfPremiumAccountExpires'
     SERVICECHANNELMESSAGES_PREMIUMBOUGHT = '#messenger:serviceChannelMessages/premiumBought'
     SERVICECHANNELMESSAGES_PREMIUMEXTENDED = '#messenger:serviceChannelMessages/premiumExtended'
@@ -1285,6 +1289,7 @@ class MESSENGER(object):
     SERVICECHANNELMESSAGES_SYSTEMMIXERVOLUMEDISABLEDSYSMESSAGE_HEADER = '#messenger:serviceChannelMessages/systemMixerVolumeDisabledSysMessage/header'
     SERVICECHANNELMESSAGES_SYSTEMMIXERVOLUMEDISABLEDSYSMESSAGE_BODY = '#messenger:serviceChannelMessages/systemMixerVolumeDisabledSysMessage/body'
     SERVICECHANNELMESSAGES_SYSTEMMIXERVOLUMEDISABLEDSYSMESSAGE_BUTTON = '#messenger:serviceChannelMessages/systemMixerVolumeDisabledSysMessage/button'
+    SERVICECHANNELMESSAGES_SYSTEMMIXERVOLUMEDISABLEDSYSMESSAGE_FIXBUTTON = '#messenger:serviceChannelMessages/systemMixerVolumeDisabledSysMessage/fixButton'
     CLIENT_ERROR_SHARED_ENUM = (
      CLIENT_ERROR_SHARED_TRY_LATER,
      CLIENT_ERROR_SHARED_GENERIC,

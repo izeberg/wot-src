@@ -35,3 +35,6 @@ class ISoundsController(object):
 
     def markNeedInvAppMixerVolume(self):
         raise NotImplementedError
+
+    def fixSystemMixerVolume(self):
+        raise NotImplementedError

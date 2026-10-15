@@ -2,13 +2,13 @@ from gui.impl.gen_utils import DynAccessor
 
 class Videos(DynAccessor):
     __slots__ = ()
-    _tutorialInitial = DynAccessor(113772)
-    _tutorialInitialLoop = DynAccessor(113773)
+    _tutorialInitial = DynAccessor(113721)
+    _tutorialInitialLoop = DynAccessor(113722)
 
     class _achievements(DynAccessor):
         __slots__ = ()
-        particles = DynAccessor(113774)
-        up_particles = DynAccessor(113775)
+        particles = DynAccessor(113723)
+        up_particles = DynAccessor(113724)
 
     achievements = _achievements()
 
@@ -17,46 +17,46 @@ class Videos(DynAccessor):
 
         class _advancedHints(DynAccessor):
             __slots__ = ()
-            abilityPreview = DynAccessor(113776)
-            crewCommander = DynAccessor(113777)
-            crewDriver = DynAccessor(113778)
-            crewGunner = DynAccessor(113779)
-            crewLoader = DynAccessor(113780)
-            crewRadioOperator = DynAccessor(113781)
-            skillAdrenalineRush = DynAccessor(113782)
-            skillArmorer = DynAccessor(113783)
-            skillArtLamp = DynAccessor(113784)
-            skillBrothersInArms = DynAccessor(113785)
-            skillCallForVengeance = DynAccessor(113786)
-            skillClutchBraking = DynAccessor(113787)
-            skillCommanderBonus = DynAccessor(113788)
-            skillConcealment = DynAccessor(113789)
-            skillControlledImpact = DynAccessor(113790)
-            skillDeadEye = DynAccessor(113791)
-            skillDesignatedTarget = DynAccessor(113792)
-            skillEagleEye = DynAccessor(113793)
-            skillExpert = DynAccessor(113794)
-            skillFirefighting = DynAccessor(113795)
-            skillIntuition = DynAccessor(113796)
-            skillJackOfAllTrades = DynAccessor(113797)
-            skillMentor = DynAccessor(113798)
-            skillOffRoadDriving = DynAccessor(113799)
-            skillPreventativeMaintenance = DynAccessor(113800)
-            skillRelaying = DynAccessor(113801)
-            skillRepairs = DynAccessor(113802)
-            skillSafeStowage = DynAccessor(113803)
-            skillSignalBoosting = DynAccessor(113804)
-            skillSituationalAwareness = DynAccessor(113805)
-            skillSixthSense = DynAccessor(113806)
-            skillSmoothRide = DynAccessor(113807)
-            skillSnapShot = DynAccessor(113808)
-            skillSniper = DynAccessor(113809)
-            skillSoundIntelligence = DynAccessor(113810)
-            statConcealment = DynAccessor(113811)
-            statFirepower = DynAccessor(113812)
-            statMobility = DynAccessor(113813)
-            statSpotting = DynAccessor(113814)
-            statSurvivability = DynAccessor(113815)
+            abilityPreview = DynAccessor(113725)
+            crewCommander = DynAccessor(113726)
+            crewDriver = DynAccessor(113727)
+            crewGunner = DynAccessor(113728)
+            crewLoader = DynAccessor(113729)
+            crewRadioOperator = DynAccessor(113730)
+            skillAdrenalineRush = DynAccessor(113731)
+            skillArmorer = DynAccessor(113732)
+            skillArtLamp = DynAccessor(113733)
+            skillBrothersInArms = DynAccessor(113734)
+            skillCallForVengeance = DynAccessor(113735)
+            skillClutchBraking = DynAccessor(113736)
+            skillCommanderBonus = DynAccessor(113737)
+            skillConcealment = DynAccessor(113738)
+            skillControlledImpact = DynAccessor(113739)
+            skillDeadEye = DynAccessor(113740)
+            skillDesignatedTarget = DynAccessor(113741)
+            skillEagleEye = DynAccessor(113742)
+            skillExpert = DynAccessor(113743)
+            skillFirefighting = DynAccessor(113744)
+            skillIntuition = DynAccessor(113745)
+            skillJackOfAllTrades = DynAccessor(113746)
+            skillMentor = DynAccessor(113747)
+            skillOffRoadDriving = DynAccessor(113748)
+            skillPreventativeMaintenance = DynAccessor(113749)
+            skillRelaying = DynAccessor(113750)
+            skillRepairs = DynAccessor(113751)
+            skillSafeStowage = DynAccessor(113752)
+            skillSignalBoosting = DynAccessor(113753)
+            skillSituationalAwareness = DynAccessor(113754)
+            skillSixthSense = DynAccessor(113755)
+            skillSmoothRide = DynAccessor(113756)
+            skillSnapShot = DynAccessor(113757)
+            skillSniper = DynAccessor(113758)
+            skillSoundIntelligence = DynAccessor(113759)
+            statConcealment = DynAccessor(113760)
+            statFirepower = DynAccessor(113761)
+            statMobility = DynAccessor(113762)
+            statSpotting = DynAccessor(113763)
+            statSurvivability = DynAccessor(113764)
 
         advancedHints = _advancedHints()
 
@@ -64,51 +64,51 @@ class Videos(DynAccessor):
 
     class _armory_yard(DynAccessor):
         __slots__ = ()
-        ay_armour = DynAccessor(113816)
-        ay_gun = DynAccessor(113817)
-        ay_tracks = DynAccessor(113818)
-        ay_turret = DynAccessor(113819)
-        video_reward = DynAccessor(113820)
-        video_reward_min = DynAccessor(113821)
+        ay_armour = DynAccessor(113765)
+        ay_gun = DynAccessor(113766)
+        ay_tracks = DynAccessor(113767)
+        ay_turret = DynAccessor(113768)
+        video_reward = DynAccessor(113769)
+        video_reward_min = DynAccessor(113770)
 
     armory_yard = _armory_yard()
 
     class _battleContextHints(DynAccessor):
         __slots__ = ()
-        AmmoTypeAvailable = DynAccessor(113822)
-        AmmunitionCrit = DynAccessor(113823)
-        FueltankCrit = DynAccessor(113824)
-        InSafetyWhileNotObserved = DynAccessor(113825)
-        KilledWhileObserved = DynAccessor(113826)
-        ModuleDamage = DynAccessor(113827)
+        AmmoTypeAvailable = DynAccessor(113771)
+        AmmunitionCrit = DynAccessor(113772)
+        FueltankCrit = DynAccessor(113773)
+        InSafetyWhileNotObserved = DynAccessor(113774)
+        KilledWhileObserved = DynAccessor(113775)
+        ModuleDamage = DynAccessor(113776)
 
     battleContextHints = _battleContextHints()
 
     class _battle_pass(DynAccessor):
         __slots__ = ()
-        v_211_0 = DynAccessor(113828)
-        v_212_0 = DynAccessor(113829)
-        v_213_0 = DynAccessor(113830)
+        v_211_0 = DynAccessor(113777)
+        v_212_0 = DynAccessor(113778)
+        v_213_0 = DynAccessor(113779)
 
     battle_pass = _battle_pass()
 
     class _cosmic(DynAccessor):
         __slots__ = ()
-        hyperjump = DynAccessor(113831)
-        Intro = DynAccessor(113832)
+        hyperjump = DynAccessor(113780)
+        Intro = DynAccessor(113781)
 
         class _abilities(DynAccessor):
             __slots__ = ()
-            black_hole = DynAccessor(113833)
-            overcharge = DynAccessor(113834)
-            power_shot = DynAccessor(113835)
-            teleport = DynAccessor(113836)
+            black_hole = DynAccessor(113782)
+            overcharge = DynAccessor(113783)
+            power_shot = DynAccessor(113784)
+            teleport = DynAccessor(113785)
 
         abilities = _abilities()
 
         class _progression(DynAccessor):
             __slots__ = ()
-            Loop_0 = DynAccessor(113837)
+            Loop_0 = DynAccessor(113786)
 
         progression = _progression()
 
@@ -116,96 +116,96 @@ class Videos(DynAccessor):
 
     class _development(DynAccessor):
         __slots__ = ()
-        cosmic_intro_vp8_8_128 = DynAccessor(113838)
-        cosmic_intro_vp8_8_256 = DynAccessor(113839)
-        cosmic_intro_vp8_8_96 = DynAccessor(113840)
-        cosmic_intro_vp9_8_128 = DynAccessor(113841)
-        cosmic_intro_vp9_8_256 = DynAccessor(113842)
-        cosmic_intro_vp9_8_96 = DynAccessor(113843)
-        example = DynAccessor(113844)
-        example_2 = DynAccessor(113845)
-        example_3 = DynAccessor(113846)
+        cosmic_intro_vp8_8_128 = DynAccessor(113787)
+        cosmic_intro_vp8_8_256 = DynAccessor(113788)
+        cosmic_intro_vp8_8_96 = DynAccessor(113789)
+        cosmic_intro_vp9_8_128 = DynAccessor(113790)
+        cosmic_intro_vp9_8_256 = DynAccessor(113791)
+        cosmic_intro_vp9_8_96 = DynAccessor(113792)
+        example = DynAccessor(113793)
+        example_2 = DynAccessor(113794)
+        example_3 = DynAccessor(113795)
 
     development = _development()
 
     class _event_loot_boxes(DynAccessor):
         __slots__ = ()
-        bg_unique = DynAccessor(113847)
+        bg_unique = DynAccessor(113796)
 
         class _bd2023(DynAccessor):
             __slots__ = ()
-            bronze = DynAccessor(113848)
-            gold = DynAccessor(113849)
-            silver = DynAccessor(113850)
-            standart = DynAccessor(113851)
+            bronze = DynAccessor(113797)
+            gold = DynAccessor(113798)
+            silver = DynAccessor(113799)
+            standart = DynAccessor(113800)
 
         bd2023 = _bd2023()
 
         class _bd2024(DynAccessor):
             __slots__ = ()
-            lootbox = DynAccessor(113852)
+            lootbox = DynAccessor(113801)
 
         bd2024 = _bd2024()
 
         class _bd2025(DynAccessor):
             __slots__ = ()
-            large = DynAccessor(113853)
-            small = DynAccessor(113854)
+            large = DynAccessor(113802)
+            small = DynAccessor(113803)
 
         bd2025 = _bd2025()
 
         class _bd2026(DynAccessor):
             __slots__ = ()
-            large = DynAccessor(113855)
-            small = DynAccessor(113856)
+            large = DynAccessor(113804)
+            small = DynAccessor(113805)
 
         bd2026 = _bd2026()
 
         class _cosmic2024(DynAccessor):
             __slots__ = ()
-            silver = DynAccessor(113857)
-            standart = DynAccessor(113858)
+            silver = DynAccessor(113806)
+            standart = DynAccessor(113807)
 
         cosmic2024 = _cosmic2024()
 
         class _cosmic2025(DynAccessor):
             __slots__ = ()
-            silver = DynAccessor(113859)
-            standart = DynAccessor(113860)
+            silver = DynAccessor(113808)
+            standart = DynAccessor(113809)
 
         cosmic2025 = _cosmic2025()
 
         class _cosmic2026(DynAccessor):
             __slots__ = ()
-            silver = DynAccessor(113861)
-            standart = DynAccessor(113862)
+            silver = DynAccessor(113810)
+            standart = DynAccessor(113811)
 
         cosmic2026 = _cosmic2026()
 
         class _hw2023(DynAccessor):
             __slots__ = ()
-            silver = DynAccessor(113863)
-            standart = DynAccessor(113864)
+            silver = DynAccessor(113812)
+            standart = DynAccessor(113813)
 
         hw2023 = _hw2023()
 
         class _mt_lootbox(DynAccessor):
             __slots__ = ()
-            mtl_1_24 = DynAccessor(113865)
-            mtl_1_35 = DynAccessor(113866)
-            mtl_1_43 = DynAccessor(113867)
-            mt_drops = DynAccessor(113868)
+            mtl_1_24 = DynAccessor(113814)
+            mtl_1_35 = DynAccessor(113815)
+            mtl_1_43 = DynAccessor(113816)
+            mt_drops = DynAccessor(113817)
 
         mt_lootbox = _mt_lootbox()
 
         class _rp_2024(DynAccessor):
             __slots__ = ()
-            large = DynAccessor(113869)
-            medium = DynAccessor(113870)
-            small = DynAccessor(113871)
-            tanks_6 = DynAccessor(113872)
-            tanks_7 = DynAccessor(113873)
-            tanks_8 = DynAccessor(113874)
+            large = DynAccessor(113818)
+            medium = DynAccessor(113819)
+            small = DynAccessor(113820)
+            tanks_6 = DynAccessor(113821)
+            tanks_7 = DynAccessor(113822)
+            tanks_8 = DynAccessor(113823)
 
         rp_2024 = _rp_2024()
 
@@ -216,41 +216,41 @@ class Videos(DynAccessor):
 
         class _common(DynAccessor):
             __slots__ = ()
-            J27_O_I_120_BP = DynAccessor(113875)
-            R149_Object_268_4_02 = DynAccessor(113876)
-            R177_ISU_152K_BL10_02 = DynAccessor(113877)
-            R248_T44_Storm = DynAccessor(113878)
-            R45_IS_7_02 = DynAccessor(113879)
-            Un24_Vz_68_2_Britva = DynAccessor(113880)
+            J27_O_I_120_BP = DynAccessor(113824)
+            R149_Object_268_4_02 = DynAccessor(113825)
+            R177_ISU_152K_BL10_02 = DynAccessor(113826)
+            R248_T44_Storm = DynAccessor(113827)
+            R45_IS_7_02 = DynAccessor(113828)
+            Un24_Vz_68_2_Britva = DynAccessor(113829)
 
         common = _common()
 
         class _cosmic_2026(DynAccessor):
             __slots__ = ()
-            G171_E77_02 = DynAccessor(113881)
-            GB110_FV4201_Chieftain_Prototype_B = DynAccessor(113882)
-            intro = DynAccessor(113883)
-            R239_ST_Molot_02 = DynAccessor(113884)
+            G171_E77_02 = DynAccessor(113830)
+            GB110_FV4201_Chieftain_Prototype_B = DynAccessor(113831)
+            intro = DynAccessor(113832)
+            R239_ST_Molot_02 = DynAccessor(113833)
 
         cosmic_2026 = _cosmic_2026()
 
         class _cosmic_2026_2(DynAccessor):
             __slots__ = ()
-            F131_Coutelas = DynAccessor(113885)
-            GB141_Celestial_2_51 = DynAccessor(113886)
-            intro = DynAccessor(113887)
-            R239_ST_Molot = DynAccessor(113888)
+            F131_Coutelas = DynAccessor(113834)
+            GB141_Celestial_2_51 = DynAccessor(113835)
+            intro = DynAccessor(113836)
+            R239_ST_Molot = DynAccessor(113837)
 
         cosmic_2026_2 = _cosmic_2026_2()
 
         class _mtl_universal(DynAccessor):
             __slots__ = ()
-            A122_TS_5 = DynAccessor(113889)
-            Ch46_113_140 = DynAccessor(113890)
-            G164_Kpz_Pr_68_P = DynAccessor(113891)
-            Pl35_CS_57_Sokol = DynAccessor(113892)
-            R121_KV4_KTT = DynAccessor(113893)
-            S22_Strv_S1 = DynAccessor(113894)
+            A122_TS_5 = DynAccessor(113838)
+            Ch46_113_140 = DynAccessor(113839)
+            G164_Kpz_Pr_68_P = DynAccessor(113840)
+            Pl35_CS_57_Sokol = DynAccessor(113841)
+            R121_KV4_KTT = DynAccessor(113842)
+            S22_Strv_S1 = DynAccessor(113843)
 
         mtl_universal = _mtl_universal()
 
@@ -261,7 +261,7 @@ class Videos(DynAccessor):
 
         class _tankMail(DynAccessor):
             __slots__ = ()
-            sentGift = DynAccessor(113895)
+            sentGift = DynAccessor(113844)
 
         tankMail = _tankMail()
 
@@ -269,67 +269,73 @@ class Videos(DynAccessor):
 
     class _newbie_start_page(DynAccessor):
         __slots__ = ()
-        option_1 = DynAccessor(113896)
-        option_2 = DynAccessor(113897)
-        option_3 = DynAccessor(113898)
+        option_1 = DynAccessor(113845)
+        option_2 = DynAccessor(113846)
+        option_3 = DynAccessor(113847)
 
     newbie_start_page = _newbie_start_page()
 
     class _paragons(DynAccessor):
         __slots__ = ()
-        A150_MBT_B = DynAccessor(113899)
-        Ch57_BZT_70 = DynAccessor(113900)
-        F134_ARL_Projet_F = DynAccessor(113901)
-        G184_EisBaer = DynAccessor(113902)
-        GB140_Champion = DynAccessor(113903)
-        R124_Object_279 = DynAccessor(113904)
+        A150_MBT_B = DynAccessor(113848)
+        Ch57_BZT_70 = DynAccessor(113849)
+        F134_ARL_Projet_F = DynAccessor(113850)
+        G184_EisBaer = DynAccessor(113851)
+        GB140_Champion = DynAccessor(113852)
+        R124_Object_279 = DynAccessor(113853)
 
     paragons = _paragons()
 
     class _personal_mission(DynAccessor):
         __slots__ = ()
-        intro_video = DynAccessor(113905)
-        operation_10 = DynAccessor(113906)
-        operation_8 = DynAccessor(113907)
-        operation_9 = DynAccessor(113908)
-        operation_99 = DynAccessor(113909)
-        video_operations_person = DynAccessor(113910)
+        intro_video = DynAccessor(113854)
+        operation_10 = DynAccessor(113855)
+        operation_8 = DynAccessor(113856)
+        operation_9 = DynAccessor(113857)
+        operation_99 = DynAccessor(113858)
+        video_operations_person = DynAccessor(113859)
 
     personal_mission = _personal_mission()
 
     class _platoon(DynAccessor):
         __slots__ = ()
-        VoiceChat = DynAccessor(113911)
+        VoiceChat = DynAccessor(113860)
 
     platoon = _platoon()
 
     class _portal(DynAccessor):
         __slots__ = ()
-        portal_intro = DynAccessor(113912)
-        portal_outro = DynAccessor(113913)
-        portal_transition = DynAccessor(113914)
+        portal_intro = DynAccessor(113861)
+        portal_outro = DynAccessor(113862)
+        portal_transition = DynAccessor(113863)
 
         class _abilities(DynAccessor):
             __slots__ = ()
-            berserk_portal = DynAccessor(113915)
-            curse_shot_portal = DynAccessor(113916)
-            fire_shot_portal = DynAccessor(113917)
-            frozen_shot_portal = DynAccessor(113918)
-            guided_missile_portal = DynAccessor(113919)
-            laugh_shot_portal = DynAccessor(113920)
-            minefield_portal = DynAccessor(113921)
-            reload_aura_portal = DynAccessor(113922)
-            sentry_gun_portal = DynAccessor(113923)
-            shield_portal = DynAccessor(113924)
-            trap_portal = DynAccessor(113925)
-            vehicle_change_shot_portal = DynAccessor(113926)
+            berserk_portal = DynAccessor(113864)
+            curse_shot_portal = DynAccessor(113865)
+            fire_shot_portal = DynAccessor(113866)
+            frozen_shot_portal = DynAccessor(113867)
+            guided_missile_portal = DynAccessor(113868)
+            laugh_shot_portal = DynAccessor(113869)
+            minefield_portal = DynAccessor(113870)
+            reload_aura_portal = DynAccessor(113871)
+            sentry_gun_portal = DynAccessor(113872)
+            shield_portal = DynAccessor(113873)
+            trap_portal = DynAccessor(113874)
+            vehicle_change_shot_portal = DynAccessor(113875)
 
         abilities = _abilities()
 
     portal = _portal()
 
+    class _startup(DynAccessor):
+        __slots__ = ()
+        c_1_46_showreel = DynAccessor(113876)
+
+    startup = _startup()
+
     class _vehicle(DynAccessor):
         __slots__ = ()
-        A122_TS_5 = DynAccessor(113927)
+        A122_TS_5 = DynAccessor(113877)
 
     vehicle = _vehicle()

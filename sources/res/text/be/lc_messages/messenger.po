@@ -2402,6 +2402,15 @@ msgstr "Атрымана вольнага досведу"
 msgid "serviceChannelMessages/currencyUpdate/received/gold"
 msgstr "Атрымана золата"
 
+msgid "serviceChannelMessages/days/few"
+msgstr "дня"
+
+msgid "serviceChannelMessages/days/many"
+msgstr "дзён"
+
+msgid "serviceChannelMessages/days/one"
+msgstr "дзень"
+
 msgid "serviceChannelMessages/dedicationReward/header"
 msgstr "Узнагарода «Герой нашага часу»"
 
@@ -3285,6 +3294,9 @@ msgstr "Прамежкавы вынік"
 msgid "serviceChannelMessages/prebattle/total"
 msgstr "Вынік"
 
+msgid "serviceChannelMessages/preferredMapSlotsDebited"
+msgstr "Спісаны дні з даступных для слота за актыўны ўдзел у падзеях"
+
 msgid "serviceChannelMessages/premiumBought"
 msgstr ""
 "Агульны прэміум акаўнт атрыманы. Тэрмін дзеяння заканчваецца %(expiryTime)s."
@@ -3864,11 +3876,14 @@ msgstr "Наладка абсталявання"
 
 msgid "serviceChannelMessages/systemMixerVolumeDisabledSysMessage/body"
 msgstr ""
-"Слишком низкая громкость игры. Нажмите на кнопку, чтобы посмотреть "
-"инструкцию и проверить настройки микшера."
+"Занадта нізкая гучнасць гульні. Вы можаце выправіць наладкі мікшэра або "
+"паглядзець інструкцыю і праверыць налады сістэмы самастойна."
 
 msgid "serviceChannelMessages/systemMixerVolumeDisabledSysMessage/button"
 msgstr "Перайсці"
+
+msgid "serviceChannelMessages/systemMixerVolumeDisabledSysMessage/fixButton"
+msgstr "Выправіць"
 
 msgid "serviceChannelMessages/systemMixerVolumeDisabledSysMessage/header"
 msgstr "Увага!"

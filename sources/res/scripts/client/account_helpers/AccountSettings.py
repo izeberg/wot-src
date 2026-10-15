@@ -1226,8 +1226,7 @@ DEFAULT_VALUES = {KEY_FILTERS: {STORE_TAB: 0,
                                                                                          'progressViewType': True, 
                                                                                          'progressViewConditions': True}, 
                                                               'feedbackDamageIndicator': {'damageIndicatorAllies': True}, 
-                                                              'feedbackSixthSense': {'indicatorSize': 0, 
-                                                                                     'indicatorAlpha': 100}}, 
+                                                              'feedbackSixthSense': {'indicatorAlpha': True}}, 
                                          'ControlsSettings': {'highlightLocation': True, 
                                                               'showQuestProgress': True, 
                                                               'chargeFire': True, 
@@ -1633,7 +1632,7 @@ def _recursiveStep(defaultDict, savedDict, finalDict):
                 _recursiveStep(defaultElement, savedElement, finalDict[key])
             else:
                 finalDict[key] = deepcopy(defaultElement)
-        elif savedElement is not None:
+        elif savedElement is not None and isinstance(savedElement, type(defaultElement)):
             finalDict[key] = savedElement
         else:
             finalDict[key] = defaultElement

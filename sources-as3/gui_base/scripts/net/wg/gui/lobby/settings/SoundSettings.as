@@ -4,6 +4,7 @@ package net.wg.gui.lobby.settings
    import flash.events.Event;
    import flash.events.IEventDispatcher;
    import flash.events.MouseEvent;
+   import flash.text.TextField;
    import flash.text.TextFormatAlign;
    import net.wg.data.constants.Errors;
    import net.wg.data.constants.Linkages;
@@ -11,18 +12,25 @@ package net.wg.gui.lobby.settings
    import net.wg.data.constants.Values;
    import net.wg.data.constants.generated.ACOUSTICS;
    import net.wg.gui.components.advanced.ButtonBarEx;
+   import net.wg.gui.components.advanced.ContentTabBar;
+   import net.wg.gui.components.controls.BorderShadowScrollPane;
    import net.wg.gui.components.controls.CheckBox;
    import net.wg.gui.components.controls.DropdownMenu;
    import net.wg.gui.components.controls.InfoIcon;
    import net.wg.gui.components.controls.LabelControl;
    import net.wg.gui.components.controls.Slider;
+   import net.wg.gui.components.controls.SoundButtonEx;
+   import net.wg.gui.components.controls.UILoaderAlt;
    import net.wg.gui.data.Aliases;
    import net.wg.gui.lobby.settings.components.KeyInput;
    import net.wg.gui.lobby.settings.components.SoundDeviceTabButton;
+   import net.wg.gui.lobby.settings.components.WarningMessageBlock;
    import net.wg.gui.lobby.settings.components.evnts.KeyInputEvents;
+   import net.wg.gui.lobby.settings.components.evnts.WarningMessageEvent;
    import net.wg.gui.lobby.settings.config.SettingsConfigHelper;
    import net.wg.gui.lobby.settings.events.AlternativeVoiceEvent;
    import net.wg.gui.lobby.settings.events.SettingViewEvent;
+   import net.wg.gui.lobby.settings.vo.MessageBlockDataVO;
    import net.wg.gui.lobby.settings.vo.SettingsControlProp;
    import net.wg.gui.lobby.settings.vo.SettingsKeyProp;
    import net.wg.gui.lobby.settings.vo.base.SettingsDataVo;
@@ -39,7 +47,7 @@ package net.wg.gui.lobby.settings
    import scaleform.clik.events.SliderEvent;
    import scaleform.clik.interfaces.IDataProvider;
    
-   public class SoundSettings extends SoundSettingsBase implements IPopOverCaller
+   public class SoundSettings extends SettingsBaseView implements IPopOverCaller
    {
       
       private static const VOICE_TEST_DURATION:Number = 10;
@@ -58,14 +66,38 @@ package net.wg.gui.lobby.settings
       
       private static const SOUND_COUNTER_CONTAINER_ID:String = "SOUND_COUNTER_CONTAINER_ID";
       
-      private static const COUNTER_CHECKBOX_OFFSET_X:Number = -17;
+      private static const COUNTER_CHECKBOX_OFFSET_X:int = -17;
       
       private static const BULB_VOICES_NULL_ERROR:String = "_existsBulbVoices";
       
       private static const ARTY_BULB_VOICES_NULL_ERROR:String = "_existsArtyBulbVoices";
       
       private static const COUNT_SLIDER_MIN_MAX_OPTIONS:int = 2;
+      
+      private static const PANE_WIDTH:uint = 800;
+      
+      private static const PANE_HEIGHT:uint = 518;
+      
+      private static const SHADOW_HEIGHT:uint = 20;
+      
+      private static const WARNING_MESSAGEM_BLOCK_X:uint = 400;
+      
+      private static const WARNING_MESSAGEM_BLOCK_PADDING:uint = 80;
+      
+      private static const PANE_HEIGHT_WITH_WARNING_BLOCK:uint = PANE_HEIGHT - WARNING_MESSAGEM_BLOCK_PADDING;
+      
+      private static const TOOLTIP_PREFIX:String = "sounds/";
+      
+      private static const SYSTEM_MIXER_WARNING_DATA:MessageBlockDataVO = new MessageBlockDataVO({
+         "message":SETTINGS.SOUNDS_SYSTEMMIXERVOLUMEWARNING,
+         "actionName":WarningMessageEvent.FIX_MIXER_SOUND,
+         "buttonLabel":SETTINGS.SOUNDS_FIXBUTTON,
+         "infoIconType":InfoIcon.TYPE_WARNING,
+         "tooltip":TOOLTIPS.SYSTEMMIXERVOLUMEDISABLEDWARNING
+      });
        
+      
+      public var scrollPane:BorderShadowScrollPane;
       
       private var _isVoiceTestStarted:Boolean = false;
       
@@ -86,6 +118,8 @@ package net.wg.gui.lobby.settings
       private var _isVOIPButtonForceDisabled:Boolean = false;
       
       private var _isSystemMixerVolumeDisabled:Boolean = false;
+      
+      private var _warningMessageBlock:WarningMessageBlock = null;
       
       public function SoundSettings()
       {
@@ -119,106 +153,124 @@ package net.wg.gui.lobby.settings
       
       override protected function configUI() : void
       {
-         soundSpeakersTestButton.addEventListener(ButtonEvent.CLICK,this.onSoundSpeakersTestButtonClickHandler);
-         btnVivoxTest.addEventListener(ButtonEvent.CLICK,this.onBtnVivoxTestClickHandler);
-         btnCaptureDevicesUpdate.addEventListener(ButtonEvent.CLICK,this.onBtnCaptureDevicesUpdateClickHandler);
-         PTTKeyInput.addEventListener(KeyInputEvents.DISABLE_OVER,this.onPTTKeyInputDisableOverHandler);
-         PTTKeyInput.addEventListener(KeyInputEvents.DISABLE_OUT,this.onPTTKeyInputDisableOutHandler);
-         PTTKeyInput.addEventListener(KeyInputEvents.DISABLE_PRESS,this.onPTTKeyInputDisablePressHandler);
-         PTTKeyInput.addEventListener(KeyInputEvents.CHANGE,this.onPTTKeyInputChangeHandler);
-         PTTKeyInput.alertMessageAlias = TOOLTIPS.SETTING_WINDOW_CONTROLS_KEY_INPUT_PTT_WARNING;
+         this.scrollPane.topShadow.height = this.scrollPane.bottomShadow.height = SHADOW_HEIGHT;
+         this.scrollPane.setSize(PANE_WIDTH,PANE_HEIGHT);
+         var _loc1_:SoundSettingsBase = this.getContent();
+         _loc1_.soundSpeakersTestButton.addEventListener(ButtonEvent.CLICK,this.onSoundSpeakersTestButtonClickHandler);
+         _loc1_.btnVivoxTest.addEventListener(ButtonEvent.CLICK,this.onBtnVivoxTestClickHandler);
+         _loc1_.btnCaptureDevicesUpdate.addEventListener(ButtonEvent.CLICK,this.onBtnCaptureDevicesUpdateClickHandler);
+         _loc1_.PTTKeyInput.addEventListener(KeyInputEvents.DISABLE_OVER,this.onPTTKeyInputDisableOverHandler);
+         _loc1_.PTTKeyInput.addEventListener(KeyInputEvents.DISABLE_OUT,this.onPTTKeyInputDisableOutHandler);
+         _loc1_.PTTKeyInput.addEventListener(KeyInputEvents.DISABLE_PRESS,this.onPTTKeyInputDisablePressHandler);
+         _loc1_.PTTKeyInput.addEventListener(KeyInputEvents.CHANGE,this.onPTTKeyInputChangeHandler);
+         _loc1_.PTTKeyInput.alertMessageAlias = TOOLTIPS.SETTING_WINDOW_CONTROLS_KEY_INPUT_PTT_WARNING;
          this.updatesPttKeyList();
-         testAlternativeVoicesButton.addEventListener(ButtonEvent.CLICK,this.onTestAlternativeVoicesButtonClickHandler);
-         testAlternativeVoicesButton.addEventListener(MouseEvent.MOUSE_OVER,this.onTestAlternativeVoicesButtonMouseOverHandler);
-         testAlternativeVoicesButton.addEventListener(MouseEvent.MOUSE_OUT,this.onTestAlternativeVoicesButtonMouseOutHandler);
-         bulbVoicesButton.addEventListener(ButtonEvent.CLICK,this.onTestBulbVoicesButtonClickHandler);
-         bulbVoicesButton.addEventListener(MouseEvent.MOUSE_OVER,this.onTestBulbVoicesButtonMouseOverHandler);
-         bulbVoicesButton.addEventListener(MouseEvent.MOUSE_OUT,this.onTestBulbVoicesButtonMouseOutHandler);
-         artyBulbVoicesButton.addEventListener(ButtonEvent.CLICK,this.onArtyBulbVoicesButtonClickHandler);
-         artyBulbVoicesButton.addEventListener(MouseEvent.MOUSE_OVER,this.onArtyBulbVoicesButtonMouseOverHandler);
-         artyBulbVoicesButton.addEventListener(MouseEvent.MOUSE_OUT,this.onArtyBulbVoicesButtonMouseOutHandler);
-         enableVoIPCheckbox.enabled = App.voiceChatMgr.getYY();
-         tabs.addEventListener(IndexEvent.INDEX_CHANGE,this.onTabsIndexChangeHandler);
-         systemMixerVolumeDisabledLink.addEventListener(MouseEvent.CLICK,this.onSystemMixerVolumeDisabledLinkClickHandler);
+         _loc1_.testAlternativeVoicesButton.addEventListener(ButtonEvent.CLICK,this.onTestAlternativeVoicesButtonClickHandler);
+         _loc1_.testAlternativeVoicesButton.addEventListener(MouseEvent.MOUSE_OVER,this.onTestAlternativeVoicesButtonMouseOverHandler);
+         _loc1_.testAlternativeVoicesButton.addEventListener(MouseEvent.MOUSE_OUT,this.onTestAlternativeVoicesButtonMouseOutHandler);
+         _loc1_.bulbVoicesButton.addEventListener(ButtonEvent.CLICK,this.onTestBulbVoicesButtonClickHandler);
+         _loc1_.bulbVoicesButton.addEventListener(MouseEvent.MOUSE_OVER,this.onTestBulbVoicesButtonMouseOverHandler);
+         _loc1_.bulbVoicesButton.addEventListener(MouseEvent.MOUSE_OUT,this.onTestBulbVoicesButtonMouseOutHandler);
+         _loc1_.artyBulbVoicesButton.addEventListener(ButtonEvent.CLICK,this.onArtyBulbVoicesButtonClickHandler);
+         _loc1_.artyBulbVoicesButton.addEventListener(MouseEvent.MOUSE_OVER,this.onArtyBulbVoicesButtonMouseOverHandler);
+         _loc1_.artyBulbVoicesButton.addEventListener(MouseEvent.MOUSE_OUT,this.onArtyBulbVoicesButtonMouseOutHandler);
+         _loc1_.enableVoIPCheckbox.enabled = App.voiceChatMgr.getYY();
+         _loc1_.tabs.addEventListener(IndexEvent.INDEX_CHANGE,this.onTabsIndexChangeHandler);
          super.configUI();
+         registerToolTip(_loc1_.bulbVoicesDropDown,SettingsConfigHelper.BULB_VOICES);
+         registerToolTip(_loc1_.bulbVoicesLabel,SettingsConfigHelper.BULB_VOICES);
+         registerToolTip(_loc1_.masterVolumeToggleCheckbox,SettingsConfigHelper.MASTER_VOLUME_TOGGLE);
+         registerToolTip(_loc1_.nightModeCheckbox,SettingsConfigHelper.NIGHT_MODE);
+         registerToolTip(_loc1_.bassBoostCheckbox,SettingsConfigHelper.BASS_BOOST);
+         registerToolTip(_loc1_.soundQualityCheckbox,SettingsConfigHelper.SOUND_QUALITY);
+         registerToolTip(_loc1_.artyBulbVoicesIcon,SettingsConfigHelper.ARTY_BULB_VOICES);
+         registerToolTip(_loc1_.artyBulbVoicesLabel,SettingsConfigHelper.ARTY_BULB_VOICES);
+         registerToolTip(_loc1_.artyBulbVoicesDropDown,SettingsConfigHelper.ARTY_BULB_VOICES);
+      }
+      
+      override protected function getTooltipID(param1:String) : String
+      {
+         return TOOLTIP_PREFIX + param1;
       }
       
       override protected function setData(param1:SettingsDataVo) : void
       {
-         var _loc9_:String = null;
          var _loc11_:String = null;
-         var _loc12_:String = null;
-         var _loc13_:DisplayObject = null;
-         var _loc15_:Boolean = false;
-         var _loc16_:KeyInput = null;
+         var _loc13_:String = null;
+         var _loc14_:String = null;
+         var _loc15_:DisplayObject = null;
+         var _loc17_:Boolean = false;
+         var _loc18_:KeyInput = null;
          this.controlsUnsubscribe();
          super.setData(param1);
-         var _loc2_:SettingsControlProp = SettingsControlProp(param1.getByKey(SettingsConfigHelper.VOICE_CHAT_SUPPORTED));
-         var _loc3_:Boolean = _loc2_.current;
-         var _loc4_:Array = [{"label":SETTINGS.SOUNDS_TABCOMMON}];
-         var _loc5_:Boolean = App.voiceChatMgr.getYY();
-         if(_loc3_ || _loc5_)
+         var _loc2_:SoundSettingsBase = this.getContent();
+         var _loc3_:SettingsControlProp = SettingsControlProp(param1.getByKey(SettingsConfigHelper.VOICE_CHAT_SUPPORTED));
+         var _loc4_:Boolean = _loc3_.current;
+         var _loc5_:Array = [{"label":SETTINGS.SOUNDS_TABCOMMON}];
+         var _loc6_:Boolean = App.voiceChatMgr.getYY();
+         if(_loc4_ || _loc6_)
          {
-            _loc4_.push({"label":SETTINGS.SOUNDS_TABVIVOX});
-            enableVoIPCheckbox.visible = true;
-            this.showHideVoiceSettings(_loc3_);
+            _loc5_.push({"label":SETTINGS.SOUNDS_TABVIVOX});
+            _loc2_.enableVoIPCheckbox.visible = true;
+            this.showHideVoiceSettings(_loc4_);
          }
-         tabs.dataProvider = new DataProvider(_loc4_);
-         tabs.visible = _loc4_.length > 1;
-         var _loc6_:Vector.<String> = param1.keys;
-         var _loc7_:Vector.<Object> = param1.values;
-         var _loc8_:int = _loc6_.length;
-         var _loc10_:SettingsControlProp = null;
-         var _loc14_:int = 0;
-         while(_loc14_ < _loc8_)
+         var _loc7_:ContentTabBar = _loc2_.tabs;
+         _loc7_.dataProvider = new DataProvider(_loc5_);
+         _loc7_.visible = _loc5_.length > 1;
+         var _loc8_:Vector.<String> = param1.keys;
+         var _loc9_:Vector.<Object> = param1.values;
+         var _loc10_:int = _loc8_.length;
+         var _loc12_:SettingsControlProp = null;
+         var _loc16_:int = 0;
+         while(_loc16_ < _loc10_)
          {
-            _loc9_ = _loc6_[_loc14_];
-            _loc10_ = SettingsControlProp(_loc7_[_loc14_]);
-            _loc11_ = _loc10_.type;
-            _loc12_ = _loc9_ + _loc11_;
-            _loc13_ = this[_loc12_] as DisplayObject;
-            if(_loc13_)
+            _loc11_ = _loc8_[_loc16_];
+            _loc12_ = SettingsControlProp(_loc9_[_loc16_]);
+            _loc13_ = _loc12_.type;
+            _loc14_ = _loc11_ + _loc13_;
+            _loc15_ = _loc2_[_loc14_] as DisplayObject;
+            if(_loc15_)
             {
-               _loc15_ = _loc10_.current != null;
-               if(SettingsConfigHelper.TYPE_CHECKBOX == _loc11_)
+               _loc17_ = _loc12_.current != null;
+               if(SettingsConfigHelper.TYPE_CHECKBOX == _loc13_)
                {
-                  this.prepareCheckbox(CheckBox(_loc13_),_loc9_,_loc15_,_loc10_);
+                  this.prepareCheckbox(CheckBox(_loc15_),_loc11_,_loc17_,_loc12_);
                }
-               else if(SettingsConfigHelper.TYPE_SLIDER == _loc11_)
+               else if(SettingsConfigHelper.TYPE_SLIDER == _loc13_)
                {
-                  this.prepareSlider(Slider(_loc13_),_loc9_,_loc15_,_loc10_);
+                  this.prepareSlider(Slider(_loc15_),_loc11_,_loc17_,_loc12_);
                }
-               else if(SettingsConfigHelper.TYPE_DROPDOWN == _loc11_)
+               else if(SettingsConfigHelper.TYPE_DROPDOWN == _loc13_)
                {
-                  if(_loc9_ == SettingsConfigHelper.BULB_VOICES)
+                  if(_loc11_ == SettingsConfigHelper.BULB_VOICES)
                   {
-                     this._existsBulbVoices = _loc10_.extraData as Array;
+                     this._existsBulbVoices = _loc12_.extraData as Array;
                      App.utils.asserter.assertNotNull(this._existsBulbVoices,BULB_VOICES_NULL_ERROR + Errors.CANT_NULL);
                   }
-                  else if(_loc9_ == SettingsConfigHelper.ARTY_BULB_VOICES)
+                  else if(_loc11_ == SettingsConfigHelper.ARTY_BULB_VOICES)
                   {
-                     this._existsArtyBulbVoices = _loc10_.extraData as Array;
+                     this._existsArtyBulbVoices = _loc12_.extraData as Array;
                      App.utils.asserter.assertNotNull(this._existsArtyBulbVoices,ARTY_BULB_VOICES_NULL_ERROR + Errors.CANT_NULL);
                   }
-                  this.prepareDropdown(DropdownMenu(_loc13_),_loc15_,_loc10_);
+                  this.prepareDropdown(DropdownMenu(_loc15_),_loc17_,_loc12_);
                }
-               else if(SettingsConfigHelper.TYPE_KEYINPUT == _loc11_)
+               else if(SettingsConfigHelper.TYPE_KEYINPUT == _loc13_)
                {
-                  _loc16_ = KeyInput(_loc13_);
-                  _loc16_.key = Number(_loc10_.current);
-                  _loc16_.validateNow();
+                  _loc18_ = KeyInput(_loc15_);
+                  _loc18_.key = Number(_loc12_.current);
+                  _loc18_.validateNow();
                }
-               else if(SettingsConfigHelper.TYPE_BUTTON_BAR == _loc11_)
+               else if(SettingsConfigHelper.TYPE_BUTTON_BAR == _loc13_)
                {
-                  this.prepareButtonBar(ButtonBarEx(_loc13_),_loc9_,_loc15_,_loc10_);
+                  this.prepareButtonBar(ButtonBarEx(_loc15_),_loc11_,_loc17_,_loc12_);
                }
-               trySetLabel(_loc9_);
+               trySetLabel(_loc11_);
             }
-            else if(!_loc10_.readOnly)
+            else if(!_loc12_.readOnly)
             {
-               App.utils.asserter.assert(false,_loc12_ + Errors.WASNT_FOUND);
+               App.utils.asserter.assert(false,_loc14_ + Errors.WASNT_FOUND);
             }
-            _loc14_++;
+            _loc16_++;
          }
          this.updateMasterVolumeEnabled();
          this.updateVoiceChatEnabled();
@@ -229,28 +281,35 @@ package net.wg.gui.lobby.settings
       {
          this.breakSoundCheck();
          this.forceFinishVivoxTest();
-         systemMixerVolumeDisabledLink.removeEventListener(MouseEvent.CLICK,this.onSystemMixerVolumeDisabledLinkClickHandler);
-         btnCaptureDevicesUpdate.removeEventListener(ButtonEvent.CLICK,this.onBtnCaptureDevicesUpdateClickHandler);
-         soundSpeakersTestButton.removeEventListener(ButtonEvent.CLICK,this.onSoundSpeakersTestButtonClickHandler);
-         btnVivoxTest.removeEventListener(ButtonEvent.CLICK,this.onBtnVivoxTestClickHandler);
-         testAlternativeVoicesButton.removeEventListener(ButtonEvent.CLICK,this.onTestAlternativeVoicesButtonClickHandler);
-         testAlternativeVoicesButton.removeEventListener(MouseEvent.MOUSE_OVER,this.onTestAlternativeVoicesButtonMouseOverHandler);
-         testAlternativeVoicesButton.removeEventListener(MouseEvent.MOUSE_OUT,this.onTestAlternativeVoicesButtonMouseOutHandler);
-         bulbVoicesButton.removeEventListener(ButtonEvent.CLICK,this.onTestBulbVoicesButtonClickHandler);
-         bulbVoicesButton.removeEventListener(MouseEvent.MOUSE_OVER,this.onTestBulbVoicesButtonMouseOverHandler);
-         bulbVoicesButton.removeEventListener(MouseEvent.MOUSE_OUT,this.onTestBulbVoicesButtonMouseOutHandler);
-         artyBulbVoicesButton.removeEventListener(ButtonEvent.CLICK,this.onArtyBulbVoicesButtonClickHandler);
-         artyBulbVoicesButton.removeEventListener(MouseEvent.MOUSE_OVER,this.onArtyBulbVoicesButtonMouseOverHandler);
-         artyBulbVoicesButton.removeEventListener(MouseEvent.MOUSE_OUT,this.onArtyBulbVoicesButtonMouseOutHandler);
-         PTTKeyInput.removeEventListener(KeyInputEvents.DISABLE_OVER,this.onPTTKeyInputDisableOverHandler);
-         PTTKeyInput.removeEventListener(KeyInputEvents.DISABLE_OUT,this.onPTTKeyInputDisableOutHandler);
-         PTTKeyInput.removeEventListener(KeyInputEvents.DISABLE_PRESS,this.onPTTKeyInputDisablePressHandler);
-         PTTKeyInput.removeEventListener(KeyInputEvents.CHANGE,this.onPTTKeyInputChangeHandler);
+         var _loc1_:SoundSettingsBase = this.getContent();
+         _loc1_.btnCaptureDevicesUpdate.removeEventListener(ButtonEvent.CLICK,this.onBtnCaptureDevicesUpdateClickHandler);
+         _loc1_.soundSpeakersTestButton.removeEventListener(ButtonEvent.CLICK,this.onSoundSpeakersTestButtonClickHandler);
+         _loc1_.btnVivoxTest.removeEventListener(ButtonEvent.CLICK,this.onBtnVivoxTestClickHandler);
+         _loc1_.testAlternativeVoicesButton.removeEventListener(ButtonEvent.CLICK,this.onTestAlternativeVoicesButtonClickHandler);
+         _loc1_.testAlternativeVoicesButton.removeEventListener(MouseEvent.MOUSE_OVER,this.onTestAlternativeVoicesButtonMouseOverHandler);
+         _loc1_.testAlternativeVoicesButton.removeEventListener(MouseEvent.MOUSE_OUT,this.onTestAlternativeVoicesButtonMouseOutHandler);
+         _loc1_.bulbVoicesButton.removeEventListener(ButtonEvent.CLICK,this.onTestBulbVoicesButtonClickHandler);
+         _loc1_.bulbVoicesButton.removeEventListener(MouseEvent.MOUSE_OVER,this.onTestBulbVoicesButtonMouseOverHandler);
+         _loc1_.bulbVoicesButton.removeEventListener(MouseEvent.MOUSE_OUT,this.onTestBulbVoicesButtonMouseOutHandler);
+         _loc1_.artyBulbVoicesButton.removeEventListener(ButtonEvent.CLICK,this.onArtyBulbVoicesButtonClickHandler);
+         _loc1_.artyBulbVoicesButton.removeEventListener(MouseEvent.MOUSE_OVER,this.onArtyBulbVoicesButtonMouseOverHandler);
+         _loc1_.artyBulbVoicesButton.removeEventListener(MouseEvent.MOUSE_OUT,this.onArtyBulbVoicesButtonMouseOutHandler);
+         _loc1_.PTTKeyInput.removeEventListener(KeyInputEvents.DISABLE_OVER,this.onPTTKeyInputDisableOverHandler);
+         _loc1_.PTTKeyInput.removeEventListener(KeyInputEvents.DISABLE_OUT,this.onPTTKeyInputDisableOutHandler);
+         _loc1_.PTTKeyInput.removeEventListener(KeyInputEvents.DISABLE_PRESS,this.onPTTKeyInputDisablePressHandler);
+         _loc1_.PTTKeyInput.removeEventListener(KeyInputEvents.CHANGE,this.onPTTKeyInputChangeHandler);
+         _loc1_.tabs.removeEventListener(IndexEvent.INDEX_CHANGE,this.onTabsIndexChangeHandler);
          this.controlsUnsubscribe();
+         if(this._warningMessageBlock)
+         {
+            this._warningMessageBlock.dispose();
+            this._warningMessageBlock = null;
+         }
          this._toolTipMgr = null;
          this._existsBulbVoices = null;
          this._existsArtyBulbVoices = null;
-         tabs.removeEventListener(IndexEvent.INDEX_CHANGE,this.onTabsIndexChangeHandler);
+         this.scrollPane.dispose();
+         this.scrollPane = null;
          super.onDispose();
       }
       
@@ -262,39 +321,48 @@ package net.wg.gui.lobby.settings
          }
       }
       
+      public function getContent() : SoundSettingsBase
+      {
+         return this.scrollPane.target as SoundSettingsBase;
+      }
+      
       public function getHitArea() : DisplayObject
       {
-         return soundSpeakersTestButton;
+         return this.getContent().soundSpeakersTestButton;
       }
       
       public function getTargetButton() : DisplayObject
       {
-         return soundSpeakersTestButton;
+         return this.getContent().soundSpeakersTestButton;
       }
       
       public function isCanSelectAcousticType(param1:Boolean) : void
       {
+         var _loc2_:SoundSettingsBase = null;
          if(param1)
          {
-            this.applyNewSoundSpeakers(soundSpeakersDropDown.selectedIndex);
-            soundDeviceAlert.visible = this._isAcousticsAlertVisible = !param1;
+            _loc2_ = this.getContent();
+            this.applyNewSoundSpeakers(_loc2_.soundSpeakersDropDown.selectedIndex);
+            _loc2_.soundDeviceAlert.visible = this._isAcousticsAlertVisible = !param1;
          }
       }
       
       public function isPresetApply(param1:Boolean) : void
       {
-         var _loc2_:SettingsControlProp = null;
+         var _loc4_:SettingsControlProp = null;
+         var _loc2_:SoundSettingsBase = this.getContent();
+         var _loc3_:DropdownMenu = _loc2_.soundSpeakersDropDown;
          if(param1)
          {
-            this.applyNewSoundSpeakers(soundSpeakersDropDown.selectedIndex);
-            soundDeviceAlert.visible = this._isAcousticsAlertVisible = true;
+            this.applyNewSoundSpeakers(_loc3_.selectedIndex);
+            _loc2_.soundDeviceAlert.visible = this._isAcousticsAlertVisible = true;
          }
          else
          {
-            _loc2_ = SettingsControlProp(data[SettingsConfigHelper.SOUND_SPEAKERS]);
-            soundSpeakersDropDown.removeEventListener(ListEvent.INDEX_CHANGE,this.onDropdownIndexChangeHandler);
-            soundSpeakersDropDown.selectedIndex = Number(_loc2_.changedVal);
-            soundSpeakersDropDown.addEventListener(ListEvent.INDEX_CHANGE,this.onDropdownIndexChangeHandler);
+            _loc4_ = SettingsControlProp(data[SettingsConfigHelper.SOUND_SPEAKERS]);
+            _loc3_.removeEventListener(ListEvent.INDEX_CHANGE,this.onDropdownIndexChangeHandler);
+            _loc3_.selectedIndex = Number(_loc4_.changedVal);
+            _loc3_.addEventListener(ListEvent.INDEX_CHANGE,this.onDropdownIndexChangeHandler);
          }
       }
       
@@ -305,47 +373,42 @@ package net.wg.gui.lobby.settings
       
       public function setCaptureDevices(param1:Number, param2:DataProvider) : void
       {
-         captureDeviceDropDown.dataProvider = param2;
-         captureDeviceDropDown.selectedIndex = param1;
-         var _loc3_:String = SettingsConfigHelper.instance.getControlIdByControlNameAndType(captureDeviceDropDown.name,SettingsConfigHelper.TYPE_DROPDOWN);
-         var _loc4_:SettingsControlProp = SettingsControlProp(data[_loc3_]);
-         if(param2.length != _loc4_.options.length)
+         var _loc3_:DropdownMenu = this.getContent().captureDeviceDropDown;
+         _loc3_.dataProvider = param2;
+         _loc3_.selectedIndex = param1;
+         var _loc4_:String = SettingsConfigHelper.instance.getControlIdByControlNameAndType(_loc3_.name,SettingsConfigHelper.TYPE_DROPDOWN);
+         var _loc5_:SettingsControlProp = SettingsControlProp(data[_loc4_]);
+         if(param2.length != _loc5_.options.length)
          {
-            _loc4_.current = -1;
+            _loc5_.current = -1;
          }
-         _loc4_.options = param2;
-         dispatchEvent(new SettingViewEvent(SettingViewEvent.ON_CONTROL_CHANGED,viewId,null,_loc3_,param1));
+         _loc5_.options = param2;
+         dispatchEvent(new SettingViewEvent(SettingViewEvent.ON_CONTROL_CHANGED,viewId,null,_loc4_,param1));
          this.updateVoiceChatEnabled();
       }
       
-      public function setVoiceTestStarted(param1:Boolean) : void
+      public function setSystemMixerVolumeDisabled(param1:Boolean) : void
       {
-         if(this._isVoiceTestStarted == param1)
-         {
-            return;
-         }
-         this._isVoiceTestStarted = param1;
-         voiceWaiting.visible = this._isVoiceTestStarted;
-         if(!this._isVOIPButtonForceDisabled)
-         {
-            btnVivoxTest.enabled = !this._isVoiceTestStarted;
-         }
-         btnCaptureDevicesUpdate.enabled = !this._isVoiceTestStarted;
-         btnVivoxTest.label = !!this._isVoiceTestStarted ? SETTINGS.SOUND_VIVOX_BUTTONS_TEST_INIT : SETTINGS.SOUND_VIVOX_BUTTONS_TEST_START;
-         if(!this._isVoiceTestStarted)
-         {
-            this.forceFinishVivoxTest();
-         }
+         this._isSystemMixerVolumeDisabled = param1;
+         this.setMasterVolumeToggleCheckboxAdditionalProps();
+      }
+      
+      public function setVOIPButtonState(param1:Boolean) : void
+      {
+         this._isVOIPButtonForceDisabled = !param1;
+         this.getContent().btnVivoxTest.enabled = param1;
       }
       
       public function setVoiceTestReady(param1:Boolean) : void
       {
-         voiceWaiting.visible = false;
-         btnVivoxTest.label = SETTINGS.SOUND_VIVOX_BUTTONS_TEST_START;
+         var _loc2_:SoundSettingsBase = this.getContent();
+         var _loc3_:SoundButtonEx = _loc2_.btnVivoxTest;
+         _loc2_.voiceWaiting.visible = false;
+         _loc3_.label = SETTINGS.SOUND_VIVOX_BUTTONS_TEST_START;
          if(param1)
          {
-            voiceAnimation.speak(true);
-            btnVivoxTest.enabled = btnCaptureDevicesUpdate.enabled = false;
+            _loc2_.voiceAnimation.speak(true);
+            _loc3_.enabled = _loc2_.btnCaptureDevicesUpdate.enabled = false;
             this._vivoxTestTimeLeft = VOICE_TEST_DURATION;
             App.utils.scheduler.scheduleRepeatableTask(this.voiceTimerTest,VOICE_TEST_UPDATE_RATE * Time.MILLISECOND_IN_SECOND,VOICE_TEST_DURATION / VOICE_TEST_UPDATE_RATE + 1);
          }
@@ -355,67 +418,84 @@ package net.wg.gui.lobby.settings
          }
       }
       
-      public function updateAcousticDeviceByType(param1:String) : void
+      public function setVoiceTestStarted(param1:Boolean) : void
       {
-         var _loc2_:IDataProvider = soundSpeakersDropDown.dataProvider;
-         if(!_loc2_)
+         if(this._isVoiceTestStarted == param1)
          {
             return;
          }
-         var _loc3_:int = _loc2_.length;
-         var _loc4_:int = 0;
-         var _loc5_:Object = null;
-         _loc4_ = 0;
-         while(_loc4_ < _loc3_)
+         this._isVoiceTestStarted = param1;
+         var _loc2_:SoundSettingsBase = this.getContent();
+         _loc2_.voiceWaiting.visible = this._isVoiceTestStarted;
+         if(!this._isVOIPButtonForceDisabled)
          {
-            _loc5_ = _loc2_.requestItemAt(_loc4_);
-            if(_loc5_.hasOwnProperty(SettingsConfigHelper.SOUND_SPEAKERS_ID_FIELD) && _loc5_[SettingsConfigHelper.SOUND_SPEAKERS_ID_FIELD] == param1)
+            _loc2_.btnVivoxTest.enabled = !this._isVoiceTestStarted;
+         }
+         _loc2_.btnCaptureDevicesUpdate.enabled = !this._isVoiceTestStarted;
+         _loc2_.btnVivoxTest.label = !!this._isVoiceTestStarted ? SETTINGS.SOUND_VIVOX_BUTTONS_TEST_INIT : SETTINGS.SOUND_VIVOX_BUTTONS_TEST_START;
+         if(!this._isVoiceTestStarted)
+         {
+            this.forceFinishVivoxTest();
+         }
+      }
+      
+      public function updateAcousticDeviceByType(param1:String) : void
+      {
+         var _loc2_:SoundSettingsBase = this.getContent();
+         var _loc3_:IDataProvider = _loc2_.soundSpeakersDropDown.dataProvider;
+         if(!_loc3_)
+         {
+            return;
+         }
+         var _loc4_:int = _loc3_.length;
+         var _loc5_:int = 0;
+         var _loc6_:Object = null;
+         _loc5_ = 0;
+         while(_loc5_ < _loc4_)
+         {
+            _loc6_ = _loc3_.requestItemAt(_loc5_);
+            if(_loc6_.hasOwnProperty(SettingsConfigHelper.SOUND_SPEAKERS_ID_FIELD) && _loc6_[SettingsConfigHelper.SOUND_SPEAKERS_ID_FIELD] == param1)
             {
-               this.updateAcousticDeviceLabel(_loc5_);
-               soundSpeakersTestButton.enabled = true;
+               this.updateAcousticDeviceLabel(_loc6_);
+               _loc2_.soundSpeakersTestButton.enabled = true;
                break;
             }
-            _loc4_++;
+            _loc5_++;
          }
       }
       
       public function updatePTTControl(param1:Number) : void
       {
-         PTTKeyInput.key = param1;
-      }
-      
-      public function setSystemMixerVolumeDisabled(param1:Boolean) : void
-      {
-         this._isSystemMixerVolumeDisabled = param1;
-         this.setMasterVolumeToggleCheckboxAdditionalProps();
+         this.getContent().PTTKeyInput.key = param1;
       }
       
       private function updatesPttKeyList() : void
       {
-         var _loc6_:int = 0;
-         var _loc7_:String = null;
-         var _loc11_:Object = null;
-         var _loc1_:SettingsConfigHelper = SettingsConfigHelper.instance;
-         var _loc2_:SettingsDataVo = _loc1_.getDataItem(SettingsConfigHelper.CONTROLS_SETTINGS,true);
-         var _loc3_:SettingsDataVo = SettingsDataVo(_loc2_.getByKey(SettingsConfigHelper.KEYBOARD));
-         var _loc4_:Vector.<Object> = _loc3_.values;
-         var _loc5_:Array = this.copyItemsInUpperCase(SettingsConfigHelper.pttKeyRange);
-         var _loc8_:IUtils = App.utils;
-         var _loc9_:ICommons = _loc8_.commons;
-         var _loc10_:String = _loc8_.toUpperOrLowerCase(_loc9_.keyToString(PTTKeyInput.key).keyCommand,true);
-         for each(_loc11_ in _loc4_)
+         var _loc7_:int = 0;
+         var _loc8_:String = null;
+         var _loc12_:Object = null;
+         var _loc1_:KeyInput = this.getContent().PTTKeyInput;
+         var _loc2_:SettingsConfigHelper = SettingsConfigHelper.instance;
+         var _loc3_:SettingsDataVo = _loc2_.getDataItem(SettingsConfigHelper.CONTROLS_SETTINGS,true);
+         var _loc4_:SettingsDataVo = SettingsDataVo(_loc3_.getByKey(SettingsConfigHelper.KEYBOARD));
+         var _loc5_:Vector.<Object> = _loc4_.values;
+         var _loc6_:Array = this.copyItemsInUpperCase(SettingsConfigHelper.pttKeyRange);
+         var _loc9_:IUtils = App.utils;
+         var _loc10_:ICommons = _loc9_.commons;
+         var _loc11_:String = _loc9_.toUpperOrLowerCase(_loc10_.keyToString(_loc1_.key).keyCommand,true);
+         for each(_loc12_ in _loc5_)
          {
-            _loc7_ = _loc8_.toUpperOrLowerCase(_loc9_.keyToString(SettingsKeyProp(_loc11_).key).keyCommand,true);
-            if(_loc7_ != _loc10_)
+            _loc8_ = _loc9_.toUpperOrLowerCase(_loc10_.keyToString(SettingsKeyProp(_loc12_).key).keyCommand,true);
+            if(_loc8_ != _loc11_)
             {
-               _loc6_ = _loc5_.indexOf(_loc8_.toUpperOrLowerCase(_loc7_,true));
-               if(_loc6_ >= 0)
+               _loc7_ = _loc6_.indexOf(_loc9_.toUpperOrLowerCase(_loc8_,true));
+               if(_loc7_ >= 0)
                {
-                  _loc5_.splice(_loc6_,1);
+                  _loc6_.splice(_loc7_,1);
                }
             }
          }
-         PTTKeyInput.keys = _loc5_;
+         _loc1_.keys = _loc6_;
       }
       
       private function copyItemsInUpperCase(param1:Array) : Array
@@ -434,37 +514,39 @@ package net.wg.gui.lobby.settings
          var _loc1_:String = null;
          var _loc2_:IEventDispatcher = null;
          var _loc3_:int = 0;
-         var _loc4_:String = null;
-         var _loc5_:int = 0;
+         var _loc4_:SoundSettingsBase = null;
+         var _loc5_:String = null;
+         var _loc6_:int = 0;
          if(data && data.keys)
          {
             _loc3_ = data.keys.length;
-            _loc5_ = 0;
-            while(_loc5_ < _loc3_)
+            _loc4_ = this.getContent();
+            _loc6_ = 0;
+            while(_loc6_ < _loc3_)
             {
-               _loc1_ = data.keys[_loc5_];
-               _loc4_ = SettingsControlProp(data.values[_loc5_]).type;
-               _loc2_ = this[_loc1_ + _loc4_] as IEventDispatcher;
+               _loc1_ = data.keys[_loc6_];
+               _loc5_ = SettingsControlProp(data.values[_loc6_]).type;
+               _loc2_ = _loc4_[_loc1_ + _loc5_] as IEventDispatcher;
                if(_loc2_)
                {
-                  if(_loc4_ == SettingsConfigHelper.TYPE_CHECKBOX)
+                  if(_loc5_ == SettingsConfigHelper.TYPE_CHECKBOX)
                   {
                      _loc2_.removeEventListener(Event.SELECT,this.onCheckboxSelectHandler);
                   }
-                  else if(_loc4_ == SettingsConfigHelper.TYPE_SLIDER)
+                  else if(_loc5_ == SettingsConfigHelper.TYPE_SLIDER)
                   {
                      _loc2_.removeEventListener(SliderEvent.VALUE_CHANGE,this.onSliderValueChangeHandler);
                   }
-                  else if(_loc4_ == SettingsConfigHelper.TYPE_DROPDOWN)
+                  else if(_loc5_ == SettingsConfigHelper.TYPE_DROPDOWN)
                   {
                      _loc2_.removeEventListener(ListEvent.INDEX_CHANGE,this.onDropdownIndexChangeHandler);
                   }
-                  else if(_loc4_ == SettingsConfigHelper.TYPE_BUTTON_BAR)
+                  else if(_loc5_ == SettingsConfigHelper.TYPE_BUTTON_BAR)
                   {
                      _loc2_.removeEventListener(IndexEvent.INDEX_CHANGE,this.onButtonBarIndexChangeHandler);
                   }
                }
-               _loc5_++;
+               _loc6_++;
             }
          }
       }
@@ -493,16 +575,17 @@ package net.wg.gui.lobby.settings
       {
          param1.value = Number(param4.current);
          param1.addEventListener(SliderEvent.VALUE_CHANGE,this.onSliderValueChangeHandler);
-         var _loc5_:LabelControl = this[param2 + SettingsConfigHelper.TYPE_VALUE] as LabelControl;
-         if(_loc5_ && param4.hasValue)
+         var _loc5_:SoundSettingsBase = this.getContent();
+         var _loc6_:LabelControl = _loc5_[param2 + SettingsConfigHelper.TYPE_VALUE] as LabelControl;
+         if(_loc6_ && param4.hasValue)
          {
-            _loc5_.text = param4.current.toString();
+            _loc6_.text = param4.current.toString();
          }
-         var _loc6_:Array = param4.options;
-         if(_loc6_ && _loc6_.length == COUNT_SLIDER_MIN_MAX_OPTIONS)
+         var _loc7_:Array = param4.options;
+         if(_loc7_ && _loc7_.length == COUNT_SLIDER_MIN_MAX_OPTIONS)
          {
-            param1.minimum = _loc6_[0];
-            param1.maximum = _loc6_[1];
+            param1.minimum = _loc7_[0];
+            param1.maximum = _loc7_[1];
          }
          param1.enabled = param3;
       }
@@ -543,7 +626,7 @@ package net.wg.gui.lobby.settings
          this._vivoxTestTimeLeft -= VOICE_TEST_UPDATE_RATE;
          if(this._vivoxTestTimeLeft > 0)
          {
-            voiceAnimationText.text = this._vivoxTestTimeLeft.toFixed(1);
+            this.getContent().voiceAnimationText.text = this._vivoxTestTimeLeft.toFixed(1);
          }
          else
          {
@@ -554,75 +637,77 @@ package net.wg.gui.lobby.settings
       private function forceFinishVivoxTest() : void
       {
          App.utils.scheduler.cancelTask(this.voiceTimerTest);
+         var _loc1_:SoundSettingsBase = this.getContent();
          this._isVoiceTestStarted = false;
          this._vivoxTestTimeLeft = 0;
-         voiceAnimationText.text = Values.EMPTY_STR;
+         _loc1_.voiceAnimationText.text = Values.EMPTY_STR;
          if(!this._isVOIPButtonForceDisabled)
          {
-            btnVivoxTest.enabled = true;
+            _loc1_.btnVivoxTest.enabled = true;
          }
-         btnCaptureDevicesUpdate.enabled = true;
-         voiceAnimation.speak(false);
-         voiceWaiting.visible = false;
-      }
-      
-      public function setVOIPButtonState(param1:Boolean) : void
-      {
-         this._isVOIPButtonForceDisabled = !param1;
-         btnVivoxTest.enabled = param1;
+         _loc1_.btnCaptureDevicesUpdate.enabled = true;
+         _loc1_.voiceAnimation.speak(false);
+         _loc1_.voiceWaiting.visible = false;
       }
       
       private function updateMasterVolumeEnabled() : void
       {
-         this._masterVolumeSelected = masterVolumeToggleCheckbox.selected;
-         masterVolumeLabel.enabled = this._masterVolumeSelected;
-         masterVolumeSlider.enabled = this._masterVolumeSelected;
-         masterVolumeValue.enabled = this._masterVolumeSelected;
-         guiVolumeLabel.enabled = this._masterVolumeSelected;
-         guiVolumeSlider.enabled = this._masterVolumeSelected;
-         guiVolumeValue.enabled = this._masterVolumeSelected;
-         vehiclesVolumeLabel.enabled = this._masterVolumeSelected;
-         vehiclesVolumeSlider.enabled = this._masterVolumeSelected;
-         vehiclesVolumeValue.enabled = this._masterVolumeSelected;
-         voiceNotificationVolumeLabel.enabled = this._masterVolumeSelected;
-         voiceNotificationVolumeSlider.enabled = this._masterVolumeSelected;
-         voiceNotificationVolumeValue.enabled = this._masterVolumeSelected;
-         effectsVolumeLabel.enabled = this._masterVolumeSelected;
-         effectsVolumeSlider.enabled = this._masterVolumeSelected;
-         effectsVolumeValue.enabled = this._masterVolumeSelected;
-         ambientVolumeLabel.enabled = this._masterVolumeSelected;
-         ambientVolumeSlider.enabled = this._masterVolumeSelected;
-         ambientVolumeValue.enabled = this._masterVolumeSelected;
-         musicVolumeLabel.enabled = this._masterVolumeSelected;
-         musicVolumeSlider.enabled = this._masterVolumeSelected;
-         musicVolumeValue.enabled = this._masterVolumeSelected;
-         musicHangarLabel.enabled = this._masterVolumeSelected;
-         musicHangarSlider.enabled = this._masterVolumeSelected;
-         musicHangarValue.enabled = this._masterVolumeSelected;
-         if(soundDeviceButtonBar != null)
+         var _loc1_:SoundSettingsBase = this.getContent();
+         this._masterVolumeSelected = _loc1_.masterVolumeToggleCheckbox.selected;
+         _loc1_.masterVolumeLabel.enabled = this._masterVolumeSelected;
+         _loc1_.masterVolumeSlider.enabled = this._masterVolumeSelected;
+         _loc1_.masterVolumeValue.enabled = this._masterVolumeSelected;
+         _loc1_.guiVolumeLabel.enabled = this._masterVolumeSelected;
+         _loc1_.guiVolumeSlider.enabled = this._masterVolumeSelected;
+         _loc1_.guiVolumeValue.enabled = this._masterVolumeSelected;
+         _loc1_.vehiclesVolumeLabel.enabled = this._masterVolumeSelected;
+         _loc1_.vehiclesVolumeSlider.enabled = this._masterVolumeSelected;
+         _loc1_.vehiclesVolumeValue.enabled = this._masterVolumeSelected;
+         _loc1_.voiceNotificationVolumeLabel.enabled = this._masterVolumeSelected;
+         _loc1_.voiceNotificationVolumeSlider.enabled = this._masterVolumeSelected;
+         _loc1_.voiceNotificationVolumeValue.enabled = this._masterVolumeSelected;
+         _loc1_.effectsVolumeLabel.enabled = this._masterVolumeSelected;
+         _loc1_.effectsVolumeSlider.enabled = this._masterVolumeSelected;
+         _loc1_.effectsVolumeValue.enabled = this._masterVolumeSelected;
+         _loc1_.ambientVolumeLabel.enabled = this._masterVolumeSelected;
+         _loc1_.ambientVolumeSlider.enabled = this._masterVolumeSelected;
+         _loc1_.ambientVolumeValue.enabled = this._masterVolumeSelected;
+         _loc1_.musicVolumeLabel.enabled = this._masterVolumeSelected;
+         _loc1_.musicVolumeSlider.enabled = this._masterVolumeSelected;
+         _loc1_.musicVolumeValue.enabled = this._masterVolumeSelected;
+         _loc1_.musicHangarLabel.enabled = this._masterVolumeSelected;
+         _loc1_.musicHangarSlider.enabled = this._masterVolumeSelected;
+         _loc1_.musicHangarValue.enabled = this._masterVolumeSelected;
+         if(_loc1_.soundDeviceButtonBar != null)
          {
-            soundDeviceButtonBar.enabled = this._masterVolumeSelected;
+            _loc1_.soundDeviceButtonBar.enabled = this._masterVolumeSelected;
          }
-         bassBoostCheckbox.enabled = this._masterVolumeSelected;
-         nightModeCheckbox.enabled = this._masterVolumeSelected;
-         testAlternativeVoicesButton.enabled = this._masterVolumeSelected;
-         commonForm.bulbIcon.alpha = !!this._masterVolumeSelected ? Number(ENABLE_ALPHA) : Number(DISABLE_ALPHA);
-         bulbVoicesLabel.enabled = this._masterVolumeSelected;
-         bulbVoicesDropDown.enabled = this._masterVolumeSelected;
-         bulbVoicesButton.enabled = this._masterVolumeSelected && this._existsBulbVoices[bulbVoicesDropDown.selectedIndex];
-         commonForm.bulbIcon.enabled = this._masterVolumeSelected;
-         artyBulbVoicesIcon.alpha = !!this._masterVolumeSelected ? Number(ENABLE_ALPHA) : Number(DISABLE_ALPHA);
-         artyBulbVoicesIcon.enabled = this._masterVolumeSelected;
-         artyBulbVoicesLabel.enabled = this._masterVolumeSelected;
-         artyBulbVoicesDropDown.enabled = this._masterVolumeSelected;
-         artyBulbVoicesButton.enabled = this._masterVolumeSelected && this._existsArtyBulbVoices[artyBulbVoicesDropDown.selectedIndex];
-         commonForm.alternativeVoicesIcon.alpha = !!this._masterVolumeSelected ? Number(ENABLE_ALPHA) : Number(DISABLE_ALPHA);
-         commonForm.alternativeVoicesIcon.enabled = this._masterVolumeSelected;
-         alternativeVoicesDropDown.enabled = this._masterVolumeSelected;
-         alternativeVoicesLabel.enabled = this._masterVolumeSelected;
-         soundQualityCheckbox.enabled = this._masterVolumeSelected;
-         subtitlesCheckbox.enabled = this._masterVolumeSelected;
-         soundSpeakersTestButton.enabled = this._masterVolumeSelected;
+         _loc1_.bassBoostCheckbox.enabled = this._masterVolumeSelected;
+         _loc1_.nightModeCheckbox.enabled = this._masterVolumeSelected;
+         _loc1_.testAlternativeVoicesButton.enabled = this._masterVolumeSelected;
+         var _loc2_:SoundCommonForm = _loc1_.commonForm;
+         var _loc3_:UILoaderAlt = _loc2_.bulbIcon;
+         _loc3_.alpha = !!this._masterVolumeSelected ? Number(ENABLE_ALPHA) : Number(DISABLE_ALPHA);
+         _loc3_.enabled = this._masterVolumeSelected;
+         _loc1_.bulbVoicesLabel.enabled = this._masterVolumeSelected;
+         var _loc4_:DropdownMenu = _loc1_.bulbVoicesDropDown;
+         _loc4_.enabled = this._masterVolumeSelected;
+         _loc1_.bulbVoicesButton.enabled = this._masterVolumeSelected && this._existsBulbVoices[_loc4_.selectedIndex];
+         var _loc5_:UILoaderAlt = _loc1_.artyBulbVoicesIcon;
+         _loc5_.alpha = !!this._masterVolumeSelected ? Number(ENABLE_ALPHA) : Number(DISABLE_ALPHA);
+         _loc5_.enabled = this._masterVolumeSelected;
+         _loc1_.artyBulbVoicesLabel.enabled = this._masterVolumeSelected;
+         var _loc6_:DropdownMenu = _loc1_.artyBulbVoicesDropDown;
+         _loc6_.enabled = this._masterVolumeSelected;
+         _loc1_.artyBulbVoicesButton.enabled = this._masterVolumeSelected && this._existsArtyBulbVoices[_loc6_.selectedIndex];
+         var _loc7_:UILoaderAlt = _loc2_.alternativeVoicesIcon;
+         _loc7_.alpha = !!this._masterVolumeSelected ? Number(ENABLE_ALPHA) : Number(DISABLE_ALPHA);
+         _loc7_.enabled = this._masterVolumeSelected;
+         _loc1_.alternativeVoicesDropDown.enabled = this._masterVolumeSelected;
+         _loc1_.alternativeVoicesLabel.enabled = this._masterVolumeSelected;
+         _loc1_.soundQualityCheckbox.enabled = this._masterVolumeSelected;
+         _loc1_.subtitlesCheckbox.enabled = this._masterVolumeSelected;
+         _loc1_.soundSpeakersTestButton.enabled = this._masterVolumeSelected;
          this.updateSoundSpeakersDropDown();
          this.setMasterVolumeToggleCheckboxAdditionalProps();
       }
@@ -630,46 +715,50 @@ package net.wg.gui.lobby.settings
       private function updateVoiceChatEnabled() : void
       {
          this.breakSoundCheck();
-         var _loc1_:Boolean = enableVoIPCheckbox.selected && SettingsControlProp(data[SettingsConfigHelper.VOICE_CHAT_SUPPORTED]).current;
-         btnCaptureDevicesUpdate.enabled = _loc1_;
-         masterVivoxVolumeLabel.enabled = _loc1_;
-         masterVivoxVolumeSlider.enabled = _loc1_;
-         masterFadeVivoxVolumeLabel.enabled = _loc1_;
-         masterFadeVivoxVolumeSlider.enabled = _loc1_;
-         var _loc2_:Boolean = _loc1_ && captureDeviceDropDown.dataProvider.length > 0;
-         captureDeviceLabel.enabled = _loc2_;
-         captureDeviceDropDown.enabled = _loc2_;
-         micVivoxVolumeLabel.enabled = _loc2_;
-         micVivoxVolumeSlider.enabled = _loc2_;
+         var _loc1_:SoundSettingsBase = this.getContent();
+         var _loc2_:Boolean = _loc1_.enableVoIPCheckbox.selected && SettingsControlProp(data[SettingsConfigHelper.VOICE_CHAT_SUPPORTED]).current;
+         _loc1_.btnCaptureDevicesUpdate.enabled = _loc2_;
+         _loc1_.masterVivoxVolumeLabel.enabled = _loc2_;
+         _loc1_.masterVivoxVolumeSlider.enabled = _loc2_;
+         _loc1_.masterFadeVivoxVolumeLabel.enabled = _loc2_;
+         _loc1_.masterFadeVivoxVolumeSlider.enabled = _loc2_;
+         var _loc3_:DropdownMenu = _loc1_.captureDeviceDropDown;
+         var _loc4_:Boolean = _loc2_ && _loc3_.dataProvider.length > 0;
+         _loc3_.enabled = _loc4_;
+         _loc1_.captureDeviceLabel.enabled = _loc4_;
+         _loc1_.micVivoxVolumeLabel.enabled = _loc4_;
+         _loc1_.micVivoxVolumeSlider.enabled = _loc4_;
          if(!this._isVOIPButtonForceDisabled)
          {
-            btnVivoxTest.enabled = _loc2_;
+            _loc1_.btnVivoxTest.enabled = _loc4_;
          }
-         micVivoxVolumeValue.enabled = _loc1_;
-         masterFadeVivoxVolumeValue.enabled = _loc1_;
-         masterVivoxVolumeValue.enabled = _loc1_;
+         _loc1_.micVivoxVolumeValue.enabled = _loc2_;
+         _loc1_.masterFadeVivoxVolumeValue.enabled = _loc2_;
+         _loc1_.masterVivoxVolumeValue.enabled = _loc2_;
       }
       
       private function showHideVoiceSettings(param1:Boolean) : void
       {
-         voiceConnectFieldSet.visible = param1;
-         PTTLabel.visible = param1;
-         PTTKeyInput.visible = param1;
-         captureDeviceLabel.visible = param1;
-         captureDeviceDropDown.visible = param1;
-         btnCaptureDevicesUpdate.visible = param1;
-         btnVivoxTest.visible = param1;
-         voiceAnimation.visible = param1;
-         voiceAnimationText.text = !!param1 ? voiceAnimationText.text : Values.EMPTY_STR;
-         masterVivoxVolumeLabel.visible = param1;
-         masterVivoxVolumeSlider.visible = param1;
-         masterVivoxVolumeValue.visible = param1;
-         micVivoxVolumeLabel.visible = param1;
-         micVivoxVolumeSlider.visible = param1;
-         micVivoxVolumeValue.visible = param1;
-         masterFadeVivoxVolumeLabel.visible = param1;
-         masterFadeVivoxVolumeSlider.visible = param1;
-         masterFadeVivoxVolumeValue.visible = param1;
+         var _loc2_:SoundSettingsBase = this.getContent();
+         _loc2_.voiceConnectFieldSet.visible = param1;
+         _loc2_.PTTLabel.visible = param1;
+         _loc2_.PTTKeyInput.visible = param1;
+         _loc2_.captureDeviceLabel.visible = param1;
+         _loc2_.captureDeviceDropDown.visible = param1;
+         _loc2_.btnCaptureDevicesUpdate.visible = param1;
+         _loc2_.btnVivoxTest.visible = param1;
+         _loc2_.voiceAnimation.visible = param1;
+         var _loc3_:TextField = _loc2_.voiceAnimationText;
+         _loc3_.text = !!param1 ? _loc3_.text : Values.EMPTY_STR;
+         _loc2_.masterVivoxVolumeLabel.visible = param1;
+         _loc2_.masterVivoxVolumeSlider.visible = param1;
+         _loc2_.masterVivoxVolumeValue.visible = param1;
+         _loc2_.micVivoxVolumeLabel.visible = param1;
+         _loc2_.micVivoxVolumeSlider.visible = param1;
+         _loc2_.micVivoxVolumeValue.visible = param1;
+         _loc2_.masterFadeVivoxVolumeLabel.visible = param1;
+         _loc2_.masterFadeVivoxVolumeSlider.visible = param1;
+         _loc2_.masterFadeVivoxVolumeValue.visible = param1;
       }
       
       private function hideTooltip() : void
@@ -687,7 +776,7 @@ package net.wg.gui.lobby.settings
       
       private function updateSoundDeviceLabel(param1:String, param2:String, param3:String) : void
       {
-         soundDeviceButtonBar.updateDataById(param1,param2,param3);
+         this.getContent().soundDeviceButtonBar.updateDataById(param1,param2,param3);
       }
       
       private function applyNewSoundSpeakers(param1:Number) : void
@@ -705,23 +794,52 @@ package net.wg.gui.lobby.settings
          var _loc4_:String = _loc3_.options[param1][SettingsConfigHelper.SOUND_DEVICE_ID_FIELD];
          this._typeAcousticsSelected = _loc4_ == ACOUSTICS.TYPE_ACOUSTICS;
          this.updateSoundSpeakersDropDown();
+         var _loc5_:InfoIcon = this.getContent().soundDeviceAlert;
          if(this._typeAcousticsSelected)
          {
             if(param2)
             {
                this._isAcousticsAlertVisible = _loc3_.options[param1][SettingsConfigHelper.SOUND_DEVICE_ALERT_FIELD];
             }
-            soundDeviceAlert.visible = this._isAcousticsAlertVisible;
+            _loc5_.visible = this._isAcousticsAlertVisible;
          }
          else
          {
-            soundDeviceAlert.visible = _loc3_.options[param1][SettingsConfigHelper.SOUND_DEVICE_ALERT_FIELD];
+            _loc5_.visible = _loc3_.options[param1][SettingsConfigHelper.SOUND_DEVICE_ALERT_FIELD];
          }
       }
       
       private function updateSoundSpeakersDropDown() : void
       {
-         soundSpeakersDropDown.enabled = this._masterVolumeSelected && this._typeAcousticsSelected;
+         this.getContent().soundSpeakersDropDown.enabled = this._masterVolumeSelected && this._typeAcousticsSelected;
+      }
+      
+      private function setMasterVolumeToggleCheckboxAdditionalProps() : void
+      {
+         var _loc3_:Class = null;
+         var _loc1_:CheckBox = this.getContent().masterVolumeToggleCheckbox;
+         _loc1_.infoIcoType = !!this._masterVolumeSelected ? Values.EMPTY_STR : InfoIcon.TYPE_WARNING;
+         _loc1_.toolTip = !!this._masterVolumeSelected ? Values.EMPTY_STR : TOOLTIPS.MASTERVOLUMETOGGLEOFF;
+         var _loc2_:Boolean = this._masterVolumeSelected && this._isSystemMixerVolumeDisabled;
+         if(_loc2_ && !this._warningMessageBlock)
+         {
+            _loc3_ = App.utils.classFactory.getClass(Linkages.WARNING_MESSAGE_SETTING_BLOCK);
+            this._warningMessageBlock = new _loc3_();
+            this._warningMessageBlock.x = WARNING_MESSAGEM_BLOCK_X;
+            this._warningMessageBlock.setData(SYSTEM_MIXER_WARNING_DATA);
+            addChild(this._warningMessageBlock);
+         }
+         this.scrollPane.y = !!_loc2_ ? Number(WARNING_MESSAGEM_BLOCK_PADDING) : Number(0);
+         this.scrollPane.setSize(PANE_WIDTH,!!_loc2_ ? Number(PANE_HEIGHT_WITH_WARNING_BLOCK) : Number(PANE_HEIGHT));
+         if(this._warningMessageBlock)
+         {
+            this._warningMessageBlock.visible = _loc2_;
+         }
+      }
+      
+      private function dispatchGetSystemOffStatus() : void
+      {
+         dispatchEvent(new SettingViewEvent(SettingViewEvent.GET_SYSTEM_OFF_STATUS,viewId));
       }
       
       private function onBtnVivoxTestClickHandler(param1:ButtonEvent) : void
@@ -781,7 +899,7 @@ package net.wg.gui.lobby.settings
       
       private function onTestBulbVoicesButtonClickHandler(param1:ButtonEvent) : void
       {
-         dispatchEvent(new AlternativeVoiceEvent(AlternativeVoiceEvent.ON_TEST_BULB_VOICES,bulbVoicesDropDown.selectedIndex));
+         dispatchEvent(new AlternativeVoiceEvent(AlternativeVoiceEvent.ON_TEST_BULB_VOICES,this.getContent().bulbVoicesDropDown.selectedIndex));
       }
       
       private function onArtyBulbVoicesButtonMouseOutHandler(param1:MouseEvent) : void
@@ -796,7 +914,7 @@ package net.wg.gui.lobby.settings
       
       private function onArtyBulbVoicesButtonClickHandler(param1:ButtonEvent) : void
       {
-         dispatchEvent(new AlternativeVoiceEvent(AlternativeVoiceEvent.ON_TEST_ARTY_BULB_VOICES,artyBulbVoicesDropDown.selectedIndex));
+         dispatchEvent(new AlternativeVoiceEvent(AlternativeVoiceEvent.ON_TEST_ARTY_BULB_VOICES,this.getContent().artyBulbVoicesDropDown.selectedIndex));
       }
       
       private function onBtnCaptureDevicesUpdateClickHandler(param1:ButtonEvent) : void
@@ -806,7 +924,7 @@ package net.wg.gui.lobby.settings
       
       private function onSoundSpeakersTestButtonClickHandler(param1:ButtonEvent) : void
       {
-         var _loc2_:SoundDeviceTabButton = SoundDeviceTabButton(soundDeviceButtonBar.selectedButton);
+         var _loc2_:SoundDeviceTabButton = SoundDeviceTabButton(this.getContent().soundDeviceButtonBar.selectedButton);
          App.popoverMgr.show(this,Aliases.ACOUSTIC_POPOVER,_loc2_.speakerId);
       }
       
@@ -834,43 +952,45 @@ package net.wg.gui.lobby.settings
       {
          var _loc2_:Slider = Slider(param1.target);
          var _loc3_:String = SettingsConfigHelper.instance.getControlIdByControlNameAndType(_loc2_.name,SettingsConfigHelper.TYPE_SLIDER);
-         var _loc4_:SettingsControlProp = SettingsControlProp(data[_loc3_]);
-         var _loc5_:LabelControl = this[_loc3_ + SettingsConfigHelper.TYPE_VALUE] as LabelControl;
-         if(_loc5_ && _loc4_.hasValue)
+         var _loc4_:SoundSettingsBase = this.getContent();
+         var _loc5_:SettingsControlProp = SettingsControlProp(data[_loc3_]);
+         var _loc6_:LabelControl = _loc4_[_loc3_ + SettingsConfigHelper.TYPE_VALUE] as LabelControl;
+         if(_loc6_ && _loc5_.hasValue)
          {
-            _loc5_.text = _loc2_.value.toString();
+            _loc6_.text = _loc2_.value.toString();
          }
          dispatchEvent(new SettingViewEvent(SettingViewEvent.ON_CONTROL_CHANGED,viewId,null,_loc3_,_loc2_.value));
       }
       
       private function onDropdownIndexChangeHandler(param1:ListEvent) : void
       {
-         var _loc4_:SettingsControlProp = null;
-         var _loc5_:Object = null;
-         var _loc6_:Boolean = false;
+         var _loc5_:SettingsControlProp = null;
+         var _loc6_:Object = null;
+         var _loc7_:Boolean = false;
          var _loc2_:DropdownMenu = DropdownMenu(param1.target);
          var _loc3_:String = SettingsConfigHelper.instance.getControlIdByControlNameAndType(_loc2_.name,SettingsConfigHelper.TYPE_DROPDOWN);
+         var _loc4_:SoundSettingsBase = this.getContent();
          if(_loc3_ == SettingsConfigHelper.BULB_VOICES)
          {
-            bulbVoicesButton.enabled = this._existsBulbVoices[bulbVoicesDropDown.selectedIndex];
+            _loc4_.bulbVoicesButton.enabled = this._existsBulbVoices[_loc4_.bulbVoicesDropDown.selectedIndex];
          }
          else if(_loc3_ == SettingsConfigHelper.ARTY_BULB_VOICES)
          {
-            artyBulbVoicesButton.enabled = this._existsArtyBulbVoices[artyBulbVoicesDropDown.selectedIndex];
+            _loc4_.artyBulbVoicesButton.enabled = this._existsArtyBulbVoices[_loc4_.artyBulbVoicesDropDown.selectedIndex];
          }
          if(_loc3_ == SettingsConfigHelper.SOUND_SPEAKERS)
          {
-            _loc4_ = SettingsControlProp(data[SettingsConfigHelper.SOUND_SPEAKERS]);
-            _loc5_ = _loc4_.options[_loc2_.selectedIndex];
-            _loc6_ = _loc5_[SettingsConfigHelper.SOUND_SPEAKERS_IS_AUTODETECT_FIELD];
-            if(_loc6_)
+            _loc5_ = SettingsControlProp(data[SettingsConfigHelper.SOUND_SPEAKERS]);
+            _loc6_ = _loc5_.options[_loc2_.selectedIndex];
+            _loc7_ = _loc6_[SettingsConfigHelper.SOUND_SPEAKERS_IS_AUTODETECT_FIELD];
+            if(_loc7_)
             {
-               soundSpeakersTestButton.enabled = false;
-               soundDeviceButtonBar.updateDataById(ACOUSTICS.TYPE_ACOUSTICS,Values.EMPTY_STR,Values.EMPTY_STR);
+               _loc4_.soundSpeakersTestButton.enabled = false;
+               _loc4_.soundDeviceButtonBar.updateDataById(ACOUSTICS.TYPE_ACOUSTICS,Values.EMPTY_STR,Values.EMPTY_STR);
                dispatchEvent(new SettingViewEvent(SettingViewEvent.ON_AUTO_DETECT_ACOUSTIC,viewId));
                dispatchEvent(new SettingViewEvent(SettingViewEvent.ON_CONTROL_CHANGED,viewId,null,_loc3_,_loc2_.selectedIndex));
-               _loc4_.changedVal = _loc2_.selectedIndex;
-               soundDeviceAlert.visible = this._isAcousticsAlertVisible = false;
+               _loc5_.changedVal = _loc2_.selectedIndex;
+               _loc4_.soundDeviceAlert.visible = this._isAcousticsAlertVisible = false;
             }
             else
             {
@@ -896,42 +1016,24 @@ package net.wg.gui.lobby.settings
       
       private function onTabsIndexChangeHandler(param1:IndexEvent) : void
       {
-         commonForm.visible = false;
-         vivoxForm.visible = false;
-         specialForm.visible = false;
+         var _loc2_:SoundSettingsBase = this.getContent();
+         var _loc3_:SoundCommonForm = _loc2_.commonForm;
+         var _loc4_:SoundVivoxForm = _loc2_.vivoxForm;
+         var _loc5_:SoundSpecialForm = _loc2_.specialForm;
+         _loc3_.visible = false;
+         _loc4_.visible = false;
+         _loc5_.visible = false;
          switch(param1.index)
          {
             case COMMON_TAB_INDEX:
-               commonForm.visible = true;
+               _loc3_.visible = true;
                break;
             case VIVOX_TAB_INDEX:
-               vivoxForm.visible = true;
+               _loc4_.visible = true;
                break;
             case SPECIAL_TAB_INDEX:
-               specialForm.visible = true;
+               _loc5_.visible = true;
          }
-      }
-      
-      private function onSystemMixerVolumeDisabledLinkClickHandler(param1:MouseEvent) : void
-      {
-         dispatchEvent(new SettingViewEvent(SettingViewEvent.ON_SOUND_SYSTEM_OFF_LINK_CLICKED,viewId));
-      }
-      
-      private function setMasterVolumeToggleCheckboxAdditionalProps() : void
-      {
-         masterVolumeToggleCheckbox.infoIcoType = !!this._masterVolumeSelected ? Values.EMPTY_STR : InfoIcon.TYPE_WARNING;
-         masterVolumeToggleCheckbox.toolTip = !!this._masterVolumeSelected ? Values.EMPTY_STR : TOOLTIPS.MASTERVOLUMETOGGLEOFF;
-         systemMixerVolumeDisabledLink.visible = this._masterVolumeSelected && this._isSystemMixerVolumeDisabled;
-         if(this._masterVolumeSelected && this._isSystemMixerVolumeDisabled)
-         {
-            masterVolumeToggleCheckbox.infoIcoType = InfoIcon.TYPE_WARNING;
-            masterVolumeToggleCheckbox.toolTip = TOOLTIPS.SYSTEMMIXERVOLUMEDISABLEDWARNING;
-         }
-      }
-      
-      private function dispatchGetSystemOffStatus() : void
-      {
-         dispatchEvent(new SettingViewEvent(SettingViewEvent.GET_SYSTEM_OFF_STATUS,viewId));
       }
    }
 }

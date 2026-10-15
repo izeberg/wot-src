@@ -461,8 +461,8 @@ class BattleChatCommandHandler(bw2_provider.ResponseDictHandler, IBattleCommandF
     def createByObjectiveIndex(self, idx, isAtk, actionName):
         return self.__factory.createByObjectiveIndex(idx, isAtk, actionName)
 
-    def createByBaseIndexAndName(self, pointId, commandName, baseName):
-        return self.__factory.createByBaseIndexAndName(pointId, commandName, baseName)
+    def createByBaseIndex(self, pointId, commandName):
+        return self.__factory.createByBaseIndex(pointId, commandName)
 
     def createByGlobalMsgName(self, actionID, baseName=''):
         return self.__factory.createByGlobalMsgName(actionID, baseName)

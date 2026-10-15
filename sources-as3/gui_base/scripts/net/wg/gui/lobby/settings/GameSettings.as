@@ -11,16 +11,18 @@ package net.wg.gui.lobby.settings
    import net.wg.gui.components.controls.BorderShadowScrollPane;
    import net.wg.gui.components.controls.CheckBox;
    import net.wg.gui.components.controls.DropdownMenu;
+   import net.wg.gui.components.controls.InfoIcon;
    import net.wg.gui.components.controls.LabelControl;
    import net.wg.gui.components.controls.Slider;
-   import net.wg.gui.lobby.settings.components.LimitedUISettingBlock;
-   import net.wg.gui.lobby.settings.components.evnts.LimitedUIEvent;
+   import net.wg.gui.lobby.settings.components.WarningMessageBlock;
+   import net.wg.gui.lobby.settings.components.evnts.WarningMessageEvent;
    import net.wg.gui.lobby.settings.config.SettingsConfigHelper;
    import net.wg.gui.lobby.settings.events.BattleContextHintSettingsEvent;
    import net.wg.gui.lobby.settings.events.SettingViewEvent;
    import net.wg.gui.lobby.settings.vo.AnonymizerExtraVO;
    import net.wg.gui.lobby.settings.vo.CheckboxVo;
    import net.wg.gui.lobby.settings.vo.DevMapsVO;
+   import net.wg.gui.lobby.settings.vo.MessageBlockDataVO;
    import net.wg.gui.lobby.settings.vo.RandomXLvlVO;
    import net.wg.gui.lobby.settings.vo.SettingsControlProp;
    import net.wg.gui.lobby.settings.vo.SimpleExtraVO;
@@ -37,11 +39,11 @@ package net.wg.gui.lobby.settings
       
       public static const LINKAGE:String = "GameSettings";
       
-      private static const PANE_WIDTH:Number = 800;
+      private static const PANE_WIDTH:uint = 800;
       
-      private static const PANE_HEIGHT:Number = 518;
+      private static const PANE_HEIGHT:uint = 518;
       
-      private static const SHADOW_HEIGHT:int = 20;
+      private static const SHADOW_HEIGHT:uint = 20;
       
       private static const INCREASED_ZOOM_LBL:String = "increasedZoom";
       
@@ -63,20 +65,28 @@ package net.wg.gui.lobby.settings
       
       private static const GAME_COUNTER_LIMITED_UI_CONTROL:String = "limitedUIActive";
       
-      private static const COUNTER_CHECKBOX_OFFSET_X:Number = -11;
+      private static const COUNTER_CHECKBOX_OFFSET_X:int = -11;
       
-      private static const BATTLE_TYPES_HEIGHT_EXTRA:int = 212;
+      private static const BATTLE_TYPES_HEIGHT_EXTRA:uint = 212;
       
-      private static const LIMITED_UI_SETTING_BLOCK_X:uint = 400;
+      private static const WARNING_MESSAGEM_BLOCK_X:uint = 400;
       
-      private static const LIMITED_UI_SETTING_BLOCK_PADDING:uint = 80;
+      private static const WARNING_MESSAGEM_BLOCK_PADDING:uint = 80;
       
-      private static const PANE_HEIGHT_WITH_LIMITED_UI_SETTING_BLOCK:uint = PANE_HEIGHT - LIMITED_UI_SETTING_BLOCK_PADDING;
+      private static const PANE_HEIGHT_WITH_WARNING_BLOCK:uint = PANE_HEIGHT - WARNING_MESSAGEM_BLOCK_PADDING;
+      
+      private static const LIMITED_UI_WARNING_DATA:MessageBlockDataVO = new MessageBlockDataVO({
+         "message":SETTINGS.LIMITEDUI_DESC,
+         "actionName":WarningMessageEvent.TURN_OFF_LIMITED_UI,
+         "buttonLabel":SETTINGS.LIMITEDUI_TURNOFFBTN,
+         "infoIconType":InfoIcon.TYPE_WARNING,
+         "tooltip":TOOLTIPS.LIMITEDUISETTINGBLOCK_INFO
+      });
        
       
       public var scrollPane:BorderShadowScrollPane;
       
-      private var _limitedUISettingBlock:LimitedUISettingBlock;
+      private var _warningMessageBlock:WarningMessageBlock;
       
       public function GameSettings()
       {
@@ -282,12 +292,12 @@ package net.wg.gui.lobby.settings
                }
             }
          }
-         if(this._limitedUISettingBlock)
+         if(this._warningMessageBlock)
          {
-            this._limitedUISettingBlock.removeEventListener(LimitedUIEvent.TURN_OFF,this.onLimitedUITurnOffHandler);
-            removeChild(this._limitedUISettingBlock);
-            this._limitedUISettingBlock.dispose();
-            this._limitedUISettingBlock = null;
+            this._warningMessageBlock.removeEventListener(WarningMessageEvent.TURN_OFF_LIMITED_UI,this.onLimitedUITurnOffHandler);
+            removeChild(this._warningMessageBlock);
+            this._warningMessageBlock.dispose();
+            this._warningMessageBlock = null;
          }
          removeEventListener(BattleContextHintSettingsEvent.RESET,this.onBattleContextHintResetHandler);
          this.scrollPane.dispose();
@@ -300,11 +310,11 @@ package net.wg.gui.lobby.settings
          var _loc2_:ICounterProps = null;
          var _loc3_:DisplayObject = null;
          var _loc4_:String = null;
-         if(this._limitedUISettingBlock && param1.componentId == GAME_COUNTER_LIMITED_UI_CONTROL)
+         if(this._warningMessageBlock && param1.componentId == GAME_COUNTER_LIMITED_UI_CONTROL)
          {
             _loc2_ = this.getCounterProps(SettingsConfigHelper.TYPE_BUTTON);
-            _loc3_ = this._limitedUISettingBlock.turnOffBtn;
-            _loc4_ = !!this._limitedUISettingBlock.visible ? param1.count : Values.EMPTY_STR;
+            _loc3_ = this._warningMessageBlock.actionBtn;
+            _loc4_ = !!this._warningMessageBlock.visible ? param1.count : Values.EMPTY_STR;
             addNewCounterControl(_loc3_,_loc4_,_loc2_,false);
             return true;
          }
@@ -313,7 +323,7 @@ package net.wg.gui.lobby.settings
       
       override protected function isCounterCanMarkAsVisited(param1:String, param2:CountersVo) : Boolean
       {
-         if(this._limitedUISettingBlock && param2.componentId == GAME_COUNTER_LIMITED_UI_CONTROL)
+         if(this._warningMessageBlock && param2.componentId == GAME_COUNTER_LIMITED_UI_CONTROL)
          {
             return true;
          }
@@ -325,23 +335,6 @@ package net.wg.gui.lobby.settings
          return GameSettingsContent(this.scrollPane.target);
       }
       
-      public function setLimitedUISettingVisible(param1:Boolean) : void
-      {
-         var _loc2_:Class = null;
-         if(!this._limitedUISettingBlock)
-         {
-            _loc2_ = App.utils.classFactory.getClass(Linkages.LIMITED_UI_SETTING_BLOCK);
-            this._limitedUISettingBlock = new _loc2_();
-            this._limitedUISettingBlock.x = LIMITED_UI_SETTING_BLOCK_X;
-            addChild(this._limitedUISettingBlock);
-            this._limitedUISettingBlock.addEventListener(LimitedUIEvent.TURN_OFF,this.onLimitedUITurnOffHandler);
-         }
-         this._limitedUISettingBlock.visible = param1;
-         this.scrollPane.y = !!param1 ? Number(LIMITED_UI_SETTING_BLOCK_PADDING) : Number(0);
-         this.scrollPane.setSize(PANE_WIDTH,!!param1 ? Number(PANE_HEIGHT_WITH_LIMITED_UI_SETTING_BLOCK) : Number(PANE_HEIGHT));
-         invalidateCounter();
-      }
-      
       public function setBattleContextHintsEnabled(param1:Boolean) : void
       {
          this.getContent().setBattleContextHintsEnabled(param1);
@@ -350,6 +343,24 @@ package net.wg.gui.lobby.settings
       public function setBattleContextHintsResetEnabled(param1:Boolean) : void
       {
          this.getContent().setBattleContextHintsResetEnabled(param1);
+      }
+      
+      public function setLimitedUISettingVisible(param1:Boolean) : void
+      {
+         var _loc2_:Class = null;
+         if(!this._warningMessageBlock)
+         {
+            _loc2_ = App.utils.classFactory.getClass(Linkages.WARNING_MESSAGE_SETTING_BLOCK);
+            this._warningMessageBlock = new _loc2_();
+            this._warningMessageBlock.x = WARNING_MESSAGEM_BLOCK_X;
+            this._warningMessageBlock.setData(LIMITED_UI_WARNING_DATA);
+            addChild(this._warningMessageBlock);
+            this._warningMessageBlock.addEventListener(WarningMessageEvent.TURN_OFF_LIMITED_UI,this.onLimitedUITurnOffHandler);
+         }
+         this._warningMessageBlock.visible = param1;
+         this.scrollPane.y = !!param1 ? Number(WARNING_MESSAGEM_BLOCK_PADDING) : Number(0);
+         this.scrollPane.setSize(PANE_WIDTH,!!param1 ? Number(PANE_HEIGHT_WITH_WARNING_BLOCK) : Number(PANE_HEIGHT));
+         invalidateCounter();
       }
       
       private function setupLabel(param1:LabelControl, param2:String) : void
@@ -396,7 +407,7 @@ package net.wg.gui.lobby.settings
          param1.addEventListener(IndexEvent.INDEX_CHANGE,this.onButtonBarIndexChangeHandler);
       }
       
-      private function onLimitedUITurnOffHandler(param1:LimitedUIEvent) : void
+      private function onLimitedUITurnOffHandler(param1:WarningMessageEvent) : void
       {
          var _loc2_:SettingViewEvent = new SettingViewEvent(SettingViewEvent.ON_CONTROL_NEW_COUNTERS_VISITED,viewId,formId,null,[GAME_COUNTER_LIMITED_UI_CONTROL]);
          dispatchEvent(_loc2_);

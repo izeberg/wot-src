@@ -57,7 +57,7 @@ package
       
       public static const PLAYER_ERRORS_GUIDEDMISSILECEILINGBLOCKED:String = "#portal.portal_battle:player_errors/guidedMissileCeilingBlocked";
       
-      public static const PLAYER_ERRORS_GUIDEDMISSILETELEPORTBLOCKED:String = "#portal.portal_battle:player_errors/guidedMissileTeleportBlocked";
+      public static const PLAYER_ERRORS_ABILITYTELEPORTBLOCKED:String = "#portal.portal_battle:player_errors/abilityTeleportBlocked";
       
       public static const PLAYER_MESSAGES_SENTINEL_ATTACK_ALLY_SUICIDE:String = "#portal.portal_battle:player_messages/SENTINEL_ATTACK_ALLY_SUICIDE";
       

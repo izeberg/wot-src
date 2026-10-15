@@ -37,6 +37,7 @@ class OwnVehicleBase(BigWorld.DynamicScriptComponent):
 
     @noexcept
     def update_vehicleAmmoList(self, ammoList):
+        self._doLog(('update_vehicleAmmoList {} {}').format(self.entity.id, ammoList))
         avatar = self._avatar()
         if not avatar:
             return
@@ -60,6 +61,7 @@ class OwnVehicleBase(BigWorld.DynamicScriptComponent):
 
     @noexcept
     def update_vehicleGunReloadTime(self, prop):
+        self._doLog(('update_vehicleGunReloadTime {} {}').format(self.entity.id, prop))
         avatar = self._avatar()
         if not avatar:
             return
@@ -82,6 +84,7 @@ class OwnVehicleBase(BigWorld.DynamicScriptComponent):
 
     @noexcept
     def update_vehicleSettings(self, prop):
+        self._doLog(('update_vehicleSettings {} {}').format(self.entity.id, prop))
         avatar = self._avatar()
         if not avatar:
             return

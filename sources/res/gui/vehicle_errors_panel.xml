@@ -263,10 +263,10 @@
 			</value>
 		</message>
 		<message>
-			<name>guidedMissileCeilingBlocked</name>
+			<name>abilityTeleportBlocked</name>
 			<type>list</type>
 			<value>
-				<item>_(#portal.portal_battle:player_errors/guidedMissileCeilingBlocked)</item>
+				<item>_(#portal.portal_battle:player_errors/abilityTeleportBlocked)</item>
 				<item>yellow</item>
 			</value>
 		</message>

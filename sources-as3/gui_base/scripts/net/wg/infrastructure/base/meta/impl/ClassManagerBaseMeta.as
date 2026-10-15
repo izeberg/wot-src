@@ -786,15 +786,15 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.settings.components.KeyInput;
    import net.wg.gui.lobby.settings.components.KeysItemRenderer;
    import net.wg.gui.lobby.settings.components.KeysScrollingList;
-   import net.wg.gui.lobby.settings.components.LimitedUISettingBlock;
    import net.wg.gui.lobby.settings.components.RadioButtonBar;
    import net.wg.gui.lobby.settings.components.SettingsMarkerScrollPane;
    import net.wg.gui.lobby.settings.components.SettingsStepSlider;
    import net.wg.gui.lobby.settings.components.SoundDeviceButtonBar;
    import net.wg.gui.lobby.settings.components.SoundDeviceTabButton;
    import net.wg.gui.lobby.settings.components.SoundVoiceWaves;
+   import net.wg.gui.lobby.settings.components.WarningMessageBlock;
    import net.wg.gui.lobby.settings.components.evnts.KeyInputEvents;
-   import net.wg.gui.lobby.settings.components.evnts.LimitedUIEvent;
+   import net.wg.gui.lobby.settings.components.evnts.WarningMessageEvent;
    import net.wg.gui.lobby.settings.config.ControlsFactory;
    import net.wg.gui.lobby.settings.config.SettingsConfigHelper;
    import net.wg.gui.lobby.settings.events.AlternativeVoiceEvent;
@@ -831,6 +831,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.settings.vo.CursorTabsDataVo;
    import net.wg.gui.lobby.settings.vo.DevMapsVO;
    import net.wg.gui.lobby.settings.vo.MarkerTabsDataVo;
+   import net.wg.gui.lobby.settings.vo.MessageBlockDataVO;
    import net.wg.gui.lobby.settings.vo.RandomXLvlVO;
    import net.wg.gui.lobby.settings.vo.SettingsControlProp;
    import net.wg.gui.lobby.settings.vo.SettingsKeyProp;
@@ -2502,8 +2503,6 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_LOBBY_SETTINGS_COMPONENTS_KEYSSCROLLINGLIST:Class = KeysScrollingList;
       
-      public static const NET_WG_GUI_LOBBY_SETTINGS_COMPONENTS_LIMITEDUISETTINGBLOCK:Class = LimitedUISettingBlock;
-      
       public static const NET_WG_GUI_LOBBY_SETTINGS_COMPONENTS_RADIOBUTTONBAR:Class = RadioButtonBar;
       
       public static const NET_WG_GUI_LOBBY_SETTINGS_COMPONENTS_SETTINGSMARKERSCROLLPANE:Class = SettingsMarkerScrollPane;
@@ -2516,9 +2515,11 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_LOBBY_SETTINGS_COMPONENTS_SOUNDVOICEWAVES:Class = SoundVoiceWaves;
       
+      public static const NET_WG_GUI_LOBBY_SETTINGS_COMPONENTS_WARNINGMESSAGEBLOCK:Class = WarningMessageBlock;
+      
       public static const NET_WG_GUI_LOBBY_SETTINGS_COMPONENTS_EVNTS_KEYINPUTEVENTS:Class = KeyInputEvents;
       
-      public static const NET_WG_GUI_LOBBY_SETTINGS_COMPONENTS_EVNTS_LIMITEDUIEVENT:Class = LimitedUIEvent;
+      public static const NET_WG_GUI_LOBBY_SETTINGS_COMPONENTS_EVNTS_WARNINGMESSAGEEVENT:Class = WarningMessageEvent;
       
       public static const NET_WG_GUI_LOBBY_SETTINGS_CONFIG_CONTROLSFACTORY:Class = ControlsFactory;
       
@@ -2591,6 +2592,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_SETTINGS_VO_DEVMAPSVO:Class = DevMapsVO;
       
       public static const NET_WG_GUI_LOBBY_SETTINGS_VO_MARKERTABSDATAVO:Class = MarkerTabsDataVo;
+      
+      public static const NET_WG_GUI_LOBBY_SETTINGS_VO_MESSAGEBLOCKDATAVO:Class = MessageBlockDataVO;
       
       public static const NET_WG_GUI_LOBBY_SETTINGS_VO_RANDOMXLVLVO:Class = RandomXLvlVO;
       

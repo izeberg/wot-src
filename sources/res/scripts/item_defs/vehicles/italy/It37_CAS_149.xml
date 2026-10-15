@@ -2563,12 +2563,12 @@
 					</pitchLimits>
 					<turretYawLimits>-85 85</turretYawLimits>
 					<shotDispersionRadius>
-						0.43
+						0.41
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>21</reloadTime>
 					<aimingTime>
-						3.0
+						2.7
 						<!--BW_String-->
 					</aimingTime>
 					<shotDispersionFactors>
@@ -2584,10 +2584,13 @@
 					</shotDispersionFactors>
 					<clip>
 						<count>2</count>
-						<rate>12</rate>
+						<rate>15</rate>
 					</clip>
 					<autoreload>
-						<reloadTime>21 33</reloadTime>
+						<reloadTime>
+							19.7 29
+							<!--BW_String-->
+						</reloadTime>
 						<boostFraction>
 							0.4
 							<!--BW_String-->

@@ -533,9 +533,9 @@ package
       
       public static const SOUNDS_MASTERVOLUMETOGGLE_DESCRIPTION:String = "#settings:sounds/masterVolumeToggle/description";
       
-      public static const SOUNDS_SYSTEMMIXERVOLUMEDISABLEDLINK:String = "#settings:sounds/systemMixerVolumeDisabledLink";
+      public static const SOUNDS_FIXBUTTON:String = "#settings:sounds/fixButton";
       
-      public static const SOUNDS_SYSTEMMIXERVOLUMEDISABLEDLINK_DESCRIPTION:String = "#settings:sounds/systemMixerVolumeDisabledLink/description";
+      public static const SOUNDS_SYSTEMMIXERVOLUMEWARNING:String = "#settings:sounds/systemMixerVolumeWarning";
       
       public static const SOUNDS_BULBVOICES:String = "#settings:sounds/bulbVoices";
       

@@ -901,7 +901,7 @@ package net.wg.data.constants
       
       public static const COLOR_SETTINGS_BUTTON_RENDER:String = "ColorSettingsButtonRendererUI";
       
-      public static const LIMITED_UI_SETTING_BLOCK:String = "LimitedUISettingBlockUI";
+      public static const WARNING_MESSAGE_SETTING_BLOCK:String = "WarningMessageBlockUI";
       
       public static const TIME_REMAINING_POSITIVE_UI_LINKAGE:String = "msgTimeRemainingPositiveUI";
       

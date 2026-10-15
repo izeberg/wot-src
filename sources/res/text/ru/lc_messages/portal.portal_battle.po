@@ -121,11 +121,11 @@ msgstr "%(bossName)s повержен. Портал уничтожен. Вы с�
 msgid "finish/win/reason/super_boss"
 msgstr "Вы уничтожили Ратте. Портал разрушен!"
 
+msgid "player_errors/abilityTeleportBlocked"
+msgstr "Невозможно активировать способность во время телепортации."
+
 msgid "player_errors/guidedMissileCeilingBlocked"
 msgstr "Невозможно активировать способность: над танком недостаточно места."
-
-msgid "player_errors/guidedMissileTeleportBlocked"
-msgstr "Невозможно активировать способность во время телепортации."
 
 msgid "player_messages/COMBAT_EQUIPMENT_ACTIVATED_BERSERK_PORTAL"
 msgstr "Адреналин активирован."

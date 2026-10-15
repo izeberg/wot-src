@@ -411,8 +411,6 @@ package net.wg.data.constants.generated
       
       public static const FRANCE_F134_ARL_PROJET_F:String = "france-F134_ARL_Projet_F";
       
-      public static const FRANCE_F134_ARL_PROJET_F_T:String = "france-F134_ARL_Projet_F_T";
-      
       public static const FRANCE_F135_SCHNEIDER_120_AC_GENDARME_02:String = "france-F135_Schneider_120_AC_Gendarme_02";
       
       public static const FRANCE_F137_TORNADE:String = "france-F137_Tornade";
@@ -789,11 +787,7 @@ package net.wg.data.constants.generated
       
       public static const GERMANY_G182_MAUSEKONIG:String = "germany-G182_Mausekonig";
       
-      public static const GERMANY_G182_MAUSEKONIG_T:String = "germany-G182_Mausekonig_T";
-      
       public static const GERMANY_G184_EIS_BAER:String = "germany-G184_EisBaer";
-      
-      public static const GERMANY_G184_EIS_BAER_T:String = "germany-G184_EisBaer_T";
       
       public static const GERMANY_G189_E100_02:String = "germany-G189_E100_02";
       
@@ -2050,8 +2044,6 @@ package net.wg.data.constants.generated
       public static const UK_GB14_M2:String = "uk-GB14_M2";
       
       public static const UK_GB140_CHAMPION:String = "uk-GB140_Champion";
-      
-      public static const UK_GB140_CHAMPION_T:String = "uk-GB140_Champion_T";
       
       public static const UK_GB141_CELESTIAL_2_51:String = "uk-GB141_Celestial_2_51";
       

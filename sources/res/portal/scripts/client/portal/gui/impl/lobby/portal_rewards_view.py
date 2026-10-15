@@ -5,7 +5,6 @@ from gui.impl.pub import ViewImpl
 from gui.impl.pub.lobby_window import LobbyNotificationWindow
 from gui.impl.lobby.common.view_wrappers import createBackportTooltipDecorator
 from gui.server_events.bonuses import getNonQuestBonuses
-from gui.shared.event_dispatcher import showShop
 from skeletons.gui.game_control import IHangarFeatureStateController
 from frameworks.wulf import ViewSettings, WindowFlags, ViewFlags, WindowLayer
 from portal.gui.impl.gen.view_models.views.lobby.portal_rewards_view_model import PortalRewardsViewModel, PortalRewardType
@@ -13,7 +12,6 @@ from portal.gui.impl.lobby.bonus_packer import packBonusModelAndTooltipData
 from portal.gui.impl.lobby.tooltips.shop_currency_tooltip_view import ShopCurrencyTooltipView
 from portal.gui.game_control.awards_controller import AwardType
 from portal.skeletons.portal_event_controller import IPortalEventController
-from portal.gui.portal_event_helpers import getShopPageURL
 if typing.TYPE_CHECKING:
     from typing import Optional, List
     from gui.server_events.bonuses import SimpleBonus
@@ -69,11 +67,9 @@ class PortalRewardsView(ViewImpl):
 
     def __addListeners(self):
         self.viewModel.onApprove += self.__onCloseHandler
-        self.viewModel.onShopClick += self.__onShopClickHandler
 
     def __removeListeners(self):
         self.viewModel.onApprove -= self.__onCloseHandler
-        self.viewModel.onShopClick -= self.__onShopClickHandler
 
     def __updateModel(self):
         rewards = self.__rewardsData['rewards']
@@ -104,10 +100,6 @@ class PortalRewardsView(ViewImpl):
 
     def __onCloseHandler(self):
         self.__executeCloseCallback()
-        self.destroyWindow()
-
-    def __onShopClickHandler(self):
-        showShop(getShopPageURL())
         self.destroyWindow()
 
     def __executeCloseCallback(self):

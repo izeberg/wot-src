@@ -10,9 +10,9 @@ class PortalRewardType(Enum):
 
 
 class PortalRewardsViewModel(ViewModel):
-    __slots__ = ('onApprove', 'onShopClick')
+    __slots__ = ('onApprove', )
 
-    def __init__(self, properties=4, commands=2):
+    def __init__(self, properties=4, commands=1):
         super(PortalRewardsViewModel, self).__init__(properties=properties, commands=commands)
 
     def getRewardType(self):
@@ -50,4 +50,3 @@ class PortalRewardsViewModel(ViewModel):
         self._addBoolProperty('isSpecial', False)
         self._addArrayProperty('rewards', Array())
         self.onApprove = self._addCommand('onApprove')
-        self.onShopClick = self._addCommand('onShopClick')

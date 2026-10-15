@@ -89,7 +89,7 @@ class _ItemsData(object):
 
     def getNodeIndex(self, nodeId):
         if self._nodesIdx is not None:
-            return self._nodesIdx[nodeId]
+            return self._nodesIdx.get(nodeId)
         else:
             return
 

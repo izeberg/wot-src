@@ -7,27 +7,23 @@ package net.wg.gui.lobby.settings
    import net.wg.gui.components.advanced.InviteIndicator;
    import net.wg.gui.components.controls.CheckBox;
    import net.wg.gui.components.controls.DropdownMenu;
-   import net.wg.gui.components.controls.HyperLink;
    import net.wg.gui.components.controls.IconTextButton;
    import net.wg.gui.components.controls.InfoIcon;
    import net.wg.gui.components.controls.LabelControl;
    import net.wg.gui.components.controls.Slider;
    import net.wg.gui.components.controls.SoundButtonEx;
    import net.wg.gui.components.controls.UILoaderAlt;
+   import net.wg.gui.interfaces.IContentSize;
    import net.wg.gui.lobby.settings.components.KeyInput;
    import net.wg.gui.lobby.settings.components.SoundDeviceButtonBar;
    import net.wg.gui.lobby.settings.components.SoundVoiceWaves;
-   import net.wg.gui.lobby.settings.config.SettingsConfigHelper;
+   import net.wg.infrastructure.base.UIComponentEx;
    
-   public class SoundSettingsBase extends SettingsBaseView
+   public class SoundSettingsBase extends UIComponentEx implements IContentSize
    {
-      
-      private static const TOOLTIP_PREFIX:String = "sounds/";
        
       
       public var masterVolumeToggleCheckbox:CheckBox = null;
-      
-      public var systemMixerVolumeDisabledLink:HyperLink = null;
       
       public var masterVolumeLabel:LabelControl = null;
       
@@ -305,23 +301,6 @@ package net.wg.gui.lobby.settings
          this.masterVolumeToggleCheckbox.label = SETTINGS.SOUNDS_MASTERVOLUMETOGGLE;
          this.masterVolumeLabel.text = SETTINGS.SOUNDS_MASTERVOLUME;
          this.masterVolumeValue.textAlign = TextFormatAlign.RIGHT;
-         this.systemMixerVolumeDisabledLink.label = SETTINGS.SOUNDS_SYSTEMMIXERVOLUMEDISABLEDLINK;
-         this.systemMixerVolumeDisabledLink.forceFocusView = true;
-         registerToolTip(this.systemMixerVolumeDisabledLink,SettingsConfigHelper.MASTER_VOLUME_SYSTEM_OFF_LINK);
-         registerToolTip(this.bulbVoicesDropDown,SettingsConfigHelper.BULB_VOICES);
-         registerToolTip(this.bulbVoicesLabel,SettingsConfigHelper.BULB_VOICES);
-         registerToolTip(this.masterVolumeToggleCheckbox,SettingsConfigHelper.MASTER_VOLUME_TOGGLE);
-         registerToolTip(this.nightModeCheckbox,SettingsConfigHelper.NIGHT_MODE);
-         registerToolTip(this.bassBoostCheckbox,SettingsConfigHelper.BASS_BOOST);
-         registerToolTip(this.soundQualityCheckbox,SettingsConfigHelper.SOUND_QUALITY);
-         registerToolTip(this.artyBulbVoicesIcon,SettingsConfigHelper.ARTY_BULB_VOICES);
-         registerToolTip(this.artyBulbVoicesLabel,SettingsConfigHelper.ARTY_BULB_VOICES);
-         registerToolTip(this.artyBulbVoicesDropDown,SettingsConfigHelper.ARTY_BULB_VOICES);
-      }
-      
-      override protected function getTooltipID(param1:String) : String
-      {
-         return TOOLTIP_PREFIX + param1;
       }
       
       override protected function onDispose() : void
@@ -424,9 +403,17 @@ package net.wg.gui.lobby.settings
          this.vivoxForm = null;
          this.specialForm.dispose();
          this.specialForm = null;
-         this.systemMixerVolumeDisabledLink.dispose();
-         this.systemMixerVolumeDisabledLink = null;
          super.onDispose();
+      }
+      
+      public function get contentWidth() : Number
+      {
+         return 800;
+      }
+      
+      public function get contentHeight() : Number
+      {
+         return 518;
       }
    }
 }

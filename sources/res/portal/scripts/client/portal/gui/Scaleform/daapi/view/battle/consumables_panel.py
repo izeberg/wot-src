@@ -18,14 +18,22 @@ class PortalConsumablesPanel(ConsumablesPanel):
     _AMMO_START_IDX = 6
     _AMMO_END_IDX = 8
     _REMAPPED_ICONS = {'largeRepairkit': 'large_repairkit_portal'}
+    _ABILITY_TELEPORT_BLOCKED_ERROR_KEY = 'abilityTeleportBlocked'
 
     def __init__(self):
         super(PortalConsumablesPanel, self).__init__()
         self.__vehicleChangeComponent = getattr(BigWorld.player(), 'DynamicVehicleChangeComponent', None)
         self.__lastBuiltInEqIdx = self._BUILTIN_EQUIPMENT_START_IDX
+        from gui.battle_control import avatar_getter
+        self.__battleState = avatar_getter.getArenaInfo().portalBattleStateComponent
+        if self.__battleState:
+            self.__battleState.onTeleportBlocked += self.__onTeleportBlocked
         return
 
     def _dispose(self):
+        if self.__battleState:
+            self.__battleState.onTeleportBlocked -= self.__onTeleportBlocked
+            self.__battleState = None
         self.__vehicleChangeComponent = None
         super(PortalConsumablesPanel, self)._dispose()
         return
@@ -119,3 +127,11 @@ class PortalConsumablesPanel(ConsumablesPanel):
         description = ('\n\n').join((description, usageStr))
         toolTip = TOOLTIP_FORMAT.format(ability.userString, description)
         return toolTip
+
+    def __onTeleportBlocked(self, vehicleID):
+        player = BigWorld.player()
+        if not player:
+            return
+        vehicle = player.getVehicleAttached()
+        if vehicle and vehicle.id == vehicleID:
+            player.showVehicleError(self._ABILITY_TELEPORT_BLOCKED_ERROR_KEY)

@@ -891,6 +891,8 @@ package
       
       public static const SERVICECHANNELMESSAGES_MULTIPLIER:String = "#messenger:serviceChannelMessages/multiplier";
       
+      public static const SERVICECHANNELMESSAGES_PREFERREDMAPSLOTSDEBITED:String = "#messenger:serviceChannelMessages/preferredMapSlotsDebited";
+      
       public static const SERVICECHANNELMESSAGES_INVOICERECEIVED_COMPENSATION:String = "#messenger:serviceChannelMessages/invoiceReceived/compensation";
       
       public static const SERVICECHANNELMESSAGES_INVOICERECEIVED_COMPENSATION_PAINT:String = "#messenger:serviceChannelMessages/invoiceReceived/compensation/paint";
@@ -984,6 +986,12 @@ package
       public static const SERVICECHANNELMESSAGES_OFFERTOKENBONUS_ALTERNATIVETITLE:String = "#messenger:serviceChannelMessages/offerTokenBonus/alternativeTitle";
       
       public static const SERVICECHANNELMESSAGES_INVOICERECEIVED_LBKEYSACCRUED:String = "#messenger:serviceChannelMessages/invoiceReceived/lbKeysAccrued";
+      
+      public static const SERVICECHANNELMESSAGES_DAYS_ONE:String = "#messenger:serviceChannelMessages/days/one";
+      
+      public static const SERVICECHANNELMESSAGES_DAYS_FEW:String = "#messenger:serviceChannelMessages/days/few";
+      
+      public static const SERVICECHANNELMESSAGES_DAYS_MANY:String = "#messenger:serviceChannelMessages/days/many";
       
       public static const SERVICECHANNELMESSAGES_DURATIONOFPREMIUMACCOUNTEXPIRES:String = "#messenger:serviceChannelMessages/durationOfPremiumAccountExpires";
       
@@ -2568,6 +2576,8 @@ package
       public static const SERVICECHANNELMESSAGES_SYSTEMMIXERVOLUMEDISABLEDSYSMESSAGE_BODY:String = "#messenger:serviceChannelMessages/systemMixerVolumeDisabledSysMessage/body";
       
       public static const SERVICECHANNELMESSAGES_SYSTEMMIXERVOLUMEDISABLEDSYSMESSAGE_BUTTON:String = "#messenger:serviceChannelMessages/systemMixerVolumeDisabledSysMessage/button";
+      
+      public static const SERVICECHANNELMESSAGES_SYSTEMMIXERVOLUMEDISABLEDSYSMESSAGE_FIXBUTTON:String = "#messenger:serviceChannelMessages/systemMixerVolumeDisabledSysMessage/fixButton";
       
       public static const DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_ENUM:Array = [DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_OFFLINE,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_NOTREADY,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_READY,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_INBATTLE,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_AFK];
        

@@ -2,7 +2,6 @@
 <root>
 	<ClientMethods>
 		<onCeilingBlocked/>
-		<onTeleportBlocked/>
 	</ClientMethods>
 	<ofEntity>
 		<Vehicle/>

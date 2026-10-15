@@ -85,6 +85,8 @@ class VehicleStatusManager(CGF.ComponentManager):
     def __onTeleportingChanged(self, go, vehicleID, finishTime):
         if vehicleID == avatar_getter.getVehicleIDAttached():
             teleportGO = TeleportManager.getCampTeleport(go, self.spaceID)
+            if teleportGO is None:
+                return
             frontier = self.battleState.getTeleportFrontier(teleportGO.name)
             teleportComponent = go.findComponentByType(TeleportReplicableComponent)
             startTime = self.__findTeleportStartTime(teleportComponent, vehicleID)
@@ -93,6 +95,7 @@ class VehicleStatusManager(CGF.ComponentManager):
                'duration': finishTime - startTime, 
                'finishTime': finishTime}
             self.__invalidateVehicleState(VEHICLE_VIEW_STATE.PORTAL_TELEPORT, state)
+        return
 
     def __findTeleportStartTime(self, teleportComponent, vehicleID):
         vehicleIDs = teleportComponent.teleportingVehicleIDs

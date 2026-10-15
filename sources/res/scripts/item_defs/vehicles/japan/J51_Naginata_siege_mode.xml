@@ -81,7 +81,7 @@
 	</camouflage>
 	<hull>
 		<armor>
-			<armor_1>190</armor_1>
+			<armor_1>230</armor_1>
 			<armor_2>120</armor_2>
 			<armor_3>60</armor_3>
 			<armor_4>60</armor_4>
@@ -90,7 +90,7 @@
 			<armor_7>25</armor_7>
 			<armor_8>0</armor_8>
 			<armor_9>45</armor_9>
-			<armor_10>160</armor_10>
+			<armor_10>180</armor_10>
 			<armor_11>60</armor_11>
 			<armor_12>60</armor_12>
 			<armor_13>
@@ -2776,7 +2776,7 @@
 			<price>32500</price>
 			<notInShop>true</notInShop>
 			<armor>
-				<armor_1>230</armor_1>
+				<armor_1>250</armor_1>
 				<armor_2>100</armor_2>
 				<armor_3>60</armor_3>
 				<armor_4>50</armor_4>
@@ -2795,7 +2795,7 @@
 				<armor_17>70</armor_17>
 				<armor_18>55</armor_18>
 				<armor_19>50</armor_19>
-				<armor_20>230</armor_20>
+				<armor_20>250</armor_20>
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>15000</weight>
@@ -2823,7 +2823,7 @@
 					<maxAmmo>120</maxAmmo>
 					<armor>
 						<armor_1>
-							230
+							250
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_1>
 						<armor_2>
@@ -2854,7 +2854,7 @@
 					</shotDispersionRadius>
 					<reloadTime>5</reloadTime>
 					<aimingTime>
-						2.2
+						2.4
 						<!--BW_String-->
 					</aimingTime>
 					<pitchLimits>

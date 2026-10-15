@@ -6,9 +6,6 @@ class PortalGuidedMissileAbilityComponent(DynamicScriptComponent):
     def onCeilingBlocked(self):
         self.__showError('guidedMissileCeilingBlocked')
 
-    def onTeleportBlocked(self):
-        self.__showError('guidedMissileTeleportBlocked')
-
     def __showError(self, key):
         player = BigWorld.player()
         if player is None:

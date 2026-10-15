@@ -1260,6 +1260,19 @@
 		</suppress>
 		<logToMessageLogger>false</logToMessageLogger>
 		<loggerID>111</loggerID>
+		<webRTCLogLevel>4</webRTCLogLevel>
+		<file>
+			voip.log
+			<enabled>true</enabled>
+			<category>Voip</category>
+			<source>CPP</source>
+			<openMode>a</openMode>
+			<maxSizeKB>2048</maxSizeKB>
+			<trimToKB>512</trimToKB>
+			<showTime>true</showTime>
+			<disableBuffering>false</disableBuffering>
+			<messageLength>8192</messageLength>
+		</file>
 		<file>
 			game.log
 			<enabled>true</enabled>

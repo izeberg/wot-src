@@ -2341,6 +2341,9 @@ msgstr ""
 msgid "sounds/effects"
 msgstr "Эфекты"
 
+msgid "sounds/fixButton"
+msgstr "Исправить"
+
 msgid "sounds/gui"
 msgstr "Інтэрфейс"
 
@@ -2496,12 +2499,8 @@ msgstr "Сабвуфер"
 msgid "sounds/subtitles"
 msgstr "Субтытры"
 
-msgid "sounds/systemMixerVolumeDisabledLink"
-msgstr "Слишком низкая громкость игры!"
-
-msgid "sounds/systemMixerVolumeDisabledLink/description"
-msgstr ""
-"Нажмите здесь, чтобы посмотреть инструкцию и проверить настройки микшера."
+msgid "sounds/systemMixerVolumeWarning"
+msgstr "Нізкая гучнасць гульні. Націсніце, каб выправіць налады мікшэра."
 
 msgid "sounds/tabCommon"
 msgstr "Агульная гучнасць"

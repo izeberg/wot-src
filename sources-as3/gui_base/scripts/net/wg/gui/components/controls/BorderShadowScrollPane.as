@@ -1,5 +1,6 @@
 package net.wg.gui.components.controls
 {
+   import flash.display.DisplayObject;
    import flash.display.MovieClip;
    import scaleform.clik.constants.InvalidationType;
    
@@ -53,6 +54,20 @@ package net.wg.gui.components.controls
             {
                swapChildren(target,this.bottomShadow);
             }
+         }
+      }
+      
+      override protected function applyScrollBarUpdating() : void
+      {
+         super.applyScrollBarUpdating();
+         if(_scrollBar && DisplayObject(_scrollBar).visible)
+         {
+            this.topShadow.visible = _scrollBar.position > 0;
+            this.bottomShadow.visible = _scrollBar.position < maxScroll;
+         }
+         else
+         {
+            this.topShadow.visible = this.bottomShadow.visible = false;
          }
       }
    }

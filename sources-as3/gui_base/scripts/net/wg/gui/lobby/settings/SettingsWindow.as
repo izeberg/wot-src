@@ -23,7 +23,7 @@ package net.wg.gui.lobby.settings
    import net.wg.gui.components.windows.WindowEvent;
    import net.wg.gui.events.ViewStackEvent;
    import net.wg.gui.interfaces.ISettingsBase;
-   import net.wg.gui.lobby.settings.components.evnts.LimitedUIEvent;
+   import net.wg.gui.lobby.settings.components.evnts.WarningMessageEvent;
    import net.wg.gui.lobby.settings.config.SettingsConfigHelper;
    import net.wg.gui.lobby.settings.events.AlternativeVoiceEvent;
    import net.wg.gui.lobby.settings.events.SettingViewEvent;
@@ -179,7 +179,8 @@ package net.wg.gui.lobby.settings
             this.tabs.addEventListener(IndexEvent.INDEX_CHANGE,this.onTabIndexChangeHandler);
             this.view.addEventListener(ViewStackEvent.NEED_UPDATE,this.onViewNeedUpdateHandler);
             this.view.addEventListener(ViewStackEvent.VIEW_CHANGED,this.onViewViewChangedHandler);
-            this.view.addEventListener(LimitedUIEvent.TURN_OFF,this.onLimitedUITurnOffHandler);
+            this.view.addEventListener(WarningMessageEvent.TURN_OFF_LIMITED_UI,this.onTurnOffLimitedUiHandler);
+            this.view.addEventListener(WarningMessageEvent.FIX_MIXER_SOUND,this.onFixMixerSoundHandler);
             if(this._tabToSelect != -1)
             {
                this.tabs.selectedIndex = this._tabToSelect;
@@ -200,7 +201,6 @@ package net.wg.gui.lobby.settings
          addEventListener(SettingViewEvent.ON_GAMMA_SETTING_OPEN,this.onOnGammaSettingOpenHandler);
          addEventListener(SettingViewEvent.ON_COLOR_SETTING_OPEN,this.onOnColorSettingOpenHandler);
          addEventListener(SettingViewEvent.ON_RESET_BATTLE_CONTEXT_HINTS,this.onBattleContextHintResetHandler);
-         addEventListener(SettingViewEvent.ON_SOUND_SYSTEM_OFF_LINK_CLICKED,this.onSoundSystemOffLinkClickedHandler);
          addEventListener(SettingViewEvent.GET_SYSTEM_OFF_STATUS,this.onGetSystemOffStatusHandler);
          updateStage(App.appWidth,App.appHeight);
          window.addEventListener(WindowEvent.SCALE_Y_CHANGED,this.onWindowScaleYChangedHandler);
@@ -243,7 +243,8 @@ package net.wg.gui.lobby.settings
          {
             this.view.removeEventListener(ViewStackEvent.NEED_UPDATE,this.onViewNeedUpdateHandler);
             this.view.removeEventListener(ViewStackEvent.VIEW_CHANGED,this.onViewViewChangedHandler);
-            this.view.removeEventListener(LimitedUIEvent.TURN_OFF,this.onLimitedUITurnOffHandler);
+            this.view.removeEventListener(WarningMessageEvent.TURN_OFF_LIMITED_UI,this.onTurnOffLimitedUiHandler);
+            this.view.removeEventListener(WarningMessageEvent.FIX_MIXER_SOUND,this.onFixMixerSoundHandler);
             this.view.dispose();
             this.view = null;
          }
@@ -271,7 +272,6 @@ package net.wg.gui.lobby.settings
          removeEventListener(SettingViewEvent.ON_GAMMA_SETTING_OPEN,this.onOnGammaSettingOpenHandler);
          removeEventListener(SettingViewEvent.ON_COLOR_SETTING_OPEN,this.onOnColorSettingOpenHandler);
          removeEventListener(SettingViewEvent.ON_RESET_BATTLE_CONTEXT_HINTS,this.onBattleContextHintResetHandler);
-         removeEventListener(SettingViewEvent.ON_SOUND_SYSTEM_OFF_LINK_CLICKED,this.onSoundSystemOffLinkClickedHandler);
          removeEventListener(SettingViewEvent.GET_SYSTEM_OFF_STATUS,this.onGetSystemOffStatusHandler);
          this._settingsConfigHelper.changesData.clear();
          this._settingsConfigHelper = null;
@@ -1376,7 +1376,7 @@ package net.wg.gui.lobby.settings
          else
          {
             _loc2_ = this.getSoundSettings();
-            this.showSoundTestErrorTooltip(_loc2_.testAlternativeVoicesButton);
+            this.showSoundTestErrorTooltip(_loc2_.getContent().testAlternativeVoicesButton);
          }
       }
       
@@ -1390,7 +1390,7 @@ package net.wg.gui.lobby.settings
          else
          {
             _loc2_ = this.getSoundSettings();
-            this.showSoundTestErrorTooltip(_loc2_.bulbVoicesButton);
+            this.showSoundTestErrorTooltip(_loc2_.getContent().bulbVoicesButton);
          }
       }
       
@@ -1404,7 +1404,7 @@ package net.wg.gui.lobby.settings
          else
          {
             _loc2_ = this.getSoundSettings();
-            this.showSoundTestErrorTooltip(_loc2_.artyBulbVoicesButton);
+            this.showSoundTestErrorTooltip(_loc2_.getContent().artyBulbVoicesButton);
          }
       }
       
@@ -1446,7 +1446,7 @@ package net.wg.gui.lobby.settings
          openColorSettingsS();
       }
       
-      private function onLimitedUITurnOffHandler(param1:LimitedUIEvent) : void
+      private function onTurnOffLimitedUiHandler(param1:WarningMessageEvent) : void
       {
          var _loc2_:Object = this._settingsConfigHelper.changesData.getChanges();
          showWarningDialogS(SETTINGS_DIALOGS.LIMITED_UI_OFF_NOTIFICATION,_loc2_,true);
@@ -1457,19 +1457,25 @@ package net.wg.gui.lobby.settings
          showWarningDialogS(SETTINGS_DIALOGS.RESET_BATTLE_CONTEXT_HINTS_NOTIFICATION,null,false);
       }
       
-      private function onSoundSystemOffLinkClickedHandler(param1:SettingViewEvent) : void
-      {
-         showSystemMixerVolumeDisabledPageS();
-      }
-      
       private function onGetSystemOffStatusHandler(param1:SettingViewEvent) : void
       {
-         var _loc3_:Boolean = false;
-         var _loc2_:SoundSettings = this.getSoundSettings();
-         if(_loc2_)
+         this.updateSystemOffStatus();
+      }
+      
+      private function onFixMixerSoundHandler(param1:WarningMessageEvent) : void
+      {
+         fixSystemMixerVolumeS();
+         this.updateSystemOffStatus();
+      }
+      
+      private function updateSystemOffStatus() : void
+      {
+         var _loc2_:Boolean = false;
+         var _loc1_:SoundSettings = this.getSoundSettings();
+         if(_loc1_)
          {
-            _loc3_ = isSystemMixerVolumeDisabledS();
-            _loc2_.setSystemMixerVolumeDisabled(_loc3_);
+            _loc2_ = isSystemMixerVolumeDisabledS();
+            _loc1_.setSystemMixerVolumeDisabled(_loc2_);
          }
       }
    }

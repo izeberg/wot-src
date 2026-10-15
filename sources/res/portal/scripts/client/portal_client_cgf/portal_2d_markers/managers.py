@@ -142,10 +142,10 @@ class PortalReplicableMarkerStatesManager(CGF.ComponentManager):
                     continue
                 startTime = comp.teleportingStartTimes[index] if index < len(comp.teleportingStartTimes) else 0.0
                 finishTime = comp.teleportingFinishTimes[index] if index < len(comp.teleportingFinishTimes) else 0.0
-                if startTime > 0 and finishTime > startTime:
+                if startTime and finishTime and startTime > 0 and finishTime > startTime:
                     return (startTime, finishTime)
 
-        return (None, None)
+        return
 
     def __findCooldownTimeSpan(self, tunnelComponents, vehicleID):
         for comp in tunnelComponents:
@@ -154,12 +154,14 @@ class PortalReplicableMarkerStatesManager(CGF.ComponentManager):
                     continue
                 startTime = comp.cooldownStartTimes[index] if index < len(comp.cooldownStartTimes) else 0.0
                 finishTime = comp.cooldownFinishTimes[index] if index < len(comp.cooldownFinishTimes) else 0.0
-                if finishTime > 0:
+                if startTime and finishTime and finishTime > 0:
                     return (startTime, finishTime)
 
-        return (None, None)
+        return
 
     def __progressFromTimeSpan(self, serverTime, startTime, finishTime, activeMarker):
+        if startTime is None or finishTime is None:
+            return (None, None)
         restTime = finishTime - serverTime
         duration = finishTime - startTime
         if duration > 0:

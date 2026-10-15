@@ -2,7 +2,7 @@ import logging, BattleReplay, BigWorld, CommandMapping, Keys, Math
 from PlayerEvents import g_playerEvents
 from account_helpers import AccountSettings
 from account_helpers.settings_core import settings_constants
-from chat_commands_consts import BATTLE_CHAT_COMMAND_NAMES, getBaseTeamAndIDFromUniqueID, MarkerType, getUniqueTeamOrControlPointID
+from chat_commands_consts import BATTLE_CHAT_COMMAND_NAMES, getBaseTeamAndIDFromUniqueID, MarkerType, getUniqueTeamOrControlPointID, BASE_CMD_NAMES
 from constants import IS_DEVELOPMENT
 from debug_utils import LOG_DEBUG
 from gui import GUI_SETTINGS, g_repeatKeyHandlers
@@ -14,7 +14,6 @@ from gui.Scaleform.genConsts.BATTLE_MINIMAP_CONSTS import BATTLE_MINIMAP_CONSTS
 from gui.battle_control import minimap_utils, avatar_getter
 from gui.shared import g_eventBus, events, EVENT_BUS_SCOPE
 from messenger import MessengerEntry
-from messenger.proto.bw_chat2.battle_chat_cmd import BASE_CMD_NAMES
 from messenger_common_chat2 import MESSENGER_ACTION_IDS as _ACTIONS
 _C_NAME = settings.CONTAINER_NAME
 _S_NAME = settings.ENTRY_SYMBOL_NAME

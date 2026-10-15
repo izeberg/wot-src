@@ -737,21 +737,6 @@
 		<tags>heavyTank role_HT_universal HD improvedVentilation_class1_user tankRammer_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user earn_crystals special</tags>
 		<level>11</level>
 	</GB140_Champion>
-	<GB140_Champion_T>
-		<id>35003</id>
-		<userString>#gb_vehicles:GB140_Champion_T</userString>
-		<shortUserString>#gb_vehicles:GB140_Champion_T_short</shortUserString>
-		<description>#gb_vehicles:GB140_Champion_T_descr</description>
-		<shortDescriptionSpecial>#gb_vehicles:GB140_Champion_T_short_special</shortDescriptionSpecial>
-		<longDescriptionSpecial>#gb_vehicles:GB140_Champion_T_long_special</longDescriptionSpecial>
-		<price>
-			100
-			<gold/>
-		</price>
-		<notInShop>true</notInShop>
-		<tags>heavyTank role_HT_universal HD improvedVentilation_class1_user tankRammer_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user earn_crystals special secret testTank lockOutfit</tags>
-		<level>11</level>
-	</GB140_Champion_T>
 	<GB141_Celestial_2_51>
 		<id>31013</id>
 		<userString>#gb_vehicles:GB141_Celestial_2_51</userString>

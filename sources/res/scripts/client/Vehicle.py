@@ -227,7 +227,7 @@ class Vehicle(BigWorld.Entity, BWEntitiyComponentTracker, BattleAbilitiesCompone
         return
 
     def reload(self):
-        _logger.debug('reload(%d)', self.id)
+        _logger.info('reload(%d)', self.id)
         vehicles.reload()
         Vehicle.respawnVehicle(self.id, self.publicInfo.compDescr)
 
@@ -235,7 +235,7 @@ class Vehicle(BigWorld.Entity, BWEntitiyComponentTracker, BattleAbilitiesCompone
         global _g_respawnQueue
         pair = _g_respawnQueue.pop(self.id, None)
         if pair is not None:
-            _logger.debug('found delayed respawn request(%d)', self.id)
+            _logger.info('found delayed respawn request(%d)', self.id)
             self.respawnCompactDescr = pair[0]
             self.respawnOutfitCompactDescr = pair[1]
             return True
@@ -243,7 +243,7 @@ class Vehicle(BigWorld.Entity, BWEntitiyComponentTracker, BattleAbilitiesCompone
             return False
 
     def onEnterWorld(self, _=None):
-        _logger.debug('onEnterWorld(%d)', self.id)
+        _logger.info('onEnterWorld(%d)', self.id)
         isDelayedRespawn = self.__checkDelayedRespawn()
         if self.respawnOutfitCompactDescr is not None:
             outfitDescr = self.respawnOutfitCompactDescr
@@ -296,12 +296,12 @@ class Vehicle(BigWorld.Entity, BWEntitiyComponentTracker, BattleAbilitiesCompone
 
     def deferredRespawn(self):
         if hasattr(self, 'respawnCompactDescr') and self.respawnCompactDescr:
-            _logger.debug('respawn compact descr is still valid, request reloading of tank resources %s', self.id)
+            _logger.info('respawn compact descr is still valid, request reloading of tank resources %s', self.id)
             self.respawnVehicle(self.id, self.respawnCompactDescr)
 
     @staticmethod
     def respawnVehicle(vID, compactDescr=None, outfitCompactDescr=None):
-        _logger.debug('respawnVehicle(%d)', vID)
+        _logger.info('respawnVehicle(%d)', vID)
         vehicle = BigWorld.entities.get(vID)
         if vehicle is not None:
             vehicle.respawnCompactDescr = compactDescr
@@ -310,13 +310,13 @@ class Vehicle(BigWorld.Entity, BWEntitiyComponentTracker, BattleAbilitiesCompone
             vehicle.onLeaveWorld()
             vehicle.onEnterWorld()
         else:
-            _logger.debug('Delayed respawn %d', vID)
+            _logger.info('Delayed respawn %d', vID)
             _g_respawnQueue[vID] = [compactDescr, outfitCompactDescr]
         return
 
     @staticmethod
     def onArenaDestroyed():
-        _logger.debug('onArenaDestroyed')
+        _logger.info('onArenaDestroyed')
         _g_respawnQueue.clear()
 
     def __initAdditionalFilters(self):
@@ -348,13 +348,13 @@ class Vehicle(BigWorld.Entity, BWEntitiyComponentTracker, BattleAbilitiesCompone
         if self.id != vehID:
             _logger.error('__onVehicleInfoAdded(): Received unexpected vehicle id %d. Waiting for %d', vehID, self.id)
             return
-        _logger.debug('__onVehicleInfoAdded(%d)', self.id)
+        _logger.info('__onVehicleInfoAdded(%d)', self.id)
         player = BigWorld.player()
         player.arena.onVehicleAdded -= self.__onVehicleInfoAdded
         self.appearance.setVehicleInfo(player.arena.vehicles[vehID])
 
     def onLeaveWorld(self):
-        _logger.debug('onLeaveWorld %d', self.id)
+        _logger.info('onLeaveWorld %d', self.id)
         self.__appearanceCache.stopLoading(self.id, self.typeDescriptor.makeCompactDescr())
         self.__stopExtras()
         BigWorld.player().vehicle_onLeaveWorld(self)
@@ -631,7 +631,7 @@ class Vehicle(BigWorld.Entity, BWEntitiyComponentTracker, BattleAbilitiesCompone
         return
 
     def set_isSpeedCapturing(self, _=None):
-        _logger.debug('set_isSpeedCapturing %s', self.isSpeedCapturing)
+        _logger.info('set_isSpeedCapturing %s', self.isSpeedCapturing)
         if not self.isPlayerVehicle:
             ctrl = self.guiSessionProvider.shared.feedback
             if ctrl is not None:
@@ -639,7 +639,7 @@ class Vehicle(BigWorld.Entity, BWEntitiyComponentTracker, BattleAbilitiesCompone
         return
 
     def set_isBlockingCapture(self, _=None):
-        _logger.debug('set_isBlockingCapture %s', self.isBlockingCapture)
+        _logger.info('set_isBlockingCapture %s', self.isBlockingCapture)
         if not self.isPlayerVehicle:
             ctrl = self.guiSessionProvider.shared.feedback
             if ctrl is not None:
@@ -802,7 +802,7 @@ class Vehicle(BigWorld.Entity, BWEntitiyComponentTracker, BattleAbilitiesCompone
             return
 
     def set_stunInfo(self, prev=None):
-        _logger.debug('Set stun info(curr,~ prev): %s, %s', self.stunInfo, prev)
+        _logger.info('Set stun info(curr,~ prev): %s, %s', self.stunInfo, prev)
         if self.stunInfo.stunFinishTime > 0.0 and self.appearance.findComponentByType(StunComponent) is None:
             self.appearance.createComponent(StunComponent)
         if self.stunInfo.stunFinishTime < 0.01:
@@ -998,7 +998,7 @@ class Vehicle(BigWorld.Entity, BWEntitiyComponentTracker, BattleAbilitiesCompone
         return decodeGunAngles(self.gunAnglesPacked, self.typeDescriptor.gun.pitchLimits['absolute'])
 
     def startVisual(self):
-        _logger.debug('startVisual(%d)', self.id)
+        _logger.info('startVisual(%d)', self.id)
         if self.isHidden:
             _logger.info('Vehicle is marked as hidden: %d', self.id)
             return
@@ -1073,7 +1073,7 @@ class Vehicle(BigWorld.Entity, BWEntitiyComponentTracker, BattleAbilitiesCompone
             self.__specialSounds.setPlayerVehicle(self.publicInfo, True)
 
     def stopVisual(self):
-        _logger.debug('Vehicle.stopVisual(%d)', self.id)
+        _logger.info('Vehicle.stopVisual(%d)', self.id)
         if not self.isStarted:
             raise SoftException('Vehicle is already stopped')
         self.__stopExtras()

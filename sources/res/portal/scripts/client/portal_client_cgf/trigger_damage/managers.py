@@ -54,10 +54,30 @@ class AreaTriggerDamageManager(CGF.ComponentManager):
     def battleState(self):
         return BigWorld.player().arena.arenaInfo.portalBattleStateComponent
 
+    def __getBattleStateComponent(self):
+        player = BigWorld.player()
+        if player is None or not hasattr(player, 'arena'):
+            return
+        return player.arena.arenaInfo.portalBattleStateComponent
+
+    def __getCampsCount(self):
+        bs = self.__getBattleStateComponent()
+        if bs is None:
+            return 0
+        else:
+            return bs.getCampsCount()
+
+    def __getCapturedCampsCount(self):
+        bs = self.__getBattleStateComponent()
+        if bs is None:
+            return 0
+        else:
+            return bs.getCapturedCampsCount()
+
     def __onVehicleDamage(self, whoGO, areaTriggerGO):
         if not self.__isGOShouldReact(whoGO):
             return
-        damageState = self.battleState.getCampsCount() - self.battleState.getCapturedCampsCount()
+        damageState = self.__getCampsCount() - self.__getCapturedCampsCount()
         if damageState <= 0:
             return
         CGF.loadGameObjectIntoHierarchy(self.__SENTINEL_DAMAGE_PREFAB, whoGO, Math.Vector3(0, 0, 0))
@@ -122,7 +142,7 @@ class AreaTriggerDamageManager(CGF.ComponentManager):
         hm = CGF.HierarchyManager(self.spaceID)
         triggerDamageGO = hm.getParent(modelsGO)
         triggerDamage = triggerDamageGO.findComponentByType(AreaTriggerDamageComponent)
-        capturedCampsCount = self.battleState.getCapturedCampsCount()
+        capturedCampsCount = self.__getCapturedCampsCount()
         for _ in range(capturedCampsCount):
             self.__weakenSentinel(triggerDamageGO, triggerDamage)
 

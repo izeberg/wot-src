@@ -11957,27 +11957,32 @@
 				<exports>vse tooltip</exports>
 			</duration>
 			<stabMovement>
-				0.8
+				0.3
 				<!--BW_String-->
 				<exports>vse tooltip</exports>
 			</stabMovement>
 			<stabTurns>
-				0.8
+				0.3
 				<!--BW_String-->
 				<exports>vse tooltip</exports>
 			</stabTurns>
 			<stabTurret>
-				0.8
+				0.3
 				<!--BW_String-->
 				<exports>vse tooltip</exports>
 			</stabTurret>
+			<stabShot>
+				0.3
+				<!--BW_String-->
+				<exports>vse tooltip</exports>
+			</stabShot>
 			<reloadBonus>
-				0.2
+				0.5
 				<!--BW_String-->
 				<exports>vse tooltip</exports>
 			</reloadBonus>
 			<finalDispersion>
-				0.75
+				0.5
 				<!--BW_String-->
 				<exports>vse tooltip</exports>
 			</finalDispersion>
@@ -11985,23 +11990,27 @@
 		<kpi>
 			<add>
 				<name>vehicleGunKillReloadTime</name>
-				<value>-20</value>
+				<value>-50</value>
 			</add>
 			<mul>
 				<name>vehicleFinalDispersion</name>
-				<value>-25</value>
+				<value>-50</value>
+			</mul>
+			<mul>
+				<name>vehicleGunShotDispersionAfterShot</name>
+				<value>-70</value>
 			</mul>
 			<mul>
 				<name>vehicleGunShotDispersionChassisMovement</name>
-				<value>-20</value>
+				<value>-70</value>
 			</mul>
 			<mul>
 				<name>vehicleGunShotDispersionChassisRotation</name>
-				<value>-20</value>
+				<value>-70</value>
 			</mul>
 			<mul>
 				<name>vehicleGunShotDispersionTurretRotation</name>
-				<value>-20</value>
+				<value>-70</value>
 			</mul>
 		</kpi>
 		<tooltipSection>equipment</tooltipSection>
@@ -12041,17 +12050,21 @@
 				<exports>vse tooltip</exports>
 			</duration>
 			<enginePowerFactor>
-				1.35
+				1.75
 				<!--BW_String-->
 				<exports>vse</exports>
 			</enginePowerFactor>
+			<stunDurationFactor>
+				0.25
+				<!--BW_String-->
+				<exports>vse</exports>
+			</stunDurationFactor>
 			<repairBuff>
-				20
+				75
 				<exports>vse tooltip</exports>
 			</repairBuff>
 			<gunReloadBoostSeconds>
-				1.5
-				<!--BW_String-->
+				3
 				<exports>vse tooltip</exports>
 			</gunReloadBoostSeconds>
 			<shotsLimitForGunBoost>
@@ -12066,10 +12079,7 @@
 		<kpi>
 			<add>
 				<name>vehicleGunReloadTimeReceiveShot</name>
-				<value>
-					-1.5
-					<!--BW_String-->
-				</value>
+				<value>-3</value>
 			</add>
 			<add>
 				<name>limitsForGunBoost</name>
@@ -12078,11 +12088,15 @@
 			</add>
 			<mul>
 				<name>vehicleRepairSpeed</name>
-				<value>20</value>
+				<value>75</value>
+			</mul>
+			<mul>
+				<name>crewStunDuration</name>
+				<value>-25</value>
 			</mul>
 			<mul>
 				<name>vehicleEnginePower</name>
-				<value>35</value>
+				<value>75</value>
 			</mul>
 		</kpi>
 	</juggernaut>
@@ -12121,32 +12135,32 @@
 				<exports>vse tooltip</exports>
 			</duration>
 			<stabMovement>
-				1.2
+				1.3
 				<!--BW_String-->
 				<exports>vse tooltip</exports>
 			</stabMovement>
 			<stabTurns>
-				1.2
+				1.3
 				<!--BW_String-->
 				<exports>vse tooltip</exports>
 			</stabTurns>
 			<stabTurret>
-				1.2
+				1.3
 				<!--BW_String-->
 				<exports>vse tooltip</exports>
 			</stabTurret>
 			<stabShot>
-				1.2
+				1.3
 				<!--BW_String-->
 				<exports>vse tooltip</exports>
 			</stabShot>
 			<addSecToTimeBtmClips>
-				0.5
+				1.25
 				<!--BW_String-->
 				<exports>vse tooltip</exports>
 			</addSecToTimeBtmClips>
 			<reloadFactor>
-				0.75
+				0.5
 				<!--BW_String-->
 				<exports>vse tooltip</exports>
 			</reloadFactor>
@@ -12154,27 +12168,27 @@
 		<kpi>
 			<add>
 				<name>vehicleGunAndGunClipCooldown</name>
-				<value>-25</value>
+				<value>-50</value>
 				<specValue>
-					0.5
+					1.25
 					<!--BW_String-->
 				</specValue>
 			</add>
 			<mul>
 				<name>vehicleGunShotDispersionAfterShot</name>
-				<value>20</value>
+				<value>30</value>
 			</mul>
 			<mul>
 				<name>vehicleGunShotDispersionChassisMovement</name>
-				<value>20</value>
+				<value>30</value>
 			</mul>
 			<mul>
 				<name>vehicleGunShotDispersionChassisRotation</name>
-				<value>20</value>
+				<value>30</value>
 			</mul>
 			<mul>
 				<name>vehicleGunShotDispersionTurretRotation</name>
-				<value>20</value>
+				<value>30</value>
 			</mul>
 		</kpi>
 	</concentration>
@@ -12202,7 +12216,9 @@
 			<duration>30</duration>
 			<additiveFactors>
 				<gun-chargeTimeBonus>1</gun-chargeTimeBonus>
-				<gun-loadShellIntoDualGunBonus>3</gun-loadShellIntoDualGunBonus>
+				<gun-loadShellIntoDualGunBonus>6</gun-loadShellIntoDualGunBonus>
+				<vehicle-fwMaxSpeedBonus>5</vehicle-fwMaxSpeedBonus>
+				<vehicle-bkMaxSpeedBonus>5</vehicle-bkMaxSpeedBonus>
 			</additiveFactors>
 			<multiplicativeFactors>
 				<chassis-shotDispersionFactors-movement>
@@ -12222,7 +12238,7 @@
 					<!--BW_String-->
 				</gun-shotDispersionFactors-turretRotation>
 				<engine-power>
-					1.25
+					1.5
 					<!--BW_String-->
 				</engine-power>
 			</multiplicativeFactors>
@@ -12234,7 +12250,7 @@
 			</add>
 			<add>
 				<name>loadShellIntoDualGunBonus</name>
-				<value>-3</value>
+				<value>-6</value>
 			</add>
 			<mul>
 				<name>vehicleGunShotDispersionAfterShot</name>
@@ -12254,8 +12270,12 @@
 			</mul>
 			<mul>
 				<name>vehicleEnginePower</name>
-				<value>25</value>
+				<value>50</value>
 			</mul>
+			<add>
+				<name>speedLimitsBonus</name>
+				<value>5</value>
+			</add>
 		</kpi>
 	</recoil_recuperator>
 	<coolant_tank>
@@ -12280,15 +12300,15 @@
 			<cooldownSeconds>180</cooldownSeconds>
 			<reuseCount>2</reuseCount>
 			<duration>25</duration>
-			<penaltyReloadTime>1</penaltyReloadTime>
+			<penaltyReloadTime>4</penaltyReloadTime>
 			<additiveFactors/>
 			<multiplicativeFactors>
 				<gun-reloadTime>
-					0.80
+					0.50
 					<!--BW_String-->
 				</gun-reloadTime>
 				<gun-shotDispersionFactors-afterShot>
-					0.2
+					0.5
 					<!--BW_String-->
 				</gun-shotDispersionFactors-afterShot>
 			</multiplicativeFactors>
@@ -12296,15 +12316,15 @@
 		<kpi>
 			<mul>
 				<name>vehicleGunReloadTime</name>
-				<value>-20</value>
+				<value>-50</value>
 			</mul>
 			<add>
 				<name>vehicleGunReloadPenalty</name>
-				<value>1</value>
+				<value>4</value>
 			</add>
 			<mul>
 				<name>vehicleGunShotDispersionAfterShot</name>
-				<value>-20</value>
+				<value>-50</value>
 			</mul>
 		</kpi>
 	</coolant_tank>
@@ -12328,47 +12348,47 @@
 				</client>
 			</visualScript>
 			<cooldownSeconds>120</cooldownSeconds>
-			<reuseCount>3</reuseCount>
-			<duration>20</duration>
+			<reuseCount>4</reuseCount>
+			<duration>25</duration>
 			<cooldownAfterRamKill>
-				0.75
+				0.5
 				<!--BW_String-->
 			</cooldownAfterRamKill>
 			<additiveFactors>
-				<vehicle-fwMaxSpeedBonus>8</vehicle-fwMaxSpeedBonus>
-				<vehicle-bkMaxSpeedBonus>8</vehicle-bkMaxSpeedBonus>
+				<vehicle-fwMaxSpeedBonus>12</vehicle-fwMaxSpeedBonus>
+				<vehicle-bkMaxSpeedBonus>12</vehicle-bkMaxSpeedBonus>
 			</additiveFactors>
 			<multiplicativeFactors>
 				<ramming>
-					1.25
+					1.5
 					<!--BW_String-->
 				</ramming>
 				<engine-power>
-					2.0
+					3.0
 					<!--BW_String-->
 				</engine-power>
 				<ammoBayHealthFactor>
-					1.25
+					1.5
 					<!--BW_String-->
 				</ammoBayHealthFactor>
 				<fuelTankHealthFactor>
-					1.25
+					1.5
 					<!--BW_String-->
 				</fuelTankHealthFactor>
 				<engineHealthFactor>
-					1.25
+					1.5
 					<!--BW_String-->
 				</engineHealthFactor>
 				<chassisHealthFactor>
-					1.25
+					1.5
 					<!--BW_String-->
 				</chassisHealthFactor>
 				<vehicle-rotationSpeed>
-					0.7
+					0.44
 					<!--BW_String-->
 				</vehicle-rotationSpeed>
 				<trackRammingDamageFactor>
-					1.25
+					1.5
 					<!--BW_String-->
 				</trackRammingDamageFactor>
 			</multiplicativeFactors>
@@ -12376,35 +12396,35 @@
 		<kpi>
 			<add>
 				<name>abilityCooldownBonus</name>
-				<value>-25</value>
+				<value>-50</value>
 			</add>
 			<mul>
 				<name>vehicleAmmoBayEngineFuelStrength</name>
-				<value>25</value>
+				<value>50</value>
 			</mul>
 			<mul>
 				<name>vehicleChassisStrength</name>
-				<value>25</value>
+				<value>50</value>
 			</mul>
 			<mul>
 				<name>vehicleRamDamageResistance</name>
-				<value>-25</value>
+				<value>-50</value>
 			</mul>
 			<mul>
 				<name>trackRammingDamageFactor</name>
-				<value>-25</value>
+				<value>-50</value>
 			</mul>
 			<mul>
 				<name>damageEnemiesByRamming</name>
-				<value>25</value>
+				<value>50</value>
 			</mul>
 			<mul>
 				<name>vehicleEnginePower</name>
-				<value>100</value>
+				<value>200</value>
 			</mul>
 			<add>
 				<name>speedLimitsBonus</name>
-				<value>8</value>
+				<value>12</value>
 			</add>
 		</kpi>
 	</tank_ram>
@@ -12431,10 +12451,10 @@
 			</visualScript>
 			<cooldownSeconds>180</cooldownSeconds>
 			<damageFirstIncrease>
-				0.10
+				0.30
 				<!--BW_String-->
 			</damageFirstIncrease>
-			<addDuration>2</addDuration>
+			<addDuration>4</addDuration>
 			<reuseCount>2</reuseCount>
 			<consumeAmmo>True</consumeAmmo>
 			<duration>20</duration>
@@ -12449,48 +12469,56 @@
 			<additiveFactors/>
 			<multiplicativeFactors>
 				<chassis-shotDispersionFactors-movement>
-					0.85
+					0.8
 					<!--BW_String-->
 				</chassis-shotDispersionFactors-movement>
 				<chassis-shotDispersionFactors-rotation>
-					0.85
+					0.8
 					<!--BW_String-->
 				</chassis-shotDispersionFactors-rotation>
 				<gun-shotDispersionFactors-turretRotation>
-					0.85
+					0.8
 					<!--BW_String-->
 				</gun-shotDispersionFactors-turretRotation>
 				<gun-shotDispersionFactors-afterShot>
-					0.85
+					0.8
 					<!--BW_String-->
 				</gun-shotDispersionFactors-afterShot>
+				<gun-aimingTime>
+					0.8
+					<!--BW_String-->
+				</gun-aimingTime>
 			</multiplicativeFactors>
 		</script>
 		<kpi>
 			<add>
 				<name>abilityDurationBonus</name>
-				<value>2</value>
+				<value>4</value>
 			</add>
 			<add>
 				<name>vehicleGunDamage</name>
-				<value>10</value>
+				<value>30</value>
 				<specValue>5</specValue>
 			</add>
 			<mul>
+				<name>vehicleGunAimSpeed</name>
+				<value>20</value>
+			</mul>
+			<mul>
 				<name>vehicleGunShotDispersionAfterShot</name>
-				<value>-15</value>
+				<value>-20</value>
 			</mul>
 			<mul>
 				<name>vehicleGunShotDispersionChassisMovement</name>
-				<value>-15</value>
+				<value>-20</value>
 			</mul>
 			<mul>
 				<name>vehicleGunShotDispersionChassisRotation</name>
-				<value>-15</value>
+				<value>-20</value>
 			</mul>
 			<mul>
 				<name>vehicleGunShotDispersionTurretRotation</name>
-				<value>-15</value>
+				<value>-20</value>
 			</mul>
 		</kpi>
 	</shot_passion>

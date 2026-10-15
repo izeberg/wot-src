@@ -1249,7 +1249,7 @@
 		<id>31104</id>
 		<userString>#usa_vehicles:_120mm_APCR_M358</userString>
 		<icon>ap_cr</icon>
-		<price>4800</price>
+		<price>1120</price>
 		<kind>ARMOR_PIERCING_CR</kind>
 		<caliber>120</caliber>
 		<isTracer>true</isTracer>
@@ -4753,7 +4753,7 @@
 		<isTracer>true</isTracer>
 		<effects>mediumAPCR</effects>
 		<damage>
-			<armor>170</armor>
+			<armor>150</armor>
 			<devices>105</devices>
 		</damage>
 		<normalizationAngle>2</normalizationAngle>
@@ -4911,7 +4911,7 @@
 		<isTracer>true</isTracer>
 		<effects>mediumHollowCharge</effects>
 		<damage>
-			<armor>170</armor>
+			<armor>150</armor>
 			<devices>105</devices>
 		</damage>
 		<ricochetAngle>85</ricochetAngle>

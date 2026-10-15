@@ -1,7 +1,7 @@
 import logging, BigWorld
 from Math import Vector3, Vector4, Matrix, TerrainMP, ClampMP, Vector2
 from arena_component_system.epic_sector_warning_component import WARNING_TYPE
-from chat_commands_consts import BATTLE_CHAT_COMMAND_NAMES, INVALID_MARKER_ID, INVALID_MARKER_SUBTYPE, MarkerType, DefaultMarkerSubType, INVALID_TARGET_ID, INVALID_COMMAND_ID
+from chat_commands_consts import BATTLE_CHAT_COMMAND_NAMES, INVALID_MARKER_ID, INVALID_MARKER_SUBTYPE, MarkerType, DefaultMarkerSubType, INVALID_TARGET_ID, INVALID_COMMAND_ID, BASE_CMD_NAMES
 from constants import VEHICLE_HIT_FLAGS
 from debug_utils import LOG_ERROR
 from epic_constants import EPIC_BATTLE_TEAM_ID
@@ -21,7 +21,7 @@ from gui.battle_control.controllers.feedback_adaptor import EntityInFocusData
 from gui.battle_control.controllers.game_notification_ctrl import EPIC_NOTIFICATION
 from helpers import dependency
 from helpers import time_utils
-from messenger.proto.bw_chat2.battle_chat_cmd import BASE_CMD_NAMES, AUTOCOMMIT_COMMAND_NAMES
+from messenger.proto.bw_chat2.battle_chat_cmd import AUTOCOMMIT_COMMAND_NAMES
 from messenger_common_chat2 import MESSENGER_ACTION_IDS as _ACTIONS
 from skeletons.gui.battle_session import IBattleSessionProvider
 from gui.Scaleform.daapi.view.battle.epic.plugins import EpicVehicleMarkerPlugin, EpicRespawnableVehicleMarkerPlugin

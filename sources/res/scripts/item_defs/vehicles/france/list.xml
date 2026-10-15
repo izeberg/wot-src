@@ -553,21 +553,6 @@
 		<tags>heavyTank role_HT_assault HD improvedVentilation_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_superheavy_user earn_crystals special</tags>
 		<level>11</level>
 	</F134_ARL_Projet_F>
-	<F134_ARL_Projet_F_T>
-		<id>35001</id>
-		<userString>#france_vehicles:F134_ARL_Projet_F_T</userString>
-		<shortUserString>#france_vehicles:F134_ARL_Projet_F_T_short</shortUserString>
-		<description>#france_vehicles:F134_ARL_Projet_F_T_descr</description>
-		<shortDescriptionSpecial>#france_vehicles:F134_ARL_Projet_F_T_short_special</shortDescriptionSpecial>
-		<longDescriptionSpecial>#france_vehicles:F134_ARL_Projet_F_T_long_special</longDescriptionSpecial>
-		<price>
-			100
-			<gold/>
-		</price>
-		<notInShop>true</notInShop>
-		<tags>heavyTank role_HT_assault HD improvedVentilation_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_superheavy_user earn_crystals special secret testTank lockOutfit</tags>
-		<level>11</level>
-	</F134_ARL_Projet_F_T>
 	<F135_Schneider_120_AC_Gendarme_02>
 		<id>31013</id>
 		<userString>#france_vehicles:F135_Schneider_120_AC_Gendarme_02</userString>

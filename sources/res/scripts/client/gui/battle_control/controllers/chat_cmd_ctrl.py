@@ -4,7 +4,6 @@ from AvatarInputHandler.cameras import getWorldRayAndPoint
 from TemperatureGunController import getPlayerVehicleTemperatureGunController
 from account_helpers.settings_core.settings_constants import BattleCommStorageKeys
 from aih_constants import CTRL_MODE_NAME
-from arena_component_system.sector_base_arena_component import ID_TO_BASENAME
 from chat_commands_consts import MarkerType, DefaultMarkerSubType, ReplyState, BATTLE_CHAT_COMMAND_NAMES, INVALID_MARKER_SUBTYPE, _COMMAND_NAME_TRANSFORM_MARKER_TYPE, ONE_SHOT_COMMANDS_TO_REPLIES, COMMAND_RESPONDING_MAPPING
 from epic_constants import EPIC_BATTLE_TEAM_ID
 from gui.battle_control import avatar_getter
@@ -300,12 +299,10 @@ class ChatCommandsController(IBattleController):
             self._sendChatCommand(command, 'Minimap command for objective with id: %d not found' % hqIdx)
             return
 
-    def sendCommandToBase(self, baseIdx, cmdName, baseName=''):
+    def sendCommandToBase(self, baseIdx, cmdName):
         if self.__isProhibitedToSendIfDeadOrObserver(cmdName) or self.__isEnabled is False:
             return
-        if self.sessionProvider.arenaVisitor.gui.isInEpicRange():
-            baseName = ID_TO_BASENAME[baseIdx]
-        command = self.proto.battleCmd.createByBaseIndexAndName(baseIdx, cmdName, baseName)
+        command = self.proto.battleCmd.createByBaseIndex(baseIdx, cmdName)
         self._sendChatCommand(command, cmdName)
 
     def sendCommand(self, cmdName):

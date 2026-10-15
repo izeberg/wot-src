@@ -28,7 +28,7 @@ package net.wg.gui.lobby.settings
    public class SettingsNewCountersForm extends UIComponentEx
    {
       
-      protected static const LINE_COUNTER_TYPES:Array = [SettingsConfigHelper.TYPE_BUTTON_BAR,SettingsConfigHelper.TYPE_CHECKBOX,SettingsConfigHelper.TYPE_STEP_SLIDER];
+      protected static const LINE_COUNTER_TYPES:Array = [SettingsConfigHelper.TYPE_BUTTON_BAR,SettingsConfigHelper.TYPE_CHECKBOX,SettingsConfigHelper.TYPE_STEP_SLIDER,SettingsConfigHelper.TYPE_SLIDER,SettingsConfigHelper.TYPE_RANGE_SLIDER,SettingsConfigHelper.TYPE_DROPDOWN];
       
       private static const COUNTER_CHECKBOX_OFFSET_X:Number = -14;
       

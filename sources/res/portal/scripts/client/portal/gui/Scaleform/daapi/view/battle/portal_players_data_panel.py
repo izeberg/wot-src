@@ -33,7 +33,7 @@ class PortalPlayersDataPanel(IBattleFieldListener, PortalPlayersPanelMeta, IAbst
     def teamInfo(self):
         if BigWorld.player() is not None:
             arena = BigWorld.player().arena
-            if arena:
+            if arena and arena.teamInfo:
                 return arena.teamInfo.dynamicComponents.get('portalTeamInfoComponent')
         return
 

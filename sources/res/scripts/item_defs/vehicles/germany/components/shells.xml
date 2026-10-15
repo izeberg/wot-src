@@ -4377,13 +4377,13 @@
 		<id>31057</id>
 		<userString>#germany_vehicles:_55mm_PzGr39_G201</userString>
 		<icon>ap_cr</icon>
-		<price>175</price>
+		<price>140</price>
 		<kind>ARMOR_PIERCING_CR</kind>
 		<caliber>55</caliber>
 		<isTracer>true</isTracer>
 		<effects>mediumAPCR_autoshoot</effects>
 		<damage>
-			<armor>65</armor>
+			<armor>80</armor>
 			<devices>35</devices>
 		</damage>
 		<hitDeviceChanceMultiplier>
@@ -4400,14 +4400,14 @@
 		<id>31058</id>
 		<userString>#germany_vehicles:_55mm_PzGr40_G201</userString>
 		<icon>ap_cr_premium</icon>
-		<price>330</price>
+		<price>2800</price>
 		<improved>true</improved>
 		<kind>ARMOR_PIERCING_CR</kind>
 		<caliber>55</caliber>
 		<isTracer>true</isTracer>
 		<effects>mediumAPCR_autoshoot</effects>
 		<damage>
-			<armor>40</armor>
+			<armor>70</armor>
 			<devices>35</devices>
 		</damage>
 		<hitDeviceChanceMultiplier>
