@@ -11545,6 +11545,16 @@
 			<lifetimeEffect>none</lifetimeEffect>
 		</entry>
 		<entry>
+			<filename>content/Environment/hd_env_SU_003_OldFurniture/normal/lod0/hd_env_SU_003_OldFurniture_Group_01.model</filename>
+			<health>10</health>
+			<decayEffect>inf_envSU_83_03_OldFurniture_group_01</decayEffect>
+			<effect>inf_envSU_83_03_OldFurniture_group_01</effect>
+			<effectHP>HP_module0</effectHP>
+			<effectScale>1</effectScale>
+			<matName>n_wood0</matName>
+			<lifetimeEffect>none</lifetimeEffect>
+		</entry>
+		<entry>
 			<filename>content/Environment/hd_env_SU_003_OldFurniture/normal/lod0/hd_env_SU_003_OldFurniture_Group_02.model</filename>
 			<health>10</health>
 			<decayEffect>inf_envSU_83_03_OldFurniture_group_02</decayEffect>
@@ -20292,6 +20302,17 @@
 			<lifetimeEffect>none</lifetimeEffect>
 		</entry>
 		<entry>
+			<filename>content/Environment/hd_env_UNI_126_Fountain/normal/lod0/hd_env_UNI_126_Fountain_01.model</filename>
+			<health>10</health>
+			<decayEffect>none</decayEffect>
+			<effect>hd_env_UNI_126_Fountain_01</effect>
+			<hitEffect>hd_env_UNI_126_Fountain_01</hitEffect>
+			<effectHP>HP_module0</effectHP>
+			<effectScale>1.000000</effectScale>
+			<matName>n_stone0</matName>
+			<lifetimeEffect>none</lifetimeEffect>
+		</entry>
+		<entry>
 			<filename>content/Environment/hd_env_UNI_128_PortCargo/normal/lod0/hd_env_UNI_128_PortCargo_04.model</filename>
 			<health>10</health>
 			<decayEffect>none</decayEffect>
@@ -21133,6 +21154,61 @@
 			<effectScale>1.000000</effectScale>
 			<matName>n_wood0</matName>
 			<lifetimeEffect>none</lifetimeEffect>
+		</entry>
+		<entry>
+			<filename>content/Environment/hd_env_UNI_154_WallCanopy/normal/lod0/hd_env_UNI_154_WallCanopy_01.model</filename>
+			<health>10</health>
+			<decayEffect>none</decayEffect>
+			<effect>hd_bld_EU_210_Canopy</effect>
+			<effectHP>HP_module0</effectHP>
+			<effectScale>1.000000</effectScale>
+			<lifetimeEffect>none</lifetimeEffect>
+			<hitEffect>hd_bld_EU_210_Canopy</hitEffect>
+			<matName>n_metal0</matName>
+		</entry>
+		<entry>
+			<filename>content/Environment/hd_env_UNI_154_WallCanopy/normal/lod0/hd_env_UNI_154_WallCanopy_02.model</filename>
+			<health>10</health>
+			<decayEffect>none</decayEffect>
+			<effect>hd_bld_EU_210_Canopy_02</effect>
+			<effectHP>HP_module0</effectHP>
+			<effectScale>1.000000</effectScale>
+			<lifetimeEffect>none</lifetimeEffect>
+			<hitEffect>hd_bld_EU_210_Canopy_02</hitEffect>
+			<matName>n_metal0</matName>
+		</entry>
+		<entry>
+			<filename>content/Environment/hd_env_UNI_154_WallCanopy/normal/lod0/hd_env_UNI_154_WallCanopy_02_v2.model</filename>
+			<health>10</health>
+			<decayEffect>none</decayEffect>
+			<effect>hd_bld_EU_210_Canopy_02_v2</effect>
+			<effectHP>HP_module0</effectHP>
+			<effectScale>1.000000</effectScale>
+			<lifetimeEffect>none</lifetimeEffect>
+			<hitEffect>hd_bld_EU_210_Canopy_02_v2</hitEffect>
+			<matName>n_metal0</matName>
+		</entry>
+		<entry>
+			<filename>content/Environment/hd_env_UNI_154_WallCanopy/normal/lod0/hd_env_UNI_154_WallCanopy_03.model</filename>
+			<health>10</health>
+			<decayEffect>none</decayEffect>
+			<effect>hd_bld_EU_210_Canopy_03</effect>
+			<effectHP>HP_module0</effectHP>
+			<effectScale>1.000000</effectScale>
+			<lifetimeEffect>none</lifetimeEffect>
+			<hitEffect>hd_bld_EU_210_Canopy_03</hitEffect>
+			<matName>n_metal0</matName>
+		</entry>
+		<entry>
+			<filename>content/Environment/hd_env_UNI_154_WallCanopy/normal/lod0/hd_env_UNI_154_WallCanopy_03_v2.model</filename>
+			<health>10</health>
+			<decayEffect>none</decayEffect>
+			<effect>hd_bld_EU_210_Canopy_03_v2</effect>
+			<effectHP>HP_module0</effectHP>
+			<effectScale>1.000000</effectScale>
+			<lifetimeEffect>none</lifetimeEffect>
+			<hitEffect>hd_bld_EU_210_Canopy_03_v2</hitEffect>
+			<matName>n_metal0</matName>
 		</entry>
 		<entry>
 			<filename>content/Environment/hd_env_UNI_110_KeelBlock/normal/lod0/hd_env_UNI_110_KeelBlock_03.model</filename>
