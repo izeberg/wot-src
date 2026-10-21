@@ -1,0 +1,678 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "ability/description/berserk_portal"
+msgstr ""
+"При активации на время увеличивает наносимый урон и существенно снижает "
+"получаемый урон."
+
+msgid "ability/description/curse_shot_portal"
+msgstr ""
+"Следующий выстрел при пробитии брони наносит машине противника сразу "
+"несколько критических повреждений."
+
+msgid "ability/description/fire_shot_portal"
+msgstr "Следующий выстрел при пробитии брони поджигает машину противника."
+
+msgid "ability/description/frozen_shot_portal"
+msgstr ""
+"Следующий выстрел при пробитии брони снижает скорость движения и увеличивает"
+" время перезарядки орудия машины противника."
+
+msgid "ability/description/guided_missile_portal"
+msgstr ""
+"Выпускает снаряд в заданном направлении. При попадании в машину противника "
+"наносит фиксированный урон."
+
+msgid "ability/description/laugh_shot_portal"
+msgstr ""
+"Следующий выстрел при пробитии брони значительно затруднит управление "
+"машиной противника и будет наносить периодический урон."
+
+msgid "ability/description/minefield_portal"
+msgstr ""
+"Появляется в обозначенной зоне, попав в которую, вражеская машина получает "
+"урон, а её гусеницы оказываются сбиты. Минное поле не повреждает технику "
+"союзников."
+
+msgid "ability/description/reload_aura_portal"
+msgstr ""
+"При активации создаёт зону вокруг машины, которая ускоряет перезарядку "
+"орудий союзной техники в течение некоторого времени."
+
+msgid "ability/description/sentry_gun_portal"
+msgstr ""
+"При активации размещает в выбранной зоне статичную турель, которая в течение"
+" некоторого времени имитирует настоящую машину и атакует противников. Турель"
+" имеет ограниченный запас прочности и может быть уничтожена."
+
+msgid "ability/description/shield_portal"
+msgstr ""
+"При активации делает вашу машину временно неуязвимой к оглушению и урону "
+"от снарядов противников."
+
+msgid "ability/description/trap_portal"
+msgstr ""
+"При активации создаёт в выбранной зоне мощное поле, которое притягивает "
+"машины противника и наносит им периодический урон."
+
+msgid "ability/description/vehicle_change_shot_portal"
+msgstr ""
+"Следующий выстрел при пробитии брони позволяет на время перехватить "
+"управление машиной противника. Можно привлечь внимание и сконцентрировать "
+"огонь противников на захваченной машине или принудительно подорвать её, "
+"прекратив перехват."
+
+msgid "ability/duration"
+msgstr "Время действия: %(duration)s с."
+
+msgid "ability/name/berserk_portal"
+msgstr "Адреналин"
+
+msgid "ability/name/curse_shot_portal"
+msgstr "Замыкание"
+
+msgid "ability/name/fire_shot_portal"
+msgstr "Пирокинез"
+
+msgid "ability/name/frozen_shot_portal"
+msgstr "Заморозка"
+
+msgid "ability/name/guided_missile_portal"
+msgstr "Шаровая молния"
+
+msgid "ability/name/laugh_shot_portal"
+msgstr "Ошибка кода"
+
+msgid "ability/name/minefield_portal"
+msgstr "Минное поле"
+
+msgid "ability/name/reload_aura_portal"
+msgstr "Огневой рубеж"
+
+msgid "ability/name/sentry_gun_portal"
+msgstr "Турель"
+
+msgid "ability/name/shield_portal"
+msgstr "Защитный барьер"
+
+msgid "ability/name/trap_portal"
+msgstr "Магнит"
+
+msgid "ability/name/vehicle_change_shot_portal"
+msgstr "Перехват"
+
+msgid "ability/reload"
+msgstr "Время перезарядки: %(duration)s с."
+
+msgid "ability/whenUse"
+msgstr "Принцип действия:"
+
+msgid "complexity/count"
+msgstr "до %(complexity)s шт."
+
+msgid "complexity/countRatte"
+msgstr "1 шт."
+
+msgid "complexity/descriptionByLevel/level_1"
+msgstr "Противников немного, и они не представляют серьёзную опасность."
+
+msgid "complexity/descriptionByLevel/level_2"
+msgstr ""
+"Противников достаточное количество, и они могут оказать сопротивление "
+"неподготовленным участникам экспедиции."
+
+msgid "complexity/descriptionByLevel/level_3"
+msgstr ""
+"Много сильных противников, будет не лишним усилить вашу боевую машину "
+"до максимума."
+
+msgid "complexity/lock/description"
+msgstr ""
+"Доступ откроется только после победы на уровне сложности «%(complexity)s»."
+
+msgid "complexity/lock/title"
+msgstr "Заблокировано"
+
+msgid "complexity/portal"
+msgstr "Событие «Разлом»"
+
+msgid "complexity/range"
+msgstr "-"
+
+msgid "complexity/recomendedLevel"
+msgstr "Рекомендуемый уровень машин: "
+
+msgid "complexity/reward"
+msgstr "Награда"
+
+msgid "complexity/rewardDescription"
+msgstr ""
+"За участие в боях события вы будете получать валюту события, которую можно "
+"обменять на ценные награды в Пункте снабжения. Количество получаемой валюты "
+"зависит от результатов боя и вашего места в таблице лидеров."
+
+msgid "complexity/rewardDescriptionMaxLvl"
+msgstr ""
+"За участие в боях события вы будете получать валюту события, которую можно "
+"обменять на ценные награды в Пункте снабжения. Количество получаемой валюты "
+"зависит от результатов боя и вашего места в таблице лидеров. На этой "
+"сложности можно дополнительно получить сердце Ратте за победные бои."
+
+msgid "complexity/title"
+msgstr "Сложность «%(complexity)s»"
+
+msgid "eventName"
+msgstr "Разлом"
+
+msgid "modules/bonusDescription"
+msgstr "%(description)s (бонус к базовому значению параметра*)"
+
+msgid "modules/bonusPPS"
+msgstr "** Бонусы могут суммироваться."
+
+msgid "modules/bonusPS"
+msgstr "* Базовым является параметр без учёта бонусов."
+
+msgid "modules/description"
+msgstr "%(itemType)s (%(moduleName)s)"
+
+msgid "modules/footer"
+msgstr ""
+"Вы можете изучить только одно из парных усилений. Необходимо сбросить "
+"усиления, чтобы выбрать альтернативный вариант."
+
+msgid "modules/header"
+msgstr "%(itemType)s: %(moduleModifier)s"
+
+msgid "modules/modifiers/armoredHull"
+msgstr "броня"
+
+msgid "modules/modifiers/damageGun"
+msgstr "повышенный урон"
+
+msgid "modules/modifiers/drumGun"
+msgstr "барабан"
+
+msgid "modules/modifiers/dualGun"
+msgstr "спаренное"
+
+msgid "modules/modifiers/fastEngine"
+msgstr "макс. скорость"
+
+msgid "modules/modifiers/fastHull"
+msgstr "мобильность"
+
+msgid "modules/modifiers/fastTurret"
+msgstr "скорость вращения"
+
+msgid "modules/modifiers/hpHull"
+msgstr "прочность"
+
+msgid "modules/modifiers/hpTurret"
+msgstr "прочность"
+
+msgid "modules/modifiers/magazineReloadingGun"
+msgstr "дозарядка магазина"
+
+msgid "modules/modifiers/powerEngine"
+msgstr "мощность"
+
+msgid "modules/modifiers/quickfireGun"
+msgstr "скорость перезарядки"
+
+msgid "modules/nextLevel"
+msgstr "Изучение повысит уровень машины до: %(nextLevel)s"
+
+msgid "modules/types/damageBonus"
+msgstr "Большой бонус к урону"
+
+msgid "modules/types/kdBonus"
+msgstr "Большой бонус к перезарядке"
+
+msgid "modules/types/smallKDBonus"
+msgstr "Малый бонус к перезарядке"
+
+msgid "modules/types/smallMobilityBonus"
+msgstr "Малый бонус к мобильности"
+
+msgid "modules/types/vehicleChassis"
+msgstr "Корпус"
+
+msgid "modules/types/vehicleEngine"
+msgstr "Двигатель"
+
+msgid "modules/types/vehicleGun"
+msgstr "Орудие"
+
+msgid "modules/types/vehicleTurret"
+msgstr "Башня"
+
+msgid "modules/valuesSeparator"
+msgstr "/"
+
+msgid "params/desc/aimingTime"
+msgstr "Время, за которое прицел уменьшается в 2,5 раза."
+
+msgid "params/desc/autoReloadTime"
+msgstr ""
+"Время последовательной дозарядки каждого снаряда в магазине. Доработанная "
+"система позволяет уменьшить базовое время дозарядки следующего снаряда "
+"при отстреле заряженного снаряда после соответствующей индикации."
+
+msgid "params/desc/avgDamage"
+msgstr ""
+"Средний урон, наносимый базовым снарядом за один выстрел при пробитии брони."
+
+msgid "params/desc/avgDamagePerMinute"
+msgstr ""
+"Количество урона, потенциально наносимого противнику за 1 минуту "
+"при постоянном пробитии брони."
+
+msgid "params/desc/avgPiercingPower"
+msgstr ""
+"Средняя толщина брони, пробиваемая базовым снарядом с учётом его "
+"нормализации."
+
+msgid "params/desc/chassisRotationSpeed"
+msgstr ""
+"Скорость вращения корпуса машины вокруг своей оси, а также скорость смены "
+"курса при движении (манёвренность)."
+
+msgid "params/desc/clipFireRate"
+msgstr ""
+"Время между полной разрядкой магазина (ленты или орудий) и полным "
+"заряжанием. / Время между выстрелом и переходом к следующему заряженному "
+"снаряду, орудию или кассете. / Количество орудий или снарядов в магазине "
+"(ленте)."
+
+msgid "params/desc/damageBonus"
+msgstr "к среднему урону"
+
+msgid "params/desc/enginePower"
+msgstr ""
+"Параметр отвечает за максимальную скорость, динамику разгона и скорость "
+"поворота корпуса машины."
+
+msgid "params/desc/hullArmor"
+msgstr "Толщина брони корпуса машины: лоб/борт/корма соответственно."
+
+msgid "params/desc/info"
+msgstr ""
+"* Базовым является параметр без учета бонусов\n"
+"** Бонусы могут суммироваться"
+
+msgid "params/desc/kdBonus"
+msgstr "от времени заряжания"
+
+msgid "params/desc/maxHealth"
+msgstr "Количество очков прочности машины."
+
+msgid "params/desc/reloadTime"
+msgstr "Количество выстрелов в минуту."
+
+msgid "params/desc/reloadTimeSecs"
+msgstr ""
+"Время, за которое орудие (или оба орудия, если у машины спаренная орудийная "
+"установка) будет готово к очередному выстрелу."
+
+msgid "params/desc/shotDispersionAngle"
+msgstr ""
+"Показывает, на сколько метров снаряд может отклониться от точки прицеливания"
+" за каждые 100 метров расстояния до цели."
+
+msgid "params/desc/smallKDBonus"
+msgstr "от времени заряжания"
+
+msgid "params/desc/smallMobilityBonus"
+msgstr "к мощности двигателя"
+
+msgid "params/desc/speedLimits"
+msgstr "Паспортная скорость машины."
+
+msgid "params/desc/turretArmor"
+msgstr "Толщина брони башни машины: лоб/борт/корма соответственно."
+
+msgid "params/desc/turretRotationSpeed"
+msgstr ""
+"Количество градусов в секунду, на которое орудие переведётся в секторе "
+"обстрела вместе с башней или в неподвижной рубке (обычный / специальный "
+"режим)."
+
+msgid "params/value/aimingTime"
+msgstr "(с)"
+
+msgid "params/value/autoReloadTime"
+msgstr "(с)"
+
+msgid "params/value/avgDamage"
+msgstr "(ед.)"
+
+msgid "params/value/avgDamagePerMinute"
+msgstr "(ед./мин)"
+
+msgid "params/value/avgPiercingPower"
+msgstr "(мм)"
+
+msgid "params/value/chassisRotationSpeed"
+msgstr "(град/с)"
+
+msgid "params/value/clipFireRate"
+msgstr "(полная/между/кол-во)"
+
+msgid "params/value/enginePower"
+msgstr "(л.с.)"
+
+msgid "params/value/hullArmor"
+msgstr "(лоб/борт/корма в мм)"
+
+msgid "params/value/maxHealth"
+msgstr "(ед.)"
+
+msgid "params/value/reloadTime"
+msgstr "(выстр/мин)"
+
+msgid "params/value/reloadTimeSecs"
+msgstr "(с)"
+
+msgid "params/value/shotDispersionAngle"
+msgstr "(м)"
+
+msgid "params/value/speedLimits"
+msgstr "(км/ч)"
+
+msgid "params/value/turretArmor"
+msgstr "(лоб/борт/корма в мм)"
+
+msgid "params/value/turretRotationSpeed"
+msgstr "(град/с)"
+
+msgid "params/varTitle"
+msgstr "%(title)s %(value)s"
+
+msgid "postbattleTokenTooltip/desc"
+msgstr ""
+"За участие в боях на уровне сложности «%(complexityLevel)s» в ближайшее "
+"время вам будет начислена награда:"
+
+msgid "postbattleTokenTooltip/ratteCoin"
+msgstr "Сердце Ратте"
+
+msgid "postbattleTokenTooltip/razlomCoin"
+msgstr "Монеты Разлома"
+
+msgid "postbattleTokenTooltip/title"
+msgstr "Артефакты из Разлома"
+
+msgid "repair/always"
+msgstr "Постоянное действие:"
+
+msgid "repair/operatingTime"
+msgstr "Время работы: %(time)s с."
+
+msgid "repair/repairDescription"
+msgstr ""
+"Починка всех повреждённых модулей. Используется многократно за бой. Модули "
+"не могут быть повреждены, пока действует эффект этого снаряжения."
+
+msgid "repair/repairSpeed"
+msgstr "%(percents)s к скорости ремонта модулей"
+
+msgid "repair/subtitle"
+msgstr "Время подготовки: %(time)s с."
+
+msgid "repair/tenPercents"
+msgstr "+10%"
+
+msgid "repair/title"
+msgstr "Большой ремкомплект"
+
+msgid "repair/whenUse"
+msgstr "При использовании:"
+
+msgid "shell/baseCharacters"
+msgstr "Базовые характеристики:"
+
+msgid "shell/caliber"
+msgstr "Калибр: %(caliber)s мм"
+
+msgid "shell/name"
+msgstr "%(name)s"
+
+msgid "shell/stat/name/armor_penetration"
+msgstr "Средняя бронепробиваемость (мм)*"
+
+msgid "shell/stat/name/damage"
+msgstr "Урон (ед)"
+
+msgid "shell/stat/name/flight_speed"
+msgstr "Скорость полёта (м/c)"
+
+msgid "shell/stat/value"
+msgstr "%(from)s"
+
+msgid "shell/stat/values"
+msgstr "%(from)s-%(to)s"
+
+msgid "shell/type/ARMOR_PIERCING"
+msgstr "Бронебойный"
+
+msgid "shopCurrency/available"
+msgstr "В наличии"
+
+msgid "shopCurrency/tokenRatte/list1"
+msgstr ""
+"{white_Open}Победные бои.{white_Close} Играйте в режиме на уровне сложности "
+"«Аномально» и побеждайте Ратте."
+
+msgid "shopCurrency/tokenRatte/list2"
+msgstr ""
+"{white_Open}Приобретение.{white_Close} Можно приобрести за монеты Разлома "
+"в Пункте снабжения."
+
+msgid "shopCurrency/tokenRatte/subTitle"
+msgstr "Как получить сердце Ратте:"
+
+msgid "shopCurrency/tokenRatte/title"
+msgstr ""
+"Редкая валюта события, используется для получения скидки на набор с машиной "
+"в Пункте снабжения."
+
+msgid "shopCurrency/tokenRazlom/list1"
+msgstr ""
+"{white_Open}Прогрессия.{white_Close} Выдаются в качестве награды "
+"за прохождение этапов в прогрессии события."
+
+msgid "shopCurrency/tokenRazlom/list2"
+msgstr ""
+"{white_Open}Бои.{white_Close} Играйте в режиме на любом уровне сложности "
+"с любым исходом боя."
+
+msgid "shopCurrency/tokenRazlom/list3"
+msgstr ""
+"{white_Open}Случайная награда.{white_Close} С некоторым шансом выпадают "
+"из особых наборов в Пункте снабжения."
+
+msgid "shopCurrency/tokenRazlom/list4"
+msgstr ""
+"{white_Open}Приобретение.{white_Close} Можно приобрести за другую валюту "
+"в Пункте снабжения."
+
+msgid "shopCurrency/tokenRazlom/subTitle"
+msgstr "Как заработать монеты Разлома:"
+
+msgid "shopCurrency/tokenRazlom/title"
+msgstr ""
+"Основная валюта события, которую можно обменять на ценные предметы в Пункте "
+"снабжения."
+
+msgid "squad/complexity/squadLocked/description"
+msgstr ""
+"У одного или нескольких совзводных не разблокирован данный уровень "
+"сложности."
+
+msgid "squad/complexity/squadLocked/title"
+msgstr "Сложность недоступна"
+
+msgid "squad/complexity/squadLockedByCap/description"
+msgstr "Изменить уровень сложности может только командир вашего взвода."
+
+msgid "squad/complexity/squadLockedByCap/title"
+msgstr "Недоступно"
+
+msgid "tokenRatte/title"
+msgstr "Сердце Ратте"
+
+msgid "tokenRazlom/title"
+msgstr "Монеты Разлома"
+
+msgid "tokenTooltip/bullet"
+msgstr "•"
+
+msgid "tokenTooltip/current"
+msgstr "В наличии"
+
+msgid "tokenTooltip/next"
+msgstr "До следующего этапа"
+
+msgid "tokenTooltip/progressTitle"
+msgstr "Очки прогресса"
+
+msgid "tokenTooltip/progressTokenDesc"
+msgstr ""
+"Выдаются за успешное противостояние порождениям Разлома. Используются "
+"для продвижения по прогрессии события. Ваше место в таблице лидеров "
+"определяет количество получаемых очков прогресса. Поднимайтесь выше, "
+"выполняя полезные действия в бою."
+
+msgid "tokenTooltip/subTitle"
+msgstr "Событие «%(eventName)s»"
+
+msgid "tokenTooltip/tankProgress/current"
+msgstr "Получено на этой машине"
+
+msgid "tokenTooltip/tankProgress/next"
+msgstr "Нужно для усиления"
+
+msgid "tokenTooltip/usefullyList1"
+msgstr "уничтожение противников"
+
+msgid "tokenTooltip/usefullyList2"
+msgstr "защита Базы"
+
+msgid "tokenTooltip/usefullyList3"
+msgstr "захват Башен"
+
+msgid "tokenTooltip/usefullyList4"
+msgstr "нанесение урона противникам"
+
+msgid "tokenTooltip/usefullyList5"
+msgstr "помощь в уничтожении"
+
+msgid "tokenTooltip/usefullyList6"
+msgstr "использование брони"
+
+msgid "tokenTooltip/usefullyList7"
+msgstr "применение способностей"
+
+msgid "tokenTooltip/usefullyTitle"
+msgstr "Полезные действия:"
+
+msgid "tokenTooltip/vehicleTitle"
+msgstr "Очки опыта"
+
+msgid "tokenTooltip/vehicleTokenDesc"
+msgstr ""
+"Используются для изучения усилений и повышения уровня техники. Ваше место "
+"в таблице лидеров определяет количество получаемых очков опыта. Поднимайтесь"
+" выше, выполняя полезные действия в бою."
+
+msgid "upgradeInfo/body"
+msgstr "Вы можете изучить только одно из парных усилений."
+
+msgid "upgradeInfo/header"
+msgstr "Изучить усиление можно двойным нажатием или удержанием ЛКМ."
+
+msgid "vehicle/crew/description/koshcheyev"
+msgstr ""
+"«Я не знаю, что нас ждёт. Но я точно знаю, за что сражаюсь. Альянс не должен"
+" получить доступ к Разлому»."
+
+msgid "vehicle/crew/description/tsarev"
+msgstr ""
+"«Выживание в аномальных зонах — моя профессия. И если Разлом такой, каким "
+"его нам описали, — тем лучше»."
+
+msgid "vehicle/crew/description/vasilieva"
+msgstr ""
+"«Я не верю в чудеса. Но Разлом — единственное место, где я могу получить "
+"ответ и закрыть эту страницу»."
+
+msgid "vehicle/crew/description/yaginskaya"
+msgstr ""
+"«Я помог открыть проход в Разлом. Теперь я должен его закрыть. Если ещё "
+"не поздно…»."
+
+msgid "vehicle/crew/name/koshcheyev"
+msgstr "Андрей Курган"
+
+msgid "vehicle/crew/name/tsarev"
+msgstr "Саша Стриж"
+
+msgid "vehicle/crew/name/vasilieva"
+msgstr "Лидия Ветрова"
+
+msgid "vehicle/crew/name/yaginskaya"
+msgstr "Борис Левин"
+
+msgid "vehicle/crew/role/koshcheyev"
+msgstr "Командир техники"
+
+msgid "vehicle/crew/role/tsarev"
+msgstr "Командир техники"
+
+msgid "vehicle/crew/role/vasilieva"
+msgstr "Командир техники"
+
+msgid "vehicle/crew/role/yaginskaya"
+msgstr "Командир техники"
+
+msgid "vehicle/ttx/armor"
+msgstr "Броня"
+
+msgid "vehicle/ttx/damage"
+msgstr "Урон"
+
+msgid "vehicle/ttx/description/5120257"
+msgstr ""
+"Большой, крепкий и медленный. Прекрасно чувствует себя в роли защитника."
+
+msgid "vehicle/ttx/description/5120321"
+msgstr ""
+"Барабан заряжания позволяет быстро нанести урон, а высокая мобильность — "
+"безопасно сменить позицию."
+
+msgid "vehicle/ttx/description/5120337"
+msgstr ""
+"Универсальная машина. Уверенно справляется с большинством боевых задач."
+
+msgid "vehicle/ttx/description/5120401"
+msgstr ""
+"Лучше всего проявляет себя на дальних дистанциях. Сочетает хорошую "
+"мобильность и высокую точность стрельбы."
+
+msgid "vehicle/ttx/hp"
+msgstr "Прочность"
+
+msgid "vehicle/ttx/mobility"
+msgstr "Мобильность"
+
+msgid "vehicle/ttx/reload"
+msgstr "Перезарядка"

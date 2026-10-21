@@ -203,7 +203,7 @@
 						<Texture>content/Buildings/00_Tiles/dds/Plaster_10_crash_512_GBMT.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.054221 3.509404 0.395072</groupOrigin>
+				<groupOrigin>0.054221 3.543664 0.395072</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -558,6 +558,6 @@
 		<min>-8.221535 -0.397111 -12.343199</min>
 		<max>8.319699 9.301422 13.141222</max>
 	</boundingBox>
-	<geometrySize>317226</geometrySize>
+	<geometrySize>319218</geometrySize>
 	<minUVDensity>0.000526</minUVDensity>
 </root>

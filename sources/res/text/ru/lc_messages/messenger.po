@@ -1272,8 +1272,11 @@ msgstr "Списано золотых билетов"
 msgid "platformCurrencyMsg/debited/honey_coin"
 msgstr "Списано мёда"
 
+msgid "platformCurrencyMsg/debited/razlom_coin"
+msgstr "Списано монет Разлома"
+
 msgid "platformCurrencyMsg/debited/sacoin"
-msgstr "Списано жетонов за выслугу лет"
+msgstr "Списано жетонов ветерана"
 
 msgid "platformCurrencyMsg/received/bpbit"
 msgstr "Начислено очков Боевого пропуска"
@@ -1299,8 +1302,11 @@ msgstr "Начислено золотых билетов"
 msgid "platformCurrencyMsg/received/honey_coin"
 msgstr "Начислено мёда"
 
+msgid "platformCurrencyMsg/received/razlom_coin"
+msgstr "Начислено монет Разлома"
+
 msgid "platformCurrencyMsg/received/sacoin"
-msgstr "Добавлено жетонов за выслугу лет"
+msgstr "Добавлено жетонов ветерана"
 
 msgid "prebattle/addAllBtn/tooltip/body"
 msgstr "Добавить все контакты в список адресатов."
@@ -2406,6 +2412,15 @@ msgstr "Получено свободного опыта"
 msgid "serviceChannelMessages/currencyUpdate/received/gold"
 msgstr "Получено золота"
 
+msgid "serviceChannelMessages/days/few"
+msgstr "дня"
+
+msgid "serviceChannelMessages/days/many"
+msgstr "дней"
+
+msgid "serviceChannelMessages/days/one"
+msgstr "день"
+
 msgid "serviceChannelMessages/dedicationReward/header"
 msgstr "Награда «Герой нашего времени»"
 
@@ -3194,6 +3209,12 @@ msgstr "Поставки из тыла"
 msgid "serviceChannelMessages/paragons/body"
 msgstr "Получен доступ к ветке техники."
 
+msgid "serviceChannelMessages/paragonsCoins/purchase"
+msgstr "Начислено очков проекта «Орбита»: "
+
+msgid "serviceChannelMessages/paragonsCoins/title"
+msgstr "Очки проекта «Орбита»"
+
 msgid ""
 "serviceChannelMessages/personalMission/3/earlyPerfectCompletion/congrats"
 msgstr "За досрочное прохождение аттестации вам присвоены следующие награды"
@@ -3281,6 +3302,9 @@ msgstr "Промежуточный итог"
 
 msgid "serviceChannelMessages/prebattle/total"
 msgstr "Итог"
+
+msgid "serviceChannelMessages/preferredMapSlotsDebited"
+msgstr "Списаны дни из доступных для слота за активное участие в событиях"
 
 msgid "serviceChannelMessages/premiumBought"
 msgstr "Общий премиум аккаунт получен. Срок действия истекает %(expiryTime)s."
@@ -3616,6 +3640,15 @@ msgstr ""
 
 msgid "serviceChannelMessages/sessionProgressRewardsComplete/header"
 msgstr "Поздравляем!"
+
+msgid "serviceChannelMessages/sessionProgressRewardsNotification/button"
+msgstr "Ко всем наградам"
+
+msgid "serviceChannelMessages/sessionProgressRewardsNotification/header"
+msgstr "Получены награды за вход в игру"
+
+msgid "serviceChannelMessages/sessionProgressRewardsNotification/text"
+msgstr "Заходите регулярно: новый день — новая награда."
 
 msgid "serviceChannelMessages/specialReward/intelligenceBlueprints"
 msgstr "Универсальный фрагмент (x%(fragmentsCount)s)"

@@ -413,21 +413,21 @@
 					</property>
 					<property>
 						alphaReference
-						<Int>70</Int>
+						<Int>120</Int>
 					</property>
 					<property>
 						alphaTestEnable
 						<Bool>true</Bool>
 					</property>
 				</material>
-				<groupOrigin>0.463863 8.010765 -1.198627</groupOrigin>
+				<groupOrigin>0.236314 8.010765 -0.974686</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
 		<min>-10.420218 -2.815910 -28.250626</min>
-		<max>10.409084 21.657455 26.063841</max>
+		<max>10.366623 21.657455 26.063841</max>
 	</boundingBox>
-	<geometrySize>148686</geometrySize>
+	<geometrySize>157876</geometrySize>
 	<minUVDensity>0.000383</minUVDensity>
 </root>

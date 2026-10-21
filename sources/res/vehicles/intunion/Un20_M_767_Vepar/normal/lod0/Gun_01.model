@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/intunion/Un20_M_767_Vepar/normal/lod1/Gun_01</parent>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-0.630365 -0.258526 -0.025000</min>
+		<max>0.628900 0.296849 5.852000</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/intunion/Un20_M_767_Vepar/normal/lod0/Gun_01</nodefullVisual>
+</root>

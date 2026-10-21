@@ -18,10 +18,6 @@
 				<type>primary</type>
 			</path>
 			<path>
-				particles/content_forward/pfx_textures/eff_tex_split_smoke_4.dds
-				<type>primary</type>
-			</path>
-			<path>
 				particles/content_forward/pfx_textures/eff_tex_split_misc_3.dds
 				<type>primary</type>
 			</path>
@@ -78,15 +74,15 @@
 				<type>primary</type>
 			</path>
 			<path>
-				particles/content_forward/pfx_textures/eff_tex_split_splash_3.dds
-				<type>primary</type>
-			</path>
-			<path>
 				particles/content_forward/pfx_textures/eff_tex_long.dds
 				<type>primary</type>
 			</path>
 			<path>
 				particles/content_forward/pfx_textures/lm_textures/smoke_ground_6x6_ea.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_split_splash_3.dds
 				<type>primary</type>
 			</path>
 			<path>
@@ -122,19 +118,16 @@
 		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/hd_env_uni_0035_pierwood_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/hd_env_uni_0035_pierwood_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/hd_mle_uni_026_canopy_01.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/inf_bld_uni_000_base_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/inf_bldsu_001_outhouse_03.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_bld_uni_745_pavilion.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_env_am_066_roadsigns_01_fracture.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_env_am_066_roadsigns_01_touchdown.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_env_su_037_happyplayers.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_env_su_055_rubbish.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_env_su_088_playground_09.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_env_su_088_playground_13.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_env_su_1019_scaffold_03.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_env_su_1021_entry_market.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_env_su_1021_entry_market_hit.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_env_su_1022_easter_egg_newspaper_stand_02.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_env_su_1030_theatrical_lions.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_env_su_1040_embankment_constr.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_env_su_1046_gaz_m21_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_env_su_1046_gaz_m21_01_hit.vfx</fn_effect_bin>
@@ -169,18 +162,13 @@
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_env601_bunchlogs3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_env601_bunchlogs4.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_env601_bunchlogs5.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_env604_summerhouse.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_env_uni_046_oldpail_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_envam_024_handcar02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_envam_064_blocksbrick_01_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_envam_064_blocksbrick_03_04.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_envam_066_barrierrepairwork2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_fuel_mle008_canisters1.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_gaf003_rabitzfence.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_gaf003_rabitzfence_end.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_gaf015_townforgedfenceend.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_gaf015_townforgedfencetile.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_gaf023_forgedfence_corner_04.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_gaf_026_woodfence_tile_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_gaf_026_woodfence_tile_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_gaf_112_04_bridgefence_02.vfx</fn_effect_bin>
@@ -195,10 +183,14 @@
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_mlesu_05_01_zis3_hit.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_rw004_carriage5.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_rw007_tupik.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/trees/broadleaves/tree_birch_bold_15m_fall.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/trees/broadleaves/tree_birch_bold_15m_touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/trees/broadleaves/tree_birch_dry_frost_17m_fall.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/trees/broadleaves/tree_birch_dry_frost_17m_touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/trees/broadleaves/tree_linden_high_bald_snow_16m_fall.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/trees/broadleaves/tree_linden_high_bald_snow_16m_touchdown.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/trees/conifers/tree_spruce_frost_24m_fall.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/trees/conifers/tree_spruce_frost_24m_touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/trees/conifers/tree_spruce_frost_8m_fall.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/trees/conifers/tree_spruce_frost_8m_touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/sparks/sparks_env_med.vfx</fn_effect_bin>
@@ -215,19 +207,16 @@
 		<fn_effect_bin>particles/environment/buildings/hd_env_uni_0035_pierwood_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/buildings/hd_env_uni_0035_pierwood_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/buildings/hd_mle_uni_026_canopy_01.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/buildings/inf_bld_uni_000_base_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/buildings/inf_bldsu_001_outhouse_03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_bld_uni_745_pavilion.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_am_066_roadsigns_01_fracture.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_am_066_roadsigns_01_touchdown.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/hd_env_su_037_happyplayers.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_su_055_rubbish.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_su_088_playground_09.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_su_088_playground_13.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_su_1019_scaffold_03.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/hd_env_su_1021_entry_market.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/hd_env_su_1021_entry_market_hit.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_su_1022_easter_egg_newspaper_stand_02.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/hd_env_su_1030_theatrical_lions.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_su_1040_embankment_constr.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_su_1046_gaz_m21_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_su_1046_gaz_m21_01_hit.eff</fn_effect_bin>
@@ -262,18 +251,13 @@
 		<fn_effect_bin>particles/environment/objects/inf_env601_bunchlogs3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_env601_bunchlogs4.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_env601_bunchlogs5.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/inf_env604_summerhouse.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/inf_env_uni_046_oldpail_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_envam_024_handcar02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_envam_064_blocksbrick_01_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_envam_064_blocksbrick_03_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_envam_066_barrierrepairwork2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_fuel_mle008_canisters1.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/inf_gaf003_rabitzfence.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/inf_gaf003_rabitzfence_end.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_gaf015_townforgedfenceend.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_gaf015_townforgedfencetile.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/inf_gaf023_forgedfence_corner_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_gaf_026_woodfence_tile_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_gaf_026_woodfence_tile_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_gaf_112_04_bridgefence_02.eff</fn_effect_bin>
@@ -288,10 +272,14 @@
 		<fn_effect_bin>particles/environment/objects/inf_mlesu_05_01_zis3_hit.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_rw004_carriage5.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_rw007_tupik.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/trees/broadleaves/tree_birch_bold_15m_fall.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/trees/broadleaves/tree_birch_bold_15m_touchdown.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/trees/broadleaves/tree_birch_dry_frost_17m_fall.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/trees/broadleaves/tree_birch_dry_frost_17m_touchdown.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/trees/broadleaves/tree_linden_high_bald_snow_16m_fall.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/trees/broadleaves/tree_linden_high_bald_snow_16m_touchdown.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/trees/conifers/tree_spruce_frost_24m_fall.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/trees/conifers/tree_spruce_frost_24m_touchdown.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/trees/conifers/tree_spruce_frost_8m_fall.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/trees/conifers/tree_spruce_frost_8m_touchdown.eff</fn_effect_bin>
 		<preloadVisual>particles/mesh_particles/metal_stick.visual</preloadVisual>
@@ -326,13 +314,9 @@
 		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/503_kaliningrad_dust_devil_big.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/503_kaliningrad_chimney_smoke.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/503_kaliningrad_dust_blow_ground.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/503_kaliningrad_dust_devil_big_P.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/503_kaliningrad_dust_MidDistance_P.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/503_kaliningrad_dust_devil_big_s.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/503_kaliningrad_dust_MidDistance_s.vfx</fn_effect_bin>
 		<preloadTextures>
-			<path>
-				particles/content_deferred/pfx_textures/eff_tex_split_smoke_4.dds
-				<type>primary</type>
-			</path>
 			<path>
 				particles/content_deferred/pfx_textures/eff_tex_split_misc_3.dds
 				<type>primary</type>
@@ -370,10 +354,6 @@
 				<type>primary</type>
 			</path>
 			<path>
-				particles/content_deferred/pfx_textures/eff_tex_split_fire_6.dds
-				<type>primary</type>
-			</path>
-			<path>
 				particles/content_deferred/pfx_textures/eff_tex_split_misc_5.dds
 				<type>primary</type>
 			</path>
@@ -382,7 +362,7 @@
 				<type>primary</type>
 			</path>
 			<path>
-				particles/content_deferred/pfx_textures/eff_tex_split_splash_3.dds
+				particles/content_deferred/pfx_textures/eff_tex_split_fire_6.dds
 				<type>primary</type>
 			</path>
 			<path>
@@ -395,6 +375,10 @@
 			</path>
 			<path>
 				particles/content_deferred/pfx_textures/eff_tex_split_fire_2.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_split_splash_3.dds
 				<type>primary</type>
 			</path>
 			<path>
@@ -458,21 +442,16 @@
 		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/hd_env_uni_0035_pierwood_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/hd_env_uni_0035_pierwood_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/hd_mle_uni_026_canopy_01.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/inf_bld_uni_000_base_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/inf_bldsu_001_outhouse_03.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/cameraeffects/winter_snow_ground_kaliningrad.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/cameraeffects/winter_snow_medium_kaliningrad.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_bld_uni_745_pavilion.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_env_am_066_roadsigns_01_fracture.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_env_am_066_roadsigns_01_touchdown.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_env_su_037_happyplayers.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_env_su_055_rubbish.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_env_su_088_playground_09.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_env_su_088_playground_13.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_env_su_1019_scaffold_03.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_env_su_1021_entry_market.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_env_su_1021_entry_market_hit.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_env_su_1022_easter_egg_newspaper_stand_02.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_env_su_1030_theatrical_lions.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_env_su_1040_embankment_constr.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_env_su_1046_gaz_m21_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_env_su_1046_gaz_m21_01_hit.vfx</fn_effect_bin>
@@ -507,18 +486,13 @@
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_env601_bunchlogs3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_env601_bunchlogs4.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_env601_bunchlogs5.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_env604_summerhouse.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_env_uni_046_oldpail_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_envam_024_handcar02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_envam_064_blocksbrick_01_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_envam_064_blocksbrick_03_04.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_envam_066_barrierrepairwork2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_fuel_mle008_canisters1.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_gaf003_rabitzfence.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_gaf003_rabitzfence_end.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_gaf015_townforgedfenceend.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_gaf015_townforgedfencetile.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_gaf023_forgedfence_corner_04.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_gaf_026_woodfence_tile_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_gaf_026_woodfence_tile_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_gaf_112_04_bridgefence_02.vfx</fn_effect_bin>
@@ -533,10 +507,14 @@
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_mlesu_05_01_zis3_hit.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_rw004_carriage5.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_rw007_tupik.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/trees/broadleaves/tree_birch_bold_15m_fall.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/trees/broadleaves/tree_birch_bold_15m_touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/trees/broadleaves/tree_birch_dry_frost_17m_fall.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/trees/broadleaves/tree_birch_dry_frost_17m_touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/trees/broadleaves/tree_linden_high_bald_snow_16m_fall.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/trees/broadleaves/tree_linden_high_bald_snow_16m_touchdown.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/trees/conifers/tree_spruce_frost_24m_fall.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/trees/conifers/tree_spruce_frost_24m_touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/trees/conifers/tree_spruce_frost_8m_fall.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/trees/conifers/tree_spruce_frost_8m_touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/sparks/sparks_env_med.vfx</fn_effect_bin>
@@ -553,19 +531,16 @@
 		<fn_effect_bin>particles/environment/buildings/hd_env_uni_0035_pierwood_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/buildings/hd_env_uni_0035_pierwood_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/buildings/hd_mle_uni_026_canopy_01.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/buildings/inf_bld_uni_000_base_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/buildings/inf_bldsu_001_outhouse_03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_bld_uni_745_pavilion.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_am_066_roadsigns_01_fracture.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_am_066_roadsigns_01_touchdown.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/hd_env_su_037_happyplayers.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_su_055_rubbish.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_su_088_playground_09.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_su_088_playground_13.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_su_1019_scaffold_03.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/hd_env_su_1021_entry_market.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/hd_env_su_1021_entry_market_hit.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_su_1022_easter_egg_newspaper_stand_02.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/hd_env_su_1030_theatrical_lions.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_su_1040_embankment_constr.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_su_1046_gaz_m21_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_su_1046_gaz_m21_01_hit.eff</fn_effect_bin>
@@ -600,18 +575,13 @@
 		<fn_effect_bin>particles/environment/objects/inf_env601_bunchlogs3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_env601_bunchlogs4.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_env601_bunchlogs5.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/inf_env604_summerhouse.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/inf_env_uni_046_oldpail_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_envam_024_handcar02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_envam_064_blocksbrick_01_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_envam_064_blocksbrick_03_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_envam_066_barrierrepairwork2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_fuel_mle008_canisters1.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/inf_gaf003_rabitzfence.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/inf_gaf003_rabitzfence_end.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_gaf015_townforgedfenceend.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_gaf015_townforgedfencetile.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/inf_gaf023_forgedfence_corner_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_gaf_026_woodfence_tile_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_gaf_026_woodfence_tile_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_gaf_112_04_bridgefence_02.eff</fn_effect_bin>
@@ -626,10 +596,14 @@
 		<fn_effect_bin>particles/environment/objects/inf_mlesu_05_01_zis3_hit.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_rw004_carriage5.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_rw007_tupik.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/trees/broadleaves/tree_birch_bold_15m_fall.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/trees/broadleaves/tree_birch_bold_15m_touchdown.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/trees/broadleaves/tree_birch_dry_frost_17m_fall.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/trees/broadleaves/tree_birch_dry_frost_17m_touchdown.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/trees/broadleaves/tree_linden_high_bald_snow_16m_fall.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/trees/broadleaves/tree_linden_high_bald_snow_16m_touchdown.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/trees/conifers/tree_spruce_frost_24m_fall.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/trees/conifers/tree_spruce_frost_24m_touchdown.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/trees/conifers/tree_spruce_frost_8m_fall.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/trees/conifers/tree_spruce_frost_8m_touchdown.eff</fn_effect_bin>
 		<preloadVisual>particles/mesh_particles/metal_stick.visual</preloadVisual>

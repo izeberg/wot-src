@@ -963,17 +963,17 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_proxy_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
 					<materialKind>0</materialKind>
+					<identifier>tank_proxy_skinned</identifier>
 					<collisionFlags>0</collisionFlags>
 					<property>
 						diffuseMap
 						<Texture>vehicles/intunion/Un06_M47_Romach/M47_Romach_proxy_AM.dds</Texture>
 					</property>
 					<property>
-						excludeMaskAndAOMap
-						<Texture>vehicles/intunion/Un06_M47_Romach/M47_Romach_proxy_AO.dds</Texture>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<property>
 						metallicGlossMap
@@ -984,8 +984,8 @@
 						<Texture>vehicles/intunion/Un06_M47_Romach/M47_Romach_proxy_ANM.dds</Texture>
 					</property>
 					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+						excludeMaskAndAOMap
+						<Texture>vehicles/intunion/Un06_M47_Romach/M47_Romach_proxy_AO.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>1.404144 0.678642 0.195647</groupOrigin>
@@ -1001,17 +1001,17 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_proxy_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
 					<materialKind>0</materialKind>
+					<identifier>tank_proxy_skinned</identifier>
 					<collisionFlags>0</collisionFlags>
 					<property>
 						diffuseMap
 						<Texture>vehicles/intunion/Un06_M47_Romach/M47_Romach_proxy_AM.dds</Texture>
 					</property>
 					<property>
-						excludeMaskAndAOMap
-						<Texture>vehicles/intunion/Un06_M47_Romach/M47_Romach_proxy_AO.dds</Texture>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<property>
 						metallicGlossMap
@@ -1022,8 +1022,8 @@
 						<Texture>vehicles/intunion/Un06_M47_Romach/M47_Romach_proxy_ANM.dds</Texture>
 					</property>
 					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+						excludeMaskAndAOMap
+						<Texture>vehicles/intunion/Un06_M47_Romach/M47_Romach_proxy_AO.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>-1.404144 0.678642 0.195647</groupOrigin>

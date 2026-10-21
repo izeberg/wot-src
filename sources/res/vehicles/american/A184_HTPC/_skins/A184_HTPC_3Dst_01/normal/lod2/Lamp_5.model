@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodelessVisual>vehicles/american/A184_HTPC/_skins/A184_HTPC_3Dst_01/normal/lod2/Lamp_5</nodelessVisual>
+	<parent>vehicles/american/A184_HTPC/_skins/A184_HTPC_3Dst_01/normal/lod3/Lamp_5</parent>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.547106 1.068336 -2.248216</min>
+		<max>0.007410 1.385107 -1.877432</max>
+	</visibilityBox>
+</root>

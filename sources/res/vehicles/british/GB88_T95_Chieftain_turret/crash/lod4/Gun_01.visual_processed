@@ -30,10 +30,6 @@
 						<Int>128</Int>
 					</property>
 					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/british/GB88_T95_Chieftain_turret/T95_Chieftain_guns_AO.dds</Texture>
 					</property>

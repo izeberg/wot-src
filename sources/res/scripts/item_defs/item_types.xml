@@ -84,7 +84,6 @@
 			<private/>
 			<disabledInRoaming/>
 			<event_battles/>
-			<wt_bot/>
 			<fallout/>
 			<epic_battles/>
 			<bob/>
@@ -174,6 +173,7 @@
 			<bot_hunter/>
 			<debutBoxes/>
 			<preferential/>
+			<portal/>
 		</tags>
 	</vehicle>
 	<vehicleChassis>
@@ -299,7 +299,6 @@
 			<mobility/>
 			<premium_equipment/>
 			<builtin/>
-			<hideBuiltinInfo/>
 			<trophyUpgraded/>
 			<turbocharger/>
 			<healthReserve/>
@@ -316,10 +315,9 @@
 			<poiEquipment/>
 			<visualScriptAbilityEquipment/>
 			<abilityEquipment/>
+			<portal_ability/>
 			<public/>
 			<stopOutsideBattle/>
-			<eventItem/>
-			<hidden/>
 		</tags>
 	</equipment>
 	<customizationItem>

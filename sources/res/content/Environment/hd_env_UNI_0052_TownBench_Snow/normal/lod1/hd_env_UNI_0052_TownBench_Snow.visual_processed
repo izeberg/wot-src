@@ -31,11 +31,73 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>d0Shape.vertices</vertices>
-			<stream>d0Shape.uv2</stream>
-			<primitive>d0Shape.indices</primitive>
+			<vertices>d1Shape.vertices</vertices>
+			<stream>d1Shape.uv2</stream>
+			<primitive>d1Shape.indices</primitive>
 			<primitiveGroup>
 				0
+				<material>
+					<identifier>d_metal0</identifier>
+					<fx>shaders/std_effects/PBS_tiled.fx</fx>
+					<materialKind>87</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						albedoHeightTile0
+						<Texture>content/Buildings/00_Tiles/dds/Metal_01_Painted_02_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Buildings/00_Tiles/dds/Metal_Rusted_01_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_AM.dds</Texture>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/Environment/hd_env_UNI_0052_TownBench_Snow/hd_env_UNI_0052_TownBench_Snow_blend.png</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
+					</property>
+					<property>
+						dirtMap
+						<Texture>content/Buildings/00_Tiles/Dirt_ClayWall_Painted01_DM.dds</Texture>
+					</property>
+					<property>
+						g_tile0Tint
+						<Vector4>0.505882 0.505882 0.505882 1.000000</Vector4>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Buildings/00_Tiles/dds/Metal_01_Painted_02_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Buildings/00_Tiles/dds/Metal_Rusted_01_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Buildings/00_Tiles/dds/Metal_01_Painted_02_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Buildings/00_Tiles/dds/Metal_Rusted_01_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_GBMT.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.030898 0.062810 -0.021529</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
 				<material>
 					<identifier>d_wood0</identifier>
 					<collisionFlags>255</collisionFlags>
@@ -101,7 +163,7 @@
 				<groupOrigin>0.057723 0.022639 -0.243582</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				1
+				2
 				<material>
 					<identifier>n_metal1</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
@@ -163,7 +225,7 @@
 				<groupOrigin>-0.000000 0.504013 -0.004217</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				2
+				3
 				<material>
 					<identifier>n_wood0</identifier>
 					<collisionFlags>128</collisionFlags>
@@ -248,10 +310,10 @@
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-1.111518 -0.002654 -0.542568</min>
+		<min>-1.111518 -0.004502 -0.542568</min>
 		<max>1.111518 1.916658 0.507716</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>47774</geometrySize>
+	<geometrySize>63034</geometrySize>
 	<minUVDensity>0.031987</minUVDensity>
 </root>

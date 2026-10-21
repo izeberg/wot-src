@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s0Shape.vertices</vertices>
+			<primitive>s0Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/glow.fx</fx>
+					<materialKind>108</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/hd_env_EVT_P26_0019_Poster/hd_env_EVT_P26_0019_Poster_03_AM.dds</Texture>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						depthAccess
+						<Int>3</Int>
+					</property>
+					<property>
+						selfIllumination
+						<Float>-0.500000</Float>
+					</property>
+					<sortOrder>1</sortOrder>
+				</material>
+				<groupOrigin>0.000000 1.005953 -0.006915</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-1.000000 0.005953 -0.013831</min>
+		<max>1.000000 2.005953 0.000000</max>
+	</boundingBox>
+	<geometrySize>124</geometrySize>
+	<minUVDensity>0.248756</minUVDensity>
+</root>

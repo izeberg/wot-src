@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/japan/J53_Ho_Se_I/normal/lod2/Chassis</nodefullVisual>
+	<parent>vehicles/japan/J53_Ho_Se_I/normal/lod3/Chassis</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.607271 -0.000001 -3.741013</min>
+		<max>1.607271 1.246594 3.661390</max>
+	</visibilityBox>
+</root>

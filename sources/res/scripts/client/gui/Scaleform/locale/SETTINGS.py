@@ -1,7 +1,6 @@
 from debug_utils import LOG_WARNING
 
 class SETTINGS(object):
-    EVENTSETTINGDISABLED = '#settings:eventSettingDisabled'
     LANGUAGE_CODE = '#settings:LANGUAGE_CODE'
     WINDOWTITLE = '#settings:windowTitle'
     TITLE = '#settings:title'

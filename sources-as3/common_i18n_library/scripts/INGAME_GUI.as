@@ -111,8 +111,6 @@ package
       
       public static const PLAYER_ERRORS_EQUIPMENT_MEDKIT_ALLTANKMENARESAFE:String = "#ingame_gui:player_errors/equipment/medkit/allTankmenAreSafe";
       
-      public static const PLAYER_ERRORS_EQUIPMENT_FEPMEDKIT_ALLTANKMENARESAFE:String = "#ingame_gui:player_errors/equipment/FEPmedkit/allTankmenAreSafe";
-      
       public static const PLAYER_ERRORS_EQUIPMENT_REPAIRKIT_DEVICEISNOTDAMAGED:String = "#ingame_gui:player_errors/equipment/repairkit/deviceIsNotDamaged";
       
       public static const PLAYER_ERRORS_EQUIPMENT_REPAIRKIT_ALLDEVICESARENOTDAMAGED:String = "#ingame_gui:player_errors/equipment/repairkit/allDevicesAreNotDamaged";
@@ -2101,6 +2099,12 @@ package
       
       public static const PREBATTLEMARKER_PREBATTLEMARKER_52:String = "#ingame_gui:prebattlemarker/prebattlemarker_52";
       
+      public static const PREBATTLEMARKER_PREBATTLEMARKER_53:String = "#ingame_gui:prebattlemarker/prebattlemarker_53";
+      
+      public static const PREBATTLEMARKER_PREBATTLEMARKER_54:String = "#ingame_gui:prebattlemarker/prebattlemarker_54";
+      
+      public static const PREBATTLEMARKER_PREBATTLEMARKER_55:String = "#ingame_gui:prebattlemarker/prebattlemarker_55";
+      
       public static const OPTDEVICERESURRECTION_ENGINE:String = "#ingame_gui:optDeviceResurrection/engine";
       
       public static const OPTDEVICERESURRECTION_FUELTANK:String = "#ingame_gui:optDeviceResurrection/fuelTank";
@@ -2150,10 +2154,6 @@ package
       public static const PLAYER_ERRORS_THERMALVISION_ALREADYACTIVATED:String = "#ingame_gui:player_errors/thermalVision/alreadyActivated";
       
       public static const PLAYER_ERRORS_THERMALVISION_OVERTURNED:String = "#ingame_gui:player_errors/thermalVision/overturned";
-      
-      public static const DESTROYTIMER_MEDKITINUSE:String = "#ingame_gui:destroyTimer/medkitInUse";
-      
-      public static const CROSSHAIR_HINT_WTBARRIER:String = "#ingame_gui:crosshair/hint/wtBarrier";
        
       
       public function INGAME_GUI()

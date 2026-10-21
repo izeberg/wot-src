@@ -32,84 +32,47 @@
 		<node>Scene Root</node>
 		<geometry>
 			<vertices>d0Shape.vertices</vertices>
-			<stream>d0Shape.uv2</stream>
 			<primitive>d0Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
 					<identifier>d_wood0</identifier>
-					<fx>shaders/std_effects/PBS_tiled.fx</fx>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
 					<materialKind>87</materialKind>
 					<collisionFlags>255</collisionFlags>
 					<property>
-						albedoHeightTile0
-						<Texture>content/Buildings/00_Tiles/dds/Wood_Planks_10_painted_512_AM.dds</Texture>
-					</property>
-					<property>
-						albedoHeightTile1
-						<Texture>content/Buildings/00_Tiles/dds/Wood_Planks_10_crash_512_AM.dds</Texture>
-					</property>
-					<property>
-						albedoHeightTile2
-						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_AM.dds</Texture>
-					</property>
-					<property>
 						alphaReference
-						<Int>128</Int>
+						<Int>58</Int>
 					</property>
 					<property>
-						blendMask
-						<Texture>content/Environment/hd_env_UNI_0052_TownBench_Snow/hd_env_UNI_0052_TownBench_Snow_blend.png</Texture>
+						diffuseMap
+						<Texture>content/Environment/hd_env_UNI_0052_TownBench_Snow/hd_env_UNI_0052_TownBench_Snow_BAM.dds</Texture>
 					</property>
 					<property>
-						colorTex
-						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
+						alphaTestEnable
+						<Bool>true</Bool>
 					</property>
 					<property>
-						dirtMap
-						<Texture>content/Buildings/00_Tiles/Dirt_Plaster_07_DM.dds</Texture>
+						doubleSided
+						<Bool>true</Bool>
 					</property>
 					<property>
-						g_tile0Tint
-						<Vector4>0.286275 0.329412 0.239216 1.000000</Vector4>
+						g_enableAO
+						<Bool>true</Bool>
 					</property>
 					<property>
-						metallicAOTile0
-						<Texture>content/Buildings/00_Tiles/dds/Wood_Planks_10_painted_512_MAO.dds</Texture>
+						metallicGlossMap
+						<Texture>content/Environment/hd_env_UNI_0052_TownBench_Snow/hd_env_UNI_0052_TownBench_Snow_BGMM.dds</Texture>
 					</property>
 					<property>
-						metallicAOTile1
-						<Texture>content/Buildings/00_Tiles/dds/Wood_Planks_10_crash_512_MAO.dds</Texture>
-					</property>
-					<property>
-						metallicAOTile2
-						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_MAO.dds</Texture>
-					</property>
-					<property>
-						normalGlossSpecTile0
-						<Texture>content/Buildings/00_Tiles/dds/Wood_Planks_10_painted_512_GBMT.dds</Texture>
-					</property>
-					<property>
-						normalGlossSpecTile1
-						<Texture>content/Buildings/00_Tiles/dds/Wood_Planks_10_crash_512_GBMT.dds</Texture>
-					</property>
-					<property>
-						normalGlossSpecTile2
-						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_GBMT.dds</Texture>
+						normalMap
+						<Texture>content/Environment/hd_env_UNI_0052_TownBench_Snow/hd_env_UNI_0052_TownBench_Snow_BANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.057723 0.022639 -0.242381</groupOrigin>
+				<groupOrigin>-0.017683 0.062596 -0.094630</groupOrigin>
 			</primitiveGroup>
-		</geometry>
-	</renderSet>
-	<renderSet>
-		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
-		<node>Scene Root</node>
-		<geometry>
-			<vertices>n0Shape.vertices</vertices>
-			<primitive>n0Shape.indices</primitive>
 			<primitiveGroup>
-				0
+				1
 				<material>
 					<identifier>n_wood0</identifier>
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
@@ -143,7 +106,7 @@
 				<groupOrigin>0.000000 0.505441 -0.016278</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				1
+				2
 				<material>
 					<identifier>s_wall_0</identifier>
 					<materialKind>73</materialKind>
@@ -158,6 +121,6 @@
 		<max>1.101247 1.916658 0.507716</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>6858</geometrySize>
-	<minUVDensity>0.009971</minUVDensity>
+	<geometrySize>8442</geometrySize>
+	<minUVDensity>0.021259</minUVDensity>
 </root>

@@ -408,9 +408,10 @@ class PersonalMissionsCache(object):
         if self.__settingsCache.waitForSync or self.__syncStatus != _ALL_SYNCED:
             return
         settingsCore = dependency.instance(ISettingsCore)
-        storageData = settingsCore.serverSettings.getUIStorage()
+        from account_helpers.settings_core.ServerSettingsManager import SETTINGS_SECTIONS
+        storageData = settingsCore.serverSettings.getUIStorage(SETTINGS_SECTIONS.UI_STORAGE)
         if storageData.get(PM_TUTOR_FIELDS.INITIAL_FAL_COUNT) is None:
-            settingsCore.serverSettings.saveInUIStorage({PM_TUTOR_FIELDS.INITIAL_FAL_COUNT: self.getFreeTokensCount(PM_BRANCH.REGULAR)})
+            settingsCore.serverSettings.saveInUIStorage(SETTINGS_SECTIONS.UI_STORAGE, {PM_TUTOR_FIELDS.INITIAL_FAL_COUNT: self.getFreeTokensCount(PM_BRANCH.REGULAR)})
         return
 
     def __updateVehLevelRestrictions(self, quest):

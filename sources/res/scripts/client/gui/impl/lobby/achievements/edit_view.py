@@ -1,5 +1,5 @@
 import typing, SoundGroups, th_async as future_async
-from account_helpers.settings_core.ServerSettingsManager import UI_STORAGE_KEYS
+from account_helpers.settings_core.ServerSettingsManager import UI_STORAGE_KEYS, SETTINGS_SECTIONS
 from adisp import adisp_process
 from constants import AchievementsLayoutStates, Configs
 from frameworks.wulf import ViewFlags, ViewSettings, WindowFlags, WindowLayer
@@ -128,7 +128,7 @@ class EditView(ViewImpl):
 
     @replaceNoneKwargsModel
     def __fillFirstEntryState(self, model=None):
-        uiStorage = self.__settingsCore.serverSettings.getUIStorage2()
+        uiStorage = self.__settingsCore.serverSettings.getUIStorage(SETTINGS_SECTIONS.UI_STORAGE_2)
         isVisited = uiStorage.get(UI_STORAGE_KEYS.ACHIEVEMENT_EDIT_VIEW_VISITED)
         model.setIsFirstEntry(not isVisited)
 
@@ -294,7 +294,7 @@ class EditView(ViewImpl):
         return
 
     def __onHideFirstEntryState(self):
-        self.__settingsCore.serverSettings.saveInUIStorage2({UI_STORAGE_KEYS.ACHIEVEMENT_EDIT_VIEW_VISITED: True})
+        self.__settingsCore.serverSettings.saveInUIStorage(SETTINGS_SECTIONS.UI_STORAGE_2, {UI_STORAGE_KEYS.ACHIEVEMENT_EDIT_VIEW_VISITED: True})
         self.viewModel.setIsFirstEntry(False)
 
 

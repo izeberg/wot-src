@@ -164,7 +164,7 @@
 						<Texture>vehicles/british/tracks/T54_track_GMM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-1.060152 0.569610 -0.280321</groupOrigin>
+				<groupOrigin>-1.060152 0.569610 -0.280382</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -173,6 +173,6 @@
 		<min>-1.270540 0.010089 -2.988644</min>
 		<max>1.283504 1.129131 3.549285</max>
 	</boundingBox>
-	<geometrySize>74428</geometrySize>
+	<geometrySize>80100</geometrySize>
 	<minUVDensity>0.220443</minUVDensity>
 </root>

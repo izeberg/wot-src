@@ -523,7 +523,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.battle.views.battleTankCarousel.data.BattleVehicleCarouselVO;
    import net.wg.gui.battle.views.battleTankCarousel.renderers.BaseBattleTankIcon;
    import net.wg.gui.battle.views.battleTankCarousel.renderers.BattleTankCarouselItemRenderer;
-   import net.wg.gui.battle.views.battleTimer.BaseBattleTimer;
    import net.wg.gui.battle.views.battleTimer.BattleAnimationTimer;
    import net.wg.gui.battle.views.battleTimer.BattleTimer;
    import net.wg.gui.battle.views.battleTimer.EpicBattleTimer;
@@ -860,6 +859,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.battle.views.ribbonsPanel.RibbonCtrl;
    import net.wg.gui.battle.views.ribbonsPanel.RibbonQueue;
    import net.wg.gui.battle.views.ribbonsPanel.RibbonsPanel;
+   import net.wg.gui.battle.views.ribbonsPanel.RibbonsPanelBase;
    import net.wg.gui.battle.views.ribbonsPanel.RibbonsPool;
    import net.wg.gui.battle.views.ribbonsPanel.data.RibbonAnimationStates;
    import net.wg.gui.battle.views.ribbonsPanel.data.RibbonQueueItem;
@@ -991,7 +991,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.battle.views.vehicleMessages.VehicleMessagesPool;
    import net.wg.gui.battle.views.vehicleMessages.VehicleMessagesVoQueue;
    import net.wg.gui.battle.views.vehicleMessages.vo.VehicleMessageVO;
-   import net.wg.gui.battle.white_tiger.VO.daapi.DAAPIHunterVehicleInfoVO;
    import net.wg.gui.battle.windows.IngameDetailsHelpWindow;
    import net.wg.gui.battle.windows.IngameHelpWindow;
    import net.wg.gui.battle.windows.IngameMenu;
@@ -2073,8 +2072,6 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_BATTLE_VIEWS_BATTLETANKCAROUSEL_RENDERERS_BATTLETANKCAROUSELITEMRENDERER:Class = BattleTankCarouselItemRenderer;
       
-      public static const NET_WG_GUI_BATTLE_VIEWS_BATTLETIMER_BASEBATTLETIMER:Class = BaseBattleTimer;
-      
       public static const NET_WG_GUI_BATTLE_VIEWS_BATTLETIMER_BATTLEANIMATIONTIMER:Class = BattleAnimationTimer;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_BATTLETIMER_BATTLETIMER:Class = BattleTimer;
@@ -2747,6 +2744,8 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_BATTLE_VIEWS_RIBBONSPANEL_RIBBONSPANEL:Class = RibbonsPanel;
       
+      public static const NET_WG_GUI_BATTLE_VIEWS_RIBBONSPANEL_RIBBONSPANELBASE:Class = RibbonsPanelBase;
+      
       public static const NET_WG_GUI_BATTLE_VIEWS_RIBBONSPANEL_RIBBONSPOOL:Class = RibbonsPool;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_RIBBONSPANEL_DATA_RIBBONANIMATIONSTATES:Class = RibbonAnimationStates;
@@ -3008,8 +3007,6 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_BATTLE_VIEWS_VEHICLEMESSAGES_VEHICLEMESSAGESVOQUEUE:Class = VehicleMessagesVoQueue;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_VEHICLEMESSAGES_VO_VEHICLEMESSAGEVO:Class = VehicleMessageVO;
-      
-      public static const NET_WG_GUI_BATTLE_WHITE_TIGER_VO_DAAPI_DAAPIHUNTERVEHICLEINFOVO:Class = DAAPIHunterVehicleInfoVO;
       
       public static const NET_WG_GUI_BATTLE_WINDOWS_INGAMEDETAILSHELPWINDOW:Class = IngameDetailsHelpWindow;
       

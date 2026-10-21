@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodelessVisual>vehicles/french/F43_AMC_35_H/crash/lod3/Gun_11</nodelessVisual>
+	<parent>vehicles/french/F43_AMC_35_H/crash/lod4/Gun_11</parent>
+	<extent>192.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.312815 -0.483090 -2.381371</min>
+		<max>1.001946 0.976659 6.098746</max>
+	</visibilityBox>
+</root>

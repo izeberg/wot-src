@@ -8,25 +8,24 @@
 			<row2>0.000000 0.000000 1.000000</row2>
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
-		<node>
-			<identifier>hd_env_UNI_0050_Stage_Snow</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-			<node>
-				<identifier>HP_module0</identifier>
-				<transform>
-					<row0>1.000000 0.000000 0.000000</row0>
-					<row1>0.000000 1.000000 0.000000</row1>
-					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 0.043301 0.000000</row3>
-				</transform>
-			</node>
-		</node>
 	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s_wall0_Shape.vertices</vertices>
+			<primitive>s_wall0_Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_wall_0</identifier>
+					<materialKind>73</materialKind>
+					<collisionFlags>131</collisionFlags>
+				</material>
+				<groupOrigin>-0.039022 0.750000 0.035158</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
 	<renderSet>
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
@@ -94,7 +93,7 @@
 						<Vector4>0.100000 0.460000 0.470000 0.000000</Vector4>
 					</property>
 				</material>
-				<groupOrigin>0.038243 0.101599 -0.060413</groupOrigin>
+				<groupOrigin>0.038243 0.093252 -0.060413</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				1
@@ -168,28 +167,11 @@
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
-	<renderSet>
-		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
-		<node>Scene Root</node>
-		<geometry>
-			<vertices>s_wall0_Shape.vertices</vertices>
-			<primitive>s_wall0_Shape.indices</primitive>
-			<primitiveGroup>
-				0
-				<material>
-					<identifier>s_wall_0</identifier>
-					<materialKind>73</materialKind>
-					<collisionFlags>131</collisionFlags>
-				</material>
-				<groupOrigin>-0.039022 0.750000 0.035158</groupOrigin>
-			</primitiveGroup>
-		</geometry>
-	</renderSet>
 	<boundingBox>
 		<min>-2.262377 -0.028189 -2.387880</min>
 		<max>2.338863 1.500000 2.267055</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>109562</geometrySize>
+	<geometrySize>105000</geometrySize>
 	<minUVDensity>0.011067</minUVDensity>
 </root>

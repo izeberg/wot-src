@@ -891,6 +891,8 @@ package
       
       public static const SERVICECHANNELMESSAGES_MULTIPLIER:String = "#messenger:serviceChannelMessages/multiplier";
       
+      public static const SERVICECHANNELMESSAGES_PREFERREDMAPSLOTSDEBITED:String = "#messenger:serviceChannelMessages/preferredMapSlotsDebited";
+      
       public static const SERVICECHANNELMESSAGES_INVOICERECEIVED_COMPENSATION:String = "#messenger:serviceChannelMessages/invoiceReceived/compensation";
       
       public static const SERVICECHANNELMESSAGES_INVOICERECEIVED_COMPENSATION_PAINT:String = "#messenger:serviceChannelMessages/invoiceReceived/compensation/paint";
@@ -984,6 +986,12 @@ package
       public static const SERVICECHANNELMESSAGES_OFFERTOKENBONUS_ALTERNATIVETITLE:String = "#messenger:serviceChannelMessages/offerTokenBonus/alternativeTitle";
       
       public static const SERVICECHANNELMESSAGES_INVOICERECEIVED_LBKEYSACCRUED:String = "#messenger:serviceChannelMessages/invoiceReceived/lbKeysAccrued";
+      
+      public static const SERVICECHANNELMESSAGES_DAYS_ONE:String = "#messenger:serviceChannelMessages/days/one";
+      
+      public static const SERVICECHANNELMESSAGES_DAYS_FEW:String = "#messenger:serviceChannelMessages/days/few";
+      
+      public static const SERVICECHANNELMESSAGES_DAYS_MANY:String = "#messenger:serviceChannelMessages/days/many";
       
       public static const SERVICECHANNELMESSAGES_DURATIONOFPREMIUMACCOUNTEXPIRES:String = "#messenger:serviceChannelMessages/durationOfPremiumAccountExpires";
       
@@ -1871,6 +1879,12 @@ package
       
       public static const SERVICECHANNELMESSAGES_PROGRESSIVEREWARDNOTIFICATION_BUTTON:String = "#messenger:serviceChannelMessages/progressiveRewardNotification/button";
       
+      public static const SERVICECHANNELMESSAGES_SESSIONPROGRESSREWARDSNOTIFICATION_HEADER:String = "#messenger:serviceChannelMessages/sessionProgressRewardsNotification/header";
+      
+      public static const SERVICECHANNELMESSAGES_SESSIONPROGRESSREWARDSNOTIFICATION_TEXT:String = "#messenger:serviceChannelMessages/sessionProgressRewardsNotification/text";
+      
+      public static const SERVICECHANNELMESSAGES_SESSIONPROGRESSREWARDSNOTIFICATION_BUTTON:String = "#messenger:serviceChannelMessages/sessionProgressRewardsNotification/button";
+      
       public static const SERVICECHANNELMESSAGES_CREWSKINSCOUNT:String = "#messenger:serviceChannelMessages/crewSkinsCount";
       
       public static const SERVICECHANNELMESSAGES_PIGGYBANK_TITLE:String = "#messenger:serviceChannelMessages/piggyBank/title";
@@ -2517,6 +2531,10 @@ package
       
       public static const SERVICECHANNELMESSAGES_PARAGONS_BODY:String = "#messenger:serviceChannelMessages/paragons/body";
       
+      public static const SERVICECHANNELMESSAGES_PARAGONSCOINS_TITLE:String = "#messenger:serviceChannelMessages/paragonsCoins/title";
+      
+      public static const SERVICECHANNELMESSAGES_PARAGONSCOINS_PURCHASE:String = "#messenger:serviceChannelMessages/paragonsCoins/purchase";
+      
       public static const PLATFORMCURRENCYMSG_RECEIVED_GOLDENTICKET:String = "#messenger:platformCurrencyMsg/received/goldenticket";
       
       public static const PLATFORMCURRENCYMSG_DEBITED_GOLDENTICKET:String = "#messenger:platformCurrencyMsg/debited/goldenticket";
@@ -2548,6 +2566,10 @@ package
       public static const SERVICECHANNELMESSAGES_SESSIONPROGRESSREWARDSCOMPLETE_HEADER:String = "#messenger:serviceChannelMessages/sessionProgressRewardsComplete/header";
       
       public static const SERVICECHANNELMESSAGES_SESSIONPROGRESSREWARDSCOMPLETE_BODY:String = "#messenger:serviceChannelMessages/sessionProgressRewardsComplete/body";
+      
+      public static const PLATFORMCURRENCYMSG_RECEIVED_RAZLOM_COIN:String = "#messenger:platformCurrencyMsg/received/razlom_coin";
+      
+      public static const PLATFORMCURRENCYMSG_DEBITED_RAZLOM_COIN:String = "#messenger:platformCurrencyMsg/debited/razlom_coin";
       
       public static const SERVICECHANNELMESSAGES_SYSTEMMIXERVOLUMEDISABLEDSYSMESSAGE_HEADER:String = "#messenger:serviceChannelMessages/systemMixerVolumeDisabledSysMessage/header";
       

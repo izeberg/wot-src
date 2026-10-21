@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<xmlns:ussr>ussr</xmlns:ussr>
+	<xmlns:germany>germany</xmlns:germany>
+	<xmlns:usa>usa</xmlns:usa>
+	<xmlns:china>china</xmlns:china>
+	<xmlns:france>france</xmlns:france>
+	<xmlns:uk>uk</xmlns:uk>
+	<xmlns:japan>japan</xmlns:japan>
+	<xmlns:czech>czech</xmlns:czech>
+	<xmlns:sweden>sweden</xmlns:sweden>
+	<xmlns:poland>poland</xmlns:poland>
+	<xmlns:italy>italy</xmlns:italy>
+	<xmlns:intunion>intunion</xmlns:intunion>
+	<itemGroup>
+		<userString>#vehicle_customization:inscription/historical</userString>
+		<season>ALL</season>
+		<historical>0</historical>
+		<priceGroup>MT inscriptions 25g notInShop</priceGroup>
+		<decal>
+			<id>673</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_231.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_231</userString>
+			<vehicleFilter>
+				<include>
+					<nations>poland</nations>
+				</include>
+			</vehicleFilter>
+			<mirror>false</mirror>
+		</decal>
+		<decal>
+			<id>674</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_232.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_232</userString>
+			<vehicleFilter>
+				<include>
+					<nations>sweden</nations>
+				</include>
+			</vehicleFilter>
+			<mirror>false</mirror>
+		</decal>
+		<name>Generic Custom Look 1</name>
+		<type>INSCRIPTION</type>
+	</itemGroup>
+</root>

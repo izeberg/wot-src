@@ -95,6 +95,88 @@
 	<renderSet>
 		<node>Scene Root</node>
 		<geometry>
+			<vertices>s_nd1.vertices</vertices>
+			<stream>s_nd1.uv2</stream>
+			<primitive>s_nd1.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd1</identifier>
+					<fx>shaders/std_effects/PBS_tiled.fx</fx>
+					<materialKind>111</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						albedoHeightTile0
+						<Texture>content/Buildings/00_Tiles/dds/Plaster_10_512_AM.dds</Texture>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/Buildings/hd_bld_SU_0113_PharmacyMain/hd_bld_SU_0113_PharmacyMain_blend.png</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/Buildings/hd_bld_SU_0113_PharmacyMain/hd_bld_SU_0113_PharmacyMain_GCM.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Buildings/00_Tiles/dds/Plaster_10_512_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Buildings/00_Tiles/dds/Plaster_10_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						g_tile0Tint
+						<Vector4>0.917647 0.894118 0.831373 1.000000</Vector4>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/Buildings/00_Tiles/dds/Redbrick_06_512_AM.dds</Texture>
+					</property>
+					<property>
+						dirtMap
+						<Texture>content/Buildings/00_Tiles/dds/Dirt_ClayWall_Painted01_DM.dds</Texture>
+					</property>
+					<property>
+						g_dirtColor
+						<Vector4>0.350000 0.430000 0.380000 0.300000</Vector4>
+					</property>
+					<property>
+						g_dirtColorParams
+						<Vector4>0.000000 0.320000 0.000000 0.810000</Vector4>
+					</property>
+					<property>
+						g_tile2Tint
+						<Vector4>0.921569 0.898039 0.854902 1.000000</Vector4>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Buildings/00_Tiles/dds/Redbrick_06_512_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Buildings/00_Tiles/dds/Redbrick_06_512_GBMT.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.134377 10.308565 -6.417264</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<node>Scene Root</node>
+		<geometry>
 			<vertices>s_nd2.vertices</vertices>
 			<stream>s_nd2.uv2</stream>
 			<primitive>s_nd2.indices</primitive>
@@ -274,88 +356,6 @@
 					</property>
 				</material>
 				<groupOrigin>-0.281803 11.024872 -6.628925</groupOrigin>
-			</primitiveGroup>
-		</geometry>
-	</renderSet>
-	<renderSet>
-		<node>Scene Root</node>
-		<geometry>
-			<vertices>s_nd1.vertices</vertices>
-			<stream>s_nd1.uv2</stream>
-			<primitive>s_nd1.indices</primitive>
-			<primitiveGroup>
-				0
-				<material>
-					<identifier>s_nd1</identifier>
-					<fx>shaders/std_effects/PBS_tiled.fx</fx>
-					<materialKind>111</materialKind>
-					<collisionFlags>0</collisionFlags>
-					<property>
-						albedoHeightTile0
-						<Texture>content/Buildings/00_Tiles/dds/Plaster_10_512_AM.dds</Texture>
-					</property>
-					<property>
-						blendMask
-						<Texture>content/Buildings/hd_bld_SU_0113_PharmacyMain/hd_bld_SU_0113_PharmacyMain_blend.png</Texture>
-					</property>
-					<property>
-						colorTex
-						<Texture>content/Buildings/hd_bld_SU_0113_PharmacyMain/hd_bld_SU_0113_PharmacyMain_GCM.dds</Texture>
-					</property>
-					<property>
-						metallicAOTile0
-						<Texture>content/Buildings/00_Tiles/dds/Plaster_10_512_MAO.dds</Texture>
-					</property>
-					<property>
-						normalGlossSpecTile0
-						<Texture>content/Buildings/00_Tiles/dds/Plaster_10_512_GBMT.dds</Texture>
-					</property>
-					<property>
-						g_tile0Tint
-						<Vector4>0.917647 0.894118 0.831373 1.000000</Vector4>
-					</property>
-					<property>
-						albedoHeightTile1
-						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_AM.dds</Texture>
-					</property>
-					<property>
-						albedoHeightTile2
-						<Texture>content/Buildings/00_Tiles/dds/Redbrick_06_512_AM.dds</Texture>
-					</property>
-					<property>
-						dirtMap
-						<Texture>content/Buildings/00_Tiles/dds/Dirt_ClayWall_Painted01_DM.dds</Texture>
-					</property>
-					<property>
-						g_dirtColor
-						<Vector4>0.350000 0.430000 0.380000 0.300000</Vector4>
-					</property>
-					<property>
-						g_dirtColorParams
-						<Vector4>0.000000 0.320000 0.000000 0.810000</Vector4>
-					</property>
-					<property>
-						g_tile2Tint
-						<Vector4>0.921569 0.898039 0.854902 1.000000</Vector4>
-					</property>
-					<property>
-						metallicAOTile1
-						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_MAO.dds</Texture>
-					</property>
-					<property>
-						metallicAOTile2
-						<Texture>content/Buildings/00_Tiles/dds/Redbrick_06_512_MAO.dds</Texture>
-					</property>
-					<property>
-						normalGlossSpecTile1
-						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_GBMT.dds</Texture>
-					</property>
-					<property>
-						normalGlossSpecTile2
-						<Texture>content/Buildings/00_Tiles/dds/Redbrick_06_512_GBMT.dds</Texture>
-					</property>
-				</material>
-				<groupOrigin>-0.134377 10.308565 -6.417264</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>

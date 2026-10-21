@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/intunion/Un25_M_494/crash/lod3/Turret_02</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<nodefullVisual>vehicles/intunion/Un25_M_494/crash/lod2/Turret_02</nodefullVisual>
+	<visibilityBox>
+		<min>-1.600163 -0.044724 -2.271874</min>
+		<max>1.629536 1.325387 1.508421</max>
+	</visibilityBox>
+</root>

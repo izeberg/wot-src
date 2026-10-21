@@ -947,10 +947,7 @@
 					<identifier>tank_chassis_01_skinned</identifier>
 					<property>
 						g_detailUVTiling
-						<Vector4>
-							3.50685 1.75342 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>3.506850 1.753420 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_detailPower
@@ -1007,14 +1004,6 @@
 					<property>
 						colorIdMap
 						<Texture>vehicles/russian/common/common_ID.dds</Texture>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
 					</property>
 				</material>
 				<groupOrigin>1.149789 0.495239 -0.041390</groupOrigin>
@@ -1050,10 +1039,7 @@
 					<identifier>tank_chassis_01_skinned</identifier>
 					<property>
 						g_detailUVTiling
-						<Vector4>
-							3.50685 1.75342 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>3.506850 1.753420 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_detailPower
@@ -1111,14 +1097,6 @@
 						colorIdMap
 						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
-					</property>
 				</material>
 				<groupOrigin>-1.149791 0.495670 -0.041390</groupOrigin>
 			</primitiveGroup>
@@ -1149,10 +1127,7 @@
 					<identifier>track_mat_R_skinned</identifier>
 					<property>
 						g_detailUVTiling
-						<Vector4>
-							3.50685 0.876712 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>3.506850 0.876712 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_detailPower
@@ -1213,10 +1188,6 @@
 					<property>
 						doubleSided
 						<Bool>true</Bool>
-					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
 					</property>
 				</material>
 				<groupOrigin>1.207478 0.479485 -0.030553</groupOrigin>
@@ -1270,10 +1241,7 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>
-							3.50685 0.876712 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>3.506850 0.876712 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_useDetailMetallic
@@ -1312,10 +1280,6 @@
 					<property>
 						doubleSided
 						<Bool>true</Bool>
-					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
 					</property>
 				</material>
 				<groupOrigin>-1.207478 0.479485 -0.030553</groupOrigin>

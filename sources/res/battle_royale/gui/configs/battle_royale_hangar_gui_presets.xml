@@ -3,6 +3,7 @@
 	<presets>
 		<preset>
 			<name>battle_royale</name>
+			<basePreset>default</basePreset>
 			<components>
 				<component>
 					<name>crew</name>
@@ -32,10 +33,6 @@
 				</component>
 				<component>
 					<name>dailyQuest</name>
-					<visible>False</visible>
-				</component>
-				<component>
-					<name>comp7Modifiers</name>
 					<visible>False</visible>
 				</component>
 				<component>

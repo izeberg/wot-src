@@ -304,10 +304,10 @@ package net.wg.gui.battle.views.consumablesPanel
          invalidate(INVALIDATE_DRAW_LAYOUT);
       }
       
-      public function as_addEquipmentSlot(param1:int, param2:Number, param3:Number, param4:int, param5:Number, param6:Number, param7:String, param8:String, param9:int, param10:String) : void
+      public function as_addEquipmentSlot(param1:int, param2:Number, param3:Number, param4:int, param5:Number, param6:Number, param7:String, param8:String, param9:int) : void
       {
          this._equipmentButtonLinkage = this._settings[this._settingsId].equipmentButtonLinkage;
-         this.addEquipmentSlot(param1,param2,param3,param4,param5,param6,param7,param8,param9,param10);
+         this.addEquipmentSlot(param1,param2,param3,param4,param5,param6,param7,param8,param9);
          invalidate(INVALIDATE_DRAW_LAYOUT);
       }
       
@@ -932,31 +932,30 @@ package net.wg.gui.battle.views.consumablesPanel
          alpha = 0;
       }
       
-      private function addEquipmentSlot(param1:int, param2:Number, param3:Number, param4:int, param5:Number, param6:Number, param7:String, param8:String, param9:int, param10:String = null) : void
+      private function addEquipmentSlot(param1:int, param2:Number, param3:Number, param4:int, param5:Number, param6:Number, param7:String, param8:String, param9:int) : void
       {
-         var _loc11_:IConsumablesButton = null;
+         var _loc10_:IConsumablesButton = null;
          if(this._renderers[param1] == null)
          {
-            _loc11_ = this.createEquipmentButton();
-            this._renderers[param1] = _loc11_;
-            addChild(DisplayObject(_loc11_));
+            _loc10_ = this.createEquipmentButton();
+            this._renderers[param1] = _loc10_;
+            addChild(DisplayObject(_loc10_));
          }
          else
          {
-            _loc11_ = this.getRendererBySlotIdx(param1);
+            _loc10_ = this.getRendererBySlotIdx(param1);
          }
-         var _loc12_:ConsumablesVO = _loc11_.consumablesVO;
-         _loc12_.keyCode = param2;
-         _loc12_.idx = param1;
-         _loc12_.tag = param10;
-         _loc11_.isReplay = this._isReplay;
-         _loc11_.icon = param7;
-         _loc11_.tooltipStr = param8;
-         _loc11_.key = param3;
-         _loc11_.addClickCallBack(this);
-         _loc11_.setCoolDownTime(param5,param6,param6 - param5,param9);
-         _loc11_.quantity = param4;
-         _loc11_.visible = true;
+         var _loc11_:ConsumablesVO = _loc10_.consumablesVO;
+         _loc11_.keyCode = param2;
+         _loc11_.idx = param1;
+         _loc10_.isReplay = this._isReplay;
+         _loc10_.icon = param7;
+         _loc10_.tooltipStr = param8;
+         _loc10_.key = param3;
+         _loc10_.addClickCallBack(this);
+         _loc10_.setCoolDownTime(param5,param6,param6 - param5,param9);
+         _loc10_.quantity = param4;
+         _loc10_.visible = true;
       }
       
       private function expandPopup(param1:int, param2:Array) : void
@@ -1045,16 +1044,6 @@ package net.wg.gui.battle.views.consumablesPanel
       public function get panelWidth() : Number
       {
          return this.x + this._basePanelWidth;
-      }
-      
-      protected function get renderers() : Vector.<IConsumablesButton>
-      {
-         return this._renderers;
-      }
-      
-      protected function set basePanelWidth(param1:Number) : void
-      {
-         this._basePanelWidth = param1;
       }
       
       private function onStageMouseDownHandler(param1:MouseEvent) : void

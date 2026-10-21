@@ -129,15 +129,6 @@
 									</transform>
 								</node>
 							</node>
-							<node>
-								<identifier>Lever_Joint_L0_BlendBone</identifier>
-								<transform>
-									<row0>1.000000 0.000000 -0.000000</row0>
-									<row1>-0.000000 1.000000 0.000000</row1>
-									<row2>-0.000000 -0.000000 -1.000000</row2>
-									<row3>1.279729 -0.389610 -1.909971</row3>
-								</transform>
-							</node>
 						</node>
 						<node>
 							<identifier>Lever_Start_L0_BlendBone</identifier>
@@ -200,15 +191,6 @@
 										<row3>1.329505 -0.389610 -1.179970</row3>
 									</transform>
 								</node>
-							</node>
-							<node>
-								<identifier>Lever_Joint_L1_BlendBone</identifier>
-								<transform>
-									<row0>1.000000 0.000000 -0.000000</row0>
-									<row1>0.000000 1.000000 -0.000000</row1>
-									<row2>0.000000 -0.000000 -1.000000</row2>
-									<row3>1.279729 -0.389610 -1.179970</row3>
-								</transform>
 							</node>
 						</node>
 						<node>

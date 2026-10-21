@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/intunion/Un20_M_767_Vepar/normal/lod0/Luke_Un20_M_Vepar</nodefullVisual>
+	<visibilityBox>
+		<min>-0.127779 0.343688 2.247754</min>
+		<max>0.127777 0.668965 2.398257</max>
+	</visibilityBox>
+	<parent>vehicles/intunion/Un20_M_767_Vepar/normal/lod1/Luke_Un20_M_Vepar</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+</root>

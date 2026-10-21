@@ -971,41 +971,67 @@
 		<node>Track_VD_R1_BlendBone</node>
 		<geometry>
 			<vertices>track_R_Shape.vertices</vertices>
+			<stream>track_R_Shape.uv2</stream>
 			<primitive>track_R_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>track_mat_R_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_uvtransform_skinned_ao.fx</fx>
 					<materialKind>0</materialKind>
+					<identifier>track_mat_R_skinned</identifier>
 					<collisionFlags>0</collisionFlags>
-					<property>
-						alphaReference
-						<Int>64</Int>
-					</property>
 					<property>
 						diffuseMap
 						<Texture>vehicles/american/tracks/M_Project_track_AM.dds</Texture>
-					</property>
-					<property>
-						doubleSided
-						<Bool>true</Bool>
-					</property>
-					<property>
-						g_detailUVTiling
-						<Vector4>1.753500 0.438375 0.000000 0.000000</Vector4>
-					</property>
-					<property>
-						metallicDetailMap
-						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
 					<property>
 						metallicGlossMap
 						<Texture>vehicles/american/tracks/M_Project_track_GMM.dds</Texture>
 					</property>
 					<property>
+						g_detailPowerGloss
+						<Float>
+							0.35
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_maskBias
+						<Float>
+							0.18
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>3.507000 3.507000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
+					</property>
+					<property>
 						normalMap
 						<Texture>vehicles/american/tracks/M_Project_track_ANM.dds</Texture>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						alphaReference
+						<Int>128</Int>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
 					</property>
 				</material>
 				<groupOrigin>1.404145 0.692356 0.197166</groupOrigin>
@@ -1034,37 +1060,62 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>track_mat_L_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_uvtransform_skinned_ao.fx</fx>
 					<materialKind>0</materialKind>
+					<identifier>track_mat_L_skinned</identifier>
 					<collisionFlags>0</collisionFlags>
-					<property>
-						alphaReference
-						<Int>64</Int>
-					</property>
 					<property>
 						diffuseMap
 						<Texture>vehicles/american/tracks/M_Project_track_AM.dds</Texture>
-					</property>
-					<property>
-						doubleSided
-						<Bool>true</Bool>
-					</property>
-					<property>
-						g_detailUVTiling
-						<Vector4>1.753500 0.438375 0.000000 0.000000</Vector4>
-					</property>
-					<property>
-						metallicDetailMap
-						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
 					<property>
 						metallicGlossMap
 						<Texture>vehicles/american/tracks/M_Project_track_GMM.dds</Texture>
 					</property>
 					<property>
+						g_detailPowerGloss
+						<Float>
+							0.35
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_maskBias
+						<Float>
+							0.18
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>3.507000 3.507000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
+					</property>
+					<property>
 						normalMap
 						<Texture>vehicles/american/tracks/M_Project_track_ANM.dds</Texture>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						alphaReference
+						<Int>128</Int>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
 					</property>
 				</material>
 				<groupOrigin>-1.404154 0.692758 0.199852</groupOrigin>
@@ -1096,13 +1147,21 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_chassis_01_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
-					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
+					<identifier>tank_chassis_01_skinned</identifier>
+					<collisionFlags>0</collisionFlags>
 					<property>
-						g_detailUVTiling
-						<Vector4>3.506850 3.506850 0.000000 0.000000</Vector4>
+						diffuseMap
+						<Texture>vehicles/intunion/Un06_M47_Romach/M47_Romach_chassis_01_AM.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/intunion/Un06_M47_Romach/M47_Romach_chassis_01_GMM.dds</Texture>
 					</property>
 					<property>
 						g_detailPowerGloss
@@ -1112,11 +1171,8 @@
 						</Float>
 					</property>
 					<property>
-						g_detailPowerAlbedo
-						<Float>
-							0.11
-							<!--BW_String-->
-						</Float>
+						alphaTestEnable
+						<Bool>true</Bool>
 					</property>
 					<property>
 						g_maskBias
@@ -1126,32 +1182,35 @@
 						</Float>
 					</property>
 					<property>
+						g_detailUVTiling
+						<Vector4>3.507000 3.507000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
 						g_detailPower
 						<Float>5</Float>
-					</property>
-					<property>
-						metallicDetailMap
-						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
-					</property>
-					<property>
-						metallicGlossMap
-						<Texture>vehicles/intunion/Un06_M47_Romach/M47_Romach_chassis_01_GMM.dds</Texture>
 					</property>
 					<property>
 						normalMap
 						<Texture>vehicles/intunion/Un06_M47_Romach/M47_Romach_chassis_01_ANM.dds</Texture>
 					</property>
 					<property>
-						diffuseMap
-						<Texture>vehicles/intunion/Un06_M47_Romach/M47_Romach_chassis_01_AM.dds</Texture>
-					</property>
-					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/intunion/Un06_M47_Romach/M47_Romach_chassis_01_AO.dds</Texture>
 					</property>
 					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						alphaReference
+						<Int>128</Int>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
 					</property>
 				</material>
 				<groupOrigin>-1.368085 0.689166 0.223039</groupOrigin>
@@ -1183,13 +1242,21 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_chassis_01_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
-					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
+					<identifier>tank_chassis_01_skinned</identifier>
+					<collisionFlags>0</collisionFlags>
 					<property>
-						g_detailUVTiling
-						<Vector4>3.506850 3.506850 0.000000 0.000000</Vector4>
+						diffuseMap
+						<Texture>vehicles/intunion/Un06_M47_Romach/M47_Romach_chassis_01_AM.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/intunion/Un06_M47_Romach/M47_Romach_chassis_01_GMM.dds</Texture>
 					</property>
 					<property>
 						g_detailPowerGloss
@@ -1199,11 +1266,8 @@
 						</Float>
 					</property>
 					<property>
-						g_detailPowerAlbedo
-						<Float>
-							0.11
-							<!--BW_String-->
-						</Float>
+						alphaTestEnable
+						<Bool>true</Bool>
 					</property>
 					<property>
 						g_maskBias
@@ -1213,32 +1277,35 @@
 						</Float>
 					</property>
 					<property>
+						g_detailUVTiling
+						<Vector4>3.507000 3.507000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
 						g_detailPower
 						<Float>5</Float>
-					</property>
-					<property>
-						metallicDetailMap
-						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
-					</property>
-					<property>
-						metallicGlossMap
-						<Texture>vehicles/intunion/Un06_M47_Romach/M47_Romach_chassis_01_GMM.dds</Texture>
 					</property>
 					<property>
 						normalMap
 						<Texture>vehicles/intunion/Un06_M47_Romach/M47_Romach_chassis_01_ANM.dds</Texture>
 					</property>
 					<property>
-						diffuseMap
-						<Texture>vehicles/intunion/Un06_M47_Romach/M47_Romach_chassis_01_AM.dds</Texture>
-					</property>
-					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/intunion/Un06_M47_Romach/M47_Romach_chassis_01_AO.dds</Texture>
 					</property>
 					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						alphaReference
+						<Int>128</Int>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
 					</property>
 				</material>
 				<groupOrigin>1.368525 0.689166 0.223039</groupOrigin>
@@ -1250,6 +1317,6 @@
 		<min>-1.691254 0.041290 -3.208061</min>
 		<max>1.691245 1.344226 2.806996</max>
 	</boundingBox>
-	<geometrySize>171482</geometrySize>
+	<geometrySize>174506</geometrySize>
 	<minUVDensity>0.012557</minUVDensity>
 </root>

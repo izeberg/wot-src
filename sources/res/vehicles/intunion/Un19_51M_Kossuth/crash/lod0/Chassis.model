@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-1.690443 -0.000000 -3.386550</min>
+		<max>1.690443 1.350143 3.367289</max>
+	</visibilityBox>
+	<parent>vehicles/intunion/Un19_51M_Kossuth/crash/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/intunion/Un19_51M_Kossuth/crash/lod0/Chassis</nodefullVisual>
+</root>

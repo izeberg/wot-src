@@ -1,32 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<type>ptur</type>
-	<m_saturationColor>0.690140 0.837256 0.886699</m_saturationColor>
+	<m_saturationColor>0.521569 0.674510 0.839216</m_saturationColor>
+	<m_saturationStrength>0.820000</m_saturationStrength>
 	<m_tankDesaturation>0.700000 0.700000 0.700000</m_tankDesaturation>
 	<m_backgroundDesaturation>0.435830 1.000000 0.148010</m_backgroundDesaturation>
 	<m_cameraInterpSpeed>10.000000</m_cameraInterpSpeed>
-	<m_cameraRotationDeltaMax>0.500000</m_cameraRotationDeltaMax>
+	<m_cameraRotationDeltaMax>0.000000</m_cameraRotationDeltaMax>
+	<m_noiseTexture>system/maps/post_processing/neurons_noise.dds</m_noiseTexture>
+	<m_gradientTexture>particles/content_deferred/GFX_models/GFX_textures/Gradients/ptur_portal.dds</m_gradientTexture>
+	<m_distortionTexture/>
+	<m_desaturationEnabled>true</m_desaturationEnabled>
+	<m_useColorFromNoiseTexture>false</m_useColorFromNoiseTexture>
 	<m_fadeSpeed>2.000000</m_fadeSpeed>
 	<m_VignetteSize>1.240000</m_VignetteSize>
 	<m_HardVignetteSize>0.400000</m_HardVignetteSize>
 	<m_boostTransitionSpeed>2.000000</m_boostTransitionSpeed>
 	<m_flowSpeedBase>1.000000</m_flowSpeedBase>
 	<m_flowSpeedBoosted>2.000000</m_flowSpeedBoosted>
-	<m_spaghettificationDepth>0.640000</m_spaghettificationDepth>
-	<m_spaghettificationSize>0.250000</m_spaghettificationSize>
-	<m_linkThickness>0.390000</m_linkThickness>
-	<m_linkBluriness>0.390000 0.040000</m_linkBluriness>
-	<m_sinXProp>23.000000 0.050000</m_sinXProp>
-	<m_cellSize>1.460000 0.760000 6.770000</m_cellSize>
-	<m_noiseUVScale>0.126000</m_noiseUVScale>
-	<m_cellBlur>0.780000 2.123000</m_cellBlur>
-	<m_scale>0.160000</m_scale>
-	<m_radialBlurOffset>0.180000</m_radialBlurOffset>
-	<m_radialBlurStrength>0.100000</m_radialBlurStrength>
-	<m_noiseRotationSpeed>0.210000</m_noiseRotationSpeed>
-	<m_vignetteIntensity>0.780000</m_vignetteIntensity>
-	<m_vignetteExp>1.890000</m_vignetteExp>
-	<m_gridness>0.900000</m_gridness>
-	<m_sinYProp>21.000000 0.020000</m_sinYProp>
-	<m_vignetteOffset>0.100000</m_vignetteOffset>
+	<m_spaghettificationDepth>0.450000</m_spaghettificationDepth>
+	<m_spaghettificationSize>0.240000</m_spaghettificationSize>
+	<m_linkThickness>0.520000</m_linkThickness>
+	<m_linkBluriness>0.360000 0.000000</m_linkBluriness>
+	<m_sinXProp>23.000000 0.040000</m_sinXProp>
+	<m_cellSize>1.420000 0.270000 6.970000</m_cellSize>
+	<m_noiseUVScale>1.000000</m_noiseUVScale>
+	<m_cellBlur>0.900000 1.000000</m_cellBlur>
+	<m_scaleValues>0.640000 0.000000</m_scaleValues>
+	<m_scaleRange>0.510000 1.400000</m_scaleRange>
+	<m_radialBlurOffset>-0.090000</m_radialBlurOffset>
+	<m_radialBlurStrength>0.000000</m_radialBlurStrength>
+	<m_noiseRotationSpeed>0.010000</m_noiseRotationSpeed>
+	<m_vignetteIntensity>0.770000</m_vignetteIntensity>
+	<m_vignetteExp>1.500000</m_vignetteExp>
+	<m_gridness>0.500000</m_gridness>
+	<m_alphaMul>1.470000</m_alphaMul>
+	<m_sinYProp>21.000000 0.000000</m_sinYProp>
+	<m_vignetteOffset>0.880000</m_vignetteOffset>
+	<m_fadeInOut>1.000000 1.000000</m_fadeInOut>
+	<m_effectDistortionParams>
+		<distortionSpeed>0.000000 0.000000</distortionSpeed>
+		<distortionScale>1.000000 1.000000</distortionScale>
+		<distortionVignetteSize>2.000000</distortionVignetteSize>
+		<distortionVignetteBlur>1.000000</distortionVignetteBlur>
+	</m_effectDistortionParams>
 </root>

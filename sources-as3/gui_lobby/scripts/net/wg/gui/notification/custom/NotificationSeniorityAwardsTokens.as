@@ -19,6 +19,8 @@ package net.wg.gui.notification.custom
          messageTopOffset = 0;
          messageBottomOffset = MESSAGE_BOTTOM_OFFSET;
          buttonsAlign = TextFormatAlign.CENTER;
+         this.countTF.mouseEnabled = false;
+         textField.mouseEnabled = false;
       }
       
       override protected function onDispose() : void

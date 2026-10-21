@@ -622,7 +622,7 @@
 					</property>
 					<property>
 						g_lodBlurDistance
-						<Vector4>2000.000000 5000.000000 1.000000 0.000000</Vector4>
+						<Vector4>400.000000 600.000000 1.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_LumMap
@@ -674,8 +674,8 @@
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-26.049232 -2.070768 -14.709056</min>
-		<max>27.735380 64.791313 14.386175</max>
+		<min>-26.050228 -2.082289 -14.709056</min>
+		<max>27.735380 64.791313 14.386178</max>
 	</boundingBox>
 	<geometrySize>3138806</geometrySize>
 	<minUVDensity>0.000629</minUVDensity>

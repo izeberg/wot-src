@@ -146,7 +146,7 @@
 		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/inf_bld_eu_248_shed_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/inf_bld_uni_000_base_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/inf_bldaf_module_01.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/inf_building_fire_01.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/inf_building_fire_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/interior/05_prohorovka_smoke_light_small_slow.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/interior/83_kharkiv_fire_big_bld_su_094_kharkivhouse.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/interior/83_kharkiv_fire_gasoline_01.vfx</fn_effect_bin>
@@ -173,7 +173,6 @@
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_bld_su_126_boxhouse.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_env007_snagheap_burning_03.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_env_101_roadpoles_01_fall.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_env_eu_040_streetlamp_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_env_eu_065_well.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_env_su_006_trashcan_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_env_su_006_trashcan_03.vfx</fn_effect_bin>
@@ -305,6 +304,8 @@
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_shells_detonation_medium.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_shells_detonation_small.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_smallpole.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_streetlamp_fracture.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_streetlamp_touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_town_bench_des.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/scenarios/210_air_smoke_trail.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/scenarios/83_air_explosion.vfx</fn_effect_bin>
@@ -349,7 +350,7 @@
 		<fn_effect_bin>particles/environment/buildings/inf_bld_eu_248_shed_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/buildings/inf_bld_uni_000_base_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/buildings/inf_bldaf_module_01.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/buildings/inf_building_fire_01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/buildings/inf_building_fire_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/exterior/83_antiaircraft_big.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/05_prohorovka_smoke_light_small_slow.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/83_kharkiv_fire_big_bld_su_094_kharkivhouse.eff</fn_effect_bin>
@@ -376,7 +377,6 @@
 		<fn_effect_bin>particles/environment/objects/hd_bld_su_126_boxhouse.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env007_snagheap_burning_03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_101_roadpoles_01_fall.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/hd_env_eu_040_streetlamp_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_eu_065_well.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_su_006_trashcan_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_su_006_trashcan_03.eff</fn_effect_bin>
@@ -508,6 +508,8 @@
 		<fn_effect_bin>particles/environment/objects/inf_shells_detonation_medium.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_shells_detonation_small.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_smallpole.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_streetlamp_fracture.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_streetlamp_touchdown.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_town_bench_des.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/scenarios/210_air_smoke_trail.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/scenarios/83_air_explosion.eff</fn_effect_bin>
@@ -735,7 +737,7 @@
 		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/inf_bld_eu_248_shed_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/inf_bld_uni_000_base_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/inf_bldaf_module_01.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/inf_building_fire_01.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/inf_building_fire_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/cameraeffects/kharkiv_blizzard.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/cameraeffects/kharkiv_snow.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/cameraeffects/kharkiv_snow_ash.vfx</fn_effect_bin>
@@ -770,7 +772,6 @@
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_bld_su_126_boxhouse.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_env007_snagheap_burning_03.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_env_101_roadpoles_01_fall.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_env_eu_040_streetlamp_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_env_eu_065_well.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_env_su_006_trashcan_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_env_su_006_trashcan_03.vfx</fn_effect_bin>
@@ -902,6 +903,8 @@
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_shells_detonation_medium.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_shells_detonation_small.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_smallpole.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_streetlamp_fracture.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_streetlamp_touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_town_bench_des.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/scenarios/210_air_smoke_trail.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/scenarios/83_air_explosion.vfx</fn_effect_bin>
@@ -953,7 +956,7 @@
 		<fn_effect_bin>particles/environment/buildings/inf_bld_eu_248_shed_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/buildings/inf_bld_uni_000_base_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/buildings/inf_bldaf_module_01.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/buildings/inf_building_fire_01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/buildings/inf_building_fire_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/exterior/83_antiaircraft_big.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/05_prohorovka_smoke_light_small_slow.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/83_kharkiv_fire_big_bld_su_094_kharkivhouse.eff</fn_effect_bin>
@@ -980,7 +983,6 @@
 		<fn_effect_bin>particles/environment/objects/hd_bld_su_126_boxhouse.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env007_snagheap_burning_03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_101_roadpoles_01_fall.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/hd_env_eu_040_streetlamp_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_eu_065_well.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_su_006_trashcan_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_su_006_trashcan_03.eff</fn_effect_bin>
@@ -1112,6 +1114,8 @@
 		<fn_effect_bin>particles/environment/objects/inf_shells_detonation_medium.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_shells_detonation_small.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_smallpole.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_streetlamp_fracture.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_streetlamp_touchdown.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_town_bench_des.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/scenarios/210_air_smoke_trail.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/scenarios/83_air_explosion.eff</fn_effect_bin>

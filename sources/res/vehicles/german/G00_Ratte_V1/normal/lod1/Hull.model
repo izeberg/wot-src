@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/german/G00_Ratte_V1/normal/lod2/Hull</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-7.502539 -1.813914 -18.038877</min>
+		<max>7.416285 8.012172 18.329304</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G00_Ratte_V1/normal/lod1/Hull</nodefullVisual>
+</root>

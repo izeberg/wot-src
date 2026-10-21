@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/american/A184_HTPC/_skins/A184_HTPC_3Dst_01/crash/lod4/Turret_01</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.367357 -0.068830 -2.946662</min>
+		<max>1.367384 1.777174 1.510666</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/american/A184_HTPC/_skins/A184_HTPC_3Dst_01/crash/lod3/Turret_01</nodefullVisual>
+</root>

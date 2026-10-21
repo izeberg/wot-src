@@ -188,7 +188,7 @@
 						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-1.060153 0.567168 -0.280242</groupOrigin>
+				<groupOrigin>-1.060153 0.567168 -0.280304</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -197,6 +197,6 @@
 		<min>-1.270540 0.005205 -2.988644</min>
 		<max>1.283689 1.129131 3.549129</max>
 	</boundingBox>
-	<geometrySize>92738</geometrySize>
-	<minUVDensity>0.220702</minUVDensity>
+	<geometrySize>99848</geometrySize>
+	<minUVDensity>0.212986</minUVDensity>
 </root>

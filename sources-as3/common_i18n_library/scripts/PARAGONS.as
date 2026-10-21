@@ -513,6 +513,18 @@ package
       
       public static const PROJECT_NAME:String = "#paragons:project/name";
       
+      public static const NOTIFICATIONS_PARAGONSCOINS_TITLE:String = "#paragons:notifications/paragonsCoins/title";
+      
+      public static const NOTIFICATIONS_PARAGONSCOINS_DESCRIPTION_AVAILABLE:String = "#paragons:notifications/paragonsCoins/description/available";
+      
+      public static const NOTIFICATIONS_PARAGONSCOINS_DESCRIPTION_UNAVAILABLE:String = "#paragons:notifications/paragonsCoins/description/unavailable";
+      
+      public static const NOTIFICATIONS_PARAGONSCOINS_BUTTON_AVAILABLE:String = "#paragons:notifications/paragonsCoins/button/available";
+      
+      public static const NOTIFICATIONS_PARAGONSCOINS_BUTTON_UNAVAILABLE:String = "#paragons:notifications/paragonsCoins/button/unavailable";
+      
+      public static const NOTIFICATIONS_PARAGONSCOINS_COUNTER:String = "#paragons:notifications/paragonsCoins/counter";
+      
       public static const PROJECT_UNAVALABLE_HEADER:String = "#paragons:project/unavalable/header";
       
       public static const PROJECT_UNAVALABLE_BODY:String = "#paragons:project/unavalable/body";

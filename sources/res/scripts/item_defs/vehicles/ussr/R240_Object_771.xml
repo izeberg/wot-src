@@ -2772,7 +2772,7 @@
 					<!--BW_String-->
 				</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>390</circularVisionRadius>
+			<circularVisionRadius>380</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>110</maxHealth>
 				<maxRegenHealth>55</maxRegenHealth>
@@ -2816,7 +2816,7 @@
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<shotDispersionRadius>
-						0.38
+						0.4
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
@@ -2835,7 +2835,7 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						2.5
+						3.0
 						<!--BW_String-->
 					</aimingTime>
 					<customizationSlots>
@@ -3895,7 +3895,7 @@
 			</customization>
 			<wwturretRotatorSoundManual>tur_mech_trav</wwturretRotatorSoundManual>
 			<physicsShape>
-				1 0 1.069 0.017 0.964 -0.019 0.718 0.543 0.289 0.5 0.381 0.5 0 0.5 0
+				1 0 1.069 0.017 0.676 0.189 0.718 0.543 0.289 0.5 0.381 0.5 0 0.5 0
 				<!--BW_String-->
 			</physicsShape>
 			<camouflage>

@@ -97,14 +97,6 @@
 						excludeMaskAndAOMap
 						<Texture>vehicles/american/A175_OTAC_MT_58/OTAC_MT_58_proxy_AO.dds</Texture>
 					</property>
-					<property>
-						g_detailUVTiling
-						<Vector4>3.507000 1.753500 0.000000 0.000000</Vector4>
-					</property>
-					<property>
-						metallicDetailMap
-						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
-					</property>
 				</material>
 				<groupOrigin>0.000564 0.011746 -2.603296</groupOrigin>
 			</primitiveGroup>

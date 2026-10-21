@@ -11,11 +11,20 @@ msgstr ""
 msgid "B_16_x2"
 msgstr "2x B-16"
 
+msgid "Chassis_01_Pl17_DS_PZlnz_H"
+msgstr "DS PZInż Huragan"
+
 msgid "Chassis_01_Pl17_DS_PZlnz_SH"
 msgstr "DS PZInż Huragan"
 
+msgid "Chassis_02_Pl22_CS_59_H"
+msgstr "CS-59 Huragan"
+
 msgid "Chassis_02_Pl22_CS_59_SH"
 msgstr "CS-59 Huragan"
+
+msgid "Chassis_03_Pl13_53TP_Markowskiego_H"
+msgstr "53TP Huragan"
 
 msgid "Chassis_03_Pl13_53TP_Markowskiego_SH"
 msgstr "53TP Huragan"
@@ -254,6 +263,9 @@ msgstr "Maybach HL 230 TRM P30"
 msgid "Maybach_VL_2"
 msgstr "Maybach VL-2"
 
+msgid "Maybach_VL_2_H"
+msgstr "Maybach VL-2 MH"
+
 msgid "Maybach_VL_2_SH"
 msgstr "Maybach VL-2 MH"
 
@@ -265,6 +277,9 @@ msgstr "N2"
 
 msgid "N2_C"
 msgstr "N2 C"
+
+msgid "N2_C_H"
+msgstr "N2-C MH"
 
 msgid "N2_C_SH"
 msgstr "N2-C MH"
@@ -536,6 +551,20 @@ msgstr "Отличный урон в минуту, неплохая динами
 msgid "Pl17_DS_PZlnz"
 msgstr "DS PZInż"
 
+msgid "Pl17_DS_PZlnz_H"
+msgstr "Ураган"
+
+msgid "Pl17_DS_PZlnz_H_descr"
+msgstr ""
+"Польские инженеры знают, что подчёркивание какой-либо сильной стороны машины"
+" автоматически влечёт ухудшение другой характеристики. Именно поэтому они "
+"уделили вооружению и боевым умениям машины такое количество внимания, чтобы "
+"не оставить противнику ни секунды на поиск уязвимых зон. Как показало время,"
+" это было верным решением."
+
+msgid "Pl17_DS_PZlnz_H_short"
+msgstr "Ураган"
+
 msgid "Pl17_DS_PZlnz_SH"
 msgstr "Huragan"
 
@@ -649,6 +678,18 @@ msgid "Pl21_CS_63_7x7_short"
 msgstr "CS-63 7x7"
 
 msgid "Pl21_CS_63_7x7_short_special"
+msgstr "?empty?"
+
+msgid "Pl21_CS_63_cl"
+msgstr "CS-63 КЛ"
+
+msgid "Pl21_CS_63_cl_long_special"
+msgstr "?empty?"
+
+msgid "Pl21_CS_63_cl_short"
+msgstr "CS-63 КЛ"
+
+msgid "Pl21_CS_63_cl_short_special"
 msgstr "?empty?"
 
 msgid "Pl21_CS_63_descr"
@@ -1113,6 +1154,9 @@ msgstr "R-113"
 msgid "R_113_P"
 msgstr "R-113P"
 
+msgid "R_113_P_H"
+msgstr "R-113P MH"
+
 msgid "R_113_P_S"
 msgstr "R-113P"
 
@@ -1130,6 +1174,9 @@ msgstr "R-123M"
 
 msgid "R_123P"
 msgstr "R-123P"
+
+msgid "R_123P_H"
+msgstr "R-123P MH"
 
 msgid "R_123P_SH"
 msgstr "R-123P MH"
@@ -1154,6 +1201,9 @@ msgstr "SGT-3CzM2"
 
 msgid "SGT_3CzP"
 msgstr "SGT-3CzP"
+
+msgid "SGT_3Cz_H"
+msgstr "SGT-3Cz MH"
 
 msgid "SGT_3Cz_M"
 msgstr "SGT-3CzM"
@@ -1211,6 +1261,9 @@ msgstr "DS PZInż I"
 
 msgid "Turret_1_Pl18_BUGI"
 msgstr "B.U.G.I.-I"
+
+msgid "Turret_1_Pl18_BUGI_H"
+msgstr "BUGI MH"
 
 msgid "Turret_1_Pl18_BUGI_SH"
 msgstr "BUGI MH"
@@ -1308,8 +1361,14 @@ msgstr "CS-59M1"
 msgid "Turret_2_Pl23_CS_53"
 msgstr "CS-53M1"
 
+msgid "Turret_2_Pl23_CS_53M1_H"
+msgstr "CS-53M-1H"
+
 msgid "Turret_2_Pl23_CS_53M1_SH"
 msgstr "CS-53M-1H"
+
+msgid "Turret_3_Pl23_CS_53_H"
+msgstr "CS-53 MH"
 
 msgid "Turret_3_Pl23_CS_53_SH"
 msgstr "CS-53 MH"
@@ -1331,6 +1390,9 @@ msgstr "W12-5P"
 
 msgid "W_12_5_P_1"
 msgstr "W12-5P-1"
+
+msgid "W_12_5_P_H"
+msgstr "W12-5P MH"
 
 msgid "W_12_5_P_SH"
 msgstr "W12-5P MH"
@@ -1398,8 +1460,17 @@ msgstr "100 mm armata wz. 53"
 msgid "_100mm_armata_wz_58"
 msgstr "100 mm armata wz. 58"
 
+msgid "_100mm_armata_wz_58_G5_APCR_H"
+msgstr "APCR wz.58"
+
 msgid "_100mm_armata_wz_58_G5_APCR_SH"
 msgstr "APCR wz.58"
+
+msgid "_100mm_armata_wz_58_G5_H"
+msgstr "100 mm armata wz.58"
+
+msgid "_100mm_armata_wz_58_G5_HEAT_H"
+msgstr "AP wz.58"
 
 msgid "_100mm_armata_wz_58_G5_HEAT_SH"
 msgstr "AP wz.58"
@@ -1410,8 +1481,17 @@ msgstr "100 mm armata wz.58"
 msgid "_100mm_armata_wz_62"
 msgstr "100 mm armata wz. 62"
 
+msgid "_100mm_armata_wz_62_G4_APCR_H"
+msgstr "APCR wz.62"
+
 msgid "_100mm_armata_wz_62_G4_APCR_SH"
 msgstr "APCR wz.62"
+
+msgid "_100mm_armata_wz_62_G4_H"
+msgstr "100 mm armata wz.62"
+
+msgid "_100mm_armata_wz_62_G4_HEAT_H"
+msgstr "AP wz.62"
 
 msgid "_100mm_armata_wz_62_G4_HEAT_SH"
 msgstr "AP wz.62"
@@ -1500,8 +1580,17 @@ msgstr "slpprj m/59"
 msgid "_105mm_tung_sgr_m_34"
 msgstr "tung sgr m/34"
 
+msgid "_105mm_wz_22_24_G1_APCR_H"
+msgstr "APCR wz.22/24"
+
 msgid "_105mm_wz_22_24_G1_APCR_SH"
 msgstr "APCR wz.22/24"
+
+msgid "_105mm_wz_22_24_G1_H"
+msgstr "105 mm wz.22/24"
+
+msgid "_105mm_wz_22_24_G1_HEAT_H"
+msgstr "AP wz.22/24"
 
 msgid "_105mm_wz_22_24_G1_HEAT_SH"
 msgstr "AP wz.22/24"
@@ -1572,8 +1661,17 @@ msgstr "122 mm armata wz. 59"
 msgid "_122mm_armata_wz_59_T"
 msgstr "122 mm armata wz. 59"
 
+msgid "_122mm_wz_43_50_G6_APCR_H"
+msgstr "APCR wz.43/50"
+
 msgid "_122mm_wz_43_50_G6_APCR_SH"
 msgstr "APCR wz.43/50"
+
+msgid "_122mm_wz_43_50_G6_H"
+msgstr "122 mm armata wz.43/50"
+
+msgid "_122mm_wz_43_50_G6_HEAT_H"
+msgstr "AP wz.43/50"
 
 msgid "_122mm_wz_43_50_G6_HEAT_SH"
 msgstr "AP wz.43/50"
@@ -1797,8 +1895,17 @@ msgstr "75 mm wz.24/38W"
 msgid "_75mm_wz_36_37"
 msgstr "75 mm wz.36/37"
 
+msgid "_75mm_wz_36_37_G2_APCR_H"
+msgstr "APCR wz.36/37"
+
 msgid "_75mm_wz_36_37_G2_APCR_SH"
 msgstr "APCR wz.36/37"
+
+msgid "_75mm_wz_36_37_G2_H"
+msgstr "75 mm wz.36/37"
+
+msgid "_75mm_wz_36_37_G2_HEAT_H"
+msgstr "AP wz.36/37"
 
 msgid "_75mm_wz_36_37_G2_HEAT_SH"
 msgstr "AP wz.36/37"
@@ -1905,8 +2012,17 @@ msgstr "90 mm armata wz. 44"
 msgid "_90mm_armata_wz_46"
 msgstr "90 mm armata wz. 46"
 
+msgid "_90mm_armata_wz_46_G3_APCR_H"
+msgstr "APCR wz.46"
+
 msgid "_90mm_armata_wz_46_G3_APCR_SH"
 msgstr "APCR wz.46"
+
+msgid "_90mm_armata_wz_46_G3_H"
+msgstr "90 mm armata wz.46"
+
+msgid "_90mm_armata_wz_46_G3_HEAT_H"
+msgstr "AP wz.46"
 
 msgid "_90mm_armata_wz_46_G3_HEAT_SH"
 msgstr "AP wz.46"

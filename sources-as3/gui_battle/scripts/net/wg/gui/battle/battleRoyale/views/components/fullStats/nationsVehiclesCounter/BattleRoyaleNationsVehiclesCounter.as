@@ -37,9 +37,17 @@ package net.wg.gui.battle.battleRoyale.views.components.fullStats.nationsVehicle
          this.renderers = null;
          App.utils.data.cleanupDynamicObject(this._renderersByType);
          this._renderersByType = null;
-         this._lastRenderer.removeEventListener(Event.RESIZE,this.onLastRendererResizeHandler);
+         if(this._lastRenderer)
+         {
+            this._lastRenderer.removeEventListener(Event.RESIZE,this.onLastRendererResizeHandler);
+         }
          this._lastRenderer = null;
          this._data = null;
+      }
+      
+      public function isDisposed() : Boolean
+      {
+         return this._disposed;
       }
       
       public function setData(param1:BattleRoyaleNationsVehiclesCounterVO) : void
@@ -157,11 +165,6 @@ package net.wg.gui.battle.battleRoyale.views.components.fullStats.nationsVehicle
             _loc5_++;
          }
          dispatchEvent(new Event(Event.RESIZE));
-      }
-      
-      public function isDisposed() : Boolean
-      {
-         return this._disposed;
       }
    }
 }

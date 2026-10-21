@@ -13,9 +13,9 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<stream>uv2</stream>
-			<primitive>indices</primitive>
+			<vertices>s0Shape.vertices</vertices>
+			<stream>s0Shape.uv2</stream>
+			<primitive>s0Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -80,12 +80,12 @@
 						<Texture>content/UniversalTextures/Universal_AM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.054594 0.036296 0.050744</groupOrigin>
+				<groupOrigin>-0.054594 0.286296 0.050744</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-2.989769 -0.866763 -6.492923</min>
+		<min>-2.989769 -0.366763 -6.492923</min>
 		<max>2.880582 0.939355 6.625917</max>
 	</boundingBox>
 	<customBsp>true</customBsp>

@@ -1,6 +1,7 @@
 import logging
 from Event import Event, EventManager
-from frameworks.wulf import ViewFlags, ViewSettings
+from frameworks.wulf import ViewFlags, ViewSettings, WindowLayer
+from gui import GUI_SETTINGS
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
 from gui.Scaleform.framework.managers.loaders import SFViewLoadParams
 from gui.Scaleform.genConsts.QUESTS_ALIASES import QUESTS_ALIASES
@@ -12,13 +13,14 @@ from gui.impl.lobby.daily.daily_quests_facade import DailyQuestsFacade
 from gui.impl.lobby.daily.daily_quests_info_page import showDailyQuestsInfoPage
 from gui.impl.pub import ViewImpl
 from gui.server_events import settings
-from gui.server_events.events_helpers import isPremiumQuestsEnable, isDailyQuestsEnable, isDailyRegularQuestsEnabled
+from gui.server_events.events_helpers import isPremiumQuestsEnable, isDailyRegularQuestsEnabled
 from gui.shared import events
 from gui.shared import g_eventBus, EVENT_BUS_SCOPE
-from gui.shared.event_dispatcher import showDailyQuestsIntroWindow
+from gui.shared.event_dispatcher import showBrowserOverlayView
 from helpers import dependency
 from skeletons.gui.server_events import IEventsCache
 from skeletons.gui.shared import IItemsCache
+from skeletons.gui.game_control import ISessionProgressRewardsController
 _logger = logging.getLogger(__name__)
 DEFAULT_DAILY_TAB = DailyTabs.QUESTS
 DAILY_VIEW = (
@@ -28,6 +30,7 @@ DAILY_LAOUT_ID = R.views.lobby.daily.DailyQuestsRegularView()
 class DailyQuestsView(ViewImpl):
     eventsCache = dependency.descriptor(IEventsCache)
     itemsCache = dependency.descriptor(IItemsCache)
+    sessionProgressRewardsController = dependency.descriptor(ISessionProgressRewardsController)
     __slots__ = ('__proxyMissionsPage', '__viewActive', '__tabs', '__tabsToSubview',
                  '__subviews', '__currentTabID', '__dailyQuests', '__em', 'onIsCurrentMissionTab',
                  '__battleTypes', '__tooltipData')
@@ -65,6 +68,8 @@ class DailyQuestsView(ViewImpl):
             tabIdx = DailyTabs.PREMIUM
         elif tabIdx == DailyTabs.PREMIUM and not isPremiumQuestsEnable():
             tabIdx = DailyTabs.QUESTS
+        elif tabIdx == DailyTabs.SERIAL and not self.viewModel.getIsSerialEnterEnabled():
+            tabIdx = DailyTabs.QUESTS if isDailyRegularQuestsEnabled() else DailyTabs.PREMIUM
         _logger.debug('PremiumMissionsView:setDefaultTab: tabIdx=%s', tabIdx)
         self.__setCurrentTab(tabIdx, self.viewModel)
         return
@@ -104,16 +109,6 @@ class DailyQuestsView(ViewImpl):
         for subview, layoutID in self.__tabsToSubview.values():
             self.__addSubiew(subview, layoutID)
 
-        self.initView()
-
-    def initView(self):
-        dq = settings.getDQSettings()
-        if not dq.dailyQuestsIntroSeen and isDailyQuestsEnable():
-            showDailyQuestsIntroWindow()
-        else:
-            with self.viewModel.transaction() as (tx):
-                tx.setIntroSeen(True)
-
     def _finalize(self):
         self.__dailyQuests.finalize()
         self.__tabs.clear()
@@ -127,6 +122,7 @@ class DailyQuestsView(ViewImpl):
     def _updateModel(self, model):
         model.setIsDailyRegularEnabled(isDailyRegularQuestsEnabled())
         model.setIsDailyPremEnabled(isPremiumQuestsEnable())
+        model.setIsSerialEnterEnabled(self.sessionProgressRewardsController.isAvailable)
         battleTypes = model.getDailyBattleTypes()
         self.__dailyQuests.updateBattleModes(battleTypes)
 
@@ -137,7 +133,11 @@ class DailyQuestsView(ViewImpl):
          (
           self.viewModel.onClose, self.__onCloseView),
          (
-          self.viewModel.onInfoClick, self.__showInfoPage))
+          self.viewModel.onInfoClick, self.__showInfoPageForDailyTabs),
+         (
+          self.viewModel.onShowInfo, self.__showInfoPageForSerialEnterTab),
+         (
+          self.sessionProgressRewardsController.onDataUpdated, self.__onSessionProgressRewardsDataUpdated))
 
     def _getListeners(self):
         return (
@@ -163,6 +163,8 @@ class DailyQuestsView(ViewImpl):
             self.currentSubview.activate()
         with settings.dailyQuestSettings() as (dq):
             dq.setLastVisitedDQTab(tabIdx)
+        for _, (tab, __) in self.__tabs.iteritems():
+            tab.onTabSelected(tabIdx)
 
     def __addSubiew(self, subview, layoutID):
         if subview not in self.__subviews:
@@ -184,5 +186,16 @@ class DailyQuestsView(ViewImpl):
             self.__viewActive = viewActive
             self.onIsCurrentMissionTab(self.__viewActive)
 
-    def __showInfoPage(self):
+    def __showInfoPageForDailyTabs(self):
         showDailyQuestsInfoPage()
+
+    def __showInfoPageForSerialEnterTab(self):
+        showBrowserOverlayView(GUI_SETTINGS.sessionProgressRewardsInfoPageURL, VIEW_ALIAS.WEB_VIEW_TRANSPARENT, hiddenLayers=(
+         WindowLayer.MARKER, WindowLayer.VIEW, WindowLayer.WINDOW))
+
+    def __onSessionProgressRewardsDataUpdated(self):
+        with self.viewModel.transaction() as (tx):
+            self._updateModel(tx)
+            if self.__currentTabID == DailyTabs.SERIAL and not tx.getIsSerialEnterEnabled():
+                fallbackTab = DailyTabs.QUESTS if isDailyRegularQuestsEnabled() else DailyTabs.PREMIUM
+                self.__setCurrentTab(fallbackTab, tx)

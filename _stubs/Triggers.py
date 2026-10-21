@@ -121,6 +121,7 @@ class CylinderAreaComponent(PyComponentWrapperBase):
 	def clear(self, *args, **kwargs): pass
 	def destroy(self, *args, **kwargs): pass
 	height = property(lambda self: None)
+	heightOffset = property(lambda self: None)
 	def id(self, *args, **kwargs): pass
 	radius = property(lambda self: None)
 	def valid(self, *args, **kwargs): pass

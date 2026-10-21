@@ -23,7 +23,6 @@ package net.wg.gui.lobby.settings
    import net.wg.gui.components.windows.WindowEvent;
    import net.wg.gui.events.ViewStackEvent;
    import net.wg.gui.interfaces.ISettingsBase;
-   import net.wg.gui.lobby.settings.components.EventSettingLabel;
    import net.wg.gui.lobby.settings.components.evnts.WarningMessageEvent;
    import net.wg.gui.lobby.settings.config.SettingsConfigHelper;
    import net.wg.gui.lobby.settings.events.AlternativeVoiceEvent;
@@ -117,8 +116,6 @@ package net.wg.gui.lobby.settings
       
       public var applyBtn:SoundButtonEx = null;
       
-      public var eventDisableLabel:EventSettingLabel = null;
-      
       private var _invalidTabs:Object;
       
       private var _invalidTabsNewCounterData:Object;
@@ -136,8 +133,6 @@ package net.wg.gui.lobby.settings
       private var _tabToSelect:int = -1;
       
       private var _graphicsPresetToSelect:int = -1;
-      
-      private var _isEvent:Boolean = false;
       
       private var _disabledTabsOverlay:DisabledTabsOverlay = null;
       
@@ -244,8 +239,6 @@ package net.wg.gui.lobby.settings
          this.tabLine = null;
          this.applyBtn.dispose();
          this.applyBtn = null;
-         this.eventDisableLabel.dispose();
-         this.eventDisableLabel = null;
          if(this.view)
          {
             this.view.removeEventListener(ViewStackEvent.NEED_UPDATE,this.onViewNeedUpdateHandler);
@@ -464,16 +457,6 @@ package net.wg.gui.lobby.settings
          {
             _loc2_.setPresetAfterAutoDetect(this._graphicsPresetToSelect);
             this._graphicsPresetToSelect = -1;
-         }
-      }
-      
-      public function as_setTigerEvent(param1:Boolean) : void
-      {
-         this.eventDisableLabel.visible = param1;
-         this._isEvent = param1;
-         if(this.view && this.view.currentView is FeedbackSettings)
-         {
-            FeedbackSettings(this.view.currentView).setIsEvent(this._isEvent);
          }
       }
       
@@ -780,10 +763,6 @@ package net.wg.gui.lobby.settings
             {
                this._isFeedbackDPInstalled = true;
                FeedbackSettings(_loc4_).setDataProvider(this._feedbackDataProvider);
-            }
-            if(_loc4_ is FeedbackSettings)
-            {
-               FeedbackSettings(_loc4_).setIsEvent(this._isEvent);
             }
          }
       }
@@ -1283,7 +1262,6 @@ package net.wg.gui.lobby.settings
          {
             this._isFeedbackDPInstalled = true;
             FeedbackSettings(_loc2_).setDataProvider(this._feedbackDataProvider);
-            FeedbackSettings(_loc2_).setIsEvent(this._isEvent);
          }
       }
       

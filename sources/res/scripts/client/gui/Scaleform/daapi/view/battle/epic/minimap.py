@@ -12,7 +12,6 @@ from messenger_common_chat2 import MESSENGER_ACTION_IDS as _ACTIONS
 from skeletons.account_helpers.settings_core import ISettingsCore
 from account_helpers import AccountSettings
 from aih_constants import CTRL_MODE_NAME
-from arena_component_system.sector_base_arena_component import ID_TO_BASENAME
 from gui.Scaleform.daapi.view.battle.classic.minimap import GlobalSettingsPlugin
 from gui.Scaleform.daapi.view.battle.shared.minimap import settings, plugins, common
 from gui.Scaleform.daapi.view.battle.shared.minimap.common import SimplePlugin
@@ -1081,9 +1080,9 @@ class EpicMinimapPingPlugin(plugins.MinimapPingPlugin):
             self.__make3DPingHQ(commands, (hqTeam, 0, hqIdx))
             return
         else:
-            baseIdx, baseTeam, baseName = self.__getNearestBaseForPosition(position, scaledBaseRange)
+            baseIdx, baseTeam = self.__getNearestBaseForPosition(position, scaledBaseRange)
             if baseIdx:
-                self._make3DPingBases(commands, (baseTeam, 0, baseIdx), baseName)
+                self._make3DPingBases(commands, (baseTeam, 0, baseIdx))
                 return
             locationID = self._getNearestLocationIDForPosition(position, _LOCATION_PING_RANGE)
             if locationID is not None:
@@ -1125,20 +1124,20 @@ class EpicMinimapPingPlugin(plugins.MinimapPingPlugin):
         sectorBaseComponent = getattr(self.sessionProvider.arenaVisitor.getComponentSystem(), 'sectorBaseComponent', None)
         if sectorBaseComponent is None:
             _logger.error('Expected SectorBaseComponent not present!')
-            return (None, None, None)
+            return (None, None)
         else:
             openBases = [ base for base in sectorBaseComponent.sectorBases if not base.isCaptured and base.active() or self.__baseInteractionList[base.baseID]
                         ]
             if not openBases:
-                return (None, None, None)
+                return (None, None)
 
             def getDistance(entity):
                 return entity.position.flatDistTo(clickPos)
 
             closestBase = min(openBases, key=getDistance)
             if getDistance(closestBase) <= range_:
-                return (closestBase.baseID, closestBase.team, ID_TO_BASENAME[closestBase.baseID])
-            return (None, None, None)
+                return (closestBase.baseID, closestBase.team)
+            return (None, None)
 
 
 class EpicTeleportPlugin(EpicMinimapPingPlugin):

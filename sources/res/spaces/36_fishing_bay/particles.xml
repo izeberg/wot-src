@@ -214,6 +214,8 @@
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_rw004_carriage2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_shells_detonation_medium.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_smallpole.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_streetlamp_fracture.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_streetlamp_touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_town_bench_des.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/plane_engine_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/trees/broadleaves/inf_tree_bush_dry_fall.vfx</fn_effect_bin>
@@ -371,6 +373,8 @@
 		<fn_effect_bin>particles/environment/objects/inf_rw004_carriage2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_shells_detonation_medium.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_smallpole.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_streetlamp_fracture.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_streetlamp_touchdown.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_town_bench_des.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/plane_engine_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/trees/broadleaves/inf_tree_bush_dry_fall.eff</fn_effect_bin>
@@ -629,6 +633,8 @@
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_rw004_carriage2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_shells_detonation_medium.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_smallpole.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_streetlamp_fracture.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_streetlamp_touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_town_bench_des.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/plane_engine_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/trees/broadleaves/inf_tree_bush_dry_fall.vfx</fn_effect_bin>
@@ -786,6 +792,8 @@
 		<fn_effect_bin>particles/environment/objects/inf_rw004_carriage2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_shells_detonation_medium.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_smallpole.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_streetlamp_fracture.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_streetlamp_touchdown.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_town_bench_des.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/plane_engine_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/trees/broadleaves/inf_tree_bush_dry_fall.eff</fn_effect_bin>

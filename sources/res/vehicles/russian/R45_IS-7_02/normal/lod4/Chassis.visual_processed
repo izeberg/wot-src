@@ -22,7 +22,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 0.993847 -0.110758</row1>
 					<row2>0.000000 0.110758 0.993847</row2>
-					<row3>-1.419695 0.000000 2.427076</row3>
+					<row3>-1.410836 0.000000 2.527268</row3>
 				</transform>
 			</node>
 			<node>
@@ -31,7 +31,7 @@
 					<row0>-1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 0.994751 0.102324</row1>
 					<row2>-0.000000 0.102324 -0.994751</row2>
-					<row3>-1.419695 0.000000 -2.427150</row3>
+					<row3>-1.410836 0.000000 -2.427150</row3>
 				</transform>
 			</node>
 			<node>
@@ -40,7 +40,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 0.993847 -0.110758</row1>
 					<row2>0.000000 0.110758 0.993847</row2>
-					<row3>1.409172 0.000000 2.427076</row3>
+					<row3>1.410836 0.000000 2.527268</row3>
 				</transform>
 			</node>
 			<node>
@@ -49,7 +49,7 @@
 					<row0>-1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 0.994751 0.102324</row1>
 					<row2>-0.000000 0.102324 -0.994751</row2>
-					<row3>1.409172 0.000000 -2.427150</row3>
+					<row3>1.410836 0.000000 -2.427150</row3>
 				</transform>
 			</node>
 			<node>
@@ -58,7 +58,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 0.000000 -1.000000</row1>
 					<row2>0.000000 1.000000 0.000000</row2>
-					<row3>0.000000 4.500000 -0.000000</row3>
+					<row3>0.000000 3.861736 0.000000</row3>
 				</transform>
 			</node>
 			<node>
@@ -579,7 +579,7 @@
 						<row0>1.000000 0.000000 0.000000</row0>
 						<row1>0.000000 1.000000 0.000000</row1>
 						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>0.000000 0.396721 0.000000</row3>
+						<row3>0.000000 0.406843 0.000000</row3>
 					</transform>
 					<node>
 						<identifier>Track_VD_L0</identifier>
@@ -587,7 +587,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>-1.378742 -0.667073 2.957087</row3>
+							<row3>-1.410836 -0.696718 3.038267</row3>
 						</transform>
 						<node>
 							<identifier>Track_VD_L0_BlendBone</identifier>
@@ -595,7 +595,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 1.000000 0.000000</row1>
 								<row2>0.000000 0.000000 -1.000000</row2>
-								<row3>1.378742 -0.229648 -2.957087</row3>
+								<row3>1.410836 -0.210125 -3.038267</row3>
 							</transform>
 						</node>
 					</node>
@@ -605,7 +605,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>-1.378742 -0.712302 -2.946318</row3>
+							<row3>-1.410836 -0.746641 -2.967738</row3>
 						</transform>
 						<node>
 							<identifier>Track_VD_L1_BlendBone</identifier>
@@ -613,7 +613,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 1.000000 0.000000</row1>
 								<row2>0.000000 0.000000 -1.000000</row2>
-								<row3>1.378742 -0.184419 2.946318</row3>
+								<row3>1.410836 -0.160201 2.967738</row3>
 							</transform>
 						</node>
 					</node>
@@ -623,7 +623,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>1.409172 -0.667073 2.957086</row3>
+							<row3>1.410836 -0.696718 3.038267</row3>
 						</transform>
 						<node>
 							<identifier>Track_VD_R0_BlendBone</identifier>
@@ -631,7 +631,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 1.000000 0.000000</row1>
 								<row2>0.000000 0.000000 -1.000000</row2>
-								<row3>-1.409172 -0.229648 -2.957086</row3>
+								<row3>-1.410836 -0.210125 -3.038267</row3>
 							</transform>
 						</node>
 					</node>
@@ -641,7 +641,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>1.409172 -0.712302 -2.946318</row3>
+							<row3>1.410836 -0.746641 -2.967738</row3>
 						</transform>
 						<node>
 							<identifier>Track_VD_R1_BlendBone</identifier>
@@ -649,7 +649,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 1.000000 0.000000</row1>
 								<row2>0.000000 0.000000 -1.000000</row2>
-								<row3>-1.409172 -0.184419 2.946318</row3>
+								<row3>-1.410836 -0.160201 2.967738</row3>
 							</transform>
 						</node>
 					</node>
@@ -659,7 +659,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>-1.378742 0.081190 2.846533</row3>
+							<row3>-1.410836 0.139153 2.848406</row3>
 						</transform>
 						<node>
 							<identifier>Track_VT_L0_BlendBone</identifier>
@@ -667,7 +667,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 1.000000 0.000000</row1>
 								<row2>0.000000 0.000000 -1.000000</row2>
-								<row3>1.378742 -0.977911 -2.846533</row3>
+								<row3>1.410836 -1.045995 -2.848406</row3>
 							</transform>
 						</node>
 					</node>
@@ -677,7 +677,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>-1.378742 0.080227 2.416950</row3>
+							<row3>-1.410836 0.138280 2.422784</row3>
 						</transform>
 						<node>
 							<identifier>Track_VT_L1_BlendBone</identifier>
@@ -685,7 +685,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 1.000000 0.000000</row1>
 								<row2>0.000000 0.000000 -1.000000</row2>
-								<row3>1.378742 -0.976947 -2.416950</row3>
+								<row3>1.410836 -1.045123 -2.422784</row3>
 							</transform>
 						</node>
 					</node>
@@ -695,7 +695,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>-1.378742 0.072086 -1.178181</row3>
+							<row3>-1.410836 0.130900 -1.172369</row3>
 						</transform>
 						<node>
 							<identifier>Track_VT_L10_BlendBone</identifier>
@@ -703,7 +703,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 1.000000 0.000000</row1>
 								<row2>0.000000 0.000000 -1.000000</row2>
-								<row3>1.378742 -0.968807 1.178181</row3>
+								<row3>1.410836 -1.037743 1.172369</row3>
 							</transform>
 						</node>
 					</node>
@@ -713,7 +713,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>-1.378742 0.071122 -1.603649</row3>
+							<row3>-1.410836 0.130027 -1.597822</row3>
 						</transform>
 						<node>
 							<identifier>Track_VT_L11_BlendBone</identifier>
@@ -721,7 +721,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 1.000000 0.000000</row1>
 								<row2>0.000000 0.000000 -1.000000</row2>
-								<row3>1.378742 -0.967843 1.603649</row3>
+								<row3>1.410836 -1.036869 1.597822</row3>
 							</transform>
 						</node>
 					</node>
@@ -731,7 +731,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>-1.378742 0.070196 -2.012659</row3>
+							<row3>-1.410836 0.129187 -2.006835</row3>
 						</transform>
 						<node>
 							<identifier>Track_VT_L12_BlendBone</identifier>
@@ -739,7 +739,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 1.000000 0.000000</row1>
 								<row2>0.000000 0.000000 -1.000000</row2>
-								<row3>1.378742 -0.966917 2.012659</row3>
+								<row3>1.410836 -1.036030 2.006835</row3>
 							</transform>
 						</node>
 					</node>
@@ -749,7 +749,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>-1.378742 0.069270 -2.421668</row3>
+							<row3>-1.410836 0.128347 -2.415847</row3>
 						</transform>
 						<node>
 							<identifier>Track_VT_L13_BlendBone</identifier>
@@ -757,7 +757,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 1.000000 0.000000</row1>
 								<row2>0.000000 0.000000 -1.000000</row2>
-								<row3>1.378742 -0.965991 2.421668</row3>
+								<row3>1.410836 -1.035190 2.415847</row3>
 							</transform>
 						</node>
 					</node>
@@ -767,7 +767,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>-1.378742 0.068492 -2.796518</row3>
+							<row3>-1.410836 0.127576 -2.790693</row3>
 						</transform>
 						<node>
 							<identifier>Track_VT_L14_BlendBone</identifier>
@@ -775,7 +775,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 1.000000 0.000000</row1>
 								<row2>0.000000 0.000000 -1.000000</row2>
-								<row3>1.378742 -0.965213 2.796518</row3>
+								<row3>1.410836 -1.034419 2.790693</row3>
 							</transform>
 						</node>
 					</node>
@@ -785,7 +785,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>-1.378742 0.079322 2.017353</row3>
+							<row3>-1.410836 0.137460 2.023182</row3>
 						</transform>
 						<node>
 							<identifier>Track_VT_L2_BlendBone</identifier>
@@ -793,7 +793,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 1.000000 0.000000</row1>
 								<row2>0.000000 0.000000 -1.000000</row2>
-								<row3>1.378742 -0.976042 -2.017353</row3>
+								<row3>1.410836 -1.044302 -2.023182</row3>
 							</transform>
 						</node>
 					</node>
@@ -803,7 +803,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>-1.378742 0.078417 1.617755</row3>
+							<row3>-1.410836 0.136639 1.623580</row3>
 						</transform>
 						<node>
 							<identifier>Track_VT_L3_BlendBone</identifier>
@@ -811,7 +811,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 1.000000 0.000000</row1>
 								<row2>0.000000 0.000000 -1.000000</row2>
-								<row3>1.378742 -0.975138 -1.617755</row3>
+								<row3>1.410836 -1.043482 -1.623580</row3>
 							</transform>
 						</node>
 					</node>
@@ -821,7 +821,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>-1.378742 0.077523 1.223081</row3>
+							<row3>-1.410836 0.135829 1.228905</row3>
 						</transform>
 						<node>
 							<identifier>Track_VT_L4_BlendBone</identifier>
@@ -829,7 +829,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 1.000000 0.000000</row1>
 								<row2>0.000000 0.000000 -1.000000</row2>
-								<row3>1.378742 -0.974244 -1.223081</row3>
+								<row3>1.410836 -1.042672 -1.228905</row3>
 							</transform>
 						</node>
 					</node>
@@ -839,7 +839,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>-1.378742 0.076629 0.828406</row3>
+							<row3>-1.410836 0.135019 0.834230</row3>
 						</transform>
 						<node>
 							<identifier>Track_VT_L5_BlendBone</identifier>
@@ -847,7 +847,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 1.000000 0.000000</row1>
 								<row2>0.000000 0.000000 -1.000000</row2>
-								<row3>1.378742 -0.973350 -0.828406</row3>
+								<row3>1.410836 -1.041862 -0.834230</row3>
 							</transform>
 						</node>
 					</node>
@@ -857,7 +857,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>-1.378742 0.075671 0.433126</row3>
+							<row3>-1.410836 0.134208 0.438949</row3>
 						</transform>
 						<node>
 							<identifier>Track_VT_L6_BlendBone</identifier>
@@ -865,7 +865,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 1.000000 0.000000</row1>
 								<row2>0.000000 0.000000 -1.000000</row2>
-								<row3>1.378742 -0.972392 -0.433126</row3>
+								<row3>1.410836 -1.041050 -0.438949</row3>
 							</transform>
 						</node>
 					</node>
@@ -875,7 +875,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>-1.378742 0.074835 0.037846</row3>
+							<row3>-1.410836 0.133396 0.043667</row3>
 						</transform>
 						<node>
 							<identifier>Track_VT_L7_BlendBone</identifier>
@@ -883,7 +883,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 1.000000 0.000000</row1>
 								<row2>0.000000 0.000000 -1.000000</row2>
-								<row3>1.378742 -0.971556 -0.037846</row3>
+								<row3>1.410836 -1.040239 -0.043667</row3>
 							</transform>
 						</node>
 					</node>
@@ -893,7 +893,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>-1.378742 0.073944 -0.357433</row3>
+							<row3>-1.410836 0.132585 -0.351625</row3>
 						</transform>
 						<node>
 							<identifier>Track_VT_L8_BlendBone</identifier>
@@ -901,7 +901,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 1.000000 0.000000</row1>
 								<row2>0.000000 0.000000 -1.000000</row2>
-								<row3>1.378742 -0.970665 0.357433</row3>
+								<row3>1.410836 -1.039428 0.351625</row3>
 							</transform>
 						</node>
 					</node>
@@ -911,7 +911,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>-1.378742 0.073049 -0.752713</row3>
+							<row3>-1.410836 0.131773 -0.746916</row3>
 						</transform>
 						<node>
 							<identifier>Track_VT_L9_BlendBone</identifier>
@@ -919,7 +919,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 1.000000 0.000000</row1>
 								<row2>0.000000 0.000000 -1.000000</row2>
-								<row3>1.378742 -0.969770 0.752713</row3>
+								<row3>1.410836 -1.038616 0.746916</row3>
 							</transform>
 						</node>
 					</node>
@@ -929,7 +929,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>1.409172 0.081190 2.842574</row3>
+							<row3>1.410836 0.139153 2.848406</row3>
 						</transform>
 						<node>
 							<identifier>Track_VT_R0_BlendBone</identifier>
@@ -937,7 +937,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 1.000000 0.000000</row1>
 								<row2>0.000000 0.000000 -1.000000</row2>
-								<row3>-1.409172 -0.977911 -2.842574</row3>
+								<row3>-1.410836 -1.045995 -2.848406</row3>
 							</transform>
 						</node>
 					</node>
@@ -947,7 +947,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>1.409172 0.080227 2.416950</row3>
+							<row3>1.410836 0.138280 2.422784</row3>
 						</transform>
 						<node>
 							<identifier>Track_VT_R1_BlendBone</identifier>
@@ -955,7 +955,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 1.000000 0.000000</row1>
 								<row2>0.000000 0.000000 -1.000000</row2>
-								<row3>-1.409172 -0.976947 -2.416950</row3>
+								<row3>-1.410836 -1.045123 -2.422784</row3>
 							</transform>
 						</node>
 					</node>
@@ -965,7 +965,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>1.409172 0.072086 -1.178181</row3>
+							<row3>1.410836 0.130900 -1.172369</row3>
 						</transform>
 						<node>
 							<identifier>Track_VT_R10_BlendBone</identifier>
@@ -973,7 +973,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 1.000000 0.000000</row1>
 								<row2>0.000000 0.000000 -1.000000</row2>
-								<row3>-1.409172 -0.968807 1.178181</row3>
+								<row3>-1.410836 -1.037743 1.172369</row3>
 							</transform>
 						</node>
 					</node>
@@ -983,7 +983,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>1.409172 0.071122 -1.603649</row3>
+							<row3>1.410836 0.130027 -1.597822</row3>
 						</transform>
 						<node>
 							<identifier>Track_VT_R11_BlendBone</identifier>
@@ -991,7 +991,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 1.000000 0.000000</row1>
 								<row2>0.000000 0.000000 -1.000000</row2>
-								<row3>-1.409172 -0.967843 1.603649</row3>
+								<row3>-1.410836 -1.036869 1.597822</row3>
 							</transform>
 						</node>
 					</node>
@@ -1001,7 +1001,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>1.409172 0.070196 -2.012659</row3>
+							<row3>1.410836 0.129187 -2.006835</row3>
 						</transform>
 						<node>
 							<identifier>Track_VT_R12_BlendBone</identifier>
@@ -1009,7 +1009,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 1.000000 0.000000</row1>
 								<row2>0.000000 0.000000 -1.000000</row2>
-								<row3>-1.409172 -0.966917 2.012659</row3>
+								<row3>-1.410836 -1.036030 2.006835</row3>
 							</transform>
 						</node>
 					</node>
@@ -1019,7 +1019,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>1.409172 0.069270 -2.421668</row3>
+							<row3>1.410836 0.128347 -2.415847</row3>
 						</transform>
 						<node>
 							<identifier>Track_VT_R13_BlendBone</identifier>
@@ -1027,7 +1027,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 1.000000 0.000000</row1>
 								<row2>0.000000 0.000000 -1.000000</row2>
-								<row3>-1.409172 -0.965991 2.421668</row3>
+								<row3>-1.410836 -1.035190 2.415847</row3>
 							</transform>
 						</node>
 					</node>
@@ -1037,7 +1037,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>1.409172 0.068493 -2.796518</row3>
+							<row3>1.410836 0.127576 -2.790693</row3>
 						</transform>
 						<node>
 							<identifier>Track_VT_R14_BlendBone</identifier>
@@ -1045,7 +1045,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 1.000000 0.000000</row1>
 								<row2>0.000000 0.000000 -1.000000</row2>
-								<row3>-1.409172 -0.965214 2.796518</row3>
+								<row3>-1.410836 -1.034419 2.790693</row3>
 							</transform>
 						</node>
 					</node>
@@ -1055,7 +1055,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>1.409172 0.079322 2.017353</row3>
+							<row3>1.410836 0.137460 2.023182</row3>
 						</transform>
 						<node>
 							<identifier>Track_VT_R2_BlendBone</identifier>
@@ -1063,7 +1063,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 1.000000 0.000000</row1>
 								<row2>0.000000 0.000000 -1.000000</row2>
-								<row3>-1.409172 -0.976042 -2.017353</row3>
+								<row3>-1.410836 -1.044302 -2.023182</row3>
 							</transform>
 						</node>
 					</node>
@@ -1073,7 +1073,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>1.409172 0.078417 1.617755</row3>
+							<row3>1.410836 0.136639 1.623580</row3>
 						</transform>
 						<node>
 							<identifier>Track_VT_R3_BlendBone</identifier>
@@ -1081,7 +1081,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 1.000000 0.000000</row1>
 								<row2>0.000000 0.000000 -1.000000</row2>
-								<row3>-1.409172 -0.975138 -1.617755</row3>
+								<row3>-1.410836 -1.043482 -1.623580</row3>
 							</transform>
 						</node>
 					</node>
@@ -1091,7 +1091,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>1.409172 0.077523 1.223081</row3>
+							<row3>1.410836 0.135829 1.228905</row3>
 						</transform>
 						<node>
 							<identifier>Track_VT_R4_BlendBone</identifier>
@@ -1099,7 +1099,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 1.000000 0.000000</row1>
 								<row2>0.000000 0.000000 -1.000000</row2>
-								<row3>-1.409172 -0.974244 -1.223081</row3>
+								<row3>-1.410836 -1.042672 -1.228905</row3>
 							</transform>
 						</node>
 					</node>
@@ -1109,7 +1109,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>1.409172 0.076629 0.828406</row3>
+							<row3>1.410836 0.135019 0.834230</row3>
 						</transform>
 						<node>
 							<identifier>Track_VT_R5_BlendBone</identifier>
@@ -1117,7 +1117,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 1.000000 0.000000</row1>
 								<row2>0.000000 0.000000 -1.000000</row2>
-								<row3>-1.409172 -0.973350 -0.828406</row3>
+								<row3>-1.410836 -1.041862 -0.834230</row3>
 							</transform>
 						</node>
 					</node>
@@ -1127,7 +1127,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>1.409172 0.075734 0.433126</row3>
+							<row3>1.410836 0.134208 0.438949</row3>
 						</transform>
 						<node>
 							<identifier>Track_VT_R6_BlendBone</identifier>
@@ -1135,7 +1135,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 1.000000 0.000000</row1>
 								<row2>0.000000 0.000000 -1.000000</row2>
-								<row3>-1.409172 -0.972455 -0.433126</row3>
+								<row3>-1.410836 -1.041050 -0.438949</row3>
 							</transform>
 						</node>
 					</node>
@@ -1145,7 +1145,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>1.409172 0.074839 0.037847</row3>
+							<row3>1.410836 0.133396 0.043667</row3>
 						</transform>
 						<node>
 							<identifier>Track_VT_R7_BlendBone</identifier>
@@ -1153,7 +1153,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 1.000000 0.000000</row1>
 								<row2>0.000000 0.000000 -1.000000</row2>
-								<row3>-1.409172 -0.971560 -0.037847</row3>
+								<row3>-1.410836 -1.040239 -0.043667</row3>
 							</transform>
 						</node>
 					</node>
@@ -1163,7 +1163,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>1.409172 0.073944 -0.357433</row3>
+							<row3>1.410836 0.132585 -0.351625</row3>
 						</transform>
 						<node>
 							<identifier>Track_VT_R8_BlendBone</identifier>
@@ -1171,7 +1171,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 1.000000 0.000000</row1>
 								<row2>0.000000 0.000000 -1.000000</row2>
-								<row3>-1.409172 -0.970665 0.357433</row3>
+								<row3>-1.410836 -1.039428 0.351625</row3>
 							</transform>
 						</node>
 					</node>
@@ -1181,7 +1181,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>1.409172 0.073049 -0.752713</row3>
+							<row3>1.410836 0.131773 -0.746916</row3>
 						</transform>
 						<node>
 							<identifier>Track_VT_R9_BlendBone</identifier>
@@ -1189,7 +1189,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 1.000000 0.000000</row1>
 								<row2>0.000000 0.000000 -1.000000</row2>
-								<row3>-1.409172 -0.969770 0.752713</row3>
+								<row3>-1.410836 -1.038616 0.746916</row3>
 							</transform>
 						</node>
 					</node>
@@ -1199,7 +1199,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>-1.410836 -0.212188 3.274028</row3>
+							<row3>-1.410836 -0.222310 3.274028</row3>
 						</transform>
 						<node>
 							<identifier>WD_L0_BlendBone</identifier>
@@ -1217,7 +1217,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>-1.410836 -0.271602 -3.165538</row3>
+							<row3>-1.410836 -0.281724 -3.165538</row3>
 						</transform>
 						<node>
 							<identifier>WD_L1_BlendBone</identifier>
@@ -1235,7 +1235,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>1.410836 -0.212188 3.274028</row3>
+							<row3>1.410836 -0.222310 3.274028</row3>
 						</transform>
 						<node>
 							<identifier>WD_R0_BlendBone</identifier>
@@ -1253,7 +1253,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>1.410836 -0.271602 -3.165538</row3>
+							<row3>1.410836 -0.281724 -3.165538</row3>
 						</transform>
 						<node>
 							<identifier>WD_R1_BlendBone</identifier>
@@ -1271,7 +1271,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 -1.000000</row2>
-							<row3>0.000000 -0.896721 0.000000</row3>
+							<row3>0.000000 -0.906843 0.000000</row3>
 						</transform>
 					</node>
 				</node>
@@ -1287,33 +1287,29 @@
 			<primitiveGroup>
 				0
 				<material>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<materialKind>0</materialKind>
 					<identifier>tank_proxy_skinned</identifier>
 					<collisionFlags>0</collisionFlags>
-					<materialKind>0</materialKind>
-					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
-					<property>
-						metallicGlossMap
-						<Texture>vehicles/russian/R45_IS-7_02/IS-7_02_Proxy_GMM.dds</Texture>
-					</property>
-					<property>
-						normalMap
-						<Texture>vehicles/russian/R45_IS-7_02/IS-7_02_Proxy_ANM.dds</Texture>
-					</property>
 					<property>
 						diffuseMap
-						<Texture>vehicles/russian/R45_IS-7_02/IS-7_02_Proxy_AM.dds</Texture>
-					</property>
-					<property>
-						excludeMaskAndAOMap
-						<Texture>vehicles/russian/R45_IS-7_02/IS-7_02_Proxy_AO.dds</Texture>
+						<Texture>vehicles/russian/R45_IS-7_02/IS-7_02_proxy_AM.dds</Texture>
 					</property>
 					<property>
 						colorIdMap
 						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<property>
-						crashTileMap
-						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
+						metallicGlossMap
+						<Texture>vehicles/russian/R45_IS-7_02/IS-7_02_proxy_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/russian/R45_IS-7_02/IS-7_02_proxy_ANM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/russian/R45_IS-7_02/IS-7_02_proxy_AO.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>1.410836 0.533437 -0.026639</groupOrigin>
@@ -1329,33 +1325,29 @@
 			<primitiveGroup>
 				0
 				<material>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<materialKind>0</materialKind>
 					<identifier>tank_proxy_skinned</identifier>
 					<collisionFlags>0</collisionFlags>
-					<materialKind>0</materialKind>
-					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
-					<property>
-						metallicGlossMap
-						<Texture>vehicles/russian/R45_IS-7_02/IS-7_02_Proxy_GMM.dds</Texture>
-					</property>
-					<property>
-						normalMap
-						<Texture>vehicles/russian/R45_IS-7_02/IS-7_02_Proxy_ANM.dds</Texture>
-					</property>
 					<property>
 						diffuseMap
-						<Texture>vehicles/russian/R45_IS-7_02/IS-7_02_Proxy_AM.dds</Texture>
-					</property>
-					<property>
-						excludeMaskAndAOMap
-						<Texture>vehicles/russian/R45_IS-7_02/IS-7_02_Proxy_AO.dds</Texture>
+						<Texture>vehicles/russian/R45_IS-7_02/IS-7_02_proxy_AM.dds</Texture>
 					</property>
 					<property>
 						colorIdMap
 						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<property>
-						crashTileMap
-						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
+						metallicGlossMap
+						<Texture>vehicles/russian/R45_IS-7_02/IS-7_02_proxy_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/russian/R45_IS-7_02/IS-7_02_proxy_ANM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/russian/R45_IS-7_02/IS-7_02_proxy_AO.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>-1.410836 0.533437 -0.026639</groupOrigin>

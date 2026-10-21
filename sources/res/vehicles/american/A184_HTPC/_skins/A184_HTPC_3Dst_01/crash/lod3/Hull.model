@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/american/A184_HTPC/_skins/A184_HTPC_3Dst_01/crash/lod4/Hull</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<nodefullVisual>vehicles/american/A184_HTPC/_skins/A184_HTPC_3Dst_01/crash/lod3/Hull</nodefullVisual>
+	<visibilityBox>
+		<min>-1.719329 -0.822699 -3.965055</min>
+		<max>1.718310 0.498109 3.187418</max>
+	</visibilityBox>
+</root>

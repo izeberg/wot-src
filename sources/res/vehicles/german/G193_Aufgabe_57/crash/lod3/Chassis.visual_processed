@@ -69,6 +69,7 @@
 		<node>V_BlendBone</node>
 		<geometry>
 			<vertices>track_R_Shape.vertices</vertices>
+			<stream>track_R_Shape.uv2</stream>
 			<primitive>track_R_Shape.indices</primitive>
 			<primitiveGroup>
 				0
@@ -137,6 +138,7 @@
 		<node>V_BlendBone</node>
 		<geometry>
 			<vertices>track_L_Shape.vertices</vertices>
+			<stream>track_L_Shape.uv2</stream>
 			<primitive>track_L_Shape.indices</primitive>
 			<primitiveGroup>
 				0
@@ -204,6 +206,6 @@
 		<min>-1.667079 -0.000472 -3.732687</min>
 		<max>1.667074 1.274655 3.431921</max>
 	</boundingBox>
-	<geometrySize>36482</geometrySize>
+	<geometrySize>42906</geometrySize>
 	<minUVDensity>0.181853</minUVDensity>
 </root>

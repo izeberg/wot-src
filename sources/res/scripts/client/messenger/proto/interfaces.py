@@ -66,7 +66,7 @@ class IBattleCommandFactory(object):
     def createByObjectiveIndex(self, idx, isAtk, actionName):
         return
 
-    def createByBaseIndexAndName(self, pointID, commandName, baseName):
+    def createByBaseIndex(self, pointID, commandName):
         return
 
     def createReloadingCommand(self, isCassetteClip, timeLeft, quantity, hasAutoShoot):

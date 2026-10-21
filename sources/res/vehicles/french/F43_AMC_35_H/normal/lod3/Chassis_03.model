@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F43_AMC_35_H/normal/lod3/Chassis_03</nodefullVisual>
+	<parent>vehicles/french/F43_AMC_35_H/normal/lod4/Chassis_03</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.604404 -0.004262 -2.902104</min>
+		<max>1.565042 1.052795 2.896617</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

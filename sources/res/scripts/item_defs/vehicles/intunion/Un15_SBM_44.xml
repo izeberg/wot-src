@@ -3027,7 +3027,7 @@
 			<guns>
 				<_30mm_vz_53>
 					shared
-					<maxAmmo>444</maxAmmo>
+					<maxAmmo>252</maxAmmo>
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
@@ -3993,7 +3993,7 @@
 			<guns>
 				<_30mm_vz_53>
 					shared
-					<maxAmmo>456</maxAmmo>
+					<maxAmmo>252</maxAmmo>
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
@@ -4189,7 +4189,7 @@
 				</_30mm_vz_53>
 				<_37mm_N_37D>
 					shared
-					<maxAmmo>460</maxAmmo>
+					<maxAmmo>240</maxAmmo>
 					<unlocks>
 						<vehicle>
 							Un16_TDM_54

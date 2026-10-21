@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/german/G00_Mausekonig_V01/crash/lod2/Hull</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<nodefullVisual>vehicles/german/G00_Mausekonig_V01/crash/lod1/Hull</nodefullVisual>
+	<visibilityBox>
+		<min>-2.426294 -1.051039 -5.076387</min>
+		<max>2.446409 1.248127 5.119276</max>
+	</visibilityBox>
+</root>

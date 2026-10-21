@@ -103,6 +103,8 @@ class OfferEventData(object):
         giftsData = self._data.get('gift')
         if giftsData and giftID in giftsData:
             return OfferGift(giftID, self._data['gift'][giftID])
+        else:
+            return
 
     def getGiftAvailabelCount(self, giftID):
         received = self._receivedGifts

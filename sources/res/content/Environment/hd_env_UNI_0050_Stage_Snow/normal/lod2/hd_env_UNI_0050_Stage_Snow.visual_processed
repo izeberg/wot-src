@@ -8,24 +8,6 @@
 			<row2>0.000000 0.000000 1.000000</row2>
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
-		<node>
-			<identifier>hd_env_UNI_0050_Stage_Snow</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-			<node>
-				<identifier>HP_module0</identifier>
-				<transform>
-					<row0>1.000000 0.000000 0.000000</row0>
-					<row1>0.000000 1.000000 0.000000</row1>
-					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 0.043301 0.000000</row3>
-				</transform>
-			</node>
-		</node>
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
@@ -185,7 +167,7 @@
 						<Bool>true</Bool>
 					</property>
 				</material>
-				<groupOrigin>-0.031717 0.164816 0.038988</groupOrigin>
+				<groupOrigin>-0.031717 0.164816 0.038992</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -194,6 +176,6 @@
 		<max>2.334863 1.500000 2.267055</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>25004</geometrySize>
+	<geometrySize>28908</geometrySize>
 	<minUVDensity>0.011067</minUVDensity>
 </root>

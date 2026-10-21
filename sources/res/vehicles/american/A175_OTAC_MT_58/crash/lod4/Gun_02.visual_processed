@@ -13,8 +13,8 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>gun_02_Shape.vertices</vertices>
-			<primitive>gun_02_Shape.indices</primitive>
+			<vertices>gun_02Shape.vertices</vertices>
+			<primitive>gun_02Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -33,6 +33,10 @@
 					<property>
 						metallicGlossMap
 						<Texture>vehicles/american/A175_OTAC_MT_58/OTAC_MT_58_proxy_GMM.dds</Texture>
+					</property>
+					<property>
+						g_crashUVTiling
+						<Vector4>0.500000 0.500000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						crashTileMap

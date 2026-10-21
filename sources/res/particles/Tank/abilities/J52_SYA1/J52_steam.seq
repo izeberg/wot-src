@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>4.400000</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Steam_1</name>
+		<type>particle</type>
+		<resource>particles/Tank/abilities/J52_SYA1/J52_steam.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.007248 0.020306 4.823792</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>3.333333</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.166667</startTime>
+				<value>0.000000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>8.571427</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.400000</startTime>
+				<value>2.000000</value>
+				<inTangent>8.571427</inTangent>
+				<outTangent>-0.384615</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.000000</startTime>
+				<value>1.000000</value>
+				<inTangent>-0.384615</inTangent>
+				<outTangent>-1.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>-1.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.166667</startTime>
+				<value>0.000000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>-0.000000</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>startSpeed</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000</value>
+				<inTangent>1.250000</inTangent>
+				<outTangent>1.250000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.400000</startTime>
+				<value>1.500000</value>
+				<inTangent>0.468750</inTangent>
+				<outTangent>0.468750</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>1.000000</value>
+				<inTangent>-0.312500</inTangent>
+				<outTangent>-0.312500</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Steam_2</name>
+		<type>particle</type>
+		<resource>particles/Tank/abilities/J52_SYA1/J52_steam.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.266667</startTime>
+				<value>0.007248 0.020306 2.872864</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.266667</startTime>
+				<value>0.000000</value>
+				<inTangent>3.333333</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>0.000000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>8.571428</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.733333</startTime>
+				<value>2.000000</value>
+				<inTangent>8.571428</inTangent>
+				<outTangent>-0.410959</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.166667</startTime>
+				<value>1.000000</value>
+				<inTangent>-0.410959</inTangent>
+				<outTangent>-1.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.166667</startTime>
+				<value>0.000000</value>
+				<inTangent>-1.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.333333</startTime>
+				<value>0.000000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>-0.000000</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>startSpeed</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.266667</startTime>
+				<value>1.000000</value>
+				<inTangent>1.071429</inTangent>
+				<outTangent>1.071429</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.733333</startTime>
+				<value>1.500000</value>
+				<inTangent>0.361296</inTangent>
+				<outTangent>0.361296</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.166667</startTime>
+				<value>1.000000</value>
+				<inTangent>-0.348837</inTangent>
+				<outTangent>-0.348837</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Steam_3</name>
+		<type>particle</type>
+		<resource>particles/Tank/abilities/J52_SYA1/J52_steam.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>0.007248 0.020306 1.761353</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>0.000000</value>
+				<inTangent>3.333333</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.733333</startTime>
+				<value>0.000000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>8.571428</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.966667</startTime>
+				<value>2.000000</value>
+				<inTangent>8.571428</inTangent>
+				<outTangent>-0.441176</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.233334</startTime>
+				<value>1.000000</value>
+				<inTangent>-0.441176</inTangent>
+				<outTangent>-1.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.233334</startTime>
+				<value>0.000000</value>
+				<inTangent>-1.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.400000</startTime>
+				<value>0.000000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>-0.000000</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>startSpeed</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>1.000000</value>
+				<inTangent>1.071429</inTangent>
+				<outTangent>1.071429</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.966667</startTime>
+				<value>1.500000</value>
+				<inTangent>0.338346</inTangent>
+				<outTangent>0.338346</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.233333</startTime>
+				<value>1.000000</value>
+				<inTangent>-0.394737</inTangent>
+				<outTangent>-0.394737</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Steam_l_1</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/tank_customization/J52_SYA1/J52_steam.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.088607 -0.162707 4.752441</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 45.000000 130.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 0.800000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd0</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 0.960784 0.921569 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.027781</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.027781</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.333333</startTime>
+				<value>1.000000 0.960784 0.921569 0.300000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 0.533265</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.078550</outTangent>
+				<tangentMode>66307</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.000000</startTime>
+				<value>1.000000 0.960784 0.921569 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.232345</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -0.232345</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Steam_r_1</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/tank_customization/J52_SYA1/J52_steam.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.088610 -0.162707 4.752441</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 -45.000000 -130.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 0.800000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd0</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 0.960784 0.921569 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.006808</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.006808</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.333333</startTime>
+				<value>1.000000 0.960784 0.921569 0.300000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 0.533265</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.078550</outTangent>
+				<tangentMode>66307</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.000000</startTime>
+				<value>1.000000 0.960784 0.921569 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.232345</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -0.232345</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Steam_l_2</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/tank_customization/J52_SYA1/J52_steam.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.266667</startTime>
+				<value>-0.096755 -0.162707 2.878174</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.266667</startTime>
+				<value>0.000000 45.000000 130.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.266667</startTime>
+				<value>1.000000 0.800000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd0</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.266667</startTime>
+				<value>1.000000 0.960784 0.921569 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 -0.008803</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -0.008803</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.666667</startTime>
+				<value>1.000000 0.960784 0.921569 0.300000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 0.533265</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.078550</outTangent>
+				<tangentMode>66307</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.166667</startTime>
+				<value>1.000000 0.960784 0.921569 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.232345</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -0.232345</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Steam_r_2</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/tank_customization/J52_SYA1/J52_steam.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.266667</startTime>
+				<value>0.088610 -0.162707 2.863770</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.266667</startTime>
+				<value>0.000000 -45.000000 -130.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.266667</startTime>
+				<value>1.000000 0.800000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd0</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.266667</startTime>
+				<value>1.000000 0.960784 0.921569 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.007489</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.007489</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.666667</startTime>
+				<value>1.000000 0.960784 0.921569 0.300000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 0.533265</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.078550</outTangent>
+				<tangentMode>66307</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.166667</startTime>
+				<value>1.000000 0.960784 0.921569 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.232345</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -0.232345</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Steam_l_3</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/tank_customization/J52_SYA1/J52_steam.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>-0.096755 -0.162707 1.760681</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>0.000000 45.000000 130.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>1.000000 0.800000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd0</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>1.000000 0.960784 0.921569 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 -0.001498</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -0.001498</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.900000</startTime>
+				<value>1.000000 0.960784 0.921569 0.300000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 0.533265</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.078550</outTangent>
+				<tangentMode>66307</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.233334</startTime>
+				<value>1.000000 0.960784 0.921569 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.232345</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -0.232345</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Steam_r_3</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/tank_customization/J52_SYA1/J52_steam.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>0.088610 -0.162707 1.745789</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>0.000000 -45.000000 -130.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>1.000000 0.800000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd0</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>1.000000 0.960784 0.921569 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.005874</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.005874</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.900000</startTime>
+				<value>1.000000 0.960784 0.921569 0.300000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 0.533265</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.078550</outTangent>
+				<tangentMode>66307</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.233334</startTime>
+				<value>1.000000 0.960784 0.921569 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.232345</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -0.232345</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Sound 0</name>
+		<type>sound</type>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>4.333333</duration>
+				<value>Root|</value>
+			</frame>
+		</track>
+		<track>
+			<name>Sound</name>
+			<type>sound</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>3.830423</duration>
+				<sequenceSound>J52_steam</sequenceSound>
+				<type>one_shot</type>
+				<fade>0.000000</fade>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

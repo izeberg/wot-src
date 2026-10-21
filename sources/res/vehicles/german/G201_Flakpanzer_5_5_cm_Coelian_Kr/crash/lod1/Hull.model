@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/german/G201_Flakpanzer_5_5_cm_Coelian_Kr/crash/lod2/Hull</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<nodefullVisual>vehicles/german/G201_Flakpanzer_5_5_cm_Coelian_Kr/crash/lod1/Hull</nodefullVisual>
+	<visibilityBox>
+		<min>-1.758831 -1.092779 -3.851971</min>
+		<max>1.830225 0.932189 3.224132</max>
+	</visibilityBox>
+</root>

@@ -153,7 +153,7 @@
 		</influences>
 	</SSAO>
 	<Shadow>
-		<maxShadowsSplitCount>5</maxShadowsSplitCount>
+		<maxShadowsSplitCount>4</maxShadowsSplitCount>
 		<maxDynamicViewDistance>100.000000</maxDynamicViewDistance>
 		<lightSize>12.520000</lightSize>
 		<dynamicShadowsLightSize>13.000000</dynamicShadowsLightSize>
@@ -263,8 +263,8 @@
 		<sunScaleForward>2.000000</sunScaleForward>
 		<sunColorForward>71.000000 50.000000 7.000000</sunColorForward>
 		<sunTextureForward>system/maps/PSF_ldr.dds</sunTextureForward>
-		<sunLightColorForward>0.901961 0.584314 0.321569</sunLightColorForward>
-		<ambientColorForward>0.498039 0.541176 0.600000</ambientColorForward>
+		<sunLightColorForward>0.901961 0.584314 0.325490</sunLightColorForward>
+		<ambientColorForward>0.584314 0.635294 0.701961</ambientColorForward>
 		<starttime>10.000000</starttime>
 	</day_night_cycle>
 	<VFXLighting>
@@ -276,6 +276,8 @@
 		<PsIllumMultForward>1.000000</PsIllumMultForward>
 		<PsRibbonMultDeferred>1.000000</PsRibbonMultDeferred>
 		<PsRibbonMultForward>1.000000</PsRibbonMultForward>
+		<particleEnvironmentTintEnabledDeferred>false</particleEnvironmentTintEnabledDeferred>
+		<particleEnvironmentTintEnabledForward>false</particleEnvironmentTintEnabledForward>
 	</VFXLighting>
 	<dirt>
 		<normal>vehicles/russian/Tank_detail/Dirt3NM.dds</normal>

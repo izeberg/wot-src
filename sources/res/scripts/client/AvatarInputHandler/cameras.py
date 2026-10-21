@@ -1,4 +1,5 @@
 import math, BigWorld, Math, Event, math_utils
+from math_common import isAlmostEqual
 
 class ImpulseReason(object):
     MY_SHOT = 0
@@ -251,13 +252,15 @@ class FovExtended(object):
 
     @staticmethod
     def calculateVerticalFov(horizontalFovValue):
-        if BigWorld.getAspectRatio() > FovExtended.arWide:
+        aspectRatio = BigWorld.getAspectRatio()
+        if aspectRatio > FovExtended.arWide or isAlmostEqual(aspectRatio, FovExtended.arWide):
             return math.radians(horizontalFovValue / FovExtended.arWide)
         return math.radians(horizontalFovValue / FovExtended.arNormal)
 
     @staticmethod
     def calculateHorizontalFov(verticalFov):
-        if BigWorld.getAspectRatio() > FovExtended.arWide:
+        aspectRatio = BigWorld.getAspectRatio()
+        if aspectRatio > FovExtended.arWide or isAlmostEqual(aspectRatio, FovExtended.arWide):
             return math.radians(verticalFov * FovExtended.arWide)
         return math.radians(verticalFov * FovExtended.arNormal)
 

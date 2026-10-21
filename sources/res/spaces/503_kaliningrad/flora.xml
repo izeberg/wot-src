@@ -763,7 +763,7 @@
 			<grassType>
 				<name>Debris_Stone_Medium</name>
 				<tintWeight>
-					0.85 0.00
+					0.80 2.00
 					<!--BW_String-->
 				</tintWeight>
 				<waving>
@@ -780,6 +780,10 @@
 				</slopeMax>
 				<enableSlopeMin>true</enableSlopeMin>
 				<sniperModeBhvr>0</sniperModeBhvr>
+				<scaleFromMap>
+					0 1.00 1.00
+					<!--BW_String-->
+				</scaleFromMap>
 				<sizeLimit>
 					0.00
 					<!--BW_String-->
@@ -800,7 +804,7 @@
 						<!--BW_String-->
 					</densityMin>
 					<density>
-						1.0000
+						0.5000
 						<!--BW_String-->
 					</density>
 					<scale>
@@ -826,13 +830,17 @@
 					<seed>8</seed>
 					<alignToSurface>true</alignToSurface>
 					<tintWeight>
-						0.85 0.00
+						0.80 2.00
 						<!--BW_String-->
 					</tintWeight>
 					<waving>
 						0.00 0.00 0.00 0.00
 						<!--BW_String-->
 					</waving>
+					<scaleFromMap>
+						0 1.00 1.00
+						<!--BW_String-->
+					</scaleFromMap>
 					<sizeLimit>
 						0.06
 						<!--BW_String-->
@@ -875,7 +883,7 @@
 					<seed>8</seed>
 					<alignToSurface>true</alignToSurface>
 					<tintWeight>
-						0.85 0.00
+						0.80 2.00
 						<!--BW_String-->
 					</tintWeight>
 					<waving>
@@ -886,6 +894,10 @@
 						0.00
 						<!--BW_String-->
 					</fadein>
+					<scaleFromMap>
+						0 1.00 1.00
+						<!--BW_String-->
+					</scaleFromMap>
 					<sizeLimit>
 						0.06
 						<!--BW_String-->
@@ -928,7 +940,7 @@
 					<seed>8</seed>
 					<alignToSurface>true</alignToSurface>
 					<tintWeight>
-						0.85 0.00
+						0.80 2.00
 						<!--BW_String-->
 					</tintWeight>
 					<waving>
@@ -939,6 +951,10 @@
 						0.00
 						<!--BW_String-->
 					</fadein>
+					<scaleFromMap>
+						0 1.00 1.00
+						<!--BW_String-->
+					</scaleFromMap>
 					<sizeLimit>
 						0.06
 						<!--BW_String-->
@@ -985,6 +1001,10 @@
 				</slopeMax>
 				<enableSlopeMin>true</enableSlopeMin>
 				<sniperModeBhvr>0</sniperModeBhvr>
+				<scaleFromMap>
+					1 1.00 1.00
+					<!--BW_String-->
+				</scaleFromMap>
 				<sizeLimit>
 					0.30
 					<!--BW_String-->
@@ -1038,6 +1058,10 @@
 						0.30 0.20 0.30 0.50
 						<!--BW_String-->
 					</waving>
+					<scaleFromMap>
+						1 1.00 1.00
+						<!--BW_String-->
+					</scaleFromMap>
 					<sizeLimit>
 						0.30
 						<!--BW_String-->
@@ -1091,6 +1115,174 @@
 						5.00
 						<!--BW_String-->
 					</fadein>
+					<scaleFromMap>
+						1 1.00 1.00
+						<!--BW_String-->
+					</scaleFromMap>
+					<sizeLimit>
+						0.30
+						<!--BW_String-->
+					</sizeLimit>
+					<enableSizeLimit>true</enableSizeLimit>
+				</layer>
+			</grassType>
+		</population>
+		<population>
+			<name>dryGrass_tiny_02</name>
+			<slopeMin>
+				0.00
+				<!--BW_String-->
+			</slopeMin>
+			<slopeMax>
+				30.00
+				<!--BW_String-->
+			</slopeMax>
+			<enableSlopeMin>true</enableSlopeMin>
+			<sizeLimit>
+				0.00
+				<!--BW_String-->
+			</sizeLimit>
+			<enableSizeLimit>true</enableSizeLimit>
+			<tileType>maps/landscape/00_AllTerrain3_tiles/Snow_04_AM.dds</tileType>
+			<tileType>maps/landscape/00_AllTerrain3_tiles/Snow_Wavy_01_AM.dds</tileType>
+			<grassType>
+				<name>dryGrass_tiny</name>
+				<tintWeight>
+					0.35 8.00
+					<!--BW_String-->
+				</tintWeight>
+				<waving>
+					0.30 0.20 0.30 0.50
+					<!--BW_String-->
+				</waving>
+				<slopeMin>
+					0.00
+					<!--BW_String-->
+				</slopeMin>
+				<slopeMax>
+					30.00
+					<!--BW_String-->
+				</slopeMax>
+				<enableSlopeMin>true</enableSlopeMin>
+				<sniperModeBhvr>0</sniperModeBhvr>
+				<scaleFromMap>
+					0 1.00 1.00
+					<!--BW_String-->
+				</scaleFromMap>
+				<sizeLimit>
+					0.30
+					<!--BW_String-->
+				</sizeLimit>
+				<enableSizeLimit>true</enableSizeLimit>
+				<oscillation>
+					0.3 0.1
+					<!--BW_String-->
+				</oscillation>
+				<unique_random_seed>true</unique_random_seed>
+				<layer>
+					<name>Dry_Grass_Tiny_02_lod0.srt</name>
+					<comment>comment</comment>
+					<model>vegetation/Grass/Dry_Grass_Tiny_02/Dry_Grass_Tiny_02_lod0.srt</model>
+					<castShadow>false</castShadow>
+					<densityMin>
+						0.0000
+						<!--BW_String-->
+					</densityMin>
+					<density>
+						1.0000
+						<!--BW_String-->
+					</density>
+					<scale>
+						0.40
+						<!--BW_String-->
+					</scale>
+					<scaleDeviation>
+						0.30
+						<!--BW_String-->
+					</scaleDeviation>
+					<fadeout>
+						5.00
+						<!--BW_String-->
+					</fadeout>
+					<range>
+						10.00
+						<!--BW_String-->
+					</range>
+					<startat>
+						0.00
+						<!--BW_String-->
+					</startat>
+					<seed>10</seed>
+					<alignToSurface>true</alignToSurface>
+					<tintWeight>
+						0.35 8.00
+						<!--BW_String-->
+					</tintWeight>
+					<waving>
+						0.30 0.20 0.30 0.50
+						<!--BW_String-->
+					</waving>
+					<scaleFromMap>
+						0 1.00 1.00
+						<!--BW_String-->
+					</scaleFromMap>
+					<sizeLimit>
+						0.30
+						<!--BW_String-->
+					</sizeLimit>
+					<enableSizeLimit>true</enableSizeLimit>
+				</layer>
+				<layer>
+					<name>Dry_Grass_Tiny_02_lod1.srt</name>
+					<comment>comment</comment>
+					<model>vegetation/Grass/Dry_Grass_Tiny_02/Dry_Grass_Tiny_02_lod1.srt</model>
+					<castShadow>false</castShadow>
+					<densityMin>
+						0.0000
+						<!--BW_String-->
+					</densityMin>
+					<density>
+						1.000
+						<!--BW_String-->
+					</density>
+					<scale>
+						0.40
+						<!--BW_String-->
+					</scale>
+					<scaleDeviation>
+						0.30
+						<!--BW_String-->
+					</scaleDeviation>
+					<fadeout>
+						5.00
+						<!--BW_String-->
+					</fadeout>
+					<range>
+						30.00
+						<!--BW_String-->
+					</range>
+					<startat>
+						10.00
+						<!--BW_String-->
+					</startat>
+					<seed>10</seed>
+					<alignToSurface>true</alignToSurface>
+					<tintWeight>
+						0.35 8.00
+						<!--BW_String-->
+					</tintWeight>
+					<waving>
+						0.30 0.20 0.30 0.50
+						<!--BW_String-->
+					</waving>
+					<fadein>
+						5.00
+						<!--BW_String-->
+					</fadein>
+					<scaleFromMap>
+						0 1.00 1.00
+						<!--BW_String-->
+					</scaleFromMap>
 					<sizeLimit>
 						0.30
 						<!--BW_String-->

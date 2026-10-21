@@ -3330,9 +3330,9 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<_120mm_Gun_T123E6>
+				<_120mm_T123E6_A106>
 					shared
-					<maxAmmo>36</maxAmmo>
+					<maxAmmo>56</maxAmmo>
 					<armor>
 						<armor_1>
 							203.2
@@ -3391,9 +3391,16 @@
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
-					<reloadTime>9</reloadTime>
+					<shotDispersionRadius>
+						0.36
+						<!--BW_String-->
+					</shotDispersionRadius>
+					<reloadTime>
+						8.6
+						<!--BW_String-->
+					</reloadTime>
 					<aimingTime>
-						2.1
+						2.3
 						<!--BW_String-->
 					</aimingTime>
 					<models>
@@ -3479,7 +3486,7 @@
 						</density>
 						<aoTextureSize>256 256</aoTextureSize>
 					</camouflage>
-				</_120mm_Gun_T123E6>
+				</_120mm_T123E6_A106>
 			</guns>
 			<models>
 				<undamaged>vehicles/american/A106_M48A2_120/normal/lod0/Turret_01.model</undamaged>

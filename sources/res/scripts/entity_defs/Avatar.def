@@ -154,10 +154,6 @@
 			<Flags>OWN_CLIENT</Flags>
 			<ExposedForReplay>true</ExposedForReplay>
 		</isGunLocked>
-		<isGunLockedForcefully>
-			<Type>BOOL</Type>
-			<Flags>OWN_CLIENT</Flags>
-		</isGunLockedForcefully>
 		<ownVehicleGear>
 			<Type>UINT8</Type>
 			<Flags>OWN_CLIENT</Flags>
@@ -181,10 +177,6 @@
 			<Type>AVATAR_AMMO_VIEWS</Type>
 			<Flags>ALL_CLIENTS</Flags>
 		</ammoViews>
-		<ammoAdvanced>
-			<Type>AVATAR_AMMO_FOR_CELL</Type>
-			<Flags>CELL_PRIVATE</Flags>
-		</ammoAdvanced>
 		<cp>
 			<Type>PYTHON</Type>
 			<Flags>CELL_PRIVATE</Flags>
@@ -312,7 +304,6 @@
 			<Arg>UINT16</Arg>
 			<Arg>UINT8</Arg>
 			<Arg>UINT8</Arg>
-			<Arg>INT16</Arg>
 			<Arg>INT16</Arg>
 			<Arg>INT16</Arg>
 		</updateVehicleAmmo>
@@ -633,11 +624,6 @@
 			<Exposed>OWN_CLIENT</Exposed>
 			<Arg>UINT16</Arg>
 		</activateEquipment>
-		<activateVehicleEquipment>
-			<Exposed>OWN_CLIENT</Exposed>
-			<Arg>UINT16</Arg>
-			<Arg>STRING</Arg>
-		</activateVehicleEquipment>
 		<setEquipmentApplicationPoint>
 			<Exposed>OWN_CLIENT</Exposed>
 			<Arg>UINT16</Arg>

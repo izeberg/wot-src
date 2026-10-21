@@ -65,6 +65,7 @@
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>G_BlendBone</node>
 		<node>Gun_BlendBone</node>
 		<geometry>
 			<vertices>gun_01Shape.vertices</vertices>
@@ -95,15 +96,6 @@
 					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/american/A175_OTAC_MT_58/OTAC_MT_58_proxy_AO.dds</Texture>
-					</property>
-					<sortOrder>0</sortOrder>
-					<property>
-						g_detailUVTiling
-						<Vector4>3.507000 1.753500 0.000000 0.000000</Vector4>
-					</property>
-					<property>
-						metallicDetailMap
-						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>0.002185 0.015420 -1.059022</groupOrigin>

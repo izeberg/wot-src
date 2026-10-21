@@ -325,12 +325,6 @@ package
       
       public static const SETTINGS_BATTLECONTEXTHINTS_DISABLED:String = "#tooltips:settings/battleContextHints/disabled";
       
-      public static const SETTTINGSDISABLEDNOTIFICATION:String = "#tooltips:setttingsDisabledNotification";
-      
-      public static const SETTTINGSDISABLEDNOTIFICATION_HEADER:String = "#tooltips:setttingsDisabledNotification/header";
-      
-      public static const SETTTINGSDISABLEDNOTIFICATION_BODY:String = "#tooltips:setttingsDisabledNotification/body";
-      
       public static const BADGEINFO_TITLE:String = "#tooltips:badgeinfo/title";
       
       public static const BADGEINFO_TEXT:String = "#tooltips:badgeinfo/text";
@@ -5155,9 +5149,15 @@ package
       
       public static const ADVANCED_VEHICLEAUTOSHOOTGUN:String = "#tooltips:advanced/vehicleAutoShootGun";
       
+      public static const ADVANCED_GUNCOOLINGHEADER:String = "#tooltips:advanced/gunCoolingHeader";
+      
       public static const ADVANCED_GUNCOOLING:String = "#tooltips:advanced/gunCooling";
       
       public static const ADVANCED_DUALGUNCOOLING:String = "#tooltips:advanced/dualGunCooling";
+      
+      public static const ADVANCED_VEHICLECLIPGUNHEADER:String = "#tooltips:advanced/vehicleClipGunHeader";
+      
+      public static const ADVANCED_VEHICLECLIPGUN:String = "#tooltips:advanced/vehicleClipGun";
       
       public static const ADVANCED_VEHICLERADIO:String = "#tooltips:advanced/vehicleRadio";
       
@@ -5274,6 +5274,8 @@ package
       public static const ADVANCED_MODERNIZEDDAMAGEVENTILATION:String = "#tooltips:advanced/modernizedDamageVentilation";
       
       public static const ADVANCED_MODERNIZEDTANKRAMMERSIGHTS:String = "#tooltips:advanced/modernizedTankRammerSights";
+      
+      public static const ADVANCED_SHUFFLE_COUNTER:String = "#tooltips:advanced/shuffle/counter";
       
       public static const CREW_ROLE_COMMANDER:String = "#tooltips:crew/role/commander";
       
@@ -8268,6 +8270,42 @@ package
       public static const HEADER_BUTTONS_MUSEUM_HEADER:String = "#tooltips:header/buttons/museum/header";
       
       public static const HEADER_BUTTONS_MUSEUM_BODY:String = "#tooltips:header/buttons/museum/body";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_PORTAL26_1_DESC:String = "#tooltips:notrecruitedtankman/tankmen_Portal26_1/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_PORTAL26_1_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_Portal26_1/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_PORTAL26_2_DESC:String = "#tooltips:notrecruitedtankman/tankmen_Portal26_2/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_PORTAL26_2_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_Portal26_2/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_PORTAL26_3_DESC:String = "#tooltips:notrecruitedtankman/tankmen_Portal26_3/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_PORTAL26_3_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_Portal26_3/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_PORTAL26_4_DESC:String = "#tooltips:notrecruitedtankman/tankmen_Portal26_4/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_PORTAL26_4_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_Portal26_4/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_WDR2026_1_DESC:String = "#tooltips:notrecruitedtankman/tankmen_WDR2026_1/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_WDR2026_1_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_WDR2026_1/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_WDR2026_2_DESC:String = "#tooltips:notrecruitedtankman/tankmen_WDR2026_2/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_WDR2026_2_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_WDR2026_2/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_WDR2026_3_DESC:String = "#tooltips:notrecruitedtankman/tankmen_WDR2026_3/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_WDR2026_3_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_WDR2026_3/label";
+      
+      public static const AWARDITEM_SACOIN_HEADER:String = "#tooltips:awardItem/sacoin/header";
+      
+      public static const AWARDITEM_SACOIN_BODY:String = "#tooltips:awardItem/sacoin/body";
+      
+      public static const AWARDITEM_RAZLOM_COIN_HEADER:String = "#tooltips:awardItem/razlom_coin/header";
+      
+      public static const AWARDITEM_RAZLOM_COIN_BODY:String = "#tooltips:awardItem/razlom_coin/body";
       
       public static const ELEN_SUMMARY_RANK_ENUM:Array = [ELEN_SUMMARY_RANK_1,ELEN_SUMMARY_RANK_2,ELEN_SUMMARY_RANK_3,ELEN_SUMMARY_RANK_4,ELEN_SUMMARY_RANK_NORANK];
       

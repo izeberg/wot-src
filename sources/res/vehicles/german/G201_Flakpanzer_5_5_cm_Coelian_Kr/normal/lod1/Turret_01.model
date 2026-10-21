@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G201_Flakpanzer_5_5_cm_Coelian_Kr/normal/lod1/Turret_01</nodefullVisual>
+	<parent>vehicles/german/G201_Flakpanzer_5_5_cm_Coelian_Kr/normal/lod2/Turret_01</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.396679 -0.000001 -1.689244</min>
+		<max>1.396680 1.476866 1.162936</max>
+	</visibilityBox>
+</root>

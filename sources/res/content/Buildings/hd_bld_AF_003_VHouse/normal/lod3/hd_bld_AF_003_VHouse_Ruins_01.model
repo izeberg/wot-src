@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<nodefullVisual>content/Buildings/hd_bld_AF_003_VHouse/normal/lod3/hd_bld_AF_003_VHouse_Ruins_01</nodefullVisual>
+	<visibilityBox>
+		<min>-7.950815 -0.703085 -2.953644</min>
+		<max>7.083753 2.532287 3.527645</max>
+	</visibilityBox>
 </root>

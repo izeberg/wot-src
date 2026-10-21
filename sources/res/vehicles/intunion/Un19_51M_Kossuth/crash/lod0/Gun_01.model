@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-0.599881 -0.520684 -1.613030</min>
+		<max>0.532044 0.503188 4.260001</max>
+	</visibilityBox>
+	<parent>vehicles/intunion/Un19_51M_Kossuth/crash/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodelessVisual>vehicles/intunion/Un19_51M_Kossuth/crash/lod0/Gun_01</nodelessVisual>
+</root>

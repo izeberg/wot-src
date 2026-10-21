@@ -1,5 +1,6 @@
 from typing import Optional
 import re, calendar, datetime, time, BigWorld
+from constants import SECONDS_IN_DAY
 from debug_utils import LOG_CURRENT_EXCEPTION
 from helpers.i18n import makeString as _ms
 from soft_exception import SoftException
@@ -131,6 +132,10 @@ def getServerRegionalTimeCurrentGameDay():
 def getServerTimeCurrentDay():
     ts = time.gmtime(_g_instance.serverUTCTime)
     return ts.tm_hour * ONE_HOUR + ts.tm_min * ONE_MINUTE + ts.tm_sec
+
+
+def getServerGameDayTimeInDays():
+    return int(_g_instance.serverGameDayTime / SECONDS_IN_DAY)
 
 
 def getTimestampByStrDate(dateStr):

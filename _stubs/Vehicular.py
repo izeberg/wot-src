@@ -1273,6 +1273,7 @@ class VehicleAudition(PyComponentWrapperBase):
 	def setSpeedInfo(self, *args, **kwargs): pass
 	def setTracksInfo(self, *args, **kwargs): pass
 	def setUpdatePeriod(self, *args, **kwargs): pass
+	def setWaterMatKindInfo(self, *args, **kwargs): pass
 	def setWeaponEnergy(self, *args, **kwargs): pass
 	def valid(self, *args, **kwargs): pass
 
@@ -1392,6 +1393,8 @@ class WaterSensor(PyComponentWrapperBase):
 	waterHeightWorld = property(lambda self: None)
 	def waterHeightWorld_gen(*args, **kwargs): pass
 	def waterHeight_gen(*args, **kwargs): pass
+	waterMatKind = property(lambda self: None)
+	def waterMatKind_gen(*args, **kwargs): pass
 
 __doc__ = None
 __name__ = 'Vehicular'

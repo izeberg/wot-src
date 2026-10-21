@@ -757,12 +757,12 @@ class VehicleGunRotator(object):
 
     def __setupStartMatrix(self):
         player = BigWorld.player()
-        if player is None:
+        if player is None or player.isObserver():
+            return
+        vehicle = player.getVehicleAttached()
+        if vehicle is None:
             return
         else:
-            vehicle = player.getVehicleAttached()
-            if vehicle is None:
-                return
             turretMatrix, gunMatrix = vehicle.appearance.getGunMatrix()
             self.__updateTurretMatrix(Math.Matrix(turretMatrix).yaw, 0.0)
             self.__updateGunMatrix(Math.Matrix(gunMatrix).pitch, 0.0)

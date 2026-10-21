@@ -25,6 +25,42 @@
 					<row3>0.000000 0.596615 0.000000</row3>
 				</transform>
 			</node>
+			<node>
+				<identifier>lod0</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>n1</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>s_ramp0</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>s_wall0</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+			</node>
 		</node>
 	</node>
 	<renderSet>
@@ -75,7 +111,7 @@
 						<Bool>true</Bool>
 					</property>
 				</material>
-				<groupOrigin>-0.051844 0.339925 -0.091202</groupOrigin>
+				<groupOrigin>-0.030772 0.345495 -0.009355</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				3
@@ -128,10 +164,10 @@
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-2.031868 -0.416914 -5.090954</min>
-		<max>1.928179 5.817023 4.936437</max>
+		<min>-1.549662 -0.416914 -4.997197</min>
+		<max>1.632291 5.817023 4.936437</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>632228</geometrySize>
+	<geometrySize>587064</geometrySize>
 	<minUVDensity>0.001073</minUVDensity>
 </root>

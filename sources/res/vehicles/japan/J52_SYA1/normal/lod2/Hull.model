@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/japan/J52_SYA1/normal/lod2/Hull</nodefullVisual>
+	<parent>vehicles/japan/J52_SYA1/normal/lod3/Hull</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.709239 -0.631224 -4.040722</min>
+		<max>1.707522 0.677740 3.921813</max>
+	</visibilityBox>
+</root>

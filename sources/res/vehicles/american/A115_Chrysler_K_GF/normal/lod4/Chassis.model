@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<tank>true</tank>
-	<materialNames/>
-	<visibilityBox>
-		<min>-1.965460 0.056812 -3.552500</min>
-		<max>1.927500 1.222050 3.758830</max>
-	</visibilityBox>
 	<nodefullVisual>vehicles/american/A115_Chrysler_K_GF/normal/lod4/Chassis</nodefullVisual>
+	<visibilityBox>
+		<min>-1.815836 -0.004382 -3.600395</min>
+		<max>1.815836 1.096104 3.805990</max>
+	</visibilityBox>
 </root>

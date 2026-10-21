@@ -2,17 +2,11 @@
 <root>
 	<materialNames/>
 	<visibilityBox>
-		<min>
-			-1.35819 0.00499918 -2.43149
-			<!--BW_String-->
-		</min>
-		<max>
-			1.35819 0.963972 2.51496
-			<!--BW_String-->
-		</max>
+		<min>-1.358190 0.004999 -2.431490</min>
+		<max>1.358190 0.963972 2.514960</max>
 	</visibilityBox>
 	<tank>true</tank>
 	<nodefullVisual>vehicles/russian/R100_SU122A/normal/lod0/Chassis</nodefullVisual>
 	<parent>vehicles/russian/R100_SU122A/normal/lod1/Chassis</parent>
-	<extent>32</extent>
+	<extent>32.000000</extent>
 </root>

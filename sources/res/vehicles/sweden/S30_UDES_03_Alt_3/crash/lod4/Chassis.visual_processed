@@ -68,15 +68,23 @@
 		<node>V_BlendBone</node>
 		<node>Tank_BlendBone</node>
 		<geometry>
-			<vertices>chassis_R_Shape.vertices</vertices>
-			<primitive>chassis_R_Shape.indices</primitive>
+			<vertices>chassis_L_Shape.vertices</vertices>
+			<primitive>chassis_L_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_chassis_01_skinned</identifier>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>0</materialKind>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<materialKind>0</materialKind>
+					<identifier>tank_proxy_skinned</identifier>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>vehicles/sweden/S30_UDES_03_Alt_3/UDES_03_Alt_3_proxy_AM.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
 					<property>
 						metallicGlossMap
 						<Texture>vehicles/sweden/S30_UDES_03_Alt_3/UDES_03_Alt_3_proxy_GMM.dds</Texture>
@@ -86,27 +94,15 @@
 						<Texture>vehicles/sweden/S30_UDES_03_Alt_3/UDES_03_Alt_3_proxy_ANM.dds</Texture>
 					</property>
 					<property>
-						diffuseMap
-						<Texture>vehicles/sweden/S30_UDES_03_Alt_3/UDES_03_Alt_3_proxy_AM.dds</Texture>
-					</property>
-					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/sweden/S30_UDES_03_Alt_3/UDES_03_Alt_3_proxy_AO.dds</Texture>
 					</property>
 					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
-					</property>
-					<property>
 						alphaReference
-						<Int>64</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
+						<Int>0</Int>
 					</property>
 				</material>
-				<groupOrigin>1.138847 0.461628 -0.055963</groupOrigin>
+				<groupOrigin>-1.294680 0.464358 -0.067050</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -115,15 +111,23 @@
 		<node>V_BlendBone</node>
 		<node>Tank_BlendBone</node>
 		<geometry>
-			<vertices>chassis_L_Shape.vertices</vertices>
-			<primitive>chassis_L_Shape.indices</primitive>
+			<vertices>chassis_R_Shape.vertices</vertices>
+			<primitive>chassis_R_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_chassis_01_skinned</identifier>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>0</materialKind>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<materialKind>0</materialKind>
+					<identifier>tank_proxy_skinned</identifier>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>vehicles/sweden/S30_UDES_03_Alt_3/UDES_03_Alt_3_proxy_AM.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
 					<property>
 						metallicGlossMap
 						<Texture>vehicles/sweden/S30_UDES_03_Alt_3/UDES_03_Alt_3_proxy_GMM.dds</Texture>
@@ -133,35 +137,23 @@
 						<Texture>vehicles/sweden/S30_UDES_03_Alt_3/UDES_03_Alt_3_proxy_ANM.dds</Texture>
 					</property>
 					<property>
-						diffuseMap
-						<Texture>vehicles/sweden/S30_UDES_03_Alt_3/UDES_03_Alt_3_proxy_AM.dds</Texture>
-					</property>
-					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/sweden/S30_UDES_03_Alt_3/UDES_03_Alt_3_proxy_AO.dds</Texture>
 					</property>
 					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
-					</property>
-					<property>
 						alphaReference
-						<Int>64</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
+						<Int>0</Int>
 					</property>
 				</material>
-				<groupOrigin>-1.135792 0.437616 -0.071474</groupOrigin>
+				<groupOrigin>1.278085 0.464358 -0.062636</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-1.533755 -0.008703 -2.749846</min>
-		<max>1.533340 0.916103 2.885658</max>
+		<min>-1.530569 -0.000000 -2.807622</min>
+		<max>1.513974 0.928717 2.932895</max>
 	</boundingBox>
-	<geometrySize>7836</geometrySize>
-	<minUVDensity>0.004541</minUVDensity>
+	<geometrySize>2320</geometrySize>
+	<minUVDensity>0.002780</minUVDensity>
 </root>

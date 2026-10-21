@@ -19,15 +19,15 @@
 				<type>primary</type>
 			</path>
 			<path>
+				particles/content_forward/pfx_textures/eff_tex_split_dirt.dds
+				<type>primary</type>
+			</path>
+			<path>
 				particles/content_forward/pfx_textures/eff_tex_split_fire_2.dds
 				<type>primary</type>
 			</path>
 			<path>
 				particles/content_forward/pfx_textures/eff_tex_split_misc_6.dds
-				<type>primary</type>
-			</path>
-			<path>
-				particles/content_forward/pfx_textures/eff_tex_split_dirt.dds
 				<type>primary</type>
 			</path>
 			<path>
@@ -44,6 +44,22 @@
 			</path>
 			<path>
 				particles/content_forward/pfx_textures/eff_tex_smoke.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_long.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_fireworks.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_split_fire_4.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_split_smoke_7.dds
 				<type>primary</type>
 			</path>
 			<path>
@@ -71,15 +87,7 @@
 				<type>primary</type>
 			</path>
 			<path>
-				particles/content_forward/pfx_textures/eff_fireworks.dds
-				<type>primary</type>
-			</path>
-			<path>
-				particles/content_forward/pfx_textures/eff_tex_split_fire_4.dds
-				<type>primary</type>
-			</path>
-			<path>
-				particles/content_forward/pfx_textures/eff_tex_split_smoke_7.dds
+				particles/content_forward/pfx_textures/eff_tex_split_misc_4.dds
 				<type>primary</type>
 			</path>
 			<path>
@@ -87,15 +95,7 @@
 				<type>primary</type>
 			</path>
 			<path>
-				particles/content_forward/pfx_textures/eff_tex_split_misc_4.dds
-				<type>primary</type>
-			</path>
-			<path>
 				particles/content_forward/pfx_textures/eff_tex_split_splash_3.dds
-				<type>primary</type>
-			</path>
-			<path>
-				particles/content_forward/pfx_textures/eff_tex_long.dds
 				<type>primary</type>
 			</path>
 			<path>
@@ -158,7 +158,6 @@
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_bld_uni_010_workshopindoor_firestairs_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_env_112_11_advertisingcloset_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_env_112_11_advertisingcloset_03.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_env_eu_040_streetlamp_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_env_eu_058_postbox_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_env_su_006_trashcan_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_env_su_006_trashcan_02.vfx</fn_effect_bin>
@@ -390,7 +389,6 @@
 		<fn_effect_bin>particles/environment/objects/hd_bld_uni_010_workshopindoor_firestairs_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_112_11_advertisingcloset_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_112_11_advertisingcloset_03.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/hd_env_eu_040_streetlamp_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_eu_058_postbox_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_su_006_trashcan_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_su_006_trashcan_02.eff</fn_effect_bin>
@@ -580,7 +578,6 @@
 		<fn_effect_bin>particles/environment/trees/conifers/tree_spruce_frost_2m_fall.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/trees/conifers/tree_spruce_frost_2m_touchdown.eff</fn_effect_bin>
 		<preloadVisual>particles/mesh_particles/metal_stick.visual</preloadVisual>
-		<preloadVisual>particles/mesh_particles/metal_tube_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/metal_tube_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/stone_brick_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/stone_brick_02.visual</preloadVisual>
@@ -612,14 +609,6 @@
 		<fn_effect_bin>particles/environment/scenarios/front_line_welding.eff</fn_effect_bin>
 		<preloadTextures>
 			<path>
-				particles/content_deferred/pfx_textures/eff_tex_split_misc_7.dds
-				<type>primary</type>
-			</path>
-			<path>
-				particles/content_deferred/pfx_textures/eff_tex_split_sparks.dds
-				<type>primary</type>
-			</path>
-			<path>
 				particles/content_deferred/pfx_textures/eff_tex_smoke.dds
 				<type>primary</type>
 			</path>
@@ -648,6 +637,22 @@
 				<type>primary</type>
 			</path>
 			<path>
+				particles/content_deferred/pfx_textures/eff_tex_long.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_split_smoke_7.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_split_misc_7.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_split_sparks.dds
+				<type>primary</type>
+			</path>
+			<path>
 				particles/content_deferred/pfx_textures/eff_tex_split_misc_5.dds
 				<type>primary</type>
 			</path>
@@ -656,19 +661,11 @@
 				<type>primary</type>
 			</path>
 			<path>
-				particles/content_deferred/pfx_textures/eff_tex_split_smoke_7.dds
-				<type>primary</type>
-			</path>
-			<path>
-				particles/content_deferred/pfx_textures/eff_tex_split_smoke_3.dds
-				<type>primary</type>
-			</path>
-			<path>
 				particles/content_deferred/pfx_textures/eff_tex_split_misc_4.dds
 				<type>primary</type>
 			</path>
 			<path>
-				particles/content_deferred/pfx_textures/eff_tex_split_splash_3.dds
+				particles/content_deferred/pfx_textures/eff_tex_split_smoke_3.dds
 				<type>primary</type>
 			</path>
 			<path>
@@ -688,7 +685,7 @@
 				<type>primary</type>
 			</path>
 			<path>
-				particles/content_deferred/pfx_textures/eff_tex_long.dds
+				particles/content_deferred/pfx_textures/eff_tex_split_splash_3.dds
 				<type>primary</type>
 			</path>
 			<path>
@@ -796,7 +793,6 @@
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_bld_uni_010_workshopindoor_firestairs_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_env_112_11_advertisingcloset_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_env_112_11_advertisingcloset_03.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_env_eu_040_streetlamp_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_env_eu_058_postbox_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_env_su_006_trashcan_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_env_su_006_trashcan_02.vfx</fn_effect_bin>
@@ -1028,7 +1024,6 @@
 		<fn_effect_bin>particles/environment/objects/hd_bld_uni_010_workshopindoor_firestairs_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_112_11_advertisingcloset_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_112_11_advertisingcloset_03.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/hd_env_eu_040_streetlamp_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_eu_058_postbox_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_su_006_trashcan_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_su_006_trashcan_02.eff</fn_effect_bin>
@@ -1218,7 +1213,6 @@
 		<fn_effect_bin>particles/environment/trees/conifers/tree_spruce_frost_2m_fall.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/trees/conifers/tree_spruce_frost_2m_touchdown.eff</fn_effect_bin>
 		<preloadVisual>particles/mesh_particles/metal_stick.visual</preloadVisual>
-		<preloadVisual>particles/mesh_particles/metal_tube_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/metal_tube_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/stone_brick_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/stone_brick_02.visual</preloadVisual>

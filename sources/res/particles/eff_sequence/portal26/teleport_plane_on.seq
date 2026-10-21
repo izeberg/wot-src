@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>0.500000</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>plane</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/portal26_event/abilities/teleport/teleport_plane_portal26.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd0</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.184314 0.462745 1.000000 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 0.029868</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>65795</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>0.184314 0.462745 1.000000 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>barrier</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/portal26_event/abilities/teleport/teleport_barrier_portal26.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd0</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.117647 0.568627 1.000000 0.950000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.003038</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>0.117647 0.568627 1.000000 0.951519</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 0.003038</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 3.195631</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>light</name>
+		<type>model</type>
+		<resource>content/Environment/hd_env_EVT_P26_0001_Teleport/normal/lod0/hd_env_EVT_P26_0001_Teleport_02.model</resource>
+		<castsShadow>false</castsShadow>
+	</sequenceObject>
+	<events/>
+</root>

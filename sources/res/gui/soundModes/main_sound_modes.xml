@@ -1109,6 +1109,69 @@
 				<bank>WT26/WT26_Krieger/voiceover.bnk</bank>
 			</wwbanks>
 		</mode>
+		<mode>
+			<name>portal26_1</name>
+			<wwise_language>portal26/Vetrova</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>portal26/Vetrova/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
+		<mode>
+			<name>portal26_2</name>
+			<wwise_language>portal26/Strizh</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>portal26/Strizh/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
+		<mode>
+			<name>portal26_3</name>
+			<wwise_language>portal26/Levin</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>portal26/Levin/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
+		<mode>
+			<name>portal26_4</name>
+			<wwise_language>portal26/Kurgan</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>portal26/Kurgan/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
+		<mode>
+			<name>wdr2026_1</name>
+			<wwise_language>WDR26/crew1</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>WDR26/crew1/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
+		<mode>
+			<name>wdr2026_2</name>
+			<wwise_language>WDR26/crew2</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>WDR26/crew2/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
+		<mode>
+			<name>wdr2026_3</name>
+			<wwise_language>WDR26/crew3</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>WDR26/crew3/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
 	</modes>
 	<nationalPresets>
 		<preset>

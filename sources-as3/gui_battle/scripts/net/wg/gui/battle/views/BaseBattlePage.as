@@ -24,7 +24,7 @@ package net.wg.gui.battle.views
    import net.wg.gui.battle.views.piercingDebugPanel.PiercingDebugPanel;
    import net.wg.gui.battle.views.postmortemPanel.BasePostmortemPanel;
    import net.wg.gui.battle.views.postmortemPanel.PostmortemPanel;
-   import net.wg.gui.battle.views.ribbonsPanel.RibbonsPanel;
+   import net.wg.gui.battle.views.ribbonsPanel.RibbonsPanelBase;
    import net.wg.gui.battle.views.rocketAcceleratorPanel.RocketAcceleratorPanel;
    import net.wg.gui.battle.views.thermalVisionPanel.ThermalVisionPanel;
    import net.wg.gui.battle.views.vehicleMessages.VehicleMessages;
@@ -81,7 +81,7 @@ package net.wg.gui.battle.views
       
       public var battleTimer:BattleTimerMeta = null;
       
-      public var ribbonsPanel:RibbonsPanel = null;
+      public var ribbonsPanel:RibbonsPanelBase = null;
       
       public var perksPanel:PerksPanel = null;
       
@@ -597,7 +597,7 @@ package net.wg.gui.battle.views
          return param1 && param1.visible && param1.parent != this && this.isElementVisible(param1.parent);
       }
       
-      protected function showComponent(param1:String, param2:Boolean) : void
+      private function showComponent(param1:String, param2:Boolean) : void
       {
          var _loc3_:IDisplayableComponent = null;
          _loc3_ = this._componentsStorage[param1];

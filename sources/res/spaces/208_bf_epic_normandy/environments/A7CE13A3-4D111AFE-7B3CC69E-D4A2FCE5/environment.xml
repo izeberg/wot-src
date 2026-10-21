@@ -167,7 +167,7 @@
 		</influences>
 	</SSAO>
 	<Shadow>
-		<maxShadowsSplitCount>5</maxShadowsSplitCount>
+		<maxShadowsSplitCount>4</maxShadowsSplitCount>
 		<maxDynamicViewDistance>100.000000</maxDynamicViewDistance>
 		<lightSize>1.000000</lightSize>
 		<dynamicShadowsLightSize>13.410000</dynamicShadowsLightSize>
@@ -204,7 +204,7 @@
 		</layer1>
 	</cloudsShadow>
 	<PBS>
-		<ForwardSHMultiplier>1.000000</ForwardSHMultiplier>
+		<ForwardSHMultiplier>1.100000</ForwardSHMultiplier>
 		<flakesDensityThreshold>0.800000</flakesDensityThreshold>
 		<flakesUvScale>0.800000</flakesUvScale>
 		<flakesGloss>0.890000</flakesGloss>

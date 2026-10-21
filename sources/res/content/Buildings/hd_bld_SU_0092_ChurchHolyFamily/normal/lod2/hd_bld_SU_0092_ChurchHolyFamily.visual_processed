@@ -598,7 +598,7 @@
 					</property>
 					<property>
 						g_emissionMultipliers
-						<Vector4>0.000000 2.000000 0.000000 0.500000</Vector4>
+						<Vector4>0.000000 2.000000 0.000000 1.500000</Vector4>
 					</property>
 					<property>
 						g_enableTile
@@ -626,7 +626,7 @@
 					</property>
 					<property>
 						g_lodBlurDistance
-						<Vector4>2000.000000 5000.000000 1.000000 0.000000</Vector4>
+						<Vector4>400.000000 600.000000 1.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_LumMap
@@ -674,7 +674,7 @@
 					</property>
 					<property>
 						g_emissionTint
-						<Vector4>0.572549 0.419608 0.219608 1.000000</Vector4>
+						<Vector4>0.768627 0.623529 0.329412 1.000000</Vector4>
 					</property>
 				</material>
 				<groupOrigin>-0.555063 11.617386 0.334469</groupOrigin>

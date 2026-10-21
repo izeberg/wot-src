@@ -19,8 +19,6 @@ package
       
       public static const CURSOR_OVERLAPCONTOUR_TOOLTIP:String = "#settings:cursor/overlapContour/tooltip";
       
-      public static const EVENTSETTINGDISABLED:String = "#settings:eventSettingDisabled";
-      
       public static const LANGUAGE_CODE:String = "#settings:LANGUAGE_CODE";
       
       public static const WINDOWTITLE:String = "#settings:windowTitle";

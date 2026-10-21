@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>Root_Jnt</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>Tank_jnt</identifier>
+				<transform>
+					<row0>0.204314 -0.974471 0.093075</row0>
+					<row1>0.974471 0.211507 0.075311</row1>
+					<row2>-0.093075 0.075311 0.992807</row2>
+					<row3>0.265910 14.805603 -0.133131</row3>
+				</transform>
+				<node>
+					<identifier>Dulo_jnt</identifier>
+					<transform>
+						<row0>0.532267 -0.751543 -0.389711</row0>
+						<row1>0.579203 0.659017 -0.479813</row1>
+						<row2>0.617426 0.029667 0.786069</row2>
+						<row3>2.136432 -2.703113 -1.373388</row3>
+					</transform>
+					<node>
+						<identifier>Dulo_jnt_BlendBone</identifier>
+						<transform>
+							<row0>-0.587335 0.805190 0.081896</row0>
+							<row1>-0.706985 -0.461165 -0.536189</row1>
+							<row2>0.393967 0.372822 -0.840116</row2>
+							<row3>6.867188 6.449085 7.869353</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Tank_jnt_BlendBone</identifier>
+					<transform>
+						<row0>0.204314 0.974471 -0.093075</row0>
+						<row1>-0.974471 0.211507 0.075311</row1>
+						<row2>-0.093075 -0.075311 -0.992807</row2>
+						<row3>14.385688 -3.380583 -0.958106</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>chaim_L_01_jnt</identifier>
+				<transform>
+					<row0>0.072826 -0.984168 0.161582</row0>
+					<row1>0.993565 0.085684 0.074076</row1>
+					<row2>-0.086749 0.155148 0.984075</row2>
+					<row3>-1.116870 -0.442765 1.347670</row3>
+				</transform>
+				<node>
+					<identifier>chaim_L_02_jnt</identifier>
+					<transform>
+						<row0>0.999973 -0.003991 0.006244</row0>
+						<row1>0.003997 0.999992 -0.000913</row1>
+						<row2>-0.006240 0.000938 0.999980</row2>
+						<row3>-2.093128 0.000000 0.000000</row3>
+					</transform>
+					<node>
+						<identifier>chaim_L_03_jnt</identifier>
+						<transform>
+							<row0>0.993562 -0.107254 -0.036492</row0>
+							<row1>0.107255 0.994230 -0.001939</row1>
+							<row2>0.036490 -0.001988 0.999332</row2>
+							<row3>-3.306589 0.399838 0.141160</row3>
+						</transform>
+						<node>
+							<identifier>chaim_L_04_jnt</identifier>
+							<transform>
+								<row0>0.998292 -0.054682 -0.020564</row0>
+								<row1>0.054688 0.998503 -0.000293</row1>
+								<row2>0.020549 -0.000832 0.999788</row2>
+								<row3>-3.089740 0.096893 0.070567</row3>
+							</transform>
+							<node>
+								<identifier>chaim_L_05_jnt</identifier>
+								<transform>
+									<row0>0.995436 0.093726 0.017945</row0>
+									<row1>-0.093739 0.995597 -0.000064</row1>
+									<row2>-0.017872 -0.001618 0.999839</row2>
+									<row3>-2.844147 -0.224655 -0.048000</row3>
+								</transform>
+								<node>
+									<identifier>chaim_L_06_jnt</identifier>
+									<transform>
+										<row0>0.987640 -0.141645 -0.067114</row0>
+										<row1>0.141645 0.989906 -0.004783</row1>
+										<row2>0.067114 -0.004783 0.997734</row2>
+										<row3>-2.506759 0.359513 0.170344</row3>
+									</transform>
+									<node>
+										<identifier>chaim_L_06_jnt_BlendBone</identifier>
+										<transform>
+											<row0>-0.131654 0.987057 -0.091575</row0>
+											<row1>-0.990347 -0.126925 0.055703</row1>
+											<row2>-0.043359 -0.098024 -0.994239</row2>
+											<row3>13.146905 2.242572 -0.662216</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>chaim_L_05_jnt_BlendBone</identifier>
+									<transform>
+										<row0>0.003639 0.996180 -0.087252</row0>
+										<row1>-0.992346 0.014367 0.122650</row1>
+										<row2>-0.123435 -0.086138 -0.988607</row2>
+										<row3>10.750853 0.720425 -1.383439</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>chaim_L_04_jnt_BlendBone</identifier>
+								<transform>
+									<row0>-0.088200 0.992275 -0.087237</row0>
+									<row1>-0.991356 -0.078903 0.104821</row1>
+									<row2>-0.097128 -0.095728 -0.990658</row2>
+									<row3>7.814835 1.502465 -1.238333</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>chaim_L_03_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.035577 0.995686 -0.085695</row0>
+								<row1>-0.991824 -0.024662 0.125208</row1>
+								<row2>-0.122555 -0.089449 -0.988423</row2>
+								<row3>4.768466 1.170809 -1.328649</row3>
+							</transform>
+						</node>
+					</node>
+				</node>
+				<node>
+					<identifier>chaim_L_01_jnt_BlendBone</identifier>
+					<transform>
+						<row0>0.072826 0.993565 -0.086749</row0>
+						<row1>-0.984168 0.085684 0.155148</row1>
+						<row2>-0.161582 -0.074076 -0.984075</row2>
+						<row3>-0.572178 1.047790 -1.354402</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>chaim_R_01_jnt</identifier>
+				<transform>
+					<row0>0.013637 -0.999697 -0.020512</row0>
+					<row1>0.994401 0.011409 0.105051</row1>
+					<row2>-0.104785 -0.021830 0.994255</row2>
+					<row3>-0.000329 -0.276011 -0.729014</row3>
+				</transform>
+				<node>
+					<identifier>chaim_R_02_jnt</identifier>
+					<transform>
+						<row0>0.999984 -0.000745 -0.005667</row0>
+						<row1>0.000746 1.000000 0.000213</row1>
+						<row2>0.005667 -0.000217 0.999984</row2>
+						<row3>-2.788509 0.000000 0.000000</row3>
+					</transform>
+					<node>
+						<identifier>chaim_R_03_jnt</identifier>
+						<transform>
+							<row0>0.998858 -0.014633 -0.045487</row0>
+							<row1>0.014428 0.999884 -0.004829</row1>
+							<row2>0.045553 0.004167 0.998953</row2>
+							<row3>-3.221746 0.023308 0.176450</row3>
+						</transform>
+						<node>
+							<identifier>chaim_R_04_jnt</identifier>
+							<transform>
+								<row0>0.998979 -0.045108 0.002487</row0>
+								<row1>0.045111 0.998981 -0.001094</row1>
+								<row2>-0.002435 0.001205 0.999996</row2>
+								<row3>-4.699169 0.238374 0.002713</row3>
+							</transform>
+							<node>
+								<identifier>chaim_R_05_jnt</identifier>
+								<transform>
+									<row0>0.993450 -0.090192 0.070159</row0>
+									<row1>0.090150 0.995921 0.003770</row1>
+									<row2>-0.070213 0.002580 0.997529</row2>
+									<row3>-3.002006 0.272543 -0.212006</row3>
+								</transform>
+								<node>
+									<identifier>chaim_R_05_jnt_BlendBone</identifier>
+									<transform>
+										<row0>-0.137775 0.986074 -0.093145</row0>
+										<row1>-0.990373 -0.138426 -0.000528</row1>
+										<row2>0.013415 -0.092175 -0.995652</row2>
+										<row3>13.353575 1.304713 0.058691</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>chaim_R_04_jnt_BlendBone</identifier>
+								<transform>
+									<row0>-0.041438 0.994238 -0.098864</row0>
+									<row1>-0.996328 -0.048539 -0.070532</row1>
+									<row2>0.074924 -0.095578 -0.992598</row2>
+									<row3>10.377603 0.367697 0.788331</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>chaim_R_03_jnt_BlendBone</identifier>
+							<transform>
+								<row0>0.003696 0.994975 -0.100054</row0>
+								<row1>-0.997329 -0.003632 -0.072957</row1>
+								<row2>0.072954 -0.100056 -0.992304</row2>
+								<row3>5.682504 0.138533 0.816448</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>chaim_R_02_jnt_BlendBone</identifier>
+						<transform>
+							<row0>0.013489 0.994389 -0.104921</row0>
+							<row1>-0.999565 0.010658 -0.027497</row1>
+							<row2>0.026224 -0.105247 -0.994100</row2>
+							<row3>2.493459 0.082076 0.732892</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>chaim_R_01_jnt_BlendBone</identifier>
+					<transform>
+						<row0>0.013637 0.994401 -0.104785</row0>
+						<row1>-0.999697 0.011409 -0.021830</row1>
+						<row2>0.020512 -0.105051 -0.994255</row2>
+						<row3>-0.290876 0.080059 0.718767</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>Root_Jnt_BlendBone</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 -1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+			</node>
+		</node>
+		<node>
+			<identifier>hd_env_EVT_P26_0011_FloatingTank_01</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>lod0</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>s_wall0</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>chaim_L_06_jnt_BlendBone</node>
+		<node>chaim_R_04_jnt_BlendBone</node>
+		<node>chaim_L_04_jnt_BlendBone</node>
+		<node>chaim_L_05_jnt_BlendBone</node>
+		<node>chaim_L_03_jnt_BlendBone</node>
+		<node>Tank_jnt_BlendBone</node>
+		<node>chaim_R_05_jnt_BlendBone</node>
+		<node>chaim_R_03_jnt_BlendBone</node>
+		<node>chaim_R_02_jnt_BlendBone</node>
+		<node>Dulo_jnt_BlendBone</node>
+		<node>chaim_L_01_jnt_BlendBone</node>
+		<node>Root_Jnt_BlendBone</node>
+		<node>chaim_R_01_jnt_BlendBone</node>
+		<geometry>
+			<vertices>s2Shape.vertices</vertices>
+			<stream>s2Shape.uv2</stream>
+			<primitive>s2Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd2_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tiled_skinned.fx</fx>
+					<materialKind>112</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						albedoHeightTile0
+						<Texture>content/Environment/00_Tiles/dds/Synapses_01_1024_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Environment/00_Tiles/dds/Synapses_01_1024_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/Environment/00_Tiles/dds/Synapses_01_1024_AM.dds</Texture>
+					</property>
+					<property>
+						alphaReference
+						<Int>127</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/Environment/hd_env_EVT_P26_0011_FloatingTank/hd_env_EVT_P26_0011_FloatingTank_01_blend.png</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
+					</property>
+					<property>
+						dynamicObject
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Environment/00_Tiles/dds/Synapses_01_1024_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Environment/00_Tiles/dds/Synapses_01_1024_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Environment/00_Tiles/dds/Synapses_01_1024_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Environment/00_Tiles/dds/Synapses_01_1024_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Environment/00_Tiles/dds/Synapses_01_opaque_1024_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Environment/00_Tiles/dds/Synapses_01_transparent_1024_GBMT.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.000354 8.897048 0.729370</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>Tank_jnt_BlendBone</node>
+		<geometry>
+			<vertices>s1Shape.vertices</vertices>
+			<stream>s1Shape.colour</stream>
+			<primitive>s1Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd1_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
+					<materialKind>112</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						alphaReference
+						<Int>64</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/hd_env_EVT_P26_0011_FloatingTank/hd_env_EVT_P26_0011_FloatingTank_01_AM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Environment/hd_env_EVT_P26_0011_FloatingTank/hd_env_EVT_P26_0011_FloatingTank_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Environment/hd_env_EVT_P26_0011_FloatingTank/hd_env_EVT_P26_0011_FloatingTank_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.573902 14.898096 -0.047781</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>Tank_jnt_BlendBone</node>
+		<geometry>
+			<vertices>s0Shape.vertices</vertices>
+			<stream>s0Shape.colour</stream>
+			<primitive>s0Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
+					<materialKind>112</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/hd_env_EVT_P26_0011_FloatingTank/hd_env_EVT_P26_0011_FloatingTank_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Environment/hd_env_EVT_P26_0011_FloatingTank/hd_env_EVT_P26_0011_FloatingTank_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Environment/hd_env_EVT_P26_0011_FloatingTank/hd_env_EVT_P26_0011_FloatingTank_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.420002 14.310129 0.193301</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>s_wall0</node>
+		<geometry>
+			<vertices>s_wall0Shape.vertices</vertices>
+			<primitive>s_wall0Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_wall_0</identifier>
+					<materialKind>0</materialKind>
+					<collisionFlags>144</collisionFlags>
+				</material>
+				<groupOrigin>0.109418 14.979963 -0.194121</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-4.564085 -0.680170 -5.377655</min>
+		<max>4.782921 19.941486 3.918914</max>
+	</boundingBox>
+	<geometrySize>196474</geometrySize>
+	<minUVDensity>0.000083</minUVDensity>
+</root>

@@ -8,11 +8,23 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "banner/lessThanMinute"
-msgstr "< 1 хв."
+msgid "banner/active/date"
+msgstr "Да %(day)s %(month)s"
+
+msgid "banner/active/time"
+msgstr "Осталось "
+
+msgid "banner/announce/date"
+msgstr "Начнётся %(day)s %(month)s"
+
+msgid "banner/announce/time"
+msgstr "До начала "
+
+msgid "banner/default/title"
+msgstr "ЧЁРНЫЙ РЫНОК"
 
 msgid "banner/lootbox/title"
-msgstr "НЕ ПРАПУСЦІ!"
+msgstr "ЧЁРНЫЙ ГАРАЖ!"
 
 msgid "banner/new/text"
 msgstr "НОВАЕ"
@@ -21,19 +33,22 @@ msgid "banner/newShort/text"
 msgstr "!"
 
 msgid "banner/special/title"
-msgstr "ЧОРНЫ РЫНАК"
-
-msgid "banner/timeActive"
-msgstr "Да %(day) %(month)"
-
-msgid "banner/timeEnding"
-msgstr "Да завяршэння: "
-
-msgid "banner/timeStarting"
-msgstr "Да старту: "
+msgstr "СПЕЦПРЕДЛОЖЕНИЕ"
 
 msgid "banner/unavailable/text"
 msgstr "Часова недаступна"
 
 msgid "header/backBtn/descrLabel/hangar"
 msgstr "У ПАДЗЕЮ"
+
+msgid "tillTime/days"
+msgstr "%(day)s сут."
+
+msgid "tillTime/hours"
+msgstr "%(hour)s ч."
+
+msgid "tillTime/lessMin"
+msgstr "< 1 хв."
+
+msgid "tillTime/min"
+msgstr "%(min)s хв."

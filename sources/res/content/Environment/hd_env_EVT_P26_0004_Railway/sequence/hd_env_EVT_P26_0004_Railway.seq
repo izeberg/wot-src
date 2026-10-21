@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>60.000004</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>hd_env_EVT_P26_0004_Railway_02_01</name>
+		<type>model</type>
+		<resource>content/Environment/hd_env_EVT_P26_0004_Railway/normal/lod0/hd_env_EVT_P26_0004_Railway_02.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>3.287392 3.053391 -9.599640</value>
+				<inTangent>-0.000000 -0.000000 0.000000</inTangent>
+				<outTangent>-0.000000 -0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>60.000004</startTime>
+				<value>3.287390 3.053390 -9.599640</value>
+				<inTangent>-0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>20.000000 -28.000000 10.000000</value>
+				<inTangent>0.652174 1.304348 0.652174</inTangent>
+				<outTangent>0.652174 1.304348 0.652174</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.533333</startTime>
+				<value>21.000000 -26.000000 11.000000</value>
+				<inTangent>-0.145470 1.460557 0.079081</inTangent>
+				<outTangent>-0.145470 1.460557 0.079081</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>23.800001</startTime>
+				<value>0.000000 10.000000 0.000000</value>
+				<inTangent>-0.328640 0.536841 0.477632</inTangent>
+				<outTangent>-0.328640 0.536841 0.477632</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>37.600002</startTime>
+				<value>3.944514 2.505425 20.000000</value>
+				<inTangent>0.501299 -0.952467 0.501423</inTangent>
+				<outTangent>0.501299 -0.952467 0.501423</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>60.000004</startTime>
+				<value>20.000000 -28.000000 10.000000</value>
+				<inTangent>0.716763 -1.361849 -0.446429</inTangent>
+				<outTangent>0.716763 -1.361849 -0.446429</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>hd_env_EVT_P26_0004_Railway_02_02</name>
+		<type>model</type>
+		<resource>content/Environment/hd_env_EVT_P26_0004_Railway/normal/lod0/hd_env_EVT_P26_0004_Railway_02.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>9.140518 9.007614 -15.796234</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>60.000004</startTime>
+				<value>9.140518 9.007614 -15.796234</value>
+				<inTangent>-0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>35.000000 -80.000000 -30.000000</value>
+				<inTangent>-0.309278 -0.309278 -0.618557</inTangent>
+				<outTangent>-0.309278 -0.309278 -0.618557</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.233334</startTime>
+				<value>34.000000 -81.000000 -32.000000</value>
+				<inTangent>-0.022286 1.852714 0.837780</inTangent>
+				<outTangent>-0.022286 1.852714 0.837780</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>25.900002</startTime>
+				<value>40.000000 10.000000 20.000000</value>
+				<inTangent>0.378658 -0.209396 1.147059</inTangent>
+				<outTangent>0.378658 -0.209396 1.147059</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>46.200001</startTime>
+				<value>50.000000 -80.000000 20.000000</value>
+				<inTangent>-0.297173 -2.216749 -1.811594</inTangent>
+				<outTangent>-0.297173 -2.216749 -1.811594</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>60.000004</startTime>
+				<value>35.000000 -80.000000 -30.000000</value>
+				<inTangent>-1.086956 -0.000000 -3.623188</inTangent>
+				<outTangent>-1.086956 -0.000000 -3.623188</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>hd_env_EVT_P26_0004_Railway_02_03</name>
+		<type>model</type>
+		<resource>content/Environment/hd_env_EVT_P26_0004_Railway/normal/lod0/hd_env_EVT_P26_0004_Railway_02.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>13.789314 14.419647 -21.491516</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>60.000004</startTime>
+				<value>13.789314 14.419647 -21.491516</value>
+				<inTangent>-0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>20.000000 -25.000000 65.000000</value>
+				<inTangent>0.705882 0.705882 0.007782</inTangent>
+				<outTangent>0.705882 0.705882 0.007782</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.833333</startTime>
+				<value>22.000000 -23.000000 65.022049</value>
+				<inTangent>-0.236395 0.324878 0.003582</inTangent>
+				<outTangent>-0.236395 0.324878 0.003582</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>38.466667</startTime>
+				<value>-20.000000 -24.999998 65.000000</value>
+				<inTangent>0.692715 1.574500 -0.320822</inTangent>
+				<outTangent>0.692715 1.574500 -0.320822</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>46.266670</startTime>
+				<value>0.000000 0.000000 60.000000</value>
+				<inTangent>2.013758 0.687929 -0.137586</inTangent>
+				<outTangent>2.013758 0.687929 -0.137586</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>59.933338</startTime>
+				<value>20.000000 -25.000000 65.000000</value>
+				<inTangent>1.463414 -1.829268 0.365854</inTangent>
+				<outTangent>1.463414 -1.829268 0.365854</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>hd_env_EVT_P26_0004_Railway_04_01</name>
+		<type>model</type>
+		<resource>content/Environment/hd_env_EVT_P26_0004_Railway/normal/lod0/hd_env_EVT_P26_0004_Railway_04.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>18.221786 7.761131 -25.467072</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>60.000004</startTime>
+				<value>18.221786 7.761131 -25.467072</value>
+				<inTangent>-0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-40.000000 -20.000000 18.000000</value>
+				<inTangent>-0.761421 0.761421 3.097992</inTangent>
+				<outTangent>-0.761421 0.761421 3.097992</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>6.566667</startTime>
+				<value>-45.000000 -15.000000 38.343483</value>
+				<inTangent>0.583300 0.187909 1.998476</inTangent>
+				<outTangent>0.583300 0.187909 1.998476</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>19.533335</startTime>
+				<value>-20.000000 -20.000000 50.000000</value>
+				<inTangent>0.895203 -1.568949 -1.270703</inTangent>
+				<outTangent>0.895203 -1.568949 -1.270703</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>26.800001</startTime>
+				<value>-21.000000 -40.000000 25.000000</value>
+				<inTangent>0.337597 -2.484521 -2.274371</inTangent>
+				<outTangent>0.337597 -2.484521 -2.274371</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>40.333336</startTime>
+				<value>-10.000000 -70.000000 10.000000</value>
+				<inTangent>-0.356308 0.162812 -0.350797</inTangent>
+				<outTangent>-0.356308 0.162812 -0.350797</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>60.000004</startTime>
+				<value>-40.000000 -20.000000 18.000000</value>
+				<inTangent>-1.525424 2.542373 0.406780</inTangent>
+				<outTangent>-1.525424 2.542373 0.406780</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>hd_env_EVT_P26_0004_Railway_03_01</name>
+		<type>model</type>
+		<resource>content/Environment/hd_env_EVT_P26_0004_Railway/normal/lod0/hd_env_EVT_P26_0004_Railway_03.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>24.412956 3.296120 -33.189178</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>60.000004</startTime>
+				<value>24.412956 3.296120 -33.189178</value>
+				<inTangent>-0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>12.000000 124.000000 15.000000</value>
+				<inTangent>0.725806 0.483871 0.268748</inTangent>
+				<outTangent>0.725806 0.483871 0.268748</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.133334</startTime>
+				<value>15.000000 126.000000 16.110825</value>
+				<inTangent>-0.403968 -0.555611 0.100300</inTangent>
+				<outTangent>-0.403968 -0.555611 0.100300</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>20.433334</startTime>
+				<value>-10.000000 100.000000 15.000000</value>
+				<inTangent>-0.476725 -0.248096 -0.995613</inTangent>
+				<outTangent>-0.476725 -0.248096 -0.995613</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>38.633335</startTime>
+				<value>0.561324 120.000000 -20.000000</value>
+				<inTangent>0.557822 0.643054 -0.142506</inTangent>
+				<outTangent>0.557822 0.643054 -0.142506</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>60.000004</startTime>
+				<value>12.000000 124.000000 15.000000</value>
+				<inTangent>0.535351 0.187207 1.638065</inTangent>
+				<outTangent>0.535351 0.187207 1.638065</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

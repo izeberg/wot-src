@@ -13,7 +13,6 @@
 		<node>Scene Root</node>
 		<geometry>
 			<vertices>s_nd0.vertices</vertices>
-			<stream>s_nd0.uv2</stream>
 			<stream>s_nd0.colour</stream>
 			<primitive>s_nd0.indices</primitive>
 			<primitiveGroup>
@@ -56,6 +55,6 @@
 		<min>-6.667386 -0.990870 -9.760403</min>
 		<max>5.808086 15.140882 10.357732</max>
 	</boundingBox>
-	<geometrySize>15738</geometrySize>
+	<geometrySize>14138</geometrySize>
 	<minUVDensity>0.000011</minUVDensity>
 </root>

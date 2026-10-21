@@ -226,4 +226,4 @@ class SCH_CLIENT_MSG_TYPE(object):
 
 
 class GFNotificationTemplates(CONST_CONTAINER):
-    pass
+    CUSTOM_PARAGONS_COINS_NOTIFICATION = 'ParagonsCoinsNotification'

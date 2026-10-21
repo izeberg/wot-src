@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/intunion/Un25_M_494/crash/lod1/Gun_02</parent>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/intunion/Un25_M_494/crash/lod0/Gun_02</nodefullVisual>
+	<visibilityBox>
+		<min>-0.616901 -0.371372 -1.636026</min>
+		<max>0.620218 0.328648 6.098646</max>
+	</visibilityBox>
+</root>

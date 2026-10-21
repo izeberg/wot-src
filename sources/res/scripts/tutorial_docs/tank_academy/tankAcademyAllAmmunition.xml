@@ -42,6 +42,7 @@
 				<inactivate>HangarButtonWasClicked</inactivate>
 				<set-var>CurrentVehicleCDSetter</set-var>
 				<run-trigger>CurrentVehicleChangeTrigger</run-trigger>
+				<run-trigger>UnexpectedViewLoadedTrigger</run-trigger>
 			</post-effects>
 			<runtime-effects>
 				<show-hint>
@@ -152,6 +153,7 @@
 			<item-id>HangarPanelShells</item-id>
 			<text>Загрузите все доступные &lt;b&gt;типы&lt;/b&gt; снарядов —&lt;br/&gt;и выходите &lt;b&gt;В БОЙ&lt;/b&gt;</text>
 			<update-runtime>True</update-runtime>
+			<hide-immediately>True</hide-immediately>
 			<arrow>
 				<direction>T</direction>
 				<loop>True</loop>
@@ -159,6 +161,18 @@
 			<actions>
 				<click>
 					HangarPanelShells
+					<effects>
+						<refuse-training/>
+					</effects>
+				</click>
+				<click>
+					HangarEquipmentSlots
+					<effects>
+						<refuse-training/>
+					</effects>
+				</click>
+				<click>
+					HangarOptionalDeviceSlots
 					<effects>
 						<refuse-training/>
 					</effects>
@@ -198,6 +212,17 @@
 					</condition>
 				</close-hint>
 				<close-hint>HangarPanelShellsHint</close-hint>
+			</on-effects>
+		</trigger>
+		<trigger>
+			UnexpectedViewLoadedTrigger
+			<type>view-loaded</type>
+			<excluded-views>
+				<scaleform>lobby</scaleform>
+				<scaleform>hangar</scaleform>
+			</excluded-views>
+			<on-effects>
+				<refuse-training/>
 			</on-effects>
 		</trigger>
 	</triggers>

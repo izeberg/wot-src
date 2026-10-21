@@ -774,86 +774,6 @@
 			</value>
 		</item>
 		<item>
-			<name>SessionStatsOpenBtn</name>
-			<type>dict</type>
-			<value>
-				<item>
-					<name>view</name>
-					<value>lobby</value>
-				</item>
-				<item>
-					<name>path</name>
-					<value>messengerBar.sessionStatsBtn.button</value>
-				</item>
-				<item>
-					<name>padding</name>
-					<type>dict</type>
-					<value>
-						<item>
-							<name>left</name>
-							<type>float</type>
-							<value>0</value>
-						</item>
-						<item>
-							<name>top</name>
-							<type>float</type>
-							<value>2</value>
-						</item>
-						<item>
-							<name>right</name>
-							<type>float</type>
-							<value>1</value>
-						</item>
-						<item>
-							<name>bottom</name>
-							<type>float</type>
-							<value>3</value>
-						</item>
-					</value>
-				</item>
-			</value>
-		</item>
-		<item>
-			<name>SessionStatsSettingsBtn</name>
-			<type>dict</type>
-			<value>
-				<item>
-					<name>view</name>
-					<value>SessionStatsPopover</value>
-				</item>
-				<item>
-					<name>path</name>
-					<value>viewStack:SessionStatsOverviewUI.settingsBtn</value>
-				</item>
-				<item>
-					<name>padding</name>
-					<type>dict</type>
-					<value>
-						<item>
-							<name>left</name>
-							<type>float</type>
-							<value>0</value>
-						</item>
-						<item>
-							<name>top</name>
-							<type>float</type>
-							<value>2</value>
-						</item>
-						<item>
-							<name>right</name>
-							<type>float</type>
-							<value>1</value>
-						</item>
-						<item>
-							<name>bottom</name>
-							<type>float</type>
-							<value>3</value>
-						</item>
-					</value>
-				</item>
-			</value>
-		</item>
-		<item>
 			<name>CreatePlatoonButton</name>
 			<type>dict</type>
 			<value>
@@ -4139,46 +4059,6 @@
 			</value>
 		</item>
 		<item>
-			<name>BlueprintsSwitchButton</name>
-			<type>dict</type>
-			<value>
-				<item>
-					<name>view</name>
-					<value>R.views.lobby.techtree.VehicleTechTree</value>
-				</item>
-				<item>
-					<name>path</name>
-					<value>div[id=blueprint-switcher]</value>
-				</item>
-				<item>
-					<name>padding</name>
-					<type>dict</type>
-					<value>
-						<item>
-							<name>left</name>
-							<type>float</type>
-							<value>0</value>
-						</item>
-						<item>
-							<name>top</name>
-							<type>float</type>
-							<value>0</value>
-						</item>
-						<item>
-							<name>right</name>
-							<type>float</type>
-							<value>0</value>
-						</item>
-						<item>
-							<name>bottom</name>
-							<type>float</type>
-							<value>0</value>
-						</item>
-					</value>
-				</item>
-			</value>
-		</item>
-		<item>
 			<name>SoundButtonEx</name>
 			<type>dict</type>
 			<value>
@@ -4213,86 +4093,6 @@
 							<name>bottom</name>
 							<type>float</type>
 							<value>-4</value>
-						</item>
-					</value>
-				</item>
-			</value>
-		</item>
-		<item>
-			<name>BlueprintsResearchButton</name>
-			<type>dict</type>
-			<value>
-				<item>
-					<name>view</name>
-					<value>research</value>
-				</item>
-				<item>
-					<name>path</name>
-					<value>researchItems:ResearchItemNode.rootRenderer.blueprintBar</value>
-				</item>
-				<item>
-					<name>padding</name>
-					<type>dict</type>
-					<value>
-						<item>
-							<name>left</name>
-							<type>float</type>
-							<value>0</value>
-						</item>
-						<item>
-							<name>top</name>
-							<type>float</type>
-							<value>0</value>
-						</item>
-						<item>
-							<name>right</name>
-							<type>float</type>
-							<value>2</value>
-						</item>
-						<item>
-							<name>bottom</name>
-							<type>float</type>
-							<value>2</value>
-						</item>
-					</value>
-				</item>
-			</value>
-		</item>
-		<item>
-			<name>BlueprintsResearchConvertButton</name>
-			<type>dict</type>
-			<value>
-				<item>
-					<name>view</name>
-					<value>research</value>
-				</item>
-				<item>
-					<name>path</name>
-					<value>researchItems:ResearchItemNode.rootRenderer.blueprintBar.plus</value>
-				</item>
-				<item>
-					<name>padding</name>
-					<type>dict</type>
-					<value>
-						<item>
-							<name>left</name>
-							<type>float</type>
-							<value>-14</value>
-						</item>
-						<item>
-							<name>top</name>
-							<type>float</type>
-							<value>-14</value>
-						</item>
-						<item>
-							<name>right</name>
-							<type>float</type>
-							<value>-14</value>
-						</item>
-						<item>
-							<name>bottom</name>
-							<type>float</type>
-							<value>-14</value>
 						</item>
 					</value>
 				</item>
@@ -5029,46 +4829,6 @@
 				<item>
 					<name>path</name>
 					<value>div[id=switch-equipment-group-1]</value>
-				</item>
-				<item>
-					<name>padding</name>
-					<type>dict</type>
-					<value>
-						<item>
-							<name>left</name>
-							<type>float</type>
-							<value>0</value>
-						</item>
-						<item>
-							<name>top</name>
-							<type>float</type>
-							<value>0</value>
-						</item>
-						<item>
-							<name>right</name>
-							<type>float</type>
-							<value>0</value>
-						</item>
-						<item>
-							<name>bottom</name>
-							<type>float</type>
-							<value>0</value>
-						</item>
-					</value>
-				</item>
-			</value>
-		</item>
-		<item>
-			<name>AddEconomicDirectivesHintNew</name>
-			<type>dict</type>
-			<value>
-				<item>
-					<name>view</name>
-					<value>R.views.lobby.tanksetup.AmmunitionPanel</value>
-				</item>
-				<item>
-					<name>path</name>
-					<value>div[id=panel-battleBoosters-section]</value>
 				</item>
 				<item>
 					<name>padding</name>

@@ -1,54 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<forward>
-		<name>default</name>
-		<fn_effect_bin>particles/tank/customization/r253_object_277_s_3dst_01/r253_snow_turret.eff</fn_effect_bin>
-		<fn_effect_bin>particles/tank/customization/r253_object_277_s_3dst_01/r253_snow_hull.eff</fn_effect_bin>
-		<preloadTextures>
-			<path>
-				particles/content_forward/pfx_textures/eff_leaves.dds
-				<type>primary</type>
-			</path>
-			<path>
-				particles/content_forward/pfx_textures/eff_tex_snow_250_br_battle.dds
-				<type>primary</type>
-			</path>
-		</preloadTextures>
-		<fn_effect_bin>particles/content_forward/pfx/environment/hangar/leaves_falling.vfx</fn_effect_bin>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_tex.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_tex_hangar_v3.dds</texture>
+		</preload>
+		<fn_effect_bin>particles/environment/hangar/hangar_v3_leaves.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/01_karelia_leaves_02.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/hangar/hangar_v3_leaves.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/interior/01_karelia_leaves_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/null.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/pfx/tank/customization/r253_object_277_s_3dst_01/r253_snow_hull.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/pfx/tank/customization/r253_object_277_s_3dst_01/r253_snow_turret.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/environment/cameraeffects/leaves_wind.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/hangar/h08_mt_sweep_dust.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/hangar/leaves_falling.eff</fn_effect_bin>
-	</forward>
-	<deferred>
-		<name>default</name>
-		<fn_effect_bin>particles/tank/customization/r253_object_277_s_3dst_01/r253_snow_turret.eff</fn_effect_bin>
-		<fn_effect_bin>particles/tank/customization/r253_object_277_s_3dst_01/r253_snow_hull.eff</fn_effect_bin>
+		<preloadVisual>particles/mesh_particles/wood_board_03.visual</preloadVisual>
 		<preloadTextures>
 			<path>
-				particles/content_deferred/pfx_textures/eff_leaves.dds
+				particles/content_forward/pfx_textures/eff_tex_hangar_v3.dds
 				<type>primary</type>
 			</path>
 			<path>
-				particles/content_deferred/pfx_textures/blizzard.dds
-				<type>primary</type>
-			</path>
-			<path>
-				particles/content_deferred/pfx_textures/eff_tex_snow_250_br_battle.dds
+				particles/content_forward/pfx_textures/eff_tex_split_misc_2.dds
 				<type>primary</type>
 			</path>
 		</preloadTextures>
 		<preloadVisual>content/environment/env_null_model/null_model.visual</preloadVisual>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/cameraeffects/leaves_wind.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/cameraeffects/leaves_wind_s.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/hangar/h08_mt_sweep_dust.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/hangar/leaves_falling.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/tank/customization/r253_object_277_s_3dst_01/r253_snow_hull.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/tank/customization/r253_object_277_s_3dst_01/r253_snow_turret.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/environment/cameraeffects/leaves_wind.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/hangar/h08_mt_sweep_dust.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/hangar/leaves_falling.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/hangar/hangar_v3_leaves_s.vfx</fn_effect_bin>
+	</forward>
+	<deferred>
+		<name>default</name>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_tex.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_tex_hangar_v3.dds</texture>
+		</preload>
+		<fn_effect_bin>particles/environment/hangar/hangar_v3_leaves.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/01_karelia_leaves_02.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/01_karelia_leaves_02.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/hangar/hangar_v3_leaves.vfx</fn_effect_bin>
+		<preloadVisual>particles/mesh_particles/wood_board_03.visual</preloadVisual>
+		<preloadTextures>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_hangar_v3.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_split_misc_2.dds
+				<type>primary</type>
+			</path>
+		</preloadTextures>
+		<preloadVisual>content/environment/env_null_model/null_model.visual</preloadVisual>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/hangar/hangar_v3_leaves_s.vfx</fn_effect_bin>
 	</deferred>
 </root>

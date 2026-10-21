@@ -76,8 +76,6 @@ package net.wg.infrastructure.base.meta
       
       function as_setBattleContextHintsResetEnabled(param1:Boolean) : void;
       
-      function as_setTigerEvent(param1:Boolean) : void;
-      
       function as_setVOIPTestReady(param1:Boolean) : void;
       
       function as_setVOIPButtonState(param1:Boolean) : void;

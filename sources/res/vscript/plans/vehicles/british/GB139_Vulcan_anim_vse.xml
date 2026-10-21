@@ -1183,6 +1183,137 @@
 				<slots/>
 			</block>
 			<block>
+				<class>If</class>
+				<id>If_9</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_10</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>OnGameSettingsChanged</class>
+				<id>OnGameSettingsChanged_1</id>
+				<params/>
+				<slots>
+					<slot>
+						<name>active</name>
+						<const>\true\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>SetVariable</class>
+				<id>SetVariable_12</id>
+				<buddy>Variable_3</buddy>
+				<params>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>value</name>
+						<const>\false\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>ArrayVariableIterate</class>
+				<id>ArrayVariableIterate_3</id>
+				<buddy>Variable_19</buddy>
+				<params>
+					<param>
+						GameObjectArrayT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>forward</name>
+						<const>\true\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>FindInArray</class>
+				<id>FindInArray_1</id>
+				<params>
+					<param>
+						StringArrayT
+						<name>Array Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>start</name>
+						<const>\0\</const>
+					</slot>
+					<slot>
+						<name>value</name>
+						<const>\HAVOK_ENABLED\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>CompareIntegers</class>
+				<id>CompareIntegers_1</id>
+				<params/>
+				<slots>
+					<slot>
+						<name>b</name>
+						<const>\-1\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>CompareIntegers</class>
+				<id>CompareIntegers_2</id>
+				<params/>
+				<slots>
+					<slot>
+						<name>a</name>
+						<const>\1\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>ComponentMethod</class>
+				<id>ComponentMethod_1</id>
+				<params>
+					<param>
+						Animator.stop
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>GetGameSetting</class>
+				<id>GetGameSetting_1</id>
+				<params>
+					<param>
+						int
+						<name>Game Setting Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>settingName</name>
+						<const>\HAVOK_ENABLED\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
 				<class>ListenLocalEvent</class>
 				<id>ListenLocalEvent_1</id>
 				<params>
@@ -1547,6 +1678,18 @@
 				<slots/>
 			</block>
 			<block>
+				<class>Macro</class>
+				<id>Macro_10</id>
+				<params>
+					<param>
+						getVehicleVelocity
+						<name>Macro Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
 				<class>GetVariable</class>
 				<id>GetVariable_24</id>
 				<buddy>Variable_11</buddy>
@@ -1674,18 +1817,6 @@
 						GameObjectT
 						<name>Variable Type</name>
 						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>Macro</class>
-				<id>Macro_10</id>
-				<params>
-					<param>
-						getVehicleVelocity
-						<name>Macro Name</name>
-						<type>StringT</type>
 					</param>
 				</params>
 				<slots/>
@@ -1945,6 +2076,12 @@
 				<output>out</output>
 			</connection>
 			<connection>
+				<from>ArrayVariableIterate_3</from>
+				<input>input</input>
+				<to>ArrayVariableIterate_1</to>
+				<output>complete</output>
+			</connection>
+			<connection>
 				<from>Macro_5</from>
 				<input>in</input>
 				<to>ComponentMethod_8</to>
@@ -2197,6 +2334,72 @@
 				<output>value</output>
 			</connection>
 			<connection>
+				<from>OnGameSettingsChanged_1</from>
+				<input>input</input>
+				<to>If_9</to>
+				<output>onChanged</output>
+			</connection>
+			<connection>
+				<from>CompareIntegers_1</from>
+				<input>value</input>
+				<to>If_9</to>
+				<output>greater</output>
+			</connection>
+			<connection>
+				<from>If_9</from>
+				<input>input</input>
+				<to>If_10</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>CompareIntegers_2</from>
+				<input>value</input>
+				<to>If_10</to>
+				<output>equal</output>
+			</connection>
+			<connection>
+				<from>If_10</from>
+				<input>input</input>
+				<to>SetVariable_12</to>
+				<output>false</output>
+			</connection>
+			<connection>
+				<from>SetVariable_12</from>
+				<input>input</input>
+				<to>ArrayVariableIterate_3</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>OnGameSettingsChanged_1</from>
+				<input>array</input>
+				<to>FindInArray_1</to>
+				<output>settings</output>
+			</connection>
+			<connection>
+				<from>FindInArray_1</from>
+				<input>a</input>
+				<to>CompareIntegers_1</to>
+				<output>index</output>
+			</connection>
+			<connection>
+				<from>GetGameSetting_1</from>
+				<input>b</input>
+				<to>CompareIntegers_2</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>ArrayVariableIterate_3</from>
+				<input>in</input>
+				<to>ComponentMethod_1</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>ArrayVariableIterate_3</from>
+				<input>gameObject</input>
+				<to>ComponentMethod_1</to>
+				<output>value</output>
+			</connection>
+			<connection>
 				<from>Sequence_1</from>
 				<input>in</input>
 				<to>ComponentMethod_6</to>
@@ -2347,6 +2550,24 @@
 				<output>value</output>
 			</connection>
 			<connection>
+				<from>Delay_1</from>
+				<input>in</input>
+				<to>Macro_10</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>GetVariable_23</from>
+				<input>vehicle</input>
+				<to>Macro_10</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>GetVariable_24</from>
+				<input>appearance</input>
+				<to>Macro_10</to>
+				<output>value</output>
+			</connection>
+			<connection>
 				<from>ListenLocalEvent_2</from>
 				<input>input</input>
 				<to>Delay_1</to>
@@ -2387,24 +2608,6 @@
 				<input>externalVelocity</input>
 				<to>CreateComponent_4</to>
 				<output>res</output>
-			</connection>
-			<connection>
-				<from>Delay_1</from>
-				<input>in</input>
-				<to>Macro_10</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>GetVariable_23</from>
-				<input>vehicle</input>
-				<to>Macro_10</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>GetVariable_24</from>
-				<input>appearance</input>
-				<to>Macro_10</to>
-				<output>value</output>
 			</connection>
 		</connections>
 		<macros>
@@ -3276,6 +3479,23 @@
 				<name>setAnimatorLayers</name>
 				<blocks>
 					<block>
+						<class>MacroOutput</class>
+						<id>MacroOutput_1</id>
+						<params>
+							<param>
+								layer0
+								<name>Output Name</name>
+								<type>StringT</type>
+							</param>
+							<param>
+								EventT
+								<name>Output Type</name>
+								<type>TypeT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
 						<class>MacroInput</class>
 						<id>MacroInput_1</id>
 						<params>
@@ -3292,23 +3512,6 @@
 							<param>
 								<name>Input Editor</name>
 								<type>StringT</type>
-							</param>
-						</params>
-						<slots/>
-					</block>
-					<block>
-						<class>MacroOutput</class>
-						<id>MacroOutput_1</id>
-						<params>
-							<param>
-								layer0
-								<name>Output Name</name>
-								<type>StringT</type>
-							</param>
-							<param>
-								EventT
-								<name>Output Type</name>
-								<type>TypeT</type>
 							</param>
 						</params>
 						<slots/>

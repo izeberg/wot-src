@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s_nd0.vertices</vertices>
+			<primitive>s_nd0.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>111</materialKind>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<property>
+						diffuseMap
+						<Texture>content/Outland/hd_out_EU_0004_EiffelTower/hd_out_EU_0004_EiffelTower_AM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Outland/hd_out_EU_0004_EiffelTower/hd_out_EU_0004_EiffelTower_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Outland/hd_out_EU_0004_EiffelTower/hd_out_EU_0004_EiffelTower_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>27.136963 -5.798565 632.712341</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-1918.459351 -57.549862 -931.410767</min>
+		<max>1972.733276 45.952732 2200.619385</max>
+	</boundingBox>
+	<geometrySize>2591824</geometrySize>
+	<minUVDensity>0.000000</minUVDensity>
+</root>

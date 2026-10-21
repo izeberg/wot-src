@@ -4041,7 +4041,7 @@
 			<guns>
 				<_50mm_ZK_500_Un16>
 					shared
-					<maxAmmo>500</maxAmmo>
+					<maxAmmo>220</maxAmmo>
 					<unlocks>
 						<gun>
 							_57mm_R_10_Un16
@@ -4222,7 +4222,7 @@
 				</_50mm_ZK_500_Un16>
 				<_57mm_R_10_Un16>
 					shared
-					<maxAmmo>460</maxAmmo>
+					<maxAmmo>220</maxAmmo>
 					<unlocks>
 						<turret>
 							Turret_2_Un16_TDM_54
@@ -5144,7 +5144,7 @@
 			<guns>
 				<_50mm_ZK_500_Un16>
 					shared
-					<maxAmmo>540</maxAmmo>
+					<maxAmmo>240</maxAmmo>
 					<armor>
 						<armor_1>
 							220
@@ -5316,7 +5316,7 @@
 				</_50mm_ZK_500_Un16>
 				<_57mm_R_10_Un16>
 					shared
-					<maxAmmo>500</maxAmmo>
+					<maxAmmo>240</maxAmmo>
 					<armor>
 						<armor_1>
 							220

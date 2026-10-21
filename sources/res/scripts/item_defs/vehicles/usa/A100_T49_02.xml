@@ -3556,7 +3556,7 @@
 					<!--BW_String-->
 				</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>420</circularVisionRadius>
+			<circularVisionRadius>410</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>110</maxHealth>
 				<maxRegenHealth>55</maxRegenHealth>
@@ -3572,7 +3572,7 @@
 			<guns>
 				<_76mm_Gun_M32_A100_02>
 					shared
-					<maxAmmo>66</maxAmmo>
+					<maxAmmo>70</maxAmmo>
 					<armor>
 						<armor_1>
 							50.8
@@ -3596,16 +3596,16 @@
 						<gun>20</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.34
+						0.38
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>19</reloadTime>
+					<reloadTime>33</reloadTime>
 					<aimingTime>
 						1.8
 						<!--BW_String-->
 					</aimingTime>
 					<clip>
-						<count>6</count>
+						<count>10</count>
 						<rate>60</rate>
 					</clip>
 					<invisibilityFactorAtShot>
@@ -3626,7 +3626,7 @@
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
-							4.0
+							3.5
 							<!--BW_String-->
 						</afterShot>
 						<whileGunDamaged>
@@ -3635,13 +3635,13 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<models>
-						<undamaged>vehicles/american/A100_T49/normal/lod0/Gun_03.model</undamaged>
-						<destroyed>vehicles/american/A100_T49/crash/lod0/Gun_03.model</destroyed>
-						<exploded>vehicles/american/A100_T49/crash/lod0/Gun_03.model</exploded>
+						<undamaged>vehicles/american/A100_T49/normal/lod0/Gun_04.model</undamaged>
+						<destroyed>vehicles/american/A100_T49/crash/lod0/Gun_04.model</destroyed>
+						<exploded>vehicles/american/A100_T49/crash/lod0/Gun_04.model</exploded>
 					</models>
 					<hitTester>
-						<collisionModelServer>vehicles/american/A100_T49/collision/Gun_03.model</collisionModelServer>
-						<collisionModelClient>vehicles/american/A100_T49/collision_client/Gun_03.model</collisionModelClient>
+						<collisionModelServer>vehicles/american/A100_T49/collision/Gun_04.model</collisionModelServer>
+						<collisionModelClient>vehicles/american/A100_T49/collision_client/Gun_04.model</collisionModelClient>
 					</hitTester>
 					<effects>shot_medium_mb</effects>
 					<reloadEffect>reload_automat_reloading_50_75</reloadEffect>
@@ -3726,6 +3726,7 @@
 							<camouflage>GUN</camouflage>
 						</customizableVehicleAreas>
 					</customization>
+					<edgeByVisualModel>false</edgeByVisualModel>
 					<camouflage>
 						<density>
 							96.5083 99.982

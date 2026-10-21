@@ -10,8 +10,8 @@
 	<postProgressionTree>role_MT_support</postProgressionTree>
 	<customRoleSlotOptions>3 5</customRoleSlotOptions>
 	<speedLimits>
-		<forward>48</forward>
-		<backward>18</backward>
+		<forward>46</forward>
+		<backward>15</backward>
 	</speedLimits>
 	<invisibility>
 		<moving>
@@ -2033,7 +2033,7 @@
 						0.38
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>28</reloadTime>
+					<reloadTime>30</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
 							0.12
@@ -3528,7 +3528,7 @@
 			<engines>
 				<AOS_1195_6>
 					<smplEnginePower>700</smplEnginePower>
-					<smplFwMaxSpeed>48</smplFwMaxSpeed>
+					<smplFwMaxSpeed>46</smplFwMaxSpeed>
 				</AOS_1195_6>
 			</engines>
 			<chassis>

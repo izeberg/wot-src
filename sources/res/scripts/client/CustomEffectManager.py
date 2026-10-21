@@ -247,7 +247,7 @@ def getCorrectedMatKinds(vehicleAppearance):
     correctedMatKinds = vehicleAppearance.terrainMatKind
     if vehicleAppearance.isInWater:
         correctedMatKinds = [
-         material_kinds.getWaterMatKind()] * len(correctedMatKinds)
+         vehicleAppearance.waterMatKind] * len(correctedMatKinds)
     return correctedMatKinds
 
 

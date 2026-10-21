@@ -62,7 +62,6 @@ class BattleGameInputMgr(object):
 
     def handleKey(self, isDown, key, mods):
         isEventBattle = self.guiSessionProvider.arenaVisitor.gui.isEventBattle()
-        isWtBattle = self.guiSessionProvider.arenaVisitor.gui.isWhiteTigerBattle()
         if key == Keys.KEY_ESCAPE:
             if self.__keyHandlers:
                 for handler in self.__keyHandlers[:]:
@@ -70,7 +69,7 @@ class BattleGameInputMgr(object):
                         return True
 
             if isDown and self.__ctrlModeName != CTRL_MODE_NAME.MAP_CASE:
-                if isEventBattle or isWtBattle:
+                if isEventBattle:
                     event_dispatcher.toggleEventStats(False)
                 else:
                     event_dispatcher.toggleFullStats(False)
@@ -83,7 +82,7 @@ class BattleGameInputMgr(object):
                 avatar_getter.setForcedGuiControlMode(isDown, enableAiming=False)
             return True
         if key == Keys.KEY_TAB and (mods != Keys.MODIFIER_CTRL or not isDown):
-            if isEventBattle or isWtBattle:
+            if isEventBattle:
                 event_dispatcher.toggleEventStats(isDown)
             else:
                 event_dispatcher.hideBattleVehicleConfigurator()

@@ -2,4 +2,8 @@
 <root>
 	<nodefullVisual>vehicles/russian/R100_SU122A/normal/lod4/Chassis</nodefullVisual>
 	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.343291 0.017360 -2.426473</min>
+		<max>1.343291 0.898946 2.453902</max>
+	</visibilityBox>
 </root>

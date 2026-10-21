@@ -63,7 +63,11 @@
 				<type>primary</type>
 			</path>
 			<path>
-				particles/content_forward/pfx_textures/eff_tex_split_smoke_7.dds
+				particles/content_forward/pfx_textures/eff_tex_long.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_split_smoke_6.dds
 				<type>primary</type>
 			</path>
 			<path>
@@ -71,11 +75,7 @@
 				<type>primary</type>
 			</path>
 			<path>
-				particles/content_forward/pfx_textures/eff_tex_long.dds
-				<type>primary</type>
-			</path>
-			<path>
-				particles/content_forward/pfx_textures/eff_tex_split_smoke_6.dds
+				particles/content_forward/pfx_textures/eff_tex_split_smoke_7.dds
 				<type>primary</type>
 			</path>
 			<path>
@@ -404,10 +404,6 @@
 				<type>primary</type>
 			</path>
 			<path>
-				particles/content_deferred/pfx_textures/eff_tex_split_fire_4.dds
-				<type>primary</type>
-			</path>
-			<path>
 				particles/content_deferred/pfx_textures/eff_tex_long.dds
 				<type>primary</type>
 			</path>
@@ -417,6 +413,10 @@
 			</path>
 			<path>
 				particles/content_deferred/pfx_textures/eff_tex_split_smoke_7.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_split_fire_4.dds
 				<type>primary</type>
 			</path>
 			<path>

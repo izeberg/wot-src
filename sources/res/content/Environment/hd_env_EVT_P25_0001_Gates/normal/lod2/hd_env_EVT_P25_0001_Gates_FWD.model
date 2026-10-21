@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/Environment/hd_env_EVT_P25_0001_Gates/normal/lod3/hd_env_EVT_P25_0001_Gates_FWD</parent>
+	<extent>400.000000</extent>
+	<visibilityBox>
+		<min>-90.833359 -13.341577 -14.711158</min>
+		<max>68.922218 117.524460 14.539033</max>
+	</visibilityBox>
+	<nodelessVisual>content/Environment/hd_env_EVT_P25_0001_Gates/normal/lod2/hd_env_EVT_P25_0001_Gates_FWD</nodelessVisual>
+</root>

@@ -20,8 +20,8 @@
 		<sunScaleForward>1.500000</sunScaleForward>
 		<sunColorForward>250.000000 169.000000 87.000000</sunColorForward>
 		<sunTextureForward>system/maps/PSF2_ldr.dds</sunTextureForward>
-		<sunLightColorForward>0.670588 0.525490 0.427451</sunLightColorForward>
-		<ambientColorForward>0.929412 0.898039 0.882353</ambientColorForward>
+		<sunLightColorForward>0.870588 0.666667 0.533333</sunLightColorForward>
+		<ambientColorForward>1.000000 0.968627 0.949020</ambientColorForward>
 		<starttime>10.000000</starttime>
 	</day_night_cycle>
 	<Fog>
@@ -167,7 +167,7 @@
 		</influences>
 	</SSAO>
 	<Shadow>
-		<maxShadowsSplitCount>5</maxShadowsSplitCount>
+		<maxShadowsSplitCount>4</maxShadowsSplitCount>
 		<maxDynamicViewDistance>100.000000</maxDynamicViewDistance>
 		<lightSize>100.000000</lightSize>
 		<dynamicShadowsLightSize>13.000000</dynamicShadowsLightSize>

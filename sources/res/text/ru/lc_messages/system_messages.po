@@ -2577,6 +2577,9 @@ msgstr ""
 "%(colorTagOpen)s%(rank)s %(fullName)s\n"
 "(%(role)s, %(vehicleName)s, %(roleLevel)d%%)%(colorTagClose)s"
 
+msgid "offers/offer_unavailable"
+msgstr "Предложение более недоступно."
+
 msgid "offers/server_error/COOLDOWN"
 msgstr "Ошибка получения подарка: дождитесь завершения предыдущей операции."
 
@@ -2986,6 +2989,9 @@ msgstr "Смена режима наблюдателя"
 
 msgid "prebattle/request/name/CLOSE_SLOT"
 msgstr "Блокировка слота"
+
+msgid "prebattle/request/name/PORTAL_SET_BATTLE_LEVEL"
+msgstr "Смена уровня сложности"
 
 msgid "prebattle/request/name/PREBATTLES_LIST"
 msgstr "Поиск"

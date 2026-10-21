@@ -86,6 +86,7 @@ class CommonTankAppearance(ScriptGameObject):
     isInWater = property(lambda self: self.waterSensor.isInWater)
     isUnderwater = property(lambda self: self.waterSensor.isUnderWater)
     waterHeight = property(lambda self: self.waterSensor.waterHeight)
+    waterMatKind = property(lambda self: self.waterSensor.waterMatKind)
     damageState = property(lambda self: self.__currentDamageState)
     modelsSetParams = property(lambda self: ModelsSetParams(self.outfit.modelsSet, self.damageState.modelState, self.__attachments))
     splineTracks = property(lambda self: self._splineTracks)
@@ -325,6 +326,7 @@ class CommonTankAppearance(ScriptGameObject):
         if self.engineAudition is not None:
             self.engineAudition.setIsUnderwaterInfo(DataLinks.createBoolLink(self.waterSensor, 'isUnderWater'))
             self.engineAudition.setIsInWaterInfo(DataLinks.createBoolLink(self.waterSensor, 'isInWater'))
+            self.engineAudition.setWaterMatKindInfo(DataLinks.createUIntLink(self.waterSensor, 'waterMatKind'))
         self.__postSetupFilter()
         compoundModel.setPartBoundingBoxAttachNode(TankPartIndexes.GUN, TankNodeNames.GUN_INCLINATION)
         self.prefabsResourceRefs = {}
@@ -523,10 +525,10 @@ class CommonTankAppearance(ScriptGameObject):
             height = max(hullTopY, max(turretTopY, gunTopY))
         return (height, gunLength)
 
-    def onWaterSplash(self, waterHitPoint, isHeavySplash):
+    def onWaterSplash(self, waterHitPoint, isHeavySplash, waterMatKind):
         pass
 
-    def onUnderWaterSwitch(self, isUnderWater):
+    def onUnderWaterSwitch(self, isUnderWater, waterMatKind):
         pass
 
     def getWheelsSteeringMax(self):
@@ -640,14 +642,11 @@ class CommonTankAppearance(ScriptGameObject):
             self.__periodicTimerID = None
         self.__modelAnimators = []
         self.filter.enableLagDetection(False)
-        self.clearUndamagedStateChildren()
-        return
-
-    def clearUndamagedStateChildren(self):
         for go in self.undamagedStateChildren:
             CGF.removeGameObject(go)
 
         self.undamagedStateChildren = []
+        return
 
     def _onRequestModelsRefresh(self):
         self.flagComponent = None

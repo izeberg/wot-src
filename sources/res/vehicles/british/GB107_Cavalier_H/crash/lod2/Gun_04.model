@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/british/GB107_Cavalier_H/crash/lod3/Gun_04</parent>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+	<nodelessVisual>vehicles/british/GB107_Cavalier_H/crash/lod2/Gun_04</nodelessVisual>
+	<visibilityBox>
+		<min>-0.684034 -0.246027 -1.499953</min>
+		<max>0.728107 0.272351 3.812345</max>
+	</visibilityBox>
+</root>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/intunion/Un20_M_767_Vepar/crash/lod3/Turret_01</nodefullVisual>
+	<parent>vehicles/intunion/Un20_M_767_Vepar/crash/lod4/Turret_01</parent>
+	<tank>true</tank>
+	<extent>
+		192.0
+		<!--BW_String-->
+	</extent>
+	<visibilityBox>
+		<min>-1.436197 -0.000001 -2.344826</min>
+		<max>1.436858 1.485962 1.607881</max>
+	</visibilityBox>
+</root>

@@ -79,10 +79,7 @@
 					<materialKind>0</materialKind>
 					<property>
 						g_detailUVTiling
-						<Vector4>
-							3.50685 3.50685 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>3.506850 3.506850 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_detailPowerGloss
@@ -107,10 +104,6 @@
 						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
 					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
-					</property>
-					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/german/G22_Sturmpanzer_II/Sturmpanzer_II_chassis_01_AO.dds</Texture>
 					</property>
@@ -129,10 +122,6 @@
 					<property>
 						diffuseMap
 						<Texture>vehicles/german/G22_Sturmpanzer_II/Sturmpanzer_II_chassis_01_AM.dds</Texture>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
 					</property>
 				</material>
 				<groupOrigin>-1.042568 0.538108 0.001485</groupOrigin>
@@ -155,10 +144,7 @@
 					<materialKind>0</materialKind>
 					<property>
 						g_detailUVTiling
-						<Vector4>
-							3.50685 3.50685 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>3.506850 3.506850 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_detailPowerGloss
@@ -183,10 +169,6 @@
 						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
 					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
-					</property>
-					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/german/G22_Sturmpanzer_II/Sturmpanzer_II_chassis_01_AO.dds</Texture>
 					</property>
@@ -206,10 +188,6 @@
 						diffuseMap
 						<Texture>vehicles/german/G22_Sturmpanzer_II/Sturmpanzer_II_chassis_01_AM.dds</Texture>
 					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
 				</material>
 				<groupOrigin>1.068426 0.538108 0.001485</groupOrigin>
 			</primitiveGroup>
@@ -220,6 +198,6 @@
 		<min>-1.218610 0.015652 -2.674356</min>
 		<max>1.247675 1.060565 2.671387</max>
 	</boundingBox>
-	<geometrySize>7152</geometrySize>
+	<geometrySize>6752</geometrySize>
 	<minUVDensity>0.000689</minUVDensity>
 </root>

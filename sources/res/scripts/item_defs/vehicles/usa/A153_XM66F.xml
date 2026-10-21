@@ -105,7 +105,7 @@
 			<armor_12>80</armor_12>
 			<armor_13>40</armor_13>
 			<armor_14>30</armor_14>
-			<armor_15>250</armor_15>
+			<armor_15>280</armor_15>
 			<armor_16>240</armor_16>
 			<armor_17>230</armor_17>
 			<armor_18>200</armor_18>
@@ -3228,7 +3228,7 @@
 			<circularVisionRadius>380</circularVisionRadius>
 			<armor>
 				<armor_1>240</armor_1>
-				<armor_2>60</armor_2>
+				<armor_2>65</armor_2>
 				<armor_3>120</armor_3>
 				<armor_4>40</armor_4>
 				<armor_5>30</armor_5>
@@ -3242,12 +3242,12 @@
 				<armor_13>230</armor_13>
 				<armor_14>120</armor_14>
 				<armor_15>70</armor_15>
-				<armor_16>290</armor_16>
-				<armor_17>230</armor_17>
+				<armor_16>300</armor_16>
+				<armor_17>240</armor_17>
 				<armor_18>165</armor_18>
 				<armor_19>300</armor_19>
-				<armor_20>245</armor_20>
-				<armor_21>210</armor_21>
+				<armor_20>255</armor_20>
+				<armor_21>220</armor_21>
 				<armor_22>170</armor_22>
 				<armor_23>55</armor_23>
 				<armor_24>160</armor_24>
@@ -3297,7 +3297,7 @@
 							<!--BW_String-->
 						</minPitch>
 						<maxPitch>
-							0.0 10.0 1.0 10.0
+							0.0 9.0 1.0 9.0
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
@@ -3305,10 +3305,10 @@
 						0.18
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
-					<turretYawLimits>-30 30</turretYawLimits>
+					<turretYawLimits>-60 60</turretYawLimits>
 					<armor>
 						<armor_1>
-							270
+							310
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_1>
 						<armor_2>

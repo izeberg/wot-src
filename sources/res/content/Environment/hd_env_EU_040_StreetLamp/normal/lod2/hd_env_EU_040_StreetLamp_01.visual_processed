@@ -45,10 +45,6 @@
 						<Int>128</Int>
 					</property>
 					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
 						alphaTestEnable
 						<Bool>true</Bool>
 					</property>

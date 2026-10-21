@@ -2352,7 +2352,7 @@
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						11.4
+						10.5
 						<!--BW_String-->
 					</reloadTime>
 					<shotDispersionFactors>
@@ -2370,7 +2370,7 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						2.3
+						2.6
 						<!--BW_String-->
 					</aimingTime>
 					<customizationSlots>
@@ -3180,19 +3180,6 @@
 			<isEngine>true</isEngine>
 		</soundStateChange>
 	</siege_mode>
-	<hull_aiming>
-		<pitch>
-			<isEnabled>True</isEnabled>
-			<isFlexible>True</isFlexible>
-			<wheelCorrectionCenterZ>0</wheelCorrectionCenterZ>
-			<wheelsCorrectionSpeed>10</wheelsCorrectionSpeed>
-			<wheelsCorrectionAngles>
-				<pitchMin>-3</pitchMin>
-				<pitchMax>3</pitchMax>
-			</wheelsCorrectionAngles>
-		</pitch>
-		<yawDisabled/>
-	</hull_aiming>
 	<isRotationStill>True</isRotationStill>
 	<useHullZSize>True</useHullZSize>
 	<effects>

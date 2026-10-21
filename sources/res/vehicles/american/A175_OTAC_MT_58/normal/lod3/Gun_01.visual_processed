@@ -65,6 +65,7 @@
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>G_BlendBone</node>
 		<node>Gun_BlendBone</node>
 		<geometry>
 			<vertices>gun_01Shape.vertices</vertices>
@@ -76,7 +77,6 @@
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
 					<materialKind>0</materialKind>
 					<collisionFlags>0</collisionFlags>
-					<sortOrder>0</sortOrder>
 					<property>
 						colorIdMap
 						<Texture>vehicles/american/A175_OTAC_MT_58/OTAC_MT_58_guns_01_ID.dds</Texture>
@@ -115,6 +115,6 @@
 		<min>-0.564580 -0.329502 -0.015249</min>
 		<max>0.564683 0.340634 2.105403</max>
 	</boundingBox>
-	<geometrySize>12806</geometrySize>
+	<geometrySize>14300</geometrySize>
 	<minUVDensity>0.020573</minUVDensity>
 </root>

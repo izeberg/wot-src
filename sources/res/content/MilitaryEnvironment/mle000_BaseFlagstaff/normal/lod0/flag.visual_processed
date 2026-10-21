@@ -23,6 +23,14 @@
 					<materialKind>108</materialKind>
 					<fx>shaders/controlPoint/controlPointFlag_VAT.fx</fx>
 					<property>
+						alphaReference
+						<Int>127</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
 						diffuseMap
 						<Texture>content/MilitaryEnvironment/mle000_BaseFlagstaff/flag_AM.dds</Texture>
 					</property>
@@ -40,11 +48,7 @@
 					</property>
 					<property>
 						g_AnimationDuration
-						<Float>0.000000</Float>
-					</property>
-					<property>
-						g_AnimationTime
-						<Float>0.000000</Float>
+						<Float>30.799999</Float>
 					</property>
 					<property>
 						g_enableTransmission
@@ -52,11 +56,23 @@
 					</property>
 					<property>
 						g_posTexture
-						<Texture>content/MilitaryEnvironment/mle000_BaseFlagstaff/Flag_00_POS_VAT.dds</Texture>
+						<Texture>content/MilitaryEnvironment/mle000_BaseFlagstaff/Flag_00_16f4_POS_VAT.dds</Texture>
 					</property>
 					<property>
 						g_rotTexture
-						<Texture>content/MilitaryEnvironment/mle000_BaseFlagstaff/Flag_00_ROT_VAT.dds</Texture>
+						<Texture>content/MilitaryEnvironment/mle000_BaseFlagstaff/Flag_00_R32f_ROT_VAT.dds</Texture>
+					</property>
+					<property>
+						g_sequence_0
+						<Vector3>1.000000 441.000000 0.000000</Vector3>
+					</property>
+					<property>
+						g_sequence_1
+						<Vector3>442.000000 803.000000 0.000000</Vector3>
+					</property>
+					<property>
+						g_sequence_2
+						<Vector3>804.000000 924.000000 0.000000</Vector3>
 					</property>
 					<property>
 						g_timeMode
@@ -78,28 +94,8 @@
 						normalMap2
 						<Texture>content/MilitaryEnvironment/mle000_BaseFlagstaff/flag_ANM.dds</Texture>
 					</property>
-					<property>
-						alphaReference
-						<Int>127</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
-						g_sequence_0
-						<Vector3>321.000000 761.000000 0.000000</Vector3>
-					</property>
-					<property>
-						g_sequence_1
-						<Vector3>0.000000 320.000000 0.000000</Vector3>
-					</property>
-					<property>
-						g_sequence_2
-						<Vector3>762.000000 1097.000000 0.000000</Vector3>
-					</property>
 				</material>
-				<groupOrigin>0.814339 0.542892 0.000000</groupOrigin>
+				<groupOrigin>0.610755 0.407170 0.012500</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -108,5 +104,5 @@
 		<max>1.660000 1.100000 1.260000</max>
 	</boundingBox>
 	<geometrySize>35680</geometrySize>
-	<minUVDensity>0.424111</minUVDensity>
+	<minUVDensity>0.601442</minUVDensity>
 </root>

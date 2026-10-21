@@ -22,7 +22,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 0.000000 -1.000000</row1>
 					<row2>0.000000 1.000000 0.000000</row2>
-					<row3>0.000000 4.000000 0.000000</row3>
+					<row3>0.000000 3.525239 0.000000</row3>
 				</transform>
 			</node>
 			<node>
@@ -69,6 +69,7 @@
 		<node>V_BlendBone</node>
 		<geometry>
 			<vertices>track_L_Shape.vertices</vertices>
+			<stream>track_L_Shape.uv2</stream>
 			<primitive>track_L_Shape.indices</primitive>
 			<primitiveGroup>
 				0
@@ -76,7 +77,7 @@
 					<fx>shaders/std_effects/PBS_tank_skinned_ao.fx</fx>
 					<materialKind>0</materialKind>
 					<identifier>track_mat_L_skinned</identifier>
-					<collisionFlags>255</collisionFlags>
+					<collisionFlags>0</collisionFlags>
 					<property>
 						diffuseMap
 						<Texture>vehicles/intunion/tracks/Vz_68_2_Britva_track_AM.dds</Texture>
@@ -109,7 +110,7 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>3.507000 0.876750 0.000000 0.000000</Vector4>
+						<Vector4>3.507000 0.860000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						normalMap
@@ -145,6 +146,7 @@
 		<node>V_BlendBone</node>
 		<geometry>
 			<vertices>track_R_Shape.vertices</vertices>
+			<stream>track_R_Shape.uv2</stream>
 			<primitive>track_R_Shape.indices</primitive>
 			<primitiveGroup>
 				0
@@ -152,7 +154,7 @@
 					<fx>shaders/std_effects/PBS_tank_skinned_ao.fx</fx>
 					<materialKind>0</materialKind>
 					<identifier>track_mat_R_skinned</identifier>
-					<collisionFlags>255</collisionFlags>
+					<collisionFlags>0</collisionFlags>
 					<property>
 						diffuseMap
 						<Texture>vehicles/intunion/tracks/Vz_68_2_Britva_track_AM.dds</Texture>
@@ -185,7 +187,7 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>3.507000 0.876750 0.000000 0.000000</Vector4>
+						<Vector4>3.507000 0.860000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						normalMap
@@ -220,6 +222,6 @@
 		<min>-1.627143 -0.000971 -3.152371</min>
 		<max>1.595958 1.070142 3.306988</max>
 	</boundingBox>
-	<geometrySize>108236</geometrySize>
+	<geometrySize>127212</geometrySize>
 	<minUVDensity>0.364082</minUVDensity>
 </root>

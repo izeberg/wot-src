@@ -1423,6 +1423,8 @@ package
       
       public static const PREBATTLE_REQUEST_NAME_CHANGE_FUN_SUB_MODE:String = "#system_messages:prebattle/request/name/CHANGE_FUN_SUB_MODE";
       
+      public static const PREBATTLE_REQUEST_NAME_PORTAL_SET_BATTLE_LEVEL:String = "#system_messages:prebattle/request/name/PORTAL_SET_BATTLE_LEVEL";
+      
       public static const FORTIFICATION_REQUEST_NAME_CREATE_FORT:String = "#system_messages:fortification/request/name/CREATE_FORT";
       
       public static const FORTIFICATION_REQUEST_NAME_DELETE_FORT:String = "#system_messages:fortification/request/name/DELETE_FORT";
@@ -2612,6 +2614,8 @@ package
       public static const OFFERS_UNAVAILABLE_ONE:String = "#system_messages:offers/unavailable_one";
       
       public static const OFFERS_UNAVAILABLE_MANY:String = "#system_messages:offers/unavailable_many";
+      
+      public static const OFFERS_OFFER_UNAVAILABLE:String = "#system_messages:offers/offer_unavailable";
       
       public static const OFFERS_SERVER_ERROR_COOLDOWN:String = "#system_messages:offers/server_error/COOLDOWN";
       

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/german/G00_Mausekonig_V01/normal/lod2/Turret_01</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<nodefullVisual>vehicles/german/G00_Mausekonig_V01/normal/lod1/Turret_01</nodefullVisual>
+	<visibilityBox>
+		<min>-1.698745 -0.051641 -3.778610</min>
+		<max>1.698745 1.897323 2.152099</max>
+	</visibilityBox>
+</root>

@@ -1,0 +1,2909 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<version>3</version>
+	<GameObjects>
+		<GameObject>
+			<name>sound</name>
+			<UUID>bfe5d33a-34a5-48f2-a440-9a8a560f9099</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>lava_lake</name>
+			<UUID>9e6b3230-9f42-429d-9cfa-467f30efe9cd</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>city_zone_metal_wood_01</name>
+			<UUID>f43a932f-9b94-4ebc-ba0c-b8fe68fe3fa6</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>city_zone_wood_01</name>
+			<UUID>a7d39ef2-30c8-42f8-9083-bd69c26735a5</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>arena_zone</name>
+			<UUID>3f99c597-06cd-3b4b-8a92-6f4e51894610</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>city_zone_metal_01</name>
+			<UUID>6ff47ed2-0ffb-4d04-9255-10ad0073e780</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>city_zone_wood_02</name>
+			<UUID>e4ad56b8-7663-410a-ab7b-4e8d0833c530</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>city_zone_metal_wood_02</name>
+			<UUID>398ee3b1-e47a-4480-bdf2-f5ec21ef2d7c</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>city_zone_wood_03</name>
+			<UUID>8b9e3d3d-841d-449a-bb04-6032059d3dd5</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>city_zone_metal_02</name>
+			<UUID>5dc973dd-770d-4558-99fd-f2fc6003954d</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>rocks_zone_01</name>
+			<UUID>52df3694-3fc4-4571-84fb-52b946f8acc3</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>rocks_zone_02</name>
+			<UUID>05cbee0c-5ef1-4bc6-b063-eb8a9e61543a</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>rocks_zone_03</name>
+			<UUID>24ed5528-d7b6-4087-852d-2e6f09f16e3b</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>lava_zone_01</name>
+			<UUID>29e90afa-1797-4108-bd23-5d15da0c013e</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>lava_zone_02</name>
+			<UUID>7b73565f-3317-4640-bc07-04893a3f8b92</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>lava_zone_03</name>
+			<UUID>eaedf587-dc82-4c3d-a858-ad1612f21b5e</UUID>
+			<flags>0</flags>
+		</GameObject>
+	</GameObjects>
+	<components>
+		<ComponentPool>
+			<type>Hierarchy</type>
+			<version>2</version>
+			<component>
+				<objectIndex>1</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>bfe5d33a-34a5-48f2-a440-9a8a560f9099</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>2</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>bfe5d33a-34a5-48f2-a440-9a8a560f9099</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>3</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>bfe5d33a-34a5-48f2-a440-9a8a560f9099</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>4</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>bfe5d33a-34a5-48f2-a440-9a8a560f9099</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>5</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>bfe5d33a-34a5-48f2-a440-9a8a560f9099</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>6</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>bfe5d33a-34a5-48f2-a440-9a8a560f9099</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>7</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>bfe5d33a-34a5-48f2-a440-9a8a560f9099</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>8</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>bfe5d33a-34a5-48f2-a440-9a8a560f9099</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>9</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>bfe5d33a-34a5-48f2-a440-9a8a560f9099</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>10</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>bfe5d33a-34a5-48f2-a440-9a8a560f9099</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>11</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>bfe5d33a-34a5-48f2-a440-9a8a560f9099</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>12</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>bfe5d33a-34a5-48f2-a440-9a8a560f9099</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>13</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>bfe5d33a-34a5-48f2-a440-9a8a560f9099</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>14</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>bfe5d33a-34a5-48f2-a440-9a8a560f9099</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>15</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>bfe5d33a-34a5-48f2-a440-9a8a560f9099</link>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>Transform</type>
+			<version>1</version>
+			<component>
+				<objectIndex>0</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>1</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							2.24652 -16.4895 358.757
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>2</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							1139.19 10 494.053
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>3</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							1815.64 24.6967 781.655
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>4</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							0 0 1959.74
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>5</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							1452.52 38.7138 1721.84
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>6</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							263.688 4.8132 393.708
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>7</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							8.45398 38.1108 1026.5
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>8</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							719.3 41.933 1319.54
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>9</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							976.186 10 2021.21
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							-0 3.13258 0
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>10</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							1183.41 -5.32916 139.389
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>11</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							554.979 1.6518 361.526
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>12</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							-21.4952 10.321 1162.48
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>13</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							1761.76 26.7481 256.797
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>14</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							1714.34 26.7481 187.314
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>15</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							1640.76 26.7481 228.957
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>PrismArea</type>
+			<version>1</version>
+			<component>
+				<objectIndex>1</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Curvature</name>
+						<value>45</value>
+					</property>
+					<property>
+						<name>Tesselation Step</name>
+						<value>
+							0.5
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Height</name>
+						<value>38</value>
+					</property>
+					<property>
+						<name>pointsHint</name>
+						<value>Ctrl + Left click to create new point
+Middle click to remove point</value>
+					</property>
+					<property>
+						<name>Points</name>
+						<collection>
+							<item>
+								<value>0 0</value>
+							</item>
+							<item>
+								<value>
+									1.61346 8.60425
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									53.7026 41.4378
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									115.426 33.2544
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									133.648 7.5788
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									180.975 -32.2408
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									200.736 -54.124
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									239.089 -65.192
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									295.18 -89.8582
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									348.94 -134.455
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									370.708 -146.671
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									398.976 -151.592
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									485.302 -124.703
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									539.962 -122.469
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									584.934 -111.945
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									615.943 -99.585
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									664.83 -102.336
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									758.556 -129.417
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									807.861 -148.48
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									863.342 -181.602
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									966.192 -169.376
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									1007.19 -169.997
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									1075.76 -187.317
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									1119.42 -236.483
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									1125.36 -273.305
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									1116.8 -302.324
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									1103.51 -325.192
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									910.474 -203.806
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									709.82 -130.912
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									470.101 -153.236
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									431.653 -172.28
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									385.553 -195.734
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									284.013 -150.093
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									171.711 -60.1229
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									81.7639 -5.83032
+									<!--BW_String-->
+								</value>
+							</item>
+						</collection>
+					</property>
+					<property>
+						<name>Douglas-Peucker Epsilon</name>
+						<value>
+							0.2
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>2</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Curvature</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Tesselation Step</name>
+						<value>20</value>
+					</property>
+					<property>
+						<name>Height</name>
+						<value>200</value>
+					</property>
+					<property>
+						<name>pointsHint</name>
+						<value>Ctrl + Left click to create new point
+Middle click to remove point</value>
+					</property>
+					<property>
+						<name>Points</name>
+						<collection>
+							<item>
+								<value>0 0</value>
+							</item>
+							<item>
+								<value>
+									-47.0443 97.6606
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									-78.3645 144.719
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									-84.4035 198.19
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									-54.9943 219.114
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									-18.8206 232.688
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									38.7262 256.601
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									46.7047 271.638
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									69.1588 285.142
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									98.0658 251.242
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									174.101 294.263
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									191.257 262.628
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									228.42 287.607
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									263.905 298.71
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									276.197 288.221
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									290.17 274.127
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									297.217 263.327
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									290.206 244.858
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									314.546 198.544
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									315.175 195.641
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									295.465 180.178
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									239.369 144.656
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									271.34 90.2795
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									214.158 55.424
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									175.9 106.838
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									187.961 122.083
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									146.675 196.856
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									108.269 203.12
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									10.5753 153.362
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									63.0835 61.7667
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									74.5928 44.5378
+									<!--BW_String-->
+								</value>
+							</item>
+						</collection>
+					</property>
+					<property>
+						<name>Douglas-Peucker Epsilon</name>
+						<value>
+							0.2
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>3</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Curvature</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Tesselation Step</name>
+						<value>20</value>
+					</property>
+					<property>
+						<name>Height</name>
+						<value>200</value>
+					</property>
+					<property>
+						<name>pointsHint</name>
+						<value>Ctrl + Left click to create new point
+Middle click to remove point</value>
+					</property>
+					<property>
+						<name>Points</name>
+						<collection>
+							<item>
+								<value>0 0</value>
+							</item>
+							<item>
+								<value>
+									7.22296 22.2833
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									-9.33582 68.0802
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									26.3725 99.1906
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									53.8322 95.5381
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									83.7108 65.796
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									93.1598 52.8425
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									96.91 10.3412
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									84.4758 -11.8118
+									<!--BW_String-->
+								</value>
+							</item>
+						</collection>
+					</property>
+					<property>
+						<name>Douglas-Peucker Epsilon</name>
+						<value>
+							0.2
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>4</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Curvature</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Tesselation Step</name>
+						<value>
+							19.5
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Height</name>
+						<value>200</value>
+					</property>
+					<property>
+						<name>pointsHint</name>
+						<value>Ctrl + Left click to create new point
+Middle click to remove point</value>
+					</property>
+					<property>
+						<name>Points</name>
+						<collection>
+							<item>
+								<value>
+									-221.224 -3.47546
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									-200.778 217.84
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									97.8437 277.616
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									202.812 287.16
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									246.583 276.996
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									319.743 131.156
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									367.082 47.8696
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									355.277 -78.7592
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									339.539 -97.6698
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									306.022 -142.315
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									236.428 -188.858
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									231.853 -201.664
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									125.5 -205.911
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									-231.047 -193.875
+									<!--BW_String-->
+								</value>
+							</item>
+						</collection>
+					</property>
+					<property>
+						<name>Douglas-Peucker Epsilon</name>
+						<value>
+							0.2
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>5</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Curvature</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Tesselation Step</name>
+						<value>20</value>
+					</property>
+					<property>
+						<name>Height</name>
+						<value>200</value>
+					</property>
+					<property>
+						<name>pointsHint</name>
+						<value>Ctrl + Left click to create new point
+Middle click to remove point</value>
+					</property>
+					<property>
+						<name>Points</name>
+						<collection>
+							<item>
+								<value>0 0</value>
+							</item>
+							<item>
+								<value>
+									3.42908 67.0994
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									29.6082 89.3114
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									61.3857 121.894
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									104.706 160.281
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									117.035 157.218
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									129.898 134.443
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									106.688 77.7393
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									109.104 38.6135
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									107.54 4.60815
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>100 0</value>
+							</item>
+						</collection>
+					</property>
+					<property>
+						<name>Douglas-Peucker Epsilon</name>
+						<value>
+							0.2
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>6</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Curvature</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Tesselation Step</name>
+						<value>20</value>
+					</property>
+					<property>
+						<name>Height</name>
+						<value>200</value>
+					</property>
+					<property>
+						<name>pointsHint</name>
+						<value>Ctrl + Left click to create new point
+Middle click to remove point</value>
+					</property>
+					<property>
+						<name>Points</name>
+						<collection>
+							<item>
+								<value>0 0</value>
+							</item>
+							<item>
+								<value>
+									-20.602 32.5242
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									-25.9134 65.5433
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									-41.9222 89.6451
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									-14.1795 113.091
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									19.4625 85.231
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									64.4183 81.7001
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									94.4681 77.511
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									162.725 52.9275
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									123.289 -9.06964
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									95.7384 -55.2725
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									59.8246 -73.2965
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									24.3748 -42.4877
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									8.88226 -16.4382
+									<!--BW_String-->
+								</value>
+							</item>
+						</collection>
+					</property>
+					<property>
+						<name>Douglas-Peucker Epsilon</name>
+						<value>
+							0.2
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>7</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Curvature</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Tesselation Step</name>
+						<value>20</value>
+					</property>
+					<property>
+						<name>Height</name>
+						<value>200</value>
+					</property>
+					<property>
+						<name>pointsHint</name>
+						<value>Ctrl + Left click to create new point
+Middle click to remove point</value>
+					</property>
+					<property>
+						<name>Points</name>
+						<collection>
+							<item>
+								<value>0 0</value>
+							</item>
+							<item>
+								<value>
+									-7.01752 76.6171
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									53.5716 83.3316
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									91.8801 84.5748
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									117.731 50.3542
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									123.714 34.7787
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									118.423 -24.3362
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									89.707 -21.8577
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									57.7722 -38.1478
+									<!--BW_String-->
+								</value>
+							</item>
+						</collection>
+					</property>
+					<property>
+						<name>Douglas-Peucker Epsilon</name>
+						<value>
+							0.2
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>8</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Curvature</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Tesselation Step</name>
+						<value>20</value>
+					</property>
+					<property>
+						<name>Height</name>
+						<value>200</value>
+					</property>
+					<property>
+						<name>pointsHint</name>
+						<value>Ctrl + Left click to create new point
+Middle click to remove point</value>
+					</property>
+					<property>
+						<name>Points</name>
+						<collection>
+							<item>
+								<value>0 0</value>
+							</item>
+							<item>
+								<value>
+									-23.4401 20.7805
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									-50.5835 42.8891
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>0 100</value>
+							</item>
+							<item>
+								<value>
+									14.7688 121.411
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									33.9939 107.026
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									59.7418 87.9652
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									38.5426 68.5735
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									59.9063 30.9803
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									31.0863 2.52567
+									<!--BW_String-->
+								</value>
+							</item>
+						</collection>
+					</property>
+					<property>
+						<name>Douglas-Peucker Epsilon</name>
+						<value>
+							0.2
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>9</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Curvature</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Tesselation Step</name>
+						<value>20</value>
+					</property>
+					<property>
+						<name>Height</name>
+						<value>200</value>
+					</property>
+					<property>
+						<name>pointsHint</name>
+						<value>Ctrl + Left click to create new point
+Middle click to remove point</value>
+					</property>
+					<property>
+						<name>Points</name>
+						<collection>
+							<item>
+								<value>0 0</value>
+							</item>
+							<item>
+								<value>
+									1.91568 95.0435
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									51.5162 150.74
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									93.2623 151.764
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									123.802 137.238
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									133.305 96.0286
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									132.79 56.4822
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									118.419 56.4027
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									119.275 41.9291
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									99.5022 41.9514
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									97.7141 27.3721
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									96.1748 -5.22168
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									78.4345 -24.3053
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									51.0128 -31.0029
+									<!--BW_String-->
+								</value>
+							</item>
+						</collection>
+					</property>
+					<property>
+						<name>Douglas-Peucker Epsilon</name>
+						<value>
+							0.2
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>10</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Curvature</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Tesselation Step</name>
+						<value>20</value>
+					</property>
+					<property>
+						<name>Height</name>
+						<value>200</value>
+					</property>
+					<property>
+						<name>pointsHint</name>
+						<value>Ctrl + Left click to create new point
+Middle click to remove point</value>
+					</property>
+					<property>
+						<name>Points</name>
+						<collection>
+							<item>
+								<value>0 0</value>
+							</item>
+							<item>
+								<value>
+									-58.3857 60.8262
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									0 123.254
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									41.225 155.94
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									133.49 242.619
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									267.71 203.639
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									298.504 184.474
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									343.982 158.691
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									355.604 109.192
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									325.024 64.7541
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									198.938 93.8615
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>100 0</value>
+							</item>
+						</collection>
+					</property>
+					<property>
+						<name>Douglas-Peucker Epsilon</name>
+						<value>
+							0.2
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>11</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Curvature</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Tesselation Step</name>
+						<value>20</value>
+					</property>
+					<property>
+						<name>Height</name>
+						<value>200</value>
+					</property>
+					<property>
+						<name>pointsHint</name>
+						<value>Ctrl + Left click to create new point
+Middle click to remove point</value>
+					</property>
+					<property>
+						<name>Points</name>
+						<collection>
+							<item>
+								<value>0 0</value>
+							</item>
+							<item>
+								<value>
+									-27.7036 115.297
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									-3.80737 141.786
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									86.9246 193.304
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									149.613 192.331
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									183.894 115.812
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									255.414 38.997
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									175.812 -27.0967
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									36.6255 -41.8238
+									<!--BW_String-->
+								</value>
+							</item>
+						</collection>
+					</property>
+					<property>
+						<name>Douglas-Peucker Epsilon</name>
+						<value>
+							0.2
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>12</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Curvature</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Tesselation Step</name>
+						<value>20</value>
+					</property>
+					<property>
+						<name>Height</name>
+						<value>100</value>
+					</property>
+					<property>
+						<name>pointsHint</name>
+						<value>Ctrl + Left click to create new point
+Middle click to remove point</value>
+					</property>
+					<property>
+						<name>Points</name>
+						<collection>
+							<item>
+								<value>0 0</value>
+							</item>
+							<item>
+								<value>0 100</value>
+							</item>
+							<item>
+								<value>
+									0.987915 171.519
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									-1.87317 238.912
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									-5.14075 298.703
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									-2.27502 364.779
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									-6.51233 563.334
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									113.724 563.448
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									281.618 554.25
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									386.453 554.007
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									409.726 447.883
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									383.172 362.415
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									330.339 305.551
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									215.549 332.925
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									169.847 280.66
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									292.487 138.925
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									279.576 85.493
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									246.259 -2.75737
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									167.506 -11.8305
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>100 0</value>
+							</item>
+						</collection>
+					</property>
+					<property>
+						<name>Douglas-Peucker Epsilon</name>
+						<value>
+							0.2
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>13</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Curvature</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Tesselation Step</name>
+						<value>20</value>
+					</property>
+					<property>
+						<name>Height</name>
+						<value>20</value>
+					</property>
+					<property>
+						<name>pointsHint</name>
+						<value>Ctrl + Left click to create new point
+Middle click to remove point</value>
+					</property>
+					<property>
+						<name>Points</name>
+						<collection>
+							<item>
+								<value>0 0</value>
+							</item>
+							<item>
+								<value>
+									-3.63232 5.18311
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									27.8953 43.4736
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									35.1464 42.6528
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									38.6353 35.2671
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									29.6662 7.59216
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									16.4464 -3.97815
+									<!--BW_String-->
+								</value>
+							</item>
+						</collection>
+					</property>
+					<property>
+						<name>Douglas-Peucker Epsilon</name>
+						<value>
+							0.2
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>14</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Curvature</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Tesselation Step</name>
+						<value>20</value>
+					</property>
+					<property>
+						<name>Height</name>
+						<value>20</value>
+					</property>
+					<property>
+						<name>pointsHint</name>
+						<value>Ctrl + Left click to create new point
+Middle click to remove point</value>
+					</property>
+					<property>
+						<name>Points</name>
+						<collection>
+							<item>
+								<value>0 0</value>
+							</item>
+							<item>
+								<value>
+									-5.71655 8.20709
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									-3.23993 22.0084
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									-13.4854 30.9127
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									-10.5176 40.1526
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									2.56006 46.628
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									6.99963 56.2401
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									9.96802 65.5912
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									22.3942 69.4874
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									23.8892 57.1387
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									21.1933 8.74573
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									11.4411 -1.84534
+									<!--BW_String-->
+								</value>
+							</item>
+						</collection>
+					</property>
+					<property>
+						<name>Douglas-Peucker Epsilon</name>
+						<value>
+							0.2
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>15</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Curvature</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Tesselation Step</name>
+						<value>20</value>
+					</property>
+					<property>
+						<name>Height</name>
+						<value>20</value>
+					</property>
+					<property>
+						<name>pointsHint</name>
+						<value>Ctrl + Left click to create new point
+Middle click to remove point</value>
+					</property>
+					<property>
+						<name>Points</name>
+						<collection>
+							<item>
+								<value>0 0</value>
+							</item>
+							<item>
+								<value>
+									-7.60278 16.1681
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									5.91913 26.8372
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									38.573 15.8739
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									46.299 -14.2469
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									37.5527 -26.814
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									25.9482 -27.3221
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									12.4759 -14.9861
+									<!--BW_String-->
+								</value>
+							</item>
+						</collection>
+					</property>
+					<property>
+						<name>Douglas-Peucker Epsilon</name>
+						<value>
+							0.2
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>SoundZone</type>
+			<version>1</version>
+			<component>
+				<objectIndex>1</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Zone Enter Event</name>
+						<value/>
+					</property>
+					<property>
+						<name>Zone Exit Event</name>
+						<value/>
+					</property>
+					<property>
+						<name>Emitter Event</name>
+						<value>ev_portal_amb_map_lava_lake</value>
+					</property>
+					<property>
+						<name>Reverb</name>
+						<value/>
+					</property>
+					<property>
+						<name>Reverb Level</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Volume Deviation</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Color</name>
+						<value>
+							0 0 1 0.5
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>2</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Zone Enter Event</name>
+						<value>ev_portal_amb_map_city_metal_wood_enter</value>
+					</property>
+					<property>
+						<name>Zone Exit Event</name>
+						<value>ev_portal_amb_map_city_exit</value>
+					</property>
+					<property>
+						<name>Emitter Event</name>
+						<value/>
+					</property>
+					<property>
+						<name>Reverb</name>
+						<value/>
+					</property>
+					<property>
+						<name>Reverb Level</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Volume Deviation</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Color</name>
+						<value>
+							0 0 1 0.5
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>3</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Zone Enter Event</name>
+						<value>ev_portal_amb_map_city_wood_enter</value>
+					</property>
+					<property>
+						<name>Zone Exit Event</name>
+						<value>ev_portal_amb_map_city_exit</value>
+					</property>
+					<property>
+						<name>Emitter Event</name>
+						<value/>
+					</property>
+					<property>
+						<name>Reverb</name>
+						<value/>
+					</property>
+					<property>
+						<name>Reverb Level</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Volume Deviation</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Color</name>
+						<value>
+							0 0 1 0.5
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>4</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Zone Enter Event</name>
+						<value>ev_portal_amb_map_arena_enter</value>
+					</property>
+					<property>
+						<name>Zone Exit Event</name>
+						<value>ev_portal_amb_map_arena_exit</value>
+					</property>
+					<property>
+						<name>Emitter Event</name>
+						<value/>
+					</property>
+					<property>
+						<name>Reverb</name>
+						<value/>
+					</property>
+					<property>
+						<name>Reverb Level</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Volume Deviation</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Color</name>
+						<value>
+							0 0 1 0.5
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>5</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Zone Enter Event</name>
+						<value>ev_portal_amb_map_city_metal_enter</value>
+					</property>
+					<property>
+						<name>Zone Exit Event</name>
+						<value>ev_portal_amb_map_city_exit</value>
+					</property>
+					<property>
+						<name>Emitter Event</name>
+						<value/>
+					</property>
+					<property>
+						<name>Reverb</name>
+						<value/>
+					</property>
+					<property>
+						<name>Reverb Level</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Volume Deviation</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Color</name>
+						<value>
+							0 0 1 0.5
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>6</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Zone Enter Event</name>
+						<value>ev_portal_amb_map_city_wood_enter</value>
+					</property>
+					<property>
+						<name>Zone Exit Event</name>
+						<value>ev_portal_amb_map_city_exit</value>
+					</property>
+					<property>
+						<name>Emitter Event</name>
+						<value/>
+					</property>
+					<property>
+						<name>Reverb</name>
+						<value/>
+					</property>
+					<property>
+						<name>Reverb Level</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Volume Deviation</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Color</name>
+						<value>
+							0 0 1 0.5
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>7</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Zone Enter Event</name>
+						<value>ev_portal_amb_map_city_metal_wood_enter</value>
+					</property>
+					<property>
+						<name>Zone Exit Event</name>
+						<value>ev_portal_amb_map_city_exit</value>
+					</property>
+					<property>
+						<name>Emitter Event</name>
+						<value/>
+					</property>
+					<property>
+						<name>Reverb</name>
+						<value/>
+					</property>
+					<property>
+						<name>Reverb Level</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Volume Deviation</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Color</name>
+						<value>
+							0 0 1 0.5
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>8</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Zone Enter Event</name>
+						<value>ev_portal_amb_map_city_wood_enter</value>
+					</property>
+					<property>
+						<name>Zone Exit Event</name>
+						<value>ev_portal_amb_map_city_exit</value>
+					</property>
+					<property>
+						<name>Emitter Event</name>
+						<value/>
+					</property>
+					<property>
+						<name>Reverb</name>
+						<value/>
+					</property>
+					<property>
+						<name>Reverb Level</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Volume Deviation</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Color</name>
+						<value>
+							0 0 1 0.5
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>9</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Zone Enter Event</name>
+						<value/>
+					</property>
+					<property>
+						<name>Zone Exit Event</name>
+						<value/>
+					</property>
+					<property>
+						<name>Emitter Event</name>
+						<value/>
+					</property>
+					<property>
+						<name>Reverb</name>
+						<value/>
+					</property>
+					<property>
+						<name>Reverb Level</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Volume Deviation</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Color</name>
+						<value>
+							0 0 1 0.5
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>10</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Zone Enter Event</name>
+						<value>ev_portal_amb_map_rocks_zone_enter</value>
+					</property>
+					<property>
+						<name>Zone Exit Event</name>
+						<value>ev_portal_amb_map_rocks_zone_exit</value>
+					</property>
+					<property>
+						<name>Emitter Event</name>
+						<value/>
+					</property>
+					<property>
+						<name>Reverb</name>
+						<value/>
+					</property>
+					<property>
+						<name>Reverb Level</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Volume Deviation</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Color</name>
+						<value>
+							0 0 1 0.5
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>11</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Zone Enter Event</name>
+						<value>ev_portal_amb_map_rocks_zone_enter</value>
+					</property>
+					<property>
+						<name>Zone Exit Event</name>
+						<value>ev_portal_amb_map_rocks_zone_exit</value>
+					</property>
+					<property>
+						<name>Emitter Event</name>
+						<value/>
+					</property>
+					<property>
+						<name>Reverb</name>
+						<value/>
+					</property>
+					<property>
+						<name>Reverb Level</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Volume Deviation</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Color</name>
+						<value>
+							0 0 1 0.5
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>12</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Zone Enter Event</name>
+						<value>ev_portal_amb_map_rocks_zone_enter</value>
+					</property>
+					<property>
+						<name>Zone Exit Event</name>
+						<value>ev_portal_amb_map_rocks_zone_exit</value>
+					</property>
+					<property>
+						<name>Emitter Event</name>
+						<value/>
+					</property>
+					<property>
+						<name>Reverb</name>
+						<value/>
+					</property>
+					<property>
+						<name>Reverb Level</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Volume Deviation</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Color</name>
+						<value>
+							0 0 1 0.5
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>13</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Zone Enter Event</name>
+						<value>ev_portal_amb_map_lava_boil_zone_enter</value>
+					</property>
+					<property>
+						<name>Zone Exit Event</name>
+						<value>ev_portal_amb_map_lava_boil_zone_exit</value>
+					</property>
+					<property>
+						<name>Emitter Event</name>
+						<value>ev_portal_amb_map_lava_boil</value>
+					</property>
+					<property>
+						<name>Reverb</name>
+						<value/>
+					</property>
+					<property>
+						<name>Reverb Level</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Volume Deviation</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Color</name>
+						<value>
+							0 0 1 0.5
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>14</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Zone Enter Event</name>
+						<value>ev_portal_amb_map_lava_boil_zone_enter</value>
+					</property>
+					<property>
+						<name>Zone Exit Event</name>
+						<value>ev_portal_amb_map_lava_boil_zone_exit</value>
+					</property>
+					<property>
+						<name>Emitter Event</name>
+						<value>ev_portal_amb_map_lava_boil</value>
+					</property>
+					<property>
+						<name>Reverb</name>
+						<value/>
+					</property>
+					<property>
+						<name>Reverb Level</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Volume Deviation</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Color</name>
+						<value>
+							0 0 1 0.5
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>15</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Zone Enter Event</name>
+						<value>ev_portal_amb_map_lava_boil_zone_enter</value>
+					</property>
+					<property>
+						<name>Zone Exit Event</name>
+						<value>ev_portal_amb_map_lava_boil_zone_exit</value>
+					</property>
+					<property>
+						<name>Emitter Event</name>
+						<value>ev_portal_amb_map_lava_boil</value>
+					</property>
+					<property>
+						<name>Reverb</name>
+						<value/>
+					</property>
+					<property>
+						<name>Reverb Level</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Volume Deviation</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Color</name>
+						<value>
+							0 0 1 0.5
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+	</components>
+</root>

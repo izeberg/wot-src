@@ -111,9 +111,9 @@
 			<exploded>vehicles/russian/R144_K_91/crash/lod0/Hull.model</exploded>
 			<sets>
 				<R144_K_91_3dst_MT>
-					<undamaged>vehicles/russian/R144_K_91/_skin/R144_K_91_3dst_MT/normal/lod0/Hull.model</undamaged>
-					<destroyed>vehicles/russian/R144_K_91/_skin/R144_K_91_3dst_MT/crash/lod0/Hull.model</destroyed>
-					<exploded>vehicles/russian/R144_K_91/_skin/R144_K_91_3dst_MT/crash/lod0/Hull.model</exploded>
+					<undamaged>vehicles/russian/R144_K_91/_skins/R144_K_91_3dst_MT/normal/lod0/Hull.model</undamaged>
+					<destroyed>vehicles/russian/R144_K_91/_skins/R144_K_91_3dst_MT/crash/lod0/Hull.model</destroyed>
+					<exploded>vehicles/russian/R144_K_91/_skins/R144_K_91_3dst_MT/crash/lod0/Hull.model</exploded>
 				</R144_K_91_3dst_MT>
 			</sets>
 		</models>
@@ -1290,9 +1290,9 @@
 				<exploded>vehicles/russian/R144_K_91/crash/lod0/Chassis.model</exploded>
 				<sets>
 					<R144_K_91_3dst_MT>
-						<undamaged>vehicles/russian/R144_K_91/_skin/R144_K_91_3dst_MT/normal/lod0/Chassis.model</undamaged>
-						<destroyed>vehicles/russian/R144_K_91/_skin/R144_K_91_3dst_MT/crash/lod0/Chassis.model</destroyed>
-						<exploded>vehicles/russian/R144_K_91/_skin/R144_K_91_3dst_MT/crash/lod0/Chassis.model</exploded>
+						<undamaged>vehicles/russian/R144_K_91/_skins/R144_K_91_3dst_MT/normal/lod0/Chassis.model</undamaged>
+						<destroyed>vehicles/russian/R144_K_91/_skins/R144_K_91_3dst_MT/crash/lod0/Chassis.model</destroyed>
+						<exploded>vehicles/russian/R144_K_91/_skins/R144_K_91_3dst_MT/crash/lod0/Chassis.model</exploded>
 					</R144_K_91_3dst_MT>
 				</sets>
 			</models>
@@ -1870,8 +1870,8 @@
 					</atlas>
 					<modelSets>
 						<R144_K_91_3dst_MT>
-							<segmentModelLeft>vehicles/russian/R144_K_91/_skin/R144_K_91_3dst_MT/track/segment.model</segmentModelLeft>
-							<segmentModelRight>vehicles/russian/R144_K_91/_skin/R144_K_91_3dst_MT/track/segment.model</segmentModelRight>
+							<segmentModelLeft>vehicles/russian/R144_K_91/_skins/R144_K_91_3dst_MT/track/segment.model</segmentModelLeft>
+							<segmentModelRight>vehicles/russian/R144_K_91/_skins/R144_K_91_3dst_MT/track/segment.model</segmentModelRight>
 						</R144_K_91_3dst_MT>
 					</modelSets>
 				</trackPair>
@@ -1906,7 +1906,7 @@
 					</mainSegment>
 					<modelSets>
 						<R144_K_91_3dst_MT>
-							<mainSegmentModel>vehicles/russian/R144_K_91/_skin/R144_K_91_3dst_MT/track/segment.model</mainSegmentModel>
+							<mainSegmentModel>vehicles/russian/R144_K_91/_skins/R144_K_91_3dst_MT/track/segment.model</mainSegmentModel>
 							<secSegmentModel/>
 						</R144_K_91_3dst_MT>
 					</modelSets>
@@ -2914,7 +2914,7 @@
 					</mainSegment>
 					<modelSets>
 						<R144_K_91_3dst_MT>
-							<mainSegmentModel>vehicles/russian/R144_K_91/_skin/R144_K_91_3dst_MT/track/segment.model</mainSegmentModel>
+							<mainSegmentModel>vehicles/russian/R144_K_91/_skins/R144_K_91_3dst_MT/track/segment.model</mainSegmentModel>
 							<secSegmentModel/>
 						</R144_K_91_3dst_MT>
 					</modelSets>
@@ -4047,9 +4047,9 @@
 						<exploded>vehicles/russian/R144_K_91/crash/lod0/Gun_01.model</exploded>
 						<sets>
 							<R144_K_91_3dst_MT>
-								<undamaged>vehicles/russian/R144_K_91/_skin/R144_K_91_3dst_MT/normal/lod0/Gun_01.model</undamaged>
-								<destroyed>vehicles/russian/R144_K_91/_skin/R144_K_91_3dst_MT/crash/lod0/Gun_01.model</destroyed>
-								<exploded>vehicles/russian/R144_K_91/_skin/R144_K_91_3dst_MT/crash/lod0/Gun_01.model</exploded>
+								<undamaged>vehicles/russian/R144_K_91/_skins/R144_K_91_3dst_MT/normal/lod0/Gun_01.model</undamaged>
+								<destroyed>vehicles/russian/R144_K_91/_skins/R144_K_91_3dst_MT/crash/lod0/Gun_01.model</destroyed>
+								<exploded>vehicles/russian/R144_K_91/_skins/R144_K_91_3dst_MT/crash/lod0/Gun_01.model</exploded>
 							</R144_K_91_3dst_MT>
 						</sets>
 					</models>
@@ -4207,6 +4207,10 @@
 							<camouflage>GUN</camouflage>
 						</customizableVehicleAreas>
 					</customization>
+					<shotOffset>
+						0 0 -0.3
+						<!--BW_String-->
+					</shotOffset>
 					<camouflage>
 						<density>
 							104.005 104.288
@@ -4222,9 +4226,9 @@
 				<exploded>vehicles/russian/R144_K_91/crash/lod0/Turret_01.model</exploded>
 				<sets>
 					<R144_K_91_3dst_MT>
-						<undamaged>vehicles/russian/R144_K_91/_skin/R144_K_91_3dst_MT/normal/lod0/Turret_01.model</undamaged>
-						<destroyed>vehicles/russian/R144_K_91/_skin/R144_K_91_3dst_MT/crash/lod0/Turret_01.model</destroyed>
-						<exploded>vehicles/russian/R144_K_91/_skin/R144_K_91_3dst_MT/crash/lod0/Turret_01.model</exploded>
+						<undamaged>vehicles/russian/R144_K_91/_skins/R144_K_91_3dst_MT/normal/lod0/Turret_01.model</undamaged>
+						<destroyed>vehicles/russian/R144_K_91/_skins/R144_K_91_3dst_MT/crash/lod0/Turret_01.model</destroyed>
+						<exploded>vehicles/russian/R144_K_91/_skins/R144_K_91_3dst_MT/crash/lod0/Turret_01.model</exploded>
 					</R144_K_91_3dst_MT>
 				</sets>
 			</models>

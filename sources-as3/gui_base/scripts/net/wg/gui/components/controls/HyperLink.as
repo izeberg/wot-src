@@ -196,6 +196,10 @@ package net.wg.gui.components.controls
       
       override protected function handleMouseRollOver(param1:MouseEvent) : void
       {
+         if(_baseDisposed)
+         {
+            return;
+         }
          alpha = Values.DEFAULT_ALPHA;
          this.setUnderline(true);
          super.handleMouseRollOver(param1);
@@ -203,9 +207,22 @@ package net.wg.gui.components.controls
       
       override protected function handleMouseRollOut(param1:MouseEvent) : void
       {
+         if(_baseDisposed)
+         {
+            return;
+         }
          alpha = OUT_ALPHA;
          this.setUnderline(false);
          super.handleMouseRollOver(param1);
+      }
+      
+      override protected function handleMouseRelease(param1:MouseEvent) : void
+      {
+         if(_baseDisposed)
+         {
+            return;
+         }
+         super.handleMouseRelease(param1);
       }
    }
 }

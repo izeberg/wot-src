@@ -34,6 +34,11 @@ msgstr ""
 msgid "bonusDelayed/dialog/title"
 msgstr "Забрать в награду %(vehicleName)s?"
 
+msgid "entryPoint/hint/new"
+msgstr ""
+"ОБНОВЛЁННАЯ ТАНКОВАЯ\n"
+"АКАДЕМИЯ"
+
 msgid "entryPoint/hint/quests"
 msgstr "ЗАДАЧИ ТАНКОВОЙ АКАДЕМИИ"
 
@@ -85,8 +90,19 @@ msgstr "ОБ АКАДЕМИИ"
 msgid "mainView/header/title"
 msgstr "ТАНКОВАЯ АКАДЕМИЯ"
 
+msgid "mainView/header/updatesButton"
+msgstr "ОБ ИЗМЕНЕНИЯХ"
+
 msgid "mainView/questCard/action"
 msgstr "Подсказка"
+
+msgid "mainView/questCard/subtitle/migrated/item1"
+msgstr "За все ранее выполненные задачи вам уже была начислена награда."
+
+msgid "mainView/questCard/subtitle/migrated/item2"
+msgstr ""
+"Далее следуют новые задачи и награды согласно вашему прогрессу в прошлой "
+"версии."
 
 msgid "mainView/questCard/subtitle/unavailable"
 msgstr "Завершите предыдущие задачи."
@@ -96,6 +112,11 @@ msgstr "Выполненная задача"
 
 msgid "mainView/questCard/title/inProgress"
 msgstr "Текущая задача"
+
+msgid "mainView/questCard/title/migrated"
+msgstr ""
+"Задачи прошлой версии\n"
+"Танковой академии"
 
 msgid "mainView/questCard/title/unavailable"
 msgstr "Предстоящая задача"
@@ -187,6 +208,33 @@ msgid "mainView/widget/tokens/inactive/tooltip"
 msgstr ""
 "Нажмите, чтобы ознакомиться с техникой, доступной за выполнение задач "
 "Танковой академии."
+
+msgid "migrationUpdatesView/button/closeButton"
+msgstr "ЗАКРЫТЬ"
+
+msgid "migrationUpdatesView/button/confirmButton"
+msgstr "Так точно!"
+
+msgid "migrationUpdatesView/newQuestsDescription"
+msgstr ""
+"Вам начислены новые задачи с более ценными наградами.\n"
+"Номера новых задач могут отличаться от предыдущих.\n"
+"Новые задачи начислены согласно вашему прогрессу\n"
+"в прошлой версии Танковой академии."
+
+msgid "migrationUpdatesView/newQuestsTitle"
+msgstr "Новые задачи"
+
+msgid "migrationUpdatesView/progressDescription"
+msgstr ""
+"Все заработанные вами награды в прошлой версии Танковой академии уже были "
+"начислены и остаются у вас."
+
+msgid "migrationUpdatesView/progressTitle"
+msgstr "Прогресс из прошлой версии"
+
+msgid "migrationUpdatesView/title"
+msgstr "ОБНОВЛЕНИЕ ТАНКОВОЙ АКАДЕМИИ"
 
 msgid "rewardsView/button/accept"
 msgstr "Так точно!"

@@ -3,5 +3,9 @@
 	<tank>true</tank>
 	<nodefullVisual>vehicles/russian/R100_SU122A/normal/lod1/Chassis</nodefullVisual>
 	<parent>vehicles/russian/R100_SU122A/normal/lod2/Chassis</parent>
-	<extent>64</extent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.358190 -0.000001 -2.442132</min>
+		<max>1.358190 0.957991 2.502502</max>
+	</visibilityBox>
 </root>

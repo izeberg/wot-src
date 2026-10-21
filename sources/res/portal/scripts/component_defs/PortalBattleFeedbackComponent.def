@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<CellMethods>
+		<onPortalActionApplied>
+			<Arg>PYTHON</Arg>
+		</onPortalActionApplied>
+	</CellMethods>
+	<ClientMethods/>
+	<Properties/>
+	<ofEntity>
+		<Vehicle/>
+	</ofEntity>
+	<DefaultKeyName>portalBattleFeedbackComponent</DefaultKeyName>
+</root>

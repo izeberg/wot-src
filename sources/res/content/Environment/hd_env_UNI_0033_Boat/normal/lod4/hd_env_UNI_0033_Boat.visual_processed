@@ -142,7 +142,7 @@
 					<identifier>n_wood0</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<materialKind>73</materialKind>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>128</collisionFlags>
 					<property>
 						albedoHeightTile0
 						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_painted_04_512_AM.dds</Texture>

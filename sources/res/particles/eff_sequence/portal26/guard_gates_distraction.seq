@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>0.666667</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>FIRE</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/portal26_event/guard_gates/Fire.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd0</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 0.019608 0.003922 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 15.583971</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 15.583971</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.200000</startTime>
+				<value>1.000000 0.019608 0.003922 1.000360</value>
+				<inTangent>-0.000000 0.000000 0.000000 0.118715</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -0.003595</outTangent>
+				<tangentMode>65795</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.300000</startTime>
+				<value>1.000000 0.019608 0.003922 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.003595</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -0.814372</outTangent>
+				<tangentMode>66305</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.666667</startTime>
+				<value>1.000000 0.113725 0.035294 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -5.610777</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -5.610777</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property vector4</name>
+			<type>vector4</type>
+			<identifier>s_nd0</identifier>
+			<property>diffuseUVSpeedAlphaOffset</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.200000 1.000000 0.000000</value>
+				<inTangent>0.000000 0.150000 -1.499999 0.000000</inTangent>
+				<outTangent>0.000000 0.150000 -1.499999 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.666667</startTime>
+				<value>0.000000 0.300000 0.000000 0.000000</value>
+				<inTangent>-0.000000 -0.048474 -1.499999 -0.000000</inTangent>
+				<outTangent>-0.000000 -0.048474 -1.499999 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>BURST</name>
+		<type>particle</type>
+		<resource>particles/environment/interior/252_portal_gate_destruct.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.332397 -7.753227 -0.204071</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>29.999998</inTangent>
+				<outTangent>29.999998</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.100000</startTime>
+				<value>1.000000</value>
+				<inTangent>29.999998</inTangent>
+				<outTangent>29.999998</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.133333</startTime>
+				<value>0.000000</value>
+				<inTangent>-30.000002</inTangent>
+				<outTangent>-30.000002</outTangent>
+				<tangentMode>2</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>DISTORTION</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/portal26_event/guard_gates/Distort.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 2.152172 0.000230</inTangent>
+				<outTangent>0.000000 2.152172 0.000230</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.200000</startTime>
+				<value>0.000000 -41.730766 0.000061</value>
+				<inTangent>-0.000000 -180.926041 0.000230</inTangent>
+				<outTangent>-0.000000 -180.926041 0.000230</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>5.000000 3.000000 5.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>
