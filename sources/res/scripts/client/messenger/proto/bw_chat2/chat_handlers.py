@@ -464,8 +464,8 @@ class BattleChatCommandHandler(bw2_provider.ResponseDictHandler, IBattleCommandF
     def createByBaseIndex(self, pointId, commandName):
         return self.__factory.createByBaseIndex(pointId, commandName)
 
-    def createByGlobalMsgName(self, actionID, baseName=''):
-        return self.__factory.createByGlobalMsgName(actionID, baseName)
+    def createByBaseID(self, actionID, baseID=-1):
+        return self.__factory.createByBaseID(actionID, baseID)
 
     def createReloadingCommand(self, isCassetteClip, timeLeft, quantity, hasAutoShoot):
         return self.__factory.createReloadingCommand(isCassetteClip, timeLeft, quantity, hasAutoShoot)

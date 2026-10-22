@@ -1,6 +1,6 @@
 import BigWorld, CommandMapping, Event, constants
 from aih_constants import CTRL_MODE_NAME
-from arena_component_system.sector_base_arena_component import ID_TO_BASENAME, _MISSION_SECTOR_ID_MAPPING
+from arena_component_system.sector_base_arena_component import _MISSION_SECTOR_ID_MAPPING
 from avatar_helpers import getBestShotResultSound
 from chat_commands_consts import BATTLE_CHAT_COMMAND_NAMES
 from constants import DEATH_ZONES, SECTOR_STATE, VEHICLE_HIT_FLAGS as VHF
@@ -219,10 +219,10 @@ class AvatarEpicData(object):
 
             commands = self.guiSessionProvider.shared.chatCommands
             if chatCommandName is not None and commands is not None:
-                baseName = ''
+                baseID = 0
                 if lane > 0:
-                    baseName = ID_TO_BASENAME[_MISSION_SECTOR_ID_MAPPING[lane][sectorBaseCmp.getNumNonCapturedBasesByLane(lane)]]
-                commands.sendEpicGlobalCommand(chatCommandName, baseName)
+                    baseID = _MISSION_SECTOR_ID_MAPPING[lane][sectorBaseCmp.getNumNonCapturedBasesByLane(lane)]
+                commands.sendEpicGlobalCommand(chatCommandName, baseID)
                 return True
             return False
 

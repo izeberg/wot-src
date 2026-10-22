@@ -1,5 +1,5 @@
 import struct, Math
-from chat_commands_consts import BATTLE_CHAT_COMMAND_NAMES, _DEFAULT_ACTIVE_COMMAND_TIME, BASE_CMD_NAMES
+from chat_commands_consts import BATTLE_CHAT_COMMAND_NAMES, _DEFAULT_ACTIVE_COMMAND_TIME, BASE_CMD_NAMES, FL_BASE_CMD_NAMES
 from debug_utils import LOG_ERROR
 from gui.Scaleform.locale.INGAME_GUI import INGAME_GUI as I18N_INGAME_GUI
 from helpers import dependency
@@ -141,6 +141,7 @@ _CANCEL_REPLY_ID = 0
 _CLEAR_CHAT_COMMANDS_ID = 0
 _SUPPORTING_ALLY_ID = 0
 _BASE_COMMAND_IDS = []
+_FL_BASE_COMMAND_IDS = []
 _LOCATION_COMMAND_IDS = []
 _VEHICLE_COMMAND_IDS = []
 _AUTOCOMMIT_COMMAND_IDS = []
@@ -168,6 +169,8 @@ for cmd in BATTLE_CHAT_COMMANDS:
         _LOCATION_COMMAND_IDS.append(cmdID)
     if cmdName in BASE_CMD_NAMES:
         _BASE_COMMAND_IDS.append(cmdID)
+    if cmdName in FL_BASE_CMD_NAMES:
+        _FL_BASE_COMMAND_IDS.append(cmdID)
     if cmdName in _VEHICLE_COMMAND_NAMES:
         _VEHICLE_COMMAND_IDS.append(cmdID)
     if cmdName in AUTOCOMMIT_COMMAND_NAMES:
@@ -266,7 +269,10 @@ class _ReceivedCmdDecorator(ReceivedBattleChatCommand):
                         baseName = ID_TO_BASENAME.get(baseIdx, None)
                         if baseName is not None:
                             i18nArguments['strArg1'] = baseName
-                            i18nKey += '_numbered'
+                            if not self.isFLBaseRelatedCommand():
+                                i18nKey += '_numbered'
+                    else:
+                        i18nArguments['strArg1'] = ''
                 elif self.isLocationRelatedCommand():
                     if self.isSPGAimCommand():
                         reloadTime = self._protoData['floatArg1']
@@ -347,6 +353,9 @@ class _ReceivedCmdDecorator(ReceivedBattleChatCommand):
 
     def isBaseRelatedCommand(self):
         return self._commandID in _BASE_COMMAND_IDS
+
+    def isFLBaseRelatedCommand(self):
+        return self._commandID in _FL_BASE_COMMAND_IDS
 
     def isVehicleRelatedCommand(self):
         return self._commandID in _VEHICLE_COMMAND_IDS
@@ -476,10 +485,10 @@ class BattleCommandFactory(IBattleCommandFactory):
             decorator = _OutCmdDecorator(name)
         return decorator
 
-    def createByGlobalMsgName(self, actionID, baseName=''):
+    def createByBaseID(self, actionID, baseID=0):
         decorator = None
         if _GLOBAL_MESSAGE_IDS:
-            decorator = _OutCmdDecorator(actionID, messageArgs(strArg1=baseName))
+            decorator = _OutCmdDecorator(actionID, messageArgs(int32Arg1=baseID))
         return decorator
 
     def createByNameTarget(self, name, targetID):
