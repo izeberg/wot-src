@@ -80,7 +80,7 @@
 	<hull>
 		<primaryArmor>armor_1 armor_17 armor_4</primaryArmor>
 		<weight>17665</weight>
-		<maxHealth>1000</maxHealth>
+		<maxHealth>900</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>180</maxHealth>
 			<maxRegenHealth>120</maxRegenHealth>
@@ -2867,7 +2867,7 @@
 					<!--BW_String-->
 				</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>390</circularVisionRadius>
+			<circularVisionRadius>380</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>100</maxHealth>
 				<maxRegenHealth>50</maxRegenHealth>
@@ -2896,7 +2896,7 @@
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						9.05
+						9.2
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>

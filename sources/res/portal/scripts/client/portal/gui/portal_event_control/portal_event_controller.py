@@ -619,11 +619,13 @@ class PortalEventController(IPortalEventController, PerformanceAnalyzerMixin, No
 
     def __preSelectPortalVehicle(self):
         portalVehicleID = AccountSettings.getFavorites(PORTAL_VEHICLE)
-        if not portalVehicleID or self.__itemsCache.items.getVehicle(portalVehicleID) is None:
+        if not portalVehicleID or self.getPortalVehicleByInvID(portalVehicleID) is None:
             portalVehicles = self.getOrderedPortalVehicles()
             portalVehicle = first(portalVehicles)
             if portalVehicle:
                 portalVehicleID = portalVehicle.invID
+            else:
+                portalVehicleID = 0
         if portalVehicleID:
             g_currentVehicle.selectVehicle(portalVehicleID)
         else:
@@ -633,17 +635,23 @@ class PortalEventController(IPortalEventController, PerformanceAnalyzerMixin, No
     def __unSelectPortalVehicle(self):
         if g_currentVehicle.item not in self.getOrderedPortalVehicles():
             return
-        storedVehInvID = AccountSettings.getFavorites(CURRENT_VEHICLE)
-        if not storedVehInvID:
-            criteria = REQ_CRITERIA.INVENTORY | ~REQ_CRITERIA.VEHICLE.MODE_HIDDEN
-            criteria |= ~REQ_CRITERIA.VEHICLE.HAS_TAGS([VEHICLE_TAGS.BATTLE_ROYALE])
-            vehicle = first(self.__itemsCache.items.getVehicles(criteria=criteria).values())
-            if vehicle:
-                storedVehInvID = vehicle.invID
-        if storedVehInvID:
-            g_currentVehicle.selectVehicle(storedVehInvID)
         else:
-            g_currentVehicle.selectNoVehicle()
+            storedVehInvID = AccountSettings.getFavorites(CURRENT_VEHICLE)
+            storedVehicle = self.__itemsCache.items.getVehicle(storedVehInvID)
+            if storedVehicle is not None and storedVehicle.isOnlyForPortalBattlesVehicle:
+                storedVehInvID = None
+            if storedVehInvID is None:
+                criteria = REQ_CRITERIA.INVENTORY | ~REQ_CRITERIA.VEHICLE.MODE_HIDDEN
+                criteria |= ~REQ_CRITERIA.VEHICLE.HAS_TAGS([VEHICLE_TAGS.BATTLE_ROYALE])
+                criteria |= ~REQ_CRITERIA.VEHICLE.HAS_TAGS([VEHICLE_TAGS.PORTAL])
+                vehicle = first(self.__itemsCache.items.getVehicles(criteria=criteria).values())
+                if vehicle:
+                    storedVehInvID = vehicle.invID
+            if storedVehInvID:
+                g_currentVehicle.selectVehicle(storedVehInvID)
+            else:
+                g_currentVehicle.selectNoVehicle()
+            return
 
     def __isPortalMode(self, state):
         return state.isInPreQueue(queueType=QUEUE_TYPE.PORTAL) or state.isInUnit(PREBATTLE_TYPE.PORTAL)

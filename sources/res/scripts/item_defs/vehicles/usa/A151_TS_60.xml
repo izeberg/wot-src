@@ -3738,12 +3738,12 @@
 					</pitchLimits>
 					<turretYawLimits>-136 136</turretYawLimits>
 					<reloadTime>
-						8.4
+						8.9
 						<!--BW_String-->
 					</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.06
+							0.09
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
@@ -3756,7 +3756,7 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<shotDispersionRadius>
-						0.32
+						0.34
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<aimingTime>

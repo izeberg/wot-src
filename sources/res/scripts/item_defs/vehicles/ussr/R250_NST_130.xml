@@ -3180,19 +3180,6 @@
 			<isEngine>true</isEngine>
 		</soundStateChange>
 	</siege_mode>
-	<hull_aiming>
-		<pitch>
-			<isEnabled>True</isEnabled>
-			<isFlexible>True</isFlexible>
-			<wheelCorrectionCenterZ>0</wheelCorrectionCenterZ>
-			<wheelsCorrectionSpeed>10</wheelsCorrectionSpeed>
-			<wheelsCorrectionAngles>
-				<pitchMin>-3</pitchMin>
-				<pitchMax>3</pitchMax>
-			</wheelsCorrectionAngles>
-		</pitch>
-		<yawDisabled/>
-	</hull_aiming>
 	<isRotationStill>True</isRotationStill>
 	<useHullZSize>True</useHullZSize>
 	<effects>

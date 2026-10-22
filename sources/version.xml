@@ -1,16 +1,16 @@
 <version.xml>
 	<appname>	#menu:login/version	</appname>
-	<version> v.1.46.0.0 #2298 </version>
+	<version> v.1.46.0.0 #2303 </version>
 	<showLicense> 42 </showLicense>
 	<ingameHelpVersion>	1	</ingameHelpVersion>
 	<meta>
-		<client> 2373026 </client>
+		<client> 2376422 </client>
 		<overrides> 8299 RPT </overrides>
 		<localization> 27355 </localization>
 		<target_region> RU </target_region>
 		<realm> RPT </realm>
 		<build_profile> RU </build_profile>
-		<branch> 1.46 </branch>
+		<branch> dev/stream_tech/MTDEV-53714_engine_config_mp1 </branch>
 		<buildScriptsRevision> 2372989 </buildScriptsRevision>
 	</meta>
 </version.xml>
