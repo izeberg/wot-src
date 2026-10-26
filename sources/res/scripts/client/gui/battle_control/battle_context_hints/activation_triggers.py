@@ -1,4 +1,4 @@
-import typing, logging, BigWorld, TriggersManager
+import typing, logging, BigWorld, BattleReplay, TriggersManager
 from helpers import dependency
 from constants import ARENA_PERIOD
 from gui.battle_control.battle_context_hints.common import HintId
@@ -47,15 +47,6 @@ class PreBattleHintActivationTrigger(HintActivationTrigger):
     def __onArenaPeriodChange(self, period, *args, **kwargs):
         if period == ARENA_PERIOD.BATTLE and self.needToShowHint():
             self._activationCallback(self._hintId, *self._args, **self._kwargs)
-
-
-class TankAcademyQuestHintTrigger(object):
-    __tankAcademyController = dependency.descriptor(ITankAcademyController)
-
-    def areTankAcademyContextHintsUnlocked(self, unlockQuestOrder):
-        currentQuestOrder = self.__tankAcademyController.getCurrentQuestOrder()
-        isLocked = self.__tankAcademyController.isEnabledByConfig() and currentQuestOrder is not None and currentQuestOrder < unlockQuestOrder
-        return not isLocked
 
 
 class KilledWhileObservedHintTrigger(HintActivationTrigger):
@@ -204,12 +195,23 @@ class ModuleDamageHintTrigger(PreBattleHintActivationTrigger):
         return all(hintData.getWatchingCounter() == 0 for hintId, hintData in hintsData.iteritems() if hintId in self._MODULE_RELATED_HINTS)
 
 
-class AmmoAvailableHintTrigger(TankAcademyQuestHintTrigger, PreBattleHintActivationTrigger):
+class AmmoAvailableHintTrigger(PreBattleHintActivationTrigger):
     _MIN_VEHICLE_LEVEL = 4
     _TANK_ACADEMY_AMMO_HINTS_UNLOCK_QUEST_ORDER = 8
+    __tankAcademyController = dependency.descriptor(ITankAcademyController)
+
+    def start(self):
+        if not BattleReplay.g_replayCtrl.isPlaying:
+            currentQuestOrder = self.__tankAcademyController.getCurrentQuestOrder()
+            isLocked = self.__tankAcademyController.isEnabledByConfig() and currentQuestOrder is not None and currentQuestOrder < self._TANK_ACADEMY_AMMO_HINTS_UNLOCK_QUEST_ORDER
+            hintsCtrl = self._sessionProvider.dynamic.battleContextHintsCtrl
+            hintsCtrl.setTankAcademyContextHintsUnlocked(not isLocked)
+        super(AmmoAvailableHintTrigger, self).start()
+        return
 
     def needToShowHint(self):
-        if not self.areTankAcademyContextHintsUnlocked(self._TANK_ACADEMY_AMMO_HINTS_UNLOCK_QUEST_ORDER):
+        hintsCtrl = self._sessionProvider.dynamic.battleContextHintsCtrl
+        if not hintsCtrl.areTankAcademyContextHintsUnlocked():
             return False
         else:
             vehicleStateCtrl = self._sessionProvider.shared.vehicleState
