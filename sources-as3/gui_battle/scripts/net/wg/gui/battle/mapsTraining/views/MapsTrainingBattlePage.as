@@ -189,7 +189,7 @@ package net.wg.gui.battle.mapsTraining.views
       
       private function onBattleMessengerRequestFocusHandler(param1:FocusRequestEvent) : void
       {
-         setFocus(param1.focusContainer.getComponentForFocus());
+         setBattleMessengerFocus(param1.focusContainer.getComponentForFocus());
       }
       
       private function onBattleMessengerRemoveFocusHandler(param1:Event) : void
