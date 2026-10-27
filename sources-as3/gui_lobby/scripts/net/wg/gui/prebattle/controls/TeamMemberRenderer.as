@@ -107,6 +107,7 @@ package net.wg.gui.prebattle.controls
       
       override protected function afterSetData() : void
       {
+         var _loc1_:String = null;
          var _loc3_:String = null;
          this.commander_icon.visible = this.status_icon.visible = this.vehicle_type_icon.visible = this.boosterIcon.visible = false;
          updatePlayerName();
@@ -114,7 +115,7 @@ package net.wg.gui.prebattle.controls
          {
             return;
          }
-         var _loc1_:String = model.getStateString();
+         _loc1_ = model.getStateString();
          if(_loc1_ != PrebattleStateString.UNKNOWN)
          {
             statusString = _loc1_;
