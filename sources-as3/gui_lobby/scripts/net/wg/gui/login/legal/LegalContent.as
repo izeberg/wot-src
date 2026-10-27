@@ -112,13 +112,15 @@ package net.wg.gui.login.legal
       
       private function addFields() : void
       {
+         var _loc4_:TextField = null;
+         var _loc7_:int = 0;
          var _loc1_:Array = this._textInfo.split(DELIM);
          var _loc2_:int = _loc1_.length;
          var _loc3_:int = _loc2_ / PART_LINES >> Values.ZERO;
-         var _loc4_:TextField = null;
+         _loc4_ = null;
          var _loc5_:int = TF_Y;
          var _loc6_:TextFormat = null;
-         var _loc7_:int = 0;
+         _loc7_ = 0;
          while(_loc7_ <= _loc3_)
          {
             _loc4_ = new TextField();
