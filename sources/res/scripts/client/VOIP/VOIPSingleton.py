@@ -16,6 +16,7 @@ class VOIPSingleton(VOIPHandler):
         self.__impl = VOIPManagerWebRTC()
         self.__settings = {}
         self.__profile = 'webrtc'
+        self.__isMicMuted = False
         self.__eventManager = em = Event.EventManager()
         self.onCaptureDevicesUpdated = Event.Event(em)
         self.onPlayerSpeaking = Event.Event(em)
@@ -69,6 +70,10 @@ class VOIPSingleton(VOIPHandler):
     @proto_getter(PROTO_TYPE.MIGRATION)
     def proto(self):
         return
+
+    @property
+    def isMicMuted(self):
+        return self.__isMicMuted
 
     def isEnabled(self):
         return self.__impl.isEnabled()
@@ -188,6 +193,7 @@ class VOIPSingleton(VOIPHandler):
         self.__impl.setVoiceActivation(enabled)
 
     def setMicMute(self, muted=True):
+        self.__isMicMuted = muted
         self.__impl.setMicMute(muted)
 
     def requestCaptureDevices(self):
