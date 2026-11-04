@@ -12254,6 +12254,51 @@
 			<userString>#vehicle_customization:special_style/bp2026_june_7</userString>
 			<tags>hiddenInUI</tags>
 		</paint>
+		<paint>
+			<id>704</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_25.png</texture>
+			<color>36 36 38 255</color>
+			<gloss>
+				0.48
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.33
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:special_style/bp2026_november_1</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
+		<paint>
+			<id>705</id>
+			<texture>gui/maps/vehicles/repaints/sweden_color_02.png</texture>
+			<color>74 74 70 255</color>
+			<gloss>
+				0.509
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.23
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:special_style/bp2026_november_2</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
+		<paint>
+			<id>706</id>
+			<texture>gui/maps/vehicles/repaints/france_color_04.png</texture>
+			<color>148 113 75 255</color>
+			<gloss>
+				0.59
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.36
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:special_style/bp2026_november_3</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
 	</itemGroup>
 	<itemGroup>
 		<name>LS 26.1</name>

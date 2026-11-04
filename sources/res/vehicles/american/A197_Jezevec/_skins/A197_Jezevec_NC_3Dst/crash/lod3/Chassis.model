@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/american/A197_Jezevec/_skins/A197_Jezevec_NC_3Dst/crash/lod4/Chassis</parent>
+	<extent>192.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.855868 -0.000324 -3.174706</min>
+		<max>1.833515 1.188961 3.450682</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/american/A197_Jezevec/_skins/A197_Jezevec_NC_3Dst/crash/lod3/Chassis</nodefullVisual>
+</root>

@@ -12,7 +12,7 @@
 	<customRoleSlotOptions>2 4</customRoleSlotOptions>
 	<speedLimits>
 		<forward>45</forward>
-		<backward>15</backward>
+		<backward>16</backward>
 	</speedLimits>
 	<invisibility>
 		<moving>
@@ -2282,7 +2282,7 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						2.6
+						2.4
 						<!--BW_String-->
 					</aimingTime>
 					<pitchLimits>

@@ -3626,6 +3626,15 @@ msgstr "公平竞争"
 msgid "camouflage/bp2026_march_3/label"
 msgstr "失落天堂黑色纪事"
 
+msgid "camouflage/bp2026_november_1/label"
+msgstr "领航员"
+
+msgid "camouflage/bp2026_november_2/label"
+msgstr "预兆者"
+
+msgid "camouflage/bp2026_november_3/label"
+msgstr "眷侣"
+
 msgid "camouflage/bp2026_october_1/label"
 msgstr "执政官战甲"
 
@@ -16815,6 +16824,15 @@ msgstr "广播已安全"
 msgid "inscription/special/special_887"
 msgstr "通信检查"
 
+msgid "inscription/special/special_888"
+msgstr "尖刀圣厄莉娅"
+
+msgid "inscription/special/special_889"
+msgstr "命运无法逃避"
+
+msgid "inscription/special/special_890"
+msgstr "命运亦有代价"
+
 msgid "inscription/special/special_90"
 msgstr "2017年总决赛，莫斯科"
 
@@ -20613,11 +20631,29 @@ msgstr "火锅"
 msgid "projection_decals/special/projection_decal_1123/description"
 msgstr "热气腾腾、红汤翻滚的火锅，筷子早已备好，邀您一同品尝主办城市最具代表性的美食。"
 
+msgid "projection_decals/special/projection_decal_1128"
+msgstr "弗雷曼工具包"
+
+msgid "projection_decals/special/projection_decal_1129"
+msgstr "蝠鲼扑翼机"
+
 msgid "projection_decals/special/projection_decal_113"
 msgstr "金属战争前100"
 
 msgid "projection_decals/special/projection_decal_113/description"
 msgstr "发放给领土战金属战争活动中，获得前100名的军团的成员。"
+
+msgid "projection_decals/special/projection_decal_1130"
+msgstr "宇航公会领航员"
+
+msgid "projection_decals/special/projection_decal_1131"
+msgstr "已知宇宙的皇帝"
+
+msgid "projection_decals/special/projection_decal_1132"
+msgstr "精锐突击队"
+
+msgid "projection_decals/special/projection_decal_1133"
+msgstr "沙蛛"
 
 msgid "projection_decals/special/projection_decal_1135"
 msgstr "涡轮增压器"
@@ -26491,6 +26527,13 @@ msgid "special_style/A192_M4A4_Firefly_CFE_A_3Dst_desc/long"
 msgstr ""
 "M系M4A4\"谢尔曼\"的变体，这辆坦克配备了克莱斯勒A57型30缸多组结构发动机，据Y系记录称这个型号的发动机非常可靠。该坦克于1944年初研发，其特点包括更强劲的17磅火炮、改变了无线电台的位置、扩大弹药架容量，并且移除了车体机枪和副驾驶的座位。\\n这辆坦克由经验丰富的桑德斯大学附属高中学生驾驶。该学园的所有M系坦克喷漆均以深橄榄绿为基色，展现了其M系文化的传承。这辆\"谢尔曼\"具有该学园的徽章——在一个下部尖锐的盾牌上描绘了一个蓝色五角星，五角星里还有一个黄色的闪电图案，学园的名字则写在一条红色丝带上。"
 
+msgid "special_style/A197_Jezevec_NC_3Dst"
+msgstr "蝠鲼漫步者"
+
+msgid "special_style/A197_Jezevec_NC_3Dst_desc/long"
+msgstr ""
+"没人知道它的设计源自何处，只知道其外观线条遵循着某种未知的设计原理。其装甲构成了光滑的流线型轮廓，奇特的正面构造则像是颚状构造。在训练场上，它确实是一辆坦克，但其移动方式却给人一种它能飞起来的感觉。最后，终于有一名工程师认出了它那奇特的外形。在一个不同的世界里，其设计灵感的源头肯定像蝠鲼一样游弋于水中。"
+
 msgid "special_style/A40_T95_SC_3DSt"
 msgstr "美妙的震动"
 
@@ -27241,6 +27284,13 @@ msgstr ""
 "在测试当天，一切并无异常。那辆坦克给人一种它源自未来的既视感，但在这个外观下应该仍是我们所熟知的那辆坦克。至少一开始大家是这样认为的。它在文件中的代号是\"厄拉科斯之风\"。\n"
 "在测试的一个阶段中，发生了出人意料的事情。坦克没有射击目标，反而以超乎寻常的灵活度和速度疾驰——仿佛它将要起飞一样。虽然坦克一炮没开，但所有目标都被烧得面目全非。\n"
 "第二天，指挥部命令该坦克的设计师前往总部报道，但此时这名设计师连带那辆坦克都已不知所踪。后来只在车库中发现了一张写着神秘信息的纸条: \"勇士万岁。\""
+
+msgid "special_style/G165_Erich_Konzept_I_NC_3Dst"
+msgstr "战争泰坦"
+
+msgid "special_style/G165_Erich_Konzept_I_NC_3Dst_desc/long"
+msgstr ""
+"它的设计透着一种令人不安的精妙。每道线条都似刻意为之，其机械结构的精密程度与混乱不堪的战场格格不入。它非常先进又极度危险，其威风外观也无法掩饰自身使命的残暴。它与其说是为战争而设计，不如说是为战争而臻于完美——一件为制造大规模毁灭而生的器械。"
 
 msgid "special_style/G168_KJpz_T_III_AS5_3Dst"
 msgstr "初始载体"
@@ -29726,6 +29776,36 @@ msgstr ""
 "失落天堂的日子不好过。大萧条时期，无人幸免。每个人都想尽办法谋生，但正当工作却一职难求——而禁酒令则让这座城市的地下暗黑世界变成了那些愿意铤而走险之人的机遇之地。\n"
 "\n"
 "汤米·安吉洛从未想过自己会过上这样的生活，但为萨列里阁下工作不仅报酬丰厚，还能让他出人头地。唯一的问题是: 他最终将为此付出什么代价？"
+
+msgid "special_style/bp2026_november_1"
+msgstr "领航员"
+
+msgid "special_style/bp2026_november_1_desc"
+msgstr "一款全地形风格，灵感源于《沙丘3》。"
+
+msgid "special_style/bp2026_november_1_desc/long"
+msgstr ""
+"其表面呈现出一种庄严且浑然一体的特质，像是雕刻而成，而非常规的制造方式，可以使坦克的轮廓变得更加神秘。深色的矿物质质感是一种刻意的简朴外观，使其体现了与常规工程学截然不同的设计理念。表面之下，一缕微弱的橘红色光芒暗暗涌动，透着无声的威压，暗示着某种最好别去惊扰的力量。"
+
+msgid "special_style/bp2026_november_2"
+msgstr "预兆者"
+
+msgid "special_style/bp2026_november_2_desc"
+msgstr "一款全地形风格，灵感源于《沙丘3》。"
+
+msgid "special_style/bp2026_november_2_desc/long"
+msgstr ""
+"其设计朴实无华。线条内敛，使其毫无存在感，仿佛注定悄无声息地穿梭于世间，从不显露其使命。它带着沉默信使的气质，在遥远的双手与隐秘的意图之间不为人知地辗转。当其含义终于明朗的时候，它所预示的阴谋可能早已开始酝酿。"
+
+msgid "special_style/bp2026_november_3"
+msgstr "眷侣"
+
+msgid "special_style/bp2026_november_3_desc"
+msgstr "一款全地形风格，灵感源于《沙丘3》。"
+
+msgid "special_style/bp2026_november_3_desc/long"
+msgstr ""
+"其设计灵感源于一种更为出众的飞行器，这种飞行器似乎是一种为速度与机动而塑形、而非为应付重型战斗而生的机器。其外观透露着一股轻盈感，没有战争机器那种普遍的笨重或冷酷的气息，从而掩盖了其真实用途。然而，在这份内敛之下，仍然隐隐体现出一股强大的力量——证明不是所有武器都必须锋芒毕露。"
 
 msgid "special_style/bp2026_october_1"
 msgstr "执政官战甲"

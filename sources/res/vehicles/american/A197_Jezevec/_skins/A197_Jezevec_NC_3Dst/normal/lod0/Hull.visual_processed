@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>nodes_01</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>HP_A197_Attachment_Hull</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Fire_1</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.052298 -0.024108 1.171709</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Fire_2</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.770180 -0.024108 -0.118445</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_LFront</identifier>
+				<transform>
+					<row0>0.997350 0.037179 0.062543</row0>
+					<row1>-0.070553 0.284112 0.956192</row1>
+					<row2>0.017780 -0.958070 0.285982</row2>
+					<row3>-1.375002 -0.092267 3.175123</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_LRear</identifier>
+				<transform>
+					<row0>-1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.598604 -0.801045</row1>
+					<row2>-0.000000 -0.801045 -0.598604</row2>
+					<row3>-1.375002 -0.136629 -3.103662</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_RFront</identifier>
+				<transform>
+					<row0>0.997350 0.037179 0.062543</row0>
+					<row1>-0.070553 0.284112 0.956192</row1>
+					<row2>0.017780 -0.958070 0.285982</row2>
+					<row3>1.375000 -0.093284 3.177314</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_RRear</identifier>
+				<transform>
+					<row0>-1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.598604 -0.801045</row1>
+					<row2>-0.000000 -0.801045 -0.598604</row2>
+					<row3>1.375000 -0.134689 -3.102341</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Track_Exhaus_1</identifier>
+				<transform>
+					<row0>0.020925 0.000000 -0.999781</row0>
+					<row1>-0.099123 0.995073 -0.002075</row1>
+					<row2>0.994855 0.099145 0.020822</row2>
+					<row3>1.042600 0.364703 0.080027</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Track_Exhaus_2</identifier>
+				<transform>
+					<row0>0.020925 0.000000 0.999781</row0>
+					<row1>0.099123 0.995073 -0.002075</row1>
+					<row2>-0.994855 0.099145 0.020822</row2>
+					<row3>-1.042600 0.364703 0.080027</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_turretJoint</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.000020 0.491744 -1.075587</row3>
+				</transform>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_hull_01</identifier>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						g_detailUVTiling
+						<Vector4>3.506850 3.506850 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_detailPowerGloss
+						<Float>
+							0.35
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_maskBias
+						<Float>
+							0.18
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/american/A197_Jezevec/_skins/A197_Jezevec_NC_3Dst/Jezevec_NC_3Dst_hull_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/american/A197_Jezevec/_skins/A197_Jezevec_NC_3Dst/Jezevec_NC_3Dst_hull_01_ANM.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/american/A197_Jezevec/_skins/A197_Jezevec_NC_3Dst/Jezevec_NC_3Dst_hull_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/american/A197_Jezevec/_skins/A197_Jezevec_NC_3Dst/Jezevec_NC_3Dst_hull_01_AO.dds</Texture>
+					</property>
+					<property>
+						g_defaultDetail
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_detailParams
+						<matrix>
+							<element>56704000</element>
+							<element>1020081200</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>19488768</element>
+							<element>1059651584</element>
+							<element>190080000</element>
+							<element>1046872064</element>
+							<element>159409152</element>
+							<element>1074724864</element>
+							<element>58737664</element>
+							<element>1006632960</element>
+							<element>1166031872</element>
+							<element>1006632960</element>
+							<element>4261412864</element>
+							<element>0</element>
+						</matrix>
+					</property>
+					<property>
+						g_detailMetallicCutoff
+						<Float>0.420000</Float>
+					</property>
+					<property>
+						g_dirtLevel
+						<Float>0.350000</Float>
+					</property>
+					<property>
+						g_glossMax
+						<Float>0.534387</Float>
+					</property>
+					<property>
+						g_metallicDetailInfluence
+						<Float>0.800000</Float>
+					</property>
+				</material>
+				<groupOrigin>0.006994 -0.088702 0.457994</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>tank_equipment_02</identifier>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						g_detailUVTiling
+						<Vector4>3.506850 3.506850 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_detailPowerGloss
+						<Float>
+							0.35
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_maskBias
+						<Float>
+							0.18
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/american/A197_Jezevec/_skins/A197_Jezevec_NC_3Dst/Jezevec_NC_3Dst_equipment_02_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/american/A197_Jezevec/_skins/A197_Jezevec_NC_3Dst/Jezevec_NC_3Dst_equipment_02_ANM.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/american/A197_Jezevec/_skins/A197_Jezevec_NC_3Dst/Jezevec_NC_3Dst_equipment_02_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/american/A197_Jezevec/_skins/A197_Jezevec_NC_3Dst/Jezevec_NC_3Dst_equipment_02_AO.dds</Texture>
+					</property>
+					<property>
+						g_defaultDetail
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_detailParams
+						<matrix>
+							<element>56691712</element>
+							<element>1020081200</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>192942080</element>
+							<element>1006632960</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>4261412864</element>
+							<element>0</element>
+						</matrix>
+					</property>
+					<property>
+						alphaReference
+						<Int>90</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+				</material>
+				<groupOrigin>-0.000020 -0.130431 0.337267</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				2
+				<material>
+					<identifier>tank_equipment_01</identifier>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						g_detailUVTiling
+						<Vector4>3.506850 3.506850 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_detailPowerGloss
+						<Float>
+							0.35
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_maskBias
+						<Float>
+							0.18
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/american/A197_Jezevec/_skins/A197_Jezevec_NC_3Dst/Jezevec_NC_3Dst_equipment_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/american/A197_Jezevec/_skins/A197_Jezevec_NC_3Dst/Jezevec_NC_3Dst_equipment_01_ANM.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/american/A197_Jezevec/_skins/A197_Jezevec_NC_3Dst/Jezevec_NC_3Dst_equipment_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/american/A197_Jezevec/_skins/A197_Jezevec_NC_3Dst/Jezevec_NC_3Dst_equipment_01_AO.dds</Texture>
+					</property>
+					<property>
+						g_defaultDetail
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_detailParams
+						<matrix>
+							<element>58736640</element>
+							<element>1020081200</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>23488512</element>
+							<element>1053622272</element>
+							<element>260061184</element>
+							<element>1006632960</element>
+							<element>159409152</element>
+							<element>1006632960</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>4278190080</element>
+							<element>0</element>
+							<element>4261412864</element>
+							<element>0</element>
+						</matrix>
+					</property>
+					<property>
+						g_detailMetallicCutoff
+						<Float>0.350000</Float>
+					</property>
+					<property>
+						g_dirtLevel
+						<Float>0.400000</Float>
+					</property>
+					<property>
+						g_glossMin
+						<Float>0.318972</Float>
+					</property>
+				</material>
+				<groupOrigin>-0.000020 -0.147421 0.013196</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-1.827446 -0.831801 -3.384760</min>
+		<max>1.841434 0.564826 4.161865</max>
+	</boundingBox>
+	<geometrySize>3225704</geometrySize>
+</root>

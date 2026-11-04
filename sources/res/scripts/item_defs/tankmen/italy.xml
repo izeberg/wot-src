@@ -18008,5 +18008,105 @@
 				<_8379>tankmen_bp21_9.png</_8379>
 			</icons>
 		</tankmen_bp21_9>
+		<tankmen_bp21_10>
+			<groupID>403</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>male</sex>
+			<notInShop>true</notInShop>
+			<tags>commander driver gunner loader radioman passportReplacementForbidden</tags>
+			<roles>commander radioman loader driver gunner</roles>
+			<firstNames>
+				<_8388>#italy_crew:names/tankmen_bp21_10_n</_8388>
+			</firstNames>
+			<lastNames>
+				<_8388>#italy_crew:names/tankmen_bp21_10</_8388>
+			</lastNames>
+			<icons>
+				<_8388>tankmen_bp21_10.png</_8388>
+			</icons>
+		</tankmen_bp21_10>
+		<tankmen_bp21_11>
+			<groupID>404</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>male</sex>
+			<notInShop>true</notInShop>
+			<tags>commander driver gunner loader radioman passportReplacementForbidden</tags>
+			<roles>commander radioman loader driver gunner</roles>
+			<firstNames>
+				<_8389>#italy_crew:names/tankmen_bp21_11_n</_8389>
+			</firstNames>
+			<lastNames>
+				<_8389>#italy_crew:names/tankmen_bp21_11</_8389>
+			</lastNames>
+			<icons>
+				<_8389>tankmen_bp21_11.png</_8389>
+			</icons>
+		</tankmen_bp21_11>
+		<tankmen_bp21_12>
+			<groupID>405</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>female</sex>
+			<notInShop>true</notInShop>
+			<tags>commander driver gunner loader radioman passportReplacementForbidden</tags>
+			<roles>commander radioman loader driver gunner</roles>
+			<firstNames>
+				<_8390>#italy_crew:names/tankmen_bp21_12_n</_8390>
+			</firstNames>
+			<lastNames>
+				<_8390>#italy_crew:names/tankmen_bp21_12</_8390>
+			</lastNames>
+			<icons>
+				<_8390>tankmen_bp21_12.png</_8390>
+			</icons>
+		</tankmen_bp21_12>
+		<tankmen_bp21_13>
+			<groupID>406</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>male</sex>
+			<notInShop>true</notInShop>
+			<tags>commander driver gunner loader radioman passportReplacementForbidden tankmen_bp21_13</tags>
+			<roles>commander radioman loader driver gunner</roles>
+			<firstNames>
+				<_8391>#italy_crew:names/tankmen_bp21_13_n</_8391>
+			</firstNames>
+			<lastNames>
+				<_8391>#italy_crew:names/tankmen_bp21_13</_8391>
+			</lastNames>
+			<icons>
+				<_8391>tankmen_bp21_13.png</_8391>
+			</icons>
+		</tankmen_bp21_13>
+		<tankmen_bp21_14>
+			<groupID>407</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>male</sex>
+			<notInShop>true</notInShop>
+			<tags>commander driver gunner loader radioman passportReplacementForbidden tankmen_bp21_14</tags>
+			<roles>commander radioman loader driver gunner</roles>
+			<firstNames>
+				<_8392>#italy_crew:names/tankmen_bp21_14_n</_8392>
+			</firstNames>
+			<lastNames>
+				<_8392>#italy_crew:names/tankmen_bp21_14</_8392>
+			</lastNames>
+			<icons>
+				<_8392>tankmen_bp21_14.png</_8392>
+			</icons>
+		</tankmen_bp21_14>
 	</premiumGroups>
 </root>
