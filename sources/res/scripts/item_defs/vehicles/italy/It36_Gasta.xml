@@ -3364,7 +3364,7 @@
 					<reloadTime>10</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.13
+							0.10
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
@@ -3377,7 +3377,7 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						2.2
+						1.9
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -3970,7 +3970,7 @@
 		<detailed>
 			<engines>
 				<MB_837_Ea_500>
-					<smplEnginePower>800</smplEnginePower>
+					<smplEnginePower>900</smplEnginePower>
 					<smplFwMaxSpeed>60</smplFwMaxSpeed>
 				</MB_837_Ea_500>
 			</engines>
